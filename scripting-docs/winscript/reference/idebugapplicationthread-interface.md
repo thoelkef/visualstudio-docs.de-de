@@ -1,8 +1,7 @@
 ---
-title: IDebugApplicationThread-Schnittstelle | Microsoft Docs
+title: IDebugApplicationThread-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,24 +13,24 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6e731ba866504c9a3c3c9ad081a90a12b161355d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a464085eddbea4f5d29c684c0f1dabc6f853b6d1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822225"
 ---
 # <a name="idebugapplicationthread-interface"></a>IDebugApplicationThread-Schnittstelle
-Ermöglicht das Sprache-Module und Hosts Threadsynchronisierung bereitstellen und Verwalten von Status für threadspezifische Debuginformationen. Diese Schnittstelle erweitert die `IRemoteDebugApplicationThread` Schnittstelle, um nicht-Remote-Zugriff auf den Thread bereitzustellen.  
+Ermöglicht Sprach-Engines und Hosts Threadsynchronisierung zu bieten und threadspezifische Zustand Debuginformationen zu verwalten. Diese Schnittstelle erweitert die `IRemoteDebugApplicationThread` Schnittstelle, um nicht-Remote-Zugriff auf den Thread bereitzustellen.  
   
- Zusätzlich zu den von geerbten Methoden `IRemoteDebugApplicationThread`, `IDebugApplicationThread` Schnittstelle macht die folgenden Methoden verfügbar.  
+ Zusätzlich zu den von geerbten Methoden `IRemoteDebugApplicationThread`, `IDebugApplicationThread` Schnittstelle verfügbar macht, die folgenden Methoden.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IDebugApplicationThread::SynchronousCallIntoThread](../../winscript/reference/idebugapplicationthread-synchronouscallintothread.md)|Bietet einen Mechanismus für den Aufrufer Code im Thread Anwendung auszuführen.|  
+|[IDebugApplicationThread::SynchronousCallIntoThread](../../winscript/reference/idebugapplicationthread-synchronouscallintothread.md)|Stellt einen Mechanismus für den Aufrufer, Code in dem Thread der Anwendung auszuführen.|  
 |[IDebugApplicationThread::QueryIsCurrentThread](../../winscript/reference/idebugapplicationthread-queryiscurrentthread.md)|Bestimmt, ob der Thread den derzeit ausgeführten Thread ist.|  
 |[IDebugApplicationThread::QueryIsDebuggerThread](../../winscript/reference/idebugapplicationthread-queryisdebuggerthread.md)|Bestimmt, ob dieser Thread Debugger ist.|  
-|[IDebugApplicationThread::SetDescription](../../winscript/reference/idebugapplicationthread-setdescription.md)|Legt die Beschreibung dieser Thread fest.|  
-|[IDebugApplicationThread::SetStateString](../../winscript/reference/idebugapplicationthread-setstatestring.md)|Legt die Beschreibung des Zustands Thread fest.|
+|[IDebugApplicationThread::SetDescription](../../winscript/reference/idebugapplicationthread-setdescription.md)|Legt die Beschreibung dieses Threads fest.|  
+|[IDebugApplicationThread::SetStateString](../../winscript/reference/idebugapplicationthread-setstatestring.md)|Legt die Beschreibung der der Zustand des Threads fest.|

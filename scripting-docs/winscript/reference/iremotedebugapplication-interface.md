@@ -1,8 +1,7 @@
 ---
-title: IRemoteDebugApplication-Schnittstelle | Microsoft Docs
+title: IRemoteDebugApplication-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,30 +13,30 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ea91afdc44b70a91846d7b1a3dc4c017c0c4c80e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2a231818def210f7c88ab031059f8561c67b33d1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729600"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62944237"
 ---
 # <a name="iremotedebugapplication-interface"></a>IRemoteDebugApplication-Schnittstelle
-Stellt eine ausgeführte Anwendung dar. Es muss nicht zu einem Betriebssystem-Prozess entsprechen. Das Ziel in der Regel ein Debugger eine Anwendung für das Debuggen ist. Der Debug-Prozess-Manager implementiert in der Regel das Anwendungsobjekt.  
+Stellt eine ausgeführte Anwendung dar. Es muss nicht zu einem Betriebssystem-Prozess zu entsprechen. Ein Debugger ist in der Regel eine Anwendung für das Debuggen. Den prozessbasierten Debugmanager implementiert in der Regel der Application-Objekt.  
   
- Zusätzlich zu den von geerbten Methoden `IUnknown`, `IRemoteDebugApplication` Schnittstelle macht die folgenden Methoden verfügbar.  
+ Zusätzlich zu den von geerbten Methoden `IUnknown`, `IRemoteDebugApplication` Schnittstelle verfügbar macht, die folgenden Methoden.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IRemoteDebugApplication::ResumeFromBreakPoint](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)|Wird eine Anwendung, die derzeit eines Haltepunkts wird fortgesetzt.|  
-|[IRemoteDebugApplication::CauseBreak](../../winscript/reference/iremotedebugapplication-causebreak.md)|Bewirkt, dass die Anwendung der Debugger bei nächstmöglicher Gelegenheit zu unterbrechen.|  
-|[IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)|Verbindet einen Debugger an dieser Anwendung an.|  
-|[IRemoteDebugApplication::DisconnectDebugger](../../winscript/reference/iremotedebugapplication-disconnectdebugger.md)|Trennt den aktuellen Debugger aus der Anwendung an.|  
-|[IRemoteDebugApplication::GetDebugger](../../winscript/reference/iremotedebugapplication-getdebugger.md)|Gibt der aktuellen Debugger an die Anwendung verbunden.|  
-|[IRemoteDebugApplication::CreateInstanceAtApplication](../../winscript/reference/iremotedebugapplication-createinstanceatapplication.md)|Bietet einen Mechanismus für den Debugger ausführen Out-of-Process an die Anwendung, zum Erstellen von Objekten im Anwendungsprozess-IDE.|  
-|[IRemoteDebugApplication::QueryAlive](../../winscript/reference/iremotedebugapplication-queryalive.md)|Gibt an, ob die Anwendung reagiert.|  
-|[IRemoteDebugApplication::EnumThreads](../../winscript/reference/iremotedebugapplication-enumthreads.md)|Listet alle Threads bekannt, dass der Anwendung zugeordnet werden.|  
-|[IRemoteDebugApplication::GetName](../../winscript/reference/iremotedebugapplication-getname.md)|Der Name dieses Knotens Anwendung zurückgegeben.|  
-|[IRemoteDebugApplication::GetRootNode](../../winscript/reference/iremotedebugapplication-getrootnode.md)|Gibt den Anwendungsknoten, unter dem alle Knoten, die der Anwendung zugeordneten hinzugefügt wurden.|  
-|[IRemoteDebugApplication::EnumGlobalExpressionContexts](../../winscript/reference/iremotedebugapplication-enumglobalexpressioncontexts.md)|Listet die globalen ausdruckskontexten für alle Sprachen, die in dieser Anwendung ausgeführt wird.|
+|[IRemoteDebugApplication::ResumeFromBreakPoint](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)|Wird eine Anwendung, die derzeit an einem Haltepunkt wird fortgesetzt.|  
+|[IRemoteDebugApplication::CauseBreak](../../winscript/reference/iremotedebugapplication-causebreak.md)|Bewirkt, dass die Anwendung im Debugger bei nächstmöglicher Gelegenheit unterbrochen.|  
+|[IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)|Verbindet einen Debugger an diese Anwendung an.|  
+|[IRemoteDebugApplication::DisconnectDebugger](../../winscript/reference/iremotedebugapplication-disconnectdebugger.md)|Wird den aktuellen Debugger von der Anwendung getrennt.|  
+|[IRemoteDebugApplication::GetDebugger](../../winscript/reference/iremotedebugapplication-getdebugger.md)|Gibt zurück, der aktuelle Debugger an die Anwendung verbunden.|  
+|[IRemoteDebugApplication::CreateInstanceAtApplication](../../winscript/reference/iremotedebugapplication-createinstanceatapplication.md)|Stellt einen Mechanismus für den Debugger-IDE ausführen Out-of-Process an die Anwendung, zum Erstellen von Objekten im Anwendungsprozess.|  
+|[IRemoteDebugApplication::QueryAlive](../../winscript/reference/iremotedebugapplication-queryalive.md)|Gibt an, wenn die Anwendung reaktionsfähig ist.|  
+|[IRemoteDebugApplication::EnumThreads](../../winscript/reference/iremotedebugapplication-enumthreads.md)|Listet alle Threads bekannt, dass der Anwendung zugeordnet sind.|  
+|[IRemoteDebugApplication::GetName](../../winscript/reference/iremotedebugapplication-getname.md)|Der Name dieses Knotens für die Anwendung zurückgegeben.|  
+|[IRemoteDebugApplication::GetRootNode](../../winscript/reference/iremotedebugapplication-getrootnode.md)|Gibt den Knoten der Anwendung unter dem alle Knoten, die der Anwendung zugeordneten hinzugefügt wurden.|  
+|[IRemoteDebugApplication::EnumGlobalExpressionContexts](../../winscript/reference/iremotedebugapplication-enumglobalexpressioncontexts.md)|Listet die globale ausdruckskontexten für alle Sprachen, die in dieser Anwendung ausführen.|

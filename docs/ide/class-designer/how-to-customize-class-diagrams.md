@@ -1,7 +1,6 @@
 ---
 title: 'Vorgehensweise: Anpassen von Klassendiagrammen (Klassen-Designer)'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams, customizing
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: e9030aea-c77d-4cc1-b8f6-b6ca469b692d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ac0ff3943d1209b0442c29785408c70b55cef43
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c23e24c9e087ff8ca64f90db1714ca2569bf02c0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975215"
 ---
 # <a name="how-to-customize-class-diagrams"></a>Vorgehensweise: Anpassen von Klassendiagrammen
 

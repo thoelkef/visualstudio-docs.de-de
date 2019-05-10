@@ -1,14 +1,9 @@
 ---
 title: Befehl „Wurzel setzen“ | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - debug.setradix
 helpviewer_keywords:
@@ -18,18 +13,17 @@ ms.assetid: 6ffd1554-7530-4da4-b5f5-e276a5034f3b
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f0df00cf4c1d1264692be5ab5313eb9f03920b3c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bee6368931dc47b78186ec870039ab292960fa77
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296126"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654073"
 ---
 # <a name="set-radix-command"></a>Befehl "Wurzel setzen"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Legt die zum Anzeigen von ganzzahligen Werten verwendete numerische Basis fest bzw. gibt sie zurück.  
   
 ## <a name="syntax"></a>Syntax  
@@ -54,6 +48,3 @@ Debug.SetRadix [10 | 16 | hex | dec]
  [Befehlsfenster](../../ide/reference/command-window.md)   
  [Such-/Befehlsfeld](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

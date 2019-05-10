@@ -2,7 +2,6 @@
 title: Übersicht über das Debuggen mit Active Script | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d8624c1405931edefe2e1e53e579ad28a7b238f1
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 31fb3f5bf88b0caf179a43d02358bb6a9f1a2831
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975793"
 ---
 # <a name="active-script-debugging-overview"></a>Debuggen mit Active Script - Übersicht
 Die Schnittstellen zum Debuggen mit Active Script ermöglichen ein sprachneutrales, hostneutrales Debuggen und unterstützen eine Vielzahl von Entwicklungsumgebungen.  

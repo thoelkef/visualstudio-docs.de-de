@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 46d52e2c-ca2a-4bbd-8500-5b0129768aec
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea55937318d22a40b90cddb54490b87ab0c44325
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 076b7aa56ec00fda559bbdfdc8b2b9df2be38816
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916821"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62907574"
 ---
 # <a name="web-site-support-attributes"></a>Attribute der Websiteunterstützung
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Websiteprojekt kann erweitert werden, um Unterstützung für Web bietet Programmiersprachen zu vergleichen. Die Sprache muss selbst registrieren, mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , damit Projektvorlagen angezeigt werden können, in der **neue Website** im Dialogfeld, wenn die Sprache ausgewählt ist.
@@ -55,4 +55,4 @@ public class PythonPackage : Package, IOleComponent
  Die IVsIntellisenseProject-Implementierung Verweise verarbeitet und ruft den Compiler auf, wenn eine Webseite mit Code angefordert, aber nicht zwischengespeichert.
 
 ## <a name="see-also"></a>Siehe auch
- [Websiteunterstützung](../../extensibility/internals/web-site-support.md)
+- [Websiteunterstützung](../../extensibility/internals/web-site-support.md)

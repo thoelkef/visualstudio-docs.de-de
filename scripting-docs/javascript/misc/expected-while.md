@@ -1,14 +1,9 @@
 ---
 title: "\"While\" erwartet | Microsoft-Dokumentation"
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1024
 dev_langs:
@@ -16,23 +11,22 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 867c10d0-7df6-4ba3-bbe6-7d5b3900cb22
-caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 689e740b9954cada3788e53094e5a4fc1241baf8
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 4ec06ea25a6a6486a444d430e3ef15b888760650
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53801971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433764"
 ---
 # <a name="expected-while"></a>"while" erwartet
 Sie hat keine der `while` Bedingung in einer `do...while` Schleife. Ein **führen** Anweisung setzt das Vorhandensein einer entsprechenden `while` am Ende des Codeblocks testen.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Enthalten die `while` testen Sie die Anweisung nach der schließenden geschweiften Klammer.  
+- Enthalten die `while` testen Sie die Anweisung nach der schließenden geschweiften Klammer.  
   
 ## <a name="see-also"></a>Siehe auch  
  [While-Anweisung](../../javascript/reference/while-statement-javascript.md)   

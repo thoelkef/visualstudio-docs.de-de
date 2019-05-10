@@ -1,50 +1,45 @@
 ---
 title: Systemanforderungen für den Emulator für Android | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 217f67916808ac8b839cc4f2e522233c7b6a58d0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: b1b77dc7e01ae791379dda52b305ebcdbbf68447
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433911"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>System requirements for the Visual Studio Emulator for Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Der Visual Studio Emulator für Android wird in Hyper-V als virtueller Computer ausgeführt, die Virtualisierungstechnologie für Windows 8 und höhere Versionen. Um den Emulator ausführen, muss der Computer die in diesem Thema beschriebenen Voraussetzungen zum Ausführen von Hyper-V erfüllen.
 
  Das Setup-Programm versucht bei der Installation des Emulators, diese Voraussetzungen für Sie automatisch zu konfigurieren. Wenn das Setup die Voraussetzungen erfolgreich konfiguriert hat, funktioniert der Emulator wie erwartet. Andernfalls müssen Sie diese erforderlichen Komponenten möglicherweise manuell aktivieren. Wenn Sie die erforderlichen Komponenten manuell konfigurieren müssen, entsprechen die Schritte und Tools den [hier](https://msdn.microsoft.com/library/windows/apps/jj863509\(v=vs.105\).aspx) für den Windows Phone Emulator beschriebenen Schritten.
 
 > [!IMPORTANT]
->  Das Setup-Programm für den Emulator überprüft die Voraussetzungen zum Ausführen von Visual Studio-Emulator für Android. Es zeigt Warnungen an, wenn die erforderlichen Komponenten nicht vorhanden sind, es benötigt sie jedoch nicht.
+> Das Setup-Programm für den Emulator überprüft die Voraussetzungen zum Ausführen von Visual Studio-Emulator für Android. Es zeigt Warnungen an, wenn die erforderlichen Komponenten nicht vorhanden sind, es benötigt sie jedoch nicht.
 
  Dieses Thema enthält folgende Abschnitte:
 
--   [Kurze Checkliste](#Checklist)
+- [Kurze Checkliste](#Checklist)
 
--   [Systemanforderungen](#System)
+- [Systemanforderungen](#System)
 
--   [Netzwerkanforderungen](#Network)
+- [Netzwerkanforderungen](#Network)
 
--   [Hyper-V-Anforderungen](#HyperV)
+- [Hyper-V-Anforderungen](#HyperV)
 
--   [Das Ausführen des Emulators von einer startbaren virtuellen Festplatte wird nicht unterstützt](#BootableVHD)
+- [Das Ausführen des Emulators von einer startbaren virtuellen Festplatte wird nicht unterstützt](#BootableVHD)
 
--   [Hyper-V benötigt nicht komprimierte und nicht verschlüsselte Dateien](#Files)
+- [Hyper-V benötigt nicht komprimierte und nicht verschlüsselte Dateien](#Files)
 
-##  <a name="Checklist"></a> Kurze Checkliste
+## <a name="Checklist"></a> Kurze Checkliste
  Es folgt eine kurze Checkliste zu den Anforderungen zum Ausführen des Visual Studio-Emulators für Android. Ausführlichere Informationen finden Sie in den nachfolgenden Abschnitten in diesem Thema.
 
  Systemanforderungen
@@ -67,17 +62,17 @@ Der Visual Studio Emulator für Android wird in Hyper-V als virtueller Computer 
 
 - Das BIOS muss folgende Funktionen unterstützen:
 
-  -   Hardwareunterstützte Virtualisierung
+  - Hardwareunterstützte Virtualisierung
 
-  -   SLAT (Second Level Address Translation)
+  - SLAT (Second Level Address Translation)
 
-  -   Datenausführungsverhinderung (DEP, Data Execution Prevention)
+  - Datenausführungsverhinderung (DEP, Data Execution Prevention)
 
 - Unter Windows muss Hyper-V aktiviert ist und ausgeführt werden.
 
 - Sie müssen ein Mitglied der lokalen Administratorengruppe von Hyper-V sein.
 
-##  <a name="System"></a> Systemanforderungen
+## <a name="System"></a> Systemanforderungen
  Ihr Computer muss die folgenden Anforderungen erfüllen:
 
 - Hyper-V-Unterstützung (siehe [Hyper-V-Anforderungen](#HyperV))
@@ -90,7 +85,7 @@ Der Visual Studio Emulator für Android wird in Hyper-V als virtueller Computer 
 
   ![Überprüfung der Systemanforderungen](../cross-platform/media/android-emu-system-requirements.png "Android_Emu_System_Requirements")
 
-##  <a name="Network"></a> Netzwerkanforderungen
+## <a name="Network"></a> Netzwerkanforderungen
  Ihr Netzwerk muss folgende Anforderungen erfüllen:
 
 - DHCP
@@ -105,7 +100,7 @@ Der Visual Studio Emulator für Android wird in Hyper-V als virtueller Computer 
 
 - [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
 
-##  <a name="HyperV"></a> Hyper-V-Anforderungen
+## <a name="HyperV"></a> Hyper-V-Anforderungen
  Hyper-V-Anforderungen im BIOS
 
  Das BIOS des Computers muss folgende Anforderungen unterstützen, und muss aktiviert sein:
@@ -138,12 +133,12 @@ Der Visual Studio Emulator für Android wird in Hyper-V als virtueller Computer 
 
  Um sich selbst manuell zu einer Gruppe hinzuzufügen, öffnen Sie das Snap-In für lokale Benutzer und Gruppen.
 
-##  <a name="BootableVHD"></a> Das Ausführen des Emulators von einer startbaren virtuellen Festplatte wird nicht unterstützt
+## <a name="BootableVHD"></a> Das Ausführen des Emulators von einer startbaren virtuellen Festplatte wird nicht unterstützt
  Wenn Sie versuchen, eine App im Visual Studio-Emulator für Android auszuführen, während Sie Windows von einer startbaren virtuellen Festplatte ausführen, dauert es in der Regel einige Minuten, bis der Emulator startet, oder beim Start einen Fehler ausgibt. Wenn der Emulator nicht gestartet werden kann, wird folgende Meldung angezeigt: Fehler bei App-Bereitstellung. Versuchen Sie es erneut.
 
  Diese Konfiguration wird nicht unterstützt. Informationen zu verwandten Problemen finden Sie unter [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).
 
-##  <a name="Files"></a> Hyper-V benötigt nicht komprimierte und nicht verschlüsselte Dateien
+## <a name="Files"></a> Hyper-V benötigt nicht komprimierte und nicht verschlüsselte Dateien
  Auf einer mit dem NTFS-Dateisystem konfigurierten Festplatte müssen die virtuellen Festplattendateien, die von Hyper-V verwendet werden, dekomprimiert und entschlüsselt werden. Stellen Sie sicher, dass die folgenden Verzeichnisse nicht komprimiert oder verschlüsselt werden:
 
 - %localappdata%\Microsoft\XDE

@@ -1,14 +1,9 @@
 ---
 title: CPU- und Windows-Indikatoren | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.counters
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: d2c45c6a-f975-45ab-b8a5-4768ddd518fb
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f79eeae8539657f6556b87d917f991113c5de807
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: eceadf1b1bf82876a20027a9d29c8336e381d18d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434299"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU- und Windows-Indikatoren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,10 +28,10 @@ Der Visual Studio-Profiler ermöglicht das Sammeln von Leistungsdaten, die vom B
   
  **Anforderungen**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
->  Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen Windows Store-Apps neue Erfassungsmethoden. Siehe [Profilerstellungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+> Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen Windows Store-Apps neue Erfassungsmethoden. Siehe [Profilerstellungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 ## <a name="windows-counters"></a>Windows-Indikatoren  
  Windows-Indikatoren sind Teil der Windows-Diagnoseinfrastruktur, die Informationen über die Leistung des Betriebssystems oder einer Anwendung, einen Dienst oder einen Treiber bereitstellt. Windows-Indikatoren hängen von der Konfiguration des aktuellen Computers ab und sind unter Umständen nicht auf anderen Computern verfügbar. Windows-Leistungsindikatoren werden in Profilerstellungsdatendateien als Profilerstellungsmarkierungen gesammelt, die sich zum Filtern von Ansichten und Berichten verwenden lassen.  
@@ -109,24 +104,24 @@ Der Visual Studio-Profiler ermöglicht das Sammeln von Leistungsdaten, die vom B
   
 ##### <a name="to-view-a-list-of-a-list-of-window-counters-that-are-supported-on-the-current-platform"></a>So zeigen Sie eine Liste aller Windows-Indikatoren an, die auf der aktuellen Plattform unterstützt werden  
   
-1.  Klicken Sie im Leistungs-Explorer mit der rechten Maustaste auf die Leistungssitzung, und klicken Sie anschließend auf **Eigenschaften**.  
+1. Klicken Sie im Leistungs-Explorer mit der rechten Maustaste auf die Leistungssitzung, und klicken Sie anschließend auf **Eigenschaften**.  
   
-2.  Klicken Sie auf **Windows-Indikatoren**.  
+2. Klicken Sie auf **Windows-Indikatoren**.  
   
-3.  Wählen Sie **Windows-Indikatoren auflisten** aus.  
+3. Wählen Sie **Windows-Indikatoren auflisten** aus.  
   
-4.  Wählen Sie aus der Liste **Indikatorkategorie** eine Gruppe von Leistungsindikatoren aus. Der Windows-Leistungsindikator für die Gruppe wird im Listenfeld angezeigt.  
+4. Wählen Sie aus der Liste **Indikatorkategorie** eine Gruppe von Leistungsindikatoren aus. Der Windows-Leistungsindikator für die Gruppe wird im Listenfeld angezeigt.  
   
-     **Hinweis:** Klicken Sie auf **Abbrechen**, um zur vorherigen Konfiguration der Leistungsindikatorauflistung zurückzukehren.  
+     **Hinweis**: Klicken Sie auf **Abbrechen**, um zur vorherigen Konfiguration der Leistungsindikatorsammlung zurückzukehren.  
   
 ### <a name="command-line"></a>Befehlszeile  
  Mit dem Befehlszeilentool [VSPerfCmd](../profiling/vsperfcmd.md) können Sie die auf einem Computer verfügbaren CPU-Indikatoren in der Befehlszeile aufführen.  
   
 ##### <a name="to-list-of-cpu-counters-that-are-supported-on-the-current-platform"></a>So führen Sie die CPU-Indikatoren auf, die auf der aktuellen Plattform unterstützt werden  
   
-1.  Öffnen Sie ein Eingabeaufforderungsfenster.  
+1. Öffnen Sie ein Eingabeaufforderungsfenster.  
   
-2.  Typ  
+2. Typ  
   
      **\<Visual Studio Performance Tools Directory>\VSPerfCmd /querycounters**  
   
@@ -138,7 +133,4 @@ Der Visual Studio-Profiler ermöglicht das Sammeln von Leistungsdaten, die vom B
  [Übersichten](../profiling/overviews-performance-tools.md)   
  [Vorgehensweise: Auswählen von Samplingereignissen](../profiling/how-to-choose-sampling-events.md)   
  [Vorgehensweise: Sammeln von CPU-Indikatordaten](../profiling/how-to-collect-cpu-counter-data.md)   
- [Gewusst wie: Sammeln von Windows-Indikatordaten](../profiling/how-to-collect-windows-counter-data.md)
-
-
-
+ [Vorgehensweise: Sammeln von Windows-Indikatordaten](../profiling/how-to-collect-windows-counter-data.md)

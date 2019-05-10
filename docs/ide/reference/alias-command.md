@@ -1,7 +1,6 @@
 ---
 title: Befehl "Alias"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - tools.alias
@@ -14,22 +13,21 @@ helpviewer_keywords:
 ms.assetid: bdf857df-b5d5-450f-8c10-a6fd4dccc130
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa8b14618085ddae67616f5ef3e30fb1b030e45a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0072bbd770a6d4fa675010048f2d067eb0961d62
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930686"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62791843"
 ---
 # <a name="alias-command"></a>Befehl "Alias"
 Erstellt einen neuen Alias für einen vollständigen Befehl, einen vollständigen Befehl und seine Argumente oder für einen anderen Alias.
 
 > [!TIP]
 > Bei Eingabe von `>alias` ohne Argumente wird die aktuelle Liste der Aliase mit den jeweiligen Definitionen angezeigt.
-
 
 ## <a name="syntax"></a>Syntax
 
@@ -47,7 +45,7 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 
  /reset ist optional. Setzt die Liste der vordefinierten Aliase auf die ursprünglichen Einstellungen zurück. Das bedeutet, dass alle vordefinierten Aliase wiederhergestellt und alle benutzerdefinierten Aliase entfernt werden.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Anmerkungen
  Da Aliase Befehle darstellen, müssen sie sich am Anfang der Befehlszeile befinden.
 
  Wenn Sie diesen Befehl geben, sollten Sie die Schalter unmittelbar nach dem Befehl hinzufügen und nicht erst nach den Aliasen, da der Schalter andernfalls als Teil der Aliaszeichenfolge einbezogen wird.

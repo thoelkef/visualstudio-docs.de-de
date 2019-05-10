@@ -1,14 +1,9 @@
 ---
-title: 'CA1303: Literale nicht übergeben als lokalisierte Parameter | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'CA1303: Literale nicht als lokalisierte Parameter übergeben | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - Do not pass literals as localized parameters
 - DoNotPassLiteralsAsLocalizedParameters
@@ -21,14 +16,14 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d900abe23dab4d950b5790798916fe728a44af4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 85aadaca762983b193e42ec2469f88a429a4e532
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886563"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111739"
 ---
-# <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: Literale nicht als lokalisierte Parameter übergeben
+# <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: Literale nicht als lokalisierte Parameter übergeben.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -43,11 +38,11 @@ ms.locfileid: "49886563"
 
  Diese Warnung wird ausgelöst, wenn eine Literalzeichenfolge als Wert, auf einen Parameter oder eine Eigenschaft übergeben wird und eine oder mehrere der folgenden Fälle zutrifft:
 
--   Die <xref:System.ComponentModel.LocalizableAttribute> Attribut des Parameters oder der Eigenschaft wird festgelegt auf "true".
+- Die <xref:System.ComponentModel.LocalizableAttribute> Attribut des Parameters oder der Eigenschaft wird festgelegt auf "true".
 
--   Der Parameter oder die Eigenschaft Name enthält "Text", "Message" oder "Beschriftung".
+- Der Parameter oder die Eigenschaft Name enthält "Text", "Message" oder "Beschriftung".
 
--   Der Name des Parameters, der auf eine Console.Write "oder" Console.WriteLine-Methode übergeben wird, ist "Value" oder "format".
+- Der Name des Parameters, der auf eine Console.Write "oder" Console.WriteLine-Methode übergeben wird, ist "Value" oder "format".
 
 ## <a name="rule-description"></a>Regelbeschreibung
  Zeichenfolgenliterale, die in Quellcode eingebettet sind, sind schwer zu lokalisieren.
@@ -69,6 +64,3 @@ ms.locfileid: "49886563"
 
 ## <a name="see-also"></a>Siehe auch
  [Ressourcen in Desktop-Apps](http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)
-
-
-

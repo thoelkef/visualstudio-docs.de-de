@@ -1,8 +1,7 @@
 ---
-title: IActiveScriptWinRTErrorDebug::GetCapabilitySid | Microsoft Docs
+title: IActiveScriptWinRTErrorDebug::GetCapabilitySid | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 78d53b498ba88fae50cfaca106a65a2bb07d21a5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
-ms.translationtype: MT
+ms.openlocfilehash: 6847dba8f2bd3051df4ab6f0940e7b405698e45b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724940"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432957"
 ---
 # <a name="iactivescriptwinrterrordebuggetcapabilitysid"></a>IActiveScriptWinRTErrorDebug::GetCapabilitySid
-Gibt die Funktion SID für den Windows-Runtime-Fehler zurück, sofern verfügbar.  
+Gibt die SID-Funktion für den Windows-Runtime-Fehler zurück, sofern verfügbar.  
   
 > [!IMPORTANT]
->  [IActiveScriptWinRTErrorDebug-Schnittstelle](../../winscript/reference/iactivescriptwinrterrordebug-interface.md) wird implementiert von PDM V11. 0 und höher. Gefunden in activdbg100.h.  
+> [IActiveScriptWinRTErrorDebug-Schnittstelle](../../winscript/reference/iactivescriptwinrterrordebug-interface.md) wird implementiert von PDM V11. 0 und höher. Gefunden in activdbg100.h.  
   
 ## <a name="syntax"></a>Syntax  
   

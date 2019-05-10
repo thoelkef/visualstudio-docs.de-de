@@ -1,89 +1,148 @@
 ---
-title: Problembehandlung beim Debuggen der Momentaufnahme | Microsoft-Dokumentation
+title: Problembehandlung beim Debuggen von Momentaufnahmen | Microsoft-Dokumentation
 ms.custom: seodec18
-ms.date: 11/07/2017
+ms.date: 11/07/2018
 ms.topic: troubleshooting
 helpviewer_keywords:
 - debugger
 ms.assetid: 511a0697-c68a-4988-9e29-8d0166ca044a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f16206b4c537c141bd90615580934c4481ddf06
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 7b7916cbd3a7faa633baf53a18686779dc2b386c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880662"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "58857761"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Problembehandlung und bekannte Probleme beim Debuggen von Momentaufnahmen in Visual Studio
 
-Wenn Sie die Schritte in diesem Artikel Ihr Problem nicht beheben, wenden Sie sich an snaphelp@microsoft.com.
+Wenn die in diesem Artikel beschriebenen Schritte Ihr Problem nicht lösen, wenden Sie sich an snaphelp@microsoft.com.
 
 ## <a name="issue-snappoint-does-not-turn-on"></a>Problem: Andockpunkt ist nicht aktiviert
 
-Wenn Sie ein Warnsymbol ![Andockpunkt Symbol "Warnung"](../debugger/media/snapshot-troubleshooting-snappoint-warning-icon.png "Andockpunkt Symbol \"Warnung\"") mit Ihrem andockpunkt anstelle der regulären andockpunkt-Symbol, klicken Sie dann die andockpunkt ist nicht aktiviert.
+Wenn Sie ein Warnsymbol ![Andockpunktwarnsymbol](../debugger/media/snapshot-troubleshooting-snappoint-warning-icon.png "Andockpunktwarnsymbol") anstelle des regulären Andockpunktsymbols bei Ihrem Andockpunkt sehen, dann ist der Andockpunkt nicht aktiviert.
 
-![Andockpunkt nicht einschalten](../debugger/media/snapshot-troubleshooting-dont-turn-on.png "Andockpunkt ist nicht aktiviert")
+![Andockpunkt wird nicht aktiviert](../debugger/media/snapshot-troubleshooting-dont-turn-on.png "Andockpunkt wird nicht aktiviert")
 
 Führen Sie diese Schritte aus:
 
-1. Stellen Sie sicher, dass Sie die gleiche Version des Quellcodes verfügen, die zum Erstellen und Bereitstellen Ihrer app.isua1 verwendet wurde. Stellen Sie sicher, dass Sie die richtigen Symbole für die Bereitstellung geladen werden. Zeigen Sie dazu die **Module** Fenster beim, Debuggen von Momentaufnahmen, und überprüfen Sie die Symboldatei-Spalte enthält eine PDB-Datei, die für das Modul, das Sie Debuggen geladen. Der Snapshot Debugger versucht, automatisch herunterladen und verwenden die Symbole für die Bereitstellung.
+1. Stellen Sie sicher, dass Sie über die gleiche Version des Quellcodes verfügen, die zum Erstellen und Bereitstellen Ihrer „app.isua1“ verwendet wurde. Stellen Sie sicher, dass Sie die richtigen Symbole für die Bereitstellung laden. Zeigen Sie dazu das **Module**-Fenster beim Debuggen von Momentaufnahmen an, und überprüfen Sie, ob die Symboldatei-Spalte eine PDB-Datei enthält, die für das Modul geladen wird, das Sie debuggen. Der Momentaufnahmedebugger versucht, automatisch Symbole für die Bereitstellung herunterzuladen und zu verwenden.
 
 ## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Problem: Symbole werden nicht geladen werden, wenn ich eine Momentaufnahme öffnen
 
-Wenn Sie folgende Fenster angezeigt wird, wurde die Symbole nicht geladen.
+Wenn das folgende Fenster angezeigt wird, wurden die Symbole nicht geladen.
 
-![Laden Sie Symbole nicht](../debugger/media/snapshot-troubleshooting-symbols-wont-load.png "Symbole werden nicht geladen werden.")
+![Symbole werden nicht geladen](../debugger/media/snapshot-troubleshooting-symbols-wont-load.png "Symbole werden nicht geladen")
 
 Führen Sie diese Schritte aus:
 
-- Klicken Sie auf die **Symboleinstellungen ändern...** auf dieser Seite verknüpfen. In der **Debuggen > Symbol** Einstellungen, fügen Sie ein Symbolcacheverzeichnis hinzu. Starten Sie neu, Debuggen von Momentaufnahmen, nachdem der Symbolpfad festgelegt wurde.
+- Klicken Sie auf den **Symboleinstellungen ändern**- Link auf dieser Seite. Fügen Sie in den **Debuggen > Symbol**-Einstellungen ein Symbolcacheverzeichnis hinzu. Starten Sie das Debuggen von Momentaufnahmen neu, nachdem der Symbolpfad festgelegt wurde.
 
-   Die Symbole oder die PDB-Dateien, die in Ihrem Projekt verfügbar ist, müssen Ihre App Service-Bereitstellung übereinstimmen. Die meisten Bereitstellungen (Bereitstellung über Visual Studio, CI/CD mit Azure-Pipelines oder Kudu, usw.) werden Ihre Symboldateien zusammen zu Ihrer App Service veröffentlichen. Das Symbolcacheverzeichnis festlegen, kann Visual Studio diese Symbole verwenden.
+   Die in Ihrem Projekt verfügbaren Symbole oder PDB-Dateien müssen mit Ihrer App Service-Bereitstellung übereinstimmen. Die meisten Bereitstellungen (Bereitstellung über Visual Studio, CI/CD mit Azure-Pipelines oder Kudu usw.) veröffentlichen Ihre Symboldateien für Ihren App Service. Die Einstellung des Symbolcacheverzeichnisses ermöglicht Visual Studio, diese Symbole zu verwenden.
 
    ![Symboleinstellungen](../debugger/media/snapshot-troubleshooting-symbol-settings.png "Symboleinstellungen")
 
-- Alternativ verwenden Sie Ihre Organisation verwendet einen Symbolserver oder löscht Symbole in einen anderen Pfad, den symboleinstellungen Laden Sie die richtigen Symbole für die Bereitstellung.
+- Wenn Ihre Organisation einen Symbolserver verwendet oder Symbole in einem anderen Pfad löscht, verwenden Sie alternativ die Symboleinstellungen, um die richtigen Symbole für die Bereitstellung zu laden.
 
 ## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Problem: Die Option "Snapshot Debugger anfügen" in der Cloud-Explorer nicht angezeigt werden.
 
 Führen Sie diese Schritte aus:
 
-- Stellen Sie sicher, dass die Snapshot-Debugger-Komponente installiert ist. Öffnen Sie Visual Studio-Installer aus, und überprüfen Sie die **Momentaufnahmedebugger** -Komponente in der Azure-Workload.
-- Stellen Sie sicher, dass Ihre app unterstützt wird. Derzeit nur ASP.NET (4.6.1+) und ASP.NET Core (2.0 und höher)-apps, die in Azure App Service bereitgestellt werden unterstützt.
+- Stellen Sie sicher, dass die Momentaufnahmedebugger-Komponente installiert ist. Öffnen Sie den Visual Studio-Installer, und aktivieren Sie die **Momentaufnahmedebugger**-Komponente in der Azure-Workload.
+::: moniker range="< vs-2019"
+- Stellen Sie sicher, dass Ihre App unterstützt wird. Derzeit werden nur ASP.NET- und ASP.NET Core-Apps (4.6.1+ und 2.0+) unterstützt, die für Azure App Services bereitgestellt werden.
+::: moniker-end
+::: moniker range=">= vs-2019"
+- Stellen Sie sicher, dass Ihre App unterstützt wird:
+  - Azure App Services – ASP.NET-Apps, die in .NET Framework 4.6.1 oder höher ausgeführt werden.
+  - Azure App Services – ASP.NET Core-Apps, die in .NET Core 2.0 oder höher unter Windows ausgeführt werden.
+  - Azure-VMs (und VMSSs) – ASP.NET-Apps, die unter .NET Framework 4.6.1 oder höher ausgeführt werden.
+  - Azure-VMs (und VMSSs) – ASP.NET Core-Apps, die in .NET Core 2.0 oder höher unter Windows ausgeführt werden.
+  - Azure Kubernetes Services – ASP.NET Core-Apps, die in .NET Core 2.2 oder höher unter Debian 9 ausgeführt werden.
+  - Azure Kubernetes Services – ASP.NET Core-Apps, die in .NET Core 2.2 oder höher unter Alpine 3.8 ausgeführt werden.
+  - Azure Kubernetes Services – ASP.NET Core-Apps, die in .NET Core 2.2 oder höher unter Ubuntu 18.04 ausgeführt werden.
+::: moniker-end
 
 ## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Problem: Ich sehen nur eingeschränkt Momentaufnahmen in den Diagnosetools
 
-![Gedrosselte andockpunkt](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "gedrosselt andockpunkt")
+![Gedrosselte Momentaufnahme](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "Gedrosselte Momentaufnahme")
 
 Führen Sie diese Schritte aus:
 
-- Momentaufnahmen wenig Speicher beanspruchen, aber eine kapazitätsverbraucher besitzen. Wenn die Snapshot-Debugger, dass Ihr Server unter hoher arbeitsspeicherauslastung ist erkennt, dauert es nicht Momentaufnahmen. Sie können bereits erfasste Momentaufnahmen löschen, indem die Momentaufnahmedebugger-Sitzung zu beenden, und versuchen Sie es erneut.
+- Momentaufnahmen beanspruchen wenig Arbeitsspeicher, nutzen aber festgelegten virtuellen Speicher. Wenn der Momentaufnahmedebugger eine hohe Arbeitsspeicherauslastung Ihres Servers erkennt, erstellt er keine Momentaufnahmen. Sie können bereits erfasste Momentaufnahmen löschen, indem Sie die Momentaufnahmedebugger-Sitzung beenden und es erneut versuchen.
+
+## <a name="issue-snapshot-debugging-with-multiple-versions-of-the-visual-studio-gives-me-errors"></a>Problem: Debuggen von Momentaufnahmen mit mehreren Versionen von Visual Studio erhalte ich Fehler
+
+VS 2019 erfordert eine neuere Version dieser Momentaufnahmedebugger-Websiteerweiterung in Ihrem Azure App Service.  Diese Version ist nicht kompatibel mit der älteren Version der Momentaufnahmedebugger-Websiteerweiterung, die von Visual Studio 2017 verwendet wird.  Sie erhalten die folgende Fehlermeldung, wenn Sie versuchen, den Momentaufnahmedebugger in Visual Studio 2019 einem App Service anzufügen, der zuvor vom Momentaufnahmedebugger in Visual Studio 2017 gedebugt wurde:
+
+![Inkompatible Momentaufnahmedebugger-Websiteerweiterung VS 2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "Inkompatible Momentaufnahmedebugger-Websiteerweiterung VS 2019")
+
+Wenn Sie im Gegensatz dazu Visual Studio 2017 verwenden, um den Momentaufnahmedebugger einem Azure App Service anzufügen, der zuvor vom Momentaufnahmedebugger in Visual Studio 2019 gedebugt wurde, erhalten Sie folgende Fehlermeldung:
+
+![Inkompatible Momentaufnahmedebugger-Websiteerweiterung VS 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "Inkompatible Momentaufnahmedebugger-Websiteerweiterung VS 2017")
+
+Um dieses Problem zu lösen, löschen Sie die folgenden App-Einstellungen im Azure-Portal, und fügen Sie den Momentaufnahmedebugger erneut an:
+
+- INSTRUMENTATIONENGINE_EXTENSION_VERSION
+- SNAPSHOTDEBUGGER_EXTENSION_VERSION
+
+## <a name="issue-i-am-having-problems-snapshot-debugging-and-i-need-to-enable-more-logging"></a>Problem: Ich habe Probleme Debuggen von Momentaufnahmen und weitere Protokollierung aktivieren
+
+### <a name="enable-agent-logs"></a>Aktivieren von Agent-Protokollen
+
+Zum Aktivieren und Deaktivieren der Agent-Protokollierung öffnen Sie Visual Studio, und navigieren Sie zu *Extras > Optionen > Momentaufnahmedebugger > Agent-Protokollierung aktivieren*. Beachten Sie: Wenn *Alte Agent-Protokolle beim Sitzungsstart löschen* auch aktiviert ist, löscht jedes erfolgreiche Anfügen in Visual Studio vorherige Agent-Protokolle.
+
+Agent-Protokolle können sich an folgenden Speicherorten befinden:
+
+- App Services:
+  - Navigieren Sie zur Kudu-Website Ihres App Service (d.h. yourappservice.**scm**.azurewebsites.net), und navigieren Sie zur Debugging-Konsole.
+  - Agentprotokolle werden im folgenden Verzeichnis gespeichert:  D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\
+- VM/VMSS:
+  - Melden Sie sich mit Ihrem virtuellen Computer, Agent-Protokolle wie folgt gespeichert werden:  C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<Version>\SnapshotDebuggerAgent_*.txt
+- AKS
+  - Navigieren Sie zum folgenden Verzeichnis: „/tmp/diag/AgentLogs/*“
+
+### <a name="enable-profilerinstrumentation-logs"></a>Aktivieren von Profiler/Instrumentierungsprotokollen
+
+Instrumentierungsprotokolle finden Sie an den folgenden Speicherorten:
+
+- App Services:
+  - Fehlerprotokollierung wird automatisch an „D:\Home\LogFiles\eventlog.xml“ gesendet, Ereignisse werden mit <<Provider Name="Instrumentation Engine" //>> oder "Production Breakpoints" markiert
+- VM/VMSS:
+  - Melden Sie sich bei Ihrem virtuellen Computer an, und öffnen Sie die Ereignisanzeige.
+  - Öffnen Sie die folgende Ansicht: *Windows-Protokolle > Anwendung*.
+  - *Aktuelles Protokoll filtern* nach *Ereignisquelle* mit entweder *Produktionshaltepunkten* oder *Instrumentation-Engine*.
+- AKS
+  - Instrumentation-Engine-Protokollierung unter „/tmp/diag/log.txt“ (legen Sie MicrosoftInstrumentationEngine_FileLogPath in DockerFile-Datei fest)
+  - Produktionshaltepunkt-Protokollierung unter „/tmp/diag/shLog.txt“
 
 ## <a name="known-issues"></a>Bekannte Probleme
 
 - Debuggen von Momentaufnahmen mit mehreren Visual Studio-Clients für den gleichen App Service wird derzeit nicht unterstützt.
-- Roslyn-IL-Optimierungen sind nicht vollständig in ASP.NET Core-Projekten unterstützt. Für einige ASP.NET Core-Projekte ist es möglicherweise nicht möglich, finden einige Variablen, oder verwenden einige Variablen in bedingten Anweisungen. 
-- Bestimmte Variablen, wie z. B. *$FUNCTION* oder *$CALLER*, kann nicht ausgewertet werden, in bedingten Anweisungen oder protokollpunkte für ASP.NET Core-Projekte.
-- Debuggen von Momentaufnahmen funktioniert nicht auf App-Dienste, die [lokale Zwischenspeicherung](/azure/app-service/app-service-local-cache) aktiviert.
-- API-Apps Debuggen von Momentaufnahmen wird derzeit nicht unterstützt.
+- Roslyn IL-Optimierungen werden in ASP.NET Core-Projekten nicht vollständig unterstützt. Für einige ASP.NET Core-Projekte ist es möglicherweise nicht möglich, einige Variablen anzuzeigen oder einige Variablen in bedingten Anweisungen zu verwenden.
+- Bestimmte Variablen, wie z.B. *$FUNCTION* oder *$CALLER*, können in bedingten Anweisungen oder Protokollpunkten für ASP.NET Core-Projekte nicht ausgewertet werden.
+- Debuggen von Momentaufnahmen funktioniert nicht in App Services, für die [Lokale Zwischenspeicherung](/azure/app-service/app-service-local-cache) aktiviert ist.
+- Debuggen von Momentaufnahmen von API-Apps wird derzeit nicht unterstützt.
 
-## <a name="site-extension-upgrade"></a>Erweiterung der Standortaktualisierung
+## <a name="site-extension-upgrade"></a>Websiteerweiterungsupgrade
 
-Momentaufnahme Debuggen und Application Insights basieren auf einer ICorProfiler, die in der Website-Prozess geladen wird und bewirkt, dass Probleme durch Sperren von Dateien während des Upgrades. Dieser Prozess aus, um sicherzustellen, dass es gibt keine Ausfallzeiten auf Ihren Produktionsstandort empfohlen.
+Debuggen von Momentaufnahmen und Application Insights hängen von einem ICorProfiler ab, der in den Websiteprozess geladen wird und Probleme durch Sperren von Dateien während des Upgrades verursacht. Wir empfehlen diesen Prozess, um sicherzustellen, dass keine Downtime auf Ihrer Produktionswebsite auftritt.
 
-- Erstellen Sie eine [Bereitstellungsslot](/azure/app-service/web-sites-staged-publishing) in Ihrer App Service und Bereitstellen des Standorts im Slot.
-- Wechseln Sie im Slot mit der Produktion von Cloud-Explorer in Visual Studio oder über das Azure-Portal.
-- Beenden Sie den Slot-Standort. Dies dauert ein paar Sekunden, aus der Website w3wp.exe-Prozess aus allen Instanzen zu beenden.
-- Die Slot-websiteerweiterung von Kudu-Website oder das Azure-Portal aktualisieren (*Blatt "App Service" > Entwicklungstools > Erweiterungen > Update*).
-- Starten Sie die Slot-Website. Es wird empfohlen, besuchen Sie die Website zum Aufwärmen es noch mal.
-- Wechseln Sie im Slot mit der Produktion.
+- Erstellen Sie einen [Bereitstellungsslot](/azure/app-service/web-sites-staged-publishing) in Ihrem App Service, und stellen Sie Ihre Website für den Slot bereit.
+- Tauschen Sie den Slot vom Cloud-Explorer in Visual Studio aus oder über das Azure-Portal mit der Produktion aus.
+- Beenden Sie die Slot-Website. Es dauert ein paar Sekunden, den w3wp.exe-Prozess der Website in allen Instanzen zu beenden.
+- Upgraden Sie die Slot-Websiteerweiterung von der Kudu-Website aus oder über das Azure-Portal (*App Service-Blatt > Entwicklungstools > Erweiterungen > Update*).
+- Starten Sie die Slot-Website. Sie sollten die Website besuchen, um sie wieder zu aktivieren.
+- Tauschen Sie den Slot mit der Produktion aus.
 
 ## <a name="see-also"></a>Siehe auch
 
-[Debuggen in Visual Studio](../debugger/index.md)  
-[Debug live ASP.NET-Apps, die mit dem Momentaufnahmedebugger](../debugger/debug-live-azure-applications.md)  
-[Häufig gestellte Fragen zum Debuggen von Momentaufnahmen](../debugger/debug-live-azure-apps-faq.md)  
+- [Debuggen in Visual Studio](../debugger/index.md)
+- [Debug live ASP.NET-Apps, die mit dem Momentaufnahmedebugger](../debugger/debug-live-azure-applications.md)
+- [Debug live ASP.NET Azure virtuelle Machines\Virtual Computer Skalierungsgruppen mit der Snapshot-Debugger](../debugger/debug-live-azure-virtual-machines.md)
+- [Debug live ASP.NET-Azure-Kubernetes, die mit dem Momentaufnahmedebugger](../debugger/debug-live-azure-kubernetes.md)
+- [Häufig gestellte Fragen zum Debuggen von Momentaufnahmen](../debugger/debug-live-azure-apps-faq.md)

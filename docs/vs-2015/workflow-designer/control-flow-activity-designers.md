@@ -1,23 +1,20 @@
 ---
 title: Steuern von Ablaufsteuerungs-Aktivitätsdesigner | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: ba74af23-5398-4e62-bd90-c50612e3bfef
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: e852bfa5b392c6ffa758678fa83dabd8a8c97f54
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 25f8db1f6d14692538fe7f61ed2f9dbd37e0bd29
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303614"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977310"
 ---
 # <a name="control-flow-activity-designers"></a>Ablaufsteuerungsaktivitätsdesigner
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] umfasst eine Reihe von vom System bereitgestellten Aktivitäten, die Sie zum Erstellen von Workflows verwenden können. Dieser Abschnitt enthält die vom System bereitgestellten Aktivitäten, die zur Flusssteuerung innerhalb eines Workflows dienen. In den folgenden Themen werden diese Aktivitäten beschrieben und Anleitungen zu ihrer Verwendung bereitgestellt.  
@@ -26,7 +23,7 @@ ms.locfileid: "49303614"
  [DoWhile](../workflow-designer/dowhile-activity-designer.md)  
  Führt die Aktivität, die im Text das mindestens einmal, bis eine angegebene Bedingung ergibt enthaltene **"true"**.  
   
- [ForEach\<T >](http://msdn.microsoft.com/en-us/a680cddd-2760-497a-b27b-c023fcbc6f33)  
+ [ForEach\<T>](foreach-t-activity-designer.md)  
  Führt die im Text enthaltene Aktivität für jedes Element einer angegebenen Auflistung aus.  
   
  [If](../workflow-designer/if-activity-designer.md)  
@@ -39,7 +36,7 @@ ms.locfileid: "49303614"
  Zählt die Elemente einer Auflistung auf und führt parallel eine eingebettete Anweisung für jedes Element der Auflistung aus.  
   
  [Pick](../workflow-designer/pick-activity-designer.md)  
- Führt einen von mehreren Branches als Reaktion auf ein Ereignis aus, das eine ereignisbasierte Flusssteuerung bereitstellt.  
+ Führt eine von mehreren Verzweigungen als Reaktion auf ein Ereignis aus, das eine ereignisbasierte Flusssteuerung bereitstellt.  
   
  [PickBranch](../workflow-designer/pickbranch-activity-designer.md)  
  Stellt einen potenziellen Ausführungspfad innerhalb einer <xref:System.Activities.Statements.Pick>-Aktivität bereit.  
@@ -47,7 +44,7 @@ ms.locfileid: "49303614"
  [Sequence](../workflow-designer/sequence-activity-designer.md)  
  Enthält eine geordnete Auflistung von untergeordneten Aktivitäten, die in der angegebenen Reihenfolge ausgeführt werden.  
   
- [Switch\<T >](http://msdn.microsoft.com/en-us/ce1aa634-c4db-4475-a1c8-a88478a57212)  
+ [Switch\<T>](switch-t-activity-designer.md)  
  Wertet einen angegebenen Ausdruck aus und führt diejenige Aktivität aus einer Auflistung von Aktivitäten aus, deren zugeordneter Schlüssel dem Wert entspricht, der aus der Auswertung hervorging.  
   
  [While](../workflow-designer/while-activity-designer.md)  

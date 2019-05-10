@@ -7,29 +7,25 @@ helpviewer_keywords:
 ms.assetid: 838c0ddf-fdf3-4df1-8d21-79610b8ba0b1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ccb49abc1251b489807efcb4d7e9ce89b25dcd16
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: adf6a2405ae3d3408f9cf04199ba05dff9232326
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842696"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856425"
 ---
 # <a name="manage-undo-and-redo-by-using-the-legacy-api"></a>Verwalten von zum Rückgängigmachen und wiederherstellen, indem Sie mit der legacy-API
-Editoren müssen Rückgängig-Vorgänge unterstützt, mit denen Benutzer ihre letzten Änderungen zurückzusetzen, wenn sie zum Ändern von Code. Die meisten Editoren implementierter [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Rückgängig-Unterstützung, die automatisch von der integrierten Entwicklungsumgebung (IDE) bereitgestellt haben.  
-  
-## <a name="in-this-section"></a>In diesem Abschnitt  
- [Vorgehensweise: Implementieren von Rückgängig-Verwaltung](../extensibility/how-to-implement-undo-management.md)  
- Bietet Rückgängig-Funktion für Editoren mit einzelnen oder mehreren Ansichten an.  
-  
- [Vorgehensweise: Deaktivieren des Rückgängig-Stapels](../extensibility/how-to-clear-the-undo-stack.md)  
- Beschreibt, wie einen Rückgängig-Stapel gelöscht.  
-  
- [Vorgehensweise: Verwenden Sie die verknüpfte rückgängig-Verwaltung](../extensibility/how-to-use-linked-undo-management.md)  
- Enthält verknüpfte rückgängig-Verwaltung in den Editor.  
-  
-## <a name="reference"></a>Referenz  
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>  
- Bietet rückgängig-Verwaltung für einen Editor, der mehrere Ansichten unterstützt.  
+Editoren müssen Rückgängig-Vorgänge unterstützt, mit denen Benutzer ihre letzten Änderungen zurückzusetzen, wenn sie zum Ändern von Code. Die meisten Editoren implementierter [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Rückgängig-Unterstützung, die automatisch von der integrierten Entwicklungsumgebung (IDE) bereitgestellt haben.
+
+## <a name="in-this-section"></a>In diesem Abschnitt
+- [Vorgehensweise: Implementieren von Rückgängig-Verwaltung](../extensibility/how-to-implement-undo-management.md) bietet Rückgängig-Funktion für Editoren mit einzelnen oder mehrere Ansichten.
+
+- [Vorgehensweise: Deaktivieren den Rückgängig-Stapel](../extensibility/how-to-clear-the-undo-stack.md) wird beschrieben, wie einen Rückgängig-Stapel zu löschen.
+
+- [Vorgehensweise: Verwenden Sie die verknüpfte rückgängig-Verwaltung](../extensibility/how-to-use-linked-undo-management.md) Incorporates verknüpften rückgängig-Verwaltung in den Editor.
+
+## <a name="reference"></a>Referenz
+ <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager> Bietet rückgängig-Verwaltung für einen Editor, der mehrere Ansichten unterstützt.

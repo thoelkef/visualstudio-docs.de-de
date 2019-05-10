@@ -1,29 +1,31 @@
 ---
 title: IDebugExtendedField::IsClosedType | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IsClosedType
 - IDebugExtendedField::IsClosedType
 ms.assetid: 9136fc57-74ff-4fe4-a6e2-b137cb9d5b08
-author: gregvanl
+caps.latest.revision: 9
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: ae7d6010bcc7c80f6b61c04242e5f335e3a3f013
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9056a3543de27b26bc32eec5840248c337ea11fa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850673"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62919387"
 ---
 # <a name="idebugextendedfieldisclosedtype"></a>IDebugExtendedField::IsClosedType
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Bestimmt, ob das Feld einen geschlossenen Typ darstellt.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT IsClosedType(  
    void  
 );  

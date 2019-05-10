@@ -1,24 +1,23 @@
 ---
-title: Erweiterungen und Updates, Umgebung, Dialogfeld „Optionen“
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+title: Erweiterungen, Umgebung, Dialogfeld „Optionen“
+ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.ExtensionManager
 ms.assetid: c73859eb-3c33-4f39-86bf-6788387b5937
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47784d19dee5ff911432f9849ebe4545ecee761f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d7c49cc7946f9fea988c57a4ba782ec93a6294fa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831036"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790849"
 ---
-# <a name="extensions-and-updates-environment-options-dialog-box"></a>Erweiterungen und Updates, Umgebung, Dialogfeld „Optionen“
+# <a name="options-dialog-box-environment--extensions"></a>Dialogfeld „Optionen“: Umgebung \> Erweiterungen
 
 Verwenden Sie diese Seite, um festzulegen, wie Visual Studio-Updates ausgeführt und wie Erweiterungen aktualisiert und ermittelt werden.
 
@@ -30,13 +29,13 @@ Ist dieses Kontrollkästchen aktiviert, wird Visual Studio in regelmäßigen Abs
 
 Wenn dieses Kontrollkästchen aktiviert ist, werden Erweiterungen aktualisiert, ohne dass eine Aufforderung notwendig ist. Weitere Informationen finden Sie unter [Suchen und Verwenden von Visual Studio-Erweiterungen](../../ide/finding-and-using-visual-studio-extensions.md).
 
-## <a name="load-user-extensions-when-running-as-administrator"></a>Benutzererweiterungen bei Ausführung als Administrator laden
+## <a name="load-per-user-extensions-when-running-as-administrator"></a>Laden von Benutzererweiterungen bei Ausführung als Administrator
 
 Weitere Informationen finden Sie unter [Suchen und Verwenden von Visual Studio-Erweiterungen](../../ide/finding-and-using-visual-studio-extensions.md).
 
 ## <a name="additional-extension-galleries"></a>Zusätzliche Erweiterungskataloge
 
-Eine Enterprise-Funktion, mit dem die Unterstützung für Kataloge von proprietären Erweiterungen ermöglicht wird. Weitere Informationen finden Sie unter [Private Galleries](../../extensibility/private-galleries.md).
+Ein Enterprise-Feature, mit dem die Unterstützung für Kataloge von proprietären Erweiterungen ermöglicht wird. Weitere Informationen finden Sie unter [Private Kataloge](../../extensibility/private-galleries.md).
 
 ## <a name="see-also"></a>Siehe auch
 

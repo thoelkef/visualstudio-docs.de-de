@@ -1,22 +1,21 @@
 ---
-title: 'Vorgehensweise: Erzwingen von wartbarem Code mit einer Eincheckrichtlinie für die Analyse'
+title: 'Vorgehensweise: Erzwingen von verwaltbarem Code mit einer Eincheckrichtlinie für die Codeanalyse'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, check-in policies
 ms.assetid: d1b3b04f-4dd9-40e6-b2d4-b414d33fb647
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d31e52ab2f158b73a0076414b6d18e0b7421b04
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7139c952b40957a564fcd4074b1c931817dfb851
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825712"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815822"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Vorgehensweise: Erzwingen von wartbarem Code mit einer Eincheckrichtlinie für die Analyse
 

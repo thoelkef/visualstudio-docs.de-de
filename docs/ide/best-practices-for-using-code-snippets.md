@@ -1,23 +1,21 @@
 ---
 title: Empfohlene Vorgehensweisen für die Verwendung von Codeausschnitten
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, best practices
 - code snippets, security
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8c7a04f2a2fb2ef59a41953c82da4254f213084
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 3f106606ae00c8f22aa5948128afb8f7f27659a5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179530"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975608"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Bewährte Methoden für die Verwendung von Codeausschnitten
 
@@ -25,7 +23,7 @@ Der Code in einem Codeausschnitt zeigt nur die grundlegende Methode, etwas zu tu
 
 ## <a name="handling-exceptions"></a>Behandeln von Ausnahmen
 
-Normalerweise fangen Try…Catch-Blöcke des Codeausschnitts alle Ausnahmen ab und lösen sie erneut aus. Möglicherweise ist dies nicht die richtige Wahl für Ihr Projekt. Bei jeder Ausnahme gibt es mehrere Reaktionsmöglichkeiten. Beispiele finden Sie unter [Vorgehensweise: Behandeln einer Ausnahme mit try/catch (C#)](/dotnet/csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch) und [Try...Catch...Finally Statement (Visual Basic) (Try...Catch...Finally-Anweisung (Visual Basic))](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).
+Normalerweise fangen Try…Catch-Blöcke des Codeausschnitts alle Ausnahmen ab und lösen sie erneut aus. Möglicherweise ist dies nicht die richtige Wahl für Ihr Projekt. Bei jeder Ausnahme gibt es mehrere Reaktionsmöglichkeiten. Beispiele hierzu finden Sie unter [Vorgehensweise: Behandeln einer Ausnahme mit try/catch (C#)](/dotnet/csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch) und [Try...Catch...Finally Statement (Visual Basic) (Try...Catch...Finally-Anweisung (Visual Basic))](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).
 
 ## <a name="file-locations"></a>Dateispeicherorte
 

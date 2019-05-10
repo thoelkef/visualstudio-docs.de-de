@@ -1,14 +1,9 @@
 ---
 title: 'CA1720: Bezeichner dürfen keine Typnamen enthalten | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1720
 - IdentifiersShouldNotContainTypeNames
@@ -20,14 +15,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ec0980d312d4a65a770e63f0a23203a7e95c546f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 504c985bd276a891b76e8c9b2a7c0ef51c3a490a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862334"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62576727"
 ---
-# <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Bezeichner dürfen keine Typnamen enthalten
+# <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Bezeichner dürfen keine Typnamen enthalten.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -79,15 +74,15 @@ ms.locfileid: "49862334"
 
 - Float
 
-- float32
+- Float32
 
-- float64
+- Float64
 
   Darüber hinaus werden die Namen der Parameter auch mit den folgenden sprachunabhängige Typnamen, unter Beachtung der Groß-verglichen:
 
 - Object
 
-- obj
+- Obj
 
 - Boolesch
 
@@ -115,7 +110,7 @@ ms.locfileid: "49862334"
 
 - IntPtr
 
-- PTR
+- Ptr
 
 - Zeiger
 
@@ -146,13 +141,10 @@ ms.locfileid: "49862334"
  Gelegentliche Nutzung eines basierende Parameter- und Memberlisten-Namen kann geeignet sein. Für neue Entwicklungen keine bekannte jedoch Szenarien, in dem Sie eine Warnung dieser Regel unterdrücken soll. Für Bibliotheken, die zuvor versandt wurden, müssen Sie möglicherweise eine Warnung dieser Regel zu unterdrücken.
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1709: Bei Bezeichnern sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+ [CA1709: Bezeichner sollten beachtet werden](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
- [CA1708: Bezeichner sollten sich nicht nur durch die Groß-/Kleinschreibung unterscheiden](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708: Bezeichner sollten sich durch die Groß-/Kleinschreibung unterscheiden.](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
- [CA1707: Bezeichner sollten keine Unterstriche enthalten](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+ [CA1707: Bezeichner sollten keine Unterstriche enthalten.](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
 
- [CA1719: Parameternamen sollten nicht mit Membernamen übereinstimmen](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)
-
-
-
+ [CA1719: Parameternamen sollten nicht mit Membernamen übereinstimmen.](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)

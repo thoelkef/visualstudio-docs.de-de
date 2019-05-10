@@ -1,37 +1,32 @@
 ---
-title: 'Vorgehensweise: Anfügen des Profilers an eine ASP.NET-Webanwendung zum Sammeln von Anwendungsstatistiken über die Befehlszeile | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Fügen Sie den Profiler an eine ASP.NET-Webanwendung zum Sammeln von Anwendungsstatistiken über die Befehlszeile | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 3725ddbe-ce91-4469-991e-8c5ed048c618
 caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8bed31651ca52097675c9584091b618ea8757192
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5c60e63384ab6f391cee1151c8ee20d39ae2e1b2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762423"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432853"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>Gewusst wie: Anfügen des Profilers an eine ASP.NET-Webanwendung zum Sammeln von Anwendungsstatistiken über die Befehlszeile
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>Vorgehensweise: Fügen Sie den Profiler an eine ASP.NET-Webanwendung zum Sammeln von Anwendungsstatistiken über die Befehlszeile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In diesem Thema wird beschrieben, wie der Profiler mit den Befehlszeilentools der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungstools an eine ASP.NET-Webanwendung angefügt wird und wie Sie mit der Samplingmethode Leistungsstatistiken sammeln können.  
 
 > [!NOTE]
->  Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen Windows Store-Apps neue Erfassungsmethoden. Siehe [Profilerstellungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+> Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen Windows Store-Apps neue Erfassungsmethoden. Siehe [Profilerstellungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
 >   
->  Das Hinzufügen von Ebeneninteraktionsdaten zu einer Profilerstellung erfordert bestimmte Verfahren der Befehlszeilenprofilerstellungstools. Informationen hierzu finden Sie unter [Erfassen von Ebeneninteraktionsdaten](../profiling/adding-tier-interaction-data-from-the-command-line.md).  
+> Das Hinzufügen von Ebeneninteraktionsdaten zu einer Profilerstellung erfordert bestimmte Verfahren der Befehlszeilenprofilerstellungstools. Informationen hierzu finden Sie unter [Erfassen von Ebeneninteraktionsdaten](../profiling/adding-tier-interaction-data-from-the-command-line.md).  
 >   
->  Die Befehlszeilentools der Profilerstellungstools befinden sich im Unterverzeichnis "\Team Tools\Performance Tools" des [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]-Installationsverzeichnisses. Auf 64-Bit-Computern sind sowohl 64 Bit- als auch 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen. Weitere Informationen finden Sie unter [Angeben des Pfads zu Tools für die Befehlszeile](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+> Die Befehlszeilentools der Profilerstellungstools befinden sich im Unterverzeichnis "\Team Tools\Performance Tools" des [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]-Installationsverzeichnisses. Auf 64-Bit-Computern sind sowohl 64 Bit- als auch 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen. Weitere Informationen finden Sie unter [Angeben des Pfads zu Tools für die Befehlszeile](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
 
  Zum Erfassen von Leistungsdaten in einer ASP.NET-Webanwendung müssen die entsprechenden Umgebungsvariablen initialisiert sein, und der Computer, auf dem die ASP.NET-Webanwendung gehostet wird, muss neu neu gestartet werden, um den Webserver zur Profilerstellung konfigurieren zu können.  
 
@@ -49,9 +44,9 @@ In diesem Thema wird beschrieben, wie der Profiler mit den Befehlszeilentools de
 
     **VSPerfClrEnv /globalsampleon** [**/samplelineoff**]  
 
-   -   **/globalsampleon** aktiviert das Sampling.  
+   - **/globalsampleon** aktiviert das Sampling.  
 
-   -   **/samplelineoff** deaktiviert die Zuweisung gesammelter Daten zu bestimmten Quellcodezeilen. Wenn diese Option angegeben wird, werden Daten nur Funktionen zugewiesen.  
+   - **/samplelineoff** deaktiviert die Zuweisung gesammelter Daten zu bestimmten Quellcodezeilen. Wenn diese Option angegeben wird, werden Daten nur Funktionen zugewiesen.  
 
 3. Starten Sie den Computer neu.  
 
@@ -64,7 +59,7 @@ In diesem Thema wird beschrieben, wie der Profiler mit den Befehlszeilentools de
      Sie können jede der folgenden Optionen zusammen mit der Option **/start:sample** verwenden.  
 
    > [!NOTE]
-   >  Die Optionen **/user** und **/crosssession** sind normalerweise für ASP.NET-Anwendungen erforderlich.  
+   > Die Optionen **/user** und **/crosssession** sind normalerweise für ASP.NET-Anwendungen erforderlich.  
 
    |                                 Option                                  |                                                                                                                                                        Beschreibung                                                                                                                                                        |
    |-------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -74,14 +69,13 @@ In diesem Thema wird beschrieben, wie der Profiler mit den Befehlszeilentools de
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                       Verwenden Sie nur **/wincounter**. Gibt die Anzahl von Millisekunden zwischen Ereignissen bei der Datensammlung mit Windows-Leistungsindikatoren an. Der Standardwert ist 500 ms.                                                                                       |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                         Gibt ein ETW-Ereignis (Ereignisablaufverfolgung für Windows) an, dessen Daten während der Profilerstellung gesammelt werden sollen. ETW-Ereignisse werden in einer separaten Datei (.etl) gesammelt.                                                                                          |
 
-
 5. Starten Sie die ASP.NET-Webanwendung wie gewohnt.  
 
 6. Fügen Sie den Profiler an den ASP.NET-Arbeitsprozess an. Type:**VSPerfCmd** [/attach](../profiling/attach.md)**:**{`PID`|`ProcName`} [`Sample Event`] [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
 
-   -   `PID` gibt die Prozess-ID des ASP.NET-Arbeitsprozesses an; `ProcName` gibt den Namen des Arbeitsprozesses an. Die Prozess-IDs und die Namen aller aktiven Prozesse werden im Windows Task-Manager angezeigt.  
+   - `PID` gibt die Prozess-ID des ASP.NET-Arbeitsprozesses an; `ProcName` gibt den Namen des Arbeitsprozesses an. Die Prozess-IDs und die Namen aller aktiven Prozesse werden im Windows Task-Manager angezeigt.  
 
-   -   Standardmäßig wird alle 10.000.000 nicht angehaltene Prozessortaktzyklen ein Sampling der Leistungsdaten durchgeführt. Bei einem 1-GHz-Prozessor entspricht dies etwa 100 Mal pro Sekunde. Sie können eine der folgenden **VSPerfCmd**-Optionen angeben, um das Taktzyklusintervall zu ändern oder ein anderes Samplingereignis anzugeben.  
+   - Standardmäßig wird alle 10.000.000 nicht angehaltene Prozessortaktzyklen ein Sampling der Leistungsdaten durchgeführt. Bei einem 1-GHz-Prozessor entspricht dies etwa 100 Mal pro Sekunde. Sie können eine der folgenden **VSPerfCmd**-Optionen angeben, um das Taktzyklusintervall zu ändern oder ein anderes Samplingereignis anzugeben.  
 
    |Samplingereignis|Beschreibung|  
    |------------------|-----------------|  
@@ -91,14 +85,14 @@ In diesem Thema wird beschrieben, wie der Profiler mit den Befehlszeilentools de
    |[/counter](../profiling/counter.md) **:** `Config`|Ändert das Samplingereignis auf den Prozessorleistungsindikator und das Samplingintervall in das in `Config` angegebene Intervall.|  
    |[/targetclr](../profiling/targetclr.md) **:** `Version`|Gibt die Version der CLR (Common Language Runtime) für die Profilerstellung an, wenn mehr als eine Laufzeitversion in eine Anwendung geladen wird.|  
 
-   -   **/targetclr:** `Version` gibt die Version der CLR (Common Language Runtime) für die Profilerstellung an, wenn in einer Anwendung mehrere CLR-Versionen geladen wurden. Dies ist optional.  
+   - **/targetclr:** `Version` gibt die Version der CLR (Common Language Runtime) für die Profilerstellung an, wenn in einer Anwendung mehrere CLR-Versionen geladen wurden. Dies ist optional.  
 
 ## <a name="controlling-data-collection"></a>Steuern der Datenauflistung  
  Wenn die Anwendung ausgeführt wird, können Sie die Datensammlung steuern, indem Sie das Schreiben von Daten in die Datei mit **VSPerfCmd.exe**-Optionen starten und beenden. Durch das Steuern der Datensammlung können Sie Daten zu einem bestimmten Teil der Programmausführung sammeln, z. B. zum Starten oder Schließen der Anwendung.  
 
 #### <a name="to-start-and-stop-data-collection"></a>So starten und beenden Sie die Datensammlung  
 
--   Die folgenden Optionenpaare **VSPerfCmd** starten und beenden die Datensammlung. Geben Sie jede Option in einer eigenen Befehlszeile an. Sie können die Datensammlung mehrmals aktivieren und deaktivieren.  
+- Die folgenden Optionenpaare **VSPerfCmd** starten und beenden die Datensammlung. Geben Sie jede Option in einer eigenen Befehlszeile an. Sie können die Datensammlung mehrmals aktivieren und deaktivieren.  
 
     |Option|Beschreibung|  
     |------------|-----------------|  
@@ -115,25 +109,22 @@ In diesem Thema wird beschrieben, wie der Profiler mit den Befehlszeilentools de
 
 #### <a name="to-end-a-profiling-session"></a>So beenden Sie eine Profilerstellungssitzung  
 
-1.  Führen Sie einen der folgenden Schritte aus, um den Profiler von der Zielanwendung zu trennen:  
+1. Führen Sie einen der folgenden Schritte aus, um den Profiler von der Zielanwendung zu trennen:  
 
-    -   Geben Sie **VSPerfCmd /detach** ein.  
+    - Geben Sie **VSPerfCmd /detach** ein.  
 
          - oder -   
 
-    -   Schließen Sie den [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Arbeitsprozess.  
+    - Schließen Sie den [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Arbeitsprozess.  
 
-2.  Schließen Sie den Profiler. Type:**VSPerfCmd** [/shutdown](../profiling/shutdown.md)  
+2. Schließen Sie den Profiler. Type:**VSPerfCmd** [/shutdown](../profiling/shutdown.md)  
 
-3.  (Optional) Löschen Sie die Umgebungsvariablen für die Profilerstellung. Typ:  
+3. (Optional) Löschen Sie die Umgebungsvariablen für die Profilerstellung. Typ:  
 
      **VSPerfCmd /globaloff**  
 
-4.  Starten Sie den Computer neu.  
+4. Starten Sie den Computer neu.  
 
 ## <a name="see-also"></a>Siehe auch  
  [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Datenansichten der Profiler-Samplingmethode](../profiling/profiler-sampling-method-data-views.md)
-
-
-

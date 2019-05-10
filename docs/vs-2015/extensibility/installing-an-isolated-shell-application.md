@@ -1,27 +1,22 @@
 ---
 title: Installieren einer Isolated Shell-Anwendung | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Shell [Visual Studio], deploying shell-based applications
 - Visual Studio shell, deploying shell-based applications
 ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1ecec7963b66c20ef08d1e5f3f0917a66f885aa0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 60862d631d93788f10c372310da9eb3d181943ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414542"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Installieren einer Isolated Shell-Anwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,13 +45,13 @@ Um eine Shell-app installieren müssen Sie die folgenden Schritte ausführen.
   
 #### <a name="to-prepare-a-shell-application-for-msi-deployment"></a>So bereiten Sie eine Shell-Anwendung für die MSI-Bereitstellung vor  
   
-1.  Bearbeiten Sie jede vsixmanifest-Datei in der Projektmappe.  
+1. Bearbeiten Sie jede vsixmanifest-Datei in der Projektmappe.  
   
      In der `Identifier` -Element, Hinzufügen einer `InstalledByMSI` Element und ein `SystemComponent` -Element, und legen Sie deren Werte auf `true`.  
   
      Diese Elemente verhindern, dass das VSIX-Installationsprogramm versuchen, die Ihre Komponenten und der Benutzer zu installieren, nicht deinstalliert werden, mithilfe der **Erweiterungen und Updates** Dialogfeld.  
   
-2.  Bearbeiten Sie für jedes Projekt, das eine VSIX-Manifest enthält die Buildaufgaben, um den Inhalt, der den Speicherort auszugeben, von dem Ihre MSI installiert wird. Schließen Sie das VSIX-Manifest in die Buildausgabe, aber erstellen Sie eine VSIX-Datei nicht.  
+2. Bearbeiten Sie für jedes Projekt, das eine VSIX-Manifest enthält die Buildaufgaben, um den Inhalt, der den Speicherort auszugeben, von dem Ihre MSI installiert wird. Schließen Sie das VSIX-Manifest in die Buildausgabe, aber erstellen Sie eine VSIX-Datei nicht.  
   
 ## <a name="creating-an-msi-for-your-shell"></a>Erstellen eine MSI-Datei für die Shell  
  Um Ihr MSI-Paket zu erstellen, wird empfohlen, Sie verwenden die [Windows Installer XML Toolset](http://go.microsoft.com/fwlink/?LinkId=82720) , da dadurch mehr Flexibilität als eine standard-Setup-Projekt.  
@@ -90,7 +85,7 @@ Um eine Shell-app installieren müssen Sie die folgenden Schritte ausführen.
   
 ##### <a name="to-set-the-layout-of-shell-components"></a>Das Layout der Komponenten festlegen.  
   
-1.  Erstellen Sie eine Hierarchie von `Directory` Elemente alle Verzeichnisse im Dateisystem auf dem Zielcomputer erstellen, wie im folgenden Beispiel gezeigt dargestellt.  
+1. Erstellen Sie eine Hierarchie von `Directory` Elemente alle Verzeichnisse im Dateisystem auf dem Zielcomputer erstellen, wie im folgenden Beispiel gezeigt dargestellt.  
   
     ```xml  
     <Directory Id="TARGETDIR" Name="SourceDir">  
@@ -110,10 +105,10 @@ Um eine Shell-app installieren müssen Sie die folgenden Schritte ausführen.
   
      Diese Verzeichnisse zu verdanken `Id` bei Dateien, die installiert werden müssen angegeben werden.  
   
-2.  Identifizieren Sie die Komponenten, die die Shell und Ihre Shell-Anwendung, wie im folgenden Beispiel gezeigt erfordern.  
+2. Identifizieren Sie die Komponenten, die die Shell und Ihre Shell-Anwendung, wie im folgenden Beispiel gezeigt erfordern.  
   
     > [!NOTE]
-    >  Einige Elemente können sich auf Definitionen in anderen Dateien WXS beziehen.  
+    > Einige Elemente können sich auf Definitionen in anderen Dateien WXS beziehen.  
   
     ```xml  
     <Feature Id="ProductFeature" Title="$(var.ShortProductName)Shell" Level="1">  
@@ -128,7 +123,7 @@ Um eine Shell-app installieren müssen Sie die folgenden Schritte ausführen.
     </Feature>  
     ```  
   
-    1.  Die `ComponentRef` Element verweist auf eine andere WXS-Datei, die Dateien identifiziert, die die aktuelle Komponente erforderlich sind. GeneralProfile weist z. B. folgende Definition in HelpAbout.wxs an.  
+    1. Die `ComponentRef` Element verweist auf eine andere WXS-Datei, die Dateien identifiziert, die die aktuelle Komponente erforderlich sind. GeneralProfile weist z. B. folgende Definition in HelpAbout.wxs an.  
   
         ```xml  
         <Fragment Id="FragmentProfiles">  
@@ -144,7 +139,7 @@ Um eine Shell-app installieren müssen Sie die folgenden Schritte ausführen.
   
          Die `DirectoryRef` Element gibt an, wo diese Dateien auf dem Computer des Benutzers. Die `Directory` Element gibt an, dass es in ein Unterverzeichnis, und jeder installiert wird `File` -Element stellt dar, eine Datei, der erstellt wurde, oder, die als Teil der Lösung vorhanden ist, und identifiziert, in dem diese Datei die Erstellung der MSI-Datei gefunden werden kann.  
   
-    2.  Die `ComponentGroupRef` Element verweist auf eine Gruppe von anderen Komponenten (oder -Komponenten und Komponentengruppen). Z. B. `ComponentGroupRef` unter ApplicationGroup ist wie folgt definiert in Application.wxs.  
+    2. Die `ComponentGroupRef` Element verweist auf eine Gruppe von anderen Komponenten (oder -Komponenten und Komponentengruppen). Z. B. `ComponentGroupRef` unter ApplicationGroup ist wie folgt definiert in Application.wxs.  
   
         ```xml  
         <ComponentGroup Id="ApplicationGroup">  
@@ -164,51 +159,51 @@ Um eine Shell-app installieren müssen Sie die folgenden Schritte ausführen.
         ```  
   
     > [!NOTE]
-    >  Erforderlichen Abhängigkeiten für Anwendungen der Shell (isoliert): DebuggerProxy, MasterPkgDef, Ressourcen (insbesondere die .winprf-Datei), Anwendung und PkgDefs.  
+    > Erforderliche Abhängigkeiten für die Shell (isoliert)-Anwendungen sind: DebuggerProxy, MasterPkgDef, Ressourcen (insbesondere die .winprf-Datei), Anwendung und PkgDefs.  
   
 ### <a name="registry-entries"></a>Registrierungseinträge  
  Die Shell (isoliert)-Projektvorlage enthält ein *ProjectName*reg-Datei für die Registrierungsschlüssel für die Installation zusammenführen. Diese Registrierungseinträge müssen die MSI-Datei für die Installation und Bereinigung Zwecke angehören. Außerdem müssen Sie entsprechende Registrierung Blöcke in ApplicationRegistry.wxs erstellen.  
   
 ##### <a name="to-integrate-registry-entries-into-the-msi"></a>Integrieren Sie Registrierungseinträge in die MSI-Datei  
   
-1.  In der **Shell Anpassung** Ordner *ProjectName*. reg.  
+1. In der **Shell Anpassung** Ordner *ProjectName*. reg.  
   
-2.  Ersetzen Sie alle Instanzen des Tokens $ $RootFolder, durch den Pfad des Ziel-Installationsverzeichnisses.  
+2. Ersetzen Sie alle Instanzen des Tokens $ $RootFolder, durch den Pfad des Ziel-Installationsverzeichnisses.  
   
-3.  Fügen Sie keine andere Registrierungseinträge, die Ihre Anwendung erforderlich sind.  
+3. Fügen Sie keine andere Registrierungseinträge, die Ihre Anwendung erforderlich sind.  
   
-4.  Öffnen Sie ApplicationRegistry.wxs.  
+4. Öffnen Sie ApplicationRegistry.wxs.  
   
-5.  Für jeden Registrierungseintrag in *ProjectName*reg, fügen Sie als das folgende Beispiel zeigt einen entsprechenden Block für die Registrierung hinzu.  
+5. Für jeden Registrierungseintrag in *ProjectName*reg, fügen Sie als das folgende Beispiel zeigt einen entsprechenden Block für die Registrierung hinzu.  
   
-    |*Projektname*reg|ApplicationRegisty.wxs|  
+    |*ProjectName*.reg|ApplicationRegisty.wxs|  
     |-----------------------|----------------------------|  
-    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @= "PhotoStudio DTE-Objekt"|\<RegistryKey-Id = 'DteClsidRegKey' Root = "HKCR" Key = "$(" var ". DteClsidRegKey)' Aktion "CreateAndRemoveOnUninstall" = ><br /><br /> \<RegistryValue Typ = 'String' Name =' @' Wert = "$(" var ". ShortProductName) DTE-Objekt "/ ><br /><br /> \</ RegistryKey >|  
-    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6} \LocalServer32]<br /><br /> @= "$RootFolder$\PhotoStudio.exe"|\<RegistryKey-Id = 'DteLocSrv32RegKey' Root = "HKCR" Key = "$(" var ". DteClsidRegKey) \LocalServer32' Aktion "CreateAndRemoveOnUninstall" = ><br /><br /> \<RegistryValue Typ = 'String' Name = "@" Wert = "[INSTALLATIONSVERZEICHNIS] $(" var ". ShortProductName) .exe "/ ><br /><br /> \</ RegistryKey >|  
+    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @="PhotoStudio DTE Object"|\<RegistryKey Id='DteClsidRegKey' Root='HKCR' Key='$(var.DteClsidRegKey)' Action='createAndRemoveOnUninstall'><br /><br /> \<RegistryValue Typ = 'String' Name =' @' Wert = "$(" var ". ShortProductName) DTE-Objekt "/ ><br /><br /> \</RegistryKey>|  
+    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}\LocalServer32]<br /><br /> @="$RootFolder$\PhotoStudio.exe"|\<RegistryKey Id='DteLocSrv32RegKey' Root='HKCR' Key='$(var.DteClsidRegKey)\LocalServer32' Action='createAndRemoveOnUninstall'><br /><br /> \<RegistryValue Typ = 'String' Name = "@" Wert = "[INSTALLATIONSVERZEICHNIS] $(" var ". ShortProductName) .exe "/ ><br /><br /> \</RegistryKey>|  
   
      In diesem Beispiel löst Var.DteClsidRegKey in den Registrierungsschlüssel in der obersten Zeile auf. Var.ShortProductName löst in `PhotoStudio`.  
   
 ## <a name="creating-a-setup-bootstrapper"></a>Erstellen einen Setup-Bootstrapper  
  Der vollständige MSI installiert nur dann, wenn zunächst die erforderlichen Komponenten installiert sind. Um die Endbenutzer zu vereinfachen, erstellen Sie ein Setupprogramm, das erfasst und alle erforderlichen Komponenten installiert, bevor sie Ihre Anwendung installiert. Um eine erfolgreiche Installation sicherzustellen, müssen führen Sie folgende Aktionen aus:  
   
--   Die Installation von Administrator zu erzwingen.  
+- Die Installation von Administrator zu erzwingen.  
   
--   Erkennen Sie, ob Visual Studio Shell (isoliert) installiert ist.  
+- Erkennen Sie, ob Visual Studio Shell (isoliert) installiert ist.  
   
--   Führen Sie eine oder beide Shell-Installationsprogramme in der Reihenfolge an.  
+- Führen Sie eine oder beide Shell-Installationsprogramme in der Reihenfolge an.  
   
--   Verarbeiten Sie Neustart-Anfragen.  
+- Verarbeiten Sie Neustart-Anfragen.  
   
--   Führen Sie die MSI-Datei.  
+- Führen Sie die MSI-Datei.  
   
 ### <a name="enforcing-installation-by-administrator"></a>Erzwingen der Installation von Administrator  
  Dieses Verfahren ist erforderlich, aktivieren Sie das Setup-Programm den Zugriff auf erforderliche Verzeichnisse wie z. B. \Program Files\\.  
   
 ##### <a name="to-enforce-installation-by-administrator"></a>Installation vom Administrator erzwungen werden  
   
-1.  Öffnen Sie das Kontextmenü für das Setup-Projekt, und wählen Sie dann **Eigenschaften**.  
+1. Öffnen Sie das Kontextmenü für das Setup-Projekt, und wählen Sie dann **Eigenschaften**.  
   
-2.  Klicken Sie unter **Konfigurationsdatei für die Eigenschaften/Linker/Manifest**legen **UAC-Ausführungsebene** zu **"requireAdministrator"**.  
+2. Klicken Sie unter **Konfigurationsdatei für die Eigenschaften/Linker/Manifest**legen **UAC-Ausführungsebene** zu **"requireAdministrator"**.  
   
      Diese Eigenschaft legt das Attribut, das das Programm als Administrator ausgeführt werden soll, in der eingebetteten manifest-Datei erforderlich ist.  
   
@@ -216,7 +211,7 @@ Um eine Shell-app installieren müssen Sie die folgenden Schritte ausführen.
  Um zu bestimmen, ob Visual Studio Shell (isoliert) installiert werden müssen, sollten Sie zunächst zu bestimmen, ob es bereits installiert ist, anhand des Registrierungswerts von HKLM\Software\Microsoft\DevDiv\vs\Servicing\ShellVersion\isoshell\LCID\Install.  
   
 > [!NOTE]
->  Diese Werte werden auch vom Shell-Erkennung im Product.wxs Block gelesen werden.  
+> Diese Werte werden auch vom Shell-Erkennung im Product.wxs Block gelesen werden.  
   
  HKLM\Software\Microsoft\AppEnv\14.0\ShellFolder gibt den Speicherort der Visual Studio-Shell installiert wurde, und sehen Sie sich für die Dateien an.  
   
@@ -257,15 +252,15 @@ dwResult = ExecCmd("Vs_IsoShellLP.exe /norestart /q", TRUE);
   
  Um Neustarts zu behandeln, können führen Sie folgende Aktionen aus:  
   
--   Legen Sie den Registrierungsschlüssel, die Installation fortgesetzt, wenn Windows gestartet wird.  
+- Legen Sie den Registrierungsschlüssel, die Installation fortgesetzt, wenn Windows gestartet wird.  
   
--   Führen Sie den Bootstrapper doppelte neu gestartet.  
+- Führen Sie den Bootstrapper doppelte neu gestartet.  
   
--   Löschen Sie die Shell Installer ResumeData-Schlüssel.  
+- Löschen Sie die Shell Installer ResumeData-Schlüssel.  
   
--   Starten Sie Windows neu.  
+- Starten Sie Windows neu.  
   
--   Setzen Sie den Startpfad, der die MSI-Datei zurück.  
+- Setzen Sie den Startpfad, der die MSI-Datei zurück.  
   
 ### <a name="setting-the-registry-to-resume-setup-when-windows-starts"></a>Festlegen der Registrierungs, um das Setup fortgesetzt werden soll, wenn Windows gestartet wird.  
  Der Registrierungsschlüssel HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce\ beim Systemstart mit Administratorberechtigungen ausgeführt wird und anschließend gelöscht wird. HKEY_CURRENT_USER einen ähnlichen Schlüssel enthält, aber es als normaler Benutzer ausgeführt wird und nicht für Installationen geeignet. Sie können die Installation fortsetzen, indem Sie dies ist einen Zeichenfolgenwert in den RunOnce-Schlüssel, der das Installationsprogramm aufruft. Allerdings wird empfohlen, dass Sie den Installer mit Aufrufen einer **/restart** oder ähnliche Parameter an die Anwendung zu benachrichtigen, die sie statt der Wiederaufnahme. Sie können auch Parameter zum angeben, wo Sie bei der Installation, handelt es sich insbesondere für Installationen, die ggf. mehrere Neustarts erfordert einschließen.  
@@ -375,4 +370,3 @@ dwResult = ExecCmd(boutiqueInstallCmd, FALSE);
   
 ## <a name="see-also"></a>Siehe auch  
  [Exemplarische Vorgehensweise: Erstellen einer grundlegenden Isolated Shell-Anwendung](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
-

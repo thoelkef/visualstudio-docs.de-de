@@ -1,14 +1,9 @@
 ---
 title: 'CA1305: IFormatProvider angeben | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - SpecifyIFormatProvider
 - CA1305
@@ -20,14 +15,14 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 084fd28106a3ac5af9a40d46cf687d4982f53690
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 11e1d9614c4f2a512c56f84117d28363e80c6b90
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834298"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048100"
 ---
-# <a name="ca1305-specify-iformatprovider"></a>CA1305: IFormatProvider angeben
+# <a name="ca1305-specify-iformatprovider"></a>CA1305: IFormatProvider angeben.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -40,11 +35,11 @@ ms.locfileid: "49834298"
 ## <a name="cause"></a>Ursache
  Eine Methode oder ein Konstruktor ruft ein oder mehrere Elemente, deren Überladungen akzeptieren einen <xref:System.IFormatProvider?displayProperty=fullName> -Parameter, und die Methode oder der Konstruktor ruft nicht die Überladung, akzeptiert die <xref:System.IFormatProvider> Parameter. Dieser Regel werden ignoriert, Aufrufe von [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] ignorieren, beschriebenen Methoden die <xref:System.IFormatProvider> Parameter und außerdem die folgenden Methoden:
 
--   <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>
+- <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>
 
--   <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=fullName>
+- <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=fullName>
 
--   <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName>
+- <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName>
 
 ## <a name="rule-description"></a>Regelbeschreibung
  Wenn eine <xref:System.Globalization.CultureInfo?displayProperty=fullName> oder <xref:System.IFormatProvider> Objekt ist nicht angegeben, der Standardwert, der vom überladenen Member bereitgestellte ist möglicherweise nicht die in allen Gebietsschemas den gewünschten Effekt. Darüber hinaus [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] Membern die Standardkultur Auswahl und Formatierung basierend auf Annahmen, die möglicherweise nicht korrekt für Ihren Code. Um sicherzustellen, dass der Code ordnungsgemäß für Ihre Szenarien funktioniert, sollten Sie die kulturspezifische Informationen, anhand der folgenden Richtlinien angeben:
@@ -83,7 +78,4 @@ ms.locfileid: "49834298"
  [CA1304: CultureInfo angeben](../code-quality/ca1304-specify-cultureinfo.md)
 
 ## <a name="see-also"></a>Siehe auch
- [NIB: Verwenden der CultureInfo-Klasse](http://msdn.microsoft.com/en-us/d4329e34-64c3-4d1e-8c73-5b0ee626ba7a)
-
-
-
+ [NIB: Verwenden der CultureInfo-Klasse](http://msdn.microsoft.com/d4329e34-64c3-4d1e-8c73-5b0ee626ba7a)

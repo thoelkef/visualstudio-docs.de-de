@@ -1,14 +1,9 @@
 ---
 title: Schreiben von Aufgaben | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, writing tasks
 - tasks, creating for MSBuild
@@ -17,18 +12,17 @@ ms.assetid: 3ebc5f87-8f00-46fc-82a1-228f35a6823b
 caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d8cc7968664f201482647861a031a27c850611c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: eaf927b1049709a04d8a883615d1997e9316599e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914709"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445387"
 ---
 # <a name="task-writing"></a>Schreiben von Aufgaben
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Aufgaben stellen den Code bereit, der während des Buildprozesses ausgeführt wird. Ziele enthalten Aufgaben. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] umfasst eine Bibliothek mit typischen Tasks. Sie können aber auch Ihre eigenen Tasks erstellen. Weitere Informationen zur Aufgabenbibliothek, die in [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] enthalten ist, finden Sie unter [Task reference (Aufgabenreferenz)](../msbuild/msbuild-task-reference.md).  
   
 ## <a name="tasks"></a>Aufgaben  
@@ -111,7 +105,7 @@ namespace MyTasks
  Die [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Datei „Microsoft.Common.Tasks“ ist eine Projektdatei mit einer Liste von `UsingTask`-Elementen, die alle Aufgaben registrieren, die mit [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] bereitgestellt werden. Diese Datei wird automatisch beim Erstellen von Projekten mit eingeschlossen. Wenn eine Aufgabe, die in „Microsoft.Common.Tasks“ registriert wird, ebenfalls in der aktuellen Projektdatei registriert wird, hat die aktuelle Projektdatei Vorrang. Das heißt, Sie können eine Standardaufgabe mit Ihrer eigenen Aufgabe, die denselben Namen hat, außer Kraft setzen.  
   
 > [!TIP]
->  Es wird Ihnen eine Liste mit Aufgaben angezeigt, die mit [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] bereitgestellt werden, wenn Sie die Inhalte der „Microsoft.Common.Tasks“-Inhalte abrufen.  
+> Es wird Ihnen eine Liste mit Aufgaben angezeigt, die mit [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] bereitgestellt werden, wenn Sie die Inhalte der „Microsoft.Common.Tasks“-Inhalte abrufen.  
   
 ## <a name="raising-events-from-a-task"></a>Auslösen von Ereignissen aus einer Aufgabe  
  Wenn Ihre Aufgabe aus der <xref:Microsoft.Build.Utilities.Task>-Hilfsklasse abgeleitet wird, können Sie eine der folgenden Hilfsmethoden für die <xref:Microsoft.Build.Utilities.Task>-Klasse verwenden, damit ein Ereignis ausgelöst wird, das von allen registrierten Protokollierungen abgefangen und angezeigt wird:  
@@ -277,6 +271,3 @@ namespace SimpleTask2
 ## <a name="see-also"></a>Siehe auch  
  [Task Reference](../msbuild/msbuild-task-reference.md)  (MSBuild-Aufgabenreferenz)  
  [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)
-
-
-

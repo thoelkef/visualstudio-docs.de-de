@@ -1,14 +1,9 @@
 ---
 title: SDK-Hilfsprogramme für das Debuggen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - dbgmetric.lib
 - registry, Debugging SDK
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
 caps.latest.revision: 29
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 904ac14433bf6b7b839a4fe634175a7f583e27ab
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3296613ffbe3148caa04989dfc9d609334b4c200
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772182"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435994"
 ---
 # <a name="sdk-helpers-for-debugging"></a>SDK-Hilfsprogramme für das Debuggen
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51772182"
 Diese Funktionen und Deklarationen sind globale Hilfsfunktionen für die Implementierung von Debug-Engines, ausdrucksauswertung und Symbol-Anbieter in C++.  
   
 > [!NOTE]
->  Es gibt keine verwalteten Versionen dieser Funktionen und-Deklarationen zu diesem Zeitpunkt.  
+> Es gibt keine verwalteten Versionen dieser Funktionen und-Deklarationen zu diesem Zeitpunkt.  
   
 ## <a name="overview"></a>Übersicht  
  In der Reihenfolge für die Debug-Engines, ausdrucksauswertung und Symbol-Anbieter von Visual Studio verwendet werden müssen sie registriert werden. Dies erfolgt durch Festlegen von Registrierungsunterschlüsseln und Einträge, auch bekannt als "Einstellung Metriken". Die folgenden globalen Funktionen dienen, den Prozess der Aktualisierung dieser Metriken zu vereinfachen. Finden Sie im Abschnitt Registrierungspfaden das Layout der einzelnen Registrierungsunterschlüssel finden, die von diesen Funktionen aktualisiert wird.  
@@ -164,7 +159,7 @@ HRESULT EnumMetricSections(
 ## <a name="metric-definitions"></a>Metrikdefinitionen  
  Diese Definitionen können für Namen von vordefinierten Metriken verwendet werden. Die Namen entsprechen, verschiedene Registrierungsschlüssel, Wertnamen und werden als Breitzeichen-Zeichenfolgen definiert: z. B. `extern LPCWSTR metrictypeEngine`.  
   
-|Vordefinierte Metriktypen|Beschreibung: Der CodeBase-Schlüssel für...|  
+|Vordefinierte Metriktypen|Beschreibung: Die Basisschlüssel für...|  
 |-----------------------------|---------------------------------------|  
 |metrictypeEngine|Alle debug-Engine-Metriken.|  
 |metrictypePortSupplier|Alle Metriken für die Port-Lieferanten.|  
@@ -183,7 +178,7 @@ HRESULT EnumMetricSections(
 |metricDataBP|Um die Unterstützung für die Einstellung von Haltepunkten auf Änderungen an Daten ungleich NULL festgelegt.|  
 |metricDisassembly|Legen Sie zu ungleich NULL, um die Unterstützung für die Herstellung einer Disassembly-Auflistung.|  
 |metricDumpWriting|Legen Sie auf ungleich NULL, um die Unterstützung für Dump schreiben (die Sicherung der Arbeitsspeicher, um ein Ausgabegerät).|  
-|metricENC|Legen Sie zu ungleich NULL, um die Unterstützung für bearbeiten und fortfahren. **Hinweis:** eine benutzerdefinierten Debug-Engine nie legen Sie hier, oder muss immer auf 0 festgelegt.|  
+|metricENC|Legen Sie zu ungleich NULL, um die Unterstützung für bearbeiten und fortfahren. **Hinweis**:  Eine benutzerdefinierten Debug-Engine nie legen Sie hier, oder muss immer auf 0 festgelegt.|  
 |metricExceptions|Um die Unterstützung für Ausnahmen, die ungleich NULL festgelegt.|  
 |metricFunctionBP|Legen Sie auf ungleich NULL, Unterstützung für benannte Haltepunkte (Breakpoints, die unterbrochen, wenn Namen in einer bestimmten Funktion aufgerufen wird).|  
 |metricHitCountBP|Legen Sie auf ungleich NULL, Unterstützung für die Einstellung "Triff Punkt" Haltepunkte (Breakpoints, die ausgelöst werden, nachdem eine bestimmte Anzahl von Malen wird erreicht).|  
@@ -198,7 +193,7 @@ HRESULT EnumMetricSections(
 |metricAlwaysLoadProgramProviderLocal|Legen Sie diese Einstellung zu ungleich NULL, um anzugeben, dass der Anbieter für die Anwendung immer lokal geladen werden soll.|  
 |metricEngineCanWatchProcess|Legen Sie den ungleich NULL, um anzugeben, dass die Debug-Engine für die Verarbeitung von Ereignissen anstelle des Anbieters der Anwendung überwacht.|  
 |metricRemoteDebugging|Legen Sie diese um die Unterstützung für das Remotedebuggen ungleich NULL.|  
-|metricEncUseNativeBuilder|Legen Sie diese Einstellung zu ungleich NULL, um anzugeben, dass die Debug-Engine encbuild.dll den bearbeiten und Fortfahren-Manager zum Erstellen für bearbeiten und Fortfahren verwenden werden soll. **Hinweis:** eine benutzerdefinierten Debug-Engine nie legen Sie hier, oder muss immer auf 0 festgelegt.|  
+|metricEncUseNativeBuilder|Legen Sie diese Einstellung zu ungleich NULL, um anzugeben, dass die Debug-Engine encbuild.dll den bearbeiten und Fortfahren-Manager zum Erstellen für bearbeiten und Fortfahren verwenden werden soll. **Hinweis**:  Eine benutzerdefinierten Debug-Engine nie legen Sie hier, oder muss immer auf 0 festgelegt.|  
 |metricLoadUnderWOW64|Legen Sie den Wert ungleich NULL, um anzugeben, dass die Debug-Engine an, die im zu debuggenden Prozess unter WOW soll, beim Debuggen von 64-Bit-Prozess geladen werden; Andernfalls wird die Debug-Engine in Visual Studio-Prozesses geladen werden (der unter WOW64 ausgeführt wird).|  
 |metricLoadProgramProviderUnderWOW64|Legen Sie diese Einstellung um anzugeben, dass der Anbieter der Anwendung im zu debuggenden Prozess geladen, beim Debuggen von 64-Bit-Prozess unter WOW werden soll ungleich null; Andernfalls wird es in Visual Studio-Prozesses geladen.|  
 |metricStopOnExceptionCrossingManagedBoundary|Legen Sie diese um anzugeben, dass der Prozess beendet werden soll, wenn eine nicht behandelte Ausnahme, über die Grenzen von verwaltetem/nicht verwaltetem Code ausgelöst wird ungleich NULL.|  
@@ -237,14 +232,14 @@ HRESULT EnumMetricSections(
 |metricShowNonUserCode|Legen Sie den anzuzeigenden Nonuser Code ungleich NULL.|  
 |metricJustMyCodeStepping|Legen Sie den ungleich NULL, um anzugeben, dass die schrittweise Ausführung nur im Benutzercode auftreten kann.|  
 |metricCLSID|Die CLSID für ein Objekt eines bestimmten Typs für die Metrik.|  
-|"Metricname"|Benutzerfreundlicher Name für ein Objekt eines bestimmten Typs für die Metrik.|  
+|metricName|Benutzerfreundlicher Name für ein Objekt eines bestimmten Typs für die Metrik.|  
 |metricLanguage|Name der Sprache.|  
   
 ## <a name="registry-locations"></a>Registrierung  
  Die Metriken aus gelesen und geschrieben, um die Registrierung in der `VisualStudio` Unterschlüssel.  
   
 > [!NOTE]
->  In den meisten Fällen, werden die Metriken auf dem Schlüssel HKEY_LOCAL_MACHINE geschrieben. In einigen Fällen allerdings wird HKEY_CURRENT_USER der Ziel-Schlüssel sein. Dbgmetric.lib behandelt beide Schlüssel. Wenn eine Metrik zu erhalten, sucht es HKEY_CURRENT_USER zuerst, dann HKEY_LOCAL_MACHINE. Wenn sie eine Metrik festlegen, ist, wird ein Parameter der obersten Ebene Schlüssels zu.  
+> In den meisten Fällen, werden die Metriken auf dem Schlüssel HKEY_LOCAL_MACHINE geschrieben. In einigen Fällen allerdings wird HKEY_CURRENT_USER der Ziel-Schlüssel sein. Dbgmetric.lib behandelt beide Schlüssel. Wenn eine Metrik zu erhalten, sucht es HKEY_CURRENT_USER zuerst, dann HKEY_LOCAL_MACHINE. Wenn sie eine Metrik festlegen, ist, wird ein Parameter der obersten Ebene Schlüssels zu.  
   
  *[Registrierungsschlüssel]*\  
   
@@ -270,13 +265,13 @@ HRESULT EnumMetricSections(
 |-----------------|-----------------|  
 |*[Registrierungsschlüssel]*|`HKEY_CURRENT_USER` oder `HKEY_LOCAL_MACHINE`.|  
 |*[Version Root]*|Die Version von Visual Studio (z. B. `7.0`, `7.1`, oder `8.0`). Jedoch diesem Stamm kann auch geändert werden mithilfe der **/rootsuffix** wechseln Sie zur **devenv.exe**. Für VSIP, dieser Modifizierer ist in der Regel **"exp"**, sodass das Stammverzeichnis für die Version, z. B. 8.0Exp wäre.|  
-|*[Metrik Root]*|Dies ist entweder `AD7Metrics` oder `AD7Metrics(Debug)`, abhängig davon, ob die Debugversion von dbgmetric.lib verwendet wird. **Hinweis:** , und zwar unabhängig davon, ob dbgmetric.lib verwendet wird, diese Namenskonvention sollte eingehalten werden, wenn Sie die Unterschiede zwischen Debug- und Releaseversionen haben-Versionen, die in der Registrierung berücksichtigt werden müssen.|  
+|*[Metrik Root]*|Dies ist entweder `AD7Metrics` oder `AD7Metrics(Debug)`, abhängig davon, ob die Debugversion von dbgmetric.lib verwendet wird. **Hinweis**:  Und zwar unabhängig davon, ob dbgmetric.lib verwendet wird, diese Namenskonvention sollte eingehalten werden, wenn Sie die Unterschiede zwischen Debug- und Releaseversionen haben-Versionen, die in der Registrierung berücksichtigt werden müssen.|  
 |*[Metriktyp]*|Der Typ des zu schreibenden Metrik: `Engine`, `ExpressionEvaluator`, `SymbolProvider`usw. Diese sind alle definiert, wie dbgmetric.h als `metricTypeXXXX`, wobei `XXXX` ist der Name der spezifischen Typ.|  
 |*[Metrik]*|Der Name eines Eintrags, der ein Wert zugewiesen werden, um die Metrik festlegen. Die tatsächlichen Organisation der Metriken, hängt von den Metriktyp ab.|  
 |*[Metrikwert]*|Der Wert, der die Metrik zugewiesen wird. Der Typ, der den Wert (Zeichenfolge, Zahl, usw.) haben soll, hängt von der Metrik ab.|  
   
 > [!NOTE]
->  Alle GUIDs werden gespeichert, in das Format der `{GUID}`. Beispielsweise `{123D150B-FA18-461C-B218-45B3E4589F9B}`.  
+> Alle GUIDs werden gespeichert, in das Format der `{GUID}`. Beispielsweise `{123D150B-FA18-461C-B218-45B3E4589F9B}`.  
   
 ### <a name="debug-engines"></a>Debug-Engines  
  Im folgenden finden die Organisation der Debug-Engines Metriken in der Registrierung. `Engine` Um der metrischen Typnamen für eine Debug-Engine und entspricht *[Metriktyp]* in der Registrierungsteilstruktur der oben genannten.  
@@ -355,7 +350,7 @@ HRESULT EnumMetricSections(
  Im folgenden finden die Organisation der Expression Evaluator Metriken in der Registrierung. `ExpressionEvaluator` Um der Metriktyp-Namen für die ausdrucksauswertung und entspricht *[Metriktyp]*.  
   
 > [!NOTE]
->  Den Metriktyp für `ExpressionEvaluator` ist in dbgmetric.h, nicht definiert, da davon ausgegangen wird, dass die entsprechenden Ausdruck Ausdrucksauswertungsfehler Metrik Funktionen alle metrikänderungen für ausdrucksauswertungen durchlaufen werden (das Layout der `ExpressionEvaluator` Unterschlüssel ist ein wenig kompliziert, damit die Details in dbgmetric.lib ausgeblendet sind).  
+> Den Metriktyp für `ExpressionEvaluator` ist in dbgmetric.h, nicht definiert, da davon ausgegangen wird, dass die entsprechenden Ausdruck Ausdrucksauswertungsfehler Metrik Funktionen alle metrikänderungen für ausdrucksauswertungen durchlaufen werden (das Layout der `ExpressionEvaluator` Unterschlüssel ist ein wenig kompliziert, damit die Details in dbgmetric.lib ausgeblendet sind).  
   
  `ExpressionEvaluator`\  
   
@@ -429,8 +424,7 @@ HRESULT EnumMetricSections(
   
  Header: includes\dbgmetric.h  
   
- -Bibliothek: libs\ad2de.lib, libs\dbgmetric.lib  
+ Library: libs\ad2de.lib, libs\dbgmetric.lib  
   
 ## <a name="see-also"></a>Siehe auch  
  [API-Referenz](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
-

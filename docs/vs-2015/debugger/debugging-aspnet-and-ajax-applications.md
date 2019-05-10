@@ -1,14 +1,9 @@
 ---
 title: Debuggen von ASP.NET- und AJAX-Anwendungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,22 +18,22 @@ ms.assetid: 9d531913-541b-47b8-864d-138021fca0c6
 caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d3a600059f29d7e0034e4e64239798c32d721a1f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2547c9edb501ac8536b06548ab23a5262515ca78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785924"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116783"
 ---
 # <a name="debugging-aspnet-and-ajax-applications"></a>Debuggen von ASP.NET- und AJAX-Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Das Debuggen von [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Webanwendungen ähnelt dem Debuggen von Windows Forms oder anderen Windows-Anwendungen, da beide Arten von Anwendungen Steuerelemente und Ereignisse enthalten. Aber es gibt auch grundlegende Unterschiede zwischen den beiden Anwendungsarten:  
   
--   Die Zustandsüberwachung ist in einer Webanwendung komplexer.  
+- Die Zustandsüberwachung ist in einer Webanwendung komplexer.  
   
--   In einer Windows-Anwendung befindet sich der zu debuggende Code meistens an einem Ort. Bei einer Webanwendung kann der Code auf dem Client und auf dem Server vorhanden sein. Obwohl sich der gesamte [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Code auf dem Server befindet, kann auf dem Client auch JavaScript- oder [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]-Code vorhanden sein.  
+- In einer Windows-Anwendung befindet sich der zu debuggende Code meistens an einem Ort. Bei einer Webanwendung kann der Code auf dem Client und auf dem Server vorhanden sein. Obwohl sich der gesamte [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Code auf dem Server befindet, kann auf dem Client auch JavaScript- oder [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]-Code vorhanden sein.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Vorbereitungen zum Debuggen von ASP.NET](../debugger/preparing-to-debug-aspnet.md)  
@@ -58,10 +53,7 @@ Das Debuggen von [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Webanwendungen
  Debuggen Sie den Code schneller, indem Sie mit IntelliTrace einen Verlauf vom Zustand der Anwendung aufzuzeichnen und überprüfen, ohne die Anwendung so oft neu zu starten. Sie können Informationen zu Ereignissen und Aufrufen, die während der Ausführung der Anwendung auftreten, anzeigen und das Debuggen ab diesen Zeitpunkten starten. Erfordert Visual Studio Ultimate.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Debuggersicherheit](../debugger/debugger-security.md)   
+ [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
  [Debuggen von Webanwendungen und Skripts](../debugger/debugging-web-applications-and-script.md)   
  [Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)   
  [Debugger – Grundlagen](../debugger/debugger-basics.md)
-
-
-

@@ -1,12 +1,9 @@
 ---
 title: Modellieren von benutzeranforderungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - requirements
 - stories
@@ -15,18 +12,18 @@ ms.assetid: 359900f8-6d69-493d-bfdf-2c9069c74a26
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ab92a08aa7359aa4393b3356384a4ccc352afb27
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8b1d3a5209490c253f4646210d4eeeda9d807155
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51776485"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417801"
 ---
 # <a name="model-user-requirements"></a>Modellieren von Benutzeranforderungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu besprechen und zu kommunizieren, indem Diagramme über ihre Aktivitäten und die Rolle Ihres System bei der Erreichung ihrer Ziele gezeichnet werden. Ein Anforderungsmodell ist ein Satz dieser Diagramme, von denen sich jedes auf einen anderen Aspekt der Benutzeranforderungen konzentriert. Eine Videodemo finden Sie unter: [Modeling the Business Domain](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)(Modellieren der Geschäftsdomäne) .  
+Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu besprechen und zu kommunizieren, indem Diagramme über ihre Aktivitäten und die Rolle Ihres System bei der Erreichung ihrer Ziele gezeichnet werden. Ein Anforderungsmodell ist ein Satz dieser Diagramme, von denen sich jedes auf einen anderen Aspekt der Benutzeranforderungen konzentriert. Eine Videodemo finden Sie unter: [Modellieren der Geschäftsdomäne](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/).  
   
  Informationen dazu, welche Versionen von Visual Studio die einzelnen Modelltypen unterstützen, finden Sie unter [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -49,7 +46,7 @@ Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu
   Ein Anforderungsmodell bietet den größten Vorteil, wenn Sie es für die Ausrichtung von Besprechungen mit den Benutzern oder ihren Vertretern einsetzen und es am Anfang jeder Iteration überdenken. Sie müssen es nicht im Detail fertigstellen, bevor Sie Code schreiben. Eine teilweise funktionierende Anwendung bildet in der Regel, auch wenn sie sehr vereinfacht ist, die anregendste Grundlage für die Besprechung der Anforderungen mit den Benutzern. Das Modell ist eine effektive Methode, um die Ergebnisse solcher Diskussionen zusammenzufassen. Weitere Informationen finden Sie unter [Verwenden von Modellen im Entwicklungsprozess](../modeling/use-models-in-your-development-process.md).  
   
 > [!NOTE]
->  In diesen Themen meint „System“ das System oder die Anwendung, das bzw. die Sie entwickeln. Es kann sich um eine umfangreiche Sammlung von vielen Software- und Hardwarekomponenten, eine einzelne Anwendung oder eine Softwarekomponente in einem größeren System handeln. In jedem Fall beschreibt das Anforderungsmodell das Verhalten, das über eine Benutzeroberfläche oder eine API von außerhalb Ihres Systems sichtbar ist.  
+> In diesen Themen meint „System“ das System oder die Anwendung, das bzw. die Sie entwickeln. Es kann sich um eine umfangreiche Sammlung von vielen Software- und Hardwarekomponenten, eine einzelne Anwendung oder eine Softwarekomponente in einem größeren System handeln. In jedem Fall beschreibt das Anforderungsmodell das Verhalten, das über eine Benutzeroberfläche oder eine API von außerhalb Ihres Systems sichtbar ist.  
   
 ## <a name="common-tasks"></a>Allgemeine Aufgaben  
  Sie können verschiedene Ansichten der Benutzeranforderungen erstellen.  Jede Ansicht bietet eine bestimmte Art von Informationen.  Wenn Sie diese Ansichten erstellen, empfiehlt es sich, häufig zwischen ihnen zu wechseln. Sie können bei jeder Ansicht starten.  
@@ -65,7 +62,7 @@ Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu
   
  Beachten Sie, dass die meisten Diagrammtypen für andere Zwecke verwendet werden können. Einen Überblick über die Diagrammtypen finden Sie unter [Erstellen von Modellen für Ihre app](../modeling/create-models-for-your-app.md). Grundlegende Informationen zum Zeichnen von Diagrammen finden Sie [Bearbeiten von UML-Modellen und Diagrammen](../modeling/edit-uml-models-and-diagrams.md).  
   
-##  <a name="UseCases"></a> Beschreibt, wie Ihr System verwendet wird  
+## <a name="UseCases"></a> Beschreibt, wie Ihr System verwendet wird  
  Erstellen Sie Anwendungsfalldiagramme, um zu beschreiben, wer das System verwendet und wofür es verwendet wird. Ein Anwendungsfall stellt ein Ziel von Benutzern des Systems dar und das Verfahren, das sie ausführen, um das Ziel zu erreichen.  
   
  Ein Onlinesystem für den Verkauf von Mahlzeiten beispielsweise muss es Kunden ermöglichen, Gerichte aus einer Speisekarte auszuwählen, und die liefernden Restaurants müssen die Speisekarte aktualisieren können. Sie können dies in einem Anwendungsfalldiagramm zusammenfassen:  
@@ -96,7 +93,7 @@ Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu
 |Elemente in einem Anwendungsfalldiagramm|[UML-Anwendungsfalldiagramme: Referenz](../modeling/uml-use-case-diagrams-reference.md)|  
 |Entwickeln von Code aus Anwendungsfällen|[Modellieren der Architektur Ihrer App](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="RequirementsClasses"></a> Definieren von Begriffen verwendet, um Anforderungen beschreiben.  
+## <a name="RequirementsClasses"></a> Definieren von Begriffen verwendet, um Anforderungen beschreiben.  
  Sie können anhand von UML-Klassendiagrammen ein einheitliches Vokabular der Business-Konzepte entwickeln, das für folgende Zwecke verwendet werden kann:  
   
 - Von den Benutzern selbst, zur Besprechung des Geschäfts, in dem das System eingesetzt wird  
@@ -141,9 +138,9 @@ Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu
 |Elemente in einem konzeptionellen Klassendiagramm|[UML-Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md)|  
 |Entwickeln von Code aus konzeptionellen Klassen|[Modellieren der Architektur Ihrer App](../modeling/model-your-app-s-architecture.md)|  
   
- In einem konzeptionellen Klassendiagramm ist es in der Regel nicht hilfreich, Pfeile auf den Zuordnungen zu platzieren, um die Navigationsfreundlichkeit darzustellen. Das liegt daran, dass das Diagramm keine Implementierung darstellt. Die Zuordnungen stellen Beziehungen zwischen realen Objekten dar. Durch die folgende [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Erweiterung werden nicht direktionale Pfeile als Standard festgelegt: [Sample: UML Domain Modeling features](http://go.microsoft.com/fwlink/?LinkId=213849)(Beispiel zu Funktionen für die UML-Domänenmodellierung).  
+ In einem konzeptionellen Klassendiagramm ist es in der Regel nicht hilfreich, Pfeile auf den Zuordnungen zu platzieren, um die Navigationsfreundlichkeit darzustellen. Das liegt daran, dass das Diagramm keine Implementierung darstellt. Die Zuordnungen stellen Beziehungen zwischen realen Objekten dar. Die folgenden [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Erweiterung einrichten nicht direktionale Pfeile als Standard: [Beispiel: UML-Domänenmodellierung Features](http://go.microsoft.com/fwlink/?LinkId=213849).  
   
-##  <a name="BusinessRules"></a> Showing Business Rules  
+## <a name="BusinessRules"></a> Showing Business Rules  
  Eine Geschäftsregel ist eine Anforderung, die mit keinem speziellen Anwendungsfall verknüpft ist und im ganzen System zu beachten ist.  
   
  Viele Geschäftsregeln sind Einschränkungen der Beziehungen zwischen den konzeptionellen Klassen. Sie können diese schreiben *statischer Geschäftsregeln* als Kommentare, die mit den entsprechenden Klassen in einem konzeptionellen Diagramm verknüpft ist. Zum Beispiel:  
@@ -164,7 +161,7 @@ Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu
 |Elemente in einem konzeptionellen Klassendiagramm|[UML-Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md)|  
 |Entwickeln von Code, der Geschäftsregeln entspricht|[Modellieren der Architektur Ihrer App](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="QoSRequirements"></a> Describing Quality of Service Requirements  
+## <a name="QoSRequirements"></a> Describing Quality of Service Requirements  
  Es gibt mehrere Kategorien von Servicequalitätsanforderungen. Hierzu gehören Folgende:  
   
 - Leistung  
@@ -185,11 +182,10 @@ Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu
   
 |Thema|Lesen|  
 |--------------------|----------|  
-|Genauere Informationen zum Aufzeichnen von Servicequalitätsanforderungen|[Richtlinien für das Definieren von Servicequalitätsanforderungen (möglicherweise auf Englisch)](http://msdn.microsoft.com/en-us/9677a437-c2cb-4ac4-8c2d-4e3350005f06)|  
 |Anfügen zusätzlicher Dokumente an Anwendungsfälle|[Verknüpfen eines Anwendungsfalls mit Dokumenten und Diagrammen](../modeling/link-a-use-case-to-documents-and-diagrams.md)|  
 |Entwickeln von Code, der Servicequalitätsanforderungen entspricht|[Modellieren der Architektur Ihrer App](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="Workflow"></a> Darstellen des Arbeitsablaufs zwischen Benutzern und dem system  
+## <a name="Workflow"></a> Darstellen des Arbeitsablaufs zwischen Benutzern und dem system  
  Sie können ein Aktivitätsdiagramm verwenden, um den Arbeitsablauf zwischen verschiedenen Anwendungsfällen zu zeigen. Es ist häufig nützlich, ein Anforderungsmodell durch Zeichnen eines Aktivitätsdiagramms zu beginnen, das die vom Benutzer ausgeführten Hauptaufgaben zeigt, sowohl im System als auch außerhalb.  
   
  Zum Beispiel:  
@@ -210,7 +206,7 @@ Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu
 |Elemente in einem Aktivitätsdiagramm|[UML-Aktivitätsdiagramme: Referenz](../modeling/uml-activity-diagrams-reference.md)|  
 |Entwickeln von Code aus Aktivitätsdiagrammen|[Modellieren der Architektur Ihrer App](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="Sequences"></a> Darstellen der Interaktionen zwischen Benutzern und dem system  
+## <a name="Sequences"></a> Darstellen der Interaktionen zwischen Benutzern und dem system  
  Sie können ein Sequenzdiagramm verwenden, um den Austausch von Meldungen zwischen Ihrem System und externen Akteuren oder zwischen Teilen des Systems darzustellen. Dadurch ergibt sich eine Ansicht der Schritte in einem Anwendungsfall, die sehr deutlich die Sequenz der Interaktionen zeigt. Sequenzdiagramme sind besonders nützlich, wenn es mehrere interagierende Parteien in einem Anwendungsfall gibt und wenn Ihr System eine API aufweist.  
   
  Zum Beispiel:  
@@ -247,11 +243,8 @@ Visual Studio hilft Ihnen dabei, die Anforderungen der Benutzer zu verstehen, zu
  [Entwickeln von Tests aus einem Modell](../modeling/develop-tests-from-a-model.md)   
  [Verwenden von Modellen im Entwicklungsprozess](../modeling/use-models-in-your-development-process.md)   
  [Modellieren der Architektur Ihrer app](../modeling/model-your-app-s-architecture.md)   
- [Sample-VS-Erweiterung: UML Domain Modeling features](http://go.microsoft.com/fwlink/?LinkId=213849)   
- [Beispiel für Visual Studio-Erweiterung: Color UML-Elementen nach Stereotyp](http://go.microsoft.com/fwlink/?LinkID=213841)   
+ [Beispiel für Visual Studio-Erweiterung: UML-Domänenmodellierung features](http://go.microsoft.com/fwlink/?LinkId=213849)   
+ [Beispiel für Visual Studio-Erweiterung: Farbe von UML-Elementen nach Stereotyp](http://go.microsoft.com/fwlink/?LinkID=213841)   
  [Beispiel für Visual Studio-Erweiterung: Verknüpfen von UML-Elementen mit Diagrammen, Dateien und andere Elemente](http://go.microsoft.com/fwlink/?LinkID=213813)   
  [Beispiel für Visual Studio-Erweiterung: Ausrichten von Formen in einem UML-Diagramm](http://go.microsoft.com/fwlink/?LinkID=213809)   
  [Video: Modellieren der Geschäftsdomäne](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)
-
-
-

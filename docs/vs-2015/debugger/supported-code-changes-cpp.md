@@ -1,14 +1,9 @@
 ---
 title: Unterstützte Codeänderungen (C++) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,23 +13,23 @@ helpviewer_keywords:
 - Edit and Continue, limitations
 - supported code changes
 - object files, limitations of Edit and Continue
-- C# language, supported code changes
+- C++ language, supported code changes
 - coding, supported code changes
 - resource files, limitations of Edit and Continue
 - code changes, handling in Edit and Continue
-- what's new [C#], supported code changes
+- what's new [C++], supported code changes
 - code changes
 ms.assetid: f5754363-8a56-417b-b904-b05d9dd26d03
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a68ad4add5f8c08e00067c903d5ba3946ca14538
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 65c802964a03fdfe99e4f2f51988de36a806dcbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797974"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090887"
 ---
 # <a name="supported-code-changes-c"></a>Unterstützte Codeänderungen (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,8 +38,9 @@ Mit "Bearbeiten und Fortfahren" für Visual C++ können die meisten Arten von Co
   
  Weitere Informationen zum Arbeiten mit „Bearbeiten und Fortfahren“ für C++ in Visual Studio finden Sie unter [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md) .  
   
-##  <a name="BKMK_Unsupported_changes"></a> Nicht unterstützte Änderungen  
- Folgende Änderungen an C-/C++-Code können während einer Debugsitzung nicht übernommen werden:  
+## <a name="BKMK_Unsupported_changes"></a> Nicht unterstützte Änderungen  
+
+Folgende Änderungen an C-/C++-Code können während einer Debugsitzung nicht übernommen werden:  
   
 - Die meisten Änderungen an globalen oder statischen Daten.  
   
@@ -68,55 +64,55 @@ Mit "Bearbeiten und Fortfahren" für Visual C++ können die meisten Arten von Co
   
 - Änderungen an Code ohne Objektdatei.  
   
-  Wenn Sie eine dieser Änderungen vornehmen und anschließend versuchen, die Codeänderungen zu übernehmen, wird im Fenster **Ausgabe** eine Warnung oder eine Fehlermeldung angezeigt.  
+Wenn Sie eine dieser Änderungen vornehmen und anschließend versuchen, die Codeänderungen zu übernehmen, wird im Fenster **Ausgabe** eine Warnung oder eine Fehlermeldung angezeigt.  
   
 - Von "Bearbeiten und Fortfahren" werden keine statischen Bibliotheken aktualisiert. Wenn Sie eine Änderung an einer statischen Bibliothek vornehmen, wird die Ausführung ohne Warnung mit der alten Version fortgeführt.  
   
-##  <a name="BKMK_Unsupported_scenarios"></a> Nicht unterstützte Szenarien  
+## <a name="BKMK_Unsupported_scenarios"></a> Nicht unterstützte Szenarien  
  "Bearbeiten und Fortfahren" steht für C/C++ in den folgenden Debugszenarien nicht zur Verfügung:  
   
--   Debuggen von systemeigenen Apps, die mit [/zo (Optimiertes Debuggen verbessern)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)kompiliert sind  
+- Debuggen von systemeigenen Apps, die mit [/zo (Optimiertes Debuggen verbessern)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)kompiliert sind  
   
--   Debuggen von Windows Store-Apps oder -Komponenten in Versionen von Visual Studio vor Visual Studio 2015 Update 1 Ab Visual Studio 2015 Update 1 können Sie „Bearbeiten und Fortfahren“ in Windows Store C++- und DirectX-Apps verwenden, da jetzt der `/ZI` -Compilerschalter mit dem  `/bigobj` -Schalter unterstützt wird. Sie können „Bearbeiten und Fortfahren“ auch mit Binärdateien verwenden, die mit dem `/FASTLINK` -Schalter unterstützt wird.  
+- Debuggen von Windows Store-Apps oder -Komponenten in Versionen von Visual Studio vor Visual Studio 2015 Update 1 Ab Visual Studio 2015 Update 1 können Sie „Bearbeiten und Fortfahren“ in Windows Store C++- und DirectX-Apps verwenden, da jetzt der `/ZI` -Compilerschalter mit dem  `/bigobj` -Schalter unterstützt wird. Sie können „Bearbeiten und Fortfahren“ auch mit Binärdateien verwenden, die mit dem `/FASTLINK` -Schalter unterstützt wird.  
   
--   Debuggen unter Windows 98.  
+- Debuggen unter Windows 98.  
   
--   Debuggen im gemischten Modus (systemeigen/verwaltet).  
+- Debuggen im gemischten Modus (systemeigen/verwaltet).  
   
--   Debuggen von JavaScript.  
+- Debuggen von JavaScript.  
   
--   SQL-Debuggen.  
+- SQL-Debuggen.  
   
--   Debuggen einer Dumpdatei.  
+- Debuggen einer Dumpdatei.  
   
--   Bearbeiten von Code nach einer nicht behandelten Ausnahme, wenn die Option **Aufrufliste für unbehandelte Ausnahmen entladen** nicht aktiviert ist.  
+- Bearbeiten von Code nach einer nicht behandelten Ausnahme, wenn die Option **Aufrufliste für unbehandelte Ausnahmen entladen** nicht aktiviert ist.  
   
--   Debuggen einer App über **Anfügen an** , anstatt die App durch Auswählen von **Start** im Menü **Debuggen** auszuführen.  
+- Debuggen einer App über **Anfügen an** , anstatt die App durch Auswählen von **Start** im Menü **Debuggen** auszuführen.  
   
--   Debuggen von optimiertem Code.  
+- Debuggen von optimiertem Code.  
   
--   Debuggen einer alten Version des Codes, wenn eine neue Version aufgrund von Buildfehlern nicht erstellt werden konnte.  
+- Debuggen einer alten Version des Codes, wenn eine neue Version aufgrund von Buildfehlern nicht erstellt werden konnte.  
   
-##  <a name="BKMK_Linking_limitations"></a> Einschränkungen für Verknüpfungen  
+## <a name="BKMK_Linking_limitations"></a> Einschränkungen für Verknüpfungen  
   
-###  <a name="BKMK_Linker_options_that_disable_Edit_and_Continue"></a> Optionen des Linkers, durch die "Bearbeiten und Fortfahren" deaktiviert wird  
+### <a name="BKMK_Linker_options_that_disable_Edit_and_Continue"></a> Optionen des Linkers, durch die "Bearbeiten und Fortfahren" deaktiviert wird  
  Die folgenden Optionen des Linkers deaktivieren Bearbeiten und Fortfahren:  
   
--   Durch die Einstellung **/OPT:REF**, **/OPT:ICF**oder **/INCREMENTAL:NO** wird Bearbeiten und Fortfahren deaktiviert. Folgende Warnung wird angezeigt:  
+- Durch die Einstellung **/OPT:REF**, **/OPT:ICF**oder **/INCREMENTAL:NO** wird Bearbeiten und Fortfahren deaktiviert. Folgende Warnung wird angezeigt:  
   
      LINK : Warnung LNK4075: ignoriere /EDITANDCONTINUE aufgrund von /OPT  
   
      Angabe  
   
--   Durch die Einstellung von **/ORDER**, **/RELEASE**oder **/FORCE** wird Bearbeiten und Fortfahren deaktiviert. Folgende Warnung wird angezeigt:  
+- Durch die Einstellung von **/ORDER**, **/RELEASE**oder **/FORCE** wird Bearbeiten und Fortfahren deaktiviert. Folgende Warnung wird angezeigt:  
   
      LINK: Warnung LNK4075: /INCREMENTAL wird aufgrund von /option ignoriert  
   
      Angabe  
   
--   Durch das Festlegen einer beliebigen Option, die die Erstellung einer Programmdatenbankdatei (.pdb) verhindert, wird Bearbeiten und Fortfahren deaktiviert, wobei keine spezifische Warnung ausgegeben wird.  
+- Durch das Festlegen einer beliebigen Option, die die Erstellung einer Programmdatenbankdatei (.pdb) verhindert, wird Bearbeiten und Fortfahren deaktiviert, wobei keine spezifische Warnung ausgegeben wird.  
   
-###  <a name="BKMK_Auto_relinking_limitations"></a> Automatisches Neuverknüpfen von Einschränkungen  
+### <a name="BKMK_Auto_relinking_limitations"></a> Automatisches Neuverknüpfen von Einschränkungen  
  In der Standardeinstellung wird durch Bearbeiten und Fortfahren das Programm am Ende der Debugsitzung neu gebunden, um eine aktuelle ausführbare Datei zu erstellen.  
   
  Bearbeiten und Fortfahren kann das Programm nicht erneut binden, wenn Sie an einer anderen Position als der der ursprünglichen Erstellung debuggen. Ihnen wird in einer Meldung mitgeteilt, dass Sie manuell neu erstellen müssen.  
@@ -127,28 +123,25 @@ Mit "Bearbeiten und Fortfahren" für Visual C++ können die meisten Arten von Co
   
  **So deaktivieren Sie das erneute Binden nach "Bearbeiten und Fortfahren"**  
   
-1.  Klicken Sie im Menü **Debuggen** auf **Optionen und Einstellungen**.  
+1. Klicken Sie im Menü **Debuggen** auf **Optionen und Einstellungen**.  
   
-2.  Öffnen Sie im Dialogfeld **Optionen** den Knoten **Debugging** , und wählen Sie den Knoten **Bearbeiten und Fortfahren** aus.  
+2. Öffnen Sie im Dialogfeld **Optionen** den Knoten **Debugging** , und wählen Sie den Knoten **Bearbeiten und Fortfahren** aus.  
   
-3.  Deaktivieren Sie das Kontrollkästchen **Codeänderungen nach dem Debuggen erneut binden** .  
+3. Deaktivieren Sie das Kontrollkästchen **Codeänderungen nach dem Debuggen erneut binden** .  
   
-##  <a name="BKMK_Precompiled_Header_Limitations"></a> Einschränkungen für vorkompilierte Header  
+## <a name="BKMK_Precompiled_Header_Limitations"></a> Einschränkungen für vorkompilierte Header  
  Durch Bearbeiten und Fortfahren werden vorkompilierte Header standardmäßig im Hintergrund geladen und verarbeitet, um die Verarbeitung von Codeänderungen zu beschleunigen. Zum Laden vorkompilierter Header muss physischer Speicher belegt werden. Daher können beim Kompilieren auf einem Computer mit begrenztem Arbeitsspeicher Probleme auftreten. Sie können feststellen, ob möglicherweise ein solches Problem besteht, indem Sie mithilfe des Windows Task-Managers den während des Debuggens verfügbaren physischen Speicher bestimmen. Wenn dabei die Größe der vorkompilierten Header überschritten wird, kann Bearbeiten und Fortfahren problemlos ausgeführt werden. Wenn der Speicherplatz geringer als die vorkompilierten Header ist, können Sie das Laden von vorkompilierten Headern im Hintergrund durch Bearbeiten und Fortfahren verhindern.  
   
  **So deaktivieren Sie das Laden vorkompilierter Header im Hintergrund für "Bearbeiten und Fortfahren"**  
   
-1.  Klicken Sie im Menü **Debuggen** auf **Optionen und Einstellungen**.  
+1. Klicken Sie im Menü **Debuggen** auf **Optionen und Einstellungen**.  
   
-2.  Öffnen Sie im Dialogfeld **Optionen** den Knoten **Debugging** , und wählen Sie den Knoten **Bearbeiten und Fortfahren** aus.  
+2. Öffnen Sie im Dialogfeld **Optionen** den Knoten **Debugging** , und wählen Sie den Knoten **Bearbeiten und Fortfahren** aus.  
   
-3.  Deaktivieren Sie das Kontrollkästchen **Präkompilierung zulassen** .  
+3. Deaktivieren Sie das Kontrollkästchen **Präkompilierung zulassen** .  
   
-##  <a name="BKMK_IDL_Attribute_Limitations"></a> Einschränkungen für IDL-Attribute  
+## <a name="BKMK_IDL_Attribute_Limitations"></a> Einschränkungen für IDL-Attribute  
  "Bearbeiten und Fortfahren" unterstützt nicht das Neugenerieren von IDL-Dateien (Interface Definiton Language). Aus diesem Grund werden Änderungen an IDL-Attributen während des Debuggens nicht widergespiegelt. Wenn Sie die Ergebnisse von Änderungen an IDL-Attributen anzeigen möchten, müssen Sie das Debuggen beenden und die App neu erstellen. "Bearbeiten und Fortfahren" erzeugt keinen Fehler bzw. keine Fehlermeldung, wenn IDL-Attribute geändert wurden. Weitere Informationen finden Sie unter [IDL-Attribute](http://msdn.microsoft.com/library/04c596f4-c97b-4952-8053-316678b1d0b6).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)
-
-
-

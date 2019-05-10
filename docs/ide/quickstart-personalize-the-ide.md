@@ -1,40 +1,59 @@
 ---
 title: Festlegen des Farbdesigns und der Schriftarten
 ms.date: 11/20/2017
-ms.prod: visual-studio-dev15
 ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0f81c04c06d8e016ef62a41d2e3083a1daafb3a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a43ade295d14934f452123407f9896eebdaf26c7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919718"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953390"
 ---
-# <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Schnellstart: Personalisieren der Visual Studio-IDE und des Editors
+# <a name="personalize-the-visual-studio-ide-and-editor"></a>Personalisieren der Visual Studio-IDE und des Editors
 
-In diesem 5- bis 10-minütigen Schnellstart erfahren Sie, wie Sie das Visual Studio-Farbdesign anpassen, indem Sie das Design „Dunkel“ auswählen. Außerdem passen Sie die Farben für zwei verschiedene Texttypen im Text-Editor an.
+In diesem 5- bis 10-minütigen Tutorial erfahren Sie, wie Sie das Visual Studio-Farbdesign anpassen, indem Sie das Design „Dunkel“ auswählen. Außerdem passen Sie die Farben für zwei verschiedene Texttypen im Text-Editor an.
 
-Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) kostenlos herunterladen.
+::: moniker range="vs-2017"
+
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) kostenlos herunterladen.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) kostenlos herunterladen.
+
+::: moniker-end
 
 ## <a name="set-the-color-theme"></a>Festlegen des Farbdesigns
 
-Das Standardfarbdesign für die Benutzeroberfläche von Visual Studio 2017 heißt **Blau**. Ändern Sie es in **Dunkel**.
+Das Standardfarbdesign für die Benutzeroberfläche von Visual Studio heißt **Blau**. Ändern Sie es in **Dunkel**.
 
 1. Klicken Sie in der Menüleiste (die Zeile, die Menüs wie **Datei** und **Bearbeiten** enthält) auf **Extras** > **Optionen**.
 
 1. Ändern Sie auf der Optionsseite **Umgebung** > **Allgemein** die Auswahl für **Farbdesign** in **Dunkel**, und klicken Sie dann auf **OK**.
 
-   Das Farbdesign für die gesamte Visual Studio-IDE (integrierte Entwicklungsumgebung) wird in **Dunkel** geändert.
+   Das Farbdesign für die gesamte integrierten Entwicklungsumgebung in Visual Studio (Integrated Development Environment, IDE) wird in **Dunkel** geändert.
 
-   ![Visual Studio im Design „Dunkel“](media/quickstart-personalize-dark-theme.png)
+   ::: moniker range="vs-2017"
+
+   ![Visual Studio 2017 im Design „Dunkel“](media/quickstart-personalize-dark-theme.png)
+
+   ::: moniker-end
+
+   ::: moniker range="vs-2019"
+
+   ![Visual Studio 2019 im Design „Dunkel“](media/vs-2019/dark-theme.png)
+
+   ::: moniker-end
 
 > [!TIP]
-> Sie können weitere vordefinierte Designs installieren, indem Sie den **Visual Studio Color Theme Editor** (Visual Studio-Editor für Farbdesign) aus [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor) installieren. Nachdem Sie dieses Tool installiert haben, werden zusätzliche Farbdesigns in der **Farbdesign**-Dropdownliste angezeigt.
+> Sie können weitere vordefinierte Designs installieren, indem Sie den **Visual Studio Color Theme Editor** aus [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor) installieren. Nachdem Sie dieses Tool installiert haben, werden zusätzliche Farbdesigns in der **Farbdesign**-Dropdownliste angezeigt.
 
 ## <a name="change-text-color"></a>Ändern der Textfarbe
 

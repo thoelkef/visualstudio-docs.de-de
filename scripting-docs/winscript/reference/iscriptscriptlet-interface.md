@@ -1,8 +1,7 @@
 ---
-title: IScriptScriptlet-Schnittstelle | Microsoft Docs
+title: IScriptScriptlet-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,28 +13,28 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f3fa3253997d3a09a7170f3795bf8a7bbf8a182c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c11aada6b8c39c7dd5f0b2a6b30cdd837aa0edda
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733810"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786710"
 ---
 # <a name="iscriptscriptlet-interface"></a>IScriptScriptlet-Schnittstelle
-Ein Objekt, implementiert die `IScriptScriptlet` Schnittstelle stellt eine Ereignishandlerskripts dar.  
+Ein Objekt, implementiert die `IScriptScriptlet` Schnittstelle repräsentiert ein Ereignis-Handler-Skript.  
   
- Zusätzlich zu den von geerbten Methoden `IScriptEntry`, `IScriptScriptlet` Schnittstelle macht die folgenden Methoden verfügbar.  
+ Zusätzlich zu den von geerbten Methoden `IScriptEntry`, `IScriptScriptlet` Schnittstelle verfügbar macht, die folgenden Methoden.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IScriptScriptlet::GetEventName](../../winscript/reference/iscriptscriptlet-geteventname.md)|Gibt den Namen des Ereignisses, die dem Scriptlet zugeordnet ist.|  
-|[IScriptScriptlet:: GetSimpleEventName](../../winscript/reference/iscriptscriptlet-getsimpleeventname.md)|Gibt den einfachen Ereignisname, der eine Scriptlet zugeordnet ist. Dies ist ein einzelnes Wort, der keine Leerzeichen enthalten.|  
-|[IScriptScriptlet::GetSubItemName](../../winscript/reference/iscriptscriptlet-getsubitemname.md)|Gibt den letzten Bezeichner in den vollqualifizierten Namen des Hosts für eine Scriptlet-Objekt zurück.|  
-|[IScriptScriptlet::SetEventName](../../winscript/reference/iscriptscriptlet-seteventname.md)|Legt den Namen des Ereignisses, die dem Scriptlet zugeordnet ist.|  
-|[IScriptScriptlet::SetSimpleEventName](../../winscript/reference/iscriptscriptlet-setsimpleeventname.md)|Legt den einfachen Namen, der dem Scriptlet zugeordnet ist. Dies ist ein einzelnes Wort, der keine Leerzeichen enthalten.|  
-|[IScriptScriptlet::SetSubItemName](../../winscript/reference/iscriptscriptlet-setsubitemname.md)|Legt den letzten Bezeichner in den vollqualifizierten Namen des Hosts für eine Scriptlet-Objekt fest.|  
+|[IScriptScriptlet::GetEventName](../../winscript/reference/iscriptscriptlet-geteventname.md)|Gibt den Namen des Ereignisses, das das Scriptlet zugeordnet ist.|  
+|[IScriptScriptlet:: GetSimpleEventName](../../winscript/reference/iscriptscriptlet-getsimpleeventname.md)|Gibt den einfachen Namen, der dem Scriptlet zugeordnet ist. Dies ist ein Name einem Wort, die keine Leerzeichen enthalten.|  
+|[IScriptScriptlet::GetSubItemName](../../winscript/reference/iscriptscriptlet-getsubitemname.md)|Gibt den letzten Bezeichner in den vollqualifizierten Namen des Hosts des Scriptlet-Objekt zurück.|  
+|[IScriptScriptlet::SetEventName](../../winscript/reference/iscriptscriptlet-seteventname.md)|Legt den Namen des Ereignisses, das das Scriptlet zugeordnet ist.|  
+|[IScriptScriptlet::SetSimpleEventName](../../winscript/reference/iscriptscriptlet-setsimpleeventname.md)|Legt den einfachen Namen, der dem Scriptlet zugeordnet ist. Dies ist ein Name einem Wort, die keine Leerzeichen enthalten.|  
+|[IScriptScriptlet::SetSubItemName](../../winscript/reference/iscriptscriptlet-setsubitemname.md)|Legt den letzten Bezeichner in den vollqualifizierten Namen des Hosts des Scriptlet-Objekt fest.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Active Script-Autorisierungsschnittstellen](../../winscript/reference/active-script-authoring-interfaces.md)

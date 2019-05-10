@@ -1,20 +1,18 @@
 ---
 title: Analysieren von Tests der programmierten UI mithilfe der Testprotokolle der programmierten UI
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9c31dd90981cf39f1de296b2c96d6064afc730b4
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: a5ce4f298039d6d86f8c4855d1f139b6be1d1175
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896678"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822726"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analysieren von Tests der programmierten UI mithilfe der Testprotokolle der programmierten UI
 
@@ -22,7 +20,7 @@ Testprotokolle für codierte UI filtern wichtige Informationen zum ausgeführten
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-## <a name="step-1-enable-logging"></a>Schritt 1: Aktivieren der Protokollierung
+## <a name="step-1-enable-logging"></a>Schritt 1: Protokollierung aktivieren
 
 Verwenden Sie je nach Szenario eine der folgenden Methoden zur Aktivierung des Protokolls:
 
@@ -62,30 +60,30 @@ Verwenden Sie je nach Szenario eine der folgenden Methoden zur Aktivierung des P
 
 Wenn Sie einen Test der programmierten Benutzeroberfläche mit der modifizierten Datei *QTAgent32.exe.config* ausführen, wird ein Ausgabelink in den Ergebnissen des **Test-Explorers** angezeigt. Protokolldateien werden nicht nur produziert, wenn beim Test ein Fehler auftritt, sondern auch für erfolgreiche Tests, wenn das Level der Ablaufverfolgung auf „verbose“ gesetzt ist.
 
-1.  Wählen Sie im Menü **Test** **Fenster** und dann **Test-Explorer** aus.
+1. Wählen Sie im Menü **Test** **Fenster** und dann **Test-Explorer** aus.
 
-2.  Wählen Sie im Menü **Erstellen** die Option **Projektmappe erstellen**.
+2. Wählen Sie im Menü **Erstellen** die Option **Projektmappe erstellen**.
 
-3.  Wählen Sie im **Test-Explorer** den Test der programmierten Benutzeroberfläche aus, den Sie ausführen möchten. Öffnen Sie dessen Kontextmenü, und wählen Sie die Option **Ausgewählte Tests ausführen** aus.
+3. Wählen Sie im **Test-Explorer** den Test der programmierten Benutzeroberfläche aus, den Sie ausführen möchten. Öffnen Sie dessen Kontextmenü, und wählen Sie die Option **Ausgewählte Tests ausführen** aus.
 
      Die automatisierten Tests werden ausgeführt und geben an, wenn sie erfolgreich waren oder Fehler aufgetreten sind.
 
     > [!TIP]
     > Wählen Sie zum Anzeigen des **Test-Explorers** die Optionen **Test** > **Fenster** und anschließend **Test-Explorer** aus.
 
-4.  Wählen Sie den Link **Ausgabe** in den Ergebnissen des **Test-Explorers** aus.
+4. Wählen Sie den Link **Ausgabe** in den Ergebnissen des **Test-Explorers** aus.
 
      ![Ausgabelink im Test-Explorer](../test/media/cuit_htmlactionlog1.png)
 
      Damit wird die Ausgabe für den Test angezeigt, in der ein Link zum Aktionsprotokoll enthalten ist.
 
-     ![Ergebnisse und Ausgabelinks aus Test der programmierten UI](../test/media/cuit_htmlactionlog2.png)
+     ![Ergebnisse und Ausgabelinks aus Test der codierten UI](../test/media/cuit_htmlactionlog2.png)
 
-5.  Wählen Sie den Link *UITestActionLog.html* aus.
+5. Wählen Sie den Link *UITestActionLog.html* aus.
 
      Das Protokoll wird im Webbrowser angezeigt.
 
-     ![Protokolldatei aus Test der programmierten UI](../test/media/cuit_htmlactionlog3.png)
+     ![Protokolldatei aus Test der codierten UI](../test/media/cuit_htmlactionlog3.png)
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - deploying applications [Office development in Visual Studio]
 - publishing, Office solutions
 - Property Pages dialog box, Publish [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 63094c3bdf8bd2787f11dd6fd6818ea265d781f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: 84a62fc796243172c9130c8113c4e6d289ed3092
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965998"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447018"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Veröffentlichungsseite, Projekt-Designer (Office-Entwicklung in Visual Studio)
   Die Seite **Veröffentlichen** des **Projekt-Designers** wird zur Konfiguration von Eigenschaften für die Bereitstellung verwendet.
@@ -29,7 +29,7 @@ ms.locfileid: "53965998"
  Wählen Sie zum Aufrufen der Seite das Projekt im **Projektmappen-Explorer**aus, und klicken Sie anschließend im Menü **Projekt** auf *Projektname* **Eigenschaften**. Wenn die Seite **Veröffentlichen** nicht angezeigt wird, wählen Sie die Registerkarte **Veröffentlichen** aus.
 
 > [!NOTE]
->  Sie können auch den Veröffentlichungsort im **Veröffentlichungs-Assistenten**festlegen. Weitere Informationen finden Sie unter [Vorgehensweise: Veröffentlichen einer Office-Projektmappe mit ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).
+> Sie können auch den Veröffentlichungsort im **Veröffentlichungs-Assistenten**festlegen. Weitere Informationen finden Sie unter [Vorgehensweise: Veröffentlichen einer Office-Projektmappe mit ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).
 
 ## <a name="uielement-list"></a>UIElement-Liste
  **Speicherort des Veröffentlichungsordners (Website, ftp-Server oder Dateipfad)** erforderlich sind.
@@ -84,9 +84,9 @@ ms.locfileid: "53965998"
 
 - VSTO-Add-In-Ladeverhalten.
 
-  -   Beim Start laden: Gibt an, dass das VSTO-Add-In beim Starten der Office-Anwendung geladen wird.
+  - Beim Start laden: Gibt an, dass das VSTO-Add-In beim Starten der Office-Anwendung geladen wird.
 
-  -   Bedarfsgesteuert laden: Gibt an, dass das VSTO-Add-In nur geladen wird, wenn es für die Anwendung erforderlich ist, wenn z. B. ein Benutzer auf ein Benutzeroberflächenelement klickt, das auf Funktionen im VSTO-Add-In zurückgreift.
+  - Bedarfsgesteuert laden: Gibt an, dass das VSTO-Add-In nur geladen wird, wenn es für die Anwendung erforderlich ist, wenn z. B. ein Benutzer auf ein Benutzeroberflächenelement klickt, das auf Funktionen im VSTO-Add-In zurückgreift.
 
   **Sprache für Veröffentlichung** diese Option wird die Sprache der Microsoft Software-Lizenzbedingungen, und bezieht die Language Packs in der Liste der Voraussetzungen. Sie wirkt sich nicht auf die Sprache der Anpassung aus. Die Sprache im Setupprogramm wird durch die installierten Sprachen von Visual Studio bestimmt.
 

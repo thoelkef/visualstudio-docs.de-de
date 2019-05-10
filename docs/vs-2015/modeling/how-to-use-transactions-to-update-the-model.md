@@ -1,25 +1,22 @@
 ---
 title: 'Vorgehensweise: Verwenden von Transaktionen zum Aktualisieren des Modells | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: e24436a5-7f97-401b-bc83-20d188d10d5b
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 50f9d491ed52098edb8a8ccd1a7b2f9c8834447e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: bbc09543d0ee0297678d3f205becc55a6b6d7714
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236859"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085923"
 ---
-# <a name="how-to-use-transactions-to-update-the-model"></a>Gewusst wie: Verwenden von Transaktionen zum Aktualisieren des Modells
+# <a name="how-to-use-transactions-to-update-the-model"></a>Vorgehensweise: Verwenden von Transaktionen zum Aktualisieren des Modells
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Transaktionen stellen Sie sicher, dass in den Speicher vorgenommenen Änderungen als Gruppe behandelt werden. Änderungen, die gruppiert werden, können ein Commit oder Rollback als einzelne Einheit sein.  
@@ -64,9 +61,9 @@ catch (Exception ex)
 ## <a name="rolling-back-a-transaction"></a>Rollback einer Transaktion  
  Verwenden Sie eines dieser Taktiken, um sicherzustellen dass der Store in bleibt oder sich auf den Zustand vor der Transaktion zurückgesetzt:  
   
-1.  Auslösen einer Ausnahme, die innerhalb des Bereichs der Transaktion nicht abgefangen wird.  
+1. Auslösen einer Ausnahme, die innerhalb des Bereichs der Transaktion nicht abgefangen wird.  
   
-2.  Explizit Rollback der Transaktion:  
+2. Explizit Rollback der Transaktion:  
   
     ```  
     this.Store.TransactionManager.CurrentTransaction.Rollback();  
@@ -108,6 +105,3 @@ if (!this.Store.InUndoRedoOrRollback) {...}
 if (!this.Store.InSerializationTransaction) {...}  
   
 ```
-
-
-

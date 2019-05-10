@@ -1,30 +1,32 @@
 ---
 title: IDebugCoreServer3::DiagnoseWebDebuggingError | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugCoreServer3::DiagnoseWebDebuggingError
 helpviewer_keywords:
 - IDebugCoreServer3::DiagnoseWebDebuggingError
 ms.assetid: 8c4570ca-ae55-42f2-bbaa-8d8e75d2fa19
-author: gregvanl
+caps.latest.revision: 9
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 1ba22bb5f8f20446b87236a4784b02e7ad2eb41e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8173283adadd1290bdd83bf5f6810622efbff959
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990752"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62922000"
 ---
 # <a name="idebugcoreserver3diagnosewebdebuggingerror"></a>IDebugCoreServer3::DiagnoseWebDebuggingError
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Um zu bestimmen, warum ein Auto-attach fehlgeschlagenen.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT DiagnoseWebDebuggingError(  
    LPCWSTR pszUrl  
 );  

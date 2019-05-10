@@ -1,14 +1,9 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, creating
 - code snippets, shortcut
@@ -20,21 +15,21 @@ ms.assetid: 0dcaae11-39cf-4463-9c90-2494321251c2
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 038635db92d08837cc6519670053c9619ebe3c9b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b23640abec76f04199abe6e64888c641940e7a3f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267747"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388343"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ein Codeausschnitt kann in wenigen Schritten erstellt werden. Sie müssen nur eine XML-Datei erstellen, die entsprechenden Elemente eintragen und den Code hinzufügen. Dem Code können auch Verweise und Ersatzparameter hinzugefügt werden. Sie können den Codeausschnitt zu Visual Studio-Installation mithilfe der Schaltfläche "Importieren" für den Codeausschnitt-Manager hinzufügen (**Tools/Codeausschnitt-Manager**).  
+Ein Codeausschnitt kann in wenigen Schritten erstellt werden. Sie müssen nur eine XML-Datei erstellen, die entsprechenden Elemente eintragen und den Code hinzufügen. Dem Code können auch Verweise und Ersatzparameter hinzugefügt werden. Sie können den Codeausschnitt im Codeausschnitt-Manager über die Schaltfläche „Importieren“ (**Extras > Codeausschnitt-Manager**) zur Visual Studio-Installation hinzufügen.  
   
 > [!TIP]
->  Suchen Sie Informationen dazu, wie Sie Codeausschnitte leichter schreiben, die CodePlex-Website für communitytools wie [Snippet Editor](http://go.microsoft.com/fwlink/?LinkId=251033).  
+> Informationen zur einfacheren Erstellung von Codeausschnitten, beispielsweise mithilfe des [Editors für Codeausschnitte](http://go.microsoft.com/fwlink/?LinkId=251033), finden Sie auf der CodePlex-Website für Communitytools.  
   
 ## <a name="snippet-template"></a>Ausschnittvorlage  
  Im Folgenden finden Sie eine einfache Ausschnittvorlage:  
@@ -59,13 +54,13 @@ Ein Codeausschnitt kann in wenigen Schritten erstellt werden. Sie müssen nur ei
   
 ### <a name="to-create-a-code-snippet"></a>So erstellen Sie einen Codeausschnitt  
   
-1.  Erstellen Sie eine neue XML-Datei in Visual Studio, und fügen Sie die oben gezeigten Vorlage hinzu.  
+1. Erstellen Sie eine neue XML-Datei in Visual Studio, und fügen Sie die oben gezeigten Vorlage hinzu.  
   
-2.  Geben Sie den Titel des Codeausschnitts ein. Z.B.: „Hallo Welt VB“ im „Title“-Element.  
+2. Geben Sie den Titel des Codeausschnitts ein. Z.B.: „Hallo Welt VB“ im „Title“-Element.  
   
-3.  Tragen Sie die Sprache des Ausschnitts in das Sprachenattribut des Codeelements ein. In diesem Beispiel wird "VB" verwendet.  
+3. Tragen Sie die Sprache des Ausschnitts in das Sprachenattribut des Codeelements ein. In diesem Beispiel wird "VB" verwendet.  
   
-4.  Fügen Sie etwas Code im CDATA-Abschnitt innerhalb des Codeelements hinzu, zum Beispiel:  
+4. Fügen Sie etwas Code im CDATA-Abschnitt innerhalb des Codeelements hinzu, zum Beispiel:  
   
     ```  
     <Code Language="VB">  
@@ -74,33 +69,33 @@ Ein Codeausschnitt kann in wenigen Schritten erstellt werden. Sie müssen nur ei
   
     ```  
   
-5.  Speichern Sie den Ausschnitt als "VBCodeSnippet.snippet".  
+5. Speichern Sie den Ausschnitt als "VBCodeSnippet.snippet".  
   
 ### <a name="to-add-a-code-snippet-to-visual-studio"></a>So fügen Sie einen Codeausschnitt zu Visual Studio hinzu  
   
-1.  Sie können der Visual Studio-Installation mithilfe des Codeausschnitt-Managers eigene Ausschnitte hinzufügen. Öffnen Sie den Codeausschnitt-Manager (**Tools/Codeausschnitt-Manager**).  
+1. Sie können der Visual Studio-Installation mithilfe des Codeausschnitt-Managers eigene Ausschnitte hinzufügen. Öffnen Sie den Codeausschnitt-Manager (**Extras > Codeausschnitt-Manager**).  
   
-2.  Klicken Sie auf die Schaltfläche **Importieren**.  
+2. Klicken Sie auf die Schaltfläche **Importieren**.  
   
-3.  Wechseln Sie zum Speicherort des Codeausschnitts aus der vorherigen Prozedur, klicken Sie zuerst darauf und anschließend auf **Öffnen**.  
+3. Wechseln Sie zum Speicherort des Codeausschnitts aus der vorherigen Prozedur, klicken Sie zuerst darauf und anschließend auf **Öffnen**.  
   
-4.  Das Dialogfeld **Codeausschnitt importieren** öffnet sich, und Sie werden aufgefordert, aus den Optionen im rechten Bereich auszuwählen, wo der Ausschnitt hinzugefügt werden soll. Die Option **Meine Codeausschnitte** sollte dabei zur Auswahl stehen. Wählen Sie diese Option aus, klicken Sie auf **Fertig stellen** und anschließend auf **OK**.  
+4. Das Dialogfeld **Codeausschnitt importieren** öffnet sich, und Sie werden aufgefordert, aus den Optionen im rechten Bereich auszuwählen, wo der Ausschnitt hinzugefügt werden soll. Die Option **Meine Codeausschnitte** sollte dabei zur Auswahl stehen. Wählen Sie diese Option aus, klicken Sie auf **Fertig stellen** und anschließend auf **OK**.  
   
-5.  Der Ausschnitt wird an den folgenden Speicherort kopiert:  
+5. Der Ausschnitt wird an den folgenden Speicherort kopiert:  
   
      `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippets`  
   
-6.  Testen Sie den Ausschnitt, indem Sie ein Visual Basic-Projekt und eine Codedatei öffnen. Klicken Sie in der Datei auf **Ausschnitt einfügen** klicken Sie dann im Kontextmenü **Meine Codeausschnitte**. Es sollte ein Ausschnitt mit dem Namen **My Visual Basic Code Snippet** („Mein Visual Basic-Codeausschnitt“) angezeigt werden. Doppelklicken Sie darauf.  
+6. Testen Sie den Ausschnitt, indem Sie ein Visual Basic-Projekt und eine Codedatei öffnen. Klicken Sie in der Datei im Kontextmenü auf **Codeausschnitt einfügen** und dann auf **Meine Codeausschnitte**. Es sollte ein Ausschnitt mit dem Namen **My Visual Basic Code Snippet** („Mein Visual Basic-Codeausschnitt“) angezeigt werden. Doppelklicken Sie darauf.  
   
-7.  Sie sollten `Console.WriteLine("Hello, World!")` sehen, das in den Code eingefügt wurde.  
+7. Sie sollten `Console.WriteLine("Hello, World!")` sehen, das in den Code eingefügt wurde.  
   
 ### <a name="adding-description-and-shortcut-fields"></a>Hinzufügen von Beschreibungs- und Verknüpfungsfeldern  
   
-1.  Beschreibungsfelder liefern Informationen über den Codeabschnitt, wenn sie im Codeausschnitt-Manager angezeigt werden. Die Verknüpfung ist ein Tag, das Benutzer zum Einfügen Ihres Codeausschnitts eingeben können. Bearbeiten Sie den Ausschnitt, der Sie hinzugefügt haben, indem Sie die Datei öffnen `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet`.  
+1. Beschreibungsfelder liefern Informationen über den Codeabschnitt, wenn sie im Codeausschnitt-Manager angezeigt werden. Die Verknüpfung ist ein Tag, das Benutzer zum Einfügen Ihres Codeausschnitts eingeben können. Bearbeiten Sie den Ausschnitt, der Sie hinzugefügt haben, indem Sie die Datei öffnen `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet`.  
   
-2.  Fügen Sie dem Headerelement Autor- und Beschreibungselemente hinzu, und füllen Sie diese aus.  
+2. Fügen Sie dem Headerelement Autor- und Beschreibungselemente hinzu, und füllen Sie diese aus.  
   
-3.  Das Headerelement würde in etwa wie folgt aussehen:  
+3. Das Headerelement würde in etwa wie folgt aussehen:  
   
     ```  
     <Header>  
@@ -111,9 +106,9 @@ Ein Codeausschnitt kann in wenigen Schritten erstellt werden. Sie müssen nur ei
   
     ```  
   
-4.  Öffnen Sie den Codeausschnitt-Manager, und wählen Sie den Codeausschnitt aus. Die Beschreibungs- und Autorenfelder im rechten Bereich sollten jetzt aufgefüllt sind.  
+4. Öffnen Sie den Codeausschnitt-Manager, und wählen Sie den Codeausschnitt aus. Die Beschreibungs- und Autorenfelder im rechten Bereich sollten jetzt aufgefüllt sind.  
   
-5.  Wenn Sie eine Verknüpfung hinzufügen möchten, fügen Sie ein Verknüpfungselement zusammen mit dem Autor- und Beschreibungselement hinzu:  
+5. Wenn Sie eine Verknüpfung hinzufügen möchten, fügen Sie ein Verknüpfungselement zusammen mit dem Autor- und Beschreibungselement hinzu:  
   
     ```  
     <Header>  
@@ -125,17 +120,17 @@ Ein Codeausschnitt kann in wenigen Schritten erstellt werden. Sie müssen nur ei
   
     ```  
   
-6.  Speichern Sie die Ausschnittdatei erneut.  
+6. Speichern Sie die Ausschnittdatei erneut.  
   
-7.  Öffnen Sie zum Testen der Verknüpfung ein Visual Basic-Projekt und eine Codedatei. Typ `hello` in der Datei und drücken Sie TAB. Der Ausschnittcode sollte nun eingefügt sein.  
+7. Öffnen Sie zum Testen der Verknüpfung ein Visual Basic-Projekt und eine Codedatei. Typ `hello` in der Datei und drücken Sie TAB. Der Ausschnittcode sollte nun eingefügt sein.  
   
 ### <a name="to-add-references-and-imports"></a>So fügen Sie Verweise und Importe hinzu  
   
-1.  Mit Visual Basic-Ausschnitten können Sie mithilfe des Verweiselements einen Verweis auf ein Projekt und mithilfe des Import-Elements eine Import-Deklaration hinzufügen. (Ausschnitte in anderen Sprachen verfügen nicht über diese Funktion.) Wenn Sie etwa `Console.WriteLine` im Codebeispiel in `MessageBox.Show` ändern, müssen Sie möglicherweise die System.Windows.Forms.dll-Assembly zum Projekt hinzufügen.  
+1. Mit Visual Basic-Ausschnitten können Sie mithilfe des Verweiselements einen Verweis auf ein Projekt und mithilfe des Import-Elements eine Import-Deklaration hinzufügen. (Ausschnitte in anderen Sprachen verfügen nicht über diese Funktion.) Wenn Sie etwa `Console.WriteLine` im Codebeispiel in `MessageBox.Show` ändern, müssen Sie möglicherweise die System.Windows.Forms.dll-Assembly zum Projekt hinzufügen.  
   
-2.  Öffnen Sie den Ausschnitt.  
+2. Öffnen Sie den Ausschnitt.  
   
-3.  Fügen Sie das Verweiselement unter dem Ausschnittelement hinzu:  
+3. Fügen Sie das Verweiselement unter dem Ausschnittelement hinzu:  
   
     ```  
     <References>  
@@ -146,7 +141,7 @@ Ein Codeausschnitt kann in wenigen Schritten erstellt werden. Sie müssen nur ei
   
     ```  
   
-4.  Fügen Sie das Imports-Element unter dem Ausschnittelement hinzu:  
+4. Fügen Sie das Imports-Element unter dem Ausschnittelement hinzu:  
   
     ```  
     <Imports>  
@@ -157,17 +152,17 @@ Ein Codeausschnitt kann in wenigen Schritten erstellt werden. Sie müssen nur ei
   
     ```  
   
-5.  Ändern Sie den CDATA-Abschnitt wie folgt:  
+5. Ändern Sie den CDATA-Abschnitt wie folgt:  
   
     ```  
     <![CDATA[MessageBox.Show("Hello, World!")]]>  
     ```  
   
-6.  Speichern Sie den Ausschnitt.  
+6. Speichern Sie den Ausschnitt.  
   
-7.  Öffnen Sie ein Visual Basic-Projekt, und fügen Sie den Ausschnitt hinzu.  
+7. Öffnen Sie ein Visual Basic-Projekt, und fügen Sie den Ausschnitt hinzu.  
   
-8.  Oben in der Codedatei finden Sie eine Imports-Anweisung:  
+8. Oben in der Codedatei finden Sie eine Imports-Anweisung:  
   
     ```  
     Imports System.Windows.Forms  
@@ -178,11 +173,11 @@ Ein Codeausschnitt kann in wenigen Schritten erstellt werden. Sie müssen nur ei
   
 ### <a name="adding-replacements"></a>Hinzufügen von Ersetzungen  
   
-1.  Möglicherweise möchten Sie, dass Teile der Codeausschnitte vom Benutzer ersetzt werden, zum Beispiel, wenn Sie eine Variable hinzufügen und der Benutzer diese durch eine Variable aus einem aktuellen Projekt ersetzen soll. Sie können zwei Typen von Ersetzungen bereitstellen: Literale und Objekte. Literale sind Zeichenfolgen eines bestimmten Typs (Zeichenfolgenliterale, Variablennamen oder Zeichenfolgendarstellungen numerischer Werte). Objekte sind Instanzen eines Typs, der keine Zeichenfolge ist. In dieser Prozedur deklarieren Sie eine literale Ersetzung und eine Objektersetzung, und Sie ändern den Code, um auf diese Ersetzungen zu verweisen.  
+1. Möglicherweise möchten Sie, dass Teile der Codeausschnitte vom Benutzer ersetzt werden, zum Beispiel, wenn Sie eine Variable hinzufügen und der Benutzer diese durch eine Variable aus einem aktuellen Projekt ersetzen soll. Sie können zwei Typen von Ersetzungen bereitstellen: Literale und Objekte. Literale sind Zeichenfolgen eines bestimmten Typs (Zeichenfolgenliterale, Variablennamen oder Zeichenfolgendarstellungen numerischer Werte). Objekte sind Instanzen eines Typs, der keine Zeichenfolge ist. In dieser Prozedur deklarieren Sie eine literale Ersetzung und eine Objektersetzung, und Sie ändern den Code, um auf diese Ersetzungen zu verweisen.  
   
-2.  Öffnen Sie den Ausschnitt.  
+2. Öffnen Sie den Ausschnitt.  
   
-3.  In diesem Beispiel wird eine SQL-Verbindungszeichenfolge verwendet, daher müssen Sie die Import- und Verweiselemente ändern, um die entsprechenden Verweise hinzuzufügen:  
+3. In diesem Beispiel wird eine SQL-Verbindungszeichenfolge verwendet, daher müssen Sie die Import- und Verweiselemente ändern, um die entsprechenden Verweise hinzuzufügen:  
   
     ```  
     <References>  
@@ -204,7 +199,7 @@ Ein Codeausschnitt kann in wenigen Schritten erstellt werden. Sie müssen nur ei
   
     ```  
   
-4.  Um eine literale Ersetzung für die SQL-Verbindungszeichenfolge zu deklarieren, fügen Sie unter dem Ausschnittelement ein Deklarationselement hinzu. Fügen Sie darin ein literales Element mit Unterelementen für die ID, die QuickInfo und den Standardwert für die Ersetzung hinzu:  
+4. Um eine literale Ersetzung für die SQL-Verbindungszeichenfolge zu deklarieren, fügen Sie unter dem Ausschnittelement ein Deklarationselement hinzu. Fügen Sie darin ein literales Element mit Unterelementen für die ID, die QuickInfo und den Standardwert für die Ersetzung hinzu:  
   
     ```  
     <Declarations>  
@@ -217,7 +212,7 @@ Ein Codeausschnitt kann in wenigen Schritten erstellt werden. Sie müssen nur ei
   
     ```  
   
-5.  Um eine Objektersetzung für die SQL-Verbindung zu deklarieren, fügen Sie innerhalb des Deklarationselements ein Objektelement und Unterelemente für die ID, den Typ des Objekts, die QuickInfo und den Standardwert hinzu. Das resultierende Deklarationselement sollte wie folgt aussehen:  
+5. Um eine Objektersetzung für die SQL-Verbindung zu deklarieren, fügen Sie innerhalb des Deklarationselements ein Objektelement und Unterelemente für die ID, den Typ des Objekts, die QuickInfo und den Standardwert hinzu. Das resultierende Deklarationselement sollte wie folgt aussehen:  
   
     ```  
     <Declarations>  
@@ -235,7 +230,7 @@ Ein Codeausschnitt kann in wenigen Schritten erstellt werden. Sie müssen nur ei
     </Declarations>  
     ```  
   
-6.  Verweisen Sie im Codeabschnitt mit umgebenden $-Zeichen auf die Ersetzungen, z.B. `$replacement$`:  
+6. Verweisen Sie im Codeabschnitt mit umgebenden $-Zeichen auf die Ersetzungen, z.B. `$replacement$`:  
   
     ```  
     <Code Language="VB" Kind="method body">  
@@ -249,9 +244,9 @@ Ein Codeausschnitt kann in wenigen Schritten erstellt werden. Sie müssen nur ei
     </Code>  
     ```  
   
-7.  Speichern Sie den Ausschnitt.  
+7. Speichern Sie den Ausschnitt.  
   
-8.  Öffnen Sie ein Visual Basic-Projekt, und fügen Sie den Ausschnitt hinzu.  
+8. Öffnen Sie ein Visual Basic-Projekt, und fügen Sie den Ausschnitt hinzu.  
   
 9. Der Code sollte wie folgt aussehen, wobei die Ersetzungen `SQL connection string` und `dcConnection` in hellem Orange hervorgehoben sind. Drücken Sie die TAB-TASTE, um von einem Ausschnitt zum anderen zu navigieren.  
   
@@ -268,6 +263,3 @@ Ein Codeausschnitt kann in wenigen Schritten erstellt werden. Sie müssen nur ei
   
 ## <a name="see-also"></a>Siehe auch  
  [Schemareferenz für Codeausschnitte](../ide/code-snippets-schema-reference.md)
-
-
-

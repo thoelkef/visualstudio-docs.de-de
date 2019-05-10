@@ -1,11 +1,10 @@
 ---
 title: Generieren einer Klasse oder eines Typs
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 f1_keywords:
 - vsl.GenerateFromUsage
 dev_langs:
@@ -13,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a98ccfc73a1d0390cdec101ed763535f316a5625
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a1258e0448fe7be9dd7fa0180f52604d877b051d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965829"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62795022"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Generieren einer Klasse oder eines Typs in Visual Studio
 
@@ -52,8 +51,8 @@ Diese Codegenerierung gilt für:
       - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen.
    - **Maus**
       - Führen Sie einen Rechtsklick durch, und klicken Sie auf das Menü **Schnellaktionen und Refactorings**.
-      - Zeigen Sie auf die rote Wellenlinie, und klicken Sie auf das ![Glühbirnensymbol,](media/bulb-cs.png) das angezeigt wird.
-      - Klicken Sie auf die Schaltfläche ![Glühbirnensymbol,](media/bulb-cs.png) das am linken Rand angezeigt wird, sofern der Textcursor bereits in der Zeile mit der roten Wellenlinie platziert wurde.
+      - Zeigen Sie auf die rote Wellenlinie, und klicken Sie auf das ![Fehlerglühbirnensymbol](media/error-bulb.png) das angezeigt wird.
+      - Klicken Sie auf die Schaltfläche ![Fehlerglühbirnensymbol](media/error-bulb.png) das am linken Rand angezeigt wird, sofern der Textcursor bereits in der Zeile mit der roten Wellenlinie platziert wurde.
 
       ![Vorschau der Aktion „Klasse generieren“](media/class-preview-cs.png)
 

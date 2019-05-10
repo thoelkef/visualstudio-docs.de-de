@@ -2,21 +2,20 @@
 title: Messen der Leistung von Python-Code
 description: Verwenden der Visual Studio-Profilerstellung zum Überprüfen der Leistung von Python-Code beim Einsatz von auf CPython basierenden Interpretern
 ms.date: 11/12/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 30fb65214db1eda64ef9b39f74d1bb534ba6af91
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e31286a9b0ea3852ad1fe788d4ff6c4c66e7e4f0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929723"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62784282"
 ---
 # <a name="profile-python-code"></a>Profilerstellung für Python-Code
 
@@ -32,12 +31,8 @@ Wenn Sie die Option **OK** wählen, wird der Profiler ausgeführt und öffnet ei
 
 ![Leistungsbericht für Profilerstellung](media/profiling-results.png)
 
-|   |   |
-|---|---|
-| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Profiling-Python-s6FoC6LWE_1005918567) mit einer Demonstration zur Python-Profilerstellung an (3 Minuten, 0 Sekunden).|
-
 > [!Note]
-> Gegenwärtig unterstützt Visual Studio nur diese Stufe der vollständigen Erstellung von Anwendungsprofilen, aber wir freuen uns auf jeden Fall über Ihr Feedback zu künftigen Funktionen. Verwenden Sie unten auf dieser Seite die Schaltfläche [**Produktfeedback**](#feedback).
+> Gegenwärtig unterstützt Visual Studio nur diese Stufe der vollständigen Erstellung von Anwendungsprofilen, aber wir freuen uns auf jeden Fall über Ihr Feedback zu künftigen Funktionen. Verwenden Sie unten auf dieser Seite die Schaltfläche **Produktfeedback**.
 
 ## <a name="profiling-for-ironpython"></a>Profilerstellung für IronPython
 

@@ -1,31 +1,25 @@
 ---
 title: Regelsatz für gemischte Mindestregeln | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: bc8df61c-19af-40ab-a871-315807e5f4bf
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 50a327173bd1d5edac9a378e0251a50ce045a256
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fbc8239fc3472d5dd5e8a24ca2b0c125d57cca21
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831444"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653072"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Regelsatz für gemischte Mindestregeln
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Die Microsoft-Mindestregeln gemischten konzentrieren sich auf die kritischsten Probleme in C++-Projekten, die die Common Language Runtime, einschließlich potenzieller Sicherheitslücken und Anwendungsabstürzen zu unterstützen. Der Regelsatz sollte in allen benutzerdefinierten Regelsätzen enthalten sein, die Sie für Ihre C++-Projekte mit Common Language Runtime-Unterstützung erstellen.  
-
 
 |                                            Regel                                             |                                                  Beschreibung                                                  |
 |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
@@ -65,7 +59,7 @@ Die Microsoft-Mindestregeln gemischten konzentrieren sich auf die kritischsten P
 |                              [C6504](../code-quality/c6504.md)                              |                                              NULL auf Nichtzeiger                                              |
 |                              [C6505](../code-quality/c6505.md)                              |                                               MustCheck für "void"                                               |
 |                              [C6506](../code-quality/c6506.md)                              |                                      Puffergröße auf Nichtzeiger oder Array                                      |
-|        [C6507](http://msdn.microsoft.com/en-us/18f88cd1-d035-4403-a6a4-12dd0affcf21)        |                                       NULL-Konflikt bei 0 Dereferenzierung                                       |
+|        [C6507](http://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)        |                                       NULL-Konflikt bei 0 Dereferenzierung                                       |
 |                              [C6508](../code-quality/c6508.md)                              |                                           Schreibzugriff auf Konstante                                            |
 |                              [C6509](../code-quality/c6509.md)                              |                                          Rückgabe wurde für Vorbedingung verwendet                                          |
 |                              [C6510](../code-quality/c6510.md)                              |                                        NULL für Nichtzeiger abgebrochen                                         |
@@ -76,13 +70,12 @@ Die Microsoft-Mindestregeln gemischten konzentrieren sich auf die kritischsten P
 |                              [C6516](../code-quality/c6516.md)                              |                                          Keine Eigenschaften für Attribut                                           |
 |                              [C6517](../code-quality/c6517.md)                              |                                       Zulässige Größe für nicht lesbaren Puffer                                       |
 |                              [C6518](../code-quality/c6518.md)                              |                                     Schreibbare Größe für Puffer, der nicht geschrieben werden kann                                      |
-|        [C6519](http://msdn.microsoft.com/en-us/2b6326b0-0539-4d26-8fb1-720114933232)        |                  Ungültige Anmerkung: Wert für die Eigenschaft "NeedsRelease" muss "Ja" oder "Nein" sein                   |
-|        [C6521](http://msdn.microsoft.com/en-us/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)        |                                        Ungültige Größenzeichenfolgendereferenzierung                                        |
+|        [C6521](http://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)        |                                        Ungültige Größenzeichenfolgendereferenzierung                                        |
 |                              [C6522](../code-quality/c6522.md)                              |                                           Ungültiger Größenzeichenfolgentyp                                            |
-|        [C6523](http://msdn.microsoft.com/en-us/11397a31-b224-46b0-afb7-d49ca576a3bb)        |                                         Ungültiger Größenzeichenfolgenparameter                                         |
+|        [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)        |                                         Ungültiger Größenzeichenfolgenparameter                                         |
 |                              [C6525](../code-quality/c6525.md)                              |                                   Ungültiger Größenzeichenfolgenstandort                                    |
-|        [C6526](http://msdn.microsoft.com/en-us/59c590c7-0098-4166-a1ac-87f324596002)        |                                        Ungültiger Größenzeichenfolgen-Puffertyp                                        |
-|                              [C6527](../code-quality/c6527.md)                              |              Ungültige Anmerkung: Die 'NeedsRelease'-Eigenschaft kann nicht für Werte des void-Typs verwendet werden.               |
+|        [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)        |                                        Ungültiger Größenzeichenfolgen-Puffertyp                                        |
+|                              [C6527](../code-quality/c6527.md)                              |              Ungültige Anmerkung: 'Die NeedsRelease'-Eigenschaft kann nicht für Werte des void-Typ verwendet werden               |
 |                              [C6530](../code-quality/c6530.md)                              |                                       Unbekannter Formatzeichenfolgenstil                                        |
 |                              [C6540](../code-quality/c6540.md)                              | Bei Verwendung von Attributanmerkungen für diese Funktion werden alle vorhandenen, zugehörigen __declspec-Anmerkungen ungültig  |
 |                              [C6551](../code-quality/c6551.md)                              |                              Ungültige Größenangabe: Ausdruck nicht analysierbar                              |
@@ -97,18 +90,18 @@ Die Microsoft-Mindestregeln gemischten konzentrieren sich auf die kritischsten P
 |                             [C28182](../code-quality/c28182.md)                             |         Dereferenzierender NULL-Zeiger. Der Zeit enthält denselben NULL-Wert wie ein anderer Zeiger.          |
 |                             [C28202](../code-quality/c28202.md)                             |                                    Illegaler Verweis auf nicht statischen Member                                     |
 |                             [C28203](../code-quality/c28203.md)                             |                                     Mehrdeutiger Verweis auf Klassenmember.                                      |
-|                             [C28205](../code-quality/c28205.md)                             |                           \_Erfolg\_ oder \_On_failure\_ in einem illegalen Kontext verwendet                            |
+|                             [C28205](../code-quality/c28205.md)                             |                           \_Success\_ oder \_On_failure\_ wurde in einem illegalen Kontext verwendet                            |
 |                             [C28206](../code-quality/c28206.md)                             |                                   „->“ verwenden, wenn linker Operand auf eine Struktur zeigt                                   |
 |                             [C28207](../code-quality/c28207.md)                             |                                       „.“ verwenden, wenn linker Operand eine Struktur ist                                       |
 |                             [C28210](../code-quality/c28210.md)                             |                 Anmerkungen für den _On_failure_-Kontext dürfen sich nicht im expliziten Vorkontext befinden.                  |
 |                             [C28211](../code-quality/c28211.md)                             |                                 Statischer Kontextname für SAL_context erwartet                                  |
 |                             [C28212](../code-quality/c28212.md)                             |                                  Zeigerausdruck für Anmerkung erwartet                                   |
-|                             [C28213](../code-quality/c28213.md)                             | Die \_Use_decl_annotations\_ -Anmerkung muss ohne Änderung eine vorherige Deklaration verweisen verwendet werden. |
+|                             [C28213](../code-quality/c28213.md)                             | Die \_Use_decl_annotations\_-Anmerkung muss ohne Änderung zum Verweisen auf eine vorherige Deklaration verwendet werden. |
 |                             [C28214](../code-quality/c28214.md)                             |                                   Attributparameternamen müssen p1...p9 sein.                                   |
 |                             [C28215](../code-quality/c28215.md)                             |                    Der Typefix kann nicht auf einen Parameter angewendet werden, der bereits über einen Typefix verfügt.                    |
 |                             [C28216](../code-quality/c28216.md)                             |        Die checkReturn-Anmerkung gilt nur für Nachbedingungen für den bestimmten Funktionsparameter.         |
 |                             [C28217](../code-quality/c28217.md)                             |            Für die Funktion stimmt die Anzahl der Parameter für die Anmerkung nicht mit der in der Datei gefundenen überein             |
-|                             [C28218](../code-quality/c28218.md)                             |             Für den Funktionsparameter stimmt der Parameter der Anwendung nicht mit dem in der Datei gefundenen überein              |
+|                             [C28218](../code-quality/c28218.md)                             |             Für Funktionsparameter entspricht der der Parameter, die in der Datei gefundenen nicht              |
 |                             [C28219](../code-quality/c28219.md)                             |                 Member von Enumeration für den Parameter in der Anmerkung erwartet                 |
 |                             [C28220](../code-quality/c28220.md)                             |                  Für den Parameter in der Anmerkung erwarteter Ganzzahlausdruck                   |
 |                             [C28221](../code-quality/c28221.md)                             |                        Für den Parameter in der Anmerkung erwarteter Zeichenfolgeausdruck                         |
@@ -142,31 +135,29 @@ Die Microsoft-Mindestregeln gemischten konzentrieren sich auf die kritischsten P
 |                             [C28254](../code-quality/c28254.md)                             |                               dynamic_cast<>() wird in Anmerkungen nicht unterstützt.                                |
 |                             [C28262](../code-quality/c28262.md)                             |                    Ein Syntaxfehler in der Anmerkung wurde in der Funktion für Anmerkung gefunden                     |
 |                             [C28263](../code-quality/c28263.md)                             |                 Ein Syntaxfehler in einer bedingten Anmerkung wurde gefunden für systeminterne Anmerkung                 |
-|       [C28264](http://msdn.microsoft.com/en-us/bf6ea983-a06e-4752-a042-747a7dbf338c)        |                                    Ergebnislistenwerte müssen Konstanten sein.                                     |
 |                             [C28267](../code-quality/c28267.md)                             |                    Ein Syntaxfehler in den Anmerkungen wurde in Anmerkung in der Funktion gefunden.                    |
 |                             [C28272](../code-quality/c28272.md)                             |      Die Anmerkung für Funktion, Parameter, beim Untersuchen von ist inkonsistent mit der Funktionsdeklaration.      |
 |                             [C28273](../code-quality/c28273.md)                             |                    Für Funktion sind die Hinweise inkonsistent mit der Funktionsdeklaration.                     |
-|                             [C28275](../code-quality/c28275.md)                             |                                   Der Parameter für \_Macro_value\_ ist null.                                    |
+|                             [C28275](../code-quality/c28275.md)                             |                                   Der Parameter für \_Macro_value\_ ist NULL                                    |
 |                             [C28279](../code-quality/c28279.md)                             |                           Für Symbol wurde ein 'begin' ohne zugehöriges 'end' gefunden.                            |
 |                             [C28280](../code-quality/c28280.md)                             |                           Für Symbol wurde ein 'end' ohne zugehöriges 'begin' gefunden.                           |
 |                             [C28282](../code-quality/c28282.md)                             |                                    Formatzeichenfolgen müssen sich in Vorbedingungen befinden                                    |
 |                             [C28285](../code-quality/c28285.md)                             |                                    Syntaxfehler im Parameter für Funktion                                    |
 |                             [C28286](../code-quality/c28286.md)                             |                                    Für Funktion wurde ein Syntaxfehler gegen Ende gefunden.                                    |
-|                             [C28287](../code-quality/c28287.md)                             |                Für Funktion Syntaxfehler in \_am\_()-Anmerkung (Unbekannter Parametername)                |
-|                             [C28288](../code-quality/c28288.md)                             |                  Für Funktion Syntaxfehler in \_am\_()-Anmerkung (Ungültiger Parametername)                   |
-|                             [C28289](../code-quality/c28289.md)                             |                Für Funktion: ReadableTo oder WritableTo enthielt keine Begrenzungsangabe als Parameter.                |
+|                             [C28287](../code-quality/c28287.md)                             |                Syntaxfehler in der Anmerkung \_At()\_ für die Funktion (unbekannter Parametername)                |
+|                             [C28288](../code-quality/c28288.md)                             |                  Syntaxfehler in der Anmerkung \_At()\_ für die Funktion (ungültiger Parametername)                   |
+|                             [C28289](../code-quality/c28289.md)                             |                Für Funktion: ReadableTo oder WritableTo eine Limit-Spezifikation als Parameter keine                |
 |                             [C28290](../code-quality/c28290.md)                             |           Die Anmerkung für Funktion enthält mehr Externe als die tatsächliche Anzahl von Parametern.            |
 |                             [C28291](../code-quality/c28291.md)                             |                        Post null/notnull auf deref-Ebene 0 ist ohne Bedeutung für Funktion.                        |
 |                             [C28300](../code-quality/c28300.md)                             |                            Ausdrucksoperanden von inkompatiblen Typen für Operator                             |
 |                             [C28301](../code-quality/c28301.md)                             |                               Keine Anmerkungen für die erste Deklaration der Funktion.                               |
-|                             [C28302](../code-quality/c28302.md)                             |                             Ein zusätzliches \_Deref\_ -Operator wurde in der Anmerkung gefunden.                              |
-|                             [C28303](../code-quality/c28303.md)                             |                           Ein mehrdeutiger \_Deref\_ -Operator wurde in der Anmerkung gefunden.                            |
-|                             [C28304](../code-quality/c28304.md)                             |                     Ein falsch platzierter \_Notref\_ -Operator wurde gefunden, auf das Token angewendet.                      |
+|                             [C28302](../code-quality/c28302.md)                             |                             Ein zusätzlicher \_Deref\_-Operator wurde in der Anmerkung gefunden.                              |
+|                             [C28303](../code-quality/c28303.md)                             |                           Ein mehrdeutiger \_Deref\_-Operator wurde in der Anmerkung gefunden.                            |
+|                             [C28304](../code-quality/c28304.md)                             |                     Ein falsch platzierter \_Notref\_-Operator wurde gefunden, der auf das Token angewendet wird.                      |
 |                             [C28305](../code-quality/c28305.md)                             |                                Fehler beim Analysieren eines Token.                                 |
 |                             [C28350](../code-quality/c28350.md)                             |                  Die Anmerkung beschreibt eine Situation, die nicht bedingt anwendbar ist.                   |
 |                             [C28351](../code-quality/c28351.md)                             |         Die Anmerkung beschreibt, wo ein dynamischer Wert (eine Variable) in der Bedingung nicht verwendet werden darf.          |
-|  [CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)  |                             Typen, die löschbare Felder besitzen müssen gelöscht werden können.                             |
-|                 [CA1821](../code-quality/ca1821-remove-empty-finalizers.md)                 |                                            Leere Finalizer entfernen                                            |
-|          [CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)           |                                     Verwerfbare Felder verwerfen                                      |
-| [CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md) |                            Überladen des Gleichheitsoperators beim Überschreiben von ValueType.Equals                            |
-
+|  [CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)  |                             Typen, die löschbare Felder besitzen, müssen gelöscht werden können.                             |
+|                 [CA1821](../code-quality/ca1821-remove-empty-finalizers.md)                 |                                            Leere Finalizer entfernen.                                            |
+|          [CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)           |                                     Verwerfbare Felder verwerfen.                                      |
+| [CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md) |                            Überladen Sie den Gleichheitsoperator beim Überschreiben von ValueType.Equals.                            |

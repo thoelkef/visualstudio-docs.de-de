@@ -7,19 +7,17 @@ helpviewer_keywords:
 ms.assetid: 3a94dd07-6d17-402c-ae8f-7947143755c9
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: f657babf33c315be2760cf59f3ec57525643f70e
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+manager: jillfra
+ms.openlocfilehash: 04b1a894fbeb20059b79e65327ed8a7d18730e01
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894572"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62785994"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Vorgehensweise: Einrichten Ihres Test-Agents, um Tests auszuführen, die mit dem Desktopcomputer interagieren
 
-Wenn Sie automatisierte Tests ausführen möchten, die mit dem Desktop interagieren, müssen Sie den Agent für die Ausführung als Prozess statt als Dienst konfigurieren. Wenn Sie z. B. einen Test der programmierten UI mithilfe eines Testcontrollers und eines Test-Agents remote ausführen möchten oder einen Test ausführen und während der Ausführung eine Videoaufzeichnung erfassen möchten, müssen Sie den Agent für die Ausführung als Prozess einrichten. Wenn Sie mit Microsoft Test Manager in den Testeinstellungen oder mit Visual Studio in der Umgebung Rollen Agents zuweisen, müssen Sie das Setup für alle Agents ändern, die Rollen zugewiesen sind, die mit dem Desktop interagieren.
+Wenn Sie automatisierte Tests ausführen möchten, die mit dem Desktop interagieren, müssen Sie den Agent für die Ausführung als Prozess statt als Dienst konfigurieren. Wenn Sie z. B. einen Test der codierten UI mithilfe eines Testcontrollers und eines Test-Agents remote ausführen möchten oder einen Test ausführen und während der Ausführung eine Videoaufzeichnung erfassen möchten, müssen Sie den Agent für die Ausführung als Prozess einrichten. Wenn Sie mit Microsoft Test Manager in den Testeinstellungen oder mit Visual Studio in der Umgebung Rollen Agents zuweisen, müssen Sie das Setup für alle Agents ändern, die Rollen zugewiesen sind, die mit dem Desktop interagieren.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -27,12 +25,12 @@ Wenn Sie automatisierte Tests ausführen möchten, die mit dem Desktop interagie
 > Wenn Sie Microsoft Test Manager zum Einrichten einer Laborumgebung verwenden, wird der Test-Agent installiert. Sie können im **Assistenten für die Umgebungserstellung** angeben, dass Sie eine der Rollen zur Ausführung von Tests der programmierten UI konfigurieren möchten.
 
 > [!IMPORTANT]
-> Der Computer mit dem Agent, auf dem Sie Tests der programmierten UI ausführen möchten, darf nicht gesperrt sein und über keinen aktiven Bildschirmschoner verfügen.
+> Der Computer mit dem Agent, auf dem Sie Tests der codierten UI ausführen möchten, darf nicht gesperrt sein und über keinen aktiven Bildschirmschoner verfügen.
 
-Wenn Sie Tests der codierten UI ausführen, die einen Browser starten, wird zum Starten des Browsers das Dienstkonto für den Test-Agent verwendet. Dieses Dienstkonto muss mit dem Benutzerkonto des aktiven Benutzers auf diesem Computer identisch sein. Wenn es sich nicht um das gleiche Benutzerkonto handelt, wird der Browser nicht gestartet.
+Wenn Sie Tests der programmierten UI ausführen, die einen Browser starten, wird zum Starten des Browsers das Dienstkonto für den Test-Agent verwendet. Dieses Dienstkonto muss mit dem Benutzerkonto des aktiven Benutzers auf diesem Computer identisch sein. Wenn es sich nicht um das gleiche Benutzerkonto handelt, wird der Browser nicht gestartet.
 
 > [!IMPORTANT]
-> Wenn Sie einen Test der codierten UI ausführen, der einen Browser als Teil einer Builddefnition startet, wird zum Starten dieses Browsers das Dienstkonto für den Builddienst verwendet. Dieses Dienstkonto muss mit dem Benutzerkonto des aktiven Benutzers auf diesem Computer identisch sein. Wenn es sich nicht um das gleiche Benutzerkonto handelt, wird der Browser nicht gestartet.
+> Wenn Sie einen Test der programmierten UI ausführen, der einen Browser als Teil einer Builddefnition startet, wird zum Starten dieses Browsers das Dienstkonto für den Builddienst verwendet. Dieses Dienstkonto muss mit dem Benutzerkonto des aktiven Benutzers auf diesem Computer identisch sein. Wenn es sich nicht um das gleiche Benutzerkonto handelt, wird der Browser nicht gestartet.
 
 Gehen Sie wie folgt vor, um Agents einzurichten, die einer Rolle zugewiesen sind, die eine Interaktion mit dem Desktop erfordernde Aufgabe ausführt.
 

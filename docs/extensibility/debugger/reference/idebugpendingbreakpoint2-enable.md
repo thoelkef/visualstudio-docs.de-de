@@ -1,31 +1,33 @@
 ---
 title: IDebugPendingBreakpoint2::Enable | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugPendingBreakpoint2::Enable
 helpviewer_keywords:
 - IDebugPendingBreakpoint2::Enable method
 - Enable method
 ms.assetid: 09e32d05-464b-40a6-a41d-76f2759cf2cd
-author: gregvanl
+caps.latest.revision: 11
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 4af0e610aafa94f9fa0427db4dde7bff55953cd4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3d6498ffbad5fef4d387139b41cefc3d54468245
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889807"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62872194"
 ---
 # <a name="idebugpendingbreakpoint2enable"></a>IDebugPendingBreakpoint2::Enable
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Schaltet den aktivierten Zustand des ausstehenden Haltepunkts.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT Enable(   
    BOOL fEnable  
 );  
@@ -52,7 +54,7 @@ int Enable( 
 ## <a name="example"></a>Beispiel  
  Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine einfache `CPendingBreakpoint` -Objekt, das macht die [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) Schnittstelle.  
   
-```cpp  
+```cpp#  
 HRESULT CPendingBreakpoint::Enable(BOOL fEnable)    
 {    
    HRESULT hr;    

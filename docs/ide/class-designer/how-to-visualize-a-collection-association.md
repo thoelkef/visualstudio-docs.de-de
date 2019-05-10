@@ -1,7 +1,6 @@
 ---
 title: 'Vorgehensweise: Visualisieren einer Collectionzuordnung (Klassen-Designer)'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.collectionassociationline
@@ -13,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 54e39838-2fc9-4dc2-85b6-7e88a743108e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: acf1fd75770888f492833235f09a381d0836be34
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 09c23b59711a95f0729555acfd0203160bd9995d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925393"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975072"
 ---
 # <a name="how-to-visualize-a-collection-association-in-class-designer"></a>Vorgehensweise: Visualisieren einer Collectionzuordnung im Klassen-Designer
 
@@ -29,11 +28,11 @@ Eigenschaften und Felder, die Auflistungen eines anderen Typs darstellen, könne
 
 ## <a name="to-create-a-collection-association"></a>So erstellen Sie eine Auflistungszuordnung
 
-1.  Erstellen Sie verschlüsselt eine Eigenschaft oder ein Feld, deren bzw. dessen Typ selbst eine stark typisierte Auflistung ist.
+1. Erstellen Sie verschlüsselt eine Eigenschaft oder ein Feld, deren bzw. dessen Typ selbst eine stark typisierte Auflistung ist.
 
-2.  Erweitern Sie im Klassendiagramm die Klasse so, dass Felder und Eigenschaften angezeigt werden.
+2. Erweitern Sie im Klassendiagramm die Klasse so, dass Felder und Eigenschaften angezeigt werden.
 
-3.  Klicken Sie in der Klasse mit der rechten Maustaste auf das Feld oder die Eigenschaft, und wählen Sie **Als Auflistungszuordnung anzeigen** aus.
+3. Klicken Sie in der Klasse mit der rechten Maustaste auf das Feld oder die Eigenschaft, und wählen Sie **Als Auflistungszuordnung anzeigen** aus.
 
 Die Eigenschaft oder das Feld wird als Zuordnungslinie dargestellt, die mit dem gesammelten Typ verknüpft ist.
 

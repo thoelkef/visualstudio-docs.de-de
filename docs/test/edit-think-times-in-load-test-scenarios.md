@@ -9,14 +9,13 @@ helpviewer_keywords:
 ms.assetid: 8e03bee5-ab7b-4b40-9497-9dbe91ccb90e
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 0e1ef7811e96372952bf9b5c845b8fe5c2deb27a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: e19e1cb4f9b49c40923d96b177ceb4d6c31b746f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927034"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783323"
 ---
 # <a name="edit-think-times-to-simulate-website-human-interaction-delays-in-load-tests-scenarios"></a>Bearbeiten der Reaktionszeit zum Simulieren menschlicher Interaktionsverzögerungen in Auslastungstestszenarios für Websites
 
@@ -49,13 +48,13 @@ Reaktionszeiten werden verwendet, variieren jedoch im Rahmen einer Normalverteil
 
 ### <a name="to-change-a-think-profile-in-a-load-test-scenario"></a>So ändern Sie ein Reaktionsprofil in einem Auslastungstestszenario
 
-1.  Öffnen Sie im Webleistungs- und Auslastungstestprojekt einen Auslastungstest.
+1. Öffnen Sie im Webleistungs- und Auslastungstestprojekt einen Auslastungstest.
 
-2.  Klicken Sie im **Auslastungstest-Editor** auf den Szenarioknoten, für den Sie das **Reaktionsprofil** ändern möchten. Das **Reaktionsprofil** wird im Fenster **Eigenschaften** angezeigt. Drücken Sie **F4**, um das Fenster **Eigenschaften** anzuzeigen.
+2. Klicken Sie im **Auslastungstest-Editor** auf den Szenarioknoten, für den Sie das **Reaktionsprofil** ändern möchten. Das **Reaktionsprofil** wird im Fenster **Eigenschaften** angezeigt. Drücken Sie **F4**, um das Fenster **Eigenschaften** anzuzeigen.
 
-3.  Ändern Sie die Eigenschaft **Reaktionsprofil** im Fenster **Eigenschaften**.
+3. Ändern Sie die Eigenschaft **Reaktionsprofil** im Fenster **Eigenschaften**.
 
-4.  Nachdem die Änderungen der Eigenschaften abgeschlossen sind, klicken Sie im Menü **Datei** auf **Speichern**. Anschließend können Sie den Auslastungstest mit dem neuen Reaktionsprofil ausführen.
+4. Nachdem die Änderungen der Eigenschaften abgeschlossen sind, klicken Sie im Menü **Datei** auf **Speichern**. Anschließend können Sie den Auslastungstest mit dem neuen Reaktionsprofil ausführen.
 
 ## <a name="see-also"></a>Siehe auch
 

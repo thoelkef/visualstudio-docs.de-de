@@ -1,27 +1,22 @@
 ---
 title: Arbeiten mit 3D-Objekten für Spiele und Apps | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics
 ms.assetid: 910d673b-c884-4eeb-9928-0e89f3d38cb6
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bdf19958ec7b3cfe72ee00ea84e0e23724a51458
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 020c934d3427dda77c41fb410143972d6f48656b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265231"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438102"
 ---
 # <a name="working-with-3-d-assets-for-games-and-apps"></a>Arbeiten mit 3D-Objekten für Spiele und Apps
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ In diesem Dokument werden die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Tools
  Sie können den [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Shader-Designer verwenden, ein diagrammbasiertes Shader-Design-Tool, um benutzerdefinierte visuelle Effekte zu erstellen, ohne die HLSL-Programmierung zu kennen.  
   
 > [!NOTE]
->  Weitere Informationen über die ersten Schritte mit der DirectX-Programmierung finden Sie unter [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Weitere Informationen zum Debuggen einer auf DirectX basierenden Anwendung finden Sie unter [Grafikdiagnose (Debuggen von DirectX-Grafiken)](../debugger/visual-studio-graphics-diagnostics.md).  
+> Weitere Informationen über die ersten Schritte mit der DirectX-Programmierung finden Sie unter [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Weitere Informationen zum Debuggen einer auf DirectX basierenden Anwendung finden Sie unter [Grafikdiagnose (Debuggen von DirectX-Grafiken)](../debugger/visual-studio-graphics-diagnostics.md).  
   
 ## <a name="directx-version-compatibility"></a>DirectX-Versionskompatibilität  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] verwendet DirectX, um 2D- und 3D-Objekte zu rendern. Sie können entweder den DirectX 11-Renderer oder den Windows Advanced Rasterization Platform (WARP)-Softwarerenderer auswählen. Der DirectX 11-Renderer stellt leistungsfähiges, hardwarebeschleunigtes Rendering für DirectX 11- und DirectX 10-GPUs bereit. Mit dem WARP-Renderer wird sichergestellt, dass die Objekte von einer großen Bandbreite an Computern unterstützt werden; dies umfasst auch Computer, die keine moderne Grafikhardware aufweisen, und Computer mit integrierter Grafikhardware. Weitere Informationen zu WARP finden Sie unter [Windows Advanced Rasterization Platform (WARP) Guide (Windows Advanced Rasterization Platform-Handbuch)](http://go.microsoft.com/fwlink/p/?LinkId=224634).  
@@ -62,6 +57,3 @@ In diesem Dokument werden die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Tools
 |[Arbeiten mit 3D-Modellen](../designers/working-with-3-d-models.md)|Beschreibt, wie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] verwendet wird, um mit 3D-Modellen zu arbeiten.|  
 |[Arbeiten mit Shaders](../designers/working-with-shaders.md)|Beschreibt, wie der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Shader-Designer verwendet wird, um benutzerdefinierte Shadereffekte zu erstellen und zu ändern.|  
 |[Verwenden von 3D-Objekten in Spielen oder Apps](../designers/using-3-d-assets-in-your-game-or-app.md)|Beschreibt, wie Objekte verwendet werden, die Sie mit dem Bild-Editor, Modell-Editor oder Shader-Designer in Ihrem Spiel oder Ihrer App erstellt haben.|
-
-
-

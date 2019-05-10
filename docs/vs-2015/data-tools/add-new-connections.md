@@ -1,27 +1,24 @@
 ---
 title: Neue Verbindung hinzufügen | Microsoft-Dokumentation
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 8a93c287-2834-4a83-a590-bdc3fe8d293f
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 03407962b4ea8160d492971367f121835fa39aae
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ff1ec43d6faec329db6138598d84e47db009113e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218504"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665323"
 ---
-# <a name="add-new-connections"></a>Neue Verbindung hinzufügen
+# <a name="add-new-connections"></a>Neue Verbindungen hinzufügen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Sie können die Verbindung mit einer Datenbank oder einem Dienst zu testen und Durchsuchen von Inhalt von Datenbanken und Schemas, mithilfe von **Server-Explorer**, **Cloud-Explorer**, oder **SQL Server-Objekt-Explorer**. Die Funktionalität dieser Windows überschneidet sich zu einem gewissen Grad. Die grundlegenden Unterschiede sind:  
   
  Server-Explorer  
@@ -47,7 +44,7 @@ Sie können die Verbindung mit einer Datenbank oder einem Dienst zu testen und D
   
  ![Datenanbieter AD0.NET ändern](../data-tools/media/raddata-change-ad0-net-data-provider.png "Raddata Änderung AD0.NET-Datenanbieter")  
   
-## <a name="test-the-connection"></a>Testen Sie die Verbindung  
+## <a name="test-the-connection"></a>Verbindung testen  
  Nachdem Sie die Datenquelle ausgewählt haben, klicken Sie auf **Testverbindung**. Wenn sie nicht erfolgreich ist, müssen Sie zur Problembehandlung basierend auf der Dokumentation des Herstellers.  
   
  ![Die Testverbindung](../data-tools/media/raddata-test-connection.png "Raddata Verbindung testen")  
@@ -56,4 +53,3 @@ Sie können die Verbindung mit einer Datenbank oder einem Dienst zu testen und D
   
 ## <a name="see-also"></a>Siehe auch  
  [Visual Studio-Datentools für .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
-

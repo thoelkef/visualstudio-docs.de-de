@@ -1,27 +1,22 @@
 ---
 title: Visual Studio SDK-Referenz | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - Visual Studio SDK, reference
 - reference, Visual Studio SDK
 ms.assetid: a6930db5-a112-4651-8de3-e520df851f82
 caps.latest.revision: 32
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e4d5774c65be586a8183fe4a511a3ed21e79c38a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a0f3380622f20e8518eed8ea2a8071518fe4a099
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727143"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537432"
 ---
 # <a name="visual-studio-sdk-reference"></a>Visual Studio SDK-Referenz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,10 +25,10 @@ Dieser Abschnitt enthält Informationen zu Visual Studio-Namespaces, zugehörige
   
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
- [Setup-Konfiguration](http://msdn.microsoft.com/en-us/faa4ed55-66ce-4792-939f-a5b093f13a2e)  
+ [Setup-Konfiguration](http://msdn.microsoft.com/library/faa4ed55-66ce-4792-939f-a5b093f13a2e)  
  Setup-Konfigurations-API für die Ermittlung von Instanzen von Visual Studio 2017.
 
- ["Ordner öffnen"-Erweiterbarkeit](http://msdn.microsoft.com/en-us/0897ae3d-6a09-4d26-90c9-7f3d0b8e5c5d)  
+ ["Ordner öffnen"-Erweiterbarkeit](http://msdn.microsoft.com/library/0897ae3d-6a09-4d26-90c9-7f3d0b8e5c5d)  
  Arbeitsbereich-API-Ordner in Visual Studio 2017 öffnen.
  
  <xref:Microsoft.VisualStudio.TextManager.Interop>  
@@ -314,4 +309,3 @@ Dieser Abschnitt enthält Informationen zu Visual Studio-Namespaces, zugehörige
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Visual Studio SDK](../extensibility/visual-studio-sdk.md)  
  Enthält Dokumentation, Beispiele und Code können Sie die Produkte zu entwickeln, die in Visual Studio integriert.
-

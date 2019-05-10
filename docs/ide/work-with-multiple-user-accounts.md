@@ -1,19 +1,18 @@
 ---
 title: Arbeiten mit mehreren Benutzerkonten
 ms.date: 12/10/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d74351e891b3bac4fe96e7e5b2ca9e46c412ca72
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 371cdc85648b8b058267540b305162adf371c4f6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920523"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62581908"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Arbeiten mit mehreren Benutzerkonten
 
@@ -56,7 +55,7 @@ Wenn Sie den **Server-Explorer** dann das nächste Mal öffnen, werden die Resso
 
 Azure Active Directory (Azure AD) unterstützt das einmalige Anmelden für Endbenutzer in MVC-Webanwendungen in ASP.NET oder die AD-Authentifizierung in Web-API-Diensten. Die Domänenauthentifizierung unterscheidet sich von der Authentifizierung einzelner Benutzerkonten. Benutzer, die Zugriff auf Ihre Azure AD-Domäne haben, können ihre bereits vorhandenen Azure AD-Konten verwenden, um eine Verbindung mit Ihren Webanwendung herzustellen. Auch Office 365-Anwendungen können die Domänenauthentifizierung verwenden.
 
-Um diesen Vorgang zu sehen, erstellen Sie eine Webanwendung (**Datei** > **Neues Projekt** > **C#** > **Cloud** > **ASP.NET-Webanwendung**). Wählen Sie im Dialogfeld **Neues ASP.NET-Projekt** die Option **Authentifizierung ändern** aus. Der Authentifizierungsassistent wird angezeigt und ermöglicht es Ihnen, die Art der Authentifizierung in Ihrer Anwendung auszuwählen.
+Um dies in Aktion zu sehen, erstellen Sie ein neues Projekt **ASP.NET-Webanwendung**. Wählen Sie im Dialogfeld **Neues ASP.NET-Projekt** die Option **Authentifizierung ändern** aus. Der Authentifizierungsassistent wird angezeigt und ermöglicht es Ihnen, die Art der Authentifizierung in Ihrer Anwendung auszuwählen.
 
 ![Dialogfeld "Authentifizierung ändern" für ASP.NET](../ide/media/vs2015_change_authentication.png)
 

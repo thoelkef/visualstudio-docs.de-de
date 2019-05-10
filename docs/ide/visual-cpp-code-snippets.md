@@ -1,22 +1,20 @@
 ---
 title: Visual C#-Codeausschnitte
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f119f3b2bc438eacfaaa722bd57fb440aa303052
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: de27b201dadb23bb8209ebee24b34386f8fa5127
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62581759"
 ---
 # <a name="visual-c-code-snippets"></a>Visual C#-Codeausschnitte
 
@@ -32,7 +30,7 @@ Sie können einen Codeausschnitt an einer bestimmten Stelle im Code hinzufügen 
 
 - Wählen Sie im Menü **Bearbeiten/IntelliSense** die Option **Ausschnitt einfügen** aus.
 
-- Verwenden Sie folgenden Tastaturbefehl: **STRG**+**K**+**X**.
+- Verwenden Sie folgenden Tastaturbefehl: **STRG**+**K**+**X**
 
 Es sollte eine Liste mit Auswahlmöglichkeiten beginnend mit **#if** angezeigt werden. Bei der Auswahl von **#if** sollte der folgende Code in die Datei eingefügt werden:
 
@@ -52,7 +50,7 @@ Um einen Codeausschnitt zum Umschließen des ausgewählten Codes zu verwenden, w
 
 - Wählen Sie im Menü **Bearbeiten** > **IntelliSense** die Option **Umschließen mit** aus.
 
-- Drücken Sie auf der Tastatur die Tasten**STRG**+**K**+**S**.
+- Drücken Sie auf der Tastatur die Tasten: **STRG**+**K**+**S**
 
 Wählen Sie **#if** aus. Folgendes sollte angezeigt werden:
 

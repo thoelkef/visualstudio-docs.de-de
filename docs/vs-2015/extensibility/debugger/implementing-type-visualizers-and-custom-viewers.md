@@ -1,33 +1,28 @@
 ---
 title: Implementieren von Typschnellansichten und benutzerdefinierten Viewern | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], custom viewer
 - debugging [Debugging SDK], type visualizer
 ms.assetid: abef18c0-8272-4451-b82a-b4624edaba7d
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 11d047904e932646eedc974a50590dbe0a9ea99e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b780f2115400fd43e8915a5109c960cab99bf131
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791279"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430219"
 ---
 # <a name="implementing-type-visualizers-and-custom-viewers"></a>Implementieren von Typschnellansichten und benutzerdefinierten Viewern
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zu CLR-ausdrucksauswertungen implementieren, finden Sie unter [CLR Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zu CLR-ausdrucksauswertungen implementieren, finden Sie unter [CLR Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Typschnellansichten und benutzerdefinierten Viewer können den Benutzer Daten eines bestimmten Typs in einer Weise anzeigen, die aussagekräftiger sind als ein Speicherabbild der einfachen hexadezimale Zahlen ist. Eine ausdrucksauswertung (EE) kann benutzerdefinierten Viewer bestimmte Typen von Daten oder Variablen zuordnen. Diese benutzerdefinierte Viewer werden durch die EE implementiert. Die EE kann auch externen Typ-Schnellansichten unterstützen, die von einem anderen Drittanbieter oder sogar der Endbenutzer stammen können.  
   
@@ -66,4 +61,3 @@ ms.locfileid: "51791279"
  [Schreiben Sie eine CLR-Ausdrucksauswertung](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
  [Visualisieren und Anzeigen von Daten](../../extensibility/debugger/visualizing-and-viewing-data.md)   
  [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md)
-

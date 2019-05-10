@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Erstellen eines Arbeitselements für einen Fehler in verwaltetem Code | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - managed code, creating work items for code defects
 - code analysis, creating work items
@@ -17,33 +12,30 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d0ed4ad9693ffbca44154f328a74b45810705457
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: HT
+ms.openlocfilehash: ab8744e84e035501ba9bb8d531d982f4c17e206e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235084"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103235"
 ---
-# <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>Gewusst wie: Erstellen eines Arbeitselements für einen Fehler in verwaltetem Code
+# <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>Vorgehensweise: Erstellen eines Arbeitselements für einen Fehler in verwaltetem Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Können Sie das Arbeitselement, die nachverfolgung von Abfrageausführungsinformationen Log Arbeitselement aus [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. Um dieses Feature verwenden zu können, muss Ihr Projekt Teil eines Teamprojekts in [!INCLUDE[esprfound](../includes/esprfound-md.md)].  
   
 ### <a name="to-create-a-work-item-for-managed-code-defect"></a>Um ein Arbeitselement für Fehler in verwaltetem Code zu erstellen.  
   
-1.  In der **Codeanalyse** Fenster, wählen Sie die Warnung.  
+1. In der **Codeanalyse** Fenster, wählen Sie die Warnung.  
   
-2.  Wählen Sie **Aktionen**, wählen Sie dann **Arbeitsaufgabe erstellen** , und wählen Sie den Typ des zu erstellenden Arbeitselements.  
+2. Wählen Sie **Aktionen**, wählen Sie dann **Arbeitsaufgabe erstellen** , und wählen Sie den Typ des zu erstellenden Arbeitselements.  
   
      Ein neues Arbeitselement erstellt für Sie um die Fehler anzugeben.  
   
 ### <a name="to-create-a-work-item-for-multiple-managed-code-defects"></a>Um ein Arbeitselement für mehrere Fehlern in verwaltetem Code zu erstellen.  
   
-1.  In der **Fehlerliste**, mehrere Warnungen auswählen und dann auf die Warnungen.  
+1. In der **Fehlerliste**, mehrere Warnungen auswählen und dann auf die Warnungen.  
   
-2.  Zeigen Sie auf **Arbeitsaufgabe erstellen** , und klicken Sie auf den Typ des zu erstellenden Arbeitselements.  
+2. Zeigen Sie auf **Arbeitsaufgabe erstellen** , und klicken Sie auf den Typ des zu erstellenden Arbeitselements.  
   
      Ein einzelnes Arbeitselement wird für die ausgewählten Warnungen für die Sie angeben, die Fehlerinformationen erstellt.
-
-
-

@@ -1,0 +1,38 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: Cognitive Services in Visual Studio
+metadata:
+  title: Cognitive Services | Microsoft-Dokumentation
+  meta.description: Tutorials and conceptual articles about connecting apps and services to cognitive services in Azure.
+  ms.custom: seohack18
+  author: ghogen
+  manager: jillfra
+  ms.prod: visual-studio-windows
+  ms.technology: vs-azure
+  ms.topic: landing-page
+  ms.date: 10/09/2018
+  ms.author: ghogen
+sections:
+  - title: Verbinden Ihrer Apps mit Cognitive Services mit verbundenen Diensten in Visual Studio
+    items:
+      - type: paragraph
+        text: 'Visual Studio stellt eine praktische Möglichkeit zum Herstellen einer Verbindung zwischen Ihrer App oder Ihrem Dienstprojekt und einer Vielzahl von Azure-Diensten bereit. Zu diesen Diensten gehört auch Cognitive Services, womit leistungsstarke Funktionalität für die künstliche Intelligenz bereitgestellt wird. Verbundene Dienste in Visual Studio vereinfachen den Entwicklungsprozess, da jegliche Konfigurationen automatisch für Sie vorgenommen werden. Klicken Sie auf einen der folgenden Dienste, um zu einem Tutorial zum Hinzufügen der Unterstützung des jeweiligen Diensts in Ihr Projekt zu gelangen:'
+      - type: list
+        style: icon48
+        items:
+          - image:
+              src: 'https://docs.microsoft.com/azure/media/index/i_azure-cognitive-services-color.svg'
+            text: Textanalyse
+            href: /azure/cognitive-services/text-analytics/vs-text-connected-service
+          - image:
+              src: 'https://docs.microsoft.com/azure/media/index/i_azure-cognitive-services-color.svg'
+            text: Bing News-Suche
+            href: /azure/cognitive-services/bing-news-search/vs-bing-news-search-connected-service
+          - image:
+              src: 'https://docs.microsoft.com/azure/media/index/i_azure-cognitive-services-color.svg'
+            text: Gesichtserkennungs-API
+            href: /azure/cognitive-services/face/vs-face-connected-service
+          - image:
+              src: 'https://docs.microsoft.com/azure/media/index/i_azure-cognitive-services-color.svg'
+            text: Maschinelles Sehen
+            href: /azure/cognitive-services/computer-vision/vs-computer-vision-connected-service

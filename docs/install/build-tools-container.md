@@ -4,20 +4,21 @@ titleSuffix: ''
 description: Erfahren Sie, wie Sie Visual Studio Build Tools in einem Windows-Container installieren können, um CI/CD-Workflows (Continuous Integration und Continuous Delivery) zu unterstützen.
 ms.date: 04/18/2018
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: d5c038e2-e70d-411e-950c-8a54917b578a
 author: heaths
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e98ff7f21ab7620092f2b535f17c55ab4d584b7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: cd2294d3018aba3d2e7ff8a0c0737b32a05214c0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946632"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974253"
 ---
 # <a name="install-build-tools-into-a-container"></a>Installieren von Build Tools in einem Container
 
@@ -29,7 +30,7 @@ Wenn Sie Ihren Quellcode mithilfe von Visual Studio Build Tools nicht erstellen 
 
 ## <a name="overview"></a>Übersicht
 
-Mithilfe von [Docker](https://www.docker.com/what-docker) erstellen Sie ein Image, auf Basis dessen Sie Container erstellen können, die Ihren Quellcode erstellen. Mithilfe der Dockerfile-Beispieldatei werden die neueste Version von Visual Studio Build Tools 2017 und einige andere nützliche Programme installiert, die häufig zum Erstellen von Quellcode verwendet werden. Sie können Ihre eigene Dockerfile-Datei dahingehend verändern, dass sie unter anderem andere Tools und Skripts zum Ausführen von Tests und zum Veröffentlichen von Buildausgaben einbezieht.
+Mithilfe von [Docker](https://www.docker.com/what-docker) erstellen Sie ein Image, auf Basis dessen Sie Container erstellen können, die Ihren Quellcode erstellen. Mithilfe der Dockerfile-Beispieldatei werden die neueste Version von Visual Studio Build Tools und einige andere nützliche Programme installiert, die häufig zum Erstellen von Quellcode verwendet werden. Sie können Ihre eigene Dockerfile-Datei dahingehend verändern, dass sie unter anderem andere Tools und Skripts zum Ausführen von Tests und zum Veröffentlichen von Buildausgaben einbezieht.
 
 Wenn Sie Docker für Windows bereits installiert haben, können Sie direkt mit Schritt 3 weitermachen.
 
@@ -49,7 +50,7 @@ Wenn Sie Windows 10 verwenden, können Sie die [Docker Community Edition](https:
 
 ## <a name="step-3-switch-to-windows-containers"></a>Schritt 3 Wechseln zu Windows-Containern
 
-Da Sie Build Tools 2017 nur unter Windows installieren können, müssen Sie [auf Windows-Container umsteigen](https://docs.docker.com/docker-for-windows/#getting-started-with-windows-containers). Unter Windows 10 unterstützen Windows-Container nur [Hyper-V-Isolation](https://docs.microsoft.com/virtualization/windowscontainers/manage-containers/hyperv-container), unter Windows Server 2016 dagegen sowohl Hyper-V-, als auch Prozessisolation.
+Da Sie Build Tools nur unter Windows installieren können, müssen Sie [auf Windows-Container umsteigen](https://docs.docker.com/docker-for-windows/#getting-started-with-windows-containers). Unter Windows 10 unterstützen Windows-Container nur [Hyper-V-Isolation](https://docs.microsoft.com/virtualization/windowscontainers/manage-containers/hyperv-container), unter Windows Server 2016 dagegen sowohl Hyper-V-, als auch Prozessisolation.
 
 ## <a name="step-4-expand-maximum-container-disk-size"></a>Schritt 4. Erweitern der maximalen Datenträgergröße des Containers
 
@@ -58,9 +59,12 @@ Visual Studio Build Tools – und in größerem Umfang auch Visual Studio – er
 **So gehen Sie unter Windows 10 vor**:
 
 1. [Klicken Sie in der Taskleiste mit der rechten Maustaste auf das Symbol „Docker für Windows“](https://docs.docker.com/docker-for-windows/#docker-settings) und anschließend auf **Einstellungen**.
-2. [Klicken Sie auf den Daemon](https://docs.docker.com/docker-for-windows/#docker-daemon)-Abschnitt.
-3. [Schalten Sie die Schaltfläche **Basic**](https://docs.docker.com/docker-for-windows/#edit-the-daemon-configuration-file) auf **Erweitert** um.
-4. Fügen Sie die folgende JSON-Array-Eigenschaft hinzu, um den Speicherplatz auf 120 GB zu erhöhen. Dann steht Build Tools auch bei erhöhtem Speicherplatzbedarf genug Speicherplatz zur Verfügung.
+
+1. [Klicken Sie auf den Daemon](https://docs.docker.com/docker-for-windows/#docker-daemon)-Abschnitt.
+
+1. [Schalten Sie die Schaltfläche **Basic**](https://docs.docker.com/docker-for-windows/#edit-the-daemon-configuration-file) auf **Erweitert** um.
+
+1. Fügen Sie die folgende JSON-Array-Eigenschaft hinzu, um den Speicherplatz auf 120 GB zu erhöhen. Dann steht Build Tools auch bei erhöhtem Speicherplatzbedarf genug Speicherplatz zur Verfügung.
 
    ```json
    {
@@ -84,7 +88,7 @@ Visual Studio Build Tools – und in größerem Umfang auch Visual Studio – er
    }
    ```
 
-5. Klicken Sie auf **Übernehmen**.
+1. Klicken Sie auf **Übernehmen**.
 
 **So gehen Sie unter Windows Server 2016 vor**:
 
@@ -94,8 +98,9 @@ Visual Studio Build Tools – und in größerem Umfang auch Visual Studio – er
    sc.exe stop docker
    ```
 
-2. Bearbeiten Sie mithilfe einer Eingabeaufforderung mit erhöhten Rechten „%ProgramData%\Docker\config\daemon.json“ bzw. was Sie in der Datei `dockerd --config-file` festgelegt haben.
-3. Fügen Sie die folgende JSON-Array-Eigenschaft hinzu, um den Speicherplatz auf 120 GB zu erhöhen. Dann steht Build Tools auch bei erhöhtem Speicherplatzbedarf genug Speicherplatz zur Verfügung.
+1. Bearbeiten Sie mithilfe einer Eingabeaufforderung mit erhöhten Rechten „%ProgramData%\Docker\config\daemon.json“ bzw. was Sie in der Datei `dockerd --config-file` festgelegt haben.
+
+1. Fügen Sie die folgende JSON-Array-Eigenschaft hinzu, um den Speicherplatz auf 120 GB zu erhöhen. Dann steht Build Tools auch bei erhöhtem Speicherplatzbedarf genug Speicherplatz zur Verfügung.
 
    ```json
    {
@@ -106,8 +111,10 @@ Visual Studio Build Tools – und in größerem Umfang auch Visual Studio – er
    ```
 
    Diese Eigenschaft wird zu allen bereits vorhandenen Standardkonfigurationsdateien hinzugefügt.
-4. Speichern und schließen Sie die Datei.
-5. Starten Sie den Docker-Dienst:
+ 
+1. Speichern und schließen Sie die Datei.
+
+1. Starten Sie den Docker-Dienst:
 
    ```shell
    sc.exe start docker
@@ -121,19 +128,22 @@ Speichern Sie die folgende Dockerfile-Beispieldatei in einer neuen Datei auf Ihr
 > Diese Dockerfile-Beispieldatei kann lediglich bei älteren Windows SDKs nicht verwendet werden, die nicht in Containern installiert werden können. Bei älteren Releases schlägt der Buildbefehl fehl.
 
 1. Öffnen Sie eine Eingabeaufforderung.
-2. Erstellen Sie ein neues Verzeichnis (empfohlen):
+
+1. Erstellen Sie ein neues Verzeichnis (empfohlen):
 
    ```shell
    mkdir C:\BuildTools
    ```
 
-3. Ändern Sie die Verzeichnisse auf dieses neue Verzeichnis:
+1. Ändern Sie die Verzeichnisse auf dieses neue Verzeichnis:
 
    ```shell
    cd C:\BuildTools
    ```
 
-3. Speichern Sie den folgenden Inhalt unter C:\BuildTools\Dockerfile.
+1. Speichern Sie den folgenden Inhalt unter C:\BuildTools\Dockerfile.
+ 
+   ::: moniker range="vs-2017"
 
    ```dockerfile
    # escape=`
@@ -141,7 +151,7 @@ Speichern Sie die folgende Dockerfile-Beispieldatei in einer neuen Datei auf Ihr
    # Use the latest Windows Server Core image with .NET Framework 4.7.1.
    FROM microsoft/dotnet-framework:4.7.1
 
-   # Restore the default Windows shell for correct batch processing below.
+   # Restore the default Windows shell for correct batch processing.
    SHELL ["cmd", "/S", "/C"]
 
    # Download the Build Tools bootstrapper.
@@ -167,11 +177,53 @@ Speichern Sie die folgende Dockerfile-Beispieldatei in einer neuen Datei auf Ihr
    > [!WARNING]
    > Wenn Sie Ihr Image direkt auf der Grundlage von microsoft/windowsservercore erstellen, wird .NET Framework möglicherweise nicht ordnungsgemäß installiert, ohne dass ein Installationsfehler ausgegeben wird. Es kann sein, dass verwalteter Code nach Abschluss der Installation nicht ausgeführt wird. Erstellen Sie Ihr Image stattdessen auf der Grundlage von [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) oder höher. Beachten Sie außerdem, dass Images der Version 4.7.1 oder höher ggf. PowerShell als Standard-`SHELL` verwenden, wodurch die Anweisungen `RUN` und `ENTRYPOINT` fehlschlagen.
    >
-   > Visual Studio 2017 Version 15.8 und früher (alle Produkte) werden unter mcr<span></span>.microsoft\.com\/windows\/servercore:1809 oder höher nicht ordnungsgemäß installiert. Es wird keine Fehlermeldung angezeigt.
+   > Visual Studio 2017 Version 15.8 und früher (alle Produkte) werden unter mcr\.microsoft\.com\/windows\/servercore:1809 oder höher nicht ordnungsgemäß installiert. Es wird keine Fehlermeldung angezeigt.
    >
    > Weitere Informationen finden Sie unten unter [Bekannte Probleme bei Containern](build-tools-container-issues.md).
 
-4. Führen Sie den folgenden Befehl innerhalb jenes Verzeichnisses aus.
+   ::: moniker-end
+
+   ::: moniker range="vs-2019"
+
+   ```dockerfile
+   # escape=`
+
+   # Use the latest Windows Server Core image with .NET Framework 4.7.1.
+   FROM microsoft/dotnet-framework:4.7.1
+
+   # Restore the default Windows shell for correct batch processing.
+   SHELL ["cmd", "/S", "/C"]
+
+   # Download the Build Tools bootstrapper.
+   ADD https://aka.ms/vs/16/release/vs_buildtools.exe C:\TEMP\vs_buildtools.exe
+
+   # Install Build Tools excluding workloads and components with known issues.
+   RUN C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache `
+       --installPath C:\BuildTools `
+       --all `
+       --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
+       --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
+       --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
+       --remove Microsoft.VisualStudio.Component.Windows81SDK `
+    || IF "%ERRORLEVEL%"=="3010" EXIT 0
+
+   # Start developer command prompt with any other commands specified.
+   ENTRYPOINT C:\BuildTools\Common7\Tools\VsDevCmd.bat &&
+
+   # Default to PowerShell if no other command specified.
+   CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
+   ```
+
+   > [!WARNING]
+   > Wenn Sie Ihr Image direkt auf der Grundlage von microsoft/windowsservercore erstellen, wird .NET Framework möglicherweise nicht ordnungsgemäß installiert, ohne dass ein Installationsfehler ausgegeben wird. Es kann sein, dass verwalteter Code nach Abschluss der Installation nicht ausgeführt wird. Erstellen Sie Ihr Image stattdessen auf der Grundlage von [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) oder höher. Beachten Sie außerdem, dass Images der Version 4.7.1 oder höher ggf. PowerShell als Standard-`SHELL` verwenden, wodurch die Anweisungen `RUN` und `ENTRYPOINT` fehlschlagen.
+   >
+   > Weitere Informationen finden Sie unten unter [Bekannte Probleme bei Containern](build-tools-container-issues.md).
+
+   ::: moniker-end
+
+1. Führen Sie den folgenden Befehl innerhalb jenes Verzeichnisses aus.
+
+   ::: moniker range="vs-2017"
 
    ```shell
    docker build -t buildtools2017:latest -m 2GB .
@@ -181,16 +233,43 @@ Speichern Sie die folgende Dockerfile-Beispieldatei in einer neuen Datei auf Ihr
 
    Das endgültige Image trägt die Markierung „buildtools2017:latest“, sodass Sie es problemlos als „buildtools2017“ in einem Container ausführen können, da das Tag „latest“ standardmäßig verwendet wird, wenn kein Tag angegeben wurde. Wenn Sie eine bestimmte Version von Visual Studio Build Tools 2017 in einem [komplexeren Szenario](advanced-build-tools-container.md) verwenden möchten, können Sie den Container stattdessen mit einer bestimmten Visual Studio-Buildnummer sowie dem Tag „latest“ markieren, damit die Container eine bestimmte Version konsistent verwenden.
 
+   ::: moniker-end
+
+   ::: moniker range="vs-2019"
+
+   ```shell
+   docker build -t buildtools2019:latest -m 2GB .
+   ```
+
+   Dieser Befehl erstellt die Dockerfile-Datei im aktuellen Verzeichnis. Dies erfordert 2 GB an Arbeitsspeicher. Standardmäßig steht dafür 1 GB zur Verfügung. Dies ist jedoch zum Installieren einiger Workloads nicht ausreichend. Abhängig von Ihren Buildanforderungen reicht dies möglicherweise dennoch aus.
+
+   Das endgültige Image trägt die Markierung „buildtools2019:latest“, sodass Sie es problemlos als „buildtools2019“ in einem Container ausführen können, da das Tag „latest“ standardmäßig verwendet wird, wenn kein Tag angegeben wurde. Wenn Sie eine bestimmte Version von Visual Studio Build Tools 2019 in einem [komplexeren Szenario](advanced-build-tools-container.md) verwenden möchten, können Sie den Container stattdessen mit einer bestimmten Visual Studio-Buildnummer sowie dem Tag „latest“ markieren, damit die Container eine bestimmte Version konsistent verwenden.
+
+   ::: moniker-end
+
 ## <a name="step-6-using-the-built-image"></a>Schritt 6. Verwenden des erstellten Images
 
 Da Sie bereits ein Image erstellt haben, können Sie dieses nun in einem Container ausführen, um sowohl interaktive, als auch automatisierte Builds abzudecken. Im Beispiel wird die Developer-Eingabeaufforderung verwendet, damit Ihre PATH-Variable und andere Umgebungsvariablen bereits konfiguriert sind.
 
 1. Öffnen Sie eine Eingabeaufforderung.
-2. Führen Sie den Container aus, um eine PowerShell-Umgebung zu starten, in der alle Entwicklerumgebungsvariablen festgelegt sind:
+
+1. Führen Sie den Container aus, um eine PowerShell-Umgebung zu starten, in der alle Entwicklerumgebungsvariablen festgelegt sind:
+
+   ::: moniker range="vs-2017"
 
    ```shell
    docker run -it buildtools2017
    ```
+
+   ::: moniker-end
+
+   ::: moniker range="vs-2019"
+
+   ```shell
+   docker run -it buildtools2019
+   ```
+
+   ::: moniker-end
 
 Wenn Sie dieses Image für Ihren CI/CD-Workflow verwenden möchten, können Sie es in Ihrer eigenen [Azure Container Registry](https://azure.microsoft.com/services/container-registry) oder in einer anderen internen [Docker-Registrierung](https://docs.docker.com/registry/deploying) veröffentlichen, damit die Server es nur abrufen müssen.
 
@@ -200,4 +279,4 @@ Wenn Sie dieses Image für Ihren CI/CD-Workflow verwenden möchten, können Sie 
 
 * [Erweitertes Beispiel für Container](advanced-build-tools-container.md)
 * [Bekannte Probleme für Container](build-tools-container-issues.md)
-* [Workload- und Komponenten-IDs in Visual Studio Build Tools 2017](workload-component-id-vs-build-tools.md)
+* [Workload- und Komponenten-IDs in Visual Studio Build Tools](workload-component-id-vs-build-tools.md)

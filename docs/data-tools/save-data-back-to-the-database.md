@@ -17,17 +17,15 @@ helpviewer_keywords:
 ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e33fa9b6047cbe470702cebdbb27f74d074e460e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 31b41a9c18a9e055c9d144c7115d3673ee2e4443
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62566578"
 ---
 # <a name="save-data-back-to-the-database"></a>Rückspeichern von Daten in der Datenbank
 
@@ -49,7 +47,7 @@ Wenn Sie mit TableAdapters vertraut sind, können Sie direkt auf einen der folge
 |[Gewusst wie: Aktualisieren von Daten mit einem TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)|Gewusst wie: Ausführen von Aktualisierungen mit TableAdapters|
 |[Hierarchische Aktualisierung](../data-tools/hierarchical-update.md)|Gewusst wie: Ausführen von Updates aus einem Dataset mit zwei oder mehr verknüpfte Tabellen|
 |[Behandeln einer Parallelitätsausnahme](../data-tools/handle-a-concurrency-exception.md)|Wie Ausnahmen behandelt, wenn zwei Benutzer versuchen, dieselben Daten in einer Datenbank zur gleichen Zeit zu ändern.|
-|[Gewusst wie: Speichern von Daten mithilfe von Transaktionen](../data-tools/save-data-by-using-a-transaction.md)|Das Speichern von Daten in einer Transaktion, die das System verwenden. Transaktionen-Namespace und ein TransactionScope-Objekt|
+|[Vorgehensweise: Speichern von Daten mithilfe von Transaktionen](../data-tools/save-data-by-using-a-transaction.md)|Das Speichern von Daten in einer Transaktion, die das System verwenden. Transaktionen-Namespace und ein TransactionScope-Objekt|
 |[Speichern von Daten in einer Transaktion](../data-tools/save-data-in-a-transaction.md)|Exemplarische Vorgehensweise, die eine Windows Forms-Anwendung zum Speichern von Daten in einer Datenbank innerhalb einer Transaktion veranschaulicht erstellt.|
 |[Speichern von Daten in einer Datenbank (mehrere Tabellen)](../data-tools/save-data-to-a-database-multiple-tables.md)|Wie Sie Datensätze bearbeiten und Speichern von Änderungen in mehreren Tabellen in der Datenbank|
 |[Gewusst wie: Speichern von Daten aus einem Objekt in einer Datenbank](../data-tools/save-data-from-an-object-to-a-database.md)|Wie Sie Daten aus einem Objekt zu übergeben, die nicht in einem Dataset mit einer Datenbank mithilfe einer TableAdapter-DbDirect-Methode|
@@ -70,7 +68,7 @@ Ein Dataset enthält Auflistungen, die eine Auflistung von Zeilen enthalten. Wen
 
 Sie können den Inhalt eines Datasets aktualisieren *zusammenführen* mit einem anderen Dataset. Dies umfasst das Kopieren der Inhalte von einer *Quelle* Dataset in das aufrufende Dataset (genannt die *Ziel* Dataset). Beim Zusammenführen von Datasets werden neue Datensätze aus dem Quell-Dataset in das Ziel-Dataset eingefügt. Darüber hinaus werden dem Ziel-Dataset zusätzliche Spalten aus dem Quell-Dataset hinzugefügt. Zusammenführen von Datasets ist nützlich, wenn Sie ein lokales Dataset haben und Sie ein zweites Dataset aus einer anderen Anwendung erhalten. Es ist auch nützlich, wenn Sie ein zweites Dataset aus einer Komponente, z. B. eine XML-Webdienst abrufen, oder wenn Sie Daten aus mehreren Datasets integrieren müssen.
 
-Beim Zusammenführen von Datasets können Sie ein boolesches Argument übergeben (`preserveChanges`), informiert die <xref:System.Data.DataSet.Merge%2A> Methode angibt, ob bestehende Änderungen im Ziel-Dataset beibehalten werden sollen. Da Datasets mehrere Datensatzversionen verwalten, ist es wichtig zu beachten, dass mehr als eine Version der Datensätze zusammengeführt werden. Die folgende Tabelle zeigt, wie ein Datensatz in beiden Datasets zusammengeführt werden:
+Beim Zusammenführen von Datasets können Sie ein boolesches Argument übergeben (`preserveChanges`), informiert die <xref:System.Data.DataSet.Merge%2A> Methode angibt, ob bestehende Änderungen im Ziel-Dataset beibehalten werden sollen. Da Datasets mehrere Datensatzversionen verwalten, darf nicht außer Acht gelassen werden, dass auch mehrere Datensatzversionen zusammengeführt werden. Die folgende Tabelle zeigt, wie ein Datensatz in beiden Datasets zusammengeführt werden:
 
 |DataRowVersion|Ziel-Dataset|Quell-Dataset|
 | - | - | - |
@@ -94,7 +92,7 @@ Aufrufen der <xref:System.Data.DataSet.Merge%2A> -Methode mit `preserveChanges =
 > [!CAUTION]
 > In der `preserveChanges = true` Szenario, wenn die <xref:System.Data.DataSet.RejectChanges%2A> Methode wird aufgerufen, für einen Datensatz im Ziel-Dataset, und es wird auf die ursprünglichen Daten zurückgesetzt, die *Quelle* Dataset. Dies bedeutet, dass wenn Sie versuchen, die ursprüngliche Datenquelle mit dem Ziel-Dataset zu aktualisieren, es nicht die ursprüngliche zu aktualisierende Zeile zu finden. Sie können eine parallelitätsverletzung verhindern, indem Sie ein anderes Dataset mit den aktualisierten Datensätzen aus der Datenquelle füllen und anschließend einen Merge, um zu verhindern, dass eine parallelitätsverletzung ausführen. (Eine Parallelitätsverletzung liegt vor, wenn ein anderer Benutzer einen Datensatz in der Datenquelle ändert, nachdem das Dataset aufgefüllt wurde.)
 
-## <a name="update-constraints"></a>Einschränkungen aktualisieren
+## <a name="update-constraints"></a>Einschränkungen bei der Aktualisierung
 
 Um Änderungen an einer vorhandenen Datenzeile vorzunehmen, hinzufügen oder Aktualisieren von Daten in die einzelnen Spalten aus. Wenn der Dataset Einschränkungen (z. B. Fremdschlüsseln oder NULL-Einschränkungen) enthält, ist es möglich, dass der Datensatz in einem Fehlerzustand vorübergehend sein kann, wie Sie sie aktualisieren. Das heißt, kann es in einem Fehlerzustand sein, klicken Sie nach dem Update einer Spalte, aber bevor Sie zur nächsten erhalten.
 
@@ -113,7 +111,7 @@ Nachdem Sie eine Aktualisierung abgeschlossen ist, können Sie erneut aktivieren
 
 Weitere Informationen zum Aufheben von Ereignissen finden Sie unter [Deaktivieren von Einschränkungen beim Auffüllen von Datasets](../data-tools/turn-off-constraints-while-filling-a-dataset.md).
 
-## <a name="dataset-update-errors"></a>DataSet-Update-Fehlern
+## <a name="dataset-update-errors"></a>Fehler bei der Datasetaktualisierung
 
 Bei der Aktualisierung von Datensätzen in einen Dataset können Fehler auftreten. Sie können z. B. versehentlich schreiben Daten des falschen Typs an eine Spalte, oder Daten, die zu lang ist oder Daten, die ein anderes Integritätsproblem verursacht hat. Oder Sie müssen möglicherweise die anwendungsspezifische Überprüfungen, die während jeder Phase eines Aktualisierungsereignisses benutzerdefinierte Fehler auslösen können. Weitere Informationen finden Sie unter [Überprüfen von Daten in Datasets](../data-tools/validate-data-in-datasets.md).
 
@@ -143,10 +141,10 @@ In der folgenden Tabelle sind die möglichen Werte für die <xref:System.Data.Da
 
 |DataRowVersion-Wert|Beschreibung|
 | - |-----------------|
-|<xref:System.Data.DataRowVersion.Current>|Die aktuelle Version eines Datensatzes enthält alle Änderungen, die für den Datensatz seit dem letzten ausgeführt wurden <xref:System.Data.DataRow.AcceptChanges%2A> aufgerufen wurde. Wenn die Zeile gelöscht wurde, ist gibt es keine aktuelle Version.|
+|<xref:System.Data.DataRowVersion.Current>|Die aktuelle Version eines Datensatzes enthält alle Änderungen, die für den Datensatz seit dem letzten ausgeführt wurden <xref:System.Data.DataRow.AcceptChanges%2A> aufgerufen wurde. Falls die Zeile gelöscht wurde, ist keine aktuelle Version vorhanden.|
 |<xref:System.Data.DataRowVersion.Default>|Der Standardwert eines Datensatzes, wie er durch das Dataset-Schema oder die Datenquelle definiert wurde.|
 |<xref:System.Data.DataRowVersion.Original>|Die ursprüngliche Version eines Datensatzes ist eine Kopie des Datensatzes zu dem Zeitpunkt, zu dem zuletzt ein Commit für Dataset-Änderungen ausgeführt wurde. Praktisch entspricht dies meist der Version eines Datensatzes, die aus einer Datenquelle gelesen wurde.|
-|<xref:System.Data.DataRowVersion.Proposed>|Die vorläufige Version eines Datensatzes, der während der laufenden Aktualisierung vorübergehend verfügbar ist –, also nach dem Aufruf der <xref:System.Data.DataRow.BeginEdit%2A> Methode und die <xref:System.Data.DataRow.EndEdit%2A> Methode. Auf die vorläufige Version eines Datensatzes greifen Sie i. d. R. in einem Ereignishandler zu, z. B. <xref:System.Data.DataTable.RowChanging>. Durch den Aufruf der <xref:System.Data.DataRow.CancelEdit%2A>-Methode werden die Änderungen rückgängig gemacht und die vorläufige Version aus der Datenzeile gelöscht.|
+|<xref:System.Data.DataRowVersion.Proposed>|Die vorläufige Version eines Datensatzes ist während der laufenden Aktualisierung vorübergehend verfügbar, d.h. nach dem Aufruf der <xref:System.Data.DataRow.BeginEdit%2A>-Methode und vor dem Aufruf der <xref:System.Data.DataRow.EndEdit%2A>-Methode. Auf die vorläufige Version eines Datensatzes greifen Sie i. d. R. in einem Ereignishandler zu, z. B. <xref:System.Data.DataTable.RowChanging>. Durch den Aufruf der <xref:System.Data.DataRow.CancelEdit%2A>-Methode werden die Änderungen rückgängig gemacht und die vorläufige Version aus der Datenzeile gelöscht.|
 
 Die ursprüngliche und die aktuelle Version sind hilfreich, wenn Aktualisierungsinformationen an eine Datenquelle übertragen werden. Wenn eine Aktualisierung an die Datenquelle gesendet wird, befinden sich die neuen Informationen für die Datenbank i. d. R. in der aktuellen Version des Datensatzes. Anhand von Informationen aus der ursprünglichen Version wird der zu aktualisierende Datensatz gesucht.
 
@@ -172,7 +170,7 @@ Abrufen einer Teilmenge der geänderten Datensätze ist nützlich, wenn Sie Date
 
 Während Sie Änderungen im Dataset vornehmen, wird die <xref:System.Data.DataRow.RowState%2A>-Eigenschaft der geänderten Zeilen festgelegt. Die ursprünglichen und aktuellen Datensatzversionen eingerichtet, verwaltet und Zweck zur Verfügung gestellt werden die <xref:System.Data.DataRowView.RowVersion%2A> Eigenschaft. Die Metadaten, die in den Eigenschaften dieser geänderten Zeilen gespeichert sind, ist für die senden die richtigen Updates an der Datenquelle erforderlich.
 
-Wenn die Änderungen den aktuellen Zustand der Datenquelle widerspiegeln, müssen diese Informationen nicht länger beibehalten werden. Es gibt in der Regel doppelt so groß wie bei dem Dataset und seine Quelle synchron sind:
+Wenn die Änderungen den aktuellen Zustand der Datenquelle widerspiegeln, müssen diese Informationen nicht länger beibehalten werden. Es gibt in der Regel zwei Situationen, in denen das Dataset und seine Quelle synchron sind:
 
 - Unmittelbar nach dem Laden von Informationen in das Dataset, z. B., wenn Sie Daten aus der Quelle einlesen.
 
@@ -200,20 +198,20 @@ Diese Methode umfasst folgende Schritte:
 
 Die <xref:System.Data.DataSet.AcceptChanges%2A>-Methode ist auf drei Ebenen verfügbar. Sie erreichen ihn auf eine <xref:System.Data.DataRow> Objekt, das Commits ändert sich nur diese Zeile. Sie können es auch aufrufen, auf eine <xref:System.Data.DataTable> Objekt, um alle Zeilen in einer Tabelle zu übernehmen. Schließlich können Sie ihn aufrufen auf der <xref:System.Data.DataSet> Objekt, um alle ausstehenden Änderungen in sämtlichen Datensätzen aller Tabellen des Datasets zu übernehmen.
 
-In der folgende Tabelle wird beschrieben, welche Änderungen ein Commit ausgeführt werden, basierend auf dem Objekt, dass für die Methode aufgerufen wird:
+In der folgenden Tabelle wird basierend auf dem Objekt, für das die Methode aufgerufen wird, beschrieben, für welche Änderungen ein Commit ausgeführt wird:
 
 |Methode|Ergebnis|
 |------------|------------|
-|<xref:System.Data.DataRow.AcceptChanges%2A?displayProperty=fullName>|Änderungen werden nur auf die Zeile ein Commit ausgeführt.|
-|<xref:System.Data.DataTable.AcceptChanges%2A?displayProperty=fullName>|Änderungen sind in allen Zeilen der spezifischen Tabelle ein Commit ausgeführt.|
-|<xref:System.Data.DataSet.AcceptChanges%2A?displayProperty=fullName>|Änderungen werden auf alle Zeilen in allen Tabellen des Datasets ein Commit ausgeführt.|
+|<xref:System.Data.DataRow.AcceptChanges%2A?displayProperty=fullName>|Ein Commit wird nur für Änderungen in der spezifischen Zeile ausgeführt.|
+|<xref:System.Data.DataTable.AcceptChanges%2A?displayProperty=fullName>|Ein Commit wird für Änderungen in allen Zeilen der spezifischen Tabelle ausgeführt.|
+|<xref:System.Data.DataSet.AcceptChanges%2A?displayProperty=fullName>|Ein Commit wird für Änderungen in allen Zeilen der Datasettabellen ausgeführt.|
 
 > [!NOTE]
 > Wenn Sie ein Dataset laden, durch den Aufruf des TableAdapter `Fill` -Methode, Sie müssen keine Änderungen zu übernehmen. In der Standardeinstellung die `Fill` Methodenaufrufe der `AcceptChanges` Methode nach der Fertigstellung der Datentabelle mit Daten aufgefüllt.
 
 Eine verwandte Methode, <xref:System.Data.DataSet.RejectChanges%2A>, macht die Auswirkungen der Änderungen durch Kopieren der <xref:System.Data.DataRowVersion.Original> -Version wieder in die <xref:System.Data.DataRowVersion.Current> Version von Datensätzen. Außerdem wird die <xref:System.Data.DataRow.RowState%2A> des jedes Datensatzes wieder an <xref:System.Data.DataRowState.Unchanged>.
 
-## <a name="data-validation"></a>Datenüberprüfung
+## <a name="data-validation"></a>Datenvalidierung
 
 Um sicherzustellen, dass die in der Anwendung enthaltenen Daten die Anforderungen des Prozesses erfüllen, an den sie übergeben werden, sind oftmals Validierungen erforderlich. Dabei wird z. B. überprüfen, ob die Eingabe eines Benutzers in einem Formular richtig ist, Überprüfen von Daten, die für Ihre Anwendung von einer anderen Anwendung gesendet wird, oder überprüfen auch, dass die innerhalb der Komponente berechneten Informationen innerhalb der Einschränkungen der Datenquelle liegt und anwendungsanforderungen.
 
@@ -248,13 +246,13 @@ Die Anwendung ändert Nancy Buchanans Status in "Preferred". Durch diese Änderu
 (Modified)     c400         Nancy Buchanan    Preferred
 ```
 
-Anschließend ruft die Anwendung die `Update`-Methode auf, um das Dataset an die Datenbank zu übertragen. Durch die Methode werden wieder die einzelnen Zeilen untersucht. Für die erste Zeile überträgt die Methode keine SQL-Anweisung mit der Datenbank, da diese Zeile nicht geändert hat, da sie ursprünglich aus der Datenbank abgerufen wurde.
+Anschließend ruft die Anwendung die `Update`-Methode auf, um das Dataset an die Datenbank zu übertragen. Durch die Methode werden wieder die einzelnen Zeilen untersucht. Für die erste Zeile überträgt die Methode keine SQL-Anweisung an die Datenbank, da diese Zeile seit dem ursprünglichen Abruf aus der Datenbank nicht geändert wurde.
 
-Für die zweite Zeile, jedoch die `Update` Methode automatisch Ruft den Befehl für die richtigen Daten und überträgt ihn an die Datenbank. Die spezielle Syntax der SQL-Anweisung hängt von der SQL-Dialekt der, die von den zugrunde liegenden Datenspeicher unterstützt wird. Aber die folgenden allgemeinen Merkmale der übertragenen SQL-Anweisung, die beachtet werden:
+Für die zweite Zeile, jedoch die `Update` Methode automatisch Ruft den Befehl für die richtigen Daten und überträgt ihn an die Datenbank. Die spezielle Syntax der SQL-Anweisung hängt von der SQL-Dialekt der, die von den zugrunde liegenden Datenspeicher unterstützt wird. Die folgenden allgemeinen Merkmale der übertragenen SQL-Anweisung sollten jedoch beachtet werden:
 
 - Die übertragene SQL-Anweisung ist eine UPDATE-Anweisung. Da der Wert der <xref:System.Data.DataRow.RowState%2A>-Eigenschaft <xref:System.Data.DataRowState.Modified> ist, ist es für Adapter offensichtlich, dass sie eine UPDATE-Anweisung verwenden müssen.
 
-- Die übertragene SQL-Anweisung enthält eine WHERE-Klausel, der angibt, dass das Ziel der UPDATE-Anweisung der Zeile, in denen `CustomerID = 'c400'`. Durch diesen Teil der SELECT-Anweisung wird die Zielzeile von allen anderen Zeilen unterschieden, da die `CustomerID` der Primärschlüssel der Zieltabelle ist. Die Informationen für die ursprüngliche Version des Datensatzes die WHERE-Klausel abgeleitet wird (`DataRowVersion.Original`), für den Fall, dass die Werte, die erforderlich sind, um die Zeile identifizieren geändert haben.
+- Die übertragene SQL-Anweisung schließt eine WHERE-Klausel ein, die als Ziel der UPDATE-Anweisung die Zeile angibt, deren Wert `CustomerID = 'c400'` lautet. Durch diesen Teil der SELECT-Anweisung wird die Zielzeile von allen anderen Zeilen unterschieden, da die `CustomerID` der Primärschlüssel der Zieltabelle ist. Die Informationen für die ursprüngliche Version des Datensatzes die WHERE-Klausel abgeleitet wird (`DataRowVersion.Original`), für den Fall, dass die Werte, die erforderlich sind, um die Zeile identifizieren geändert haben.
 
 - Die übertragene SQL-Anweisung umfasst eine SET-Klausel, mit der der neue Wert geänderter Spalten festgelegt wird.
 
@@ -269,7 +267,7 @@ Wenn Sie Visual Studio-Tools verwendet haben, um einen Datenadapter zu generiere
 
 Die <xref:System.Data.SqlClient.SqlParameter.SourceColumn%2A?displayProperty=fullName>-Eigenschaft der einzelnen Parameter zeigt auf eine Spalte in der Datentabelle. Beispiel: Die `SourceColumn`-Eigenschaft für den `au_id`-Parameter und den `Original_au_id`-Parameter wird auf die Spalte in der Datentabelle festgelegt, die die Autor-ID enthält. Wenn des Adapters die `Update` Methode ausgeführt wird, liest der Autor-Id-Spalte, aus dem Datensatz, der aktualisiert wird und die Werte in die Anweisung eingetragen.
 
-In einer UPDATE-Anweisung müssen Sie sowohl die neuen Werte (diejenigen, die der Datensatz geschrieben wird) als auch die alten Werte (so, dass der Datensatz in der Datenbank gefunden werden kann) angeben. Es gibt daher zwei Parameter für jeden Wert: eine für die SET-Klausel und eine andere Definition für die WHERE-Klausel. Beide Parameter lesen Daten aus dem Datensatz, der aktualisiert wird. allerdings erhalten sie verschiedene Versionen des Spaltenwerts auf Grundlage des Parameters des <xref:System.Data.SqlClient.SqlParameter.SourceVersion> Eigenschaft. Für den Parameter der SET-Klausel wird die aktuelle Version und für den Parameter der WHERE-Klausel die ursprüngliche Version abgerufen.
+In einer UPDATE-Anweisung müssen Sie sowohl die neuen Werte (diejenigen, die der Datensatz geschrieben wird) als auch die alten Werte (so, dass der Datensatz in der Datenbank gefunden werden kann) angeben. Daher verfügt jeder Wert über zwei Parameter: einen für die SET-Klausel und einen anderen für die WHERE-Klausel. Beide Parameter lesen Daten aus dem Datensatz, der aktualisiert wird. allerdings erhalten sie verschiedene Versionen des Spaltenwerts auf Grundlage des Parameters des <xref:System.Data.SqlClient.SqlParameter.SourceVersion> Eigenschaft. Für den Parameter der SET-Klausel wird die aktuelle Version und für den Parameter der WHERE-Klausel die ursprüngliche Version abgerufen.
 
 > [!NOTE]
 > Sie können auch selbst Werte für die `Parameters`-Auflistung im Code festlegen. Dies erfolgt in der Regel in einem Ereignishandler für das <xref:System.Data.DataTable.RowChanging>-Ereignis des Datenadapters.
@@ -281,4 +279,4 @@ In einer UPDATE-Anweisung müssen Sie sowohl die neuen Werte (diejenigen, die de
 - [Gewusst wie: Aktualisieren von Daten mit einem TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)
 - [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Überprüfen von Daten](validate-data-in-datasets.md)
-- [Gewusst wie: hinzufügen, ändern und Löschen von Entitäten (WCF Data Services)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)
+- [Vorgehensweise: Hinzufügen, ändern und Löschen von Entitäten (WCF Data Services)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)

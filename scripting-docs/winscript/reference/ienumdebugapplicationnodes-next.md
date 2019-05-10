@@ -2,7 +2,6 @@
 title: IEnumDebugApplicationNodes::Next | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 07bdd008887676ef2f4cba7e1a67d96e1344f56a
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: f826ce91ba99c5bb697a346b40a6b7f97b6f5914
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54091129"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951618"
 ---
 # <a name="ienumdebugapplicationnodesnext"></a>IEnumDebugApplicationNodes::Next
 Ruft eine angegebene Anzahl von Segmenten in der Enumerationsfolge ab.  

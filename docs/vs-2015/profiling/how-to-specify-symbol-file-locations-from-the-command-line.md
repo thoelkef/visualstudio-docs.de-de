@@ -1,27 +1,22 @@
 ---
 title: 'Vorgehensweise: Angeben von Symboldateispeicherorten über die Befehlszeile | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 8aa067bb-e8bf-4081-aff0-cfbcf65934a0
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3d138166bc0dfdf93df5d4e340fc0d0a62d1828b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: e5ff4290d0cffa99a9f476c543626c5aa15be87a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721188"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436909"
 ---
-# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Gewusst wie: Angeben von Symboldateispeicherorten über die Befehlszeile
+# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Vorgehensweise: Angeben von Symboldateispeicherorten über die Befehlszeile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Um Symbolinformationen, wie z.B. Funktionsnamen und Zeilennummern anzuzeigen, benötigt das VSPerfReport-Befehlszeilentool Zugriff auf die Symboldateien (.pdb) der profilierten Komponenten und die Windows-Systemdateien. Symboldateien werden erstellt, wenn eine Komponente kompiliert wird. Weitere Informationen finden Sie unter [VSPerfReport](../profiling/vsperfreport.md). VSPerfReport sucht automatisch in den folgenden Speicherorten nach Symboldateien:  
@@ -43,7 +38,7 @@ Um Symbolinformationen, wie z.B. Funktionsnamen und Zeilennummern anzuzeigen, be
   Sie können auch beide Methoden verwenden.  
   
 > [!NOTE]
->  Wenn [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] auf dem lokalen Computer installiert ist, wurde wahrscheinlich bereits ein Speicherort für die Windows-Symboldateien angegeben. Weitere Informationen finden Sie unter [Vorgehensweise: Verweisen auf Windows-Symbolinformationen](../profiling/how-to-reference-windows-symbol-information.md). Sie müssen VSPerfReport dennoch konfigurieren, um den Speicherort und den Server, wie weiter unten in diesem Thema beschrieben, zu verwenden.  
+> Wenn [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] auf dem lokalen Computer installiert ist, wurde wahrscheinlich bereits ein Speicherort für die Windows-Symboldateien angegeben. Weitere Informationen finden Sie unter [Vorgehensweise: Referenz-Windows-Symbolinformationen](../profiling/how-to-reference-windows-symbol-information.md). Sie müssen VSPerfReport dennoch konfigurieren, um den Speicherort und den Server, wie weiter unten in diesem Thema beschrieben, zu verwenden.  
   
 ## <a name="specifying-windows-symbol-files"></a>Angeben von Windows-Symboldateien  
   
@@ -68,6 +63,3 @@ Um Symbolinformationen, wie z.B. Funktionsnamen und Zeilennummern anzuzeigen, be
  Die folgende VSPerfReport-Befehlszeile fügt mithilfe der **/SymbolPath**-Option das Verzeichnis C:\Projects\Symbols zum Suchpfad hinzu.  
   
  **VSPerfReport**  *MyApp* **.exe /SymbolPath:C:\Projects\Symbols /summary:all**
-
-
-

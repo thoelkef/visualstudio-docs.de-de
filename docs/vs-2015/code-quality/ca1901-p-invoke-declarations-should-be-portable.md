@@ -1,14 +1,9 @@
 ---
-title: 'CA1901: Deklarationen von P / Invoke müssen portabel sein | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'CA1901: P / Invoke-Deklarationen sollten portabel sein | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1901
 - PInvokeDeclarationsShouldBePortable
@@ -20,14 +15,14 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a44e439ecafaa2e89df8cc93c131dbf2abe2dc30
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ccbbc3178a9f65c15d11a27dee1a625cca729240
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948134"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053948"
 ---
-# <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: Deklarationen von P/Invoke müssen portabel sein
+# <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: Deklarationen von P/Invoke müssen portabel sein.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -43,9 +38,9 @@ ms.locfileid: "49948134"
 ## <a name="rule-description"></a>Regelbeschreibung
  Eines der folgenden Szenarien verstößt gegen diese Regel auftritt:
 
--   Der Rückgabewert oder Parameter als eine Ganzzahl mit fester Größe typisiert ist, wenn er als eingegeben werden, sollten eine `IntPtr`.
+- Der Rückgabewert oder Parameter als eine Ganzzahl mit fester Größe typisiert ist, wenn er als eingegeben werden, sollten eine `IntPtr`.
 
--   Der Rückgabewert oder Parameter als typisiert ist ein `IntPtr` Wenn typisiert als eine Ganzzahl mit fester Größe.
+- Der Rückgabewert oder Parameter als typisiert ist ein `IntPtr` Wenn typisiert als eine Ganzzahl mit fester Größe.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Sie können diese Verletzung beheben, indem Sie mithilfe von `IntPtr` oder `UIntPtr` Handles anstelle von darstellen `Int32` oder `UInt32`.
@@ -85,6 +80,3 @@ internal class NativeMethods{
 
 ## <a name="see-also"></a>Siehe auch
  [Portability Warnings](../code-quality/portability-warnings.md)
-
-
-

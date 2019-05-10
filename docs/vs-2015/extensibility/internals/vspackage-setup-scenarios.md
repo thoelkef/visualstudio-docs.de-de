@@ -1,26 +1,21 @@
 ---
 title: VSPackage-Setupszenarien | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, deployment considerations
 ms.assetid: d2928498-f27c-46b4-a9cd-cba41fd85a10
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 34181e5b03b29662188e368561b0f43049629ec1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 58b4350812900bc11e8aaa3222b3b0898db19e13
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440787"
 ---
 # <a name="vspackage-setup-scenarios"></a>VSPackage-Setupszenarien
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,13 +45,13 @@ Freigegebene VSPackage-installer
  Wie in der Abbildung gezeigt wird, werden freigegebene Komponenten Teil des Features Feat_Common durchgeführt, das immer installiert sind. Benutzer können, indem Sie die Feat_VS2002 und Feat_VS2003 Features sichtbar machen, zum Zeitpunkt der Installation in die Versionen der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] wollen, dass das VSPackage, um zu integrieren. Benutzer können auch Windows Installer-Wartungsmodus hinzufügen oder Entfernen von Funktionen, die in diesem Fall fügt hinzu oder entfernt die VSPackage-Registrierungsinformationen aus verschiedenen Versionen der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
 > [!NOTE]
->  Ein Feature der Anzeigespalte auf 0 festlegen, blendet ihn aus. Ein niedrige Ebene Spaltenwert, z. B. 1, wird sichergestellt, dass es immer installiert wird. Weitere Informationen finden Sie unter [INSTALLLEVEL Eigenschaft](http://msdn.microsoft.com/library/aa369536\(VS.85\).aspx) und [Funktionstabelle](http://msdn.microsoft.com/library/aa368585.aspx).  
+> Ein Feature der Anzeigespalte auf 0 festlegen, blendet ihn aus. Ein niedrige Ebene Spaltenwert, z. B. 1, wird sichergestellt, dass es immer installiert wird. Weitere Informationen finden Sie unter [INSTALLLEVEL Eigenschaft](http://msdn.microsoft.com/library/aa369536\(VS.85\).aspx) und [Funktionstabelle](http://msdn.microsoft.com/library/aa368585.aspx).  
   
 ## <a name="scenario-2-shared-vspackage-update"></a>Szenario 2: Freigegebene VSPackage-Update  
  In diesem Szenario wird eine aktualisierte Version des VSPackage-Installationsprogramms in Szenario 1 ausgeliefert. Aus Gründen der Erläuterung, das Update bietet Unterstützung für [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], es kann jedoch auch ein einfacher Security Patch oder die Fehlerkorrektur Servicepack. Windows Installer Regeln für die Installation neuer Komponenten müssen unveränderte Komponenten bereits auf dem System nicht erneut kopiert werden. In diesem Fall wird die aktualisierte Komponente Comp_MyVSPackage.dll ein System mit Version 1.0, die bereits vorhandenen überschrieben und können Benutzer das neue Feature Feat_VS2005 mit seiner Komponente Comp_VS2005_Reg hinzufügen.  
   
 > [!CAUTION]
->  Eine VSPackage wird jedes Mal, wenn mehrere Versionen freigegeben [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], es ist wichtig, dass es sich bei nachfolgende Versionen des VSPackage mit früheren Versionen der Abwärtskompatibilität [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Wenn Sie Abwärtskompatibilität aufrechtzuerhalten, müssen Sie die Seite-an-Seite, private VSPackages verwenden. Weitere Informationen finden Sie unter [unterstützt mehrere Versionen von Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md).  
+> Eine VSPackage wird jedes Mal, wenn mehrere Versionen freigegeben [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], es ist wichtig, dass es sich bei nachfolgende Versionen des VSPackage mit früheren Versionen der Abwärtskompatibilität [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Wenn Sie Abwärtskompatibilität aufrechtzuerhalten, müssen Sie die Seite-an-Seite, private VSPackages verwenden. Weitere Informationen finden Sie unter [unterstützt mehrere Versionen von Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md).  
   
  ![Von freigegebenem VS-Paket aktualisieren Abbilds](../../extensibility/internals/media/vs-sharedpackageupdate.gif "VS_SharedPackageUpdate")  
 VSPackage-Updateinstallationsprogramm freigegeben  
@@ -84,4 +79,3 @@ Seite-an-Seite VSPackage-Updateinstallationsprogramm
 ## <a name="see-also"></a>Siehe auch  
  [Windows Installer](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)   
  [Unterstützen mehrerer Versionen von Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)
-

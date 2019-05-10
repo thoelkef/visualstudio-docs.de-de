@@ -1,26 +1,29 @@
 ---
-title: Debuggen einer Node.js-App
-description: Visual Studio unterstützt das Debuggen von Node.js-Anwendungen
+title: Debuggen einer JavaScript- oder TypeScript-App
+description: Visual Studio unterstützt das Debuggen JavaScript- and TypeScript-Apps in Visual Studio
 ms.date: 12/03/2018
 ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 6e0ba454a00fb2cebdfaa8ba5fdba63ef3ed2748
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: abfe762b354d11297aa4d0c574b8f0e0a081d349
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955892"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438010"
 ---
-# <a name="debug-a-nodejs-app-in-visual-studio"></a>Debuggen einer Node.js-App in Visual Studio
+# <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Debuggen einer JavaScript- oder TypeScript-App in Visual Studio
 
 Sie können mithilfe von Visual Studio JavaScript- und TypeScript-Code debuggen. Sie können Breakpoints festlegen und erreichen, den Debugger anfügen, Variablen untersuchen, die Aufrufliste anzeigen und andere Debugfeatures verwenden.
+
+> [!TIP]
+> Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/) kostenlos herunterladen. Je nachdem, welche Art von App-Entwicklung Sie wählen, müssen Sie die **Workload für die Node.js-Entwicklung** zusammen mit Visual Studio installieren.
 
 ## <a name="debug-server-side-script"></a>Debuggen von serverseitigen Skripts
 
@@ -57,6 +60,13 @@ Wenn der Debugger von Visual Studio angehängt und Breakpoints im clientseitigen
     `chrome.exe --remote-debugging-port=9222`
 
     Dadurch wird Chrome mit aktiviertem Debuggen gestartet.
+
+    ::: moniker range=">=vs-2019"
+
+    > [!NOTE]
+    > Sie können auch das `--remote-debugging-port`-Flag beim Start des Browsers festlegen, indem Sie in der **Debuggen**-Symbolleiste die Option **Browserauswahl…** und dann **Hinzufügen** auswählen und anschließend das Flag im **Argumente**-Feld festlegen. Verwenden Sie einen anderen Anzeigenamen für den Browser, z.B. **Chrome mit Debuggen**. Weitere Informationen finden Sie in den [Versionshinweisen](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview#browser-cli-params-support).
+
+    ::: moniker-end
 
 3. Wechseln Sie zu Visual Studio, und legen Sie in Ihrem Quellcode einen Breakpoint fest. (Legen Sie den Breakpoint in einer Codezeile fest, in der dies zulässig ist, also z. B. in einer `return`-Anweisung oder einer `var`-Deklaration.)
 
@@ -98,7 +108,7 @@ Wenn der Debugger von Visual Studio angehängt und Breakpoints im clientseitigen
     * Wenn Sie Code in einer transpilierten JavaScript-Datei (z. B. *app-bundle.js*) unterbrechen müssen, dies jedoch nicht möglich ist, entfernen Sie die Quellzuordnungsdatei *Dateiname.js.map*.
 
      > [!TIP]
-     > Sobald Sie mit diesen Schritten erstmalig an den Prozess angehängt haben, können Sie in Visual Studio 2017 schnell erneut an diesen Prozess anhängen, indem Sie **Debuggen** > **Erneut an Prozess anhängen** auswählen.
+     > Sobald Sie mit diesen Schritten erstmalig an den Prozess angefügt haben, können Sie schnell erneut an diesen Prozess anfügen, indem Sie **Debuggen** > **Erneut an Prozess anfügen** auswählen.
 
 ## <a name="generate_sourcemaps"></a> Generieren von Quellzuordnungen zum Debuggen
 
@@ -165,8 +175,8 @@ Dynamisch generierte Dateien werden nicht automatisch gedebuggt. Außerdem könn
    Bei Chrome: Navigieren Sie zu **Projektmappen-Explorer > Skriptdokumente > IhrSeitenname**.
 
     > [!NOTE]
-    > Bei der Verwendung von Chrome wird möglicherweise die Meldung `no source is available between ` angezeigt.<script>` tags.` This is OK, just continue debugging.
+    > Wenn Sie Google Chrome verwenden, wird Ihnen möglicherweise die Meldung **no source is available between \<script> tags** (Keine verfügbare Quelle zwischen <skript>-Tags) angezeigt. Das ist kein Grund zur Sorge, Sie können das Debuggen einfach fortsetzen.
 
    Bei Internet Explorer: Navigieren Sie zu **Projektmappen-Explorer > Skriptdokumente > Windows Internet Explorer > IhrSeitenname**.
 
-Weitere Informationen finden Sie unter [Client-side debugging of ASP.NET projects in Google Chrome (Clientseitiges Debuggen von ASP.NET-Projekten in Google Chrome)](https://blogs.msdn.microsoft.com/webdev/2016/11/21/client-side-debugging-of-asp-net-projects-in-google-chrome/).
+Weitere Informationen finden Sie unter [Client-side debugging of ASP.NET projects in Google Chrome (Clientseitiges Debuggen von ASP.NET-Projekten in Google Chrome)](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome/).

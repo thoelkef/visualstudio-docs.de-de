@@ -1,30 +1,33 @@
 ---
 title: 'Idialoadcallback2:: Restrictreferencepathaccess | Microsoft-Dokumentation'
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaLoadCallback2::RestrictReferencePathAccess method
 ms.assetid: e20cb45c-0360-4ff0-a92c-b1b6f76d6e85
-author: mikejo5000
+caps.latest.revision: 10
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: 121b5a4c74fd017e39314de7afe760a8d6184e25
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: a39186cfc8fb3f83986692ebf7c608b895aae7ef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872134"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839731"
 ---
 # <a name="idialoadcallback2restrictreferencepathaccess"></a>IDiaLoadCallback2::RestrictReferencePathAccess
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Bestimmt, ob die Suche nach einer PDB-Datei im Pfad zulässig ist, wo sich die .exe-Datei befindet.  
   
 ## <a name="syntax"></a>Syntax  
   
-```C++  
+```cpp#  
 HRESULT RestrictReferencePathAccess();  
 ```  
   

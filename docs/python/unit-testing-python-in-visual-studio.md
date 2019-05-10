@@ -2,21 +2,20 @@
 title: Komponententest für Python-Code
 description: Einrichten von Unittests für Python-Code in Visual Studio, um die Features des Test-Explorers zum Ermitteln, Ausführen und Debuggen von Tests in vollem Umfang zu nutzen.
 ms.date: 11/12/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5f808314639c72f530e64c4ccac08c49439c6818
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e16612287d1efa76b206de50c6af9f18edab7c8a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858278"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002939"
 ---
 # <a name="set-up-unit-testing-for-python-code"></a>Einrichten von Komponententests für Python-Code
 
@@ -25,10 +24,6 @@ Komponententests sind Codeelemente, die andere Codeeinheiten in einer Anwendung 
 In Python werden Komponententests ausgiebig zum Überprüfen von Szenarien beim Entwurf eines Programms verwendet. Die Python-Unterstützung in Visual Studio umfasst das Ermitteln, Ausführen und Debuggen von Unittests im Kontext Ihres Entwicklungsprozesses, sodass sie nicht separat ausgeführt werden müssen.
 
 Dieser Artikel enthält eine kurze Übersicht über die Komponententestfunktionen in Visual Studio mit Python. Weitere Informationen zu Komponententests im Allgemeinen finden Sie unter [Komponententest für Code](../test/unit-test-your-code.md).
-
-|   |   |
-|---|---|
-| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Testing-Python-hb46k6LWE_405918567) zu Komponententests in Python an (2 Minuten, 31 Sekunden). |
 
 ## <a name="discover-and-view-tests"></a>Entdecken und Anzeigen von Tests
 
@@ -91,7 +86,7 @@ Um mit dem Debuggen zu beginnen, legen Sie einen anfänglichen Haltepunkt im Cod
 
 ![Debuggen eines Tests](media/unit-test-debugging.png)
 
-Je nach Visual Studio-Version können Sie auch die Befehle **Code Coverage für ausgewählte Tests analysieren** und **Profiltest** verwenden. (Informationen finden Sie in der [Featurematrix](overview-of-python-tools-for-visual-studio.md#features-matrix).)
+Sie können auch die Befehle **Code Coverage für ausgewählte Tests analysieren** und **Profiltest** verwenden.
 
 ### <a name="known-issues"></a>Bekannte Probleme
 

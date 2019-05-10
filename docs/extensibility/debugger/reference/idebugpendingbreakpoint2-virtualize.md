@@ -1,37 +1,39 @@
 ---
 title: IDebugPendingBreakpoint2::Virtualize | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugPendingBreakpoint2::Virtualize
 helpviewer_keywords:
 - Virtualize method
 - IDebugPendingBreakpoint2::Virtualize method
 ms.assetid: 58c8e9a5-4494-47c2-bddb-56f628da6a2d
-author: gregvanl
+caps.latest.revision: 11
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 99b046d67e3f7edc48fa90d0fadac2ad63a05545
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 58c2dd4ffd150caebe616e3d891f0227970826cc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846216"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62842641"
 ---
 # <a name="idebugpendingbreakpoint2virtualize"></a>IDebugPendingBreakpoint2::Virtualize
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Schaltet den virtualisierten Zustand dieser ausstehenden Haltepunkt. Wenn ein ausstehender Haltepunkt virtualisiert ist, versucht die Debug-Engine, bindet, bindet es jedes Mal, wenn neuer Code in die Anwendung lädt.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT Virtualize(   
    BOOL fVirtualize  
 );  
 ```  
   
-```cpp  
+```cpp#  
 int Virtualize(   
    int fVirtualize  
 );  
@@ -50,7 +52,7 @@ int Virtualize( 
 ## <a name="example"></a>Beispiel  
  Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine einfache `CPendingBreakpoint` -Objekt, das macht die [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) Schnittstelle.  
   
-```cpp  
+```cpp#  
 HRESULT CPendingBreakpoint::Virtualize(BOOL fVirtualize)    
 {    
    HRESULT hr;    

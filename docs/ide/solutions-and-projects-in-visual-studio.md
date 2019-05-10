@@ -1,7 +1,6 @@
 ---
 title: Projektmappen und Projekte
 ms.date: 10/05/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.addnewsolutionitem
@@ -21,15 +20,15 @@ helpviewer_keywords:
 - projects [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8331ff52da4b0d0e8afe81e66f5674258df709fb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9d8373f13d3a7fc4280b383c534d0adba0b02a53
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979645"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Projektmappen und Projekte in Visual Studio
 
@@ -65,7 +64,7 @@ Visual Studio speichert die Einstellungen von Projektmappen in zwei Dateitypen (
 
 ## <a name="create-new-projects"></a>Neue Projekte erstellen
 
-Ein neues Projekt lässt sich am einfachsten über eine Projektvorlage für einen bestimmten Anwendungs- oder Websitetyp erstellen. Eine Projektvorlage besteht aus mehreren grundlegenden und vorab generierten Codedateien, Konfigurationsdateien, Objekten und Einstellungen. Diese Vorlagen finden Sie im Dialogfeld **Neues Projekt**, wenn Sie **Datei** > **Neu** > **Projekt** auswählen. Weitere Informationen finden Sie unter [Erstellen von Projekten und Projektmappen](../ide/creating-solutions-and-projects.md).
+Ein neues Projekt lässt sich am einfachsten über eine Projektvorlage für einen bestimmten Anwendungs- oder Websitetyp erstellen. Eine Projektvorlage besteht aus mehreren grundlegenden und vorab generierten Codedateien, Konfigurationsdateien, Objekten und Einstellungen. Diese Vorlagen finden Sie in dem Dialogfeld, in dem Sie ein neues Projekt erstellen (**Datei** > **Neu** > **Projekt**). Weitere Informationen finden Sie unter [Erstellen von Projekten und Projektmappen](../ide/creating-solutions-and-projects.md).
 
 Sie können auch benutzerdefinierte Projekte und Elementvorlagen erstellen. Weitere Informationen finden Sie unter [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md).
 

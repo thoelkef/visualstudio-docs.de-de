@@ -1,37 +1,34 @@
 ---
 title: 'Vorgehensweise: Erstellen und Ausführen des LinqToXmlDataBinding-Beispiels'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4087ea9d97970621a2ec8b51dc37d38f0306b0e6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 846b71b768d5b1909f29c8135616714d0124193c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989016"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62897558"
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Vorgehensweise: Erstellen und Ausführen des LinqToXmlDataBinding-Beispiels
 
-In diesem Thema wird gezeigt, wie Sie das Visual Studio-<legacyBold>LinqToXmlDataBinding</legacyBold>-Projekt erstellen und das resultierende WPF-<legacyBold>LinqToXmlDataBinding</legacyBold>-Beispielprogramm ausführen können.
+In diesem Thema wird gezeigt, wie Sie das Visual Studio-LinqToXmlDataBinding-Projekt erstellen und das resultierende WPF-LinqToXmlDataBinding-Beispielprogramm ausführen können.
 
 Weitere Informationen zu Visual Studio finden Sie unter [Überblick über die Visual Studio-IDE](../get-started/visual-studio-ide.md).
 
-## <a name="create-and-populate-the-project"></a>Erstellen und Auffüllen des Projekts
+## <a name="create-the-project"></a>Erstellen eines Projekts
 
-### <a name="to-create-the-starting-project"></a>So erstellen Sie das Startprojekt
-
-1. Starten Sie Visual Studio, und erstellen Sie eine C#-WPF-Anwendung mit dem Namen <legacyBold>LinqToXmlDataBinding</legacyBold>. Das Projekt muss .NET Framework 3.5 (oder höher) verwenden.
+1. Starten Sie Visual Studio, und erstellen Sie eine C#-**WPF-App** mit dem Namen **LinqToXmlDataBinding**. Das Projekt muss .NET Framework 3.5 (oder höher) verwenden.
 
 1. Sofern nicht bereits vorhanden, fügen Sie Projektverweise für die folgenden .NET-Assemblys hinzu:
 
     - <legacyBold>System.Data</legacyBold>
 
-    - <legacyBold>System.Data.DataSetExtensions</legacyBold>
+    - System.Data.DataSetExtensions
 
     - System.Xml
 
@@ -39,9 +36,9 @@ Weitere Informationen zu Visual Studio finden Sie unter [Überblick über die Vi
 
 1. Erstellen Sie die Projektmappe, indem Sie **STRG**+**UMSCHALTTASTE**+**B** drücken, und führen Sie sie dann mit **F5** aus. Das Projekt sollte ohne Fehler kompiliert und als generische WPF-Anwendung ausgeführt werden.
 
-### <a name="to-add-custom-code-to-the-project"></a>So fügen Sie dem Projekt benutzerdefinierten Code hinzu
+## <a name="add-code-to-the-project"></a>Hinzufügen von Code zum Projekt
 
-1. Benennen Sie im Projektmappen-Explorer die Quelldatei **Window1.xaml** in **L2XDBForm.xaml** um. Die abhängige Quelldatei **Window1.xaml.cs** sollte automatisch in **L2XDBForm.xaml.cs** umbenannt werden.
+1. Benennen Sie im **Projektmappen-Explorer** die Quelldatei **Window1.xaml** in **L2XDBForm.xaml** um. Die abhängige Quelldatei **Window1.xaml.cs** sollte automatisch in **L2XDBForm.xaml.cs** umbenannt werden.
 
 1. Ersetzen Sie den Quellcode in der Datei **L2XDBForm.xaml** durch den Codeabschnitt aus dem Artikel [L2DBForm.xaml-Quellcode](../designers/l2dbform-xaml-source-code.md). Verwenden Sie zum Arbeiten mit dieser Datei die XAML-Quellansicht.
 
@@ -53,13 +50,11 @@ Weitere Informationen zu Visual Studio finden Sie unter [Überblick über die Vi
 
 ## <a name="run-the-program"></a>Ausführen des Programms
 
-Das <legacyBold>LinqToXmlDataBinding</legacyBold>-Programm ermöglicht es dem Benutzer, eine Liste von Büchern anzuzeigen und zu bearbeiten, die als eingebettetes XML-Element gespeichert ist.
+Das LinqToXmlDataBinding-Programm ermöglicht es dem Benutzer, eine Liste von Büchern anzuzeigen und zu bearbeiten, die als eingebettetes XML-Element gespeichert ist.
 
 ### <a name="to-run-the-program-and-view-the-book-list"></a>So führen Sie das Programm aus und zeigen die Buchliste an
 
-- Führen Sie LinqToXmlDataBinding aus, indem Sie **F5** (**Debuggen starten**) oder **STRG**+**F5** (**Starten ohne Debuggen**) drücken.
-
-   Daraufhin wird ein Programmfenster mit dem Titel **WPF-Datenbindung mit LINQ to XML** angezeigt.
+Führen Sie LinqToXmlDataBinding aus, indem Sie **F5** (**Debuggen starten**) oder **STRG**+**F5** (**Starten ohne Debuggen**) drücken. Daraufhin wird ein Programmfenster mit dem Titel **WPF-Datenbindung mit LINQ to XML** angezeigt.
 
 - Achten Sie auf den obersten Abschnitt der Benutzeroberfläche. Dort wird das unformatierte **XML** angezeigt, das die Buchliste darstellt. Die Anzeige erfolgt unter Verwendung eines WPF-<xref:System.Windows.Controls.TextBlock>-Steuerelements, das keine Interaktion mithilfe von Maus oder Tastatur zulässt.
 

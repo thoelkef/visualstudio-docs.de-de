@@ -1,23 +1,25 @@
 ---
 title: IDebugComPlusSymbolProvider | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider interface
 ms.assetid: 5b98e908-fd15-49a6-9010-933c9b948085
-author: gregvanl
+caps.latest.revision: 10
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 707cf44f6c4bff961df4225d23d8918ed4548e04
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: eee0fd9f65d09eff9593ee1932b9e713639c262f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948985"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62876657"
 ---
 # <a name="idebugcomplussymbolprovider"></a>IDebugComPlusSymbolProvider
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Stellt einen COM+-Symbol-Anbieter mit Methoden, die spezifisch für verwalteten Code dar.  
   
 ## <a name="syntax"></a>Syntax  

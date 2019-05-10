@@ -1,27 +1,22 @@
 ---
 title: SDK der Nebenläufigkeitsschnellansicht | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.sdk.about
 ms.assetid: 4b22cdf9-59b1-4c88-a6d8-1644a4a11e08
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d98a5383a330242110bef860b9dc19a2fb6bef87
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 4fb6543f5e741010ae19e706ee4a87352d678390
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754828"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063789"
 ---
 # <a name="concurrency-visualizer-sdk"></a>Parallelitätsschnellansichts-SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,11 +34,11 @@ Sie können Ihren Quellcode instrumentieren und mithilfe des SDKs der Nebenläuf
   
 ##### <a name="to-add-sdk-support-to-a-c-or-visual-basic-project"></a>So fügen Sie einem C#- oder Visual Basic-Projekt Unterstützung für SDK hinzu  
   
-1.  Wählen Sie in der Menüleiste **Analysieren**,  **Nebenläufigkeitsschnellansicht** und **SDK zum Projekt hinzufügen** aus.  
+1. Wählen Sie in der Menüleiste **Analysieren**,  **Nebenläufigkeitsschnellansicht** und **SDK zum Projekt hinzufügen** aus.  
   
-2.  Wählen Sie das Projekt aus, in dem Sie auf das SDK zugreifen möchten, und wählen Sie anschließend die Schaltfläche **SDK zum ausgewählten Projekt hinzufügen** aus.  
+2. Wählen Sie das Projekt aus, in dem Sie auf das SDK zugreifen möchten, und wählen Sie anschließend die Schaltfläche **SDK zum ausgewählten Projekt hinzufügen** aus.  
   
-3.  Fügen Sie Ihrem Code eine Import- oder Using-Anweisung hinzu.  
+3. Fügen Sie Ihrem Code eine Import- oder Using-Anweisung hinzu.  
   
     ```csharp  
     using Microsoft.ConcurrencyVisualizer.Instrumentation;  
@@ -58,19 +53,19 @@ Sie können Ihren Quellcode instrumentieren und mithilfe des SDKs der Nebenläuf
   
 ##### <a name="to-add-sdk-support-to-a-c-or-c-project"></a>So fügen Sie einem C++- oder C-Projekt Unterstützung für SDK hinzu  
   
-1.  Wählen Sie in der Menüleiste **Analysieren**,  **Nebenläufigkeitsschnellansicht** und **SDK zum Projekt hinzufügen** aus.  
+1. Wählen Sie in der Menüleiste **Analysieren**,  **Nebenläufigkeitsschnellansicht** und **SDK zum Projekt hinzufügen** aus.  
   
-2.  Wählen Sie das Projekt aus, in dem Sie auf das SDK zugreifen möchten, und wählen Sie anschließend die Schaltfläche **SDK zum ausgewählten Projekt hinzufügen** aus.  
+2. Wählen Sie das Projekt aus, in dem Sie auf das SDK zugreifen möchten, und wählen Sie anschließend die Schaltfläche **SDK zum ausgewählten Projekt hinzufügen** aus.  
   
-3.  Schließen Sie in C++ `cvmarkersobj.h` ein. Schließen Sie in C `cvmarkers.h` ein.  
+3. Schließen Sie in C++ `cvmarkersobj.h` ein. Schließen Sie in C `cvmarkers.h` ein.  
   
-4.  Fügen Sie Ihrem Code eine Using-Anweisung hinzu.  
+4. Fügen Sie Ihrem Code eine Using-Anweisung hinzu.  
   
     ```  
     using namespace Concurrency::diagnostic;  
     ```  
   
-5.  Erstellen Sie ein `marker_series`-Objekt, und übergeben Sie es dem `span`-Konstruktor.  
+5. Erstellen Sie ein `marker_series`-Objekt, und übergeben Sie es dem `span`-Konstruktor.  
   
     ```cpp  
   
@@ -84,19 +79,19 @@ Sie können Ihren Quellcode instrumentieren und mithilfe des SDKs der Nebenläuf
   
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-visual-basic-project"></a>So verwenden Sie einen neuen Markeranbieter in einem C#- oder Visual Basic-Projekt  
   
-1.  Erstellen eines <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter>-Objekts  Der Konstruktor nimmt eine GUID an.  
+1. Erstellen eines <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter>-Objekts  Der Konstruktor nimmt eine GUID an.  
   
-2.  Öffnen Sie zum Registrieren des Anbieters das Dialogfeld [Erweiterte Einstellungen](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) der Nebenläufigkeitsschnellansicht.  Wählen Sie die Registerkarte **Marker**, und wählen Sie anschließend die Schaltfläche **Neuen Anbieter hinzufügen** aus. Geben Sie im Dialogfeld [Erweiterte Einstellungen](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) die GUID ein, die verwendet wurde, um den Anbieter und eine Beschreibung des Anbieters zu erstellen.  
+2. Öffnen Sie zum Registrieren des Anbieters das Dialogfeld [Erweiterte Einstellungen](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) der Nebenläufigkeitsschnellansicht.  Wählen Sie die Registerkarte **Marker**, und wählen Sie anschließend die Schaltfläche **Neuen Anbieter hinzufügen** aus. Geben Sie im Dialogfeld [Erweiterte Einstellungen](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) die GUID ein, die verwendet wurde, um den Anbieter und eine Beschreibung des Anbieters zu erstellen.  
   
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-c-project"></a>So verwenden Sie einen neuen Markeranbieter in einem C++- oder Visual Basic-Projekt  
   
-1.  Verwenden Sie die `CvInitProvider`-Funktion, um PCV_PROVIDER zu initialisieren.  Der Konstruktor nimmt eine GUID* und einen PCV_PROVIDER\* an.  
+1. Verwenden Sie die `CvInitProvider`-Funktion, um PCV_PROVIDER zu initialisieren.  Der Konstruktor nimmt eine GUID* und einen PCV_PROVIDER\* an.  
   
-2.  Öffnen Sie zum Registrieren des Anbieters das Dialogfeld [Erweiterte Einstellungen](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md).  Wählen Sie die Registerkarte **Marker**, und wählen Sie anschließend die Schaltfläche **Neuen Anbieter hinzufügen** aus. Geben Sie in diesem Dialogfeld die GUID ein, die verwendet wurde, um den Anbieter und eine Beschreibung des Anbieters zu erstellen.  
+2. Öffnen Sie zum Registrieren des Anbieters das Dialogfeld [Erweiterte Einstellungen](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md).  Wählen Sie die Registerkarte **Marker**, und wählen Sie anschließend die Schaltfläche **Neuen Anbieter hinzufügen** aus. Geben Sie in diesem Dialogfeld die GUID ein, die verwendet wurde, um den Anbieter und eine Beschreibung des Anbieters zu erstellen.  
   
 #### <a name="to-use-a-marker-series-in-a-c-or-visual-basic-project"></a>So verwenden Sie eine neue Markerserie in einem C#- oder Visual Basic-Projekt  
   
-1.  Um eine neue <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries> zu verwenden, erstellen Sie sie zuerst mithilfe eines <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter>-Objekts. Generieren Sie anschließend Markerereignisse direkt aus der neuen Serie.  
+1. Um eine neue <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries> zu verwenden, erstellen Sie sie zuerst mithilfe eines <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter>-Objekts. Generieren Sie anschließend Markerereignisse direkt aus der neuen Serie.  
   
     ```csharp  
     MarkerSeries series1 = myMarkerWriter.CreateMarkerSeries(″Series 1″);  
@@ -110,7 +105,7 @@ Sie können Ihren Quellcode instrumentieren und mithilfe des SDKs der Nebenläuf
   
 #### <a name="to-use-a-marker-series-in-a-c-project"></a>So verwenden Sie eine neue Markerserie in einem C++-Projekt  
   
-1.  Erstellen eines `marker_series`-Objekts  Sie können Ereignisse aus dieser neuen Serie generieren.  
+1. Erstellen eines `marker_series`-Objekts  Sie können Ereignisse aus dieser neuen Serie generieren.  
   
     ```scr  
     marker_series series;  
@@ -119,7 +114,7 @@ Sie können Ihren Quellcode instrumentieren und mithilfe des SDKs der Nebenläuf
   
 #### <a name="to-use-a-marker-series-in-a-c-project"></a>So verwenden Sie eine Markerserie in einem C-Projekt  
   
-1.  Verwenden Sie die `CvCreateMarkerSeries`-Funktion, um eine PCV_MARKERSERIES zu erstellen.  
+1. Verwenden Sie die `CvCreateMarkerSeries`-Funktion, um eine PCV_MARKERSERIES zu erstellen.  
   
     ```cpp  
     PCV_MARKERSERIES series;  
@@ -135,6 +130,3 @@ Sie können Ihren Quellcode instrumentieren und mithilfe des SDKs der Nebenläuf
 |[C Bibliotheksreferenz](../profiling/c-library-reference.md)|Beschreibt die Nebenläufigkeitsschnellansicht-API für C|  
 |<xref:Microsoft.ConcurrencyVisualizer.Instrumentation>|Beschreibt die Nebenläufigkeitsschnellansicht-API für verwalteten Code|  
 |[Nebenläufigkeitsschnellansicht](../profiling/concurrency-visualizer.md)|Referenzinformationen zu den Ansichten und Profilerstellungsdatendateien, die mithilfe der Nebenläufigkeitsmethode generiert werden und Threadausführungsdaten enthalten|
-
-
-

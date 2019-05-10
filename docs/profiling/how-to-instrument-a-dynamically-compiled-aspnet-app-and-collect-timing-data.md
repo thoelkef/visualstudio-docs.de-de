@@ -4,22 +4,22 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 54aed21b3f2a4d2ac7ac837bd001731c98ada987
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 581c72ba7a43e3a7b31fa45e10067e33e15f4e35
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386513"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>Vorgehensweise: Instrumentieren einer dynamisch kompilierten ASP.NET-Webanwendung und Sammeln ausführlicher Zeitsteuerungsdaten mit dem Profiler über die Befehlszeile
 
 In diesem Artikel erfahren Sie, wie Sie Befehlszeilentools der Visual Studio-Profilerstellungstools verwenden können, um mithilfe der Instrumentationsmethode zur Profilerstellung ausführliche Zeitdaten für eine dynamisch kompilierte [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Anwendung zu erfassen.
 
 > [!NOTE]
->  Informationen zum Abrufen des Pfads zu den Profilerstellungstools finden Sie unter [Angeben des Pfads zu Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Auf 64-Bit-Computern sind sowohl 64 Bit- als auch 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen.
+> Informationen zum Abrufen des Pfads zu den Profilerstellungstools finden Sie unter [Angeben des Pfads zu Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Auf 64-Bit-Computern sind sowohl 64 Bit- als auch 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen.
 
 Wenn Sie Leistungsdaten aus einer [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendung erfassen möchten, müssen Sie die *web.config*-Datei der Zielanwendung bearbeiten, um das [VSInstr.exe](../profiling/vsinstr.md)-Tool zu aktivieren, damit die Dateien der dynamisch kompilierten Anwendung instrumentiert werden können. Verwenden Sie anschließend das [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md)-Tool, um auf dem Webserver passende Umgebungsvariablen festzulegen, über die die Profilerstellung aktiviert werden kann. Starten Sie den Computer anschließend neu.
 
@@ -65,7 +65,6 @@ Starten Sie den Profiler, und führen Sie dann die Zielanwendung aus. Während d
      | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Gibt einen Windows-Leistungsindikator an, dessen Daten während der Profilerstellung gesammelt werden sollen. |
      | [/automark](../profiling/automark.md) **:** `Interval` | Verwenden Sie nur **/wincounter**. Gibt die Anzahl von Millisekunden zwischen Ereignissen bei der Datensammlung mit Windows-Leistungsindikatoren an. Der Standardwert ist 500 ms. |
      | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Gibt ein ETW-Ereignis (Ereignisablaufverfolgung für Windows) an, dessen Daten während der Profilerstellung gesammelt werden sollen. ETW-Ereignisse werden in einer separaten Datei (*ETL*) gesammelt. |
-
 
 3. Starten Sie die [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendung auf die gewohnte Weise.
 
@@ -115,5 +114,5 @@ Wenn Sie die Profilerstellung abgeschlossen haben, ersetzen Sie die *web.config*
 
 ## <a name="see-also"></a>Siehe auch
 
-[Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)  
-[Datenansichten der Instrumentierungsmethode](../profiling/instrumentation-method-data-views.md)
+[Profilerstellung für ASP.NET-Webanwendungen über die Befehlszeile](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+[Instrumentierungsmethoden-Datenansichten](../profiling/instrumentation-method-data-views.md)

@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Debuggen von eingefügtem Code | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.injected
@@ -23,17 +21,17 @@ helpviewer_keywords:
 ms.assetid: a1b4104d-d49e-451f-a91e-e39ceaf35875
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8efcc5780b27967644330e55dc540333a19105a2
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: MTE95
+ms.openlocfilehash: 35d2343343bf554df7592c8616e7697d88665baf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389337"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847782"
 ---
-# <a name="how-to-debug-injected-code"></a>Gewusst wie: Debuggen von eingefügtem Code
+# <a name="how-to-debug-injected-code"></a>Vorgehensweise: Debuggen von eingefügtem Code
 
 > [!NOTE]
 > Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü Extras auf Einstellungen importieren und exportieren, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Reset settings (Zurücksetzen der Einstellungen)](../ide/environment-settings.md#reset-settings).
@@ -48,25 +46,25 @@ Im Fenster **Disassemblierung** werden Assemblysprachanweisungen angezeigt, die 
 
 ## <a name="to-turn-on-source-annotation"></a>So aktivieren Sie Quellcodeanmerkungen
 
--   Klicken Sie mit der rechten Maustaste auf das **Disassemblierungsfenster**, und wählen Sie im Kontextmenü **Quellcode anzeigen** aus.
+- Klicken Sie mit der rechten Maustaste auf das **Disassemblierungsfenster**, und wählen Sie im Kontextmenü **Quellcode anzeigen** aus.
 
      Wenn Sie wissen, an welcher Stelle sich ein Attribut im Quellcodefenster befindet, können Sie das Kontextmenü verwenden, um den eingefügten Code im **Disassemblierungsfenster** zu suchen.
 
 ## <a name="to-view-injected-code"></a>So zeigen Sie eingefügten Code an
 
-1.  Der Debugger muss sich im Unterbrechungsmodus befinden.
+1. Der Debugger muss sich im Unterbrechungsmodus befinden.
 
-2.  Positionieren Sie den Cursor im Quellcodefenster vor dem Attribut, dessen eingefügter Code angezeigt werden soll.
+2. Positionieren Sie den Cursor im Quellcodefenster vor dem Attribut, dessen eingefügter Code angezeigt werden soll.
 
-3.  Klicken Sie mit der rechten Maustaste, und wählen Sie im Kontextmenü **Zu Disassemblierung wechseln** aus.
+3. Klicken Sie mit der rechten Maustaste, und wählen Sie im Kontextmenü **Zu Disassemblierung wechseln** aus.
 
      Wenn sich das Attribut in der Nähe des aktuellen Ausführungspunktes befindet, können Sie das **Disassemblierungsfenster** über das Menü **Debuggen** öffnen.
 
 ## <a name="to-view-the-disassembly-code-at-the-current-execution-point"></a>So zeigen Sie den Disassemblycode am aktuellen Ausführungspunkt an
 
-1.  Der Debugger muss sich im Unterbrechungsmodus befinden.
+1. Der Debugger muss sich im Unterbrechungsmodus befinden.
 
-2.  Wählen Sie im Menü **Debuggen** die Option **Fenster** aus, und klicken Sie auf **Disassemblierung**.
+2. Wählen Sie im Menü **Debuggen** die Option **Fenster** aus, und klicken Sie auf **Disassemblierung**.
 
 ## <a name="see-also"></a>Siehe auch
 

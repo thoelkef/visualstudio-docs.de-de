@@ -1,21 +1,20 @@
 ---
 title: Umgestaltung
 ms.date: 01/10/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - refactoring [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0518935b2d77f0d9348864e4094aae2dcf5c481d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 15a36378efe7b6e3151882d5e6927cd7fbfa4542
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866282"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793179"
 ---
 # <a name="refactor-code"></a>Refactoring von Code
 
@@ -23,7 +22,11 @@ Refactoring stellt den Prozess der Codeänderung mit dem Ziel dar, diesen leicht
 
 ## <a name="programming-languages"></a>Programmiersprachen
 
-In Visual Studio stehen verschiedene Refactoringvorgänge für verschiedene Programmiersprachen zur Verfügung. Die Themen in diesem Abschnitt erläutern die Refactoringoptionen, die für C# und Visual Basic verfügbar sind. Informationen zum Refactoring von in C++ geschriebenem Code finden Sie unter [Schreiben und Refactoring von Code (C++)](/cpp/ide/writing-and-refactoring-code-cpp). Refactoringunterstützung für F# wird durch die [Visual F# Power Tools](https://marketplace.visualstudio.com/items?itemName=FSharpSoftwareFoundation.VisualFPowerTools) bereitgestellt, eine Visual Studio-Erweiterung eines Drittanbieters.
+In Visual Studio stehen verschiedene Refactoringvorgänge für verschiedene Programmiersprachen zur Verfügung:
+
+- Die Seiten in diesem Abschnitt der Tabelle mit Inhalten erläutern die Refactoringoptionen, die für C# und Visual Basic verfügbar sind. Beispiele dafür sind [Refactoring des Extrahierens einer Methode](reference/extract-method.md) und [Verschieben eines Typs in ein entsprechendes Dateirefactoring](reference/move-type-to-matching-file.md).
+- Informationen zum Refactoring von in C++ geschriebenem Code finden Sie unter [Schreiben und Refactoring von Code (C++)](/cpp/ide/writing-and-refactoring-code-cpp).
+- Refactoringunterstützung für F# wird durch die [Visual F# Power Tools](https://marketplace.visualstudio.com/items?itemName=FSharpSoftwareFoundation.VisualFPowerTools) bereitgestellt, eine Visual Studio-Erweiterung eines Drittanbieters.
 
 ## <a name="see-also"></a>Siehe auch
 

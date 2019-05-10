@@ -1,14 +1,9 @@
 ---
 title: Gliederung in einem Legacysprachdienst | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - outlining
 - language services [managed package framework], outlining
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 7b5578b4-a20a-4b94-ad4c-98687ac133b9
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 356b3d49fa8eb74ef2352e6ba36597d1c39fecf4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6096f89a36cdd47d2dec68af5801a94dc77acb43
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51751542"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408555"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Gliederung in einem Legacysprachdienst
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Gliederung ermöglicht es, ein komplexes Programm in einer Übersicht bzw. die G
  Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Wenn Sie mehr erfahren möchten, finden Sie unter [Exemplarische Vorgehensweise: Gliedern](../../extensibility/walkthrough-outlining.md).  
   
 > [!NOTE]
->  Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
+> Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
   
 ## <a name="enabling-support-for-outlining"></a>Aktivieren der Unterstützung für eine Gliederung  
  Die `AutoOutlining` Registrierungseintrags auf 1 festgelegt ist, um automatische Gliederung zu aktivieren. Automatische Gliederung richtet eine Analyse der gesamten Quelle, wenn eine Datei geladen oder geändert, um die ausgeblendeten Bereiche zu identifizieren und die Gliederung Symbole anzeigen. Gliederung kann auch manuell vom Benutzer gesteuert werden.  
@@ -127,4 +122,3 @@ namespace MyLanguagePackage
 ## <a name="see-also"></a>Siehe auch  
  [Legacy-Dienst-Sprachfunktionen](../../extensibility/internals/legacy-language-service-features1.md)   
  [Registrieren eines Legacysprachdiensts](../../extensibility/internals/registering-a-legacy-language-service1.md)
-

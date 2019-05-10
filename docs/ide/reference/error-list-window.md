@@ -1,8 +1,6 @@
 ---
 title: Fehlerliste (Fenster)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ErrorList
@@ -14,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: b7f6d45a-733b-4ad8-bc2f-737a37509e56
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 069f2a4957338ec3ab29855d9629712c7eb7cdcc
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 603faab80e185e7d22cba1ee544502d790afcdc0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389052"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790862"
 ---
 # <a name="error-list-window"></a>Fehlerliste (Fenster)
 
@@ -31,17 +29,17 @@ ms.locfileid: "52389052"
 
 Mit dem Fenster **Fehlerliste** können Sie die folgenden Aufgaben ausführen:
 
--   Anzeigen von Fehlern, Warnungen und Meldungen, die beim Bearbeiten und Schreiben von Code ausgegeben werden.
+- Anzeigen von Fehlern, Warnungen und Meldungen, die beim Bearbeiten und Schreiben von Code ausgegeben werden.
 
--   Suchen nach Syntaxfehlern, die von IntelliSense erkannt werden.
+- Suchen nach Syntaxfehlern, die von IntelliSense erkannt werden.
 
--   Suchen nach Bereitstellungsfehlern, bestimmten Fehlern bei statischer Analyse sowie Fehlern, die bei der Anwendung von Enterprise-Vorlagenrichtinien gefunden werden.
+- Suchen nach Bereitstellungsfehlern, bestimmten Fehlern bei statischer Analyse sowie Fehlern, die bei der Anwendung von Enterprise-Vorlagenrichtinien gefunden werden.
 
--   Doppelklicken auf eine beliebige Fehlermeldung, um die Datei, in der das Problem aufgetreten ist, zu öffnen und zur entsprechenden Stelle zu wechseln.
+- Doppelklicken auf eine beliebige Fehlermeldung, um die Datei, in der das Problem aufgetreten ist, zu öffnen und zur entsprechenden Stelle zu wechseln.
 
--   Filtern der anzuzeigenden Einträge und der Informationsspalten, die für jeden Eintrag angezeigt werden.
+- Filtern der anzuzeigenden Einträge und der Informationsspalten, die für jeden Eintrag angezeigt werden.
 
--   Suchen nach bestimmten Begriffen und Eingrenzen der Suche auf das aktuelle Projekt oder Dokument.
+- Suchen nach bestimmten Begriffen und Eingrenzen der Suche auf das aktuelle Projekt oder Dokument.
 
 Zum Anzeigen der **Fehlerliste**, wählen Sie **Ansicht** > **Fehlerliste** aus, oder drücken Sie **STRG**+**\\**+**E**.
 
@@ -55,14 +53,14 @@ Es gibt zwei Filtertypen in beiden Dropdownfeldern, einen auf der rechten Seite 
 
 Sie können den Suchbereich einschränken, um Gruppen von Fehlern zu analysieren und zu behandeln. Beispielsweise sollten Sie sich auf Kernfehler konzentrieren, die das Kompilieren eines Projekts verhindern. Es gibt folgende Eingrenzungsoptionen:
 
-1.  **Geöffnete Dokumente**: Zeigt Fehler, Warnungen und Meldungen für die offenen Dokumente an.
+1. **Geöffnete Dokumente**: Zeigt Fehler, Warnungen und Meldungen für die geöffneten Dokumente an.
 
-2.  **Aktuelles Projekt**: Zeigt Fehler, Warnungen und Meldungen aus dem Projekt des aktuell ausgewählten Dokuments im **Editor** oder dem ausgewählten Projekt im **Projektmappen-Explorer** an.
+2. **Aktuelles Projekt**: Zeigt Fehler, Warnungen und Meldungen aus dem Projekt des aktuell ausgewählten Dokuments im **Editor** oder dem ausgewählten Projekt im **Projektmappen-Explorer** an.
 
     > [!NOTE]
     > Die gefilterte Liste von Fehlern, Warnungen und Meldungen ändert sich, wenn das Projekt des aktuell ausgewählten Dokuments sich von dem im **Projektmappen-Explorer** ausgewählten Projekt unterscheidet.
 
-3.  **Aktuelles Dokument**: Zeigt Fehler, Warnungen und Meldungen für das aktuell ausgewählte Dokument im **Editor** oder **Projektmappen-Explorer** an.
+3. **Aktuelles Dokument**: Zeigt Fehler, Warnungen und Meldungen für das aktuell ausgewählte Dokument im **Editor** oder **Projektmappen-Explorer** an.
 
 Wenn aktuell ein Filter auf das Suchergebnis angewendet ist, wird der Name des Filters in der Titelleiste **Fehlerliste** angezeigt. Die Schaltflächen **Fehler**, **Warnungen** und **Meldungen** zeigen dann die Anzahl von gefilterten Elementen an, die zusammen mit der Gesamtanzahl von Elementen angezeigt werden. Beispielsweise zeigen die Schaltflächen „x von y Fehler“ an. Wenn kein Filter angewendet wird, wird auf der Titelleiste nur „Fehlerliste“ angezeigt.
 
@@ -86,7 +84,7 @@ Code
 
 Zeigt den Fehlercode an.
 
-Beschreibung 
+Beschreibung
 
 Zeigt den Text des Eintrags an.
 

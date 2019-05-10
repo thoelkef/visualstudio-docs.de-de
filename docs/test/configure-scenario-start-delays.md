@@ -7,14 +7,13 @@ helpviewer_keywords:
 ms.assetid: 2f634fba-8dfa-4c7a-a8b9-be867b78d16a
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: b9cd7790bb121e5b3942767a6ac372b5f10ca914
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: e053ee01d60d1ce3dcae10e044bb642e11f90dd7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911201"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963792"
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>Konfigurieren des Szenarios „Startverzögerungen in Auslastungstests“
 

@@ -2,7 +2,6 @@
 title: '&lt;Anwendung&gt; -Element (Office-Entwicklung in Visual Studio)'
 titleSuffix: ''
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -11,15 +10,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <application> element
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7b2f0035bd4072e3245aa44be64d05ef059a70cb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 80652f6752b87cf0413b0b3166b0cf3292231c25
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950276"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62942910"
 ---
 # <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;Anwendung&gt; -Element (Office-Entwicklung in Visual Studio)
   Das `application` -Element des `vstav3` -Namespace umschließt die Beschreibung von Office-Projektmappen Die untergeordneten Elemente sind für Anpassungen auf Dokumentebene und für VSTO-Add-Ins unterschiedlich.

@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Anzeigen einer durch Trennzeichen getrennten Elementliste | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, separating items with semicolons
@@ -10,64 +8,64 @@ helpviewer_keywords:
 ms.assetid: 3cae844c-7c6d-4144-82dc-efad10ba458f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1507a297c1baf7f410bde1c6d32e48b43a9cdc2
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: b01e39569207065fac9c28d093267348a829d73f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945045"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Vorgehensweise: Anzeigen einer durch Trennzeichen getrennten Elementliste
-Beim Arbeiten mit dem Elementlisten in [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) ist es manchmal hilfreich, den Inhalt dieser Elementlisten in einer leicht lesbaren Ansicht anzuzeigen. Oder Sie haben eine Aufgabe, die eine Liste von durch ein bestimmtes Trennzeichen getrennten Elementen akzeptiert. In beiden Fällen haben Sie die Möglichkeit, eine Trennzeichenabfolge für eine Elementliste anzugeben.  
-  
-## <a name="separate-items-in-a-list-with-commas"></a>Trennen von Elementen in einer Liste mit Kommas  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] verwendet standardmäßig Semikolons zum Trennen von Elementen in einer Liste. Sehen Sie sich beispielsweise das `Message`-Element mit dem folgenden Wert an:  
-  
- `<Message Text="This is my list of TXT files: @(TXTFile)"/>`  
-  
- Wenn die `@(TXTFile)`-Elementliste die Elemente *App1.txt*, *App2.txt* und *App3.txt* enthält, lautet die Meldung:  
-  
- `This is my list of TXT files: App1.txt;App2.txt;App3.txt`  
-  
- Wenn Sie das Standardverhalten ändern möchten, können Sie ein eigenes Trennzeichen angeben. Die Syntax eines Trennzeichens für Elementlisten ist:  
-  
- `@(ItemListName, '<separator>')`  
-  
- Das Trennzeichen kann ein einzelnes Zeichen oder eine Zeichenfolge sein und muss in einfache Anführungszeichen eingeschlossen werden.  
-  
-#### <a name="to-insert-a-comma-and-a-space-between-items"></a>So fügen Sie ein Komma und ein Leerzeichen zwischen Elementen ein  
-  
--   Verwenden Sie in etwa diese Elementnotation:  
-  
-     `@(TXTFile, ', ')`  
-  
-## <a name="example"></a>Beispiel  
- In diesem Beispiel führt die Aufgabe [Exec](../msbuild/exec-task.md) das Tool „findstr“ aus, um die angegebenen Textzeichenfolgen in der Datei *Phrases.txt* zu suchen. Im Befehl „findstr“ werden buchstabengetreue Suchzeichenfolgen mit dem Schalter **-c:** gekennzeichnet. Das Elementtrennzeichen `-c:` wird also zwischen Elementen in der `@(Phrase)`-Elementliste eingefügt.  
-  
- In diesem Beispiel lautet die entsprechende Befehlszeile:  
-  
- `findstr /i /c:hello /c:world /c:msbuild phrases.txt`  
-  
-```xml  
-<Project DefaultTargets = "Find"  
-    xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >  
-  
-    <ItemGroup>  
-        <Phrase Include="hello"/>  
-        <Phrase Include="world"/>  
-        <Phrase Include="msbuild"/>  
-    </ItemGroup>  
-  
-    <Target Name = "Find">  
-        <!-- Find some strings in a file -->  
-        <Exec Command="findstr /i /c:@(Phrase, ' /c:') phrases.txt"/>  
-    </Target>  
-</Project>  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [MSBuild-Referenz](../msbuild/msbuild-reference.md)   
- [Elemente](../msbuild/msbuild-items.md)
+Beim Arbeiten mit dem Elementlisten in [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) ist es manchmal hilfreich, den Inhalt dieser Elementlisten in einer leicht lesbaren Ansicht anzuzeigen. Oder Sie haben eine Aufgabe, die eine Liste von durch ein bestimmtes Trennzeichen getrennten Elementen akzeptiert. In beiden Fällen haben Sie die Möglichkeit, eine Trennzeichenabfolge für eine Elementliste anzugeben.
+
+## <a name="separate-items-in-a-list-with-commas"></a>Trennen von Elementen in einer Liste mit Kommas
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] verwendet standardmäßig Semikolons zum Trennen von Elementen in einer Liste. Sehen Sie sich beispielsweise das `Message`-Element mit dem folgenden Wert an:
+
+`<Message Text="This is my list of TXT files: @(TXTFile)"/>`
+
+Wenn die `@(TXTFile)`-Elementliste die Elemente *App1.txt*, *App2.txt* und *App3.txt* enthält, lautet die Meldung:
+
+`This is my list of TXT files: App1.txt;App2.txt;App3.txt`
+
+Wenn Sie das Standardverhalten ändern möchten, können Sie ein eigenes Trennzeichen angeben. Die Syntax eines Trennzeichens für Elementlisten ist:
+
+`@(ItemListName, '<separator>')`
+
+Das Trennzeichen kann ein einzelnes Zeichen oder eine Zeichenfolge sein und muss in einfache Anführungszeichen eingeschlossen werden.
+
+#### <a name="to-insert-a-comma-and-a-space-between-items"></a>So fügen Sie ein Komma und ein Leerzeichen zwischen Elementen ein
+
+- Verwenden Sie in etwa diese Elementnotation:
+
+    `@(TXTFile, ', ')`
+
+## <a name="example"></a>Beispiel
+In diesem Beispiel führt die Aufgabe [Exec](../msbuild/exec-task.md) das Tool „findstr“ aus, um die angegebenen Textzeichenfolgen in der Datei *Phrases.txt* zu suchen. Im Befehl „findstr“ werden buchstabengetreue Suchzeichenfolgen mit dem Schalter **-c:** gekennzeichnet. Das Elementtrennzeichen `-c:` wird also zwischen Elementen in der `@(Phrase)`-Elementliste eingefügt.
+
+In diesem Beispiel lautet die entsprechende Befehlszeile:
+
+`findstr /i /c:hello /c:world /c:msbuild phrases.txt`
+
+```xml
+<Project DefaultTargets = "Find"
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >
+
+    <ItemGroup>
+        <Phrase Include="hello"/>
+        <Phrase Include="world"/>
+        <Phrase Include="msbuild"/>
+    </ItemGroup>
+
+    <Target Name = "Find">
+        <!-- Find some strings in a file -->
+        <Exec Command="findstr /i /c:@(Phrase, ' /c:') phrases.txt"/>
+    </Target>
+</Project>
+```
+
+## <a name="see-also"></a>Siehe auch
+- [MSBuild-Referenz](../msbuild/msbuild-reference.md)
+- [Elemente](../msbuild/msbuild-items.md)

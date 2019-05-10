@@ -1,14 +1,9 @@
 ---
 title: 'Idiasymbol:: Get_sealed | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: cd1fef1f-47de-47c7-885f-f6f0a9a07d8c
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fe0fc949183396cb626f0a41bc0a021a3b663065
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5a25bf67daa11e6bf9464cc29d696bb7c243b617
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766106"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433993"
 ---
 # <a name="idiasymbolgetsealed"></a>IDiaSymbol::get_sealed
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ HRESULT get_sealed( 
  Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="remarks"></a>Hinweise  
  Eine versiegelte Klasse kann nicht als Basisklasse verwendet werden. Eine versiegelte Methode darf nicht außer Kraft gesetzt sein.  
@@ -60,6 +55,3 @@ HRESULT get_sealed( 
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

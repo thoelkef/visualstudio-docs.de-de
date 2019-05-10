@@ -15,22 +15,21 @@ helpviewer_keywords:
 ms.assetid: 22c5ade4-4159-4667-b891-0c1aa06f4df5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54f3f19617e71137f6f318f62d13c9119727f5f0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7da05a71d5de4a8f1ec6ef5fbb27a2e74220a1ef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993227"
 ---
 # <a name="sgen-task"></a>SGen-Aufgabe
-Erstellt eine XML-Serialisierungsassembly für Typen in der angegebenen Assembly. Diese Aufgabe umschließt das XML Serializer Generator-Tool (*Sgen.exe*). Weitere Informationen finden Sie unter [XML Serializer Generator-Tool (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).  
+Erstellt eine XML-Serialisierungsassembly für Typen in der angegebenen Assembly. Diese Aufgabe umschließt das XML Serializer Generator-Tool (*Sgen.exe*). Weitere Informationen finden Sie unter [XML Serializer Generator-Tool (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).
 
-## <a name="parameters"></a>Parameter  
- In der folgenden Tabelle werden die Parameter der `SGen` -Aufgabe beschrieben.  
-
+## <a name="parameters"></a>Parameter
+ In der folgenden Tabelle werden die Parameter der `SGen` -Aufgabe beschrieben.
 
 | Parameter | Beschreibung |
 |-----------------------------| - |
@@ -50,10 +49,10 @@ Erstellt eine XML-Serialisierungsassembly für Typen in der angegebenen Assembly
 | `Types` | Optionaler `String[]` -Parameter.<br /><br /> Ruft eine Liste der spezifischen Typen ab, für die Serialisierungscode generiert werden soll, oder legt sie fest. SGen generiert nur für diese Typen Serialisierungscode. |
 | `UseProxyTypes` | Erforderlicher `Boolean` -Parameter.<br /><br /> Wenn `true`, generiert die SGen-Aufgabe Serialisierungscode ausschließlich für die Proxytypen des XML-Webdiensts. |
 
-## <a name="remarks"></a>Hinweise  
- Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.ToolTaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.ToolTask>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [ToolTaskExtension-Basisklasse](../msbuild/tooltaskextension-base-class.md).  
+## <a name="remarks"></a>Anmerkungen
+ Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.ToolTaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.ToolTask>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [ToolTaskExtension-Basisklasse](../msbuild/tooltaskextension-base-class.md).
 
-## <a name="see-also"></a>Siehe auch  
- [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)   
- [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
- [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)
+## <a name="see-also"></a>Siehe auch
+- [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
+- [Aufgaben](../msbuild/msbuild-tasks.md)
+- [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)

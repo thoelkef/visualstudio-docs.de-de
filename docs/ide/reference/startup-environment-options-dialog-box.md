@@ -1,25 +1,35 @@
 ---
 title: Start, Umgebung, Dialogfeld „Optionen“
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.Startup
 ms.assetid: 9d517203-3c62-4660-b7b4-ea7d032dcb1e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e970655f37b02d588064ac57c5dea30bf5b1214e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 27f67c00173db998b32d0a012af55428b87d1eda
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939238"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950913"
 ---
-# <a name="startup-environment-options-dialog-box"></a>Start, Umgebung, Dialogfeld „Optionen“
-Verwenden Sie diese Seite zum Anpassen der Visual Studio-Startseite oder zum Festlegen einer anderen Standardaktion beim Start von Visual Studio. Weitere Informationen finden Sie unter [Anpassen der Startseite](../../ide/customizing-the-start-page-for-visual-studio.md).
+# <a name="options-dialog-box-environment--startup"></a>Dialogfeld „Optionen“: Umgebung \> Start
+
+::: moniker range="vs-2017"
+
+Verwenden Sie diese Seite zum Anpassen der Visual Studio-Startseite oder zum Festlegen einer anderen Standardaktion beim Start von Visual Studio. Weitere Informationen finden Sie unter [Anpassen der Startseite für Visual Studio](../../ide/customizing-the-start-page-for-visual-studio.md).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Verwenden Sie diese Seite zum Festlegen einer anderen Standardaktion beim Start von Visual Studio. Sie können in der Liste **On startup, open** (Beim Start öffnen) zwischen **Startfenster** (über das Sie ein neues oder vorhandenes Projekt öffnen können), **Letzte Projektmappe** und **Leere Umgebung** auswählen.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Siehe auch
 

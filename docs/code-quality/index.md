@@ -1,23 +1,24 @@
 ---
 layout: LandingPage
 title: Codeanalyse
-description: Erfahren Sie, wie Sie Visual Studio 2017 verwenden, um die Codequalität zu analysieren.
+description: Erfahren Sie, wie Sie Visual Studio verwenden, um die Codequalität zu analysieren.
 ms.date: 12/03/2018
-ms.prod: visual-studio-dev15
 ms.topic: landing-page
 ms.author: gewarren
 author: gewarren
-manager: douge
-ms.openlocfilehash: c5a4d238c897b60258d87ed231d6d4cced26e476
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 9cc40bdd7b0e120e3a8e3e5be28f4d399afb9210
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936632"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820732"
 ---
 # <a name="code-analysis-in-visual-studio"></a>Codeanalyse in Visual Studio
 
 Visual Studio bietet verschiedene Tools zur Analyse und Verbesserung der Codequalität.
+
+<!-- markdownlint-disable MD033 -->
 
 <br />
 

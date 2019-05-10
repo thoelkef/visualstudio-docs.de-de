@@ -1,23 +1,20 @@
 ---
 title: Messaging-Aktivitätsdesigner | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: 897e63cf-a42f-4edd-876f-c4ccfffaf6d6
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 254b8d819da8cd1d06d21699940c3b118aa75119
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 250b213fc3bc54d67f55d41c5eb3aba7e3488cd4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274754"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62420215"
 ---
 # <a name="messaging-activity-designers"></a>Messaging-Aktivitätsdesigner
 Messaging-Aktivitätsdesigner werden verwendet, um Messaging-Aktivitäten zu erstellen und zu konfigurieren, die [!INCLUDE[indigo1](../includes/indigo1-md.md)]-Nachrichten in einer [!INCLUDE[wf](../includes/wf-md.md)]-Anwendung senden und empfangen. Der [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] führt fünf Messaging-Aktivitäten ein, und der [!INCLUDE[wfd1](../includes/wfd1-md.md)] stellt zwei neue Vorlagen-Designer bereit, die Ihnen ermöglichen, das Messaging innerhalb eines Workflows zu verwalten. Die Themen, die in diesem Abschnitt enthalten und in der folgenden Tabelle aufgeführt sind, enthalten Anleitungen dazu, wie die [!INCLUDE[wfd2](../includes/wfd2-md.md)]-Aktivitäts- und Vorlagen-Designer verwendet werden.  

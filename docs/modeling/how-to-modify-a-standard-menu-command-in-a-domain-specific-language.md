@@ -7,16 +7,15 @@ helpviewer_keywords:
 - Domain-Specific Language, adding custom commands
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: bc7eedfbdf725333a5cd6d3cdd3d683437d1979c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8a2e6bf4ffd22c6f4e3c63315a1c4a221f621c08
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870189"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62811384"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Vorgehensweise: Ändern eines Standardmenübefehls in einer domänenspezifischen Sprache
 
@@ -29,15 +28,15 @@ Sie können das Verhalten einiger Standardbefehle ändern, die automatisch im DS
 
 ### <a name="to-discover-what-commands-you-can-modify"></a>So ermitteln Sie, welche Befehle Sie ändern können
 
-1.  In der `DslPackage` geöffneten Projekt `GeneratedCode\CommandSet.cs`. Diese C#-Datei finden Sie im Projektmappen-Explorer als untergeordnete `CommandSet.tt`.
+1. In der `DslPackage` geöffneten Projekt `GeneratedCode\CommandSet.cs`. Diese C#-Datei finden Sie im Projektmappen-Explorer als untergeordnete `CommandSet.tt`.
 
-2.  Suchen von Klassen in dieser Datei, deren Namen enden mit "`CommandSet`", z. B. `Language1CommandSet` und `Language1ClipboardCommandSet`.
+2. Suchen von Klassen in dieser Datei, deren Namen enden mit "`CommandSet`", z. B. `Language1CommandSet` und `Language1ClipboardCommandSet`.
 
-3.  Geben Sie in jeder festgelegten Klasse des Befehls "`override`" gefolgt von einem Leerzeichen ein. IntelliSense zeigt eine Liste der Methoden an, die Sie überschreiben können. Jeder Befehl verfügt über ein Paar von Methoden, deren Namen mit "`ProcessOnStatus`" und "`ProcessOnMenu`" beginnen.
+3. Geben Sie in jeder festgelegten Klasse des Befehls "`override`" gefolgt von einem Leerzeichen ein. IntelliSense zeigt eine Liste der Methoden an, die Sie überschreiben können. Jeder Befehl verfügt über ein Paar von Methoden, deren Namen mit "`ProcessOnStatus`" und "`ProcessOnMenu`" beginnen.
 
-4.  Beachten Sie, welche der festgelegten Klassen des Befehls den Befehl enthält, den Sie verändern möchten.
+4. Beachten Sie, welche der festgelegten Klassen des Befehls den Befehl enthält, den Sie verändern möchten.
 
-5.  Schließen Sie die Datei, ohne Ihre Änderungen zu speichern.
+5. Schließen Sie die Datei, ohne Ihre Änderungen zu speichern.
 
     > [!NOTE]
     > Normalerweise sollten Sie keine Dateien bearbeiten, die generiert wurden. Änderungen gehen verloren, wenn die Dateien das nächste Mal generiert werden.
@@ -48,15 +47,15 @@ Erstellen Sie eine neue Datei, die eine partielle Deklaration der festgelegten K
 
 ### <a name="to-extend-the-command-set-class"></a>So erweitern Sie die festgelegte Klasse des Befehls
 
-1.  Öffnen Sie im Solution Explorer, im DslPackage-Projekt, den Ordner "GeneratedCode". Öffnen Sie dann unter "CommandSet.tt" die generierte Datei "CommandSet.cs". Notieren Sie sich den Namespace und den Namen der ersten dort definierten Klasse. Sie könnten dort z. B. Folgendes sehen:
+1. Öffnen Sie im Projektmappen-Explorer im Projekt "DslPackage" den Ordner "GeneratedCode". Suchen Sie unter "CommandSet.tt" die generierte Datei "CommandSet.cs", und öffnen Sie sie. Notieren Sie sich den Namespace und den Namen der ersten dort definierten Klasse. Es wird beispielsweise Folgendes angezeigt:
 
      `namespace Company.Language1`
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2.  In **DslPackage**, erstellen Sie einen Ordner mit dem Namen **benutzerdefinierter Code**. Erstellen Sie in diesem Ordner eine neue Klassendatei mit dem Namen `CommandSet.cs`.
+2. In **DslPackage**, erstellen Sie einen Ordner mit dem Namen **benutzerdefinierter Code**. Erstellen Sie in diesem Ordner eine neue Klassendatei mit dem Namen `CommandSet.cs`.
 
-3.  Schreiben Sie in die neue Datei eine partielle Deklaration mit demselben Namespace und Namen wie die generierte partielle Klasse. Zum Beispiel:
+3. Schreiben Sie in die neue Datei eine partielle Deklaration mit demselben Namespace und Namen wie die generierte partielle Klasse. Zum Beispiel:
 
     ```csharp
     using System;
@@ -129,17 +128,17 @@ Wenn der Code Änderungen am Speicher vornimmt, wie Erstellen, Löschen oder Akt
 
 Die folgenden Fragmente sind innerhalb dieser Methoden oft hilfreich:
 
--   `this.CurrentSelection`. Die Form, die der Benutzer mit der rechten Maustaste angeklickt hat, ist immer in dieser Liste mit Formen und Konnektoren enthalten. Wenn der Benutzer auf einen leeren Teil des Diagramms klickt, ist das Diagramm als einziges Teil der Liste.
+- `this.CurrentSelection`. Die Form, die der Benutzer mit der rechten Maustaste angeklickt hat, ist immer in dieser Liste mit Formen und Konnektoren enthalten. Wenn der Benutzer auf einen leeren Bereich des Diagramms klickt, ist das Diagramm das einzige Mitglied der Liste.
 
--   `this.IsDiagramSelected()` - `true` Wenn der Benutzer einen leeren Bereich des Diagramms geklickt hat.
+- `this.IsDiagramSelected()` - `true` Wenn der Benutzer einen leeren Bereich des Diagramms geklickt hat.
 
--   `this.IsCurrentDiagramEmpty()`
+- `this.IsCurrentDiagramEmpty()`
 
--   `this.IsSingleSelection()` -der Benutzer hat nicht mehrere Formen ausgewählt
+- `this.IsSingleSelection()` -der Benutzer hat nicht mehrere Formen ausgewählt
 
--   `this.SingleSelection` – die Form oder das Diagramm, auf das der Benutzer mit der rechten Maustaste geklickt hat
+- `this.SingleSelection` – die Form oder das Diagramm, auf das der Benutzer mit der rechten Maustaste geklickt hat
 
--   `shape.ModelElement as MyLanguageElement` – das Modellelement, das durch eine Form dargestellt wird
+- `shape.ModelElement as MyLanguageElement` – das Modellelement, das durch eine Form dargestellt wird
 
 Weitere Informationen zur Verwendung von Element zu Element navigieren und Informationen zum Erstellen von Objekten und Links finden Sie unter [Navigieren in und Aktualisieren von Modellen im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md).
 

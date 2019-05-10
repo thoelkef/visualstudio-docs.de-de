@@ -1,33 +1,34 @@
 ---
 title: 'Idiasymbol:: Get_backendmajor | Microsoft-Dokumentation'
-ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_backEndMajor method
 ms.assetid: 900a05dd-c29b-44ad-b46b-f43bda819a66
-author: mikejo5000
+caps.latest.revision: 12
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: bf32104654d40f314dc3468eaf28dfded6998df9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: cc62c81a1a57b9e9921b6df658d05e8a0a541da0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402216"
 ---
 # <a name="idiasymbolgetbackendmajor"></a>IDiaSymbol::get_backEndMajor
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Ruft die Anzahl der Back-End-Hauptversion des Compilers.  
   
 ## <a name="syntax"></a>Syntax  
   
-```C++  
-HRESULT get_backEndMajor (   
+```cpp#  
+HRESULT get_backEndMajor (   
    DWORD* pRetVal  
 );  
 ```  
@@ -40,7 +41,7 @@ HRESULT get_backEndMajor (
  Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder den Fehlercode.  
   
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="remarks"></a>Hinweise  
  Ein Compiler besteht in der Regel zwei Hauptelemente: die Front-End (den Parser), der verarbeitet, analysiert den Quellcode in ein vorläufiges Formular, und ein Back-End (Codegenerator), konvertiert die vorläufiges Formular in der Assembly. Es ist nicht ungewöhnlich, dass das Front-End, um eine andere Version als das Back-End zu erhalten.  

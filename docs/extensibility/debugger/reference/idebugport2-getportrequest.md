@@ -1,7 +1,7 @@
 ---
 title: IDebugPort2::GetPortRequest | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugPort2::GetPortRequest
 helpviewer_keywords:
@@ -9,41 +9,42 @@ helpviewer_keywords:
 ms.assetid: 14abf847-0675-4fa8-872e-971e00c84224
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7bc68272523100c07879b00b261b86f27023a13b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: e8a103316a292c444a35b8c819968d98cda777b6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62871802"
 ---
 # <a name="idebugport2getportrequest"></a>IDebugPort2::GetPortRequest
-Ruft die Beschreibung eines Ports, die zuvor verwendet wurde, um den Port (falls verfügbar) zu erstellen.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-HRESULT GetPortRequest(   
-   IDebugPortRequest2** ppRequest  
-);  
-```  
-  
-```csharp  
-int GetPortRequest(   
-   out IDebugPortRequest2 ppRequest  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `ppRequest`  
- [out] Gibt eine [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) Objekt, das die Anforderung, die verwendet wurde, erstellen Sie den Port darstellt.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  Gibt `E_PORT_NO_REQUEST` Wenn mit ein Port nicht erstellt wurde ein [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) Port-Anforderung.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)   
- [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)   
- [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)
+Ruft die Beschreibung eines Ports, die zuvor verwendet wurde, um den Port (falls verfügbar) zu erstellen.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+HRESULT GetPortRequest( 
+   IDebugPortRequest2** ppRequest
+);
+```
+
+```csharp
+int GetPortRequest( 
+   out IDebugPortRequest2 ppRequest
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `ppRequest`
+
+ [out] Gibt eine [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) Objekt, das die Anforderung, die verwendet wurde, erstellen Sie den Port darstellt.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  Gibt `E_PORT_NO_REQUEST` Wenn mit ein Port nicht erstellt wurde ein [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) Port-Anforderung.
+
+## <a name="see-also"></a>Siehe auch
+- [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)
+- [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)
+- [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)

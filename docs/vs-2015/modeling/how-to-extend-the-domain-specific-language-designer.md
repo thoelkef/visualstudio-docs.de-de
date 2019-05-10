@@ -1,25 +1,22 @@
 ---
 title: 'Vorgehensweise: Erweitern des DSL-Designers | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: fa807f1b-2780-491e-925b-abbfd31b2bfa
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 434b9c5a575ab19530ca3c5c3e0d6536235b9f88
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 8c02dbf550ca1621a17d2b674a522e1e4f4bcc1c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878556"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546940"
 ---
-# <a name="how-to-extend-the-domain-specific-language-designer"></a>Gewusst wie: Erweitern des DSL-Designers
+# <a name="how-to-extend-the-domain-specific-language-designer"></a>Vorgehensweise: Erweitern des DSL-Designers
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können Erweiterungen in den Designer vornehmen, die Sie verwenden, um die DSL-Definitionen zu bearbeiten. Die Typen der Erweiterung, die Sie gehören das Hinzufügen von Menübefehlen, vornehmen können, Hinzufügen von Handlern für ziehen und doppelklicken Sie auf Gesten und Regeln, die ausgelöst werden, wenn bestimmte Arten von Werten oder Beziehungen ändern. Die Erweiterungen können als ein Visual Studio Integration Extension (VSIX) verpackt und an andere Benutzer verteilt werden.  
@@ -31,25 +28,25 @@ Sie können Erweiterungen in den Designer vornehmen, die Sie verwenden, um die D
   
 #### <a name="to-create-a-dsl-designer-extension-solution"></a>Erstellen Sie eine DSL-Designer-Erweiterungsprojektmappe  
   
-1.  Erstellen eines neuen Projekts mithilfe der Projektvorlage für Klassenbibliothek. In der **neues Projekt** Dialogfeld klicken Sie auf **Visual C#-** , und klicken Sie dann im mittleren Fenster auf **Klassenbibliothek**.  
+1. Erstellen eines neuen Projekts mithilfe der Projektvorlage für Klassenbibliothek. In der **neues Projekt** Dialogfeld klicken Sie auf **Visual C#-** , und klicken Sie dann im mittleren Fenster auf **Klassenbibliothek**.  
   
      Dieses Projekt enthält den Code mit Ihren Erweiterungen anzeigen.  
   
-2.  Erstellen Sie ein neues Projekt mit der VSIX-Projektvorlage. In der **neues Projekt** Dialogfeld erweitern Sie **Visual C#-**, klicken Sie auf **Erweiterbarkeit**, und klicken Sie dann im mittleren Fenster die Option **VSIX-Projekt**.  
+2. Erstellen Sie ein neues Projekt mit der VSIX-Projektvorlage. In der **neues Projekt** Dialogfeld erweitern Sie **Visual C#-**, klicken Sie auf **Erweiterbarkeit**, und klicken Sie dann im mittleren Fenster die Option **VSIX-Projekt**.  
   
      Wählen Sie **zu Projektmappe hinzufügen**.  
   
      "Source.Extension.vsixmanifest", die im VSIX-manifest-Editor wird geöffnet.  
   
-3.  Klicken Sie oberhalb der Inhaltsfeld auf **Inhalt hinzufügen**.  
+3. Klicken Sie oberhalb der Inhaltsfeld auf **Inhalt hinzufügen**.  
   
-4.  In der **Inhalt hinzufügen** (Dialogfeld), Gruppe **wählen Sie einen Inhaltstyp** zu **MEF-Komponente**, und legen Sie **Projekt** auf Ihr Klassenbibliotheksprojekt hinzu.  
+4. In der **Inhalt hinzufügen** (Dialogfeld), Gruppe **wählen Sie einen Inhaltstyp** zu **MEF-Komponente**, und legen Sie **Projekt** auf Ihr Klassenbibliotheksprojekt hinzu.  
   
-5.  Klicken Sie auf **Editionen auswählen** und stellen Sie sicher, dass **Visual Studio Enterprise** aktiviert ist.  
+5. Klicken Sie auf **Editionen auswählen** und stellen Sie sicher, dass **Visual Studio Enterprise** aktiviert ist.  
   
-6.  Stellen Sie sicher, dass das VSIX-Projekt das Startprojekt der Projektmappe ist.  
+6. Stellen Sie sicher, dass das VSIX-Projekt das Startprojekt der Projektmappe ist.  
   
-7.  Klicken Sie in das Klassenbibliotheksprojekt hinzu fügen Sie Verweise auf die folgenden Assemblys hinzu:  
+7. Klicken Sie in das Klassenbibliotheksprojekt hinzu fügen Sie Verweise auf die folgenden Assemblys hinzu:  
   
      Microsoft.VisualStudio.CoreUtility  
   
@@ -317,4 +314,3 @@ namespace Fabrikam.SimpleDslDesignerExtension
     }  
 }  
 ```
-

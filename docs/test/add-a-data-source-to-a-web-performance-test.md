@@ -8,14 +8,13 @@ helpviewer_keywords:
 ms.assetid: 2ada376d-f168-455d-9643-6acb535360c1
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 52a6289d6b17528d31d66e26df2f15b85749aac3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: c22d9327deb0c04790a3adfc809d9ae5da483916
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62834932"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Hinzufügen einer Datenquelle für einen Webleistungstest
 
@@ -35,7 +34,9 @@ Die Projektmappe sollte auch einen Webleistungstest enthalten, der die Seiten de
 
 ## <a name="create-a-sql-database"></a>Erstellen einer SQL-Datenbank
 
-1. Wenn Sie nicht über Visual Studio Enterprise verfügen, können Sie das Programm über die Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) herunterladen.
+::: moniker range="vs-2017"
+
+1. Wenn Sie nicht über Visual Studio Enterprise verfügen, können Sie das Programm über die Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) herunterladen.
 
 2. Erstellen Sie eine SQL-Datenbank.
 
@@ -60,6 +61,38 @@ Die Projektmappe sollte auch einen Webleistungstest enthalten, der die Seiten de
 7. Fügen Sie den Feldern Daten hinzu.
 
      ![Daten zu den Feldern hinzufügen](../test/media/web_test_databinding_sql_addnewfieldsadddata.png)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Wenn Sie nicht über Visual Studio Enterprise verfügen, können Sie das Programm über die Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) herunterladen.
+
+2. Erstellen Sie eine SQL-Datenbank.
+
+     ![Eine neue SQL-Datenbank hinzufügen](../test/media/web_test_databinding_sql_addnewdb.png)
+
+3. Erstellen Sie ein Datenbankprojekt.
+
+     ![Neues Projekt aus Datenbank erstellen](../test/media/web_test_databinding_sql_addnewdbproject.png)
+
+4. Fügen Sie der Datenbank eine Tabelle hinzu.
+
+     ![Eine neue Tabelle zum Datenbankprojekt hinzufügen](../test/media/web_test_databinding_sql_addnewdbtablename.png)
+
+5. Fügen Sie der Tabelle Felder hinzu.
+
+     ![Felder zur Tabelle hinzufügen](../test/media/web_test_databinding_sql_addnewdbaddfields.png)
+
+6. Veröffentlichen Sie das Datenbankprojekt.
+
+     ![Datenbankprojekt über den Projektmappen-Explorer veröffentlichen](../test/media/web_test_databinding_sql_addnewdbpublish.png)
+
+7. Fügen Sie den Feldern Daten hinzu.
+
+     ![Daten zu den Feldern hinzufügen](../test/media/web_test_databinding_sql_addnewfieldsadddata.png)
+
+::: moniker-end
 
 ## <a name="add-the-data-source"></a>Hinzufügen der Datenquelle
 
@@ -97,7 +130,7 @@ Die Projektmappe sollte auch einen Webleistungstest enthalten, der die Seiten de
 
 2. Öffnen Sie die Datei *Local.testsettings* im **Projektmappen-Explorer**, und wählen Sie die Option **Ein Testlauf pro Datenquellenzeile** aus.
 
-     ![Testeinstellungsdatei bearbeiten](../test/media/web_test_databinding_sql_testsettings.png)
+     ![Bearbeiten Sie die Testeinstellungsdatei.](../test/media/web_test_databinding_sql_testsettings.png)
 
 3. Speichern Sie den Webleistungstest.
 
@@ -250,7 +283,7 @@ Die Projektmappe sollte auch einen Webleistungstest enthalten, der die Seiten de
 
 **Antwort:** Ja; Sie müssen den SOAP-XML-Code manuell ändern.
 
-1. Wählen Sie in der Anforderungsstruktur die Webdienstanforderung und im Fenster „Eigenschaften“ die Auslassungszeichen (...) in der Eigenschaft „Zeichenfolgentext“.
+1. Wählen Sie in der Anforderungsstruktur die Webdienstanforderung und im Fenster "Eigenschaften" die Auslassungszeichen (...) in der Eigenschaft "Zeichenfolgentext".
 
      ![Zeichenfolgentext des Webdiensts bearbeiten](../test/media/web_test_databinding_webservicerequest.png)
 

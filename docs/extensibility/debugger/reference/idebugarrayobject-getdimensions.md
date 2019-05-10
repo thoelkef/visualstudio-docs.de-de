@@ -1,30 +1,32 @@
 ---
 title: IDebugArrayObject::GetDimensions | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugArrayObject::GetDimensions
 helpviewer_keywords:
 - IDebugArrayObject::GetDimensions method
 ms.assetid: 113e0aff-9028-49d6-b104-9fe7be4772d7
-author: gregvanl
+caps.latest.revision: 10
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 0f58db8f1f9d847f7ca69c2c829b57f1e45b5d66
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 96079e3f82fccc958cc4b9123f8af4227393845f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849349"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62923779"
 ---
 # <a name="idebugarrayobjectgetdimensions"></a>IDebugArrayObject::GetDimensions
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Ruft die Dimensionen des Arrays ab.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT GetDimensions(   
    DWORD dwCount,  
    DWORD dwDimensions[]  

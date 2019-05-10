@@ -1,7 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Verwenden einer Konfigurationsdatei zum Definieren einer Datenquelle'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - configuration files [Visual Studio ALM], defining data sources
@@ -9,15 +8,15 @@ helpviewer_keywords:
 - data sources, defining with configuration files
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28e8ec57d051a8237a93e59f69f9e46c255a28f0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a64d6e46a674ad068c2a90eaf6b011a038d2e46e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840738"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976207"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Exemplarische Vorgehensweise: Verwenden einer Konfigurationsdatei zum Definieren einer Datenquelle
 
@@ -53,7 +52,7 @@ Um diese exemplarische Vorgehensweise nachzuvollziehen, benötigen Sie Folgendes
 
 3. Wählen Sie die Vorlage **Anwendungskonfigurationsdatei** aus, und klicken Sie dann auf **Hinzufügen**.
 
-##  <a name="define-a-custom-configuration-section"></a>Definieren eines benutzerdefinierten Konfigurationsabschnitts
+## <a name="define-a-custom-configuration-section"></a>Definieren eines benutzerdefinierten Konfigurationsabschnitts
 
 Sehen Sie sich die Datei *app.config* an. Sie enthält mindestens die XML-Deklaration und ein Stammelement.
 

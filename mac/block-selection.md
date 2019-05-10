@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 11/06/2018
 ms.assetid: E8E0831E-E076-44B1-A82A-A325382916A6
-ms.openlocfilehash: f4aa0283bc2dc950ce1c3f6573176f75b6a3da8f
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 18f0faecc6f18c4915f0c44a838dfae80a1be3fa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62983584"
 ---
 # <a name="block-selection"></a>Blockauswahl
 
@@ -20,6 +20,6 @@ Blockauswahlen können auch bearbeitet werden, sodass Text in verschiedenen Zeil
 
 ![Blockauswahl und Hinzufügen von Text](media/source-editor-image16.png)
 
-# <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Siehe auch
 
 - [Auswählen mehrerer Caretzeichen in Visual Studio (unter Windows)](/visualstudio/ide/finding-and-replacing-text#multi-caret-selection)

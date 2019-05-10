@@ -1,7 +1,6 @@
 ---
-title: 'CA2103: Imperative Sicherheit überprüfen'
+title: 'CA2103: Imperative Sicherheit überprüfen.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2103
@@ -12,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: d24fde71-bdf6-46c0-8965-9a73dc33c1aa
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21576101e15a1c424e1fd6d5aedcae000c381677
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2417266da44c4af38e37eb8e0f67ac13a5a7823e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900266"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62808238"
 ---
-# <a name="ca2103-review-imperative-security"></a>CA2103: Imperative Sicherheit überprüfen
+# <a name="ca2103-review-imperative-security"></a>CA2103: Imperative Sicherheit überprüfen.
 
 |||
 |-|-|

@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Konfigurieren von Projekten für Zielplattformen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - project settings [Visual Studio], targeting platforms
 - platforms, targeting specific CPUs
@@ -22,13 +17,13 @@ ms.assetid: 845302fc-273d-4f81-820a-7296ce91bd76
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4e2b39aa13316b1b9ca47c5587ffabf6f6a14e68
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 33c466d3c7a619de87baccd2713c9a595283d5ac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843053"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422802"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Gewusst wie: Konfigurieren von Projekten für Zielplattformen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,16 +39,16 @@ ms.locfileid: "49843053"
   
 2. Wählen Sie in der Liste **Aktive Projektmappenplattform** eine 64-Bit-Plattform als Zielplattform für die Projektmappe aus, und klicken Sie dann auf die Schaltfläche **Schließen**.  
   
-   1.  Wählen Sie **Neu** aus, wenn die gewünschte Plattform nicht in der Liste **Aktive Projektmappenplattform** angezeigt wird.  
+   1. Wählen Sie **Neu** aus, wenn die gewünschte Plattform nicht in der Liste **Aktive Projektmappenplattform** angezeigt wird.  
   
         Das Dialogfeld **Neue Projektmappenplattform** wird angezeigt.  
   
-   2.  Wählen Sie in der Liste **Neue Plattform eingeben oder auswählen** **x64** aus.  
+   2. Wählen Sie in der Liste **Neue Plattform eingeben oder auswählen** **x64** aus.  
   
        > [!NOTE]
-       >  Wenn Sie die Konfiguration neu benennen, müssen Sie möglicherweise die Einstellungen für die gewünschte Zielplattform im **Projekt-Designer** konfigurieren.  
+       > Wenn Sie die Konfiguration neu benennen, müssen Sie möglicherweise die Einstellungen für die gewünschte Zielplattform im **Projekt-Designer** konfigurieren.  
   
-   3.  Wenn Sie die Einstellungen aus der aktuellen Plattformkonfiguration kopieren möchten, wählen Sie diese aus, und wählen Sie anschließend die Schaltfläche **OK** aus.  
+   3. Wenn Sie die Einstellungen aus der aktuellen Plattformkonfiguration kopieren möchten, wählen Sie diese aus, und wählen Sie anschließend die Schaltfläche **OK** aus.  
   
    Es werden die Eigenschaften für alle Projekte mit der 64-Bit-Plattform als Zielplattform aktualisiert, und der nächste Build des Projekts wird für 64-Bit-Plattformen optimiert.  
   
@@ -62,17 +57,14 @@ ms.locfileid: "49843053"
   
  Die für diese Aufgabe erforderlichen Schritte sind je nach Programmiersprache unterschiedlich. Weitere Informationen finden Sie unter den folgenden Links:  
   
--   Informationen zu -[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]Projekten finden Sie unter [/platform (Visual Basic)](http://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1).  
+- Informationen zu -[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]Projekten finden Sie unter [/platform (Visual Basic)](http://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1).  
   
--   Informationen zu [!INCLUDE[csprcs](../includes/csprcs-md.md)]-Projekten finden Sie unter [Seite „Erstellen“, Projekt-Designer](../ide/reference/build-page-project-designer-csharp.md).  
+- Informationen zu [!INCLUDE[csprcs](../includes/csprcs-md.md)]-Projekten finden Sie unter [Seite „Erstellen“, Projekt-Designer](../ide/reference/build-page-project-designer-csharp.md).  
   
--   Informationen zu [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]-Projekten finden Sie unter [/clr (Common Language Runtime-Kompilierung)](http://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).  
+- Informationen zu [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]-Projekten finden Sie unter [/clr (Common Language Runtime-Kompilierung)](http://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Grundlagen zu Buildplattformen](../ide/understanding-build-platforms.md)   
  [-platform (C#-Compileroptionen)](http://msdn.microsoft.com/library/c290ff5e-47f4-4a85-9bb3-9c2525b0be04)   
  [64-Bit-Anwendungen](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
  [Visual Studio-IDE-64-Bit-Unterstützung](../ide/visual-studio-ide-64-bit-support.md)
-
-
-

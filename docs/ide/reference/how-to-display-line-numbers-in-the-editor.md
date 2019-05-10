@@ -1,8 +1,6 @@
 ---
-title: 'Gewusst wie: Anzeigen von Zeilennummern im Editor'
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
+title: Anzeigen von Zeilennummern im Code
+ms.date: 03/28/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - line numbers, displaying
@@ -12,34 +10,30 @@ helpviewer_keywords:
 ms.assetid: 40b38559-b8de-4041-91f2-68986767c976
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d7977fde404570808f0ee2d6514249a5e73286a
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: cd3c5d9c1d17bd8a0dae4969c7203902747a8c8b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388849"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789769"
 ---
-# <a name="how-to-display-line-numbers-in-the-editor"></a>Gewusst wie: Anzeigen von Zeilennummern im Editor
+# <a name="how-to-display-line-numbers-in-the-editor"></a>Vorgehensweise: Anzeigen von Zeilennummern im Editor
 
 Sie können die Zeilennummerierung im Code ein- oder ausblenden.
 
 ## <a name="display-line-numbers-in-code"></a>Anzeigen von Zeilennummern im Code
 
-Die Zeilennummern werden nicht in den Code eingefügt; sie dienen lediglich als Anhaltspunkte. Wenn Zeilennummern ausgedruckt werden sollen, müssen Sie im Dialogfeld **Drucken** das Kontrollkästchen **Zeilennummern einschließen** aktivieren.
+1. Wählen Sie in der Menüleiste **Extras** > **Optionen** aus. Erweitern Sie den Knoten **Text-Editor**, und wählen Sie entweder die Sprache, die Sie verwenden, oder **Alle Sprachen** aus, um die Zeilennummern in allen Sprachen zu aktivieren. (Alternativ können Sie im Suchfeld den Begriff **Zeilennummern** eingeben und aus den Ergebnissen **Zeilennummern aktivieren oder deaktivieren** auswählen.)
 
-### <a name="to-display-line-numbers-in-code"></a>So lassen Sie Zeilennummern für den Code anzeigen
+2. Aktivieren Sie das Kontrollkästchen **Zeilennummer**.
 
-1.  Wählen Sie in der Menüleiste **Extras**, **Optionen**. Erweitern Sie den Knoten **Text-Editor**, und wählen Sie entweder den Knoten für die Sprache, die Sie verwenden, oder **Alle Sprachen** aus, um die Zeilennummern in allen Sprachen zu aktivieren. Sie können die **Zeilennummer** auch im Feld **Schnellstart** eingeben.
+   ![Screenshot: Option zum Anzeigen von Zeilennummern im VS-Editor](../../ide/reference/media/line-numbers-option.png)
 
-2.  Aktivieren Sie das Kontrollkästchen **Zeilennummer**.
-
-    ![Optionen zum Anzeigen von Zeilennummern im Editor](../../ide/reference/media/vs_displaylinenumbers.png)
-
-> [!NOTE]
-> Abhängig von der Sprache oder den Einstellungen müssen Sie möglicherweise im Dialogfeld **Optionen** das Kontrollkästchen **Alle Einstellungen anzeigen** aktivieren, um den Unterknoten **Alle Sprachen** anzuzeigen.
+> [!TIP]
+> Die Zeilennummern werden nicht in den Code eingefügt; sie dienen lediglich als Anhaltspunkte. Wenn Zeilennummern ausgedruckt werden sollen, müssen Sie im Dialogfeld **Drucken** das Kontrollkästchen **Zeilennummern einschließen** aktivieren.
 
 ## <a name="see-also"></a>Siehe auch
 

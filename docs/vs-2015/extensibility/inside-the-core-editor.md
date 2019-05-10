@@ -1,26 +1,21 @@
 ---
 title: In der Kern-Editor | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - core editor
 ms.assetid: 8265f31c-c45b-4858-882c-6d9f1e3b9083
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9aca4bb8ad55dbd4cac0a6f899731711ccb6db8f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cf9bc42aec3aac5acc996487f99c7e1f29ca252c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798546"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083360"
 ---
 # <a name="inside-the-core-editor"></a>In der Kern-Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,17 +24,17 @@ Die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Kern-Editor ist ein Satz von m
   
  Die folgenden Bereiche sind einige wichtige Aspekte bei der die Kern-Editor:  
   
--   Textpuffer  
+- Textpuffer  
   
--   Textansicht  
+- Textansicht  
   
--   Codefenster  
+- Codefenster  
   
--   Textmarkierungen  
+- Textmarkierungen  
   
--   Text-manager  
+- Text-manager  
   
--   Integration mit Sprachdienste  
+- Integration mit Sprachdienste  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Instanziieren des Core-Editors mit der Legacy-API](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)  
@@ -51,7 +46,7 @@ Die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Kern-Editor ist ein Satz von m
  [Textpufferereignisse in der Legacy-API](../extensibility/text-buffer-events-in-the-legacy-api.md)  
  Enthält eine Liste der Schnittstellen, die für die Benachrichtigung über Ereignisse für Text-Puffer verwendet werden.  
   
- [Vorgehensweise: Registrieren für Textpufferereignisse mit der Legacy-API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
+ [Vorgehensweise: Registrieren Sie sich für Text-Puffer-Ereignisse mit der Legacy-API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
  Beschreibt, wie Text Puffern von Ereignissen zu empfehlen.  
   
  [Überwachen der globalen Einstellungen mit dem Text-Manager](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
@@ -70,7 +65,7 @@ Die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Kern-Editor ist ein Satz von m
  Beschreibt die Instanziierung von einem Sprachdienst, Ergänzungen der Steuerelement-Code.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
- [Exemplarische Vorgehensweise: Erstellen eines Core-Editors und Registrieren eines Editordateityps](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
+ [Exemplarische Vorgehensweise: Erstellen einen Kern-Editor, und registrieren einen Dateityp-Editor](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
  Enthält schrittweise Anweisungen zum Starten der Kern-Editor von verwaltetem Code.  
   
  [Dropdownleiste](../extensibility/drop-down-bar.md)  
@@ -79,9 +74,8 @@ Die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Kern-Editor ist ein Satz von m
  [Verwenden von Textmarkierungen mit der Legacy-API](../extensibility/using-text-markers-with-the-legacy-api.md)  
  Erklärt das Konzept von Textmarkierungen und wie sie in der Kern-Editor verwendet werden, und listet die Schnittstellen, die zum Zugreifen auf und Verwalten von Textmarkierungen verwendet werden.  
   
- [Vorgehensweise: Hinzufügen von Standardtextmarkierungen](../extensibility/how-to-add-standard-text-markers.md)  
+ [Vorgehensweise: Standard-Text-Marker hinzufügen](../extensibility/how-to-add-standard-text-markers.md)  
  Enthält schrittweise Anleitungen zum Erstellen ein textmarkers und So fügen Sie einen benutzerdefinierten Befehl in einem Kontextmenü Menüelemente hinzu.  
   
- [Vorgehensweise: Erstellen von benutzerdefinierten Diagrammen](../extensibility/how-to-create-custom-text-markers.md)  
+ [Vorgehensweise: Erstellen von benutzerdefinierten Textmarkierungen](../extensibility/how-to-create-custom-text-markers.md)  
  Enthält schrittweise Anleitungen zum Erstellen ein benutzerdefinierten textmarkers und den Typ des Markers als Dienst bereitstellen.
-

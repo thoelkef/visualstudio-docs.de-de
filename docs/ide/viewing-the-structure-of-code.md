@@ -1,7 +1,6 @@
 ---
 title: Anzeigen von Codestruktur mithilfe von Klassenansicht, Aufrufhierarchie, Objektkatalog und Codedefinition (Fenster)
 ms.date: 05/18/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.documentoutline.window
@@ -23,15 +22,15 @@ helpviewer_keywords:
 - object browser
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b3419c7f6b08fbedbe7af684a5c3b2de8967b55
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9d1072e6e9a2b097d9d2f50cc372ee8ba621e3d3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880912"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62582077"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Anzeigen der Codestruktur mithilfe verschiedener Toolfenster
 
@@ -127,7 +126,19 @@ Das Kontextmenü im Fenster **Aufrufhierarchie** enthält die folgenden Befehle:
 
 Das Fenster **Objektkatalog** zeigt Beschreibungen des Codes in Ihren Projekten an.
 
-Sie können die Komponenten, die Sie anzeigen möchten, mithilfe der Dropdownliste im oberen Bereich des Fensters filtern. Benutzerdefinierte Komponenten können ausführbare Dateien von verwaltetem Code, Bibliothekassemblys, Typbibliotheken und *OCX*-Dateien umfassen. Es ist nicht möglich, benutzerdefinierte C++-Komponenten hinzufügen. Benutzerdefinierte Einstellungen werden im Visual Studio-Benutzeranwendungsverzeichnis *%APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat* gespeichert.
+Sie können die Komponenten, die Sie anzeigen möchten, mithilfe der Dropdownliste im oberen Bereich des Fensters filtern. Benutzerdefinierte Komponenten können ausführbare Dateien von verwaltetem Code, Bibliothekassemblys, Typbibliotheken und *OCX*-Dateien umfassen. Es ist nicht möglich, benutzerdefinierte C++-Komponenten hinzufügen.
+
+::: moniker range="vs-2017"
+
+Benutzerdefinierte Einstellungen werden im Visual Studio-Benutzeranwendungsverzeichnis *%APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat* gespeichert.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Benutzerdefinierte Einstellungen werden im Visual Studio-Benutzeranwendungsverzeichnis *%APPDATA%\Microsoft\VisualStudio\16.0\ObjBrowEX.dat* gespeichert.
+
+::: moniker-end
 
 Der linke Bereich des **Objektbrowsers** zeigt Assemblys. Sie können die Assemblys erweitern, um die darin enthaltenen Namespaces anzuzeigen, und dann die Namespaces erweitern, um die darin enthaltenen Typen anzuzeigen. Wenn Sie einen Typ auswählen, werden seine Member (z. B. Eigenschaften und Methoden) im rechten Bereich aufgeführt. Im unteren rechten Bereich werden ausführliche Informationen zum ausgewählten Objekt angezeigt.
 

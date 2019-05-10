@@ -1,65 +1,39 @@
 ---
 title: Erweitern von Abhängigkeitsdiagrammen
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, creating extensions
 - layer models
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a467366ca470c17c0f52bd72ae17e766bcb284d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9c164174b88ca9fdd815668084c1447e20de072c
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889318"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476569"
 ---
 # <a name="extend-dependency-diagrams"></a>Erweitern von Abhängigkeitsdiagrammen
-Sie können Code zum Erstellen und aktualisieren Abhängigkeitsdiagramme, und überprüfen Sie die Struktur Ihres Programmcodes mit Abhängigkeitsdiagrammen in Visual Studio schreiben. Sie können Befehle hinzufügen, die im Kontextmenü der Diagramme angezeigt werden, Drag & Drop-Gesten anpassen und über Textvorlagen auf das Ebenenmodell zugreifen. Sie können diese Erweiterung in einer Visual Studio Integration Extension (VSIX) verpacken und sie an andere Visual Studio-Benutzer verteilen.
 
- Weitere Informationen zu Abhängigkeitsdiagrammen finden Sie unter:
+Sie können Code zum Erstellen und aktualisieren Abhängigkeitsdiagramme und überprüfen die Struktur Ihres Programmcodes mit Abhängigkeitsdiagrammen in Visual Studio schreiben. Sie können Befehle hinzufügen, die im Kontextmenü der Diagramme angezeigt werden, Drag & Drop-Gesten anpassen und über Textvorlagen auf das Ebenenmodell zugreifen. Sie können diese Erweiterung in einer Visual Studio Integration Extension (VSIX) verpacken und sie an andere Visual Studio-Benutzer verteilen.
 
--   [Abhängigkeitsdiagramme: Referenz](../modeling/layer-diagrams-reference.md)
+## <a name="requirements"></a>Anforderungen
 
--   [Abhängigkeitsdiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md)
+Auf dem Computer, auf dem Sie die Ebenenerweiterungen entwickeln möchten, muss Folgendes installiert sein:
 
--   [Erstellen von Abhängigkeitsdiagrammen aus dem Code](../modeling/create-layer-diagrams-from-your-code.md)
+- Visual Studio
 
--   [Überprüfen von Code mit Abhängigkeitsdiagrammen](../modeling/validate-code-with-layer-diagrams.md)
+- [Visual Studio SDK](../extensibility/visual-studio-sdk.md)
 
-##  <a name="prereqs"></a> Anforderungen
- Auf dem Computer, auf dem Sie die Ebenenerweiterungen entwickeln möchten, muss Folgendes installiert sein:
-
--   Visual Studio
-
--   [Visual Studio SDK](../extensibility/visual-studio-sdk.md)
-
--   Modellierungs-SDK für Visual Studio
-
+- Modellierungs-SDK für Visual Studio
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-
- Sie müssen die passende Visual Studio-Version auf dem Computer installiert haben, auf dem Sie die Ebenenerweiterungen ausführen möchten. Weitere Informationen finden Sie unter [bereitstellen eine ebenenmodellerweiterung](../modeling/deploy-a-layer-model-extension.md).
-
- Welche Versionen von Visual Studio Abhängigkeitsdiagramme unterstützen, finden Sie unter [versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
-
-## <a name="in-this-section"></a>In diesem Abschnitt
- [Hinzufügen von Befehlen und Gesten zu Abhängigkeitsdiagrammen](../modeling/add-commands-and-gestures-to-layer-diagrams.md)
-
- [Hinzufügen einer benutzerdefinierten Architekturvalidierung zu Abhängigkeitsdiagrammen](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)
-
- [Hinzufügen benutzerdefinierter Eigenschaften zu Abhängigkeitsdiagrammen](../modeling/add-custom-properties-to-layer-diagrams.md)
-
- [Navigieren in und Aktualisieren von Ebenenmodellen im Programmcode](../modeling/navigate-and-update-layer-models-in-program-code.md)
-
- [Bereitstellen einer Ebenenmodellerweiterung](../modeling/deploy-a-layer-model-extension.md)
-
- [Problembehandlung bei Erweiterungen für Abhängigkeitsdiagramme](../modeling/troubleshoot-extensions-for-layer-diagrams.md)
+Sie benötigen eine geeignete Version von Visual Studio, die auf dem Computer installiert, in dem Sie die ebenenerweiterungen ausführen möchten. Welche Editionen von Visual Studio Abhängigkeitsdiagramme unterstützen, finden Sie unter [Edition-Unterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="see-also"></a>Siehe auch
 

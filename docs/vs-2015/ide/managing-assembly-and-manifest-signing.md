@@ -1,14 +1,9 @@
 ---
 title: Verwalten der Signierung von Assemblys und Manifesten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
 - signing manifests [Visual Studio]
@@ -18,13 +13,13 @@ ms.assetid: 6c1ef36b-25f7-4ad0-b29a-51801b7a5420
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 831fb08941e16abdb197d3a25e71f2a20fcb14cb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d3f842d45df1525cb3f736019eeec52dd65b67aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909678"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443735"
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>Verwalten der Signierung von Assemblys und Manifesten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +59,7 @@ Durch eine Signierung mit starkem Namen erhalten Softwarekomponenten eine global
  Geben Sie eine Schlüsseldatei an. Wenn Sie eine neue Schlüsseldatei erstellen möchten, beachten Sie, dass neue Schlüsseldateien immer im PFX-Format erstellt werden. Sie benötigen einen Namen und ein Kennwort für die neue Datei.  
   
 > [!WARNING]
->  Sie sollten die Schlüsseldatei immer mit einem Kennwort schützen, damit sie von keiner anderen Person verwendet werden kann. Sie können die Schlüsseldateien auch schützen, indem Sie Schlüsselanbieter oder Zertifikatspeicher verwenden.  
+> Sie sollten die Schlüsseldatei immer mit einem Kennwort schützen, damit sie von keiner anderen Person verwendet werden kann. Sie können die Schlüsseldateien auch schützen, indem Sie Schlüsselanbieter oder Zertifikatspeicher verwenden.  
   
  Außerdem können Sie auf eine Schlüsseldatei, die Sie bereits erstellt haben, zeigen. Weitere Informationen zum Erstellen eines Schlüssels finden Sie unter [How to: Create a Public-Private Key (Vorgehensweise: Erstellen eines öffentlich-privaten Schlüsselpaars)](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
   
@@ -75,6 +70,3 @@ Durch eine Signierung mit starkem Namen erhalten Softwarekomponenten eine global
 ## <a name="see-also"></a>Siehe auch  
  [Assemblys mit starkem Namen](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
  [Assemblys mit starken Namen (Assemblysignierung) (C++/CLI)](http://msdn.microsoft.com/library/c337cd3f-e5dd-4c6f-a1ad-437e85dba1cc)
-
-
-

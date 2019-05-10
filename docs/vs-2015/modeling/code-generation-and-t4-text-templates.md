@@ -1,14 +1,9 @@
 ---
 title: Codegenerierung und T4-Textvorlagen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.TextTemplating.TextTemplating
 helpviewer_keywords:
@@ -21,13 +16,13 @@ ms.assetid: 74a0a748-5b11-4999-8bea-49572967827d
 caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d1310d08138e4df172a5dc9f390d0407a68fe769
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4886a23272962d2dee03576504d60d64067faf20
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229819"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433410"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Codegenerierung und T4-Textvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,7 +93,7 @@ namespace Fabrikam.FirstJob
  Weitere Informationen finden Sie unter [Design-Time Code Generation mithilfe von T4-Textvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Weitere Informationen zur Syntax von Vorlagen finden Sie unter [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md).  
   
 > [!NOTE]
->  Der Begriff *Modell* wird manchmal verwendet, um Daten zu beschreiben, die von mindestens einer Vorlage gelesen werden. Das Modell kann in einem beliebigen Format in einer beliebigen Art von Datei oder Datenbank vorliegen. Es muss weder ein UML-Modell noch ein domänenspezifisches Sprachmodell sein. Der Begriff „Modell“ gibt lediglich an, dass die Daten hinsichtlich der Geschäftskonzepte definiert werden können, statt so auszusehen wie Code.  
+> Der Begriff *Modell* wird manchmal verwendet, um Daten zu beschreiben, die von mindestens einer Vorlage gelesen werden. Das Modell kann in einem beliebigen Format in einer beliebigen Art von Datei oder Datenbank vorliegen. Es muss weder ein UML-Modell noch ein domänenspezifisches Sprachmodell sein. Der Begriff „Modell“ gibt lediglich an, dass die Daten hinsichtlich der Geschäftskonzepte definiert werden können, statt so auszusehen wie Code.  
   
  Die Transformationsfunktion für Textvorlagen wird als *T4*bezeichnet.  
   
@@ -130,6 +125,3 @@ namespace Fabrikam.FirstJob
 ## <a name="see-also"></a>Siehe auch  
  [Generieren von Dateien aus einem UML-Modell](../modeling/generate-files-from-a-uml-model.md)   
  [Generieren von Code für eine domänenspezifische Sprache](../modeling/generating-code-from-a-domain-specific-language.md)
-
-
-

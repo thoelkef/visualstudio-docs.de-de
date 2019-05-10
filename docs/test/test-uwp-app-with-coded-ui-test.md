@@ -1,23 +1,21 @@
 ---
 title: Testen einer UWP-App mit einem Test der programmierten UI
 ms.date: 05/31/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: 3dcbd6065d45bf5350b80d555f335d3b8ec1cec7
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: d50972ccb68ba43e8ebefa0d69fdfff8f7fc5be4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895963"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430197"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Erstellen eines Tests der programmierten UI zum Testen einer UWP-App
 
@@ -31,7 +29,11 @@ Zunächst müssen Sie eine einfache UWP-App erstellen, die getestet werden kann.
 
 1. Erstellen Sie in Visual Studio ein neues Projekt mithilfe der Vorlage **Leere App (Universelle Windows-App)** für Visual C# oder Visual Basic.
 
-     ![Vorlage „Leere App (Universelle Windows-App)“](../test/media/blank-uwp-app-template.png)
+   ::: moniker range="vs-2017"
+
+   ![Vorlage „Leere App (Universelle Windows-App)“](../test/media/blank-uwp-app-template.png)
+
+   ::: moniker-end
 
 1. Klicken Sie im Dialogfeld **Neues UWP-Projekt (Universelle Windows-Plattform)** auf **OK**, um die Standardplattformversionen zu akzeptieren.
 
@@ -59,20 +61,24 @@ Zunächst müssen Sie eine einfache UWP-App erstellen, die getestet werden kann.
 
    ![UWP-App mit Schaltfläche und Textfeld](media/uwp-app.png)
 
-## <a name="create-a-coded-ui-test"></a>Test der programmierten UI erstellen
+## <a name="create-a-coded-ui-test"></a>Test der codierten UI erstellen
 
 1. Klicken Sie mit der rechten Maustaste im **Projektmappen-Explorer** auf die Projektmappe und dann auf **Hinzufügen** > **Neues Projekt**, um ein Testprojekt zur Projektmappe hinzuzufügen.
 
-1. Wählen Sie im Dialogfeld **Neues Projekt** die Vorlage **Testprojekt der programmierten UI (Universelles Windows)** aus. Sie finden die Vorlage in der Kategorie **Universelles Windows** unter **Visual C#** oder **Visual Basic**.
+1. Suchen Sie die Vorlage **Testprojekt der programmierten UI (Universelles Windows)**, und wählen Sie sie aus.
 
-     ![Neues Testprojekt der programmierten UI](../test/media/coded-ui-test-project-uwp-template.png)
+   ::: moniker range="vs-2017"
+
+   ![Neues Testprojekt der programmierten UI](../test/media/coded-ui-test-project-uwp-template.png)
+
+   ::: moniker-end
 
    > [!NOTE]
    > Wenn Ihnen die Vorlage **Testprojekt der programmierten UI (Universelles Windows)** nicht angezeigt wird, müssen Sie die Komponente [Test der programmierten UI](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component) installieren.
 
 1. Klicken Sie im Dialogfeld **Generate Code for Coded UI Test** (Code für Tests der programmierten UI generieren) auf **Test manuell bearbeiten**.
 
-     ![Dialogfeld „Code für Tests der programmierten UI generieren“](../test/media/manually-edit-the-test.png)
+   ![Dialogfeld „Code für Tests der programmierten UI generieren“](../test/media/manually-edit-the-test.png)
 
 1. Wenn Ihre UWP-App noch nicht ausgeführt wird, starten Sie diese, indem Sie **STRG**+**F5** drücken.
 
@@ -130,6 +136,7 @@ Zunächst müssen Sie eine einfache UWP-App erstellen, die getestet werden kann.
         Assert.AreEqual(Me.AssertMethod1ExpectedValues.UITextBoxEditText, uITextBoxEdit.Text, "Textbox value is unexpected.")
     End Sub
     ```
+
 1. Anschließend muss die **AutomationID** der [UWP-App](#create-a-uwp-app-to-test) abgerufen werden, die getestet werden soll. Öffnen Sie das **Windows-Startmenü**, um die Kachel der App zu sehen. Ziehen Sie dann das Fadenkreuztool ![Zielsymbol](media/target-icon.png) vom Dialogfeld **Coded UI Test Builder** (Generator für Tests der programmierten UI) zur Kachel Ihrer App. Wenn ein blauer Rahmen die Kachel umgibt, lassen Sie die Maus los.
 
    ![Fadenkreuztool](media/cross-hair-tool.png)
@@ -207,15 +214,15 @@ Zunächst müssen Sie eine einfache UWP-App erstellen, die getestet werden kann.
 
 ## <a name="q--a"></a>Fragen und Antworten
 
-### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>F: Warum wird im Dialogfeld „Test der programmierten UI“ unter „Code generieren“ nicht die Option zum Aufzeichnen des Tests der programmierten UI angezeigt?
+### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>Frage: Warum wird im Dialogfeld „Test der programmierten UI“ unter „Code generieren“ nicht die Option zum Aufzeichnen des Tests der programmierten UI angezeigt?
 
-**A:** Die Option zum Aufzeichnen wird für UWP-Apps nicht unterstützt.
+**A**: Die Option zum Aufzeichnen wird für UWP-Apps nicht unterstützt.
 
-### <a name="q-can-i-create-a-coded-ui-test-for-my-uwp-apps-based-on-winjs"></a>F: Kann ich einen Test der programmierten UI für UWP-Apps auf Grundlage von WinJS erstellen?
+### <a name="q-can-i-create-a-coded-ui-test-for-my-uwp-apps-based-on-winjs"></a>Frage: Kann ich einen Test der programmierten UI für UWP-Apps auf Grundlage von WinJS erstellen?
 
 **A**: Nein, nur XAML-basierte Apps werden unterstützt.
 
-### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>F: Warum kann ich den Code in der Datei „UIMap.Designer“ nicht ändern?
+### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Frage: Warum kann ich den Code in der Datei „UIMap.Designer“ nicht ändern?
 
 **A**: Alle Codeänderungen, die Sie an der Datei *UIMapDesigner.cs* vornehmen, werden jedes Mal überschrieben, wenn Sie Code mit dem **Coded UI Test Builder** (Generator für Tests der programmierten UI) generieren. Wenn Sie eine aufgezeichnete Methode ändern müssen, kopieren Sie sie in die Datei *UIMap.cs*, und benennen Sie sie um. Die Datei *UIMap.cs* kann verwendet werden, um Methoden und Eigenschaften in der Datei *UIMapDesigner.cs* zu überschreiben. Entfernen Sie den Verweis auf die ursprüngliche Methode in der Datei *CodedUITest.cs*, und ersetzen Sie ihn durch den umbenannten Methodennamen.
 

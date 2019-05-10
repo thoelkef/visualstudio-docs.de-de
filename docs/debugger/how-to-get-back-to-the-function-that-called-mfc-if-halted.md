@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: d254a5a9-afbd-4923-9d7a-7422d824cabf
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9b3d95108ac91066da51feed9f5813d15693d52
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: f846b636d2790839de6d05d048fc7e24d0bc6253
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988338"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906691"
 ---
 # <a name="how-to-get-back-to-the-function-that-called-mfc-if-halted"></a>Vorgehensweise: Zurückkehren zur Funktion, die MFC aufgerufen hat, wenn angehalten
 
@@ -42,7 +42,7 @@ Manchmal wird der Code in der Meldungsverteilschleife unterbrochen. In diesem Fa
 
 ## <a name="navigate-to-the-function-from-which-mfc-was-called"></a>Navigieren Sie zu der Funktion, die von der MFC aufgerufen wurde
 
--   Verwenden Sie das Fenster **Aufrufliste**.
+- Verwenden Sie das Fenster **Aufrufliste**.
 
 ## <a name="see-also"></a>Siehe auch
 

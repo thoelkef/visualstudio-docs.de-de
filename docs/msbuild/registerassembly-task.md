@@ -15,50 +15,50 @@ helpviewer_keywords:
 ms.assetid: ba5f19ac-6764-4d28-9b79-a86de58f8987
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b4242ed9b1e18879c724b996baa393e0371e115
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7d9ebe23cab26d6a90e16623917b61d261ed12f5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974643"
 ---
 # <a name="registerassembly-task"></a>RegisterAssembly-Aufgabe
-Die Metadaten in der angegebenen Assembly werden gelesen, und die erforderlichen Einträge werden der Registrierung hinzugefügt. COM-Clients sind so in der Lage, [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Klassen transparent zu erstellen. Das Verhalten dieser Aufgabe ähnelt dem von [Regasm.exe (Assemblyregistrierungstool)](/dotnet/framework/tools/regasm-exe-assembly-registration-tool), ist aber nicht identisch.  
-  
-## <a name="parameters"></a>Parameter  
- In der folgenden Tabelle werden die Parameter der `RegisterAssembly` -Aufgabe beschrieben.  
-  
-|Parameter|Beschreibung|  
-|---------------|-----------------|  
-|`Assemblies`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Gibt die mit COM zu registrierenden Assemblys an.|  
-|`AssemblyListFile`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem> -Parameter.<br /><br /> Enthält Informationen zum Zustand zwischen der `RegisterAssembly`-Aufgabe und der [UnregisterAssembly](../msbuild/unregisterassembly-task.md)-Aufgabe. Diese Informationen verhindern, dass die `UnregisterAssembly`-Aufgabe versucht, die Registrierung einer Assembly aufzuheben, die in der `RegisterAssembly`-Aufgabe nicht registriert werden konnte.|  
-|`CreateCodeBase`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, wird ein Codebase-Eintrag in der Registrierung erstellt, der den Dateipfad für eine Assembly festlegt, die nicht im globalen Assemblycache installiert ist. Die Option sollte nicht angegeben werden, wenn Sie die zu registrierende Assembly später im globalen Assemblycache installieren.|  
-|`TypeLibFiles`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Gibt die Typbibliothek an, die aus der angegebenen Assembly generiert werden soll. Die generierte Typbibliothek enthält Definitionen der in der Assembly definierten Typen, auf die zugegriffen werden kann. Die Typbibliothek wird nur generiert, wenn eine der folgenden Bedingungen zutrifft:<br /><br /> – Eine Typbibliothek mit diesem Namen ist an diesem Speicherort nicht vorhanden.<br />- Eine Typbibliothek ist vorhanden, jedoch älter als die übergebene Assembly.<br /><br /> Wenn die Typbibliothek neuer ist als die übergebene Assembly, wird keine neue erstellt, aber die Assembly wird immer noch registriert.<br /><br /> Wenn dieser Parameter angegeben wird, muss er die gleiche Anzahl von Elementen wie der `Assemblies`-Parameter haben, oder bei der Aufgabe tritt ein Fehler auf. Wenn keine Eingaben angegeben werden, erhält die Aufgabe standardmäßig den Namen der Assembly und ändert die Erweiterung des Elements in *TLB*.|  
-  
-## <a name="remarks"></a>Hinweise  
- Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).  
-  
-## <a name="example"></a>Beispiel  
- Im folgenden Beispiel wird die von der Elementsammlung `MyAssemblies` angegebene Assembly mithilfe der `RegisterAssembly`-Aufgabe registriert.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  
-    <ItemGroup>  
-        <MyAssemblies Include="MyAssembly.dll" />  
-    <ItemGroup>  
-  
-    <Target Name="RegisterAssemblies">  
-        <RegisterAssembly  
-            Assemblies="@(MyAssemblies)" >  
-    </Target>  
-  
-</Project>  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
- [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
+Die Metadaten in der angegebenen Assembly werden gelesen, und die erforderlichen Einträge werden der Registrierung hinzugefügt. COM-Clients sind so in der Lage, [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Klassen transparent zu erstellen. Das Verhalten dieser Aufgabe ähnelt dem von [Regasm.exe (Assemblyregistrierungstool)](/dotnet/framework/tools/regasm-exe-assembly-registration-tool), ist aber nicht identisch.
+
+## <a name="parameters"></a>Parameter
+ In der folgenden Tabelle werden die Parameter der `RegisterAssembly` -Aufgabe beschrieben.
+
+|Parameter|Beschreibung|
+|---------------|-----------------|
+|`Assemblies`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Gibt die mit COM zu registrierenden Assemblys an.|
+|`AssemblyListFile`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem> -Parameter.<br /><br /> Enthält Informationen zum Zustand zwischen der `RegisterAssembly`-Aufgabe und der [UnregisterAssembly](../msbuild/unregisterassembly-task.md)-Aufgabe. Diese Informationen verhindern, dass die `UnregisterAssembly`-Aufgabe versucht, die Registrierung einer Assembly aufzuheben, die in der `RegisterAssembly`-Aufgabe nicht registriert werden konnte.|
+|`CreateCodeBase`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, wird ein Codebase-Eintrag in der Registrierung erstellt, der den Dateipfad für eine Assembly festlegt, die nicht im globalen Assemblycache installiert ist. Die Option sollte nicht angegeben werden, wenn Sie die zu registrierende Assembly später im globalen Assemblycache installieren.|
+|`TypeLibFiles`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Gibt die Typbibliothek an, die aus der angegebenen Assembly generiert werden soll. Die generierte Typbibliothek enthält Definitionen der in der Assembly definierten Typen, auf die zugegriffen werden kann. Die Typbibliothek wird nur generiert, wenn eine der folgenden Bedingungen zutrifft:<br /><br /> – Eine Typbibliothek mit diesem Namen ist an diesem Speicherort nicht vorhanden.<br />- Eine Typbibliothek ist vorhanden, jedoch älter als die übergebene Assembly.<br /><br /> Wenn die Typbibliothek neuer ist als die übergebene Assembly, wird keine neue erstellt, aber die Assembly wird immer noch registriert.<br /><br /> Wenn dieser Parameter angegeben wird, muss er die gleiche Anzahl von Elementen wie der `Assemblies`-Parameter haben, oder bei der Aufgabe tritt ein Fehler auf. Wenn keine Eingaben angegeben werden, erhält die Aufgabe standardmäßig den Namen der Assembly und ändert die Erweiterung des Elements in *TLB*.|
+
+## <a name="remarks"></a>Anmerkungen
+ Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
+
+## <a name="example"></a>Beispiel
+ Im folgenden Beispiel wird die von der Elementsammlung `MyAssemblies` angegebene Assembly mithilfe der `RegisterAssembly`-Aufgabe registriert.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <ItemGroup>
+        <MyAssemblies Include="MyAssembly.dll" />
+    <ItemGroup>
+
+    <Target Name="RegisterAssemblies">
+        <RegisterAssembly
+            Assemblies="@(MyAssemblies)" >
+    </Target>
+
+</Project>
+```
+
+## <a name="see-also"></a>Siehe auch
+- [Aufgaben](../msbuild/msbuild-tasks.md)
+- [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

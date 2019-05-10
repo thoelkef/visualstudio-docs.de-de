@@ -1,25 +1,20 @@
 ---
 title: Grundlegendes zu SAL | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
 caps.latest.revision: 20
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 712d99f3839982632e54b622b3512eb611f2bf95
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0a898096c282a22201d60995693144cc0e187812
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792814"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435402"
 ---
 # <a name="understanding-sal"></a>Einführung in SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ void * memcpy(
  Können Sie feststellen, was diese Funktion macht? Wenn eine Funktion implementiert oder aufgerufen wird, müssen bestimmte Eigenschaften verwaltet werden, um sicherzustellen, dass Richtigkeit des Programms. Durch das alleinige untersuchen eine Deklaration, wie im Beispiel, wissen Sie nicht genau. Ohne SAL-Anmerkungen müssten Sie die Dokumentation oder in den Kommentaren im Code verwenden. Hier ist die MSDN-Dokumentation für `memcpy` besagt:  
   
 > "Kopien Anzahl der Bytes von Src an Dest. Wenn sich Quelle und Ziel überlappen, ist das Verhalten der Memcpy nicht definiert. Verwenden Sie Memmove, um überlappende Bereiche zu behandeln.   
-> **Sicherheitshinweis:** stellen Sie sicher, dass der Zielpuffer identisch ist, mindestens so groß wie der Quellpuffer. Weitere Informationen finden Sie vermeiden von Pufferüberläufen."  
+> **Sicherheitshinweis:** Stellen Sie sicher, dass der Zielpuffer dieselbe Größe wie der Quellpuffer aufweist bzw. größer ist. Weitere Informationen finden Sie vermeiden von Pufferüberläufen."  
   
  Die Dokumentation enthält eine Reihe von Bits von Informationen, die wird empfohlen, dass der Code hat bestimmte Eigenschaften aus, um die Richtigkeit des Programms beibehalten:  
   
@@ -112,7 +107,7 @@ wchar_t * wmemcpy(
 ## <a name="sal-examples"></a>Beispiele zu SAL  
  Dieser Abschnitt zeigt die Codebeispiele für die grundlegende SAL-Anmerkungen.  
   
-### <a name="using-the-visual-studio-code-analysis-tool-to-find-defects"></a>Suchen von Fehlern mit den Visual Studio Codeanalysetools  
+### <a name="using-the-visual-studio-code-analysis-tool-to-find-defects"></a>Suchen von Fehlern mit den Visual Studio-Codeanalysetools  
  In den Beispielen wird das Tool für Visual Studio-Codeanalyse zusammen mit SAL-Anmerkungen verwendet, um Codefehler zu finden. Hier ist wie das geht.  
   
 ##### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>So verwenden Sie Visual Studio-Codeanalysetools und SAL  
@@ -129,15 +124,15 @@ wchar_t * wmemcpy(
 ### <a name="example-the-in-annotation"></a>Beispiel: Die \_In\_ Anmerkung  
  Die `_In_` Anmerkung gibt an, dass:  
   
--   Der Parameter muss gültig sein und wird nicht geändert werden.  
+- Der Parameter muss gültig sein und wird nicht geändert werden.  
   
--   Die Funktion liest nur aus dem Puffer für die einzelnen Element.  
+- Die Funktion liest nur aus dem Puffer für die einzelnen Element.  
   
--   Der Aufrufer muss den Puffer bereitstellen, und initialisieren Sie sie.  
+- Der Aufrufer muss den Puffer bereitstellen, und initialisieren Sie sie.  
   
--   `_In_` Gibt an, "schreibgeschützt". Ein häufiger Fehler besteht darin, anzuwendende `_In_` auf einen Parameter, die haben, sollte die `_Inout_` Anmerkung stattdessen.  
+- `_In_` Gibt an, "schreibgeschützt". Ein häufiger Fehler besteht darin, anzuwendende `_In_` auf einen Parameter, die haben, sollte die `_Inout_` Anmerkung stattdessen.  
   
--   `_In_` kann jedoch vom Analyzer auf Nichtzeiger skalare ignoriert.  
+- `_In_` kann jedoch vom Analyzer auf Nichtzeiger skalare ignoriert.  
   
 ```cpp  
 void InCallee(_In_ int *pInt)  
@@ -251,7 +246,7 @@ void OutOptCaller()
  `_Inout_` wird verwendet, um einen Zeigerparameter zu kommentieren, der von der Funktion geändert werden kann. Der Zeiger muss auf gültige initialisierte Daten vor dem Aufruf zeigen, und auch wenn es geändert wird, noch muss einen gültigen Wert bei der Rückgabe. Die Anmerkung gibt an, dass die Funktion kann frei auslesen und in den Puffer einem Element schreiben. Der Aufrufer muss den Puffer bereitstellen, und initialisieren Sie sie.  
   
 > [!NOTE]
->  Wie `_Out_`, `_Inout_` müssen auf einen änderbaren Wert anwenden.  
+> Wie `_Out_`, `_Inout_` müssen auf einen änderbaren Wert anwenden.  
   
 ```cpp  
   
@@ -424,6 +419,3 @@ bool GetValue(_Out_ int *pInt, bool flag)
  [Hinzufügen von Kommentaren Sperrverhalten](../code-quality/annotating-locking-behavior.md)   
  [Angeben, wann und wo eine Anmerkung gültig ist](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [Empfohlene Vorgehensweisen und Beispiele](../code-quality/best-practices-and-examples-sal.md)
-
-
-

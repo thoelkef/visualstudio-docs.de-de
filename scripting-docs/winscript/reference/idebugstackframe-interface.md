@@ -1,8 +1,7 @@
 ---
-title: IDebugStackFrame-Schnittstelle | Microsoft Docs
+title: IDebugStackFrame-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,24 +13,24 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 36fa0ba2d1b4049ad41ff0502ed33be0a706d9f6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d8f645d6460ff15734348267b5138b1b6edea071
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727530"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63005877"
 ---
 # <a name="idebugstackframe-interface"></a>IDebugStackFrame-Schnittstelle
-Stellt einen logischen Stapelrahmen im Stapel Thread dar. Rufen Sie die `IDebugStackFrame::QueryInterface` Methode zum Abrufen der `IDebugExpressionContext` -Schnittstelle, die Ausdruck Auswertung "und" Überwachen von Windows ermöglicht.  
+Stellt einen logischen Stapelrahmen im Threadstapel dar. Rufen Sie die `IDebugStackFrame::QueryInterface` Methode zum Abrufen der `IDebugExpressionContext` -Schnittstelle, die Ausdruck, ausdrucksauswertung und Überwachungen Windows ermöglicht.  
   
- Zusätzlich zu den von geerbten Methoden `IUnknown`, `IDebugStackFrame` Schnittstelle macht die folgenden Methoden verfügbar.  
+ Zusätzlich zu den von geerbten Methoden `IUnknown`, `IDebugStackFrame` Schnittstelle verfügbar macht, die folgenden Methoden.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IDebugStackFrame::GetCodeContext](../../winscript/reference/idebugstackframe-getcodecontext.md)|Gibt den Stapelrahmen zugeordneten Codekontext zurück.|  
+|[IDebugStackFrame::GetCodeContext](../../winscript/reference/idebugstackframe-getcodecontext.md)|Gibt zurück, der aktuelle Codekontext, die dem Stapelrahmen zugeordnet.|  
 |[IDebugStackFrame::GetDescriptionString](../../winscript/reference/idebugstackframe-getdescriptionstring.md)|Gibt eine kurze oder lange Text Beschreibung des Stapelrahmens zurück.|  
 |[IDebugStackFrame::GetLanguageString](../../winscript/reference/idebugstackframe-getlanguagestring.md)|Gibt eine kurze oder lange Text Beschreibung der Sprache zurück.|  
-|[IDebugStackFrame::GetThread](../../winscript/reference/idebugstackframe-getthread.md)|Gibt den Thread zugeordnete dieses Stapelrahmens zurück.|  
+|[IDebugStackFrame::GetThread](../../winscript/reference/idebugstackframe-getthread.md)|Gibt die Threads mit Stapelrahmen zurück.|  
 |[IDebugStackFrame::GetDebugProperty](../../winscript/reference/idebugstackframe-getdebugproperty.md)|Gibt einen Eigenschaftenbrowser für den aktuellen Frame zurück.|

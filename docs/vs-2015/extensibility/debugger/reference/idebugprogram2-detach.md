@@ -1,52 +1,44 @@
 ---
 title: IDebugProgram2::Detach | Microsoft-Dokumentation
-ms.custom: ''
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.date: 11/04/2016
+ms.topic: reference
 f1_keywords:
 - IDebugProgram2::Detach
 helpviewer_keywords:
 - IDebugProgram2::Detach
 ms.assetid: 5e8d88b0-a8d4-4746-88c0-ad332ee73f33
-caps.latest.revision: 9
+author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 558256ab57651337970ecdbda4c498fcb600a1d5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.workload:
+- vssdk
+ms.openlocfilehash: 922c3d4df6332fc5b9bc5b264c4d46b3f1b91805
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772202"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62549323"
 ---
 # <a name="idebugprogram2detach"></a>IDebugProgram2::Detach
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+Trennt eine Debug-Engine aus dem Programm an.
 
-Trennt eine Debug-Engine aus dem Programm an.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp#  
-HRESULT Detach(   
-   void   
-);  
-```  
-  
-```csharp  
-int Detach();  
-```  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
-  
-## <a name="remarks"></a>Hinweise  
- Eine Anwendung wird weiterhin ausgeführt, aber es ist nicht mehr Teil der Debugsitzung. Keine weiteren Programm Debug-Ereignisse werden gesendet, sobald die Debug-Engine getrennt ist.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
+## <a name="syntax"></a>Syntax
 
+```cpp
+HRESULT Detach( 
+   void 
+);
+```
+
+```csharp
+int Detach();
+```
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+
+## <a name="remarks"></a>Hinweise
+ Eine Anwendung wird weiterhin ausgeführt, aber es ist nicht mehr Teil der Debugsitzung. Keine weiteren Programm Debug-Ereignisse werden gesendet, sobald die Debug-Engine getrennt ist.
+
+## <a name="see-also"></a>Siehe auch
+- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

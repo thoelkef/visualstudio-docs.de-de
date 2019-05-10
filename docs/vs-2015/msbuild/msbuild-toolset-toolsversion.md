@@ -1,14 +1,9 @@
 ---
 title: MSBuild-Toolset (ToolsVersion) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - MSBuild, multitargeting
 - targeting a specific .NET framework [MSBuild]
@@ -18,18 +13,17 @@ ms.assetid: 40040ee7-4620-4043-a6d8-ccba921421d1
 caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bd516501acfc7690c12a253adc5da6cf163b5592
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bd65f12c065ee1d96934c6790779c8b4ca87b393
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426306"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild-Toolset (ToolsVersion)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 MSBuild verwendet ein Toolset von Aufgaben, Zielen und Tools für die Erstellung einer Anwendung. Ein MSBuild-Toolset umfasst in der Regel eine Datei mit allgemeinen Aufgaben (microsoft.common.tasks), eine Datei mit allgemeinen Zielen (microsoft.common.targets) und Compiler wie csc.exe und vbc.exe. Die meisten Toolsets können verwendet werden, um Anwendungen für mehr als eine Version von .NET Framework und mehr als eine Systemplattform zu kompilieren. Das Toolset MSBuild 2.0 kann allerdings nur für .NET Framework 2.0 verwendet werden.  
   
 ## <a name="toolsversion-attribute"></a>ToolsVersion-Attribut  
@@ -77,7 +71,7 @@ MSBuild verwendet ein Toolset von Aufgaben, Zielen und Tools für die Erstellung
   
 - Durch Verwendung von <xref:Microsoft.Build.Utilities.ToolLocationHelper>-Methoden  
   
-  In den Toolseteigenschaften sind die Pfade der Tools angegeben. MSBuild verwendet den Wert des `ToolsVersion`-Attributs in der Projektdatei, um den entsprechenden Registrierungsschlüssel zu suchen, und verwendet dann die Informationen im Registrierungsschlüssel, um die Toolseteigenschaften festzulegen. Wenn `ToolsVersion` z.B. den Wert `12.0` hat, dann legt MSBuild die Toolseteigenschaften entsprechend diesem Registrierungsschlüssel fest: HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
+  In den Toolseteigenschaften sind die Pfade der Tools angegeben. MSBuild verwendet den Wert des `ToolsVersion`-Attributs in der Projektdatei, um den entsprechenden Registrierungsschlüssel zu suchen, und verwendet dann die Informationen im Registrierungsschlüssel, um die Toolseteigenschaften festzulegen. Wenn `ToolsVersion` z. B. den Wert `12.0` hat, dann legt MSBuild die Toolseteigenschaften entsprechend diesem Registrierungsschlüssel fest: HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
   
   Dies sind die Toolseteigenschaften:  
   
@@ -103,7 +97,7 @@ MSBuild verwendet ein Toolset von Aufgaben, Zielen und Tools für die Erstellung
  Wie bereits früher in diesem Thema beschrieben, verwendet MSBuild einen Registrierungsschlüssel, um den Pfad der grundlegenden Tools anzugeben. Wenn der Schlüssel einen Unterschlüssel hat, verwendet MSBuild ihn, um den Pfad eines Unter-Toolsets anzugeben, das zusätzliche Tools enthält. In diesem Fall wird das Toolset definiert, indem die in beiden Schlüsseln definierten Eigenschaftendefinitionen kombiniert werden.  
   
 > [!NOTE]
->  Wenn bei Toolseteigenschaftennamen Konflikte auftreten, überschreibt der Wert, der für den Unterschlüsselpfad definiert ist, den Wert, der für den Stammschlüsselpfad definiert ist.  
+> Wenn bei Toolseteigenschaftennamen Konflikte auftreten, überschreibt der Wert, der für den Unterschlüsselpfad definiert ist, den Wert, der für den Stammschlüsselpfad definiert ist.  
   
  Unter-Toolsets werden bei Vorhandensein der Buildeigenschaft `VisualStudioVersion` aktiv. Diese Eigenschaft verwendet einen der folgenden Werte:  
   
@@ -124,6 +118,3 @@ MSBuild verwendet ein Toolset von Aufgaben, Zielen und Tools für die Erstellung
 ## <a name="see-also"></a>Siehe auch  
  [Standardmäßige und benutzerdefinierte Toolsetkonfigurationen](../msbuild/standard-and-custom-toolset-configurations.md)   
  [Festlegen von Zielversionen](../msbuild/msbuild-multitargeting-overview.md)
-
-
-

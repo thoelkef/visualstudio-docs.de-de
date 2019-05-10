@@ -1,31 +1,33 @@
 ---
 title: QuickInfo in einem Legacysprachdienst | Microsoft-Dokumentation
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Quick Info, supporting in language services [managed package framework]
 - IntelliSense, Quick Info
 - language services [managed package framework], IntelliSense Quick Info
 ms.assetid: 159ccb0b-f5d6-4912-b88b-e9612924ed5e
-author: gregvanl
+caps.latest.revision: 17
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 8bba57c0a069f515f29e02ec712e3cce7d457f95
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9dc46510aeeaf08279101ff546cde6dbd2593571
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908767"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425681"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>QuickInfo in einem Legacysprachdienst
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 IntelliSense-QuickInfo zeigt Informationen über einen Bezeichner in der Quelle, wenn der Benutzer entweder die Einfügemarke in die ID setzt und wählt **Quick Info** aus der **IntelliSense** Menü oder die Maus der Cursor über einen Bezeichner. Dadurch wird eine QuickInfo mit Informationen zu den Bezeichner angezeigt werden. Diese Informationen enthalten i. d. r. der Typ des Bezeichners. Wenn die Debug-Engine aktiv ist, kann diese Informationen den aktuellen Wert enthalten. Die Debug-Engine stellt Ausdruckswerte, während der Sprachdienst nur Bezeichner behandelt.  
   
  Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Wenn Sie mehr erfahren möchten, finden Sie unter [Exemplarische Vorgehensweise: Anzeigen von QuickInfos](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md).  
   
 > [!NOTE]
->  Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
+> Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
   
  Die verwaltete Package Framework (MPF) Sprache Dienstklassen bieten vollständige Unterstützung zum Anzeigen der IntelliSense-QuickInfo-QuickInfo. Müssen Sie lediglich den Text angezeigt werden, und aktivieren die Funktion "QuickInfo" angeben.  
   

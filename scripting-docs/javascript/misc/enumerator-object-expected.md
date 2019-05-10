@@ -1,14 +1,9 @@
 ---
 title: Enumeratorobjekt erwartet | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5015
 dev_langs:
@@ -16,16 +11,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: dc6e32c1-a6e6-4e12-ac99-e3f65f91c8d7
-caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 002c3a748af8f7fa5c21109adcb279f893b38965
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 06005f635e5173e903cfba6a952750d64181d0bf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54093001"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946341"
 ---
 # <a name="enumerator-object-expected"></a>Enumerator-Objekt erwartet
 Sie haben versucht, rufen Sie die **Enumerator.prototype.atEnd, Enumerator.prototype.item, Enumerator.prototype.moveFirst,** oder **Enumerator.prototype.moveNext** Methode für ein Objekt eines anderen Typs als `Enumerator`. Das Objekt dieser Art von Aufruf muss vom Typ `Enumerator`. Hier ist ein Beispiel für Code, der mit dieser Regel wird ein:  
@@ -38,7 +32,7 @@ o.f();
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Rufen Sie nur die **Enumerator.prototype.atEnd**, **Enumerator.prototype.item**, **Enumerator.prototype.moveFirst**, oder  **Enumerator.prototype.moveNext** Methoden für Objekte vom Typ `Enumerator`. Um zu ermitteln, ob das Objekt ist ein `Enumerator` -Objekts:  
+- Rufen Sie nur die **Enumerator.prototype.atEnd**, **Enumerator.prototype.item**, **Enumerator.prototype.moveFirst**, oder  **Enumerator.prototype.moveNext** Methoden für Objekte vom Typ `Enumerator`. Um zu ermitteln, ob das Objekt ist ein `Enumerator` -Objekts:  
   
     ```js
     if(x instanceof Enumerator)  

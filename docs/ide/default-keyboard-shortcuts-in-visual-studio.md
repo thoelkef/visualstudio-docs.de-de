@@ -1,7 +1,6 @@
 ---
 title: Standardtastenkombinationen
 ms.date: 06/26/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - shortcut keys [Visual Studio], keyboard binding schemes
@@ -11,15 +10,15 @@ helpviewer_keywords:
 - keyboard shortcuts
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dbde2e26ac576758d45ee908e30d9bef3341a3ec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4e8cea36eeed3e09f1d88ad08f95f816d5206d65
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849589"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62962040"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Standardtastenkombinationen in Visual Studio
 
@@ -41,22 +40,22 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |[Debugger-Kontextmenüs](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[Weitere Kontextmenüs](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Team Foundation-Kontextmenüs](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|
 |[Diagnosehub](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||
 
-##  <a name="bkmk_global"></a> Global
+## <a name="bkmk_global"></a> Global
 
-###  <a name="bkmk_analyze"></a> Analyse
+### <a name="bkmk_analyze"></a> Analyse
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
 |Analyze.NavigateBackward|**UMSCHALT+ALT+3**|
 |Analyze.NavigateForward|**UMSCHALT+ALT+4**|
 
-###  <a name="bkmk_architecture"></a> Architektur
+### <a name="bkmk_architecture"></a> Architektur
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
 |Architecture.NewDiagram|**STRG+\\, STRG+N**|
 
-###  <a name="bkmk_build"></a> Erstellen
+### <a name="bkmk_build"></a> Erstellen
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -65,13 +64,13 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |Build.Compile|**STRG+F7**|
 |Build.RunCodeAnalysisonSolution|**ALT+F11**|
 
-###  <a name="bkmk_classview"></a> Klassenansicht: Kontextmenüs
+### <a name="bkmk_classview"></a> Klassenansicht: Kontextmenüs
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
 |ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties|**ALT+EINGABETASTE**|
 
-###  <a name="bkmk_debug"></a> Debuggen
+### <a name="bkmk_debug"></a> Debuggen
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -139,7 +138,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |Debug.Watch3|**STRG+ALT+W, 3**|
 |Debug.Watch4|**STRG+ALT+W, 4**|
 
-###  <a name="bkmk_debugger"></a> Debugger-Kontextmenüs
+### <a name="bkmk_debugger"></a> Debugger-Kontextmenüs
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -147,13 +146,13 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |DebuggerContextMenus.BreakpointsWindow.GoToDisassembly|**ALT+F9, A**|
 |DebuggerContextMenus.BreakpointsWindow.GoToSourceCode|**ALT+F9, S**|
 
-###  <a name="bkmk_diagnostics"></a> Diagnosehub
+### <a name="bkmk_diagnostics"></a> Diagnosehub
 
 |Befehl|Tastenkombination|
 |-------------| - |
 |DiagnosticsHub.StopCollection|**STRG+ALT+F2**|
 
-###  <a name="bkmk_edit"></a> Bearbeiten
+### <a name="bkmk_edit"></a> Bearbeiten
 
 |Befehle|Tastenkombinationen|
 |--------------|-|
@@ -212,7 +211,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |Edit.SurroundWith|**STRG+K, STRG+S**|
 |Edit.Undo|**STRG+Z**<br /><br /> oder<br /><br /> **ALT+RÜCKTASTE**|
 
-###  <a name="bkmk_editorContext"></a> Editor-Kontextmenüs
+### <a name="bkmk_editorContext"></a> Editor-Kontextmenüs
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -223,7 +222,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|**STRG+K, STRG+O** (Buchstabe „O“)|
 |EditorContextMenus.CodeWindow.ViewCallHierarchy|**STRG+K, STRG+T**<br /><br /> oder<br /><br /> **STRG+K, T**|
 
-###  <a name="bkmk_file"></a> Datei
+### <a name="bkmk_file"></a> Datei
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -239,7 +238,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |File.SaveSelectedItems|**STRG+S**|
 |File.ViewinBrowser|**STRG+UMSCHALT+W**|
 
-###  <a name="bkmk_help"></a> Hilfe
+### <a name="bkmk_help"></a> Hilfe
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -248,19 +247,19 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |Help.ViewHelp|**STRG+F1**|
 |Help.WindowHelp|**UMSCHALTTASTE+F1**|
 
-###  <a name="bkmk_loadtest"></a> Auslastungstest
+### <a name="bkmk_loadtest"></a> Auslastungstest
 
 |Befehl|Tastenkombination|
 |-------------| - |
 |LoadTest.JumpToCounterPane|**STRG+R, Q**|
 
-###  <a name="bkmk_otherContext"></a> Weitere Kontextmenüs
+### <a name="bkmk_otherContext"></a> Weitere Kontextmenüs
 
 |Befehl|Tastenkombination|
 |-------------| - |
 |OtherContextMenus.MicrosoftDataEntityDesignContext.AddNewDiagram|**Einfügen**|
 
-###  <a name="bkmk_project"></a> Projekt
+### <a name="bkmk_project"></a> Projekt
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -272,14 +271,14 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |Project.Publishselectedfiles|**ALT+;**, dann **Alt+P**|
 |Project.Replaceselectedfilesfromserver|**ALT+;**, dann **Alt+R**|
 
-###  <a name="bkmk_projectContext"></a> Kontextmenüs für Projekte und Projektmappen
+### <a name="bkmk_projectContext"></a> Kontextmenüs für Projekte und Projektmappen
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
 |ProjectandSolutionContextMenus.Item.MoveDown|**ALT+NACH-UNTEN-TASTE**|
 |ProjectandSolutionContextMenus.Item.MoveUp|**ALT+NACH-OBEN-TASTE**|
 
-###  <a name="bkmk_refactor"></a> Refactor
+### <a name="bkmk_refactor"></a> Refactor
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -290,7 +289,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |Refactor.Rename|**STRG+R, STRG+R**|
 |Refactor.ReorderParameters|**STRG+R, STRG+O** (Buchstabe „O“)|
 
-###  <a name="bkmk_solutionexplorerGLOBAL"></a> Projektmappen-Explorer
+### <a name="bkmk_solutionexplorerGLOBAL"></a> Projektmappen-Explorer
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -298,7 +297,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |SolutionExplorer.PendingChangesFilter|**STRG+[**, **P**<br /><br /> oder<br /><br /> **STRG+[**, **STRG+P**|
 |SolutionExplorer.SyncWithActiveDocument|**STRG+[**, **S**<br /><br /> oder<br /><br /> **STRG+[**, **STRG+S**|
 
-###  <a name="bkmk_team"></a> Team
+### <a name="bkmk_team"></a> Team
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -307,7 +306,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |Team.Git.GoToGitCommits|**STRG+0** (null), **STRG+O** (Buchstabe „O“)<br /><br /> oder<br /><br /> **STRG+0**|
 |Team.TeamExplorerSearch|**STRG+'**|
 
-###  <a name="bkmk_TFcontext"></a> Team Foundation-Kontextmenüs
+### <a name="bkmk_TFcontext"></a> Team Foundation-Kontextmenüs
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -322,14 +321,14 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |TeamFoundationContextMenus.Commands.GoToWebAccess|**STRG+0** (null), **STRG+A**<br /><br /> oder<br /><br /> **STRG+0, A**|
 |TeamFoundationContextMenus.Commands.GoToWorkItems|**STRG+0** (null), **STRG+W**<br /><br /> oder<br /><br /> **STRG+0, W**|
 
-###  <a name="bkmk_test"></a> Test
+### <a name="bkmk_test"></a> Test
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
 |Test.UseCodedUITestBuilder|**STRG+\\, STRG+C**|
 |Test.UseExistingActionRecording|**STRG+\\, STRG+A**|
 
-###  <a name="bkmk_testexplorerGLOBAL"></a> Test-Explorer
+### <a name="bkmk_testexplorerGLOBAL"></a> Test-Explorer
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -339,7 +338,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |TestExplorer.RunAllTests|**STRG+R, A**|
 |TestExplorer.RunAllTestsInContext|**STRG+R, T**|
 
-###  <a name="bkmk_tools"></a> Extras
+### <a name="bkmk_tools"></a> Extras
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -348,7 +347,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |Tools.ForceGC|**STRG+UMSCHALT+ALT+F12, STRG+UMSCHALT+ALT+F12**|
 |Tools.GoToCommandLine|**STRG+/**|
 
-###  <a name="bkmk_view"></a> Ansicht
+### <a name="bkmk_view"></a> Ansicht
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -397,7 +396,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |View.ZoomIn|**STRG+UMSCHALT+.**|
 |View.ZoomOut|**STRG+UMSCHALT+,**|
 
-###  <a name="bkmk_window"></a> Fenster
+### <a name="bkmk_window"></a> Fenster
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -428,14 +427,14 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |Window.SolutionExplorerSearch|**STRG+;**|
 |Window.WindowSearch|**ALT+`**|
 
-###  <a name="bkmk_windowsazure"></a> Azure
+### <a name="bkmk_windowsazure"></a> Azure
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
 |WindowsAzure.RetryMobileServiceScriptOperation|**STRG+NUM\*, STRG+R**|
 |WindowsAzure.ShowMobileServiceScriptErrorDetails|**STRG+NUM\*, STRG+D**|
 
-##  <a name="adonet-entity-data-model-designer"></a>ADO.NET Entity Data Model-Designer
+## <a name="adonet-entity-data-model-designer"></a>ADO.NET Entity Data Model-Designer
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -450,7 +449,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |View.EntityDataModelBrowser|**STRG+1**|
 |View.EntityDataModelMappingDetails|**STRG+2**|
 
-##  <a name="class-diagram"></a>Klassendiagramm
+## <a name="class-diagram"></a>Klassendiagramm
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -462,7 +461,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |Edit.RemovefromDiagram|**Löschen**|
 |View.ViewCode|**EINGABETASTE**|
 
-##  <a name="coded-ui-test-editor"></a>Editor für Tests der programmierten UI
+## <a name="coded-ui-test-editor"></a>Editor für Tests der codierten UI
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -473,14 +472,14 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |OtherContextMenus.UITestEditorContextMenu.Movecode|**STRG+ALT+C**|
 |OtherContextMenus.UITestEditorContextMenu.Splitintoanewmethod|**STRG+UMSCHALT+T**|
 
-##  <a name="dataset-editor"></a>DataSet-Editor
+## <a name="dataset-editor"></a>DataSet-Editor
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
 |OtherContextMenus.ColumnContext.InsertColumn|**Einfügen**|
 |OtherContextMenus.DbTableContext.Add.Column|**STRG+L**|
 
-##  <a name="difference-viewer"></a>Unterschiedanzeige
+## <a name="difference-viewer"></a>Unterschiedanzeige
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -496,7 +495,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |EditorContextMenus.CodeWindow.AddComment|**STRG+UMSCHALT+K**|
 |EditorContextMenus.CodeWindow.EditLocalFile|**STRG+UMSCHALT+P**|
 
-##  <a name="dom-explorer"></a>DOM-Explorer
+## <a name="dom-explorer"></a>DOM-Explorer
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -504,13 +503,13 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |DOMExplorer.SelectElement|**STRG+B**|
 |DOMExplorer.ShowLayout|**STRG+UMSCHALT+I**|
 
-##  <a name="f-interactive"></a>Interaktiv (F#)
+## <a name="f-interactive"></a>Interaktiv (F#)
 
 |Befehl|Tastenkombination|
 |-------------| - |
 |OtherContextMenus.FSIConsoleContext.CancelInteractiveEvaluation|**STRG+UNTBR**|
 
-##  <a name="graph-document-editor"></a>Diagrammdokument-Editor
+## <a name="graph-document-editor"></a>Diagrammdokument-Editor
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -522,7 +521,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |ArchitectureContextMenus.DirectedGraphContextMenu.Remove|**Löschen**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Rename|**F2**|
 
-##  <a name="graphics-diagnostics"></a>Grafikdiagnose
+## <a name="graphics-diagnostics"></a>Grafikdiagnose
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -536,13 +535,13 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |Graphics.ZoomIn|**UMSCHALT+ALT+=**|
 |Graphics.ZoomOut|**UMSCHALT+ALT+-**|
 
-##  <a name="html-editor"></a>HTML-Editor
+## <a name="html-editor"></a>HTML-Editor
 
 |Befehl|Tastenkombination|
 |-------------| - |
 |OtherContextMenus.HTMLContext.GoToController|**STRG+M, STRG+G**|
 
-##  <a name="html-editor-design-view"></a>HTML-Editor-Entwurfsansicht
+## <a name="html-editor-design-view"></a>HTML-Editor-Entwurfsansicht
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -565,7 +564,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |View.ViewMarkup|**UMSCHALT+F7**|
 |Window.PreviousTab|**STRG+BILD-AUF**|
 
-##  <a name="html-editor-source-view"></a>HTML-Editor-Quellansicht
+## <a name="html-editor-source-view"></a>HTML-Editor-Quellansicht
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -575,13 +574,13 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |View.ViewDesigner|**UMSCHALT+F7**|
 |Window.PreviousTab|**STRG+BILD-AUF**|
 
-##  <a name="layer-diagram"></a>Ebenendiagramm
+## <a name="layer-diagram"></a>Ebenendiagramm
 
 |Befehl|Tastenkombination|
 |-------------| - |
 |Edit.Delete|**UMSCHALT+ENTF**|
 
-##  <a name="managed-resources-editor"></a>Verwaltete Ressourcen-Editor
+## <a name="managed-resources-editor"></a>Verwaltete Ressourcen-Editor
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -596,7 +595,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |Resources.Other|**STRG+6**|
 |Resources.Strings|**STRG+1**|
 
-##  <a name="merge-editor-window"></a>Merge-Editorfenster
+## <a name="merge-editor-window"></a>Merge-Editorfenster
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -604,7 +603,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonResultWindow|**ALT+2**|
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonRightWindow|**ALT+3**|
 
-##  <a name="microsoft-sql-server-data-tools-schema-compare"></a>Microsoft SQL Server Data Tools, Schemavergleich
+## <a name="microsoft-sql-server-data-tools-schema-compare"></a>Microsoft SQL Server Data Tools, Schemavergleich
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -615,7 +614,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |SQL.SSDTSchemaCompareStop|**ALT+PAUSE**|
 |SQL.SSDTSchemaCompareWriteUpdates|**UMSCHALT+ALT+U**|
 
-##  <a name="microsoft-sql-server-data-tools-table-designer"></a>Microsoft SQL Server Data Tools, Tabellen-Designer
+## <a name="microsoft-sql-server-data-tools-table-designer"></a>Microsoft SQL Server Data Tools, Tabellen-Designer
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -626,7 +625,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |SQL.Rename|**F2**<br /><br /> oder<br /><br /> **STRG+R, R**<br /><br /> oder<br /><br /> **STRG+R, STRG+R**|
 |ViewFileInScriptPanel|**UMSCHALT+ALT+BILD-AB**|
 
-##  <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Microsoft SQL Server Data Tools, T-SQL-Editor
+## <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Microsoft SQL Server Data Tools, T-SQL-Editor
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -647,7 +646,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |TSqlEditorCloneQuery|**STRG+ALT+N**|
 |TSqlEditorDatabaseCombo|**UMSCHALT+ALT+BILD-AB**|
 
-##  <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a>Microsoft SQL Server Data Tools, T-SQL-PDW-Editor
+## <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a>Microsoft SQL Server Data Tools, T-SQL-PDW-Editor
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -662,13 +661,13 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |TSqlEditorCloneQuery|**STRG+ALT+N**|
 |TSqlEditorDatabaseCombo|**UMSCHALT+ALT+BILD-AB**|
 
-##  <a name="page-inspector"></a>Seitenprüfung
+## <a name="page-inspector"></a>Seitenprüfung
 
 |Befehl|Tastenkombination|
 |-------------| - |
 |PageInspector.Minimize|**F12**|
 
-##  <a name="query-designer"></a>Abfrage-Designer
+## <a name="query-designer"></a>Abfrage-Designer
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -681,7 +680,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |QueryDesigner.Results|**STRG+4**|
 |QueryDesigner.SQL|**STRG+3**|
 
-##  <a name="query-results"></a>Abfrageergebnisse
+## <a name="query-results"></a>Abfrageergebnisse
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -689,7 +688,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |SQL.QueryResultsRefresh|**UMSCHALT+ALT+R**|
 |SQL.QueryResultsStop|**ALT+PAUSE**|
 
-##  <a name="report-designer"></a>Berichts-Designer
+## <a name="report-designer"></a>Berichts-Designer
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -715,14 +714,14 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |Edit.TabLeft|**UMSCHALT+TAB**|
 |View.ReportData|**STRG+ALT+D**|
 
-##  <a name="sequence-diagram"></a>Sequenzdiagramm
+## <a name="sequence-diagram"></a>Sequenzdiagramm
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
 |ArchitectureDesigner.Sequence.NavigateToCode|**F12**|
 |Edit.Delete|**UMSCHALT+ENTF**|
 
-##  <a name="settings-designer"></a>Einstellungs-Designer
+## <a name="settings-designer"></a>Einstellungs-Designer
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -731,13 +730,13 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |Edit.SelectionCancel|**ESC**|
 |View.ViewCode|**F7**|
 
-##  <a name="solution-explorer"></a>Projektmappen-Explorer
+## <a name="solution-explorer"></a>Projektmappen-Explorer
 
 |Befehl|Tastenkombination|
 |-------------| - |
 |ClassViewContextMenus.ClassViewProject.View.ViewinPageInspector|**STRG+K, STRG+G**|
 
-##  <a name="team-explorer"></a>Team Explorer
+## <a name="team-explorer"></a>Team Explorer
 
 |Befehl|Tastenkombination|
 |-------------| - |
@@ -762,13 +761,13 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageNewLinkedWI|**UMSCHALT+ALT+L**|
 |View.Refresh|**F5**|
 
-##  <a name="test-explorer"></a>Test-Explorer
+## <a name="test-explorer"></a>Test-Explorer
 
 |Befehl|Tastenkombination|
 |-------------| - |
 |TestExplorer.OpenTest|**F12**|
 
-##  <a name="text-editor"></a>Text-Editor
+## <a name="text-editor"></a>Text-Editor
 
 | Befehle | Tastenkombinationen |
 | - | - |
@@ -799,11 +798,17 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 | Edit.ExpandCurrentRegion | **STRG+M, STRG+E** |
 | Edit.FormatDocument | **STRG+K, STRG+D** |
 | Edit.FormatSelection | **STRG+K, STRG+F** |
+| Edit.GotoAll | **STRG+T**<br /><br /> oder<br /><br /> **STRG+,** |
 | Edit.GotoBrace | **STRG+]** |
 | Edit.GotoBraceExtend | **STRG+UMSCHALT+]** |
+| Edit.GotoRecent | **STRG+T,R** |
+| Edit.GotoNextIssueinFile | **ALT+BILD-AB** |
+| Edit.GotoPreviousIssueinFile **Alt+PgUp** |
 | Edit.HideSelection | **STRG+M, STRG+H** |
 | Edit.IncreaseFilterLevel | **ALT+.** |
 | Edit.IncrementalSearch | **STRG+I** |
+| Edit.InsertCaretsatAllMatching | **UMSCHALT+ALT+;** |
+| Edit.InsertNextMatchingCaret | **UMSCHALT+ALT+.** |
 | Edit.InsertTab | **TAB** |
 | Edit.LineCut | **STRG+L** |
 | Edit.LineDelete | **STRG+UMSCHALT+L** |
@@ -846,7 +851,8 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 | Edit.SelectCurrentWord | **STRG+W** |
 | Edit.SelectionCancel | **ESC** |
 | Edit.SelectToLastGoBack | **STRG+=** |
-| Edit.ShowCodeLensMenu | **ALT+\`** |
+| Edit.ShowCodeLensMenu | **STRG+K, STRG+\`** |
+| Edit.ShowNavigateMenu | **ALT+\`** |
 | Edit.StopHidingCurrent | **STRG+M, STRG+U** |
 | Edit.StopOutlining | **STRG+M, STRG+P** |
 | Edit.SwapAnchor | **STRG+K, STRG+A** |
@@ -878,38 +884,38 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 | TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion | **ALT+BILD-AB** |
 | TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion | **ALT+BILD-AUF** |
 
-##  <a name="uml-activity-diagram"></a>UML-Aktivitätsdiagramm
+## <a name="uml-activity-diagram"></a>UML-Aktivitätsdiagramm
 
 |Befehl|Tastenkombination|
 |-------------| - |
 |Edit.Delete|**UMSCHALT+ENTF**|
 
-##  <a name="uml-class-diagram"></a>UML-Klassendiagramm
+## <a name="uml-class-diagram"></a>UML-Klassendiagramm
 
 |Befehl|Tastenkombination|
 |-------------| - |
 |Edit.DeleteFromModel|**UMSCHALT+ENTF**|
 
-##  <a name="uml-component-diagram"></a>UML-Komponentendiagramm
+## <a name="uml-component-diagram"></a>UML-Komponentendiagramm
 
 |Befehl|Tastenkombination|
 |-------------| - |
 |Edit.DeleteFromModel|**UMSCHALT+ENTF**|
 
-##  <a name="uml-use-case-diagram"></a>UML-Anwendungsfalldiagramm
+## <a name="uml-use-case-diagram"></a>UML-Anwendungsfalldiagramm
 
 |Befehl|Tastenkombination|
 |-------------| - |
 |Edit.DeleteFromModel|**UMSCHALT+ENTF**|
 
-##  <a name="vc-accelerator-editor"></a>VC-Zugriffstasten-Editor
+## <a name="vc-accelerator-editor"></a>VC-Zugriffstasten-Editor
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
 |Edit.NewAccelerator|**Einfügen**|
 |Edit.NextKeyTyped|**STRG+W**|
 
-##  <a name="vc-dialog-editor"></a>VC-Dialog-Editor
+## <a name="vc-dialog-editor"></a>VC-Dialog-Editor
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -943,7 +949,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |Format.TestDialog|**STRG+T**|
 |Format.ToggleGuides|**STRG+G**|
 
-##  <a name="vc-image-editor"></a>VC-Bildbearbeitung
+## <a name="vc-image-editor"></a>VC-Bildbearbeitung
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -985,13 +991,13 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |Image.ZoomIn|**STRG+UMSCHALT+.**<br /><br /> oder<br /><br /> **STRG+NACH-OBEN-TASTE**|
 |Image.ZoomOut|**STRG+UMSCHALT+,**<br /><br /> oder<br /><br /> **STRG+NACH-UNTEN-TASTE**|
 
-##  <a name="vc-string-editor"></a>VC-Zeichenfolgen-Editor
+## <a name="vc-string-editor"></a>VC-Zeichenfolgen-Editor
 
 |Befehl|Tastenkombination|
 |-------------| - |
 |Edit.NewString|**Einfügen**|
 
-##  <a name="view-designer"></a>Designer anzeigen
+## <a name="view-designer"></a>Designer anzeigen
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -1004,13 +1010,13 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |QueryDesigner.Results|**STRG+4**|
 |QueryDesigner.SQL|**STRG+3**|
 
-##  <a name="visual-studio"></a>Visual Studio
+## <a name="visual-studio"></a>Visual Studio
 
 |Befehl|Tastenkombination|
 |-------------| - |
 |OtherContextMenus.ORDesignerContext.HideMethodsPane|**STRG+1**|
 
-##  <a name="windows-forms-designer"></a>Windows Forms-Designer
+## <a name="windows-forms-designer"></a>Windows Forms-Designer
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -1039,7 +1045,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |Edit.SizeControlUp|**STRG+UMSCHALT+NACH-OBEN-TASTE**|
 |Edit.TabLeft|**UMSCHALT+TAB**|
 
-##  <a name="work-item-editor"></a>Arbeitselement-Editor
+## <a name="work-item-editor"></a>Arbeitsaufgaben-Editor
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -1047,7 +1053,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |Edit.RefreshWorkItem|**F5**|
 |Team.NewLinkedWorkItem|**UMSCHALT+ALT+L**|
 
-##  <a name="work-item-query-view"></a>Abfrageansicht für Arbeitselemente
+## <a name="work-item-query-view"></a>Abfrageansicht für Arbeitsaufgaben
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -1058,7 +1064,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |Team.Refresh|**F5**|
 |Window.Toggle|**UMSCHALT+ALT+V**|
 
-##  <a name="work-item-results-view"></a>Abfrageergebnisse für Arbeitselemente
+## <a name="work-item-results-view"></a>Abfrageergebnisse für Arbeitsaufgaben
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -1071,7 +1077,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |Team.Refresh|**F5**|
 |Window.Toggle|**UMSCHALT+ALT+V**|
 
-##  <a name="workflow-designer"></a>Workflow-Designer
+## <a name="workflow-designer"></a>Workflow-Designer
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -1099,7 +1105,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |WorkflowDesigner.ZoomIn|**STRG+NUM +**|
 |WorkflowDesigner.ZoomOut|**STRG+NUM -**|
 
-##  <a name="xaml-ui-designer"></a>XAML-Designer
+## <a name="xaml-ui-designer"></a>XAML-Designer
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
@@ -1121,14 +1127,14 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |View.EdgeRightMoveRight|**STRG+UMSCHALT+ALT+.**|
 |View.ShowPropertyMarkerMenu|**STRG+LEERTASTE**|
 
-##  <a name="xml-text-editor"></a>XML-(Text)-Editor
+## <a name="xml-text-editor"></a>XML-(Text)-Editor
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
 |XML.StartXSLTDebugging|**ALT+F5**|
 |XML.StartXSLTWithoutDebugging|**STRG+ALT+F5**|
 
-##  <a name="xml-schema-designer"></a>XML-Schema-Designer
+## <a name="xml-schema-designer"></a>XML-Schema-Designer
 
 |Befehle|Tastenkombinationen|
 |--------------| - |

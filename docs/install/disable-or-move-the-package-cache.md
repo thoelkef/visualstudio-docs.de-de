@@ -3,7 +3,6 @@ title: Deaktivieren oder Verschieben des Paketcaches
 description: Informationen zum Deaktivieren, Aktivieren oder Verschieben des Paketcaches für Visual Studio-Bereitstellungen.
 ms.date: 04/14/2017
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - cache
@@ -14,15 +13,17 @@ helpviewer_keywords:
 ms.assetid: 2429993A-3F0E-41C5-9562-FEA6AE994440
 author: heaths
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed8a827dd1edfcd2f0e61361ec4b20f6662ab036
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 47793cff733d84634c79355fb7639dbdad1cd82f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974237"
 ---
 # <a name="disable-or-move-the-package-cache"></a>Deaktivieren oder Verschieben des Paketcaches
 

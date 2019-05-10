@@ -7,15 +7,15 @@ helpviewer_keywords:
 - VSPerfASPNETCmd
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac8ec48f7e860d4588a1d133792ceeb1c26add45
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 759a1cbf711b4264478c1e7fc44a65b86328ce32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849644"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431973"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Schnelle Websiteprofilerstellung mit VSPerfASPNETCmd
 
@@ -27,7 +27,7 @@ Mit dem Befehlszeilentool **VSPerfASPNETCmd** können Sie problemlos [!INCLUDE[v
  In einigen Szenarios, z.B. beim Sammeln von Parallelitätsdaten oder Anhalten und Fortsetzen von Profilerstellungen, ist **VSPerfCmd** die bevorzugte Profilerstellungsmethode.
 
 > [!NOTE]
->  Informationen zum Abrufen des Pfads zu den Profilerstellungstools finden Sie unter [Angeben des Pfads zu Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Auf 64-Bit-Computern sind sowohl 64 Bit- als auch 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen.  
+> Informationen zum Abrufen des Pfads zu den Profilerstellungstools finden Sie unter [Angeben des Pfads zu Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Auf 64-Bit-Computern sind sowohl 64 Bit- als auch 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen.
 
 ## <a name="profile-an-aspnet-application"></a>Profilen einer ASP.NET-Anwendung
 

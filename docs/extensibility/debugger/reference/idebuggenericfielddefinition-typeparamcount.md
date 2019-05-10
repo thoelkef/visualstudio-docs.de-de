@@ -1,29 +1,31 @@
 ---
 title: IDebugGenericFieldDefinition::TypeParamCount | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - TypeParamCount
 - IDebugGenericFieldDefinition::TypeParamCount
 ms.assetid: d41dd5ea-aa25-4bf3-bcfd-e0bf451ead49
-author: gregvanl
+caps.latest.revision: 9
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: c7aa853240452b9f30bf3a1b40f0f5be01673e61
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2e6334f727b0c40352b7e6ca9b9a199edd98a502
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929939"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62873531"
 ---
 # <a name="idebuggenericfielddefinitiontypeparamcount"></a>IDebugGenericFieldDefinition::TypeParamCount
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Ruft die Anzahl von Typparametern, die dem generischen Feld zugeordnet sind.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT TypeParamCount(  
    ULONG32* pcParams  
 );  

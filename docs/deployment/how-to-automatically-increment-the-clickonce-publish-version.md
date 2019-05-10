@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Automatisches Erhöhen der ClickOnce-Veröffentlichungsversion | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 686ab88a-6305-4914-a05b-fe269cc0ae1e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7dd1723d9d92d9bc1b667cc3fddbc3ea297d8b8
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: MTE95
+ms.openlocfilehash: cce9dfe48e34d642b115c8391de73c0350ce515b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389123"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928498"
 ---
 # <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>Vorgehensweise: Automatisches Erhöhen der ClickOnce-Veröffentlichungsversion
 
@@ -37,14 +35,14 @@ Sie können dieses Verhalten deaktivieren, auf die **veröffentlichen** auf der 
 
 ## <a name="to-disable-automatically-incrementing-the-publish-version"></a>So deaktivieren Sie automatisch Inkrementieren der Veröffentlichungsversion
 
-1.  Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.
+1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.
 
-2.  Klicken Sie auf die Registerkarte **Veröffentlichen**.
+2. Klicken Sie auf die Registerkarte **Veröffentlichen**.
 
-3.  In der **Veröffentlichungsversion** deaktivieren Sie im Abschnitt der **Revisionsnummer automatisch mit jeder Veröffentlichung erhöhen** Kontrollkästchen.
+3. In der **Veröffentlichungsversion** deaktivieren Sie im Abschnitt der **Revisionsnummer automatisch mit jeder Veröffentlichung erhöhen** Kontrollkästchen.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [How to: Set the ClickOnce publish version (Vorgehensweise: Festlegen der ClickOnce-Veröffentlichungsversion)](../deployment/how-to-set-the-clickonce-publish-version.md)
+- [Vorgehensweise: Festlegen der ClickOnce-Veröffentlichungsversion](../deployment/how-to-set-the-clickonce-publish-version.md)
 - [Publish ClickOnce applications (Veröffentlichen von ClickOnce-Anwendungen)](../deployment/publishing-clickonce-applications.md)
-- [How to: Publish a ClickOnce application using the Publish Wizard (Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Veröffentlichungs-Assistenten)](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [Vorgehensweise: Publish a ClickOnce Application using the Publish Wizard (Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten)](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

@@ -7,20 +7,20 @@ helpviewer_keywords:
 ms.assetid: 741d45f5-0ea3-4614-972a-8728fe054e07
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 340156463d2c4ec194ed70c0c8d74232574917ee
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 044bf36845be70290291b79dee255c452f56f0a0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842644"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62907478"
 ---
 # <a name="legacy-interfaces-in-the-editor"></a>Legacy-Schnittstellen im editor
-Sie können Visual Studio-Editor von legacy-Schnittstelle zugreifen. Visual Studio SDK umfasst Adapter, die als bekannt *Shims*, die es ermöglichen, diese Schnittstellen für die Interaktion mit den neuen Editor. Dennoch wird empfohlen, dass Sie Ihren Legacycode Verwendung des neuen Editors für API aktualisieren. Ihr Code bieten eine bessere Leistung und Sie können neue Technologien wie Windows Presentation Foundation (WPF) und das Managed Extensibility Framework (MEF).  
+Sie können Visual Studio-Editor von legacy-Schnittstelle zugreifen. Visual Studio SDK umfasst Adapter, die als bekannt *Shims*, die es ermöglichen, diese Schnittstellen für die Interaktion mit den neuen Editor. Dennoch wird empfohlen, dass Sie Ihren Legacycode Verwendung des neuen Editors für API aktualisieren. Ihr Code bieten eine bessere Leistung und Sie können neue Technologien wie Windows Presentation Foundation (WPF) und das Managed Extensibility Framework (MEF).
 
-## <a name="related-topics"></a>Verwandte Themen  
+## <a name="related-topics"></a>Verwandte Themen
 
 | Titel | Beschreibung |
 | - | - |

@@ -1,7 +1,6 @@
 ---
 title: 'CA2116: APTCA-Methoden sollten nur APTCA-Methoden aufrufen.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - AptcaMethodsShouldOnlyCallAptcaMethods
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 8b91637e-891f-4dde-857b-bf8012270ec4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03c00efe53a5385d7604d0191ff60ae70888e655
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 03948506d928f7d638b21c1fa4bc0a35818ec09a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954434"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545421"
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: APTCA-Methoden sollten nur APTCA-Methoden aufrufen.
 

@@ -1,26 +1,21 @@
 ---
 title: Befehl Implementierung | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - commands, implementation
 ms.assetid: c782175c-cce4-4bd0-8374-4a897ceb1b3d
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: be1bcecb740fb0c375d0f461639a8b0d5e40669a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a208fabd3d205793763698cde0f6fe367c7bb8b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765200"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067832"
 ---
 # <a name="command-implementation"></a>Befehlsimplementierung
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -74,23 +69,23 @@ if ( null != mcs )
   
 - Wenn Ihre Implementierung der beiden Methoden, sowohl die GUID und der Befehl erkennt, und klicken Sie dann die Methode sollte das Feld Befehlsflags der jeden Befehl festgelegt (in der `prgCmds` Parameter) mithilfe der folgenden Flags:  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Wenn der Befehl unterstützt wird.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Wenn der Befehl unterstützt wird.  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Wenn der Befehl nicht sichtbar sein soll.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Wenn der Befehl nicht sichtbar sein soll.  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Wenn der Befehl eingeschaltet ist, und es wird angezeigt, die überprüft wurden.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Wenn der Befehl eingeschaltet ist, und es wird angezeigt, die überprüft wurden.  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Wenn der Befehl aktiviert ist.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Wenn der Befehl aktiviert ist.  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Wenn der Befehl ausgeblendet werden soll, wenn sie ein Kontextmenü angezeigt wird.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Wenn der Befehl ausgeblendet werden soll, wenn sie ein Kontextmenü angezeigt wird.  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Wenn der Befehl ist ein Menücontroller und ist nicht aktiviert, aber die Dropdown-Menü-Liste ist nicht leer, und ist weiterhin verfügbar. (Dieses Flag wird nur selten verwendet).  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Wenn der Befehl ist ein Menücontroller und ist nicht aktiviert, aber die Dropdown-Menü-Liste ist nicht leer, und ist weiterhin verfügbar. (Dieses Flag wird nur selten verwendet).  
   
 - Wenn der Befehl definiert wurde, in der VSCT-Datei mit den `TextChanges` kennzeichnen, legen Sie die folgenden Parameter:  
   
-  -   Legen Sie die `rgwz` Element der `pCmdText` Parameter, um den neuen Text des Befehls.  
+  - Legen Sie die `rgwz` Element der `pCmdText` Parameter, um den neuen Text des Befehls.  
   
-  -   Legen Sie die `cwActual` Element der `pCmdText` Parameter, um die Größe der Befehlszeichenfolge.  
+  - Legen Sie die `cwActual` Element der `pCmdText` Parameter, um die Größe der Befehlszeichenfolge.  
   
   Stellen Sie außerdem sicher, dass der aktuelle Kontext keiner Automatisierungsfunktion, es sei denn, der Befehl dient speziell Automatisierungsfunktionen behandeln.  
   
@@ -144,4 +139,3 @@ public int Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pv
   
 ## <a name="see-also"></a>Siehe auch  
  [Hinzufügen von Benutzeroberflächenelementen mit VSPackages](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-

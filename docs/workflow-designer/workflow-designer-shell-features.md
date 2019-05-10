@@ -2,21 +2,20 @@
 title: Workflow-Designer-Shellfunktionen
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
 f1_keywords:
 - WFDShellFeatures.UI
 ms.assetid: 14bfe312-9592-408e-92ce-e98585ad16e7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2aaac9c6148aee2b39d0231f7b893bcfaf89e301
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4519be8ec5c5d4ba8a611df1880ae770a83cf981
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433863"
 ---
 # <a name="workflow-designer-shell-features"></a>Workflow-Designer-Shellfunktionen
 

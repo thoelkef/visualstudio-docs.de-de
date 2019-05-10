@@ -2,20 +2,18 @@
 title: Codeausschnitte für R
 description: Codeausschnitte für R in Visual Studio bieten Verknüpfungen zum schnellen Einfügen von Codeblöcken mit beliebiger Länge – so kann das wiederholte Eingeben von ähnlichem Code vermieden werden.
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 0c9db243b3903ddcbaa310bbf5ba3fd911eee7fc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 05a21da94dd643b04cea94b7840ca26d9379cb5a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35667729"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969447"
 ---
 # <a name="code-snippets"></a>Codeausschnitte
 
@@ -38,7 +36,7 @@ In diesem Fall zeigt IntelliSense eine Vervollständigungsliste an, wenn Sie `re
 
 ![Dialogfeld „Codeausschnitt-Manager“ für R](media/code-snippet-dialog.png)
 
-Führen Sie die Schritte unter [Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts](../ide/walkthrough-creating-a-code-snippet.md) aus, um benutzerdefinierte Codeausschnitte zu erstellen. Letztendlich ist ein Codeausschnitt nur eine XML-Datei. Der folgende Code stellt beispielsweise den Ausschnitt für einen Pipevorgang dar (Verknüpfung `>`):
+Um benutzerdefinierte Codeausschnitte zu erstellen, befolgen Sie die Anweisungen unter [Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts](../ide/walkthrough-creating-a-code-snippet.md). Letztendlich ist ein Codeausschnitt nur eine XML-Datei. Der folgende Code stellt beispielsweise den Ausschnitt für einen Pipevorgang dar (Verknüpfung `>`):
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

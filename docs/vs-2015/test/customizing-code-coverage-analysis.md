@@ -1,24 +1,19 @@
 ---
 title: Anpassen der Code Coverage-Analyse | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d8a0b09bf2e67813548865b6ed56fee0b0170cc5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ef0a8d1867114cd655f1e361cf0401dab6bce1a5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890165"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416646"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Anpassen der Code Coverage-Analyse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,10 +69,10 @@ Standardmäßig analysiert das Code Coverage-Tool von Visual Studio alle Projekt
 ```  
   
 > [!WARNING]
->  Die Symbolauflösung kann zeitaufwendig sein, insbesondere wenn sie einen Remotedateispeicherort mit zahlreichen Assemblys verwendet. Daher sollten Sie erwägen, die Remote-PDB-Dateien an denselben lokalen Speicherort wie die Binärdateien (DLL- und EXE-Dateien) zu kopieren.  
+> Die Symbolauflösung kann zeitaufwendig sein, insbesondere wenn sie einen Remotedateispeicherort mit zahlreichen Assemblys verwendet. Daher sollten Sie erwägen, die Remote-PDB-Dateien an denselben lokalen Speicherort wie die Binärdateien (DLL- und EXE-Dateien) zu kopieren.  
   
 ### <a name="excluding-and-including"></a>Ausschließen und Einschließen  
- Sie können angegebene Assemblys von der Codeabdeckungsanalyse ausschließen. Beispiel:  
+ Sie können angegebene Assemblys von der Codeabdeckungsanalyse ausschließen. Zum Beispiel:  
   
 ```minterastlib  
 <ModulePaths>  
@@ -106,7 +101,7 @@ Standardmäßig analysiert das Code Coverage-Tool von Visual Studio alle Projekt
 ### <a name="regular-expressions"></a>Reguläre Ausdrücke  
  In den Knoten "include" und "exclude" werden reguläre Ausdrücke verwendet. Weitere Informationen finden Sie unter [Verwenden von regulären Ausdrücken in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Reguläre Ausdrücke sind nicht identisch mit Platzhaltern. Insbesondere:  
   
-1. **\.\\*** entspricht eine Zeichenfolge beliebiger Zeichen  
+1. **\.\\*** entspricht einer Zeichenfolge beliebiger Zeichen  
   
 2. **\\.** entspricht einem Punkt „.“  
   
@@ -120,7 +115,7 @@ Standardmäßig analysiert das Code Coverage-Tool von Visual Studio alle Projekt
   
    Bei allen Entsprechungen wird die Groß-/Kleinschreibung nicht beachtet.  
   
-   Beispiel:  
+   Zum Beispiel:  
   
 ```xml  
 <ModulePaths>  
@@ -139,7 +134,7 @@ Standardmäßig analysiert das Code Coverage-Tool von Visual Studio alle Projekt
 ```  
   
 > [!WARNING]
->  Wenn ein Fehler in einem regulären Ausdruck auftritt, z. B. eine Klammer ohne Escapezeichen und Übereinstimmung, wird die Codeabdeckungsanalyse nicht ausgeführt.  
+> Wenn ein Fehler in einem regulären Ausdruck auftritt, z. B. eine Klammer ohne Escapezeichen und Übereinstimmung, wird die Codeabdeckungsanalyse nicht ausgeführt.  
   
 ### <a name="other-ways-to-include-or-exclude-elements"></a>Andere Möglichkeiten zum Einschließen oder Ausschließen von Elementen  
  Ein Codebeispiel finden Sie [am Ende dieses Themas](#sample).  
@@ -158,7 +153,7 @@ Standardmäßig analysiert das Code Coverage-Tool von Visual Studio alle Projekt
   
   **Abgleichen eines Funktionsnamens**  
   
-  Der reguläre Ausdruck muss mit dem vollqualifizierten Namen der Funktion, einschließlich Namespace, Klasse, Methodenname und Parameterliste, übereinstimmen. Beispiel:  
+  Der reguläre Ausdruck muss mit dem vollqualifizierten Namen der Funktion, einschließlich Namespace, Klasse, Methodenname und Parameterliste, übereinstimmen. Ein auf ein Objekt angewendeter  
   
 - C# oder Visual Basic: `Fabrikam.Math.LocalMath.SquareRoot(double)`  
   
@@ -188,11 +183,11 @@ Standardmäßig analysiert das Code Coverage-Tool von Visual Studio alle Projekt
 ### <a name="to-customize-run-settings-in-a-command-line-test"></a>So passen Sie Laufzeiteinstellungen in einem Befehlszeilentest an  
  Um Tests über die Befehlszeile auszuführen, verwenden Sie "vstest.console.exe". Die Einstellungsdatei ist ein Parameter dieses Hilfsprogramms. Weitere Informationen finden Sie unter [Verwenden von VSTest.console über die Befehlszeile](http://msdn.microsoft.com/library/852812d8-b3bb-407e-bc43-04d511fcb27a).  
   
-1.  Starten der Visual Studio Developer-Eingabeaufforderung:  
+1. Starten der Visual Studio Developer-Eingabeaufforderung:  
   
      Klicken Sie im Windows-Menü **Start** auf **Alle Programme**, **Microsoft Visual Studio**, **Visual Studio-Tools** und **Developer-Eingabeaufforderung**.  
   
-2.  Führen Sie Folgendes aus:  
+2. Führen Sie Folgendes aus:  
   
      `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings`  
   
@@ -207,13 +202,13 @@ Standardmäßig analysiert das Code Coverage-Tool von Visual Studio alle Projekt
   
 3. Erweitern Sie auf der Seite **Prozess** die Elemente **Automatisierte Tests**, **Testquelle** und **Testlaufeinstellungen**. Wählen Sie die **RUNSETTINGS**-Datei aus.  
   
-   - <em>Aber **Testassembly</em>* angezeigt wird, anstelle von **Testquelle**. Beim Versuch, das Feld Laufzeiteinstellungen** festzulegen, kann ich nur TESTSETTINGS-Dateien auswählen.*  
+   - <em>Es wird jedoch die **Testassembly</em>* anstelle der **Testquelle** angezeigt. Beim Versuch, das Feld **Laufzeiteinstellungen** festzulegen, kann ich nur TESTSETTINGS-Dateien auswählen.*  
   
       Wählen Sie unter **Automatisierte Tests** die Option **Testassembly** aus, und klicken Sie am Ende der Zeile auf **[...]**. Setzen Sie im Dialogfeld **Testlauf hinzufügen/bearbeiten** den **Test Runner** auf **Visual Studio Test Runner**.  
   
    Die Ergebnisse sind im zusammenfassenden Abschnitt des Buildberichts sichtbar.  
   
-##  <a name="sample"></a> Beispiel für eine RUNSETTINGS-Datei:  
+## <a name="sample"></a> Beispiel für eine RUNSETTINGS-Datei:  
  Kopieren Sie diesen Code, und passen Sie ihn Ihren Anforderungen entsprechend an. Dies ist die standardmäßige RUNSETTINGS-Datei.  
   
  (Informationen zu anderen Verwendungsmöglichkeiten der RUNSETTINGS-Datei, finden Sie unter [Konfigurieren von Komponententests mithilfe einer .runsettings-Datei](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).)  
@@ -333,6 +328,3 @@ Included items must then not match any entries in the exclude list to remain inc
 ## <a name="see-also"></a>Siehe auch  
  [Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)   
  [Komponententest für Code](../test/unit-test-your-code.md)
-
-
-

@@ -1,30 +1,33 @@
 ---
 title: 'Idiasymbol:: Get_lexicalparentid | Microsoft-Dokumentation'
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_lexicalParentId method
 ms.assetid: 6c0c2874-cc47-4e4f-ad9c-02a18a108d9d
-author: mikejo5000
+caps.latest.revision: 11
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: 9fed1d730d0565e3b2348c5e3c620449c2e537a9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: a1d09e4cba02e1b27ca84a1c678a439f451012ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400188"
 ---
 # <a name="idiasymbolgetlexicalparentid"></a>IDiaSymbol::get_lexicalParentId
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Ruft den lexikalischen übergeordneten Bezeichner des Symbols ab.  
   
 ## <a name="syntax"></a>Syntax  
   
-```C++  
+```cpp#  
 HRESULT get_lexicalParentId (   
    DWORD* pRetVal  
 );  
@@ -38,7 +41,7 @@ HRESULT get_lexicalParentId ( 
  Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="remarks"></a>Hinweise  
  Der Bezeichner ist ein eindeutiger Wert erstellt, das DIA SDK alle Symbole als eindeutig kennzeichnen.  

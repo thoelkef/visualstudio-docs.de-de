@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Festlegen der aktuellen Profilerstellungssitzung | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - current performance sessions
@@ -14,15 +12,15 @@ helpviewer_keywords:
 - sessions, setting multiple
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f06a45dbdf88fad071afcbb96373930501c6ccb
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: ad917a67ab03a4cb6c1e265ec2dafcbe6e2ee421
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844598"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823568"
 ---
 # <a name="how-to-set-the-current-session"></a>Vorgehensweise: Festlegen der aktuellen Sitzung
 
@@ -38,7 +36,7 @@ Wenn Sie nach dem Festlegen einer Sitzung als aktuelle Sitzung auf **Start** auf
 
 ## <a name="see-also"></a>Siehe auch
 
-[Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)  
-[Das Fenster „Leistungs-Explorer“](../profiling/performance-explorer-window.md)  
-[Eigenschaften von Leistungssitzungen](../profiling/performance-session-properties.md)  
+[Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)
+[Das Fenster „Leistungs-Explorer“](../profiling/performance-explorer-window.md)
+[Eigenschaften von Leistungssitzungen](../profiling/performance-session-properties.md)
 [Übersicht über Leistungssitzungen](../profiling/performance-session-overview.md)

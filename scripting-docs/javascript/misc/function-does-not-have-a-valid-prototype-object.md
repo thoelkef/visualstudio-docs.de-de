@@ -1,14 +1,9 @@
 ---
-title: Funktion enthält kein gültiges Prototype-Objekt. | Microsoft Docs
-ms.custom: ''
+title: Funktion enthält kein gültiges Prototype-Objekt. | Microsoft-Dokumentation
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5023
 dev_langs:
@@ -16,23 +11,22 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: b9e34652-190f-4b57-b253-df2e8c4d09c6
-caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a4e2cbf198a452cd61f1355682ea3041436d2a27
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 413f73a53a6d4f698219139a87c449be4c155831
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633010"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007502"
 ---
 # <a name="function-does-not-have-a-valid-prototype-object"></a>Funktion enthält kein gültiges prototype-Objekt.
-Sie haben versucht, **Instanceof** zu bestimmen, ob ein Objekt von einer bestimmten Funktion-Klasse abgeleitet wurde, aber Sie des Objekts neu `prototype` Eigenschaft entweder als `null`, oder einen externen Typ (beide ungültig [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Objekte). Ein externes Objekt möglich ein Objekt aus dem Host-Objektmodell (z. B. Internet Explorer Dokument oder -Fensterobjekt) oder einer externen COM-Objekts.  
+Sie haben versucht, verwenden Sie **Instanceof** zu bestimmen, ob ein Objekt von einer bestimmten Funktion-Klasse abgeleitet wurde, aber Sie neu des Objekts definiert `prototype` Eigenschaft entweder als `null`, oder ein externes Objekt-Typ (beide ungültig [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Objekte). Ein externes Objekt kann es sich um ein Objekt aus dem Host-Objektmodell (z. B. Internet Explorer Dokument oder Window-Objekt) oder ein externes COM-Objekt sein.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Gewährleisten Sie der Funktion `prototype` Eigenschaft bezieht sich auf eine gültige [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Objekt.  
+- Sicherstellen der Funktion `prototype` Eigenschaft bezieht sich auf einen gültigen [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Objekt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Function-Objekt](../../javascript/reference/function-object-javascript.md)   

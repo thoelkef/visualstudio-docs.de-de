@@ -2,19 +2,18 @@
 title: R-Projekte
 description: Erstellen von Manager-R-Projekten in Visual Studio einschließlich Eigenschaften, Projektbefehlen und Vorlagen.
 ms.date: 06/29/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: d9e20b53597ebca2eb079418a0838ff5449678a9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a24f887b5e8d12a757098eb94768ad110a5cb727
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924331"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62809904"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Erstellen von R-Projekten in Visual Studio
 
@@ -24,9 +23,9 @@ Darüber hinaus werden Projekte immer in einer Visual Studio-*Projektmappe* verw
 
 ## <a name="creating-a-new-r-project"></a>Erstellen eines neuen R-Projekts
 
-1. Starten Sie Visual Studio.
-1. Wählen Sie **Datei > Neu > Projekt...** aus. (**STRG**+**Umschalttaste**+**N**)
-1. Wählen Sie unter **Vorlagen > R** „R-Projekt“ aus, weisen Sie dem Projekt einen Namen und Speicherort zu, und wählen Sie **OK** aus:
+1. Öffnen Sie Visual Studio.
+1. Wählen Sie **Datei > Neu > Projekt** aus (**STRG**+**UMSCHALT**+**N**)
+1. Wählen Sie unter **Vorlagen** > **R** „R-Projekt“ aus, weisen Sie dem Projekt einen Namen und Speicherort zu, und klicken Sie auf **OK**:
 
     ![Dialogfeld „Neues Projekt“ für R in Visual Studio (RTVS in VS2017)](media/getting-started-01-new-project.png)
 
@@ -57,22 +56,21 @@ Führen Sie die folgenden Schritte aus, wenn Sie einen vorhandenen Ordner mit *R
 
 1. Erstellen Sie wie im vorherigen Abschnitt ein neues Projekt in Visual Studio.
 1. Kopieren Sie die Dateien in den Projektordner.
-1. Klicken Sie im Projektmappen-Explorer von Visual Studio mit der rechten Maustaste auf das Projekt, wählen Sie **Hinzufügen** > **Vorhandene Elemente** aus, und navigieren Sie zu den Dateien, die Sie hinzufügen möchten. Diese Dateien werden in Ihrer Projektstruktur angezeigt, nachdem Sie auf **OK** geklickt haben.
+1. Klicken Sie im Projektmappen-Explorer von Visual Studio mit der rechten Maustaste auf das Projekt, wählen Sie **Hinzufügen** > **Vorhandenes Element** aus, und navigieren Sie zu den Dateien, die Sie hinzufügen möchten. Diese Dateien werden in Ihrer Projektstruktur angezeigt, nachdem Sie auf **OK** geklickt haben.
 1. Klicken Sie zum Organisieren von Code in Unterordnern mit der rechten Maustaste auf das Projekt, und wählen Sie zunächst **Hinzufügen** > **Neuer Ordner** aus. Kopieren Sie Ihre Dateien anschließend in diesen Ordner, und fügen Sie diese vorhandenen Elemente in Schritt 3 hinzu.
 
 ## <a name="project-properties"></a>Projekteigenschaften
 
 Klicken Sie zum Öffnen der Eigenschaftenseiten des Projekts im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt, und wählen Sie **Eigenschaften** oder das Menüelement **Projekt > (Projektname)-Eigenschaften** aus. Das geöffnete Fenster zeigt die Projekteigenschaften an:
 
-
-| Registerkarte | Eigenschaft | Beschreibung | 
-| --- | --- | --- | 
-| Run | Startup file | Der Name der Datei, die mit dem Befehl **Source startup file**, **F5**, **Debuggen** > **Debuggen starten** oder **Debuggen** > **Ohne Debuggen starten** ausgeführt wird. Sie können die Startdatei auch im Projekt über einen Rechtsklick auf die Datei und die Option **Als R-Startskript festlegen** festlegen. | 
-| | R Interactive beim Ausführen zurücksetzen | Löscht alle Variablen aus dem Arbeitsbereich des interaktiven Fensters, wenn das Projekt ausgeführt wird. So wird sichergestellt, dass keine Inhalte des Arbeitsbereichs aus vorherigen Ausführungen übrig bleiben. | 
-| | Remote Project Path | Pfad zu einem Remotearbeitsbereich | 
-| | Transfer files on run | Gibt an, ob die Projektdateien, die dem Filter in **Files to transfer** unterliegen, bei jeder Ausführung in einen Remotearbeitsbereich kopiert werden sollen | 
-| | Files to transfer | Dateinamen und Platzhalter, die die genauen Dateien angeben, die in einen Remotearbeitsbereich kopiert werden sollen, wenn **Transfer files on run** ausgewählt ist. | 
-| Einstellungen | (Settings.R-Datei) | Die Einstellungen des R-Projekts stammen aus *Settings.R*- oder **.Settings.R*-Dateien, die sich innerhalb des Projekts befinden. Wenn keine Einstellungsdatei vorhanden ist, können Sie Variablen hinzufügen und die Seite speichern. Zudem wird eine *Settings.R*-Standarddatei für Sie erstellt. Sie können die Einstellungsdatei auch über den Menübefehl **Datei** > **Neues Element hinzufügen** zum Projekt hinzufügen. <br/> Einstellungen werden als R-Code gespeichert, und die Datei kann vor dem Ausführen anderer Module und dem Vorabausfüllen der Umgebung mit den vordefinierten Einstellungen zurückverfolgt werden. | 
+| Registerkarte | Eigenschaft | Beschreibung |
+| --- | --- | --- |
+| Run | Startup file | Der Name der Datei, die mit dem Befehl **Source startup file**, **F5**, **Debuggen** > **Debuggen starten** oder **Debuggen** > **Ohne Debuggen starten** ausgeführt wird. Sie können die Startdatei auch im Projekt über einen Rechtsklick auf die Datei und die Option **Als R-Startskript festlegen** festlegen. |
+| | R Interactive beim Ausführen zurücksetzen | Löscht alle Variablen aus dem Arbeitsbereich des interaktiven Fensters, wenn das Projekt ausgeführt wird. So wird sichergestellt, dass keine Inhalte des Arbeitsbereichs aus vorherigen Ausführungen übrig bleiben. |
+| | Remote Project Path | Pfad zu einem Remotearbeitsbereich |
+| | Transfer files on run | Gibt an, ob die Projektdateien, die dem Filter in **Files to transfer** unterliegen, bei jeder Ausführung in einen Remotearbeitsbereich kopiert werden sollen |
+| | Files to transfer | Dateinamen und Platzhalter, die die genauen Dateien angeben, die in einen Remotearbeitsbereich kopiert werden sollen, wenn **Transfer files on run** ausgewählt ist. |
+| Einstellungen | (Settings.R-Datei) | Die Einstellungen des R-Projekts stammen aus *Settings.R*- oder **.Settings.R*-Dateien, die sich innerhalb des Projekts befinden. Wenn keine Einstellungsdatei vorhanden ist, können Sie Variablen hinzufügen und die Seite speichern. Zudem wird eine *Settings.R*-Standarddatei für Sie erstellt. Sie können die Einstellungsdatei auch über den Menübefehl **Datei** > **Neues Element hinzufügen** zum Projekt hinzufügen. <br/> Einstellungen werden als R-Code gespeichert, und die Datei kann vor dem Ausführen anderer Module und dem Vorabausfüllen der Umgebung mit den vordefinierten Einstellungen zurückverfolgt werden. |
 
 ## <a name="r-specific-project-commands"></a>R-spezifische Projektbefehle
 
@@ -84,7 +82,7 @@ Visual Studio-Projekte unterstützen sowohl über das Kontextmenü als auch übe
 | Enthaltenden Ordner öffnen | Öffnet den Windows-Explorer am Speicherort der ausgewählten Datei |
 | R-Skript hinzufügen | Erstellt und öffnet eine neue *.R*-Datei mit einem Standardnamen. Sie können auch den Befehl **Hinzufügen** > **Neues Element** zum Erstellen von *R*-Dateien und einer Reihe anderer Dateitypen verwenden. Weitere Informationen finden Sie unter [R-spezifische Elementvorlagen](#r-specific-item-templates). |
 | R Markdown hinzufügen | Erstellt und öffnet ein neues *RMD*-Dokument mit einem Standardnamen. Sie können auch den Befehl **Hinzufügen** > **Neues Element** zum Erstellen von *RMD*-Dateien und einer Reihe anderer Dateitypen verwenden. Weitere Informationen finden Sie unter [R-spezifische Elementvorlagen](#r-specific-item-templates).  |
-| Gespeicherte Prozeduren veröffentlichen | Startet einen Prozess zum Veröffentlichen von in R-Skripts enthaltenen gespeicherten Prozeduren. Weitere Informationen finden Sie unter [Arbeiten mit gespeicherten SQL Server-Prozeduren](integrating-sql-server-with-r.md#work-with-sql-server-stored-procedures). | 
+| Gespeicherte Prozeduren veröffentlichen | Startet einen Prozess zum Veröffentlichen von in R-Skripts enthaltenen gespeicherten Prozeduren. Weitere Informationen finden Sie unter [Arbeiten mit gespeicherten SQL Server-Prozeduren](integrating-sql-server-with-r.md#work-with-sql-server-stored-procedures). |
 
 ## <a name="r-specific-item-templates"></a>R-spezifische Elementvorlagen
 
@@ -97,7 +95,7 @@ RTVS umfasst eine Reihe von Vorlagen für bestimmte Dateitypen. Sie können auf 
 | --- | --- |
 | R-Skript | Eine Textdatei, die dieselben Befehle enthält, die in der R-Befehlszeile eingegeben werden können |
 | R Markdown | Eine Datei mit einem [R Markdown](rmarkdown-with-r-in-visual-studio.md)-Dokument |
-| R-Einstellungen | Eine Datei, die die R-Anwendungseinstellungen enthält | 
+| R-Einstellungen | Eine Datei, die die R-Anwendungseinstellungen enthält |
 | R-Dokumentation | Eine generische R-Dokumentationsdatei, die nur die Namens-, Alias-, und Titelfelder enthält |
 | R-Dokumentation (Funktion) | Eine R-Dokumentationsdatei, die viele Felder mit Kommentaren zum Beschreiben einer Funktion enthält |
 | R-Dokumentation (Dataset) | Eine R-Dokumentationsdatei, die viele Felder mit Kommentaren zum Beschreiben eines Datasets enthält |

@@ -3,21 +3,20 @@ title: Erste Schritte mit C++
 description: ''
 ms.custom: mvc
 ms.date: 12/04/2017
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: corob-msft
 ms.author: corob
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d77732d6bf54e4849be55324e6ac18be2a46f74
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 375879e6a6aba93b702c65412328458a9a5568ab
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62962826"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Erste Schritte mit C++ in Visual Studio
 
@@ -27,15 +26,37 @@ Arbeiten Sie sich durch diesen Schnellstart, um mit den vielen Tools und Dialogf
 
 Sie müssen sich nicht mit C++ auskennen, um diesen Schnellstart durchzuführen, aber Sie sollten grundlegende Programmier- und Debuggingkonzepte kennen. Die Visual Studio-Dokumentation bringt Ihnen nicht bei, wie man mit C++ programmiert. Nützliche Informationen über Lernressourcen zu C++ finden Sie unter [Erste Schritte](https://isocpp.org/get-started) auf der Website von ISO C++.
 
-Um diesen Schritten folgen zu können, benötigen Sie Visual Studio 2017 Version 15.3 oder höher, und die Workload **Desktopentwicklung mit C++** muss installiert sein. Einen kurzen Leitfaden zur Installation finden Sie unter [Install C++ support in Visual Studio (Installieren von C++-Unterstützung in Visual Studio)](/cpp/build/vscpp-step-0-installation).
+::: moniker range="vs-2017"
+
+Um diese Schritte ausführen zu können, benötigen Sie Visual Studio 2017, und die Workload **Desktopentwicklung mit C++** muss installiert sein. Einen kurzen Leitfaden zur Installation finden Sie unter [Install C++ support in Visual Studio (Installieren von C++-Unterstützung in Visual Studio)](/cpp/build/vscpp-step-0-installation).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Um diese Schritte ausführen zu können, benötigen Sie Visual Studio 2019, und die Workload **Desktopentwicklung mit C++** muss installiert sein. Einen kurzen Leitfaden zur Installation finden Sie unter [Install C++ support in Visual Studio (Installieren von C++-Unterstützung in Visual Studio)](/cpp/build/vscpp-step-0-installation).
+
+::: moniker-end
 
 ## <a name="create-a-console-app"></a>Erstellen einer Konsolenanwendung
 
-Starten Sie Visual Studio, falls es noch nicht ausgeführt wird.
+Öffnen Sie Visual Studio, falls es noch nicht ausgeführt wird.
+
+::: moniker range="vs-2017"
 
 ![IDE mit angewendeten Visual C&#43;&#43;-Einstellungen](../ide/media/get-started-cpp-ide-layout.png)
 
 Wenn Sie Visual Studio geöffnet haben, können Sie die drei grundlegenden Teile der IDE sehen: Toolsfenster, Menüs und Symbolleisten und den Hauptfensterbereich. Toolfenster sind auf der linken und rechten Seite an das Fenster der Anwendung angedockt. Das Feld **Schnellstart**, die Menüleiste und die Standardsymbolleiste finden Sie oben. In der Mitte des Fensters befindet sich die **Startseite**. Wenn Sie eine Projektmappe oder ein Projekt öffnen, werden Editoren und Designer in diesem Bereich angezeigt. Wenn Sie eine Anwendung entwickeln, verbringen Sie die meiste Zeit in diesem zentralen Bereich.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Nachdem Sie Visual Studio geöffnet haben, wird zuerst das Startfenster angezeigt. Klicken Sie auf **Ohne Code fortfahren**, um die Entwicklungsumgebung zu öffnen.
+
+Ihnen werden drei grundlegende Teile der IDE angezeigt: Toolfenster, Menüs, Symbolleisten sowie der Hauptfensterbereich. Toolfenster sind auf der linken und rechten Seite an das Fenster der Anwendung angedockt. Das Suchfeld, die Menüleiste und die Standardsymbolleiste finden Sie oben. Wenn Sie eine Projektmappe oder ein Projekt laden, werden Editoren und Designer im zentralen Bereich des Anwendungsfensters angezeigt. Wenn Sie eine Anwendung entwickeln, verbringen Sie die meiste Zeit in diesem zentralen Bereich.
+
+::: moniker-end
 
 Visual Studio verwendet *Projekte*, um Code für eine App zu ordnen, und *Projektmappen*, um Ihre Projekte zu ordnen. Ein Projekt beinhaltet alle Optionen, Einstellungen und Regeln, die Sie zum Erstellen Ihrer Anwendung verwendet haben. Es verwaltet auch die Beziehungen zwischen allen Projektdateien und externen Dateien. Erstellen Sie zunächst ein neues Projekt und eine Projektmappe, um ihre Anwendung zu erstellen.
 

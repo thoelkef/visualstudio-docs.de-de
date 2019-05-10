@@ -1,31 +1,33 @@
 ---
 title: IDebugMemoryContext2::Add | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugMemoryContext2::Add
 helpviewer_keywords:
 - IDebugMemoryContext2::Add method
 - Add method
 ms.assetid: 3c47e646-ce9e-4dd3-8f1a-6dbd3827d407
-author: gregvanl
+caps.latest.revision: 13
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: e7e821be283958185f9290e65248bacabe6ab4f0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: cf072972854d837695dcacd4f84984bf342e30e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913919"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62918757"
 ---
 # <a name="idebugmemorycontext2add"></a>IDebugMemoryContext2::Add
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Fügt den angegebenen Wert für den aktuellen Kontext aus, und gibt Sie einen neuen Kontext zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT Add(   
    UINT64                 dwCount,  
    IDebugMemoryContext2** ppMemCxt  

@@ -1,30 +1,33 @@
 ---
 title: 'Idiasymbol:: Get_lowerbound | Microsoft-Dokumentation'
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_lowerBound method
 ms.assetid: e9a6440b-d068-4de4-a240-6723d20812b9
-author: mikejo5000
+caps.latest.revision: 11
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: 86348cd58b8f5195b39c64dd337deddc65e32089
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: f55f47d8db9ec3723caf9ad5ff05d81d60404dba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920231"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399796"
 ---
 # <a name="idiasymbolgetlowerbound"></a>IDiaSymbol::get_lowerBound
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Ruft die untere Grenze des eine FORTRAN Arraydimension ab.  
   
 ## <a name="syntax"></a>Syntax  
   
-```C++  
+```cpp#  
 HRESULT get_lowerBound (   
    IDiaSymbol** pRetVal  
 );  
@@ -38,7 +41,7 @@ HRESULT get_lowerBound ( 
  Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,14 +1,9 @@
 ---
 title: DBG_ATTRIB_FLAGS | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - DBG_ATTRIB_FLAGS
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 2f13e601-dadc-476e-a8ec-01c4515082e7
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a6ac7af381423300279de1d9b718a0aaa409498d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 74694c903040b278ed8864b46756cac66381405a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729260"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445005"
 ---
 # <a name="dbgattribflags"></a>DBG_ATTRIB_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -305,7 +300,7 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
 ## <a name="remarks"></a>Hinweise  
   
 > [!NOTE]
->  Die Werte in dieser Enumeration werden nicht tatsächlich in der Assembly für C#-Code definiert. Stattdessen müssen Sie die Definitionen in der Quelldatei kopieren.  
+> Die Werte in dieser Enumeration werden nicht tatsächlich in der Assembly für C#-Code definiert. Stattdessen müssen Sie die Definitionen in der Quelldatei kopieren.  
   
  Diese Flags werden auch verwendet, um die untergeordneten Elemente eines Objekts, z. B. filtern, wenn als Argument übergeben [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md). Die Werte können kombiniert werden, mit einer bitweisen `OR`.  
   
@@ -324,4 +319,3 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)   
  [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)
-

@@ -1,27 +1,22 @@
 ---
 title: Registerkarte "Meldungen", Optionsdialogfeld | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - message options, Messages
 ms.assetid: fb9fa211-e82c-40a5-9e4b-ba8de07313c0
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b44a5932d178fe8432273038d677f5831d568146
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a9eb1c88d935fa307e8b86a9a75da423bc08111c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793944"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955766"
 ---
 # <a name="messages-tab-message-options-dialog-box"></a>Registerkarte "Meldungen", Dialogfeld "Meldungsoptionen"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,10 +27,10 @@ Verwenden der **Nachrichten** Tab, um auszuwählen, welche Nachrichtentypen zur 
   
  Die folgenden Einstellungen stehen auf der **Nachrichten** Registerkarte:  
   
- **Nachrichten anzeigen**  
+ **Anzuzeigende Meldungen**  
  Wählen Sie bestimmte Nachrichten für die Anzeige. Wenn Sie ein neues Fenster für die Nachrichten erstellen, können sie alle Meldungen anzuzeigen. Wenn Sie Nachrichten von Filtern die **Nachrichten** Registerkarte, dass der Filter gilt nur für neue Nachrichten, nicht die Nachrichten, die bereits in der Windows-Ansicht angezeigt wurden.  
   
- **Nachrichtengruppen**  
+ **Meldungsgruppen**  
  Wählen Sie für die Anzeige. Die verfügbaren Gruppen enthalten:  
   
 - WM_USER: Klicken Sie mit einem Code, die größer als oder gleich WM_USER  
@@ -48,8 +43,5 @@ Verwenden der **Nachrichten** Tab, um auszuwählen, welche Nachrichtentypen zur 
   
   In das Kontrollkästchen grau **Nachrichtengruppen** gibt an, dass die **Nachrichten zu Ansicht** Listenfeld für Nachrichten in dieser Gruppe geändert wurde, nicht alle die Nachrichtentypen in der Gruppe ausgewählt werden.  
   
-  **Einstellungen als Standard speichern**  
+  **Als Voreinstellung speichern**  
   Speichern Sie die aktuellen Einstellungen für die spätere Verwendung als Nachricht Suchoptionen an. Diese Einstellungen werden ebenfalls gespeichert, wenn Spy++ beendet wird.
-
-
-

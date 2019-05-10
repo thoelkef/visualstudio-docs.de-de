@@ -1,14 +1,9 @@
 ---
 title: 'Idiasymbol:: Get_registerid | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: f881e793-eb9e-48dc-a847-dd61d77174fc
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 79c22cb4853ca6089c10ce6e62e331e519420e31
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 580637cf1058c8bfbd10ac7812e59c802830d95e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775952"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437338"
 ---
 # <a name="idiasymbolgetregisterid"></a>IDiaSymbol::get_registerId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ HRESULT get_registerId ( 
  Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
   
 ## <a name="remarks"></a>Hinweise  
  Wenn das Symbol Bezug auf ein Register, d. h. wenn des Symbols [LocationType-Enumeration](../../debugger/debug-interface-access/locationtype.md) nastaven NA hodnotu `LocIsRegRel`, verwenden Sie die `get_registerId` Methode, gefolgt von einem Aufruf von der [idiasymbol:: Get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md) Methode, die der Offset aus der Registrierung abgerufen werden, wo sich das Symbol befindet.  
@@ -54,6 +49,3 @@ HRESULT get_registerId ( 
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [LocationType-Enumeration](../../debugger/debug-interface-access/locationtype.md)
-
-
-

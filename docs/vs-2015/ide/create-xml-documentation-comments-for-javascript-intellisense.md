@@ -1,14 +1,9 @@
 ---
 title: Erstellen von XML-Dokumentationskommentaren für JavaScript IntelliSense | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - code comments, JavaScript IntelliSense
 - XML documentation comments, JavaScript IntelliSense
@@ -18,13 +13,13 @@ ms.assetid: a27f5b50-9807-436f-a0cf-6f3137ecbaf0
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d15144a2cee70e5f6bdc496bf2c09eb8fb95c85d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 90fb5b1c9a388d64e191915bbcbbe3de65f6aa99
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220557"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437624"
 ---
 # <a name="create-xml-documentation-comments-for-javascript-intellisense"></a>Erstellen von XML-Dokumentationskommentaren für JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,14 +29,14 @@ ms.locfileid: "49220557"
  Dieses Thema enthält ein Lernprogramm zur Verwendung von XML-Dokumentationskommentare. Informationen zur Verwendung von anderen Elementen wie z. B. [ \<Var >](../ide/var-javascript.md) und [ \<Wert >](../ide/value-javascript.md), und Weitere Codebeispiele, finden Sie unter [XML-Dokumentationskommentare ](../ide/xml-documentation-comments-javascript.md). Weitere Informationen zum Bereitstellen von IntelliSense-Informationen für einen asynchronen Rückruf wie z. B. eine `Promise`, finden Sie unter [ \<gibt >](../ide/returns-javascript.md).  
   
 > [!NOTE]
->  XML-Dokumentationskommentare sind nur in den Dateien, Assemblys und Diensten verfügbar, auf die verwiesen wurde.  
+> XML-Dokumentationskommentare sind nur in den Dateien, Assemblys und Diensten verfügbar, auf die verwiesen wurde.  
   
 ### <a name="to-create-xml-documentation-comments-for-a-javascript-function"></a>Zum Erstellen von XML-Dokumentationskommentaren für JavaScript-Funktion  
   
--   Fügen Sie in der Funktion [ \<summary >](../ide/summary-javascript.md), [ \<Param >](../ide/param-javascript.md), und [ \<gibt >](../ide/returns-javascript.md) Elemente, und stellen Sie jedes Element voran drei Schrägstriche (/ / /).  
+- Fügen Sie in der Funktion [ \<summary >](../ide/summary-javascript.md), [ \<Param >](../ide/param-javascript.md), und [ \<gibt >](../ide/returns-javascript.md) Elemente, und stellen Sie jedes Element voran drei Schrägstriche (/ / /).  
   
     > [!NOTE]
-    >  Jedes Element muss sich in einer einzelnen Zeile.  
+    > Jedes Element muss sich in einer einzelnen Zeile.  
   
      Das folgende Beispiel zeigt eine JavaScript-Funktion.  
   
@@ -57,7 +52,7 @@ ms.locfileid: "49220557"
     }  
     ```  
   
--   Um die XML-Dokumentationskommentare zu anzuzeigen, geben Sie den Namen und die öffnende Klammer einer Funktion, die mit XML-Dokumentationskommentare, wie im folgenden Beispiel markiert ist:  
+- Um die XML-Dokumentationskommentare zu anzuzeigen, geben Sie den Namen und die öffnende Klammer einer Funktion, die mit XML-Dokumentationskommentare, wie im folgenden Beispiel markiert ist:  
   
     ```javascript  
     var areaVal = getArea(  
@@ -67,7 +62,7 @@ ms.locfileid: "49220557"
   
 ### <a name="to-create-xml-documentation-comments-for-a-javascript-field"></a>Zum Erstellen von XML-Dokumentationskommentare für ein JavaScript-Feld  
   
--   Fügen Sie in einer Konstruktordefinition Funktion oder das Objekt eine [ \<Feld >](../ide/field-javascript.md) Element vorangestellt drei Schrägstrichen (/ / /).  
+- Fügen Sie in einer Konstruktordefinition Funktion oder das Objekt eine [ \<Feld >](../ide/field-javascript.md) Element vorangestellt drei Schrägstrichen (/ / /).  
   
      Das folgende Beispiel zeigt die Verwendung der `<field>` Element in einer Konstruktorfunktion. Weitere Beispiele finden Sie unter [ \<Feld >](../ide/field-javascript.md).  
   
@@ -78,13 +73,13 @@ ms.locfileid: "49220557"
     }  
     ```  
   
--   Um die XML-Dokumentationskommentare anzuzeigen, erstellen Sie ein Objekt mithilfe des Function-Konstruktors, die markiert ist, mit XML-Dokumentationskommentare, wie im folgenden Beispiel aus.  
+- Um die XML-Dokumentationskommentare anzuzeigen, erstellen Sie ein Objekt mithilfe des Function-Konstruktors, die markiert ist, mit XML-Dokumentationskommentare, wie im folgenden Beispiel aus.  
   
     ```javascript  
     var eng = new Engine();  
     ```  
   
--   Geben Sie auf der nächsten Zeile den Namen des Objekts und eines Zeitraums zum Anzeigen der IntelliSense-Informationen für das Feld ein.  
+- Geben Sie auf der nächsten Zeile den Namen des Objekts und eines Zeitraums zum Anzeigen der IntelliSense-Informationen für das Feld ein.  
   
     ```javascript  
     eng.  
@@ -92,7 +87,7 @@ ms.locfileid: "49220557"
   
 ### <a name="to-create-xml-documentation-comments-for-an-overloaded-function"></a>Zum Erstellen von XML-Dokumentationskommentaren für einer überladenen Funktion  
   
-1.  Fügen Sie in der Funktion ein [ \<Signatur >](../ide/signature-javascript.md) -Element für jede Überladung. Fügen Sie in der folgenden Elemente, die andere Elemente, z. B. `<summary>`, `<param>`, und `<returns>`, jedes Element mit drei Schrägstrichen (/ / /) vor.  
+1. Fügen Sie in der Funktion ein [ \<Signatur >](../ide/signature-javascript.md) -Element für jede Überladung. Fügen Sie in der folgenden Elemente, die andere Elemente, z. B. `<summary>`, `<param>`, und `<returns>`, jedes Element mit drei Schrägstrichen (/ / /) vor.  
   
      Das folgende Beispiel zeigt eine überladene JavaScript-Funktion. In diesem Beispiel unterscheiden sich die Überladungen von Parametertyp ein.  
   
@@ -112,7 +107,7 @@ ms.locfileid: "49220557"
     }  
     ```  
   
-2.  Um die XML-Dokumentationskommentare zu anzuzeigen, geben Sie den Namen und die öffnende Klammer der Funktion, die mit XML-Dokumentationskommentare, wie im folgenden Beispiel markiert ist:  
+2. Um die XML-Dokumentationskommentare zu anzuzeigen, geben Sie den Namen und die öffnende Klammer der Funktion, die mit XML-Dokumentationskommentare, wie im folgenden Beispiel markiert ist:  
   
     ```javascript  
     calc(  
@@ -120,10 +115,10 @@ ms.locfileid: "49220557"
   
 ### <a name="to-create-localized-intellisense"></a>Um lokalisierte IntelliSense zu erstellen.  
   
-1.  Erstellen Sie eine XML-Datei, die Dokumentationskommentare im OpenAjax MessageBundle-Format enthält.  
+1. Erstellen Sie eine XML-Datei, die Dokumentationskommentare im OpenAjax MessageBundle-Format enthält.  
   
     > [!IMPORTANT]
-    >  MessageBundle ist das empfohlene Format. Dieses Format wird nicht in der Microsoft Ajax oder in winmd-Dateien unterstützt. Informationen zur Verwendung der Alternative `VSDoc` formatieren, finden Sie unter [ \<Loc >](../ide/loc-javascript.md).  
+    > MessageBundle ist das empfohlene Format. Dieses Format wird nicht in der Microsoft Ajax oder in winmd-Dateien unterstützt. Informationen zur Verwendung der Alternative `VSDoc` formatieren, finden Sie unter [ \<Loc >](../ide/loc-javascript.md).  
   
      Das folgende Beispiel zeigt Inhalt in einen sidecardatei, die lokalisierte IntelliSense-Informationen enthält. Dies ist eine XML-Datei, die in einem kulturspezifischen Ordner, wie "JA" befindet. Der Ordner muss sich in demselben Speicherort wie die JS-Datei mit den `<loc>` Element. Der Dateiname der XML-Datei entsprechen muss die `filename` Parameter angegeben wird, der `<loc>` Element.  
   
@@ -136,14 +131,14 @@ ms.locfileid: "49220557"
   
     ```  
   
-2.  Fügen Sie in der JS-Datei den folgenden Code ein. Die `<loc>` Element muss vor allen möglichen Skripts deklariert werden, und folgt den gleichen Regeln für die Verwendung als die `<reference>` Element. Weitere Informationen finden Sie unter [JavaScript IntelliSense](../ide/javascript-intellisense.md) und [ \<Loc >](../ide/loc-javascript.md).  
+2. Fügen Sie in der JS-Datei den folgenden Code ein. Die `<loc>` Element muss vor allen möglichen Skripts deklariert werden, und folgt den gleichen Regeln für die Verwendung als die `<reference>` Element. Weitere Informationen finden Sie unter [JavaScript IntelliSense](../ide/javascript-intellisense.md) und [ \<Loc >](../ide/loc-javascript.md).  
   
     ```javascript  
     /// <loc filename="messageFilename.xml" format="messagebundle"/>  
   
     ```  
   
-3.  Fügen Sie in der JS-Datei XML-dokumentationselemente und standardbeschreibungen aus. Legen Sie die `locid` Attributwerte entsprechend den entsprechenden `name` Attributwerte aus der sidecardatei. Die standardbeschreibungen werden durch lokalisierte IntelliSense-Informationen ersetzt werden, sofern diese verfügbar ist.  
+3. Fügen Sie in der JS-Datei XML-dokumentationselemente und standardbeschreibungen aus. Legen Sie die `locid` Attributwerte entsprechend den entsprechenden `name` Attributwerte aus der sidecardatei. Die standardbeschreibungen werden durch lokalisierte IntelliSense-Informationen ersetzt werden, sofern diese verfügbar ist.  
   
     ```javascript  
     function add(a,b)   
@@ -155,7 +150,7 @@ ms.locfileid: "49220557"
   
     ```  
   
-4.  Um die XML-Dokumentationskommentare zu anzuzeigen, geben Sie den Namen und die öffnende Klammer der Funktion an, wie im folgenden Beispiel aus:  
+4. Um die XML-Dokumentationskommentare zu anzuzeigen, geben Sie den Namen und die öffnende Klammer der Funktion an, wie im folgenden Beispiel aus:  
   
     ```javascript  
     add(  
@@ -164,7 +159,4 @@ ms.locfileid: "49220557"
 ## <a name="see-also"></a>Siehe auch  
  [JavaScript-IntelliSense](../ide/javascript-intellisense.md)   
  [XML-Dokumentationskommentare](../ide/xml-documentation-comments-javascript.md)   
- [NIB: Exemplarische Vorgehensweise: JavaScript-IntelliSense in ASP.NET](http://msdn.microsoft.com/en-us/4f6e0cc2-7f48-4dbf-abb0-7fb743a2d05b)
-
-
-
+ [NIB: Exemplarische Vorgehensweise: IntelliSense für JavaScript in ASP.NET](http://msdn.microsoft.com/4f6e0cc2-7f48-4dbf-abb0-7fb743a2d05b)

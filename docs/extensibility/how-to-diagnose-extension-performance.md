@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 46b0a1e3-7e69-47c9-9d8d-a1815d6c3896
 author: BertanAygun
 ms.author: bertaygu
-manager: douge
+manager: jillfra
 ms.workload:
 - bertaygu
-ms.openlocfilehash: fd51728f5e57af1017cb4b280f9ffc9d1c50df98
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3d8fb5de23cbc4664ea322a9149653598956aed7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943420"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62863296"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Messen der Auswirkungen der Erweiterung in der Startdatei
 
@@ -74,11 +74,11 @@ Verwenden asynchroner Pakets laden und asynchrone e/a-APIs sollten sicherstellen
 
 Eine allgemeine Muster im Paket-Initialisierung ist zum Initialisieren der Dienste, die von verwendet und bereitgestellt werden, indem Sie das Paket in das Paket `constructor` oder `initialize` Methode. Während dadurch wird, dass die Dienste für die sichergestellt Verwendung bereit sind, können sie auch hinzufügen unnötige Kosten, wenn Sie ein Paket geladen wird, wenn diese Dienste nicht sofort verwendet werden. Stattdessen sollten solche Dienste bei Bedarf, um die Arbeit, die im Paket-Initialisierung zu minimieren initialisiert werden.
 
-Für globale Dienste, die von einem Paket bereitgestellt werden, können Sie `AddService` Methoden, die eine Funktion des Diensts verzögert initialisiert wird, nur, wenn sie von einer Komponente angefordert werden. Für Dienste, die innerhalb des Pakets verwendet werden, können Sie verzögert<T> oder AsyncLazy<T> um sicherzustellen, dass Dienste bei der ersten Verwendung initialisiert/abgefragt werden.
+Für globale Dienste, die von einem Paket bereitgestellt werden, können Sie `AddService` Methoden, die eine Funktion des Diensts verzögert initialisiert wird, nur, wenn sie von einer Komponente angefordert werden. Für Dienste, die innerhalb des Pakets verwendet werden, können Sie verzögert\<T > oder AsyncLazy\<T > um sicherzustellen, dass Dienste bei der ersten Verwendung initialisiert/abgefragt werden.
 
 ## <a name="measuring-impact-of-auto-loaded-extensions-using-activity-log"></a>Messen der Auswirkungen von "Auto" Erweiterungen mit Aktivitätsprotokoll geladen
 
-Ab Visual Studio 2017 Update 3 können enthält Visual Studio-Aktivitätsprotokoll jetzt Einträge für die Auswirkungen auf die Leistung von Paketen beim Laden von Start- und die Lösung. Um diese Messungen angezeigt wird, müssen Sie Visual Studio starten, mit dem/Log-Schalter, und öffnen Sie *ActivityLog.xml* Datei.
+Ab Visual Studio 2017 Update 3 können enthält Visual Studio-Aktivitätsprotokoll jetzt Einträge für die Auswirkungen auf die Leistung von Paketen beim Laden von Start- und die Lösung. Um diese Messungen angezeigt wird, müssen Sie Visual Studio öffnen, mit dem/Log-Schalter, und öffnen Sie *ActivityLog.xml* Datei.
 
 Im Aktivitätsprotokoll aufgeführt die Einträge werden unter "Visual Studio-Leistung verwalten"-Quelle, und sieht wie im folgenden Beispiel:
 
@@ -141,9 +141,9 @@ Nachdem Sie mit der Erweiterung installiert der Visual Studio-Umgebung eingerich
 
 ![Perfview Menü "erfassen"](media/perfview-collect-menu.png)
 
-Stellt die Standardoptionen Aufruflisten für CPU-Auslastung, doch da Blockierungszeit auch interessiert sind, Sie sollten aktivieren **Thread Zeit** Stapel. Sobald die Einstellungen bereit sind. Klicken Sie auf **Sammlung starten** und starten Sie Visual Studio nach der Aufzeichnung gestartet wird.
+Stellt die Standardoptionen Aufruflisten für CPU-Auslastung, doch da Blockierungszeit auch interessiert sind, Sie sollten aktivieren **Thread Zeit** Stapel. Sobald die Einstellungen bereit sind, klicken Sie auf **Sammlung starten** und öffnen Sie Visual Studio nach der Aufzeichnung beginnt.
 
-Bevor Sie die Datenerfassung beenden, um sicherzustellen, dass Visual Studio vollständig initialisiert, das Hauptfenster vollständig sichtbar ist und wenn die Erweiterung auf alle Teile der Benutzeroberfläche, die automatisch angezeigt verfügt, sind auch angezeigt werden soll. Sobald Visual Studio vollständig geladen ist, und die Erweiterung initialisiert wird, können Sie beenden, zum Analysieren der Ablaufverfolgungs aufgezeichnet.
+Bevor Sie die Datenerfassung beenden, um sicherzustellen, dass Visual Studio vollständig initialisiert, das Hauptfenster vollständig sichtbar ist und wenn die Erweiterung auf alle Teile der Benutzeroberfläche, die automatisch angezeigt verfügt, sind auch angezeigt werden soll. Wenn Visual Studio vollständig geladen ist, und die Erweiterung initialisiert wird, können Sie beenden, zum Analysieren der Ablaufverfolgungs aufgezeichnet.
 
 **Analysieren eine Ablaufverfolgung mit PerfView:**
 

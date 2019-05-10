@@ -1,33 +1,34 @@
 ---
 title: 'Idiaenumframedata:: Clone | Microsoft-Dokumentation'
-ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaEnumFrameData::Clone Method
 ms.assetid: 28a17300-1626-422f-a17a-3a4d3872c37c
-author: mikejo5000
+caps.latest.revision: 10
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: 1516babf3576f16b88265903af945a9251dbcf0e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: b5c86d9f4f8eb02b0389e7ea28b5858f8576f6c6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861149"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838401"
 ---
 # <a name="idiaenumframedataclone"></a>IDiaEnumFrameData::Clone
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Erstellt einen Enumerator, der den gleichen Enumerationszustand wie der aktuelle Enumerator enthält.  
   
 ## <a name="syntax"></a>Syntax  
   
-```C++  
-HRESULT Clone(   
+```cpp#  
+HRESULT Clone(   
    IDiaEnumFrameData** ppenum  
 );  
 ```  

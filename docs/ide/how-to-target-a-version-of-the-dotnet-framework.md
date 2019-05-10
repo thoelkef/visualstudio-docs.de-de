@@ -1,51 +1,58 @@
 ---
 title: Auswählen einer .NET Framework-Zielversion
-ms.date: 02/06/2018
-ms.prod: visual-studio-dev15
+ms.date: 03/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
 - .NET Framework version [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 95e2b6bef32bdc5830e54795eb2580e7dd1fa068
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ba8bdcade321c3660e89ab6b7cf6e0b79471b393
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860165"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62548647"
 ---
 # <a name="how-to-target-a-version-of-the-net-framework"></a>Vorgehensweise: .NET Framework-Version als Ziel
 
-In diesem Dokument wird beschrieben, wie Sie ein Projekt für eine bestimmte .NET Framework-Version erstellen und wie diese Zielversion in vorhandenen Visual Basic-, C#- oder Visual F#-Projekten geändert werden kann.
+In diesem Artikel wird beschrieben, wie Sie beim Erstellen eines Projekts eine .NET Framework-Zielversion festlegen. Ferner wird beschrieben, wie die Zielversion in einem vorhandenen Visual Basic-, C#- oder F#-Projekt geändert werden kann.
 
 > [!IMPORTANT]
 > Informationen darüber, wie Sie die Zielversion für C++-Projekte ändern können, finden Sie unter [How to: Modify the target framework and platform toolset (Vorgehensweise: Ändern des Zielframeworks und des Plattformtoolsets)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
 
-## <a name="to-target-a-version-when-you-create-a-project"></a>So richten Sie ein Projekt bei der Erstellung auf eine Zielversion aus
+## <a name="target-a-version-when-you-create-a-project"></a>Festlegen einer Zielversion beim Erstellen eines Projekts
 
-Welche .NET Framework-Versionen verfügbar sind, wenn Sie ein Projekt erstellen, hängt davon ab, welche Versionen installiert sind, und von der im Dialogfeld **Neues Projekt** ausgewählten Vorlage.
+Welche .NET Framework-Versionen verfügbar sind, wenn Sie ein Projekt erstellen, hängt davon ab, welche Versionen installiert sind und welche Projektvorlage ausgewählt ist.
 
 1. Klicken Sie in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
 
-1. Wählen Sie in der Liste der installierten Vorlagen den Projekttyp aus, den Sie erstellen möchten, und geben Sie einen Namen für das Projekt ein.
+1. Wählen Sie eine Vorlage für den Projekttyp aus, den Sie erstellen möchten. Geben Sie einen Namen für das Projekt ein.
 
-1. Wählen Sie in der Dropdownliste **Framework** unten im Dialogfeld **Neues Projekt** die gewünschte .NET Framework-Version für Ihr Projekt aus.
+1. Wählen Sie in der Dropdownliste **Framework** unten im Dialogfeld die gewünschte .NET Framework-Zielversion für Ihr Projekt aus.
 
-    Die Liste der Frameworks zeigt nur die Versionen an, die auf die von Ihnen ausgewählte Vorlage anwendbar sind. Einige Projekttypen, z.B. .NET Core, erfordern kein .NET Framework. In solchen Fällen ist die **Framework**-Dropdownliste ausgeblendet.
+   Die Liste der Frameworks zeigt nur die Versionen an, die auf die von Ihnen ausgewählte Vorlage anwendbar sind. Einige Projekttypen, z.B. .NET Core, erfordern kein .NET Framework. In solchen Fällen ist die **Framework**-Dropdownliste ausgeblendet.
 
-    ![Framework-Dropdownliste im Dialogfeld „Neues Projekt“](media/vside-newproject-framework.png)
+   ::: moniker range="vs-2017"
 
-1. Klicken Sie auf die Schaltfläche **OK** .
+   ![Framework-Dropdownliste im Dialogfeld „Neues Projekt“](media/vside-newproject-framework.png)
 
-## <a name="to-change-the-targeted-version"></a>So ändern Sie die Zielversion
+   ::: moniker-end
 
-Die folgenden Schritte zeigen, wie eine .NET Framework-Zielversion in einem vorhandenen Visual Basic-, C#- oder Visual F#-Projekt geändert wird.
+   ::: moniker range=">=vs-2019"
 
-Informationen darüber, wie Sie die Zielversion für C++-Projekte ändern können, finden Sie unter [How to: Modify the target framework and platform toolset (Vorgehensweise: Ändern des Zielframeworks und des Plattformtoolsets)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
+   ![Framework-Auswahl in Visual Studio 2019](media/vs-2019/configure-new-project-framework.png)
+
+   ::: moniker-end
+
+1. Fahren Sie mit der [Projekterstellung](create-new-project.md) fort.
+
+## <a name="change-the-targeted-version"></a>Ändern der Zielversion
+
+Die folgenden Schritte zeigen, wie eine .NET Framework-Zielversion in einem vorhandenen Visual Basic-, C#- oder F#-Projekt geändert wird.
 
 1. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für das zu ändernde Projekt, und wählen Sie **Eigenschaften** aus.
 

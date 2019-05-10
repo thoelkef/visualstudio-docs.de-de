@@ -1,32 +1,33 @@
 ---
-title: Sichern Sie die Datei Zusammenfassung Erweiterbarkeits-API | Microsoft Docs
-ms.custom: ''
-ms.date: 11/04/2016
+title: Erweiterbarkeits-API für Dumpdateizusammenfassung | Microsoft-Dokumentation
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
-- CSharp
-- VB
 - FSharp
+- VB
+- CSharp
 - C++
 ms.assetid: bf008cdc-03f8-496b-868d-4c2644f1d7ee
-author: mikejo5000
+caps.latest.revision: 7
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: 6c4bd5b5102219af530d7159b5481447b9c4e7ea
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+manager: jillfra
+ms.openlocfilehash: b934a68aa1ae85e18ec05d587854a7ad4c176c3a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471020"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851501"
 ---
 # <a name="dump-file-summary-extensibility-api"></a>Erweiterbarkeits-API für Dumpdateizusammenfassung
-Mithilfe der Erweiterbarkeits-APIs in diesem Abschnitt, Sie können erweitern die. EXE-Projektsystem und die **Dumpzusammenfassung** Seite für die Verwendung mit Ihren eigenen benutzerdefinierten Debugmodul.  
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
+Mithilfe der Erweiterbarkeits-APIs in diesem Abschnitt können Sie das EXE-Projektsystem und die Seite **Dumpzusammenfassung** für die Verwendung mit Ihrer eigenen benutzerdefinierten Debug-Engine erweitern.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- Die APIs für die Erweiterung der **Dumpzusammenfassung** Seite und die. EXE-Projektsystem sind in den folgenden Namespace verfügbar:  
+ Die APIs für die Erweiterung der Seite **Dumpzusammenfassung** und das EXE-Projektsystem befinden sich im folgenden Namespace:  
   
  <xref:Microsoft.VisualStudio.Debugger.VsDebugPresentationExtension>  
   

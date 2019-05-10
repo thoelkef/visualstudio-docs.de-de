@@ -1,9 +1,8 @@
 ---
 title: Erstellen einer Offlineinstallation
 description: Erfahren Sie, wie Sie Visual Studio offline installieren können, wenn Sie über eine unzuverlässige Internetverbindung oder eine geringe Bandbreite verfügen.
-ms.date: 08/28/2018
+ms.date: 04/16/2019
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - offline installation [Visual Studio]
@@ -12,31 +11,59 @@ f1_keywords:
 ms.assetid: f8625d5e-f6ea-4db0-83c0-619b77fab3cf
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8359a3b0d96c92a897532edffa7c6ac0b193cd3c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: f6e7c09eee52bd2ac48ccf5c51da59066ca72288
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952395"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974083"
 ---
-# <a name="create-an-offline-installation-of-visual-studio-2017"></a>Erstellen einer Offlineinstallation von Visual Studio 2017
+# <a name="create-an-offline-installation-of-visual-studio"></a>Erstellen einer Offlineinstallation von Visual Studio
 
-Visual Studio 2017 wurde so gestaltet, dass es unter verschiedensten Netzwerk- und Computerbedingungen gut funktioniert. Obwohl empfohlen wird, den [Visual Studio-Webinstaller](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) zu verwenden – bei dem es sich um eine kleine Datei handelt und durch den Sie mit den neuesten Fehlerbehebungen und Features auf dem Laufenden bleiben können – ist es Ihnen unter Umständen nicht möglich, diesen zu nutzen.
+::: moniker range="vs-2017"
+
+Visual Studio 2017 wurde so gestaltet, dass es unter verschiedensten Netzwerk- und Computerbedingungen gut funktioniert. Obwohl empfohlen wird, den [Visual Studio-Webinstaller](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) zu verwenden – bei dem es sich um eine kleine Datei handelt und durch den Sie mit den neuesten Fehlerbehebungen und Features auf dem Laufenden bleiben können – ist es Ihnen unter Umständen nicht möglich, diesen zu nutzen.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Visual Studio 2019 wurde so gestaltet, dass es unter verschiedensten Netzwerk- und Computerbedingungen gut funktioniert. Obwohl empfohlen wird, den [Visual Studio-Webinstaller](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) zu verwenden – bei dem es sich um eine kleine Datei handelt und durch den Sie mit den neuesten Fehlerbehebungen und Features auf dem Laufenden bleiben können – ist es Ihnen unter Umständen nicht möglich, diesen zu nutzen.
+
+::: moniker-end
 
 Gründe hierfür können eine unzuverlässige Internetverbindung oder eine Verbindung mit geringer Bandbreite sein. Falls dies der Fall sein sollte, haben Sie die folgenden Möglichkeiten: Sie können die neue Funktion „Download all, then install“ (Alles herunterladen, dann installieren) verwenden, um die Dateien vor der Installation herunterzuladen, oder Sie können über die Befehlszeile einen lokalen Cache für die Dateien erstellen.
 
 > [!NOTE]
-> Wenn Sie Administrator in einem Unternehmen sind und Visual Studio 2017 in einem Netzwerk von Clientarbeitsstationen, die mit einer Firewall geschützt sind, bereitstellen möchten, finden Sie weitere Informationen unter [Erstellen einer Netzwerkinstallation von Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md) und [Installieren der für eine Offlineinstallation von Visual Studio erforderlichen Zertifikate](../install/install-certificates-for-visual-studio-offline.md).
+> Wenn Sie Administrator in einem Unternehmen sind und Visual Studio in einem Netzwerk von Clientarbeitsstationen, die mit einer Firewall geschützt sind, bereitstellen möchten, finden Sie weitere Informationen unter [Erstellen einer Netzwerkinstallation von Visual Studio](../install/create-a-network-installation-of-visual-studio.md) und [Installieren der für eine Offlineinstallation von Visual Studio erforderlichen Zertifikate](../install/install-certificates-for-visual-studio-offline.md).
 
 ## <a name="use-the-download-all-then-install-feature"></a>Verwenden der Funktion „Download all, then install“ (Alles herunterladen, dann installieren)
 
-[**Neues in 15.8:**](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017#install
-) Nachdem Sie den Webinstaller heruntergeladen haben, wählen Sie im Visual Studio-Installer die neue Option **Download all, then install** (Alles herunterladen, dann installieren) aus. Anschließend fahren Sie mit der Installation fort.
+::: moniker range="vs-2017"
+
+[**Neuerungen in Version 15.8**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install): Nachdem Sie den Webinstaller heruntergeladen haben, wählen Sie im Visual Studio-Installer die neue Option **Download all, then install** (Alles herunterladen, dann installieren) aus. Anschließend fahren Sie mit der Installation fort.
 
    ![Die Option „Download all, then install“ (Alles herunterladen, dann installieren)](media/download-all-then-install.png)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Nachdem Sie den Webinstaller heruntergeladen haben, wählen Sie im Visual Studio-Installer die neue Option **Download all, then install** (Alles herunterladen, dann installieren) aus. Anschließend fahren Sie mit der Installation fort.
+
+   ![Die Option „Download all, then install“ (Alles herunterladen, dann installieren)](media/vs-2019/download-all-then-install-from-installer.png)
+
+::: moniker-end
+
+Das „Alles herunterladen, dann installieren“-Feature wurde so gestaltet, dass Sie Visual Studio als einzelne Installation für denselben Computer herunterladen können, auf den Sie es heruntergeladen haben. Auf diese Weise können Sie sich vor der Installation von Visual Studio problemlos vom Internet trennen.
+
+> [!IMPORTANT]
+> Verwenden Sie das „Alles herunterladen, dann installieren“-Feature nicht zum Erstellen eines Offlinecaches, den Sie auf einen anderen Computer übertragen möchten. Hierfür ist es nicht vorgesehen. <br><br>Wenn Sie einen Offlinecache erstellen möchten, um Visual Studio auf einem anderen Computer zu installieren, finden Sie im Abschnitt [Verwenden der Befehlszeile zum Erstellen eines lokalen Caches](#use-the-command-line-to-create-a-local-cache) dieser Seite Informationen zum Erstellen eines lokalen Caches, oder auf der Seite [Erstellen einer Netzwerkinstallation von Visual Studio](../install/create-a-network-installation-of-visual-studio.md) Informationen zum Erstellen eines Netzwerkcaches.
 
 ## <a name="use-the-command-line-to-create-a-local-cache"></a>Verwenden der Befehlszeile zum Erstellen eines lokalen Caches
 
@@ -50,41 +77,66 @@ Zum Ausführen dieses Schritts muss Ihr Computer mit dem Internet verbunden sein
 
 Beginnen Sie mit dem Herunterladen des Visual Studio-Bootstrappers für die ausgewählte Edition von Visual Studio. Ihre Setupdatei, d.h. Ihre Bootstrapperdatei, entspricht oder ähnelt einer der folgenden.
 
+::: moniker range="vs-2017"
+
 | Edition                    | Datei                                                                    |
 |----------------------------|-------------------------------------------------------------------------|
-| Visual Studio-Community    | [vs_community.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017)       |
-| Visual Studio Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017) |
-| Visual Studio Enterprise   | [vs_enterprise.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017)     |
+| Visual Studio-Community    | [vs_community.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017)       |
+| Visual Studio Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017) |
+| Visual Studio Enterprise   | [vs_enterprise.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017)     |
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+| Edition                    | Datei                                                                    |
+|----------------------------|-------------------------------------------------------------------------|
+| Visual Studio-Community    | [vs_community.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)       |
+| Visual Studio Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
+| Visual Studio Enterprise   | [vs_enterprise.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
+
+::: moniker-end
 
 ### <a name="step-2---create-a-local-install-cache"></a>Schritt 2: Erstellen eines lokalen Installationscaches
 
 Zum Ausführen dieses Schritts muss Ihr Computer mit dem Internet verbunden sein.
 
 > [!IMPORTANT]
-> Wenn Sie Visual Studio Community 2017 installieren, müssen Sie die Anwendung innerhalb von 30 Tagen nach der Installation aktivieren. Dazu ist eine Internetverbindung erforderlich.
+> Wenn Sie Visual Studio Community installieren, müssen Sie die Anwendung innerhalb von 30 Tagen nach der Installation aktivieren. Dazu ist eine Internetverbindung erforderlich.
 
 Öffnen Sie eine Eingabeaufforderung, und rufen Sie einen der Befehle in den folgenden Beispielen auf. Bei den hier aufgeführten Beispielen wird davon ausgegangen, dass Sie die Community-Edition von Visual Studio verwenden. Passen Sie den Befehl nach Bedarf für Ihre Edition an.
 
+> [!TIP]
+> Um Fehler zu vermeiden, darf Ihr vollständiger Installationspfad nicht mehr 80 Zeichen enthalten.
+
 - Führen Sie für die .NET-Web- und .NET-Desktopentwicklung Folgendes aus:
 
-   ```vs_community.exe --layout c:\vs2017layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US```
+   ```cmd
+    vs_community.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US
+    ```
 
 - Führen Sie für die .NET-Desktop- und Office-Entwicklung Folgendes aus:
 
-   ```vs_community.exe --layout c:\vs2017layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.Office --includeOptional --lang en-US```
+   ```cmd
+    vs_community.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.Office --includeOptional --lang en-US
+    ```
 
 - Führen Sie für die C++-Desktopentwicklung Folgendes aus:
 
-   ```vs_community.exe --layout c:\vs2017layout --add Microsoft.VisualStudio.Workload.NativeDesktop --includeRecommended --lang en-US```
+   ```cmd
+    vs_community.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.NativeDesktop --includeRecommended --lang en-US
+    ```
 
 - Führen Sie zum Erstellen eines vollständigen lokalen Layouts mit allen Funktionen Folgendes aus. Hinweis: Das Erstellen nimmt wegen der _umfangreichen_ Funktionen einige Zeit in Anspruch.
 
-   ```vs_community.exe --layout c:\vs2017layout --lang en-US```
+   ```cmd
+    vs_community.exe --layout c:\vslayout --lang en-US
+    ```
+
+  > [!NOTE]
+  > Ein vollständiges Visual Studio-Layout erfordert mindestens 35 GB Speicherplatz. Weitere Informationen zur Erstellung eines Layouts, das nur die gewünschten Komponenten enthält, finden Sie unter [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md).
 
 Wenn Sie eine andere Sprache als Englisch installieren möchten, ändern Sie `en-US` in das gewünschte Gebietsschema aus der [Liste der Gebietsschemas](#list-of-language-locales). Verwenden Sie dann die [Liste verfügbarer Komponenten und Workloads](workload-and-component-ids.md), um Ihren Installationscache weiter anzupassen.
-
-> [!IMPORTANT]
-> Ein vollständiges Visual Studio 2017-Layout erfordert mindestens 35 GB Speicherplatz, und der Download kann einige Zeit in Anspruch nehmen. Weitere Informationen zur Erstellung eines Layouts, das nur die gewünschten Komponenten enthält, finden Sie unter [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md).
 
 ### <a name="step-3---install-visual-studio-from-the-local-cache"></a>Schritt 3: Installieren von Visual Studio über den lokalen Cache
 
@@ -93,11 +145,15 @@ Wenn Sie eine andere Sprache als Englisch installieren möchten, ändern Sie `en
 
 Um sicherzustellen, dass Sie nur die Dateien installieren, die Sie zuvor heruntergeladen haben, verwenden Sie dieselben Befehlszeilenoptionen, die Sie zum Erstellen des Layoutcaches verwendet haben. Wenn Sie z. B. einen Layoutcache mit dem folgenden Befehl erstellt haben:
 
-```vs_community.exe --layout c:\vs2017layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US```
+```cmd
+vs_community.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US
+```
 
 Anschließend führen Sie mit dem folgenden Befehl die Installation aus:
 
-```c:\vs2017layout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional```
+```cmd
+c:\vslayout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional
+```
 
 > [!NOTE]
 > Wenn eine Fehlermeldung mit dem Hinweis zurückgegeben wird, dass eine Signatur ungültig ist, müssen Sie die aktualisierten Zertifikate installieren. Öffnen Sie den Ordner „Zertifikate“ in Ihrem Offlinecache. Doppelklicken Sie auf jede der Zertifikatdateien, und schließen Sie dann den Zertifikat-Manager-Assistenten ab. Wenn Sie nach einem Kennwort gefragt werden, lassen Sie es leer.
@@ -125,7 +181,7 @@ Anschließend führen Sie mit dem folgenden Befehl die Installation aus:
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Erstellen einer Netzwerkinstallation von Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md)
+- [Erstellen einer Netzwerkinstallation von Visual Studio](../install/create-a-network-installation-of-visual-studio.md)
 - [Installieren der für eine Offlineinstallation von Visual Studio erforderlichen Zertifikate](../install/install-certificates-for-visual-studio-offline.md)
 - [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-- [Arbeitsauslastungs- und Komponenten-IDs von Visual Studio 2017](workload-and-component-ids.md)
+- [Arbeitsauslastung und Komponenten-IDs von Visual Studio](workload-and-component-ids.md)

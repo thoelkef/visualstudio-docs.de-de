@@ -4,16 +4,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 9e4c80dee056d559822006627c86f4b4884942c8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fa5c02fc28e7ffec4765d94758c838ab149e7ac3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53991135"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62960485"
 ---
 # <a name="add-extensions-to-dsl-definitions"></a>Hinzufügen von Erweiterungen zu DSL-Definitionen
 
@@ -21,15 +20,15 @@ DSL-Definition-Erweiterung können Sie ein Paket von Erweiterungen für eine dom
 
 DSL-Erweiterungen können die folgenden Features umfassen:
 
--   Eigenschaften für das Modell und die Darstellung von Elementen
+- Eigenschaften für das Modell und die Darstellung von Elementen
 
--   Decorators für Formen und Konnektoren
+- Decorators für Formen und Konnektoren
 
--   Klassen, Beziehungen, Formen und Konnektoren
+- Klassen, Beziehungen, Formen und Konnektoren
 
--   Validierungseinschränkungen
+- Validierungseinschränkungen
 
--   Registerkarten und Toolboxelemente
+- Registerkarten und Toolboxelemente
 
 Ein Benutzer eine DSL mit der erweiterten kann erstellt, und Speichern eines Modells, das Instanzen der zusätzlichen Funktionen enthält. Das Modell kann von anderen Benutzern gelesen werden, die die geeignete Erweiterung installiert haben. Benutzer, die nicht die Erweiterung installiert haben, können nicht die zusätzlichen Funktionen verwenden können, aber zu aktualisieren und Speichern eines Modells, ohne dass Sie die zusätzlichen Funktionen verloren gehen.
 
@@ -37,4 +36,4 @@ Ein Benutzer eine DSL mit der erweiterten kann erstellt, und Speichern eines Mod
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Verwandte Blogbeiträge](https://blogs.msdn.microsoft.com/visualstudioalm/tag/code-index/)
+- [Verwandte Blogbeiträge](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)

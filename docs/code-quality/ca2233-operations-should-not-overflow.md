@@ -1,7 +1,6 @@
 ---
 title: 'CA2233: Vorgänge sollten nicht überlaufen.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - OperationsShouldNotOverflow
@@ -12,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 3a2b06ba-6d1b-4666-9eaf-e053ef47ffaa
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 273fb94f4f0b66badef60178635fe3db360f73a4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7c07dde4c3b992db30c9fc72a0dfa01f0f13b31e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954577"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806601"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233: Vorgänge sollten nicht überlaufen.
 
@@ -103,11 +102,11 @@ Wenn Sie aktiviert arithmetischen Über-/Unterlauf in C# -Code aktivieren, entsp
 
 Um überprüfte arithmetischen Über-/Unterlauf in c# zu aktivieren:
 
-1.  In **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und wählen Sie **Eigenschaften**.
+1. In **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und wählen Sie **Eigenschaften**.
 
-2.  Wählen Sie die Registerkarte **Build** aus, und klicken Sie auf **Erweitert**.
+2. Wählen Sie die Registerkarte **Build** aus, und klicken Sie auf **Erweitert**.
 
-3.  Wählen Sie **arithmetischen Über-/Unterlauf überprüfen** , und klicken Sie auf **OK**.
+3. Wählen Sie **arithmetischen Über-/Unterlauf überprüfen** , und klicken Sie auf **OK**.
 
 ## <a name="see-also"></a>Siehe auch
 

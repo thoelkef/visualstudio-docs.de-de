@@ -1,14 +1,9 @@
 ---
 title: Ausgabefenster | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.build.output
 - vs.debug.output
@@ -21,22 +16,21 @@ ms.assetid: d8931d88-250e-4db4-963f-2c5b3e99b45f
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 55869ff13cf4048b6d256e57892d470062847501
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 335058a6521f10313c94cbfbdd9657348cc90963
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189903"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438068"
 ---
 # <a name="output-window"></a>Ausgabefenster
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Das Fenster **Ausgabe** zeigt die Statusmeldungen für verschiedene Funktionen in der integrierten Entwicklungsumgebung (Integrated Development Environment – IDE) an. Um das Fenster **Ausgabe** zu öffnen, wählen Sie in der Menüleiste **Ansicht/Ausgabe** aus (oder drücken Sie STRG+ALT+O).  
   
 > [!WARNING]
->  In Visual Studio Express-Editionen wird das Fenster "Ausgabe" nicht im Menü "Ansicht" angezeigt. Um es einzublenden, verwenden Sie den Hotkey STRG+ALT+O.  
+> In Visual Studio Express-Editionen wird das Fenster "Ausgabe" nicht im Menü "Ansicht" angezeigt. Um es einzublenden, verwenden Sie den Hotkey STRG+ALT+O.  
   
 ## <a name="toolbar"></a>Symbolleiste  
  **Ausgabe anzeigen von**  
@@ -78,6 +72,3 @@ Das Fenster **Ausgabe** zeigt die Statusmeldungen für verschiedene Funktionen i
  [Kompilieren und Erstellen](../../ide/compiling-and-building-in-visual-studio.md)   
  [Grundlagen der Buildkonfiguration](../../ide/understanding-build-configurations.md)   
  [Übersicht über die Klassenbibliothek](http://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)
-
-
-

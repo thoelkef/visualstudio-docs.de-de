@@ -1,25 +1,20 @@
 ---
 title: Visual C++ IntelliSense | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 9d7c6414-4e6c-4889-a74c-a6033795eccc
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ced999c20678cc64dc5f96e86070b5f39d5ca2c7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 25c11d0ab2a136c82956ffa1ed0f90da534acb87
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881676"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802628"
 ---
 # <a name="visual-c-intellisense"></a>Visual C++ Intellisense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,14 +80,14 @@ In Visual Studio 2015 steht IntelliSense für einzelne Codedateien sowie für Da
   
   Beachten Sie Folgendes:  
   
-- Der #ifdef-Branch in Zeile 6 ist ausgegraut inaktiven Bereich, da *_ANDROID\\*  \_ für iOS-Projekt nicht definiert ist.  
+- Der #ifdef-Branch in Zeile 6 ist ausgegraut und stellt den inaktiven Bereich dar, da *__ANDROID\\*\_ für das iOS-Projekt nicht definiert ist.  
   
 - Die Variable für die Grußformel in Zeile 11 wird mit dem HELLO-Bezeichner initialisiert, der nun eine rote Wellenlinie hat. Der Grund hierfür ist, dass kein HELLO-Bezeichner in dem aktuell aktiven iOS-Projekt definiert ist.  
   
 - Zeile 12 weist der BYE-Bezeichner eine violette Wellenlinie auf; dieser Bezeichner ist im aktuell inaktiven Android.NativeActivity-Projekt nicht definiert.  
   
 ## <a name="single-file-intellisense"></a>IntelliSense mit Einzeldatei  
- Wenn Sie eine einzelne Datei außerhalb von Projekten öffnen, können Sie weiterhin IntelliSense verwenden. Sie können bestimmte Funktionen aktivieren oder deaktivieren, indem Sie zu **Text-Editor, C/C++, Erweitert** wechseln und IntelliSense-Funktionen aktivieren oder deaktivieren. Suchen Sie zum Konfigurieren von IntelliSense für einzelne Dateien, die nicht Teil eines Projekts sind, nach **IntelliSense und Suchen nach Nicht-Projektdateien** in dem Abschnitt **Erweitert**. Weitere Informationen finden Sie unter [Tour zu Visual C++](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).  
+ Wenn Sie eine einzelne Datei außerhalb von Projekten öffnen, können Sie weiterhin IntelliSense verwenden. Sie können bestimmte Funktionen aktivieren oder deaktivieren, indem Sie zu **Text-Editor, C/C++, Erweitert** wechseln und IntelliSense-Funktionen aktivieren oder deaktivieren. Suchen Sie zum Konfigurieren von IntelliSense für einzelne Dateien, die nicht Teil eines Projekts sind, nach **IntelliSense und Suchen nach Nicht-Projektdateien** in dem Abschnitt **Erweitert**. Weitere Informationen finden Sie unter [Tour zu Visual C++](http://msdn.microsoft.com/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).  
   
  ![Visual C&#43;&#43; IntelliSense mit Einzeldatei](../ide/media/vs2015-cpp-single-file-intellisense.png "vs2015_cpp_single_file_intellisense")  
   
@@ -102,6 +97,3 @@ In Visual Studio 2015 steht IntelliSense für einzelne Codedateien sowie für Da
   
 ## <a name="see-also"></a>Siehe auch  
  [Verwenden von IntelliSense](../ide/using-intellisense.md)
-
-
-

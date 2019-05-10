@@ -1,25 +1,22 @@
 ---
 title: Visual Studio IDE-Vorteil in Visual Studio-Abonnements | Microsoft-Dokumentation
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.author: lank
+manager: lank
+ms.date: 04/03/2019
+ms.topic: conceptual
 description: Erfahren Sie, wie Sie die Visual Studio-IDE herunterladen und installieren, die in Ihrem Visual Studio-Abonnement enthalten ist.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: deb8a962b18037beb70aaddac8154e506d0f3867
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: af721e567e451c50533d0e476ec01acfa4022a53
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739798"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420810"
 ---
-# <a name="using-the-visual-studio-2017-benefit"></a>Verwenden des Visual Studio 2017-Vorteils
+# <a name="using-the-visual-studio-2019-benefit"></a>Verwenden des Visual Studio 2019-Vorteils
 
 Als Visual Studio-Abonnent haben Sie Zugriff auf die Visual Studio-IDE.  Die genaue Version richtet sich nach der Stufe Ihres Abonnements.  Der Vorteil wird auf der Seite [Vorteile](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) im Abonnentenportal als Kachel in der Kategorie „Tools“ (Extras) angezeigt.
-
 
 ## <a name="activation-steps"></a>Aktivierungsschritte
 
@@ -31,7 +28,7 @@ Führen Sie folgende Schritte aus, um die IDE herunterzuladen:
    > [!div class="mx-imgBorder"]
    > ![Kachel „Visual Studio Enterprise“](_img/vs-ide-experience/vs-ide-tile.png)
 
-3. Sie werden auf die Seite „Downloadergebnisse“ für Visual Studio Enterprise umgeleitet. Dort können Sie die IDE herunterladen und den Produktschlüssel für die Aktivierung abrufen. Sie können einen Product Key auch anfordern, indem Sie auf den blauen Link **Schlüssel abrufen** klicken, oder den Schlüssel später auf der Seite [Product Keys](https://my.visualstudio.com/productkeys) anfordern.
+3. Sie werden auf die Seite „Downloadergebnisse“ für Visual Studio umgeleitet. Dort können Sie die IDE herunterladen und den Produktschlüssel für die Aktivierung abrufen. Sie können einen Product Key auch anfordern, indem Sie auf den blauen Link **Schlüssel abrufen** klicken, oder den Schlüssel später auf der Seite [Product Keys](https://my.visualstudio.com/productkeys) anfordern.
 4. Führen Sie auf der Registerkarte „Details“ der Seite „Downloadergebnisse“ folgende Schritte aus:
    - Wählen Sie die gewünschte Architektur (x86, x64) aus.
    - Wählen Sie Ihre bevorzugte Sprache aus.
@@ -55,9 +52,14 @@ Führen Sie folgende Schritte aus, um die IDE herunterzuladen:
 
 13. Wählen Sie Ihr bevorzugtes Design aus, und klicken Sie auf **Visual Studio starten**.
 
-14. Die Startseite wird angezeigt.  Sie können nun mit der Verwendung von Visual Studio beginnen.
+14. Visual Studio wird geöffnet. Sie können nun mit der Verwendung von Visual Studio beginnen.
+
+    ::: moniker range="vs-2017"
+
     > [!div class="mx-imgBorder"]
     > ![Einstieg in Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-start-cropped.png)
+
+    ::: moniker-end
 
 ## <a name="eligibility"></a>Berechtigung
 
@@ -69,17 +71,15 @@ Führen Sie folgende Schritte aus, um die IDE herunterzuladen:
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Nicht verfügbar                                              |  Nicht zutreffend          |
 | Visual Studio Dev Essentials | Nicht zutreffend  | Visual Studio-Community |Ja |
 
-<sup>1</sup> *Umfasst:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services (Developer), BizSpark, Imagine, Microsoft Valued Professional (MVP), Region Director (RD).  Umfasst nicht: MCT Software & Services.*
+<sup>1</sup> *Umfasst:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  Umfasst nicht: MCT Software & Services.*
 
 > [!NOTE]
 > In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.
 
-
 Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen.
 
-
 ## <a name="support-resources"></a>Supportressourcen
--  Wenn Sie Hilfe bei Visual Studio IDE benötigen, sehen Sie sich die folgenden Ressourcen an:
+- Wenn Sie Hilfe bei Visual Studio IDE benötigen, sehen Sie sich die folgenden Ressourcen an:
     - Technischer Support: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
     - [Dokumentation](/visualstudio/)
--  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
+- Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.

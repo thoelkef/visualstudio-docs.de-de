@@ -1,12 +1,9 @@
 ---
-title: 'UML-Aktivitätsdiagramme: Verweisen | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'UML-Aktivitätsdiagramme: Verweis | Microsoft-Dokumentation'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.activitydiagram.diagram
 - vs.teamarch.activitydiagram.toolbox
@@ -22,13 +19,13 @@ ms.assetid: 07efcd17-2a96-4052-9957-6dcccbb725ee
 caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 2dcfa13a7ac97a5afd3e315fcef13a706c5f4bce
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c60405331ebab909e8056d4800bd43b208c92493
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810467"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087143"
 ---
 # <a name="uml-activity-diagrams-reference"></a>UML-Aktivitätsdiagramme: Referenz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +70,7 @@ Ein *Aktivitätsdiagramm* zeigt einen Geschäfts- oder Softwareprozess als Arbei
 |9|**Aktion zum Aufrufen eines Verhaltens**|Eine Aktion, die in einem anderen Aktivitätsdiagramm ausführlicher definiert ist.<br /><br /> -   **IsSynchronous** : Wenn "true", wartet die Aktion auf die Aktivität ist beendet.<br />-   **Verhalten** : die Aktivität wurde aufgerufen.|  
 |(nicht angezeigt)|**Aktion des Vorgangs zum Aufrufen eines**|Eine Aktion, die einen Vorgang für eine Instanz einer Klasse aufruft.|  
 ||**Aktivität**|Der Arbeitsablauf, der von einem Aktivitätsdiagramm dargestellt wird. Um die Eigenschaften einer Aktivität anzuzeigen, müssen Sie diesen in auswählen **UML-Modell-Explorer**.<br /><br /> -   **Ist schreibgeschützt.** : Wenn "true", die Aktivität den Status eines Objekts nicht ändern sollten.<br />-   **Ist die einzige Ausführung** : Wenn "true", es höchstens eine Ausführung des Diagramms zu einem Zeitpunkt gibt.|  
-||**UML-Aktivitätsdiagramm**|Das Diagramm, das eine Aktivität anzeigt. Um ihre Eigenschaften anzuzeigen, klicken Sie auf einen leeren Bereich des Diagramms. **Hinweis:** den Namen des Aktivitätsdiagramms, die Datei, die das Diagramm und die im Diagramm angezeigte Aktivität enthält kann alle unterschiedlich sein.|  
+||**UML-Aktivitätsdiagramm**|Das Diagramm, das eine Aktivität anzeigt. Um ihre Eigenschaften anzuzeigen, klicken Sie auf einen leeren Bereich des Diagramms. **Hinweis**:  Die Namen des Aktivitätsdiagramms, die Datei, die das Diagramm enthält und die vom Diagramm angezeigte Aktivität können sich alle unterscheiden.|  
   
 ### <a name="concurrent-flows"></a>Parallele Flüsse  
  Sie können Sequenzen von Aktionen beschreiben, die gleichzeitig ausgeführt werden. Weitere Informationen finden Sie unter „Zeichnen von parallelen Flüssen“.  
@@ -88,7 +85,7 @@ Ein *Aktivitätsdiagramm* zeigt einen Geschäfts- oder Softwareprozess als Arbei
 |13|**Aktion zum Senden**|Eine Aktion, die eine Nachricht oder ein Signal an eine andere Aktivität oder an einen parallelen Thread in der gleichen Aktivität sendet. Typ und Inhalt der Nachricht werden durch den Titel der Aktion impliziert oder in zusätzlichen Kommentaren angegeben.<br /><br /> Die Aktion kann Daten im Signal senden, die in einem Objektfluss oder Eingabepin (16) an die Aktion übergeben werden können.|  
 |14|**Ereignisaktion akzeptieren**|Eine Aktion, die auf eine Nachricht oder ein Signal wartet, bevor die Aktion fortgesetzt werden kann. Der Typ der Nachricht, der von der Aktion abgerufen werden kann, wird durch den Titel der Aktion impliziert oder in zusätzlichen Kommentaren angegeben.<br /><br /> Weist die Aktion keine eingehende Ablaufsteuerung auf, erzeugt sie beim Erhalten einer Nachricht ein Token.<br /><br /> Die Aktion kann Daten im Signal empfangen, die in einem Objektfluss oder Ausgabepin (17) übergeben werden können.<br /><br /> -   **IsUnmarshall** : Wenn "true", können mehrere typisierte Ausgabepins vorhanden sein, und Daten auf diese mashallen. Bei „False“ werden alle Daten auf einem Pin angezeigt.|  
   
-###  <a name="DataFlow"></a> Datenflüsse  
+### <a name="DataFlow"></a> Datenflüsse  
  Sie können den Fluss der Daten von einer Aktion zu einer anderen beschreiben. Weitere Informationen zu den in diesem Abschnitt verwendeten Elementen finden Sie im Abschnitt „Zeichnen von Datenflüssen“ des Themas „Richtlinien zum Zeichnen eines Aktivitätsdiagramms“.  
   
  ![Aktivitätsdiagramm mit Datenfluss](../modeling/media/uml-actovdata.png "UML_ActOvData")  
@@ -105,6 +102,3 @@ Ein *Aktivitätsdiagramm* zeigt einen Geschäfts- oder Softwareprozess als Arbei
 ## <a name="see-also"></a>Siehe auch  
  [Bearbeiten von UML-Modellen und-Diagrammen](../modeling/edit-uml-models-and-diagrams.md)   
  [UML-Aktivitätsdiagramme: Richtlinien](../modeling/uml-activity-diagrams-guidelines.md)
-
-
-

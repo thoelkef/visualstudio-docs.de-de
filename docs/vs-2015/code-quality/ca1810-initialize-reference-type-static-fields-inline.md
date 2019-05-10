@@ -1,14 +1,9 @@
 ---
-title: 'CA1810: Statische Felder Initialisieren von Verweistypen Inline | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'CA1810: Statische Felder von Verweistypen Inline initialisieren | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - InitializeReferenceTypeStaticFieldsInline
 - CA1810
@@ -20,14 +15,14 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e4d7ffbe4fc821ffd70b0bb299b2a4738d63873b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dd0372ca3264bedd6fbb17ef3c8326471cb6e99f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62538914"
 ---
-# <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810: Statische Felder von Verweistypen inline initialisieren
+# <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810: Statische Felder von Referenztypen inline initialisieren.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -47,9 +42,9 @@ ms.locfileid: "49862683"
 
  Durch die Überprüfung statischer Konstruktoren kann die Leistung herabgesetzt werden. Ein statischer Konstruktor wird häufig verwendet, nur für die nach dem Initialisieren von statischen Feldern, in denen Fall, die Sie nur sicherstellen, dass die statische Initialisierung, müssen vor der ersten Zugriff auf ein statisches Feld auftritt. Die `beforefieldinit` Verhalten eignet sich für diese und die meisten anderen Projekttypen. Es ist nur dann ungeeignet, wenn statische Initialisierung wirkt sich auf die globalen Zustand und eine der folgenden zutrifft:
 
--   Die Auswirkungen auf den globalen Zustand ist teuer und ist nicht erforderlich, wenn der Typ nicht verwendet wird.
+- Die Auswirkungen auf den globalen Zustand ist teuer und ist nicht erforderlich, wenn der Typ nicht verwendet wird.
 
--   Die Auswirkungen des globalen Status können zugegriffen werden, ohne den Zugriff auf ein statisches Feld des Typs.
+- Die Auswirkungen des globalen Status können zugegriffen werden, ohne den Zugriff auf ein statisches Feld des Typs.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, initialisieren Sie alle statischen Daten nach deren Deklaration und entfernen den statischen Konstruktor.
@@ -72,7 +67,4 @@ ms.locfileid: "49862683"
  **{** 
  **} / / end NoStaticConstructor-Klasse**
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA2207: Statische Felder für Werttyp inline initialisieren](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)
-
-
-
+ [CA2207: Statische Felder Werttyp Inline initialisieren](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)

@@ -4,16 +4,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 6e6c790677ea49ad784e7ff5d48326a1d5e216ad
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 40b62719fb00910e4eef183f960e1a1d4ea9a4a4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986166"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62994530"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Erweitern von DSL mittels MEF
 
@@ -25,7 +24,7 @@ Weitere Informationen über MEF finden Sie unter [Managed Extensibility Framewor
 
 ### <a name="to-enable-your-dsl-to-be-extended-by-mef"></a>So aktivieren Sie Ihre DSL von MEF erweitert werden
 
-1.  Erstellen Sie einen neuen Ordner namens **MefExtension** innerhalb der **DslPackage** Projekt. Fügen Sie die folgenden Dateien hinzu:
+1. Erstellen Sie einen neuen Ordner namens **MefExtension** innerhalb der **DslPackage** Projekt. Fügen Sie die folgenden Dateien hinzu:
 
      Dateiname: `CommandExtensionVSCT.tt`
 
@@ -73,7 +72,7 @@ Weitere Informationen über MEF finden Sie unter [Managed Extensibility Framewor
     <#@ include file="DslPackage\PackageExtensionEnablement.tt" #>
     ```
 
-2.  Erstellen Sie einen neuen Ordner namens **MefExtension** innerhalb der **Dsl** Projekt. Fügen Sie die folgenden Dateien hinzu:
+2. Erstellen Sie einen neuen Ordner namens **MefExtension** innerhalb der **Dsl** Projekt. Fügen Sie die folgenden Dateien hinzu:
 
      Dateiname: `DesignerExtensionMetaDataAttribute.tt`
 
@@ -96,7 +95,7 @@ Weitere Informationen über MEF finden Sie unter [Managed Extensibility Framewor
     <#@ include file="Dsl\GestureExtensionController.tt" #>
     ```
 
-3.  Fügen Sie die folgende Zeile an die vorhandene Datei mit dem Namen **Dslpackage\commands**:
+3. Fügen Sie die folgende Zeile an die vorhandene Datei mit dem Namen **Dslpackage\commands**:
 
     ```xml
     <Include href="MefExtension\CommandExtensionVSCT.vsct"/>
@@ -104,29 +103,29 @@ Weitere Informationen über MEF finden Sie unter [Managed Extensibility Framewor
 
     Fügen Sie die Zeile hinter der vorhandenen `<Include>` Richtlinie.
 
-4.  Open *"DslDefinition.DSL"*.
+4. Open *"DslDefinition.DSL"*.
 
-5.  Wählen Sie im DSL-Explorer **editor\validierung**.
+5. Wählen Sie im DSL-Explorer **editor\validierung**.
 
-6.  Stellen Sie im Eigenschaftenfenster sicher, dass mindestens eine der Eigenschaften mit dem Namen **verwendet** ist `true`.
+6. Stellen Sie im Eigenschaftenfenster sicher, dass mindestens eine der Eigenschaften mit dem Namen **verwendet** ist `true`.
 
-7.  In der **Projektmappen-Explorer** -Symbolleiste klicken Sie auf **alle Vorlagen transformieren**.
+7. In der **Projektmappen-Explorer** -Symbolleiste klicken Sie auf **alle Vorlagen transformieren**.
 
      Untergeordnete Dateien, die unterhalb der einzelnen Dateien, die Sie hinzugefügt werden angezeigt.
 
-8.  Erstellen Sie und führen Sie die Projektmappe, um sicherzustellen, dass sie weiterhin funktioniert.
+8. Erstellen Sie und führen Sie die Projektmappe, um sicherzustellen, dass sie weiterhin funktioniert.
 
 Ihre DSL ist jetzt die MEF-aktiviert. Sie können Menübefehle, Gesten Handler und validierungseinschränkungen als MEF-Erweiterungen schreiben. Sie können diese Erweiterungen in der DSL-Projektmappe zusammen mit anderem benutzerdefinierten Code schreiben. Darüber hinaus können Sie oder andere Entwickler separate Visual Studio-Erweiterungen schreiben, die Ihre DSL zu erweitern.
 
-## <a name="creating-an-extension-for-a-mef-enabled-dsl"></a>Erstellen einer Erweiterung für eine DSL mit MEF-aktiviert
+## <a name="create-an-extension-for-a-mef-enabled-dsl"></a>Erstellen Sie eine Erweiterung für eine DSL mit MEF-aktiviert
 
 Wenn Sie Zugriff auf eine MEF-fähigen DSL, die von Ihnen selbst oder eine andere Person erstellt haben, können Sie Erweiterungen dafür schreiben. Die Erweiterungen können verwendet werden, um Menübefehle, Gesten-Handler oder validierungseinschränkungen hinzuzufügen. Um diese Erweiterungen zu erstellen, verwenden Sie Visual Studio-Erweiterung (VSIX)-Projektmappe. Die Lösung besteht aus zwei Teilen: einem Klassenbibliotheksprojekt, das die Code-Assembly erstellt, und ein VSIX-Projekt, mit der die Assembly verpackt.
 
-#### <a name="to-create-a-dsl-extension-vsix"></a>Um eine DSL-Erweiterung VSIX zu erstellen.
+### <a name="to-create-a-dsl-extension-vsix"></a>Um eine DSL-Erweiterung VSIX zu erstellen.
 
-1. Erstellen Sie ein neues Klassenbibliotheksprojekt. Klicken Sie hierzu in der **neues Projekt** wählen Sie im Dialogfeld **Visual Basic** oder **Visual C#-** und wählen Sie dann **Klassenbibliothek**.
+1. Erstellen Sie ein neues **Klassenbibliotheksprojekt**.
 
-2. Fügen Sie einen Verweis auf die Assembly der DSL, in das neue Klassenbibliotheksprojekt.
+2. Fügen Sie in das neue Projekt einen Verweis auf die Assembly der DSL aus.
 
    - Diese Assembly wurde in der Regel einen Namen mit der Endung ". DSL.dll".
 
@@ -136,19 +135,19 @@ Wenn Sie Zugriff auf eine MEF-fähigen DSL, die von Ihnen selbst oder eine ander
 
 3. Fügen Sie Verweise auf die folgenden .NET-Assemblys hinzu:
 
-   -   Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
+   - Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
 
-   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
+   - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
 
-   -   Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
+   - Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
 
-   -   System.ComponentModel.Composition.dll
+   - System.ComponentModel.Composition.dll
 
-   -   System.Windows.Forms.dll
+   - System.Windows.Forms.dll
 
-4. Erstellen Sie ein VSIX-Projekt, in der gleichen Projektmappe. Klicken Sie hierzu in der **neues Projekt** Dialogfeld erweitern Sie **Visual Basic** oder **Visual C#-**, klicken Sie auf **Erweiterbarkeit**, und wählen Sie dann auf  **VSIX-Projekt**.
+4. Erstellen Sie ein neues **VSIX-Projekt** Projekt.
 
-5. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste in des VSIX-Projekts, und klicken Sie dann auf **als Startprojekt festlegen**.
+5. In **Projektmappen-Explorer**mit der rechten Maustaste auf das VSIX-Projekt, und wählen Sie **als Startprojekt festlegen**.
 
 6. Öffnen Sie in das neue Projekt **"Source.Extension.vsixmanifest"**.
 

@@ -1,7 +1,6 @@
 ---
 title: 'CA1716: Bezeichner sollten nicht mit Schlüsselwörtern übereinstimmen.'
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - IdentifiersShouldNotMatchKeywords
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 900cc8a1-1089-4069-a4ce-10b109ac4fab
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d27fdd455d019532b47bc531f9f7377bacd6572e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 279bcf3aecc2a637a7a36c2041ed63a72017a800
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828627"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545829"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: Bezeichner sollten nicht mit Schlüsselwörtern übereinstimmen.
 
@@ -33,7 +32,9 @@ ms.locfileid: "53828627"
 
 ## <a name="cause"></a>Ursache
 
-Ein Name, der einen Namespace, einen Typ oder ein Element Schnittstellenmembers entspricht ein reserviertes Schlüsselwort in einer Programmiersprache.
+Der Name des eine Namespace-, Typ- oder virtuellen oder eine Übereinstimmung Schnittstellenmember ein reserviertes Schlüsselwort in einer Programmiersprache.
+
+Diese Regel nur sucht standardmäßig an extern sichtbare Namespaces, Typen und Member, aber dies ist [konfigurierbare](#configurability).
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
@@ -42,12 +43,10 @@ Bezeichner für Namespaces, Typen und virtuelle und Schnittstellenmember sollten
 Diese Regel überprüft für Schlüsselwörter in den folgenden Sprachen:
 
 - Visual Basic
-
 - C#
-
 - C++/CLI
 
-Groß-/Kleinschreibung Vergleich wird zum [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Schlüsselwörter und Vergleich Groß-/Kleinschreibung wird für die anderen Sprachen verwendet.
+Groß-/Kleinschreibung Vergleich wird verwendet, für die Visual Basic-Schlüsselwörter und Vergleich Groß-/Kleinschreibung wird für die anderen Sprachen verwendet.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
@@ -55,4 +54,14 @@ Wählen Sie einen Namen, der nicht angezeigt wird, in der Liste der Schlüsselw�
 
 ## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
 
-Sie können eine Warnung dieser Regel unterdrücken, wenn Sie sicher sind, dass der Bezeichner nicht Benutzer der API verwechselt werden und die Bibliothek in allen verfügbaren Sprachen in .NET Framework verwendet werden kann.
+Sie können eine Warnung dieser Regel unterdrücken, wenn Sie überzeugt sind, dass der Bezeichner Benutzer der API verwechselt wird nicht und die Bibliothek in allen verfügbaren Sprachen in .NET verwendet werden kann.
+
+## <a name="configurability"></a>Konfigurierbarkeit
+
+Wenn Sie diese Regel aus ausführen, [FxCop-Analysen](install-fxcop-analyzers.md) (und nicht über die Analyse von statischem Code), können Sie konfigurieren, welche Teile Ihrer Codebasis, um die Ausführung dieser Regel auf, um basierend auf deren Barrierefreiheit. Z. B. um anzugeben, dass die Regel nur für die nicht öffentlichen API-Oberfläche ausgeführt werden soll, fügen Sie die folgenden Schlüssel-Wert-Paar in einer editorconfig-Datei in Ihrem Projekt:
+
+```
+dotnet_code_quality.ca1716.api_surface = private, internal
+```
+
+Sie können diese Option, die für diese eine Regel, für alle Regeln oder für alle Regeln in dieser Kategorie (Naming) konfigurieren. Weitere Informationen finden Sie unter [konfigurieren FxCop-Analysetools](configure-fxcop-analyzers.md).

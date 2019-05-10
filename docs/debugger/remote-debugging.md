@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 5a94ad64-100d-43ca-9779-16cb5af86f97
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84ba15ddbfdb6e3bbcf7a9f7c3ee3dd7e0f89c9c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: eecde0bc5e488cd91632a45406c621ce45bd4447
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866334"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407758"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 Sie können eine Visual Studio-Anwendung debuggen, die auf einem anderen Computer bereitgestellt wurde. Dazu verwenden Sie den Visual Studio Remote Debugger.
@@ -57,11 +57,22 @@ Wenn Sie nur herunterladen und Installieren des Remotedebuggers möchten und all
 
 Sie finden den Remotedebugger (*msvsmon.exe*) auf einem Computer mit Visual Studio Community, Professional oder Enterprise bereits installiert. Die einfachste Möglichkeit zum Einrichten des Remotedebuggens werden für einige Szenarien führen Sie den Remotedebugger (msvsmon.exe) über eine Dateifreigabe. Einschränkungen bezüglich der, finden Sie den Remotedebugger-Hilfeseite (**Hilfe > Verwendung** in den Remotedebugger).
 
-1. Suchen *msvsmon.exe* in das Verzeichnis, das Ihrer Version von Visual Studio entspricht. Für Visual Studio Enterprise 2017:
+1. Suchen *msvsmon.exe* in das Verzeichnis, das Ihrer Version von Visual Studio entspricht:
 
-      *Programm Dateien (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
+   ::: moniker range=">=vs-2019"
 
-      *Programm Dateien (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
+   *Programm Dateien (x86) \Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
+
+   *Programm Dateien (x86) \Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
+
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+
+   *Programm Dateien (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
+
+   *Programm Dateien (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
+
+   ::: moniker-end
 
 2. Freigabe der **Remotedebugger** Ordner auf dem Visual Studio-Computer.
 
@@ -77,21 +88,21 @@ Sie finden den Remotedebugger (*msvsmon.exe*) auf einem Computer mit Visual Stud
 ### <a name="configure_msvsmon"></a>Konfigurieren des Remotedebuggers
 Sie können einige Aspekte der Konfiguration des Remotedebuggers ändern, nachdem Sie ihn zum ersten Mal gestartet haben.
 
--   Wenn Sie zum Hinzufügen von Berechtigungen für andere Benutzer eine Verbindung mit dem Remotedebugger herstellen, wählen müssen **Extras > Berechtigungen**. Sie müssen Administratorrechte besitzen, um Berechtigungen zu gewähren oder zu verweigern.
+- Wenn Sie zum Hinzufügen von Berechtigungen für andere Benutzer eine Verbindung mit dem Remotedebugger herstellen, wählen müssen **Extras > Berechtigungen**. Sie müssen Administratorrechte besitzen, um Berechtigungen zu gewähren oder zu verweigern.
 
      > [!IMPORTANT]
      > Sie können den Remotedebugger unter einem Benutzerkonto, das unterscheidet sich über das Benutzerkonto auf dem Visual Studio-Computer verwendeten ausführen, jedoch müssen Sie das andere Benutzerkonto die Berechtigungen des Remotedebuggers hinzufügen.
 
      Alternativ können Sie den Remotedebugger starten, über die Befehlszeile mit der **/ allow \<Benutzername >** Parameter: **Msvsmon / allow \< username@computer>**.
 
--   Wenn Sie den Authentifizierungsmodus oder die Portnummer ändern, oder geben Sie einen Timeoutwert für den Remoteserver-Verwaltungstools müssen: Wählen Sie **Tools > Optionen**.
+- Wenn Sie den Authentifizierungsmodus oder die Portnummer ändern, oder geben Sie einen Timeoutwert für den Remoteserver-Verwaltungstools müssen: Wählen Sie **Tools > Optionen**.
 
      Eine Liste der standardmäßig verwendeten Portnummern, finden Sie unter [Remotedebugger – Portzuweisungen](../debugger/remote-debugger-port-assignments.md).
 
      > [!WARNING]
-     >  Sie haben die Möglichkeit, die Remotetools im Modus "Keine Authentifizierung" auszuführen, hiervon wird jedoch dringend abgeraten. In diesem Modus gibt es keine Netzwerksicherheit. Wählen Sie den Modus „Ohne Authentifizierung“ nur aus, wenn Sie sicher sind, dass das Netzwerk nicht durch bösartigen oder feindlichen Datenverkehr gefährdet ist.
+     > Sie haben die Möglichkeit, die Remotetools im Modus "Keine Authentifizierung" auszuführen, hiervon wird jedoch dringend abgeraten. In diesem Modus gibt es keine Netzwerksicherheit. Wählen Sie den Modus „Ohne Authentifizierung“ nur aus, wenn Sie sicher sind, dass das Netzwerk nicht durch bösartigen oder feindlichen Datenverkehr gefährdet ist.
 
-##  <a name="bkmk_configureService"></a> (Optional) Konfigurieren des Remotedebuggers als Dienst
+## <a name="bkmk_configureService"></a> (Optional) Konfigurieren des Remotedebuggers als Dienst
 Für das Debuggen in ASP.NET und anderen serverumgebungen, müssen Sie den Remotedebugger als Administrator ausführen oder, soll es immer ausgeführt, den den Remotedebugger als Dienst ausführen.
 
  Wenn Sie den Remotedebugger als Dienst konfigurieren möchten, gehen Sie wie folgt vor.
@@ -122,7 +133,7 @@ Für das Debuggen in ASP.NET und anderen serverumgebungen, müssen Sie den Remot
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Debugger – Featuretour](../debugger/debugger-feature-tour.md)
+- [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)
 - [Konfigurieren der Windows-Firewall für das Remotedebuggen](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
 - [Remotedebugger - Portzuweisungen](../debugger/remote-debugger-port-assignments.md)
 - [Remotedebuggen von ASP.NET Core auf einem Remotecomputer mit IIS-Computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)

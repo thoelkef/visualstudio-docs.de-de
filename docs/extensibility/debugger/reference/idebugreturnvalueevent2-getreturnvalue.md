@@ -1,7 +1,7 @@
 ---
 title: IDebugReturnValueEvent2::GetReturnValue | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugReturnValueEvent2::GetReturnValue
 helpviewer_keywords:
@@ -9,40 +9,44 @@ helpviewer_keywords:
 ms.assetid: 86c50d5a-6df6-4798-818a-c587a8741f90
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6bbea19bdddc27cc04453fe7114960161ce8c280
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: db7199a4e589d4839e2a9171350063d2bb4f9f68
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956113"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457450"
 ---
 # <a name="idebugreturnvalueevent2getreturnvalue"></a>IDebugReturnValueEvent2::GetReturnValue
-Ruft den Wert für die schrittweise Ausführung von oder für eine Funktion zurückgegeben wird.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-HRESULT GetReturnValue (   
-   IDebugProperty2** ppReturnValue  
-);  
-```  
-  
-```csharp  
-int GetReturnValue (   
-   out IDebugProperty2 ppReturnValue  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `ppReturnValue`  
- [out] Gibt eine [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) -Objekt, das den Wert abgerufen werden sollen darstellt.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDebugReturnValueEvent2](../../../extensibility/debugger/reference/idebugreturnvalueevent2.md)   
- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
+Ruft den Wert für die schrittweise Ausführung von oder für eine Funktion zurückgegeben wird.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+HRESULT GetReturnValue ( 
+   IDebugProperty2** ppReturnValue
+);
+```
+
+```csharp
+int GetReturnValue ( 
+   out IDebugProperty2 ppReturnValue
+);
+```
+
+## <a name="parameters"></a>Parameter
+ `ppReturnValue`\
+
+ [out] Gibt eine [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) -Objekt, das den Wert abgerufen werden sollen darstellt.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+
+## <a name="see-also"></a>Siehe auch
+- [IDebugReturnValueEvent2](../../../extensibility/debugger/reference/idebugreturnvalueevent2.md)
+- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

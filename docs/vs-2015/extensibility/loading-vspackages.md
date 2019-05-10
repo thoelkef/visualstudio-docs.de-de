@@ -1,27 +1,22 @@
 ---
 title: Laden von VSPackages | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, autoloading
 - VSPackages, loading
 ms.assetid: f4c3dcea-5051-4065-898f-601269649d92
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e351f49ea3e9579202e21868361e5d6f3d53b8fd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e20caff476e116ad59430692719bdbbe22c4914c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439778"
 ---
 # <a name="loading-vspackages"></a>Laden von VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +24,13 @@ ms.locfileid: "51753878"
 VSPackages sind in Visual Studio geladen werden, nur, wenn ihre Funktionalität erforderlich ist. Beispielsweise wird eine VSPackage geladen, wenn Visual Studio verwendet eine Projektzuordnungsinstanz oder ein Dienst, den das VSPackage implementiert. Dieses Feature heißt verzögertes Laden, die nach Möglichkeit zur Verbesserung der Leistung verwendet wird.  
   
 > [!NOTE]
->  Visual Studio kann bestimmte VSPackage-Informationen, z. B. der Befehle bestimmen, die eine VSPackage bietet, ohne Sie zu das VSPackage zu laden.  
+> Visual Studio kann bestimmte VSPackage-Informationen, z. B. der Befehle bestimmen, die eine VSPackage bietet, ohne Sie zu das VSPackage zu laden.  
   
  VSPackages kann z. B. Automatisches Laden, in einem bestimmten Benutzerkontext von Benutzeroberfläche (UI) festgelegt werden, wenn eine Projektmappe geöffnet ist. Die <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> -Attribut wird von diesem Kontext.  
   
 ### <a name="autoloading-a-vspackage-in-a-specific-context"></a>Automatisches Laden eines VSPackage in einem bestimmten Kontext  
   
--   Hinzufügen der `ProvideAutoLoad` -Attribut auf die VSPackage-Attribute:  
+- Hinzufügen der `ProvideAutoLoad` -Attribut auf die VSPackage-Attribute:  
   
     ```csharp  
     [DefaultRegistryRoot(@"Software\Microsoft\VisualStudio\14.0")]  
@@ -48,11 +43,11 @@ VSPackages sind in Visual Studio geladen werden, nur, wenn ihre Funktionalität 
   
      Finden Sie unter den aufgelisteten Felder <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> für eine Liste mit den Benutzeroberfläche-Kontexte und die GUID-Werte.  
   
--   Festlegen eines Haltepunkts in der <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> Methode.  
+- Festlegen eines Haltepunkts in der <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> Methode.  
   
--   Das VSPackage zu erstellen und mit dem Debuggen beginnen.  
+- Das VSPackage zu erstellen und mit dem Debuggen beginnen.  
   
--   Laden Sie eine Projektmappe, oder erstellen.  
+- Laden Sie eine Projektmappe, oder erstellen.  
   
      Das VSPackage lädt, und die Ausführung am Haltepunkt beendet.  
   
@@ -61,7 +56,7 @@ VSPackages sind in Visual Studio geladen werden, nur, wenn ihre Funktionalität 
   
  Sie können die <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A> -Methode zum Erzwingen eines VSPackages zu laden.  
   
--   Fügen Sie diesen Code in die <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> -Methode des VSPackages, die erzwingt, einem anderen VSPackage dass zu laden:  
+- Fügen Sie diesen Code in die <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> -Methode des VSPackages, die erzwingt, einem anderen VSPackage dass zu laden:  
   
     ```csharp  
     IVsShell shell = GetService(typeof(SVsShell)) as IVsShell;  
@@ -134,4 +129,3 @@ public override void Unregister(RegistrationContext context)
   
 ## <a name="see-also"></a>Siehe auch  
  [VSPackages](../extensibility/internals/vspackages.md)
-

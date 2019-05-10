@@ -6,16 +6,15 @@ dev_langs:
 - CSharp
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4fa897ff92cb6956bef59dfcb7a860b24d0d8bae
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: f5d65ff675329fdc714026ce6fe04ee3bd93086f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885743"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62568655"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Erstellen einer einfachen Datenanwendung mit WPF und Entity Framework 6
 
@@ -27,9 +26,9 @@ Dieser Artikel konzentriert sich auf das Verwenden von Datentools in Visual Stud
 
 Dieses Beispiel verwendet die SQL Server Express LocalDB und der Beispieldatenbank Northwind. Wenn Sie der ADO.NET-Datenanbieter für das betreffende Produkt auf Entity Framework unterstützt, sollte es für andere Produkte der SQL-Datenbank genauso gut funktionieren.
 
-1.  Wenn Sie SQL Server Express LocalDB nicht haben, installieren Sie es entweder über die [Downloadseite für SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), oder über die **Visual Studio-Installer**. In der **Visual Studio-Installer**, können Sie SQL Server Express LocalDB installieren, als Teil der **.NET Desktopentwicklung** Workload oder als eine einzelne Komponente.
+1. Wenn Sie SQL Server Express LocalDB nicht haben, installieren Sie es entweder über die [Downloadseite für SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), oder über die **Visual Studio-Installer**. In der **Visual Studio-Installer**, können Sie SQL Server Express LocalDB installieren, als Teil der **.NET Desktopentwicklung** Workload oder als eine einzelne Komponente.
 
-2.  Installieren der Northwind-Beispieldatenbank mit folgenden Schritten:
+2. Installieren der Northwind-Beispieldatenbank mit folgenden Schritten:
 
     1. Öffnen Sie in Visual Studio die **Objekt-Explorer von SQL Server** Fenster. (**Objekt-Explorer von SQL Server** installiert ist, als Teil der **datenspeicherung und-Verarbeitung** arbeitsauslastung in der **Visual Studio-Installer**.) Erweitern Sie die **SQL Server** Knoten. Mit der rechten Maustaste auf der LocalDB-Instanz, und wählen Sie **neue Abfrage**.
 
@@ -41,27 +40,27 @@ Dieses Beispiel verwendet die SQL Server Express LocalDB und der Beispieldatenba
 
        Klicken Sie nach kurzer Zeit die Ausführung die Abfrage abgeschlossen ist, und die Northwind-Datenbank wird erstellt.
 
-3.  [Hinzufügen von neuen Verbindungen](../data-tools/add-new-connections.md) für Northwind.
+3. [Hinzufügen von neuen Verbindungen](../data-tools/add-new-connections.md) für Northwind.
 
 ## <a name="configure-the-project"></a>Konfigurieren des Projekts
 
-1.  Wählen Sie in Visual Studio **Datei** > **neu** > **Projekt** und erstellen Sie ein neues C# WPF-Anwendung.
+1. Erstellen Sie in Visual Studio ein neues C# **WPF-App** Projekt.
 
-2.  Als Nächstes fügen Sie das NuGet-Paket für Entity Framework 6 hinzu. In **Projektmappen-Explorer**, wählen Sie den Projektknoten aus. Wählen Sie im Hauptmenü **Projekt** > **NuGet-Pakete verwalten**.
+2. Fügen Sie das NuGet-Paket für Entity Framework 6 hinzu. In **Projektmappen-Explorer**, wählen Sie den Projektknoten aus. Wählen Sie im Hauptmenü **Projekt** > **NuGet-Pakete verwalten**.
 
      ![Menüelement für die NuGet-Pakete verwalten](../data-tools/media/raddata_vs2015_manage_nuget_packages.png)
 
-3.  In der **NuGet Package Manager**, klicken Sie auf die **Durchsuchen** Link. Entitätsframework ist wahrscheinlich das oberste Paket in der Liste aus. Klicken Sie auf **installieren** im rechten Bereich und den aufforderungen folgen. Das Fenster "Ausgabe" erfahren Sie, wenn die Installation abgeschlossen ist.
+3. In der **NuGet Package Manager**, klicken Sie auf die **Durchsuchen** Link. Entitätsframework ist wahrscheinlich das oberste Paket in der Liste aus. Klicken Sie auf **installieren** im rechten Bereich und den aufforderungen folgen. Das Fenster "Ausgabe" erfahren Sie, wenn die Installation abgeschlossen ist.
 
      ![Entity Framework-NuGet-Pakets](../data-tools/media/raddata_vs2015_nuget_ef.png)
 
-4.  Sie können nun Visual Studio verwenden, um ein Modell basierend auf der Northwind-Datenbank zu erstellen.
+4. Sie können nun Visual Studio verwenden, um ein Modell basierend auf der Northwind-Datenbank zu erstellen.
 
 ## <a name="create-the-model"></a>Erstellen des Modells
 
-1. Mit der rechten Maustaste auf den Projektknoten im **Projektmappen-Explorer** , und wählen Sie **hinzufügen** > **neues Element**. Klicken Sie im linken Bereich unter der C# Knoten, wählen Sie **Daten** , und wählen Sie im mittleren Bereich **ADO.NET Entity Data Model**.
+1. Mit der rechten Maustaste auf den Projektknoten im **Projektmappen-Explorer** , und wählen Sie **hinzufügen** > **neues Element**. Wählen Sie im linken Bereich unter dem C#-Knoten **Daten** , und wählen Sie im mittleren Bereich **ADO.NET Entity Data Model**.
 
-   ![Entity Framework Model Elemente bei neuen Projekten](../data-tools/media/raddata-ef-new-project-item.png)
+   ![Neues Element zu Entity Framework-Modell](../data-tools/media/raddata-ef-new-project-item.png)
 
 2. Rufen Sie das Modell `Northwind_model` , und wählen Sie **OK**. Der **Assistent für Entity Data Model** wird geöffnet. Wählen Sie **EF Designer aus Datenbank** , und klicken Sie dann auf **Weiter**.
 
@@ -73,7 +72,7 @@ Dieses Beispiel verwendet die SQL Server Express LocalDB und der Beispieldatenba
 
     ![Wählen Sie Datenbankobjekte aus, für das Modell](../data-tools/media/raddata-choose-ef-objects.png)
 
-5. Der Assistent generiert die C# Klassen, die das Entity Framework-Modell darstellen. Die Klassen sind einfache alte C# Klassen und sie werden wir Databind der WPF-Benutzeroberfläche. Die *EDMX* Datei beschreibt die Beziehungen und anderen Metadaten, die Objekte in der Datenbank die Klassen zugeordnet. Die *TT* Dateien sind T4-Vorlagen, die den Code zu generieren, die für das Modell, und speichern Sie Änderungen an der Datenbank ausgeführt wird. Sehen Sie alle diese Dateien im **Projektmappen-Explorer** unter dem Knoten Northwind_model:
+5. Der Assistent generiert der c#-Klassen, die das Entity Framework-Modell darstellen. Die Klassen sind plain old C#-Klassen und sind wir Databind der WPF-Benutzeroberfläche. Die *EDMX* Datei beschreibt die Beziehungen und anderen Metadaten, die Objekte in der Datenbank die Klassen zugeordnet. Die *TT* Dateien sind T4-Vorlagen, die den Code zu generieren, die für das Modell, und speichern Sie Änderungen an der Datenbank ausgeführt wird. Sehen Sie alle diese Dateien im **Projektmappen-Explorer** unter dem Knoten Northwind_model:
 
       ![Projektmappen-Explorer EF-Modelldateien](../data-tools/media/raddata-solution-explorer-ef-model-files.png)
 
@@ -81,11 +80,11 @@ Dieses Beispiel verwendet die SQL Server Express LocalDB und der Beispieldatenba
 
 6. Die *TT* Dateien sind allgemein und müssen Sie ein Knotentyp mit der WPF-Datenbindung, funktioniert die ObservableCollections erfordert optimieren. In **Projektmappen-Explorer**, erweitern Sie den Northwind_model-Knoten, bis Sie gefunden *Northwind_model.tt*. (Stellen Sie sicher, dass Sie sind nicht in der *. Context.tt* -Datei, die direkt unterhalb der *EDMX* Datei.)
 
-   -   Ersetzen Sie die zwei Vorkommen des <xref:System.Collections.ICollection> mit <xref:System.Collections.ObjectModel.ObservableCollection%601>.
+   - Ersetzen Sie die zwei Vorkommen des <xref:System.Collections.ICollection> mit <xref:System.Collections.ObjectModel.ObservableCollection%601>.
 
-   -   Ersetzen Sie das erste Vorkommen des <xref:System.Collections.Generic.HashSet%601> mit <xref:System.Collections.ObjectModel.ObservableCollection%601> der Nähe von Zeile 51. Ersetzen Sie das zweite Vorkommen der HashSet nicht.
+   - Ersetzen Sie das erste Vorkommen des <xref:System.Collections.Generic.HashSet%601> mit <xref:System.Collections.ObjectModel.ObservableCollection%601> der Nähe von Zeile 51. Ersetzen Sie das zweite Vorkommen der HashSet nicht.
 
-   -   Ersetzen Sie dies das einzige Vorkommen <xref:System.Collections.Generic> (Nähe von Zeile 431) mit <xref:System.Collections.ObjectModel>.
+   - Ersetzen Sie dies das einzige Vorkommen <xref:System.Collections.Generic> (Nähe von Zeile 431) mit <xref:System.Collections.ObjectModel>.
 
 7. Drücken Sie **STRG**+**UMSCHALT**+**B** zum Erstellen des Projekts. Wenn der Build abgeschlossen ist, sind die Modellklassen des Datenquellen-Assistenten angezeigt.
 
@@ -95,17 +94,17 @@ Jetzt können Sie dieses Modell auf der Seite "XAML" einbinden, sodass Sie anzuz
 
 Es ist möglich, einen eigenen Databinding-Code schreiben, aber es ist viel einfacher, Visual Studio, die es für Sie erledigen können.
 
-1.  Wählen Sie im Hauptmenü **Projekt** > **neue Datenquelle hinzufügen** um die **Assistenten zur Datenquellenkonfiguration**. Wählen Sie **Objekt** , da Sie auf die Modellklassen, mit der Datenbank nicht binden:
+1. Wählen Sie im Hauptmenü **Projekt** > **neue Datenquelle hinzufügen** um die **Assistenten zur Datenquellenkonfiguration**. Wählen Sie **Objekt** , da Sie auf die Modellklassen, mit der Datenbank nicht binden:
 
      ![Datenquellen-Assistenten mit Objektquelle-Konfiguration](../data-tools/media/raddata-data-source-configuration-wizard-with-object-source.png)
 
-2.  Wählen Sie **Kunden**. (Aus der Orders-Navigationseigenschaft im Hinblick auf werden Quellen für Aufträge, die automatisch generiert.)
+2. Wählen Sie **Kunden**. (Aus der Orders-Navigationseigenschaft im Hinblick auf werden Quellen für Aufträge, die automatisch generiert.)
 
      ![Fügen Sie Entitätsklassen als Datenquellen hinzu.](../data-tools/media/raddata-add-entity-classes-as-data-sources.png)
 
-3.  Klicken Sie auf **Fertig stellen**.
+3. Klicken Sie auf **Fertig stellen**.
 
-4.  Navigieren Sie zu *"MainWindow.xaml"* in der Codeansicht. Die XAML ist für die Zwecke dieses Beispiels einfache bewusst. Ändern Sie den Titel der MainWindow-Element in einen aussagekräftigeren und erhöhen Sie seine Höhe und Breite auf 600 x 800-vorerst zu. Sie können es später jederzeit ändern. Fügen Sie nun diese drei Zeilendefinitionen Hauptraster wird angezeigt, die eine Zeile für die Navigationsschaltflächen, für die Details des Kunden und eine für das Raster, das zeigt, deren Bestellungen hinzu:
+4. Navigieren Sie zu *"MainWindow.xaml"* in der Codeansicht. Die XAML ist für die Zwecke dieses Beispiels einfache bewusst. Ändern Sie den Titel der MainWindow-Element in einen aussagekräftigeren und erhöhen Sie seine Höhe und Breite auf 600 x 800-vorerst zu. Sie können es später jederzeit ändern. Fügen Sie nun diese drei Zeilendefinitionen Hauptraster wird angezeigt, die eine Zeile für die Navigationsschaltflächen, für die Details des Kunden und eine für das Raster, das zeigt, deren Bestellungen hinzu:
 
     ```xaml
     <Grid.RowDefinitions>
@@ -115,7 +114,7 @@ Es ist möglich, einen eigenen Databinding-Code schreiben, aber es ist viel einf
         </Grid.RowDefinitions>
     ```
 
-5.  Öffnen Sie nun *"MainWindow.xaml"* , damit Sie es im Designer anzeigen. Dies bewirkt, dass die **Datenquellen** Fenster als Option auf den Rand der Visual Studio-Fenster angezeigt werden die **Toolbox**. Klicken Sie auf die Registerkarte, um das Fenster öffnen, oder klicken andernfalls **UMSCHALT**+**Alt**+**D** oder **Ansicht**  >  **Andere Windows** > **Datenquellen**. Wir werden auf jede Eigenschaft in der Kunden-Klasse in einem eigenen benutzerdefinierten Text-Feld angezeigt. Klicken Sie zunächst auf den Pfeil in der **Kunden** Kombinationsfeld und **Details**. Klicken Sie dann ziehen Sie den Knoten auf den mittleren Teil der Entwurfsoberfläche, damit der Designer weiß, dass Sie in der mittleren Zeile wechseln soll. Wenn Sie es vergessen haben, können Sie die Zeile zu einem späteren Zeitpunkt manuell in die XAML angeben. Standardmäßig werden die Steuerelemente vertikal in einem Grid-Element platziert, aber an diesem Punkt können angeordnet werden, werden beliebig auf dem Formular. Beispielsweise kann es sinnvoll Platzieren der **Namen** Textfeld am oberen Rand oberhalb der Adresse. Die beispielanwendung für diesen Artikel ordnet die Felder, und diese in zwei Spalten sortiert werden.
+5. Öffnen Sie nun *"MainWindow.xaml"* , damit Sie es im Designer anzeigen. Dies bewirkt, dass die **Datenquellen** Fenster als Option auf den Rand der Visual Studio-Fenster angezeigt werden die **Toolbox**. Klicken Sie auf die Registerkarte, um das Fenster öffnen, oder klicken andernfalls **UMSCHALT**+**Alt**+**D** oder **Ansicht**  >  **Andere Windows** > **Datenquellen**. Wir werden auf jede Eigenschaft in der Kunden-Klasse in einem eigenen benutzerdefinierten Text-Feld angezeigt. Klicken Sie zunächst auf den Pfeil in der **Kunden** Kombinationsfeld und **Details**. Klicken Sie dann ziehen Sie den Knoten auf den mittleren Teil der Entwurfsoberfläche, damit der Designer weiß, dass Sie in der mittleren Zeile wechseln soll. Wenn Sie es vergessen haben, können Sie die Zeile zu einem späteren Zeitpunkt manuell in die XAML angeben. Standardmäßig werden die Steuerelemente vertikal in einem Grid-Element platziert, aber an diesem Punkt können angeordnet werden, werden beliebig auf dem Formular. Beispielsweise kann es sinnvoll Platzieren der **Namen** Textfeld am oberen Rand oberhalb der Adresse. Die beispielanwendung für diesen Artikel ordnet die Felder, und diese in zwei Spalten sortiert werden.
 
      ![Kunden datenquellenbindung in einzelne Steuerelemente](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png)
 
@@ -125,11 +124,11 @@ Es ist möglich, einen eigenen Databinding-Code schreiben, aber es ist viel einf
     <Grid DataContext="{StaticResource customerViewSource}">
     ```
 
-6.  Wenn ein Kunde in der oberen Hälfte des Fensters sichtbar ist, möchten Sie ihre Aufträge in der unteren Hälfte finden Sie unter. Zeigen Sie die Aufträge in einem einzelnen Grid-Steuerelement. Für die Master / Detail-Datenbindung wie erwartet funktioniert ist es wichtig, dass Sie der Orders-Eigenschaft in der Kunden-Klasse, nicht auf den separaten Orders-Knoten binden. Ziehen Sie die Order-Eigenschaft der Kunden-Klasse auf der unteren Hälfte des Formulars, damit sie in Zeile 2, fügt der Designer:
+6. Wenn ein Kunde in der oberen Hälfte des Fensters sichtbar ist, möchten Sie ihre Aufträge in der unteren Hälfte finden Sie unter. Zeigen Sie die Aufträge in einem einzelnen Grid-Steuerelement. Für die Master / Detail-Datenbindung wie erwartet funktioniert ist es wichtig, dass Sie der Orders-Eigenschaft in der Kunden-Klasse, nicht auf den separaten Orders-Knoten binden. Ziehen Sie die Order-Eigenschaft der Kunden-Klasse auf der unteren Hälfte des Formulars, damit sie in Zeile 2, fügt der Designer:
 
      ![Ziehen Sie Klassen von Bestellungen als Raster](../data-tools/media/raddata-drag-orders-classes-as-grid.png)
 
-7.  Visual Studio verfügt über den Bindungscode generiert, die die UI-Steuerelemente auf Ereignisse in das Modell stellt eine Verbindung her. Sie müssen lediglich um einige Daten zu sehen, lediglich zum Schreiben von Code zum Auffüllen des Modells. Navigieren Sie zunächst auf *"MainWindow.Xaml.cs"* und fügen Sie einen Datenmember der MainWindow-Klasse für den Datenkontext. Dieses Objekt, das für Sie generiert wurde, fungiert etwa ein Steuerelement, das verfolgt Änderungen und Ereignisse im Modell. Sie müssen auch die Initialisierung Konstruktorlogik hinzufügen. Der Anfang der Klasse sollte wie folgt aussehen:
+7. Visual Studio verfügt über den Bindungscode generiert, die die UI-Steuerelemente auf Ereignisse in das Modell stellt eine Verbindung her. Sie müssen lediglich um einige Daten zu sehen, lediglich zum Schreiben von Code zum Auffüllen des Modells. Navigieren Sie zunächst auf *"MainWindow.Xaml.cs"* und fügen Sie einen Datenmember der MainWindow-Klasse für den Datenkontext. Dieses Objekt, das für Sie generiert wurde, fungiert etwa ein Steuerelement, das verfolgt Änderungen und Ereignisse im Modell. Sie müssen auch die Initialisierung Konstruktorlogik hinzufügen. Der Anfang der Klasse sollte wie folgt aussehen:
 
      [!code-csharp[MainWindow#1](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#1)]
 
@@ -143,7 +142,7 @@ Es ist möglich, einen eigenen Databinding-Code schreiben, aber es ist viel einf
 
      [!code-csharp[Window_Loaded#2](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#2)]
 
-8.  Drücken Sie **F5**. Sie sollten die Details für den ersten Kunden anzeigen, die in die CollectionViewSource abgerufen wurden. Sie sollte auch ihre Bestellungen im Datenraster angezeigt werden. Die Formatierung nicht besonders beeindruckend, lassen Sie uns, die Sie beheben. Sie können auch eine Möglichkeit, die anderen Datensätze anzuzeigen, und führen Sie grundlegende CRUD-Vorgänge erstellen.
+8. Drücken Sie **F5**. Sie sollten die Details für den ersten Kunden anzeigen, die in die CollectionViewSource abgerufen wurden. Sie sollte auch ihre Bestellungen im Datenraster angezeigt werden. Die Formatierung nicht besonders beeindruckend, lassen Sie uns, die Sie beheben. Sie können auch eine Möglichkeit, die anderen Datensätze anzuzeigen, und führen Sie grundlegende CRUD-Vorgänge erstellen.
 
 ## <a name="adjust-the-page-design-and-add-grids-for-new-customers-and-orders"></a>Passen Sie das Design der Seite und Hinzufügen von datenrastern für neue Kunden und Bestellungen
 
@@ -198,7 +197,7 @@ Ersetzen Sie als Nächstes die gesamte äußere Raster mit diesem Markup:
          <Label Content="Contact Name:" Grid.Row="2" Style="{StaticResource Label}"/>
          <TextBox x:Name="contactNameTextBox" Grid.Row="2" Style="{StaticResource CustTextBox}"
                   Text="{Binding ContactName, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
-         <Label Content="Contact Title:" Grid.Row="3" Style="{StaticResource Label}"/>
+         <Label Content="Contact title:" Grid.Row="3" Style="{StaticResource Label}"/>
          <TextBox x:Name="contactTitleTextBox" Grid.Row="3" Style="{StaticResource CustTextBox}"
                   Text="{Binding ContactTitle, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
          <Label Content="Address:" Grid.Row="4" Style="{StaticResource Label}"/>
@@ -245,7 +244,7 @@ Ersetzen Sie als Nächstes die gesamte äußere Raster mit diesem Markup:
          <Label Content="Contact Name:" Grid.Row="2" Style="{StaticResource Label}"/>
          <TextBox x:Name="add_contactNameTextBox" Grid.Row="2" Style="{StaticResource CustTextBox}"
                   Text="{Binding ContactName, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
-         <Label Content="Contact Title:" Grid.Row="3" Style="{StaticResource Label}"/>
+         <Label Content="Contact title:" Grid.Row="3" Style="{StaticResource Label}"/>
          <TextBox x:Name="add_contactTitleTextBox" Grid.Row="3" Style="{StaticResource CustTextBox}"
                   Text="{Binding ContactTitle, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
          <Label Content="Address:" Grid.Row="4" Style="{StaticResource Label}"/>
@@ -358,7 +357,7 @@ Es gibt die Befehlslogik statt vier Teilen: (1) die Befehle, (2) der Bindungen, 
 
 ### <a name="add-commands-bindings-and-buttons-in-xaml"></a>Hinzufügen von Befehlen, Bindungen und Schaltflächen in XAML
 
-1.  Fügen Sie zunächst die Befehle in der *"MainWindow.xaml"* Datei innerhalb der `Windows.Resources` Element:
+1. Fügen Sie zunächst die Befehle in der *"MainWindow.xaml"* Datei innerhalb der `Windows.Resources` Element:
 
     ```xaml
     <RoutedUICommand x:Key="FirstCommand" Text="First"/>
@@ -372,7 +371,7 @@ Es gibt die Befehlslogik statt vier Teilen: (1) die Befehle, (2) der Bindungen, 
     <RoutedUICommand x:Key="CancelCommand" Text="Cancel"/>
     ```
 
-2.  Ordnet ein CommandBinding-Element ein `RoutedUICommand` Ereignis an eine Methode im Code im Hintergrund. Fügen Sie Folgendes `CommandBindings` Element an, nach der `Windows.Resources` schließendes Tag:
+2. Ordnet ein CommandBinding-Element ein `RoutedUICommand` Ereignis an eine Methode im Code im Hintergrund. Fügen Sie Folgendes `CommandBindings` Element an, nach der `Windows.Resources` schließendes Tag:
 
     ```xaml
     <Window.CommandBindings>
@@ -388,7 +387,7 @@ Es gibt die Befehlslogik statt vier Teilen: (1) die Befehle, (2) der Bindungen, 
     </Window.CommandBindings>
     ```
 
-3.  Fügen Sie jetzt die `StackPanel` mit der Navigation hinzufügen, löschen und aktualisieren Sie die Schaltflächen. Fügen Sie zunächst diesen Stil `Windows.Resources`:
+3. Fügen Sie jetzt die `StackPanel` mit der Navigation hinzufügen, löschen und aktualisieren Sie die Schaltflächen. Fügen Sie zunächst diesen Stil `Windows.Resources`:
 
     ```xaml
     <Style x:Key="NavButton" TargetType="{x:Type Button}" BasedOn="{x:Null}">

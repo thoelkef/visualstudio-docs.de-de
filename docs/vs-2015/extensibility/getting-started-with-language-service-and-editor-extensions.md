@@ -1,26 +1,21 @@
 ---
 title: Erste Schritte mit Sprachdienst und Erweiterungen des Editors | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f09056d184256e2d62387af08c61186c6ff57c02
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a29bb95b4b3e05097f2bf095e9312fe0704c31bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735210"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421127"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Erste Schritte mit Erweiterungen des Sprachdiensts und des Editors
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ Editor-Erweiterungen können Sie Language-Service-Features wie z. B. Gliederung,
  Verwenden Sie zum Einstieg das Schreiben von Erweiterungen des Editors die Editor-Projektvorlagen, die als Teil der Visual Studio SDK installiert sind. Visual Studio SDK ist eine herunterladbare Reihe von Tools, die zum Entwickeln von Visual Studio-Erweiterungen mit VSPackages oder mit dem Managed Extensibility Framework (MEF) erleichtern.  
   
 > [!NOTE]
->  Weitere Informationen zu Visual Studio SDK, finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+> Weitere Informationen zu Visual Studio SDK, finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
  Es wird empfohlen, dass die folgenden Konzepte und Technologien erfahren, bevor Sie Ihre eigenen Erweiterungen des Editors schreiben.  
   
@@ -41,7 +36,7 @@ Editor-Erweiterungen können Sie Language-Service-Features wie z. B. Gliederung,
  Visual Studio-Editor verwendet das Managed Extensibility Framework (MEF) zum Verwalten von zugehörigen Komponenten und -Erweiterungen. Das MEF kann Entwickler weitere Erweiterungen für eine hostanwendung, z. B. Visual Studio auf einfache Weise erstellen. Dieses Framework definieren Sie eine Erweiterung gemäß einem MEF-Vertrag und exportieren Sie es als Teil einer MEF-Komponente. Die hostanwendung verwaltet die Komponenten, indem sie suchen, deren Registrierung und stellt sicher, dass sie auf den richtigen Kontext angewendet werden.  
   
 > [!NOTE]
->  Weitere Informationen zu den MEF im Editor, finden Sie unter [Managed Extensibility Framework im Editor](../extensibility/managed-extensibility-framework-in-the-editor.md).  
+> Weitere Informationen zu den MEF im Editor, finden Sie unter [Managed Extensibility Framework im Editor](../extensibility/managed-extensibility-framework-in-the-editor.md).  
   
 ## <a name="visual-studio-editor-extension-points-and-extensions"></a>Visual Studio-Editor-Erweiterungspunkte und -Erweiterungen  
  Editor-Erweiterungspunkte sind MEF-Komponenten, die Sie anpassen und erweitern können. In einigen Fällen erweitern Sie den Erweiterungspunkt durch Implementieren einer Schnittstelle und ihn zusammen mit den richtigen Metadaten zu exportieren. In anderen Fällen Sie nur eine Erweiterung zu deklarieren und exportieren Sie es als einen bestimmten Typ.  
@@ -66,12 +61,12 @@ Editor-Erweiterungen können Sie Language-Service-Features wie z. B. Gliederung,
  Wenn Sie eine Erweiterung auf einem Computer installieren, enthalten Sie die Binärdateien und das Manifest in einem Unterordner des Ordners, der in Visual Studio bekannt ist.  
   
 > [!WARNING]
->  Sie müssen nicht die Details der Manifeste und Standorten für die Bereitstellung sorgen, wenn Sie eine der Vorlagen-Editor-Erweiterungen verwenden, die in Visual Studio enthalten sind. Die Vorlagen enthalten alles, was zu registrieren und Bereitstellen eine Erweiterung erforderlich ist.  
+> Sie müssen nicht die Details der Manifeste und Standorten für die Bereitstellung sorgen, wenn Sie eine der Vorlagen-Editor-Erweiterungen verwenden, die in Visual Studio enthalten sind. Die Vorlagen enthalten alles, was zu registrieren und Bereitstellen eine Erweiterung erforderlich ist.  
   
 ## <a name="running-extensions-in-the-experimental-instance"></a>Ausführen von Erweiterungen in der experimentellen Instanz  
  Sie können Ihre funktionierende Version von Visual Studio isolieren, während der Entwicklung einer Erweiterungs durch die Bereitstellung im folgenden experimentellen Ordner (unter Windows Vista und Windows 7):  
   
- *%LocalAppData%* \VisualStudio\10.0Exp\Extensions\\*Unternehmen*\\*ExtensionID*  
+ *%LOCALAPPDATA%* \VisualStudio\10.0Exp\Extensions\\*Company*\\*ExtensionID*  
   
  wo *%LocalAppData%* ist der Name des angemeldeten Benutzers *Unternehmen* ist der Name des Unternehmens, das die Erweiterung besitzt und *ExtensionID* ist die ID der Erweiterung.  
   
@@ -89,10 +84,9 @@ Editor-Erweiterungen können Sie Language-Service-Features wie z. B. Gliederung,
   
  Sie können auch Editor MEF-Komponenten aus einer Erweiterung für Visual Studio-Paket erstellen. Finden Sie unter den folgenden exemplarischen Vorgehensweisen, Details:  
   
--   [Exemplarische Vorgehensweise: Verwenden eines Shellbefehls mit einer Editor-Erweiterung](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
+- [Exemplarische Vorgehensweise: Verwenden eines Shellbefehls mit einer Editor-Erweiterung](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
   
--   [Exemplarische Vorgehensweise: Verwenden einer Tastenkombination mit einer Editor-Erweiterung](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
+- [Exemplarische Vorgehensweise: Verwenden einer Tastenkombination mit einer Editor-Erweiterung](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erweiterungspunkte für den Sprachdienst und den Editor](../extensibility/language-service-and-editor-extension-points.md)
-

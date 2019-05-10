@@ -1,14 +1,9 @@
 ---
 title: -Out („devenv.exe“) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - errors [Visual Studio], builds
 - Devenv, /out switch
@@ -23,18 +18,17 @@ ms.assetid: 9002d8c2-36d4-451c-b489-8f01932f31f7
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: cbf9608bc4f476599676b27f12bc125fd170fc71
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e1f20b446d355ea0cbc6700de5f2e6f79de51d09
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211002"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647060"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Gibt eine Datei an, die Fehler speichern und anzeigen soll, wenn Sie eine Projektmappe ausführen, erstellen, erneut erstellen oder bereitstellen.  
   
 ## <a name="syntax"></a>Syntax  
@@ -47,7 +41,7 @@ devenv /out FileName
  `FileName`  
  Erforderlich. Der Pfad und der Name der Datei, die beim Erstellen einer ausführbaren Datei Fehler empfangen soll.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Wenn ein nicht vorhandener Dateiname angegeben wird, wird die Datei automatisch erstellt. Wenn die Datei bereits vorhanden ist, werden die Ergebnisse an die vorhandenen Inhalte der Datei angefügt.  
   
  Buildfehler in der Befehlszeile werden im **Befehlsfenster** und der Solution Builder-Ansicht des **Ausgabefensters** angezeigt. Diese Option erweist sich als nützlich, wenn Sie unbeaufsichtigte Builds ausführen und die Ergebnisse benötigen.  
@@ -65,6 +59,3 @@ devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Proje
  [/Build („devenv.exe“)](../../ide/reference/build-devenv-exe.md)   
  [/Rebuild („devenv.exe“)](../../ide/reference/rebuild-devenv-exe.md)   
  [/Deploy (devenv.exe)](../../ide/reference/deploy-devenv-exe.md)
-
-
-

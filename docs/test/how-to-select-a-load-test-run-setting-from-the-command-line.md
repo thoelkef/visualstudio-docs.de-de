@@ -8,14 +8,13 @@ helpviewer_keywords:
 ms.assetid: 175d1d58-f09a-4449-b132-a29a394a7c8e
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 47caaa39a1783588994277ba079e64e353a167a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 466ea9a7e0b877af55219be497eefde963e80853
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949871"
 ---
 # <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>Vorgehensweise: Auswählen einer Testlaufeinstellung für Auslastungstests über die Befehlszeile
 
@@ -27,11 +26,11 @@ Wenn der Auslastungstest nur eine Testlaufeinstellung enthält, handelt es sich 
 
 ## <a name="to-change-the-run-setting-from-the-command-line"></a>So ändern Sie die Testlaufeinstellung in der Befehlszeile
 
-1.  Wenn Sie in der Befehlszeile andere Laufzeiteinstellungen eingeben möchten, um die Kontextparameterstrategie zu nutzen, verwenden Sie folgenden Befehl:
+1. Wenn Sie in der Befehlszeile andere Laufzeiteinstellungen eingeben möchten, um die Kontextparameterstrategie zu nutzen, verwenden Sie folgenden Befehl:
 
     `Set Test.UseRunSetting= CorporateStagingWebServer`
 
-2.  Führen Sie den Auslastungstest mithilfe von "mstest" aus:
+2. Führen Sie den Auslastungstest mithilfe von "mstest" aus:
 
     `mstest /testcontainer:loadtest1.loadtest`
 

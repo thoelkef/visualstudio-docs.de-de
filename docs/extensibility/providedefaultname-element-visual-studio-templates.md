@@ -10,75 +10,73 @@ helpviewer_keywords:
 ms.assetid: 7b0e7b20-fd6b-42e2-81d0-e5100cea0528
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9c9c7180b4da2d2d43523a278a3ce803ca37584
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 056403fd0f1c90f53105c84f30fc2be2383900bf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841923"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433434"
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>ProvideDefaultName-Element (Visual Studio-Vorlagen)
-Gibt an, ob die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projektsystem generiert einen Standardnamen für die Vorlage in der **neues Element hinzufügen** oder **neues Projekt** Dialogfeld.  
-  
- \<VSTemplate>  
- \<TemplateData>  
- \<ProvideDefaultName >  
-  
-## <a name="syntax"></a>Syntax  
-  
-```xml  
-<ProvideDefaultName> true/false </ProvideDefaultName>  
-```  
-  
-## <a name="attributes-and-elements"></a>Attribute und Elemente  
- In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
-  
-### <a name="attributes"></a>Attribute  
- Keine  
-  
-### <a name="child-elements"></a>Untergeordnete Elemente  
- Keine  
-  
-### <a name="parent-elements"></a>Übergeordnete Elemente  
-  
-|Element|Beschreibung|  
-|-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|  
-  
-## <a name="text-value"></a>Textwert  
- Ein Textwert ist erforderlich.  
-  
- Der Text muss entweder `true` oder `false`, der angibt, ob ein Standardname für die Vorlage generiert die **neues Element hinzufügen** oder **neues Projekt** Dialogfeld.  
-  
-## <a name="remarks"></a>Hinweise  
- `ProvideDefaultName` ist ein optionales Element. Der Standardwert ist `true`.  
-  
- Wenn die `ProvideDefaultName` Element `false`, wird die **Namen** Felder des der **neues Element hinzufügen** und **neues Projekt** Dialogfelder enthalten den Wert `<Enter_name>`.  
-  
+Gibt an, ob die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projektsystem generiert einen Standardnamen für die Vorlage in der **neues Element hinzufügen** oder **neues Projekt** Dialogfeld.
+
+ \<VSTemplate > \<TemplateData > \<ProvideDefaultName >
+
+## <a name="syntax"></a>Syntax
+
+```xml
+<ProvideDefaultName> true/false </ProvideDefaultName>
+```
+
+## <a name="attributes-and-elements"></a>Attribute und Elemente
+ In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
+
+### <a name="attributes"></a>Attribute
+ Keine
+
+### <a name="child-elements"></a>Untergeordnete Elemente
+ Keine
+
+### <a name="parent-elements"></a>Übergeordnete Elemente
+
+|Element|Beschreibung|
+|-------------|-----------------|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
+
+## <a name="text-value"></a>Textwert
+ Ein Textwert ist erforderlich.
+
+ Der Text muss entweder `true` oder `false`, der angibt, ob ein Standardname für die Vorlage generiert die **neues Element hinzufügen** oder **neues Projekt** Dialogfeld.
+
+## <a name="remarks"></a>Hinweise
+ `ProvideDefaultName` ist ein optionales Element. Der Standardwert ist `true`.
+
+ Wenn die `ProvideDefaultName` Element `false`, wird die **Namen** Felder des der **neues Element hinzufügen** und **neues Projekt** Dialogfelder enthalten den Wert `<Enter_name>`.
+
  Verwenden der [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) Elements, geben Sie den Standardnamen, der das Projekt oder Element in der **neues Element hinzufügen** und **neues Projekt** Dialogfelder. Bei den Wert des der `ProvideDefaultName` Element ist `true`, ausgelassener der `DefaultName` -Element für Projekte, füllt das Dialogfeld mit der Name der Vorlage, d. h. den Wert aus der [Namen](../extensibility/name-element-visual-studio-templates.md) Element.
-  
-## <a name="example"></a>Beispiel  
- Im folgenden Codebeispiel wird die `ProvideDefaultName` Element `false`.  
-  
-```  
-<VSTemplate Type="Item" Version="3.0.0"  
-    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-    <TemplateData>  
-        <Name>MyClass</Name>  
-        <Description>My custom C# class.</Description>  
-        <Icon>Icon.ico</Icon>  
-        <ProjectType>CSharp</ProjectType>  
-        <ProvideDefaultName>false</ProvideDefaultName>  
-    </TemplateData>  
-    <TemplateContent>  
-        <ProjectItem>MyClass.cs</ProjectItem>  
-    </TemplateContent>  
-</VSTemplate>  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [Schemareferenz zu Visual Studio-Vorlage](../extensibility/visual-studio-template-schema-reference.md)   
- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+
+## <a name="example"></a>Beispiel
+ Im folgenden Codebeispiel wird die `ProvideDefaultName` Element `false`.
+
+```
+<VSTemplate Type="Item" Version="3.0.0"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>MyClass</Name>
+        <Description>My custom C# class.</Description>
+        <Icon>Icon.ico</Icon>
+        <ProjectType>CSharp</ProjectType>
+        <ProvideDefaultName>false</ProvideDefaultName>
+    </TemplateData>
+    <TemplateContent>
+        <ProjectItem>MyClass.cs</ProjectItem>
+    </TemplateContent>
+</VSTemplate>
+```
+
+## <a name="see-also"></a>Siehe auch
+- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
+- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

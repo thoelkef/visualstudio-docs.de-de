@@ -1,14 +1,9 @@
 ---
 title: 'CA1903: Nur API aus Zielframework verwenden | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UseOnlyAPIFromTargetedFramework
 - CA1903
@@ -20,17 +15,17 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1c23b25029775cd3abca84e695c50b5a0fdf68cf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 146563dfa358367e7c22f8ad37564b85d64eaf1d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191570"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647154"
 ---
-# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Nur API aus Zielframework verwenden
+# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Nur API aus Zielframework verwenden.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Dokumentation für Visual Studio 2017 finden Sie unter [CA1903: nur API aus Zielframework verwenden](https://docs.microsoft.com/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework) auf docs.microsoft.com.  
+Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1903: Nur API aus Zielframework verwenden](https://docs.microsoft.com/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework).  
   
 |||  
 |-|-|  
@@ -61,7 +56,7 @@ Die neueste Dokumentation für Visual Studio 2017 finden Sie unter [CA1903: nur 
  Um die Abhängigkeit des Servicepacks zu entfernen, entfernen Sie alle Verwendungen des neuen Member oder Typ. Ist dies eine absichtliche Abhängigkeit, die Warnung unterdrücken oder diese Regel deaktivieren.  
   
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
- Unterdrücken Sie eine Warnung dieser Regel nicht, wenn dies keine absichtliche Abhängigkeit des angegebenen Servicepacks war. In diesem Fall kann Ihre Anwendung nicht auf Systemen ausgeführt werden soll, denen dieses Servicepack installiert. Unterdrücken Sie die Warnung oder deaktivieren Sie diese Regel, wenn dies eine absichtliche Abhängigkeit war.  
+ Unterdrücken Sie eine Warnung dieser Regel nicht, wenn dies keine absichtliche Abhängigkeit des angegebenen Servicepacks war. In diesem Fall kann Ihre Anwendung nicht auf Systemen ausgeführt werden soll, denen dieses Servicepack installiert. Unterdrücken Sie die Warnung oder diese Regel deaktivieren Sie, wenn dies beabsichtigt abhängig war.  
   
 ## <a name="example"></a>Beispiel  
  Das folgende Beispiel zeigt eine Klasse, die den Datentyp "DateTimeOffset" verwendet, die nur in .NET 2.0 Service Pack 1 verfügbar ist. Dieses Beispiel erfordert, dass .NET Framework 2.0 in der Dropdownliste das Zielframework in den Projekteigenschaften ausgewählt wurde.  
@@ -76,4 +71,3 @@ Die neueste Dokumentation für Visual Studio 2017 finden Sie unter [CA1903: nur 
 ## <a name="see-also"></a>Siehe auch  
  [Portabilitätswarnungen](../code-quality/portability-warnings.md)   
  [Festlegen einer bestimmten .NET-Framework-Version](../ide/targeting-a-specific-dotnet-framework-version.md)
-

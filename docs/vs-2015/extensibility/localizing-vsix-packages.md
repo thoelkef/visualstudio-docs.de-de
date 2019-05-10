@@ -1,14 +1,9 @@
 ---
 title: Lokalisieren von VSIX-Paketen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - localize package
 - localize extension
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 10e80b13-b39e-466c-a7c8-774a862355af
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2f6bc666e244fed2bc2922ce4878434730a643e5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6143b21884bc92ac79ae0fd7292a11780fec4478
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750589"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439756"
 ---
 # <a name="localizing-vsix-packages"></a>Lokalisieren von VSIX-Paketen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,9 +31,9 @@ Sie können ein VSIX-Paket lokalisieren, indem eine Extension.vsixlangpack-Datei
   
  MyExtension.dll  
   
- "Extension.vsixmanifest"  
+ Extension.vsixmanifest  
   
- [Content_Types] .xml  
+ [Content_Types].xml  
   
  es-ES  
   
@@ -49,7 +44,7 @@ Sie können ein VSIX-Paket lokalisieren, indem eine Extension.vsixlangpack-Datei
  Extension.vsixlangpack  
   
 > [!NOTE]
->  Die VSIX-unterstützt-Projektvorlagen in der [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] generieren Sie ein VSIX-Manifest, und nennen Sie sie "Source.Extension.vsixmanifest". Wenn Visual Studio das Projekt erstellt wurde, kopiert er den Inhalt der Datei in "Extension.vsixmanifest" im VSIX-Paket.  
+> Die VSIX-unterstützt-Projektvorlagen in der [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] generieren Sie ein VSIX-Manifest, und nennen Sie sie "Source.Extension.vsixmanifest". Wenn Visual Studio das Projekt erstellt wurde, kopiert er den Inhalt der Datei in "Extension.vsixmanifest" im VSIX-Paket.  
   
 ## <a name="the-extensionvsixlangpack-file"></a>Die Extension.vsixlangpack-Datei  
  Die Extension.vsixlangpack-Datei der [Schema für das VSIX-Sprachpaket](../extensibility/vsx-language-pack-schema-reference.md). Dieses Schema verfügt über eine [VSIXLanguagePack](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md) Root-Element, und diese vier untergeordneten Elemente: [LocalizedName](../extensibility/localizedname-element-vsix-language-pack-schema.md), [LocalizedDescription](../extensibility/localizeddescription-element-vsix-language-pack-schema.md), [MoreInfoURL](../extensibility/moreinfourl-element-vsix-language-pack-schema.md), und [Lizenz](../extensibility/license-element-vsix-language-pack-schema.md). Diese untergeordneten Elemente entsprechen den `Name`, `Description`, `MoreInfoURL`, und `License` untergeordnete Elemente des der `Identifier` -Element der Datei "Extension.vsixmanifest".  
@@ -58,9 +53,9 @@ Sie können ein VSIX-Paket lokalisieren, indem eine Extension.vsixlangpack-Datei
   
 #### <a name="to-set-the-include-in-vsix-property"></a>Die Include in VSIX-Eigenschaft festlegen  
   
-1.  In **Projektmappen-Explorer**mit der rechten Maustaste auf die Extension.vsixlangpack-Datei, und klicken Sie dann auf **Eigenschaften**.  
+1. In **Projektmappen-Explorer**mit der rechten Maustaste auf die Extension.vsixlangpack-Datei, und klicken Sie dann auf **Eigenschaften**.  
   
-2.  Klicken Sie im Eigenschaftenraster auf **Include in VSIX-Datei**, und legen Sie dessen Wert auf `true`.  
+2. Klicken Sie im Eigenschaftenraster auf **Include in VSIX-Datei**, und legen Sie dessen Wert auf `true`.  
   
 ## <a name="example"></a>Beispiel  
   
@@ -101,4 +96,3 @@ Sie können ein VSIX-Paket lokalisieren, indem eine Extension.vsixlangpack-Datei
  [VSIX-LanguagePack-Element](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)   
  [Anatomie eines VSIX-Pakets](../extensibility/anatomy-of-a-vsix-package.md)   
  [VSIX-Projektvorlage](../extensibility/vsix-project-template.md)
-

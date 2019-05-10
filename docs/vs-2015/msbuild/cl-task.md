@@ -1,14 +1,9 @@
 ---
 title: CL-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLCompilerTool.UseUnicodeForAssemblerListing
 - vc.task.cl
@@ -26,18 +21,17 @@ ms.assetid: 651ba971-b755-4f03-a549-4816beb3cc0d
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fb9b6924f5d11e3d857308e3a1bcf1e1644f78bc
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e8666f990265a1fcf9947ac5c7c18c7489a6bdb8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220247"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653592"
 ---
 # <a name="cl-task"></a>CL-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführbare Dateien (EXE), Dynamic Link Library-Dateien (DLL) oder Codemoduldateien (NETMODULE). Weitere Informationen finden Sie unter [Compileroptionen](http://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c).  
   
 ## <a name="parameters"></a>Parameter  
@@ -59,7 +53,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Weitere Informationen finden Sie unter [Compileroptionen](http://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c).  
   
-- **AdditionalUsingDirectories** Optionaler String []-Parameter.  
+- **AdditionalUsingDirectories** Optionaler String[]-Parameter.  
   
    Gibt ein Verzeichnis an, das der Compiler durchsucht, um Dateiverweise aufzulösen, die an die **#using**-Anweisung übergeben wurden.  
   
@@ -807,10 +801,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Weitere Informationen finden Sie unter den Parametern **TLogReadFiles** und **TLogWriteFiles** in dieser Tabelle.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
   
 ## <a name="see-also"></a>Siehe auch  
  [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)
-
-
-

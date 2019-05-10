@@ -1,8 +1,7 @@
 ---
-title: IEnumDebugStackFrames-Schnittstelle | Microsoft Docs
+title: IEnumDebugStackFrames-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,22 +13,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f0174839a25695e9594b4cbbf4db6a302f5a2446
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 224c26bccc5443cb20e2ca514ac6df1a111df05e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728340"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963363"
 ---
 # <a name="ienumdebugstackframes-interface"></a>IEnumDebugStackFrames-Schnittstelle
-Listet Stapelrahmen zu einem Thread entspricht.  
+Listet die in einem Thread entsprechenden Stapelrahmen auf.  
   
 ## <a name="methods"></a>Methoden  
- Zusätzlich zu den von geerbten Methoden `IUnknown`, `IEnumDebugStackFrames` Schnittstelle macht die folgenden Methoden verfügbar.  
+ Zusätzlich zu den von geerbten Methoden `IUnknown`, `IEnumDebugStackFrames` Schnittstelle verfügbar macht, die folgenden Methoden.  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IEnumDebugStackFrames::Next](../../winscript/reference/ienumdebugstackframes-next.md)|Ruft eine angegebene Anzahl von Segmenten in die Enumerationsfolge ab.|  
-|[IEnumDebugStackFrames::Skip](../../winscript/reference/ienumdebugstackframes-skip.md)|Überspringt eine angegebene Anzahl von Segmenten in einem Enumerationsfolge an.|  
-|[IEnumDebugStackFrames::Reset](../../winscript/reference/ienumdebugstackframes-reset.md)|Setzt ein Enumerationsfolge auf den Anfang zurück.|  
+|[IEnumDebugStackFrames::Next](../../winscript/reference/ienumdebugstackframes-next.md)|Ruft eine angegebene Anzahl von Segmenten in der Enumerationsfolge ab.|  
+|[IEnumDebugStackFrames::Skip](../../winscript/reference/ienumdebugstackframes-skip.md)|Überspringt eine angegebene Anzahl von Segmenten in einer Enumerationsfolge.|  
+|[IEnumDebugStackFrames::Reset](../../winscript/reference/ienumdebugstackframes-reset.md)|Setzt eine Enumerationsfolge auf den Anfang zurück.|  
 |[IEnumDebugStackFrames::Clone](../../winscript/reference/ienumdebugstackframes-clone.md)|Erstellt einen Enumerator, der den gleichen Zustand wie der aktuelle Enumerator enthält.|

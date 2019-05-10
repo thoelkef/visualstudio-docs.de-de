@@ -1,7 +1,6 @@
 ---
-title: 'CA2228: Führen Sie nicht freigegebene Ressourcenformate'
+title: 'CA2228: Nicht freigegebene Ressourcenformate nicht veröffentlichen.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - DoNotShipUnreleasedResourceFormats
@@ -12,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 2c614edc-4e94-4b4f-8067-eea677a75cd9
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e6f2216d26315491e7e187acdd31530c0bcf013
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4355db8b15a3869e785589170bec3f80e8f08fbb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62541717"
 ---
-# <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228: Führen Sie nicht freigegebene Ressourcenformate
+# <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228: Nicht freigegebene Ressourcenformate nicht veröffentlichen.
 
 |||
 |-|-|

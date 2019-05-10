@@ -1,14 +1,9 @@
 ---
 title: Unterstützung von Tools zum Durchsuchen von Symbolen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - symbols, symbol-browsing tools
 - browsers, symbol browsers
@@ -22,13 +17,13 @@ helpviewer_keywords:
 ms.assetid: 70d8c9e5-4b0b-4a69-b3b3-90f36debe880
 caps.latest.revision: 27
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4c4cf9f711990f5b3f1f064aa6311a8b33b64fef
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5b85e8bf500364587af4c3891d7d39f069af9953
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757694"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441215"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>Unterstützen von Tools zum Durchsuchen von Symbolen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,10 +48,9 @@ ms.locfileid: "51757694"
  Die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] -Objekt Manager Ruft die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> Methode, um zu bestimmen, ob ein bestimmtes Listenelement erweiterbar und untergeordnete Elemente verfügt. Wenn eine Anforderung an ein Element erweitern UI gesendet werden, fordert der Objekt-Manager die untergeordnete Liste von Symbolen durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> Methode. Der Prozess weiterhin mit verschiedenen Teilen der Struktur, die bei Bedarf erstellt wird.  
   
 > [!NOTE]
->  Um einen systemeigenen Code Symbol-Anbieter implementieren, verwenden die <xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> Schnittstellen.  
+> Um einen systemeigenen Code Symbol-Anbieter implementieren, verwenden die <xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> Schnittstellen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Registrieren einer Bibliothek mit der Objekt-Manager](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
  [Vorgehensweise: Verfügbarmachen der Listen von Symbolen, die von der Bibliothek bereitgestellt, der Objekt-Manager](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)   
- [Gewusst wie: Identifizieren von Symbolen in einer Bibliothek](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)
-
+ [Vorgehensweise: Identifizieren von Symbolen in einer Bibliothek](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)

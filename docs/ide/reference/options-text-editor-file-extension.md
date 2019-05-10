@@ -1,8 +1,6 @@
 ---
 title: Optionen, Text-Editor, Dateierweiterung
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.File_Extension
@@ -14,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 05298fc5-fc4e-4bb2-b942-1f7d2dcdff0f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05fce2fd1735e1bed7f528467a1c32f399a9ce22
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 412a8489c3d7092aa87803f7dd3af5c7495b17a7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389039"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778618"
 ---
 # <a name="options-text-editor-file-extension"></a>Optionen, Text-Editor, Dateierweiterung
 
@@ -62,4 +60,4 @@ Stellt dieselbe Liste wie **Editor** bereit. Wählen Sie den Editor oder Designe
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Gewusst wie: Verwalten von Editormodi](../../ide/how-to-manage-editor-modes.md)
+- [Vorgehensweise: Verwalten von Bearbeitungsmodi](../../ide/how-to-manage-editor-modes.md)

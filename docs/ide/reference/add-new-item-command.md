@@ -1,8 +1,6 @@
 ---
 title: Befehl "Neues Element hinzufügen"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - project.addnewitem
@@ -12,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 63b7df32-db83-463b-bbe7-7ff011fe5298
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8084cdebf4cba1bf3bb79ac1fbf386837b977d97
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 2bfede96c889a22b181d46cb85e49147bb2f41aa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33705046"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62792449"
 ---
 # <a name="add-new-item-command"></a>Befehl "Neues Element hinzufügen"
 Fügt der aktuellen Projektmappe ein neues Projektmappenelement wie eine HTM-, CSS-, TXT- oder Framesetdatei hinzu und öffnet dieses.
@@ -67,4 +65,4 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 - [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)
 - [Befehlsfenster](../../ide/reference/command-window.md)
 - [Feld „Suchen/Befehl“](../../ide/find-command-box.md)
-- [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

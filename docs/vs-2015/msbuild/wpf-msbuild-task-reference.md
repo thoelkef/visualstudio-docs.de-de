@@ -1,14 +1,9 @@
 ---
 title: Referenz für die WPF-MSBuild-Task |Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -23,18 +18,17 @@ ms.assetid: 96df0370-e50f-4ffc-9771-b12fb8721143
 caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5266b5b6274eb9a39f6603598b90cd551f25caef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 785e3960148d627e437d15e8662dfd76dccc53c0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185470"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659331"
 ---
 # <a name="wpf-msbuild-task-reference"></a>Referenz zu MSBuild-Aufgaben für WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Der Buildprozess von WPF erweitert die Microsoft-Build-Engine (MSBuild) durch einen zusätzlichen Satz an Buildtasks, einschließlich Tasks zum Kompilieren von Markup- und Prozessressourcen.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
@@ -66,7 +60,4 @@ Der Buildprozess von WPF erweitert die Microsoft-Build-Engine (MSBuild) durch ei
  Fügt das Element **\<hostInBrowser >/** dem Anwendungsmanifest (*Projektname*.exe.manifest) hinzuzufügen, wenn ein [!INCLUDE[TLA#tla_xbap](../includes/tlasharptla-xbap-md.md)]-Projekt erstellt wird.  
   
 ## <a name="see-also"></a>Siehe auch  
- [MSBuild](http://msdn.microsoft.com/en-us/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)
-
-
-
+ [MSBuild](http://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)

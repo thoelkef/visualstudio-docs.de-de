@@ -1,20 +1,19 @@
 ---
 title: Kryptografiewarnungen
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: d96723ea-a293-488d-b9db-adb437e50cdd
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bff3ffef284c0cbf1503d573ba01c7a88c1c5e95
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 669b7806e01772e6a871b6c6a9bf47907cf9a5a4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964175"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816587"
 ---
 # <a name="cryptography-warnings"></a>Kryptografiewarnungen
 Kryptografiewarnungen unterstützen sicherere Bibliotheken und Anwendungen durch die korrekte Verwendung von Kryptografie. Diese Warnungen tragen dazu bei, Sicherheitsmängel im Programm zu vermeiden. Wenn Sie eine dieser Warnungen deaktivieren, sollten Sie den Grund dafür im Code deutlich angeben und außerdem den für Ihr Entwicklungsprojekt zuständigen Sicherheitsbeauftragten informieren.

@@ -1,8 +1,6 @@
 ---
 title: 'Exemplarische Vorgehensweise: Test-First-Entwicklung mit dem Feature „Aus Verwendung generieren“'
 ms.date: 10/09/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 dev_langs:
 - VB
 - CSharp
@@ -12,15 +10,15 @@ helpviewer_keywords:
 - Test-First Development
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c500f7a245ffd3a0dec175dd5f016cf1b2596fa4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3085e2f9b27d587f26fd93db06bc837527a78ff1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432037"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Exemplarische Vorgehensweise: Test-First-Entwicklung mit dem Feature „Aus Verwendung generieren“
 
@@ -36,25 +34,29 @@ In diesem Thema wird die Verwendung der [Generate From Usage](../ide/visual-csha
 
 ### <a name="create-a-windows-class-library-project-and-a-test-project"></a>Erstellen eines Projekts für eine Windows-Klassenbibliothek und eines Testprojekts
 
-1. Erstellen Sie in [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] oder [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ein neues Projekt für eine **Windows-Klassenbibliothek**. Nennen Sie es `GFUDemo_VB` oder `GFUDemo_CS`, je nachdem, welche Sprache Sie verwenden.
+1. Erstellen Sie in C# oder Visual Basic ein neues Projekt für eine **Windows-Klassenbibliothek**. Nennen Sie es `GFUDemo_VB` oder `GFUDemo_CS`, je nachdem, welche Sprache Sie verwenden.
 
-2. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste im oberen Bereich auf das Projektmappensymbol. Klicken Sie dann zuerst auf **Hinzufügen** und anschließend auf **Neues Projekt**. Klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** auf **Testen**.
+2. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste im oberen Bereich auf das Projektmappensymbol. Wählen Sie dann **Hinzufügen** > **Neues Projekt** aus.
 
-3. Wählen Sie im mittleren Bereich **Komponententestprojekt** aus, und übernehmen Sie den Standardnamen `UnitTestProject1`. Die folgende Abbildung zeigt das Dialogfeld, wenn es in [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]geöffnet wird. In [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] sieht das Dialogfeld ähnlich aus.
+3. Erstellen Sie ein neues Projekt **Komponententestprojekt (.NET Framework)**.
 
-    ![Dialogfeld "Neues Testprojekt"](../ide/media/newproject_test.png)
+   ::: moniker range="vs-2017"
 
-4. Klicken Sie auf **OK**, um das Dialogfeld **Neues Projekt** zu schließen.
+   Die folgende Abbildung zeigt das Dialogfeld **Neues Projekt** für C#-Vorlagen.
+
+   ![Vorlage für Komponententestprojekte](../ide/media/newproject_test.png)
+
+   ::: moniker-end
 
 ### <a name="add-a-reference-to-the-class-library-project"></a>Hinzufügen eines Verweises auf das Klassenbibliotheksprojekt
 
-1.  Klicken Sie im **Projektmappen-Explorer** unter Ihrem Komponententestprojekt mit der rechten Maustaste auf den Eintrag **Verweise**, und klicken Sie dann auf **Verweis hinzufügen**.
+1. Klicken Sie im **Projektmappen-Explorer** unter Ihrem Komponententestprojekt mit der rechten Maustaste auf den Eintrag **Verweise**, und klicken Sie dann auf **Verweis hinzufügen**.
 
-2.  Klicken Sie im Dialogfeld **Verweis-Manager** zunächst auf die Option **Projekte** und dann auf das Klassenbibliotheksprojekt.
+2. Klicken Sie im Dialogfeld **Verweis-Manager** zunächst auf die Option **Projekte** und dann auf das Klassenbibliotheksprojekt.
 
-3.  Klicken Sie auf **OK**, um das Dialogfeld **Verweis-Manager** zu schließen.
+3. Klicken Sie auf **OK**, um das Dialogfeld **Verweis-Manager** zu schließen.
 
-4.  Speichern Sie die Projektmappe. Sie können nun mit dem Schreiben von Tests beginnen.
+4. Speichern Sie die Projektmappe. Sie können nun mit dem Schreiben von Tests beginnen.
 
 ### <a name="generate-a-new-class-from-a-unit-test"></a>Generieren einer neuen Klasse aus einem Komponententest
 
@@ -63,9 +65,9 @@ In diesem Thema wird die Verwendung der [Generate From Usage](../ide/visual-csha
 2. Suchen Sie die Deklaration für die Klasse `UnitTest1` , und benennen Sie sie um in `AutomobileTest`.
 
    > [!NOTE]
-   >  IntelliSense bietet jetzt zwei Alternativen für die IntelliSense-Anweisungsvervollständigung: *Beendigungsmodus* und *Vorschlagsmodus*. Verwenden Sie den Vorschlagsmodus für Situationen, in denen Klassen und Member verwendet werden, bevor sie definiert werden. Drücken Sie **Strg**+**Alt**+**Leertaste**, um bei geöffnetem **IntelliSense**-Fenster zwischen Beendigungs- und Vorschlagsmodus zu wechseln. Weitere Informationen finden Sie unter [Verwenden von IntelliSense](../ide/using-intellisense.md). Der Vorschlagsmodus ist hilfreich, wenn Sie im nächsten Schritt `Automobile` eingeben.
+   > IntelliSense bietet jetzt zwei Alternativen für die IntelliSense-Anweisungsvervollständigung: *Beendigungsmodus* und *Vorschlagsmodus*. Verwenden Sie den Vorschlagsmodus für Situationen, in denen Klassen und Member verwendet werden, bevor sie definiert werden. Drücken Sie **Strg**+**Alt**+**Leertaste**, um bei geöffnetem **IntelliSense**-Fenster zwischen Beendigungs- und Vorschlagsmodus zu wechseln. Weitere Informationen finden Sie unter [Verwenden von IntelliSense](../ide/using-intellisense.md). Der Vorschlagsmodus ist hilfreich, wenn Sie im nächsten Schritt `Automobile` eingeben.
 
-3. Suchen Sie die `TestMethod1()` -Methode, und benennen Sie sie um in `DefaultAutomobileIsInitializedCorrectly()`. Erstellen Sie wie in den folgenden Screenshots dargestellt innerhalb dieser Methode eine neue Klasseninstanz mit dem Namen `Automobile`. Eine wellenförmige Unterstreichung, die auf einen Kompilierzeitfehler hindeutet, und eine Glühbirne für [Schnelle Aktionen](../ide/quick-actions.md) werden am linken Rand (nur in C#) oder direkt unter der Wellenlinie angezeigt, wenn Sie darauf zeigen.
+3. Suchen Sie die `TestMethod1()` -Methode, und benennen Sie sie um in `DefaultAutomobileIsInitializedCorrectly()`. Erstellen Sie wie in den folgenden Screenshots dargestellt innerhalb dieser Methode eine neue Klasseninstanz mit dem Namen `Automobile`. Eine wellenförmige Unterstreichung, die auf einen Kompilierzeitfehler hindeutet, und eine Fehlerglühbirne für [Schnelle Aktionen](../ide/quick-actions.md) werden am linken Rand oder direkt unter der Wellenlinie angezeigt, wenn Sie darauf zeigen.
 
     ![Schnellaktionen in Visual Basic](../ide/media/genclass_underlinevb.png)
 
@@ -91,7 +93,7 @@ Angenommen, die Produktspezifikation gibt an, dass die `Automobile` -Klasse übe
      [!code-csharp[VbTDDWalkthrough#1](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.cs)]
      [!code-vb[VbTDDWalkthrough#1](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.vb)]
 
-2. Da der Code auf zwei nicht definierte Eigenschaften in `Automobile` verweist, wird unter `Model` und `TopSpeed` eine wellenförmige Unterstreichung angezeigt. Zeigen Sie auf `Model`, klicken Sie auf die Glühbirne **Schnellaktionen** und dann auf **Generate property 'Automobile.Model'** (Eigenschaft „Automobile.Model“ generieren).
+2. Da der Code auf zwei nicht definierte Eigenschaften in `Automobile` verweist, wird unter `Model` und `TopSpeed` eine wellenförmige Unterstreichung angezeigt. Zeigen Sie auf `Model`, klicken Sie auf die Fehlerglühbirne **Schnellaktionen**, und wählen Sie dann **Eigenschaft „Automobile.Model“ generieren** aus.
 
 3. Generieren Sie auf dieselbe Weise einen Eigenschaftenstub für die `TopSpeed`-Eigenschaft.
 
@@ -105,12 +107,11 @@ Jetzt möchten wir Ihnen zeigen, wie Sie eine Testmethode erstellen, die einen K
      [!code-csharp[VbTDDWalkthrough#2](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.cs)]
      [!code-vb[VbTDDWalkthrough#2](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.vb)]
 
-2.  Klicken Sie auf die Glühbirne **Schnellaktionen** unterhalb der roten Wellenlinie, und klicken Sie anschließend auf **Generate constructor in 'Automobile'** (Konstruktor in „Automobile“ generieren).
+2. Klicken Sie unterhalb der roten Wellenlinie auf die Fehlerglühbirne **Schnellaktionen**, und klicken Sie anschließend auf **Generate constructor in 'Automobile'** (Konstruktor in „Automobile“ generieren).
 
      In der `Automobile` -Klassendatei hat der neue Konstruktor die Namen der lokalen Variablen geprüft, die im Konstruktoraufruf verwendet werden, Eigenschaften gefunden, die die gleichen Namen in der `Automobile` -Klasse aufweisen, und Code im Konstruktortext zum Speichern der Argumentwerte in den Eigenschaften `Model` und `TopSpeed` bereitgestellt.
 
-
-3.  Nachdem Sie den neuen Konstruktor generiert haben, wird eine wellenförmige Unterstreichung unter dem Aufruf des Standardkonstruktors in `DefaultAutomobileIsInitializedCorrectly`angezeigt. Die Fehlermeldung gibt an, dass die `Automobile` -Klasse über keinen Konstruktor verfügt, der keine Argumente annimmt. Um einen expliziten Standardkonstruktor ohne Parameter zu generieren, klicken Sie zunächst auf die Glühbirne **Schnellaktionen** und dann auf **Generate constructor in 'Automobile'** (Konstruktor in „Automobile“ generieren).
+3. Nachdem Sie den neuen Konstruktor generiert haben, wird eine wellenförmige Unterstreichung unter dem Aufruf des Standardkonstruktors in `DefaultAutomobileIsInitializedCorrectly`angezeigt. Die Fehlermeldung gibt an, dass die `Automobile` -Klasse über keinen Konstruktor verfügt, der keine Argumente annimmt. Um einen expliziten Standardkonstruktor ohne Parameter zu generieren, klicken Sie zunächst auf die Fehlerglühbirne **Schnellaktionen** und dann auf **Generate constructor in 'Automobile'** (Konstruktor in „Automobile“ generieren).
 
 ### <a name="generate-a-stub-for-a-method"></a>Generieren eines Stubs für eine Methode
 Angenommen, die Spezifikation gibt an, dass ein neues `Automobile` in einen `IsRunning`-Zustand versetzt werden kann, wenn die zugehörigen Eigenschaften `Model` und `TopSpeed` auf andere als die Standardwerte festgelegt werden.
@@ -120,15 +121,15 @@ Angenommen, die Spezifikation gibt an, dass ein neues `Automobile` in einen `IsR
      [!code-csharp[VbTDDWalkthrough#3](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.cs)]
      [!code-vb[VbTDDWalkthrough#3](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.vb)]
 
-2.  Klicken Sie auf die Glühbirne **Schnellaktionen** für den Methodenaufruf `myAuto.Start` und dann auf **Generate method 'Automobile.Start'** (Methode „Automobile.Start“ generieren).
+2. Klicken Sie auf die Fehlerglühbirne **Schnellaktionen** für den Methodenaufruf `myAuto.Start` und dann auf **Methode „Automobile.Start“ generieren**.
 
-3.  Klicken Sie auf die Glühbirne **Schnellaktionen** für die `IsRunning`-Eigenschaft und dann auf **Generate method 'Automobile.Start'** (Methode „Automobile.Start“ generieren).
+3. Klicken Sie auf die Glühbirne **Schnellaktionen** für die `IsRunning`-Eigenschaft und dann auf **Generate method 'Automobile.Start'** (Methode „Automobile.Start“ generieren).
 
      Die `Automobile`-Klasse enthält nun eine Methode mit dem Namen `Start()` und eine Eigenschaft mit dem Namen `IsRunning`.
 
 ### <a name="run-the-tests"></a>Tests ausführen
 
-1.  Klicken Sie im Menü **Test** auf **Ausführen** > **Alle Tests**.
+1. Klicken Sie im Menü **Test** auf **Ausführen** > **Alle Tests**.
 
      Der Befehl **Ausführen** > **Alle Tests** führt alle Tests in sämtlichen Testframeworks aus, die für die aktuelle Projektmappe geschrieben sind. In diesem Fall sind zwei Tests vorhanden, und beide schlagen erwartungsgemäß fehl. Der `DefaultAutomobileIsInitializedCorrectly` -Test schlägt fehl, weil die `Assert.IsTrue` -Bedingung `False`zurückgibt. Der `AutomobileWithModelNameCanStart` -Test schlägt fehl, weil die `Start` -Methode in der `Automobile` -Klasse eine Ausnahme auslöst.
 
@@ -136,16 +137,16 @@ Angenommen, die Spezifikation gibt an, dass ein neues `Automobile` in einen `IsR
 
      ![Testergebnisse mit Fehlern](../ide/media/testsfailed.png)
 
-2.  Doppelklicken Sie im Fenster **Testergebnisse** auf jede Testergebniszeile, um zum Speicherort der einzelnen Tests zu gelangen.
+2. Doppelklicken Sie im Fenster **Testergebnisse** auf jede Testergebniszeile, um zum Speicherort der einzelnen Tests zu gelangen.
 
 ### <a name="implement-the-source-code"></a>Implementieren des Quellcodes
 
-1.  Fügen Sie dem Standardkonstruktor den folgenden Code hinzu, sodass die Eigenschaften `Model`, `TopSpeed` und `IsRunning` mit den richtigen Standardwerten von `"Not specified"`, `-1`, und `False` (oder `false` für C#) initialisiert werden.
+1. Fügen Sie dem Standardkonstruktor den folgenden Code hinzu, sodass die Eigenschaften `Model`, `TopSpeed` und `IsRunning` mit den richtigen Standardwerten von `"Not specified"`, `-1`, und `False` (oder `false` für C#) initialisiert werden.
 
      [!code-csharp[VbTDDWalkthrough#5](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_5.cs)]
      [!code-vb[VbTDDWalkthrough#5](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_5.vb)]
 
-2.  Wenn die `Start` -Methode aufgerufen wird, sollte das `IsRunning` -Flag nur auf "true" festgelegt werden, wenn die Eigenschaft `Model` oder `TopSpeed` auf einen anderen als den Standardwert festgelegt sind. Entfernen Sie die `NotImplementedException` aus dem Methodentext, und fügen Sie den folgenden Code hinzu.
+2. Wenn die `Start` -Methode aufgerufen wird, sollte das `IsRunning` -Flag nur auf "true" festgelegt werden, wenn die Eigenschaft `Model` oder `TopSpeed` auf einen anderen als den Standardwert festgelegt sind. Entfernen Sie die `NotImplementedException` aus dem Methodentext, und fügen Sie den folgenden Code hinzu.
 
      [!code-csharp[VbTDDWalkthrough#6](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_6.cs)]
      [!code-vb[VbTDDWalkthrough#6](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_6.vb)]

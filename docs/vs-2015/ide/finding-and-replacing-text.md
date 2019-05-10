@@ -1,14 +1,9 @@
 ---
 title: Suchen und Ersetzen von Text | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.find
 - vs.findreplacecontrol
@@ -41,13 +36,13 @@ ms.assetid: a62545c3-1570-4d12-99fb-a82607eb35a1
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e4bbe1456632b2707ca548582bb278f7646ec540
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 51d361bf74fb1181c64e5299b0925c262f185e9b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273441"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426332"
 ---
 # <a name="finding-and-replacing-text"></a>Finding and Replacing Text
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ Die Funktion zum Suchen und Ersetzen von Text lässt sich im Visual Studio Code-
  Informationen zum Suchen und Ersetzen von regulären Ausdrücken finden Sie unter [Verwenden von regulären Ausdrücken in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).  
   
 > [!TIP]
->  Das Feld **Find/Command** (Suchen/Befehl) ist weiterhin als Steuerelement für die Symbolleiste verfügbar, wird standardmäßig aber nicht mehr angezeigt. Sie können das Feld **Find/Command** (Suchen/Befehl) einblenden, indem Sie in der Symbolleiste**Standard** auf **Schaltflächen hinzufügen oder entfernen** klicken und anschließend auf **Suchen** klicken. Weitere Informationen finden Sie unter [Such-/Befehlsfeld](../ide/find-command-box.md).  
+> Das Feld **Find/Command** (Suchen/Befehl) ist weiterhin als Steuerelement für die Symbolleiste verfügbar, wird standardmäßig aber nicht mehr angezeigt. Sie können das Feld **Find/Command** (Suchen/Befehl) einblenden, indem Sie in der Symbolleiste**Standard** auf **Schaltflächen hinzufügen oder entfernen** klicken und anschließend auf **Suchen** klicken. Weitere Informationen finden Sie unter [Such-/Befehlsfeld](../ide/find-command-box.md).  
   
 ## <a name="find-and-replace-control"></a>Steuerelement "Suchen und Ersetzen"  
  Das Steuerelement **Suchen und Ersetzen** finden Sie in der rechten oberen Ecke des Code-Editors. Durch das Steuerelement **Suchen und Ersetzen** wird jedes Vorkommen des angegebenen Suchbegriffs im aktuellen Dokument sofort hervorgehoben. Sie können von einem Vorkommen zum nächsten navigieren, indem Sie auf dem Steuerelement „Suche“ auf **Weitersuchen** oder **Vorheriges suchen** auswählen.  
@@ -79,13 +74,10 @@ Die Funktion zum Suchen und Ersetzen von Text lässt sich im Visual Studio Code-
  Wenn Sie **Alle suchen** auswählen, erhalten Sie im Fenster **Suchergebnisse** eine Liste der Übereinstimmungen für Ihre Suche. Wenn Sie ein Ergebnis in der Liste auswählen, wird die dazugehörige Datei mit hervorgehobenen Übereinstimmungen angezeigt. Wenn die Datei nicht bereits zur Bearbeitung geöffnet ist, wird sie in einer Vorschauregisterkarte auf der rechten Seite der Registerkartenreihe geöffnet. Sie können das Steuerelement **Suchen** verwenden, um die Liste **Suchergebnisse** zu durchsuchen.  
   
 ### <a name="creating-custom-search-folder-sets"></a>Erstellen von benutzerdefinierten Suchordnersätzen  
- Sie können einen Suchbereich definieren, durch Auswählen der **Suchordner auswählen** Schaltfläche (anscheinend **...** ) neben dem **Suchen in** Feld. Im Dialogfeld **Suchordner auswählen** können Sie einen Satz mit Ordnern festlegen, der durchsucht werden soll, und Sie können die Spezifikation zur späteren Wiederverwendung speichern. Sie können nur Ordner auf einem Remotecomputer festlegen, wenn Sie dem lokalen Computer das Laufwerk des Remotecomputers zugeordnet haben.  
+ Sie können einen Suchbereich definieren, indem Sie auf die Schaltfläche **Suchordner auswählen** (sie sieht so aus: **…**) neben dem Feld **Suchen in** klicken. Im Dialogfeld **Suchordner auswählen** können Sie einen Satz mit Ordnern festlegen, der durchsucht werden soll, und Sie können die Spezifikation zur späteren Wiederverwendung speichern. Sie können nur Ordner auf einem Remotecomputer festlegen, wenn Sie dem lokalen Computer das Laufwerk des Remotecomputers zugeordnet haben.  
   
 ### <a name="creating-custom-component-sets"></a>Erstellen von benutzerdefinierten Komponentensätzen  
  Sie können Komponentensätze als Suchbereich definieren, indem Sie auf die Schaltfläche **Benutzerdefinierten Komponentensatz bearbeiten** neben dem Feld **Suchen in** klicken. Sie können installierte .NET- oder COM-Komponenten, in der Projektmappe enthaltene Visual Studio-Projekte oder eine beliebige Assembly bzw. Typbibliothek (eine DLL-, TLB-, OLB-, EXE- oder OCX-Datei) angeben. Wählen Sie zur Suche nach Verweisen das Feld **In Verweisen suchen** aus.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Verwenden von regulären Ausdrücken in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md)
-
-
-

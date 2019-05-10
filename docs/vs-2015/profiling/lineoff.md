@@ -1,25 +1,20 @@
 ---
 title: LineOff | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 76082063-20ef-47ae-ad64-81b43b654865
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 93fe4acedfcae36f75ed38bef102ccc35f08f2ce
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fbe8a715c5bb179c5293dd666f1879c07068d8b2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759674"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62583170"
 ---
 # <a name="lineoff"></a>LineOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,6 +51,3 @@ VSPerfCmd.exe /Launch:TestApp.exe /LineOff
  [Profilerstellung für eigenständige Anwendungen](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Erstellen von Dienstprofilen](../profiling/command-line-profiling-of-services.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Verwenden von Assistenten mit Projektvorlagen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], wizards
 - Visual Studio templates, wizards
@@ -18,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 650b9c360013d06216e607269f77afd24f3cc22c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e8722cc2990f91446c806bf80f3673dc4c941532
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783752"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432557"
 ---
-# <a name="how-to-use-wizards-with-project-templates"></a>Gewusst wie: Verwenden von Assistenten mit Projektvorlagen
+# <a name="how-to-use-wizards-with-project-templates"></a>Vorgehensweise: Verwenden von Assistenten mit Projektvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio stellt die <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>-Schnittstelle bereit, die, falls sie implementiert ist, das Ausführen von benutzerdefiniertem Code beim Erstellen eines Projekts aus einer Vorlage ermöglicht.  
@@ -38,24 +33,24 @@ Visual Studio stellt die <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>-Sc
 ## <a name="creating-a-project-template-project-with-a-vsix-project"></a>Erstellen ein Projektvorlagenprojekt mit einem VSIX-Projekt  
  Sie beginnen, erstellen eine benutzerdefinierte Vorlage, mit der Standardprojektvorlage-Projekt., die Teil von Visual Studio SDK ist. In diesem Verfahren verwenden wir ein C#-Projekt-Vorlagenprojekt, aber es gibt auch ein Vorlagenprojekt für Visual Basic-Projekt. Dann fügen Sie ein VSIX-Projekt der Projektmappe, die das Projektvorlagenprojekt enthält.  
   
-1.  Erstellen Sie ein C#-Projekt-Vorlagenprojekt (in Visual Studio **Datei / neu / Projekt / Visual c# / Erweiterbarkeit / C#-Projektvorlage**). Nennen Sie sie **MyProjectTemplate**.  
+1. Erstellen Sie ein C#-Projekt-Vorlagenprojekt (in Visual Studio **Datei / neu / Projekt / Visual c# / Erweiterbarkeit / C#-Projektvorlage**). Nennen Sie sie **MyProjectTemplate**.  
   
     > [!NOTE]
-    >  Möglicherweise werden Sie aufgefordert, die Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+    > Möglicherweise werden Sie aufgefordert, die Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-2.  Fügen Sie ein neues VSIX-Projekt hinzu (**Datei / neu / Projekt / Visual C#-/ Erweiterbarkeit / VSIX-Projekt**) in der gleichen Projektmappe wie das Projektvorlagenprojekt (in der **Projektmappen-Explorer**, wählen Sie den Projektmappenknoten, mit der rechten Maustaste, und wählen **Add / New Project**). Nennen Sie sie **MyProjectWizard.**  
+2. Fügen Sie ein neues VSIX-Projekt hinzu (**Datei / neu / Projekt / Visual C#-/ Erweiterbarkeit / VSIX-Projekt**) in der gleichen Projektmappe wie das Projektvorlagenprojekt (in der **Projektmappen-Explorer**, wählen Sie den Projektmappenknoten, mit der rechten Maustaste, und wählen **Add / New Project**). Nennen Sie sie **MyProjectWizard.**  
   
-3.  Festlegen Sie das VSIX-Projekt als Startprojekt. In der **Projektmappen-Explorer**, wählen Sie den Knoten "Projektmappe", mit der rechten Maustaste und wählen Sie **als Startprojekt festlegen**.  
+3. Festlegen Sie das VSIX-Projekt als Startprojekt. In der **Projektmappen-Explorer**, wählen Sie den Knoten "Projektmappe", mit der rechten Maustaste und wählen Sie **als Startprojekt festlegen**.  
   
-4.  Fügen Sie die Vorlagen-Projekt als Ressource des VSIX-Projekts hinzu. In der **Projektmappen-Explorer**, finden Sie unter dem VSIX-Projektknoten angezeigt, die **"Source.Extension.vsixmanifest"** Datei. Doppelklicken Sie darauf, um sie im manifest-Editor zu öffnen.  
+4. Fügen Sie die Vorlagen-Projekt als Ressource des VSIX-Projekts hinzu. In der **Projektmappen-Explorer**, finden Sie unter dem VSIX-Projektknoten angezeigt, die **"Source.Extension.vsixmanifest"** Datei. Doppelklicken Sie darauf, um sie im manifest-Editor zu öffnen.  
   
-5.  Wählen Sie im manifest-Editor die **Assets** Registerkarte auf der linken Seite des Fensters.  
+5. Wählen Sie im manifest-Editor die **Assets** Registerkarte auf der linken Seite des Fensters.  
   
-6.  In der **Assets** Registerkarte **neu**. In der **neue Anlage hinzufügen** -Fenster, für das Typfeld **Microsoft.VisualStudio.ProjectTemplate**. In der **Quelle** die Option **ein Projekt in der aktuellen Projektmappe**. In der **Projekt** die Option **MyProjectTemplate**. Klicken Sie dann auf **OK**.  
+6. In der **Assets** Registerkarte **neu**. In der **neue Anlage hinzufügen** -Fenster, für das Typfeld **Microsoft.VisualStudio.ProjectTemplate**. In der **Quelle** die Option **ein Projekt in der aktuellen Projektmappe**. In der **Projekt** die Option **MyProjectTemplate**. Klicken Sie dann auf **OK**.  
   
-7.  Erstellen Sie die Projektmappe, und beginnen Sie mit dem Debuggen. Eine zweite Instanz von Visual Studio wird geöffnet. (Dies kann einige Minuten dauern.)  
+7. Erstellen Sie die Projektmappe, und beginnen Sie mit dem Debuggen. Eine zweite Instanz von Visual Studio wird geöffnet. (Dies kann einige Minuten dauern.)  
   
-8.  Versuchen Sie in der zweiten Instanz von Visual Studio, ein neues Projekt mit Ihrer neuen Vorlage zu erstellen. (**Datei / neu / Projekt / Visual C#-/ MyProject Vorlage**). Das neue Projekt sollte angezeigt werden, mit einer Klasse namens **Class1**. Sie haben nun eine benutzerdefinierte Projektvorlage erstellt! Beenden Sie debugging jetzt.  
+8. Versuchen Sie in der zweiten Instanz von Visual Studio, ein neues Projekt mit Ihrer neuen Vorlage zu erstellen. (**Datei / neu / Projekt / Visual C#-/ MyProject Vorlage**). Das neue Projekt sollte angezeigt werden, mit einer Klasse namens **Class1**. Sie haben nun eine benutzerdefinierte Projektvorlage erstellt! Beenden Sie debugging jetzt.  
   
 ## <a name="creating-a-custom-template-wizard"></a>Erstellen eines benutzerdefinierten Vorlagen-Assistenten  
  In diesem Thema wird das Erstellen eines benutzerdefinierten Vorlagen-Assistenten veranschaulicht, der vor dem Erstellen des Projekts ein Windows Form öffnet. Das Formular ermöglicht das Hinzufügen ein benutzerdefinierten Parameterwerts, das auf den Quellcode, während der projekterstellung hinzugefügt wird.  
@@ -64,11 +59,11 @@ Visual Studio stellt die <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>-Sc
   
 2. In der **Projektmappen-Explorer**, wählen Sie die VSIX-Projektknoten. Unten im Projektmappen-Explorer sollte die **Eigenschaften** Fenster. Wenn Sie nicht, wählen Sie **anzeigen / Fenster "Eigenschaften"**, oder drücken Sie **F4**. Wählen Sie im Fenster Eigenschaften die folgenden Felder mit `true`:  
   
-   -   **IncludeAssemblyInVSIXContainer**  
+   - **IncludeAssemblyInVSIXContainer**  
   
-   -   **IncludeDebugSymbolsInVSIXContainer**  
+   - **IncludeDebugSymbolsInVSIXContainer**  
   
-   -   **IncludeDebugSymbolsInLocalVSIXDeployment**  
+   - **IncludeDebugSymbolsInLocalVSIXDeployment**  
   
 3. Fügen Sie die Assembly zum VSIX-Projekt als Ressource hinzu. Öffnen Sie die Datei "Source.Extension.vsixmanifest", und wählen Sie die **Assets** Registerkarte. In der **neue Anlage hinzufügen** Fenster für **Typ** wählen **Microsoft.VisualStudio.Assembly**, für die **Quelle** wählen **ein Projekt in der aktuellen Projektmappe**, und für **Projekt** wählen **MyTemplateWizard**.  
   
@@ -244,7 +239,7 @@ Visual Studio stellt die <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>-Sc
   
      Vergessen Sie nicht in diesem Fall die Anführungszeichen ein. Eine Zeile in die Ausgabe wie die folgende sollte angezeigt werden.  
   
-     **Token des öffentlichen Schlüssels ist. <token>**  
+     **Token des öffentlichen Schlüssels ist \<token >**  
   
      Notieren Sie sich dieses Werts.  
   
@@ -297,19 +292,19 @@ namespace $safeprojectname$
 ## <a name="using-the-custom-wizard"></a>Verwenden des benutzerdefinierten Assistenten  
  Nun können Sie ein Projekt aus der Vorlage erstellen und den benutzerdefinierten Assistenten verwenden.  
   
-1.  Erstellen Sie die Projektmappe neu, und starten Sie das Debuggen. Eine zweite Instanz von Visual Studio sollte angezeigt werden.  
+1. Erstellen Sie die Projektmappe neu, und starten Sie das Debuggen. Eine zweite Instanz von Visual Studio sollte angezeigt werden.  
   
-2.  Erstellen Sie ein neues MyProjectTemplate-Projekt. (**Datei / neu / Projekt / Visual C#-/ MyProjectTemplate**)  
+2. Erstellen Sie ein neues MyProjectTemplate-Projekt. (**Datei / neu / Projekt / Visual C#-/ MyProjectTemplate**)  
   
-3.  In der **neues Projekt** Dialogfeld Suchen Ihrer Vorlage, geben Sie einen Namen, und klicken Sie auf **OK**.  
+3. In der **neues Projekt** Dialogfeld Suchen Ihrer Vorlage, geben Sie einen Namen, und klicken Sie auf **OK**.  
   
      Das Benutzereingabeformular des Assistenten wird geöffnet.  
   
-4.  Geben Sie einen Wert für den benutzerdefinierten Parameter ein, und klicken Sie auf die Schaltfläche.  
+4. Geben Sie einen Wert für den benutzerdefinierten Parameter ein, und klicken Sie auf die Schaltfläche.  
   
      Das Benutzereingabeformular des Assistenten wird geschlossen, und aus der Vorlage wird ein Projekt erstellt.  
   
-5.  In **Projektmappen-Explorer**mit der rechten Maustaste auf die Quellcodedatei, und klicken Sie auf **Ansichtscode**.  
+5. In **Projektmappen-Explorer**mit der rechten Maustaste auf die Quellcodedatei, und klicken Sie auf **Ansichtscode**.  
   
      Beachten Sie, dass `$custommessage$` durch den im Benutzereingabeformular des Assistenten eingegebenen Text ersetzt wurde.  
   

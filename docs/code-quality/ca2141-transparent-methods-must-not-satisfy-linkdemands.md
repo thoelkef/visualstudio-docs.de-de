@@ -1,22 +1,21 @@
 ---
 title: 'CA2141: Transparente Methoden dürfen keine LinkDemands erfüllen'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2141
 ms.assetid: 2957f5f7-c511-4180-ba80-752034f10a77
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c92a66fc2f6fe70e8e9c4786bc6d856bd6f1694
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fdd8ee4633cdc254bcfc5237391120ef887753da
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920510"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806970"
 ---
 # <a name="ca2141transparent-methods-must-not-satisfy-linkdemands"></a>CA2141: Transparente Methoden dürfen keine LinkDemands erfüllen
 

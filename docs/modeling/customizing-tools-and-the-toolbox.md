@@ -10,16 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language, toolbox
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 705b70fd0ee71f7ea0670f64aadcbff7bc686721
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: 37bba294dde27fad19122ee281057607f6abc6c8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919598"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445798"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Anpassen der Tools und der Toolbox
 
@@ -39,15 +38,15 @@ Editor
 
 In diesem Teil des DSL-Explorers können Sie folgende Aufgaben ausführen:
 
--   Neue Registerkarten erstellen. Mit Registerkarten werden die Abschnittsüberschriften in der Toolbox definiert.
+- Neue Registerkarten erstellen. Mit Registerkarten werden die Abschnittsüberschriften in der Toolbox definiert.
 
--   Neue Tools erstellen.
+- Neue Tools erstellen.
 
--   Kopieren Sie Tools, und fügen Sie sie ein.
+- Kopieren Sie Tools, und fügen Sie sie ein.
 
--   Tools in der Liste nach oben oder unten verschieben.
+- Tools in der Liste nach oben oder unten verschieben.
 
--   Registerkarten und Tools löschen.
+- Registerkarten und Tools löschen.
 
 > [!IMPORTANT]
 > Sie können in einem DSL-Explorer Elemente hinzufügen oder einfügen, indem Sie mit der rechten Maustaste auf die zweite übergeordnete Ebene klicken. Z. B. um ein Tool hinzuzufügen, mit der rechten Maustaste der Registerkarte ", und nicht die **Tools** Knoten. Zum Hinzufügen einer Registerkarte, Maustaste den **Editor** Knoten.
@@ -60,36 +59,36 @@ Die **Verbindungsgenerator** Eigenschaft eines Verbindungstools verweist auf ein
 
 #### <a name="to-add-a-tool-to-the-toolbox"></a>So fügen Sie der Toolbox ein Tool hinzu
 
-1.  Normalerweise erstellen Sie ein Elementtool, nachdem Sie eine Formklasse erstellt und einer Domänenklasse zugeordnet haben.
+1. Normalerweise erstellen Sie ein Elementtool, nachdem Sie eine Formklasse erstellt und einer Domänenklasse zugeordnet haben.
 
      Normalerweise erstellen Sie ein Konnektortool, nachdem Sie eine Konnektorklasse erstellt und einer Verweisbeziehung zugeordnet haben.
 
-2.  Erweitern Sie im DSL-Explorer die **Editor** Knoten und die **Toolboxregisterkarten** Knoten.
+2. Erweitern Sie im DSL-Explorer die **Editor** Knoten und die **Toolboxregisterkarten** Knoten.
 
      Mit der rechten Maustaste eines Toolboxregisterkarten-Knotens, und klicken Sie dann auf **neues Elementtool hinzufügen** oder **neues Verbindungswerkzeug hinzufügen**.
 
-3.  Legen Sie die **Toolboxsymbol** Eigenschaft zum Verweisen auf eine 16 x 16-Bitmap.
+3. Legen Sie die **Toolboxsymbol** Eigenschaft zum Verweisen auf eine 16 x 16-Bitmap.
 
      Wenn Sie ein neues Symbol definieren möchten, erstellen Sie eine Bitmapdatei im Projektmappen-Explorer die **dsl\ressourcen** Ordner. Die Datei sollte die folgenden Eigenschaftswerte enthalten: **Buildvorgang** = **Content**; **In Ausgabeverzeichnis kopieren** = **nicht kopieren**.
 
-4.  **Für ein Elementtool:** Legen Sie die **Klasse** Eigenschaft des Tools für die auf eine konkrete Domänenklasse verweisen, die mit einer Form zugeordnet ist.
+4. **Für ein Elementtool:** Legen Sie die **Klasse** Eigenschaft des Tools für die auf eine konkrete Domänenklasse verweisen, die mit einer Form zugeordnet ist.
 
      **Für ein konnektortool:** Legen Sie die **Verbindungsgenerator** Eigenschaft des Tools auf eines der Elemente, die in der Dropdown Liste zur Verfügung stehen. Verbindungs-Generatoren werden automatisch erstellt, wenn Sie einen Konnektor einer Domänenbeziehung zuordnen. Wenn Sie gerade einen Konnektor erstellt haben, würden Sie normalerweise den zugehörigen Verbindungs-Generator auswählen.
 
-5.  Um die DSL zu testen, drücken Sie F5 oder STRG + F5, und öffnen Sie in der experimentellen Instanz von Visual Studio eine beispielmodelldatei. Das neue Tool sollte in der Toolbox aufgeführt sein. Ziehen Sie es auf das Diagramm, um zu überprüfen, ob es ein neues Element erstellt.
+5. Um die DSL zu testen, drücken Sie F5 oder STRG + F5, und öffnen Sie in der experimentellen Instanz von Visual Studio eine beispielmodelldatei. Das neue Tool sollte in der Toolbox aufgeführt sein. Ziehen Sie es auf das Diagramm, um zu überprüfen, ob es ein neues Element erstellt.
 
      Wenn das Tool nicht angezeigt wird, beenden Sie die experimentelle Visual Studio. In der Windows **starten** führen **Zurücksetzen der Microsoft Visual Studio 2010 experimentelle Instanz**. Klicken Sie im Menü **Build** auf **Projektmappe neu erstellen**. Wiederholen Sie dann den DSL-Test.
 
 ## <a name="customizing"></a> Anpassen von Elementtools
  Standardmäßig erstellt das Tool eine Instanz der angegebenen Klasse. Sie haben jedoch zwei Optionen, dies zu ändern:
 
--   Definieren Sie Direktiven für Elementzusammenführungen für andere Klassen, sodass sie neue Instanzen dieser Klasse akzeptieren und weitere Links erstellen können, wenn ein neues Element erstellt wird. Sie können beispielsweise zulassen, dass ein Benutzer einem anderen Element einen Kommentar hinzufügt und auf diese Weise einen Verweislink zwischen beiden erstellt.
+- Definieren Sie Direktiven für Elementzusammenführungen für andere Klassen, sodass sie neue Instanzen dieser Klasse akzeptieren und weitere Links erstellen können, wenn ein neues Element erstellt wird. Sie können beispielsweise zulassen, dass ein Benutzer einem anderen Element einen Kommentar hinzufügt und auf diese Weise einen Verweislink zwischen beiden erstellt.
 
-     Diese Anpassungen haben auch Auswirkungen darauf, was geschieht, wenn der Benutzer ein Element einfügt oder per Drag & Drop ergänzt.
+     Diese Anpassungen haben auch Auswirkungen darauf, was geschieht, wenn der Benutzer ein Element einfügt oder per Drag &amp; Drop ergänzt.
 
      Weitere Informationen finden Sie unter [Anpassen der Elementerstellung und-Verschiebung](../modeling/customizing-element-creation-and-movement.md).
 
--   Schreiben Sie Code, um das Tool so anzupassen, dass es Gruppen von Elementen erstellen kann. Das Tool wird von Methoden in "ToolboxHelper.cs" initialisiert, die Sie überschreiben können. Weitere Informationen finden Sie unter [Erstellen von Gruppen von Elementen in einem Tool](#groups).
+- Schreiben Sie Code, um das Tool so anzupassen, dass es Gruppen von Elementen erstellen kann. Das Tool wird von Methoden in "ToolboxHelper.cs" initialisiert, die Sie überschreiben können. Weitere Informationen finden Sie unter [Erstellen von Gruppen von Elementen in einem Tool](#groups).
 
 ## <a name="groups"></a> Erstellen von Gruppen von Elementen in einem Tool
  Jedes Elementtool enthält einen Prototyp der Elemente, die es erstellen soll. Standardmäßig erstellt jedes Elementtool ein Element. Es ist jedoch auch möglich, eine Gruppe verknüpfter Objekte mit einem Tool zu erstellen. Dazu initialisieren Sie das Tool mit einem <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>, der verknüpfte Elemente enthält.
@@ -176,7 +175,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   Für diese Anpassungen müssen Sie Programmcode angeben. Sie können herausfinden, welcher Code erforderlich ist, indem Sie eines dieser Kontrollkästchen aktivieren, auf "Alle Vorlagen transformieren" klicken und dann die Projektmappe erstellen. Ein Fehlerbericht wird erstellt. Doppelklicken Sie auf den Fehlerbericht, um einen Kommentar zu lesen, der den hinzuzufügenden Code erläutert.
 
 > [!NOTE]
->  Erstellen Sie zum Hinzufügen von benutzerdefiniertem Code eine partielle Klassendefinition in einer Codedatei, die nicht zu den Codedateien in den Ordnern "GeneratedCode" gehört. Damit Ihre Arbeit nicht verloren geht, sollten Sie die generierten Codedateien nicht bearbeiten. Weitere Informationen finden Sie unter [überschreiben und Erweitern der generierten Klassen](../modeling/overriding-and-extending-the-generated-classes.md).
+> Erstellen Sie zum Hinzufügen von benutzerdefiniertem Code eine partielle Klassendefinition in einer Codedatei, die nicht zu den Codedateien in den Ordnern "GeneratedCode" gehört. Damit Ihre Arbeit nicht verloren geht, sollten Sie die generierten Codedateien nicht bearbeiten. Weitere Informationen finden Sie unter [überschreiben und Erweitern der generierten Klassen](../modeling/overriding-and-extending-the-generated-classes.md).
 
 #### <a name="creating-custom-connection-code"></a>Erstellen von benutzerdefiniertem Verbindungscode
  In jeder Direktive für linkverbindungen der **rollendirektiven, die Quelle** definiert die Registerkarte welche Typen ziehen kann. Auf ähnliche Weise die **rollendirektiven, die als Ziel** Registerkarte definiert welche Typen ziehen kann. Für jeden Typ, Sie können zudem angeben, ob die Verbindung zulassen (für diese Direktive für linkverbindungen) durch Festlegen der **benutzerdefiniertes akzeptieren** kennzeichnen, und klicken Sie dann zusätzlichen Code angeben.

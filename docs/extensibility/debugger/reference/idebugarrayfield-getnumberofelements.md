@@ -1,30 +1,32 @@
 ---
 title: IDebugArrayField::GetNumberOfElements | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugArrayField::GetNumberOfElements
 helpviewer_keywords:
 - IDebugArrayField::GetNumberOfElements method
 ms.assetid: a1961ef3-d69d-4022-b8c9-b9cfb9811345
-author: gregvanl
+caps.latest.revision: 10
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: a7aff8a24c53bdc2d571d9b09ee3605153478982
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 86cd2b227926db38c5bd50fa0457688a023bc7e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928210"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62877651"
 ---
 # <a name="idebugarrayfieldgetnumberofelements"></a>IDebugArrayField::GetNumberOfElements
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Ruft die Anzahl der Elemente im Array ab.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT GetNumberOfElements(   
    DWORD* pdwNumElements  
 );  

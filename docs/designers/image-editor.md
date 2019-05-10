@@ -1,23 +1,21 @@
 ---
 title: Bildbearbeitung
 ms.date: 08/10/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.imageeditor
 - vs.graphics.imageeditor
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2149410782587d8472faff678cbc20bf1ea577c1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9783029eab9597624be459fe88b51a495328b5be
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878374"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62897396"
 ---
 # <a name="image-editor"></a>Grafik-Editor
 
@@ -113,7 +111,7 @@ Auf der Symbolleiste für den **Bildbearbeitungsmodus** finden Sie Befehle, die 
 
 In der folgenden Tabelle werden die Elemente der Symbolleiste des **Bildbearbeitungsmodus** beschrieben und in der Reihenfolge aufgelistet, in der sie auf der Symbolleiste von links nach rechts angezeigt werden:
 
-|Element der Symbolleiste|Beschreibung |
+|Element der Symbolleiste|Beschreibung|
 |------------------|-----------------|
 |**Auswählen**|Ermöglicht die Auswahl eines rechteckigen Bereichs eines Bilds. Nachdem Sie einen Bereich ausgewählt haben, können Sie ihn ausschneiden, kopieren, verschieben, skalieren, drehen, spiegeln oder löschen. Wenn eine aktive Auswahl vorhanden ist, haben die Zeichenwerkzeuge nur Auswirkungen auf den ausgewählten Bereich.|
 |**Unregelmäßige Auswahl**|Ermöglicht die Auswahl eines unregelmäßigen Bereichs eines Bilds. Nachdem Sie einen Bereich ausgewählt haben, können Sie ihn ausschneiden, kopieren, verschieben, skalieren, drehen, spiegeln oder löschen. Wenn eine aktive Auswahl vorhanden ist, haben die Zeichenwerkzeuge nur Auswirkungen auf den ausgewählten Bereich.|
@@ -126,10 +124,10 @@ In der folgenden Tabelle werden die Elemente der Symbolleiste des **Bildbearbeit
 |**Raster**|Aktiviert oder deaktiviert das Raster, das die Pixelgrenzen anzeigt. Das Raster wird möglicherweise erst angezeigt, wenn Sie das Bild vergrößern.|
 |**Nächste MIP-Ebene anzeigen**|Aktiviert die nächsthöhere MIP-Ebene in einer MIP-Zuordnungskette. Die aktive MIP-Ebene wird auf der Entwurfsoberfläche angezeigt. Dieses Element ist nur für Texturen mit MIP-Ebenen verfügbar.|
 |**Vorherige MIP-Ebene anzeigen**|Aktiviert die nächstkleinere MIP-Ebene in einer MIP-Zuordnungskette. Die aktive MIP-Ebene wird auf der Entwurfsoberfläche angezeigt. Dieses Element ist nur für Texturen mit MIP-Ebenen verfügbar.|
-|**Roter Kanal**<br /><br /> **Grüner Kanal**<br /><br /> **Blauer Kanal**<br /><br /> **Alphakanal**|Aktiviert oder deaktiviert den spezifischen Farbkanal. **Hinweis:** Durch systematisches Aktivieren oder Deaktivieren von Farbkanälen können Sie Probleme isolieren, die mit einem oder mehreren Farbkanälen zusammenhängen. Sie können beispielsweise eine falsche Alphatransparenz identifizieren.|
+|**Roter Kanal**<br /><br /> **Grüner Kanal**<br /><br /> **Blauer Kanal**<br /><br /> **Alphakanal**|Aktiviert oder deaktiviert den spezifischen Farbkanal. **Hinweis**:  Durch systematisches Aktivieren oder Deaktivieren von Farbkanälen können Sie Probleme isolieren, die mit einem oder mehreren Farbkanälen zusammenhängen. Sie können beispielsweise eine falsche Alphatransparenz identifizieren.|
 |**Hintergrund**|Aktiviert oder deaktiviert die Anzeige des Hintergrunds durch transparente Teile des Bilds. Sie können durch Auswahl einer der folgenden Optionen konfigurieren, wie der Hintergrund angezeigt wird:<br /><br /> **Schachbrett**<br /> Verwendet eine grüne Farbe zusammen mit der angegebenen Hintergrundfarbe, um den Hintergrund als Schachbrettmuster darzustellen. Sie können diese Option verwenden, um transparente Teile des Bilds sichtbarer zu machen.<br /><br /> Weißer Hintergrund<br /> Verwendet die Farbe Weiß, um den Hintergrund anzuzeigen.<br /><br /> Schwarzer Hintergrund<br /> Verwendet die Farbe Schwarz, um den Hintergrund anzuzeigen.<br /><br /> Hintergrund animieren<br /> Schwenkt das Schachbrettmuster langsam. Sie können diese Option verwenden, um transparente Teile des Bilds sichtbarer zu machen.|
 |**Eigenschaften**|Öffnet bzw. schließt das Fenster **Eigenschaften**.|
-|**Erweitert**|Enthält zusätzliche Befehle und Optionen.<br /><br /> **Filter**<br /><br /> Stellt einige allgemeine Bildfilter bereit: **Schwarz und weiß**, **Weichzeichner**, **Aufhellen**, **Abdunkeln**, **Kantenerkennung**, **Relief**, **Farben umkehren**, **Wellen**, **Sepia** und **Scharfzeichnen**.<br /><br /> **Grafik-Engines**<br /><br /> **Mit D3D11 rendern**<br /> Verwendet Direct3D 11 zum Rendern der Entwurfsoberfläche der **Bildbearbeitung**.<br /><br /> **Mit D3D11WARP rendern**<br /> Verwendet Direct3D 11 Windows Advanced Rasterization Platform (WARP) zum Rendern der Entwurfsoberfläche der **Bildbearbeitung**.<br /><br /> **Extras**<br /><br /> **Horizontal spiegeln**<br /> Vertauscht das Bild um seine horizontale bzw. X-Achse.<br /><br /> **Vertikal spiegeln**<br /> Vertauscht das Bild um seine vertikale bzw. Y-Achse.<br /><br /> **MIPS generieren**<br /> Generiert MIP-Ebenen für ein Bild. Wenn bereits MIP-Ebenen vorhanden sind, werden sie von der größten MIP-Ebene neu erstellt. Alle Änderungen, die an kleineren MIP-Ebenen vorgenommen wurden, gehen verloren. Wenn Sie die MIP-Ebenen speichern möchten, die Sie generiert haben, müssen Sie zum Speichern des Bilds das *DDS*-Format verwenden.<br /><br /> **Ansicht**<br /><br /> **Bildfrequenz**<br /> Bei aktivierter Option wird in der rechten oberen Ecke der Entwurfsoberfläche die Framerate angezeigt. Die Einzelbildrate ist die Anzahl von Bildern, die pro Sekunde gezeichnet werden. **Tipp:** Klicken Sie zum erneuten Ausführen des letzten Befehls auf die Schaltfläche **Erweitert**.|
+|**Erweitert**|Enthält zusätzliche Befehle und Optionen.<br /><br /> **Filter**<br /><br /> Stellt einige allgemeine Bildfilter bereit: **Schwarzweiß**, **Weichzeichner**, **Aufhellen**, **Abdunkeln**, **Kantenerkennung**, **Relief**, **Farben umkehren**, **Wellen**, **Sepia** und **Scharfzeichnen**.<br /><br /> **Grafik-Engines**<br /><br /> **Mit D3D11 rendern**<br /> Verwendet Direct3D 11 zum Rendern der Entwurfsoberfläche der **Bildbearbeitung**.<br /><br /> **Mit D3D11WARP rendern**<br /> Verwendet Direct3D 11 Windows Advanced Rasterization Platform (WARP) zum Rendern der Entwurfsoberfläche der **Bildbearbeitung**.<br /><br /> **Extras**<br /><br /> **Horizontal spiegeln**<br /> Vertauscht das Bild um seine horizontale bzw. X-Achse.<br /><br /> **Vertikal spiegeln**<br /> Vertauscht das Bild um seine vertikale bzw. Y-Achse.<br /><br /> **MIPS generieren**<br /> Generiert MIP-Ebenen für ein Bild. Wenn bereits MIP-Ebenen vorhanden sind, werden sie von der größten MIP-Ebene neu erstellt. Alle Änderungen, die an kleineren MIP-Ebenen vorgenommen wurden, gehen verloren. Wenn Sie die MIP-Ebenen speichern möchten, die Sie generiert haben, müssen Sie zum Speichern des Bilds das *DDS*-Format verwenden.<br /><br /> **Ansicht**<br /><br /> **Bildfrequenz**<br /> Bei aktivierter Option wird in der rechten oberen Ecke der Entwurfsoberfläche die Framerate angezeigt. Die Einzelbildrate ist die Anzahl von Bildern, die pro Sekunde gezeichnet werden. **Tipp:** Klicken Sie zum erneuten Ausführen des letzten Befehls auf die Schaltfläche **Erweitert**.|
 
 ### <a name="image-editor-toolbar"></a>Symbolleiste der Bildbearbeitung
 
@@ -137,7 +135,7 @@ In der folgenden Tabelle werden die Elemente der Symbolleiste des **Bildbearbeit
 
 In der folgenden Tabelle werden die Elemente der Symbolleiste der **Bildbearbeitung** beschrieben und in der Reihenfolge aufgelistet, in der sie auf der Symbolleiste von oben nach unten angezeigt werden:
 
-|Element der Symbolleiste|Beschreibung |
+|Element der Symbolleiste|Beschreibung|
 |------------------|-----------------|
 |**Zeichenstift**|Verwendet die aktive Farbauswahl, um einen Aliasstrich zu zeichnen. Sie können Farbe und Stärke des Strichs im Fenster **Eigenschaften** festlegen.|
 |**Pinsel**|Verwendet die aktive Farbauswahl, um einen Strich mit Antialiasing zu zeichnen. Sie können Farbe und Stärke des Strichs im Fenster **Eigenschaften** festlegen.|
@@ -152,7 +150,7 @@ In der folgenden Tabelle werden die Elemente der Symbolleiste der **Bildbearbeit
 
 ### <a name="work-with-mip-levels"></a>Arbeiten mit MIP-Ebenen
 
-Einige Bildformate, z.B. DirectDraw Surface (*.dds*), unterstützen MIP-Ebenen für den Detaillierungsgrad (LOD) des Texturraums. Informationen zum Generieren von und Arbeiten mit MIP-Ebenen finden Sie unter [Vorgehensweise: Erstellen und Ändern von MIP-Ebenen](../designers/how-to-create-and-modify-mip-levels.md).
+Einige Bildformate, z.B. DirectDraw Surface (*.dds*), unterstützen MIP-Ebenen für den Detaillierungsgrad (LOD) des Texturraums. Informationen zum Generieren von und Arbeiten mit MIP-Ebenen finden Sie unter [Vorgehensweise: Erstellen und Ändern von MIP-Ebenen](../designers/how-to-create-and-modify-mip-levels.md)
 
 ### <a name="work-with-transparency"></a>Arbeiten mit Transparenz
 
@@ -160,7 +158,7 @@ Einige Bildformate, z.B. DirectDraw Surface (*.dds*), unterstützen Transparenz.
 
 In der folgende Tabelle wird beschrieben, wie unterschiedliche Tools Transparenz anwenden:
 
-|Tool|Beschreibung |
+|Tool|Beschreibung|
 |----------|-----------------|
 |**Zeichenstift**, **Pinsel**, **Airbrush**, **Linie**, **Rechteck**, **Abgerundetes Rechteck**, **Ellipse**, **Text**|Erweitern Sie zum Verschmelzen der aktiven Farbauswahl mit dem Bild die Eigenschaftengruppe **Kanäle** im Fenster **Eigenschaften**, und aktivieren Sie das Kontrollkästchen **Zeichnen** des **Alphakanals**. Zeichnen Sie dann ganz normal.<br /><br /> Deaktivieren Sie das Kontrollkästchen **Zeichnen** des **Alphakanals**, und zeichnen Sie normal weiter, um mit der aktiven Farbauswahl zu zeichnen und den Alphawert des Bilds unverändert zu lassen.|
 |**Füllen**|Um die aktive Farbauswahl mit dem Bild zu verschmelzen, wählen Sie einfach den Bereich aus, der gefüllt werden soll.<br /><br /> Wenn das Bild mit der aktiven Farbauswahl (einschließlich des Werts des Alphakanals) überschrieben werden soll, halten Sie die **UMSCHALTTASTE** gedrückt, und wählen Sie dann den zu füllenden Bereich aus.|
@@ -171,7 +169,7 @@ In der folgende Tabelle wird beschrieben, wie unterschiedliche Tools Transparenz
 
 In der folgenden Tabelle werden die Bildeigenschaften beschrieben:
 
-|Eigenschaft|Beschreibung |
+|Eigenschaft|Beschreibung|
 |--------------|-----------------|
 |Breite|Die Breite des Bilds.|
 |Höhe|Die Höhe des Bilds.|
@@ -216,7 +214,7 @@ Nachdem Sie einen Bereich ausgewählt haben, können Sie dessen Größe oder die
 
 In der folgenden Tabelle werden die gültigen Zusatztasten beschrieben:
 
-|Ctrl|Shift|Alt|Beschreibung |
+|Ctrl|Shift|Alt|Beschreibung|
 |----------|-----------|---------|-----------------|
 ||||Ändert die Größe des Inhalts des ausgewählten Bereichs.|
 ||**UMSCHALTTASTE**||Ändert proportional die Größe des Inhalts des ausgewählten Bereichs.|
@@ -288,7 +286,7 @@ In der folgenden Tabelle werden die Tooleigenschaften beschrieben:
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|Beschreibung |
+|Titel|Beschreibung|
 |-----------|-----------------|
 |[Arbeiten mit 3D-Objekten für Spiele und Apps](../designers/working-with-3-d-assets-for-games-and-apps.md)|Bietet eine Übersicht über die Visual Studio-Tools, die Sie bei der Arbeit mit Grafikressourcen wie Texturen und Bildern, 3D-Modellen und Shadereffekten verwenden können.|
 |[Modell-Editor](../designers/model-editor.md)|In diesem Artikel wird beschrieben, wie sich der Modell-Editor von Visual Studio für die Arbeit mit 3D-Modellen einsetzen lässt.|

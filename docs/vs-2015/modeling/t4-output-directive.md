@@ -1,25 +1,22 @@
 ---
 title: T4 Output-Direktive | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 03a14993-47ad-4f2e-8032-57db28d5842a
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 2e2d30c5d1dee578da14608a4e272fea09184a76
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9262ec994ec847c38ec8d5c1ad95010a929cc4ba
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62549528"
 ---
-# <a name="t4-output-directive"></a>T4 Output-Anweisung
+# <a name="t4-output-directive"></a>T4 Output-Direktive
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Textvorlagen wird die `output`-Anweisung zum Definieren der Dateierweiterung und Codierung der umgewandelten Datei verwendet.  
@@ -58,7 +55,7 @@ In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Textvorlagen wird die `output`-A
  Jede gültige Dateierweiterung  
   
 ## <a name="encoding-attribute"></a>Encoding-Attribut  
- Gibt die zu verwendende Codierung bei der Generierung der Ausgabedatei an. Beispiel:  
+ Gibt die zu verwendende Codierung bei der Generierung der Ausgabedatei an. Zum Beispiel:  
   
  `<#@ output encoding="utf-8"#>`  
   
@@ -80,6 +77,3 @@ In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Textvorlagen wird die `output`-A
  `0` (Systemstandard)  
   
  Im Allgemeinen können Sie die WebName-Zeichenfolge oder die CodePage-Zahl aller von <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=fullName> zurückgegebenen Codierungen verwenden.
-
-
-

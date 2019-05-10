@@ -1,29 +1,31 @@
 ---
 title: IDebugGenericParamField::ConstraintCount | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - ConstraintCount
 - IDebugGenericParamField::ConstraintCount
 ms.assetid: 76bef0cb-8a3c-4ce5-87cc-1809de229f33
-author: gregvanl
+caps.latest.revision: 11
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 0fccc44f21ba297887d0aabd3736a78a63fb638f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f21e872fc04bc3d18ca3c332622844bfc57ece67
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880938"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62873565"
 ---
 # <a name="idebuggenericparamfieldconstraintcount"></a>IDebugGenericParamField::ConstraintCount
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Gibt die Anzahl von Einschränkungen, die dieser generischen Parameter zugeordnet sind.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT ConstraintCount(  
    ULONG32* pcConst  
 );  
@@ -45,7 +47,7 @@ int ConstraintCount(
 ## <a name="example"></a>Beispiel  
  Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugGenericParamFieldType** -Objekt, das macht die [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) Schnittstelle.  
   
-```cpp  
+```cpp#  
 HRESULT CDebugGenericParamFieldType::ConstraintCount(ULONG32* pcConst)  
 {  
     HRESULT hr = S_OK;  

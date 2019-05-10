@@ -1,7 +1,6 @@
 ---
 title: Allgemein, Umgebung, Dialogfeld "Optionen"
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
 - VS.Message.0x800a002e
@@ -16,24 +15,23 @@ helpviewer_keywords:
 - menus, customizing
 - Windows menu customizing
 - status bars, displaying
-- Visual Studio Start page, setting
 - IDE, startup options
 - editors, autocompletion
 - Options dialog box, General Environment
 - General Environment Options dialog box
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15af9d627e425df57443cbf663b2b231b74f9a7e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a2f860293669ddab035ddd1c53e09dbb9962df01
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945534"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790134"
 ---
-# <a name="general-environment-options-dialog-box"></a>Allgemein, Umgebung, Dialogfeld "Optionen"
+# <a name="options-dialog-box-environment--general"></a>Dialogfeld „Optionen“: Umgebung \> Allgemein
 
 Verwenden Sie diese Seite, um Farbschemas, Statusleisteneinstellungen, Dateierweiterungszuordnungen sowie weitere Optionen für die integrierte Entwicklungsumgebung (IDE) zu ändern. Sie können das Dialogfeld **Optionen** öffnen, indem Sie im Menü **Extras** auf **Optionen** klicken und dann im Ordner **Umgebung** die Seite **Allgemein** auswählen. Wenn diese Seite nicht in der Liste angezeigt wird, aktivieren Sie im Dialogfeld **Optionen** das Kontrollkästchen **Alle Einstellungen anzeigen**.
 
@@ -41,17 +39,36 @@ Verwenden Sie diese Seite, um Farbschemas, Statusleisteneinstellungen, Dateierwe
 
 **Farbdesign**
 
-Wählen Sie das Farbschema **Blau**, **Hell** oder **Dunkel** für die IDE aus.
+Wählen Sie **Blau**, **Hell**, **Dunkel** oder **Blau (zusätzlicher Kontrast)** als Farbdesign für die IDE aus.
 
-Sie können auch weitere vordefinierte Farbschemas installieren und benutzerdefinierte Schemas erstellen. Dazu müssen Sie den **Visual Studio Color Theme Editor** aus [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor) herunterladen und installieren. Nachdem Sie dieses Tool installiert haben, werden zusätzliche Farbschemas im Farbschemalistenfeld angezeigt.
+Sie können auch weitere vordefinierte Farbdesigns installieren und benutzerdefinierte Designs erstellen. Dazu müssen Sie den **Visual Studio Color Theme Editor** aus dem [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor) herunterladen und installieren. Nachdem Sie dieses Tool installiert haben, werden zusätzliche Farbdesigns im **Farbdesignlistenfeld** angezeigt.
 
-**Titelschreibweise in Menüleiste anwenden**
+**Traditionellen Menüleistenstil mit großen Anfangsbuchstaben verwenden**
 
-Menüs werden standardmäßig in **Titelschreibweise** angezeigt. Deaktivieren Sie diese Option, um die Menüs auf **Großbuchstaben** festzulegen.
+Menüs verwenden diesen Stil mit großen Anfangsbuchstaben standardmäßig. Deaktivieren Sie diese Option, wenn Sie stattdessen den Stil „Alles Großbuchstaben“ verwenden möchten.
+
+::: moniker range=">=vs-2019"
+
+**Rendering für Bildschirme mit anderen Pixeldichten optimieren (Neustart erforderlich)**
+
+Diese Option aktiviert oder deaktiviert den DPI-Grad (Dots Per Inch) pro Monitor (oder *PMA* (Per-Monitor Aware)). Wenn PMA aktiviert ist, wird die Visual Studio-Benutzeroberfläche in jedem Skalierungsfaktor der Monitoranzeige und jeder DPI-Konfiguration als hochauflösend angezeigt, auch wenn mehrere Monitore verwendet werden. Wenn Sie PMA aktivieren möchten, benötigen Sie das Windows-Update vom 10. April 2018 oder höhere Updates und mindestens .NET Framework 4.8. (Diese Option wird ausgeblendet, wenn diese beiden Voraussetzungen nicht erfüllt sind.)
+
+> [!TIP]
+> - Windows 10 verfügt über die Einstellung **Windows kann versuchen, Apps mit unscharfer Darstellung zu korrigieren**. Wenn Sie diese Windows-Einstellung auf **Ein** stellen, ist die Wirkung vernachlässigbar, wenn Sie die Option **Rendering für Bildschirme mit anderen Pixeldichten optimieren** aktiviert haben.
+> - Windows 10 bietet außerdem eine **Problembehandlung bei der Programmkompatibilität**. Es ist nicht ratsam, die Darstellung von Visual Studio mit dieser Problembehandlung zu korrigieren.
+
+::: moniker-end
 
 **Visuelle Darstellung automatisch basierend auf der Clientleistung anpassen**
 
 Gibt an, ob Visual Studio die Anpassung der visuellen Darstellung automatisch festlegt oder Sie die Anpassung explizit festlegen. Mit dieser Anpassung können Sie die Darstellung von Farben von Farbverläufen in gleichmäßige Farben ändern oder die Verwendung von Animationen in Menüs oder Popupfenstern einschränken.
+
+::: moniker range="vs-2017"
+
+> [!TIP]
+> Windows 10 verfügt über die Einstellung **Windows kann versuchen, Apps mit unscharfer Darstellung zu korrigieren**. Es ist empfehlenswert, diese Einstellung auf **Ein** einzustellen, wenn Visual Studio auf dem Monitor unscharf angezeigt wird. Erwägen Sie ein Upgrade auf [Visual Studio-2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), das über eine erheblich verbesserte Anzeigeschärfe verfügt, da es sich um eine PMA-Anwendung (mit monitorspezifischen DPI-Werten kompatibel) handelt.
+
+::: moniker-end
 
 **Enable rich client experience** (Umfassende visuelle Clientdarstellung aktivieren)
 
@@ -63,13 +80,13 @@ Verwendet Hardwaregrafikbeschleunigung, sofern verfügbar, anstelle von Software
 
 ## <a name="other"></a>Andere
 
-**Im Menü „Fenster“ angezeigte Elemente**
+**Anzuzeigende Elemente im Windows-Menü**
 
-Passt die Anzahl der Fenster an, die in der Fensterliste des Menüs **Fenster** angezeigt werden. Geben Sie eine Zahl zwischen 1 und 24 ein. Die Standardanzahl ist 10.
+Passt die Anzahl der Fenster an, die in der Fensterliste des Menüs **Fenster** angezeigt werden. Geben Sie eine Zahl zwischen 1 und 24 ein. Der Standardwert ist 10.
 
 **In den Listen der zuletzt verwendeten Elemente angezeigte Elemente**
 
-Passt die Anzahl der zuletzt geöffneten Projekte und Dateien an, die im Menü **Datei** angezeigt werden. Geben Sie eine Zahl zwischen 1 und 24 ein. Die Standardanzahl ist 10. Dies ist eine einfache Möglichkeit, zuletzt verwendete Projekte und Dateien abzurufen.
+Passt die Anzahl der zuletzt geöffneten Projekte und Dateien an, die im Menü **Datei** angezeigt werden. Geben Sie eine Zahl zwischen 1 und 24 ein. Der Standardwert ist 10. Dies ist eine einfache Möglichkeit, zuletzt verwendete Projekte und Dateien abzurufen.
 
 **Statusleiste anzeigen**
 

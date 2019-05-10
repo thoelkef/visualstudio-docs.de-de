@@ -1,31 +1,33 @@
 ---
 title: IDebugMemoryContext2::Subtract | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugMemoryContext2::Subtract
 helpviewer_keywords:
 - Subtract method
 - IDebugMemoryContext2::Subtract method
 ms.assetid: 63df14c7-8d7e-47c1-afa7-5a1ab5d8eaba
-author: gregvanl
+caps.latest.revision: 13
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 0b57386867d76e4c31181c13336973df3502bf34
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6bc84d1658fe71131f75825fa4b8b50d8aa9e31b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53901859"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62918764"
 ---
 # <a name="idebugmemorycontext2subtract"></a>IDebugMemoryContext2::Subtract
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Subtrahiert den angegebenen Wert aus dem aktuellen Kontext aus, und gibt Sie einen neuen Kontext zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT Subtract(   
    UINT64                 dwCount,  
    IDebugMemoryContext2** ppMemCxt  

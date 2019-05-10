@@ -1,14 +1,9 @@
 ---
 title: Elementmetadaten bei der Batchverarbeitung von Aufgaben | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - batching [MSBuild]
 - MSBuild, batching
@@ -18,18 +13,17 @@ ms.assetid: 31e480f8-fe4d-4633-8c54-8ec498e2306d
 caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c117f6864aadd7c981aa2b89302c06ccfd6c9768
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 15a6eeea6ebf75513419cc763b2e29a6b6264391
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436795"
 ---
 # <a name="item-metadata-in-task-batching"></a>Elementmetadaten bei der Batchverarbeitung von Aufgaben
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] kann Elementlisten anhand von Elementmetadatenelementen in verschiedene Kategorien oder Batches unterteilen und eine Aufgabe einmal mit jedem Batch ausführen. Es ist schwierig zu erkennen, welche Elemente mit welchem Batch übergeben werden. In diesem Artikel werden die folgenden häufig auftretenden Szenarios thematisiert, bei denen die Batchverarbeitung ein Bestandteil ist.  
   
 - Unterteilen einer Elementliste in Batches  
@@ -92,7 +86,7 @@ ms.locfileid: "49923783"
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] kann mehrere Elementlisten anhand desselben Elementmetadatenelements in Batches unterteilen. Dadurch können verschiedene Elementlisten einfacher in Batches unterteilt werden, um mehrere Assemblys zu erstellen. Beispielsweise kann eine Elementliste mit CS-Dateien, die in Anwendungsbatches und einen Assemblybatch unterteilt sind, sowie eine Elementliste mit Ressourcendateien vorhanden sein, die in ein Anwendungsbatch und ein Assemblybatch unterteilt ist. In diesem Fall können Sie die Batchverarbeitung nutzen, um diese Elementlisten an eine Aufgabe zu übergeben und sowohl die Anwendung als auch die Assembly zu erstellen.  
   
 > [!NOTE]
->  Wenn eine Elementliste, die an eine Aufgabe übergeben wird, keine Elemente mit dem Metadatenelement enthält, auf das verwiesen wird, werden sämtliche Elemente in dieser Elementliste an jeden Batch übergeben.  
+> Wenn eine Elementliste, die an eine Aufgabe übergeben wird, keine Elemente mit dem Metadatenelement enthält, auf das verwiesen wird, werden sämtliche Elemente in dieser Elementliste an jeden Batch übergeben.  
   
  Im untenstehenden Beispiel wird dargestellt, wie Sie mehrere Elementlisten anhand von Elementmetadatenelementen in Batches unterteilen können. Die Elementlisten `ExampColl` und `ExampColl2` werden jeweils anhand des Elementmetadatenelements `Number` in drei Batches unterteilt. Dadurch, dass `%(Number)` im `Text`-Attribut vorhanden ist, wird [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] benachrichtigt, dass eine Batchverarbeitung ausgeführt werden sollte. Die Elementlisten `ExampColl` und `ExampColl2` werden jeweils anhand des Elementmetadatenelements `Number` in drei Batches unterteilt, und jeder Batch wird einzeln an eine Aufgabe übergeben.  
   
@@ -233,6 +227,3 @@ Items in ExampColl: Item2;Item5
  [Batching (Batchverarbeitung)](../msbuild/msbuild-batching.md)   
  [MSBuild Concepts](../msbuild/msbuild-concepts.md)  (MSBuild-Grundlagen)  
  [MSBuild-Referenz](../msbuild/msbuild-reference.md)
-
-
-

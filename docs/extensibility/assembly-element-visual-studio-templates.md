@@ -11,91 +11,87 @@ helpviewer_keywords:
 ms.assetid: 9242f76a-1273-4b8a-8f26-6606f91829ef
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74e57ae61ddfaa24de4cc8e3e332b3fa9f7250c6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5caa0804ae4d90a23ae59195d2e610653437babe
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912898"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62843544"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Assembly-Element (Visual Studio-Vorlagen)
-Gibt Informationen zu einer Assembly, die die Vorlage verwendet, um einen Verweis von dieser Assembly zu Projekten hinzuzufügen.  
-  
- \<VSTemplate>  
- \<TemplateContent >  
- \<Verweise >  
- \<Verweis >  
- \<Assembly >  
-  
-## <a name="syntax"></a>Syntax  
-  
-```  
-<Assembly> AssemblyName </Assembly>  
-```  
-  
-## <a name="attributes-and-elements"></a>Attribute und Elemente  
- In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
-  
-### <a name="attributes"></a>Attribute  
- Keine  
-  
-### <a name="child-elements"></a>Untergeordnete Elemente  
- Keine  
-  
-### <a name="parent-elements"></a>Übergeordnete Elemente  
-  
-|Element|Beschreibung|  
-|-------------|-----------------|  
-|[Verweis](../extensibility/reference-element-visual-studio-templates.md)|Gibt den Assemblyverweis an, der hinzugefügt wird, wenn das Element einem Projekt hinzugefügt wird.|  
-  
-## <a name="text-value"></a>Textwert  
- Ein Textwert ist erforderlich.  
-  
- Dieser Text gibt die Assembly zu einem Projekt hinzugefügt werden soll, wenn die Item-Vorlage instanziiert wird. Diese Assembly muss in einem der folgenden Arten angegeben werden:  
-  
--   Als vollständige AssemblyName. Zum Beispiel:  
-  
-    ```  
-    <Assembly>  
-        MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Custom = null.  
-    </Assembly>  
-    ```  
-  
--   Als einfachen Text-Verweis. Zum Beispiel:  
-  
-    ```  
-    <Assembly> System </Assembly>  
-    ```  
-  
-## <a name="remarks"></a>Hinweise  
- `Assembly` ist ein erforderliches untergeordnetes Element von `Reference`.  
-  
- Die `Reference`, `References,` und `Assembly` Elemente können nur verwendet werden, *VSTEMPLATE* Dateien mit einer `Type` -Attributwert `Item`.  
-  
-## <a name="example"></a>Beispiel  
- Das folgende Beispiel veranschaulicht die `TemplateContent` Element einer Elementvorlage. Dieser XML-Code fügt Verweise auf die *"System.dll"* und *"System.Data.dll"* Assemblys.  
-  
-```  
-<TemplateContent>  
-    <References>  
-        <Reference>  
-            <Assembly>  
-                System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089  
-            </Assembly>  
-        </Reference>  
-        <Reference>  
-            <Assembly>  
-                System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089  
-            </Assembly>  
-        </Reference>  
-    </References>  
-    ...  
-</TemplateContent>  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [Schemareferenz zu Visual Studio-Vorlage](../extensibility/visual-studio-template-schema-reference.md)   
- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+Gibt Informationen zu einer Assembly, die die Vorlage verwendet, um einen Verweis von dieser Assembly zu Projekten hinzuzufügen.
+
+ \<VSTemplate > \<TemplateContent > \<Verweise > \<Verweis > \<Assembly >
+
+## <a name="syntax"></a>Syntax
+
+```
+<Assembly> AssemblyName </Assembly>
+```
+
+## <a name="attributes-and-elements"></a>Attribute und Elemente
+ In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
+
+### <a name="attributes"></a>Attribute
+ Keine
+
+### <a name="child-elements"></a>Untergeordnete Elemente
+ Keine
+
+### <a name="parent-elements"></a>Übergeordnete Elemente
+
+|Element|Beschreibung|
+|-------------|-----------------|
+|[Verweis](../extensibility/reference-element-visual-studio-templates.md)|Gibt den Assemblyverweis an, der hinzugefügt wird, wenn das Element einem Projekt hinzugefügt wird.|
+
+## <a name="text-value"></a>Textwert
+ Ein Textwert ist erforderlich.
+
+ Dieser Text gibt die Assembly zu einem Projekt hinzugefügt werden soll, wenn die Item-Vorlage instanziiert wird. Diese Assembly muss in einem der folgenden Arten angegeben werden:
+
+- Als vollständige AssemblyName. Zum Beispiel:
+
+    ```
+    <Assembly>
+        MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Custom = null.
+    </Assembly>
+    ```
+
+- Als einfachen Text-Verweis. Zum Beispiel:
+
+    ```
+    <Assembly> System </Assembly>
+    ```
+
+## <a name="remarks"></a>Hinweise
+ `Assembly` ist ein erforderliches untergeordnetes Element von `Reference`.
+
+ Die `Reference`, `References,` und `Assembly` Elemente können nur verwendet werden, *VSTEMPLATE* Dateien mit einer `Type` -Attributwert `Item`.
+
+## <a name="example"></a>Beispiel
+ Das folgende Beispiel veranschaulicht die `TemplateContent` Element einer Elementvorlage. Dieser XML-Code fügt Verweise auf die *"System.dll"* und *"System.Data.dll"* Assemblys.
+
+```
+<TemplateContent>
+    <References>
+        <Reference>
+            <Assembly>
+                System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+            </Assembly>
+        </Reference>
+        <Reference>
+            <Assembly>
+                System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+            </Assembly>
+        </Reference>
+    </References>
+    ...
+</TemplateContent>
+```
+
+## <a name="see-also"></a>Siehe auch
+- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
+- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

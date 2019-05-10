@@ -1,14 +1,9 @@
 ---
 title: IDiaTable | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: c99a2c44-7b72-4e3c-b963-25fe3df3a555
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 03f93cb75ce675409adcceec3f08b172581a3d8b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e6109e2eeb94481a2bff4a6467c490ec656d4c2f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721996"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442011"
 ---
 # <a name="idiatable"></a>IDiaTable
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ IDiaTable : IEnumUnknown
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IDiaTable::get__NewEnum](../../debugger/debug-interface-access/idiatable-get-newenum.md)|Ruft die [IEnumVARIANT-Schnittstelle](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e) Version von diesem Enumerator.|  
+|[IDiaTable::get__NewEnum](../../debugger/debug-interface-access/idiatable-get-newenum.md)|Ruft die [IEnumVARIANT-Schnittstelle](http://msdn.microsoft.com/139e3c93-faef-4003-9079-e0e94494db3e) Version von diesem Enumerator.|  
 |[IDiaTable::get_name](../../debugger/debug-interface-access/idiatable-get-name.md)|Ruft den Namen der Tabelle ab.|  
 |[IDiaTable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)|Ruft die Anzahl der Elemente in der Tabelle ab.|  
 |[IDiaTable::Item](../../debugger/debug-interface-access/idiatable-item.md)|Ruft einen Verweis auf einen bestimmten Eintrag Index ab.|  
@@ -56,25 +51,25 @@ IDiaTable : IEnumUnknown
   
  Die folgenden Schnittstellen implementiert werden, mit der `IDiaTable` Schnittstelle (d. h. Sie können Abfragen, die `IDiaTable` Schnittstelle für eine der folgenden Schnittstellen):  
   
--   [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)  
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)  
   
--   [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)  
+- [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)  
   
--   [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)  
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)  
   
--   [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)  
+- [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)  
   
--   [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)  
+- [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)  
   
--   [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)  
+- [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)  
   
--   [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)  
+- [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)  
   
 ## <a name="example"></a>Beispiel  
  Die erste Funktion, `ShowTableNames`, zeigt die Namen aller Tabellen in der Sitzung. Die zweite Funktion `GetTable`, sucht alle Tabellen für eine Tabelle, die eine angegebene Schnittstelle implementiert. Die dritte Funktion `UseTable`, zeigt, wie die `GetTable` Funktion.  
   
 > [!NOTE]
->  `CDiaBSTR` ist eine Klasse, umschließt ein `BSTR` und übernimmt automatisch das Freigeben der Zeichenfolge, bei die Instanziierung den Gültigkeitsbereich verlässt.  
+> `CDiaBSTR` ist eine Klasse, umschließt ein `BSTR` und übernimmt automatisch das Freigeben der Zeichenfolge, bei die Instanziierung den Gültigkeitsbereich verlässt.  
   
 ```cpp#  
 void ShowTableNames(IDiaSession *pSession)  
@@ -143,13 +138,10 @@ void UseTable(IDiaSession *pSession)
   
  Bibliothek: diaguids.lib  
   
- DLL: "MSDIA80.dll"  
+ DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Siehe auch  
  [Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)   
- [Idiaenumtables:: Item](../../debugger/debug-interface-access/idiaenumtables-item.md)   
+ [IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)   
  [IDiaEnumTables::Next](../../debugger/debug-interface-access/idiaenumtables-next.md)
-
-
-

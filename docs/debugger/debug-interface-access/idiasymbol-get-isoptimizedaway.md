@@ -7,32 +7,33 @@ dev_langs:
 ms.assetid: c18b1e38-b152-4a13-aba0-59faded5b2e6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 887bcaae0e87aabd3f2ecd9a051d33b0b41ed771
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: b0f8910d35106574912e4a01f7995bfe0f503e3f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917396"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62836237"
 ---
 # <a name="idiasymbolgetisoptimizedaway"></a>IDiaSymbol::get_isOptimizedAway
-Gibt an, ob die Variable entfernt optimiert ist.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_isOptimizedAway(   
-   BOOL* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pRetVal`  
- [out] Ein Zeiger auf eine `BOOL` , der angibt, ob die Variable entfernt optimiert ist.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Gibt an, ob die Variable entfernt optimiert ist.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_isOptimizedAway(
+   BOOL* pRetVal);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pRetVal`
+
+[out] Ein Zeiger auf eine `BOOL` , der angibt, ob die Variable entfernt optimiert ist.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

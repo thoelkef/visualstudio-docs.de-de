@@ -1,8 +1,6 @@
 ---
 title: MarkupCompilePass2-Aufgabe | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -15,15 +13,15 @@ helpviewer_keywords:
 - MarkupCompilePass2 task [WPF MSBuild], parameters
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 360a6c4d3e389583eece1adcc915f26091283653
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d929abc6581bf77dfd6ff5cf8b23d450a78a6f6c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942386"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817339"
 ---
 # <a name="markupcompilepass2-task"></a>MarkupCompilePass2-Aufgabe
 
@@ -31,7 +29,7 @@ Der [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)]-Task f�
 
 ## <a name="task-parameters"></a>Aufgabenparameter
 
-| Parameter | Beschreibung  |
+| Parameter | Beschreibung |
 | - | - |
 | `AlwaysCompileMarkupFilesInSeparateDomain` | Optionaler **Boolean**-Parameter.<br /><br /> Gibt an, ob der Task in einer separaten <xref:System.AppDomain> ausgeführt wird. Wenn dieser Parameter **FALSE** zurückgibt, wird der Task in derselben <xref:System.AppDomain> wie [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] und schneller ausgeführt. Wenn der Parameter **TRUE** zurückgibt, wird der Task in einer zweiten <xref:System.AppDomain>, die von [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] isoliert ist, und langsamer ausgeführt. |
 | `AssembliesGeneratedDuringBuild` | Optionaler **String[]**-Parameter.<br /><br /> Gibt Verweise auf Assemblys an, die sich während des Buildprozesses ändern. Eine Visual Studio-Projektmappe kann möglicherweise ein Projekt enthalten, das auf die kompilierte Ausgabe eines anderen Projekts verweist. In diesem Fall kann die kompilierte Ausgabe des zweiten Projekts **AssembliesGeneratedDuringBuild** hinzugefügt werden.<br /><br /> Hinweis: **AssembliesGeneratedDuringBuild** muss Verweise auf den vollständigen Satz von Assemblys enthalten, die von einer Projektmappe generiert werden. |
@@ -46,7 +44,7 @@ Der [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)]-Task f�
 | `RootNamespace` | Optionaler **String**-Parameter.<br /><br /> Gibt den Stammnamespace für Klassen innerhalb des Projekts an. **RootNamespace** wird auch als Standardnamespace für eine generierte Datei mit verwaltetem Code verwendet, wenn die entsprechende [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Datei nicht das `x:Class`-Attribut enthält. |
 | `XAMLDebuggingInformation` | Optionaler **Boolean**-Parameter.<br /><br /> Wenn **true**, werden Diagnoseinformationen generiert und in die kompilierte [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Datei einbezogen, um das Debuggen zu unterstützen. |
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Anmerkungen
 
 Vor dem Ausführen von **MarkupCompilePass2** müssen Sie eine temporäre Assembly generieren, die die Typen enthält, die von den [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Dateien verwendet werden, deren Markupkompilierungsschritt aufgeschoben wurde. Sie generieren die temporäre Assembly durch Ausführen der **GenerateTemporaryTargetAssembly**-Aufgabe.
 
@@ -58,11 +56,11 @@ Im folgenden Beispiel wird gezeigt, wie mit dem <xref:Microsoft.Build.Tasks.Wind
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <UsingTask 
-    TaskName="Microsoft.Build.Tasks.Windows.MarkupCompilePass2" 
+  <UsingTask
+    TaskName="Microsoft.Build.Tasks.Windows.MarkupCompilePass2"
     AssemblyFile="C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\PresentationBuildTasks.dll" />
   <Target Name="MarkupCompilePass2Task">
-    <MarkupCompilePass2 
+    <MarkupCompilePass2
       AssemblyName="WPFMSBuildSample"
       Language="C#"
       OutputType="WinExe"
@@ -74,9 +72,9 @@ Im folgenden Beispiel wird gezeigt, wie mit dem <xref:Microsoft.Build.Tasks.Wind
 
 ## <a name="see-also"></a>Siehe auch
 
-[WPF-MSBuild-Referenz](../msbuild/wpf-msbuild-reference.md)  
-[Referenz zu MSBuild-Tasks für WPF](../msbuild/wpf-msbuild-task-reference.md)  
-[MSBuild-Referenz](../msbuild/msbuild-reference.md)  
-[Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)  
-[Erstellen einer WPF-Anwendung (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)  
-[Übersicht über WPF-XAML-Browseranwendungen](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)
+- [WPF-MSBuild-Referenz](../msbuild/wpf-msbuild-reference.md)
+- [Referenz zu MSBuild-Tasks für WPF](../msbuild/wpf-msbuild-task-reference.md)
+- [MSBuild-Referenz](../msbuild/msbuild-reference.md)
+- [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
+- [Erstellen einer WPF-Anwendung (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+- [Übersicht über WPF-XAML-Browseranwendungen](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)

@@ -1,7 +1,6 @@
 ---
 title: 'CA2123: Überschreibungslinkaufrufe sollten mit der Basis identisch sein.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2123
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 4538ecd5-fc6f-4480-ab00-90b2ce4730db
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50ca27f9c6cf15c663514588a0c08bd5b91e3bd0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 52959279bca5aa0f86722050f6118f64997a901d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882090"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545048"
 ---
 # <a name="ca2123-override-link-demands-should-be-identical-to-base"></a>CA2123: Überschreibungslinkaufrufe sollten mit der Basis identisch sein.
 

@@ -1,30 +1,32 @@
 ---
 title: IDebugExpressionContext2::GetName | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugExpressionContext2::GetName
 helpviewer_keywords:
 - IDebugExpressionContext2::GetName
 ms.assetid: c2b70d22-17af-4986-a7e3-930910367216
-author: gregvanl
+caps.latest.revision: 11
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: acb504a961acd7455df0bb2b5f4f3801f7c063d5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 20004fd424bbb394c4c6d0a80df94d408e86285c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53903025"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62843398"
 ---
 # <a name="idebugexpressioncontext2getname"></a>IDebugExpressionContext2::GetName
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Ruft den Namen des dem Auswertungskontext ab.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT GetName(   
    BSTR* pbstrName  
 );  

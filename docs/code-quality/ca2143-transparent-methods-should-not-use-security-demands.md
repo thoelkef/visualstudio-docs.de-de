@@ -1,22 +1,21 @@
 ---
 title: 'CA2143: Transparente Methoden dürfen keine Sicherheitsanforderungen verwenden.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2143
 ms.assetid: 5d3923d7-cf40-4512-bc5c-0db0e0d6e25a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff92d7ed697db2f692ed17426bdb5dad38164cf8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 17160e5fd47491dddb22a28d4b3f7464ad3efb78
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954564"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806788"
 ---
 # <a name="ca2143-transparent-methods-should-not-use-security-demands"></a>CA2143: Transparente Methoden dürfen keine Sicherheitsanforderungen verwenden.
 

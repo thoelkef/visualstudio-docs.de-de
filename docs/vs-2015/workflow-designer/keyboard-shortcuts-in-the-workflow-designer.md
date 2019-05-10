@@ -1,11 +1,8 @@
 ---
 title: Tastenkombinationen im Workflow-Designer | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - WFDKeyboardShortcuts.UI
@@ -13,13 +10,13 @@ ms.assetid: 9be75438-a4a3-4781-94e5-45b7ec082358
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 409a39dc889970ee7ad0eff3354fa43de15b7dbe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: b1a03463d292fa1d4d980c62daa74b291d6a8cb1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895339"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951956"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Tastenkombinationen im Workflow-Designer
 Auf die gesamte Kernfunktionalität von [!INCLUDE[wfd1](../includes/wfd1-md.md)] kann über die Tastatur zugegriffen werden.  
@@ -30,7 +27,7 @@ Auf die gesamte Kernfunktionalität von [!INCLUDE[wfd1](../includes/wfd1-md.md)]
 ### <a name="workflow-designer-keyboard-shortcuts"></a>Tastenkombinationen des Workflow-Designers  
  In der folgenden Tabelle werden die Standardtastenkombinationen zusammengefasst, die [!INCLUDE[wfd2](../includes/wfd2-md.md)]-Befehlen zugewiesenen sind.  
   
-|Tastenkombination|Zweck|  
+|Verknüpfung|Zweck|  
 |--------------|-------------|  
 |STRG+E, A|Argument-Designer anzeigen oder ausblenden.|  
 |STRG+E, C|Die ausgewählte Aktivität direkt reduzieren.|  
@@ -57,13 +54,13 @@ Auf die gesamte Kernfunktionalität von [!INCLUDE[wfd1](../includes/wfd1-md.md)]
   
 - So verbinden Sie Aktivitäten:  
   
-  1.  Wählen Sie die Quellaktivität durch Drücken der TAB-TASTE aus.  
+  1. Wählen Sie die Quellaktivität durch Drücken der TAB-TASTE aus.  
   
-  2.  Drücken Sie STRG+E, M so oft wie erforderlich, um den Tastaturfokus auf die Zielaktivität zu verschieben.  
+  2. Drücken Sie STRG+E, M so oft wie erforderlich, um den Tastaturfokus auf die Zielaktivität zu verschieben.  
   
-  3.  Drücken Sie STRG+E, S, um die Zielaktivität der Auswahl hinzuzufügen.  
+  3. Drücken Sie STRG+E, S, um die Zielaktivität der Auswahl hinzuzufügen.  
   
-  4.  Drücken Sie STRG+E, F, um den Connector von der Quelle zum Ziel hinzuzufügen.  
+  4. Drücken Sie STRG+E, F, um den Connector von der Quelle zum Ziel hinzuzufügen.  
   
   Hinweise zum Verbinden von Aktivitäten mithilfe der Tastatur:  
   
@@ -76,18 +73,18 @@ Auf die gesamte Kernfunktionalität von [!INCLUDE[wfd1](../includes/wfd1-md.md)]
 ### <a name="expression-editing"></a>Ausdrucksbearbeitung  
  Standardmäßig sind die Standardtastenkombinationen für die Textbearbeitung in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] auch im Ausdrucks-Editor in [!INCLUDE[wfd2](../includes/wfd2-md.md)] gültig, wobei den folgenden Einschränkungen gelten:  
   
--   Eine Neuzuordnung der Tastenkombinationen für die folgenden Befehle ist wirkungslos. Beim Bearbeiten eines Ausdrucks können Sie nur über die Standardtastenkombinationen auf diese Befehle zugreifen.  
+- Eine Neuzuordnung der Tastenkombinationen für die folgenden Befehle ist wirkungslos. Beim Bearbeiten eines Ausdrucks können Sie nur über die Standardtastenkombinationen auf diese Befehle zugreifen.  
   
-    1.  Ausschneiden  
+    1. Ausschneiden  
   
-    2.  Kopieren  
+    2. Kopieren  
   
-    3.  Einfügen  
+    3. Einfügen  
   
-    4.  Alle auswählen  
+    4. Alles auswählen  
   
-    5.  Rückgängigmachen  
+    5. undo  
   
-    6.  Wiederholen  
+    6. Wiederholen  
   
--   Um die Tastenkombinationen für die Befehle zur Bearbeitung von Ausdrücken in [!INCLUDE[wfd2](../includes/wfd2-md.md)] in [!INCLUDE[vs2010](../includes/vs2010-md.md)] neu zuzuordnen, bearbeiten Sie die Verknüpfungen im Geltungsbereich von [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Im Geltungsbereich von Text-Editor vorgenommene Änderungen gelten nicht automatisch für [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Wenn Sie Verknüpfungen an beiden Stellen neu zuordnen möchten, müssen Sie die Änderungen zweimal (einmal für jeden Bereich) vornehmen.
+- Um die Tastenkombinationen für die Befehle zur Bearbeitung von Ausdrücken in [!INCLUDE[wfd2](../includes/wfd2-md.md)] in [!INCLUDE[vs2010](../includes/vs2010-md.md)] neu zuzuordnen, bearbeiten Sie die Verknüpfungen im Geltungsbereich von [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Im Geltungsbereich von Text-Editor vorgenommene Änderungen gelten nicht automatisch für [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Wenn Sie Verknüpfungen an beiden Stellen neu zuordnen möchten, müssen Sie die Änderungen zweimal (einmal für jeden Bereich) vornehmen.

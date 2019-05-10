@@ -1,14 +1,9 @@
 ---
-title: Erste Schritte mit Visual C++ in Visual Studio 2015 | Microsoft-Dokumentation
-ms.custom: ''
+title: Erste Schritte mit Visual C++ | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 2982a138-d979-4a05-af16-8a99bdab1499
 caps.latest.revision: 49
 author: ghogen
 ms.author: ghogen
-manager: douge
-ms.openlocfilehash: e98803f118746771b92f38ea9577a51598a595b8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: df01ce47f28d2fc6eabb0f182a82ddcf04b825e0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51731353"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822460"
 ---
 # <a name="getting-started-with-visual-c-in-visual-studio-2015"></a>Erste Schritte mit Visual C++ in Visual Studio 2015
-Dieser Inhalt wurde entfernt. Eine Einführung in Visual C++ in Visual Studio, finden Sie unter [Einführung in Visual C++](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).
+Dieser Inhalt wurde entfernt. Eine Einführung in Visual C++ in Visual Studio, finden Sie unter [Einführung in Visual C++](http://msdn.microsoft.com/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).

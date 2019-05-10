@@ -1,14 +1,9 @@
 ---
-title: Bezeichner (JavaScript) | Microsoft Docs
-ms.custom: ''
+title: Bezeichner erforderlich (JavaScript) | Microsoft-Dokumentation
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1010
 dev_langs:
@@ -16,31 +11,30 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 92eaa97f-7084-4618-9608-768b51a0600b
-caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ff69e433aaa68f88102219cdaf3a77746779370f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7e60975e8f356e749e5e32adb2e773526ab63141
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632870"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62934977"
 ---
 # <a name="expected-identifier-javascript"></a>Bezeichner erwartet (JavaScript)
-Sie verwendet etwas anderes als einen Bezeichner in einem Kontext, bei denen eine erforderlich war. Ein Bezeichner ist möglich:  
+Sie verwendet etwas anderes als ein Bezeichner in einem Kontext, in denen eine erforderlich war. Ein Bezeichner kann Folgendes sein:  
   
--   eine variable  
+- eine variable  
   
--   eine Eigenschaft  
+- eine Eigenschaft  
   
--   ein array  
+- ein Array ist,  
   
--   oder Funktionsname.  
+- oder einem Funktionsnamen.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Ändern Sie den Ausdruck auf der linken Seite des Gleichheitszeichens Kanton ein Bezeichners.  
+- Ändern Sie den Ausdruck aus, damit ein Bezeichner auf der linken Seite des Gleichheitszeichens wird angezeigt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Verwenden von Arrays](../../javascript/advanced/using-arrays-javascript.md)

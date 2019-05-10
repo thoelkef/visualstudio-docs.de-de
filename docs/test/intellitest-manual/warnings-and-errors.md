@@ -1,21 +1,20 @@
 ---
 title: Warnungen und Fehler | Microsoft IntelliTest-Test-Tool für Entwickler
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Warnings and errors
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: fe52e31c7401acd6bc10d469d98eabf2916f84be
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 85957c18abff9d49e62570375177aa262b08739b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899024"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952741"
 ---
 # <a name="warnings-and-errors"></a>Warnungen und Fehler
 
@@ -28,26 +27,26 @@ ms.locfileid: "53899024"
   * [MaxCalls überschritten](#maxcalls-exceeded)
   * [MaxStack überschritten](#maxstack-exceeded)
   * [MaxRuns überschritten](#maxruns-exceeded)
-  * [MaxRunsWithoutNewTests überschritten](#maxrunswithoutnewtests-exceeded)<p />
+  * [MaxRunsWithoutNewTests überschritten](#maxrunswithoutnewtests-exceeded)
 
 * **Auflösen von Einschränkung**
-  * [Die Lösung kann nicht konkretisiert werden](#cannot-concretize-solution)<p />
+  * [Die Lösung kann nicht konkretisiert werden](#cannot-concretize-solution)
 
 * **Domänen**
   * [Benötigen Sie Hilfe bei der Objekterstellung?](#help-construct)
   * [Benötigen Sie Hilfe beim Suchen von Typen?](#help-types)
-  * [Verwendbaren Typ erraten](#usable-type-guessed)<p />
+  * [Verwendbaren Typ erraten](#usable-type-guessed)
 
 * **Ausführung**
   * [Unerwarteter Fehler während der Durchsuchung](#unexpected-exploration)
-  * [TargetInvocationException](#targetinvocationexception)<p />
+  * [TargetInvocationException](#targetinvocationexception)
 
 * **Instrumentierung**
   * [Nicht instrumentierte aufgerufene Methode](#uninstrumented-method-called)
   * [Externe aufgerufene Methode](#external-method-called)
   * [Nicht instrumentierbare aufgerufene Methode](#uninstrumentable-method-called)
   * [Probleme mit der Testfähigkeit](#testability-issue)
-  * [Einschränkung](#limitation)<p />
+  * [Einschränkung](#limitation)
 
 * **Interpreter**
   * [Erkannter Aufrufkonflikt](#observed-call-mismatch)

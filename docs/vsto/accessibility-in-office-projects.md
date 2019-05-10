@@ -1,7 +1,6 @@
 ---
 title: Barrierefreiheit in Office-Projekten
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,15 +12,15 @@ helpviewer_keywords:
 - accessibility [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 32d44c33192d9d4e4fdcf1b8db8cb47102a1df61
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a54c9d5322b35092d635edd00e3b200ee67997a9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833325"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945218"
 ---
 # <a name="accessibility-in-office-projects"></a>Barrierefreiheit in Office-Projekten
 
@@ -41,21 +40,21 @@ In den meisten Fällen erfüllen die Office-Projekten in Visual Studio Accessibi
 
 #### <a name="to-view-shortcut-keys-for-ribbon-tabs-and-controls-in-the-designer"></a>Um Tastenkombinationen für die Multifunktionsleiste Registerkarten und Steuerelemente im Designer anzuzeigen.
 
-1.  In Visual Studio auf die **Tools** Menü klicken Sie auf **Optionen**.
+1. In Visual Studio auf die **Tools** Menü klicken Sie auf **Optionen**.
 
-2.  Erweitern Sie die **Büroanwendungen** Knoten, und wählen **Microsoft Office Excel-Tastatur** oder **Microsoft Office Word-Tastatur**je nach Bedarf.
+2. Erweitern Sie die **Büroanwendungen** Knoten, und wählen **Microsoft Office Excel-Tastatur** oder **Microsoft Office Word-Tastatur**je nach Bedarf.
 
-3.  Wählen Sie **Dynamisches Tastaturschema**.
+3. Wählen Sie **Dynamisches Tastaturschema**.
 
      Es wird eine Meldung angezeigt, die besagt, dass Sie Visual Studio für die Änderung wirksam wird neu gestartet werden müssen.
 
-4.  Klicken Sie auf **OK**.
+4. Klicken Sie auf **OK**.
 
-5.  Starten Sie Visual Studio neu, und öffnen Sie Ihr Projekt.
+5. Starten Sie Visual Studio neu, und öffnen Sie Ihr Projekt.
 
-6.  Öffnen Sie den Dokument oder die Arbeitsmappe Designer für das Projekt.
+6. Öffnen Sie den Dokument oder die Arbeitsmappe Designer für das Projekt.
 
-7.  Drücken Sie **F6** die Tastenkombinationen für das Menüband angezeigt werden soll.
+7. Drücken Sie **F6** die Tastenkombinationen für das Menüband angezeigt werden soll.
 
 ## <a name="accessibility-at-runtime"></a>Zugriff zur Laufzeit
 

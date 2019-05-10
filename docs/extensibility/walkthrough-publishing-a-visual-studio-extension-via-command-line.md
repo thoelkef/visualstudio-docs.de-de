@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 6ff9efc4-919d-4071-a80d-6dbdd2ceb2f8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb35365220ade512defc180b06e46b95999dfa7b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a2d68554ed982313e631938401f855a47dd9a35a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857214"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966265"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Exemplarische Vorgehensweise: Veröffentlichen einer Visual Studio-Erweiterung über die Befehlszeile
 
@@ -34,7 +34,7 @@ Eine Erweiterung veröffentlicht in Marketplace. Die Erweiterung möglich einer 
 |---------|---------|
 |Nutzlast (erforderlich) | Entweder ein Pfad zu der Nutzlast zum Veröffentlichen oder einen Link zu als die "Weitere Informationen-URL" verwenden. |
 |PublishManifest (erforderlich) | Pfad zu der veröffentlichen-Manifestdatei zu verwenden. |
-|ignoreWarnings | Liste mit Warnungen beim Veröffentlichen einer Extension ignoriert werden sollen. Diese Warnungen werden als Nachrichten von der Befehlszeile angezeigt, beim Veröffentlichen einer Extension. (z. B. "VSIXValidatorWarning01, VSIXValidatorWarning02")  
+|ignoreWarnings | Liste mit Warnungen beim Veröffentlichen einer Extension ignoriert werden sollen. Diese Warnungen werden als Nachrichten von der Befehlszeile angezeigt, beim Veröffentlichen einer Extension. (z. B. "VSIXValidatorWarning01, VSIXValidatorWarning02")
 |personalAccessToken | Persönliches Zugriffstoken (PAT), die verwendet wird, auf den Verleger zu authentifizieren. Wenn nicht angegeben, wird die PAT der angemeldeten Benutzer abgerufen. |
 
 ```
@@ -50,7 +50,7 @@ Erstellt ein Publisher im Marketplace an. Protokolliert ebenfalls den Verleger, 
 |"DisplayName" (erforderlich) | Der Anzeigename des Herausgebers. |
 |PublisherName (erforderlich) | Der Name des Verlegers (z. B. den Bezeichner). |
 |PersonalAccessToken (erforderlich) | Persönliche Zugriffstoken, das zum Authentifizieren von des Verlegers verwendet wird. |
-|kurze Beschreibung | Eine kurze Beschreibung des Verlegers (nicht-Datei). |
+|shortDescription | Eine kurze Beschreibung des Verlegers (nicht-Datei). |
 |longDescription | Eine lange Beschreibung des Verlegers (nicht-Datei). |
 
 ```
@@ -92,7 +92,7 @@ Protokolliert einen Verleger auf dem Computer an.
 |---------|---------|
 |PersonalAccessToken (erforderlich | Persönliche Zugriffstoken, das zum Authentifizieren von des Verlegers verwendet wird. |
 |PublisherName (erforderlich) | Der Name des Verlegers (z. B. den Bezeichner). |
-|Überschreiben | Gibt an, dass alle vorhandenen Herausgeber mit dem neuen personal Access Token überschrieben werden soll. |
+|overwrite | Gibt an, dass alle vorhandenen Herausgeber mit dem neuen personal Access Token überschrieben werden soll. |
 
 ```
 VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publisherName "{Publisher Name}"
@@ -200,7 +200,7 @@ Um diese exemplarische Vorgehensweise befolgen zu können, müssen Sie das Visua
 
 In diesem Fall verwenden wir eine Standard-VSPackage-Erweiterung, aber die gleichen Schritte gelten für jede Art von Erweiterung.
 
-1. Erstellen Sie ein VSPackage in c# mit dem Namen "TestPublish", das einen Menübefehl verfügt. Weitere Informationen finden Sie unter [Erstellen Ihrer ersten Erweiterung: Hallo Welt](../extensibility/extensibility-hello-world.md).
+1. Erstellen Sie ein VSPackage in c# mit dem Namen "TestPublish", das einen Menübefehl verfügt. Weitere Informationen finden Sie unter [Erstellen Ihrer ersten Erweiterung: Hello World](../extensibility/extensibility-hello-world.md).
 
 ### <a name="package-your-extension"></a>Packen Sie die Erweiterung
 
@@ -290,7 +290,7 @@ Sie können die Erweiterung von Visual Studio Marketplace und auf Ihrem Computer
 
 ### <a name="to-remove-the-extension-from-your-computer"></a>Um die Erweiterung auf Ihrem Computer zu entfernen.
 
-1. In Visual Studio auf die **Tools** Menü klicken Sie auf **Erweiterungen und Updates...** .
+1. In Visual Studio auf die **Tools** Menü klicken Sie auf **Erweiterungen und Updates**.
 
 2. Wählen Sie "MyVsixExtension" aus, und klicken Sie dann auf **Deinstallieren**. Die Erweiterung wird dann für die Deinstallation geplant.
 

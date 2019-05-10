@@ -1,42 +1,35 @@
 ---
 title: Debuggen von XSLT | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 344940bd-c41e-4ed9-8458-3e3aa8e6bb37
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4d33096e1c76172622fc080dc23bc80d3a01d3cc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 3e190af751e125a65e4e6e3ed56166aa39f631c1
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198743"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001682"
 ---
-# <a name="debugging-xslt"></a>Debugging von XSLT
+# <a name="debug-xslt"></a>Debuggen von XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Mithilfe des Visual Studio-Debuggers können Sie XSLT debuggen. Der Debugger unterstützt das Festlegen von Haltepunkten, das Anzeigen des XSLT-Ausführungszustands und weitere Vorgänge. XSLT-Debugging ist in Visual Studio Team System und in der Professional Edition verfügbar.  
+Mithilfe des Visual Studio-Debuggers können Sie XSLT debuggen. Der Debugger unterstützt das Festlegen von Haltepunkten, das Anzeigen des XSLT-Ausführungszustands und weitere Vorgänge. XSLT-Debuggen ist in Visual Studio Professional Edition verfügbar.  
   
-## <a name="in-this-section"></a>In diesem Abschnitt  
- [Neues im XSLT-Debugger](../xml-tools/what-s-new-in-the-xslt-debugger.md)  
- In diesem Abschnitt werden neue Funktionen dieser Version des XSLT-Debuggers beschrieben.  
+## <a name="in-this-section"></a>In diesem Abschnitt
   
- [Gewusst wie: Starten des Debuggens von XSLT](../xml-tools/how-to-start-debugging-xslt.md)  
+ [Vorgehensweise: Starten des Debuggens von XSLT](../xml-tools/how-to-start-debugging-xslt.md)  
  In diesem Abschnitt wird das Starten des XSLT-Debuggers beschrieben.  
   
- [Gewusst wie: Verwenden von Haltepunkten bei XSLT](../xml-tools/how-to-use-breakpoints-with-xslt.md)  
+ [Vorgehensweise: Verwenden von Breakpoints mit XSLT](../xml-tools/how-to-use-breakpoints-with-xslt.md)  
  In diesem Abschnitt wird die Verwendung von Haltepunkten in einem Stylesheet beschrieben.  
   
- [Gewusst wie: Auswerten eines XPath-Ausdrucks](../xml-tools/how-to-evaluate-an-xpath-expression.md)  
+ [Vorgehensweise: Auswerten eines XPath-Ausdrucks](../xml-tools/how-to-evaluate-an-xpath-expression.md)  
  Beschreibt, wie Sie eine mithilfe von XPath-Ausdruck auswerten der **Schnellüberwachung** Dialogfeld.  
   
  [Exemplarische Vorgehensweise: Debuggen eines XSLT-Stylesheets](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)  
@@ -61,6 +54,5 @@ Mithilfe des Visual Studio-Debuggers können Sie XSLT debuggen. Der Debugger un
  [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md)  
  Dieser Abschnitt bietet eine Einführung in den Debugger von Visual Studio.  
   
- [Referenz zu XSLT](http://msdn.microsoft.com/en-us/678bcd68-cbbb-4be5-9dd2-40f94488a1cf)  
+ [Referenz zu XSLT](http://msdn.microsoft.com/678bcd68-cbbb-4be5-9dd2-40f94488a1cf)  
  In diesem Abschnitt finden Sie Referenzmaterial zu XSLT-Elementen und -Funktionen.
-

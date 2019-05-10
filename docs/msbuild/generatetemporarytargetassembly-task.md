@@ -15,21 +15,21 @@ helpviewer_keywords:
 ms.assetid: 92b6539c-6897-45e0-8989-0c234bbfe782
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87ec3fff69bd5d8ddf7ffdfdc5590e1c18a02038
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 864c15203b0b9601f2c9f5bd1421acf48120bb41
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977832"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>GenerateTemporaryTargetAssembly-Aufgabe
-Der [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)]-Task generiert eine Assembly, wenn mindestens eine <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly>-Seite in einem Projekt auf einen Typ verweist, der lokal in diesem Projekt deklariert ist. Die generierte Assembly wird entfernt, nachdem der Build abgeschlossen ist, oder wenn beim Buildprozess ein Fehler auftritt.  
-  
-## <a name="task-parameters"></a>Aufgabenparameter  
-  
+Der [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)]-Task generiert eine Assembly, wenn mindestens eine <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly>-Seite in einem Projekt auf einen Typ verweist, der lokal in diesem Projekt deklariert ist. Die generierte Assembly wird entfernt, nachdem der Build abgeschlossen ist, oder wenn beim Buildprozess ein Fehler auftritt.
+
+## <a name="task-parameters"></a>Aufgabenparameter
+
 | Parameter | Beschreibung |
 |--------------------------| - |
 | `AssemblyName` | Erforderlicher **String**-Parameter.<br /><br /> Gibt den Kurznamen der Assembly an, die für ein Projekt generiert wird, und ist auch der Name der temporär generierten Zielassembly. Wenn ein Projekt z.B. eine ausführbare [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)]-Datei mit dem Namen *WinExeAssembly.exe* generiert, hat der **AssemblyName**-Parameter den Wert **WinExeAssembly**. |
@@ -41,39 +41,39 @@ Der [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)]-Task ge
 | `MSBuildBinPath` | Erforderlicher **String**-Parameter.<br /><br /> Gibt den Speicherort von *MSBuild.exe* an, die zum Kompilieren der temporären Zielassembly erforderlich ist. |
 | `ReferencePath` | Optionaler **ITaskItem[]**-Parameter.<br /><br /> Gibt eine Liste von Assemblys nach Pfad und Namen an, auf die die Typen verweisen, die in die temporäre Zielassembly kompiliert werden. |
 | `ReferencePathTypeName` | Erforderlicher **String**-Parameter.<br /><br /> Gibt den Parameter an, der vom Kompilierungszielparameter (**CompileTargetName**) verwendet wird, der die Liste der Assemblyverweise (**ReferencePath**) angibt. Der entsprechende Wert ist **ReferencePath**. |
-  
-## <a name="remarks"></a>Hinweise  
- Im ersten Markupkompilierungsschritt, der von [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md) ausgeführt wird, kompiliert [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] Dateien in das Binärformat. Folglich benötigt der Compiler eine Liste der referenzierten Assemblys, die die Typen enthalten, die von den [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Dateien verwendet werden. Wenn jedoch eine [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Datei einen Typ verwendet, der im gleichen Projekt definiert ist, wird eine entsprechende Assembly für das Projekt erst dann erstellt, wenn das Projekt erstellt wird. Aus diesem Grund kann ein Assemblyverweis nicht beim ersten Markupkompilierungsschritt bereitgestellt werden.  
-  
- Stattdessen verschiebt **MarkupCompilePass1** die Konvertierung von [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Dateien, die Verweise auf Typen im gleichen Projekt enthalten, auf einen zweiten Markupkompilierungsschritt, der von [MarkupCompilePass2](../msbuild/markupcompilepass2-task.md) ausgeführt wird. Bevor **MarkupCompilePass2** ausgeführt wird, wird eine temporäre Assembly generiert. Diese Assembly enthält die Typen, die von den [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Dateien verwendet werden, deren Markupkompilierungsschritt aufgeschoben wurde. Ein Verweis auf die generierte Assembly wird **MarkupCompilePass2** während der Ausführung bereitgestellt, um die Konvertierung der Kompilierungs-[!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Dateien, deren Konvertierung aufgeschoben wurde, in das binäre Format zu ermöglichen.  
-  
-## <a name="example"></a>Beispiel  
- Im folgenden Beispiel wird eine temporäre Assembly generiert, da *Page1.xaml* einen Verweis auf einen Typ im gleichen Projekt enthält.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  <UsingTask  
-    TaskName="Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly"   
-    AssemblyFile="C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\PresentationBuildTasks.dll" />  
-  <Target Name="GenerateTemporaryTargetAssemblyTask">  
-    <GenerateTemporaryTargetAssembly  
-      AssemblyName="WPFMSBuildSample"  
-      CompileTargetName="CoreCompile"  
-      CompileTypeName="Compile"  
-      CurrentProject="FullBuild.proj"  
-      GeneratedCodeFiles="obj\debug\app.g.cs;obj\debug\Page1.g.cs;obj\debug\Page2.g.cs"  
-      ReferencePath="c:\windows\Microsoft.net\Framework\v2.0.50727\System.dll;C:\Program Files\Reference Assemblies\Microsoft\WinFx\v3.0\PresentationCore.dll;C:\Program Files\Reference Assemblies\Microsoft\WinFx\v3.0\PresentationFramework.dll;C:\Program Files\Reference Assemblies\Microsoft\WinFx\v3.0\WindowsBase.dll"  
-      IntermediateOutputPath=".\obj\debug\"  
-      MSBuildBinPath="$(MSBuildBinPath)"  
-      ReferencePathTypeName="ReferencePath"/>  
-  </Target>  
-</Project>  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [WPF-MSBuild-Referenz](../msbuild/wpf-msbuild-reference.md)   
- [Referenz zu MSBuild-Tasks](../msbuild/wpf-msbuild-task-reference.md)   
- [MSBuild-Referenz](../msbuild/msbuild-reference.md)   
- [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)   
- [Erstellen einer WPF-Anwendung (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)   
- [Übersicht über WPF-XAML-Browseranwendungen](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)
+
+## <a name="remarks"></a>Anmerkungen
+Im ersten Markupkompilierungsschritt, der von [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md) ausgeführt wird, kompiliert [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] Dateien in das Binärformat. Folglich benötigt der Compiler eine Liste der referenzierten Assemblys, die die Typen enthalten, die von den [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Dateien verwendet werden. Wenn jedoch eine [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Datei einen Typ verwendet, der im gleichen Projekt definiert ist, wird eine entsprechende Assembly für das Projekt erst dann erstellt, wenn das Projekt erstellt wird. Aus diesem Grund kann ein Assemblyverweis nicht beim ersten Markupkompilierungsschritt bereitgestellt werden.
+
+Stattdessen verschiebt **MarkupCompilePass1** die Konvertierung von [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Dateien, die Verweise auf Typen im gleichen Projekt enthalten, auf einen zweiten Markupkompilierungsschritt, der von [MarkupCompilePass2](../msbuild/markupcompilepass2-task.md) ausgeführt wird. Bevor **MarkupCompilePass2** ausgeführt wird, wird eine temporäre Assembly generiert. Diese Assembly enthält die Typen, die von den [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Dateien verwendet werden, deren Markupkompilierungsschritt aufgeschoben wurde. Ein Verweis auf die generierte Assembly wird **MarkupCompilePass2** während der Ausführung bereitgestellt, um die Konvertierung der Kompilierungs-[!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Dateien, deren Konvertierung aufgeschoben wurde, in das binäre Format zu ermöglichen.
+
+## <a name="example"></a>Beispiel
+Im folgenden Beispiel wird eine temporäre Assembly generiert, da *Page1.xaml* einen Verweis auf einen Typ im gleichen Projekt enthält.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <UsingTask
+    TaskName="Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly"
+    AssemblyFile="C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\PresentationBuildTasks.dll" />
+  <Target Name="GenerateTemporaryTargetAssemblyTask">
+    <GenerateTemporaryTargetAssembly
+      AssemblyName="WPFMSBuildSample"
+      CompileTargetName="CoreCompile"
+      CompileTypeName="Compile"
+      CurrentProject="FullBuild.proj"
+      GeneratedCodeFiles="obj\debug\app.g.cs;obj\debug\Page1.g.cs;obj\debug\Page2.g.cs"
+      ReferencePath="c:\windows\Microsoft.net\Framework\v2.0.50727\System.dll;C:\Program Files\Reference Assemblies\Microsoft\WinFx\v3.0\PresentationCore.dll;C:\Program Files\Reference Assemblies\Microsoft\WinFx\v3.0\PresentationFramework.dll;C:\Program Files\Reference Assemblies\Microsoft\WinFx\v3.0\WindowsBase.dll"
+      IntermediateOutputPath=".\obj\debug\"
+      MSBuildBinPath="$(MSBuildBinPath)"
+      ReferencePathTypeName="ReferencePath"/>
+  </Target>
+</Project>
+```
+
+## <a name="see-also"></a>Siehe auch
+- [WPF-MSBuild-Referenz](../msbuild/wpf-msbuild-reference.md)
+- [Referenz zu MSBuild-Tasks](../msbuild/wpf-msbuild-task-reference.md)
+- [MSBuild-Referenz](../msbuild/msbuild-reference.md)
+- [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
+- [Erstellen einer WPF-Anwendung (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+- [Übersicht über WPF-XAML-Browseranwendungen](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)

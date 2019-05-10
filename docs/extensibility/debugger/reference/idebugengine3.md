@@ -1,25 +1,27 @@
 ---
 title: IDebugEngine3 | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugEngine3
 helpviewer_keywords:
 - IDebugEngine3 interface
 ms.assetid: 8bdf4bb7-3b5d-4991-8981-772d4f6bb656
-author: gregvanl
+caps.latest.revision: 16
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 7110a69c84a131a600c903ac73fbb6acdde7cd64
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c043a05d2656dc1cc56377ad061854cd1aca9e7c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913435"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62920852"
 ---
 # <a name="idebugengine3"></a>IDebugEngine3
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Stellt eine einzelne Debug-Engine (DE), die steuert, das Debuggen von ein oder mehrere Module dar.  
   
 ## <a name="syntax"></a>Syntax  

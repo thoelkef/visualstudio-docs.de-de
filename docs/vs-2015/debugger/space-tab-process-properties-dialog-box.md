@@ -1,27 +1,22 @@
 ---
 title: Registerkarte "Speicherplatz", im Dialogfeld "Eigenschaften" Process | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Process properties for Windows NT
 ms.assetid: c4de1866-7447-48f7-aa88-28ad92c0b930
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2cab2263da44ba46d7fbbe301f61e51b5308ba73
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: de5df4c55feba8c9aaba0def7585029cc71426b5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51767437"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961782"
 ---
 # <a name="space-tab-process-properties-dialog-box"></a>Registerkarte "Speicherplatz", Dialogfeld "Prozesseigenschaften"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,15 +27,12 @@ Verwenden der **Speicherplatz** Tab, um den Adressbereich eines Prozesses unters
   
 |Eingabe|Beschreibung|  
 |-----------|-----------------|  
-|**Anzeigen als gekennzeichnet Speicherplatz**|Verwenden Sie dieses Listenfelds können Sie, um die Kategorie des Speicherplatzes (Image, zugeordnet, reserviert oder Zuweisung) auswählen.|  
+|**Anzeigen, wenn markiert als**|Verwenden Sie dieses Listenfelds können Sie, um die Kategorie des Speicherplatzes (Image, zugeordnet, reserviert oder Zuweisung) auswählen.|  
 |**Ausführbare Bytes**|Für die ausgewählte Kategorie, die Summe der gesamten Adressraum, den dieser Prozess verwendet wird. Ausführbare Speicher ist Speicher, die von Programmen ausgeführt werden können, aber nicht gelesen oder geschrieben werden kann.|  
-|**EXEC-Read-Only-Bytes**|Für die ausgewählte Kategorie, die Summe der gesamten Adressraum mit schreibgeschützten Eigenschaften, die diesen Prozess verwendet wird. EXEC-Read-only-Speicher ist Speicher, die sowohl ausgeführt als auch gelesen werden kann.|  
-|**EXEC-Lese-/ Schreibzugriff Bytes**|Für die ausgewählte Kategorie, die Summe der gesamten Adressraum mit Lese-/ Schreibzugriff-Eigenschaften, die diesen Prozess verwendet wird. EXEC-Lese-/ Schreibzugriff-Speicher ist Speicher, die Ausführung von Programmen als auch gelesen und geändert werden kann.|  
+|**Ausführb. Bytes (schreibgeschützt)**|Für die ausgewählte Kategorie, die Summe der gesamten Adressraum mit schreibgeschützten Eigenschaften, die diesen Prozess verwendet wird. EXEC-Read-only-Speicher ist Speicher, die sowohl ausgeführt als auch gelesen werden kann.|  
+|**Ausführb. Bytes (lesen/schreiben)**|Für die ausgewählte Kategorie, die Summe der gesamten Adressraum mit Lese-/ Schreibzugriff-Eigenschaften, die diesen Prozess verwendet wird. EXEC-Lese-/ Schreibzugriff-Speicher ist Speicher, die Ausführung von Programmen als auch gelesen und geändert werden kann.|  
 |**Kopieren – EXEC-geschriebene Bytes**|Für die ausgewählte Kategorie, die Summe der gesamten Adressraum an, der Ausführung von Programmen als auch gelesen und geschrieben werden kann. Diese Art von Schutz wird verwendet, wenn der Speicher muss zwischen Prozessen gemeinsam genutzt werden. Wenn die Prozesse, die nur den Arbeitsspeicher lesen, wird im gleichen Speicher verwendet werden. Wenn ein Prozess Schreibzugriff wünscht, wird eine Kopie dieser Arbeitsspeicher für den Prozess vorgenommen werden.|  
-|**Kein Zugriff Bytes**|Für die ausgewählte Kategorie, die Summe der gesamten Adressraum, der verhindert, dass einen Prozess verwenden. Eine zugriffsverletzung wird generiert, wenn schreiben oder lesen wird versucht.|  
-|**Nur-Lese Bytes**|Für die ausgewählte Kategorie, die Summe der gesamten Adressraum, der sowohl ausgeführt als auch gelesen werden kann.|  
-|**Lese-/ Schreibzugriff Bytes**|Für die ausgewählte Kategorie, die Summe der gesamten Adressraum, der ermöglicht, lesen und schreiben.|  
-|**Schreiben / kopieren-Bytes**|Für die ausgewählte Kategorie die Summe aus den Adressraum, ermöglicht Arbeitsspeicherfreigabe zum Lesen, aber nicht zum Schreiben. Wenn Prozesse diesen Arbeitsspeicher lesen, können sie den gleichen Arbeitsspeicher freigeben. Allerdings möchte, dass ein Prozess Lese-/Schreibzugriff auf diesen freigegebenen Speicher zugreifen, eine Kopie der, dass der Speicher für das Schreiben von erfolgt.|
-
-
-
+|**Bytes (kein Zugriff)**|Für die ausgewählte Kategorie, die Summe der gesamten Adressraum, der verhindert, dass einen Prozess verwenden. Eine zugriffsverletzung wird generiert, wenn schreiben oder lesen wird versucht.|  
+|**Bytes (schreibgeschützt)**|Für die ausgewählte Kategorie, die Summe der gesamten Adressraum, der sowohl ausgeführt als auch gelesen werden kann.|  
+|**Bytes (lesen/schreiben)**|Für die ausgewählte Kategorie, die Summe der gesamten Adressraum, der ermöglicht, lesen und schreiben.|  
+|**Bytes (schreiben/kopieren)**|Für die ausgewählte Kategorie die Summe aus den Adressraum, ermöglicht Arbeitsspeicherfreigabe zum Lesen, aber nicht zum Schreiben. Wenn Prozesse diesen Arbeitsspeicher lesen, können sie den gleichen Arbeitsspeicher freigeben. Allerdings möchte, dass ein Prozess Lese-/Schreibzugriff auf diesen freigegebenen Speicher zugreifen, eine Kopie der, dass der Speicher für das Schreiben von erfolgt.|

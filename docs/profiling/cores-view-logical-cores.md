@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 8a471929-9a26-43e4-adef-d3b40f00f9e3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2409f7be9913f74d71e0d4d2c63dac947ac0b6a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3544ca6c5f9dfe5326f51bb565ff012b654dc263
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876470"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553135"
 ---
 # <a name="cores-view-logical-cores"></a>Logische Kerne in der Kernansicht
-Jeder Kanalname steht für einen der logischen Kerne im System, für das ein Profil erstellt wurde. Bei der Benennung wird von 0 (null) bis zur Gesamtzahl der logischen Kerne gezählt. Bei einem System mit vier Kernen wird beispielsweise vom logischen Kern 0 (null) bis zum logischen Kern 3 gezählt.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Kernansicht](../profiling/cores-view.md)
+Jeder Kanalname steht für einen der logischen Kerne im System, für das ein Profil erstellt wurde. Bei der Benennung wird von 0 (null) bis zur Gesamtzahl der logischen Kerne gezählt. Bei einem System mit vier Kernen wird beispielsweise vom logischen Kern 0 (null) bis zum logischen Kern 3 gezählt.
+
+## <a name="see-also"></a>Siehe auch
+- [Kernansicht](../profiling/cores-view.md)

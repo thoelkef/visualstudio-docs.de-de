@@ -7,15 +7,15 @@ helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35f9e866f58d52b7f74ac0a136b0eeb49382c612
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 505678b52253d1efb21b06a2fb39d5250311167c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852637"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Debuggen für Einsteiger
 
@@ -64,7 +64,7 @@ Wenn Sie eine App ausführen, sehen Sie Fehler und falsche Ergebnisse normalerwe
 
 Das Ausführen einer App in einem Debugger (auch als *Debugmodus* bezeichnet) bedeutet, dass der Debugger alle Vorgänge während der Ausführung des Programms überwacht. Sie können die App zudem jederzeit pausieren, um ihren Zustand zu überprüfen, und den Code anschließend schrittweise durchlaufen, um jedes Detail in Echtzeit zu beobachten.
 
-In Visual Studio starten Sie den Debugmodus, indem Sie **F5** drücken, den Menübefehl **Debuggen** > **Debuggen starten** oder die Schaltfläche **Debuggen starten** (![Debuggen starten](../debugger/media/dbg-tour-start-debugging.png "Debuggen starten")) in der Debugsymbolleiste verwenden. Wenn Ausnahmen auftreten, führt die Ausnahmen-Hilfe von Visual Studio Sie zu der Stelle, an der die Ausnahme aufgetreten ist und zeigt weitere hilfreiche Informationen an.
+In Visual Studio starten Sie den Debugmodus, indem Sie **F5** drücken, den Menübefehl **Debuggen** > **Debuggen starten** oder die Schaltfläche **Debuggen starten** (![Debuggen starten](../debugger/media/dbg-tour-start-debugging.png "Debuggen starten")) in der Debugsymbolleiste verwenden. Wenn Ausnahmen auftreten, führt die Ausnahmen-Hilfe von Visual Studio Sie zu der Stelle, an der die Ausnahme aufgetreten ist und zeigt weitere hilfreiche Informationen an. Weitere Informationen zum Behandeln von Ausnahmen in Ihrem Code finden Sie unter [Debugging techniques and tools (Debugverfahren und Tools)](../debugger/write-better-code-with-visual-studio.md).
 
 Wenn keine Ausnahme ausgelöst wurde, haben Sie möglicherweise dennoch eine Idee, an welcher Stelle im Code Sie nach dem Problem suchen müssen. Hierfür verwenden Sie *Breakpoints* mit dem Debugger, damit Sie den Code gründlicher untersuchen können. Haltepunkte sind eine einfache und wichtige Funktion zum zuverlässigen Debuggen. Ein Breakpoint gibt an, wo Visual Studio im ausgeführten Code angehalten werden soll. So können Sie die Werte von Variablen, das Verhalten des Arbeitsspeichers oder die Sequenz, in der der Code ausgeführt wird, überprüfen.
 
@@ -78,21 +78,20 @@ Nun erstellen wir eine Anwendung, die einige Fehler enthält.
 
 1. Auf Ihrem Computer muss Visual Studio installiert sein, und in Visual Studio muss je nachdem, welchen Typ von App Sie erstellen möchten, entweder die Workload **.NET-Desktopentwicklung** oder die Workload **Plattformübergreifende .NET Core-Entwicklung** installiert sein.
 
-    Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  kostenlos herunterladen.
+    Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/)  kostenlos herunterladen.
 
     Wenn Sie die Workload installieren müssen und Visual Studio bereits installiert ist, klicken Sie auf **Extras** > **Tools und Features abrufen...**. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **.NET-Desktopentwicklung** (oder **Plattformübergreifende .NET Core-Entwicklung**) aus, und klicken Sie dann auf **Anpassen**.
 
-1. Öffnen Sie Visual Studio, und klicken Sie auf **Datei** > **Neu** > **Projekt**.
+1. Öffnen Sie Visual Studio.
 
-1. Wählen Sie eine Vorlage für Ihren Anwendungscode aus.
+    ::: moniker range=">=vs-2019"
+    Wählen Sie im Startfenster **Neues Projekt erstellen** aus. Geben Sie im Suchfeld den Begriff **Konsole** ein, und wählen Sie dann entweder **Konsolen-App (.NET Framework)** oder **Konsolen-App (.NET Core)** aus. Wählen Sie **Weiter** aus. Geben Sie einen Projektnamen wie **Konsolen-App-ErsteApp** ein, und klicken Sie dann auf **Erstellen**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialogfelds **Neues Projekt** unter **Visual C#** **Konsolen-App** und dann im mittleren Bereich wahlweise **Konsolen-App (.NET Framework)** oder **Konsolen-App (.NET Core)** aus. Geben Sie einen Namen wie **Konsolen-App-ErsteApp** ein, und klicken Sie dann auf **OK**.
+    ::: moniker-end
 
-    Klicken Sie für .NET Framework im Dialogfeld **Neues Projekt** unter „Installiert“ auf **Visual C#** > **Windows Desktop**, und wählen Sie dann im mittleren Bereich **Konsolenanwendung (.NET Framework)** aus.
-
-    Klicken Sie für .NET Core im Dialogfeld **Neues Projekt** unter „Installiert“ auf **Visual C#** > **.NET Core**, und wählen Sie dann im mittleren Bereich **Konsolenanwendung (.NET Core)** aus.
-
-    Wenn diese Vorlagen nicht angezeigt werden, müssen Sie die entsprechende Workload wie zuvor erläutert installieren.
-
-1. Geben Sie im Feld **Name** **ConsoleApp-FirstApp** ein, und klicken Sie auf **OK**.
+    Wenn die Projektvorlage **Konsolen-App (.NET Framework)** oder **Konsolen-App (.NET Core)** nicht angezeigt wird, navigieren Sie zu **Tools** > **Get Tools and Features** (Tools und Features abrufen), wodurch der Visual Studio-Installer geöffnet wird. Wählen Sie die Workload **.NET-Desktopentwicklung** oder die Workload **Plattformübergreifende .NET Core-Entwicklung** aus, und klicken Sie dann auf **Anpassen**.
 
     Visual Studio erstellt das Konsolenprojekt, das im Projektmappen-Explorer (rechter Bereich) angezeigt wird.
 
@@ -101,7 +100,7 @@ Nun erstellen wir eine Anwendung, die einige Fehler enthält.
     ```csharp
     using System;
     using System.Collections.Generic;
-    
+
     namespace ConsoleApp_FirstApp
     {
         class Program
@@ -112,7 +111,7 @@ Nun erstellen wir eine Anwendung, die einige Fehler enthält.
                 IterateThroughList();
                 Console.ReadKey();
             }
-    
+
             private static void IterateThroughList()
             {
                 var theGalaxies = new List<Galaxy>
@@ -124,33 +123,33 @@ Nun erstellen wir eine Anwendung, die einige Fehler enthält.
                 new Galaxy() { Name="Andromeda", MegaLightYears=3, GalaxyType=new GType('S')},
                 new Galaxy() { Name="Maffei 1", MegaLightYears=11, GalaxyType=new GType('E')}
             };
-    
+
                 foreach (Galaxy theGalaxy in theGalaxies)
                 {
                     Console.WriteLine(theGalaxy.Name + "  " + theGalaxy.MegaLightYears + ",  " + theGalaxy.GalaxyType);
                 }
-    
-                // Expected Output:  
-                //  Tadpole  400,  Spiral 
-                //  Pinwheel  25,  Spiral 
+
+                // Expected Output:
+                //  Tadpole  400,  Spiral
+                //  Pinwheel  25,  Spiral
                 //  Cartwheel, 500,  Lenticular
                 //  Small Magellanic Cloud .2,  Irregular
                 //  Andromeda  3,  Spiral
                 //  Maffei 1,  11,  Elliptical
             }
         }
-    
+
         public class Galaxy
         {
             public string Name { get; set; }
-    
+
             public double MegaLightYears { get; set; }
             public object GalaxyType { get; set; }
-    
+
         }
-    
+
         public class GType
-        { 
+        {
             public GType(char type)
             {
                 switch(type)
@@ -188,8 +187,8 @@ Nun erstellen wir eine Anwendung, die einige Fehler enthält.
     Die App wird gestartet, und der Debugger zeigt keine Ausnahmen an. Die Ausgabe im Konsolenfenster entspricht jedoch nicht Ihren Erwartungen. Folgende Ausgabe wird erwartet:
 
     ```
-    Tadpole  400,  Spiral 
-    Pinwheel  25,  Spiral 
+    Tadpole  400,  Spiral
+    Pinwheel  25,  Spiral
     Cartwheel, 500,  Lenticular
     Small Magellanic Cloud .2,  Irregular
     Andromeda  3,  Spiral
@@ -199,8 +198,8 @@ Nun erstellen wir eine Anwendung, die einige Fehler enthält.
     Stattdessen wird allerdings Folgendes ausgegeben:
 
     ```
-    Tadpole  400,  ConsoleApp_FirstApp.GType 
-    Pinwheel  25,  ConsoleApp_FirstApp.GType 
+    Tadpole  400,  ConsoleApp_FirstApp.GType
+    Pinwheel  25,  ConsoleApp_FirstApp.GType
     Cartwheel, 500,  ConsoleApp_FirstApp.GType
     Small Magellanic Cloud .2,  ConsoleApp_FirstApp.GType
     Andromeda  3,  ConsoleApp_FirstApp.GType
@@ -217,7 +216,7 @@ Nun erstellen wir eine Anwendung, die einige Fehler enthält.
     foreach (Galaxy theGalaxy in theGalaxies)
     {
         Console.WriteLine(theGalaxy.Name + "  " + theGalaxy.MegaLightYears + ",  " + theGalaxy.GalaxyType);
-    }    
+    }
     ```
 
     Wenn Sie einen Breakpoint festlegen, wird ein roter Punkt am linken Rand angezeigt.
@@ -247,13 +246,13 @@ Nun erstellen wir eine Anwendung, die einige Fehler enthält.
 1. Wenn Sie den Code betrachten, der für das Festlegen des Galaxietyps verwendet wird, werden Sie feststellen, dass die `GalaxyType`-Eigenschaft der `Galaxy`-Klasse auf `object` statt `GType` festgelegt ist.
 
     ```csharp
-    public object GalaxyType { get; set; }     
+    public object GalaxyType { get; set; }
     ```
 
 1. Ändern Sie den vorangehenden Code folgendermaßen:
 
     ```csharp
-    public GType GalaxyType { get; set; }     
+    public GType GalaxyType { get; set; }
     ```
 
 1. Klicken Sie in der Symbolleiste „Debuggen“ auf die Schaltfläche **Neu starten** ![App neu starten](../debugger/media/dbg-tour-restart.png "RestartApp") (**STRG** + **UMSCHALT** + **F5**), um den Code neu zu kompilieren und zu starten.
@@ -265,8 +264,8 @@ Nun erstellen wir eine Anwendung, die einige Fehler enthält.
     Die App wird ausgeführt, und eine Ausgabe wird angezeigt. Diese sieht nun gut aus, aber Sie werden feststellen, dass der Galaxietyp von „Small Magellanic Cloud“ nicht wie erwartet als „Irregular“ angezeigt wird, sondern gar nicht.
 
     ```
-    Tadpole  400,  Spiral 
-    Pinwheel  25,  Spiral 
+    Tadpole  400,  Spiral
+    Pinwheel  25,  Spiral
     Cartwheel, 500,  Lenticular
     Small Magellanic Cloud .2,
     Andromeda  3,  Spiral
@@ -283,7 +282,7 @@ Nun erstellen wir eine Anwendung, die einige Fehler enthält.
 
 1. Klicken Sie in der Symbolleiste „Debuggen“ auf die Schaltfläche **Neu starten** ![App neu starten](../debugger/media/dbg-tour-restart.png "RestartApp") (**STRG** + **UMSCHALT** + **F5**), um die App neu zu starten.
 
-    Der Debugger hält in der Codezeile an, in der Sie den Breakpoint festgelegt haben.  
+    Der Debugger hält in der Codezeile an, in der Sie den Breakpoint festgelegt haben.
 
 1. Zeigen Sie auf die Variable `type`. Sie sehen, dass der Wert (dem Zeichencode nach) `S` ist. Für Sie ist jedoch der Wert `I` relevant, da Sie wissen, dass der Galaxietyp „Irregular“ ist.
 
@@ -323,7 +322,7 @@ Wenn Sie den Codebereich mit dem Problem ermitteln, verwenden Sie den Debugger, 
 * Überprüfen Sie, ob die Anwendung den Code ausführt, den Sie erwarten. (In der Beispielanwendung haben Sie beispielsweise erwartet, dass der Code für die switch-Anweisung den Galaxietyp auf „Irregular“ festlegt, aber die App hat den Code wegen eines Tippfehlers übersprungen.)
 
 > [!TIP]
-> Verwenden Sie einen Debugger, um Fehler zu finden. Ein Debugger kann Fehler *nur dann* für Sie finden, wenn er den Zweck Ihres Codes kennt. Ein Tool kann den Zweck jedoch nur kennen, wenn Sie als Entwickler diesen eindeutig ausdrücken. Dies erreichen Sie mit dem Schreiben von [Komponententests](../test/improve-code-quality.md). 
+> Verwenden Sie einen Debugger, um Fehler zu finden. Ein Debugger kann Fehler *nur dann* für Sie finden, wenn er den Zweck Ihres Codes kennt. Ein Tool kann den Zweck jedoch nur kennen, wenn Sie als Entwickler diesen eindeutig ausdrücken. Dies erreichen Sie mit dem Schreiben von [Komponententests](../test/improve-code-quality.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

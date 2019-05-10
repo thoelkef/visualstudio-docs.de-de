@@ -2,22 +2,21 @@
 title: Workflow-Designer - SendAndReceiveReply-Vorlagendesigner
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.ServiceModel.Activities.SendAndReceiveReply.UI
 - System.ServiceModel.Activities.ReceiveReply.UI
 ms.assetid: 818a8c84-6593-416d-b016-1d91b85ffb68
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1bd37924a818fce26e3f3263aec691be66aee29
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e71615e90a23ad8ca6de6e01495de1ea8538a644
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960484"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62809543"
 ---
 # <a name="sendandreceivereply-template-designer"></a>SendAndReceiveReply-Vorlagendesigner
 
@@ -42,7 +41,6 @@ Weitere Informationen zur Verwendung der **senden** -Designers bei der Konfigura
 ### <a name="properties-of-receivereply"></a>Eigenschaften von ReceiveReply
 
 Die folgende Tabelle zeigt die <xref:System.ServiceModel.Activities.ReceiveReply> Eigenschaften und beschreibt, wie sie im Designer verwendet werden. Diese Eigenschaften können im Eigenschaftenraster bearbeitet werden, und einige auf der Oberfläche des Workflow-Designer bearbeitet werden kann.
-
 
 | Eigenschaftenname | Erforderlich | Verwendung |
 |-|----------|-|

@@ -1,13 +1,9 @@
 ---
 title: Verwendung regulärer Ausdrücke
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vsregularexpressionhelp
 - vs.regularexpressionhelp
@@ -22,13 +18,13 @@ ms.assetid: 718a617d-0e05-47e1-a218-9746971527f4
 caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5ca54797fe9a8aa4adac7883aaeda761ba08509d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 6906a351a9d93e566c1a184ed237beb15cbd7b89
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959585"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669340"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Verwendung regulärer Ausdrücke in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,12 +36,11 @@ Vor Visual Studio 2012 verwendete Visual Studio benutzerdefinierte Syntax für r
 > In Windows-Betriebssystemen enden die meisten Zeilen auf "\r\n" (ein Wagenrücklaufzeichen gefolgt von einer neuen Zeile). Diese Zeichen sind nicht sichtbar, aber im Editor vorhanden und werden an den .NET-Dienst regulärer Ausdrücke übergeben.
 
 > [!TIP]
-> Weitere Informationen zu regulären Ausdrücken, die in Ersetzungsmustern verwendet werden, finden Sie unter [Ersetzungen in regulären Ausdrücken](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e). Um eine nummerierte Erfassungsgruppe zu verwenden, lautet die Syntax zum Festlegen der nummerierten Gruppe `$1` und zum Festlegen der betreffenden Gruppe `(x)`. Z. B. der gruppierte reguläre Ausdruck `(\d)([a-z])` findet vier Übereinstimmungen in der folgenden Zeichenfolge: 1a 2b 3c 4d**. Die Ersetzungszeichenfolge `z$1` konvertiert diese Zeichenfolge in **z1 z2 z3 z4**.
+> Weitere Informationen zu regulären Ausdrücken, die in Ersetzungsmustern verwendet werden, finden Sie unter [Ersetzungen in regulären Ausdrücken](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e). Um eine nummerierte Erfassungsgruppe zu verwenden, lautet die Syntax zum Festlegen der nummerierten Gruppe `$1` und zum Festlegen der betreffenden Gruppe `(x)`. Z. B. der gruppierte reguläre Ausdruck `(\d)([a-z])` findet vier Übereinstimmungen in der folgenden Zeichenfolge: **1a 2b 3c 4d**. Die Ersetzungszeichenfolge `z$1` konvertiert diese Zeichenfolge in **z1 z2 z3 z4**.
 
 ## <a name="regular-expression-examples"></a>Beispiele für reguläre Ausdrücke
 
 Hier einige Beispiele:
-
 
 |                                                                                                                       Zweck                                                                                                                       |                                                     Ausdruck                                                     |                                                                          Beispiel                                                                          |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -73,7 +68,7 @@ Hier einige Beispiele:
 |                                                                                                           Übereinstimmung mit beliebigem Leerzeichen.                                                                                                           |                                                   (?([^\r\n])\s)                                                   |                                                `Public\sInterface` findet den Begriff „Public Interface“.                                                 |
 |                                                                                                             Übereinstimmung mit beliebigem numerischen Zeichen                                                                                                             |                                                         \d                                                         |                                                `\d` findet „3“ in „3456“, „2“ in „23“ und „1“ in „1“.                                                |
 |                                                                                                              Übereinstimmung mit einem Unicode-Zeichen                                                                                                              |                              "\uXXXX", wobei "XXXX"den Unicode-Zeichenwert angibt.                              |                                                            `\u0065` findet das Zeichen „e“.                                                            |
-|                                                                                                                 Übereinstimmung mit einem Bezeichner                                                                                                                 |                                         \b (*\w+&#124;[\w-[0-9\\*]] \w\*) \b                                          |                                                       Findet "type1", jedoch nicht &type1" oder "#define".                                                       |
+|                                                                                                                 Übereinstimmung mit einem Bezeichner                                                                                                                 |                                         \b(*\w+&#124;[\w-[0-9\\*]]\w\*)\b                                          |                                                       Findet "type1", jedoch nicht &type1" oder "#define".                                                       |
 |                                                                                                            Übereinstimmung mit einer Zeichenfolge in Anführungszeichen                                                                                                             |                                             ((\\".+?\\")&#124;('.+?'))                                             |                                                    Übereinstimmung mit einer beliebigen Zeichenfolge in einfachen oder doppelten Anführungszeichen                                                     |
 |                                                                                                             Übereinstimmung mit einer Hexadezimalzahl                                                                                                              |                                              \b0[xX]([0-9a-fA-F]\)\b                                               |                                                          Findet "0xc67f", jedoch nicht "0xc67fc67f".                                                           |
-|                                                                                                             Übereinstimmung mit ganzen Zahlen und Dezimalzahlen                                                                                                             |                                               \b[0-9]\*\\.\* [0-9] + \b                                               |                                                                     Findet "1.333".                                                                      |
+|                                                                                                             Übereinstimmung mit ganzen Zahlen und Dezimalzahlen                                                                                                             |                                               \b[0-9]\*\\.\*[0-9]+\b                                               |                                                                     Findet "1.333".                                                                      |

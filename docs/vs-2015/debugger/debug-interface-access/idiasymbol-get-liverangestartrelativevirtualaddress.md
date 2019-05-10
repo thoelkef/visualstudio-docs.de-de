@@ -1,14 +1,9 @@
 ---
 title: IDiaSymbol::get_liveRangeStartRelativeVirtualAddress | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 1da52539-9872-4c20-8eaa-74b6cb5f3b02
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 99bf3def61b46bd89bd63df56b4ee4897bd0cac5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3dc0c42fe5dd5bc99e806ffbc20f42aa897d4c22
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739791"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423249"
 ---
 # <a name="idiasymbolgetliverangestartrelativevirtualaddress"></a>IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ HRESULT get_liveRangeStartRelativeVirtualAddress ( 
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Die relative virtuelle Adresse zurückgegeben wird, den Anfang des Bereichs, in dem das Symbol gültig ist.  
   
 > [!NOTE]
->  Ein Fehlercode bedeutet, dass das Symbol nicht live Bereichsinformationen verfügt.  
+> Ein Fehlercode bedeutet, dass das Symbol nicht live Bereichsinformationen verfügt.  
   
 ## <a name="remarks"></a>Hinweise  
   
@@ -59,6 +54,3 @@ HRESULT get_liveRangeStartRelativeVirtualAddress ( 
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

@@ -2,7 +2,6 @@
 title: PROFILER_HEAP_OBJECT_RELATIONSHIP-Struktur | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e5658f70e6a24151af75f4455fc44c2c756b9e9
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 7a905a44f2ef686181c5a859699277d16f6cd374
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54091948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823620"
 ---
 # <a name="profilerheapobjectrelationship-structure"></a>PROFILER_HEAP_OBJECT_RELATIONSHIP-Struktur
 Stellt eine Beziehung eines Heapobjekts dar.  
@@ -32,10 +31,10 @@ typedef struct _PROFILER_HEAP_OBJECT_RELATIONSHIP{    PROFILER_HEAP_OBJECT_NAME_
   
 |Member|Wert|Beschreibung|  
 |------------|-----------|-----------------|  
-|relationshipID-Element|[PROFILER_HEAP_OBJECT_NAME_ID-Typ](../../winscript/reference/profiler-heap-object-name-id-type.md)|Die ID des Relationship-Namen, von [IActiveScriptProfilerHeapEnum::GetNameIdMap](../../winscript/reference/iactivescriptprofilerheapenum-getnameidmap.md).|  
+|relationshipId|[PROFILER_HEAP_OBJECT_NAME_ID-Typ](../../winscript/reference/profiler-heap-object-name-id-type.md)|Die ID des Relationship-Namen, von [IActiveScriptProfilerHeapEnum::GetNameIdMap](../../winscript/reference/iactivescriptprofilerheapenum-getnameidmap.md).|  
 |relationshipInfo|[PROFILER_RELATIONSHIP_INFO-Enumeration](../../winscript/reference/profiler-relationship-info-enumeration.md)|Informationen über die Beziehung.|  
 |numberValue|double|Der Zahlenwert. Nur einer der `numberValue` / `stringValue` / `objectId` / `externalObjectAddress` wird festgelegt, basierend auf den `relationshipInfo` Wert.|  
 |stringValue|LPCWSTR|Der Zeichenfolgenwert.|  
-|Objekt-ID|[PROFILER_HEAP_OBJECT_ID-Typ](../../winscript/reference/profiler-heap-object-id-type.md)|Die ID des Heapobjekts.|  
+|objectId|[PROFILER_HEAP_OBJECT_ID-Typ](../../winscript/reference/profiler-heap-object-id-type.md)|Die ID des Heapobjekts.|  
 |externalObjectAddress|[PROFILER_EXTERNAL_OBJECT_ADDRESS-Typ](../../winscript/reference/profiler-external-object-address-type.md)|Die externe Objektadresse.|  
-|Teilzeichenfolge|[PROFILER_PROPERTY_TYPE_SUBSTRING_INFO-Struktur](../../winscript/reference/profiler-property-type-substring-info-structure.md)|Die Informationen über den Typ der Teilzeichenfolge.|
+|subString|[PROFILER_PROPERTY_TYPE_SUBSTRING_INFO-Struktur](../../winscript/reference/profiler-property-type-substring-info-structure.md)|Die Informationen über den Typ der Teilzeichenfolge.|

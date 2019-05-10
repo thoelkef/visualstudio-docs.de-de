@@ -1,14 +1,9 @@
 ---
 title: Target-Element (MSBuild) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Target
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: 350f6fc2-86b3-45f2-a31e-ece0e6bd4dca
 caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bc4224930782e24b20d3e9720c517304b0153f2d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f14815502a33fb7d49a10c2724c57a4a0d86e9f7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173406"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651447"
 ---
 # <a name="target-element-msbuild"></a>Target-Element (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Enthält eine Reihe von Aufgaben, die [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] sequenziell ausführt.  
   
  \<Project>  
@@ -69,8 +63,8 @@ Enthält eine Reihe von Aufgaben, die [!INCLUDE[vstecmsbuild](../includes/vstecm
 |---------------|-----------------|  
 |`Name`|Erforderliches Attribut.<br /><br /> Der Name des Ziels.|  
 |`Condition`|Optionales Attribut.<br /><br /> Die auszuwertende Bedingung. Ergibt die Bedingung `false`, führt das Ziel den Hauptteil des Ziels oder alle Ziele nicht aus, die im `DependsOnTargets`-Attribut festgelegt sind. Weitere Informationen zu Bedingungen finden Sie unter [Bedingungen](../msbuild/msbuild-conditions.md).|  
-|`Inputs`|Optionales Attribut.<br /><br /> Die Dateien, die Eingaben in das Ziel bilden. Mehrere Dateien werden durch Semikolons getrennt. Der Zeitstempel der Dateien wird mit den Zeitstempeln von Dateien in `Outputs` verglichen, um festzustellen, ob die `Target` aktuell ist. Weitere Informationen finden Sie unter [Inkrementelle Builds](../msbuild/incremental-builds.md), [Vorgehensweise: Inkrementelles Erstellen](../msbuild/how-to-build-incrementally.md) und [Transformationen](../msbuild/msbuild-transforms.md).|  
-|`Outputs`|Optionales Attribut.<br /><br /> Die Dateien, die Ausgaben für dieses Ziel bilden. Mehrere Dateien werden durch Semikolons getrennt. Der Zeitstempel der Dateien wird mit den Zeitstempeln von Dateien in `Inputs` verglichen, um festzustellen, ob die `Target` aktuell ist. Weitere Informationen finden Sie unter [Inkrementelle Builds](../msbuild/incremental-builds.md), [Vorgehensweise: Inkrementelles Erstellen](../msbuild/how-to-build-incrementally.md) und [Transformationen](../msbuild/msbuild-transforms.md).|  
+|`Inputs`|Optionales Attribut.<br /><br /> Die Dateien, die Eingaben in das Ziel bilden. Mehrere Dateien werden durch Semikolons getrennt. Der Zeitstempel der Dateien wird mit den Zeitstempeln von Dateien in `Outputs` verglichen, um festzustellen, ob die `Target` aktuell ist. Weitere Informationen finden Sie unter [inkrementelle Builds](../msbuild/incremental-builds.md), [Vorgehensweise: Inkrementelles Erstellen](../msbuild/how-to-build-incrementally.md), und [transformiert](../msbuild/msbuild-transforms.md).|  
+|`Outputs`|Optionales Attribut.<br /><br /> Die Dateien, die Ausgaben für dieses Ziel bilden. Mehrere Dateien werden durch Semikolons getrennt. Der Zeitstempel der Dateien wird mit den Zeitstempeln von Dateien in `Inputs` verglichen, um festzustellen, ob die `Target` aktuell ist. Weitere Informationen finden Sie unter [inkrementelle Builds](../msbuild/incremental-builds.md), [Vorgehensweise: Inkrementelles Erstellen](../msbuild/how-to-build-incrementally.md), und [transformiert](../msbuild/msbuild-transforms.md).|  
 |`Returns`|Optionales Attribut.<br /><br /> Eine Reihe von Elementen, die Aufgaben zur Verfügung gestellt werden, die dieses Ziel aufrufen, z.B. MSBuild-Aufgaben. Mehrere Zahlen werden durch Semikolons getrennt. Wenn die Ziele in der Datei keine `Returns` Attribute haben, werden stattdessen die Ausgabeattribute für diesen Zweck verwendet.|  
 |`KeepDuplicateOutputs`|Optionales boolesches Attribut.<br /><br /> Wenn `true`, werden mehrere Verweise auf dasselbe Element in den Rückgaben des Ziels erfasst.  Standardmäßig ist dieses Attribut `false`.|  
 |`BeforeTargets`|Optionales Attribut.<br /><br /> Eine durch Semikolon getrennte Liste von Zielnamen.  Wenn angegeben, bedeutet dies, dass das Ziel vor dem oder den angegebenen Zielen ausgeführt werden soll. Der Projektautor erweitert dann einen vorhandenen Satz von Zielen, ohne sie direkt zu ändern. Weitere Informationen finden Sie unter [Buildreihenfolge für Ziele](../msbuild/target-build-order.md).|  
@@ -128,6 +122,3 @@ Enthält eine Reihe von Aufgaben, die [!INCLUDE[vstecmsbuild](../includes/vstecm
 ## <a name="see-also"></a>Siehe auch  
  [Ziele](../msbuild/msbuild-targets.md)   
  [Project File Schema Reference](../msbuild/msbuild-project-file-schema-reference.md) (Referenz zum Projektdateischema von MSBuild)
-
-
-

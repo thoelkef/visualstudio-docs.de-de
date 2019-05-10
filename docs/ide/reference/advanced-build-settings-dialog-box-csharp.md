@@ -1,7 +1,6 @@
 ---
 title: Dialogfeld "Erweiterte Buildeinstellungen" (C#)
 ms.date: 06/20/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - cs.AdvancedBuildSettings
@@ -10,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 141f2dee-1563-4ce6-ba37-32920b082519
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 83dc69bb3856a7fe98e35cf66b0a6325c97a0651
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d42087b023718cd31528a2e5d60e2a43e34097c4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930139"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62792217"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Dialogfeld "Erweiterte Buildeinstellungen" (C#)
 
@@ -76,7 +75,7 @@ Gibt den Typ der Debuginformationen an, die vom Compiler generiert werden. Infor
 
    Macht ein Debuggen von Quellcode möglich, wenn das Programm im Debugger gestartet wird. Der Assembler wird jedoch nur angezeigt, wenn das aktive Programm an den Debugger angefügt ist.
 
--  **portable** (portabel)
+- **portable** (portabel)
 
    Erzeugt eine PDB-Datei, d.h. eine nicht plattformspezifische Symboldatei, die anderen Tools, besonders Debuggern, Informationen über die Erstellung und den Inhalt der wichtigsten ausführbaren Datei bereitstellt. Weitere Informationen finden Sie unter [Portable PDB](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md).
 

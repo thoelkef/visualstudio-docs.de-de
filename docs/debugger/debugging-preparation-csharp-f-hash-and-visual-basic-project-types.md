@@ -2,7 +2,6 @@
 title: Vorbereitung zum Debuggen C#, F#, und VB-Projekte | Microsoft-Dokumentation
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,40 +18,34 @@ helpviewer_keywords:
 ms.assetid: 7a0535f6-1cd4-4b51-ad34-f4a45b9f1ce3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 67833f3b4387c0606c3ce1f0b99cac50f0c0b501
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: MTE95
+ms.openlocfilehash: 6cedb5e0b8dd80aadc3ee3a9507b2210811fb1bf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063447"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851860"
 ---
-# <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Vorbereitung zum Debuggen: C#-, F#- und Visual Basic-Projekttypen
-In den Themen dieses Abschnitts wird erläutert, wie Sie C#-, F#- und [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-Projekttypen debuggen, die mithilfe der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projektvorlagen erstellt wurden.  
-  
- Beachten Sie, die Projekttypen, die zum Erstellen von DLLs als Ausgabe in gruppiert wurden [Debuggen von DLL-Projekten](../debugger/debugging-dll-projects.md) aufgrund der gemeinsamen Features.  
-  
-## <a name="in-this-section"></a>In diesem Abschnitt  
- [Empfohlene Eigenschafteneinstellungen](../debugger/managed-debugging-recommended-property-settings.md)  
- In diesem Abschnitt werden die empfohlenen für das Debuggen relevanten Eigenschafteneinstellungen für C#, F#- und Visual Basic-Projekte beschrieben.  
-  
- [Windows Forms-Anwendungen](../debugger/debugging-preparation-windows-forms-applications.md)  
- Beschreibt ein Windows-Anwendungsprojekt und enthält Anweisungen zum Debuggen, zum Ändern der standardmäßigen Debugkonfiguration sowie zum Starten einer Anwendung außerhalb von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und zum Herstellen einer Verbindung zu dieser Anwendung.  
-  
- [Konsolenprojekte](../debugger/debugging-preparation-console-projects.md)  
- Zusätzliche Hinweise zum Debuggen von C#-Konsolenanwendungen und [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-Konsolenanwendungen. Hier finden Sie u. a. Informationen zum Festlegen von Befehlszeilenargumenten, zum Starten der Anwendung über die Eingabeaufforderung, zum Schreiben von Daten in das Fenster Ausgabe und zur Problembehandlung im Fenster Konsole.  
-  
- [Windows-Dienste](../debugger/debugging-preparation-windows-services.md)  
- Beschreibt einen Windows-Dienst und enthält Links zu "Debuggen von Windows-Dienstanwendungen".  
-  
-## <a name="related-sections"></a>Verwandte Abschnitte  
- [Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)  
- Beschreibt die erforderlichen Einstellungen und Vorbereitungen für das Debuggen eines Programms mit dem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Debugger.  
-  
- [Debuggen von verwaltetem Code](../debugger/debugging-managed-code.md)  
- Beschreibt allgemeine Debugprobleme und Techniken für Anwendungen, die in verwaltetem Code geschrieben wurden.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Debuggersicherheit](../debugger/debugger-security.md)
+# <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Vorbereitung des Debugvorgangs: C#-, F#- und Visual Basic-Projekttypen
+In den Themen dieses Abschnitts wird erläutert, wie Sie C#-, F#- und [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-Projekttypen debuggen, die mithilfe der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projektvorlagen erstellt wurden.
+
+ Beachten Sie, die Projekttypen, die zum Erstellen von DLLs als Ausgabe in gruppiert wurden [Debuggen von DLL-Projekten](../debugger/debugging-dll-projects.md) aufgrund der gemeinsamen Features.
+
+## <a name="in-this-section"></a>In diesem Abschnitt
+ [Empfohlene Eigenschafteneinstellungen](../debugger/managed-debugging-recommended-property-settings.md) in diesem Abschnitt wird beschrieben, die empfohlene Debuggen relevanten eigenschafteneinstellungen für C#, F#, und Visual Basic-Projekte.
+
+ [Windows Forms-Anwendungen](../debugger/debugging-preparation-windows-forms-applications.md) wird beschrieben, ein Windows-Anwendungsprojekt und enthält Anweisungen für das Debuggen, Ändern der Standardkonfiguration für das Debuggen und Starten der Anwendung außerhalb von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] und anfügen zu.
+
+ [Konsolenprojekte](../debugger/debugging-preparation-console-projects.md) zusätzliche Hinweise zum Debuggen C# oder [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] konsolenanwendungen. Hier finden Sie u. a. Informationen zum Festlegen von Befehlszeilenargumenten, zum Starten der Anwendung über die Eingabeaufforderung, zum Schreiben von Daten in das Fenster Ausgabe und zur Problembehandlung im Fenster Konsole.
+
+ [Windows-Dienste](../debugger/debugging-preparation-windows-services.md) beschreibt einen Windows-Dienst und enthält einen Link zum Debuggen von Windows-Dienstanwendungen.
+
+## <a name="related-sections"></a>Verwandte Abschnitte
+ [Debugger, Einstellungen und Vorbereitung](../debugger/debugger-settings-and-preparation.md) beschreibt die erforderlichen Einstellungen und Vorbereitungen für das Sie ausführen müssen, um das Debuggen des Programms mit dem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Debugger.
+
+ [Debuggen von verwaltetem Code](../debugger/debugging-managed-code.md) behandelt allgemeine Debugprobleme und-Verfahren für Anwendungen, die in verwaltetem Code geschrieben.
+
+## <a name="see-also"></a>Siehe auch
+- [Debuggersicherheit](../debugger/debugger-security.md)

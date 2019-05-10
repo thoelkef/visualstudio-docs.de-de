@@ -1,44 +1,39 @@
 ---
 title: Unterstützung für Einstellungskategorien | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - settings, supporting with Visual Studio SDK
 - Visual Studio SDK, supporting settings
 ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
-manager: douge
-ms.openlocfilehash: 53abd3c9f35f16c2f2ae62e2c4f339a86477a8b3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b66724542d45aa6f57b7c2748c7c1cab1ec8c064
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244932"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436566"
 ---
 # <a name="support-for-settings-categories"></a>Unterstützung für Einstellungskategorien
-Eine Einstellungskategorie besteht aus einer Gruppe von Optionen, die die integrierte Entwicklungsumgebung (Integrated Development Environment; IDE) anpassen. Beispielsweise können Einstellungen das Layout der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Fenster und die Inhalte von Menüs steuern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+Eine Einstellungskategorie besteht aus einer Gruppe von Optionen, die die integrierte Entwicklungsumgebung (Integrated Development Environment; IDE) anpassen. Beispielsweise können Einstellungen das Layout der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Fenster und die Inhalte von Menüs steuern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um den **Assistent zum Importieren und Exportieren von Einstellungen**zu starten. Der Assistent bietet drei Optionen zur Auswahl: Exportieren, Importieren oder Zurücksetzen der Einstellungen. Durch die Auswahl von beispielsweise „Exportieren“ wird die Seite **Einstellungen für den Export auswählen** des Assistenten aufgerufen.  
   
  In der Strukturansicht im Navigationsbereich auf dieser Seite sind die Kategorien aufgeführt. Eine Kategorie ist eine Gruppe von verwandten Einstellungen, die als „benutzerdefinierter Einstellungspunkt“ angezeigt werden, d.h. als ein Kontrollkästchen. Verwenden Sie diese Kontrollkästchen, um die Kategorien auszuwählen, die in einer VSETTINGS-Datei dauerhaft gespeichert werden. Der Assistent ermöglicht das Benennen der VSETTINGS-Datei und das Angeben ihres Pfads.  
   
 > [!NOTE]
->  Die Einstellungen werden gespeichert oder als eine Kategorie wiederhergestellt, und individuelle Einstellungsnamen werden nicht im Assistenten angezeigt.  
+> Die Einstellungen werden gespeichert oder als eine Kategorie wiederhergestellt, und individuelle Einstellungsnamen werden nicht im Assistenten angezeigt.  
   
  Das Managed Package Framework (MPF) unterstützt die Erstellung von Einstellungskategorien mit einem Minimum an zusätzlichem Code.  
   
--   Sie erstellen ein VSPackage, um einen Container für die Kategorie bereitzustellen, indem Sie eine Unterklasse der <xref:Microsoft.VisualStudio.Shell.Package>-Klasse erstellen.  
+- Sie erstellen ein VSPackage, um einen Container für die Kategorie bereitzustellen, indem Sie eine Unterklasse der <xref:Microsoft.VisualStudio.Shell.Package>-Klasse erstellen.  
   
--   Sie erstellen die Kategorie selbst, indem Sie sie von der <xref:Microsoft.VisualStudio.Shell.DialogPage>-Klasse ableiten.  
+- Sie erstellen die Kategorie selbst, indem Sie sie von der <xref:Microsoft.VisualStudio.Shell.DialogPage>-Klasse ableiten.  
   
--   Sie verbinden die beiden mit dem <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>.  
+- Sie verbinden die beiden mit dem <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>.  
   
 ## <a name="support-for-settings-categories"></a>Unterstützung für Einstellungskategorien  
  Die <xref:Microsoft.VisualStudio.Shell.Package>-Klasse bietet Unterstützung für das Erstellen von Kategorien. Die<xref:Microsoft.VisualStudio.Shell.DialogPage>-Klasse implementiert eine Kategorie. Die Standardimplementierung von <xref:Microsoft.VisualStudio.Shell.DialogPage> bietet Benutzern Ihre öffentlichen Eigenschaften als Kategorie an. Weitere Informationen finden Sie unter [Creating a Settings Category](../extensibility/creating-a-settings-category.md).  
@@ -53,7 +48,7 @@ Eine Einstellungskategorie besteht aus einer Gruppe von Optionen, die die integr
  Der Registrierungspfad der Einstellungskategorie wird durch die Kombination von <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, dem Wort, UserSettings, der Einstellungskategorie und dem Namen des benutzerdefinierten Einstellungspunkts festgelegt. Die Namen der Einstellungskategorie und des benutzerdefinierten Einstellungspunkts werden verknüpft und durch einen Unterstrich getrennt, um den kanonischen, nicht lokalisierten Namen zu bilden, der in der Registrierung erscheint. Wenn die Einstellungskategorie z.B. „My Category“ ist, der benutzerdefinierte Einstellungspunkt „My Settings“ ist, und ApplicationRegistryRoot ist „HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp“, dann verfügt die Einstellungskategorie über den Registrierungsschlüssel „HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\UserSettings\My Category_My Settings“.  
   
 > [!NOTE]
->  Der kanonische Name wird nicht in einer Benutzeroberfläche angezeigt. Er wird verwendet, um einen lesbaren Namen der Einstellungskategorie zuzuordnen, so wie ein programmatischer Bezeichner (ProgID).  
+> Der kanonische Name wird nicht in einer Benutzeroberfläche angezeigt. Er wird verwendet, um einen lesbaren Namen der Einstellungskategorie zuzuordnen, so wie ein programmatischer Bezeichner (ProgID).  
   
 ### <a name="settings-category-attribute"></a>Das Attribut der Einstellungskategorie  
  Die <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> bestimmt die Zuordnung von Kategorien zu benutzerdefinierten einstellungspunkten im der **-Import- und Exportassistenten Einstellungen** durch Zuordnen einer Kategorie mit dem VSPackage, das es bereitstellt. Betrachten Sie das folgende Codefragment:  
@@ -69,4 +64,4 @@ Eine Einstellungskategorie besteht aus einer Gruppe von Optionen, die die integr
  [Erstellen einer Optionsseite](../extensibility/creating-an-options-page.md)   
  [VSSDK-Beispiele](../misc/vssdk-samples.md)   
  [VSPackage-Status](../misc/vspackage-state.md)   
- [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+ [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

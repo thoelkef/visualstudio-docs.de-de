@@ -36,17 +36,17 @@ helpviewer_keywords:
 - Visual Studio, Office documents in
 - worksheets [Office development in Visual Studio]
 - VST.Designer.ExcelVST.Designer.Word
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 59d9a0ac865dff8ec1eb0fe8a2b97cad9b6ab5e0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 65f3a3abfe7e49872c7131a247d74612200bf42a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978057"
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Office-Projekten in Visual Studio-Umgebung
   Microsoft Office-Projekte verfügen über eine ähnliche Entwicklungsumgebung wie andere Projekttypen in Visual Studio, z. B. Windows Forms-Projekte. Wenn Sie ein Office-Projekt erstellen oder öffnen, werden die Projektelemente im **Projektmappen-Explorer**angezeigt. Bei Projekten auf Dokumentebene wird das Dokument (d. h. das Word-Dokument oder die Excel-Arbeitsmappe) in Visual Studio geöffnet, und das Dokument verhält sich wie ein visueller Designer.
@@ -73,7 +73,7 @@ ms.locfileid: "53842713"
 ### <a name="temporary-certificates"></a>Temporäre Zertifikate
  Office-Projekte umfassen auch ein temporäres Zertifikat mit dem Namen „ *Projektname*_TemporaryKey.pfx“. Dieses Zertifikat wird verwendet, um während der Entwicklung die Anwendung und die Bereitstellungsmanifeste für das Projekt zu signieren. Weitere Informationen finden Sie unter [Gewähren von Vertrauenswürdigkeit für Office-Projektmappen](../vsto/granting-trust-to-office-solutions.md) und [Sichern von Office-Projektmappen](../vsto/securing-office-solutions.md).
 
-###  <a name="hiddenfiles"></a> Ausgeblendete Projektdateien
+### <a name="hiddenfiles"></a> Ausgeblendete Projektdateien
  Mehrere Projektdateien werden standardmäßig ausgeblendet. Diese Dateien werden von Visual Studio generiert und unterscheiden sich anhand des Projekttyps. Um die ausgeblendeten Dateien anzuzeigen, klicken Sie im **Projektmappen-Explorer** auf **Alle Dateien anzeigen**.
 
  Ändern Sie die ausgeblendeten Projektdateien nicht. Eine direkte Änderung dieser Dateien wird nicht unterstützt und könnte das Projekt beschädigen. Bei bestimmten Änderungen im Dokument werden die ausgeblendeten Projektdateien neu generiert. Wenn Sie manuelle Änderungen an einer ausgeblendeten Projektdatei vornehmen, gehen diese Änderungen verloren, wenn die Datei erneut generiert wird.

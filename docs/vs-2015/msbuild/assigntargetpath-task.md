@@ -1,14 +1,9 @@
 ---
 title: AssignTargetPath-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -18,18 +13,17 @@ ms.assetid: 0e830e31-3bcf-4259-b2a8-a5df49b92d51
 caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 667725da8006e99e8eba4d4d4cd18e101ae1dd4e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f7bf12e9f6c90ce544205370a8ed26440388b0a6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189462"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670055"
 ---
 # <a name="assigntargetpath-task"></a>AssignTargetPath-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Diese Aufgabe akzeptiert Listendateien und fügt `<TargetPath>`-Attribute hinzu, wenn sie nicht bereits angegeben wurden.  
   
 ## <a name="task-parameters"></a>Aufgabenparameter  
@@ -41,7 +35,7 @@ Diese Aufgabe akzeptiert Listendateien und fügt `<TargetPath>`-Attribute hinzu,
 |`Files`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Eingabeparameter.<br /><br /> Enthält die eingehende Liste von Dateien.|  
 |`AssignedFiles`|Optional<br /><br /> <xref:Microsoft.Build.Framework.ITaskItem> `[]`-Ausgabeparameter.<br /><br /> Enthält die resultierende Liste von Dateien.|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Beispiel  
@@ -63,6 +57,3 @@ RootFolder="Resources"
 ## <a name="see-also"></a>Siehe auch  
  [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
  [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)
-
-
-

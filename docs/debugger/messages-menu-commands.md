@@ -1,32 +1,27 @@
 ---
-title: Befehle im Menü Nachrichten | Microsoft Docs
-ms.custom: ''
+title: Befehle im Menü von Nachrichten | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Messages menu commands
 ms.assetid: 8ffcee99-7950-41af-906e-661e19e3257a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08ba5fc9fa71e71d7b840f31ae9cc17206ac7b6b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 283d079d01c5395b542a68b37b73c638702e7cda
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481722"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62845889"
 ---
 # <a name="messages-menu-commands"></a>Befehle im Menü "Meldungen"
-Die **Nachrichten** Menü enthält Befehle zum Steuern der Nachricht.  
-  
- **Protokollierung starten/beenden**  
- Startet oder beendet die Nachricht anzeigen.  
-  
- **Protokollierungsoptionen**  
- Öffnet die **MessageOptions** (Dialogfeld), in dem Sie die Nachricht Suchkriterien angeben können.  
-  
- **Protokoll löschen**  
- Löscht den Inhalt des aktiven Ansicht "Nachrichten".
+Die **Nachrichten** Menü enthält Befehle zum Steuern der Nachricht.
+
+ **Protokollierung starten/beenden** startet oder beendet die Nachricht anzuzeigen.
+
+ **Protokollierungsoptionen** öffnet die **MessageOptions** Dialogfeld, in dem Sie die Kriterien für die Suche angeben können.
+
+ **Protokoll löschen** löscht den Inhalt der aktiven Nachrichten Ansicht.

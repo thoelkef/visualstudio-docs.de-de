@@ -1,14 +1,9 @@
 ---
 title: 'Idiasymbol:: Get_addressoffset | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: c15639b0-7f37-46c7-891b-40273b7f6319
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6d41f309f8716f71e6c896cb75163b0a79cd31ef
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6dfa54e09baa3cec238eb892599a8e1bd5910e17
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430635"
 ---
 # <a name="idiasymbolgetaddressoffset"></a>IDiaSymbol::get_addressOffset
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ HRESULT get_addressOffset ( 
  Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
   
 ## <a name="remarks"></a>Hinweise  
  Bei statischen Elementen befindet sich in einer externen DLL kann von dieser Methode zurückgegebene Offset 0 sein, wie diese Methode beruht auf die virtuelle Adresse des Elements. Virtuelle Adressen gültig sind nur dann, wenn die [idiasession:: Put_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) -Methode in der die [IDiaSession](../../debugger/debug-interface-access/idiasession.md) Schnittstelle mit einem ungleich NULL-Parameter angeben der Adresse Laden der DLL aufgerufen wurde.  
@@ -63,9 +58,6 @@ HRESULT get_addressOffset ( 
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [LocationType-Enumeration](../../debugger/debug-interface-access/locationtype.md)   
- [Idiasymbol:: Get_addresssection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)   
- [Idiasession:: Put_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)   
+ [IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)   
+ [IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
-
-
-

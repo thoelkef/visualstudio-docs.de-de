@@ -1,19 +1,18 @@
 ---
 title: Verwenden von Boost.Test für C++
 ms.date: 01/29/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1428efdd19782803e3091e3d09073f2cd8daec0b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ed4d024b7d10f4432c6a2326f07bb068075971f7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830845"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970518"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Verwenden von Boost.Test für C++ in Visual Studio
 
@@ -74,6 +73,7 @@ Visual Studio 2017 Version 15.5 enthält keine vorkonfigurierten Testprojekte od
         <VcpkgEnabled>true</VcpkgEnabled>
     </PropertyGroup>
     ```
+
    c. Speichern und schließen Sie die *\*VCXPROJ*-Datei, und laden Sie das Projekt anschließend neu.
 
    d. Klicken Sie mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Eigenschaften** aus, um **Eigenschaftenseiten** zu öffnen.

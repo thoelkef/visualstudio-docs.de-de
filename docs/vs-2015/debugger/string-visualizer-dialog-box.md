@@ -1,14 +1,9 @@
 ---
 title: Zeichenfolgen-Schnellansicht (Dialogfeld) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.stringviewer
 dev_langs:
@@ -28,13 +23,13 @@ ms.assetid: 080fd8f1-72b0-461f-8451-3c84d5dc51df
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4f141490163c6d9af79f7dbdea00e8b1bf128712
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 244c5e22fadaa17cb107dc2e733870fafe14477e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771576"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961529"
 ---
 # <a name="string-visualizer-dialog-box"></a>Dialogfeld "Zeichenfolgen-Schnellansicht"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,8 +37,5 @@ ms.locfileid: "51771576"
 Dieses Dialogfeld ist eine der Standardschnellansichten, die mit dem Visual Studio-Debugger geliefert werden. Zusätzlich zu normalem Text können mit der Zeichenfolgen-Schnellansicht HTML- und XML-Zeichenfolgen ausgewertet und das Ergebnis in einem sinnvollen Format angezeigt werden.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Debuggersicherheit](../debugger/debugger-security.md)   
+ [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
  [Erstellen benutzerdefinierter Schnellansichten](../debugger/create-custom-visualizers-of-data.md)
-
-
-

@@ -1,30 +1,32 @@
 ---
-title: IDebugEnumField::GetStringFromValue | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+title: IDebugEnumField::GetStringFromValue | Microsoft Docs
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugEnumField::GetStringFromValue
 helpviewer_keywords:
 - IDebugEnumField::GetStringFromValue method
 ms.assetid: 5f95fd0c-fdce-497f-9f54-2ad8749494e9
-author: gregvanl
+caps.latest.revision: 6
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: eb3fc6a0e8aab20659abe7a2d8601f478f948a9b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 98d7e976e0cd37ad1397666471c89da3d47d45d3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877405"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62920320"
 ---
 # <a name="idebugenumfieldgetstringfromvalue"></a>IDebugEnumField::GetStringFromValue
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Diese Methode ruft den Namen der Enumerationskonstante erhält den Wert ab.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT GetStringFromValue(  
    ULONGLONG value,  
    BSTR*     pbstrValue  

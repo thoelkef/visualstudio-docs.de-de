@@ -18,17 +18,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packaging
 - SharePoint development in Visual Studio, troubleshooting
 - SharePoint development in Visual Studio, deployment conflict resolution
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a12e24ea0db662931651feb3031ec0da71926f24
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0c949f9a5d8c56f44e0754715d056b4d3837f76a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878704"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008355"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>Problembehandlung bei SharePoint-Packen und-bereitstellen
   In diesem Thema werden verschiedene Probleme behandelt, die beim Packen und Bereitstellen von SharePoint-Lösungen auftreten können.
@@ -51,7 +51,7 @@ ms.locfileid: "53878704"
 |-----------|-----------------|
 |Automatisch|Erkennt Konflikte und löst die Konflikte automatisch.|
 |Eingabeaufforderung|Erkennt Konflikte und meldet sie dem Entwickler vor dem Lösen der Konflikte.|
-|Keine|Konflikte werden nicht erkannt.|
+|Keiner|Konflikte werden nicht erkannt.|
 
 ## <a name="differences-between-f5-deployment"></a>Unterschiede bei der F5-Bereitstellung
  Wenn Sie das SharePoint-Projekt mithilfe von [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zum Testen und Debuggen auf dem lokalen SharePoint-Server bereitstellen, werden von [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] einige zusätzliche Schritte ausgeführt.
@@ -73,9 +73,9 @@ ms.locfileid: "53878704"
 ### <a name="resolution"></a>Auflösung
  Führen Sie die folgenden Schritte aus, um dieses Problem zu umgehen:
 
-1.  Installieren Sie Update KB967535, wie in den Microsoft Support-Artikel beschrieben [zu beheben: Ein Hotfix ist verfügbar, die Behebung von zwei Problemen in ASP.NET in IIS 7.0 für Windows Vista und Windows Server 2008](http://go.microsoft.com/fwlink/?LinkId=179055).
+1. Installieren Sie Update KB967535, wie in den Microsoft Support-Artikel beschrieben [zu beheben: Ein Hotfix ist verfügbar, die Behebung von zwei Problemen in ASP.NET in IIS 7.0 für Windows Vista und Windows Server 2008](http://go.microsoft.com/fwlink/?LinkId=179055).
 
-2.  Fügen Sie der Datei "Web.config" die folgende Zeile hinzu:
+2. Fügen Sie der Datei "Web.config" die folgende Zeile hinzu:
 
     ```xml
     <compilation batch="false" optimizeCompilations="true">

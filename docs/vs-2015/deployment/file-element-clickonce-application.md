@@ -1,14 +1,9 @@
 ---
 title: '&lt;Datei&gt; -Element (ClickOnce-Anwendung) | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - http://www.w3.org/2000/09/xmldsig#Transform
 - urn:schemas-microsoft-com:asm.v2#file
@@ -27,13 +22,13 @@ ms.assetid: 56e3490c-eed5-4841-b1bf-eefe778b6ac9
 caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 16c301d55738519f3e097138f08b6b2c2fe2b4c7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 88fce548d5adbd6d4dc930db767fd3e52690490b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270737"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58960535"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;Datei&gt; -Element (ClickOnce-Anwendung)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +87,7 @@ Identifiziert alle Nichtassemblydateien heruntergeladen und von der Anwendung ve
 ```  
   
 ## <a name="elements-and-attributes"></a>Elemente und Attribute  
- Das `file`-Element ist optional. Das-Element weist die folgenden Attribute.  
+ Das `file`-Element ist optional. Das Element weist folgende Attribute auf.  
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
@@ -100,10 +95,10 @@ Identifiziert alle Nichtassemblydateien heruntergeladen und von der Anwendung ve
 |`size`|Erforderlich. Gibt die Größe in Bytes der Datei an.|  
 |`group`|Optional, wenn die `optional` Attribut nicht angegeben oder legen Sie auf `false`; erforderlich, wenn `optional` ist `true`. Der Name der Gruppe, zu dem diese Datei gehört. Der Name kann eine Unicode-Zeichenfolge, die vom Entwickler ausgewählt werden und dient zum Herunterladen von Dateien bei Bedarf mit der <xref:System.Deployment.Application.ApplicationDeployment> Klasse.|  
 |`optional`|Dies ist optional. Gibt an, ob diese Datei muss herunterladen, wenn die Anwendung erstmals ausführen, oder gibt an, ob Sie nur auf dem Server verbleiben soll, bis die Anwendung bei Bedarf angefordert. Wenn `false` oder nicht definiert, die Datei wird heruntergeladen, wenn die Anwendung zuerst ausführen oder installiert wird. Wenn `true`, `group` muss angegeben werden, für das Anwendungsmanifest gültig ist. `optional` darf nicht "true" sein. wenn `writeableType` angegeben ist, mit dem Wert `applicationData`.|  
-|`writeableType`|Dies ist optional. Gibt an, dass diese Datei eine Datendatei ist. Zurzeit der einzige gültige Wert ist `applicationData`.|  
+|`writeableType`|Dies ist optional. Gibt an, dass diese Datei eine Datendatei ist. Derzeit ist `applicationData` der einzige gültige Wert.|  
   
-## <a name="typelib"></a>Typbibliothek (typelib)  
- Die `typelib` Element ist ein optionales untergeordnetes Element des File-Elements. Das Element beschreibt die Bibliothek, zu dem die COM-Komponente gehört. Das-Element weist die folgenden Attribute.  
+## <a name="typelib"></a>typelib  
+ Die `typelib` Element ist ein optionales untergeordnetes Element des File-Elements. Das Element beschreibt die Bibliothek, zu dem die COM-Komponente gehört. Das Element weist folgende Attribute auf.  
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
@@ -114,7 +109,7 @@ Identifiziert alle Nichtassemblydateien heruntergeladen und von der Anwendung ve
 |`flags`|Dies ist optional. Die Zeichenfolgendarstellung der Flags der Typbibliothek für diese Typbibliothek. Insbesondere sollten sie eine der "RESTRICTED", "CONTROL", "HIDDEN" und "HASDISKIMAGE" sein.|  
   
 ## <a name="comclass"></a>comClass  
- Die `comClass` Element ist ein optionales untergeordnetes Element von der `file` -Element, jedoch ist erforderlich, wenn die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung enthält eine COM-Komponente, die Sie mithilfe von COM ohne Registrierung bereitstellen möchte Das-Element weist die folgenden Attribute.  
+ Die `comClass` Element ist ein optionales untergeordnetes Element von der `file` -Element, jedoch ist erforderlich, wenn die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung enthält eine COM-Komponente, die Sie mithilfe von COM ohne Registrierung bereitstellen möchte Das Element weist folgende Attribute auf.  
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
@@ -168,24 +163,24 @@ Identifiziert alle Nichtassemblydateien heruntergeladen und von der Anwendung ve
   
  Ein Manifest enthält eine Datei, die nicht in der Hashwert berechnet wird, dieses nicht digital signiert werden, da der Benutzer den Inhalt der gehashter Dateien nicht überprüfen können.  
   
-## <a name="dsigtransforms"></a>dsig: Transforms  
+## <a name="dsigtransforms"></a>dsig:Transforms  
  Die `dsig:Transforms` Element ist ein erforderliches untergeordnetes Element von der `hash` Element. Das `dsig:Transforms` -Element weist keine Attribute auf.  
   
-## <a name="dsigtransform"></a>dsig  
+## <a name="dsigtransform"></a>dsig:Transform  
  Die `dsig:Transform` Element ist ein erforderliches untergeordnetes Element von der `dsig:Transforms` Element. Das `dsig:Transform` -Element weist folgende Attribute auf.  
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
 |`Algorithm`|Der Algorithmus verwendet, um den Hashwert für diese Datei zu berechnen. Zurzeit der einzige Wert ein, die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ist `urn:schemas-microsoft-com:HashTransforms.Identity`.|  
   
-## <a name="dsigdigestmethod"></a>DigestMethod  
+## <a name="dsigdigestmethod"></a>dsig:DigestMethod  
  Die `dsig:DigestMethod` Element ist ein erforderliches untergeordnetes Element von der `hash` Element. Das `dsig:DigestMethod` -Element weist folgende Attribute auf.  
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
 |`Algorithm`|Der Algorithmus verwendet, um den Hashwert für diese Datei zu berechnen. Zurzeit der einzige Wert ein, die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ist `http://www.w3.org/2000/09/xmldsig#sha1`.|  
   
-## <a name="dsigdigestvalue"></a>dsig: DigestValue  
+## <a name="dsigdigestvalue"></a>dsig:DigestValue  
  Die `dsig:DigestValue` Element ist ein erforderliches untergeordnetes Element von der `hash` Element. Das `dsig:DigestValue` -Element weist keine Attribute auf. Der Textwert ist der berechnete Hash für die angegebene Datei.  
   
 ## <a name="remarks"></a>Hinweise  
@@ -208,6 +203,3 @@ Identifiziert alle Nichtassemblydateien heruntergeladen und von der Anwendung ve
   
 ## <a name="see-also"></a>Siehe auch  
  [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
-
-
-

@@ -1,19 +1,18 @@
 ---
 title: Produktivitätstipps
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+ms.date: 2/21/2019
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9acb00dba8024e8d577dac15a114cbed93e6107d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: afe225d111f3e011b5f852b283c9a7ea161ba07a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885274"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813908"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Produktivitätstipps für Visual Studio
 
@@ -25,7 +24,7 @@ Weitere Informationen zu häufig verwendeten Tastenkombinationen finden Sie unte
 
 Schreiben Sie Code schneller, indem Sie die folgenden Funktionen verwenden.
 
-- **Verwenden von benutzerfreundlichen Befehlen**. Visual Studio verfügt über verschiedene Befehle, mit denen Sie gängige Bearbeitungsaufgaben schneller bewerkstelligen können. Beispielsweise können Sie in **Visual Studio 2017 Version 15.6** und höher einen Befehl auswählen, um ganz einfach eine Codezeile zu duplizieren – ohne diese kopieren, die Position des Cursors ändern und die Zeile einfügen zu müssen. Wählen Sie **Bearbeiten** > **Duplizieren** oder drücken Sie die Tasten **STRG**+**E**,**V**. Sie können eine Auswahl von Texten rasch erweitern oder verkleinern, indem Sie **Bearbeiten** > **Erweitert** > **Auswahl erweitern** oder **Bearbeiten** > **Erweitert** > **Auswahl verkleinern** auswählen oder die Tasten **UMSCHALT**+**ALT**+**=** oder **UMSCHALT**+**ALT**+**-** drücken (verfügbar in **Visual Studio 2017, Version 15.5** und höher).
+- **Verwenden von benutzerfreundlichen Befehlen**. Visual Studio verfügt über verschiedene Befehle, mit denen Sie gängige Bearbeitungsaufgaben schneller bewerkstelligen können. Beispielsweise können Sie einen Befehl auswählen, um ganz einfach eine Codezeile zu duplizieren, ohne diese kopieren, die Position des Cursors ändern und die Zeile einfügen zu müssen. Wählen Sie **Bearbeiten** > **Duplizieren** oder drücken Sie die Tasten **STRG**+**E**,**V**. Sie können eine Auswahl von Texten rasch erweitern oder verkleinern, indem Sie **Bearbeiten** > **Erweitert** > **Auswahl erweitern** oder **Bearbeiten** > **Erweitert** > **Auswahl verkleinern** auswählen oder die Tasten **UMSCHALT**+**ALT**+**=** oder **UMSCHALT**+**ALT**+**-** drücken.
 
 - **Verwenden von IntelliSense**. Wie Sie Code im Editor eingeben, werden IntelliSense-Informationen, wie Listenmember, Parameterinformationen, QuickInfos, Signaturhilfe und Wortvervollständigung angezeigt. Diese Funktionen unterstützen Fuzzyübereinstimmung des Texts. So umfasst die Ergebnisliste für die Listenmember nicht nur Einträge, die mit dem Zeichen beginnen, das Sie eingegeben haben, sondern auch Einträge, die die Zeichenkombination an einer beliebigen Stelle im Namen enthalten. Weitere Informationen finden Sie unter [Verwenden von IntelliSense](../ide/using-intellisense.md).
 
@@ -67,11 +66,23 @@ Sie können in der IDE nach Befehlen, Dateien und Optionen suchen und gleichzeit
 
 - **Zeigen Sie nur die Fehler an, die berücksichtigt werden sollen**. Wenn Sie die Schaltfläche **Filter** auf der Symbolleiste **Fehlerliste** auswählen, können Sie die Anzahl der Fehler reduzieren, die im Fenster **Fehlerliste** angezeigt werden. Sie können nur die Fehler in den Dateien anzeigen, die im Editor geöffnet sind, nur die Fehler in der aktuellen Datei oder nur die Fehler im aktuellen Projekt. Sie können im Fenster **Fehlerliste** auch nach bestimmten Fehlern suchen.
 
-- **Suchen von Dialogfeldern, Menübefehlen und Optionen**. Geben Sie im Feld [Schnellstart](../ide/reference/quick-launch-environment-options-dialog-box.md) Schlüsselwörter oder Ausdrücke für die Elemente ein, die Sie suchen. Beispielsweise werden die folgenden Optionen angezeigt, wenn Sie `new project` eingeben:
+- **Suchen von Dialogfeldern, Menübefehlen, Optionen und mehr**. Geben Sie im Suchfeld Schlüsselwörter oder Ausdrücke für die Elemente ein, die Sie suchen. Beispielsweise werden die folgenden Optionen angezeigt, wenn Sie **Neues Projekt** eingeben:
 
-    ![Schnellstartergebnisse für "Neues Projekt"](../ide/media/productivity_quicklaunch.png)
+   ::: moniker range="vs-2017"
 
-    **Schnellstart** zeigt unter anderem Links zum Dialogfeld **Neues Projekt**, zum Dialogfeld **Neues Element hinzufügen** und zur Seite **Projekt- und Projektmappen** im Dialogfeld **Optionen** an. Ergebnisse des Schnellstarts können auch Projektdateien und Toolfenster enthalten.
+   ![Schnellstartergebnisse für "Neues Projekt"](../ide/media/productivity_quicklaunch.png)
+
+   **Schnellstart** zeigt unter anderem Links zum Erstellen eines neuen Projekts, zum Hinzufügen eines neuen Elements zu einem Projekt und zum Wechseln zur Seite **Projekte und Projektmappen** im Dialogfeld **Optionen** an. Zu den Suchergebnissen können auch Projektdateien und Toolfenster zählen.
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   ![Screenshot: Suchergebnisse für „new project“ (Neues Projekt)](../ide/media/vs-2019/productivity-quick-launch-new-project.png)
+
+   ::: moniker-end
+
+   Drücken Sie **STRG**+**Q**, um direkt zum Suchfeld zu wechseln.
 
 ## <a name="debug-code"></a>Debuggen von Code
 
@@ -101,9 +112,19 @@ Debuggen kann viel Zeit in Anspruch nehmen, aber die folgenden Tipps können Ihn
 
 Sie können schnell auf die Developer-Eingabeaufforderung oder auf ein anderes Visual Studio-Tool zugreifen, wenn Sie diese bzw. dieses im Startmenü oder in der Taskleiste fixieren.
 
-1. Navigieren Sie im Windows-Explorer zu `%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools`.
+::: moniker range="vs-2017"
 
-1. Klicken Sie mit der rechten Maustaste darauf, oder öffnen Sie das Kontextmenü, um **Developer-Eingabeaufforderung** auszuwählen. Wählen Sie dann **An "Start" anheften** oder **An Taskleiste anheften** aus.
+1. Navigieren Sie im Windows-Explorer zu *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Navigieren Sie im Windows-Explorer zu *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2019\Visual Studio Tools*.
+
+::: moniker-end
+
+2. Klicken Sie mit der rechten Maustaste darauf, oder öffnen Sie das Kontextmenü, um **Developer-Eingabeaufforderung** auszuwählen. Wählen Sie dann **An "Start" anheften** oder **An Taskleiste anheften** aus.
 
 ## <a name="manage-files-toolbars-and-windows"></a>Verwalten von Dateien, Symbolleisten und Fenstern
 

@@ -1,26 +1,21 @@
 ---
 title: Erweitern des Editors und Sprachdienste | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new -
 ms.assetid: 8d04f8db-eda7-4b3e-b6eb-c06df104502a
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 91eab151680d936c350c8c5745aec6c9fe86e47c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9f828e6daff97f7c0ad8b3872691f5ad424cb2f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51723073"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58946689"
 ---
 # <a name="extending-the-editor-and-language-services"></a>Erweitern des Editors und der Sprachdienste
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,22 +36,22 @@ Sie können Ihren eigenen Editor Language Service-Features (z. B. IntelliSense) 
 |[Im Editor](../extensibility/inside-the-editor.md)|Beschreibt die allgemeine Struktur des Editors und führt einige der Features.|  
 |[Managed Extensibility Framework im Editor](../extensibility/managed-extensibility-framework-in-the-editor.md)|Erläutert, wie das Managed Extensibility Framework (MEF) mit dem Editor.|  
 |[Erweiterungspunkte für den Sprachdienst und den Editor](../extensibility/language-service-and-editor-extension-points.md)|Listet die Erweiterungspunkte im Editor. Erweiterungspunkte darstellen, die Editor-Funktionen, die erweitert werden können.|  
-|[Exemplarische Vorgehensweise: Erstellen von Randsteuerelementen für eine Ansicht, Befehlen und Einstellungen (Satzspiegel)](../extensibility/walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md)|Erläutert, und erläutert, erstellen eine Ansicht Zusatzelement, das zeichnet Spalte Gudie Zeilen aus, um Sie Code auf eine bestimmte Anzeigebreite halten können.  Zeigt auch, lesen und Schreiben von Einstellungen sowie deklarieren und Implementieren von Befehlen, die Sie aus dem Befehlsfenster aufrufen können.|  
+|[Exemplarische Vorgehensweise: Erstellen einer Ansicht Zusatzelement, Befehle und Einstellungen)](../extensibility/walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md)|Erläutert, und erläutert, erstellen eine Ansicht Zusatzelement, das zeichnet Spalte Gudie Zeilen aus, um Sie Code auf eine bestimmte Anzeigebreite halten können.  Zeigt auch, lesen und Schreiben von Einstellungen sowie deklarieren und Implementieren von Befehlen, die Sie aus dem Befehlsfenster aufrufen können.|  
 |[Editor-Importe](../extensibility/editor-imports.md)|Listet die Dienste, die eine Erweiterung importieren können.|  
 |[Anpassen des Legacycodes an den Editor](../extensibility/adapting-legacy-code-to-the-editor.md)|Erläutert verschiedene Möglichkeiten zum Anpassen von Legacycode (vor Visual Studio 2010) um den Editor zu erweitern.|  
 |[Migrieren eines Legacysprachdiensts](../extensibility/internals/migrating-a-legacy-language-service.md)|Erläutert, wie einen VSPackage-basierten Sprachdienst zu migrieren.|  
 |[Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Dateinamenerweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)|Zeigt, wie Sie einen Inhaltstyp mit einer Dateinamenerweiterung verknüpfen.|  
 |[Exemplarische Vorgehensweise: Erstellen einer Randglyphe](../extensibility/walkthrough-creating-a-margin-glyph.md)|Zeigt, wie ein Symbol mit einem Rand hinzufügen.|  
 |[Exemplarische Vorgehensweise: Markieren von Text](../extensibility/walkthrough-highlighting-text.md)|Zeigt, wie *Tags* um Text zu markieren.|  
-|[Exemplarische Vorgehensweise: Gliedern](../extensibility/walkthrough-outlining.md)|Veranschaulicht, wie eine Gliederung für bestimmte Arten von geschweiften Klammern hinzufügen.|  
-|[Exemplarische Vorgehensweise: Anzeigen von übereinstimmenden Klammern](../extensibility/walkthrough-displaying-matching-braces.md)|Zeigt, wie zum Hervorheben von übereinstimmenden geschweiften Klammern.|  
+|[Exemplarische Vorgehensweise: Outlining](../extensibility/walkthrough-outlining.md)|Veranschaulicht, wie eine Gliederung für bestimmte Arten von geschweiften Klammern hinzufügen.|  
+|[Exemplarische Vorgehensweise: Übereinstimmende Klammern anzeigen](../extensibility/walkthrough-displaying-matching-braces.md)|Zeigt, wie zum Hervorheben von übereinstimmenden geschweiften Klammern.|  
 |[Exemplarische Vorgehensweise: Anzeigen von QuickInfos](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)|QuickInfo-Popups anzuzeigen, die Beschreibung der Code z. B. Eigenschaften, Methoden und Ereignisse veranschaulicht.|  
 |[Exemplarische Vorgehensweise: Anzeigen der Signaturhilfe](../extensibility/walkthrough-displaying-signature-help.md)|Zeigt, wie Popups angezeigt, die Informationen zur Anzahl und Typen der Parameter in einer Signatur.|  
 |[Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigung](../extensibility/walkthrough-displaying-statement-completion.md)|Zeigt, wie Anweisungsvervollständigung zu implementieren.|  
 |[Exemplarische Vorgehensweise: Implementieren von Codeausschnitten](../extensibility/walkthrough-implementing-code-snippets.md)|Zeigt, wie Code-Snippet-Erweiterung zu implementieren.|  
-|[Exemplarische Vorgehensweise: Anzeigen von mit einer Glühbirne gekennzeichneten Vorschlägen](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)|Zeigt, wie Glühbirnen für Vorschläge für Code angezeigt.|  
+|[Exemplarische Vorgehensweise: Anzeigen einer Glühbirne gekennzeichneten Vorschlägen](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)|Zeigt, wie Glühbirnen für Vorschläge für Code angezeigt.|  
 |[Exemplarische Vorgehensweise: Verwenden eines Shellbefehls mit einer Editor-Erweiterung](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)|Veranschaulicht das Zuordnen ein Menübefehls in einem VSPackage mit MEF-Komponente.|  
-|[Exemplarische Vorgehensweise: Verwenden einer Tastenkombination mit einer Editor-Erweiterung](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)|Zeigt, wie MEF-Komponente eine Verknüpfung im Startmenü in einem VSPackage zugeordnet werden soll.|  
+|[Exemplarische Vorgehensweise: Verwenden eine Tastenkombination mit einer Editor-Erweiterung](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)|Zeigt, wie MEF-Komponente eine Verknüpfung im Startmenü in einem VSPackage zugeordnet werden soll.|  
 |[Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)|Enthält Informationen über das Managed Extensibility Framework (MEF).|  
 |[Windows Presentation Foundation](http://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d)|Stellt Informationen über die Windows Presentation Foundation (WPF) bereit.|  
   
@@ -96,4 +91,3 @@ Sie können Ihren eigenen Editor Language Service-Features (z. B. IntelliSense) 
  <xref:Microsoft.VisualStudio.Text.Tagging>  
   
  <xref:Microsoft.VisualStudio.Utilities>
-

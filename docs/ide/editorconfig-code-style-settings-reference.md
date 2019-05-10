@@ -12,21 +12,24 @@ helpviewer_keywords:
 - formatting conventions [EditorConfig]
 author: kuhlenh
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: f99f18af416ead93c9327afcda6de0196da81566
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3cdd9f0b46c578f713b7f2af2940f4d7742df19a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833856"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557215"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Einstellungen für die .NET-Codierungskonventionen für „EditorConfig“
 
-In Visual Studio 2017 können Sie das Codeformat in Ihrer Codebasis mit einer [EditorConfig](../ide/create-portable-custom-editor-options.md)-Datei definieren und verwalten. „EditorConfig“ enthält mehrere wesentliche Formatierungseigenschaften, wie z.B. `indent_style` und `indent_size`. In Visual Studio können Einstellungen für die .NET-Codierungskonventionen auch mit einer „EditorConfig“-Datei konfiguriert werden. Mit „EditorConfig“-Dateien können Sie einzelne .NET-Codierungskonventionen aktivieren oder deaktivieren und konfigurieren, inwieweit die Konvention über einen Schweregrad erzwungen werden soll. Weitere Informationen zur Verwendung „EditorConfig“ zum Erzwingen der Konsistenz in Ihrer Codebasis finden Sie in unter [Optionen zum Erstellen eines portablen benutzerdefinierten Editors](../ide/create-portable-custom-editor-options.md).
+Sie können in Ihrer Codebasis das Codeformat mit einer [EditorConfig](../ide/create-portable-custom-editor-options.md)-Datei definieren und verwalten. „EditorConfig“ enthält mehrere wesentliche Formatierungseigenschaften, wie z.B. `indent_style` und `indent_size`. In Visual Studio können Einstellungen für die .NET-Codierungskonventionen auch mit einer EditorConfig-Datei konfiguriert werden. Sie können einzelne .NET-Codierungskonventionen aktivieren oder deaktivieren und konfigurieren, inwieweit die einzelnen Regeln über einen Schweregrad erzwungen werden sollen.
+
+> [!TIP]
+> - Wenn Sie Codierungskonventionen in einer EDITORCONFIG-Datei definieren, konfigurieren Sie damit, wie die in Visual Studio integrierten [Codestil-Analysetools](../code-quality/roslyn-analyzers-overview.md) Ihren Code analysieren sollen. Die EDITORCONFIG-Datei ist die Konfigurationsdatei für diese Analysetools.
+> - Codeformateinstellungen für Visual Studio können auch im Dialogfeld mit den [Text-Editor-Optionen](code-styles-and-quick-actions.md) festgelegt werden. Die Einstellungen in der EDITORCONFIG-Datei haben Vorrang, und unter **Optionen** festgelegte Einstellungen sind keinem bestimmten Projekt zugeordnet.
 
 Am Ende dieses Artikels finden Sie ein [Beispiel für eine EDITORCONFIG-Datei](#example-editorconfig-file).
 
@@ -137,10 +140,10 @@ Die folgende Tabelle zeigt die Regelnamen, gültigen Programmiersprachen und Sta
 
 | Regelname | Anzuwendende Sprachen | Visual Studio-Standardwert |
 | ----------- | -------------------- | ----------------------|
-| dotnet_style_qualification_for_field | C# und Visual Basic | false:none |
-| dotnet_style_qualification_for_property | C# und Visual Basic | false:none |
-| dotnet_style_qualification_for_method | C# und Visual Basic | false:none |
-| dotnet_style_qualification_for_event | C# und Visual Basic | false:none |
+| dotnet_style_qualification_for_field | C# und Visual Basic | false:silent |
+| dotnet_style_qualification_for_property | C# und Visual Basic | false:silent |
+| dotnet_style_qualification_for_method | C# und Visual Basic | false:silent |
+| dotnet_style_qualification_for_event | C# und Visual Basic | false:silent |
 
 **dotnet\_style\_qualification\_for_field**
 
@@ -253,8 +256,8 @@ Die folgende Tabelle zeigt die Regelnamen, Regel-IDs, gültigen Programmiersprac
 
 | Regelname | Regel-ID | Anzuwendende Sprachen | Visual Studio-Standard |
 | --------- | ------- | -------------------- | ----------------------|
-| dotnet_style_predefined_type_for_locals_parameters_members | IDE0012 und IDE0014 | C# und Visual Basic | true:none |
-| dotnet_style_predefined_type_for_member_access | IDE0013 und IDE0015 | C# und Visual Basic | true:none |
+| dotnet_style_predefined_type_for_locals_parameters_members | IDE0012 und IDE0014 | C# und Visual Basic | true:silent |
+| dotnet_style_predefined_type_for_member_access | IDE0013 und IDE0015 | C# und Visual Basic | true:silent |
 
 **dotnet\_style\_predefined\_type\_for\_locals\_parameters_members**
 
@@ -319,20 +322,21 @@ In der folgenden Tabelle werden die Regelnamen, Regel-IDs, anzuwendende Programm
 
 | Regelname | Regel-ID | Anzuwendende Sprachen | Visual Studio-Standard | Visual Studio 2017 |
 | --------- | ------- | -------------------- | ----------------------| ---------------- |
-| dotnet_style_require_accessibility_modifiers | IDE0040 | C# und Visual Basic | for_non_interface_members:none | 15.5 |
-| csharp_preferred_modifier_order | IDE0036 | C# | public, private, protected, internal, static, extern, new, virtual, abstract, sealed, override, readonly, unsafe, volatile, async:none | 15.5 |
-| visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Partial, Default, Private, Protected, Public, Friend, NotOverridable, Overridable, MustOverride, Overloads, Overrides, MustInherit, NotInheritable, Static, Shared, Shadows, ReadOnly, WriteOnly, Dim, Const,WithEvents, Widening, Narrowing, Custom, Async:none | 15.5 |
+| dotnet_style_require_accessibility_modifiers | IDE0040 | C# und Visual Basic | for_non_interface_members:silent | 15.5 |
+| csharp_preferred_modifier_order | IDE0036 | C# | public, private, protected, internal, static, extern, new, virtual, abstract, sealed, override, readonly, unsafe, volatile, async:silent | 15.5 |
+| visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Partial, Default, Private, Protected, Public, Friend, NotOverridable, Overridable, MustOverride, Overloads, Overrides, MustInherit, NotInheritable, Static, Shared, Shadows, ReadOnly, WriteOnly, Dim, Const, WithEvents, Widening, Narrowing, Custom, Async:silent | 15.5 |
 | dotnet_style_readonly_field | IDE0044 | C# und Visual Basic | true:suggestion | 15.7 |
 
 **dotnet\_style\_require\_accessibility_modifiers**
 
-Diese Regel akzeptiert nicht den Wert **TRUE** oder **FALSE**, sondern einen Wert aus der folgenden Tabelle:
+Diese Regel akzeptiert einen Wert aus der folgenden Tabelle:
 
 | Wert | Beschreibung |
 | ----- |:----------- |
 | always | Es wird bevorzugt, dass Zugriffsmodifizierer angegeben werden |
-| for\_non\_interface_members | Es wird bevorzugt, dass Zugriffsmodifizierer deklariert werden (außer für Members von öffentlichen Schnittstellen). Dies entspricht **always** und fungiert als zukünftige Korrekturhilfe, falls Standard-Schnittstellenmethoden in C# hinzugefügt werden. |
+| for\_non\_interface_members | Es wird bevorzugt, dass Zugriffsmodifizierer deklariert werden (außer für Members von öffentlichen Schnittstellen). (Dies entspricht **always** und fungiert als zukünftige Korrekturhilfe, falls Standard-Schnittstellenmethoden in C# hinzugefügt werden.) |
 | never | Es wird bevorzugt, dass Zugriffsmodifizierer nicht angegeben werden |
+| omit_if_default | Bevorzugen Sie die Angabe von Zugriffsmodifizierern, außer wenn es sich um den Standardmodifizierer handelt. |
 
 Codebeispiele:
 
@@ -427,10 +431,10 @@ In der folgenden Tabelle werden die Regelnamen, Regel-IDs, anzuwendende Programm
 
 | Regelname | Regel-ID | Anzuwendende Sprachen | Visual Studio-Standard | Visual Studio 2017 |
 | --------- | ------- | -------------------- | ----------------------| ---- |
-| dotnet_style_parentheses_in_arithmetic_binary_operators | IDE0047 | C# und Visual Basic | always_for_clarity:none | 15.8 |
-| dotnet_style_parentheses_in_relational_binary_operators | IDE0047 | C# und Visual Basic | always_for_clarity:none | 15.8 |
-| dotnet_style_parentheses_in_other_binary_operators | IDE0047 | C# und Visual Basic | always_for_clarity:none | 15.8 |
-| dotnet_style_parentheses_in_other_operators | IDE0047 | C# und Visual Basic | never_if_unnecessary:none | 15.8 |
+| dotnet_style_parentheses_in_arithmetic_binary_operators | IDE0047 | C# und Visual Basic | always_for_clarity:silent | 15.8 |
+| dotnet_style_parentheses_in_relational_binary_operators | IDE0047 | C# und Visual Basic | always_for_clarity:silent | 15.8 |
+| dotnet_style_parentheses_in_other_binary_operators | IDE0047 | C# und Visual Basic | always_for_clarity:silent | 15.8 |
+| dotnet_style_parentheses_in_other_operators | IDE0047 | C# und Visual Basic | never_if_unnecessary:silent | 15.8 |
 
 **dotnet\_style\_parentheses\_in\_arithmetic\_binary_operators**
 
@@ -529,10 +533,10 @@ Diese Regeln werden in einer *EDITORCONFIG-Datei* z.B. folgendermaßen angezeigt
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
-dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity:none
-dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity:none
-dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:none
-dotnet_style_parentheses_in_other_operators = never_if_unnecessary:none
+dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity:silent
+dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity:silent
+dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:silent
+dotnet_style_parentheses_in_other_operators = never_if_unnecessary:silent
 ```
 
 #### <a name="expression_level"></a>Einstellungen auf Ausdrucksebene
@@ -548,10 +552,10 @@ In der folgenden Tabelle werden die Regelnamen, Regel-IDs, anzuwendende Programm
 | dotnet_style_explicit_tuple_names | IDE0033 | C# 7.0 und höher und Visual Basic 15 und höher | true:suggestion | Erste Version |
 | dotnet_style_prefer_inferred_tuple_names | IDE0037 | C# 7.1 und höher und Visual Basic 15 und höher | true:suggestion | 15,6 |
 | dotnet_style_prefer_inferred_anonymous_type_member_names | IDE0037 | C# und Visual Basic | true:suggestion | 15,6 |
-| dotnet_style_prefer_auto_properties | IDE0032 | C# und Visual Basic | true:none | 15.7 |
+| dotnet_style_prefer_auto_properties | IDE0032 | C# und Visual Basic | true:silent | 15.7 |
 | dotnet_style_prefer_is_null_check_over_reference_equality_method | IDE0041 | C# und Visual Basic | true:suggestion | 15.7 |
-| dotnet_style_prefer_conditional_expression_over_assignment | IDE0045 | C# und Visual Basic | true:none | 15.8 |
-| dotnet_style_prefer_conditional_expression_over_return | IDE0046 | C# und Visual Basic | true:none | 15.8 |
+| dotnet_style_prefer_conditional_expression_over_assignment | IDE0045 | C# und Visual Basic | true:silent | 15.8 |
+| dotnet_style_prefer_conditional_expression_over_return | IDE0046 | C# und Visual Basic | true:silent | 15.8 |
 
 **dotnet\_style\_object_initializer**
 
@@ -746,8 +750,6 @@ If Object.ReferenceEquals(value, Nothing)
 End If
 ```
 
-
-
 **dotnet\_style\_prefer\_conditional\_expression\_over_assignment**
 
 - Ist diese Regel auf **TRUE** festgelegt, sollten Sie Zuweisungen mit einem tertiären bedingten Operator einer if-else-Anweisung vorziehen.
@@ -828,7 +830,7 @@ dotnet_style_collection_initializer = true:suggestion
 dotnet_style_explicit_tuple_names = true:suggestion
 dotnet_style_prefer_inferred_tuple_names = true:suggestion
 dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
-dotnet_style_prefer_auto_properties = true:none
+dotnet_style_prefer_auto_properties = true:silent
 dotnet_style_prefer_conditional_expression_over_assignment = true:suggestion
 dotnet_style_prefer_conditional_expression_over_return = true:suggestion
 ```
@@ -915,9 +917,9 @@ Die folgende Tabelle zeigt die Regelnamen, gültigen Programmiersprachen und Sta
 
 | Regelname | Anzuwendende Sprachen | Visual Studio-Standard |
 | ----------- | -------------------- | ----------------------|
-| csharp_style_var_for_built_in_types | C# | true:none |
-| csharp_style_var_when_type_is_apparent | C# | true:none |
-| csharp_style_var_elsewhere | C# | true:none |
+| csharp_style_var_for_built_in_types | C# | true:silent |
+| csharp_style_var_when_type_is_apparent | C# | true:silent |
+| csharp_style_var_elsewhere | C# | true:silent |
 
 **csharp\_style\_var\_for\_built\_in_types**
 
@@ -982,12 +984,12 @@ In der folgenden Tabelle werden die Regelnamen, Regel-IDs, anzuwendende Sprachve
 
 | Regelname | Regel-ID | Anzuwendende Sprachen | Visual Studio-Standard | Visual Studio 2017 |
 | --------- | ------- | -------------------- | ----------------------| ---------------- |
-| csharp_style_expression_bodied_methods | IDE0022 | C# 6.0 und höher | false:none | 15.3 |
-| csharp_style_expression_bodied_constructors | IDE0021 | C# 7.0 und höher | false:none | 15.3 |
-| csharp_style_expression_bodied_operators | IDE0023 und IDE0024 | C# 7.0 und höher | false:none | 15.3 |
-| csharp_style_expression_bodied_properties | IDE0025 | C# 7.0 und höher | true:none | 15.3 |
-| csharp_style_expression_bodied_indexers | IDE0026 | C# 7.0 und höher | true:none | 15.3 |
-| csharp_style_expression_bodied_accessors | IDE0027 | C# 7.0 und höher | true:none | 15.3 |
+| csharp_style_expression_bodied_methods | IDE0022 | C# 6.0 und höher | false:silent | 15.3 |
+| csharp_style_expression_bodied_constructors | IDE0021 | C# 7.0 und höher | false:silent | 15.3 |
+| csharp_style_expression_bodied_operators | IDE0023 und IDE0024 | C# 7.0 und höher | false:silent | 15.3 |
+| csharp_style_expression_bodied_properties | IDE0025 | C# 7.0 und höher | true:silent | 15.3 |
+| csharp_style_expression_bodied_indexers | IDE0026 | C# 7.0 und höher | true:silent | 15.3 |
+| csharp_style_expression_bodied_accessors | IDE0027 | C# 7.0 und höher | true:silent | 15.3 |
 
 **csharp\_style\_expression\_bodied_methods**
 
@@ -1116,9 +1118,9 @@ public int Age { get { return _age; } set { _age = value; } }
 ```EditorConfig
 # CSharp code style settings:
 [*.cs]
-csharp_style_expression_bodied_methods = false:none
-csharp_style_expression_bodied_constructors = false:none
-csharp_style_expression_bodied_operators = false:none
+csharp_style_expression_bodied_methods = false:silent
+csharp_style_expression_bodied_constructors = false:silent
+csharp_style_expression_bodied_operators = false:silent
 csharp_style_expression_bodied_properties = true:suggestion
 csharp_style_expression_bodied_indexers = true:suggestion
 csharp_style_expression_bodied_accessors = true:suggestion
@@ -1352,7 +1354,7 @@ In der folgenden Tabelle werden der Regelname, Regel-IDs, anzuwendende Sprachver
 
 | Regelname | Regel-ID | Anzuwendende Sprachen | Visual Studio-Standard | Visual Studio 2017 |
 | --------- | ------- | -------------------- | ----------------------| ---------------- |
-| csharp_prefer_braces | IDE0011 | C# | true:none | 15.3 |
+| csharp_prefer_braces | IDE0011 | C# | true:silent | 15.3 |
 
 **csharp\_prefer\_braces**
 
@@ -1374,7 +1376,7 @@ if (test) this.Display();
 ```EditorConfig
 # CSharp code style settings:
 [*.cs]
-csharp_prefer_braces = true:none
+csharp_prefer_braces = true:silent
 ```
 
 ## <a name="formatting-conventions"></a>Formatierungskonventionen
@@ -1390,6 +1392,7 @@ In der folgenden Liste werden die Regeln für Formatierungskonventionen angezeig
 - .NET-Formatierungseinstellungen
     - [Organisieren von Using-Direktiven](#usings)
         - dotnet_sort_system_directives_first
+        - dotnet_separate_import_directive_groups
 - C#-Formatierungseinstellungen
     - [Newline-Optionen](#newline)
         - csharp_new_line_before_open_brace
@@ -1432,6 +1435,7 @@ In der folgenden Tabelle werden der Regelname, anzuwendende Sprachen, der Standa
 | Regelname | Anzuwendende Sprachen | Visual Studio-Standard | Visual Studio 2017 |
 | ----------- | -------------------- | ----------------------| ---------------- |
 | dotnet_sort_system_directives_first | C# und Visual Basic | true | 15.3 |
+| dotnet_separate_import_directive_groups | C# und Visual Basic | False | 15.5 |
 
 **dotnet\_sort\_system\_directives_first**
 
@@ -1458,6 +1462,34 @@ using System.Threading.Tasks;
 # .NET formatting settings:
 [*.{cs,vb}]
 dotnet_sort_system_directives_first = true
+```
+
+**dotnet\_separate\_import\_directive\_groups**
+
+- Wenn diese Regel auf **TRUE** festgelegt ist, fügen Sie eine leere Zeile zwischen Using-Anweisungsgruppen ein.
+- Wenn diese Regel auf **FALSE** festgelegt ist, fügen Sie keine leere Zeile zwischen Using-Anweisungsgruppen ein.
+
+Codebeispiele:
+
+```csharp
+// dotnet_separate_import_directive_groups = true
+using System.Collections.Generic;
+using System.Threading.Tasks;
+
+using Octokit;
+
+// dotnet_separate_import_directive_groups = false
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using Octokit;
+```
+
+*EDITORCONFIG-Beispieldatei:*
+
+```EditorConfig
+# .NET formatting settings:
+[*.{cs,vb}]
+dotnet_separate_import_directive_groups = true
 ```
 
 ### <a name="c-formatting-settings"></a>C#-Formatierungseinstellungen
@@ -2193,16 +2225,17 @@ charset = utf-8-bom
 [*.{cs,vb}]
 # Organize usings
 dotnet_sort_system_directives_first = true
+dotnet_separate_import_directive_groups = false
 
 # this. preferences
-dotnet_style_qualification_for_field = false:none
-dotnet_style_qualification_for_property = false:none
-dotnet_style_qualification_for_method = false:none
-dotnet_style_qualification_for_event = false:none
+dotnet_style_qualification_for_field = false:silent
+dotnet_style_qualification_for_property = false:silent
+dotnet_style_qualification_for_method = false:silent
+dotnet_style_qualification_for_event = false:silent
 
 # Language keywords vs BCL types preferences
-dotnet_style_predefined_type_for_locals_parameters_members = true:none
-dotnet_style_predefined_type_for_member_access = true:none
+dotnet_style_predefined_type_for_locals_parameters_members = true:silent
+dotnet_style_predefined_type_for_member_access = true:silent
 
 # Parentheses preferences
 dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity:silent
@@ -2211,7 +2244,7 @@ dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:silent
 dotnet_style_parentheses_in_other_operators = never_if_unnecessary:silent
 
 # Modifier preferences
-dotnet_style_require_accessibility_modifiers = for_non_interface_members:none
+dotnet_style_require_accessibility_modifiers = for_non_interface_members:silent
 dotnet_style_readonly_field = true:suggestion
 
 # Expression-level preferences
@@ -2248,17 +2281,17 @@ dotnet_naming_symbols.constant_fields.required_modifiers          = const
 
 [*.cs]
 # var preferences
-csharp_style_var_for_built_in_types = true:none
-csharp_style_var_when_type_is_apparent = true:none
-csharp_style_var_elsewhere = true:none
+csharp_style_var_for_built_in_types = true:silent
+csharp_style_var_when_type_is_apparent = true:silent
+csharp_style_var_elsewhere = true:silent
 
 # Expression-bodied members
-csharp_style_expression_bodied_methods = false:none
-csharp_style_expression_bodied_constructors = false:none
-csharp_style_expression_bodied_operators = false:none
-csharp_style_expression_bodied_properties = true:none
-csharp_style_expression_bodied_indexers = true:none
-csharp_style_expression_bodied_accessors = true:none
+csharp_style_expression_bodied_methods = false:silent
+csharp_style_expression_bodied_constructors = false:silent
+csharp_style_expression_bodied_operators = false:silent
+csharp_style_expression_bodied_properties = true:silent
+csharp_style_expression_bodied_indexers = true:silent
+csharp_style_expression_bodied_accessors = true:silent
 
 # Pattern-matching preferences
 csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
@@ -2272,7 +2305,7 @@ csharp_style_conditional_delegate_call = true:suggestion
 csharp_preferred_modifier_order = public,private,protected,internal,static,extern,new,virtual,abstract,sealed,override,readonly,unsafe,volatile,async:suggestion
 
 # Expression-level preferences
-csharp_prefer_braces = true:none
+csharp_prefer_braces = true:silent
 csharp_style_deconstructed_variable_declaration = true:suggestion
 csharp_prefer_simple_default_expression = true:suggestion
 csharp_style_pattern_local_over_anonymous_function = true:suggestion

@@ -1,14 +1,9 @@
 ---
 title: Throw muss durch einen Ausdruck in derselben Quellzeile folgen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1035
 dev_langs:
@@ -16,16 +11,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: b03b7747-01a1-40c6-af80-a1dd70bc5781
-caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7179a22d2713c9ddc894618bd6921f3f873f2ad8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4c8ed951fb30b84f114f8f44a60e94b88f0f1d0f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951053"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63005940"
 ---
 # <a name="throw-must-be-followed-by-an-expression-on-the-same-source-line"></a>Auf 'throw' muss ein Ausdruck in derselben Quellzeile folgen
 Sie verwendet die `throw` -Schlüsselwort, aber nicht es mit einem Ausdruck in derselben Quellzeile folgen. Ein `throw` Anweisung besteht aus zwei Teilen: dem `throw` -Schlüsselwort, gefolgt von dem Ausdruck, der ausgelöst wird. Zum Beispiel:  
@@ -40,7 +34,7 @@ if (denominator == 0) {
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Stellen Sie sicher, dass die `throw` -Schlüsselwort und der Ausdruck, der ausgelöst werden, die in der gleichen Zeile angezeigt wird.  
+- Stellen Sie sicher, dass die `throw` -Schlüsselwort und der Ausdruck, der ausgelöst werden, die in der gleichen Zeile angezeigt wird.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Error-Objekt](../../javascript/reference/error-object-javascript.md)   

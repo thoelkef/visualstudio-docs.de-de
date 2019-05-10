@@ -1,22 +1,21 @@
 ---
 title: Verwenden von Python-Suchpfaden
 description: In Visual Studio wird eine spezifischere Möglichkeit zum Festlegen der Suchpfade für Umgebungen und Projekte bereitgestellt, um die Verwendung von systemweiten Variablen zu vermeiden.
-ms.date: 11/12/2018
-ms.prod: visual-studio-dev15
+ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 118e45b83f8c2169e82393f05f5df0c4bed66903
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 37ce9d7b1853dfecc9e0ec33ca08c3c3fa0571e0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951731"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428437"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Verwenden von Python-Suchpfaden in Visual Studio
 
@@ -32,7 +31,12 @@ Visual Studio bietet daher eine Möglichkeit, Suchpfade direkt in Umgebungen und
 
 Wenn Sie einen Suchpfad hinzufügen möchten, wechseln Sie zum **Projektmappen-Explorer**, erweitern Sie Ihren Projektknoten, klicken Sie mit der rechten Maustaste auf **Suchpfade**, und wählen Sie **Add Folder to Search Path** (Ordner zu Suchpfad hinzufügen) aus:
 
+::: moniker range="vs-2017"
 ![Befehl zum Hinzufügen eines Ordners zum Suchpfad in Suchpfaden im Projektmappen-Explorer](media/search-paths-command.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Befehl zum Hinzufügen eines Ordners zum Suchpfad in Suchpfaden im Projektmappen-Explorer](media/search-paths-command-2019.png)
+::: moniker-end
 
 Mit diesem Befehl wird ein Browser angezeigt, in dem Sie anschließend den einzuschließenden Ordner auswählen.
 

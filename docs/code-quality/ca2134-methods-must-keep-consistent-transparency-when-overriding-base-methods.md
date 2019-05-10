@@ -1,24 +1,23 @@
 ---
-title: 'CA2134: Methoden müssen beim Überschreiben von Basismethoden konsistente Transparenz wahren'
+title: 'CA2134: Methoden müssen beim Überschreiben von Basismethoden eine konsistente Transparenz wahren.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2134
 ms.assetid: 3b17e487-0326-442e-90e1-dc0ba9cdd3f2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31fc319e5edff3e7ea8ddece393ed2ef523e1e84
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 67114c20a7fcf5e8ff01773d8777b23d3caf3d91
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62542323"
 ---
-# <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134: Methoden müssen beim Überschreiben von Basismethoden konsistente Transparenz wahren
+# <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134: Methoden müssen beim Überschreiben von Basismethoden eine konsistente Transparenz wahren.
 
 |||
 |-|-|

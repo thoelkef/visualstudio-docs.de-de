@@ -1,14 +1,9 @@
 ---
 title: IDiaSymbol | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 01ad328a-736c-4933-a9f8-c2ded19ddd8c
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2bd52443d4150b371bbaa1865978db9a72c5c616
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e190360b4441a937e9bfa9fb317f9d07de506040
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734149"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447233"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ IDiaSymbol : IUnknown
  Die folgende Tabelle zeigt die Methoden der `IDiaSymbol`.  
   
 > [!NOTE]
->  Symbole, aussagekräftige Daten für nur einige dieser Methoden, abhängig von der Typ des Symbols zurück. Wenn eine Methode zurückgibt `S_OK`, und klicken Sie dann diese Methode sinnvolle Daten zurückgegeben hat.  
+> Symbole, aussagekräftige Daten für nur einige dieser Methoden, abhängig von der Typ des Symbols zurück. Wenn eine Methode zurückgibt `S_OK`, und klicken Sie dann diese Methode sinnvolle Daten zurückgegeben hat.  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
@@ -233,43 +228,43 @@ IDiaSymbol : IUnknown
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
  Rufen Sie diese Schnittstelle, indem Sie eine der folgenden Methoden aufrufen:  
   
--   [IDiaEnumSymbols::Item](../../debugger/debug-interface-access/idiaenumsymbols-item.md)  
+- [IDiaEnumSymbols::Item](../../debugger/debug-interface-access/idiaenumsymbols-item.md)  
   
--   [IDiaEnumSymbols::Next](../../debugger/debug-interface-access/idiaenumsymbols-next.md)  
+- [IDiaEnumSymbols::Next](../../debugger/debug-interface-access/idiaenumsymbols-next.md)  
   
--   [IDiaEnumSymbolsByAddr::Next](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-next.md)  
+- [IDiaEnumSymbolsByAddr::Next](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-next.md)  
   
--   [IDiaEnumSymbolsByAddr::Prev](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-prev.md)  
+- [IDiaEnumSymbolsByAddr::Prev](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-prev.md)  
   
--   [IDiaEnumSymbolsByAddr::symbolByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyaddr.md)  
+- [IDiaEnumSymbolsByAddr::symbolByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyaddr.md)  
   
--   [IDiaEnumSymbolsByAddr::symbolByRVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyrva.md)  
+- [IDiaEnumSymbolsByAddr::symbolByRVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyrva.md)  
   
--   [IDiaEnumSymbolsByAddr::symbolByVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyva.md)  
+- [IDiaEnumSymbolsByAddr::symbolByVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyva.md)  
   
--   [IDiaSession::findSymbolByAddr](../../debugger/debug-interface-access/idiasession-findsymbolbyaddr.md)  
+- [IDiaSession::findSymbolByAddr](../../debugger/debug-interface-access/idiasession-findsymbolbyaddr.md)  
   
--   [IDiaSession::findSymbolByRVA](../../debugger/debug-interface-access/idiasession-findsymbolbyrva.md)  
+- [IDiaSession::findSymbolByRVA](../../debugger/debug-interface-access/idiasession-findsymbolbyrva.md)  
   
--   [IDiaSession::findSymbolByRVAEx](../../debugger/debug-interface-access/idiasession-findsymbolbyrvaex.md)  
+- [IDiaSession::findSymbolByRVAEx](../../debugger/debug-interface-access/idiasession-findsymbolbyrvaex.md)  
   
--   [IDiaSession::findSymbolByVA](../../debugger/debug-interface-access/idiasession-findsymbolbyva.md)  
+- [IDiaSession::findSymbolByVA](../../debugger/debug-interface-access/idiasession-findsymbolbyva.md)  
   
--   [IDiaSession::findSymbolByVAEx](../../debugger/debug-interface-access/idiasession-findsymbolbyvaex.md)  
+- [IDiaSession::findSymbolByVAEx](../../debugger/debug-interface-access/idiasession-findsymbolbyvaex.md)  
   
--   [IDiaSession::findSymbolByToken](../../debugger/debug-interface-access/idiasession-findsymbolbytoken.md)  
+- [IDiaSession::findSymbolByToken](../../debugger/debug-interface-access/idiasession-findsymbolbytoken.md)  
   
--   [IDiaSession::symbolById](../../debugger/debug-interface-access/idiasession-symbolbyid.md)  
+- [IDiaSession::symbolById](../../debugger/debug-interface-access/idiasession-symbolbyid.md)  
   
--   [IDiaStackWalkHelper::symbolForVA](../../debugger/debug-interface-access/idiastackwalkhelper-symbolforva.md)  
+- [IDiaStackWalkHelper::symbolForVA](../../debugger/debug-interface-access/idiastackwalkhelper-symbolforva.md)  
   
--   [IDiaSymbol::get_types](../../debugger/debug-interface-access/idiasymbol-get-types.md)  
+- [IDiaSymbol::get_types](../../debugger/debug-interface-access/idiasymbol-get-types.md)  
   
 ## <a name="example"></a>Beispiel  
  Dieses Beispiel zeigt, wie die lokalen Variablen für eine Funktion an eine angegebene relative virtuelle Adresse angezeigt wird. Es zeigt auch, wie Symbole verschiedener Typen miteinander verknüpft sind.  
   
 > [!NOTE]
->  `CDiaBSTR` ist eine Klasse, umschließt ein `BSTR` und übernimmt automatisch das Freigeben der Zeichenfolge, bei die Instanziierung den Gültigkeitsbereich verlässt.  
+> `CDiaBSTR` ist eine Klasse, umschließt ein `BSTR` und übernimmt automatisch das Freigeben der Zeichenfolge, bei die Instanziierung den Gültigkeitsbereich verlässt.  
   
 ```cpp#  
 void DumpLocalVars( DWORD rva, IDiaSession *pSession )  
@@ -344,11 +339,11 @@ void DumpLocalVars( DWORD rva, IDiaSession *pSession )
 ```  
   
 ## <a name="requirements"></a>Anforderungen  
- `Header:` dia2.h  
+ `Header:` Dia2.h  
   
  Bibliothek: diaguids.lib  
   
- DLL: "MSDIA80.dll"  
+ DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Siehe auch  
  [Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
@@ -358,6 +353,3 @@ void DumpLocalVars( DWORD rva, IDiaSession *pSession )
  [Klassenhierarchie der Symboltypen](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)   
  [Symbole und Symboltags](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)   
  [Compiland](../../debugger/debug-interface-access/compiland.md)
-
-
-

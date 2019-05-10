@@ -1,14 +1,9 @@
 ---
 title: Visual C++-Klassen im Klassen-Designer | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.inheritancelinelabel
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 75e56f8c-11ef-42a3-b7ec-3d2cf25c581b
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d4193dda70aeda8534b9dc2fa3428ca08a9d89fa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c1fb81261f52fa5aaf73c30579332779ae5bfa17
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285687"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443178"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Visual C++-Klassen im Klassen-Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "49285687"
 Der Klassen-Designer unterstützt C++-Klassen und visualisiert native C++-Klassen auf die gleiche Weise wie Visual Basic- und Visual C#-Klassenformen, mit Ausnahme, dass C++-Klassen über mehrere Vererbungsbeziehungen verfügen können. Sie können die Klassenform erweitern, um mehr Felder und Methoden in der Klasse anzuzeigen, oder sie aus Platzgründen reduzieren.  
   
 > [!NOTE]
->  Der Klassen-Designer unterstützt keine Unions (eine besondere Art von Klasse, bei der der zugeordnete Arbeitsspeicher nur so groß wie der größte Datenmember der Union ist).  
+> Der Klassen-Designer unterstützt keine Unions (eine besondere Art von Klasse, bei der der zugeordnete Arbeitsspeicher nur so groß wie der größte Datenmember der Union ist).  
   
 ## <a name="simple-inheritance"></a>Einfache Vererbung  
  Wenn Sie mehr als eine Klasse in ein Klassendiagramm ziehen, und die Klassen verfügen über eine Klassenvererbungsbeziehung, werden sie durch einen Pfeil verbunden. Der Pfeil zeigt in Richtung der Basisklasse. Wenn z.B. die folgenden Klassen in einem Klassendiagramm angezeigt werden, werden sie durch einen Pfeil verbunden, der von B nach A zeigt:  
@@ -57,9 +52,9 @@ class Penguin : public Bird, public Swimmer {};
  Durch einen Rechtsklick auf eine Klassenform und anschließend durch Klicken auf **Basisklassen anzeigen**, wird die Basisklasse für die ausgewählte Klasse angezeigt,  
   
 > [!NOTE]
->  Der Befehl **Abgeleitete Klassen anzeigen** wird für C++-Code nicht unterstützt. Sie können abgeleitete Klassen anzeigen, indem Sie zur Klassenansicht wechseln, den Typknoten erweitern, den Unterordner **Abgeleitete Typen** erweitern und anschließend diese Typen in das Klassendiagramm ziehen.  
+> Der Befehl **Abgeleitete Klassen anzeigen** wird für C++-Code nicht unterstützt. Sie können abgeleitete Klassen anzeigen, indem Sie zur Klassenansicht wechseln, den Typknoten erweitern, den Unterordner **Abgeleitete Typen** erweitern und anschließend diese Typen in das Klassendiagramm ziehen.  
   
- Weitere Informationen über die Vererbung von mehreren Klasse finden Sie unter [(NOTINBUILD) Mehrfachvererbung](http://msdn.microsoft.com/en-us/3b74185e-2beb-4e29-8684-441e51d2a2ca) und [Mehrere Basisklassen](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740).  
+ Weitere Informationen über die Vererbung von mehreren Klasse finden Sie unter [(NOTINBUILD) Mehrfachvererbung](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) und [Mehrere Basisklassen](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740).  
   
 ## <a name="abstract-classes"></a>Abstrakte Klassen  
  Der Klassen-Designer unterstützt abstrakte Klassen (auch als „abstrakte Basisklassen“ bezeichnet). Dies sind Klassen, die nicht instanziiert, aber von denen andere Klassen abgeleitet werden können. Wenn Sie ein Beispiel aus „Mehrfachvererbungs“ weiter oben in diesem Dokument verwenden, können Sie womöglich die `Bird`-Klasse als einzelne Objekte wie folgt instanziieren:  
@@ -178,9 +173,6 @@ typedef struct
  [Arbeiten mit Visual C++-Code (Klassen-Designer)](../ide/working-with-visual-cpp-code-class-designer.md)   
  [Klassen und Strukturen](http://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873)   
  [Anonyme Klassentypen](http://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8)   
- [(NOTINBUILD) Mehrfache Vererbung](http://msdn.microsoft.com/en-us/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
+ [(NOTINBUILD) Mehrfache Vererbung](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
  [Mehrere Basisklassen](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)   
  [Vorlagen](http://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872)
-
-
-

@@ -7,16 +7,15 @@ helpviewer_keywords:
 - UML diagrams, saving
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: aec059dab655068d6dffaed6fe9a920cda1b6b7e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3cb1699db54691e81c49b686c245d96f9b5a5442
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53897981"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63003370"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>Freigeben von Modellen und Exportieren von Diagrammen
 In Visual Studio können Sie auf verschiedene Arten Modelle und Diagramme für Kollegen freigeben.

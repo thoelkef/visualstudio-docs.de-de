@@ -9,15 +9,15 @@ helpviewer_keywords:
 - CPU counters in Profiling Tools
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ddf173f39accb0bb9d2907349c82accdd4f21b40
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 37025177c026d0b6578644ca5765a6878be984ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912635"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553018"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU- und Windows-Indikatoren
 
@@ -129,7 +129,7 @@ Mit dem Befehlszeilentool [VSPerfCmd](../profiling/vsperfcmd.md) können Sie die
 
 ## <a name="see-also"></a>Siehe auch
 
-[Übersichten](../profiling/overviews-performance-tools.md)  
-[Vorgehensweise: Auswählen von Samplingereignissen](../profiling/how-to-choose-sampling-events.md)  
-[Vorgehensweise: Sammeln von CPU-Indikatordaten](../profiling/how-to-collect-cpu-counter-data.md)  
+[Übersichten (Leistungstools)](../profiling/overviews-performance-tools.md)
+[Vorgehensweise: Auswählen von Samplingereignissen](../profiling/how-to-choose-sampling-events.md)
+[Vorgehensweise: Sammeln von CPU-Indikatordaten](../profiling/how-to-collect-cpu-counter-data.md)
 [Vorgehensweise: Sammeln von Windows-Indikatordaten](../profiling/how-to-collect-windows-counter-data.md)

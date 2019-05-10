@@ -1,8 +1,6 @@
 ---
-title: Tipps zum Debuggen von Threads in systemeigenem Code | Microsoft Docs
-ms.custom: ''
+title: Tipps zum Debuggen von Threads in nativem Code | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,25 +13,25 @@ helpviewer_keywords:
 ms.assetid: 0374c8c6-57a3-4cfe-8047-2effef5ff5dc
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c98f6bb1a738111d32b26c5b923abe41367e621e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8ee1f1f2f2029325e3d3b87ca44d05d800a62c07
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476171"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901874"
 ---
-# <a name="tips-for-debugging-threads-in-native-code"></a>Tipps zum Debuggen von Threads in nativem Code
-Im Folgenden finden Sie einige Tipps, die beim Debuggen von Threads in nativem Code hilfreich sein können:  
-  
--   Sie können den Inhalt des Blocks Informationen Thread anzeigen, indem Sie Folgendes eingeben `@TIB` in der **Überwachen** Fenster oder **Schnellüberwachung** (Dialogfeld).  
-  
--   Sie können den letzten Fehlercode für den aktuellen Thread anzeigen, indem Sie eingeben `@Err` in der **Überwachen** Fenster oder **Schnellüberwachung** (Dialogfeld).  
-  
--   Funktionen der C-Laufzeitbibliotheken (CRT) können hilfreich beim Debuggen von Multithreadanwendungen sein. Weitere Informationen finden Sie unter [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg).  
-  
-## <a name="see-also"></a>Siehe auch  
- [Debuggen von Multithreadanwendungen](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Debuggen von nativem Code](../debugger/debugging-native-code.md)
+# <a name="tips-for-debugging-threads-in-native-code"></a>Tipps zum Debuggen von Threads in systemeigenem Code
+Im Folgenden finden Sie einige Tipps, die beim Debuggen von Threads in systemeigenem Code hilfreich sein können:
+
+- Sie können den Inhalt des Threadinformationsblocks anzeigen, indem Sie `@TIB` im **Überwachungsfenster** oder im Dialogfeld **Schnellüberwachung** eingeben.
+
+- Sie können den letzten Fehlercode für den aktuellen Thread anzeigen, indem Sie `@Err` im **Überwachungsfenster** oder im Dialogfeld **Schnellüberwachung** eingeben.
+
+- Funktionen der C-Laufzeitbibliotheken (CRT) können hilfreich beim Debuggen von Multithreadanwendungen sein. Weitere Informationen finden Sie unter [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg).
+
+## <a name="see-also"></a>Siehe auch
+- [Debuggen von Multithreadanwendungen](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Debuggen von nativem Code](../debugger/debugging-native-code.md)

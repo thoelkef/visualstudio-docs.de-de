@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Debuggen von optimiertem Code | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -27,24 +22,24 @@ ms.assetid: fc8eeeb8-6629-4c9b-99f7-2016aee81dff
 caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e3d0e6c86c800e2ba35fdac78d6659fa2ecd7e94
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 529fd979912d1743967109a11933140b482c2caf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734054"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435712"
 ---
-# <a name="how-to-debug-optimized-code"></a>Gewusst wie: Debuggen von optimiertem Code
+# <a name="how-to-debug-optimized-code"></a>Vorgehensweise: Debuggen von optimiertem Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 HINWEIS]
->  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü Extras auf Einstellungen importieren und exportieren, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü Extras auf Einstellungen importieren und exportieren, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 > [!NOTE]
->  Die [/zo (optimiertes Debuggen verbessern)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)(in Visual Studio Update 3 eingeführte)-Compileroption generiert umfangreichere Debuginformationen für optimierten Code (Projekte, die nicht mit basieren die **/Od** Compileroption. Finden Sie unter [/o-Optionen (Code optimieren)](http://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d)). Dazu gehört verbesserte Unterstützung zum Debuggen von lokalen Variablen und Inlinefunktionen.  
+> Die Compileroption [/Zo (erweitertes optimiertes Debugging)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) (eingeführt in Visual Studio Update 3) generiert umfassendere Debuginformationen für optimierten Code (Projekte, die nicht mit der Compileroption **/Od** erstellt wurden. Siehe [/O-Optionen (Code optimieren)](http://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d)). Dazu gehört verbesserte Unterstützung zum Debuggen von lokalen Variablen und Inlinefunktionen.  
 >   
->  [Bearbeiten und Fortfahren](../debugger/edit-and-continue-visual-csharp.md) ist deaktiviert, wenn die **/zo** -Compileroption verwendet wird.  
+> [Bearbeiten und Fortfahren](../debugger/edit-and-continue-visual-csharp.md) ist deaktiviert, wenn die **/Zo**-Compileroption verwendet wird.  
   
  Wenn der Compiler Code optimiert, werden die Anweisungen neu positioniert und organisiert. Hierdurch wird die Effizienz des kompilierten Codes erhöht. Aufgrund dieser Neuanordnung ist der Debugger nicht immer in der Lage, den Quellcode, der einer bestimmten Gruppe von Anweisungen entspricht, zu erkennen.  
   
@@ -66,40 +61,37 @@ HINWEIS]
   
 ### <a name="to-turn-on-optimization-in-a-debug-build-configuration"></a>So aktivieren Sie die Optimierung in einer Debugbuildkonfiguration  
   
-1. Wählen Sie beim Erstellen eines neuen Projekts `Win32 Debug` als Ziel aus. Verwenden der `Win32``Debug` Ziel, bis das Programm vollständig debuggt ist und Sie bereit sind, erstellen Sie eine `Win32 Release` Ziel. Das `Win32 Debug`-Ziel wird nicht vom Compiler optimiert.  
+1. Wählen Sie beim Erstellen eines neuen Projekts `Win32 Debug` als Ziel aus. Verwenden Sie das `Win32``Debug`-Ziel, bis das Programm vollständig debuggt und für die Erstellung eines `Win32 Release`-Ziels bereit ist. Das `Win32 Debug`-Ziel wird nicht vom Compiler optimiert.  
   
 2. Wählen Sie das Projekt im Projektmappen-Explorer aus.  
   
-3. Auf der **Ansicht** Menü klicken Sie auf **Eigenschaftenseiten**.  
+3. Klicken Sie im Menü **Ansicht** auf die Option **Eigenschaftenseiten**.  
   
-4. In der **Eigenschaftenseiten** Dialogfeld stellen Sie sicher, dass `Debug` ausgewählt ist, der **Konfiguration** Dropdown-Liste.  
+4. Stellen Sie im Dialogfeld **Eigenschaftenseiten** sicher, dass die Option `Debug` in der Dropdownliste **Konfiguration** ausgewählt ist.  
   
-5. Wählen Sie in den Ordner auf der linken Seite die **C/C++-** Ordner.  
+5. Wählen Sie in der Ordneransicht auf der linken Seite den Ordner **C/C++** aus.  
   
-6. Unter den **C++** Ordner `Optimization`.  
+6. Wählen Sie `Optimization` im Ordner **C++** aus.  
   
-7. Suchen Sie die Option `Optimization` in der Eigenschaftenliste auf der rechten Seite. Die Einstellung daneben lautet wahrscheinlich `Disabled (` [/Od](http://msdn.microsoft.com/library/b1ac31b7-e086-4eeb-be5e-488f7513f5f5)`)`. Wählen Sie eine der anderen Optionen (`Minimum Size``(`["/ O1"](http://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`, `Maximum Speed``(` ["/ O2"](http://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`, `Full Optimization``(` [/Ox](http://msdn.microsoft.com/library/3ad7c30b-c615-428c-b1d0-2e024f81c760) `)`, oder `Custom`).  
+7. Suchen Sie die Option `Optimization` in der Eigenschaftenliste auf der rechten Seite. Die Einstellung daneben lautet vermutlich `Disabled (`[/Od](http://msdn.microsoft.com/library/b1ac31b7-e086-4eeb-be5e-488f7513f5f5)`)`. Wählen Sie eine der anderen Optionen aus (`Minimum Size``(`[/O1](http://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`, `Maximum Speed``(`[/O2](http://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`, `Full Optimization``(`[/Ox](http://msdn.microsoft.com/library/3ad7c30b-c615-428c-b1d0-2e024f81c760)`)` oder `Custom`).  
   
 8. Wenn Sie für die `Custom` die Option `Optimization` auswählen, können Sie Optionen für alle weiteren Eigenschaften in der Eigenschaftenliste festlegen.  
   
-9. Wählen Sie den Remotedebugger-Eigenschaften, C/C++ Knoten der Seite mit den Projekteigenschaften, Befehlszeile und hinzufügen `(` [/zo](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)` auf die **zusätzliche Optionen** Textfeld.  
+9. Wählen Sie die Konfigurationseigenschaften, C/C++ über die Befehlszeile Knoten der Seite mit den Projekteigenschaften, und fügen `(` [/zo](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)` auf die **zusätzliche Optionen** Textfeld.  
   
     > [!WARNING]
-    >  Für `/Zo` ist Visual Studio 2013 Update 3 oder höher erforderlich.  
+    > Für `/Zo` ist Visual Studio 2013 Update 3 oder höher erforderlich.  
     >   
-    >  Hinzufügen von `/Zo` deaktiviert [bearbeiten und Fortfahren](../debugger/edit-and-continue-visual-csharp.md).  
+    >  Das Hinzufügen von `/Zo` deaktiviert [Bearbeiten und Fortfahren](../debugger/edit-and-continue-visual-csharp.md).  
   
-   Verwenden Sie beim Debuggen von optimiertem Code die **Disassembly** Fenster, um festzustellen, welche Anweisungen tatsächlich erstellt und ausgeführt werden. Beim Festlegen von Haltepunkten sollten Sie beachten, dass der Haltepunkt zusammen mit einer Anweisung verschoben werden kann. Beachten Sie z. B. folgenden Code:  
+   Ermitteln Sie beim Debuggen von optimiertem Code im Fenster **Disassemblierung**, welche Anweisungen tatsächlich generiert und ausgeführt werden. Beim Festlegen von Haltepunkten sollten Sie beachten, dass der Haltepunkt zusammen mit einer Anweisung verschoben werden kann. Beachten Sie z. B. folgenden Code:  
   
 ```  
 for (x=0; x<10; x++)  
 ```  
   
- Angenommen, Sie haben in dieser Zeile einen Haltepunkt festgelegt. Sie gehen möglicherweise davon aus, dass der Haltepunkt 10 Mal getroffen wird. Wenn der Code optimiert ist, wird er jedoch nur einmal getroffen. Dies liegt daran, dass die erste Anweisung den Wert von `x` auf 0 festlegt. Der Compiler erkennt, dass dies nur einmal durchgeführt werden muss und verschiebt es aus der Schleife. Gleichzeitig wird auch der Haltepunkt verschoben. Die Anweisungen zum Vergleichen und Heraufsetzen von `x` verbleiben innerhalb der Schleife. Beim Anzeigen der **Disassembly** Fenster die [Schritteinheit](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9) wird automatisch festgelegt, der Anweisung zur besseren Steuerung nützlich, ist Wenn Sie optimierte Code durchlaufen schrittweise.  
+ Angenommen, Sie haben in dieser Zeile einen Haltepunkt festgelegt. Sie gehen möglicherweise davon aus, dass der Haltepunkt 10 Mal getroffen wird. Wenn der Code optimiert ist, wird er jedoch nur einmal getroffen. Dies liegt daran, dass die erste Anweisung den Wert von `x` auf 0 festlegt. Der Compiler erkennt, dass dies nur einmal durchgeführt werden muss und verschiebt es aus der Schleife. Gleichzeitig wird auch der Haltepunkt verschoben. Die Anweisungen zum Vergleichen und Heraufsetzen von `x` verbleiben innerhalb der Schleife. Wenn Sie das Fenster **Disassemblierung** anzeigen, wird die [Schritteinheit](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9) zur besseren Steuerung automatisch auf „Befehl“ festgelegt. Dies ist bei der schrittweisen Ausführung von optimiertem Code von Vorteil.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Debuggersicherheit](../debugger/debugger-security.md)   
+ [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
  [Debuggen von nativem Code](../debugger/debugging-native-code.md)
-
-
-

@@ -1,8 +1,6 @@
 ---
 title: Direktfenster
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
+ms.date: 02/25/2019
 ms.topic: reference
 dev_langs:
 - VB
@@ -15,46 +13,50 @@ helpviewer_keywords:
 ms.assetid: d33e7937-73f3-4c69-9df0-777a8713c6f2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 768824995bcc0c99cc4c6ad400888e056619b6b7
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: e3a8315b087e259e7e1e37dfa8ab30d476bea308
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561667"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62995258"
 ---
 # <a name="immediate-window"></a>Direktfenster
-Das Fenster **Direkt** wird zum Debuggen und Auswerten von Ausdrücken, Ausführen von Anweisungen, Drucken von Variablenwerten usw. verwendet. Er ermöglicht die Eingabe von Ausdrücken, die von der Entwicklungssprache während des Debuggens ausgewertet oder ausgeführt werden sollen. Um das Fenster **Direkt** anzuzeigen, öffnen Sie ein Projekt zur Bearbeitung und wählen dann im Menü **Debuggen** zunächst **Fenster** und dann **Direkt** aus, oder drücken Sie STRG+ALT+I.
 
- Sie können in diesem Fenster einzelne [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]-Befehle ausgeben. Zu den verfügbaren Befehlen gehört `EvaluateStatement`. Damit können Variablen Werte zugewiesen werden. Das Fenster **Direkt** unterstützt auch IntelliSense.
+Das **Direktfenster** wird zum Debuggen und Auswerten von Ausdrücken, Ausführen von Anweisungen und Ausgeben von Variablenwerten verwendet. Mit dem **Direktfenster** werden Ausdrücke durch Erstellen und Verwenden des derzeit ausgewählten Projekts ausgewertet.
 
-## <a name="displaying-the-values-of-variables"></a>Anzeigen der Werte von Variablen
- Dieses Fenster kann besonders beim Debuggen einer Anwendung von Nutzen sein. Um beispielsweise den Wert der Variablen `varA` zu überprüfen, können Sie den [Drucken-Befehl](../../ide/reference/print-command.md) verwenden:
+Um das Fenster **Direkt** anzuzeigen, öffnen Sie ein Projekt zur Bearbeitung und wählen dann **Debuggen** > **Windows** > **Direkt** oder drücken **STRG**+**ALT**+**I**. Alternativ können Sie auch im **Befehlsfenster** **Debug.Immediate** eingeben.
+
+Das **Direktfenster** unterstützt IntelliSense.
+
+## <a name="display-the-values-of-variables"></a>Anzeigen der Werte von Variablen
+
+Das **Direktfenster** ist besonders beim Debuggen einer App nützlich. Um beispielsweise den Wert der Variablen `varA` zu überprüfen, können Sie den [Print-Befehl](../../ide/reference/print-command.md) verwenden:
 
 ```cmd
 >Debug.Print varA
 ```
 
- Das Fragezeichen (?) ist ein Alias für `Debug.Print`, sodass dieser Befehl auch wie folgt eingegeben werden kann:
+Das Fragezeichen (?) ist ein Alias für `Debug.Print`, sodass dieser Befehl auch wie folgt eingegeben werden kann:
 
 ```cmd
->? varA
+? varA
 ```
 
- Beide Versionen dieses Befehls geben den Wert der Variablen `varA` zurück.
+Beide Versionen dieses Befehls geben den Wert der Variablen `varA` zurück.
 
-> [!NOTE]
-> Wenn Sie einen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]-Befehl im Fenster **Direkt** angeben, müssen Sie dem Befehl ein Größer-als-Zeichen (>) voranstellen. Wechseln Sie zum Fenster **Befehl**, wenn Sie mehrere Befehle eingeben möchten.
-
+> [!TIP]
+> Wenn Sie einen Visual Studio-Befehl im Fenster **Direkt** ausgeben, müssen Sie dem Befehl ein Größer-als-Zeichen (>) voranstellen. Wechseln Sie zum [Befehlsfenster](command-window.md), wenn Sie mehrere Befehle eingeben möchten.
 
 ## <a name="design-time-expression-evaluation"></a>Ausdrucksauswertung zur Entwurfszeit
- Sie können das Fenster **Direkt** verwenden, um eine Funktion oder Unterroutine zur Entwurfszeit auszuführen.
 
-#### <a name="to-execute-a-function-at-design-time"></a>So führen Sie eine Funktion zur Entwurfszeit aus
+Sie können das Fenster **Direkt** verwenden, um eine Funktion oder Unterroutine zur Entwurfszeit auszuführen.
 
-1. Kopieren Sie den folgenden Code in eine [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]-Konsolenanwendung:
+### <a name="execute-a-function-at-design-time"></a>Ausführen einer Funktion zur Entwurfszeit
+
+1. Kopieren Sie den folgenden Code, und fügen Sie ihn in eine Visual Basic-Konsolenanwendung ein:
 
    ```vb
    Module Module1
@@ -70,21 +72,23 @@ Das Fenster **Direkt** wird zum Debuggen und Auswerten von Ausdrücken, Ausführ
    End Module
    ```
 
-2. Wählen Sie im Menü **Debuggen** die Option **Fenster** aus, und klicken Sie dann auf **Direkt**.
+2. Klicken Sie im Menü **Debuggen** auf **Windows** > **Direkt**.
 
-3. Geben `?MyFunction(2)` im Fenster **Direkt** ein, und drücken Sie die EINGABETASTE.
+3. Geben Sie `?MyFunction(2)` im Fenster **Direkt** ein, und drücken Sie die **EINGABETASTE**.
 
-    Das Fenster **Direkt** führt `MyFunction` aus und zeigt `4` an.
+    Über das Fenster **Direkt** wird `MyFunction` ausgeführt und `4` angezeigt.
 
-Wenn die Funktion oder die Unterroutine einen Haltepunkt enthält, unterbricht [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] die Ausführung an der entsprechenden Stelle. Sie können dann die Debuggerfenster verwenden, um den Programmzustand zu überprüfen. Weitere Informationen finden Sie unter [Walkthrough: Debugging at Design Time (Exemplarische Vorgehensweise: Debuggen zur Entwurfszeit)](../../debugger/walkthrough-debugging-at-design-time.md).
+Wenn die Funktion oder die Unterroutine einen Breakpoint enthält, unterbricht Visual Studio die Ausführung an der entsprechenden Stelle. Sie können dann die Debuggerfenster verwenden, um den Programmzustand zu überprüfen. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Debugging at Design Time (Exemplarische Vorgehensweise: Debuggen zur Entwurfszeit)](../../debugger/walkthrough-debugging-at-design-time.md).
 
-Die Ausdrucksauswertung zur Entwurfszeit ist nicht für Projekttypen verfügbar, die das Starten einer Ausführungsumgebung erfordern, z.B. [!INCLUDE[trprVSTOshort](../../ide/reference/includes/trprvstoshort_md.md)]-Projekte, Webprojekte, Projekte für intelligente Geräte und SQL-Projekte.
+Die Ausdrucksauswertung zur Entwurfszeit ist nicht für Projekttypen verfügbar, die das Starten einer Ausführungsumgebung erfordern, z.B. Visual Studio-Tools für Office-Projekte, Webprojekte, Projekte für intelligente Geräte und SQL-Projekte.
 
 ### <a name="design-time-expression-evaluation-in-multi-project-solutions"></a>Ausdrucksauswertung zur Entwurfszeit in Projektmappen mit mehreren Projekten
- Beim Festlegen des Kontexts für die Ausdrucksauswertung zur Entwurfszeit verweist [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] auf das aktuell ausgewählte Projekt im Projektmappen-Explorer. Wenn im Projektmappen-Explorer kein Projekt ausgewählt ist, versucht [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], die Funktion anhand des Startprojekts auszuwerten. Wenn die Funktion im aktuellen Kontext nicht ausgewertet werden kann, wird eine Fehlermeldung angezeigt. Wenn Sie versuchen, eine Funktion in einem Projekt auszuwerten, das nicht das Startprojekt für die Projektmappe ist, und eine Fehlermeldung angezeigt wird, wählen Sie das Projekt im Projektmappen-Explorer aus, und wiederholen Sie die Auswertung.
 
-## <a name="entering-commands"></a>Eingeben von Befehlen
- Sie müssen das Größer-als-Zeichen (>) eingeben, wenn Sie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]-Befehle im Fenster **Direkt** angeben. Verwenden Sie die NACH-OBEN- und NACH UNTEN-TASTEN, um einen Bildlauf durch bereits ausgegebene Befehle durchzuführen.
+Beim Festlegen des Kontexts für die Ausdrucksauswertung zur Entwurfszeit verweist Visual Studio auf das aktuell ausgewählte Projekt im Projektmappen-Explorer. Wenn im Projektmappen-Explorer kein Projekt ausgewählt ist, versucht Visual Studio, die Funktion anhand des Startprojekts auszuwerten. Wenn die Funktion im aktuellen Kontext nicht ausgewertet werden kann, wird eine Fehlermeldung angezeigt. Wenn Sie versuchen, eine Funktion in einem Projekt auszuwerten, das nicht das Startprojekt für die Projektmappe ist, und eine Fehlermeldung angezeigt wird, wählen Sie das Projekt im Projektmappen-Explorer aus, und wiederholen Sie die Auswertung.
+
+## <a name="enter-commands"></a>Eingeben von Befehlen
+
+Sie müssen das Größer-als-Zeichen (>) eingeben, wenn Sie Visual Studio-Befehle im Fenster **Direkt** angeben. Verwenden Sie die **NACH-OBEN**- und **NACH UNTEN**-TASTEN, um durch Ihre zuvor verwendeten Befehle zu scrollen.
 
 |Aufgabe|Lösung|Beispiel|
 |----------|--------------|-------------|
@@ -94,41 +98,42 @@ Die Ausdrucksauswertung zur Entwurfszeit ist nicht für Projekttypen verfügbar,
 |Wechseln Sie wieder zum Direktfenster.|Geben Sie in das Fenster `immed` ohne das Größer-als-Zeichen (>) ein.|`immed`|
 
 ## <a name="mark-mode"></a>Markierungsmodus
- Wenn Sie im Fenster **Direkt** auf eine zuvor ausgegebene Zeile klicken, schalten Sie automatisch in den Markierungsmodus um. Auf diese Weise können Sie den Text vorheriger Befehle wie in einem beliebigen anderen Text-Editor markieren, bearbeiten, kopieren und in die aktuelle Zeile einfügen.
 
-## <a name="the-equals--sign"></a>Gleichheitszeichen (=)
- Abhängig vom Fenster, das zur Eingabe des `EvaluateStatement`-Befehls verwendet wird, wird ein Gleichheitszeichen (=) als Vergleichsoperator oder als Zuweisungsoperator interpretiert.
+Wenn Sie im Fenster **Direkt** auf eine zuvor ausgegebene Zeile klicken, schalten Sie automatisch in den Markierungsmodus um. Auf diese Weise können Sie den Text vorheriger Befehle wie in einem beliebigen anderen Text-Editor markieren, bearbeiten, kopieren und in die aktuelle Zeile einfügen.
 
- Im Fenster **Direkt** wird ein Gleichheitszeichen (=) als Zuweisungsoperator interpretiert. Daher wird mit dem Befehl
+## <a name="examples"></a>Beispiele
 
-```cmd
->Debug.EvaluateStatement(varA=varB)
-```
-
- der Variablen `varA` der Wert von Variable `varB` zugewiesen.
-
- Im Fenster **Befehl** wird ein Gleichheitszeichen (=) hingegen als Vergleichsoperator interpretiert. Sie können keine Zuweisungsvorgänge im Fenster **Befehl** ausführen. Wenn die Werte der Variablen `varA` und `varB` beispielsweise unterschiedlich sind, gibt der Befehl
+Im folgenden Beispiel werden vier Ausdrücke und die dazugehörigen Ergebnisse im **Direktfenster** für ein Visual Basic-Projekt veranschaulicht.
 
 ```cmd
->Debug.EvaluateStatement(varA=varB)
-```
+j = 2
+Expression has been evaluated and has no value
 
- den Wert `False` zurück.
+? j
+2
+
+j = DateTime.Now.Day
+Expression has been evaluated and has no value
+
+? j
+26
+```
 
 ## <a name="first-chance-exception-notifications"></a>Ausnahmebenachrichtigungen (erste Chance)
- Bei einigen Einstellungskonfigurationen werden Ausnahmebenachrichtigungen (erste Chance) im Fenster **Direkt** angezeigt.
 
-#### <a name="to-toggle-first-chance-exception-notifications-in-the-immediate-window"></a>So blenden Sie Ausnahmebenachrichtigungen (erste Chance) im Direktfenster ein und aus
+Bei einigen Einstellungskonfigurationen werden Ausnahmebenachrichtigungen (erste Chance) im Fenster **Direkt** angezeigt.
 
-1.  Klicken Sie im Menü **Ansicht** auf **Weitere Fenster** und dann auf **Ausgabe**.
+### <a name="toggle-first-chance-exception-notifications-in-the-immediate-window"></a>Ein- bzw. Ausblenden von Ausnahmebenachrichtigungen (erste Chance) im Fenster „Direkt“
 
-2.  Klicken Sie mit der rechten Maustaste auf den Textbereich des **Ausgabefensters**, und aktivieren bzw. deaktivieren Sie die Option **Ausnahmemeldungen**.
+1. Klicken Sie im Menü **Ansicht** auf **Weitere Fenster** und dann auf **Ausgabe**.
+
+2. Klicken Sie mit der rechten Maustaste auf den Textbereich des **Ausgabefensters**, und aktivieren bzw. deaktivieren Sie dann die Option **Ausnahmemeldungen**.
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Navigieren im Code mit dem Debugger](../../debugger/navigating-through-code-with-the-debugger.md)
 - [Befehlsfenster](../../ide/reference/command-window.md)
-- [Erster Einblick in den Debugger](../../debugger/debugger-feature-tour.md)   
+- [Erster Einblick in den Debugger](../../debugger/debugger-feature-tour.md)
 - [Exemplarische Vorgehensweise: Debuggen zur Entwurfszeit](../../debugger/walkthrough-debugging-at-design-time.md)
 - [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 - [Verwenden von regulären Ausdrücken in Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)

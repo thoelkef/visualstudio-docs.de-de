@@ -1,14 +1,9 @@
 ---
 title: BscMake-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - vc.task.bscmake
 - VC.Project.VCBscMakeTool.PreserveSBR
@@ -25,20 +20,19 @@ ms.assetid: bb98fc67-cad8-43a7-9598-60df6d734db2
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 92f346bdab454e04f7df16ea39e42668da33d451
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8223c014c0092d2c1092b97c0bd5f8c489112c9b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243216"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426904"
 ---
 # <a name="bscmake-task"></a>BscMake-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 WICHTIG]
->  bscmake wird nicht mehr von der Visual Studio-IDE verwendet werden. Seit Visual Studio 2008 werden Browseinformationen automatisch in einer SDF-Datei im Projektmappenordner gespeichert.  
+> bscmake wird nicht mehr von der Visual Studio-IDE verwendet werden. Seit Visual Studio 2008 werden Browseinformationen automatisch in einer SDF-Datei im Projektmappenordner gespeichert.  
   
  Führt das Microsoft-Wartungshilfsprogramm zum Durchsuchen von Informationen aus (bscmake.exe).  Das Tool bscmake.exe erstellt eine Browseinformationsdatei (.bsc) von Quellbrowserdateien (.sbr), die während der Kompilierung erstellt werden. Verwenden Sie den **Objektkatalog**, um eine BSC-Datei anzuzeigen. Weitere Informationen finden Sie unter [BSCMAKE-Referenz](http://msdn.microsoft.com/library/b97ad994-1355-4809-98db-6abc12c6fb13).  
   
@@ -58,6 +52,3 @@ WICHTIG]
   
 ## <a name="see-also"></a>Siehe auch  
  [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)
-
-
-

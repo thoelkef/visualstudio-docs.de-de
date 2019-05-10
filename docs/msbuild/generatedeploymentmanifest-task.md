@@ -14,15 +14,15 @@ helpviewer_keywords:
 - GenerateDeploymentManifest task [MSBuild]
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d8f6f45b0a02922f3c91b9d1443000a385eb240
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f8a2f4810c8a485d6b9013f658e221db39d8071f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932378"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63003349"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest-Aufgabe
 
@@ -31,7 +31,6 @@ Generiert ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-
 ## <a name="parameters"></a>Parameter
 
 In der folgenden Tabelle werden die Parameter für die `GenerateDeploymentManifest`-Aufgabe beschrieben.
-
 
 | Parameter | Beschreibung |
 |--------------------------| - |
@@ -61,13 +60,13 @@ In der folgenden Tabelle werden die Parameter für die `GenerateDeploymentManife
 | `UpdateMode` | Optionaler `String` -Parameter.<br /><br /> Gibt an, ob vor dem Start der Anwendung im Vordergrund oder nach dem Start der Anwendung im Hintergrund nach Updates gesucht werden soll. Dieser Parameter kann die folgenden Werte aufweisen:<br /><br /> -   `Foreground`<br />-   `Background`<br /><br /> Der Standardwert dieses Parameters ist `Background`. Dieser Parameter ist nur gültig, wenn sowohl der `Install`-Parameter als auch der `UpdateEnabled`-Parameter den Wert `true` aufweisen. |
 | `UpdateUnit` | Optionaler `String` -Parameter.<br /><br /> Gibt die Einheiten für den `UpdateInterval`-Parameter an. Dieser Parameter kann die folgenden Werte aufweisen:<br /><br /> -   `Hours`<br />-   `Days`<br />-   `Weeks`<br /><br /> Dieser Parameter ist nur gültig, wenn sowohl der `Install`-Parameter als auch der `UpdateEnabled`-Parameter den Wert `true` aufweisen. |
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Anmerkungen
 
 Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.GenerateManifestBase>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste der Parameter der Aufgabenklasse finden Sie unter [Task-Basisklasse](../msbuild/task-base-class.md).
 
 ## <a name="see-also"></a>Siehe auch
 
-[Aufgaben](../msbuild/msbuild-tasks.md)  
-[GenerateApplicationManifest-Aufgabe](../msbuild/generateapplicationmanifest-task.md)  
-[SignFile-Aufgabe](../msbuild/signfile-task.md)  
-[Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
+- [Aufgaben](../msbuild/msbuild-tasks.md)
+- [GenerateApplicationManifest-Aufgabe](../msbuild/generateapplicationmanifest-task.md)
+- [SignFile-Aufgabe](../msbuild/signfile-task.md)
+- [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

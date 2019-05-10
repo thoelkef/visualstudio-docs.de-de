@@ -1,8 +1,6 @@
 ---
 title: Festlegen von Debug- und Releasekonfigurationen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 10/05/2018
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.builds
@@ -30,15 +28,15 @@ helpviewer_keywords:
 ms.assetid: 57b6bbb7-f2af-48f7-8773-127d75034ed2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a65a3331c210bdfb4143ff890180fdc7d663229
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: b0bf0da5f15bbb59c2898af0dc0bfec1105cbab0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257224"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847694"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Festlegen von Debug- und Releasekonfigurationen in Visual Studio
 
@@ -46,11 +44,11 @@ Visual Studio-Projekte verfügen über separate Release- und Debugkonfiguration
 
 In der Debugkonfiguration kompiliert Ihr Programm mit vollständigen symbolischen Debuginformationen und ohne Optimierung. Die Optimierung gestaltet das Debuggen etwas schwieriger, da die Beziehung zwischen Quellcode und generierten Anweisungen komplexer ist.
 
-Die Releasekonfiguration des Programms hat keine symbolischen Debuginformationen und wird vollständig optimiert. Debuggen kann Informationen in PDB-Dateien generiert werden [abhängig von den Compileroptionen](#BKMK_symbols_release) , die verwendet werden. Erstellen die PDB-Dateien ist nützlich, wenn Sie später die Releaseversion debuggen müssen.
+Die Releasekonfiguration des Programms hat keine symbolischen Debuginformationen und wird vollständig optimiert. Für verwalteten Code und C++ Code Debuginformationen in PDB-Dateien generiert werden kann [abhängig von den Compileroptionen](#BKMK_symbols_release) , die verwendet werden. Erstellen die PDB-Dateien ist nützlich, wenn Sie später die Releaseversion debuggen müssen.
 
 Weitere Informationen zu Buildkonfigurationen finden Sie unter [Grundlagen der Buildkonfigurationen](../ide/understanding-build-configurations.md).
 
-Sie können die Buildkonfiguration Ändern der **erstellen** im Menü auf der Symbolleiste oder in den Eigenschaftenseiten des Projekts. Die Eigenschaftenseiten des Projekts sind sprachspezifisch. Das folgende Verfahren zeigt, wie die Buildkonfiguration über die Symbolleiste und das Menü geändert wird. Weitere Informationen dazu, wie Sie die Buildkonfiguration in Projekten, die in verschiedenen Sprachen zu ändern, finden Sie die [Siehe auch](#see-also) Abschnitt weiter unten.
+Sie können die Buildkonfiguration über die Symbolleiste im Menü **Build** oder über die Eigenschaftenseiten des Projekts ändern. Die Eigenschaftenseiten des Projekts sind sprachspezifisch. Das folgende Verfahren zeigt, wie die Buildkonfiguration über die Symbolleiste und das Menü geändert wird. Weitere Informationen dazu, wie Sie die Buildkonfiguration in Projekten, die in verschiedenen Sprachen zu ändern, finden Sie die [Siehe auch](#see-also) Abschnitt weiter unten.
 
 ## <a name="change-the-build-configuration"></a>Ändern Sie die Buildkonfiguration
 
@@ -60,7 +58,7 @@ So ändern Sie die Buildkonfiguration, entweder:
 
 oder
 
-* Wählen Sie auf der Symbolleiste entweder **Debuggen** oder **Version** aus der **Projektmappenkonfigurationen** Liste.
+* Wählen Sie auf der Symbolleiste im Listenfeld **Projektmappenkonfigurationen** die Option **Debuggen** oder **Release** aus.
 
   ![Symbolleisten-Buildkonfiguration](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")
 
@@ -69,7 +67,7 @@ oder
 Sie können auch Symboldateien (.pdb) und was generiert Debuginformationen einschließen. Für die meisten Projekttypen generiert der Compiler Symboldateien standardmäßig zum Debuggen, und Version erstellt wurde, während andere Standardeinstellungen nach Projekttyp und Visual Studio-Version unterscheiden.
 
 > [!IMPORTANT]
-> Der Debugger lädt nur eine PDB-Datei für eine ausführbare Datei, die genau mit der PDB-Datei übereinstimmt, die zum Zeitpunkt der Erstellung der ausführbaren Datei ebenfalls erstellt wurde (das heißt, die PDB-Datei muss die originale PDB-Datei oder eine Kopie der originalen PDB-Datei sein). Weitere Informationen finden Sie unter [Why Visual Studio require Debugger Symbol-Dateien zu genau den Binärdateien bereitgestellt, die mit der sie erstellt wurden?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
+> Der Debugger lädt nur eine PDB-Datei für eine ausführbare Datei, die genau mit der PDB-Datei übereinstimmt, die zum Zeitpunkt der Erstellung der ausführbaren Datei ebenfalls erstellt wurde (das heißt, die PDB-Datei muss die originale PDB-Datei oder eine Kopie der originalen PDB-Datei sein). Weitere Informationen finden Sie unter [Why does Visual Studio require debugger symbol files to exactly match the binary files that they were built with? (Wieso benötigt Visual Studio Debugsymboldateien, die mit den Binärdateien für die Erstellung exakt übereinstimmen?)](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
 
 Jeder Projekttyp möglicherweise eine andere Art der Festlegen dieser Optionen.
 
@@ -120,10 +118,10 @@ Ausführliche Informationen zu projekteinstellungen für die Debugkonfiguratione
    Der Compiler erstellt die Symbol-Dateien im selben Ordner wie die ausführbare Datei oder Hauptausgabedatei.
 
 ## <a name="see-also"></a>Siehe auch
- 
-[Angeben von Symbol(PDB)- und Quelldateien im Visual Studio-debugger](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)<br/>
-[Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)<br/>
-[Projekteinstellungen für eine C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md)<br/>
-[Projekteinstellungen für eine C#-Debugkonfiguration](../debugger/project-settings-for-csharp-debug-configurations.md)<br/>
-[Projekteinstellungen für eine Visual Basic-Debugkonfiguration](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)<br/>
-[Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen](../ide/how-to-create-and-edit-configurations.md)
+
+- [Angeben von Symbol(PDB)- und Quelldateien im Visual Studio-debugger](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)<br/>
+- [Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)<br/>
+- [Projekteinstellungen für eine C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md)<br/>
+- [Projekteinstellungen für eine C#-Debugkonfiguration](../debugger/project-settings-for-csharp-debug-configurations.md)<br/>
+- [Projekteinstellungen für eine Visual Basic-Debugkonfiguration](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)<br/>
+- [Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen](../ide/how-to-create-and-edit-configurations.md)

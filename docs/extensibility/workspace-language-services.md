@@ -2,18 +2,17 @@
 title: Arbeitsbereiche und Sprachdienste in Visual Studio | Microsoft-Dokumentation
 ms.date: 02/21/2018
 ms.topic: conceptual
-ms.assetid: 8631ffea-83c8-4fd4-a01e-c59772e89c84
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28ecd995446969c271694c554ae21e03c1afc79d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2893ae2bcd70ff317ba799fea6cfd2751c685731
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850267"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952698"
 ---
 # <a name="workspaces-and-language-services"></a>Arbeitsbereiche und Sprachdienste
 
@@ -61,4 +60,4 @@ Die `Microsoft.VisualStudio.Workspace.*` APIs sind nicht die einzige Möglichkei
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-* [Arbeitsbereich erstellen](workspace-build.md) -Buildsysteme für "Ordner öffnen" unterstützt z.B. MSBuild und Makefiles. 
+* [Arbeitsbereich erstellen](workspace-build.md) -Buildsysteme für "Ordner öffnen" unterstützt z.B. MSBuild und Makefiles.

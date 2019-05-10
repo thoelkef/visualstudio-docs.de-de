@@ -1,40 +1,35 @@
 ---
 title: 'Vorgehensweise: Verfolgen von Code durch Anpassen der Scrollleiste | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: a9ebe7ec-4b6f-4ba2-a79e-80fab3db485b
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bcbce0884dbc5be78371b6df00b0eb482aa8c26e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: da6745b3980b6ef5b0200c91d4abf245daadfa71
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270777"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113817"
 ---
-# <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Gewusst wie: Verfolgen von Code durch Anpassen der Scrollleiste
+# <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Vorgehensweise: Verfolgen von Code durch Anpassen der Scrollleiste
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Wenn Ihre Dateien lange Codefolgen enthalten, kann dies Ihre Arbeit erschweren. Sie können die Bildlaufleiste des Codefensters anpassen, um den Code aus der Vogelperspektive zu betrachten.  
   
 ### <a name="to-show-annotations-on-the-scroll-bar"></a>So zeigen Sie Anmerkungen auf der Bildlaufleiste an  
   
-1.  Sie können die Bildlaufleiste so einrichten, dass Codeänderungen, Haltepunkte, Fehler und Lesezeichen angezeigt werden.  
+1. Sie können die Bildlaufleiste so einrichten, dass Codeänderungen, Haltepunkte, Fehler und Lesezeichen angezeigt werden.  
   
      Öffnen Sie die Seite mit Optionen der **Bildlaufleiste** (**Extras > Optionen > Text-Editor > Alle Sprachen** oder eine bestimmte Sprache, oder geben Sie **Bildlaufleiste** im Fenster Schnellstart an).  
   
-2.  Wählen Sie **Anmerkungen über vertikaler Bildlaufleiste anzeigen** aus, und klicken Sie auf die Anmerkungen, die angezeigt werden sollen. (Die Option **Markierungen** umfasst Haltepunkte und Lesezeichen.)  
+2. Wählen Sie **Anmerkungen über vertikaler Bildlaufleiste anzeigen** aus, und klicken Sie auf die Anmerkungen, die angezeigt werden sollen. (Die Option **Markierungen** umfasst Haltepunkte und Lesezeichen.)  
   
-3.  Probieren Sie es aus. Öffnen Sie eine große Codedatei, und ersetzen Sie ein Element, das an mehreren Stellen in der Datei vorkommt. Die Bildlaufleiste zeigt die Auswirkungen der Ersetzungen an. Sie können also Änderungen rückgängig machen, wenn ein Element nicht ersetzt werden soll.  
+3. Probieren Sie es aus. Öffnen Sie eine große Codedatei, und ersetzen Sie ein Element, das an mehreren Stellen in der Datei vorkommt. Die Bildlaufleiste zeigt die Auswirkungen der Ersetzungen an. Sie können also Änderungen rückgängig machen, wenn ein Element nicht ersetzt werden soll.  
   
      So sieht die Bildlaufleiste aus, nachdem eine Zeichenfolge gesucht wurde. Sie Sie sehen, werden alle Instanzen der Zeichenfolge angezeigt.  
   
@@ -46,7 +41,7 @@ Wenn Ihre Dateien lange Codefolgen enthalten, kann dies Ihre Arbeit erschweren. 
   
 ### <a name="to-set-the-display-mode-for-the-scroll-bar"></a>So legen Sie den Anzeigemodus für die Bildlaufleiste fest  
   
-1.  Die Bildlaufleiste verfügt über den Leistenmodus (Standardeinstellung) und den Zuordnungsmodus. Im Leistenmodus werden nur Anmerkungsindikatoren auf der Bildlaufleiste angezeigt. Im Zuordnungsmodus werden die Codezeilen auf der Bildlaufleiste dargestellt. Sie können deren Breite auswählen und angeben, ob der zugrunde liegende Code angezeigt werden soll, wenn Sie mit dem Cursor darauf zeigen. Wenn Sie auf eine Stelle der Bildlaufleiste klicken, springt der Cursor zu der entsprechenden Position im Code. Reduzierte Bereiche sind anders schattiert und werden eingeblendet, wenn Sie darauf doppelklicken.  
+1. Die Bildlaufleiste verfügt über den Leistenmodus (Standardeinstellung) und den Zuordnungsmodus. Im Leistenmodus werden nur Anmerkungsindikatoren auf der Bildlaufleiste angezeigt. Im Zuordnungsmodus werden die Codezeilen auf der Bildlaufleiste dargestellt. Sie können deren Breite auswählen und angeben, ob der zugrunde liegende Code angezeigt werden soll, wenn Sie mit dem Cursor darauf zeigen. Wenn Sie auf eine Stelle der Bildlaufleiste klicken, springt der Cursor zu der entsprechenden Position im Code. Ausgeblendete Bereiche sind anders schattiert und werden eingeblendet, wenn Sie darauf doppelklicken.  
   
      Wählen Sie auf der Seite mit Optionen der **Bildlaufleiste** entweder **Leistenmodus für vertikale Bildlaufleiste verwenden** oder **Zuordnungsmodus für vertikale Bildlaufleiste** verwenden aus. Sie können die Breite in der Dropdownliste **Quellenübersicht** auswählen.  
   
@@ -54,9 +49,8 @@ Wenn Ihre Dateien lange Codefolgen enthalten, kann dies Ihre Arbeit erschweren. 
   
      ![Bildlaufleiste im Zuordnungsmodus](../ide/media/enhancedscrollbar.png "EnhancedScrollbar")  
   
-2.  Wählen Sie im Zuordnungsmodus die Option **Vorschau-QuickInfo anzeigen** aus, um eine Vorschau des Codes zu aktivieren, wenn Sie den Cursor auf der Bildlaufleiste nach oben und unten bewegen. Hier das Ergebnis:  
+2. Wählen Sie im Zuordnungsmodus die Option **Vorschau-QuickInfo anzeigen** aus, um eine Vorschau des Codes zu aktivieren, wenn Sie den Cursor auf der Bildlaufleiste nach oben und unten bewegen. Hier das Ergebnis:  
   
      ![Bildlaufleiste mit einer QuickInfo](../ide/media/enhancedscrollbarsearchtooltip.png "EnhancedScrollbarSearchTooltip")  
   
      Wenn Sie das Verhalten der Bildlaufleiste im Zuordnungsmodus beibehalten und die Vorschau-QuickInfo anzeigen möchten, nicht aber die Quellcodeübersicht, dann legen Sie die Option für **Quellenübersicht** auf **Aus** fest.
-

@@ -1,25 +1,20 @@
 ---
 title: Ausführen von Profilerstellungstools mit oder ohne den Debugger | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 3fcdccad-c1bd-4c67-bcec-bf33a8fb5d63
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: eb36ad055f126ce034fbb7323877b65aa8e3105c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 806eeba9b3dfee8dc45c90f0a6d2f99ed0772ec7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722240"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054065"
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Ausführen von Profilerstellungstools mit oder ohne den Debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,19 +26,19 @@ Visual Studio bietet Ihnen nun eine Auswahl von Leistungstools, von denen einige
   
  Hier sind einige Fragen, anhand der Sie entscheiden können, welche Art von Tool für Ihre Zwecke geeignet ist:  
   
-1.  Wurde das Problem gefunden, während die Anwendung entwickelt wurde, oder wurde es in einer veröffentlichten Version gefunden?  
+1. Wurde das Problem gefunden, während die Anwendung entwickelt wurde, oder wurde es in einer veröffentlichten Version gefunden?  
   
      Wenn das Problem während der Entwicklung gefunden wurde, müssen Sie die Leistungstools wahrscheinlich nicht in einem Releasebuild ausführen. Wenn das Problem in einer Releaseversion gefunden wurde, sollten Sie das Problem mit einer Releasekonfiguration reproduzieren und dann entscheiden, ob der Debugger bei der weiteren Untersuchung hilfreich sein würde.  
   
-2.  Wird das Problem durch eine CPU-intensive Verarbeitung verursacht?  
+2. Wird das Problem durch eine CPU-intensive Verarbeitung verursacht?  
   
      Viele Probleme sind auf externe Leistungsprobleme zurückzuführen, z. B. Datei-E/A oder Netzwerkreaktionsfähigkeit, es sollte daher keinen großen Unterschied machen, ob Sie die Leistungstools mit oder ohne den Debugger ausführen. Wenn Ihr Problem auf CPU-intensive Aufrufe zurückzuführen ist, kann der Unterschied zwischen Release- und Debugkonfigurationen beträchtlich sein, daher sollten Sie überprüfen, ob das Problem im Releasebuild besteht, bevor Sie die Tools mit integriertem Debugger verwenden.  
   
-3.  Müssen Sie die Leistung genau messen oder ist eine ungefähre Angabe akzeptabel?  
+3. Müssen Sie die Leistung genau messen oder ist eine ungefähre Angabe akzeptabel?  
   
      In Debugbuilds sind bestimmte Optimierungen nicht vorhanden, die Releasebuilds bereitstellen, z. B. Inlinefunktionsaufrufe und Konstanten, das Löschen nicht verwendeter Codepfade und das Speichern von Variablen auf eine Art und Weise, dass diese vom Debugger nicht verwendet werden können. Der Debugger selbst ändert seine Leistung, da er bestimmte Vorgänge ausführt, die zum Debuggen erforderlich sind (z. B. das Abfangen von Ausnahmen und Ladeereignisse für Module). Leistungsangaben in den Tools mit integriertem Debugger sind daher nur innerhalb von zehn Millisekunden genau. Leistungsangaben für Releasekonfigurationen mit den Tools ohne Debugger sind viel präziser.  
   
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Sammeln von Profilerstellungsdaten während des Debuggens  
+## <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Sammeln von Profilerstellungsdaten während des Debuggens  
  Der folgende Abschnitt beschreibt das lokale Debuggen. Informationen zum Debuggen auf einem Gerät oder zum Remotedebuggen erhalten Sie in späteren Abschnitten.  
   
 1. Öffnen Sie das Projekt, das Sie debuggen möchten, und klicken Sie anschließend auf **Debuggen / Debugging starten** (oder klicken Sie auf der Symbolleiste auf **Starten** , oder drücken Sie **F5**).  
@@ -79,7 +74,7 @@ Visual Studio bietet Ihnen nun eine Auswahl von Leistungstools, von denen einige
   
 1. Öffnen Sie das Projekt in Visual Studio.  
   
-2. Klicken Sie im Menü **Debuggen** auf **Leistungsprofiler…**. (Tastenkombination: Alt + F2).  
+2. Klicken Sie im Menü **Debuggen** auf **Leistungsprofiler…**. (Tastenkombination: ALT + F2).  
   
 3. Wählen Sie auf der Diagnosestartseite ein oder mehrere Tools aus, die in der Sitzung ausgeführt werden sollen. Es werden nur die Tools angezeigt, die für den Projekttyp, das Betriebssystem und die Programmiersprache infrage kommen. Wenn Sie ein Diagnosetool auswählen, werden die Optionen für Tools deaktiviert, die nicht in derselben Diagnosesitzung ausgeführt werden können. Hier ist eine mögliche Auswahl für eine Windows Universal-App in C#:  
   
@@ -130,21 +125,18 @@ Visual Studio bietet Ihnen nun eine Auswahl von Leistungstools, von denen einige
  Für das Ausführen einer Diagnosesitzung auf einem Remote-PC oder -Tablet müssen die Visual Studio-Remotetools installiert sein und auf dem Remotezielgerät ausgeführt werden. Informationen zu Desktop-Apps finden Sie unter [Remotedebugging](../debugger/remote-debugging.md).  Informationen zu Windows Universal-Apps finden Sie unter [Run Windows Store apps on a remote machine (Ausführen von Windows Store-Apps auf einem Remotecomputer)](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
 ## <a name="blog-posts-and-msdn-articles-from-the-diagnostics-development-team"></a>Blogbeiträge und MSDN-Artikel vom Diagnoseentwicklungsteam  
- MSD[MSDN Magazine: Analysieren der Leistung beim Debuggen in Visual Studio 2015](https://msdn.microsoft.com/magazine/dn973013.aspx)  
+ [MSDN Magazine: Analyze Performance While Debugging in Visual Studio 2015 (Analysieren der Leistung während des Debuggings in Visual Studio 2015)](https://msdn.microsoft.com/magazine/dn973013.aspx)  
   
- [MSDN Magazine: Schnellere Problemdiagnose mit IntelliTrace](https://msdn.microsoft.com/magazine/dn973014.aspx)  
+ [MSDN Magazine: Use IntelliTrace to Diagnose Issues Faster (Schnellere Problemdiagnose mit IntelliTrace)](https://msdn.microsoft.com/magazine/dn973014.aspx)  
   
- [Blogbeitrag: Diagnostizieren von Ereignishandlerverlusten mit dem Speicherauslastungstool in Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015.aspx)  
+ [Blogbeitrag: Diagnosing Event Handler Leaks with the Memory Usage Tool in Visual Studio 2015 (Diagnostizieren von Ereignishandlerverlusten mit dem Speicherauslastungstool in Visual Studio 2015)](http://blogs.msdn.com/b/visualstudioalm/archive/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015.aspx)  
   
- [Video: Verlaufsbezogenes Debuggen mit IntelliTrace in Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)  
+ [Video: Historical Debugging with IntelliTrace in Microsoft Visual Studio Ultimate 2015 (Verlaufsbezogenes Debuggen mit IntelliTrace in Microsoft Visual Studio Ultimate 2015)](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)  
   
- [Video: Debuggen von Leistungsproblemen mit Visual Studio 2015](https://channel9.msdn.com/Events/Build/2015/3-731)  
+ [Video: Debugging Performance Issues Using Visual Studio 2015 (Debuggen von Leistungsproblemen mit Visual Studio 2015)](https://channel9.msdn.com/Events/Build/2015/3-731)  
   
- [PerfTips: Informationen zur Leistung auf einen Blick beim Debuggen mit Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)  
+ [PerfTips: Performance Information at-a-glance while Debugging with Visual Studio (Leistungsinformationen auf einen Blick beim Debuggen mit Visual Studio)](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)  
   
  [Diagnostic Tools debugger window in Visual Studio 2015 (Fenster des Diagnosetoolsdebugger in Visual Studio 2015)](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
   
  [IntelliTrace in Visual Studio Enterprise 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/intellitrace-in-visual-studio-ultimate-2015.aspx)
-
-
-

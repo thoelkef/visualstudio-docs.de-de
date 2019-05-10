@@ -1,14 +1,9 @@
 ---
-title: 'CA2115: Aufruf von GC. KeepAlive beim Verwenden systemeigener Ressourcen | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'CA2115: Rufen Sie GC. KeepAlive beim Verwenden systemeigener Ressourcen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CallGCKeepAliveWhenUsingNativeResources
 - CA2115
@@ -20,14 +15,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e8f45b188945febcd3c81fc4be6a9427d8fe94ba
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 0eadff91e8762349ec95c2d9f3bf5717bfecaa4a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948745"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435032"
 ---
-# <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115: GC.KeepAlive beim Verwenden systemeigener Ressourcen aufrufen
+# <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115: GC.KeepAlive beim Verwenden nativer Ressourcen aufrufen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -61,7 +56,7 @@ ms.locfileid: "49948745"
  Im folgenden Beispiel `BadMethod` enthält keinen Aufruf von `GC.KeepAlive` und verletzt daher die Regel. `GoodMethod` enthält den korrigierten Code.
 
 > [!NOTE]
->  In diesem Beispiel ist der Pseudocode, obwohl der Code kompiliert und ausgeführt wird, die die Warnung wird nicht ausgelöst werden, da eine nicht verwaltete Ressource nicht erstellt oder freigegeben wird.
+> In diesem Beispiel ist der Pseudocode, obwohl der Code kompiliert und ausgeführt wird, die die Warnung wird nicht ausgelöst werden, da eine nicht verwaltete Ressource nicht erstellt oder freigegeben wird.
 
  [!code-csharp[FxCop.Security.IntptrAndFinalize#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.IntptrAndFinalize/cs/FxCop.Security.IntptrAndFinalize.cs#1)]
 
@@ -70,6 +65,3 @@ ms.locfileid: "49948745"
  <xref:System.Object.Finalize%2A?displayProperty=fullName>
  <xref:System.UIntPtr?displayProperty=fullName>
  [Dispose-Muster](http://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
-
-
-

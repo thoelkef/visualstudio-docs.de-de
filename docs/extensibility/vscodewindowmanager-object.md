@@ -10,24 +10,24 @@ helpviewer_keywords:
 ms.assetid: e313add5-afdb-4d8d-abd1-764e1fc10c44
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2fc3aa99fd54234cdc21250a39052b37d233a70b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3fa291eace866dd7c65aaa8263f036dbe388a475
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950925"
 ---
-# <a name="vscodewindowmanager-object"></a>VSCodeWindowManager-Objekt
-Der Sprachdienst den Codefenster-Manager implementiert und ist verantwortlich für die Verwaltung von Zusatzelemente (z. B. die Dropdownleiste). Weitere Informationen finden Sie unter [Anpassen von Code Windows mit der Legacy-API](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).  
-  
- Die folgende Tabelle zeigt die Schnittstellen der `VSCodeWindowManager` Objekt.  
-  
-|Interface|Beschreibung|  
-|---------------|-----------------|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Ermöglicht Zusatzelementen (z. B. dropdownleisten) hinzugefügt oder aus einem Codefenster entfernt werden.|  
-  
-## <a name="see-also"></a>Siehe auch  
- [Anpassen von Fenstern des Code mit der legacy-API](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)
+# <a name="vscodewindowmanager-object"></a>VSCodeWindowManager object
+Der Sprachdienst den Codefenster-Manager implementiert und ist verantwortlich für die Verwaltung von Zusatzelemente (z. B. die Dropdownleiste). Weitere Informationen finden Sie unter [Anpassen von Code Windows mit der Legacy-API](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).
+
+ Die folgende Tabelle zeigt die Schnittstellen der `VSCodeWindowManager` Objekt.
+
+|Interface|Beschreibung|
+|---------------|-----------------|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Ermöglicht Zusatzelementen (z. B. dropdownleisten) hinzugefügt oder aus einem Codefenster entfernt werden.|
+
+## <a name="see-also"></a>Siehe auch
+- [Anpassen von Fenstern des Code mit der legacy-API](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)

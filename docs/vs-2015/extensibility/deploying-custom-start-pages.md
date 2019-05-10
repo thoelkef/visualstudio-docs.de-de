@@ -1,27 +1,22 @@
 ---
 title: Bereitstellen von benutzerdefinierten Startseiten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - package start page
 - deploy start page
 ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5e788f9bb1ca0333fd20237103cf6bce136af2e0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 1cdd172c2960024da8b12735764161d36498c4e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795114"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039141"
 ---
 # <a name="deploying-custom-start-pages"></a>Bereitstellen von benutzerdefinierten Startseiten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ Sie können benutzerdefinierte Startseiten mithilfe von VSIX-Bereitstellung oder
   
 - Sie können die VSIX-Datei auf einer Netzwerkfreigabe oder auf einer öffentlichen Website einfügen. Wenn eine Person die Datei geöffnet wird, wird die Startseite wird automatisch installiert.  
   
-- Sie können die VSIX-Datei zum Hochladen der [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkID=123847) Website aus, damit Benutzer sie mithilfe von installieren können **Erweiterungs-Manager**.  
+- Sie können die VSIX-Datei zum Hochladen der [Visual Studio Marketplace](https://marketplace.visualstudio.com/) Website aus, damit Benutzer sie mithilfe von installieren können **Erweiterungs-Manager**.  
   
   Die Startseite-Projektvorlage erstellt eine Kopie der standardmäßigen Visual Studio-Startseite, damit Sie die Kopie zu ändern und das Original beibehalten können.  
   
@@ -62,9 +57,9 @@ Sie können benutzerdefinierte Startseiten mithilfe von VSIX-Bereitstellung oder
   
 ##### <a name="to-create-an-all-users-deployment"></a>Zum Erstellen einer Bereitstellung für alle Benutzer  
   
-1.  Öffnen Sie die Datei "extension.vsixmanifest", in der Codeansicht.  
+1. Öffnen Sie die Datei "extension.vsixmanifest", in der Codeansicht.  
   
-2.  In der `Identifier` -Element des Vsix-Manifests, Hinzufügen einer `AllUsers` -Element, das einem von Wert `true`.  
+2. In der `Identifier` -Element des Vsix-Manifests, Hinzufügen einer `AllUsers` -Element, das einem von Wert `true`.  
   
     ```  
     <AllUsers>true</AllUsers>  
@@ -72,11 +67,11 @@ Sie können benutzerdefinierte Startseiten mithilfe von VSIX-Bereitstellung oder
   
      Dies bewirkt, dass das Vsix-Installationsprogramm, um für Administratorberechtigungen fordert, und installieren Sie die Dateien auf \Common7\IDE\Extensions.  
   
-3.  Öffnen Sie die PKGDEF-Datei.  
+3. Öffnen Sie die PKGDEF-Datei.  
   
-4.  Ändern Sie die PKGDEF, um die Standardstartseite unter HKLM zu festlegen, indem Sie Folgendes ein, wobei *MyStartPage.xaml* ist der Name der XAML-Datei, die Startseite enthält.  
+4. Ändern Sie die PKGDEF, um die Standardstartseite unter HKLM zu festlegen, indem Sie Folgendes ein, wobei *MyStartPage.xaml* ist der Name der XAML-Datei, die Startseite enthält.  
   
-     [$RootKey$ \StartPage\Default]  
+     [$RootKey$\StartPage\Default]  
   
      "Uri"="$PackageFolder$\\*MyStartPage.xaml*"  
   
@@ -89,13 +84,12 @@ Sie können benutzerdefinierte Startseiten mithilfe von VSIX-Bereitstellung oder
   
 #### <a name="to-manually-install-a-custom-start-page"></a>So installieren Sie manuell eine benutzerdefinierte Startseite  
   
-1.  Kopieren Sie die XAML-Datei, die im Markup der Seite starten, sowie alle unterstützenden Dateien als Assemblys enthält, und fügen Sie sie im Ordner "\StartPages\" des Benutzers.  
+1. Kopieren Sie die XAML-Datei, die im Markup der Seite starten, sowie alle unterstützenden Dateien als Assemblys enthält, und fügen Sie sie im Ordner "\StartPages\" des Benutzers.  
   
-2.  Wenn Sie die Startseite erforderlich ist, kopieren Sie und fügen Sie sie in... \\ *Visual Studio-Installationsordner*\Common7\IDE\PrivateAssemblies\\.  
+2. Wenn Sie die Startseite erforderlich ist, kopieren Sie und fügen Sie sie in... \\ *Visual Studio-Installationsordner*\Common7\IDE\PrivateAssemblies\\.  
   
-3.  In der **Customize Start Page** auf in der Liste der **Start** Optionen Seite, wählen Sie die neue Startseite. Weitere Informationen finden Sie unter [Anpassen der Startseite](../ide/customizing-the-start-page-for-visual-studio.md).  
+3. In der **Customize Start Page** auf in der Liste der **Start** Optionen Seite, wählen Sie die neue Startseite. Weitere Informationen finden Sie unter [Anpassen der Startseite](../ide/customizing-the-start-page-for-visual-studio.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Anpassen der Startseite](../ide/customizing-the-start-page-for-visual-studio.md)   
  [Hinzufügen eines Benutzersteuerelements zur Startseite](../extensibility/adding-user-control-to-the-start-page.md)
-

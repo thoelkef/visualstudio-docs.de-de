@@ -1,8 +1,6 @@
 ---
 title: Codeausschnitte
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.ExpansionManagerImport
@@ -12,19 +10,19 @@ helpviewer_keywords:
 - code snippets
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ed3f2f8e588aa908827516fee44c1a38ad6a008
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 98dadaed75cf16ae6ae35da9d6589355a63bd35c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975240"
 ---
 # <a name="code-snippets"></a>Codeausschnitte
 
@@ -99,7 +97,7 @@ Wenn Sie `newPropertyValue` in `m_property` ändern, wird jede Instanz von `newP
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts](../ide/walkthrough-creating-a-code-snippet.md)
+- [Exemplarische Vorgehensweise: Einfügen eines Codeausschnitts](../ide/walkthrough-creating-a-code-snippet.md)
 - [Vorgehensweise: Verteilen von Codeausschnitten](../ide/how-to-distribute-code-snippets.md)
 - [Bewährte Methoden für die Verwendung von Codeausschnitten](../ide/best-practices-for-using-code-snippets.md)
 - [Problembehandlung bei Codeausschnitten](../ide/troubleshooting-snippets.md)

@@ -1,14 +1,9 @@
 ---
 title: Befehl „Quelle auflisten“ | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - Debug.ListSource
 helpviewer_keywords:
@@ -19,18 +14,17 @@ ms.assetid: e45f08d2-f4a3-49c3-9452-aa60508e2f74
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ff216ddd8943ea971669c6ebb1c7c0306b02160f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e0a4a8482dc1c2c66a45902f2f3382b179b46b13
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49171976"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662841"
 ---
 # <a name="list-source-command"></a>Befehl "Quelle auflisten"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Zeigt die angegebenen Quellcodezeilen an.  
   
 ## <a name="syntax"></a>Syntax  
@@ -56,7 +50,7 @@ Debug.ListSource [/Count:number] [/Current] [/File:filename]
  /ShowLineNumbers:`yes|no`  
  Dies ist optional. Gibt an, ob Zeilennummern angezeigt werden sollen.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
   
 ## <a name="example"></a>Beispiel  
  Dieses Beispiel listet den Quellcode aus Zeile 4 der Datei „Form1.vb“ mit eingeblendeten Zeilennummern an.  
@@ -68,6 +62,3 @@ Debug.ListSource /File:"C:\Visual Studio Projects\Form1.vb" /Line:4 /ShowLineNum
 ## <a name="see-also"></a>Siehe auch  
  [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)   
  [Befehlsfenster](../../ide/reference/command-window.md)
-
-
-

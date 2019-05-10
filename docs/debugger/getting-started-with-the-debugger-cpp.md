@@ -11,23 +11,19 @@ helpviewer_keywords:
 ms.assetid: 62734c0d-a75a-4576-8f73-0e97c19280e1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32338468de994f298b3fe39eae5a3c97d0a98dee
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b71e4bc01ede7a77aced77a5e5527910457174f0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822190"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399488"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutorial: Debuggen von C++-Code mit Visual Studio
 
-In diesem Artikel werden die Funktionen des Visual Studio-Debuggers in einer ausführlichen exemplarischen Vorgehensweise vorgestellt. Einen allgemeineren Überblick über die Funktionen des Debuggers finden Sie unter [Übersicht über die Funktionen des Debuggers](../debugger/debugger-feature-tour.md). Wenn Sie *Ihre App debuggen*, bedeutet dies in der Regel, dass Sie Ihre Anwendung mit dem angefügten Debugger ausführen. Wenn Sie dies machen, bietet der Debugger viele Möglichkeiten zum Ermitteln des Status Ihres Codes während der Ausführung. Sie können Ihren Code schrittweise durchlaufen und die Werte prüfen, die in Variablen gespeichert sind, Sie können die Überwachung von Variablen festlegen, um zu sehen, wenn sich Werte ändern, und Sie können den Ausführungspfad Ihres Codes prüfen und feststellen, ob ein Codezweig ausgeführt wird usw. Wenn Sie zum ersten Mal versuchen, Code zu debuggen, sollten Sie [Debuggen für Einsteiger](../debugger/debugging-absolute-beginners.md) lesen, bevor Sie diesen Artikel durchgehen.
-
-| | |
-|---------|---------|
-| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | Zum Debuggen können Sie sich ein [Video ansehen](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171), in dem ähnliche Schritte beschrieben werden. |
+In diesem Artikel werden die Funktionen des Visual Studio-Debuggers in einer ausführlichen exemplarischen Vorgehensweise vorgestellt. Einen allgemeineren Überblick über die Funktionen des Debuggers finden Sie unter [Ein erster Blick auf den Visual Studio-Debugger](../debugger/debugger-feature-tour.md). Wenn Sie *Ihre App debuggen*, bedeutet dies in der Regel, dass Sie Ihre Anwendung mit dem angefügten Debugger ausführen. Wenn Sie dies machen, bietet der Debugger viele Möglichkeiten zum Ermitteln des Status Ihres Codes während der Ausführung. Sie können Ihren Code schrittweise durchlaufen und die Werte prüfen, die in Variablen gespeichert sind, Sie können die Überwachung von Variablen festlegen, um zu sehen, wenn sich Werte ändern, und Sie können den Ausführungspfad Ihres Codes prüfen und feststellen, ob ein Codezweig ausgeführt wird usw. Wenn Sie zum ersten Mal versuchen, Code zu debuggen, sollten Sie [Debuggen für Einsteiger](../debugger/debugging-absolute-beginners.md) lesen, bevor Sie diesen Artikel durchgehen.
 
 In diesem Tutorial werden Sie Folgendes durchführen:
 
@@ -39,25 +35,37 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
-* Sie müssen Visual Studio 2017 und die **Workload für die Desktopentwicklung mit C++** installiert haben.
+::: moniker range=">=vs-2019"
 
-    Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  kostenlos herunterladen.
+Sie müssen Visual Studio 2019 und die Workload für die **Desktopentwicklung mit C++** installiert haben.
 
-    Falls Sie bereits über Visual Studio verfügen, aber die Workload noch installieren müssen, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** (**Datei** > **Neu** > **Projekt**) auf den Link **Visual Studio-Installer**. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Desktopentwicklung mit C++**, und klicken Sie dann auf **Ändern**.
+::: moniker-end
+::: moniker range="vs-2017"
+
+Sie müssen Visual Studio 2017 und die **Workload für die Desktopentwicklung mit C++** installiert haben.
+
+::: moniker-end
+
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)  kostenlos herunterladen.
+
+Wenn Sie die Workload installieren müssen, Visual Studio aber bereits besitzen, navigieren Sie zu **Tools** > **Tools und Features abrufen…**. Dadurch wird der Visual Studio-Installer geöffnet. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Desktopentwicklung mit C++**, und klicken Sie dann auf **Ändern**.
 
 ## <a name="create-a-project"></a>Erstellen eines Projekts
 
-1. Klicken Sie in Visual Studio auf **Datei > Neues Projekt**.
+1. Öffnen Sie Visual Studio.
 
-2. Klicken Sie unter **Visual C++** auf **Windows-Desktop** und dann im mittleren Bereich auf **Windows-Konsolenanwendung**.
+    ::: moniker range=">=vs-2019"
+    Drücken Sie **ESC**, um das Startfenster zu schließen. Geben Sie **STRG + Q** ein, um das Suchfeld zu öffnen, geben Sie **C++** ein, und wählen Sie **Vorlagen** und dann **Neues Konsolen-App-Projekt erstellen** aus. Geben Sie im Dialogfeld, das nun angezeigt wird, einen Namen wie **Erste-Schritte-Debuggen** ein, und wählen Sie dann **Erstellen** aus.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialogfelds **Neues Projekt** unter **Visual C++** **Windows Desktop** und dann im mittleren Bereich **Windows-Konsolenanwendung** aus. Geben Sie dann einen Namen wie **MyDbgApp** ein, und klicken Sie auf **OK**.
+    ::: moniker-end
 
-    Wenn Ihnen die Projektvorlage **Windows-Konsolenanwendung** nicht angezeigt wird, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** auf den Link **Visual Studio-Installer öffnen**. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Desktopentwicklung mit C++**, und klicken Sie dann auf **Ändern**.
-
-3. Geben Sie einen Namen ein, z.B. **get-gestartet-debugging**, und klicken Sie auf **OK**.
+    Wenn die Projektvorlage **Windows-Konsolenanwendung** nicht angezeigt wird, öffnen Sie unter **Extras** > **Tools und Features abrufen** den Visual Studio-Installer. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Desktopentwicklung mit C++**, und klicken Sie dann auf **Ändern**.
 
     Visual Studio erstellt daraufhin das Projekt.
 
-4. Ersetzen Sie in *get-started-debugging.cpp* folgenden Code
+1. Ersetzen Sie in *get-started-debugging.cpp* folgenden Code
 
     ```c++
     int main()
@@ -187,7 +195,7 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 
     An der Stelle des Haltepunkts wird ein roter Kreis angezeigt.
 
-    Haltepunkte sind eine einfache und wichtige Funktion zum zuverlässigen Debuggen. Ein Haltepunkt gibt an, wo Visual Studio im ausgeführten Code angehalten werden soll. So können Sie einen Blick auf die Werte von Variablen oder das Speicherverhalten werfen oder überprüfen, ob eine Verzweigung im Code ausgeführt wird. 
+    Haltepunkte sind eine einfache und wichtige Funktion zum zuverlässigen Debuggen. Ein Haltepunkt gibt an, wo Visual Studio im ausgeführten Code angehalten werden soll. So können Sie einen Blick auf die Werte von Variablen oder das Speicherverhalten werfen oder überprüfen, ob eine Verzweigung im Code ausgeführt wird.
 
 2. Wenn Sie die Taste **F5** drücken oder auf die Schaltfläche **Debuggen starten** ![Start Debugging](../debugger/media/dbg-tour-start-debugging.png "Start Debugging" klicken, wird die App gestartet, und der Debugger geht zu der Codezeile, in der Sie den Haltepunkt festgelegt haben.
 
@@ -222,7 +230,7 @@ In der Regel verwenden wir an dieser Stelle Tastenkombinationen, da auf diese We
      ![Verwenden der Funktion „Ausführung bis Klick“](../debugger/media/get-started-run-to-click-cpp.png "Ausführung bis Klick")
 
    > [!NOTE]
-   > Die Schaltfläche **Ausführung bis Klick** ist neu in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Wenn Ihnen die Schaltfläche mit dem grünen Pfeil nicht angezeigt wird, verwenden Sie in diesem Beispiel stattdessen die Taste **F11**, damit der Debugger an der richtigen Stelle fortfährt.
+   > Die Schaltfläche für die Aktion **Ausführung bis Klick** ist ab [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] verfügbar. Wenn Ihnen die Schaltfläche mit dem grünen Pfeil nicht angezeigt wird, verwenden Sie in diesem Beispiel stattdessen die Taste **F11**, damit der Debugger an der richtigen Stelle fortfährt.
 
 2. Klicken Sie auf die Schaltfläche **Ausführung bis Klick** ![Ausführung bis Klick](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
 

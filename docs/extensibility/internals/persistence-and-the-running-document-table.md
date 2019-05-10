@@ -10,24 +10,24 @@ helpviewer_keywords:
 ms.assetid: 27117eae-6c58-4189-a61a-1397a43b5ecf
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05584f7bd7fe9743d12ddb1cdda41f9ef9aedff0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: deb5472776bc9c4a4d6bb0ccd8830cba5eea3d04
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935605"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859887"
 ---
 # <a name="persistence-and-the-running-document-table"></a>Persistenz und die aktive Dokumenttabelle
-In der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE-Projekte sind vollständig verantwortlich für die Verwaltung von Projektelementen, die sie mit dem Dienst zu erreichen, die Persistenz <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>. Dokumente sind die grundlegende Einheit der Persistenz in Visual Studio-Umgebung. Projekte koordiniert das Öffnen, speichern und Umbenennen von Dokumenten mit der aktiven Dokumenttabelle (RDT), eine Ressource, die den Status aller geöffneten Dokumente nachverfolgt werden.  
-  
-## <a name="managing-persistence"></a>Verwalten der Persistenz  
- Projekte Steuern der Umgebung Persistenzdienst durch die Implementierung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem> Schnittstelle. Während die Umgebung nie direkt ein Dokument selbst beibehalten anfordert, fordert das besitzende Projekt (oder Hierarchie) zum Speichern des Dokuments. Dadurch wird es möglich, dass das Projekt, um die Project-Element-Daten in lokalen Dateien, remote-Dateien, eine Datenbank, ein Repository oder ein anderes Medium zu speichern.  
-  
- Die globale Umgebung verwaltet der RDT. Die Umgebung verwaltet Einträge für alle geöffneten Fenster und Dokumente in der RDT, damit sie dadurch erhalten spezielle Benachrichtigungen, z.B. wenn eine Projektmappe geschlossen wird. Darüber hinaus RDT ermöglicht es der Umgebung zum Nachverfolgen der entsprechenden Knoten in **Projektmappen-Explorer**. Der RDT verwaltet einen Datensatz pro öffnen, dauerhafte-Objekt, einschließlich Projektdateien und Projektelement Dokumente.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Aktive Dokumenttabelle](../../extensibility/internals/running-document-table.md)   
- [Auswahl und Aktualität in der IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)
+In der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE-Projekte sind vollständig verantwortlich für die Verwaltung von Projektelementen, die sie mit dem Dienst zu erreichen, die Persistenz <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>. Dokumente sind die grundlegende Einheit der Persistenz in Visual Studio-Umgebung. Projekte koordiniert das Öffnen, speichern und Umbenennen von Dokumenten mit der aktiven Dokumenttabelle (RDT), eine Ressource, die den Status aller geöffneten Dokumente nachverfolgt werden.
+
+## <a name="managing-persistence"></a>Verwalten der Persistenz
+ Projekte Steuern der Umgebung Persistenzdienst durch die Implementierung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem> Schnittstelle. Während die Umgebung nie direkt ein Dokument selbst beibehalten anfordert, fordert das besitzende Projekt (oder Hierarchie) zum Speichern des Dokuments. Dadurch wird es möglich, dass das Projekt, um die Project-Element-Daten in lokalen Dateien, remote-Dateien, eine Datenbank, ein Repository oder ein anderes Medium zu speichern.
+
+ Die globale Umgebung verwaltet der RDT. Die Umgebung verwaltet Einträge für alle geöffneten Fenster und Dokumente in der RDT, damit sie dadurch erhalten spezielle Benachrichtigungen, z.B. wenn eine Projektmappe geschlossen wird. Darüber hinaus RDT ermöglicht es der Umgebung zum Nachverfolgen der entsprechenden Knoten in **Projektmappen-Explorer**. Der RDT verwaltet einen Datensatz pro öffnen, dauerhafte-Objekt, einschließlich Projektdateien und Projektelement Dokumente.
+
+## <a name="see-also"></a>Siehe auch
+- [Aktive Dokumenttabelle](../../extensibility/internals/running-document-table.md)
+- [Auswahl und Aktualität in der IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)

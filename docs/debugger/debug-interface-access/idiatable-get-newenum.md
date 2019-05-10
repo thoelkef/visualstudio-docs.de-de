@@ -9,33 +9,34 @@ helpviewer_keywords:
 ms.assetid: ee89bba8-5d5c-4a0b-aa0d-1aad56baa380
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 321b85c8fe058de762820cee470ef995207c426e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: c749b87b525ea52593cdfec301fda6987f361c4f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952943"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62834115"
 ---
 # <a name="idiatablegetnewenum"></a>IDiaTable::get__NewEnum
-Ruft die <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> Version von diesem Enumerator.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get__NewEnum (   
-   IUnknown** pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pRetVal`  
- [out] Gibt die `IUnknown` Schnittstelle, die darstellt der <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> Version von diesem Enumerator.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaTable](../../debugger/debug-interface-access/idiatable.md)
+Ruft die <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> Version von diesem Enumerator.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get__NewEnum ( 
+   IUnknown** pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pRetVal`
+
+[out] Gibt die `IUnknown` Schnittstelle, die darstellt der <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> Version von diesem Enumerator.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaTable](../../debugger/debug-interface-access/idiatable.md)

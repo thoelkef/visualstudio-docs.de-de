@@ -1,14 +1,9 @@
 ---
 title: ToolTaskExtension-Basisklasse | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 f1_keywords:
 - MSBuild.ToolTask.ToolCommandFailed
 dev_langs:
@@ -20,18 +15,17 @@ ms.assetid: 258ae433-f68a-49f1-b276-da20e3472e68
 caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fa6ec44c857d8b8e229d8f34658e8a9d448fcb19
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 41ac1db7348ff993671623214b59113d6210b83e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221285"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670276"
 ---
 # <a name="tooltaskextension-base-class"></a>ToolTaskExtension-Basisklasse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Viele Aufgaben erben aus der <xref:Microsoft.Build.Tasks.ToolTaskExtension>-Klasse, die aus der <xref:Microsoft.Build.Utilities.ToolTask>-Klasse erbt, welche wiederum aus der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Diese Vererbungskette fügt verschiedene Parameter zu den Aufgaben hinzu, die aus ihnen abgeleitet werden. Diese Parameter werden in diesem Dokument aufgeführt.  
   
 ## <a name="parameters"></a>Parameter  
@@ -59,6 +53,3 @@ Viele Aufgaben erben aus der <xref:Microsoft.Build.Tasks.ToolTaskExtension>-Klas
 ## <a name="see-also"></a>Siehe auch  
  [Task Reference](../msbuild/msbuild-task-reference.md)  (MSBuild-Aufgabenreferenz)  
  [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)
-
-
-

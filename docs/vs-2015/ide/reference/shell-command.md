@@ -1,14 +1,9 @@
 ---
 title: Shell-Befehl | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - tools.shell
 helpviewer_keywords:
@@ -23,18 +18,17 @@ ms.assetid: 737fda23-b852-45c4-a9fe-41cbce6ba70f
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5f760e449921a45f7ad22a3d81376bca432fe24a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9a85b8ef5dd99da6c82c9f63da31bec783a7c9a7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242215"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438018"
 ---
 # <a name="shell-command"></a>Befehl "Shell"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Startet ausführbare Programme aus [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
 ## <a name="syntax"></a>Syntax  
@@ -60,13 +54,13 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
  /outputwindow [oder] /output [oder] /out [oder] /o  
  Dies ist optional. Gibt an, dass die Ausgabe für die ausführbare Datei im Fenster **Ausgabe** angezeigt wird.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Die /dir-, /o- und /c-Schalter müssen unmittelbar nach `Tools.Shell` angegeben werden. Alles, was nach dem Namen der ausführbaren Datei angegeben wird, wird als Befehlszeilenargumente übergeben.  
   
  Der vordefinierte Alias `Shell` kann anstelle von `Tools.Shell` verwendet werden.  
   
 > [!CAUTION]
->  Wenn im `path`-Argument der Verzeichnispfad und der Dateiname angegeben sind, sollten Sie den gesamten Pfadnamen wie im Folgenden dargestellt in literale Anführungszeichen (""") einschließen:  
+> Wenn im `path`-Argument der Verzeichnispfad und der Dateiname angegeben sind, sollten Sie den gesamten Pfadnamen wie im Folgenden dargestellt in literale Anführungszeichen (""") einschließen:  
   
 ```  
 Tools.Shell """C:\Program Files\SomeFile.exe"""  
@@ -79,7 +73,7 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 ```  
   
 > [!CAUTION]
->  Wenn Sie die Pfadzeichenfolge nicht in literale Anführungszeichen (""") einschließen, wird von Windows nur der Teil der Zeichenfolge bis zum ersten Leerzeichen verwendet. Wäre die oben aufgeführte Pfadzeichenfolge beispielsweise nicht ordnungsgemäß in Anführungszeichen eingeschlossen, würde Windows im Stammverzeichnis C:\ nach einer Datei mit dem Namen „Program“ suchen. Wenn tatsächlich eine ausführbare Datei „C:\Program.exe“ vorhanden wäre, die möglicherweise sogar widerrechtlich installiert wurde, würde Windows versuchen, dieses Programm anstelle des gewünschten Programms „C:\Programme\SomeFile.exe“ auszuführen.  
+> Wenn Sie die Pfadzeichenfolge nicht in literale Anführungszeichen (""") einschließen, wird von Windows nur der Teil der Zeichenfolge bis zum ersten Leerzeichen verwendet. Wäre die oben aufgeführte Pfadzeichenfolge beispielsweise nicht ordnungsgemäß in Anführungszeichen eingeschlossen, würde Windows im Stammverzeichnis C:\ nach einer Datei mit dem Namen „Program“ suchen. Wenn tatsächlich eine ausführbare Datei „C:\Program.exe“ vorhanden wäre, die möglicherweise sogar widerrechtlich installiert wurde, würde Windows versuchen, dieses Programm anstelle des gewünschten Programms „C:\Programme\SomeFile.exe“ auszuführen.  
   
 ## <a name="example"></a>Beispiel  
  Der folgende Befehl verwendet „xcopy.exe“, um die Datei `MyText.txt` in den Ordner `Text` zu kopieren. Die Ausgabe von „xcopy.exe“ wird im **Befehlsfenster** und im Fenster **Ausgabe** angezeigt.  
@@ -94,6 +88,3 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
  [Ausgabefenster](../../ide/reference/output-window.md)   
  [Such-/Befehlsfeld](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

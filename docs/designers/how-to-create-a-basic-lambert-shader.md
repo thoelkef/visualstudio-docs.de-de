@@ -1,21 +1,19 @@
 ---
-title: 'Gewusst wie: Erstellen eines Lambert-Shaders'
+title: 'Vorgehensweise: Erstellen eines einfachen Lambert-Shaders'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: ec5c10fb-9600-4240-8280-d59451ea1d68
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d71a59e0173be60779675f838fad20943eabc85
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 595f44403d5dc8062bea86504a74ed0d7e0ee565
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913253"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62893961"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Vorgehensweise: Erstellen eines einfachen Lambert-Shaders
 
@@ -55,7 +53,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass das Fenster **Eigenschaften** und d
 ## <a name="see-also"></a>Siehe auch
 
 - [Vorgehensweise: Anwenden eines Shaders auf ein 3D-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Gewusst wie: Exportieren eines Shaders](../designers/how-to-export-a-shader.md)
-- [Gewusst wie: Erstellen eines standardmäßigen Phong-Shaders](../designers/how-to-create-a-basic-phong-shader.md)
+- [Vorgehensweise: Exportieren eines Shaders](../designers/how-to-export-a-shader.md)
+- [Vorgehensweise: Erstellen eines Standard-Phong-Shaders](../designers/how-to-create-a-basic-phong-shader.md)
 - [Shader-Designer](../designers/shader-designer.md)
 - [Shader-Designer-Knoten](../designers/shader-designer-nodes.md)

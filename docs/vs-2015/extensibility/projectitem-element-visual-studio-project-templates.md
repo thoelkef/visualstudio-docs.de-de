@@ -1,14 +1,9 @@
 ---
 title: ProjectItem-Element (Visual Studio-Projektvorlagen) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 82879fbe-7756-42cd-9a07-c10edf5b4673
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bca26cba66169758aa882535c07846cfa451d172
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 84fb371460bc697660e176ca9df4c984d2b234bf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737064"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438370"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem-Element (Visual Studio-Projektvorlagen)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,12 +26,12 @@ ms.locfileid: "51737064"
 Gibt eine Datei, die in der Projektvorlage enthalten ist.  
   
 > [!NOTE]
->  Die `ProjectItem` -Element akzeptiert verschiedene Attribute je nachdem, ob die Vorlage für ein Projekt oder ein Element. In diesem Thema wird erläutert, die `ProjectItem` -Element für Projektvorlagen. Eine Erläuterung der `ProjectItem` -Element für Elementvorlagen finden Sie unter [ProjectItem-Element (Visual Studio-Elementvorlagen)](../extensibility/projectitem-element-visual-studio-item-templates.md).  
+> Die `ProjectItem` -Element akzeptiert verschiedene Attribute je nachdem, ob die Vorlage für ein Projekt oder ein Element. In diesem Thema wird erläutert, die `ProjectItem` -Element für Projektvorlagen. Eine Erläuterung der `ProjectItem` -Element für Elementvorlagen finden Sie unter [ProjectItem-Element (Visual Studio-Elementvorlagen)](../extensibility/projectitem-element-visual-studio-item-templates.md).  
   
  \<VSTemplate>  
- \<TemplateContent >  
+ \<TemplateContent>  
  \<Project>  
- \<ProjectItem >  
+ \<ProjectItem>  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -95,21 +90,21 @@ Gibt eine Datei, die in der Projektvorlage enthalten ist.
   
 ### <a name="to-rename-files-with-parameters"></a>Zum Umbenennen von Dateien mit Parametern  
   
-1.  Verwenden Sie das folgende XML, in der VSTEMPLATE-Datei:  
+1. Verwenden Sie das folgende XML, in der VSTEMPLATE-Datei:  
   
     ```  
     <ProjectItem TargetFileName="$safeprojectname$.vb">MyFile.vb</ProjectItem>  
     ```  
   
-2.  Öffnen Sie die Projektdatei (.vbproj für ein [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Projekt) in einem Text-Editor oder [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+2. Öffnen Sie die Projektdatei (.vbproj für ein [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] Projekt) in einem Text-Editor oder [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-3.  Suchen Sie die Zeile, in der Projektdatei, die die folgenden XML-Code ähnelt:  
+3. Suchen Sie die Zeile, in der Projektdatei, die die folgenden XML-Code ähnelt:  
   
     ```  
     <Compile Include="MyFile.vb">  
     ```  
   
-4.  Ersetzen Sie die Zeile des Codes, durch das folgende XML:  
+4. Ersetzen Sie die Zeile des Codes, durch das folgende XML:  
   
     ```  
     <Compile Include="$safeprojectname$.vb">  
@@ -149,4 +144,3 @@ Gibt eine Datei, die in der Projektvorlage enthalten ist.
  [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)   
  [Vorlagenparameter](../ide/template-parameters.md)   
  [ProjectItem-Element (Visual Studio-Projektelementvorlagen)](../extensibility/projectitem-element-visual-studio-item-templates.md)
-

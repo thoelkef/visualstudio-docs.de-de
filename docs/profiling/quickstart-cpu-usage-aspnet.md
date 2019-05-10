@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Diagnostics Tools, CPU Usage
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 594c6660c306faef635d14f60f1d717a04678db5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2026767778f1e060ccff4a05af2649a40c1d984f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837393"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810100"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Schnellstart: Analysieren der CPU-Auslastungsdaten in Visual Studio (ASP.NET)
 
@@ -87,8 +87,8 @@ Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Deb
             {
                 m_totalIterations += iters;
             }
-            // we're just spinning here  
-            // and using Random to frustrate compiler optimizations  
+            // we're just spinning here
+            // and using Random to frustrate compiler optimizations
             for (var i = 0; i < iters; i++)
             {
                 result = rand.Next();
@@ -153,30 +153,30 @@ Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Deb
     }
     ```
 
-##  <a name="step-1-collect-profiling-data"></a>Schritt 1: Sammeln von Profilerstellungsdaten 
-  
-1.  Legen Sie in Ihrer App zuerst einen Haltepunkt auf diese Codezeile im `Simple`-Konstruktor fest:
+## <a name="step-1-collect-profiling-data"></a>Schritt 1: Sammeln von Profilerstellungsdaten
+
+1. Legen Sie in Ihrer App zuerst einen Haltepunkt auf diese Codezeile im `Simple`-Konstruktor fest:
 
     `for (int i = 0; i < 200; i++)`
 
     Legen Sie einen Haltepunkt fest, indem Sie in den Bundsteg links neben der Codezeile klicken.
 
-1.  Legen Sie als Nächstes einen weiteren Haltepunkt auf die schließende Klammer am Ende des `Simple`-Konstruktors fest:
+1. Legen Sie als Nächstes einen weiteren Haltepunkt auf die schließende Klammer am Ende des `Simple`-Konstruktors fest:
 
      ![Haltepunkte für die Profilerstellung festlegen](../profiling/media/quickstart-cpu-usage-breakpoints-aspnet.png)
 
     > [!TIP]
     > Durch das Festlegen von zwei Haltepunkten können Sie die Datensammlung auf die Teile des Code begrenzen, die Sie analysieren möchten.
-  
-1.  Das Fenster **Diagnosetools** wird bereits angezeigt, es sei denn, Sie haben es deaktiviert. Klicken Sie auf **Debuggen** > **Windows** > **Diagnosetools anzeigen**, um das Fenster erneut aufzurufen.
 
-1.  Klicken Sie auf **Debuggen** > **Debugging starten** (oder auf **Start** auf der Symbolleiste oder auf **F5**).
+1. Das Fenster **Diagnosetools** wird bereits angezeigt, es sei denn, Sie haben es deaktiviert. Klicken Sie auf **Debuggen** > **Windows** > **Diagnosetools anzeigen**, um das Fenster erneut aufzurufen.
 
-1.  Wenn die Anwendung geladen wurde, klicken Sie auf den Link **About** (Info) oben auf der Webseite, um den neuen Code auszuführen.
+1. Klicken Sie auf **Debuggen** > **Debugging starten** (oder auf **Start** auf der Symbolleiste oder auf **F5**).
 
-1.  Sehen Sie sich die Ansicht **Zusammenfassung** der Diagnosetools an.
+1. Wenn die Anwendung geladen wurde, klicken Sie auf den Link **About** (Info) oben auf der Webseite, um den neuen Code auszuführen.
 
-1.  Aktivieren Sie, während der Debugger angehalten ist, die Sammlung von CPU-Auslastungsdaten, indem Sie auf **CPU-Profilerstellung aufzeichnen** klicken. Öffnen Sie anschließend die Registerkarte **CPU-Auslastung**.
+1. Sehen Sie sich die Ansicht **Zusammenfassung** der Diagnosetools an.
+
+1. Aktivieren Sie, während der Debugger angehalten ist, die Sammlung von CPU-Auslastungsdaten, indem Sie auf **CPU-Profilerstellung aufzeichnen** klicken. Öffnen Sie anschließend die Registerkarte **CPU-Auslastung**.
 
      ![Diagnosetools ermöglichen die CPU-Profilerstellung](../profiling/media/quickstart-cpu-usage-summary.png)
 
@@ -184,12 +184,12 @@ Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Deb
 
      Wenn Sie auf **CPU-Profilerstellung aufzeichnen** klicken, zeichnet Visual Studio auf, welche Funktionen ausgeführt werden und wie lange dies dauert. Außerdem stellt das Programm ein Zeitachsendiagramm bereit, mit dem Sie bestimmte Segmente der Samplingsitzung genauer betrachten können. Diese gesammelten Daten können jedoch nur angezeigt werden, wenn die Anwendung an einem Haltepunkt angehalten wird.
 
-6.  Drücken Sie F5, um die App bis zum zweiten Haltepunkt auszuführen.
+6. Drücken Sie F5, um die App bis zum zweiten Haltepunkt auszuführen.
 
      Jetzt verfügen Sie über Leistungsdaten für Ihre Anwendung, die speziell für den Codebereich gelten, der zwischen den beiden Haltepunkten liegt.
 
      Der Profiler beginnt, Threaddaten vorzubereiten. Warten Sie, bis dieser Vorgang abgeschlossen ist.
-  
+
      Das CPU-Auslastungstool zeigt den Bericht unter der Registerkarte **CPU-Auslastung** an.
 
      An diesem Punkt können Sie beginnen, die Daten zu analysieren.
@@ -207,7 +207,7 @@ Beginnen Sie bei der Datenanalyse am besten mit der Liste der Funktionen unter �
 
 2. Doppelklicken Sie in der Funktionsliste auf die `MyProfilingApp_MVC.Models.ServerClass::GetNumber`-Funktion.
 
-    Dabei wird die Ansicht **Aufrufer/Aufgerufener** im linken Bereich geöffnet. 
+    Dabei wird die Ansicht **Aufrufer/Aufgerufener** im linken Bereich geöffnet.
 
     ![Ansicht „Aufrufer/Aufgerufener“ der Diagnosetools](../profiling/media/quickstart-cpu-usage-caller-callee-aspnet.png)
 
@@ -226,7 +226,7 @@ Beginnen Sie bei der Datenanalyse am besten mit der Liste der Funktionen unter �
 - [Analysieren der CPU-Auslastung](../profiling/cpu-usage.md) für weitere Informationen zum CPU-Auslastungs-Tool
 - Analysieren der CPU-Auslastung, auch ohne Debugger oder dass eine ausgeführte App als Ziel gesetzt wird: Weitere Informationen finden Sie unter [Sammeln von Profilerstellungsdaten ohne das Debuggen](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) in [Ausführen von Profilerstellungstools mit oder ohne den Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Siehe auch
 
- [Profilerstellung in Visual Studio](../profiling/index.md)  
- [Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md)
+- [Profilerstellung in Visual Studio](../profiling/index.md)
+- [Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md)

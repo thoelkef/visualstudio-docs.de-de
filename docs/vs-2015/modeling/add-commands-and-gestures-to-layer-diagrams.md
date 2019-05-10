@@ -1,12 +1,9 @@
 ---
 title: Hinzufügen von Befehlen und Bewegungen zu Ebenendiagrammen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams, adding custom commands
 - layer diagrams, adding custom gestures
@@ -14,13 +11,13 @@ ms.assetid: ac9c417b-0b40-4a90-86f5-ee3cbdce030b
 caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ae57d950b20fc6e342056b8c89738fa895c48c28
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a4d158e3c624a63863e5a8305dd0b9b4b5ef10ea
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733375"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444221"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>Hinzufügen von Befehlen und Bewegungen zu Ebenendiagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +27,7 @@ Sie können Kontextmenübefehle und Gestenhandler in Ebenendiagrammen in Visual 
  Sie können bei Bedarf mehrere Befehls- und Gestenhandler im gleichen Visual Studio-Projekt definieren. Sie können auch mehrere Projekte dieser Art in einer VSIX kombinieren. Sie könnten z. B. eine einzelne VSIX definieren, die Ebenenbefehle, eine domänenspezifische Sprache und Befehle für UML-Diagramme einschließt.  
   
 > [!NOTE]
->  Sie können die Architekturvalidierung auch anpassen, in der der Quellcode der Benutzer mit Ebenendiagrammen verglichen wird. Sie sollten die Architekturvalidierung in einem separaten Visual Studio-Projekt definieren. Sie können sie der gleichen VSIX hinzufügen wie anderen Erweiterungen. Weitere Informationen finden Sie unter [Hinzufügen einer benutzerdefinierten architekturvalidierung zu Ebenendiagrammen](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).  
+> Sie können die Architekturvalidierung auch anpassen, in der der Quellcode der Benutzer mit Ebenendiagrammen verglichen wird. Sie sollten die Architekturvalidierung in einem separaten Visual Studio-Projekt definieren. Sie können sie der gleichen VSIX hinzufügen wie anderen Erweiterungen. Weitere Informationen finden Sie unter [Hinzufügen einer benutzerdefinierten architekturvalidierung zu Ebenendiagrammen](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).  
   
 ## <a name="requirements"></a>Anforderungen  
  Siehe [Anforderungen](../modeling/extend-layer-diagrams.md#prereqs).  
@@ -65,30 +62,30 @@ Sie können Kontextmenübefehle und Gestenhandler in Ebenendiagrammen in Visual 
   
 #### <a name="to-add-layer-extensions-to-a-separate-vsix"></a>So fügen Sie einer separaten VSIX Ebenenerweiterungen hinzu  
   
-1.  Erstellen Sie in einer neuen oder vorhandenen Visual Studio-Projektmappe ein Klassenbibliotheksprojekt. Klicken Sie im Dialogfeld **Neues Projekt** auf **Visual C#** , und klicken Sie dann auf **Klassenbibliothek**. Dieses Projekt enthält Befehls- oder Gestenhandlerklassen.  
+1. Erstellen Sie in einer neuen oder vorhandenen Visual Studio-Projektmappe ein Klassenbibliotheksprojekt. Klicken Sie im Dialogfeld **Neues Projekt** auf **Visual C#** , und klicken Sie dann auf **Klassenbibliothek**. Dieses Projekt enthält Befehls- oder Gestenhandlerklassen.  
   
     > [!NOTE]
-    >  Sie können mehrere Befehls- oder Gestenhandlerklassen in einer Klassenbibliothek definieren, jedoch sollten Sie Ebenenvalidierungsklassen in einer separaten Klassenbibliothek definieren.  
+    > Sie können mehrere Befehls- oder Gestenhandlerklassen in einer Klassenbibliothek definieren, jedoch sollten Sie Ebenenvalidierungsklassen in einer separaten Klassenbibliothek definieren.  
   
-2.  Identifizieren oder erstellen Sie ein VSIX-Projekt in der Projektmappe. Ein VSIX-Projekt enthält eine Datei mit dem Namen **source.extension.vsixmanifest**. So fügen Sie ein VSIX-Projekt:  
+2. Identifizieren oder erstellen Sie ein VSIX-Projekt in der Projektmappe. Ein VSIX-Projekt enthält eine Datei mit dem Namen **source.extension.vsixmanifest**. So fügen Sie ein VSIX-Projekt:  
   
-    1.  Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Visual C#**, und klicken Sie auf **Erweiterungen**und anschließend auf **VSIX Project**.  
+    1. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Visual C#**, und klicken Sie auf **Erweiterungen**und anschließend auf **VSIX Project**.  
   
-    2.  Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf das VSIX-Projekt, und klicken Sie anschließend auf **Als Startprojekt festlegen**.  
+    2. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf das VSIX-Projekt, und klicken Sie anschließend auf **Als Startprojekt festlegen**.  
   
-    3.  Klicken Sie auf **Editionen auswählen** , und stellen Sie sicher, dass **Visual Studio** aktiviert ist.  
+    3. Klicken Sie auf **Editionen auswählen** , und stellen Sie sicher, dass **Visual Studio** aktiviert ist.  
   
-3.  Fügen Sie in **source.extension.vsixmanifest**unter **Objekte**das Befehls- oder Gestenhandlerprojekt als MEF-Komponente hinzu.  
+3. Fügen Sie in **source.extension.vsixmanifest**unter **Objekte**das Befehls- oder Gestenhandlerprojekt als MEF-Komponente hinzu.  
   
-    1.  Wählen Sie auf der Registerkarte **Objekte**die Option **Neu**aus.  
+    1. Wählen Sie auf der Registerkarte **Objekte**die Option **Neu**aus.  
   
-    2.  Wählen Sie bei **Typ**die Option **Microsoft.VisualStudio.MefComponent**aus.  
+    2. Wählen Sie bei **Typ**die Option **Microsoft.VisualStudio.MefComponent**aus.  
   
-    3.  Wählen Sie bei **Quelle**die Option **Projekt in der aktuellen Projektmappe** und den Namen des Befehls- oder Gestenhandlerprojekts aus.  
+    3. Wählen Sie bei **Quelle**die Option **Projekt in der aktuellen Projektmappe** und den Namen des Befehls- oder Gestenhandlerprojekts aus.  
   
-    4.  Speichern Sie die Datei.  
+    4. Speichern Sie die Datei.  
   
-4.  Kehren Sie zum Befehls- oder Gestenhandlerprojekt zurück, und fügen Sie die folgenden Projektverweise hinzu.  
+4. Kehren Sie zum Befehls- oder Gestenhandlerprojekt zurück, und fügen Sie die folgenden Projektverweise hinzu.  
   
 |**Verweis**|**Optionen**|  
 |-------------------|------------------------------------|  
@@ -99,7 +96,7 @@ Sie können Kontextmenübefehle und Gestenhandler in Ebenendiagrammen in Visual 
 |Microsoft.VisualStudio.Modeling.Sdk.[Version]|Definieren von Modellierungserweiterungen|  
 |Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[Version]|Aktualisieren von Formen und Diagrammen|  
   
-1.  Bearbeiten Sie die Klassendatei im C#-Klassenbibliotheksprojekt so, dass sie den Code für die Erweiterung enthält. Weitere Informationen finden Sie in einem der folgenden Abschnitte:  
+1. Bearbeiten Sie die Klassendatei im C#-Klassenbibliotheksprojekt so, dass sie den Code für die Erweiterung enthält. Weitere Informationen finden Sie in einem der folgenden Abschnitte:  
   
      [Definieren eines Menübefehls](#command)  
   
@@ -107,13 +104,13 @@ Sie können Kontextmenübefehle und Gestenhandler in Ebenendiagrammen in Visual 
   
      Siehe auch [Navigieren zu und Update layer-Modellen im Programmcode](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
-2.  Drücken Sie STRG+F5 oder F5, um die Anwendung zu testen. Eine experimentelle Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird geöffnet. Erstellen oder öffnen Sie ein Ebenendiagramm in dieser Instanz.  
+2. Drücken Sie STRG+F5 oder F5, um die Anwendung zu testen. Eine experimentelle Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird geöffnet. Erstellen oder öffnen Sie ein Ebenendiagramm in dieser Instanz.  
   
-3.  Um die Erweiterung in der Hauptinstanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]oder auf einem anderen Computer zu installieren, suchen Sie die Datei **.vsix** im Verzeichnis **bin** des VSIX-Projekts. Kopieren Sie die Datei auf den Computer, auf dem Sie die VSIX installieren möchten. Doppelklicken Sie auf die VSIX-Datei in Windows-Explorer (Datei-Explorer in Windows 8).  
+3. Um die Erweiterung in der Hauptinstanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]oder auf einem anderen Computer zu installieren, suchen Sie die Datei **.vsix** im Verzeichnis **bin** des VSIX-Projekts. Kopieren Sie die Datei auf den Computer, auf dem Sie die VSIX installieren möchten. Doppelklicken Sie auf die VSIX-Datei in Windows-Explorer (Datei-Explorer in Windows 8).  
   
      Verwenden Sie zum Deinstallieren der Datei die Option **Erweiterungen und Updates** im Menü **Extras** .  
   
-##  <a name="command"></a> Definieren eines Menübefehls  
+## <a name="command"></a> Definieren eines Menübefehls  
  Sie können einer vorhandenen Geste oder einem Befehlsprojekt mehrere Menübefehlsdefinitionen hinzufügen. Jeder Befehl wird von einer Klasse definiert, die über die folgenden Eigenschaften verfügt:  
   
 - Die Klasse wird folgendermaßen deklariert:  
@@ -128,11 +125,11 @@ Sie können Kontextmenübefehle und Gestenhandler in Ebenendiagrammen in Visual 
   
 - `ICommandExtension` wird mit den folgenden Methoden implementiert:  
   
-  -   `string Text {get;}` - Die Bezeichnung, die im Menü angezeigt wird.  
+  - `string Text {get;}` - Die Bezeichnung, die im Menü angezeigt wird.  
   
-  -   `void QueryStatus(IMenuCommand command)` - Wird aufgerufen, wenn der Benutzer mit der rechten Maustaste auf das Diagramm klickt, und bestimmt, ob der Befehl für die aktuelle Auswahl des Benutzers sichtbar und aktiviert ist.  
+  - `void QueryStatus(IMenuCommand command)` - Wird aufgerufen, wenn der Benutzer mit der rechten Maustaste auf das Diagramm klickt, und bestimmt, ob der Befehl für die aktuelle Auswahl des Benutzers sichtbar und aktiviert ist.  
   
-  -   `void Execute(IMenuCommand command)` - Wird aufgerufen, wenn der Benutzer den Befehl auswählt.  
+  - `void Execute(IMenuCommand command)` - Wird aufgerufen, wenn der Benutzer den Befehl auswählt.  
   
 - Sie können `IDiagramContext`importieren, um die aktuelle Auswahl zu bestimmen:  
   
@@ -218,7 +215,7 @@ namespace MyLayerExtension // Change to your preference.
 }  
 ```  
   
-##  <a name="gesture"></a> Definieren eines Gestenhandlers  
+## <a name="gesture"></a> Definieren eines Gestenhandlers  
  Ein Gestenhandler reagiert, wenn der Benutzer Elemente auf das Ebenendiagramm zieht und wenn der Benutzer auf eine beliebige Stelle im Diagramm doppelklickt.  
   
  Sie können dem vorhandenen Befehls- oder Gestenhandler-VSIX-Projekt eine Codedatei hinzufügen, die einen Gestenhandler definiert:  
@@ -271,6 +268,3 @@ namespace MyLayerExtensions // change to your preference
  [Navigieren in und Aktualisieren von Ebenenmodellen im Programmcode](../modeling/navigate-and-update-layer-models-in-program-code.md)   
  [Hinzufügen einer benutzerdefinierten architekturvalidierung zu Ebenendiagrammen](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)   
  [Definieren und Installieren einer Modellierungserweiterung](../modeling/define-and-install-a-modeling-extension.md)
-
-
-

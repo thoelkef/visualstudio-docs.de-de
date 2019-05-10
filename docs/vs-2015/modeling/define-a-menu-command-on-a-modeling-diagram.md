@@ -1,25 +1,22 @@
 ---
 title: Definieren eines Menübefehls in einem Modellierungsdiagramm | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, menu commands
 ms.assetid: 79c277de-5871-4fc7-9701-55eec5c3cd46
 caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c211c37817ba996105d7496dc49e91db9fa9298e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: cab72753016c49b4d959d2224dbfd99f8a0c07bb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433145"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Definieren eines Menübefehls in einem Modellierungsdiagramm
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +31,9 @@ In Visual Studio können Sie zusätzliche Menüelemente in den Kontextmenüs ein
 ## <a name="defining-the-menu-command"></a>Definieren des Menübefehls  
  Um für einen UML-Designer einen Menübefehl zu erstellen, müssen Sie eine Klasse erstellen, die das Verhalten des Befehls definiert, und die Klasse in eine Visual Studio-Integrationserweiterung (VSIX) einbetten. Die VSIX fungiert als Container, der den Befehl installieren kann. Es gibt zwei alternative Methoden, einen Menübefehl zu definieren:  
 
--   **Erstellen eines Menübefehls in seiner eigenen VSIX mithilfe einer Projektvorlage.** Dies ist die schnellere Methode. Verwenden Sie diese Methode, wenn Sie die Menübefehle nicht mit anderen Erweiterungstypen, z. B. Validierungserweiterungen, benutzerdefinierten Toolboxelementen oder Gestenhandlern, kombinieren möchten.  
+- **Erstellen eines Menübefehls in seiner eigenen VSIX mithilfe einer Projektvorlage.** Dies ist die schnellere Methode. Verwenden Sie diese Methode, wenn Sie die Menübefehle nicht mit anderen Erweiterungstypen, z. B. Validierungserweiterungen, benutzerdefinierten Toolboxelementen oder Gestenhandlern, kombinieren möchten.  
 
--   **Erstellen von getrennten Menübefehl- und VSIX-Projekte.** Verwenden Sie diese Methode, wenn Sie mehrere Erweiterungstypen in dieselbe VSIX kombinieren möchten. Wenn beispielsweise der Menübefehl erwartet, dass das Modell bestimmte Einschränkungen berücksichtigt, können Sie es in dieselbe VSIX wie eine Validierungsmethode einbetten.  
+- **Erstellen von getrennten Menübefehl- und VSIX-Projekte.** Verwenden Sie diese Methode, wenn Sie mehrere Erweiterungstypen in dieselbe VSIX kombinieren möchten. Wenn beispielsweise der Menübefehl erwartet, dass das Modell bestimmte Einschränkungen berücksichtigt, können Sie es in dieselbe VSIX wie eine Validierungsmethode einbetten.  
 
 #### <a name="to-create-a-menu-command-in-its-own-vsix"></a>So erstellen Sie einen Menübefehl in einem eigenen VSIX  
 
@@ -58,31 +55,29 @@ In Visual Studio können Sie zusätzliche Menüelemente in den Kontextmenüs ein
 
 1. Erstellen Sie ein neues Klassenbibliotheksprojekt, entweder in einer neuen Visual Studio-Projektmappe oder in einer vorhandenen Projektmappe.  
 
-   1.  Wählen Sie im Menü **Datei** die Optionsfolge **Neu**, **Projekt**aus.  
+   1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu**, **Projekt**aus.  
 
-   2.  Wählen Sie unter **Installierte Vorlagen**die Option **Visual C#** oder **Visual Basic**aus. Wählen Sie in der mittleren Spalte **Klassenbibliothek**aus.  
+   2. Wählen Sie unter **Installierte Vorlagen**die Option **Visual C#** oder **Visual Basic**aus. Wählen Sie in der mittleren Spalte **Klassenbibliothek**aus.  
 
-   3.  Legen Sie **Projektmappe** fest, um anzugeben, ob eine neue Projektmappe erstellt oder einer bereits geöffneten VSIX-Projektmappe eine Komponente hinzugefügt werden soll.  
+   3. Legen Sie **Projektmappe** fest, um anzugeben, ob eine neue Projektmappe erstellt oder einer bereits geöffneten VSIX-Projektmappe eine Komponente hinzugefügt werden soll.  
 
-   4.  Legen Sie Name und Speicherort für das Projekt fest, und klicken Sie auf OK.  
+   4. Legen Sie Name und Speicherort für das Projekt fest, und klicken Sie auf OK.  
 
 2. Fügen Sie dem Projekt die folgenden Verweise hinzu.  
 
-
-   |                                                                                                    Verweis                                                                                                    |                                                                                                  Optionen                                                                                                  |
+   |                                                                                                    Referenz                                                                                                    |                                                                                                  Optionen                                                                                                  |
    |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |                                                                                        System.ComponentModel.Composition                                                                                        |                                         Definieren Sie Komponenten mithilfe von [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).                                          |
    |                                                                                      Microsoft.VisualStudio.Uml.Interfaces                                                                                      |                                                                                        Lesen und Ändern der Eigenschaften von Modellelementen                                                                                         |
    |                                                                             Microsoft.VisualStudio.ArchitectureTools.Extensibility                                                                              |                                                                                      Erstellen von Modellelementen, Ändern von Formen in Diagrammen                                                                                       |
-   |                                                                                  Microsoft.VisualStudio.Modeling.Sdk.[version]                                                                                  | Definieren von Modellereignishandlern<br /><br /> Kapseln einer Reihe von Änderungen im Modell. Weitere Informationen finden Sie unter [Link UML-modellaktualisierungen mithilfe von Transaktionen](../modeling/link-uml-model-updates-by-using-transactions.md). |
+   |                                                                                  Microsoft.VisualStudio.Modeling.Sdk.[Version]                                                                                  | Definieren von Modellereignishandlern<br /><br /> Kapseln einer Reihe von Änderungen im Modell. Weitere Informationen finden Sie unter [Link UML-modellaktualisierungen mithilfe von Transaktionen](../modeling/link-uml-model-updates-by-using-transactions.md). |
    |                                                            Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[Version]<br /><br /> (nicht immer erforderlich)                                                             |                                                                                   Zugreifen auf zusätzliche Diagrammelemente für Gestenhandler                                                                                   |
    | Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer<br /><br /> Nur für Befehle in Ebenendiagrammen erforderlich. Weitere Informationen finden Sie unter [Erweitern von Ebenendiagrammen](../modeling/extend-layer-diagrams.md). |                                                                                             Definieren Sie Befehle in einem Ebenendiagramm.                                                                                              |
-
 
 3. Fügen Sie dem Projekt eine Klassendatei hinzu, und legen Sie deren Inhalt auf den folgenden Code fest.  
 
    > [!NOTE]
-   >  Ändern Sie den Namespace, den Klassennamen und den Rückgabewert von `Text` entsprechend den jeweiligen Anforderungen.  
+   > Ändern Sie den Namespace, den Klassennamen und den Rückgabewert von `Text` entsprechend den jeweiligen Anforderungen.  
    >   
    >  Wenn Sie mehrere Befehle definieren, werden diese im Menü in alphabetischer Reihenfolge der Klassennamen dargestellt.  
 
@@ -147,23 +142,23 @@ In Visual Studio können Sie zusätzliche Menüelemente in den Kontextmenüs ein
 
 #### <a name="to-add-a-menu-command-to-a-vsix-project"></a>So fügen Sie einem VSIX-Projekt einen Menübefehl hinzu  
 
-1.  Diese Prozedur ist nicht erforderlich, wenn Sie den Menübefehl mit seiner eigenen VSIX erstellt haben.  
+1. Diese Prozedur ist nicht erforderlich, wenn Sie den Menübefehl mit seiner eigenen VSIX erstellt haben.  
 
-2.  Erstellen Sie ein VSIX-Projekt, sofern die Projektmappe noch kein VSIX-Projekt enthält.  
+2. Erstellen Sie ein VSIX-Projekt, sofern die Projektmappe noch kein VSIX-Projekt enthält.  
 
-    1.  Wählen Sie im **Projektmappen-Explorer**im Kontextmenü der Projektmappe die Option **Hinzufügen**und dann **Neues Projekt**aus.  
+    1. Wählen Sie im **Projektmappen-Explorer**im Kontextmenü der Projektmappe die Option **Hinzufügen**und dann **Neues Projekt**aus.  
 
-    2.  Erweitern Sie unter **Installierte Vorlagen**den Knoten **Visual C#** oder **Visual Basic**, und wählen Sie anschließend **Erweiterungen**aus. Wählen Sie in der mittleren Spalte **VSIX Project**.  
+    2. Erweitern Sie unter **Installierte Vorlagen**den Knoten **Visual C#** oder **Visual Basic**, und wählen Sie anschließend **Erweiterungen**aus. Wählen Sie in der mittleren Spalte **VSIX Project**.  
 
-3.  Wählen Sie im Projektmappen-Explorer im Kontextmenü des VSIX-Projekts die Option **Als Startprojekt festlegen**aus.  
+3. Wählen Sie im Projektmappen-Explorer im Kontextmenü des VSIX-Projekts die Option **Als Startprojekt festlegen**aus.  
 
-4.  Öffnen Sie **source.extension.vsixmanifest**.  
+4. Öffnen Sie **source.extension.vsixmanifest**.  
 
-    1.  Legen Sie auf der Registerkarte **MetaData** einen Namen für VSIX fest.  
+    1. Legen Sie auf der Registerkarte **MetaData** einen Namen für VSIX fest.  
 
-    2.  Legen Sie auf der Registerkarte **Ziele installieren** die Visual Studio-Versionen als Ziele fest.  
+    2. Legen Sie auf der Registerkarte **Ziele installieren** die Visual Studio-Versionen als Ziele fest.  
 
-    3.  Wählen Sie auf der Registerkarte **Objekte** die Option **Neu**und wählen Sie im Dialogfeld:  
+    3. Wählen Sie auf der Registerkarte **Objekte** die Option **Neu**und wählen Sie im Dialogfeld:  
 
          **Typ** = **MEF-Komponente**  
 
@@ -171,7 +166,7 @@ In Visual Studio können Sie zusätzliche Menüelemente in den Kontextmenüs ein
 
          **Projekt** = *Ihr Klassenbibliotheksprojekt*  
 
-##  <a name="Implementing"></a> Implementieren des Menübefehls  
+## <a name="Implementing"></a> Implementieren des Menübefehls  
  Durch die Menübefehlsklasse werden die erforderlichen Methoden für <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> implementiert.  
 
 |||  
@@ -189,7 +184,7 @@ In Visual Studio können Sie zusätzliche Menüelemente in den Kontextmenüs ein
 
  ...  
 
- Die `IDiagramContext`-Deklaration ermöglicht es Ihnen, in den Methoden Code zu schreiben, der auf das Diagramm, die aktuelle Auswahl und das Modell zugreift:  
+ Die `IDiagramContext` -Deklaration ermöglicht es Ihnen, in den Methoden Code zu schreiben, der auf das Diagramm, die aktuelle Auswahl und das Modell zugreift:  
 
 ```  
 IDiagram diagram = this.DiagramContext.CurrentDiagram;  
@@ -214,57 +209,57 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
  Dabei ist jedoch zu beachten, dass der Modellspeicher nicht threadsicher ist. Sie sollten Updates immer mit dem UI-Thread (Benutzeroberflächenthread) ausführen und nach Möglichkeit verhindern, dass der Benutzer während der Ausführung des Hintergrundprozesses Änderungen vornimmt. Ein Beispiel finden Sie unter [Aktualisieren eines UML-Modells aus einem Hintergrundthread](../modeling/update-a-uml-model-from-a-background-thread.md).  
 
-##  <a name="Executing"></a> Ausführen des Menübefehls  
+## <a name="Executing"></a> Ausführen des Menübefehls  
  Führen Sie den Befehl zu Testzwecken im Debugmodus aus.  
 
 #### <a name="to-test-the-menu-command"></a>So testen Sie den Menübefehl  
 
-1.  Drücken Sie **F5**oder wählen Sie im Menü **Debug** die Option **Debugging starten**.  
+1. Drücken Sie **F5**oder wählen Sie im Menü **Debug** die Option **Debugging starten**.  
 
      Eine experimentelle Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird gestartet.  
 
-     **Problembehandlung**: Wenn ein neuer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nicht startet:  
+     **Problembehandlung bei**: Wenn ein neuer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nicht gestartet:  
 
-    -   Wenn Sie mehr als ein Projekt haben, stellen Sie sicher, dass das VSIX-Projekt als Startprojekt der Projektmappe festgelegt wird.  
+    - Wenn Sie mehr als ein Projekt haben, stellen Sie sicher, dass das VSIX-Projekt als Startprojekt der Projektmappe festgelegt wird.  
 
-    -   Öffnen Sie im Projektmappen-Explorer das Kontextmenü für das Start- oder einzelne Projekt und wählen Sie **Eigenschaften**aus. Wählen Sie im Projekteigenschaften-Editor die Registerkarte **Debuggen** . Stellen Sie sicher, dass die Zeichenfolge im Feld Externes Programm starten** der vollständige Pfadname von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ist. Dieser lautet in der Regel:  
+    - Öffnen Sie im Projektmappen-Explorer das Kontextmenü für das Start- oder einzelne Projekt und wählen Sie **Eigenschaften**aus. Wählen Sie im Projekteigenschaften-Editor die Registerkarte **Debuggen** . Stellen Sie sicher, dass die Zeichenfolge im Feld **Externes Programm starten** der vollständige Pfadname von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ist. Dieser lautet in der Regel:  
 
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
 
-2.  Öffnen oder erstellen Sie in der experimentellen Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ein Modellierungsprojekt, und öffnen oder erstellen Sie ein Modellierungsdiagramm. Verwenden Sie ein Diagramm, das zu einem der Typen gehört, die in den Attributen der Menübefehlsklasse aufgeführt sind.  
+2. Öffnen oder erstellen Sie in der experimentellen Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ein Modellierungsprojekt, und öffnen oder erstellen Sie ein Modellierungsdiagramm. Verwenden Sie ein Diagramm, das zu einem der Typen gehört, die in den Attributen der Menübefehlsklasse aufgeführt sind.  
 
-3.  Öffnen Sie das Kontextmenü an einer beliebigen Stelle im Diagramm. Der Befehl muss im Menü angezeigt werden.  
+3. Öffnen Sie das Kontextmenü an einer beliebigen Stelle im Diagramm. Der Befehl muss im Menü angezeigt werden.  
 
-     **Problembehandlung**: Wenn der Befehl nicht im Menü angezeigt wird, stellen Sie Folgendes sicher:  
+     **Problembehandlung bei**: Wenn der Befehl im Menü nicht angezeigt wird, stellen Sie sicher, dass:  
 
-    -   Das Menübefehlsprojekt ist im VSIX-Projekt als MEF-Komponente auf der Registerkarte **Objekte** in **source.extensions.manifest** aufgeführt.  
+    - Das Menübefehlsprojekt ist im VSIX-Projekt als MEF-Komponente auf der Registerkarte **Objekte** in **source.extensions.manifest** aufgeführt.  
 
-    -   Die Parameter des `Import` -Attributs und des `Export` -Attributs sind gültig.  
+    - Die Parameter des `Import` -Attributs und des `Export` -Attributs sind gültig.  
 
-    -   Die `QueryStatus` Methode ist nicht das Festlegen der `command`.`Enabled` oder `Visible` -Feld nicht auf `false`.  
+    - Die `QueryStatus` Methode ist nicht das Festlegen der `command`.`Enabled` oder `Visible` -Feld nicht auf `false`.  
 
-    -   Der verwendete Modelldiagrammtyp (UML-Klasse, Sequenz usw.) ist als eines der Menübefehlsklassen-Attribute `[ClassDesignerExtension]`, `[SequenceDesignerExtension]` usw. aufgeführt.  
+    - Der verwendete Modelldiagrammtyp (UML-Klasse, Sequenz usw.) ist als eines der Menübefehlsklassen-Attribute `[ClassDesignerExtension]`, `[SequenceDesignerExtension]` usw. aufgeführt.  
 
-##  <a name="Installing"></a> Installieren und Deinstallieren einer Erweiterung  
+## <a name="Installing"></a> Installieren und Deinstallieren einer Erweiterung  
  Sie können eine [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] -Erweiterung sowohl auf Ihrem eigenen Computer als auch auf anderen Computern installieren.  
 
 #### <a name="to-install-an-extension"></a>So installieren Sie eine Erweiterung  
 
-1.  Suchen Sie auf dem Computer nach der **.vsix** -Datei, die vom VSIX-Projekt erstellt wurde.  
+1. Suchen Sie auf dem Computer nach der **.vsix** -Datei, die vom VSIX-Projekt erstellt wurde.  
 
-    1.  Wählen Sie im **Projektmappen-Explorer**im Kontextmenü des VSIX-Projekts **Ordner in Windows Explorer öffnen**aus.  
+    1. Wählen Sie im **Projektmappen-Explorer**im Kontextmenü des VSIX-Projekts **Ordner in Windows Explorer öffnen**aus.  
 
-    2.  Suchen Sie die Datei **Bin\\\*\\**_IhrProjekt_**VSIX**  
+    2. Suchen Sie die Datei **Bin\\\*\\**_IhrProjekt_**VSIX**  
 
-2.  Kopieren Sie die **.vsix** -Datei auf den Zielcomputer, auf dem Sie die Erweiterung installieren möchten. Dies kann Ihr eigener Computer oder ein anderer Computer sein.  
+2. Kopieren Sie die **.vsix** -Datei auf den Zielcomputer, auf dem Sie die Erweiterung installieren möchten. Dies kann Ihr eigener Computer oder ein anderer Computer sein.  
 
      Der Zielcomputer muss über eine der Editionen von [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] verfügen, die Sie in **source.extension.vsixmanifest**.  
 
-3.  Öffnen Sie auf dem Zielcomputer die Datei **.vsix** , indem Sie beispielsweise darauf doppelklicken.  
+3. Öffnen Sie auf dem Zielcomputer die Datei **.vsix** , indem Sie beispielsweise darauf doppelklicken.  
 
      **Installer für Visual Studio-Erweiterungen** wird geöffnet, und die Erweiterung wird installiert.  
 
-4.  Starten Sie [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], bzw. starten Sie die Anwendung neu.  
+4. Starten Sie [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], bzw. starten Sie die Anwendung neu.  
 
 #### <a name="to-uninstall-an-extension"></a>So deinstallieren Sie eine Erweiterung  
 
@@ -276,9 +271,9 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
    In seltenen Fällen kann es vorkommen, dass eine fehlerhafte Erweiterung nicht geladen und ein Bericht im Fehlerfenster erstellt wird, aber im Erweiterungs-Manager keine Informationen angezeigt werden. Sie haben die Möglichkeit, die Erweiterung zu entfernen, indem Sie die Datei aus dem folgenden Ordner löschen:  
 
-   *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[Version] \Extensions**  
+   *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version]\Extensions**  
 
-##  <a name="MenuExample"></a> Beispiel  
+## <a name="MenuExample"></a> Beispiel  
  Das folgende Beispiel zeigt den Code für einen Menübefehl, der die Namen von zwei Elementen eines Klassendiagramms austauscht. Dieser Code muss in einem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Erweiterungsprojekt erstellt und wie in den vorherigen Abschnitten beschrieben installiert werden.  
 
 ```  
@@ -376,6 +371,3 @@ namespace SwapClassNames
  [Bearbeiten von UML-Sequenzdiagrammen mit der UML-API](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)   
  [Programmieren mit der UML-API](../modeling/programming-with-the-uml-api.md)   
  [Beispiel: Befehl zum Ausrichten von Formen in einem UML-Diagramm](http://go.microsoft.com/fwlink/?LinkID=213809)
-
-
-

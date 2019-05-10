@@ -2,7 +2,7 @@
 title: Tipps und Tricks, die im debugger
 description: Erfahren Sie mehr über einige der weniger bekannten Features von Visual Studio-Debugger unterstützt
 ms.custom: seodec18
-ms.date: 06/15/2017
+ms.date: 06/15/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - stepping
@@ -11,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: 5262d8b1-2648-429e-85d5-90fcaadfb362
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87d74eb960d4e445e457744fd0325e7beb15262e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 8b4c763ff31c6c62a177c77f8886f1de305a5170
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62853012"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Erfahren Sie mehr Produktivitätstipps und Tricks für den Debugger in Visual Studio
 
-Lesen Sie dieses Thema, um ein paar produktivitätstipps und Tricks für Visual Studio-Debugger zu erfahren. Informationen zu den grundlegenden Funktionen des Debuggers, finden Sie unter [Debugger – Featuretour](../debugger/debugger-feature-tour.md). In diesem Thema werden einige Bereiche, die nicht in der Führung durch Features enthalten sind.
+Lesen Sie dieses Thema, um ein paar produktivitätstipps und Tricks für Visual Studio-Debugger zu erfahren. Informationen zu den grundlegenden Funktionen des Debuggers, finden Sie unter [ein erster Blick auf der Debugger](../debugger/debugger-feature-tour.md). In diesem Thema werden einige Bereiche, die nicht in der Führung durch Features enthalten sind.
 
 ## <a name="pin-data-tips"></a>PIN-Datentipps
 
@@ -31,7 +31,7 @@ Wenn Sie häufig auf Datentipps während des Debuggens zeigen, können Sie den D
 
 ![Anheften eines Datentipps](../debugger/media/dbg-tips-data-tips-pinned.png "PinningDataTip")
 
-## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>Ihren Code bearbeiten und Debuggen fortsetzen (C#, VB, C++)
+## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>Bearbeiten Sie Ihren Code und fortfahren Sie, Debuggen (c#, VB, C++)
 
 In den meisten Sprachen, die von Visual Studio unterstützt werden können Sie bearbeiten den Code in der Mitte einer Debugsitzung und mit dem Debuggen fortfahren. Um dieses Feature verwenden zu können, klicken Sie in Ihrem Code mit dem Cursor während der Debugger, nehmen Änderungen, und drücken Sie angehalten **F5**, **F10**, oder **F11** um das Debuggen fortzusetzen.
 
@@ -53,6 +53,10 @@ Ist es schwierig oder zeitaufwändig ist, um einen bestimmten Status in Ihrer ap
 
 3. Wenn Sie einen anderen Typ der Bedingung interessiert sind, wählen Sie **Filter** anstelle von **Bedingungsausdruck** in die **Haltepunkteinstellungen** (Dialogfeld), und führen Sie dann die Filter-Tipps.
 
+## <a name="configure-the-data-to-show-in-the-debugger"></a>Konfigurieren Sie die Daten im Debugger angezeigt.
+
+Für C#, Visual Basic und C++ (C++nur /CLI Code), Sie können dem Debugger zu veranschaulichen, indem Informationen feststellen der [DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md) Attribut. Für C++ Code erreichen Sie die gleichen Using [Natvis-Visualisierungen](create-custom-views-of-native-objects.md).
+
 ## <a name="change-the-execution-flow"></a>Ändern des Ausführungsablaufs
 
 Mit dem Debugger auf eine einzige Zeile Code angehalten, verwenden Sie die Maus auf um den gelben Pfeilzeiger auf der linken Seite zu erfassen. Bewegen Sie den gelben Pfeil-Zeiger zu einem anderen Zeitpunkt im Code Ausführungspfad. Anschließend verwenden Sie F5, oder ein Befehl, der die app weiter auszuführen.
@@ -64,23 +68,23 @@ Durch Ändern des Ausführungsablaufs können Sie Aktionen ausführen wie das Te
 > [!WARNING]
 > Bei dieser Funktion müssen Sie häufig vorsichtig vorgehen. Sie werden durch eine Warnung in der QuickInfo auf Probleme aufmerksam gemacht. Möglicherweise werden Ihnen auch andere Warnungen angezeigt. Verschieben den Zeiger kann nicht rückgängig gemacht, Ihre app in einem früheren Anwendungszustand.
 
-## <a name="track-an-out-of-scope-object-c-visual-basic"></a>Überwachen eines Objekts außerhalb des Bereichs (C#, Visual Basic)
+## <a name="track-an-out-of-scope-object-c-visual-basic"></a>Überwachen eines Objekts außerhalb des Bereichs, (c#, Visual Basic)
 
 Es ist einfach, zeigen Sie die Variablen mithilfe der Debuggerfenster wie die **Watch** Fenster. Aber wenn eine Variable den Gültigkeitsbereich verlässt in der **Watch** Fenster werden Sie feststellen, dass er ausgegraut ist. Der Wert einer Variablen kann in einigen app-Szenarien ändern, selbst wenn die Variable ist außerhalb des gültigen Bereichs, und möglicherweise möchten es so beobachten (z. B. eine Variable kann Garbage collection erhalten). Sie können die Variable verfolgen, indem Sie dafür im Objekt-ID erstellen die **Watch** Fenster.
 
 #### <a name="to-create-an-object-id"></a>Um eine Objekt-ID zu erstellen.
 
-1.  Legen Sie einen Haltepunkt in der Nähe einer Variablen, die Sie nachverfolgen möchten.
+1. Legen Sie einen Haltepunkt in der Nähe einer Variablen, die Sie nachverfolgen möchten.
 
-2.  Starten Sie den Debugger (**F5**) und die Ausführung am Haltepunkt beendet.
+2. Starten Sie den Debugger (**F5**) und die Ausführung am Haltepunkt beendet.
 
 3. Suchen Sie die Variable in der **"lokal"** Fenster (**Debuggen > Windows > "lokal"**) mit der rechten Maustaste auf die Variable, und wählen Sie **Objekt-ID**.
 
     ![Erstellen Sie eine ObjectID](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
-  
-4.  Sie sollten ein **$** und eine Zahl im **Lokalfenster** einen Haltepunkt festlegen. Diese Variable ist die Objekt-ID.
-  
-5.  Mit der rechten Maustaste der Objekt-ID-Variable, und wählen Sie **Überwachung hinzufügen**.
+
+4. Sie sollten ein **$** und eine Zahl im **Lokalfenster** einen Haltepunkt festlegen. Diese Variable ist die Objekt-ID.
+
+5. Mit der rechten Maustaste der Objekt-ID-Variable, und wählen Sie **Überwachung hinzufügen**.
 
 Weitere Informationen finden Sie unter [erstellen Sie eine Objekt-ID](../debugger/watch-and-quickwatch-windows.md#bkmk_objectIds).
 
@@ -88,7 +92,7 @@ Weitere Informationen finden Sie unter [erstellen Sie eine Objekt-ID](../debugge
 
 Um die Rückgabe von Werten für Ihre Funktionen anzeigen, sehen Sie sich die Funktionen, die in angezeigt werden die **"Auto"** Fenster, während Sie durch den Code schrittweise ausführen. Um den Rückgabewert für eine Funktion anzuzeigen, stellen Sie sicher, dass die Funktion, die Sie interessiert sind, bereits ausgeführt wurde (drücken Sie die **F10** einmal, wenn Sie derzeit für den Funktionsaufruf beendet sind). Wenn das Fenster geschlossen wird, verwenden Sie **Debuggen > Windows > "Auto"** zum Öffnen der **"Auto"** Fenster.
 
-![Fenster Auto Fenster](../debugger/media/dbg-tips-autos-window.png "AutosWindow")
+![Autos Window](../debugger/media/dbg-tips-autos-window.png "AutosWindow")
 
 Darüber hinaus können Sie Funktionen in eingeben der **direkt** Fenster zum Anzeigen der Rückgabewerte. (Öffnen Sie sie in **Debuggen > Windows > direkt**.)
 
@@ -106,7 +110,7 @@ Eine Zeichenfolgen-Schnellansicht helfen Ihnen dabei herauszufinden, ob eine Zei
 
 ![JSON-Zeichenfolgen-Schnellansicht](../debugger/media/dbg-tips-string-visualizer-json.png "JSONStringVisualizer")
 
-Für einigen andere Typen wie z. B. WPF-Objekte, die in den Debuggerfenstern angezeigt werden, können Sie auch Schnellansichten öffnen.
+Für einigen andere Typen wie z. B. DataSet und DataTable-Objekte, die in den Debuggerfenstern angezeigt werden, können Sie auch eine integrierte Schnellansicht öffnen.
 
 ## <a name="break-into-code-on-handled-exceptions"></a>Unterbrechen Sie im Code auf behandelten Ausnahmen
 
@@ -122,13 +126,13 @@ Wenn Sie die Arten von Problemen zu debuggen, die für Multithreadanwendungen be
 
 #### <a name="to-show-threads-in-your-source-code"></a>Um Threads in Ihrem Quellcode anzuzeigen.
 
-1.  Während des Debuggens, klicken Sie auf die **Threads in Quelle anzeigen** Schaltfläche ![Threads in Quelle anzeigen](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") in die **Debuggen** Symbolleiste.
-  
-2.  Betrachten Sie den Bundsteg auf der linken Seite des Fensters. In dieser Zeile, die Sie sehen eine *Threadmarker* Symbol ![Threadmarker](../debugger/media/dbg-thread-marker.png "ThreadMarker") , das zwei Fäden ähnelt. Der Threadmarker gibt an, dass ein Thread an dieser Position angehalten wurde.
+1. Während des Debuggens, klicken Sie auf die **Threads in Quelle anzeigen** Schaltfläche ![Threads in Quelle anzeigen](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") in die **Debuggen** Symbolleiste.
+
+2. Betrachten Sie den Bundsteg auf der linken Seite des Fensters. In dieser Zeile, die Sie sehen eine *Threadmarker* Symbol ![Threadmarker](../debugger/media/dbg-thread-marker.png "ThreadMarker") , das zwei Fäden ähnelt. Der Threadmarker gibt an, dass ein Thread an dieser Position angehalten wurde.
 
     Beachten Sie, dass ein Threadmarker teilweise kann, können Sie durch einen Haltepunkt abgedeckt werden.
-  
-3.  Zeigen Sie mit dem Mauszeiger auf den Threadmarker. Ein DataTip wird angezeigt. Anhand des DataTips erfahren Sie den Namen und die Thread-ID jedes angehaltenen Threads.
+
+3. Zeigen Sie mit dem Mauszeiger auf den Threadmarker. Ein DataTip wird angezeigt. Anhand des DataTips erfahren Sie den Namen und die Thread-ID jedes angehaltenen Threads.
 
     Sie können auch den Speicherort der Threads im Anzeigen der [Fenster "Parallele Stapel"](../debugger/get-started-debugging-multithreaded-apps.md).
 
@@ -162,8 +166,8 @@ Um herauszufinden, wie der Debugger Code als Benutzercode klassifiziert, finden 
 
 Zusätzliche Tipps und Tricks und ausführlichere Informationen finden Sie in folgenden Blogbeiträgen:
 
-- [7 weniger bekannte Hacks für das Debuggen in Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/06/26/7-lesser-known-hacks-for-debugging-in-visual-studio/)
-- [7 verborgenen Funktionen in Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/10/05/7-hidden-gems-in-visual-studio-2017/)
+- [7 weniger bekannte Hacks für das Debuggen in Visual Studio](https://devblogs.microsoft.com/visualstudio/7-lesser-known-hacks-for-debugging-in-visual-studio/)
+- [7 verborgenen Funktionen in Visual Studio](https://devblogs.microsoft.com/visualstudio/7-hidden-gems-in-visual-studio-2017/)
 
 ## <a name="see-also"></a>Siehe auch
 [Tastenkombinationen](../ide/tips-and-tricks-for-visual-studio.md)

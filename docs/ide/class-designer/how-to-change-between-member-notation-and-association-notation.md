@@ -1,7 +1,6 @@
 ---
 title: 'Vorgehensweise: Wechseln zwischen Member- und Zuordnungsnotation (Klassen-Designer)'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - notation, member
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 65881c5a-d251-4a36-ad0d-73d088436092
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56ffdcaf2a78933d52fe3a19e2c34deb5c303401
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4ff63e6cca9deebbfcfa5960b41d85f9425f7a73
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952640"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975505"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Vorgehensweise: Wechseln zwischen Member- und Zuordnungsnotation im Klassen-Designer
 
@@ -30,9 +29,9 @@ Im **Klassen-Designer** können Sie ändern, wie das Klassendiagramm eine Zuordn
 
 ## <a name="to-change-member-notation-to-association-notation"></a>Ändern der Membernotation in die Zuordnungsnotation
 
-1.  Öffnen Sie vom Projektknoten im Projektmappen-Explorer aus die Klassendiagrammdatei (CD-Datei).
+1. Öffnen Sie vom Projektknoten im Projektmappen-Explorer aus die Klassendiagrammdatei (CD-Datei).
 
-2.  Führen Sie einen Rechtsklick in der Typform auf dem Klassendiagramm auf die Membereigenschaft oder das -feld aus, die bzw. das die Zuweisung darstellt. Wählen Sie anschließend **Als Zuordnung anzeigen** aus.
+2. Führen Sie einen Rechtsklick in der Typform auf dem Klassendiagramm auf die Membereigenschaft oder das -feld aus, die bzw. das die Zuweisung darstellt. Wählen Sie anschließend **Als Zuordnung anzeigen** aus.
 
     > [!TIP]
     > Wenn keine Eigenschaften oder Felder in der Typform sichtbar sind, sind die Depots in der Form womöglich reduziert. Um die Typform zu erweitern, führen Sie einen Doppelklick auf den Depotnamen oder einen Rechtsklick in die Typform aus, und wählen Sie **Erweitern** aus.

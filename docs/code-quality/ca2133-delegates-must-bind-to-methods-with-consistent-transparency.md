@@ -1,22 +1,21 @@
 ---
 title: 'CA2133: Delegaten müssen an Methoden mit konsistenter Transparenz gebunden werden.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2133
 ms.assetid: a09672e2-63cb-4abd-9e8f-dff515e101ce
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8053090802c77b310bc04d6e95be8d3c538a4cb9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0745506bfe55305c9c3a55f57823e5d80c453006
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62796732"
 ---
 # <a name="ca2133-delegates-must-bind-to-methods-with-consistent-transparency"></a>CA2133: Delegaten müssen an Methoden mit konsistenter Transparenz gebunden werden.
 

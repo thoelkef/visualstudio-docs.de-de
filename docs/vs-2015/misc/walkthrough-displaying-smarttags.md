@@ -1,37 +1,32 @@
 ---
 title: 'Exemplarische Vorgehensweise: Anzeigen von SmartTags | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - smart tags
 ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
-manager: douge
-ms.openlocfilehash: 459530726628819587a3c228910baa3b902ae865
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 116f76324a2150413c0ae6d08bc99e114efcc50e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939097"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436511"
 ---
-# <a name="walkthrough-displaying-smarttags"></a>Exemplarische Vorgehensweise: Anzeigen von Smarttags
-Smarttags sind veraltet und wurden gegen Glühbirnen ausgetauscht. Siehe [Walkthrough: Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
+# <a name="walkthrough-displaying-smarttags"></a>Exemplarische Vorgehensweise: Anzeigen von SmartTags
+Smarttags sind veraltet und wurden gegen Glühbirnen ausgetauscht. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
   
  Smarttags sind Tags für Text, die erweitert werden können, um eine Reihe von Aktionen anzuzeigen. Beispielsweise wird in einem Visual Basic- oder Visual C#-Projekt eine rote Linie unter einem Wort angezeigt, wenn Sie einen Bezeichner (z. B. Variablenname) umbenennen. Wenn Sie den Mauszeiger über die Unterstreichung bewegen, wird eine Schaltfläche in der Nähe des Zeigers angezeigt. Wenn Sie auf die Schaltfläche klicken, wird eine empfohlene Aktion angezeigt, z. B. **IsRead in IsReady umbenennen**. Wenn Sie auf die Aktion klicken, werden alle Verweise auf **IsRead** im Projekt in **IsReady**umbenannt.  
   
  Obwohl Smarttags Bestandteil der IntelliSense-Implementierung im Editor sind, können Sie Smarttags implementieren, indem Sie eine Unterklasse für <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag> erstellen und dann die Schnittstellen <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> und <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider> implementieren.  
   
 > [!NOTE]
->  Andere Arten von Tags können auf ähnliche Weise implementiert werden.  
+> Andere Arten von Tags können auf ähnliche Weise implementiert werden.  
   
- Die folgende exemplarische Vorgehensweise veranschaulicht, wie Sie ein Smarttag erstellen, das für das aktuelle Wort angezeigt wird und zwei empfohlene Aktionen beinhaltet: **In Großbuchstaben umwandeln** und **In Kleinbuchstaben umwandeln**.  
+ Die folgende exemplarische Vorgehensweise zeigt, wie Sie ein Smarttag erstellen, die für das aktuelle Wort angezeigt wird, und verfügt über zwei empfohlene Aktionen: **In Großschreibung konvertieren** und **in Kleinbuchstaben umwandeln**.  
   
 ## <a name="prerequisites"></a>Vorraussetzungen  
  Um diese exemplarische Vorgehensweise befolgen zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
@@ -40,57 +35,57 @@ Smarttags sind veraltet und wurden gegen Glühbirnen ausgetauscht. Siehe [Walkth
   
 #### <a name="to-create-a-mef-project"></a>So erstellen Sie ein MEF-Projekt  
   
-1.  Erstellen Sie ein Editorklassifiziererprojekt. Nennen Sie die Projektmappe `SmartTagTest`.  
+1. Erstellen Sie ein Editorklassifiziererprojekt. Nennen Sie die Projektmappe `SmartTagTest`.  
   
-2.  Öffnen Sie im VSIX-Manifest-Editor die Datei "source.extension.vsixmanifest".  
+2. Öffnen Sie im VSIX-Manifest-Editor die Datei "source.extension.vsixmanifest".  
   
-3.  Stellen Sie sicher, dass der Abschnitt **Objekte** einen `Microsoft.VisualStudio.MefComponent` -Typ enthält, die **Quelle** auf `A project in current solution`und das **Projekt** auf SmartTagTest.dll festgelegt ist.  
+3. Stellen Sie sicher, dass der Abschnitt **Objekte** einen `Microsoft.VisualStudio.MefComponent` -Typ enthält, die **Quelle** auf `A project in current solution`und das **Projekt** auf SmartTagTest.dll festgelegt ist.  
   
-4.  Speichern und schließen Sie die Datei "source.extension.vsixmanifest".  
+4. Speichern und schließen Sie die Datei "source.extension.vsixmanifest".  
   
-5.  Fügen Sie den folgenden Verweis auf das Projekt hinzu, und legen Sie **CopyLocal** auf `false`fest:  
+5. Fügen Sie den folgenden Verweis auf das Projekt hinzu, und legen Sie **CopyLocal** auf `false`fest:  
   
      Microsoft.VisualStudio.Language.Intellisense  
   
-6.  Löschen Sie die vorhandenen Klassendateien.  
+6. Löschen Sie die vorhandenen Klassendateien.  
   
 ## <a name="implementing-a-tagger-for-smart-tags"></a>Implementieren eines Taggers für Smarttags  
   
 #### <a name="to-implement-a-tagger-for-smart-tags"></a>So implementieren Sie einen Tagger für Smarttags  
   
-1.  Fügen Sie eine Klassendatei hinzu, und nennen Sie sie `TestSmartTag`.  
+1. Fügen Sie eine Klassendatei hinzu, und nennen Sie sie `TestSmartTag`.  
   
-2.  Fügen Sie die folgenden Importe hinzu:  
+2. Fügen Sie die folgenden Importe hinzu:  
   
      [!code-csharp[VSSDKSmartTagTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#1)]
      [!code-vb[VSSDKSmartTagTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#1)]  
   
-3.  Fügen Sie eine Klasse namens `TestSmartTag` hinzu, die von <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag> erbt.  
+3. Fügen Sie eine Klasse namens `TestSmartTag` hinzu, die von <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag> erbt.  
   
      [!code-csharp[VSSDKSmartTagTest#2](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#2)]
      [!code-vb[VSSDKSmartTagTest#2](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#2)]  
   
-4.  Fügen Sie einen Konstruktor für diese Klasse hinzu, der den Basiskonstruktor mit einem <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType> von <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType> aufruft, wodurch der erste Buchstabe eines Worts mit einer blauen Linie unterstrichen wird. (Bei Verwendung von <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType> wird der letzte Buchstabe des Worts rot unterstrichen.)  
+4. Fügen Sie einen Konstruktor für diese Klasse hinzu, der den Basiskonstruktor mit einem <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType> von <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType> aufruft, wodurch der erste Buchstabe eines Worts mit einer blauen Linie unterstrichen wird. (Bei Verwendung von <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType> wird der letzte Buchstabe des Worts rot unterstrichen.)  
   
      [!code-csharp[VSSDKSmartTagTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#3)]
      [!code-vb[VSSDKSmartTagTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#3)]  
   
-5.  Fügen Sie eine Klasse mit dem Namen `TestSmartTagger` hinzu, die von <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> vom Typ `TestSmartTag` erbt und <xref:System.IDisposable> implementiert.  
+5. Fügen Sie eine Klasse mit dem Namen `TestSmartTagger` hinzu, die von <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> vom Typ `TestSmartTag` erbt und <xref:System.IDisposable> implementiert.  
   
      [!code-csharp[VSSDKSmartTagTest#4](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#4)]
      [!code-vb[VSSDKSmartTagTest#4](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#4)]  
   
-6.  Fügen Sie der Taggerklasse die folgenden privaten Felder hinzu:  
+6. Fügen Sie der Taggerklasse die folgenden privaten Felder hinzu:  
   
      [!code-csharp[VSSDKSmartTagTest#5](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#5)]
      [!code-vb[VSSDKSmartTagTest#5](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#5)]  
   
-7.  Fügen Sie einen Konstruktor hinzu, der die privaten Felder festlegt und das <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>-Ereignis abonniert.  
+7. Fügen Sie einen Konstruktor hinzu, der die privaten Felder festlegt und das <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>-Ereignis abonniert.  
   
      [!code-csharp[VSSDKSmartTagTest#6](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#6)]
      [!code-vb[VSSDKSmartTagTest#6](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#6)]  
   
-8.  Implementieren Sie <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A>, damit das Tag für das aktuelle Wort erstellt wird. (Mit dieser Methode wird auch die private Methode `GetSmartTagActions` aufgerufen, die zu einem späteren Zeitpunkt erläutert wird.)  
+8. Implementieren Sie <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A>, damit das Tag für das aktuelle Wort erstellt wird. (Mit dieser Methode wird auch die private Methode `GetSmartTagActions` aufgerufen, die zu einem späteren Zeitpunkt erläutert wird.)  
   
      [!code-csharp[VSSDKSmartTagTest#7](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#7)]
      [!code-vb[VSSDKSmartTagTest#7](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#7)]  
@@ -100,7 +95,7 @@ Smarttags sind veraltet und wurden gegen Glühbirnen ausgetauscht. Siehe [Walkth
      [!code-csharp[VSSDKSmartTagTest#8](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#8)]
      [!code-vb[VSSDKSmartTagTest#8](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#8)]  
   
-10. Deklarieren Sie das `SmartTagsChanged`-Ereignis.  
+10. Deklarieren Sie das `SmartTagsChanged` -Ereignis.  
   
      [!code-csharp[VSSDKSmartTagTest#9](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#9)]
      [!code-vb[VSSDKSmartTagTest#9](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#9)]  
@@ -119,17 +114,17 @@ Smarttags sind veraltet und wurden gegen Glühbirnen ausgetauscht. Siehe [Walkth
   
 #### <a name="to-implement-the-smart-tag-tagger-provider"></a>So implementieren Sie den Anbieter des Smarttag-Taggers  
   
-1.  Fügen Sie eine Klasse namens `TestSmartTagTaggerProvider` hinzu, die von <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider> erbt. Exportieren Sie sie mit dem <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "Text", dem <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> Before = "Default" und dem <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>.  
+1. Fügen Sie eine Klasse namens `TestSmartTagTaggerProvider` hinzu, die von <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider> erbt. Exportieren Sie sie mit dem <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "Text", dem <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> Before = "Default" und dem <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>.  
   
      [!code-csharp[VSSDKSmartTagTest#12](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#12)]
      [!code-vb[VSSDKSmartTagTest#12](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#12)]  
   
-2.  Importieren Sie <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> als Eigenschaft.  
+2. Importieren Sie <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> als Eigenschaft.  
   
      [!code-csharp[VSSDKSmartTagTest#13](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#13)]
      [!code-vb[VSSDKSmartTagTest#13](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#13)]  
   
-3.  Implementieren Sie die <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A>-Methode.  
+3. Implementieren Sie die <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A>-Methode.  
   
      [!code-csharp[VSSDKSmartTagTest#14](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#14)]
      [!code-vb[VSSDKSmartTagTest#14](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#14)]  
@@ -173,19 +168,19 @@ Smarttags sind veraltet und wurden gegen Glühbirnen ausgetauscht. Siehe [Walkth
   
 #### <a name="to-build-and-test-the-smarttagtest-solution"></a>So erstellen Sie die Projektmappe "SmartTagTest" und testen den Code  
   
-1.  Erstellen Sie die Projektmappe.  
+1. Erstellen Sie die Projektmappe.  
   
-2.  Wenn Sie dieses Projekt im Debugger ausführen, wird eine zweite Instanz von Visual Studio instanziiert.  
+2. Wenn Sie dieses Projekt im Debugger ausführen, wird eine zweite Instanz von Visual Studio instanziiert.  
   
-3.  Erstellen Sie eine Textdatei, und geben Sie Text ein.  
+3. Erstellen Sie eine Textdatei, und geben Sie Text ein.  
   
      Unter dem ersten Buchstaben des ersten Worts im Text sollte eine blaue Linie angezeigt werden.  
   
-4.  Bewegen Sie den Zeiger über die blaue Linie.  
+4. Bewegen Sie den Zeiger über die blaue Linie.  
   
      Neben dem Zeiger sollte eine Schaltfläche angezeigt werden.  
   
-5.  Wenn Sie auf die Schaltfläche klicken, sollten zwei empfohlene Aktionen angezeigt werden: **In Großbuchstaben umwandeln** und **In Kleinbuchstaben umwandeln**. Wenn Sie auf die erste Aktion klicken, sollte der gesamte Text im aktuellen Wort in Großbuchstaben umgewandelt werden. Wenn Sie auf die zweite Aktion klicken, sollte der gesamte Text im aktuellen Wort in Kleinbuchstaben umgewandelt werden.  
+5. Wenn Sie die Schaltfläche klicken, sollten zwei empfohlene Aktionen angezeigt: **In Großschreibung konvertieren** und **in Kleinbuchstaben umwandeln**. Wenn Sie auf die erste Aktion klicken, sollte der gesamte Text im aktuellen Wort in Großbuchstaben umgewandelt werden. Wenn Sie auf die zweite Aktion klicken, sollte der gesamte Text im aktuellen Wort in Kleinbuchstaben umgewandelt werden.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Dateinamenerweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit einer Erweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

@@ -2,33 +2,29 @@
 title: Einführung in das Bearbeiten von Code für JavaScript-Entwickler
 description: In dieser Einführung in den Code-Editor von Visual Studio wird erläutert, inwiefern Visual Studio das Schreiben und Verstehen von sowie das Navigieren in JavaScript-Code vereinfacht.
 ms.date: 12/13/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ebc5666ca037276d5b148151e2b41756b105dc2d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 111100038817d16d4655271f648aeb076bf1e9af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967426"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840839"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Informationen zur Verwendung des Code-Editors
 
 In dieser kurzen Einführung in den Code-Editor von Visual Studio wird erläutert, inwiefern Visual Studio das Schreiben und Verstehen von sowie das Navigieren in Code vereinfacht.
 
 > [!TIP]
-> Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) kostenlos herunterladen. Je nachdem, welche Art von App-Entwicklung Sie wählen, müssen Sie die **Workload für die Node.js-Entwicklung** zusammen mit Visual Studio installieren.
+> Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/) kostenlos herunterladen. Je nachdem, welche Art von App-Entwicklung Sie wählen, müssen Sie die **Workload für die Node.js-Entwicklung** zusammen mit Visual Studio installieren.
 
 In diesem Artikel wird vorausgesetzt, dass Sie bereits mit der JavaScript-Entwicklung vertraut sind. Wenn dies nicht der Fall ist, sollten Sie sich zunächst ein Tutorial dazu ansehen, z. B.: [Erstellen einer Node.js- und Express-App in Visual Studio](../javascript/tutorial-nodejs.md).
-
-> [!TIP]
-> Damit Sie die in diesem Artikel beschriebenen Vorgänge ausführen können, vergewissern Sie sich, dass Sie für Visual Studio die JavaScript-Einstellungen ausgewählt haben. Weitere Informationen zum Auswählen von Einstellungen für die integrierte Entwicklungsumgebung (Integrated Development Environment, IDE) finden Sie unter [Umgebungseinstellungen](../ide/environment-settings.md). Wenn Sie Einstellungen importieren, sollte es sich um **JavaScript**-Einstellungen handeln.
 
 ## <a name="add-a-new-project-file"></a>Hinzufügen einer neuen Projektdatei
 
@@ -96,7 +92,7 @@ Klicken Sie erst mit der rechten Maustaste auf `render` und anschließend im Inh
 
    ![Fenster „Definition einsehen“](../javascript/media/write-code-peek-definition.png)
 
-1. Schließen Sie das eingesehene Definitionsfenster, indem Sie auf das kleine „x“ in der oberen rechten Ecke des Popupfensters klicken.
+Schließen Sie das eingesehene Definitionsfenster, indem Sie auf das kleine „x“ in der oberen rechten Ecke des Popupfensters klicken.
 
 ## <a name="use-code-snippets"></a>Verwenden von Codeausschnitten
 

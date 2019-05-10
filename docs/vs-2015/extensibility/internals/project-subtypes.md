@@ -1,27 +1,22 @@
 ---
 title: Projektuntertypen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], subtypes
 - project subtypes [Visual Studio SDK]
 ms.assetid: d235b47b-cf11-4d47-a63f-e33d9d16105d
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f4562eab97c28437d8722eacbb60459bd2732dfa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5ad1e105d43c40782b13d8799b20626e57363c2f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752695"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421832"
 ---
 # <a name="project-subtypes"></a>Projektuntertypen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +24,7 @@ ms.locfileid: "51752695"
 Projektuntertypen ermöglichen das Anpassen oder das Verhalten der Projektsysteme von flavor [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Anpassungen beinhalten das Speichern von zusätzlicher Daten in der Projektdatei, hinzufügen oder Filtern von Elementen in der **neues Element hinzufügen** Dialogfeld steuern, wie Assemblys debuggt und bereitgestellt, und erweitern das Projekt **Eigenschaft Seiten** Dialogfeld. VSPackages implementieren Projektuntertypen mit COM-Aggregation.  
   
 > [!NOTE]
->  Das Visual C++-Projektsystem unterstützt Projektuntertypen nicht. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Projektuntertypen verwendet SQL Server und Smart Device-Projekte umsetzen.  
+> Das Visual C++-Projektsystem unterstützt Projektuntertypen nicht. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Projektuntertypen verwendet SQL Server und Smart Device-Projekte umsetzen.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Entwurf von Projektuntertypen](../../extensibility/internals/project-subtypes-design.md)  
@@ -65,4 +60,3 @@ Projektuntertypen ermöglichen das Anpassen oder das Verhalten der Projektsystem
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Projekttypen](../../extensibility/internals/project-types.md)  
  Enthält Links zu Themen, die mit [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Projekte.
-

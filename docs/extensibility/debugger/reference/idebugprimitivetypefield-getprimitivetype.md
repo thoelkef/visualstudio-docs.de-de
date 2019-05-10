@@ -1,29 +1,31 @@
 ---
-title: IDebugPrimitiveTypeField::GetPrimitiveType | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+title: IDebugPrimitiveTypeField::GetPrimitiveType | Microsoft Docs
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - GetPrimitiveType
 - IDebugPrimitiveTypeField::GetPrimitiveType
 ms.assetid: a186c922-bbfe-478c-a744-b21eb4672d8f
-author: gregvanl
+caps.latest.revision: 11
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 1a100b02d8a12c70a5fde1a3823035e0f3202586
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 09015d343507afb8f68ed8165b07314465d2500c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932208"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62871374"
 ---
 # <a name="idebugprimitivetypefieldgetprimitivetype"></a>IDebugPrimitiveTypeField::GetPrimitiveType
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Ruft ab, der primitive Typ, der mit diesem Feld zugeordnet ist.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT GetPrimitiveType (  
    DWORD* pdwType  
 );  

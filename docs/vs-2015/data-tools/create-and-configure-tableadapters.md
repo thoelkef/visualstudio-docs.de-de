@@ -1,12 +1,9 @@
 ---
 title: Erstellen und Konfigurieren eines TableAdapters | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,18 +19,17 @@ ms.assetid: 08630d69-0d6c-4e8f-b42d-2922f45f8415
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 03cb6c67b4887762885a0cb920eb928359b4708b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 759cf18033adb962a6ccb97a31802963e12ba5c4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917647"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431205"
 ---
 # <a name="create-and-configure-tableadapters"></a>Erstellen und Konfigurieren eines TableAdapters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 TableAdapters ermöglichen die Kommunikation zwischen der Anwendung und einer Datenbank. Sie verbinden, in der Datenbank, die Abfragen ausführen oder die gespeicherten Prozeduren und entweder einen neuen Daten zurückgeben Tabellen- oder geben Sie eine vorhandene <xref:System.Data.DataTable> mit den zurückgegebenen Daten. TableAdapter-Steuerelemente können auch aktualisierte Daten aus Ihrer Anwendung an die Datenbank senden.  
   
  TableAdapters werden für Sie erstellt, wenn Sie eine der folgenden Aktionen ausführen:  
@@ -55,18 +51,18 @@ TableAdapters ermöglichen die Kommunikation zwischen der Anwendung und einer Da
   
  Wenn Sie einen neuen TableAdapter aus der Toolbox ziehen bei der **Dataset-Designer** befindet sich im Fokus, die Anweisungen des Assistenten, Sie die Datenquelle an der TableAdapter um eine Verbindung herstellen soll, und welche Art von Befehle verwenden sollten, um die Kommunikation mit, dem Datenbank, SQL-Anweisungen oder gespeicherten Prozeduren. Dies wird nicht angezeigt, wenn Sie einen TableAdapter konfigurieren, die bereits mit einer Datenquelle zugeordnet ist.  
   
--   Mithilfe der **Methoden erstellen, um Updates direkt an die Datenbank senden** Option entspricht dem Festlegen der `GenerateDBDirectMethods` Eigenschaft auf "true". Die Option ist nicht verfügbar, wenn die ursprüngliche SQL-Anweisung nicht genügend Informationen bereitstellt oder die Abfrage keine aktualisierbare Abfrage ist. Diese Situation kann auftreten, z. B. **JOIN** Abfragen und Abfragen, die einen einzelnen (skalaren) Wert zurückgeben.  
+- Mithilfe der **Methoden erstellen, um Updates direkt an die Datenbank senden** Option entspricht dem Festlegen der `GenerateDBDirectMethods` Eigenschaft auf "true". Die Option ist nicht verfügbar, wenn die ursprüngliche SQL-Anweisung nicht genügend Informationen bereitstellt oder die Abfrage keine aktualisierbare Abfrage darstellt. Diese Situation kann auftreten, z. B. **JOIN** Abfragen und Abfragen, die einen einzelnen (skalaren) Wert zurückgeben.  
   
--   Sie haben die Möglichkeit, eine neue gespeicherte Prozedur in der zugrunde liegenden Datenbank zu erstellen, wenn Sie die richtigen Berechtigungen für die Datenbank verfügen. Wenn Sie diese Berechtigungen nicht haben, nicht dadurch eine Option.  
+- Sie haben die Möglichkeit, eine neue gespeicherte Prozedur in der zugrunde liegenden Datenbank zu erstellen, wenn Sie die richtigen Berechtigungen für die Datenbank verfügen. Wenn Sie diese Berechtigungen nicht haben, nicht dadurch eine Option.  
   
--   Sie können auch vorhandene gespeicherte Prozeduren für die Ausführung der **wählen**, **einfügen**, **UPDATE**, und **löschen** Befehle das TableAdapter. Die gespeicherte Prozedur, die zugewiesen ist, die **Update** Befehl ein, z. B. wird ausgeführt, wenn die `TableAdapter.Update()` Methode wird aufgerufen.  
+- Sie können auch vorhandene gespeicherte Prozeduren für die Ausführung der **wählen**, **einfügen**, **UPDATE**, und **löschen** Befehle das TableAdapter. Die gespeicherte Prozedur, die zugewiesen ist, die **Update** Befehl ein, z. B. wird ausgeführt, wenn die `TableAdapter.Update()` Methode wird aufgerufen.  
   
      Ordnen Sie die Parameter der ausgewählten gespeicherten Prozedur den entsprechenden Spalten in der Datentabelle zu. Wenn die gespeicherte Prozedur einen Parameter, die mit dem Namen akzeptiert, z. B. `@CompanyName` , die zum Übergeben der `CompanyName` Spaltensatz in der Tabelle der **Quellspalte** von der `@CompanyName` Parameter, um `CompanyName`.  
   
     > [!NOTE]
-    >  Die gespeicherte Prozedur, die die SELECT-Befehl zugewiesen ist, wird durch Aufrufen der Methode des TableAdapter mit den Bezeichnungen im nächsten Schritt des Assistenten ausgeführt. Die Standardmethode ist `Fill`, sodass der Code, der in der Regel, zum Ausführen der SELECT-Prozedur verwendet wird ist `TableAdapter.Fill(tableName)`. Wenn Sie den Standardnamen aus ändern `Fill`, ersetzen Sie `Fill` mit dem Namen zuweisen, und Ersetzen Sie "TableAdapter" durch den tatsächlichen Namen des TableAdapter (z. B. `CustomersTableAdapter`).  
+    > Die gespeicherte Prozedur, die die SELECT-Befehl zugewiesen ist, wird durch Aufrufen der Methode des TableAdapter mit den Bezeichnungen im nächsten Schritt des Assistenten ausgeführt. Die Standardmethode ist `Fill`, sodass der Code, der in der Regel, zum Ausführen der SELECT-Prozedur verwendet wird ist `TableAdapter.Fill(tableName)`. Wenn Sie den Standardnamen aus ändern `Fill`, ersetzen Sie `Fill` mit dem Namen zuweisen, und Ersetzen Sie "TableAdapter" durch den tatsächlichen Namen des TableAdapter (z. B. `CustomersTableAdapter`).  
   
--   Die **erweiterte Optionen** im Assistenten ermöglichen es Ihnen, Generieren von INSERT-, Update- und DELETE-Anweisungen, die basierend auf der SELECT-Anweisung, die auf definiert ist die **SQL-Anweisungen** Seite. Verwenden von optimistischer Parallelität, und gibt an, ob zum Aktualisieren der Datentabelle nach einem INSERT- und UPDATE-Anweisungen ausgeführt werden.  
+- Die **erweiterte Optionen** im Assistenten ermöglichen es Ihnen, Generieren von INSERT-, Update- und DELETE-Anweisungen, die basierend auf der SELECT-Anweisung, die auf definiert ist die **SQL-Anweisungen** Seite. Verwenden von optimistischer Parallelität, und gibt an, ob zum Aktualisieren der Datentabelle nach einem INSERT- und UPDATE-Anweisungen ausgeführt werden.  
   
 ## <a name="configure-a-tableadapters-fill-method"></a>Konfigurieren TableAdapters-Fill-Methode  
  In einigen Fällen empfiehlt es sich um das Schema der Tabelle mit dem TableAdapter zu ändern. Zu diesem Zweck ändern Sie die TableAdapter primären `Fill` Methode. TableAdapter-Erstellung mit der primären `Fill` -Methode, die das Schema der zugeordneten Datentabelle definiert. Die primäre `Fill` Methode basiert auf der Abfrage oder gespeicherte Prozedur, die Sie eingegeben haben, wenn Sie den TableAdapter ursprünglich konfiguriert haben. Es ist die erste (oberste)-Methode in der Datentabelle im DataSet-Designer.  
@@ -79,41 +75,40 @@ TableAdapters ermöglichen die Kommunikation zwischen der Anwendung und einer Da
   
 #### <a name="to-start-the-tableadapter-query-configuration-wizard-with-a-new-query"></a>Starten Sie den Konfigurations-Assistenten für TableAdapter-Abfrage mit einer neuen Abfrage  
   
-1.  Öffnen Sie das Dataset in den **Dataset-Designer**.  
+1. Öffnen Sie das Dataset im **DataSet-Designer**.  
   
-2.  Wenn Sie eine neue Abfrage erstellen, ziehen Sie eine **Abfrage** -Objekt aus der **DataSet** auf der Registerkarte die **Toolbox** auf eine <xref:System.Data.DataTable>, oder wählen Sie **AbfrageHinzufügen**im Kontextmenü des TableAdapter. Sie können auch ziehen eine **Abfrage** Objekt auf einen leeren Bereich, der die **Dataset-Designer**, erstellt einen TableAdapter ohne einen zugehörigen <xref:System.Data.DataTable>. Diese Abfragen können nur zur Update-, INSERT- oder einzelnen (skalaren) Wert zurück, die oder Befehle für die Datenbank zu löschen.  
+2. Wenn Sie eine neue Abfrage erstellen, ziehen Sie eine **Abfrage** -Objekt aus der **DataSet** auf der Registerkarte die **Toolbox** auf eine <xref:System.Data.DataTable>, oder wählen Sie **AbfrageHinzufügen**im Kontextmenü des TableAdapter. Sie können auch ziehen eine **Abfrage** Objekt auf einen leeren Bereich, der die **Dataset-Designer**, erstellt einen TableAdapter ohne einen zugehörigen <xref:System.Data.DataTable>. Diese Abfragen können nur zur Update-, INSERT- oder einzelnen (skalaren) Wert zurück, die oder Befehle für die Datenbank zu löschen.  
   
-3.  Auf der **wählen Sie Ihre Datenverbindung** Bildschirm Wählen oder erstellen Sie die Verbindung, die die Abfrage verwendet.  
+3. Auf der **wählen Sie Ihre Datenverbindung** Bildschirm Wählen oder erstellen Sie die Verbindung, die die Abfrage verwendet.  
   
     > [!NOTE]
-    >  Dieser Bildschirm wird nur angezeigt, wenn der Designer nicht die richtige zu verwendende Verbindung bestimmen kann, oder wenn keine Verbindungen verfügbar sind.  
+    > Dieser Bildschirm wird nur angezeigt, wenn der Designer nicht die richtige zu verwendende Verbindung bestimmen kann, oder wenn keine Verbindungen verfügbar sind.  
   
-4.  Auf der **wählen Sie einen Befehlstyp aus** aus der folgenden Methoden zum Abrufen von Daten aus der Datenbank wählen:  
+4. Auf der **wählen Sie einen Befehlstyp aus** aus der folgenden Methoden zum Abrufen von Daten aus der Datenbank wählen:  
   
-    -   **Verwenden von SQL-Anweisungen** ermöglicht es Ihnen, geben Sie eine SQL-Anweisung, um die Daten aus der Datenbank auszuwählen.  
+    - **Verwenden von SQL-Anweisungen** ermöglicht es Ihnen, geben Sie eine SQL-Anweisung, um die Daten aus der Datenbank auszuwählen.  
   
-    -   **Erstellen Sie neue gespeicherte Prozedur** können Sie den Assistenten erstellen Sie eine neue gespeicherte Prozedur (in der Datenbank) auf Grundlage der angegebenen SELECT-Anweisung.  
+    - **Erstellen Sie neue gespeicherte Prozedur** können Sie den Assistenten erstellen Sie eine neue gespeicherte Prozedur (in der Datenbank) auf Grundlage der angegebenen SELECT-Anweisung.  
   
-    -   **Vorhandene gespeicherte Prozeduren verwenden** können Sie eine vorhandene gespeicherte Prozedur ausführen, bei der Ausführung der Abfrage.  
+    - **Vorhandene gespeicherte Prozeduren verwenden** können Sie eine vorhandene gespeicherte Prozedur ausführen, bei der Ausführung der Abfrage.  
   
 #### <a name="to-start-the-tableadapter-query-configuration-wizard-on-an-existing-query"></a>Zum Starten des TableAdapter-Abfrage-Konfigurations-Assistenten auf eine vorhandene Abfrage  
   
--   Wenn Sie eine vorhandene TableAdapter-Abfrage bearbeiten, mit der rechten Maustaste in der Abfrage aus, und wählen Sie dann **konfigurieren** aus dem Kontextmenü.  
+- Wenn Sie eine vorhandene TableAdapter-Abfrage bearbeiten, mit der rechten Maustaste in der Abfrage aus, und wählen Sie dann **konfigurieren** aus dem Kontextmenü.  
   
     > [!NOTE]
-    >  Mit der rechten Maustaste in der Hauptabfrage des TableAdapter wird den TableAdapter und <xref:System.Data.DataTable> Schema. Mit der rechten Maustaste auf einen TableAdapter einer weiteren Abfrage, wird jedoch nur die ausgewählte Abfrage konfiguriert. Die **TableAdapter-Konfigurations-Assistenten** Neukonfiguration die Definition des TableAdapter, während die Konfigurations-Assistent die TableAdapter-Abfragen nur die ausgewählte Abfrage wird.  
+    > Mit der rechten Maustaste in der Hauptabfrage des TableAdapter wird den TableAdapter und <xref:System.Data.DataTable> Schema. Mit der rechten Maustaste auf einen TableAdapter einer weiteren Abfrage, wird jedoch nur die ausgewählte Abfrage konfiguriert. Die **TableAdapter-Konfigurations-Assistenten** Neukonfiguration die Definition des TableAdapter, während die Konfigurations-Assistent die TableAdapter-Abfragen nur die ausgewählte Abfrage wird.  
   
 #### <a name="to-add-a-global--query-to-a-tableadapter"></a>Zum Hinzufügen einer globalen Abfrage einem TableAdapter  
   
--   *Globale Abfragen* sind SQL-Abfragen, die entweder einen einzelnen (skalaren) Wert oder keinen Wert zurückgeben. In der Regel führen globale Funktionen Datenbankvorgänge, z. B. einfügungen, Updates, löscht. Sie aggregiert auch Informationen, z. B. die Anzahl der Kunden in einer Tabelle oder die Gesamtbetrag der Gebühren für alle Elemente in einer bestimmten Reihenfolge.  
+- *Globale Abfragen* sind SQL-Abfragen, die entweder einen einzelnen (skalaren) Wert oder keinen Wert zurückgeben. In der Regel führen globale Funktionen Datenbankvorgänge, z. B. einfügungen, Updates, löscht. Sie aggregiert auch Informationen, z. B. die Anzahl der Kunden in einer Tabelle oder die Gesamtbetrag der Gebühren für alle Elemente in einer bestimmten Reihenfolge.  
   
      Hinzufügen von globalen Abfragen durch Ziehen einer **Abfrage** -Objekt aus der **DataSet** Registerkarte die **Toolbox** auf einen leeren Bereich des der **Dataset-Designer**.  
   
--   Geben Sie eine Abfrage, die die gewünschte Aufgabe, z. B. ausführt `SELECT COUNT(*) AS CustomerCount FROM Customers`.  
+- Geben Sie eine Abfrage, die die gewünschte Aufgabe, z. B. ausführt `SELECT COUNT(*) AS CustomerCount FROM Customers`.  
   
     > [!NOTE]
-    >  Sie ziehen ein **Abfrage** Objekt direkt auf die **Dataset-Designer** erstellt eine Methode, die nur einen Skalarwert (Einzelwert) zurückgibt. Während die Abfrage oder gespeicherte Prozedur, die Sie auswählen, mehr als einen einzelnen Wert zurückgeben kann, gibt die Methode, die vom Assistenten erstellt wird nur einen einzelnen Wert zurück. Die Abfrage kann z. B. die erste Spalte der ersten Zeile der zurückgegebenen Daten zurückgeben.  
+    > Sie ziehen ein **Abfrage** Objekt direkt auf die **Dataset-Designer** erstellt eine Methode, die nur einen Skalarwert (Einzelwert) zurückgibt. Während die Abfrage oder gespeicherte Prozedur, die Sie auswählen, mehr als einen einzelnen Wert zurückgeben kann, gibt die Methode, die vom Assistenten erstellt wird nur einen einzelnen Wert zurück. Die Abfrage kann z. B. die erste Spalte der ersten Zeile der zurückgegebenen Daten zurückgeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Füllen von Datasets mit TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
-

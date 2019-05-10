@@ -1,38 +1,51 @@
 ---
 title: Erstellen einer ersten Konsolen-App mit Visual Basic
 description: Hier finden Sie eine ausführliche Anleitung zum Erstellen einer einfachen „Hallo Welt“-Konsolenanwendung mit Visual Basic in Visual Studio.
-ms.date: 12/10/2017
-ms.prod: visual-studio-dev15
 ms.custom: seodec18
+ms.date: 03/23/2019
+ms.technology: vs-ide-general
+ms.prod: visual-studio-windows
 ms.topic: quickstart
 ms.devlang: vb
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 136a3b00b689bfcdac50464a0b0091a476b5b434
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2ecfba0dceb7e7695a077464151e50f4dc042526
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917029"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953582"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Schnellstart: Erstellen einer ersten Konsolenanwendung in Visual Studio mit Visual Basic
 
 Mithilfe dieser Einführung in die integrierte Entwicklungsumgebung (IDE) von Visual Studio, die fünf bis zehn Minuten Ihrer Zeit in Anspruch nehmen wird, können Sie eine einfache Visual Basic-Anwendung erstellen, die in der Konsole ausgeführt werden kann.
 
-Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) kostenlos herunterladen.
+::: moniker range="vs-2017"
+
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) kostenlos herunterladen.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) kostenlos herunterladen.
+
+::: moniker-end
 
 ## <a name="create-a-project"></a>Erstellen eines Projekts
 
 Erstellen Sie zunächst ein Visual Basic-Anwendungsprojekt. Der Projekttyp enthält, schon bevor Sie mit der Bearbeitung beginnen, alle Vorlagendateien, die Sie benötigen.
 
+::: moniker range="vs-2017"
+
 1. Öffnen Sie Visual Studio 2017.
 
-2. Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**.
+2. Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
 
 3. Erweitern Sie im Dialogfeld **Neues Projekt** links den Eintrag **Visual Basic**, und klicken Sie auf **.NET Core**. Wählen Sie im mittleren Bereich die Option **Konsolenanwendung (.NET Core)** aus. Nennen Sie dann das Projekt *HalloWelt*.
 
@@ -44,7 +57,45 @@ Erstellen Sie zunächst ein Visual Basic-Anwendungsprojekt. Der Projekttyp enth�
 
      Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Plattformübergreifende .NET Core-Entwicklung** aus, und klicken Sie dann auf **Anpassen**.
 
-     ![Workload „Plattformübergreifende .NET Core-Entwicklung“ im Visual Studio-Installer](../ide/media/dot-net-core-xplat-dev-workload.png)
+     ![Workload für die plattformübergreifende .NET Core-Entwicklung im Visual Studio-Installer](../ide/media/dot-net-core-xplat-dev-workload.png)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+> [!NOTE]
+> Einige der Screenshots in diesem Schnellstart verwenden das dunkle Design. Wenn Sie ebenfalls das dunkle Design verwenden möchten, finden Sie auf der Seite [Personalisieren der Visual Studio-IDE und des Editors](quickstart-personalize-the-ide.md) entsprechende Anweisungen.
+
+1. Öffnen Sie Visual Studio 2019.
+
+1. Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
+
+   ![Anzeigen des Fensters „Neues Projekt erstellen“](../get-started/media/vs-2019/create-new-project-dark-theme.png)
+
+1. Geben Sie im Fenster **Neues Projekt erstellen** im Suchfeld *Konsole* ein. Wählen Sie anschließend in der Liste der Sprachen **Visual Basic** und dann aus der Liste der Plattformen **Windows** aus. 
+
+   Nachdem Sie die Sprach- und Plattformfilter angewendet haben, wählen Sie die Vorlage **Konsolen-App (.NET Core)** und dann **Weiter** aus.
+
+   ![Auswählen der Visual Basic-Vorlage für die Konsolen-App (.NET Framework)](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-console-net-core-filtered.png)
+
+   > [!NOTE]
+   > Wenn Sie die **Konsolen-App (.NET Core)** nicht sehen, können Sie sie aus dem Fenster **Neues Projekt erstellen** installieren. Wählen Sie in der Meldung **Sie finden nicht, wonach Sie suchen?** den Link **Weitere Tools und Features installieren** aus.
+   >
+   > ![Link „Weitere Tools und Features installieren“ aus der Meldung „Sie finden nicht, wonach Sie suchen“ im Fenster „Neues Projekt erstellen“](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > 
+   > Wählen Sie anschließend im Visual Studio-Installer die Workload **Plattformübergreifende .NET Core-Entwicklung** aus.
+   >
+   > ![Workload für die plattformübergreifende .NET Core-Entwicklung im Visual Studio-Installer](../get-started/media/dot-net-core-xplat-dev-workload.png)
+   >
+   > Wählen Sie anschließend die Schaltfläche **Ändern** im Visual Studio-Installer aus. Möglicherweise werden Sie aufgefordert, Ihre Arbeit zu speichern; wenn dies der Fall ist, führen Sie das aus. Wählen Sie als Nächstes **Weiter** aus, um die Workload zu installieren. Kehren Sie dann zu Schritt 2 in dieser Vorgehensweise „[Projekt erstellen](#create-a-project)“ zurück.
+
+1. Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld **Projektname** *WhatIsYourName* ein. Wählen Sie anschließend **Erstellen** aus.
+
+   ![Benennen Sie Ihr Projekt im Fenster „Neues Projekt konfigurieren“ „WhatIsYourName“](../get-started/visual-basic/media/vs-2019/vb-name-your-project-whatname.png)
+
+   Visual Studio öffnet Ihr neues Projekt.
+
+::: moniker-end
 
 ## <a name="create-the-application"></a>Erstellen der Anwendung
 

@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 01/02/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Mögliche Fehler beim Anmelden, wenn Aliase oder Anzeigenamen verwendet werden.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3743cc11d5001d12ba4cd030ddc0cfc914db3131
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: ac3f9df365e0b7924b615c2ae8cbb70d93d04948
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817437"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946171"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Mögliche Fehler beim Anmelden bei Visual Studio-Abonnements bei Verwendung von Aliasen
 
@@ -30,7 +28,7 @@ Aliasing kann auftreten, wenn ein Unternehmen über einen Microsoft Online Servi
 
 Als Administrator haben Sie zwei Möglichkeiten, um sicherzustellen, dass die Anmeldung Ihrer Abonnenten bei [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) erfolgreich ist.
 - Die erste (empfohlene) Option ist die Nutzung des Verzeichniskontos als zugewiesene Adresse im Volume Licensing Service Center (VLSC). Weitere Informationen hierzu finden Sie in diesem Artikel im Abschnitt [Zuweisen von Abonnenten zu einem Verzeichniskonto](#assigning-subscribers-to-a-directory-account).
-- Die zweite (weniger sichere) Option erlaubt es Ihren Abonnenten, ihre Geschäfts-, Schul- oder Uni-E-Mail-Adresse mit einem „persönlichen“ Konto zu verknüpfen (auch Microsoft-Konto oder Microsoft Account (MSA) genannt). Weitere Informationen hierzu finden Sie in diesem Artikel im Abschnitt [Festlegen eines Geschäfts-, Schul- oder Unikontos als persönliches Konto](#defining-a-work-or-school-account-as-a-personal-account ).
+- Die zweite (weniger sichere) Option erlaubt es Ihren Abonnenten, ihre Geschäfts-, Schul- oder Uni-E-Mail-Adresse mit einem „persönlichen“ Konto zu verknüpfen (auch Microsoft-Konto oder Microsoft Account (MSA) genannt). Weitere Informationen hierzu finden Sie in diesem Artikel im Abschnitt [Festlegen eines Geschäfts-, Schul- oder Unikontos als persönliches Konto](#defining-a-work-or-school-account-as-a-personal-account).
 
 > [!NOTE]
 > Sobald Ihr Unternehmen zum neuen [Verwaltungsportal](https://manage.visualstudio.com) für Visual Studio-Abonnements migriert ist, können Sie die Vorteile der neuen Administrationsfunktionen nutzen. Diese ermöglichen es Ihnen, sowohl Verzeichnis- als auch E-Mail-Adressen als Teil des Abonnentenprofils anzugeben. Weitere Informationen zur [Migration](https://support.microsoft.com/help/4013930/visual-studio-subscriptions-administrator-migration-details).
@@ -52,7 +50,6 @@ Führen Sie die folgenden Schritte aus, um einen neuen Abonnenten mit einem Verz
 
     > [!div class="mx-imgBorder"]
     > ![Menü „Abonnements“](_img//vlsc/vlsc-subscriptions.png)
-
 
 3. Klicken Sie auf die mit dem Visual Studio-Abonnement verknüpfte **Vertragsnummer**.
 
@@ -84,21 +81,23 @@ Führen Sie die folgenden Schritte aus, um einen vorhandenen Abonnenten mit eine
 
 Da die Begrüßungs-E-Mail Ihren Abonnenten nicht erfolgreich erreichen wird, kopieren Sie die unten stehende Nachricht, um diese in einer E-Mail an den Abonnenten zu senden. Ersetzen Sie „%WORT%“ durch die entsprechenden Informationen für jeden Abonnenten.
 
------------ Kopieren Sie Folgendes (Strg+C) -----------
+```
+----------- Copy Below (Ctrl+C) -----------
 
-Hallo %ABONNENTENNAME%,
+Hello %SUBSCRIBER NAME%
 
-Ihnen wurde ein Visual Studio-Abonnement zugewiesen. Besuchen Sie https://my.visualstudio.com, und melden Sie sich mit Ihrer Adresse „%VERZEICHNISADRESSE%“ an, um Ihr Abonnement zu aktivieren und darauf zuzugreifen.
+You have been assigned a Visual Studio subscription. Please visit https://my.visualstudio.com, and log in with your %DIRECTORY ADDRESS% address to activate and access your subscription.
 
-Wenn Sie Probleme haben, wenden Sie sich an das Supportteam (https://visualstudio.microsoft.com/subscriptions/support/).
+If you’re having trouble, please contact the support team (https://visualstudio.microsoft.com/subscriptions/support/).
 
-Wählen Sie unten auf der Seite Folgendes aus:
-   - Konten, Abonnements und Abrechnungssupport
-   - Geben Sie als Problem an, dass Sie Support bei der Anmeldung für ein Abonnement benötigen.
-   - Wählen Sie das entsprechende Land.
-   - Wählen Sie die gewünschte Option für persönlichen Support.
+At the bottom of the page, select the following:
+   - Accounts, Subscriptions, and Billing Support
+   - From Issue, choose Subscription sign in support
+   - Choose the appropriate Country
+   - Select the desired Assisted Support option
 
------------ Textende -----------
+----------- End Copy -----------
+```
 
 ## <a name="defining-a-work-or-school-account-as-a-personal-account"></a>Festlegen eines Geschäfts-, Schul- oder Unikontos als persönliches Konto
 
@@ -129,35 +128,37 @@ Nachdem einem Abonnenten ein Abonnement zugewiesen wurde, wird dieser per E-Mail
 
 Im oben dargelegten Szenario erhalten Abonnenten zwar eine Begrüßungs-E-Mail, können sich aber aufgrund von Aliasing möglicherweise nicht anmelden.  Sie können den unten stehenden Text verwenden, um Ihre Abonnenten über die oben beschriebenen Schritte zu informieren und, falls erforderlich, Supportoptionen zu empfehlen.  Ersetzen Sie „%WORT%“ durch die entsprechenden Informationen für jeden Abonnenten.
 
------------ Kopieren Sie Folgendes (Strg+C) -----------
+```
+----------- Copy Below (Ctrl+C) -----------
 
-Hallo %ABONNENTENNAME%,
+Hello %SUBSCRIBER NAME%
 
-Ihnen wurde ein Visual Studio-Abonnement zugewiesen, und Sie wurden möglicherweise in Ihrer Begrüßungs-E-Mail aufgefordert, sich bei https://my.visualstudio.com anzumelden.  Damit Sie alle Vorteile Ihres Abonnements über diese Website nutzen können, benötigen wir jedoch Ihre Mithilfe. Führen Sie bitte zunächst einige zusätzliche Schritte aus, um auf die Website zugreifen zu können.  Folgen Sie den unten stehenden Anweisungen, um ein „Microsoft-Konto“ zu erstellen, das mit unserer Firmen-E-Mail-Adresse verknüpft ist.  Anschließend können Sie Ihre E-Mail-Adresse verwenden, um auf die Abonnementvorteile zuzugreifen.
-1. Besuchen Sie https://my.visualstudio.com.
+You have been assigned a Visual Studio subscription, and may have been directed to log into https://my.visualstudio.com based on your Welcome email.  While this is the correct website for consuming benefits, our organization requires you to take a few extra steps before you can access the site.  Please follow the below instructions to help you create a “Microsoft Account” that is tied to our corporate email address.  Once these steps are completed, you will use your email address to access the Subscription benefits.
+1. Visit https://my.visualstudio.com
 
-2. Klicken Sie rechts auf „Neues Microsoft-Konto erstellen“.
+2. Click Create new Microsoft Account on the right hand side
 
-3. Füllen Sie das Formular aus:
-   - Geben Sie im Feld someone@example.com Ihre Firmen-E-Mail-Adresse ein.
-   - Geben Sie ein Kennwort ein.
-   - Wählen Sie Ihre Werbevoreinstellungen aus.
-   - Klicken Sie auf Weiter.
+3. Complete the Form:
+   - Use your corporate email address in the someone@example.com box
+   - Enter a password
+   - Select your promotional preference
+   - Click Next
 
-4. Schließen Sie die Schritte zur Kontovalidierung ab.
+4. Complete the account validation steps
 
-5. Füllen Sie ggf. das Visual Studio-Profil aus.
+5. If necessary, complete the Visual Studio profile
 
-6. Ihre Vorteile sollten jetzt angezeigt werden.
+6. You should now see your benefits
 
-Hinweis: Wenn Sie künftig die Website https://my.visualstudio.com besuchen, werden Sie möglicherweise aufgefordert, das Konto auszuwählen, dass Sie verwenden möchten (z.B. „Geschäfts-, Schul- oder Unikonto“ oder „Persönliches Konto“).  Nachdem Sie die obigen Schritte ausgeführt haben, müssen Sie die Option „Persönliches Konto“ nutzen.
+Note:  When visiting https://my.visualstudio.com in the future, you may be prompted to select which account you’d like to use (e.g. “Work or School Account” or “Personal Account”).  After following the steps above, you will need to leverage the “Personal Account” option.
 
-Wenn Sie Probleme haben, wenden Sie sich an das Supportteam (https://visualstudio.microsoft.com/subscriptions/support/).
+If you’re having trouble, please contact the support team (https://visualstudio.microsoft.com/subscriptions/support/).
 
-Wählen Sie unten auf der Seite Folgendes aus:
-   - Konten, Abonnements und Abrechnungssupport
-   - Geben Sie als Problem an, dass Sie Support bei der Anmeldung für ein Abonnement benötigen.
-   - Wählen Sie das entsprechende Land.
-   - Wählen Sie die gewünschte Option für persönlichen Support.
+At the bottom of the page, select the following:
+   - Accounts, Subscriptions, and Billing Support
+   - From Issue, choose Subscription sign in support
+   - Choose the appropriate Country
+   - Select the desired Assisted Support option
 
------------ Textende -----------
+----------- End Copy -----------
+```

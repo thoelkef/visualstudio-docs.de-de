@@ -1,14 +1,9 @@
 ---
 title: Shader-Designer | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.effectdesigner
 - vs.graphics.shaderdesigner
@@ -16,13 +11,13 @@ ms.assetid: 5db09a16-b82c-4ba3-8ec9-630cdc109397
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ac752d0b85a45193fe4aafb55e33ec23e26aed6a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 00b3a24e2e10672a2f25fdf42a3993f75c378c86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432585"
 ---
 # <a name="shader-designer"></a>Shader-Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,13 +41,13 @@ In diesem Dokument wird beschrieben, wie mit dem [!INCLUDE[vsprvs](../includes/v
   
 #### <a name="to-add-a-dgsl-shader-to-your-project"></a>So fügen Sie einen DGSL-Shader zu Ihrem Projekt hinzu  
   
-1.  Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü des Projekts, zu dem Sie den Shader hinzufügen möchten, und wählen Sie dann **Hinzufügen** und **Neues Element** aus.  
+1. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü des Projekts, zu dem Sie den Shader hinzufügen möchten, und wählen Sie dann **Hinzufügen** und **Neues Element** aus.  
   
-2.  Wählen Sie im Dialogfeld **Neues Element hinzufügen** unter **Installiert** die Option **Grafiken** und anschließend **Visual Shader-Diagramm (.dgsl)** aus.  
+2. Wählen Sie im Dialogfeld **Neues Element hinzufügen** unter **Installiert** die Option **Grafiken** und anschließend **Visual Shader-Diagramm (.dgsl)** aus.  
   
-3.  Geben Sie den **Namen** der Shader-Datei und den **Speicherort** an, an dem sie erstellt werden soll.  
+3. Geben Sie den **Namen** der Shader-Datei und den **Speicherort** an, an dem sie erstellt werden soll.  
   
-4.  Wählen Sie die Schaltfläche **Hinzufügen** aus.  
+4. Wählen Sie die Schaltfläche **Hinzufügen** aus.  
   
 ### <a name="the-default-shader"></a>Der Standard-Shader  
  Jedes Mal, wenn Sie einen DGSL-Shader erstellen, startet er als minimaler Shader, der nur über einen Knoten **Punktfarbe** verfügt, der mit dem Knoten **Endgültige Farbe** verbunden ist. Obwohl dieser Shader vollständig und funktional ist, tut er nicht viel. Der erste Schritt beim Erstellen eines funktionierenden Shaders ist daher oft, den Knoten **Punktfarbe** zu löschen oder dessen Verbindung mit dem Knoten **Endgültige Farbe** zu trennen, um Platz für andere Knoten zu schaffen.  
@@ -86,29 +81,29 @@ In diesem Dokument wird beschrieben, wie mit dem [!INCLUDE[vsprvs](../includes/v
 |**Vorschau mit Ebene**|Wenn diese aktiviert ist, wird ein Modell einer Ebene für die Vorschau des Shaders verwendet. Es kann immer nur eine Vorschauform gleichzeitig aktiviert sein.|  
 |**Werkzeugkasten**|Zeigt die **Toolbox** entweder an oder blendet sie aus.|  
 |**Eigenschaften**|Zeigt das Fenster **Eigenschaften** entweder an oder blendet es aus.|  
-|**Erweitert**|Enthält erweiterte Befehle und Optionen.<br /><br /> **Exportieren**: Ermöglicht das Exportieren eines Shaders in verschiedene Formate.<br /><br /> **Exportieren als**: Exportiert den Shader entweder als HLSL-Quellcode oder als kompilierten Shader-Bytecode. Weitere Informationen zum Exportieren von Shadern finden Sie unter [Vorgehensweise: Exportieren eines Shaders](../designers/how-to-export-a-shader.md).<br /><br /> **Grafik-Engines**: Ermöglicht die Auswahl des Renderers, der für die Anzeige der Entwurfsoberfläche verwendet wird<br /><br /> **Rendern mit D3D11**: Verwendet Direct3D 11 zum Rendern der Entwurfsoberfläche des Shader-Designers<br /><br /> **Rendern mit D3D11WARP**: Verwendet Direct3D 11 Windows Advanced Rasterization Platform (WARP) zum Rendern der Entwurfsoberfläche des Shader-Designers.<br /><br /> **Ansicht**: Ermöglicht die Auswahl zusätzlicher Informationen über den Shader-Designer.<br /><br /> **Bildfrequenz**: Wenn diese aktiviert ist, wird in der rechten oberen Ecke der Entwurfsoberfläche die Bildfrequenz angezeigt. Die Einzelbildrate ist die Anzahl von Bildern, die pro Sekunde gezeichnet werden.  Diese Option ist hilfreich, wenn Sie die Option **Real-Time Rendering Mode** (Echtzeit-Renderingmodus) aktivieren.|  
+|**Erweitert**|Enthält erweiterte Befehle und Optionen.<br /><br /> **Exportieren**: Ermöglicht das Exportieren eines Shaders in verschiedene Formate.<br /><br /> **Exportieren als**: Exportiert den Shader entweder als HLSL-Quellcode oder als kompilierten Shader-Bytecode. Weitere Informationen zum Exportieren von Shadern finden Sie unter [Vorgehensweise: Exportieren eines Shaders](../designers/how-to-export-a-shader.md).<br /><br /> **Grafik-Engines**: Ermöglicht die Auswahl des Renderers, der für die Anzeige der Entwurfsoberfläche verwendet wird.<br /><br /> **Mit D3D11 rendern**: Verwendet Direct3D 11 zum Rendern der Entwurfsoberfläche des Shader-Designers.<br /><br /> **Mit D3D11WARP rendern**: Verwendet Direct3D 11 Windows Advanced Rasterization Platform (WARP) zum Rendern der Entwurfsoberfläche des Shader-Designers.<br /><br /> **Ansicht**: Ermöglicht die Auswahl zusätzlicher Informationen über den Shader-Designer.<br /><br /> **Framerate**: Wenn diese aktiviert ist, wird in der rechten oberen Ecke der Entwurfsoberfläche die Framerate angezeigt. Die Einzelbildrate ist die Anzahl von Bildern, die pro Sekunde gezeichnet werden.  Diese Option ist hilfreich, wenn Sie die Option **Real-Time Rendering Mode** (Echtzeit-Renderingmodus) aktivieren.|  
   
 > [!TIP]
->  Klicken Sie zum erneuten Ausführen des letzten Befehls auf die Schaltfläche **Erweitert**.  
+> Klicken Sie zum erneuten Ausführen des letzten Befehls auf die Schaltfläche **Erweitert**.  
   
 ### <a name="working-with-nodes-and-connections"></a>Arbeiten mit Knoten und Verbindungen  
  Verwenden Sie den Modus **Auswählen**, um Knoten hinzuzufügen, zu entfernen, neu anzuordnen, zu verbinden und zu konfigurieren. So werden diese grundlegenden Vorgänge ausgeführt:  
   
 ##### <a name="to-perform-basic-operations-in-select-mode"></a>Ausführen von grundlegenden Vorgängen im Modus „Auswählen“  
   
--   Gehen Sie dabei folgendermaßen vor:  
+- Gehen Sie dabei folgendermaßen vor:  
   
-    -   Um einen Knoten zum Diagramm hinzuzufügen, wählen Sie diesen in der **Toolbox** aus, und verschieben Sie ihn anschließend auf die Entwurfsoberfläche.  
+    - Um einen Knoten zum Diagramm hinzuzufügen, wählen Sie diesen in der **Toolbox** aus, und verschieben Sie ihn anschließend auf die Entwurfsoberfläche.  
   
-    -   Um einen Knoten aus dem Diagramm zu entfernen, wählen Sie ihn aus, und drücken Sie dann die ENTF-TASTE.  
+    - Um einen Knoten aus dem Diagramm zu entfernen, wählen Sie ihn aus, und drücken Sie dann die ENTF-TASTE.  
   
-    -   Um einen Knoten neu anzuordnen, wählen Sie diesen aus, und verschieben Sie ihn dann an einen neuen Speicherort.  
+    - Um einen Knoten neu anzuordnen, wählen Sie diesen aus, und verschieben Sie ihn dann an einen neuen Speicherort.  
   
-    -   Um zwei Knoten zu verbinden, verschieben Sie ein Ausgabeterminal eines Knotens in ein Eingabeterminal des anderen Knotens. Es können nur Terminals mit kompatiblen Typen verbunden werden. Eine Linie zwischen den Terminals zeigt die Verbindung.  
+    - Um zwei Knoten zu verbinden, verschieben Sie ein Ausgabeterminal eines Knotens in ein Eingabeterminal des anderen Knotens. Es können nur Terminals mit kompatiblen Typen verbunden werden. Eine Linie zwischen den Terminals zeigt die Verbindung.  
   
-    -   Um eine Verbindung zu entfernen, wählen Sie im Kontextmenü eines der verbundenen Terminals **Zeilen umbrechen** aus.  
+    - Um eine Verbindung zu entfernen, wählen Sie im Kontextmenü eines der verbundenen Terminals **Zeilen umbrechen** aus.  
   
-    -   Um die Eigenschaften eines Knotens zu konfigurieren, wählen Sie den Knoten aus, und geben Sie dann im Fenster **Eigenschaften** neue Werte für die Eigenschaften an.  
+    - Um die Eigenschaften eines Knotens zu konfigurieren, wählen Sie den Knoten aus, und geben Sie dann im Fenster **Eigenschaften** neue Werte für die Eigenschaften an.  
   
 ### <a name="previewing-shaders"></a>Anzeigen der Vorschau von Shadern  
  Damit Sie verstehen, wie ein Shader in Ihrer App angezeigt wird, können Sie konfigurieren, wie der Effekt in der Vorschau angezeigt wird. Um Ihre App anzupassen, können Sie eine aus mehreren Formen zum Rendern auswählen, Texturen und andere Materialparameter konfigurieren, die Animation von zeitbasierten Effekten aktivieren und die Vorschau aus verschiedenen Perspektiven untersuchen.  
@@ -118,9 +113,9 @@ In diesem Dokument wird beschrieben, wie mit dem [!INCLUDE[vsprvs](../includes/v
   
 ###### <a name="to-choose-a-preview-shape"></a>So wählen Sie eine Vorschauform aus  
   
--   Auf der **Shader-Designer-Modi**-Symbolleiste wählen Sie die gewünschte Form aus.  
+- Auf der **Shader-Designer-Modi**-Symbolleiste wählen Sie die gewünschte Form aus.  
   
-####  <a name="WWS_MaterialParameters"></a> Texturen und Materialparameter  
+#### <a name="WWS_MaterialParameters"></a> Texturen und Materialparameter  
  Viele Shader greifen auf Texturen und Materialeigenschaften zurück, um ein einheitliches Aussehen für jede Art von Objekt in Ihrer App zu erstellen. Um anzuzeigen, wie der Shader in Ihrer App aussieht, können Sie die Texturen und Materialeigenschaften, die zum Rendern der Vorschau verwendet werden, so einstellen, dass sie mit den Texturen und Parametern übereinstimmen, die Sie möglicherweise in Ihrer App verwenden.  
   
 ###### <a name="to-bind-a-different-texture-to-a-texture-register-or-to-modify-other-material-parameters"></a>So binden Sie eine andere Textur an ein Texturregister oder bearbeiten andere Materialparameter  
@@ -133,26 +128,26 @@ In diesem Dokument wird beschrieben, wie mit dem [!INCLUDE[vsprvs](../includes/v
   
 |Parameter|Eigenschaften|  
 |---------------|----------------|  
-|**Textur 1** – **Textur 8**|**Zugriff**: **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Dateiname**: Der vollständige Pfad der Texturdatei, die diesem Texturregister zugeordnet ist.|  
-|**Material (Umgebung)**|**Zugriff**: **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Wert**: Die diffuse Farbe des aktuellen Pixels aufgrund indirekter oder Umgebungsbeleuchtung.|  
-|**Material (Diffus)**|**Zugriff**: **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Wert**: Eine Farbe, die beschreibt, wie das aktuelle Pixel die direkte Beleuchtung streut.|  
-|**Material (Selbstleuchtend)**|**Zugriff**: **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Wert**: Die Farbeinwirkung des aktuellen Pixels aufgrund der selbsterzeugten Beleuchtung.|  
-|**Material (Glanz)**|**Zugriff**: **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Wert**: Eine Farbe, die beschreibt, wie das aktuelle Pixel die direkte Beleuchtung reflektiert.|  
-|**Material (Glanzkraft)**|**Zugriff**: **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Wert**: Der Exponent, mit dem die Intensität von Glanzlichtern auf dem aktuellen Pixel definiert wird.|  
+|**Textur 1** – **Textur 8**|**Zugriff**:                             **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Dateiname**: Der vollständige Pfad der Texturdatei, die diesem Texturregister zugeordnet ist.|  
+|**Material (Umgebung)**|**Zugriff**:                             **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Wert**: Die diffuse Farbe des aktuellen Pixels aufgrund indirekter – oder umgebungsbeleuchtung.|  
+|**Material (Diffus)**|**Zugriff**: **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Wert**:  Eine Farbe, die beschreibt, wie das aktuelle Pixel die direkte Beleuchtung streut.|  
+|**Material (Selbstleuchtend)**|**Zugriff**:                              **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Wert**: Die Farbeinwirkung des aktuellen Pixels aufgrund der selbsterzeugten Beleuchtung.|  
+|**Material (Glanz)**|**Zugriff**:                              **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Wert**: Eine Farbe, die beschreibt, wie das aktuelle Pixel die direkte Beleuchtung reflektiert.|  
+|**Material (Glanzkraft)**|**Zugriff**:                             **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Wert**: Der Exponent, mit dem die Intensität von Glanzlichtern auf dem aktuellen Pixel definiert wird.|  
   
 #### <a name="time-based-effects"></a>Zeitbasierte Effekte  
  Einige Shader verfügen über eine zeitbasierte Komponente, die den Effekt animiert. Um anzuzeigen, wie der Effekt in Aktion aussieht, muss die Vorschau mehrmals pro Sekunde aktualisiert werden. Standardmäßig wird die Vorschau nur aktualisiert, wenn der Shader geändert wird. Um dieses Verhalten zu ändern, sodass Sie zeitbasierte Effekte anzeigen können, müssen Sie das Echtzeit-Rendering aktivieren.  
   
 ###### <a name="to-enable-real-time-rendering"></a>So aktivieren Sie das Echtzeit-Rendering  
   
--   Wählen Sie auf der Shader-Designer-Symbolleiste **Real time Rendering** (Echtzeit-Rendering) aus.  
+- Wählen Sie auf der Shader-Designer-Symbolleiste **Real time Rendering** (Echtzeit-Rendering) aus.  
   
 #### <a name="examining-the-effect"></a>Untersuchen des Effekts  
  Viele Shader werden von Variablen wie dem Anzeigewinkel oder der direktionalen Beleuchtung beeinflusst. Um zu untersuchen, wie der Effekt reagiert, wenn sich diese Variablen ändern, können Sie die Vorschauform frei drehen und beobachten, wie sich der Shader verhält.  
   
 ###### <a name="to-rotate-the-shape"></a>So drehen Sie die Form  
   
--   Halten Sie die ALT-TASTE gedrückt, wählen Sie einen beliebigen Punkt auf der Entwurfsoberfläche aus, und verschieben Sie diesen.  
+- Halten Sie die ALT-TASTE gedrückt, wählen Sie einen beliebigen Punkt auf der Entwurfsoberfläche aus, und verschieben Sie diesen.  
   
 ### <a name="exporting-shaders"></a>Exportieren von Shadern  
  Bevor Sie einen Shader in Ihrer App verwenden können, müssen Sie ihn in ein Format exportieren, das DirectX versteht.  
@@ -193,6 +188,3 @@ In diesem Dokument wird beschrieben, wie mit dem [!INCLUDE[vsprvs](../includes/v
 |[Working with 3-D Assets for Games and Apps (Arbeiten mit 3D-Objekten für Spiele und Apps)](../designers/working-with-3-d-assets-for-games-and-apps.md)|Bietet eine Übersicht über die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Tools, die Sie bei der Arbeit mit Texturen und Bildern, 3D-Modellen und Shadereffekten verwenden können.|  
 |[Bildbearbeitung](../designers/image-editor.md)|Beschreibt, wie der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Bild-Editor für die Arbeit mit Texturen und Bildern verwendet wird.|  
 |[Modell-Editor](../designers/model-editor.md)|Beschreibt, wie der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Modell-Editor für die Arbeit mit 3D-Modellen verwendet wird.|
-
-
-

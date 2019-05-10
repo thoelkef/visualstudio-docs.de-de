@@ -1,26 +1,21 @@
 ---
 title: Projekt Untertypen Entwurf | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project subtypes, design
 ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
 caps.latest.revision: 33
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 96ab44df6512b4288cf01f4c1f99d435a9c24bd5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0e7cd96324e5a2bbd6c9b0acf4125bc0450cfd06
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806125"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430541"
 ---
 # <a name="project-subtypes-design"></a>Entwurf von Projektuntertypen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,11 +24,11 @@ Projektuntertypen können VSPackages, Projekte, die basierend auf der Microsoft 
   
  In den folgenden Themen beschreiben den grundlegenden Aufbau und die Implementierung von Projektuntertypen:  
   
--   Untertyp Projektentwurf.  
+- Untertyp Projektentwurf.  
   
--   Die Aggregation mit mehreren Ebenen.  
+- Die Aggregation mit mehreren Ebenen.  
   
--   Unterstützende Schnittstellen.  
+- Unterstützende Schnittstellen.  
   
 ## <a name="project-subtype-design"></a>Untertyp Projektentwurf  
  Die Initialisierung von einem Projektuntertyp erfolgt durch das Zusammenfassen der Hauptseite <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> Objekte. Diese Aggregation ermöglicht einem Projektuntertyp zu überschreiben, oder erhöhen die meisten Funktionen des Basisprojekts. Projektuntertypen Abrufen der ersten Gelegenheit verlassen, Eigenschaften, die mit behandeln <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>, Befehle mit <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>, und Verwenden von Project Item Management <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>. Projektuntertypen können erweitern:  
@@ -69,18 +64,18 @@ Mit mehreren Ebenen Projektuntertyp.
  Die folgende Abbildung konzentriert sich auf die Automation-Extender-Implementierung, die projektkonfigurationssuchobjekt vor allem von Projektuntertypen verwendet werden, um das Basisprojektsystem zu erweitern.  
   
  ![Grafik zu VS-Projekttyp Automatisierungsextender](../../extensibility/internals/media/vs-projectflavorautoextender.gif "VS_ProjectFlavorAutoExtender")  
-Projekt-Untertyp Automatisierungsextender.  
+Project Subtype Automation Extender.  
   
  Projektuntertypen können das Basisprojektsystem durch Erweitern des Automatisierungsmodells für das Objekt weiter erweitern. Diese werden als Teil des DTE-Automatisierungsobjekt definiert und dienen zum Erweitern der Project-Objekt, das `ProjectItem` Objekt und die `Configuration` Objekt. Weitere Informationen finden Sie unter [Erweitern des Objektmodells des Projekts Base](../../extensibility/internals/extending-the-object-model-of-the-base-project.md).  
   
 ## <a name="multi-level-aggregation"></a>Mit mehreren Ebenen Aggregation  
  Eine Implementierung der Projekt-Untertyp, die eine niedrigere Ebene Projektuntertyp umschließt muss kooperativ programmiert werden, um die ordnungsgemäße Funktion den inneren Projektuntertyp zulassen. Eine Liste der Aufgaben Programmieren enthält:  
   
--   Die <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> Implementierung des projektuntertyps, die den inneren Untertyp umschlossen wird, muss zum Delegieren der <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> der inneren Projektuntertyp-Implementierung für beide <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> Methoden.  
+- Die <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> Implementierung des projektuntertyps, die den inneren Untertyp umschlossen wird, muss zum Delegieren der <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> der inneren Projektuntertyp-Implementierung für beide <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> Methoden.  
   
--   Die <xref:EnvDTE80.IInternalExtenderProvider> Implementierung des projektuntertyps Wrapper muss an, die von der inneren Projektuntertyp delegieren. Insbesondere für die Implementierung der <xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A> muss die Zeichenfolge mit den Namen der von der inneren Projektuntertyp und verkettet Sie dann die Zeichenfolgen, die als Extender hinzufügen möchte.  
+- Die <xref:EnvDTE80.IInternalExtenderProvider> Implementierung des projektuntertyps Wrapper muss an, die von der inneren Projektuntertyp delegieren. Insbesondere für die Implementierung der <xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A> muss die Zeichenfolge mit den Namen der von der inneren Projektuntertyp und verkettet Sie dann die Zeichenfolgen, die als Extender hinzufügen möchte.  
   
--   Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> -Implementierung von einem Projektuntertyp Wrapper instanziieren muss die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg> Objekt der inneren Projektuntertyp und halten Sie ihn als einen privaten Delegaten, da nur das Basisprojekt projektkonfigurationsobjekt direkt weiß, dass der Wrapper Projektuntertyp-Konfigurationsobjekt vorhanden ist. Äußeren Projektuntertyp kann anfänglich Konfigurationsschnittstellen direkt behandeln möchte, und Delegieren dann den Rest der inneren Projektuntertyp-Implementierung von <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>.  
+- Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> -Implementierung von einem Projektuntertyp Wrapper instanziieren muss die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg> Objekt der inneren Projektuntertyp und halten Sie ihn als einen privaten Delegaten, da nur das Basisprojekt projektkonfigurationsobjekt direkt weiß, dass der Wrapper Projektuntertyp-Konfigurationsobjekt vorhanden ist. Äußeren Projektuntertyp kann anfänglich Konfigurationsschnittstellen direkt behandeln möchte, und Delegieren dann den Rest der inneren Projektuntertyp-Implementierung von <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>.  
   
 ## <a name="supporting-interfaces"></a>Unterstützende Schnittstellen  
  Das Basisprojekt delegiert Aufrufe zu unterstützenden Schnittstellen hinzugefügt, die von einem Projektuntertyp, um verschiedene Aspekte der Implementierung zu erweitern. Dies schließt die Projekt-Konfigurationsobjekte und den verschiedenen Eigenschaft Objektkatalog: Objekte erweitern. Diese Schnittstellen werden abgerufen, durch den Aufruf `QueryInterface` auf `punkOuter` (ein Zeiger auf die `IUnknown`) das äußere Projekt Untertyp-Aggregators.  
@@ -97,4 +92,3 @@ Projekt-Untertyp Automatisierungsextender.
 ## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>   
  <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>
-

@@ -1,14 +1,9 @@
 ---
 title: Elementmetadaten bei der Batchverarbeitung von Zielen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - batching [MSBuild]
 - MSBuild, target batching
@@ -17,18 +12,17 @@ ms.assetid: f3cc4186-6a4c-4161-bbe5-1ec638b4925b
 caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 011bb9b738aa135fd14c4dbddfb26f9cea2f7bd1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9dd6c297e00a305fbd1b13cf0fe0bd4a4f151f6b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232686"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665466"
 ---
 # <a name="item-metadata-in-target-batching"></a>Elementmetadaten bei der Batchverarbeitung von Zielen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] kann eine Abhängigkeitsanalyse für die Ein- und Ausgaben eines Buildziels durchführen. Wenn ermittelt wird, dass die Ein- oder Ausgaben des Ziels auf dem neuesten Stand sind, wird das Ziel übersprungen, und der Build wird fortgesetzt. `Target`-Elemente verwenden die `Inputs`- und `Outputs`-Attribute, um die Elemente festzulegen, die bei der Abhängigkeitsanalyse überprüft werden.  
   
  Wenn ein Ziel eine Aufgabe enthält, die Batchelemente als Eingaben oder Ausgaben verwendet, sollte in den `Inputs`- oder `Outputs`-Attributen des `Target`-Zielelements die Batchverarbeitung genutzt werden, sodass [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Batchelemente übersprungen werden, die bereits auf dem neuesten Stand sind.  
@@ -79,6 +73,3 @@ ms.locfileid: "49232686"
  [Batching (Batchverarbeitung)](../msbuild/msbuild-batching.md)   
  [Target-Element (MSBuild)](../msbuild/target-element-msbuild.md)   
  [Elementmetadaten bei der Batchverarbeitung von Aufgaben](../msbuild/item-metadata-in-task-batching.md)
-
-
-

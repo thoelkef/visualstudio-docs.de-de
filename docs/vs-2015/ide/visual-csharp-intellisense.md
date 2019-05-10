@@ -1,14 +1,9 @@
 ---
 title: Visual C#-IntelliSense | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense [J#]
 - Visual C#, IntelliSense
@@ -17,13 +12,13 @@ ms.assetid: 79ca304d-dc1e-4dc9-a2a6-7808df2e588e
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0d094a0272e5c90afa1a83a42543dd464f219a17
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8de573e8d5f46988868f18114fdabb07f62690e0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862202"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443168"
 ---
 # <a name="visual-c-intellisense"></a>Visual C#-IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,19 +38,19 @@ Visual C# IntelliSense ist beim Codieren im Editor und beim Debuggen im Befehlsf
   
 - [Erweiterungsmethoden](#ExtensionMethods)  
   
-  Die Vervollständigungsliste in C# ist darüber hinaus intelligent genug, irrelevante Token herauszufiltern und auf der Grundlage des Kontexts eine Vorauswahl unter den Token zu treffen. Weitere Informationen finden Sie unter [Gefilterte Vervollständigungslisten in c#](../misc/filtered-completion-lists-in-csharp.md) und [Vorauswahl von Elementen in c#](../misc/pre-selected-completion-list-items-in-csharp.md).  
+  Die Vervollständigungsliste in C# ist darüber hinaus intelligent genug, irrelevante Token herauszufiltern und auf der Grundlage des Kontexts eine Vorauswahl unter den Token zu treffen. Weitere Informationen finden Sie unter [Filtered Completion Lists in C# (Gefilterte Vervollständigungslisten in C#)](../misc/filtered-completion-lists-in-csharp.md) und unter [Pre-selected Completion List Items in C# (Vorauswahl von Elementen in Vervollständigungslisten in C#)](../misc/pre-selected-completion-list-items-in-csharp.md).  
   
-###  <a name="CodeSnippets"></a> Codeausschnitte in Vervollständigungslisten  
- In Visual C# enthält die Vervollständigungsliste Codeausschnitte, um Ihnen das einfache Einfügen vordefinierter Codetexte in das Programm zu ermöglichen. Codeausschnitte werden in der Vervollständigungsliste als [Shortcut-Element (IntelliSense-Codeausschnitte)](http://msdn.microsoft.com/en-us/052cc97a-5c70-42f8-b398-4c3adf670cfa) des Ausschnitts angezeigt.  Weitere Informationen über standardmäßig in Visual C# verfügbare Codeausschnitte finden Sie unter [Visual C#-Codeausschnitte](../ide/visual-csharp-code-snippets.md).  
+### <a name="CodeSnippets"></a> Codeausschnitte in Vervollständigungslisten  
+ In Visual C# enthält die Vervollständigungsliste Codeausschnitte, um Ihnen das einfache Einfügen vordefinierter Codetexte in das Programm zu ermöglichen. Codeausschnitte werden in der Vervollständigungsliste als [Shortcut-Element (IntelliSense-Codeausschnitte)](http://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa) des Ausschnitts angezeigt.  Weitere Informationen über standardmäßig in Visual C# verfügbare Codeausschnitte finden Sie unter [Visual C#-Codeausschnitte](../ide/visual-csharp-code-snippets.md).  
   
-###  <a name="Keywords"></a> Sprachschlüsselwörter in Vervollständigungslisten  
+### <a name="Keywords"></a> Sprachschlüsselwörter in Vervollständigungslisten  
  In Visual C# umfasst die Vervollständigungsliste zusätzlich Sprachschlüsselwörter. Weitere Informationen über Sprachschlüsselwörter in C# finden Sie unter [C#-Schlüsselwörter](http://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad).  
   
-###  <a name="ExtensionMethods"></a> Erweiterungsmethoden in Vervollständigungslisten  
+### <a name="ExtensionMethods"></a> Erweiterungsmethoden in Vervollständigungslisten  
  In Visual C# enthält die Vervollständigungsliste Erweiterungsmethoden innerhalb des jeweiligen Gültigkeitsbereichs.  
   
 > [!NOTE]
->  Von der Vervollständigungsliste werden nicht alle Erweiterungsmethoden für <xref:System.String>-Objekte angezeigt.  
+> Von der Vervollständigungsliste werden nicht alle Erweiterungsmethoden für <xref:System.String>-Objekte angezeigt.  
   
  Für Erweiterungsmethoden wird ein anderes Symbol als für Instanzenmethoden verwendet. Eine Liste der Symbole finden Sie unter [Symbole in der Klassenansicht und im Objektbrowser](../ide/class-view-and-object-browser-icons.md). Wenn sich eine Instanzenmethode und eine Erweiterungsmethode mit identischem Namen im selben Bereich befinden, zeigt die Vervollständigungsliste das Symbol für die Erweiterungsmethode an.  
   
@@ -64,23 +59,23 @@ Visual C# IntelliSense ist beim Codieren im Editor und beim Debuggen im Befehlsf
   
  In Visual C# werden die Vervollständigungslisten für folgende Elemente gefiltert:  
   
--   **Schnittstellen und Basisklassen** IntelliSense entfernt automatisch Elemente aus den Vervollständigungslisten für Schnittstellen und Basisklassen, und zwar sowohl aus Basisklassen- und Schnittstellenlisten für die Klassendeklaration als auch aus Einschränkungslisten. So werden Enumerationen in der Vervollständigungsliste für Basisklassen beispielsweise nicht angezeigt, da Enumerationen für Basisklassen nicht verwendet werden können. Die Vervollständigungsliste für Basisklassen enthält nur Schnittstellen und Namespaces.  Wenn Sie in der Liste ein Element auswählen und anschließend ein Komma eingeben, entfernt IntelliSense Basisklassen aus der Vervollständigungsliste, da Visual C# mehrfache Vererbung nicht unterstützt. Das gleiche Verhalten gilt auch für Einschränkungsklauseln.  
+- **Schnittstellen und Basisklassen** IntelliSense entfernt automatisch Elemente aus den Vervollständigungslisten für Schnittstellen und Basisklassen, und zwar sowohl aus Basisklassen- und Schnittstellenlisten für die Klassendeklaration als auch aus Einschränkungslisten. So werden Enumerationen in der Vervollständigungsliste für Basisklassen beispielsweise nicht angezeigt, da Enumerationen für Basisklassen nicht verwendet werden können. Die Vervollständigungsliste für Basisklassen enthält nur Schnittstellen und Namespaces.  Wenn Sie in der Liste ein Element auswählen und anschließend ein Komma eingeben, entfernt IntelliSense Basisklassen aus der Vervollständigungsliste, da Visual C# mehrfache Vererbung nicht unterstützt. Das gleiche Verhalten gilt auch für Einschränkungsklauseln.  
   
--   **Attribute:** Beim Anwenden eines Attributs auf einen Typ wird die Vervollständigungsliste gefiltert, sodass sie nur die Typen enthält, die von den Namespaces abgeleitet werden, in denen diese Typen enthalten sind, z.B. <xref:System.Attribute>.  
+- **Attribute:** Wenn Sie ein Attribut auf einen Typ anwenden, wird die Vervollständigungsliste gefiltert, sodass sie nur die Typen enthält, die von den Namespaces abgeleitet werden, in denen diese Typen enthalten sind, z. B. <xref:System.Attribute>.  
   
--   `as`- und `is`-Operatoren  
+- `as`- und `is`-Operatoren  
   
--   **Catch-Klauseln**  
+- **Catch-Klauseln**  
   
--   **Objektinitialisierer:** Nur Member, die initialisiert werden können, werden in der Vervollständigungsliste angezeigt.  
+- **Objektinitialisierer:** Nur Member, die initialisiert werden können, werden in der Vervollständigungsliste angezeigt.  
   
--   **Neues Schlüsselwort:** Wenn Sie `new` eingeben und dann die LEERTASTE drücken, wird eine Vervollständigungsliste angezeigt. Auf der Grundlage des Kontexts im Code wird in der Liste automatisch ein Element ausgewählt. Beispielsweise werden in den Vervollständigungslisten automatisch Elemente für Deklarationen und return-Anweisungen in Methoden ausgewählt.  
+- **New-Schlüsselwort:** Wenn Sie `new` eingeben und dann die LEERTASTE drücken, wird eine Vervollständigungsliste angezeigt. Auf der Grundlage des Kontexts im Code wird in der Liste automatisch ein Element ausgewählt. Beispielsweise werden in den Vervollständigungslisten automatisch Elemente für Deklarationen und return-Anweisungen in Methoden ausgewählt.  
   
--   **as- und is-Operatoren:** Eine gefilterte Vervollständigungsliste wird automatisch eingeblendet, wenn Sie nach Eingabe des Schlüsselworts `as` oder `is` die LEERTASTE drücken.  
+- **als und is-Operatoren:** Eine gefilterte Vervollständigungsliste wird automatisch eingeblendet, wenn Sie nach Eingabe des Schlüsselworts `as` oder `is` die LEERTASTE drücken.  
   
--   Ereignisse: Wenn Sie das Schlüsselwort `event` eingeben, sind in der Vervollständigungsliste nur Delegattypen enthalten.  
+- Ereignisse: Wenn Sie das Schlüsselwort `event` eingeben, sind in der Vervollständigungsliste nur Delegattypen enthalten.  
   
--   Mit Parametern kann automatisch nach der ersten Methodenüberladung gefiltert werden, die den Parametern während der Eingabe entspricht. Falls mehrere Methodenüberladungen verfügbar sind, können Sie die NACH-OBEN- bzw. NACH-UNTEN-TASTE verwenden, um in der Liste zur nächsten möglichen Überladung zu navigieren.  
+- Mit Parametern kann automatisch nach der ersten Methodenüberladung gefiltert werden, die den Parametern während der Eingabe entspricht. Falls mehrere Methodenüberladungen verfügbar sind, können Sie die NACH-OBEN- bzw. NACH-UNTEN-TASTE verwenden, um in der Liste zur nächsten möglichen Überladung zu navigieren.  
   
 ## <a name="most-recently-used-members"></a>Zuletzt verwendete Member  
  IntelliSense speichert, welche Member Sie in der Popupliste [Member auflisten](../ide/using-intellisense.md) zuletzt ausgewählt haben, um die automatische Vervollständigung von Objektnamen zu ermöglichen. Bei der nächsten Verwendung der Memberliste werden die zuletzt verwendeten Member oben angezeigt. Der Verlauf der zuletzt verwendeten Member wird nach jeder Sitzung in der Entwicklungsumgebung (IDE) gelöscht.  
@@ -153,17 +148,14 @@ Visual C# IntelliSense ist beim Codieren im Editor und beim Debuggen im Befehlsf
  ![Ereignishandler generieren](../ide/media/vxgenerateeventhandler.gif "vxGenerateEventHandler")  
   
 > [!NOTE]
->  Wenn ein neuer Delegat, der von IntelliSense erstellt wird, auf einen vorhandenen Ereignishandler verweist, vermittelt IntelliSense diese Informationen über die QuickInfo. Sie können diesen Verweis dann ändern. Der Text ist im Code-Editor bereits ausgewählt. Andernfalls ist die automatische Ereigniseinbindung an diesem Punkt abgeschlossen.  
+> Wenn ein neuer Delegat, der von IntelliSense erstellt wird, auf einen vorhandenen Ereignishandler verweist, vermittelt IntelliSense diese Informationen über die QuickInfo. Sie können diesen Verweis dann ändern. Der Text ist im Code-Editor bereits ausgewählt. Andernfalls ist die automatische Ereigniseinbindung an diesem Punkt abgeschlossen.  
   
  Wenn Sie die TAB-TASTE drücken, versieht IntelliSense eine Methode per Stub mit der richtigen Signatur und fügt den Cursor in den Text Ihres Ereignishandlers ein.  
   
 > [!NOTE]
->  Verwenden Sie im Menü **Ansicht** (STRG+-) den Befehl **Rückwärts navigieren**, um zurück zur Anweisung für die Ereigniseinbindung zu wechseln.  
+> Verwenden Sie im Menü **Ansicht** (STRG+-) den Befehl **Rückwärts navigieren**, um zurück zur Anweisung für die Ereigniseinbindung zu wechseln.  
   
  Die folgende Aufgabe veranschaulicht, wie IntelliSense einen Ereignishandler mit dem Namen `button1_Click` automatisch mit einem Ereignisfeld mit dem Namen `button1.Click` verknüpft.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Visual Studio-IDE](../ide/visual-studio-ide.md)
-
-
-

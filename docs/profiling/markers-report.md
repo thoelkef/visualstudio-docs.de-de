@@ -1,23 +1,26 @@
 ---
 title: Markerbericht | Microsoft-Dokumentation
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.report.markers
 ms.assetid: 829ce099-172e-4c7e-bbd0-578b110c59bd
-author: mikejo5000
+caps.latest.revision: 11
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: 0f85da57219d2912ddec1314ed7535b8270b9c50
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 9502d2cf0081985cfbee2283af820c06d681ad9f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430944"
 ---
 # <a name="markers-report"></a>Markerbericht
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 Der Markerbericht führt die Marker im angezeigten Zeitrahmen auf.  Das Schwenken, Zoomen oder Ausblenden von Bereichen führt, möglicherweise dazu, das Marker angezeigt werden oder wieder ausgeblendet werden. Der Bericht enthält folgende Informationen über jeden Marker:  
   
 - Die Startzeit, relativ zum Beginn der Ablaufverfolgung.  
@@ -41,4 +44,4 @@ Der Markerbericht führt die Marker im angezeigten Zeitrahmen auf.  Das Schwenke
   Wählen Sie die Schaltfläche **Exportieren** aus, um den Markerbericht als CSV-Datei zu speichern. Sie können die Daten in der CSV-Datei mit anderen Apps oder Tools verwenden.  
   
 > [!NOTE]
->  Der Markerbericht kann 1.000 Marker anzeigen. Um alle Marker anzuzeigen, exportieren Sie den vollständigen Bericht in eine CSV-Datei.
+> Der Markerbericht kann 1.000 Marker anzeigen. Um alle Marker anzuzeigen, exportieren Sie den vollständigen Bericht in eine CSV-Datei.

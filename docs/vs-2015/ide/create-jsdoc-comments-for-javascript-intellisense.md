@@ -1,25 +1,20 @@
 ---
 title: Erstellen von JSDoc-Kommentaren für JavaScript IntelliSense | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: a0dadc81-3755-4a47-bcee-c1010819ff2a
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9d338b2bece99f720670871a1b92c6b2a57c4280
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: f4d300651731b38b9b86421d36d9de169dc6464d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908586"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651044"
 ---
 # <a name="create-jsdoc-comments-for-javascript-intellisense"></a>Erstellen von JSDoc-Kommentaren für JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,17 +24,16 @@ IntelliSense in Visual Studio zeigt Informationen an, die Sie einem Skript mit s
 ## <a name="jsdoc-comment-tags"></a>JSDoc-Kommentartags  
  Die folgenden standardmäßigen JSDoc-Kommentartags werden von IntelliSense verwendet, um Informationen zu Ihrem Code anzuzeigen.  
 
-
 |  JSDoc-Tag   |                       Syntax                        |                                                     Hinweise                                                      |
 |--------------|-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | @deprecated  |              @deprecated *Beschreibung*              |                                   Gibt eine veraltete Funktion oder Methode an.                                   |
 | @description |             @description *Beschreibung*              |                              Gibt die Beschreibung für eine Funktion oder Methode an.                               |
-|    @param    | @param {*Typ*} *ParameterName*<em>Beschreibung</em> | Gibt Informationen für einen Parameter in einer Funktion oder Methode an.<br /><br /> TypeScript unterstützt auch @paramTag. |
-|  @property   |          @property {*Typ*} *PropertyName*          |   Gibt Informationen an, darunter eine Beschreibung, die entweder für ein Feld oder für einen Member gilt, der über ein Objekt definiert wird.    |
+|    @param    | @param {*Typ*} *Parametername*<em>Beschreibung</em> | Gibt Informationen für einen Parameter in einer Funktion oder Methode an.<br /><br /> TypeScript unterstützt auch @paramTag. |
+|  @property   |          @property {*Typ*} *Eigenschaftenname*          |   Gibt Informationen an, darunter eine Beschreibung, die entweder für ein Feld oder für einen Member gilt, der über ein Objekt definiert wird.    |
 |   @returns   |                  @returns {*Typ*}                  |           Gibt einen Rückgabewert an.<br /><br /> Verwenden Sie für TypeScript, @returnType anstelle von @returns.           |
 |   @summary   |               @summary *Beschreibung*                |                   Gibt die Beschreibung einer Funktion oder Methode an (identisch mit @description).                   |
 |    @type     |                   @type {*Typ*}                    |                                Gibt den Typ für eine Konstante oder eine Variable an.                                |
-|   @typedef   |         @typedef {*Typ*} *Benutzerdefiniertertypname*          |                                            Gibt einen benutzerdefinierten Typ an.                                            |
+|   @typedef   |         @typedef {*Typ*} *Benutzerdefinierter_Typname*          |                                            Gibt einen benutzerdefinierten Typ an.                                            |
 
 ### <a name="examples"></a>Beispiele  
  Das folgende Beispiel zeigt die Verwendung der @description, @param, und @return JSDoc-tags für eine Funktion namens `getArea`.  
@@ -73,7 +67,7 @@ function getForecast(Weather) {
 var w = new Weather();  
 ```  
 
- Das folgende Beispiel zeigt die Verwendung der @type JSDoc-Tags. Wie in diesem Beispiel wird gezeigt, einzelne Sternchen (*), die dem anfänglichen sternchenpaar folgen (\*\*) sind nicht erforderlich.  
+ Das folgende Beispiel zeigt die Verwendung der @type JSDoc-Tags. Wie in diesem Beispiel veranschaulicht wird, sind einzelne Sternchen (*), die dem anfänglichen Sternchenpaar (\*\*) folgen, nicht erforderlich.  
 
 ```javascript  
 /**  
@@ -92,6 +86,3 @@ const RED = 'FF0000';
 function old() {  
 }  
 ```
-
-
-

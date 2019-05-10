@@ -1,14 +1,9 @@
 ---
 title: '&lt;Feld&gt; (JavaScript) | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - <field> JavaScript XML tag
 - field JavaScript XML tag
@@ -16,13 +11,13 @@ ms.assetid: c494bae0-3095-42a3-aa0a-4c415188c65c
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a57f84901f2ac6bc691c50fa6d1e3c8b94db6c50
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b2fe09070261460b7b83f54de44a07cf96d40cf2
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939905"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54766555"
 ---
 # <a name="ltfieldgt-javascript"></a>&lt;Feld&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +60,7 @@ Gibt Informationen zur Dokumentation an, darunter eine Beschreibung, die entwede
   Dies ist optional. Dieses Attribut ist veraltet; das Attribut `type` hat Vorrang vor diesem Attribut. Dieses Attribut gibt an, ob das dokumentierte Feld ein DOM-Element ist. Wenn es auf `true` festgelegt ist, wird angegeben, dass das Feld ein DOM-Element ist; andernfalls ist es auf `false` festzulegen. Wenn `type` nicht festgelegt ist und `domElement` auf `true` festgelegt wurde, behandelt das dokumentierte Feld IntelliSense bei Ausführung einer Anweisungsvervollständigung als `HTMLElement`.  
   
   `mayBeNull`  
-  Dies ist optional. Gibt an, ob das dokumentierte Feld auf NULL festgelegt werden kann. Wenn Sie das Attribut auf `true` festlegen, wird angegeben, dass das Feld auf NULL festgelegt werden kann; andernfalls ist das Attribut auf `false` festzulegen. Der Standardwert ist `false`. Dieses Attribut wird von nicht Visual Studio verwendet, um IntelliSense-Informationen bereitzustellen.  
+  Dies ist optional. Gibt an, ob das dokumentierte Feld auf NULL festgelegt werden kann. Wenn Sie das Attribut auf `true` festlegen, wird angegeben, dass das Feld auf NULL festgelegt werden kann; andernfalls ist das Attribut auf `false` festzulegen. Der Standardwert ist `false`sein. Dieses Attribut wird von nicht Visual Studio verwendet, um IntelliSense-Informationen bereitzustellen.  
   
   `elementType`  
   Dies ist optional. Wenn das `type`-Attribut `Array` lautet, wird der Typ des Elements im Array angegeben.  
@@ -77,7 +72,7 @@ Gibt Informationen zur Dokumentation an, darunter eine Beschreibung, die entwede
   Dies ist optional. Dieses Attribut ist veraltet; das Attribut `elementType` hat Vorrang vor diesem Attribut. Wenn das `type`-Attribut `Array` lautet, wird angegeben, ob die Elemente im Array DOM-Elemente sind. Wenn Sie Attribut auf `true` festlegen, wird angegeben, dass die Elemente DOM-Elemente sind; andernfalls ist das Attribut auf `false` festzulegen. Wenn das `elementType`-Attribut nicht festgelegt ist und `elementDomElement` auf `true` festgelegt wird, behandelt IntelliSense jedes Element im Array bei Ausführung einer Anweisungsvervollständigung als `HTMLElement`.  
   
   `elementMayBeNull`  
-  Dies ist optional. Wenn das `type`-Attribut `Array` lautet, wird angegeben, ob die Elemente im Array auf NULL festgelegt werden können. Wenn Sie das Attribut auf `true` festlegen, wird angegeben, dass die Elemente im Array auf NULL festgelegt werden können; andernfalls ist das Attribut auf `false` festzulegen. Der Standardwert ist `false`. Dieses Attribut wird von nicht Visual Studio verwendet, um IntelliSense-Informationen bereitzustellen.  
+  Dies ist optional. Wenn das `type`-Attribut `Array` lautet, wird angegeben, ob die Elemente im Array auf NULL festgelegt werden können. Wenn Sie das Attribut auf `true` festlegen, wird angegeben, dass die Elemente im Array auf NULL festgelegt werden können; andernfalls ist das Attribut auf `false` festzulegen. Der Standardwert ist `false`sein. Dieses Attribut wird von nicht Visual Studio verwendet, um IntelliSense-Informationen bereitzustellen.  
   
   `helpKeyword`  
   Dies ist optional. Das Schlüsselwort für die F1-Hilfe.  
@@ -91,7 +86,7 @@ Gibt Informationen zur Dokumentation an, darunter eine Beschreibung, die entwede
   `description`  
   Dies ist optional. Eine Beschreibung des Felds.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Das Attribut `name` ist erforderlich, wenn Sie ein Feld in einer Konstruktorfunktion dokumentieren. In allen anderen Szenarien sind sämtliche Attribute für das Element `<field>` optional.  
   
  Wenn Sie eine Konstruktorfunktion dokumentieren, muss das Element `<field>` direkt vor der Felddeklaration angezeigt werden. Das `name`-Attribut muss mit dem Feldnamen übereinstimmen, der im Quellcode verwendet wird. Für Objektmember kann das `name`-Attribut ausgelassen werden, wenn das Element `<field>` direkt vor der Objektmemberdeklaration angezeigt wird.  
@@ -162,6 +157,3 @@ new calculator().f.   // Completion list for a Number.
   
 ## <a name="see-also"></a>Siehe auch  
  [XML-Dokumentationskommentare](../ide/xml-documentation-comments-javascript.md)
-
-
-

@@ -1,20 +1,19 @@
 ---
 title: Arbeiten mit Shaders
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 6b2ea1ed-b995-4e75-af19-c68fd37a3bc5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5371483661702e77f9639aae457a47910eda8101
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d1f07b293447a10a7d39e24ef42b1faedc27c7d6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850608"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892402"
 ---
 # <a name="work-with-shaders"></a>Arbeiten mit Shadern
 

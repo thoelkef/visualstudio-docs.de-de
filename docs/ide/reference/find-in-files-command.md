@@ -1,8 +1,6 @@
 ---
 title: Befehl "In Dateien suchen"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - edit.findinfiles
@@ -12,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 2fc78bfe-b339-4599-97f9-4cafd8a194d9
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4cf5078bb16d90744b83dfd99cf0c1da663149a
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 5549bd0047b38ef8f0dff5fa420d4b5ce0ae4ce9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33705020"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790260"
 ---
 # <a name="find-in-files-command"></a>Befehl "In Dateien suchen"
 Durchsucht Dateien mithilfe einer Teilmenge der Optionen, die im Fenster **Suchen und Ersetzen** auf der Registerkarte **In Dateien suchen** verfügbar sind.
@@ -78,4 +76,4 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
 - [Befehlsfenster](../../ide/reference/command-window.md)
 - [Feld „Suchen/Befehl“](../../ide/find-command-box.md)
 - [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)
-- [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

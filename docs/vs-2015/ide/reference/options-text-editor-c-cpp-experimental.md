@@ -1,11 +1,7 @@
 ---
-title: Optionen, Text-Editor, C/C++, experimentell | Microsoft-Dokumentation
-ms.custom: ''
+title: Optionen, Text-Editor, C/C++, Experimentell | Microsoft-Dokumentation
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C/C++.Experimental
 - VS.ToolsOptionsPages.Text_Editor.C%2FC%2B%2B.Experimental
@@ -14,18 +10,17 @@ ms.assetid: b9e9dda2-350c-460d-b368-37d6c5342eee
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: aae8681bf9db0998c1d86ad00112d3228a76081d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 66d0b7ebb89addc05d19a1e8381b39b544b01863
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49814414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441398"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Optionen, Text-Editor, C/C++, Experimentell
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Wenn Sie diese Optionen ändern, können Sie beim Programmieren in C oder C++ das Verhalten ändern, das mit IntelliSense und der Suchdatenbank zusammenhängt.  
   
  Um auf diese Seite zuzugreifen, erweitern Sie im Dialogfeld **Optionen** im linken Bereich den Eintrag **Text-Editor**, erweitern Sie **C/C++**, und wählen Sie dann **Experimental**aus.  
@@ -33,7 +28,7 @@ Wenn Sie diese Optionen ändern, können Sie beim Programmieren in C oder C++ da
  Diese Features sind in einer Visual Studio 2015 Update 1 RC-Installation verfügbar.  
   
 > [!NOTE]
->  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Informationen hierzu finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio)](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Informationen hierzu finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio)](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="browsingnavigation"></a>Durchsuchen/Navigation  
  **Neue Datenbank-Engine aktivieren**  
@@ -72,6 +67,3 @@ Wenn Sie diese Optionen ändern, können Sie beim Programmieren in C oder C++ da
 ## <a name="see-also"></a>Siehe auch  
  [Festlegen von sprachspezifischen Editor-Optionen](../../ide/reference/setting-language-specific-editor-options.md)   
  [Umgestaltung in C++ (VC-Blog)](http://blogs.msdn.com/b/vcblog/archive/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview.aspx)
-
-
-

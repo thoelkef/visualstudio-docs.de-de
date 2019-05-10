@@ -2,7 +2,6 @@
 title: IActiveScriptSite::GetDocVersionString | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a451f4883373978772643e11fe22feb9122be30e
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 7327b71329c1f476eab9c27d5e0d5a047664abfa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54097213"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992746"
 ---
 # <a name="iactivescriptsitegetdocversionstring"></a>IActiveScriptSite::GetDocVersionString
 Ruft ab eine Host-definierte Zeichenfolge, die die aktuelle Dokumentversion eindeutig identifiziert. Wenn das zugehörige Dokument außerhalb des Bereichs der Windows-Skript (wie im Fall einer HTML-Seite, die bearbeitet wird, mit dem Editor) geändert hat, kann die Skript-Engine speichern diese zusammen mit den beibehaltenen Zustand, eine erzwungene Neukompilierung das nächste Mal, wenn das Skript geladen wird.  

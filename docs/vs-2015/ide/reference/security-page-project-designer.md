@@ -1,14 +1,9 @@
 ---
 title: Seite „Sicherheit“, Projekt-Designer | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesSecurity
 - vb.XBAPProjectPropertiesSecurity
@@ -23,18 +18,17 @@ ms.assetid: 641d9cd3-fa07-498a-8568-3c169bb4d3d5
 caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 967ce9221313c88b10a792f15ffaec80da99de03
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 91b438e8646a215aeed3390e87ce9c20ca923fae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441277"
 ---
 # <a name="security-page-project-designer"></a>Seite "Sicherheit", Projekt-Designer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Die Seite **Sicherheit** im **Projekt-Designer** wird verwendet, um Einstellungen für die Codezugriffssicherheit von Anwendungen zu konfigurieren, die mit [!INCLUDE[ndptecclick](../../includes/ndptecclick-md.md)] bereitgestellt werden. Weitere Informationen finden Sie unter [Code Access Security for ClickOnce Applications (Codezugriffssicherheit für ClickOnce-Anwendungen)](../../deployment/code-access-security-for-clickonce-applications.md).  
   
  Klicken Sie zum Aufrufen der Seite **Sicherheit** zunächst im **Projektmappen-Explorer** auf einen Projektknoten und anschließend im Menü **Projekt** auf **Eigenschaften**. Sobald der **Projekt-Designer** angezeigt wird, klicken Sie auf die Registerkarte **Sicherheit**.  
@@ -44,9 +38,9 @@ Die Seite **Sicherheit** im **Projekt-Designer** wird verwendet, um Einstellunge
  Bestimmt, ob die Sicherheitseinstellungen schon zur Entwurfszeit aktiviert sind Sobald diese Option deaktiviert wird, sind alle anderen Optionen auf der Seite **Sicherheit** nicht mehr verfügbar.  
   
 > [!NOTE]
->  Wenn Sie eine Anwendung über den **Veröffentlichungs**-Assistenten veröffentlichen, wird diese Option automatisch aktiviert.  
+> Wenn Sie eine Anwendung über den **Veröffentlichungs**-Assistenten veröffentlichen, wird diese Option automatisch aktiviert.  
   
- Wenn Sie diese Option auswählen, können Sie entscheiden, ob Sie ein oder zwei Optionsfelder aktivieren möchten: **Voll vertrauenswürdige Anwendung** oder **Teilweise vertrauenswürdige Anwendung**.  
+ Wenn Sie diese Option auswählen, müssen Sie sich zwischen zwei Optionsfeldern entscheiden: **Dies ist eine voll vertrauenswürdige Anwendung** oder **Dies ist eine teilweise vertrauenswürdige Anwendung**.  
   
  Diese Option ist für WPF-Webbrowser-Anwendungsprojekte standardmäßig aktiviert.  
   
@@ -80,13 +74,10 @@ Die Seite **Sicherheit** im **Projekt-Designer** wird verwendet, um Einstellunge
  <xref:System.Security.Permissions.WebBrowserPermission>   
  <xref:System.Security.Permissions.MediaPermission>   
  [Code Access Security for ClickOnce Applications (Codezugriffssicherheit für ClickOnce-Anwendungen)](../../deployment/code-access-security-for-clickonce-applications.md)   
- [How to: Enable ClickOnce Security Settings (Vorgehensweise: Aktivieren von ClickOnce-Sicherheitseinstellungen)](../../deployment/how-to-enable-clickonce-security-settings.md)   
- [How to: Set a Security Zone for a ClickOnce Application (Vorgehensweise: Festlegen einer Sicherheitszone für eine ClickOnce-Anwendung)](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [How to: Set Custom Permissions for a ClickOnce Application (Vorgehensweise: Festlegen von benutzerdefinierten Berechtigungen für eine ClickOnce-Anwendung)](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [How to: Debug a ClickOnce Application with Restricted Permissions (Vorgehensweise: Debuggen einer ClickOnce-Anwendung mit eingeschränkten Berechtigungen)](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [Vorgehensweise: ClickOnce-Sicherheitseinstellungen aktivieren](../../deployment/how-to-enable-clickonce-security-settings.md)   
+ [Vorgehensweise: Festlegen einer Sicherheitszone für eine ClickOnce-Anwendung](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [Vorgehensweise: Festlegen Sie benutzerdefinierter Berechtigungen für eine ClickOnce-Anwendung](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [Vorgehensweise: Debuggen einer ClickOnce-Anwendung mit eingeschränkten Berechtigungen](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [ClickOnce-Sicherheit und -Bereitstellung](../../deployment/clickonce-security-and-deployment.md)   
  [Projekteigenschaftenverweise](../../ide/reference/project-properties-reference.md)   
  [Dialogfeld „Erweiterte Sicherheitseinstellungen“](../../ide/reference/advanced-security-settings-dialog-box.md)
-
-
-

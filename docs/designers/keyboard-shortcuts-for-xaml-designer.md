@@ -1,20 +1,19 @@
 ---
 title: Tastenkombinationen für XAML-Designer
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 40211cc7-294a-4943-85a4-941ad6418dad
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 91815a9a14416660ea5bcce81b5632e6bb150b5b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1d0f655fb4b5b2bb23b19f7fcaf5106307c10895
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960445"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62896758"
 ---
 # <a name="keyboard-shortcuts-for-xaml-designer"></a>Tastenkombinationen für XAML-Designer
 

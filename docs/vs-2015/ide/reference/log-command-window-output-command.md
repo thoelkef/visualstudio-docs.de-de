@@ -1,14 +1,9 @@
 ---
 title: Befehl „Befehlsfensterausgaben protokollieren“ | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - tools.logcommandwindowoutput
 helpviewer_keywords:
@@ -18,18 +13,17 @@ ms.assetid: d4ecec35-5af4-4954-8d60-2cd24583fbb4
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c48c61177f80be00532347d3c49173aae54c7109
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a05fe75aabaf2ce04010fe0c985a3cc1645ee696
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266395"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446026"
 ---
 # <a name="log-command-window-output-command"></a>Befehl "Befehlsfensterausgaben protokollieren"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Kopiert die gesamte Ein- und Ausgabe aus dem **Befehlsfenster** in eine Datei.  
   
 ## <a name="syntax"></a>Syntax  
@@ -43,7 +37,7 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
  Dies ist optional. Der Name der Protokolldatei. Standardmäßig wird die Datei im Profilordner des Benutzers erstellt. Wenn der Dateiname bereits vorhanden ist, wird „log“ dem Ende der vorhandenen Datei angefügt. Wenn keine Datei angegeben ist, wird die zuletzt angegebene Datei verwendet. Wenn noch keine Datei angegeben wurde, wird eine Standardprotokolldatei mit dem Namen „cmdline.log“ erstellt.  
   
 > [!TIP]
->  Geben Sie den vollständigen Dateipfad in Anführungszeichen an, wenn der Pfad Leerzeichen enthält, um den Speicherort der Protokolldatei zu ändern.  
+> Geben Sie den vollständigen Dateipfad in Anführungszeichen an, wenn der Pfad Leerzeichen enthält, um den Speicherort der Protokolldatei zu ändern.  
   
 ## <a name="switches"></a>Schalter  
  /on  
@@ -55,7 +49,7 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
  /overwrite  
  Dies ist optional. Wenn die angegebene Datei im `filename`-Argument mit einer vorhandenen Datei übereinstimmt, wird die Datei überschrieben.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Wenn noch keine Datei angegeben ist, wird standardmäßig die Datei „cmdline.log“ erstellt. Der Alias dieses Befehls lautet standardmäßig „Log“.  
   
 ## <a name="examples"></a>Beispiele  
@@ -82,6 +76,3 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
  [Befehlsfenster](../../ide/reference/command-window.md)   
  [Such-/Befehlsfeld](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

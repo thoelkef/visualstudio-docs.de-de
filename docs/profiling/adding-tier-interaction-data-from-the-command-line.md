@@ -7,15 +7,15 @@ helpviewer_keywords:
 - profiling tools,tier interaction method
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58b8c5e04baad8083c2794cc6dbed8a08408a8da
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b04b2d2c3c23b444d011d81002f7f22a12b1ebf0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878678"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777862"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>Hinzufügen von Ebeneninteraktionsdaten über die Befehlszeile
 
@@ -61,7 +61,7 @@ Im folgenden Beispiel wird das Profil mithilfe der Instrumentierungsmethode für
 3. Starten Sie den Profiler. Geben Sie folgenden Befehl ein:
 
     ```cmd
-    vsperfcmd /start:trace /output:Desktop_tip.vsp 
+    vsperfcmd /start:trace /output:Desktop_tip.vsp
     ```
 
 4. Starten Sie die Anwendung mit VSPerfCmd. Geben Sie folgenden Befehl ein:
@@ -113,7 +113,7 @@ Im folgenden Beispiel wird mithilfe der Instrumentierungsmethode ein Profil für
 7. Starten Sie den Profiler. Geben Sie folgenden Befehl ein:
 
     ```cmd
-    vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession 
+    vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession
     ```
 
 8. Starten Sie den Dienst bei Bedarf.
@@ -121,7 +121,7 @@ Im folgenden Beispiel wird mithilfe der Instrumentierungsmethode ein Profil für
 9. Fügen Sie den Profiler an den Dienst an. Geben Sie folgenden Befehl ein:
 
     ```cmd
-    vsperfcmd /attach:MiddleTier.exe /output:MyService_tip.vsp /user:SYSTEM /crosssession 
+    vsperfcmd /attach:MiddleTier.exe /output:MyService_tip.vsp /user:SYSTEM /crosssession
     ```
 
 10. Führen Sie den Dienst aus, und erfassen Sie Profilerstellungsdaten.

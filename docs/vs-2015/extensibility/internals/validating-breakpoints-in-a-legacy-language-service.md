@@ -1,27 +1,22 @@
 ---
 title: Überprüfen von Haltepunkten in einem Legacysprachdienst | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - breakpoint validation
 - language services [managed package framework], breakpoint validation
 ms.assetid: a7e873cd-dfe1-474f-bda5-fd7532774b15
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0868e516720fd32a445f60f05f345936d24d6d7a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f54dc683aa4287145a27e22d49397241b395f69f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734981"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093305"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Überprüfen von Haltepunkten in einem Legacysprachdienst
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,13 +27,13 @@ Ein Haltepunkt gibt an, dass die Ausführung des Programms zu einem bestimmten Z
   
 ## <a name="implementing-support-for-validating-breakpoints"></a>Implementieren der Unterstützung für das Überprüfen von Haltepunkten  
   
--   Die <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> Methode erhält die Position des Haltepunkts. Ihre Implementierung muss entscheiden, ob der Speicherort gültig ist, und angeben, dass dies durch Rückgabe eines Textabschnitts, das der Code identifiziert, den Haltepunkt die Position der Zeile zugeordnet.  
+- Die <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> Methode erhält die Position des Haltepunkts. Ihre Implementierung muss entscheiden, ob der Speicherort gültig ist, und angeben, dass dies durch Rückgabe eines Textabschnitts, das der Code identifiziert, den Haltepunkt die Position der Zeile zugeordnet.  
   
--   Zurückgeben <xref:Microsoft.VisualStudio.VSConstants.S_OK> ist der Speicherort gültig ist, oder <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> , wenn er nicht gültig ist.  
+- Zurückgeben <xref:Microsoft.VisualStudio.VSConstants.S_OK> ist der Speicherort gültig ist, oder <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> , wenn er nicht gültig ist.  
   
--   Wenn der Breakpoint gültig ist. wird der Textabschnitt zusammen mit dem Haltepunkt hervorgehoben.  
+- Wenn der Breakpoint gültig ist. wird der Textabschnitt zusammen mit dem Haltepunkt hervorgehoben.  
   
--   Wenn der Haltepunkt ungültig ist, wird eine Fehlermeldung in der Statusleiste angezeigt.  
+- Wenn der Haltepunkt ungültig ist, wird eine Fehlermeldung in der Statusleiste angezeigt.  
   
 ### <a name="example"></a>Beispiel  
  Dieses Beispiel zeigt eine Implementierung der <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> Methode, die den Parser, um den auszublendenden Codeabschnitt zu erhalten (sofern vorhanden) an der angegebenen Position aufruft.  
@@ -107,4 +102,3 @@ namespace TestLanguagePackage
   
 ## <a name="see-also"></a>Siehe auch  
  [Funktionen von Legacysprachdiensten](../../extensibility/internals/legacy-language-service-features1.md)
-

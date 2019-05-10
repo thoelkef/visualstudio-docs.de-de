@@ -1,14 +1,9 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen einer Inlineaufgabe | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - MSBuild, tutorial
 - MSBuild, tasks
@@ -16,18 +11,17 @@ ms.assetid: 438194cb-668c-41a9-a7e2-c118d14c1ea7
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a399e8285b7b041488a4cecdf2007f8fd1647b2d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ad081a4d6954d402aa295a94edae3f5bdf50ef4c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445624"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>Exemplarische Vorgehensweise: Erstellen einer Inlineaufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 MSBuild-Aufgaben werden in der Regel durch Kompilieren einer Klasse erstellt, die die <xref:Microsoft.Build.Framework.ITask>-Schnittstelle implementiert. Ab .NET Framework Version 4 können Sie Aufgaben inline in der Projektdatei erstellen. Zum Hosten der Aufgabe müssen Sie keine separate Assembly erstellen. Weitere Informationen hierzu finden Sie unter [Inlineaufgaben](../msbuild/msbuild-inline-tasks.md).  
   
  In dieser exemplarischen Vorgehensweise wird das Erstellen und Ausführen der folgenden Inlineaufgaben erläutert:  
@@ -53,15 +47,15 @@ MSBuild-Aufgaben werden in der Regel durch Kompilieren einer Klasse erstellt, di
   
 #### <a name="to-create-and-modify-a-project-file"></a>So erstellen und ändern Sie eine Projektdatei  
   
-1.  Klicken Sie in Visual Studio im Menü **Datei** auf die Option **Neu** und anschließend auf **Projekt**.  
+1. Klicken Sie in Visual Studio im Menü **Datei** auf die Option **Neu** und anschließend auf **Projekt**.  
   
-2.  Wählen Sie im Dialogfeld **Neues Projekt** den Projekttyp „Visual C#“ und anschließend die Vorlage **Windows Forms-Anwendung** aus. Geben Sie im Feld **Name** `InlineTasks`ein. Geben Sie einen **Speicherort** für die Projektmappe ein, z.B. `D:\`. Stellen Sie sicher, dass die Option **Projektmappenverzeichnis erstellen** aktiviert wurde, die Option **Zur Quellcodeverwaltung hinzufügen** deaktiviert wurde und der **Projektmappenname** `InlineTasks` lautet.  
+2. Wählen Sie im Dialogfeld **Neues Projekt** den Projekttyp „Visual C#“ und anschließend die Vorlage **Windows Forms-Anwendung** aus. Geben Sie im Feld **Name** `InlineTasks`ein. Geben Sie einen **Speicherort** für die Projektmappe ein, z.B. `D:\`. Stellen Sie sicher, dass die Option **Projektmappenverzeichnis erstellen** aktiviert wurde, die Option **Zur Quellcodeverwaltung hinzufügen** deaktiviert wurde und der **Projektmappenname** `InlineTasks` lautet.  
   
      Klicken Sie auf **OK**, um die neue Projektdatei zu erstellen.  
   
-3.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den InlineTasks-Projektknoten und anschließend auf **Projekt entladen**.  
+3. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den InlineTasks-Projektknoten und anschließend auf **Projekt entladen**.  
   
-4.  Klicken Sie erneut mit der rechten Maustaste auf den Projektknoten und anschließend auf **InlineTasks.csproj bearbeiten**.  
+4. Klicken Sie erneut mit der rechten Maustaste auf den Projektknoten und anschließend auf **InlineTasks.csproj bearbeiten**.  
   
      Die Projektdatei wird im Code-Editor angezeigt.  
   
@@ -110,7 +104,7 @@ MSBuild-Aufgaben werden in der Regel durch Kompilieren einer Klasse erstellt, di
     `Hello, world!`  
   
    > [!NOTE]
-   >  Wenn Ihnen die „Hallo“-Nachricht nicht angezeigt wird, speichern Sie die Projektdatei erneut, und führen Sie anschließend die „Hallo“-Aufgabe aus.  
+   > Wenn Ihnen die „Hallo“-Nachricht nicht angezeigt wird, speichern Sie die Projektdatei erneut, und führen Sie anschließend die „Hallo“-Aufgabe aus.  
   
    Durch den Wechsel zwischen dem Code-Editor und dem **Eingabeaufforderungsfenster** können Sie die Projektdatei ändern und die Ergebnisse schnell anzeigen.  
   
@@ -263,6 +257,3 @@ MSBuild-Aufgaben werden in der Regel durch Kompilieren einer Klasse erstellt, di
  [Inlineaufgaben](../msbuild/msbuild-inline-tasks.md)   
  [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
  [Ziele](../msbuild/msbuild-targets.md)
-
-
-

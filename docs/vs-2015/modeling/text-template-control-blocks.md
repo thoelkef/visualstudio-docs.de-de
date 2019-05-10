@@ -1,36 +1,33 @@
 ---
 title: Kontrollblöcke für Textvorlagen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, template code
 ms.assetid: bad198b9-57a4-4777-bd5b-ab6336c825f3
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7531e0ace7a6e2b40d8d17555a9b34cfa0e174fa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2e2b21f69d0688f3554aec8cf751cf674c2b5e30
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221207"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411473"
 ---
 # <a name="text-template-control-blocks"></a>Kontrollblöcke für Textvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Kontrollblöcke ermöglichen Ihnen das Schreiben von Code in die Textvorlage, um die Ausgabe zu variieren. Es gibt drei Arten von Kontrollblöcken, die anhand ihrer öffnenden Klammern unterschieden werden:  
   
--   `<# Standard control blocks #>` kann Anweisungen enthalten.  
+- `<# Standard control blocks #>` kann Anweisungen enthalten.  
   
--   `<#= Expression control blocks #>` kann Ausdrücke enthalten.  
+- `<#= Expression control blocks #>` kann Ausdrücke enthalten.  
   
--   `<#+ Class feature control blocks #>` kann Methoden, Felder und Eigenschaften enthalten.  
+- `<#+ Class feature control blocks #>` kann Methoden, Felder und Eigenschaften enthalten.  
   
 ## <a name="standard-control-block"></a>Standardkontrollblock  
  Standardkontrollblöcke enthalten Anweisungen. Beispielsweise werden mit dem folgenden Standardblock die Namen aller Attribute im XML-Dokument abgerufen:  
@@ -69,11 +66,11 @@ Found another one!
 ```  
   
 > [!WARNING]
->  Verwenden Sie immer {...} um geschachtelte Anweisungen zu begrenzen, die eingebetteten nur-Text enthalten. Das folgende Beispiel funktioniert möglicherweise nicht ordnungsgemäß:  
+> Verwenden Sie immer {...} um geschachtelte Anweisungen zu begrenzen, die eingebetteten nur-Text enthalten. Das folgende Beispiel funktioniert möglicherweise nicht ordnungsgemäß:  
 >   
->  `<# if (ShouldPrint) #> Some text. -- WRONG`  
+> `<# if (ShouldPrint) #> Some text. -- WRONG`  
 >   
->  Stattdessen sollten Sie {geschweifte Klammern} wie folgt einfügen:  
+> Stattdessen sollten Sie {geschweifte Klammern} wie folgt einfügen:  
   
 ```  
   
@@ -123,7 +120,7 @@ Some text.
 ```  
   
 > [!NOTE]
->  Einem Klassenfunktionskontrollblock darf nicht von Standardkontrollblöcken in derselben Vorlagendatei gefolgt werden. Allerdings gilt diese Einschränkung nicht für das Ergebnis der Verwendung von `<#@include#>`-Direktiven. Jede enthaltene Datei kann Standardblöcke besitzen, denen von Klassenfunktionsblöcken gefolgt wird.  
+> Einem Klassenfunktionskontrollblock darf nicht von Standardkontrollblöcken in derselben Vorlagendatei gefolgt werden. Allerdings gilt diese Einschränkung nicht für das Ergebnis der Verwendung von `<#@include#>`-Direktiven. Jede enthaltene Datei kann Standardblöcke besitzen, denen von Klassenfunktionsblöcken gefolgt wird.  
   
  Sie können eine Funktion erstellen, die Ausgaben durch das Einbetten von Text und Ausdrucksblöcken in einem Klassenfunktionskontrollblock generiert. Zum Beispiel:  
   
@@ -153,17 +150,17 @@ Some text.
   
  Sie sollten beim Verwenden von Kontrollblöcken Folgendes bedenken:  
   
--   **Die Sprache.** Sie können in einer Textvorlage entweder C#- oder Visual Basic-Code verwenden. Die Standardsprache ist C#, Sie können jedoch Visual Basic mit dem `language`-Parameter der `template`-Anweisung angeben. (Weitere Informationen zu den `template` -Anweisung finden Sie unter [T4-Textvorlagenanweisungen](../modeling/t4-text-template-directives.md).)  
+- **Die Sprache.** Sie können in einer Textvorlage entweder C#- oder Visual Basic-Code verwenden. Die Standardsprache ist C#, Sie können jedoch Visual Basic mit dem `language`-Parameter der `template`-Direktive angeben. (Weitere Informationen zu den `template` -Anweisung finden Sie unter [T4-Textvorlagenanweisungen](../modeling/t4-text-template-directives.md).)  
   
      Die in Kontrollblöcken verwendete Sprache hat nichts mit der Sprache oder dem Format des Texts zu tun, den Sie in einer Textvorlage generieren. Sie können C# mithilfe von Visual Basic-Code generieren oder umgekehrt.  
   
-     Sie können nur eine Sprache in einer Textvorlage verwenden, einschließlich aller Textvorlagen, die Sie in die `include`-Anweisung einschließen.  
+     Sie können nur eine Sprache in einer Textvorlage verwenden, einschließlich aller Textvorlagen, die Sie in die `include`-Direktive einschließen.  
   
--   **Lokale Variablen.** Da der gesamte Code in den Standard- und-Ausdruckskontrollblöcken in einer Textvorlage als eine einzelne Methode generiert wird, sollten Sie sicherstellen, dass keine Konflikte mit den Namen der lokalen Variable bestehen. Wenn Sie andere Textvorlagen einschließen, müssen Sie sicherstellen, dass Variablennamen in allen eingeschlossenen Vorlagen eindeutig sind. Eine Möglichkeit, dies sicherzustellen, besteht darin, jedem lokalen Variablennamen eine Zeichenfolge hinzuzufügen, die die Textvorlage identifiziert, in der sie deklariert wurde.  
+- **Lokale Variablen.** Da der gesamte Code in den Standard- und-Ausdruckskontrollblöcken in einer Textvorlage als eine einzelne Methode generiert wird, sollten Sie sicherstellen, dass keine Konflikte mit den Namen der lokalen Variable bestehen. Wenn Sie andere Textvorlagen einschließen, müssen Sie sicherstellen, dass Variablennamen in allen eingeschlossenen Vorlagen eindeutig sind. Eine Möglichkeit, dies sicherzustellen, besteht darin, jedem lokalen Variablennamen eine Zeichenfolge hinzuzufügen, die die Textvorlage identifiziert, in der sie deklariert wurde.  
   
      Es ist auch eine gute Idee, die lokalen Variablen mit sinnvollen Werten zu initialisieren, wenn Sie sie deklarieren, insbesondere dann, wenn Sie mehrere Textvorlagen einschließen.  
   
--   **Schachteln von Kontrollblöcken.** Kontrollblöcke können nicht ineinander geschachtelt werden. Sie müssen einen Kontrollblock immer beenden, bevor Sie einen anderen öffnen. Beispielsweise zeigt folgende Vorgehensweise das Drucken von Text in einem Ausdrucksblock als Teil eines Standardkontrollblocks.  
+- **Schachteln von Kontrollblöcken.** Kontrollblöcke können nicht ineinander geschachtelt werden. Sie müssen einen Kontrollblock immer beenden, bevor Sie einen anderen öffnen. Beispielsweise zeigt folgende Vorgehensweise das Drucken von Text in einem Ausdrucksblock als Teil eines Standardkontrollblocks.  
   
     ```  
     <#   
@@ -175,7 +172,4 @@ Some text.
     <# } #>  
     ```  
   
--   **Refactoring.** Um die Textvorlagen kurz und leicht verständlich zu halten, wird dringend empfohlen, dass Sie sich wiederholenden Code vermeiden, entweder durch die Einteilung von wiederverwendbarem Code in Hilfsfunktionen in Klassenfunktionsblöcken oder durch Erstellen einer eigenen Textvorlagenklasse, die von der Microsoft.VisualStudio.TextTemplating.TextTransformation-Klasse erbt.
-
-
-
+- **Refactoring.** Um die Textvorlagen kurz und leicht verständlich zu halten, wird dringend empfohlen, dass Sie sich wiederholenden Code vermeiden, entweder durch die Einteilung von wiederverwendbarem Code in Hilfsfunktionen in Klassenfunktionsblöcken oder durch Erstellen einer eigenen Textvorlagenklasse, die von der Microsoft.VisualStudio.TextTemplating.TextTransformation-Klasse erbt.

@@ -1,32 +1,26 @@
 ---
 title: Protokollierung in MSBuild | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, logging
 ms.assetid: 9aea2e76-8f60-4234-913d-598e7bbad808
 caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5f2d7fe0e4fabe0a705c771d8f07e7ce349a43d7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 8caf9dcabe46c0d68fabf9e620818f52316e484b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274377"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662503"
 ---
 # <a name="logging-in-msbuild"></a>Protokollierung in MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Durch die Protokollierung können Sie den Status eines Builds nachverfolgen. Die Protokollierung erfasst Buildereignisse, Benachrichtigungen, Warnungen und Fehler in einer Protokolldatei.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
@@ -48,6 +42,3 @@ Durch die Protokollierung können Sie den Status eines Builds nachverfolgen. Die
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Paralleles Erstellen von mehreren Projekten](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)  
  Beschreibt, wie mehrere Projekte schneller erstellt werden können, indem Sie sie parallel ausführen.
-
-
-

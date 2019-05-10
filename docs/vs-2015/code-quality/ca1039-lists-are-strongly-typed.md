@@ -1,14 +1,9 @@
 ---
 title: 'CA1039: Listen sind stark typisiert. | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1039
 - ListsAreStronglyTyped
@@ -20,14 +15,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 681c1ada7600743c0a548f8a774dada6863f7d0d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3fb1a6255539ded989c5ad9638fc961d606a19f7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62559746"
 ---
-# <a name="ca1039-lists-are-strongly-typed"></a>CA1039: Listen weisen eine starke Typisierung auf
+# <a name="ca1039-lists-are-strongly-typed"></a>CA1039: Listen weisen eine starke Typisierung auf.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -40,17 +35,17 @@ ms.locfileid: "49853414"
 ## <a name="cause"></a>Ursache
  Öffentlicher oder geschützter Typ implementiert <xref:System.Collections.IList?displayProperty=fullName> bietet jedoch keine stark typisierte Methode für eine oder mehrere der folgenden:
 
--   IList.Item
+- IList.Item
 
--   IList.Add
+- IList.Add
 
--   IList.Contains
+- IList.Contains
 
--   IList.IndexOf
+- IList.IndexOf
 
--   IList.Insert
+- IList.Insert
 
--   IList.Remove
+- IList.Remove
 
 ## <a name="rule-description"></a>Regelbeschreibung
  Diese Regel muss <xref:System.Collections.IList> Implementierungen angeben, stark typisierte Member, damit Benutzer nicht umwandeln müssen, Argumente, die die <xref:System.Object?displayProperty=fullName> eingeben, wenn sie die Funktionen verwenden, die bereitgestellt wird von der Schnittstelle. Die <xref:System.Collections.IList> Schnittstelle wird implementiert, anhand von Sammlungen von Objekten, die über einen Index zugegriffen werden können. Mit dieser Regel wird davon ausgegangen, dass der Typ, der implementiert <xref:System.Collections.IList> ist diese Option, um die Verwaltung einer Auflistung von Instanzen eines Typs, der stärker ist als <xref:System.Object>.
@@ -71,7 +66,7 @@ ms.locfileid: "49853414"
  [!code-csharp[FxCop.Design.IListStrongTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.IListStrongTypes/cs/FxCop.Design.IListStrongTypes.cs#1)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1035: ICollection-Implementierungen weisen Member mit starker Typisierung auf](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
+ [CA1035: ICollection-Implementierungen weisen Member mit starker Typisierung](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
 
  [CA1038: Enumeratoren sollten eine starke Typisierung aufweisen](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
 
@@ -80,6 +75,3 @@ ms.locfileid: "49853414"
  <xref:System.Collections.IEnumerable?displayProperty=fullName>
  <xref:System.Collections.IList?displayProperty=fullName>
  <xref:System.Object?displayProperty=fullName>
-
-
-

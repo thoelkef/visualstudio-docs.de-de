@@ -1,20 +1,18 @@
 ---
 title: 'Vorgehensweise: Filtern der Berichtsansichten der Profilerstellungstools, um nur eigenen Code anzuzeigen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 02/15/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b1e2291ff5c4b7ff072e45df9e2d32768011bca
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: b11d3c177f880894a2f47abd8e80e7796c7923ef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815781"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973948"
 ---
 # <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>Vorgehensweise: Filtern der Berichtsansichten der Profilerstellungstools, um nur eigenen Code anzuzeigen
 

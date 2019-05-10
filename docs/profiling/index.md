@@ -1,22 +1,24 @@
 ---
 layout: LandingPage
 title: Messen der Leistung einer App mithilfe der Profilerstellung | Microsoft-Dokumentation
-description: Erfahren Sie, wie Sie Visual Studio 2017 für Profilerstellung für die Leistung Ihrer Anwendungen, Dienste und Tools in der Sprache Ihrer Wahl verwenden können.
+description: Erfahren Sie, wie Sie Visual Studio für die Profilerstellung der Leistung Ihrer Anwendungen, Dienste und Tools in der Sprache Ihrer Wahl verwenden können.
 ms.custom: seodec18
 ms.topic: landing-page
 author: mikejo5000
 ms.author: mikejo
-manager: douge
-ms.openlocfilehash: ced28177670ab33916701858bfae36fa860a357f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: e47f44a78fbd8632b834c46c451f5f3106c85fcd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886448"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62995437"
 ---
 # <a name="measure-app-performance-in-visual-studio"></a>Messen der Leistung einer App in Visual Studio
 
-Profilerstellungs- und Diagnosetools helfen bei der Diagnose von Speicher- und CPU-Auslastung und anderen Problemen auf Anwendungsebene. Mit diesen Tools können Sie Daten (z.B. Variablenwerte, Funktionsaufrufe und Ereignisse) über einen Zeitraum sammeln, in dem Sie Ihre Anwendung im Debugger ausführen. Sie können den Status Ihrer Anwendung an verschiedenen Punkten der Codeausführung anzeigen. 
+Profilerstellungs- und Diagnosetools helfen bei der Diagnose von Speicher- und CPU-Auslastung und anderen Problemen auf Anwendungsebene. Mit diesen Tools können Sie Daten (z.B. Variablenwerte, Funktionsaufrufe und Ereignisse) über einen Zeitraum sammeln, in dem Sie Ihre Anwendung im Debugger ausführen. Sie können den Status Ihrer Anwendung an verschiedenen Punkten der Codeausführung anzeigen.
+
+<!-- markdownlint-disable MD033 -->
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -49,24 +51,6 @@ Profilerstellungs- und Diagnosetools helfen bei der Diagnose von Speicher- und C
                     </div>
                     <div class="cardText">
                         <h3>Erste Schritte mit den Diagnosetools (CPU-Nutzung)</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_video.svg" alt="Watch a Video on the Diagnostics Tools">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Sehen Sie sich ein Video zu den Diagnosetools an</h3>
                     </div>
                 </div>
             </div>

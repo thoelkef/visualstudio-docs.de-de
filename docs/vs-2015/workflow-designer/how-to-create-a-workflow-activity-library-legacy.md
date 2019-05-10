@@ -1,11 +1,8 @@
 ---
-title: 'Vorgehensweise: erstellen eine Workflowaktivitätsbibliothek (Vorgängerversion) | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Erstellen eine Workflowaktivitätsbibliothek (Vorgängerversion) | Microsoft-Dokumentation'
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - workflows, activity library projects
@@ -15,45 +12,45 @@ ms.assetid: fb5aa940-2ae8-4b52-b52c-51c20861a7b4
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: daed51a1cb5ba6eb3d4e0d7748993027686d5b7e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a94fbfd319489df0ac3bcbaf474c6a58cef66868
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211463"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432371"
 ---
 # <a name="how-to-create-a-workflow-activity-library-legacy"></a>Vorgehensweise: Erstellen einer Workflowaktivitätsbibliothek (Vorgängerversion)
 Führen Sie die folgenden Schritte aus, um ein Projekt für eine Workflowaktivitätsbibliothek mithilfe der Vorgängerversion von [!INCLUDE[wfd1](../includes/wfd1-md.md)] zu erstellen, die von [!INCLUDE[vs2010](../includes/vs2010-md.md)] bereitgestellt wird. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../includes/wfd2-md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.  
   
 ### <a name="to-create-a-workflow-activity-library-project"></a>So erstellen Sie ein Workflowaktivitätsbibliothekprojekt  
   
-1.  Starten Sie Visual Studio.  
+1. Starten Sie Visual Studio.  
   
-2.  Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.  
+2. Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.  
   
      Das Dialogfeld **Neues Projekt** wird angezeigt.  
   
-3.  Wählen Sie entweder die **.NET Framework 3.0** Option oder die **.NET Framework 3.5** -Option in der Dropdownliste am oberen Rand der **neues Projekt** Fenster aus, um den Designer der Vorgängerversion zuzugreifen.  
+3. Wählen Sie entweder die **.NET Framework 3.0** Option oder die **.NET Framework 3.5** -Option in der Dropdownliste am oberen Rand der **neues Projekt** Fenster aus, um den Designer der Vorgängerversion zuzugreifen.  
   
     > [!NOTE]
-    >  Die Standardoption in [!INCLUDE[vs2010](../includes/vs2010-md.md)] ist **.NET Framework 4**. Diese Option wird zum Erstellen von [!INCLUDE[wf](../includes/wf-md.md)]-Anwendungen verwendet, die auf [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] abzielen; dabei wird nicht der Designer der Vorgängerversion verwendet.  
+    > Die Standardoption in [!INCLUDE[vs2010](../includes/vs2010-md.md)] ist **.NET Framework 4**. Diese Option wird zum Erstellen von [!INCLUDE[wf](../includes/wf-md.md)]-Anwendungen verwendet, die auf [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] abzielen; dabei wird nicht der Designer der Vorgängerversion verwendet.  
   
-4.  In der **Projekttypen** Bereich Option Visual c# oder Visual Basic (unter **andere Sprachen**) und wählen Sie dann **Workflow**.  
+4. In der **Projekttypen** Bereich Option Visual c# oder Visual Basic (unter **andere Sprachen**) und wählen Sie dann **Workflow**.  
   
-5.  In der **Vorlagen** wählen Sie im Bereich **Workflowaktivitätsbibliothek**.  
+5. In der **Vorlagen** wählen Sie im Bereich **Workflowaktivitätsbibliothek**.  
   
-6.  In der **Namen** Geben Sie einen beschreibenden Namen für das Projekt in der es einfach identifizieren zu können.  
+6. In der **Namen** Geben Sie einen beschreibenden Namen für das Projekt in der es einfach identifizieren zu können.  
   
-7.  In der **Speicherort** Geben Sie das Verzeichnis, in dem Sie das Projekt speichern, oder klicken Sie auf möchten **Durchsuchen** dorthin navigieren.  
+7. In der **Speicherort** Geben Sie das Verzeichnis, in dem Sie das Projekt speichern, oder klicken Sie auf möchten **Durchsuchen** dorthin navigieren.  
   
      Wenn ein Projektmappenverzeichnis für das Projekt erstellt werden sollen, wählen Sie die **Projektmappenverzeichnis erstellen** Kontrollkästchen und geben Sie einen Namen in der **Projektmappenname** Feld.  
   
-8.  Klicken Sie auf **OK**.  
+8. Klicken Sie auf **OK**.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen von Legacyworkflowprojekten](../workflow-designer/creating-legacy-workflow-projects.md)   
  [Verwenden des Aktivitätsdesigners der Vorgängerversion](../workflow-designer/using-the-legacy-activity-designer.md)   
  [Legacyworkflowaktivitäten](../workflow-designer/legacy-workflow-activities.md)   
- [Entwickeln von Workflowaktivitäten](http://msdn.microsoft.com/en-us/19876dfc-dfa5-4d52-b1f5-1d087474cc52)   
- [Windows Workflow Foundation-Aktivitäten](http://msdn.microsoft.com/en-us/192c4c1e-afb6-4f58-ab11-2b5bbbc2d2c0)
+ [Entwickeln von Workflowaktivitäten](http://msdn.microsoft.com/19876dfc-dfa5-4d52-b1f5-1d087474cc52)   
+ [Windows Workflow Foundation-Aktivitäten](http://msdn.microsoft.com/192c4c1e-afb6-4f58-ab11-2b5bbbc2d2c0)

@@ -1,23 +1,25 @@
 ---
 title: Entfernen von Informationen der Quellcodeverwaltung aus. Proj und. Sln-Dateien | Microsoft-Dokumentation
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, .sln and .proj files
 ms.assetid: 7b06883f-35de-41e2-9a9e-d3edba236f17
-author: gregvanl
+caps.latest.revision: 15
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 97ebd46d985a58ac0caffb81bf9acd77f5942077
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 4caa3d9edd7cba768f6338ad7aecf168041a1130
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935241"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859179"
 ---
 # <a name="removal-of-source-control-information-from-proj-and-sln-files"></a>Entfernen von Informationen der Quellcodeverwaltung aus PROJ- und SLN-Dateien
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 In Version 1.2 von die Source-Plug-in-API SCC werden die Informationen in einem MSSCCPRJ gespeichert. SCC-Datei. Der Vorteil der MSSCCPRJ. SCC-Datei ist, dass die SCC-Informationen ist nicht im Quellmodell - gesteuert, wie in proj- und sln-Dateien.  
   
 ## <a name="version-12-changes"></a>Versionsänderungen 1.2  

@@ -7,32 +7,33 @@ dev_langs:
 ms.assetid: a82ab896-0185-46a4-b4d5-babfcc660fe1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52c99386bc319d02b8d2735d3714d9c06312cee0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: b0fa2172d1a56fb7b4730a51959c0b73bdfc9461
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961282"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62835904"
 ---
 # <a name="idiasymbolgetsizeinudt"></a>IDiaSymbol::get_sizeInUdt
-Ruft die Größe eines Elements eines benutzerdefinierten Typs ab.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_sizeInUdt(   
-   DWORD* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pRetVal`  
- [out] Ein Zeiger auf eine `DWORD` , die die Größe des Members angibt.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Ruft die Größe eines Elements eines benutzerdefinierten Typs ab.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_sizeInUdt(
+   DWORD* pRetVal);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pRetVal`
+
+[out] Ein Zeiger auf eine `DWORD` , die die Größe des Members angibt.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

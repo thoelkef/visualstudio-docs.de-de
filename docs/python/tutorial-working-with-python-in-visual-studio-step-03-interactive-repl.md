@@ -2,22 +2,21 @@
 title: 'Tutorial „Python in Visual Studio“, Schritt 3: Interaktive REPL'
 titleSuffix: ''
 description: Dies ist Schritt 3 einer grundlegenden Einführung in Python-Funktionen in Visual Studio, in der das interaktive Python-REPL-Fenster erläutert wird.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
+ms.date: 01/28/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9cc9bc13f26707132703851dea5cc3c7de351601
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 14015c01b487bfe7963d36154ff2dc9b599d7c49
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986829"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430850"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Schritt 3: Verwenden des interaktiven REPL-Fensters
 
@@ -74,7 +73,7 @@ In Visual Studio bietet das **interaktive Fenster** für Python eine komfortable
     ![Eine vorherige Anweisung im interaktiven Fenster bearbeiten](media/vs-getting-started-python-16-interactive6.png)
 
 1. Probieren Sie durch Wiederholen des Vorgangs verschiedene Schritteinstellungen aus, bis Sie den Wert gefunden haben, der für Sie am besten ist. Sie können auch veranlassen, dass die Welle wiederholt wird, indem Sie deren Bereich erweitern, z.B. `range(0, 1800, 12)`.
- 
+
 1. Wenn Sie mit dem Code, den Sie im **interaktiven** Fenster geschrieben haben, zufrieden sind, wählen Sie ihn aus, klicken Sie mit der rechten Maustaste, und wählen Sie dann **Code kopieren** (**STRG**+**UMSCHALT**+**C**) aus. Fügen Sie ihn anschließend in den Editor ein. Durch diese besondere Funktion werden in Visual Studio sowohl sämtliche Ausgaben als auch die Eingabeaufforderungen `>>>` und `...` automatisch ausgelassen. Die folgende Abbildung zeigt z.B. das Verwenden des **Code kopieren**-Befehls bei einer Auswahl, die Eingabeaufforderungen und Ausgaben enthält:
 
     ![Befehl „Code kopieren“ im interaktiven Fenster auf Auswahl mit Eingabeaufforderungen und Ausgaben anwenden](media/vs-getting-started-python-17-interactive7.png)

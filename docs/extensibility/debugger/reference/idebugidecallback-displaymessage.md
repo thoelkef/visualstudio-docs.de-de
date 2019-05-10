@@ -1,28 +1,30 @@
 ---
 title: IDebugIDECallback::DisplayMessage | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugIDECallback::DisplayMessage
 ms.assetid: c19b48ee-b370-4fce-91fe-f82bf1e63179
-author: gregvanl
+caps.latest.revision: 9
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 3ae5bdcc1f9d8c2be010fc0e9493edd7b623ba8b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1477ec9bd9bbd56d10d2ccd58251fd014056b5dd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62919071"
 ---
 # <a name="idebugidecallbackdisplaymessage"></a>IDebugIDECallback::DisplayMessage
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Sendet die angegebenen Meldungszeichenfolge Ausgabefenster des Debuggers.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT DisplayMessage (  
    LPCOLESTR szMessage  
 );  

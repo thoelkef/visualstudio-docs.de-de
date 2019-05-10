@@ -1,14 +1,9 @@
 ---
 title: Seite "Anwendung", Projekt-Designer (C#) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesApplicationWPF
 - cs.ProjectPropertiesApplication
@@ -19,18 +14,17 @@ ms.assetid: f13701a8-4e2e-4474-9d60-bb43decbe0c1
 caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4a130a04be7a0645fef44ff6c8ae9dcc31b55dcf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 43f3a1c388a7b29fe83654d89b63e3fd304ebfa0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437257"
 ---
 # <a name="application-page-project-designer-c"></a>Seite "Anwendung", Projekt-Designer (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Legen Sie auf der Seite **Anwendung** des **Projekt-Designers** die Anwendungseinstellungen und -eigenschaften des Projekts fest.  
   
  Um auf die Seite **Anwendung** zuzugreifen, wählen Sie im **Projektmappen-Explorer** einen Projektknoten (nicht den Knoten **Projektmappen** aus. Wählen Sie dann in der Menüleiste die Option **Projekt** und dann **Eigenschaften** aus. Wenn der Projekt-Designer angezeigt wird, klicken Sie auf die Registerkarte **Anwendung**.  
@@ -56,7 +50,7 @@ Legen Sie auf der Seite **Anwendung** des **Projekt-Designers** die Anwendungsei
  Standardmäßig entspricht der Wert dem Zielframework, das Sie im Dialogfeld **Neues Projekt** ausgewählt haben.  
   
 > [!NOTE]
->  Die im Dialogfeld [Erforderliche Komponenten](../../ide/reference/prerequisites-dialog-box.md) aufgelisteten Pakete mit erforderlichen Komponenten werden automatisch festgelegt, wenn Sie das Dialogfeld zum ersten Mal öffnen. Wenn im Nachhinein Änderungen am Zielframework des Projekts vorgenommen werden, müssen die erforderlichen Komponenten manuell ausgewählt werden, um dem neuen Zielframework zu entsprechen.  
+> Die im Dialogfeld [Erforderliche Komponenten](../../ide/reference/prerequisites-dialog-box.md) aufgelisteten Pakete mit erforderlichen Komponenten werden automatisch festgelegt, wenn Sie das Dialogfeld zum ersten Mal öffnen. Wenn im Nachhinein Änderungen am Zielframework des Projekts vorgenommen werden, müssen die erforderlichen Komponenten manuell ausgewählt werden, um dem neuen Zielframework zu entsprechen.  
   
  Weitere Informationen finden Sie unter [Gewusst wie: Bestimmte .NET Framework-Version als Ziel](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) und [Übersicht über die Ausrichtung auf mehrere Zielversionen in Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).  
   
@@ -68,7 +62,7 @@ Legen Sie auf der Seite **Anwendung** des **Projekt-Designers** die Anwendungsei
  Wenn Sie die Option **WinMD-Datei** angeben, können Typen in eine beliebige Windows Runtime-Programmiersprache projiziert werden. Wenn Sie die Ausgabe des Projekts als WinMD-Datei packen, können Sie eine Anwendung in mehreren Sprachen codieren und einer Interaktion der verschiedenen Codes erreichen, als ob sie in derselben Sprache geschrieben wären. Sie können diese Option für Projektmappen festlegen, die auf Windows Runtime-Bibliotheken abzielen, beispielsweise [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]-Apps. Weitere Informationen finden Sie unter [Erstellen von Windows-Runtime-Komponenten in C# und Visual Basic](http://go.microsoft.com/fwlink/?LinkId=231895).  
   
 > [!NOTE]
->  Die Windows Runtime kann Typen so projizieren, dass sie unabhängig von der verwendeten Sprache als systemeigene Objekte erscheinen. Beispielsweise verwenden JavaScript-Anwendungen, die mit der Windows Runtime interagieren, diese als JavaScript-Objektsatz, und C#-Anwendungen benutzen die Bibliothek als eine Sammlung von .NET-Objekten. Wenn Sie die Ausgabe des Projekts als WinMD-Datei packen, können Sie die gleiche Technologie nutzen, die Windows Runtime verwendet.  
+> Die Windows Runtime kann Typen so projizieren, dass sie unabhängig von der verwendeten Sprache als systemeigene Objekte erscheinen. Beispielsweise verwenden JavaScript-Anwendungen, die mit der Windows Runtime interagieren, diese als JavaScript-Objektsatz, und C#-Anwendungen benutzen die Bibliothek als eine Sammlung von .NET-Objekten. Wenn Sie die Ausgabe des Projekts als WinMD-Datei packen, können Sie die gleiche Technologie nutzen, die Windows Runtime verwendet.  
   
  Weitere Informationen über die Eigenschaft **Anwendungstyp** finden Sie unter [/target (C#-Compileroptionen)](http://msdn.microsoft.com/library/a18bbd8e-bbf7-49e7-992c-717d0eb1f76f). Informationen zum programmgesteuerten Zugreifen auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.OutputType%2A>.  
   
@@ -108,6 +102,3 @@ Legen Sie auf der Seite **Anwendung** des **Projekt-Designers** die Anwendungsei
 ## <a name="see-also"></a>Siehe auch  
 [Verwalten von Anwendungseigenschaften](../../ide/application-properties.md)  
  [Writing Code in Office Solutions](http://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
-
-
-

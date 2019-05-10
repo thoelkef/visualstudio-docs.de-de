@@ -1,14 +1,9 @@
 ---
 title: IDebugBreakpointBoundEvent2::EnumBoundBreakpoints | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugBreakpointBoundEvent2::EnumBoundBreakpoints
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 1f588feb-522e-488d-be92-7bc19b9e3688
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a0cd3a74c7d9f3b2a7bc76874c3f64afb44ca277
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bc3d38344dccf93f4b032357b2cdef88a0a4a242
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746149"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58957657"
 ---
 # <a name="idebugbreakpointboundevent2enumboundbreakpoints"></a>IDebugBreakpointBoundEvent2::EnumBoundBreakpoints
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ int EnumBoundBreakpoints( 
  [out] Gibt eine [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) -Objekt, das Listet alle Haltepunkte von diesem Ereignis gebunden.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` treten keine gebundene Haltepunkte; andernfalls wird ein Fehlercode zurückgegeben.  
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` treten keine gebundene Haltepunkte; andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
  Die Liste der gebundene Haltepunkte für diese Grenze auf dieses Ereignis ist und möglicherweise nicht die gesamte Liste der Haltepunkte ein ausstehender Haltepunkt gebunden. Rufen Sie zum Abrufen einer Liste aller Haltepunkte, die an ein ausstehender Haltepunkt gebunden der [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md) -Methode zum Abrufen von der zugeordneten [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) Objekt und rufen Sie dann die [ EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) -Methode zum Abrufen einer [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) Objekt, das die gebundene Haltepunkte für den ausstehenden Haltepunkt enthält.  
@@ -87,4 +82,3 @@ STDMETHODIMP CBreakpointSetDebugEventBase::EnumBoundBreakpoints(
  [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md)   
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   
  [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)
-

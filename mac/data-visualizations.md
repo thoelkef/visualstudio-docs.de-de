@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 896fa055c536f9f3ee693773ad4f4ae0edd7e7fe
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 0b9ec63855eff0b69f5523b1905b79d360509e67
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349438"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62984379"
 ---
 # <a name="data-visualizations"></a>Datenvisualisierungen
 
@@ -88,18 +88,18 @@ Einige andere Typen, die ebenfalls über ihre eigenen Inline-Schnellansichten ve
 
 ![Andere Visualisierung](media/data-visualizations-image23.png)
 
-*   **Primitive**
-    *   Dadurch wird der Rohwert des primitiven Typs angezeigt.
-*   **Enum**
-    *   Dadurch wird der Feldwert ohne den Qualifizierer des Enumerationstyps angezeigt.
-*   **Tuple**
-    *   Wird im Format „(,)“ angezeigt.
-*   **NULL**
-    *   Zeigt den Wert „NULL“ an.
-*   **URL**
-    *   Dadurch wird ein anklickbarer Link angezeigt.
-*   **IntPtr**
-    *   Dadurch wird eine hexadezimale Darstellung des IntPtr angezeigt.
+* **Primitive**
+  * Dadurch wird der Rohwert des primitiven Typs angezeigt.
+* **Enum**
+  * Dadurch wird der Feldwert ohne den Qualifizierer des Enumerationstyps angezeigt.
+* **Tuple**
+  * Wird im Format „(,)“ angezeigt.
+* **NULL**
+  * Zeigt den Wert „NULL“ an.
+* **URL**
+  * Dadurch wird ein anklickbarer Link angezeigt.
+* **IntPtr**
+  * Dadurch wird eine hexadezimale Darstellung des IntPtr angezeigt.
 
 ## <a name="see-also"></a>Siehe auch
 

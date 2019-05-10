@@ -1,11 +1,10 @@
 ---
 title: Refactoring des Umbenennens
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.rename
 dev_langs:
@@ -13,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a24c8a44cbd7d3c889d92c34c9eac0c5b015be65
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 48e45373c41358ba3e9c2d70222ace07cdf1b59e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62812093"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Refactoring des Umbenennens eines Codesymbols
 

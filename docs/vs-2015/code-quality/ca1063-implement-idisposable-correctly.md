@@ -1,14 +1,9 @@
 ---
-title: 'CA1063: Implementieren IDisposable korrekt | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'CA1063: IDisposable korrekt implementieren | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - ImplementIDisposableCorrectly
 - CA1063
@@ -20,14 +15,14 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 94d13514800bac80723031c6bba7920d28ac83e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 822ad7bea622400bfabd5a96a42d81ed4eabf0c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877295"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081397"
 ---
-# <a name="ca1063-implement-idisposable-correctly"></a>CA1063: IDisposable korrekt implementieren
+# <a name="ca1063-implement-idisposable-correctly"></a>CA1063: IDisposable korrekt implementieren.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -64,23 +59,23 @@ ms.locfileid: "49877295"
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Überprüfen Sie den Code, und bestimmen Sie, welche der folgenden Lösungen diese Verletzung behoben werden.
 
--   Entfernen Sie IDisposable aus der Liste der Schnittstellen, die von implementiert werden {0} und überschreiben Sie stattdessen die Dispose-Implementierung der Basisklasse.
+- Entfernen Sie IDisposable aus der Liste der Schnittstellen, die von implementiert werden {0} und überschreiben Sie stattdessen die Dispose-Implementierung der Basisklasse.
 
--   Entfernen Sie den Finalizer von Typ {0}, überschreiben Sie Dispose (Bool disposing), und platzieren Sie die Finalize-Logik in dem Codepfad, in dem "disposing" "false".
+- Entfernen Sie den Finalizer von Typ {0}, überschreiben Sie Dispose (Bool disposing), und platzieren Sie die Finalize-Logik in dem Codepfad, in dem "disposing" "false".
 
--   Entfernen Sie {0}, überschreiben Sie Dispose (Bool disposing), und platzieren Sie die Dispose-Logik in dem Codepfad, in dem "disposing" "true".
+- Entfernen Sie {0}, überschreiben Sie Dispose (Bool disposing), und platzieren Sie die Dispose-Logik in dem Codepfad, in dem "disposing" "true".
 
--   Sicherstellen, dass {0} als öffentlich deklariert und versiegelt.
+- Sicherstellen, dass {0} als öffentlich deklariert und versiegelt.
 
--   Benennen Sie {0} in "Dispose", und stellen Sie sicher, dass es als öffentlich und versiegelt deklariert ist.
+- Benennen Sie {0} in "Dispose", und stellen Sie sicher, dass es als öffentlich und versiegelt deklariert ist.
 
--   Stellen Sie sicher, dass {0} deklariert, wie Sie geschützt haben, virtuelle und nicht versiegelt ist.
+- Stellen Sie sicher, dass {0} deklariert, wie Sie geschützt haben, virtuelle und nicht versiegelt ist.
 
--   Ändern Sie {0} , damit es Dispose(true) aufruft, ruft dann die GC. SuppressFinalize in der aktuellen Objektinstanz aufgerufen ("this" oder "Me" in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]), und gibt dann zurück.
+- Ändern Sie {0} , damit es Dispose(true) aufruft, ruft dann die GC. SuppressFinalize in der aktuellen Objektinstanz aufgerufen ("this" oder "Me" in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]), und gibt dann zurück.
 
--   Ändern Sie {0} so, dass Dispose(false) aufgerufen und gibt dann zurück.
+- Ändern Sie {0} so, dass Dispose(false) aufgerufen und gibt dann zurück.
 
--   Wenn Sie eine unversiegelte "IDisposable"-Klasse schreiben, stellen Sie sicher, dass die Implementierung der "IDisposable" dem Muster folgt, das weiter oben in diesem Abschnitt beschrieben wird.
+- Wenn Sie eine unversiegelte "IDisposable"-Klasse schreiben, stellen Sie sicher, dass die Implementierung der "IDisposable" dem Muster folgt, das weiter oben in diesem Abschnitt beschrieben wird.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Unterdrücken Sie keine Warnung dieser Regel.
@@ -129,6 +124,3 @@ public class Resource : IDisposable
     }
 }
 ```
-
-
-

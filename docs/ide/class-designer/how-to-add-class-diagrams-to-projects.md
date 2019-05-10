@@ -1,7 +1,6 @@
 ---
 title: 'Vorgehensweise: Hinzufügen von Klassendiagrammen zu Projekten (Klassen-Designer)'
 ms.date: 05/08/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams, creating
@@ -9,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 0eac1b54-2711-4e4b-9654-a0c429c08c8f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4df2047109ebd89b7dee621373bf30b9f55747a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 88e4f63646883c8d48dbd62fbd03deaddff8b8e2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866451"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975584"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>Vorgehensweise: Hinzufügen von Klassendiagrammen zu Projekten
 
@@ -27,7 +26,7 @@ Sie können Klassendiagramme nicht aus Projekten erstellen, deren Code in mehrer
 
 ## <a name="install-the-class-designer-component"></a>Installieren der Klassen-Designer-Komponente
 
-Wenn Sie Visual Studio 2017 ausführen und die Komponente **Klassen-Designer** nicht installiert haben, befolgen Sie die nachstehenden Schritte, um sie zu installieren.
+Wenn Sie die Komponente **Klassen-Designer** nicht installiert haben, befolgen Sie die nachstehenden Schritte, um sie zu installieren.
 
 1. Öffnen Sie den **Visual Studio-Installer** über das Windows-Startmenü der durch Auswahl von **Extras** > **Get Tools and Features** (Tools und Features abrufen) über die Menüleiste in Visual Studio.
 

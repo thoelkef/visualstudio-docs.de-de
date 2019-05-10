@@ -1,14 +1,9 @@
 ---
 title: SuspendTracking| Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 api_name:
 - SuspendTracking
 api_location:
@@ -21,18 +16,17 @@ ms.assetid: f5e06e5a-8083-444c-99c1-07ba834226b5
 caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 37f70e4776a2a93a593214c18ab07f4fcfcf0bcc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 3b2d7811a40e87cb5fd19785fc387aad02a7ad07
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299733"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652927"
 ---
 # <a name="suspendtracking"></a>SuspendTracking
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Hält die Nachverfolgung des aktuellen Kontexts an.  
   
 ## <a name="syntax"></a>Syntax  
@@ -42,13 +36,10 @@ HRESULT WINAPI SuspendTracking(void);
 ```  
   
 ## <a name="return-value"></a>Rückgabewert  
- [HRESULT] (<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) mit dem [erfolgreich] (<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->)-Bit festgelegt ist, wenn die nachverfolgung angehalten wurde.  
+ Ein [HRESULT])<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) mit der [erfolgreich] ()<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->)-Bit festgelegt ist, wenn die nachverfolgung angehalten wurde.  
   
 ## <a name="requirements"></a>Anforderungen  
  **Header:** FileTracker.h  
   
 ## <a name="see-also"></a>Siehe auch  
  [ResumeTracking](../msbuild/resumetracking.md)
-
-
-

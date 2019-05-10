@@ -1,27 +1,22 @@
 ---
 title: Dialogfeld "Fenstereigenschaften" | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Window Properties dialog box
 ms.assetid: c70e9429-fb0c-452a-9626-79f168393e44
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0b10fb130e5f2f584369a363491c5317e83aaf80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9eb07b20c08945b6a9f253d0ab634dca1c767d59
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773963"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58957422"
 ---
 # <a name="window-properties-dialog-box"></a>Fenstereigenschaften (Dialogfeld)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,19 +24,19 @@ ms.locfileid: "51773963"
 Verwenden Sie das Dialogfeld zu öffnen, um weitere Informationen zu einem bestimmten Fenster. Um das Dialogfeld anzuzeigen, den Fokus auf die [Windows-Ansicht](../debugger/windows-view.md) Fenster. Wählen Sie einen beliebigen Knoten im Fenster in der Struktur aus, und wählen Sie dann **Eigenschaften** aus der **Ansicht** Menü.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- [Registerkarte "Allgemein". Dialogfeld "Fenstereigenschaften"](../debugger/general-tab-window-properties-dialog-box.md)  
+ [Allgemein (Registerkarte). Fenstereigenschaften (Dialogfeld)](../debugger/general-tab-window-properties-dialog-box.md)  
  Zeigt Informationen über das ausgewählte Fenster.  
   
- [Registerkarte "Formatvorlagen". Dialogfeld "Fenstereigenschaften"](../debugger/styles-tab-window-properties-dialog-box.md)  
+ [Stile (Registerkarte). Fenstereigenschaften (Dialogfeld)](../debugger/styles-tab-window-properties-dialog-box.md)  
  Zeigt auf das ausgewählte Fenster Stile angewendet.  
   
- [Windows-Registerkarte. Dialogfeld "Fenstereigenschaften"](../debugger/windows-tab-window-properties-dialog-box.md)  
+ [Fenster (Registerkarte). Fenstereigenschaften (Dialogfeld)](../debugger/windows-tab-window-properties-dialog-box.md)  
  Zeigt Informationen zu Windows, die im Zusammenhang mit der das ausgewählte Fenster.  
   
- [Registerkarte "Klasse". Dialogfeld "Fenstereigenschaften"](../debugger/class-tab-window-properties-dialog-box.md)  
+ [Klasse (Registerkarte). Fenstereigenschaften (Dialogfeld)](../debugger/class-tab-window-properties-dialog-box.md)  
  Zeigt Informationen zu der Klasse des ausgewählten Fensters auf.  
   
- [Registerkarte "Prozesse". Dialogfeld "Fenstereigenschaften"](../debugger/process-tab-window-properties-dialog-box.md)  
+ [Prozess (Registerkarte). Fenstereigenschaften (Dialogfeld)](../debugger/process-tab-window-properties-dialog-box.md)  
  Identifiziert den Prozess des ausgewählten Fensters auf.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
@@ -65,6 +60,3 @@ Verwenden Sie das Dialogfeld zu öffnen, um weitere Informationen zu einem besti
   
  [Verwenden von Spy++](../debugger/using-spy-increment.md)  
  Führt das Tool Spy++ und erläutert, wie sie verwendet werden kann.
-
-
-

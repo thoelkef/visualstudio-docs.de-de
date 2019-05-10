@@ -13,17 +13,15 @@ helpviewer_keywords:
 ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 471b62c35cbe7098d52e9cbeb08be29cd39c7d58
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: f0d1a9e24c965af9513b3c2645bcee35f916f436
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180424"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62565735"
 ---
 # <a name="troubleshoot-service-references"></a>Problembehandlung bei Dienstverweisen
 
@@ -35,9 +33,9 @@ Bei der Rückkehr eine `DataSet` oder `DataTable` aus einem Dienst möglicherwei
 
 So beheben Sie diesen Fehler
 
-1.  In **Projektmappen-Explorer**, doppelklicken Sie auf die *"App.config"* zu öffnenden Datei.
+1. In **Projektmappen-Explorer**, doppelklicken Sie auf die *"App.config"* zu öffnenden Datei.
 
-2.  Suchen Sie die `MaxReceivedMessageSize` Eigenschaft und ändern Sie ihn in einen größeren Wert.
+2. Suchen Sie die `MaxReceivedMessageSize` Eigenschaft und ändern Sie ihn in einen größeren Wert.
 
 ## <a name="cannot-find-a-service-in-my-solution"></a>Einen Dienst in meiner Lösung wurde nicht gefunden.
 
@@ -45,17 +43,17 @@ Beim Klicken auf die **Discover** Schaltfläche der **Hinzufügen von Dienstverw
 
 So beheben Sie diesen Fehler
 
--   In **Projektmappen-Explorer**mit der rechten Maustaste auf das WCF-Dienstbibliothek-Projekt, und klicken Sie auf **erstellen**.
+- In **Projektmappen-Explorer**mit der rechten Maustaste auf das WCF-Dienstbibliothek-Projekt, und klicken Sie auf **erstellen**.
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>Fehler beim Zugriff auf einen Dienst über einen Remotedesktop
 
-Wenn ein Benutzer greift auf eine Web-gehosteten WCF-Diensts über eine Remotedesktopverbindung und der Benutzer verfügt nicht über die administrative Berechtigungen, wird NTLM-Authentifizierung verwendet. Wenn der Benutzer nicht über administrative Berechtigungen verfügt, kann der Benutzer erhalten die folgende Fehlermeldung angezeigt: "die HTTP-Anforderung ist mit dem Clientauthentifizierungsschema"Anonym"nicht autorisiert. Der Authentifizierungsheader, die vom Server empfangen wurde "NTLM"."
+Wenn ein Benutzer greift auf eine Web-gehosteten WCF-Diensts über eine Remotedesktopverbindung und der Benutzer verfügt nicht über die administrative Berechtigungen, wird NTLM-Authentifizierung verwendet. Wenn der Benutzer nicht über administrative Berechtigungen verfügt, kann der Benutzer die folgende Fehlermeldung angezeigt: "Die HTTP-Anforderung ist mit dem Clientauthentifizierungsschema"Anonym"nicht autorisiert. Der Authentifizierungsheader, die vom Server empfangen wurde "NTLM"."
 
 So beheben Sie diesen Fehler
 
-1.  Öffnen Sie im Websiteprojekt die **Eigenschaften** Seiten.
+1. Öffnen Sie im Websiteprojekt die **Eigenschaften** Seiten.
 
-2.  Auf der **Startoptionen** Registerkarte die **NTLM-Authentifizierung** Kontrollkästchen.
+2. Auf der **Startoptionen** Registerkarte die **NTLM-Authentifizierung** Kontrollkästchen.
 
     > [!NOTE]
     > Sie sollten die NTLM-Authentifizierung für Websites nur deaktivieren, die ausschließlich die WCF-Dienste enthalten. Sicherheit für WCF-Diensten wird durch die Konfiguration in verwaltet die *"Web.config"* Datei. Dadurch wird die NTLM-Authentifizierung nicht erforderlich.
@@ -76,19 +74,19 @@ Wenn das Dienstprojekt aus der Projektmappe entfernt wird, wird diese explizite 
 
 Um diesen Fehler zu beheben, müssen Sie das Dienstprojekt manuell neu zu erstellen:
 
-1.  Klicken Sie im Menü **Extras** auf **Optionen**.
+1. Klicken Sie im Menü **Extras** auf **Optionen**.
 
-2.  In der **Optionen** Dialogfeld erweitern Sie **Projekte und Projektmappen**, und wählen Sie dann **allgemeine**.
+2. In der **Optionen** Dialogfeld erweitern Sie **Projekte und Projektmappen**, und wählen Sie dann **allgemeine**.
 
-3.  Stellen Sie sicher, dass die **Erweiterte Buildkonfigurationen anzeigen** Kontrollkästchen ausgewählt ist, und klicken Sie dann auf **OK**.
+3. Stellen Sie sicher, dass die **Erweiterte Buildkonfigurationen anzeigen** Kontrollkästchen ausgewählt ist, und klicken Sie dann auf **OK**.
 
-4.  Laden Sie das WCF-Dienstprojekt.
+4. Laden Sie das WCF-Dienstprojekt.
 
-5.  In der **Configuration Manager** (Dialogfeld), legen die **aktive Projektmappenkonfiguration** zu **Debuggen**. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen](../ide/how-to-create-and-edit-configurations.md).
+5. In der **Configuration Manager** (Dialogfeld), legen die **aktive Projektmappenkonfiguration** zu **Debuggen**. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen](../ide/how-to-create-and-edit-configurations.md).
 
-6.  In **Projektmappen-Explorer**, wählen Sie das WCF-Dienst-Projekt.
+6. In **Projektmappen-Explorer**, wählen Sie das WCF-Dienst-Projekt.
 
-7.  Auf der **erstellen** Menü klicken Sie auf **Rebuild** das WCF-Dienst-Projekt neu erstellen.
+7. Auf der **erstellen** Menü klicken Sie auf **Rebuild** das WCF-Dienst-Projekt neu erstellen.
 
 ## <a name="wcf-data-services-do-not-display-in-the-browser"></a>WCF Data Services werden nicht im Browser angezeigt.
 
@@ -96,13 +94,13 @@ Wenn versucht wird, zeigen Sie eine XML-Darstellung der Daten in einem [!INCLUDE
 
 Um diesen Fehler zu beheben, deaktivieren Sie RSS-Feeds:
 
-1.  In Internet Explorer auf die **Tools** Menü klicken Sie auf **Internetoptionen**.
+1. Klicken Sie in Internet Explorer im Menü **Extras** auf **Internetoptionen**.
 
-2.  Auf der **Content** Registerkarte die **Feeds** auf **Einstellungen**.
+2. Auf der **Content** Registerkarte die **Feeds** auf **Einstellungen**.
 
-3.  In der **Feedeinstellungen** Dialogfeld das Kontrollkästchen der **Feedleseanzeige einschalten** , und klicken Sie dann auf **OK**.
+3. In der **Feedeinstellungen** Dialogfeld das Kontrollkästchen der **Feedleseanzeige einschalten** , und klicken Sie dann auf **OK**.
 
-4.  Klicken Sie auf **OK** schließen die **Internetoptionen** Dialogfeld.
+4. Klicken Sie auf **OK**, um das Dialogfeld **Internetoptionen** zu schließen.
 
 ## <a name="see-also"></a>Siehe auch
 

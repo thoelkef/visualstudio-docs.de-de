@@ -12,44 +12,44 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], custom assembly
 - BDC [SharePoint development in Visual Studio], custom assembly
 - BDC [SharePoint development in Visual Studio], add reference
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3b53b7c8b5cf4dd2c13adbb53a9724a8adaf2328
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: 6de3313dad06c009244a8b784e81bf7d2a768c3b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919520"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443117"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>Vorgehensweise: Einfügen einer benutzerdefinierten Assembly in eine BDC-Funktion
-  Das Projekt kann aus anderen Projekten in der gleichen Projektmappe auf Assemblys verweisen. Allerdings müssen Sie diese Assemblys auch das Feature-Datei des Projekts hinzufügen, mit der **weisen referenzierten Assemblys, LobSystems** Dialogfeld.  
-  
+  Das Projekt kann aus anderen Projekten in der gleichen Projektmappe auf Assemblys verweisen. Allerdings müssen Sie diese Assemblys auch das Feature-Datei des Projekts hinzufügen, mit der **weisen referenzierten Assemblys, LobSystems** Dialogfeld.
+
 ### <a name="to-include-a-custom-assembly-in-a-business-data-connectivity-bdc-feature"></a>Um eine benutzerdefinierte Assembly in einem Business Data Connectivity (BDC)-Feature einzuschließen.
-  
-1.  In **Projektmappen-Explorer**, wählen Sie den Ordner mit dem BDC-Modell.  
-  
-2.  Klicken Sie im Menü **Ansicht** auf **Eigenschaftenfenster**.  
-  
-3.  In der **Eigenschaften** Fenster, wählen Sie die **Assemblys** -Eigenschaft, und klicken Sie dann die Schaltfläche (![ASP.NET Mobile-Designer Ellipse](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile Designer Ellipse")).  
-  
-     Die **weisen referenzierten Assemblys, LobSystems** Dialogfeld wird angezeigt.  
-  
-4.  In der **wählen Sie eine Assembly** Liste, und wählen Sie die benutzerdefinierte Assembly.  
-  
-    > [!NOTE]  
-    >  Assemblys werden nur in der **weisen referenzierten Assemblys, LobSystems** im Dialogfeld, wenn Sie einen Verweis auf das Projekt hinzugefügt haben, die die Assembly enthält. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen oder Entfernen von verweisen mithilfe des Dialogfelds "Verweis" hinzufügen "](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
-  
-5.  In der **Verweiseigenschaften** gruppieren, öffnen Sie die für die angezeigte Liste der **LobSystem-Bereich** -Eigenschaft, wählen Sie die LOB-System, der die Methoden, die die benutzerdefinierte Assembly, und wählen Sie dann die **OK**  Schaltfläche.  
-  
-    > [!NOTE]  
-    >  Um Code in der benutzerdefinierten Assembly zu debuggen, müssen Sie die Assembly dem Lösungspaket hinzufügen. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen und Entfernen zusätzlicher Assemblys](../sharepoint/how-to-add-and-remove-additional-assemblies.md).  
-  
+
+1. In **Projektmappen-Explorer**, wählen Sie den Ordner mit dem BDC-Modell.
+
+2. Klicken Sie im Menü **Ansicht** auf **Eigenschaftenfenster**.
+
+3. In der **Eigenschaften** Fenster, wählen Sie die **Assemblys** -Eigenschaft, und klicken Sie dann die Schaltfläche (![ASP.NET Mobile-Designer Ellipse](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile Designer Ellipse")).
+
+     Die **weisen referenzierten Assemblys, LobSystems** Dialogfeld wird angezeigt.
+
+4. In der **wählen Sie eine Assembly** Liste, und wählen Sie die benutzerdefinierte Assembly.
+
+    > [!NOTE]
+    > Assemblys werden nur in der **weisen referenzierten Assemblys, LobSystems** im Dialogfeld, wenn Sie einen Verweis auf das Projekt hinzugefügt haben, die die Assembly enthält. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen oder Entfernen von verweisen mithilfe des Dialogfelds "Verweis" hinzufügen "](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
+
+5. In der **Verweiseigenschaften** gruppieren, öffnen Sie die für die angezeigte Liste der **LobSystem-Bereich** -Eigenschaft, wählen Sie die LOB-System, der die Methoden, die die benutzerdefinierte Assembly, und wählen Sie dann die **OK**  Schaltfläche.
+
+    > [!NOTE]
+    > Um Code in der benutzerdefinierten Assembly zu debuggen, müssen Sie die Assembly dem Lösungspaket hinzufügen. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen und Entfernen zusätzlicher Assemblys](../sharepoint/how-to-add-and-remove-additional-assemblies.md).
+
 ## <a name="see-also"></a>Siehe auch
- [Vorgehensweise: Verwenden Sie eine Ressourcendatei zum Angeben von lokalisierten Namen, Eigenschaften und Berechtigungen](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)   
- [Vorgehensweise: Hinzufügen einer vorhandenen BDC-Modelldatei zu einem SharePoint-Projekt](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)   
- [Erstellen eines Business Data Connectivity-Modells](../sharepoint/creating-a-business-data-connectivity-model.md)   
- [Vorgehensweise: Erstellen eines BDC-Modells](../sharepoint/how-to-create-a-bdc-model.md)   
- [Integragte Geschäftsdaten in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
+- [Vorgehensweise: Verwenden Sie eine Ressourcendatei zum Angeben von lokalisierten Namen, Eigenschaften und Berechtigungen](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)
+- [Vorgehensweise: Hinzufügen einer vorhandenen BDC-Modelldatei zu einem SharePoint-Projekt](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)
+- [Erstellen eines Business Data Connectivity-Modells](../sharepoint/creating-a-business-data-connectivity-model.md)
+- [Vorgehensweise: Erstellen eines BDC-Modells](../sharepoint/how-to-create-a-bdc-model.md)
+- [Integragte Geschäftsdaten in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)

@@ -1,14 +1,9 @@
 ---
 title: IDebugProcessEx2 | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProcessEx2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 44e309ba-1d6f-499b-aa7e-9b34858a6d57
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0b6b98d6b1f95171d4efb1e0d4bed040d9c1482d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: acdd887e3d1f1fd21c92ccd055bd7940b071ccbe
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721495"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62538264"
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ IDebugProcessEx2 : IUnknown
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
   
--   Die SDM-Aufrufe [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) auf eine `IDebugProcess2` Schnittstelle, um diese Schnittstelle zu erhalten.  
+- Die SDM-Aufrufe [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) auf eine `IDebugProcess2` Schnittstelle, um diese Schnittstelle zu erhalten.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
  Die folgende Tabelle zeigt die Methoden der `IDebugProcessEx2`.  
@@ -70,4 +65,3 @@ IDebugProcessEx2 : IUnknown
 ## <a name="see-also"></a>Siehe auch  
  [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
-

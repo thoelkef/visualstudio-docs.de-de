@@ -1,8 +1,6 @@
 ---
 title: Seite "Signierung", Projekt-Designer
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs.AddNewStrongNameKey
@@ -18,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: dab3ba13-2f92-4827-92bd-1be3c35bc48b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 859ec81ff3ed2c3b6385de1d093ba512203da9d9
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: 862f2ca7da96e7d084d2af7bfa53a5640bed22d8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459789"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950538"
 ---
 # <a name="signing-page-project-designer"></a>Seite "Signierung", Projekt-Designer
 Verwenden Sie die Seite **Signierung** des **Projekt-Designers**, um die Anwendungs- und Bereitstellungsmanifeste zu signieren. Außerdem können sie damit die Assembly signieren (Signierung mit starkem Namen).
@@ -40,7 +38,7 @@ Verwenden Sie die Seite **Signierung** des **Projekt-Designers**, um die Anwendu
 ## <a name="application-and-deployment-manifest-signing"></a>Signierung von Anwendungs- und Bereitstellungsmanifesten
  Kontrollkästchen **ClickOnce-Manifeste signieren**
 
- Setzen Sie in diesem Kontrollkästchen ein Häkchen, wenn Sie Anwendungs- und Bereitstellungsmanifeste mit einem öffentlichen bzw. privaten Schlüsselpaar signieren möchten. Weitere Informationen dazu finden Sie unter [Vorgehensweise: Signieren von Anwendungs- und Bereitstellungsmanifesten](../../ide/how-to-sign-application-and-deployment-manifests.md).
+ Setzen Sie in diesem Kontrollkästchen ein Häkchen, wenn Sie Anwendungs- und Bereitstellungsmanifeste mit einem öffentlichen bzw. privaten Schlüsselpaar signieren möchten. Weitere Informationen hierzu finden Sie unter [Vorgehensweise: Signieren von Anwendungs- und Bereitstellungsmanifesten](../../ide/how-to-sign-application-and-deployment-manifests.md).
 
  Schaltfläche **Aus Speicher auswählen**
 
@@ -71,9 +69,9 @@ Verwenden Sie die Seite **Signierung** des **Projekt-Designers**, um die Anwendu
 ## <a name="assembly-signing"></a>Signieren von Assemblys
  Kontrollkästchen **Assembly signieren**
 
- Setzen Sie ein Häkchen in diesem Kontrollkästchen, um die Assembly zu signieren und eine Schlüsseldatei mit starkem Namen zu erstellen. Weitere Informationen zum Signieren von Assemblys mithilfe des **Projekt-Designers** finden Sie unter [Vorgehensweise: Signieren einer Assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
+ Setzen Sie ein Häkchen in diesem Kontrollkästchen, um die Assembly zu signieren und eine Schlüsseldatei mit starkem Namen zu erstellen. Weitere Informationen zum Signieren von Assemblys mithilfe von **Projekt-Designer** finden Sie unter [Vorgehensweise: Signieren von Assemblys (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
 
- Diese Option verwendet das Tool „AI.exe“, das vom Windows Software Development Kit (SDK) zum Signieren der Assembly bereitgestellt wird. Weitere Informationen zu AI.exe finden Sie unter [Vorgehensweise: Signieren einer Assembly mit einem starken Namen](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
+ Diese Option verwendet das Tool „AI.exe“, das vom Windows Software Development Kit (SDK) zum Signieren der Assembly bereitgestellt wird. Weitere Informationen zu diesem Tool erhalten Sie im Artikel [Vorgehensweise: Signieren einer Assembly mit einem starken Namen](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
 
  Liste **Schlüsseldatei mit starkem Namen auswählen**
 
@@ -96,12 +94,11 @@ Verwenden Sie die Seite **Signierung** des **Projekt-Designers**, um die Anwendu
 > [!NOTE]
 > Beim Signieren einer Assembly haben Sie möglicherweise nicht immer Zugriff auf einen privaten Schlüssel. Eine Organisation kann z.B. ein streng geheim gehaltenes Schlüsselpaar verwenden, auf das Entwickler nicht täglich zugreifen können. Möglicherweise steht der öffentliche Schlüssel zur Verfügung, während der Zugriff auf den privaten Schlüssel nur einigen Wenigen erlaubt ist. In einem solchen Fall können Sie die *verzögerte* oder *Teilsignierung* verwenden, um den öffentlichen Schlüssel bereitzustellen. Dadurch wird das Hinzufügen des privaten Schlüssels solange verzögert, bis die Assembly übergeben wird.
 
-
 ## <a name="see-also"></a>Siehe auch
 
 - [Projekteigenschaftenverweise](../../ide/reference/project-properties-reference.md)
 - [Verwalten der Signierung von Assemblys und Manifesten](../../ide/managing-assembly-and-manifest-signing.md)
-- [Gewusst wie: Signieren von Anwendungs- und Bereitstellungsmanifesten](../../ide/how-to-sign-application-and-deployment-manifests.md)
-- [How to: Sign an Assembly (Visual Studio) (Vorgehensweise: Signieren einer Assembly (Visual Studio))](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)
+- [Vorgehensweise: Signieren von Anwendungs- und Bereitstellungsmanifesten](../../ide/how-to-sign-application-and-deployment-manifests.md)
+- [Vorgehensweise: Signieren einer Assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)
 - [Vorgehensweise: Signieren einer Assembly mit einem starken Namen](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
 - [Assemblys mit starkem Namen](/dotnet/framework/app-domains/strong-named-assemblies)

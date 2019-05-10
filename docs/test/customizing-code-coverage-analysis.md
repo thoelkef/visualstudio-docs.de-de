@@ -1,19 +1,18 @@
 ---
 title: Anpassen der Code Coverage-Analyse
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e640fd14c6fd5b465a52ffe319814083958db676
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8749cd7757796a1b716b1ac9db086d3155f94694
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965549"
 ---
 # <a name="customize-code-coverage-analysis"></a>Anpassen der Code Coverage-Analyse
 

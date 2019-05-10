@@ -1,30 +1,32 @@
 ---
 title: IEnumDebugAddresses::Clone | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IEnumDebugAddresses::Clone
 helpviewer_keywords:
 - IEnumDebugAddresses::Clone method
 ms.assetid: 71189a00-34eb-4c71-b96e-8bd6e70c6966
-author: gregvanl
+caps.latest.revision: 6
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 14c7b3c21c22bbca975c0425284e6560a2dde115
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 061f893d83f6fc2225ccc3219f1243338b55a404
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53839387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62915061"
 ---
 # <a name="ienumdebugaddressesclone"></a>IEnumDebugAddresses::Clone
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Diese Methode gibt eine Kopie der aktuellen Enumeration als separates Objekt zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT Clone(  
    IEnumDebugAddresses** ppEnum  
 );  

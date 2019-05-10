@@ -8,33 +8,32 @@ ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e8c42bd40528dfe8567219bdc2bc4a8d216e7c6b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3d6e3479fe27c5d88b58f096ab5405d75c6c98e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899755"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62960572"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Entwickeln von JavaScript- und TypeScript-Code in Visual Studio ohne Projektmappen oder Projekte
 
-Mit Visual Studio 2017 wird die Möglichkeit eingeführt, [Code ohne Projekte oder Projektmappen zu entwickeln](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md). Dadurch können Sie einen Ordner mit Code öffnen und sofort mit umfassender Editor-Unterstützung wie IntelliSense, Suche, Refactoring, Debuggen und vielem mehr arbeiten.
-Neben diesen Features unterstützen die Node.js-Tools für Visual Studio das Erstellen von TypeScript-Dateien, das Verwalten von NPM-Paketen sowie das Ausführen von NPM-Skripts.
+Mit Visual Studio 2017 wurde die Möglichkeit eingeführt, [Code ohne Projekte oder Projektmappen zu entwickeln](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md). Dadurch können Sie einen Ordner mit Code öffnen und sofort mit umfassender Editor-Unterstützung wie IntelliSense, Suche, Refactoring, Debuggen und vielem mehr arbeiten. Neben diesen Features unterstützen die Node.js-Tools für Visual Studio das Erstellen von TypeScript-Dateien, das Verwalten von NPM-Paketen sowie das Ausführen von NPM-Skripts.
 
-Wählen Sie zum Einstieg auf der Startseite, die angezeigt wird, wenn Sie Visual Studio öffnen, die Option **Ordner öffnen** aus. Sie können auch in der Symbolleiste **Datei** > **Öffnen** > **Ordner** auswählen. Im Projektmappen-Explorer werden alle Dateien im Ordner angezeigt und Sie können die Dateien zum Bearbeiten öffnen. Im Hintergrund werden die Dateien indiziert, um NPM-Features und Features zum Kompilieren und Debuggen zu aktivieren.
+Klicken Sie zunächst in der Symbolleiste auf **Datei** > **Öffnen** > **Ordner**. Im Projektmappen-Explorer werden alle Dateien im Ordner angezeigt und Sie können die Dateien zum Bearbeiten öffnen. Im Hintergrund werden die Dateien indiziert, um NPM-Features und Features zum Kompilieren und Debuggen zu aktivieren.
 
 > [!IMPORTANT]
-> Für viele in diesem Artikel beschriebene Features ist Visual Studio 2017 Version 15.8 erforderlich, so auch für die NPM-Integration.
+> Für viele in diesem Artikel beschriebene Features ist Visual Studio 2017 Version 15.8 oder höher erforderlich, so auch für die npm-Integration.
 
 ## <a name="npm-integration"></a>NPM-Integration
 
-Wenn der Ordner, den Sie öffnen, die Datei *package.json* enthält, können Sie mit der rechten Maustaste auf *package.json* klicken, um ein NPM-spezifisches Kontextmenü anzuzeigen. 
+Wenn der Ordner, den Sie öffnen, die Datei *package.json* enthält, können Sie mit der rechten Maustaste auf *package.json* klicken, um ein NPM-spezifisches Kontextmenü anzuzeigen.
 
-![NPM-Menü im Projektmappen-Explorer](../javascript/media/solution-explorer-npm-ctx.png) 
+![NPM-Menü im Projektmappen-Explorer](../javascript/media/solution-explorer-npm-ctx.png)
 
 Im Kontextmenü können Sie die durch NPM installierten Pakete auf dieselbe Weise verwalten, wie Sie [NPM-Pakete mit einer Projektdatei verwalten](npm-package-management.md).
 
@@ -43,7 +42,8 @@ Ferner können Sie über das Menü auch Skripts ausführen, die im `scripts`-Ele
 ## <a name="build-and-debug"></a>Kompilieren und Debuggen
 
 ### <a name="packagejson"></a>package.json
-Wenn die Datei *package.json* im Ordner ein `main`-Element angibt, ist der Befehl **Debuggen** im Kontextmenü für *package.json* verfügbar. Wenn Sie darauf klicken, wird *node.exe* mit dem angegebenen Skript als Argument ausgeführt.
+Wenn die Datei *package.json* im Ordner ein `main`-Element angibt, ist der Befehl **Debuggen** im Kontextmenü für *package.json* verfügbar.
+Wenn Sie darauf klicken, wird *node.exe* mit dem angegebenen Skript als Argument ausgeführt.
 
 ### <a name="javascript-files"></a>JavaScript-Dateien
 Sie können JavaScript-Dateien debuggen, indem Sie mit der rechten Maustaste auf eine Datei klicken und im Kontextmenü **Debuggen** auswählen. Dadurch wird *node.exe* mit der jeweiligen JavaScript-Datei als Argument ausgeführt.

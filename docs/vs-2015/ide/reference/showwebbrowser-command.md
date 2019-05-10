@@ -1,14 +1,9 @@
 ---
 title: Befehl „ShowWebBrowser“ | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - view.showwebbrowser
 helpviewer_keywords:
@@ -18,18 +13,17 @@ ms.assetid: c6a4fbd6-8e9d-45cc-8b2f-93990d065e78
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f9bf9668a690347988e3148cf90da69ec3b33ca2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a1fc4f325167fa0df1f5f69cff19c25af5073d82
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49171950"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667897"
 ---
 # <a name="showwebbrowser-command"></a>Befehl "ShowWebBrowser"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Zeigt die in einem Webbrowserfenster angegebene URL entweder in der integrierten Entwicklungsumgebung (IDE) oder außerhalb der IDE an.  
   
 ## <a name="syntax"></a>Syntax  
@@ -49,7 +43,7 @@ View.ShowWebBrowser URL [/new][/ext]
  /ext  
  Dies ist optional. Gibt an, dass die Seite im Standard-Webbrowser außerhalb der IDE angezeigt wird  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Der Alias für den Befehl **ShowWebBrowser** ist **navigate** oder **nav**.  
   
 ## <a name="example"></a>Beispiel  
@@ -64,6 +58,3 @@ View.ShowWebBrowser URL [/new][/ext]
  [Befehlsfenster](../../ide/reference/command-window.md)   
  [Such-/Befehlsfeld](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

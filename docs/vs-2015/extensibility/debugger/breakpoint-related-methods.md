@@ -1,38 +1,33 @@
 ---
 title: Auf Haltepunkte bezogene Methoden | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], breakpoint methods
 - breakpoints, methods
 ms.assetid: a6f77bf0-bf81-443f-8683-5f12075bbe10
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e1767afec32b2b90250a841317e0929fcdd7732c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 47ba1529521fdce042512a38d32ad2ca2eb3cb82
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794997"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085558"
 ---
 # <a name="breakpoint-related-methods"></a>Auf Haltepunkte bezogene Methoden
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Ein Debugmodul (DE) muss die Einstellung von Haltepunkten unterstützen. Debuggen in Visual Studio unterstützt die folgenden Typen von Haltepunkten:  
   
--   Gebunden  
+- Gebunden  
   
      Über die Benutzeroberfläche angefordert und an einem angegebenen Speicherort, erfolgreich gebunden  
   
--   Ausstehend  
+- Ausstehend  
   
      Über die Benutzeroberfläche, aber noch nicht mit tatsächlichen gebunden Anweisungen angefordert  
   
@@ -91,4 +86,3 @@ Ein Debugmodul (DE) muss die Einstellung von Haltepunkten unterstützen. Debugge
   
 ## <a name="see-also"></a>Siehe auch  
  [Ausführungssteuerung und Zustandsauswertung](../../extensibility/debugger/execution-control-and-state-evaluation.md)
-

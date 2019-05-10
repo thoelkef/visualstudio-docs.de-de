@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 950f5fc1-d041-4090-9a5c-60844768a4cc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5be63468d6d290085778791d086a7b541395127f
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 760dc8bb501fb345cbee686818ad0b4d6698a684
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562433"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891648"
 ---
 # <a name="buildonload-attribute-and-element"></a>BuildOnLoad Attribut- und Elementnamen
 

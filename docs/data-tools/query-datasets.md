@@ -8,16 +8,15 @@ dev_langs:
 ms.assetid: 7b1a91cf-8b5a-4fc0-ac36-0dc2d336fa1b
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b3b51946c9fbf6ba38249c8ca7056179b58ee8a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: bec1c878dce59ccb5444d74ba0255c9ceb705780
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852491"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402740"
 ---
 # <a name="query-datasets"></a>Abfragedatasets
 Um für bestimmte Datensätze in einem Dataset zu suchen, verwenden die `FindBy` Methode in der DataTable-Objekt, Schreiben Sie Ihren eigenen Foreach-Anweisung, die Schleife in der-Auflistung der Tabelle Zeilen, oder verwenden Sie [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
@@ -26,7 +25,7 @@ Um für bestimmte Datensätze in einem Dataset zu suchen, verwenden die `FindBy`
 Innerhalb eines Datasets, Tabellen- und Spaltennamen sind standardmäßig Groß-/Kleinschreibung, d. h. eine Tabelle in ein Dataset namens "Customers" kann werden so genannte "Customers". Dies entspricht die Benennungskonventionen in verschiedenen Datenbanken, einschließlich SQL Server. In SQL Server ist das Standardverhalten an, dass die Namen von Datenelementen, die nur durch Fall unterschieden werden können.
 
 > [!NOTE]
->  Im Gegensatz zu Datasets sind XML-Dokumenten Groß-/Kleinschreibung beachtet, also die Namen von Datenelementen, die in Schemas definierte Groß-/Kleinschreibung beachtet. Schemaprotokoll ermöglicht beispielsweise das Schema zum Definieren einer Tabelle namens "Customers" und eine andere Tabelle, die Namen "Customers". Dies kann zu Namenskonflikten führen, wenn ein Schema, das Elemente enthält, die nur durch Fall unterscheiden verwendet wird, um eine Dataset-Klasse zu generieren.
+> Im Gegensatz zu Datasets sind XML-Dokumenten Groß-/Kleinschreibung beachtet, also die Namen von Datenelementen, die in Schemas definierte Groß-/Kleinschreibung beachtet. Schemaprotokoll ermöglicht beispielsweise das Schema zum Definieren einer Tabelle namens "Customers" und eine andere Tabelle, die Namen "Customers". Dies kann zu Namenskonflikten führen, wenn ein Schema, das Elemente enthält, die nur durch Fall unterscheiden verwendet wird, um eine Dataset-Klasse zu generieren.
 
 Groß-/Kleinschreibung, kann jedoch sein, ein Faktor bei der Interpretation der Daten im Dataset. Z. B. Wenn Sie Daten in einer Datasettabelle filtern, könnte die Suchkriterien andere Ergebnisse zurückgeben abhängig davon, ob der Vergleich Groß-/Kleinschreibung beachtet. Sie können steuern, die Groß-/Kleinschreibung von Filtern, durchsuchen und Sortieren durch Festlegen des Datasets <xref:System.Data.DataSet.CaseSensitive%2A> Eigenschaft. Alle Tabellen im Dataset, den Wert dieser Eigenschaft wird standardmäßig erben. (Sie können diese Eigenschaft für jede einzelne Tabelle überschreiben, indem Sie der Tabelle festlegen <xref:System.Data.DataTable.CaseSensitive%2A> Eigenschaft.)
 
@@ -34,7 +33,7 @@ Groß-/Kleinschreibung, kann jedoch sein, ein Faktor bei der Interpretation der 
 
 #### <a name="to-find-a-row-in-a-typed-dataset-with-a-primary-key-value"></a>Suchen Sie nach einer Zeile in einem typisierten Dataset mit einem Wert des Primärschlüssels
 
--   Um eine Zeile zu finden, rufen Sie den stark typisierten `FindBy` Methode, die Primärschlüssel der Tabelle verwendet.
+- Um eine Zeile zu finden, rufen Sie den stark typisierten `FindBy` Methode, die Primärschlüssel der Tabelle verwendet.
 
      Im folgenden Beispiel die `CustomerID` Spalte ist der Primärschlüssel von der `Customers` Tabelle. Dies bedeutet, dass die generierte `FindBy` Methode `FindByCustomerID`. Das Beispiel zeigt das Zuweisen von eines bestimmtes <xref:System.Data.DataRow> einer Variablen mithilfe der generierten `FindBy` Methode.
 
@@ -43,7 +42,7 @@ Groß-/Kleinschreibung, kann jedoch sein, ein Faktor bei der Interpretation der 
 
 #### <a name="to-find-a-row-in-an-untyped-dataset-with-a-primary-key-value"></a>Suchen Sie nach einer Zeile in einer nicht typisierten Dataset mit einem Wert des Primärschlüssels
 
--   Rufen Sie die <xref:System.Data.DataRowCollection.Find%2A> Methode eine <xref:System.Data.DataRowCollection> Auflistung, die den primären Schlüssel als Parameter übergeben.
+- Rufen Sie die <xref:System.Data.DataRowCollection.Find%2A> Methode eine <xref:System.Data.DataRowCollection> Auflistung, die den primären Schlüssel als Parameter übergeben.
 
      Das folgende Beispiel zeigt, wie Sie eine neue Zeile deklarieren `foundRow` und weisen sie den Rückgabewert der <xref:System.Data.DataRowCollection.Find%2A> Methode. Wenn der primäre Schlüssel gefunden wird, wird der Inhalt des Spaltenindex 1 in einem Meldungsfeld angezeigt.
 
@@ -54,7 +53,7 @@ Groß-/Kleinschreibung, kann jedoch sein, ein Faktor bei der Interpretation der 
 
 #### <a name="to-find-rows-based-on-the-values-in-any-column"></a>Zum Suchen von Zeilen, die basierend auf den Werten in einer beliebigen Spalte
 
--   Datentabellen werden erstellt, mit der <xref:System.Data.DataTable.Select%2A> Methode, die ein Array von zurückgibt <xref:System.Data.DataRow>s, basierend auf dem Ausdruck, die an die <xref:System.Data.DataTable.Select%2A> Methode. Weitere Informationen zu gültige Ausdrücken erstellen, finden Sie im Abschnitt "Ausdruckssyntax" der Seite über die <xref:System.Data.DataColumn.Expression%2A> Eigenschaft.
+- Datentabellen werden erstellt, mit der <xref:System.Data.DataTable.Select%2A> Methode, die ein Array von zurückgibt <xref:System.Data.DataRow>s, basierend auf dem Ausdruck, die an die <xref:System.Data.DataTable.Select%2A> Methode. Weitere Informationen zu gültige Ausdrücken erstellen, finden Sie im Abschnitt "Ausdruckssyntax" der Seite über die <xref:System.Data.DataColumn.Expression%2A> Eigenschaft.
 
      Das folgende Beispiel zeigt, wie Sie mit der <xref:System.Data.DataTable.Select%2A> Methode der <xref:System.Data.DataTable> nach bestimmten Zeilen gesucht.
 
@@ -69,28 +68,28 @@ Können Sie eine <xref:System.Data.DataRelation> verknüpfte Datensätze durch d
 Diese Seite enthält Beispiele zur Verwendung von typisierten "Datasets". Informationen zum Navigieren in Beziehungen in nicht typisierten Datasets finden Sie unter [Navigieren in DataRelations](/dotnet/framework/data/adonet/dataset-datatable-dataview/navigating-datarelations).
 
 > [!NOTE]
->  Wenn Sie in einer Windows Forms-Anwendung arbeiten und mithilfe der Datenbindung-Funktionen zum Anzeigen von Daten, möglicherweise das Formular-Designer generierter genügend Funktionalität für Ihre Anwendung bereit. Weitere Informationen finden Sie unter [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Insbesondere [Beziehungen in Datasets](relationships-in-datasets.md).
+> Wenn Sie in einer Windows Forms-Anwendung arbeiten und mithilfe der Datenbindung-Funktionen zum Anzeigen von Daten, möglicherweise das Formular-Designer generierter genügend Funktionalität für Ihre Anwendung bereit. Weitere Informationen finden Sie unter [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Insbesondere [Beziehungen in Datasets](relationships-in-datasets.md).
 
 Die folgenden Codebeispiele veranschaulichen, hinzuzufügen und Beziehungen in typisierten Datasets zu navigieren. Die Beispiele für Code verwenden Sie den typisierten <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) und die generierten FindBy*PrimaryKey* (`FindByCustomerID`) Methoden zum Suchen einer gewünschten Zeile und die verknüpften Datensätze zurückzugeben. In den Beispielen fehlerfrei kompiliert und ausgeführt, wenn ist:
 
--   Eine Instanz eines Datasets mit dem Namen `NorthwindDataSet` mit einem `Customers` Tabelle.
+- Eine Instanz eines Datasets mit dem Namen `NorthwindDataSet` mit einem `Customers` Tabelle.
 
--   Ein `Orders` Tabelle.
+- Ein `Orders` Tabelle.
 
--   Eine Beziehung namens `FK_Orders_Customers`bezüglich der beiden Tabellen.
+- Eine Beziehung namens `FK_Orders_Customers`bezüglich der beiden Tabellen.
 
 Darüber hinaus müssen beide Tabellen mit Daten für alle Datensätze zurückgegeben werden gefüllt werden soll.
 
 #### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>Die untergeordneten Datensätze eines ausgewählten übergeordneten Datensatzes zurückgegeben.
 
--   Aufrufen der <xref:System.Data.DataRow.GetChildRows%2A> Methode eines bestimmten `Customers` Daten Zeile aus, und geben Sie eine Matrix von Zeilen aus der `Orders` Tabelle:
+- Aufrufen der <xref:System.Data.DataRow.GetChildRows%2A> Methode eines bestimmten `Customers` Daten Zeile aus, und geben Sie eine Matrix von Zeilen aus der `Orders` Tabelle:
 
      [!code-csharp[VbRaddataDatasets#6](../data-tools/codesnippet/CSharp/query-datasets_4.cs)]
      [!code-vb[VbRaddataDatasets#6](../data-tools/codesnippet/VisualBasic/query-datasets_4.vb)]
 
 #### <a name="to-return-the-parent-record-of-a-selected-child-record"></a>Um den übergeordneten Datensatz der ausgewählten untergeordneten Datensatzes zurückzugeben.
 
--   Rufen Sie die <xref:System.Data.DataRow.GetParentRow%2A> Methode eines bestimmten `Orders` eine Datenzeile und zurückgeben, die eine einzelne Zeile aus der `Customers` Tabelle:
+- Rufen Sie die <xref:System.Data.DataRow.GetParentRow%2A> Methode eines bestimmten `Orders` eine Datenzeile und zurückgeben, die eine einzelne Zeile aus der `Customers` Tabelle:
 
      [!code-csharp[VbRaddataDatasets#7](../data-tools/codesnippet/CSharp/query-datasets_5.cs)]
      [!code-vb[VbRaddataDatasets#7](../data-tools/codesnippet/VisualBasic/query-datasets_5.vb)]

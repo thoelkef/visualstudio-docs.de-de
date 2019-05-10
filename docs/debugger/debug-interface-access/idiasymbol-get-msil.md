@@ -1,30 +1,33 @@
 ---
 title: 'Idiasymbol:: Get_msil | Microsoft-Dokumentation'
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_msil method
 ms.assetid: 43a8e003-6856-4726-aa16-c0d4dae7299b
-author: mikejo5000
+caps.latest.revision: 11
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: 6f930266d51000523983ce0a578bb98b02c7233b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: b502d1504c5a61ed073ed77eed76dd5f7c139a35
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911454"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399530"
 ---
 # <a name="idiasymbolgetmsil"></a>IDiaSymbol::get_msil
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Ruft ein Flag, das angibt, ob das Symbol auf der Microsoft Intermediate Language (MSIL)-Code verweist.  
   
 ## <a name="syntax"></a>Syntax  
   
-```C++  
+```cpp#  
 HRESULT get_msil (   
    BOOL* pRetVal  
 );  
@@ -38,7 +41,7 @@ HRESULT get_msil ( 
  Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,7 +1,6 @@
 ---
 title: Seite "Veröffentlichen", Projekt-Designer
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.PropertyPage
@@ -10,15 +9,15 @@ helpviewer_keywords:
 - Publish page in Project Designer
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8ff0600efbb591e8646c5369aa255e7ce153b3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 731ed637c8c728f51dd318e6c06b980e512b7d57
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911408"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968889"
 ---
 # <a name="publish-page-project-designer"></a>Seite "Veröffentlichen", Projekt-Designer
 Die Seite **Veröffentlichen** des **Projekt-Designers** wird zur Konfiguration von Eigenschaften für die ClickOnce-Bereitstellung verwendet.
@@ -27,7 +26,6 @@ Die Seite **Veröffentlichen** des **Projekt-Designers** wird zur Konfiguration 
 
 > [!NOTE]
 > Einige der hier beschriebenen ClickOnce-Eigenschaften können auch im **Veröffentlichungs-Assistent** festgelegt werden, der im Menü **Erstellen** verfügbar ist, oder durch Klicken auf die Schaltfläche**Veröffentlichungs-Assistent** auf dieser Seite.
-
 
 ## <a name="uielement-list"></a>UIElement-Liste
  **Pfad des Veröffentlichungsordners**

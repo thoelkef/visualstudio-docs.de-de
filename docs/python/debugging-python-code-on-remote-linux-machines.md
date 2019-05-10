@@ -2,21 +2,20 @@
 title: Debuggen von Python-Code auf Linux-Remotecomputern
 description: Verwenden von Visual Studio zum Debuggen von Python-Code, der auf Linux-Remotecomputern ausgeführt wird, einschließlich der erforderlichen Konfigurationsschritte, Sicherheit und Problembehandlung.
 ms.date: 12/06/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: eaeb13a087723b10098c9cfe6f75f3be2aad351e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e718a5610d9539e3e2a89af0a9de502ebfd168a7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62962532"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Remotedebuggen von Python-Code unter Linux
 
@@ -66,7 +65,7 @@ Weitere Informationen zum Erstellen einer Firewallregel für einen virtuellen Az
         print('Nope. The number I was thinking of was {0}'.format(number))
     ```
 
-1. Installieren Sie mithilfe von `pip3 install ptvsd` das `ptvsd`-Paket in Ihrer Umgebung. 
+1. Installieren Sie mithilfe von `pip3 install ptvsd` das `ptvsd`-Paket in Ihrer Umgebung.
    >[!NOTE]
    >Es empfiehlt sich, die Version von ptvsd zu erfassen, die installiert wird, falls Sie diese für die Problembehandlung benötigen. Die [ptvsd-Liste](https://pypi.python.org/pypi/ptvsd) enthält die verfügbaren Versionen.
 

@@ -9,36 +9,37 @@ helpviewer_keywords:
 ms.assetid: a4f2649c-6702-491c-90a1-d6d669258c51
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1d55b63827c13c4b92ea2495de7849a321876a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 172ac6a2adc5a5d5a66d9302274d7f657e5fdd12
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902603"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400281"
 ---
 # <a name="idiasymbolgetvirtualbasepointeroffset"></a>IDiaSymbol::get_virtualBasePointerOffset
-Ruft den Offset von der virtuellen basiszeiger ab.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_virtualBasePointerOffset (   
-   LONG* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pRetVal`  
- [out] Gibt den Offset der virtuellen basiszeiger zurück.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
-  
+Ruft den Offset von der virtuellen basiszeiger ab.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_virtualBasePointerOffset ( 
+   LONG* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pRetVal`
+
+[out] Gibt den Offset der virtuellen basiszeiger zurück.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

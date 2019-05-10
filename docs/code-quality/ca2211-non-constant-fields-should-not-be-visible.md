@@ -1,7 +1,6 @@
 ---
 title: 'CA2211: Nicht konstante Felder sollten nicht sichtbar sein.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2211
@@ -12,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: e1e42c40-0acd-4312-af29-70133739a304
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 77253de14219c4c1c6737f9bc6e5c61e11fff4ba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c33db7e5237b8e31011689edb725c8ae0e905522
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937464"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806773"
 ---
 # <a name="ca2211-non-constant-fields-should-not-be-visible"></a>CA2211: Nicht konstante Felder sollten nicht sichtbar sein.
 

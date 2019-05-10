@@ -1,14 +1,9 @@
 ---
 title: IDebugProcess2 | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProcess2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 99f6cd06-4076-45ee-b2ae-fa2ad627fd18
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b79a517682a5f50aff25df5cde15f8c589104782
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 68f1693bbbda9bbf7622c2378799db4a342be7a5
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758098"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58959188"
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -60,7 +55,7 @@ IDebugProcess2 : IUnknown
 |[Trennen](../../../extensibility/debugger/reference/idebugprocess2-detach.md)|Trennt den Debugger aus dem Prozess.|  
 |[GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)|Ruft die System-Prozess-ID ab.|  
 |[GetProcessId](../../../extensibility/debugger/reference/idebugprocess2-getprocessid.md)|Ruft einen global eindeutigen Bezeichner für diesen Prozess ab.|  
-|[GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)<br /><br /> [VERALTET]|Ruft den Namen der Sitzung, die Debuggen des Prozesses.<br /><br /> [ALS VERALTET MARKIERT. SOLLTEN SIE IMMER RÜCKGABE `E_NOTIMPL`.]|  
+|[GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)<br /><br /> [VERALTET]|Ruft den Namen der Sitzung, die Debuggen des Prozesses.<br /><br /> [DEPRECATED. SOLLTEN SIE IMMER RÜCKGABE `E_NOTIMPL`.]|  
 |[EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md)|Listet die Threads im Prozess ausgeführt wird.|  
 |[CauseBreak](../../../extensibility/debugger/reference/idebugprocess2-causebreak.md)|Fordert an, die das nächste Programm, das Ausführen von Code in diesem Prozess beenden.|  
 |[GetPort](../../../extensibility/debugger/reference/idebugprocess2-getport.md)|Ruft ab, der Port, den diesem Prozess ausgeführt wird.|  
@@ -85,4 +80,3 @@ IDebugProcess2 : IUnknown
  [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)   
  [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
-

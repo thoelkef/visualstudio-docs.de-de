@@ -1,42 +1,41 @@
 ---
-title: Validierung von XML-Dokumenten in XML-Editor
+title: Validierung von XML-Dokumenten in XML-editor
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: abb353bd-6c4a-4978-b03b-a8c245bbfb55
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eaf0ee4a039586e1f35883a2ce7a16f356f322b5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: 59b8ed5c74d998b47ff4a187b420695eab5be035
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899729"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62807717"
 ---
 # <a name="xml-document-validation"></a>Validierung von XML-Dokumenten
 
-Der XML-Editor überprüft die XML 1.0-Syntax und validiert bereits beim Eingeben die Daten. Die Validierung wird vom Editor mithilfe einer DTD (Document Type Definition) oder eines Schemas vorgenommen. Durch rote wellenförmige Unterstreichungen werden Wohlgeformtheits-Fehler in XML 1.0 hervorgehoben. Blaue Wellenlinien weisen auf semantische Fehler in Abhängigkeit von der DTD- oder Schemavalidierung hin. Jedem Fehler ist ein Eintrag in der Fehlerliste zugeordnet. Sie können die Fehlermeldung auch anzeigen, indem Sie mit der Maus auf die Wellenlinie zeigen.
+Der XML-Editor überprüft XML 1.0-Syntax und führt auch die datenvalidierung während der Eingabe. Die Validierung wird vom Editor mithilfe einer DTD (Document Type Definition) oder eines Schemas vorgenommen. Durch rote wellenförmige Unterstreichungen werden Wohlgeformtheits-Fehler in XML 1.0 hervorgehoben. Blaue Wellenlinien weisen auf semantische Fehler in Abhängigkeit von der DTD- oder Schemavalidierung hin. Jedem Fehler ist ein Eintrag in der Fehlerliste zugeordnet. Sie können die Fehlermeldung auch anzeigen, indem Sie mit der Maus auf die Wellenlinie zeigen.
 
  Die bei der Validierung verwendeten Schemata werden durch Abgleichen des `targetNamespace` eines kompilierten Schemas mit der xmlns-Deklaration des Elements gefunden. Kompilierte Schemata werden von einem der folgenden Speicherorte geladen, die entsprechend ihrer Priorität aufgelistet sind:
 
--   Vom Dateinamen angegeben, der **Schemas** Feld des Dokuments **Eigenschaften** Fenster.
+- Vom Dateinamen angegeben, der **Schemas** Feld des Dokuments **Eigenschaften** Fenster.
 
--   Aus einem Inlineschema oder einer DTD.
+- Aus einem Inlineschema oder einer DTD.
 
--   Aus einer externen DTD oder einem `xsd:schemaLocation`-Attribut und einem `xsd:noNamespaceSchemaLocation`-Attribut.
+- Aus einer externen DTD oder einem `xsd:schemaLocation`-Attribut und einem `xsd:noNamespaceSchemaLocation`-Attribut.
 
--   Ein Namespace-URI eines "x-schema"-XDR-Schemas.
+- Ein Namespace-URI eines "x-schema"-XDR-Schemas.
 
 Schemata können auch an den folgenden zusätzlichen Speicherorten gefunden werden, wenn das Schema einen nicht-leeren Zielnamespace aufweist:
 
--   Ein anderes Editor-Fenster, das das Schema enthält
+- Ein anderes Editor-Fenster, das das Schema enthält
 
--   In einem Schema in der aktuellen Projektmappe.
+- In einem Schema in der aktuellen Projektmappe.
 
--   In einem Schema im Verzeichnis des Schemacache.
+- In einem Schema im Verzeichnis des Schemacache.
 
 ## <a name="xslt-files"></a>XSLT-Dateien
  Beim Bearbeiten einer XSLT-Datei, die *xslt.xsd* Datei im Schemacache für die Validierung verwendet wird. Validierungsfehler werden mit blauen Wellenlinien unterstrichen angezeigt. Fehler aus dem XXLT-Compiler werden als rote wellenförmige Unterstreichungen angezeigt.
@@ -46,4 +45,4 @@ Schemata können auch an den folgenden zusätzlichen Speicherorten gefunden werd
 
 ## <a name="see-also"></a>Siehe auch
 
-- [XML-Editor](../xml-tools/xml-editor.md)
+- [XML-editor](../xml-tools/xml-editor.md)

@@ -1,14 +1,9 @@
 ---
-title: Die Bezeichnung wurde nicht gefunden. | Microsoft Docs
-ms.custom: ''
+title: Die Bezeichnung wurde nicht gefunden. | Microsoft-Dokumentation
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1026
 dev_langs:
@@ -16,25 +11,24 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 79e32926-b03f-457b-997c-2bb2ec8a1ec5
-caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: df36f35b8e681c22e38f19b00fb25b680c6323ef
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 72b63c699b09081e843f36daeec3fcc556ebaf4a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633080"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007372"
 ---
 # <a name="label-not-found"></a>Die Bezeichnung wurde nicht gefunden
-Sie haben einen Verweis auf eine Bezeichnung, die nicht vorhanden ist. Bezeichnungen, markieren Sie Blöcke des Codes, aber innerhalb eines angegebenen Bereichs verwendet werden kann, muss eindeutig sein.  
+Sie haben einen Verweis auf eine Bezeichnung, die nicht vorhanden ist. Bezeichnungen können verwendet werden, um Blöcke von Code, aber innerhalb eines angegebenen Bereichs zu markieren, muss eindeutig sein.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Überprüfen Sie außerdem sicherstellen, dass Sie nicht den Bezeichnungsnamen richtig geschrieben ist.  
+- Überprüfen Sie, um sicherzustellen, dass Sie den Namen der Bezeichnung nicht richtig geschrieben ist.  
   
--   Stellen Sie sicher, alle Bezeichnungsverweise Bezeichnungen vorgenommen werden, die im aktuellen Bereich definiert wurden (Dies schließt forward Definitionen).  
+- Stellen Sie sicher, alle Bezeichnungsverweisen Bezeichnungen vorgenommen werden, die im aktuellen Bereich definiert wurden (Dies schließt forward Definitionen).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Anweisung mit Bezeichnung](../../javascript/reference/labeled-statement-javascript.md)   

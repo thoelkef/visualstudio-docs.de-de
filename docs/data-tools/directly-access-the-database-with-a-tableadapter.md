@@ -20,16 +20,15 @@ helpviewer_keywords:
 ms.assetid: 012c5924-91f7-4790-b2a6-f51402b7014b
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 31019f696c54ad0933a0adc458c9b257768605e9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 26bcab8d589c1fedcbbc4eb1f8b06bb1c04cac53
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880285"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567021"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>Direktes Zugreifen auf die Datenbank mit einem TableAdapter
 
@@ -43,7 +42,7 @@ Rufen Sie die `DbDirect` -Methode, die vom Task ausgeführten Sie ausführen mö
 
 ### <a name="to-insert-new-records-directly-into-a-database"></a>Zum Einfügen neuer Datensätze direkt in eine Datenbank
 
--   Rufen Sie die `Insert` -Methode, die Werte für jede Spalte als Parameter übergeben. Im folgenden Verfahren wird die `Region` Tabelle in der Northwind-Datenbank als Beispiel.
+- Rufen Sie die `Insert` -Methode, die Werte für jede Spalte als Parameter übergeben. Im folgenden Verfahren wird die `Region` Tabelle in der Northwind-Datenbank als Beispiel.
 
     > [!NOTE]
     > Wenn Sie nicht über eine verfügbare Instanz verfügen, instanziieren Sie den TableAdapter, die Sie verwenden möchten.
@@ -53,7 +52,7 @@ Rufen Sie die `DbDirect` -Methode, die vom Task ausgeführten Sie ausführen mö
 
 ### <a name="to-update-records-directly-in-a-database"></a>Zum Aktualisieren von Datensätzen, die direkt in einer Datenbank
 
--   Rufen Sie die `Update` -Methode, die neuen und ursprünglichen Werte für jede Spalte als Parameter übergeben.
+- Rufen Sie die `Update` -Methode, die neuen und ursprünglichen Werte für jede Spalte als Parameter übergeben.
 
     > [!NOTE]
     > Wenn Sie nicht über eine verfügbare Instanz verfügen, instanziieren Sie den TableAdapter, die Sie verwenden möchten.
@@ -63,7 +62,7 @@ Rufen Sie die `DbDirect` -Methode, die vom Task ausgeführten Sie ausführen mö
 
 ### <a name="to-delete-records-directly-from-a-database"></a>Zum Löschen von Datensätzen direkt aus einer Datenbank
 
--   Rufen Sie die `Delete` -Methode, die Werte für jede Spalte als Parameter übergeben die `Delete` Methode. Im folgenden Verfahren wird die `Region` Tabelle in der Northwind-Datenbank als Beispiel.
+- Rufen Sie die `Delete` -Methode, die Werte für jede Spalte als Parameter übergeben die `Delete` Methode. Im folgenden Verfahren wird die `Region` Tabelle in der Northwind-Datenbank als Beispiel.
 
     > [!NOTE]
     > Wenn Sie nicht über eine verfügbare Instanz verfügen, instanziieren Sie den TableAdapter, die Sie verwenden möchten.

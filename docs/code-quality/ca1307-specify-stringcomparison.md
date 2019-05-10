@@ -1,7 +1,6 @@
 ---
-title: 'CA1307: StringComparison angeben'
+title: 'CA1307: StringComparison angeben.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1307
@@ -12,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 9b0d5e71-1683-4a0d-bc4a-68b2fbd8af71
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1a4ac50cd189368bcc59aaff6b02b6f4b639a6b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a3aabd73a3c234be61cecdf68fbc92fc7e52883e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797335"
 ---
-# <a name="ca1307-specify-stringcomparison"></a>CA1307: StringComparison angeben
+# <a name="ca1307-specify-stringcomparison"></a>CA1307: StringComparison angeben.
 
 |||
 |-|-|

@@ -1,32 +1,27 @@
 ---
 title: Problembehandlung bei Registrierung des RegPkg-Pakets | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: troubleshooting
 helpviewer_keywords:
 - RegPkg
 ms.assetid: f33f822f-697a-4bad-9c10-554b4c8f6246
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 936cfbcdf64ae678626668fd5b20dc4de56d0107
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 241975e475252a18d5e5a91c6e8c4fb40c067a95
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441188"
 ---
 # <a name="troubleshooting-regpkg-package-registration"></a>Problembehandlung bei der Registrierung des RegPkg-Pakets
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!NOTE]
->  Die bevorzugte Methode zum Registrieren von Paketen in Visual Studio wird mithilfe der PKGDEF-Dateien. Dadurch für die erweiterungsbereitstellung ohne die Registrierung des Systems zugreifen zu müssen. PKGDEF-Dateien werden erstellt, mit der [CreatePkgDef-Hilfsprogramm](../../extensibility/internals/createpkgdef-utility.md).  
+> Die bevorzugte Methode zum Registrieren von Paketen in Visual Studio wird mithilfe der PKGDEF-Dateien. Dadurch für die erweiterungsbereitstellung ohne die Registrierung des Systems zugreifen zu müssen. PKGDEF-Dateien werden erstellt, mit der [CreatePkgDef-Hilfsprogramm](../../extensibility/internals/createpkgdef-utility.md).  
   
  Ein Paket zu registrieren, indem Sie mithilfe von RegPkg in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], müssen Sie die Version des RegPkg, die für Ihr Paket geeignet ist, verwenden.  
   
@@ -45,4 +40,3 @@ ms.locfileid: "51722059"
   
 ## <a name="see-also"></a>Siehe auch  
  [Freigeben eines Produkts](../../misc/releasing-a-visual-studio-integration-product.md)
-

@@ -1,24 +1,19 @@
 ---
 title: Verzögertes Laden von Dokumenten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 94d79af00fced81dc7da38f323598ade926d26f4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5565749a21614bb0b882beab8c83ed63bc839229
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755473"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116926"
 ---
 # <a name="delayed-document-loading"></a>Verzögertes Laden von Dokumenten
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,17 +29,17 @@ Wenn ein Benutzer mit Visual Studio-Projektmappe erneut öffnet, werden die meis
   
 - Der Fensterrahmen GetProperty-Methode <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> auf einem der folgenden Eigenschaften:  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
   Wenn Ihre Erweiterung verwalteten Code verwendet wird, sollten Sie nicht aufrufen <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A> es sei denn, Sie sicher, dass das Dokument ist nicht im Zustand "ausstehender-Initialization" oder das Dokument vollständig initialisiert werden soll... Dies ist, da diese Methode immer die Doc gibt-Datenobjekt, wodurch bei Bedarf erstellt. Stattdessen müssen Sie eine der Methoden für die IVsRunningDocumentTable4-Schnittstelle aufrufen.  
   
@@ -70,4 +65,3 @@ Wenn ein Benutzer mit Visual Studio-Projektmappe erneut öffnet, werden die meis
  Es gibt keinen sichtbaren Hinweis an, ob ein Dokument initialisiert wurde, damit es kann schwierig sein, herauszufinden, ob die Erweiterung Initialisierung erzwungen wird. Sie können einen Registrierungsschlüssel, die Überprüfung erleichtert, festlegen, da sie den Titel jedes Dokuments bewirkt, die für den Text nicht vollständig initialisiert ist `[Stub]` im Titel.  
   
  In **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad]** legen **StubTabTitleFormatString** zu  **{0} [Stub]**.
-

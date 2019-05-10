@@ -13,17 +13,15 @@ helpviewer_keywords:
 ms.assetid: ed743ce6-73af-45e5-a8ff-045eddaccc86
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b7790f5205aa24a68505a1b34e97283aff05e13c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4fb5a8c7a54871c7d948a458768c5551dbb5d550
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824363"
 ---
 # <a name="bind-objects-as-data-sources-in-visual-studio"></a>Binden von Objekten als Datenquellen in Visual Studio
 
@@ -42,25 +40,25 @@ Benutzerdefinierte Objekte erfordern im Allgemeinen keine bestimmte Schnittstell
 
 Es gibt unzählige Möglichkeiten, Ihre Anwendungslogik implementieren, wenn als Datenquelle mit Objekten arbeiten, sind Datenbanken für SQL einige standard-Vorgänge, die mit den Visual Studio generierten TableAdapter-Objekten vereinfacht werden können. Auf dieser Seite wird erläutert, wie Sie diese mithilfe von TableAdapters Standardprozesse implementieren. Es ist nicht als Leitfaden vorgesehen, für die Erstellung von benutzerdefinierten Objekten. Beispielsweise führen Sie die folgenden standard-Vorgänge unabhängig von der bestimmten Implementierung von den Objekten oder die Anwendungslogik in der Regel aus:
 
--   Laden von Daten in Objekte (in der Regel aus einer Datenbank) aus.
+- Laden von Daten in Objekte (in der Regel aus einer Datenbank) aus.
 
--   Erstellen eine typisierte Auflistung von Objekten.
+- Erstellen eine typisierte Auflistung von Objekten.
 
--   Objekte hinzufügen und Entfernen von Objekten aus einer Auflistung.
+- Objekte hinzufügen und Entfernen von Objekten aus einer Auflistung.
 
--   Die Daten des Objekts wird für Benutzer in einem Formular angezeigt.
+- Die Daten des Objekts wird für Benutzer in einem Formular angezeigt.
 
--   Ändern Bearbeiten/der Daten in einem Objekt.
+- Ändern Bearbeiten/der Daten in einem Objekt.
 
--   Speichern von Daten aus Objekten in der Datenbank.
+- Speichern von Daten aus Objekten in der Datenbank.
 
 ### <a name="load-data-into-objects"></a>Laden von Daten in Objekten
 
 In diesem Beispiel laden Sie Daten in Ihre Objekte mit TableAdapters. Standardmäßig sind TableAdapters mit zwei Arten von Methoden erstellt, die Daten aus einer Datenbank abzurufen und Datentabellen auffüllen.
 
--   Die `TableAdapter.Fill` Methode füllt eine vorhandene Datentabellen mit den zurückgegebenen Daten.
+- Die `TableAdapter.Fill` Methode füllt eine vorhandene Datentabellen mit den zurückgegebenen Daten.
 
--   Die `TableAdapter.GetData` Methode gibt eine neue Datentabelle mit Daten aufgefüllt.
+- Die `TableAdapter.GetData` Methode gibt eine neue Datentabelle mit Daten aufgefüllt.
 
 Die einfachste Möglichkeit zum Laden der benutzerdefinierten Objekte mit Daten aufrufen, wird die `TableAdapter.GetData` Methode, die die Auflistung der Zeilen in der Tabelle zurückgegebenen Daten durchlaufen und füllen Sie jedes Objekt mit den Werten in jeder Zeile. Sie erstellen eine `GetData` Methode, die eine aufgefüllte Datentabelle für jede einem TableAdapter hinzugefügte Abfrage zurückgibt.
 

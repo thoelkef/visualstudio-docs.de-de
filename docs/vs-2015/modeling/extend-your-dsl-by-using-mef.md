@@ -1,23 +1,20 @@
 ---
 title: Erweitern von DSL mittels MEF | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 3e7be79a-53ab-4d79-863a-bef8d27839bd
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fd5e4727c4352ca27d905bad608c4a1c17284f9b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 409021e9a88f5bedfcab9ec172f7f962c7623d3a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930638"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442258"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Erweitern von DSL mittels MEF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +32,7 @@ Sie können Ihrer domänenspezifischen Sprache (DSL) erweitern, mithilfe des Man
     Dateiname: `CommandExtensionVSCT.tt`  
   
    > [!IMPORTANT]
-   >  Legen Sie die GUID in diese Datei, um die GUID CommandSetId identisch sein, die in DslPackage\GeneratedCode\Constants.tt definiert ist  
+   > Legen Sie die GUID in diese Datei, um die GUID CommandSetId identisch sein, die in DslPackage\GeneratedCode\Constants.tt definiert ist  
   
    ```  
    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
@@ -140,15 +137,15 @@ Sie können Ihrer domänenspezifischen Sprache (DSL) erweitern, mithilfe des Man
   
 3. Fügen Sie Verweise auf die folgenden .NET-Assemblys hinzu:  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.11.0.dll  
+   - Microsoft.VisualStudio.Modeling.Sdk.11.0.dll  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll  
+   - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll  
+   - Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll  
   
-   -   System.ComponentModel.Composition.dll  
+   - System.ComponentModel.Composition.dll  
   
-   -   System.Windows.Forms.dll  
+   - System.Windows.Forms.dll  
   
 4. Erstellen Sie ein VSIX-Projekt, in der gleichen Projektmappe. Klicken Sie hierzu in der **neues Projekt** Dialogfeld erweitern Sie **Visual Basic** oder **Visual C#-**, klicken Sie auf **Erweiterbarkeit**, und wählen Sie dann auf  **VSIX-Projekt**.  
   
@@ -382,6 +379,3 @@ namespace MefExtension
  [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)   
  [Vorgehensweise: Hinzufügen eines Drag & Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md)   
  [Validierung in einer domänenspezifischen Sprache](../modeling/validation-in-a-domain-specific-language.md)
-
-
-

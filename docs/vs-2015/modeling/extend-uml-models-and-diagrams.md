@@ -1,14 +1,9 @@
 ---
 title: Erweitern von UML-Modellen und-Diagrammen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending
 - UML model, extending
@@ -16,13 +11,13 @@ ms.assetid: b5bfa61e-ea59-4c3b-b5af-53475d7d13cd
 caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 74f3c518682997dca57a630c6f084437f7175d80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 917c88056709cfbeb89ce3f19d9c8da9866feb4e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794763"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054611"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Erweitern von UML-Modellen und -Diagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +30,13 @@ In diesem Thema werden die verschiedenen Methoden zusammengefasst, mit denen Sie
   
  Das Fabrikam-Team für Tools erstellt eine Reihe von Erweiterungen, um die Entwicklungsteams zu unterstützen. In den folgenden Abschnitten werden die verschiedenen Arten von Erweiterungen beschrieben, die Sie definieren können. Sie können mehrere dieser Techniken in einer Visual Studio-Erweiterung kombinieren.  
   
- Weitere Informationen finden Sie in diesem Video: ![Link zum Video](../data-tools/media/playvideo.gif "PlayVideo")[wie Reihe von MSDN: UML-Tools und Erweiterbarkeit](http://go.microsoft.com/fwlink/?LinkId=214467).  
+ Weitere Informationen finden Sie in diesem Video: ![Link zum Video](../data-tools/media/playvideo.gif "PlayVideo")[MSDN-Reihe: UML-Tools und Erweiterbarkeit](http://go.microsoft.com/fwlink/?LinkId=214467).  
   
-##  <a name="Requirements"></a> Anforderungen  
+## <a name="Requirements"></a> Anforderungen  
   
--   [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+- [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
--   [Modellierungs-SDK für Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148).  
+- [Modellierungs-SDK für Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148).  
   
 ## <a name="profiles"></a>Profile  
  Mithilfe von Profilen können Sie Stereotype und zusätzliche Eigenschaften für UML-Elemente definieren.  
@@ -81,7 +76,7 @@ In diesem Thema werden die verschiedenen Methoden zusammengefasst, mit denen Sie
   
  Fabrikams Entwickler erstellen Code, in dem die Farbe eines Elements automatisch abhängig von seinem Stereotyp festgelegt wird. Dies erleichtert es den Benutzern, die verschiedenen Rollen der in den Modellen enthaltenen Elemente zu unterscheiden.  
   
- Weitere Informationen finden Sie unter [wie: Reagieren auf Änderungen in einem UML-Modell](../misc/how-to-respond-to-changes-in-a-uml-model.md).  
+ Weitere Informationen finden Sie unter [Vorgehensweise: Reagieren auf Änderungen in einem UML-Modell](../misc/how-to-respond-to-changes-in-a-uml-model.md).  
   
 ## <a name="model-bus"></a>ModelBus (Modellbus)  
  Mit einem Modellbus können Sie auf ein Diagramm oder Modell aus einem anderen Diagramm oder einer anderen [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]-Erweiterung zugreifen. Unter anderem können Sie Informationen auf diese Weise über mehr als ein Modell verteilen, damit mehrere Personen gleichzeitig am kombinierten Modell arbeiten können.  
@@ -118,7 +113,7 @@ In diesem Thema werden die verschiedenen Methoden zusammengefasst, mit denen Sie
   
 |**Kategorie**|**Links**|  
 |------------------|---------------|  
-|**Videos**|![Link zum Video](../data-tools/media/playvideo.gif "PlayVideo") [wie Reihe von MSDN: UML-Tools und Erweiterbarkeit](http://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![Link zum Video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: UML mit Visual Studio](http://go.microsoft.com/fwlink/?LinkId=199957)|  
+|**Videos**|![Link zum Video](../data-tools/media/playvideo.gif "PlayVideo") [MSDN-Reihe: UML-Tools und Erweiterbarkeit](http://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![Link zum Video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: UML mit Visual Studio](http://go.microsoft.com/fwlink/?LinkId=199957)|  
 |**Foren**|-   [Visual Studio-Visualisierungs- & Modellierungstools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL Tools)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
 |**Blogs**|[Visual Studio ALM + Team Foundation Server Blog](http://go.microsoft.com/fwlink/?LinkID=201340)|  
 |**Technische Artikel und Journale**|[MSDN Architecture Center](http://go.microsoft.com/fwlink/?LinkId=201343)|  
@@ -126,6 +121,3 @@ In diesem Thema werden die verschiedenen Methoden zusammengefasst, mit denen Sie
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen von Modellen für Ihre app](../modeling/create-models-for-your-app.md)   
  [API-Referenz für UML-Modellierungserweiterbarkeit](../modeling/api-reference-for-uml-modeling-extensibility.md)
-
-
-

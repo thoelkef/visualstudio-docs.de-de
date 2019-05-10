@@ -1,12 +1,9 @@
 ---
 title: Eigenschaften von Typen in UML-Klassendiagrammen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.shapes.properties
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: 6e1ef2d0-d67a-401a-bd64-d5e034decd2c
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e8baad41658cc6144f08d0b6b4d415aa4ff6e499
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 996f2f75499a54e0d5514590f2b087130b73ffb5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750112"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387772"
 ---
 # <a name="properties-of-types-on-uml-class-diagrams"></a>Eigenschaften von Typen in UML-Klassendiagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,17 +26,17 @@ ms.locfileid: "51750112"
 In einem UML-Klassendiagramm eine *Typ* ist eine Klasse, eine Schnittstelle oder eine Enumeration.  
   
 > [!NOTE]
->  In diesem Thema werden die Eigenschaften von Typen in UML-Klassendiagrammen behandelt. Weitere Informationen finden Sie unter den folgenden Themen:  
+> In diesem Thema werden die Eigenschaften von Typen in UML-Klassendiagrammen behandelt. Weitere Informationen finden Sie unter den folgenden Themen:  
   
--   [UML-Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md)  
+- [UML-Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md)  
   
--   [UML-Klassendiagramme: Richtlinien](../modeling/uml-class-diagrams-guidelines.md)  
+- [UML-Klassendiagramme: Richtlinien](../modeling/uml-class-diagrams-guidelines.md)  
   
--   [Eigenschaften von Attributen in UML-Klassendiagrammen](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
+- [Eigenschaften von Attributen in UML-Klassendiagrammen](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
   
--   [Eigenschaften von Vorgängen in UML-Klassendiagrammen](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
+- [Eigenschaften von Vorgängen in UML-Klassendiagrammen](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
   
--   [Eigenschaften von Zuordnungen in UML-Klassendiagrammen](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
+- [Eigenschaften von Zuordnungen in UML-Klassendiagrammen](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
   
 ## <a name="properties"></a>Eigenschaften  
  Dies sind die Eigenschaften einer Klasse, Schnittstelle oder Enumeration.  
@@ -49,7 +46,7 @@ In einem UML-Klassendiagramm eine *Typ* ist eine Klasse, eine Schnittstelle oder
 |**Property**|**Default**|Angezeigt in|Beschreibung|  
 |------------------|-----------------|----------------|-----------------|  
 |**Name**|Ein Standardname|Alle Elemente|Bezeichnet das Element.|  
-|**Qualifizierter Name**|Enthaltendes Paket :: Typname|Alle Elemente|Bezeichnet das Element eindeutig. Mit dem qualifizierten Namen des Pakets, das es enthält, als Präfix.|  
+|**Qualifizierter Name**|Enthaltendes Paket:: Typname|Alle Elemente|Bezeichnet das Element eindeutig. Mit dem qualifizierten Namen des Pakets, das es enthält, als Präfix.|  
 |**Farbe**|Standardwert für die Art des Typs|Alle Elemente|Die Farbe dieser Form. Im Gegensatz zu den anderen Eigenschaften ist dies keine Eigenschaft des zugrundeliegenden Modellelements. Verschiedene Ansichten desselben Typs können unterschiedliche Farben haben.|  
 |**Ist abstrakt**|False|Klasse|Bei „true“ kann die Klasse kann nicht instanziiert werden und ist für die Verwendung als Basisklasse bestimmt.|  
 |**Wird die Blattebene**|False|Klasse, Schnittstelle|Bei „true“ soll der Typ nicht über abgeleitete Typen verfügen.|  
@@ -65,6 +62,3 @@ In einem UML-Klassendiagramm eine *Typ* ist eine Klasse, eine Schnittstelle oder
  [Eigenschaften von Operationen in UML-Klassendiagrammen](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
  [Eigenschaften von Zuordnungen in UML-Klassendiagrammen](../modeling/properties-of-associations-on-uml-class-diagrams.md)   
  [UML-Klassendiagramme: Richtlinien](../modeling/uml-class-diagrams-guidelines.md)
-
-
-

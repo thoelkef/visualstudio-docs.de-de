@@ -1,29 +1,31 @@
 ---
 title: IDebugProcess2::GetAttachedSessionName | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProcess2::GetAttachedSessionName
 helpviewer_keywords:
 - IDebugProcess2::GetAttachedSessionName
 ms.assetid: 7e5e116f-2c0c-4bc8-ad3f-e9fd2318a7e4
-author: gregvanl
+caps.latest.revision: 14
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 4607026040bb790e34bf39fcd2b9cdf911251c81
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: cd927d66db6e38e3a208cac1ca6545a5b290dc03
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63413486"
 ---
 # <a name="idebugprocess2getattachedsessionname"></a>IDebugProcess2::GetAttachedSessionName
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Ruft den Namen der Sitzung, die diesen Prozess zu Debuggen ist. Eine IDE kann diese Informationen für einen Benutzer anzeigen, die einen bestimmten Prozess auf einem bestimmten Computer Debuggen ist.  
   
 > [!NOTE]
->  Diese Methode ist veraltet, und die Implementierung sollte immer zurückgeben `E_NOTIMPL`.  
+> Diese Methode ist veraltet, und die Implementierung sollte immer zurückgeben `E_NOTIMPL`.  
   
 ## <a name="syntax"></a>Syntax  
   

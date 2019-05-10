@@ -1,14 +1,9 @@
 ---
-title: Die Ausnahme ausgelöst und nicht abgefangen | Microsoft Docs
-ms.custom: ''
+title: Ausnahme ausgelöst und nicht abgefangen. | Microsoft-Dokumentation
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5022
 dev_langs:
@@ -16,29 +11,28 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: b5235490-a8e7-42e3-804e-d85235bc6f05
-caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 839ff08da4d26406b508a206c809b0813d2b32e1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bae4ed0a335a9c12d16cb46208f77c4b66f12547
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946328"
 ---
 # <a name="exception-thrown-and-not-caught"></a>Ausnahme ausgelöst und nicht abgefangen
-Sie enthalten eine `throw` Anweisung im Code, aber es wurde keine eingefasst eine **versuchen** blockieren, oder es wurde keine zugeordnete **catch** Block, um den Fehler. Ausnahmen werden ausgelöst, innerhalb der **versuchen Sie es** mit blockiert die **auslösen** -Anweisung und abgefangene außerhalb der **versuchen Sie es** -block mit einer **catch** -Anweisung.  
+Sie enthalten eine `throw` -Anweisung in Ihrem Code, aber es wurde keine eingefasst eine **versuchen** -Block, oder es wurde keine zugeordnete **catch** Block zum Abfangen des Fehlers. Ausnahmen werden ausgelöst, innerhalb der **versuchen Sie es** mit blockiert die **auslösen** -Anweisung und abgefangene außerhalb der **versuchen Sie es** -block mit einer **catch** -Anweisung.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Schließen Sie Code, der eine Ausnahme, in auslösen kann eine **versuchen** blockieren, und Sie sicher, dass es ein entsprechendes **catch** Block.  
+- Einschließen von Code, der eine Ausnahme, in auslösen kann eine **versuchen** blockieren, und stellen Sie sicher, es wird eine entsprechende **catch** Block.  
   
--   Stellen Sie sicher, dass die Catch-Anweisung erwartet, dass die richtige Art der Ausnahme.  
+- Stellen Sie sicher, dass die Catch-Anweisung erwartet, dass die richtige Art der Ausnahme.  
   
--   Wenn die Ausnahme erneut ausgelöst wird, stellen Sie sicher, dass eine andere entsprechende Catch-Anweisung vorhanden ist.  
+- Wenn die Ausnahme erneut ausgelöst wird, stellen Sie sicher, dass eine andere entsprechende Catch-Anweisung vorhanden ist.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Error-Objekt](../../javascript/reference/error-object-javascript.md)   
- [throw-Anweisung](../../javascript/reference/throw-statement-javascript.md)   
+ [Throw-Anweisung](../../javascript/reference/throw-statement-javascript.md)   
  [try...catch...finally-Anweisung](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

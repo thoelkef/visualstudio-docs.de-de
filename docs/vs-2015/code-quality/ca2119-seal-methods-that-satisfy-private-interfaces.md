@@ -1,14 +1,9 @@
 ---
 title: 'CA2119: Methoden versiegeln, private Schnittstellen erfüllen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - SealMethodsThatSatisfyPrivateInterfaces
 - CA2119
@@ -20,14 +15,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c6d3e102cde1fc010f777006d629fa2d19add894
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2a120bb5eaab49e2652715c2583f898949b506a3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825392"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061501"
 ---
-# <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119: Methoden versiegeln, die die Bedingungen privater Schnittstellen erfüllen
+# <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119: Methoden versiegeln, die die Bedingungen privater Schnittstellen erfüllen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -46,15 +41,15 @@ ms.locfileid: "49825392"
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, verhindern Sie, dass die Methode außerhalb der Assembly überschrieben wird, indem Sie eine der folgenden:
 
--   Ändern Sie den deklarierenden Typ `sealed` (`NotInheritable` in Visual Basic).
+- Ändern Sie den deklarierenden Typ `sealed` (`NotInheritable` in Visual Basic).
 
--   Ändern Sie den Zugriff des deklarierenden Typs `internal` (`Friend` in Visual Basic).
+- Ändern Sie den Zugriff des deklarierenden Typs `internal` (`Friend` in Visual Basic).
 
--   Entfernen Sie alle öffentliche Konstruktoren, von dem deklarierenden Typ.
+- Entfernen Sie alle öffentliche Konstruktoren, von dem deklarierenden Typ.
 
--   Implementieren Sie die Methode ohne Verwendung der `virtual` Modifizierer.
+- Implementieren Sie die Methode ohne Verwendung der `virtual` Modifizierer.
 
--   Implementieren Sie explizit die Methode.
+- Implementieren Sie explizit die Methode.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Es ist sicherer, unterdrücken Sie eine Warnung von dieser Regel, wenn Sie nach sorgfältiger Prüfung keine Sicherheitsprobleme, die vorhanden sein kann ausgenutzt werden, wenn die Methode außerhalb der Assembly überschrieben wird.
@@ -75,6 +70,3 @@ ms.locfileid: "49825392"
 
 ## <a name="see-also"></a>Siehe auch
  [Schnittstellen](http://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37) [Schnittstellen](http://msdn.microsoft.com/library/61b06674-12c9-430b-be68-cc67ecee1f5b)
-
-
-

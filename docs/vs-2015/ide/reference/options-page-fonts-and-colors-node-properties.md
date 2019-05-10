@@ -1,14 +1,9 @@
 ---
 title: Optionsseite, Eigenschaften des Knotens „Schriftarten und Farben“ | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Tools Options settings, Fonts and Colors node properties
 - automation [Visual Studio], controlling Tools Options
@@ -16,18 +11,17 @@ ms.assetid: 8e1ab784-5f85-4e2b-8ef9-e5d59ca4dbcb
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 538711a72a1f22a9dfd984f6fcd36ea7787742f6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 418d804a8e7eda785e628c55054b6b1160a84a59
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296063"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664552"
 ---
 # <a name="options-page-fonts-and-colors-node-properties"></a>Optionsseite, Eigenschaften des Knotens "Schriftarten und Farben"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Dieses Dokument beschreibt die Eigenschaften der Schriftarten und Farben für ein Toolfenster, das unter **Schriftarten und Farben** in der Kategorie **Umgebung** des Dialogfelds **Optionen** registriert ist. Dadurch wird die Dynamik von Gruppen von einfärbbaren Elementen unterstützt, die sich ändern kann, wenn VSPackages installiert oder deinstalliert werden.  
   
  Im folgenden Bereich wird ein Beispiel für einen registrierten Fenstertyp und die für jedes Fenster verfügbaren Eigenschaften besprochen.  
@@ -54,6 +48,3 @@ Dieses Dokument beschreibt die Eigenschaften der Schriftarten und Farben für ei
  [Bestimmen der Namen von Eigenschaftenelementen auf Optionsseiten](http://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [Seite „Optionen“, Eigenschaften des Knotens „Umgebung“](../../ide/reference/options-page-environment-node-properties.md)   
  [Optionsseite, Eigenschaften des Knotens „Text-Editor“](../../ide/reference/options-page-text-editor-node-properties.md)
-
-
-

@@ -1,7 +1,9 @@
 ---
 title: Enumerationen und Strukturen | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -10,19 +12,20 @@ helpviewer_keywords:
 - structures [DIA SDK]
 - DIA SDK, structures
 ms.assetid: d17eed2d-d8fd-4a47-82d3-8125c0624010
-author: mikejo5000
+caps.latest.revision: 14
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: c8f994e83e6817062878ef7a0d8e6cd9981b3ec9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: b8a38138b5688d0c6573b18f3b0d875abcf627c2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554934"
 ---
 # <a name="enumerations-and-structures"></a>Enumerationen und Strukturen
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Dies sind die Enumerationen und Strukturen, die von der DIA-SDK verwendet.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  

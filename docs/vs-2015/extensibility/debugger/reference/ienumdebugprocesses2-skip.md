@@ -1,14 +1,9 @@
 ---
 title: IEnumDebugProcesses2::Skip | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IEnumDebugProcesses2::Skip
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: b9e9d888-189b-44c4-a65f-e91612458898
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9473af008e6f50d6f5917da362ffb5c0cdfba499
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 49d61f20e0727870e706d63fe0467f6dfa0083c5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761210"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58960984"
 ---
 # <a name="ienumdebugprocesses2skip"></a>IEnumDebugProcesses2::Skip
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -48,11 +43,10 @@ int Skip(
  [in] Die Anzahl der zu überspringenden Elemente.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` Wenn `celt` größer als die Anzahl der verbleibenden Elemente ist; andernfalls ein Fehlercode zurückgegeben.  
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn `celt` größer als die Anzahl der verbleibenden Elemente ist; andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
  Wenn `celt` gibt einen Wert größer als die Anzahl der verbleibenden Elemente am Ende die Enumeration festgelegt ist und `S_FALSE` zurückgegeben wird.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)
-

@@ -1,14 +1,9 @@
 ---
 title: SccGet-Funktion | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccGet
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 78c766e52278c8bae29e57cad6f1c0255de4ea43
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2a5d5065ca427f0319174aa59e6b87d356816d4c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432428"
 ---
 # <a name="sccget-function"></a>SccGet-Funktion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +77,7 @@ SCCRTN SccGet(
  Die `SCC_GET_ALL` Flag kombiniert werden können, mit der `SCC_GET_RECURSIVE` Flag, um alle Dateien in den angegebenen Verzeichnissen und auch alle Unterverzeichnisse abzurufen.  
   
 > [!NOTE]
->  `SCC_GET_RECURSIVE` sollte nie übergeben werden, ohne `SCC_GET_ALL`. Beachten Sie, dass wenn Verzeichnisse C:\A und C:\A\B get in einem rekursiven übergeben sind, C:\A\B und allen seinen Unterverzeichnisse tatsächlich zweimal abgerufen werden. Es obliegt der IDE – und nicht den Quellcode-Plug-ins, um sicherzustellen, dass Duplikate, wie diese aus dem Array gespeichert werden.  
+> `SCC_GET_RECURSIVE` sollte nie übergeben werden, ohne `SCC_GET_ALL`. Beachten Sie, dass wenn Verzeichnisse C:\A und C:\A\B get in einem rekursiven übergeben sind, C:\A\B und allen seinen Unterverzeichnisse tatsächlich zweimal abgerufen werden. Es obliegt der IDE – und nicht den Quellcode-Plug-ins, um sicherzustellen, dass Duplikate, wie diese aus dem Array gespeichert werden.  
   
  Schließlich auch, wenn ein Quellcode-Plug-in angegebene die `SCC_CAP_GET_NOUI` Flag bei der Initialisierung, der angibt, dass er verfügt nicht über eine Benutzeroberfläche für einen Get-Befehl, der diese Funktion kann noch von der IDE zum Abrufen von Dateien aufgerufen werden. Das Flag bedeutet einfach, dass die IDE wird ein Get-Menüelement nicht angezeigt, dass das plug-in nicht erwartet, dass keine Benutzeroberfläche bereitstellt.  
   
@@ -91,23 +86,22 @@ SCCRTN SccGet(
   
  Es gibt zwei Möglichkeiten, dieses Problem zu beheben, in denen der lokale Cache von Source-Control-Versionen mit der Datenbank synchronisiert wird:  
   
-1.  Lassen Sie Umbenennen einer Datei im Quellcode-Verwaltungsdatenbank, die derzeit ausgecheckt ist zu, nicht.  
+1. Lassen Sie Umbenennen einer Datei im Quellcode-Verwaltungsdatenbank, die derzeit ausgecheckt ist zu, nicht.  
   
-2.  Führen Sie die Entsprechung von "Löschen alte" gefolgt von "Neu hinzufügen". Der folgende Algorithmus ist eine Möglichkeit, dies zu erreichen.  
+2. Führen Sie die Entsprechung von "Löschen alte" gefolgt von "Neu hinzufügen". Der folgende Algorithmus ist eine Möglichkeit, dies zu erreichen.  
   
-    1.  Rufen Sie die [SccQueryChanges](../extensibility/sccquerychanges-function.md) Funktion, erfahren Sie mehr über das Umbenennen von a.txt zu "b.txt" im Quellcode-Verwaltungsdatenbank.  
+    1. Rufen Sie die [SccQueryChanges](../extensibility/sccquerychanges-function.md) Funktion, erfahren Sie mehr über das Umbenennen von a.txt zu "b.txt" im Quellcode-Verwaltungsdatenbank.  
   
-    2.  Benennen Sie die lokalen a.txt zu "b.txt".  
+    2. Benennen Sie die lokalen a.txt zu "b.txt".  
   
-    3.  Rufen Sie die `SccGet` -Funktion für sowohl "a.txt" und "b.txt".  
+    3. Rufen Sie die `SccGet` -Funktion für sowohl "a.txt" und "b.txt".  
   
-    4.  Da a.txt nicht im Quellcode-Verwaltungsdatenbank vorhanden ist, wird der lokalen Cache der Informationen zu fehlenden a.txt Version gelöscht.  
+    4. Da a.txt nicht im Quellcode-Verwaltungsdatenbank vorhanden ist, wird der lokalen Cache der Informationen zu fehlenden a.txt Version gelöscht.  
   
-    5.  Die "b.txt"-Datei, die ausgecheckt wird, wird mit dem Inhalt der lokalen "b.txt"-Datei zusammengeführt.  
+    5. Die "b.txt"-Datei, die ausgecheckt wird, wird mit dem Inhalt der lokalen "b.txt"-Datei zusammengeführt.  
   
-    6.  Die aktualisierte "b.txt"-Datei kann jetzt eingecheckt werden.  
+    6. Die aktualisierte "b.txt"-Datei kann jetzt eingecheckt werden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Quellcodeverwaltungsfunktionen-Plug-in-API](../extensibility/source-control-plug-in-api-functions.md)   
  [Von bestimmten Befehlen verwendete Bitflags](../extensibility/bitflags-used-by-specific-commands.md)
-

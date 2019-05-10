@@ -1,7 +1,6 @@
 ---
 title: 'CA1719: Parameternamen sollten nicht mit Membernamen übereinstimmen.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - ParameterNamesShouldNotMatchMemberNames
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: c6fea690-1659-4ee7-a1c5-125ad6754525
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ca40c478eb383025755bff147dd9e0f47cecb79
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 001983bf9ca182f89587b23e04828b93d12d98f1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545784"
 ---
 # <a name="ca1719-parameter-names-should-not-match-member-names"></a>CA1719: Parameternamen sollten nicht mit Membernamen übereinstimmen.
 

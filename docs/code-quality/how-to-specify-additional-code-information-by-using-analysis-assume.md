@@ -1,7 +1,6 @@
 ---
 title: 'Vorgehensweise: Angeben zusätzlicher Codeinformationen mit „__Analysis_assume“'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - _Analysis_assume
@@ -13,12 +12,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 17e25ace1da6cad9fcdc129b6c6f517c39c9c103
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: 25ce2a97acd248e546fdfab1a1b5c3f22e085f0c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845077"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403122"
 ---
 # <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Vorgehensweise: Angeben zusätzlicher Codeinformationen mit „__Analysis_assume“
 Sie können Hinweise an, die das Codeanalysetool für C/C++-Code angeben, die den Analyse zu unterstützen und Warnungen zu reduzieren. Um zusätzliche Informationen bereitzustellen, verwenden Sie die folgende Funktion:
@@ -30,7 +29,7 @@ Sie können Hinweise an, die das Codeanalysetool für C/C++-Code angeben, die de
  Das Codeanalysetool wird davon ausgegangen, dass die Bedingung, die durch den Ausdruck dargestellt wird "true", an dem Punkt ist, in dem die Funktion angezeigt wird, und "true" bleibt, bis der Ausdruck geändert wird, z. B. durch die Zuweisung zur Variable.
 
 > [!NOTE]
->  `_Analysis_assume` codeoptimierung hat keine Auswirkungen. Außerhalb der Codeanalysetools `_Analysis_assume` als keine Aktion definiert ist.
+> `_Analysis_assume` codeoptimierung hat keine Auswirkungen. Außerhalb der Codeanalysetools `_Analysis_assume` als keine Aktion definiert ist.
 
 ## <a name="example"></a>Beispiel
  Der folgende code verwendet `_Analysis_assume` der codeanalysewarnung zu korrigieren [C6388](../code-quality/c6388.md):

@@ -4,16 +4,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: d1cec12a7a97ffa23f2eb75ffd9fc53da8ad2ed1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 85a4356837180d13428acf34636f28cca668a423
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993162"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Vorgehensweise: Erweitern des DSL-Designers
 
@@ -27,25 +26,23 @@ Richten Sie ein Projekt, das den Code Ihrer Erweiterung enthält, und ein VSIX-P
 
 ### <a name="to-create-a-dsl-designer-extension-solution"></a>Erstellen Sie eine DSL-Designer-Erweiterungsprojektmappe
 
-1.  Erstellen eines neuen Projekts mithilfe der Projektvorlage für Klassenbibliothek. In der **neues Projekt** Dialogfeld klicken Sie auf **Visual C#-** , und klicken Sie dann im mittleren Fenster auf **Klassenbibliothek**.
+1. Erstellen Sie ein neues Projekt mit der **Klassenbibliothek** Projektvorlage. Dieses Projekt enthält den Code mit Ihren Erweiterungen anzeigen.
 
-     Dieses Projekt enthält den Code mit Ihren Erweiterungen anzeigen.
-
-2.  Erstellen Sie ein neues Projekt mit der VSIX-Projektvorlage. In der **neues Projekt** Dialogfeld erweitern Sie **Visual C#-**, klicken Sie auf **Erweiterbarkeit**, und klicken Sie dann im mittleren Fenster die Option **VSIX-Projekt**.
+2. Erstellen Sie ein neues **VSIX-Projekt** Projekt.
 
      Wählen Sie **zu Projektmappe hinzufügen**.
 
-     "Source.Extension.vsixmanifest", die im VSIX-manifest-Editor wird geöffnet.
+     *"Source.Extension.vsixmanifest"* im VSIX-manifest-Editor wird geöffnet.
 
-3.  Klicken Sie oberhalb der Inhaltsfeld auf **Inhalt hinzufügen**.
+3. Klicken Sie oberhalb der Inhaltsfeld auf **Inhalt hinzufügen**.
 
-4.  In der **Inhalt hinzufügen** (Dialogfeld), Gruppe **wählen Sie einen Inhaltstyp** zu **MEF-Komponente**, und legen Sie **Projekt** auf Ihr Klassenbibliotheksprojekt hinzu.
+4. In der **Inhalt hinzufügen** (Dialogfeld), Gruppe **wählen Sie einen Inhaltstyp** zu **MEF-Komponente**, und legen Sie **Projekt** auf Ihr Klassenbibliotheksprojekt hinzu.
 
-5.  Klicken Sie auf **Editionen auswählen** und stellen Sie sicher, dass **Visual Studio Enterprise** aktiviert ist.
+5. Klicken Sie auf **Editionen auswählen** und stellen Sie sicher, dass **Visual Studio Enterprise** aktiviert ist.
 
-6.  Stellen Sie sicher, dass das VSIX-Projekt das Startprojekt der Projektmappe ist.
+6. Stellen Sie sicher, dass das VSIX-Projekt das Startprojekt der Projektmappe ist.
 
-7.  Klicken Sie in das Klassenbibliotheksprojekt hinzu fügen Sie Verweise auf die folgenden Assemblys hinzu:
+7. Klicken Sie in das Klassenbibliotheksprojekt hinzu fügen Sie Verweise auf die folgenden Assemblys hinzu:
 
      Microsoft.VisualStudio.CoreUtility
 
@@ -71,17 +68,17 @@ Um eine der Erweiterungen in diesem Thema zu testen, erstellen Sie, und führen 
 
 Um die Erweiterungen zu den wichtigsten Visual Studio, und klicken Sie auf anderen Computern bereitzustellen, gehen Sie folgendermaßen vor:
 
-1.  Suchen Sie die VSIX-Installationsdatei im VSIX-Projekt in "bin"\\*\*\\\*VSIX
+1. Suchen Sie die VSIX-Installationsdatei im VSIX-Projekt in "bin"\\*\*\\\*VSIX
 
-2.  Kopieren Sie diese Datei auf den Zielcomputer, und klicken Sie dann im Windows-Explorer (oder Datei-Explorer), doppelklicken Sie darauf.
+2. Kopieren Sie diese Datei auf den Zielcomputer, und klicken Sie dann im Windows-Explorer (oder Datei-Explorer), doppelklicken Sie darauf.
 
      Der Visual Studio-Erweiterungs-Manager wird geöffnet, um sicherzustellen, dass die Erweiterung installiert wurde.
 
 Um die Erweiterung zu deinstallieren, gehen Sie folgendermaßen vor:
 
-1.  In Visual Studio auf die **Tools** Menü klicken Sie auf **Erweiterungs-Manager**.
+1. In Visual Studio auf die **Tools** Menü klicken Sie auf **Erweiterungs-Manager**.
 
-2.  Wählen Sie die Erweiterung, oder löschen.
+2. Wählen Sie die Erweiterung, oder löschen.
 
 ## <a name="add-a-shortcut-menu-command"></a>Fügen Sie einen Befehl im Kontextmenü
 

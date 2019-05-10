@@ -1,14 +1,9 @@
 ---
 title: Befehl „Projektmappe öffnen“ | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - file.opensolution
 helpviewer_keywords:
@@ -18,18 +13,17 @@ ms.assetid: 61de76c8-69d7-4cdb-b605-e132f45d05d9
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 15c51e341761ad34241f1230f797896ce8dc2e9e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bb99d359f3858d8e7f15e013ab56719c7ed14995
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186405"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654606"
 ---
 # <a name="open-solution-command"></a>Befehl "Projektmappe öffnen"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Öffnet eine vorhandene Projektmappe und schließt alle anderen geöffneten Projektmappen.  
   
 ## <a name="syntax"></a>Syntax  
@@ -44,7 +38,7 @@ File.OpenSolution filename
   
  Die Syntax für das Argument `filename` erfordert, dass Pfade, die Leerzeichen enthalten, in Anführungszeichen gesetzt werden.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Bei der automatischen Vervollständigung wird während der Eingabe versucht, den richtigen Pfad und Dateinamen zu finden.  
   
 ## <a name="example"></a>Beispiel  
@@ -59,6 +53,3 @@ File.OpenSolution filename
  [Befehlsfenster](../../ide/reference/command-window.md)   
  [Such-/Befehlsfeld](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

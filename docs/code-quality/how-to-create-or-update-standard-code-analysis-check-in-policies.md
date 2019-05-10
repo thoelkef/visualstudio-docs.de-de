@@ -1,7 +1,6 @@
 ---
-title: Erstellen oder Aktualisieren von Standardeincheckrichtlinien Codeanalyse-Eincheckrichtlinien
+title: Erstellen oder Aktualisieren von Standardeincheckrichtlinien für die Codeanalyse
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.policyeditor
@@ -9,17 +8,17 @@ helpviewer_keywords:
 - code analysis, migrating check-in policy
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22a74926f4fd9136e15757eb6967d5eb56a8ecbf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 768efb3e874f6427cd23f63f14671aa2db1bea71
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890338"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816356"
 ---
-# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Vorgehensweise: Erstellen oder Aktualisieren von Standardeincheckrichtlinien Codeanalyse-Eincheckrichtlinien
+# <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Vorgehensweise: Erstellen oder Aktualisieren von Standardeincheckrichtlinien für die Codeanalyse
 
 Sie können anfordern, dass die Codeanalyse auf alle Codeprojekte in einem Azure DevOps-Projekt ausgeführt werden, mit der Eincheckrichtlinie für die Analyse. Codeanalyse erfordert, kann die Qualität des Codes verbessern, die in die CodeBase überprüft wird.
 

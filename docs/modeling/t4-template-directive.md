@@ -1,23 +1,22 @@
 ---
-title: T4-Vorlagenanweisung
+title: T4-Vorlagendirektive
 ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 337560d6db6d8747b1aedd23d789f2ef56d045c9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 56332c58c48903a13a5b1538cf18986ba81e20a7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856382"
 ---
-# <a name="t4-template-directive"></a>T4-Vorlagenanweisung
+# <a name="t4-template-directive"></a>T4-Vorlagendirektive
 
-Eine Visual Studio T4-Textvorlage beginnt normalerweise mit einer `template` Anweisung, die angibt, wie die Vorlage verarbeitet werden sollen. In einer Textvorlage und allen darin enthaltenen Dateien darf nur eine Vorlagenanweisung vorhanden sein.
+Eine Visual Studio T4-Textvorlage beginnt normalerweise mit einer `template` Anweisung, die angibt, wie die Vorlage verarbeitet werden sollen. In einer Textvorlage und allen darin enthaltenen Dateien darf nur eine Vorlagendirektive vorhanden sein.
 
 Eine allgemeine Übersicht über das Schreiben von Textvorlagen finden Sie unter [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md).
 
@@ -27,7 +26,7 @@ Eine allgemeine Übersicht über das Schreiben von Textvorlagen finden Sie unter
 <#@ template [language="VB"] [compilerOptions="options"] [culture="code"] [debug="true"] [hostspecific="true"] [inherits="templateBaseClass"] [visibility="internal"] [linePragmas="false"] #>
 ```
 
-Die `template`-Anweisung besitzt mehrere Attribute, mit denen Sie verschiedene Aspekte der Transformation angeben können. Alle Attribute sind optional.
+Die `template`-Direktive besitzt mehrere Attribute, mit denen Sie verschiedene Aspekte der Transformation angeben können. Alle Attribute sind optional.
 
 ## <a name="compileroptions-attribute"></a>compilerOptions-Attribut
 
@@ -36,7 +35,7 @@ Beispiel:
 `compilerOptions="optimize+"`
 
 Gültige Werte:
- 
+
 Alle gültigen Compileroptionen.
 
 Ignoriert für Laufzeitvorlagen (vorverarbeitete Vorlagen).
@@ -46,11 +45,11 @@ Diese Optionen werden übernommen, wenn die Vorlage in [!INCLUDE[csprcs](../data
 ## <a name="culture-attribute"></a>Kulturattribut
 
 Beispiel:
- 
+
 `culture="de-CH"`
 
 Gültige Werte:
- 
+
 "", die invariante Kultur (Standard).
 
 Eine als Zeichenfolge im Format xx-XX ausgedrückte Kultur. Beispiel: en-US, ja-JP, de-CH, de-DE. Weitere Informationen finden Sie unter <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
@@ -66,11 +65,11 @@ debug="true"
 ```
 
 Gültige Werte:
- 
+
 `true`
- 
-`false` (Standardwert)
- 
+
+`false` (Standard)
+
 Wenn das `debug`-Attribut `true` ist, enthält die Zwischencodedatei Informationen, mit denen der Debugger genauer die Position in der Vorlage erkennen kann, an der eine Unterbrechung oder Ausnahme aufgetreten ist.
 
 Für Entwurfszeitvorlagen wird die Zwischencodedatei in geschrieben Ihre **% TEMP%** Verzeichnis.
@@ -88,9 +87,9 @@ hostspecific="true"
 Gültige Werte:
 
 `true`
- 
-`false` (Standardwert)
- 
+
+`false` (Standard)
+
 `trueFromBase`
 
 Wenn Sie den Wert dieses Attributs auf `true` festlegen, wird der von der Textvorlage generierten Klasse eine Eigenschaft mit dem Namen `Host` hinzugefügt. Die Eigenschaft ist ein Verweis auf den Host des Transformations-Engine und wird als <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> deklariert. Wenn Sie einen benutzerdefinierten Host definiert haben, können Sie ihn in den benutzerdefinierten Hosttyp umwandeln.
@@ -129,7 +128,7 @@ Beispiel:
 
 Gültige Werte:
 
-`C#` (Standardwert)
+`C#` (Standard)
 
 `VB`
 
@@ -207,13 +206,15 @@ protected override void SpecificFragment2()
 #>
 ```
 
- Anwendungscode zum Aufruf von "DerivedTemplate1":
- ```csharp
+Anwendungscode zum Aufruf von "DerivedTemplate1":
+
+```csharp
 Console.WriteLine(new DerivedTemplate().TransformText());
 ```
 
- Ergebnis:
- ```
+Ergebnis:
+
+```
 This is the common header.
    Fragment 1 for DerivedTemplate1
 A common central text.
@@ -232,7 +233,7 @@ Sie können auch eine gewöhnliche, von Hand geschriebene Klasse als Basisklasse
 
 Eine Entwurfszeit-Textvorlage ist eine Datei für die **benutzerdefiniertes Tool** nastaven NA hodnotu **TextTemplatingFileGenerator**. Die Vorlage erstellt eine Ausgabedatei mit Code oder Text, die Teil von Visual Studio-Projekt bildet. Um die Ausgabedatei zu generieren, wird die Vorlage zuerst in eine Zwischenprogrammcodedatei übersetzt, die normalerweise nicht sichtbar ist. Das `inherits`-Attribut gibt die Basisklasse für den Zwischencode an.
 
-Für eine Entwurfszeittextvorlage können Sie jede Basisklasse angeben, die von <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName> abgeleitet wird. Verwenden Sie die `<#@assembly#>`-Anweisung, um die Assembly oder das Projekt zu laden, das die Basisklasse enthält.
+Für eine Entwurfszeittextvorlage können Sie jede Basisklasse angeben, die von <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName> abgeleitet wird. Verwenden Sie die `<#@assembly#>`-Direktive, um die Assembly oder das Projekt zu laden, das die Basisklasse enthält.
 
 Weitere Informationen finden Sie unter ["Vererbung in Textvorlagen" im Blog von Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).
 
@@ -244,11 +245,11 @@ Beispiel:
 
 Gültige Werte:
 
-`true` (Standardwert)
+`true` (Standard)
 
 `false`
 
-Wenn dieses Attribut auf FALSE festgelegt ist, werden die Tags entfernt, die die Zeilennummern im generierten Codes identifizieren. Dies bedeutet, dass der Compiler alle Fehler anhand der Zeilennummern des generierten Codes meldet. Damit erhalten Sie mehr Debugoptionen, da Sie entweder die Textvorlage oder den generierten Code debuggen können.
+Wenn dieses Attribut auf "false" festgelegt ist, werden die Tags entfernt, die die Zeilennummern im generierten Codes identifizieren. Dies bedeutet, dass der Compiler alle Fehler anhand der Zeilennummern des generierten Codes meldet. Damit erhalten Sie mehr Debugoptionen, da Sie entweder die Textvorlage oder den generierten Code debuggen können.
 
 Dieses Attribut auch hilfreich, wenn Sie erkennen, dass die absoluten Dateinamen in Pragmas irritierende Merges unter quellcodeverwaltung verursachen.
 
@@ -260,7 +261,7 @@ Beispiel:
 
 Gültige Werte:
 
-`public` (Standardwert)
+`public` (Standard)
 
 `internal`
 

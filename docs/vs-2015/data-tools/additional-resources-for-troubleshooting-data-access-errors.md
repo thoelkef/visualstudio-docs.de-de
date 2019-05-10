@@ -1,12 +1,9 @@
 ---
 title: Zusätzliche Ressourcen zur Problembehandlung beim Datenzugriff | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: troubleshooting
 f1_keywords:
 - DSD_ImportXmlSchemaSameFileWrnHelpId
 - vbdata.ParameterizeFormDialog_NoDataSource
@@ -232,19 +229,18 @@ ms.assetid: 357c9f0a-9d59-4db4-9b7c-b96cad839961
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 415d403bc5282e2759805558ea6a91a1c2cf9bdf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 851a1f87cce5f4030a9ba5a4701b6c0055859f10
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263017"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668716"
 ---
 # <a name="additional-resources-for-troubleshooting-data-access-errors"></a>Zusätzliche Ressourcen für die Problembehandlung beim Datenzugriff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Hilfe bei der Problembehandlung für Fehler und Warnungen finden Sie in den öffentlichen Foren von MSDN (Microsoft Developer Network). In der folgenden Tabelle sind die auf MSDN verfügbaren datenbezogenen Foren aufgeführt.  
   
  [Windows Forms-Datensteuerelemente und -Datenbindung](http://go.microsoft.com/fwlink/?LinkId=160179)  
@@ -272,4 +268,3 @@ Hilfe bei der Problembehandlung für Fehler und Warnungen finden Sie in den öff
   
 ## <a name="see-also"></a>Siehe auch  
  [Visual Studio-Datentools für .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
-

@@ -1,19 +1,18 @@
 ---
 title: Verwalten von Testcontrollern und Test-Agents
 ms.date: 09/18/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b687504ae69d7b133aba107c7705eeb50f6f8953
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b90a80ffb958fb08a39a4f3b7f4350aa80d830d2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891400"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788751"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Verwalten von Testcontrollern und Test-Agents
 
@@ -185,27 +184,27 @@ Wenn Sie den Testcontroller bei Ihrer Team Foundation Server-Projektsammlung reg
 
 Wenn Sie den Testeinstellungen für Visual Studio Rollen für die Anwendung hinzufügen, können Sie für jede der Rollen Agent-Eigenschaften hinzufügen. Damit bestimmen Sie, welche Test-Agents für diese Rolle verfügbar sind. Wenn Sie die Tests unter Verwendung dieser Testeinstellungen ausführen, bestimmt der für die Ausführung ausgewählte Testcontroller die Verfügbarkeit der erforderlichen Agents. Wenn die Verfügbarkeit von Agents bestimmt wird, können die folgenden Situationen auftreten:
 
--   Für die Rolle, die die Tests ausführen muss, ist kein Agent verfügbar. Die Tests können nicht ausgeführt werden. Sie können eine der folgenden Aktionen ausführen und dann die Tests erneut ausführen:
+- Für die Rolle, die die Tests ausführen muss, ist kein Agent verfügbar. Die Tests können nicht ausgeführt werden. Sie können eine der folgenden Aktionen ausführen und dann die Tests erneut ausführen:
 
-    -   Sie können warten, bis ein Agent für die Rolle zum Ausführen der Tests verfügbar ist.
+    - Sie können warten, bis ein Agent für die Rolle zum Ausführen der Tests verfügbar ist.
 
-    -   Wenn Agents offline sind, die für die Rolle verwendet werden können, können Sie den Agent neu starten, damit er verfügbar ist.
+    - Wenn Agents offline sind, die für die Rolle verwendet werden können, können Sie den Agent neu starten, damit er verfügbar ist.
 
-    -   Sie können dem Testcontroller einen weiteren Agent mit den richtigen Agent-Eigenschaften für diese Rolle hinzufügen.
+    - Sie können dem Testcontroller einen weiteren Agent mit den richtigen Agent-Eigenschaften für diese Rolle hinzufügen.
 
-    -   Sie können die Agent-Eigenschaften für diese Rolle in den Testeinstellungen ändern, um weitere andere Agents zu aktivieren, die Sie verwenden möchten.
+    - Sie können die Agent-Eigenschaften für diese Rolle in den Testeinstellungen ändern, um weitere andere Agents zu aktivieren, die Sie verwenden möchten.
 
--   Für eine oder mehrere Rollen, die Diagnosedatenadapter ausführen, ist kein Agent verfügbar. Die Tests können ausgeführt werden, der Diagnosedatenadapter kann jedoch nicht ausgeführt werden. Sie können die Tests ohne den Diagnosedatenadapter ausführen, oder Sie können eine der folgenden Aktionen ausführen und die Tests erneut ausführen:
+- Für eine oder mehrere Rollen, die Diagnosedatenadapter ausführen, ist kein Agent verfügbar. Die Tests können ausgeführt werden, der Diagnosedatenadapter kann jedoch nicht ausgeführt werden. Sie können die Tests ohne den Diagnosedatenadapter ausführen, oder Sie können eine der folgenden Aktionen ausführen und die Tests erneut ausführen:
 
-    -   Sie können warten, bis ein Agent für diese Rollen verfügbar ist.
+    - Sie können warten, bis ein Agent für diese Rollen verfügbar ist.
 
-    -   Wenn für diese Rolle vorhandene Offline-Agents verwendet werden können, müssen Sie den Zustand des Agents im Menü **Test** unter **Testcontroller verwalten** in „Online“ ändern. Außerdem müssen Sie den Agent eventuell neu starten, wenn er vom Controller getrennt wurde.
+    - Wenn für diese Rolle vorhandene Offline-Agents verwendet werden können, müssen Sie den Zustand des Agents im Menü **Test** unter **Testcontroller verwalten** in „Online“ ändern. Außerdem müssen Sie den Agent eventuell neu starten, wenn er vom Controller getrennt wurde.
 
-    -   Stellen Sie sicher, dass keiner der Agents, die Sie möglicherweise für diesen Testlauf benötigen, mit dem Ausführen von Tests ausgelastet ist. Sie können den Status aller Agents im Menü **Test** unter **Testcontroller verwalten** überprüfen.
+    - Stellen Sie sicher, dass keiner der Agents, die Sie möglicherweise für diesen Testlauf benötigen, mit dem Ausführen von Tests ausgelastet ist. Sie können den Status aller Agents im Menü **Test** unter **Testcontroller verwalten** überprüfen.
 
-    -   Sie können dem Testcontroller einen weiteren Agent mit den richtigen Agent-Eigenschaften für die Rolle hinzufügen.
+    - Sie können dem Testcontroller einen weiteren Agent mit den richtigen Agent-Eigenschaften für die Rolle hinzufügen.
 
-    -   Sie können die Agent-Eigenschaften für die Rolle in den Testeinstellungen ändern, um weitere andere Agents zu aktivieren, die Sie verwenden möchten.
+    - Sie können die Agent-Eigenschaften für die Rolle in den Testeinstellungen ändern, um weitere andere Agents zu aktivieren, die Sie verwenden möchten.
 
 ## <a name="load-tests-from-delay-signed-assemblies"></a>Laden von Tests von verzögert signierten Assemblys
 

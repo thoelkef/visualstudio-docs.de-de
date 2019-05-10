@@ -1,33 +1,28 @@
 ---
-title: 'Vorgehensweise: Hinzufügen des Profilers zu einer ASP.NET-Webanwendung zum Erfassen von Speicherdaten über die Befehlszeile | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Fügen Sie den Profiler an eine ASP.NET-Webanwendung zum Sammeln von Speicherdaten über die Befehlszeile | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: d608f85a-41ae-4ca7-85e6-b96624dbc83c
 caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6818c7c23a1ca42fc4537e1024778cd4cab0f177
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 454bcc4fe8e17530d71927d373a05f5f12beae61
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432843"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Gewusst wie: Anfügen des Profilers an eine ASP.NET-Webanwendung zum Sammeln von Speicherdaten über die Befehlszeile
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Vorgehensweise: Fügen Sie den Profiler an eine ASP.NET-Webanwendung zum Sammeln von Speicherdaten über die Befehlszeile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie mit den Befehlszeilentools der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungstools den Profiler an eine [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Webanwendung anfügen und Daten zur Anzahl und Größe der .NET Framework-Speicherbelegungen sammeln können. Sie können außerdem Daten zur Lebensdauer von .NET Framework-Arbeitsspeicherobjekten erfassen.  
 
 > [!NOTE]
->  Die Befehlszeilentools der Profilerstellungstools befinden sich im Unterverzeichnis "\Team Tools\Performance Tools" des [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]-Installationsverzeichnisses. Auf 64-Bit-Computern sind sowohl 64 Bit- als auch 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen. Weitere Informationen finden Sie unter [Angeben des Pfads zu Tools für die Befehlszeile](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+> Die Befehlszeilentools der Profilerstellungstools befinden sich im Unterverzeichnis "\Team Tools\Performance Tools" des [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]-Installationsverzeichnisses. Auf 64-Bit-Computern sind sowohl 64 Bit- als auch 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen. Weitere Informationen finden Sie unter [Angeben des Pfads zu Tools für die Befehlszeile](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
 
  Um Leistungsdaten von einer [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Webanwendung zu erfassen, müssen Sie das Tool [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) verwenden, um die entsprechenden Umgebungsvariablen auf dem Computer zu initialisieren, der die [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Webanwendung hostet. Sie müssen dann den Computer neu starten, um den Webserver für die Profilerstellung zu konfigurieren.  
 
@@ -45,7 +40,7 @@ In diesem Thema wird beschrieben, wie Sie mit den Befehlszeilentools der [!INCLU
 
     **VSPerfClrEnv** {**/globalsamplegc**|**/globalsamplegclife**} [**/samplelineoff**]  
 
-   -   Die Optionen **/globalsamplegc** und **/globalsamplegclife** geben den Typ der Speicherdaten an, die erfasst werden sollen.  
+   - Die Optionen **/globalsamplegc** und **/globalsamplegclife** geben den Typ der Speicherdaten an, die erfasst werden sollen.  
 
         Geben Sie eine der folgenden Optionen.  
 
@@ -54,7 +49,7 @@ In diesem Thema wird beschrieben, wie Sie mit den Befehlszeilentools der [!INCLU
        |**/globalsamplegc**|Aktiviert die Sammlung von Daten zur Speicherbelegung.|  
        |**/globalsamplegclife**|Aktiviert die Sammlung von Daten zur Speicherbelegung und zur Objektlebensdauer.|  
 
-   -   Die Option **/samplelineoff** deaktiviert die Zuweisung gesammelter Daten zu bestimmten Quellcodezeilen. Wenn diese Option angegeben ist, werden Daten auf Funktionsebene zugewiesen.  
+   - Die Option **/samplelineoff** deaktiviert die Zuweisung gesammelter Daten zu bestimmten Quellcodezeilen. Wenn diese Option angegeben ist, werden Daten auf Funktionsebene zugewiesen.  
 
 3. Starten Sie den Computer neu, um die neue Umgebungskonfiguration festzulegen.  
 
@@ -71,7 +66,7 @@ In diesem Thema wird beschrieben, wie Sie mit den Befehlszeilentools der [!INCLU
      Sie können jede der folgenden Optionen zusammen mit der Option **/start:sample** verwenden.  
 
    > [!NOTE]
-   >  Die Optionen **/user** und **/crosssession** sind normalerweise für ASP.NET-Anwendungen erforderlich.  
+   > Die Optionen **/user** und **/crosssession** sind normalerweise für ASP.NET-Anwendungen erforderlich.  
 
    |                                 Option                                  |                                                                                                                                                        Beschreibung                                                                                                                                                        |
    |-------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -82,29 +77,28 @@ In diesem Thema wird beschrieben, wie Sie mit den Befehlszeilentools der [!INCLU
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                       Verwenden Sie nur **/wincounter**. Gibt die Anzahl von Millisekunden zwischen Ereignissen bei der Datensammlung mit Windows-Leistungsindikatoren an. Der Standardwert ist 500 ms.                                                                                       |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                         Gibt ein ETW-Ereignis (Ereignisablaufverfolgung für Windows) an, dessen Daten während der Profilerstellung gesammelt werden sollen. ETW-Ereignisse werden in einer separaten Datei (.etl) gesammelt.                                                                                          |
 
-
 6. Starten Sie die [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Webanwendung auf die gewohnte Weise.  
 
 7. Fügen Sie den Profiler an den [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Arbeitsprozess an. Typ:  
 
     **VSPerfCmd** [/attach](../profiling/attach.md) **:**{`PID`|`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
 
-   -   Die Prozess-ID `(PID)` gibt die Prozess-ID oder den Prozessnamen des [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Arbeitsprozesses an. Die Prozess-IDs aller aktiven Prozesse werden im Windows Task-Manager angezeigt.  
+   - Die Prozess-ID `(PID)` gibt die Prozess-ID oder den Prozessnamen des [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Arbeitsprozesses an. Die Prozess-IDs aller aktiven Prozesse werden im Windows Task-Manager angezeigt.  
 
-   -   **/targetclr:** `Version` gibt die Version der CLR (Common Language Runtime) für die Profilerstellung an, wenn in einer Anwendung mehrere Laufzeitversionen geladen wurden.  
+   - **/targetclr:** `Version` gibt die Version der CLR (Common Language Runtime) für die Profilerstellung an, wenn in einer Anwendung mehrere Laufzeitversionen geladen wurden.  
 
 ## <a name="controlling-data-collection"></a>Steuern der Datenauflistung  
  Während die Anwendung ausgeführt wird, können Sie die Datensammlung steuern, indem Sie das Schreiben von Daten in die Profilerdatendatei mit Optionen für **VSPerfCmd.exe** starten und beenden. Durch das Steuern der Datensammlung können Sie Daten zu einem bestimmten Teil der Programmausführung sammeln, z. B. zum Starten oder Schließen der Anwendung.  
 
 #### <a name="to-start-and-stop-data-collection"></a>So starten und beenden Sie die Datensammlung  
 
--   Die folgenden Optionenpaare **VSPerfCmd** starten und beenden die Datensammlung. Geben Sie jede Option in einer eigenen Befehlszeile an. Sie können die Datensammlung mehrmals aktivieren und deaktivieren.  
+- Die folgenden Optionenpaare **VSPerfCmd** starten und beenden die Datensammlung. Geben Sie jede Option in einer eigenen Befehlszeile an. Sie können die Datensammlung mehrmals aktivieren und deaktivieren.  
 
     |Option|Beschreibung|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Die Datensammlung wird für alle Prozesse gestartet (**/globalon**) oder beendet (**/globaloff**).|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Die Datensammlung wird für den mit der `PID` angegebenen Prozess gestartet (**/processon**) oder beendet (**/processoff**).|  
-    |**/attach:**{`PID`|`ProcName`} [/detach](../profiling/detach.md)[**:**{`PID`|`ProcName`}]|Mit **/attach** wird die Datensammlung für den Prozess gestartet, der durch die Prozess-ID oder den Prozessnamen festgelegt ist. Mit **/detach** wird die Datensammlung für den angegebenen Prozess (oder für alle Prozesse, wenn kein bestimmter Prozess angegeben ist) beendet.|  
+    |**/attach:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|Mit **/attach** wird die Datensammlung für den Prozess gestartet, der durch die Prozess-ID oder den Prozessnamen festgelegt ist. Mit **/detach** wird die Datensammlung für den angegebenen Prozess (oder für alle Prozesse, wenn kein bestimmter Prozess angegeben ist) beendet.|  
 
 ## <a name="ending-the-profiling-session"></a>Beenden der Profilerstellungssitzung  
  Um eine Profilerstellungssitzung zu beenden, muss der Profiler von der Webanwendung getrennt werden. Sie können das Sammeln von Daten für eine Anwendung anhalten, für die ein Profil mit der Samplingmethode erstellt wurde, indem Sie den [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Arbeitsprozess erneut starten oder die Option **VSPerfCmd /detach** aufrufen. Rufen Sie anschließend die Option **VSPerfCmd** [/shutdown](../profiling/shutdown.md) auf, um den Profiler zu deaktivieren und die Profilerstellungs-Datendatei zu schließen. Der Befehl **VSPerfClrEnv /globaloff** löscht die Umgebungsvariablen für die Profilerstellung, die Systemkonfiguration wird jedoch erst zurückgesetzt, wenn der Computer neu gestartet wird.  
@@ -136,6 +130,3 @@ In diesem Thema wird beschrieben, wie Sie mit den Befehlszeilentools der [!INCLU
 ## <a name="see-also"></a>Siehe auch  
  [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [.NET-Arbeitsspeicherdatenansichten](../profiling/dotnet-memory-data-views.md)
-
-
-

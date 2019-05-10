@@ -1,11 +1,8 @@
 ---
 title: 'Vorgehensweise: Erstellen von Workflowprojekten (Vorgängerversion) | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - workflow projects, creating
@@ -14,53 +11,53 @@ ms.assetid: 32299555-662c-469d-a90d-89f4700dc78c
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 15be712dd0bd1cf2a5f91f566860709fa49e6709
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6d779294f991786f90faf8dd1de756749b6baffc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196618"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444165"
 ---
 # <a name="how-to-create-workflow-projects-legacy"></a>Vorgehensweise: Erstellen von Workflowprojekten (Vorgängerversion)
 Führen Sie die folgenden Schritte aus, um ein [!INCLUDE[wf](../includes/wf-md.md)]-Projekt zu erstellen, das auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielt. In dieser Vorgehensweise wird die Vorgängerversion von [!INCLUDE[wfd1](../includes/wfd1-md.md)] verwendet, die von [!INCLUDE[vs2010](../includes/vs2010-md.md)] bereitgestellt wird.  
   
 ### <a name="to-create-a-workflow-project"></a>So erstellen Sie ein Workflowprojekt  
   
-1.  Starten Sie [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)].  
+1. Starten Sie [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)].  
   
-2.  Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.  
+2. Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.  
   
      Das Dialogfeld **Neues Projekt** wird angezeigt.  
   
-3.  Wählen Sie entweder die **.NET Framework 3.0** Option oder die **.NET Framework 3.5** -Option in der Dropdownliste am oberen Rand der **neues Projekt** Fenster aus, um den Designer der Vorgängerversion zuzugreifen.  
+3. Wählen Sie entweder die **.NET Framework 3.0** Option oder die **.NET Framework 3.5** -Option in der Dropdownliste am oberen Rand der **neues Projekt** Fenster aus, um den Designer der Vorgängerversion zuzugreifen.  
   
     > [!NOTE]
-    >  Die Standardoption in [!INCLUDE[vs2010](../includes/vs2010-md.md)] ist **.NET Framework 4**. Diese Option wird zum Erstellen von [!INCLUDE[wf](../includes/wf-md.md)]-Anwendungen verwendet, die auf [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] abzielen; dabei wird nicht der Designer der Vorgängerversion verwendet.  
+    > Die Standardoption in [!INCLUDE[vs2010](../includes/vs2010-md.md)] ist **.NET Framework 4**. Diese Option wird zum Erstellen von [!INCLUDE[wf](../includes/wf-md.md)]-Anwendungen verwendet, die auf [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] abzielen; dabei wird nicht der Designer der Vorgängerversion verwendet.  
   
-4.  In der **Projekttypen** Bereich, wählen Sie Visual C#-Projekte oder Visual Basic-Projekte, und wählen Sie dann **Workflow**.  
+4. In der **Projekttypen** Bereich, wählen Sie Visual C#-Projekte oder Visual Basic-Projekte, und wählen Sie dann **Workflow**.  
   
-5.  In der **Vorlagen** Bereich, wählen Sie eine der installierten Projektvorlagen:  
+5. In der **Vorlagen** Bereich, wählen Sie eine der installierten Projektvorlagen:  
   
-    -   Konsolenanwendung für sequenzielle Workflows  
+    - Konsolenanwendung für sequenzielle Workflows  
   
-    -   Sequenzielle Workflowbibliothek  
+    - Sequenzielle Workflowbibliothek  
   
-    -   Workflowaktivitätsbibliothek  
+    - Workflowaktivitätsbibliothek  
   
-    -   Konsolenanwendung für Zustandsautomatenworkflows  
+    - Konsolenanwendung für Zustandsautomatenworkflows  
   
-    -   Zustandsautomatenworkflowbibliothek  
+    - Zustandsautomatenworkflowbibliothek  
   
-    -   Leeres Workflowprojekt  
+    - Leeres Workflowprojekt  
   
-6.  In der **Namen** Geben Sie einen beschreibenden Namen für das Projekt in der es einfach identifizieren zu können.  
+6. In der **Namen** Geben Sie einen beschreibenden Namen für das Projekt in der es einfach identifizieren zu können.  
   
-7.  In der **Speicherort** Geben Sie das Verzeichnis, in dem Sie das Projekt speichern, oder klicken Sie auf möchten **Durchsuchen** , zu dem Verzeichnis zu navigieren.  
+7. In der **Speicherort** Geben Sie das Verzeichnis, in dem Sie das Projekt speichern, oder klicken Sie auf möchten **Durchsuchen** , zu dem Verzeichnis zu navigieren.  
   
      Wenn ein Projektmappenverzeichnis für das Projekt erstellt werden sollen, wählen Sie die **Projektmappenverzeichnis erstellen** Kontrollkästchen und geben Sie einen Namen in der **Projektmappenname** Feld.  
   
-8.  Klicken Sie auf **OK**.  
+8. Klicken Sie auf **OK**.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen von Legacyworkflowprojekten](../workflow-designer/creating-legacy-workflow-projects.md)

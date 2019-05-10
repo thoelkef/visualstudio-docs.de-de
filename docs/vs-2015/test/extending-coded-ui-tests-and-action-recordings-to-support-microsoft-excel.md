@@ -1,24 +1,19 @@
 ---
 title: Erweitern von Tests der programmierten UI und Aktionsaufzeichnungen zur Unterstützung von Microsoft Excel | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 705604153a0f24eb7ae6b2ff5924a600ddbff54e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 61c802ebca49c15a3a7baa785400f90621a27e9f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872979"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416465"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Erweitern von Tests der codierten UI-Tests und Aktionsaufzeichnungen zur Unterstützung von Microsoft Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,20 +43,20 @@ Das Testframework für Tests der programmierten UI und Aktionsaufzeichnungen unt
   Rufen Sie das Beispiel aus diesem [Blogbeitrag](http://go.microsoft.com/fwlink/?LinkID=185592) ab.  
   
 > [!NOTE]
->  Das Beispiel ist zur Verwendung mit Microsoft Excel 2010 gedacht. Das Beispiel funktioniert möglicherweise mit anderen Versionen von Microsoft Excel, dies wird jedoch derzeit nicht unterstützt.  
+> Das Beispiel ist zur Verwendung mit Microsoft Excel 2010 gedacht. Das Beispiel funktioniert möglicherweise mit anderen Versionen von Microsoft Excel, dies wird jedoch derzeit nicht unterstützt.  
   
 ## <a name="details-about-the-sample"></a>Details zum Beispiel  
  Die folgenden Abschnitte enthalten Informationen zum Beispiel und seiner Struktur.  
   
-### <a name="microsoft-excel-add-in-excelcodeduiaddinhelper"></a>Microsoft Excel-Add-In: ExcelCodedUIAddinHelper  
+### <a name="microsoft-excel-add-in-excelcodeduiaddinhelper"></a>Microsoft Excel-Add-in: ExcelCodedUIAddinHelper  
  Dieses Projekt enthält ein Add-In, das im Excel-Prozess ausgeführt wird. Eine kurze Übersicht des Add-In-Projekts finden Sie unter [Sample Excel Add-In for Coded UI Testing](../test/sample-excel-add-in-for-coded-ui-testing.md) (Beispiel eines Excel-Add-Ins für den Test der programmierten UI).  
   
- Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Excel](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f).  
+ Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen Ihrer ersten VSTO-Add-Ins für Excel](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f).  
   
 ### <a name="excel-ui-communication-exceluicommunicationhelper"></a>Excel-UI-Kommunikation: ExcelUIcommunicationHelper  
  Dieses Projekt enthält die `IExcelUICommunication`-Schnittstelle und die Informationsklassen, mit denen Daten zwischen dem Framework für den Test der codierten Benutzeroberfläche und Excel übergeben werden. Weitere Informationen finden Sie unter [Beispiel für Excel-Communicator-Schnittstelle](../test/sample-excel-communicator-interface.md).  
   
-### <a name="coded-ui-test-extension-codeduiexentsibilitysample"></a>Erweiterung für den Test der programmierten UI: CodedUIExentsibilitySample  
+### <a name="coded-ui-test-extension-codeduiexentsibilitysample"></a>Coded UI-Testerweiterung: CodedUIExentsibilitySample  
  Dieses Projekt enthält die benutzerdefinierten Klassen, die in Tests eines Excel-Arbeitsblatts verwendet werden. Der Code für diese Klassen ist ohne Erläuterung verständlich. Sie finden hier jedoch eine kurze Beschreibung jeder benutzerdefinierten Klasse. Weitere Informationen finden Sie unter [Beispielerweiterung für Tests der programmierten Benutzeroberfläche für Excel](../test/sample-coded-ui-test-extension-for-excel.md).  
   
 ### <a name="deploying-your-add-in-and-extension"></a>Bereitstellen des Add-Ins und der Erweiterung  
@@ -84,6 +79,3 @@ Das Testframework für Tests der programmierten UI und Aktionsaufzeichnungen unt
  [Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)   
  [Best Practices for Coded UI Tests (Bewährte Methoden für Tests der programmierten UI)](../test/best-practices-for-coded-ui-tests.md)   
  [Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktionsaufzeichnungen](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-
-
-

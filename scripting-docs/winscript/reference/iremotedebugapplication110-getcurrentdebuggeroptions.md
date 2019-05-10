@@ -1,8 +1,7 @@
 ---
-title: IRemoteDebugApplication110::GetCurrentDebuggerOptions | Microsoft Docs
+title: IRemoteDebugApplication110::GetCurrentDebuggerOptions | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 89223cb283a31ea01610bd70a8f64187947cacc9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
-ms.translationtype: MT
+ms.openlocfilehash: cf49dcc7f49cfc98478514489ce67832bc397f53
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728370"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383356"
 ---
 # <a name="iremotedebugapplication110getcurrentdebuggeroptions"></a>IRemoteDebugApplication110::GetCurrentDebuggerOptions
 Gibt den Satz von Optionen, die derzeit aktiviert sind.  
   
 > [!IMPORTANT]
->  [IRemoteDebugApplication-Schnittstelle](../../winscript/reference/iremotedebugapplication-interface.md) wird implementiert von PDM V11. 0 und höher. Gefunden in activdbg100.h.  
+> [IRemoteDebugApplication-Schnittstelle](../../winscript/reference/iremotedebugapplication-interface.md) wird implementiert von PDM V11. 0 und höher. Gefunden in activdbg100.h.  
   
 ## <a name="syntax"></a>Syntax  
   

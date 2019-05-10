@@ -1,6 +1,8 @@
 ---
 title: Benutzeroptionen bei Projektmappen (. Suo)-Datei | Microsoft-Dokumentation
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - .suo files, VSPackages
@@ -9,19 +11,19 @@ helpviewer_keywords:
 - solutions, user options
 - solution user options (.suo) file
 ms.assetid: 75258e0d-600d-4a3d-94f4-3d7ac12cb47c
-author: gregvanl
+caps.latest.revision: 11
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 51833f22a445916d9b76955893e4ff5c567cf4f0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: fab823a9057c44eca9928b1b1f97ec446fb251c4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948945"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908708"
 ---
 # <a name="solution-user-options-suo-file"></a>Datei mit Benutzeroptionen in Projektmappen (SUO)
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Der Projektmappen-Benutzeroptionendatei (.suo) enthält Projektmappenoptionen pro Benutzer. Diese Datei sollte nicht auf die quellcodeverwaltung eingecheckt werden.  
   
  Der Projektmappen-Benutzeroptionendatei (.suo) ist eine strukturierte Speicherung oder zusammengesetzte, Datei, die in einem binären Format gespeichert. Sie speichern Benutzerinformationen in Streams mit dem Namen des Datenstroms wird der Schlüssel, der verwendet wird, um die Informationen in der SUO-Datei zu identifizieren. Die projektmappenbenutzer-Optionsdatei wird verwendet, um die bevorzugten benutzereinstellungen speichern und wird automatisch erstellt, wenn eine Projektmappe von Visual Studio gespeichert.  
@@ -38,4 +40,4 @@ Der Projektmappen-Benutzeroptionendatei (.suo) enthält Projektmappenoptionen pr
   
 ## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>   
- [Projektmappen](../../extensibility/internals/solutions.md)
+ [Projektmappen](../../extensibility/internals/solutions-overview.md)

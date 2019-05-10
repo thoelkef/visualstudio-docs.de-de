@@ -1,23 +1,25 @@
 ---
 title: IDebugSymbolProviderDirect | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugSymbolProviderDirect interface
 ms.assetid: 872b04a8-70de-4ab5-aceb-684c81828545
-author: gregvanl
+caps.latest.revision: 7
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 64cab3dde38f3008a097e89b17b2d61921332ed6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: d546cae810d40a850bb3dd2758f2f659eecdd18e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62915664"
 ---
 # <a name="idebugsymbolproviderdirect"></a>IDebugSymbolProviderDirect
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Stellt einen symbolanbieter, die direkten Zugriff auf Metadaten und Core-Symbol-Schnittstellen.  
   
 ## <a name="syntax"></a>Syntax  

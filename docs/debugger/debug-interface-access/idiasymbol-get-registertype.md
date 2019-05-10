@@ -1,28 +1,31 @@
 ---
 title: IDiaSymbol::get_registerType | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: f1c98ab0-8aef-4a07-a686-28b8a54418ef
-author: mikejo5000
+caps.latest.revision: 6
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: f65fee40bd7dd5b279a17de32e3ff9cb532e880a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: f714e5637776d6a0606246d339d3f9d2ccd9f19a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875779"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62835538"
 ---
 # <a name="idiasymbolgetregistertype"></a>IDiaSymbol::get_registerType
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Ruft die Register-Typs ab.  
   
 ## <a name="syntax"></a>Syntax  
   
-```C++  
+```cpp  
 HRESULT get_registerType(   
    DWORD* pRetVal);  
 ```  

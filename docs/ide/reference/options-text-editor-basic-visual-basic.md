@@ -1,7 +1,6 @@
 ---
 title: Optionen, Text-Editor, Standard (VB), Erweitert
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Visual_Basic.Editor
@@ -16,22 +15,49 @@ helpviewer_keywords:
 ms.assetid: 5a8cafca-f7b4-4a2d-92ce-6894a7673d00
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ca2178b61aa3cd2aa83314f00c231d564a10944
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aa331fea595c2143dd3ab47aa562fbd61277f81f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871238"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817787"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Optionen, Text-Editor, Standard (Visual Basic), Erweitert
-Die Eigenschaftenseite **VB-spezifisch** im Ordner **Basic** im Ordner **Text-Editor** des Dialogfelds **Optionen** (Menü **Extras**) enthält die folgenden Eigenschaften.
+Die Eigenschaftenseite **VB-spezifisch** im Ordner **Basic** im Ordner **Text-Editor** des Dialogfelds **Optionen** (Menü **Extras**) umfasst die folgenden Eigenschaften:
+
+## <a name="analysis"></a>Analyse
+
+- Vollständige Projektmappenanalyse aktivieren
+
+   Aktiviert die Codeanalyse nicht nur für geöffnete Codedateien, sondern für alle Dateien in der Projektmappe. Weitere Informationen finden Sie unter [Full solution analysis (Analyse der gesamten Projektmappe)](../../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
+
+## <a name="using-directives"></a>Using-Direktiven
+
+- System-Direktiven beim Sortieren von Using-Direktiven an erster Stelle platzieren
+
+   Wenn er ausgewählt wurde, sortiert der Befehl **Remove and Sort Usings** (Using-Anweisungen entfernen und sortieren) im Kontextmenü die `using`-Anweisungen und platziert die „System“-Namespaces ganz oben in der Liste.
+
+- Using-Direktivengruppen trennen
+
+   Wenn ausgewählt, trennt der Befehl **Using-Anweisungen entfernen und sortieren** im Kontextmenü die `using`-Anweisungen, indem er eine leere Zeile zwischen Gruppen von Anweisungen einfügt, die den gleichen Stammnamespace aufweisen.
+
+- Using-Direktiven für Typen in Verweisassemblys vorschlagen
+- Using-Direktiven für Typen in NuGet-Paketen vorschlagen
+
+   Wenn diese Optionen ausgewählt wurden, ist eine [Schnellaktion](../quick-actions.md) zum Installieren eines NuGet-Pakets und Hinzufügen einer `using`-Anweisung für nicht referenzierte Typen verfügbar.
+
+   ![Schnellaktion zum Installieren eines NuGet-Pakets in Visual Studio](media/nuget-lightbulb.png)
+
+## <a name="highlighting"></a>Markieren
 
  **Markierung von Verweisen und Schlüsselwörtern aktivieren**
 
 Der Text-Editor kann alle Instanzen eines Symbols oder alle Schlüsselwörter in Klauseln wie `If..Then`, `While...End While` oder `Try...Catch...Finally` hervorheben. Sie können zwischen markierten Verweisen oder Schlüsselwörtern durch Drücken von **STRG** + **UMSCHALT** + **NACH-UNTEN** oder **STRG** + **UMSCHALT** + **NACH-OBEN** navigieren.
+
+## <a name="outlining"></a>Gliedern
 
 **Gliederungsmodus aktivieren**
 
@@ -47,25 +73,31 @@ Der Text-Editor gibt den visuellen Bereich von Prozeduren an. In den *VB*-Quelld
 |Nach mehreren Einzelzeilenkonstrukten|– Hinter Import-Anweisungen, vor einer Typdefinition in einer Klassendatei<br />– Hinter den in einer Klasse deklarierten Variablen, vor jeglichen Prozeduren|
 |Nach Einzelzeilendeklarationen (Deklarationen, die nicht auf Blockebene erfolgen)|– Nach Import-Anweisungen, Inherits-Anweisungen, Variablendeklarationen, Ereignisdeklarationen, Delegatdeklarationen und Declare-Anweisungen für DLLs|
 
- **Automatische Strukturierung und Einrückung des Programmcodes:** Der Text-Editor formatiert den Code entsprechend neu. Wenn diese Option aktiviert ist, führt der Code-Editor die folgenden Aufgaben durch:
+## <a name="block-structure-guides"></a>Führungslinien für Blockstruktur
 
--   Ausrichten des Codes an der richtigen Tabulatorposition
+Wenn diese Option ausgewählt ist, erscheinen im Editor vertikale Linien, die sich mit strukturierten Codeblöcken decken, sodass Sie die einzelnen Codeblöcke leicht identifizieren können. Beispielsweise würden Sie in einer `Sub`-Anweisung eine Linie zwischen `Sub` und `EndSub` sehen.
 
--   Ändern der Groß-/Kleinschreibung von Schlüsselwörtern, Variablen und Objekten in die richtige Schreibweise
+## <a name="editor-help"></a>Editor-Hilfe
 
--   Hinzufügen eines fehlenden `Then` zu einer `If...Then`-Anweisung
+**Automatische Strukturierung und Einrückung des Programmcodes:** Der Text-Editor formatiert den Code entsprechend neu. Wenn diese Option aktiviert ist, führt der Code-Editor die folgenden Aufgaben durch:
 
--   Hinzufügen von Klammern zu Funktionsaufrufen
+- Ausrichten des Codes an der richtigen Tabulatorposition
 
--   Hinzufügen fehlender Anführungszeichen am Ende von Zeichenfolgen
+- Ändern der Groß-/Kleinschreibung von Schlüsselwörtern, Variablen und Objekten in die richtige Schreibweise
 
--   Neuformatieren der exponentiellen Notation
+- Hinzufügen eines fehlenden `Then` zu einer `If...Then`-Anweisung
 
--   Neuformatieren von Datumsangaben
+- Hinzufügen von Klammern zu Funktionsaufrufen
+
+- Hinzufügen fehlender Anführungszeichen am Ende von Zeichenfolgen
+
+- Neuformatieren der exponentiellen Notation
+
+- Neuformatieren von Datumsangaben
 
 **Automatisches Einfügen von End-Konstruktionen**
 
- Wenn Sie z.B. die erste Zeile einer Prozedurdeklaration, `Sub Main—`, eingeben und die **EINGABETASTE** drücken, wird im Text-Editor eine entsprechende `End Sub`-Zeile hinzugefügt. Ebenso wird beim Hinzufügen einer [For](/dotnet/visual-basic/language-reference/statements/for-next-statement)-Schleife im Text-Editor eine entsprechende `Next`-Anweisung hinzugefügt. Wenn diese Option ausgewählt ist, wird im Code-Editor automatisch das end-Konstrukt eingefügt.
+Wenn Sie z.B. die erste Zeile einer Prozedurdeklaration, `Sub Main`, eingeben und die **EINGABETASTE** drücken, wird im Text-Editor eine entsprechende `End Sub`-Zeile hinzugefügt. Ebenso wird beim Hinzufügen einer [For](/dotnet/visual-basic/language-reference/statements/for-next-statement)-Schleife im Text-Editor eine entsprechende `Next`-Anweisung hinzugefügt. Wenn diese Option ausgewählt ist, wird im Code-Editor automatisch das end-Konstrukt eingefügt.
 
 **Schnittstellen- und MustOverride-Member automatisch einfügen**
 

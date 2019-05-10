@@ -1,25 +1,28 @@
 ---
 title: 'Idiaenumframedata:: Reset | Microsoft-Dokumentation'
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaEnumFrameData::Reset method
 ms.assetid: 2242165b-096b-4345-b214-4a8941dc5ba5
-author: mikejo5000
+caps.latest.revision: 10
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: 4d1060a1efd9feef6906a299da32d1cf8351dff5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: a92742d1c3286aa8e6fd3bc97254066fab25a55c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62833631"
 ---
 # <a name="idiaenumframedatareset"></a>IDiaEnumFrameData::Reset
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Setzt eine Enumerationsfolge auf den Anfang zurück.  
   
 ## <a name="syntax"></a>Syntax  

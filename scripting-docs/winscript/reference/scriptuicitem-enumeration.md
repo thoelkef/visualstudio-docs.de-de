@@ -1,8 +1,7 @@
 ---
-title: SCRIPTUICITEM-Enumeration | Microsoft Docs
+title: SCRIPTUICITEM-Enumeration | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,15 +11,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6620553bce810abcf1a51ac8592061ef017dd9bf
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bd454780b4360daf844697ad92ab8a4e9da29317
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840134"
 ---
 # <a name="scriptuicitem-enumeration"></a>SCRIPTUICITEM-Enumeration
-Stellt den Typ des Benutzeroberflächenautomatisierungs-Elements dar. Verwendet die [iactivescriptsiteuicontrol:: Getuibehavior-Methode](../../winscript/reference/iactivescriptsiteuicontrol-getuibehavior-method.md).  
+Stellt den Typ des UI-Elements dar. Verwendet die [iactivescriptsiteuicontrol:: Getuibehavior-Methode](../../winscript/reference/iactivescriptsiteuicontrol-getuibehavior-method.md).  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -32,5 +31,5 @@ typedef enum tagSCRIPTUICITEM {     SCRIPTUICITEM_INPUTBOX = 1,     SCRIPTUICITE
   
 |||  
 |-|-|  
-|SCRIPTUICITEM_INPUTBOX|Eines Eingabesteuerelements aus.|  
+|SCRIPTUICITEM_INPUTBOX|Ein input-Steuerelement.|  
 |SCRIPTUICITEM_MSGBOX|Ein Meldungsfeld.|

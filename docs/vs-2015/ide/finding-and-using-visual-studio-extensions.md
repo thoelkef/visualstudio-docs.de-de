@@ -1,13 +1,9 @@
 ---
 title: Suchen und Verwenden von Erweiterungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.ExtensionManager
 helpviewer_keywords:
@@ -18,13 +14,13 @@ ms.assetid: 4ca92d93-31b9-47ef-8109-4a429d9e2ca3
 caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d557af4b09af81d4145a7ef66a7b812f5dcf04bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: f4878827ae65a8f42e8225c7daab207a27a0614a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53884399"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426388"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Suchen und Verwenden von Visual Studio-Erweiterungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,10 +30,10 @@ Visual Studio-Extensions sind Codepakete, die innerhalb von Visual Studio ausgef
  Sie können das Dialogfeld **Erweiterungen und Updates** verwenden, um Visual Studio-Erweiterungen und Beispiele von Websites und anderen Speicherorten zu installieren, und sie dann aktivieren, deaktivieren, aktualisieren oder deinstallieren. (**Extras/Extensions und Updates**, oder geben Sie **Extensions** im Fenster **Schnellstart** ein.) Das Dialogfeld zeigt auch Updates für installierte Beispiele und Erweiterungen. Sie können auch Erweiterungen von Websites herunterladen oder von anderen Entwicklern erhalten.
 
 > [!NOTE]
->  Ab Visual Studio 2015 werden in Visual Studio Gallery gehostete Erweiterungen automatisch aktualisiert.  Diese Einstellung können Sie über das Dialogfeld **Erweiterungen und Updates** ändern.  Details finden Sie im untenstehenden Abschnitt **Automatische Erweiterungsaktualisierungen** .
+> Ab Visual Studio 2015 werden in Visual Studio Gallery gehostete Erweiterungen automatisch aktualisiert.  Diese Einstellung können Sie über das Dialogfeld **Erweiterungen und Updates** ändern.  Details finden Sie im untenstehenden Abschnitt **Automatische Erweiterungsaktualisierungen** .
 
 ## <a name="finding-visual-studio-extensions"></a>Suchen von Visual Studio-Extensions
- Sie können Extensions auch aus der [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkID=178891) oder dem [Beispielkatalog](http://go.microsoft.com/fwlink/?LinkId=245175) auf der Microsoft-Website installieren. Zu diesen Erweiterungen können Steuerelemente, Beispiele, Vorlagen, Werkzeuge oder andere Komponenten zählen, die Visual Studio Funktionen hinzufügen. In Visual Studio werden Erweiterungen im VSIX-Paketformat unterstützt. Diese umfassen Projektvorlagen, Elementvorlagen, **Werkzeugkasten** -Komponenten des Managed Extension Framework (MEF) und VSPackages. Sie können auch MSI-basierte Erweiterungen herunterladen und installieren, doch können diese nicht über das Dialogfeld **Erweiterungen und Updates** aktiviert oder deaktiviert werden. Die Visual Studio Gallery enthält sowohl VSIX- als auch MSI-Erweiterungen.
+ Sie können Erweiterungen aus installieren die [Visual Studio Marketplace](https://marketplace.visualstudio.com/) oder [Beispielkatalog](https://code.msdn.microsoft.com/vstudio) auf der Microsoft-Website. Zu diesen Erweiterungen können Steuerelemente, Beispiele, Vorlagen, Werkzeuge oder andere Komponenten zählen, die Visual Studio Funktionen hinzufügen. In Visual Studio werden Erweiterungen im VSIX-Paketformat unterstützt. Diese umfassen Projektvorlagen, Elementvorlagen, **Werkzeugkasten** -Komponenten des Managed Extension Framework (MEF) und VSPackages. Sie können auch MSI-basierte Erweiterungen herunterladen und installieren, doch können diese nicht über das Dialogfeld **Erweiterungen und Updates** aktiviert oder deaktiviert werden. Die Visual Studio Gallery enthält sowohl VSIX- als auch MSI-Erweiterungen.
 
 ## <a name="installing-or-uninstalling-visual-studio-extensions"></a>Installieren oder Deinstallieren von Visual Studio-Extensions
  Suchen Sie in **Erweiterungen und Updates**nach der Erweiterung, die Sie installieren möchten. (Wenn Sie den Namen der Erweiterung oder einen Teil des Namens kennen, können Sie im Fenster **Visual Studio Gallery durchsuchen** danach suchen.) Klicken Sie auf **Herunterladen** und dann auf **Installieren**. Sie müssen Visual Studio neu starten, um die Erweiterung zu laden.
@@ -58,12 +54,12 @@ Visual Studio-Extensions sind Codepakete, die innerhalb von Visual Studio ausgef
 
  Wenn Sie automatische Updates deaktivieren möchten, können Sie das Feature für alle Erweiterungen oder nur für bestimmte Erweiterungen deaktivieren.
 
--   Klicken Sie zum Deaktivieren von automatischen Updates für alle Erweiterungen auf den Link **Einstellungen für die Erweiterungen und Updates ändern** im Dialogfeld **Erweiterungen und Updates** , und deaktivieren Sie **Erweiterungen automatisch aktualisieren**.
+- Klicken Sie zum Deaktivieren von automatischen Updates für alle Erweiterungen auf den Link **Einstellungen für die Erweiterungen und Updates ändern** im Dialogfeld **Erweiterungen und Updates** , und deaktivieren Sie **Erweiterungen automatisch aktualisieren**.
 
--   Deaktivieren Sie zum automatischen Deaktivieren einer bestimmten Erweiterung die Option **Diese Erweiterung automatisch aktualisieren** im Detailbereich der Erweiterung auf der rechten Seite des Dialogfelds **Erweiterungen und Updates** .
+- Deaktivieren Sie zum automatischen Deaktivieren einer bestimmten Erweiterung die Option **Diese Erweiterung automatisch aktualisieren** im Detailbereich der Erweiterung auf der rechten Seite des Dialogfelds **Erweiterungen und Updates** .
 
 > [!NOTE]
->  Von Visual Studio 2015 Update 2 an können Sie (in **Extras / Optionen / Umgebung / Erweiterungen und Updates**) angeben, ob automatische Updates für Erweiterungen pro Benutzer, alle Benutzererweiterungen oder beides (Standardeinstellung) vorgenommen werden sollen.
+> Von Visual Studio 2015 Update 2 an können Sie (in **Extras / Optionen / Umgebung / Erweiterungen und Updates**) angeben, ob automatische Updates für Erweiterungen pro Benutzer, alle Benutzererweiterungen oder beides (Standardeinstellung) vorgenommen werden sollen.
 
 ## <a name="sample-master-copies-and-working-copies"></a>Beispielmasterkopien und -arbeitskopien
  Bei Installation eines Onlinebeispiels wird die Projektmappe an zwei Orten gespeichert:
@@ -93,4 +89,4 @@ Visual Studio-Extensions sind Codepakete, die innerhalb von Visual Studio ausgef
  Visual Studio unterstützt auch weiterhin Erweiterungen, die mit Microsoft Installer (MSI) installiert werden, jedoch nicht über das Dialogfeld **Erweiterungen und Updates** ohne Änderungen.
 
 > [!TIP]
->  Wenn eine MSI-basierte Erweiterung eine Datei des Typs "extension.vsixmanifest" enthält, wird die Erweiterung im Dialogfeld **Erweiterungen und Updates** angezeigt.
+> Wenn eine MSI-basierte Erweiterung eine Datei des Typs "extension.vsixmanifest" enthält, wird die Erweiterung im Dialogfeld **Erweiterungen und Updates** angezeigt.

@@ -1,33 +1,31 @@
 ---
 title: Tipps zum Verbessern der Leistung
 ms.date: 08/14/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1c4e55fe6275d750d3bc3b03fb8f0ac5eec2751
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 7fccae7d42d9e8f99c78fd55f74466e2f83e5dfa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672924"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62581781"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Tipps und Tricks für die Leistung von Visual Studio
 
 Diese die Leistung von Visual Studio betreffenden Empfehlungen sind für Situationen mit wenig Arbeitsspeicher gedacht, die selten auftreten. In solchen Fällen können Sie bestimmte Funktionen von Visual Studio optimieren, die zu dem Zeitpunkt wahrscheinlich nicht verwendet werden. Die folgenden Tipps sind nicht als allgemeine Empfehlungen gedacht.
 
 > [!NOTE]
-> Wenn Sie aufgrund von Speicherproblemen Probleme mit dem Produkt haben, informieren Sie uns über das [Feedbacktool](../ide/how-to-report-a-problem-with-visual-studio-2017.md).
+> Wenn Sie aufgrund von Speicherproblemen Probleme mit dem Produkt haben, informieren Sie uns über das [Feedbacktool](../ide/how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="use-a-64-bit-os"></a>Verwenden eines 64-Bit-Betriebssystems
 
 Wenn Sie Ihr System von einer 32-Bit-Version von Windows auf eine 64-Bit-Version aktualisieren, erweitern Sie die Menge des für Visual Studio verfügbaren virtuellen Arbeitsspeichers von 2 auf 4 GB. Dadurch kann Visual Studio erheblich größere Workloads verarbeiten, obwohl es sich um einen 32-Bit-Prozess handelt.
 
-Weitere Informationen finden Sie unter [Speicherlimits](/windows/desktop/Memory/memory-limits-for-windows-releases#memory_limits) und [Use /LARGEADDRESSAWARE on 64-Bit Windows (Verwenden von „/LARGEADDRESSAWARE“ unter 64-Bit Windows)](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
+Weitere Informationen finden Sie unter [Speicherlimits](/windows/desktop/Memory/memory-limits-for-windows-releases) und [Use /LARGEADDRESSAWARE on 64-Bit Windows (Verwenden von „/LARGEADDRESSAWARE“ unter 64-Bit Windows)](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
 
 ## <a name="disable-automatic-file-restore"></a>Deaktivieren der automatischen Dateiwiederherstellung
 
@@ -43,9 +41,9 @@ Wenn Sie die automatische Dateiwiederherstellung deaktivieren, können Sie mit e
 
 - Für die allgemeine **Gehe zu**-Funktionalität klicken Sie auf **Bearbeiten** > **Gehe zu** > **Gehe zu allen**, oder drücken Sie **STRG**+**T**.
 
-- In Visual Studio 2017 Version 15.8 und höher können Sie in einer Projektmappe direkt zum Speicherort der letzten Bearbeitung wechseln, indem Sie auf **Bearbeiten** > **Gehe zu** > **Zum Speicherort der letzten Bearbeitung wechseln** bzw. **STRG**+**UMSCHALTTASTE**+**RÜCKTASTE** drücken.
+- Wechseln Sie in einer Projektmappe direkt zum Speicherort der letzten Bearbeitung, indem Sie auf **Bearbeiten** > **Gehe zu** > **Zum Speicherort der letzten Bearbeitung wechseln** bzw. **STRG**+**UMSCHALT**+**RÜCK** drücken.
 
-- Verwenden Sie in Visual Studio 2017 Version 15.8 und höher **Go To Recent File** (Gehe zur zuletzt bearbeiteten Datei), um eine Liste der zuletzt besuchten Dateien in einer Projektmappe anzuzeigen. Wählen Sie **Bearbeiten** > **Gehe zu** > **Go To Recent File** (Gehe zur zuletzt bearbeiteten Datei), oder drücken Sie **STRG**+**1**, **STRG**+**R**.
+- Verwenden Sie **Go To Recent File** (Zur zuletzt besuchten Datei wechseln), um eine Liste der zuletzt besuchten Dateien in einer Projektmappe anzuzeigen. Wählen Sie **Bearbeiten** > **Gehe zu** > **Go To Recent File** (Gehe zur zuletzt bearbeiteten Datei), oder drücken Sie **STRG**+**1**, **STRG**+**R**.
 
 ## <a name="configure-debugging-options"></a>Konfigurieren von Debugoptionen
 
@@ -107,7 +105,17 @@ Informationen zu Leistungsüberlegungen hinsichtlich der .NET Compiler Platform 
 
     Erweiterungen sind zusätzliche, zu Visual Studio hinzugefügte Softwarekomponenten, die neue Funktionalität bereitstellen oder vorhandene Funktionalität erweitern. Erweiterungen können häufig eine Quelle von Problemen mit Arbeitsspeicherressourcen sein. Wenn bei Ihnen Arbeitsspeicherprobleme auftreten, deaktivieren Sie die Erweiterungen nacheinander, um die Auswirkungen auf das Szenario oder den Workflow zu beobachten.
 
-    Wenn Sie Erweiterungen deaktivieren möchten, navigieren Sie zu **Extras** > **Erweiterungen und Updates**, und deaktivieren Sie eine bestimmte Erweiterung.
+   ::: moniker range="vs-2017"
+
+    Um Erweiterungen zu deaktivieren, deaktivieren Sie unter **Tools** > **Erweiterungen und Updates** eine bestimmte Erweiterung.
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+    Um Erweiterungen zu deaktivieren, deaktivieren Sie unter **Erweiterungen** > **Erweiterungen und Updates** eine bestimmte Erweiterung.
+
+   ::: moniker-end
 
 - **Deaktivieren des XAML-Designers**
 
@@ -132,4 +140,4 @@ Eine ausführliche Beschreibung des CLR-Garbage Collectors finden Sie unter [Fun
 ## <a name="see-also"></a>Siehe auch
 
 - [Optimieren der Leistung von Visual Studio](../ide/optimize-visual-studio-performance.md)
-- [Load solutions faster with Visual Studio 2017 version 15.6 (Schnelleres Laden großer Projektmappen in Visual Studio 2017-Version 15.6)](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)
+- [Load solutions faster with Visual Studio 2017 version 15.6 (Schnelleres Laden großer Projektmappen in Visual Studio 2017-Version 15.6)](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

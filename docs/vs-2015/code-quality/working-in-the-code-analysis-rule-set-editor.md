@@ -1,14 +1,9 @@
 ---
 title: Legen Sie die Codeanalyse-Regelsätze arbeiten-Editor | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.ruleseteditor
 ms.assetid: 370c97bf-bb29-4b2f-b9ae-ba125bce7b2d
@@ -16,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: cd107f2ac0c377765fda2f62f175d7285eb01bb6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 57d3c21371cc824573e29657d0b41253e556f4c3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269645"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072252"
 ---
 # <a name="working-in-the-code-analysis-rule-set-editor"></a>Arbeiten mit dem Regelsatz-Editor für die Codeanalyse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +31,11 @@ Die Codeanalyse Regelsatz-Editor können Sie zum Festlegen von Regeln, die in ei
   
  Der Editor zeigt die Regeln in einer Baumstruktur, die Gruppen, die Regeln durch eine Regel Feld festlegen, die Sie angeben. Führen Sie zum Hinzufügen oder Entfernen von Regeln in einem Regelsatz, eine oder mehrere der folgenden Schritte aus:  
   
--   Aktivieren Sie oder deaktivieren Sie das Kontrollkästchen für den Gruppenknoten hinzufügen oder entfernen alle Regeln in der Gruppe. Wenn Sie eine Gruppe auswählen, werden alle Regeln festgelegt, um die **Warnung** Aktion.  
+- Aktivieren Sie oder deaktivieren Sie das Kontrollkästchen für den Gruppenknoten hinzufügen oder entfernen alle Regeln in der Gruppe. Wenn Sie eine Gruppe auswählen, werden alle Regeln festgelegt, um die **Warnung** Aktion.  
   
--   Klicken Sie auf die **Aktion** Feld eine Gruppe, und geben Sie dann die Aktion, die für alle Regeln in der Gruppe gelten.  
+- Klicken Sie auf die **Aktion** Feld eine Gruppe, und geben Sie dann die Aktion, die für alle Regeln in der Gruppe gelten.  
   
--   Aktivieren Sie oder deaktivieren Sie das Kontrollkästchen für eine einzelne Regel. Wenn Sie das Kontrollkästchen für eine Regel auswählen, wird die Regel auf die Warnaktion festgelegt.  
+- Aktivieren Sie oder deaktivieren Sie das Kontrollkästchen für eine einzelne Regel. Wenn Sie das Kontrollkästchen für eine Regel auswählen, wird die Regel auf die Warnaktion festgelegt.  
   
 ## <a name="rule-set-editor-toolbar"></a>Regelsatz-Editor-Symbolleiste  
  Sie können die Symbolleiste des Regelsatz-Editor verwenden, zu gruppieren, Filtern und suchen die angezeigten Daten in der Regel Set-Raster.  
@@ -49,7 +44,7 @@ Die Codeanalyse Regelsatz-Editor können Sie zum Festlegen von Regeln, die in ei
   
 |ToolBar-Steuerelement|Beschreibung|  
 |---------------------|-----------------|  
-|**Alle erweitern**|Die Regeln in allen Gruppen angezeigt.|  
+|**Alle aufklappen**|Die Regeln in allen Gruppen angezeigt.|  
 |**Alle reduzieren**|Blendet die Regeln in allen Gruppen an.|  
 |**Group By**|Gibt das Feld, nach dem Regeln gruppiert werden. Klicken Sie auf  **\<None >** ohne Gruppen angezeigt.|  
 |**Spaltenoptionen**|Gibt die Regelfelder angezeigt werden sollen.|  
@@ -78,9 +73,6 @@ Die Codeanalyse Regelsatz-Editor können Sie zum Festlegen von Regeln, die in ei
 ## <a name="sorting-and-filtering-rule-sets"></a>Sortieren und Filtern von Regelsätzen  
  Über die Spaltenüberschriften des Rasters Satz Regel können Sie sortieren und die Regeln filtern, indem Sie die Werte des Felds.  
   
--   Um die Listen der Regel-Satz zu sortieren, klicken Sie auf die Spaltenüberschrift des Felds, nach der sortiert werden sollen. Wenn die Regelsätze gruppiert werden, wird jede Gruppe einzeln sortiert.  
+- Um die Listen der Regel-Satz zu sortieren, klicken Sie auf die Spaltenüberschrift des Felds, nach der sortiert werden sollen. Wenn die Regelsätze gruppiert werden, wird jede Gruppe einzeln sortiert.  
   
--   Um die Regelsätze durch den Wert eines Felds zu filtern, klicken Sie auf die Schaltfläche "Filter" auf die Spaltenüberschrift des Felds mit dem Sie filtern möchten. Wählen Sie die Kontrollkästchen für die Werte, die Sie anzeigen möchten, und deaktivieren Sie die Kontrollkästchen für die Werte, die Sie ausblenden möchten.
-
-
-
+- Um die Regelsätze durch den Wert eines Felds zu filtern, klicken Sie auf die Schaltfläche "Filter" auf die Spaltenüberschrift des Felds mit dem Sie filtern möchten. Wählen Sie die Kontrollkästchen für die Werte, die Sie anzeigen möchten, und deaktivieren Sie die Kontrollkästchen für die Werte, die Sie ausblenden möchten.

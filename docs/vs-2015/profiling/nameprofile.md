@@ -1,14 +1,9 @@
 ---
 title: NameProfile | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - NameProfile
 - NameProfileA
@@ -16,13 +11,13 @@ ms.assetid: 1bb05441-c4ff-4323-9fef-f3924fba4430
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7e56788c36e8c77ec134ed24a7636475c54da664
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1c2134c38a3910a5dd1308990b0788002a7ded2d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733827"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441900"
 ---
 # <a name="nameprofile"></a>NameProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +76,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 |NAME_ERROR_TEXTTRUNCATED|Die Textlänge des Namens überschreitet 32 Zeichen inklusive des NULL-Zeichens und wurde daher gekürzt.|  
 |NAME_OK|Der Name wurde erfolgreich registriert.|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Jedem Prozess oder Thread kann nur ein Name zugewiesen werden. Nachdem ein Profilerstellungselement benannt wird, werden nachfolgende Aufrufe von NameProfile für dieses Element ignoriert.  
   
  Wenn verschiedenen Threads oder Prozessen der gleiche Name gegeben wird, enthält der Bericht die Daten aller Elemente auf dieser Ebene, die diesen Namen tragen.  
@@ -89,7 +84,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
  Wenn Sie einen anderen Prozess oder Thread als den aktuellen angeben, müssen Sie sicherstellen, dass dieser initialisiert und gestartet wurde, bevor Sie diesen benennen. Andernfalls schlägt die NameProfile-Methode fehl.  
   
 > [!IMPORTANT]
->  Die API-Funktionen CreateProcess() und CreateThread() können Rückgaben liefern, bevor der Thread oder Prozess initialisiert wurde.  
+> Die API-Funktionen CreateProcess() und CreateThread() können Rückgaben liefern, bevor der Thread oder Prozess initialisiert wurde.  
   
 ## <a name="net-framework-equivalent"></a>Entsprechung in .NET Framework  
  Microsoft.VisualStudio.Profiler.dll  
@@ -142,6 +137,3 @@ void ExerciseNameProfile()
   
 ## <a name="see-also"></a>Siehe auch  
  [Referenz zu Profiler-APIs in Visual Studio (systemeigen)](../profiling/visual-studio-profiler-api-reference-native.md)
-
-
-

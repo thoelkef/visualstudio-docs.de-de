@@ -1,7 +1,6 @@
 ---
-title: 'CA2100: Überprüfen Sie die SQL-Abfragen für Sicherheitsrisiken'
+title: 'CA2100: SQL-Abfragen auf Sicherheitsrisiken überprüfen.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - Review SQL queries for security vulnerabilities
@@ -13,21 +12,21 @@ helpviewer_keywords:
 ms.assetid: 79670604-c02a-448d-9c0e-7ea0120bc5fe
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a09567184ab1f02cba8ff55157a2d506989c98ac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5387ce65532cb532192191bd67f29cc7af6e28c0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545292"
 ---
-# <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100: Überprüfen Sie die SQL-Abfragen für Sicherheitsrisiken
+# <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100: SQL-Abfragen auf Sicherheitsrisiken überprüfen.
 
 |||
 |-|-|

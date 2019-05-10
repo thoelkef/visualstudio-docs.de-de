@@ -2,19 +2,18 @@
 title: Vorschlagen eines Features
 description: Beschreibt, welche Vorschläge in der Entwicklercommunity vorhanden sind, wie Sie einen Vorschlag einreichen können und wie Vorschläge von Microsoft in der Visual Studio-Roadmap verwendet werden.
 ms.date: 12/17/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: seaniyer
 ms.author: seiyer
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60fce2b9fb14ffcb0975b91991595d1a4a429cb2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4da08c2a7fed28b7f4ca75770682673bf58e30c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951104"
 ---
 # <a name="overview-suggest-a-feature"></a>Übersicht: Vorschlagen einer Features
 
@@ -130,4 +129,4 @@ Die Reaktionszeit hängt von dem Status ab, in dem sich Ihr Feedback befindet. L
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Einführung von „Feature vorschlagen“ in der Entwicklercommunity (Visual Studio-Blog)](https://blogs.msdn.microsoft.com/visualstudio/2018/10/09/introducing-suggest-a-feature-in-developer-community/?utm_source=vs_developer_news&utm_medium=referral)
+- [Einführung von „Feature vorschlagen“ in der Entwicklercommunity (Visual Studio-Blog)](https://devblogs.microsoft.com/visualstudio/introducing-suggest-a-feature-in-developer-community/?utm_source=vs_developer_news&utm_medium=referral)

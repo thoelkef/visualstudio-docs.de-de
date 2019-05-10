@@ -1,14 +1,9 @@
 ---
 title: Erste Schritte mit dem Debugger-Erweiterbarkeit | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - getting started, Debugging SDK
 - debugging [Debugging SDK], getting started
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: d6ce6f43-1409-4bf7-93cd-f3464ca23504
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bafdd45b57a9fe660e97127c2c99c333ead0e60a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d1c616c7cf8ed90ec3d76046892167b9b742a1b0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721167"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085674"
 ---
 # <a name="getting-started-with-debugger-extensibility"></a>Erste Schritte mit der Erweiterbarkeit des Debuggers
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,11 +30,11 @@ Die [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] enthält die Informationen
   
  Die optimale Verwendung der [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], Sie sollten mit den folgenden vertraut sein:  
   
--   Die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrierte Entwicklungsumgebung (IDE)  
+- Die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrierte Entwicklungsumgebung (IDE)  
   
--   Die Programmiersprache C++  
+- Die Programmiersprache C++  
   
--   ATL-COM  
+- ATL COM  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Roadmap für die Erweiterung des Debuggers](../../extensibility/debugger/roadmap-for-extending-the-debugger.md)  
@@ -56,4 +51,3 @@ Die [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] enthält die Informationen
   
  [Debuggingaufgaben](../../extensibility/debugger/debugging-tasks.md)  
  Enthält Links zu verschiedenen Debuggen Aufgaben wie das Starten eines Programms und Auswerten von Ausdrücken.
-

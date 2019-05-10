@@ -9,16 +9,15 @@ helpviewer_keywords:
 ms.assetid: 572c15aa-1fd0-468c-b6be-9fa50e170914
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46df354cf860aa1aa08fd8d738711dad41fd6741
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fbe86e085e50dc0e72c00b7bbe7a313e689e0ee5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861302"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62571529"
 ---
 # <a name="automatic-feature-suspension"></a>Automatisches Anhalten von Features
 
@@ -30,7 +29,7 @@ Wenn Visual Studio eine Bedingung nicht genügenden Arbeitsspeichers erkannt wir
 
 In einem wenig Arbeitsspeicher verfügbar werden die folgenden Aktionen ausgeführt:
 
-- Vollständige projektmappenanalyse für Visual c# und Visual Basic ist deaktiviert.
+- Vollständige projektmappenanalyse für Visual C# und Visual Basic ist deaktiviert.
 
 - [Die automatische Speicherbereinigung](/dotnet/standard/garbage-collection/index) (GC) mit niedriger Latenz im Modus für visuelle C# und Visual Basic ist deaktiviert.
 
@@ -42,7 +41,7 @@ Tipps und Tricks zur Verbesserung von Visual Studio-Leistung beim Umgang mit gro
 
 ## <a name="full-solution-analysis-suspended"></a>Vollständige projektmappenanalyse angehalten
 
-Standardmäßig ist die vollständige projektmappenanalyse für Visual Basic aktiviert und deaktiviert für Visual c#. Allerdings wird in ein wenig Arbeitsspeicher verfügbar, vollständige projektmappenanalyse automatisch für Visual Basic und Visual C#-, unabhängig von den Einstellungen im Dialogfeld "Optionen" deaktiviert. Allerdings können Sie vollständige projektmappenanalyse erneut aktivieren, indem Sie die Auswahl der **erneut aktivieren** Schaltfläche in der Info Balken-, wenn sie dazu angezeigt wird der **vollständige projektmappenanalyse aktivieren** Kontrollkästchen im Dialogfeld "Optionen" oder durch Visual Studio neu starten. Das Dialogfeld "Optionen" zeigt der aktuellen vollständige Projektmappe immer analyseeinstellungen. Weitere Informationen finden Sie unter [Vorgehensweise: Aktivieren und Deaktivieren der vollständigen Projektmappenanalyse](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
+Standardmäßig ist die vollständige projektmappenanalyse für Visual Basic aktiviert und deaktiviert für Visual C#. Allerdings wird in ein wenig Arbeitsspeicher verfügbar, vollständige projektmappenanalyse automatisch für Visual Basic und Visual C#-, unabhängig von den Einstellungen im Dialogfeld "Optionen" deaktiviert. Allerdings können Sie vollständige projektmappenanalyse erneut aktivieren, indem Sie die Auswahl der **erneut aktivieren** Schaltfläche in der Info Balken-, wenn sie dazu angezeigt wird der **vollständige projektmappenanalyse aktivieren** Kontrollkästchen im Dialogfeld "Optionen" oder durch Visual Studio neu starten. Das Dialogfeld "Optionen" zeigt der aktuellen vollständige Projektmappe immer analyseeinstellungen. Weitere Informationen finden Sie unter [Vorgehensweise: Aktivieren und Deaktivieren der vollständigen Projektmappenanalyse](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
 
 ## <a name="gc-low-latency-disabled"></a>GC mit geringer Latenz deaktiviert
 
@@ -61,7 +60,7 @@ Wenn Sie die aktuelle Sitzung für die Entwicklung weiterhin oder Visual Studio 
 Darüber hinaus sind für interne Visual Studio-Vorgänge verwendeten Caches ebenfalls gelöscht.
 
 > [!NOTE]
-> Die Funktion zum automatischen Unterbrechung Warnung tritt nur einmal auf einer Basis pro Lösung nicht auf einer Basis pro Sitzung. Dies bedeutet, wenn Sie von Visual Basic, Visual c# (oder umgekehrt) wechseln, und führen Sie in einem anderen nicht genügend Arbeitsspeicher verfügbar, Sie möglicherweise eine andere Funktion zum automatischen Warnung zu gesperrter abrufen können.
+> Die Funktion zum automatischen Unterbrechung Warnung tritt nur einmal auf einer Basis pro Lösung nicht auf einer Basis pro Sitzung. Dies bedeutet, wenn Sie von Visual Basic, Visual C# (oder umgekehrt) wechseln, und führen Sie in einem anderen nicht genügend Arbeitsspeicher verfügbar, Sie möglicherweise eine andere Funktion zum automatischen Warnung zu gesperrter abrufen können.
 
 ## <a name="see-also"></a>Siehe auch
 

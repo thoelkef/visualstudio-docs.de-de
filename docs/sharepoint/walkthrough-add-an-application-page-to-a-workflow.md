@@ -10,17 +10,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, adding applications page to workflow
 - application page [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cb0dfa7212cae1dd4e7c62f71f423c0f8fd275d9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: 032447051bc03b037abba2920d48473f0d73935f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938198"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409546"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Exemplarische Vorgehensweise: Hinzufügen einer Anwendungsseite zu einem workflow
   Diese exemplarische Vorgehensweise veranschaulicht, wie Sie eine Anwendungsseite hinzufügen, die zu einem Workflowprojekt von einem Workflow abgeleitete Daten angezeigt werden. Er baut auf das Projekt, das in diesem Thema beschriebenen [Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs-und Initiierungsformularen](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
@@ -38,22 +38,22 @@ ms.locfileid: "53938198"
 ## <a name="prerequisites"></a>Vorraussetzungen
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
 
--   Unterstützte Editionen von [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] und SharePoint.
+- Unterstützte Editionen von [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] und SharePoint.
 
--   Visual Studio.
+- Visual Studio.
 
--   Müssen Sie auch das Projekt in das Thema abschließen [Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs-und Initiierungsformularen](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
+- Müssen Sie auch das Projekt in das Thema abschließen [Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs-und Initiierungsformularen](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
 
 ## <a name="ammend-the-workflow-code"></a>Ammend Workflowcode
  Fügen Sie zunächst eine einzige Zeile Code an den Workflow, den Wert der Ergebnisspalte angezeigt, der den Betrag der Spesenabrechnung festzulegen. Dieser Wert wird weiter unten in der Expense Report Zusammenfassung Berechnung verwendet.
 
 #### <a name="to-set-the-value-of-the-outcome-column-in-the-workflow"></a>Den Wert der Ergebnisspalte angezeigt im Workflow festgelegt
 
-1.  Laden Sie das abgeschlossene Projekt aus dem Thema [Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs- und Initiierungsformularen](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Laden Sie das abgeschlossene Projekt aus dem Thema [Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs- und Initiierungsformularen](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2.  Öffnen Sie den Code für *Workflow1.cs* oder *Workflow1.vb* (abhängig von der Programmiersprache).
+2. Öffnen Sie den Code für *Workflow1.cs* oder *Workflow1.vb* (abhängig von der Programmiersprache).
 
-3.  Am unteren Rand der `createTask1_MethodInvoking` -Methode, fügen Sie den folgenden Code hinzu:
+3. Am unteren Rand der `createTask1_MethodInvoking` -Methode, fügen Sie den folgenden Code hinzu:
 
     ```vb
     createTask1_TaskProperties1.ExtendedProperties("Outcome") =
@@ -70,11 +70,11 @@ ms.locfileid: "53938198"
 
 #### <a name="to-add-an-application-page-to-the-project"></a>Hinzufügen eine Anwendungsseite zum Projekt
 
-1.  Wählen Sie das Projekt "ExpenseReport" und dann auf der Menüleiste die Option **Projekt** > **neues Element hinzufügen**.
+1. Wählen Sie das Projekt "ExpenseReport" und dann auf der Menüleiste die Option **Projekt** > **neues Element hinzufügen**.
 
-2.  In der **Vorlagen** Bereich Wählen Sie die **Seite "Anwendung"** Vorlage verwenden Sie den Standardnamen für das Projektelement (**ApplicationPage1.aspx**), und wählen Sie die **Hinzufügen** Schaltfläche.
+2. In der **Vorlagen** Bereich Wählen Sie die **Seite "Anwendung"** Vorlage verwenden Sie den Standardnamen für das Projektelement (**ApplicationPage1.aspx**), und wählen Sie die **Hinzufügen** Schaltfläche.
 
-3.  In der [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] von ApplicationPage1.aspx, ersetzen die `PlaceHolderMain` -Abschnitt folgendermaßen:
+3. In der [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] von ApplicationPage1.aspx, ersetzen die `PlaceHolderMain` -Abschnitt folgendermaßen:
 
     ```aspx-csharp
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">
@@ -88,7 +88,7 @@ ms.locfileid: "53938198"
 
      Dieser Code Fügt eine Tabelle auf der Seite zusammen mit einem Titel.
 
-4.  Fügen Sie einen Titel auf der Seite "Anwendung" hinzu, indem Sie ersetzt die `PlaceHolderPageTitleInTitleArea` -Abschnitt folgendermaßen:
+4. Fügen Sie einen Titel auf der Seite "Anwendung" hinzu, indem Sie ersetzt die `PlaceHolderPageTitleInTitleArea` -Abschnitt folgendermaßen:
 
     ```aspx-csharp
     <asp:Content ID="PageTitleInTitleArea" ContentPlaceHolderID="PlaceHolderPageTitleInTitleArea" runat="server" >
@@ -101,9 +101,9 @@ ms.locfileid: "53938198"
 
 #### <a name="to-code-the-application-page"></a>Code der Seite "Anwendung"
 
-1.  Wählen Sie die **ApplicationPage1.aspx** Knoten und anschließend auf der Menüleiste die Optionen **Ansicht** > **Code** um den Code hinter der Seite "Anwendung" anzuzeigen.
+1. Wählen Sie die **ApplicationPage1.aspx** Knoten und anschließend auf der Menüleiste die Optionen **Ansicht** > **Code** um den Code hinter der Seite "Anwendung" anzuzeigen.
 
-2.  Ersetzen Sie die **mit** oder **Import** Anweisungen (abhängig von der Programmiersprache) am Anfang der Klasse durch den folgenden:
+2. Ersetzen Sie die **mit** oder **Import** Anweisungen (abhängig von der Programmiersprache) am Anfang der Klasse durch den folgenden:
 
     ```vb
     Imports System
@@ -131,7 +131,7 @@ ms.locfileid: "53938198"
     using Microsoft.SharePoint.Navigation;
     ```
 
-3.  Fügen Sie der `Page_Load`-Methode folgenden Code hinzu:
+3. Fügen Sie der `Page_Load`-Methode folgenden Code hinzu:
 
     ```vb
     Try
@@ -295,7 +295,7 @@ ms.locfileid: "53938198"
     ```
 
     > [!WARNING]
-    >  Achten Sie darauf, dass "TestServer" im Code mit dem Namen eines gültigen Servers ersetzen, auf dem SharePoint ausgeführt wird.
+    > Achten Sie darauf, dass "TestServer" im Code mit dem Namen eines gültigen Servers ersetzen, auf dem SharePoint ausgeführt wird.
 
 ## <a name="test-the-application-page"></a>Testen Sie die Seite "Anwendung"
  Als Nächstes zu bestimmen, ob die Seite "Anwendung" der Ausgabedaten ordnungsgemäß angezeigt.
@@ -343,9 +343,9 @@ ms.locfileid: "53938198"
 
  Erfahren Sie mehr über das SharePoint-Seiteninhalten zu entwerfen, indem Sie mit dem Visual Web Designer in Visual Studio in den folgenden Themen:
 
--   [Erstellen von Webparts für SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).
+- [Erstellen von Webparts für SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).
 
--   [Erstellen von wiederverwendbaren Steuerelementen für Webparts oder Anwendungsseiten](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).
+- [Erstellen von wiederverwendbaren Steuerelementen für Webparts oder Anwendungsseiten](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).
 
 ## <a name="see-also"></a>Siehe auch
 

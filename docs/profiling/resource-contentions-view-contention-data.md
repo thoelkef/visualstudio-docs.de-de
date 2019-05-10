@@ -1,25 +1,28 @@
 ---
 title: Ressourcenkonfliktansicht – Konfliktdaten | Microsoft-Dokumentation
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.resourcecontention
 helpviewer_keywords:
 - Resource Contentions view
 ms.assetid: 14a7f774-211f-4ef8-af05-94d1c8f65d2f
-author: mikejo5000
+caps.latest.revision: 14
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: 662ae2c4b96320dda0d3f9f4efb350ed0e61be0f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: efadc6917f565f5449a76b6a8b91b309356a00bb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870507"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797916"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Ressourcenkonfliktansicht – Konfliktdaten
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 Die Ansicht für Ressourcenkonflikte führt Ressourcenkonfliktdaten für die Ressourcen auf, die die Quelle der Konfliktereignisse waren. Ein Konfliktereignis tritt auf, wenn eine Funktion in einem Thread gezwungen wird, auf den Zugriff auf die Ressource zu warten, da eine Funktion in einem anderen Thread exklusiven Zugriff auf die Ressource abgerufen hat. Jede Ressource ist der Stammknoten einer Aufrufstruktur, die Ausführungspfade der Funktion anzeigt, die die Konfliktereignisse geführt haben.  
   
 ## <a name="data-values"></a>Datenwerte  
@@ -30,9 +33,9 @@ Die Ansicht für Ressourcenkonflikte führt Ressourcenkonfliktdaten für die Res
 ### <a name="function-values"></a>Funktionswerte  
  Funktionswerte basieren auf den Instanzen der Funktion, die in der im Ausführungspfad dargestellten Ausführungsstruktur aufgetreten sind.  
   
--   Exklusive Werte basieren auf den Ereignissen, die während der Ausführung von Anweisungen im Funktionsrumpf aufgetreten. Aufgetretene Ereignisse in Funktionen, die von der Funktion aufgerufen wurden, sind nicht in den exklusiven Werten enthalten.  
+- Exklusive Werte basieren auf den Ereignissen, die während der Ausführung von Anweisungen im Funktionsrumpf aufgetreten. Aufgetretene Ereignisse in Funktionen, die von der Funktion aufgerufen wurden, sind nicht in den exklusiven Werten enthalten.  
   
--   Inklusive Werte basieren auf den Ereignissen, die aufgetreten sind, als die Funktion ausgeführt wurde, oder eine Funktion, die von der Funktion aufgerufen wurde.  
+- Inklusive Werte basieren auf den Ereignissen, die aufgetreten sind, als die Funktion ausgeführt wurde, oder eine Funktion, die von der Funktion aufgerufen wurde.  
   
 ### <a name="percentage-values"></a>Prozentsatzgröße  
  Prozentwerte basieren auf der Gesamtzeit oder den Konfliktereignissen in den Profilerstellungsdaten. Wenn der Bericht oder die Ansicht der Profilerstellung gefiltert wird, werden nur die blockierte Zeit und Konflikte in der gefilterten Daten als Gesamtwert verwendet.  

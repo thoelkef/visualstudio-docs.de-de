@@ -1,27 +1,22 @@
 ---
 title: MarkProfile | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - MarkProfile
 ms.assetid: 54dac8c8-c8ee-4023-af27-b25466e3a6ec
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 79fcc7fe8789916cce24919551e4130f78653abf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 566cb2e7222aacbf992dc1693d8ce1de102605a3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434968"
 ---
 # <a name="markprofile"></a>MarkProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 |MARK_TEXTTOOLONG|Die Zeichenfolge überschreitet die maximale Länge von 256 Zeichen. Die Kommentarzeichenfolge wurde abgeschnitten, und die Markierung und der Kommentar werden aufgezeichnet.|  
 |MARK_OK|Bei Erfolg wird MARK_OK zurückgegeben.|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Der Markierungswert wird jedes Mal in die VSP-Datei eingefügt, wenn der Code ausgeführt wird und ein Profil für den Thread, der die MarkProfile-Funktion enthält, erstellt wird. Sie können MarkProfile mehrmals aufrufen.  
   
  Profilmarkierungen sind im Bereich global. Wenn beispielsweise eine Profilmarkierung in einen Thread eingefügt wird, kann diese verwendet werden, um den Anfang oder das Ende eines Datensegments in jedem Thread der VSP-Datei zu markieren.  
@@ -60,7 +55,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
  Der Profilerstellungsstatus für den Thread, der die Funktion „Mark profile“ (Profil markieren) enthält, muss auf ON festgelegt sein, wenn Markierungen und Kommentare mit dem Mark-Befehl oder mit API-Funktionen (CommentMarkAtProfile, CommentMarkProfile, oder MarkProfile) eingefügt werden.  
   
 > [!IMPORTANT]
->  Die MarkProfile-Methode sollte nur mit der Instrumentierungsprofilerstellung verwendet werden.  
+> Die MarkProfile-Methode sollte nur mit der Instrumentierungsprofilerstellung verwendet werden.  
   
 ## <a name="net-framework-equivalent"></a>Entsprechung in .NET Framework  
  Microsoft.VisualStudio.Profiler.dll  
@@ -107,6 +102,3 @@ void ExerciseMarkProfile()
   
 ## <a name="see-also"></a>Siehe auch  
  [Referenz zu Profiler-APIs in Visual Studio (systemeigen)](../profiling/visual-studio-profiler-api-reference-native.md)
-
-
-

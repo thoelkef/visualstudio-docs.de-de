@@ -1,7 +1,6 @@
 ---
-title: 'CA1407: Statische Member in für COM sichtbaren Typen vermeiden'
+title: 'CA1407: Statische Member in für COM sichtbaren Typen vermeiden.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1407
@@ -12,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: bebd0776-ad04-453c-bca8-8c124c2d7840
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f72949326cf52455013c20419202b358b06d8b0b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5b09122aebdc02b9eacb32df596914a0a08a9ea9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916438"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546257"
 ---
-# <a name="ca1407-avoid-static-members-in-com-visible-types"></a>CA1407: Statische Member in für COM sichtbaren Typen vermeiden
+# <a name="ca1407-avoid-static-members-in-com-visible-types"></a>CA1407: Statische Member in für COM sichtbaren Typen vermeiden.
 
 |||
 |-|-|

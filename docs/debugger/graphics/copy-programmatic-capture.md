@@ -5,30 +5,29 @@ ms.topic: conceptual
 ms.assetid: 30ec235a-0abb-44b9-8852-61bc9e67ce22
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aab2b18c8c349211f4b5bd26b055d6ee5b65f0c6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 3a888605cfae6b5430782defd198f83988c31870
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990947"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62895953"
 ---
 # <a name="copy-programmatic-capture"></a>Kopieren (Programmgesteuerte Aufzeichnung)
-Kopiert den Inhalt der aktiven Grafikprotokolldatei (VSGLOG) in eine neue Datei.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-void Copy(  
-  wchar_t const * szNewVSGLog  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `szNewVSGLog`  
- Der Dateiname der neuen Grafikprotokolldatei.  
-  
-## <a name="remarks"></a>Hinweise  
+Kopiert den Inhalt der aktiven Grafikprotokolldatei (VSGLOG) in eine neue Datei.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+void Copy(
+  wchar_t const * szNewVSGLog
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `szNewVSGLog` Der Dateiname der neuen Grafikprotokolldatei.
+
+## <a name="remarks"></a>Hinweise
  Um die Grafikinformationen in eine neuen Datei zu kopieren, müssen Sie bereits einige Grafikinformationen erfasst haben, andernfalls geschieht nichts.

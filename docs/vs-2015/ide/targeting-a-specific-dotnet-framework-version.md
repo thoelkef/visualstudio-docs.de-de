@@ -1,14 +1,9 @@
 ---
 title: Festlegen einer bestimmten .NET-Framework-Zielversion | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework version [Visual Studio]
 - versions [Visual Studio], targeting .NET Framework version
@@ -18,13 +13,13 @@ ms.assetid: 91e77ad4-4da3-419d-85fb-9036f0e5c330
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bc084c025e19e5466cd860611eeef91a3a7fedca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 38a12f851bb99eb553856556608aaf029c91c40d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277926"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429235"
 ---
 # <a name="targeting-a-specific-net-framework-version"></a>Festlegen einer bestimmten .NET-Framework-Zielversion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ In Visual Studio können Sie die Version oder das Profil von .NET Framework ange
  [Übersicht über die Ausrichtung auf mehrere Zielversionen in Visual Studio](../ide/visual-studio-multi-targeting-overview.md)  
  Bietet eine Übersicht über die Funktionen zur Festlegung von Zielversionen in Visual Studio.  
   
- [Gewusst wie: .NET Framework-Version als Ziel](../ide/how-to-target-a-version-of-the-dotnet-framework.md)  
+ [Vorgehensweise: Erstellen von Projekten für eine bestimmte .NET Framework-Version](../ide/how-to-target-a-version-of-the-dotnet-framework.md)  
  Enthält Informationen zum Angeben eines bestimmten [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] für das Visual Basic-, Visual C#- oder Visual F#-Projekt.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
@@ -52,6 +47,3 @@ In Visual Studio können Sie die Version oder das Profil von .NET Framework ange
   
  [Vorgehensweise: Ändern des Zielframeworks und des Plattformtoolsets](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)  
  Beschreibt, wie Einstellungen für Visual C++-Projekte geändert werden, damit andere Versionen von .NET Framework als Ziel verwendet werden, und verschiedene Plattformtoolsets verwendet werden können.
-
-
-

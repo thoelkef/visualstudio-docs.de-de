@@ -1,14 +1,9 @@
 ---
 title: 'Problembehandlung bei Ausnahmen: System.ServiceModel.Security.MessageSecurityException | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: troubleshooting
 helpviewer_keywords:
 - System.ServiceModel.Security.MessageSecurityException exception
 - MessageSecurityException exception
@@ -16,22 +11,22 @@ ms.assetid: 61ad69a1-ac50-49de-9a7c-8454a84ec5bd
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e7d13f5cc282026b1590f59180ed7f25312bb926
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6852b12e8a3cbc902770a2825d12697c12fc1760
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742477"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436553"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Problembehandlung bei Ausnahmen: System.ServiceModel.Security.MessageSecurityException
 Ein <xref:System.ServiceModel.Security.MessageSecurityException> Ausnahme wird ausgelöst, wenn [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] feststellt, dass eine Nachricht nicht ordnungsgemäß gesichert oder manipuliert wurde. Der Fehler tritt am häufigsten auf, wenn alle folgenden Bedingungen zutreffen:  
   
--   Sie verwenden einen WCF-Dienstverweis über eine Remoteverbindung, z. B. eine Remotedesktopverbindung oder Terminal Services, um mit einem WCF-Dienst (.svc) in einem Website- oder Webanwendungsprojekt zu kommunizieren.  
+- Sie verwenden einen WCF-Dienstverweis über eine Remoteverbindung, z. B. eine Remotedesktopverbindung oder Terminal Services, um mit einem WCF-Dienst (.svc) in einem Website- oder Webanwendungsprojekt zu kommunizieren.  
   
--   Sie haben keine Administratorberechtigungen auf der Remotewebsite.  
+- Sie haben keine Administratorberechtigungen auf der Remotewebsite.  
   
--   Anforderungen an localhost auf der Remotewebsite werden vom [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server behandelt.  
+- Anforderungen an localhost auf der Remotewebsite werden vom [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server behandelt.  
   
 ## <a name="associated-tips"></a>Tipps  
  **NTLM-Authentifizierungsprobleme zu beheben, wenn Sie den ASP.Net Development Server verwenden.**  
@@ -40,7 +35,7 @@ Ein <xref:System.ServiceModel.Security.MessageSecurityException> Ausnahme wird a
  Wenn ein Remotebenutzer die Website unter Verwendung des [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Servers ausführt und zusätzlich mit einem Webdienst oder WCF-Dienst arbeitet, können Sie entweder eine benutzerdefinierte Dienstbindung erstellen oder die NTLM-Sicherheit deaktivieren.  
   
 > [!IMPORTANT]
->  Es wird davon abgeraten, die NTLM-Sicherheit zu deaktivieren, da dadurch ein Sicherheitsrisiko entstehen könnte.  
+> Es wird davon abgeraten, die NTLM-Sicherheit zu deaktivieren, da dadurch ein Sicherheitsrisiko entstehen könnte.  
   
  Wenn eine benutzerdefinierte Dienstbindung erstellt wird, bleibt der Schutz durch die NTLM-Authentifizierung weiterhin bestehen.  
   
@@ -79,15 +74,15 @@ Ein <xref:System.ServiceModel.Security.MessageSecurityException> Ausnahme wird a
    Mithilfe der folgenden Schritte können Sie die NTLM-Sicherheit bei Verwendung eines WCF-Dienstverweises deaktivieren.  
   
 > [!IMPORTANT]
->  Es wird davon abgeraten, die NTLM-Sicherheit zu deaktivieren, da dadurch ein Sicherheitsrisiko entstehen könnte.  
+> Es wird davon abgeraten, die NTLM-Sicherheit zu deaktivieren, da dadurch ein Sicherheitsrisiko entstehen könnte.  
   
 #### <a name="to-turn-off-ntlm-security"></a>So deaktivieren Sie die NTLM-Sicherheit  
   
-1.  Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Websitenamen, und klicken Sie dann auf **Eigenschaftenseiten**.  
+1. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste auf den Websitenamen, und klicken Sie dann auf **Eigenschaftenseiten**.  
   
-2.  Wählen Sie **Startoptionen**aus, und deaktivieren Sie dann das Kontrollkästchen **NTLM-Authentifizierung** .  
+2. Wählen Sie **Startoptionen**aus, und deaktivieren Sie dann das Kontrollkästchen **NTLM-Authentifizierung** .  
   
-3.  Klicken Sie auf **OK**.  
+3. Klicken Sie auf **OK**.  
   
 ## <a name="see-also"></a>Siehe auch  
  <xref:System.ServiceModel.Security.MessageSecurityException>   

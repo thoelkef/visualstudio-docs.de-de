@@ -1,12 +1,34 @@
 ---
 title: Optionen, Text-Editor, Alle Sprachen
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.General
 - VS.ToolsOptionsPages.Text_Editor.ResJSON.General
 - VS.ToolsOptionsPages.Text_Editor.All_Languages.General
+- VS.ToolsOptionsPages.Text_Editor.Basic.General
+- VS.ToolsOptionsPages.Text_Editor.CSharp.General
+- VS.ToolsOptionsPages.Text_Editor.C/C++.General
+- VS.ToolsOptionsPages.Text_Editor.CoffeeScript.General
+- VS.ToolsOptionsPages.Text_Editor.CSS.General
+- VS.ToolsOptionsPages.Text_Editor.Dockerfile.General
+- VS.ToolsOptionsPages.Text_Editor.F#.General
+- VS.ToolsOptionsPages.Text_Editor.Fsharp.General
+- VS.ToolsOptionsPages.Text_Editor.HQL.General
+- VS.ToolsOptionsPages.Text_Editor.HTML.General
+- VS.ToolsOptionsPages.Text_Editor.HTML_(Web_Forms).General
+- VS.ToolsOptionsPages.Text_Editor.JavaScript.General
+- VS.ToolsOptionsPages.Text_Editor.TypeScript.General
+- VS.ToolsOptionsPages.Text_Editor.JSON.General
+- VS.ToolsOptionsPages.Text_Editor.LESS.General
+- VS.ToolsOptionsPages.Text_Editor.Plain_Text.General
+- VS.ToolsOptionsPages.Text_Editor.SCSS.General
+- VS.TOOLSOPTIONSPAGES.TEXT_EDITOR.SQL_SERVER_TOOLS.GENERAL
+- VS.ToolsOptionsPages.Text_Editor.StreamAnalytics.General
+- VS.ToolsOptionsPages.Text_Editor.T-SQL90.General
+- VS.ToolsOptionsPages.Text_Editor.U-SQL.General
+- VS.ToolsOptionsPages.Text_Editor.XAML.General
+- VS.ToolsOptionsPages.Text_Editor.XML.General
 helpviewer_keywords:
 - Text Editor Options dialog box
 - statement completion
@@ -17,15 +39,15 @@ helpviewer_keywords:
 ms.assetid: 49ee7306-9d46-4170-850f-a1716171752d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b8e0322a34d2f846f6db96cad372ebbe329f57b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2ef04af4fda717d3f2fa6a90ba6b9ffdc681d5a6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987913"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817852"
 ---
 # <a name="options-text-editor-all-languages"></a>Optionen, Text-Editor, Alle Sprachen
 
@@ -93,9 +115,9 @@ Wenn aktiviert, wird die **Navigationsleiste** am oberen Rand des Code-Editors a
 
 Diese Option legt das Verhalten des Editors fest, wenn Sie die Einfügemarke in einer leeren Zeile positionieren, keine Auswahl vornehmen und anschließend einen Kopier- oder Ausschneidevorgang ausführen.
 
--   Wenn diese Option aktiviert ist, wird die Leerzeile kopiert oder ausgeschnitten. Beim anschließenden Einfügen wird eine neue leere Zeile eingefügt.
+- Wenn diese Option aktiviert ist, wird die Leerzeile kopiert oder ausgeschnitten. Beim anschließenden Einfügen wird eine neue leere Zeile eingefügt.
 
--   Wenn diese Option deaktiviert ist, entfernt das Ausschneiden leere Zeilen. Die Daten in der Zwischenablage werden allerdings beibehalten. Wenn Sie deshalb anschließend den Befehl „Einfügen“ verwenden, wird der zuletzt in die Zwischenablage kopierte Inhalt eingefügt. Wenn vorher nichts kopiert wurde, wird nichts eingefügt.
+- Wenn diese Option deaktiviert ist, entfernt das Ausschneiden leere Zeilen. Die Daten in der Zwischenablage werden allerdings beibehalten. Wenn Sie deshalb anschließend den Befehl „Einfügen“ verwenden, wird der zuletzt in die Zwischenablage kopierte Inhalt eingefügt. Wenn vorher nichts kopiert wurde, wird nichts eingefügt.
 
 Wenn eine Zeile nicht leer ist, hat diese Einstellung keine Auswirkungen auf den Kopier- oder Ausschneidevorgang. Wenn nichts ausgewählt wurde, wird die gesamte Zeile kopiert oder ausgeschnitten. Beim anschließenden Einfügen werden der Text der gesamten Zeile sowie das Zeilenendezeichen eingefügt.
 

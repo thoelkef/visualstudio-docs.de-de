@@ -1,14 +1,9 @@
 ---
 title: SGen-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#SGen
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: 22c5ade4-4159-4667-b891-0c1aa06f4df5
 caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b9e1d87b895108ac890ace3f077d4c1c0a26d8bf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2741dc6e3e08f8c7f7ee2e28bcf2d8df1613f10e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268033"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647238"
 ---
 # <a name="sgen-task"></a>SGen-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Erstellt eine XML-Serialisierungsassembly für Typen in der angegebenen Assembly. Diese Aufgabe umschließt das XML Serializer Generator-Tool (Sgen.exe). Weitere Informationen finden Sie unter [XML Serializer Generator-Tool (Sgen.exe)](http://msdn.microsoft.com/library/cc1d1f1c-fb26-4be9-885a-3fe84c81cec6).  
   
 ## <a name="parameters"></a>Parameter  
@@ -58,13 +52,10 @@ Erstellt eine XML-Serialisierungsassembly für Typen in der angegebenen Assembly
 |`Types`|Optionaler `String[]` -Parameter.<br /><br /> Ruft eine Liste der spezifischen Typen ab, für die Serialisierungscode generiert werden soll, oder legt sie fest. SGen generiert nur für diese Typen Serialisierungscode.|  
 |`UseProxyTypes`|Erforderlicher `Boolean` -Parameter.<br /><br /> Wenn `true`, generiert die SGen-Aufgabe Serialisierungscode ausschließlich für die Proxytypen des XML-Webdiensts.|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.ToolTaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.ToolTask>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [ToolTaskExtension-Basisklasse](../msbuild/tooltaskextension-base-class.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Task Reference](../msbuild/msbuild-task-reference.md)  (MSBuild-Aufgabenreferenz)  
  [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
  [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)
-
-
-

@@ -1,24 +1,19 @@
 ---
 title: Festlegen einer eindeutigen Automatisierungseigenschaft für Windows Store-Steuerelemente für Tests | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 9bdd74ff-2534-4fc7-a5c3-a77bf7843037
 caps.latest.revision: 12
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 25890adaf22d1855426813c35e69766bba02a1c8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a765896ef8b4eb645c04536105bc2284fc5c3d16
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446050"
 ---
 # <a name="set-a-unique-automation-property-for-windows-store-controls-for-testing"></a>Festlegen einer eindeutigen Automatisierungseigenschaft für Windows Store-Steuerelemente für Tests
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,19 +22,19 @@ Wenn Sie Tests der programmierten UI für Ihre XAML-basierte Windows Store-Anwen
   
  Sie können eine eindeutige Automatisierungseigenschaft auf Grundlage des Typs des XAML-Steuerelements in der Anwendung zuweisen. In diesem Thema wird die Zuweisung der eindeutigen Automatisierungseigenschaft in den folgenden Situationen erörtert:  
   
--   [Statische XAML-Definition von Steuerelementen](#UniquePropertyWindowsStoreControlsStaticXAML)  
+- [Statische XAML-Definition von Steuerelementen](#UniquePropertyWindowsStoreControlsStaticXAML)  
   
--   [Zuweisen von eindeutigen Automatisierungseigenschaften mithilfe von Visual Studio oder Blend für Visual Studio](#UniquePropertyWindowsStoreControlsExpressionBlend)  
+- [Zuweisen von eindeutigen Automatisierungseigenschaften mithilfe von Visual Studio oder Blend für Visual Studio](#UniquePropertyWindowsStoreControlsExpressionBlend)  
   
--   [Verwenden einer DataTemplate](#UniquePropertyWindowsStoreControlsDataTemplate)  
+- [Verwenden einer DataTemplate](#UniquePropertyWindowsStoreControlsDataTemplate)  
   
--   [Verwenden einer Steuerelementvorlage](#UniquePropertyWindowsStoreControlsControlTemplate)  
+- [Verwenden einer Steuerelementvorlage](#UniquePropertyWindowsStoreControlsControlTemplate)  
   
--   [Dynamische Steuerelemente](#UniquePropertyWindowsStoreControlsDynamicControls)  
+- [Dynamische Steuerelemente](#UniquePropertyWindowsStoreControlsDynamicControls)  
   
 ## <a name="use-methods-to-assign-a-unique-automation-property"></a>Verwenden von Methoden zur Zuweisung einer eindeutigen Automatisierungseigenschaft  
   
-###  <a name="UniquePropertyWindowsStoreControlsStaticXAML"></a> Statische XAML-Definition  
+### <a name="UniquePropertyWindowsStoreControlsStaticXAML"></a> Statische XAML-Definition  
  Um eine eindeutige Automatisierungseigenschaft für ein Steuerelement anzugeben, das in der XAML-Datei definiert ist, können Sie AutomationProperties.AutomationId oder AutomationProperties.Name implizit oder explizit festlegen (siehe folgende Beispiele). Durch Festlegen eines dieser Werte erhält das Steuerelement eine eindeutige Automatisierungseigenschaft, mit der das Steuerelement identifiziert werden kann, wenn Sie einen Test der programmierten UI oder eine Aktionsaufzeichnung erstellen.  
   
  **Implizites Festlegen der Eigenschaft**  
@@ -63,7 +58,7 @@ Wenn Sie Tests der programmierten UI für Ihre XAML-basierte Windows Store-Anwen
  Legen Sie AutomationProperties.AutomationId explizit in der XAML für das Steuerelement auf **ButtonX** fest.  
   
 ```xaml  
-<Button AutomationProperties.AutomationId=“ButtonX” Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />  
+<Button AutomationProperties.AutomationId=“ButtonX” Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />  
   
 ```  
   
@@ -73,10 +68,10 @@ Wenn Sie Tests der programmierten UI für Ihre XAML-basierte Windows Store-Anwen
 <Button AutomationProperties.Name="ButtonY" Height="31" HorizontalAlignment="Left" Margin="23,76,0,0" VerticalAlignment="Top" Width="140" Click="ButtonY_Click" />  
 ```  
   
-###  <a name="UniquePropertyWindowsStoreControlsExpressionBlend"></a> Zuweisen von eindeutigen Automatisierungseigenschaften mithilfe von Visual Studio oder Blend für Visual Studio  
+### <a name="UniquePropertyWindowsStoreControlsExpressionBlend"></a> Zuweisen von eindeutigen Automatisierungseigenschaften mithilfe von Visual Studio oder Blend für Visual Studio  
  Sie können auch Visual Studio oder Blend für Visual Studio verwenden, um eindeutige Namen interaktiven Elementen zuzuordnen, z. B. Schaltflächen, Listenfeldern, Kombinationsfeldern und Textfeldern. Dies gibt dem Steuerelement einen eindeutigen Wert für AutomationProperties.Name.  
   
- **Visual Studio:** Zeigen Sie im Menü **Tools** auf **Optionen**, und wählen Sie dann **Text-Editor**, dann **XAML** und schließlich **Sonstiges** aus.  
+ **Visual Studio:** Zeigen Sie im Menü Tools auf **Optionen** , und wählen Sie dann nacheinander **Text-Editor**, **XAML**und **Verschiedenes**aus.  
   
  Wählen Sie **Interaktive Elemente beim Erstellen automatisch benennen** und dann **OK** aus.  
   
@@ -85,7 +80,7 @@ Wenn Sie Tests der programmierten UI für Ihre XAML-basierte Windows Store-Anwen
  **Blend für Visual Studio:** Verwenden Sie eine der folgenden Methoden, um dies in Blend für Visual Studio auszuführen.  
   
 > [!NOTE]
->  Sie können diese Methode nur für Steuerelemente verwenden, die statisch mit XAML erstellt werden.  
+> Sie können diese Methode nur für Steuerelemente verwenden, die statisch mit XAML erstellt werden.  
   
  **So weisen Sie vorhandenen Steuerelementen einen eindeutigen Namen zu**  
   
@@ -99,7 +94,7 @@ Wenn Sie Tests der programmierten UI für Ihre XAML-basierte Windows Store-Anwen
   
  ![Festlegen des Projekts, um interaktive Projekte zu benennen](../test/media/cuit-windowsstoreproeprty-blend-2.png "CUIT_WindowsStoreProeprty_Blend_2")  
   
-###  <a name="UniquePropertyWindowsStoreControlsDataTemplate"></a> Verwenden einer Datenvorlage  
+### <a name="UniquePropertyWindowsStoreControlsDataTemplate"></a> Verwenden einer Datenvorlage  
  Sie können eine einfache Vorlage mit ItemTemplate definieren, um die Werte in einem Listenfeld mithilfe des folgenden XAML-Codes an Variablen zu binden.  
   
 ```xaml  
@@ -133,7 +128,7 @@ Wenn Sie Tests der programmierten UI für Ihre XAML-basierte Windows Store-Anwen
                         </Setter.Value>  
                     </Setter>  
                 </Style>  
-            </ListBox.ItemContainerStyle>           
+            </ListBox.ItemContainerStyle>           
         </ListBox>  
   
 ```  
@@ -141,7 +136,7 @@ Wenn Sie Tests der programmierten UI für Ihre XAML-basierte Windows Store-Anwen
  In beiden Beispielen müssen Sie anschließend die ToString()-Methode von ItemSource entsprechend der Darstellung mit dem folgenden Code überschreiben. Dieser Code gewährleistet, dass der AutomationProperties.Name-Wert festgelegt wird und eindeutig ist, da mit Bindungen nicht für jedes datengebundene Listenelement eine eindeutige Automatisierungseigenschaft festgelegt werden kann. Das Festlegen eines eindeutigen Werts für AutomationProperties.Name ist in diesem Fall ausreichend.  
   
 > [!NOTE]
->  Damit können die inneren Inhalte des Listenelements auch auf eine Zeichenfolge in der Mitarbeiterklasse festgelegt werden. Wie im vorliegenden Beispiel gezeigt, wird dem Schaltflächen-Steuerelement innerhalb jedes Listenelements eine eindeutige Automatisierungs-ID zugewiesen, bei der es sich um die Mitarbeiter-ID handelt.  
+> Damit können die inneren Inhalte des Listenelements auch auf eine Zeichenfolge in der Mitarbeiterklasse festgelegt werden. Wie im vorliegenden Beispiel gezeigt, wird dem Schaltflächen-Steuerelement innerhalb jedes Listenelements eine eindeutige Automatisierungs-ID zugewiesen, bei der es sich um die Mitarbeiter-ID handelt.  
   
 ```  
   
@@ -162,7 +157,7 @@ public override string ToString()
   
 ```  
   
-###  <a name="UniquePropertyWindowsStoreControlsControlTemplate"></a> Verwenden einer Steuerelementvorlage  
+### <a name="UniquePropertyWindowsStoreControlsControlTemplate"></a> Verwenden einer Steuerelementvorlage  
  Sie können eine Steuerelementvorlage verwenden, damit jede Instanz eines bestimmten Typs eine eindeutige Automatisierungseigenschaft erhält, wenn sie im Code definiert ist. Sie müssen die Vorlage erstellen, damit die AutomationProperty an eine eindeutige ID in der Steuerelementinstanz gebunden wird. Der folgende XAML-Code veranschaulicht eine Methode zur Erstellung der Bindung mit einer Steuerelementvorlage.  
   
 ```xaml  
@@ -190,7 +185,7 @@ public override string ToString()
 <Button Content=”Button2” Style="{StaticResource MyButton}" Width="140"/>  
 ```  
   
-###  <a name="UniquePropertyWindowsStoreControlsDynamicControls"></a> Dynamische Steuerelemente  
+### <a name="UniquePropertyWindowsStoreControlsDynamicControls"></a> Dynamische Steuerelemente  
  Wenn Sie über Steuerelemente verfügen, die dynamisch mit dem Code und nicht statisch oder mithilfe von Vorlagen in den XAML-Dateien erstellt wurden, müssen Sie die Content- oder die Name-Eigenschaft für das Steuerelement festlegen. Dadurch wird sichergestellt, dass jedes dynamische Steuerelement über eine eindeutige Automatisierungseigenschaft verfügt. Wenn beispielsweise ein Kontrollkästchen angezeigt werden muss, wenn ein Listenelement ausgewählt wird, können Sie diese Eigenschaften festlegen, wie im Folgenden dargestellt:  
   
 ```csharp  
@@ -206,7 +201,3 @@ private void CreateCheckBox(string txt, StackPanel panel)
     }  
   
 ```  
-
-
-
-

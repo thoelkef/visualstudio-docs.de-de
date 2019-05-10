@@ -6,16 +6,15 @@ helpviewer_keywords:
 - dependency diagrams, adding custom properties
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 407db46519872d8f1c4e6eba79ddd5ca84610d70
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0c4639b5e2edcfebd05dcc6511102c0369b4b3e1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892237"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62960436"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Hinzufügen benutzerdefinierter Eigenschaften zu Abhängigkeitsdiagrammen
 
@@ -23,7 +22,7 @@ Wenn Sie Erweiterungscode für Abhängigkeitsdiagramme schreiben, können Sie We
 
 ## <a name="non-visible-properties"></a>Nicht sichtbare Eigenschaften
 
-Wenn Sie lediglich Ihren Code können Sie jedes Element in einem Abhängigkeitsdiagramm Werte zuordnen möchten, müssen Sie keine MEF-Komponente zu definieren. Es gibt ein Wörterbuch namens `Properties` in <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>. Fügen Sie einfach Werte zum Wörterbuch jedes Ebenenelements hinzu, die gemarshallt werden können. Sie werden als Teil des Diagramms Abhängigkeit gespeichert werden. Weitere Informationen finden Sie unter [Navigieren zu und Update layer-Modellen im Programmcode](../modeling/navigate-and-update-layer-models-in-program-code.md).
+Wenn Sie lediglich Ihren Code können Sie jedes Element in einem Abhängigkeitsdiagramm Werte zuordnen möchten, müssen Sie keine MEF-Komponente zu definieren. Es gibt ein Wörterbuch namens `Properties` in <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>. Fügen Sie einfach Werte zum Wörterbuch jedes Ebenenelements hinzu, die gemarshallt werden können. Sie werden als Teil des Diagramms Abhängigkeit gespeichert werden.
 
 ## <a name="editable-properties"></a>Bearbeitbaren Eigenschaften
 
@@ -38,6 +37,7 @@ Wenn Sie lediglich Ihren Code können Sie jedes Element in einem Abhängigkeitsd
 >     ```xml
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>
 >     ```
+>
 > 3. Unter den **Visual Studio-Tools** Abschnitt der Visual Studio-Anwendung im Startmenü öffnen **Developer-Eingabeaufforderung**. Geben Sie Folgendes ein:
 >
 >      `devenv /rootSuffix /updateConfiguration`
@@ -63,15 +63,15 @@ public class MyProperty : PropertyExtension<ILayerElement>
 
 Sie können Eigenschaften für <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> oder eine der abgeleiteten Klassen definieren, darunter folgende:
 
--   `ILayerModel` - das Modell
+- `ILayerModel` - das Modell
 
--   `ILayer` - jede Ebene
+- `ILayer` - jede Ebene
 
--   `ILayerDependencyLink` - die Links zwischen Ebenen
+- `ILayerDependencyLink` - die Links zwischen Ebenen
 
--   `ILayerComment`
+- `ILayerComment`
 
--   `ILayerCommentLink`
+- `ILayerCommentLink`
 
 ## <a name="example"></a>Beispiel
 

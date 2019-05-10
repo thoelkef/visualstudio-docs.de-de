@@ -1,35 +1,33 @@
 ---
 title: Barrierefreie Produkte und Dienste (Zusammenstellung)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: ba8557f6-231a-4d8b-80dd-80397e87a17f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 849f0aea9c8c3bce391247704b4e551b5f7dafdf
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: 72f1df430da25b480d812e89c4ea0c765995d530
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890047"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405982"
 ---
 # <a name="accessibility-products-and-services-blend"></a>Barrierefreie Produkte und Dienste (Zusammenstellung)
 Microsoft hat es sich zur Aufgabe gemacht, die Handhabung der Produkte und Dienste für alle Benutzer möglichst einfach zu gestalten. In den folgenden Abschnitten finden Sie Informationen zu den Funktionen, Produkten und Diensten, die den Zugriff auf Microsoft Windows für Personen mit Behinderungen vereinfachen:
 
--   Barrierefreiheitfunktionen in Windows
+- Barrierefreiheitfunktionen in Windows
 
--   Dokumentation in alternativen Formaten
+- Dokumentation in alternativen Formaten
 
--   Kundensupport für Benutzer mit Beeinträchtigungen des Gehörs
+- Kundensupport für Benutzer mit Beeinträchtigungen des Gehörs
 
--   Weitere Informationen
+- Weitere Informationen
 
 > [!NOTE]
->  Die Informationen in diesem Abschnitt gelten möglicherweise nur für Benutzer, die Microsoft-Produkte in den USA lizenziert haben. Wenn Sie dieses Produkt außerhalb der USA erworben haben, können Sie die im Softwarepaket enthaltene Informationskarte verwenden oder auf der [Microsoft-Website für Barrierefreiheit](http://go.microsoft.com/fwlink/?LinkID=75069) eine Liste mit Telefonnummern und Adressen des Microsoft-Produktsupports anzeigen. In Ihrer Niederlassung erhalten Sie Informationen darüber, welche der in diesem Abschnitt beschriebenen Produkte und Dienste in Ihrer Region verfügbar sind. Informationen über Barrierefreiheit sind auch in anderen Sprachen verfügbar, darunter Japanisch und Französisch.
+> Die Informationen in diesem Abschnitt gelten möglicherweise nur für Benutzer, die Microsoft-Produkte in den USA lizenziert haben. Wenn Sie dieses Produkt außerhalb der USA erworben haben, können Sie die im Softwarepaket enthaltene Informationskarte verwenden oder auf der [Microsoft-Website für Barrierefreiheit](http://go.microsoft.com/fwlink/?LinkID=75069) eine Liste mit Telefonnummern und Adressen des Microsoft-Produktsupports anzeigen. In Ihrer Niederlassung erhalten Sie Informationen darüber, welche der in diesem Abschnitt beschriebenen Produkte und Dienste in Ihrer Region verfügbar sind. Informationen über Barrierefreiheit sind auch in anderen Sprachen verfügbar, darunter Japanisch und Französisch.
 
 ## <a name="accessibility-features-of-windows"></a>Barrierefreiheitfunktionen in Windows
  Das Windows-Betriebssystem verfügt über zahlreiche integrierte Barrierefreiheitsfunktionen für Benutzer, die Schwierigkeiten mit der Tastatureingabe oder der Bedienung der Maus haben oder sehbehindert oder blind bzw. taub oder hörgeschädigt sind. Die Barrierefreiheitfunktionen können während der Ausführung des Setupprogramms installiert werden. Weitere Informationen zu diesen Features finden Sie in der Windows-Hilfe und auf der [Microsoft-Website für Barrierefreiheit](http://go.microsoft.com/fwlink/?LinkID=75069).

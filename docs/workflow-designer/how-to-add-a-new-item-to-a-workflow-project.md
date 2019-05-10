@@ -2,19 +2,18 @@
 title: 'Workflow-Designer – Vorgehensweise: Hinzufügen eines neuen Elements zu einem Workflowprojekt'
 ms.date: 06/25/2018
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
 ms.assetid: 5c6180ca-af10-4513-b0cb-7d478fd84eab
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65a3e9f9bcfbc1200321d2399afbba1585e5c8d3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6f0fb6c013e3df041e750344c09fb19f8c43b254
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62536975"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Vorgehensweise: Hinzufügen eines neuen Elements zu einem Workflowprojekt
 
@@ -22,8 +21,7 @@ Nachdem Sie ein Workflowprojekt erstellt haben, können Sie die Workflowaktivit�
 
 Die folgende Tabelle enthält die Windows Workflow Foundation (WF)-Elemente, die Sie zu einem Workflowprojekt hinzufügen können:
 
-
-| name | Beschreibung |
+| Name | Beschreibung |
 |-| - |
 | Aktivität | Eine Aktivität, die aus anderen Aktivitäten besteht. Durch die Auswahl dieses Elements die gleiche XAML-Datei dem Projekt hinzugefügt, die Sie erhalten würden, bei der Auswahl der **Aktivitätsbibliothek** Vorlage für ein neues Projekt. Weitere Informationen zu dieser Vorgehensweise finden Sie unter [erstellen ein Workflowprojekts](creating-a-workflow-project.md). |
 | Aktivitätsdesigner | Ein Designer, mit dem die Behandlung einer Aktivität zur Entwurfszeit angepasst wird. Durch die Auswahl dieses Elements die gleichen Dateien dem Projekt hinzugefügt, die Sie erhalten würden, bei der Auswahl der **Aktivitäts-Designerbibliothek** Vorlage für ein neues Projekt. |
@@ -39,7 +37,7 @@ Die folgende Tabelle enthält die Windows Workflow Foundation (WF)-Elemente, die
 1. Wählen Sie im linken Bereich die **Workflow** Kategorie, und wählen Sie dann eine Elementvorlage für den Workflow.
 
    > [!NOTE]
-   > Wenn Sie nicht sehen die **Workflow** Kategorie, der ersten Installation der **Windows Workflow Foundation** Komponente von Visual Studio 2017. Ausführliche Anweisungen finden Sie unter [Installieren von Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
+   > Wenn Sie nicht sehen die **Workflow** Kategorie, der ersten Installation der **Windows Workflow Foundation** Komponente von Visual Studio. Ausführliche Anweisungen finden Sie unter [Installieren von Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
 1. Geben Sie einen Namen für das Element in der **Namen** Feld am unteren Rand des Dialogfelds.
 

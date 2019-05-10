@@ -1,7 +1,6 @@
 ---
-title: 'CA2208: Argumentausnahmen korrekt instanziieren'
+title: 'CA2208: Argumentausnahmen korrekt instanziieren.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2208
@@ -12,21 +11,21 @@ helpviewer_keywords:
 ms.assetid: e2a48939-d9fa-478c-b2f9-3bdbce07dff7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 64b44ea52c446b4264bfaf8f63f4099e4e6025b6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d82b1884336b314e8fcede3c6041030a878b999c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806763"
 ---
-# <a name="ca2208-instantiate-argument-exceptions-correctly"></a>CA2208: Argumentausnahmen korrekt instanziieren
+# <a name="ca2208-instantiate-argument-exceptions-correctly"></a>CA2208: Argumentausnahmen korrekt instanziieren.
 
 |||
 |-|-|

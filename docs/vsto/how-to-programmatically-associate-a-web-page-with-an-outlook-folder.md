@@ -11,25 +11,25 @@ helpviewer_keywords:
 - Web pages [Office development in Visual Studio], Outlook folders
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b6dc6bec7ecbf872d10045cb24e007edec893585
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: e83f8b7f6bcdb790b5e545aa76426bc05f0735f5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54089634"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817308"
 ---
 # <a name="how-to-programmatically-associate-a-web-page-with-an-outlook-folder"></a>Vorgehensweise: Programmgesteuertes Zuordnen einer Webseite zu einem Outlook-Ordner
-  In diesem Beispiel wird überprüft, für einen Ordner mit dem Namen `HtmlView` in Microsoft Office Outlook. Wenn der Ordner nicht vorhanden ist, wird der Code erstellt den Ordner, und weist sie eine Webseite. Wenn der Ordner vorhanden ist, zeigt den Code der Inhalt des Ordners an.  
-  
- [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
-  
-## <a name="example"></a>Beispiel  
- [!code-csharp[Trin_OL_HTMLFolder#1](../vsto/codesnippet/CSharp/Trin_OL_HTMLFolder/thisaddin.cs#1)]  
-  
-## <a name="see-also"></a>Siehe auch  
- [Arbeiten mit Ordnern](../vsto/working-with-folders.md)   
- [Vorgehensweise: Programmgesteuertes Abrufen eines Ordners anhand des Namens](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
- [Vorgehensweise: Programmgesteuertes Erstellen von benutzerdefinierten Ordnerelementen](../vsto/how-to-programmatically-create-custom-folder-items.md)  
+  In diesem Beispiel wird überprüft, für einen Ordner mit dem Namen `HtmlView` in Microsoft Office Outlook. Wenn der Ordner nicht vorhanden ist, wird der Code erstellt den Ordner, und weist sie eine Webseite. Wenn der Ordner vorhanden ist, zeigt den Code der Inhalt des Ordners an.
+
+ [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
+
+## <a name="example"></a>Beispiel
+ [!code-csharp[Trin_OL_HTMLFolder#1](../vsto/codesnippet/CSharp/Trin_OL_HTMLFolder/thisaddin.cs#1)]
+
+## <a name="see-also"></a>Siehe auch
+- [Arbeiten mit Ordnern](../vsto/working-with-folders.md)
+- [Vorgehensweise: Programmgesteuertes Abrufen eines Ordners anhand des Namens](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
+- [Vorgehensweise: Programmgesteuertes Erstellen von benutzerdefinierten Ordnerelementen](../vsto/how-to-programmatically-create-custom-folder-items.md)

@@ -1,23 +1,21 @@
 ---
 title: Sammeln von Daten zur .NET-Speicherbelegung und Lebensdauer | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - .NET memory profiling method
 - Profiling Tools,.NET memory method
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2484072a0f85b002ff2e59512f44ca0826540fd3
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: dbdc92ff0d8a4020c664de527b60e95ed6113329
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775205"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62535462"
 ---
 # <a name="collect-net-memory-allocation-and-lifetime-data"></a>Sammeln von Daten zur .NET-Speicherbelegung und -lebensdauer
 
@@ -47,7 +45,7 @@ Informationen zum Sammeln von .NET-Arbeitsspeicherdaten mit den Befehlszeilentoo
 
 1. Klicken Sie im **Leistungs-Explorer**mit der rechten Maustaste auf die Leistungssitzung, und klicken Sie dann auf **Eigenschaften**.
 
-2. Klicken Sie im Dialogfeld *Leistungssitzung***Eigenschaftenseiten** auf die Registerkarte **Allgemein**, und aktivieren Sie das Kontrollkästchen **.NET-Objektspeicherbelegungsinformationen auflisten**.
+2. Klicken Sie im Dialogfeld *Leistungssitzung* **Eigenschaftenseiten** auf die Registerkarte **Allgemein**, und aktivieren Sie das Kontrollkästchen **.NET-Objektspeicherbelegungsinformationen auflisten**.
 
 3. Aktivieren Sie das Kontrollkästchen **Lebensdauerinformationen für .NET-Objekt auflisten**, um Lebensdauerinformationen für .NET-Objekte zu sammeln.
 
@@ -75,12 +73,12 @@ Die Aufgaben in der folgenden Tabelle sind Optionen im Dialogfeld **Eigenschafte
 |Aufgabe|Verwandter Inhalt|
 |----------|---------------------|
 |Geben Sie auf der Seite **Binärdateien** einen Speicherort für die instrumentierten Kopien der Module an. Standardmäßig werden die ursprünglichen Binärdateien in einen Sicherungsordner verschoben.|- [Vorgehensweise: Verschieben instrumentierter Binärdateien](../profiling/how-to-relocate-instrumented-binaries.md)|
-|Schließen Sie auf der Seite **Instrumentation** kleine Funktionen von der Profilerstellung aus, um den Profilerstellungsaufwand zu reduzieren, erstellen Sie für JavaScript-Code in ASP.NET-Webseiten ein Profil, und geben Sie Befehle an, die vor und nach der Instrumentation über eine Eingabeaufforderung ausgeführt werden sollen.|- [Vorgehensweise: Ausschließen oder Einschließen kurzer Funktionen in die Instrumentation](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)<br />- [How to: Profile JavaScript Code in Web Pages (Vorgehensweise: Profilerstellung für JavaScript-Code in Webseiten)](../profiling/how-to-profile-javascript-code-in-web-pages.md)<br />- [Vorgehensweise: Festlegen von Präinstrumentations- und Postinstrumentationsbefehlen](../profiling/how-to-specify-pre-and-post-instrument-commands.md)|
-|Geben Sie auf der Seite **CPU-Indikatoren** einen oder mehrere Prozessorleistungsindikatoren an, die den Profilerstellungsdaten hinzugefügt werden sollen.|- [Vorgehensweise: Sammeln von CPU-Indikatordaten mit der Instrumentationsmethode](../profiling/how-to-collect-cpu-counter-data.md)|
-|Geben Sie auf der Seite **Erweitert** zusätzliche gewünschte VSInstr.exe-Optionen an, z.B. Optionen zum Ein- oder Ausschließen bestimmter Funktionen. Weitere Informationen zu diesen VSInstr-Optionen finden Sie unter [VSInstr](../profiling/vsinstr.md).|- [Vorgehensweise: Angeben zusätzlicher Instrumentationsoptionen](../profiling/how-to-specify-additional-instrumentation-options.md)<br />- [Vorgehensweise: Einschränken der Instrumentierung auf bestimmte Funktionen](../profiling/how-to-limit-instrumentation-to-specific-functions.md)|
+|Schließen Sie auf der Seite **Instrumentation** kleine Funktionen von der Profilerstellung aus, um den Profilerstellungsaufwand zu reduzieren, erstellen Sie für JavaScript-Code in ASP.NET-Webseiten ein Profil, und geben Sie Befehle an, die vor und nach der Instrumentation über eine Eingabeaufforderung ausgeführt werden sollen.|- [Vorgehensweise: Ausschließen oder Einschließen kurzer Funktionen in die Instrumentation](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)<br />- [Vorgehensweise: Profilerstellung für JavaScript-Code in Webseiten](../profiling/how-to-profile-javascript-code-in-web-pages.md)<br />- [Vorgehensweise: Festlegen von Präinstrumentations- und Postinstrumentationsbefehlen](../profiling/how-to-specify-pre-and-post-instrument-commands.md)|
+|Geben Sie auf der Seite **CPU-Indikatoren** einen oder mehrere Prozessorleistungsindikatoren an, die den Profilerstellungsdaten hinzugefügt werden sollen.|- [Vorgehensweise: Sammeln von CPU-Indikatordaten](../profiling/how-to-collect-cpu-counter-data.md)|
+|Geben Sie auf der Seite **Erweitert** zusätzliche gewünschte VSInstr.exe-Optionen an, z.B. Optionen zum Ein- oder Ausschließen bestimmter Funktionen. Weitere Informationen zu diesen VSInstr-Optionen finden Sie unter [VSInstr](../profiling/vsinstr.md).|- [Vorgehensweise: Angeben zusätzlicher Instrumentierungsoptionen](../profiling/how-to-specify-additional-instrumentation-options.md)<br />- [Vorgehensweise: Einschränken der Instrumentierung auf bestimmte Funktionen](../profiling/how-to-limit-instrumentation-to-specific-functions.md)|
 
 ## <a name="see-also"></a>Siehe auch
 
-[Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)  
-[Vorgehensweise: Auswählen von Sammlungsmethoden](../profiling/how-to-choose-collection-methods.md)  
+[Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)
+[Vorgehensweise: Auswählen von Sammlungsmethoden](../profiling/how-to-choose-collection-methods.md)
 [Eigenschaften von Leistungssitzungen](../profiling/performance-session-properties.md)

@@ -1,14 +1,9 @@
 ---
 title: Devenv-Befehlszeilenschalter | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - switches, Devenv
 - builds [Team System], command-line
@@ -25,25 +20,24 @@ ms.assetid: e12bc6ed-74fd-4bea-8d7c-89b99c20bad8
 caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7ee1596cf59fb4ba9b21772cdabc0c875ef8779a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0cb2d42db65c5eb77aae324d2c10c25010eb8b8f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215033"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444740"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv-Befehlszeilenschalter
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Mit Devenv können Sie von der Befehlszeile aus verschiedene Optionen für die integrierte Entwicklungsumgebung (IDE) festlegen sowie Projekte erstellen, debuggen und bereitstellen. Verwenden Sie diese Schalter, um die IDE von einem Skript oder einer BAT-Datei aus auszuführen, z. B. einem über Nacht ausgeführten Buildskript, oder um die IDE in einer bestimmten Konfiguration zu starten.  
   
 > [!NOTE]
->  Für buildbezogene Aufgaben wird jetzt empfohlen, dass Sie MSBuild anstelle von Devenv verwenden. Weitere Informationen finden Sie unter [Befehlszeilenreferenz](../../msbuild/msbuild-command-line-reference.md).  
+> Für buildbezogene Aufgaben wird jetzt empfohlen, dass Sie MSBuild anstelle von Devenv verwenden. Weitere Informationen finden Sie unter [Befehlszeilenreferenz](../../msbuild/msbuild-command-line-reference.md).  
   
 > [!NOTE]
->  Sie müssen „devenv“ als Administrator ausführen, um die Schalter [/Setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) und [/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md) verwenden zu können.  
+> Sie müssen „devenv“ als Administrator ausführen, um die Schalter [/Setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) und [/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md) verwenden zu können.  
   
 ## <a name="devenv-switch-syntax"></a>Syntax des Devenv-Schalters  
  Devenv-Befehle übergeben Schalter standardmäßig an das Hilfsprogramm devenv.com.  
@@ -52,24 +46,24 @@ Mit Devenv können Sie von der Befehlszeile aus verschiedene Optionen für die i
   
  Die Syntaxregeln für `devenv`-Schalter ähneln jenen für andere DOS-Befehlszeilenhilfsprogramme. Die folgenden Syntaxregeln gelten für alle `devenv`-Schalter und ihre Argumente:  
   
--   Befehle beginnen mit `devenv`.  
+- Befehle beginnen mit `devenv`.  
   
--   Bei Schaltern wird nicht zwischen Groß–/Kleinschreibung unterschieden.  
+- Bei Schaltern wird nicht zwischen Groß–/Kleinschreibung unterschieden.  
   
--   Bei Angabe einer Projektmappe oder eines Projekts ist das erste Argument der Name der Projektmappendatei oder der Projektdatei, einschließlich Dateipfad.  
+- Bei Angabe einer Projektmappe oder eines Projekts ist das erste Argument der Name der Projektmappendatei oder der Projektdatei, einschließlich Dateipfad.  
   
--   Wenn das erste Argument eine Datei ist, die keine Projektmappe bzw. kein Projekt ist, wird die Datei im entsprechenden Editor in einer neuen Instanz der IDE geöffnet.  
+- Wenn das erste Argument eine Datei ist, die keine Projektmappe bzw. kein Projekt ist, wird die Datei im entsprechenden Editor in einer neuen Instanz der IDE geöffnet.  
   
--   Wenn Sie anstelle des Namens einer Projektmappendatei den einer Projektdatei angeben, wird der übergeordnete Ordner der Projektdatei von einem `devenv`-Befehl nach einer Projektmappendatei mit demselben Namen durchsucht. Beispielsweise durchsucht der Befehl `devenv /build myproject1.vbproj` den übergeordneten Ordner nach einer Projektmappendatei mit dem Namen "myproject1.sln".  
+- Wenn Sie anstelle des Namens einer Projektmappendatei den einer Projektdatei angeben, wird der übergeordnete Ordner der Projektdatei von einem `devenv`-Befehl nach einer Projektmappendatei mit demselben Namen durchsucht. Beispielsweise durchsucht der Befehl `devenv /build myproject1.vbproj` den übergeordneten Ordner nach einer Projektmappendatei mit dem Namen "myproject1.sln".  
   
     > [!NOTE]
-    >  In diesem übergeordneten Ordner darf genau eine Projektmappendatei enthalten sein, die auf dieses Projekt verweist. Wenn der übergeordnete Ordner keine oder zwei bzw. mehr Projektmappendateien enthält, die auf das Projekt verweisen, wird in diesem Ordner eine temporäre Projektmappendatei erstellt, die entsprechend dem Projekt benannt wird und darauf verweist.  
+    > In diesem übergeordneten Ordner darf genau eine Projektmappendatei enthalten sein, die auf dieses Projekt verweist. Wenn der übergeordnete Ordner keine oder zwei bzw. mehr Projektmappendateien enthält, die auf das Projekt verweisen, wird in diesem Ordner eine temporäre Projektmappendatei erstellt, die entsprechend dem Projekt benannt wird und darauf verweist.  
   
--   Dateipfade und Dateinamen, die Leerzeichen enthalten, müssen in doppelte Anführungszeichen ("") eingeschlossen werden. Zum Beispiel: „c:\Projekt A\\“.  
+- Dateipfade und Dateinamen, die Leerzeichen enthalten, müssen in doppelte Anführungszeichen ("") eingeschlossen werden. Zum Beispiel: „c:\Projekt A\\“.  
   
--   Fügen Sie zwischen Schaltern und Argumenten auf der gleichen Zeile ein Leerzeichen ein. Der Befehl **devenv /log output.txt** öffnet z.B. die IDE und gibt alle Protokollinformationen für diese Sitzung in „output.txt“ aus.  
+- Fügen Sie zwischen Schaltern und Argumenten auf der gleichen Zeile ein Leerzeichen ein. Der Befehl **devenv /log output.txt** öffnet z.B. die IDE und gibt alle Protokollinformationen für diese Sitzung in „output.txt“ aus.  
   
--   In `devenv`-Befehlen kann keine Syntax zum Mustervergleich verwendet werden.  
+- In `devenv`-Befehlen kann keine Syntax zum Mustervergleich verwendet werden.  
   
 ## <a name="devenv-switches"></a>Devenv-Schalter  
  Verwenden Sie die folgenden Befehlszeilenschalter, um die IDE anzuzeigen und die beschriebene Aufgabe auszuführen.  
@@ -109,6 +103,3 @@ Mit Devenv können Sie von der Befehlszeile aus verschiedene Optionen für die i
   
 ## <a name="see-also"></a>Siehe auch  
  [Allgemein, Umgebung, Optionen (Dialogfeld)](../../ide/reference/general-environment-options-dialog-box.md)
-
-
-

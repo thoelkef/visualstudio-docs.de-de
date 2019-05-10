@@ -1,7 +1,6 @@
 ---
-title: 'CA1304: CultureInfo angeben'
+title: 'CA1304: CultureInfo angeben.'
 ms.date: 06/30/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - SpecifyCultureInfo
@@ -12,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: b912d76a-54fd-4c93-b25d-16491e0ae319
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 564180330380a7076b091e0b2f793ea575606d53
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f1fe4ebce3a49c4aa626515e22eacd1c8e263847
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968484"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797500"
 ---
-# <a name="ca1304-specify-cultureinfo"></a>CA1304: CultureInfo angeben
+# <a name="ca1304-specify-cultureinfo"></a>CA1304: CultureInfo angeben.
 
 |||
 |-|-|
@@ -87,4 +86,4 @@ Dieses Beispiel erzeugt die folgende Ausgabe:
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Verwenden der CultureInfo-Klasse](/dotnet/standard/globalization-localization/globalization#Cultures)
+- [Verwenden der CultureInfo-Klasse](/dotnet/standard/globalization-localization/globalization#work-with-culture-specific-settings)

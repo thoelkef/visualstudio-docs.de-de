@@ -12,37 +12,35 @@ helpviewer_keywords:
 ms.assetid: 8823537c-82f0-41f7-bf30-705f0e5e59fd
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3330c86c84318be68619a8d031a034b33faa7fd1
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
-ms.translationtype: MTE95
+ms.openlocfilehash: ceaf74ad2673b0dae80c9529ad082c6ae3187352
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305662"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824850"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Binden von WPF-Steuerelementen an einen WCF-Datendienst
 
-In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die datengebundene Steuerelemente enthält. Die Steuerelemente sind an Kundendatensätze gebunden, die in einem  gekapselt sind. Sie fügen außerdem die Schaltflächen hinzu, mit denen Kunden Datensätze anzeigen und ändern können.
+In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die datengebundene Steuerelemente enthält. Die Steuerelemente sind an Kundendatensätze gebunden, die in einem WCF-Datendienst gekapselt sind. Sie fügen außerdem die Schaltflächen hinzu, mit denen Kunden Datensätze anzeigen und ändern können.
 
 In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:
 
 - Erstellen eines Entity Data Models, das aus Daten in der Beispieldatenbank AdventureWorksLT generiert wird.
 
-- Erstellen eines , der die Daten im Entity Data Model für eine WPF-Anwendung verfügbar macht.
+- Erstellen eines WCF Data Service, stellt die Daten im Entity Data Model zu einer WPF-Anwendung.
 
 - Erstellen eines Satzes datengebundener Steuerelemente durch Ziehen von Elementen aus dem Fenster **Datenquellen** zum WPF-Designer.
 
 - Erstellen von Schaltflächen, mit denen die Navigation vorwärts und rückwärts durch die Kundendatensätze möglich ist.
 
-- Erstellen einer Schaltfläche, die Änderungen an den Daten in den Steuerelementen des  und der darunterliegenden Datenquelle speichert.
+- Erstellen eine Schaltfläche, die für das Speichern von Änderungen an Daten in die Steuerelemente, um den WCF Data Service und der zugrunde liegenden Datenquelle.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Vorraussetzungen
 
 Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
 
@@ -52,7 +50,7 @@ Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgend
 
 Vorkenntnisse der folgenden Konzepte sind ebenfalls hilfreich, wenn auch für die Durchführung der exemplarischen Vorgehensweise nicht erforderlich:
 
-- WCF Data Services. Weitere Informationen finden Sie unter [Übersicht über Tabellen](/dotnet/framework/data/wcf/wcf-data-services-overview).
+- [WCF Data Services](/dotnet/framework/data/wcf/wcf-data-services-overview).
 
 - Datenmodelle in [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)].
 
@@ -60,27 +58,15 @@ Vorkenntnisse der folgenden Konzepte sind ebenfalls hilfreich, wenn auch für di
 
 - WPF-Datenbindung. Weitere Informationen finden Sie unter [Übersicht über Datenbindung](/dotnet/framework/wpf/data/data-binding-overview).
 
-## <a name="create-the-service-project"></a>So erstellen Sie das Dienstprojekt
+## <a name="create-the-service-project"></a>Erstellen Sie das Dienstprojekt
 
-Beginnen Sie diese exemplarische Vorgehensweise, indem Sie ein Projekt für einen  erstellen.
+1. In dieser exemplarischen Vorgehensweise erstellen Sie zunächst eine C# oder Visual Basic **ASP.NET-Webanwendung** Projekt. Nennen Sie das Projekt **AdventureWorksService**.
 
-1. Starten Sie Visual Studio.
+2. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **Default.aspx**, und wählen Sie **Löschen** aus. Diese Datei ist nicht erforderlich, für die exemplarische Vorgehensweise.
 
-2. Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.
+## <a name="create-an-entity-data-model-for-the-service"></a>Erstellen eines Entity Data Model für den Dienst
 
-3. Erweitern Sie **Visual C#** oder**Visual Basic**, und wählen Sie dann **Web**.
-
-4. Wählen Sie die Projektvorlage **ASP.NET-Webanwendung** aus.
-
-5. Geben Sie im Feld **Name** den Namen **AdventureWorksService** ein, und klicken Sie auf **OK**.
-
-     Visual Studio erstellt das Projekt **AdventureWorksService**.
-
-6. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **Default.aspx**, und wählen Sie **Löschen** aus. Diese Datei wird für diese exemplarische Vorgehensweise benötigt.
-
-## <a name="create-an-entity-data-model-for-the-service"></a>Erstellen eines Entity Data Models für den Dienst
-
-Damit die Daten mithilfe eines  für eine Anwendung verfügbar gemacht werden, müssen Sie ein Datenmodell für den Dienst definieren. Entity Data Models und benutzerdefinierte Datenmodelle, die mithilfe von Common Language Runtime (CLR) Objekten definiert werden, die die <xref:System.Linq.IQueryable%601>-Schnittstelle implementieren. In dieser exemplarischen Vorgehensweise erstellen Sie ein Entity Data Model für das Datenmodell.
+Um Daten zu einer Anwendung, die mithilfe von WCF Data Services verfügbar machen, müssen Sie ein Datenmodell für den Dienst definieren. WCF Data Service unterstützt zwei Arten von Datenmodellen: Entity Data Models und benutzerdefinierte Datenmodelle, die definiert sind, mit der common Language Runtime (CLR)-Objekte, implementieren die <xref:System.Linq.IQueryable%601> Schnittstelle. In dieser exemplarischen Vorgehensweise erstellen Sie ein Entity Data Model für das Datenmodell.
 
 1. Klicken Sie im Menü **Projekt** auf **Neues Element hinzufügen**.
 
@@ -94,7 +80,7 @@ Damit die Daten mithilfe eines  für eine Anwendung verfügbar gemacht werden, m
 
 5. Wählen Sie auf der Seite **Wählen Sie Ihre Datenverbindung aus** eine der folgenden Optionen aus:
 
-    - Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „AdventureWorksLT“ verfügbar ist, wählen Sie diese aus.
+    - Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank "AdventureWorksLT" verfügbar ist, wählen Sie diese aus.
 
     - Klicken Sie **Neue Verbindung**, und erstellen Sie eine Verbindung zur Datenbank AdventureWorksLT.
 
@@ -106,13 +92,13 @@ Damit die Daten mithilfe eines  für eine Anwendung verfügbar gemacht werden, m
 
 ## <a name="create-the-service"></a>Erstellen Sie den Dienst.
 
-Erstellen Sie einen , der die Daten im Entity Data Model für eine WPF-Anwendung verfügbar macht.
+Erstellen Sie einen WCF-Datendienst, um die Daten im Entity Data Model zu einer WPF-Anwendung verfügbar zu machen:
 
 1. Wählen Sie im Menü **Projekt** die Option **Neues Element hinzufügen** aus.
 
 2. Klicken Sie in der Liste **Installierte Vorlagen** auf **Web**, und wählen Sie dann das Projektelement **WCF Data Service** aus.
 
-3. Geben Sie im Feld **Name** die Bezeichnung `AdventureWorksService.svc` ein, und klicken Sie auf **OK**.
+3. In der **Namen** geben `AdventureWorksService.svc`, und klicken Sie auf **hinzufügen**.
 
      Visual Studio fügt die `AdventureWorksService.svc` zum Projekt.
 
@@ -120,7 +106,7 @@ Erstellen Sie einen , der die Daten im Entity Data Model für eine WPF-Anwendung
 
 Damit der Dienst mit dem von Ihnen erstellten Entity Data Model funktioniert, muss er konfiguriert werden.
 
-1. Ersetzen Sie in der Codedatei AdventureWorks.svc`AdventureWorks.svc`die Klassendeklaration ** durch folgenden Code.
+1. In der `AdventureWorks.svc` Codedatei, ersetzen Sie die **AdventureWorksService** Klassendeklaration durch den folgenden Code.
 
      [!code-csharp[Data_WPFWCF#1](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_1.cs)]
      [!code-vb[Data_WPFWCF#1](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_1.vb)]
@@ -129,9 +115,9 @@ Damit der Dienst mit dem von Ihnen erstellten Entity Data Model funktioniert, mu
 
 2. Erstellen Sie das Projekt und überprüfen Sie, ob es fehlerfrei erstellt wird.
 
-## <a name="create-the-wpf-client-application"></a>So erstellen Sie die WPF-Clientanwendung
+## <a name="create-the-wpf-client-application"></a>Erstellen der WPF-Clientanwendung
 
-Um Daten aus dem  anzuzeigen, erstellen Sie eine neue WPF-Anwendung mit einer Datenquelle, die auf dem Dienst basiert. Später in dieser exemplarischen Vorgehensweise werden Sie datengebundene Steuerelemente zur Anwendung hinzufügen.
+Um die Daten aus dem WCF Data Service anzuzeigen, erstellen Sie eine neue WPF-Anwendung mit einer Datenquelle, die für den Dienst basiert. Später in dieser exemplarischen Vorgehensweise werden Sie datengebundene Steuerelemente zur Anwendung hinzufügen.
 
 1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Lösungsknoten, dann auf **Hinzufügen**, und wählen Sie dann **Neues Projekt** aus.
 
@@ -155,7 +141,7 @@ Um Daten aus dem  anzuzeigen, erstellen Sie eine neue WPF-Anwendung mit einer Da
 
 8. Klicken Sie im Dialogfeld **Dienstverweis hinzufügen** auf **Ermitteln**.
 
-   Visual Studio durchsucht die aktuelle Lösung nach verfügbaren Diensten und fügt AdventureWorksService.svc`AdventureWorksService.svc` zur Liste verfügbarer Dienste im Feld Dienste** hinzu.
+   Visual Studio durchsucht die aktuelle Lösung nach verfügbaren Diensten und fügt `AdventureWorksService.svc` zur Liste der verfügbaren Dienste in der **Services** Feld.
 
 9. Geben Sie im Feld **Namespace** die Zeichenfolge **AdventureWorksService** ein.
 
@@ -167,7 +153,7 @@ Um Daten aus dem  anzuzeigen, erstellen Sie eine neue WPF-Anwendung mit einer Da
 
     Visual Studio fügt Knoten hinzu, der die vom Dienst zurückgegebenen Daten im Fenster **Datenquellen** anzeigt.
 
-## <a name="define-the-user-interface"></a>So definieren Sie die Benutzeroberfläche
+## <a name="define-the-user-interface"></a>Definieren der Benutzeroberfläche
 
 Fügen Sie dem Fenster eine Reihe von Schaltflächen hinzu, indem Sie XAML im WPF-Designer ändern. Später in dieser exemplarischen Vorgehensweise fügen Sie dann Code hinzu, mit dem Anwender die Verkaufsdatensätze mithilfe dieser Schaltflächen anzeigen und ändern können.
 
@@ -189,9 +175,9 @@ Fügen Sie dem Fenster eine Reihe von Schaltflächen hinzu, indem Sie XAML im WP
 
 3. Erstellen Sie das Projekt.
 
-## <a name="create-the-data-bound-controls"></a>So erstellen Sie ein datengebundene Steuerelemente
+## <a name="create-the-data-bound-controls"></a>Erstellen Sie die datengebundenen Steuerelemente
 
-Erstellen Sie Steuerelemente zum Anzeigen der Kundedatensätze, indem Sie den Knoten SalesOrderHeaders`SalesOrderHeaders` vom Datenquellenfenster** auf den Designer ziehen.
+Erstellen Sie Steuerelemente, die Kundendatensätze, indem Sie ziehen anzeigen die `SalesOrderHeaders` Knoten aus der **Datenquellen** in den Designer.
 
 1. Klicken Sie im Fenster **Datenquellen** das Dropdownmenü für den Knoten **SalesOrderHeaders**, und wählen Sie **Details**.
 
@@ -209,7 +195,7 @@ Erstellen Sie Steuerelemente zum Anzeigen der Kundedatensätze, indem Sie den Kn
 
     - **Rowguid**
 
-    Durch diese Aktion wird Visual Studio daran gehindert, im nächsten Schritt datengebundene Steuerelemente für diese Knoten zu erstellen. Bei dieser exemplarischen Vorgehensweise wird davon ausgegangen, dass der Endbenutzer diese Daten nicht sehen muss.
+    Durch diese Aktion wird Visual Studio daran gehindert, im nächsten Schritt datengebundene Steuerelemente für diese Knoten zu erstellen. In dieser exemplarischen Vorgehensweise wird davon ausgegangen Sie, dass der Endbenutzer nicht, diese Daten anzuzeigen.
 
 4. Ziehen Sie aus dem Fenster **Datenquellen** den Knoten **SalesOrderHeaders** auf das Raster unter der Zeile, in der die Schaltflächen sind.
 
@@ -231,7 +217,7 @@ Erstellen Sie Steuerelemente zum Anzeigen der Kundedatensätze, indem Sie den Kn
 
 Verwenden Sie den Webdienstproxy-Objekts, um die Umsatzdaten aus dem Dienst zu laden. Klicken Sie dann die Datenquelle für die zurückgegebenen Daten weisen die <xref:System.Windows.Data.CollectionViewSource> im WPF-Fenster.
 
-1. Im Designer zum Erstellen der `Window_Loaded` Ereignishandler, doppelklicken Sie auf den Text, der gelesen: **MainWindow**.
+1. Im Designer zum Erstellen der `Window_Loaded` Ereignishandler, doppelklicken Sie auf den Text, der liest: **MainWindow**.
 
 2. Ersetzen Sie den Ereignishandler durch den folgenden Code. Achten Sie darauf, dass Sie die Adresse *localhost* in diesem Code durch die lokale Hostadresse Ihres Entwicklungscomputers ersetzen.
 
@@ -260,7 +246,7 @@ Fügen Sie Code hinzu, mit dessen Hilfe Benutzer durch die Salesdatensätze scro
      [!code-csharp[Data_WPFWCF#4](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_4.cs)]
      [!code-vb[Data_WPFWCF#4](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_4.vb)]
 
-## <a name="save-changes-to-sales-records"></a>Änderungen an Sales Records speichern
+## <a name="save-changes-to-sales-records"></a>Änderungen an sales Records speichern
 
 Fügen Sie Code hinzu, mit dem Benutzer Änderungen an Sales Records sowohl anzeigen als auch mithilfe der Schaltfläche **Änderungen speichern** speichern können.
 
@@ -277,7 +263,7 @@ Fügen Sie Code hinzu, mit dem Benutzer Änderungen an Sales Records sowohl anze
 
 Erstellen Sie die Anwendung und führen Sie sie aus; prüfen Sie, ob Sie Kundendatensätze anzeigen und ändern können:
 
-1. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**. Überprüfen Sie, ob die Lösung ohne Fehler erstellt wurde.
+1. Auf **erstellen** Menü klicken Sie auf **Projektmappe**. Überprüfen Sie, ob die Lösung ohne Fehler erstellt wurde.
 
 2. Drücken Sie **STRG**+**F5**.
 
@@ -285,7 +271,7 @@ Erstellen Sie die Anwendung und führen Sie sie aus; prüfen Sie, ob Sie Kundend
 
 3. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt **AdventureWorksSalesEditor**.
 
-4. Klicken Sie im Kontextmenü unter **Debug** auf **Neue Instanz starten**.
+4. Klicken Sie im Kontextmenü (Kontextmenü) klicken Sie unter **Debuggen**, klicken Sie auf **neue Instanz starten**.
 
      Die Anwendung wird ausführt. Überprüfen Sie Folgendes:
 
@@ -307,7 +293,7 @@ Nach Abschluss dieser exemplarischen Vorgehensweise können Sie folgende Aufgabe
 
 - Erfahren Sie, wie Sie das **Datenquellenfenster** in Visual Studio für die Bindung von WPF-Steuerelementen an andere Typen von Datenquellen verwenden. Weitere Informationen finden Sie unter [Binden von WPF-Steuerelemente zu einem Dataset](../data-tools/bind-wpf-controls-to-a-dataset.md).
 
-- Erfahren Sie, wie Sie das **Datenquellenfenster** in Visual Studio für die Anzeige zugehöriger Daten (das heißt, Daten in einer Beziehung zwischen übergeordneten und untergeordneten Daten) in WPF-Steuerelementen verwenden. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Anzeigen verknüpfter Daten in einer WPF-Anwendung](../data-tools/display-related-data-in-wpf-applications.md).
+- Erfahren Sie, wie Sie das **Datenquellenfenster** in Visual Studio für die Anzeige zugehöriger Daten (das heißt, Daten in einer Beziehung zwischen übergeordneten und untergeordneten Daten) in WPF-Steuerelementen verwenden. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Anzeigen zugehöriger Daten in WPF-Anwendungen](../data-tools/display-related-data-in-wpf-applications.md).
 
 ## <a name="see-also"></a>Siehe auch
 

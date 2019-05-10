@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Auswählen von Dateien für den Buildvorgang | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, wildcards
 - MSBuild, including files
@@ -17,18 +12,17 @@ ms.assetid: f5ff182f-7b3a-46fb-9335-37df54cfb8eb
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7b8eeb62b8a5091743345c1a5c136bc2fa87269c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0968dd8914b99e8d47ef1364231059175aaf73fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223807"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437908"
 ---
-# <a name="how-to-select-the-files-to-build"></a>Gewusst wie: Auswählen von Dateien für den Buildvorgang
+# <a name="how-to-select-the-files-to-build"></a>Vorgehensweise: Auswählen von Dateien für den Buildvorgang
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Wenn Sie ein Projekt erstellen, das mehrere Dateien enthält, können Sie jede Datei einzeln in der Projektdatei auflisten. Alternativ können Sie Platzhalter nutzen, um alle Dateien in ein Verzeichnis oder in einen geschachtelten Satz von Verzeichnissen einzufügen.  
   
 ## <a name="specifying-inputs"></a>Angeben von Eingaben  
@@ -38,7 +32,7 @@ Wenn Sie ein Projekt erstellen, das mehrere Dateien enthält, können Sie jede D
   
 #### <a name="to-declare-items-individually"></a>So deklarieren Sie Elemente einzeln  
   
--   Verwenden Sie die `Include`-Attribute, ähnlich wie folgt:  
+- Verwenden Sie die `Include`-Attribute, ähnlich wie folgt:  
   
      `<CSFile Include="form1.cs"/>`  
   
@@ -47,11 +41,11 @@ Wenn Sie ein Projekt erstellen, das mehrere Dateien enthält, können Sie jede D
      `<VBFile Include="form1.vb"/>`  
   
     > [!NOTE]
-    >  Wenn sich Elemente in einer Elementauflistung nicht im gleichen Verzeichnis wie die Projektdatei befinden, müssen Sie den vollständigen oder relativen Pfad des Elements angeben. Beispiel: `Include="..\..\form2.cs"`.  
+    > Wenn sich Elemente in einer Elementauflistung nicht im gleichen Verzeichnis wie die Projektdatei befinden, müssen Sie den vollständigen oder relativen Pfad des Elements angeben. Beispiel: `Include="..\..\form2.cs"`.  
   
 #### <a name="to-declare-multiple-items"></a>So deklarieren Sie mehrere Elemente  
   
--   Verwenden Sie die `Include`-Attribute, ähnlich wie folgt:  
+- Verwenden Sie die `Include`-Attribute, ähnlich wie folgt:  
   
      `<CSFile Include="form1.cs;form2.cs"/>`  
   
@@ -72,19 +66,19 @@ Wenn Sie ein Projekt erstellen, das mehrere Dateien enthält, können Sie jede D
   
 #### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>So schließen Sie alle JPG-Dateien im Verzeichnis „Images“ bzw. in Unterverzeichnissen ein  
   
--   Verwenden Sie das folgende `Include`-Attribut:  
+- Verwenden Sie das folgende `Include`-Attribut:  
   
      `Include="Images\**\*.jpg"`  
   
 #### <a name="to-include-all-jpg-files-starting-with-img"></a>So schließen Sie alle JPG-Dateien ein, die mit „img“ beginnen  
   
--   Verwenden Sie das folgende `Include`-Attribut:  
+- Verwenden Sie das folgende `Include`-Attribut:  
   
      `Include="Images\**\img*.jpg"`  
   
 #### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>So schließen Sie alle Dateien in Verzeichnissen ein, die mit „jpgs“ enden  
   
--   Ändern Sie eines der folgenden `Include`-Attribute:  
+- Ändern Sie eines der folgenden `Include`-Attribute:  
   
      `Include="Images\**\*jpgs\*.*"`  
   
@@ -97,7 +91,7 @@ Wenn Sie ein Projekt erstellen, das mehrere Dateien enthält, können Sie jede D
   
 #### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>So verwenden Sie alle Visual C#- oder Visual Basic-Dateien als Eingabe  
   
--   Verwenden Sie die `Include`-Attribute ähnlich wie folgt:  
+- Verwenden Sie die `Include`-Attribute ähnlich wie folgt:  
   
      `<CSC Sources="@(CSFile)">...</CSC>`  
   
@@ -106,9 +100,9 @@ Wenn Sie ein Projekt erstellen, das mehrere Dateien enthält, können Sie jede D
      `<VBC Sources="@(VBFile)">...</VBC>`  
   
 > [!NOTE]
->  Sie müssen Platzhalter mit Elementen verwenden, um die Eingaben für einen Build anzugeben. Sie können keine Eingaben mithilfe des `Sources`-Attributs in [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Aufgaben verwenden, wie z.B. [Ccs](../msbuild/csc-task.md) oder [Vbc](../msbuild/vbc-task.md). Das folgende Beispiel ist in einer Projektdatei nicht gültig:  
+> Sie müssen Platzhalter mit Elementen verwenden, um die Eingaben für einen Build anzugeben. Sie können keine Eingaben mithilfe des `Sources`-Attributs in [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Aufgaben verwenden, wie z.B. [Ccs](../msbuild/csc-task.md) oder [Vbc](../msbuild/vbc-task.md). Das folgende Beispiel ist in einer Projektdatei nicht gültig:  
 >   
->  `<CSC Sources="*.cs">...</CSC>`  
+> `<CSC Sources="*.cs">...</CSC>`  
   
 ## <a name="example"></a>Beispiel  
  Das folgende Codebeispiel zeigt ein Projekt, das alle Eingabedateien separat einschließt.  
@@ -179,8 +173,5 @@ Wenn Sie ein Projekt erstellen, das mehrere Dateien enthält, können Sie jede D
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [How to: Exclude Files from the Build (Vorgehensweise: Ausschließen von Dateien aus den Buildvorgang)](../msbuild/how-to-exclude-files-from-the-build.md)   
- [Items](../msbuild/msbuild-items.md) (MSBuild-Elemente)
-
-
-
+ [Vorgehensweise: Ausschließen von Dateien vom Buildvorgang](../msbuild/how-to-exclude-files-from-the-build.md)   
+ [Elemente](../msbuild/msbuild-items.md)

@@ -1,26 +1,21 @@
 ---
 title: Projektkonfiguration für die Ausgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project configurations, output
 ms.assetid: a4517f73-45af-4745-9d7f-9fddf887b636
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1c23f9210175b848bfdf3ddab56776092e39212c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d14435917e982328220aa6b778d081a8837f0396
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740886"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443883"
 ---
 # <a name="project-configuration-for-output"></a>Projektkonfiguration für die Ausgabe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Jeder Konfiguration kann es sich um einen Satz von Erstellungsvorgängen unterst
  Das Konstrukt entwickelt, durch die Implementierung `IVsOutputGroup` können Projekte auf Gruppe Ausgaben entsprechend der Verwendung. Beispielsweise kann eine DLL-Datei mit der Programmdatenbank (PDB) gruppiert werden.  
   
 > [!NOTE]
->  Eine PDB-Datei enthält Debuginformationen aus, und es erstellt, wenn die Option "Debuginfo generieren" angegeben wird, wenn Sie die .dll oder .exe erstellen. Die PDB-Datei wird in der Regel für Debug-Projektkonfiguration generiert.  
+> Eine PDB-Datei enthält Debuginformationen aus, und es erstellt, wenn die Option "Debuginfo generieren" angegeben wird, wenn Sie die .dll oder .exe erstellen. Die PDB-Datei wird in der Regel für Debug-Projektkonfiguration generiert.  
   
  Das Projekt muss die gleiche Anzahl von Gruppen für jede Konfiguration, die dies unterstützen, zurückgeben, auch wenn die Anzahl von Ausgaben in einer Gruppe enthaltene Konfiguration auf Konfiguration variieren. Z. B. des Projekts Matt DLL möglicherweise mattd.dll und mattd.pdb in Debug-Konfiguration enthalten, jedoch nur matt.dll in Retail-Konfiguration.  
   
@@ -56,4 +51,3 @@ Ausgabegruppen
  [Konfiguration für die Erstellung des Projekts](../../extensibility/internals/project-configuration-for-building.md)   
  [Projektkonfigurationsobjekt](../../extensibility/internals/project-configuration-object.md)   
  [Projektmappenkonfiguration](../../extensibility/internals/solution-configuration.md)
-

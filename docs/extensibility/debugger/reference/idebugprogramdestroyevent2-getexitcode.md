@@ -1,30 +1,32 @@
 ---
 title: IDebugProgramDestroyEvent2::GetExitCode | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProgramDestroyEvent2::GetExitCode
 helpviewer_keywords:
 - IDebugProgramDestroyEvent2::GetExitCode
 ms.assetid: 7f540cf6-e2d1-42b0-913e-a26d654b7659
-author: gregvanl
+caps.latest.revision: 11
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 3c611f092a0cf9d405443656ed9a632b7f51135b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d52a45d2d192a7ee9b3918a21a03250c5b0f0d0e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62917018"
 ---
 # <a name="idebugprogramdestroyevent2getexitcode"></a>IDebugProgramDestroyEvent2::GetExitCode
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Ruft Exitcode des Programms ab.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT GetExitCode(   
    DWORD* pdwExit  
 );  

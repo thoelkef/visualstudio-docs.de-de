@@ -1,14 +1,9 @@
 ---
-title: 'CA1002: Machen Sie generische Listen nicht | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'CA1002: Generische Listen nicht verfügbar machen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - DoNotExposeGenericLists
 - CA1002
@@ -20,14 +15,14 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ea5f41484873317a7d7059fa0b67547eb24754af
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 77b50f5511f76cceda1827d2a36db7514daa6bea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811336"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076015"
 ---
-# <a name="ca1002-do-not-expose-generic-lists"></a>CA1002: Generische Listen nicht verfügbar machen
+# <a name="ca1002-do-not-expose-generic-lists"></a>CA1002: Generische Listen nicht verfügbar machen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -43,11 +38,11 @@ ms.locfileid: "49811336"
 ## <a name="rule-description"></a>Regelbeschreibung
  <xref:System.Collections.Generic.List%601?displayProperty=fullName> ist eine generische Auflistung, die für die Leistung und nicht Vererbung entwickelt wurde. <xref:System.Collections.Generic.List%601?displayProperty=fullName> enthält keine virtuellen Member, die sie zum Ändern des Verhaltens von einer geerbten Klasse leichter machen. Die folgenden generischen Auflistungen dienen der Vererbung und verfügbar gemacht werden soll, anstelle von <xref:System.Collections.Generic.List%601?displayProperty=fullName>.
 
--   <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>
+- <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>
 
--   <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>
+- <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>
 
--   <xref:System.Collections.ObjectModel.KeyedCollection%602?displayProperty=fullName>
+- <xref:System.Collections.ObjectModel.KeyedCollection%602?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, Ändern der <xref:System.Collections.Generic.List%601?displayProperty=fullName> Typ in eine der generischen Auflistungen, die für die Vererbung entwickelt wurde.
@@ -60,18 +55,15 @@ ms.locfileid: "49811336"
 
  [CA1010: Auflistungen müssen eine generische Schnittstelle implementieren](../code-quality/ca1010-collections-should-implement-generic-interface.md)
 
- [CA1000: Statische Member nicht in generischen Typen deklarieren](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
+ [CA1000: Statische Member in generischen Typen nicht deklarieren](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
 
  [CA1006: Generische Typen in Membersignaturen nicht schachteln](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
 
- [CA1004: Generische Methoden müssen den Typparameter angeben](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
+ [CA1004: Generische Methoden müssen den Typparameter angeben.](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
 
  [CA1003: Generische Ereignishandlerinstanzen verwenden](../code-quality/ca1003-use-generic-event-handler-instances.md)
 
- [CA1007: Nach Möglichkeit Generika verwenden](../code-quality/ca1007-use-generics-where-appropriate.md)
+ [CA1007: Verwenden Sie Generika](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>Siehe auch
  [Generika](http://msdn.microsoft.com/library/75ea8509-a4ea-4e7a-a2b3-cf72482e9282)
-
-
-

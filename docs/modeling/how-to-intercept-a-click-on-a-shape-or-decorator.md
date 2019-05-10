@@ -6,16 +6,15 @@ helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: d71cb172929fd9d213c0f09be21c1a844acf4462
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: 2b4677413fd06176136935e583073f611d1a127a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892742"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445188"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Vorgehensweise: Abfangen eines Klicks auf eine Form oder einen Decorator
 Die folgenden Prozeduren veranschaulichen Gewusst wie: Abfangen ein Klicks auf eine Form oder ein Symbol für Decorator-Element. Sie können abfangen, Klicks, Doppelklicks, zieht, und andere anwendungsstiftbewegungen, und stellen Sie das Element reagieren.
@@ -35,7 +34,7 @@ public partial class MyShape // change
 ```
 
 > [!NOTE]
->  Legen Sie `e.Handled` zu `true`, es sei denn, der das Ereignis, die dem Shape / Diagramm übergeben werden soll.
+> Legen Sie `e.Handled` zu `true`, es sei denn, der das Ereignis, die dem Shape / Diagramm übergeben werden soll.
 
 ## <a name="to-intercept-clicks-on-decorators"></a>Abfangen von Klicks auf Decorator-Elemente
  Image-Decorator-Elemente werden auf einer Instanz von ImageField-Klasse, übertragen die eine OnDoubleClick-Methode verfügt. Sie können die Klicks abfangen, wenn Sie eine Unterklasse ImageField schreiben. Die Felder werden in der Methode InitializeShapeFields eingerichtet. Aus diesem Grund müssen Sie diese Methode zum Instanziieren Ihrer Unterklasse anstelle der regulären ImageField ändern. Die InitializeShapeFields-Methode wird in den generierten Code der Shape-Klasse. Sie können die Shape-Klasse überschreiben, wenn Sie festlegen, die `Generates Double Derived` Eigenschaft wie im folgenden Verfahren beschrieben.
@@ -44,11 +43,11 @@ public partial class MyShape // change
 
 #### <a name="to-intercept-a-click-on-an-icon-decorator"></a>Zum Abfangen eines Klicks auf ein Symbol für Decorator-Element
 
-1.  Öffnen Sie oder erstellen Sie eine DSL-Projektmappe.
+1. Öffnen Sie oder erstellen Sie eine DSL-Projektmappe.
 
-2.  Wählen Sie oder erstellen Sie eine Form, die über ein Symbol für Decorator-Element verfügt, und ordnen sie Sie einer Domänenklasse.
+2. Wählen Sie oder erstellen Sie eine Form, die über ein Symbol für Decorator-Element verfügt, und ordnen sie Sie einer Domänenklasse.
 
-3.  In einer Codedatei, die aus den Dateien auf getrennt ist die `GeneratedCode` Ordner, die neue Unterklasse von ImageField erstellen:
+3. In einer Codedatei, die aus den Dateien auf getrennt ist die `GeneratedCode` Ordner, die neue Unterklasse von ImageField erstellen:
 
     ```csharp
     using Microsoft.VisualStudio.Modeling;
@@ -86,7 +85,7 @@ public partial class MyShape // change
 
      Sie sollten festlegen, behandelt, die auf "true", wenn Sie nicht möchten, dass das Ereignis Containerform übergeben werden soll.
 
-4.  Überschreiben Sie die InitializeShapeFields-Methode in Ihrer Form Classs, indem Sie die folgende Definition der partiellen Klasse hinzufügen.
+4. Überschreiben Sie die InitializeShapeFields-Methode in Ihrer Form Classs, indem Sie die folgende Definition der partiellen Klasse hinzufügen.
 
     ```csharp
     public partial class MyShape // change
@@ -113,9 +112,9 @@ public partial class MyShape // change
     }
     ```
 
-1.  Erstellen Sie die Projektmappe, und führen Sie sie aus.
+1. Erstellen Sie die Projektmappe, und führen Sie sie aus.
 
-2.  Doppelklicken Sie auf das Symbol auf einer Instanz von der Form. Testnachricht sollte angezeigt werden.
+2. Doppelklicken Sie auf das Symbol auf einer Instanz von der Form. Testnachricht sollte angezeigt werden.
 
 ## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>Abfangen von klickt und zieht in CompartmentShape-Listen
  Im folgende Beispiel kann Benutzer Elemente in einem Depot-Form neu anordnen, indem Sie sie ziehen. So führen Sie diesen Code aus:
@@ -132,19 +131,19 @@ public partial class MyShape // change
 
    Zusammenfassend lässt sich sagen funktioniert wie folgt der Code auf. In diesem Beispiel `ClassShape` ist der Name des der Depot-Form.
 
--   Eine Reihe von Mausereignishandler wird an jede Compartment-Instanz angefügt werden, bei der Erstellung.
+- Eine Reihe von Mausereignishandler wird an jede Compartment-Instanz angefügt werden, bei der Erstellung.
 
--   Die `ClassShape.MouseDown` Ereignis speichert das aktuelle Element.
+- Die `ClassShape.MouseDown` Ereignis speichert das aktuelle Element.
 
--   Wenn die Maus bewegt aus das aktuelle Element eine Instanz von MouseAction erstellt wurde, die legt den Cursor fest, und die Maus erfasst, bis Sie wieder freigegeben wird.
+- Wenn die Maus bewegt aus das aktuelle Element eine Instanz von MouseAction erstellt wurde, die legt den Cursor fest, und die Maus erfasst, bis Sie wieder freigegeben wird.
 
      Um zu vermeiden, behindert mit anderen Aktionen, z. B. durch Festlegen der Text eines Elements wird die MouseAction nicht erstellt, bis die Maus auf das ursprüngliche Element verlassen hat.
 
      Eine Alternative zum Erstellen einer MouseAction wäre einfach MouseUp lauschen. Allerdings würde dies nicht funktioniert ordnungsgemäß, wenn der Benutzer die Maustaste loslässt, nach außen ziehen. Die MouseAction ist unabhängig davon, in dem die Maustaste wieder loslassen, wird die entsprechende Aktion durchführen können.
 
--   Wenn die Maus veröffentlicht wird, ordnet MouseAction.MouseUp die Reihenfolge der Links zwischen den Modellelementen neu an.
+- Wenn die Maus veröffentlicht wird, ordnet MouseAction.MouseUp die Reihenfolge der Links zwischen den Modellelementen neu an.
 
--   Die Änderung der Reihenfolge einer Rolle wird ausgelöst, eine Regel, die die Anzeige aktualisiert wird. Dieses Verhalten ist bereits definiert, und es ist kein zusätzlicher Code erforderlich.
+- Die Änderung der Reihenfolge einer Rolle wird ausgelöst, eine Regel, die die Anzeige aktualisiert wird. Dieses Verhalten ist bereits definiert, und es ist kein zusätzlicher Code erforderlich.
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;

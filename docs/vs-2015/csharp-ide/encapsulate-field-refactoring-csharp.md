@@ -1,14 +1,9 @@
 ---
 title: Refactoring (c#) Feld kapseln | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.csharp.refactoring.encapsulatefield
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: bf714a04-ab1e-49ce-99ce-dda1ebb1a17f
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: 35d7e03e30aa5301ee65f15a8591fbccd1de3fcd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a2c8d54b1625a4097d6b5a0acf6555d74fe83001
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223543"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116601"
 ---
 # <a name="encapsulate-field-refactoring-c"></a>Refactoring „Feld kapseln“ (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ Die **Feld kapseln** Umgestaltungsvorgang können Sie schnell eine Eigenschaft a
   
 ### <a name="to-create-a-property-from-a-field"></a>So erstellen Sie eine Eigenschaft aus einem Feld  
   
-1.  Erstellen Sie eine Konsolenanwendung mit dem Namen `EncapsulateFieldExample`, und ersetzen Sie `Program` durch den folgenden Beispielcode.  
+1. Erstellen Sie eine Konsolenanwendung mit dem Namen `EncapsulateFieldExample`, und ersetzen Sie `Program` durch den folgenden Beispielcode.  
   
     ```csharp  
     class Square  
@@ -63,13 +58,13 @@ Die **Feld kapseln** Umgestaltungsvorgang können Sie schnell eine Eigenschaft a
     }  
     ```  
   
-2.  In der [Code-Editor](../ide/writing-code-in-the-code-and-text-editor.md), platzieren Sie den Cursor in der Deklaration auf den Namen des Felds, das Sie kapseln möchten. Setzen Sie den Cursor im Beispiel unten auf den Begriff `width`:  
+2. In der [Code-Editor](../ide/writing-code-in-the-code-and-text-editor.md), platzieren Sie den Cursor in der Deklaration auf den Namen des Felds, das Sie kapseln möchten. Setzen Sie den Cursor im Beispiel unten auf den Begriff `width`:  
   
     ```csharp  
     public int width, height;  
     ```  
   
-3.  Auf der **Umgestalten** Menü klicken Sie auf **Feld kapseln**.  
+3. Auf der **Umgestalten** Menü klicken Sie auf **Feld kapseln**.  
   
      Die **Feld kapseln** Dialogfeld wird angezeigt.  
   
@@ -77,11 +72,11 @@ Die **Feld kapseln** Umgestaltungsvorgang können Sie schnell eine Eigenschaft a
   
      Sie können auch mit der rechten Maustaste des Cursors, zeigen Sie auf **Umgestalten**, und klicken Sie dann auf **Feld kapseln** zum Anzeigen der **Feld kapseln** Dialogfeld.  
   
-4.  Geben Sie Einstellungen an.  
+4. Geben Sie Einstellungen an.  
   
-5.  Drücken Sie die EINGABETASTE, oder klicken Sie auf die **OK** Schaltfläche.  
+5. Drücken Sie die EINGABETASTE, oder klicken Sie auf die **OK** Schaltfläche.  
   
-6.  Bei Auswahl der **Vorschau der verweisänderungen** Option, und klicken Sie dann die **Vorschau der Verweisänderungen** Fenster wird geöffnet. Klicken Sie auf die **übernehmen** Schaltfläche.  
+6. Bei Auswahl der **Vorschau der verweisänderungen** Option, und klicken Sie dann die **Vorschau der Verweisänderungen** Fenster wird geöffnet. Klicken Sie auf die **übernehmen** Schaltfläche.  
   
      Folgender `get`- und `set`-Accessorcode wird in der Quelldatei angezeigt:  
   

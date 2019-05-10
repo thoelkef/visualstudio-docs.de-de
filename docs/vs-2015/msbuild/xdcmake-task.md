@@ -1,14 +1,9 @@
 ---
 title: XSD-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - vc.task.xdcmake
 dev_langs:
@@ -24,23 +19,22 @@ ms.assetid: a7de9c64-903a-4a02-85f3-f37672270f25
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: caf3803edff01e6ffe650f18aaccef99fc50728f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0d306ec78087ed53ceca44b15f2e184397217650
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204879"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62584022"
 ---
 # <a name="xdcmake-task"></a>XDCMake-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Umschließt das XML-Dokumentationstool (xdcmake.exe), das die XML-Dokument-Kommentardateien (.xdc) in einer XML-Datei zusammengeführt.  
   
  Es wird eine XDC-Datei erstellt, wenn Sie Dokumentationskommentare in Ihren Visual C++-Quellcode eingeben und mithilfe der Compileroption [/doc](http://msdn.microsoft.com/library/b54f7e2c-f28f-4f46-9ed6-0db09be2cc63) kompilieren. Weitere Informationen finden Sie unter [XDCMake-Verweis](http://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac), [Eigenschaftenseiten für das Tool XML-Dokument-Generator](http://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0) und unter der Befehlszeilenhilfe-Option (**/?**) für xdcmake.exe.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Standardmäßig unterstützt das xdcmake.exe-Tool einige Befehlszeilenoptionen. Zusätzliche Optionen werden bei der Angabe der **/old**-Befehlszeilenoption unterstützt.  
   
 ## <a name="parameters"></a>Parameter  
@@ -60,6 +54,3 @@ Umschließt das XML-Dokumentationstool (xdcmake.exe), das die XML-Dokument-Komme
   
 ## <a name="see-also"></a>Siehe auch  
  [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)
-
-
-

@@ -12,17 +12,15 @@ helpviewer_keywords:
 ms.assetid: 34ce4db6-09bb-4b46-b435-b2514aac52d3
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 20a1cd033763e7aa98eb2798357109e300deaff1
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 4fdeef3a21407b4473ed412019e936d7b30389c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402881"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Hinzufügen von Validierungen zu einem N-Tier-Dataset
 Validierungen werden einem DataSet, das in eine N-Tier-Projektmappe aufgeteilt ist, grundsätzlich auf die gleiche Art hinzugefügt wie einem DataSet in einer einzelnen Datei (in einem einzelnen Projekt). Es wird empfohlen, die Datenvalidierung während des <xref:System.Data.DataTable.ColumnChanging>-Ereignisses und/oder des <xref:System.Data.DataTable.RowChanging>-Ereignisses einer Datentabelle auszuführen.
@@ -30,10 +28,10 @@ Validierungen werden einem DataSet, das in eine N-Tier-Projektmappe aufgeteilt i
  Das Dataset stellt die Funktionalität zum Erstellen von partiellen Klassen, die Sie Benutzercode, Spalte und Zeile-Ereignisse mit wechselndem der Datentabellen im Dataset hinzufügen können. Weitere Informationen zum Hinzufügen von Code zu einem Dataset in einer n-Tier-Projektmappe finden Sie unter [fügen Code zu Datasets in n-schichtige Anwendungen](../data-tools/add-code-to-datasets-in-n-tier-applications.md), und [Hinzufügen von Code zu TableAdapters in n-schichtigen Anwendungen](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Weitere Informationen zu partiellen Klassen finden Sie unter [Vorgehensweise: Aufteilen einer Klasse in partielle Klassen (Klassen-Designer)](../ide/class-designer/how-to-split-a-class-into-partial-classes.md) oder [partielle Klassen und Methoden](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
 
 > [!NOTE]
->  Bei einer Abtrennung der Datasets von TableAdapters (durch Festlegen der **DataSet-Projekt** Eigenschaft), vorhandene partielle Dataset-Klassen im Projekt wird nicht automatisch verschoben werden. Vorhandene partielle Dataset-Klassen müssen manuell in der Dataset-Projekt verschoben werden.
+> Bei einer Abtrennung der Datasets von TableAdapters (durch Festlegen der **DataSet-Projekt** Eigenschaft), vorhandene partielle Dataset-Klassen im Projekt wird nicht automatisch verschoben werden. Vorhandene partielle Dataset-Klassen müssen manuell in der Dataset-Projekt verschoben werden.
 
 > [!NOTE]
->  Vom DataSet-Designer werden in C# nicht automatisch Ereignishandler für das <xref:System.Data.DataTable.ColumnChanging>-Ereignis und das <xref:System.Data.DataTable.RowChanging>-Ereignis erstellt. Sie müssen manuell einen Ereignishandler erstellen und den Ereignishandler mit dem zugrunde liegenden Ereignis verknüpfen. Die folgenden Verfahren beschreiben, wie Sie die erforderlichen Ereignishandler in Visual Basic zu erstellen und C#.
+> Vom DataSet-Designer werden in C# nicht automatisch Ereignishandler für das <xref:System.Data.DataTable.ColumnChanging>-Ereignis und das <xref:System.Data.DataTable.RowChanging>-Ereignis erstellt. Sie müssen manuell einen Ereignishandler erstellen und den Ereignishandler mit dem zugrunde liegenden Ereignis verknüpfen. Die folgenden Verfahren wird beschrieben, wie die erforderlichen Ereignishandler in Visual Basic und c# zu erstellen.
 
 ## <a name="validate-changes-to-individual-columns"></a>Überprüfen Sie die Änderungen in einzelnen Spalten
  Validieren Sie die Werte in einzelnen Spalten durch Behandeln des <xref:System.Data.DataTable.ColumnChanging>-Ereignisses. Die <xref:System.Data.DataTable.ColumnChanging> Ereignis wird ausgelöst, wenn ein Wert in einer Spalte geändert wird. Erstellen Sie einen Ereignishandler für die <xref:System.Data.DataTable.ColumnChanging> Ereignis durch Doppelklicken auf die gewünschte Spalte auf die **Dataset-Designer**.
@@ -49,20 +47,20 @@ End Sub
 ```
 
 > [!NOTE]
->  In C#-Projekten werden vom DataSet-Designer nur partielle Klassen für das DataSet sowie einzelne Tabellen im DataSet erstellt. Vom DataSet-Designer werden in C#, im Gegensatz zu Visual Basic, nicht automatisch Ereignishandler für das <xref:System.Data.DataTable.ColumnChanging>-Ereignis und das <xref:System.Data.DataTable.RowChanging>-Ereignis erstellt. In C# -Projekten müssen Sie manuell eine Methode zum Behandeln des Ereignisses und die Methode, die dem zugrunde liegenden Ereignis verknüpfen zu erstellen. Das folgende Verfahren erläutert die Schritte, um die erforderlichen Ereignishandler sowohl in Visual Basic als auch in C# zu erstellen.
+> In C#-Projekten werden vom DataSet-Designer nur partielle Klassen für das DataSet sowie einzelne Tabellen im DataSet erstellt. Vom DataSet-Designer werden in C#, im Gegensatz zu Visual Basic, nicht automatisch Ereignishandler für das <xref:System.Data.DataTable.ColumnChanging>-Ereignis und das <xref:System.Data.DataTable.RowChanging>-Ereignis erstellt. In c#-Projekten müssen Sie manuell eine Methode zum Behandeln des Ereignisses und die Methode, die dem zugrunde liegenden Ereignis verknüpfen zu erstellen. Das folgende Verfahren erläutert die Schritte, um die erforderlichen Ereignishandler sowohl in Visual Basic als auch in C# zu erstellen.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
 #### <a name="to-add-validation-during-changes-to-individual-column-values"></a>So fügen Sie Validierungen bei Änderung einzelner Spaltenwerte hinzu
 
-1.  Öffnen Sie das Dataset durch Doppelklicken auf die *XSD* Datei **Projektmappen-Explorer**. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines Datasets im Dataset-Designer](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1. Öffnen Sie das Dataset durch Doppelklicken auf die *XSD* Datei **Projektmappen-Explorer**. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines Datasets im Dataset-Designer](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
-2.  Doppelklicken Sie auf die zu validierende Spalte. Durch diese Aktion wird der <xref:System.Data.DataTable.ColumnChanging>-Ereignishandler erstellt.
+2. Doppelklicken Sie auf die zu validierende Spalte. Durch diese Aktion wird der <xref:System.Data.DataTable.ColumnChanging>-Ereignishandler erstellt.
 
     > [!NOTE]
-    >  Der Dataset-Designer erstellt den Ereignishandler für das C#-Ereignis nicht automatisch. Der Code, der erforderlich ist, der Ereignisbehandlung in C# befindet sich im nächsten Abschnitt. `SampleColumnChangingEvent` wird erstellt, und klicken Sie dann bis zu verknüpft die <xref:System.Data.DataTable.ColumnChanging> Ereignis in der <xref:System.Data.DataTable.EndInit%2A> Methode.
+    > Der Dataset-Designer erstellt den Ereignishandler für das C#-Ereignis nicht automatisch. Der Code, der zum Behandeln des Ereignisses in c# erforderlich ist, wird im nächsten Abschnitt enthalten. `SampleColumnChangingEvent` wird erstellt, und klicken Sie dann bis zu verknüpft die <xref:System.Data.DataTable.ColumnChanging> Ereignis in der <xref:System.Data.DataTable.EndInit%2A> Methode.
 
-3.  Fügen Sie Code hinzu, mit dem überprüft wird, ob die Daten in `e.ProposedValue` den Anforderungen der Anwendung entsprechen. Wenn der vorgeschlagene Wert unzulässig ist, legen Sie für die Spalte fest, dass ein Fehler angezeigt wird.
+3. Fügen Sie Code hinzu, mit dem überprüft wird, ob die Daten in `e.ProposedValue` den Anforderungen der Anwendung entsprechen. Wenn der vorgeschlagene Wert unzulässig ist, legen Sie für die Spalte fest, dass ein Fehler angezeigt wird.
 
      Im folgenden Codebeispiel wird überprüft, ob die **Menge** Spalte enthält einen Wert größer als 0. Wenn **Menge** ist kleiner als oder gleich 0 ist, wird die Spalte zu einem Fehler festgelegt. Die `Else` -Klausel löscht den Fehler, wenn **Menge** ist größer als 0. Der Code im spaltenändernden Ereignishandler sollte etwa folgendermaßen aussehen:
 
@@ -75,6 +73,7 @@ End Sub
         End If
     End If
     ```
+
     ```csharp
     // Add this code to the DataTable partial class.
 
@@ -111,18 +110,18 @@ End Sub
 
 #### <a name="to-add-validation-during-changes-to-whole-rows"></a>So fügen Sie Validierungen bei Änderung ganzer Zeilen hinzu
 
-1.  Öffnen Sie das Dataset durch Doppelklicken auf die *XSD* Datei **Projektmappen-Explorer**. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines Datasets im Dataset-Designer](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1. Öffnen Sie das Dataset durch Doppelklicken auf die *XSD* Datei **Projektmappen-Explorer**. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines Datasets im Dataset-Designer](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
-2.  Doppelklicken Sie im Designer auf die Titelleiste der Datentabelle.
+2. Doppelklicken Sie im Designer auf die Titelleiste der Datentabelle.
 
      Eine partielle Klasse wird mit einem `RowChanging`-Ereignishandler erstellt und im Code-Editor geöffnet.
 
     > [!NOTE]
-    >  Vom DataSet-Designer wird in C#-Projekten nicht automatisch ein Ereignishandler für das <xref:System.Data.DataTable.RowChanging>-Ereignis erstellt. Müssen Sie erstellen eine Methode zum Behandeln der <xref:System.Data.DataTable.RowChanging> Ereignis und den Code auszuführen, klicken Sie dann das Ereignis in der Initialisierungsmethode der Tabelle zu verknüpfen.
+    > Vom DataSet-Designer wird in C#-Projekten nicht automatisch ein Ereignishandler für das <xref:System.Data.DataTable.RowChanging>-Ereignis erstellt. Müssen Sie erstellen eine Methode zum Behandeln der <xref:System.Data.DataTable.RowChanging> Ereignis und den Code auszuführen, klicken Sie dann das Ereignis in der Initialisierungsmethode der Tabelle zu verknüpfen.
 
-3.  Fügen Sie Benutzercode innerhalb der Deklaration der partiellen Klasse hinzu.
+3. Fügen Sie Benutzercode innerhalb der Deklaration der partiellen Klasse hinzu.
 
-4.  Der folgende Code zeigt, wo Sie Benutzercode zur Validierung beim Hinzufügen der <xref:System.Data.DataTable.RowChanging> Ereignis. Die C# Beispiel enthält auch Code aus, um die Ereignishandlermethode Einbinden der `OrdersRowChanging` Ereignis.
+4. Der folgende Code zeigt, wo Sie Benutzercode zur Validierung beim Hinzufügen der <xref:System.Data.DataTable.RowChanging> Ereignis. C#-Beispiel enthält auch Code aus, um die Ereignishandlermethode Einbinden der `OrdersRowChanging` Ereignis.
 
     ```vb
     Partial Class OrdersDataTable
@@ -138,6 +137,7 @@ End Sub
         End Sub
     End Class
     ```
+
     ```csharp
     partial class OrdersDataTable
     {
@@ -169,5 +169,5 @@ End Sub
 ## <a name="see-also"></a>Siehe auch
 
 - [Übersicht über n-schichtige Datenanwendungen](../data-tools/n-tier-data-applications-overview.md)
-- [Exemplarische Vorgehensweise: Erstellen einer N-Tier-datenanwendung](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [Exemplarische Vorgehensweise: Erstellen einer n-schichtigen Datenanwendung](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [Überprüfen von Daten in Datasets](../data-tools/validate-data-in-datasets.md)

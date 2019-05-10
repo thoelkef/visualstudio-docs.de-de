@@ -1,14 +1,9 @@
 ---
-title: Optionen, Text-Editor, C/C++, erweitert | Microsoft-Dokumentation
-ms.custom: ''
+title: Optionen, Text-Editor, C/C++, Erweitert | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C\C++.Advanced
 - VS.ToolsOptionsPages.Text_Editor.C%2FC%2B%2B.Advanced
@@ -19,24 +14,23 @@ ms.assetid: 67c82ae5-fddd-49df-baec-8e7498b156f3
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: aafa46e62af6eadb56d8cf53cb2190bc7403358b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9d045957dde862d0552d8eeb4885f29957e420f5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285700"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441416"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Optionen, Text-Editor, C/C++, Erweitert
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Wenn Sie diese Optionen ändern, können Sie beim Programmieren in C oder C++ das Verhalten ändern, das mit IntelliSense und der Suchdatenbank zusammenhängt.  
   
  Klicken Sie zum Öffnen dieser Seite im linken Fenster auf das Dialogfeld **Optionen**, erweitern Sie **Text-Editor** und **C/C++**, und klicken Sie dann auf **Erweitert**.  
   
 > [!NOTE]
->  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Informationen hierzu finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio)](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Informationen hierzu finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio)](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="browsingnavigation"></a>Durchsuchen/Navigation  
  Diese Optionen sollten nur in dem seltenen Fall ausgewählt werden, wenn eine Projektmappe so groß ist, dass die Datenbankaktivität einen unzulässigen Anteil der Systemressourcen beansprucht.  
@@ -79,19 +73,19 @@ Wenn Sie diese Optionen ändern, können Sie beim Programmieren in C oder C++ da
   
  Wird durch eine Summe aus den folgenden Optionen festgelegt:  
   
--   0 – Keine  
+- 0 – Keine  
   
--   1 – Allgemein  
+- 1 – Allgemein  
   
--   2 – Leerlauf  
+- 2 – Leerlauf  
   
--   4 – WorkItem  
+- 4 – WorkItem  
   
--   8 – IntelliSense  
+- 8 – IntelliSense  
   
--   16 – ACPerf  
+- 16 – ACPerf  
   
--   32 – ClassView  
+- 32 – ClassView  
   
 ## <a name="fallback-location"></a>Ausweichpfad  
  Der Ausweichpfad gibt an, wo die SDF- und IntelliSense-Unterstützungsdateien (beispielsweise iPCH) abgelegt werden, wenn der primäre Speicherort (dasselbe Verzeichnis wie die Projektmappe) nicht verwendet wird. Diese Situation kann auftreten, wenn der Benutzer keine Schreibberechtigungen für das Projektmappenverzeichnis hat, oder wenn sich das Projektmappenverzeichnis auf einem langsamen Gerät befindet. Der Standardausweichpfad befindet sich im temporären Verzeichnis des Benutzers.  
@@ -164,6 +158,3 @@ Wenn Sie diese Optionen ändern, können Sie beim Programmieren in C oder C++ da
   
 ## <a name="see-also"></a>Siehe auch  
  [Festlegen von sprachspezifischen Editor-Optionen](../../ide/reference/setting-language-specific-editor-options.md)
-
-
-

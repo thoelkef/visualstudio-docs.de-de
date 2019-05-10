@@ -3,40 +3,42 @@ title: Debuggen von verwaltetem Code | Microsoft-Dokumentation
 description: Informationen zum Debuggen in C# oder Visual Basic mithilfe des Visual Studio-Debuggers
 ms.custom: mvc
 ms.date: 03/18/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
 ms.assetid: f4cea2e1-08dc-47ac-aba2-3b8c338e607f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 891387d244a805df2929a120a9312697ad79f192
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: a5e39778a2d503470629f6c8b7c9243b9dc69cf3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62903811"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Schnellstart: Informationen zum Debuggen in C# oder Visual Basic mithilfe des Visual Studio-Debuggers
 
 Der Visual Studio-Debugger umfasst viele nützliche Features zum Debuggen von Apps. In diesem Thema werden einige der grundlegenden Funktionen erläutert.
 
-## <a name="create-a-new-project"></a>Erstellt ein neues Projekt 
+## <a name="create-a-new-project"></a>Erstellt ein neues Projekt
 
-1. Klicken Sie in Visual Studio auf **Datei > Neues Projekt**.
+1. Öffnen Sie Visual Studio, und erstellen Sie ein neues Projekt.
 
-2. Klicken Sie erst unter **Visual C#** oder **Visual Basic** auf **.NET Core** und dann im mittleren Bereich auf **Console App (.NET Core)** (Konsolen-App (.NET Core)).
+    ::: moniker range=">=vs-2019"
+    Drücken Sie **ESC**, um das Startfenster zu schließen. Geben Sie **STRG + Q** ein, um das Suchfeld zu öffnen, geben Sie **Konsole** ein, wählen Sie **Vorlagen** und dann **Neues Konsolen-App-Projekt (.NET Core) erstellen** aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialogfelds **Neues Projekt** unter **Visual C#** **.NET Core** und dann im mittleren Bereich **Konsolen-App (.NET Core)** aus. Geben Sie dann einen Namen wie **MyDbgApp** ein, und klicken Sie auf **OK**.
+    ::: moniker-end
 
-     Falls Sie die Projektvorlage **Konsolenanwendung (.NET Core)** nicht finden, klicken Sie auf den Link **Visual Studio-Installer öffnen** auf der linken Seite des Dialogfelds **Neues Projekt**. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workloads **.NET-Desktopentwicklung** und **.NET Core** aus, und klicken Sie anschließend auf **Ändern**.
-
-3. Geben Sie einen Namen wie **MyDbgApp** ein, und klicken Sie auf **OK**.
+     Wenn die Vorlage **Konsolen-App (.NET Core)** nicht angezeigt wird, öffnen Sie unter **Tools** > **Tools und Features abrufen ...** den Visual Studio-Installer. Wählen Sie die Workloads **.NET-Desktopentwicklung** und **.NET Core** aus, und klicken Sie anschließend auf **Ändern**.
 
     Visual Studio erstellt daraufhin das Projekt.
 
-4. Ersetzen Sie in *Program.cs* oder *Module1.vb* diesen Code
+1. Ersetzen Sie in *Program.cs* oder *Module1.vb* diesen Code
 
     ```csharp
     class Program
@@ -143,7 +145,7 @@ Ein *Breakpoint* gibt an, an welcher Stelle Visual Studio ausgeführten Code anh
 
 ## <a name="navigate-code"></a>Navigieren durch den Code
 
-Es gibt verschiedene Befehle, über die der Debugger zum Fortfahren angewiesen werden kann. In diesem Artikel wird ein nützlicher Befehl zur Codenavigation erläutert, der neu für Visual Studio 2017 ist.
+Es gibt verschiedene Befehle, über die der Debugger zum Fortfahren angewiesen werden kann. In diesem Artikel wird ein nützlicher Befehl zur Codenavigation erläutert, der ab Visual Studio 2017 verfügbar ist.
 
 Wenn der Vorgang am Breakpoint ausgesetzt wurde, zeigen Sie auf die Anweisung `c1.AddLast(20)`, bis die Schaltfläche **Run to click** (Ausführen bis Klick) ![Ausführen bis Klick](../debugger/media/dbg-tour-run-to-click.png "Run to Click") angezeigt wird, und klicken Sie diese an.
 
@@ -159,7 +161,7 @@ Häufig werden die Tastaturbefehle **F10** und **F11** verwendet, um Code durchz
 
     ![Datentipp anzeigen](../debugger/media/dbg-qs-data-tip-csharp.png "View a datatip")
 
-    Der aktuelle Wert der Variable `c1` wird angezeigt, und Sie können die Eigenschaften untersuchen. Wenn Sie beim Debuggen einen nicht erwarteten Wert antreffen, enthalten die vorhergehenden oder die aufrufenden Codezeilen möglicherweise einen Fehler. 
+    Der aktuelle Wert der Variable `c1` wird angezeigt, und Sie können die Eigenschaften untersuchen. Wenn Sie beim Debuggen einen nicht erwarteten Wert antreffen, enthalten die vorhergehenden oder die aufrufenden Codezeilen möglicherweise einen Fehler.
 
 2. Erweitern Sie den Datentipp, um die Eigenschaftswerte des `c1`-Objekts einzusehen.
 
@@ -184,4 +186,4 @@ Weitere Informationen zum Bearbeiten und Fortfahren und zu Einschränkungen von 
 In diesem Tutorial haben Sie gelernt, wie Sie den Debugger starten, Code schrittweise durchlaufen und Variablen untersuchen. Sie sollten sich einen allgemeinen Überblick über die Debugger-Features verschaffen und die zugehörigen Links aufrufen, um weitere Informationen hierzu zu erhalten.
 
 > [!div class="nextstepaction"]
-> [Debugger – Featuretour](../debugger/debugger-feature-tour.md)
+> [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)

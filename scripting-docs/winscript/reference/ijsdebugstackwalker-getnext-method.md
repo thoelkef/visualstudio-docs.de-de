@@ -2,7 +2,6 @@
 title: 'Ijsdebugstackwalker:: GetNext-Methode | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -16,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6e5b1b1257556ab17aa5dcac7b7f4525063dfb1d
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: ba8931a01f3afe05f791f4d89da60a9354868215
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54090771"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977873"
 ---
 # <a name="ijsdebugstackwalkergetnext-method"></a>IJsDebugStackWalker::GetNext-Methode
 Ruft den nächsten Frame ab.  

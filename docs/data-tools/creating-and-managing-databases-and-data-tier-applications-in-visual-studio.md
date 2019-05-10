@@ -7,17 +7,15 @@ helpviewer_keywords:
 ms.assetid: 40b51f5a-d52c-44ac-8f84-037a0917af33
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d8671c46cf2e88ab5d5797dd7a009ff29b953c4e
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
+ms.openlocfilehash: 2a86d9511e470c9a810ff58e80e4cae1f9a0cb11
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281731"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567239"
 ---
 # <a name="database-projects-and-data-tier-applications"></a>Datenbankprojekte und Data-Tier-Anwendungen
 
@@ -29,9 +27,9 @@ Eine Liste der Datenbankfunktionen ein, die von Data-Tier-Anwendungen unterstüt
 
 | Übergeordnete Aufgabe | Unterstützender Inhalt |
 | - | - |
-| **Starten Sie die Entwicklung einer Anwendung von datenebenenanwendungen:** das Konzept einer datenebenenanwendung (DAC) mit SQL Server 2008 eingeführt wurde. Eine DAC enthält die Definition für eine SQL Server-Datenbank und die unterstützenden Instanzobjekte, die von einem Client / Server oder eine 3-Ebenen-Anwendung verwendet werden. Eine DAC enthält Datenbankobjekte, z. B. Tabellen und Sichten, zusammen mit Instanz-Entitäten, z. B. Anmeldenamen. Sie können Visual Studio verwenden, um ein DAC-Projekt erstellen, eine DAC-Paketdatei erstellen und senden die DAC-Paketdatei an einen Datenbankadministrator für die Bereitstellung auf einer Instanz von SQL Server-Datenbank-Engine. | - [Data-Tier-Anwendungen](/sql/relational-databases/data-tier-applications/data-tier-applications)<br />- [SQL Server Management Studio](/sql/ssms/sql-server-management-studio-ssms) |
-| **Ausführen von iterativen Datenbankentwicklung:** Entwickler können Teile des Projekts Auschecken und aktualisieren Sie sie in einer isolierten Entwicklungsumgebung. Mithilfe dieser Art von Umgebung zu verwenden, können Sie Ihre Änderungen testen, ohne Auswirkungen auf andere Mitglieder des Teams. Nachdem die Änderungen abgeschlossen sind, überprüfen Sie die Dateien wieder in die Versionskontrolle, in denen andere Teammitglieder können Ihre Änderungen zu erhalten und erstellen und auf einem Testserver bereitstellen. | - [Projektorientierte Offlinedatenbankentwicklung (SQL Server Data Tools)](/sql/ssdt/project-oriented-offline-database-development)<br />- [Transact-SQL-Debugger (SQL Server Management Studio)](/sql/ssms/scripting/transact-sql-debugger) |
-| **Erstellen von Prototypen, Überprüfen der Ergebnisse zu erzielen, und Ändern von Datenbankskripts und Objekten zu testen:** können Sie den Transact-SQL-Editor diesen gemeinsamen Aufgaben ausführen. | - [Abfrage- und Text-Editoren (SQL Server Management Studio)](/sql/ssms/scripting/query-and-text-editors-sql-server-management-studio) |
+| **Starten Sie die Entwicklung einer Anwendung von datenebenenanwendungen:** Das Konzept einer datenebenenanwendung (DAC) wurde mit SQL Server 2008 eingeführt. Eine DAC enthält die Definition für eine SQL Server-Datenbank und die unterstützenden Instanzobjekte, die von einem Client / Server oder eine 3-Ebenen-Anwendung verwendet werden. Eine DAC enthält Datenbankobjekte, z. B. Tabellen und Sichten, zusammen mit Instanz-Entitäten, z. B. Anmeldenamen. Sie können Visual Studio verwenden, um ein DAC-Projekt erstellen, eine DAC-Paketdatei erstellen und senden die DAC-Paketdatei an einen Datenbankadministrator für die Bereitstellung auf einer Instanz von SQL Server-Datenbank-Engine. | - [Datenschichtanwendungen](/sql/relational-databases/data-tier-applications/data-tier-applications)<br />- [SQL Server Management Studio](/sql/ssms/sql-server-management-studio-ssms) |
+| **Ausführen von iterativen-Datenbankentwicklung:** Entwickler können Teile des Projekts Auschecken und aktualisieren sie in einer isolierten Entwicklungsumgebung. Mithilfe dieser Art von Umgebung zu verwenden, können Sie Ihre Änderungen testen, ohne Auswirkungen auf andere Mitglieder des Teams. Nachdem die Änderungen abgeschlossen sind, überprüfen Sie die Dateien wieder in die Versionskontrolle, in denen andere Teammitglieder können Ihre Änderungen zu erhalten und erstellen und auf einem Testserver bereitstellen. | - [Projektorientierte Offlinedatenbankentwicklung (SQL Server Data Tools)](/sql/ssdt/project-oriented-offline-database-development)<br />- [Transact-SQL-Debugger (SQL Server Management Studio)](/sql/ssms/scripting/transact-sql-debugger) |
+| **Erstellen von Prototypen, Überprüfen von Testergebnissen, und Ändern von Datenbankskripts und Objekten:** Sie können den Transact-SQL-Editor verwenden, eine der folgenden allgemeinen Aufgaben ausführen. | - [Abfrage- und Text-Editoren (SQL Server Management Studio)](/sql/ssms/scripting/query-and-text-editors-sql-server-management-studio) |
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,13 +1,8 @@
 ---
 title: Erste Schritte mit Visual c# und Visual Basic | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - C# tutorial
@@ -20,13 +15,13 @@ ms.assetid: d57bb19f-58d6-48cc-96cb-ab1c540a25d0
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 747b36d69bfbd0a70c6df67e57174b3baf623543
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 65e766193838060d4c856b6a530a688ef8cd2d1b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253772"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62584695"
 ---
 # <a name="getting-started-with-visual-c-and-visual-basic"></a>Erste Schritte mit Visual C# und Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ Auch wenn Sie noch keine Erfahrung mit Visual C# oder Microsoft Visual Basic bes
  Informationen zu Visual C++ finden Sie in diesen [Visual C++-Artikeln](http://msdn.microsoft.com/vstudio/hh386302.aspx).  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- [Exemplarische Vorgehensweise: Erstellen einer einfachen Anwendung](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
+ [Exemplarische Vorgehensweise: Erstellen einer einfachen Anwendung mit Visual C# oder Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
  Lernen Sie die grundlegenden Fenster in der Visual Studio-IDE kennen, passen Sie die Entwicklungsumgebung an Ihre Erfordernisse an, indem Sie Einstellungen konfigurieren, und erstellen Sie dann ein einfaches Programm.  
   
  [Tutorial 1: Erstellen eines Bildanzeigeprogramms](../ide/tutorial-1-create-a-picture-viewer.md)  
@@ -47,6 +42,3 @@ Auch wenn Sie noch keine Erfahrung mit Visual C# oder Microsoft Visual Basic bes
   
  [Tutorial 3: Erstellen eines Vergleichsspiels](../ide/tutorial-3-create-a-matching-game.md)  
  Erstellen Sie ein Vergleichsspiel, bei dem der Spieler ausgeblendete Symbolpaare finden müssen. Erfahren Sie, wie Sie folgende Aufgaben ausführen können: Objekte in ein `List`-Objekt aufnehmen, eine `foreach`-Schleife verwenden, den Formularstatus mit Verweisvariablen nachverfolgen, einen Ereignishandler erstellen, der für mehrere Objekten verwendet werden kann und einen Zeitgeber beim Start genau einmal auslösen.
-
-
-

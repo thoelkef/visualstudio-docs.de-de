@@ -10,14 +10,13 @@ helpviewer_keywords:
 ms.assetid: a612f2d2-9806-477d-a126-12842f07da6e
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: c4fb207fc5404c0540324a3d32281db14cc6ac65
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: c107e6dcba9be92b738bb4756806d584b9abdb50
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949980"
 ---
 # <a name="how-to-create-a-web-performance-test-plug-in"></a>Vorgehensweise: Erstellen eines Webleistungstest-Plug-Ins
 
@@ -34,43 +33,35 @@ Benutzerdefinierte Webleistungstest-Plug-Ins können mit den aufgezeichneten Web
 
 ## <a name="to-create-a-custom-web-performance-test-plug-in"></a>So erstellen Sie ein benutzerdefiniertes Webleistungstest-Plug-In
 
-1.  Öffnen Sie ein Webleistungs- und Auslastungstestprojekt, das einen Webleistungstest enthält.
+1. Öffnen Sie ein Webleistungs- und Auslastungstestprojekt, das einen Webleistungstest enthält.
 
-2.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe, und wählen Sie **Hinzufügen** und anschließend **Neues Projekt** aus.
+2. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe, und wählen Sie **Hinzufügen** und anschließend **Neues Projekt** aus.
 
-     Das Dialogfeld **Neues Projekt hinzufügen** wird angezeigt.
+3. Erstellen Sie ein neues **Klassenbibliotheksprojekt**.
 
-3.  Wählen Sie unter **Installierte Vorlagen** den Eintrag **Visual C#** aus.
+   Das neue Klassenbibliotheksprojekt wird zum **Projektmappen-Explorer** hinzugefügt, und die neue Klasse wird im **Code-Editor** angezeigt.
 
-4.  Wählen Sie in der Liste der Vorlagen den Eintrag **Klassenbibliothek** aus.
+4. Klicken Sie im **Projektmappen-Explorer** in der neuen Klassenbibliothek mit der rechten Maustaste auf den Ordner **Verweise**, und wählen Sie **Verweis hinzufügen** aus.
 
-5.  Geben Sie im Textfeld **Name** einen Namen für die Klasse ein.
+   Das Dialogfeld **Verweis hinzufügen** wird angezeigt.
 
-6.  Klicken Sie auf **OK**.
+5. Klicken Sie auf die Registerkarte **.NET**, scrollen Sie nach unten, und klicken Sie auf **Microsoft.VisualStudio.QualityTools.WebTestFramework**.
 
-7.  Das neue Klassenbibliotheksprojekt wird zum **Projektmappen-Explorer** hinzugefügt, und die neue Klasse wird im **Code-Editor** angezeigt.
-
-8.  Klicken Sie im **Projektmappen-Explorer** in der neuen Klassenbibliothek mit der rechten Maustaste auf den Ordner **Verweise**, und wählen Sie **Verweis hinzufügen** aus.
-
-9. Das Dialogfeld **Verweis hinzufügen** wird angezeigt.
-
-10. Klicken Sie auf die Registerkarte **.NET**, scrollen Sie nach unten, und klicken Sie auf **Microsoft.VisualStudio.QualityTools.WebTestFramework**.
-
-11. Klicken Sie auf **OK**.
+6. Klicken Sie auf **OK**.
 
      Der Verweis auf **Microsoft.VisualStudio.QualityTools.WebTestFramework** wird zum Ordner **Verweise** im **Projektmappen-Explorer** hinzugefügt.
 
-12. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den obersten Knoten des Webleistungs- und Auslastungstestprojekts, das den Auslastungstest enthält, dem Sie das Webleistungstest-Plug-In hinzufügen möchten. Klicken Sie anschließend auf **Verweis hinzufügen**.
+7. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den obersten Knoten des Webleistungs- und Auslastungstestprojekts, das den Auslastungstest enthält, dem Sie das Webleistungstest-Plug-In hinzufügen möchten. Klicken Sie anschließend auf **Verweis hinzufügen**.
 
-13. Das Dialogfeld **Verweis hinzufügen** wird angezeigt.
+8. Das Dialogfeld **Verweis hinzufügen** wird angezeigt.
 
-14. Klicken Sie auf die Registerkarte **Projekte**, und wählen Sie das **Klassenbibliotheksprojekt** aus.
+9. Klicken Sie auf die Registerkarte **Projekte**, und wählen Sie das **Klassenbibliotheksprojekt** aus.
 
-15. Klicken Sie auf **OK**.
+10. Klicken Sie auf **OK**.
 
-16. Schreiben Sie im **Code-Editor** den Code für das Plug-In. Erstellen Sie zunächst eine neue öffentliche Klasse, die von <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin> abgeleitet wird.
+11. Schreiben Sie im **Code-Editor** den Code für das Plug-In. Erstellen Sie zunächst eine neue öffentliche Klasse, die von <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin> abgeleitet wird.
 
-17. Implementieren Sie Code innerhalb eines oder mehrerer Ereignishandler. Beachten Sie hierzu die Beispielimplementierung im folgenden Abschnitt.
+12. Implementieren Sie Code innerhalb eines oder mehrerer Ereignishandler. Beachten Sie hierzu die Beispielimplementierung im folgenden Abschnitt.
 
     - <xref:Microsoft.VisualStudio.TestTools.WebTesting.PostWebTestRecordingEventArgs>
 
@@ -88,22 +79,22 @@ Benutzerdefinierte Webleistungstest-Plug-Ins können mit den aufgezeichneten Web
 
     - <xref:Microsoft.VisualStudio.TestTools.WebTesting.PostTransactionEventArgs>
 
-18. Nachdem Sie den Code verfasst haben, erstellen Sie das neue Projekt.
+13. Nachdem Sie den Code verfasst haben, erstellen Sie das neue Projekt.
 
-19. Öffnen Sie einen Webleistungstest.
+14. Öffnen Sie einen Webleistungstest.
 
-20. Um das Webleistungstest-Plug-In hinzuzufügen, wählen Sie auf der Symbolleiste **Webtest-Plug-In hinzufügen** aus.
+15. Um das Webleistungstest-Plug-In hinzuzufügen, wählen Sie auf der Symbolleiste **Webtest-Plug-In hinzufügen** aus.
 
      Das Dialogfeld **Webtest-Plug-In hinzufügen** wird angezeigt.
 
-21. Wählen Sie unter **Plug-In auswählen** die Webleistungstest-Plug-In-Klasse aus.
+16. Wählen Sie unter **Plug-In auswählen** die Webleistungstest-Plug-In-Klasse aus.
 
-22. Legen Sie im Bereich **Eigenschaften für das ausgewählte Plug-In** die Anfangswerte fest, die das Plug-In zur Laufzeit verwenden soll.
+17. Legen Sie im Bereich **Eigenschaften für das ausgewählte Plug-In** die Anfangswerte fest, die das Plug-In zur Laufzeit verwenden soll.
 
     > [!NOTE]
     > Sie können beliebig viele Plug-In-Eigenschaften verfügbar machen. Die Eigenschaften müssen dazu lediglich öffentlich, festlegbar und von einem Basistyp (z. B. "Integer", "Boolean" oder "String") sein. Sie können die Eigenschaften des Webleistungstest-Plug-Ins auch zu einem späteren Zeitpunkt im Eigenschaftenfenster ändern.
 
-23. Klicken Sie auf **OK**.
+18. Klicken Sie auf **OK**.
 
      Das Plug-In wird dem Ordner **Webtest-Plug-Ins** hinzugefügt.
 
@@ -114,8 +105,8 @@ Benutzerdefinierte Webleistungstest-Plug-Ins können mit den aufgezeichneten Web
     >
     > Ein solcher Fehler wird verursacht, wenn Sie an einem der Plug-Ins Codeänderungen vornehmen und eine neue DLL-Version **(Version=0.0.0.0)** erstellen, während das Plug-In weiterhin auf die ursprüngliche Plug-In-Version verweist. Um dieses Problem zu beheben, führen Sie folgende Schritte aus:
     >
-    > 1.  Im Webleistungs- und Auslastungstestprojekt wird in Verweisen eine Warnung angezeigt. Entfernen Sie den Verweis auf die Plug-In-DLL, und fügen Sie ihn wieder hinzu.
-    > 2.  Entfernen Sie das Plug-In aus dem Test oder vom entsprechenden Speicherort, und fügen Sie es dann wieder hinzu.
+    > 1. Im Webleistungs- und Auslastungstestprojekt wird in Verweisen eine Warnung angezeigt. Entfernen Sie den Verweis auf die Plug-In-DLL, und fügen Sie ihn wieder hinzu.
+    > 2. Entfernen Sie das Plug-In aus dem Test oder vom entsprechenden Speicherort, und fügen Sie es dann wieder hinzu.
 
 ## <a name="example"></a>Beispiel
 

@@ -1,14 +1,9 @@
 ---
 title: 'Schnellstart: Debuggen von JavaScript mithilfe der Konsole | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.JavaScriptConsole
 dev_langs:
@@ -24,13 +19,13 @@ ms.assetid: ea7adb71-52b6-4a5a-9346-98ca94b06bd7
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 61f36594b4158c95621ec240fd7a883accd259a8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 313c189a05ae2a4e338c6f6bb9d7e9341e34284c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446113"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>Schnellstart: Debuggen von JavaScript mit der Konsole
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,25 +59,25 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 - [Ändern des Skriptausführungskontexts](#Switching)  
   
 > [!TIP]
->  Wenn das JavaScript-Konsolenfenster geschlossen ist, wählen Sie **Debuggen**>**Windows** > **JavaScript-Konsole** aus, um es erneut zu öffnen. Das Fenster wird nur während einer Skriptdebugsitzung angezeigt.  
+> Wenn das JavaScript-Konsolenfenster geschlossen ist, wählen Sie **Debuggen**>**Windows** > **JavaScript-Konsole** aus, um es erneut zu öffnen. Das Fenster wird nur während einer Skriptdebugsitzung angezeigt.  
   
  Mit dem JavaScript-Konsolenfenster können Sie mit dem App-Code interagieren, ohne den Debugger zu beenden und neu zu starten. Weitere Informationen finden Sie unter [Aktualisieren einer app (JavaScript)](../debugger/refresh-an-app-javascript.md). Informationen zu anderen JavaScript-Debugfunktionen wie den DOM Explorer und das Einfügen von Haltepunkten finden Sie unter [Schnellstart: Debuggen von HTML und CSS-](../debugger/quickstart-debug-html-and-css.md) und [Debuggen von apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
-##  <a name="InteractiveConsole"></a> Debuggen mithilfe des JavaScript-Konsolenfensters  
+## <a name="InteractiveConsole"></a> Debuggen mithilfe des JavaScript-Konsolenfensters  
  Mit den folgenden Schritten wird eine `FlipView` -App erstellt und gezeigt, wie Sie einen JavaScript-Codefehler interaktiv debuggen.  
   
 > [!CAUTION]
->  Die vorliegende Beispiel-App ist eine Windows Store-App. Die hier beschriebenen Konsolenfunktionen gelten jedoch auch für Apps, die mithilfe von Visual Studio-Tools für Apache Cordova erstellt wurden.  
+> Die vorliegende Beispiel-App ist eine Windows Store-App. Die hier beschriebenen Konsolenfunktionen gelten jedoch auch für Apps, die mithilfe von Visual Studio-Tools für Apache Cordova erstellt wurden.  
   
 #### <a name="to-debug-javascript-code-in-the-flipview-app"></a>So debuggen Sie den JavaScript-Code in der FlipView-App  
   
-1.  Erstellen Sie in Visual Studio eine neue Projektmappe, indem Sie **Datei** > **Neues Projekt**.  
+1. Erstellen Sie in Visual Studio eine neue Projektmappe, indem Sie **Datei** > **Neues Projekt**.  
   
-2.  Wählen Sie **JavaScript** > **Store-Apps**und dann entweder **Windows-Apps** oder **Windows Phone-Apps**aus. Wählen Sie anschließend **Leere App**.  
+2. Wählen Sie **JavaScript** > **Store-Apps**und dann entweder **Windows-Apps** oder **Windows Phone-Apps**aus. Wählen Sie anschließend **Leere App**.  
   
-3.  Geben Sie einen Namen für das Projekt ein, beispielsweise `FlipViewApp`, und wählen Sie **OK** aus, um die App zu erstellen.  
+3. Geben Sie einen Namen für das Projekt ein, beispielsweise `FlipViewApp`, und wählen Sie **OK** aus, um die App zu erstellen.  
   
-4.  Ersetzen Sie im BODY-Element von "default.html" den vorhandenen HTML-Code durch den folgenden Code:  
+4. Ersetzen Sie im BODY-Element von "default.html" den vorhandenen HTML-Code durch den folgenden Code:  
   
     ```html  
     <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -96,7 +91,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
     </div>  
     ```  
   
-5.  Öffnen Sie "default.css", und fügen Sie den CSS-Code für den `#fView` -Selektor hinzu:  
+5. Öffnen Sie "default.css", und fügen Sie den CSS-Code für den `#fView` -Selektor hinzu:  
   
     ```css  
     #fView {  
@@ -106,7 +101,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
     }  
     ```  
   
-6.  Öffnen Sie "default.js", und ersetzen Sie den Code durch den folgenden JavaScript-Code:  
+6. Öffnen Sie "default.js", und ersetzen Sie den Code durch den folgenden JavaScript-Code:  
   
     ```javascript  
     (function () {  
@@ -158,17 +153,17 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
     })();  
     ```  
   
-7.  Wenn das Debugziel noch nicht ausgewählt ist, wählen Sie **Simulator** oder (für Windows Phone) **Emulator 8.1 WVGA 4 inch 512MB** in der Dropdownliste neben der Schaltfläche **Gerät** auf der Symbolleiste **Debuggen** aus:  
+7. Wenn das Debugziel noch nicht ausgewählt ist, wählen Sie **Simulator** oder (für Windows Phone) **Emulator 8.1 WVGA 4 inch 512MB** in der Dropdownliste neben der Schaltfläche **Gerät** auf der Symbolleiste **Debuggen** aus:  
   
      ![Debugzielliste auswählen](../debugger/media/js-select-target.png "JS_Select_Target")  
   
-8.  Drücken Sie F5, um den Debugger zu starten.  
+8. Drücken Sie F5, um den Debugger zu starten.  
   
      Die App wird ausgeführt, aber es fehlen Bilder. APPHOST-Fehler im JavaScript-Konsolenfenster geben an, dass Bilder fehlen.  
   
-9. Geben Sie bei laufender `FlipView`-App im Simulator oder Phone-Emulator die Zeichenfolge `Data.items` an der Eingabeaufforderung des Konsolenfensters (neben dem Symbol ">>") ein, und drücken Sie die EINGABETASTE.  
+9. Mit der `FlipView` -app im Simulator oder Windows Phone-Emulator, Typ `Data.items` in der Eingabeaufforderung des Konsolenfensters (neben der ">>" Symbol), und drücken Sie die EINGABETASTE.  
   
-     Im Konsolenfenster wird eine Schnellansicht für das `items`-Objekt angezeigt. Dies weist darauf hin, dass das Objekt `items` instanziiert wurde und im aktuellen Skriptkontext verfügbar ist. Im Konsolenfenster können Sie auf die Knoten eines Objekts klicken (oder die Pfeiltasten verwenden), um die Eigenschaftswerte anzuzeigen. Wenn Sie wie in der folgenden Abbildung in das `items._data` -Objekt klicken, stellen Sie fest, dass die Bildquellverweise erwartungsgemäß falsch sind. Die Standardbilder ("logo.png") sind weiterhin im Objekt vorhanden, und mit den erwarteten Bildern sind fehlende Bilder vermischt.  
+     Im Konsolenfenster wird eine Schnellansicht für das `items` -Objekt angezeigt. Dies weist darauf hin, dass das Objekt `items` instanziiert wurde und im aktuellen Skriptkontext verfügbar ist. Im Konsolenfenster können Sie auf die Knoten eines Objekts klicken (oder die Pfeiltasten verwenden), um die Eigenschaftswerte anzuzeigen. Wenn Sie wie in der folgenden Abbildung in das `items._data` -Objekt klicken, stellen Sie fest, dass die Bildquellverweise erwartungsgemäß falsch sind. Die Standardbilder ("logo.png") sind weiterhin im Objekt vorhanden, und mit den erwarteten Bildern sind fehlende Bilder vermischt.  
   
      ![JavaScript-Konsolenfenster](../debugger/media/js-console-window.png "JS_Console_Window")  
   
@@ -187,7 +182,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
      Kopieren Sie diesen Code in die Eingabeaufforderung der JavaScript-Konsole.  
   
     > [!TIP]
-    >  Wenn Sie mehrzeiligen Code in die Eingabeaufforderung der JavaScript-Konsole einfügen, wechselt die Eingabeaufforderung der Konsole automatisch in den Mehrzeilenmodus. Sie können STRG+ALT+M drücken, um den Mehrzeilenmodus zu aktivieren und zu deaktivieren. Um ein Skript im Mehrzeilenmodus auszuführen, drücken Sie STRG+EINGABE, oder wählen Sie das Pfeilsymbol in der rechten unteren Fensterecke aus. Weitere Informationen finden Sie unter [Einzel- und Mehrzeilenmodus im JavaScript-Konsolenfenster](#SinglelineMultilineMode).  
+    > Wenn Sie mehrzeiligen Code in die Eingabeaufforderung der JavaScript-Konsole einfügen, wechselt die Eingabeaufforderung der Konsole automatisch in den Mehrzeilenmodus. Sie können STRG+ALT+M drücken, um den Mehrzeilenmodus zu aktivieren und zu deaktivieren. Um ein Skript im Mehrzeilenmodus auszuführen, drücken Sie STRG+EINGABE, oder wählen Sie das Pfeilsymbol in der rechten unteren Fensterecke aus. Weitere Informationen finden Sie unter [Einzel- und Mehrzeilenmodus im JavaScript-Konsolenfenster](#SinglelineMultilineMode).  
   
 12. Korrigieren Sie die `push` -Funktionsaufrufe in der Eingabeaufforderung, indem Sie `pages.push` durch `Data.items.setAt`ersetzen. Der korrigierte Code sollte wie folgt aussehen:  
   
@@ -198,7 +193,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
     ```  
   
     > [!TIP]
-    >  Wenn Sie das `pages` -Objekt anstelle von `Data.items`verwenden möchten, müssen Sie im Code einen Haltepunkt festlegen, um den Bereich des `pages` -Objekts beizubehalten.  
+    > Wenn Sie das `pages` -Objekt anstelle von `Data.items`verwenden möchten, müssen Sie im Code einen Haltepunkt festlegen, um den Bereich des `pages` -Objekts beizubehalten.  
   
 13. Wählen Sie das grüne Pfeilsymbol aus, um das Skript auszuführen.  
   
@@ -212,20 +207,20 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
 18. Beenden Sie das Debuggen, indem Sie **Debuggen** > **Debuggen beenden** auswählen, oder indem Sie UMSCHALT+F5 drücken, und korrigieren Sie anschließend den Quellcode.  
   
-     Die vollständige "default.HTML"-Seite mit dem korrigierten Beispielcode finden Sie unter [Debuggen von HTML, CSS und JavaScript-Beispielcode](../debugger/debug-html-css-and-javascript-sample-code.md).  
+     Die vollständige Seite „default.html“ mit dem korrigierten Beispielcode finden Sie unter [Debuggen von Beispielcode für HTML, CSS und JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md).  
   
-##  <a name="InteractiveDebuggingBreakMode"></a> Interaktiver Debug- und Unterbrechungsmodus  
+## <a name="InteractiveDebuggingBreakMode"></a> Interaktiver Debug- und Unterbrechungsmodus  
  Sie können Haltepunkte verwenden und Einzelschritte im Code durchführen, während Sie JavaScript-Debugtools wie z. B. das JavaScript-Konsolenfenster verwenden. Wenn ein im Debugger ausgeführtes Programm einen Haltepunkt erreicht, unterbricht der Debugger vorübergehend die Ausführung des Programms. Wenn die Ausführung angehalten wird, wechselt das Programm vom Ausführungs- in den Unterbrechungsmodus. Sie können die Ausführung jederzeit wieder fortsetzen.  
   
  Wenn sich ein Programm im Unterbrechungsmodus befindet, können Sie im JavaScript-Konsolenfenster Skripts und Befehle ausführen, die im aktuellen Skriptausführungskontext gültig sind. In diesem Verfahren wird anhand der korrigierten Version der `FlipView` -App, die Sie zuvor erstellt haben, die Verwendung des Unterbrechungsmodus gezeigt.  
   
 #### <a name="to-set-a-breakpoint-and-debug-the-app"></a>So legen Sie einen Haltepunkt fest und debuggen die App  
   
-1.  Öffnen Sie in der Datei "default.html" der von Ihnen erstellten `FlipView` -App das Kontextmenü für die `updateImages()` -Funktion. Wählen Sie dann **Haltepunkt** > **Haltepunkt einfügen**.  
+1. Öffnen Sie in der Datei "default.html" der von Ihnen erstellten `FlipView` -App das Kontextmenü für die `updateImages()` -Funktion. Wählen Sie dann **Haltepunkt** > **Haltepunkt einfügen**.  
   
-2.  Wählen Sie auf der Symbolleiste **Debuggen** in der Dropdownliste neben der Schaltfläche **Debuggen starten** den Eintrag **Lokaler Computer** oder **Emulator 8.1 WVGA 4 inch 512MB** aus.  
+2. Wählen Sie auf der Symbolleiste **Debuggen** in der Dropdownliste neben der Schaltfläche **Debuggen starten** den Eintrag **Lokaler Computer** oder **Emulator 8.1 WVGA 4 inch 512MB** aus.  
   
-3.  Wählen Sie **Debuggen** > **Lokaler Computer**aus, oder drücken Sie F5.  
+3. Wählen Sie **Debuggen** > **Lokaler Computer**aus, oder drücken Sie F5.  
   
      Die App wechselt in den Unterbrechungsmodus, wenn die Ausführung die `updateImages()` -Funktion erreicht. Die aktuelle Zeile der Programmausführung wird gelb hervorgehoben.  
   
@@ -233,36 +228,36 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
      Sie können Variablenwerte ändern, um den Programmzustand sofort zu beeinflussen, ohne die aktuelle Debugsitzung zu beenden.  
   
-4.  Geben Sie an der Eingabeaufforderung `updateImages` ein, und drücken Sie die EINGABETASTE. Im Konsolenfenster wird eine Schnellansicht für die Funktion angezeigt.  
+4. Geben Sie an der Eingabeaufforderung `updateImages` ein, und drücken Sie die EINGABETASTE. Im Konsolenfenster wird eine Schnellansicht für die Funktion angezeigt.  
   
-5.  Wählen Sie die Funktion im Konsolenfenster aus, um die Funktionsimplementierung anzuzeigen.  
+5. Wählen Sie die Funktion im Konsolenfenster aus, um die Funktionsimplementierung anzuzeigen.  
   
      In der folgenden Abbildung wird das Konsolenfenster an dieser Stelle angezeigt.  
   
      ![JavaScript-Konsolenfenster, die mit einer Schnellansicht](../debugger/media/js-console-function-visualizer.png "JS_Console_Function_Visualizer")  
   
-6.  Kopieren Sie eine Zeile der Funktion aus dem Ausgabefenster in die Eingabeeingabeaufforderung, und ändern Sie den Indexwert auf 3:  
+6. Kopieren Sie eine Zeile der Funktion aus dem Ausgabefenster in die Eingabeeingabeaufforderung, und ändern Sie den Indexwert auf 3:  
   
     ```javascript  
     pages.setAt(3, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
     ```  
   
-7.  Drücken Sie die EINGABETASTE, um die Codezeile auszuführen.  
+7. Drücken Sie die EINGABETASTE, um die Codezeile auszuführen.  
   
      Wenn Sie den Code zeilenweise durchlaufen möchten, drücken Sie F11. Drücken Sie andernfalls F5, um die Programmausführung fortzusetzen.  
   
-8.  Drücken Sie F5, um die Ausführung des Programms fortzusetzen. Die `FlipView` -App wird jetzt angezeigt. Auf allen vier Seiten wird eines der Nicht-Standardbilder angezeigt.  
+8. Drücken Sie F5, um die Ausführung des Programms fortzusetzen. Die `FlipView` -App wird jetzt angezeigt. Auf allen vier Seiten wird eines der Nicht-Standardbilder angezeigt.  
   
      Um wieder zu Visual Studio zu wechseln, drücken Sie F12 oder ALT+TAB.  
   
-##  <a name="SinglelineMultilineMode"></a> Einzel- und Mehrzeilenmodus im JavaScript-Konsolenfenster  
+## <a name="SinglelineMultilineMode"></a> Einzel- und Mehrzeilenmodus im JavaScript-Konsolenfenster  
  Die Eingabeaufforderung des JavaScript-Konsolenfensters unterstützt den Einzel- und den Mehrzeilenmodus. Die interaktive Debugprozedur in diesem Thema enthält jeweils ein Beispiel für die Verwendung beider Modi. Sie können STRG+ALT+M drücken, um zwischen den Modi zu wechseln.  
   
  Der Einzelzeilenmodus stellt den Eingabeverlauf bereit. Sie können durch den Eingabeverlauf navigieren, indem Sie die NACH-OBEN- und NACH-UNTEN-TASTEN verwenden. Im Einzelzeilenmodus wird die Eingabeeingabeaufforderung beim Ausführen von Skripts gelöscht. Um ein Skript im Einzelzeilenmodus auszuführen, drücken Sie die EINGABETASTE.  
   
  Im Mehrzeilenmodus wird die Eingabeeingabeaufforderung beim Ausführen von Skripts nicht gelöscht. Wenn Sie vom Mehr- in den Einzelzeilenmodus wechseln, können Sie die Eingabezeile löschen, indem Sie **Eingabe löschen** (das rote "X") drücken. Um ein Skript im Mehrzeilenmodus auszuführen, drücken Sie STRG+EINGABE, oder wählen Sie das Pfeilsymbol in der rechten unteren Fensterecke aus.  
   
-##  <a name="Switching"></a> Ändern des Skriptausführungskontexts  
+## <a name="Switching"></a> Ändern des Skriptausführungskontexts  
  Sie können im JavaScript-Konsolenfenster mit jeweils einem einzelnen Ausführungskontext interagieren, der eine Einzelinstanz des Webplattform-Hosts (WWAHost.exe) darstellt. In einigen Szenarien kann Ihre App jedoch eine weitere Instanz des Hosts starten, wenn Sie beispielsweise einen `iframe`, einen Freigabevertrag, einen Web-Worker oder ein `WebView` -Steuerelement verwenden. Sofern eine weitere Instanz des Hosts ausgeführt wird, können Sie einen anderen Ausführungskontext zum Ausführen der App auswählen, indem Sie den Ausführungskontext in der Liste **Ziel** auswählen.  
   
  In der folgenden Abbildung wird die Zielliste des JavaScript-Konsolenfensters gezeigt.  
@@ -271,24 +266,21 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
  Sie können den Ausführungskontext auch mithilfe des Befehls `cd` wechseln, dazu müssen Sie jedoch den Namen des anderen Ausführungskontexts kennen, und die verwendete Referenz muss im Bereich liegen. Die Liste **Ziel** bietet besseren Zugriff auf andere Ausführungskontexte.  
   
-##  <a name="BrowserSupport"></a> Unterstützung für Browser und Plattform  
+## <a name="BrowserSupport"></a> Unterstützung für Browser und Plattform  
  Das JavaScript-Konsolenfenster wird auf folgenden Plattformen unterstützt:  
   
--   [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] und Windows Phone Store-Apps mit JavaScript und HTML  
+- [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] und Windows Phone Store-Apps mit JavaScript und HTML  
   
--   Internet Explorer 11 wird unter [!INCLUDE[win81](../includes/win81-md.md)] ausgeführt  
+- Internet Explorer 11 wird unter [!INCLUDE[win81](../includes/win81-md.md)]ausgeführt  
   
--   Internet Explorer 10 wird unter [!INCLUDE[win8](../includes/win8-md.md)]ausgeführt  
+- Internet Explorer 10 wird unter [!INCLUDE[win8](../includes/win8-md.md)]ausgeführt  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
  [JavaScript Console commands](../debugger/javascript-console-commands.md)   
- [Aktualisieren einer app (JavaScript)](../debugger/refresh-an-app-javascript.md)   
+ [Aktualisieren einer App (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [Tastenkombinationen](../debugger/keyboard-shortcuts-html-and-javascript.md)   
- [Debuggen von HTML, CSS und JavaScript-Beispielcode](../debugger/debug-html-css-and-javascript-sample-code.md)   
+ [Debuggen von Beispielcode für HTML, CSS und JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
  [Schnellstart: Debuggen von HTML und CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Debuggen eines WebView-Steuerelements](../debugger/debug-a-webview-control.md)   
  [Produktsupport und Barrierefreiheit](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
-
-
-

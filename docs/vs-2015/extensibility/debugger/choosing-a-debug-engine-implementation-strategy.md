@@ -1,26 +1,21 @@
 ---
 title: Auswählen einer Implementierungsstrategie für die Debug-Engine | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, implementation strategies
 ms.assetid: 90458fdd-2d34-4f10-82dc-6d8f31b66d8b
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9d2f4d4f907dcabb2aff5457abbbe215507d7601
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6b03e69892da217d84d56b39b7df61784907d2b0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734625"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117693"
 ---
 # <a name="choosing-a-debug-engine-implementation-strategy"></a>Auswählen einer Implementierungsstrategie für die Debug-Engine
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,10 +29,9 @@ Verwenden Sie die Run-Time-Architektur, um Ihre Implementierungsstrategie für d
   
  Andernfalls können Sie auswählen zwischen der DE Erstellen von in-Process, das SDM oder in-Process an das Programm debuggt werden. Es ist wichtig zu berücksichtigen, ob die ausdrucksauswertung des DE häufig Zugriff auf den Symbolspeicher Programm benötigt, und gibt an, ob die Symbolspeicher in den Arbeitsspeicher für schnellen Zugriff geladen werden kann. Beachten Sie auch Folgendes ein:  
   
--   Erstellen Sie wenn nicht viele Aufrufe zwischen der ausdrucksauswertung und den Symbolspeicher vorhanden sind, oder der Symbolspeicher in den Speicherbereich SDM gelesen werden kann, die DE in-Process an das SDM. Sie müssen die CLSID des Debug-Engine, das SDM zurückkehren, wenn es in Ihr Programm angefügt wird. Das SDM verwendet diese CLSID zum Erstellen einer in-Process-Instanz des DE.  
+- Erstellen Sie wenn nicht viele Aufrufe zwischen der ausdrucksauswertung und den Symbolspeicher vorhanden sind, oder der Symbolspeicher in den Speicherbereich SDM gelesen werden kann, die DE in-Process an das SDM. Sie müssen die CLSID des Debug-Engine, das SDM zurückkehren, wenn es in Ihr Programm angefügt wird. Das SDM verwendet diese CLSID zum Erstellen einer in-Process-Instanz des DE.  
   
--   Wenn das Programm den Zugriff auf das Symbol Store die DE aufgerufen werden muss, erstellen Sie die DE in-Process mit dem Programm an. In diesem Fall erstellt das Programm die Instanz des DE.  
+- Wenn das Programm den Zugriff auf das Symbol Store die DE aufgerufen werden muss, erstellen Sie die DE in-Process mit dem Programm an. In diesem Fall erstellt das Programm die Instanz des DE.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Visual Studio Debugger-Erweiterbarkeit](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
-

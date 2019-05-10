@@ -1,7 +1,6 @@
 ---
-title: 'CA1402: Überladungen in für COM sichtbaren Schnittstellen vermeiden'
+title: 'CA1402: Überladungen in für COM sichtbaren Schnittstellen vermeiden.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - AvoidOverloadsInComVisibleInterfaces
@@ -12,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: 2724c1f9-d5d3-4704-b124-21c4d398e5df
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 056e572ef7a572c83731851d49420e0c713c6cc9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3f1bd825d2e2a74178c9ec03a0abc51d3385ba29
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935527"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546556"
 ---
-# <a name="ca1402-avoid-overloads-in-com-visible-interfaces"></a>CA1402: Überladungen in für COM sichtbaren Schnittstellen vermeiden
+# <a name="ca1402-avoid-overloads-in-com-visible-interfaces"></a>CA1402: Überladungen in für COM sichtbaren Schnittstellen vermeiden.
 
 |||
 |-|-|

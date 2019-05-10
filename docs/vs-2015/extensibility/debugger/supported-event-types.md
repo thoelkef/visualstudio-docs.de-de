@@ -1,26 +1,21 @@
 ---
 title: Unterstützte Ereignistypen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], supported events
 ms.assetid: a3c0386d-551e-4734-9a0c-368d1c2e6671
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: dd6f8f5b7c2782bb908538426cb531db216b72fb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f671e8d0128bee2c52dc1191b33edb889c92d2e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781464"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446440"
 ---
 # <a name="supported-event-types"></a>Unterstützte Ereignistypen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,7 +45,7 @@ Debuggen in Visual Studio unterstützt derzeit die folgenden Ereignistypen aus:
     Die Schnittstellen [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) und [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) sind Beispiele für Beenden-Ereignisse.  
   
   > [!NOTE]
-  >  Asynchrones beenden-Ereignisse werden nicht unterstützt. Es ist ein Fehler, wenn eine asynchrone Stopping-Ereignis zu senden.  
+  > Asynchrones beenden-Ereignisse werden nicht unterstützt. Es ist ein Fehler, wenn eine asynchrone Stopping-Ereignis zu senden.  
   
 ## <a name="discussion"></a>Diskussion  
  Die tatsächliche Implementierung der Ereignisse hängt von den Entwurf Ihrer DE ab. Der Typ jedes Ereignisses gesendet haben, richtet sich nach der Attribute, die festgelegt werden, wenn Sie die DE entwerfen. Beispielsweise kann ein DE senden ein [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) als ein asynchrones Ereignis, während eine andere als eine Beenden-Ereignis senden kann.  
@@ -58,7 +53,7 @@ Debuggen in Visual Studio unterstützt derzeit die folgenden Ereignistypen aus:
  Die folgende Tabelle gibt an, welche Programm- und Thread-Parameter für die Ereignisse sowie die Ereignistypen erforderlich sind. Jedes Ereignis kann synchron sein. Kein Ereignis muss synchron sein.  
   
 > [!NOTE]
->  Die [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) Schnittstelle ist für alle Ereignisse erforderlich.  
+> Die [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) Schnittstelle ist für alle Ereignisse erforderlich.  
   
 |event|IDebugProgram2|IDebugThread2|Beenden von Ereignissen|  
 |-----------|--------------------|-------------------|---------------------|  
@@ -94,4 +89,3 @@ Debuggen in Visual Studio unterstützt derzeit die folgenden Ereignistypen aus:
   
 ## <a name="see-also"></a>Siehe auch  
  [Senden von Ereignissen](../../extensibility/debugger/sending-events.md)
-

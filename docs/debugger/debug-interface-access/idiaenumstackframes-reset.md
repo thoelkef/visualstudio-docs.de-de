@@ -9,27 +9,27 @@ helpviewer_keywords:
 ms.assetid: efaba727-f271-44e9-beec-8441fb57664d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a4d7d7b85890460e009559999fdce7cce3e0c89
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 0bdf24fb9926c66b389430208d16f943af41cc11
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954142"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829423"
 ---
 # <a name="idiaenumstackframesreset"></a>IDiaEnumStackFrames::Reset
-Setzt die Enumerationsfolge auf den Anfang zurück.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT Reset();  
-```  
-  
-## <a name="return-value"></a>Rückgabewert  
- Gibt `S_OK`zurück.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)
+Setzt die Enumerationsfolge auf den Anfang zurück.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT Reset();
+```
+
+## <a name="return-value"></a>Rückgabewert
+ Gibt `S_OK`zurück.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)

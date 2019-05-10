@@ -1,7 +1,6 @@
 ---
 title: Globalisierungswarnungen
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.globalizationrules
@@ -13,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: a8d12d41-14bf-4b43-af24-168312d7c390
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de70944f4bf8e4944b94285a570e6d85ec1a5bb7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3b61b0f10e4231ce1970a55cf352490cbf02a42d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821395"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816530"
 ---
 # <a name="globalization-warnings"></a>Globalisierungswarnungen
 Globalisierungswarnungen Global verwendbare Bibliotheken und Anwendungen zu unterstützen.

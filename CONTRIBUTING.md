@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 1a53d6fed4b2900aa730f4a5c2e04d528b42d1b9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62419842"
+---
 # <a name="contribute-to-visual-studio-documentation"></a>Beitragen zur Visual Studio-Dokumentation
 
 Vielen Dank, dass Sie sich die Zeit genommen haben, um zur Visual Studio-Dokumentation beizutragen.
@@ -25,3 +33,7 @@ Befolgen Sie die Anweisungen für [QuickEdits (schnelle Änderungen) für vorhan
 ### <a name="larger-edits"></a>Größere Änderungen
 
 Lesen Sie den Leitfaden für [Pull Requests](https://docs.microsoft.com/contribute/how-to-write-workflows-major#pull-request-processing) im Leitfaden für Mitwirkende.
+
+**HINWEIS**
+
+Es wird nicht aktiv an den Dateien im `docs/vs-2015`-Ordner gearbeitet, da diese für Visual Studio 2015 sind, eine ältere Version dieses Produkts. Pull Requests für triviale Änderungen an diesen Dateien werden nicht akzeptiert.

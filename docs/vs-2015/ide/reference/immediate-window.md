@@ -1,14 +1,9 @@
 ---
 title: Direktfenster | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ImmediateWindow
 helpviewer_keywords:
@@ -19,18 +14,17 @@ ms.assetid: d33e7937-73f3-4c69-9df0-777a8713c6f2
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: be77104c4570068cbebf6c25801f600757a6ee0d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e6bbbd4fa2ad051407ece3e05c1806c1231ef2e8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850424"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437121"
 ---
 # <a name="immediate-window"></a>Direktfenster
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Das Fenster **Direkt** wird zum Debuggen und Auswerten von Ausdrücken, Ausführen von Anweisungen, Drucken von Variablenwerten usw. verwendet. Er ermöglicht die Eingabe von Ausdrücken, die von der Entwicklungssprache während des Debuggens ausgewertet oder ausgeführt werden sollen. Um das Fenster **Direkt** anzuzeigen, öffnen Sie ein Projekt zur Bearbeitung und wählen dann im Menü **Debuggen** zunächst **Fenster** und dann **Direkt** aus, oder drücken Sie STRG+ALT+I.  
   
  Sie können in diesem Fenster einzelne [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]-Befehle ausgeben. Zu den verfügbaren Befehlen gehört `EvaluateStatement`. Damit können Variablen Werte zugewiesen werden. Das Fenster **Direkt** unterstützt auch IntelliSense.  
@@ -51,7 +45,7 @@ Das Fenster **Direkt** wird zum Debuggen und Auswerten von Ausdrücken, Ausführ
  Beide Versionen dieses Befehls geben den Wert der Variablen `varA` zurück.  
   
 > [!NOTE]
->  Wenn Sie einen [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]-Befehl im Fenster **Direkt** angeben, müssen Sie dem Befehl ein Größer-als-Zeichen (>) voranstellen. Wechseln Sie zum Fenster **Befehl**, wenn Sie mehrere Befehle eingeben möchten.  
+> Wenn Sie einen [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]-Befehl im Fenster **Direkt** angeben, müssen Sie dem Befehl ein Größer-als-Zeichen (>) voranstellen. Wechseln Sie zum Fenster **Befehl**, wenn Sie mehrere Befehle eingeben möchten.  
   
 ## <a name="design-time-expression-evaluation"></a>Ausdrucksauswertung zur Entwurfszeit  
  Sie können das Fenster **Direkt** verwenden, um eine Funktion oder Unterroutine zur Entwurfszeit auszuführen.  
@@ -80,7 +74,7 @@ Das Fenster **Direkt** wird zum Debuggen und Auswerten von Ausdrücken, Ausführ
   
     Das Fenster **Direkt** führt `MyFunction` aus und zeigt `4` an.  
   
-   Wenn die Funktion oder die Unterroutine einen Haltepunkt enthält, unterbricht [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] die Ausführung an der entsprechenden Stelle. Sie können dann die Debuggerfenster verwenden, um den Programmzustand zu überprüfen. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Debuggen zur Entwurfszeit](../../debugger/walkthrough-debugging-at-design-time.md).  
+   Wenn die Funktion oder die Unterroutine einen Haltepunkt enthält, unterbricht [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] die Ausführung an der entsprechenden Stelle. Sie können dann die Debuggerfenster verwenden, um den Programmzustand zu überprüfen. Weitere Informationen finden Sie unter [Walkthrough: Debugging at Design Time (Exemplarische Vorgehensweise: Debuggen zur Entwurfszeit)](../../debugger/walkthrough-debugging-at-design-time.md).  
   
    Die Ausdrucksauswertung zur Entwurfszeit ist nicht für Projekttypen verfügbar, die das Starten einer Ausführungsumgebung erfordern, z. B. [!INCLUDE[trprVSTOshort](../../includes/trprvstoshort-md.md)]-Projekte, Webprojekte, Projekte für intelligente Geräte und SQL-Projekte.  
   
@@ -124,9 +118,9 @@ Das Fenster **Direkt** wird zum Debuggen und Auswerten von Ausdrücken, Ausführ
   
 #### <a name="to-toggle-first-chance-exception-notifications-in-the-immediate-window"></a>So blenden Sie Ausnahmebenachrichtigungen (erste Chance) im Direktfenster ein und aus  
   
-1.  Klicken Sie im Menü **Ansicht** auf **Weitere Fenster** und dann auf **Ausgabe**.  
+1. Klicken Sie im Menü **Ansicht** auf **Weitere Fenster** und dann auf **Ausgabe**.  
   
-2.  Klicken Sie mit der rechten Maustaste auf den Textbereich des **Ausgabefensters**, und aktivieren bzw. deaktivieren Sie die Option **Ausnahmemeldungen**.  
+2. Klicken Sie mit der rechten Maustaste auf den Textbereich des **Ausgabefensters**, und aktivieren bzw. deaktivieren Sie die Option **Ausnahmemeldungen**.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Navigieren im Code mit dem Debugger](../../debugger/navigating-through-code-with-the-debugger.md)   
@@ -136,6 +130,3 @@ Das Fenster **Direkt** wird zum Debuggen und Auswerten von Ausdrücken, Ausführ
  [Exemplarische Vorgehensweise: Debuggen zur Entwurfszeit](../../debugger/walkthrough-debugging-at-design-time.md)   
  [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)   
  [Verwenden von regulären Ausdrücken in Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)
-
-
-

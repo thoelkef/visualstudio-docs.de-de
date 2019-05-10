@@ -1,14 +1,9 @@
 ---
 title: CallTarget-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -21,18 +16,17 @@ ms.assetid: bb1fe2c4-4383-436f-8326-c24cc4a46150
 caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fc3c5822732a4ae584500bfe1c48d7ba9e29b038
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9093b35cc444fc0b346f81a91d20afe73bd476cd
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307676"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667585"
 ---
 # <a name="calltarget-task"></a>CallTarget-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Ruft die angegebenen Ziele in der Projektdatei ab.  
   
 ## <a name="task-parameters"></a>Aufgabenparameter  
@@ -40,12 +34,12 @@ Ruft die angegebenen Ziele in der Projektdatei ab.
   
 |Parameter|Beschreibung|  
 |---------------|-----------------|  
-|`RunEachTargetSeparately`|Optionaler `Boolean`-Ausgabeparameter.<br /><br /> Wenn `true`, wird die [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Engine einmal pro Ziel aufgerufen. Wenn `false`, wird die [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Engine einmal aufgerufen, um alle Ziele zu erstellen. Der Standardwert ist `false`.|  
+|`RunEachTargetSeparately`|Optionaler `Boolean`-Ausgabeparameter.<br /><br /> Wenn `true`, wird die [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Engine einmal pro Ziel aufgerufen. Wenn `false`, wird die [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Engine einmal aufgerufen, um alle Ziele zu erstellen. Der Standardwert ist `false`sein.|  
 |`TargetOutputs`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Enthält die Ausgaben aller erstellten Ziele.|  
 |`Targets`|Optionaler `String[]` -Parameter.<br /><br /> Gibt das Ziel oder die Ziele an, die erstellt werden sollen.|  
 |`UseResultsCache`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, wird das zwischengespeicherte Ergebnis zurückgegeben, sofern es vorhanden ist.<br /><br /> **Hinweis** Wenn eine MSBuild-Aufgabe ausgeführt wird, wird deren Ausgabe in einem Gültigkeitsbereich als eine Liste von Buildelementen zwischengespeichert (ProjectFileName, GlobalProperties)[TargetNames].|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Wenn ein in `Targets` angegebenes Ziel fehlschlägt und `RunEachTargetSeparately` `true` ist, fährt die Aufgabe mit dem Erstellen der verbleibenden Ziele fort.  
   
  Wenn Sie die Standardziele erstellen möchten, verwenden Sie die [MSBuild-Aufgabe](../msbuild/msbuild-task.md), und legen Sie den `Projects`-Parameter auf `$(MSBuildProjectFile)` fest.  
@@ -73,6 +67,3 @@ Ruft die angegebenen Ziele in der Projektdatei ab.
 ## <a name="see-also"></a>Siehe auch  
  [Task Reference](../msbuild/msbuild-task-reference.md)  (MSBuild-Aufgabenreferenz)  
  [Ziele](../msbuild/msbuild-targets.md)
-
-
-

@@ -1,8 +1,6 @@
 ---
 title: Verwalten von Anwendungsressourcen (.NET)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - msvse_resedit.dlg.SetCustomTool
@@ -16,15 +14,15 @@ helpviewer_keywords:
 - application resources [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9a80a84276648f8a0f0d5a94992b5f58cbcfefa
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 1681484500c382b296a03e78661b808825768a5b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348121"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62538108"
 ---
 # <a name="manage-application-resources-net"></a>Verwalten von Anwendungsressourcen (.NET)
 
@@ -40,7 +38,7 @@ Weitere Informationen zu Ressourcen in .NET-Desktop-Apps finden Sie unter [Resou
 Öffnen Sie das Projekteigenschaftenfenster in einem Projekt mit verwaltetem Code. Sie können das Eigenschaftenfenster öffnen, indem Sie Folgendes durchführen:
 
 - Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projektknoten, und wählen Sie dann **Eigenschaften** aus.
-- Eingeben von „Projekteigenschaften“ in das Fenster **Schnellstart**
+- Geben Sie im Suchfeld, das Sie über **STRG**+**Q** aufrufen, den Begriff **Projekteigenschaften** ein.
 - Drücken von **ALT**+**EINGABE** im **Projektmappen-Explorer**
 
 Wählen Sie die Registerkarte **Ressourcen** aus. Sie können eine *RESX-Datei* hinzufügen, wenn das Projekt noch keine enthält, sowie verschiedene Arten von Ressourcen hinzufügen und löschen und vorhandene Ressourcen ändern.

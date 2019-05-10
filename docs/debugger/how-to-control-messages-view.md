@@ -1,24 +1,27 @@
 ---
 title: 'Vorgehensweise: Steuern der Meldungsansicht | Microsoft-Dokumentation'
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Spy++, Messages View
 - Messages view, controlling
 ms.assetid: 32685ab2-6c5b-41fc-b429-29260caef585
-author: mikejo5000
+caps.latest.revision: 7
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: 299bed89ecd2c73b1f8e8fe976bf570a19a6b20f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 0007d1ad1e87b2e1f2d34b039b4105bb525578a7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62894632"
 ---
 # <a name="how-to-control-messages-view"></a>Vorgehensweise: Steuern der Meldungsansicht
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 Mit Spy++, haben Sie erhebliche Kontrolle für den Inhalt von einem [Meldungsansicht](../debugger/messages-view.md) Fenster. Sie können [starten und Beenden von](../debugger/how-to-start-and-stop-the-message-log-display.md) Anzeigen von Nachrichten an einem beliebigen Zeitpunkt, und Sie können angeben:  
   
 - Welche Nachrichtentypen, die Sie anzeigen möchten.  

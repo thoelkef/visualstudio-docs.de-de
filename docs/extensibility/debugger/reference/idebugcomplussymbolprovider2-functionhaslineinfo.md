@@ -1,29 +1,31 @@
 ---
 title: IDebugComPlusSymbolProvider2::FunctionHasLineInfo | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - FunctionHasLineInfo
 - IDebugComPlusSymbolProvider2::FunctionHasLineInfo
 ms.assetid: e1b508f1-6521-492f-b110-ab957744a037
-author: gregvanl
+caps.latest.revision: 11
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 5f6427e1ac933bcc0e42b4a8a9ce089f7b10c1cd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a2276c017646f9ac0b1028a4a5433d0e3cf2d84a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62922712"
 ---
 # <a name="idebugcomplussymbolprovider2functionhaslineinfo"></a>IDebugComPlusSymbolProvider2::FunctionHasLineInfo
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Bestimmt, ob die angegebene Methode über Zeileninformationen verfügt.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT FunctionHasLineInfo(  
    IDebugAddress* pAddress  
 );  
@@ -45,7 +47,7 @@ int FunctionHasLineInfo(
 ## <a name="example"></a>Beispiel  
  Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) Schnittstelle.  
   
-```cpp  
+```cpp#  
 HRESULT CDebugSymbolProvider::FunctionHasLineInfo(  
     IDebugAddress* pAddress  
 )  

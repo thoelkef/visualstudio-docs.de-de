@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.assetid: 663140ea-a568-472b-a79a-dfea8818e06a
 author: corob
 ms.author: mblome
-manager: douge
+manager: jillfra
 f1_keywords:
 - VC.Project.VCClangCompilerTool.AdditionalIncludeDirectories
 - VC.Project.VCClangCompilerTool.DebugInformationFormat
@@ -43,16 +43,16 @@ f1_keywords:
 - vc.project.AdditionalOptionsPage
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: efceeb201a7f1afcbf7cc2c6d46619301284d823
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 055ec15deed2e5071c50d9903779d00030e07b02
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232116"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62819915"
 ---
 # <a name="clang-project-properties-android-c"></a>Clang-Projekteigenschaften (Android C++)
 
-Eigenschaft | Beschreibung  | Auswahlmöglichkeiten
+Eigenschaft | Beschreibung | Auswahlmöglichkeiten
 --- | ---| ---
 Zusätzliche Includeverzeichnisse | Gibt mindestens ein Verzeichnis an, das dem include-Pfad hinzugefügt werden soll. Verwenden Sie Semikolons als Trennzeichen, wenn mehrere Verzeichnisse vorhanden sind. (-I[path]).
 Debuginformationsformat | Gibt den Typ der Debuginformationen an, die vom Compiler generiert werden. | **Keine**: Generiert keine Debuginformationen, sodass die Kompilierung ggf. schneller erfolgt.<br>**Vollständige Debugging-Informationen(DWARF2)**: Generiert DWARF2-Debuginformationen.<br>**Informationen zur Zeilennummer**: Nur Zeilennummerninformationen generieren.<br>

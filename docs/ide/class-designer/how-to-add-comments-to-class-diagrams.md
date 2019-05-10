@@ -1,7 +1,6 @@
 ---
 title: 'Vorgehensweise: Hinzufügen von Kommentaren zu Klassendiagrammen (Klassen-Designer)'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.comment
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: d54005d5-a29d-4c4e-b153-feb6e84dd44f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cff9069392fe3c5a3505128788458916ed78c01f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ad54dc716e02eabcc064d87213d01491f43eae82
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975533"
 ---
 # <a name="how-to-add-comments-to-class-diagrams"></a>Vorgehensweise: Hinzufügen von Kommentaren zu Klassendiagrammen
 
@@ -32,9 +31,9 @@ Sie können die Größe einer Kommentarform ändern, jedoch nicht andere Aspekte
 
 ## <a name="to-add-a-comment"></a>So fügen Sie ein Kommentar hinzu
 
-1.  Ziehen Sie ein Kommentar aus der **Klassen-Designer-Toolbox** in das Klassendiagramm.
+1. Ziehen Sie ein Kommentar aus der **Klassen-Designer-Toolbox** in das Klassendiagramm.
 
-2.  Klicken Sie in die neue Kommentarform im Diagramm, und geben Sie den gewünschten Text ein.
+2. Klicken Sie in die neue Kommentarform im Diagramm, und geben Sie den gewünschten Text ein.
 
 ## <a name="see-also"></a>Siehe auch
 

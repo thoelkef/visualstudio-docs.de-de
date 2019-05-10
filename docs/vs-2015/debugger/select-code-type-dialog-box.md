@@ -1,14 +1,9 @@
 ---
 title: Wählen Sie im Dialogfeld "Typ" Code | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.selectengines
 dev_langs:
@@ -29,28 +24,25 @@ ms.assetid: 932269fe-94e3-43cb-8931-078f31afd177
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d24f20741ee3934a5835aeac852a279ac6cb2e77
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 21e678df1fa3dc9ca237e9a8cb4e377fb27b0aaf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801809"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58960643"
 ---
 # <a name="select-code-type-dialog-box"></a>Dialogfeld "Codetyp auswählen"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Um das Dialogfeld zu öffnen, öffnen die **an den Prozess anhängen** (Dialogfeld), und klicken Sie dann auf die **wählen** Schaltfläche.  
+Zum Öffnen dieses Dialogfelds öffnen Sie das Dialogfeld **An den Prozess anhängen** und klicken auf die Schaltfläche **Auswählen**.  
   
- **Bestimmen Sie den Typ der zu debuggenden Codetyp automatisch**  
+ **Zu debuggenden Codetyp automatisch bestimmen**  
  Der entsprechende Debugger wird auf Grundlage des ausgeführten Codetyps ausgewählt.  
   
- **Debuggen Sie diese Codetypen:**  
+ **Diese Codetypen debuggen:**  
  Wählen Sie den zu debuggenden Codetyp in der angegebenen Liste aus.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Debuggersicherheit](../debugger/debugger-security.md)   
+ [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
  [Anfügen an laufende Prozesse](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
-
-
-

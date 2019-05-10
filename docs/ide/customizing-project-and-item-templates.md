@@ -1,20 +1,19 @@
 ---
 title: Anpassen von Projekt- und Elementvorlagen
 ms.date: 01/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - customizing templates [Visual Studio]
 - Visual Studio templates, customizing
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 8f52a948158ec4a48ee3c521c04c65f875156823
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 7e80bf422906c2b89e75462938d736fd3a0e5a41
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864529"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978145"
 ---
 # <a name="customize-project-and-item-templates"></a>Anpassen von Projekt- und Elementvorlagen
 

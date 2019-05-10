@@ -1,25 +1,31 @@
 ---
 title: Veröffentlichen in Azure App Service
-ms.date: 06/22/2018
+ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
 ms.assetid: fc82b1f1-d342-4b82-9a44-590479f0a895
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 4e7cf13658c33caf6b58d6a4e661a8431f377845
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 114c6aca7ec7ed05858868b22f7547b0a071420f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62927713"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Veröffentlichen einer Web-App in Azure App Service mit Visual Studio
 
-Sie können mit dem Tool **Veröffentlichen** in Azure App Service oder Azure App Service Linux (mit Containern) ASP.NET-, ASP.NET Core-, Node.js- und .NET Core-Apps veröffentlichen. Führen Sie für Python-Apps die Schritte unter [Python – Veröffentlichen in Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) aus.
+Mithilfe einer der folgenden Methoden können Sie ASP.NET-, ASP.NET Core, Node.js und .NET Core-Apps in Azure App Service oder Azure App Service Linux (mit Containern) veröffentlichen.
+
+* Verwenden Sie Azure DevOps mit [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azdevops) für die kontinuierliche (oder automatisierte) Bereitstellung von Apps.
+
+* Verwenden Sie für die einmalige (oder manuelle) Bereitstellung von Apps das Tool zum **Veröffentlichen** in Visual Studio, um ASP.NET-, ASP.NET Core, Node.js und .NET Core-Apps in Azure App Service oder Azure App Service Linux (mit Containern) bereitzustellen. Führen Sie für Python-Apps die Schritte unter [Python – Veröffentlichen in Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) aus.
+
+In diesem Artikel wird beschrieben, wie Sie das Tool zum **Veröffentlichen** für die einmalige Bereitstellung verwenden.
 
 [!INCLUDE [quickstart-prereqs-azure](includes/quickstart-prereqs-azure.md)]
 

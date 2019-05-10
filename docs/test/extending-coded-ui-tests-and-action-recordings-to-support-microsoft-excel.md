@@ -1,19 +1,18 @@
 ---
 title: Erweitern von Tests der programmierten UI und Aktionsaufzeichnungen
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 71e5ae809cf2c42e032d8545f0007c61d97e7047
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 07cdc27cb47a6de46585f573d78b5af00631c2a2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842165"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002392"
 ---
 # <a name="extend-coded-ui-tests-and-action-recordings"></a>Erweitern von Tests der programmierten UI und Aktionsaufzeichnungen
 

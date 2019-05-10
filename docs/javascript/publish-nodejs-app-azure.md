@@ -6,17 +6,17 @@ ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: fcd7c64e15f890c2411327bff5bdc820509fe712
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a06f2e530472756e2620c84cd872895dfc6fa453
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846255"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62841434"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Veröffentlichen einer Node.js-Anwendung in Azure (Linux App Service)
 
@@ -36,15 +36,42 @@ In diesem Tutorial lernen Sie, wie die folgenden Aufgaben ausgeführt werden:
 > * Erstellen eines Linux App Service in Azure
 > * Bereitstellen in Linux
 
+## <a name="prerequisites"></a>Erforderliche Komponenten
+
+* Sie müssen Visual Studio und die Workload für die Node.js-Entwicklung installiert haben.
+
+    ::: moniker range=">=vs-2019"
+    Wenn Sie Visual Studio 2019 noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/) kostenlos herunterladen.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Wenn Sie Visual Studio 2017 noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/) kostenlos herunterladen.
+    ::: moniker-end
+
+    Wenn Sie die Workload installieren müssen, Visual Studio aber bereits besitzen, navigieren Sie zu **Tools** > **Tools und Features abrufen…**. Dadurch wird der Visual Studio-Installer geöffnet. Klicken Sie auf die Workload **Node.js-Entwicklung** und anschließend auf **Ändern**.
+
+    ![Node.js-Workload im VS-Installer](../ide/media/quickstart-nodejs-workload.png)
+
+* Die Node.js-Laufzeit muss installiert sein.
+
+    Wenn sie nicht bereits installiert ist, installieren Sie die LTS-Version über die [Node.js](https://nodejs.org/en/download/)-Website. Im Allgemeinen erkennt Visual Studio die installierte Node.js-Runtime automatisch. Wird die installierte Laufzeit nicht erkannt, können Sie das Projekt so konfigurieren, dass es auf die installierte Laufzeit auf der Eigenschaftenseite verweist (klicken Sie hierfür nach dem Erstellen des Projekts mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Eigenschaften** aus).
+
 ## <a name="create-a-nodejs-project-to-run-in-azure"></a>Erstellen eines Node.js-Projekts zum Ausführen in Azure
 
-1. Erstellen Sie eine neue TypeScript Express-App mithilfe des Dialogfelds **Datei** > **Neues Projekt**.
+1. Öffnen Sie Visual Studio.
 
-1. Wählen Sie unter dem **TypeScript**-Knoten die Option **Basic Node.js Express 4 Application** aus.
+1. Erstellen Sie eine neue TypeScript Express-App.
+
+    ::: moniker range=">=vs-2019"
+    Drücken Sie **ESC**, um das Startfenster zu schließen. Geben Sie **STRG + Q** ein, um das Suchfeld zu öffnen, geben Sie **Node.js** ein, und wählen Sie dann **Neue einfache Azure Node.js Express 4-Anwendung erstellen** (TypeScript) aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Erweitern Sie im linken Bereich des Dialogfelds **Neues Projekt** den Eintrag **TypeScript**, und wählen Sie dann **Node.js** aus. Wählen Sie im mittleren Bereich die Option **Azure Node.js Express 4-Basisanwendung** und anschließend **OK** aus.
 
     ![Erstellen einer neuen TypeScript Express-App](../javascript/media/azure-ts-express-app.png)
+    ::: moniker-end
+    Wenn die Projektvorlage **Azure Node.js Express 4-Basisanwendung** nicht angezeigt wird, müssen Sie die Workload **Node.js-Entwicklung** hinzufügen. Ausführliche Anweisungen dazu finden Sie in den [Voraussetzungen](#prerequisites).
 
-1. Klicken Sie auf **OK**, um das Projekt in Visual Studio zu erstellen.
+    Visual Studio erstellt das Projekt und öffnet es im Projektmappen-Explorer (rechter Bereich).
 
 1. Drücken Sie die Taste **F5**, um die App zu kompilieren und auszuführen. Stellen Sie sicher, dass alles wie erwartet ausgeführt wird.
 

@@ -1,14 +1,9 @@
 ---
 title: 'CA1713: Ereignisse sollten kein aufweisen, vor oder nach Präfix | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - EventsShouldNotHaveBeforeOrAfterPrefix
 - CA1713
@@ -20,14 +15,14 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 56d67ff76e0969c179fa593415871f10f60c05c6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6a36f9c8ce788b30f14d8ca0ce9d565ab45975a5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874344"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62535203"
 ---
-# <a name="ca1713-events-should-not-have-before-or-after-prefix"></a>CA1713: Ereignisse sollten kein Before- oder After-Präfix aufweisen
+# <a name="ca1713-events-should-not-have-before-or-after-prefix"></a>CA1713: Ereignisse sollten kein Before- oder After-Präfix aufweisen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -50,6 +45,3 @@ ms.locfileid: "49874344"
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Unterdrücken Sie keine Warnung dieser Regel.
-
-
-

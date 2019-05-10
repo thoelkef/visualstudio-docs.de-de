@@ -1,14 +1,9 @@
 ---
 title: 'DA0022: Hohes Maß an Garbage Collections der Generation 2 | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0022
 - vs.performance.rules.DA0022
@@ -17,13 +12,13 @@ ms.assetid: f871a547-0e6f-4b11-b2d7-174d30fc2ed8
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8da44ab48ae468c5b71bcd08d106548f40d04aa8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 820d74a9dced29dc237c4bf182419abcb7d503b3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757064"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755288"
 ---
 # <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022: Hohes Maß an Garbage Collections der Generation 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51757064"
 Regel-Id | DA0022 |  
 | Kategorie |. NET Framework-Verwendung |  
 | Profilerstellungsmethode | Alle |  
-| Nachricht | Es ist ein relativ hohes Maß an Garbage Collections der Generation 2 ausgeführt. Ist ein Großteil der Programmdatenstrukturen entwurfsbedingt zugeordnet und für einen längeren Zeitraum gespeichert, stellt dies üblicherweise kein Problem dar. Ist dieses Verhalten jedoch nicht beabsichtigt, werden von der Anwendung unter Umständen Objekte festgehalten. Wenn Sie nicht sicher sind, können Sie sammeln, .NET-Speicherbelegungsdaten und Lebensdauerinformationen um das Muster der speicherbelegung zu verstehen, die Anwendung verwendet. |  
+| Nachricht | Es ist ein relativ hohes Maß an Garbage Collections der Generation 2 ausgeführt. Ist ein Großteil der Programmdatenstrukturen entwurfsbedingt zugeordnet und für einen längeren Zeitraum gespeichert, stellt dies üblicherweise kein Problem dar. Ist dieses Verhalten jedoch nicht beabsichtigt, werden von der Anwendung unter Umständen Objekte festgehalten. Sollten Sie nicht sicher sein, sammeln Sie die .NET-Speicherbelegungsdaten und die Informationen zur Objektlebensdauer, um nachvollziehen zu können, welches Speicherbelegungsmuster von der Anwendung verwendet wird.|  
 | Regeltyp | Warnung |  
   
  Wenn Sie Profile mithilfe der Sampling-, .NET-Arbeitsspeicher- oder Ressourcenkonfliktmethode Profile erstellen, müssen mindestens 10 Samplings erfasst werden, damit diese Regel ausgelöst wird.  
@@ -56,6 +51,3 @@ Regel-Id | DA0022 |
  Wiederholen Sie die Profilerstellung für die Anwendung mithilfe eines .NET-Speicherbelegungsprofils, und wählen Sie die Profilerstellungsoption „Objektlebensdauer“ aus, damit Sie das Muster für die verwaltete Speicherauslastung der Anwendung nachvollziehen können.  
   
  Informationen zur Verbesserung der Garbage Collection-Leistung finden Sie unter [Garbage Collector-Grundlagen und Tipps zur Leistung](http://go.microsoft.com/fwlink/?LinkId=148226) auf der Microsoft-Website. Informationen zum Mehraufwand der automatischen Garbage Collection finden Sie unter [Large Object Heap Uncovered (Informationen zum Heap für große Objekte)](http://go.microsoft.com/fwlink/?LinkId=177836).
-
-
-

@@ -1,7 +1,6 @@
 ---
-title: 'Exemplarische Vorgehensweise: Analysieren von C/C++-Code auf Fehler'
+title: 'Exemplarische Vorgehensweise: Analysieren von C/C++-Code im Hinblick auf Fehler'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - C/C++, code analysis
@@ -13,14 +12,14 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3a35bc07c9fe6478107162b625a824b6344898f1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: acfa1e274b7c0744c2d9968682960b1cd50e0044
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829510"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820336"
 ---
-# <a name="walkthrough-analyzing-cc-code-for-defects"></a>Exemplarische Vorgehensweise: Analysieren von C/C++-Code auf Fehler
+# <a name="walkthrough-analyzing-cc-code-for-defects"></a>Exemplarische Vorgehensweise: Analysieren von C/C++-Code im Hinblick auf Fehler
 
 In dieser exemplarischen Vorgehensweise wird das C/C++-Code für potenzielle Fehler zu analysieren, indem Sie mit dem Code Analysis-Tool für C/C++-Code veranschaulicht.
 
@@ -68,7 +67,7 @@ In dieser exemplarischen Vorgehensweise wird das C/C++-Code für potenzielle Feh
 
      Warnung C6230: Implizite Umwandlung zwischen semantisch unterschiedlichen Typen: HRESULT in einen Boolean-Kontext verwenden.
 
-     Der Code-Editor zeigt die Codezeile, die die Warnung verursacht, in der Funktion hat `bool``ProcessDomain()`. Diese Warnung gibt an, dass ein HRESULT in einen "if"-Anweisung verwendet wird, wo ein boolesches Ergebnis erwartet wird.
+     Der Code-Editor zeigt die Codezeile, die die Warnung verursacht, in der Funktion hat `bool ProcessDomain()`. Diese Warnung gibt an, dass ein HRESULT in einen "if"-Anweisung verwendet wird, wo ein boolesches Ergebnis erwartet wird.
 
 3. Korrigieren Sie diese Warnung mit dem SUCCEEDED-Makro. Ihr Code sollte dem folgenden Code ähneln:
 

@@ -1,7 +1,6 @@
 ---
 title: Projekt öffnen (Befehl)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - file.openproject
@@ -13,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: baa85f86-041b-49f4-9ced-0c397dc180e1
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34a6783e71d2a6dfee718aa441fbb3007aa71fa9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7e9249088b188fde1b346772ab1230d33160fe59
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946239"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62996816"
 ---
 # <a name="open-project-command"></a>Projekt öffnen (Befehl)
 
@@ -42,7 +41,7 @@ Erforderlich. Der vollständige Pfad und Dateiname des zu öffnenden Projekts od
 > [!NOTE]
 > Die Syntax für das Argument `filename` erfordert, dass Pfade, die Leerzeichen enthalten, in Anführungszeichen gesetzt werden.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Anmerkungen
 
 Bei der automatischen Vervollständigung wird während der Eingabe versucht, den richtigen Pfad und Dateinamen zu finden.
 

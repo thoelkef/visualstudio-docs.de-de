@@ -1,14 +1,9 @@
 ---
 title: Speichern von symbolischen Informationen mittels Leistungsdatendateien | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - packsymbols, in profiling tools reports
 - profiling tools, packsymbols
@@ -16,13 +11,13 @@ ms.assetid: 8b802505-e94d-4ee0-83e4-fdd790a332c1
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dbe05d345e54a900fcdd5568aa898b80417bb68d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e9d2e8b0414746523d0f76e8266f6463d9c05574
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761267"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098887"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>Speichern von symbolischen Informationen mittels Profilerstellungsdatendateien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,9 +51,9 @@ Wenn Sie das Integrated Development Environment (IDE) von [!INCLUDE[vsprvs](../i
   
 - Stellen Sie sicher, dass Sie den Pfad des Windows-Symbolcaches festgelegt haben. Führen Sie eine der folgenden Schritte durch, um den Symbolcachepfad festzulegen:  
   
-  -   Legen Sie die Debugger-> Symbole-Option im [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-IDE auf den richtigen Pfad fest.  
+  - Legen Sie die Debugger-> Symbole-Option im [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-IDE auf den richtigen Pfad fest.  
   
-  -   Fügen Sie der VSPerfReport-Befehlszeile die Option -symbolpath hinzu, um Ihre Symbole einzuschließen.  
+  - Fügen Sie der VSPerfReport-Befehlszeile die Option -symbolpath hinzu, um Ihre Symbole einzuschließen.  
   
 - Wenn keine Symbole in [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] angezeigt werden, stellen Sie sicher, dass Sie den Symbolserver ordnungsgemäß für den ASP-Server eingerichtet haben.  
   
@@ -73,6 +68,3 @@ Wenn Sie das Integrated Development Environment (IDE) von [!INCLUDE[vsprvs](../i
  [Speichern und Exportieren von Daten aus Leistungstools](../profiling/saving-and-exporting-performance-tools-data.md)   
  [Vorgehensweise: Verweisen auf Windows-Symbolinformationen](../profiling/how-to-reference-windows-symbol-information.md)   
  [VSPerfReport](../profiling/vsperfreport.md)
-
-
-

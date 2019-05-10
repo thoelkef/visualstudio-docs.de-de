@@ -2,9 +2,8 @@
 title: Administratorhandbuch für Visual Studio
 titleSuffix: ''
 description: Erfahren Sie mehr zur Bereitstellung von Visual Studio in einer Unternehmensumgebung.
-ms.date: 05/29/2018
+ms.date: 04/02/2019
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -13,23 +12,35 @@ helpviewer_keywords:
 ms.assetid: 4af353f5-6cfd-4ebe-bcfb-f42306e451a0
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25bf36870e20b630c6de388c13f2b01bae4a274b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: e228ca06aee6644b57782b30a1a9b02b17435f9d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826399"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951349"
 ---
-# <a name="visual-studio-2017-administrator-guide"></a>Administratorhandbuch für Visual Studio 2017
+# <a name="visual-studio-administrator-guide"></a>Administratorhandbuch für Visual Studio
 
 In Unternehmensumgebungen ist es üblich, dass Systemadministratoren Installationen für Endbenutzer über eine Netzwerkfreigabe oder mithilfe von Systemverwaltungssoftware bereitstellen. Wir haben die Visual Studio-Setup-Engine so gestaltet, dass sie die unternehmensweite Bereitstellung unterstützt. Systemadministratoren können einen Speicherort für die Netzwerkinstallation erstellen, Standardwerte für die Installation vorkonfigurieren, Product Keys während des Installationsvorgangs bereitstellen und nach erfolgreicher Einführung Produktupdates verwalten. Dieses Handbuch für Administratoren bietet vom jeweiligen Szenario abhängige Anleitungen für die Unternehmensbereitstellung in Netzwerkumgebungen.
 
-## <a name="deploy-visual-studio-2017-in-an-enterprise-environment"></a>Bereitstellen von Visual Studio 2017 in einer Unternehmensumgebung
+## <a name="deploy-visual-studio-in-an-enterprise-environment"></a>Bereitstellen von Visual Studio in einer Unternehmensumgebung
 
-Sie können Visual Studio 2017 auf Clientarbeitsstationen bereitstellen, solange jeder Zielcomputer die [minimalen Installationsanforderungen](/visualstudio/productinfo/vs2017-system-requirements-vs) erfüllt. Egal, ob Sie über Software, z.B. System Center oder über eine Batchdatei bereitstellen, Sie sollten in der Regel die folgenden Schritte durchlaufen:
+::: moniker range="vs-2017"
+
+Sie können Visual Studio auf Clientarbeitsstationen bereitstellen, solange jeder Zielcomputer die [minimalen Installationsanforderungen](/visualstudio/productinfo/vs2017-system-requirements-vs/) erfüllt. Egal, ob Sie über Software, z.B. System Center oder über eine Batchdatei bereitstellen, Sie sollten in der Regel die folgenden Schritte durchlaufen:
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Sie können Visual Studio auf Clientarbeitsstationen bereitstellen, solange jeder Zielcomputer die [minimalen Installationsanforderungen](/visualstudio/releases/2019/system-requirements/) erfüllt. Egal, ob Sie über Software, z.B. System Center oder über eine Batchdatei bereitstellen, Sie sollten in der Regel die folgenden Schritte durchlaufen:
+
+::: moniker-end
 
 1. [Erstellen Sie eine Netzwerkfreigabe, die Visual Studio-Produktdateien enthält](create-a-network-installation-of-visual-studio.md) an einem Speicherort im Netzwerk.
 
@@ -48,14 +59,14 @@ Sie können Visual Studio 2017 auf Clientarbeitsstationen bereitstellen, solange
 8. [Aktualisieren Sie den Netzwerkspeicherort mit den neuesten Updates](update-a-network-installation-of-visual-studio.md) für Visual Studio durch regelmäßiges Ausführen des Befehls, den Sie in Schritt 1 verwendet haben, um aktualisierte Komponenten hinzuzufügen.
 
 > [!IMPORTANT]
-> Beachten Sie, dass sich Installationen über eine Netzwerkfreigabe den ursprünglichen Quellspeicherort „merken“. Dies bedeutet, dass Sie zur Reparatur eines Clients möglicherweise zur Netzwerkfreigabe zurückkehren müssen, über die der Client ursprünglich installiert wurde. Wählen Sie die Netzwerkadresse sorgfältig aus, sodass sie der Lebensdauer der Visual Studio 2017-Clients in Ihrer Organisation entspricht.
+> Beachten Sie, dass sich Installationen über eine Netzwerkfreigabe den ursprünglichen Quellspeicherort „merken“. Dies bedeutet, dass Sie zur Reparatur eines Clients möglicherweise zur Netzwerkfreigabe zurückkehren müssen, über die der Client ursprünglich installiert wurde. Wählen Sie die Netzwerkadresse sorgfältig aus, sodass sie der Lebensdauer der Visual Studio-Clients in Ihrer Organisation entspricht.
 
 ## <a name="use-visual-studio-tools"></a>Verwenden von Visual Studio-Tools
 
 Wir haben mehrere Tools zur Verfügung gestellt, mit denen Sie [installierte Instanzen von Visual Studio auf Clientcomputern erkennen und verwalten](tools-for-managing-visual-studio-instances.md) können:
 
 > [!TIP]
-> Zusätzlich zur Dokumentation im Administratorhandbuch ist der [Blog von Heath Stewart](https://blogs.msdn.microsoft.com/heaths/tag/vs2017/) eine gute Quelle für Informationen zum Setup von Visual Studio 2017.
+> Neben der Dokumentation im Administratorhandbuch sind die [Archive zum Setup von Visual Studio](https://devblogs.microsoft.com/setup/tag/vs2017/) eine gute Quelle für Informationen zum Setup von Visual Studio.
 
 ## <a name="specify-customer-feedback-settings"></a>Festlegen von Kundenfeedbackeinstellungen
 
@@ -75,8 +86,8 @@ Weitere Informationen über Kundenfeedbackeinstellungen finden Sie auf der Seite
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Installieren von Visual Studio 2017](install-visual-studio.md)
-* [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
+* [Installieren von Visual Studio](install-visual-studio.md)
+* [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
   * [Beispiele für Befehlszeilenparameter](command-line-parameter-examples.md)
   * [Referenz der Arbeitsauslastungs- und Komponenten-IDs](workload-and-component-ids.md)
 * [Erstellen einer netzwerkbasierten Installation von Visual Studio](create-a-network-installation-of-visual-studio.md)
@@ -88,3 +99,4 @@ Weitere Informationen über Kundenfeedbackeinstellungen finden Sie auf der Seite
 * [Aktualisieren einer netzwerkbasierten Installation von Visual Studio](update-a-network-installation-of-visual-studio.md)
 * [Steuern von Updates für Visual Studio-Bereitstellungen](controlling-updates-to-visual-studio-deployments.md)
 * [Tools zum Erkennen und Verwalten von Visual Studio-Instanzen](tools-for-managing-visual-studio-instances.md)
+* [Projektlebenszyklus und Wartung in Visual Studio](/visualstudio/releases/2019/servicing/)

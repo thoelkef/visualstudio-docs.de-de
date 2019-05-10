@@ -1,32 +1,26 @@
 ---
 title: Weiterführende MSBuild-Konzepte | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - MSBuild, advanced concepts
 ms.assetid: f34a558a-ebd9-49bd-8510-32a2b581a4af
 caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 077cdf0fe5844b62176f40677c538e80070d575d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e7aade87e0e1f6fe6a07269a585b35f52d4a9e5d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198457"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663926"
 ---
 # <a name="msbuild-advanced-concepts"></a>Weiterführende MSBuild-Konzepte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Die Dokumente in diesem Abschnitt wird beschrieben, wie erweiterte Techniken zum Verbessern der Builds verwendet werden, die Sie mithilfe von MSBuild ausführen.  
   
 ## <a name="related-topics"></a>Verwandte Themen  
@@ -43,6 +37,3 @@ Die Dokumente in diesem Abschnitt wird beschrieben, wie erweiterte Techniken zum
 ## <a name="see-also"></a>Siehe auch  
  [MSBuild Concepts](../msbuild/msbuild-concepts.md)  (MSBuild-Grundlagen)  
  [Protokollierung in MSBuild](../msbuild/logging-in-msbuild.md)
-
-
-

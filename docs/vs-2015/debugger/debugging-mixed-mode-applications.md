@@ -1,14 +1,9 @@
 ---
 title: Debuggen im gemischten Modus-Anwendungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -29,13 +24,13 @@ ms.assetid: 60e34477-ae4e-48c7-9093-3e37f72e1bc3
 caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b176ae4a911e6948634cda2330d0c895f8b61cfd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 71d57d31575f0d8ac1296f4d5617a39fe6c98a7b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773340"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435734"
 ---
 # <a name="debugging-mixed-mode-applications"></a>Debuggen von Anwendungen im gemischten Modus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,26 +39,23 @@ Eine Anwendung im gemischten Modus ist eine Anwendung, in der nativer Code (C++)
   
 ## <a name="enable-c-edit-and-continue-in-mixed-mode-debugging"></a>Aktivieren von "Bearbeiten und Fortfahren" in C++ beim Debuggen im gemischten Modus  
   
--   Um "Bearbeiten und Fortfahren" für C++ in Visual Studio 2013 zu verwenden, müssen Sie die Legacyversion der Debug-Engine wiederherstellen. Finden Sie unter [Switching to Managed Compatibility Mode in Visual Studio 2013](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/switching-to-managed-compatibility-mode-in-visual-studio-2013.aspx) Blog des Microsoft Application Lifecycle Management.  
+- Um "Bearbeiten und Fortfahren" für C++ in Visual Studio 2013 zu verwenden, müssen Sie die Legacyversion der Debug-Engine wiederherstellen. Informationen dazu finden Sie im Microsoft Application Lifecycle Management-Blogbeitrag [Switching to Managed Compatibility Mode in Visual Studio 2013 (Wechseln zum verwalteten Kompatibilitätsmodus in Visual Studio 2013)](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/switching-to-managed-compatibility-mode-in-visual-studio-2013.aspx)  
   
 ## <a name="property-evaluation-in-mixed-mode-applications"></a>Auswertung von Eigenschaften in Anwendungen im gemischten Modus  
- In einer Anwendung im gemischten Modus erfordert die Auswertung von Eigenschaften durch den Debugger sehr viel Rechenleistung. Folglich werden Debugoperationen, z. B. das schrittweise Ausführen, scheinbar langsam ausgeführt. Weitere Informationen finden Sie unter [ausführen in Einzelschritten](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9). Falls Sie beim Debuggen im gemischten Modus einen Leistungsabfall beobachten, empfiehlt es sich u. U., die Eigenschaftenauswertung in den Debuggerfenstern zu deaktivieren.  
+ In einer Anwendung im gemischten Modus erfordert die Auswertung von Eigenschaften durch den Debugger sehr viel Rechenleistung. Folglich werden Debugoperationen, z. B. das schrittweise Ausführen, scheinbar langsam ausgeführt. Weitere Informationen finden Sie unter [Stepping](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9). Falls Sie beim Debuggen im gemischten Modus einen Leistungsabfall beobachten, empfiehlt es sich u. U., die Eigenschaftenauswertung in den Debuggerfenstern zu deaktivieren.  
   
 > [!NOTE]
->  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 #### <a name="to-turn-off-property-evaluation"></a>So deaktivieren Sie die Eigenschaftenauswertung  
   
 1. Wählen Sie im Menü **Extras** den Befehl **Optionen**.  
   
-2. In der **Optionen** öffnen Sie im Dialogfeld die **Debuggen** Ordner, und wählen die **allgemeine** Kategorie.  
+2. Öffnen Sie im Dialogfeld **Optionen** den Ordner **Debuggen**, und wählen Sie die Kategorie **Allgemein** aus.  
   
-3. Deaktivieren der **eigenschaftenauswertung und andere implizite Funktionsaufrufe** Kontrollkästchen.  
+3. Deaktivieren Sie das Kontrollkästchen **Eigenschaftenauswertung und andere implizite Funktionsaufrufe zulassen**.  
   
-   Da systemeigene Aufruflisten sich von verwalteten Aufruflisten unterscheiden, kann der Debugger nicht immer die vollständige Aufrufliste für den gemischten Code bereitstellen. Wenn nativer Code verwalteten Code aufruft, stellen Sie u. U. einige Diskrepanzen fest. Weitere Informationen finden Sie unter [Gemischter Code und fehlende Daten in das Fenster "Aufrufliste"](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md).  
+   Da systemeigene Aufruflisten sich von verwalteten Aufruflisten unterscheiden, kann der Debugger nicht immer die vollständige Aufrufliste für den gemischten Code bereitstellen. Wenn systemeigener Code verwalteten Code aufruft, stellen Sie u. U. einige Diskrepanzen fest. Weitere Informationen finden Sie unter [Mixed Code and Missing Information in the Call Stack Window (Gemischter Code und fehlende Daten im Fenster „Aufrufliste“)](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von verwaltetem Code](../debugger/debugging-managed-code.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 'Vorgehensweise: herausfinden des ASP.NET-Prozessnamens | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Herausfinden des ASP.NET-Prozessnamens | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,15 +16,15 @@ ms.assetid: 931a7597-b0f0-4a28-931d-46e63344435f
 caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2ad3bea47bcde0da87bd185fac132c95f26ce4b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: cc6d1ac72ef425a137f2a673b70b1c3215ed8001
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793242"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438265"
 ---
-# <a name="how-to-find-the-name-of-the-aspnet-process"></a>Gewusst wie: Herausfinden des ASP.NET-Prozessnamens
+# <a name="how-to-find-the-name-of-the-aspnet-process"></a>Vorgehensweise: Herausfinden des ASP.NET-Prozessnamens
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Für das Anhängen an eine ausgeführte [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Anwendung müssen Sie den Namen des [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Prozesses kennen.  
@@ -43,35 +38,32 @@ Für das Anhängen an eine ausgeführte [!INCLUDE[vstecasp](../includes/vstecasp
   Ältere ASP-Anwendungen werden innerhalb des IIS-Prozesses inetinfo.exe ausgeführt, sobald sie prozessintern laufen.  
   
 > [!NOTE]
->  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-determine-whether-project-code-resides-on-the-file-system-or-iis"></a>So stellen Sie fest, ob sich Projektcode im Dateisystem oder auf IIS befindet  
   
-1.  Öffnen Sie in Visual Studio **Projektmappen-Explorer** , wenn es nicht bereits geöffnet ist.  
+1. Öffnen Sie in Visual Studio **Projektmappen-Explorer** , wenn es nicht bereits geöffnet ist.  
   
-2.  Wählen Sie den obersten Knoten aus, der den Namen der Anwendung enthält.  
+2. Wählen Sie den obersten Knoten aus, der den Namen der Anwendung enthält.  
   
-3.  Wenn die **Eigenschaften** Fenstertitel einen Dateipfad enthält, die der Anwendungscode befindet sich im Dateisystem.  
+3. Wenn die **Eigenschaften** Fenstertitel einen Dateipfad enthält, die der Anwendungscode befindet sich im Dateisystem.  
   
      Andernfalls die **Eigenschaften** Fenstertitel enthält den Namen der Website.  
   
 ### <a name="to-determine-the-iis-version-under-which-the-application-is-running"></a>So stellen Sie die IIS-Version fest, unter der die Anwendung ausgeführt wird  
   
-1.  Suchen **Verwaltung** und führen Sie sie. Je nach Betriebssystem, dies ist möglicherweise ein Symbol in **Systemsteuerung**, oder ein Menüeintrag, der angezeigt wird, wenn Sie auf **starten**.  
+1. Suchen **Verwaltung** und führen Sie sie. Je nach Betriebssystem, dies ist möglicherweise ein Symbol in **Systemsteuerung**, oder ein Menüeintrag, der angezeigt wird, wenn Sie auf **starten**.  
   
      In Windows XP **Systemsteuerung** in Kategorieansicht oder in der Standardansicht werden können. In der Kategorieansicht auf klicken, werden Ihnen **zur klassischen Ansicht wechseln** oder **Leistung und Wartung** , finden Sie unter den **Verwaltung** Symbol.  
   
-2.  Von **Verwaltung**, führen Sie Internet Information Services. Ein MMC-Dialogfeld wird geöffnet.  
+2. Von **Verwaltung**, führen Sie Internet Information Services. Ein MMC-Dialogfeld wird geöffnet.  
   
-3.  Wenn im linken Bereich mehr als ein Computer aufgeführt wird, wählen Sie den Computer aus, auf dem sich der Anwendungscode befindet.  
+3. Wenn im linken Bereich mehr als ein Computer aufgeführt wird, wählen Sie den Computer aus, auf dem sich der Anwendungscode befindet.  
   
-4.  Die IIS-Version befindet sich in der **Version** Spalte im rechten Bereich.  
+4. Die IIS-Version befindet sich in der **Version** Spalte im rechten Bereich.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Voraussetzungen für das Remotedebuggen von Webanwendungen](../debugger/prerequistes-for-remote-debugging-web-applications.md)   
  [Systemanforderungen](../debugger/aspnet-debugging-system-requirements.md)   
  [Vorbereitung zum Debuggen von ASP.NET](../debugger/preparing-to-debug-aspnet.md)   
  [Debuggen von Webanwendungen und Skripts](../debugger/debugging-web-applications-and-script.md)
-
-
-

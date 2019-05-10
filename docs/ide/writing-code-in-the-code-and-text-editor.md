@@ -1,22 +1,21 @@
 ---
 title: Neue Funktionen im Code-Editor
 ms.date: 02/23/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code, editing [Visual Studio]
 - code editor [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e92749c7e18913685fdedac3a9404ace0705ac3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9f263be2e26100c7b61bffca35df39b945d88a91
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891747"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62581980"
 ---
 # <a name="features-of-the-code-editor"></a>Funktionen des Code-Editors
 
@@ -57,15 +56,15 @@ Einige erweiterte Funktionen befinden sich auf der Symbolleiste im Menü **Bearb
 |Auswahl formatieren|Legt den richtigen Einzug von Codezeilen fest und verschiebt geschweifte Klammern in separate Zeilen in der Auswahl.|
 |Ausgewählte Zeilen mit Tabstopps versehen|Ändert führende Leerzeichen ggf. in Tabstopps.|
 |Tabstopps aus ausgewählten Zeilen entfernen|Ändert führende Tabstopps in Leerzeichen. Wenn Sie in einer Datei alle Leerzeichen in Tabstopps (oder alle Tabstopps in Leerzeichen) konvertieren möchten, können Sie dazu die Befehle `Edit.ConvertSpacesToTabs` und `Edit.ConvertTabsToSpaces` verwenden. Diese Befehle werden nicht in Visual Studio-Menüs angezeigt. Sie können sie jedoch über das **Schnellzugriffsfenster** oder das Befehlsfenster aufrufen.|
-|In Großbuchstaben umwandeln|Wandelt alle Zeichen in der Auswahl in Großbuchstaben um. Wenn keine Auswahl vorhanden ist, wird das Zeichen an der Einfügemarke in Großbuchstaben dargestellt.|
-|In Kleinbuchstaben umwandeln|Wandelt alle Zeichen in der Auswahl in Kleinbuchstaben um. Wenn keine Auswahl vorhanden ist, wird das Zeichen an der Einfügemarke in Kleinbuchstaben dargestellt.|
+|In Großbuchstaben umwandeln|Wandelt alle Zeichen in der Auswahl in Großbuchstaben um. Wenn keine Auswahl vorhanden ist, wird das Zeichen an der Einfügemarke in Großbuchstaben dargestellt. Tastenkombination: **STRG**+**UMSCHALT**+**U**.|
+|In Kleinbuchstaben umwandeln|Wandelt alle Zeichen in der Auswahl in Kleinbuchstaben um. Wenn keine Auswahl vorhanden ist, wird das Zeichen an der Einfügemarke in Kleinbuchstaben dargestellt. Tastenkombination: **STRG**+**U**.|
 |Ausgewählte Zeilen nach oben verschieben|Verschiebt die ausgewählte Zeilen um eine Zeile nach oben Tastenkombination: **ALT**+**NACH-OBEN-TASTE**|
 |Ausgewählte Zeilen nach unten verschieben|Verschiebt die ausgewählte Zeile um eine Zeile nach unten. Tastenkombination: **ALT**+**NACH-UNTEN-TASTE**|
-|Horizontale Leerstelle löschen|Löscht Tabstopps oder Leerzeichen am Ende der aktuellen Zeile.|
+|Horizontale Leerstelle löschen|Löscht Tabstopps oder Leerzeichen am Ende der aktuellen Zeile. Tastenkombination: **STRG**+**K**, **STRG**+**\\**|
 |Leerstelle anzeigen|Zeigt Leerzeichen als Hochpunkte und Tabstopps als Pfeile an. Das Ende einer Datei wird als rechteckiges Symbol angezeigt. Wenn die Option **Tools** > **Optionen** > **Text-Editor** > **Alle Sprachen** > **Zeilenumbruch** > **Sichtbare Glyphen für Zeilenumbruch anzeigen** ausgewählt ist, wird diese Glyphe ebenfalls angezeigt.|
 |Zeilenumbruch|Bewirkt, dass alle Zeilen in einem Dokument im Codefenster sichtbar sind. Sie können den Zeilenumbruch in den **Text-Editor-Einstellungen für alle Sprachen** aktivieren und deaktivieren (**Extras** > **Optionen** > **Text-Editor** > **Alle Sprachen**).|
-|Auswahl kommentieren|Fügt Kommentarzeichen zur Auswahl oder aktuellen Zeile hinzu.|
-|Kommentar aus Auswahl entfernen|Entfernt Kommentarzeichen aus der Auswahl oder der aktuellen Zeile.|
+|Auswahl kommentieren|Fügt Kommentarzeichen zur Auswahl oder aktuellen Zeile hinzu. Tastenkombination: **STRG**+**K**, **STRG**+**C**|
+|Kommentar aus Auswahl entfernen|Entfernt Kommentarzeichen aus der Auswahl oder der aktuellen Zeile. Tastenkombination: **STRG**+**K**, **STRG**+**U**|
 |Zeileneinzug vergrößern|Fügt eine Registerkarte (oder die entsprechenden Leerzeichen) zu den ausgewählten Zeilen oder zur aktuellen Zeile hinzu.|
 |Zeileneinzug verkleinern|Entfernt eine Registerkarte (oder die entsprechenden Leerzeichen) aus den ausgewählten Zeilen oder der aktuellen Zeile.|
 |Tag auswählen|Wählt das Tag in einem Dokument aus, das Tags enthält (zum Beispiel XML oder HTML).|
@@ -77,7 +76,7 @@ Es gibt verschiedene Möglichkeiten, um im Code-Editor zu navigieren: Sie könne
 
 ## <a name="find-references-in-your-code-base"></a>Suchen von Verweisen in der Codebasis
 
-Um den Ort zu finden, zu dem bestimmte Codeelemente in Ihrer gesamten Codebasis verwiesen werden, können Sie den Befehl **Alle Verweise suchen** verwenden. Wenn Sie außerdem auf einen Typ oder Member klicken, hebt die Funktion **Reference Highlighting** („Hervorheben von Verweisen“) automatisch alle Verweise auf diesen Typ oder Member hervor. Weitere Informationen finden Sie unter [Suchen von Verweisen im Code](finding-references.md).
+Um den Ort zu finden, an dem bestimmte Codeelemente in Ihrer gesamten Codebasis verwiesen werden, können Sie den Befehl **Alle Verweise suchen** oder **UMSCHALT**+**F12** verwenden. Wenn Sie außerdem auf einen Typ oder Member klicken, hebt die Funktion **Reference Highlighting** („Hervorheben von Verweisen“) automatisch alle Verweise auf diesen Typ oder Member hervor. Weitere Informationen finden Sie unter [Suchen von Verweisen im Code](finding-references.md).
 
 ## <a name="customize-the-editor"></a>Anpassen des Editors
 

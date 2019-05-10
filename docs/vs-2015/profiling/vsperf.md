@@ -1,25 +1,20 @@
 ---
 title: VSPerf | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: b5854e62-279e-4850-bfeb-0c6ef82f4805
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 830aa028e8c34beb5fd6818c40ffcfc7f3fa461b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ee221f0c1da32694e869177399981cc16ce901f4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755253"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099467"
 ---
 # <a name="vsperf"></a>VSPerf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Verwenden Sie das Befehlszeilentool **VsPerf** für Folgendes:
   
    Weitere Informationen zu Ihren Profilerstellungsoptionen finden Sie unter [Profilerstellung für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
-##  <a name="BKMK_In_this_topic"></a> In diesem Thema  
+## <a name="BKMK_In_this_topic"></a> In diesem Thema  
  Dieses Thema beschreibt die Optionen, die Sie mit dem Befehlszeilentool `vsperf.exe` verwenden können. Dieses Thema enthält folgende Abschnitte:  
   
  [Nur Windows Store-Apps](#BKMK_windows_store_apps_only)  
@@ -41,7 +36,7 @@ Verwenden Sie das Befehlszeilentool **VsPerf** für Folgendes:
   
  [Alle Anwendungen](#BKMK_All_applications)  
   
-##  <a name="BKMK_windows_store_apps_only"></a> Nur Windows Store-Apps  
+## <a name="BKMK_windows_store_apps_only"></a> Nur Windows Store-Apps  
  Diese Optionen gelten nur für Windows Store-Apps.  
   
 |||  
@@ -52,7 +47,7 @@ Verwenden Sie das Befehlszeilentool **VsPerf** für Folgendes:
 |**/noclr**|Dies ist optional. Es werden keine CLR-Daten gesammelt.<br /><br /> Nur mit „/package“ oder „/attach“ verwenden.<br /><br /> Optimierung, es werden keine verwalteten Symbole aufgelöst.|  
 |**/listapps**|Listet Namen installierter Apps und PackageFullNames auf.|  
   
-##  <a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a> Nur Windows 8-Desktopanwendungen und Windows Server 2012-Anwendungen  
+## <a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a> Nur Windows 8-Desktopanwendungen und Windows Server 2012-Anwendungen  
  Diese Optionen funktionieren nicht mit Windows Store-Apps.  
   
 |||  
@@ -61,7 +56,7 @@ Verwenden Sie das Befehlszeilentool **VsPerf** für Folgendes:
 |**/args:{ExecutableArguments}**|Gibt Befehlszeilenargumente an, um das **/launch**-Ziel zu erreichen.|  
 |**/console**|Führt das **/launch**-Ziel in einem neuen Befehlsfenster aus.|  
   
-##  <a name="BKMK_All_applications"></a> Alle Anwendungen  
+## <a name="BKMK_All_applications"></a> Alle Anwendungen  
  Diese Option gilt für jede Windows 8- oder Windows Server 2012-Anwendung.  
   
 |||  
@@ -77,6 +72,3 @@ Verwenden Sie das Befehlszeilentool **VsPerf** für Folgendes:
 ## <a name="see-also"></a>Siehe auch  
  [Profilerstellung für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)   
  [Profilerstellung mithilfe der Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md)
-
-
-

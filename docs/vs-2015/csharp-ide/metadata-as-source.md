@@ -1,14 +1,9 @@
 ---
 title: Metadaten als Quelle | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 dev_langs:
 - CSharp
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: 4945a07f-b3be-4f05-a587-fc29058aa8fa
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: 8bcac8071d0cc76c29a5b9d0478727fea0b59901
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5883708d0ed32f636c5e229147676cf1545f8a47
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232946"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444591"
 ---
 # <a name="metadata-as-source"></a>Metadaten als Quelle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ ms.locfileid: "49232946"
 Mithilfe von Metadaten als Quelle können Sie Metadaten anzeigen, die als C#-Quellcode in einem schreibgeschützten Puffer auftreten. Dies ermöglicht eine Ansicht der Deklarationen von Typen und Membern (ohne Implementierungen). Sie können Metadaten als Quelle anzeigen, indem Sie den Befehl **Gehe zu Definition** für Typen oder Member ausführen, deren Quellcode nicht in Ihrem Projekt oder Ihrer Projektmappe verfügbar ist.  
   
 > [!NOTE]
->  Wenn Sie versuchen, den **Gehe zu Definition** -Befehl für Typen oder Member auszuführen, die als intern gekennzeichnet sind, zeigt die IDE (integrierte Entwicklungsumgebung) ihre Metadaten nicht als Quelle an, unabhängig davon, ob die referenzierende Assembly ein Friend ist oder nicht.  
+> Wenn Sie versuchen, den **Gehe zu Definition** -Befehl für Typen oder Member auszuführen, die als intern gekennzeichnet sind, zeigt die IDE (integrierte Entwicklungsumgebung) ihre Metadaten nicht als Quelle an, unabhängig davon, ob die referenzierende Assembly ein Friend ist oder nicht.  
   
  Sie können Metadaten als Quelle entweder im Code-Editor oder im **Codedefinitionsfenster** anzeigen.  
   

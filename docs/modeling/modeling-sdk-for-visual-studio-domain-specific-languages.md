@@ -2,22 +2,21 @@
 title: Modellierungs-SDK für Visual Studio - Domänenspezifische Sprachen
 titleSuffix: ''
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools
 - Domain-Specific Language
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9524e071edc82ba2da78df77afdda85e0ac10505
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4b955dc6f79c689ca30d8d9876d0888b14127490
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860334"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476532"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Modellierungs-SDK für Visual Studio - Domänenspezifische Sprachen
 
@@ -41,39 +40,4 @@ Sie können alle diese Funktionen anpassen und erweitern. Ihre Erweiterungen sin
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-[Verwandte Blogbeiträge](https://blogs.msdn.microsoft.com/visualstudioalm/tag/code-index/)
-
-Die Anleitung in fortgeschrittenen Techniken und Problembehandlung, finden Sie unter [Forum von Visual Studio DSL & Modellierungstool-Erweiterbarkeit](http://go.microsoft.com/fwlink/?LinkID=186074).
-
-## <a name="in-this-section"></a>In diesem Abschnitt
- [Erste Schritte mit domänenspezifischen Sprachen](../modeling/getting-started-with-domain-specific-languages.md)
-
- [Grundlagen von Modellen, Klassen und Beziehungen](../modeling/understanding-models-classes-and-relationships.md)
-
- [So definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md)
-
- [Anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md)
-
- [Validierung in einer domänenspezifischen Sprache](../modeling/validation-in-a-domain-specific-language.md)
-
- [Schreiben von Code zum Anpassen einer domänenspezifischen Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-
- [Generieren von Code für eine domänenspezifische Sprache](../modeling/generating-code-from-a-domain-specific-language.md)
-
- [Grundlegendes zum DSL-Code](../modeling/understanding-the-dsl-code.md)
-
- [Anpassen von Dateispeicher und XML-Serialisierung](../modeling/customizing-file-storage-and-xml-serialization.md)
-
- [Bereitstellen von domänenspezifischen Sprachlösungen](../modeling/deploying-domain-specific-language-solutions.md)
-
- [Erstellen einer Windows Forms-basierten domänenspezifischen Sprache](../modeling/creating-a-windows-forms-based-domain-specific-language.md)
-
- [Erstellen einer WPF-basierten domänenspezifischen Sprache](../modeling/creating-a-wpf-based-domain-specific-language.md)
-
- [Vorgehensweise: Erweitern des DSL-Designers](../modeling/how-to-extend-the-domain-specific-language-designer.md)
-
- [Unterstützte Visual Studio-Versionen für das Visualisierungs- und Modellierungs-SDK](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md)
-
- [Vorgehensweise: Migrieren einer domänenspezifischen Sprache zu einer neuen Version](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)
-
- [API-Referenz für Modellierungs-SDK für Visual Studio](../modeling/api-reference-for-modeling-sdk-for-visual-studio.md)
+[Verwandte Blogbeiträge](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)

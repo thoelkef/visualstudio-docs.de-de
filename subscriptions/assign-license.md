@@ -2,19 +2,17 @@
 title: Zuweisen von Lizenzen für Visual Studio-Abonnements | Microsoft-Dokumentation
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.date: 07/16/2018
 ms.topic: conceptual
 description: Erfahren Sie, wie Administratoren Lizenzen an Abonnenten zuweisen können.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 6f0bbded7682bd8f7162ae415c6c83711df04a04
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 97962571d8a7c433a5f72af90d9107f9e2b08a9b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931232"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946520"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Zuweisen von Lizenzen im Administratorportal für Visual Studio-Abonnements
 
@@ -46,7 +44,7 @@ Im Folgenden wird erläutert, wie Sie einem neuen Benutzer eine Visual Studio-Ab
 
     Wenn Sie Ihre eigenen Verweise zum Abonnement hinzufügen möchten, können Sie dies im Abschnitt **Verweis hinzufügen** machen.
    > [!div class="mx-imgBorder"]
-   > ![Eigene Verweise zu den einzelnen Abonnements hinzufügen](media/add-subscriber-reference-notes.png) 
+   > ![Eigene Verweise zu den einzelnen Abonnements hinzufügen](media/add-subscriber-reference-notes.png)
 
     Wenn Sie die Auswahl von Optionen und die Eingabe von Daten für den Abonnenten abgeschlossen haben, wählen Sie im unteren Bereich des Flyouts **Abonnent hinzufügen** die Option **Hinzufügen** aus.
    > [!div class="mx-imgBorder"]
@@ -54,7 +52,7 @@ Im Folgenden wird erläutert, wie Sie einem neuen Benutzer eine Visual Studio-Ab
 
 4. Nachdem Sie den Abonnenten hinzugefügt haben, wird automatisch eine E-Mail zur Zuweisung mit weiteren Anweisungen an den neuen Abonnenten gesendet. Sie können die E-Mail zur Zuweisung jederzeit erneut senden, indem Sie den Abonnenten auswählen und auf die Schaltfläche **Erneut senden** im oberen Menü klicken.
    > [!div class="mx-imgBorder"]
-   > ![Aktivierungs-E-Mail nach Wunsch erneut an einen beliebigen Benutzer oder mehrere Benutzer senden](media/resend-subscriber-activation-emails.png) 
+   > ![Aktivierungs-E-Mail nach Wunsch erneut an einen beliebigen Benutzer oder mehrere Benutzer senden](media/resend-subscriber-activation-emails.png)
 
 ## <a name="bulk-assignments"></a>Massenzuweisungen
 
@@ -65,7 +63,7 @@ Im Folgenden wird erläutert, wie Sie einem neuen Benutzer eine Visual Studio-Ab
 2. Die Funktion für Massenzuweisungen verwendet eine Microsoft Excel-Vorlage zum Hochladen von Abonnenten. Klicken Sie im Dialogfeld „Upload Multiple Subscribers“ (Mehrere Abonnenten hochladen) auf **Herunterladen**, um die Vorlage herunterzuladen.
    > [!div class="mx-imgBorder"]
    > ![Excel-Vorlage zum Hochladen mehrerer Abonnenten herunterladen](media/download-template-upload-subscribers.png)
-   > 
+   >
    > [!NOTE]
    > Laden sie stets die neueste Vorlagenversion herunter. Wenn Sie eine ältere Version herunterladen, schlägt Ihr Massenupload möglicherweise fehl.
 

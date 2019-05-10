@@ -2,19 +2,18 @@
 title: Integration von SQL Server in R
 description: Visual Studio unterstützt das Erstellen und Ausführen von SQL-Abfragen aus R und die Möglichkeiten von R zum Arbeiten mit gespeicherten Prozeduren.
 ms.date: 06/25/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 2d8f9cd98d7f3fa794dedff87bfe4072906b075b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f15c785658b5c4cd5a6b158b05eb67ff9a4e4c2d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891734"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62814383"
 ---
 # <a name="work-with-sql-server-and-r"></a>Arbeiten mit SQL Server und R
 

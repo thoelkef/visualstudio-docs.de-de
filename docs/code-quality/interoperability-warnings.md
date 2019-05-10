@@ -1,7 +1,6 @@
 ---
 title: Interoperabilitätswarnungen
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.Interoperabilityrules
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 95de6eb3-40c4-4063-9f59-25cb70e3b2b3
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b96131b2847b59632212c26bf5fa77fbe6b88960
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b68ea8c66b26ee2463969ca71b8f0e5ac78b3f0a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956595"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823594"
 ---
 # <a name="interoperability-warnings"></a>Interoperabilitätswarnungen
 

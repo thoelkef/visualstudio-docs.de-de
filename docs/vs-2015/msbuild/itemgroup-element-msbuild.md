@@ -1,14 +1,9 @@
 ---
 title: ItemGroup-Element (MSBuild) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ItemGroup
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: aac894e3-a9f1-4bbc-a796-6ef07001f35b
 caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5f3a98238e922e08767524c361cdae850c40a4ba
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 20c22e0ea2ef05c108ebe564b186ede2a02f9dfe
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257685"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650501"
 ---
 # <a name="itemgroup-element-msbuild"></a>ItemGroup-Element (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Enthält eine Reihe von benutzerdefinierten [Item](../msbuild/item-element-msbuild.md)-Elementen. Jedes Element, das in einem [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projekt verwendet wird, muss als untergeordnetes Element eines `ItemGroup`-Elements angegeben werden.  
   
  \<Project>  
@@ -71,7 +65,7 @@ Enthält eine Reihe von benutzerdefinierten [Item](../msbuild/item-element-msbui
 |[Projekt](../msbuild/project-element-msbuild.md)|Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projektdatei.|  
 |[Target](../msbuild/target-element-msbuild.md)|Ab.NET Framework 3.5 kann das `ItemGroup`-Element innerhalb eines `Target`-Elements angezeigt werden. Weitere Informationen finden Sie unter [Targets (Ziele)](../msbuild/msbuild-targets.md).|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
   
 ## <a name="example"></a>Beispiel  
  Im folgenden Codebeispiel werden die benutzerdefinierten Elementsammlungen `Res` und `CodeFiles` gezeigt, die innerhalb eines `ItemGroup`-Element deklariert sind. Jedes der Elemente in der `Res`-Elementsammlung enthält ein benutzerdefiniertes untergeordnetes [ItemMetadata](../msbuild/itemmetadata-element-msbuild.md)-Element.  
@@ -97,6 +91,3 @@ Enthält eine Reihe von benutzerdefinierten [Item](../msbuild/item-element-msbui
  [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)   
  [Elemente](../msbuild/msbuild-items.md)   
  [Gemeinsame MSBuild-Projektelemente](../msbuild/common-msbuild-project-items.md)
-
-
-

@@ -1,7 +1,6 @@
 ---
-title: 'CA1813: Nicht versiegelte Attribute vermeiden'
+title: 'CA1813: Nicht versiegelte Attribute vermeiden.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1813
@@ -12,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: f5e31b4c-9f8b-49e1-a2a8-bb5f1140729a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 63b69b95dc676213c39c4cf10c212472218a0c24
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4d7236b77a7dd0a81f8a7846c0eba28e3b520cdd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838923"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545588"
 ---
-# <a name="ca1813-avoid-unsealed-attributes"></a>CA1813: Nicht versiegelte Attribute vermeiden
+# <a name="ca1813-avoid-unsealed-attributes"></a>CA1813: Nicht versiegelte Attribute vermeiden.
 
 |||
 |-|-|

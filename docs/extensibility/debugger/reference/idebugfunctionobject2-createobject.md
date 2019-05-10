@@ -1,29 +1,31 @@
 ---
 title: IDebugFunctionObject2::CreateObject | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugFunctionObject2::CreateObject
 - CreateObject
 ms.assetid: 148de615-941e-4b64-ab11-75b692aae465
-author: gregvanl
+caps.latest.revision: 10
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: fd620499616f1dc2710a6a6e792352fad23e27c1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7004e57aaf659b90b5323105c6d2c2b80baa4d0f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62919373"
 ---
 # <a name="idebugfunctionobject2createobject"></a>IDebugFunctionObject2::CreateObject
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Erstellt ein Objekt, das einen Konstruktor, der angegebenen Einstellungen für die Evaluierung und einen Timeoutwert verwendet.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT CreateObject (  
    IDebugFunctionObject* pConstructor,  
    DWORD                 dwArgs,  

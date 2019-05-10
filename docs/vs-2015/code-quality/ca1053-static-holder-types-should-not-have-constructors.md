@@ -1,14 +1,9 @@
 ---
-title: 'CA1053: Statische Haltertypen sollten keine Konstruktoren aufweisen | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'CA1053: Statische Haltertypen sollten keine Konstruktoren | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - StaticHolderTypesShouldNotHaveConstructors
 - CA1053
@@ -20,14 +15,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 94cbf1b8ff26bbc7d85929da2d1a8bbf62cb8530
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 83000143674e7cc3bc412c0ca8a579660160514c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832926"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444558"
 ---
-# <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053: Statische Haltertypen sollten keine Konstruktoren aufweisen
+# <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053: Statische Haltertypen sollten keine Konstruktoren aufweisen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -47,7 +42,7 @@ ms.locfileid: "49832926"
  Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie den Standardkonstruktor, oder stellen sie private.
 
 > [!NOTE]
->  Einige Compiler erstellen automatisch einen öffentlichen Standardkonstruktor, wenn der Typ keine Konstruktoren definiert ist. Ist dies der Fall bei Ihrem Typ, fügen Sie einen privaten Standardkonstruktor, um die Verletzung zu entfernen.
+> Einige Compiler erstellen automatisch einen öffentlichen Standardkonstruktor, wenn der Typ keine Konstruktoren definiert ist. Ist dies der Fall bei Ihrem Typ, fügen Sie einen privaten Standardkonstruktor, um die Verletzung zu entfernen.
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Unterdrücken Sie keine Warnung dieser Regel. Das Vorhandensein des Konstruktors legt nahe, dass der Typ nicht um einen statischen Typ ist.
@@ -56,6 +51,3 @@ ms.locfileid: "49832926"
  Das folgende Beispiel zeigt einen Typ, der gegen diese Regel verstößt. Beachten Sie, dass kein Standardkonstruktor vorhanden, im Quellcode ist. Wenn dieser Code in eine Assembly kompiliert wird, wird der C#-Compiler einen Standardkonstruktor, einfügen, der gegen diese Regel verstoßen wird. Um dies zu korrigieren, deklarieren Sie einen privaten Konstruktor.
 
  [!code-csharp[FxCop.Design.StaticTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.StaticTypes/cs/FxCop.Design.StaticTypes.cs#1)]
-
-
-

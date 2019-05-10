@@ -1,7 +1,6 @@
 ---
-title: 'CA1050: Typen in Namespaces deklarieren'
+title: 'CA1050: Typen in Namespaces deklarieren.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1050
@@ -12,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: 1002748d-ac8d-404f-85dd-7a12d1ad3e05
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cb2000249e7e809f4570d93703c0c15093ec2cb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8cac669b96f362d6da73e3eb2f373137c3d9bdd3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845232"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778517"
 ---
-# <a name="ca1050-declare-types-in-namespaces"></a>CA1050: Typen in Namespaces deklarieren
+# <a name="ca1050-declare-types-in-namespaces"></a>CA1050: Typen in Namespaces deklarieren.
 
 |||
 |-|-|

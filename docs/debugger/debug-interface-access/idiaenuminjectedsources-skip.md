@@ -1,30 +1,33 @@
 ---
 title: 'Idiaenuminjectedsources:: Skip | Microsoft-Dokumentation'
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaEnumInjectedSources::Skip method
 ms.assetid: 4aad6a51-f2d3-4064-b216-60d830d0a560
-author: mikejo5000
+caps.latest.revision: 10
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: 9e5e3525e39fe8eea0614f18067922f6efa3ba11
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 807ed82a68089cb656f68c8cc1881dce683bb8a9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824050"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829718"
 ---
 # <a name="idiaenuminjectedsourcesskip"></a>IDiaEnumInjectedSources::Skip
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Überspringt eine angegebene Anzahl der eingefügten Quellen in einer Enumerationsfolge.  
   
 ## <a name="syntax"></a>Syntax  
   
-```C++  
+```cpp#  
 HRESULT Skip (   
    ULONG celt  
 );  

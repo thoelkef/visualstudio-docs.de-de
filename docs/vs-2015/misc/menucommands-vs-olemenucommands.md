@@ -1,32 +1,27 @@
 ---
 title: MenuCommand- und OleMenuCommands | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - commands, creating in VSPackages
 - command buttons, creating and placing
 - menus, creating commands
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 caps.latest.revision: 46
-manager: douge
-ms.openlocfilehash: 3b548a43cabcb097250411c3475f47774c840511
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: b6a12d683d3a2cb6b8d1c5ea5d7ca790de94adc6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911907"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000949"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommand- und OleMenuCommand-Objekte
 Sie können Menübefehle erstellen, indem Sie entweder aus dem <xref:System.ComponentModel.Design.MenuCommand> - oder aus dem <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> -Objekt ableiten und die entsprechenden Ereignishandler implementieren. In den meisten Fällen können Sie <xref:System.ComponentModel.Design.MenuCommand>verwenden, wie dies in der VSPackage-Projektvorlage geschieht, gelegentlich müssen Sie aber möglicherweise <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>verwenden.  
   
- Die Befehle, die ein VSPackage für die IDE verfügbar macht, müssen sichtbar und aktiviert sein, damit ein Benutzer sie verwenden kann. Wenn Befehle in einer VSCT-Datei erstellt werden, indem die Visual Studio-Paket-Projektvorlage verwendet wird, sind sie standardmäßig sichtbar und aktiviert. Durch Festlegen einiger Befehlsflags, z. B. `DynamicItemStart`, kann das Standardverhalten geändert werden. Die Sichtbarkeit, der Aktivierungsstatus und andere Eigenschaften eines Befehls können im Code auch zur Laufzeit geändert werden, indem auf das <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> -Objekt zugegriffen wird, das dem Befehl zugeordnet ist.  
+ Die Befehle, die ein VSPackage für die IDE verfügbar macht, müssen sichtbar und aktiviert sein, damit ein Benutzer sie verwenden kann. Wenn Befehle in einer VSCT-Datei erstellt werden, indem die Visual Studio-Paket-Projektvorlage verwendet wird, sind sie standardmäßig sichtbar und aktiviert. Durch Festlegen einiger Befehlsflags, z. B. `DynamicItemStart`, kann das Standardverhalten geändert werden. Die Sichtbarkeit, der Aktivierungsstatus und andere Eigenschaften eines Befehls können im Code auch zur Laufzeit geändert werden, indem auf das <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> -Objekt zugegriffen wird, das dem Befehl zugeordnet ist.  
   
 ## <a name="prerequisites"></a>Vorraussetzungen  
  Um diese exemplarische Vorgehensweise befolgen zu können, müssen Sie das Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
@@ -69,17 +64,17 @@ Sie können Menübefehle erstellen, indem Sie entweder aus dem <xref:System.Comp
    </Button>
    ``` 
      
-   1.  Legen Sie die Felder `guid` und `id` so fest, dass sie dem GUID:ID-Paar des neuen Befehls entsprechen.  
+   1. Legen Sie die Felder `guid` und `id` so fest, dass sie dem GUID:ID-Paar des neuen Befehls entsprechen.  
   
-   2.  Legen Sie das `priority`-Attribut fest.  
+   2. Legen Sie das `priority` -Attribut fest.  
   
         Das `priority` -Attribut wird von der VSCT-Datei dazu verwendet, die Position der Schaltfläche zwischen den anderen Objekten in ihrer übergeordneten Gruppe zu bestimmen.  
   
         Befehle, die niedrigere Prioritätswerte haben, werden über oder links von Befehlen angezeigt, die höhere Prioritätswerte haben. Doppelte Prioritätswerte sind zulässig, aber die relativen Positionen von Befehlen, die dieselbe Priorität haben, werden durch die Reihenfolge bestimmt, in der VSPackages zur Laufzeit verarbeitet werden, und diese Reihenfolge kann nicht vorherbestimmt werden.  
   
-        Ist das `priority`-Attribut nicht angegeben, wird sein Wert auf 0 festgelegt.  
+        Ist das `priority` -Attribut nicht angegeben, wird sein Wert auf 0 festgelegt.  
   
-   3.  Legen Sie das `type` -Attribut fest. In den meisten Fällen hat es den Wert `"Button"`. Beschreibungen von anderen gültigen Schaltflächentypen finden Sie unter [Button Element](../extensibility/button-element.md).  
+   3. Legen Sie das `type` -Attribut fest. In den meisten Fällen hat es den Wert `"Button"`. Beschreibungen von anderen gültigen Schaltflächentypen finden Sie unter [Button Element](../extensibility/button-element.md).  
   
 5. Erstellen Sie in der Schaltflächendefinition ein [Strings](../extensibility/strings-element.md) -Element, das Folgendes enthält: ein [ButtonText](../extensibility/buttontext-element.md) -Element, in dem sich der Name des Menüs so befindet, wie er in der IDE angezeigt wird, sowie ein [CommandName](../extensibility/commandname-element.md) -Element, in dem sich der Name des Befehls befindet, über den im Fenster **Befehl** auf das Menü zugegriffen wird.  
   
@@ -95,7 +90,7 @@ Sie können Menübefehle erstellen, indem Sie entweder aus dem <xref:System.Comp
   
     Sie erreichen dies, abhängig von Ihrem Entwurf, durch eine von zwei Möglichkeiten:  
   
-   -   Erstellen Sie im `Button` -Element ein [Parent](../extensibility/parent-element.md) -Element, und legen Sie dessen Felder `guid` und `id` auf die Guid und die ID der Gruppe fest, in der der Befehl gehostet wird. Diese Gruppe wird auch als die *primäre übergeordnete Gruppe*bezeichnet.  
+   - Erstellen Sie im `Button` -Element ein [Parent](../extensibility/parent-element.md) -Element, und legen Sie dessen Felder `guid` und `id` auf die Guid und die ID der Gruppe fest, in der der Befehl gehostet wird. Diese Gruppe wird auch als die *primäre übergeordnete Gruppe*bezeichnet.  
   
         Im folgenden Beispiel wird ein Befehl definiert, der in einem benutzerdefinierten Menü angezeigt wird.  
   
@@ -110,7 +105,7 @@ Sie können Menübefehle erstellen, indem Sie entweder aus dem <xref:System.Comp
        </Button>
        ```
       
-   -   Sie können auf das `Parent` -Element verzichten, wenn der Befehl durch Befehlsplatzierung positioniert wird. Erstellen Sie ein [CommandPlacements](../extensibility/commandplacements-element.md) -Element vor dem `Symbols` -Abschnitt, und fügen Sie ein [CommandPlacement](../extensibility/commandplacement-element.md) -Element hinzu, das die `guid` und die `id` des Befehls, einen `priority`-Wert und ein übergeordnetes Element hat (siehe folgendes Beispiel).  
+   - Sie können auf das `Parent` -Element verzichten, wenn der Befehl durch Befehlsplatzierung positioniert wird. Erstellen Sie ein [CommandPlacements](../extensibility/commandplacements-element.md) -Element vor dem `Symbols` -Abschnitt, und fügen Sie ein [CommandPlacement](../extensibility/commandplacement-element.md) -Element hinzu, das die `guid` und die `id` des Befehls, einen `priority`-Wert und ein übergeordnetes Element hat (siehe folgendes Beispiel).  
   
    ```xml
    <CommandPlacements>
@@ -131,11 +126,11 @@ Sie können Menübefehle erstellen, indem Sie entweder aus dem <xref:System.Comp
   
  Für Code, in dem die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> -Schnittstelle direkt zur Befehlsbehandelung verwendet wird, müssen Sie die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> -Schnittstelle und deren Methoden implementieren. Die beiden wichtigsten Methoden sind <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> und <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>.  
   
-1.  Rufen Sie die <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> -Instanz ab, wie im folgenden Beispiel gezeigt.  
+1. Rufen Sie die <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> -Instanz ab, wie im folgenden Beispiel gezeigt.  
   
      [!code-csharp[ButtonGroup#21](../snippets/csharp/VS_Snippets_VSSDK/buttongroup/cs/buttongrouppackage.cs#21)]  
   
-2.  Erstellen Sie ein <xref:System.ComponentModel.Design.CommandID> -Objekt, dessen Parameter aus der GUID und der ID des zu behandelnden Befehls bestehen (siehe folgendes Beispiel).  
+2. Erstellen Sie ein <xref:System.ComponentModel.Design.CommandID> -Objekt, dessen Parameter aus der GUID und der ID des zu behandelnden Befehls bestehen (siehe folgendes Beispiel).  
   
      [!code-csharp[ButtonGroup#22](../snippets/csharp/VS_Snippets_VSSDK/buttongroup/cs/buttongrouppackage.cs#22)]  
   
@@ -143,15 +138,15 @@ Sie können Menübefehle erstellen, indem Sie entweder aus dem <xref:System.Comp
   
      Alternativ können Sie das <xref:System.ComponentModel.Design.CommandID> -Objekt auffüllen, indem Sie den unformatierten Zeichenfolgenwert der GUID und den Integer-Wert der ID verwenden.  
   
-3.  Instanziieren Sie entweder ein <xref:System.ComponentModel.Design.MenuCommand> - oder ein <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> -Objekt, das die Methode, die den Befehl behandelt, zusammen mit der <xref:System.ComponentModel.Design.CommandID>angibt (siehe folgendes Beispiel).  
+3. Instanziieren Sie entweder ein <xref:System.ComponentModel.Design.MenuCommand> - oder ein <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> -Objekt, das die Methode, die den Befehl behandelt, zusammen mit der <xref:System.ComponentModel.Design.CommandID>angibt (siehe folgendes Beispiel).  
   
      [!code-csharp[ButtonGroup#23](../snippets/csharp/VS_Snippets_VSSDK/buttongroup/cs/buttongrouppackage.cs#23)]  
   
-     Das <xref:System.ComponentModel.Design.MenuCommand>-Objekt ist für statische Befehle geeignet. Dynamisches Anzeigen von Menüelementen erfordert QueryStatus-Ereignishandler. Das <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> -Objekt fügt das <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> -Ereignis, das auftritt, wenn das Hostmenü des Befehls geöffnet wird, sowie einige andere Eigenschaften hinzu, z. B. <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>.  
+     Das <xref:System.ComponentModel.Design.MenuCommand> -Objekt ist für statische Befehle geeignet. Dynamisches Anzeigen von Menüelementen erfordert QueryStatus-Ereignishandler. Das <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> -Objekt fügt das <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> -Ereignis, das auftritt, wenn das Hostmenü des Befehls geöffnet wird, sowie einige andere Eigenschaften hinzu, z. B. <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>.  
   
-     Befehle, die durch die Paketvorlage erstellt wurden, werden standardmäßig an ein <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>-Objekt in der `Initialize()`-Methode der Paketklasse übergeben.  
+     Befehle, die durch die Paketvorlage erstellt wurden, werden standardmäßig an ein <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> -Objekt in der `Initialize()` -Methode der Paketklasse übergeben.  
   
-4.  Das <xref:System.ComponentModel.Design.MenuCommand> -Objekt ist für statische Befehle geeignet. Dynamisches Anzeigen von Menüelementen erfordert QueryStatus-Ereignishandler. Das <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> -Objekt fügt das <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> -Ereignis, das auftritt, wenn das Hostmenü des Befehls geöffnet wird, sowie einige andere Eigenschaften hinzu, z. B. <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>.  
+4. Das <xref:System.ComponentModel.Design.MenuCommand> -Objekt ist für statische Befehle geeignet. Dynamisches Anzeigen von Menüelementen erfordert QueryStatus-Ereignishandler. Das <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> -Objekt fügt das <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> -Ereignis, das auftritt, wenn das Hostmenü des Befehls geöffnet wird, sowie einige andere Eigenschaften hinzu, z. B. <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>.  
   
      Befehle, die durch die Paketvorlage erstellt wurden, werden standardmäßig an ein <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> -Objekt in der `Initialize()` -Methode der Paketklasse übergeben. Der Visual Studio-Assistent implementiert die `Initialize` -Methode durch Verwenden von `MenuCommand`. Für ein dynamisches Anzeigen von Menüelementen müssen Sie dies in `OleMenuCommand`ändern, wie im nächsten Schritt gezeigt. Außerdem müssen Sie, um den Menüelementtext zu ändern, der Schaltfläche des Menübefehls in der VSCT-Datei ein TextChanges-Befehlsflag hinzufügen (siehe folgendes Beispiel).  
   
@@ -167,11 +162,11 @@ Sie können Menübefehle erstellen, indem Sie entweder aus dem <xref:System.Comp
     </Button>
     ```
       
-5.  Übergeben Sie den neuen Menübefehl an die <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> -Methode in der <xref:System.ComponentModel.Design.IMenuCommandService> -Schnittstelle. Für Befehle, die durch die Paketvorlage erstellt wurden, wird dies standardmäßig erledigt, wie im folgenden Beispiel gezeigt.  
+5. Übergeben Sie den neuen Menübefehl an die <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> -Methode in der <xref:System.ComponentModel.Design.IMenuCommandService> -Schnittstelle. Für Befehle, die durch die Paketvorlage erstellt wurden, wird dies standardmäßig erledigt, wie im folgenden Beispiel gezeigt.  
   
      [!code-csharp[ButtonGroup#24](../snippets/csharp/VS_Snippets_VSSDK/buttongroup/cs/buttongrouppackage.cs#24)]  
   
-6.  Implementieren Sie die Methode, die den Befehl behandelt.  
+6. Implementieren Sie die Methode, die den Befehl behandelt.  
   
 #### <a name="to-implement-querystatus"></a>So implementieren Sie „QueryStatus“  
   
@@ -182,7 +177,7 @@ Sie können Menübefehle erstellen, indem Sie entweder aus dem <xref:System.Comp
     [!code-csharp[MenuText#14](../snippets/csharp/VS_Snippets_VSSDK/menutext/cs/menutextpackage.cs#14)]
     [!code-vb[MenuText#14](../snippets/visualbasic/VS_Snippets_VSSDK/menutext/vb/menutextpackage.vb#14)]  
   
-    Dem `EventHandler`-Objekt wird der Name einer Methode übergeben, die aufgerufen wird, wenn der Status des Menübefehls abgefragt wird.  
+    Dem `EventHandler` -Objekt wird der Name einer Methode übergeben, die aufgerufen wird, wenn der Status des Menübefehls abgefragt wird.  
   
 2. Implementieren Sie die Abfragestatus-Handlermethode für den Befehl. Der `object` `sender` -Parameter kann in ein <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> -Objekt umgewandelt werden, das dazu verwendet wird, die verschiedenen Attribute des Menübefehls, so auch den Text, festzulegen. In der folgenden Tabelle sind die Eigenschaften der <xref:System.ComponentModel.Design.MenuCommand> -Klasse (aus der die MPF-Klasse <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> abgeleitet wird) aufgeführt, die den <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> -Flags entsprechen.  
   
@@ -210,7 +205,7 @@ Sie können Menübefehle erstellen, indem Sie entweder aus dem <xref:System.Comp
   
 1. Geben Sie <xref:Microsoft.VisualStudio.VSConstants.S_OK> für gültige Befehle zurück.  
   
-2. Legen Sie das `cmdf`-Element des `prgCmds`-Parameters fest.  
+2. Legen Sie das `cmdf` -Element des `prgCmds` -Parameters fest.  
   
     Der Wert des `cmdf` -Elements ist die logische Vereinigung von Werten aus der <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> -Enumeration, die über den logischen ODER-Operator (`|`) kombiniert werden.  
   
@@ -238,7 +233,7 @@ Sie können Menübefehle erstellen, indem Sie entweder aus dem <xref:System.Comp
   
       `prgCmds[0] cmdf |= OLECMDF_DEFHIDEONCTXMENU`  
   
-   - Wenn für den Befehl das `TEXTCHANGES`-Flag verwendet wird, legen Sie das `rgwz`-Element des `pCmdText`-Parameters auf den neuen Text des Befehls und das `cwActual`-Element des `pCmdText`Parameters auf die Länge der Befehlszeichenfolge fest.  
+   - Wenn für den Befehl das `TEXTCHANGES` -Flag verwendet wird, legen Sie das `rgwz` -Element des `pCmdText` -Parameters auf den neuen Text des Befehls und das `cwActual` -Element des `pCmdText` Parameters auf die Länge der Befehlszeichenfolge fest.  
   
      Hinsichtlich Fehlerbedingungen muss die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> -Methode die folgenden Fehlerfälle behandeln:  
   
@@ -250,11 +245,11 @@ Sie können Menübefehle erstellen, indem Sie entweder aus dem <xref:System.Comp
   
 ##### <a name="to-implement-the-exec-method"></a>So implementieren Sie die Exec-Methode  
   
--   Wenn die Befehls- `GUID` unbekannt ist, geben Sie `OLECMDERR_E_UNKNOWNGROUP`zurück.  
+- Wenn die Befehls- `GUID` unbekannt ist, geben Sie `OLECMDERR_E_UNKNOWNGROUP`zurück.  
   
--   Wenn die `GUID` bekannt, aber die Befehls-ID unbekannt ist, geben Sie `OLECMDERR_E_NOTSUPPORTED`zurück.  
+- Wenn die `GUID` bekannt, aber die Befehls-ID unbekannt ist, geben Sie `OLECMDERR_E_NOTSUPPORTED`zurück.  
   
--   Wenn die `GUID` und die Befehls-ID mit dem GUID:ID-Paar übereinstimmen, das für den Befehl in der VSCT-Datei verwendet wird, führen Sie den Code aus, der dem Befehl zugeordnet ist, und geben Sie <xref:Microsoft.VisualStudio.VSConstants.S_OK>zurück.  
+- Wenn die `GUID` und die Befehls-ID mit dem GUID:ID-Paar übereinstimmen, das für den Befehl in der VSCT-Datei verwendet wird, führen Sie den Code aus, der dem Befehl zugeordnet ist, und geben Sie <xref:Microsoft.VisualStudio.VSConstants.S_OK>zurück.  
   
 ## <a name="see-also"></a>Siehe auch  
  [VSCT-XML-Schemareferenz](../extensibility/vsct-xml-schema-reference.md)   

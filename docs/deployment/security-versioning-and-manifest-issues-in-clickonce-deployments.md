@@ -1,8 +1,6 @@
 ---
 title: Probleme mit Sicherheit, Versionsverwaltung und Manifesten in ClickOnce-Bereitstellungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,17 +19,17 @@ helpviewer_keywords:
 - ClickOnce applications, security issues
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7ae835b53960ca6952b71c10a2348f707785e16
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: c8a7c0363ea774206cdf6f1db792ab5e7cbd2454
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081744"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226409"
 ---
-# <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Probleme mit Sicherheit, versionsverwaltung und Manifesten in ClickOnce-Bereitstellungen
+# <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Probleme mit Sicherheit, Versionsverwaltung und Manifesten in ClickOnce-Bereitstellungen
 
 Es gibt eine Vielzahl von Problemen bei der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Sicherheit, versionsverwaltung von Anwendungen, und manifest-Syntax und Semantik, die dazu führen können, dass eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nicht für eine erfolgreiche Bereitstellung.
 
@@ -51,7 +49,7 @@ Wenn Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwe
 
 Weitere Informationen und Anweisungen dazu, wie Sie das Kontingent für die online-Anwendung zu ändern, finden Sie unter [Übersicht über die ClickOnce-Cache](../deployment/clickonce-cache-overview.md).
 
-## <a name="versioning-issues"></a>Probleme bei der versionsverwaltung
+## <a name="versioning-issues"></a>Versionsprobleme
 
 Sie können Probleme auftreten, wenn Sie Ihrer Assembly einen starken Namen zuweisen und erhöht die Versionsnummer der Assembly ein Anwendungsupdate entsprechend. Jede Assembly kompiliert, die mit einem Verweis auf eine Assembly mit starkem Namen selbst neu kompiliert werden muss, oder die Assembly wird versucht, auf die ältere Version verweisen. Die Assembly wird diese verwenden, da die Assembly den alte Wert in seine bindungsanforderung verwendet wird.
 
@@ -98,6 +96,6 @@ Wenn Sie eine Anwendung verschieben oder kopieren möchten, müssen Sie auch akt
 
 ## <a name="see-also"></a>Siehe auch
 
-[Problembehandlung bei ClickOnce-Bereitstellungen](../deployment/troubleshooting-clickonce-deployments.md)  
-[Securw ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)  
-[Wählen Sie eine Strategie für die ClickOnce-Bereitstellung](../deployment/choosing-a-clickonce-deployment-strategy.md)
+[Problembehandlung bei ClickOnce-Bereitstellungen](../deployment/troubleshooting-clickonce-deployments.md)
+[Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)
+[auswählen eine Strategie für die ClickOnce-Bereitstellung](../deployment/choosing-a-clickonce-deployment-strategy.md)

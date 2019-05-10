@@ -1,25 +1,20 @@
 ---
 title: Ausnahmen von Visual Studio-Lifecycle-Richtlinie | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-install
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-install
+ms.topic: conceptual
 ms.assetid: c238489d-6181-42c6-aa60-f75d0889dc68
 caps.latest.revision: 3
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: c7c60747429bd702cdcea5f19891829411cd4a9c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b17693523c75dc434fdda258c07a9b17ecfda1b0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772624"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763088"
 ---
 # <a name="visual-studio-lifecycle-policy-exceptions"></a>Ausnahmen von Visual Studio-Lebenszyklusrichtlinien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,21 +32,21 @@ Visual Studio enthält eine Sammlung von Compilern, Sprachen, Laufzeiten, Umgebu
 |[ASP.NET-Webstapel](http://go.microsoft.com/fwlink/?LinkId=328918)|ASP.NET MVC 4<br /><br /> ASP.NET MVC 5<br /><br /> ASP.NET-Web-API<br /><br /> ASP.NET-Web-API 2<br /><br /> ASP.NET-Webseiten 2<br /><br /> ASP.NET-Webseiten 3|  
 |[Entity Framework 6](http://go.microsoft.com/fwlink/?LinkId=328950)|Entity Framework 6|  
 |[Exchange 2013](http://go.microsoft.com/fwlink/?LinkId=328950)|Exchange-Webdienste|  
-|[Microsoft-OWIN](http://go.microsoft.com/fwlink/?LinkId=328951)|Microsoft OWIN|  
+|[Microsoft OWIN](http://go.microsoft.com/fwlink/?LinkId=328951)|Microsoft OWIN|  
 |[Microsoft Web Developer Tools 2013](http://go.microsoft.com/fwlink/?LinkId=328952)|Microsoft Web Developer Tools 2013|  
 |Updates für diese Komponenten werden über NuGet verteilt und unterliegen nicht den standardmäßigen Microsoft-Lebenszyklusrichtlinien.  Weitere Informationen finden Sie unter [http://docs.nuget.org/](http://docs.nuget.org/).|JSON-Webtokenhandler für Microsoft .NET Framework 4.5<br /><br /> NuGet 2.7<br /><br /> SignalR<br /><br /> Web Optimization Framework<br /><br /> WebGrease|  
 |[ODataLib](http://go.microsoft.com/fwlink/?LinkId=328954)|ODataLib|  
 |[Office 2013](http://support.microsoft.com/lifecycle/?p1=16674)|Open XML SDK|  
 |[Online Services-Richtlinie](http://support.microsoft.com/gp/OSSLpolicy)|Microsoft Ads SDK|  
 |[SharePoint 2013](http://support.microsoft.com/lifecycle/search/default.aspx?sort=PN&alpha=sharepoint%20server%202013&Filter=FilterNO)|SharePoint-Clientkomponente<br /><br /> SharePoint Foundation 2013<br /><br /> Windows Identity Foundation (WIF)-Erweiterungen|  
-|[Silverlight 5](http://support.microsoft.com/lifecycle/?p1=16278)<br /><br /> <br />> Siehe auch: [http://support.microsoft.com/gp/lifean45](http://support.microsoft.com/gp/lifean45)|Silverlight 5-Laufzeit<br /><br /> Silverlight 5 SDK|  
+|[Silverlight 5](http://support.microsoft.com/lifecycle/?p1=16278)<br /><br /> <br />Weitere Informationen: [http://support.microsoft.com/gp/lifean45](http://support.microsoft.com/gp/lifean45)|Silverlight 5-Laufzeit<br /><br /> Silverlight 5 SDK|  
 |[SQL Server 2008 R2](http://support.microsoft.com/lifecycle/search/default.aspx?sort=PN&alpha=SQL%20Server%202008%20R2&Filter=FilterNO)|CLR-Typen des SQL-Systems (SQL Server 2008 R2)|  
-|[SQLServer 2012](http://support.microsoft.com/lifecycle/search/default.aspx?sort=PN&alpha=SQL%20Server%202012&Filter=FilterNO)|DACFx (DACFramework)<br /><br /> SMO (SharedManagementObjects)<br /><br /> SQL-Befehlszeilenprogramme<br /><br /> SQL-Sprachdienst – IntelliSense (TSQLLanguageService)<br /><br /> SQL LocalDB<br /><br /> SQL Native Client (Sqlncli)<br /><br /> SQL Server Express 2012 SP1<br /><br /> CLR-Typen des SQL-Systems (SQL Server 2012)<br /><br /> SQLDOM|  
-|[SQL Server 2014](https://support.microsoft.com/en-us/lifecycle/search?sort=PN&alpha=SQL%20Server%202014&Filter=FilterNO)|DACFx (DACFramework)<br /><br /> SMO (SharedManagementObjects)<br /><br /> SQL-Befehlszeilenprogramme<br /><br /> SQL-Sprachdienst – IntelliSense (TSQLLanguageService)<br /><br /> SQL LocalDB<br /><br /> SQL Native Client (Sqlncli)<br /><br /> SQL Server Express 2014<br /><br /> CLR-Typen des SQL-Systems (SQL Server 2014)<br /><br /> SQLDOM|  
+|[SQL Server 2012](http://support.microsoft.com/lifecycle/search/default.aspx?sort=PN&alpha=SQL%20Server%202012&Filter=FilterNO)|DACFx (DACFramework)<br /><br /> SMO (SharedManagementObjects)<br /><br /> SQL-Befehlszeilenprogramme<br /><br /> SQL-Sprachdienst – IntelliSense (TSQLLanguageService)<br /><br /> SQL LocalDB<br /><br /> SQL Native Client (Sqlncli)<br /><br /> SQL Server Express 2012 SP1<br /><br /> CLR-Typen des SQL-Systems (SQL Server 2012)<br /><br /> SQLDOM|  
+|[SQL Server 2014](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=SQL%20Server%202014&Filter=FilterNO)|DACFx (DACFramework)<br /><br /> SMO (SharedManagementObjects)<br /><br /> SQL-Befehlszeilenprogramme<br /><br /> SQL-Sprachdienst – IntelliSense (TSQLLanguageService)<br /><br /> SQL LocalDB<br /><br /> SQL Native Client (Sqlncli)<br /><br /> SQL Server Express 2014<br /><br /> CLR-Typen des SQL-Systems (SQL Server 2014)<br /><br /> SQLDOM|  
 |[SQL Server Compact Edition 4.0](http://support.microsoft.com/lifecycle/?p1=16106)|SQL Server Compact Edition 4.0|  
-|[WCF RIA Services v1. 0 SP2](http://go.microsoft.com/fwlink/?LinkId=328955)|WCF RIA Services v1.0 SP2|  
-|[WindowsServer 2008](http://support.microsoft.com/lifecycle/search/default.aspx?sort=PN&alpha=Windows%20Server%202008&Filter=FilterNO)|Windows-Webdienste für Windows Server 2008|  
+|[WCF RIA Services v1.0 SP2](http://go.microsoft.com/fwlink/?LinkId=328955)|WCF RIA Services v1.0 SP2|  
+|[Windows Server 2008](http://support.microsoft.com/lifecycle/search/default.aspx?sort=PN&alpha=Windows%20Server%202008&Filter=FilterNO)|Windows-Webdienste für Windows Server 2008|  
 |[Windows 7](http://support.microsoft.com/lifecycle/?c2=14019)|Windows 7 SDK|  
 |[Windows 8](http://support.microsoft.com/lifecycle/?c2=16796)|Windows 8 SDK|  
 |[Windows 8.1](http://support.microsoft.com/lifecycle/search/default.aspx?sort=PN&alpha=windows%208.1&Filter=FilterNO)|Windows 8.1 SDK<br /><br /> Windows Library für JavaScript (WinJS)|  
-|[Microsoft Azure](http://support.microsoft.com/gp/azure-cloud-lifecycle-faq)<br /><br /> <br />> Siehe auch: [Online Lifecycle-Richtlinie](http://support.microsoft.com/gp/OSSLpolicy)|Microsoft Azure Mobile Services SDK<br /><br /> Microsoft Azure Mobile Services Tools|
+|[Microsoft Azure](http://support.microsoft.com/gp/azure-cloud-lifecycle-faq)<br /><br /> <br />Siehe auch [Online-Lebenszyklusrichtlinie](http://support.microsoft.com/gp/OSSLpolicy)|Microsoft Azure Mobile Services SDK<br /><br /> Microsoft Azure Mobile Services Tools|

@@ -1,21 +1,19 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen einer realistischen 3D-Billardkugel'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0f8596e8a2064f09ff817a768dd7ec994e3c920
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9f5788b2c6b2dab4b6f0f7a6c520aa1f2ab5f9ef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847642"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844612"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Exemplarische Vorgehensweise: Erstellen einer realistischen 3D-Billardkugel
 
@@ -25,11 +23,11 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie mithilfe d
 
 Für die Durchführung dieser exemplarischen Vorgehensweise benötigen Sie folgende Komponenten und Kenntnisse:
 
--   Ein Tool zum Zusammenfügen von Texturen in einer Cubemap, wie das DirectX-Textur-Tool, das im DirectX SDK von Juni 2010 enthalten ist
+- Ein Tool zum Zusammenfügen von Texturen in einer Cubemap, wie das DirectX-Textur-Tool, das im DirectX SDK von Juni 2010 enthalten ist
 
--   Kenntnisse im Umgang mit der Bildbearbeitung in Visual Studio
+- Kenntnisse im Umgang mit der Bildbearbeitung in Visual Studio
 
--   Kenntnisse im Umgang mit dem Shader-Designer in Visual Studio
+- Kenntnisse im Umgang mit dem Shader-Designer in Visual Studio
 
 ## <a name="create-the-basic-appearance-with-shape-and-texture"></a>Erstellen der grundlegenden Darstellung mit Form und Textur
 
@@ -79,7 +77,7 @@ Stellen Sie sicher, dass das Fenster **Eigenschaften** und die **Toolbox** angez
 
 3. Wenden Sie die Textur an, die Sie gerade erstellt haben, indem Sie die Textureigenschaften konfigurieren. Legen Sie den Wert der Eigenschaft **Texture** (Textur) des Knotens **Texture Sample** (Texturbeispiel) auf **Texture1** fest, und geben Sie dann die Texturdatei an, indem Sie die Eigenschaft **Filename** (Dateiname) der Eigenschaftengruppe **Texture1** im gleichen Eigenschaftenfenster verwenden.
 
-   Weitere Informationen darüber, wie Sie eine Textur im Shader anwenden, finden Sie unter [Vorgehensweise: Erstellen eines Basistextur-Shaders](../designers/how-to-create-a-basic-texture-shader.md).
+   Weitere Informationen darüber, wie Sie eine Textur im Shader anwenden, finden Sie unter [Vorgehensweise: Erstellen eines Basistexturshaders](../designers/how-to-create-a-basic-texture-shader.md) beschrieben.
 
    Die Billardkugel sollte jetzt in etwa folgendermaßen aussehen:
 
@@ -101,7 +99,7 @@ In Computergrafiken werden *Beleuchtungsmodelle* verwendet – vereinfachte Näh
 
 - Optional können Sie das Beleuchtungsverhalten anpassen, indem Sie die Eigenschaft **MaterialDiffuse** des Shaderdiagramms konfigurieren. Um auf Eigenschaften des Shaderdiagramms zuzugreifen, wählen Sie einen leeren Bereich der Entwurfsoberfläche aus, und suchen Sie dann im Fenster **Eigenschaften** die Eigenschaft, auf die Sie zugreifen möchten.
 
-Weitere Informationen zur Verwendung der Lambert-Beleuchtung im Shader finden Sie unter [Vorgehensweise: Erstellen eines Lambert-Shaders](../designers/how-to-create-a-basic-lambert-shader.md).
+Weitere Informationen darüber, wie Sie das Lambert-Beleuchtungsmodell auf Ihren Shader anwenden, finden Sie unter [ Vorgehensweise: Erstellen eines einfachen Lambert-Shaders](../designers/how-to-create-a-basic-lambert-shader.md).
 
 Bei angewendetem Lambert-Beleuchtungsmodell sollte die Billardkugel in etwa folgendermaßen aussehen:
 
@@ -123,7 +121,7 @@ Das Phong-Beleuchtungsmodell basiert auf dem Lambert-Beleuchtungsmodell, kann ab
 
 2. Optional können Sie das Glanzlichtverhalten anpassen, indem Sie die Glanzlichteigenschaften (**MaterialSpecular** und **MaterialSpecularPower**) des Shaderdiagramms konfigurieren. Um auf Eigenschaften des Shaderdiagramms zuzugreifen, wählen Sie einen leeren Bereich der Entwurfsoberfläche aus, und suchen Sie dann im Fenster **Eigenschaften** die Eigenschaft, auf die Sie zugreifen möchten.
 
-   Weitere Informationen darüber, wie Sie Glanzlichter im Shader anwenden, finden Sie unter [Vorgehensweise: Erstellen eines Phong-Shaders](../designers/how-to-create-a-basic-phong-shader.md).
+   Weitere Informationen darüber, wie Sie Glanzlichter im Shader anwenden, finden Sie unter [Vorgehensweise: Erstellen eines Standard-Phong-Shaders](../designers/how-to-create-a-basic-phong-shader.md).
 
    Mit Glanzlichtern sollte die Billardkugel in etwa folgendermaßen aussehen:
 

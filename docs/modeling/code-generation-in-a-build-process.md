@@ -7,16 +7,18 @@ helpviewer_keywords:
 - text templates, transforming by using msbuild
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: d5d4b4c50a02a92d150a87788e6dc307dd2f8e64
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 07f7c91c74961fa846abb70637f358de59d0eb94
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865517"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62424042"
 ---
 # <a name="code-generation-in-a-build-process"></a>Codegenerierung in einem Buildprozess
 
@@ -26,7 +28,7 @@ Je nachdem, welche Build-Engine Sie verwenden, können die Buildaufgaben untersc
 
 Dies bedeutet, dass Sie Dinge wie Projektdateinamen nicht genauso zugreifen können, wenn Sie eine Textvorlage in MSBuild erstellen. Sie können jedoch [übergeben Sie Umgebungsinformationen mit Buildparametern in Textvorlagen und anweisungsprozessoren](#parameters).
 
-##  <a name="buildserver"></a> Konfigurieren des Computers
+## <a name="buildserver"></a> Konfigurieren des Computers
 
 Um Buildaufgaben auf dem Entwicklungscomputer zu ermöglichen, installieren Sie Modellierungs-SDK für Visual Studio.
 
@@ -58,7 +60,7 @@ Wenn [Buildserver](/azure/devops/pipelines/agents/agents) Ausführungen auf eine
 
 Sie müssen zum Bearbeiten der Projektdatei, um einige der Funktionen in MSBuild zu konfigurieren.
 
-In **Projektmappen-Explorer**, wählen Sie **entladen** aus dem Kontextmenü des Projekts. Damit können Sie die CSPROJ- oder VBPROJ-Datei im XML-Editor zu bearbeiten.
+In **Projektmappen-Explorer**, wählen Sie **entladen** über das Kontextmenü des Projekts. Damit können Sie die CSPROJ- oder VBPROJ-Datei im XML-Editor zu bearbeiten.
 
 Wenn Sie die Bearbeitung abgeschlossen haben, wählen Sie **Reload**.
 
@@ -77,8 +79,8 @@ Fügen Sie nach dieser Zeile den Textvorlagenimport ein:
 ```xml
 <!-- Optionally make the import portable across VS versions -->
   <PropertyGroup>
-    <!-- Get the Visual Studio version - defaults to 10: -->
-    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <!-- Get the Visual Studio version: -->
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">16.0</VisualStudioVersion>
     <!-- Keep the next element all on one line: -->
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
@@ -91,7 +93,7 @@ Fügen Sie nach dieser Zeile den Textvorlagenimport ein:
 
 Einige Eigenschaften, die Sie in die Projektdatei einfügen können, um die Transformationsaufgabe zu steuern:
 
-- Führen Sie die Transformationsaufgabe am Anfang jedes Builds aus:
+- Führen Sie die Transformierensaufgabe am Anfang jedes Builds aus:
 
     ```xml
     <PropertyGroup>
@@ -117,7 +119,7 @@ Einige Eigenschaften, die Sie in die Projektdatei einfügen können, um die Tran
 
      Standardmäßig generiert die Aufgabe T4 MSBuild erneut eine Ausgabedatei, wenn diese älter als die entsprechende Vorlagendatei oder alle Dateien ist, auf die die Vorlage oder ein Direktivenprozessor, der die Datei verwendet, zuvor zugegriffen hat. Beachten Sie, dass hierbei ein viel leistungsstärkerer Abhängigkeitstest durchgeführt wird als mit dem Befehl zur Transformation aller Vorlagen in Visual Studio, bei dem nur die Daten der Vorlage und der Ausgabedatei verglichen werden.
 
-Wenn Sie nur die Texttransformationen im Projekt ausführen möchten, rufen Sie die Aufgabe "TransformAll" auf:
+Wenn Sie nur die Texttransformationen im Projekt ausführen möchten, rufen Sie die Aufgabe „TransformAll“ auf:
 
 `msbuild myProject.csproj /t:TransformAll`
 
@@ -180,7 +182,7 @@ Diese Eigenschaften werden nur von MSBuild verwendet. Sie beeinflussen nicht die
 
 Ein hilfreicher Ordner für die Umleitung ist `$(IntermediateOutputPath).`
 
-Wenn Sie einen Ausgabedateinamen angeben, hat dieser Vorrang vor der Erweiterung, die in der output-Anweisung in den Vorlagen angegeben ist.
+Wenn Sie einen Ausgabedateinamen angeben, hat dieser Vorrang vor der Erweiterung, die in der output-Direktive in den Vorlagen angegeben ist.
 
 ```xml
 <ItemGroup>
@@ -214,7 +216,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-##  <a name="parameters"></a> Übergeben der buildkontextdaten in die Vorlagen
+## <a name="parameters"></a> Übergeben der buildkontextdaten in die Vorlagen
 
 Sie können Parameterwerte in der Projektdatei festlegen. Sie können z. B. übergeben [erstellen](../msbuild/msbuild-properties.md) Eigenschaften und [Umgebungsvariablen](../msbuild/how-to-use-environment-variables-in-a-build.md):
 
@@ -227,7 +229,7 @@ Sie können Parameterwerte in der Projektdatei festlegen. Sie können z. B. übe
 </ItemGroup>
 ```
 
-Legen Sie in einer Textvorlage `hostspecific` in der template-Anweisung fest. Verwenden der [Parameter](../modeling/t4-parameter-directive.md) Richtlinie, um Werte zu erhalten:
+Legen Sie in einer Textvorlage `hostspecific` in der template-Direktive fest. Verwenden der [Parameter](../modeling/t4-parameter-directive.md) Richtlinie, um Werte zu erhalten:
 
 ```
 <#@template language="c#" hostspecific="true"#>
@@ -248,7 +250,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 > [!NOTE]
 > `ResolveParameterValue` ruft Daten nur dann aus `T4ParameterValues` ab, wenn Sie MSBuild verwenden. Wenn Sie die Vorlage mit Visual Studio transformieren, haben die Parameter Standardwerte.
 
-##  <a name="msbuild"></a> Verwenden von Projekteigenschaften in der Assembly und die #include-Direktiven
+## <a name="msbuild"></a> Verwenden von Projekteigenschaften in der Assembly und die #include-Direktiven
 
 Visual Studio-Makros wie **$ (SolutionDir)** funktionieren nicht in MSBuild. Sie können stattdessen Projekteigenschaften verwenden.
 
@@ -268,7 +270,7 @@ Bearbeiten Ihrer *csproj* oder *vbproj* Datei, um eine Eigenschaft zu definieren
   </ItemGroup>
 ```
 
-Nun können Sie die Projekteigenschaft in der Assembly- und der Includeanweisung verwenden:
+Nun können Sie die Projekteigenschaft in der Assembly- und der Includedirektive verwenden:
 
 ```
 <#@ assembly name="$(myLibFolder)\MyLib.dll" #>
@@ -295,5 +297,16 @@ Wenn Sie eine eingeschlossene Datei oder eine andere Datei, die von der Vorlage 
 
 ## <a name="see-also"></a>Siehe auch
 
+::: moniker range="vs-2017"
+
 - Es gibt gute Anleitungen in der Vorlage T4 MSbuild an *% ProgramFiles% (x86) %\Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets*
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- Es gibt gute Anleitungen in der Vorlage T4 MSbuild an *% ProgramFiles% (x86) %\Microsoft Visual Studio\2019\Enterprise\msbuild\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets*
+
+::: moniker-end
+
 - [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md)

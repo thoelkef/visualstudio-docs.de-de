@@ -2,19 +2,18 @@
 title: Workflow-Designer - Laufzeit-Aktivitätsdesigner
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 ms.assetid: be18aa36-7909-4dd6-a786-b46959675a58
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29c78049fb36c0eae08054b0e8b78bd8957476c3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 54c24949c2f7046eade040498fbbd53962f12440
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008702"
 ---
 # <a name="runtime-activity-designers"></a>Laufzeit-Aktivitätsdesigner
 Laufzeitaktivitätsdesigner werden verwendet, um Workflowaktivitäten zu speichern und zu beenden. Die Themen in diesem Abschnitt enthalten Anleitungen zur Verwendung von Workflow-Designer-Aktivitäts-Designer.

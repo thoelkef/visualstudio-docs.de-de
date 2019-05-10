@@ -1,29 +1,31 @@
 ---
 title: IDebugComPlusSymbolProvider::GetLocalVariablelayout | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - GetLocalVariablelayout
 - IDebugComPlusSymbolProvider::GetLocalVariablelayout
 ms.assetid: b7328d85-e5e9-4d9f-bcd1-e7711fd33878
-author: gregvanl
+caps.latest.revision: 11
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 9fda531db157d75edff107df6de43e48f3dcdfaf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f5ed664c3c9b018be6e29b5129c375d1e8f5eb41
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62922725"
 ---
 # <a name="idebugcomplussymbolprovidergetlocalvariablelayout"></a>IDebugComPlusSymbolProvider::GetLocalVariablelayout
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Ruft das Layout von lokalen Variablen für einen Satz von Methoden ab.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT GetLocalVariablelayout(  
    ULONG32   ulAppDomainID,  
    GUID      guidModule,  
@@ -65,7 +67,7 @@ int GetLocalVariablelayout(
 ## <a name="example"></a>Beispiel  
  Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) Schnittstelle.  
   
-```cpp  
+```cpp#  
 HRESULT CDebugSymbolProvider::GetLocalVariablelayout(  
     ULONG32 ulAppDomainID,   
     GUID guidModule,   

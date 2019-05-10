@@ -1,14 +1,9 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Installers für eine ClickOnce-Anwendung | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +18,13 @@ ms.assetid: fb222cc5-8aeb-4b94-8c49-b93e342f5f69
 caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 16686b0bf53f9e1358d96a7abcfe95f8ed6aac82
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9ebde75fdf36c84f40ae660a24d469c36e72ceaf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49222767"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386601"
 ---
 # <a name="walkthrough-creating-a-custom-installer-for-a-clickonce-application"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Installers für eine ClickOnce-Anwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +35,11 @@ Jede ClickOnce-Anwendung, die basierend auf eine .exe-Datei kann im Hintergrund 
   
 ### <a name="to-create-a-custom-clickonce-application-installer"></a>Erstellen ein benutzerdefiniertes Installers der ClickOnce-Anwendung  
   
-1.  Fügen Sie Verweise auf "System.Deployment" und "System.Windows.Forms" hinzu, in der ClickOnce-Anwendung.  
+1. Fügen Sie Verweise auf "System.Deployment" und "System.Windows.Forms" hinzu, in der ClickOnce-Anwendung.  
   
-2.  Fügen Sie eine neue Klasse zu Ihrer Anwendung, und geben Sie einen beliebigen Namen. In dieser exemplarischen Vorgehensweise verwendet den Namen `MyInstaller`.  
+2. Fügen Sie eine neue Klasse zu Ihrer Anwendung, und geben Sie einen beliebigen Namen. In dieser exemplarischen Vorgehensweise wird der Name `MyInstaller` verwendet.  
   
-3.  Fügen Sie die folgenden `Imports` oder `using` Anweisungen am Anfang Ihrer neuen Klasse.  
+3. Fügen Sie die folgenden `Imports` oder `using` Anweisungen am Anfang Ihrer neuen Klasse.  
   
     ```vb  
     Imports System.Deployment.Application  
@@ -56,17 +51,17 @@ Jede ClickOnce-Anwendung, die basierend auf eine .exe-Datei kann im Hintergrund 
     using System.Windows.Forms;  
     ```  
   
-4.  Fügen Sie die folgenden Methoden der Klasse.  
+4. Fügen Sie die folgenden Methoden der Klasse.  
   
      Diese Methoden rufen <xref:System.Deployment.Application.InPlaceHostingManager> Verfahren zum Herunterladen von des Bereitstellungsmanifests, assert berechtigt, den Benutzer für die Berechtigung zur Installation herunter und installieren Sie die Anwendung in die ClickOnce-Cache. Ein individuelles Installationsprogramm erstellt kann angeben, dass eine ClickOnce-Anwendung bereits vertrauenswürdig ist, oder kann die Entscheidung über die Vertrauenswürdigkeit zu verzögern der <xref:System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements%2A> Methodenaufruf. Dieser Code, stuft die Anwendung.  
   
     > [!NOTE]
-    >  Berechtigungen, die von bereits vertrauen darf die Berechtigungen des Codes benutzerdefiniertes Installationsprogramm nicht überschreiten.  
+    > Berechtigungen, die von bereits vertrauen darf die Berechtigungen des Codes benutzerdefiniertes Installationsprogramm nicht überschreiten.  
   
      [!code-csharp[System.Deployment.Application.InPlaceHostingManager#1](../snippets/csharp/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/CS/Form1.cs#1)]
      [!code-vb[System.Deployment.Application.InPlaceHostingManager#1](../snippets/visualbasic/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/VB/Form1.vb#1)]  
   
-5.  Rufen Sie die Installation aus dem Code versucht, den `InstallApplication` Methode. Wenn Sie die Klasse mit dem Namen z. B. `MyInstaller`, möglicherweise rufen Sie `InstallApplication` auf folgende Weise.  
+5. Rufen Sie die Installation aus dem Code versucht, den `InstallApplication` Methode. Wenn Sie die Klasse mit dem Namen z. B. `MyInstaller`, möglicherweise rufen Sie `InstallApplication` auf folgende Weise.  
   
     ```vb  
     Dim installer As New MyInstaller()  
@@ -85,7 +80,4 @@ Jede ClickOnce-Anwendung, die basierend auf eine .exe-Datei kann im Hintergrund 
   
 ## <a name="see-also"></a>Siehe auch  
  [ClickOnce Application Manifest (ClickOnce-Anwendungsmanifest)](../deployment/clickonce-application-manifest.md)   
- [\<EntryPoint >-Element](../deployment/entrypoint-element-clickonce-application.md)
-
-
-
+ [\<entryPoint>-Element](../deployment/entrypoint-element-clickonce-application.md)

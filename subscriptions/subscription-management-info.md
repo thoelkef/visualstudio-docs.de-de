@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 03/13/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Erfahren Sie mehr über die Abonnementverwaltung.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 04b2170e38954f4806a35bd960a2d4d41080d212
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 8b5c0840c8ef3576b070e190302c111d84440f4f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283418"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62427493"
 ---
 # <a name="learn-about-subscription-management"></a>Informationen zur Abonnementverwaltung
 

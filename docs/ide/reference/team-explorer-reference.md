@@ -1,17 +1,16 @@
 ---
 title: Team Explorer-Referenz
 ms.date: 12/04/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
-ms.manager: douge
-ms.openlocfilehash: c4feda1f01e08807041efb9ae9b3d0bbe84d24b0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.manager: jillfra
+ms.openlocfilehash: 6a7c1e9d0f5e8b8ef48a033d58038818d2d620e5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840751"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945077"
 ---
 # <a name="team-explorer-reference"></a>Team Explorer-Referenz
 
@@ -34,7 +33,7 @@ Die **Homepage** weist abhängig davon, ob Sie eine Verbindung mit einem [Git](/
 
 | **Homepage** mit Git | **Homepage** mit TFVC |
 | - | - |
-| ![Team Explorer-Homepage mit Git in Visual Studio 2019](media/team-explorer-reference/team-explorer-git.png) | ![Team Explorer-Homepage mit TFVC in Visual Studio 2017](media/team-explorer-reference/team-explorer-tfvc.png) |
+| ![Team Explorer-Homepage mit Git in Visual Studio 2019](media/team-explorer-reference/team-explorer-git.png) | ![Team Explorer-Homepage mit TFVC in Visual Studio](media/team-explorer-reference/team-explorer-tfvc.png) |
 
 ## <a name="changes-page-git"></a>Seite „Änderungen“ (Git)
 
@@ -80,8 +79,12 @@ Mit der Seite **Arbeitselemente** können Sie Abfragen von [Arbeitselementen](/a
 - [Email query results list using Outlook (Senden der Abfrageergebnisliste per E-Mail mit Outlook)](/azure/devops/boards/queries/share-plans)
 - [Create reports from query in Excel (Erstellen von Berichten aus Abfragen in Excel)](/azure/devops/report/excel/create-status-and-trend-excel-reports) (nur TFS)
 
+::: moniker range=">= vs-2019"
+
 > [!NOTE]
-> In Visual Studio 2019 Preview 1 gibt es eine neue [Arbeitselementfunktion](/azure/devops/boards/work-items/set-work-item-experience-vs). Weitere Informationen zum Anzeigen von Arbeitselementen in Visual Studio 2019 Preview 1 finden Sie unter [View and add work items (Anzeigen und Hinzufügen von Arbeitselementen)](/azure/devops/boards/work-items/view-add-work-items).
+> In Visual Studio 2019 gibt es eine neue [Arbeitselementfunktion](/azure/devops/boards/work-items/set-work-item-experience-vs). Weitere Informationen zum Anzeigen von Arbeitselementen in Visual Studio 2019 finden Sie unter [View and add work items (Anzeigen und Hinzufügen von Arbeitselementen)](/azure/devops/boards/work-items/view-add-work-items).
+
+::: moniker-end
 
 ## <a name="builds-page"></a>Seite „Builds“
 

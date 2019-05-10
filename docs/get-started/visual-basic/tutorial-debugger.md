@@ -12,23 +12,19 @@ helpviewer_keywords:
 ms.assetid: 62734c0d-a75a-4576-8f73-0e97c19280e1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4437b108aebd63950bce0ea07b9b1e493cf759af
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: cb6763ef598cb700c7fb7b3d40a3890629c2a058
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62972895"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>Tutorial: Informationen zum Debuggen von Visual Basic-Code mit Visual Studio
 
 In diesem Artikel werden die Funktionen des Visual Studio-Debuggers in einer ausführlichen exemplarischen Vorgehensweise vorgestellt. Einen allgemeineren Überblick über die Funktionen des Debuggers finden Sie unter [Ein erster Blick auf den Visual Studio-Debugger](../../debugger/debugger-feature-tour.md). Wenn Sie *Ihre App debuggen*, bedeutet dies in der Regel, dass Sie Ihre Anwendung mit dem angefügten Debugger ausführen. Wenn Sie dies machen, bietet der Debugger viele Möglichkeiten zum Ermitteln des Status Ihres Codes während der Ausführung. Sie können Ihren Code schrittweise durchlaufen und die Werte prüfen, die in Variablen gespeichert sind, Sie können die Überwachung von Variablen festlegen, um zu sehen, wenn sich Werte ändern, und Sie können den Ausführungspfad Ihres Codes prüfen und feststellen, ob ein Codezweig ausgeführt wird usw. Wenn Sie zum ersten Mal versuchen, Code zu debuggen, sollten Sie [Debuggen für Einsteiger](../../debugger/debugging-absolute-beginners.md) lesen, bevor Sie diesen Artikel durchgehen.
-
-| | |
-|---------|---------|
-| ![Kamerasymbol für Video](../../install/media/video-icon.png "Video ansehen") | Zum Debuggen können Sie sich ein [Video ansehen](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171), in dem ähnliche Schritte beschrieben werden. |
 
 In diesem Tutorial werden Sie Folgendes durchführen:
 
@@ -40,25 +36,47 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
-* Sie müssen Visual Studio 2017 und die Workload für die **.NET-Desktopentwicklung** installiert haben.
+::: moniker range=">=vs-2019"
 
-    Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  kostenlos herunterladen.
+Sie müssen Visual Studio 2019 und die Workload für die **.NET-Desktopentwicklung** installiert haben.
 
-    Falls Sie bereits über Visual Studio verfügen, aber die Workload noch installieren müssen, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** (**Datei** > **Neu** > **Projekt**) auf den Link **Visual Studio-Installer**. Der Visual Studio-Installer wird gestartet. Wählen Sie beispielsweise die Workload **.NET-Desktopentwicklung** aus, und klicken Sie anschließend auf **Ändern**.
+::: moniker-end
+::: moniker range="vs-2017"
+
+Sie müssen Visual Studio 2017 und die Workload für die **.NET-Desktopentwicklung** installiert haben.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) kostenlos herunterladen.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) kostenlos herunterladen.
+
+::: moniker-end
+
+Wenn Sie die Workload installieren müssen, Visual Studio aber bereits besitzen, navigieren Sie zu **Tools** > **Tools und Features abrufen…**. Dadurch wird der Visual Studio-Installer geöffnet. Der Visual Studio-Installer wird gestartet. Wählen Sie beispielsweise die Workload **.NET-Desktopentwicklung** aus, und klicken Sie anschließend auf **Ändern**.
 
 ## <a name="create-a-project"></a>Erstellen eines Projekts
 
-1. Klicken Sie in Visual Studio auf **Datei > Neues Projekt**.
+1. Öffnen Sie Visual Studio.
 
-2. Klicken Sie unter **Visual Basic** auf **Windows-Desktop** und dann im mittleren Bereich auf **Konsolen-App**.
+    ::: moniker range=">=vs-2019"
+    Drücken Sie **ESC**, um das Startfenster zu schließen. Geben Sie **STRG + Q** ein, um das Suchfeld zu öffnen, geben Sie **Visual Basic** ein, wählen Sie **Vorlagen** und dann **Neues Konsolen-App-Projekt (.NET Framework) erstellen** aus. Geben Sie im Dialogfeld, das nun angezeigt wird, einen Namen wie **Erste-Schritte-Debuggen** ein, und wählen Sie dann **Erstellen** aus.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialogfelds **Neues Projekt** unter **Visual Basic** **Windows Desktop** und dann im mittleren Bereich **Konsolen-App (.NET Framework)** aus. Geben Sie dann einen Namen ein, z.B. **Erste-Schritte-Debuggen**, und klicken Sie auf **OK**.
+    ::: moniker-end
 
-    Wenn Ihnen die Projektvorlage **Konsolenanwendung** nicht angezeigt wird, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** auf den Link **Visual Studio-Installer öffnen**. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload *.NET-Desktopentwicklung** aus, und klicken Sie anschließend auf **Ändern**.
-
-3. Geben Sie einen Namen ein, z.B. **get-gestartet-debugging**, und klicken Sie auf **OK**.
+    Wenn die Vorlage **Konsolen-App (.NET Framework)** nicht angezeigt wird, öffnen Sie unter **Tools** > **Tools und Features abrufen...** den Visual Studio-Installer. Wählen Sie beispielsweise die Workload **.NET-Desktopentwicklung** aus, und klicken Sie anschließend auf **Ändern**.
 
     Visual Studio erstellt daraufhin das Projekt.
 
-4. Ersetzen Sie in *Program.cs* den folgenden Code:
+1. Ersetzen Sie in *Module1.vb* diesen Code
 
     ```vb
     Module Module1
@@ -206,7 +224,7 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 
     ![Haltepunkt festlegen](../visual-basic/media/get-started-set-breakpoint-vb.png)
 
-    Haltepunkte sind eine einfache und wichtige Funktion zum zuverlässigen Debuggen. Ein Haltepunkt gibt an, wo Visual Studio im ausgeführten Code angehalten werden soll. So können Sie einen Blick auf die Werte von Variablen oder das Speicherverhalten werfen oder überprüfen, ob eine Verzweigung im Code ausgeführt wird. 
+    Haltepunkte sind eine einfache und wichtige Funktion zum zuverlässigen Debuggen. Ein Haltepunkt gibt an, wo Visual Studio im ausgeführten Code angehalten werden soll. So können Sie einen Blick auf die Werte von Variablen oder das Speicherverhalten werfen oder überprüfen, ob eine Verzweigung im Code ausgeführt wird.
 
 2. Drücken Sie **F5**, oder klicken Sie auf die Schaltfläche**Debuggen starten** ![Debuggen starten](../../debugger/media/dbg-tour-start-debugging.png "Debuggen starten"). Daraufhin wird die App gestartet, und der Debugger führt den Code bis zu der Codezeile aus, in der Sie den Breakpoint festgelegt haben.
 

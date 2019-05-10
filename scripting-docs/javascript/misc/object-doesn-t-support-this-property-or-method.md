@@ -1,14 +1,9 @@
 ---
 title: Objekt unterstützt diese Eigenschaft oder Methode nicht. | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT438
 dev_langs:
@@ -16,27 +11,26 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 35f7a9b4-74fa-4ddb-b9f2-1a92345cb2ff
-caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 893b8328affcd0a893840cefddba61a322db315c
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 433972790310559b19ca5bc2c982c32e699e0e60
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53801861"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007442"
 ---
-# <a name="object-doesnt-support-this-property-or-method"></a>Das Objekt unterstützt diese Eigenschaft oder Methode nicht.
+# <a name="object-doesnt-support-this-property-or-method"></a>Diese Eigenschaft oder Methode wird vom Objekt nicht unterstützt
 Sie haben eine Eigenschaft oder eine Methode angegeben, die für dieses Objekt nicht vorhanden ist. Nicht alle Objekte unterstützen alle Eigenschaften und Methoden.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Überprüfen Sie die Eigenschaftten und Methoden auf mögliche Rechtschreibfehler.  
+- Überprüfen Sie die Eigenschaftten und Methoden auf mögliche Rechtschreibfehler.  
   
--   Vergewissern Sie sich, dass der Laufzeittyp des Objekts dem erwarteten Objekttyp entspricht.  
+- Vergewissern Sie sich, dass der Laufzeittyp des Objekts dem erwarteten Objekttyp entspricht.  
   
--   Weitere Informationen finden Sie in der Dokumentation zum Objekt.  
+- Weitere Informationen finden Sie in der Dokumentation zum Objekt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Object-Objekt](../../javascript/reference/object-object-javascript.md)   

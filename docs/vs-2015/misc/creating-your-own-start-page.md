@@ -1,27 +1,22 @@
 ---
 title: Erstellen einer eigenen Startseite | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - Create start page
 - custom start page
 - customize start page
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
-manager: douge
-ms.openlocfilehash: 005f9597abd1ce688724af9fcb167a626e4cd885
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: cc465ca5bc9474aaba51042d453a57ee7ec124ec
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432298"
 ---
 # <a name="creating-your-own-start-page"></a>Erstellen einer eigenen Startseite
 Sie können eine benutzerdefinierte Startseite mithilfe der Projektvorlage für Startseiten oder auf Grundlage einer leeren Startseite erstellen.  
@@ -33,22 +28,22 @@ Sie können eine benutzerdefinierte Startseite mithilfe der Projektvorlage für 
   
 #### <a name="to-create-a-custom-start-page-by-using-the-start-page-project-template"></a>So erstellen Sie eine benutzerdefinierte Startseite mithilfe der Projektvorlage für Startseiten  
   
-1.  Laden Sie die [Projektvorlage für Startseiten](http://go.microsoft.com/fwlink/?LinkId=186204) aus der Visual Studio Gallery herunter, und installieren Sie sie.  
+1. Laden Sie die [Projektvorlage für Startseiten](http://go.microsoft.com/fwlink/?LinkId=186204) aus der Visual Studio Gallery herunter, und installieren Sie sie.  
   
     > [!WARNING]
-    >  Bislang wurde die Projektvorlage für Startseiten von Visual Studio 2010 nicht aktualisiert. Weitere Informationen zum Aktualisieren dieser Vorlage finden Sie unter [Vorgehensweise: Aktualisieren einer Visual Studio benutzerdefinierte-Startseite](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
+    > Bislang wurde die Projektvorlage für Startseiten von Visual Studio 2010 nicht aktualisiert. Weitere Informationen zum Aktualisieren dieser Vorlage finden Sie unter [Vorgehensweise: Aktualisieren einer benutzerdefinierten Startseite Visual Studio](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
   
-2.  Nachdem Sie die Vorlage installiert haben, erstellen Sie auf deren Grundlage ein neues Startseitenprojekt.  
+2. Nachdem Sie die Vorlage installiert haben, erstellen Sie auf deren Grundlage ein neues Startseitenprojekt.  
   
-3.  Erweitern Sie im linken Bereich des Dialogfelds "Neues Projekt" unter **Installierte Vorlagen**den Knoten **Andere Projekttypen** , und klicken Sie dann auf **Erweiterungen**.  
+3. Erweitern Sie im linken Bereich des Dialogfelds "Neues Projekt" unter **Installierte Vorlagen**den Knoten **Andere Projekttypen** , und klicken Sie dann auf **Erweiterungen**.  
   
-4.  Klicken Sie im mittleren Bereich auf **Benutzerdefinierte Startseite**, geben Sie einen Namen für das Projekt an, und klicken Sie auf **OK**.  
+4. Klicken Sie im mittleren Bereich auf **Benutzerdefinierte Startseite**, geben Sie einen Namen für das Projekt an, und klicken Sie auf **OK**.  
   
      Visual Studio erstellt ein Startseitenprojekt. Dabei handelt es sich um eine vollständige Kopie der Visual Studio-Startseite.  
   
-5.  Öffnen Sie im **Projektmappen-Explorer**die Datei **StartPage.xaml**.  
+5. Öffnen Sie im **Projektmappen-Explorer**die Datei **StartPage.xaml**.  
   
-6.  Bearbeiten Sie "StartPage.xaml".  
+6. Bearbeiten Sie "StartPage.xaml".  
   
      Sie können Ihre Arbeit anzeigen, indem Sie F5 drücken. Dadurch wird eine experimentelle Visual Studio-Instanz mit der installierten benutzerdefinierten Startseite geöffnet.  
   
@@ -102,7 +97,7 @@ Sie können eine benutzerdefinierte Startseite mithilfe der Projektvorlage für 
   
     Die Arbeitsstartseite wird angezeigt. Sie müssen die experimentelle Instanz schließen, alle geänderten Dateien erneut kopieren und dann die experimentelle Instanz erneut öffnen, damit die Änderungen angezeigt werden.  
   
-   Sie können die benutzerdefinierte Startseite freigeben. Dazu laden Sie die VSIX-Datei aus dem Verzeichnis "bin\debug" in die [Visual Studio Gallery](http://go.microsoft.com/fwlink/?LinkID=123847) -Website bzw. eine andere Website oder eine Intranetfreigabe. Weitere Informationen finden Sie unter [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).  
+   Sie können die benutzerdefinierte Startseite freigeben, indem Sie laden die VSIX-Datei aus dem Verzeichnis "bin\Debug" in der [Visual Studio Marketplace](https://marketplace.visualstudio.com/) -Website oder eine andere Website oder Intranet. Weitere Informationen finden Sie unter [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Anpassen der Startseite](../ide/customizing-the-start-page-for-visual-studio.md)   

@@ -2,7 +2,6 @@
 title: 'Iactivescriptprofilercallback3:: Setwebworkerid-Methode | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f4025dbee7b8b5b246163a1919aec335a8863937
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 0798a23b4c8ad4e5859bec73ebfed47a56b322d6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54094432"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993102"
 ---
 # <a name="iactivescriptprofilercallback3setwebworkerid-method"></a>IActiveScriptProfilerCallback3::SetWebWorkerId-Methode
 Benachrichtigt den Profiler über die Worker-ID für diese Profilerstellungssitzung verwenden. Wenn die Funktion im Kontext der Seite nicht ausgeführt wird, wird diese Methode nicht aufgerufen. Der Wert des `webWorkerId` um 1 für jeden Arbeitsthread, beginnend mit 1 erhöht. Die ID-Werte sind nicht gedacht, stabile über eine Sitzung, und nur der Reihenfolge entsprechen, in der die Worker erstellt wurden.  

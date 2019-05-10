@@ -1,27 +1,24 @@
 ---
 title: Im Vergleich zu nicht typisierten Datasets typisierte | Microsoft-Dokumentation
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c83ba0bb-5425-4d47-8891-6b4dbf937701
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 71761826611c490a3fb43413acaa29eb6520138f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0d02f72a686d0f271e387e550122451db34c019a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283789"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668027"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Typisierte Datasets im Vergleich zu nicht typisierten Datasets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Ein typisiertes Dataset ist ein Dataset, das zuerst von der Basisklasse abgeleitet ist <xref:System.Data.DataSet> Klasse, und klicken Sie dann mithilfe von Informationen aus der **Dataset-Designer**, die in einer XSD-Datei zum Generieren einer neuen gespeichert wird stark typisierte Dataset-Klasse. Informationen aus dem Schema (Tabellen, Spalten usw.) generiert und in diese neue Datasetklasse als einen Satz von Eigenschaften und Objekte erster Klasse kompiliert. Da ein typisiertes Dataset von der Basisklasse erbt <xref:System.Data.DataSet> -Klasse übernimmt die typisierte Klasse die Funktionalität der <xref:System.Data.DataSet> Klasse mit Methoden, die eine Instanz von verwendet werden kann, und wählen Sie eine <xref:System.Data.DataSet> Klasse als Parameter.  
   
  Ein nicht typisiertes Dataset, weist im Gegensatz dazu keine entsprechenden integrierten Schema auf. Wie Sie in ein typisiertes Dataset enthält ein nicht typisiertes Dataset Tabellen, Spalten und So weiter, aber diese werden nur als Sammlungen verfügbar gemacht. (Aber nachdem Sie manuell in den Tabellen und andere Datenelemente in einer nicht typisierten Dataset erstellt haben, können Sie die Struktur des als Exportieren eines Schemas mithilfe des Datasets <xref:System.Data.DataSet.WriteXmlSchema%2A> Methode.)  
@@ -42,4 +39,3 @@ Ein typisiertes Dataset ist ein Dataset, das zuerst von der Basisklasse abgeleit
  Obwohl typisierten "Datasets" viele Vorteile haben, ist ein nicht typisiertes Dataset in einer Vielzahl von Situationen nützlich. Das offensichtlichste Szenario ist, wenn kein Schema für das Dataset verfügbar ist. Dies kann beispielsweise auftreten, wenn Ihre Anwendung interagiert mit einer Komponente, die einen Dataset zurückgibt, aber Sie wissen nicht, im Voraus dessen Struktur. Auf ähnliche Weise, es gibt Zeiten, wenn Sie mit Daten arbeiten, die nicht über eine statische, vorhersagbare Struktur verfügt. In diesem Fall ist es unpraktisch, dass ein typisiertes Dataset verwenden, da Sie müssten die typisierte Dataset-Klasse bei jeder Änderung der Datenstruktur generieren.  
   
  Allgemeiner ausgedrückt, fallen oft können Sie ein Dataset dynamisch erstellt, ohne ein Schema zur Verfügung. In diesem Fall ist das Dataset einfach einer praktischen Struktur, in der Sie Informationen beibehalten können, solange die Daten in einer relationalen Weise dargestellt werden können. Zur gleichen Zeit können Sie nutzen das Dataset-Funktionen, z. B. die Möglichkeit zum Serialisieren von des Daten für die Übergabe an einen anderen Prozess oder eine XML-Datei geschrieben.
-

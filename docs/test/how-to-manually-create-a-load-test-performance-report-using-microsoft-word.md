@@ -8,14 +8,13 @@ helpviewer_keywords:
 ms.assetid: 3b864c75-2699-48c1-a2b4-9651f108c267
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 32cdb45a57b218645e6f9eaa84c5e198aeacc620
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: a82479fabda0cd64e977af01f87492563a02853f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987640"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950071"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Vorgehensweise: Manuelles Erstellen von Leistungsberichten für Auslastungstests mit Microsoft Word
 
@@ -31,27 +30,27 @@ Sie können Microsoft Word-Auslastungstestberichte manuell erstellen, indem Sie 
 
 ## <a name="copy-summary-view-data"></a>Kopieren von Daten aus der Zusammenfassungsansicht
 
-1.  Wenn die Zusammenfassungsansicht derzeit nicht angezeigt wird, klicken Sie in den **Auslastungstestergebnissen** auf der Symbolleiste auf **Zusammenfassung**.
+1. Wenn die Zusammenfassungsansicht derzeit nicht angezeigt wird, klicken Sie in den **Auslastungstestergebnissen** auf der Symbolleiste auf **Zusammenfassung**.
 
-2.  Klicken Sie in der Zusammenfassungsansicht mit der rechten Maustaste, und wählen Sie **Alles markieren** aus.
+2. Klicken Sie in der Zusammenfassungsansicht mit der rechten Maustaste, und wählen Sie **Alles markieren** aus.
 
-3.  Klicken Sie in der Zusammenfassungsansicht mit der rechten Maustaste, und wählen Sie **Kopieren** aus. Dadurch werden die Daten aus der Zusammenfassungsansicht im HTML-Format in die Zwischenablage gespeichert.
+3. Klicken Sie in der Zusammenfassungsansicht mit der rechten Maustaste, und wählen Sie **Kopieren** aus. Dadurch werden die Daten aus der Zusammenfassungsansicht im HTML-Format in die Zwischenablage gespeichert.
 
-4.  Fügen Sie in Microsoft Word die Zusammenfassungsansichtsdaten an der gewünschten Stelle ein.
+4. Fügen Sie in Microsoft Word die Zusammenfassungsansichtsdaten an der gewünschten Stelle ein.
 
-5.  Sie können nun Teile des kopierten Inhalts entsprechend Ihren Berichtsanforderungen ändern, formatieren und löschen.
+5. Sie können nun Teile des kopierten Inhalts entsprechend Ihren Berichtsanforderungen ändern, formatieren und löschen.
 
 ## <a name="copy-graph-view-data"></a>Diagrammansichtsdaten kopieren
 
-1.  Wenn die Diagrammansicht derzeit nicht angezeigt wird, klicken Sie in den **Auslastungstestergebnissen** auf der Symbolleiste auf **Diagramme**.
+1. Wenn die Diagrammansicht derzeit nicht angezeigt wird, klicken Sie in den **Auslastungstestergebnissen** auf der Symbolleiste auf **Diagramme**.
 
-2.  (Optional) Vergrößern Sie das bestimmte Diagramm, das Sie in Ihr Microsoft Word-Dokument kopieren möchten, wie in der folgenden Abbildung dargestellt. Weitere Informationen finden Sie unter [Vorgehensweise: Vergrößern eines Diagrammbereichs in Auslastungstestergebnissen](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+2. (Optional) Vergrößern Sie das bestimmte Diagramm, das Sie in Ihr Microsoft Word-Dokument kopieren möchten, wie in der folgenden Abbildung dargestellt. Weitere Informationen finden Sie unter [Vorgehensweise: Vergrößern eines Diagrammbereichs in Auslastungstestergebnissen](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
      ![Zoomsteuerelement der Diagrammansicht](../test/media/ltest_zoomcontrol.png)
 
-3.  Klicken Sie im Diagramm, das Sie in Ihr Microsoft Word-Dokument kopieren möchten, mit der rechten Maustaste, und wählen Sie **Kopieren** aus.
+3. Klicken Sie im Diagramm, das Sie in Ihr Microsoft Word-Dokument kopieren möchten, mit der rechten Maustaste, und wählen Sie **Kopieren** aus.
 
-4.  Fügen Sie das Diagramm und zugeordnete Tabellendaten in Microsoft Word an der gewünschten Position ein.
+4. Fügen Sie das Diagramm und zugeordnete Tabellendaten in Microsoft Word an der gewünschten Position ein.
 
     > [!WARNING]
     > Sie können das Diagramm nicht von einem Remotedesktop kopieren und auf einem anderen Computer einfügen, da nur die dem Diagramm zugeordneten Tabelleninformationen und nicht das Diagrammbild kopiert werden. Das Diagrammbild wird im temporären Verzeichnis auf dem Computer gespeichert, von dem es kopiert wurde. Der zweite Computer kann dieses Verzeichnis nicht dereferenzieren.

@@ -1,8 +1,7 @@
 ---
-title: IActiveScriptParseProcedure | Microsoft Docs
+title: IActiveScriptParseProcedure | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,22 +13,22 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 77aaa60942855a71f7d71037fbefb06462336a13
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5ed07ce5ed48abfb377dde5fc4d5dc128d881b4a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724380"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009197"
 ---
 # <a name="iactivescriptparseprocedure"></a>IActiveScriptParseProcedure
-Wenn das Windows-Skriptmodul des Quelltexts Code, Prozeduren, die das Skript hinzugefügt werden kann, implementiert die `IActiveScriptParseProcedure` Schnittstelle. Für interpretierte Skriptsprachen, die über keine unabhängig erstellungsumgebung, z. B. VBScript, stellt dies einen alternativen Mechanismus (außer `IActiveScriptParse` oder `IPersist`*) Skript Prozeduren auf den Namespace hinzufügen.  
+Wenn die Windows-Skript-Engine die Quellcodetexts Verfahren für das Skript hinzugefügt werden kann, implementiert die `IActiveScriptParseProcedure` Schnittstelle. Für interpretierte Skriptsprachen, die keine unabhängige erstellungsumgebung, z. B. VBScript, stellt dies einen alternativen Mechanismus (außer `IActiveScriptParse` oder `IPersist`*) Skript-Prozeduren für den Namespace hinzufügen.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
   
 |||  
 |-|-|  
 |Methode|Beschreibung|  
-|[IActiveScriptParseProcedure::ParseProcedureText](../../winscript/reference/iactivescriptparseprocedure-parseproceduretext.md)|Die Prozedur angegebenen Code analysiert, und fügt die Prozedur auf den Namespace.|  
+|[IActiveScriptParseProcedure::ParseProcedureText](../../winscript/reference/iactivescriptparseprocedure-parseproceduretext.md)|Die Prozedur angegebenen Code analysiert und fügt die Prozedur auf den Namespace.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Active Script-Schnittstellen](../../winscript/reference/active-script-interfaces.md)

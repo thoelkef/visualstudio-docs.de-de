@@ -1,26 +1,21 @@
 ---
 title: 'Vorgehensweise: Abrufen eines Diensts | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - services, consuming
 ms.assetid: 1f000020-8fb7-4e39-8e1e-2e38c7fec3d4
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ea5f3be4f5792213c5625e4c287195161eb1dd62
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 46ef86b8cde506aad3e00aa6b5dbc6470c0087de
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785065"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052180"
 ---
 # <a name="how-to-get-a-service"></a>Vorgehensweise: Abrufen eines Diensts
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,11 +28,11 @@ Häufig müssen Sie Visual Studio-Diensten Zugriff auf verschiedene Features zu 
   
 ## <a name="getting-a-service-from-an-initialized-vspackage"></a>Abrufen eines Diensts aus einer initialisierten VSPackage  
   
-1.  Alle Visual Studio-Erweiterung beginnt mit dem ein VSIX-Bereitstellung-Projekt, das die Ressourcen für die Erweiterung enthält. Erstellen Sie eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] VSIX-Projekt namens `GetServiceExtension`. Sie finden die VSIX-Projektvorlage in das **neues Projekt** Dialogfeld unter **Visual c# / Erweiterbarkeit**.  
+1. Alle Visual Studio-Erweiterung beginnt mit dem ein VSIX-Bereitstellung-Projekt, das die Ressourcen für die Erweiterung enthält. Erstellen Sie eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] VSIX-Projekt namens `GetServiceExtension`. Sie finden die VSIX-Projektvorlage in das **neues Projekt** Dialogfeld unter **Visual c# / Erweiterbarkeit**.  
   
-2.  Fügen Sie jetzt eine benutzerdefinierten Befehl-Elementvorlage, die mit dem Namen **GetServiceCommand**. In der **neues Element hinzufügen** wechseln Sie zum Dialogfeld **Visual c# / Erweiterbarkeit** , und wählen Sie **benutzerdefinierten Befehls**. In der **Namen** Feld am unteren Rand des Fensters, ändern Sie den Namen der Befehlsdatei an **GetServiceCommand.cs**. Weitere Informationen zum Erstellen eines benutzerdefinierten Befehls [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md)  
+2. Fügen Sie jetzt eine benutzerdefinierten Befehl-Elementvorlage, die mit dem Namen **GetServiceCommand**. In der **neues Element hinzufügen** wechseln Sie zum Dialogfeld **Visual c# / Erweiterbarkeit** , und wählen Sie **benutzerdefinierten Befehls**. In der **Namen** Feld am unteren Rand des Fensters, ändern Sie den Namen der Befehlsdatei an **GetServiceCommand.cs**. Weitere Informationen zum Erstellen eines benutzerdefinierten Befehls [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
-3.  Klicken Sie im GetServiceCommand.cs entfernen Sie den Text der MenuItemCommand-Methode, und fügen Sie den folgenden Code:  
+3. Klicken Sie im GetServiceCommand.cs entfernen Sie den Text der MenuItemCommand-Methode, und fügen Sie den folgenden Code:  
   
     ```csharp  
     IVsActivityLog activityLog = ServiceProvider.GetService(typeof(SVsActivityLog)) as IVsActivityLog;  
@@ -46,18 +41,18 @@ Häufig müssen Sie Visual Studio-Diensten Zugriff auf verschiedene Features zu 
   
     ```  
   
-     Dieser Code Ruft eine SVsActivityLog-Dienst ab und wandelt es diesen auf eine <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> -Schnittstelle, die zum Schreiben in das Aktivitätsprotokoll verwendet werden kann. Ein Beispiel finden Sie unter [Vorgehensweise: Verwenden des Aktivitätsprotokolls](../extensibility/how-to-use-the-activity-log.md).  
+     Dieser Code Ruft eine SVsActivityLog-Dienst ab und wandelt es diesen auf eine <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> -Schnittstelle, die zum Schreiben in das Aktivitätsprotokoll verwendet werden kann. Ein Beispiel finden Sie unter [Gewusst wie: Verwenden des Aktivitätsprotokolls](../extensibility/how-to-use-the-activity-log.md).  
   
-4.  Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz angezeigt wird.  
+4. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz angezeigt wird.  
   
-5.  Suchen Sie im Menü Extras der experimentellen Instanz den **aufrufen GetServiceCommand** Schaltfläche. Wenn Sie diese Schaltfläche klicken, sollten Sie sehen, dass ein Dialogfeld mit der Meldung **der Ereignisprotokolldienst Aktivität gefunden.**  
+5. Suchen Sie im Menü Extras der experimentellen Instanz den **aufrufen GetServiceCommand** Schaltfläche. Wenn Sie diese Schaltfläche klicken, sollten Sie sehen, dass ein Dialogfeld mit der Meldung **der Ereignisprotokolldienst Aktivität gefunden.**  
   
 ## <a name="getting-a-service-from-a-tool-window-or-control-container"></a>Abrufen eines Diensts aus einem Werkzeugcontainer Fensters oder Steuerelements  
  Manchmal müssen Sie zum Abrufen eines Diensts aus einem Toolfenster oder steuern, Container, der ist nicht positioniert wurde, andernfalls ist bei einem Dienstanbieter, der nicht über den Dienst kennt gewünschten positioniert wurde. Beispielsweise empfiehlt es sich zum Schreiben in das Aktivitätsprotokoll in einem Steuerelement aus.  
   
  Die statische <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> Methode beruht auf einer zwischengespeicherten Dienstanbieter, der zum ersten Mal initialisiert wird jedem VSPackage abgeleitet <xref:Microsoft.VisualStudio.Shell.Package> positioniert ist.  
   
- Da der VSPackage-Konstruktor aufgerufen wird, bevor das VSPackage platziert wird, sind globale Dienste in der Regel nicht von innerhalb des VSPackage-Konstruktors verfügbar. Finden Sie unter [wie: Problembehandlung bei Diensten](../extensibility/how-to-troubleshoot-services.md) für dieses Problem zu umgehen.  
+ Da der VSPackage-Konstruktor aufgerufen wird, bevor das VSPackage platziert wird, sind globale Dienste in der Regel nicht von innerhalb des VSPackage-Konstruktors verfügbar. Weitere Informationen finden Sie unter [How to: Problembehandlung bei Services](../extensibility/how-to-troubleshoot-services.md) für dieses Problem zu umgehen.  
   
  Hier ist ein Beispiel für die Möglichkeit, einen Dienst in einem Toolfenster oder andere nicht-VSPackage-Element abzurufen.  
   
@@ -90,7 +85,6 @@ if (sp != null)
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Bereitstellen ein Diensts](../extensibility/how-to-provide-a-service.md)   
+ [Vorgehensweise: Geben Sie einen Dienst](../extensibility/how-to-provide-a-service.md)   
  [Verwenden und Bereitstellen von Diensten](../extensibility/using-and-providing-services.md)   
  [Dienstgrundlagen](../extensibility/internals/service-essentials.md)
-

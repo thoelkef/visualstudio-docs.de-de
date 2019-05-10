@@ -1,7 +1,6 @@
 ---
 title: 'Vorgehensweise: Exportieren von Klassendiagrammen als Bilder (Klassen-Designer)'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.exportdialog
@@ -10,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c57055c5-1340-449f-b9d3-ca6f87e2f69a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe46216957f6104869e9cad7e95ce46769fb2a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3fb8f735478da16989830a1a68c239b9a2a98496
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873829"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975202"
 ---
 # <a name="how-to-export-class-diagrams-as-images"></a>Vorgehensweise: Exportieren von Klassendiagrammen als Bilder
 
@@ -26,15 +25,15 @@ Um ein Klassendiagramm zu exportieren, das Sie von Code in einem Projekt erstell
 
 ## <a name="export-a-diagram"></a>Exportieren eines Diagramms
 
-1.  Öffnen Sie die Klassendiagrammdatei (*.cd*).
+1. Öffnen Sie die Klassendiagrammdatei (*.cd*).
 
-2.  Wählen Sie im Menü **Klassendiagramm** oder im Kontextmenü der Diagrammoberfläche die Option **Diagramm als Bild exportieren** aus.
+2. Wählen Sie im Menü **Klassendiagramm** oder im Kontextmenü der Diagrammoberfläche die Option **Diagramm als Bild exportieren** aus.
 
-3.  Wählen Sie ein Diagramm aus.
+3. Wählen Sie ein Diagramm aus.
 
-4.  Wählen Sie das gewünschte Format aus.
+4. Wählen Sie das gewünschte Format aus.
 
-5.  Wählen Sie **Exportieren** aus, um den Export abzuschließen.
+5. Wählen Sie **Exportieren** aus, um den Export abzuschließen.
 
 Um mit anderen Dokumenten verknüpfte, exportierte Bilder zu aktualisieren, exportieren Sie das Diagramm erneut in Visual Studio.
 

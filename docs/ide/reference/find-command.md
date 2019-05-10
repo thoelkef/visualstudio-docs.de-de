@@ -1,7 +1,6 @@
 ---
 title: Befehl "Suchen"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - edit.find
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f0c705dc-2b97-423d-abbf-5584d4827208
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf891b87de6e4e836aa4a710b3c5638db9e23919
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9cd4a50ebf4c27213d288cbab33647931c4a399d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965693"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790273"
 ---
 # <a name="find-command"></a>Befehl "Suchen"
 Durchsucht Dateien mit einem Teil der Optionen, die auf der Registerkarte **In Dateien suchen** im Fenster **Suchen und Ersetzen** verfügbar sind.

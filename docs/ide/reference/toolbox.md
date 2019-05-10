@@ -1,7 +1,6 @@
 ---
 title: Fenster „Toolbox“
 ms.date: 01/18/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.toolbox.general
@@ -11,15 +10,15 @@ helpviewer_keywords:
 - custom controls [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46a3a0a415af9cddcba63040fd445de7869921e2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1331f416d95b56d466b6e2fe268ed7db071d66da
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918611"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945458"
 ---
 # <a name="toolbox"></a>Werkzeugkasten
 

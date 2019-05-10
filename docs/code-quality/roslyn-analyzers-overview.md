@@ -1,7 +1,6 @@
 ---
 title: Codeanalyse mithilfe von Roslyn-Analysetools
 ms.date: 03/26/2018
-ms.prod: visual-studio-dev15
 ms.topic: overview
 helpviewer_keywords:
 - code analysis, managed code
@@ -9,23 +8,23 @@ helpviewer_keywords:
 - Roslyn analyzers
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3f3f0307a8081cbff73dd39bba67fbbc2e5fa7b6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ba1529840a38a23929b9926cc4bed5cc22a058cb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825466"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>Übersicht über .NET Compiler Platform-Analysetools
 
-Visual Studio 2017 enthält integrierte .NET Compiler Platform-Analysetools, die Ihren C#- und Visual Basic-Code während der Eingabe untersuchen. Analysetools untersuchen das Codeformat, die Qualität und Wartbarkeit des Codes, den Codeentwurf und andere Probleme. Sie können aber auch zusätzliche Analysetools als Visual Studio-Erweiterung oder projektbezogen als NuGet-Paket installieren.
+Analysetools der .NET Compiler Platform („Roslyn“) analysieren Stil, Qualität und Verwaltbarkeit, Design und weitere Aspekte Ihres Codes. Visual Studio enthält integrierte Analysetools, die Ihren C#- und Visual Basic-Code während der Eingabe untersuchen. Die Einstellungen für diese integrierten Analysetools können Sie auf der Seite mit den [Text-Editor-Optionen](../ide/code-styles-and-quick-actions.md) oder in einer Datei vom Typ [.editorconfig](../ide/editorconfig-code-style-settings-reference.md) konfigurieren. Sie können aber auch zusätzliche Analysetools als Visual Studio-Erweiterung oder als NuGet-Paket installieren.
 
-Wenn von einem Analysetool Verstöße gegen Schwellenwertregeln gefunden werden, wird der fehlerhafte Code im Code-Editor mit einer *Wellenlinie* unterstrichen. Außerdem wird er in der **Fehlerliste** gemeldet.
+Wenn von einem Analysetool Regelverstöße gefunden werden, wird der Code im Code-Editor mit einer *Wellenlinie* unterstrichen. Außerdem wird er im Fenster **Fehlerliste** gemeldet.
 
-Viele Analysetoolregeln oder *Diagnosen* verfügen über mindestens ein *Codefix*, den Sie zur Problembehebung anwenden können. Den in Visual Studio integrierten Diagnoseanalysetools ist jeweils ein Codefix zugeordnet. Codefixe werden zusammen mit anderen *schnellen Aktionen* im Fehlerbehebungsmenü (Glühbirnensymbol) angezeigt. Weitere Informationen zu diesen Codefixen finden Sie unter [Häufige schnelle Aktionen](../ide/common-quick-actions.md).
+Viele Analysetoolregeln oder *Diagnosen* verfügen über mindestens ein *Codefix*, den Sie zur Problembehebung anwenden können. Den in Visual Studio integrierten Diagnoseanalysetools ist jeweils ein Codefix zugeordnet. Codekorrekturen werden zusammen mit anderen [schnellen Aktionen](../ide/quick-actions.md) im Fehlerbehebungsmenü (Glühbirnensymbol) angezeigt. Weitere Informationen zu diesen Codefixen finden Sie unter [Häufige schnelle Aktionen](../ide/common-quick-actions.md).
 
 ![Verstoß im Analysetool und Codefix mithilfe einer schnellen Aktion](../code-quality/media/built-in-analyzer-code-fix.png)
 
@@ -37,19 +36,29 @@ Wie auch Regelverstöße der statischen Codeanalyse werden Verstöße der Roslyn
 
 ![Wellenlinien im Code-Editor](media/diagnostics-severity-colors.png)
 
-Wie bei der statischen Codeanalyse auch, wenn diese aktiviert ist, wird Code von Roslyn-Analysetools zur Buildzeit untersucht. Dies jedoch auch live, während Sie tippen. Wenn Sie die [vollständige Projektmappenanalyse](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md#to-toggle-full-solution-analysis) aktivieren, können Roslyn-Analysetools auch Entwurfszeitanalysen von Codedateien bereitstellen, die nicht im Editor geöffnet sind.
+Wie bei der statischen Codeanalyse (sofern aktiviert) wird Code von Roslyn-Analysetools sowohl zur Buildzeit als auch live während der Eingabe analysiert. Wenn Sie die [vollständige Projektmappenanalyse](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md#to-toggle-full-solution-analysis) aktivieren, stellen Roslyn-Analysetools auch Entwurfszeitanalysen von Codedateien bereit, die nicht im Editor geöffnet sind.
 
-> [!NOTE]
+> [!TIP]
 > Buildfehler und Warnungen von Roslyn-Analysetools werden nur angezeigt, wenn die Analysetools als NuGet-Paket installiert wurden.
 
 Roslyn-Analysetools melden nicht nur die gleichen Problemtypen wie die statische Codeanalyse, sie ermöglichen Ihnen auch die einfache Behebung eines oder aller Vorkommnisse von Verstößen in Ihrer Datei oder Ihrem Projekt. Diese Aktionen werden als *Codefixe* bezeichnet. Codefixe sind IDE-spezifisch; In Visual Studio werden sie als [schnelle Aktionen](../ide/quick-actions.md) implementiert. Nicht allen Diagnoseanalysetools ist ein Codefix zugeordnet.
 
 > [!NOTE]
-> Die Menüoption **Analysieren** > **Codeanalyse ausführen** wird nur für die statische Codeanalyse angewandt. Außerdem sind auf der **Codeanalyse**-Eigenschaftenseite eines Projekts die Kontrollkästchen **Codeanalyse für Build aktivieren** und **Ergebnisse aus generiertem Code unterdrücken** nur für die statische Codeanalyse relevant. Sie haben keine Auswirkungen auf Roslyn-Analysetools.
+> Die folgenden UI-Optionen gelten nur für die Analyse von statischem Code:
+>
+> - Die Menüoption **Analysieren** > **Codeanalyse ausführen**.
+> - Die Kontrollkästchen **Codeanalyse für Build aktivieren** und **Ergebnisse aus generiertem Code unterdrücken** auf der Registerkarte **Codeanalyse** der Eigenschaftenseiten eines Projekts (diese Optionen haben keinen Einfluss auf Roslyn-Analysetools).
 
 Um zwischen Verstößen durch Roslyn-Analysetools und Verstößen durch statische Codeanalyse in der **Fehlerliste** zu unterscheiden, sehen Sie sich die Spalte **Tool** an. Wenn der Tool-Wert mit einer der Assemblys des Analysetools im **Projektmappen-Explorer** übereinstimmt, z.B. **Microsoft.CodeQuality.Analyzers**, stammt der Verstoß von einem Roslyn-Analysetool. Andernfalls stammt der Verstoß von einer statischen Codeanalyse.
 
 ![Tool-Spalte in Fehlerliste](media/code-analysis-tool-in-error-list.png)
+
+> [!TIP]
+> Die **RunCodeAnalysis**-MSBuild-Eigenschaft in einer Projektdatei gilt nur für die statische Codeanalyse. Legen Sie bei der Installation von Analysetools für **RunCodeAnalysis** in Ihrer Projektdatei **false** fest, um zu verhindern, dass die statische Codeanalyse nach dem Buildvorgang ausgeführt wird.
+>
+> ```xml
+> <RunCodeAnalysis>false</RunCodeAnalysis>
+> ```
 
 ## <a name="nuget-package-versus-vsix-extension"></a>NuGet-Paket im Vergleich zur VSIX-Erweiterung
 
@@ -81,6 +90,6 @@ Den Regelschweregrad von Analysetools, die als Visual Studio-Erweiterung install
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Schnelle Aktionen in Visual Studio](../ide/quick-actions.md)
+- [FAQ zu Analysetools](analyzers-faq.md)
 - [Schreiben Sie Ihr eigenes Roslyn-Analysetool](../extensibility/getting-started-with-roslyn-analyzers.md)
 - [.NET Compiler Platform-SDK](/dotnet/csharp/roslyn-sdk/)

@@ -1,7 +1,6 @@
 ---
 title: 'CA1023: Indexer sollten nicht mehrdimensional sein.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - IndexersShouldNotBeMultidimensional
@@ -12,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: ae499879-97f6-434e-a61d-1fedd231d2fb
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e1282612da884dfbaff646a3b84f713ada7ed75
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ef3afd9dda70d02698abec5459b36e6acc2c5ed0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852624"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62779615"
 ---
 # <a name="ca1023-indexers-should-not-be-multidimensional"></a>CA1023: Indexer sollten nicht mehrdimensional sein.
 
@@ -55,6 +54,6 @@ ms.locfileid: "53852624"
  [!code-csharp[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/CSharp/ca1023-indexers-should-not-be-multidimensional_1.cs)]
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1043: GANZZAHLIGES Ganzzahliges Argument oder Zeichenfolgenargument für Indexer verwenden](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md)
+ [CA1043: Ganzzahliges Argument oder Zeichenfolgenargument für Indexer verwenden](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md)
 
- [CA1024: NACH MÖGLICHKEIT Verwenden Sie Eigenschaften](../code-quality/ca1024-use-properties-where-appropriate.md)
+ [CA1024: Verwenden Sie Eigenschaften](../code-quality/ca1024-use-properties-where-appropriate.md)

@@ -1,13 +1,8 @@
 ---
 title: Formatbezeichner in C++ | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
@@ -32,13 +27,13 @@ ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
 caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6634124e7dc0b50236a9fd6ff9c5c5388c3063bc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9f620cbf5d522b99965268f35c00ff8e874f1542
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440072"
 ---
 # <a name="format-specifiers-in-c"></a>Formatbezeichner in C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,10 +43,10 @@ Sie können das Format ändern, in dem ein Wert im Fenster **Überwachen** mithi
  Formatbezeichner können im Fenster **Direkt** , im Fenster **Befehl** und sogar in den Quellcodefenstern verwendet werden. Wenn Sie in einen Ausdruck in diesen Fenstern anhalten, wird das Ergebnis in einem DataTip angezeigt. Die DataTip-Anzeige entspricht dem Formatbezeichner.  
   
 > [!NOTE]
->  Der systemeigene Debugger in Visual Studio wurde als neue Debug-Engine konstruiert. Im Rahmen dieser Änderung wurden mehrere neue Formatbezeichner hinzugefügt und einige alte Formatbezeichner entfernt. Der ältere Debugger wird weiterhin verwendet, wenn Sie das Interop-Debuggen (systemeigen und verwaltet) mit C++/CLI durchführen. Folgende Abschnitte in diesem Thema erläutern die Formatbezeichner für jede Debug-Engine.  
+> Der systemeigene Debugger in Visual Studio wurde als neue Debug-Engine konstruiert. Im Rahmen dieser Änderung wurden mehrere neue Formatbezeichner hinzugefügt und einige alte Formatbezeichner entfernt. Der ältere Debugger wird weiterhin verwendet, wenn Sie das Interop-Debuggen (systemeigen und verwaltet) mit C++/CLI durchführen. Folgende Abschnitte in diesem Thema erläutern die Formatbezeichner für jede Debug-Engine.  
 > 
 > - [Formatbezeichner](#BKMK_Visual_Studio_2012_format_specifiers) werden die Formatbezeichner in der neuen Debug-Engine beschrieben.  
->   -   [Formatbezeichner für das Interop-Debuggen mit C++/CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) werden die Formatbezeichner in der älteren Debug-Engine beschrieben.  
+>   - [Formatbezeichner für das Interop-Debuggen mit C++/CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) werden die Formatbezeichner in der älteren Debug-Engine beschrieben.  
   
 ## <a name="using-format-specifiers"></a>Verwenden von Formatbezeichnern  
  Wenn Ihr Code folgendermaßen lautet:  
@@ -68,7 +63,7 @@ int main() {
   
  ![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")  
   
-##  <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> Formatbezeichner  
+## <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> Formatbezeichner  
  Die folgenden Tabellen zeigen die Formatbezeichner, dass Sie in Visual Studio verwenden können. Fett formatierte Bezeichner werden nicht für das Interop-Debuggen mit C++/CLI unterstützt.  
   
 |Bezeichner|Format|Ursprünglicher Wert in "Überwachen"|Angezeigter Wert|  
@@ -88,18 +83,18 @@ int main() {
 |**s32**|UTF-32-Zeichenfolge|\<Speicherort > U "Hello World"|U”hello world”|  
 |**s32b**|UTF-32-Zeichenfolge (ohne Anführungszeichen)|\<Speicherort > U "Hello World"|hello world|  
 |**en**|enum|Samstag(6)|Samstag|  
-|**hv**|Zeigertyp - gibt an, dass der überprüfte Zeigerwert das Ergebnis der Heapzuweisung eines Arrays ist, z. B. `new int[3]`.|\<Speicherort > {\<erste Member >}|\<Speicherort > {\<erste Member >, \<zweite Member >,...}|  
-|**na**|Unterdrückt die Speicheradresse eines Zeigers auf ein Objekt.|\<Speicherort >, {Member = Value...}|{member=value…}|  
+|**hv**|Zeigertyp - gibt an, dass der überprüfte Zeigerwert das Ergebnis der Heapzuweisung eines Arrays ist, z. B. `new int[3]`.|\<Speicherort>{\<Erster Member>}|\<Speicherort > {\<erste Member >, \<zweite Member >,...}|  
+|**na**|Unterdrückt die Speicheradresse eines Zeigers auf ein Objekt.|\<location>, {member=value…}|{member=value…}|  
 |**nd**|Es werden nur die Basisklasseninformationen angezeigt, die abgeleiteten Klassen werden ignoriert.|`(Shape*) square` enthält die Basisklassen- und abgeleitete Klasseninformationen|Zeigt nur Basisklasseninformationen an|  
 |hr|HRESULT oder Win32-Fehlercode. (Der Debugger decodiert HRESULT-Werte nun automatisch, sodass der Bezeichner in diesem Fall nicht erforderlich ist.)|S_OK|S_OK|  
 |wc|Fensterklassenflag|0x0010|WC_DEFAULTCHAR|  
 |wm|Windows-Meldungsnummern|16|WM_CLOSE|  
-|!|Rohdatenformat, jegliche Ansichtsanpassungen für den Datentyp werden ignoriert.|\<benutzerdefinierte Darstellung >|4|  
+|!|Rohdatenformat, jegliche Ansichtsanpassungen für den Datentyp werden ignoriert.|\<Benutzerdefinierte Darstellung>|4|  
   
 > [!NOTE]
->  Wenn der Formatbezeichner **hv** vorhanden ist, versucht der Debugger, die Länge des Puffers zu bestimmen, und zeigt die entsprechende Anzahl von Elementen an. Da der Debugger nicht immer die exakte Puffergröße eines Arrays finden kann, sollten Sie möglichst immer einen Größenbezeichner `(pBuffer,[bufferSize])` verwenden. Der Formatbezeichner **hv** ist für Szenarien vorgesehen, in denen die Puffergröße nicht einfach verfügbar ist.  
+> Wenn der Formatbezeichner **hv** vorhanden ist, versucht der Debugger, die Länge des Puffers zu bestimmen, und zeigt die entsprechende Anzahl von Elementen an. Da der Debugger nicht immer die exakte Puffergröße eines Arrays finden kann, sollten Sie möglichst immer einen Größenbezeichner `(pBuffer,[bufferSize])` verwenden. Der Formatbezeichner **hv** ist für Szenarien vorgesehen, in denen die Puffergröße nicht einfach verfügbar ist.  
   
-###  <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> Größenbezeichner für Zeiger als Arrays  
+### <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> Größenbezeichner für Zeiger als Arrays  
  Wenn Sie einen Zeiger für ein Objekt haben, das Sie als Array anzeigen möchten, können Sie eine ganze Zahl oder einen Ausdruck verwenden, um die Anzahl von Arrayelementen zu bestimmen:  
   
 |Bezeichner|Format|Ursprünglicher Wert in "Überwachen"|Angezeigter Wert|  
@@ -108,7 +103,7 @@ int main() {
 |**[exp]**|Ein gültiger C++-Ausdruck, der für eine ganze Zahl ausgewertet wird.|pBuffer,[bufferSize]|Zeigt pBuffer als Array von `bufferSize` Elementen an.|  
 |**expand(n)**|Ein gültiger C++-Ausdruck, der für eine ganze Zahl ausgewertet wird|pBuffer, expand(2)|Zeigt das dritte Element von  `pBuffer`an|  
   
-##  <a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> Formatbezeichner für das Interop-Debuggen mit C++/CLI  
+## <a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> Formatbezeichner für das Interop-Debuggen mit C++/CLI  
  **Fett formatierte** Bezeichner werden nur zum Debuggen von systemeigenem und C++/CLI-Code unterstützt.  
   
 |Bezeichner|Format|Ursprünglicher Wert in "Überwachen"|Angezeigter Wert|  
@@ -121,17 +116,17 @@ int main() {
 |**f**|Gleitkommazahl mit Vorzeichen|(3./2.), f|1.500000|  
 |**e**|Wissenschaftliche Notation mit Vorzeichen|(3.0/2.0)|1.500000e+000|  
 |**g**|Gleitkommazahl oder wissenschaftliche Notation mit Vorzeichen, je nachdem, welche kürzer ist|(3.0/2.0)|1.5|  
-|c|Einzelnes Zeichen|\<Speicherort >|101 'e'|  
-|s|const char*|\<Speicherort >|"hello world"|  
-|su|const wchar_t*<br /><br /> const char16_t\*|\<Speicherort >|L"hello world"|  
-|sub|const wchar_t*<br /><br /> const char16_t\*|\<Speicherort >|hello world|  
-|s8|const char*|\<Speicherort >|"hello world"|  
+|c|Einzelnes Zeichen|\<Speicherort>|101 'e'|  
+|s|const char*|\<Speicherort>|"hello world"|  
+|su|const wchar_t*<br /><br /> const char16_t\*|\<Speicherort>|L"hello world"|  
+|sub|const wchar_t*<br /><br /> const char16_t\*|\<Speicherort>|hello world|  
+|s8|const char*|\<Speicherort>|"hello world"|  
 |hr|HRESULT oder Win32-Fehlercode. (Der Debugger decodiert HRESULT-Werte nun automatisch, sodass der Bezeichner in diesem Fall nicht erforderlich ist.)|S_OK|S_OK|  
 |wc|Fensterklassenflag|0x00000040,|WC_DEFAULTCHAR|  
 |wm|Windows-Meldungsnummern|0x0010|WM_CLOSE|  
-|!|Rohdatenformat, jegliche Ansichtsanpassungen für den Datentyp werden ignoriert.|\<benutzerdefinierte Darstellung >|4|  
+|!|Rohdatenformat, jegliche Ansichtsanpassungen für den Datentyp werden ignoriert.|\<Benutzerdefinierte Darstellung>|4|  
   
-###  <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Formatbezeichner für Speicherbereiche beim Interop-Debuggen mit C++/CLI  
+### <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Formatbezeichner für Speicherbereiche beim Interop-Debuggen mit C++/CLI  
  Die folgende Tabelle enthält Formatierungssymbole, die für Speicherbereiche verwendet werden. Bezeichner für Speicherbereiche können mit beliebigen Werten oder Ausdrücken verwendet werden, die als Speicherbereiche ausgewertet werden.  
   
 |Symbol|Format|Ursprünglicher Wert in "Überwachen"|Angezeigter Wert|  
@@ -144,14 +139,9 @@ int main() {
 |**mq**|2 Vierfachwörter|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|  
 |**mu**|2-Byte-Zeichen (Unicode)|0x0012ffac|0x0012ffac 8478 77f4 ffff ffff 0000 0000 0000 0000|  
   
-###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> Größenbezeichner für Zeiger als Arrays beim Interop-Debuggen mit C++/CLIt  
+### <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> Größenbezeichner für Zeiger als Arrays beim Interop-Debuggen mit C++/CLIt  
  Wenn Sie einen Zeiger für ein Objekt haben, das Sie als Array anzeigen möchten, können Sie eine ganze Zahl verwenden, um die Anzahl von Arrayelementen zu bestimmen:  
   
 |Bezeichner|Format|Ausdruck|Angezeigter Wert|  
 |---------------|------------|----------------|---------------------|  
 |n|Ganze Dezimalzahl|pBuffer[32]|Zeigt `pBuffer` als Array mit 32 Elementen an.|
-
-
-
-
-

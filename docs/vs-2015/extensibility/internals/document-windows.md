@@ -1,26 +1,21 @@
 ---
 title: Dokumentieren von Windows | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio SDK, document windows
 ms.assetid: 50081d48-987f-43db-8bf9-51b7cf76e9c0
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d669485eb13c8d9f089a54dcbfcf92fac710f474
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5e62be456422b7ee5e9f2828a44a6be05e1211d9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436338"
 ---
 # <a name="document-windows"></a>Dokumentfenster
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,11 +38,10 @@ In Visual Studio eine *Dokumentfenster* ist ein gerahmter untergeordnete Fenster
  Dokumentfenster werden erstellt, durch die Implementierung eines Editors. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> -Schnittstelle erstellt Dokumentfenster im Rahmen der Instanziierung eines Editors. Weitere Informationen finden Sie unter [Legacy-Schnittstellen in den Editor](../../extensibility/legacy-interfaces-in-the-editor.md).  
   
 > [!NOTE]
->  Rückwärts und navigationspunkte in einem Fenster weiterzuleiten, implementieren die <xref:Microsoft.VisualStudio.Shell.Interop.IVsBackForwardNavigation> Schnittstelle. Text-Editor wird Textmarkierungen navigationspunkte im Dokument identifiziert.  
+> Rückwärts und navigationspunkte in einem Fenster weiterzuleiten, implementieren die <xref:Microsoft.VisualStudio.Shell.Interop.IVsBackForwardNavigation> Schnittstelle. Text-Editor wird Textmarkierungen navigationspunkte im Dokument identifiziert.  
   
 ## <a name="the-running-document-table"></a>Die aktive Dokumenttabelle  
  Die IDE verwendet der ausgeführten Dokumententabelle (RDT), um den Status jedes Dokumentfenster nachzuverfolgen. Der RDT ist der Mechanismus, über welches, den Dokument Windows benachrichtigt werden, Ereignisse, z. B. wenn eine Projektmappe geschlossen wird oder wenn eine Datei bearbeitet wurde. Weitere Informationen finden Sie unter [Running Document Table](../../extensibility/internals/running-document-table.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Verzögertes Laden von Dokumenten](../../extensibility/internals/delayed-document-loading.md)
-

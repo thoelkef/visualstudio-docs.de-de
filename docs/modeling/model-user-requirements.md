@@ -7,16 +7,15 @@ helpviewer_keywords:
 - stories
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 9101c6f264d3f4017581a6732e9b93f78e33215d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d75bfd7634e068224b12168390193773c198957a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62814568"
 ---
 # <a name="model-user-requirements"></a>Modellieren von Benutzeranforderungen
 
@@ -57,7 +56,7 @@ Sie können verschiedene Ansichten der Benutzeranforderungen erstellen.  Jede An
 
 Beachten Sie, dass die meisten Diagrammtypen für andere Zwecke verwendet werden können. Einen Überblick über die Diagrammtypen finden Sie unter [Erstellen von Modellen für Ihre app](../modeling/create-models-for-your-app.md).
 
-##  <a name="BusinessRules"></a> Showing Business Rules
+## <a name="BusinessRules"></a> Showing Business Rules
 
 Eine Geschäftsregel ist eine Anforderung, die mit keinem speziellen Anwendungsfall verknüpft ist und im ganzen System zu beachten ist.
 
@@ -77,19 +76,19 @@ Weitere Informationen finden Sie in den folgenden Themen:
 |-|-|
 |Entwickeln von Code, der Geschäftsregeln entspricht|[Modellieren der Architektur Ihrer App](../modeling/model-your-app-s-architecture.md)|
 
-##  <a name="QoSRequirements"></a> Describing Quality of Service Requirements
+## <a name="QoSRequirements"></a> Describing Quality of Service Requirements
 
 Es gibt mehrere Kategorien von Servicequalitätsanforderungen. Hierzu gehören Folgende:
 
--   Leistung
+- Leistung
 
--   Sicherheit
+- Sicherheit
 
--   Verwendbarkeit
+- Verwendbarkeit
 
--   Zuverlässigkeit
+- Zuverlässigkeit
 
--   Stabilität
+- Stabilität
 
 Sie können einige dieser Anforderungen in die Beschreibungen bestimmter Anwendungsfälle einschließen. Andere Anforderungen sind nicht spezifisch für Anwendungsfälle und werden am effektivsten in ein separates Dokument geschrieben. Es ist nützlich, nach Möglichkeit das von den Anforderungsmodellen definierte Vokabular einzuhalten. Beachten Sie im nächsten Beispiel, dass die in der Anforderung verwendeten Hauptwörter den Titeln von Akteuren, Anwendungsfällen und Klassen in den vorangehenden Abbildungen entsprechen:
 

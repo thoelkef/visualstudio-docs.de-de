@@ -1,11 +1,8 @@
 ---
 title: ParallelForEach&lt;T&gt; Aktivitäts-Designer | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.ParallelForEach`1.UI
@@ -13,13 +10,13 @@ ms.assetid: e93a4843-aef2-4d3e-9a0a-a2d3d1411aa7
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: eb97ba6abb40c34d03e612c346e2c721719024de
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 825906f3de1b2d40d96dc19ed45d2a368d889994
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216397"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002309"
 ---
 # <a name="parallelforeachlttgt-activity-designer"></a>ParallelForEach&lt;T&gt; Aktivitäts-Designer
 Die <xref:System.Activities.Statements.ParallelForEach%601>-Aktivität listet die Elemente einer Auflistung auf und führt gleichzeitig, asynchron im gleichen Thread, eine eingebettete Anweisung für jedes Element der Auflistung aus. Verwenden Sie diese Flusssteuerungsaktivität statt der <xref:System.Activities.Statements.Sequence>-Aktivität, wenn von den untergeordneten Aktivitäten dieser Aktivität erwartet werden kann, dass sie in den Leerlauf übergehen.  
@@ -53,5 +50,5 @@ Die <xref:System.Activities.Statements.ParallelForEach%601>-Aktivität listet di
   
 ## <a name="see-also"></a>Siehe auch  
  [Sequenz](../workflow-designer/sequence-activity-designer.md)   
- [Parallele](../workflow-designer/parallel-activity-designer.md)   
+ [Parallel](../workflow-designer/parallel-activity-designer.md)   
  [Ablaufsteuerung](../workflow-designer/control-flow-activity-designers.md)

@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Angeben der zu startenden Binärdatei | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.itemlaunch
@@ -12,17 +10,17 @@ helpviewer_keywords:
 - performance sessions, launching
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87fc4102b3cbd3420f1e5c3b7ea4a067e0d95a0d
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: a03bf203e5078bdbdf6327ec7bda186613a25c03
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844858"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62996130"
 ---
-# <a name="how-to-specify-the-binary-to-start"></a>Vorgehensweise: Festlegen der zu startenden Binärdatei
+# <a name="how-to-specify-the-binary-to-start"></a>Vorgehensweise: Angeben der zu startenden Binärdatei
 
 Um ein Profil für Binärdateien zu erstellen, wie z.B. DLLs, müssen Sie Informationen im Dialogfeld  **\<Ziel> Eigenschaftenseiten** eingeben. Diese Informationen geben an, wo das DLL-Projekt die aufrufende Anwendung finden kann.
 

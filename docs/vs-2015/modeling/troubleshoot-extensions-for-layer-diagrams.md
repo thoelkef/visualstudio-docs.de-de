@@ -1,12 +1,9 @@
 ---
 title: Problembehandlung bei Erweiterungen für Ebenendiagramme | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: troubleshooting
 helpviewer_keywords:
 - layer diagrams, extension errors
 - layer diagrams, troubleshooting extensions
@@ -14,13 +11,13 @@ ms.assetid: 1fda4f8a-38b8-482b-87b8-eade1a4e5662
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6361651672e72df6661f030a4b6c8e451fdaea89
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 38a459760dd66e1160bd8b197ee9883b617639b2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738775"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439754"
 ---
 # <a name="troubleshoot-extensions-for-layer-diagrams"></a>Problembehandlung bei Erweiterungen für Ebenendiagramme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,22 +39,19 @@ In diesem Thema werden einige Probleme behandelt, die möglicherweise beim Erste
 2. Löschen Sie den folgenden Ordner: %LocalAppData%\Microsoft\VisualStudio\\[Version] \ComponentModelCache  
   
    > [!NOTE]
-   >  %LocalAppData% ist in der Regel *DriveName*: \Users\\*Benutzername*\AppData\Local.  
+   > %LocalAppData% ist in der Regel *DriveName*: \Users\\*Benutzername*\AppData\Local.  
   
    Fahren Sie ggf. mit der nächsten Prozedur fort.  
   
 #### <a name="an-old-version-of-my-validation-results-appears-or-my-validation-method-is-not-called"></a>Eine alte Version der Validierungsergebnisse wird angezeigt, oder die Validierungsmethode wird nicht aufgerufen.  
   
-1.  In der experimentellen Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]auf die **erstellen** Menü klicken Sie auf **Projektmappe bereinigen**. Damit werden die zwischengespeicherten Ergebnisse der vorherigen Validierungsanalyse gelöscht.  
+1. In der experimentellen Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]auf die **erstellen** Menü klicken Sie auf **Projektmappe bereinigen**. Damit werden die zwischengespeicherten Ergebnisse der vorherigen Validierungsanalyse gelöscht.  
   
-2.  Stellen Sie sicher, dass die Ebenen im Modell Codeelementen zugeordnet sind, und dass es mindestens einen Abhängigkeitslink im Modell gibt. Die Validierung wird nicht aufgerufen, wenn es nichts zu überprüfen gibt.  
+2. Stellen Sie sicher, dass die Ebenen im Modell Codeelementen zugeordnet sind, und dass es mindestens einen Abhängigkeitslink im Modell gibt. Die Validierung wird nicht aufgerufen, wenn es nichts zu überprüfen gibt.  
   
-3.  Reguläre Haltepunkte funktionieren möglicherweise in einer Validierungsmethode nicht, da diese in einem separaten Prozess ausgeführt wird. Sie müssen einen Aufruf für `System.Diagnostics.Debugger.Launch()` einfügen, wenn Sie die Methode schrittweise durchlaufen möchten.  
+3. Reguläre Haltepunkte funktionieren möglicherweise in einer Validierungsmethode nicht, da diese in einem separaten Prozess ausgeführt wird. Sie müssen einen Aufruf für `System.Diagnostics.Debugger.Launch()` einfügen, wenn Sie die Methode schrittweise durchlaufen möchten.  
   
-4.  In **"Source.Extension.vsixmanifest"** im Ebenenvalidierungsprojekt, stellen Sie sicher, dass Sie, sowohl hinzugefügt haben eine **MEF-Komponente** Element und ein **Benutzerdefinierter Erweiterungstyp** Element **Content**.  
+4. In **"Source.Extension.vsixmanifest"** im Ebenenvalidierungsprojekt, stellen Sie sicher, dass Sie, sowohl hinzugefügt haben eine **MEF-Komponente** Element und ein **Benutzerdefinierter Erweiterungstyp** Element **Content**.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erweitern von Ebenendiagrammen](../modeling/extend-layer-diagrams.md)
-
-
-

@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c59fcaa44314c421f896ca5f64e0a2582faa5eb9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 28ddaafc8ab4ddbaef1d7e42faedc2229664c6e6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833367"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433330"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Roslyn-Analyzer und codeabhängige Bibliothek für ImmutableArrays
 
@@ -25,7 +25,7 @@ Sie benötigen Folgendes zum Erstellen dieses Beispiels:
 
 * Visual Studio 2015 (keine Express Edition) oder eine höhere Version. Sie können die kostenlose [Visual Studio Community Edition](https://visualstudio.microsoft.com/vs/community/)
 * [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Sehen Sie sich auch bei der Installation von Visual Studio **Visual Studio-Erweiterbarkeitstools** unter **häufig verwendete Tools** zur gleichen Zeit das SDK zu installieren. Wenn Sie Visual Studio bereits installiert haben, können Sie dieses SDK auch installieren, indem Sie auf das Hauptmenü **Datei** > **neu** > **Projekt**, Auswahl **c#** im linken Navigationsbereich und klicken Sie dann auswählen **Erweiterbarkeit**. Bei der Auswahl der "**installieren Sie Visual Studio-Erweiterbarkeitstools**" Breadcrumb-Projektvorlage, sie werden aufgefordert, das SDK herunterladen und installieren.
-* [.NET Compiler Platform ("Roslyn") SDK](http://aka.ms/roslynsdktemplates). Sie können dieses SDK auch installieren, indem Sie auf das Hauptmenü **Datei** > **neu** > **Projekt**auswählen **c#** in den linken Navigationsbereich, auswählen und dann **Erweiterbarkeit**. Bei der Auswahl "**das .NET Compiler Platform SDK herunterladen**" Breadcrumb-Projektvorlage, sie werden aufgefordert, das SDK herunterladen und installieren. Dieses SDK enthält die [Roslyn Syntax Visualizer](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer). Diesem nützliches Tool können Sie herausfinden, welche Modelltypen Code sollten Sie in Ihr Analysemodul gesucht. Die Analyse-Infrastruktur-Aufrufe in Ihren Code für bestimmten Code-Modelltypen, damit Ihr Code nur ausgeführt wird, wenn erforderlich und kann sich nur auf die Analyse relevanten Codes konzentrieren.
+* [.NET Compiler Platform ("Roslyn") SDK](https://aka.ms/roslynsdktemplates). Sie können dieses SDK auch installieren, indem Sie auf das Hauptmenü **Datei** > **neu** > **Projekt**auswählen **c#** in den linken Navigationsbereich, auswählen und dann **Erweiterbarkeit**. Bei der Auswahl "**das .NET Compiler Platform SDK herunterladen**" Breadcrumb-Projektvorlage, sie werden aufgefordert, das SDK herunterladen und installieren. Dieses SDK enthält die [Roslyn Syntax Visualizer](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer). Diesem nützliches Tool können Sie herausfinden, welche Modelltypen Code sollten Sie in Ihr Analysemodul gesucht. Die Analyse-Infrastruktur-Aufrufe in Ihren Code für bestimmten Code-Modelltypen, damit Ihr Code nur ausgeführt wird, wenn erforderlich und kann sich nur auf die Analyse relevanten Codes konzentrieren.
 
 ## <a name="whats-the-problem"></a>Was ist das Problem?
 
@@ -298,7 +298,7 @@ Als Nächstes die Methode ruft den Stamm des Dokuments ab, und da dies mit belie
 
 Sie können jetzt drücken **F5** das Analysemodul in eine zweite Instanz von Visual Studio ausführen. Öffnen Sie das Konsolenprojekt, die, dem Sie zuvor verwendet. Nachdem Sie, dass die Glühbirne angezeigt sehen sollten, in denen Ihre neuen Objekterstellungsausdruck ist `ImmutableArray<int>`. Wenn Sie drücken **STRG**+**.** (Punkt), sehen Sie Ihren Code zu beheben, und Sie sehen eine Vorschau des automatisch generierten Code-Unterschied in der Glühbirne Benutzeroberfläche. Roslyn, die dies für Sie erstellt haben.
 
-**Pro-Tipps:** Wenn Sie die zweite Instanz von Visual Studio starten, und Sie nicht die Glühbirne, mit Ihren Codefix angezeigt, müssen Sie den Visual Studio-Komponente-Cache zu löschen. Zum Löschen des Zwischenspeichers erzwingt, dass Visual Studio, um die Komponenten neu zu überprüfen, damit Visual Studio und die aktuelle Komponente Adresse sollte. Fahren Sie zunächst die zweite Instanz von Visual Studio. Klicken Sie auf **Windows Explorer**, navigieren Sie zu *%LOCALAPPDATA%\Microsoft\VisualStudio\15.0Roslyn\\*. (Die "15.0" ändert sich von Version zu Version mit Visual Studio). Löschen Sie das Unterverzeichnis *ComponentModelCache*.
+**Pro-Tipps:** Wenn Sie die zweite Instanz von Visual Studio starten, und Sie nicht die Glühbirne, mit Ihren Codefix angezeigt, müssen Sie den Visual Studio-Komponente-Cache zu löschen. Zum Löschen des Zwischenspeichers erzwingt, dass Visual Studio, um die Komponenten neu zu überprüfen, damit Visual Studio und die aktuelle Komponente Adresse sollte. Fahren Sie zunächst die zweite Instanz von Visual Studio. Klicken Sie auf **Windows Explorer**, navigieren Sie zu *%LOCALAPPDATA%\Microsoft\VisualStudio\16.0Roslyn\\*. (Die "16.0" ändert sich von Version zu Version mit Visual Studio.) Löschen Sie das Unterverzeichnis *ComponentModelCache*.
 
 ## <a name="talk-video-and-finish-code-project"></a>Sprechen Sie Video- und schließen Sie Codeprojekt
 

@@ -2,21 +2,20 @@
 title: Workflow-Designer - Tastenkombinationen im Workflow-Designer
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - WFDKeyboardShortcuts.UI
 ms.assetid: 9be75438-a4a3-4781-94e5-45b7ec082358
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 326a377cd93e15c52a699dfb83c7ec111866cc0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 95e42442e8dce5db1ef6b670043bf1f26e554773
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537100"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Tastenkombinationen im Workflow-Designer
 
@@ -58,13 +57,13 @@ In der folgenden Liste sind die Gesten aufgeführt, mit denen ein Flussdiagramm 
 
 - So verbinden Sie Aktivitäten:
 
-    1.  Wählen Sie die Quellaktivität durch Drücken der TAB-TASTE aus.
+    1. Wählen Sie die Quellaktivität durch Drücken der TAB-TASTE aus.
 
-    2.  Drücken Sie STRG+E, M so oft wie erforderlich, um den Tastaturfokus auf die Zielaktivität zu verschieben.
+    2. Drücken Sie STRG+E, M so oft wie erforderlich, um den Tastaturfokus auf die Zielaktivität zu verschieben.
 
-    3.  Drücken Sie STRG+E, S, um die Zielaktivität der Auswahl hinzuzufügen.
+    3. Drücken Sie STRG+E, S, um die Zielaktivität der Auswahl hinzuzufügen.
 
-    4.  Drücken Sie STRG+E, F, um den Connector von der Quelle zum Ziel hinzuzufügen.
+    4. Drücken Sie STRG+E, F, um den Connector von der Quelle zum Ziel hinzuzufügen.
 
 Hinweise zum Verbinden von Aktivitäten mithilfe der Tastatur:
 
@@ -83,8 +82,8 @@ Standardmäßig gelten die Standardtastenkombinationen zum Bearbeiten von Text i
    - Ausschneiden
    - Kopieren
    - Einfügen
-   - Alle auswählen
-   - Rückgängigmachen
+   - Alles auswählen
+   - undo
    - Wiederholen
 
 - Um die Tastenkombinationen für Befehle zum Ausdruck bearbeiten im Workflow-Designer in Visual Studio neu zuordnen, bearbeiten Sie die Tastenkombinationen im Workflow-Designer-Bereich. In den Text-Editor-Bereich vorgenommene Änderungen gelten nicht automatisch für Workflow-Designer. Wenn Sie Verknüpfungen an beiden Stellen neu zuordnen möchten, müssen Sie die Änderungen zweimal (einmal für jeden Bereich) vornehmen.

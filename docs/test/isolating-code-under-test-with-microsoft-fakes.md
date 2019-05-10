@@ -1,22 +1,21 @@
 ---
 title: Isolieren von getestetem Code mithilfe von Microsoft Fakes
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: f38ce5a070214d96e969d3b27eb1662448e8360c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 89d072c7f9643c5991ec098f87d7ec35a295bbe1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966520"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971308"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Isolieren von getestetem Code mithilfe von Microsoft Fakes
 
@@ -24,19 +23,20 @@ Mit Microsoft Fakes isolieren Sie den zu testenden Code, indem Sie andere Teile 
 
 Es gibt zwei Arten von Fakes:
 
--   Ein [Stub](#get-started-with-stubs) tauscht eine Klasse gegen einen kleinen Ersatz aus, der die gleiche Schnittstelle implementiert.  Um Stubs verwenden zu können, müssen Sie die Anwendung so entwerfen, dass jede Komponente nur von Schnittstellen abhängt und nicht von anderen Komponenten. (Mit "Komponente" ist eine Klasse oder eine Gruppe von Klassen gemeint, die zusammen entworfen und aktualisiert werden und in der Regel in einer Assembly enthalten sind.)
+- Ein [Stub](#get-started-with-stubs) tauscht eine Klasse gegen einen kleinen Ersatz aus, der die gleiche Schnittstelle implementiert.  Um Stubs verwenden zu können, müssen Sie die Anwendung so entwerfen, dass jede Komponente nur von Schnittstellen abhängt und nicht von anderen Komponenten. (Mit "Komponente" ist eine Klasse oder eine Gruppe von Klassen gemeint, die zusammen entworfen und aktualisiert werden und in der Regel in einer Assembly enthalten sind.)
 
--   Ein [Shim](#get-started-with-shims) ändert den kompilierten Code der Anwendung zur Laufzeit, damit anstelle des angegebenen Methodenaufrufs der vom Test bereitgestellte Shimcode ausgeführt wird. Mit Shims können Sie Aufrufe von Assemblys ersetzen, die nicht geändert werden können, wie zum Beispiel .NET-Assemblys.
+- Ein [Shim](#get-started-with-shims) ändert den kompilierten Code der Anwendung zur Laufzeit, damit anstelle des angegebenen Methodenaufrufs der vom Test bereitgestellte Shimcode ausgeführt wird. Mit Shims können Sie Aufrufe von Assemblys ersetzen, die nicht geändert werden können, wie zum Beispiel .NET-Assemblys.
 
 ![Fakes ersetzen andere Komponenten](../test/media/fakes-2.png)
 
 **Anforderungen**
 
--   Visual Studio Enterprise
--   Ein .NET Framework-Projekt
+- Visual Studio Enterprise
+- Ein .NET Framework-Projekt
 
 > [!NOTE]
-> .NET Standard-Projekte werden nicht unterstützt.
+> - .NET Standard-Projekte werden nicht unterstützt.
+> - Die Profilerstellung mit Visual Studio ist nicht für Tests verfügbar, die Microsoft Fakes verwenden.
 
 ## <a name="choose-between-stub-and-shim-types"></a>Auswählen zwischen Stub- und Shim-Typen
 In der Regel lässt sich ein Visual Studio-Projekt als Komponente betrachten, da die Klassen gleichzeitig entwickelt und aktualisiert werden. Sie können Stubs und Shims für Aufrufe verwenden, die das Projekt an andere Projekte in der Projektmappe oder an andere Assemblys, auf die das Projekt verweist, richtet.
@@ -57,10 +57,10 @@ Weitere Überlegungen:
 
 Im Allgemeinen empfiehlt es sich, Stubtypen zu verwenden, um eine Isolierung von den Abhängigkeiten in der Codebase zu erzielen. Sie erreichen dies, indem Sie die Komponenten hinter den Schnittstellen ausblenden. Shimtypen können verwendet werden, um eine Isolierung von Drittanbieterkomponenten zu erzielen, die keine testfähige API bereitstellen.
 
-##  <a name="get-started-with-stubs"></a>Erste Schritte mit Stubs
+## <a name="get-started-with-stubs"></a>Erste Schritte mit Stubs
 Eine ausführlichere Beschreibung finden Sie unter [Use stubs to isolate parts of your application from each other for unit testing (Verwenden von Stubs, um Teile der Anwendung für Komponententests voneinander zu isolieren)](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).
 
-1.  **Einfügen von Schnittstellen**
+1. **Einfügen von Schnittstellen**
 
      Um Stubs verwenden zu können, müssen Sie den zu testenden Code so schreiben, dass Klassen in einer anderen Komponente der Anwendung nicht explizit erwähnt werden. Mit "Komponente" sind eine oder mehrere Klassen gemeint, die zusammen entworfen und aktualisiert werden und in der Regel in einem Visual Studio-Projekt enthalten sind. Variablen und Parameter sollten über Schnittstellen deklariert werden, und Instanzen anderer Komponenten sollten durch eine Factory übergeben oder erstellt werden. Wenn StockFeed eine Klasse in einer anderen Komponente der Anwendung ist, wäre dies ein negatives Beispiel:
 
@@ -81,15 +81,15 @@ Eine ausführlichere Beschreibung finden Sie unter [Use stubs to isolate parts o
 
     ```
 
-2.  **Hinzufügen von Fakes-Assemblys**
+2. **Hinzufügen von Fakes-Assemblys**
 
-    1.  Erweitern Sie im **Projektmappen-Explorer** die Verweisliste des Testprojekts. Wenn Sie in Visual Basic arbeiten, müssen Sie **Alle Dateien anzeigen** auswählen, um die Verweisliste anzuzeigen.
+    1. Erweitern Sie im **Projektmappen-Explorer** die Verweisliste des Testprojekts. Wenn Sie in Visual Basic arbeiten, müssen Sie **Alle Dateien anzeigen** auswählen, um die Verweisliste anzuzeigen.
 
-    2.  Wählen Sie den Verweis auf die Assembly aus, in der die Schnittstelle (beispielsweise IStockFeed) definiert ist. Klicken Sie im Kontextmenü des Verweises auf **Fakes-Assembly hinzufügen**.
+    2. Wählen Sie den Verweis auf die Assembly aus, in der die Schnittstelle (beispielsweise IStockFeed) definiert ist. Klicken Sie im Kontextmenü des Verweises auf **Fakes-Assembly hinzufügen**.
 
-    3.  Generieren Sie die Projektmappe neu.
+    3. Generieren Sie die Projektmappe neu.
 
-3.  Erstellen Sie in den Tests Instanzen des Stubs, und stellen Sie Code für dessen Methoden bereit:
+3. Erstellen Sie in den Tests Instanzen des Stubs, und stellen Sie Code für dessen Methoden bereit:
 
     ```csharp
     [TestClass]
@@ -151,7 +151,7 @@ Eine ausführlichere Beschreibung finden Sie unter [Use stubs to isolate parts o
 
     Stubs werden auch für die Getter und Setter von Eigenschaften, für Ereignisse sowie für generische Methoden generiert. Weitere Informationen finden Sie unter [Use stubs to isolate parts of your application from each other for unit testing (Verwenden von Stubs, um Teile der Anwendung für Komponententests voneinander zu isolieren)](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).
 
-##  <a name="get-started-with-shims"></a>Erste Schritte mit Shims
+## <a name="get-started-with-shims"></a>Erste Schritte mit Shims
 (Eine ausführlichere Beschreibung finden Sie unter [Use shims to isolate your application from other assemblies for unit testing (Verwenden von Shims, um die Anwendung für Komponententests von anderen Assemblys zu isolieren)](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).)
 
 Angenommen, die Komponente enthält Aufrufe von `DateTime.Now`:
@@ -168,13 +168,13 @@ Da die richtige Version ungünstigerweise bei jedem Aufruf einen anderen Wert zu
 
 Für Shims müssen Sie den Anwendungscode nicht ändern und ihn auch nicht auf bestimmte Weise schreiben.
 
-1.  **Hinzufügen von Fakes-Assemblys**
+1. **Hinzufügen von Fakes-Assemblys**
 
      Öffnen Sie im **Projektmappen-Explorer** die Verweise des Komponententestprojekts, und wählen Sie den Verweis auf die Assembly mit der Methode aus, für die Sie einen Fake durchführen möchten. In diesem Beispiel befindet sich die `DateTime`-Klasse in *System.dll*.  Um die Verweise in einem Visual Basic-Projekt anzuzeigen, wählen Sie **Alle Dateien anzeigen** aus.
 
      Wählen Sie **Fakes-Assembly hinzufügen** aus.
 
-2.  **Hinzufügen eines Shims zu einem ShimsContext**
+2. **Hinzufügen eines Shims zu einem ShimsContext**
 
     ```csharp
     [TestClass]

@@ -1,25 +1,20 @@
 ---
 title: Verwalten von Projekt- und Projektmappeneigenschaften | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: d727efc0-1096-4ede-84b6-31a65da22ac0
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 43b46fc40da93352c4748662b66df91f0d25802b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: dd20552a72775723c4ad006708ce1fb7f18d4181
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424629"
 ---
 # <a name="managing-project-and-solution-properties"></a>Verwalten von Projekt- und Projektmappeneigenschaften
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ Projekte haben Eigenschaften, die viele Aspekte der Kompilierung, des Debuggens,
  ![Knoten „Eigenschaften“ in der Struktur des Projektmappen-Explorers](../ide/media/vs2015-props-se.png "VS2015_Props_SE")  
   
 > [!TIP]
->  Projektmappen haben einige Eigenschaften, ebenso wie Projektelemente. Auf diese Eigenschaften wird im [Eigenschaftenfenster](../ide/reference/properties-window.md), nicht im **Projekt-Designer**, zugegriffen.  
+> Projektmappen haben einige Eigenschaften, ebenso wie Projektelemente. Auf diese Eigenschaften wird im [Eigenschaftenfenster](../ide/reference/properties-window.md), nicht im **Projekt-Designer**, zugegriffen.  
   
 ## <a name="project-properties"></a>Projekteigenschaften  
  Projekteigenschaften sind in Gruppen organisiert, und jede Gruppe hat ihre eigene Eigenschaftenseite. Dabei können die Seiten für unterschiedliche Sprachen und Projekttypen unterschiedlich sein.  
@@ -57,6 +52,3 @@ Projekte haben Eigenschaften, die viele Aspekte der Kompilierung, des Debuggens,
   
 ## <a name="see-also"></a>Siehe auch  
  [Projektmappen und Projekte in Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
-
-
-

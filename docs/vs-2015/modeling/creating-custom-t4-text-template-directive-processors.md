@@ -1,27 +1,24 @@
 ---
 title: Erstellen von benutzerdefinierten T4-Anweisungsprozessoren für Text-Vorlage | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
 ms.assetid: 422b47af-5441-4b02-b5ad-1b8b328457e3
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0defae5127b3443eb30f02558fd1acf545651e3e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ccf7c3565925eb3fe55fe500a127c666515fb41a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852740"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058582"
 ---
-# <a name="creating-custom-t4-text-template-directive-processors"></a>Erstellen von benutzerdefinierten T4-Anweisungsprozessoren für Textvorlagen
+# <a name="creating-custom-t4-text-template-directive-processors"></a>Erstellen von benutzerdefinierten T4-Direktivenprozessoren für Textvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Die *Textvorlagen-Transformationsprozess* nimmt eine *Textvorlage* Datei als Eingabe und erzeugt eine Textdatei, die als Ausgabe. Die *Textvorlagen-Transformationsmodul* Steuerelemente, die der Prozess, und die Engine interagiert mit einer Textvorlagen-Transformationshost und mindestens eine Textvorlage *anweisungsprozessoren* zum Abschließen der der Prozess. Weitere Informationen finden Sie unter [das Textvorlagen-Transformationsprozess](../modeling/the-text-template-transformation-process.md).  
@@ -45,9 +42,9 @@ Die *Textvorlagen-Transformationsprozess* nimmt eine *Textvorlage* Datei als Ein
   
  Einige Beispiele für benutzerdefinierte anweisungsprozessoren könnte sein:  
   
--   Ein anweisungsprozessor, Daten aus einer Datenbank zurückzugeben, die einen Benutzernamen und ein Kennwort als Parameter akzeptiert.  
+- Ein anweisungsprozessor, Daten aus einer Datenbank zurückzugeben, die einen Benutzernamen und ein Kennwort als Parameter akzeptiert.  
   
--   Einen anweisungsprozessor öffnen und Lesen einer Datei, die den Namen der Datei als Parameter akzeptiert.  
+- Einen anweisungsprozessor öffnen und Lesen einer Datei, die den Namen der Datei als Parameter akzeptiert.  
   
 ### <a name="principal-parts-of-a-custom-directive-processor"></a>Prinzipal Teile eines benutzerdefinierten anweisungsprozessors  
  Um einen anweisungsprozessor entwickeln zu können, müssen Sie eine Klasse, die entweder erbt erstellen <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> oder <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>.  
@@ -66,7 +63,7 @@ Die *Textvorlagen-Transformationsprozess* nimmt eine *Textvorlage* Datei als Ein
   
 - `string GetClassCodeForProcessingRun()` -Gibt den Code von Methoden, Eigenschaften und anderen Deklarationen, die den Code der Vorlage verwenden können. Die einfachste Möglichkeit hierzu ist eine Zeichenfolge, die mit der C#- oder Visual Basic-Code zu erstellen. Damit den anweisungsprozessor aufgerufen werden, aus einer Vorlage, die einer beliebigen CLR-Sprache verwendet wird, können Sie die Anweisungen als eine CodeDom-Struktur erstellen und dann das Ergebnis der Serialisierung der Struktur in der von der Vorlage verwendeten Sprache zurück.  
   
-- Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: erstellen einen benutzerdefinierten Anweisungsprozessor](../modeling/walkthrough-creating-a-custom-directive-processor.md).  
+- Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Anweisungsprozessors](../modeling/walkthrough-creating-a-custom-directive-processor.md).  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Bereitstellen eines benutzerdefinierten Anweisungsprozessors](../modeling/deploying-a-custom-directive-processor.md)  
@@ -74,6 +71,3 @@ Die *Textvorlagen-Transformationsprozess* nimmt eine *Textvorlage* Datei als Ein
   
  [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Anweisungsprozessors](../modeling/walkthrough-creating-a-custom-directive-processor.md)  
  Beschreibt Vorgehensweise: erstellen ein benutzerdefiniertes anweisungsprozessors, registrieren und Testen des anweisungsprozessors komplizierter, und wie die Ausgabedatei im HTML-Format formatiert.
-
-
-

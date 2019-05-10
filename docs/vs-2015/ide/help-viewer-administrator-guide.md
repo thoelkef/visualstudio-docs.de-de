@@ -1,25 +1,20 @@
 ---
 title: Administratorhandbuch für Help Viewer | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-help-viewer
+ms.topic: conceptual
 ms.assetid: 4340c69f-b96b-4932-bb82-38b16a5ab149
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f470c55b08cc559e481ed75e962fda4f0e625a5c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b00f89b60c7e884bfaf71e971722530b44a78b4e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49871289"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445684"
 ---
 # <a name="help-viewer-administrator-guide"></a>Help Viewer-Administratorhandbuch
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ Der Help Viewer ermöglicht das Verwalten der lokal installierten Hilfe in Netzw
 ## <a name="deploying-local-help-content-from-the-internet"></a>Bereitstellen des lokalen Hilfeinhalts über das Internet  
  Sie können den MSDN Content Package-Dienst verwenden, um lokale Hilfeinhalte über das Internet auf Clientcomputern bereitzustellen. Verwenden Sie folgende Syntax:  
   
- \\<*Pfad zur*> \v2.2\HlpCtntmgr.exe help viewer\v2.3\hlpctntmgr.exe \< *Namen*>/CatalogName \< *Katalogname*>/locale \<  *Gebietsschema*>  
+ \\<*path to*>\v2.2\HlpCtntmgr.exe /operation \<*name*> /catalogname \<*catalog name*> /locale \<*locale*>  
   
  Weitere Informationen zur Befehlszeilensyntax von „HlpCtntMgr.exe“ finden Sie unter [Befehlszeilenargumente für den Hilfeinhalts-Manager](../ide/command-line-arguments-for-the-help-content-manager.md).  
   
@@ -56,7 +51,7 @@ Der Help Viewer ermöglicht das Verwalten der lokal installierten Hilfe in Netzw
 - Die Hilfe bleibt standardmäßig online gespeichert.  
   
   > [!TIP]
-  >  Sie können die standardmäßige Quelle für Hilfe ändern, indem Sie diesen Registrierungsschlüssel ändern: HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp. Weitere Informationen finden Sie unter [Überschreibungen durch den Hilfeinhalts-Manager](../ide/help-content-manager-overrides.md).  
+  > Sie können die standardmäßige Quelle für Hilfe ändern, indem Sie diesen Registrierungsschlüssel ändern: HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp. Weitere Informationen finden Sie unter [Überschreibungen durch den Hilfeinhalts-Manager](../ide/help-content-manager-overrides.md).  
   
 - Clients werden weiterhin aufgefordert, den grundlegenden Hilfeinhalt beim ersten Start von Visual Studio zu installieren. Sie können diese Eingabeaufforderung deaktivieren, indem Sie diesen Registrierungsschlüssel ändern: HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\14.0\Help\DisableFirstRunHelpSelection.  
   
@@ -65,13 +60,13 @@ Der Help Viewer ermöglicht das Verwalten der lokal installierten Hilfe in Netzw
   
 ##### <a name="to-install-english-content-from-the-internet"></a>So installieren Sie englische Inhalte über das Internet  
   
-1.  Klicken Sie auf **Start** und dann auf **Ausführen**.  
+1. Klicken Sie auf **Start** und dann auf **Ausführen**.  
   
-2.  Geben Sie folgenden Pfad ein:  
+2. Geben Sie folgenden Pfad ein:  
   
      C:\Program Files (x86)\Microsoft Help Viewer\v2.2\hlpctntmgr.exe /operation install /catalogname VisualStudio14 /locale en-us  
   
-3.  Drücken Sie die EINGABETASTE.  
+3. Drücken Sie die EINGABETASTE.  
   
 ## <a name="deploying-pre-installed-local-help-content-on-client-computers"></a>Bereitstellen der vorinstallierten lokalen Hilfeinhalte auf Clientcomputern  
  Sie können Inhalte von einem Onlinespeicherort auf einem Computer installieren und die Inhalte anschließend auf andere Computer kopieren.  
@@ -83,7 +78,7 @@ Der Help Viewer ermöglicht das Verwalten der lokal installierten Hilfe in Netzw
 - Benutzer müssen über Administratorrechte verfügen, um lokale Hilfeinhalte nach der Installation aktualisieren, hinzufügen oder entfernen zu können.  
   
   > [!TIP]
-  >  Wenn Benutzer nicht über Administratorrechte verfügen, wird empfohlen, die Registerkarte zum Verwalten von Inhalten im Help Viewer zu deaktivieren. Weitere Informationen finden Sie unter [Überschreibungen durch den Hilfeinhalts-Manager](../ide/help-content-manager-overrides.md).  
+  > Wenn Benutzer nicht über Administratorrechte verfügen, wird empfohlen, die Registerkarte zum Verwalten von Inhalten im Help Viewer zu deaktivieren. Weitere Informationen finden Sie unter [Überschreibungen durch den Hilfeinhalts-Manager](../ide/help-content-manager-overrides.md).  
   
   Zu beachten:  
   
@@ -100,13 +95,13 @@ Der Help Viewer ermöglicht das Verwalten der lokal installierten Hilfe in Netzw
   
 1. Klicken Sie in Help Viewer auf die Registerkarte **Inhalt verwalten**.  
   
-2. Klicken Sie unter **verfügbare Dokumentation**, navigieren Sie zu den Visual Studio-Dokumenten.  
+2. Navigieren Sie unter **Verfügbare Dokumentation** zu den Dokumenten für Visual Studio.  
   
 3. Klicken Sie neben den einzelnen Unterelementen auf **Entfernen**.  
   
-4. Wählen Sie **starten** deinstallieren  
+4. Wählen Sie zum Deinstallieren die Option **Start** aus.  
   
-5. Navigieren Sie zu *n*: \ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12, und stellen Sie sicher, dass der Ordner nur die Datei "catalogtype.xml" enthält.  
+5. Navigieren Sie zu *n*:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12, und überprüfen Sie, ob der Ordner nur die Datei „catalogType.xml“ enthält.  
   
    Nachdem Sie alle zuvor installierten lokalen Visual Studio-Hilfeinhalte entfernt haben, können Sie die grundlegenden Inhalte herunterladen.  
   
@@ -114,7 +109,7 @@ Der Help Viewer ermöglicht das Verwalten der lokal installierten Hilfe in Netzw
   
 1. Klicken Sie in Help Viewer auf die Registerkarte **Inhalt verwalten**.  
   
-2. Klicken Sie unter **verfügbare Dokumentation**, navigieren Sie zu den Dokumentationen, die Sie herunterladen möchten und wählen Sie dann **hinzufügen**.  
+2. Navigieren Sie unter **Verfügbare Dokumentation** zu den Dokumentationen, die Sie herunterladen möchten, und klicken Sie auf **Hinzufügen**.  
   
 3. Wählen Sie **Start** aus.  
   
@@ -122,17 +117,17 @@ Der Help Viewer ermöglicht das Verwalten der lokal installierten Hilfe in Netzw
   
 ##### <a name="to-package-the-content"></a>So verpacken Sie die Inhalte  
   
-1.  Erstellen Sie einen Ordner, um die Inhalte zur späteren Bereitstellung zu kopieren.  
+1. Erstellen Sie einen Ordner, um die Inhalte zur späteren Bereitstellung zu kopieren.  
   
      Beispiel: c:\VS12Help.  
   
-2.  Öffnen Sie "cmd.exe" mit Administratorberechtigungen.  
+2. Öffnen Sie "cmd.exe" mit Administratorberechtigungen.  
   
-3.  Navigieren Sie zu dem in Schritt 1 erstellten Ordner.  
+3. Navigieren Sie zu dem in Schritt 1 erstellten Ordner.  
   
-4.  Geben Sie folgenden Pfad ein:  
+4. Geben Sie folgenden Pfad ein:  
   
-     Mithilfe von Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \< *Ordnername*> \ / y/e/k/o  
+     Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \<*Ordnername*>\ /y /e /k /o  
   
      Beispiel: `Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 c:\VS12Help\ /y /e /k /o`  
   
@@ -140,13 +135,13 @@ Der Help Viewer ermöglicht das Verwalten der lokal installierten Hilfe in Netzw
   
 ##### <a name="to-deploy-the-content"></a>So stellen Sie die Inhalte bereit  
   
-1.  Erstellen Sie eine Netzwerkfreigabe und kopieren Sie die Hilfeinhalte an diesen Speicherort.  
+1. Erstellen Sie eine Netzwerkfreigabe und kopieren Sie die Hilfeinhalte an diesen Speicherort.  
   
-     Kopieren Sie den Inhalt in c:\VS12Help, z. B. \\\myserver\VS12Help.  
+     Kopieren Sie beispielsweise den Inhalt von C:\VS12Help nach \\\myserver\VS12Help.  
   
-2.  Erstellen Sie eine BAT-Datei für das Bereitstellungsskript für den Hilfeinhalt. Da auf dem Client eine Lesesperre für die im Rahmen des Push-Vorgangs gelöschten Dateien eingerichtet sein könnte, sollte der Client heruntergefahren werden, bevor Sie Updates per Push übertragen.  
+2. Erstellen Sie eine BAT-Datei für das Bereitstellungsskript für den Hilfeinhalt. Da auf dem Client eine Lesesperre für die im Rahmen des Push-Vorgangs gelöschten Dateien eingerichtet sein könnte, sollte der Client heruntergefahren werden, bevor Sie Updates per Push übertragen.  
   
-     Beispiel:  
+     Zum Beispiel:  
   
     ```  
     REM - copy pre-ripped content to ProgramData  
@@ -204,11 +199,8 @@ Der Help Viewer ermöglicht das Verwalten der lokal installierten Hilfe in Netzw
     :CONTINUE  
     ```  
   
-3.  Führen Sie die BAT-Datei auf den lokalen Computern aus, auf denen die Hilfeinhalte installiert werden sollen.  
+3. Führen Sie die BAT-Datei auf den lokalen Computern aus, auf denen die Hilfeinhalte installiert werden sollen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Befehlszeilenargumente für den Hilfeinhalts-Manager](../ide/command-line-arguments-for-the-help-content-manager.md)   
  [Überschreibungen durch den Hilfeinhalts-Manager](../ide/help-content-manager-overrides.md)
-
-
-

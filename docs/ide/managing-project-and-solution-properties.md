@@ -1,23 +1,22 @@
 ---
 title: Verwalten von Projekt- und Projektmappeneigenschaften
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f1ae5ae9b0bd751deca5e26ac4ea09e884e5db0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9279257f238adf92ad560d2f2e1aa7f769905305
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824300"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537397"
 ---
 # <a name="manage-project-and-solution-properties"></a>Verwalten von Projekt- und Projektmappeneigenschaften
 
-Projekte haben Eigenschaften, die viele Aspekte der Kompilierung, des Debuggens, des Testens und des Bereitstellens steuern. Einige Eigenschaften gibt es für alle Projekttypen, und einige gelten nur für bestimmte Sprachen oder Plattformen. Sie erhalten Zugriff auf die Projekteigenschaften, indem Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projektknoten klicken und **Eigenschaften** auswählen. Alternativ können Sie „Eigenschaften“ in das Suchfeld **Schnellstart** auf der Menüleiste eingeben.
+Projekte haben Eigenschaften, die viele Aspekte der Kompilierung, des Debuggens, des Testens und des Bereitstellens steuern. Einige Eigenschaften gibt es für alle Projekttypen, und einige gelten nur für bestimmte Sprachen oder Plattformen. Sie erhalten Zugriff auf die Projekteigenschaften, indem Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projektknoten klicken und **Eigenschaften** auswählen. Alternativ können Sie **Eigenschaften** in das Suchfeld in der Menüleiste eingeben und **Eigenschaftenfenster** aus den Suchergebnissen auswählen.
 
 ![Projekt-Kontextmenü](../ide/media/vs2015_proj_prop_menu.gif)
 

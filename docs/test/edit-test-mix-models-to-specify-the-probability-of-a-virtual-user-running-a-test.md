@@ -8,14 +8,13 @@ helpviewer_keywords:
 ms.assetid: e3b7d952-9012-400a-8131-3444390a6066
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 69649123979a4989f840a7440814cb15d69b06b6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 51bfc7a9061cbc17d766f1174593907bfbf762ec
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895524"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62785840"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Bearbeiten von Testmischungsmodellen zum Angeben der Wahrscheinlichkeit, mit der ein virtueller Benutzer einen Test ausführt
 
@@ -27,13 +26,13 @@ Das *Testmischungsmodell* gibt die Wahrscheinlichkeit dafür an, dass ein virtue
 
 Sie können eine der folgenden Testmischungsmodelloptionen für das Auslastungstestszenario angeben:
 
--   **Auf Grundlage der Gesamtzahl der Tests:** Bestimmt, welcher Webleistungs- oder Komponententest ausgeführt wird, wenn ein virtueller Benutzer eine Testiteration startet. Am Ende des Auslastungstests stimmt die Häufigkeit der Ausführung eines bestimmten Tests mit der zugewiesenen Testverteilung überein. Verwenden Sie dieses Testmischungsmodell, wenn die Testmischung auf Transaktionsprozentsätzen in einem IIS-Protokoll oder in Produktionsdaten basiert.
+- **Auf Grundlage der Gesamtzahl der Tests:** Bestimmt, welcher Webleistungs- oder Komponententest ausgeführt wird, wenn ein virtueller Benutzer eine Testiteration startet. Am Ende des Auslastungstests stimmt die Häufigkeit der Ausführung eines bestimmten Tests mit der zugewiesenen Testverteilung überein. Verwenden Sie dieses Testmischungsmodell, wenn die Testmischung auf Transaktionsprozentsätzen in einem IIS-Protokoll oder in Produktionsdaten basiert.
 
--   **Auf Grundlage der Anzahl der virtuellen Benutzer:** Bestimmt den Prozentsatz von virtuellen Benutzern, die einen bestimmten Webleistungs- oder Komponententest ausführen werden. An jedem Punkt im Auslastungstest stimmt die Anzahl der Benutzer, die einen bestimmten Test ausführen, mit der zugewiesenen Verteilung überein. Verwenden Sie dieses Testmischungsmodell, wenn die Testmischung auf dem Prozentsatz von Benutzern, die einen bestimmten Test ausführen, basiert.
+- **Auf Grundlage der Anzahl der virtuellen Benutzer:** Bestimmt den Prozentsatz von virtuellen Benutzern, die einen bestimmten Webleistungs- oder Komponententest ausführen werden. An jedem Punkt im Auslastungstest stimmt die Anzahl der Benutzer, die einen bestimmten Test ausführen, mit der zugewiesenen Verteilung überein. Verwenden Sie dieses Testmischungsmodell, wenn die Testmischung auf dem Prozentsatz von Benutzern, die einen bestimmten Test ausführen, basiert.
 
--   **Auf Grundlage der Benutzergeschwindigkeit:** Im Verlauf des Auslastungstests wird jeder Webleistungstest oder Komponententest so oft wie angegeben pro Benutzer und pro Stunde ausgeführt. Verwenden Sie dieses Testmischungsmodell, wenn Sie möchten, dass virtuelle Benutzer im Laufe des Auslastungstests Tests mit einer bestimmten Geschwindigkeit ausführen.
+- **Auf Grundlage der Benutzergeschwindigkeit:** Im Verlauf des Auslastungstests wird jeder Webleistungstest oder Komponententest so oft wie angegeben pro Benutzer und pro Stunde ausgeführt. Verwenden Sie dieses Testmischungsmodell, wenn Sie möchten, dass virtuelle Benutzer im Laufe des Auslastungstests Tests mit einer bestimmten Geschwindigkeit ausführen.
 
--   **Auf Grundlage der sequenziellen Reihenfolge:** Jeder virtuelle Benutzer führt die Webleistungstests oder Komponententests in der Reihenfolge aus, in der sie im Szenario definiert sind. Der virtuelle Benutzer durchläuft die Tests in dieser Reihenfolge so lange, bis der Auslastungstest abgeschlossen ist.
+- **Auf Grundlage der sequenziellen Reihenfolge:** Jeder virtuelle Benutzer führt die Webleistungstests oder Komponententests in der Reihenfolge aus, in der sie im Szenario definiert sind. Der virtuelle Benutzer durchläuft die Tests in dieser Reihenfolge so lange, bis der Auslastungstest abgeschlossen ist.
 
 ## <a name="tasks"></a>Aufgaben
 
@@ -54,27 +53,27 @@ Mit dem **Auslastungstest-Editor** können Sie das Testmischungsmodell in einem 
 
 ### <a name="to-change-the-test-mix-model"></a>So ändern Sie das Testmischungsmodell
 
-1.  Öffnen Sie einen Auslastungstest.
+1. Öffnen Sie einen Auslastungstest.
 
      Der **Auslastungstest-Editor** wird angezeigt. Die Auslastungsteststruktur wird angezeigt.
 
-2.  Klicken Sie im Ordner *Szenarios* der Auslastungsteststruktur auf den Szenarioknoten, für den Sie die maximale Anzahl von Testiterationen angeben möchten.
+2. Klicken Sie im Ordner *Szenarios* der Auslastungsteststruktur auf den Szenarioknoten, für den Sie die maximale Anzahl von Testiterationen angeben möchten.
 
-3.  Klicken Sie im Menü **Ansicht** auf **Eigenschaftenfenster**.
+3. Klicken Sie im Menü **Ansicht** auf **Eigenschaftenfenster**.
 
      Die Szenariokategorien und -eigenschaften werden angezeigt.
 
-4.  Klicken Sie in der Eigenschaft **Testmischungstyp** auf die Schaltfläche mit den Auslassungspunkten (**…**).
+4. Klicken Sie in der Eigenschaft **Testmischungstyp** auf die Schaltfläche mit den Auslassungspunkten (**…**).
 
      Das Dialogfeld **Testmischung bearbeiten** wird angezeigt.
 
-5.  Klicken Sie auf die Dropdownliste unter **Testmischungsmodell**, und wählen Sie das Testmischungsmodell aus, das Sie für das Szenario verwenden möchten.
+5. Klicken Sie auf die Dropdownliste unter **Testmischungsmodell**, und wählen Sie das Testmischungsmodell aus, das Sie für das Szenario verwenden möchten.
 
-6.  (Optional) Ändern Sie die Testmischung mit den Schaltflächen **Hinzufügen**, **Entfernen** und **Verteilen** sowie mit den Schiebereglern für die Verteilung. Weitere Informationen finden Sie unter [Bearbeiten der Testmischung zur Angabe der Webbrowsertypen in einem Auslastungstestszenario](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
+6. (Optional) Ändern Sie die Testmischung mit den Schaltflächen **Hinzufügen**, **Entfernen** und **Verteilen** sowie mit den Schiebereglern für die Verteilung. Weitere Informationen finden Sie unter [Bearbeiten der Testmischung zur Angabe der Webbrowsertypen in einem Auslastungstestszenario](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
-7.  (Optional) Geben Sie mit den Kontrollkästchen und durch Auswählen der gewünschten Tests einen Webleistungs- oder Komponententest an, der initialisiert oder beendet werden soll. Weitere Informationen finden Sie unter [Emulieren der erwarteten Echtzeitverwendung einer Website oder Anwendung in einem Auslastungstest mithilfe eines Testmischungsmodells](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md).
+7. (Optional) Geben Sie mit den Kontrollkästchen und durch Auswählen der gewünschten Tests einen Webleistungs- oder Komponententest an, der initialisiert oder beendet werden soll. Weitere Informationen finden Sie unter [Emulieren der erwarteten Echtzeitverwendung einer Website oder Anwendung in einem Auslastungstest mithilfe eines Testmischungsmodells](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md).
 
-8.  Klicken Sie auf **OK**.
+8. Klicken Sie auf **OK**.
 
      Im Fenster **Eigenschaften** wird das neue Testmischungsmodell für die Eigenschaft **Testmischungstyp** angezeigt.
 

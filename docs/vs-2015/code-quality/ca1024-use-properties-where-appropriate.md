@@ -1,14 +1,9 @@
 ---
-title: 'CA1024 nach Möglichkeit: Eigenschaften verwenden | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'CA1024: Verwenden Sie Eigenschaften aus, falls zutreffend | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UsePropertiesWhereAppropriate
 - CA1024
@@ -20,14 +15,14 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f7d5b5e459d80c69f856860a9b2aa0302191a968
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 43487aa97afcd41a5375bacc26efba705cbaa76c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858926"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58947485"
 ---
-# <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Nach Möglichkeit Eigenschaften verwenden
+# <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Nach Möglichkeit Eigenschaften verwenden.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -125,6 +120,3 @@ namespace Microsoft.Samples
  Das folgende Beispiel enthält mehrere Methoden, Eigenschaften konvertiert werden sollen, und mehrere Funktionen, sollte nicht verwendet werden, weil sie nicht wie Felder Verhalten.
 
  [!code-csharp[FxCop.Design.MethodsProperties#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.MethodsProperties/cs/FxCop.Design.MethodsProperties.cs#1)]
-
-
-

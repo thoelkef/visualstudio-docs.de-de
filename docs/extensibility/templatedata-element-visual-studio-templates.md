@@ -10,42 +10,41 @@ helpviewer_keywords:
 ms.assetid: db17ec9b-bfdf-46b1-bbe7-5ccc140056e2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da6bc128d194a491df580418a13af7e6112e9e45
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 94a6f4b69648c94e6530cb28180193e5a74c1265
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878652"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62432641"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData-Element (Visual Studio-Vorlagen)
-Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.  
-  
- \<VSTemplate>  
- \<TemplateData>  
-  
-## <a name="syntax"></a>Syntax  
-  
-```  
-<TemplateData>  
-    <Name> ... </Name>  
-    <Description> ... </Description>  
-    <Icon> ... </Icon>  
-    <ProjectType> ... </ProjectType>  
-    ...  
-</TemplateData>  
-```  
-  
-## <a name="attributes-and-elements"></a>Attribute und Elemente  
- In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
-  
-### <a name="attributes"></a>Attribute  
- Keine  
-  
-### <a name="child-elements"></a>Untergeordnete Elemente  
-  
+Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.
+
+ \<VSTemplate> \<TemplateData>
+
+## <a name="syntax"></a>Syntax
+
+```
+<TemplateData>
+    <Name> ... </Name>
+    <Description> ... </Description>
+    <Icon> ... </Icon>
+    <ProjectType> ... </ProjectType>
+    ...
+</TemplateData>
+```
+
+## <a name="attributes-and-elements"></a>Attribute und Elemente
+ In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
+
+### <a name="attributes"></a>Attribute
+ Keine
+
+### <a name="child-elements"></a>Untergeordnete Elemente
+
 | Element | Beschreibung |
 | - | - |
 | [Name](../extensibility/name-element-visual-studio-templates.md) | Erforderliches Element.<br /><br /> Der Name der Vorlage gibt an, wie er in einem angezeigt wird der **neues Projekt** oder **neues Element hinzufügen** Dialogfeld. |
@@ -59,9 +58,9 @@ Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues 
 | [CreateNewFolder](../extensibility/createnewfolder-element-visual-studio-templates.md) | Optionales Element.<br /><br /> Gibt an, ob ein enthaltender Ordner bei der Instanziierung des Projekts erstellt wird. |
 | [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) | Optionales Element.<br /><br /> Gibt den Namen, den das Projektsystem von Visual Studio generiert wird, wird für das Projekt oder Element an, bei der Erstellung. |
 | [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) | Optionales Element.<br /><br /> Gibt an, ob das Visual Studio-Projektsystem den Standardnamen für ein Projekt oder Element generiert wird, wenn es erstellt wird. |
-| [PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md) | Optionales Element.<br /><br /> Gibt an, ob das Projekt als temporäres Projekt erstellt werden kann. |
+| [PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md) | Optionales Element.<br /><br /> Gibt an, ob das Projekt als temporäres Projekt (nur Visual Studio 2017) erstellt werden kann. |
 | [EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md) | Optionales Element.<br /><br /> Gibt an, ob die **Durchsuchen** Schaltfläche ist verfügbar in der **neues Projekt** Dialogfeld, damit Benutzer können leicht ändern, das Standardverzeichnis, in dem ein neues Projekt gespeichert ist. |
-| [Ausgeblendet](../extensibility/hidden-element-visual-studio-templates.md) | Optionales Element.<br /><br /> Gibt an, ob die Vorlage angezeigt, entweder in wird der **neues Projekt** oder **neues Element hinzufügen** Dialogfeld. |
+| [Hidden](../extensibility/hidden-element-visual-studio-templates.md) | Optionales Element.<br /><br /> Gibt an, ob die Vorlage angezeigt, entweder in wird der **neues Projekt** oder **neues Element hinzufügen** Dialogfeld. |
 | [NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md) | Optionales Element.<br /><br /> Gibt die Anzahl der übergeordneten Kategorien, die die Vorlage in anzeigen, wird die **neues Projekt** Dialogfeld. |
 | [LocationFieldMRUPrefix](../extensibility/locationfieldmruprefix-element-visual-studio-templates.md) | Optionales Element. |
 | [LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md) | Optionales Element.<br /><br /> Gibt an, ob der **Speicherort** Textfeld in der **neues Projekt** im Dialogfeld entweder aktiviert, deaktiviert oder für die Projektvorlage ausgeblendet ist. |
@@ -70,45 +69,45 @@ Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues 
 | [SupportsCodeSeparation](../extensibility/supportscodeseparation-element-visual-studio-templates.md) | Optionales Element.<br /><br /> Gibt an, ob die Vorlage für Webprojekte codetrennung und das Code-Behind-Seitenmodell unterstützt. |
 | [SupportsLanguageDropDown](../extensibility/supportslanguagedropdown-element-visual-studio-templates.md) | Optionales Element.<br /><br /> Gibt an, ob die Vorlage für mehrere Sprachen identisch ist, und ob die **Sprache** Option steht in der **neues Projekt** Dialogfeld. |
 | [TargetPlatformName](../extensibility/targetplatformname-element-visual-studio-templates.md) | Optionales Element.<br /><br /> Gibt die Plattform an, auf die die Projektvorlage abzielt. Dieses Element gibt an, dass eine Projektvorlage zum Erstellen [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] apps. |
-  
-### <a name="parent-elements"></a>Übergeordnete Elemente  
-  
-|Element|Beschreibung|  
-|-------------|-----------------|  
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Enthält alle Metadaten für die Projektvorlage, Item-Vorlage oder Starterkits.|  
-  
-## <a name="remarks"></a>Hinweise  
- `TemplateData` ist ein erforderliches Element.  
-  
- Wenn Sie nicht über ein optionales Element beinhalten, ist der Standardwert für dieses Element verwendet.  
-  
-## <a name="example"></a>Beispiel  
- Im folgenden Beispiel werden die Metadaten für eine Projektvorlage einer [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Anwendung veranschaulicht.  
-  
-```  
-<VSTemplate Type="Project" Version="3.0.0"  
-    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-    <TemplateData>  
-        <Name>My template</Name>  
-        <Description>A basic starter kit</Description>  
-        <Icon>TemplateIcon.ico</Icon>  
-        <ProjectType>CSharp</ProjectType>  
-    </TemplateData>  
-    <TemplateContent>  
-        <Project File="MyStarterKit.csproj">  
-            <ProjectItem>Form1.cs<ProjectItem>  
-            <ProjectItem>Form1.Designer.cs</ProjectItem>  
-            <ProjectItem>Program.cs</ProjectItem>  
-            <ProjectItem>Properties\AssemblyInfo.cs</ProjectItem>  
-            <ProjectItem>Properties\Resources.resx</ProjectItem>  
-            <ProjectItem>Properties\Resources.Designer.cs</ProjectItem>  
-            <ProjectItem>Properties\Settings.settings</ProjectItem>  
-            <ProjectItem>Properties\Settings.Designer.cs</ProjectItem>  
-        </Project>  
-    </TemplateContent>  
-</VSTemplate>  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+
+### <a name="parent-elements"></a>Übergeordnete Elemente
+
+|Element|Beschreibung|
+|-------------|-----------------|
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Enthält alle Metadaten für die Projektvorlage, Item-Vorlage oder Starterkits.|
+
+## <a name="remarks"></a>Hinweise
+ `TemplateData` ist ein erforderliches Element.
+
+ Wenn Sie nicht über ein optionales Element beinhalten, ist der Standardwert für dieses Element verwendet.
+
+## <a name="example"></a>Beispiel
+ Im folgenden Beispiel werden die Metadaten für eine Projektvorlage einer [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Anwendung veranschaulicht.
+
+```
+<VSTemplate Type="Project" Version="3.0.0"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>My template</Name>
+        <Description>A basic starter kit</Description>
+        <Icon>TemplateIcon.ico</Icon>
+        <ProjectType>CSharp</ProjectType>
+    </TemplateData>
+    <TemplateContent>
+        <Project File="MyStarterKit.csproj">
+            <ProjectItem>Form1.cs<ProjectItem>
+            <ProjectItem>Form1.Designer.cs</ProjectItem>
+            <ProjectItem>Program.cs</ProjectItem>
+            <ProjectItem>Properties\AssemblyInfo.cs</ProjectItem>
+            <ProjectItem>Properties\Resources.resx</ProjectItem>
+            <ProjectItem>Properties\Resources.Designer.cs</ProjectItem>
+            <ProjectItem>Properties\Settings.settings</ProjectItem>
+            <ProjectItem>Properties\Settings.Designer.cs</ProjectItem>
+        </Project>
+    </TemplateContent>
+</VSTemplate>
+```
+
+## <a name="see-also"></a>Siehe auch
+- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
+- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

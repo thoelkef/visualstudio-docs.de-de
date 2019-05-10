@@ -1,7 +1,6 @@
 ---
-title: 'CA1048: Virtuelle Member in versiegelten Typen nicht deklarieren'
+title: 'CA1048: Virtuelle Member in versiegelten Typen nicht deklarieren.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - DoNotDeclareVirtualMembersInSealedTypes
@@ -12,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 5dcf4a30-6f98-48a8-b8cc-7b89ea757262
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 026a1b2cbcd75bd2f39cc6f169b0a1a2feddb258
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 84db1db9061eff1373ee3ad4f0316a1f3dba0474
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872881"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778709"
 ---
-# <a name="ca1048-do-not-declare-virtual-members-in-sealed-types"></a>CA1048: Virtuelle Member in versiegelten Typen nicht deklarieren
+# <a name="ca1048-do-not-declare-virtual-members-in-sealed-types"></a>CA1048: Virtuelle Member in versiegelten Typen nicht deklarieren.
 
 |||
 |-|-|

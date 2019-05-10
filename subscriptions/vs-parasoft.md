@@ -4,22 +4,19 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Erfahren Sie, wie Sie das Parasoft Virtualize/SOAtest Professional-Abonnement aktivieren, das in Ihrem Visual Studio-Abonnement enthalten ist.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cb6b04358febf47d3f3332d4b8d10dd96b20ba6b
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: c5b17bd0509ebca05f49ec5a411ea632676e6342
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739668"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947281"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft Virtualize/SOAtest Professional Desktop in Visual Studio-Abonnements
 
 Testen Sie früher und häufiger.  Simulieren und testen Sie das Verhalten nicht verfügbarer bzw. sich weiterentwickelnder Anwendungen und Systeme.  Der Vorteil beinhaltet ein kostenloses Abonnement mit einer Laufzeit von sechs Monaten.  Am Ende Ihres sechsmonatigen Abonnements sind Sie für einen Rabatt von 25 % auf den Preis eines Jahresabonnements qualifiziert.
-
 
 ## <a name="activation-steps"></a>Aktivierungsschritte
 
@@ -32,7 +29,6 @@ Testen Sie früher und häufiger.  Simulieren und testen Sie das Verhalten nicht
 3. Sie werden zur Parasoft-Website umgeleitet. Dort können Sie ein Konto erstellen.  Stellen Sie Ihre Kontaktinformationen bereit, und klicken sie auf **Weiter**.
    > [!div class="mx-imgBorder"]
    > ![Parasoft-Vorteil: Konto erstellen](_img/vs-parasoft/vs-parasoft-account-cropped.png)
-
 
 4. Sobald Sie ein Konto erstellt haben, wird Ihnen eine Benachrichtigung angezeigt, dass die Anweisungen zum Herunterladen Ihnen per E-Mail gesendet wurden.  (Denken Sie daran, Ihren Spamordner oder Junk-E-Mail-Ordner zu überprüfen, wenn die E-Mail in Ihrem Posteingang nicht angezeigt wird.)
 
@@ -83,16 +79,14 @@ Testen Sie früher und häufiger.  Simulieren und testen Sie das Verhalten nicht
 | Visual Studio Dev Essentials | NA  | Nicht verfügbar|NA |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure                                       | Nicht verfügbar                                                           |NA|
 
-<sup>1</sup> *Umfasst: Microsoft Partner Network (Enterprise).  Umfasst nicht:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), FTE, MCT Software & Services (Developer), BizSpark, Imagine, Microsoft Valued Professional (MVP), Region Director (RD).  MCT Software & Services.*
-
+<sup>1</sup> *Umfasst: Microsoft Partner Network (Enterprise).  Umfasst nicht:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), FTE, MCT Software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  MCT Software & Services.*
 
 > [!NOTE]
 > In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.
 
-
 ## <a name="support-resources"></a>Supportressourcen
--  Benötigen Sie Hilfe bei Parasoft-Produkten?  Sehen Sie sich diese Ressourcen an:
+- Benötigen Sie Hilfe bei Parasoft-Produkten?  Sehen Sie sich diese Ressourcen an:
     - Technischer Support: https://www.parasoft.com/support/
     - Parasoft-Ressourcencenter: https://www.parasoft.com/resources/
--  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
--  Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
+- Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
+- Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).

@@ -1,26 +1,21 @@
 ---
 title: Legacysprache Service Features2 | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], code development aides
 ms.assetid: 97c38622-ae0b-4ae0-90ed-604072c298d3
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: eedd4162f45f5e1a68aea92af7c4f3cf71171cee
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 885940b90d24b471d1712670f53ea72fcd4d40e0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761513"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434390"
 ---
 # <a name="legacy-language-service-features"></a>Legacy-Dienst-Sprachfunktionen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ In den folgenden Themen sind einige der legacysprache-Service-Features, die Sie 
  Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Um mehr über die neue Methode zum Implementieren von eines Sprachdiensts zu suchen, finden Sie unter [-Editor und Sprachdiensterweiterungen](../../extensibility/editor-and-language-service-extensions.md).  
   
 > [!NOTE]
->  Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
+> Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Syntaxfarben in einem Legacysprachdienst](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)  
@@ -48,8 +43,7 @@ In den folgenden Themen sind einige der legacysprache-Service-Features, die Sie 
  [Gliederung und ausgeblendeter Text in einem Legacysprachdienst](../../extensibility/internals/outlining-and-hidden-text-in-a-legacy-language-service.md)  
  Erläutert das Implementieren der Gliederung oder den ausgeblendeten Text.  
   
- [Gewusst wie: Bereitstellen von Unterstützung für erweiterte Gliederungen in einem Legacysprachdienst](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
+ [Vorgehensweise: Bereitstellen von Unterstützung für erweiterte Gliederungen in einem Legacysprachdienst](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
  Erläutert einige der Schritte bei der Implementierung von Debugger-Support...  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte
-

@@ -1,14 +1,9 @@
 ---
 title: IDebugStackFrame3 | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugStackFrame3
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 39af2f57-0a01-42b8-b093-b7fbc61e2909
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8e09851f4cfd8418db8b11a08f0ba13a5a133b94
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 43c5b3b9bbc5e09b41f346949c4ec788c3784786
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438162"
 ---
 # <a name="idebugstackframe3"></a>IDebugStackFrame3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -57,7 +52,7 @@ IDebugStackFrame3 : IDebugStackFrame2
  Durch das Abfangen einer Ausnahme an, kann der Debugger kann den Benutzer Änderungen vornehmen, um den Status des gedebuggten Programm und dann die Ausführung an der Stelle, wo die Ausnahme ausgelöst wurde, fortgesetzt.  
   
 > [!NOTE]
->  Abgefangene Ausnahmen sind nur in verwaltetem Code, also in einem Programm zulässig, die unter der Common Language Runtime (CLR) ausgeführt wird.  
+> Abgefangene Ausnahmen sind nur in verwaltetem Code, also in einem Programm zulässig, die unter der Common Language Runtime (CLR) ausgeführt wird.  
   
  Eine Debug-Engine gibt an, dass es abfangender Ausnahmen unterstützt, durch Festlegen von "MetricExceptions" auf einen Wert von 1 zur Laufzeit mithilfe der `SetMetric` Funktion. Weitere Informationen finden Sie unter [SDK-Hilfsprogramme zum Debugging](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md).  
   
@@ -72,4 +67,3 @@ IDebugStackFrame3 : IDebugStackFrame2
  [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   
  [SDK-Hilfsprogramme für das Debugging](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
-

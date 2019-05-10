@@ -1,14 +1,9 @@
 ---
-title: 'Vorgehensweise: anordnen und Andocken von Windows | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Anordnen und Andocken von Windows | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 f1_keywords:
 - VisualStudio.TreeGrid.AddRemoveColumnsDialogBox
 - VisualStudio.TreeGrid.SortColumnDialogBox
@@ -36,13 +31,13 @@ ms.assetid: 6a68f761-4589-4634-b39d-311fc46309aa
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7b3442fe14ab0a34db54a8bec0dc217f1fd02b1c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5decd1dc8ece151acbbd1a91b34526ca3f085aef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822561"
 ---
-# <a name="how-to-arrange-and-dock-windows"></a>Gewusst wie: Anordnen und Andocken von Fenstern
+# <a name="how-to-arrange-and-dock-windows"></a>Vorgehensweise: Anordnen und Andocken von Windows
 Dieser Inhalt wurde verschoben, um [Anpassen von Fensterlayouts](../ide/customizing-window-layouts-in-visual-studio.md)

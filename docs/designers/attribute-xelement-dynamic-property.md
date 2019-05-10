@@ -1,20 +1,19 @@
 ---
 title: Attribute (dynamische XElement-Eigenschaft)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: 8440fc7d-b3b4-4726-8ec8-492e6af79642
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 701636a82b07311bdc9f5a9b20882d613e8469ce
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0ec27fe2d7824ca32cbf97dbabac8b7ea6c4aed6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959922"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62926922"
 ---
 # <a name="attribute-xelement-dynamic-property"></a>Attribute (dynamische XElement-Eigenschaft)
 
@@ -30,7 +29,7 @@ elem.Attribute[{namespaceName}attribName]
 
 Indexer des Typs `XAttribute Item(String expandedName)`. Dieser Indexer nimmt den erweiterten Namen des angegebenen Attributs und gibt das zugehörige <xref:System.Xml.Linq.XAttribute> zurück. Wenn kein Attribut mit dem angegebenen Namen existiert, wird `null` zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Anmerkungen
 
 Diese Eigenschaft ist identisch mit der <xref:System.Xml.Linq.XElement.Attribute%2A>-Methode der <xref:System.Xml.Linq.XElement?displayProperty=fullName>-Klasse.
 

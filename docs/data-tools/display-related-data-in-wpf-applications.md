@@ -13,17 +13,15 @@ helpviewer_keywords:
 ms.assetid: 3aa80194-0191-474d-9d28-5ec05654b426
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f37fdeb7ddd305c7c258958d92c08cf1d8f2a4a8
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
-ms.translationtype: MTE95
+ms.openlocfilehash: da6f276e714c816ea9b3c1b735ad50f31ffdc3c0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567059"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Anzeigen zugehöriger Daten in WPF-Anwendungen
 
@@ -33,9 +31,9 @@ Sie können angeben, Erstellen von datengebundenen Steuerelementen, die zugehör
 
 ## <a name="to-create-controls-that-display-related-records"></a>So erstellen Sie Steuerelemente, die verknüpfte Datensätze anzeigen
 
-1. Klicken Sie im Menü Daten **auf Datenquellen anzeigen**, um das Datenquellenfenster** zu öffnen.
+1. Klicken Sie im Menü **Daten** auf **Datenquellen anzeigen**, um das Fenster **Datenquellen** zu öffnen.
 
-2. Klicken Sie auf Neue Datenquelle hinzufügen **, und führen Sie den Assistenten zum Konfigurieren von Datenquellen** aus.
+2. Klicken Sie auf **Neue Datenquelle hinzufügen**, und führen Sie den **Assistenten zum Konfigurieren von Datenquellen** aus.
 
 3. Öffnen Sie den WPF-Designer, und stellen Sie sicher, dass der Designer ein Container enthält, die ein gültiges Ablageziel für die Elemente in der **Datenquellen** Fenster.
 

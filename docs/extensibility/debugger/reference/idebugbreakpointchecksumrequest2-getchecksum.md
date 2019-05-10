@@ -1,28 +1,30 @@
 ---
-title: IDebugBreakpointChecksumRequest2::GetChecksum | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+title: IDebugBreakpointChecksumRequest2::GetChecksum | Microsoft Docs
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugBreakpointChecksumRequest2::GetChecksum
 ms.assetid: ec434882-e5c0-4d76-a58b-22c260d8626e
-author: gregvanl
+caps.latest.revision: 13
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: d46e83e1edab1fe6f0cd18c716a867542c4ee109
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8d3c85d949f9547897b924bea86fe0cf9d438768
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865088"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62923481"
 ---
 # <a name="idebugbreakpointchecksumrequest2getchecksum"></a>IDebugBreakpointChecksumRequest2::GetChecksum
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Ruft die Dokument-Prüfsumme für eine Haltepunkt-Anforderung den eindeutigen Bezeichner des Prüfsummenalgorithmus ab.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT GetChecksum(   
    REFGUID        guidAlgorithm,  
    CHECKSUM_DATA *pChecksumData  
@@ -49,7 +51,7 @@ public int GetChecksum(
 ## <a name="example"></a>Beispiel  
  Das folgende Beispiel zeigt eine Funktion, die überprüft, ob die Prüfsumme der ein Dokument, das zu bindenden ist, über die Benutzeroberfläche übereinstimmt.  
   
-```cpp  
+```cpp#  
 bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCodeContext *pContext)  
 {  
     bool fRet = false;  

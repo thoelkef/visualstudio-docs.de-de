@@ -1,14 +1,9 @@
 ---
 title: '&lt;Abhängigkeit&gt; -Element (ClickOnce-Anwendung) | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
 - urn:schemas-microsoft-com:asm.v2#os
@@ -31,13 +26,13 @@ ms.assetid: 09d6a1e0-60f8-4fbd-843b-8e49ee3115a3
 caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: e76d517af1e0bd93507a47facd63bd50ae98e635
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e79fadcab1a4f00c084d675c3267b5886772fe2c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233856"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58956497"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;Abhängigkeit&gt; -Element (ClickOnce-Anwendung)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,7 +107,7 @@ Identifiziert eine Plattform oder Assembly-Abhängigkeit, die für die Anwendung
 ### <a name="osversioninfo"></a>osVersionInfo  
  Erforderlich. Dieses Element ist ein untergeordnetes Element des `dependentOS` -Elements und enthält das `os` -Element. Dieses Element weist keine Attribute auf.  
   
-### <a name="os"></a>Betriebssystem  
+### <a name="os"></a>os  
  Erforderlich. Dieses Element ist ein untergeordnetes Element des `osVersionInfo` -Elements. Dieses Element weist folgende Attribute auf.  
   
 |Attribut|Beschreibung|  
@@ -123,7 +118,7 @@ Identifiziert eine Plattform oder Assembly-Abhängigkeit, die für die Anwendung
 |`servicePackMajor`|Erforderlich. Gibt an, die wichtigsten Service Pack-Nummer des Betriebssystems.|  
 |`servicePackMinor`|Dies ist optional. Gibt die kleinere Service Pack-Nummer des Betriebssystems an.|  
 |`productType`|Dies ist optional. Gibt die Produkt-Typwert. Gültige Werte sind `server`, `workstation` und `domainController`. Für Windows 2000 Professional, ist der Wert dieses Attributs beispielsweise `workstation`.|  
-|`suiteType`|Dies ist optional. Identifiziert eine Produktsuite, die auf dem System oder des Systems Konfigurationstyp verfügbar. Gültige Werte sind `backoffice`, `blade`, `datacenter`, `enterprise`, `home`, `professional`, `smallbusiness`, `smallbusinessRestricted`, und `terminal`. Für Windows 2000 Professional, ist der Wert dieses Attributs beispielsweise `professional`.|  
+|`suiteType`|Dies ist optional. Identifiziert eine Produktsuite, die auf dem System oder des Systems Konfigurationstyp verfügbar. Gültige Werte sind `backoffice`, `blade`, `datacenter`, `enterprise`, `home`, `professional`, `smallbusiness`, `smallbusinessRestricted` und `terminal`. Für Windows 2000 Professional, ist der Wert dieses Attributs beispielsweise `professional`.|  
   
 ### <a name="dependentassembly"></a>dependentAssembly  
  Dies ist optional. Enthält die `assemblyIdentity` Element. Die `dependentOS` und `dependentAssembly` Elemente schließen sich gegenseitig: mindestens eine der anderen muss vorhanden sein, für eine `dependency` -Element, aber nicht beides.  
@@ -134,7 +129,7 @@ Identifiziert eine Plattform oder Assembly-Abhängigkeit, die für die Anwendung
 |---------------|-----------------|  
 |`dependencyType`|Erforderlich. Gibt den Typ der Abhängigkeit an. Gültige Werte sind `preprequisite` und `install`. Ein `install` Assembly installiert ist, als Teil der [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung. Ein `prerequisite` Assembly muss im globalen Assemblycache (GAC) vor der [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung installieren kann.|  
 |`allowDelayedBinding`|Erforderlich. Gibt an, ob die Assembly zur Laufzeit programmgesteuert geladen werden kann.|  
-|`group`|Dies ist optional. Wenn die `dependencyType` -Attributsatz auf `install`, kennzeichnet eine benannte Gruppe von Assemblys, nur die Installation bei Bedarf. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Bedarfsgerechtes Herunterladen von Assemblys mit der API für die ClickOnce-Bereitstellung unter Verwendung des Designers](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Wenn auf festgelegt `framework` und `dependencyType` -Attributsatz auf `prerequisite`, kennzeichnet die Assembly als Teil von .NET Framework. Der globale Assemblycache (GAC) wird nicht auf diese Assembly überprüft, bei der Installation auf [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] und höhere Versionen.|  
+|`group`|Dies ist optional. Wenn die `dependencyType` -Attributsatz auf `install`, kennzeichnet eine benannte Gruppe von Assemblys, nur die Installation bei Bedarf. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Herunterladen von Assemblys bei Bedarf mit der API für die ClickOnce-Bereitstellung unter Verwendung des Designers](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Wenn auf festgelegt `framework` und `dependencyType` -Attributsatz auf `prerequisite`, kennzeichnet die Assembly als Teil von .NET Framework. Der globale Assemblycache (GAC) wird nicht auf diese Assembly überprüft, bei der Installation auf [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] und höhere Versionen.|  
 |`codeBase`|Erforderlich, wenn die `dependencyType` -Attributsatz auf `install`. Der Pfad der abhängigen Assembly. Entweder ein absoluter Pfad oder einen Pfad relativ zum des Manifests kann Basisklasse sein. Dieser Pfad muss ein gültiger URI in der Reihenfolge für das Assemblymanifest gültig ist.|  
 |`size`|Erforderlich, wenn die `dependencyType` -Attributsatz auf `install`. Die Größe der abhängigen Assembly, in Bytes.|  
   
@@ -154,24 +149,24 @@ Identifiziert eine Plattform oder Assembly-Abhängigkeit, die für die Anwendung
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] verwendet einen algorithmischen Hash aller Dateien in einer Anwendung als eine sicherheitsüberprüfung, um sicherzustellen, dass keine der Dateien nach der Bereitstellung geändert wurden. Wenn die `hash` Element nicht enthalten ist, diese Überprüfung wird nicht ausgeführt werden. Daher wird das Auslassen der `hash` Element wird nicht empfohlen.  
   
-### <a name="dsigtransforms"></a>dsig: Transforms  
+### <a name="dsigtransforms"></a>dsig:Transforms  
  Die `dsig:Transforms` Element ist ein erforderliches untergeordnetes Element von der `hash` Element. Das `dsig:Transforms` -Element weist keine Attribute auf.  
   
-### <a name="dsigtransform"></a>dsig  
+### <a name="dsigtransform"></a>dsig:Transform  
  Die `dsig:Transform` Element ist ein erforderliches untergeordnetes Element von der `dsig:Transforms` Element. Das `dsig:Transform` -Element weist folgende Attribute auf.  
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
 |`Algorithm`|Der Algorithmus verwendet, um den Hashwert für diese Datei zu berechnen. Zurzeit der einzige Wert ein, die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ist `urn:schemas-microsoft-com:HashTransforms.Identity`.|  
   
-### <a name="dsigdigestmethod"></a>DigestMethod  
+### <a name="dsigdigestmethod"></a>dsig:DigestMethod  
  Die `dsig:DigestMethod` Element ist ein erforderliches untergeordnetes Element von der `hash` Element. Das `dsig:DigestMethod` -Element weist folgende Attribute auf.  
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
 |`Algorithm`|Der Algorithmus verwendet, um den Hashwert für diese Datei zu berechnen. Zurzeit der einzige Wert ein, die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ist `http://www.w3.org/2000/09/xmldsig#sha1`.|  
   
-### <a name="dsigdigestvalue"></a>dsig: DigestValue  
+### <a name="dsigdigestvalue"></a>dsig:DigestValue  
  Die `dsig:DigestValue` Element ist ein erforderliches untergeordnetes Element von der `hash` Element. Das `dsig:DigestValue` -Element weist keine Attribute auf. Der Textwert ist der berechnete Hash für die angegebene Datei.  
   
 ## <a name="remarks"></a>Hinweise  
@@ -226,7 +221,4 @@ Identifiziert eine Plattform oder Assembly-Abhängigkeit, die für die Anwendung
   
 ## <a name="see-also"></a>Siehe auch  
  [ClickOnce Application Manifest (ClickOnce-Anwendungsmanifest)](../deployment/clickonce-application-manifest.md)   
- [\<Dependency >-Element](../deployment/dependency-element-clickonce-deployment.md)
-
-
-
+ [\<dependency>-Element](../deployment/dependency-element-clickonce-deployment.md)

@@ -1,14 +1,9 @@
 ---
 title: Word-Abschluss in einem Legacysprachdienst | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], IntelliSense Complete Word
 - IntelliSense, Complete Word
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 0ace5ac3-f9e1-4e6d-add4-42967b1f96a6
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 40a7e387ceb5fe88f059539634ae654ba076454f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8b4449a30119d925b167213141c3ba577ce42609
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801718"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439889"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Wortvervollständigung in einem Legacysprachdienst
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Wortvervollständigung füllt das fehlenden Zeichen in eine teilweise eingegeben
  Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Wenn Sie mehr erfahren möchten, finden Sie unter [Erweitern des Editors und Sprachdienste](../../extensibility/extending-the-editor-and-language-services.md).  
   
 > [!NOTE]
->  Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
+> Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
   
 ## <a name="implementation-steps"></a>Implementierungsschritte  
   
@@ -57,4 +52,3 @@ Wortvervollständigung füllt das fehlenden Zeichen in eine teilweise eingegeben
  Wenn die Liste nur ein einzelnes Wort, enthält die <xref:Microsoft.VisualStudio.Package.Source> Klasse fügt automatisch das Wort anstelle der partiellen Worts. Wenn die Liste mehr als ein Wort, enthält die <xref:Microsoft.VisualStudio.Package.Source> -Klasse stellt einen Tipp-Toolliste in dem der Benutzer die richtige Wahl auswählen kann.  
   
  Betrachten Sie das Beispiel auch eine <xref:Microsoft.VisualStudio.Package.Declarations> -klassenimplementierung in [Membervervollständigung in einem Legacysprachdienst](../../extensibility/internals/member-completion-in-a-legacy-language-service.md).
-

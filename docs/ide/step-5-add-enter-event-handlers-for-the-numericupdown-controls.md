@@ -1,38 +1,39 @@
 ---
 title: 'Schritt 5: Hinzufügen von Enter-Ereignishandlern für die NumericUpDown-Steuerelemente'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 45a99a5d-c881-4298-b74d-adb481dec5ee
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e05d6cc201819d37e77587529ffd79a740003a10
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 194988a3d21078ebb712afee52d9106659b65b14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62997339"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Schritt 5: Hinzufügen von Enter-Ereignishandlern für die NumericUpDown-Steuerelemente
+
 Im fünften Teil dieses Tutorials fügen Sie <xref:System.Windows.Forms.Control.Enter>-Ereignishandler hinzu, um die Eingabe von Antworten auf Quizfragen zu vereinfachen. Mit diesem Code wird der aktuelle Wert in den einzelnen <xref:System.Windows.Forms.NumericUpDown>-Steuerelementen markiert und gelöscht, sobald ein Quizteilnehmer das Steuerelement ausgewählt und einen anderen Wert eingibt.
 
 > [!NOTE]
->  Dieses Thema ist Teil einer Reihe von Lernprogrammen zu grundlegenden Konzepte der Codierung. Eine Übersicht des Tutorials finden Sie unter [Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Dieses Thema ist Teil einer Reihe von Lernprogrammen zu grundlegenden Konzepte der Codierung. Eine Übersicht über das Tutorial finden Sie unter [Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-verify-the-default-behavior"></a>So überprüfen Sie das Standardverhalten
 
-1.  Führen Sie das Programm aus, und starten Sie das Quiz.
+1. Führen Sie das Programm aus, und starten Sie das Quiz.
 
      Im **NumericUpDown**-Steuerelement für die Additionsaufgabe blinkt der Cursor neben der **0** (Null).
 
-2.  Geben Sie **3** ein, und beachten Sie, dass das Steuerelement **30** anzeigt.
+2. Geben Sie **3** ein, und beachten Sie, dass das Steuerelement **30** anzeigt.
 
-3.  Geben Sie **5** ein, und beachten Sie, dass der Wert **350** angezeigt wird, sich aber nach einer Sekunde in **100** ändert.
+3. Geben Sie **5** ein, und beachten Sie, dass der Wert **350** angezeigt wird, sich aber nach einer Sekunde in **100** ändert.
 
      Bevor Sie dieses Problem beheben, denken Sie über das nach, was geschieht. Überlegen Sie, warum die **0** nicht verschwunden ist, als Sie **3** eingegeben haben, und warum **350** in **100** geändert wurde, die Änderung jedoch nicht unmittelbar stattgefunden hat.
 
@@ -40,18 +41,19 @@ Im fünften Teil dieses Tutorials fügen Sie <xref:System.Windows.Forms.Control.
 
 ## <a name="to-add-an-enter-event-handler-for-a-numericupdown-control"></a>So fügen Sie einen Enter-Ereignishandler für ein NumericUpDown-Steuerelement hinzu
 
-1.  Wählen Sie das erste **NumericUpDown**-Steuerelement (namens „sum“) im Formular aus, und wählen Sie im Dialogfeld **Eigenschaften** auf der Symbolleiste das Symbol **Ereignisse** aus.
+1. Wählen Sie das erste **NumericUpDown**-Steuerelement (namens „sum“) im Formular aus, und wählen Sie im Dialogfeld **Eigenschaften** auf der Symbolleiste das Symbol **Ereignisse** aus.
 
-     Auf der Registerkarte **Ereignisse** im Dialogfeld **Eigenschaften** werden alle Ereignisse angezeigt, auf die Sie für das Element reagieren können (Handler), das Sie im Formular ausgewählt haben. Da Sie das NumericUpDown-Steuerelement ausgewählt haben, sind alle aufgeführten Ereignisse betroffen.
+   ![Schaltfläche „Ereignisse“ auf der Eigenschaftsymbolleiste](media/control-properties-events.png)
 
-2.  Wählen Sie das **Enter**-Ereignis aus, geben Sie `answer_Enter` ein, und drücken Sie dann die **EINGABETASTE**.
+   Auf der Registerkarte **Ereignisse** im Dialogfeld **Eigenschaften** werden alle Ereignisse angezeigt, auf die Sie für das Element reagieren können (Handler), das Sie im Formular ausgewählt haben. Da Sie das NumericUpDown-Steuerelement ausgewählt haben, sind alle aufgeführten Ereignisse betroffen.
 
-     ![Dialogfeld „Eigenschaften“](../ide/media/express_answerenter.png)
- Dialogfeld **Eigenschaften**
+2. Wählen Sie das **Enter**-Ereignis aus, geben Sie `answer_Enter` ein, und drücken Sie dann die **EINGABETASTE**.
 
-     Sie haben soeben einen Enter-Ereignishandler für das NumericUpDown-Steuerelement „sum“ hinzugefügt, und Sie haben den Handler **answer_Enter** genannt.
+   ![Methodenname für Enter-Ereignishandler](media/enter-event.png)
 
-3.  Fügen Sie in der Methode für den **answer_Enter**-Ereignishandler den folgenden Code hinzu.
+   Sie haben soeben einen Enter-Ereignishandler für das NumericUpDown-Steuerelement „sum“ hinzugefügt, und Sie haben den Handler **answer_Enter** genannt.
+
+3. Fügen Sie in der Methode für den **answer_Enter**-Ereignishandler den folgenden Code hinzu:
 
      [!code-vb[VbExpressTutorial3Step5_6#11](../ide/codesnippet/VisualBasic/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#11](../ide/codesnippet/CSharp/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.cs)]
@@ -60,18 +62,18 @@ Im fünften Teil dieses Tutorials fügen Sie <xref:System.Windows.Forms.Control.
 
      Die nächste Zeile überprüft, ob answerBox erfolgreich von einem Objekt in ein NumericUpDown-Steuerelement konvertiert (umgewandelt) wurde. Wenn die Konvertierung nicht erfolgreich war, hat die Variable einen Wert von `null` (C#) oder `Nothing` (Visual Basic). In der dritten Zeile wird die Länge der Antwort angegeben, die im NumericUpDown-Steuerelement angezeigt wird. In der vierten Zeile wird der aktuelle Wert im Steuerelement auf der Grundlage dieser Länge ausgewählt. Wenn der Quizteilnehmer nun das Steuerelement aktiviert, löst Visual Studio das Ereignis aus. Daraufhin wird die aktuelle Antwort ausgewählt. Sobald der Quizteilnehmer eine andere Antwort eingibt, wird die vorherige Antwort gelöscht und durch die neue Antwort ersetzt.
 
-4.  Wählen Sie im **Windows Forms-Designer** das **NumericUpDown**-Steuerelement „difference“ aus.
+4. Wählen Sie im **Windows Forms-Designer** das **NumericUpDown**-Steuerelement „difference“ aus.
 
-5.  Führen Sie auf der Seite **Ereignisse** des Dialogfelds **Eigenschaften** einen Bildlauf bis zum **Enter**-Ereignis durch, wählen Sie den Dropdownpfeil am Ende der Zeile aus, und wählen Sie dann den `answer_Enter`-Ereignishandler aus, den Sie gerade hinzugefügt haben.
+5. Führen Sie auf der Seite **Ereignisse** des Dialogfelds **Eigenschaften** einen Bildlauf bis zum **Enter**-Ereignis durch, wählen Sie den Dropdownpfeil am Ende der Zeile aus, und wählen Sie dann den `answer_Enter`-Ereignishandler aus, den Sie gerade hinzugefügt haben.
 
-6.  Wiederholen Sie den vorherigen Schritt für die NumericUpDown-Steuerelemente "product" und "quotient".
+6. Wiederholen Sie den vorherigen Schritt für die NumericUpDown-Steuerelemente "product" und "quotient".
 
-7.  Speichern Sie das Programm, und führen Sie es aus.
+7. Speichern Sie das Programm, und führen Sie es aus.
 
      Wenn Sie ein **NumericUpDown**-Steuerelement auswählen, wird der vorhandene Wert automatisch markiert und dann gelöscht, wenn Sie einen anderen Wert eingeben.
 
 ## <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben
 
--   Um mit dem nächsten Tutorialschritt fortzufahren, klicken Sie auf [Schritt 6: Hinzufügen einer Subtraktionsaufgabe](../ide/step-6-add-a-subtraction-problem.md).
+- Den nächsten Schritt des Tutorials finden Sie unter [Schritt 6: Hinzufügen einer Subtraktionsaufgabe](../ide/step-6-add-a-subtraction-problem.md).
 
--   Um zum vorherigen Tutorialschritt zurückzukehren, klicken Sie auf [Schritt 4: Hinzufügen der CheckTheAnswer()-Methode](../ide/step-4-add-the-checktheanswer-parens-method.md).
+- Den vorherigen Schritt des Tutorials finden Sie unter [Schritt 4: Hinzufügen der CheckTheAnswer()-Methode](../ide/step-4-add-the-checktheanswer-parens-method.md).

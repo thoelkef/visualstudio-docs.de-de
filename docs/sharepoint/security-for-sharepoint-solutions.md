@@ -10,17 +10,17 @@ dev_langs:
 helpviewer_keywords:
 - security [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, security
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ae284cd05e173f271bff3b0a3ef7d9cba3fadfc6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 31bcd41dc1a6fd7f314c7d701f52c3728dd2ee8c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904902"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009799"
 ---
 # <a name="security-for-sharepoint-solutions"></a>Sicherheit für SharePoint-Lösungen
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] umfasst die folgenden Funktionen zur Erhöhung die Sicherheit von SharePoint-Anwendungen.
@@ -46,42 +46,42 @@ ms.locfileid: "53904902"
 ## <a name="sharepoint-permissions-considerations"></a>Überlegungen zur SharePoint-Berechtigungen
  Bei der Entwicklung von SharePoint-Lösungen benötigen Sie ausreichende Berechtigungen, um SharePoint-Lösungen auszuführen und zu debuggen. Bevor Sie eine SharePoint-Lösung testen können, führen Sie die folgenden Schritte aus, um sicherzustellen, dass Sie über die erforderlichen Berechtigungen verfügen:
 
-1.  Fügen Sie Ihr Benutzerkonto als Administrator für das System hinzu.
+1. Fügen Sie Ihr Benutzerkonto als Administrator für das System hinzu.
 
-2.  Fügen Sie Ihr Benutzerkonto als Farmadministrator für den SharePoint-Server hinzu.
+2. Fügen Sie Ihr Benutzerkonto als Farmadministrator für den SharePoint-Server hinzu.
 
-    1.  Wählen Sie in SharePoint 2010-Zentraladministration die **verwalten Sie die Gruppe "Farmadministratoren"** Link.
+    1. Wählen Sie in SharePoint 2010-Zentraladministration die **verwalten Sie die Gruppe "Farmadministratoren"** Link.
 
-    2.  Auf der **Farmadministratoren** Seite die **neu** Menüoption
+    2. Auf der **Farmadministratoren** Seite die **neu** Menüoption
 
-3.  Fügen Sie das Benutzerkonto zur Gruppe "WSS_ADMIN_WPG" hinzu.
+3. Fügen Sie das Benutzerkonto zur Gruppe "WSS_ADMIN_WPG" hinzu.
 
 ## <a name="additional-security-resources"></a>Zusätzliche Sicherheitsressourcen
  Weitere Informationen zu Sicherheitsproblemen finden Sie hier.
 
 ### <a name="visual-studio-security"></a>Visual Studio-Sicherheit
 
--   [Sicherheit und Benutzerberechtigungen](http://go.microsoft.com/fwlink/?LinkId=177503)
+- [Sicherheit und Benutzerberechtigungen](http://go.microsoft.com/fwlink/?LinkId=177503)
 
--   [Sicherheit in systemeigenem Code und .NET Framework-Code](http://go.microsoft.com/fwlink/?LinkId=177504)
+- [Sicherheit in systemeigenem Code und .NET Framework-Code](http://go.microsoft.com/fwlink/?LinkId=177504)
 
--   [Sicherheit in .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177502)
+- [Sicherheit in .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177502)
 
 ### <a name="sharepoint-security"></a>SharePoint-Sicherheit
 
--   [SharePoint Foundation-Verwaltung und Sicherheit](http://go.microsoft.com/fwlink/?LinkId=177501)
+- [SharePoint Foundation-Verwaltung und Sicherheit](http://go.microsoft.com/fwlink/?LinkId=177501)
 
--   [Ressourcencenter für SharePoint-Sicherheit](http://go.microsoft.com/fwlink/?LinkId=177498)
+- [Ressourcencenter für SharePoint-Sicherheit](http://go.microsoft.com/fwlink/?LinkId=177498)
 
--   [Sichern von Webparts in SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177511)
+- [Sichern von Webparts in SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177511)
 
--   [Erhöhen der Sicherheit von Webanwendungen: Bedrohungen und Gegenmaßnahmen](http://go.microsoft.com/fwlink/?LinkID=140080)
+- [Erhöhen der Sicherheit von Webanwendungen: Bedrohungen und Gegenmaßnahmen](http://go.microsoft.com/fwlink/?LinkID=140080)
 
 ### <a name="general-security"></a>Allgemeine Sicherheit
 
--   [MSDN Security Development Lifecycle](http://go.microsoft.com/fwlink/?LinkID=147149)
+- [MSDN Security Development Lifecycle](http://go.microsoft.com/fwlink/?LinkID=147149)
 
--   [Erstellen von Secure ASP.NET-Anwendungen: Authentifizierung, Autorisierung und sichere Kommunikation](http://go.microsoft.com/fwlink/?LinkId=177494)
+- [Erstellen von Secure ASP.NET-Anwendungen: Authentifizierung, Autorisierung und sichere Kommunikation](http://go.microsoft.com/fwlink/?LinkId=177494)
 
 ## <a name="see-also"></a>Siehe auch
 

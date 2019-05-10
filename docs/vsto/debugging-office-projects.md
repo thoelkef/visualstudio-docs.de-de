@@ -14,26 +14,26 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], projects
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f2b8b142c7950ee45a5c870c30658d795fe44c89
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: 8b48335ccaa8bd21cf9f6e108d043ecf706903bb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958396"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441882"
 ---
 # <a name="debug-office-projects"></a>Debuggen von Office-Projekten
   Sie können Office-Projekte mit den gleichen Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Tools debuggen, die Sie auch für andere [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Projekte verwenden. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Debuggerfunktionen, beispielsweise die Fähigkeit, Haltepunkte einzufügen und Variablen im Fenster **Lokal** anzuzeigen, stehen auch zur Verfügung, wenn Sie Office-Projekte debuggen. Weitere Informationen zu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Debugtools finden Sie [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md).
 
 > [!TIP]
->  Um das Debuggen zu vereinfachen, schließen Sie alle geöffneten Instanzen der Office-Anwendung, bevor Sie sie erstellen und debuggen.
+> Um das Debuggen zu vereinfachen, schließen Sie alle geöffneten Instanzen der Office-Anwendung, bevor Sie sie erstellen und debuggen.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 > [!NOTE]
->  Möchten Sie bei der Entwicklung von Lösungen, die über die Office-Erfahrungen erweitern [mehrere Plattformen](https://dev.office.com/add-in-availability)? Sehen Sie sich die neue [Office-Add-ins Modell](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office-Add-ins verfügen, einen geringen Ressourcenbedarf im Vergleich zu VSTO-add-ins und Lösungen, und Sie können sie mithilfe von fast allen Web-Technologien, wie HTML5, JavaScript, CSS3 und XML-Programmierung erstellen.
+> Möchten Sie bei der Entwicklung von Lösungen, die über die Office-Erfahrungen erweitern [mehrere Plattformen](https://dev.office.com/add-in-availability)? Sehen Sie sich die neue [Office-Add-ins Modell](https://dev.office.com/docs/add-ins/overview/office-add-ins). Office-Add-ins verfügen, einen geringen Ressourcenbedarf im Vergleich zu VSTO-add-ins und Lösungen, und Sie können sie mithilfe von fast allen Web-Technologien, wie HTML5, JavaScript, CSS3 und XML-Programmierung erstellen.
 
 ## <a name="start-and-stop-the-debugger"></a>Starten Sie und beenden Sie den debugger
  Ein Office-Projekt debuggen, wie Sie das Debuggen anderer starten [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Projekt; Sie können z. B. Drücken der **F5** Schlüssel. Beim Starten des Debuggens ein VSTO-Add-in-Projekt, ein neuer Prozess für die entsprechende Office-Anwendung wird gestartet, und das VSTO-Add-in geladen wird.

@@ -1,8 +1,6 @@
 ---
 title: Eigenschaften von Leistungssitzungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,properties
@@ -10,15 +8,15 @@ helpviewer_keywords:
 - performance tools, performance session properties
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ce4fb6b9a57db78e3dbb7f3082a87df9ffb7360
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 77da53856e0562d036fade431dd0deba0376fe9f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62798375"
 ---
 # <a name="performance-session-properties"></a>Eigenschaften von Leistungssitzungen
 
@@ -36,17 +34,17 @@ Mit diesen Einstellungen können Sie die Profilerstellungsmethode auswählen, di
 
 Weitere Informationen finden Sie unter:
 
-[Vorgehensweise: Auswählen von Sammlungsmethoden](../profiling/how-to-choose-collection-methods.md)
+[Vorgehensweise: Auswählen von Collectionmethoden](../profiling/how-to-choose-collection-methods.md)
 
 [Sammeln von Daten zur .NET-Speicherbelegung und Lebensdauer](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
 
- [Vorgehensweise: Dateinamenoptionen für Profilerstellungsdaten](../profiling/how-to-set-performance-data-file-name-options.md)
+- [Vorgehensweise: Dateinamensoptionen für Profilerstellungsdaten](../profiling/how-to-set-performance-data-file-name-options.md)
 
 ## <a name="launch"></a>Starten
 
 Sie können diese Einstellungen aus einer Liste der Binärdateien auswählen und die Startreihenfolge der Binärdateien angeben.
 
-Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der zu startenden Binärdateien](../profiling/how-to-specify-the-binary-to-start.md).
+Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der zu startenden Binärdatei](../profiling/how-to-specify-the-binary-to-start.md)
 
 ## <a name="sampling"></a>Sampling
 
@@ -58,12 +56,12 @@ Diese Einstellungen ermöglichen Ihnen die Auswahl des Samplingereignisses und d
 - Leistungsindikatoren: für Leistungsproblemen auf niedriger Ebene
 - Zusätzliche Samplingereignisse können auf Grundlage der verfügbaren Leistungsindikatoren angegeben werden
 
-Weitere Informationen finden Sie unter [Vorgehensweise: Auswählen von Samplingereignissen](../profiling/how-to-choose-sampling-events.md).
+Weitere Informationen finden Sie unter [Vorgehensweise: Auswählen von Samplingereignissen](../profiling/how-to-choose-sampling-events.md)
 
 ## <a name="binary"></a>Binär
 Mit diesen Einstellungen können Sie angeben, ob instrumentierte Binärdateien an einen anderen Speicherort verschoben werden sollen. Wenn Sie beispielsweise eine *My.DLL*-Profilerstellung durchführen und die instrumentierte Binärdatei nicht verschieben, wird eine Sicherungskopie von *My.DLL* mit dem Namen *My.Orig.DLL* erstellt. Anschließend wird *My.DLL* geändert, indem Prüfungen zur Datensammlung eingefügt werden. Wenn Sie sich entschließen, die instrumentierte Binärdatei zu verschieben, wird die ursprüngliche Binärdatei nicht umbenannt, und die instrumentierte Binärdatei wird am angegebenen Speicherort zur Verwendung während der Instrumentation kopiert.
 
-Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der zu startenden Binärdateien](../profiling/how-to-specify-the-binary-to-start.md).
+Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der zu startenden Binärdatei](../profiling/how-to-specify-the-binary-to-start.md)
 
 ## <a name="tier-interactions"></a>Ebeneninteraktionen
 
@@ -83,7 +81,7 @@ Weitere Informationen finden Sie unter:
 
 Mit diesen Einstellungen können Sie Daten zu CPU-Leistungsindikatoren sammeln, wenn Sie die Instrumentationsprofilerstellungsmethode verwenden. Portable Leistungszähler sind unabhängig vom CPU-Design und Hersteller verfügbar. Plattformereignisse sind spezifisch für das CPU-Design und den Hersteller. Weitere Informationen über integrierte Leistungsindikatoren finden Sie in der Dokumentation des jeweiligen Prozessors.
 
-Weitere Informationen finden Sie unter [Vorgehensweise: Sammeln von CPU-Indikatordaten](../profiling/how-to-collect-cpu-counter-data.md).
+Weitere Informationen finden Sie unter [Vorgehensweise: Sammeln von CPU-Indikatordaten](../profiling/how-to-collect-cpu-counter-data.md)
 
 ## <a name="windows-events"></a>Windows-Ereignisse
 
@@ -109,10 +107,10 @@ Weitere Informationen finden Sie unter:
 
 [Vorgehensweise: Angeben der .NET Framework-Laufzeit](../profiling/how-to-specify-the-dotnet-framework-runtime.md)
 
-[Vorgehensweise: Angeben zusätzlicher Instrumentationsoptionen](../profiling/how-to-specify-additional-instrumentation-options.md)
+[Vorgehensweise: Angeben zusätzlicher Instrumentierungsoptionen](../profiling/how-to-specify-additional-instrumentation-options.md)
 
 ## <a name="see-also"></a>Siehe auch
 
-[Übersichten](../profiling/overviews-performance-tools.md)  
-[Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)  
-[Steuerung der Datensammlung](../profiling/controlling-data-collection.md)
+[Übersichten (Leistungstools)](../profiling/overviews-performance-tools.md)
+[Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)
+[Steuern der Datensammlung](../profiling/controlling-data-collection.md)

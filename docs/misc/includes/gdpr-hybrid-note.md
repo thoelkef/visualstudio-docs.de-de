@@ -1,18 +1,17 @@
 ---
 title: Includedatei
 ms.date: 05/01/2018
-ms.prod: visual-studio-dev15
 ms.topic: include
 author: eross-msft
 ms.author: lizross
-ms.openlocfilehash: 66672b4f53f755dac37d15ac59115deac700e0aa
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 31b4021feb2b33babff123a56436d3a57d3e9f13
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34573393"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62582004"
 ---
 > [!NOTE]
 > Wenn Sie personenbezogene Daten anzeigen oder löschen möchten, sehen Sie sich zunächst die Richtlinien von Microsoft unter [Windows-Datensubjektanforderungen für die DSGVO](/microsoft-365/compliance/gdpr-dsr-windows) an. Allgemeine Informationen über die DSGVO finden Sie im DSGVO-Abschnitt im [Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
 
-[//]: # (22.5.2018: Löschen Sie diese Datei nicht, auch wenn sie verwaist sein sollte.)
+[//]: # (22.05.2018: Löschen Sie diese Datei nicht, auch wenn sie verwaist sein sollte.)

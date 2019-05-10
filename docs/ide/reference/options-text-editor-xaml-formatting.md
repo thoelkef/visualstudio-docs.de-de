@@ -1,7 +1,6 @@
 ---
 title: Optionen, Text-Editor, XAML, Formatierung
 ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.XAML.Formatting.General
@@ -27,15 +26,15 @@ helpviewer_keywords:
 ms.assetid: ad3820b1-0d94-4807-a74c-c3467ed973a2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: b5eaddd1170fa1f6f076e79de2038e0089fd4f39
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3ed364d9c8995a93acb0de8002bafefd603c2d71
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950237"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969253"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Optionen, Text-Editor, XAML, Formatierung
 
@@ -45,13 +44,13 @@ Verwenden Sie die **Formatierung**-Eigenschaftenseite, um anzugeben, wie Element
 
 Die automatische Formatierung kann auftreten, wenn eines der folgenden Ereignisse erkannt wird.
 
--   Bei Vervollständigung des Endtags oder eines einfachen Tags
+- Bei Vervollständigung des Endtags oder eines einfachen Tags
 
--   Bei Vervollständigung des Starttags
+- Bei Vervollständigung des Starttags
 
--   Bei Einfügen aus der Zwischenablage
+- Bei Einfügen aus der Zwischenablage
 
--   Formatieren von Tastaturbefehlen
+- Formatieren von Tastaturbefehlen
 
 Sie können angeben, welche Ereignisse automatische Formatierung verursachen.
 
@@ -147,7 +146,6 @@ Leerzeilen im Elementinhalt werden nicht entfernt.
 
 ```xml
 <Grid>
-
 
 <Button Name="button1">Hello</Button>
 

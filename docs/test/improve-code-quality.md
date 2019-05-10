@@ -1,22 +1,21 @@
 ---
 title: Testtools
 ms.date: 03/16/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - testing tools [Visual Studio]
 - unit tests [Visual Studio]
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 40649e9a2ae4c5f74627e10409880924efc06a14
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7bcb75da8a21090450c18080240f76ae17c10281
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882999"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820995"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Testtools in Visual Studio
 

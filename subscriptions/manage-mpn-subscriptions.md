@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/11/2017
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Erfahren Sie, wie Sie Endbenutzern (für MPN-Partner) Visual Studio-Abonnements zuweisen.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4a113d88b93b5fe7532a72956ca6129be1773ebe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8a0a0f3b6b093c023a8a0129c34d16aa75fffdaf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949109"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412400"
 ---
 # <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Verwalten von Visual Studio-Abonnements, die über Microsoft Partner Network (MPN) angeboten werden
 
@@ -33,7 +31,7 @@ Microsoft Action Pack-Abonnent und Visual Studio-Abonnements
 4. Ersten, zweiten oder dritten **Technischen Kontakt** auswählen und **Speichern**.
 5. **Anforderungen und Assets** auswählen.
 6. **Berechtigungen** auswählen.
-7. **Visual Studio-Abonnements** auswählen (Hinweis: Update für Visual Studio-Abonnement steht aus).
+7. Klicken Sie auf **Visual Studio-Abonnements** (Hinweis: Update für Visual Studio-Abonnement steht aus)
 8. Gewünschte **Einzelperson** auswählen.
 9. Auf **Senden** klicken.
 10. Die Person erhält eine E-Mail.
@@ -43,7 +41,6 @@ Microsoft Action Pack-Abonnent und Visual Studio-Abonnements
     - Nachname
     - Kontakt-E-Mail-Adresse
 13. Die Anmeldung ist nun abgeschlossen, und der Abonnent sollte Zugriff auf Vorteile haben.
-
 
 ### <a name="competency-partners"></a>Kompetenzpartner
 1. **Anforderungen und Assets** auswählen.
@@ -68,7 +65,7 @@ Microsoft Action Pack-Abonnent und Visual Studio-Abonnements
 
 > [!NOTE]
 > Die technische Kontaktrolle ist für Visual Studio-Abonnements erforderlich
->     - S. 8: Assigning Visual Studio subscriptions for Competency Partners (Zuweisen von Visual Studio-Abonnements für Kompetenzpartner)
+> - S. 8: Assigning Visual Studio subscriptions for Competency Partners (Zuweisen von Visual Studio-Abonnements für Kompetenzpartner)
 
 ## <a name="need-help"></a>Benötigen Sie Hilfe?
 Abonnenten und Programmadministratoren sollten direkt mit dem Microsoft Partner Network-Supportteam zusammenarbeiten, um etwaige Probleme mit Abonnenten, die auf Abonnements zugreifen, zu beheben. Besuchen Sie die Seite [Support für Partner](https://partner.microsoft.com/support), um Unterstützung zu erhalten. (Ihre MPN-Anmeldeinformationen werden benötigt.)

@@ -3,108 +3,112 @@ title: Erste Schritte mit ASP.NET Core
 description: In diesem Artikel erfahren Sie mehr über die ersten Schritte mit ASP.NET in Visual Studio für Mac, insbesondere über die Installation und das Erstellen eines neuen Projekts.
 author: conceptdev
 ms.author: crdun
-ms.date: 07/13/2017
+ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
-ms.openlocfilehash: 9576048cb6a62f7a4e8c93456154997af359a711
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.custom: video
+ms.openlocfilehash: 257d60d87a743d5c5e1099ee443c7bdb38055cca
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296475"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62985633"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Erste Schritte mit ASP.NET Core
 
- Visual Studio für Mac erleichtert die Entwicklung des Diensts Ihrer App durch Unterstützung der aktuellen ASP.NET Core Web-Entwicklungsplattform. ASP.NET Core wird unter .NET Core ausgeführt, der aktuellen Version von .NET Framework und der zugehörigen Runtime. Die Anwendung wurde für schnelle Leistung optimiert, für kleine Installationsgrößen konzipiert und für die Ausführung unter Linux und macOS sowie Windows überarbeitet.
+ Visual Studio für Mac erleichtert die Entwicklung des Diensts Ihrer App durch Unterstützung der aktuellen ASP.NET Core Web-Entwicklungsplattform. ASP.NET Core wird unter .NET Core ausgeführt, der aktuellen Version von .NET Framework und der zugehörigen Runtime. Das Framework wurde für schnelle Leistung optimiert, für kleine Installationsgrößen konzipiert und für die Ausführung unter Linux und macOS sowie Windows überarbeitet.
 
 ## <a name="installing-net-core"></a>Installieren von .NET Core
 
-.NET Core 1.1 wird automatisch mit der Installation von Visual Studio für Mac installiert.
+.NET Core 2.1 wird automatisch mit der Installation von Visual Studio für Mac installiert.
 
 ## <a name="creating-an-aspnet-core-app-in-visual-studio-for-mac"></a>Erstellen einer ASP.NET Core-App in Visual Studio für Mac
 
-Öffnen Sie Visual Studio für Mac. Klicken Sie auf der Homepage auf**Neues Projekt...**.
+Öffnen Sie Visual Studio für Mac. Wählen Sie auf dem Startbildschirm **Neues Projekt…** aus.
 
-![Dialogfeld "Neues Projekt"](media/asp-net-core-image1.png)
+![Dialogfeld "Neues Projekt"](media/asp-net-core-2019-new-asp-core.png)
 
 Dies öffnet das Dialogfeld „Neues Projekt“, über das Sie eine Vorlage zum Erstellen Ihrer Anwendung auswählen können.
 
 Es gibt einige Projekte, die eine vorgefertigte Vorlage zum Erstellen einer ASP.NET Core-Anwendung haben. Diese lauten wie folgt:
 
-- **.NET Core > Leere ASP.NET Core-Webanwendung**
-- **.NET Core > ASP.NET Core-Webanwendung**
-- **.NET Core > ASP.NET Core Web-API**
-- **Mehrere Plattformen > App > Verbundende App**
+- **.NET Core > Leer**
+- **.NET Core > API**
+- **.NET Core > Webanwendung**
+- **.NET Core > Webanwendung (Model View Controller)**
 
-![ASP.NET-Projektoptionen](media/asp-net-core-image11.png)
+![ASP.NET-Projektoptionen](media/asp-net-core-2019-new-asp-core.png)
 
 Klicken Sie auf die **leere ASP.NET Core-Webanwendung** und dann auf **Weiter**. Benennen Sie das Projekt, und klicken Sie auf **Erstellen**. Dadurch wird eine neue ASP.NET Core-Anwendung erstellt, die in etwa so aussehen sollte wie auf folgendem Bild:
 
-![Ansicht „Neue leere ASP.NET Core-Anwendung“](media/asp-net-core-image4.png)
+![Ansicht „Neue leere ASP.NET Core-Anwendung“](media/asp-net-core-2019-empty-project.png)
 
-Mit „Leere ASP.NET Core-Webanwendung“ wird eine neue Webanwendung mit zwei Standarddateien erstellt: **program.cs** und **startup.cs**, die unten weiter erläutert werden. Außerdem wird der Ordner „Abhängigkeiten“ erstellt, der die NuGet-Paketabhängigkeiten Ihres Projekts enthält, wie z.B. ASP.NET Core, das .NET Core-Framework und die Ziele von MSBuild, die das Projekt erstellen:
+Die leere Projektvorlage zum Erstellen einer ASP.NET Core-Anwendung erstellt eine Webanwendung mit zwei Standarddateien: **Program.cs** und **Startup.cs**, die unten weiter erläutert werden. Außerdem wird der Ordner „Abhängigkeiten“ erstellt, der die NuGet-Paketabhängigkeiten Ihres Projekts enthält, wie z.B. ASP.NET Core, das .NET Core-Framework und die Ziele von MSBuild, die das Projekt erstellen:
 
-![Anzeige des Projektmappenpads mit Abhängigkeiten](media/asp-net-core-image12.png)
+![Anzeige des Projektmappenpads mit Abhängigkeiten](media/asp-net-core-2019-solution-dependencies.png)
 
 ### <a name="programcs"></a>Program.cs
 
-Öffnen sie die Datei **program.cs** in Ihrem Projekt, und schauen Sie sich diese an. Beachten Sie, dass zwei Dinge in der `Main`-Methode passieren – der Eingang Ihrer Anwendung:
+Öffnen sie die Datei **program.cs** in Ihrem Projekt, und schauen Sie sich diese an. Beachten Sie, dass zwei Dinge in der `Main`-Methode geschehen – der Eingang Ihrer Anwendung:
 
 ```csharp
-public static void Main(string[] args)
-{
-    var host = new WebHostBuilder()
-        .UseKestrel()
-        .UseContentRoot(Directory.GetCurrentDirectory())
-        .UseIISIntegration()
-        .UseStartup<Startup>()
-        .Build();
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            CreateWebHostBuilder(args).Build().Run();
+        }
 
-    host.Run();
-}
+        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+            WebHost.CreateDefaultBuilder(args)
+                .UseStartup<Startup>();
+    }
 ```
+
 Eine ASP.NET Core-Anwendung erstellt in ihrer Hauptmethode einen Webserver, indem sie einen Host über eine Instanz von [`WebHostBuilder`](/aspnet/core/fundamentals/hosting) konfiguriert und startet. Dieser Generator bietet Möglichkeiten zur Konfiguration des Hosts. In der Vorlagenanwendung werden die folgenden Konfigurationen verwendet:
 
-* `UseKestrel`: gibt an, dass der Kestrel-Server von der Anwendung verwendet wird
-* `UseContentRoot(Directory.GetCurrentDirectory())`: verwendet den Stammordner des Webprojekts als Inhaltsstamm der Anwendung, wenn die Anwendung aus diesem Ordner gestartet wird
-* `.UseIISIntegration()`: gibt an, dass die Anwendung mit IIS funktionieren soll. Um IIS mit ASP.NET Core verwenden zu können, muss sowohl `UseKestrel` als auch `UseIISIntegration` festgelegt sein.
-* `.UseStartup<Startup>()`: gibt die Startup-Klasse an
+* `.UseStartup<Startup>()`: Gibt die Startup-Klasse an.
 
-  Die Methoden zum Erstellen und Ausführen erstellen den IWebHost, der die App hostet und startet, während er auf eingehende HTTP-Anforderungen lauscht.
+Sie können jedoch auch weitere Konfigurationen hinzufügen, z.B.:
+
+* `UseKestrel`: Gibt an, dass der Kestrel-Server von der Anwendung verwendet wird.
+* `UseContentRoot(Directory.GetCurrentDirectory())`: Verwendet den Stammordner des Webprojekts als Inhaltsstamm der Anwendung, wenn die Anwendung aus diesem Ordner gestartet wird.
+* `.UseIISIntegration()`: Gibt an, dass die Anwendung mit IIS funktionieren soll. Um IIS mit ASP.NET Core verwenden zu können, muss sowohl `UseKestrel` als auch `UseIISIntegration` festgelegt sein.
 
 ### <a name="startupcs"></a>Startup.cs
 
-Die Startup-Klasse für Ihre Anwendung wird in der `UseStartup()`-Methode im `WebHostBuilder` festgelegt. In dieser Klasse legen Sie die Pipeline fest, die Anforderungen verarbeitet. Darüber hinaus können Sie hier jeden Dienst konfigurieren.
+Die Startup-Klasse für Ihre Anwendung wird in der `UseStartup()`-Methode im `CreateWebHostBuilder` festgelegt. In dieser Klasse legen Sie die Pipeline fest, die Anforderungen verarbeitet. Darüber hinaus können Sie hier jeden Dienst konfigurieren.
 
 Öffnen sie die Datei **startup.cs** in Ihrem Projekt, und schauen Sie sich diese an.
 
 ```csharp
-public class Startup
-{
-    public void ConfigureServices(IServiceCollection services)
+    public class Startup
     {
-    }
-
-    public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
-    {
-        loggerFactory.AddConsole();
-
-        if (env.IsDevelopment())
+        // This method gets called by the runtime. Use this method to add services to the container.
+        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
+        public void ConfigureServices(IServiceCollection services)
         {
-            app.UseDeveloperExceptionPage();
         }
 
-        app.Run(async (context) =>
+        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            await context.Response.WriteAsync("Hello World!");
-        });
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+
+            app.Run(async (context) =>
+            {
+                await context.Response.WriteAsync("Hello World!");
+            });
+        }
     }
-}
 ```
 
 Diese Startup-Klasse muss sich immer an folgende Regeln halten:
 
- - Sie muss immer öffentlich sein.
- - Sie muss die beiden öffentlichen Methoden `ConfigureServices` und `Configure` enthalten
+- Sie muss immer öffentlich sein.
+- Sie muss die beiden öffentlichen Methoden `ConfigureServices` und `Configure` enthalten
 
 Die `ConfigureServices`-Methode definiert die Dienste, die von Ihrer Anwendung verwendet werden.
 
@@ -116,13 +120,13 @@ Die `Configure`-Methode der vorgefertigten Vorlage wurde speziell für einige be
 
 Dieses einfache „Hello World“-Projekt kann nun ausgeführt werden, ohne das zusätzlicher Code hinzugefügt werden muss. Um die App auszuführen und in Ihrem Browser anzuzeigen, klicken Sie auf die Schaltfläche „Wiedergabe“ (Dreieck) in der Symbolleiste:
 
-![Ausführen der App](media/asp-net-core-image5.png)
+![Ausführen der App](media/asp-net-core-2019-run-debug.png)
 
 Visual Studio für Mac verwendet einen zufälligen Port, um Ihr Webprojekt zu starten. Um herauszufinden um welche Port es sich dabei handelt, öffnen Sie die Anwendungsausgabe, die sich unter **Ansicht > Pads** befindet. Dort sollten Sie eine Ausgabe wie die folgende sehen:
 
 ![Anwendungsausgabe mit lauschendem Port](media/asp-net-core-image6.png)
 
-Öffnen Sie den Browser Ihrer Wahl, und geben Sie `http://localhost:5000/` ein. Ersetzen Sie dabei `5000` durch die Visual Studio-Ausgabe in der Anwendungsausgabe. Der Text `Hello World!` sollte angezeigt werden:
+Sobald das Projekt ausgeführt wird, sollte Ihr Standardwebbrowser gestartet werden und eine Verbindung zu der URL herstellen, die in der Ausgabe der Anwendung aufgeführt ist. Als Alternative können Sie einen Browser Ihrer Wahl öffnen und `http://localhost:5000/` eingeben. Ersetzen Sie dabei `5000` durch den Port, den Visual Studio in der Anwendungsausgabe ausgegeben hat. Der Text `Hello World!` sollte angezeigt werden:
 
 ![Browser mit Text](media/asp-net-core-image7.png)
 
@@ -130,9 +134,9 @@ Visual Studio für Mac verwendet einen zufälligen Port, um Ihr Webprojekt zu st
 
 ASP.NET Core-Apps verwenden das Entwurfsmuster von Model-View-Controller (MVC), um eine logische Trennung zwischen den Verantwortlichkeiten der verschiedenen Teile der Anwendung zu gewährleisten. MVC besteht aus den folgenden Elementen:
 
-- **Model**: eine einfache Klasse, die die Daten darstellt
-- **View**: zeigt die Benutzeroberfläche der App an (wobei es sich häufig um die Modelldaten handelt)
-- **Controller**: eine Klasse, die Browseranforderungen verarbeitet und auf Benutzereingaben und -interaktionen reagiert
+- **Model**: Eine Klasse, die die Daten der App darstellt.
+- **Ansicht**: Zeigt die Benutzeroberfläche der App an (wobei es sich häufig um die Modelldaten handelt).
+- **Controller**: Eine Klasse, die Browseranforderungen verarbeitet und auf Benutzereingaben und -interaktionen reagiert.
 
 Weitere Informationen zum Verwenden von MVC finden Sie im Handbuch [Overview of ASP.NET Core MVC (Überblick über ASP.NET Core MVC)](/aspnet/core/mvc/overview).
 
@@ -218,16 +222,15 @@ Um einen Controller hinzuzufügen, führen Sie Folgendes durch:
 
     ![Ausführen der App im Browser mit Argumenten.](media/asp-net-core-image10.png)
 
-
 ## <a name="troubleshooting"></a>Problembehandlung
 
-Wenn Sie .NET Core manuell unter Mac OS 10.11 (El Capitan) installieren müssen, führen Sie Folgendes durch:
+Wenn Sie .NET Core manuell unter Mac OS 10.12 (Sierra) installieren müssen, führen Sie die folgenden Schritte aus:
 
 1. Bevor Sie mit der Installation von .NET Core beginnen, achten Sie darauf, dass Sie alle Betriebssystemupdates auf die aktuelle stabile Version durchgeführt haben. Dies können Sie überprüfen, indem Sie zur App Store-Anwendung navigieren und auf die Registerkarte Updates klicken.
 
 2. Folgen Sie den Schritten auf der [.NET Core-Website](https://www.microsoft.com/net/core#macos).
 
-Achten Sie darauf, dass Sie alle vier Schritte erfolgreich abschließen, um sicherzustellen, dass .NET Core ordnungsgemäß installiert wurde.
+Achten Sie darauf, dass Sie alle Schritte erfolgreich abschließen, um sicherzustellen, dass .NET Core ordnungsgemäß installiert wird.
 
 ## <a name="summary"></a>Zusammenfassung
 
@@ -236,3 +239,7 @@ Weiter Informationen zu weiteren Schritten finden Sie in den folgenden Handbüch
 - Dokumentation zu [ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1#build-web-ui-and-web-apis-using-aspnet-core-mvc)
 - [Creating Backend Services for Native Mobile Applications (Erstellen von Back-End-Diensten für native mobile Anwendungen)](/aspnet/core/mobile/native-mobile-backend), wo Sie erfahren, wie Sie einen REST-Dienst mit ASP.NET Core für eine Xamarin.Forms-App erstellen können.
 - [Praktische Übung zu ASP.NET Core](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started)
+
+## <a name="related-video"></a>Zugehörige Videos
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Build-Your-First-App/player]

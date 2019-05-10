@@ -1,14 +1,9 @@
 ---
 title: Anzeigen der Codestruktur | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.documentoutline.window
 - vs.objectbrowser
@@ -32,13 +27,13 @@ ms.assetid: e6064f58-5ad9-4f05-8c3f-12e994b6583f
 caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d110056488b7555bc7bbccc5cbad3205d9de7405
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1277370ca14044755988affc5ccf2bf1fb851a09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901644"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443206"
 ---
 # <a name="viewing-the-structure-of-code"></a>Anzeigen der Codestruktur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,14 +50,14 @@ Sie können die Objekte und Member in Visual Studio-Projekten sowie die Objekte 
   
  [Codedefinitionsfenster (C#, C++)](#BKMK_CodeDefinition)  
   
- Sie können auch **Projektmappen-Explorer** um die Typen und Member in Ihren Projekten zu durchsuchen, nach Symbolen suchen, Aufrufhierarchie einer Methode anzeigen, Symbolverweise und vieles mehr, ohne zwischen mehreren Toolfenster wechseln zu finden zuvor aufgeführt.  
+ Sie können auch den **Projektmappen-Explorer** verwenden, um die Typen und Member in Ihren Projekten zu durchsuchen, nach Symbolen, Symbolverweisen und weiteren Inhalten zu suchen und die Aufrufhierarchie einer Methode anzuzeigen, ohne zwischen mehreren zuvor aufgelisteten Toolfenstern wechseln zu müssen.  
   
  Wenn Sie Visual Studio Enterprise verwenden, können Sie zum Visualisieren der Struktur des Codes und seiner Abhängigkeiten in der gesamten Projektmappe entsprechende Code Maps verwenden und Detailinformationen zu Codekomponenten anzeigen, die Sie interessieren. Weitere Informationen finden Sie unter [Projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md).  
   
 > [!NOTE]
->  Die Visual Studio-Edition und die verwendeten Einstellungen können sich auf die Funktionen der IDE auswirken. Sie können sich daher von den in diesem Thema beschriebenen Funktionen unterscheiden.  
+> Die Visual Studio-Edition und die verwendeten Einstellungen können sich auf die Funktionen der IDE auswirken. Sie können sich daher von den in diesem Thema beschriebenen Funktionen unterscheiden.  
   
-##  <a name="BKMK_ClassView"></a> Klassenansicht (Visual Basic, C#, C++)  
+## <a name="BKMK_ClassView"></a> Klassenansicht (Visual Basic, C#, C++)  
  Die **Klassenansicht** wird als Teil des **Projektmappen-Explorers** sowie in einem separaten Fenster angezeigt. Das Fenster **Klassenansicht** zeigt die Elemente einer Anwendung an. Im oberen Bereich werden Namespaces, Typen, Schnittstellen, Enumerationen und Klassen angezeigt, während der untere Bereich die Member auflistet, die zum Typ gehören, der im oberen Bereich ausgewählt ist. Mithilfe dieses Fensters können Sie im Quellcode zu Memberdefinitionen wechseln (oder im **Objektkatalog**, wenn das Element außerhalb der Projektmappe definiert ist).  
   
  Sie müssen ein Projekt nicht kompilieren, um seine Elemente in der **Klassenansicht** anzuzeigen. Das Fenster wird aktualisiert, wenn Sie im Projekt Änderungen am Code vornehmen.  
@@ -115,7 +110,7 @@ Sie können die Objekte und Member in Visual Studio-Projekten sowie die Objekte 
 |**Gehe zu Verweis**|Zeigt einen Verweis auf den Typ oder Member im Quellcode an, falls verfügbar.|  
 |**Aufrufhierarchie anzeigen**|Zeigt die ausgewählte Methode im Fenster **Aufrufhierarchie** an.|  
   
-##  <a name="BKMK_CallHierarchy"></a> Aufrufhierarchie (Visual Basic, C#, C++)  
+## <a name="BKMK_CallHierarchy"></a> Aufrufhierarchie (Visual Basic, C#, C++)  
  Das Fenster **Aufrufhierarchie** zeigt an, wo eine bestimmte Methode (oder Eigenschaft oder ein Konstruktor) aufgerufen wird, und listet die von dieser Methode aufgerufenen Methoden auf. Sie können mehrere Ebenen des Aufrufdiagramms anzeigen, in dem die Aufrufer/Aufgerufenem-Beziehung zwischen den Methoden in einem angegebenen Bereich angezeigt wird.  
   
  Sie können das Fenster **Aufrufhierarchie** anzeigen, indem Sie eine Methode (oder Eigenschaft oder einen Konstruktor) und dann im Kontextmenü **Aufrufhierarchie anzeigen** auswählen. Die Anzeige sollte in etwa der folgenden Abbildung entsprechen.  
@@ -140,7 +135,7 @@ Fenster „Aufrufhierarchie“
 |**Kopieren**|Kopiert den ausgewählten Knoten (aber nicht dessen untergeordnete Knoten).|  
 |**Aktualisieren**|Aktualisiert die Informationen.|  
   
-##  <a name="BKMK_ObjectBrowser"></a> Objektkatalog  
+## <a name="BKMK_ObjectBrowser"></a> Objektkatalog  
  Der **Objektkatalog** zeigt Beschreibungen des Codes in Ihren Projekten an.  
   
  Sie können die Anzeige im **Objektkatalog** filtern. Mithilfe der Dropdownliste am oberen Rand des Fensters können Sie zwischen folgenden Optionen wählen:  
@@ -199,7 +194,7 @@ Fenster „Aufrufhierarchie“
 |**Gehe zu Verweis**|Zeigt einen Verweis auf den Typ oder Member im Quellcode an, falls verfügbar.|  
 |**Aufrufhierarchie anzeigen**|Zeigt die ausgewählte Methode im Fenster **Aufrufhierarchie** an.|  
   
-##  <a name="BKMK_CodeDefinition"></a> Codedefinitionsfenster (C#, C++)  
+## <a name="BKMK_CodeDefinition"></a> Codedefinitionsfenster (C#, C++)  
  Im Fenster **Codedefinition** wird die Definition eines ausgewählten Typs oder Members im aktiven Projekt angezeigt. Der Typ oder Member kann im Code-Editor oder in einem Codeansichtsfenster ausgewählt werden.  
   
  Obwohl dieses Fenster schreibgeschützt ist, können Sie darin Haltepunkte oder Lesezeichen festlegen. Wählen Sie im Kontextmenü die Option **Definition bearbeiten** aus, um die angezeigte Definition zu ändern. Daraufhin wird die Quelldatei im Code-Editor geöffnet und die Einfügemarke in die Zeile verschoben, in der die Definition beginnt.  
@@ -229,6 +224,3 @@ Fenster „Aufrufhierarchie“
   
 ## <a name="see-also"></a>Siehe auch  
  [Symbole in der Klassenansicht und im Objektbrowser](../ide/class-view-and-object-browser-icons.md)
-
-
-

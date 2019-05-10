@@ -1,14 +1,9 @@
 ---
 title: Befehl „Vorhandenes Element hinzufügen“ | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - project.addexistingitem
 helpviewer_keywords:
@@ -18,18 +13,17 @@ ms.assetid: 41f56131-d4c7-4f81-83b7-bdac713ea870
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c27c548ae4eff4f2087050060f5bcf51d8e86755
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8ad1ab33de1aa0d25f7beff0dac43ebedbf0f6b4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197131"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62539944"
 ---
 # <a name="add-existing-item-command"></a>Befehl "Vorhandenes Element hinzufügen"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Fügt der aktuellen Projektmappe eine vorhandene Datei hinzu und öffnet diese.  
   
 ## <a name="syntax"></a>Syntax  
@@ -52,7 +46,7 @@ File.AddExistingItem filename [/e:editorname]
 /e:"Source Code (text) Editor"  
 ```  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Bei der automatischen Vervollständigung wird während der Eingabe versucht, den richtigen Pfad und Dateinamen zu finden.  
   
 ## <a name="example"></a>Beispiel  
@@ -67,6 +61,3 @@ File.AddExistingItem filename [/e:editorname]
  [Befehlsfenster](../../ide/reference/command-window.md)   
  [Such-/Befehlsfeld](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

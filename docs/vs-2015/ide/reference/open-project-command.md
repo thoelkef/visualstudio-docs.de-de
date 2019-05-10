@@ -1,14 +1,9 @@
 ---
 title: Befehl „Projekt öffnen“ | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - file.openproject
 helpviewer_keywords:
@@ -19,18 +14,17 @@ ms.assetid: baa85f86-041b-49f4-9ced-0c397dc180e1
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b25ee0e6ba4dfa5c29d5a009087afb55509d0c08
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e2e945eb2faa492f576a0fd0a15fc0bd0e9b208e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263914"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652422"
 ---
 # <a name="open-project-command"></a>Befehl "Projekt öffnen"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Öffnet ein vorhandenes Projekt.  
   
 ## <a name="syntax"></a>Syntax  
@@ -45,7 +39,7 @@ File.OpenProject filename
   
  Die Syntax für das Argument `filename` erfordert, dass Pfade, die Leerzeichen enthalten, in Anführungszeichen gesetzt werden.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Bei der automatischen Vervollständigung wird während der Eingabe versucht, den richtigen Pfad und Dateinamen zu finden.  
   
  Dieser Befehl ist während des Debuggens nicht verfügbar.  
@@ -62,6 +56,3 @@ File.OpenProject filename
  [Befehlsfenster](../../ide/reference/command-window.md)   
  [Such-/Befehlsfeld](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

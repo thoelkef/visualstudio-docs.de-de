@@ -1,14 +1,9 @@
 ---
 title: SccAddFromScc-Funktion | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccAddFromScc
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b366c6c80dc52436743da0f69266105cc0ba5db8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ccf3a25bda14cf98fdba4a58b0032444badc4c4a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432493"
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc-Funktion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,9 +67,8 @@ SCCRTN SccAddFromScc (
  `lplpFileNames` ist eine `char ***` Zeiger. Das Quellcodeverwaltungs-Plug-in wird einen Zeiger auf ein Array von Zeigern auf den Dateinamen, und daher die Liste auf die übliche Weise für diese API übergeben.  
   
 > [!NOTE]
->  Anfängliche Versionen der API VSSCI hat keine Möglichkeit, das Zielprojekt für die hinzugefügten Dateien anzugeben bereitgestellt. Um die Semantik der entsprechend den `lplpFIleNames` Parameter wurden verbessert, um ein in/Out-Parameter und nicht als Output-Parameter zu erleichtern. Wenn nur eine einzelne Datei angegeben ist, d. h. der Wert verweist `lpnFiles` = 1, und klicken Sie dann auf das erste Element der `lplpFileNames` wird der Zielordner enthält. Diese neue Semantik, die IDE-Aufrufe verwenden die `SccSetOption` -Funktion mit den `nOption`Parametersatz zu `SCC_OPT_SHARESUBPROJ`. Wenn ein Quellcodeverwaltungs-Plug-in die Semantik nicht unterstützt, gibt es zurück `SCC_E_OPTNOTSUPPORTED`. Tun dies der Fall ist, deaktiviert die Verwendung von der **hinzufügen, aus der Quellcodeverwaltung** Feature. Wenn eine-Plug-in unterstützt die **hinzufügen, aus der Quellcodeverwaltung** Feature (`SCC_CAP_ADDFROMSCC`), müssen sie unterstützen die neue Semantik und zurückgeben `SCC_I_SHARESUBPROJOK`.  
+> Anfängliche Versionen der API VSSCI hat keine Möglichkeit, das Zielprojekt für die hinzugefügten Dateien anzugeben bereitgestellt. Um die Semantik der entsprechend den `lplpFIleNames` Parameter wurden verbessert, um ein in/Out-Parameter und nicht als Output-Parameter zu erleichtern. Wenn nur eine einzelne Datei angegeben ist, d. h. der Wert verweist `lpnFiles` = 1, und klicken Sie dann auf das erste Element der `lplpFileNames` wird der Zielordner enthält. Diese neue Semantik, die IDE-Aufrufe verwenden die `SccSetOption` -Funktion mit den `nOption`Parametersatz zu `SCC_OPT_SHARESUBPROJ`. Wenn ein Quellcodeverwaltungs-Plug-in die Semantik nicht unterstützt, gibt es zurück `SCC_E_OPTNOTSUPPORTED`. Tun dies der Fall ist, deaktiviert die Verwendung von der **hinzufügen, aus der Quellcodeverwaltung** Feature. Wenn eine-Plug-in unterstützt die **hinzufügen, aus der Quellcodeverwaltung** Feature (`SCC_CAP_ADDFROMSCC`), müssen sie unterstützen die neue Semantik und zurückgeben `SCC_I_SHARESUBPROJOK`.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Quellcodeverwaltungsfunktionen-Plug-in-API](../extensibility/source-control-plug-in-api-functions.md)   
  [SccSetOption](../extensibility/sccsetoption-function.md)
-

@@ -2,7 +2,6 @@
 title: Idebugdocumenthelper | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d4bcb64b7bbb1c61e7f031d872f7d1440fd17833
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 3b399f51fc042aa1ed297ab30a7bf2c9bc4befca
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54086631"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000990"
 ---
 # <a name="idebugdocumenthelperinit"></a>IDebugDocumentHelper::Init
 Die `Init` Methode initialisiert, ein Dokument Debughilfe mit einem Namen und die anfängliche Attribute.  
@@ -65,6 +64,6 @@ HRESULT Init(
  In diesem Dokument wird nicht angezeigt, in der Struktur bis `IDebugDocumentHelper::Attach` aufgerufen wird.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Idebugdocumenthelper](../../winscript/reference/idebugdocumenthelper-attach.md)   
+ [IDebugDocumentHelper::Attach](../../winscript/reference/idebugdocumenthelper-attach.md)   
  [IDebugDocumentHelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)   
  [TEXT_DOC_ATTR-Konstanten](../../winscript/reference/text-doc-attr-constants.md)

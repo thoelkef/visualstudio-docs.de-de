@@ -1,22 +1,43 @@
 ---
 title: Optionen, Text-Editor, Alle Sprachen, Scrollleisten
 ms.date: 10/25/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
-- VS.ToolsOptionsPages.Text_Editor.All_Languages.Scroll_Bars
+- VS.ToolsOptionsPages.Text_Editor.All_Languages.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.Basic.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.CSharp.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.C%2FC%2B%2B.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.CoffeeScript.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.CSS.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.Dockerfile.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.F%2523.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.HQL.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.HTML.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.HTMLX.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.JavaScript.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.TypeScript.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.JSON.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.LESS.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.Plain_Text.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.ResJSON.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.SCSS.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.SQL_Server_Tools.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.StreamAnalytics.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.T-SQL90.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.U-SQL.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.XAML.ScrollBars
+- VS.ToolsOptionsPages.Text_Editor.XML.ScrollBars
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bdff9d71055ff1357bff82d27fa8df5916e0a699
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: a753574e883872780446929f7c2349b0d726c71a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817583"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>Optionen, Text-Editor, Alle Sprachen, Scrollleisten
 Mit diesem Dialogfeld können Sie das Standardverhalten der Scrollleiste des Code-Editors ändern. Wählen Sie zum Anzeigen dieser Optionen unter **Tools** den Menüpunkt **Optionen** aus. Erweitern Sie innerhalb des Ordners **Text-Editor** den Unterordner **Alle Sprachen**, und wählen Sie dann **Scrollleisten** aus.
@@ -65,4 +86,4 @@ Wenn Sie im *Zuordnungsmodus* auf eine Position in der Scrollleiste klicken, spr
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Vorgehensweise: Anpassen der Scrollleiste](../how-to-track-your-code-by-customizing-the-scrollbar.md)
+- [Vorgehensweise: Anpassen der Bildlaufleiste](../how-to-track-your-code-by-customizing-the-scrollbar.md)

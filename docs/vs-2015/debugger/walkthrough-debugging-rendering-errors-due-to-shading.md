@@ -1,25 +1,20 @@
 ---
 title: 'Exemplarische Vorgehensweise: Debuggen von Renderingfehlern, die durch Schattierungen entstanden sind | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 01875b05-cc7b-4add-afba-f2b776f86974
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5d65c3d2525533e5881b4626941e43fb302ce2aa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b4c158c4ce6762b69f73a55915cc459f84cd7fff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733195"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067156"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Exemplarische Vorgehensweise: Debuggen von Renderingfehlern, die durch Schattierungen entstanden sind
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,11 +23,11 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie [!INCLUDE[vsprvs](../inc
   
  In dieser exemplarischen Vorgehensweise wird Folgendes veranschaulicht:  
   
--   Auswerten des Grafikprotokolldokuments, um die Pixel zu identifizieren, für die das Problem auftritt  
+- Auswerten des Grafikprotokolldokuments, um die Pixel zu identifizieren, für die das Problem auftritt  
   
--   Verwenden des Fensters **Grafikpixelverlauf** , um den Pixelstatus genauer zu untersuchen  
+- Verwenden des Fensters **Grafikpixelverlauf** , um den Pixelstatus genauer zu untersuchen  
   
--   Verwenden des **HLSL-Debuggers** , um den Pixel- und den Vertexshader zu überprüfen  
+- Verwenden des **HLSL-Debuggers** , um den Pixel- und den Vertexshader zu überprüfen  
   
 ## <a name="scenario"></a>Szenario  
  Eine falsche Farbgebung von Objekten tritt häufig auf, wenn ein Vertexshader einem Pixelshader falsche oder unvollständige Informationen übergibt.  
@@ -113,6 +108,3 @@ output.color = input.color;
  Nachdem Sie den Code korrigiert haben, erstellen Sie die App neu und führen diese erneut aus, um nun festzustellen, dass das Renderproblem behoben ist.  
   
  ![Das Objekt wird mit den richtigen Farben gerendert. ](../debugger/media/gfx-diag-demo-render-error-shader-resolution.png "Gfx_diag_demo_render_error_shader_resolution")
-
-
-

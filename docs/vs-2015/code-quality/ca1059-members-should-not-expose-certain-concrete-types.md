@@ -1,14 +1,9 @@
 ---
-title: 'CA1059: Member sollten bestimmte konkreten Typen nicht machen | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'CA1059: Member sollten bestimmte konkreten Typen nicht verfügbar | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1059
 - MembersShouldNotExposeCertainConcreteTypes
@@ -20,14 +15,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 894b4c22aaab2b0cce81053e6466b791a50b089a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a78125645dc6369811b4b9e1d7101b7bb4cbba76
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816884"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103822"
 ---
-# <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059: Member sollten bestimmte konkrete Typen nicht verfügbar machen
+# <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059: Member sollten bestimmte konkrete Typen nicht verfügbar machen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -40,7 +35,7 @@ ms.locfileid: "49816884"
 ## <a name="cause"></a>Ursache
  Extern sichtbaren Members eines bestimmten konkreten Typs ist, macht bestimmte konkreten Typen durch einen seiner Parameter oder Rückgabewert. Diese Regel meldet derzeit Offenlegung der folgenden konkrete Typen:
 
--   Ein abgeleiteter Typ von <xref:System.Xml.XmlNode?displayProperty=fullName>.
+- Ein abgeleiteter Typ von <xref:System.Xml.XmlNode?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Regelbeschreibung
  Ein konkreter Typ ist ein Typ, der eine vollständige Implementierung aufweist und deshalb instanziiert werden kann. Damit wird der Member universell verwendet, ersetzen Sie den konkreten Typ durch die vorgeschlagene Schnittstelle. Dadurch wird das Element akzeptiert jeden Typ, der die Schnittstelle implementiert oder verwendet werden, wenn ein Typ, der die Schnittstelle implementiert erwartet wird.
@@ -58,7 +53,4 @@ ms.locfileid: "49816884"
  Es ist sicher, um eine Meldung von dieser Regel zu unterdrücken, wenn die spezifische Funktionen durch den konkreten Typ erforderlich ist.
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1011: Basistypen als Parameter übergeben](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)
-
-
-
+ [CA1011: Betrachten Sie Basistypen als Parameter übergeben.](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)

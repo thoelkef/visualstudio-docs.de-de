@@ -1,19 +1,18 @@
 ---
 title: Bereitstellen einer lokalen Variable
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 42d3f7da59fc64e70ab453a6dd1f57d95871b684
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5564752fcecfe2d7a1b2d0bf7632a9cebe3d9353
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968682"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62540998"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Bereitstellen einer lokalen Variable in Visual Studio
 
@@ -47,11 +46,11 @@ Diese Codegenerierung gilt für:
       - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen.
    - **Maus**
       - Führen Sie einen Rechtsklick durch, und klicken Sie auf das Menü **Schnellaktionen und Refactorings**.
-      - Klicken Sie auf die Schaltfläche ![Glühbirnensymbol,](media/bulb-cs.png) das am linken Rand angezeigt wird, sofern der Textcursor bereits in der Zeile mit der roten Wellenlinie platziert wurde.
+      - Klicken Sie auf die Schaltfläche ![Schraubendrehersymbol](media/screwdriver.png) die am linken Rand angezeigt wird, sofern der Textcursor bereits in der Zeile mit dem hervorgehobenen Ausdruck platziert wurde.
 
    ![Vorschau der Aktion zum Bereitstellen eines lokalen Elements](media/local-preview-cs.png)
 
-3. Wählen Sie **Lokales Element für (alle Vorkommen von) „*Ausdruck*“ bereitstellen** im Dropdownmenü aus.
+3. Wählen Sie **Introduce local for (all occurrences) of „expression“** (Lokales Element für (alle Vorkommen von) „Ausdruck“ bereitstellen) im Dropdownmenü aus.
 
    > [!TIP]
    > Klicken Sie im unteren Bereich des Vorschaufensters auf den Link **Vorschau der Änderungen**, um vor einer Auswahl [alle Änderungen anzuzeigen](../../ide/preview-changes.md), die vorgenommen werden.

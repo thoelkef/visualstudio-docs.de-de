@@ -1,24 +1,19 @@
 ---
-title: 'Schnellstart: Testgesteuerte Entwicklung mit dem Test-Explorer | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Schnellstart: Testgesteuerte Entwicklung mit Test-Explorer | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a67f4f79688cb4cdbe482c90cd93b784349d748a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4b3c709c2d7a83e4b144232a491dabf205ea46f7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831691"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446194"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>Schnellstart: Testgesteuerte Entwicklung mit dem Test-Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,11 +22,11 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
   
  Der Test-Explorer löst die Komponententestfenster früherer Versionen von Visual Studio ab. Seine Vorteile:  
   
--   Sie können .NET-, nicht verwaltete und Datenbanktests sowie alle weiteren Arten von Tests über eine einzige Oberfläche ausführen.  
+- Sie können .NET-, nicht verwaltete und Datenbanktests sowie alle weiteren Arten von Tests über eine einzige Oberfläche ausführen.  
   
--   Sie können das Komponententestframework Ihrer Wahl verwenden, z.B. NUnit- oder MSTest-Frameworks.  
+- Sie können das Komponententestframework Ihrer Wahl verwenden, z.B. NUnit- oder MSTest-Frameworks.  
   
--   Sie können alle benötigten Informationen in einem Fenster anzeigen.  
+- Sie können alle benötigten Informationen in einem Fenster anzeigen.  
   
 ## <a name="using-test-explorer"></a>Verwenden des Test-Explorers  
  ![Komponententest-Explorer zeigt die Schaltfläche „Alles ausführen“ an](../test/media/unittestexplorer-beta.png "UnitTestExplorer(beta)")  
@@ -42,13 +37,13 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
   
     Erstellen Sie beispielsweise einen Test, der das MSTest-Framework verwendet:  
   
-   1.  Erstellen Sie ein Testprojekt.  
+   1. Erstellen Sie ein Testprojekt.  
   
         Erweitern Sie im Dialogfeld **Neues Projekt** den Eintrag **Visual Basic**, **Visual C#** oder **Visual C++**, und wählen Sie dann **Test**aus.  
   
         Wählen Sie **Komponententestprojekt**aus.  
   
-   2.  Schreiben Sie jeden Komponententest als Methode. Stellen Sie jeder Testmethode das `[TestMethod]` -Attribut als Präfix voran.  
+   2. Schreiben Sie jeden Komponententest als Methode. Stellen Sie jeder Testmethode das `[TestMethod]` -Attribut als Präfix voran.  
   
 2. Wenn einzelne Tests keine Abhängigkeiten haben, die verhindern, dass sie in beliebiger Reihenfolge ausgeführt werden können, sollten Sie die parallele Testausführung über die Umschaltfläche ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-small") auf der Symbolleiste aktivieren. Dadurch lässt sich die Zeit deutlich verkürzen, die zum Ausführen aller Tests erforderlich ist.  
   
@@ -58,22 +53,22 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
   
     Der Test-Explorer wird geöffnet und zeigt eine Zusammenfassung der Ergebnisse an.  
   
-   **So zeigen Sie eine vollständige Liste der Tests an:** Wählen Sie **Alle anzeigen** in einer beliebigen Kategorie aus.  
+   **So können Sie eine vollständige Liste der Tests anzeigen:** Klicken Sie in einer beliebigen Kategorie auf **Alle anzeigen**.  
   
-   **So zeigen Sie die Details eines Testergebnisses an:** Wählen Sie den Test im Test-Explorer aus, um Details wie Ausnahmemeldungen im Detailbereich anzuzeigen.  
+   **So können Sie Details zu Testergebnissen anzeigen:** Wählen Sie den Test im Test-Explorer aus, um Details wie Ausnahmemeldungen im Detailbereich anzuzeigen.  
   
-   **So navigieren Sie zum Testcode:** Doppelklicken Sie im Test-Explorer auf den Test, oder wählen Sie im Kontextmenü die Option **Test öffnen** aus.  
+   **So können Sie zum Code eines Tests navigieren:** Doppelklicken Sie im Test-Explorer auf den Test, oder wählen Sie im Kontextmenü die Option **Test öffnen** aus.  
   
-   **So debuggen Sie einen Test:** Öffnen Sie das Kontextmenü für einen oder mehrere Tests, und wählen Sie dann die Option **Ausgewählte Tests debuggen**aus.  
+   **So debuggen Sie einen Test:** Öffnen Sie das Kontextmenü für einen oder mehrere Tests, und wählen Sie dann die Option **Ausgewählte Tests debuggen** aus.  
   
 > [!IMPORTANT]
->  Die Ergebnisse, die angezeigt werden, gelten für den jeweils zuletzt ausgeführten Testlauf. Die farbige Ergebnisleiste zeigt nur die Ergebnisse von Tests an, die ausgeführt wurden. Wenn Sie z. B. mehrere Tests ausführen, davon einige fehlschlagen, und Sie dann nur die erfolgreichen Tests ausführen, ist die Ergebnisleiste ganz grün.  
+> Die Ergebnisse, die angezeigt werden, gelten für den jeweils zuletzt ausgeführten Testlauf. Die farbige Ergebnisleiste zeigt nur die Ergebnisse von Tests an, die ausgeführt wurden. Wenn Sie z. B. mehrere Tests ausführen, davon einige fehlschlagen, und Sie dann nur die erfolgreichen Tests ausführen, ist die Ergebnisleiste ganz grün.  
   
 > [!NOTE]
->  Wenn kein Test angezeigt wird, überprüfen Sie, ob Sie einen Adapter installiert haben, um Test-Explorer mit dem Testframework, das Sie verwenden, zu verbinden. Weitere Informationen finden Sie unter [Verwenden unterschiedlicher Testframeworks mit Test-Explorer](#frameworks).  
+> Wenn kein Test angezeigt wird, überprüfen Sie, ob Sie einen Adapter installiert haben, um Test-Explorer mit dem Testframework, das Sie verwenden, zu verbinden. Weitere Informationen finden Sie unter [verwenden ein anderes Testframework](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
   
-##  <a name="walkthrough"></a> Exemplarische Vorgehensweise: Verwenden von Komponententests zur Entwicklung einer Methode  
- Diese exemplarische Vorgehensweise veranschaulicht, wie eine getestete Methode in C# mithilfe des Microsoft-Komponententest-Frameworks entwickelt wird. Sie können es problemlos für andere Sprachen und zur Verwendung anderer Testframeworks wie NUnit anpassen. Weitere Informationen finden Sie unter [Verwenden unterschiedlicher Testframeworks](#frameworks).  
+## <a name="walkthrough"></a> Exemplarische Vorgehensweise: Verwenden von Komponententests zur Entwicklung einer Methode  
+ Diese exemplarische Vorgehensweise veranschaulicht, wie eine getestete Methode in C# mithilfe des Microsoft-Komponententest-Frameworks entwickelt wird. Sie können es problemlos für andere Sprachen und zur Verwendung anderer Testframeworks wie NUnit anpassen. Weitere Informationen finden Sie unter [Usa anderes Testframework](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
   
 #### <a name="creating-the-test-and-method"></a>Erstellen von Test und Methode  
   
@@ -81,7 +76,7 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
   
 2. Erstellen Sie ein Testprojekt.  
   
-   -   Wählen Sie im Dialogfeld **Neues Projekt** die Optionen **Visual C#**, **Test** und anschließend **Komponententestprojekt**aus.  
+   - Wählen Sie im Dialogfeld **Neues Projekt** die Optionen **Visual C#**, **Test** und anschließend **Komponententestprojekt**aus.  
   
         ![Neue Code- und Testprojekte](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")  
   
@@ -107,15 +102,15 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
   
 4. Generieren Sie die Methode von dem Test.  
   
-   1.  Platzieren Sie den Cursor auf `Rooter`, und wählen Sie im Kontextmenü die Optionen **Generieren**, **Neuer Typ**aus.  
+   1. Platzieren Sie den Cursor auf `Rooter`, und wählen Sie im Kontextmenü die Optionen **Generieren**, **Neuer Typ**aus.  
   
-   2.  Legen Sie im Dialogfeld **Neuen Typ generieren** unter **Projekt** das Klassenbibliotheksprojekt fest. In diesem Beispiel ist dies `MyMath`.  
+   2. Legen Sie im Dialogfeld **Neuen Typ generieren** unter **Projekt** das Klassenbibliotheksprojekt fest. In diesem Beispiel ist dies `MyMath`.  
   
-   3.  Platzieren Sie den Cursor auf `SquareRoot`, und wählen Sie im Kontextmenü die Optionen **Generieren**, **Methodenstub**aus.  
+   3. Platzieren Sie den Cursor auf `SquareRoot`, und wählen Sie im Kontextmenü die Optionen **Generieren**, **Methodenstub**aus.  
   
 5. Führen Sie den Komponententest aus.  
   
-   1.  Wählen Sie im Menü **Test** die Optionen **Komponententests ausführen**, **Alle Tests**aus.  
+   1. Wählen Sie im Menü **Test** die Optionen **Komponententests ausführen**, **Alle Tests**aus.  
   
         Die Projektmappe wird erstellt und ausgeführt.  
   
@@ -135,7 +130,7 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
   
 #### <a name="after-every-change-make-all-the-tests-pass"></a>Sorgen Sie dafür, dass der Test nach jeder Änderung erfolgreich verläuft.  
   
-1.  Verbessern Sie in `MyMath\Rooter.cs`den Code von `SquareRoot`:  
+1. Verbessern Sie in `MyMath\Rooter.cs`den Code von `SquareRoot`:  
   
     ```csharp  
     public double SquareRoot(double input)  
@@ -144,7 +139,7 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
      }  
     ```  
   
-2.  Wählen Sie im Test-Explorer **Alle ausführen**aus.  
+2. Wählen Sie im Test-Explorer **Alle ausführen**aus.  
   
      Der Code wird erstellt, und der Test wird ausgeführt.  
   
@@ -154,10 +149,10 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
   
 #### <a name="add-tests-to-extend-the-range-of-inputs"></a>Fügen Sie Tests hinzu, um den Eingabebereich zu erweitern  
   
-1.  Um sich sicherer sein zu können, dass Ihr Code in allen Fällen funktioniert, fügen Sie Tests hinzu, die einen größeren Bereich an Eingabewerten testen.  
+1. Um sich sicherer sein zu können, dass Ihr Code in allen Fällen funktioniert, fügen Sie Tests hinzu, die einen größeren Bereich an Eingabewerten testen.  
   
     > [!TIP]
-    >  Vermeiden Sie, vorhandene erfolgreiche Tests zu ändern. Fügen Sie stattdessen lieber neue Tests hinzu. Ändern Sie vorhandene Tests nur, wenn sich die Benutzeranforderungen ändern. Dieses Vorgehen hilft sicherzustellen, dass durch die Erweiterung des Codes keine vorhandene Funktionalität verloren geht.  
+    > Vermeiden Sie, vorhandene erfolgreiche Tests zu ändern. Fügen Sie stattdessen lieber neue Tests hinzu. Ändern Sie vorhandene Tests nur, wenn sich die Benutzeranforderungen ändern. Dieses Vorgehen hilft sicherzustellen, dass durch die Erweiterung des Codes keine vorhandene Funktionalität verloren geht.  
   
      Fügen Sie in der Testklasse den folgenden Test hinzu, der einen Bereich von Eingabewerten testet:  
   
@@ -185,13 +180,13 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
     }  
     ```  
   
-2.  Wählen Sie im Test-Explorer **Alle ausführen**aus.  
+2. Wählen Sie im Test-Explorer **Alle ausführen**aus.  
   
      Der neue Test schlägt fehl, obwohl der erste Test weiterhin erfolgreich verläuft.  
   
      Um die Fehlerursache herauszufinden, wählen Sie den fehlgeschlagenen Test aus. Wählen Sie dann im unteren Teil des Test-Explorers das oberste Element der **Stapelüberwachung**aus.  
   
-3.  Überprüfen Sie die zu testende Methode, um zu sehen, was falsch sein könnte. Schreiben Sie den Code der `MyMath.Rooter` -Klasse neu:  
+3. Überprüfen Sie die zu testende Methode, um zu sehen, was falsch sein könnte. Schreiben Sie den Code der `MyMath.Rooter` -Klasse neu:  
   
     ```  
     public double SquareRoot(double input)  
@@ -207,13 +202,13 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
     }  
     ```  
   
-4.  Wählen Sie im Test-Explorer **Alle ausführen**aus.  
+4. Wählen Sie im Test-Explorer **Alle ausführen**aus.  
   
      Beide Tests sind nun erfolgreich.  
   
 #### <a name="add-tests-for-exceptional-cases"></a>Hinzufügen von Tests für Sonderfälle  
   
-1.  Fügen Sie einen Test für negative Eingaben hinzu:  
+1. Fügen Sie einen Test für negative Eingaben hinzu:  
   
     ```csharp  
     [TestMethod]  
@@ -232,15 +227,15 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
      }  
     ```  
   
-2.  Wählen Sie im Test-Explorer **Alle ausführen**aus.  
+2. Wählen Sie im Test-Explorer **Alle ausführen**aus.  
   
      Die zu testende Methode bildet eine Schleife und muss manuell abgebrochen werden.  
   
-3.  Wählen Sie **Abbrechen**aus.  
+3. Wählen Sie **Abbrechen**aus.  
   
      Der Test wird nach 10 Sekunden beendet.  
   
-4.  Beheben Sie den Code der Methode:  
+4. Beheben Sie den Code der Methode:  
   
     ```csharp  
   
@@ -253,16 +248,16 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
     ...  
     ```  
   
-5.  Wählen Sie im Test-Explorer **Alle ausführen**aus.  
+5. Wählen Sie im Test-Explorer **Alle ausführen**aus.  
   
      Alle Tests sind erfolgreich.  
   
 #### <a name="refactor-without-changing-tests"></a>Den Code umgestalten, ohne Tests zu ändern  
   
-1.  Vereinfachen Sie den Code, ohne jedoch die Tests zu ändern.  
+1. Vereinfachen Sie den Code, ohne jedoch die Tests zu ändern.  
   
     > [!TIP]
-    >  Eine *Umgestaltung* ist eine Änderung, die vorgenommen wird, damit der Code besser funktioniert oder verständlicher wird. Eine Umgestaltung sieht nicht vor, das Verhalten des Codes zu ändern. Deshalb werden die Tests nicht geändert.  
+    > Eine *Umgestaltung* ist eine Änderung, die vorgenommen wird, damit der Code besser funktioniert oder verständlicher wird. Eine Umgestaltung sieht nicht vor, das Verhalten des Codes zu ändern. Deshalb werden die Tests nicht geändert.  
     >   
     >  Es wird empfohlen, die Schritte der Umgestaltung separat von den Schritten auszuführen, die die Funktionalität erweitern. Wenn Sie die Tests nicht ändern, können Sie sichergehen, dass während der Umgestaltung nicht versehentlich Fehler eingebaut wurden.  
   
@@ -288,11 +283,8 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
     }  
     ```  
   
-2.  Wählen Sie **Alle ausführen**aus.  
+2. Wählen Sie **Alle ausführen**aus.  
   
      Alle Tests sind weiterhin erfolgreich.  
   
      ![Komponententest-Explorer zeigt 3 bestandene Tests an](../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Erweiterbarkeits-API für Dumpdateizusammenfassung | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,26 +13,23 @@ ms.assetid: bf008cdc-03f8-496b-868d-4c2644f1d7ee
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d1d0f6bef5ebadaa01dbf451954cb8e9cabeb806
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e2986e1d529af8fad8f5d4ee49f3df69dcda7a8f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726508"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58962032"
 ---
 # <a name="dump-file-summary-extensibility-api"></a>Erweiterbarkeits-API für Dumpdateizusammenfassung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Mithilfe der Erweiterbarkeits-APIs in diesem Abschnitt an, Sie können erweitern die. EXE-Projektsystem und die **Dumpzusammenfassung** Seite für die Verwendung mit Ihren eigenen benutzerdefinierten Debug-Engine.  
+Mithilfe der Erweiterbarkeits-APIs in diesem Abschnitt können Sie das EXE-Projektsystem und die Seite **Dumpzusammenfassung** für die Verwendung mit Ihrer eigenen benutzerdefinierten Debug-Engine erweitern.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- Die APIs zum Erweitern der **Dumpzusammenfassung** Seite und die. EXE-Projektsystem stehen in den folgenden Namespace zur Verfügung:  
+ Die APIs für die Erweiterung der Seite **Dumpzusammenfassung** und das EXE-Projektsystem befinden sich im folgenden Namespace:  
   
  <xref:Microsoft.VisualStudio.Debugger.VsDebugPresentationExtension>  
   
 ## <a name="see-also"></a>Siehe auch  
  [Speichern von Dumpdateien](../debugger/using-dump-files.md)
-
-
-

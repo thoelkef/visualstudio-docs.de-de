@@ -1,25 +1,20 @@
 ---
 title: Shutdown | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: a1e37500-4ad1-4670-9737-3d9a20536386
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9b4ed8bc95f3d842f12a5bd0002456f71875fdb7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fbbbd27cfe7d720349592050419f5c73d1843c70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729210"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115405"
 ---
 # <a name="shutdown"></a>Shutdown
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,14 +32,11 @@ VSPerfCmd.exe /Shutdown[:Timeout]
 ```  
   
 #### <a name="parameters"></a>Parameter  
- `Timeout`  
- -   Optional. Die Option wird, wenn angegeben, nach der angegebenen Zeit in Sekunden zurückgegeben, ohne dass der Profiler deaktiviert oder die Profilerstellungsdatendatei geschlossen wird.  
+`Timeout`  
+- Optional. Die Option wird, wenn angegeben, nach der angegebenen Zeit in Sekunden zurückgegeben, ohne dass der Profiler deaktiviert oder die Profilerstellungsdatendatei geschlossen wird.  
   
 ## <a name="see-also"></a>Siehe auch  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profilerstellung für eigenständige Anwendungen](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Erstellen von Dienstprofilen](../profiling/command-line-profiling-of-services.md)
-
-
-

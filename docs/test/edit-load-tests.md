@@ -8,14 +8,13 @@ helpviewer_keywords:
 ms.assetid: ba16ed02-137e-40bf-a4cb-45d87d922d37
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: a060d6fd038d3dfaf0c869aba2c660efba4c9ecd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 130f7296985aa5c5e6115cd3e61b00efd90f25c7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53933203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62784041"
 ---
 # <a name="edit-load-tests"></a>Bearbeitung von Auslastungstests
 
@@ -33,7 +32,7 @@ Testprojekte für Webleistung und Auslastung sind nur in der Enterprise Edition 
 
 ## <a name="edit-load-test-scenario-settings"></a>Bearbeiten von Auslastungstestszenario-Einstellungen
 
-Mit einem Szenario wird festgelegt, wie eine Gruppe von Benutzern mit einer Serveranwendung interagiert. Ein Szenario besteht aus einem Auslastungsmuster, einem Testmischungsmodell, einer Testmischung, einem Browsermix und einer Netzwerkmischung. Ein Auslastungstest kann mehr als ein Szenario besitzen, und ein einzelnes Szenario kann Webleistungs- und Komponententests umfassen. Durch Gruppieren ähnlicher Einstellungen können Sie in einem Szenario ähnliche Tests gruppieren und zusammen ausführen.
+Mit einem Szenario wird festgelegt, wie eine Gruppe von Benutzern mit einer Serveranwendung interagiert. Ein Szenario besteht aus einem Auslastungsmuster, einem Testmischungsmodell, einer Testmischung, einer Browsermischung und einer Netzwerkmischung. Ein Auslastungstest kann mehr als ein Szenario besitzen, und ein einzelnes Szenario kann Webleistungs- und Komponententests umfassen. Durch Gruppieren ähnlicher Einstellungen können Sie in einem Szenario ähnliche Tests gruppieren und zusammen ausführen.
 
 Weitere Informationen finden Sie unter [Bearbeiten von Auslastungstestszenarios](../test/edit-load-test-scenarios.md) und [Laden von Testszenarioeigenschaften](../test/load-test-scenario-properties.md).
 

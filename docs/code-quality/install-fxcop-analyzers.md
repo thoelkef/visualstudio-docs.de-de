@@ -1,21 +1,20 @@
 ---
 title: Installieren von FxCop-Analysetools
 ms.date: 08/03/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - fxcop analyzers
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: be213d25ca406a8532f00ad88b006c36d369e1a9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 920e74b547bba97a742b68ceb057a0719d6ef700
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893780"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459157"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Installieren von FxCop-Analysen in Visual Studio
 
@@ -44,14 +43,17 @@ Verwenden Sie die folgenden Richtlinien, um zu bestimmen, welche Version des Pak
 
 | Visual Studio-Version | FxCop-Analyse-Paketversion |
 | - | - |
-| Visual Studio 2017 Version 15.5 und höher | 2.6.2, z. B. https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2 |
-| Visual Studio 2017 Version 15.3, Version 15.4 | 2.3.0-Beta1, z. B. https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1 |
-| Visual Studio 2017 Version 15.0 an 15.2 | 2.0.0-Beta2, z. B. https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.0.0-beta2 |
-| Visual Studio 2015 Update 2 und 3 | Version 1.2.0-beta2, z. B. https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.2.0-beta2 |
-| Visual Studio 2015 Update 1 | Version 1.1.0, z. B. https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.1. |
-| Visual Studio 2015 RTW | Version 1.0.1, z. B. https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.0.1 |
+| Visual Studio 2017 Version 15,8 und höher | [2.9.2](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.2) |
+| Visual Studio 2017 Version 15.5 zu 15.7 | [2.6.3](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.3) |
+| Visual Studio 2017 Version 15.3, Version 15.4 | [2.3.0-beta1](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1) |
+| Visual Studio 2017 Version 15.0 an 15.2 | [2.0.0-beta2](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.0.0-beta2) |
+| Visual Studio 2015 Update 2 und 3 | [1.2.0-beta2](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.2.0-beta2) |
+| Visual Studio 2015 Update 1 | [1.1.0](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.1.0) |
+| Visual Studio 2015 RTW | [1.0.1](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.0.1) |
 
 ## <a name="to-install-fxcop-analyzers-as-a-vsix"></a>Zum Installieren von FxCop-Analyzer als einer VSIX-Datei
+
+::: moniker range="vs-2017"
 
 Sie können auf Visual Studio 2017 Version 15.5 und höher installieren die [Microsoft Code Analysis 2017](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017) -Erweiterung, die alle die FxCop-Analysetools für verwaltete Projekte enthält.
 
@@ -62,29 +64,64 @@ Sie können auf Visual Studio 2017 Version 15.5 und höher installieren die [Mic
    > [!NOTE]
    > Laden Sie alternativ die Erweiterung direkt aus [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017).
 
-1. Erweitern Sie **Online** im linken Bereich, und wählen Sie dann **Visual Studio Marketplace**.
+2. Erweitern Sie **Online** im linken Bereich, und wählen Sie dann **Visual Studio Marketplace**.
 
-1. Geben Sie in das Suchfeld "Codeanalyse" aus, und suchen Sie nach der **Microsoft Code Analysis 2017** Erweiterung.
+3. Geben Sie in das Suchfeld "Codeanalyse" aus, und suchen Sie nach der **Microsoft Code Analysis 2017** Erweiterung.
 
-   ![Microsoft Code Analysis-Erweiterung](media/extensions-and-updates-code-analysis.png)
+   ![Microsoft Code Analysis-2017-Erweiterung](media/extensions-and-updates-code-analysis.png)
 
-1. Wählen Sie **herunterladen**.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Die [Microsoft Code Analysis 2019](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2019) Erweiterung enthält alle von der FxCop-Analysen für verwalteten Projekten. Diese Erweiterung zu installieren:
+
+1. Wählen Sie in Visual Studio **Erweiterungen** > **Verwalten von Erweiterungen**.
+
+   Die **Verwalten von Erweiterungen** Dialogfeld wird geöffnet.
+
+   > [!NOTE]
+   > Laden Sie alternativ die Erweiterung direkt aus [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2019).
+
+2. Erweitern Sie **Online** im linken Bereich, und wählen Sie dann **Visual Studio Marketplace**.
+
+3. Geben Sie in das Suchfeld "Codeanalyse" aus, und suchen Sie nach der **Microsoft Code Analysis 2019** Erweiterung.
+
+   ![Microsoft Code Analysis 2019-Erweiterung](media/manage-extensions-code-analysis.png)
+
+::: moniker-end
+
+4. Wählen Sie **herunterladen**.
 
    Die Erweiterung wird heruntergeladen.
 
-1. Wählen Sie **OK** , um das Dialogfeld schließen, und schließen Sie alle Instanzen von Visual Studio zum Starten der **VSIX-Installationsprogramm**.
+5. Wählen Sie **OK** , um das Dialogfeld schließen, und schließen Sie alle Instanzen von Visual Studio zum Starten der **VSIX-Installationsprogramm**.
 
    Die **VSIX-Installationsprogramm** Dialogfeld wird geöffnet.
 
+   ::: moniker range="vs-2017"
+
    ![VSIX-Installationsprogramm für die Microsoft-Codeanalyse](media/vsix-installer-code-analysis.png)
 
-1. Wählen Sie **ändern** um die Installation zu starten.
+   ::: moniker-end
 
-1. Nach ein oder zwei Minuten ist die Installation abgeschlossen werden. Wählen Sie **schließen**.
+6. Wählen Sie **ändern** um die Installation zu starten.
 
-1. Öffnen Sie Visual Studio erneut.
+   Nach ein oder zwei Minuten ist die Installation abgeschlossen werden.
+
+7. Wählen Sie **schließen**, öffnen Sie Visual Studio erneut.
+
+::: moniker range="vs-2017"
 
 Sollten Sie überprüfen, ob die Erweiterung installiert, wählen ist **Tools** > **Erweiterungen und Updates**. In der **Erweiterungen und Updates** wählen Sie im Dialogfeld die **installiert** Kategorie auf der linken Seite, und klicken Sie dann für die Erweiterung anhand des Namens suchen.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Sollten Sie überprüfen, ob die Erweiterung installiert, wählen ist **Erweiterungen** > **Verwalten von Erweiterungen**. In der **Verwalten von Erweiterungen** wählen Sie im Dialogfeld die **installiert** Kategorie auf der linken Seite, und suchen Sie nach dem Namen für die Erweiterung.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Siehe auch
 

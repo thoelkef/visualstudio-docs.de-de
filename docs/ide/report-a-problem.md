@@ -2,20 +2,19 @@
 title: Problem melden
 description: Dieser Artikel bietet eine Übersicht über das Tool „Problem melden“ und beinhaltet Problemstatus und Definitionen.
 ms.date: 11/15/2018
-ms.prod: visual-studio-dev15
 ms.custom: seodec18
 ms.topic: conceptual
 author: seaniyer
 ms.author: seiyer
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06f7f3cc2d39a28052a0f34eed8ab36d224d4b8e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 23ed63846eb11fd8eba95219aecaae3210e161fd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934358"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62980144"
 ---
 # <a name="overview-report-a-problem"></a>Übersicht: Melden eines Problems
 
@@ -53,7 +52,7 @@ Nachdem Sie ein Problem gemeldet haben, wird durch einen Status angegeben, wo si
 
 ![Status „Weitere Informationen erforderlich“ für Problembericht in Entwicklercommunity](../ide/media/ProblemStates/NeedMoreInfo.jpg)
 
-**Weitere Informationen erforderlich** gibt an, dass wir weitere Diagnoseinformationen von Ihnen benötigen, um die Untersuchung fortzusetzen.  Weitere Informationen zum Beantworten dieser Anforderungen finden Sie im Abschnitt „Wann sind weitere Informationen erforderlich? (Weitere Informationen erforderlich)“ des Artikels [Melden eines Problems mit Visual Studio 2017](./how-to-report-a-problem-with-visual-studio-2017.md#when-further-information-is-needed-need-more-info).
+**Weitere Informationen erforderlich** gibt an, dass wir weitere Diagnoseinformationen von Ihnen benötigen, um die Untersuchung fortzusetzen.  Weitere Informationen zum Beantworten dieser Anforderungen finden Sie im Abschnitt „Wann sind weitere Informationen erforderlich? (Weitere Informationen erforderlich)“ des Artikels [Melden eines Problems mit Visual Studio 2017](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed-need-more-info).
 
 - - -
 
@@ -63,7 +62,7 @@ Nachdem Sie ein Problem gemeldet haben, wird durch einen Status angegeben, wo si
 
 - - -
 
-![Status „Geschlossen (behoben)“ für Problembericht in Entwicklercommunity](../ide/media/ProblemStates/ClosedFixed.jpg) 
+![Status „Geschlossen (behoben)“ für Problembericht in Entwicklercommunity](../ide/media/ProblemStates/ClosedFixed.jpg)
 
 **Geschlossen (behoben)** gibt an, dass wir eine Lösung für das Problem veröffentlicht haben. Das Problem wurde nun mit der Markierung „fixed in:“ (behoben in:) unter Angabe des Releases versehen.
 
@@ -111,7 +110,7 @@ Nachdem Sie ein Problem gemeldet haben, wird durch einen Status angegeben, wo si
 
 Es wird empfohlen, dass Sie die Suchfunktion verwenden, um sicherzustellen, dass Ihr Problem nicht bereits gemeldet wurde. Wenn Sie einen vorhandenen Eintrag finden, der zu Ihrem Problem passt, dann folgen Sie diesem Problemticket, und stimmen Sie dafür.
 
- Stellen Sie alle verfügbaren Informationen bereit, damit unsere Teams Ihre Erfahrung reproduzieren können.  Zu diesen Informationen zählen erforderliche Reproduktionsschritte, Codefragmente, Screenshots, Reproduktionsdatensätze, Protokolldateien und andere Artefakte.  Weitere Informationen finden Sie unter [Melden eines Problems mit Visual Studio 2017](./how-to-report-a-problem-with-visual-studio-2017.md).
+ Stellen Sie alle verfügbaren Informationen bereit, damit unsere Teams Ihre Erfahrung reproduzieren können.  Zu diesen Informationen zählen erforderliche Reproduktionsschritte, Codefragmente, Screenshots, Reproduktionsdatensätze, Protokolldateien und andere Artefakte.  Weitere Informationen finden Sie unter [Melden eines Problems mit Visual Studio 2017](./how-to-report-a-problem-with-visual-studio.md).
 
 ### <a name="how-is-my-feedback-prioritized"></a>Wie wird mein Feedback priorisiert?
 

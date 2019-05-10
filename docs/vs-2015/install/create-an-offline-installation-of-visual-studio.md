@@ -1,13 +1,9 @@
 ---
 title: Erstellen einer Offlineinstallation | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-install
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - offline installation
 - offline install
@@ -16,62 +12,60 @@ ms.assetid: 85d65709-42be-449f-9663-914bf1045089
 caps.latest.revision: 22
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: 78a737c953446773c8788875d1924ce21f64f599
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 197ae2a168f7f14f7d0ea3d9b82b5943c1af82f4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964704"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077939"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Erstellen einer Offlineinstallation von Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Dokumentation für Visual Studio 2017 finden Sie unter [installieren Sie Visual Studio 2017 mit niedriger Bandbreite oder-unzuverlässigen netzwerkumgebungen](https://docs.microsoft.com/visualstudio/install/install-vs-inconsistent-quality-network), oder [Erstellen einer Netzwerkinstallation von Visual Studio 2017](https://docs.microsoft.com/visualstudio/install/create-a-network-installation-of-visual-studio) und [Besondere Überlegungen für die Installation von Visual Studio 2017 in einer offlineumgebung](https://docs.microsoft.com/visualstudio/install/install-visual-studio-in-offline-environment).
+Die neueste Dokumentation zu Visual Studio finden Sie unter [Erstellen einer Offlineinstallation von Visual Studio](/visualstudio/install/create-an-offline-installation-of-visual-studio) oder [Erstellen einer Netzwerkinstallation von Visual Studio](/visualstudio/install/create-a-network-installation-of-visual-studio).
 
-Diese Seite beschreibt, wie Sie Visual Studio 2015 installieren, wenn Sie nicht mit dem Internet verbunden sind. Allerdings müssen zur Durchführung einer "getrennten" Installations können Sie zuerst erstellen ein Layout für die offline-Installation mithilfe eines virtuellen Computers, das mit dem Internet verbunden ist. Und so gehen Sie dabei vor.
+Diese Seite beschreibt, wie Sie Visual Studio 2015 installieren, wenn Sie nicht mit dem Internet verbunden sind. Zum Durchführen einer „getrennten“ Installation müssen Sie aber zuerst ein Layout für die Offlineinstallation mithilfe eines Computers erstellen, der mit dem Internet verbunden ist. Und so gehen Sie dabei vor.
 
 > [!IMPORTANT]
->  Wenn Ihr Computer im Offlinemodus Windows 7 SP1 oder Windows Server 2008 R2 ausgeführt wird, finden Sie unter den speziellen Anweisungen in der [Problembehandlung bei einer offline-Installation](#BKMK_tshoot) Abschnitt dieses Themas.  Sie müssen diese Anweisungen befolgen *vor* Sie Visual Studio 2015 installieren.
+> Wenn auf Ihrem Offlinecomputer Windows 7 SP1 oder Windows Server 2008 R2 ausgeführt wird, finden Sie spezielle Anweisungen dazu im Abschnitt [Problembehandlung bei einer Offlineinstallation](#BKMK_tshoot) in diesem Thema.  Sie müssen diesen Anweisungen folgen, *bevor* Sie Visual Studio 2015 installieren.
 
-##  <a name="BKMK_Offline"></a> Durch das Erstellen einer offline-Installations installieren
+## <a name="BKMK_Offline"></a> Installieren durch Erstellen einer Offlineinstallation
 
-#### <a name="to-create-an-offline-installation-layout"></a>Erstellen Sie ein Layout für die offline-installation
+#### <a name="to-create-an-offline-installation-layout"></a>So erstellen Sie ein Layout für die Offlineinstallation
 
-1.  Wählen Sie die Edition von Visual Studio, die Sie installieren möchten an der [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20Enterprise%202015) Downloadseite.
+1. Wählen Sie die Edition von Visual Studio aus, die Sie von der Downloadseite [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20Enterprise%202015) installieren möchten.
 
-2.  Nachdem Sie das Installationsprogramm an einem Speicherort im Dateisystem heruntergeladen haben, führen Sie "\<Name der ausführbaren Datei >/Layout".
+2. Nachdem Sie das Installationsprogramm an einen Speicherort in Ihrem Dateisystem heruntergeladen haben, führen Sie „\<Name der ausführbaren Datei>/layout“ aus.
 
      Führen Sie zum Beispiel `vs_enterprise.exe /layout D:\VisualStudio2015` aus.
 
-     Mithilfe der `/layout` wechseln, Sie können fast aller Installationspakete, nicht nur diejenigen, die für den Download-Computer gelten. Dieser Ansatz bietet Ihnen die Dateien, die dieses Installationsprogramm überall ausgeführt werden sollen, und es kann hilfreich sein, wenn Sie möchten, um Komponenten zu installieren, die ursprünglich nicht installiert wurden.
+     Mit dem `/layout`-Switch können Sie fast alle Installationspakete herunterladen und nicht nur diejenigen, die für den Downloadcomputer vorgesehen sind. Mit diesem Ansatz erhalten Sie die Dateien, die Sie benötigen, um dieses Installationsprogramm überall ausführen. Darüber hinaus sind sie möglicherweise hilfreich, wenn Sie Komponenten installieren möchten, die ursprünglich nicht installiert wurden.
 
-3.  Nach dem Ausführen dieses Befehls wird ein Dialogfeld angezeigt, mit dem Sie zum Ändern des Ordners, in denen das Layout der offline-Installation gespeichert werden sollen.   Klicken Sie anschließend die **herunterladen** Schaltfläche.
+3. Nachdem Sie diesen Befehl ausgeführt haben, wird ein Dialogfeld angezeigt, in dem Sie den Ordner ändern können, in dem das Layout für die Offlineinstallation gespeichert werden soll.   Klicken Sie anschließend auf die Schaltfläche **Herunterladen**.
 
-     Wenn der Paketdownload erfolgreich durchgeführt wurde, sollte eine Nachricht angezeigt **Setup wurde erfolgreich abgeschlossen! Alle angegebenen Komponenten wurden erfolgreich abgerufen.**
+     Wenn der Paketdownload erfolgreich durchgeführt wurde, sollte die folgende Meldung angezeigt werden: **Setup wurde erfolgreich abgeschlossen! Alle angegebenen Komponenten wurden erfolgreich abgerufen.**
 
-4.  Suchen Sie den Ordner, den Sie zuvor angegeben haben. (Suchen Sie z. B. D:\VisualStudio2015.) Dieser Ordner enthält alles, was Sie an einem freigegebenen Speicherort kopieren oder Installieren von Medien benötigen.
+4. Suchen Sie den Ordner, den Sie zuvor angegeben haben (z.B. „D:\VisualStudio2015“). Dieser Ordner enthält alles, was Sie zum Kopieren an einen freigegebenen Speicherort oder auf Installationsmedien benötigen.
 
     > [!CAUTION]
-    >  Aktuell unterstützt das Android SDK keine Oberfläche zur Offlineinstallation. Wenn Sie die Setupelemente des Android SDKs auf einem Computer installieren, der keine Internetverbindung aufweist, tritt bei der Installation möglicherweise ein Fehler auf. Weitere Informationen finden Sie im Abschnitt "Problembehandlung bei einer offline-Installation" in diesem Thema.
+    > Aktuell unterstützt das Android SDK keine Oberfläche zur Offlineinstallation. Wenn Sie die Setupelemente des Android SDKs auf einem Computer installieren, der keine Internetverbindung aufweist, tritt bei der Installation möglicherweise ein Fehler auf. Weitere Informationen finden Sie im Abschnitt „Problembehandlung bei einer Offlineinstallation“ in diesem Thema.
 
-5.  Führen Sie die Installation von Speicherort der Datei oder von den installierten Medien.
+5. Führen Sie die Installation vom Dateispeicherort oder von den Installationsmedien aus.
 
-## <a name="updating-an-offline-installation"></a>Aktualisieren von einer offline-Installations
- Microsoft hat mehrere Updates für Visual Studio 2015 veröffentlicht. Um Visual Studio-Installation zu aktualisieren, laden Sie einfach die Edition, die aus der von der [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20Enterprise%202015) Downloadseite. Führen Sie anschließend die Schritte in diesem Thema erstellen Sie ein neues Layout für die offline-Installation, und dann verwenden Sie, um Ihre Kopie von Visual Studio 2015 aktualisiert.
+## <a name="updating-an-offline-installation"></a>Aktualisieren einer Offlineinstallation
+ Microsoft hat mehrere Updates für Visual Studio 2015 veröffentlicht. Zum Aktualisieren Ihrer Visual Studio-Installation laden Sie einfach die gewünschte Edition von der Downloadseite [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20Enterprise%202015) herunter. Führen Sie anschließend die Schritte in diesem Thema zum Erstellen eines neuen Layouts für die Offlineinstallation aus, und verwenden Sie dann dieses Layout, um Ihre Kopie von Visual Studio 2015 zu aktualisieren.
 
-##  <a name="BKMK_tshoot"></a> Problembehandlung bei einer offline-installation
+## <a name="BKMK_tshoot"></a> Problembehandlung bei einer Offlineinstallation
  Wenn Sie eine Offlineinstallation aus dem Offlineinstallationscache ausführen, werden möglicherweise Fehlermeldungen angezeigt, die darauf hinweisen, dass einige Komponenten und Pakete nicht installiert werden können. Die folgende Tabelle enthält mögliche Lösungen für diese Szenarien.
 
+| Komponente oder Paket | Lösung |
+|-|-|
+| Dotfuscator und Analytics Community Edition 5.19.1 (für die Community-, Professional- und Enterprise-Editionen von Visual Studio wie unter **Windows 7 SP1** und **Windows Server 2008 R2** installiert) | Wenn auf Ihrem Offlinecomputer **Windows 7 SP1** oder **Windows Server 2008 R2** ausgeführt wird, müssen Sie vor der Installation von Visual Studio 2015 die folgenden Schritte ausführen:<br /><br /> 1.  Konfigurieren Sie einen Datei- oder Webserver für das Herunterladen der CTL-Dateien.<br /><br /> 2.    Leiten Sie die Microsoft-URL für automatisches Update für eine nicht verbundene Umgebung um.<br /><br /> Weitere Informationen finden Sie auf der Seite [Konfigurieren vertrauenswürdiger Stämme und unzulässiger Zertifikate](https://technet.microsoft.com/library/dn265983.aspx) auf der Microsoft TechNet-Website. |
+| Android SDK-Installation (API-Ebene) | Für die Installation von Android SDK-Paketen (API-Ebene) benötigen Sie einen Internetzugang. In einem eingeschränkten Netzwerk müssen Sie zur Installation von Visual Studio den Zugriff auf die folgenden URLs zulassen:<br /><br /> -   http://dl.google.com:443<br />-   http://dl-ssl.google.com:443<br />-   https://dl-ssl.google.com/android/repository/*<br /> <br />Weitere Informationen zur Behebung möglicher Probleme mit Proxyeinstellungen finden Sie im Blogbeitrag [Visual Studio 2015 install failures (Android SDK Setup) behind a Proxy (Fehler bei der Installation von Visual Studio 2015 – Android SDK-Setup – hinter einem Proxy)](https://blogs.msdn.microsoft.com/peterhauge/2016/09/22/visual-studio-2015-install-failures-android-sdk-setup-behind-a-proxy/). |
+| Vorlagen für Visual Studio-Erweiterbarkeit<br /><br /> GitHub-Erweiterung für Visual Studio<br /><br /> PowerShell-Tools für Visual Studio | Wenn Sie bei der Installation von Visual Studio 2015 über keine Internetverbindung verfügen, können Sie einen speziellen Offlinefeed verwenden, um das Layout für die Offlineinstallation zu generieren. **Hinweis:** Dieser spezielle Feed enthält die neuesten Updates für Visual Studio 2015. <br /><br /> Zum Erstellen des speziellen Offlinefeeds führen Sie den folgenden Befehl aus: /layout *Laufwerk:* \VisualStudio2015 /overridefeeduri *URL_zur_Feed-XML*<br /><br /> Führen Sie z.B. für einen speziellen Offlinefeed von Visual Studio 2015 Enterprise in englischer Sprache den folgenden Befehl aus:<br /><br /> `vs_enterprise_ENU.exe /layout D:\VisualStudio2015 /overridefeeduri "http://go.microsoft.com/fwlink/?LinkID=785882&clcid0x409"`<br /><br /> Eine vollständige Liste von URLs, die Sie zum Erstellen eines speziellen Offlinefeeds in der gewünschten Sprache verwenden können, finden Sie in der folgenden Tabelle. |
 
-|                                                                                       Komponente oder Paket                                                                                       |                                                                                                                                                                                                                                                                                                                                                                                                   Lösung                                                                                                                                                                                                                                                                                                                                                                                                   |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Dotfuscator und Analytics Community Edition 5.19.1 (für die Community, Professional und Enterprise-Editionen von Visual Studio als installiert **Windows 7 SP1** und **Windows Server 2008 R2**) |                                                                                                                                       Wenn Ihr Computer im Offlinemodus ausgeführt wird **Windows 7 SP1** oder **Windows Server 2008 R2**, Sie müssen die folgenden Schritte ausführen, vor der Installation von Visual Studio 2015:<br /><br /> 1.  Konfigurieren eines Servers Datei- oder Webservers zum Herunterladen der CTL-Dateien.<br /><br /> 2.    Umleiten der Microsoft Automatic Update URL für eine nicht verbundene Umgebung.<br /><br /> Weitere Informationen finden Sie unter den [konfigurieren vertrauenswürdiger Stämme und Unzulässiger Zertifikate](https://technet.microsoft.com/library/dn265983.aspx) Seite auf der Microsoft TechNet-Website.                                                                                                                                       |
-|                                                                                  Android SDK-Installation (API-Ebene)                                                                                   |                                                                        Für die Installation von Android SDK-Paketen (API-Ebene) benötigen Sie einen Internetzugang. In einem eingeschränkten Netzwerk müssen Sie zur Installation von Visual Studio den Zugriff auf die folgenden URLs zulassen:<br /><br /> -   http://dl.google.com:443<br />-   http://dl-ssl.google.com:443<br />-   https://dl-ssl.google.com/android/repository/*<br /> <br />Weitere Informationen zur Behebung möglicher Probleme mit Proxyeinstellungen finden Sie im Blogbeitrag [Visual Studio 2015 install failures (Android SDK Setup) behind a Proxy (Fehler bei der Installation von Visual Studio 2015 – Android SDK-Setup – hinter einem Proxy)](https://blogs.msdn.microsoft.com/peterhauge/2016/09/22/visual-studio-2015-install-failures-android-sdk-setup-behind-a-proxy/).                                                                         |
-|                             Elementvorlagen für Visual Studio-Erweiterbarkeit<br /><br /> GitHub-Erweiterung für Visual Studio<br /><br /> PowerShell-Tools für Visual Studio                             | Wenn Sie nicht über eine Internetverbindung verfügen, wenn Sie Visual Studio 2015 installieren, können Sie eine spezielle offlinefeed, um das Layout der offline-Installation zu generieren. **Hinweis**:  Dieser spezielle Feed enthält die neuesten Updates für Visual Studio 2015. <br /><br /> Um die spezielle offlinefeed erstellen möchten, führen Sie den folgenden Befehl aus: / Layout *Laufwerk:* \VisualStudio2015 /overridefeeduri *URL Feed-Xml*<br /><br /> Beispielsweise für eine englischsprachige spezielle offlinefeed von Visual Studio 2015 Enterprise ausführen:<br /><br /> `vs_enterprise_ENU.exe /layout D:\VisualStudio2015 /overridefeeduri "http://go.microsoft.com/fwlink/?LinkID=785882&clcid0x409"`<br /><br /> Eine vollständige Liste von URLs, die Sie verwenden können, um eine spezielle offlinefeed in der Sprache Ihrer Wahl zu erstellen, finden Sie in der folgenden Tabelle. |
-
- Verwenden Sie die folgenden URLs um einen speziellen offline sprachspezifische-Feed zu erstellen, wie in der obigen Tabelle beschrieben.
-
+ Verwenden Sie die folgenden URLs, um einen speziellen Offlinefeed in einer bestimmten Sprache zu erstellen, wie in der Tabelle oben beschrieben.
 
 |       Sprache        |                            URL                            |
 |-----------------------|-----------------------------------------------------------|
@@ -91,4 +85,5 @@ Diese Seite beschreibt, wie Sie Visual Studio 2015 installieren, wenn Sie nicht 
 |        Türkisch        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x41F |
 
 ## <a name="see-also"></a>Siehe auch
- [Installieren von Visual Studio]()
+
+- [Installieren von Visual Studio](install-visual-studio-2015.md)

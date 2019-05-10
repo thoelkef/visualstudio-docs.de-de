@@ -1,26 +1,21 @@
 ---
 title: Verwenden von Textmarkierungen mit der Legacy-API | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text markers
 ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 600e9635fb0ee5ea78226277860ac41e183f47b5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 03b68c0fbaf92ff2c768c36ccdbea1988c99a973
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430116"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>Verwenden von Textmarkierungen mit der Legacy-API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ Eine textmarkierung ist einen unverankerten Textbereich in einem Puffer, der die
  Erstellen Sie aufgrund des Leistungsoverheads Textmarkierungen zugeordnet wird nicht viele Marker für Ihre Textpuffer. Marker wird aktualisiert, wenn ein Benutzer den Inhalt des Puffers bearbeitet.  
   
 > [!NOTE]
->  Benutzer können die Farbe des einen sichtbaren Markertyp, aber nicht die Form und Stil ändern. Weitere Informationen finden Sie unter [Schriftarten und Farben, Umgebung, Dialogfeld Optionen](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).  
+> Benutzer können die Farbe des einen sichtbaren Markertyp, aber nicht die Form und Stil ändern. Weitere Informationen finden Sie unter [Schriftarten und Farben, Umgebung, Dialogfeld Optionen](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).  
   
 ## <a name="related-topics"></a>Verwandte Themen  
   
@@ -41,7 +36,7 @@ Eine textmarkierung ist einen unverankerten Textbereich in einem Puffer, der die
 |[Vorgehensweise: Erstellen von benutzerdefinierten Diagrammen](../extensibility/how-to-create-custom-text-markers.md)|Beschreibt das Erstellen und eine Textansicht ein Markertyps benutzerdefinierten Text hinzuzufügen.|  
 |[Vorgehensweise: Verwenden von Textmarkierungen](../extensibility/how-to-use-text-markers.md)|Erläutert das Hinzufügen von Textmarkierungen.|  
 |[Im Core-Editor](../extensibility/inside-the-core-editor.md)|Beschreibt die Funktionen von der Kern-Editor, und enthält ausführliche Informationen zum Anpassen der Kern-Editor.|  
-|[Editor-Funktionen](http://msdn.microsoft.com/en-us/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|Beschreibt die Funktionen zur Verfügung, in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Kern-Editor.|  
+|[Editor-Funktionen](http://msdn.microsoft.com/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|Beschreibt die Funktionen zur Verfügung, in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Kern-Editor.|  
   
 ## <a name="reference"></a>Referenz  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>  
@@ -76,4 +71,3 @@ Eine textmarkierung ist einen unverankerten Textbereich in einem Puffer, der die
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStreamMarker>  
  Bietet Zugriff auf und passt die Position eines textmarkers in einem Textpuffer mithilfe der eindimensionale Koordinaten. Wenn es möglich ist, verwenden Sie diese Schnittstelle nicht.
-

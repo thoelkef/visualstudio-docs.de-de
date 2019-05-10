@@ -1,14 +1,9 @@
 ---
 title: Verwenden von Schriftarten und Farben | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - fonts, controlling in IDE
 - IDE, controlling text color and fonts
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: d1a9b99f-fbdc-45ed-920a-e08c3d931ac9
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b49c5172a75e0abec8084892346a2fb0da877b81
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 42ebc9414e3e5bb10f2468ed7f5f4fb4900e4ec6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729601"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58956099"
 ---
 # <a name="using-fonts-and-colors"></a>Verwenden von Schriftarten und Farben
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ Die [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] bietet Unterstützung für di
   
  Dieser Ansatz erfordert ein VSPackage implementiert die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> -Schnittstelle und verwandten Schnittstellen.  
   
- [Vorgehensweise: Zugriff auf integrierte Schriftarten und Farbschemas](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
+ [Vorgehensweise: Zugriff auf die integrierten Schriftarten und Farbschemas](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
  Erläutert das Definieren und registrieren eine Kategorie mit integrierten Schriftarten und Farben aus, und initiieren die Verwendung von vom System bereitgestellten Schriftarten und Farben.  
   
 ## <a name="reference"></a>Referenz  
@@ -80,4 +75,3 @@ Die [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] bietet Unterstützung für di
   
  [Erweitern anderer Teile von Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)  
  Erläutert, wie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Dienste zum Erstellen von Benutzeroberflächenelementen verwendet werden, die zu den übrigen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Komponenten passen.
-

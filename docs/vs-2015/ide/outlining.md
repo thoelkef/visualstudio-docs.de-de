@@ -1,14 +1,9 @@
 ---
 title: Gliedern | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - outlining
 - Visual Studio, expand/collapse code
@@ -21,13 +16,13 @@ ms.assetid: d1476758-9d35-4d74-b63c-310661932ecd
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: af7f854f6e097471cdd744537a4be4cbd1646400
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: db33392deb16664e48c3b2d90df883294d5cfbaa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441162"
 ---
 # <a name="outlining"></a>Gliedern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ Sie können festlegen, dass bestimmter Code in der Ansicht ausgeblendet wird, in
  Diese Aktionen werden durch die Befehle **Rückgängig** und **Wiederholen** im Menü **Bearbeiten** beeinflusst. Bei den Befehlen **Kopieren**, **Ausschneiden** und **Einfügen** sowie bei Drag & Drop-Vorgängen werden Gliederungsinformationen beibehalten, der Zustand des zuklappbaren Bereichs jedoch nicht. Wenn Sie beispielsweise einen zugeklappten Bereich kopieren, wird der kopierte Text beim Vorgang **Einfügen** als aufgeklappter Bereich eingefügt.  
   
 > [!CAUTION]
->  Wenn Sie einen gegliederten Bereich ändern, geht die Gliederung möglicherweise verloren. Beispielsweise wird durch Löschvorgänge oder Suchen und Ersetzen das Ende des Bereichs möglicherweise gelöscht.  
+> Wenn Sie einen gegliederten Bereich ändern, geht die Gliederung möglicherweise verloren. Beispielsweise wird durch Löschvorgänge oder Suchen und Ersetzen das Ende des Bereichs möglicherweise gelöscht.  
   
  Die folgenden Befehle sind im Untermenü **Bearbeiten/Gliedern** zu finden:  
   
@@ -57,6 +52,3 @@ Sie können festlegen, dass bestimmter Code in der Ansicht ausgeblendet wird, in
 |Alle zuklappen in: \<logische Strukturen>|(Visual C++) Reduziert alle Strukturen innerhalb der Funktion.|  
   
  Sie können auch das Visual Studio SDK verwenden, um die Textbereiche zu definieren, die Sie erweitern oder reduzieren möchten. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Gliedern](../extensibility/walkthrough-outlining.md).
-
-
-

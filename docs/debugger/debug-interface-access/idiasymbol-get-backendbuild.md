@@ -1,33 +1,34 @@
 ---
 title: 'Idiasymbol:: Get_backendbuild | Microsoft-Dokumentation'
-ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_backEndBuild method
 ms.assetid: 423af497-9294-438e-92b4-456c6f56dc56
-author: mikejo5000
+caps.latest.revision: 12
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: c8687373ecd37087a08641f380362e68d0567695
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7628a76c2eb1b6d847dff9e5c32d09ad1434c8f2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828092"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402234"
 ---
 # <a name="idiasymbolgetbackendbuild"></a>IDiaSymbol::get_backEndBuild
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Ruft die Buildnummer der Back-End des Compilers ab.  
   
 ## <a name="syntax"></a>Syntax  
   
-```C++  
-HRESULT get_backEndBuild (   
+```cpp#  
+HRESULT get_backEndBuild (   
    DWORD* pRetVal  
 );  
 ```  
@@ -40,7 +41,7 @@ HRESULT get_backEndBuild (
  Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
   
 ## <a name="remarks"></a>Hinweise  
  Ein Compiler besteht in der Regel zwei Hauptelemente: die Front-End (den Parser), der verarbeitet, analysiert den Quellcode in ein vorläufiges Formular, und ein Back-End (Codegenerator), konvertiert die vorläufiges Formular in der Assembly. Es ist nicht ungewöhnlich, dass das Front-End, um eine andere Version als das Back-End zu erhalten.  

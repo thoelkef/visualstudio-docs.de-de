@@ -3,22 +3,21 @@ title: Analysieren der CPU-Auslastungsdaten (verwalteter Code)
 description: Messen der App-Leistung in C# und Visual Basic mithilfe des Diagnosetools für die CPU-Auslastung
 ms.custom: mvc
 ms.date: 08/06/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - Profiling Tools, quick start
 - Diagnostics Tools, CPU Usage
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 35c6fd1ea079dd95367bcb7763787f0b06839ecb
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 58ab671014f2745bbc577e50d9e8051df72091c9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42627149"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967942"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Schnellstart: Analysieren der CPU-Auslastungsdaten in Visual Studio (verwalteter Code)
 
@@ -161,9 +160,9 @@ Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Deb
     > [!NOTE]
     > Stellen Sie in Visual Basic sicher, dass das Startobjekt auf `Sub Main` festgelegt ist (**Eigenschaften** > **Anwendung** > **Startobjekt**).
 
-##  <a name="step-1-collect-profiling-data"></a>Schritt 1: Sammeln von Profilerstellungsdaten
+## <a name="step-1-collect-profiling-data"></a>Schritt 1: Sammeln von Profilerstellungsdaten
 
-1.  Legen Sie in Ihrer App zuerst einen Haltepunkt auf diese Codezeile in der `Main`-Funktion fest:
+1. Legen Sie in Ihrer App zuerst einen Haltepunkt auf diese Codezeile in der `Main`-Funktion fest:
 
     `for (int i = 0; i < 200; i++)`
 
@@ -173,20 +172,20 @@ Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Deb
 
     Legen Sie einen Haltepunkt fest, indem Sie in den Bundsteg links neben der Codezeile klicken.
 
-2.  Legen Sie als Nächstes einen weiteren Haltepunkt auf die schließende Klammer am Ende der `Main`-Funktion fest:
+2. Legen Sie als Nächstes einen weiteren Haltepunkt auf die schließende Klammer am Ende der `Main`-Funktion fest:
 
      ![Haltepunkte für die Profilerstellung festlegen](../profiling/media/quickstart-cpu-usage-breakpoints.png "Set breakpoints for profiling")
 
     > [!TIP]
     > Durch das Festlegen von zwei Haltepunkten können Sie die Datensammlung auf die Teile des Code begrenzen, die Sie analysieren möchten.
 
-3.  Das Fenster **Diagnosetools** wird bereits angezeigt, es sei denn, Sie haben es deaktiviert. Klicken Sie auf **Debuggen** > **Windows** > **Diagnosetools anzeigen**, um das Fenster erneut aufzurufen.
+3. Das Fenster **Diagnosetools** wird bereits angezeigt, es sei denn, Sie haben es deaktiviert. Klicken Sie auf **Debuggen** > **Windows** > **Diagnosetools anzeigen**, um das Fenster erneut aufzurufen.
 
-4.  Klicken Sie auf **Debuggen** > **Debugging starten** (oder auf **Start** auf der Symbolleiste oder auf **F5**).
+4. Klicken Sie auf **Debuggen** > **Debugging starten** (oder auf **Start** auf der Symbolleiste oder auf **F5**).
 
      Wenn das Laden der Anwendung abgeschlossen ist, wird die Ansicht **Zusammenfassung** der Diagnosetools angezeigt.
 
-5.  Aktivieren Sie, während der Debugger angehalten ist, die Sammlung von CPU-Auslastungsdaten, indem Sie auf **CPU-Profilerstellung aufzeichnen** klicken. Öffnen Sie anschließend die Registerkarte **CPU-Auslastung**.
+5. Aktivieren Sie, während der Debugger angehalten ist, die Sammlung von CPU-Auslastungsdaten, indem Sie auf **CPU-Profilerstellung aufzeichnen** klicken. Öffnen Sie anschließend die Registerkarte **CPU-Auslastung**.
 
      ![Diagnosetools ermöglichen die CPU-Profilerstellung](../profiling/media/quickstart-cpu-usage-summary.png "Diagnostics Tools Enable CPU Profiling")
 
@@ -194,7 +193,7 @@ Windows 8 und höher ist erforderlich, um die Profilerstellungstools mit dem Deb
 
      Wenn Sie auf **CPU-Profilerstellung aufzeichnen** klicken, zeichnet Visual Studio auf, welche Funktionen ausgeführt werden und wie lange dies dauert. Außerdem stellt das Programm ein Zeitachsendiagramm bereit, mit dem Sie bestimmte Segmente der Samplingsitzung genauer betrachten können. Diese gesammelten Daten können jedoch nur angezeigt werden, wenn die Anwendung an einem Haltepunkt angehalten wird.
 
-6.  Drücken Sie **F5**, um die App bis zum zweiten Haltepunkt auszuführen.
+6. Drücken Sie **F5**, um die App bis zum zweiten Haltepunkt auszuführen.
 
      Jetzt verfügen Sie über Leistungsdaten für Ihre Anwendung, die speziell für den Codebereich gelten, der zwischen den beiden Haltepunkten liegt.
 

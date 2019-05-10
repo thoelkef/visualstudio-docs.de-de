@@ -1,24 +1,20 @@
 ---
 title: Ausführen von Komponententests für Store-apps
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 5a6f5b32-bfce-4a63-81e9-02d54c592539
 caps.latest.revision: 14
 author: alexhomer1
 ms.author: gewarren
-manager: robinr
-ms.openlocfilehash: a5bc69e640db87f48c0e170450e52fe0560092b9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: bfcdb3906f405b9f7ba4650be13f4522ab559ee8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835356"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446228"
 ---
 # <a name="run-unit-tests-for-store-apps-in-visual-studio"></a>Ausführen von Komponententests für Store-Apps in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,14 +22,14 @@ ms.locfileid: "53835356"
 In diesem Thema wird beschrieben, wie Sie Komponententests mithilfe des Test-Explorers in Microsoft Visual Studio ausführen.
 
 > [!NOTE]
->  In den Themen in diesem Abschnitt wird die Funktionalität von Visual Studio Express für Windows 8 beschrieben. Visual Studio Community, Enterprise und Professional stellen zusätzliche Funktionen für Komponententests bereit.
+> In den Themen in diesem Abschnitt wird die Funktionalität von Visual Studio Express für Windows 8 beschrieben. Visual Studio Community, Enterprise und Professional stellen zusätzliche Funktionen für Komponententests bereit.
 >
 > - Sie können ein beliebiges Drittanbieter- oder Open Source-Framework für Komponententests verwenden, mit dem ein Add-On-Adapter für den Microsoft-Test-Explorer erstellt wurde. Sie können außerdem Codeabdeckungsinformationen für Ihre Tests analysieren und anzeigen.
->   -   Führen Sie Ihre Tests nach jedem Build aus. Sie können zudem Microsoft Fakes verwenden, ein Isolationsframework für verwalteten Code, mit dem Sie Ihre Tests auf den eigenen Code ausrichten können, indem Sie Testcode für System- und Drittanbieterfunktionalität ersetzen.
+>   - Führen Sie Ihre Tests nach jedem Build aus. Sie können zudem Microsoft Fakes verwenden, ein Isolationsframework für verwalteten Code, mit dem Sie Ihre Tests auf den eigenen Code ausrichten können, indem Sie Testcode für System- und Drittanbieterfunktionalität ersetzen.
 >
 >   Weitere Informationen finden Sie unter [Komponententest für Code](../test/unit-test-your-code.md) in der MSDN Library.
 
-##  <a name="BKMK_In_this_topic"></a> In diesem Thema
+## <a name="BKMK_In_this_topic"></a> In diesem Thema
  [Komponententestframeworks und Testprojekte](#BKMK_Unit_test_frameworks_and_test_projects)
 
  [Ausführen von Tests im Test-Explorer](#BKMK_Running_tests_in_Test_Explorer)
@@ -54,10 +50,10 @@ In diesem Thema wird beschrieben, wie Sie Komponententests mithilfe des Test-Exp
 
   [Debuggen von Komponententests](#BKMK_Debugging_unit_tests)
 
-##  <a name="BKMK_Unit_test_frameworks_and_test_projects"></a> Komponententestframeworks und Testprojekte
+## <a name="BKMK_Unit_test_frameworks_and_test_projects"></a> Komponententestframeworks und Testprojekte
  Visual Studio Express für Windows Store-Apps schließt die Microsoft-Unittest-Frameworks für verwalteten und nativen C++-Code ein. Im Test-Explorer können Tests aus mehreren Testprojekten in einer Projektmappe und aus Testklassen ausgeführt werden, die Teil der Produktionscodeprojekte sind. Testprojekte können sich aus jeder beliebigen Kombination von Visual C++- oder Visual C#- und Visual Basic-Komponententest-Frameworks zusammensetzen. Wenn der zu testende Code für .NET Framework geschrieben wird, kann das Testprojekt in jeder .NET Framework-Sprache geschrieben sein, unabhängig von der Sprache des Zielcodes. Systemeigene C/C++-Codeprojekte müssen mithilfe eines Komponententest-Frameworks für C++ getestet werden.
 
-##  <a name="BKMK_Running_tests_in_Test_Explorer"></a> Ausführen von Tests im Test-Explorer
+## <a name="BKMK_Running_tests_in_Test_Explorer"></a> Ausführen von Tests im Test-Explorer
  Wenn Sie das Testprojekt erstellen, werden die Tests im Test-Explorer angezeigt. Falls der Test-Explorer nicht geöffnet ist, wählen Sie im Visual Studio-Menü nacheinander **Test** , **Fenster**und dann **Test-Explorer**aus.
 
  ![Komponententest-Explorer](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
@@ -68,7 +64,7 @@ In diesem Thema wird beschrieben, wie Sie Komponententests mithilfe des Test-Exp
 
  ![Tests von der Test-Explorer-Symbolleiste ausführen](../test/media/ute-toolbar.png "UTE_ToolBar")
 
-###  <a name="BKMK_Running_tests"></a> Ausführen von Tests
+### <a name="BKMK_Running_tests"></a> Ausführen von Tests
  Sie können alle Tests in der Projektmappe, alle Tests in einer Gruppe oder einen Satz ausgewählter Tests ausführen. Führen Sie einen der folgenden Schritte aus:
 
 - Wählen Sie zum Ausführen aller Tests in einer Projektmappe **Alle ausführen**aus.
@@ -79,10 +75,10 @@ In diesem Thema wird beschrieben, wie Sie Komponententests mithilfe des Test-Exp
 
   Während der Testausführung wird die oben im Fenster "Test-Explorer" angezeigte Erfolgreich/Fehler-Leiste animiert. Am Ende des Testlaufs wird die Erfolgreich/Fehler-Leiste grün, wenn alle Tests erfolgreich verlaufen, oder rot, falls ein beliebiger Test fehlschlägt.
 
-##  <a name="BKMK_Viewing_test_results"></a> Anzeigen von Testergebnissen
+## <a name="BKMK_Viewing_test_results"></a> Anzeigen von Testergebnissen
  Beim Ausführen, Schreiben und erneuten Ausführen der Tests werden die Ergebnisse vom Test-Explorer in den Gruppen **Fehlgeschlagene Tests**, **Bestandene Tests**, **Abgebrochene Tests** sowie **Nicht ausgeführte Tests**angezeigt. Im Detailbereich unten im Test-Explorer wird eine Zusammenfassung des Testlaufs angezeigt.
 
-###  <a name="BKMK_Viewing_test_details"></a> Anzeigen von Testdetails
+### <a name="BKMK_Viewing_test_details"></a> Anzeigen von Testdetails
  Zum Anzeigen der Details eines einzelnen Tests wählen Sie den jeweiligen Test aus.
 
  Im Testdetailbereich werden folgende Informationen angezeigt:
@@ -99,30 +95,30 @@ In diesem Thema wird beschrieben, wie Sie Komponententests mithilfe des Test-Exp
 
 - Die Stapelüberwachung zum Zeitpunkt des Testfehlers
 
-###  <a name="BKMK_Viewing_the_source_code_of_a_test_method"></a> Anzeigen des Quellcodes einer Testmethode
+### <a name="BKMK_Viewing_the_source_code_of_a_test_method"></a> Anzeigen des Quellcodes einer Testmethode
  Um den Quellcode für eine Testmethode im Visual Studio-Editor anzuzeigen, wählen Sie zunächst den Test und dann **Test öffnen** im Kontextmenü (Tastatur: F12) aus.
 
-##  <a name="BKMK_Organizing_the_test_list"></a> Organisieren der Testliste
+## <a name="BKMK_Organizing_the_test_list"></a> Organisieren der Testliste
 
-###  <a name="BKMK_Grouping_tests"></a> Gruppieren von Tests
+### <a name="BKMK_Grouping_tests"></a> Gruppieren von Tests
  Standardmäßig werden im Test-Explorer die Tests als untergeordnete Knoten von **Fehlerhafte Tests**, **Bestandene Tests**, **Abgebrochene Tests** und **Übersprungene Tests** angezeigt.
 
 |||
 |-|-|
 |![Gruppenschaltfläche „Test-Explorer“](../test/media/ute-groupby-btn.png "UTE_GroupBy_btn")|Um die Tests nach der Dauer ihrer Ausführung zu gruppieren, öffnen Sie die Liste **Gruppieren nach** und wählen **Dauer** aus. Wählen Sie **Testergebnis** aus, um zur ursprünglichen Gruppierung zu wechseln.|
 
-###  <a name="BKMK_Searching_and_filtering_the_test_list"></a> Suchen und Filtern der Testliste
+### <a name="BKMK_Searching_and_filtering_the_test_list"></a> Suchen und Filtern der Testliste
  Wenn Sie über viele Tests verfügen, können Sie im Test-Explorer-Suchfeld eine Eingabe vornehmen, um die Liste entsprechend der angegebenen Zeichenfolge zu filtern. Sie können den Filter auf bestimmte Typen von Zeichenfolgen einschränken, indem Sie vor der Eingabe der Suchzeichenfolge in der Filterliste eine Auswahl vornehmen.
 
  ![Suchfilterkategorien](../test/media/ute-searchfilter.png "UTE_SearchFilter")
 
-##  <a name="BKMK_Debugging_unit_tests"></a> Debuggen von Komponententests
+## <a name="BKMK_Debugging_unit_tests"></a> Debuggen von Komponententests
  Mit dem Test-Explorer können Sie Debugsitzungen für Tests starten. Beim schrittweisen Durchlaufen des Codes mit dem Visual Studio-Debugger wechseln Sie nahtlos zwischen den Komponententests und dem zu testenden Projekt hin und zurück. Starten des Debuggens:
 
 1. Legen Sie im Visual Studio-Editor in mindestens einer zu debuggenden Testmethode einen Haltepunkt fest.
 
    > [!NOTE]
-   >  Da Testmethoden in jeder die oft ausgegebene Befehlszeilen  Reihenfolge ausgeführt werden können, legen Sie Haltepunkte in allen Testmethoden fest, die Sie debuggen möchten.
+   > Da Testmethoden in jeder die oft ausgegebene Befehlszeilen  Reihenfolge ausgeführt werden können, legen Sie Haltepunkte in allen Testmethoden fest, die Sie debuggen möchten.
 
 2. Wählen Sie im Test-Explorer die Testmethoden aus, und wählen Sie dann im Kontextmenü **Ausgewählte Tests debuggen** aus.
 

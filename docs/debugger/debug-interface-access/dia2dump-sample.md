@@ -1,8 +1,6 @@
 ---
 title: Dia2dump-Beispiel | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 07/24/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 492c0893-7043-452f-a020-890a47230d20
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2e44abdce737df335133d5e54b6b022c97f639a
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 3f5b353986cf77c554b277975fabb1cb755faba3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252280"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554869"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump-Beispiel
 
@@ -34,7 +32,7 @@ Das Beispiel installiert ist, bei der Auswahl der **Desktopentwicklung mit C++**
 
 Bei der Installation ist das Beispiel, in Ihrem Visual Studio-Installationsverzeichnis, in ein Unterverzeichnis namens \DIA SDK\Samples\DIA2Dump.
 
-## <a name="build-the-sample"></a>Erstellen Sie das Beispiel
+## <a name="build-the-sample"></a>Erstellen des Beispiels
 
 Standardmäßig ist das Installationsverzeichnis ein geschütztes Verzeichnis. Das bedeutet, dass es sich bei Verwendung einer Developer-Eingabeaufforderung mit erhöhten Rechten oder eine Instanz von Visual Studio zum Erstellen und bearbeiten die beispiellösung an diesem Speicherort. Um den Build zu vereinfachen, empfehlen wir, Sie kopieren Sie die Dateien zuerst im Beispielverzeichnis aus, um ein anderes Verzeichnis, z. B. einen Ordner im Ordner "Dokumente", und klicken Sie dann das Beispiel erstellen.
 
@@ -50,7 +48,7 @@ Standardmäßig ist das Installationsverzeichnis ein geschütztes Verzeichnis. D
 
 1. In der **Additional Include Directories** -Eigenschaft, wählen Sie im Dropdown-Steuerelement, und wählen Sie dann **bearbeiten**.
 
-1. In der **Additional Include Directories** Dialogfeldecke, in das Bearbeitungsfeld, geben Sie die `$(VSInstallDir)DIA SDK\include` Verzeichnis. Fügen Sie diesem Verzeichnis aus, um sicherzustellen, dass der Compiler die Datei dia2.h finden kann. Wählen Sie **OK** zum Speichern der Änderungen.
+1. In der **Additional Include Directories** Dialogfeldecke, in das Bearbeitungsfeld, geben Sie die `$(VSInstallDir)DIA SDK\include` Verzeichnis. Fügen Sie diesem Verzeichnis aus, um sicherzustellen, dass der Compiler die Datei dia2.h finden kann. Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
 1. Wählen Sie **OK** zum Speichern der Änderungen in den Projekteigenschaften.
 
@@ -66,7 +64,7 @@ Standardmäßig ist das Installationsverzeichnis ein geschütztes Verzeichnis. D
 
 ## <a name="run-the-dia2dump-sample"></a>Führen Sie das Dia2Dump-Beispiel
 
-Dia2Dump.exe abhängig von der Msdia*Version*DLL-COM-Server, seine Dienste bereitstellen. In Visual Studio 2015 und Visual Studio 2017 ist die Version "msdia140.dll". Wenn die Msdia*Version*DLL-COM-Server nicht initialisiert wird, müssen Sie ihn registrieren, bevor dia2dump.exe arbeiten können. Das DIA-SDK-Verzeichnis wurde ein Unterverzeichnis "Bin", die die X86 enthält Version der DLL. Eine Version für X64 Architektur Computer bin\amd64 wird und eine Version für ARM ist in Bin\arm. Um die Dll registrieren möchten, öffnen Sie ein Eingabeaufforderungsfenster mit erhöhten Rechten Entwickler, und wechseln Sie zum Verzeichnis mit der Version für Ihre Architektur. Geben Sie den Befehl `regsvr32 msdia140.dll` COM-Server zu registrieren.
+Dia2Dump.exe abhängig von der Msdia*Version*DLL-COM-Server, seine Dienste bereitstellen. Ab Visual Studio 2015 ist die Version "msdia140.dll". Wenn die Msdia*Version*DLL-COM-Server nicht initialisiert wird, müssen Sie ihn registrieren, bevor dia2dump.exe arbeiten können. Das DIA-SDK-Verzeichnis wurde ein Unterverzeichnis "Bin", die die X86 enthält Version der DLL. Eine Version für X64 Architektur Computer bin\amd64 wird und eine Version für ARM ist in Bin\arm. Um die Dll registrieren möchten, öffnen Sie ein Eingabeaufforderungsfenster mit erhöhten Rechten Entwickler, und wechseln Sie zum Verzeichnis mit der Version für Ihre Architektur. Geben Sie den Befehl `regsvr32 msdia140.dll` COM-Server zu registrieren.
 
 ### <a name="to-run-the-sample"></a>So führen Sie das Beispiel aus
 
@@ -78,4 +76,4 @@ Dia2Dump.exe abhängig von der Msdia*Version*DLL-COM-Server, seine Dienste berei
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Übertragung, Migration und Upgrade der Visual Studio-Projekte](../../porting/port-migrate-and-upgrade-visual-studio-projects.md)  
+- [Übertragung, Migration und Upgrade der Visual Studio-Projekte](../../porting/port-migrate-and-upgrade-visual-studio-projects.md)

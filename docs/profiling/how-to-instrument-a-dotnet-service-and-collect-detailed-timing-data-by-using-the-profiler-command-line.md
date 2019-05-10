@@ -4,23 +4,23 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: af8f5fffc53eb9ed93affd57cef5bc99341fd33e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fd5f58b7cd10ee1eb6312f9badf89797c21f1a0e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913479"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973915"
 ---
 # <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Vorgehensweise: Instrumentieren eines .NET-Diensts und Sammeln ausführlicher Zeitsteuerungsdaten über die Profiler-Befehlszeile
 
 In diesem Artikel wird beschrieben, wie Sie mit den Befehlszeilentools der Visual Studio-Profilerstellungstools einen [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Dienst instrumentieren und ausführliche Zeitsteuerungsdaten sammeln können.
 
 > [!NOTE]
-> Mit der Instrumentierungsmethode kann kein Profil für einen Dienst erstellt werden, wenn der Dienst nach dem Start des Computers nicht neu gestartet werden kann, z. B. ein Dienst, der nur gleichzeitig mit dem Betriebssystem gestartet wird.
-> 
+> Mit der Instrumentationsmethode kann kein Profil für einen Dienst erstellt werden, wenn der Dienst nach dem Start des Computers nicht neu gestartet werden kann, z. B. ein Dienst, der nur gleichzeitig mit dem Betriebssystem gestartet wird.
+>
 > Informationen zum Abrufen des Pfads zu den Profilerstellungstools finden Sie unter [Angeben des Pfads zu Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Auf 64-Bit-Computern sind sowohl 64 Bit- als auch 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen.
 >
 > Das Hinzufügen von Ebeneninteraktionsdaten zu einer Profilerstellung erfordert bestimmte Verfahren der Befehlszeilenprofilerstellungstools. Siehe [Erfassen von Ebeneninteraktionsdaten](../profiling/adding-tier-interaction-data-from-the-command-line.md).
@@ -71,7 +71,6 @@ Um eine Profilerstellungssitzung zu beenden, deaktivieren Sie den Dienst und fah
      | [/automark](../profiling/automark.md) **:** `Interval` | Verwenden Sie nur **/wincounter**. Gibt die Anzahl von Millisekunden zwischen Ereignissen bei der Datensammlung mit Windows-Leistungsindikatoren an. Der Standardwert ist 500 ms. |
      | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Gibt ein ETW-Ereignis (Ereignisablaufverfolgung für Windows) an, dessen Daten während der Profilerstellung gesammelt werden sollen. ETW-Ereignisse werden in einer separaten Datei (*ETL*) gesammelt. |
 
-
 8. Starten Sie den Dienst über den Windows Dienststeuerungs-Manager.
 
 ## <a name="control-data-collection"></a>Steuern der Datensammlung
@@ -108,5 +107,5 @@ Sie müssen den Computer neu starten, damit die neuen Umgebungseinstellungen üb
 
 ## <a name="see-also"></a>Siehe auch
 
-[Profilerstellung für Dienste](../profiling/command-line-profiling-of-services.md)  
-[Datenansichten der Instrumentierungsmethode](../profiling/instrumentation-method-data-views.md)
+[Profilerstellung für Dienste über die Befehlszeile](../profiling/command-line-profiling-of-services.md)
+[Instrumentierungsmethoden-Datenansichten](../profiling/instrumentation-method-data-views.md)

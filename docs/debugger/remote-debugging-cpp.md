@@ -1,8 +1,7 @@
 ---
 title: Remotedebuggen eines Visual C++-Projekts | Microsoft-Dokumentation
 ms.custom: remotedebugging
-ms.date: 08/14/2017
-ms.technology: vs-ide-debug
+ms.date: 08/14/2018
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 8b8eca0d-122f-4eda-848a-cf0945f207d0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4677380081aaa0ac79f589ea7594f19f78750613
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fbfdb246769ac55afd7f164d91673e39e293f4c4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844106"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62903510"
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Remotedebuggen von Visual C++-Projekt in Visual Studio
 Zum Debuggen einer Visual Studio-Anwendung auf einem anderen Computer, installieren und die Remotetools auf dem Computer ausführen, werden Sie Ihre app bereitstellen, konfigurieren Sie das Projekt, um die Verbindung mit dem Remotecomputer in Visual Studio, und klicken Sie dann bereitstellen und Ausführen Ihrer app.
@@ -38,14 +37,14 @@ Der Remotedebugger ist nur unter Windows 7 und höher (nicht "phone") und Versio
 
 > [!NOTE]
 > Debuggen zwischen zwei Computern über einen Proxy verbunden sind, wird nicht unterstützt. Debuggen über eine hohe Latenz oder niedriger Bandbreite, wie z. B. DFÜ, Internet oder über das Internet in Ländern wird nicht empfohlen und möglicherweise fehl oder unzumutbar langsam werden.
-  
+
 ## <a name="download-and-install-the-remote-tools"></a>Herunterladen und Installieren der Remotetools
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-  
+
 > [!TIP]
 > In einigen Szenarien kann es am effizientesten zum auszuführen des Remotedebuggers aus einer Dateifreigabe sein. Weitere Informationen finden Sie unter [Ausführen des Remotedebuggers aus einer Dateifreigabe](../debugger/remote-debugging.md#fileshare_msvsmon).
-  
+
 ## <a name="BKMK_setup"></a> Einrichten des Remotedebuggers
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
@@ -53,62 +52,64 @@ Der Remotedebugger ist nur unter Windows 7 und höher (nicht "phone") und Versio
 > [!NOTE]
 > Wenn Sie zum Hinzufügen von Berechtigungen für weitere Benutzer: des Authentifizierungsmodus ändern oder Portnummer für den Remotedebugger, finden Sie unter [Konfigurieren des Remotedebuggers](../debugger/remote-debugging.md#configure_msvsmon).
 
-## <a name="remote_cplusplus"></a> Remotedebuggen eines Visual C++-Projekts  
- In der folgenden Prozedur den Namen und Pfad des Projekts C:\remotetemp\MyMfc, und der Name des Remotecomputers ist **MJO-DL**.  
-  
-1. Erstellen eine MFC-Anwendung, die mit dem Namen **Mymfc.**  
-  
-2. Legen Sie einen Haltepunkt an einer beliebigen Stelle in der Anwendung, die leicht, z. B. in erreicht wird **"MainFrm.cpp"**, am Anfang des `CMainFrame::OnCreate`.  
-  
-3. Projektmappen-Explorer mit der Maustaste auf das Projekt, und wählen **Eigenschaften**. Öffnen der **Debuggen** Registerkarte.  
-  
-4. Legen Sie die **zu startender Debugger** zu **Remote-Windows-Debugger**.  
-  
-    ![RemoteDebuggingCPlus](../debugger/media/remotedebuggingcplus.png "RemoteDebuggingCPlus")  
-  
-5. Nehmen Sie die folgenden Änderungen an den Eigenschaften vor:  
-  
-   |Einstellung|Wert|
-   |-|-|  
-   |Remotebefehl|C:\remotetemp\mymfc.exe|  
-   |Arbeitsverzeichnis|C:\remotetemp|  
-   |Remoteservername|MJO-DL:*Portnumber*|  
-   |Verbindung|Remote mit Windows-Authentifizierung|  
-   |Debuggertyp|Nur systemeigen|  
-   |Bereitstellungsverzeichnis|C:\remotetemp.|  
-   |Zusätzliche bereitzustellende Dateien|C:\data\mymfcdata.txt.|  
-  
-    Wenn Sie zusätzliche Dateien (optional) bereitstellen, muss der Ordner auf beiden Computern vorhanden sein.  
-  
-6. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste in der Projektmappe, und wählen Sie **Configuration Manager**.  
-  
-7. Für die **Debuggen** Konfiguration der **bereitstellen** Kontrollkästchen.  
-  
-    ![RemoteDebugCplusDeploy](../debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")  
-  
-8. Mit dem Debuggen beginnen (**Debuggen > Debuggen starten**, oder **F5**).  
-  
-9. Die ausführbare Datei wird automatisch auf dem Remotecomputer bereitgestellt.  
-  
-10. Wenn Sie dazu aufgefordert werden, geben Sie die Anmeldeinformationen für das Netzwerk eine Verbindung zum Remotecomputer herstellen.  
-  
-     Die erforderlichen Anmeldeinformationen sind spezifisch für die Sicherheitskonfiguration Ihres Netzwerks. Sie können z. B. auf einem Computer, wählen Sie ein Sicherheitszertifikat oder geben Sie Ihren Domänennamen und Kennwort. Auf einem Computer nicht mit der Domäne möglicherweise eingegebenen Namen des Computers und einen gültigen Benutzerkontonamen an, wie z. B. <strong>MJO-DL\name@something.com</strong>, zusammen mit dem richtigen Kennwort.  
-  
-11. Auf dem Visual Studio-Computer sollte angezeigt werden, dass die Ausführung am Haltepunkt angehalten wird.  
-  
-    > [!TIP]
-    >  Alternativ können die Dateien in einem getrennten Schritt bereitgestellt werden. In der **Projektmappen-Explorer** mit der rechten Maustaste die **Mymfc** Knoten und wählen Sie dann **bereitstellen**.  
-  
-    Wenn bestimmte Dateien ohne Code von der Anwendung benötigt werden, müssen Sie diese zum Visual Studio-Projekt hinzufügen. Erstellen einen Projektordner für die zusätzlichen Dateien (in der **Projektmappen-Explorer**, klicken Sie auf **hinzufügen > Neuer Ordner**.) Fügen Sie dann die Dateien in den Ordner hinzu (in der **Projektmappen-Explorer**, klicken Sie auf **hinzufügen > Vorhandenes Element**, wählen Sie die Dateien). Auf der **Eigenschaften** Seite für jede Datei **in Ausgabeverzeichnis kopieren** zu **immer kopieren**.
-  
-## <a name="set-up-debugging-with-remote-symbols"></a>Einrichten des Debuggings mit Remotesymbolen 
+## <a name="remote_cplusplus"></a> Remotedebuggen eines Visual C++-Projekts
+ In der folgenden Prozedur den Namen und Pfad des Projekts C:\remotetemp\MyMfc, und der Name des Remotecomputers ist **MJO-DL**.
 
-[!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)] 
-  
-## <a name="see-also"></a>Siehe auch  
- [Debuggen in Visual Studio](../debugger/index.md)  
- [Debugger – Featuretour](../debugger/debugger-feature-tour.md)   
- [Konfigurieren der Windows-Firewalls für Remotedebuggen](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
- [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)   
- [Remotedebuggen von ASP.NET auf einem Remotecomputer mit IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)  
- [Remotedebuggen – Fehler und Problembehandlung](../debugger/remote-debugging-errors-and-troubleshooting.md)
+1. Erstellen Sie eine MFC-Anwendung mit dem Namen **mymfc**.
+
+2. Legen Sie einen leicht erreichbaren Haltepunkt an einer beliebigen Stelle in der Anwendung fest, z.B. in **MainFrm.cpp** am Anfang von `CMainFrame::OnCreate`.
+
+3. Projektmappen-Explorer mit der Maustaste auf das Projekt, und wählen **Eigenschaften**. Öffnen Sie die Registerkarte **Debuggen**.
+
+4. Legen Sie **Zu startender Debugger** auf **Remote-Windows-Debugger** fest.
+
+    ![RemoteDebuggingCPlus](../debugger/media/remotedebuggingcplus.png "RemoteDebuggingCPlus")
+
+5. Nehmen Sie die folgenden Änderungen an den Eigenschaften vor:
+
+   |Einstellung|Wert|
+   |-|-|
+   |Remote-Befehl|C:\remotetemp\mymfc.exe|
+   |Arbeitsverzeichnis|C:\remotetemp|
+   |Remoteservername|MJO-DL:*Portnumber*|
+   |Verbindung|Remote mit Windows-Authentifizierung|
+   |Debuggertyp|Nur systemeigen|
+   |Bereitstellungsverzeichnis|C:\remotetemp.|
+   |Zusätzliche bereitzustellende Dateien|C:\data\mymfcdata.txt.|
+
+    Wenn Sie zusätzliche Dateien (optional) bereitstellen, muss der Ordner auf beiden Computern vorhanden sein.
+
+6. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste in der Projektmappe, und wählen Sie **Configuration Manager**.
+
+7. Aktivieren Sie für die Konfiguration **Debuggen** das Kontrollkästchen **Bereitstellen**.
+
+    ![RemoteDebugCplusDeploy](../debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")
+
+8. Starten Sie das Debuggen (wählen Sie **Debuggen > Debuggen starten** aus, oder drücken Sie **F5**).
+
+9. Die ausführbare Datei wird automatisch auf dem Remotecomputer bereitgestellt.
+
+10. Wenn Sie dazu aufgefordert werden, geben Sie die Anmeldeinformationen für das Netzwerk eine Verbindung zum Remotecomputer herstellen.
+
+     Die erforderlichen Anmeldeinformationen sind spezifisch für die Sicherheitskonfiguration Ihres Netzwerks. Sie können z. B. auf einem Computer, wählen Sie ein Sicherheitszertifikat oder geben Sie Ihren Domänennamen und Kennwort. Auf einem Computer nicht mit der Domäne möglicherweise eingegebenen Namen des Computers und einen gültigen Benutzerkontonamen an, wie z. B. <strong>MJO-DL\name@something.com</strong>, zusammen mit dem richtigen Kennwort.
+
+11. Auf dem Visual Studio-Computer sollte angezeigt werden, dass die Ausführung am Haltepunkt angehalten wird.
+
+    > [!TIP]
+    > Alternativ können die Dateien in einem getrennten Schritt bereitgestellt werden. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Knoten **mymfc**, und wählen Sie dann **Bereitstellen** aus.
+
+    Wenn Sie Dateien ohne Code, die von der Anwendung erforderlich sind verfügen, können Sie angeben, in **Weitere Dateien zum Bereitstellen** auf die **Remote-Windows-Debugger** Seite.
+
+    Alternativ Sie können umfassen die Dateien in Ihr Projekt, und legen Sie die **Content** Eigenschaft **Ja** in die **Eigenschaften** Seite für jede Datei. Diese Dateien werden kopiert, um die **Bereitstellungsverzeichnis** angegebenen, auf die **Remote-Windows-Debugger** Seite. Sie können auch ändern, die **Elementtyp** zu **Datei kopieren** und gibt es zusätzliche Eigenschaften angeben, bei Bedarf die Dateien in einem Unterordner des kopiert werden sollen die **Bereitstellungsverzeichnis**.
+
+## <a name="set-up-debugging-with-remote-symbols"></a>Einrichten des Debuggings mit Remotesymbolen
+
+[!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
+
+## <a name="see-also"></a>Siehe auch
+- [Debuggen in Visual Studio](../debugger/index.md)
+- [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)
+- [Konfigurieren der Windows-Firewall für das Remotedebuggen](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
+- [Remotedebugger - Portzuweisungen](../debugger/remote-debugger-port-assignments.md)
+- [Remotedebuggen von ASP.NET auf einem Remotecomputer mit IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)
+- [Remotedebuggen – Fehler und Problembehandlung](../debugger/remote-debugging-errors-and-troubleshooting.md)

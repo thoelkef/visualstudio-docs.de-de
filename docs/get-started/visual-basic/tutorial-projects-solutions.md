@@ -1,30 +1,40 @@
 ---
 title: Tutorialprojekte und -projektmappen für Visual Basic
 ms.date: 12/12/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: tutorial
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9d3196a1e6828d093245043ec5c21accd50a6bbb
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 8931e16751355a7f25c9ab88dbcd554bc7cb0ea7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739616"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965593"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Erfahren Sie mehr über Projekte und Projektmappen mithilfe von Visual Basic
 
 In diesem einführenden Artikel erfahren Sie mehr über das Erstellen einer *Projektmappe* und eines *Projekts* in Visual Studio. Eine Projektmappe ist ein Container, der zum Organisieren von mindestens einem zugehörigen Codeprojekt verwendet wird, wie z. B. eines Klassenbibliotheksprojekts und dem entsprechenden Testprojekt. Die Eigenschaften eines Projekts und einige der darin enthaltenen Dateien sollen betrachtet werden. Darüber hinaus wird ein Verweis von einem Projekt auf das andere erstellt.
 
+::: moniker range="vs-2017"
+
 > [!TIP]
-> Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) kostenlos herunterladen.
+> Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) kostenlos herunterladen.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+> [!TIP]
+> Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) kostenlos herunterladen.
+
+::: moniker-end
 
 Eine Projektmappe und ein Projekt werden von Grund auf neu erstellt, damit Sie das Konzept eines Projekts nachvollziehen können. Wenn Sie Visual Studio normalerweise verwenden, nutzen Sie sehr wahrscheinlich einige der verschiedenen *Projektvorlagen*, die Visual Studio bei der Erstellung eines neuen Projekts zur Verfügung stellt.
 
@@ -39,17 +49,35 @@ Trotz der englischen Bezeichnung „Solution“ ist eine Projektmappe keine „L
 
 Zunächst soll eine leere Projektmappe erstellt werden. Wenn Sie einmal mit Visual Studio vertraut sind, werden Sie wahrscheinlich eher selten leere Projektmappen erstellen. Wenn Sie in Visual Studio ein neues Projekt erstellen, wird automatisch auch eine Projektmappe für das Projekt erstellt, wenn noch keine geöffnet ist.
 
+::: moniker range="vs-2017"
+
 1. Öffnen Sie Visual Studio.
 
-1. Wählen Sie in der Menüleiste (die Zeile, die Menüs wie **Datei** und **Bearbeiten** enthält) die Option **Datei** > **Neu** > **Projekt** aus.
+1. Wählen Sie auf der Menüleiste **Datei** > **Neu** > **Projekt** aus.
 
    Das Dialogfeld **Neues Projekt** wird angezeigt.
 
-1. Erweitern Sie im linken Bereich **Andere Projekttypen**, und klicken Sie dann auf **Visual Studio-Projektmappen**. Wählen Sie im mittleren Bereich die Vorlage **Leere Projektmappe** aus. Geben Sie Ihrer Projektmappe den Namen **QuickSolution**, und klicken Sie anschließend auf die Schaltfläche **OK**.
+1. Erweitern Sie im linken Bereich **Andere Projekttypen**, und klicken Sie dann auf **Visual Studio-Projektmappen**. Wählen Sie im mittleren Bereich die Vorlage **Leere Projektmappe** aus. Nennen Sie Ihre Projektmappe **QuickSolution**, und wählen Sie dann **OK**.
 
    ![Vorlage „Leere Projektmappe“ in Visual Studio](../media/tutorial-projects-new-solution.png)
 
    Die **Startseite** wird geschlossen, und im **Projektmappen-Explorer** wird auf der rechten Seite im Visual Studio-Fenster eine Projektmappe angezeigt. Sie verwenden den **Projektmappen-Explorer** wahrscheinlich häufig, um die Inhalte Ihrer Projekte zu durchsuchen.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Öffnen Sie Visual Studio.
+
+2. Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
+
+3. Geben Sie auf der Seite **Neues Projekt erstellen** im Suchfeld **leere Projektmappe** ein, und wählen Sie die Vorlage **Leere Projektmappe** und dann **Weiter** aus.
+
+4. Nennen Sie die Lösung **QuickSolution**, und wählen Sie dann **Erstellen** aus.
+
+   Im **Projektmappen-Explorer** wird auf der rechten Seite im Visual Studio-Fenster eine Projektmappe angezeigt. Sie verwenden den **Projektmappen-Explorer** wahrscheinlich häufig, um die Inhalte Ihrer Projekte zu durchsuchen.
+
+::: moniker-end
 
 ### <a name="add-a-project"></a>Hinzufügen eines Projekts
 

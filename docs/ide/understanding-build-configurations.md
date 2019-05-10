@@ -1,7 +1,6 @@
 ---
 title: Grundlagen der Buildkonfiguration
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 f1_keywords:
@@ -24,27 +23,27 @@ helpviewer_keywords:
 ms.assetid: 934c727d-3a22-429c-bd13-3552cecf2e24
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3e361b407d013f27f3cf76d1ff0da98aa36c3c8
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 030b581f44535c62b950b5b54c15aa36232711e2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349048"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821756"
 ---
 # <a name="understand-build-configurations"></a>Grundlagen der Buildkonfiguration
 
-Sie können verschiedene Konfigurationen der Projektmappen- und Projekteigenschaften speichert, die in unterschiedlichen Arten von Builds verwendet werden können. Konfiguration können mit **Configuration Manager** ausgewählt, geändert oder gelöscht werden. Wählen Sie zum Öffnen in der Menüleiste **Erstellen** > **Configuration Manager** aus, oder geben Sie **Konfiguration** im Feld **Schnellstart** ein. Sie können auch die Liste **Projektmappenkonfigurationen** auf der Symbolleiste **Standard** zum Auswählen einer Konfiguration verwenden, oder Sie öffnen den **Configuration Manager**.
+Sie können verschiedene Konfigurationen der Projektmappen- und Projekteigenschaften speichert, die in unterschiedlichen Arten von Builds verwendet werden können. Konfiguration können mit **Configuration Manager** ausgewählt, geändert oder gelöscht werden. Wählen Sie zum Öffnen in der Menüleiste **Erstellen** > **Konfigurations-Manager** aus, oder geben Sie im Suchfeld einfach den Begriff **Konfiguration** ein. Sie können auch die Liste **Projektmappenkonfigurationen** auf der Symbolleiste **Standard** zum Auswählen einer Konfiguration verwenden, oder Sie öffnen den **Configuration Manager**.
 
 > [!NOTE]
 > Dieses Thema gilt für Visual Studio unter Windows. Informationen zu Visual Studio für Mac finden Sie unter [Buildkonfigurationen in Visual Studio für Mac](/visualstudio/mac/configurations).
 
 > [!NOTE]
-> Falls auf der Symbolleiste keine Einstellungen für Projektmappenkonfigurationen enthalten sind und Sie nicht auf den **Configuration Manager** zugreifen können, sind möglicherweise [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Entwicklungseinstellungen aktiviert. Weitere Informationen finden Sie unter [Vorgehensweise: Verwalten von Konfigurationen mit aktivierten Visual Basic Developer-Einstellungen](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).
+> Falls auf der Symbolleiste keine Einstellungen für Projektmappenkonfigurationen enthalten sind und Sie nicht auf den **Configuration Manager** zugreifen können, sind möglicherweise [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Entwicklungseinstellungen aktiviert. Weitere Informationen finden Sie unter [Vorgehensweise: Verwalten von Buildkonfigurationen mit aktivierten Visual Basic Developer-Einstellungen](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).
 
-Standardmäßig sind Debug- und Releasekonfigurationen in Projekten, die mithilfe von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Vorlagen erstellt werden, enthalten. Eine Debugkonfiguration unterstützt das Debuggen einer App, und mit einer Releasekonfiguration wird eine Version der App erstellt, die bereitgestellt werden kann. Weitere Informationen finden Sie unter [Gewusst wie: Festlegen von Debug- und Releasekonfigurationen](../debugger/how-to-set-debug-and-release-configurations.md). Sie können zudem benutzerdefinierte Projektmappenkonfigurationen und Projektkonfigurationen erstellen. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen](../ide/how-to-create-and-edit-configurations.md).
+Standardmäßig sind Debug- und Releasekonfigurationen in Projekten, die mithilfe von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Vorlagen erstellt werden, enthalten. Eine Debugkonfiguration unterstützt das Debuggen einer App, und mit einer Releasekonfiguration wird eine Version der App erstellt, die bereitgestellt werden kann. Weitere Informationen finden Sie unter [Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen](../debugger/how-to-set-debug-and-release-configurations.md). Sie können zudem benutzerdefinierte Projektmappenkonfigurationen und Projektkonfigurationen erstellen. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen](../ide/how-to-create-and-edit-configurations.md).
 
 ## <a name="solution-configurations"></a>Projektmappenkonfigurationen
 
@@ -73,20 +72,20 @@ Die aktive Projektmappenkonfiguration stellt der IDE auch Kontext bereit. Wenn S
 ## <a name="how-visual-studio-assigns-project-configurations"></a>Zuweisen von Projektkonfigurationen in Visual Studio
  Wenn Sie eine neue Projektmappenkonfiguration definieren und keine Einstellungen von einer vorhandenen kopieren, werden in Visual Studio zum Zuweisen standardmäßiger Projektkonfigurationen die folgenden Kriterien angewendet. Die Kriterien werden in der angezeigten Reihenfolge ausgewertet.
 
-1.  Wenn ein Projekte einen Konfigurationsname enthält(*\<<Konfigurationsname> \<Plattformname>*), der genau dem Namen der neuen Projektmappenkonfiguration entspricht, wird diese Konfiguration zugewiesen. In Konfigurationsnamen wird die Groß-/Kleinschreibung nicht beachtet.
+1. Wenn ein Projekte einen Konfigurationsname enthält(*\<<Konfigurationsname> \<Plattformname>*), der genau dem Namen der neuen Projektmappenkonfiguration entspricht, wird diese Konfiguration zugewiesen. In Konfigurationsnamen wird die Groß-/Kleinschreibung nicht beachtet.
 
-2.  Wenn das Projekt über einen Konfigurationsnamen verfügt, in dem der der Namensteil der Konfiguration der neuen Projektmappenkonfiguration entspricht, wird diese Konfiguration unabhängig des Plattformteils zugewiesen.
+2. Wenn das Projekt über einen Konfigurationsnamen verfügt, in dem der der Namensteil der Konfiguration der neuen Projektmappenkonfiguration entspricht, wird diese Konfiguration unabhängig des Plattformteils zugewiesen.
 
-3.  Gibt es auch danach noch keine Übereinstimmung, wird die erste im Projekt aufgeführte Konfiguration zugewiesen.
+3. Gibt es auch danach noch keine Übereinstimmung, wird die erste im Projekt aufgeführte Konfiguration zugewiesen.
 
 ## <a name="how-visual-studio-assigns-solution-configurations"></a>Zuweisen von Projektmappenkonfigurationen in Visual Studio
  Wenn Sie eine Projektkonfiguration erstellen (indem Sie in **Configuration Manager** im Dropdownmenü der Spalte **Konfiguration** für dieses Projekt die Option **Neu** auswählen) und das Kontrollkästchen **Neue Projektmappenkonfigurationen erstellen** aktivieren, wird in Visual Studio nach einer gleich benannten Projektmappenkonfiguration gesucht, um das Projekt auf jeder davon unterstützten Plattform zu erstellen. In einigen Fällen werden vorhandene Projektmappenkonfigurationen von Visual Studio umbenannt, oder es werden neue definiert.
 
  In Visual Studio werden die folgenden Kriterien für die Zuweisung von Projektmappenkonfigurationen verwendet.
 
--   Wenn in einer Projektkonfiguration keine Plattform oder nur eine einzige Plattform angegeben ist, wird entweder eine Projektmappenkonfiguration gesucht, deren Name dem der neuen Projektkonfiguration entspricht, oder es wird eine solche hinzugefügt. Der Standardname dieser Projektmappenkonfiguration enthält keinen Plattformnamen und weist das Format *\<Projektkonfigurationsname>* auf.
+- Wenn in einer Projektkonfiguration keine Plattform oder nur eine einzige Plattform angegeben ist, wird entweder eine Projektmappenkonfiguration gesucht, deren Name dem der neuen Projektkonfiguration entspricht, oder es wird eine solche hinzugefügt. Der Standardname dieser Projektmappenkonfiguration enthält keinen Plattformnamen und weist das Format *\<Projektkonfigurationsname>* auf.
 
--   Wenn von einem Projekt mehrere Plattformen unterstützt werden, wird eine Projektmappenkonfiguration für jede unterstützte Plattform gesucht oder hinzugefügt. Der Name jeder Projektmappenkonfiguration umfasst sowohl den Namen der Projektkonfiguration als auch den Plattformnamen und verfügt über das Format *\<Projektkonfigurationsname> \<Plattformname>*.
+- Wenn von einem Projekt mehrere Plattformen unterstützt werden, wird eine Projektmappenkonfiguration für jede unterstützte Plattform gesucht oder hinzugefügt. Der Name jeder Projektmappenkonfiguration umfasst sowohl den Namen der Projektkonfiguration als auch den Plattformnamen und verfügt über das Format *\<Projektkonfigurationsname> \<Plattformname>*.
 
 ## <a name="see-also"></a>Siehe auch
 

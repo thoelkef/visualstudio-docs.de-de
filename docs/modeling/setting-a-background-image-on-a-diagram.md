@@ -4,16 +4,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 63243df353dc141363a3ebfdd61a5f90a2fe6258
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e79a7fd37bd5f2d5298bda6dca7568c6ba4db6ce
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887866"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823956"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Festlegen eines Hintergrundbilds für ein Diagramm
 In Visual Studio-Visualisierungs- und Modellierungs-SDK können Sie das Hintergrundbild für einen generierten Designer mithilfe von benutzerdefiniertem Code festlegen.
@@ -22,21 +21,21 @@ In Visual Studio-Visualisierungs- und Modellierungs-SDK können Sie das Hintergr
 
 #### <a name="to-set-a-background-image-for-a-generated-designer"></a>So legen Sie ein Hintergrundbild für einen generierten Designer fest
 
-1.  Kopieren Sie die Bilddatei, die Sie als Diagrammhintergrund verwenden möchten, in das Verzeichnis "Dsl\Resources" des aktuellen Projekts.
+1. Kopieren Sie die Bilddatei, die Sie als Diagrammhintergrund verwenden möchten, in das Verzeichnis "Dsl\Resources" des aktuellen Projekts.
 
-2.  In **Projektmappen-Explorer**mit der rechten Maustaste auf den Ordner "Dsl\Resources", zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **vorhandenes Element**.
+2. In **Projektmappen-Explorer**mit der rechten Maustaste auf den Ordner "Dsl\Resources", zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **vorhandenes Element**.
 
-3.  In der **vorhandenes Element hinzufügen** (Dialogfeld), navigieren Sie zu dem Ordner "Dsl\Resources".
+3. In der **vorhandenes Element hinzufügen** (Dialogfeld), navigieren Sie zu dem Ordner "Dsl\Resources".
 
-4.  In der **Dateityp** auf **Bilddateien**.
+4. In der **Dateityp** auf **Bilddateien**.
 
-5.  Klicken Sie auf die Bilddatei, die Sie in das Verzeichnis kopiert, und klicken Sie dann auf **hinzufügen**.
+5. Klicken Sie auf die Bilddatei, die Sie in das Verzeichnis kopiert, und klicken Sie dann auf **hinzufügen**.
 
-6.  Mit der rechten Maustaste Dsl, und klicken Sie auf **Eigenschaften** um die Eigenschaften des Dsl-Projekt zu öffnen.
+6. Mit der rechten Maustaste Dsl, und klicken Sie auf **Eigenschaften** um die Eigenschaften des Dsl-Projekt zu öffnen.
 
-7.  Auf der **Ressourcen** auf **dieses Projekt enthält keine Standardressourcendatei. Klicken Sie hier, um eine zu erstellen.**
+7. Auf der **Ressourcen** auf **dieses Projekt enthält keine Standardressourcendatei. Klicken Sie hier, um eine zu erstellen.**
 
-8.  Die Bilddatei der Ressourcendatei hinzuzufügen, ziehen Sie das Bild aus **Projektmappen-Explorer** in das Fenster "Ressourcen".
+8. Die Bilddatei der Ressourcendatei hinzuzufügen, ziehen Sie das Bild aus **Projektmappen-Explorer** in das Fenster "Ressourcen".
 
 9. Öffnen Sie das Menü "Datei", und klicken Sie auf die Option zum Speichern der Projekteigenschaften.
 

@@ -19,56 +19,56 @@ helpviewer_keywords:
 ms.assetid: 73cc9afe-f4a4-474e-bb89-5a33fb5e570c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9222a36bd1e03a1f213a0d3ea0e86e269e912d12
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: aa16bd6f93198e5360139dbc5a6a0d96f02a1e41
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564703"
 ---
 # <a name="context-operator-in-the-visual-studio-debugger-c"></a>Kontextoperator in Visual Studio-Debugger (C++)
-Sie können den Kontextoperator in C++ zur Kennzeichnung von Haltepunktpositionen, Variablennamen oder Ausdrücken verwenden. Der Kontextoperator eignet sich für die Angabe eines Namens außerhalb des Gültigkeitsbereichs, der andernfalls durch einen lokalen Namen verborgen würde.  
-  
-##  <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> Syntax  
- Es gibt zwei Methoden zum Angeben von Kontext:  
-  
-1.  {,,[*module*] } *expression*  
-  
-     Die Klammern müssen zwei Kommas und den Modulnamen (ausführbare Datei oder DLL) oder den vollständigen Pfad enthalten.  
-  
-     Um z. B. in der `SomeFunction` -Funktion von EXAMPLE.dll einen Haltepunkt festlegen, gehen Sie wie folgt vor:  
-  
-    ```C++  
-    {,,EXAMPLE.dll}SomeFunction  
-    ```  
-  
-2.  *module*!*expression*  
-  
-    ```C++  
-    EXAMPLE.dll!SomeFunction  
-    ```  
-  
-- *module* ist der Name eines Moduls. Sie können einen vollständigen Pfad verwenden, um zwischen Modulen mit demselben Namen zu unterscheiden.  
-  
-   Wenn der *module* -Pfad ein Komma, ein eingebettetes Leerzeichen oder eine geschweifte Klammer enthält, müssen Sie den Pfad in doppelte Anführungszeichen einschließen, damit die Zeichenfolge vom Kontextparser richtig erkannt wird. Einfache Anführungszeichen werden als Teil eines Windows-Dateinamens betrachtet. Daher sollten stets doppelte Anführungszeichen verwendet werden. Ein auf ein Objekt angewendeter  
-  
-  ```C++  
-  {,,"a long, long, library name.dll"} g_Var  
-  ```  
-  
-- *expression* ist ein beliebiger gültiger C++-Ausdruck, der zu einem gültigen Ziel, z. B. einem Funktionsnamen, einem Variablennamen oder einer Zeigeradresse in *module*aufgelöst wird.  
-  
-  Wenn die Ausdrucksauswertung in einem Ausdruck auf ein Symbol trifft, wird in der folgenden Reihenfolge danach gesucht:  
-  
-1.  Beginnend mit dem aktuellen Block (in geschweifte Klammern eingeschlossene Anweisungsreihe) vom lexikalischen Gültigkeitsbereich nach außen und weiter zum äußeren, umschließenden Block. Der aktuelle Block entspricht dem Code mit der aktuellen Position (der Adresse des Anweisungszeigers).  
-  
-2.  Gültigkeitsbereich der Funktion. Die aktuelle Funktion.  
-  
-3.  Gültigkeitsbereich der Klasse, sofern sich die aktuelle Position innerhalb einer C++-Memberfunktion befindet. Der Klassengültigkeitsbereich umfasst alle Basisklassen. Von der Ausdrucksauswertung werden die normalen Dominanzregeln verwendet.  
-  
-4.  Globale Symbole im aktuellen Modul.  
-  
-5.  Öffentliche Symbole im aktuellen Programm.
+Sie können den Kontextoperator in C++ zur Kennzeichnung von Haltepunktpositionen, Variablennamen oder Ausdrücken verwenden. Der Kontextoperator eignet sich für die Angabe eines Namens außerhalb des Gültigkeitsbereichs, der andernfalls durch einen lokalen Namen verborgen würde.
+
+## <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> Syntax
+ Es gibt zwei Methoden zum Angeben von Kontext:
+
+1. {,,[*module*] } *expression*
+
+     Die Klammern müssen zwei Kommas und den Modulnamen (ausführbare Datei oder DLL) oder den vollständigen Pfad enthalten.
+
+     Um z. B. in der `SomeFunction` -Funktion von EXAMPLE.dll einen Haltepunkt festlegen, gehen Sie wie folgt vor:
+
+    ```C++
+    {,,EXAMPLE.dll}SomeFunction
+    ```
+
+2. *module*!*expression*
+
+    ```C++
+    EXAMPLE.dll!SomeFunction
+    ```
+
+- *module* ist der Name eines Moduls. Sie können einen vollständigen Pfad verwenden, um zwischen Modulen mit demselben Namen zu unterscheiden.
+
+   Wenn der *module* -Pfad ein Komma, ein eingebettetes Leerzeichen oder eine geschweifte Klammer enthält, müssen Sie den Pfad in doppelte Anführungszeichen einschließen, damit die Zeichenfolge vom Kontextparser richtig erkannt wird. Einfache Anführungszeichen werden als Teil eines Windows-Dateinamens betrachtet. Daher sollten stets doppelte Anführungszeichen verwendet werden. Ein auf ein Objekt angewendeter
+
+  ```C++
+  {,,"a long, long, library name.dll"} g_Var
+  ```
+
+- *expression* ist ein beliebiger gültiger C++-Ausdruck, der zu einem gültigen Ziel, z. B. einem Funktionsnamen, einem Variablennamen oder einer Zeigeradresse in *module*aufgelöst wird.
+
+  Wenn die Ausdrucksauswertung in einem Ausdruck auf ein Symbol trifft, wird in der folgenden Reihenfolge danach gesucht:
+
+1. Beginnend mit dem aktuellen Block (in geschweifte Klammern eingeschlossene Anweisungsreihe) vom lexikalischen Gültigkeitsbereich nach außen und weiter zum äußeren, umschließenden Block. Der aktuelle Block entspricht dem Code mit der aktuellen Position (der Adresse des Anweisungszeigers).
+
+2. Gültigkeitsbereich der Funktion. Die aktuelle Funktion.
+
+3. Gültigkeitsbereich der Klasse, sofern sich die aktuelle Position innerhalb einer C++-Memberfunktion befindet. Der Klassengültigkeitsbereich umfasst alle Basisklassen. Von der Ausdrucksauswertung werden die normalen Dominanzregeln verwendet.
+
+4. Globale Symbole im aktuellen Modul.
+
+5. Öffentliche Symbole im aktuellen Programm.

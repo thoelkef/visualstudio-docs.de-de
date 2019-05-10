@@ -1,8 +1,6 @@
 ---
 title: Dialogfelder „Befehlszeile für Präbuildereignis“ und „Befehlszeile für Postbuildereignis“
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuildEventsBuilder
@@ -32,22 +30,21 @@ helpviewer_keywords:
 ms.assetid: d49b2c57-24bf-4fb2-8351-5c4b6cca938f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e27a7e624607009e986d301fa802fdbe1597a3c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 977bd72b478d2106f687d3666aad574a63ca68ec
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947972"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969058"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Dialogfeld "Befehlszeile für Präbuildereignis"/"Befehlszeile für Postbuildereignis"
 Sie können Prä- oder Postbuildereignisse für die [Seite „Buildereignisse“, Projekt-Designer (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) direkt in das Bearbeitungsfeld eingeben oder Prä- und Postbuildmakros aus der Liste der verfügbaren Makros auswählen.
 
 > [!NOTE]
 > Präbuildereignisse werden nicht ausgeführt, wenn das Projekt auf dem neuesten Stand ist, und es wird kein Build gestartet.
-
 
 ## <a name="ui-element-list"></a>Liste der Elemente der Benutzeroberfläche
  **Bearbeitungsfeld der Befehlszeile**
@@ -56,7 +53,6 @@ Sie können Prä- oder Postbuildereignisse für die [Seite „Buildereignisse“
 
 > [!NOTE]
 > Fügen Sie allen Postbuildbefehlen, die BAT-Dateien ausführen, eine `call`-Anweisung hinzu. Beispielsweise `call C:\MyFile.bat` oder `call C:\MyFile.bat call C:\MyFile2.bat`.
-
 
  **Makros**
 
@@ -73,7 +69,7 @@ Sie können Prä- oder Postbuildereignisse für die [Seite „Buildereignisse“
 ### <a name="macros"></a>Makros
  Sie können diese Makros verwenden, um Speicherorte für Dateien anzugeben oder bei einer Mehrfachauswahl den tatsächlichen Namen der Eingabedatei abrufen. Bei diesen Makros wird nicht zwischen Groß-/Kleinschreibung unterschieden.
 
-|Makro|description|
+|Makro|Beschreibung|
 |-----------|-----------------|
 |`$(ConfigurationName)`|Der Name der aktuellen Projektkonfiguration, z.B. „Debug“.|
 |`$(OutDir)`|Der Pfad des Ausgabedateiverzeichnisses relativ zum Projektverzeichnis. Dies wird in den Wert für die Eigenschaft „Output Directory“ aufgelöst. Ein nachgestellter umgekehrter Schrägstrich („\\“) ist enthalten.|
@@ -99,5 +95,5 @@ Sie können Prä- oder Postbuildereignisse für die [Seite „Buildereignisse“
 
 - [Angeben von benutzerdefinierten Build-Ereignissen in Visual Studio](../../ide/specifying-custom-build-events-in-visual-studio.md)
 - [Seite „Buildereignisse“, Projekt-Designer (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)
-- [Gewusst wie: Festlegen von Buildereignissen (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
-- [Gewusst wie: Angeben von Buildereignissen (C#)](../../ide/how-to-specify-build-events-csharp.md)
+- [Vorgehensweise: Angeben von Buildereignissen (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
+- [Vorgehensweise: Angeben von Buildereignissen (C#)](../../ide/how-to-specify-build-events-csharp.md)

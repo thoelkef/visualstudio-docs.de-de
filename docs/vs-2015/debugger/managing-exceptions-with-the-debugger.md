@@ -1,14 +1,9 @@
 ---
 title: Verwalten von Ausnahmen mit dem Debugger | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.exceptions
 - vs.debug.exceptions.find
@@ -37,13 +32,13 @@ ms.assetid: 43a77fa8-37d0-4c98-a334-0134dbca4ece
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bdb648e7a29b3ed5d9a444e203ddbdcd6b0e73dc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6e50f19c4889e5f15c7dc3d458d1347912ecbc1d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769997"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439173"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Verwalten von Ausnahmen mit dem Debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,17 +47,17 @@ Eine Ausnahme ist ein Hinweis auf einen Fehlerstatus, der auftritt, während ein
   
  Wenn eine Ausnahme ausgelöst wird, schreibt der Debugger eine Ausnahmemeldung an das Fenster „Ausgabe“. In den folgenden Fällen kann er die Ausführung unterbrechen:  
   
--   Wenn eine Ausnahme ausgelöst und nicht behandelt wird.  
+- Wenn eine Ausnahme ausgelöst und nicht behandelt wird.  
   
--   Wenn der Debugger so eingestellt ist, dass die Ausführung sofort beim Auftreten einer Ausnahme unterbrochen wird, bevor ein Handler aufgerufen wird.  
+- Wenn der Debugger so eingestellt ist, dass die Ausführung sofort beim Auftreten einer Ausnahme unterbrochen wird, bevor ein Handler aufgerufen wird.  
   
--   Wenn Sie [Just My Code](../debugger/just-my-code.md)festgelegt haben und der Debugger so eingestellt ist, dass eine Unterbrechung bei jeder Ausnahme veranlasst wird, die nicht im Benutzercode behandelt wird.  
-  
-> [!NOTE]
->  ASP.NET verfügt über einen Ausnahmehandler der obersten Ebene, der Fehlerseiten in einem Browser anzeigt. Die Ausführung wird nicht unterbrochen, es sei denn, **Nur eigenen Code** ist aktiviert. Ein Beispiel finden Sie weiter unten unter [Setting the debugger to continue on user-unhandled exceptions](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) .  
+- Wenn Sie [Just My Code](../debugger/just-my-code.md)festgelegt haben und der Debugger so eingestellt ist, dass eine Unterbrechung bei jeder Ausnahme veranlasst wird, die nicht im Benutzercode behandelt wird.  
   
 > [!NOTE]
->  In Visual Basic-Anwendungen werden alle Fehler vom Debugger als Ausnahmen behandelt. Dies ist auch dann der Fall, wenn Sie Fehlerhandler des Typs On Error verwenden.  
+> ASP.NET verfügt über einen Ausnahmehandler der obersten Ebene, der Fehlerseiten in einem Browser anzeigt. Die Ausführung wird nicht unterbrochen, es sei denn, **Nur eigenen Code** ist aktiviert. Ein Beispiel finden Sie weiter unten unter [Setting the debugger to continue on user-unhandled exceptions](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) .  
+  
+> [!NOTE]
+> In Visual Basic-Anwendungen werden alle Fehler vom Debugger als Ausnahmen behandelt. Dies ist auch dann der Fall, wenn Sie Fehlerhandler des Typs On Error verwenden.  
   
 ## <a name="managing-exceptions-with-the-exception-settings-window"></a>Verwalten von Ausnahmen mit dem Fenster „Ausnahmeeinstellungen“  
  Sie können das Fenster **Ausnahmeeinstellungen** verwenden, um anzugeben, welche Ausnahmen oder Sätze von Ausnahmen eine Unterbrechung des Debuggers auslösen sollen, und um anzugeben, an welchem Punkt die Unterbrechung vorgenommen werden soll. Sie können Ausnahmen hinzufügen oder löschen oder Ausnahmen für die Unterbrechung angeben. Öffnen Sie dieses Fenster, wenn eine Projektmappe geöffnet ist, indem Sie auf **Debuggen / Fenster / Ausnahmeeinstellungen**klicken.  
@@ -103,7 +98,7 @@ Eine Ausnahme ist ein Hinweis auf einen Fehlerstatus, der auftritt, während ein
    goodbye  
    ```  
   
-    Die `here`-Zeile wird jedoch nicht angezeigt.  
+    Die `here` -Zeile wird jedoch nicht angezeigt.  
   
 2. Eine C#-Konsolenanwendung verweist auf eine Klassenbibliothek mit einer Klasse mit zwei Methoden: einer Methode, die eine Ausnahme auslöst und diese verarbeitet, und einer zweiten Methode, die die gleiche Ausnahme auslöst, sie aber nicht behandelt:  
   
@@ -146,7 +141,7 @@ Eine Ausnahme ist ein Hinweis auf einen Fehlerstatus, der auftritt, während ein
   
    ![Wiederherstellen der Standardwerte in den Ausnahmeeinstellungen](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
-###  <a name="BKMK_UserUnhandled"></a> Einstellen des Debuggers zum Fortfahren bei Ausnahmen vom Benutzercode unbehandelt  
+### <a name="BKMK_UserUnhandled"></a> Einstellen des Debuggers zum Fortfahren bei Ausnahmen vom Benutzercode unbehandelt  
  Wenn Sie .NET- oder JavaScript-Code mit [Just My Code](../debugger/just-my-code.md)debuggen, können Sie den Debugger so einstellen, dass er bei Ausnahmen, die an anderer Stelle als im Benutzercode behandelt werden, die Ausführung nicht unterbricht.  
   
 1. Öffnen Sie im Fenster **Ausnahmeeinstellungen** das Kontextmenü, indem Sie mit der rechten Maustaste auf „Fenster“ klicken und dann **Spalten anzeigen**auswählen. (Wenn Sie **Nur eigenen Code**deaktiviert haben, wird dieser Befehl nicht angezeigt.)  
@@ -167,7 +162,7 @@ Eine Ausnahme ist ein Hinweis auf einen Fehlerstatus, der auftritt, während ein
  Wenn Sie eine Ausnahme zu den Ausnahmen für den GPU-Speicherzugriff, den JavaScript-Laufzeitausnahmen oder den Win32-Ausnahmekategorien hinzufügen möchten, müssen Sie den Fehlercode und die Beschreibung einfügen.  
   
 > [!TIP]
->  Überprüfen Sie die Rechtschreibung! Das Fenster **Ausnahmeeinstellungen** prüft nicht, ob eine hinzugefügte Ausnahme vorhanden ist. Bei Eingabe von **Sytem.UriTemplateMatchException**erhalten Sie daher einen Eintrag für diese Ausnahme und nicht für **System.UriTemplateMatchException**.  
+> Überprüfen Sie die Rechtschreibung! Das Fenster **Ausnahmeeinstellungen** prüft nicht, ob eine hinzugefügte Ausnahme vorhanden ist. Bei Eingabe von **Sytem.UriTemplateMatchException**erhalten Sie daher einen Eintrag für diese Ausnahme und nicht für **System.UriTemplateMatchException**.  
   
  Ausnahmeeinstellungen werden in der SUO-Datei der Projektmappe beibehalten, sie gelten also für eine bestimmte Projektmappe. Sie können spezifische Ausnahmeeinstellungen nicht für andere Projektmappen wiederverwenden. Zu diesem Zeitpunkt werden nur hinzugefügte Ausnahmen beibehalten, gelöschte Ausnahmen nicht. Anders ausgedrückt ist die hinzugefügte Ausnahme weiterhin vorhanden, wenn Sie die Projektmappe schließen und wieder öffnen. Wenn Sie eine Ausnahme dagegen löschen und die Projektmappe anschließend schließen und wieder öffnen, wird die Ausnahme nicht mehr angezeigt.  
   
@@ -189,12 +184,7 @@ public class GenericException<T> : Exception
 ## <a name="see-also"></a>Siehe auch  
  [Fortfahren mit der Ausführung nach einer Ausnahme](../debugger/continuing-execution-after-an-exception.md)   
  [Vorgehensweise: Untersuchen von Systemcode nach einer Ausnahme](../debugger/how-to-examine-system-code-after-an-exception.md)   
- [Vorgehensweise: Verwenden von systemeigenen Laufzeitprüfungen](../debugger/how-to-use-native-run-time-checks.md)   
+ [Vorgehensweise: Verwenden von nativen Laufzeitüberprüfungen](../debugger/how-to-use-native-run-time-checks.md)   
  [Verwenden von Laufzeitüberprüfungen ohne die C-Laufzeitbibliothek](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
  [Ausnahmen-Assistent](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   
  [Debugger – Grundlagen](../debugger/debugger-basics.md)
-
-
-
-
-

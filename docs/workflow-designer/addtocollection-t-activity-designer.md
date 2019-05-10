@@ -2,21 +2,20 @@
 title: Workflow-Designer - AddToCollection<T> Aktivitäts-Designer
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.AddToCollection`1.UI
 ms.assetid: f7fc0702-164e-4370-8946-bb2f9f9384b7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd8e92baa4192d0b40acdc1d51d01ea339b528c8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7e339e2639d85f89d4110c36710ab9c19e0fe333
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926749"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62842084"
 ---
 # <a name="addtocollectiont-activity-designer"></a>AddToCollection\<T >-Aktivitätsdesigner
 

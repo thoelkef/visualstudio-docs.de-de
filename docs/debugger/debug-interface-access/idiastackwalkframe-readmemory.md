@@ -1,30 +1,33 @@
 ---
-title: 'Idiastackwalkframe:: ReadMemory | Microsoft-Dokumentation'
-ms.date: 11/04/2016
-ms.topic: conceptual
+title: IDiaStackWalkFrame::readMemory | Microsoft-Dokumentation
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaStackWalkFrame::readMemory method
 ms.assetid: 7ab0b525-a5a7-4692-acad-e8c00fa9ab9a
-author: mikejo5000
+caps.latest.revision: 15
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: 00171e470bd5dfd2a64bf7faabb0e338eceed7b1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 82ef0d25e796f9e04ecdcfd0c54a7312b9c9edad
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874658"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62837913"
 ---
 # <a name="idiastackwalkframereadmemory"></a>IDiaStackWalkFrame::readMemory
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Liest Arbeitsspeicher aus Image an.  
   
 ## <a name="syntax"></a>Syntax  
   
-```C++  
+```cpp#  
 HRESULT readMemory (   
    MemoryTypeEnum type,  
    ULONGLONG va,  

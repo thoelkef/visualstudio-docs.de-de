@@ -1,29 +1,31 @@
 ---
 title: IDebugComPlusSymbolProvider::GetFunctionLineOffset | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetFunctionLineOffset
 - GetFunctionLineOffset
 ms.assetid: 51460f5a-4e98-427a-8315-27246e24fb61
-author: gregvanl
+caps.latest.revision: 10
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: e3fb64f69c584cc5ae9d96ccc864987b1c1e21b2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 73bd3184396ec020e8337efe6397503263be5359
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854099"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62876680"
 ---
 # <a name="idebugcomplussymbolprovidergetfunctionlineoffset"></a>IDebugComPlusSymbolProvider::GetFunctionLineOffset
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Ruft die Adresse in einer Funktion, die den Offset der angegebenen Zeile darstellt.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT GetFunctionLineOffset(  
    IDebugAddress*  pAddress,   
    DWORD           dwLine,   
@@ -55,7 +57,7 @@ int GetFunctionLineOffset(
 ## <a name="example"></a>Beispiel  
  Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) Schnittstelle.  
   
-```cpp  
+```cpp#  
 HRESULT CDebugSymbolProvider::GetFunctionLineOffset(  
     IDebugAddress *pAddress,  
     DWORD dwLine,  

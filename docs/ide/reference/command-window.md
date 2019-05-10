@@ -1,8 +1,6 @@
 ---
 title: Befehlsfenster
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.CommandWindow
@@ -15,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 48711628-1909-4713-a73e-d7b714c77f8a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 447a01f96c9f642bca743247551bc2b3d38e4d23
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d7f9edfb6b0c10a37aade6a9d37a5689e587890d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905949"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438105"
 ---
 # <a name="command-window"></a>Befehlsfenster
 Das Fenster **Befehl** wird verwendet, um Befehle oder Aliase direkt in der integrierten Entwicklungsumgebung (IDE) von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] auszuführen. Sie können sowohl Menübefehle als auch Befehle ausführen, die in keinem Menü angezeigt werden. Wählen Sie zum Anzeigen des Fensters **Befehl** im Menü **Ansicht** den Befehl **Weitere Fenster** aus, und klicken Sie dann auf **Befehlsfenster**.
@@ -63,7 +61,6 @@ Das Fenster **Befehl** wird verwendet, um Befehle oder Aliase direkt in der inte
 > [!TIP]
 > Sie können den zuvor ausgegebenen Befehl ganz oder teilweise in die Eingabezeile kopieren, indem Sie einen Bildlauf dorthin durchführen, den Befehl ganz oder teilweise hervorheben und dann die EINGABETASTE drücken.
 
-
 ## <a name="mark-mode"></a>Markierungsmodus
  Wenn Sie im Fenster **Befehl** auf eine zuvor ausgegebene Zeile klicken, schalten Sie automatisch in den Markierungsmodus um. Auf diese Weise können Sie den Text vorheriger Befehle wie in einem beliebigen anderen Text-Editor markieren, bearbeiten, kopieren und in die aktuelle Zeile einfügen.
 
@@ -83,16 +80,16 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 
  In diesem Beispiel ist
 
--   `Edit.ReplaceInFiles` der Befehl,
+- `Edit.ReplaceInFiles` der Befehl,
 
--   `/case` und `/pattern:regex` sind Schalter (eingeleitet mit dem Schrägstrich [/]),
+- `/case` und `/pattern:regex` sind Schalter (eingeleitet mit dem Schrägstrich [/]),
 
--   `regex` der Wert des `/pattern`-Schalters (der `/case`-Schalter weist keinen Wert auf), und
+- `regex` der Wert des `/pattern`-Schalters (der `/case`-Schalter weist keinen Wert auf), und
 
--   `var[1-3]+` sowie `oldpar` sind Parameter.
+- `var[1-3]+` sowie `oldpar` sind Parameter.
 
     > [!NOTE]
-    >  Jeder Befehl, Parameter, Schalter oder Wert, der Leerzeichen enthält, muss in doppelte Anführungszeichen eingeschlossen werden.
+    > Jeder Befehl, Parameter, Schalter oder Wert, der Leerzeichen enthält, muss in doppelte Anführungszeichen eingeschlossen werden.
 
 Die Position von Schaltern und Parametern kann im Allgemeinen frei auf der Befehlszeile kombiniert werden, mit Ausnahme des [Shell](../../ide/reference/shell-command.md)-Befehls, für den eine bestimmte Reihenfolge der Schalter und Parameter erforderlich ist.
 
@@ -110,7 +107,7 @@ Wenn Schalter in Kurzform zu einer Gruppe zusammengefasst und mit einem Wert ver
  Die Funktionsweise des Caretzeichens ist unabhängig davon, ob es in Anführungszeichen eingeschlossen ist oder nicht. Wenn ein Caretzeichen das letzte Zeichen in einer Zeile ist, wird es ignoriert. Im hier gezeigten Beispiel wird die Suche nach dem Muster "^t" veranschaulicht.
 
 ## <a name="use-quotes-for-path-names-with-spaces"></a>Verwenden von Anführungszeichen für Pfadnamen mit Leerzeichen
- Wenn Sie beispielsweise eine Datei öffnen möchten, die über einen Pfad mit Leerzeichen verfügt, müssen Sie den Pfad oder das Pfadsegment, das Leerzeichen enthält, in doppelte Anführungszeichen einschließen: **C:\\"Eigene Dateien"** oder **"C:\Eigene Dateien"**.
+ Wenn Sie beispielsweise eine Datei öffnen möchten, die über einen Pfad mit Leerzeichen verfügt, müssen Sie den Pfad oder das Pfadsegment, das Leerzeichen enthält, in doppelte Anführungszeichen einschließen: **C:\\„Programmdateien“** oder **„C:\Programdateien“**.
 
 ## <a name="see-also"></a>Siehe auch
 

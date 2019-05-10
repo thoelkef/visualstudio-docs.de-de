@@ -1,26 +1,25 @@
 ---
 title: Unterdrücken von Compilerwarnungen für Projekte und NuGet-Pakete
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f805ce50a94304651aca6dd1379fbbf2f5ecc7b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 2d3f207190fed7c01dd851d809e12e6032549ff3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060364"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62549310"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Vorgehensweise: Unterdrücken von Compilerwarnungen
 
 Sie können die Übersichtlichkeit eines Buildprotokolls verbessern, indem Sie eine oder mehrere Arten von Compilerwarnungen herausfiltern. Möglicherweise möchten Sie nur einen Teil der Ausgabe überprüfen, der beim Festlegen der Ausführlichkeit für Buildprotokolle auf **Normal**, **Ausführlich** oder **Diagnose** generiert wird. Weitere Informationen zur Ausführlichkeit erhalten Sie im Artikel [Vorgehensweise: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md).
 
-## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Unterdrücken bestimmter Warnungen für Visual C# oder F# #
+## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Unterdrücken bestimmter Warnungen für Visual C# oder F\#
 
 Verwenden Sie die Eigenschaftenseite **Build**, um bestimmte Warnungen für C#- und F#-Projekte zu unterdrücken.
 
@@ -64,7 +63,7 @@ In diesem Beispiel wird gezeigt, wie Sie die *VBPROJ*-Datei zum Unterdrücken be
 
 1. Wählen Sie in der Menüleiste **Projekt** > **Projekt entladen** aus.
 
-1. Öffnen Sie im **Projektmappen-Explorer** per Rechtsklick das Kontextmenü für das Projekt, und klicken Sie dann auf **<ProjectName>.vbproj bearbeiten**.
+1. Öffnen Sie im **Projektmappen-Explorer** per Rechtsklick das Kontextmenü für das Projekt, und wählen Sie dann **Bearbeiten\<Projektname>.vbproj** aus.
 
     Die XML-Projektdatei wird im Code-Editor geöffnet.
 

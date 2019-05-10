@@ -1,14 +1,9 @@
 ---
 title: 'Fehler: Debuggen kann nicht auf dem Webserver | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.http
 - vwd.nonadmin.error.
@@ -32,22 +27,22 @@ ms.assetid: f62e378a-3a99-4f78-9d97-8bb63a4da181
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 168aaff6e7165c0566b198dab22174b14dad9949
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0b0cbd7afe90b1dbc091263e3a2594c9ca739e1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51779293"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048761"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Fehler: Das Debuggen kann auf dem Webserver nicht gestartet werden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Wenn Sie versuchen, eine ASP.NET-Anwendung auf einem Webserver zu debuggen, erhalten Sie möglicherweise folgende Fehlermeldung: „Das Debuggen kann auf dem Webserver nicht gestartet werden“.
+Wenn Sie versuchen, eine ASP.NET-Anwendung auf einem Webserver zu debuggen, erhalten Sie möglicherweise diese Fehlermeldung wird angezeigt: Debuggen kann nicht auf dem Webserver.
   
 In vielen Fällen tritt dieser Fehler auf, da IIS nicht ordnungsgemäß konfiguriert ist.
 
-##  <a name="vxtbshttpservererrorsthingstocheck"></a> Überprüfen Sie die IIS-Konfiguration
+## <a name="vxtbshttpservererrorsthingstocheck"></a> Überprüfen Sie die IIS-Konfiguration
 
 Nach dem Maßnahmen zur Problembehebung detaillierte hier und vor dem erneuten Versuch zum Debuggen, müssen Sie auch IIS zurücksetzen. Sie können Sie dies, indem Sie eine Administrator-Eingabeaufforderung öffnen und Folgendes eingeben `iisreset`, oder Sie können dies im IIS-Manager. 
 
@@ -93,10 +88,6 @@ Wenn Sie eine ältere Version von Visual Studio verwenden:
     Erhöhten in einigen Debugszenarien ASP.NET erforderlich, ein Fehler in älteren Versionen (später korrigiert).
     
 - Wenn mehrere Instanzen von Visual Studio ausführen, öffnen Sie erneut Ihr Projekt in einer Instanz von Visual Studio, und versuchen Sie es erneut.
-   
-  
+
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von Webanwendungen: Fehler und Problembehandlung](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
-
-
-

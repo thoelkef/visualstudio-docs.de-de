@@ -1,38 +1,33 @@
 ---
 title: VSPackages und das Managed Package Framework | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - managed package framework
 - VSPackages, managed package framework
 - managed VSPackages, managed package framework
 ms.assetid: e8d80e0f-6b5b-4baf-a7df-59fd808c60cd
 caps.latest.revision: 16
-manager: douge
-ms.openlocfilehash: 2e265a342ec32abea40ab9b352b5735079462a46
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0b04692ed30e69e8904919748a6db0d0eff49f54
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002118"
 ---
 # <a name="vspackages-and-the-managed-package-framework"></a>VSPackages und das Managed Package Framework
 Sie können die Entwicklungszeit reduzieren, indem Sie erstellen eine VSPackage mit dem verwalteten Paket Framework (MPF)-Klassen anstelle von mithilfe von COM-Interop-Klassen.  
   
  Es gibt zwei Möglichkeiten, ein verwaltetes VSPackage zu erstellen:  
   
--   Verwenden der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Paket-Projektvorlage  
+- Verwenden der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Paket-Projektvorlage  
   
-     Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer Menü-Befehl mit der Visual Studio-Paketvorlage](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
+     Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines Menübefehls mithilfe der Visual Studio-Paketvorlage](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
   
--   Erstellen Sie Ihr VSPackage ohne die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Paket-Projektvorlage  
+- Erstellen Sie Ihr VSPackage ohne die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Paket-Projektvorlage  
   
      Sie können z. B. Kopieren Sie ein Beispiel für VSPackage und die GUIDs und die Namen ändern. Beispiele finden Sie im Abschnitt VSX [Code Gallery](http://code.msdn.microsoft.com/vsx/).  
   

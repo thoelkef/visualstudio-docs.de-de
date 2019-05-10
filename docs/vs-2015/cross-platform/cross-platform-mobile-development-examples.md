@@ -1,32 +1,26 @@
 ---
 title: Beispiele für die plattformübergreifende mobile Entwicklung | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-mobile
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: bc384c12-fccc-45d7-9fb9-b90d536aa663
 caps.latest.revision: 5
 author: corob-msft
 ms.author: corob
-manager: ghogen
-ms.openlocfilehash: 204aafd41427f46c86146b9867880137cf1b096b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c129634dd2421809d5ac15eb930f07c94d8b39f3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795270"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657440"
 ---
 # <a name="cross-platform-mobile-development-examples"></a>Beispiele für plattformübergreifende mobile Entwicklung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Einige der Vorlagen, die von Visual C++ für plattformübergreifende Mobile-Entwicklung installiert werden, generieren vollständige Beispiele, die Sie zum Lernen verwenden können. Darüber hinaus finden Sie im Windows Dev Center einige Anwendungsbeispiele, die Sie herunterladen und in Visual Studio ausprobieren können.  
   
 - [Beispiel zu Android-Anwendung „hello-jni“](https://code.msdn.microsoft.com/hello-jni-Android-790ab73d)  
@@ -60,4 +54,3 @@ Einige der Vorlagen, die von Visual C++ für plattformübergreifende Mobile-Entw
   Um eines der Beispiele in Visual Studio öffnen, laden Sie die ZIP-Datei herunter, und öffnen Sie im Explorer die **Eigenschaften** -Seite der heruntergeladenen Datei. Wählen Sie die Schaltfläche **Zulassen** aus, und wählen Sie dann **OK**aus. Extrahieren Sie den Inhalt der ZIP-Datei in einem geeigneten Speicherort, öffnen Sie den C++-Ordner im extrahierten Beispiel, und öffnen Sie die Projektmappendatei.  
   
   Um das Beispiel zu erstellen, drücken Sie F7, oder wählen Sie auf der Menüleiste den Befehl **Erstellen**, **Projektmappe erstellen**aus.
-

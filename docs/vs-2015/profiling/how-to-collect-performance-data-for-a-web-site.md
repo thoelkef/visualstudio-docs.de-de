@@ -1,14 +1,9 @@
 ---
-title: 'Gewusst wie: Sammeln von Leistungsdaten für eine Website | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Sammeln von Leistungsdaten für eine Website | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vsperf.url.url
 - vsperf.chooseurl
@@ -23,21 +18,21 @@ ms.assetid: a62d27fd-a966-4065-bebe-6874195a71fb
 caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 646d5a59dee68123e478da074901c9d6f98c2763
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3307b5372852d6f3e269264a02fa2c90cb1acd22
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432797"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Vorgehensweise: Sammeln von Leistungsdaten für eine Website
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können den **Leistungs-Assistenten** zum Sammeln von Leistungsdaten einer [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Webanwendung verwenden. Sie können ein Profil einer Webanwendung erstellen, die in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] geöffnet ist, oder Sie können ein Profil einer [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Website erstellen, die sich auf dem lokalen Computer befindet und nicht in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-IDE geöffnet ist.  
+Sie können den **Leistungs-Assistenten** zum Sammeln von Leistungsdaten einer [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web-Anwendung verwenden. Sie können ein Profil einer Webanwendung erstellen, die in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] geöffnet ist, oder Sie können ein Profil einer [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Website erstellen, die sich auf dem lokalen Computer befindet und nicht in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-IDE geöffnet ist.  
   
 > [!NOTE]
->  Der **Leistungs-Assistent** ermöglicht Ihnen das Hinzufügen von Ebeneninteraktionsdaten (TIP) und/oder JScript-Leistungsdaten zu den gesammelten Profilerstellungsdaten. Die Option TIP sammelt Daten von serverseitigen Prozessen. Die JScript-Profilerstellung sammelt Daten aus Skripts, die auf einer lokalen oder Remotewebsite ausgeführt werden. In den meisten Fällen sollten Sie nur eine der Optionen auswählen.  
+> Der **Leistungs-Assistent** ermöglicht Ihnen das Hinzufügen von Ebeneninteraktionsdaten (TIP) und/oder JScript-Leistungsdaten zu den gesammelten Profilerstellungsdaten. Die Option TIP sammelt Daten von serverseitigen Prozessen. Die JScript-Profilerstellung sammelt Daten aus Skripts, die auf einer lokalen oder Remotewebsite ausgeführt werden. In den meisten Fällen sollten Sie nur eine der Optionen auswählen.  
   
  Je nach Benutzerzugriffsberechtigungs-Einstellungen, die ein Administrator zur Verfügung gestellt hat, kann ein einzelner Benutzer über die Sicherheitsberechtigung zur Erstellung einer Profilersitzung auf dem Computer verfügen, der den ASP.NET-Prozess hostet. Die folgenden Beispiele veranschaulichen mögliche Unterschiede zwischen Benutzern:  
   
@@ -51,25 +46,25 @@ Sie können den **Leistungs-Assistenten** zum Sammeln von Leistungsdaten einer [
   
 ### <a name="to-profile-a-web-site-project"></a>Profilieren eines Websiteprojekts  
   
-1.  Öffnen Sie das [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Webprojekt in [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] oder [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)].  
+1. Öffnen Sie das [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Webprojekt in [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] oder [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)].  
   
-2.  Klicken Sie im Menü **Analyse** auf **Leistungs-Assistenten starten**.  
+2. Klicken Sie im Menü **Analyse** auf **Leistungs-Assistenten starten**.  
   
-3.  Auf der ersten Seite des Assistenten, wählen Sie eine Profilerstellungsmethode, und klicken Sie dann auf **Weiter**. Weitere Informationen zu Profilerstellungsmethoden finden Sie unter [Grundlagen zu Profilerstellungsmethoden](../profiling/understanding-performance-collection-methods.md). Beachten Sie, dass die Parallelitätsschnellansicht Profilerstellungsmethode nicht für Webanwendungen verfügbar ist.  
+3. Auf der ersten Seite des Assistenten, wählen Sie eine Profilerstellungsmethode, und klicken Sie dann auf **Weiter**. Weitere Informationen zu Profilerstellungsmethoden finden Sie unter [Grundlagen zu Profilerstellungsmethoden](../profiling/understanding-performance-collection-methods.md). Beachten Sie, dass die Parallelitätsschnellansicht Profilerstellungsmethode nicht für Webanwendungen verfügbar ist.  
   
-4.  In der Dropdownliste **Welche Anwendung soll für die Profilerstellung als Ziel festgelegt werden?** stellen Sie sicher, dass das aktuelle Projekt ausgewählt ist, und klicken Sie dann auf **Weiter**.  
+4. In der Dropdownliste **Welche Anwendung soll für die Profilerstellung als Ziel festgelegt werden?** stellen Sie sicher, dass das aktuelle Projekt ausgewählt ist, und klicken Sie dann auf **Weiter**.  
   
-5.  Sie können auf der dritten Seite des Assistenten die Profilerstellungsdaten für Ebeneninteraktion (TIP; tier interaction profiling), Daten aus JavaScript auf Webseiten oder beides hinzufügen.  
+5. Sie können auf der dritten Seite des Assistenten die Profilerstellungsdaten für Ebeneninteraktion (TIP; tier interaction profiling), Daten aus JavaScript auf Webseiten oder beides hinzufügen.  
   
-    -   Wählen Sie das Kontrollkästchen **Profilerstellung für Ebeneninteraktion aktivieren** aus, um Ebeneninteraktionen zu erfassen.  
+    - Wählen Sie das Kontrollkästchen **Profilerstellung für Ebeneninteraktion aktivieren** aus, um Ebeneninteraktionen zu erfassen.  
   
-    -   Wählen Sie zum Sammeln von Daten aus JavaScript auf Webseiten das Kontrollkästchen **Profilerstellung für JavaScript** aus.  
+    - Wählen Sie zum Sammeln von Daten aus JavaScript auf Webseiten das Kontrollkästchen **Profilerstellung für JavaScript** aus.  
   
-6.  Klicken Sie auf **Weiter**.  
+6. Klicken Sie auf **Weiter**.  
   
-7.  Klicken Sie auf der vierten Seite des Assistenten auf **Fertig stellen**.  
+7. Klicken Sie auf der vierten Seite des Assistenten auf **Fertig stellen**.  
   
-8.  Eine Leistungssitzung wird für die [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Anwendung erstellt und die Website wird im Browser gestartet. Verwenden Sie die Funktionen, für die eine Profilerstellung erfolgen soll, und schließen Sie dann den Browser.  
+8. Eine Leistungssitzung wird für die [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Anwendung erstellt und die Website wird im Browser gestartet. Verwenden Sie die Funktionen, für die eine Profilerstellung erfolgen soll, und schließen Sie dann den Browser.  
   
      Der Profiler generiert die Datendatei und zeigt die Zusammenfassungsansicht der Daten im [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Hauptfenster.  
   
@@ -89,15 +84,15 @@ Sie können den **Leistungs-Assistenten** zum Sammeln von Leistungsdaten einer [
   
    - Für eine dateibasierte Website geben Sie einen Pfad ein, zum Beispiel file///**c:\WebSites\MySite\default.aspx**. Dies bewirkt, dass von der [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Anwendung in „C:\webSites\MySite“ ein Profil erstellt wird und die Seite http://localhost:nnnn/MySite/default.aspx im Internet Explorer zu Beginn der Sitzung gestartet wird.  
   
-   - Geben Sie die URL für externe Websites an, deren JavaScript-Daten gesammelt werden sollen (z.B. http://www.contoso.com).  
+   - Für externe Websites möchten Sie zum Sammeln von JavaScript-Daten, geben Sie die URL, z. B. http:\//www.contoso.com.  
   
      Weitere Informationen finden Sie auf den Eigenschaftenseiten für eine [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Zielbinärdatei.  
   
 6. Sie können auf der dritten Seite des Assistenten die Profilerstellungsdaten für Ebeneninteraktion (TIP; tier interaction profiling), Daten aus JavaScript auf Webseiten oder beides hinzufügen.  
   
-   -   Wählen Sie das Kontrollkästchen **Profilerstellung für Ebeneninteraktion aktivieren** aus, um Ebeneninteraktionen zu erfassen.  
+   - Wählen Sie das Kontrollkästchen **Profilerstellung für Ebeneninteraktion aktivieren** aus, um Ebeneninteraktionen zu erfassen.  
   
-   -   Wählen Sie zum Sammeln von Daten aus JavaScript auf Webseiten das Kontrollkästchen **Profilerstellung für JavaScript** aus.  
+   - Wählen Sie zum Sammeln von Daten aus JavaScript auf Webseiten das Kontrollkästchen **Profilerstellung für JavaScript** aus.  
   
 7. Klicken Sie auf **Weiter**.  
   
@@ -112,6 +107,3 @@ Sie können den **Leistungs-Assistenten** zum Sammeln von Leistungsdaten einer [
  [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)   
  [Grundlagen zu Instrumentierungsdatenwerten](../profiling/understanding-instrumentation-data-values.md)   
  [Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)
-
-
-

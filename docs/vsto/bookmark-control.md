@@ -1,7 +1,6 @@
 ---
 title: Bookmark-Steuerelement
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - VST.Toolbox.Bookmark
@@ -15,15 +14,15 @@ helpviewer_keywords:
 - Bookmark control
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d9a2de59d0cdb9cd1114375d4327ab3e3a6b5af7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 00271d77cb5b172fbbbf02682eb7e23c6246ca23
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960416"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939333"
 ---
 # <a name="bookmark-control"></a>Bookmark-Steuerelement
   Das <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelement ist eine Textmarke, die über einen eindeutigen Namen verfügt, Ereignisse verfügbar macht und an Daten gebunden werden kann. Die Textmarke kann als Platzhalter verwendet werden, um ein Element oder eine Position in einem Microsoft Office Word-Dokument zu markieren. Das <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelement ist eine Kombination aus einem <xref:Microsoft.Office.Interop.Word.Bookmark> - und einem <xref:Microsoft.Office.Interop.Word.Range> -Objekt.
@@ -49,7 +48,7 @@ ms.locfileid: "53960416"
 
 |Text-Eigenschaft|Beschreibung|
 |-------------------|-----------------|
-|<xref:Microsoft.Office.Tools.Word.Bookmark.Text?displayProperty=nameWithType>|Verwenden Sie diese Eigenschaft zum Anzeigen von Text in einer Textmarke, und belassen Sie die Textmarke im Dokument. Durch das Zuweisen von Text zur Textmarke wird der Textmarkenbereich erweitert und die Textmarke nicht gelöscht.<br /><br /> `Bookmark1.Text = "Hello world"` fügt z. B. den Text in die Textmarken ein, und die Textmarke bleibt intakt.|
+|<xref:Microsoft.Office.Tools.Word.Bookmark.Text?displayProperty=nameWithType>|Verwenden Sie diese Eigenschaft zum Anzeigen von Text in einer Textmarke, und belassen Sie die Textmarke im Dokument. Durch das Zuweisen von Text zur Textmarke wird der Textmarkenbereich erweitert und die Textmarke nicht gelöscht.<br /><br /> `Bookmark1.Text = "Hello world"` fügt z. B. den Text in die Textmarken ein, und die Textmarke bleibt intakt.|
 |<xref:Microsoft.Office.Interop.Word.Range.Text?displayProperty=nameWithType>|Verwenden Sie diese Eigenschaft, um Text an der Position der Textmarke anzuzeigen und die Textmarke automatisch zu löschen. `Bookmark1.Range.Text = "Hello world"` fügt z. B. den Text in die Textmarke ein, und die Textmarke wird gelöscht.|
 
 ## <a name="rename-the-control-at-design-time"></a>Benennen Sie das Steuerelement zur Entwurfszeit
@@ -90,25 +89,25 @@ In der folgenden Tabelle wird gezeigt, wie der Satz „This is sample text.“ w
 |--------------|----------|
 |Zwei separate Textmarken|[Dies ist ein Ersatz.]{}|
 |Bookmark1|This is replacement.|
-|Bookmark2|*\<leer >*|
+|Bookmark2|*\<empty>*|
 
 ## <a name="events"></a>Ereignisse
 
 Die folgenden Ereignisse sind für das <xref:Microsoft.Office.Tools.Word.Bookmark> -Steuerelement verfügbar:
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeDoubleClick>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeDoubleClick>
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick>
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.BindingContextChanged>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.BindingContextChanged>
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.Deselected>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.Deselected>
 
--   <xref:System.ComponentModel.IComponent.Disposed>
+- <xref:System.ComponentModel.IComponent.Disposed>
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.Selected>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.Selected>
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.SelectionChange>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.SelectionChange>
 
 ## <a name="see-also"></a>Siehe auch
 

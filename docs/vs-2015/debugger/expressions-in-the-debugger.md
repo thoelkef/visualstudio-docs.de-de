@@ -1,13 +1,8 @@
 ---
 title: Ausdrücke im Debugger | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.expressions
@@ -31,13 +26,13 @@ ms.assetid: 70f9b531-44c7-4d77-980d-5eddbf2bff41
 caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cf75965a9be7c8e2a9a09cc43fa6eec632d6bf90
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3999737a2fad04c9b513722ae11608574a72c410
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722219"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080736"
 ---
 # <a name="expressions-in-the-debugger"></a>Ausdrücke im Debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,7 +94,7 @@ int main()
   
 ```  
   
-###  <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> Verwenden der systeminternen Funktionen des Debuggers zur Beibehaltung des Zustands  
+### <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> Verwenden der systeminternen Funktionen des Debuggers zur Beibehaltung des Zustands  
  Die systeminternen Debugger-Funktionen geben Ihnen eine Möglichkeit, zum Aufruf bestimmter C/C++-Funktionen in Ausdrücken ohne den Zustand der Anwendung zu ändern.  
   
  Systeminterne Debugger-Funktionen:  
@@ -123,15 +118,15 @@ int main()
   
 ## <a name="ccli---unsupported-expressions"></a>C++/CLI – Nicht unterstützte Ausdrücke  
   
--   Typumwandlungen mit Zeigern oder benutzerdefinierten Typumwandlungen werden nicht unterstützt.  
+- Typumwandlungen mit Zeigern oder benutzerdefinierten Typumwandlungen werden nicht unterstützt.  
   
--   Vergleiche und Zuweisungen von Objekten werden nicht unterstützt.  
+- Vergleiche und Zuweisungen von Objekten werden nicht unterstützt.  
   
--   Überladene Operatoren und überladene Funktionen werden nicht unterstützt.  
+- Überladene Operatoren und überladene Funktionen werden nicht unterstützt.  
   
--   Boxing und Unboxing werden nicht unterstützt.  
+- Boxing und Unboxing werden nicht unterstützt.  
   
--   Der`Sizeof` -Operator wird nicht unterstützt.  
+- Der`Sizeof` -Operator wird nicht unterstützt.  
   
 ## <a name="c---unsupported-expressions"></a>C# – Nicht unterstützte Ausdrücke  
   
@@ -140,19 +135,19 @@ int main()
   
  Die folgenden Funktionen dynamischer Objekte werden nicht unterstützt:  
   
--   Die zusammengesetzten Operatoren `+=`, `-=`, `%=`, `/=`und `*=`  
+- Die zusammengesetzten Operatoren `+=`, `-=`, `%=`, `/=`und `*=`  
   
--   Viele Umwandlungen, einschließlich numerischer Umwandlungen und Typargumentumwandlungen  
+- Viele Umwandlungen, einschließlich numerischer Umwandlungen und Typargumentumwandlungen  
   
--   Methodenaufrufe mit mehr als zwei Argumenten  
+- Methodenaufrufe mit mehr als zwei Argumenten  
   
--   Eigenschaftengetter mit mehr als zwei Argumenten  
+- Eigenschaftengetter mit mehr als zwei Argumenten  
   
--   Eigenschaftensetter mit Argumenten  
+- Eigenschaftensetter mit Argumenten  
   
--   Zuweisen zu einem Indexer  
+- Zuweisen zu einem Indexer  
   
--   Boolesche Operatoren `&&` und `||`  
+- Boolesche Operatoren `&&` und `||`  
   
 ### <a name="anonymous-methods"></a>Anonyme Methoden  
  Die Erstellung neuer anonymer Methoden wird nicht unterstützt.  
@@ -164,19 +159,19 @@ int main()
   
  Die folgenden Funktionen dynamischer Objekte werden nicht unterstützt:  
   
--   Die zusammengesetzten Operatoren `+=`, `-=`, `%=`, `/=`und `*=`  
+- Die zusammengesetzten Operatoren `+=`, `-=`, `%=`, `/=`und `*=`  
   
--   Viele Umwandlungen, einschließlich numerischer Umwandlungen und Typargumentumwandlungen  
+- Viele Umwandlungen, einschließlich numerischer Umwandlungen und Typargumentumwandlungen  
   
--   Methodenaufrufe mit mehr als zwei Argumenten  
+- Methodenaufrufe mit mehr als zwei Argumenten  
   
--   Eigenschaftengetter mit mehr als zwei Argumenten  
+- Eigenschaftengetter mit mehr als zwei Argumenten  
   
--   Eigenschaftensetter mit Argumenten  
+- Eigenschaftensetter mit Argumenten  
   
--   Zuweisen zu einem Indexer  
+- Zuweisen zu einem Indexer  
   
--   Boolesche Operatoren `&&` und `||`  
+- Boolesche Operatoren `&&` und `||`  
   
 ### <a name="local-constants"></a>Lokale Konstanten  
  Lokale Konstanten werden nicht unterstützt.  
@@ -189,43 +184,38 @@ int main()
   
 ### <a name="unsupported-keywords"></a>Nicht unterstützte Schlüsselwörter  
   
--   `AddressOf`  
+- `AddressOf`  
   
--   `End`  
+- `End`  
   
--   `Error`  
+- `Error`  
   
--   `Exit`  
+- `Exit`  
   
--   `Goto`  
+- `Goto`  
   
--   `On Error`  
+- `On Error`  
   
--   `Resume`  
+- `Resume`  
   
--   `Return`  
+- `Return`  
   
--   `Select/Case`  
+- `Select/Case`  
   
--   `Stop`  
+- `Stop`  
   
--   `SyncLock`  
+- `SyncLock`  
   
--   `Throw`  
+- `Throw`  
   
--   `Try/Catch/Finally`  
+- `Try/Catch/Finally`  
   
--   `With`  
+- `With`  
   
--   Schlüsselwörter der Namespace- oder Modulebene, wie `End Sub` oder `Module`.  
+- Schlüsselwörter der Namespace- oder Modulebene, wie `End Sub` oder `Module`.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Formatbezeichner in C++](../debugger/format-specifiers-in-cpp.md)   
+ [Formatspezifizierer in C++](../debugger/format-specifiers-in-cpp.md)   
  [Context Operator (C++)](../debugger/context-operator-cpp.md)   
- [Formatbezeichner in c#](../debugger/format-specifiers-in-csharp.md)   
+ [Formatspezifizierer in C#](../debugger/format-specifiers-in-csharp.md)   
  [Pseudovariablen](../debugger/pseudovariables.md)
-
-
-
-
-

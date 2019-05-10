@@ -1,24 +1,19 @@
 ---
 title: Richtlinien zur Benutzerfreundlichkeit von Visual Studio-Benutzer | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 3abbe495-cbbc-4982-a809-38bda34553a7
 caps.latest.revision: 4
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0042fd8ef7aee9431a3268a33eece0ed2c3dbcad
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 02b01c2c1262d6c48f51f9c1867094913b8cd715
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802433"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62584930"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Richtlinien zur Benutzerfreundlichkeit in Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +26,6 @@ Die Visual Studio Richtlinien dienen für diejenigen, die neue Funktionen für V
   
 - Diese Visual Studio-Richtlinien, plattformspezifischen Leitfäden, die die allgemeinen Windows-Richtlinien in unserer Umgebung ggf. ersetzen.  
   
-- Die [Muster und Anleitungen für Windows Store-apps](https://dev.windows.com/design/interaction-ux) sind eine Referenz für die zukünftigen Muster, die in einigen Fällen, in Visual Studio verwendet werden kann.  
+- Die [Steuerelemente und Muster für die UWP-apps](/windows/uwp/design/controls-and-patterns) sind eine Referenz für die zukünftigen Muster, die in einigen Fällen, in Visual Studio verwendet werden kann.  
   
   Diese Richtlinien bieten Ihnen die Informationen darüber, was Sie beim Entwerfen von Visual Studio, und in einigen Fällen auch Informationen darüber, wie es enthalten ist. Ausführlichere Informationen der Implementierung und erfahren Sie mehr über bestimmte Anwendungsprogrammierschnittstellen (APIs), mit denen Sie schreiben Code für Lösungen, die in der integrierten Entwicklungsumgebung (IDE) von Visual Studio integrieren, verwenden Sie die [Visual Studio Software Development Kit (SDK)](https://msdn.microsoft.com/library/bb166441.aspx).
-

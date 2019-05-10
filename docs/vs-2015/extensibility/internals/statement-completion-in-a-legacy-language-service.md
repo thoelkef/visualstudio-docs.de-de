@@ -1,27 +1,22 @@
 ---
 title: Anweisungsvervollständigung in einem Legacysprachdienst | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - statement completion
 - language services, statement completion
 ms.assetid: 617439dc-3f0e-4e5f-b346-3e4e7fcf3c1b
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d88ebe84ec3ec5efb1d7c4ac04ebaee50ac65b97
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 163eb0f23716fa2f036d07612b741c0c9419b92e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408465"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>Anweisungsvervollständigung in einem Legacysprachdienst
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ Anweisungsvervollständigung wird mit dem der Sprachdienst Benutzern, die abgesc
  Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Weitere Informationen zu die neue Methode zum Implementieren der Anweisungsvervollständigung finden Sie unter [Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigung](../../extensibility/walkthrough-displaying-statement-completion.md).  
   
 > [!NOTE]
->  Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
+> Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
   
 ## <a name="implementing-statement-completion"></a>Implementieren von Anweisungsvervollständigung  
  Im Kern-Editor wird aktiviert, Anweisungsvervollständigung eine spezielle Benutzeroberfläche, die interaktiv hilft Ihnen, noch einfacher und schnell Code zu schreiben. Anweisungsvervollständigung hilft mit relevanten Objekte oder Klassen, wenn sie benötigt werden, wodurch Sie bestimmte Elemente daran erinnern zu müssen, oder müssen in einem Hilfethema für den Verweis nachgeschlagen werden vermieden werden.  
@@ -45,4 +40,3 @@ Anweisungsvervollständigung wird mit dem der Sprachdienst Benutzern, die abgesc
   
 ## <a name="see-also"></a>Siehe auch  
  [Abfangen von Befehlen von Legacysprachdiensten](../../extensibility/internals/intercepting-legacy-language-service-commands.md)
-

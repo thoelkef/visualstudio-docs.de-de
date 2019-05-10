@@ -7,32 +7,27 @@ helpviewer_keywords:
 ms.assetid: 8a5ab7a4-3668-4f78-9c08-04c5af7090f2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7671b25d38ccd075beb56ff28152efbbccca18a8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e6898f8ce028a270bbf9d83b073439cc4576f56f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823470"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433525"
 ---
 # <a name="objects"></a>erzwingen
-Die folgenden Referenzinformationen wird erläutert, Objekte, die zum Erstellen einer Instanz des Texteditors Core verwendet werden.  
-  
-## <a name="in-this-section"></a>In diesem Abschnitt  
- [VSCodeWindow-Objekt](../extensibility/vscodewindow-object.md)  
- Beschreibt das Code-Fenster-Objekt, einem speziellen Dokumentfenster, die eine oder mehrere Textansichten einschließen kann.  
-  
- [VSCodeWindowManager-Objekt](../extensibility/vscodewindowmanager-object.md)  
- Beschreibt, das Code-Fenster-Manager-Objekt, das vom Sprachdienst implementiert wird und ist verantwortlich für die Verwaltung von Zusatzelementen.  
-  
- [VSTextBuffer-Objekt](../extensibility/vstextbuffer-object.md)  
- Beschreibt das Textpufferobjekt, das einen Stream von Unicode-Text, der Daten für eine Datei darstellt.  
-  
- [VSTextView-Objekt](../extensibility/vstextview-object.md)  
- Beschreibt die Textansicht, ein Fenster, das ermöglicht Benutzern das Anzeigen und Bearbeiten von Unicode-Text des Textpuffers.  
-  
-## <a name="related-sections"></a>Verwandte Abschnitte  
- [Visual Studio SDK-Referenz](../extensibility/visual-studio-sdk-reference.md)  
- Zeigt eine Liste von Themen der Referenz.
+Die folgenden Referenzinformationen wird erläutert, Objekte, die zum Erstellen einer Instanz des Texteditors Core verwendet werden.
+
+## <a name="in-this-section"></a>In diesem Abschnitt
+- [VSCodeWindow-Objekt](../extensibility/vscodewindow-object.md) beschreibt das Code-Fenster-Objekt, einem speziellen Dokumentfenster, die eine oder mehrere Textansichten einschließen kann.
+
+- [VSCodeWindowManager-Objekt](../extensibility/vscodewindowmanager-object.md) beschreibt die Code-Fenster-Manager-Objekt, das wird vom Sprachdienst implementiert und ist verantwortlich für die Verwaltung von Zusatzelementen.
+
+- [VSTextBuffer-Objekt](../extensibility/vstextbuffer-object.md) wird beschrieben, die Text-Puffer-Objekt, das einen Stream von Unicode-Text, der Daten für eine Datei darstellt.
+
+- [VSTextView-Objekt](../extensibility/vstextview-object.md) wird beschrieben, die Textansicht, ein Fenster, das ermöglicht Benutzern das Anzeigen und Bearbeiten von Unicode-Text des Textpuffers.
+
+## <a name="related-sections"></a>Verwandte Abschnitte
+- [Visual Studio SDK-Referenz](../extensibility/visual-studio-sdk-reference.md) zeigt eine Liste der Themen mit Referenzinformationen.

@@ -1,30 +1,27 @@
 ---
 title: Navigieren in Beziehungen mit der UML-API | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: a4d11d45-b8c0-40f9-a597-363f07659610
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0f8d1392bebf4d2591bbd7e4dc7bd8755c09f2c2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cb2a02ba27f06ef027001c2de07308c153b21c2b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740538"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958938"
 ---
 # <a name="navigate-relationships-with-the-uml-api"></a>Navigieren in Beziehungen mit der UML-API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ein Modell besteht aus Elementen, die über unterschiedliche Beziehungen miteinander verknüpft sind. In diesem Thema wird beschrieben, wie Sie im Programmcode im Modell navigieren.  
+Ein Modell besteht aus Elementen, die über unterschiedliche Beziehungen miteinander verknüpft sind.  In diesem Thema wird beschrieben, wie Sie im Programmcode im Modell navigieren.  
   
 ## <a name="traversing-relationships"></a>Durchlaufen von Beziehungen  
   
@@ -155,7 +152,7 @@ IEnumerable<IUseCase>GetIncludingCases(this IUseCase usecase);
 ```  
   
 ## <a name="enumerating-relationships"></a>Auflisten von Beziehungen  
- Alle Eigenschaften des UML-Modells, die mehrere Werte zurückgeben, entsprechen der IEnumerable<>-Schnittstelle. Dies bedeutet, dass Sie verwenden können, [Linq-Abfrageausdrücke](http://go.microsoft.com/fwlink/?LinkId=168834) und den Erweiterungsmethoden, die definiert, der **"System.Linq"** Namespace.  
+ Alle Eigenschaften des UML-Modell, die mehrere Werte zurückgeben entsprechen der IEnumerable < >-Schnittstelle. Dies bedeutet, dass Sie verwenden können, [Linq-Abfrageausdrücke](http://go.microsoft.com/fwlink/?LinkId=168834) und den Erweiterungsmethoden, die definiert, der **"System.Linq"** Namespace.  
   
  Zum Beispiel:  
   
@@ -169,6 +166,3 @@ select shape.Element
 ## <a name="see-also"></a>Siehe auch  
  [Erweitern von UML-Modellen und-Diagrammen](../modeling/extend-uml-models-and-diagrams.md)   
  [Navigieren im UML-Modell](../modeling/navigate-the-uml-model.md)
-
-
-

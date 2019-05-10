@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: e2b4fa14-8f5b-444d-a903-54070b784bd4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66456257e72609183feb5f331c6d5d384c040a61
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: f884206ecafebbe26bfdadfaa7e95f3dbd0f389f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901631"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Exemplarische Vorgehensweise: Debuggen eines Webformulars
 Die Schritte in dieser exemplarischen Vorgehensweise enthalten eine Anleitung zum Debuggen von [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendungen (auch bekannt als Web Forms). Darin wird dargestellt, wie die Ausführung gestartet und beendet wird, wie Haltepunkte festgelegt und Variablen im Fenster **Überwachen** überprüft werden.
@@ -68,7 +68,7 @@ Die angezeigten Dialogfelder und Menübefehle können sich je nach den aktiven E
 
 11. Doppelklicken Sie auf das abgelegte Button-Steuerelement.
 
-     Dadurch gelangen Sie auf die Codepage. Default.aspx.cs bei C# oder Default.aspx.vb bei [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Der Cursor sollte sich in der `Button1_Click`-Funktion befinden.
+     Dadurch gelangen Sie zur Codepage: Default.aspx.cs bei C# oder Default.aspx.vb bei [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Der Cursor sollte sich in der `Button1_Click`-Funktion befinden.
 
 12. Fügen Sie folgenden Code in die `Button1_Click`-Funktion ein:
 

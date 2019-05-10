@@ -2,20 +2,18 @@
 title: Regeln für die Dateischachtelung für den Projektmappen-Explorer
 ms.date: 05/25/2018
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 helpviewer_keywords:
 - file nesting
 - Solution Explorer, file nesting
 author: angelosp
 ms.author: angelpe
-manager: douge
-ms.openlocfilehash: d50d16d23c2f12ac5ac9feaaa37ee3797802c97e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 58e727c6335dd391abab4f50a110d361a658e00a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62548957"
 ---
 # <a name="customize-file-nesting-in-solution-explorer"></a>Anpassen der Dateischachtelung im Projektmappen-Explorer
 

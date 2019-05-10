@@ -1,29 +1,31 @@
 ---
 title: IDebugGenericFieldInstance::TypeArgumentCount | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - TypeArgumentCount
 - IDebugGenericFieldInstance::TypeArgumentCount
 ms.assetid: e662c5ea-a5c1-478e-a268-5980dadffcd1
-author: gregvanl
+caps.latest.revision: 9
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 4d0c980124fdaab07b38273517df3f2cf29f69a3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b5a6b55d51cd2db25da1b51af84172d64c682245
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846911"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62919137"
 ---
 # <a name="idebuggenericfieldinstancetypeargumentcount"></a>IDebugGenericFieldInstance::TypeArgumentCount
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Gibt die Anzahl der Parameterargumente für diese Instanz zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT TypeArgumentCount(  
    ULONG32* pcArgs  
 );  

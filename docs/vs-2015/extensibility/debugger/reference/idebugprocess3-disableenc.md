@@ -1,14 +1,9 @@
 ---
 title: IDebugProcess3::DisableENC | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProcess3::DisableENC
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: cffdbdac-4d76-4aeb-aa55-5d0410db99f1
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0d518ce42642e683fa5f38f67ce9f8458f9a0979
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0db9eb44b8074a5c5e3b35a5a5dadcf04f37fb2f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807113"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405732"
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -50,7 +45,7 @@ HRESULT DisableENC(
  Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt den Fehlercode zurück.  
   
 > [!NOTE]
->  Ein benutzerdefinierten Port Lieferanten sollte immer zurückgeben `E_NOTIMPL`.  
+> Ein benutzerdefinierten Port Lieferanten sollte immer zurückgeben `E_NOTIMPL`.  
   
 ## <a name="remarks"></a>Hinweise  
  Bearbeiten und Fortfahren für einen Prozess deaktiviert ist, kann diese erneut aktiviert werden nur durch Neustart des Prozesses.  
@@ -58,4 +53,3 @@ HRESULT DisableENC(
 ## <a name="see-also"></a>Siehe auch  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   
  [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md)
-

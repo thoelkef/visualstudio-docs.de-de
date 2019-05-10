@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Sammeln von Windows-Indikatordaten | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.syscounter
@@ -13,15 +11,15 @@ helpviewer_keywords:
 - profiling tools, using windows counters
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ea074024e605d2dcc91500fb00fe0d7b6781692
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 730345edb42ff3d14608bdcce91bc7b97c4bb478
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668793"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973850"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>Vorgehensweise: Sammeln von Windows-Indikatordaten
 
@@ -50,6 +48,6 @@ Windows-Indikatoren sind Systemleistungsindikatoren, die während der Profilerst
 
 ## <a name="see-also"></a>Siehe auch
 
-[Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)  
-[Eigenschaften von Leistungssitzungen](../profiling/performance-session-properties.md)  
+[Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)
+[Eigenschaften von Leistungssitzungen](../profiling/performance-session-properties.md)
 [CPU- und Windows-Indikatoren](../profiling/cpu-and-windows-counters.md)

@@ -1,14 +1,9 @@
 ---
 title: CreateProperty-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#CreateProperty
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: fbc31a88-62d4-43d2-b739-68ef3fac38f5
 caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3c18288e5088871703605da4915786486e2e864b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ea16950e47760e89204503413fd98811e781d059
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267656"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649757"
 ---
 # <a name="createproperty-task"></a>CreateProperty-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Füllt Eigenschaften mit den übergebenen Werten auf. Dadurch können Werte aus einer Eigenschaft oder Zeichenfolge in eine andere kopiert werden.  
   
 ## <a name="attributes"></a>Attribute  
@@ -45,7 +39,7 @@ Füllt Eigenschaften mit den übergebenen Werten auf. Dadurch können Werte aus 
 |`Value`|Optionaler `String`-Ausgabeparameter.<br /><br /> Gibt den Wert an, der in die neue Eigenschaft kopiert werden soll|  
 |`ValueSetByTask`|Optionaler `String`-Ausgabeparameter.<br /><br /> Enthält denselben Wert wie der `Value`-Parameter. Verwenden Sie diesen Parameter nur, wenn die Ausgabeeigenschaft nicht von [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] festgelegt werden soll, wenn es das umschließende Ziel überspringt, weil die Ausgaben auf dem neuesten Stand sind.|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Beispiel  
@@ -78,6 +72,3 @@ Füllt Eigenschaften mit den übergebenen Werten auf. Dadurch können Werte aus 
 ## <a name="see-also"></a>Siehe auch  
  [Task Reference](../msbuild/msbuild-task-reference.md)  (MSBuild-Aufgabenreferenz)  
  [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)
-
-
-

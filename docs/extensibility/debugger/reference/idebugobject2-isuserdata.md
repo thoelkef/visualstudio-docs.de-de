@@ -1,25 +1,27 @@
 ---
 title: IDebugObject2::IsUserData | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugObject2::IsUserData
 helpviewer_keywords:
 - IDebugObject2::IsUserData method
 ms.assetid: 6ffa0d0e-f742-496d-acc7-db74c248bc45
-author: gregvanl
+caps.latest.revision: 8
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 8022c5e618df682456b81bc716e0964ff2c3a94d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 04c47390f15ff59658ba25f5c8f93918a15f47d6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834346"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62842664"
 ---
 # <a name="idebugobject2isuserdata"></a>IDebugObject2::IsUserData
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Bestimmt, ob das Objekt mit Daten des Benutzers darstellt.  
   
 ## <a name="syntax"></a>Syntax  

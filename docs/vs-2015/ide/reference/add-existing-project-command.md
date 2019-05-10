@@ -1,14 +1,9 @@
 ---
 title: Befehl „Vorhandenes Projekt hinzufügen“ | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - file.addexistingproject
 helpviewer_keywords:
@@ -18,18 +13,17 @@ ms.assetid: 71cf3e31-c76b-405b-ad6a-1b1bc654bd40
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c881f32594ee6327dfba9792fa83bd2d092efcf9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4778efc4a50ceb63e72d4283644537345510e833
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267643"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650420"
 ---
 # <a name="add-existing-project-command"></a>Befehl "Vorhandenes Projekt hinzufügen"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Fügt der aktuellen Projektmappe ein vorhandenes Projekt hinzu.  
   
 ## <a name="syntax"></a>Syntax  
@@ -46,7 +40,7 @@ File.AddExistingProject filename
   
  Wenn kein Dateiname angegeben ist, öffnet der Befehl das Dialogfeld „Datei“, damit der Benutzer ein Projekt auswählen kann.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Bei der automatischen Vervollständigung wird während der Eingabe versucht, den richtigen Pfad und Dateinamen zu finden.  
   
 ## <a name="example"></a>Beispiel  
@@ -61,6 +55,3 @@ File.AddExistingProject filename
  [Befehlsfenster](../../ide/reference/command-window.md)   
  [Such-/Befehlsfeld](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

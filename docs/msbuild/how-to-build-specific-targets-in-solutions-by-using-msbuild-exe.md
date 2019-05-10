@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Erstellen von bestimmten Zielen in Projektmappen mit MSBuild.exe | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, building specific targets in a solution
@@ -11,28 +9,28 @@ helpviewer_keywords:
 ms.assetid: f46feb9b-4c16-4fec-b6e1-36a959692ba3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb1dc2885d64999ac9f4d12568fd7da29a783d8e
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 53ce05490ac46d7a4f01010e5709364f5d35222d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977259"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Vorgehensweise: Erstellen von bestimmten Zielen in Projektmappen mit MSBuild.exe
-Sie können *MSBuild.exe* verwenden, um bestimmte Ziele von bestimmten Projekten in einer Projektmappe zu erstellen.  
-  
-#### <a name="to-build-a-specific-target-of-a-specific-project-in-a-solution"></a>So erstellen Sie ein bestimmtes Ziel von einem bestimmten Projekt in einer Projektmappe.  
-  
-1.  Geben Sie in der Befehlszeile `MSBuild.exe <SolutionName>.sln` ein, bei der `<SolutionName>` dem Dateinamen der Projektmappe entspricht, die das Ziel enthält, das Sie ausführen möchten.  
-  
+Sie können *MSBuild.exe* verwenden, um bestimmte Ziele von bestimmten Projekten in einer Projektmappe zu erstellen.
+
+#### <a name="to-build-a-specific-target-of-a-specific-project-in-a-solution"></a>So erstellen Sie ein bestimmtes Ziel von einem bestimmten Projekt in einer Projektmappe.
+
+1. Geben Sie in der Befehlszeile `MSBuild.exe <SolutionName>.sln` ein, bei der `<SolutionName>` dem Dateinamen der Projektmappe entspricht, die das Ziel enthält, das Sie ausführen möchten.
+
 2. Geben Sie das Ziel nach dem `-target:`-Schalter im Format \<Projektname>:\<Zielname> an. Wenn eines der Zeichen `%`, `$`, `@`, `;`, `.`, `(`, `)` oder `'` im Namen des Projekts enthalten ist, ersetzen Sie es im angegebenen Zielnamen durch `_`.
-  
-## <a name="example"></a>Beispiel  
- Das folgende Beispiel führt das Ziel `Rebuild` des Projekts `NotInSlnFolder` aus und führt anschließend das Ziel `Clean` des Projekts `InSolutionFolder` aus, das sich im Projektmappenordner *NewFolder* befindet.  
-  
+
+## <a name="example"></a>Beispiel
+ Das folgende Beispiel führt das Ziel `Rebuild` des Projekts `NotInSlnFolder` aus und führt anschließend das Ziel `Clean` des Projekts `InSolutionFolder` aus, das sich im Projektmappenordner *NewFolder* befindet.
+
 ```cmd
 msbuild SlnFolders.sln -target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder:Clean
 ```
@@ -43,8 +41,8 @@ Wenn Sie die für Sie verfügbaren Optionen überprüfen möchten, können Sie h
 
 Erstellen Sie mit dieser Umgebungsvariable nur dann Ziele, wenn Sie diese interne Ansicht benötigen. Diese Einstellung kann zu Problemen beim Erstellen von Projekten in Ihrer Projektmappe führen.
 
-## <a name="see-also"></a>Siehe auch  
- [Befehlszeilenreferenz](../msbuild/msbuild-command-line-reference.md)   
- [MSBuild-Referenz](../msbuild/msbuild-reference.md)   
- [MSBuild](../msbuild/msbuild.md)  
- [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)
+## <a name="see-also"></a>Siehe auch
+- [Befehlszeilenreferenz](../msbuild/msbuild-command-line-reference.md)
+- [MSBuild-Referenz](../msbuild/msbuild-reference.md)
+- [MSBuild](../msbuild/msbuild.md)
+- [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)

@@ -1,20 +1,19 @@
 ---
 title: XSLT-Standardvorlagen
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 773dd34e-67d3-4997-8df9-b71e7f880d88
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2eb71cf0a94f02e5de8af9e61bdc947694920929
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d2910a9f81a8bf4bf1e5f25245ad9a3b02adffe1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908383"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62807698"
 ---
 # <a name="xslt-default-templates"></a>XSLT-Standardvorlagen
 

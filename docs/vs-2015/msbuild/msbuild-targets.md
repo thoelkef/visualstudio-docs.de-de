@@ -1,32 +1,26 @@
 ---
 title: MSBuild-Ziele | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - MSBuild, targets
 ms.assetid: 8060b4d2-e4a9-48cf-a437-852649ceb417
 caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: af666f40dec018e2dfde330cfc5727159b8b1dc7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c4cc8d9654fc2d277f0b7c69483ab46aa3209983
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925734"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652357"
 ---
 # <a name="msbuild-targets"></a>MSBuild-Ziele
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Durch Ziele werden Aufgaben in einer bestimmten Reihenfolge gruppiert, und der Buildprozess kann in kleinere Einheiten aufgeteilt werden. Ein Ziel kann beispielsweise alle Dateien im Ausgabeverzeichnis zur Vorbereitung auf den Build löschen, während ein anderes die Eingaben für das Projekt kompiliert und diese in einem leeren Verzeichnis platziert. Weitere Informationen zu Aufgaben finden Sie unter [Aufgaben](../msbuild/msbuild-tasks.md).  
   
 ## <a name="declaring-targets-in-the-project-file"></a>Deklarieren von Zielen in der Projektdatei  
@@ -106,7 +100,4 @@ Reference: 4.0
   
 ## <a name="see-also"></a>Siehe auch  
  [MSBuild Concepts](../msbuild/msbuild-concepts.md)  (MSBuild-Grundlagen)  
- [Gewusst wie: Verwenden eines Ziels in mehreren Projektdateien](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
-
-
-
+ [Vorgehensweise: Verwenden eines Ziels in mehreren Projektdateien](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

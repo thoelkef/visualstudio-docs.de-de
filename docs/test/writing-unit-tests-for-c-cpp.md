@@ -1,19 +1,18 @@
 ---
 title: Schreiben von Komponententests für C/C++
 ms.date: 10/09/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: eb441d5987a4e1defde83d4ca9737cc27ab278fe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e78d5b983031a3589c46bbceeaeee87d125eace3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840881"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945348"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Schreiben von Komponententests für C/C++ in Visual Studio
 
@@ -31,11 +30,11 @@ Visual Studio umfasst diese C++-Testframeworks ohne zusätzliche erforderliche D
 
 Sie können Ihren eigenen Testadapter sowohl für installierte Frameworks als auch für ein beliebiges anderes Framework zur Verwendung in Visual Studio schreiben. Ein Testadapter kann Komponententests in das Fenster **Test-Explorer** integrieren. Im [Visual Studio Marketplace](https://marketplace.visualstudio.com) sind einige Adapter von Drittanbietern verfügbar. Weitere Informationen finden Sie unter [Installieren von Frameworks für Komponententests von Drittanbietern](install-third-party-unit-test-frameworks.md).
 
-**Visual Studio 2017 Version 15.7 (Professional and Enterprise)**
+**Visual Studio 2017 Version 15.7 (Professional and Enterprise) und höher**
 
 C++-Komponententestprojekte unterstützen [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md).
 
-**Visual Studio 2017, Version 15.5**
+**Visual Studio 2017, Version 15.5 und höher**
 
 - Der **Google Test-Adapter** ist als Standardkomponente in der Workload **Desktop Development mit C++** enthalten. Er verfügt über eine Projektvorlage, die Sie über das Kontextmenü **Neues Projekt hinzufügen** auf dem Projektmappenknoten im **Projektmappen-Explorer** zu einer Projektmappe hinzufügen können, sowie Optionen, die Sie über **Extras** > **Optionen** konfigurieren können. Weitere Informationen finden Sie unter [How to: Use Google Test in Visual Studio (Vorgehensweise: Verwenden von Google Test in Visual Studio)](how-to-use-google-test-for-cpp.md).
 
@@ -118,7 +117,9 @@ Bewährte Methoden im Zusammenhang mit Komponententests finden Sie unter [Grundl
 
 ## <a name="use-codelens"></a>Verwenden von CodeLens
 
-**Visual Studio 2017 Version 15.7 (nur für „Professional“ und „Enterprise“):** Mit [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) können Sie sich den Status eines Komponententests ansehen, ohne dazu den Code-Editor verlassen zu müssen. Sie können CodeLens für ein C++-Komponententestprojekt mit jeder der folgenden Möglichkeiten initialisieren:
+**Visual Studio 2017 Version 15.7 (nur Professional and Enterprise) und höher**
+
+Mit [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) können Sie sich den Status eines Komponententests ansehen, ohne dazu den Code-Editor verlassen zu müssen. Sie können CodeLens für ein C++-Komponententestprojekt mit jeder der folgenden Möglichkeiten initialisieren:
 
 - Bearbeiten und erstellen Sie Ihr Testprojekt oder Ihre -projektmappe.
 - Erstellen Sie Ihr Projekt oder die Projektmappe erneut.
@@ -128,10 +129,10 @@ Nachdem **CodeLens** initialisiert wurde, werden Statussymbole zu jedem Komponen
 
 ![C++ CodeLens-Symbole](media/cpp-test-codelens-icons.png)
 
- Klicken Sie auf das Symbol, um weitere Informationen zu erhalten oder den Komponententest auszuführen oder zu debuggen:
+Klicken Sie auf das Symbol, um weitere Informationen zu erhalten oder den Komponententest auszuführen oder zu debuggen:
 
 ![Ausführen und Debuggen von C++ CodeLens](media/cpp-test-codelens-run-debug.png)
 
 ## <a name="see-also"></a>Siehe auch
 
-[Ausführen von Komponententests für Code](unit-test-your-code.md)
+- [Ausführen von Komponententests für Code](unit-test-your-code.md)

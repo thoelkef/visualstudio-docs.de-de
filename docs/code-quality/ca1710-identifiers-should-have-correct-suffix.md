@@ -1,7 +1,6 @@
 ---
-title: 'CA1710: Bezeichner sollten ein richtiges Suffix aufweisen'
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+title: 'CA1710: Bezeichner sollten ein richtiges Suffix aufweisen.'
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - CA1710
@@ -12,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 2b8e6dce-b4e8-4a66-ba9a-6b79be5bfe8c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e8923f3bb1ae4fe92891593c2109852810beb4e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 65ac417476752da832e5e9ebe693f6c83a5c1cfe
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944709"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797417"
 ---
-# <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: Bezeichner sollten ein richtiges Suffix aufweisen
+# <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: Bezeichner sollten ein richtiges Suffix aufweisen.
 
 |||
 |-|-|
@@ -34,6 +33,8 @@ ms.locfileid: "53944709"
 ## <a name="cause"></a>Ursache
 
 Ein Bezeichner muss nicht das richtige Suffix.
+
+Diese Regel nur sucht standardmäßig an extern sichtbare Bezeichner. Dies ist jedoch [konfigurierbare](#configurability).
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
@@ -55,7 +56,7 @@ Die folgende Tabelle enthält die Basistypen und Schnittstellen, die Suffixe zug
 |<xref:System.Collections.Stack?displayProperty=fullName>|Auflistung oder Stack|
 |<xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>|Auflistung|
 |<xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|Dictionary|
-|<xref:System.Data.DataSet?displayProperty=fullName>|DataSet|
+|<xref:System.Data.DataSet?displayProperty=fullName>|Dataset|
 |<xref:System.Data.DataTable?displayProperty=fullName>|Auflistung oder DataTable|
 |<xref:System.IO.Stream?displayProperty=fullName>|Stream|
 |<xref:System.Security.IPermission?displayProperty=fullName>|Berechtigung|
@@ -91,6 +92,16 @@ Benennen Sie den Typ, damit es mit dem richtigen angehängt ist.
 Es ist sicher, unterdrücken Sie eine Warnung aus, um das Suffix "Collection" verwenden, wenn der Typ eine verallgemeinerte Datenstruktur ist, die erweitert werden kann, oder die wird eine beliebige Gruppe von verschiedenen Elementen enthalten. In diesem Fall kann ein Namen, der aussagekräftige Informationen über die Implementierung, Leistung oder andere Merkmale der Datenstruktur bereitstellt (z. B. BinaryTree) sinnvoll. In Fällen, in denen der Typ stellt eine Auflistung eines bestimmten Typs (z. B. StringCollection) dar, nicht unterdrücken Sie eine Warnung dieser Regel, weil das Suffix gibt an, dass der Typ mit aufgelistet werden, kann ein `foreach` Anweisung.
 
 Unterdrücken Sie keine Warnung dieser Regel, bei anderen Suffixen. Das Suffix ermöglicht die beabsichtigte Verwendung aus dem Typnamen zu sehen sein.
+
+## <a name="configurability"></a>Konfigurierbarkeit
+
+Wenn Sie diese Regel aus ausführen, [FxCop-Analysen](install-fxcop-analyzers.md) (und nicht über die Analyse von statischem Code), können Sie konfigurieren, welche Teile Ihrer Codebasis, um die Ausführung dieser Regel auf, um basierend auf deren Barrierefreiheit. Z. B. um anzugeben, dass die Regel nur für die nicht öffentlichen API-Oberfläche ausgeführt werden soll, fügen Sie die folgenden Schlüssel-Wert-Paar in einer editorconfig-Datei in Ihrem Projekt:
+
+```
+dotnet_code_quality.ca1710.api_surface = private, internal
+```
+
+Sie können diese Option, die für diese eine Regel, für alle Regeln oder für alle Regeln in dieser Kategorie (Naming) konfigurieren. Weitere Informationen finden Sie unter [konfigurieren FxCop-Analysetools](configure-fxcop-analyzers.md).
 
 ## <a name="related-rules"></a>Verwandte Regeln
 

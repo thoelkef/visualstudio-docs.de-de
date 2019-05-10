@@ -1,14 +1,9 @@
 ---
 title: CommentMarkProfile | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - CommentMarkProfile
 - CommentMarkProfileA
@@ -16,13 +11,13 @@ ms.assetid: 33ccff45-c33a-4672-b41f-5b317b848cd1
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 71d1722cd09bfb76e2ca8c72c6948923b0713100
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 28535db3e129029d6767ac969d121ee4cbb1aec5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802940"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416543"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,13 +54,13 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 |MARK_TEXTTOOLONG|Die Zeichenfolge überschreitet die maximale Länge von 256 Zeichen. Die Kommentarzeichenfolge wurde abgeschnitten, und die Markierung und der Kommentar werden aufgezeichnet.|  
 |MARK_OK|Bei Erfolg wird MARK_OK zurückgegeben.|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Der Profilerstellungsstatus für den Thread, der die Funktion „Mark profile“ („Profil markieren“) enthält, muss auf ON festgelegt sein, wenn Markierungen und Kommentare über den Mark-Befehl „VSInstr“ oder über Funktionen („CommentMarkAtProfile“, „CommentMarkProfile“, oder „MarkProfile“) eingefügt werden.  
   
  Profilmarkierungen sind im Bereich global. Wenn beispielsweise eine Profilmarkierung in einen Thread eingefügt wird, kann diese verwendet werden, um den Anfang oder das Ende eines Datensegments in jedem Thread der VSP-Datei zu markieren.  
   
 > [!IMPORTANT]
->  CommentMarkProfile-Methoden können nur mit der Instrumentierung verwendet werden.  
+> CommentMarkProfile-Methoden können nur mit der Instrumentierung verwendet werden.  
   
 ## <a name="net-framework-equivalent"></a>Entsprechung in .NET Framework  
  Microsoft.VisualStudio.Profiler.dll  
@@ -119,6 +114,3 @@ void ExerciseCommentMarkProfile()
   
 ## <a name="see-also"></a>Siehe auch  
  [Referenz zu Profiler-APIs in Visual Studio (systemeigen)](../profiling/visual-studio-profiler-api-reference-native.md)
-
-
-

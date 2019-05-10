@@ -1,7 +1,6 @@
 ---
 title: Regelsätze für die Codeanalyse
 ms.date: 04/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.rulesets.learnmore
@@ -9,21 +8,21 @@ helpviewer_keywords:
 - code analysis, rule sets
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dc70348ef2fe5826339bd58e1db17574449ff6c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c95b442835289265d197b6806c6d87fa051f2c1b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825083"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>Verwenden von Regelsätzen zum Gruppe von Codeanalyseregeln
 
-Wenn Sie die Codeanalyse in Visual Studio konfigurieren, können Sie aus einer Liste von integrierten *-Regelsätze*. Ein Regelsatz gilt für ein Projekt, und es ist eine Gruppierung von Code Analyseregeln, die gezielte Probleme und bestimmte Bedingungen für das Projekt zu identifizieren. Beispielsweise können Sie einen Regelsatz, der mit dem Code auf öffentlich verfügbare APIs überprüft anwenden, oder nur die empfohlene Mindestregeln für eigene. Sie können auch einen Regelsatz anwenden, der alle Regeln enthält.
+Wenn Sie die Codeanalyse in Visual Studio konfigurieren, können Sie aus einer Liste von integrierten *-Regelsätze*. Ein Regelsatz ist eine Gruppierung von Codeanalyseregeln, die gezielte Probleme und bestimmte Bedingungen für das Projekt zu identifizieren. Beispielsweise können Sie einen Regelsatz anwenden, der entwickelt wurde, um Code auf öffentlich verfügbare APIs überprüft. Sie können auch einen Regelsatz anwenden, der alle verfügbaren Regeln enthält.
 
-Sie können einen Regelsatz durch Hinzufügen oder Löschen von Regeln oder durch Ändern der Regel Schweregrade als Warnungen oder Fehler angezeigt werden Anpassen der **Fehlerliste**. Benutzerdefinierte Regelsätze können Sie an Ihre spezielle Entwicklungsumgebung anpassen. Wenn Sie einen Regelsatz anpassen, bietet der Regelsatz-Editor suchen und Filtern von Tools, die Sie während des Vorgangs helfen.
+Sie können einen Regelsatz durch Regeln hinzufügen oder löschen oder ändern die Regel Schweregrade als Warnungen oder Fehler angezeigt werden Anpassen der **Fehlerliste**. Benutzerdefinierte Regelsätze können Sie an Ihre spezielle Entwicklungsumgebung anpassen. Wenn Sie einen Regelsatz anpassen, bietet der Regelsatz-Editor suchen und Filtern von Tools, die Sie während des Vorgangs helfen.
 
 Regelsätze stehen für [statische Analyse von verwaltetem Code](how-to-configure-code-analysis-for-a-managed-code-project.md), [Analyse von C++-Code](using-rule-sets-to-specify-the-cpp-rules-to-run.md), und [Roslyn-Analysetools](analyzer-rule-sets.md).
 

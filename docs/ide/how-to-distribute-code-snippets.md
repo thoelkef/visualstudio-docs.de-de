@@ -1,37 +1,39 @@
 ---
-title: 'Vorgehensweise: Verteilen von Codeausschnitten'
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
+title: Verteilen von Codeausschnitten als Extension
+ms.date: 03/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
 ms.assetid: 5f717abd-e167-47ae-818c-6b0bae100ceb
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: cd6aba7c20c920c0c4351a1e9aa263fc73cd4415
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 0f0b3211352dc16e51b64196e13f7378bf2a423c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380416"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429540"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Vorgehensweise: Verteilen von Codeausschnitten
 
-Sie können die Codeausschnitte Ihren Freunden senden, und diese können die Ausschnitte mithilfe des **Codeausschnitt-Managers** auf ihren Computern installieren. Wenn Sie jedoch viele Ausschnitte verteilen möchten oder eine breitere Verteilung erforderlich ist, fügen Sie die Ausschnittdatei in eine Visual Studio-Erweiterung ein. Visual Studio-Benutzer können die Erweiterung anschließend installieren.
+Sie können die Codeausschnitte Ihren Freunden senden, und diese können die Ausschnitte mithilfe des **Codeausschnitt-Managers** auf ihren Computern installieren. Wenn Sie jedoch viele Ausschnitte verteilen möchten oder eine breitere Verteilung erforderlich ist, können Sie die Ausschnittdatei in eine Visual Studio-Extension einschließen. Visual Studio-Benutzer können die Extension anschließend installieren, um an die Codeausschnitte zu gelangen.
 
-Sie müssen das Visual Studio SDK installieren, um Visual Studio-Erweiterungen zu erstellen. Unter [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) finden Sie die Version des Visual Studio SDK, die zu Ihrer Installation von Visual Studio passt.
+## <a name="prerequisites"></a>Erforderliche Komponenten
+
+Installieren Sie die Workload **Visual Studio-Extensionsentwicklung**, um Zugriff auf die **VSIX-Projekt**-Projektvorlagen zu erhalten.
+
+![Visual Studio-Extensionentwicklung-Workload](media/vs-2019/extension-development-workload.png)
 
 ## <a name="set-up-the-extension"></a>Einrichten der Erweiterung
 
-In diesem Verfahren verwenden wir den „Hallo Welt“-Codeausschnitt aus [Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts](../ide/walkthrough-creating-a-code-snippet.md). Wir stellen den *SNIPPET*-Text zur Verfügung, damit Sie ihn nicht selbst erstellen müssen.
+In diesem Verfahren verwenden Sie den „Hallo Welt“-Codeausschnitt aus [Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts](../ide/walkthrough-creating-a-code-snippet.md). Dieser Artikel enthält den XML-Code des Codeausschnitts, Sie brauchen also nicht zurückzugehen und einen Codeausschnitt zu erstellen.
 
-1. Erstellen Sie ein neues VSIX-Projekt namens **TestSnippet**. (**Datei** > **Neu** > **Projekt** > **Visual C# (oder Visual Basic)** > **Erweiterungen**)
+1. Erstellen Sie ein neues Projekt aus der Vorlage **Leeres VSIX-Projekt**, und nennen Sie das Projekt **TestSnippet**.
 
 2. Fügen Sie im Projekt **TestSnippet** eine neue XML-Datei hinzu, und nennen Sie sie *VBCodeSnippet.snippet*. Ersetzen Sie den Inhalt durch folgenden XML-Code:
 
@@ -69,7 +71,17 @@ In diesem Verfahren verwenden wir den „Hallo Welt“-Codeausschnitt aus [Exemp
 
 ### <a name="add-the-pkgdef-file"></a>Hinzufügen der PKGDEF-Datei
 
+::: moniker range="vs-2017"
+
 1. Fügen Sie dem Ordner *HelloWorldVB* eine Textdatei hinzu, und nennen Sie sie *HelloWorldVB.pkgdef*. Diese Datei wird verwendet, um der Registrierung bestimmte Schlüssel hinzufügen. In diesem Fall wird ein neuer Unterschlüssel zum Schlüssel **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Languages\CodeExpansions\Basic** hinzugefügt.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Fügen Sie dem Ordner *HelloWorldVB* eine Textdatei hinzu, und nennen Sie sie *HelloWorldVB.pkgdef*. Diese Datei wird verwendet, um der Registrierung bestimmte Schlüssel hinzufügen. In diesem Fall wird dem Schlüssel **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Languages\CodeExpansions\Basic** ein neuer Unterschlüssel hinzugefügt.
+
+::: moniker-end
 
 2. Fügen Sie der Datei die folgenden Zeilen hinzu.
 
@@ -103,7 +115,9 @@ In diesem Verfahren verwenden wir den „Hallo Welt“-Codeausschnitt aus [Exemp
 
 4. Speichern Sie den Ausschnitt. Öffnen Sie in der experimentellen Instanz ein Visual Basic-Projekt, und öffnen Sie dann eine der Codedateien. Platzieren Sie den Cursor an einer beliebigen Stelle im Code, klicken Sie mit der rechten Maustaste, und wählen Sie im Kontextmenü den Befehl **Ausschnitt einfügen**.
 
-5. *HelloWorldVB* sollte als einer der Ordner angezeigt werden. Doppelklicken Sie darauf. Es sollte ein Popupfenster **Ausschnitt einfügen: HelloWorldVB >** mit der Dropdownliste **HelloWorldVB** angezeigt werden. Klicken Sie auf die Dropdownliste **HelloWorldVB**. Sie sollten sehen, dass der Datei die folgende Zeile hinzugefügt wurde:
+5. *HelloWorldVB* sollte als einer der Ordner angezeigt werden. Doppelklicken Sie darauf. Daraufhin sollte das Popupelement **Ausschnitt einfügen: HelloWorldVB >** mit der Dropdownliste **HelloWorldVB** angezeigt werden. Klicken Sie auf die Dropdownliste **HelloWorldVB**.
+
+   Die folgende Zeile wird an die Codedatei angefügt:
 
     ```vb
     Console.WriteLine("Hello, World!")

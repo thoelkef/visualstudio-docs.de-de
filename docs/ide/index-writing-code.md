@@ -3,22 +3,23 @@ title: Schreiben und Verwalten von Code
 description: Hier erfahren Sie, wie Sie den Code-Editor und andere Tools in Visual Studio verwenden, um Ihren Code zu schreiben, darin zu navigieren, ihn zu verwalten und zu verbessern.
 ms.date: 01/01/2018
 layout: LandingPage
-ms.prod: visual-studio-dev15
 ms.topic: landing-page
 author: gewarren
 ms.author: gewarren
 ms.workload:
 - multiple
-ms.openlocfilehash: 06ce24ab0e0d668f4eef524826f2bf46a6fb29a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d18ca688c1eac02fc2b24c3f8cb0f9551e4939ae
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430294"
 ---
 # <a name="write-and-manage-code-using-visual-studio"></a>Schreiben und Verwalten von Code mithilfe von Visual Studio
 
 Hier erfahren Sie, wie Sie den Code-Editor und andere Tools in Visual Studio verwenden, um Ihren Code zu schreiben, darin zu navigieren, ihn zu verwalten und zu verbessern.
+
+<!-- markdownlint-disable MD033 -->
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -245,7 +246,7 @@ Erstellen Sie Ihre erste App in Visual Studio.
         </a>
     </li>
     <li>
-        <a href="/visualstudio/ide/quickstart-uwp-csharp">
+        <a href="/visualstudio/get-started/csharp/tutorial-uwp">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

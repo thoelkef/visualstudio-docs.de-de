@@ -1,21 +1,19 @@
 ---
 title: Organisieren von Objekten in Layoutcontainern im XAML-Designer
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: f8faa01ddc56c5beaa2412bd91a9e68a8bba9525
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 1937ab28af9b4c5c09bb12e2938a2aaa907fe8e6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62893583"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organisieren von Objekten in Layoutcontainern im XAML-Designer
 
@@ -31,19 +29,7 @@ LayoutPanel-Elemente helfen Ihnen, Objekte auf einer Seite anzuordnen, aber sie 
 
 Starten Sie die Seite durch Auswahl eines dieser Layoutpanels. Ihre Seite kann mehrere Panele enthalten. Sie können z.B. mit einem Layoutbereich des Typs **Raster** beginnen und dann einem Bereich des **Rasters** ein **StackPanel** hinzufügen, um in diesem Element Steuerelemente vertikal anzuordnen.
 
-Die folgenden LayoutPanel-Elemente sind die meisten allgemein verwendeten, aber es gibt noch andere. Sie befinden sich im Bereich **Bestand**.
-
-- [Raster](#Grid)
-
-- [UniformGrid](#UniformGrid)
-
-- [Canvas](#Canvas)
-
-- [StackPanel](#stackpanel)
-
-- [WrapPanel](#wrappanel)
-
-- [DockPanel](#dockpanel)
+Die folgenden LayoutPanel-Elemente sind die meisten allgemein verwendeten, aber es gibt noch andere. Sie finden sie alle in der **Toolbox** in Visual Studio oder im Bereich **Objekte** in Blend für Visual Studio.
 
 ### <a name="grid"></a>Raster
 
@@ -87,21 +73,13 @@ Ordnet Elemente so an, dass sie an einer Kante des Panels bleiben (*andocken*).
 
 ![Layoutpanel „DockPanel“](../designers/media/72d46b58-9a49-4dd5-8af7-6843c0440226.png)
 
-**Sehen Sie sich ein kurzes Video an:** ![Wiedergabeschaltfläche](../designers/media/bldadminconsoleinitialconfigicon.PNG) [WPF - DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo).
+**Sehen Sie sich ein kurzes Video an:** ![Wiedergabeschaltfläche](../designers/media/bldadminconsoleinitialconfigicon.PNG) [WPF – DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo)
 
 ## <a name="layout-controls"></a>Layout-Steuerelemente
 
 Sie können Ihre Objekte auch zu Layout-Steuerelementen hinzufügen. Sie verfügen über einen kleineren Funktionsumfang als Layoutbereiche, sind aber in manchen Szenarios nützlich.
 
-Die folgenden Layoutsteuerelemente werden zwar am häufigsten verwendet, es gibt aber noch weitere. Sie finden Sie alle im Bereich **Bestand**.
-
-- [Randbereich](#Border)
-
-- [Kontextmenü](#Popup)
-
-- [ScrollViewer](#scrollviewer)
-
-- [Viewbox](#viewbox)
+Die folgenden Layoutsteuerelemente werden zwar am häufigsten verwendet, es gibt aber noch weitere. Sie finden sie alle in der **Toolbox** in Visual Studio oder im Bereich **Objekte** in Blend für Visual Studio.
 
 ### <a name="border"></a>Rahmen
 

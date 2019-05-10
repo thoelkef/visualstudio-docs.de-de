@@ -1,7 +1,6 @@
 ---
 title: Verwalten von Anwendungseinstellungen (.NET)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - msvse_settingsdesigner.err.nameblank
@@ -9,15 +8,15 @@ helpviewer_keywords:
 - application settings [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6f4340f87782573f7330705786d0e4f923eb914
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dad84145200b09cfbddab63bd9994096d0ba3e17
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537315"
 ---
 # <a name="manage-application-settings-net"></a>Verwalten von Anwendungseinstellungen (.NET)
 
@@ -85,7 +84,9 @@ Wenn benutzerspezifische Einstellungen zur Laufzeit geändert wurden, z.B. beim 
 
 Es wird dringend empfohlen, dass Sie mit dem `My.Settings`-Objekt und der *SETTINGS*-Standarddatei auf Einstellungen zugreifen. Dies ist deshalb wichtig, da Sie mithilfe des **Einstellungs-Designers** den Einstellungen Eigenschaften zuweisen können und Benutzereinstellungen vor dem Beenden der Anwendung automatisch gespeichert werden. Die Visual Basic-Anwendung kann jedoch direkt auf Einstellungen zugreifen. In diesem Fall müssen Sie die `MySettings`-Klasse aufrufen und eine benutzerdefinierte *SETTINGS*-Datei im Stammordner des Projekts verwenden. Sie müssen die Benutzereinstellungen wie bei einer C#-Anwendung vor dem Beenden der Anwendung speichern. Informationen hierzu finden Sie im folgenden Abschnitt.
 
-## <a name="access-or-change-application-settings-at-run-time-in-c"></a>Zugreifen auf oder Ändern von Anwendungseinstellungen in C# zur Laufzeit #
+<!-- markdownlint-disable MD003 MD020 -->
+## <a name="access-or-change-application-settings-at-run-time-in-c"></a>Zugreifen auf oder Ändern von Anwendungseinstellungen in C# zur Laufzeit
+<!-- markdownlint-enable MD003 MD020 -->
 
 In Programmiersprachen außer Visual Basic, z.B. in C#, müssen Sie direkt auf die `Settings`-Klasse zugreifen. Dies wird im folgenden [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Beispiel veranschaulicht.
 

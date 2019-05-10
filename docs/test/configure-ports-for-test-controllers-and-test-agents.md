@@ -12,14 +12,13 @@ helpviewer_keywords:
 ms.assetid: 211edbd7-9fe4-4251-ba85-8bec4363261b
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: ca6d95de1ddcf50796810b2d9ec11438ca705fe9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: bd66bcb3615477abc2fc9a8122f2ec4675f37bbb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823687"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965650"
 ---
 # <a name="configure-ports-for-test-controllers-and-test-agents"></a>Konfigurieren von Ports für Testcontroller und Test-Agents
 

@@ -1,8 +1,6 @@
 ---
-title: Debuggen, Dialogfeld "Optionen" | Microsoft Docs
-ms.custom: ''
+title: Debuggen, Dialogfeld "Optionen" | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -20,28 +18,29 @@ helpviewer_keywords:
 ms.assetid: 9450589a-42ea-45bf-b128-89447225cca6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 200b466699f5513c74740f871e926c86fd085909
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d0a6a6d8312dba4ae89e773fc2be8fa0b9984e0b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472884"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851648"
 ---
 # <a name="debugging-options-dialog-box"></a>Debuggen, Dialogfeld "Optionen"
-Die **Debuggen** Ordner in der **Optionen** Dialogfeld auf die **Tools** Menü sind die folgenden Seiten, die es ermöglichen Ihnen das Festlegen der Debugger Tooloptionen.  
-  
--   [Allgemein, Debuggen, Dialogfeld "Optionen"](../debugger/general-debugging-options-dialog-box.md)  
-  
--   [Just-In-Time, Debuggen, Dialogfeld "Optionen"](../debugger/just-in-time-debugging-options-dialog-box.md)  
-  
--   [Ausgabefenster, Debuggen, Dialogfeld "Optionen"](../debugger/output-window-debugging-options-dialog-box.md)  
-  
--   [Symbole, Debuggen, Optionen (Dialogfeld)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
-  
-## <a name="see-also"></a>Siehe auch  
- [Debuggersicherheit](../debugger/debugger-security.md) [Debuggen in Visual Studio](../debugger/index.md)  
- [Debugger – Featuretour](../debugger/debugger-feature-tour.md)   
- [Referenz zur Debugger-Benutzeroberfläche](../debugger/debugging-user-interface-reference.md)
+Im Ordner **Debuggen** im Dialogfeld **Optionen** des Menüs **Extras** sind die folgenden Seiten zum Festlegen der Debuggeroptionen enthalten.
+
+- [Allgemein, Debuggen, Dialogfeld "Optionen"](../debugger/general-debugging-options-dialog-box.md)
+
+- [Just-In-Time, Debuggen, Dialogfeld "Optionen"](../debugger/just-in-time-debugging-options-dialog-box.md)
+
+- [Ausgabefenster, Debuggen, Dialogfeld "Optionen"](../debugger/output-window-debugging-options-dialog-box.md)
+
+- [Symbole, Debuggen, Dialogfeld „Optionen“](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+
+## <a name="see-also"></a>Siehe auch
+- [Debuggersicherheit](../debugger/debugger-security.md)
+- [Debuggen in Visual Studio](../debugger/index.md)
+- [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)
+- [Referenz zur Debugger-Benutzeroberfläche](../debugger/debugging-user-interface-reference.md)

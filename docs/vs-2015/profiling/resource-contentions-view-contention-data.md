@@ -1,14 +1,9 @@
 ---
 title: Ressourcenkonfliktansicht – Konfliktdaten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.resourcecontention
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 14a7f774-211f-4ef8-af05-94d1c8f65d2f
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dddc9c85731137c6499e976b4b571396af297f7a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c6a7d4d1e80323b4d260ac558661c222f72ec3c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810350"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108700"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Ressourcenkonfliktansicht – Konfliktdaten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,9 +33,9 @@ Die Ansicht für Ressourcenkonflikte führt Ressourcenkonfliktdaten für die Res
 ### <a name="function-values"></a>Funktionswerte  
  Funktionswerte basieren auf den Instanzen der Funktion, die in der im Ausführungspfad dargestellten Ausführungsstruktur aufgetreten sind.  
   
--   Exklusive Werte basieren auf den Ereignissen, die während der Ausführung von Anweisungen im Funktionsrumpf aufgetreten. Aufgetretene Ereignisse in Funktionen, die von der Funktion aufgerufen wurden, sind nicht in den exklusiven Werten enthalten.  
+- Exklusive Werte basieren auf den Ereignissen, die während der Ausführung von Anweisungen im Funktionsrumpf aufgetreten. Aufgetretene Ereignisse in Funktionen, die von der Funktion aufgerufen wurden, sind nicht in den exklusiven Werten enthalten.  
   
--   Inklusive Werte basieren auf den Ereignissen, die aufgetreten sind, als die Funktion ausgeführt wurde, oder eine Funktion, die von der Funktion aufgerufen wurde.  
+- Inklusive Werte basieren auf den Ereignissen, die aufgetreten sind, als die Funktion ausgeführt wurde, oder eine Funktion, die von der Funktion aufgerufen wurde.  
   
 ### <a name="percentage-values"></a>Prozentsatzgröße  
  Prozentwerte basieren auf der Gesamtzeit oder den Konfliktereignissen in den Profilerstellungsdaten. Wenn der Bericht oder die Ansicht der Profilerstellung gefiltert wird, werden nur die blockierte Zeit und Konflikte in der gefilterten Daten als Gesamtwert verwendet.  
@@ -65,6 +60,3 @@ Die Ansicht für Ressourcenkonflikte führt Ressourcenkonfliktdaten für die Res
 |**Prozess-ID**|Der Prozess-ID (PID) des Prozesses, in dem die Funktion ausgeführt wurde.|  
 |**Prozessname**|Der Prozessname.|  
 |**Quelldatei**|Die Quelldatei, die die Definition der Funktion enthält.|
-
-
-

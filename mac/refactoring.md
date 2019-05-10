@@ -1,16 +1,17 @@
 ---
 title: Umgestalten von Code (Refactoring)
-description: Das Neuorganisieren von Code in Visual Studio für Mac wird durch die Verwendung der Quellanalyse vereinfacht.
+description: Optimieren von Code mithilfe von Visual Studio für Mac und schnelle Aktionen.
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 03/29/2019
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
-ms.openlocfilehash: 672c7547da9360ae3e278f783b160ffdaed05e03
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.custom: video
+ms.openlocfilehash: 48e290fddd1c4b7c95ac5e76cb6cf5908247e6f6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62937839"
 ---
 # <a name="refactoring"></a>Umgestaltung
 
@@ -22,25 +23,45 @@ Die Integration in Roslyn, Microsofts Open Source-.NET Compilerplattform, von Vi
 
 ## <a name="renaming"></a>Umbenennen
 
-Der Refactoringbefehl *Umbenennen* kann für jeden Codebezeichner (z.B. Klassenname, Eigenschaftenname usw.) verwendet werden, um alle Vorkommen dieses Bezeichners zu finden und zu ändern. Um ein Symbol umzubenennen, klicken Sie mit der rechten Maustaste darauf, und wählen Sie **Umgestalten > Umbenennen** oder die Tastenzuordnung **Cmd + R** aus:
+Der Refactoringbefehl *Umbenennen* kann für jeden Codebezeichner (z.B. Klassenname, Eigenschaftenname usw.) verwendet werden, um alle Vorkommen dieses Bezeichners zu finden und zu ändern. Wenn Sie ein Symbol umbenennen möchten, klicken Sie mit der rechten Maustaste darauf, und wählen Sie **Umbenennen…** aus, oder Sie verwenden die Tastenzuordnung **CMD (⌘) + R**:
 
 ![Menüelement „Umbenennen“](media/refactoring-renaming1.png)
 
-Dadurch werden das Symbol und sämtliche Verweise darauf hervorgehoben. Wenn Sie beginnen, einen neuen Namen einzugeben, werden automatisch alle Verweise in Ihrem Code geändert. Sie können die Fertigstellung der Umbenennung signalisieren, indem Sie die **Eingabetaste** drücken:
+Dadurch werden das Symbol und sämtliche Verweise darauf hervorgehoben. Wenn Sie beginnen, einen neuen Namen einzugeben, werden automatisch alle Verweise in Ihrem Code geändert. Sie können die Fertigstellung der Umbenennung signalisieren, indem Sie die **EINGABETASTE** drücken:
 
 ![Umbenennen und Bezeichner](media/refactoring-renaming2.png)
 
-## <a name="context-actions"></a>Kontextaktionen
+## <a name="quick-actions"></a>Schnelle Aktionen
 
-Kontextaktionen ermöglichen es Ihnen, jeden C#-Code zu überprüfen und alle Refactoringoptionen anzuzeigen.
+Mit schnellen Aktionen können Sie ganz leicht Code mit einer einzelnen Aktion umgestalten, generieren oder anderweitig ändern.
 
-Die Kontextelemente **Auflösen** und **Umgestalten** werden zu einem einzigen Element *Schnelle Problembehebung...* kombiniert, das alle verfügbaren Kontextaktionen für Sie bereitstellt:
+Schnelle Aktionen können für Folgendes verwendet werden:
+
+* Anwenden einer Codefehlerbehebung für eine Verletzung einer Regel des Codeanalysetools
+* Unterdrücken einer Verletzung einer Regel des Codeanalysetools
+* Anwenden eines Refactorings (z.B. Inlinesetzen einer temporären Variable)
+* Generieren von Code (z.B. Einführen einer lokalen Variable)
+
+Schnelle Aktionen können angewendet werden, indem das Glühbirnen- ![Glühbirnensymbol](media/quick-actions-light-bulb-icon.png) oder Schraubendrehersymbol ![Schraubendrehersymbol](media/quick-actions-screwdriver-icon.png) verwendet oder **Option (⌥)**+**EINGABETASTE** gedrückt wird, wenn sich der Cursor auf einer Codezeile befindet, für die eine Aktion verfügbar ist. Es wird eine Glühbirne mit einem roten Warnzeichen ![Glühbirnensymbol](media/quick-actions-error-light-bulb-icon.png) angezeigt, was auf einen Fehler hindeutet, und in Visual Studio ist für diesen Fehler eine Problemlösung verfügbar.
+
+Für jede Sprache können Drittanbieter benutzerdefinierte Diagnosen und Empfehlungen bereitstellen, beispielsweise als Bestandteil eines SDKs. Anhand dieser Regeln leuchten die Visual Studio-Glühbirnen dann auf.
+
+### <a name="quick-action-icons"></a>Symbole für schnelle Aktionen
+Das Symbol, das angezeigt wird, wenn eine schnelle Aktion verfügbar ist, erläutert den Typ der verfügbaren Fehlerkorrektur oder des Refactorings. Der *Schraubendreher* ![Schraubendrehersymbol](media/quick-actions-screwdriver-icon.png) gibt nur an, dass Aktionen für die Änderung des Codes verfügbar sind, Sie diese jedoch nicht unbedingt verwenden müssen. Die *gelbe Glühbirne* ![Symbol für gelbe Glühbirne](media/quick-actions-light-bulb-icon.png) zeigt, dass Aktionen verfügbar sind, die Sie *durchführen sollten*, um Ihren Code zu verbessern. Die *Glühbirne mit Warnzeichen* ![Symbol für Glühbirne mit Warnzeichen](media/quick-actions-error-light-bulb-icon.png) zeigt, dass eine Aktion verfügbar ist, die einen Fehler in Ihrem Code beheben kann.
+
+### <a name="to-see-a-light-bulb-or-screwdriver"></a>So zeigen Sie eine Glühbirne oder einen Schraubendreher an
+
+- Wenn eine Fehlerkorrektur verfügbar ist, erscheinen Glühbirnen spontan, wenn Sie mit der Maus auf die Position eines Fehlers zeigen.
+
+   ![Glühbirne mit Mauszeigerbewegung](media/refactoring-lightbulb-hover.png)
+
+- Glühbirnen und Schraubendreher werden im linken Rand des Editors angezeigt, wenn Sie das Caretzeichen in eine Codezeile verschieben, für die eine schnelle Aktion verfügbar ist.
+
+- Drücken Sie **Option (⌥)**+**EINGABETASTE**, wenn sich der Cursor irgendwo auf einer Zeile befindet, damit eine Liste verfügbarer schneller Aktionen und Refactorings anzeigt wird.
 
 ![Anzeigen der Kontextelemente](media/refactoring-context-action.png)
 
 Wenn Sie den Mauszeiger über beliebige Kontextaktionen bewegen, wird Ihnen eine Vorschau dessen angezeigt, was zu Ihrem Code hinzugefügt oder daraus entfernt wird.
-
-Alternativ können Sie an einer beliebigen Stelle in Ihrem Code **Option + Eingabetaste** drücken:
 
 ![Kontextelemente Option + Enter](media/refactoring-image2a.png)
 
@@ -52,47 +73,9 @@ Es existieren mehr als 100 mögliche Aktionen, die vorgeschlagen werden können.
 
 ![C#-Quellanalyseaktionen](media/refactoring-image3a.png)
 
-### <a name="common-context-actions"></a>Häufig verwendete Kontextaktionen
+### <a name="common-quick-actions"></a>Häufige schnelle Aktionen
 
-Einige der am häufigsten verwendeten Kontextaktionen werden nachstehend erläutert.
-
-#### <a name="extract-method"></a>Methode extrahieren
-
-Der Refactoringvorgang „Methode extrahieren“ ermöglicht es Ihnen, eine neue Methode zu erstellen, indem Sie eine Auswahl von Code in einem vorhandenen Member extrahieren. Diese Aktion führt folgende Schritte aus:
-
-* Erstellen einer neuen Methode, die den ausgewählten Code enthält
-* Aufrufen der neuen Methode an der Stelle, an der sich der ausgewählte Code befand
-
-##### <a name="example"></a>Beispiel
-
-1. Fügen Sie den folgenden Code hinzu:
-
-```csharp
-    class MainClass
-    {
-
-        double CalculatePyramidVolume(double baseArea, double height)
-        {
-
-            double volume = (baseArea * height) / 3;
-
-            return volume;
-        }
-    }
-```
-
-2. Heben Sie die Zeile `double volume = (baseArea * height) / 3;` hervor, klicken Sie mit der rechten Maustaste darauf, und wählen Sie **Umgestalten > Methode extrahieren** aus.
-
-3. Verwenden Sie die Pfeiltasten, um auszuwählen, wo die neue Methode in Ihrem Code platziert werden soll.
-
-#### <a name="encapsulate-field"></a>Feld kapseln
-
-Der Vorgang „Feld kapseln“ ermöglicht es Ihnen, eine Eigenschaft von einem vorhandenen Feld aus zu erstellen, und aktualisiert Ihren Code so, dass er auf die neu erstellte Eigenschaft verweist. Indem Sie eine Eigenschaft erstellen, die Ihr Feld kapselt, lassen Sie den Direktzugriff auf Ihr öffentliches Feld nicht zu, d.h. andere Objekte können es nicht ändern.
-
-Diese Aktion führt folgende Schritte aus:
-
-* Ändern des Zugriffsmodifizierers in privat
-* Erstellen eines Getters und Setters für das Feld (sofern das Feld nicht schreibgeschützt ist; in diesem Fall wir nur ein Getter erstellt)
+Weitere Informationen zu schnellen Aktionen finden Sie im Artikel [Häufige schnelle Aktionen](/visualstudio/ide/common-quick-actions).
 
 ## <a name="source-analysis"></a>Quellanalyse
 
@@ -105,6 +88,10 @@ Sie können alle Ergebnisse der Quellanalyse jeder Datei zu jeder Zeit anzeigen 
 Wenn Sie auf den Kreis oben klicken, können Sie jeden einzelnen Vorschlag durchlaufen lassen, wobei die schwerwiegendsten Probleme zuerst angezeigt werden. Wenn Sie auf ein einzelnes Ergebnis oder eine einzelne Zeile zeigen, wird das Problem angezeigt, das durch Kontextaktionen behoben werden kann:
 
 ![Quellanalyseelement](media/refactoring-image5.png)
+
+## <a name="related-video"></a>Zugehörige Videos
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Refactoring-Code/player]
 
 ## <a name="see-also"></a>Siehe auch
 

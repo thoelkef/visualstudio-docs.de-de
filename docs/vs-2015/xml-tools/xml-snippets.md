@@ -1,30 +1,24 @@
 ---
 title: XML-Ausschnitten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 348dbf64-3f09-4fff-b47a-a7ecdf3221cc
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bf1ebeb70931e2e12f056ecfbaa45a6833e031df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5e2fbba9006c1621b8f98084d4ffd4c637be1127
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183962"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654654"
 ---
 # <a name="xml-snippets"></a>XML-Ausschnitte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Der XML-Editor bietet ein Feature namens *XML-Ausschnitte*, können Sie schneller XML-Dateien zu erstellen. Sie können XML-Ausschnitte wiederverwenden, indem Sie diese in die Dateien einfügen. XML-Dateien können auch auf der Grundlage eines XSD-Schemas (XML Schema Definition Language) erstellt werden.  
   
 ## <a name="reusable-xml-snippets"></a>Wiederverwendbare XML-Ausschnitte  
@@ -49,17 +43,14 @@ Der XML-Editor bietet ein Feature namens *XML-Ausschnitte*, können Sie schnelle
  Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden von XML-Ausschnitte](../xml-tools/how-to-use-xml-snippets.md).  
   
 ## <a name="schema-generated-xml-snippets"></a>Schemagenerierte XML-Ausschnitte  
- Der XML-Editor verfügt über die Funktion, XML-Ausschnitte aus einem XML-Schema zu generieren. Mithilfe dieser Funktion können Sie ein Element mit XML-Elementen auffüllen, die aus den Schemainformationen für dieses Element generiert werden.  
+ Der XML-Editor verfügt über die Funktion, XML-Ausschnitte aus einem XML-Schema zu generieren. Mithilfe dieses Features können Sie ein Element mit XML-Elementen auffüllen, die aus den Schemainformationen für dieses Element generiert werden.  
   
- Weitere Informationen finden Sie unter [wie: Generieren eines XML-Codeausschnitt aus einer XML-Schemas](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md).  
+ Weitere Informationen finden Sie unter [Vorgehensweise: Generieren ein XML-Ausschnitts aus einem XML-Schema](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md).  
   
 ## <a name="create-new-xml-snippets"></a>Erstellen neuer XML-Ausschnitte  
  Zusätzlich zu den Codeausschnitten, die in enthaltenen [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio wird standardmäßig auch erstellen und verwenden Sie eigene XML-Ausschnitte können.  
   
- Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von XML-Ausschnitte](../xml-tools/how-to-create-xml-snippets.md).  
+ Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von XML-Ausschnitten](../xml-tools/how-to-create-xml-snippets.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [XML-Editor](../xml-tools/xml-editor.md)
-
-
-

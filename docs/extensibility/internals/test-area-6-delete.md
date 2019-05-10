@@ -1,24 +1,26 @@
 ---
 title: 'Testbereich 6: Delete | Microsoft-Dokumentation'
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], deleting items
 - source control plug-ins, deleting items
 ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
-author: gregvanl
+caps.latest.revision: 13
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 3fff473dbd4e3bc70f1b6308ed0d6b1129c95e2c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: a1763e51a09ba797bd22c85ba998e1533aa18f97
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908677"
 ---
 # <a name="test-area-6-delete"></a>Testbereich 6: Löschen
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Quellcodeverwaltung Hierunter-Plug-in Test löschen-Aktionen.  
   
  Löschen von Aktionen im Datenquellen-Steuerelement reagiert **Projektmappen-Explorer**.  
@@ -36,13 +38,13 @@ Quellcodeverwaltung Hierunter-Plug-in Test löschen-Aktionen.
 ## <a name="expected-behavior"></a>Es wird erwartet  
  Das erwartete Verhalten für die Testfälle im Testbereich löschen ist:  
   
--   Gelöschtes Element wird nicht mehr angezeigt, in **Projektmappen-Explorer**.  
+- Gelöschtes Element wird nicht mehr angezeigt, in **Projektmappen-Explorer**.  
   
--   Das gelöschte Projekt oder Element das übergeordnete Element ist ausgecheckt, nach Bedarf (möglicherweise mit einer Eingabeaufforderung.)  
+- Das gelöschte Projekt oder Element das übergeordnete Element ist ausgecheckt, nach Bedarf (möglicherweise mit einer Eingabeaufforderung.)  
   
--   Nachdem Sie einen aktivierten zu löschen oder Element hinzugefügt, er erscheint nicht in der **Anstehende Eincheckvorgänge** Fenster.  
+- Nachdem Sie einen aktivierten zu löschen oder Element hinzugefügt, er erscheint nicht in der **Anstehende Eincheckvorgänge** Fenster.  
   
--   Das Element ist immer noch im Speicher quellcodeverwaltung, vorhanden ist, auch nach dem Löschvorgang erhalten, und muss manuell gelöscht werden.  
+- Das Element ist immer noch im Speicher quellcodeverwaltung, vorhanden ist, auch nach dem Löschvorgang erhalten, und muss manuell gelöscht werden.  
   
 |Aktion|Testschritte|Erwartete Ergebnisse überprüfen|  
 |------------|----------------|--------------------------------|  

@@ -1,22 +1,21 @@
 ---
-title: Ausführen, Erstellen und Debuggen von Komponententests mit dem Test-Explorer
+title: Ausführen und Debuggen von Komponententests mit dem Test-Explorer
 description: Erfahren Sie, wie Sie Tests mit dem Test-Explorer in Visual Studio ausführen. In diesem Artikel wird beschrieben, wie Sie automatische Testläufe nach der Erstellung durchführen, die Testergebnisse anzeigen, die Testliste gruppieren und filtern, Wiedergabelisten erstellen, Tests debuggen und Tastenkombinationen für Tests verwenden.
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.unittesting.testexplorer.overview
+author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 65ba6a0528dee5a0b430787ee4332ca3dab5bdec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fa24dedd776a0866d5de23fbacd31b32c2d55145
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946086"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ausführen von Komponententests mit dem Test-Explorer
 
@@ -46,7 +45,7 @@ Sie können alle Tests in der Projektmappe, alle Tests in einer Gruppe oder eine
 
 - Klicken Sie zum Ausführen aller Tests in einer Standardgruppe auf **Ausführen**, und wählen Sie dann im Menü die Gruppe aus.
 
-- Wählen Sie die einzelnen auszuführenden Tests aus, öffnen Sie das Kontextmenü eines ausgewählten Tests, und wählen Sie dann **Ausgewählte Tests ausführen**aus.
+- Wählen Sie die einzelnen auszuführenden Tests aus, öffnen Sie das Kontextmenü eines ausgewählten Tests, und wählen Sie dann **Ausgewählte Tests ausführen** aus.
 
 - Wenn einzelne Tests keine Abhängigkeiten haben, die verhindern, dass sie in beliebiger Reihenfolge ausgeführt werden können, sollten Sie parallele Testausführung über die ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) -Umschaltfläche auf der Symbolleiste aktivieren. Dadurch lässt sich die Zeit deutlich verkürzen, die zum Ausführen aller Tests erforderlich ist.
 
@@ -57,6 +56,9 @@ Während der Testausführung wird die oben im Fenster **Test-Explorer** angezeig
 |Schaltfläche|Beschreibung|
 |-|-|
 |![Nach Build ausführen](../test/media/ute_runafterbuild_btn.png)|Klicken Sie zum Ausführen der Komponententests nach jedem lokalen Buildvorgang im Standardmenü auf **Test** und anschließend in der Symbolleiste **Test-Explorer** auf **Nach dem Buildvorgang Tests ausführen**.|
+
+> [!NOTE]
+> Das Ausführen von Komponententests nach jedem Buildvorgang erfordert Visual Studio Enterprise Edition.
 
 ## <a name="view-test-results"></a>Testergebnisse anzeigen
 
@@ -84,7 +86,7 @@ Bei einem fehlgeschlagenen Test wird im Detailbereich außerdem Folgendes angeze
 
 ### <a name="view-the-source-code-of-a-test-method"></a>Anzeigen des Quellcodes einer Testmethode
 
- Wählen Sie zum Anzeigen des Quellcodes einer Testmethode im Visual Studio-Editor den Test und anschließend im Kontextmenü **Test öffnen** (Tastatur: **F12**) aus.
+Wählen Sie zum Anzeigen des Quellcodes einer Testmethode im Visual Studio-Editor den Test und anschließend im Kontextmenü **Test öffnen** (Tastatur: **F12**) aus.
 
 ## <a name="group-and-filter-the-test-list"></a>Gruppieren und Filtern der Testliste
 
@@ -92,9 +94,9 @@ Im Test-Explorer können Sie Tests in vordefinierte Kategorien gruppieren. In de
 
 ### <a name="group-tests-in-the-test-list"></a>Gruppieren von Tests in der Testliste
 
- Klicken Sie zum Ändern der Testunterteilung den neben der Schaltfläche **Gruppieren nach** auf den Pfeil nach unten (![Gruppenschaltfläche „Test-Explorer“](../test/media/ute_groupby_btn.png)), und wählen Sie anschließend neue Gruppierungskriterien aus.
+Klicken Sie zum Ändern der Testunterteilung den neben der Schaltfläche **Gruppieren nach** auf den Pfeil nach unten (![Gruppenschaltfläche „Test-Explorer“](../test/media/ute_groupby_btn.png)), und wählen Sie anschließend neue Gruppierungskriterien aus.
 
- ![Tests im Test-Explorer nach Kategorie gruppieren](../test/media/ute_groupbycategory.png)
+![Tests im Test-Explorer nach Kategorie gruppieren](../test/media/ute_groupbycategory.png)
 
 ### <a name="test-explorer-groups"></a>Test-Explorer-Gruppen
 
@@ -107,11 +109,11 @@ Im Test-Explorer können Sie Tests in vordefinierte Kategorien gruppieren. In de
 
 ### <a name="group-by-traits"></a>Gruppieren nach Merkmalen
 
- In der Regel handelt es sich bei Merkmalen um Kategoriename/Wert-Paare, ein Merkmal kann jedoch auch eine einzelne Kategorie darstellen. Merkmale können Methoden zugewiesen werden, die im Komponententest-Framework als Testmethoden identifiziert sind. In einem Komponententest-Framework können Merkmalskategorien definiert werden. Außerdem können Sie den Merkmalskategorien Werte hinzufügen, um eigene Kategoriename/Wert-Paare zu definieren. Die Syntax zum Angeben von Merkmalskategorien und -werten wird durch das Komponententest-Framework festgelegt.
+In der Regel handelt es sich bei Merkmalen um Kategoriename/Wert-Paare, ein Merkmal kann jedoch auch eine einzelne Kategorie darstellen. Merkmale können Methoden zugewiesen werden, die im Komponententest-Framework als Testmethoden identifiziert sind. In einem Komponententest-Framework können Merkmalskategorien definiert werden. Außerdem können Sie den Merkmalskategorien Werte hinzufügen, um eigene Kategoriename/Wert-Paare zu definieren. Die Syntax zum Angeben von Merkmalskategorien und -werten wird durch das Komponententest-Framework festgelegt.
 
- **Merkmale im Microsoft-Komponententest-Framework für verwalteten Code**
+**Merkmale im Microsoft-Komponententest-Framework für verwalteten Code**
 
- Im Microsoft-Komponententest-Framework für verwaltete Apps wird ein Merkmalsname/Wert-Paar in einem  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> -Attribut definiert. Das Testframework weist zudem folgende vordefinierte Merkmale auf:
+Im Microsoft-Komponententest-Framework für verwaltete Apps wird ein Merkmalsname/Wert-Paar in einem  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> -Attribut definiert. Das Testframework weist zudem folgende vordefinierte Merkmale auf:
 
 |Merkmal|Beschreibung|
 |-|-----------------|
@@ -120,7 +122,9 @@ Im Test-Explorer können Sie Tests in vordefinierte Kategorien gruppieren. In de
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|Mithilfe des TestCategory-Attributs können Sie eine Kategorie ohne Wert angeben. Bei einer durch das TestCategory-Attribut definierten Kategorie kann es sich auch um die Kategorie eines TestProperty-Attributs handeln.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>|Mithilfe des TestProperty-Attributs können Sie Merkmalskategorie/Wert-Paare definieren.|
 
- **Merkmale im Komponententest-Framework für C++ von Microsoft** finden Sie unter [Verwenden des Microsoft-Komponententest-Frameworks für C++ in Visual Studio](how-to-use-microsoft-test-framework-for-cpp.md).
+**Merkmale im Microsoft-Komponententest-Framework für C++**
+
+ Weitere Informationen finden Sie unter [Verwenden des Microsoft-Komponententest-Frameworks für C++](how-to-use-microsoft-test-framework-for-cpp.md).
 
 ### <a name="search-and-filter-the-test-list"></a>Durchsuchen und Filtern der Testliste
 
@@ -161,21 +165,19 @@ Zum Beispiel gibt `FullName:"MyClass" - FullName:"PerfTest"` alle Tests mit „M
 
 ## <a name="create-custom-playlists"></a>Erstellen benutzerdefinierter Wiedergabelisten
 
- Sie können eine Liste mit Tests erstellen und speichern, die als Gruppe ausgeführt oder angezeigt werden sollen. Wenn Sie eine Wiedergabeliste auswählen, werden die Tests in der Liste im Test-Explorer angezeigt. Sie können einen Test zu mehr als einer Wiedergabeliste hinzufügen, und bei Auswahl der Standardwiedergabeliste **Alle Tests** sind alle Tests im Projekt verfügbar.
+Sie können eine Liste mit Tests erstellen und speichern, die als Gruppe ausgeführt oder angezeigt werden sollen. Wenn Sie eine Wiedergabeliste auswählen, werden die Tests in der Liste im Test-Explorer angezeigt. Sie können einen Test zu mehr als einer Wiedergabeliste hinzufügen, und bei Auswahl der Standardwiedergabeliste **Alle Tests** sind alle Tests im Projekt verfügbar.
 
- ![Wiedergabeliste auswählen](../test/media/ute_playlist.png)
+![Wiedergabeliste auswählen](../test/media/ute_playlist.png)
 
- Wählen Sie zum**Erstellen einer Wiedergabeliste**im Komponententest-Explorer mindestens einen Test aus. Klicken Sie im Kontextmenü auf **Zu Wiedergabeliste hinzufügen** > **Neue Wiedergabeliste**. Speichern Sie die Datei unter dem im Dialogfeld **Neue Wiedergabeliste erstellen** angegebenen Namen und Speicherort.
+Wählen Sie zum**Erstellen einer Wiedergabeliste**im Komponententest-Explorer mindestens einen Test aus. Klicken Sie im Kontextmenü auf **Zu Wiedergabeliste hinzufügen** > **Neue Wiedergabeliste**. Speichern Sie die Datei unter dem im Dialogfeld **Neue Wiedergabeliste erstellen** angegebenen Namen und Speicherort.
 
- Wählen Sie zum**Hinzufügen von Tests zu einer Wiedergabeliste**im Komponententest-Explorer mindestens einen Test aus. Wählen Sie im Kontextmenü **Zu Wiedergabeliste hinzufügen**und anschließend die Wiedergabeliste aus, der die Tests hinzugefügt werden sollen.
+Wählen Sie zum**Hinzufügen von Tests zu einer Wiedergabeliste**im Komponententest-Explorer mindestens einen Test aus. Wählen Sie im Kontextmenü **Zu Wiedergabeliste hinzufügen** und anschließend die Wiedergabeliste aus, der die Tests hinzugefügt werden sollen.
 
- Wählen Sie **zum Öffnen einer Wiedergabeliste** im Visual Studio-Menü die Option **Test** > **Wiedergabeliste** aus. Anschließend können Sie aus der Liste der zuletzt verwendeten Wiedergabelisten auswählen oder auf **Wiedergabeliste öffnen** klicken, um den Namen und Speicherort der Wiedergabeliste anzugeben.
+Wählen Sie **zum Öffnen einer Wiedergabeliste** im Visual Studio-Menü die Option **Test** > **Wiedergabeliste** aus. Anschließend können Sie aus der Liste der zuletzt verwendeten Wiedergabelisten auswählen oder auf **Wiedergabeliste öffnen** klicken, um den Namen und Speicherort der Wiedergabeliste anzugeben.
 
- Wenn einzelne Tests keine Abhängigkeiten haben, die verhindern, dass sie in beliebiger Reihenfolge ausgeführt werden können, sollten Sie parallele Testausführung über die ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) -Umschaltfläche auf der Symbolleiste aktivieren. Dadurch lässt sich die Zeit deutlich verkürzen, die zum Ausführen aller Tests erforderlich ist.
+Wenn einzelne Tests keine Abhängigkeiten haben, die verhindern, dass sie in beliebiger Reihenfolge ausgeführt werden können, sollten Sie parallele Testausführung über die ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) -Umschaltfläche auf der Symbolleiste aktivieren. Dadurch lässt sich die Zeit deutlich verkürzen, die zum Ausführen aller Tests erforderlich ist.
 
 ## <a name="debug-and-analyze-unit-tests"></a>Debugging und Analyse von Komponententests
-
-### <a name="debug-unit-tests"></a>Debugging von Komponententests
 
 Mit dem Test-Explorer können Sie Debugsitzungen für Tests starten. Beim schrittweisen Durchlaufen des Codes mit dem Visual Studio-Debugger wechseln Sie nahtlos zwischen den Komponententests und dem zu testenden Projekt hin und zurück. Starten des Debuggens:
 
@@ -190,7 +192,7 @@ Mit dem Test-Explorer können Sie Debugsitzungen für Tests starten. Beim schrit
 
 ### <a name="diagnose-test-method-performance-issues"></a>Diagnose von Leistungsproblemen bei Testmethoden
 
- Zur Ermittlung der Ursache, weshalb die Ausführung einer Testmethode zu lange dauert, müssen Sie im Test-Explorer die Methode auswählen und anschließend im Kontextmenü auf **Profil** klicken. Weitere Informationen finden Sie unter [Performance Explorer (Leistungs-Explorer)](../profiling/performance-explorer.md).
+Zur Ermittlung der Ursache, weshalb die Ausführung einer Testmethode zu lange dauert, müssen Sie im Test-Explorer die Methode auswählen und anschließend im Kontextmenü auf **Profil** klicken. Weitere Informationen finden Sie unter [Performance Explorer (Leistungs-Explorer)](../profiling/performance-explorer.md).
 
 ### <a name="analyze-unit-test-code-coverage"></a>Analysieren der Codeabdeckung für Komponententests
 

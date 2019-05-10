@@ -1,14 +1,9 @@
 ---
 title: TaskBody-Element (MSBuild) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,18 +16,17 @@ ms.assetid: 49d8741b-f1ea-4470-94fd-a1ac27341a6a
 caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: eb6121a6fc2260ac988552433ee847b13abc32d2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7918844915d32893491f69b4e7f58a5867c3613c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934144"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660579"
 ---
 # <a name="taskbody-element-msbuild"></a>TaskBody-Element (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Enthält die Daten, die an `UsingTask``TaskFactory` übergeben werden. Weitere Informationen finden Sie unter [UsingTask-Element (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
   
  \<Project>  
@@ -86,6 +80,3 @@ Enthält die Daten, die an `UsingTask``TaskFactory` übergeben werden. Weitere I
  [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
  [Task Reference](../msbuild/msbuild-task-reference.md)  (MSBuild-Aufgabenreferenz)  
  [Referenz zum MSBuild-Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)
-
-
-

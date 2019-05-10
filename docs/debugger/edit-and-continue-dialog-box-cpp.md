@@ -16,20 +16,20 @@ helpviewer_keywords:
 ms.assetid: 624d9649-5946-4298-a138-70773b72e810
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1b7f2929dbb1946b9e4852006260e7ac8c45fa45
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 6e7183845e9c0b9b50b8feaedf9e6327b06678ad
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923717"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851423"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Bearbeiten und Fortfahren (Dialogfeld) (C++)
-Mit der Funktion „Bearbeiten und Fortfahren“ konnten die von Ihnen vorgenommenen Änderungen am nativen Code nicht übernommen werden. Dies ist möglicherweise ein temporäres Problem. Manchmal können mit „Bearbeiten und Fortfahren“ Änderungen an nativem Code nicht sofort übernommen werden. Dies kann aber zu einem späteren Zeitpunkt bei der Debugsitzung erfolgen (z. B. nach Abschluss des aktuellen Aufrufs an die derzeit ausgeführte Prozedur). Weitere Informationen hierzu finden Sie unter [Bearbeiten und Fortfahren](../debugger/edit-and-continue.md).  
-  
- Sie können den Code während des Debuggens bearbeiten, um den Fehler zu beheben. Alternativ können Sie den Fehler ignorieren und mit dem Debuggen fortfahren. Wenn Sie fortfahren, ohne den Fehler zu beheben, werden Ihre Codeänderungen nicht sofort übernommen.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Bearbeiten und Fortfahren, Debuggen, Dialogfeld „Optionen“](https://msdn.microsoft.com/library/bcew296c.aspx)
+Mit der Funktion „Bearbeiten und Fortfahren“ konnten die von Ihnen vorgenommenen Änderungen am nativen Code nicht übernommen werden. Dies ist möglicherweise ein temporäres Problem. Manchmal können mit "Bearbeiten und Fortfahren" Änderungen an systemeigenem Code nicht sofort übernommen werden. Dies kann aber zu einem späteren Zeitpunkt bei der Debugsitzung erfolgen (z. B. nach Abschluss des aktuellen Aufrufs an die derzeit ausgeführte Prozedur). Weitere Informationen hierzu finden Sie unter [Bearbeiten und Fortfahren](../debugger/edit-and-continue.md).
+
+ Sie können den Code während des Debuggens bearbeiten, um den Fehler zu beheben. Alternativ können Sie den Fehler ignorieren und mit dem Debuggen fortfahren. Wenn Sie fortfahren, ohne den Fehler zu beheben, werden Ihre Codeänderungen nicht sofort übernommen.
+
+## <a name="see-also"></a>Siehe auch
+- [Bearbeiten und Fortfahren, Debuggen, Dialogfeld „Optionen“](https://msdn.microsoft.com/library/bcew296c.aspx)

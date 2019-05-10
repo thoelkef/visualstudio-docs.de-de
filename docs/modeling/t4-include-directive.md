@@ -1,25 +1,24 @@
 ---
-title: T4-Include-Anweisung
+title: T4-Include-Direktive
 ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 4a4b4f111776dc083e4c29ae7944b1f61762fe07
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1a3ab6aa4cd116c779cac4367d1eeb9a187edaeb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62964091"
 ---
-# <a name="t4-include-directive"></a>T4-Include-Anweisung
+# <a name="t4-include-directive"></a>T4-Include-Direktive
 
-In einer Textvorlage in Visual Studio können Sie Text aus einer anderen Datei einschließen, mithilfe einer `<#@include#>` Richtlinie. Sie können `include`-Direktiven an einer beliebigen Stelle in einer Textvorlage platzieren, und zwar vor dem ersten Klassenfunktionsblock `<#+ ... #>`. Die eingeschlossenen Dateien können auch `include`-Direktiven und andere Direktiven enthalten. Dadurch können Sie Vorlagencode und Text mit Codebausteinen zwischen Vorlagen freigeben.
+In einer Textvorlage in Visual Studio können Sie Text aus einer anderen Datei einschließen, mithilfe einer `<#@include#>` Richtlinie. Sie können `include`-Anweisungen an einer beliebigen Stelle in einer Textvorlage platzieren, und zwar vor dem ersten Klassenfunktionsblock `<#+ ... #>`. Die eingeschlossenen Dateien können auch `include`-Direktiven und andere Direktiven enthalten. Dadurch können Sie Vorlagencode und Text mit Codebausteinen zwischen Vorlagen freigeben.
 
-## <a name="using-include-directives"></a>Verwenden von Include-Direktiven
+## <a name="using-include-directives"></a>Verwenden von Include-Anweisungen
 
 ```
 <#@ include file="filePath" [once="true"] #>
@@ -66,7 +65,7 @@ Output message 5 (from top template).
 
 ```
    Output Message 2 (from included file).
-<#@include file="TextFile2.t4" #>
+<#@ include file="TextFile2.t4" #>
    Output Message 4 (from included file).
 <#+ // Start of class feature control block.
 void GenerateMessage(int n)

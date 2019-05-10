@@ -1,44 +1,43 @@
 ---
 title: 'Schnellstart: Erstellen eines Python-Projekts mithilfe von Cookiecutter'
 description: In diesem Schnellstart erstellen Sie ein Visual Studio-Projekt für Python mithilfe einer Cookiecutter-Vorlage.
-ms.date: 12/06/2018
-ms.prod: visual-studio-dev15
+ms.date: 02/25/2019
 ms.topic: quickstart
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8e4712a5dd73c899e82a8fc6e07331be5b6e6c46
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3f3e7f56f4a36a7958cba9bd7092f38d735123d4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954496"
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Schnellstart: Erstellen eines Projekts aus einer Cookiecutter-Vorlage
 
-Sobald Sie die [Python-Unterstützung in Visual Studio 2017 installiert haben](installing-python-support-in-visual-studio.md), können Sie ganz einfach ein neues Projekt aus einer Cookiecutter-Vorlage erstellen. Viele dieser Vorlagen wurden bereits auf GitHub veröffentlicht. [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) stellt eine grafische Benutzeroberfläche bereit, auf der Sie Vorlagen ermitteln, Vorlageoptionen eingeben und Projekte und Dateien erstellen können. Die Erweiterung ist im Lieferumfang von Visual Studio 2017 enthalten und kann separat in früheren Versionen von Visual Studio installiert werden.
+Sobald Sie die [Python-Unterstützung in Visual Studio installiert haben](installing-python-support-in-visual-studio.md), können Sie ganz einfach ein neues Projekt aus einer Cookiecutter-Vorlage erstellen. Viele dieser Vorlagen wurden bereits auf GitHub veröffentlicht. [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) stellt eine grafische Benutzeroberfläche bereit, auf der Sie Vorlagen ermitteln, Vorlageoptionen eingeben und Projekte und Dateien erstellen können. Die Erweiterung ist im Lieferumfang von Visual Studio 2017 und höher enthalten und kann separat in früheren Versionen von Visual Studio installiert werden.
 
 1. Installieren Sie für diesen Schnellstart zuerst die Python-Verteilung Anaconda3. Sie enthält die erforderlichen Python-Pakete für die hier gezeigte Cookiecutter-Vorlage. Führen Sie den Visual Studio-Installer aus, klicken Sie auf **Ändern**, erweitern Sie rechts die Optionen für **Python-Entwicklung**, und wählen Sie **Anaconda3** aus (32-Bit oder 64-Bit). Die Installation kann je nach Geschwindigkeit Ihres Internets einige Zeit in Anspruch nehmen. Dies ist jedoch der einfachste Weg, die erforderlichen Pakete zu installieren.
 
 1. Starten Sie Visual Studio.
 
-1. Klicken Sie auf **Datei** > **Neu** > **Aus Cookiecutter**. Mit diesem Befehl wird ein Fenster in Visual Studio geöffnet, in dem Sie Vorlagen durchsuchen können. 
+1. Klicken Sie auf **Datei** > **Neu** > **Aus Cookiecutter**. Mit diesem Befehl wird ein Fenster in Visual Studio geöffnet, in dem Sie Vorlagen durchsuchen können.
 
     ![Neues Projekt aus einer Cookiecutter-Vorlage erstellen](media/projects-from-cookiecutter1.png)
 
-1. Wenn Sie die Vorlage **Microsoft/python-sklearn-classifier-cookiecutter** ausgewählt haben, klicken Sie auf **Weiter**. Dieser Prozess kann bei der ersten Verwendung von Cookiecutter mehrere Minuten dauern.
+1. Wenn Sie die Vorlage **Microsoft/python-sklearn-classifier-cookiecutter** ausgewählt haben, klicken Sie auf **Weiter**. (Der Prozess kann einige Minuten beanspruchen, wenn Sie eine bestimmte Vorlage zum ersten Mal verwenden, da Visual Studio die erforderlichen Python-Pakete installiert.)
 
-1. Legen Sie als Nächstes über das Feld **Erstellen in** einen Speicherort für das neue Projekt fest, und klicken Sie dann auf **Erstellen**.
+1. Legen Sie als Nächstes über das Feld **Erstellen in** einen Speicherort für das neue Projekt fest, und klicken Sie dann auf **Projekt erstellen und öffnen**.
 
     ![Zweiter Schritt mit Cookiecutter, Festlegen von Projekteigenschaften](media/projects-from-cookiecutter2.png)
 
-1. Wenn der Prozess abgeschlossen ist, sehen Sie die Meldung **Files created successfully** (Die Dateien wurden erfolgreich erstellt). Klicken Sie auf den Befehl **Im Projektmappen-Explorer öffnen**, um das Projekt zu öffnen.
+1. Wenn der Prozess abgeschlossen ist, sehen Sie die Meldung **Successfully created files using template...** (Dateien wurden erfolgreich mit der Vorlage erstellt). Das Projekt wird automatisch im Projektmappen-Explorer geöffnet.
 
-1. Drücken Sie **STRG**+**F5**, oder wählen Sie **Debuggen** > **Ohne Debuggen starten** aus, um das Programm auszuführen. 
+1. Drücken Sie **STRG**+**F5**, oder wählen Sie **Debuggen** > **Ohne Debuggen starten** aus, um das Programm auszuführen.
 
     ![Ausgabe des Vorlagenprojekts „python-sklearn-classifier-cookiecutter“](media/projects-from-cookiecutter4.png)
 

@@ -1,20 +1,18 @@
 ---
 title: Hinzufügen eines Parameters zu einer Methode mit einer Schnellaktion
 ms.date: 09/28/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0337f9869764f544f5248d4da717af849457b8e8
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: 3e1461afe5c4d6026f8532896ba837e971fed652
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443746"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62792259"
 ---
 # <a name="add-a-parameter-to-a-method-using-a-quick-action"></a>Hinzufügen eines Parameters zu einer Methode mit einer Schnellaktion
 
@@ -24,11 +22,11 @@ Diese Codegenerierung gilt für:
 
 - Visual Basic
 
-**Was:** Ermöglicht das automatische Hinzufügen eines Parameters zu einer Methode basierend auf der Verwendung.
+**Beschreibung:** Ermöglicht das automatische Hinzufügen eines Parameters zu einer Methode basierend auf der Verwendung.
 
-**Wann:** Sie müssen einer Methode einen Parameter hinzufügen und möchten ihn automatisch richtig deklarieren.
+**Hintergrund:** Sie müssen einer Methode einen Parameter hinzufügen und möchten ihn automatisch richtig deklarieren.
 
-**Warum:** Sie können den Parameter der Methodendeklaration vor ihrem Aufruf hinzufügen, aber diese Funktion fügt ihn automatisch basierend auf einem Methodenaufruf hinzu.
+**Vorteile**: Sie können den Parameter der Methodendeklaration vor ihrem Aufruf hinzufügen, aber diese Funktion fügt ihn automatisch basierend auf einem Methodenaufruf hinzu.
 
 ## <a name="how-to-use-it"></a>Verwendungsweise
 

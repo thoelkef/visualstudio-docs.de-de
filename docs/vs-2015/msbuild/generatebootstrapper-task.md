@@ -1,14 +1,9 @@
 ---
 title: GenerateBootstrapper-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateBootstrapper
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: ca3ba2c6-d2ea-41f2-b7e3-0fc2b0730460
 caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c5c96c91a48e854c1619aa112bae5e1d84737765
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 488caf02a20b4f0855df1ba2ef64c85e70e1a6a4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811907"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668118"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Bietet eine automatisierte Methode zum Erkennen, Herunterladen und Installieren einer Anwendung sowie ihrer erforderlichen Komponenten. Sie dient als einzelner Installer, der den separaten Installer für alle Komponenten integriert, die zu einer Anwendung gehören.  
   
 ## <a name="task-parameters"></a>Aufgabenparameter  
@@ -103,7 +97,7 @@ Bietet eine automatisierte Methode zum Erkennen, Herunterladen und Installieren 
   
   - `HomeSite`: Gibt an, dass die erforderliche Komponente vom Komponentenanbieter gehostet wird.  
   
-  - `Relative`: Gibt an, dass sich die erforderliche Komponente am gleichen Speicherort der Anwendung befindet.  
+  - `Relative`: Gibt an, dass die erforderliche Komponente am gleichen Speicherort der Anwendung.  
   
   - `Absolute`: Gibt an, dass sich alle Komponenten bei einer zentralisierten URL befinden. Dieser Wert sollte zusammen mit dem Eingabeparameter `ComponentsUrl` verwendet werden.  
   
@@ -187,6 +181,3 @@ Bietet eine automatisierte Methode zum Erkennen, Herunterladen und Installieren 
 ## <a name="see-also"></a>Siehe auch  
  [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
  [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)
-
-
-

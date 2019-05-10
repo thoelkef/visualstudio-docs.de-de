@@ -2,7 +2,6 @@
 title: IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1442297fcacb3a9464f9ea67489c91c8ab64ad78
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
-ms.translationtype: MT
+ms.openlocfilehash: 42f92cfe9245a5e3a6342c31fc996ae2db50ef70
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733940"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443695"
 ---
 # <a name="iwebappdiagnosticssetupcreateobjectwithsiteatwebapp"></a>IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp
-Diese Methode erstellt zusammen die Klasse, deren ID, die Sie sich mit übergeben `rclsid` mithilfe der `dwClsContext`. Dies ist ähnlich wie bei [IRemoteDebugApplication::CreateInstanceAtApplication](../../winscript/reference/iremotedebugapplication-createinstanceatapplication.md) funktioniert, außer dass im Fall von `CreateObjectWithSiteAtWebApp` das Objekt asynchron an die Webanwendung-UI-Thread erstellt wird. Das durch die Klassen-ID angegebene Objekt implementieren sollten [IWebAppDiagnosticsObjectInitialization-Schnittstelle](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md). Nachdem das Objekt erstellt wurde, [IWebAppDiagnosticsObjectInitialization::Initialize](../../winscript/reference/iwebappdiagnosticsobjectinitialization-initialize.md) mit einem Verweis auf die PDM-Debug-Anwendung aufgerufen wird und die `hPassToObject` Parameter `CreateObjectWithSiteAtWebApp`. Verwenden Sie diese Methode in der app ein Handle auf eine anonyme Pipe übergeben, die Sie kopiert haben, mit [DuplicateHandle](http://go.microsoft.com/fwlink/?LinkId=232450).  
+Diese Methode erstellt gemeinsam die Klasse, deren ID, die Sie sich mit übergeben `rclsid` mithilfe der `dwClsContext`. Dies ist ähnlich wie die [IRemoteDebugApplication::CreateInstanceAtApplication](../../winscript/reference/iremotedebugapplication-createinstanceatapplication.md) funktioniert, außer dass im Fall von `CreateObjectWithSiteAtWebApp` das Objekt asynchron auf die Webanwendung UI-Thread erstellt wird. Die Klassen-ID angegebene Objekt implementieren sollte [IWebAppDiagnosticsObjectInitialization-Schnittstelle](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md). Nachdem das Objekt erstellt wurde, [IWebAppDiagnosticsObjectInitialization::Initialize](../../winscript/reference/iwebappdiagnosticsobjectinitialization-initialize.md) aufgerufen wird und einen Verweis auf das PDM-Debug-Anwendung und die `hPassToObject` Parameter `CreateObjectWithSiteAtWebApp`. Sie können diese Methode verwenden, bei der app ein Handle zu einer anonymen Pipe übergeben, die Sie kopiert haben, mithilfe von [DuplicateHandle](http://go.microsoft.com/fwlink/?LinkId=232450).  
   
 > [!IMPORTANT]
->  [IWebAppDiagnosticsSetup-Schnittstelle](../../winscript/reference/iwebappdiagnosticssetup-interface.md) wird implementiert von PDM V11. 0 und höher. Gefunden in activdbg100.h.  
+> [IWebAppDiagnosticsSetup-Schnittstelle](../../winscript/reference/iwebappdiagnosticssetup-interface.md) wird implementiert von PDM V11. 0 und höher. Gefunden in activdbg100.h.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -44,4 +43,4 @@ HRESULT CreateObjectWithSiteAtWebApp(        [in] REFCLSID rclsid,         [in] 
  Nicht verwendet.  
   
  `hPassToObject`  
- Ein Wert, der an das Objekt übergeben wird, sobald es an den UI-Thread erstellt wird, wenn das Objekt implementiert [IWebAppDiagnosticsObjectInitialization-Schnittstelle](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md).
+ Ein Wert, der auf das Objekt übergeben werden, wird nach der Erstellung der UI-Thread, wenn das Objekt implementiert [IWebAppDiagnosticsObjectInitialization-Schnittstelle](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md).

@@ -1,7 +1,6 @@
 ---
 title: Befehlsaliase
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - aliases, Visual Studio commands
@@ -14,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: de8bb378-8c1c-4087-a9a5-537fa8314c19
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae0064052fa2f042eec218f3653f4b43fa24ba0a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4ee8a41a6e72123a678cdf4be278a247cc3fa55e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878886"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789121"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 
@@ -40,7 +39,7 @@ In der folgenden Tabelle ist eine Liste der vordefinierten Visual Studio-Befehls
 |[Befehl "Schnellansicht"](../../ide/reference/quick-watch-command.md)|??|Debug.Quickwatch|
 |Neues Projekt hinzufügen|AddProj|File.AddNewProject|
 |[Befehl "Alias"](../../ide/reference/alias-command.md)|Alias|Tools.Alias|
-|Fenster |Auto|Debug.Autos|
+|Fenster |Autos|Debug.Autos|
 |"Haltepunkte" (Fenster)|bl|Debug.Breakpoints|
 |Haltepunkt ein/aus|bp|Debug.ToggleBreakPoint|
 |Aufruflistenfenster|CallStack|Debug.CallStack|
@@ -65,8 +64,8 @@ In der folgenden Tabelle ist eine Liste der vordefinierten Visual Studio-Befehls
 |[Befehl „Arbeitsspeicher auflisten“](../../ide/reference/list-memory-command.md) als Unicode|du|Debug.ListMemory /Unicode|
 |[Befehl "Anweisung auswerten"](../../ide/reference/evaluate-statement-command.md)|eval|Debug.EvaluateStatement|
 |Schließen|Schließen|File.Exit|
-|Auswahl formatieren|format|Edit.FormatSelection|
-|Ganzer Bildschirm|FullScreen|View.FullScreen|
+|Auswahl formatieren|Format|Edit.FormatSelection|
+|Vollbild|FullScreen|View.FullScreen|
 |[Befehl "Start"](../../ide/reference/start-command.md)|g|Debug.Start|
 |[Befehl "Gehe zu"](../../ide/reference/go-to-command.md)|GotoLn|Edit.GoTo|
 |Gehe zu Klammer|GotoBrace|Edit.GotoBrace|
@@ -93,13 +92,13 @@ In der folgenden Tabelle ist eine Liste der vordefinierten Visual Studio-Befehls
 |[Open File Command](../../ide/reference/open-file-command.md)|of Open|File.OpenFile|
 |[Befehl "Projekt öffnen"](../../ide/reference/open-project-command.md)|op|File.OpenProject|
 |Nur Definitionen anzeigen/Gliederung anhalten|OutlineDefs StopOutlining|Edit.CollapseToDefinitions|
-|Prozedurschritt|d|Debug.StepOver|
+|Prozedurschritt|p|Debug.StepOver|
 |Parameterinformationen|ParamInfo|Edit.ParameterInfo|
 |Ausführen bis Rücksprung|pr|Debug.StepOut|
 |Vorheriges Lesezeichen|PrevBook|Edit.PreviousBookmark|
 |Datei drucken|print|File.Print|
 |Eigenschaftenfenster|props|View.PropertiesWindow|
-|Anhalten|q|Debug.StopDebugging|
+|Beenden|q|Debug.StopDebugging|
 |Wiederholen|redo|Edit.Redo|
 |Registerfenster|Register|Debug.Registers|
 |Ausführen bis Cursor|rtc|Debug.RunToCursor|
@@ -119,7 +118,7 @@ In der folgenden Tabelle ist eine Liste der vordefinierten Visual Studio-Befehls
 |Fenster „Toolbox“|Toolbox|View.Toolbox|
 |[Befehl "Disassemblierung auflisten"](../../ide/reference/list-disassembly-command.md)|n|Debug.ListDisassembly|
 |In Großbuchstaben umwandeln|Ucase|Edit.MakeUppercase|
-|Rückgängig|undo|Edit.Undo|
+|undo|Rückgängig machen|Edit.Undo|
 |Tabstopps aus Auswahl entfernen|Tabstopps entfernen|Edit.UntabifySelection|
 |Überwachungsfenster|Überwachen|Debug.WatchN|
 |Umschalten des Zeilenumbruchs|WordWrap|Edit.ToggleWordWrap|

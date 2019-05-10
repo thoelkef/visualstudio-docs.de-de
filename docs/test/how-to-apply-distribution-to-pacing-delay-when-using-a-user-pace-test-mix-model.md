@@ -7,15 +7,13 @@ helpviewer_keywords:
 ms.assetid: ae8b35f9-d465-4d72-8d7d-7b56ae6ffd22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 19634186e13574c322c2e9bcc636dda3a823b158
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+manager: jillfra
+ms.openlocfilehash: d3ef8ecfefd1d614570b4d73808d3e5736d77230
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896190"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979340"
 ---
 # <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>Vorgehensweise: Anwenden der Verteilung auf die Geschwindigkeitsverzögerung beim Verwenden eines Testmischungsmodells für die Benutzergeschwindigkeit
 
@@ -34,7 +32,7 @@ Der Wert für **Verteilung auf Geschwindigkeitsverzögerung anwenden** kann auf 
 
      Beispiel: Der Wert für **Tests pro Benutzer und Stunde** im Dialogfeld **Testmischung bearbeiten** ist für den Test auf zwei Benutzer pro Stunde festgelegt. Ist die Eigenschaft **Verteilung auf Geschwindigkeitsverzögerung anwenden** auf **TRUE** festgelegt, wird auf die Wartezeit zwischen den Tests eine herkömmliche statistische Verteilung angewendet. Es werden weiterhin zwei Tests pro Stunde ausgeführt, zwischen ihnen ist jedoch nicht notwendigerweise eine Verzögerung von 30 Minuten. Der erste Test konnte nach 4 Minuten und der zweite Test nach 45 Minuten ausgeführt werden.
 
-- **FALSE**: Die Tests werden mit der Geschwindigkeit ausgeführt, die Sie für den Wert in der Spalte **Tests pro Benutzer und Stunde** im Dialogfeld **Testmischung bearbeiten** angegeben haben. Weitere Informationen finden Sie unter [Bearbeiten von Textmischungsmodellen zum Angeben der Wahrscheinlichkeit, mit der ein virtueller Benutzer einen Test ausführt](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+- **False**: Die Tests werden mit der Geschwindigkeit ausgeführt, die Sie für den Wert in der Spalte **Tests pro Benutzer und Stunde** im Dialogfeld **Testmischung bearbeiten** angegeben haben. Weitere Informationen finden Sie unter [Bearbeiten von Textmischungsmodellen zum Angeben der Wahrscheinlichkeit, mit der ein virtueller Benutzer einen Test ausführt](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
      Beispiel: Der Wert für **Tests pro Benutzer und Stunde** im Dialogfeld **Testmischung bearbeiten** ist für den Test auf zwei Benutzer pro Stunde festgelegt. Wenn die Eigenschaft **Verteilung auf Geschwindigkeitsverzögerung anwenden** auf **FALSE** festgelegt ist, ist kein Spielraum für die Testausführung vorhanden. Der Test wird alle 30 Minuten ausgeführt. So ist sichergestellt, dass Sie zwei Tests pro Stunde ausführen.
 
@@ -57,6 +55,6 @@ Der Wert für **Verteilung auf Geschwindigkeitsverzögerung anwenden** kann auf 
 ## <a name="see-also"></a>Siehe auch
 
 - [Bearbeiten von Auslastungstestszenarios](../test/edit-load-test-scenarios.md)
-- [Erstellen und Ausführen eines Auslastungstests](../test/walkthrough-create-and-run-a-load-test.md)
+- [Exemplarische Vorgehensweise: Erstellen und Ausführen eines Auslastungstests](../test/walkthrough-create-and-run-a-load-test.md)
 - [Testcontroller und Test-Agents](configure-test-agents-and-controllers-for-load-tests.md)
 - [Load test scenario properties (Eigenschaften von Auslastungstestszenarios)](../test/load-test-scenario-properties.md)

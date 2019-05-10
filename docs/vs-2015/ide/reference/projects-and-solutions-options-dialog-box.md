@@ -1,14 +1,9 @@
 ---
 title: Projekte und Projektmappen, Dialogfeld „Optionen“ | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Projects and Solutions Options dialog box
 - Options dialog box, Projects and Solutions
@@ -16,32 +11,31 @@ ms.assetid: 2801f24e-a138-488a-ae3c-e1f99a678ac0
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4230f99b78809594d65da991c65c11d7dc30efd4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 92dac82de96323e1d057991e6570715371c9b272
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246193"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438049"
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>Projekte und Projektmappen, Dialogfeld "Optionen"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Legt den Standardpfad der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]-Projektordner fest und bestimmt das Standardverhalten der Fenster **Ausgabe**, **Aufgabenliste** und **Projektmappen-Explorer** bei der Entwicklung und Erstellung von Projekten. Klicken Sie zum Zugriff auf dieses Dialogfeld auf **Extras/Optionen**, erweitern Sie **Projekte und Projektmappen**, und klicken Sie auf **Allgemein**.  
   
 > [!NOTE]
->  Die in einem Dialogfeld verfügbaren Optionen sowie die Namen und Positionen der angezeigten Menübefehle können sich je nach den persönlichen aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen Optionen unterscheiden. Diese Hilfeseite wurde unter Berücksichtigung der Option **Allgemeine Entwicklungseinstellungen** verfasst. Klicken Sie im Menü **Tools** auf Einstellungen **Importieren und Exportieren**, um die Einstellungen anzuzeigen oder zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Die in einem Dialogfeld verfügbaren Optionen sowie die Namen und Positionen der angezeigten Menübefehle können sich je nach den persönlichen aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen Optionen unterscheiden. Diese Hilfeseite wurde unter Berücksichtigung der Option **Allgemeine Entwicklungseinstellungen** verfasst. Klicken Sie im Menü **Tools** auf Einstellungen **Importieren und Exportieren**, um die Einstellungen anzuzeigen oder zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="settings"></a>Einstellungen  
  **Speicherort der Projekte**  
  Legt den Standardspeicherort fest, in dem neue Projekte und Projektmappenordner sowie Verzeichnisse erstellt werden. Verschiedene Dialogfelder verwenden auch den in dieser Option festgelegten Speicherort als Ausgangspunkt für Ordner. So verwendet z. B. das Dialogfeld "Projekt öffnen" diesen Speicherort für die Verknüpfung "Meine Projekte".  
   
  **Speicherort von Benutzerprojektvorlagen**  
- Legt den Standardspeicherort fest, der im Dialogfeld **Neues Projekt** verwendet wird, um die Liste **Meine Vorlagen** zu erstellen. Weitere Informationen finden Sie unter [Vorgehensweise: Suchen und Organisieren von Projekt- und Elementvorlagen](../../ide/how-to-locate-and-organize-project-and-item-templates.md).  
+ Legt den Standardspeicherort fest, der im Dialogfeld **Neues Projekt** verwendet wird, um die Liste **Meine Vorlagen** zu erstellen. Weitere Informationen finden Sie unter [Vorgehensweise: Suchen und Organisieren von Vorlagen](../../ide/how-to-locate-and-organize-project-and-item-templates.md).  
   
  **Speicherort von Benutzerelementvorlagen**  
- Legt den Standardspeicherort fest, der im Dialogfeld **Neues Element hinzufügen** verwendet wird, um die Liste **Meine Vorlagen** zu erstellen. Weitere Informationen finden Sie unter [Vorgehensweise: Suchen und Organisieren von Projekt- und Elementvorlagen](../../ide/how-to-locate-and-organize-project-and-item-templates.md).  
+ Legt den Standardspeicherort fest, der im Dialogfeld **Neues Element hinzufügen** verwendet wird, um die Liste **Meine Vorlagen** zu erstellen. Weitere Informationen finden Sie unter [Vorgehensweise: Suchen und Organisieren von Vorlagen](../../ide/how-to-locate-and-organize-project-and-item-templates.md).  
   
  **Fehlerliste bei Buildfertigstellung mit Fehlern immer anzeigen**  
  Öffnet das Fenster **Fehlerliste** nachdem der Build fertig gestellt ist nur dann, wenn ein Projekt nicht erstellt werden konnte. Hier werden während des Buildvorgangs aufgetretene Fehler angezeigt. Wenn diese Option deaktiviert ist, treten die Fehler weiterhin auf, aber das Fenster wird nicht geöffnet, wenn der Build abgeschlossen ist. Diese Option ist standardmäßig aktiviert.  
@@ -64,13 +58,10 @@ Legt den Standardpfad der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]-Projek
  Wenn Sie versuchen, ein neues Projekt zu erstellen oder ein vorhandenes Projekt an einem Speicherort zu öffnen, der nicht vollständig vertrauenswürdig ist (z. B. auf einem UNC-Pfad oder HTTP-Pfad), wird eine Meldung angezeigt. Verwenden Sie diese Option, um anzugeben, ob die Meldung jedes Mal angezeigt wird, wenn Sie versuchen, ein Projekt an einem Speicherort zu erstellen oder zu öffnen, der nicht vollständig vertrauenswürdig ist.  
   
  **Ausgabefenster bei Buildbeginn anzeigen**  
- Zeigt automatisch das Ausgabefenster in der IDE zu Beginn der Projektmappenerstellung an. Weitere Informationen finden Sie unter [How to: Control the Output Window (Vorgehensweise: Steuern des Ausgabefensters)](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858). Diese Option ist standardmäßig aktiviert.  
+ Zeigt automatisch das Ausgabefenster in der IDE zu Beginn der Projektmappenerstellung an. Weitere Informationen finden Sie unter [Vorgehensweise: Steuern des Ausgabefensters](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858). Diese Option ist standardmäßig aktiviert.  
   
  **Beim Umbenennen von Dateien zum symbolischen Umbenennen auffordern**  
  Wenn diese Option aktiviert ist, werden Sie in einer Meldung gefragt, ob [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] alle im Projekt enthaltenen Verweise auf das Codeelement umbenennen soll.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Dialogfeld „Optionen“, Projekte und Projektmappen, Erstellen und Ausführen](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)
-
-
-

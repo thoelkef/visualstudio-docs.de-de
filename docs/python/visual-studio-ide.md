@@ -1,23 +1,22 @@
 ---
 title: Überblick über Visual Studio für Python-Entwickler
 titleSuffix: ''
-ms.date: 12/14/2018
-ms.prod: visual-studio-dev15
+ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 dev_langs:
 - Python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d671a81c75483bfc21cf83954e03307d05a93ce8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d9c84e72551911135550c43da2b99ecb1357f9b6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957514"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Willkommen in der Visual Studio-IDE | Python
 
@@ -30,6 +29,10 @@ Auf diesem Bild sehen Sie Visual Studio mit einem geöffneten Python-Projekt und
 - Im [**Projektmappen-Explorer**](../ide/solutions-and-projects-in-visual-studio.md) (oben rechts) können Sie Ihre Codedateien anzeigen, in ihnen navigieren und sie verwalten. Der **Projektmappen-Explorer** kann Sie beim Ordnen Ihres Codes unterstützen, indem er die Dateien in [Projektmappen und Projekte](/visualstudio/get-started/tutorial-projects-solutions) gruppiert.
     - Neben dem **Projektmappen-Explorer** befindet sich die [**Python-Umgebung**](managing-python-environments-in-visual-studio.md), über die Sie verschiedene Python-Interpreter verwalten können, die auf Ihrem Computer installiert sind.
 
+    ::: moniker range=">=vs-2019"
+    - Sie können auch Python-Code in einem Ordner öffnen und ausführen, ohne Projekt- und Projektmappendateien für Visual Studio zu erstellen. Weitere Informationen finden Sie unter [Schnellstart: Öffnen und Ausführen von Python-Code in einem Ordner](quickstart-05-python-visual-studio-open-folder.md).
+    ::: moniker-end
+
 - Im [Editorfenster](../ide/writing-code-in-the-code-and-text-editor.md) (Mitte), in dem Sie die meiste Zeit verbringen werden, werden Dateiinhalte angezeigt. Hier können Sie den [Python-Code](editing-python-code-in-visual-studio.md) bearbeiten, innerhalb Ihrer Codestruktur navigieren und Breakpoints während Debugsitzungen festlegen. Mit Python können Sie ebenfalls einen bestimmten Codeabschnitt auswählen und STRG+EINGABETASTE drücken, um diesen Code in einem [interaktiven REPL-Fenster](python-interactive-repl-in-visual-studio.md) auszuführen.
 
 - Im Fenster [Ausgabe](../ide/reference/output-window.md) (unten in der Mitte) zeigt Visual Studio Benachrichtigungen, z. B. Debug- und Fehlermeldungen, Warnungen und Nachrichten zum Veröffentlichungsstatus an. Jede Nachrichtenquelle verfügt über eine eigene Registerkarte.
@@ -41,7 +44,7 @@ Auf diesem Bild sehen Sie Visual Studio mit einem geöffneten Python-Projekt und
 
 Visual Studio ist für Windows und Mac verfügbar. Python wird jedoch nur für Visual Studio unter Windows unterstützt.
 
-Es gibt drei Editionen von Visual Studio 2017 unter Windows: Community, Professional und Enterprise. Unter [Visual Studio 2017-IDEs im Vergleich](https://visualstudio.microsoft.com/vs/compare/) wird erläutert, welche Features in jeder Edition unterstützt werden.
+Es gibt drei Editionen von Visual Studio unter Windows: Community, Professional und Enterprise. Unter [Visual Studio-IDEs im Vergleich](https://visualstudio.microsoft.com/vs/compare/) erfahren Sie, welche Features in der jeweiligen Edition unterstützt werden.
 
 ## <a name="popular-productivity-features"></a>Gängige Features zur Steigerung der Produktivität
 
@@ -65,11 +68,11 @@ Einige gängige Features in Visual Studio, mit denen Sie bei der Entwicklung von
 
    ![PyLint-Befehl im Kontextmenü für Python-Projekte](media/code-pylint-command.png)
 
-- [Schnellstart](../ide/reference/quick-launch-environment-options-dialog-box.md)
+- Suchfeld
 
-   Visual Studio kann angesichts der zahlreichen Menüs, Optionen und Eigenschaften zuweilen übermächtig wirken. Mit dem Suchfeld **Schnellstart** finden Sie in Visual Studio schnell, was Sie suchen. Wenn Sie beginnen, den Namen dessen einzugeben, wonach Sie suchen, listet Visual Studio Ergebnisse auf, mit denen Sie ans gewünschte Ziel gelangen. Wenn Sie Visual Studio Funktionalitäten wie etwa die Unterstützung für eine zusätzliche Programmiersprache hinzufügen müssen, liefert **Schnellstart** Ergebnisse, mit denen Sie Visual Studio-Installer zum Installieren einer Workload oder einer einzelnen Komponente öffnen können.
+   Visual Studio kann angesichts der zahlreichen Menüs, Optionen und Eigenschaften zuweilen übermächtig wirken. Mit dem Suchfeld finden Sie in Visual Studio schnell, was Sie suchen. Wenn Sie beginnen, den Namen dessen einzugeben, wonach Sie suchen, listet Visual Studio Ergebnisse auf, mit denen Sie ans gewünschte Ziel gelangen. Wenn Sie Visual Studio Funktionalitäten wie etwa die Unterstützung für eine zusätzliche Programmiersprache hinzufügen müssen, liefert das Suchfeld Ergebnisse, mit denen Sie Visual Studio-Installer zum Installieren einer Workload oder einer einzelnen Komponente öffnen können.
 
-   ![Suchfeld „Schnellstart“ in Visual Studio](media/tour-ide-quick-launch.png)
+   ![Suchfeld in Visual Studio](media/tour-ide-quick-launch.png)
 
 - Wellenlinien und [schnelle Aktionen](../ide/quick-actions.md)
 
@@ -84,6 +87,12 @@ Einige gängige Features in Visual Studio, mit denen Sie bei der Entwicklung von
    ![Codenavigationsbefehle](media/tour-ide-navigation-commands.png)
 
 ## <a name="powerful-features-for-python"></a>Leistungsstarke Features für Python
+
+::: moniker range=">=vs-2019"
+- [Ausführen von Code ohne Projekt](quickstart-05-python-visual-studio-open-folder.md)
+
+    Ab Visual Studio-2019 können Sie einen Ordner mit Python-Code öffnen, um Funktionen wie IntelliSense und Debuggen zu nutzen, ohne ein Visual Studio-Projekt für den Code zu erstellen.
+::: moniker-end
 
 - [Interaktive Python-REPL](python-interactive-repl-in-visual-studio.md)
 
@@ -135,5 +144,4 @@ Wenn Sie die Möglichkeiten mit Python in Visual Studio näher kennenlernen möc
 
 - Entdecken Sie [weitere Visual Studio-Features](../ide/advanced-feature-overview.md).
 - Besuche Sie [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/).
-- Lesen Sie den [Visual Studio-Blog](https://blogs.msdn.microsoft.com/visualstudio/).
-- Nutzen Sie die kostenlosen Visual Studio-Kurse, die unter [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033) verfügbar sind.
+- Lesen Sie den [Visual Studio-Blog](https://devblogs.microsoft.com/visualstudio/).

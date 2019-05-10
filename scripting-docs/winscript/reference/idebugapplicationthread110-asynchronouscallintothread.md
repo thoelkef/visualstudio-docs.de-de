@@ -1,8 +1,7 @@
 ---
-title: IDebugApplicationThread110::AsynchronousCallIntoThread | Microsoft Docs
+title: IDebugApplicationThread110::AsynchronousCallIntoThread | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,18 +11,18 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0d4275d42ec102557cce12127f47a33a53c4dba6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
-ms.translationtype: MT
+ms.openlocfilehash: fd9fe0b7177c95aec675faaaa85896c52b375084
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440556"
 ---
 # <a name="idebugapplicationthread110asynchronouscallintothread"></a>IDebugApplicationThread110::AsynchronousCallIntoThread
-Stellt einen asynchronen Aufruf im Hauptthread an.  
+Führt einen asynchronen Aufruf im Hauptthread verarbeitet.  
   
 > [!IMPORTANT]
->  [IDebugApplicationThread110-Schnittstelle](../../winscript/reference/idebugapplicationthread110-interface.md) wird implementiert von PDM V11. 0 und höher. Gefunden in activdbg100.h.  
+> [IDebugApplicationThread110-Schnittstelle](../../winscript/reference/idebugapplicationthread110-interface.md) wird implementiert von PDM V11. 0 und höher. Gefunden in activdbg100.h.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -33,7 +32,7 @@ HRESULT AsynchronousCallInMainThread([in] IDebugThreadCall* pptc, [in] DWORD_PTR
   
 #### <a name="parameters"></a>Parameter  
  `pptc`  
- Die [IDebugThreadCall-Schnittstelle](../../winscript/reference/idebugthreadcall-interface.md) Objekt aufrufen.  
+ Die [IDebugThreadCall-Schnittstelle](../../winscript/reference/idebugthreadcall-interface.md) aufzurufenden Objekts.  
   
  `dwParam1`  
  Der erste Parameter des Aufrufs.  

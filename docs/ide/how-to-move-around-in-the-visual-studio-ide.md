@@ -1,7 +1,6 @@
 ---
 title: Navigieren in der IDE
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - environments [Visual Studio], navigation
@@ -15,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 6c36b6eb-c93f-496b-af08-4199f7afd8bd
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf2c00350b6b366e0e1d5ea02a8e260c8927b348
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5933d89e38d040b088879f10911f2f1fff049aab
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62547679"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Vorgehensweise: Navigieren in der Visual Studio-IDE
 
@@ -44,9 +43,9 @@ Die Optionen „Rückwärts navigieren“ und „Vorwärts navigieren“ ermögl
 
 ### <a name="to-move-through-open-files-in-order-of-use"></a>So navigieren Sie in der Verwendungsreihenfolge durch geöffnete Dateien
 
--   Drücken Sie **STRG**+**-**, um geöffnete Dokumente in der Reihenfolge zu aktivieren, in der sie zuletzt verwendet wurden.
+- Drücken Sie **STRG**+**-**, um geöffnete Dokumente in der Reihenfolge zu aktivieren, in der sie zuletzt verwendet wurden.
 
--   Drücken Sie **STRG**+**UMSCHALT**+**-**, um geöffnete Dokumente in umgekehrter Reihenfolge zu aktivieren.
+- Drücken Sie **STRG**+**UMSCHALT**+**-**, um geöffnete Dokumente in umgekehrter Reihenfolge zu aktivieren.
 
     > [!NOTE]
     > Die Optionen **Rückwärts navigieren** und **Vorwärts navigieren** befinden sich auch im Menü **Ansicht**.
@@ -64,20 +63,20 @@ Der Befehl `Window.PreviousDocumentWindowNav` ermöglicht es Ihnen, zu der zulet
 
 ### <a name="to-switch-to-specific-files-in-the-editor"></a>So wechseln Sie zu bestimmten Dateien im Editor
 
--   Drücken Sie **STRG**+**TAB**, um den **IDE-Navigator** anzuzeigen. Drücken Sie bei gedrückter **STRG**-Taste so oft die **TAB**-Taste, bis die gewünschte Datei ausgewählt ist.
+- Drücken Sie **STRG**+**TAB**, um den **IDE-Navigator** anzuzeigen. Drücken Sie bei gedrückter **STRG**-Taste so oft die **TAB**-Taste, bis die gewünschte Datei ausgewählt ist.
 
     > [!TIP]
     > Halten Sie **STRG**+**UMSCHALT** gedrückt, und drücken Sie die **TAB-TASTE**, um die Reihenfolge umzukehren, in der Sie durch die Liste **Aktive Dateien** navigieren.
 
     \- oder –
 
--   Klicken Sie in der oberen rechten Ecke des Editors auf die Schaltfläche **Aktive Dateien**, und wählen Sie eine Datei aus der Liste aus, zu der Sie wechseln möchten.
+- Klicken Sie in der oberen rechten Ecke des Editors auf die Schaltfläche **Aktive Dateien**, und wählen Sie eine Datei aus der Liste aus, zu der Sie wechseln möchten.
 
     \- oder –
 
--   Wählen Sie auf der Menüleiste **Fenster** > **Fenster** aus.
+- Wählen Sie auf der Menüleiste **Fenster** > **Fenster** aus.
 
--   Wählen Sie in der Liste die Datei aus, die Sie anzeigen möchten, und wählen Sie dann **Aktivieren**.
+- Wählen Sie in der Liste die Datei aus, die Sie anzeigen möchten, und wählen Sie dann **Aktivieren**.
 
 ## <a name="navigate-among-tool-windows-in-the-ide"></a>Navigieren zwischen Toolfenstern in der IDE
 
@@ -88,7 +87,7 @@ Mit dem **IDE-Navigator** können Sie auch zwischen den Toolfenstern navigieren,
 
 ### <a name="to-switch-to-a-specific-tool-window-in-the-ide"></a>So wechseln Sie zu einem bestimmten Toolfenster in der IDE
 
--   Drücken Sie **ALT**+**F7**, um den **IDE-Navigator** anzuzeigen. Drücken Sie bei gedrückter **ALT-TASTE** so oft die Taste **F7**, bis das gewünschte Fenster ausgewählt ist.
+- Drücken Sie **ALT**+**F7**, um den **IDE-Navigator** anzuzeigen. Drücken Sie bei gedrückter **ALT-TASTE** so oft die Taste **F7**, bis das gewünschte Fenster ausgewählt ist.
 
     > [!TIP]
     > Um die Reihenfolge umzukehren, in der Sie durch die Liste **Aktive Toolfenster** navigieren, halten Sie **UMSCHALT**+**ALT** gedrückt, und drücken Sie die Taste **F7**.

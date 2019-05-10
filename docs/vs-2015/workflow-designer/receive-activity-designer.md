@@ -1,11 +1,8 @@
 ---
 title: Receive-Aktivitätsdesigner | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.ServiceModel.Activities.Receive.UI
@@ -13,13 +10,13 @@ ms.assetid: f58d3c70-944d-4bb4-90a7-e68c103caddc
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 73d897b1e6835d56a3f590356a9588c6742e6add
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 05dc1643ecd05277baeba50bb00320d2f3a89abe
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828051"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971263"
 ---
 # <a name="receive-activity-designer"></a>Receive-Aktivitätsdesigner
 Die **Receive** Aktivitäts-Designer dient zum Erstellen und Konfigurieren einer <xref:System.ServiceModel.Activities.Receive> Aktivität. Eine <xref:System.ServiceModel.Activities.Receive>-Aktivität ist eine Aktivität, die eine Nachricht empfängt, die entweder ein integrierter Datentyp, etwa ein <xref:System.ServiceModel.Channels.Message>-, <xref:System.IO.Stream>- oder ein <xref:System.Xml.Linq.XElement>-Typ sein kann oder ein anwendungsdefinierter Datenvertrag, ein Nachrichtenvertrag oder eine XML-Klasse, die serialisiert werden kann.  
@@ -38,7 +35,6 @@ Die **Receive** Aktivitäts-Designer dient zum Erstellen und Konfigurieren einer
 
 ### <a name="the-receive-activity-properties"></a>Die Receive-Aktivitätseigenschaften  
  In der folgenden Tabelle werden die <xref:System.ServiceModel.Activities.Receive>-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden. Diese Eigenschaften können im Eigenschaftenraster oder auf der [!INCLUDE[wfd2](../includes/wfd2-md.md)]-Oberfläche bearbeitet werden. Die einzige erforderliche Eigenschaft ist die <xref:System.ServiceModel.Activities.Receive.OperationName%2A>-Eigenschaft.  
-
 
 |                              Eigenschaftenname                               | Erforderlich |                                                                                                                                                                                                                                                                                                                                                                                         Verwendung                                                                                                                                                                                                                                                                                                                                                                                         |
 |--------------------------------------------------------------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -1,14 +1,9 @@
 ---
 title: SetThreadCount | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 api_name:
 - SetThreadCount
 api_location:
@@ -21,18 +16,17 @@ ms.assetid: 335335a5-8ca0-4e18-95f5-62aa6a691386
 caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a22e9819435114186e7b2d9afec02736f686537d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 79987c77da7959c4ba37a4ae8e5b689a052cbbbc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280734"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666675"
 ---
 # <a name="setthreadcount"></a>SetThreadCount
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Legt die Anzahl der globalen Threads fest, und weist diese Anzahl für dem aktuellen Thread zu.  
   
 ## <a name="syntax"></a>Syntax  
@@ -46,10 +40,7 @@ HRESULT WINAPI SetThreadCount(int threadCount);
  Die Anzahl der zu verwendenden Threads.  
   
 ## <a name="return-value"></a>Rückgabewert  
- [HRESULT] (<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) mit dem [erfolgreich] (<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->)-Bit festgelegt ist, wenn die Anzahl der Threads aktualisiert wurde.  
+ Ein [HRESULT])<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) mit der [erfolgreich] ()<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->)-Bit festgelegt ist, wenn die Anzahl der Threads aktualisiert wurde.  
   
 ## <a name="requirements"></a>Anforderungen  
  **Header:** FileTracker.h
-
-
-

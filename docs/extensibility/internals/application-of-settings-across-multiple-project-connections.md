@@ -7,33 +7,32 @@ helpviewer_keywords:
 ms.assetid: 2116d3d0-c46c-4d0a-b482-08a178584f46
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c49ce750b48372e9233a788b4f98b6ece5e2a1d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6dbc2638fa23a1e0c7bf1301c3c978a1ef864c75
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927648"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861679"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>Anwendung von Einstellungen auf mehrere projektverbindungen
-Ein Quellcodeverwaltungs-Plug-In können mit der Quelle Steuerelement-Plug-in-API-Version 1.2, erstellt einen Batchvorgang den gleichen Quellcodeverwaltungsvorgang über mehrere Projekte oder mehrere Verbindung Kontexte ausgeführt. Batches können zum Eliminieren Sie redundante projektbezogene Dialogfelder, die von der Benutzeroberfläche verwendet werden.  
-  
- Wenn ein Benutzer mehrere Elemente, die mehr als eine Verbindung in ein Quellcodeverwaltungs-Plug-in erstellt wählt, mit der Quelle Steuerelement-Plug-in-API-Version 1.1 (z. B. zwei Webprojekten auf Computern mit verschiedenen Dateifreigabe) angehören, und sie überprüft, erhält der Benutzer die gleiche Dialogfeld Feld wiederholt. Dieses Szenario tritt auf, auch wenn der Benutzer klickt auf die **auf alle anwenden** Kontrollkästchen im Dialogfeld, da die IDE den Zustand für jede Verbindungskontext zurückgesetzt.  
-  
-## <a name="new-capability-flag"></a>Neue Funktion-flag  
- Die `SccBeginBatch` Funktion legt die `SCC_CAP_BATCH` Flags an, dass ein Batchvorgang ausgeführt wird.  
-  
-## <a name="new-functions"></a>Neue Funktionen  
-Die folgenden neuen Funktionen unterstützen den Batchvorgang:  
-  
--   [SccBeginBatch](../../extensibility/sccbeginbatch-function.md)  
-  
--   [SccEndBatch](../../extensibility/sccendbatch-function.md)  
+Ein Quellcodeverwaltungs-Plug-In können mit der Quelle Steuerelement-Plug-in-API-Version 1.2, erstellt einen Batchvorgang den gleichen Quellcodeverwaltungsvorgang über mehrere Projekte oder mehrere Verbindung Kontexte ausgeführt. Batches können zum Eliminieren Sie redundante projektbezogene Dialogfelder, die von der Benutzeroberfläche verwendet werden.
 
-  
-Die `SCCBeginBatch` Funktion startet eine Gruppe von Quellcodeverwaltungsvorgänge. Die `SccEndBatch` -Funktion schließt die Gruppe. Gruppen können nicht geschachtelt werden.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Neuerungen in der Quelle Steuerelement-Plug-in-API-Version 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
+ Wenn ein Benutzer mehrere Elemente, die mehr als eine Verbindung in ein Quellcodeverwaltungs-Plug-in erstellt wählt, mit der Quelle Steuerelement-Plug-in-API-Version 1.1 (z. B. zwei Webprojekten auf Computern mit verschiedenen Dateifreigabe) angehören, und sie überprüft, erhält der Benutzer die gleiche Dialogfeld Feld wiederholt. Dieses Szenario tritt auf, auch wenn der Benutzer klickt auf die **auf alle anwenden** Kontrollkästchen im Dialogfeld, da die IDE den Zustand für jede Verbindungskontext zurückgesetzt.
+
+## <a name="new-capability-flag"></a>Neue Funktion-flag
+ Die `SccBeginBatch` Funktion legt die `SCC_CAP_BATCH` Flags an, dass ein Batchvorgang ausgeführt wird.
+
+## <a name="new-functions"></a>Neue Funktionen
+Die folgenden neuen Funktionen unterstützen den Batchvorgang:
+
+- [SccBeginBatch](../../extensibility/sccbeginbatch-function.md)
+
+- [SccEndBatch](../../extensibility/sccendbatch-function.md)
+
+Die `SCCBeginBatch` Funktion startet eine Gruppe von Quellcodeverwaltungsvorgänge. Die `SccEndBatch` -Funktion schließt die Gruppe. Gruppen können nicht geschachtelt werden.
+
+## <a name="see-also"></a>Siehe auch
+- [Neuerungen in der Quelle Steuerelement-Plug-in-API-Version 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

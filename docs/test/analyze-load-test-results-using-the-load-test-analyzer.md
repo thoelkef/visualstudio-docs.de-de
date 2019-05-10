@@ -9,14 +9,13 @@ helpviewer_keywords:
 ms.assetid: 8a4ba300-425d-447c-91d9-c53f4345feee
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 76aa076f4813cf2719f1ecc2d009c44788dae9f9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 197df09d54500e16ca4f904662693bdfc983f7b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900677"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822799"
 ---
 # <a name="analyze-load-test-results-using-the-load-test-analyzer"></a>Analysieren von Auslastungstestergebnissen mithilfe des Auslastungstest-Analyzers
 
@@ -26,11 +25,11 @@ Mit dem **Auslastungstest-Analyzer** können Engpässe gesucht, Fehler ermittelt
 
 Analysieren Sie Auslastungstestergebnisse wie folgt:
 
--   Überwachen eines Auslastungstests während der Ausführung
+- Überwachen eines Auslastungstests während der Ausführung
 
--   Analysieren eines abgeschlossenen Auslastungstests
+- Analysieren eines abgeschlossenen Auslastungstests
 
--   Anzeigen von Ergebnissen vorheriger Auslastungstests
+- Anzeigen von Ergebnissen vorheriger Auslastungstests
 
 Sie können auch Berichte erstellen, in denen zwei oder mehr Berichte verglichen werden, um eine Trendanalyse für Projektbeteiligte freizugeben. Weitere Informationen finden Sie unter [Reporting Load Tests Results for Test Comparisons or Trend Analysis (Erstellen von Berichten zu Auslastungstestergebnissen für Testvergleiche oder die Trendanalyse)](../test/compare-load-test-results.md).
 

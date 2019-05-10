@@ -1,14 +1,9 @@
 ---
 title: IDebugProperty3 | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProperty3
 helpviewer_keywords:
@@ -16,26 +11,26 @@ helpviewer_keywords:
 ms.assetid: 8f9be68d-4490-4eca-8f6b-8a10ed77e226
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e209c41df5b9994d206fb07f47909cf8523364bf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 272946c80f5df2c96d4cf2bf20ea988c71766d46
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817281"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100572"
 ---
 # <a name="idebugproperty3"></a>IDebugProperty3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Diese Schnittstelle bietet Unterstützung für:  
   
--   Abrufen von einer beliebig lange Zeichenfolge, die der Eigenschaft zugeordnet.  
+- Abrufen von einer beliebig lange Zeichenfolge, die der Eigenschaft zugeordnet.  
   
--   Verknüpfen eine eindeutige ID, mit der Eigenschaft.  
+- Verknüpfen eine eindeutige ID, mit der Eigenschaft.  
   
--   Eine Liste der benutzerdefinierten Viewer für die Eigenschaft abgerufen.  
+- Eine Liste der benutzerdefinierten Viewer für die Eigenschaft abgerufen.  
   
--   Den Wert einer Eigenschaft festlegen, mit der Möglichkeit, alle resultierenden Fehler melden  
+- Den Wert einer Eigenschaft festlegen, mit der Möglichkeit, alle resultierenden Fehler melden  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -76,4 +71,3 @@ IDebugProperty3 : IDebugProperty2
  [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)
-

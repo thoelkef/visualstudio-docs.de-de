@@ -8,35 +8,34 @@ dev_langs:
 ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5923a3df9241689847444f5748d07f3c5f389ce5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 4e7f99f646d2a93878ec0a78f75cdc6ae1fb0d1c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926585"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62570078"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Erstellen einer einfachen Datenanwendung mit ADO.NET
 
-Wenn Sie eine Anwendung erstellen, die Daten in einer Datenbank bearbeitet, führen Sie grundlegende Aufgaben aus wie Definieren von Verbindungszeichenfolgen, Einfügen von Daten und Ausführen gespeicherter Prozeduren. Befolgen Sie in diesem Thema, Sie können ermitteln, wie Sie mit einer Datenbank in einer einfachen Windows Forms "Forms over Data"-Anwendung zu interagieren, mithilfe von Visual C# oder Visual Basic und ADO.NET.  Alle .NET Data-Technologien, einschließlich Datasets, LINQ to SQL und Entity Framework – letztendlich Schritte, die in diesem Artikel gezeigten sehr ähnlich sind.
+Wenn Sie eine Anwendung erstellen, die Daten in einer Datenbank bearbeitet, führen Sie grundlegende Aufgaben aus wie Definieren von Verbindungszeichenfolgen, Einfügen von Daten und Ausführen gespeicherter Prozeduren. Befolgen Sie in diesem Thema, können Sie den Umgang mit einer Datenbank in eine einfache Windows Forms "Forms over Data"-Anwendung mit Visual c# oder Visual Basic und ADO.NET ermitteln.  Alle .NET Data-Technologien, einschließlich Datasets, LINQ to SQL und Entity Framework – letztendlich Schritte, die in diesem Artikel gezeigten sehr ähnlich sind.
 
 Dieser Artikel veranschaulicht eine einfache Möglichkeit zum Abrufen von Daten aus der Datenbank auf schnelle Weise. Wenn Ihre Anwendung muss Daten auf nicht trivialen Weise ändern und die Datenbank zu aktualisieren, sollten Sie sich mithilfe von Entity Framework und mithilfe der Datenbindung an um Steuerelemente der Benutzeroberfläche auf Änderungen in den zugrunde liegenden Daten automatisch zu synchronisieren.
 
 > [!IMPORTANT]
 > Der Code enthält keine produktionsbereite Ausnahmebehandlung, um ihn einfach zu halten.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Vorraussetzungen
 
 Zum Erstellen der Anwendung benötigen Sie:
 
--   Visual Studio.
+- Visual Studio.
 
--   SQL Server Express LocalDB. Wenn Sie SQL Server Express LocalDB nicht haben, können Sie installieren, von der [Downloadseite für SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express).
+- SQL Server Express LocalDB. Wenn Sie SQL Server Express LocalDB nicht haben, können Sie installieren, von der [Downloadseite für SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express).
 
-In diesem Thema wird davon ausgegangen, dass Sie mit den grundlegenden Funktionen von Visual Studio-IDE vertraut, und eine Windows Forms-Anwendung erstellen, hinzufügen, dass das Projekt, und fügen Schaltflächen und andere Steuerelemente auf die Formulare, Formulare Eigenschaften der Steuerelemente und einfache Ereignisse programmieren festgelegt. Wenn Sie nicht mit diesen Aufgaben vertraut sind, empfiehlt es sich, dass Sie beim Ausführen der [erste Schritte mit Visual C# und Visual Basic](../ide/quickstart-visual-basic-console.md) Thema, bevor Sie in dieser exemplarischen Vorgehensweise beginnen.
+In diesem Thema wird davon ausgegangen, dass Sie mit den grundlegenden Funktionen von Visual Studio-IDE vertraut, und eine Windows Forms-Anwendung erstellen, hinzufügen, dass das Projekt, und fügen Schaltflächen und andere Steuerelemente auf die Formulare, Formulare Eigenschaften der Steuerelemente und einfache Ereignisse programmieren festgelegt. Wenn Sie nicht mit diesen Aufgaben vertraut sind, empfiehlt es sich, dass Sie beim Ausführen der [erste Schritte mit Visual c# und Visual Basic](../ide/quickstart-visual-basic-console.md) Thema, bevor Sie in dieser exemplarischen Vorgehensweise beginnen.
 
 ## <a name="set-up-the-sample-database"></a>Die Beispieldatenbank einrichten
 
@@ -70,11 +69,11 @@ Erstellen der Beispieldatenbank mit folgenden Schritten:
 
 2. Fügen Sie dem Projekt zwei Windows-Formulare hinzu, sodass es drei Formulare enthält, und geben Sie ihnen die folgenden Namen:
 
-   -   **Navigation**
+   - **Navigation**
 
-   -   **NewCustomer**
+   - **NewCustomer**
 
-   -   **FillOrCancel**
+   - **FillOrCancel**
 
 3. Fügen Sie für jedes Formular die Textfelder, Schaltflächen und anderen Steuerelementen hinzu, die in der folgenden Abbildung dargestellt werden. Legen Sie für jedes Steuerelement die Eigenschaften fest, die in den Tabellen beschrieben werden.
 
@@ -125,21 +124,21 @@ Erstellen der Beispieldatenbank mit folgenden Schritten:
 
  Sie finden die Verbindungszeichenfolge, indem Sie mit der rechten Maustaste auf die **Sales** Datenverbindung in **Server-Explorer** und **Eigenschaften**. Suchen Sie die **"ConnectionString"** -Eigenschaft verwenden, klicken Sie dann **STRG**+**ein**, **STRG**+**C**  auswählen und kopieren Sie die Zeichenfolge in die Zwischenablage.
 
-1.  Bei Verwendung von C#im **Projektmappen-Explorer**, erweitern Sie die **Eigenschaften** Knoten unter dem Projekt, und öffnen Sie dann die **Settings.settings** Datei.
+1. Wenn Sie c# in nutzen **Projektmappen-Explorer**, erweitern Sie die **Eigenschaften** Knoten unter dem Projekt, und öffnen Sie dann die **Settings.settings** Datei.
     Wenn Sie in Visual Basic verwenden **Projektmappen-Explorer**, klicken Sie auf **alle Dateien anzeigen**, erweitern Sie die **Mein Projekt** Knoten, und öffnen Sie die **Settings.settings** Datei.
 
-2.  In der **Namen** Spalte Geben Sie `connString`.
+2. In der **Namen** Spalte Geben Sie `connString`.
 
-3.  In der **Typ** Liste **(Verbindungszeichenfolge)**.
+3. In der **Typ** Liste **(Verbindungszeichenfolge)**.
 
-4.  In der **Bereich** Liste **Anwendung**.
+4. In der **Bereich** Liste **Anwendung**.
 
-5.  In der **Wert** Spalte Geben Sie Ihre Verbindungszeichenfolge (ohne außerhalb der Anführungszeichen), und speichern Sie Ihre Änderungen.
+5. In der **Wert** Spalte Geben Sie Ihre Verbindungszeichenfolge (ohne außerhalb der Anführungszeichen), und speichern Sie Ihre Änderungen.
 
 > [!NOTE]
 > In einer realen Anwendung sollten Sie sicher, wie beschrieben in der Verbindungszeichenfolge speichern [Verbindungszeichenfolgen und Konfigurationsdateien](/dotnet/framework/data/adonet/connection-strings-and-configuration-files).
 
-##  <a name="write-the-code-for-the-forms"></a>Den Code für die Formulare schreiben
+## <a name="write-the-code-for-the-forms"></a>Den Code für die Formulare schreiben
 
 Dieser Abschnitt enthält kurze Übersichten über die Funktionsweise der einzelnen Formulare. Darüber hinaus den Code, der die zugrunde liegende Logik definiert werden, wenn eine Formular auf die Schaltfläche geklickt wird.
 
@@ -181,6 +180,7 @@ Gehen Sie folgendermaßen vor, um die Logik der NewCustomer-Formular abzuschlie�
      ```csharp
      using System.Data.SqlClient;
      ```
+
      ```vb
      Imports System.Data.SqlClient
      ```
@@ -213,6 +213,7 @@ Um die Logik der FillOrCancel-Formular abgeschlossen haben, gehen Sie wie folgt 
      using System.Data.SqlClient;
      using System.Text.RegularExpressions;
      ```
+
      ```vb
      Imports System.Data.SqlClient
      Imports System.Text.RegularExpressions

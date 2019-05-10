@@ -10,15 +10,13 @@ helpviewer_keywords:
 ms.assetid: 0c0fcc99-673b-4ea0-a268-0475f66e5cb6
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: e138445989477fe4ead6fde0dc000430626c2638
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 8382d5014b88d9f1711a082e46530e1e3dfb96e4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062744"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965472"
 ---
 # <a name="create-custom-code-and-plug-ins-for-load-tests"></a>Erstellen von benutzerdefiniertem Code und benutzerdefinierten Plug-Ins für Auslastungstests
 

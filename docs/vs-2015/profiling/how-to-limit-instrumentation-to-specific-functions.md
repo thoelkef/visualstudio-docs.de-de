@@ -1,29 +1,24 @@
 ---
-title: 'Vorgehensweise: Beschränken der Instrumentierung auf bestimmte Funktionen | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Einschränken der Instrumentierung auf bestimmte Funktionen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, limiting instrumentation to functions
 ms.assetid: bd98d6bf-2560-4eba-b063-2facb09f87c4
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c7fa666c42d31035bd42841a2bbb41221bc16b5e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 8923323a3aed96a9dd441a4a36b2084ffd8197e6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782569"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432656"
 ---
-# <a name="how-to-limit-instrumentation-to-specific-functions"></a>Gewusst wie: Beschränken der Instrumentierung auf bestimmte Funktionen
+# <a name="how-to-limit-instrumentation-to-specific-functions"></a>Vorgehensweise: Beschränkung der Instrumentierung auf bestimmte Funktionen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können die Instrumentierung und Datensammlung auf eine oder mehr Funktionen einschränken, indem Sie die Optionen unter der Seite **Erweitert** der **Leistungssitzung** oder die Zielbinärdateieigenschaften einstellen.  
@@ -35,7 +30,7 @@ Sie können die Instrumentierung und Datensammlung auf eine oder mehr Funktionen
   Das beschränken der Datensammlung auf diese Weise wird nur unterstützt, wenn die Instrumentierungs-Profilerstellungsmethode ausgewählt ist.  
   
 > [!NOTE]
->  Sie können auch die Seite **Erweitert** der Eigenschaftenseiten **Leistungssitzung** verwenden, um andere Einstellungen zu verwenden, die für das Befehlszeilen-Instrumentierungstool [VSInstr](../profiling/vsinstr.md) verfügbar sind.  
+> Sie können auch die Seite **Erweitert** der Eigenschaftenseiten **Leistungssitzung** verwenden, um andere Einstellungen zu verwenden, die für das Befehlszeilen-Instrumentierungstool [VSInstr](../profiling/vsinstr.md) verfügbar sind.  
   
 ### <a name="to-limit-instrumentation-to-specific-functions-in-a-performance-session"></a>So beschränken Sie die Instrumentierung auf bestimmte Funktionen in einer Leistungssitzung  
   
@@ -52,7 +47,7 @@ Sie können die Instrumentierung und Datensammlung auf eine oder mehr Funktionen
     `FuncSpec` ist der Namespace und der Funktionsname. Es hat das Format `Namespace`**::**`FunctionName`. Trennen Sie mehrere Funktionen mit einem Semikolon. Verwenden Sie ein Sternchen (\*), um einen Platzhalter für ein oder mehrere Zeichen anzugeben. Beispiel: **/include:MyNS::\\*** gibt alle Funktionen im Namespace „MyNS“ an.  
   
    > [!NOTE]
-   >  Öffnen Sie zum Auflisten der Funktionen in einer Binärdatei ein Eingabeaufforderungsfenster im Installationsverzeichnis des Profilerstellungstools (in der Regel das Verzeichnis \Team Tools\Performance Tools unter dem Installationsverzeichnis [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)]), und geben Sie anschließend **vsinstr /DumpFuncs** ein.  
+   > Öffnen Sie zum Auflisten der Funktionen in einer Binärdatei ein Eingabeaufforderungsfenster im Installationsverzeichnis des Profilerstellungstools (in der Regel das Verzeichnis \Team Tools\Performance Tools unter dem Installationsverzeichnis [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)]), und geben Sie anschließend **vsinstr /DumpFuncs** ein.  
   
 ### <a name="to-limit-instrumentation-to-specific-functions-in-a-binary"></a>So beschränken Sie die Instrumentierung auf eine bestimmte Funktion in einer Binärdatei  
   
@@ -71,12 +66,9 @@ Sie können die Instrumentierung und Datensammlung auf eine oder mehr Funktionen
     `FuncSpec` ist der Namespace und der Funktionsname. Es hat das Format `Namespace`**::**`FunctionName`. Trennen Sie mehrere Funktionen mit einem Semikolon. Verwenden Sie ein Sternchen (\*), um einen Platzhalter für ein oder mehrere Zeichen anzugeben. Beispiel: **/include:MyNS::\\*** gibt alle Funktionen im Namespace „MyNS“ an.  
   
    > [!NOTE]
-   >  Öffnen Sie zum Auflisten der Funktionen in einer Binärdatei ein Eingabeaufforderungsfenster im Installationsverzeichnis des Profilerstellungstools (in der Regel das Verzeichnis \Team Tools\Performance Tools unter dem Installationsverzeichnis [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)]), und geben Sie anschließend **vsinstr /DumpFuncs** ein.  
+   > Öffnen Sie zum Auflisten der Funktionen in einer Binärdatei ein Eingabeaufforderungsfenster im Installationsverzeichnis des Profilerstellungstools (in der Regel das Verzeichnis \Team Tools\Performance Tools unter dem Installationsverzeichnis [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)]), und geben Sie anschließend **vsinstr /DumpFuncs** ein.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Steuern der Datensammlung](../profiling/controlling-data-collection.md)   
- [Vorgehensweise: Beschränken der Instrumentierung auf bestimmte DLLs](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)   
+ [Vorgehensweise: Limit Instrumentation auf bestimmte DLLs](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)   
  [Vorgehensweise: Angeben zusätzlicher Instrumentierungsoptionen](../profiling/how-to-specify-additional-instrumentation-options.md)
-
-
-

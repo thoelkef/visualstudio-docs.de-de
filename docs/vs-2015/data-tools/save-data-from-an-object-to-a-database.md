@@ -1,12 +1,9 @@
 ---
 title: Speichern von Daten aus einem Objekt in einer Datenbank | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,26 +17,25 @@ ms.assetid: efd6135a-40cf-4b0d-8f8b-41a5aaea7057
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: acbbf9f309573f110da3b7dd0a53ede36150a319
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c079d3f85dbab87e30edb059c76202dd727f715c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207453"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425060"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Speichern von Daten aus einem Objekt in einer Datenbank
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
-Sie können Daten in Objekten in einer Datenbank speichern, indem Sie die Werte aus dem Objekt eines TableAdapters-DBDirect-Methoden übergeben (z. B. `TableAdapter.Insert`). Weitere Informationen finden Sie unter [TableAdapter Overview](../data-tools/tableadapter-overview.md).  
+Sie können Daten in Objekten in einer Datenbank speichern, indem Sie die Werte aus dem Objekt eines TableAdapters-DBDirect-Methoden übergeben (z. B. `TableAdapter.Insert`).
   
  Klicken Sie zum Speichern von Daten aus einer Auflistung von Objekten, durchlaufen Sie die Auflistung von Objekten (z. B. eine for-Next-Schleife), und senden Sie die Werte für jedes Objekt an die Datenbank mithilfe einer der TableAdapters-DBDirect-Methoden.  
   
  Standardmäßig werden die DBDirect-Methoden auf einem TableAdapter erstellt, die direkt in der Datenbank ausgeführt werden können. Diese Methoden können direkt aufgerufen werden und erfordern keine <xref:System.Data.DataSet> oder <xref:System.Data.DataTable> Objekte Änderungen abstimmen, um Updates in einer Datenbank zu senden.  
   
 > [!NOTE]
->  Wenn Sie einen TableAdapter konfigurieren, muss die Hauptabfrage genügend Informationen für die DBDirect-Methoden, die erstellt werden, angeben. Z. B. wenn ein TableAdapter zum Abfragen von Daten aus einer Tabelle, die nicht über eine primäre Schlüsselspalte definiert verfügt konfiguriert ist, wird es nicht DBDirect-Methoden generiert.  
+> Wenn Sie einen TableAdapter konfigurieren, muss die Hauptabfrage genügend Informationen für die DBDirect-Methoden, die erstellt werden, angeben. Z. B. wenn ein TableAdapter zum Abfragen von Daten aus einer Tabelle, die nicht über eine primäre Schlüsselspalte definiert verfügt konfiguriert ist, wird es nicht DBDirect-Methoden generiert.  
   
 |TableAdapter-DBDirect-Methode|Beschreibung|  
 |----------------------------------|-----------------|  
@@ -49,7 +45,7 @@ Sie können Daten in Objekten in einer Datenbank speichern, indem Sie die Werte 
   
 ### <a name="to-save-new-records-from-an-object-to-a-database"></a>Um neue Datensätze aus einem Objekt in einer Datenbank zu speichern.  
   
--   Erstellen Sie die Datensätze durch Übergeben der Werte, die `TableAdapter.Insert` Methode.  
+- Erstellen Sie die Datensätze durch Übergeben der Werte, die `TableAdapter.Insert` Methode.  
   
      Das folgende Beispiel erstellt einen neuer Kundendatensatz in der `Customers` Tabelle durch Übergeben der Werte in der `currentCustomer` -Objekt an die `TableAdapter.Insert` Methode.  
   
@@ -58,10 +54,10 @@ Sie können Daten in Objekten in einer Datenbank speichern, indem Sie die Werte 
   
 ### <a name="to-update-existing-records-from-an-object-to-a-database"></a>Zum Aktualisieren vorhandener Datensätze aus einem Objekt in einer Datenbank  
   
--   Ändern Sie die Datensätze durch Aufrufen der `TableAdapter.Update` -Methode, indem Sie die neuen Werte zur Aktualisierung des Datensatzes übergeben und in den ursprünglichen Werten den Datensatz gesucht.  
+- Ändern Sie die Datensätze durch Aufrufen der `TableAdapter.Update` -Methode, indem Sie die neuen Werte zur Aktualisierung des Datensatzes übergeben und in den ursprünglichen Werten den Datensatz gesucht.  
   
     > [!NOTE]
-    >  Die ursprünglichen Werte beibehalten werden, um sie übergeben das Objekt muss die `Update` Methode. Dieses Beispiel verwendet die Eigenschaften mit einem `orig` Präfix, das die ursprünglichen Werte zu speichern.  
+    > Die ursprünglichen Werte beibehalten werden, um sie übergeben das Objekt muss die `Update` Methode. Dieses Beispiel verwendet die Eigenschaften mit einem `orig` Präfix, das die ursprünglichen Werte zu speichern.  
   
      Das folgende Beispiel aktualisiert einen vorhandenen Datensatz in die `Customers` Tabelle übergeben Sie die neuen und ursprünglichen Werte in der `Customer` -Objekt an die `TableAdapter.Update` Methode.  
   
@@ -70,10 +66,10 @@ Sie können Daten in Objekten in einer Datenbank speichern, indem Sie die Werte 
   
 ### <a name="to-delete-existing-records-from-a-database"></a>So löschen Sie vorhandene Datensätze aus einer Datenbank  
   
--   Löschen Sie die Datensätze durch Aufrufen der `TableAdapter.Delete` -Methode und übergeben die ursprünglichen Werte den Datensatz gesucht.  
+- Löschen Sie die Datensätze durch Aufrufen der `TableAdapter.Delete` -Methode und übergeben die ursprünglichen Werte den Datensatz gesucht.  
   
     > [!NOTE]
-    >  Die ursprünglichen Werte beibehalten werden, um sie übergeben das Objekt muss die `Delete` Methode. Dieses Beispiel verwendet die Eigenschaften mit einem `orig` Präfix, das die ursprünglichen Werte zu speichern.  
+    > Die ursprünglichen Werte beibehalten werden, um sie übergeben das Objekt muss die `Delete` Methode. Dieses Beispiel verwendet die Eigenschaften mit einem `orig` Präfix, das die ursprünglichen Werte zu speichern.  
   
      Das folgende Beispiel löscht einen Datensatz aus der `Customers` Tabelle übergeben Sie die ursprünglichen Werte in der `Customer` -Objekt an die `TableAdapter.Delete` Methode.  
   
@@ -85,4 +81,3 @@ Sie können Daten in Objekten in einer Datenbank speichern, indem Sie die Werte 
   
 ## <a name="see-also"></a>Siehe auch  
  [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)
-

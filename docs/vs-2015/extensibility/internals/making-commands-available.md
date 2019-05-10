@@ -1,14 +1,9 @@
 ---
 title: Verfügbarmachen von Befehlen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - menus [Visual Studio SDK], commands
 - best practices, menu and toolbar commands
@@ -17,22 +12,22 @@ helpviewer_keywords:
 ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 caps.latest.revision: 36
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 00ed8231641718b6d0dce8d535b0c43e40b83dd8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: cab4244fbf9173895159a4b104260006fc93f0c2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783037"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436245"
 ---
 # <a name="making-commands-available"></a>Verfügbarmachen von Befehlen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Wenn mehrere VSPackages zu Visual Studio hinzugefügt werden, kann die Benutzeroberfläche (UI) mit den Befehlen Akzente werden. Sie können das Paket, um dieses Problem lautet wie folgt zu reduzieren, Programmieren:  
   
--   Programm des Pakets, damit sie geladen wird, nur wenn ein Benutzer ist erforderlich.  
+- Programm des Pakets, damit sie geladen wird, nur wenn ein Benutzer ist erforderlich.  
   
--   Programmieren Sie das Paket so, dass die Befehle nur angezeigt werden, wenn diese im Kontext des aktuellen Zustands der integrierten Entwicklungsumgebung (IDE) werden möglicherweise benötigt.  
+- Programmieren Sie das Paket so, dass die Befehle nur angezeigt werden, wenn diese im Kontext des aktuellen Zustands der integrierten Entwicklungsumgebung (IDE) werden möglicherweise benötigt.  
   
 ## <a name="delayed-loading"></a>Verzögertes Laden  
  Das übliche Verfahren zum ermöglichen ist das VSPackage so entwerfen, dass die Befehle werden in der Benutzeroberfläche angezeigt, aber das Paket selbst nicht geladen werden, wird bis ein Benutzer, einen der Befehle klickt das verzögerte Laden. Erstellen Sie dazu in der VSCT-Datei Befehle, die keine Befehlsflags.  
@@ -99,14 +94,14 @@ Wenn mehrere VSPackages zu Visual Studio hinzugefügt werden, kann die Benutzero
 ### <a name="custom-context-guids"></a>Benutzerdefinierten Kontext-GUIDs  
  Wenn einen entsprechenden Befehl-Kontext, den GUID noch nicht definiert ist, können Sie eine solche im VSPackage definieren, und klicken Sie dann Programmieren zu aktiven oder inaktiven nach Bedarf, um die Sichtbarkeit Ihrer Befehle zu steuern. Verwenden der <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> -Dienst:  
   
--   Registrieren Sie die Kontext-GUIDs (durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> Methode).  
+- Registrieren Sie die Kontext-GUIDs (durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> Methode).  
   
--   Abrufen des Status eines Kontexts `GUID` (durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> Methode).  
+- Abrufen des Status eines Kontexts `GUID` (durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> Methode).  
   
--   Aktivieren von Kontext `GUID`s ein- und ausschalten (durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> Methode).  
+- Aktivieren von Kontext `GUID`s ein- und ausschalten (durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> Methode).  
   
     > [!CAUTION]
-    >  Stellen Sie sicher, dass das VSPackage nicht den Status der alle vorhandenen Kontext-GUID auswirkt, da andere VSPackages möglicherweise von ihnen abhängig sind.  
+    > Stellen Sie sicher, dass das VSPackage nicht den Status der alle vorhandenen Kontext-GUID auswirkt, da andere VSPackages möglicherweise von ihnen abhängig sind.  
   
 ## <a name="example"></a>Beispiel  
  Ein VSPackage-Befehl im folgende Beispiel wird veranschaulicht, die dynamische Sichtbarkeit eines Befehls, der von befehlskontexte verwaltet wird, ohne dass das VSPackage geladen wird.  
@@ -156,4 +151,3 @@ Wenn mehrere VSPackages zu Visual Studio hinzugefügt werden, kann die Benutzero
  [Wie VSPackages Benutzeroberflächenelemente hinzufügen](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Befehlsrouting in VSPackages](../../extensibility/internals/command-routing-in-vspackages.md)   
  [Dynamisches Hinzufügen von Menüelementen](../../extensibility/dynamically-adding-menu-items.md)
-

@@ -1,12 +1,9 @@
 ---
 title: Arbeiten mit Datasets in n-Tier-Anwendungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -27,23 +24,22 @@ ms.assetid: f6ae2ee0-ea5f-4a79-8f4b-e21c115afb20
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d05204edfd7c3cd5daecad3a1cb21ba5ba7e60d8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 38239bd431f3e66e1a694361f3727c843fbf29d3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62558462"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Arbeiten mit Datasets in N-Tier-Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Daten für N-schichtige Anwendungen * sind datenorientierte Anwendungen, die in mehrere logische Ebenen voneinander getrennt sind (oder *Ebenen*). Anders ausgedrückt: Eine N-Tier-Datenanwendung ist eine Anwendung, die in mehrere Projekte unterteilt ist mit der Datenzugriffsebene, Geschäftslogikebene und der Präsentationsebene jeweils als eigenes Projekt. Weitere Informationen finden Sie unter [Übersicht über N-Tier-Datenanwendungen](../data-tools/n-tier-data-applications-overview.md).  
   
  Typisierte DataSets wurden weiterentwickelt, damit die TableAdapters-Klasse und die DataSet-Klasse in gesonderten Projekten generiert werden können. Damit ist es möglich, Anwendungsebenen schnell zu trennen und N-Tier-Datenanwendung zu erstellen.  
   
- N-Tier-Unterstützung in typisierten Datasets ermöglicht die iterative Entwicklung der Anwendungsarchitektur zu einem n-Tier-Design. Es entfernt auch die Anforderung, den Code manuell in mehr als ein Projekt zu trennen. Beginnen Sie mit dem Design der Datenschicht unter Verwendung der [erstellen und Bearbeiten typisierter Datasets](../data-tools/creating-and-editing-typed-datasets.md). Wenn Sie die Anwendungsarchitektur zu einem n-Tier-Design zu entwickeln möchten, legen die **DataSet-Projekt** Eigenschaft von einem Dataset, um die Dataset-Klasse in einem separaten Projekt generieren.  
+ N-Tier-Unterstützung in typisierten Datasets ermöglicht die iterative Entwicklung der Anwendungsarchitektur zu einem n-Tier-Design. Es entfernt auch die Anforderung, den Code manuell in mehr als ein Projekt zu trennen. Beginnen Sie mit dem Design der Datenschicht unter Verwendung der Dataset-Designer. Wenn Sie soweit sind, dass Sie die Anwendungsarchitektur in ein n-schichtiges Design übernehmen können, legen Sie die Eigenschaft **DataSet-Projekt** eines Datasets so fest, dass die Dataset-Klasse in einem separaten Projekt erstellt wird.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Gewusst wie: DataSets und TableAdapters in verschiedene Projekte aufteilen](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)  
@@ -58,7 +54,7 @@ Daten für N-schichtige Anwendungen * sind datenorientierte Anwendungen, die in 
  [Hinzufügen von Validierungen zu einem N-Tier-Dataset](../data-tools/add-validation-to-an-n-tier-dataset.md)  
  Beschreibt, wo Code für das Durchführen der Validierung bei Datenänderungen hinzugefügt wird.  
   
- [Exemplarische Vorgehensweise: Erstellen einer N-Tier-Datenanwendung](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
+ [Exemplarische Vorgehensweise: Erstellen einer n-schichtigen Datenanwendung](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
  Liefert eine Schritt-für-Schritt-Anleitung für das Erstellen eines typisierten Datasets und das Aufteilen des Codes für TableAdapter und Dataset in mehrere Projekte.  
   
  [Exemplarische Vorgehensweise: Hinzufügen einer Validierung zu einer N-Tier-Datenanwendung](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
@@ -69,16 +65,10 @@ Daten für N-schichtige Anwendungen * sind datenorientierte Anwendungen, die in 
   
  <xref:System.Data.TypedTableBase%601>  
   
-## <a name="related-sections"></a>Verwandte Abschnitte  
- [Übersicht über N-Tier-Datenanwendungen](../data-tools/n-tier-data-applications-overview.md)  
-  
- [Hierarchische Aktualisierung](../data-tools/hierarchical-update.md)  
-  
- [Datasettools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)  
-  
- [Zugreifen auf Daten in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)  
-  
- [Übersicht über TableAdapters](../data-tools/tableadapter-overview.md)  
-  
- [N-schichtige Anwendungen und Remoteanwendungen mit LINQ to SQL](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)
+## <a name="related-sections"></a>Verwandte Abschnitte
 
+- [Übersicht über N-Tier-Datenanwendungen](../data-tools/n-tier-data-applications-overview.md)   
+- [Hierarchische Aktualisierung](../data-tools/hierarchical-update.md)   
+- [Datasettools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)   
+- [Zugreifen auf Daten in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
+- [N-schichtige Anwendungen und Remoteanwendungen mit LINQ to SQL](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)

@@ -1,14 +1,9 @@
 ---
 title: SignFile-Aufgabe| Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#SignFile
 dev_langs:
@@ -23,36 +18,35 @@ ms.assetid: edef1819-ddeb-4e09-95de-fc7063ba9388
 caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 849c82fe11e4440c4b3394532ceecfe30ef57253
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 081899efb202917f1ebeac97a58dd89cf5a04f53
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206407"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444384"
 ---
 # <a name="signfile-task"></a>SignFile-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Signiert die angegebene Datei mit dem angegebenen Zertifikat.  
   
 ## <a name="parameters"></a>Parameter  
- In der folgenden Tabelle werden die Parameter der `SignFile`-Aufgabe beschrieben.  
+ In der folgenden Tabelle werden die Parameter der `SignFile` -Aufgabe beschrieben.  
   
  Beachten Sie, dass SHA-256-Zertifikate nur auf Computern zulässig sind, auf denen .NET 4.5 und höher installiert ist.  
   
 > [!WARNING]
->  Ab Visual Studio 2013 Update 3 hat diese Aufgabe eine neue Signatur, mit der Sie die Zielframeworkversion für die Datei angeben können. Sie sollen die neue Signatur verwenden, wo immer möglich, weil der MSBuild-Prozess SHA-256-Hashes nur dann verwendet, wenn das Zielframework .NET 4.5 oder höher ist. Wenn das Zielframework .NET 4.0 oder älter ist, wird der SHA-256-Hash nicht verwendet.  
+> Ab Visual Studio 2013 Update 3 hat diese Aufgabe eine neue Signatur, mit der Sie die Zielframeworkversion für die Datei angeben können. Sie sollen die neue Signatur verwenden, wo immer möglich, weil der MSBuild-Prozess SHA-256-Hashes nur dann verwendet, wenn das Zielframework .NET 4.5 oder höher ist. Wenn das Zielframework .NET 4.0 oder älter ist, wird der SHA-256-Hash nicht verwendet.  
   
 |Parameter|Beschreibung|  
 |---------------|-----------------|  
-|`CertificateThumbprint`|Erforderlicher `String`-Parameter.<br /><br /> Gibt das zum Signieren zu verwendende Zertifikat an. Dieses Zertifikat muss sich im persönlichen Speicher des aktuellen Benutzers befinden.|  
-|`SigningTarget`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>-Parameter.<br /><br /> Gibt die Dateien an, die mit dem Zertifikat signiert werden sollen.|  
-|`TimestampUrl`|Optionaler `String`-Parameter.<br /><br /> Gibt die URL eines Zeitstempelservers an.|  
+|`CertificateThumbprint`|Erforderlicher `String` -Parameter.<br /><br /> Gibt das zum Signieren zu verwendende Zertifikat an. Dieses Zertifikat muss sich im persönlichen Speicher des aktuellen Benutzers befinden.|  
+|`SigningTarget`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem> -Parameter.<br /><br /> Gibt die Dateien an, die mit dem Zertifikat signiert werden sollen.|  
+|`TimestampUrl`|Optionaler `String` -Parameter.<br /><br /> Gibt die URL eines Zeitstempelservers an.|  
 |`TargetFrameworkVersion`|Die Version des .NET Framework, die für das Ziel verwendet wird.|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Utilities.Task>-Klasse. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [Taskbasisklasse](../msbuild/task-base-class.md).  
   
 ## <a name="example"></a>Beispiel  
@@ -76,7 +70,7 @@ Signiert die angegebene Datei mit dem angegebenen Zertifikat.
 ```  
   
 > [!NOTE]
->  Der Zertifikatfingerabdruck ist der SHA1-Hash des Zertifikats. Weitere Informationen finden Sie unter [Obtain the SHA-1 Hash of a Trusted Root CA Certificate (Abrufen des SHA-1-Hashs eines vertrauenswürdigen Stammzertifizierungsstellen-Zertifikats)](http://msdn.microsoft.com/en-us/dd641990-9a88-4228-a245-017797131a87).  
+> Der Zertifikatfingerabdruck ist der SHA1-Hash des Zertifikats. Weitere Informationen finden Sie unter [Obtain the SHA-1 Hash of a Trusted Root CA Certificate (Abrufen des SHA-1-Hashs eines vertrauenswürdigen Stammzertifizierungsstellen-Zertifikats)](http://msdn.microsoft.com/dd641990-9a88-4228-a245-017797131a87).  
   
 ## <a name="example"></a>Beispiel  
  Im folgenden Beispiel wird die `Exec`-Aufgabe zum Signieren der Dateien verwendet, die in der `FilesToSign`-Elementauflistung mit dem in der `Certificate`-Eigenschaft angegebenen Zertifikat angegeben werden. Damit können Sie Windows Installer-Dateien während des Buildprozesses signieren.  
@@ -102,6 +96,3 @@ Signiert die angegebene Datei mit dem angegebenen Zertifikat.
 ## <a name="see-also"></a>Siehe auch  
  [Task Reference](../msbuild/msbuild-task-reference.md)  (MSBuild-Aufgabenreferenz)  
  [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)
-
-
-

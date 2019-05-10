@@ -2,23 +2,21 @@
 title: Beispielcode zum Erstellen von Komponententests
 description: Dieser Artikel enthält Beispielcode, der zum Testen von Komponententests in Visual Studio verwendet werden kann.
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: sample
 helpviewer_keywords:
 - unit test sample [Visual Studio]
 - unit tests, samples
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: deddf46a479e0ab8d4e0bebbaf3fffe4d90b622d
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 0b914101a98f3eb40c479a3a39556e7e4138504c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51293446"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945720"
 ---
 # <a name="sample-code-for-testing"></a>Beispielcode für Tests
 
@@ -130,7 +128,7 @@ namespace BankAccountNS
 
 ## <a name="create-the-project"></a>Erstellen eines Projekts
 
-Erstellen Sie zum Arbeiten mit diesem Code zunächst ein Projekt dafür in Visual Studio. Führen Sie hierzu die Schritte zum Erstellen eines Projekts in [Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#create-a-project-to-test) aus.
+Erstellen Sie zum Arbeiten mit diesem Code zunächst ein Projekt dafür in Visual Studio. Führen Sie die Schritte zum Erstellen des Projekts unter [Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#create-a-project-to-test) aus.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -2,21 +2,20 @@
 title: Workflow-Designer - InvokeMethod-Aktivitätsdesigner
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.InvokeMethod.UI
 ms.assetid: 15e6efdc-52ca-46d8-9c5e-063f7c8265a6
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd0b30d3695d13b51b988dfee31829d03e4b661d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eed5d81cce05b316ef7593639e868936e7f2fa69
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537640"
 ---
 # <a name="invokemethod-activity-designer"></a>InvokeMethod-Aktivitätsdesigner
 
@@ -50,11 +49,11 @@ Methoden mit Argumenten namens **TargetObject** oder **Ergebnis** kann nicht auf
 
 Der Algorithmus zum Registrieren der Parameter in <xref:System.Activities.Activity.CacheMetadata%2A> wird in der folgenden Liste dargestellt:
 
-1.  Registrieren Sie das <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>-Argument.
+1. Registrieren Sie das <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>-Argument.
 
-2.  Registrieren Sie das <xref:System.Activities.Statements.InvokeMethod.Result%2A>-Argument.
+2. Registrieren Sie das <xref:System.Activities.Statements.InvokeMethod.Result%2A>-Argument.
 
-3.  Durchlaufen Sie die <xref:System.Activities.Statements.InvokeMethod.Parameters%2A>-Auflistung, und registrieren Sie jedes Argument.
+3. Durchlaufen Sie die <xref:System.Activities.Statements.InvokeMethod.Parameters%2A>-Auflistung, und registrieren Sie jedes Argument.
 
 Die resultierende Ausnahme ist vom Typ <xref:System.Activities.InvalidWorkflowException> mit folgender Meldung: 'InvokeMethod': Mit dem Namen 'TargetObject' ist eine Variable, RuntimeArgument oder ein DelegateArgument ist bereits vorhanden. Namen müssen innerhalb einer Umgebung eindeutig sein.
 

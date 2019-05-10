@@ -1,21 +1,20 @@
 ---
 title: Empfohlene Vorgehensweisen für Tests der programmierten UI
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, best practices
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28781756e46f39aa0925521c0ec0bfacdcca5009
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6ebd05843e5a80f95a6eb30809440e6e5a188d0e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822975"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Bewährte Methoden für Tests der programmierten UI
 
@@ -27,29 +26,29 @@ In diesem Thema werden einige Empfehlungen für die Entwicklung von Tests der pr
 
 Halten Sie sich an die folgenden Richtlinien, um einen flexiblen Test der programmierten UI zu erstellen.
 
--   Verwenden Sie wenn möglich den **Test-Generator der programmierten UI**.
+- Verwenden Sie wenn möglich den **Test-Generator der programmierten UI**.
 
--   Ändern Sie die Datei *UIMap.Designer.cs* nicht direkt. Wenn Sie Datei ändern, werden die an der Datei vorgenommenen Änderungen überschrieben.
+- Ändern Sie die Datei *UIMap.Designer.cs* nicht direkt. Wenn Sie Datei ändern, werden die an der Datei vorgenommenen Änderungen überschrieben.
 
--   Erstellen Sie den Test als Sequenz aufgezeichneter Methoden. Weitere Informationen über die Aufzeichnung einer Methode finden Sie unter [Erstellen von Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md).
+- Erstellen Sie den Test als Sequenz aufgezeichneter Methoden. Weitere Informationen über die Aufzeichnung einer Methode finden Sie unter [Erstellen von Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md).
 
--   Jede aufgezeichnete Methode sollte auf eine einzelne Seite, ein einzelnes Formular oder Dialogfeld einwirken. Erstellen Sie eine neue Testmethode für jede neue Seite, jedes neue Formular oder Dialogfeld.
+- Jede aufgezeichnete Methode sollte auf eine einzelne Seite, ein einzelnes Formular oder Dialogfeld einwirken. Erstellen Sie eine neue Testmethode für jede neue Seite, jedes neue Formular oder Dialogfeld.
 
--   Wenn Sie eine Methode erstellen, verwenden Sie statt des Standardnamens einen aussagekräftigen Methodennamen. Ein aussagekräftiger Name hilft dabei, den Zweck der Methode zu erkennen.
+- Wenn Sie eine Methode erstellen, verwenden Sie statt des Standardnamens einen aussagekräftigen Methodennamen. Ein aussagekräftiger Name hilft dabei, den Zweck der Methode zu erkennen.
 
--   Beschränken Sie jede aufgezeichnete Methode wenn möglich auf weniger als 10 Aktionen. Dieser modulare Ansatz erleichtert es, eine Methode zu ersetzen, wenn sich die Benutzeroberfläche ändert.
+- Beschränken Sie jede aufgezeichnete Methode wenn möglich auf weniger als 10 Aktionen. Dieser modulare Ansatz erleichtert es, eine Methode zu ersetzen, wenn sich die Benutzeroberfläche ändert.
 
--   Erstellen Sie jede Assertion mithilfe des **Generators für Tests der programmierten UI**, der automatisch eine Assertionsmethode zur *UIMap.Designer.cs*-Datei hinzufügt.
+- Erstellen Sie jede Assertion mithilfe des **Generators für Tests der programmierten UI**, der automatisch eine Assertionsmethode zur *UIMap.Designer.cs*-Datei hinzufügt.
 
--   Wenn sich die Benutzeroberfläche (User Interface, UI) ändert, zeichnen Sie die Testmethoden oder die Assertionsmethoden erneut auf, oder zeichnen Sie die betroffenen Abschnitte einer vorhandenen Testmethode erneut auf.
+- Wenn sich die Benutzeroberfläche (User Interface, UI) ändert, zeichnen Sie die Testmethoden oder die Assertionsmethoden erneut auf, oder zeichnen Sie die betroffenen Abschnitte einer vorhandenen Testmethode erneut auf.
 
--   Erstellen Sie eine separate <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>-Datei für jedes Modul in der getesteten Anwendung. Weitere Informationen finden Sie unter [Testing a Large Application with Multiple UI Maps (Testen einer großen Anwendung mit mehreren UI-Zuordnungen)](../test/testing-a-large-application-with-multiple-ui-maps.md).
+- Erstellen Sie eine separate <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>-Datei für jedes Modul in der getesteten Anwendung. Weitere Informationen finden Sie unter [Testing a Large Application with Multiple UI Maps (Testen einer großen Anwendung mit mehreren UI-Zuordnungen)](../test/testing-a-large-application-with-multiple-ui-maps.md).
 
--   Verwenden Sie in der getesteten Anwendung aussagekräftige Namen, wenn Sie Benutzeroberflächen-Steuerelemente erstellen. Aussagekräftige Namen schaffen mehr Klarheit und Benutzerfreundlichkeit für die automatisch generierten Steuerelementnamen.
+- Verwenden Sie in der getesteten Anwendung aussagekräftige Namen, wenn Sie Benutzeroberflächen-Steuerelemente erstellen. Aussagekräftige Namen schaffen mehr Klarheit und Benutzerfreundlichkeit für die automatisch generierten Steuerelementnamen.
 
--   Wenn Sie Assertionen durch Codierung mit der API erstellen, erstellen Sie eine Methode für jede Assertion in dem Teil der <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>-Klasse, der sich in der *UIMap.cs*-Datei befindet. Rufen Sie diese Methode aus der Testmethode auf, um die Assertion auszuführen.
+- Wenn Sie Assertionen durch Codierung mit der API erstellen, erstellen Sie eine Methode für jede Assertion in dem Teil der <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>-Klasse, der sich in der *UIMap.cs*-Datei befindet. Rufen Sie diese Methode aus der Testmethode auf, um die Assertion auszuführen.
 
--   Wenn Sie direkt mit der API codieren, verwenden Sie so oft wie möglich die Eigenschaften und Methoden in den Klassen, die in der *UIMap.Designer.cs*-Datei in Ihrem Code generiert wurden. Diese Klassen machen Ihre Arbeit einfacher und zuverlässiger und helfen Ihnen, produktiver zu sein.
+- Wenn Sie direkt mit der API codieren, verwenden Sie so oft wie möglich die Eigenschaften und Methoden in den Klassen, die in der *UIMap.Designer.cs*-Datei in Ihrem Code generiert wurden. Diese Klassen machen Ihre Arbeit einfacher und zuverlässiger und helfen Ihnen, produktiver zu sein.
 
 Tests der codierten UI werden automatisch an zahlreiche Änderungen in der Benutzeroberfläche angepasst. Wenn z. B. ein Benutzeroberflächenelement Position oder Farbe geändert hat, wird beim Test der programmierten UI in den meisten Fällen dennoch das richtige Element gefunden.
 
@@ -59,15 +58,15 @@ Während eines Testlaufs werden die UI-Steuerelemente mithilfe mehrerer Sucheige
 
 Benutzeroberflächen werden während der Entwicklung häufig geändert. Nachfolgend finden Sie einige Möglichkeiten, um die Auswirkungen dieser Änderungen zu reduzieren:
 
--   Suchen Sie die aufgezeichnete Methode, die auf dieses Steuerelement verweist, und verwenden Sie den **Test-Generator der programmierten UI**, um die Aktionen für diese Methode erneut aufzuzeichnen. Sie können den gleichen Namen für die Methode verwenden, um die vorhandenen Aktionen zu überschreiben.
+- Suchen Sie die aufgezeichnete Methode, die auf dieses Steuerelement verweist, und verwenden Sie den **Test-Generator der programmierten UI**, um die Aktionen für diese Methode erneut aufzuzeichnen. Sie können den gleichen Namen für die Methode verwenden, um die vorhandenen Aktionen zu überschreiben.
 
--   Wenn ein Steuerelement über eine Assertion verfügt, die nicht mehr gültig ist:
+- Wenn ein Steuerelement über eine Assertion verfügt, die nicht mehr gültig ist:
 
-    -   Löschen Sie die Methode, die die Assertion enthält.
+    - Löschen Sie die Methode, die die Assertion enthält.
 
-    -   Entfernen Sie den Aufruf dieser Methode aus der Testmethode.
+    - Entfernen Sie den Aufruf dieser Methode aus der Testmethode.
 
-    -   Fügen Sie eine neue Assertion hinzu, indem Sie die Fadenkreuz-Schaltfläche auf das UI-Steuerelement ziehen, die UI-Zuordnung öffnen und die neue Assertion hinzufügen.
+    - Fügen Sie eine neue Assertion hinzu, indem Sie die Fadenkreuz-Schaltfläche auf das UI-Steuerelement ziehen, die UI-Zuordnung öffnen und die neue Assertion hinzufügen.
 
 Weitere Informationen über das Aufzeichnen von Tests der programmierten UI finden Sie unter [Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes ](../test/use-ui-automation-to-test-your-code.md).
 

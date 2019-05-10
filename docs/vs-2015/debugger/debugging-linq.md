@@ -1,14 +1,9 @@
 ---
 title: Debuggen von LINQ | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,31 +19,31 @@ ms.assetid: dbae26cb-ac5f-4312-b474-b9f29714f4c6
 caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 081c97bffc062bf2bbc9d24feed13e5e512b8c74
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9a2a7dac47731626407b34e49a3e0085d1a91b4d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755609"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108567"
 ---
 # <a name="debugging-linq"></a>Debuggen von LINQ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] unterstützt das Debuggen von Language Integrated Query (LINQ)-Code, wobei einige Einschränkungen bestehen. Die meisten Debugfunktionen arbeiten mit LINQ-Anweisungen, z. B. für das schrittweise Ausführen, das Festlegen von Haltepunkten und das Anzeigen von Ergebnissen in Debuggerfenstern. Dieses Thema beschreibt die haupteinschränkungen des LINQ-Debuggens.  
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] unterstützt zwar das Debuggen von Language Integrated Query-Code (LINQ), aber es gelten einige Einschränkungen. Die meisten Debugfunktionen arbeiten mit LINQ-Anweisungen, z. B. für das schrittweise Ausführen, das Festlegen von Haltepunkten und das Anzeigen von Ergebnissen in Debuggerfenstern. In diesem Thema werden die Haupteinschränkungen des LINQ-Debuggens beschrieben.  
   
-##  <a name="BKMK_ViewingLINQResults"></a> Anzeigen von LINQ-Ergebnissen  
+## <a name="BKMK_ViewingLINQResults"></a> Anzeigen von LINQ-Ergebnissen  
  Das Ergebnis einer LINQ-Anweisung kann mithilfe von DataTips, über das Überwachungsfenster oder im Dialogfeld Schnellüberwachung angezeigt werden. Bei Verwendung eines Quellcodefensters können Sie den Mauszeiger auf eine Abfrage im Quellcodefenster bewegen, woraufhin ein DataTip eingeblendet wird. Sie können eine LINQ-Variable kopieren und in das Überwachungsfenster oder das Dialogfeld Schnellüberwachung einfügen.  
   
  In LINQ wird eine Abfrage nicht ausgewertet, wenn sie erstellt oder deklariert wird, sondern wenn die Abfrage verwendet wird. Deshalb verfügt die Abfrage erst nach der Auswertung über einen Wert. Eine vollständige Beschreibung der Abfrage erstellen und auswerten, finden Sie unter [Introduction to LINQ Queries (c#)](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8) oder [Schreiben Ihrer ersten LINQ-Abfrage](http://msdn.microsoft.com/library/4affb732-3e9b-4479-aa31-1f9bd8183cbe).  
   
  Um das Ergebnis einer Abfrage anzuzeigen, muss es vom Debugger ausgewertet werden. Diese implizite Auswertung, die beim Anzeigen eines LINQ-Abfrageergebnisses im Debugger erfolgt, hat einige Auswirkungen, die berücksichtigt werden sollten:  
   
--   Jede Auswertung der Abfrage dauert einige Zeit. Das Erweitern des Ergebnisknotens nimmt ebenfalls Zeit in Anspruch. Bei einigen Abfragen kann eine wiederholte Auswertung zu beträchtlichen Leistungseinbußen führen.  
+- Jede Auswertung der Abfrage dauert einige Zeit. Das Erweitern des Ergebnisknotens nimmt ebenfalls Zeit in Anspruch. Bei einigen Abfragen kann eine wiederholte Auswertung zu beträchtlichen Leistungseinbußen führen.  
   
--   Die Auswertung einer Abfrage kann dazu führen, dass der Datenwert oder Zustand des Programms geändert wird. Nicht alle Abfragen verfügen über Nebeneffekte. Um festzustellen, ob eine Abfrage ohne Nebeneffekte sicher ausgewertet werden kann, sollten Sie den Code verstehen, durch den die Abfrage implementiert wird.  
+- Die Auswertung einer Abfrage kann dazu führen, dass der Datenwert oder Zustand des Programms geändert wird. Nicht alle Abfragen verfügen über Nebeneffekte. Um festzustellen, ob eine Abfrage ohne Nebeneffekte sicher ausgewertet werden kann, sollten Sie den Code verstehen, durch den die Abfrage implementiert wird.  
   
-##  <a name="BKMK_SteppingAndLinq"></a> Stepping und LINQ  
+## <a name="BKMK_SteppingAndLinq"></a> Ausführung in Einzelschritten und LINQ  
  Wenn Sie LINQ-Code debuggen, weist die schrittweise Ausführung teilweise ein abweichendes Verhalten auf, das Sie beachten sollten.  
   
 ### <a name="linq-to-sql"></a>LINQ to SQL  
@@ -112,7 +107,7 @@ End Function
   
  Die überarbeitete Abfrage ruft bei jedem Durchlauf von `IsEven` die `items`-Funktion auf. Mithilfe der Debuggerfenster können Sie feststellen, ob die einzelnen Elemente die angegebene Bedingung erfüllen und den Code in `IsEven` schrittweise ausführen. Das Prädikat in diesem Beispiel ist recht einfach gehalten. Falls Ihr zu debuggendes Prädikat jedoch komplizierter ist, kann diese Technik sehr hilfreich sein.  
   
-##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> Bearbeiten Sie und fortfahren Sie wird für LINQ nicht unterstützt.  
+## <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> Bearbeiten und Fortfahren wird für LINQ nicht unterstützt  
  Bearbeiten und Fortfahren unterstützt keine Änderungen an LINQ-Abfragen. Wenn Sie eine LINQ-Anweisung während einer Debugsitzung hinzufügen, entfernen oder ändern, wird ein Dialogfeld mit dem Hinweis eingeblendet, dass die Änderung von Bearbeiten und Fortfahren nicht unterstützt wird. An diesem Punkt können Sie entweder die Änderungen rückgängig machen oder die Debugsitzung beenden und eine neue Sitzung mit dem bearbeiteten Code starten.  
   
  Außerdem wird das Ändern des Typs oder Wertes einer in einer LINQ-Anweisung verwendeten Variablen von Bearbeiten und Fortfahren nicht unterstützt. Auch hier können Sie entweder die Änderungen rückgängig machen oder die Debugsitzung beenden und neu starten.  
@@ -122,11 +117,8 @@ End Function
  In Visual Basic kann Bearbeiten und Fortfahren für Nicht-LINQ-Code verwendet werden, und zwar selbst in einer Methode, die eine LINQ-Abfrage enthält. Sie können Code vor der LINQ-Anweisung sogar dann hinzufügen oder entfernen, wenn sich die Änderungen auf die Zeilennummer der LINQ-Abfrage auswirken. Das Debugverhalten in Visual Basic für Nicht-LINQ-Code bleibt dasselbe wie vor der Einführung von LINQ. Es ist nicht möglich, eine LINQ-Abfrage zu ändern, hinzuzufügen oder zu entfernen, es sei denn, Sie beenden den Debugvorgang, um die Änderungen zu übernehmen.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Debuggen von SQL](http://msdn.microsoft.com/en-us/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)   
+ [Debuggen von SQL](http://msdn.microsoft.com/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)   
  [Side Effects and Expressions](http://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e)   
  [Verwalten von Ausnahmen mit dem Debugger](../debugger/managing-exceptions-with-the-debugger.md)   
  [Introduction to LINQ Queries (C#) (Einführung in LINQ-Abfragen (C#))](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)   
  [Einführung in LINQ in Visual Basic](http://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984)
-
-
-

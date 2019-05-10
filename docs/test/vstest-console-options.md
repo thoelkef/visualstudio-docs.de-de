@@ -1,23 +1,21 @@
 ---
 title: Befehlszeilenoptionen für VSTest.Console.exe
 ms.date: 07/12/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: reference
 helpviewer_keywords:
 - vstest.console.exe
 - command-line tests
 ms.author: gewarren
 author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4394fe8d7920f4127f5043808003d400bc991590
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 95ed8806844781bdaab4d97d63cb1b7ef324dd7b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220969"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976239"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Befehlszeilenoptionen für VSTest.Console.exe
 
@@ -32,7 +30,7 @@ ms.locfileid: "51220969"
 
 In der folgenden Tabelle werden sämtliche Optionen für *VSTest.Console.exe* mit einer kurzen Beschreibung aufgeführt. Durch Eingabe von `VSTest.Console/?` in eine Befehlszeile wird eine ähnliche Zusammenfassung ausgegeben.
 
-| Option | Beschreibung  |
+| Option | Beschreibung |
 |---|---|
 |**[*Testdateinamen*]**|Führt Tests auf Grundlage der angegebenen Dateien aus. Trennt mehrere Testdateinamen durch Leerzeichen.<br />Beispiele: `mytestproject.dll`, `mytestproject.dll myothertestproject.exe`|
 |**/Settings: [*Dateiname*]**|Führen Sie Tests mit zusätzlichen Einstellungen wie Datensammlern aus.<br />Ein Beispiel: `/Settings:Local.RunSettings`|
@@ -44,7 +42,7 @@ In der folgenden Tabelle werden sämtliche Optionen für *VSTest.Console.exe* mi
 |**/TestAdapterPath:[*Pfad*]**|Erzwingt, dass der *vstest.console.exe*-Prozess im Testlauf (ggf.) benutzerdefinierte Testadapter aus einem angegebenen Pfad verwendet.<br />Ein Beispiel: `/TestAdapterPath:[pathToCustomAdapters]`|
 |**/Platform:[*Plattformtyp*]**|Zielplattformarchitektur für die Testausführung.<br />Gültige Werte sind x86, x64 und ARM.|
 |**/Framework: [*Frameworkversion*]**|.NET Framework-Zielversion, in der der Test ausgeführt wird.<br />Gültige Werte sind Framework35, Framework40, Framework45 und FrameworkUap10.<br />Wenn als Zielframework **Framework35** angegeben ist, werden die Tests in CLR 4.0 im „Kompatibilitätsmodus“ ausgeführt.<br />Ein Beispiel: `/Framework:framework40`|
-|**/TestCaseFilter:[*Ausdruck*]**|Führt Tests aus, die mit dem angegebenen Ausdruck übereinstimmen.<br /><Expression\> ist vom Format <property\>=<value\>[\|<Expression\>].<br />Ein Beispiel: `/TestCaseFilter:"Priority=1"`<br />Beispiel: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />Die Befehlszeilenoption **/TestsCaseFilter** kann nicht zusammen mit der Befehlszeilenoption **/Tests** verwendet werden. <br />Informationen zum Erstellen und Verwenden von Ausdrücken finden Sie unter [TestCase-Filter](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
+|**/TestCaseFilter:[*Ausdruck*]**|Führt Tests aus, die mit dem angegebenen Ausdruck übereinstimmen.<br /><Expression\> ist vom Format <property\>=<value\>[\|<Expression\>].<br />Ein Beispiel: `/TestCaseFilter:"Priority=1"`<br />Ein Beispiel: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />Die Befehlszeilenoption **/TestsCaseFilter** kann nicht zusammen mit der Befehlszeilenoption **/Tests** verwendet werden. <br />Informationen zum Erstellen und Verwenden von Ausdrücken finden Sie unter [TestCase-Filter](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
 |**/?**|Zeigt Nutzungsinformationen an.|
 |**/Logger:[*uri/friendlyname*]**|Geben Sie eine Protokollierung für die Testergebnisse an.<br />Beispiel: Verwenden Sie zum Protokollieren von Ergebnissen in einer Visual Studio-Testergebnisdatei (TRX) **/Logger:trx**.<br />Beispiel: Verwenden Sie TfsPublisher zum Veröffentlichen von Testergebnissen in Team Foundation Server:<br />**/logger:TfsPublisher;**<br />**Collection=<Projekt-URL\>;**<br />**BuildName=<Buildname\>;**<br />**TeamProject=<Projektname\>;**<br />**[;Platform=<Defaults to "Any CPU">]**<br />**[;Flavor=<Defaults to "Debug">]**<br />**[;RunTitle=<title\>]**|
 |**/ListTests:[*Dateiname*]**|Listet gefundene Tests aus dem angegebenen Testcontainer auf.|

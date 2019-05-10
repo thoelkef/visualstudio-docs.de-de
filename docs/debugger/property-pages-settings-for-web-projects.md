@@ -18,21 +18,21 @@ helpviewer_keywords:
 ms.assetid: 8ec5160a-6408-4f47-8d41-f0e20e79a3b9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09aeb8d97c1caf3eca067cd7992eb96c9d7ef7c1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 7a9ab4300484e81e70abd36dbdba28521f91cd62
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892662"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62903940"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Einstellungen von Eigenschaftenseiten für Webprojekte
-Sie können die Eigenschafteneinstellungen für eine Website-Debugkonfiguration im Dialogfeld **Eigenschaftenseiten** ändern. Eine genaue Anweisung finden Sie unter [Debug- und Releasekonfigurationen](../debugger/how-to-set-debug-and-release-configurations.md). Anhand der folgenden Tabellen erfahren Sie, wo die debuggerspezifischen Einstellungen im Dialogfeld **Eigenschaftenseiten** zu finden sind.  
-  
-### <a name="configuration-properties-folder-start-options-category"></a>Ordner "Konfigurationseigenschaften" (Kategorie "Startoptionen")  
-  
+Sie können die Eigenschafteneinstellungen für eine Website-Debugkonfiguration im Dialogfeld **Eigenschaftenseiten** ändern. Eine genaue Anweisung finden Sie unter [Debug- und Releasekonfigurationen](../debugger/how-to-set-debug-and-release-configurations.md). Anhand der folgenden Tabellen erfahren Sie, wo die debuggerspezifischen Einstellungen im Dialogfeld **Eigenschaftenseiten** zu finden sind.
+
+### <a name="start-options-category"></a>Starten Sie die Kategorie mit Optionen
+
 | **Einstellung** | **Beschreibung** |
 | - | - |
 | **Startaktion** | Überschrift, unter der sich Optionen für den Anwendungsstart befinden. |
@@ -51,6 +51,6 @@ Sie können die Eigenschafteneinstellungen für eine Website-Debugkonfiguration 
 | **Debuggen von nativem Code** | Bietet die Möglichkeit, Aufrufe von systemeigenem (nicht verwaltetem) Win32-Code von einer verwalteten Anwendung aus zu debuggen. |
 | **SQL Server debuggen** | Ermöglicht das Debuggen von SQL Server-Datenbankobjekten. |
 | **Silverlight-Debuggen** | Ermöglicht das Debuggen von Silverlight-Komponenten. |
-  
-## <a name="see-also"></a>Siehe auch  
- [Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)
+
+## <a name="see-also"></a>Siehe auch
+- [Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)

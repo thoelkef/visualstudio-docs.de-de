@@ -1,22 +1,21 @@
 ---
 title: Formatieren von Python-Code
 description: Visual Studio kann Python-Code einschließlich Zeichenabstände, Anweisungen, Zeilenumbrüche und Kommentare, automatisch neu formatieren.
-ms.date: 10/28/2018
-ms.prod: visual-studio-dev15
+ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b830640284fe5b44a76b5f7d2424e2c1ccd24ea0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6e95d05c3fbc0dd46d235c7480bd4a9caa48947e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850215"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957533"
 ---
 # <a name="format-python-code"></a>Formatieren von Python-Code
 
@@ -44,8 +43,8 @@ Die [Python-Unterstützung in Visual Studio](installing-python-support-in-visual
 In den folgenden Tabellen finden Sie Beispiele für die verschiedenen Optionen:
 
 | Option für Klassendefinitionen | Aktiviert | Deaktiviert |
-| --- | --- | --- | 
-| **Leerzeichen zwischen dem Namen einer Klassendeklaration und der Basisliste einfügen** | `class X (object): pass` | `class X(object): pass` | 
+| --- | --- | --- |
+| **Leerzeichen zwischen dem Namen einer Klassendeklaration und der Basisliste einfügen** | `class X (object): pass` | `class X(object): pass` |
 | **Leerzeichen innerhalb der runden Klammern um Basisliste einfügen** | `class X( object ): pass` | `class X(object): pass` |
 | **Leerzeichen innerhalb der runden Klammern um eine leere Basisliste einfügen** | `class X( ): pass` | `class X(): pass` |
 
@@ -53,7 +52,7 @@ In den folgenden Tabellen finden Sie Beispiele für die verschiedenen Optionen:
 
 | Option für Funktionsdefinitionen | Aktiviert | Deaktiviert |
 | --- | --- | --- |
-| **Leerzeichen zwischen dem Namen einer Funktionsdeklaration und einer Parameterliste einfügen** | `def X (): pass` | `def X(): pass` | 
+| **Leerzeichen zwischen dem Namen einer Funktionsdeklaration und einer Parameterliste einfügen** | `def X (): pass` | `def X(): pass` |
 | **Leerzeichen innerhalb der runden Klammern um Parameterliste einfügen** | `def X( a, b ): pass` | `def X(a, b): pass` |
 | **Leerzeichen innerhalb der runden Klammern um eine leere Parameterliste einfügen** | `def X( ): pass` | `def X(): pass` |
 | **Leerzeichen um „=“ in Standardparameterwerten einfügen** | `includes X(a = 42): pass` | `includes X(a=42): pass` |

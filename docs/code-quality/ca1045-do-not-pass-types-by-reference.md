@@ -1,7 +1,6 @@
 ---
-title: 'CA1045: Typen nicht als Verweis übergeben'
+title: 'CA1045: Typen nicht als Verweis übergeben.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1045
@@ -12,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: bcc3900a-e092-4bb8-896f-cb83f6289968
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2516387f6de81eef2f68d521652aa85ce521aea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: d5174d00593b44d51b5628851039b1d0a37753c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53839056"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387483"
 ---
-# <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045: Typen nicht als Verweis übergeben
+# <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045: Typen nicht als Verweis übergeben.
 
 |||
 |-|-|
@@ -44,7 +43,7 @@ ms.locfileid: "53839056"
  Zwar sind in aller Munde und häufig verwendet, die richtige Anwendung der Rückgabewerte `out` und `ref` Parameter erfordert, mittlere Design- und Fertigkeiten im coding. Entwurf für eine Breite Zielgruppe master arbeiten mit Benutzern nicht erwarten sollten Entwickler von Bibliotheken `out` oder `ref` Parameter.
 
 > [!NOTE]
->  Bei der Arbeit mit Parametern, die große Strukturen sind, können die zusätzlichen Ressourcen, die erforderlich sind, zum Kopieren dieser Strukturen eine Auswirkung auf die Leistung führen, wenn Sie nach Wert übergeben. In diesen Fällen verwenden Sie ggf. `ref` oder `out` Parameter.
+> Bei der Arbeit mit Parametern, die große Strukturen sind, können die zusätzlichen Ressourcen, die erforderlich sind, zum Kopieren dieser Strukturen eine Auswirkung auf die Leistung führen, wenn Sie nach Wert übergeben. In diesen Fällen verwenden Sie ggf. `ref` oder `out` Parameter.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, die von einem Werttyp verursacht wird, müssen Sie die Methode, die das Objekt als ihren Rückgabewert zurück. Wenn die Methode mehrere Werte zurückgeben muss, Umgestalten Sie, um eine einzelne Instanz eines Objekts zurück, der die Werte enthält.

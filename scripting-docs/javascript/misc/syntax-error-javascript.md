@@ -1,14 +1,9 @@
 ---
-title: Syntaxfehler (JavaScript) | Microsoft Docs
-ms.custom: ''
+title: Syntaxfehler (JavaScript) | Microsoft-Dokumentation
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1002
 dev_langs:
@@ -16,25 +11,24 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: e4a9d980-f3ef-4092-b192-bf4a45981d30
-caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0df8de8df8e390cd1e361159a378da190518f43
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f924dc1745dfe17265a750d4159f52643eb5c5ef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632960"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006443"
 ---
 # <a name="syntax-error-javascript"></a>Syntaxfehler (JavaScript)
-Sie erstellt eine Anweisung, die eine oder mehrere der Grammatikregeln für verletzt [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
+Sie erstellt haben, eine Anweisung, die eine oder mehrere der Grammatikregeln für verletzt [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Überprüfen Sie die Syntax des Programms auf der angegebenen Zeilennummer.  
+- Überprüfen Sie die Syntax des Programms auf der angegebenen Zeilennummer.  
   
--   Suchen Sie nach fehlgeleiteten runden oder geschweiften Klammern.  
+- Suchen Sie nach fehlgeleitete runden oder geschweiften Klammern.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Error-Objekt](../../javascript/reference/error-object-javascript.md)

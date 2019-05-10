@@ -2,7 +2,6 @@
 title: 'Idebugdocumenthelper:: Getdebugapplicationnode | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5af0326d4e77e6bb70e05be2609beea86cc294b7
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 10740c3489b617b1685ad222cac7c158e0196c4d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54093599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783083"
 ---
 # <a name="idebugdocumenthelpergetdebugapplicationnode"></a>IDebugDocumentHelper::GetDebugApplicationNode
 Gibt die Knoten der Debug-Anwendung für dieses Dokument zurück.  

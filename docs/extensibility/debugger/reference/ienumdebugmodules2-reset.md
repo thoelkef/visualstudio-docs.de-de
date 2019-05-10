@@ -1,30 +1,32 @@
 ---
 title: IEnumDebugModules2::Reset | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IEnumDebugModules2::Reset
 helpviewer_keywords:
 - IEnumDebugModules2::Reset
 ms.assetid: f6ff364c-2644-4919-b950-3cb82eb6f601
-author: gregvanl
+caps.latest.revision: 10
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: b7f33b821a8b9c9c1c47bcdc5da2e6a26b046bd0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: af3e9e7d4c904bc9a0a50a232c764d9c4cf26cf0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937132"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62914552"
 ---
 # <a name="ienumdebugmodules2reset"></a>IEnumDebugModules2::Reset
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Setzt die Enumeration auf das erste Element zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT Reset(  
    void  
 );  

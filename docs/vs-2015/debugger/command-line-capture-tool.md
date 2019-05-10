@@ -1,25 +1,20 @@
 ---
 title: Befehlszeilen-Erfassungstool | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d4cafc8c066025f87d233d8b6db8a97be1aa16f5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 208ff7f9bbfc2d07669a8b485edffc8dfc4cd54f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770691"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437802"
 ---
 # <a name="command-line-capture-tool"></a>Befehlszeilen-Erfassungs-Tool
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ DXCap.exe –info
  `-file` `filename`  
  Unter dem Erfassungsmodus (`-c`), `filename` gibt den Namen der grafikprotokolldatei an, die Grafikinformationen aufgezeichnet werden. Wenn `filename` nicht angegeben ist, werden Grafikinformationen in eine Datei namens aufgezeichnet `<appname>-<date>-<time>.vsglog` standardmäßig.  
   
- Unter Validierungs(-V)-Modus `filename` wird der Namen der zu prüfenden Grafikprotokolldatei angezeigt. Wenn `filename` nicht angegeben ist, wird das Graphics-Protokoll, das zuletzt geprüft wurde, erneut verwendet.  
+ Unter Gültigkeitsprüfung (-V)-Modus `filename` wird der Namen der zu prüfenden Grafikprotokolldatei angezeigt. Wenn `filename` nicht angegeben ist, wird das Graphics-Protokoll, das zuletzt geprüft wurde, erneut verwendet.  
   
  `-frame` `frames`  
  Unter dem Erfassungsmodus gibt `frames` die Frames an, die Sie erfassen möchten. Der erste Frame ist 1. Sie können mehrere Frames mithilfe von Kommas und Bereichen angeben. Z. B. wenn `frames` ist `2, 5, 7-9, 15`, dann werden die frames `2`, `5`, `7`, `8`, `9`, und `15` erfasst werden.  
@@ -78,13 +73,13 @@ DXCap.exe –info
  Unter dem Wiedergabemodus gibt `xml_filename` den Namen der Datei an, in die eine XML-Darstellung der Wiedergabe geschrieben wird. Wenn `xml_filename` nicht angegeben ist, wird die XML-Darstellung in eine Datei mit demselben Namen der widergegebenen Datei geschrieben, erhält aber eine `.xml` Erweiterung.  
   
  `-v`  
- Validierungsmodus Unter dem Validierungsmodus erfasste Frames werden sowohl auf Hardware als auch auf WARP wiedergegeben, und ihre Ergebnisse werden mithilfe einer Bildvergleichsfunktion verglichen. Diese Funktion können Sie verwenden, um Treiberprobleme schnell zu identifizieren, die sich auf das Rendering auswirken.  
+ Validierungsmodus Unter dem Validierungsmodus erfasste Frames werden sowohl auf Hardware als auch auf WARP wiedergegeben, und ihre Ergebnisse werden mithilfe einer Bildvergleichsfunktion verglichen. Dieses Feature können Sie verwenden, um Treiberprobleme schnell zu identifizieren, die sich auf das Rendering auswirken.  
   
  `-examine` `events`  
  Unter dem Validierungsmodus gibt `events` den Grafikereignissatz an, dessen sofortige Ergebnisse verglichen werden. Z. B. `-examine present,draw,copy,clear` schränkt den Vergleich so um nur die Ereignisse, die zu diesen Kategorien gehören.  
   
 > [!TIP]
->  Es wird empfohlen, beginnend mit `-examine present,draw,copy,clear` , da dadurch die meisten Probleme offengelegt werden, aber deutlich weniger Zeit als eine umfassendere Gruppe von Ereignissen in Anspruch nehmen. Bei Bedarf können Sie eine größere oder andere Ereignismenge angeben, um diese Ereignisse zu prüfen und andere Arten von Problemen offenzulegen.  
+> Es wird empfohlen, beginnend mit `-examine present,draw,copy,clear` , da dadurch die meisten Probleme offengelegt werden, aber deutlich weniger Zeit als eine umfassendere Gruppe von Ereignissen in Anspruch nehmen. Bei Bedarf können Sie eine größere oder andere Ereignismenge angeben, um diese Ereignisse zu prüfen und andere Arten von Problemen offenzulegen.  
   
  `-haltonfail`  
  Unter dem Validierungsmodus `-haltonfail` Validierung angehalten, wenn Unterschiede zwischen der Hardware und dem WARP-Renderer erkannt werden. Die Validierung wird fortgesetzt, wenn eine Taste gedrückt wird.  
@@ -142,10 +137,10 @@ DXCap.exe –file regression_test_12.vsglog –c BasicHLSL11.exe
 DXCap.exe –c "C:\Program Files\Internet Explorer\iexplorer.exe" "www.fishgl.com"  
 ```  
   
- Der Befehl im obigen Beispiel zeichnet Grafikinformationen aus der Desktopversion von Internet Explorer beim Anzeigen der Webseite am www.fishgl.com die WebGL-API, die zum Rendern von 3D-Inhalt verwendet.  
+ Der Befehl in dem obigen Beispiel zeichnet Grafikinformationen aus der Desktopversion von Internet Explorer auf, während die Webseite unter www.fishgl.com angezeigt wird. Diese verwendet die WebGL-API zum Rendern des 3-D-Inhalts.  
   
 > [!NOTE]
->  Da die Befehlszeilenargumente, die nach der Anwendung angezeigt werden, die an ihn übergeben werden, müssen Sie die Argumente, die für die DXCap.exe vor der Verwendung vorgesehen angeben der `–c` Option.  
+> Da die nach der App angezeigten Befehlszeilenargumente an sie übergeben werden, müssen Sie die für „DXCap.exe“ bestimmten Argumente vor der `–c`-Option angeben.  
   
 ### <a name="capture-graphics-information-from-a-windows-store-app"></a>Erfassen Sie Grafikinformationen aus einer Windows Store-Anwendung.  
  Sie können Grafikinformationen aus einer Windows Store-Anwendung aufzeichnen.  
@@ -169,15 +164,15 @@ DXCap.exe –e map
  Der obige Befehl listet Windows Store-Anwendungen auf, die mit "Map" übereinstimmen; hier ist die Ausgabe:  
   
  **Package "Microsoft.BingMaps":**  
- **InstallDirectory: C:\Programme\Microsoft Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **InstallDirectory: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
  **"FullName": Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
  **UserSID: S-1-5-21-2127521184-1604012920-1887927527-5603533**  
  **Name: Microsoft.BingMaps**  
- **Herausgeber: CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = US**  
- **Version: 2.1.2914.1734**  
+ **Publisher        : CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US**  
+ **Version          : 2.1.2914.1734**  
  **Ausführbare Anwendungen:**  
  **ID: AppexMaps**  
- **Exe: C:\Programme\Microsoft Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
+ **EXE-Datei: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
  **IsWWA: Nein**  
  **AppSpec (zum Starten): DXCap.exe - C Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps** die letzte Zeile der Ausgabe für jede aufgelistete Anwendung zeigt der Befehl, der sie Grafikinformationen erfassen können.  
   
@@ -302,6 +297,3 @@ DXCap.exe –p regression_test_12.vsglog –toXML temp.xml
 ```  
   
 ## <a name="requirements"></a>Anforderungen
-
-
-

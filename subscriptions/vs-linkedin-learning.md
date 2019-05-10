@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Erfahren Sie mehr über den LinkedIn Learning-Vorteil, der in einem LinkedIn Premium-Abonnement enthalten ist, das in ausgewählten Visual Studio-Abonnements enthalten ist.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: fa98ce41f0b88bd679568247eea57aa3e62318d3
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: b6d60a5bedb960c2302a8823d1248b36849c604d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948626"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Der LinkedIn Learning-Vorteil in Visual Studio-Abonnements
 
@@ -30,7 +28,6 @@ So aktivieren Sie Ihr LinkedIn-Premiumabonnement und Ihren LinkedIn Learning-Vor
 2. Suchen Sie in der Kategorie „Education“ (Bildung) die Kachel „LinkedIn Learning“, und klicken Sie auf den Link **Get code** (Code abrufen).
    > [!div class="mx-imgBorder"]
    > ![Kachel des Vorteils „LinkedIn Learning“](_img/vs-linkedin/vs-linkedin-3-month-tile.png)
-
 
 3. Wenn Sie bereits über ein LinkedIn-Konto verfügen und automatisch angemeldet wurden, werden Sie sofort zur Aktivierungsseite für den LinkedIn Learning-Vorteil weitergeleitet.  Wenn Sie über ein LinkedIn-Konto verfügen, aber nicht automatisch angemeldet wurden, geben Sie einfach Benutzername und Kennwort ein, und klicken Sie anschließend auf **Anmelden**.  Fahren Sie mit [diesem Schritt](#activate-your-offer) fort, um Ihr Angebot zu aktivieren.
 
@@ -82,7 +79,6 @@ So aktivieren Sie Ihr LinkedIn-Premiumabonnement und Ihren LinkedIn Learning-Vor
    > [!div class="mx-imgBorder"]
    > ![LinkedIn Learning: Aktivieren](_img/vs-linkedin/vs-linkedin-Activate1.png)
 
-
 16. Sie können sich nun die Fertigkeiten genauer ansehen, die Sie interessieren.  Wählen Sie Fertigkeiten aus der Liste der Empfehlungen aus, suchen Sie nach weiteren Fertigkeiten, oder klicken Sie auf **Überspringen**, um den Vorgang ohne Auswahl von Fertigkeiten fortzusetzen.
    > [!div class="mx-imgBorder"]
    > ![LinkedIn Learning: Fertigkeiten](_img/vs-linkedin/vs-linkedin-skills.png)
@@ -99,25 +95,23 @@ So aktivieren Sie Ihr LinkedIn-Premiumabonnement und Ihren LinkedIn Learning-Vor
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 3 Monate                                                            |Nein.  Nur für neue Abonnenten verfügbar         |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | 3 Monate                                             |  Nein.  Nur für neue Abonnenten verfügbar         |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | 3 Monate                                              | Nein.  Nur für neue Abonnenten verfügbar         |
-| Visual Studio Dev Essentials | NA  | 3 Monate |Nein.  Nur für neue Abonnenten verfügbar |
+| Visual Studio Dev Essentials | NA  | Nicht verfügbar |NA|
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure                                       | Nicht verfügbar                                                           |NA|
 
-<sup>1</sup> *Umfasst:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP).  Umfasst nicht:  Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine, Microsoft Valued Professional (MVP), Region Director (RD).  MCT Software & Services.*
-
+<sup>1</sup> *Umfasst:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP).  Umfasst nicht:  Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  MCT Software & Services.*
 
 > [!NOTE]
 > In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.
-
 
 Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen.
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 ### <a name="q-if-i-renew-my-subscription-does-my-linkedin-learning-benefit-also-renew"></a>Frage: Wird mein LinkedIn Learning-Vorteil verlängert, wenn ich mein Abonnement verlängere?
-A:  Nein, das LinkedIn Learning-Angebot ist nur für neue Abonnenten verfügbar.
+Antwort:  Nein, das LinkedIn Learning-Angebot ist nur für neue Abonnenten verfügbar.
 
 ## <a name="support-resources"></a>Supportressourcen
--  Benötigen Sie Hilfe bei LinkedIn Learning?  Sehen Sie sich diese Ressourcen an:
+- Benötigen Sie Hilfe bei LinkedIn Learning?  Sehen Sie sich diese Ressourcen an:
     - Hilfe bei der [Verwendung von LinkedIn Learning](https://www.linkedin.com/help/learning).
     - Hilfe bei allgemeinen Fragen rund um [LinkedIn](https://www.linkedin.com/help/linkedin), beispielsweise zum Erstellen von Konten und Profilen oder zum Verwalten Ihres Netzwerks.
--  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
--  Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
+- Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
+- Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).

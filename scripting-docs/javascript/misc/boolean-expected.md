@@ -1,14 +1,9 @@
 ---
 title: Boolescher Wert erwartet. | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5010
 dev_langs:
@@ -16,16 +11,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 35d71b7f-53fd-44c4-a7c7-b1550c65cfd4
-caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb8ec8f7244b98cfa628794b485859dbec611c19
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 261cf0ad93208c0eac09e42dcd68853352318e88
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817899"
 ---
 # <a name="boolean-expected"></a>Boolescher Wert erwartet
 Sie haben versucht, rufen Sie die **Boolean.prototype.toString** oder **Boolean.prototype.valueOf** Methode für ein Objekt von einem anderen Typ als `Boolean`. Das Objekt dieser Art von Aufruf muss vom Typ `Boolean`. Zum Beispiel:

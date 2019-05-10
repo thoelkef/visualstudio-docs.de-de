@@ -1,14 +1,9 @@
 ---
-title: Ungültiges Replacer-Argument | Microsoft Docs
-ms.custom: ''
+title: Ungültiges Replacer-Argument | Microsoft-Dokumentation
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5035
 dev_langs:
@@ -20,22 +15,22 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 588909bae9c5cf198d3108490111b36d5a2d182b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 46e01a4e6bb989fad2da6f979c79b7aba13df63a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007313"
 ---
 # <a name="invalid-replacer-argument"></a>Ungültiges replacer-Argument
 Wurde versucht, aufzurufen `JSON.stringify` mit einem Argument, das ungültig ist. Die `replacer` -Argument muss eine Funktion oder ein Array sein.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Ändern der `replacer` Argument an eine Funktion oder ein Array.  
+- Ändern der `replacer` Argument an eine Funktion oder ein Array.  
   
 ## <a name="example"></a>Beispiel  
- Der Code in diesem Beispiel verursacht einen Laufzeitfehler, da `memberfilter` ist ein Objekt anstelle einer Funktion oder einem Array.  
+ Der Code in diesem Beispiel verursacht einen Laufzeitfehler, da `memberfilter` ist ein Objekt anstelle einer Funktion oder eines Arrays.  
   
 ```JavaScript  
 var contact = new Object();  

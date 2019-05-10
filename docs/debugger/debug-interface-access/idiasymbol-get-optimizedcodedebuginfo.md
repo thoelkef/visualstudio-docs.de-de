@@ -1,30 +1,33 @@
 ---
 title: 'Idiasymbol:: Get_optimizedcodedebuginfo | Microsoft-Dokumentation'
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_optimizedCodeDebugInfo method
 ms.assetid: 57ef4170-37a9-46b0-8217-c1a674725113
-author: mikejo5000
+caps.latest.revision: 12
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: 15bd5eddff9eb69bf3d410121b9206c839e18487
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 27e2edec7964e2105cd411321a6e7644e7835097
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399324"
 ---
 # <a name="idiasymbolgetoptimizedcodedebuginfo"></a>IDiaSymbol::get_optimizedCodeDebugInfo
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Ruft ein Flag, das angibt, ob die Funktion Debuginformationen enthält, die spezifisch für optimierten Code ab.  
   
 ## <a name="syntax"></a>Syntax  
   
-```C++  
+```cpp  
 HRESULT get_optimizedCodeDebugInfo(  
    BOOL *pFlag  
 );  
@@ -38,13 +41,13 @@ HRESULT get_optimizedCodeDebugInfo(
  Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="requirements"></a>Anforderungen  
   
 |Anforderung|Beschreibung|  
 |-----------------|-----------------|  
-|Header:|Dia2.h|  
+|Header:|dia2.h|  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

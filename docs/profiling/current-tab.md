@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 2c7b1ae5-3756-4795-bc59-f6bb113f2ba5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04700ebac239be6c72038b30c67d66cfb0e3ec7f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f48ba44d41286f1cf5eda6ececb68d21d39abd14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964733"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62552787"
 ---
 # <a name="current-tab"></a>Registerkarte „Aktuell“
-Bei der Auswahl eines CPU-Threadsegments wird durch Klicken auf die Registerkarte **Aktuell** eine Aufrufliste (sofern vorhanden) angezeigt, die dem aktuellen Auswahlpunkt auf der Zeitachse am ehesten entspricht.  In diesem Fall wird der Auswahlpunkt durch einen schwarzen Pfeil oder ein Caretzeichen oberhalb der Zeitachse dargestellt. Wenn ein Blockierungssegment ausgewählt wird, wird das Caretzeichen nicht angezeigt, weil keine Ausführung stattgefunden hat. Das Segment wird aber dennoch hervorgehoben, und eine Aufrufliste wird angezeigt.  
-  
- Auf der Registerkarte **Aktuell** werden zudem Informationen zu DirectX-Aktivitätssegmenten, Marker und E/A-Zugriff angezeigt.  Für DirectX-Aktivitätssegmente werden Informationen zur Verarbeitung von DMA-Paketen durch die Hardwarewarteschlange angezeigt.  Für Marker werden Informationen zur Beschreibung sowie zum Markertyp angezeigt.  Für den E/A-Zugriff werden Informationen zu Datei und Anzahl der gelesenen oder geschriebenen Bytes angezeigt.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)
+Bei der Auswahl eines CPU-Threadsegments wird durch Klicken auf die Registerkarte **Aktuell** eine Aufrufliste (sofern vorhanden) angezeigt, die dem aktuellen Auswahlpunkt auf der Zeitachse am ehesten entspricht.  In diesem Fall wird der Auswahlpunkt durch einen schwarzen Pfeil oder ein Caretzeichen oberhalb der Zeitachse dargestellt. Wenn ein Blockierungssegment ausgewählt wird, wird das Caretzeichen nicht angezeigt, weil keine Ausführung stattgefunden hat. Das Segment wird aber dennoch hervorgehoben, und eine Aufrufliste wird angezeigt.
+
+ Auf der Registerkarte **Aktuell** werden zudem Informationen zu DirectX-Aktivitätssegmenten, Marker und E/A-Zugriff angezeigt.  Für DirectX-Aktivitätssegmente werden Informationen zur Verarbeitung von DMA-Paketen durch die Hardwarewarteschlange angezeigt.  Für Marker werden Informationen zur Beschreibung sowie zum Markertyp angezeigt.  Für den E/A-Zugriff werden Informationen zu Datei und Anzahl der gelesenen oder geschriebenen Bytes angezeigt.
+
+## <a name="see-also"></a>Siehe auch
+- [Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)

@@ -6,18 +6,17 @@ helpviewer_keywords:
 - editorconfig [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 2714972a292a9086bd8aa40e77aa3b65eefb8e5e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: a3518133ef269c76e1689d8d68583a2d6a0d09b1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935358"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62794093"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Erstellen von portablen, benutzerdefinierten Editor-Einstellungen mit „EditorConfig“
 
-In Visual Studio 2017 können Sie Ihrem Projekt oder der Codebasis eine [EditorConfig](http://editorconfig.org/)-Datei hinzufügen, um einheitliche Codierungsstile für alle Benutzer durchzusetzen, die an der Codebasis arbeiten. EditorConfig Einstellungen haben Vorrang vor den globalen Einstellungen des Visual Studio-Text-Editors. Das bedeutet, dass Sie jede Codebasis für die Verwendung von Text-Editor-Einstellungen anpassen können, die für dieses Projekt spezifisch sind. Ihre persönlichen Einstellungen können Sie im Visual Studio-Dialogfeld **Optionen** festlegen. Diese Einstellungen gelten immer dann, wenn Sie ohne eine *EDITORCONFIG*-Datei an einer Codebasis arbeiten oder wenn die *EDITORCONFIG*-Datei eine bestimmte Einstellung nicht außer Kraft setzt. Ein Beispiel ist das Format von Einzügen, also Tabulatoren oder Leerzeichen.
+Sie können Ihrem Projekt oder der Codebasis eine [EditorConfig](http://editorconfig.org/)-Datei hinzufügen, um einheitliche Codierungsformate für alle Benutzer durchzusetzen, die an der Codebasis arbeiten. EditorConfig Einstellungen haben Vorrang vor den globalen Einstellungen des Visual Studio-Text-Editors. Das bedeutet, dass Sie jede Codebasis für die Verwendung von Text-Editor-Einstellungen anpassen können, die für dieses Projekt spezifisch sind. Ihre persönlichen Einstellungen können Sie im Visual Studio-Dialogfeld **Optionen** festlegen. Diese Einstellungen gelten immer dann, wenn Sie ohne eine *EDITORCONFIG*-Datei an einer Codebasis arbeiten oder wenn die *EDITORCONFIG*-Datei eine bestimmte Einstellung nicht außer Kraft setzt. Ein Beispiel ist das Format von Einzügen, also Tabulatoren oder Leerzeichen.
 
 EditorConfig-Einstellungen werden von zahlreichen Code-Editoren und IDEs einschließlich Visual Studio unterstützt. Außerdem ist es eine portable Komponente, die mit dem Code geliefert wird und Codierungsstile auch außerhalb von Visual Studio erzwingen kann.
 
@@ -26,7 +25,7 @@ Wenn Sie Ihrem Projekt in Visual Studio eine EditorConfig-Datei hinzufügen, wir
 > [!NOTE]
 > Dieses Thema gilt für Visual Studio unter Windows. Informationen zu Visual Studio für Mac finden Sie unter [EditorConfig in Visual Studio für Mac](/visualstudio/mac/editorconfig).
 
-## <a name="coding-consistency"></a>Programmierkonsistenz
+## <a name="code-consistency"></a>Codekonsistenz
 
 Durch die Einstellungen in EDITORCONFIG-Dateien können Sie einen einheitlichen Programmierstil und einheitliche Programmiereinstellungen in einer Codebasis erzielen. Dies betrifft beispielsweise die Einzugsgröße, die Tabulatorbreite, Zeilenendzeichen, die Codierung usw. und ist unabhängig vom verwendeten Editor oder der verwendeten IDE. Wenn Sie beispielsweise in C# programmieren und für Ihre Codebasis eine Konvention gilt, dass Einzüge immer aus fünf Leerzeichen bestehen, für Dokumente UTF-8-Codierung verwendet wird und jede Zeile mit CR/LF endet, können Sie eine *EDITORCONFIG*-Datei entsprechend konfigurieren.
 
@@ -52,7 +51,7 @@ Der Editor in Visual Studio unterstützt die gebräuchlichsten [EditorConfig-Eig
 
 Die Einstellungen des EDITORCONFIG-Editors werden in allen von Visual Studio unterstützten Sprachen mit Ausnahme von XML unterstützt. Zusätzlich unterstützt EditorConfig Konventionen für [Programmierstile](../ide/editorconfig-code-style-settings-reference.md) und [Namenskonventionen](../ide/editorconfig-naming-conventions.md) für C# und Visual Basic.
 
-## <a name="adding-and-removing-editorconfig-files"></a>Hinzufügen und Entfernen von EDITORCONFIG-Dateien
+## <a name="add-and-remove-editorconfig-files"></a>Hinzufügen und Entfernen von EditorConfig-Dateien
 
 Durch das Hinzufügen einer EDITORCONFIG-Datei zu Ihrem Projekt oder Ihrer Codebasis werden vorhandene Formate nicht in die neuen umgewandelt. Wenn in Ihrer Datei beispielsweise Einzüge vorhanden sind, die mit Tabstopps formatiert sind, und Sie eine EDITORCONFIG-Datei hinzufügen, bei der die Einzüge mit Leerräumen formatiert sind, werden die Einzugszeichen nicht automatisch in Leerräume konvertiert. Neue Codezeilen werden jedoch gemäß den Einstellungen aus der EDITORCONFIG-Datei formatiert. Darüber hinaus werden beim Formatieren des Dokuments (**Bearbeiten** > **Erweitert** > **Dokument formatieren** oder **Strg**+**K**, **Strg**+**D**) die Einstellungen in der EDITORCONFIG-Datei auf vorhandene Codezeilen angewendet.
 
@@ -95,7 +94,7 @@ Es gibt mehrere Möglichkeiten, wie Sie Ihrem Projekt eine EditorConfig-Datei hi
 
 - Testen Sie die [IntelliCode-Erweiterung](/visualstudio/intellicode/intellicode-visual-studio). Diese experimentelle Erweiterung leitet Ihre Codeformate aus vorhandenem Code ab und erstellt dann eine nicht leere *.editorconfig*-Datei, in der Ihre Einstellungen für das Codeformat bereits definiert sind.
 
-## <a name="override-editorconfig-settings"></a>Außer Kraft setzen von EditorConfig-Einstellungen
+## <a name="file-hierarchy-and-precedence"></a>Dateihierarchie und Rangfolge
 
 Wenn Sie einem Ordner in Ihrer Dateihierarchie eine *EDITORCONFIG*-Datei hinzufügen, gelten deren Einstellungen für alle geeigneten Dateien auf der betreffenden Ebene und den Ebenen darunter. Sie können die EditorConfig-Einstellungen ebenfalls für ein bestimmtes Projekt, eine bestimmte Codebasis oder für einen Teil einer Codebasis außer Kraft setzen, sodass dieser andere Konventionen als die anderen Teile der Codebasis verwendet. Dies kann nützlich sein, wenn Sie Code von einer anderen Stelle integrieren und dessen Konventionen nicht ändern möchten.
 
@@ -110,9 +109,9 @@ Wenn einige, aber nicht alle Einstellungen außer Kraft gesetzt werden sollen, g
 root = true
 ```
 
-EDITORCONFIG-Dateien werden von unten nach oben gelesen, und die nächstgelegenen EDITORCONFIG-Dateien werden als letztes gelesen. Konventionen aus übereinstimmenden EDITORCONFIG-Abschnitten werden in der Reihenfolge angewendet, in der sie gelesen werden, damit näher gelegenen Dateien der Vorrang gegeben wird.
+EditorConfig-Dateien werden von oben nach unten gelesen. Wenn es mehrere Regeleigenschaften mit dem gleichen Namen gibt, hat die zuletzt gefundene Eigenschaft mit diesem Namen Vorrang.
 
-## <a name="editing-editorconfig-files"></a>Bearbeiten von EDITORCONFIG-Dateien
+## <a name="edit-editorconfig-files"></a>Bearbeiten von EditorConfig-Dateien
 
 Mit Visual Studio können Sie *EDITORCONFIG*-Dateien bearbeiten, indem Sie IntelliSense-Vervollständigungslisten bereitstellen.
 
@@ -149,7 +148,7 @@ Wenn Sie jetzt die **TAB-TASTE** drücken, werden Tabstoppzeichen anstelle von L
 
 ![Die TAB-TASTE fügt Tabstoppzeichen hinzu](../ide/media/vside_editorconfig_tab.png)
 
-## <a name="troubleshooting-editorconfig-settings"></a>Behandeln von Problemen mit den EditorConfig-Einstellungen
+## <a name="troubleshoot-editorconfig-settings"></a>Behandeln von Problemen mit den EditorConfig-Einstellungen
 
 Wenn irgendwo in der Verzeichnisstruktur entweder am Speicherort Ihres Projekts oder darüber eine EditorConfig-Datei vorhanden ist, wendet Visual Studio die Editoreinstellungen in dieser Datei auf Ihren Editor an. In diesem Fall wird Ihnen die folgende Meldung in der Statusleiste angezeigt:
 

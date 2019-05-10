@@ -1,14 +1,9 @@
 ---
 title: MSBuild-Transformationen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - MSBuild, transforms
 - transforms [MSBuild]
@@ -16,18 +11,17 @@ ms.assetid: d0bcfc3c-14fa-455e-805c-63ccffa4a3bf
 caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ce1d0b63518fb48636fca38b2788eea2d0c189a8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3f9a6f7985e3ebb3e77dcc605157f75e00a0842b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223696"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426035"
 ---
 # <a name="msbuild-transforms"></a>MSBuild-Transformationen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Eine Transformation ist eine 1:1-Konvertierung von einer Elementliste in eine andere. Über Transformationen können nicht nur Elementlisten in einem Projekt transformiert werden, sondern auch direkte Zuordnungen zwischen Eingaben und Ausgaben eines Ziels identifiziert werden. In diesem Artikel werden Transformationen thematisiert, und es wird erläutert, wie sie von [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] zur effizienteren Erstellung von Projekten verwendet werden.  
   
 ## <a name="transform-modifiers"></a>Transformationsmodifizierer  
@@ -40,7 +34,7 @@ Eine Transformation ist eine 1:1-Konvertierung von einer Elementliste in eine an
 ```  
   
 > [!NOTE]
->  Sie können eine benutzerdefinierte Trennlinie für eine transformierte Elementliste auf dieselbe Weise angeben, wie Sie eine Trennlinie für eine Standardelementliste angeben. Verwenden Sie beispielsweise das folgende XML, um eine transformierte Elementliste durch ein Komma („,“) anstatt durch das standardmäßige Semikolon („;“) zu unterteilen.  
+> Sie können eine benutzerdefinierte Trennlinie für eine transformierte Elementliste auf dieselbe Weise angeben, wie Sie eine Trennlinie für eine Standardelementliste angeben. Verwenden Sie beispielsweise das folgende XML, um eine transformierte Elementliste durch ein Komma („,“) anstatt durch das standardmäßige Semikolon („;“) zu unterteilen.  
   
 ```  
 @(RESXFile->'Toolset\%(filename)%(extension)', ',')  
@@ -60,7 +54,7 @@ Eine Transformation ist eine 1:1-Konvertierung von einer Elementliste in eine an
 ## <a name="dependency-analysis"></a>Abhängigkeitsanalyse  
  Tansformationen garantieren eine 1:1-Zuordnung zwischen der transformierten und der ursprünglichen Elementliste. Wenn daher ein Ziel Ausgaben erzeugt, die Transformationen der Eingaben sind, kann [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] die Zeitstempel der Ein- und Ausgaben analysieren und entscheiden, ob ein Ziel übersprungen, erstellt oder teilweise neu erstellt werden soll.  
   
- In der [Kopieraufgabe](../msbuild/copy-task.md) im folgenden Beispiel ist jede Datei in der `BuiltAssemblies`-Elementliste einer Datei im Zielordner der Aufgabe zugeordnet, die durch eine Transformation im `Outputs`-Attribut bestimmt wird. Wenn eine Datei in der `BuiltAssemblies`-Elementliste geändert wird, wird die `Copy`-Aufgabe nur für die geänderte Datei ausgeführt, und alle anderen Dateien werden übersprungen. Weitere Informationen zur Abhängigkeitsanalyse finden Sie unter [How to: Build Incrementally (Vorgehensweise: Inkrementelles Erstellen)](../msbuild/how-to-build-incrementally.md).  
+ In der [Kopieraufgabe](../msbuild/copy-task.md) im folgenden Beispiel ist jede Datei in der `BuiltAssemblies`-Elementliste einer Datei im Zielordner der Aufgabe zugeordnet, die durch eine Transformation im `Outputs`-Attribut bestimmt wird. Wenn eine Datei in der `BuiltAssemblies`-Elementliste geändert wird, wird die `Copy`-Aufgabe nur für die geänderte Datei ausgeführt, und alle anderen Dateien werden übersprungen. Weitere Informationen zur Abhängigkeitsanalyse finden Sie unter [Vorgehensweise: Inkrementelles Erstellen](../msbuild/how-to-build-incrementally.md).  
   
 ```  
 <Target Name="CopyOutputs"  
@@ -117,7 +111,4 @@ extension: .xsd
 ## <a name="see-also"></a>Siehe auch  
  [MSBuild Concepts](../msbuild/msbuild-concepts.md)  (MSBuild-Grundlagen)  
  [MSBuild Reference](../msbuild/msbuild-reference.md)  (MSBuild-Referenz)  
- [Gewusst wie: Inkrementelles Erstellen](../msbuild/how-to-build-incrementally.md)
-
-
-
+ [Vorgehensweise: Inkrementelles Erstellen](../msbuild/how-to-build-incrementally.md)

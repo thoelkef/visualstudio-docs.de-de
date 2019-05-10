@@ -1,14 +1,9 @@
 ---
 title: Häufige Muster von Multithreadanwendungen mit unerwünschtem Verhalten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.tools.gallery
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 00d10629-e20f-4d6d-8643-c59a3879812e
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1e0dfcb9408c67acc754f687903b4be2d13f9ff4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f2c1a799663d33e61977c5416ad199bce8bce545
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755818"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62420409"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Häufige Muster von Multithreadanwendungen mit unerwünschtem Verhalten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ Die Parallelitätsschnellansicht ermöglicht Entwicklern die visuelle Darstellun
   
  Wie in der folgenden Abbildung gezeigt, kann die Parallelitätsschnellansicht dieses Symptom auch in der CPU-Auslastungsansicht anzeigen, wo die Anwendung trotz mehrerer Threads nur einen logischen Kern nutzt.  
   
- Weitere Informationen finden Sie unter „Performance Pattern 1: Identifying Lock Contention“ (Verhaltensmuster 1: Identifizieren von Sperrenkonflikten) in Hazim Shafis Blog [Parallel Performance Tools For Windows](http://go.microsoft.com/fwlink/?LinkID=160569) auf der MSDN-Blogwebsite.  
+ Weitere Informationen finden Sie unter "Performance Pattern 1: Identifizieren von Sperrkonflikten"in der Hazim Shafi [Parallel Performance Tools für Windows](http://go.microsoft.com/fwlink/?LinkID=160569) Blog auf der MSDN-Blog-Website.  
   
  ![Sperrenkonflikte](../profiling/media/lockcontention-2.png "LockContention_2")  
   
@@ -57,9 +52,9 @@ Die Parallelitätsschnellansicht ermöglicht Entwicklern die visuelle Darstellun
   
  Beachten Sie beim Auswerten dieses Problems Folgendes:  
   
--   Das Gesamtsystem ist möglicherweise überzeichnet. Beachten Sie, dass die Threads möglicherweise von anderen Prozessen im System präemptiv unterbrochen werden. Wenn Sie den Cursor in der Threadansicht über einem Segment mit vorzeitiger Entfernung ruhen lassen, werden der Thread und der Prozess, von dem dieser präemptiv unterbrochen wurde, in einer QuickInfo benannt. Bei diesem Prozess muss es sich nicht zwingend um den Prozess handeln, der während der gesamten präemptiven Unterbrechung des Prozesses ausgeführt wurde, Sie erhalten dadurch jedoch einen Hinweis auf mögliche Ursachen für die präemptive Unterbrechung.  
+- Das Gesamtsystem ist möglicherweise überzeichnet. Beachten Sie, dass die Threads möglicherweise von anderen Prozessen im System präemptiv unterbrochen werden. Wenn Sie den Cursor in der Threadansicht über einem Segment mit vorzeitiger Entfernung ruhen lassen, werden der Thread und der Prozess, von dem dieser präemptiv unterbrochen wurde, in einer QuickInfo benannt. Bei diesem Prozess muss es sich nicht zwingend um den Prozess handeln, der während der gesamten präemptiven Unterbrechung des Prozesses ausgeführt wurde, Sie erhalten dadurch jedoch einen Hinweis auf mögliche Ursachen für die präemptive Unterbrechung.  
   
--   Untersuchen Sie, wie die entsprechende Anzahl der Threads zur Ausführung in dieser Arbeitsphase vom Prozess ermittelt wird. Wenn der Prozess die Anzahl der aktiven parallelen Threads direkt berechnet, können Sie den Algorithmus ändern, um der Anzahl der verfügbaren logischen Kerne auf dem System besser Rechnung zu tragen. Bei Verwendung von Concurrency Runtime, Task Parallel Library oder PLINQ wird die Anzahl der Threads von diesen Bibliotheken berechnet.  
+- Untersuchen Sie, wie die entsprechende Anzahl der Threads zur Ausführung in dieser Arbeitsphase vom Prozess ermittelt wird. Wenn der Prozess die Anzahl der aktiven parallelen Threads direkt berechnet, können Sie den Algorithmus ändern, um der Anzahl der verfügbaren logischen Kerne auf dem System besser Rechnung zu tragen. Bei Verwendung von Concurrency Runtime, Task Parallel Library oder PLINQ wird die Anzahl der Threads von diesen Bibliotheken berechnet.  
   
 ## <a name="inefficient-io"></a>Ineffizienter E/A  
  ![Ineffizienter E&#47;A](../profiling/media/inefficient-io.png "Inefficient_IO")  
@@ -73,6 +68,3 @@ Die Parallelitätsschnellansicht ermöglicht Entwicklern die visuelle Darstellun
   
 ## <a name="see-also"></a>Siehe auch  
  [Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)
-
-
-

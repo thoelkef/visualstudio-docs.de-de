@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 500f718d-9028-49a4-8615-ba95cf47fc52
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 173ec03743e9dc1eaf78ae0cca0b3396f0600295
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 56ad09f2b158c7d23bf40bbafbdba3a9435926e4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955593"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909167"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>Membervervollständigung in einem Legacysprachdienst
 

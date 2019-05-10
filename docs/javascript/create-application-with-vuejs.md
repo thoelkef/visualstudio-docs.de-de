@@ -7,21 +7,21 @@ ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 37d44112630797ecbc8621a885412ef4014610fd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ff323547135d4c0d57900ac4e871cf053dedf096
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857722"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62960629"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Erstellen einer Vue.js-Anwendung mit Node.js-Tools für Visual Studio
 
-Visual Studio 2017 bietet eine bessere Unterstützung für das [Vue.js](https://vuejs.org/)-Framework. Dadurch wird die Servicequalität für Entwickler beim Erstellen einer Anwendung mit Vue.js, JavaScript und TypeScript verbessert.
+Visual Studio unterstützt die Entwicklung von Apps mit dem [Vue.js](https://vuejs.org/)-Framework in JavaScript oder TypeScript.
 
 Mit den folgenden Features wird die Entwicklung von Vue.js-Anwendungen in Visual Studio unterstützt:
 
@@ -31,14 +31,19 @@ Mit den folgenden Features wird die Entwicklung von Vue.js-Anwendungen in Visual
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
-* Sie müssen Visual Studio 2017 Version 15.8 Preview 3 oder höher und die Workload **Node.js-Entwicklung** installiert haben.
+* Sie müssen Visual Studio 2017 Version 15.8 oder höher und die Workload **Node.js-Entwicklung** installiert haben.
 
     > [!IMPORTANT]
-    > Für diesen Artikel sind Features erforderlich, die nur in Visual Studio 2017 Version 15.8 Preview 3 verfügbar sind.
+    > Für diesen Artikel sind Features erforderlich, die nur in Visual Studio 2017 Version 15.8 verfügbar sind.
 
-    Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  kostenlos herunterladen.
+    ::: moniker range=">=vs-2019"
+    Falls die erforderliche Version noch nicht installiert ist, installieren Sie [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019).
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)  kostenlos herunterladen.
+    ::: moniker-end
 
-    Falls Sie bereits über Visual Studio verfügen, aber die Workload noch installieren müssen, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** (**Datei** > **Neu** > **Projekt**) auf den Link **Visual Studio-Installer**. Der Visual Studio-Installer wird gestartet. Klicken Sie auf die Workload **Node.js-Entwicklung** und anschließend auf **Ändern**.
+    Wenn Sie die Workload installieren müssen, Visual Studio aber bereits besitzen, navigieren Sie zu **Tools** > **Tools und Features abrufen…**. Dadurch wird der Visual Studio-Installer geöffnet. Klicken Sie auf die Workload **Node.js-Entwicklung** und anschließend auf **Ändern**.
 
 * Zum Erstellen des ASP.NET Core-Projekts müssen die Workloads „ASP.NET und Webentwicklung“ und „Plattformübergreifende .NET Core-Entwicklung“ installiert sein.
 
@@ -63,9 +68,14 @@ Für dieses Beispiel wird eine leere ASP.NET Core-Anwendung (C#) verwendet. Sie 
 
 #### <a name="create-an-empty-project"></a>Erstellen eines leeren Projekts
 
-1. Öffnen Sie Visual Studio, und wählen Sie im Hauptmenü **Datei** > **Neu** > **Projekt** aus.
+1. Öffnen Sie Visual Studio, und erstellen Sie ein neues Projekt.
 
-1. Wählen Sie unter **Visual C#** > **Web** die Option **ASP.NET Core-Webanwendung** aus, und klicken Sie dann auf **OK**.
+    ::: moniker range=">=vs-2019"
+    Drücken Sie **ESC**, um das Startfenster zu schließen. Geben Sie **STRG + Q** ein, um das Suchfeld zu öffnen, geben Sie **asp.net** ein, und wählen Sie dann **Neue ASP.NET Core-Webanwendung erstellen** aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Erweitern Sie im linken Bereich des Dialogfelds **Neues Projekt** den Eintrag **Visual C#**, und wählen Sie dann **Web** aus. Klicken Sie im mittleren Bereich auf **ASP.NET Core-Webanwendung** und anschließend auf **OK**.
+    ::: moniker-end
 
     Wenn die Projektvorlage **ASP.NET Core-Webanwendung** nicht vorhanden ist, installieren Sie zunächst die Workload **ASP.NET und Webentwicklung** und die Entwicklungsworkload .**NET Core**. Klicken Sie zum Installieren der Workloads auf den Link **Visual Studio-Installer öffnen** im linken Bereich des Dialogfelds **Neues Projekt** (wählen Sie **Datei** > **Neu** > **Projekt** aus). Der Visual Studio-Installer wird gestartet. Wählen Sie die erforderlichen Workloads aus.
 
@@ -91,6 +101,9 @@ Für dieses Beispiel wird eine leere ASP.NET Core-Anwendung (C#) verwendet. Sie 
 1. Wechseln Sie zur Eingabeaufforderung, und geben Sie als aktuelles Verzeichnis das Stammverzeichnis Ihres Projekts ein.
 
 1. Geben Sie `vue init webpack ClientApp` ein, und führen Sie die entsprechenden Schritte aus, wenn Sie aufgefordert werden, weitere Fragen zu beantworten.
+
+    > [!NOTE]
+    > Bei *.vue*-Dateien müssen Sie WebPack oder ein ähnliches Framework mit einem Ladeprogramm für die Konvertierung verwenden. TypeScript und Visual Studio ist nicht bekannt, wie *.vue*-Dateien kompiliert werden. Das Gleiche gilt für die Bündelung. TypeScript ist nicht bekannt, wie ES2015-Module (d. h. `import`- und `export`-Anweisungen) in eine einzige endgültige *.js*-Datei zum Laden im Browser konvertiert werden. Auch in diesem Fall ist WebPack die beste Wahl. Damit dieser Vorgang innerhalb von Visual Studio mithilfe von MSBuild ausgeführt werden kann, müssen Sie mit einer Visual Studio-Vorlage beginnen. Derzeit ist keine ASP.NET-Vorlage für die Vue.js-Entwicklung im Lieferumfang enthalten.
 
 #### <a name="modify-the-webpack-configuration-to-output-the-built-files-to-wwwroot"></a>Ändern der Webpack-Konfiguration, sodass die kompilierten Dateien in wwwroot ausgegeben werden
 
@@ -176,6 +189,7 @@ Die Automatisierung des Buildprozesses wird durch einen unbekannten Fehler bei v
 * Der Befehl `npm run build` kann bei Verwendung von vue-cli 3.0 nicht als Präbuildereignis für die Projekteigenschaften ausgeführt werden.
 
 ## <a name="see-also"></a>Siehe auch
-https://vuejs.org/v2/guide: Erste Schritte – Leitfaden für Vue  
-https://github.com/vuejs/vue-cli: Vue-CLI-Projekt  
-https://webpack.js.org/configuration/: Dokumentation zur Konfiguration von Webpack
+
+- [Erste Schritte – Leitfaden für Vue](https://vuejs.org/v2/guide).
+- [[Vue-CLI-Projekt]](https://github.com/vuejs/vue-cli)
+- [Dokumentation zur Konfiguration von Webpack](https://webpack.js.org/configuration/).

@@ -1,27 +1,22 @@
 ---
-title: 'Testbereich 6: Löschen | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Testbereich 6: Delete | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], deleting items
 - source control plug-ins, deleting items
 ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1498566e1afeaf1517b7ae3bd62297444c828888
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3ffe786b5bc5f6d0bb0233fbb431988e0145611d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766309"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094867"
 ---
 # <a name="test-area-6-delete"></a>Testbereich 6: Löschen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,13 +38,13 @@ Quellcodeverwaltung Hierunter-Plug-in Test löschen-Aktionen.
 ## <a name="expected-behavior"></a>Es wird erwartet  
  Das erwartete Verhalten für die Testfälle im Testbereich löschen ist:  
   
--   Gelöschtes Element wird nicht mehr angezeigt, in **Projektmappen-Explorer**.  
+- Gelöschtes Element wird nicht mehr angezeigt, in **Projektmappen-Explorer**.  
   
--   Das gelöschte Projekt oder Element das übergeordnete Element ist ausgecheckt, nach Bedarf (möglicherweise mit einer Eingabeaufforderung.)  
+- Das gelöschte Projekt oder Element das übergeordnete Element ist ausgecheckt, nach Bedarf (möglicherweise mit einer Eingabeaufforderung.)  
   
--   Nachdem Sie einen aktivierten zu löschen oder Element hinzugefügt, er erscheint nicht in der **Anstehende Eincheckvorgänge** Fenster.  
+- Nachdem Sie einen aktivierten zu löschen oder Element hinzugefügt, er erscheint nicht in der **Anstehende Eincheckvorgänge** Fenster.  
   
--   Das Element ist immer noch im Speicher quellcodeverwaltung, vorhanden ist, auch nach dem Löschvorgang erhalten, und muss manuell gelöscht werden.  
+- Das Element ist immer noch im Speicher quellcodeverwaltung, vorhanden ist, auch nach dem Löschvorgang erhalten, und muss manuell gelöscht werden.  
   
 |Aktion|Testschritte|Erwartete Ergebnisse überprüfen|  
 |------------|----------------|--------------------------------|  
@@ -61,4 +56,3 @@ Quellcodeverwaltung Hierunter-Plug-in Test löschen-Aktionen.
   
 ## <a name="see-also"></a>Siehe auch  
  [Testleitfaden für Quellcodeverwaltungs-Plug-Ins](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-

@@ -2,27 +2,26 @@
 title: 'Schnellstart: Erstellen eines Python-Projekts mithilfe einer Vorlage'
 description: In diesem Schnellstart erstellen Sie ein Visual Studio-Projekt für Python mithilfe der integrierten Vorlage für eine einfache Flask-App.
 ms.date: 12/06/2018
-ms.prod: visual-studio-dev15
 ms.topic: quickstart
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f01750978527a02d0d67267f550b8a0c0c558435
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 089be3e6f28a939979f6bd97097ea7558824b493
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429761"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Schnellstart: Erstellen eines Python-Projekts aus einer Vorlage in Visual Studio
 
-Wenn Sie die [Python-Unterstützung in Visual Studio 2017 installiert haben](installing-python-support-in-visual-studio.md), können Sie ganz einfach ein neues Python-Projekt mithilfe einer Vielzahl von Vorlagen erstellen. In diesem Schnellstart erstellen Sie eine einfache Flask-Anwendung mit einer Vorlage. Das entstehende Projekt ist so ähnlich wie das Projekt, dass Sie unter [Schnellstart: Erstellen einer Web-App mit Flask](../ide/quickstart-python.md) erstellt haben.
+Wenn Sie die [Python-Unterstützung in Visual Studio installiert haben](installing-python-support-in-visual-studio.md), können Sie ganz einfach ein neues Python-Projekt mithilfe einer Vielzahl von Vorlagen erstellen. In diesem Schnellstart erstellen Sie eine einfache Flask-Anwendung mit einer Vorlage. Das entstehende Projekt ist so ähnlich wie das Projekt, dass Sie unter [Schnellstart: Erstellen einer Web-App mit Flask](../ide/quickstart-python.md) erstellt haben.
 
-1. Starten Sie Visual Studio 2017.
+1. Starten Sie Visual Studio.
 
 1. Klicken Sie oben in der Menüleiste auf **Datei** > **Neu** > **Projekt**, suchen Sie anschließend im Dialogfeld **Neues Projekt** nach „leeres flask“, wählen Sie dann die Vorlage **Leeres Flask-Webprojekt** aus der mittleren Liste aus, benennen Sie das Projekt, und klicken Sie dann auf **OK**:
 

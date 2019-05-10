@@ -2,19 +2,18 @@
 title: R-Arbeitsbereiche
 description: Steuern des Ausführungsorts von R-Code mithilfe von Workspaces in Visual Studio.
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: a72784b0ab265c090f2efd9c5949698118b559ef
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 97ce4f226c39a20ad41c5977f800aa178450c69c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62998821"
 ---
 # <a name="control-where-r-code-runs-with-workspaces"></a>Steuern, wo R-Code mit Arbeitsbereichen ausgeführt wird
 
@@ -34,7 +33,7 @@ Mit dem Befehl **R Tools** > **Sitzung** > **Zurücksetzen** und über die Symbo
 
 ## <a name="local-workspaces"></a>Lokale Arbeitsbereiche
 
-Die Liste lokaler Arbeitsbereiche führt alle R-Interpreter auf, die auf Ihrem Computer installiert sind. 
+Die Liste lokaler Arbeitsbereiche führt alle R-Interpreter auf, die auf Ihrem Computer installiert sind.
 
 RTVS versucht, automatisch alle installierten Versionen von R zu erkennen, indem der **HKEY_LOCAL_MACHINE\Software\R-Core\\**-Registrierungsschlüssel beim Start von Visual Studio durchsucht wird. Da diese Überprüfung nur beim Start ausgeführt wird, müssen Sie Visual Studio neu starten, wenn Sie einen neuen R-Interpreter installieren.
 
@@ -129,7 +128,7 @@ Ob RTVS bei der Ausführung eines Projekts Dateien kopiert, und welche Dateien k
 
 ![Ausführungsregisterkarte der Projekteigenschaften mit den Einstellungen für die Übertragung von Dateien](media/workspaces-remote-file-transfer-filter-settings.png)
 
-Hier bestimmt die Eigenschaft **Transfer files on run** (Dateien bei der Ausführung übertragen), ob RTVS Projektdateien automatisch kopiert. Der Wert der **Dateien für die Übertragung** filtert dann genau, welche Dateien übertragen werden. Standardmäßig werden nur *R*-, *RMD*-, *SQL*-, *MD*- und *CPP*-Dateien kopiert. Mit diesem Verhalten wird vermieden, dass versehentlich große Datendateien mit jeder Ausführung auf den Server kopiert werden. 
+Hier bestimmt die Eigenschaft **Transfer files on run** (Dateien bei der Ausführung übertragen), ob RTVS Projektdateien automatisch kopiert. Der Wert der **Dateien für die Übertragung** filtert dann genau, welche Dateien übertragen werden. Standardmäßig werden nur *R*-, *RMD*-, *SQL*-, *MD*- und *CPP*-Dateien kopiert. Mit diesem Verhalten wird vermieden, dass versehentlich große Datendateien mit jeder Ausführung auf den Server kopiert werden.
 
 ## <a name="copy-files-from-a-remote-workspace"></a>Kopieren von Dateien aus einem Remotearbeitsbereich
 

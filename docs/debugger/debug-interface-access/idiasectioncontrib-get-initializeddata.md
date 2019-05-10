@@ -1,8 +1,6 @@
 ---
 title: 'Idiasectioncontrib:: Get_initializeddata | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,33 +9,34 @@ helpviewer_keywords:
 ms.assetid: f5c108be-a0cc-408b-9590-b8d44361810c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b972c70fd0cc8a9c7f02476434a7f8f9394a8a2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ef878dcae9f8d6d29761bcda5f5aa9588f26d66c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866506"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62828170"
 ---
 # <a name="idiasectioncontribgetinitializeddata"></a>IDiaSectionContrib::get_initializedData
-Ruft ein Flag, das angibt, ob der Abschnitt initialisierte Daten enthält.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_initializedData (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pRetVal`  
- [out] Gibt `TRUE` enthält der Abschnitt initialisierte Daten; andernfalls `FALSE`.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+Ruft ein Flag, das angibt, ob der Abschnitt initialisierte Daten enthält.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_initializedData ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pRetVal`
+
+[out] Gibt `TRUE` enthält der Abschnitt initialisierte Daten; andernfalls `FALSE`.
+
+## <a name="return-value"></a>Rückgabewert
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

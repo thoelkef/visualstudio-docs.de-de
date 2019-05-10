@@ -2,7 +2,6 @@
 title: IDebugApplication::DebugOutput | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a4c67567b4dc4df74b43d8003104e8f47455b5f5
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: a67a16e3fd4868726087df6f2596571d14630f80
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54095406"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990965"
 ---
 # <a name="idebugapplicationdebugoutput"></a>IDebugApplication::DebugOutput
 Bewirkt, dass die angegebene Zeichenfolge von der Debugger-integrierten Entwicklungsumgebung (IDE) angezeigt werden soll.  

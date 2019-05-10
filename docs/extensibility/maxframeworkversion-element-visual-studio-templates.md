@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f732a9d3-fc29-405b-9298-01ea83fc58b8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e28364360cf636273384480a35cd07468b9b7e6f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 573fcbce3b395f7f351d57208998b0b63b175559
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62907226"
 ---
 # <a name="maxframeworkversion-element-visual-studio-templates"></a>MaxFrameworkVersion-Element (Visual Studio-Vorlagen)
 
@@ -26,7 +26,7 @@ Gibt die maximale Version von .NET Framework, die von der Vorlage erforderlich s
 > [!IMPORTANT]
 > Ab Visual Studio 2017 Version 15.6, die **Framework-Zielversion** Dropdown ist nicht mehr als einen Filter für die angezeigten Vorlagen in die **Vorlagen** Teil der **neues Projekt** Dialogfeld. Stattdessen die **Zielframeworkversion** Dropdownliste fungiert als eine Framework-Auswahl für die ausgewählte Vorlage.
 
- \<VSTemplate > \<TemplateData > \<MaxFrameworkVersion >
+ \<VSTemplate> \<TemplateData> \<MaxFrameworkVersion>
 
 ## <a name="syntax"></a>Syntax
 

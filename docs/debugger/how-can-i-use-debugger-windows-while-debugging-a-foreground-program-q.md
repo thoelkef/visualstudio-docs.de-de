@@ -19,23 +19,23 @@ helpviewer_keywords:
 ms.assetid: 9e67a308-1c81-42ab-966b-7fc3c1d2bf7a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60bd259dd5acb542211fe57b0741c2e28d0baaca
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 11bd61cda8c92721fb42c640b0b5100b8054acdf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62894865"
 ---
 # <a name="how-can-i-use-debugger-windows-while-debugging-a-foreground-program"></a>Wie werden Debuggerfenster beim Debuggen eines im Vordergrund ausgeführten Programms verwendet?
-## <a name="problem-description"></a>Problembeschreibung  
- Es liegt ein Problem beim Zeichnen auf dem Bildschirm vor. Um das Problem beobachten zu können, muss das Programm im Vordergrund bleiben; das bedeutet jedoch, dass kein Zugriff auf die Debuggerfenster möglich wäre. Welche Möglichkeiten gibt es?  
-  
-## <a name="solution"></a>Lösung  
- Wenn Sie über einen zweiten Computer verfügen, können Sie das Remotedebuggen verwenden. So können Sie das Zeichnen auf dem Bildschirm auf dem Remotecomputer beobachten und gleichzeitig den Debugger auf dem Host ausführen. Weitere Informationen zum Remotedebuggen finden Sie unter [Remotedebuggen](../debugger/remote-debugging.md).  
-  
-## <a name="see-also"></a>Siehe auch  
- [Debugging Native Code FAQs (Häufig gestellte Fragen zum Debuggen von nativem Code)](../debugger/debugging-native-code-faqs.md)   
- [Debuggen von nativem Code](../debugger/debugging-native-code.md)
+## <a name="problem-description"></a>Problembeschreibung
+ Es liegt ein Problem beim Zeichnen auf dem Bildschirm vor. Um das Problem beobachten zu können, muss das Programm im Vordergrund bleiben; das bedeutet jedoch, dass kein Zugriff auf die Debuggerfenster möglich wäre. Welche Möglichkeiten gibt es?
+
+## <a name="solution"></a>Lösung
+ Wenn Sie über einen zweiten Computer verfügen, können Sie das Remotedebuggen verwenden. So können Sie das Zeichnen auf dem Bildschirm auf dem Remotecomputer beobachten und gleichzeitig den Debugger auf dem Host ausführen. Weitere Informationen zum Remotedebuggen finden Sie unter [Remotedebuggen](../debugger/remote-debugging.md).
+
+## <a name="see-also"></a>Siehe auch
+- [FAQs zum Debuggen von nativem Code](../debugger/debugging-native-code-faqs.md)
+- [Debuggen von nativem Code](../debugger/debugging-native-code.md)

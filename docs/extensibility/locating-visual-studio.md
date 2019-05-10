@@ -6,15 +6,15 @@ helpviewer_keywords:
 - deployment, VSIX
 ms.assetid: 680c3b25-7901-4768-8363-6d1fcd1ea636
 ms.author: heaths
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9d74c0a899139046cab1d73b59086e4ab9e2276
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a7187fbcc3e3aca990846176676a47f5d17aaf00
+ms.sourcegitcommit: 62f42113ae4dae1ddfff1c4e02445acc09913445
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955132"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "64878145"
 ---
 # <a name="locate-visual-studio"></a>Suchen Sie Visual Studio
 
@@ -41,4 +41,5 @@ Um Visual Studio und anderen Tools in Buildumgebungen, PowerShell-Skripts, Insta
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Änderungen an Visual Studio 2017-setup](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup/)
+* [Änderungen an Visual Studio 2017-setup](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup/)
+* [Starten Sie Visual Studio mit DTE](launch-visual-studio-dte.md)

@@ -1,30 +1,33 @@
 ---
 title: 'Idiasymbol:: Get_function | Microsoft-Dokumentation'
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_function method
 ms.assetid: 48b3a318-3211-410f-8570-c02ee210f0a5
-author: mikejo5000
+caps.latest.revision: 11
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: f0422c79c78d995de16c966532e50decf9192423
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 4702b121161bd73639d580faa13f502e89d8be3d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966199"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401699"
 ---
 # <a name="idiasymbolgetfunction"></a>IDiaSymbol::get_function
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Ruft ein Flag, das angibt, ob die öffentlichen Symboldateien auf eine Funktion verweist.  
   
 ## <a name="syntax"></a>Syntax  
   
-```C++  
+```cpp#  
 HRESULT get_function (   
    BOOL* pRetVal  
 );  
@@ -38,13 +41,13 @@ HRESULT get_function ( 
  Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder den Fehlercode.  
   
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="requirements"></a>Anforderungen  
   
 |Anforderung|Beschreibung|  
 |-----------------|-----------------|  
-|Header:|Dia2.h|  
+|Header:|dia2.h|  
 |Version:|DIA-SDK V7. 0|  
   
 ## <a name="see-also"></a>Siehe auch  

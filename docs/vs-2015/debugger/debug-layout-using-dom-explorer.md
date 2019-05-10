@@ -1,14 +1,9 @@
 ---
 title: Debuggen von Layout mithilfe von DOM Explorer | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,13 +17,13 @@ ms.assetid: ded6566d-fc29-49a7-8029-dee8e50fe733
 caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ba06e6a8ba95887c0cc6b6acfd14cef10ff03798
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8b9d0d2a3250785e5ff60d65a6bf1264892c6f98
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787745"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434119"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>Debuggen von Layout mithilfe von DOM Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
  Die Registerkarte **Layout** des DOM Explorer teigt das [CSS-Verschachtelungsmodell](http://go.microsoft.com/fwlink/?LinkID=238778) für das ausgewählte Elemente in einer [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] -App, Windows Phone Store-App oder einer mit Visual Studio Tools for Apache Cordova erstellten App. Sie können die visuelle Darstellung des Verschachtelungsmodells verwenden, um die layoutbezogenen Werte, die die Darstellung der Elemente beeinflussen, zu identifizieren und zu ändern.  
   
 > [!TIP]
->  Änderungen, die Sie auf der Registerkarte **Layout** vornehmen, werden nicht dauerhaft übernommen. Wenn Sie permanente Änderungen am Quellcode vornehmen möchten, aktualisieren Sie die App mithilfe der Schaltfläche **Windows-App aktualisieren** (nur Windows Store- und Windows Phone Store-Apps) auf der Symbolleiste "Debuggen". Dadurch können Sie vermeiden, dass der Debugger neu gestartet wird.  
+> Änderungen, die Sie auf der Registerkarte **Layout** vornehmen, werden nicht dauerhaft übernommen. Wenn Sie permanente Änderungen am Quellcode vornehmen möchten, aktualisieren Sie die App mithilfe der Schaltfläche **Windows-App aktualisieren** (nur Windows Store- und Windows Phone Store-Apps) auf der Symbolleiste "Debuggen". Dadurch können Sie vermeiden, dass der Debugger neu gestartet wird.  
   
  DOM Explorer zum Ändern von layoutaspekten, die nicht im feldmodell angezeigt werden, finden Sie unter [Schnellstart: Debuggen von HTML und CSS-](../debugger/quickstart-debug-html-and-css.md) und [Debuggen von CSS-Stilen mithilfe von DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md).  
   
@@ -47,11 +42,11 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
 #### <a name="to-fix-the-layout-issue"></a>So beheben Sie das Layoutproblem  
   
-1.  Erstellen Sie in Visual Studio eine neue Store-App auf Grundlage der Projektvorlage "Hub/Pivot".  
+1. Erstellen Sie in Visual Studio eine neue Store-App auf Grundlage der Projektvorlage "Hub/Pivot".  
   
-2.  Öffnen Sie im Ordner "shared pages\hub" hub.css.  
+2. Öffnen Sie im Ordner "shared pages\hub" hub.css.  
   
-3.  Ersetzen Sie den folgenden CSS-Code:  
+3. Ersetzen Sie den folgenden CSS-Code:  
   
     ```css  
     .hubpage .hub .section4 .sub-image-row img {  
@@ -70,32 +65,32 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
     }  
     ```  
   
-4.  Wählen Sie entweder das Projekt "appName.WindowsPhone" oder "appName.Windows" im Projektmappen-Explorer aus, und klicken Sie dann im Kontextmenü für das Projekt auf **Als Startprojekt festlegen** .  
+4. Wählen Sie entweder das Projekt "appName.WindowsPhone" oder "appName.Windows" im Projektmappen-Explorer aus, und klicken Sie dann im Kontextmenü für das Projekt auf **Als Startprojekt festlegen** .  
   
-5.  Wählen Sie je nach Startprojekt **Emulator 8.1 WVGA 4 inch 512MB** oder **Simulator** in der Dropdownliste auf der Symbolleiste "Debuggen" aus (der Standardwert ist**Lokaler Computer** ).  
+5. Wählen Sie je nach Startprojekt **Emulator 8.1 WVGA 4 inch 512MB** oder **Simulator** in der Dropdownliste auf der Symbolleiste "Debuggen" aus (der Standardwert ist**Lokaler Computer** ).  
   
      ![Debugziel auswählen](../debugger/media/js-dom-debug-target-emu.png "JS_DOM_Debug_Target_Emu")  
   
-6.  Drücken Sie F5, um die App im Debugmodus auszuführen.  
+6. Drücken Sie F5, um die App im Debugmodus auszuführen.  
   
-7.  Öffnen Sie "Section 4" durch Blättern oder Streichen.  
+7. Öffnen Sie "Section 4" durch Blättern oder Streichen.  
   
     > [!TIP]
-    >  Positionieren Sie den Phone-Emulator oder den Simulator direkt neben dem Visual Studio-Fenster, sodass Ihnen die Ergebnisse der von Ihnen an den CSS-Stilen vorgenommenen Auswahl und alle Änderungen sofort angezeigt werden.  
+    > Positionieren Sie den Phone-Emulator oder den Simulator direkt neben dem Visual Studio-Fenster, sodass Ihnen die Ergebnisse der von Ihnen an den CSS-Stilen vorgenommenen Auswahl und alle Änderungen sofort angezeigt werden.  
   
      Wenn "Section 4" geladen wird, können Sie sehen, dass die unteren Bilder nicht richtig aussehen. Jedes Elementbild erscheint in der Hälfte zerteilt (wobei die linke Hälfte fehlt).  
   
-8.  Wechseln Sie zu Visual Studio, und klicken Sie im DOM Explorer auf **Element auswählen** (oder drücken Sie STRG+B). Dadurch wird der Auswahlmodus so geändert, dass Sie ein Element auswählen können, indem Sie darauf klicken, und die App wird in den Vordergrund geholt. Der Modus wird nach einem einzelnen Mausklick wieder gewechselt.  
+8. Wechseln Sie zu Visual Studio, und klicken Sie im DOM Explorer auf **Element auswählen** (oder drücken Sie STRG+B). Dadurch wird der Auswahlmodus so geändert, dass Sie ein Element auswählen können, indem Sie darauf klicken, und die App wird in den Vordergrund geholt. Der Modus wird nach einem einzelnen Mausklick wieder gewechselt.  
   
     > [!TIP]
-    >  Sie können auch die Pfeilschaltflächen oder andere Methoden verwenden, um HTML-Elemente direkt im DOM Explorer auszuwählen. Weitere Informationen zum Auswählen von Elementen finden Sie unter [Schnellstart: Debuggen von HTML und CSS-](../debugger/quickstart-debug-html-and-css.md).  
+    > Sie können auch die Pfeilschaltflächen oder andere Methoden verwenden, um HTML-Elemente direkt im DOM Explorer auszuwählen. Weitere Informationen zum Auswählen von Elementen finden Sie unter [Schnellstart: Debuggen von HTML und CSS-](../debugger/quickstart-debug-html-and-css.md).  
   
 9. Wählen Sie im Phone-Emulator oder Simulator die graue rechte Hälfte eines der Bilder aus, das nur halb dargestellt ist. Das ausgewählte Element wird markiert, wie hier im Windows Phone-Emulator dargestellt:  
   
      ![Auswählen eines DOM-Elements](../debugger/media/js-css-layout-select.png "JS_CSS_Layout_Select")  
   
     > [!TIP]
-    >  Der Simulator unterstützt das Zeigen auf Elemente, um eine rechteckige Hervorhebung um DOM-Elemente anzuzeigen, bevor Sie sie auswählen. Der Windows Phone-Emulator unterstützt dies nicht.  
+    > Der Simulator unterstützt das Zeigen auf Elemente, um eine rechteckige Hervorhebung um DOM-Elemente anzuzeigen, bevor Sie sie auswählen. Der Windows Phone-Emulator unterstützt dies nicht.  
   
      Wenn Sie ein DOM-Element auswählen, wählt der DOM Explorer automatisch das entsprechende IMG-Element in Visual Studio aus. Das Element, das im Dom Explorer ausgewählt wird, sieht wie folgt aus:  
   
@@ -110,16 +105,16 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
      Diese Ansicht enthält einige nützliche Informationen zum Element:  
   
-    -   Die Farben entsprechen der rechteckigen Hervorhebung, die im Simulator beim Zeigen auf die Elemente angezeigt wird. Die blaue Farbe stellt die \<Img >-elementabmessungen. Die braune Farbe stellt Randwerte dar.  
+    - Die Farben entsprechen der rechteckigen Hervorhebung, die im Simulator beim Zeigen auf die Elemente angezeigt wird. Die blaue Farbe stellt die \<Img >-elementabmessungen. Die braune Farbe stellt Randwerte dar.  
   
-    -   Der linke Rand (margin-left) ist festgelegt, was auf die Ursache des Problems hinweist, da er mit dem Symptom (schwarz auf der linken Seite der Bilder) übereinstimmt.  
+    - Der linke Rand (margin-left) ist festgelegt, was auf die Ursache des Problems hinweist, da er mit dem Symptom (schwarz auf der linken Seite der Bilder) übereinstimmt.  
   
-    -   Die Felder, die Werte von 0 Pixeln zeigen (z. B. Abstand, Rahmen und Rand) weisen darauf hin, dass die entsprechenden CSS-Eigenschaften wahrscheinlich nicht festgelegt wurden.  
+    - Die Felder, die Werte von 0 Pixeln zeigen (z. B. Abstand, Rahmen und Rand) weisen darauf hin, dass die entsprechenden CSS-Eigenschaften wahrscheinlich nicht festgelegt wurden.  
   
 11. Um zu sehen, wie die margin-left-Regel angewendet wird, klicken Sie auf die Registerkarte **Berechnet** , und schauen Sie unter der Regel "margin-left" nach. Sie sehen, dass die margin-left-Regel mit einem Wert von "5em" festgelegt ist, der berechnete Wert aber "66.66px" oder "146.66px" lautet, je nach Zielgerät.  
   
     > [!TIP]
-    >  Die **berechnet** Registerkarte zeigt, dass die Margin-Left-Regel, in festgelegt ist der `..hubpage .hub. section4 .sub-image-row img` CSS-Selektor in "Hub.CSS" gefunden. Sie müssen das Problem in dieser Demo-App beheben.  
+    > Die **berechnet** Registerkarte zeigt, dass die Margin-Left-Regel, in festgelegt ist der `..hubpage .hub. section4 .sub-image-row img` CSS-Selektor in "Hub.CSS" gefunden. Sie müssen das Problem in dieser Demo-App beheben.  
   
      Sie können auch die Registerkarte **Layout** verwenden, um Änderungen an den Layoutwerten zu testen.  
   
@@ -135,6 +130,3 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
  [Schnellstart: Debuggen von HTML und CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Debuggen von CSS-Stilen mithilfe von DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md)   
  [Anzeigen von DOM-Ereignislistenern](../debugger/view-dom-event-listeners.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 'Exemplarische Vorgehensweise: Abrufen einer Liste der Codeausschnitte (Legacyimplementierung) installiert | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Exemplarische Vorgehensweise: Abrufen einer Liste der installierten Codeausschnitte (Legacyimplementierung) | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - snippets, retrieving list
 - code snippets, retrieving list
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 7d142f8b-35b1-44c4-a13e-f89f6460c906
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a8d132de9773614b966b6fe3a7ae84392fba4f35
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 256430c0e41bfc0452282c89407335d997cc715c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759977"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440756"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Exemplarische Vorgehensweise: Abrufen einer Liste der installierten Codeausschnitte (Legacyimplementierung)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ Ein Codeausschnitt ist ein Codeabschnitt, der eingefügt werden können, in den 
   
 ### <a name="to-retrieve-a-list-of-code-snippets"></a>Zum Abrufen einer Liste von Codeausschnitten  
   
-1.  Der folgende Code zeigt, wie Sie eine Liste von Codeausschnitten für eine bestimmte Sprache zu erhalten. Die Ergebnisse werden gespeichert, in ein Array von <xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion> Strukturen. Diese Methode verwendet die statische <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> -Methode zum Abrufen der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> -Schnittstelle aus der <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> Service. Allerdings können Sie auch den Dienstanbieter übergeben, um Ihr VSPackage, und rufen verwenden die <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> Methode.  
+1. Der folgende Code zeigt, wie Sie eine Liste von Codeausschnitten für eine bestimmte Sprache zu erhalten. Die Ergebnisse werden gespeichert, in ein Array von <xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion> Strukturen. Diese Methode verwendet die statische <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> -Methode zum Abrufen der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> -Schnittstelle aus der <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> Service. Allerdings können Sie auch den Dienstanbieter übergeben, um Ihr VSPackage, und rufen verwenden die <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> Methode.  
   
     ```csharp  
     using System;  
@@ -110,10 +105,10 @@ Ein Codeausschnitt ist ein Codeabschnitt, der eingefügt werden können, in den 
   
 ### <a name="to-call-the-getsnippets-method"></a>Zum Aufrufen der GetSnippets-Methode  
   
-1.  Die folgende Methode wird das Aufrufen der `GetSnippets` Methode nach dem Abschluss von einem Analysevorgang. Die <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A> Methode wird aufgerufen, nachdem einem Analysevorgang, der mit dem Grund gestartet wurde <xref:Microsoft.VisualStudio.Package.ParseReason>.  
+1. Die folgende Methode wird das Aufrufen der `GetSnippets` Methode nach dem Abschluss von einem Analysevorgang. Die <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A> Methode wird aufgerufen, nachdem einem Analysevorgang, der mit dem Grund gestartet wurde <xref:Microsoft.VisualStudio.Package.ParseReason>.  
   
 > [!NOTE]
->  Die `expansionsList` array Listis zur Verbesserung der Leistung zwischengespeichert. Änderungen an der Codeausschnitte werden nicht in der Liste wiedergegeben, wenn der Sprachdienst beendet und neu geladen wird (z. B. durch Anhalten und Neustarten [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]).  
+> Die `expansionsList` array Listis zur Verbesserung der Leistung zwischengespeichert. Änderungen an der Codeausschnitte werden nicht in der Liste wiedergegeben, wenn der Sprachdienst beendet und neu geladen wird (z. B. durch Anhalten und Neustarten [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]).  
   
 ```csharp  
 class TestLanguageService : LanguageService  
@@ -134,7 +129,7 @@ class TestLanguageService : LanguageService
   
 ### <a name="to-use-the-snippet-information"></a>Verwenden Sie die Snippet-Informationen  
   
-1.  Der folgende Code zeigt, wie Sie mit der zurückgegebenen Informationen Ausschnitt der `GetSnippets` Methode. Die `AddSnippets` Methode wird aufgerufen, vom Parser als Reaktion auf irgendwelchen analysieren, die zum Auffüllen einer Liste von Codeausschnitten verwendet wird. Dies sollte erfolgen, nachdem die vollständige Analyse zum ersten Mal erfolgt ist.  
+1. Der folgende Code zeigt, wie Sie mit der zurückgegebenen Informationen Ausschnitt der `GetSnippets` Methode. Die `AddSnippets` Methode wird aufgerufen, vom Parser als Reaktion auf irgendwelchen analysieren, die zum Auffüllen einer Liste von Codeausschnitten verwendet wird. Dies sollte erfolgen, nachdem die vollständige Analyse zum ersten Mal erfolgt ist.  
   
      Die `AddDeclaration` Methode erstellt eine Liste der Deklarationen, die später in eine Vervollständigungsliste angezeigt wird.  
   
@@ -185,4 +180,3 @@ class TestLanguageService : LanguageService
   
 ## <a name="see-also"></a>Siehe auch  
  [Unterstützen von Codeausschnitten in einem Legacysprachdienst](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)
-

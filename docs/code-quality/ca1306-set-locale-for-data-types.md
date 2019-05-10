@@ -1,7 +1,6 @@
 ---
-title: 'CA1306: Set-Gebietsschema für Datentypen'
+title: 'CA1306: Gebietsschema für Datentypen festlegen.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1306
@@ -12,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 104297b2-5806-4de0-a8d9-c589380a796c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 376c7dc88047b861d087896a941079514c1e4303
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 47faa5e496585940f61f94bb6dfb0b8d9d70f752
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944047"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797517"
 ---
-# <a name="ca1306-set-locale-for-data-types"></a>CA1306: Set-Gebietsschema für Datentypen
+# <a name="ca1306-set-locale-for-data-types"></a>CA1306: Gebietsschema für Datentypen festlegen.
 
 |||
 |-|-|

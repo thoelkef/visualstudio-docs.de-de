@@ -1,26 +1,21 @@
 ---
 title: Bereitstellen von Rückgängig-Unterstützung für Designer | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK], undo support
 ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3043bf41c3420644bcf8d65a2d8bbde86eff6910
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9118cbe3f4a8dcee443eca8b3fa5fb9a7664fd41
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778500"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049307"
 ---
 # <a name="supplying-undo-support-to-designers"></a>Bereitstellen von Rückgängig-Unterstützung für Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,9 +41,9 @@ Designer, z. B. Editor, festzulegen, in der Regel Rückgängig-Vorgängen unters
 ## <a name="obtaining-undo-support-automatically"></a>Erhalten automatisch Rückgängig-Unterstützung  
  Alle Designer erstellt, die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automatische und vollständige Rückgängig-Unterstützung wurde If, den Designer:  
   
--   Verwendet eine <xref:System.Windows.Forms.Control> basierend-Klasse für die Benutzeroberfläche.  
+- Verwendet eine <xref:System.Windows.Forms.Control> basierend-Klasse für die Benutzeroberfläche.  
   
--   Nutzt standard CodeDOM-basierten Code-Generierung und Analysesystem für die codegenerierung und Persistenz.  
+- Nutzt standard CodeDOM-basierten Code-Generierung und Analysesystem für die codegenerierung und Persistenz.  
   
      Weitere Informationen zum Arbeiten mit Visual Studio CodeDOM-Unterstützung finden Sie unter [dynamische Quelle-Codegenerierung und-Kompilierung](http://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb)  
   
@@ -85,15 +80,15 @@ Designer, z. B. Editor, festzulegen, in der Regel Rückgängig-Vorgängen unters
   
 - Dies <xref:System.IServiceProvider> Klasse muss die folgenden Dienste bereitstellen:  
   
-  -   <xref:System.ComponentModel.Design.IDesignerHost>.  
+  - <xref:System.ComponentModel.Design.IDesignerHost>.  
   
-  -   <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
+  - <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
   
        Mithilfe von Designern [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] CodeDOM-Serialisierung verwenden möchten <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> im Lieferumfang der [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] als eine Implementierung von der <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>.  
   
        In diesem Fall die <xref:System.IServiceProvider> Klasse bereitgestellt, um die <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> Konstruktor muss dieses Objekt zurückgeben, wie eine Implementierung von der <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> Klasse.  
   
-  -   <xref:System.ComponentModel.Design.IComponentChangeService>  
+  - <xref:System.ComponentModel.Design.IComponentChangeService>  
   
        Designer, die über das standardmäßige <xref:System.ComponentModel.Design.DesignSurface> gebotenen die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Entwurfshost sind garantiert eine Standardimplementierung von der <xref:System.ComponentModel.Design.IComponentChangeService> Klasse.  
   
@@ -111,4 +106,3 @@ Designer, z. B. Editor, festzulegen, in der Regel Rückgängig-Vorgängen unters
  <xref:System.ComponentModel.Design.UndoEngine>   
  <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>   
  [Erweitern der Entwurfszeitunterstützung](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)
-

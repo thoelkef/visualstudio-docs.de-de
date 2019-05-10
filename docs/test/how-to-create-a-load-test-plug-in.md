@@ -11,82 +11,71 @@ helpviewer_keywords:
 ms.assetid: 27806972-1b15-4388-833d-6d0632816f1f
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 1805efbe676273ceac2f0e264e53946eea1be79f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 71686e160fd808b2df3d399b50206bed2a6869e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878561"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979265"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>Vorgehensweise: Erstellen eines Auslastungstest-Plug-Ins
 
 Sie können ein Auslastungstest-Plug-In erstellen, um während des Auslastungstests Code zu verschiedenen Zeitpunkten auszuführen. Mithilfe von erstellten Plug-Ins können die integrierten Funktionen des Auslastungstests erweitert oder bearbeitet werden. Sie können z. B. Code für ein Auslastungstest-Plug-In schreiben, um während der Ausführung des Auslastungstests das Testmuster festzulegen oder zu bearbeiten. Hierzu müssen Sie eine Klasse erstellen, die von der <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>-Schnittstelle erbt. Diese Klasse muss die <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin.Initialize*>-Methode dieser Schnittstelle implementieren. Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>.
 
-> [!NOTE]
+> [!TIP]
 > Sie können auch Plug-Ins für Webleistungstests erstellen. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen eines Webleistungstest-Plug-Ins](../test/how-to-create-a-web-performance-test-plug-in.md)
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="to-create-a-load-test-plug-in-by-using-visual-c"></a>So erstellen Sie ein Auslastungstest-Plug-In mit Visual C#
+<!-- markdownlint-disable MD003 MD020 -->
+## <a name="to-create-a-load-test-plug-in-in-c"></a>So erstellen Sie ein Auslastungstest-Plug-In in C#
+<!-- markdownlint-enable MD003 MD020 -->
 
-1.  Öffnen Sie ein Webleistungs- und Auslastungstestprojekt, das einen Webleistungstest enthält.
+1. Öffnen Sie ein Webleistungs- und Auslastungstestprojekt, das einen Webleistungstest enthält.
 
-2.  Fügen Sie dem Testprojekt einen Auslastungstest hinzu, und konfigurieren Sie ihn für die Ausführung eines Webleistungstests.
+2. Fügen Sie dem Testprojekt einen Auslastungstest hinzu, und konfigurieren Sie ihn für die Ausführung eines Webleistungstests.
 
      Weitere Informationen finden Sie unter [Schnellstart: Erstellen eines Auslastungstestprojekts](../test/quickstart-create-a-load-test-project.md).
 
-3.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe, und wählen Sie **Hinzufügen** und anschließend **Neues Projekt** aus.
+3. Fügen Sie der Projektmappe ein neues **Klassenbibliotheksprojekt** hinzu. (Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe, und wählen Sie **Hinzufügen** und anschließend **Neues Projekt** aus.)
 
-     Das Dialogfeld **Neues Projekt hinzufügen** wird angezeigt.
+4. Klicken Sie im **Projektmappen-Explorer** in der neuen Klassenbibliothek mit der rechten Maustaste auf den Ordner **Verweise**, und wählen Sie **Verweis hinzufügen** aus.
 
-4.  Wählen Sie unter **Installierte Vorlagen** den Eintrag **Visual C#** aus.
+   Das Dialogfeld **Verweis hinzufügen** wird angezeigt.
 
-5.  Wählen Sie in der Liste der Vorlagen den Eintrag **Klassenbibliothek** aus.
+5. Klicken Sie auf die Registerkarte **.NET**, scrollen Sie nach unten, und wählen Sie dann **Microsoft.VisualStudio.QualityTools.LoadTestFramework** aus.
 
-6.  Geben Sie im Textfeld **Name** einen Namen für die Klasse ein.
+6. Klicken Sie auf **OK**.
 
-7.  Klicken Sie auf **OK**.
+   Der Verweis auf **Microsoft.VisualStudio.QualityTools.LoadTestFramework** wird zum Ordner **Verweis** im **Projektmappen-Explorer** hinzugefügt.
 
-8.  Das neue Klassenbibliotheksprojekt wird zum **Projektmappen-Explorer** hinzugefügt, und die neue Klasse wird im **Code-Editor** angezeigt.
+7. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den obersten Knoten des Webleistungs- und Auslastungstestprojekts, das den Auslastungstest enthält, zu dem Sie das Plug-In für Auslastungstests hinzufügen möchten. Klicken Sie anschließend auf **Verweis hinzufügen**.
 
-9. Klicken Sie im **Projektmappen-Explorer** in der neuen Klassenbibliothek mit der rechten Maustaste auf den Ordner **Verweise**, und wählen Sie **Verweis hinzufügen** aus.
+   Das Dialogfeld **Verweis hinzufügen** wird angezeigt.
 
-10. Das Dialogfeld **Verweis hinzufügen** wird angezeigt.
+8. Klicken Sie auf die Registerkarte **Projekte**, und wählen Sie das Klassenbibliotheksprojekt aus.
 
-11. Klicken Sie auf die Registerkarte **.NET**, scrollen Sie nach unten, und wählen Sie dann **Microsoft.VisualStudio.QualityTools.LoadTestFramework** aus.
+9. Klicken Sie auf **OK**.
 
-12. Klicken Sie auf **OK**.
+10. Fügen Sie im **Code-Editor** eine `using`-Anweisung für den <xref:Microsoft.VisualStudio.TestTools.LoadTesting>-Namespace hinzu.
 
-     Der Verweis auf **Microsoft.VisualStudio.QualityTools.LoadTestFramework** wird zum Ordner **Verweis** im **Projektmappen-Explorer** hinzugefügt.
+11. Implementieren Sie die <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>-Schnittstelle für die Klasse, die im Klassenbibliotheksprojekt erstellt wurde. Beachten Sie hierzu die Beispielimplementierung im folgenden Abschnitt.
 
-13. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den obersten Knoten des Webleistungs- und Auslastungstestprojekts, das den Auslastungstest enthält, zu dem Sie das Plug-In für Auslastungstests hinzufügen möchten. Klicken Sie anschließend auf **Verweis hinzufügen**.
+12. Nachdem Sie den Code verfasst haben, erstellen Sie das neue Projekt.
 
-14. Das Dialogfeld **Verweis hinzufügen** wird angezeigt.
-
-15. Klicken Sie auf die Registerkarte **Projekte**, und wählen Sie das Klassenbibliotheksprojekt aus.
-
-16. Klicken Sie auf **OK**.
-
-17. Fügen Sie im **Code-Editor** eine `using`-Anweisung für den <xref:Microsoft.VisualStudio.TestTools.LoadTesting>-Namespace hinzu.
-
-18. Implementieren Sie die <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>-Schnittstelle für die Klasse, die im Klassenbibliotheksprojekt erstellt wurde. Beachten Sie hierzu die Beispielimplementierung im folgenden Abschnitt.
-
-19. Nachdem Sie den Code verfasst haben, erstellen Sie das neue Projekt.
-
-20. Klicken Sie mit der rechten Maustaste auf den obersten Knoten des Auslastungstests, und klicken Sie anschließend auf **Auslastungstest-Plug-In hinzufügen**.
+13. Klicken Sie mit der rechten Maustaste auf den obersten Knoten des Auslastungstests, und klicken Sie anschließend auf **Auslastungstest-Plug-In hinzufügen**.
 
      Das Dialogfeld **Auslastungstest-Plug-In hinzufügen** wird angezeigt.
 
-21. Wählen Sie unter **Plug-In auswählen** die Klasse des Auslastungstest-Plug-Ins aus.
+14. Wählen Sie unter **Plug-In auswählen** die Klasse des Auslastungstest-Plug-Ins aus.
 
-22. Legen Sie im Bereich **Eigenschaften für das ausgewählte Plug-In** die Anfangswerte fest, die das Plug-In zur Laufzeit verwenden soll.
+15. Legen Sie im Bereich **Eigenschaften für das ausgewählte Plug-In** die Anfangswerte fest, die das Plug-In zur Laufzeit verwenden soll.
 
     > [!NOTE]
     > Sie können beliebig viele Plug-In-Eigenschaften verfügbar machen. Die Eigenschaften müssen dazu lediglich öffentlich, festlegbar und von einem Basistyp (z. B. "Integer", "Boolean" oder "String") sein. Sie können die Eigenschaften des Webleistungstest-Plug-Ins auch zu einem späteren Zeitpunkt im Fenster **Eigenschaften** ändern.
 
-23. Klicken Sie auf **OK**.
+16. Klicken Sie auf **OK**.
 
      Das Plug-In wird dem Ordner **Auslastungstest-Plug-Ins** hinzugefügt.
 
@@ -97,8 +86,8 @@ Sie können ein Auslastungstest-Plug-In erstellen, um während des Auslastungste
     >
     > Ein solcher Fehler wird verursacht, wenn Sie an einem der Plug-Ins Codeänderungen vornehmen und eine neue DLL-Version **(Version=0.0.0.0)** erstellen, während das Plug-In weiterhin auf die ursprüngliche Plug-In-Version verweist. Um dieses Problem zu beheben, führen Sie folgende Schritte aus:
     >
-    > 1.  Im Webleistungs- und Auslastungstestprojekt wird in Verweisen eine Warnung angezeigt. Entfernen Sie den Verweis auf die Plug-In-DLL, und fügen Sie ihn wieder hinzu.
-    > 2.  Entfernen Sie das Plug-In aus dem Test oder vom entsprechenden Speicherort, und fügen Sie es dann wieder hinzu.
+    > 1. Im Webleistungs- und Auslastungstestprojekt wird in Verweisen eine Warnung angezeigt. Entfernen Sie den Verweis auf die Plug-In-DLL, und fügen Sie ihn wieder hinzu.
+    > 2. Entfernen Sie das Plug-In aus dem Test oder vom entsprechenden Speicherort, und fügen Sie es dann wieder hinzu.
 
 ## <a name="example"></a>Beispiel
 
@@ -106,7 +95,6 @@ Im folgenden Code wird ein Auslastungstest-Plug-In dargestellt, das nach dem Auf
 
 > [!NOTE]
 > Für den folgenden Code müssen Sie einen Verweis auf System.Windows.Forms hinzufügen.
-
 
 ```csharp
 using System;
@@ -153,21 +141,21 @@ namespace LoadTestPluginTest
 
 Es gibt acht Ereignisse, die bei einem Auslastungstest auftreten und im Auslastungstest-Plug-In behandelt werden können, um benutzerdefinierten Code während eines Auslastungstests auszuführen. Im Folgenden werden die Ereignisse aufgelistet, die einen Zugriff auf verschiedene Phasen des Auslastungstestlaufs ermöglichen:
 
--   <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.LoadTestStarting>
+- <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.LoadTestStarting>
 
--   <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.LoadTestFinished>
+- <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.LoadTestFinished>
 
--   <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.LoadTestWarmupComplete>
+- <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.LoadTestWarmupComplete>
 
--   <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.TestStarting>
+- <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.TestStarting>
 
--   <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.TestFinished>
+- <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.TestFinished>
 
--   <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.ThresholdExceeded>
+- <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.ThresholdExceeded>
 
--   <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.Heartbeat>
+- <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.Heartbeat>
 
--   <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.LoadTestAborted>
+- <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.LoadTestAborted>
 
 ## <a name="see-also"></a>Siehe auch
 

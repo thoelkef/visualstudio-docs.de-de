@@ -1,25 +1,22 @@
 ---
 title: Informationen zu domänenspezifischen Sprachen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language
 ms.assetid: 29e5b6f2-ece4-4f3b-ab08-5f957418702f
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6cddf51705758d046ab66319d6ac6295f3a4b057
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 0ddfc51c54c04ad0d79d7ef180a027cbd253ac09
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894520"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043506"
 ---
 # <a name="about-domain-specific-languages"></a>Informationen zu domänenspezifischen Sprachen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,15 +62,15 @@ Im Gegensatz zu einer Sprache wie c# oder UML-eine domänenspezifische Sprache (
 ## <a name="aspects-of-graphical-domain-specific-development"></a>Aspekte der Entwicklung von Grafischen domänenspezifische  
  Eine grafische einer domänenspezifischen Sprache muss es sich um die folgenden Funktionen enthalten:  
   
--   Notation  
+- Notation  
   
--   Domänenmodell  
+- Domänenmodell  
   
--   Artefakt-Generierung  
+- Artefakt-Generierung  
   
--   Serialisierung  
+- Serialisierung  
   
--   Integration in Visual Studio  
+- Integration in Visual Studio  
   
 ### <a name="notation"></a>Notation  
  Eine domänenspezifische Sprache muss es sich um einen relativ kleinen Satz von Elementen verfügen, leicht definiert und erweitert, um die Darstellung einer domänenspezifischen-Konstrukte werden können. Eine Notation besteht aus Formen, die die Elemente darstellen, und Connectors, die die Beziehungen zwischen Elementen, die auf einer Oberfläche grafisches Diagramm darstellen. In [!INCLUDE[dsl](../includes/dsl-md.md)], die Formen erweitert und verbessert, um die Elemente der domänenspezifischen Sprache darstellen werden können.  
@@ -95,30 +92,27 @@ Im Gegensatz zu einer Sprache wie c# oder UML-eine domänenspezifische Sprache (
 ## <a name="benefits-of-domain-specific-development"></a>Vorteile der Entwicklung von domänenspezifischen  
  Eine domänenspezifische Sprache, bieten die folgenden Vorteile:  
   
--   Enthält die Konstrukte, die den Problembereich genau entsprechen.  
+- Enthält die Konstrukte, die den Problembereich genau entsprechen.  
   
      Im Gegensatz zu den allgemeinen Sprachen besteht aus eine domänenspezifischen Sprache von Elementen und Beziehungen, die direkt auf die Logik der den Problembereich darstellen. Beispielsweise muss eine Versicherungspolice-Anwendung Elemente für Richtlinien und die Ansprüche enthalten. Eine domänenspezifische Sprache erleichtert das Entwerfen der Anwendung, und suchen und beheben Sie Fehler Logik.  
   
--   Können nicht-Entwickler und Personen, die nicht die Domäne den Gesamtentwurf verstehen kennen.  
+- Können nicht-Entwickler und Personen, die nicht die Domäne den Gesamtentwurf verstehen kennen.  
   
      Mit einer grafischen einer domänenspezifischen Sprache, können Sie eine visuelle Darstellung der Domäne erstellen, damit nicht-Entwickler ganz einfach das Design der Anwendung nachvollziehen können.  
   
--   Ist es einfacher, einen Prototyp der endgültigen Anwendung zu erstellen.  
+- Ist es einfacher, einen Prototyp der endgültigen Anwendung zu erstellen.  
   
      Entwickler können den Code verwenden, den ihr Modell generiert wird, um einen prototypenanwendung zu erstellen, die sie für Clients anzeigen können.  
   
 ## <a name="the-process-of-domain-specific-development"></a>Der Prozess der Entwicklung von domänenspezifischen  
  Die meisten Softwareentwicklungsteams, die einer domänenspezifischen Sprachen verwenden, gehen Sie zum Erstellen und verwenden ihre Modelle:  
   
--   Das Team unterscheidet es sich um die Variablen Teile der Domäne aus den Teilen, die sich nie ändern.  
+- Das Team unterscheidet es sich um die Variablen Teile der Domäne aus den Teilen, die sich nie ändern.  
   
--   Die Entwickler Schreiben von Code für die feste Bestandteile und Erweiterungspunkte für die Variablen Teile lassen.  
+- Die Entwickler Schreiben von Code für die feste Bestandteile und Erweiterungspunkte für die Variablen Teile lassen.  
   
--   Der Entwicklungsleiter für die Software oder der Architekt erstellt eine domänenspezifische Sprache, die die Entwurfsmuster festen Teile der Domäne und die Erweiterungspunkte für die Variablen Teile umfasst.  
+- Der Entwicklungsleiter für die Software oder der Architekt erstellt eine domänenspezifische Sprache, die die Entwurfsmuster festen Teile der Domäne und die Erweiterungspunkte für die Variablen Teile umfasst.  
   
--   Der Entwicklungsleiter für die Software oder der Architekt stellt die Entwickler von den verschiedenen Anwendungen, die das Team erstellt die Domain-Specific Languge bereit.  
+- Der Entwicklungsleiter für die Software oder der Architekt stellt die Entwickler von den verschiedenen Anwendungen, die das Team erstellt die Domain-Specific Languge bereit.  
   
--   Jeder Entwickler erstellt ein Modell, das für die jeweilige Anwendung gilt.
-
-
-
+- Jeder Entwickler erstellt ein Modell, das für die jeweilige Anwendung gilt.

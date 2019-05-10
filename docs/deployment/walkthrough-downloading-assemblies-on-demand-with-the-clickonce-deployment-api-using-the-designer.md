@@ -1,8 +1,6 @@
 ---
-title: 'Exemplarische Vorgehensweise: Bedarfsgerechtes Herunterladen von Assemblys bei Bedarf mit der API, die mithilfe des Designers für die ClickOnce-Bereitstellung | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Exemplarische Vorgehensweise: Herunterladen von Assemblys bei Bedarf mit der API, die mithilfe des Designers für die ClickOnce-Bereitstellung | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 59a0dd5f-1cab-4f2f-b780-0ab7399905d5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20df3172b2745a50f697b09ffe0bf95eaad4f39f
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: MTE95
+ms.openlocfilehash: 3388e275385f94b4fcd9a1f0091de6ada2d85108
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389000"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406070"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Exemplarische Vorgehensweise: Herunterladen von Assemblys bei Bedarf mit der API, die mithilfe des Designers für die ClickOnce-Bereitstellung
 Standardmäßig werden alle Assemblys, die in einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung enthalten sind, beim ersten Ausführen der Anwendung heruntergeladen. Allerdings gibt es möglicherweise Teile der Anwendung, die von einer begrenzten Anzahl von Benutzern verwendet werden. In diesem Fall soll eine Assembly erst heruntergeladen werden, wenn eine der in ihr definierten Typen erstellt wird. Die folgende exemplarische Vorgehensweise bietet Hinweise zum Markieren bestimmter Assemblys in der Anwendung als „optional“ sowie zum Herunterladen dieser Assemblys, indem Sie Klassen im <xref:System.Deployment.Application> -Namespace verwenden, wenn diese von der Common Language Runtime angefordert werden.
@@ -33,7 +31,7 @@ Standardmäßig werden alle Assemblys, die in einer [!INCLUDE[ndptecclick](../de
 > Die Anwendung muss mit voller Vertrauenswürdigkeit ausgeführt werden, um dieses Verfahren zu verwenden.
 
 > [!NOTE]
-> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Einstellungen zurücksetzen](../ide/environment-settings.md#reset-settings).
+> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Reset settings (Zurücksetzen der Einstellungen)](../ide/environment-settings.md#reset-settings).
 
 ## <a name="create-the-projects"></a>Erstellen Sie die Projekte
 
@@ -42,7 +40,7 @@ Standardmäßig werden alle Assemblys, die in einer [!INCLUDE[ndptecclick](../de
 1. Erstellen Sie ein neues Windows Forms-Projekt in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Zeigen Sie im Menü **Datei** auf die Option **Hinzufügen**, und klicken Sie anschließend auf **Neues Projekt**. Wählen Sie ein **Klassenbibliothek** -Projekt im Dialogfeld aus, und nennen Sie es `ClickOnceLibrary`.
 
    > [!NOTE]
-   >  In Visual Basic empfiehlt es sich, dass Sie die Projekteigenschaften bearbeiten, um den Stammnamespace für dieses Projekt zu `Microsoft.Samples.ClickOnceOnDemand` oder dem Namespace Ihrer Wahl zu ändern. Der Einfachheit halber befinden sich die beiden Projekte in dieser exemplarischen Vorgehensweise im selben Namespace.
+   > In Visual Basic empfiehlt es sich, dass Sie die Projekteigenschaften bearbeiten, um den Stammnamespace für dieses Projekt zu `Microsoft.Samples.ClickOnceOnDemand` oder dem Namespace Ihrer Wahl zu ändern. Der Einfachheit halber befinden sich die beiden Projekte in dieser exemplarischen Vorgehensweise im selben Namespace.
 
 2. Definieren Sie eine Klasse mit dem Namen `DynamicClass` mit einer einzelnen Eigenschaft mit dem Namen `Message`.
 
@@ -52,7 +50,7 @@ Standardmäßig werden alle Assemblys, die in einer [!INCLUDE[ndptecclick](../de
 3. Wählen Sie das Windows Forms-Projekt im **Projektmappen-Explorer**aus. Fügen Sie einen Verweis zu einer <xref:System.Deployment.Application> -Assembly und einen Projektverweis zum `ClickOnceLibrary` -Projekt hinzu.
 
    > [!NOTE]
-   >  In Visual Basic empfiehlt es sich, dass Sie die Projekteigenschaften bearbeiten, um den Stammnamespace für dieses Projekt zu `Microsoft.Samples.ClickOnceOnDemand` oder dem Namespace Ihrer Wahl zu ändern. Der Einfachheit halber befinden sich die beiden Projekte in dieser exemplarischen Vorgehensweise im selben Namespace.
+   > In Visual Basic empfiehlt es sich, dass Sie die Projekteigenschaften bearbeiten, um den Stammnamespace für dieses Projekt zu `Microsoft.Samples.ClickOnceOnDemand` oder dem Namespace Ihrer Wahl zu ändern. Der Einfachheit halber befinden sich die beiden Projekte in dieser exemplarischen Vorgehensweise im selben Namespace.
 
 4. Klicken Sie mit der rechten Maustaste auf das Formular, klicken Sie anschließend auf **Code anzeigen** , und fügen Sie dem Formular den folgenden Verweis hinzu.
 
@@ -73,15 +71,15 @@ Standardmäßig werden alle Assemblys, die in einer [!INCLUDE[ndptecclick](../de
 
 ### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-visual-studio"></a>So markieren Sie Assemblys in der ClickOnce-Anwendung mithilfe von Visual Studio als optional
 
-1.  Klicken Sie im Windows Forms-Projekt in den **Projektmappen-Explorer** , und klicken Sie auf **Eigenschaften**. Wählen Sie die Registerkarte **Veröffentlichen** aus.
+1. Klicken Sie im Windows Forms-Projekt in den **Projektmappen-Explorer** , und klicken Sie auf **Eigenschaften**. Wählen Sie die Registerkarte **Veröffentlichen** aus.
 
-2.  Klicken Sie auf die Schaltfläche **Anwendungsdateien** .
+2. Klicken Sie auf die Schaltfläche **Anwendungsdateien** .
 
-3.  Suchen Sie die Sammlung für ClickOnceLibrary.dll. Legen Sie das Dropdownfeld **Veröffentlichungsstatus** auf **Einschließen**fest.
+3. Suchen Sie das Listing für *ClickOnceLibrary.dll*. Legen Sie das Dropdownfeld **Veröffentlichungsstatus** auf **Einschließen**fest.
 
-4.  Erweitern Sie das Dropdownfeld **Gruppe** , und wählen Sie **Neu**aus. Geben Sie den Namen `ClickOnceLibrary` als den neuen Gruppennamen ein.
+4. Erweitern Sie das Dropdownfeld **Gruppe** , und wählen Sie **Neu**aus. Geben Sie den Namen `ClickOnceLibrary` als den neuen Gruppennamen ein.
 
-5.  Weiterhin Veröffentlichen der Anwendung, wie in beschrieben [Vorgehensweise: veröffentlichen eine ClickOnce-Anwendung, die mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+5. Weiterhin Veröffentlichen der Anwendung, wie in beschrieben [Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
 ### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-manifest-generation-and-editing-tool--graphical-client-mageuiexe"></a>So markieren Sie Assemblys in der ClickOnce-Anwendung mithilfe von Manifest Generation and Editing Tool— Graphical Client (MageUI.exe) als optional
 
@@ -93,7 +91,7 @@ Standardmäßig werden alle Assemblys, die in einer [!INCLUDE[ndptecclick](../de
 
 ## <a name="test-the-new-assembly"></a>Testen Sie die neue assembly
 
-So testen Sie die bedarfsabhängige Assembly
+So testen Sie die bedarfsabhängige Assembly:
 
 1. Starten Sie Ihre Anwendung, die mit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]bereitgestellt wurde.
 

@@ -1,14 +1,9 @@
 ---
 title: 'Schnellstart: Debuggen von HTML und CSS | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.DomExplorer
 dev_langs:
@@ -25,13 +20,13 @@ ms.assetid: 6d156cff-36c6-425a-acf8-e1f02d4f7869
 caps.latest.revision: 104
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 710bafe2383d95358ba06a287a300d9aea7baf66
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1820b1c9838e5558ea6ee96f2abdbcf88a24e4b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729977"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446129"
 ---
 # <a name="quickstart-debug-html-and-css"></a>Schnellstart: Debuggen von HTML und CSS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,11 +57,11 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
   Informationen zu anderen JavaScript-Debugfunktionen, z. B. mithilfe von JavaScript-Konsolenfenster ein, und Festlegen von Haltepunkten, finden Sie unter [Schnellstart: Debuggen von JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) und [Debuggen von apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
-##  <a name="InspectingDOM"></a> Überprüfen des Live-DOM  
+## <a name="InspectingDOM"></a> Überprüfen des Live-DOM  
  Im Dom Explorer wird eine Ansicht der gerenderten Seite angezeigt. Zudem können Sie den Dom Explorer verwenden, um Werte zu ändern und die Ergebnisse sofort anzuzeigen. Dadurch können Sie Änderungen testen, ohne den Debugger zu beenden und neu zu starten. Bei dieser Methode wird der Quellcode des Projekts beim Interagieren mit der Seite nicht geändert. Daher nehmen Sie die Änderungen nach dem Auffinden der gewünschten Codekorrekturen am Quellcode vor.  
   
 > [!TIP]
->  Um den Debugger nicht zu beenden und neu zu starten, wenn Sie Änderungen am Quellcode vornehmen, können Sie die App mithilfe der Schaltfläche **Windows-App aktualisieren** auf der Symbolleiste "Debuggen" (oder durch Drücken der F4-TASTE) anschließend aktualisieren. Weitere Informationen finden Sie unter [Aktualisieren einer app (JavaScript)](../debugger/refresh-an-app-javascript.md).  
+> Um den Debugger nicht zu beenden und neu zu starten, wenn Sie Änderungen am Quellcode vornehmen, können Sie die App mithilfe der Schaltfläche **Windows-App aktualisieren** auf der Symbolleiste "Debuggen" (oder durch Drücken der F4-TASTE) anschließend aktualisieren. Weitere Informationen finden Sie unter [Aktualisieren einer app (JavaScript)](../debugger/refresh-an-app-javascript.md).  
   
  Sie können den Dom Explorer für folgende Aufgaben verwenden:  
   
@@ -76,15 +71,15 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
 - Überprüfung, wie CSS-Formatvorlagen auf Seitenelemente angewendet wurden und Verfolgung der angewendeten Regeln.  
   
-  Beim Debuggen von Apps müssen Sie häufig Elemente im DOM Explorer auswählen. Wenn Sie ein Element auswählen, werden die auf den Registerkarten des Live-DOM rechts angezeigten Werte automatisch aktualisiert, sodass diese dem im DOM Explorer ausgewählten Element entsprechen. Zu diesen Registerkarten gehören **Formatvorlagen**, **Berechnet**, **Layout**. Für Windows Store-Apps werden auch die Registerkarten **Ereignisse** und **Änderungen** unterstützt. Weitere Informationen über das Auswählen von Elementen finden Sie unter [Selecting elements](#SelectingElements).  
+  Beim Debuggen von Apps müssen Sie häufig Elemente im DOM Explorer auswählen. Wenn Sie ein Element auswählen, werden die auf den Registerkarten des Live-DOM rechts angezeigten Werte automatisch aktualisiert, sodass diese dem im DOM Explorer ausgewählten Element entsprechen. Dies sind die Registerkarten: **Stile**, **berechnet**, **Layout**. Für Windows Store-Apps werden auch die Registerkarten **Ereignisse** und **Änderungen** unterstützt. Weitere Informationen über das Auswählen von Elementen finden Sie unter [Selecting elements](#SelectingElements).  
   
 > [!TIP]
->  Wenn das Fenster "DOM Explorer" geschlossen ist, wählen Sie **Debuggen**>**Windows** > **DOM Explorer** aus, um es erneut zu öffnen. Das Fenster wird nur während einer Skriptdebugsitzung angezeigt.  
+> Wenn das Fenster "DOM Explorer" geschlossen ist, wählen Sie **Debuggen**>**Windows** > **DOM Explorer** aus, um es erneut zu öffnen. Das Fenster wird nur während einer Skriptdebugsitzung angezeigt.  
   
  In der folgenden Prozedur wird eine App mithilfe vom DOM Explorer interaktiv debuggt. Sie erstellen eine Anwendung, die ein `FlipView` -Steuerelement verwendet und debuggen diese anschließend. Die App enthält mehrere Fehler.  
   
 > [!WARNING]
->  Die folgende Beispiel-App ist eine Windows Store-App. Die gleichen Funktionen werden für Cordova unterstützt. Die App an sich ist jedoch anders.  
+> Die folgende Beispiel-App ist eine Windows Store-App. Die gleichen Funktionen werden für Cordova unterstützt. Die App an sich ist jedoch anders.  
   
 #### <a name="to-debug-by-inspecting-the-live-dom"></a>So debuggen Sie durch Überprüfen des Live-DOM  
   
@@ -188,14 +183,14 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 10. Wechseln Sie zu Visual Studio, und wählen Sie die Registerkarte **DOM Explorer** aus.  
   
     > [!TIP]
-    >  Sie können ALT+TAB oder F12 drücken, um zwischen Visual Studio und der ausgeführten App zu wechseln.  
+    > Sie können ALT+TAB oder F12 drücken, um zwischen Visual Studio und der ausgeführten App zu wechseln.  
   
 11. Wählen Sie im Fenster „DOM Explorer“ das DIV-Element für den Abschnitt aus, der über die ID `"fView"`verfügt. Verwenden Sie die Pfeiltasten, um das richtige DIV-Element anzuzeigen und auszuwählen. (Mit dem Schlüssel „Cursor nach rechts“ können Sie die untergeordneten Elemente eines Elements anzeigen.)  
   
      ![DOM Explorer](../debugger/media/js-dom-explorer.png "JS_DOM_Explorer")  
   
     > [!TIP]
-    >  Sie können das DIV-Element auch in der linken unteren Ecke des JavaScript-Konsolenfensters auswählen, indem Sie an der >> Eingabeeingabeaufforderung `select(fView)` eingeben und anschließend die EINGABETASTE drücken.  
+    > Sie können das DIV-Element auch in der linken unteren Ecke des JavaScript-Konsolenfensters auswählen, indem Sie an der >> Eingabeeingabeaufforderung `select(fView)` eingeben und anschließend die EINGABETASTE drücken.  
   
      Die Werte, die auf den Registerkarten rechts im DOM Explorer-Fenster zu sehen sind, werden automatisch aktualisiert, sodass diese dem aktuellen Element im DOM Explorer entsprechen.  
   
@@ -214,7 +209,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
 15. Wählen Sie `width: 100px;height: 100px;`aus, drücken Sie die ENTF-TASTE und drücken Sie die EINGABETASTE. Nachdem Sie die EINGABETASTE gedrückt haben, werden die neuen Werte sofort im Simulator oder im Windows Phone-Emulator dargestellt, obwohl die Debugsitzung nicht beendet wurde.  
   
     > [!IMPORTANT]
-    >  Ebenso wie die Attributwerte im Fenster "DOM Explorer" können Sie auch Werte aktualisieren, die auf den Registerkarten **Formatvorlagen**, **Berechnet**und **Layout** angezeigt werden. Weitere Informationen finden Sie unter [Debuggen von CSS-Stilen mithilfe von DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md) und [Debuggen von Layout mithilfe von DOM Explorer](../debugger/debug-layout-using-dom-explorer.md).  
+    > Ebenso wie die Attributwerte im Fenster "DOM Explorer" können Sie auch Werte aktualisieren, die auf den Registerkarten **Formatvorlagen**, **Berechnet**und **Layout** angezeigt werden. Weitere Informationen finden Sie unter [Debuggen von CSS-Stilen mithilfe von DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md) und [Debuggen von Layout mithilfe von DOM Explorer](../debugger/debug-layout-using-dom-explorer.md).  
   
 16. Wechseln Sie zur App, indem Sie den Simulator bzw. Windows Phone-Emulator auswählen oder ALT+TAB drücken.  
   
@@ -236,7 +231,7 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
     - Für den Simulator: 320 px (Offset) und 320 px (Rand).  
   
-    - Für den Windows Phone-Emulator: 100 px (Offset) und 100 px (Rand).  
+    - Für Windows Phone-Emulator: 100 px (Offset) und 100 px (Rand).  
   
       Die folgende Abbildung zeigt die Registerkarte **Layout** bei Verwendung des Windows Phone-Emulators (100 px Offset und Rand).  
   
@@ -254,17 +249,17 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   
 #### <a name="to-refresh-your-app-while-debugging"></a>So aktualisieren Sie die App beim Debuggen  
   
-1.  Wechseln Sie bei ausgeführter Anwendung zu Visual Studio.  
+1. Wechseln Sie bei ausgeführter Anwendung zu Visual Studio.  
   
-2.  Öffnen Sie "default.html", und bearbeiten Sie den Quellcode, indem Sie die Höhe und die Breite des `"fView"` -DIV-Elements auf 100 % ändern.  
+2. Öffnen Sie "default.html", und bearbeiten Sie den Quellcode, indem Sie die Höhe und die Breite des `"fView"` -DIV-Elements auf 100 % ändern.  
   
-3.  Klicken Sie auf der Debug-Symbolleiste auf die Schaltfläche **Windows-App aktualisieren** (oder drücken Sie F4). Die Schaltfläche sieht wie folgt aus: ![Schaltfläche "Aktualisieren von Windows-app"](../debugger/media/js-refresh.png "JS_Refresh").  
+3. Klicken Sie auf der Debug-Symbolleiste auf die Schaltfläche **Windows-App aktualisieren** (oder drücken Sie F4). Die Schaltfläche sieht folgendermaßen aus: ![Windows-app-Schaltfläche "Aktualisieren"](../debugger/media/js-refresh.png "JS_Refresh").  
   
      Die Seiten der App werden erneut geladen, und der Simulator oder Windows Phone-Emulator wechselt in den Vordergrund zurück.  
   
      Weitere Informationen zur Aktualisierungsfunktion finden Sie unter [Aktualisieren einer app (JavaScript)](../debugger/refresh-an-app-javascript.md).  
   
-##  <a name="SelectingElements"></a> Selecting elements  
+## <a name="SelectingElements"></a> Selecting elements  
  Sie können beim Debuggen einer App DOM-Elemente auf drei Arten auswählen:  
   
 - Durch das Klicken auf Elemente direkt im DOM Explorer-Fenster (oder mithilfe der Pfeiltasten)  
@@ -286,32 +281,29 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
   Wenn Sie die Hervorhebung von Elementen ausgewählt haben, werden Elemente, auf die Sie im Simulator zeigen, hervorgehoben. Die Farben für hervorgehobene Elemente entsprechen dem Feldmodell, das auf der Registerkarte **Layout** im DOM Explorer angezeigt wird.  
   
 > [!NOTE]
->  Im Windows Phone-Emulator wird das Hervorheben von Elementen durch Zeigen mit dem Mauszeiger nur teilweise unterstützt.  
+> Im Windows Phone-Emulator wird das Hervorheben von Elementen durch Zeigen mit dem Mauszeiger nur teilweise unterstützt.  
   
  Ein Beispiel für die zum Auswählen von Elementen mithilfe der **Select-Element** Schaltfläche, finden Sie unter [Debuggen von CSS-Stilen mithilfe von DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md).  
   
-##  <a name="BrowserSupport"></a> Unterstützung für Browser und Plattform  
+## <a name="BrowserSupport"></a> Unterstützung für Browser und Plattform  
  Die Visual Studio-Tools für JavaScript, der DOM Explorer sowie das JavaScript-Konsolenfenster werden auf folgenden Plattformen unterstützt:  
   
 - [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] und Windows Phone Store-Apps mit JavaScript und HTML  
   
-- Internet Explorer 11 wird unter [!INCLUDE[win81](../includes/win81-md.md)] ausgeführt  
+- Internet Explorer 11 wird unter [!INCLUDE[win81](../includes/win81-md.md)]ausgeführt  
   
 - Internet Explorer 10 wird unter [!INCLUDE[win8](../includes/win8-md.md)]ausgeführt  
   
-  Klicken Sie [hier](http://go.microsoft.com/fwlink/?LinkID=232448) , um [!INCLUDE[win8](../includes/win8-md.md)] und Visual Studio herunterzuladen.  
+  Klicken Sie [hier](https://developer.microsoft.com/windows/downloads/sdk-archive) , um [!INCLUDE[win8](../includes/win8-md.md)] und Visual Studio herunterzuladen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
  [Debuggen von CSS-Stilen mithilfe von DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md)   
  [Debuggen von Layout mithilfe von DOM Explorer](../debugger/debug-layout-using-dom-explorer.md)   
  [Anzeigen von DOM-Ereignislistenern](../debugger/view-dom-event-listeners.md)   
- [Aktualisieren einer app (JavaScript)](../debugger/refresh-an-app-javascript.md)   
+ [Aktualisieren einer App (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [Debuggen eines WebView-Steuerelements](../debugger/debug-a-webview-control.md)   
  [Tastenkombinationen](../debugger/keyboard-shortcuts-html-and-javascript.md)   
  [JavaScript Console commands](../debugger/javascript-console-commands.md)   
- [Debuggen von HTML, CSS und JavaScript-Beispielcode](../debugger/debug-html-css-and-javascript-sample-code.md)   
+ [Debuggen von Beispielcode für HTML, CSS und JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
  [Produktsupport und Barrierefreiheit](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
-
-
-

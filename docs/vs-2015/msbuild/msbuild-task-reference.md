@@ -1,14 +1,9 @@
 ---
 title: MSBuild-Aufgabenverweis | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -20,18 +15,17 @@ ms.assetid: b3144b27-a426-4259-b8ae-5f7991b202b6
 caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b6f1767ce1c572e1e3d8eacae8ba3a60f3593476
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 19fe581985ec173099790311517c0442a9c29c2f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193987"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662581"
 ---
 # <a name="msbuild-task-reference"></a>Referenz zu MSBuild-Aufgaben
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Aufgaben stellen den Code bereit, der während des Buildprozesses ausgeführt wird. Die Aufgaben in der folgenden Liste sind in [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] enthalten. Wenn [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] installiert wird, sind zusätzliche Aufgaben verfügbar, die für das Erstellen von [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]-Projekten verwendet werden. Weitere Informationen finden Sie unter [Visual C++-Aufgaben](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).  
   
  Zusätzlich zu den Parametern, die in den Themen in diesem Abschnitt aufgeführt sind, verfügt jeder Task ebenfalls über folgende Parameter:  
@@ -39,7 +33,7 @@ Aufgaben stellen den Code bereit, der während des Buildprozesses ausgeführt wi
 |Parameter|Beschreibung|  
 |---------------|-----------------|  
 |`Condition`|Optionaler `String` -Parameter.<br /><br /> Ein `Boolean`-Ausdruck, den die [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Engine verwendet, um zu bestimmen, ob diese Aufgabe ausgeführt wird. Informationen zu den Bedingungen, die von [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] unterstützt werden, finden Sie unter [Bedingungen](../msbuild/msbuild-conditions.md).|  
-|`ContinueOnError`|Optionaler Parameter. Kann einen oder mehrere der folgenden Werte enthalten:<br /><br /> -   **WarnAndContinue** oder **true**. Wenn eine Aufgabe fehlschlägt, werden nachfolgende Aufgabe im Element [Ziel](../msbuild/target-element-msbuild.md) und im Build weiterhin ausgeführt, und alle Fehler von der Aufgabe werden als Warnungen behandelt.<br />-   **ErrorAndContinue**. Wenn eine Aufgabe fehlschlägt, werden nachfolgende Aufgabe im Element `Target` und im Build weiterhin ausgeführt, und alle Fehler von der Aufgabe werden als Fehler behandelt.<br />-   **ErrorAndStop** oder **false** (Standard). Wenn eine Aufgabe fehlschlägt, werden die übrigen Aufgaben im Element `Target` und im Build nicht ausgeführt, und das komplette Element `Target` sowie der Build wird als fehlgeschlagen betrachtet.<br /><br /> Versionen von .NET Framework vor 4.5 unterstützten nur die Werte `true` und `false`.<br /><br /> Weitere Informationen finden Sie unter [Gewusst wie: Ignorieren von Fehlern in Aufgaben](../msbuild/how-to-ignore-errors-in-tasks.md).|  
+|`ContinueOnError`|Optionaler Parameter. Kann einen oder mehrere der folgenden Werte enthalten:<br /><br /> -   **WarnAndContinue** oder **true**. Wenn eine Aufgabe fehlschlägt, werden nachfolgende Aufgabe im Element [Ziel](../msbuild/target-element-msbuild.md) und im Build weiterhin ausgeführt, und alle Fehler von der Aufgabe werden als Warnungen behandelt.<br />-   **ErrorAndContinue**. Wenn eine Aufgabe fehlschlägt, werden nachfolgende Aufgabe im Element `Target` und im Build weiterhin ausgeführt, und alle Fehler von der Aufgabe werden als Fehler behandelt.<br />-   **ErrorAndStop** oder **false** (Standard). Wenn eine Aufgabe fehlschlägt, werden die übrigen Aufgaben im Element `Target` und im Build nicht ausgeführt, und das komplette Element `Target` sowie der Build wird als fehlgeschlagen betrachtet.<br /><br /> Versionen von .NET Framework vor 4.5 unterstützten nur die Werte `true` und `false`.<br /><br /> Weitere Informationen finden Sie unter [Vorgehensweise: Ignorieren von Fehlern in Aufgaben](../msbuild/how-to-ignore-errors-in-tasks.md).|  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Aufgabenbasisklasse](../msbuild/task-base-class.md)  
@@ -235,6 +229,3 @@ Aufgaben stellen den Code bereit, der während des Buildprozesses ausgeführt wi
  [MSBuild Reference](../msbuild/msbuild-reference.md)  (MSBuild-Referenz)  
  [Task Writing](../msbuild/task-writing.md)  (Schreiben von Aufgaben)  
  [Aufgaben](../msbuild/msbuild-tasks.md)
-
-
-

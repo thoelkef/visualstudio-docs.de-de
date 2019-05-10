@@ -10,38 +10,38 @@ helpviewer_keywords:
 - canceling form region display
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a7df2aef4348e95a30c0b14b26686764890b6abf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ad17041650324e597fb76925f521bb7fc2e9ce93
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849744"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967656"
 ---
 # <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>Vorgehensweise: Verhindern der Anzeige eines Formularbereichs in Outlook
-  Es gibt möglicherweise Situationen, in denen Sie nicht über Microsoft Office Outlook einen Formularbereich für ein bestimmtes Element anzeigen möchten. Wenn Sie ein Kontaktelement keine Geschäftsadresse enthält, können Sie beispielsweise einen Formularbereich verhindern, der zeigt den Speicherort des Unternehmens in einer Karte angezeigt werden.  
-  
- [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
-  
-## <a name="to-prevent-outlook-from-displaying-a-form-region"></a>Um zu verhindern, dass Outlook einen Formularbereich anzeigen  
-  
-1. Öffnen Sie die Codedatei für den Formularbereich ein, die, den Sie ändern möchten.  
-  
-2. Erweitern Sie die **Formularbereichsfactory** Codebereich.  
-  
-3. Fügen Sie Code in die `FormRegionInitializing` -Ereignishandler, der festlegt der <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> Eigenschaft der <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> -Klasse **"true"**.  
-  
-   In diesem Beispiel, wenn das Kontaktelement eine Adresse keinen enthält die <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> -Eigenschaftensatz auf **"true"**, und der Formularbereich wird nicht angezeigt.  
-  
-## <a name="example"></a>Beispiel  
+  Es gibt möglicherweise Situationen, in denen Sie nicht über Microsoft Office Outlook einen Formularbereich für ein bestimmtes Element anzeigen möchten. Wenn Sie ein Kontaktelement keine Geschäftsadresse enthält, können Sie beispielsweise einen Formularbereich verhindern, der zeigt den Speicherort des Unternehmens in einer Karte angezeigt werden.
+
+ [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
+
+## <a name="to-prevent-outlook-from-displaying-a-form-region"></a>Um zu verhindern, dass Outlook einen Formularbereich anzeigen
+
+1. Öffnen Sie die Codedatei für den Formularbereich ein, die, den Sie ändern möchten.
+
+2. Erweitern Sie die **Formularbereichsfactory** Codebereich.
+
+3. Fügen Sie Code in die `FormRegionInitializing` -Ereignishandler, der festlegt der <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> Eigenschaft der <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> -Klasse **"true"**.
+
+   In diesem Beispiel, wenn das Kontaktelement eine Adresse keinen enthält die <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> -Eigenschaftensatz auf **"true"**, und der Formularbereich wird nicht angezeigt.
+
+## <a name="example"></a>Beispiel
  [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
- [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]  
-  
-## <a name="see-also"></a>Siehe auch  
- [Erstellen von Outlook-Formularbereichen](../vsto/creating-outlook-form-regions.md)   
- [Exemplarische Vorgehensweise: Entwerfen eines Outlook-Formularbereichs](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [Vorgehensweise: Hinzufügen eines Formularbereichs zu einem Outlook-Add-in-Projekt](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
- [Exemplarische Vorgehensweise: Entwerfen eines Outlook-Formularbereichs](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [Exemplarische Vorgehensweise: Importieren Sie einen, der in Outlook entworfenen Formularbereich](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)  
+ [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]
+
+## <a name="see-also"></a>Siehe auch
+- [Erstellen von Outlook-Formularbereichen](../vsto/creating-outlook-form-regions.md)
+- [Exemplarische Vorgehensweise: Entwerfen eines Outlook-Formularbereichs](../vsto/walkthrough-designing-an-outlook-form-region.md)
+- [Vorgehensweise: Hinzufügen eines Formularbereichs zu einem Outlook-Add-in-Projekt](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
+- [Exemplarische Vorgehensweise: Entwerfen eines Outlook-Formularbereichs](../vsto/walkthrough-designing-an-outlook-form-region.md)
+- [Exemplarische Vorgehensweise: Importieren Sie einen, der in Outlook entworfenen Formularbereich](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)

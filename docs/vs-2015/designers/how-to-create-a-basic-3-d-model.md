@@ -1,42 +1,37 @@
 ---
-title: 'Vorgehensweise: Erstellen eines 3D-Basismodells | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Erstellen ein 3D-Basismodells | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 83d4069135adf37156457321b8ce15a254c9c27b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 834651f525ccb292f82d5cf0ab5a7068a1cf7f20
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825490"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108307"
 ---
-# <a name="how-to-create-a-basic-3-d-model"></a>Gewusst wie: Erstellen eines 3D-Basismodells
+# <a name="how-to-create-a-basic-3-d-model"></a>Vorgehensweise: Erstellen eines 3D-Basismodells
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In diesem Dokument wird gezeigt, wie der Modell-Editor zum Erstellen eines 3D-Basismodells verwendet wird.  
   
  In diesem Dokument werden die folgenden Aktivitäten veranschaulicht:  
   
--   Hinzufügen von Objekten in einer Szene  
+- Hinzufügen von Objekten in einer Szene  
   
--   Flächen und Kanten auswählen  
+- Flächen und Kanten auswählen  
   
--   Übertragen der Auswahl  
+- Übertragen der Auswahl  
   
--   Verwenden der Tools **Unterteilen von Flächen** und **Extrudieren von Flächen**  
+- Verwenden der Tools **Unterteilen von Flächen** und **Extrudieren von Flächen**  
   
--   Verwenden des Befehls **Triangulieren**  
+- Verwenden des Befehls **Triangulieren**  
   
 ## <a name="creating-a-basic-3-d-model"></a>Erstellen eines 3D-Basismodells  
  Sie können den Modell-Editor zum Erstellen und Ändern von 3D-Modellen und -Szenen für Ihre Spiele und Apps verwenden. Die folgenden Schritte zeigen, wie Sie den Modell-Editor verwenden, um ein vereinfachtes 3D-Modell eines Hauses zu erstellen. Ein vereinfachtes Modell kann als Ersatz für die endgültigen Grafikobjekte verwendet werden, die noch erstellt werden. Es dient als ein Gitter zur Kollisionserkennung oder als ein Modell mit niedrigen Details, das verwendet wird, wenn ein Objekt, das es darstellt, zu weit weg ist, um von detaillierterem Rendering zu profitieren.  
@@ -82,9 +77,6 @@ In diesem Dokument wird gezeigt, wie der Modell-Editor zum Erstellen eines 3D-Ba
    Im nächsten Schritt können Sie einen Shader auf diese 3D-Modell anwenden. Weitere Informationen finden Sie unter [Vorgehensweise: Anwenden eines Shaders auf ein 3D-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Modellieren eines 3D-Geländes](../designers/how-to-model-3-d-terrain.md)   
+ [Vorgehensweise: Modell 3D-Geländes](../designers/how-to-model-3-d-terrain.md)   
  [Modell-Editor](../designers/model-editor.md)   
  [Shader-Designer](../designers/shader-designer.md)
-
-
-

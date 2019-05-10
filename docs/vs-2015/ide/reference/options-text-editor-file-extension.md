@@ -1,14 +1,9 @@
 ---
 title: Optionen, Text-Editor, Dateierweiterung | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.toolsoptionspages.text_editor.file_extension
 helpviewer_keywords:
@@ -20,24 +15,23 @@ ms.assetid: 05298fc5-fc4e-4bb2-b942-1f7d2dcdff0f
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 953417bf6d3c89df452878a3070937f29112c67c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 10280b60c4ae929fce9a0ce563fb1d7cac3fd5f8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204125"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441345"
 ---
 # <a name="options-text-editor-file-extension"></a>Optionen, Text-Editor, Dateierweiterung
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Das Dialogfeld „Optionen“ ermöglicht Ihnen anzugeben, wie alle Dateien mit bestimmten Dateierweiterungen von der integrierten Entwicklungsumgebung (IDE) in Visual Studio behandelt werden. Für jede **Erweiterung**, die Sie eingeben, können Sie eine Bearbeitungsmöglichkeit auswählen. Dadurch können Sie auf den Editor oder Designer der integrierten Entwicklungsumgebung zugreifen, in dem Dokumente eines bestimmten Typs geöffnet werden. Wählen Sie zum Anzeigen dieser Optionen im Menü **Extras** **Optionen** aus, erweitern Sie den Knoten **Text-Editor**, und wählen Sie **Dateierweiterung** aus.  
   
  Wenn Sie eine Option „mit Codierung“ auswählen, wird ein Dialogfeld angezeigt, sobald Sie ein Dokument dieses Typs öffnen, in dem Sie ein Codierungsschema für dieses Dokument auswählen können. Dies ist nützlich, wenn Sie Versionen Ihrer Projektdokumente für die Verwendung auf verschiedenen Plattformen oder in verschiedenen Zielsprachen vorbereiten.  
   
 > [!NOTE]
->  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="uielement-list"></a>UIElement-Liste  
  **Erweiterung**  
@@ -63,6 +57,3 @@ Das Dialogfeld „Optionen“ ermöglicht Ihnen anzugeben, wie alle Dateien mit 
   
 ## <a name="see-also"></a>Siehe auch  
  [Gewusst wie: Verwalten von Editormodi](../../ide/how-to-manage-editor-modes.md)
-
-
-

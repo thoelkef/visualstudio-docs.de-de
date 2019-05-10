@@ -1,22 +1,21 @@
 ---
 title: Testen einer großen Anwendung mit mehreren UI-Zuordnungen
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, multiple UI maps
 - coded UI tests, for large applications
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1677ac36222b3d7efddc22bc1c0a69394eaf564
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3dfaa1fb344f11817cc67a074580c726f3d23036
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429176"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>Testen einer großen Anwendung mit mehreren UI-Zuordnungen
 
@@ -43,9 +42,9 @@ Mit mehreren UI-Zuordnungsdateien zu arbeiten hat die folgenden Vorteile:
 ## <a name="do-you-need-multiple-ui-maps"></a>Brauche ich mehrere UI-Zuordnung?
  Erstellen Sie in jeder der folgenden Situationen UI-Zuordnungen:
 
--   Verschieden komplexe Sätze zusammengesetzter UI-Steuerelemente, die zusammen einen logischen Vorgang ausführen, wie beispielsweise eine Registrierungsseite auf einer Website oder die Kaufseite eines Warenkorbs.
+- Verschieden komplexe Sätze zusammengesetzter UI-Steuerelemente, die zusammen einen logischen Vorgang ausführen, wie beispielsweise eine Registrierungsseite auf einer Website oder die Kaufseite eines Warenkorbs.
 
--   Ein unabhängiger Steuerelementsatz, auf den von verschiedenen Punkten der Anwendung aus zugegriffen wird, wie beispielsweise ein Assistent mit verschiedenen Seiten an Vorgängen. Wenn jede Seite eines Assistenten besonders komplex ist, könnten Sie für jede dieser Seiten eine UI-Zuordnung erstellen.
+- Ein unabhängiger Steuerelementsatz, auf den von verschiedenen Punkten der Anwendung aus zugegriffen wird, wie beispielsweise ein Assistent mit verschiedenen Seiten an Vorgängen. Wenn jede Seite eines Assistenten besonders komplex ist, könnten Sie für jede dieser Seiten eine UI-Zuordnung erstellen.
 
 ## <a name="add-multiple-ui-maps"></a>Hinzufügen mehrerer UI-Zuordnungen
 

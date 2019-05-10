@@ -1,25 +1,20 @@
 ---
 title: Shader-Designer-Knoten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: f5192fbd-c78f-40a8-a4d4-443209610268
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f41d1d3d934ecd85ac36d24d704db561d42faa97
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: cde6b6a44649f3a9e100a0ff10e3dda21f2d6f3c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293500"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096282"
 ---
 # <a name="shader-designer-nodes"></a>Shader-Designer-Knoten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,15 +30,15 @@ Die Artikel in diesem Dokumentationsabschnitt enthalten Informationen zu verschi
 ### <a name="promotion-of-inputs"></a>Heraufstufung von Eingaben  
  Da der Shader-Designer letztendlich HLSL-Quellcode generieren muss, damit der Effekt in einem Spiel oder einer App verwendet werden kann, sind Shader-Designerknoten Teil der Regeln zur Typerweiterung, die HLSL verwendet. Da die Grafikhardware hauptsächlich mit Gleitkommawerten arbeitet, ist die Typerweiterung zwischen verschiedenen Typen (z.B. von `int` auf `float` oder von `float` auf `double`) eher ungewöhnlich. Da Grafikhardware den gleichen Vorgang auf mehrere Informationspakete gleichzeitig anwendet, findet eine andere Art der Heraufstufung statt, bei der kürzere Eingabewerte erweitert werden, um sie an die längsten Eingabewerte anzugleichen. Auf welche Weise die Eingabe verlängert wird hängt von deren Typ und dem Vorgang an sich ab:  
   
--   **Wenn der kleinere Typ ein Skalarwert ist, dann:**  
+- **Wenn der kleinere Typ ein Skalarwert ist, dann:**  
   
      Ist der Wert des Skalars in einen Vektor repliziert, der die gleiche Größe hat wie die größere Eingabe. Beispielsweise wird die Skalareingabe 5,0 zum Vektor (5,0, 5,0, 5,0), wenn die längste Eingabe des Vorgangs ein Drei-Elemente-Vektor ist, unabhängig davon, um welchen Vorgang es sich handelt.  
   
--   **Wenn es sich bei dem kleineren Typ um einen Vektor handelt und der Vorgang multiplikativ ist (\*, /, %, etc.), dann:**  
+- **Wenn es sich bei dem kleineren Typ um einen Vektor handelt und der Vorgang multiplikativ ist (\*, /, %, etc.), dann:**  
   
      Wird der Wert des Vektors in die führenden Elemente eines Vektors kopiert, der der Größe der größeren Eingabe entspricht, und die nachstehenden Elemente sind auf 1,0 festgelegt. Beispielsweise wird die Vektoreingabe (5,0, 5,0) zum Vektor (5,0, 5,0, 1,0, 1,0), wenn er von einem Vier-Elemente-Vektor multipliziert werden soll. Dabei bleiben jeweils die dritten und vierten Elemente der Ausgabe erhalten, indem das neutrale Element der Multiplikation 1,0 verwendet wird.  
   
--   **Wenn es sich bei dem kleineren Typ um einen Vektor handelt und der Vorgang additiv ist (+, –, etc.), dann:**  
+- **Wenn es sich bei dem kleineren Typ um einen Vektor handelt und der Vorgang additiv ist (+, –, etc.), dann:**  
   
      Der Wert des Vektors wird in die führenden Elemente eines Vektors kopiert, der der Größe der größeren Eingabe entspricht, und die nachstehenden Elemente sind auf 0,0 festgelegt. Beispielsweise wird die Vektoreingabe (5,0, 5,0) zum Vektor (5,0, 5,0, 0,0, 0,0), wenn er von einem Vier-Elemente-Vektor multipliziert werden soll. Dabei bleiben jeweils die dritten und vierten Elemente der Ausgabe erhalten, indem die additive Identität 0,0 verwendet wird.  
   
@@ -57,6 +52,3 @@ Die Artikel in diesem Dokumentationsabschnitt enthalten Informationen zu verschi
 |[Berechnungsknoten](../designers/math-nodes.md)|Beschreibt die Knoten, die Sie verwenden können, um algebraische, logische, trigonometrische und andere mathematische Vorgänge durchzuführen, die den HLSL-Anweisungen direkt zugeordnet werden.|  
 |[Hilfsprogrammknoten](../designers/utility-nodes.md)|Beschreibt die Knoten, die Sie verwenden können, um allgemeine Lichtberechnungen und andere allgemeine Vorgänge durchzuführen, die den HLSL-Anweisungen direkt zugeordnet werden.|  
 |[Filtern von Knoten](../designers/filter-nodes.md)|Beschreibt die Knoten, die Sie verwenden können, um die Textur- und Farbfilterung durchzuführen.|
-
-
-

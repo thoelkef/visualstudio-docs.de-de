@@ -1,7 +1,6 @@
 ---
 title: Befehl "ShowWebBrowser"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - view.showwebbrowser
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: c6a4fbd6-8e9d-45cc-8b2f-93990d065e78
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df5983b0cbc33abe0f5919a93af1450394134a99
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0f6d8249503ed775d584c913d685ae35473134be
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53985825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950645"
 ---
 # <a name="showwebbrowser-command"></a>Befehl "ShowWebBrowser"
 
@@ -45,7 +44,7 @@ View.ShowWebBrowser URL [/new][/ext]
 
  Dies ist optional. Gibt an, dass die Seite im Standardwebbrowser außerhalb der IDE angezeigt wird.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Anmerkungen
  Der Alias für den Befehl **ShowWebBrowser** ist **navigate** oder **nav**.
 
 ## <a name="example"></a>Beispiel

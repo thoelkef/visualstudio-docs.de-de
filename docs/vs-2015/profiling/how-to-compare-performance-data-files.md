@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Vergleichen von Leistungsdatendateien | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vsperf.choosediffbinaries
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 1905b45d-c6b3-43c8-87b1-1aee734f37f9
 caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cf80c86f233a40ba0d65d239ae1668d575a66bb2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 185494623e019ef666374bd46e52bca0d58738f4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752620"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077667"
 ---
 # <a name="how-to-compare-performance-data-files"></a>Vorgehensweise: Vergleichen von Leistungsdatendateien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,31 +34,28 @@ Sie können die Ergebnisse von zwei unterschiedlichen Profilerdatendateien (.vsp
   
 ### <a name="to-create-comparison-file-view-for-a-project-in-performance-explorer"></a>So erstellen Sie eine Vergleichsdatei für ein Projekt im Leistungs-Explorer.  
   
-1.  Wählen Sie im **Leistungs-Editor** unter **Berichte** die VSP- oder VSPS-Berichtsdatei aus, die Sie als Baselinewert für den Vergleich verwenden möchten.  
+1. Wählen Sie im **Leistungs-Editor** unter **Berichte** die VSP- oder VSPS-Berichtsdatei aus, die Sie als Baselinewert für den Vergleich verwenden möchten.  
   
-2.  Wählen Sie die VSP- oder VSPS-Berichtsdateien, die Sie vergleichen möchten.  
+2. Wählen Sie die VSP- oder VSPS-Berichtsdateien, die Sie vergleichen möchten.  
   
-3.  Klicken Sie mit der rechten Maustaste auf ausgewählten Dateien, und wählen Sie **Berichte vergleichen** aus.  
+3. Klicken Sie mit der rechten Maustaste auf ausgewählten Dateien, und wählen Sie **Berichte vergleichen** aus.  
   
 ### <a name="to-compare-values"></a>So vergleichen Sie Werte  
   
-1.  Wählen Sie im Fenster „Berichtsansicht“ die Registerkarte **Vergleichsbericht**.  
+1. Wählen Sie im Fenster „Berichtsansicht“ die Registerkarte **Vergleichsbericht**.  
   
-2.  Wählen Sie in der Dropdownliste **Tabelle** entweder Funktionen oder Module für den Vergleich.  
+2. Wählen Sie in der Dropdownliste **Tabelle** entweder Funktionen oder Module für den Vergleich.  
   
-3.  Wählen Sie in der Dropdownliste **Spalte** den Wert aus, den Sie vergleichen möchten.  
+3. Wählen Sie in der Dropdownliste **Spalte** den Wert aus, den Sie vergleichen möchten.  
   
-4.  (Optional) Geben Sie einen Wert für **Schwellenwert** ein.  
+4. (Optional) Geben Sie einen Wert für **Schwellenwert** ein.  
   
-5.  Klicken Sie auf **Übernehmen**.  
+5. Klicken Sie auf **Übernehmen**.  
   
 ### <a name="to-compare-report-files"></a>So vergleichen Sie Berichtsdateien  
   
-1.  Klicken Sie im Menü **Analysieren** auf **Leistungsberichte vergleichen**.  
+1. Klicken Sie im Menü **Analysieren** auf **Leistungsberichte vergleichen**.  
   
-2.  Durchsuchen und wählen Sie im Fenster **Analysedateien für Vergleich auswählen** die Analysedatei **Baselinedatei** und **Vergleichsdatei** (.vsp oder .vsps) aus.  
+2. Durchsuchen und wählen Sie im Fenster **Analysedateien für Vergleich auswählen** die Analysedatei **Baselinedatei** und **Vergleichsdatei** (.vsp oder .vsps) aus.  
   
-3.  Klicken Sie auf **OK**.
-
-
-
+3. Klicken Sie auf **OK**.

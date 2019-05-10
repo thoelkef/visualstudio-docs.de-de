@@ -1,29 +1,31 @@
 ---
 title: IDebugPortPicker::DisplayPortPicker | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - DisplayPortPicker
 - IDebugPortPicker::DisplayPortPicker
 ms.assetid: 08511ef5-be64-4069-b169-a569cc94bc64
-author: gregvanl
+caps.latest.revision: 10
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 1e50f0d9ecb53e49028bab32f2525b4caecfd02e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8e115c4e45784b2072bf626d90ebab0d980491e4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849388"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62871502"
 ---
 # <a name="idebugportpickerdisplayportpicker"></a>IDebugPortPicker::DisplayPortPicker
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Zeigt das angegebene Dialogfeld an, das dem Benutzer ermöglicht, einen Port auszuwählen.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT DisplayPortPicker(  
    HWND hwndParentDialog,  
    BSTR* pbstrPortId  

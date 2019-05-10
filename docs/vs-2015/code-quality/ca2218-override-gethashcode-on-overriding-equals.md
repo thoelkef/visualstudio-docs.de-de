@@ -1,14 +1,9 @@
 ---
-title: 'CA2218: GetHashCode beim Überschreiben von Equals überschreiben | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'CA2218: Überschreiben von GetHashCode beim Überschreiben von Equals überschreiben | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2218
 - OverrideGetHashCodeOnOverridingEquals
@@ -20,14 +15,14 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: bc9e72639e123e0a99c4423b460bc4122995971c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e9ce3164a1a6659b4921139172afb9c5e3598821
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881903"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105135"
 ---
-# <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218: GetHashCode beim Überschreiben von Equals überschreiben
+# <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218: GetHashCode beim Überschreiben von Equals überschreiben.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -43,23 +38,23 @@ ms.locfileid: "49881903"
 ## <a name="rule-description"></a>Regelbeschreibung
  <xref:System.Object.GetHashCode%2A> Gibt einen Wert, der basierend auf der aktuellen Instanz, die für die Verwendung in Hashalgorithmen und Datenstrukturen wie Hashtabellen geeignet ist. Zwei Objekte, die den gleichen Typ aufweisen und gleich sind, müssen den gleichen Hashcode, um sicherzustellen, dass die Instanzen der folgenden Typen ordnungsgemäß zurückgeben:
 
--   <xref:System.Collections.Hashtable?displayProperty=fullName>
+- <xref:System.Collections.Hashtable?displayProperty=fullName>
 
--   <xref:System.Collections.SortedList?displayProperty=fullName>
+- <xref:System.Collections.SortedList?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.Dictionary%602?displayProperty=fullName>
+- <xref:System.Collections.Generic.Dictionary%602?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.SortedDictionary%602?displayProperty=fullName>
+- <xref:System.Collections.Generic.SortedDictionary%602?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.SortedList%602?displayProperty=fullName>
+- <xref:System.Collections.Generic.SortedList%602?displayProperty=fullName>
 
--   <xref:System.Collections.Specialized.HybridDictionary?displayProperty=fullName>
+- <xref:System.Collections.Specialized.HybridDictionary?displayProperty=fullName>
 
--   <xref:System.Collections.Specialized.ListDictionary?displayProperty=fullName>
+- <xref:System.Collections.Specialized.ListDictionary?displayProperty=fullName>
 
--   <xref:System.Collections.Specialized.OrderedDictionary?displayProperty=fullName>
+- <xref:System.Collections.Specialized.OrderedDictionary?displayProperty=fullName>
 
--   Typen, die implementieren <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
+- Typen, die implementieren <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, stellen Sie eine Implementierung der <xref:System.Object.GetHashCode%2A>. Für ein Paar von Objekten desselben Typs, müssen Sie sicherstellen, dass es sich bei der Implementierung den gleichen Wert zurückgegeben, wenn die Implementierung von <xref:System.Object.Equals%2A> gibt `true` für das Paar.
@@ -98,11 +93,11 @@ ms.locfileid: "49881903"
 ## <a name="related-rules"></a>Verwandte Regeln
  [CA1046: Gleichheitsoperator für Referenztypen nicht überladen](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 
- [CA2225: Operatorüberladungen weisen benannte Alternativen auf](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
+ [CA2225: Operatorüberladungen weisen benannte alternativen auf](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
 
- [CA2226: Operatoren sollten symmetrische Überladungen aufweisen](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+ [CA2226: Operatoren sollten symmetrische Überladungen aufweisen.](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
- [CA2224: Equals beim Überladen von Gleichheitsoperatoren überschreiben](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+ [CA2224: Außerkraftsetzung equals, Equals beim Überladen](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
 
  [CA2231: Überladen Sie den Gleichheitsoperator beim Überschreiben von ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
 

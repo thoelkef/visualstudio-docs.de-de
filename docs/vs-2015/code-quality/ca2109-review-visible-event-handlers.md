@@ -1,14 +1,9 @@
 ---
 title: 'CA2109: Sichtbare Ereignishandler überprüfen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2109
 - ReviewVisibleEventHandlers
@@ -20,14 +15,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 328df28441fa5c96fee40baed11a54c3044542b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f5bd94892a0321346adeacbcad2655a4ab62c6a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880376"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038329"
 ---
-# <a name="ca2109-review-visible-event-handlers"></a>CA2109: Sichtbare Ereignishandler überprüfen
+# <a name="ca2109-review-visible-event-handlers"></a>CA2109: Sichtbare Ereignishandler überprüfen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -47,18 +42,18 @@ ms.locfileid: "49880376"
 
  Eine Anforderung kann nicht zuverlässig zu schützen eine Methode, die von einem Ereignishandler aufgerufen. Sicherheit fordert Hilfe durch Untersuchen der Aufrufer in der Aufrufliste Code aus nicht vertrauenswürdigen Aufrufern zu schützen. Code, der ein Ereignis einen Ereignishandler hinzugefügt ist nicht unbedingt in der Aufrufliste vorhanden, wenn es sich bei der Ereignishandler Methoden ausgeführt werden. Aus diesem Grund die Aufrufliste möglicherweise nur sehr vertrauenswürdige Aufrufer, wenn die Ereignishandlermethode aufgerufen wird. Dies bewirkt, dass Anforderungen, die von der Ereignishandlermethode für erfolgreich ausgeführt werden. Darüber hinaus kann die geforderte Berechtigung übergeben werden, wenn die Methode aufgerufen wird. Aus diesen Gründen kann das Risiko nicht beheben einen Verstoß gegen diese Regel nur nach dem Überprüfen der Ereignisbehandlungsmethode bewertet werden. Wenn Sie den Code überprüfen, die folgenden Punkte:
 
--   Führt Ihr Ereignishandler alle Vorgänge, die gefährliche oder ausgenutzt werden können, z. B. berechtigungserteilung oder Unterdrücken von nicht verwaltetem Codeberechtigung sind?
+- Führt Ihr Ereignishandler alle Vorgänge, die gefährliche oder ausgenutzt werden können, z. B. berechtigungserteilung oder Unterdrücken von nicht verwaltetem Codeberechtigung sind?
 
--   Gibt den Sicherheitsrisiken, die in und aus Ihrem Code, da es zu einem beliebigen Zeitpunkt mit hoher nur ausgeführt werden kann, vertrauenswürdige Aufrufer auf dem Stapel?
+- Gibt den Sicherheitsrisiken, die in und aus Ihrem Code, da es zu einem beliebigen Zeitpunkt mit hoher nur ausgeführt werden kann, vertrauenswürdige Aufrufer auf dem Stapel?
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, überprüfen Sie die Methode aus, und bewerten Sie die folgenden:
 
--   Können Sie die Methode zur Verarbeitung von Ereignissen nicht öffentlichen vornehmen?
+- Können Sie die Methode zur Verarbeitung von Ereignissen nicht öffentlichen vornehmen?
 
--   Können Sie alle gefährlichen Funktionalität aus den Ereignishandler verschieben?
+- Können Sie alle gefährlichen Funktionalität aus den Ereignishandler verschieben?
 
--   Wenn eine sicherheitsforderung festgelegt wurde, kann dies auf andere Weise werden erreicht?
+- Wenn eine sicherheitsforderung festgelegt wurde, kann dies auf andere Weise werden erreicht?
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Unterdrücken Sie eine Warnung dieser Regel erst nach einer sorgfältigen sicherheitsreview, um sicherzustellen, dass Ihr Code kein Sicherheitsrisiko darstellt.
@@ -70,7 +65,4 @@ ms.locfileid: "49880376"
 
 ## <a name="see-also"></a>Siehe auch
  <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName> <xref:System.EventArgs?displayProperty=fullName>
- [Sicherheitsanforderungen](http://msdn.microsoft.com/en-us/324c14f8-54ff-494d-9fd1-bfd20962c8ba)
-
-
-
+ [Sicherheitsanforderungen](http://msdn.microsoft.com/324c14f8-54ff-494d-9fd1-bfd20962c8ba)

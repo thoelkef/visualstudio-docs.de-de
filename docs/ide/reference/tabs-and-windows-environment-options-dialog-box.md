@@ -1,24 +1,23 @@
 ---
 title: Registerkarten und Fenster, Umgebung, Dialogfeld „Optionen“
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.TabsAndWindows
 ms.assetid: f5167564-0a4e-4f98-9580-fc6cb7d9dd8d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c729ac6738eb8a09712ee87b64e1bb6f4eee2b1b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 339f6477395bf8d91618298bc1618132d76b3794
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53903668"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945114"
 ---
-# <a name="tabs-and-windows-environment-options-dialog-box"></a>Registerkarten und Fenster, Umgebung, Dialogfeld „Optionen“
+# <a name="options-dialog-box-environment--tabs-and-windows"></a>Dialogfeld „Optionen“: Umgebung \> Registerkarten und Fenster
 
 Auf dieser Seite können Sie Optionen für das Verhalten von Fenstern im Registerkartenformat im Editor-Bereich und das Verhalten von Toolfenstern festlegen. Weitere Informationen finden Sie unter [Anpassen der Fensterlayouts in Visual Studio](../../ide/customizing-window-layouts-in-visual-studio.md).
 

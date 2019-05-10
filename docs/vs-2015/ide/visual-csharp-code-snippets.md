@@ -1,14 +1,9 @@
 ---
 title: Visual C#-Codeausschnitte | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - snippets [C#], default snippets
 - snippets [C#], Code Snippet Inserter
@@ -19,13 +14,13 @@ ms.assetid: dbea3dd6-e650-4190-b874-c9f097d7de6e
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9c06243b4f41919c1c51002f0ed805a3fbd67112
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 47658a8aec8b2dedd2dcdeb337bdca805e1b0bca
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297413"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787104"
 ---
 # <a name="visual-c-code-snippets"></a>Visual C#-Codeausschnitte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ Codeausschnitte sind vorgefertigte Ausschnitte aus Code, die Sie schnell in Ihre
 |Klasse|Erstellt eine Klassendeklaration.|In einem Namespace (einschließlich des globalen Namespaces), einer Klasse oder einer Struktur.|  
 |ctor|Erstellt einen Konstruktor für die enthaltende Klasse.|Innerhalb einer Klasse.|  
 |cw|Erstellt einen Aufruf an <xref:System.Console.WriteLine%2A>.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|  
-|do|Erstellt eine [führen](http://msdn.microsoft.com/library/50725f79-9ba6-4898-aa78-6e331568a1bb) `while` Schleife.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|  
+|do|Erstellt eine [do](http://msdn.microsoft.com/library/50725f79-9ba6-4898-aa78-6e331568a1bb)`while`-Schleife.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|  
 |else|Erstellt einen [else](http://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2)-Block.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|  
 |enum|Erstellt eine [enum](http://msdn.microsoft.com/library/bbeb9a0f-e9b3-41ab-b0a6-c41b1a08974c)-Deklaration.|In einem Namespace (einschließlich des globalen Namespaces), einer Klasse oder einer Struktur.|  
 |equals|Erstellt eine Methodendeklaration, die die in der <xref:System.Object>-Klasse definierte <xref:System.Object.Equals%2A>-Methode außer Kraft setzt.|Innerhalb einer Klasse oder Struktur.|  
@@ -83,10 +78,7 @@ Codeausschnitte sind vorgefertigte Ausschnitte aus Code, die Sie schnell in Ihre
 ## <a name="see-also"></a>Siehe auch  
  [Codeausschnittfunktionen](../ide/code-snippet-functions.md)   
  [Codeausschnitte](../ide/code-snippets.md)   
- [Gewusst wie: Erstellen eines neuen Codeausschnitts mit Ersetzungen](http://msdn.microsoft.com/en-us/8d56d43c-097a-475b-aa85-cae1554b6338)   
+ [Vorgehensweise: Erstellen eines neuen Codeausschnitts mit Ersetzungen](http://msdn.microsoft.com/8d56d43c-097a-475b-aa85-cae1554b6338)   
  [Vorlagenparameter](../ide/template-parameters.md)   
  [Vorgehensweise: Verwenden von umschließenden Codeausschnitten](../ide/how-to-use-surround-with-code-snippets.md)   
- [Gewusst wie: Wiederherstellen von C#-Refactoringausschnitten](../ide/how-to-restore-csharp-refactoring-snippets.md)
-
-
-
+ [Vorgehensweise: Wiederherstellen C# Refactoringausschnitten](../ide/how-to-restore-csharp-refactoring-snippets.md)

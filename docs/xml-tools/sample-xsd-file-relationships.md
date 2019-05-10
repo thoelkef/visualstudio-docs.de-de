@@ -1,21 +1,19 @@
 ---
 title: 'XSD-Beispieldatei: Beziehungen'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: sample
 ms.assetid: 60126510-b7dd-4cb4-92d3-9883590b92f2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66ddb896fad5d69fafc67c04ef839b952cac4d11
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: e643ab6566818df7cdfee2bc4e5b256ecf065b5a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572773"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955565"
 ---
 # <a name="sample-xsd-file-relationships"></a>XSD-Beispieldatei: Beziehungen
 

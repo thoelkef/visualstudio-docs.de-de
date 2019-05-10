@@ -2,22 +2,21 @@
 title: Projektvorlage für Azure-Clouddienste für Python
 description: Visual Studio stellt in Python geschriebene Vorlagen einschließlich Rollenbereitstellung, Abhängigkeiten und Problembehandlung für Azure-Clouddienste bereit.
 ms.date: 11/12/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: d89c880754683682e443bac1a18204319740b903
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a47ef2bc1b75985639d0c5eb43bba516ff9b8088
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62785139"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projekte für Azure-Clouddienste für Python
 
@@ -25,7 +24,7 @@ Visual Studio enthält Vorlagen, die Ihnen bei der Verwendung von Azure Cloud Se
 
 Ein [Clouddienst](https://docs.microsoft.com/azure/cloud-services/) besteht aus einer beliebigen Anzahl von *Workerrollen* und *Webrollen*, von denen jede eine konzeptionell gesonderte Aufgabe ausführt und je nach Skalierungsbedarf separat über virtuelle Computer repliziert werden kann. Webrollen bieten das Hosting für Front-End-Webanwendungen. Für Python kann jedes Webframework, das WSGI unterstützt, zum Schreiben einer solchen Anwendung verwendet werden (wie von der [Webprojektvorlage](python-web-application-project-templates.md) unterstützt). Workerrollen sind für lang andauernde Prozesse vorgesehen, die nicht direkt mit den Benutzern interagieren. In der Regel verwenden sie die Pakete im Paket „azure“, das mit [`pip install azure`](https://pypi.org/project/azure) installiert wird.
 
-Dieser Artikel enthält Details über die Projektvorlage und sonstige Unterstützung in Visual Studio 2017 (frühere Versionen sind ähnlich, es gibt jedoch einige Unterschiede). Weitere Informationen zum Verwenden von Azure über Python finden Sie im [Azure Python Developer Center](https://docs.microsoft.com/python/azure/?view=azure-python).
+Dieser Artikel enthält Details über die Projektvorlage und sonstige Unterstützung in Visual Studio 2017 und höher (frühere Versionen sind ähnlich, es gibt jedoch einige Unterschiede). Weitere Informationen zum Verwenden von Azure über Python finden Sie im [Azure Python Developer Center](https://docs.microsoft.com/python/azure/?view=azure-python/?view=azure-python).
 
 ## <a name="create-a-project"></a>Erstellen eines Projekts
 

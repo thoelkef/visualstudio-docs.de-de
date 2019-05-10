@@ -1,29 +1,31 @@
 ---
 title: IDebugGenericParamField::GetConstraints | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugGenericParamField::GetConstraints
 - GetConstraints
 ms.assetid: 86a78b5a-ee0f-4999-a0ba-919d3dc7d969
-author: gregvanl
+caps.latest.revision: 11
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: a3190b52e1963e0647a522075ca736673ff78e26
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a98a62ca294af5f7151ca0047b966cc151970fe6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905886"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62919083"
 ---
 # <a name="idebuggenericparamfieldgetconstraints"></a>IDebugGenericParamField::GetConstraints
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Ruft ab, die Einschränkungen, die dieser generischen Parameter zugeordnet sind.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT GetConstraints(  
    ULONG32       cConstraints,  
    IDebugField** ppConstraints,  
@@ -55,7 +57,7 @@ int GetConstraints(
 ## <a name="example"></a>Beispiel  
  Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugGenericParamFieldType** -Objekt, das macht die [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) Schnittstelle.  
   
-```cpp  
+```cpp#  
 HRESULT CDebugGenericParamFieldType::GetConstraints(  
     ULONG32 cConstraints,  
     IDebugField** ppConstraints,  

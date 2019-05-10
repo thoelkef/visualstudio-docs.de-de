@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Erstellen eines datengesteuerten Komponententests | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 f1_keywords:
 - vs.test.testresults.unittest.datadriven
 - vs.test.testresults.unittest.datadriven.failure
@@ -19,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: a0322bc5-02c8-4f9f-af43-100a60b1bd28
 caps.latest.revision: 35
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: eeb7efb0c7faa9a2493cfd3f91f6cc4e72408f4c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: cdc38967a229424badac0cb6b887f44820b71284
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889359"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095762"
 ---
-# <a name="how-to-create-a-data-driven-unit-test"></a>Gewusst wie: Erstellen eines datengesteuerten Komponententests
+# <a name="how-to-create-a-data-driven-unit-test"></a>Vorgehensweise: Erstellen eines datengesteuerten Komponententests
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können mithilfe des Microsoft Komponententestframework für verwaltenden Code eine Komponententestmethode erstellen, um Werte zu abzurufen, die in einer Testmethode von einer Datenquelle verwendet wird. Die Methode wird nacheinander für jede Zeile in der Datenquelle ausgeführt, die mithilfe einer einzelnen Methode das Testen von einer Vielzahl von Eingaben vereinfacht.  
@@ -42,23 +37,23 @@ Sie können mithilfe des Microsoft Komponententestframework für verwaltenden Co
   
 - [Schreiben der Testmethode](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Writing_the_test_method)  
   
-  -   [Angeben des DataSourceAttribute](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Specifying_the_DataSourceAttribute)  
+  - [Angeben des DataSourceAttribute](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Specifying_the_DataSourceAttribute)  
   
-  -   [Verwenden von TestContext.DataRow, um auf die Daten zuzugreifen](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Using_TestContext_DataRow_to_access_the_data)  
+  - [Verwenden von TestContext.DataRow, um auf die Daten zuzugreifen](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Using_TestContext_DataRow_to_access_the_data)  
   
 - [Ausführen des Tests und Anzeigen der Ergebnisse](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Running_the_test_and_viewing_results)  
   
   Das Erstellen eines datengesteuerten Komponententests umfasst die folgenden Schritte:  
   
-1.  Erstellen Sie eine Datenquelle, die die Werte enthält, die Sie in der Testmethode verwenden. Die Datenquelle kann jeder Typ sein, der auf dem Computer registriert ist, auf dem der Test ausgeführt wird.  
+1. Erstellen Sie eine Datenquelle, die die Werte enthält, die Sie in der Testmethode verwenden. Die Datenquelle kann jeder Typ sein, der auf dem Computer registriert ist, auf dem der Test ausgeführt wird.  
   
-2.  Fügen Sie der Testklasse ein privates <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext>-Feld sowie eine öffentliche `TestContext`-Eigenschaft hinzu.  
+2. Fügen Sie der Testklasse ein privates <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext>-Feld sowie eine öffentliche `TestContext`-Eigenschaft hinzu.  
   
-3.  Erstellen Sie eine Komponententestmethode, und fügen Sie ihr ein <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>-Attribut an.  
+3. Erstellen Sie eine Komponententestmethode, und fügen Sie ihr ein <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>-Attribut an.  
   
-4.  Verwenden Sie die <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A>-Indexereigenschaft, um die Werte abzurufen, die Sie in einem Test verwenden.  
+4. Verwenden Sie die <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A>-Indexereigenschaft, um die Werte abzurufen, die Sie in einem Test verwenden.  
   
-##  <a name="BKMK_The_method_under_test"></a> Die zu testende Methode  
+## <a name="BKMK_The_method_under_test"></a> Die zu testende Methode  
  Nehmen wir zum Beispiel an, dass wir folgendes erstellt haben:  
   
 1. Eine Lösung mit dem Namen `MyBank`, die Transaktionen für verschiedene Kontenarten akzeptiert und verarbeitet.  
@@ -85,7 +80,7 @@ public int AddIntegers(int first, int second)
 }  
 ```  
   
-##  <a name="BKMK_Creating_a_data_source"></a> Erstellen einer Datenquelle  
+## <a name="BKMK_Creating_a_data_source"></a> Erstellen einer Datenquelle  
  Zu Testen der Methode `AddIntegers` wird eine Datenquelle erstellt, die einen Wertebereich für die Parameter und der Summe angibt, der zurückgegeben werden soll. In diesem Beispiel wird eine Datenbank „Sql.Compact“ mit dem Namen `MathsData` und eine Tabelle mit dem Namen `AddIntegersData` erstellt, die die folgenden Spaltennamen und -werte enthält  
   
 |FirstNumber|SecondNumber|Summe|  
@@ -94,7 +89,7 @@ public int AddIntegers(int first, int second)
 |1|1|2|  
 |2|-3|-1|  
   
-##  <a name="BKMK_Adding_a_TestContext_to_the_test_class">Hinzufügen eines TestContext zu einer Testklasse</a>  
+## <a name="BKMK_Adding_a_TestContext_to_the_test_class">Hinzufügen eines TestContext zu einer Testklasse</a>  
  Das Komponententestframework erstellt ein Objekt `TestContext`, um die Informationen der Datenquelle für einen datengesteuerten Test zu speichern. Das Framework legt anschließend dieses Objekt als Wert für die Eigenschaft `TestContext` fest, die wir erstellen.  
   
 ```  
@@ -110,7 +105,7 @@ public TestContext TestContext
   
  In Ihrer Testmethode greifen Sie auf die Daten durch die Indexereigenschaft `DataRow` des `TestContext` zu.  
   
-##  <a name="BKMK_Writing_the_test_method"></a> Schreiben der Testmethode  
+## <a name="BKMK_Writing_the_test_method"></a> Schreiben der Testmethode  
  Die Testmethode für `AddIntegers` ist recht einfach. Für jede Zeile in der Datenquelle,wird `AddIntegers` mit den Spaltenwerten von **FirstNumber** und **SecondNumber** als Parameter abgerufen, und es wird der Rückgabewert mit dem Spaltenwert **Summe** verglichen:  
   
 ```  
@@ -136,7 +131,7 @@ public void AddIntegers_FromDataSourceTest()
   
  Beachten Sie, dass die Methode `Assert` eine Mitteilung enthält, die die Werter einer fehlerhaften Iteration `x` und `y` anzeigt. Die bestätigen Werte `expected` und `actual` sind bereits standardmäßig in den Details eines fehlgeschlagenen Tests enthalten.  
   
-###  <a name="BKMK_Specifying_the_DataSourceAttribute"></a> Angeben des DataSourceAttribute  
+### <a name="BKMK_Specifying_the_DataSourceAttribute"></a> Angeben des DataSourceAttribute  
  Das Attribut `DataSource` gibt die Verbindungszeichenfolge für die Datenquelle den Tabellennamen an, die Sie in der Testmethode verwenden. Die genaue Information in der Verbindungszeichenfolge ist unterschiedlich, je nachdem welche Datenquelle Sie verwenden. In diesem Beispiel wurde eine Datenbank „SqlServerCe“ verwendet.  
   
 ```  
@@ -151,7 +146,7 @@ public void AddIntegers_FromDataSourceTest()
   
  Ein Konstruktor mit einem Parameter verwendet die Verbindungsinformationen, die in der app.config-Datei für die Lösung gespeichert ist. *dataSourceSettingsName* ist der Name des XML-Elements in der Config-Datei, das die Verbindungsinformationen angibt.  
   
- Eine app.config-Datei hilft Ihnen dabei, den Speicherort der Datenquelle zu ändern, ohne den Komponententest selbst zu ändern. Weitere Informationen zum Erstellen und Verwenden einer app.config-Datei finden Sie unter [Exemplarische Vorgehensweise: Verwenden einer Konfigurationsdatei zum Definieren einer Datenquelle](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).  
+ Eine app.config-Datei hilft Ihnen dabei, den Speicherort der Datenquelle zu ändern, ohne den Komponententest selbst zu ändern. Weitere Informationen zum Erstellen und verwenden eine app.config-Datei, finden Sie unter [Exemplarische Vorgehensweise: Verwenden einer Konfigurationsdatei zum Definieren einer Datenquelle](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).  
   
 ```  
 [DataSource(connectionString, tableName)]  
@@ -170,7 +165,7 @@ public void AddIntegers_FromDataSourceTest()
     )]  
 ```  
   
-###  <a name="BKMK_Using_TestContext_DataRow_to_access_the_data"></a> Verwenden von TestContext.DataRow, um auf die Daten zuzugreifen  
+### <a name="BKMK_Using_TestContext_DataRow_to_access_the_data"></a> Verwenden von TestContext.DataRow, um auf die Daten zuzugreifen  
  Verwenden Sie den Indexer `AddIntegersData`, um auf die Daten in der Tabelle `TestContext.DataRow` zuzugreifen. `DataRow` ist ein Objekt <xref:System.Data.DataRow>. Dadurch werden Spaltenwerte anhand des Index oder der Spaltennamen abgerufen. Da die Werte als Objekte zurückgegeben werden, müssen sie in den entsprechenden Typ konvertiert werden:  
   
 ```  
@@ -178,7 +173,7 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
   
 ```  
   
-##  <a name="BKMK_Running_the_test_and_viewing_results"></a> Ausführen des Tests und Anzeigen der Ergebnisse  
+## <a name="BKMK_Running_the_test_and_viewing_results"></a> Ausführen des Tests und Anzeigen der Ergebnisse  
  Wenn Sie mit dem Schreiben der Testmethode fertig sind, erstellen Sie das Testprojekt. Die Testmethode wird im Fenster „Test-Explorer“ in der Gruppe **Nicht ausgeführte Tests** angezeigt. Beim Ausführen, Schreiben und erneuten Ausführen der Tests werden die Ergebnisse vom Test-Explorer in den Gruppen **Fehlgeschlagene Tests**, **Bestandene Tests** sowie **Nicht ausgeführte Tests** angezeigt. Sie können zum Ausführen aller Tests **Alle ausführen** auswählen. Sie können auch **Ausführen von** auswählen, um eine Teilmenge der Tests auszuführen.  
   
  Während Ihr Test ausgeführt wird, wird die Testergebnisleiste im oberen Bereich des Explorers animiert. Am Ende des Testlaufs wird die Leiste grün, wenn alle Tests erfolgreich waren, oder rot, wenn einer der Tests fehlgeschlagen ist. Im Detailbereich unten im Fenster des Test-Explorers wird eine Zusammenfassung des Testlaufs angezeigt. Wählen Sie einen Test aus, um die Details dieses Tests im unteren Bereich anzuzeigen.  
@@ -192,10 +187,7 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext?displayProperty=fullName>   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A?displayProperty=fullName>   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>   
- [Vorgehensweise: Erstellen eines Komponententestprojekts](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)   
+ [Vorgehensweise: Erstellen und Ausführen eines Komponententests](http://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)   
  [Komponententest Ihres Code](../test/unit-test-your-code.md)   
  [Ausführen von Komponententests mit dem Test-Explorer](../test/run-unit-tests-with-test-explorer.md)   
  [Schreiben von Komponententests für .NET Framework mit dem Microsoft-Komponententestframework für verwalteten Code](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
-
-
-

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 8f751f72-c972-4be3-84ee-19c281e02e25
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1878c1e3769ffaa8aedd4c4d0f26349d6f097d2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bce39d8ae736d9f7dcda8b18198053f90933b811
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943836"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892154"
 ---
 # <a name="access-the-text-view-by-using-the-legacy-api"></a>Zugriff auf die Textansicht mit der legacy-API
 Eine Textansicht ist eine Darstellung des Texts, der in einem Textpuffer gespeichert ist. Sie können die Textansicht zugreifen, mit der legacy-API, wie im folgenden Abschnitt gezeigt.
@@ -23,7 +23,7 @@ Eine Textansicht ist eine Darstellung des Texts, der in einem Textpuffer gespeic
 ## <a name="text-view-object"></a>Textansichtsobjekt
  Jede Ansicht eine eigene Textpuffer zugeordnet ist, und die Ansicht ist ein Fenster auf die Daten in den Puffer. Das folgende Diagramm zeigt die wichtigsten Textansichtsobjekt, der durch dargestellt wird-Schnittstellen <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>.
 
- ![Visual Studio-TextView-Objekt](../extensibility/media/vstextview.gif "Vstextview") Textansichtsobjekt
+ ![Visual Studio-TextView-Objekt](../extensibility/media/vstextview.gif)
 
  Die Ansicht ist eine Möglichkeit zum Darstellen von Text im Puffer. Es enthält Features wie z. B. den Zeilenumbruch und Gliederungen, sodass die Daten in der Ansicht keine genaue Darstellung des Texts im Puffer sind.
 

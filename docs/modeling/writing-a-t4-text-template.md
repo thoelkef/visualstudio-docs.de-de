@@ -8,16 +8,15 @@ helpviewer_keywords:
 - text templates, functions that generate text
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: b78e34205c2b7af36f3c43f2307fd62bfca6fe39
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: 2549ad27f0f05d3425dd6625e9d48fdfab4db3a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386068"
 ---
 # <a name="writing-a-t4-text-template"></a>Schreiben einer T4-Textvorlage
 Eine Textvorlage enthält den Text, der aus ihr generiert wird. Beispielsweise enthält eine Vorlage, die eine Webseite erstellt "\<html > …" und alle anderen Standardteile einer HTML-Seite. In der Vorlage eingefügt werden *Kontrollblöcke*, die Fragmente des Programmcodes sind. Kontrollblöcke stellen veränderliche Werte bereit und ermöglichen es, Bedingungen für Teile des Texts zu definieren und Teile des Texts zu wiederholen.
@@ -26,16 +25,16 @@ Eine Textvorlage enthält den Text, der aus ihr generiert wird. Beispielsweise e
 
  Textvorlagen bestehen aus den folgenden Teilen:
 
--   **Direktiven** -Elemente, die steuern, wie die Vorlage verarbeitet wird.
+- **Direktiven** -Elemente, die steuern, wie die Vorlage verarbeitet wird.
 
--   **Textblöcke** : Inhalt, der direkt in die Ausgabe kopiert wird.
+- **Textblöcke** : Inhalt, der direkt in die Ausgabe kopiert wird.
 
--   **Kontrollblöcke** -Programmcode, der Variablenwerte in den Text eingefügt und bedingte oder wiederholte Teile des Texts gesteuert.
+- **Kontrollblöcke** -Programmcode, der Variablenwerte in den Text eingefügt und bedingte oder wiederholte Teile des Texts gesteuert.
 
 Wenn in die Beispielen in diesem Thema testen möchten, kopieren Sie sie in einer Vorlagendatei unter [Design-Time Code Generation mithilfe von T4-Textvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Nach dem Bearbeiten der Datei der Vorlage an, sie speichern und untersuchen Sie die Ausgabe **.txt** Datei.
 
 ## <a name="directives"></a>Anweisungen
- Textvorlagendirektiven stellen allgemeine Anweisungen zum Generieren des Transformationscodes und der Ausgabedatei für das Textvorlagenmodul bereit.
+ Textvorlagenanweisungen stellen allgemeine Anweisungen zum Generieren des Transformationscodes und der Ausgabedatei für die Textvorlagen-Engine bereit.
 
  Die folgende Anweisung gibt z. B. an, dass die Ausgabedatei die Erweiterung .txt haben soll:
 
@@ -95,7 +94,7 @@ Hello!
  Sie können überall dort einen Textblock einfügen, wo eine `Write();`-Anweisung im Code zulässig wäre.
 
 > [!NOTE]
->  Wenn Sie einen Textblock innerhalb einer verbundanweisung, z. B. einer Schleife oder Bedingung einbetten, verwenden Sie immer geschweifte Klammern {...} den Textblock enthalten.
+> Wenn Sie einen Textblock innerhalb einer verbundanweisung, z. B. einer Schleife oder Bedingung einbetten, verwenden Sie immer geschweifte Klammern {...} den Textblock enthalten.
 
 ### <a name="expression-control-blocks"></a>Ausdruckskontrollblöcke
  Durch einen Ausdruckskontrollblock wird ein Ausdruck ausgewertet und in eine Zeichenfolge konvertiert. Diese Zeichenfolge wird in die Ausgabedatei eingefügt.
@@ -108,7 +107,7 @@ Hello!
 <#= 2 + 3 #>
 ```
 
- Beachten Sie, dass das öffnende Symbol aus drei Zeichen besteht "<#=".
+ Beachten Sie, dass das öffnende Symbol aus drei Zeichen besteht "< #=".
 
  Der Ausdruck kann beliebige gültige Variablen enthalten. Durch den folgenden Block werden z. B. Zeilen mit Zahlen ausgegeben:
 
@@ -156,7 +155,7 @@ private int Square(int i)
  Weitere Informationen zu Kontrollblöcken finden Sie unter [Kontrollblöcke für Textvorlagen](../modeling/text-template-control-blocks.md).
 
 ### <a name="class-feature-blocks-can-contain-text-blocks"></a>Klassenfunktionsblöcke können Textblöcke enthalten
- Sie können eine Methode schreiben, durch die Text generiert wird. Beispiel:
+ Sie können eine Methode schreiben, durch die Text generiert wird. Zum Beispiel:
 
 ```
 List of Squares:
@@ -197,7 +196,7 @@ private void WriteSquareLine(int i)
  Weitere Informationen finden Sie unter [T4-Assemblydirektive](../modeling/t4-assembly-directive.md).
 
 ### <a name="namespaces"></a>Namespaces
- Die import-Direktive entspricht der `using`-Klausel in C# bzw. der `imports`-Klausel in Visual Basic. Sie ermöglicht es Ihnen, ohne einen vollqualifizierten Namen auf Typen im Code zu verweisen:
+ Die import-Anweisung entspricht der `using`-Klausel in C# bzw. der `imports`-Klausel in Visual Basic. Sie ermöglicht es Ihnen, ohne einen vollqualifizierten Namen auf Typen im Code zu verweisen:
 
 ```
 <#@ import namespace="System.Xml" #>
@@ -214,7 +213,7 @@ private void WriteSquareLine(int i)
 <#@ include file="c:\test.txt" #>
 ```
 
- Der eingeschlossene Inhalt wird fast so verarbeitet, als wäre er Teil der jeweiligen Textvorlage. Sie können jedoch auch dann eine Datei einschließen, die einen Klassenfunktionsblock `<#+...#>` enthält, wenn nach der include-Anweisung normale Text- und Standardkontrollblöcke eingefügt werden.
+ Der eingeschlossene Inhalt wird fast so verarbeitet, als wäre er Teil der jeweiligen Textvorlage. Sie können jedoch auch dann eine Datei einschließen, die einen Klassenfunktionsblock `<#+...#>` enthält, wenn nach der include-Direktive normale Text- und Standardkontrollblöcke eingefügt werden.
 
  Weitere Informationen finden Sie unter [T4-Include-Direktive](../modeling/t4-include-directive.md).
 
@@ -276,4 +275,4 @@ Sie können auch andere Dienste empfangen, die vom Host bereitgestellt werden. W
 |Generieren von Dateien in Visual Studio-Projektmappe.|[Generieren von Code zur Entwurfszeit mithilfe von T4-Textvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
 |Führen Sie die textgenerierung außerhalb von Visual Studio.|[Generieren von Dateien mit dem Hilfsprogramm "TextTransform"](../modeling/generating-files-with-the-texttransform-utility.md)|
 |Transformieren Sie die Daten in das Format einer domänenspezifischen Sprache.|[Generieren von Code für eine domänenspezifische Sprache](../modeling/generating-code-from-a-domain-specific-language.md)|
-|Schreiben Sie Anweisungsprozessoren, um eigene Datenquellen zu transformieren.|[Anpassen der T4-Texttransformation](../modeling/customizing-t4-text-transformation.md)|
+|Schreiben Sie Direktivenprozessoren, um eigene Datenquellen zu transformieren.|[Anpassen der T4-Texttransformation](../modeling/customizing-t4-text-transformation.md)|

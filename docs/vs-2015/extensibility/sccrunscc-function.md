@@ -1,14 +1,9 @@
 ---
 title: SccRunScc-Funktion | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccRunScc
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: bbe7c931-b17a-4779-9cf6-59e5f9f0c172
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 67d2ad2ee783d23e3bd8c960ad5a94eac3fbd908
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d2b36bd226d4eb19a694347edcba51812ee6f771
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733692"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58957161"
 ---
 # <a name="sccrunscc-function"></a>SccRunScc-Funktion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,11 +66,10 @@ SCCRTN SccRunScc(
   
  Diese Funktion wird mit einem Zähler und ein Array von Dateinamen für die ausgewählten Dateien aufgerufen. Wenn das Verwaltungstool unterstützt wird, kann die Liste der Dateien auf die Vorauswahl von Dateien in der Verwaltungsschnittstelle verwendet werden. Andernfalls kann die Liste ignoriert werden.  
   
- Diese Funktion wird in der Regel aufgerufen, wenn der Benutzer auswählt der **starten \<Quellcodeverwaltungsserver >** aus der **Datei** -> **Quellcodeverwaltung** ein Menü. Dies **starten** Menüoption immer deaktiviert oder sogar durch Festlegen eines Registrierungseintrags ausgeblendet werden kann. Finden Sie unter [Vorgehensweise: eine Source-Control-Plug-in installieren](../extensibility/internals/how-to-install-a-source-control-plug-in.md) Details. Diese Funktion wird aufgerufen, wenn nur [SccInitialize](../extensibility/sccinitialize-function.md) gibt die `SCC_CAP_RUNSCC` Funktion Bit (finden Sie unter [Capability Flags](../extensibility/capability-flags.md) Weitere Informationen zu diesem und anderen Funktionsbits).  
+ Diese Funktion wird in der Regel aufgerufen, wenn der Benutzer auswählt der **starten \<Quellcodeverwaltungsserver >** aus der **Datei** -> **Quellcodeverwaltung** ein Menü. Dies **starten** Menüoption immer deaktiviert oder sogar durch Festlegen eines Registrierungseintrags ausgeblendet werden kann. Weitere Informationen finden Sie unter [How to: Ein Datenquellen-Steuerelement-Plug-in installieren](../extensibility/internals/how-to-install-a-source-control-plug-in.md) Details. Diese Funktion wird aufgerufen, wenn nur [SccInitialize](../extensibility/sccinitialize-function.md) gibt die `SCC_CAP_RUNSCC` Funktion Bit (finden Sie unter [Capability Flags](../extensibility/capability-flags.md) Weitere Informationen zu diesem und anderen Funktionsbits).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Quellcodeverwaltungsfunktionen-Plug-in-API](../extensibility/source-control-plug-in-api-functions.md)   
  [Vorgehensweise: Installieren eines Quellcodeverwaltungs-Plug-in](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
  [Funktionsflags](../extensibility/capability-flags.md)   
  [SccInitialize](../extensibility/sccinitialize-function.md)
-

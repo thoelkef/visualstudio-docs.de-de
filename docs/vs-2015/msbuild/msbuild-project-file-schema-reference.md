@@ -1,14 +1,9 @@
 ---
 title: Referenz zum MSBuild-Projektdateischema | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -20,18 +15,17 @@ ms.assetid: d9a68146-1f43-4621-ac78-2c8c3f400936
 caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cd1add4f68bb2e0648cf3cf08b72b1bc6f592595
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 847fa53acad63cec151222521ed8f85090c52080
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305980"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660527"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>Referenz zum MSBuild-Projektdateischema
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Enthält eine Tabelle mit allen XML-Schemaelementen von [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] sowie ihren verfügbaren Attributen und untergeordneten Elementen.  
   
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] verwendet Projektdateien, um der Build-Engine anzuzeigen, was wie erstellt werden soll. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projektdateien sind XML-Dateien, für die das [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-XML-Schema gilt. Dieser Abschnitt beschreibt die XML-Schemadefinitionsdatei (XSD) für [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
@@ -68,5 +62,3 @@ Enthält eine Tabelle mit allen XML-Schemaelementen von [!INCLUDE[vstecmsbuild](
  [Conditions](../msbuild/msbuild-conditions.md)  (MSBuild-Bedingungen)  
  [MSBuild-Referenz](../msbuild/msbuild-reference.md)  
  [MSBuild](msbuild.md)
-
-

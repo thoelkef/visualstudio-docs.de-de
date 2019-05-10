@@ -1,7 +1,6 @@
 ---
-title: Verwenden Sie und konfigurieren Sie die Roslyn-Analysetools
-ms.date: 03/26/2018
-ms.prod: visual-studio-dev15
+title: Regelschweregrad Analyzer und unterdrücken
+ms.date: 03/26/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -9,17 +8,17 @@ helpviewer_keywords:
 - Roslyn analyzers
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 660abf31d764d0dd78b4d83c46d0931fb790f14f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 56637ee7826b944d739e170faf22ae354abd8adc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873222"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821423"
 ---
-# <a name="configure-and-use-roslyn-analyzer-rules"></a>Konfigurieren und Verwenden von Roslyn-Analyzer-Regeln
+# <a name="use-roslyn-analyzers"></a>Verwenden von Roslyn-Analysetools
 
 .NET Compiler Platform ("Roslyn") Analyzer-Regeln, oder *Diagnose*, Ihren C#- oder Visual Basic-Code analysieren, während der Eingabe. Jeder Diagnose enthält einen Standardzustand Schweregrad und unterdrücken, der für Ihr Projekt überschrieben werden kann. Dieser Artikel behandelt die Einstellung Schweregrad für Regelsatz, verwenden von Regelsätzen und Unterdrücken von Verletzungen.
 
@@ -47,12 +46,17 @@ Die Symbole neben jeder Diagnose in **Projektmappen-Explorer** entsprechen den S
 
 ## <a name="rule-sets"></a>Regelsätze
 
-Ein [Regelsatz](../code-quality/using-rule-sets-to-group-code-analysis-rules.md) ist eine XML-Datei, die den Schweregrad und Unterdrücken von Status für die einzelnen-Diagnose speichert. Regelsätze gelten, in ein einzelnes Projekt, und ein Projekt kann mehrere Regelsätze aufweisen. Um den aktiven Regelsatz, der im Editor anzuzeigen, mit der Maustaste auf die **Analysen** Knoten **Projektmappen-Explorer** , und wählen Sie **öffnen aktiven Regelsatz**. In diesem ersten Sie greifen auf die Regel festlegen, eine Datei namens  *\<Projektname > ruleSet* wird dem Projekt hinzugefügt und wird im **Projektmappen-Explorer**.
+Ein [Regelsatz](../code-quality/using-rule-sets-to-group-code-analysis-rules.md) ist eine XML-Datei, die den Schweregrad und Unterdrücken von Status für die einzelnen-Diagnose speichert.
 
 > [!NOTE]
-> Regelsätze gehören sowohl die Analyse von statischem (binären) Code als auch die Roslyn-Analyzer-Regeln.
+> Regelsätze können Regeln von Roslyn-Analysetools und Analyse von statischem (binären) Code enthalten.
 
-Sie können ändern, den aktiven Regelsatz für ein Projekt auf die **Codeanalyse** auf der Registerkarte Eigenschaften des Projekts. Wählen Sie den Regelsatz in der **diesen Regelsatz ausführen** Dropdown-Liste. Sie können auch den Regelsatz aus öffnen die **Codeanalyse** Eigenschaftenseite dazu **öffnen**.
+Um den aktiven Regelsatz, der in dem Regelsatz-Editor zu bearbeiten, mit der Maustaste auf die **Verweise** > **Analysen** Knoten **Projektmappen-Explorer** , und wählen Sie **Öffnen aktiven Regelsatz**. Ist dies beim ersten bearbeiten Sie den Regelsatz, Visual Studio erstellt eine Kopie der Standardregel, die Datei festlegen, das den Namen  *\<Projektname > ruleSet*, und fügt sie dem Projekt hinzu. Diese benutzerdefinierte Regel, die auch festgelegt wird, den aktiven Regelsatz, der für Ihr Projekt.
+
+Navigieren Sie zu, um den aktiven Regelsatz für ein Projekt zu ändern, die **Codeanalyse** auf der Registerkarte Eigenschaften des Projekts. Wählen Sie den Regelsatz aus der Liste unter **diesen Regelsatz ausführen**. Wählen Sie zum Öffnen des Regelsatzes **öffnen**.
+
+> [!NOTE]
+> .NET Core und .NET Standard-Projekte unterstützen nicht die Befehle im Menü aus, für die Regelsätze im **Projektmappen-Explorer**, z. B. **öffnen aktiven Regelsatz**. An einen nicht standardmäßigen Regelsatz für ein .NET Core oder .NET Standard-Projekt manuell [Hinzufügen der **CodeAnalysisRuleSet** Eigenschaft, um die Projektdatei](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project). Sie können die Regeln in der Regel in der Visual Studio festgelegt, dass die Regelsatz-Editor-Benutzeroberfläche konfigurieren.
 
 ## <a name="rule-severity"></a>Regelschweregrad
 
@@ -64,7 +68,7 @@ Sie können den Schweregrad der Analyzer-Regeln konfigurieren oder *Diagnose*, w
 |Warnung|Verletzungen angezeigt werden, als *Warnungen* in die **Fehlerliste** und in der Befehlszeile Buildausgabe, verursachen jedoch keine Builds fehlschlagen.|Problematische Code ist mit einem grünen durch ein kleines grünes Feld auf der Schiebeleiste markiert und Wellenlinien unterstrichen.|
 |Info|Verletzungen angezeigt werden, als *Nachrichten* in die **Fehlerliste**, und nicht in Build per Befehlszeile Ausgabe.|Problematische Code ist mit einem grau markiert, indem eine kleine graue Feld in der Bildlaufleiste und Wellenlinien unterstrichen.|
 |Hidden|Nicht sichtbare für Benutzer.|Nicht sichtbare für Benutzer. Die Diagnose wird jedoch an die IDE-Diagnose-Engine gemeldet.|
-|Keine|Unterdrückt vollständig.|Unterdrückt vollständig.|
+|Keiner|Unterdrückt vollständig.|Unterdrückt vollständig.|
 
 Darüber hinaus, Sie können "Zurücksetzen" des Schweregrads einer Regel durch Festlegung auf **Standard**. Jede Diagnose weist einen standardschweregrad, die in angezeigt werden die **Eigenschaften** Fenster.
 
@@ -80,7 +84,7 @@ Sie können ändern, den Schweregrad einer Regel aus **Projektmappen-Explorer**,
 
 ![Die Regelsatzdatei im Projektmappen-Explorer](media/ruleset-in-solution-explorer.png)
 
-### <a name="to-set-rule-severity-from-solution-explorer"></a>Projektmappen-Explorer Schweregrad für Regelsatz festlegen
+### <a name="set-rule-severity-from-solution-explorer"></a>Festlegen Sie Schweregrad für Regelsatz, im Projektmappen-Explorer
 
 1. In **Projektmappen-Explorer**, erweitern Sie **Verweise** > **Analysen** (**Abhängigkeiten**  >  **Analysen** für .NET Core-Projekte).
 
@@ -90,9 +94,9 @@ Sie können ändern, den Schweregrad einer Regel aus **Projektmappen-Explorer**,
 
    Der Schweregrad für die Regel wird in der aktiven Regelsatzdatei gespeichert.
 
-### <a name="to-set-rule-severity-in-the-rule-set-file"></a>Festzulegende Regel Regelsatzdatei Schweregrad in der Regel
+### <a name="set-rule-severity-in-the-rule-set-file"></a>Festlegen Sie Schweregrad für Regelsatz, in der Regelsatzdatei
 
-1. Öffnen die Regel legen-Datei durch Doppelklick im **Projektmappen-Explorer**, wählen **öffnen aktiven Regelsatz** auf das Kontextmenü des der **Analysen** Knoten oder durch auswählen **Öffnen** auf die **Codeanalyse** Eigenschaftenseite für das Projekt.
+1. Öffnen der [Regelsatz](analyzer-rule-sets.md) Datei durch Doppelklick im **Projektmappen-Explorer**, wählen **öffnen aktiven Regelsatz** auf das Kontextmenü des der **Analysen** Knoten, oder indem **öffnen** auf die **Codeanalyse** Eigenschaftenseite für das Projekt.
 
 1. Navigieren Sie zu der Regel durch Erweitern der enthaltenden Assembly.
 
@@ -104,42 +108,42 @@ Sie können ändern, den Schweregrad einer Regel aus **Projektmappen-Explorer**,
 
 Es gibt mehrere Möglichkeiten, um Verletzungen zu unterdrücken:
 
-- Um alle aktuellen Verstöße zu unterdrücken, wählen Sie **analysieren** > **Codeanalyse ausführen und aktive Probleme unterdrücken** in der Menüleiste. Dies wird manchmal als "Baselining" bezeichnet.
+- Von der **analysieren** Menü
 
-- Um eine Diagnose aus zu unterdrücken, **Projektmappen-Explorer**, legen Sie den Schweregrad auf **keine**.
+   Wählen Sie **analysieren** > **Codeanalyse ausführen und aktive Probleme unterdrücken** in der Menüleiste, um alle aktuellen Verstöße zu unterdrücken. Dies wird manchmal als "Baselining" bezeichnet.
 
-- Um eine Diagnose aus dem Regelsatz-Editor zu unterdrücken, deaktivieren Sie das Kontrollkästchen neben seinem Namen aus, oder legen Sie **Aktion** zu **keine**.
+- Von **Projektmappen-Explorer**
 
-- Um eine Diagnose im Code-Editor zu unterdrücken, platzieren Sie den Cursor in die Zeile des Codes, mit der Verletzung und drücken Sie **STRG**+**.** zum Öffnen der **Schnellaktionen** Menü. Wählen Sie **unterdrücken CAxxxx** > **In Quelle** oder **unterdrücken CAxxxx** > **In Unterdrückungsdatei**.
+   Um einen Verstoß in zu unterdrücken, **Projektmappen-Explorer**, legen Sie den Schweregrad der Regel auf **keine**.
+
+- Von der **Regelsatz-Editor**
+
+   Um einen Verstoß aus dem Regelsatz-Editor zu unterdrücken, deaktivieren Sie das Kontrollkästchen neben seinem Namen aus, oder legen Sie **Aktion** zu **keine**.
+
+- Von der **Code-Editor**
+
+   Um einen Verstoß im Code-Editor zu unterdrücken, platzieren Sie den Cursor in die Zeile des Codes, mit der Verletzung und drücken Sie **STRG**+**.** zum Öffnen der **Schnellaktionen** Menü. Wählen Sie **unterdrücken CAXXXX** > **in Quelle/in Unterdrückungsdatei**.
 
    ![Vom Menü "schnelle Aktionen" Diagnose unterdrücken](media/suppress-diagnostic-from-editor.png)
 
-- Um eine Diagnose aus zu unterdrücken, die **Fehlerliste**, finden Sie unter [unterdrücken Verstöße aus der Fehlerliste](#suppress-violations-from-the-error-list).
+- Von der **Fehlerliste**
 
-### <a name="suppress-violations-from-the-error-list"></a>Unterdrücken von Verletzungen, aus der Fehlerliste
+   Können Sie eine Diagnose aus einem oder mehreren Unterdrücken der **Fehlerliste** durch Auswählen der gewünschten unterdrückt werden sollen, und klicken Sie dann mit der rechten Maustaste und Auswählen von **unterdrücken** > **In Source/In Unterdrückungsdatei**.
 
-Können Sie eine Diagnose aus einem oder mehreren Unterdrücken der **Fehlerliste** durch Auswählen der gewünschten unterdrückt werden sollen, und klicken Sie dann mit der rechten Maustaste und Auswählen von **unterdrücken** > **In Quelle**  oder **unterdrücken** > **In Unterdrückungsdatei**.
+   - Wenn Sie unterdrücken **In Quelle**, **Vorschau der Änderungen** Dialogfeld wird geöffnet und zeigt eine Vorschau des der C# [#pragma-Warnung](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) oder Visual Basic [#Disable Warnung](/dotnet/visual-basic/language-reference/directives/directives) Richtlinie, die den Quellcode hinzugefügt wird.
 
-- Bei Auswahl von **In Quelle**, **Vorschau der Änderungen** Dialogfeld wird geöffnet und zeigt eine Vorschau der C#- [#pragma-Warnung](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) oder Visual Basic [#Disable Warning](/dotnet/visual-basic/language-reference/directives/directives) Richtlinie, die den Quellcode hinzugefügt wird.
+      ![Vorschau der #pragma-Warnung in der Codedatei hinzufügen](media/pragma-warning-preview.png)
 
-   ![Vorschau der #pragma-Warnung in der Codedatei hinzufügen](media/pragma-warning-preview.png)
+   - Bei Auswahl von **In Unterdrückungsdatei**, **Vorschau der Änderungen** Dialogfeld wird geöffnet und zeigt eine Vorschau des der <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> -Attribut, das die globale Unterdrückungen-Datei hinzugefügt wird.
 
-- Bei Auswahl von **In Unterdrückungsdatei**, **Vorschau der Änderungen** Dialogfeld wird geöffnet und zeigt eine Vorschau des der <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> -Attribut, das die globale Unterdrückungen-Datei hinzugefügt wird.
+      ![Vorschau der Unterdrückungsdatei SuppressMessage-Attributs hinzugefügt](media/preview-changes-in-suppression-file.png)
 
-   ![Vorschau der Unterdrückungsdatei SuppressMessage-Attributs hinzugefügt](media/preview-changes-in-suppression-file.png)
+   In der **Vorschau der Änderungen** wählen Sie im Dialogfeld **übernehmen**.
 
-In der **Vorschau der Änderungen** wählen Sie im Dialogfeld **übernehmen**.
-
-Die **Fehlerliste** zeigt Diagnose oder die Regel Verletzungen, sowohl live-Codeanalyse und erstellen. Da die Build-Diagnose veraltet sein können, z. B. Wenn Sie haben den Code zur Behebung des Verstoßes bearbeitet, aber noch nicht neu erstellt, Sie können nicht unterdrücken, diese Diagnose von der **Fehlerliste**. Allerdings Diagnose von live-Analyse oder IntelliSense, sind immer auf dem neuesten Stand mit aktuellen Datenquellen und kann unterdrückt werden, aus der **Fehlerliste**. Wenn die Unterdrückung-Option im Menü mit der rechten Maustaste noch ein Kontext deaktiviert ist, ist es wahrscheinlich, weil Sie eine oder mehrere-Diagnose in Ihrer Auswahl Build. Wechseln Sie zum Ausschließen der Build-Diagnose in die Auswahl der **Fehlerliste** Quellfilter aus **erstellen + IntelliSense** zu **Intellisense nur**. Wählen Sie die Diagnose zu unterdrücken, und fahren Sie fort, wie zuvor beschrieben.
-
-![Fehler Quelle Listenfilter in Visual Studio](media/error-list-filter.png)
-
-> [!NOTE]
-> In einem .NET Core-Projekt Wenn Sie einen Verweis auf ein Projekt hinzufügen, die NuGet-Analysetools, werden diese Analysen automatisch das abhängige Projekt zu hinzugefügt. So deaktivieren Sie dieses Verhalten, z. B. das abhängige Projekt ist ein Komponententestprojekt, markieren Sie das NuGet-Paket als privat in der *csproj* oder *vbproj* -Datei des Projekts auf die verwiesen wird:
->
-> ```xml
-> <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.6.0" PrivateAssets="all" />
-> ```
+   > [!NOTE]
+   > Wenn Sie nicht sehen die **unterdrücken** Menüoption im **Projektmappen-Explorer**, die Verletzung stammt wahrscheinlich von Build und nicht als live-Analyse. Die **Fehlerliste** zeigt Diagnose oder die Regel Verletzungen, sowohl live-Codeanalyse und erstellen. Da die Build-Diagnose veraltet sein können, z. B. Wenn Sie haben den Code zur Behebung des Verstoßes bearbeitet, aber noch nicht neu erstellt, Sie können nicht unterdrücken, diese Diagnose von der **Fehlerliste**. Diagnose von live-Analyse und IntelliSense, sind immer auf dem neuesten Stand mit aktuellen Datenquellen und kann unterdrückt werden, aus der **Fehlerliste**. Auszuschließende *erstellen* eine Diagnose aus der Auswahl wechseln die **Fehlerliste** Quellfilter aus **erstellen + IntelliSense** zu **Intellisense nur**. Wählen Sie die Diagnose zu unterdrücken, und fahren Sie fort, wie zuvor beschrieben.
+   >
+   > ![Fehler Quelle Listenfilter in Visual Studio](media/error-list-filter.png)
 
 ## <a name="command-line-usage"></a>Die Verwendung der Befehlszeile
 
@@ -165,6 +169,14 @@ msbuild myproject.csproj /target:rebuild /verbosity:minimal
 Die folgende Abbildung zeigt die Ausgabe erstellen über die Befehlszeile beim Erstellen eines Projekts, das einen Regelverstoß Analyzer enthält:
 
 ![MSBuild-Ausgabe mit Regelverstoß](media/command-line-build-analyzers.png)
+
+## <a name="dependent-projects"></a>Abhängige Projekte
+
+In einem .NET Core-Projekt Wenn Sie einen Verweis auf ein Projekt hinzufügen, die NuGet-Analysetools, werden diese Analysen automatisch das abhängige Projekt zu hinzugefügt. So deaktivieren Sie dieses Verhalten, z. B. das abhängige Projekt ist ein Komponententestprojekt, markieren Sie das NuGet-Paket als privat in der *csproj* oder *vbproj* -Datei des Projekts auf die verwiesen wird durch Festlegen der **PrivateAssets** Attribut:
+
+```xml
+<PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
+```
 
 ## <a name="see-also"></a>Siehe auch
 

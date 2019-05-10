@@ -7,14 +7,13 @@ helpviewer_keywords:
 ms.assetid: 51cbe7d6-5dfd-4842-bca3-f7f8a665dc84
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 896975330db08a0121aedd4bf3bea38f660e17fc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: c1e94bb6da2786b989208ea1104d509883bc0724
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931267"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970665"
 ---
 # <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Vorgehensweise: Festlegen der Abtastrate für die Einstellung eines Auslastungstestlaufs
 
@@ -37,19 +36,19 @@ Die folgende Tabelle enthält Richtlinien für die Samplingraten:
 
 ## <a name="to-specify-performance-counter-sampling-rate-in-a-run-setting"></a>So geben Sie die Leistungsindikator-Samplingrate in einer Testlaufeinstellung an
 
-1.  Öffnen Sie einen Auslastungstest.
+1. Öffnen Sie einen Auslastungstest.
 
      Der **Auslastungstest-Editor** wird angezeigt. Die Auslastungsteststruktur wird angezeigt.
 
-2.  Klicken Sie in der Auslastungsteststruktur im Ordner **Laufzeiteinstellungen** auf die Laufzeiteinstellung, für die Sie die Samplingrate angeben möchten.
+2. Klicken Sie in der Auslastungsteststruktur im Ordner **Laufzeiteinstellungen** auf die Laufzeiteinstellung, für die Sie die Samplingrate angeben möchten.
 
-3.  Klicken Sie im Menü **Ansicht** auf **Eigenschaftenfenster**.
+3. Klicken Sie im Menü **Ansicht** auf **Eigenschaftenfenster**.
 
      Die Kategorien und Eigenschaften der Testlaufeinstellung werden im **Eigenschaftenfenster** angezeigt.
 
-4.  Geben Sie in der Eigenschaft **Samplingrate** einen Zeitwert ein, der die Häufigkeit angibt, mit der Leistungsindikatordaten beim Auslastungstest gesammelt werden.
+4. Geben Sie in der Eigenschaft **Samplingrate** einen Zeitwert ein, der die Häufigkeit angibt, mit der Leistungsindikatordaten beim Auslastungstest gesammelt werden.
 
-5.  Nachdem die Änderungen der Eigenschaft abgeschlossen sind, klicken Sie im Menü **Datei** auf die Option **Speichern**. Anschließend können Sie den Auslastungstest mit dem neuen Wert für **Samplingrate** ausführen.
+5. Nachdem die Änderungen der Eigenschaft abgeschlossen sind, klicken Sie im Menü **Datei** auf die Option **Speichern**. Anschließend können Sie den Auslastungstest mit dem neuen Wert für **Samplingrate** ausführen.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -6,14 +6,13 @@ helpviewer_keywords:
 - load testing, quickstart
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 34127eb64ffbe4f9285e5e5efb215409b6997141
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: c6703221f9db06ca8edba68a2f2bcc9b79a5d531
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968455"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62784747"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Schnellstart: Erstellen eines Auslastungstestprojekts
 
@@ -23,13 +22,13 @@ In diesem Schnellstart, der etwa zehn Minuten Ihrer Zeit in Anspruch nimmt, wird
 
 ## <a name="software-requirements"></a>Softwareanforderungen
 
-Testprojekte für Webleistung und Auslastung sind nur in der Enterprise Edition von Visual Studio verfügbar.
+Testprojekte für Webleistung und Auslastung sind nur in der **Enterprise Edition** von Visual Studio verfügbar.
 
 ## <a name="install-the-load-testing-component"></a>Installieren der Auslastungstestkomponente
 
 Wenn Sie noch keine Komponente für Tools für Webleistung und Auslastungstests installiert haben, müssen Sie diese über den Visual Studio-Installer installieren.
 
-1. Öffnen Sie den **Visual Studio-Installer** über das Windows-**Startmenü**. Sie können auch in Visual Studio über das Dialogfeld **Neues Projekt** oder durch Klicken auf **Extras** > **Tools und Features abrufen** in der Menüleiste auf den Installer zugreifen.
+1. Öffnen Sie den **Visual Studio-Installer** über das Windows-**Startmenü**. Sie können auch in Visual Studio über das Dialogfeld „Neues Projekt“ oder durch Klicken auf **Extras** > **Tools und Features abrufen** in der Menüleiste auf den Installer zugreifen.
 
 1. Klicken Sie im **Visual Studio-Installer** auf die Registerkarte **Einzelne Komponenten**, und scrollen Sie nach unten zum Abschnitt **Debuggen und Testen**. Wählen Sie **Tools für Webleistung und Auslastungstests** aus.
 
@@ -43,15 +42,33 @@ Wenn Sie noch keine Komponente für Tools für Webleistung und Auslastungstests 
 
 In diesem Abschnitt wird das Erstellen eines Auslastungstestprojekts in C# erläutert. Wenn Ihnen das lieber ist, können Sie Ihr Auslastungstestprojekt auch in Visual Basic erstellen.
 
-1. Öffnen Sie Visual Studio, und klicken Sie in der Menüleiste auf **Datei** > **Neu** > **Projekt**.
+::: moniker range="vs-2017"
+
+1. Öffnen Sie Visual Studio.
+
+2. Wählen Sie in der Menüleiste **Datei** >**Neu** > **Projekt**.
 
    Das Dialogfeld **Neues Projekt** wird angezeigt.
 
-1. Erweitern Sie im Dialogfeld **Neues Projekt** die Option **Installiert** und dann die Option **Visual C#**, wählen Sie dann die Kategorie **Test** aus. Wählen Sie die Vorlage **Testprojekt für Webleistung und Auslastung** aus.
+3. Erweitern Sie im Dialogfeld **Neues Projekt** die Option **Installiert** und dann die Option **Visual C#**, wählen Sie dann die Kategorie **Test** aus. Wählen Sie die Vorlage **Testprojekt für Webleistung und Auslastung** aus.
 
    ![Vorlage „Testprojekt für Webleistung und Auslastung“](media/web-perf-load-test-project-template.png)
 
-1. Benennen Sie das Projekt, wenn Sie den Standardnamen nicht verwenden möchten, und klicken Sie dann auf **OK**.
+4. Benennen Sie das Projekt, wenn Sie den Standardnamen nicht verwenden möchten, und klicken Sie dann auf **OK**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Öffnen Sie Visual Studio.
+
+2. Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
+
+3. Geben Sie auf der Seite **Neues Projekts erstellen** in das Suchfeld **Webtest** ein, und wählen Sie dann die Vorlage **Testprojekt für Webleistung und Auslastung \[veraltet]** für C#. Wählen Sie **Weiter** aus.
+
+4. Benennen Sie das Projekt, wenn Sie den Standardnamen nicht verwenden möchten, und wählen Sie **OK**.
+
+::: moniker-end
 
    Visual Studio erstellt das Projekt und zeigt die Dateien im **Projektmappen-Explorer** an. Das Projekt enthält zu Beginn nur eine Webtestdatei namens *WebTest1.webtest*.
 

@@ -1,29 +1,27 @@
 ---
 title: Tipps und Tricks zur Barrierefreiheit für Visual Studio
 description: Informationen zu Tipps und Tricks, die Ihnen dabei helfen sollen, die Visual Studio-IDE für jeden Benutzer, einschließlich Benutzer mit einer Behinderung, leichter zugänglich zu machen
-ms.date: 09/15/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
+ms.date: 02/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
 ms.assetid: 6b491d88-f79e-4686-8841-857624bdcfda
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 473f46e87ded78e134ab021b68c57248f8ac1a33
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: e86791e77d5c8f6eb1e6b88ac663e1f11cc53e1e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349204"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793309"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Tipps und Tricks zur Barrierefreiheit für Visual Studio
 
 > [!TIP]
-> Weitere Informationen zu aktuellen Barrierefreiheitupdates finden Sie im Blogbeitrag [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Verbesserungen der Barrierefreiheit in Visual Studio 2017 [Version 15.3]).
+> Weitere Informationen zu Updates zur Barrierefreiheit finden Sie im Blogbeitrag [Accessibility improvements in Visual Studio 2017 version 15.3 (Verbesserungen der Barrierefreiheit in Visual Studio 2017, Version 15.3)](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/).
 
 Visual Studio verfügt über integrierte Barrierefreiheitsfunktionen, die mit Sprachausgaben und anderen Hilfstechnologien kompatibel sind. In diesem Thema werden allgemeine Tastenkombinationen aufgeführt, die Sie verwenden können, um Aufgaben nur über die Tastatur auszuführen. Außerdem werden Informationen darüber bereitgestellt, wie Sie die Designs mit hohem Kontrast zum Verbessern der Sichtbarkeit verwenden. Außerdem erfahren Sie, wie Anmerkungen verwendet werden, um nützliche Informationen über Ihren Code anzuzeigen. Sie erhalten ebenfalls Informationen darüber, wie Sie Sounds für Build- und Breakpointereignisse festlegen.
 
@@ -42,7 +40,7 @@ Einige Personen haben Schwierigkeiten damit, manche Farben zu erkennen. Wenn Sie
 
 ## <a name="use-annotations-to-reveal-useful-information-about-your-code"></a>Verwenden von Anmerkungen, um nützliche Informationen über Ihren Code anzuzeigen
 
-Der Visual Studio-Editor enthält viele Randsteuerelemente für den Text, die Sie über Charakteristiken und Funktionen an bestimmten Punkten einer Codezeile informieren, z.B. Glühbirnen, Wellenlinien für Fehler und Warnungen, Lesezeichen usw. Sie können den Befehlssatz „Zeilenanmerkungen anzeigen“ verwenden, um diese Randsteuerelemente zu ermitteln und zwischen diesen zu navigieren.
+Der Visual Studio-Editor enthält viele Randsteuerelemente für den Text, die Sie über Charakteristiken und Funktionen an bestimmten Punkten einer Codezeile informieren, z. B. die Schraubendreher- und Glühbirnensymbole, Wellenlinien für Fehler und Warnungen, Lesezeichen usw. Sie können den Befehlssatz „Zeilenanmerkungen anzeigen“ verwenden, um diese Randsteuerelemente zu ermitteln und zwischen diesen zu navigieren.
 
   ![Verwenden des Befehlssatzes „Zeilenanmerkungen anzeigen“](media/show-line-annotations-command-set.png)
 
@@ -50,7 +48,7 @@ Der Visual Studio-Editor enthält viele Randsteuerelemente für den Text, die Si
 
 Die Visual Studio-IDE verfügt genau wie viele andere Toolfenster über Symbolleisten. Die folgenden Tastenkombinationen helfen Ihnen, auf diese zuzugreifen.
 
-|Feature|Beschreibung |Tastenkombination|
+|Feature|Beschreibung|Tastenkombination|
 |-------------|-----------------| - |
 |IDE-Symbolleisten|Wählen Sie die erste Schaltfläche in der Standardsymbolleiste.|**ALT**, **STRG** + **TAB**|
 |Symbolleisten des Toolfensters|Verschieben Sie den Fokus zu den Symbolleisten in einem Toolfenster. <br> <br> **HINWEIS:** Dies funktioniert für die meisten Toolfenster, jedoch nur, wenn sich der Fokus in einem Toolfenster befindet. Sie müssen außerdem die UMSCHALTTASTE vor der ALT-TASTE drücken. In einigen Toolfenstern wie Team Explorer müssen Sie die UMSCHALTTASTE einen Moment gedrückt halten, bevor Sie die ALT-TASTE drücken.|**UMSCHALT** + **ALT**|
@@ -60,15 +58,16 @@ Die Visual Studio-IDE verfügt genau wie viele andere Toolfenster über Symbolle
 
 Zu diesen Tastenkombinationen gehören:
 
-|Feature|Beschreibung |Tastenkombination|
+|Feature|Beschreibung|Tastenkombination|
 |-------------|-----------------| - |
 |IDE|Hohen Kontrast ein- und ausschalten <br> <br> **HINWEIS:** Windows-Standardtastenkombination|**LINKE ALT-TASTE+LINKE UMSCHALTTASTE+DRUCK**|
 |Dialogfeld|Aktivieren oder deaktivieren Sie die Kontrollkästchenoption in einem Dialogfeld. <br> <br> **HINWEIS:** Windows-Standardtastenkombination|**LEERTASTE**|
 |Kontextmenüs|Öffnen Sie ein Kontextmenü (Rechtsklick). <br> <br> **HINWEIS:** Windows-Standardtastenkombination|**UMSCHALT** + **F10**|
-|Menüs|Greifen Sie schnell auf ein Menüelement mithilfe der Zugriffstasten zu. Drücken Sie die **ALT**-TASTE gefolgt von den unterstrichenen Buchstaben in einem Menü, um den Befehl zu aktivieren. Um z.B. das Dialogfeld „Projekt öffnen“ in Visual Studio anzuzeigen, wählen Sie **ALT** + **F** + **O** + **P** aus.  <br><br> **HINWEIS:** Windows-Standardtastenkombination|**ALT** + **[Buchstabe]**|
+|Menüs|Greifen Sie schnell auf ein Menüelement mithilfe der Zugriffstasten zu. Drücken Sie die **ALT**-Taste gefolgt von den unterstrichenen Buchstaben in einem Menü, um den Befehl zu aktivieren. Wenn z.B. das Dialogfeld „Projekt öffnen“ in Visual Studio angezeigt werden soll, wählen Sie **ALT** + **F** + **O** + **P** aus.  <br><br> **HINWEIS:** Windows-Standardtastenkombination|**ALT** + **[Buchstabe]**|
+|Suchfeld|Verwenden des Suchfeatures in Visual Studio|**Strg** + **Q**|
 |Fenster „Toolbox“|Wechseln Sie zwischen Toolboxregisterkarten.|**STRG** + **NACH-OBEN-TASTE**<br /><br /> und<br /><br /> **STRG** + **NACH-UNTEN-TASTE**|
 |Fenster „Toolbox“|Fügen Sie ein Steuerelement aus der Toolbox zu einem Formular oder einem Designer hinzu.|**EINGABETASTE**|
-|Tastatur, Umgebung, Dialogfeld „Optionen“|Löschen Sie die Tastenkombination, die unter **Tastenkombination drücken** eingegeben wurde.|**RÜCKTASTE**|
+|Dialogfeld „Optionen“: Umgebung > Tastatur|Löschen Sie die Tastenkombination, die unter **Tastenkombination drücken** eingegeben wurde.|**RÜCKTASTE**|
 
 > [!NOTE]
 > Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen.
@@ -77,12 +76,12 @@ Zu diesen Tastenkombinationen gehören:
 
 Sie können das Sound-Applet in Windows verwenden, um Visual Studio-Programmereignissen einen Sound zuzuweisen. Insbesondere können Sie folgenden Programmereignissen Sounds zuweisen:
 
- * Haltepunkt erreicht
- * Buildvorgang abgebrochen
- * Fehler beim Buildvorgang
- * Buildvorgang erfolgreich
+* Haltepunkt erreicht
+* Buildvorgang abgebrochen
+* Fehler beim Buildvorgang
+* Buildvorgang erfolgreich
 
-Gehen Sie folgendermaßen vor:
+Gehen Sie dabei folgendermaßen vor:
 
 1. Geben Sie auf einem Computer mit Windows 10 **Systemsounds ändern** in das Feld **Suche** ein.
 

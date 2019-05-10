@@ -1,23 +1,21 @@
 ---
 title: Datenwerte zur Speicherbelegung und Objektlebensdauer | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - .NET memory profiling method
 - Profiling Tools, .NET memory method
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27922f227c6791ad4b64b3258f9107d28b21a964
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 9fc9dd62c3d264d3b502845cb4d0f3e9c2a8fa78
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34476729"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821881"
 ---
 # <a name="understand-memory-allocation-and-object-lifetime-data-values"></a>Datenwerte zur Speicherbelegung und Objektlebensdauer
 

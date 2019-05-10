@@ -2,18 +2,17 @@
 title: Arbeitsbereiche in Visual Studio | Microsoft-Dokumentation
 ms.date: 02/21/2018
 ms.topic: conceptual
-ms.assetid: 3489592a-dc0c-4cd3-9b08-cd367626980a
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 406d55b773a586d5cb0128599e225dabbadf21d3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 011781b434c4d005e473c5f97c60a9269dc5d034
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876902"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952762"
 ---
 # <a name="workspaces"></a>Arbeitsbereiche
 
@@ -176,9 +175,21 @@ Ein UI-Kontext kann verwendet werden, um das Paket automatisch laden. Der Wert i
 
 ### <a name="the-sourceexplorerpackage-package-did-not-load-correctly"></a>Das Paket SourceExplorerPackage wurde nicht ordnungsgemäß geladen.
 
-Arbeitsbereich Erweiterbarkeit ist stark MEF-basierte und Komposition Fehler bewirken, dass das Ordner öffnen, um Fehler beim Laden der hosting-Paket. Wenn eine Erweiterung ein Typs mit exportiert z. B. `ExportFileContextProviderAttribute`, aber der Typ nur implementiert `IWorkspaceProviderFactory<IFileContextActionProvider>`, wird eine Fehlermeldung beim Versuch, einen Ordner in Visual Studio zu öffnen. Fehlerdetails finden Sie in _%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_. Beheben Sie alle Fehler für Typen bereit, die durch die Erweiterung implementiert.
+Arbeitsbereich Erweiterbarkeit ist stark MEF-basierte und Komposition Fehler bewirken, dass das Ordner öffnen, um Fehler beim Laden der hosting-Paket. Wenn eine Erweiterung ein Typs mit exportiert z. B. `ExportFileContextProviderAttribute`, aber der Typ nur implementiert `IWorkspaceProviderFactory<IFileContextActionProvider>`, wird eine Fehlermeldung beim Versuch, einen Ordner in Visual Studio zu öffnen.
+
+::: moniker range="vs-2017"
+
+Fehlerdetails finden Sie in _%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_. Beheben Sie alle Fehler für Typen bereit, die durch die Erweiterung implementiert.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Fehlerdetails finden Sie in _%LOCALAPPDATA%\Microsoft\VisualStudio\16.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_. Beheben Sie alle Fehler für Typen bereit, die durch die Erweiterung implementiert.
+
+::: moniker-end
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-* [Datei Kontexten](workspace-file-contexts.md) -dateianbieter-Kontext bringen Code Intelligence für Arbeitsbereiche, die "Ordner öffnen". 
+* [Datei Kontexten](workspace-file-contexts.md) -dateianbieter-Kontext bringen Code Intelligence für Arbeitsbereiche, die "Ordner öffnen".
 * [Indizierung](workspace-indexing.md) -Indizierung Arbeitsbereich erfasst und Informationen zum Arbeitsbereich beibehalten.

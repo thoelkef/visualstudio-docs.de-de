@@ -1,7 +1,6 @@
 ---
 title: -Upgrade („devenv.exe“)
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
 - /upgrade Devenv switch
@@ -10,46 +9,54 @@ helpviewer_keywords:
 ms.assetid: 3468045c-5cc9-4157-9a9d-622452145d27
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46e549dfdc661819dac00d0aa965616462130ad0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0fa2e2eaa583f7da0437907fdaa3e7af2fe4a0e2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944722"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789302"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
-Aktualisiert die Projektmappendatei und alle zugehörigen Projektdateien bzw. die angegebene Projektdatei mit den aktuellen , für diese Dateien gültigen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]-Formaten.
+
+Aktualisiert die Projektmappendatei und alle zugehörigen Projektdateien bzw. die angegebene Projektdatei mit den aktuellen, für diese Dateien gültigen Visual Studio-Formaten.
 
 ## <a name="syntax"></a>Syntax
 
-```cmd
-devenv SolutionFile | ProjectFile /upgrade
+```shell
+devenv {SolutionFile|ProjectFile} /Upgrade [/Out OutputFilename]
 ```
 
 ## <a name="arguments"></a>Argumente
- `SolutionFile`
 
- Dies ist erforderlich, sofern Sie eine vollständige Projektmappe und deren Projekte aktualisieren. Der Pfad und Name einer Projektmappendatei. Es reicht aus, nur den Namen der Projektmappendatei oder einen vollständigen Pfad und den Namen der Projektmappendatei einzugeben. Wenn der angegebene Ordner bzw. die Datei noch nicht vorhanden ist, wird der Ordner oder die Datei erstellt.
+- *SolutionFile*
 
- `ProjectFile`
+  Dies ist erforderlich, sofern Sie eine vollständige Projektmappe und deren Projekte aktualisieren. Der Pfad und Name einer Projektmappendatei. Es reicht aus, nur den Namen der Projektmappendatei oder einen vollständigen Pfad und den Namen der Projektmappendatei einzugeben. Wenn der angegebene Ordner bzw. die Datei noch nicht vorhanden ist, wird der Ordner oder die Datei erstellt.
 
- Dies ist erforderlich, sofern Sie ein einzelnes Projekt aktualisieren. Der Pfad und der Name einer Projektdatei innerhalb der Projektmappe. Es reicht aus, nur den Namen der Projektdatei oder einen vollständigen Pfad und den Namen der Projektdatei einzugeben. Wenn der angegebene Ordner bzw. die Datei noch nicht vorhanden ist, wird der Ordner oder die Datei erstellt.
+- *ProjectFile*
 
-## <a name="remarks"></a>Hinweise
- Es werden automatisch Sicherungen und in ein Verzeichnis mit der Bezeichnung "Backup" kopiert, das im aktuellen Verzeichnis erstellt wurde.
+  Dies ist erforderlich, sofern Sie ein einzelnes Projekt aktualisieren. Der Pfad und der Name einer Projektdatei innerhalb der Projektmappe. Es reicht aus, nur den Namen der Projektdatei oder einen vollständigen Pfad und den Namen der Projektdatei einzugeben. Wenn der angegebene Ordner bzw. die Datei noch nicht vorhanden ist, wird der Ordner oder die Datei erstellt.
 
- Der Quellcodeverwaltung unterliegende Projektmappen oder Projekte müssen ausgecheckt werden, bevor sie aktualisiert werden können.
+- `/Out` *OutputFilename*
 
- Bei Verwendung des Schalters `/upgrade` wird [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nicht gestartet. Die Ergebnisse des Upgrades sind im Upgradebericht für die Entwicklungssprache der Projektmappe oder des Projekts aufgeführt. Informationen zu Fehlern oder zur Verwendung werden nicht zurückgegeben. Weitere Informationen zum Upgraden von Projekten in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] finden Sie unter [Übertragung, Migration und Upgrade der Visual Studio-Projekte](../../porting/port-migrate-and-upgrade-visual-studio-projects.md).
+  Dies ist optional. Der Name der Datei, an die die Ausgabe des Tools gesendet werden soll. Wenn die Datei bereits vorhanden ist, fügt das Tool die Ausgabe an das Ende der Datei an.
+
+## <a name="remarks"></a>Anmerkungen
+
+Es werden automatisch Sicherungen erstellt und in ein Verzeichnis mit der Bezeichnung „Backup“ kopiert, das im aktuellen Verzeichnis erstellt wird.
+
+Der Quellcodeverwaltung unterliegende Projektmappen oder Projekte müssen ausgecheckt werden, bevor sie aktualisiert werden können.
+
+Bei Verwendung des Schalters `/Upgrade` wird Visual Studio nicht geöffnet. Die Ergebnisse des Upgrades sind im Upgradebericht für die Entwicklungssprache der Projektmappe oder des Projekts aufgeführt. Informationen zu Fehlern oder zur Verwendung werden nicht zurückgegeben. Weitere Informationen zum Upgraden von Projekten in Visual Studio finden Sie unter [Übertragung, Migration und Upgrade der Visual Studio-Projekte](../../porting/port-migrate-and-upgrade-visual-studio-projects.md).
 
 ## <a name="example"></a>Beispiel
- In diesem Beispiel wird eine Projektmappendatei mit dem Namen "MyProject.sln" im Standardordner für [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]-Projektmappen aktualisiert.
 
-```cmd
-devenv "MyProject.sln" /upgrade
+In diesem Beispiel wird eine Projektmappendatei mit dem Namen „MyProject.sln“ aktualisiert.
+
+```shell
+devenv "%USERPROFILE%\source\repos\MyProject\MyProject.sln" /upgrade
 ```
 
 ## <a name="see-also"></a>Siehe auch

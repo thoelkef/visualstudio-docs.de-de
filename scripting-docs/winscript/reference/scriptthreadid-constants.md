@@ -2,7 +2,6 @@
 title: SCRIPTTHREADID-Konstanten | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 27852f97cf0a78919b10043c64b1c5a7cc7d3ec5
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: dfbb39d10d552141a68d40a7be3f1715a80f8f57
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54097811"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840200"
 ---
 # <a name="scriptthreadid-constants"></a>SCRIPTTHREADID-Konstanten
 Dient zum Angeben des Typs des Threads.  

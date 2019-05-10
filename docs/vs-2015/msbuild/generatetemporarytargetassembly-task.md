@@ -1,14 +1,9 @@
 ---
 title: GenerateTemporaryTargetAssembly-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -23,18 +18,17 @@ ms.assetid: 92b6539c-6897-45e0-8989-0c234bbfe782
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1dd1df7ce9d7672917296207e38a846ff69aba5a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 397bb367207646e110243e050c271815b6258ff5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205165"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668612"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>GenerateTemporaryTargetAssembly-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Der [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)]-Task generiert eine Assembly, wenn mindestens eine <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly>-Seite in einem Projekt auf einen Typ verweist, der lokal in diesem Projekt deklariert ist. Die generierte Assembly wird entfernt, nachdem der Build abgeschlossen ist, oder wenn beim Buildprozess ein Fehler auftritt.  
   
 ## <a name="task-parameters"></a>Aufgabenparameter  
@@ -51,7 +45,7 @@ Der [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)]-Task generiert 
 |`ReferencePath`|Optionaler **ITaskItem[]**-Parameter.<br /><br /> Gibt eine Liste von Assemblys nach Pfad und Namen an, auf die die Typen verweisen, die in die temporäre Zielassembly kompiliert werden.|  
 |`ReferencePathTypeName`|Erforderlicher **String**-Parameter.<br /><br /> Gibt den Parameter an, der vom Kompilierungszielparameter (**CompileTargetName**) verwendet wird, der die Liste der Assemblyverweise (**ReferencePath**) angibt. Der entsprechende Wert ist **ReferencePath**.|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Im ersten Markupkompilierungsschritt, der von [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md) ausgeführt wird, kompiliert [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] Dateien in das Binärformat. Folglich benötigt der Compiler eine Liste der referenzierten Assemblys, die die Typen enthalten, die von den [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)]-Dateien verwendet werden. Wenn jedoch eine [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)]-Datei einen Typ verwendet, der im gleichen Projekt definiert ist, wird eine entsprechende Assembly für das Projekt erst dann erstellt, wenn das Projekt erstellt wird. Aus diesem Grund kann ein Assemblyverweis nicht beim ersten Markupkompilierungsschritt bereitgestellt werden.  
   
  Stattdessen verschiebt **MarkupCompilePass1** die Konvertierung von [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)]-Dateien, die Verweise auf Typen im gleichen Projekt enthalten, auf einen zweiten Markupkompilierungsschritt, der von [MarkupCompilePass2](../msbuild/markupcompilepass2-task.md) ausgeführt wird. Bevor **MarkupCompilePass2** ausgeführt wird, wird eine temporäre Assembly generiert. Diese Assembly enthält die Typen, die von den [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)]-Dateien verwendet werden, deren Markupkompilierungsschritt aufgeschoben wurde. Ein Verweis auf die generierte Assembly wird **MarkupCompilePass2** während der Ausführung bereitgestellt, um die Konvertierung der Kompilierungs-[!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)]-Dateien, deren Konvertierung aufgeschoben wurde, in das binäre Format zu ermöglichen.  
@@ -86,6 +80,3 @@ Der [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)]-Task generiert 
  [Task Reference](../msbuild/msbuild-task-reference.md)  (MSBuild-Aufgabenreferenz)  
  [Erstellen einer WPF-Anwendung (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
  [Übersicht über WPF-XAML-Browseranwendungen](http://msdn.microsoft.com/library/3a7a86a8-75d5-4898-96b9-73da151e5e16)
-
-
-

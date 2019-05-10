@@ -1,14 +1,9 @@
 ---
 title: Assertionen in verwaltetem Code | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -30,27 +25,27 @@ ms.assetid: 70ab2522-6486-4076-a1a9-e0f11cd0f3a1
 caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c47b2b05ab358826d594d0c6ef29c1b50e0a529f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: effeac6eb35eab5da53dc8e58cd44a72297a23d6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806541"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102314"
 ---
 # <a name="assertions-in-managed-code"></a>Assertionen in verwaltetem Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Mithilfe einer Assertion oder einer `Assert`-Anweisung wird eine Bedingung überprüft, die Sie als Argument der `Assert`-Anweisung angeben. Wenn die Bedingung als "Tue" ausgewertet wird, erfolgt keine Aktion. Wenn die Bedingung auf "False" ausgewertet wird, schlägt die Assertion fehl. Wenn das Programm mit einem Debugbuild ausgeführt wird, wechselt es in den Unterbrechungsmodus.  
   
-##  <a name="BKMK_In_this_topic"></a> In diesem Thema  
- [Assert-Vorgänge in der System.Diagnostics-Namespace](#BKMK_Asserts_in_the_System_Diagnostics_Namespace)  
+## <a name="BKMK_In_this_topic"></a> In diesem Thema  
+ [Assertionen im System.Diagnostics-Namespace](#BKMK_Asserts_in_the_System_Diagnostics_Namespace)  
   
  [Die Debug.Assert-Methode](#BKMK_The_Debug_Assert_method)  
   
  [Nebeneffekte der Debug.Assert-Methode](#BKMK_Side_effects_of_Debug_Assert)  
   
- [Ablaufverfolgung und Debug-Anforderungen](#BKMK_Trace_and_Debug_Requirements)  
+ [Anforderungen für Ablaufverfolgung und Debug](#BKMK_Trace_and_Debug_Requirements)  
   
  [Assert-Argumente](#BKMK_Assert_arguments)  
   
@@ -58,14 +53,14 @@ Mithilfe einer Assertion oder einer `Assert`-Anweisung wird eine Bedingung über
   
  [Festlegen von Assertionen in Konfigurationsdateien](#BKMK_Setting_assertions_in_configuration_files)  
   
-##  <a name="BKMK_Asserts_in_the_System_Diagnostics_Namespace"></a> Assert-Vorgänge in der System.Diagnostics-Namespace  
- In Visual Basic und Visual C# können Sie die `Assert`-Methode von <xref:System.Diagnostics.Debug> oder <xref:System.Diagnostics.Trace> verwenden, die sich im <xref:System.Diagnostics>-Namespace befinden. <xref:System.Diagnostics.Debug>-Klassenmethoden sind nicht in einer Releaseversion des Programms enthalten, deshalb vergrößern sie nicht den Versionscode oder reduzieren dessen Geschwindigkeit.  
+## <a name="BKMK_Asserts_in_the_System_Diagnostics_Namespace"></a> Assertionen im System.Diagnostics-Namespace  
+ In Visual Basic und Visual C# können Sie die `Assert`-Methode von <xref:System.Diagnostics.Debug> oder <xref:System.Diagnostics.Trace> verwenden, die sich im <xref:System.Diagnostics>-Namespace befinden. <xref:System.Diagnostics.Debug>-Klassenmethoden sind nicht in einer Releaseversion des Programms enthalten, weshalb sie nicht den Versionscode vergrößern oder dessen Geschwindigkeit reduzieren.  
   
- C++ unterstützt nicht die <xref:System.Diagnostics.Debug>-Klassenmethoden. Erreichen Sie denselben Effekt mit der <xref:System.Diagnostics.Trace> -Klasse mit der bedingten Kompilierung, z. B. `#ifdef DEBUG`... `#endif`.  
+ C++ unterstützt nicht die <xref:System.Diagnostics.Debug>-Klassenmethoden. Sie können dieselbe Wirkung durch Verwenden der <xref:System.Diagnostics.Trace>-Klasse mit bedingter Kompilierung erzielen, z.B. `#ifdef DEBUG`... `#endif`.  
   
  [Inhalt](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_The_Debug_Assert_method"></a> Die Debug.Assert-Methode  
+## <a name="BKMK_The_Debug_Assert_method"></a> Die Debug.Assert-Methode  
  Sie können die <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>-Methode beliebig verwenden, um Bedingungen zu überprüfen, die bei fehlerfreiem Code "True" ergeben sollten. Angenommen, Sie haben eine Funktion zum Dividieren von ganzen Zahlen geschrieben. Gemäß den Regeln der Mathematik kann der Divisor niemals 0 sein. Sie könnten diese Bedingung mithilfe einer Assertion testen:  
   
 ```vb  
@@ -119,7 +114,7 @@ savingsAccount.Withdraw ( amount );
   
  [Inhalt](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Side_effects_of_Debug_Assert"></a> Nebeneffekte der Debug.Assert-Methode  
+## <a name="BKMK_Side_effects_of_Debug_Assert"></a> Nebeneffekte der Debug.Assert-Methode  
  Stellen Sie bei Verwendung der <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>-Methode sicher, dass die Programmergebnisse nicht vom Code innerhalb der `Assert`-Methode beeinflusst werden, wenn `Assert` entfernt wurde. Andernfalls kann dies zu einem Fehler führen, der lediglich in der Releaseversion des Programms auftritt. Auch bei Assertionen, die Funktions- oder Prozeduraufrufe enthalten, sollte besonders sorgfältig vorgegangen werden, wie im folgenden Beispiel:  
   
 ```vb  
@@ -132,7 +127,7 @@ Debug.Assert (meas(i) <> 0 )
 Debug.Assert (meas(i) != 0 );  
 ```  
   
- Diese Verwendung der <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>-Methode mag auf den ersten Blick sicher erscheinen. Was geschieht jedoch, wenn die Funktion "meas" bei jedem Aufruf einen Zähler aktualisiert? Bei der Erstellung der Releaseversion wird dieser Aufruf der Funktion „meas“ entfernt, sodass der Zähler nicht mehr aktualisiert wird. Dies ist ein Beispiel für eine Funktion mit einem Nebeneffekt. Durch das Entfernen eines Funktionsaufrufs, der Nebeneffekte hat, kann ein Fehler verursacht werden, der ausschließlich in der Releaseversion auftritt. Um derartige Probleme zu vermeiden, sollten Sie keine Funktionsaufrufe in eine <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>-Anweisung einfügen. Verwenden Sie stattdessen eine temporäre Variable:  
+ Diese Verwendung der <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>-Methode mag auf den ersten Blick sicher erscheinen. Was geschieht jedoch, wenn die Funktion "meas" bei jedem Aufruf einen Zähler aktualisiert? Bei der Erstellung der Releaseversion wird dieser Aufruf der Funktion "meas" entfernt, sodass der Zähler nicht mehr aktualisiert wird. Dies ist ein Beispiel für eine Funktion mit einem Nebeneffekt. Durch das Entfernen eines Funktionsaufrufs, der Nebeneffekte hat, kann ein Fehler verursacht werden, der ausschließlich in der Releaseversion auftritt. Um derartige Probleme zu vermeiden, sollten Sie keine Funktionsaufrufe in eine <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>-Anweisung einfügen. Verwenden Sie stattdessen eine temporäre Variable:  
   
 ```vb  
 temp = meas( i )  
@@ -148,7 +143,7 @@ Debug.Assert ( temp != 0 );
   
  [Inhalt](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Trace_and_Debug_Requirements"></a> Ablaufverfolgung und Debug-Anforderungen  
+## <a name="BKMK_Trace_and_Debug_Requirements"></a> Voraussetzungen für Ablaufverfolgung und Debug  
  Wenn Sie das Projekt mithilfe der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Assistenten erstellen, wird das TRACE-Symbol sowohl in der Release- als auch in der Debugkonfiguration automatisch definiert. Das DEBUG-Symbol ist standardmäßig nur im Debugbuild definiert.  
   
  Andernfalls funktionieren die <xref:System.Diagnostics.Trace>-Methoden nur dann, wenn im Programm am Anfang der Quelldatei Folgendes steht:  
@@ -165,10 +160,10 @@ Debug.Assert ( temp != 0 );
   
   Wenn Debug-Methoden in einem C#- oder Visual Basic-Releasebuild verwendet werden sollen, müssen Sie das DEBUG-Symbol in der Releasekonfiguration definieren.  
   
-  C++ unterstützt nicht die <xref:System.Diagnostics.Debug>-Klassenmethoden. Erreichen Sie denselben Effekt mit der <xref:System.Diagnostics.Trace> -Klasse mit der bedingten Kompilierung, z. B. `#ifdef DEBUG`... `#endif`. Sie können diese Symbole im Definieren der  **\<Projekt > Eigenschaftenseiten** Dialogfeld. Weitere Informationen finden Sie unter [Projekteinstellungen für eine Visual Basic-Debugkonfiguration](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) oder [Projekteinstellungen für eine C- oder C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
+  C++ unterstützt nicht die <xref:System.Diagnostics.Debug>-Klassenmethoden. Sie können dieselbe Wirkung durch Verwenden der <xref:System.Diagnostics.Trace>-Klasse mit bedingter Kompilierung erzielen, z.B. `#ifdef DEBUG`... `#endif`. Diese Symbole können im Dialogfeld für die **\<Projekt>-Eigenschaftenseiten** definiert werden. Weitere Informationen finden Sie unter [Ändern von Projekteinstellungen für eine Visual Basic-Debugkonfiguration](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) oder unter [Ändern von Projekteinstellungen für eine C- oder C++-Debugkonfiguration](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
-##  <a name="BKMK_Assert_arguments"></a> Assert-Argumente  
- Die <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>- und <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>-Methoden nehmen bis zu drei Argumente an. Das erste Argument, das obligatorisch ist, bezieht sich auf die zu überprüfende Bedingung. Aufrufen <xref:System.Diagnostics.Trace.Assert%28System.Boolean%29?displayProperty=fullName> oder <xref:System.Diagnostics.Debug.Assert%28System.Boolean%29?displayProperty=fullName> mit nur einem Argument, das `Assert` Methode überprüft die Bedingung und, wenn das Ergebnis "false" gibt den Inhalt der Aufrufliste, die **Ausgabe** Fenster. Im folgenden Beispiel werden die <xref:System.Diagnostics.Trace.Assert%28System.Boolean%29?displayProperty=fullName>- und <xref:System.Diagnostics.Debug.Assert%28System.Boolean%29?displayProperty=fullName>-Methoden veranschaulicht:  
+## <a name="BKMK_Assert_arguments"></a> Assert-Argumente  
+ Die <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>- und <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>-Methoden nehmen bis zu drei Argumente an. Das erste Argument, das obligatorisch ist, bezieht sich auf die zu überprüfende Bedingung. Bei einem Aufruf der <xref:System.Diagnostics.Trace.Assert%28System.Boolean%29?displayProperty=fullName>- oder <xref:System.Diagnostics.Debug.Assert%28System.Boolean%29?displayProperty=fullName>-Methode mit nur einem Argument wird die Bedingung von der `Assert`-Methode überprüft. Wenn das Ergebnis „False“ lautet, wird der Inhalt der Aufrufliste im **Ausgabefenster** angezeigt. Im folgenden Beispiel werden die <xref:System.Diagnostics.Trace.Assert%28System.Boolean%29?displayProperty=fullName>- und <xref:System.Diagnostics.Debug.Assert%28System.Boolean%29?displayProperty=fullName>-Methoden veranschaulicht:  
   
 ```vb  
 Debug.Assert(stacksize > 0)  
@@ -207,12 +202,12 @@ Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );
   
  [Inhalt](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Customizing_Assert_behavior"></a> Anpassen des Assert-Verhaltens  
- Wenn Sie die Anwendung im Benutzeroberflächenmodus, Ausführen der `Assert` Methode zeigt die **Assertionsfehler** Dialogfeld, wenn die Bedingung nicht erfüllt. Die Aktionen, die auftreten, wenn eine Assertion fehlschlägt, werden gesteuert, indem die <xref:System.Diagnostics.Debug.Listeners%2A> oder <xref:System.Diagnostics.Trace.Listeners%2A> Eigenschaft.  
+## <a name="BKMK_Customizing_Assert_behavior"></a> Anpassen des Assert-Verhaltens  
+ Wenn Sie die Anwendung im Benutzeroberflächenmodus ausführen, wird durch die `Assert`-Methode das Dialogfeld **Assertionsfehler** angezeigt, falls die Bedingung nicht erfüllt wird. Die Aktionen, die bei einem Assertionsfehler auszuführen sind, werden von der <xref:System.Diagnostics.Debug.Listeners%2A>-Eigenschaft oder der <xref:System.Diagnostics.Trace.Listeners%2A>-Eigenschaft gesteuert.  
   
  Das Ausgabeverhalten kann wie folgt angepasst werden: durch Hinzufügen eines <xref:System.Diagnostics.TraceListener>-Objekts zur `Listeners`-Auflistung, durch Entfernen eines <xref:System.Diagnostics.TraceListener>-Objekts aus der `Listeners`-Auflistung oder durch Überschreiben der <xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName>-Methode eines vorhandenen `TraceListener`-Objekts, um sein Verhalten zu ändern.  
   
- Sie könnten z. B. überschreiben die <xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName> Methode zum Schreiben in ein Ereignisprotokoll anstatt der **Assertionsfehler** Dialogfeld.  
+ Sie können beispielsweise die <xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName>-Methode überschreiben, um die Ausgabe in ein Ereignisprotokoll zu schreiben, anstatt das Dialogfeld **Assertionsfehler** anzuzeigen.  
   
  Damit die Ausgabe auf diese Weise angepasst werden kann, muss das Programm über einen Listener verfügen, der von <xref:System.Diagnostics.TraceListener> erbt und dessen <xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName>-Methode überschrieben wird.  
   
@@ -220,17 +215,14 @@ Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );
   
  [Inhalt](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Setting_assertions_in_configuration_files"></a> Festlegen von Assertionen in Konfigurationsdateien  
+## <a name="BKMK_Setting_assertions_in_configuration_files"></a> Festlegen von Assertionen in Konfigurationsdateien  
  Sie können Assertionen sowohl in der Programmkonfigurationsdatei als auch im Code festlegen. Weitere Informationen finden Sie unter <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> oder <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>.  
   
 ## <a name="see-also"></a>Siehe auch  
  <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>   
  <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>   
- [Debuggersicherheit](../debugger/debugger-security.md)   
+ [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
  [Ablaufverfolgung und Instrumentieren von Anwendungen](http://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)   
  [Vorgehensweise: Bedingtes Kompilieren mit Ablaufverfolgung und Debuggen](http://msdn.microsoft.com/library/56d051c3-012c-42c1-9a58-7270edc624aa)   
  [C#-, F#- und Visual Basic-Projekttypen](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [Debuggen von verwaltetem Code](../debugger/debugging-managed-code.md)
-
-
-

@@ -4,16 +4,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: c74b7547ea62942670b2c5442d16f460dc738f84
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: 607809b05688931b139b27fec1803719b928dfea
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836089"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445814"
 ---
 # <a name="customizing-text-and-image-fields"></a>Anpassen von Text- und Image-Feldern
 Wenn Sie einen Text-Decorator in einer Form definieren, wird er durch einen TextField dargestellt. Beispiele für die Initialisierung von TextFields und andere ShapeFields untersuchen Sie Dsl\GeneratedCode\Shapes.cs in der DSL-Projektmappe.
@@ -89,7 +88,7 @@ public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
  Falls nicht, und überschreiben Sie dann die `InitializeShapeFields` Ihre Shape-Klasse, und weisen Sie einen Wert an die entsprechende Methode `Default...` Eigenschaft des Textfelds.
 
 > [!WARNING]
->  Zum Überschreiben `InitializeShapeFields()`, müssen Sie festlegen, die **generiert doppelte Ableitungen** Eigenschaft der Shape-Klasse, `true` in der DSL-Definition.
+> Zum Überschreiben `InitializeShapeFields()`, müssen Sie festlegen, die **generiert doppelte Ableitungen** Eigenschaft der Shape-Klasse, `true` in der DSL-Definition.
 
  In diesem Beispiel hat eine Form ein Textfeld, das für die Kommentare von Benutzern verwendet wird. Die standard-Kommentar-Schriftart verwendet werden soll. Da es einer Standardschriftart, aus dem Stil handelt, können wir die Standard-Schriftart-Id festlegen:
 
@@ -182,13 +181,13 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 #### <a name="to-create-a-subclass-of-imagefield"></a>Erstellen Sie eine Unterklasse von ImageField
 
-1.  Legen Sie die **generiert doppelte Ableitungen** Eigenschaft der übergeordneten Form-Klasse in Ihrer DSL-Definition.
+1. Legen Sie die **generiert doppelte Ableitungen** Eigenschaft der übergeordneten Form-Klasse in Ihrer DSL-Definition.
 
-2.  Überschreiben der `InitializeShapeFields` Methode der Shape-Klasse.
+2. Überschreiben der `InitializeShapeFields` Methode der Shape-Klasse.
 
-    -   Erstellen Sie eine neue Codedatei im DSL-Projekt, und Schreiben Sie eine partielle Klassendefinition für die Shape-Klasse. Überschreiben Sie die Definition der Methode vorhanden.
+    - Erstellen Sie eine neue Codedatei im DSL-Projekt, und Schreiben Sie eine partielle Klassendefinition für die Shape-Klasse. Überschreiben Sie die Definition der Methode vorhanden.
 
-3.  Überprüfen Sie den Code der `InitializeShapeFields` in DSL\GeneratedCode\Shapes.cs.
+3. Überprüfen Sie den Code der `InitializeShapeFields` in DSL\GeneratedCode\Shapes.cs.
 
      Rufen Sie in der Überschreibungsmethode die Basismethode auf, und klicken Sie dann erstellen Sie eine Instanz Ihrer eigenen Images-Feld-Klasse. Verwenden Sie diese ersetzen die regulären Bildfeld in der `shapeFields` Liste.
 
@@ -196,7 +195,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
  In diesem Beispiel wird ein Symbol zu ändern, die abhängig vom Zustand des Modellelements der Form.
 
 > [!WARNING]
->  In diesem Beispiel wird veranschaulicht, wie Sie ein dynamisches Bild-Decorator-Element. Aber wenn Sie nur ein oder zwei Abbilder abhängig vom Status einer Variablen des Modells wechseln möchten, es ist einfacher, mehrere Image-Decorator-Elemente erstellen, suchen sie in der gleichen Position auf der Form und legen Sie den Filter Sichtbarkeit, hängt von bestimmten Werten des Modells Variable. Zum Festlegen dieser Filter wählen Sie das flächenkartogramm, in der DSL-Definition, öffnen Sie das DSL-Details-Fenster, und klicken Sie auf der Registerkarte "Decorator-Elemente".
+> In diesem Beispiel wird veranschaulicht, wie Sie ein dynamisches Bild-Decorator-Element. Aber wenn Sie nur ein oder zwei Abbilder abhängig vom Status einer Variablen des Modells wechseln möchten, es ist einfacher, mehrere Image-Decorator-Elemente erstellen, suchen sie in der gleichen Position auf der Form und legen Sie den Filter Sichtbarkeit, hängt von bestimmten Werten des Modells Variable. Zum Festlegen dieser Filter wählen Sie das flächenkartogramm, in der DSL-Definition, öffnen Sie das DSL-Details-Fenster, und klicken Sie auf der Registerkarte "Decorator-Elemente".
 
  Erstellen Sie eine neue DSL-Projektmappe mithilfe der Vorlage für die minimale Sprache, zum Ausführen dieses Beispiels den Code. Fügen Sie eine booleschen Domäneneigenschaft `AlternateState` mit der Domänenklasse ExampleElement. Fügen Sie ein Symbol für Decorator-Element der ExampleShape-Klasse aus, und legen Sie das Image in eine Bitmapdatei. Klicken Sie auf **alle Vorlagen transformieren**. Fügen Sie eine neue Codedatei im DSL-Projekt, und fügen Sie den folgenden Code.
 

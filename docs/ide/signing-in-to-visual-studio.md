@@ -3,20 +3,19 @@ title: Anmelden bei Visual Studio
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 12/10/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dccb2fb9c4fce456055b136dace7e95d02647a94
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c7568f27d9be2ff38c2d5c87cf8a950e06846db5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840790"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62960784"
 ---
 # <a name="sign-in-to-visual-studio"></a>Anmelden bei Visual Studio
 
@@ -31,7 +30,7 @@ Wenn Sie sich anmelden, haben Sie im vollen Umfang Zugang zu den Funktionen von 
 
 Im Folgenden werden alle Anmeldevorteile aufgeführt:
 
-- **Zugang zum Visual Studio Dev Essentials-Programm:** Dieses Programm umfasst u.a. kostenlose Softwareangebote und Support. Weitere Informationen finden Sie unter [Visual Studio Dev Essentials](http://aka.ms/vsdevhelp) .
+- **Zugang zum Visual Studio Dev Essentials-Programm:** Dieses Programm umfasst u.a. kostenlose Softwareangebote und Support. Weitere Informationen finden Sie unter [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) .
 
 - **Synchronisation der Visual Studio-Einstellungen:** Von Ihnen angepasste Einstellungen, beispielsweise Tastenzuordnung, Fensterlayout und Farbdesign, werden sofort übernommen, wenn Sie sich auf einem beliebigen Gerät bei Visual Studio anmelden. Weitere Informationen finden Sie unter [Synchronisierte Einstellungen in Visual Studio](../ide/synchronized-settings-in-visual-studio.md).
 
@@ -45,7 +44,7 @@ Im Folgenden werden alle Anmeldevorteile aufgeführt:
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>So melden Sie sich bei Visual Studio an
 
-Wenn Sie Visual Studio erstmals starten, werden Sie aufgefordert, sich anzumelden und einige grundlegenden Registrierungsinformationen bereitzustellen. Sie sollten ein Microsoft-Konto oder ein Arbeits- oder Schulkonto auswählen, das Sie bestmöglich repräsentiert. Wenn Sie nicht über derartige Konten verfügen, können Sie kostenlos ein Microsoft-Konto erstellen. Weitere Informationen finden Sie unter [Wie registriere ich mich für ein Microsoft-Konto?](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
+Wenn Sie Visual Studio erstmals öffnen, werden Sie aufgefordert, sich anzumelden und einige grundlegenden Registrierungsinformationen bereitzustellen. Sie sollten ein Microsoft-Konto oder ein Arbeits- oder Schulkonto auswählen, das Sie bestmöglich repräsentiert. Wenn Sie nicht über derartige Konten verfügen, können Sie kostenlos ein Microsoft-Konto erstellen. Weitere Informationen finden Sie unter [Wie registriere ich mich für ein Microsoft-Konto?](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
 
 Wählen Sie anschließend die gewünschten Einstellungen für die Benutzeroberfläche und das Farbschema in Visual Studio aus. Visual Studio speichert diese Einstellungen und synchronisiert sie über alle Visual Studio-Umgebungen hinweg, an denen Sie sich angemeldet haben. Eine Liste der synchronisierten Einstellungen finden Sie unter [Synchronisierte Einstellungen](../ide/synchronized-settings-in-visual-studio.md). Sie können die Einstellungen später im Visual Studio-Menü unter **Extras** > **Optionen** ändern.
 

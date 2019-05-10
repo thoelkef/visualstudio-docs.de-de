@@ -1,11 +1,10 @@
 ---
 title: Refactoring des Extrahierens einer Schnittstelle
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.extractinterface
 dev_langs:
@@ -13,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: bc315ed49e31e78bc549e446858a30979d7135b2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 261ddf457ad117812be9971b630c2fcd3b75b550
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838215"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62791239"
 ---
 # <a name="extract-an-interface-refactoring"></a>Refactoring des Extrahierens einer Schnittstelle
 
@@ -30,13 +29,13 @@ Dieses Refactoring gilt für:
 
 **Beschreibung:** Hiermit können Sie eine Schnittstelle mit vorhandenen Membern einer Klasse, Struktur oder Schnittstelle erstellen.
 
-**Hintergrund:** Sie haben mehrere Klassen, Strukturen oder Schnittstellen mit Methoden, die allgemeingültig gestaltet und von anderen Klassen, Strukturen oder Schnittstellen verwendet werden könnten.
+**Hintergrund:** Eine Klasse, Struktur oder Schnittstelle enthält Member, die von anderen Klassen, Strukturen oder Schnittstellen geerbt werden können.
 
 **Vorteile**: Schnittstellen stellen hervorragende Konstrukte für objektorientierte Entwürfe dar. Stellen Sie sich vor, es gäbe Klassen für verschiedene Tiere (Hunde, Katzen, Vögel) mit häufig verwendeten Methoden wie Fressen, Trinken und Schlafen. Mit einer Schnittstelle wie IAnimal würden Hunden, Katzen und Vögeln eine gemeinsame „Signatur“ für diese Methoden zugewiesen werden.
 
-## <a name="how-to"></a>Vorgehensweise
+## <a name="extract-an-interface-refactoring"></a>Refactoring des Extrahierens einer Schnittstelle
 
-1. Markieren Sie den Namen der Klasse, für die die Aktion ausgeführt wird, oder platzieren Sie den Textcursor einfach an eine beliebige Stelle im Klassennamen.
+1. Platzieren Sie Ihren Cursor auf dem Klassenname.
 
    - C#:
 
@@ -46,10 +45,10 @@ Dieses Refactoring gilt für:
 
        ![Hervorgehobener Code – Visual Basic](media/extractinterface-highlight-vb.png)
 
-2. Führen Sie dann eine der folgenden Aktionen aus:
+2. Führen Sie anschließend eine der folgenden Aktionen aus:
 
    - **Tastatur**
-      - Drücken Sie **STRG+R** und dann **STRG+I**. (Beachten Sie, dass Ihre Tastenkombination je nach dem gewählten Profil möglicherweise abweicht.)
+      - Drücken Sie **STRG+R** und dann **STRG+I**. (Ihre Tastenkombination weicht je nach dem gewählten Profil möglicherweise ab.)
       - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen, und wählen Sie im Popupvorschaufenster **Schnittstelle extrahieren** aus.
    - **Maus**
       - Wählen Sie **Bearbeiten > Umgestalten > Schnittstelle extrahieren** aus.
@@ -57,15 +56,13 @@ Dieses Refactoring gilt für:
 
 3. Geben Sie im angezeigten Dialogfeld **Schnittstelle extrahieren** die erforderlichen Informationen ein:
 
-   ![Schnittstelle extrahieren](media/extractinterface-dialog-cs.png)
-
+   ![Schnittstelle extrahieren](media/extractinterface-dialog-same-file.png)
 
    | Feld | Beschreibung |
    | - | - |
-   | **Name der neuen Schnittstelle** | Der Name der zu erstellenden Schnittstelle. Dies ist standardmäßig I*ClassName*, wobei *ClassName* der Name der von Ihnen oben ausgewählten Klasse ist. |
-   | **Neuer Dateiname** | Der Name der generierten Datei, die die Schnittstelle enthält. Wie beim Namen der Schnittstelle ist dies standardmäßig I*ClassName*, wobei *ClassName* der Name der von Ihnen oben ausgewählten Klasse ist. |
+   | **Name der neuen Schnittstelle** | Der Name der zu erstellenden Schnittstelle. Dieser Name ist standardmäßig I*ClassName*, wobei *ClassName* der Name der von Ihnen oben ausgewählten Klasse ist. |
+   | **Neuer Dateiname** | Der Name der generierten Datei, die die Schnittstelle enthalten wird. Wie beim Namen der Schnittstelle ist dies standardmäßig I*ClassName*, wobei *ClassName* der Name der von Ihnen oben ausgewählten Klasse ist. Sie können für die Option auch **Add to current file** (Aktueller Datei hinzufügen) auswählen. |
    | **Öffentliche Member zum Bilden einer Schnittstelle auswählen** | Die in der Schnittstelle zu extrahierenden Elemente. Sie können beliebig viele Elemente auswählen. |
-
 
 4. Klicken Sie auf **OK**.
 
@@ -73,12 +70,17 @@ Dieses Refactoring gilt für:
 
    - C#:
 
-      ![Sich ergebende Klasse – C#](media/extractinterface-class-cs.png) ![Sich ergebende Schnittstelle – C#](media/extractinterface-interface-cs.png)
+      ![Resultierende Klasse: C#](media/extractinterface-class-cs.png)
+
+      ![Resultierende Schnittstelle: C#](media/extractinterface-interface-cs.png)
 
    - Visual Basic:
 
-      ![Sich ergebende Klasse – Visual Basic](media/extractinterface-class-vb.png) ![Sich ergebende Schnittstelle – Visual Basic](media/extractinterface-interface-vb.png)
+      ![Resultierende Klasse: Visual Basic](media/extractinterface-class-vb.png)
+
+      ![Resultierende Schnittstelle: Visual Basic](media/extractinterface-interface-vb.png)
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Refactoring](../refactoring-in-visual-studio.md)
+- [Tipps für .NET-Entwickler](../../ide/visual-studio-2017-for-dotnet-developers.md)

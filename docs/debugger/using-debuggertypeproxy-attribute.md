@@ -1,8 +1,6 @@
 ---
-title: Verwenden des DebuggerTypeProxy-Attributs | Microsoft-Dokumentation
-ms.custom: ''
+title: Anzeigen des benutzerdefinierten Typs verwenden des DebuggerTypeProxy | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -16,25 +14,28 @@ helpviewer_keywords:
 ms.assetid: 943f3bb1-993e-4800-a47e-0af78b063014
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab54c754fdc3b7ae773e71a96936a1c17c6bc5ce
-ms.sourcegitcommit: 9571742f4a808c75b1034aa72fc24b54bc50692e
+ms.openlocfilehash: c379fbeb9d17f92dcc7067424ea06bb1a2805ed1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49411065"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929638"
 ---
-# <a name="using-debuggertypeproxy-attribute"></a>Verwenden des DebuggerTypeProxy-Attributs
+# <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>Entsprechende Konfiguration des Debuggers, welcher Typ wird die Verwendung des DebuggerTypeProxy-Attributs (C#, Visual Basic C++/CLI)
 
-<xref:System.Diagnostics.DebuggerTypeProxyAttribute> gibt einen Proxy bzw. Vertreter für einen Typ an und ändert die Art, wie dieser Typ in Debuggerfenstern angezeigt wird. Wenn Sie eine Variable, die über einen Proxy verfügt anzeigen, wird der Proxy stellvertretend für den ursprünglichen Typ in der **anzeigen**. Im Debuggervariablenfenster werden nur die öffentlichen Member des Proxytyps angezeigt. Private Member werden nicht angezeigt.
+<xref:System.Diagnostics.DebuggerTypeProxyAttribute> gibt einen Proxy bzw. Vertreter für einen Typ an und ändert die Art, wie dieser Typ in Debuggerfenstern angezeigt wird. Wenn Sie eine Variable mit einem Proxy anzeigen, wird der Proxy stellvertretend für den ursprünglichen Typ in der **Anzeige** dargestellt. Im Debuggervariablenfenster werden nur die öffentlichen Member des Proxytyps angezeigt. Private Member werden nicht angezeigt.
 
 Mögliche Zuweisungen dieses Attributs:
 
 - Strukturen
 - Klassen
 - Assemblys
+
+> [!NOTE]
+> Für nativen Code wird dieses Attribut nur in unterstützt C++/CLI Code.
 
 Eine Typproxyklasse muss über einen Konstruktor verfügen, der ein Argument des vom Proxy ersetzten Typs verwendet. Der Debugger erstellt immer dann eine neue Instanz der Typproxyklasse, wenn eine Variable des Zieltyps angezeigt werden muss. Dies kann sich auf die Leistung auswirken. Daher sollten Sie nicht mehr als unbedingt erforderlich mit dem Konstruktor arbeiten.
 
@@ -48,9 +49,9 @@ Wenn <xref:System.Diagnostics.DebuggerTypeProxyAttribute> auf der Assemblyebene 
 
 Ein Beispiel zur Verwendung dieses Attributs zusammen mit <xref:System.Diagnostics.DebuggerDisplayAttribute> und <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, finden Sie unter[Verwenden des DebuggerDisplay-Attributs](../debugger/using-the-debuggerdisplay-attribute.md).
 
-## <a name="using-generics-with-debuggertypeproxy"></a>Verwenden von Generika mit DebuggerTypeProxy
+## <a name="using-generics-with-debuggertypeproxy"></a>Verwenden von Generics mit DebuggerTypeProxy
 
-Die Unterstützung für Generika ist eingeschränkt. In C# unterstützt `DebuggerTypeProxy` nur offene Typen. Ein offener Typ, d. h. ein nicht konstruierter Typ, ist ein generischer Typ, der nicht mit Argumenten für seine Typparameter instanziiert wurde. Geschlossene Typen, d. h. konstruierte Typen, werden nicht unterstützt.
+Die Unterstützung für Generics ist eingeschränkt. In C# unterstützt `DebuggerTypeProxy` nur offene Typen. Ein offener Typ, d. h. ein nicht konstruierter Typ, ist ein generischer Typ, der nicht mit Argumenten für seine Typparameter instanziiert wurde. Geschlossene Typen, d. h. konstruierte Typen, werden nicht unterstützt.
 
 Die Syntax für einen offenen Typ sieht wie folgt aus:
 

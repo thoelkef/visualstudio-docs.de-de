@@ -8,14 +8,13 @@ helpviewer_keywords:
 ms.assetid: 93a6a1dd-663b-4ab5-8760-7d6b081561d3
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: c3eaf93b6e39d773884ecfde97e18daef2bedbe0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: ab103b11659ee1e73537f6f41ff1fe0e6ed32076
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893538"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978561"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>Vorgehensweise: Verwenden der Webleistungstest-API
 
@@ -32,34 +31,34 @@ Sie können auch Plug-Ins für Auslastungstests erstellen. Weitere Informationen
 
 ## <a name="to-use-the-webtesting-namespace"></a>So verwenden Sie den WebTesting-Namespace
 
-1.  Öffnen Sie ein Webleistungs- und Auslastungstestprojekt, das einen Webleistungstest enthält.
+1. Öffnen Sie ein Webleistungs- und Auslastungstestprojekt, das einen Webleistungstest enthält.
 
-2.  Fügen Sie Ihrer Testprojektmappe ein Projekt für eine Visual C#- oder Visual Basic-Klassenbibliothek hinzu.
+2. Fügen Sie Ihrer Testprojektmappe ein Projekt für eine Visual C#- oder Visual Basic-Klassenbibliothek hinzu.
 
-3.  Fügen Sie dem Webleistungs- und Auslastungstestprojekt einen Verweis auf das Klassenbibliotheksprojekt hinzu.
+3. Fügen Sie dem Webleistungs- und Auslastungstestprojekt einen Verweis auf das Klassenbibliotheksprojekt hinzu.
 
-4.  Fügen Sie im Klassenbibliotheksprojekt einen Verweis auf die DLL-Datei "Microsoft.VisualStudio.QualityTools.WebTestFramework" hinzu.
+4. Fügen Sie im Klassenbibliotheksprojekt einen Verweis auf die DLL-Datei "Microsoft.VisualStudio.QualityTools.WebTestFramework" hinzu.
 
-5.  Fügen Sie der Klassendatei im Klassenbibliothekprojekt eine `using`-Anweisung für den <xref:Microsoft.VisualStudio.TestTools.WebTesting>-Namespace hinzu.
+5. Fügen Sie der Klassendatei im Klassenbibliothekprojekt eine `using`-Anweisung für den <xref:Microsoft.VisualStudio.TestTools.WebTesting>-Namespace hinzu.
 
-6.  Erstellen Sie eine Klasse, die die <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>-Schnittstelle implementiert.
+6. Erstellen Sie eine Klasse, die die <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>-Schnittstelle implementiert.
 
-7.  Erstellen Sie das Projekt.
+7. Erstellen Sie das Projekt.
 
-8.  Fügen Sie das neue Webleistungstest-Plug-In mit dem Webleistungstest-Editor hinzu:
+8. Fügen Sie das neue Webleistungstest-Plug-In mit dem Webleistungstest-Editor hinzu:
 
-    1.  Klicken Sie auf der Symbolleiste auf **Webtest-Plug-In hinzufügen**.
+    1. Klicken Sie auf der Symbolleiste auf **Webtest-Plug-In hinzufügen**.
 
          Das Dialogfeld **Webtest-Plug-In hinzufügen** wird angezeigt.
 
-    2.  Wählen Sie unter **Plug-In auswählen** die Webleistungstest-Plug-In-Klasse aus.
+    2. Wählen Sie unter **Plug-In auswählen** die Webleistungstest-Plug-In-Klasse aus.
 
-    3.  Legen Sie im Bereich **Eigenschaften für das ausgewählte Plug-In** die Anfangswerte fest, die das Plug-In zur Laufzeit verwenden soll.
+    3. Legen Sie im Bereich **Eigenschaften für das ausgewählte Plug-In** die Anfangswerte fest, die das Plug-In zur Laufzeit verwenden soll.
 
         > [!NOTE]
         > Sie können beliebig viele Plug-In-Eigenschaften verfügbar machen. Die Eigenschaften müssen dazu lediglich öffentlich, festlegbar und von einem Basistyp (z. B. "Integer", "Boolean" oder "String") sein. Sie können die Eigenschaften des Webleistungstest-Plug-Ins auch zu einem späteren Zeitpunkt im Eigenschaftenfenster bearbeiten.
 
-    4.  Klicken Sie auf **OK**.
+    4. Klicken Sie auf **OK**.
 
 9. Führen Sie den Webleistungstest aus.
 

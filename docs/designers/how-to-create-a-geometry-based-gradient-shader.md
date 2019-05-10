@@ -1,23 +1,21 @@
 ---
-title: 'Gewusst wie: Erstellen eines geometriebasierten Farbverlauf-Shaders'
+title: 'Vorgehensweise: Erstellen eines geometriebasierten Farbverlauf-Shaders'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 4b204405-ba95-4c5e-bd51-ec033a3ebfb6
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cfdf75c058d1786febda71b05d424b1032254754
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: cfb6a629b5ff0ddddeead8f9f53d43580aba084a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37923906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62897823"
 ---
-# <a name="how-to-create-a-geometry-based-gradient-shader"></a>Vorgehensweise: Erstellen eines geometriebasierten Farbverlaufshaders
+# <a name="how-to-create-a-geometry-based-gradient-shader"></a>Vorgehensweise: Erstellen eines geometriebasierten Farbverlauf-Shaders
 
 In diesem Artikel wird erläutert, wie der Shader-Designer und die Directed Graph Shader Language zum Erstellen eines geometriebasierten Farbverlauf-Shaders verwendet wird. Dieser Shader skaliert einen konstanten RGB-Farbwert anhand der Höhe von jedem Punkt eines Objekts im Raum.
 
@@ -27,21 +25,21 @@ Sie können einen geometriebasierten Farbverlauf-Shader implementieren, indem Si
 
 Bevor Sie beginnen, stellen Sie sicher, dass das Fenster **Eigenschaften** und die **Toolbox** angezeigt werden.
 
-1.  Erstellen Sie einen DGSL-Shader, um mit diesem zu arbeiten. Wie Sie dem Projekt einen DGSL-Shader hinzufügen, erfahren Sie im Abschnitt „Erste Schritte“ unter [Shader-Designer](../designers/shader-designer.md)
+1. Erstellen Sie einen DGSL-Shader, um mit diesem zu arbeiten. Wie Sie dem Projekt einen DGSL-Shader hinzufügen, erfahren Sie im Abschnitt „Erste Schritte“ unter [Shader-Designer](../designers/shader-designer.md)
 
-2.  Trennen Sie den Knoten **Farbpunkt** vom Knoten **Endgültige Farbe**. Klicken Sie auf das Terminal **RGB** des Knotens **Farbpunkt** und anschließend auf **Link aufheben**. Dadurch wird Platz für den Knoten geschaffen, der im nächsten Schritt hinzugefügt wird.
+2. Trennen Sie den Knoten **Farbpunkt** vom Knoten **Endgültige Farbe**. Klicken Sie auf das Terminal **RGB** des Knotens **Farbpunkt** und anschließend auf **Link aufheben**. Dadurch wird Platz für den Knoten geschaffen, der im nächsten Schritt hinzugefügt wird.
 
-3.  Fügen Sie einen Knoten **Multiplizieren** in das Diagramm ein. Klicken Sie in der **Toolbox** unter **Mathematik** auf **Multiplizieren** und verschieben Sie es auf die Entwurfsoberfläche.
+3. Fügen Sie einen Knoten **Multiplizieren** in das Diagramm ein. Klicken Sie in der **Toolbox** unter **Mathematik** auf **Multiplizieren** und verschieben Sie es auf die Entwurfsoberfläche.
 
-4.  Fügen Sie einen Knoten **Maskierungsvektor** in das Diagramm ein. Klicken Sie in der **Toolbox** unter **Hilfsprogramme** auf **Maskierungsvektor**, und verschieben Sie es auf die Entwurfsoberfläche.
+4. Fügen Sie einen Knoten **Maskierungsvektor** in das Diagramm ein. Klicken Sie in der **Toolbox** unter **Hilfsprogramme** auf **Maskierungsvektor**, und verschieben Sie es auf die Entwurfsoberfläche.
 
-5.  Geben Sie Maskierungswerte für den Knoten **Maskierungsvektor** an. Klicken Sie im Modus **Auswählen** auf den Knoten **Maskierungsvektor**, und legen Sie anschließend im Fenster **Eigenschaften** die Eigenschaft **Grün / Y** auf **TRUE** sowie die Eigenschaften **Rot / X**, **Blau / Z** und **Alpha / W** auf **FALSE** fest. In diesem Beispiel entsprechend die Eigenschaften **Rot / X**, **Grün / Y** und **Blau / Z** den Komponenten „x“, „y“ und „z“ des Knotens **Raumposition**. **Alpha / W** wird nicht verwendet. Da nur **Grün / Y** auf **TRUE** festgelegt wird, bleibt nur die Y-Komponente des Eingabevektors, nachdem sie maskiert wurde.
+5. Geben Sie Maskierungswerte für den Knoten **Maskierungsvektor** an. Klicken Sie im Modus **Auswählen** auf den Knoten **Maskierungsvektor**, und legen Sie anschließend im Fenster **Eigenschaften** die Eigenschaft **Grün / Y** auf **TRUE** sowie die Eigenschaften **Rot / X**, **Blau / Z** und **Alpha / W** auf **FALSE** fest. In diesem Beispiel entsprechend die Eigenschaften **Rot / X**, **Grün / Y** und **Blau / Z** den Komponenten „x“, „y“ und „z“ des Knotens **Raumposition**. **Alpha / W** wird nicht verwendet. Da nur **Grün / Y** auf **TRUE** festgelegt wird, bleibt nur die Y-Komponente des Eingabevektors, nachdem sie maskiert wurde.
 
-6.  Fügen Sie einen Knoten **Raumposition** in das Diagramm ein. Klicken Sie in der **Toolbox** unter **Konstanten** auf **Raumposition**, und verschieben Sie es auf die Entwurfsoberfläche.
+6. Fügen Sie einen Knoten **Raumposition** in das Diagramm ein. Klicken Sie in der **Toolbox** unter **Konstanten** auf **Raumposition**, und verschieben Sie es auf die Entwurfsoberfläche.
 
-7.  Maskieren Sie die Raumposition des Fragments. Verschieben Sie im Modus **Auswählen** das Terminal **Ausgabe** des Knotens **Raumposition** auf das Terminal **Vektor** des Knotens **Maskierungsvektor**. Diese Verbindung maskiert die Position des Fragments, um die Komponenten „x“ und „y“ zu ignorieren.
+7. Maskieren Sie die Raumposition des Fragments. Verschieben Sie im Modus **Auswählen** das Terminal **Ausgabe** des Knotens **Raumposition** auf das Terminal **Vektor** des Knotens **Maskierungsvektor**. Diese Verbindung maskiert die Position des Fragments, um die Komponenten „x“ und „y“ zu ignorieren.
 
-8.  Multiplizieren Sie die RGB-Farbkonstante anhand der Position der maskierten Raumposition. Verschieben Sie das Terminal **RGB** des Knotens **Farbpunkt** auf das Terminal **Y** des Knotens **Multiplizieren**. Verschieben Sie anschließend das Terminal **Ausgabe** des Knotens **Maskierungsvektor** auf das Terminal **X** des Knotens **Multiplizieren**. Diese Verbindung skaliert den Farbwert anhand der Pixelhöhe im Raum.
+8. Multiplizieren Sie die RGB-Farbkonstante anhand der Position der maskierten Raumposition. Verschieben Sie das Terminal **RGB** des Knotens **Farbpunkt** auf das Terminal **Y** des Knotens **Multiplizieren**. Verschieben Sie anschließend das Terminal **Ausgabe** des Knotens **Maskierungsvektor** auf das Terminal **X** des Knotens **Multiplizieren**. Diese Verbindung skaliert den Farbwert anhand der Pixelhöhe im Raum.
 
 9. Verbinden Sie den berechneten Farbwert mit der endgültige Farbe. Verschieben Sie das Terminal **Ausgabe** des Knotens **Multiplizieren** auf das Terminal **RGB** des Knotens **Endgültige Farbe**.
 

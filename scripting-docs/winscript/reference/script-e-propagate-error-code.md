@@ -1,8 +1,7 @@
 ---
-title: SCRIPT_E_PROPAGATE-Fehlercode | Microsoft Docs
+title: SCRIPT_E_PROPAGATE-Fehlercode | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,15 +11,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d6fdb86f6b4cd6d3175d33d8adcee619ab4bf682
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e6b1feac19be5f6506227b60515df70d9a737a2a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734080"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840281"
 ---
 # <a name="scriptepropagate-error-code"></a>SCRIPT_E_PROPAGATE-Fehlercode
-Ein Skriptfehler wird an den Aufrufer weitergegeben, die in einem anderen Thread möglicherweise. Der Host sollte den Fehlercode an dem Aufrufer übergeben werden.  
+Ein Skriptfehler wird an den Aufrufer in einem anderen Thread, die möglicherweise weitergegeben. Der Host muss den Fehlercode an den Aufrufer übergeben werden.  
   
 ## <a name="syntax"></a>Syntax  
   

@@ -1,8 +1,6 @@
 ---
 title: ClickOnce-Bereitstellungsbeispiele und exemplarische Vorgehensweisen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -16,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 3973276b-7b11-4692-a0a2-32bebf0b9c2a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc171010e1616ebe1fdf2d89397f6c796bf2686d
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: 651f981117cdd9b9cfb26aae61bbd4e2747e921d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900385"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>ClickOnce-Bereitstellungsbeispiele und exemplarische Vorgehensweisen
 Dieser Abschnitt erläutert anhand von Beispielanwendungen, Beispielcode und schrittweise beschriebenen exemplarischen Vorgehensweisen die Syntax, die Struktur und die Verfahren, die Sie zum Bereitstellen von Windows Forms-, Windows Presentation Foundation (WPF)- und Konsolenanwendungen verwendet werden.

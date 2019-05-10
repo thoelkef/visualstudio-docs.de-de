@@ -1,23 +1,26 @@
 ---
 title: Message-Codes | Microsoft-Dokumentation
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - message codes
 ms.assetid: 9f91f4e2-c1f1-4349-9f11-2fbbf59654be
-author: mikejo5000
+caps.latest.revision: 7
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: 7c1f568ead3e5862460d4ae4e18e51687737d4a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 1c09245056bf7e947985bfa55dc9cc4a3a96b8cf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866295"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846272"
 ---
 # <a name="message-codes"></a>Meldungscodes
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 Jede Nachricht Befehlszeile im [Ansicht "Nachrichten"](../debugger/messages-view.md) enthält ein 'P', des, ",' oder 'R'-Code. Diese Codes haben folgende Bedeutung:  
   
 |Code|Bedeutung|  

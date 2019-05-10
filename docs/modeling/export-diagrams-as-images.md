@@ -8,16 +8,15 @@ helpviewer_keywords:
 - UML diagrams, saving
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 2d0f6681c90d3aba37080e5ac49d406af662e4f3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 069a9ce5f3126550f54a5d2780411f6832acee83
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842166"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62994536"
 ---
 # <a name="export-diagrams-as-images"></a>Exportieren von Diagrammen als Bild
 In Visual Studio können Sie speichern, Modellierungsdiagramme in schreibgeschützten Formaten, damit Sie freigeben können Projektbeteiligte, Benutzer oder Projektteammitglieder nicht die gleiche Version von Visual Studio verwenden.
@@ -26,19 +25,19 @@ In Visual Studio können Sie speichern, Modellierungsdiagramme in schreibgeschü
 
 ### <a name="to-copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>So kopieren Sie ein Diagramm oder einen Teil eines Diagramms in eine andere Anwendung
 
-1.  Wählen Sie im Diagramm einige oder alle Formen aus.
+1. Wählen Sie im Diagramm einige oder alle Formen aus.
 
-2.  Mit der rechten Maustaste in der Auswahl, und klicken Sie dann auf **Kopie**.
+2. Mit der rechten Maustaste in der Auswahl, und klicken Sie dann auf **Kopie**.
 
-3.  Fügen Sie die Auswahl in die gewünschte Anwendung ein.
+3. Fügen Sie die Auswahl in die gewünschte Anwendung ein.
 
 ### <a name="to-save-a-modeling-diagram-as-an-xml-paper-specification-xps-file"></a>So speichern Sie ein Modellierungsdiagramm als XPS-Datei (XML Paper Specification)
 
-1.  Auf der **Datei** Menü klicken Sie auf **Drucken** zum Öffnen der **Drucken** im Dialogfeld.
+1. Auf der **Datei** Menü klicken Sie auf **Drucken** zum Öffnen der **Drucken** im Dialogfeld.
 
-2.  In der **Namen** Liste **Microsoft XPS Document Writer**, und klicken Sie dann auf **OK**.
+2. In der **Namen** Liste **Microsoft XPS Document Writer**, und klicken Sie dann auf **OK**.
 
-3.  In der **speichern Sie die Datei** (Dialogfeld), speichern Sie die Datei als ein **XPS-Dokument (\*.xps)** Datei.
+3. In der **speichern Sie die Datei** (Dialogfeld), speichern Sie die Datei als ein **XPS-Dokument (\*.xps)** Datei.
 
 ## <a name="net-framework-security"></a>.NET Framework-Sicherheit
 

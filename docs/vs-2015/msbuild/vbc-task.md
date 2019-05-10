@@ -1,14 +1,9 @@
 ---
 title: Vbc-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Vbc
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: 595278b1-2782-4577-b1ba-b4b5ab5625a3
 caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4ed9563f4149b550e123cf74a09f19245514fe97
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
+manager: jillfra
+ms.openlocfilehash: a3d829a439ec7fb61247e28146e80d4988f04623
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281861"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659695"
 ---
 # <a name="vbc-task"></a>Vbc-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Umschließt die Datei „vbc.exe“, die ausführbare Dateien (EXE), Dynamic Link Libraries (DLL) oder Codemodule (NETMODULE) produziert. Weitere Informationen zu vbc.exe finden Sie unter [Visual Basic-Befehlszeilencompiler](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c).  
   
 ## <a name="parameters"></a>Parameter  
@@ -58,7 +52,7 @@ Umschließt die Datei „vbc.exe“, die ausführbare Dateien (EXE), Dynamic Lin
 |`Imports`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Importiert Namespaces aus den angegebenen Auflistungen. Dieser Parameter entspricht dem Schalter [/imports](http://msdn.microsoft.com/library/9a93fb53-c080-497b-bf9b-441022dbbc39) des Compilers „vbc.exe“.|  
 |`KeyContainer`|Optionaler `String` -Parameter.<br /><br /> Gibt den Namen des kryptografischen Schlüsselcontainers an. Dieser Parameter entspricht dem Schalter [/keycontainer](http://msdn.microsoft.com/library/6a9bc861-1752-4db1-9f64-b5252f0482cc) des Compilers „vbc.exe“.|  
 |`KeyFile`|Optionaler `String` -Parameter.<br /><br /> Gibt den Dateinamen mit dem kryptografischen Schlüssel an. Weitere Informationen finden Sie unter [/keyfile](http://msdn.microsoft.com/library/ffa82a4b-517a-4c6c-9889-5bae7b534bb8).|  
-|`LangVersion`|Optional, [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) Parameter.<br /><br /> Gibt die Sprachversion (entweder 9 oder 10) an|  
+|`LangVersion`|Optionale [String])<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) Parameter.<br /><br /> Gibt die Sprachversion (entweder 9 oder 10) an|  
 |`LinkResources`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Erstellt einen Link zu einer .NET Framework-Ressource in der Ausgabedatei. Die Ressourcendatei wird nicht in der Ausgabedatei platziert. Dieser Parameter entspricht dem Schalter [/linkresource](http://msdn.microsoft.com/library/cf4dcad8-17b7-404c-9184-29358aa05b15) des Compilers „vbc.exe“.|  
 |`MainEntryPoint`|Optionaler `String` -Parameter.<br /><br /> Gibt die Klasse oder das Modul mit dem Speicherort der `Sub Main`-Prozedur an. Dieser Parameter entspricht dem [/main](http://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0)-Schalter des Compilers „vbc.exe“.|  
 |`ModuleAssemblyName`|Optionaler `String` -Parameter.<br /><br /> Gibt die Assembly an, zu der dieses Modul gehört.|  
@@ -113,6 +107,3 @@ Umschließt die Datei „vbc.exe“, die ausführbare Dateien (EXE), Dynamic Lin
  [Visual Basic-Befehlszeilencompiler](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)   
  [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
  [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)
-
-
-

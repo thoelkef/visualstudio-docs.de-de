@@ -5,8 +5,6 @@ author: abuchholtzau
 ms.author: allisb
 ms.date: 09/05/2018
 ms.topic: reference
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.PathTrustOptions
 helpviewer_keywords:
@@ -15,12 +13,12 @@ helpviewer_keywords:
 - mark of the web
 - trusted files
 - trusted folders
-ms.openlocfilehash: 08c4b08c33cd954aa427f158158f29cfbe50df94
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 011673bca7be569b5b350dc264148d5a7890d39c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789641"
 ---
 # <a name="configure-trust-settings-for-files-and-folders"></a>Konfigurieren von Vertrauenseinstellungen für Dateien und Ordner
 
@@ -37,11 +35,11 @@ Führen Sie die folgenden Schritte aus, um Vertrauenseinstellungen zu ändern:
 
 2. Wählen Sie die Ebene der Überprüfungen für Dateien und Ordner aus. Für jede Datei bzw. jeden Ordner können Sie verschiedene Überprüfungen einrichten. Folgende Optionen stehen zur Verfügung:
 
-   * **Keine Überprüfung:** Visual Studio führt keine Überprüfungen aus.
+   * **Keine Überprüfung**: Visual Studio führt keine Überprüfungen aus.
 
-   * **MOTW-Attribut überprüfen:** Wenn die Datei oder der Ordner über das MOTW-Attribut verfügt, blockiert Visual Studio den Vorgang und fragt nach der Berechtigung zum Öffnen.
+   * **MOTW-Attribut überprüfen**: Wenn die Datei oder der Ordner über das MOTW-Attribut verfügt, blockiert Visual Studio den Vorgang und fragt nach der Berechtigung zum Öffnen.
 
-   * **Vertrauenswürdigkeit des Pfads überprüfen:** Wenn die Datei oder der Pfad nicht Teil der Liste **Vertrauenswürdige Pfade** ist, blockiert Visual Studio den Vorgang und fragt nach der Berechtigung zum Öffnen.
+   * **Vertrauenswürdigkeit des Pfads überprüfen**: Wenn die Datei oder der Pfad nicht Teil der Liste **Vertrauenswürdige Pfade** ist, blockiert Visual Studio den Vorgang und fragt nach der Berechtigung zum Öffnen.
 
    ![Optionen für die Überprüfung der Vertrauenswürdigkeit](media/trust-settings.png)
 

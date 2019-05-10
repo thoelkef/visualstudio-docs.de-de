@@ -1,7 +1,6 @@
 ---
 title: Hinzufügen einer Anmerkung zu Funktionsparametern und Rückgabewerten
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - _Outptr_opt_result_bytebuffer_to_
@@ -126,12 +125,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: e958674858eaa2de01cf837de12f70ed17b4f210
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: ace5afbf1c587a2c54c4221469cb7be0d6487c9a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921016"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388544"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Hinzufügen einer Anmerkung zu Funktionsparametern und Rückgabewerten
 Dieser Artikel beschreibt typische Verwendungen von Anmerkungen für die einfache Funktionsparameter, skalare und Verweise auf Strukturen und Klassen, und die meisten Arten von Puffern.  Dieser Artikel zeigt außerdem gängige Verwendungsmuster für Anmerkungen. Zusätzliche Anmerkungen, die mit Funktionen verknüpft sind, finden Sie unter [Funktionsverhalten kommentieren](../code-quality/annotating-function-behavior.md)
@@ -141,27 +140,27 @@ Dieser Artikel beschreibt typische Verwendungen von Anmerkungen für die einfach
 
  **Anmerkungen und Beschreibungen**
 
--   `_In_`
+- `_In_`
 
      Kommentiert von Eingabeparametern, die skalare, Strukturen, Zeigern auf Strukturen usw. sind.  Explizit kann auf einfache skalare verwendet werden.  Der Parameter muss vor Status gültig sein und wird nicht geändert werden.
 
--   `_Out_`
+- `_Out_`
 
      Kommentiert die Output-Parameter, die skalare, Strukturen, Zeigern auf Strukturen und ähnliches.  Wenden Sie dies nicht auf ein Objekt, das kann keinen Wert zurückgeben, z. B. ein Skalarwert, der als Wert übergeben wird.  Der Parameter keine erforderliche Status gültig ist, jedoch muss gültig sein, nach dem Status.
 
--   `_Inout_`
+- `_Inout_`
 
      Kommentiert die Parameter, der von der Funktion geändert werden.  Es muss gültig sein, vor Zustand und nach dem Zustand, aber es wird davon ausgegangen, dass unterschiedliche Werte aufweisen, vor und nach dem Aufruf. Muss ein änderbarer Wert zuweisen.
 
--   `_In_z_`
+- `_In_z_`
 
      Ein Zeiger auf eine auf Null endende Zeichenfolge, die als Eingabe verwendet wird.  Die Zeichenfolge muss vor Status gültig sein.  Varianten der `PSTR`, die bereits die richtigen Anmerkungen haben, als bevorzugt eingestuft.
 
--   `_Inout_z_`
+- `_Inout_z_`
 
      Ein Zeiger auf ein Array von Null-terminierte Zeichen, die geändert wird.  Es muss gültig sein, vor und nach dem Aufruf, jedoch wird davon ausgegangen, dass des Werts geändert haben.  Der null-Terminator verschoben werden kann, aber nur die Elemente bis zu der ursprünglichen null-Terminator zugegriffen werden können.
 
--   `_In_reads_(s)`
+- `_In_reads_(s)`
 
      `_In_reads_bytes_(s)`
 
@@ -169,15 +168,15 @@ Dieser Artikel beschreibt typische Verwendungen von Anmerkungen für die einfach
 
      Die `_bytes_` Variant-Wert gibt die Größe in Bytes, die keine Elemente. Verwenden Sie diese Option aus, nur, wenn die Größe als Elemente ausgedrückt werden kann.  Z. B. `char` Zeichenfolgen verwenden würden die `_bytes_` Variant-Wert nur dann, wenn eine ähnliche Funktion verwendet `wchar_t` würde.
 
--   `_In_reads_z_(s)`
+- `_In_reads_z_(s)`
 
      Ein Zeiger auf ein Array, das Null-terminiert ist, und verfügt über eine bekannte Größe. Elemente bis zu dem null-Abschlusszeichen – oder `s` , wenn kein null-Abschlusszeichen vorhanden ist, muss vor Status gültig sein.  Wenn die Größe in Byte bekannt ist, skalieren `s` mit der Elementgröße.
 
--   `_In_reads_or_z_(s)`
+- `_In_reads_or_z_(s)`
 
      Ein Zeiger auf ein Array, das Null-terminiert oder verfügt über eine bekannte Größe oder beides. Elemente bis zu dem null-Abschlusszeichen – oder `s` , wenn kein null-Abschlusszeichen vorhanden ist, muss vor Status gültig sein.  Wenn die Größe in Byte bekannt ist, skalieren `s` mit der Elementgröße.  (Verwendet für die `strn` Familie.)
 
--   `_Out_writes_(s)`
+- `_Out_writes_(s)`
 
      `_Out_writes_bytes_(s)`
 
@@ -189,11 +188,11 @@ Dieser Artikel beschreibt typische Verwendungen von Anmerkungen für die einfach
 
      Die `_bytes_` Variant-Wert gibt die Größe in Bytes, die keine Elemente. Verwenden Sie diese Option aus, nur, wenn die Größe als Elemente ausgedrückt werden kann.  Z. B. `char` Zeichenfolgen verwenden würden die `_bytes_` Variant-Wert nur dann, wenn eine ähnliche Funktion verwendet `wchar_t` würde.
 
--   `_Out_writes_z_(s)`
+- `_Out_writes_z_(s)`
 
      Ein Zeiger auf ein Array von `s` Elemente.  Die Elemente müssen nicht vorab Status gültig sein.  Nach der Status, die Elemente nach oben durch den null-Terminator – vorhanden sein muss, muss gültig sein.  Wenn die Größe in Byte bekannt ist, skalieren `s` mit der Elementgröße.
 
--   `_Inout_updates_(s)`
+- `_Inout_updates_(s)`
 
      `_Inout_updates_bytes_(s)`
 
@@ -201,11 +200,11 @@ Dieser Artikel beschreibt typische Verwendungen von Anmerkungen für die einfach
 
      Die `_bytes_` Variant-Wert gibt die Größe in Bytes, die keine Elemente. Verwenden Sie diese Option aus, nur, wenn die Größe als Elemente ausgedrückt werden kann.  Z. B. `char` Zeichenfolgen verwenden würden die `_bytes_` Variant-Wert nur dann, wenn eine ähnliche Funktion verwendet `wchar_t` würde.
 
--   `_Inout_updates_z_(s)`
+- `_Inout_updates_z_(s)`
 
      Ein Zeiger auf ein Array, das Null-terminiert ist, und verfügt über eine bekannte Größe. Die Elemente nach oben durch den null-Terminator – vorhanden sein muss, muss vor Zustand und nach dem Zustand gültig sein.  Der Wert in der nach der Status wird davon ausgegangen, dass sich von den Wert im Zustand "vor"; Dies schließt den Speicherort der null-Abschlusszeichen. Wenn die Größe in Byte bekannt ist, skalieren `s` mit der Elementgröße.
 
--   `_Out_writes_to_(s,c)`
+- `_Out_writes_to_(s,c)`
 
      `_Out_writes_bytes_to_(s,c)`
 
@@ -221,7 +220,7 @@ Dieser Artikel beschreibt typische Verwendungen von Anmerkungen für die einfach
 
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
 
--   `_Inout_updates_to_(s,c)`
+- `_Inout_updates_to_(s,c)`
 
      `_Inout_updates_bytes_to_(s,c)`
 
@@ -229,11 +228,11 @@ Dieser Artikel beschreibt typische Verwendungen von Anmerkungen für die einfach
 
      Die `_bytes_` Variant-Wert gibt die Größe in Bytes, die keine Elemente. Verwenden Sie diese Option aus, nur, wenn die Größe als Elemente ausgedrückt werden kann.  Z. B. `char` Zeichenfolgen verwenden würden die `_bytes_` Variant-Wert nur dann, wenn eine ähnliche Funktion verwendet `wchar_t` würde.
 
--   `_Inout_updates_z_(s)`
+- `_Inout_updates_z_(s)`
 
      Ein Zeiger auf ein Array, das Null-terminiert ist, und verfügt über eine bekannte Größe. Die Elemente nach oben durch den null-Terminator – vorhanden sein muss, muss vor Zustand und nach dem Zustand gültig sein.  Der Wert in der nach der Status wird davon ausgegangen, dass sich von den Wert im Zustand "vor"; Dies schließt den Speicherort der null-Abschlusszeichen. Wenn die Größe in Byte bekannt ist, skalieren `s` mit der Elementgröße.
 
--   `_Out_writes_to_(s,c)`
+- `_Out_writes_to_(s,c)`
 
      `_Out_writes_bytes_to_(s,c)`
 
@@ -249,7 +248,7 @@ Dieser Artikel beschreibt typische Verwendungen von Anmerkungen für die einfach
 
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
 
--   `_Inout_updates_to_(s,c)`
+- `_Inout_updates_to_(s,c)`
 
      `_Inout_updates_bytes_to_(s,c)`
 
@@ -257,7 +256,7 @@ Dieser Artikel beschreibt typische Verwendungen von Anmerkungen für die einfach
 
      Die `_bytes_` Variant-Wert gibt die Größe in Bytes, die keine Elemente. Verwenden Sie diese Option aus, nur, wenn die Größe als Elemente ausgedrückt werden kann.  Z. B. `char` Zeichenfolgen verwenden würden die `_bytes_` Variant-Wert nur dann, wenn eine ähnliche Funktion verwendet `wchar_t` würde.
 
--   `_Inout_updates_all_(s)`
+- `_Inout_updates_all_(s)`
 
      `_Inout_updates_bytes_all_(s)`
 
@@ -269,19 +268,19 @@ Dieser Artikel beschreibt typische Verwendungen von Anmerkungen für die einfach
 
      Die `_bytes_` Variant-Wert gibt die Größe in Bytes, die keine Elemente. Verwenden Sie diese Option aus, nur, wenn die Größe als Elemente ausgedrückt werden kann.  Z. B. `char` Zeichenfolgen verwenden würden die `_bytes_` Variant-Wert nur dann, wenn eine ähnliche Funktion verwendet `wchar_t` würde.
 
--   `_In_reads_to_ptr_(p)`
+- `_In_reads_to_ptr_(p)`
 
      Ein Zeiger auf ein Array für die der Ausdruck `p`  -  `_Curr_` (d. h. `p` minus `_Curr_`) wird von der entsprechenden Sprache standard definiert.  Die Elemente vor `p` muss vor Status gültig sein.
 
--   `_In_reads_to_ptr_z_(p)`
+- `_In_reads_to_ptr_z_(p)`
 
      Ein Zeiger auf eine mit Null endendes Array für die der Ausdruck `p`  -  `_Curr_` (d. h. `p` minus `_Curr_`) wird von der entsprechenden Sprache standard definiert.  Die Elemente vor `p` muss vor Status gültig sein.
 
--   `_Out_writes_to_ptr_(p)`
+- `_Out_writes_to_ptr_(p)`
 
      Ein Zeiger auf ein Array für die der Ausdruck `p`  -  `_Curr_` (d. h. `p` minus `_Curr_`) wird von der entsprechenden Sprache standard definiert.  Die Elemente vor `p` müssen nicht vorab Status gültig sein und muss gültig sein, nach dem Status.
 
--   `_Out_writes_to_ptr_z_(p)`
+- `_Out_writes_to_ptr_z_(p)`
 
      Ein Zeiger auf eine mit Null endendes Array für die der Ausdruck `p`  -  `_Curr_` (d. h. `p` minus `_Curr_`) wird von der entsprechenden Sprache standard definiert.  Die Elemente vor `p` müssen nicht vorab Status gültig sein und muss gültig sein, nach dem Status.
 
@@ -316,7 +315,7 @@ Dieser Artikel beschreibt typische Verwendungen von Anmerkungen für die einfach
   In der folgenden Tabelle werden zusätzliche Teilzeichenfolgen in der Anmerkungsname, der die Bedeutung der Anmerkung genauer bestimmen eingefügt.  Die verschiedenen Teilzeichenfolgen sind `_z`, `_COM_`, `_buffer_`, `_bytebuffer_`, und `_to_`.
 
 > [!IMPORTANT]
->  Wenn die Schnittstelle, die Sie kommentieren sind COM ist, verwenden Sie com-Form von diese Anmerkungen. Verwenden Sie die COM-Anmerkungen nicht mit einer beliebigen anderen Typschnittstelle.
+> Wenn die Schnittstelle, die Sie kommentieren sind COM ist, verwenden Sie com-Form von diese Anmerkungen. Verwenden Sie die COM-Anmerkungen nicht mit einer beliebigen anderen Typschnittstelle.
 
  **Anmerkungen und Beschreibungen**
 
@@ -389,59 +388,59 @@ Dieser Artikel beschreibt typische Verwendungen von Anmerkungen für die einfach
 
  **Anmerkungen und Beschreibungen**
 
--   `_Outref_`
+- `_Outref_`
 
      Ergebnis muss nach dem Status gültig sein und darf nicht null sein.
 
--   `_Outref_result_maybenull_`
+- `_Outref_result_maybenull_`
 
      Ergebnis muss gültig sein, nach der Status, aber es kann null sein, nach dem Status.
 
--   `_Outref_result_buffer_(s)`
+- `_Outref_result_buffer_(s)`
 
      Ergebnis muss nach dem Status gültig sein und darf nicht null sein. Zeigt auf gültigen Puffer der Größe `s` Elemente.
 
--   `_Outref_result_bytebuffer_(s)`
+- `_Outref_result_bytebuffer_(s)`
 
      Ergebnis muss nach dem Status gültig sein und darf nicht null sein. Zeigt auf gültigen Puffer der Größe `s` Bytes.
 
--   `_Outref_result_buffer_to_(s, c)`
+- `_Outref_result_buffer_to_(s, c)`
 
      Ergebnis muss nach dem Status gültig sein und darf nicht null sein. Verweist auf den Puffer mit `s` Elemente, von denen die erste `c` gültig sind.
 
--   `_Outref_result_bytebuffer_to_(s, c)`
+- `_Outref_result_bytebuffer_to_(s, c)`
 
      Ergebnis muss nach dem Status gültig sein und darf nicht null sein. Verweist auf den Puffer mit `s` Bytes, von denen die erste `c` gültig sind.
 
--   `_Outref_result_buffer_all_(s)`
+- `_Outref_result_buffer_all_(s)`
 
      Ergebnis muss nach dem Status gültig sein und darf nicht null sein. Zeigt auf gültigen Puffer der Größe `s` gültigen Elementen.
 
--   `_Outref_result_bytebuffer_all_(s)`
+- `_Outref_result_bytebuffer_all_(s)`
 
      Ergebnis muss nach dem Status gültig sein und darf nicht null sein. Zeigt auf gültigen Puffer von `s` Bytes von gültigen Elementen.
 
--   `_Outref_result_buffer_maybenull_(s)`
+- `_Outref_result_buffer_maybenull_(s)`
 
      Ergebnis muss gültig sein, nach der Status, aber es kann null sein, nach dem Status. Zeigt auf gültigen Puffer der Größe `s` Elemente.
 
--   `_Outref_result_bytebuffer_maybenull_(s)`
+- `_Outref_result_bytebuffer_maybenull_(s)`
 
      Ergebnis muss gültig sein, nach der Status, aber es kann null sein, nach dem Status. Zeigt auf gültigen Puffer der Größe `s` Bytes.
 
--   `_Outref_result_buffer_to_maybenull_(s, c)`
+- `_Outref_result_buffer_to_maybenull_(s, c)`
 
      Ergebnis muss gültig sein, nach der Status, aber es kann null sein, nach dem Status. Verweist auf den Puffer mit `s` Elemente, von denen die erste `c` gültig sind.
 
--   `_Outref_result_bytebuffer_to_maybenull_(s,c)`
+- `_Outref_result_bytebuffer_to_maybenull_(s,c)`
 
      Ergebnis muss gültig sein, nach der Status, aber es kann null sein, im Post-Zustand. Verweist auf den Puffer mit `s` Bytes, von denen die erste `c` gültig sind.
 
--   `_Outref_result_buffer_all_maybenull_(s)`
+- `_Outref_result_buffer_all_maybenull_(s)`
 
      Ergebnis muss gültig sein, nach der Status, aber es kann null sein, im Post-Zustand. Zeigt auf gültigen Puffer der Größe `s` gültigen Elementen.
 
--   `_Outref_result_bytebuffer_all_maybenull_(s)`
+- `_Outref_result_bytebuffer_all_maybenull_(s)`
 
      Ergebnis muss gültig sein, nach der Status, aber es kann null sein, im Post-Zustand. Zeigt auf gültigen Puffer von `s` Bytes von gültigen Elementen.
 
@@ -455,7 +454,7 @@ Dieser Artikel beschreibt typische Verwendungen von Anmerkungen für die einfach
 ## <a name="other-common-annotations"></a>Andere allgemeine Anmerkungen
  **Anmerkungen und Beschreibungen**
 
--   `_In_range_(low, hi)`
+- `_In_range_(low, hi)`
 
      `_Out_range_(low, hi)`
 
@@ -472,15 +471,15 @@ Dieser Artikel beschreibt typische Verwendungen von Anmerkungen für die einfach
      Der Parameter, ein Feld oder Ergebnis wird im Bereich (inklusiv) von `low` zu `hi`.  Äquivalent zu `_Satisfies_(_Curr_ >= low && _Curr_ <= hi)` , die auf das mit Anmerkungen versehene Objekt zusammen mit den entsprechenden vorab Zustand, oder nach dem Status Bedingungen angewendet wird.
 
     > [!IMPORTANT]
-    >  Obwohl die Namen "in" und "out", die Semantik der enthalten `_In_` und `_Out_` führen **nicht** gelten diese Anmerkungen.
+    > Obwohl die Namen "in" und "out", die Semantik der enthalten `_In_` und `_Out_` führen **nicht** gelten diese Anmerkungen.
 
--   `_Pre_equal_to_(expr)`
+- `_Pre_equal_to_(expr)`
 
      `_Post_equal_to_(expr)`
 
      Der mit Anmerkungen versehenen Wert `expr`.  Äquivalent zu `_Satisfies_(_Curr_ == expr)` , die auf das mit Anmerkungen versehene Objekt zusammen mit den entsprechenden vorab Zustand, oder nach dem Status Bedingungen angewendet wird.
 
--   `_Struct_size_bytes_(size)`
+- `_Struct_size_bytes_(size)`
 
      Gilt für die Deklaration einer Struktur oder Klasse.  Gibt an, dass ein gültiges Objekt dieses Typs möglicherweise größer als der deklarierte Typ, mit der Anzahl von Bytes wird, indem `size`.  Zum Beispiel:
 

@@ -1,33 +1,28 @@
 ---
-title: Was&#39;neues beim Entwurf in Visual Studio | Microsoft-Dokumentation
-ms.custom: ''
+title: Was&#39;neues für den Entwurf
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
-- what's new [VIsual Studio ALM], architecture and modeling
+- what's new [VIsual Studio], architecture and modeling
 - architecture [Visual Studio Ultimate], modeling
-- modeling software [Visual Studio ALM], What's New
+- modeling software [Visual Studio], What's New
 ms.assetid: 36ab5c17-6dc0-4075-a28e-a0fa49b11260
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ee504d0054c52649d48676451168e7dea171b6af
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 148da7602d8198a4c85e2a7fbee2107b4e9662d1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771287"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039058"
 ---
-# <a name="whats-new-for-design-in-visual-studio"></a>Neues beim Entwurf in Visual Studio
+# <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Neues beim Entwurf in Visual Studio in Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-Dieses Release von Visual Studio bietet die folgenden Verbesserungen, sodass Sie Code besser verstehen und entwerfen können.
+Diese Version von Visual Studio bietet die folgenden Verbesserungen, sodass Sie Code besser verstehen und entwerfen können.
 
  **Code Maps und Abhängigkeitsdiagramme**
 
@@ -61,7 +56,7 @@ Dieses Release von Visual Studio bietet die folgenden Verbesserungen, sodass Sie
 
   Siehe [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md).
 
-  **Andere Entwurfs- und modellierungsänderungen ändert sich in dieser Version:**
+  **Andere Entwurfs- und Modellierungsänderungen in diesem Release:**
 
 - **Ebenendiagramme**. Aktualisieren Sie diese Diagramme mit der Klassenansicht und dem Objektbrowser. Mithilfe von Ebenendiagrammen können Sie die gewünschten Abhängigkeiten für Ihre Software beschreiben, um die Software-Entwicklungsanforderungen zu erfüllen. Halten Sie den Code anhand dieses Aufbaus konsistent, indem Sie Code finden, der diese Einschränkungen nicht erfüllt und zukünftigen Code anhand dieser Baseline zu validieren.
 
@@ -69,7 +64,7 @@ Dieses Release von Visual Studio bietet die folgenden Verbesserungen, sodass Sie
 
 - **Architektur-Explorer**. Sie können den Architektur-Explorer nicht mehr zum Erstellen von Diagrammen verwenden. Aber Sie können weiterhin den Projektmappen-Explorer verwenden.
 
-##  <a name="VersionSupport"></a> Edition-Unterstützung für Architektur- und Modellierungstools
+## <a name="VersionSupport"></a> Edition-Unterstützung für Architektur- und Modellierungstools
 
 Visual Studio 2015 ist in mehreren Versionen verfügbar. Nicht alle diese bieten Unterstützung für die Architektur- und Modellierungstools. Die folgende Tabelle zeigt die Verfügbarkeit jedes Tools.
 

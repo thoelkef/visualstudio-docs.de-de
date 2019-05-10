@@ -9,45 +9,49 @@ helpviewer_keywords:
 ms.assetid: ce526259-85a6-475b-9274-0b3a21d95db2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66056d2f871d142da46cae25b2e9cb589836a580
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: a8ad236307360a96f64999313764424305980fc9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838436"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838118"
 ---
 # <a name="idiastackframegetrawlvarinstancevalue"></a>IDiaStackFrame::get_rawLVarInstanceValue
-Diese Methode ruft den Wert der angegebenen lokalen Variable als unformatierte Bytes ab.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_rawLVarInstanceValue(  
-   IDiaLVarInstance* pInstance,  
-   DWORD             cbDataMax,  
-   DWORD*            pcbData,  
-   BYTE*             pbData  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pInstance`  
- [in] Ein `IDiaLVarInstance` Objekt, das eine Instanz der lokalen Variablen auf den Wert für darstellt.  
-  
- `cbDataMax`  
- [in] Maximale Anzahl von Bytes im Puffer verweist `pbData`. Dies kann bis zu 8 Bytes sein (`sizeof(ULONGLONG)`).  
-  
- `pcbData`  
- [out] Gibt die tatsächliche Anzahl der Bytes im Puffer gespeichert.  
-  
- `pbData`  
- [out] Ein Puffer mit Daten gefüllt werden soll. Dieser darf nicht `NULL` sein.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
+Diese Methode ruft den Wert der angegebenen lokalen Variable als unformatierte Bytes ab.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_rawLVarInstanceValue(
+   IDiaLVarInstance* pInstance,
+   DWORD             cbDataMax,
+   DWORD*            pcbData,
+   BYTE*             pbData
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pInstance`
+
+[in] Ein `IDiaLVarInstance` Objekt, das eine Instanz der lokalen Variablen auf den Wert für darstellt.
+
+ `cbDataMax`
+
+[in] Maximale Anzahl von Bytes im Puffer verweist `pbData`. Dies kann bis zu 8 Bytes sein (`sizeof(ULONGLONG)`).
+
+ `pcbData`
+
+[out] Gibt die tatsächliche Anzahl der Bytes im Puffer gespeichert.
+
+ `pbData`
+
+[out] Ein Puffer mit Daten gefüllt werden soll. Dieser darf nicht `NULL` sein.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

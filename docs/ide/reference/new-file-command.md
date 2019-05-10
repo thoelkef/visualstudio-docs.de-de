@@ -1,7 +1,6 @@
 ---
 title: Befehl "Neue Datei"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - file.newfile
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 767868d6-a525-425b-a43b-2198f636ab6b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb4ccae573813811567033dfa574c94e1bf809b3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9d6707d2e9ed8e001762939cb08ffee58f1c1cdc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932115"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950902"
 ---
 # <a name="new-file-command"></a>Befehl "Neue Datei"
 Erstellt eine neue Datei und öffnet sie. Die Datei wird unter „Sonstige Dateien“ (Ordner) angezeigt.

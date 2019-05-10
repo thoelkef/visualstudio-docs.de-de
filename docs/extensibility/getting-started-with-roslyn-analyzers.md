@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 367c2ec8-3059-46a5-9d1c-57bead0419e7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70dcdcfbc31434dd09f83951e7d89d9fd1832168
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 57573adeceda942b2968bfe07108ff4d54a8435f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54091714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62911806"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>Erste Schritte mit Roslyn-Analysetools
 

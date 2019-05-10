@@ -1,14 +1,9 @@
 ---
 title: Aufrufhierarchie | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.CallHierarchy
 helpviewer_keywords:
@@ -17,18 +12,17 @@ ms.assetid: c55bda01-d7de-4823-8f9a-1bcc37dbb74a
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 86cf4e12f412e6448f4a4b7c38af8268f10d9c56
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 41c7aa12e4adf2a757689670cdfed394f2a534c6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851111"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433702"
 ---
 # <a name="call-hierarchy"></a>Aufrufhierarchie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Mithilfe der Aufrufhierarchie können Sie in Ihrem Code navigieren, indem Sie alle Aufrufe von und aus einer ausgewählten Methode, Eigenschaft oder einem Konstruktor anzeigen. Dadurch können Sie besser verstehen, wie Code fließt und die Auswirkungen von Codeänderungen auswerten. Sie können mehrere Codeebenen überprüfen, um komplexe Verkettungen von Methodenaufrufen und zusätzlichen Einstiegspunkten in den Code zu sehen. Dadurch können Sie nach sämtlichen möglichen Ausführungspfaden suchen.  
   
  Die Aufrufhierarchie ist im Gegensatz zur Aufrufliste, die vom Debugger angezeigt wird, zur Entwurfszeit verfügbar.  
@@ -61,7 +55,7 @@ Fenster „Aufrufhierarchie“
 - Wenn das **Codedefinitionsfenster** geöffnet ist, zeigt es den Code für den ausgewählten Member an. Dieses Fenster ist in C# und C++ verfügbar. Weitere Informationen zu diesem Fenster finden Sie unter [Anzeigen der Codestruktur](../../ide/viewing-the-structure-of-code.md).  
   
 > [!NOTE]
->  Die Aufrufhierarchie findet keine Methodengruppenverweise, die Stellen enthalten, an denen eine Methode als Ereignishandler hinzugefügt oder einem Delegaten zugewiesen wird. Verwenden Sie den Befehl **Alle Verweise suchen**, um alle Verweise auf eine Methode zu suchen.  
+> Die Aufrufhierarchie findet keine Methodengruppenverweise, die Stellen enthalten, an denen eine Methode als Ereignishandler hinzugefügt oder einem Delegaten zugewiesen wird. Verwenden Sie den Befehl **Alle Verweise suchen**, um alle Verweise auf eine Methode zu suchen.  
   
 ## <a name="shortcut-menu-items"></a>Kontextmenüelemente  
  In der folgenden Tabelle werden einige Kontextmenüoptionen beschrieben, auf die Sie zugreifen können, wenn Sie mit der rechten Maustaste auf einen Knoten im Strukturansichtsbereich klicken.  
@@ -74,6 +68,3 @@ Fenster „Aufrufhierarchie“
 |**Alle Verweise suchen**|Führt den Befehl „Alle Verweise suchen“ für den ausgewählten Knoten aus. So finden Sie alle Codezeilen in Ihrem Projekt, die auf eine Klasse oder einen Member verweisen.<br /><br /> Sie können auch auf UMSCHALT+F12 drücken, um den Befehl „Alle Verweise suchen“ für den ausgewählten Knoten auszuführen.|  
 |**Kopieren**|Kopiert die Inhalte des ausgewählten Knotens (aber nicht dessen Unterknoten).|  
 |**Aktualisieren**|Reduziert die ausgewählten Knoten, sodass bei der erneuten Erweiterung aktuelle Informationen angezeigt werden.|
-
-
-

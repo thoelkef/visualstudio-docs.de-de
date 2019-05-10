@@ -1,7 +1,6 @@
 ---
 title: Codemetrikfenster
 ms.date: 12/12/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.codemetrics.output
@@ -11,15 +10,15 @@ helpviewer_keywords:
 - results window, code metrics
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31690ccc3c2f32b4abb2ff9fefcc268c83977595
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bbe2c216a9293ddc8c5c1212957c2987924d14e1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825070"
 ---
 # <a name="use-the-code-metrics-results-window"></a>Verwenden Sie das Fenster Codemetrikergebnisse
 
@@ -49,15 +48,15 @@ Die **Filter** Dropdown-Feld enthält die Namen der Ergebnisspalten. Wenn ein Fi
 
 ### <a name="to-filter-the-code-metrics-results"></a>Zum Filtern der Codemetrikergebnisse
 
-1.  Von der **Filter** wählen Sie den Namen der Spalte.
+1. Von der **Filter** wählen Sie den Namen der Spalte.
 
-2.  In **Min**, geben Sie den minimalen Wert, der angezeigt werden.
+2. In **Min**, geben Sie den minimalen Wert, der angezeigt werden.
 
-3.  In **Max**, geben Sie den maximalen Wert angezeigt werden.
+3. In **Max**, geben Sie den maximalen Wert angezeigt werden.
 
-4.  Klicken Sie auf die **Filter anwenden** Schaltfläche.
+4. Klicken Sie auf die **Filter anwenden** Schaltfläche.
 
-5.  Um die Details der anzuzeigen, erweitern Sie in der Hierarchiestruktur.
+5. Um die Details der anzuzeigen, erweitern Sie in der Hierarchiestruktur.
 
 ## <a name="add-remove-and-rearrange-data-columns"></a>Hinzufügen, entfernen und Neuanordnen von Datenspalten
 
@@ -89,23 +88,23 @@ Weitere Informationen zu Azure-Boards Arbeitselemente angezeigt werden, finden S
 
 ### <a name="to-create-a-work-item-based-on-a-result"></a>Um eine Arbeitsaufgabe basierend auf ein Ergebnis zu erstellen.
 
-1.  Mit der rechten Maustaste in des Ergebnis.
+1. Mit der rechten Maustaste in des Ergebnis.
 
-2.  Zeigen Sie auf **Arbeitsaufgabe erstellen**, und klicken Sie dann auf den Typ des zu erstellenden Arbeitsaufgabe (**Fehler**, **Aufgabe**usw.).
+2. Zeigen Sie auf **Arbeitsaufgabe erstellen**, und klicken Sie dann auf den Typ des zu erstellenden Arbeitsaufgabe (**Fehler**, **Aufgabe**usw.).
 
-3.  Führen Sie das arbeitselementformular, indem Sie alle erforderlichen Felder ausfüllen.
+3. Führen Sie das arbeitselementformular, indem Sie alle erforderlichen Felder ausfüllen.
 
-4.  Auf der **Datei** Menü klicken Sie auf **Alles speichern** zum Speichern des Arbeitselements.
+4. Auf der **Datei** Menü klicken Sie auf **Alles speichern** zum Speichern des Arbeitselements.
 
 ### <a name="to-create-a-bug-based-on-a-result"></a>So erstellen Sie einen Fehler basierend auf ein Ergebnis
 
-1.  Klicken Sie auf das Ergebnis, um es auszuwählen.
+1. Klicken Sie auf das Ergebnis, um es auszuwählen.
 
-2.  Klicken Sie auf die **Arbeitselement erstellen** Schaltfläche.
+2. Klicken Sie auf die **Arbeitselement erstellen** Schaltfläche.
 
-3.  Führen Sie das arbeitselementformular, indem Sie alle erforderlichen Felder ausfüllen.
+3. Führen Sie das arbeitselementformular, indem Sie alle erforderlichen Felder ausfüllen.
 
-4.  Auf der **Datei** Menü klicken Sie auf **Alles speichern** zum Speichern des Arbeitselements.
+4. Auf der **Datei** Menü klicken Sie auf **Alles speichern** zum Speichern des Arbeitselements.
 
 ## <a name="see-also"></a>Siehe auch
 

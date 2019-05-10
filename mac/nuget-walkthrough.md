@@ -5,12 +5,13 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
-ms.openlocfilehash: 0a98425ba12ae7aba16a2bc6ffa29e701c1b9f11
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.custom: video
+ms.openlocfilehash: 8b67296dc4ad77977ce6ba0399e9d9b4207e2c7f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62938107"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Einschließen eines NuGet-Pakets in Ihr Projekt
 
@@ -76,9 +77,9 @@ Klicken Sie mit der rechten Maustaste auf **Pakete**, um auf das Kontextmenü zu
 
 ![Paketmenü](media/nuget-walkthrough-PackagesMenu.png)
 
-*   **Pakete hinzufügen**: Öffnet das Fenster, um dem Projekt weitere Pakete hinzuzufügen.
-*   **Aktualisieren**: Überprüft den Quellserver auf jedes Paket und lädt neuere Versionen herunter.
-*   **Wiederherstellen**: Lädt fehlende Pakete herunter (ohne bestehende Pakete auf neuere Versionen zu aktualisieren).
+* **Pakete hinzufügen**: Öffnet das Fenster, um dem Projekt weitere Pakete hinzuzufügen.
+* **Aktualisieren**: Überprüft den Quellserver auf jedes Paket und lädt neuere Versionen herunter.
+* **Wiederherstellen**: Lädt fehlende Pakete herunter (ohne bestehende Pakete auf neuere Versionen zu aktualisieren).
 
 Die Optionen „Aktualisieren“ und „Wiederherstellen“ sind auch auf Projektmappenebene verfügbar und wirken sich auf alle Projekte in der Projektmappe aus.
 
@@ -86,9 +87,9 @@ Sie können auch mit der rechten Maustaste auf die einzelnen Pakete klicken, um 
 
 ![Paketmenü](media/nuget-walkthrough-PackageMenu.png)
 
-*   **Versionsnummer**: Die Versionsnummer ist ein deaktiviertes Menüelement, das nur zu Informationszwecken dient.
-*   **Aktualisieren**: Überprüft den Quellserver und lädt eine neuere Version herunter (falls vorhanden).
-*   **Entfernen**: Entfernt das Paket aus diesem Projekt und die relevanten Assemblys aus den Projektverweisen.
+* **Versionsnummer**: Die Versionsnummer ist ein deaktiviertes Menüelement, das nur zu Informationszwecken dient.
+* **Aktualisieren**: Überprüft den Quellserver und lädt eine neuere Version herunter (falls vorhanden).
+* **Entfernen**: Entfernt das Paket aus diesem Projekt und die relevanten Assemblys aus den Projektverweisen.
 
 ## <a name="adding-package-sources"></a>Hinzufügen von Paketquellen
 
@@ -113,6 +114,10 @@ Die NuGet-Dokumentation erläutert [das Verwenden von NuGet ohne das Übernehmen
 ![Automatisches Wiederherstellen von Paketen](media/nuget-walkthrough-AutoRestore.png)
 
 Weitere Informationen zum Ausschließen der Verfolgung des Verzeichnisses `packages` finden Sie in der Dokumentation zu Ihrer speziellen Quellcodeverwaltung.
+
+## <a name="related-video"></a>Zugehörige Videos
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Using-NuGet/player]
 
 ## <a name="see-also"></a>Siehe auch
 

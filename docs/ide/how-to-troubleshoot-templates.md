@@ -1,19 +1,18 @@
 ---
 title: Problembehandlung beim Laden von Projekt- und Elementvorlagen
 ms.date: 01/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: troubleshooting
 helpviewer_keywords:
 - templates [Visual Studio], troubleshooting
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4908716ce5f984aef6dbd3d482a26e1aeb94623d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 70782646a52a5bca5741a864eee1f965941bb34b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62547592"
 ---
 # <a name="how-to-troubleshoot-templates"></a>Vorgehensweise: Problembehandlung bei Vorlagen
 
@@ -21,7 +20,17 @@ Wenn keine Vorlage in der Entwicklungsumgebung geladen werden kann, gibt es eini
 
 ## <a name="validate-the-vstemplate-file"></a>Überprüfen der VSTEMPLATE-Datei
 
+::: moniker range="vs-2017"
+
 Wenn die *VSTEMPLATE*-Datei in einer Vorlage nicht dem Visual Studio-Vorlagenschema folgt, wird die Vorlage möglicherweise nicht im Dialogfeld **Neues Projekt** angezeigt.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Wenn die *VSTEMPLATE*-Datei in einer Vorlage nicht dem Visual Studio-Vorlagenschema folgt, wird die Vorlage möglicherweise nicht dem Dialogfeld angezeigt, in dem Sie neue Projekte erstellen.
+
+::: moniker-end
 
 ### <a name="to-validate-the-vstemplate-file"></a>So überprüfen Sie die VSTEMPLATE-Datei
 

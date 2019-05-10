@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Auswählen von Sammlungsmethoden | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, choosing collection method
@@ -10,15 +8,15 @@ helpviewer_keywords:
 - performance collection methods
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54efd3d68e81908d3843525b588d9c28cc1be3ad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 344af8760dad3c66c32590b7d2d665bef833e583
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974162"
 ---
 # <a name="how-to-choose-collection-methods"></a>Vorgehensweise: Auswählen von Sammlungsmethoden
 
@@ -32,7 +30,7 @@ Sie können die die Eigenschaft **Methode** der Leistungssitzung verwenden, um d
 
 - Wählen Sie auf der ersten Seite des Assistenten eine der folgenden Optionen aus:
 
-| Option | Beschreibung  |
+| Option | Beschreibung |
 |----------------------------| - |
 | **CPU-Sampling** | Sammelt Anwendungsstatistiken, die für die erste Analyse und zum Analysieren von CPU-Auslastungsproblemen nützlich sind. |
 | **Instrumentation** | Sammelt ausführliche Zeitsteuerungsdaten, die zur gezielten Analyse und zur Analyse von Eingabe/Ausgabe-Leistungsproblemen nützlich sind. |
@@ -93,6 +91,6 @@ Sie können die die Eigenschaft **Methode** der Leistungssitzung verwenden, um d
 
 ## <a name="see-also"></a>Siehe auch
 
-[Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)  
-[Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)  
+[Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)
+[Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)
 [Eigenschaften von Leistungssitzungen](../profiling/performance-session-properties.md)

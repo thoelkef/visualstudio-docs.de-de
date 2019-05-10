@@ -2,22 +2,21 @@
 title: 'Tutorial „Python in Visual Studio“, Schritt 2: Schreiben und Ausführen von Code'
 titleSuffix: ''
 description: Dies ist Schritt 2 einer grundlegenden Einführung in Python-Funktionen in Visual Studio, in der das Bearbeiten von Code und Ausführen eines Projekts erläutert wird.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
+ms.date: 01/28/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 201284ad236b2182ba6c4e69971ff15d0b43a009
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fda68b9e5bffbd1afab3389a0d8d624312a8de3f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430031"
 ---
 # <a name="step-2-write-and-run-code"></a>Schritt 2: Schreiben und Ausführen von Code
 
@@ -46,7 +45,7 @@ Obwohl Projektdateien im **Projektmappen-Explorer** verwaltet werden, arbeiten S
     ![Syntaxfarben und Hervorheben von Fehlern mit IntelliSense](media/vs-getting-started-python-06-IntelliSense3b.png)
 
     > [!Tip]
-    > Da eine Entwicklungsumgebung eine sehr persönliche Angelegenheit ist, bietet Visual Studio Ihnen die vollständige Steuerung über das Aussehen und Verhalten von Visual Studio. Klicken Sie auf den Menübefehl **Extras** > **Optionen**, um die Einstellungen der Registerkarten **Umgebung** und **Text-Editor** zu untersuchen. Standardmäßig wird Ihnen eine begrenzte Anzahl von Optionen angezeigt. Klicken Sie auf **Alle Einstellungen anzeigen** am unteren Rand des Dialogfelds, um jede Option für alle Programmiersprachen anzuzeigen. 
+    > Da eine Entwicklungsumgebung eine sehr persönliche Angelegenheit ist, bietet Visual Studio Ihnen die vollständige Steuerung über das Aussehen und Verhalten von Visual Studio. Klicken Sie auf den Menübefehl **Extras** > **Optionen**, um die Einstellungen der Registerkarten **Umgebung** und **Text-Editor** zu untersuchen. Standardmäßig wird Ihnen eine begrenzte Anzahl von Optionen angezeigt. Klicken Sie auf **Alle Einstellungen anzeigen** am unteren Rand des Dialogfelds, um jede Option für alle Programmiersprachen anzuzeigen.
 
 1. Führen Sie den Code aus, den Sie bis zu diesem Zeitpunkt geschrieben haben, indem Sie **STRG**+**F5** drücken oder das Menüelement **Debuggen** > **Starten ohne Debuggen**n. Visual Studio warnt Sie, wenn noch Fehler in Ihrem Code vorliegen.
 
@@ -54,7 +53,7 @@ Obwohl Projektdateien im **Projektmappen-Explorer** verwaltet werden, arbeiten S
 
     ![Ausgabe für die erste Ausführung des Programms](media/vs-getting-started-python-07-output.png)
 
-1. Zusätzlich zu der Vervollständigung von Anweisungen und Funktionen bietet IntelliSense Vervollständigungen für `import`- und `from`-Anweisungen von Python. Diese Vervollständigungen unterstützen Sie bei der Ermittlung, welche Module in Ihrer Umgebung verfügbar sind und welche Members diese enthalten. Löschen Sie im Editor die `print`-Zeile, und geben Sie `import ` ein. Eine Liste von Modulen wird angezeigt, wenn Sie einen Leerraum eingeben:
+1. Zusätzlich zu der Vervollständigung von Anweisungen und Funktionen bietet IntelliSense Vervollständigungen für `import`- und `from`-Anweisungen von Python. Diese Vervollständigungen unterstützen Sie bei der Ermittlung, welche Module in Ihrer Umgebung verfügbar sind und welche Members diese enthalten. Löschen Sie im Editor die `print`-Zeile, und geben Sie `import` ein. Eine Liste von Modulen wird angezeigt, wenn Sie einen Leerraum eingeben:
 
     ![IntellSense zeigt verfügbare Module für eine Import-Anweisung an](media/vs-getting-started-python-08-import1.png)
 

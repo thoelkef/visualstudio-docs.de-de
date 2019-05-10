@@ -3,7 +3,6 @@ title: Anzeigen von DLLs und ausführbare Dateien
 titleSuffix: Visual Studio Modules window
 ms.custom: seodec18
 ms.date: 11/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.modules
@@ -23,62 +22,62 @@ helpviewer_keywords:
 ms.assetid: d840fdca-b035-4452-b652-72580c831896
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec90c7f797c8b25337a23a12321352ff487a12ca
-ms.sourcegitcommit: 6efb9378a82924cb133912d207c6da4bd5a0b9c2
-ms.translationtype: MTE95
+ms.openlocfilehash: 400961eaa14b87d70a685a87be5df48ac92c8281
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53443924"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906141"
 ---
 # <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>Anzeigen von DLLs und ausführbare Dateien in das Fenster "Module" (C#, C++, Visual Basic F#)
- 
-Während des Debuggens Visual Studio die **Module** Fenster listet auf und zeigt Informationen zu den DLLs und ausführbare Dateien (*.exe* Dateien) Ihrer app verwendet. 
+
+Während des Debuggens Visual Studio die **Module** Fenster listet auf und zeigt Informationen zu den DLLs und ausführbare Dateien (*.exe* Dateien) Ihrer app verwendet.
 
 > [!NOTE]
-> Das Fenster "Module" ist nicht verfügbar, für das SQL-zu Skriptdebuggen. 
-  
+> Das Fenster "Module" ist nicht verfügbar, für das SQL-zu Skriptdebuggen.
+
 ## <a name="use-the-modules-window"></a>Verwenden des Modulfensters
 
-Wählen Sie zum Öffnen des Modulfensters während des Debuggens **Debuggen** > **Windows** > **Module** (oder drücken Sie **Strg + Alt + U** ). 
-  
-Module werden im Fenster **Module** standardmäßig nach der Ladereihenfolge sortiert. Wählen Sie den Header am oberen Rand der Spalte, um nach einer beliebigen Spalte im Fenster zu sortieren.  
-  
-## <a name="load-symbols"></a>Laden von Symbolen  
+Wählen Sie zum Öffnen des Modulfensters während des Debuggens **Debuggen** > **Windows** > **Module** (oder drücken Sie **Strg + Alt + U** ).
+
+Module werden im Fenster **Module** standardmäßig nach der Ladereihenfolge sortiert. Wählen Sie den Header am oberen Rand der Spalte, um nach einer beliebigen Spalte im Fenster zu sortieren.
+
+## <a name="load-symbols"></a>Laden von Symbolen
 
 Die **Symbolstatus** -Spalte in der **Module** Fenster zeigt, welche Module Debugsymbole geladen. Wenn der Status **Laden von Symbolen wurde übersprungen,**, **nicht gefunden, oder öffnen Sie die PDB-Datei**, oder **laden, die von der Einstellung zum Einschließen/Ausschließen deaktiviert**, können Sie Symbole manuell laden. Weitere Informationen zum Laden und Verwenden der Symbole finden Sie unter [angeben von Symbol(PDB)- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
-**So laden Sie Symbole manuell:**  
+**So laden Sie Symbole manuell:**
 
-1. In der **Module** der rechten Maustaste auf das Modul für die Symbole noch nicht geladen. 
-   
-   - Wählen Sie **Symbolinformationen laden** Weitere Informationen dazu, warum die Symbole nicht geladen. 
-   
-   - Wählen Sie **Symbole laden** Symbole manuell geladen.  
-   
-1. Wenn die Symbole nicht geladen werden, wählen Sie **Symboleinstellungen** zu öffnen der **Optionen** Dialogfeld angeben, und das Laden der Speicherorte der Symbole zu ändern. 
-   
-   Sie können Symbole von den öffentlichen Microsoft-Symbolservern oder anderen Servern herunterladen, oder Laden von Symbolen aus einem Ordner auf Ihrem Computer. Weitere Informationen finden Sie unter [angeben der symboldateispeicherorte und des Ladeverhaltens](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#BKMK_Specify_symbol_locations_and_loading_behavior).   
+1. In der **Module** der rechten Maustaste auf das Modul für die Symbole noch nicht geladen.
 
-**So ändern Sie das Laden der Einstellungen für das Verhalten der Symbole auf:**  
+   - Wählen Sie **Symbolinformationen laden** Weitere Informationen dazu, warum die Symbole nicht geladen.
 
-1. Klicken Sie im Fenster **Module** mit der rechten Maustaste auf ein beliebiges Modul.  
-   
-1. Wählen Sie **Symboleinstellungen**.  
-  
-1. Wählen Sie **alle Symbole laden**, oder wählen Sie die Module zum ein- oder ausschließen.  
-  
-1. Klicken Sie auf **OK**. Änderungen werden in der nächsten Debugsitzung wirksam.  
-  
-**So ändern Sie das Verhalten für ein bestimmtes Modul Laden der Symbole auf:**  
+   - Wählen Sie **Symbole laden** Symbole manuell geladen.
 
-1.  Klicken Sie im Fenster **Module** mit der rechten Maustaste auf das Modul.  
+1. Wenn die Symbole nicht geladen werden, wählen Sie **Symboleinstellungen** zu öffnen der **Optionen** Dialogfeld angeben, und das Laden der Speicherorte der Symbole zu ändern.
 
-1.  Klicken Sie im Kontextmenü, aktivieren oder deaktivieren Sie **immer laden automatisch**. Änderungen werden in der nächsten Debugsitzung wirksam.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Unterbrechen der Ausführung](/previous-versions/visualstudio/visual-studio-2010/7z9se2d8(v=vs.100))   
- [Viewing data in the debugger (Anzeigen von Daten im Debugger)](../debugger/viewing-data-in-the-debugger.md)   
- [Specify symbol (.pdb) and source files (Angeben von Symboldateien (PDB) und Quelldateien)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+   Sie können Symbole von den öffentlichen Microsoft-Symbolservern oder anderen Servern herunterladen, oder Laden von Symbolen aus einem Ordner auf Ihrem Computer. Weitere Informationen finden Sie unter [angeben der symboldateispeicherorte und des Ladeverhaltens](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#BKMK_Specify_symbol_locations_and_loading_behavior).
+
+**So ändern Sie das Laden der Einstellungen für das Verhalten der Symbole auf:**
+
+1. Klicken Sie im Fenster **Module** mit der rechten Maustaste auf ein beliebiges Modul.
+
+1. Wählen Sie **Symboleinstellungen**.
+
+1. Wählen Sie **alle Symbole laden**, oder wählen Sie die Module zum ein- oder ausschließen.
+
+1. Klicken Sie auf **OK**. Änderungen werden in der nächsten Debugsitzung wirksam.
+
+**So ändern Sie das Verhalten für ein bestimmtes Modul Laden der Symbole auf:**
+
+1. Klicken Sie im Fenster **Module** mit der rechten Maustaste auf das Modul.
+
+1. Klicken Sie im Kontextmenü, aktivieren oder deaktivieren Sie **immer laden automatisch**. Änderungen werden in der nächsten Debugsitzung wirksam.
+
+## <a name="see-also"></a>Siehe auch
+- [Breaking execution (Unterbrechen der Ausführung)](/previous-versions/visualstudio/visual-studio-2010/7z9se2d8(v=vs.100))
+- [Viewing data in the debugger (Anzeigen von Daten im Debugger)](../debugger/viewing-data-in-the-debugger.md)
+- [Specify symbol (.pdb) and source files (Angeben von Symboldateien (PDB) und Quelldateien)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

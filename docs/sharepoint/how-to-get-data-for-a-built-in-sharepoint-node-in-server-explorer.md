@@ -8,47 +8,47 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio], extending a node
 - SharePoint development in Visual Studio, extending SharePoint Connections node in Server Explorer
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e9ef30de63789072f021aaded87dd5e9c8071637
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d1e3ec8fd6598573a60f852727397d6baa63d3e9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898972"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813735"
 ---
 # <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>Vorgehensweise: Abrufen von Daten für einen integrierten SharePoint-Knoten im Server-Explorer
-  Für jeden integrierten SharePoint-Knoten im **Server-Explorer**, Sie können Daten abrufen, für die zugrunde liegende SharePoint-Komponente, die vom Knoten dargestellt. Weitere Informationen finden Sie unter [Erweitern des SharePoint-Verbindungsknotens im Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
-  
-## <a name="example"></a>Beispiel  
- Im folgenden Codebeispiel wird veranschaulicht, wie zum Abrufen von Daten für die zugrunde liegende SharePoint-Liste, die in ein Listenknoten darstellt **Server-Explorer**. Standardmäßig die Liste mit den Knoten haben eine **in Browser anzeigen** Kontextmenüelement, die Sie klicken können, um die Listen in einem Webbrowser zu öffnen. Dieses Beispiel erweitert eine Liste mit den Knoten durch das Hinzufügen einer **in Visual Studio anzeigen** Kontextmenüelement, die die Listen direkt in Visual Studio geöffnet wird. Der Code greift auf die Listendaten für den Knoten aus, um die URL der Liste, die in Visual Studio öffnen abzurufen.  
-  
+  Für jeden integrierten SharePoint-Knoten im **Server-Explorer**, Sie können Daten abrufen, für die zugrunde liegende SharePoint-Komponente, die vom Knoten dargestellt. Weitere Informationen finden Sie unter [Erweitern des SharePoint-Verbindungsknotens im Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
+
+## <a name="example"></a>Beispiel
+ Im folgenden Codebeispiel wird veranschaulicht, wie zum Abrufen von Daten für die zugrunde liegende SharePoint-Liste, die in ein Listenknoten darstellt **Server-Explorer**. Standardmäßig die Liste mit den Knoten haben eine **in Browser anzeigen** Kontextmenüelement, die Sie klicken können, um die Listen in einem Webbrowser zu öffnen. Dieses Beispiel erweitert eine Liste mit den Knoten durch das Hinzufügen einer **in Visual Studio anzeigen** Kontextmenüelement, die die Listen direkt in Visual Studio geöffnet wird. Der Code greift auf die Listendaten für den Knoten aus, um die URL der Liste, die in Visual Studio öffnen abzurufen.
+
  [!code-vb[SPExtensibility.ProjectSystemExtension.General#10](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextensionnodeinfo.vb#10)]
- [!code-csharp[SPExtensibility.ProjectSystemExtension.General#10](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextensionnodeinfo.cs#10)]  
-  
- Dieses Beispiel verwendet die SharePoint-Projektdiensts zum Abrufen der <xref:EnvDTE.DTE> -Objekt, das verwendet wird, öffnen Sie in Visual Studio aufgeführt. Weitere Informationen zu SharePoint-Projektdiensts, finden Sie unter [verwenden SharePoint-Projektdiensts](../sharepoint/using-the-sharepoint-project-service.md).  
-  
- Weitere Informationen zu den grundlegenden Aufgaben zum Erstellen einer Erweiterung für eine SharePoint-Knoten, finden Sie unter [Vorgehensweise: Erweitern eines SharePoint-Knotens im Server-Explorer](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).  
-  
-## <a name="compile-the-code"></a>Kompilieren des Codes  
- Dieses Beispiel erfordert Verweise auf die folgenden Assemblys:  
-  
--   EnvDTE  
-  
--   Microsoft.VisualStudio.SharePoint  
-  
--   Microsoft.VisualStudio.SharePoint.Explorer.Extensions  
-  
--   System.ComponentModel.Composition  
-  
-## <a name="deploy-the-extension"></a>Bereitstellen der Erweiterung  
- Zum Bereitstellen der **Server-Explorer** -Erweiterung erstellen Sie eine [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Erweiterung (VSIX) Verpacken, für die Assembly und alle anderen Dateien, die Sie mit der Erweiterung verteilen möchten. Weitere Informationen finden Sie unter [Bereitstellen von Erweiterungen für SharePoint-Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
-  
+ [!code-csharp[SPExtensibility.ProjectSystemExtension.General#10](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextensionnodeinfo.cs#10)]
+
+ Dieses Beispiel verwendet die SharePoint-Projektdiensts zum Abrufen der <xref:EnvDTE.DTE> -Objekt, das verwendet wird, öffnen Sie in Visual Studio aufgeführt. Weitere Informationen zu SharePoint-Projektdiensts, finden Sie unter [verwenden SharePoint-Projektdiensts](../sharepoint/using-the-sharepoint-project-service.md).
+
+ Weitere Informationen zu den grundlegenden Aufgaben zum Erstellen einer Erweiterung für eine SharePoint-Knoten, finden Sie unter [Vorgehensweise: Erweitern eines SharePoint-Knotens im Server-Explorer](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).
+
+## <a name="compile-the-code"></a>Kompilieren des Codes
+ Dieses Beispiel erfordert Verweise auf die folgenden Assemblys:
+
+- EnvDTE
+
+- Microsoft.VisualStudio.SharePoint
+
+- Microsoft.VisualStudio.SharePoint.Explorer.Extensions
+
+- System.ComponentModel.Composition
+
+## <a name="deploy-the-extension"></a>Bereitstellen der Erweiterung
+ Zum Bereitstellen der **Server-Explorer** -Erweiterung erstellen Sie eine [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Erweiterung (VSIX) Verpacken, für die Assembly und alle anderen Dateien, die Sie mit der Erweiterung verteilen möchten. Weitere Informationen finden Sie unter [Bereitstellen von Erweiterungen für SharePoint-Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
+
 ## <a name="see-also"></a>Siehe auch
- [Erweitern des SharePoint-Verbindungsknotens im Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
- [Vorgehensweise: Erweitern eines SharePoint-Knotens im Server-Explorer](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
- [Verwenden Sie die SharePoint-Projektdiensts](../sharepoint/using-the-sharepoint-project-service.md)   
- [Bereitstellen von Erweiterungen für SharePoint-Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
+- [Erweitern des SharePoint-Verbindungsknotens im Server-Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [Vorgehensweise: Erweitern eines SharePoint-Knotens im Server-Explorer](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)
+- [Verwenden Sie die SharePoint-Projektdiensts](../sharepoint/using-the-sharepoint-project-service.md)
+- [Bereitstellen von Erweiterungen für SharePoint-Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)

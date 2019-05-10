@@ -1,14 +1,9 @@
 ---
 title: Property-Element (MSBuild) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,18 +16,17 @@ ms.assetid: 69ab08ab-3e76-41dd-a01b-49aa1d2e0cac
 caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a8b9ebd5207b4fc4a6274090b91e8fa3ab0b20cb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: eefe0160328f1eb6b3fe841742547efe8be50ec1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49262995"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664829"
 ---
 # <a name="property-element-msbuild"></a>Property-Element (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Enthält einen benutzerdefinierten Eigenschaftennamen und -wert. Jedes Element, das in einem [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projekt verwendet wird, muss als untergeordnetes Element eines `PropertyGroup`-Elements angegeben werden.  
   
  \<Project>  
@@ -69,7 +63,7 @@ Enthält einen benutzerdefinierten Eigenschaftennamen und -wert. Jedes Element, 
   
  Dieser Text gibt den Eigenschaftswert an und enthält möglicherweise XML.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Eigenschaftennamen sind auf ASCII-Zeichen beschränkt. Im Projekt wird durch die Platzierung der Eigenschaftenname zwischen „`$(`“ und „`)`“ verwiesen werden. Beispielsweise würde `$(builddir)\classes` in „Build\classes“ aufgelöst, wenn die `builddir`-Eigenschaft den Wert `build` hat. Weitere Informationen zu Eigenschaften finden Sie unter [MSBuild-Eigenschaften](msbuild-properties1.md).  
   
 ## <a name="example"></a>Beispiel  
@@ -85,6 +79,3 @@ Enthält einen benutzerdefinierten Eigenschaftennamen und -wert. Jedes Element, 
 ## <a name="see-also"></a>Siehe auch
 [MSBuild-Eigenschaften](msbuild-properties1.md)  
  [Project File Schema Reference](../msbuild/msbuild-project-file-schema-reference.md) (Referenz zum Projektdateischema von MSBuild)
-
-
-

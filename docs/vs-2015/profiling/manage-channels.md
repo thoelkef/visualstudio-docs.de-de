@@ -1,14 +1,9 @@
 ---
 title: Verwalten von Kanälen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.tools.managechannels
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 507b06e9-bb56-4a72-8fd5-f91f958da6fc
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dba4def686f97bd3169eb5816630c272dc61d8e6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 894378d6648139b7ec2b587eb0066a5725af7a71
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443726"
 ---
 # <a name="manage-channels"></a>Verwalten von Kanälen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +50,7 @@ In der **Threadansicht** in der Parallelitätsschnellansicht können Sie die Kan
  Wählen Sie dieses Steuerelement aus, wenn Sie Kanäle ausblenden möchten. Wenn ein Thread z.B. eine hundertprozentige Synchronisierung für die Dauer Ihres verwalteten Prozesses darstellt, können sie ihn verbergen, während Sie andere Threads analysieren.  
   
 > [!NOTE]
->  Ein Thread wird auch durch Ausblenden aus der Berechnungszeit entfernt, die in der aktiven Legende und in den Profilberichten angezeigt wird.  
+> Ein Thread wird auch durch Ausblenden aus der Berechnungszeit entfernt, die in der aktiven Legende und in den Profilberichten angezeigt wird.  
   
 ## <a name="show-all-channels"></a>Alle Kanäle anzeigen  
  Dieses Steuerelement ist aktiv, wenn ein Kanal oder mehrere Kanäle ausgeblendet sind. Wenn Sie dieses auswählen, werden alle ausgeblendeten Elemente angezeigt und werden an die Zeitberechnung zurückgegeben.  
@@ -70,6 +65,3 @@ In der **Threadansicht** in der Parallelitätsschnellansicht können Sie die Kan
  [Zoomsteuerelement (Threadansicht)](../profiling/zoom-control-threads-view.md)   
  [Messmodus aktivieren/deaktivieren](../profiling/measure-mode-on-off.md)   
  [Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)
-
-
-

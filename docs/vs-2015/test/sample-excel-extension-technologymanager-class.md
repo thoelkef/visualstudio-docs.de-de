@@ -1,24 +1,19 @@
 ---
-title: 'Beispiel für Excel-Erweiterung: TechnologyManager-Klasse | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Sample Excel Extension: TechnologyManager-Klasse | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 8a7b760d-b5ac-4451-9593-6ac1a0b95cdb
 caps.latest.revision: 11
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b23c3e735aba74d86b31afb4b83862d83bcd2bdb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 64632c175b44a370d7dcaf48e7c0a8cee766a4ab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190579"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078069"
 ---
 # <a name="sample-excel-extension-technologymanager-class"></a>Sample Excel Extension: TechnologyManager Class
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,15 +38,15 @@ Diese Klasse erweitert die <xref:Microsoft.VisualStudio.TestTools.UITest.Extensi
 ## <a name="methods-to-get-an-element"></a>Methoden zum Abrufen eines Elements  
  Es sind mehrere wichtige Methoden verfügbar, die vom Framework für den Test der programmierten UI verwendet werden, um ein spezifisches Element der Technologie oder ein Element einer anderen Technologie abzurufen, indem ein Handle (ein Punkt auf dem Bildschirm) bereitgestellt wird. Der Code für diese Methoden ist selbsterklärend. Folgende Basismethoden sind verfügbar:  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetFocusedElement%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetFocusedElement%2A?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromPoint%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromPoint%2A?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromWindowHandle%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromWindowHandle%2A?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromNativeElement%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromNativeElement%2A?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.ConvertToThisTechnology%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.ConvertToThisTechnology%2A?displayProperty=fullName>  
   
 ## <a name="parsequeryid-method"></a>ParseQueryId-Methode  
  Beim Erstellen eines Tests der programmierten UI kann der Benutzer Eigenschaftswerte für einige oder alle Steuerelemente im Test angeben. Diese Eigenschaftswerte werden vom Testframework verwendet, um als Sucheigenschaften bezeichnete Name-Wert-Paare zu erstellen, mit deren Hilfe während des Tests nach bestimmten UI-Steuerelementen gesucht wird. Alle Sucheigenschaften zusammen bilden den Wert der Eigenschaft <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.QueryId%2A?displayProperty=fullName> jedes Elements in der Technologie, einschließlich aller Steuerelemente. Da ein Steuerelement während eines Tests möglicherweise mehrmals gesucht werden muss, bietet diese Methode dem Technologie-Manager die Möglichkeit, die Analyse der Sucheigenschaften für das jeweilige Steuerelement zu optimieren. Diese Methode gibt auch ein Cookie zurück, das vom Framework für nachfolgende Suchen nach diesem Steuerelement verwendet werden kann. Bei der Implementierung der Methode werden die Sucheigenschaften mithilfe der Methode <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.AndCondition.Match%2A?displayProperty=fullName> analysiert.  
@@ -72,6 +67,3 @@ Diese Klasse erweitert die <xref:Microsoft.VisualStudio.TestTools.UITest.Extensi
  <xref:System.Runtime.InteropServices.ComVisibleAttribute>   
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.QueryId%2A>   
  [Erweitern von Tests der codierten UI-Tests und Aktionsaufzeichnungen zur Unterstützung von Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
-
-
-

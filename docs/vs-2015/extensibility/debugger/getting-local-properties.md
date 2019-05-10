@@ -1,14 +1,9 @@
 ---
 title: Abrufen von lokalen Eigenschaften | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, getting local properties
 - debugging [Debugging SDK], local properties
@@ -16,27 +11,27 @@ helpviewer_keywords:
 ms.assetid: 6c3a79e8-1ba1-4863-97c3-0216c3d9f092
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a96b9abfd215dc297a5b245e0ac670b4822d70c2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b174af9e107c13c3d8a79f00493fe5dbdd180ec6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799118"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436395"
 ---
 # <a name="getting-local-properties"></a>Abrufen von lokalen Eigenschaften
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zu CLR-ausdrucksauswertungen implementieren, finden Sie unter [CLR Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zu CLR-ausdrucksauswertungen implementieren, finden Sie unter [CLR Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Visual Studio-Aufrufe [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) zum Abrufen einer [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) -Objekt, das Zugriff auf alle lokalen anzuzeigenden bietet die **"lokal"** Fenster. Visual Studio ruft dann [Weiter](../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md) zum Abrufen der Informationen für jede lokale angezeigt werden soll. In diesem Beispiel die Klasse `CEnumPropertyInfo` implementiert die `IEnumDebugPropertyInfo2` Schnittstelle.  
   
  Diese Implementierung der `IEnumDebugPropertyInfo2::Next` führt die folgenden Aufgaben:  
   
-1.  Löscht das Array, an dem die Informationen gespeichert werden.  
+1. Löscht das Array, an dem die Informationen gespeichert werden.  
   
-2.  Aufrufe [Weiter](../../extensibility/debugger/reference/ienumdebugfields-next.md) für jede lokale, speichern Sie das zurückgegebene [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) im Array zurückgegeben werden. Die [IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md) Objekt wurde angegeben. wenn dies `CEnumPropertyInfo` Klasse instanziiert wurde.  
+2. Aufrufe [Weiter](../../extensibility/debugger/reference/ienumdebugfields-next.md) für jede lokale, speichern Sie das zurückgegebene [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) im Array zurückgegeben werden. Die [IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md) Objekt wurde angegeben. wenn dies `CEnumPropertyInfo` Klasse instanziiert wurde.  
   
 ## <a name="managed-code"></a>Verwalteter Code  
  Dieses Beispiel zeigt eine Implementierung von `IEnumDebugPropertyInfo2::EnumChildren` für eine Methode, die lokal in verwaltetem Code.  
@@ -166,4 +161,3 @@ STDMETHODIMP CEnumPropertyInfo::Next(
 ## <a name="see-also"></a>Siehe auch  
  [Beispielimplementierung von lokalen Elementen](../../extensibility/debugger/sample-implementation-of-locals.md)   
  [Auflisten von lokalen Elementen](../../extensibility/debugger/enumerating-locals.md)
-

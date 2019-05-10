@@ -2,22 +2,21 @@
 title: Konfigurieren von Python-Web-Apps für IIS
 description: Konfigurieren von Python-Web-Apps für die Ausführung mit Internetinformationsdienste (Internet Information Services, IIS) von einem virtuellen Windows-Computer aus.
 ms.date: 12/06/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 4d05e4022ada575873a85279d81b094b08160b6d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 551cff18849f0e8ad9fcd6f2c1e08561291b177f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843358"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957372"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>Konfigurieren von Python-Web-Apps für IIS
 
@@ -38,7 +37,7 @@ Wenn Sie einen dedizierten Host verwenden, können Sie die globale Python-Umgebu
 
 ## <a name="set-webconfig-to-point-to-the-python-interpreter"></a>Festlegen, dass die „web.config“-Datei auf den Python-Interpreter verweist
 
-Die Datei *web.config* Ihrer App weist den IIS-Webserver (Version 7 oder höher) unter Windows an, wie er Python-Anforderungen über FastCGI oder HttpPlatform verarbeiten soll. Wenn Sie Visual Studio 2017 verwenden, müssen Sie *web.config* manuell ändern. Wie in einem späteren Abschnitt beschrieben, nimmt Visual Studio 2015 Änderungen vor.
+Die Datei *web.config* Ihrer App weist den IIS-Webserver (Version 7 oder höher) unter Windows an, wie er Python-Anforderungen über HttpPlatform (empfohlen) oder FastCGI verarbeiten soll. Visual Studio 2015 und frühere Versionen nehmen diese Anpassungen automatisch vor. Wenn Sie Visual Studio 2017 oder höher verwenden, müssen Sie *web.config* manuell ändern.
 
 ### <a name="configure-the-httpplatform-handler"></a>Konfigurieren des HttpPlatform-Handlers
 

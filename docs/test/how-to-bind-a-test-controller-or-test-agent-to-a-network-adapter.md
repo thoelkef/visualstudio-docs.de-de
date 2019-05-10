@@ -10,14 +10,13 @@ helpviewer_keywords:
 ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 4d83dcd0d5c791089c2d699517cb75a5a3e24b33
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: dfcbac0bb9188826804ba13884f0f57962dddeab
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979327"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Vorgehensweise: Binden eines Testcontrollers oder Test-Agents an einen Netzwerkadapter
 
@@ -36,19 +35,19 @@ Wenn ein Computer, auf dem die Testcontroller- oder Test-Agent-Software installi
 
 ### <a name="to-obtain-the-ip-addresses-of-the-network-adapters"></a>So ermitteln Sie die IP-Adressen der Netzwerkadapter
 
-1.  Klicken Sie in Microsoft Windows auf **Start**, klicken Sie in das Feld **Suche starten**, geben Sie **cmd** ein, und drücken Sie dann die **EINGABETASTE**.
+1. Klicken Sie in Microsoft Windows auf **Start**, klicken Sie in das Feld **Suche starten**, geben Sie **cmd** ein, und drücken Sie dann die **EINGABETASTE**.
 
-2.  Geben Sie **ipconfig /all** ein.
+2. Geben Sie **ipconfig /all** ein.
 
      Die IP-Adressen für Ihre Netzwerkadapter werden angezeigt. Notieren Sie sich die IP-Adresse des Netzwerkadapters, an den Sie den Controller binden möchten.
 
 ### <a name="to-bind-a-network-adapter-to-a-test-controller"></a>So binden Sie einen Netzwerkadapter an einen Testcontroller
 
-1.  Klicken Sie in Microsoft Windows auf **Start**, klicken Sie in das Feld **Suche starten**, geben Sie **services.msc** ein, und drücken Sie dann die **EINGABETASTE**.
+1. Klicken Sie in Microsoft Windows auf **Start**, klicken Sie in das Feld **Suche starten**, geben Sie **services.msc** ein, und drücken Sie dann die **EINGABETASTE**.
 
      Das Dialogfeld **Dienste** wird angezeigt.
 
-2.  Klicken Sie im Ergebnisbereich in der Spalte **Name** mit der rechten Maustaste auf den Dienst **Visual Studio Test Controller**, und klicken Sie dann auf **Beenden**.
+2. Klicken Sie im Ergebnisbereich in der Spalte **Name** mit der rechten Maustaste auf den Dienst **Visual Studio Test Controller**, und klicken Sie dann auf **Beenden**.
 
      - oder - 
 
@@ -56,9 +55,9 @@ Wenn ein Computer, auf dem die Testcontroller- oder Test-Agent-Software installi
 
      `net stop vsttcontroller`
 
-3.  Öffnen Sie die XML-Konfigurationsdatei *QTCcontroller.exe.config* im Verzeichnis *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE*.
+3. Öffnen Sie die XML-Konfigurationsdatei *QTCcontroller.exe.config* im Verzeichnis *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE*.
 
-4.  Suchen Sie nach dem `<appSettings>`-Tag.
+4. Suchen Sie nach dem `<appSettings>`-Tag.
 
     ```xml
     <appSettings>
@@ -72,14 +71,14 @@ Wenn ein Computer, auf dem die Testcontroller- oder Test-Agent-Software installi
     </appSettings>
     ```
 
-5.  Fügen Sie im Abschnitt `BindTo` den `<appSettings>`-Schlüssel hinzu, um den zu verwendenden Netzwerkadapter anzugeben.
+5. Fügen Sie im Abschnitt `BindTo` den `<appSettings>`-Schlüssel hinzu, um den zu verwendenden Netzwerkadapter anzugeben.
 
     ```xml
             <add key="BindTo" value="<YOUR IP ADDRESS>"/>
     </appSettings>
     ```
 
-6.  Starten Sie den Testcontrollerdienst. Führen Sie dazu den folgenden Befehl an einer Eingabeaufforderung aus:
+6. Starten Sie den Testcontrollerdienst. Führen Sie dazu den folgenden Befehl an einer Eingabeaufforderung aus:
 
     `net start vsttcontroller`
 
@@ -90,11 +89,11 @@ Wenn ein Computer, auf dem die Testcontroller- oder Test-Agent-Software installi
 
 ### <a name="to-bind-a-network-interface-card-to-a-test-agent"></a>So binden Sie eine Netzwerkschnittstellenkarte an einen Test-Agent
 
-1.  Klicken Sie in Microsoft Windows auf **Start**, klicken Sie in das Feld **Suche starten**, geben Sie **services.msc** ein, und drücken Sie dann die **EINGABETASTE**.
+1. Klicken Sie in Microsoft Windows auf **Start**, klicken Sie in das Feld **Suche starten**, geben Sie **services.msc** ein, und drücken Sie dann die **EINGABETASTE**.
 
     Das Dialogfeld **Dienste** wird angezeigt.
 
-2.  Klicken Sie im Ergebnisbereich in der Spalte **Name** mit der rechten Maustaste auf den Dienst **Visual Studio Test Agent**, und klicken Sie dann auf **Beenden**.
+2. Klicken Sie im Ergebnisbereich in der Spalte **Name** mit der rechten Maustaste auf den Dienst **Visual Studio Test Agent**, und klicken Sie dann auf **Beenden**.
 
      - oder - 
 
@@ -102,9 +101,9 @@ Wenn ein Computer, auf dem die Testcontroller- oder Test-Agent-Software installi
 
      **net stop vsttagent**
 
-3.  Öffnen Sie die XML-Konfigurationsdatei *QTAgentService.exe.config* im Verzeichnis *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE*.
+3. Öffnen Sie die XML-Konfigurationsdatei *QTAgentService.exe.config* im Verzeichnis *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE*.
 
-4.  Suchen Sie nach dem `<appSettings>`-Tag.
+4. Suchen Sie nach dem `<appSettings>`-Tag.
 
     ```xml
     <appSettings>
@@ -118,14 +117,14 @@ Wenn ein Computer, auf dem die Testcontroller- oder Test-Agent-Software installi
     </appSettings>  </appSettings>
     ```
 
-5.  Fügen Sie im Abschnitt `BindTo` den `<appSettings>`-Schlüssel hinzu, um den zu verwendenden Netzwerkadapter anzugeben.
+5. Fügen Sie im Abschnitt `BindTo` den `<appSettings>`-Schlüssel hinzu, um den zu verwendenden Netzwerkadapter anzugeben.
 
     ```xml
             <add key="BindTo" value="<YOUR IP ADDRESS>"/>
     </appSettings>
     ```
 
-6.  Starten Sie den Test-Agent-Dienst. Führen Sie dazu den folgenden Befehl an einer Eingabeaufforderung aus:
+6. Starten Sie den Test-Agent-Dienst. Führen Sie dazu den folgenden Befehl an einer Eingabeaufforderung aus:
 
     `net start vsttagent`
 
@@ -134,5 +133,4 @@ Wenn ein Computer, auf dem die Testcontroller- oder Test-Agent-Software installi
 - [Installieren und Konfigurieren von Test-Agents](../test/lab-management/install-configure-test-agents.md)
 - [Ändern von Einstellungen für die Auslastungstestprotokollierung](../test/modify-load-test-logging-settings.md)
 - [Konfigurieren von Ports für Testcontroller und Test-Agents](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [Vorgehensweise: Angeben der maximalen Größe für die Protokolldatei](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
 - [Vorgehensweise: Angeben von Zeitlimitzeiträumen für Testcontroller und Test-Agents](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)

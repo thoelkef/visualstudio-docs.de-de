@@ -1,24 +1,27 @@
 ---
 title: Ansichten für Ressourcenkonfliktdaten | Microsoft-Dokumentation
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profilng tools,concurrency profiling method view
 - concurrency profiling method views
 ms.assetid: be79ec41-f1dd-4984-993f-5c2962355a32
-author: mikejo5000
+caps.latest.revision: 14
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: ea7cbe0ff412e7955a4a255018e335e1ae6336da
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: b284a53d930fc7882b9a2a9a3bde8d5334ea13ff
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990606"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62798431"
 ---
 # <a name="resource-contention-data-views"></a>Ansichten für Ressourcenkonfliktdaten
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 Dieser Abschnitt enthält Referenzinformationen zu den Ansichten und Berichten von Profilerdatendateien, die Profilerstellungsdaten für Threadkonflikte enthalten.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  

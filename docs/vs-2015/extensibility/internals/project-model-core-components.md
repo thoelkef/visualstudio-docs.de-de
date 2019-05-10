@@ -1,27 +1,22 @@
 ---
 title: Hauptkomponenten eines Projekt | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project models, objects and interfaces
 - project models, services
 ms.assetid: b2f572d3-b26d-4846-92d1-84055fac141a
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 70cb00e6d2ecae8ba5fb8abefb76f7061406f0fd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 30ec67e1e58e0c546c70ecb87841293161463b1b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741299"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429111"
 ---
 # <a name="project-model-core-components"></a>Hauptkomponenten eines Projektmodells
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -109,7 +104,6 @@ In den folgenden Tabellen, die auf das Modell erweitert werden. Die Tabellen zei
 ## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
  [Prüfliste: Erstellen neuer Projekttypen](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [Nicht im Build: verwenden HierUtil7-Projekt-Klasse zum Implementieren eines Projekttyps (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
+ [Nicht im Build: Mithilfe von HierUtil7 Projektklassen zum Implementieren eines Projekttyps (C++)](http://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
  [Unterstützung von Tools zum Durchsuchen von Symbolen](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
  [Elemente eines Projektmodells](../../extensibility/internals/elements-of-a-project-model.md)
-

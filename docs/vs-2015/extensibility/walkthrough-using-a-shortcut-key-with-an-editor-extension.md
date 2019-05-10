@@ -1,26 +1,21 @@
 ---
-title: 'Exemplarische Vorgehensweise: Verwenden einer Tastenkombination mit einer Editor-Erweiterung | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Exemplarische Vorgehensweise: Verwenden eine Tastenkombination mit einer Editor-Erweiterung | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link keystrokes to commands
 ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
 caps.latest.revision: 33
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1e68cf9d3e33ad07ab092de680078972dfaf2d70
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 5c9cb20bafa552c47a2f599d12e6b66fdb2bde59
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797454"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085898"
 ---
 # <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>Exemplarische Vorgehensweise: Verwenden einer Tastenkombination mit einer Editor-Erweiterung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,9 +50,9 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 ## <a name="defining-the-command-filter"></a>Den Befehlsfilter definieren  
  Der Befehlsfilter ist eine Implementierung von <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>, behandelt den Befehl durch Instanziieren des Zusatzelements ab.  
   
-1.  Fügen Sie eine Klassendatei hinzu, und nennen Sie sie `KeyBindingCommandFilter`.  
+1. Fügen Sie eine Klassendatei hinzu, und nennen Sie sie `KeyBindingCommandFilter`.  
   
-2.  Fügen Sie die folgenden using-Anweisungen hinzu.  
+2. Fügen Sie die folgenden using-Anweisungen hinzu.  
   
     ```csharp  
     using System;  
@@ -68,13 +63,13 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-3.  Die Klasse, die mit dem Namen KeyBindingCommandFilter erben soll <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
+3. Die Klasse, die mit dem Namen KeyBindingCommandFilter erben soll <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
   
     ```csharp  
     internal class KeyBindingCommandFilter : IOleCommandTarget  
     ```  
   
-4.  Fügen Sie private Felder für die Textansicht, in den nächsten Befehl in der Befehlskette, und ein Flag zum angeben, ob der Befehlsfilter wurde bereits hinzugefügt.  
+4. Fügen Sie private Felder für die Textansicht, in den nächsten Befehl in der Befehlskette, und ein Flag zum angeben, ob der Befehlsfilter wurde bereits hinzugefügt.  
   
     ```csharp  
     private IWpfTextView m_textView;  
@@ -83,7 +78,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     internal bool m_adorned;  
     ```  
   
-5.  Fügen Sie einen Konstruktor, der die Textansicht festlegt.  
+5. Fügen Sie einen Konstruktor, der die Textansicht festlegt.  
   
     ```csharp  
     public KeyBindingCommandFilter(IWpfTextView textView)  
@@ -93,7 +88,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     }  
     ```  
   
-6.  Implementieren der `QueryStatus()` -Methode wie folgt.  
+6. Implementieren der `QueryStatus()` -Methode wie folgt.  
   
     ```vb  
     int IOleCommandTarget.QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, IntPtr pCmdText)  
@@ -102,7 +97,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     }  
     ```  
   
-7.  Implementieren der `Exec()` Methode, sodass die It eine violette Box auf die Ansicht Wenn Fügt eine + Zeichen eingegeben wird.  
+7. Implementieren der `Exec()` Methode, sodass die It eine violette Box auf die Ansicht Wenn Fügt eine + Zeichen eingegeben wird.  
   
     ```csharp  
     int IOleCommandTarget.Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pvaIn, IntPtr pvaOut)  
@@ -129,7 +124,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 ## <a name="adding-the-command-filter"></a>Den Befehlsfilter hinzufügen  
  Der zusatzelementanbieter muss einen Befehlsfilter der Textansicht hinzufügen. In diesem Beispiel ist der Anbieter implementiert <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> zum Lauschen auf Ereignisse beim Erstellen von Text anzeigen. Dieser zusatzelementanbieter exportiert auch die Zusatzelementebene, die die Z-Reihenfolge des Zusatzelements definiert.  
   
-1.  Fügen Sie in der Datei KeyBindingTestTextViewCreationListener die folgenden using-Anweisungen:  
+1. Fügen Sie in der Datei KeyBindingTestTextViewCreationListener die folgenden using-Anweisungen:  
   
     ```csharp  
     using System;  
@@ -144,7 +139,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-2.  In der Definition des Zusatzelements Ebene ändern Sie den Namen der der AdornmentLayer aus **KeyBindingTest** zu **PurpleCornerBox**.  
+2. In der Definition des Zusatzelements Ebene ändern Sie den Namen der der AdornmentLayer aus **KeyBindingTest** zu **PurpleCornerBox**.  
   
     ```csharp  
     [Export(typeof(AdornmentLayerDefinition))]  
@@ -153,7 +148,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     public AdornmentLayerDefinition editorAdornmentLayer;  
     ```  
   
-3.  Um der Textansichtsadapter zu erhalten, müssen Sie importieren die <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>.  
+3. Um der Textansichtsadapter zu erhalten, müssen Sie importieren die <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>.  
   
     ```csharp  
     [Import(typeof(IVsEditorAdaptersFactoryService))]  
@@ -161,7 +156,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-4.  Ändern der <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> Methode, sodass die It fügt die `KeyBindingCommandFilter`.  
+4. Ändern der <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> Methode, sodass die It fügt die `KeyBindingCommandFilter`.  
   
     ```csharp  
     public void TextViewCreated(IWpfTextView textView)  
@@ -170,7 +165,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     }  
     ```  
   
-5.  Die `AddCommandFilter` Handler ruft der Textansichtsadapter, und der Befehlsfilter hinzugefügt.  
+5. Die `AddCommandFilter` Handler ruft der Textansichtsadapter, und der Befehlsfilter hinzugefügt.  
   
     ```csharp  
     void AddCommandFilter(IWpfTextView textView, KeyBindingCommandFilter commandFilter)  
@@ -243,9 +238,8 @@ private void CreateVisuals(ITextViewLine line)
   
 ## <a name="building-and-testing-the-code"></a>Erstellen und Testen des Codes  
   
-1.  Erstellen Sie die KeyBindingTest-Projektmappe, und führen Sie sie in der experimentellen Instanz.  
+1. Erstellen Sie die KeyBindingTest-Projektmappe, und führen Sie sie in der experimentellen Instanz.  
   
-2.  Erstellen Sie oder öffnen Sie eine Textdatei. Geben Sie einige Wörter, die mit dem Zeichen "a", und geben Sie dann + an einer beliebigen Stelle in der Textansicht.  
+2. Erstellen Sie oder öffnen Sie eine Textdatei. Geben Sie einige Wörter, die mit dem Zeichen "a", und geben Sie dann + an einer beliebigen Stelle in der Textansicht.  
   
      Eine violette Quadrat sollte auf jedem Zeichen "a" in der Datei angezeigt werden.
-

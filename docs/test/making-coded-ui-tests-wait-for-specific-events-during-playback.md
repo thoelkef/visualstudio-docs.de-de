@@ -1,24 +1,22 @@
 ---
 title: Festlegen, dass Tests der programmierten UI auf bestimmte Ereignisse warten
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1f077269ddfd736aa98b78c64c81170037853eb
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 3e2c83b74c2649681251ffa51f1366c0ce96d677
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894767"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788810"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>Festlegen, dass bei Wiedergabe von Tests der programmierten UI auf bestimmte Ereignisse gewartet wird
 
-Sie können bei der Wiedergabe eines Tests der programmierten UI festlegen, dass bei einem Test auf bestimmte Ereignisse gewartet werden soll, z. B. auf das Anzeigen eines Fensters, das Ausblenden einer Statusanzeige usw. Verwenden Sie hierzu die entsprechende „UITestControl.WaitForControlXXX()“-Methode, wie in der folgenden Tabelle beschrieben. Ein Beispiel für einen Test der programmierten UI, der durch die Verwendung der Methode <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A> auf die Aktivierung eines Steuerelements wartet, finden Sie unter [Exemplarische Vorgehensweise: Erstellen, Bearbeiten und Verwalten von Tests der programmierten UI](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+Sie können bei der Wiedergabe eines Tests der programmierten UI festlegen, dass bei einem Test auf bestimmte Ereignisse gewartet werden soll, z. B. auf das Anzeigen eines Fensters, das Ausblenden einer Statusanzeige usw. Verwenden Sie hierzu die entsprechende „UITestControl.WaitForControlXXX()“-Methode, wie in der folgenden Tabelle beschrieben. Ein Beispiel für einen Test der programmierten UI, bei dem ein Steuerelement auf die Aktivierung mit der <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>-Methode wartet, finden Sie unter [Exemplarische Vorgehensweise: Erstellen, Bearbeiten und Verwalten eines Tests der programmierten UI](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
@@ -27,7 +25,7 @@ Sie können bei der Wiedergabe eines Tests der programmierten UI festlegen, dass
 Visual Studio Enterprise
 
 > [!TIP]
-> Sie können mithilfe des Test-Editors der programmierten UI zudem Verzögerungen vor Aktionen hinzufügen. Weitere Informationen finden Sie unter [Vorgehensweise: Einfügen einer Verzögerung vor einer UI-Aktion mithilfe des Editors für Tests der programmierten UI](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action).
+> Sie können mithilfe des Test-Editors der programmierten UI zudem Verzögerungen vor Aktionen hinzufügen. Weitere Informationen finden Sie unter [Vorgehensweise: Einfügen einer Verzögerung vor einer UI-Aktion mithilfe des Test-Editors der programmierten UI](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action).
 
 **UITestControl.WaitForControlXXX()-Methoden**
 
@@ -37,7 +35,7 @@ Wartet darauf, dass das Steuerelement bereit ist, Maus- und Tastatureingaben zu 
 
 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>
 
-Wartet auf die Aktivierung des Steuerelements, wenn der Assistent einige asynchrone Validierungen der Eingabe durch das Ausführen von Aufrufen am Server vornimmt. Beispielsweise können Sie eine Methode ausstellen, um auf die Aktivierung der Schaltfläche **Weiter** des Assistenten zu warten. Ein Beispiel dieser Methode finden Sie unter [Exemplarische Vorgehensweise: Erstellen, Bearbeiten und Verwalten von Tests der programmierten UI](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+Wartet auf die Aktivierung des Steuerelements, wenn der Assistent einige asynchrone Validierungen der Eingabe durch das Ausführen von Aufrufen am Server vornimmt. Beispielsweise können Sie eine Methode ausstellen, um auf die Aktivierung der Schaltfläche **Weiter** des Assistenten zu warten. Ein Beispiel zu dieser Methode finden Sie unter [Exemplarische Vorgehensweise: Erstellen, Bearbeiten und Verwalten eines Tests der programmierten UI](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlExist%2A>
 

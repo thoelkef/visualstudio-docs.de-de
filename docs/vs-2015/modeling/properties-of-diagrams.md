@@ -1,12 +1,9 @@
 ---
 title: Eigenschaften von Diagrammen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.dsltools.dsldesigner.dsldiagram
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: 00bba4b8-6aa6-4027-96cb-4f4c41a77d3c
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 9db932bb5e19cdc10dde3cd8330c4a57208a0c2d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 287e9362162c00a5292815ebacfb8047b2a0bb7b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280903"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961768"
 ---
 # <a name="properties-of-diagrams"></a>Eigenschaften von Diagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,23 +34,20 @@ Sie können Eigenschaften festlegen, die angeben, wie Diagramme im generierten D
 |Füllfarbe|Die Füllfarbe für das Diagramm.|Weiß|  
 |Textfarbe|Die Farbe des Texts, der im Diagramm angezeigt wird.|Schwarz|  
 |Zugriffsmodifizierer|Der Zugriffsmodifizierer der-Klasse (öffentlich oder intern).|Public|  
-|Benutzerdefinierte Attribute|Verwendet, um die Attribute der generierten Codeklasse hinzuzufügen.|\<Keine >|  
+|Benutzerdefinierte Attribute|Verwendet, um die Attribute der generierten Codeklasse hinzuzufügen.|\<none>|  
 |Double-Wert generiert abgeleitet|Wenn `True`, sowohl eine Basisklasse und eine partielle Klasse (zur Unterstützung von Anpassung über überschreibungen) generiert werden. Weitere Informationen finden Sie unter [überschreiben und Erweitern der generierten Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Hat benutzerdefinierten Konstruktor|Wenn `True`, ein benutzerdefinierter Konstruktor wird im Quellcode angegeben werden. Weitere Informationen finden Sie unter [überschreiben und Erweitern der generierten Klassen](../modeling/overriding-and-extending-the-generated-classes.md)...|False|  
 |Vererbungsmodifizierer|Beschreibt die Art der Vererbung, der die Quellklasse für Code, der aus dem Diagramm generiert wird (`none`, `abstract` oder `sealed`).|Keiner|  
 |Basisdiagramm|Die Basisklasse des Diagramms.|(keine)|  
-|name|Der Name des Diagramms.|Aktuelle name|  
+|Name|Der Name des Diagramms.|Aktuelle name|  
 |Namespace|Der Namespace, der in diesem Diagramm zugeordnet ist.|Aktuellen namespace|  
 |Dargestellte Klasse|Die Stamm-Domänenklasse, die in diesem Diagramm darstellt.|Aktuelle Stammklasse ggf.|  
-|Hinweise|Informelle Hinweise, die mit diesem Element verknüpft sind.|\<Keine >|  
+|Hinweise|Informelle Hinweise, die mit diesem Element verknüpft sind.|\<none>|  
 |Macht die Füllfarbe als Eigenschaft|Wenn `True`, der Benutzer kann die Füllfarbe des Diagramms des generierten Designers festlegen. Um dies festzulegen, klicken Sie mit der rechten Maustaste auf die Diagrammform, und klicken Sie auf **hinzufügen Explosed**.|False|  
 |Textfarbe als Eigenschaft zur Verfügung gestellt|Wenn `True`, der Benutzer kann die Textfarbe des Diagramms im generierten Designer festlegen. Um dies festzulegen, klicken Sie mit der rechten Maustaste auf die Diagrammform, und klicken Sie auf **hinzufügen Explosed**.|False|  
-|Beschreibung|Die Beschreibung, die zum Dokumentieren des generierten Designers verwendet wird.|\<Keine >|  
-|Anzeigename|Der Name, der im generierten Designer für dieses Diagramm angezeigt werden soll.|\<Keine >|  
-|Hilfsschlüsselwort|Das Schlüsselwort, das zum Indizieren der F1-Hilfe für dieses Diagramm verwendet wird.|\<Keine >|  
+|Beschreibung|Die Beschreibung, die zum Dokumentieren des generierten Designers verwendet wird.|\<none>|  
+|Anzeigename|Der Name, der im generierten Designer für dieses Diagramm angezeigt werden soll.|\<none>|  
+|Hilfsschlüsselwort|Das Schlüsselwort, das zum Indizieren der F1-Hilfe für dieses Diagramm verwendet wird.|\<none>|  
   
 ## <a name="see-also"></a>Siehe auch  
- [DSL-Tools – Glossar](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

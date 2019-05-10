@@ -1,25 +1,22 @@
 ---
 title: Grundlegendes zu Modellen, Klassen und Beziehungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, models
 ms.assetid: 2ecd569c-b369-41ea-b78e-a61b62e2e4e9
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b86e9bd2aa11f098b26edf90f3ed415c66b874a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d4381edb42e2aef53c00aea619eea34ee20060d5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271790"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424328"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Grundlagen von Modellen, Klassen und Beziehungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +28,13 @@ Eine domänenspezifische Sprache (DSL) wird durch die DSL-Definitionsdatei, zusa
 ## <a name="the-dsl-definition"></a>Der DSL-Definition  
  Beim Öffnen `Dsl\DslDefinition.dsl`, Ihrer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Fenster ähnelt die folgende Abbildung.  
   
- ![DSL-Designers](../modeling/media/dsl-designer.png "Dsl_designer")  
+ ![DSL-Designer](../modeling/media/dsl-designer.png "DSL-Designer")  
   
  Die wichtigste Informationen in der DSL-Definition wird in der DSL-Definitionsdiagramm angezeigt. Zusätzliche Informationen, die auch "DslDefinition.DSL" gehört, wird im DSL-Explorer angezeigt, die in der Regel auf der Seite des Diagramms angezeigt wird. Sie arbeiten mit dem Diagramm für die häufigsten Aufgaben und DSL-Explorer zum erweiterten Anpassung.  
   
  DSL-Definitionsdiagramm zeigt Domänenklassen, die definieren, Modellelemente und deren Beziehungen, die Verknüpfungen zwischen Modellelementen definieren. Es zeigt auch, Formen und Konnektoren, die verwendet werden, um die Modellelemente, die dem Benutzer anzuzeigen.  
   
- ![DSL-Designer mit Swimlane](../modeling/media/dsl-desinger.png "Dsl_desinger")  
+ ![DSL-Designer mit Swimlane](../modeling/media/dsl-desinger.png "DSL-Designer")  
   
  Bei Auswahl ein Elements in der DSL-Definition im Diagramm oder im DSL-Explorer wird die Informationen im Fenster Eigenschaften angezeigt. Weitere Informationen können im DSL-Details-Fenster angezeigt werden.  
   
@@ -61,20 +58,20 @@ Eine domänenspezifische Sprache (DSL) wird durch die DSL-Definitionsdatei, zusa
   
  Die Abbildung zeigt vier Domänenklassen: Musik, Album, Künstler und "Song". Die Domänenklassen definieren Domäneneigenschaften wie Name, Titel und So weiter. Im Modell werden die Werte für einige dieser Eigenschaften im Diagramm angezeigt.  
   
- Sind Sie Beziehungen zwischen den Klassen: MusicHasAlbums, MusicHasArtists, AlbumbHasSongs und "artistappearedonalbums". Die Beziehungen haben Multiplizitäten wie z. B. 1..1, 0.. *. Beispielsweise muss jeder "Song" mit genau einem Album über die AlbumHasSongs-Beziehung verknüpft sein. Jedes Album kann es sich um eine beliebige Anzahl von Songs verfügen.  
+ Sind Sie Beziehungen zwischen den Klassen: MusicHasAlbums, MusicHasArtists, AlbumbHasSongs, and ArtistAppearedOnAlbums. Die Beziehungen haben Multiplizitäten wie z. B. 1..1, 0.. *. Beispielsweise muss jeder "Song" mit genau einem Album über die AlbumHasSongs-Beziehung verknüpft sein. Jedes Album kann es sich um eine beliebige Anzahl von Songs verfügen.  
   
 ### <a name="rearranging-the-dsl-definition-diagram"></a>Neuanordnen von DSL-Definitionsdiagramm  
  Beachten Sie, dass eine Domänenklasse mehrmals auf die DSL-Definitionsdiagramm angezeigt werden kann, wie das Album in dieser Abbildung ist. Es gibt immer eine Hauptansicht, und es kann einige *Verweis* Ansichten.  
   
  Um die DSL-Definitionsdiagramm neu anzuordnen, können Sie folgende Aktionen ausführen:  
   
--   Main wechseln und auf Ansichten können Sie mit der **Struktur hier** und **Baum teilen** Befehle. Mit der rechten Maustaste in einer einzelne Domäne-Klasse, um diese Befehle finden Sie unter.  
+- Main wechseln und auf Ansichten können Sie mit der **Struktur hier** und **Baum teilen** Befehle. Mit der rechten Maustaste in einer einzelne Domäne-Klasse, um diese Befehle finden Sie unter.  
   
--   Neu anordnen von Domänenklassen und Formklassen durch Drücken von STRG + nach-oben und STRG + nach-unten.  
+- Neu anordnen von Domänenklassen und Formklassen durch Drücken von STRG + nach-oben und STRG + nach-unten.  
   
--   Klassen, die mithilfe des Symbols auf der rechten oberen Ecke der einzelnen Formen erweitern oder reduzieren.  
+- Klassen, die mithilfe des Symbols auf der rechten oberen Ecke der einzelnen Formen erweitern oder reduzieren.  
   
--   Reduzieren Sie Teile der Struktur, indem Sie auf das Minuszeichen (-) am unteren Rand einer Domänenklasse.  
+- Reduzieren Sie Teile der Struktur, indem Sie auf das Minuszeichen (-) am unteren Rand einer Domänenklasse.  
   
 ## <a name="inheritance"></a>Vererbung  
  Domänenklassen können unter Verwendung der Vererbung definiert werden. Um eine Ableitung von Vererbung zu erstellen, klicken Sie auf das Tool Vererbung, klicken Sie auf die abgeleitete Klasse, und klicken Sie dann auf die Basisklasse. Ein Element des Modells hat alle Eigenschaften, die auf ihrer eigenen Domänenklasse, zusammen mit den Eigenschaften, die für die von der Basisklasse geerbt definiert sind. Es erbt auch die Rollen in Beziehungen.  
@@ -100,7 +97,7 @@ Eine domänenspezifische Sprache (DSL) wird durch die DSL-Definitionsdatei, zusa
  Wenn ein Modell gespeichert wird in Form von XML-Datei, eingebettete Elemente geschachtelt sind innerhalb von übergeordneten Elementen, es sei denn, Sie die Serialisierung angepasst haben.  
   
 > [!NOTE]
->  Einbettung ist nicht identisch mit Vererbung. Untergeordnete Elemente in einer einbettenden Beziehung erben keine Eigenschaften des übergeordneten Elements. Eine Einbettung ist eine Art von Verknüpfung zwischen Modellelementen. Vererbung ist eine Beziehung zwischen Klassen und erstellt keine Verknüpfungen zwischen Modellelementen.  
+> Einbettung ist nicht identisch mit Vererbung. Untergeordnete Elemente in einer einbettenden Beziehung erben keine Eigenschaften des übergeordneten Elements. Eine Einbettung ist eine Art von Verknüpfung zwischen Modellelementen. Vererbung ist eine Beziehung zwischen Klassen und erstellt keine Verknüpfungen zwischen Modellelementen.  
   
 ### <a name="embedding-rules"></a>Einbetten von Regeln  
  Jedes Element in einem instanzenmodell muss es sich um das Ziel des genau eine einbettende links, mit Ausnahme der Stamm des Modells sein.  
@@ -157,7 +154,4 @@ Eine domänenspezifische Sprache (DSL) wird durch die DSL-Definitionsdatei, zusa
   
 ## <a name="see-also"></a>Siehe auch  
  [Domänenbeziehungen in der generierten API](../misc/domain-relationships-in-the-generated-api.md)   
- [DSL-Tools – Glossar](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -1,23 +1,25 @@
 ---
 title: IDebugDocumentPositionOffset2 | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugDocumentPositionOffset2 interface
 ms.assetid: f1b05db3-50d8-453f-a72f-e68b239236a4
-author: gregvanl
+caps.latest.revision: 8
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: eeedd1038b577be8a0e0cac46359cf0b05f0dc70
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: cf713ea542901cbde588600d40f144f0fae843e2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62875257"
 ---
 # <a name="idebugdocumentpositionoffset2"></a>IDebugDocumentPositionOffset2
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Stellt eine Position in einer Quelldatei als ein Zeichenoffset dar.  
   
 ## <a name="syntax"></a>Syntax  

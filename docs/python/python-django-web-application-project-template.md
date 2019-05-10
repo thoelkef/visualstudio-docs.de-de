@@ -2,21 +2,20 @@
 title: Django-Webprojektvorlage für Python
 description: Visual Studio stellt Ihnen eine umfassende Vorlage zur Verfügung, mit der Sie mithilfe von Python einfach und schnell Django-Webanwendungen erstellen können.
 ms.date: 11/12/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3512e67ed7a97c4f8cb4c6aa0be256c32087de40
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 136c03ef11071e5d548e36e45a6a541cffce1469
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923782"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62784843"
 ---
 # <a name="django-web-project-template"></a>Vorlage „Django-Webprojekt“
 
@@ -38,7 +37,7 @@ Visual Studio bietet vollständiges IntelliSense für Django-Projekte:
 
     ![JavaScript IntelliSense](media/template-django-intellisense-js.png)
 
-Visual Studio bietet außerdem vollständige [Debugunterstützung](debugging-python-in-visual-studio.md) für Django-Projekte: 
+Visual Studio bietet außerdem vollständige [Debugunterstützung](debugging-python-in-visual-studio.md) für Django-Projekte:
 
 ![Haltepunkte](media/template-django-debugging.png)
 

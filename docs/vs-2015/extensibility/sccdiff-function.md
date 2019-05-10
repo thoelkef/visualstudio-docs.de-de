@@ -1,14 +1,9 @@
 ---
 title: SccDiff-Funktion | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccDiff
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: d49bc8c5-f631-4153-9d3c-feb3564da305
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ed4ca5cefa45f041e4285b00d7a2d9682e6565a0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: aa5ea0a269cdbfe678328dc652b4177bdc667b99
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795751"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432464"
 ---
 # <a name="sccdiff-function"></a>SccDiff-Funktion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +74,7 @@ SCCRTN SccDiff(
  Das Quellcodeverwaltungs-Plug-In können Leistung zu optimieren, basierte auf einer Prüfsumme oder einen Zeitstempel anstelle der Byte-pro-Byte-Vergleich für aufgerufen werden, indem Sie Alternative `SCC_DIFF_CONTENTS`: Diese Formen des Vergleichs werden offensichtlich schneller, aber weniger zuverlässig. Nicht alle Quellcode-Verwaltungssysteme können diese Vergleichsmethoden alternative unterstützen, und das plug-in möglicherweise beim ausweichen auf einen Vergleich der Inhalte. Alle Quellcodeverwaltungs-Plug-ins muss mindestens einen Vergleich Inhalt unterstützen.  
   
 > [!NOTE]
->  Die Flags für die schnelle Unterschied schließen sich gegenseitig aus. Es ist zulässig, die keine Flags übergeben, aber es ist nicht zulässig, um mehrere Werte gleichzeitig zu übergeben. `SCC_DIFF_QUICK_DIFF`, d.h. eine Maske, die kombiniert alle Flags, die zum Testen verwendet werden können, aber sie sollten nie als Parameter übergeben werden.  
+> Die Flags für die schnelle Unterschied schließen sich gegenseitig aus. Es ist zulässig, die keine Flags übergeben, aber es ist nicht zulässig, um mehrere Werte gleichzeitig zu übergeben. `SCC_DIFF_QUICK_DIFF`, d.h. eine Maske, die kombiniert alle Flags, die zum Testen verwendet werden können, aber sie sollten nie als Parameter übergeben werden.  
   
 |`fOption`|Bedeutung|  
 |---------------|-------------|  
@@ -91,4 +86,3 @@ SCCRTN SccDiff(
   
 ## <a name="see-also"></a>Siehe auch  
  [API-Funktionen von Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-in-api-functions.md)
-

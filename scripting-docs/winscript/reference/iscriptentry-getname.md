@@ -2,7 +2,6 @@
 title: IScriptEntry::GetName | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c388340c35afe2ae7e5e7d0f5078e70b46c0b1bc
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: d23843aa72ce5cf79f6442048b6493d17eb6ef64
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54090882"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62787769"
 ---
 # <a name="iscriptentrygetname"></a>IScriptEntry::GetName
 Einträge, die ein einzelnes Objekt (z. B. eine Funktion) darstellen, gibt den Namen des Objekts zurück.  

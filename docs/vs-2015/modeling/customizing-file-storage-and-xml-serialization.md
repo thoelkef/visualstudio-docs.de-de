@@ -1,12 +1,9 @@
 ---
 title: Anpassen von Dateispeicher und XML-Serialisierung | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.xmlbehavior
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: 76c53ef1-e3b9-45da-b425-1bddb3c01395
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 574fad0cdccd0112d7d078e86486569d16919a75
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b41f5f6a3d937f23db1039fdab5e1cf7e36960ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867443"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433267"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Anpassen von Dateispeicher und XML-Serialisierung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,22 +30,22 @@ Wenn der Benutzer eine Instanz, speichert oder *Modell*, der eine domänenspezif
  Sie können auch den Programmcode für eine erweiterte Anpassung schreiben.  
   
 > [!NOTE]
->  Wenn das Modell in einem bestimmten Format gespeichert werden soll, aber Sie nicht über dieses Formular erneut laden müssen, sollten Sie mithilfe von Textvorlagen Ausgabe aus dem Modell, anstatt eine benutzerdefinierte Serialisierung-Schema zu generieren. Weitere Informationen finden Sie unter [Generieren von Code aus einer domänenspezifischen Sprache](../modeling/generating-code-from-a-domain-specific-language.md).  
+> Wenn das Modell in einem bestimmten Format gespeichert werden soll, aber Sie nicht über dieses Formular erneut laden müssen, sollten Sie mithilfe von Textvorlagen Ausgabe aus dem Modell, anstatt eine benutzerdefinierte Serialisierung-Schema zu generieren. Weitere Informationen finden Sie unter [Generieren von Code aus einer domänenspezifischen Sprache](../modeling/generating-code-from-a-domain-specific-language.md).  
   
 ## <a name="model-and-diagram-files"></a>Modell und die Diagrammdateien  
  Jedes Modell wird in der Regel in zwei Dateien gespeichert:  
   
--   Die Modelldatei hat einen Namen, z. B. **Model1.mydsl**. Sie speichert die Modellelemente und Beziehungen und deren Eigenschaften. Die Dateierweiterung, z. B. **.mydsl** richtet sich nach der **FileExtension** Eigenschaft der **Editor** Knoten in der DSL-Definition.  
+- Die Modelldatei hat einen Namen, z. B. **Model1.mydsl**. Sie speichert die Modellelemente und Beziehungen und deren Eigenschaften. Die Dateierweiterung, z. B. **.mydsl** richtet sich nach der **FileExtension** Eigenschaft der **Editor** Knoten in der DSL-Definition.  
   
--   Die Diagrammdatei hat einen Namen, z. B. **Model1.mydsl.diagram**. Sie speichert die Formen, Connectors, und ihre Positionen, Farben, Strichstärken und andere Details der Darstellung des Diagramms. Wenn der Benutzer löscht eine **. Diagram** -Datei, die wichtige Informationen im Modell sind nicht verloren gegangen. Nur das Layout des Diagramms geht verloren. Wenn die Modelldatei geöffnet wird, wird ein Standardsatz von Formen und Connectors erstellt werden.  
+- Die Diagrammdatei hat einen Namen, z. B. **Model1.mydsl.diagram**. Sie speichert die Formen, Connectors, und ihre Positionen, Farben, Strichstärken und andere Details der Darstellung des Diagramms. Wenn der Benutzer löscht eine **. Diagram** -Datei, die wichtige Informationen im Modell sind nicht verloren gegangen. Nur das Layout des Diagramms geht verloren. Wenn die Modelldatei geöffnet wird, wird ein Standardsatz von Formen und Connectors erstellt werden.  
   
 #### <a name="to-change-the-file-extension-of-a-dsl"></a>So ändern Sie die Erweiterung einer DSL  
   
-1.  Öffnen Sie die DSL-Definition. Klicken Sie im DSL-Explorer auf den Knoten-Editor.  
+1. Öffnen Sie die DSL-Definition. Klicken Sie im DSL-Explorer auf den Knoten-Editor.  
   
-2.  Bearbeiten Sie im Fenster Eigenschaften die **FileExtension** Eigenschaft. Fügen Sie den ersten keine "." von der Erweiterung.  
+2. Bearbeiten Sie im Fenster Eigenschaften die **FileExtension** Eigenschaft. Fügen Sie den ersten keine "." von der Erweiterung.  
   
-3.  Ändern Sie im Projektmappen-Explorer den Namen des in der zwei elementvorlagendateien **DslPackage\ProjectItemTemplates**. Diese Dateien haben Namen, die das folgende Format aufweisen:  
+3. Ändern Sie im Projektmappen-Explorer den Namen des in der zwei elementvorlagendateien **DslPackage\ProjectItemTemplates**. Diese Dateien haben Namen, die das folgende Format aufweisen:  
   
      `myDsl.diagram`  
   
@@ -84,17 +81,17 @@ Wenn der Benutzer eine Instanz, speichert oder *Modell*, der eine domänenspezif
   
  Beachten Sie, dass die folgenden Punkte zu das serialisierte Modell:  
   
--   Dieser XML-Knoten hat einen Namen, der einen Domänennamen für die Klasse, identisch ist, mit dem Unterschied, dass der erste Buchstabe der klein geschrieben ist. Beispiel: `familyTreeModel` und `person`.  
+- Dieser XML-Knoten hat einen Namen, der einen Domänennamen für die Klasse, identisch ist, mit dem Unterschied, dass der erste Buchstabe der klein geschrieben ist. Beispiel: `familyTreeModel` und `person`.  
   
--   Domäneneigenschaften wie Name und BirthYear werden in die XML-Knoten als Attribute serialisiert. In diesem Fall wird das erste Zeichen von der Eigenschaftenname in Kleinbuchstaben konvertiert.  
+- Domäneneigenschaften wie Name und BirthYear werden in die XML-Knoten als Attribute serialisiert. In diesem Fall wird das erste Zeichen von der Eigenschaftenname in Kleinbuchstaben konvertiert.  
   
--   Jede Beziehung wird als ein XML-Knoten, die das Quellende der Beziehung geschachtelt serialisiert. Der Knoten besitzt den gleichen Namen wie die Quelleigenschaft für die Rolle, jedoch mit einem anfänglichen Kleinbuchstaben.  
+- Jede Beziehung wird als ein XML-Knoten, die das Quellende der Beziehung geschachtelt serialisiert. Der Knoten besitzt den gleichen Namen wie die Quelleigenschaft für die Rolle, jedoch mit einem anfänglichen Kleinbuchstaben.  
   
      Z. B. in der DSL-Definition eine Rolle mit dem Namen **Personen** ist bezogen auf die **FamilyTree** Klasse.  In der XML, wird dies durch die Knoten mit dem Namen `people` in geschachtelt die `familyTreeModel` Knoten.  
   
--   Das Zielende jeder einbettenden Beziehung wird als Knoten unter die Beziehung geschachtelt serialisiert. Z. B. die `people` Knoten enthält mehrere `person` Knoten.  
+- Das Zielende jeder einbettenden Beziehung wird als Knoten unter die Beziehung geschachtelt serialisiert. Z. B. die `people` Knoten enthält mehrere `person` Knoten.  
   
--   Das Zielende der einzelnen verweisbeziehung wird als serialisiert eine *Moniker*, einen Verweis auf das Zielelement codiert.  
+- Das Zielende der einzelnen verweisbeziehung wird als serialisiert eine *Moniker*, einen Verweis auf das Zielelement codiert.  
   
      Beispielsweise unter einem `person` Knoten kann ein `children` Beziehung. Dieser Knoten enthält die Moniker wie z.B.:  
   
@@ -128,33 +125,33 @@ Wenn der Benutzer eine Instanz, speichert oder *Modell*, der eine domänenspezif
   
 #### <a name="to-set-a-domain-class-to-be-referenced-by-id-monikers"></a>Festlegen eine Domänenklasse von ID-Moniker verwiesen wird  
   
-1.  Stellen Sie sicher, dass **wird der Monikerschlüssel** ist `false` für jede Domäneneigenschaft in der Klasse und ihre Basisklassen.  
+1. Stellen Sie sicher, dass **wird der Monikerschlüssel** ist `false` für jede Domäneneigenschaft in der Klasse und ihre Basisklassen.  
   
-    1.  Erweitern Sie im DSL-Explorer **XML-Serialisierungsdaten Behavior\Class\\**_\<der Domänenklasse >_**\Element Daten**.  
+    1. Erweitern Sie im DSL-Explorer **XML-Serialisierungsdaten Behavior\Class\\**_\<der Domänenklasse >_**\Element Daten**.  
   
-    2.  Überprüfen Sie, ob **wird der Monikerschlüssel** ist `false` für jede Domäneneigenschaft.  
+    2. Überprüfen Sie, ob **wird der Monikerschlüssel** ist `false` für jede Domäneneigenschaft.  
   
-    3.  Wenn die Domänenklasse eine Basisklasse verfügt, wiederholen Sie das Verfahren in dieser Klasse.  
+    3. Wenn die Domänenklasse eine Basisklasse verfügt, wiederholen Sie das Verfahren in dieser Klasse.  
   
-2.  Legen Sie **Id Serialisieren**  =  `true` für die Domänenklasse.  
+2. Legen Sie **Id Serialisieren**  =  `true` für die Domänenklasse.  
   
      Diese Eigenschaft finden Sie unter **XML-Serialisierungsverhalten**.  
   
 #### <a name="to-set-a-domain-class-to-be-referenced-by-qualified-key-monikers"></a>Festlegen eine Domänenklasse von qualifizierten Key Moniker verwiesen wird  
   
--   Legen Sie **wird der Monikerschlüssel** für eine Domäneneigenschaft einer vorhandenen Domäne-Klasse. Der Typ der Eigenschaft muss `string`.  
+- Legen Sie **wird der Monikerschlüssel** für eine Domäneneigenschaft einer vorhandenen Domäne-Klasse. Der Typ der Eigenschaft muss `string`.  
   
-    1.  Erweitern Sie im DSL-Explorer **XML-Serialisierungsdaten Behavior\Class\\**_\<der Domänenklasse >_**\Element Daten**, und wählen Sie dann die Eigenschaft "Domain".  
+    1. Erweitern Sie im DSL-Explorer **XML-Serialisierungsdaten Behavior\Class\\**_\<der Domänenklasse >_**\Element Daten**, und wählen Sie dann die Eigenschaft "Domain".  
   
-    2.  Legen Sie im Eigenschaftenfenster **wird der Monikerschlüssel** zu `true`.  
+    2. Legen Sie im Eigenschaftenfenster **wird der Monikerschlüssel** zu `true`.  
   
--   \- oder –  
+- \- oder –  
   
      Erstellen Sie eine neue Domäne-Klasse, mit der **benannte Domänenklasse** Tool.  
   
      Dieses Tool erstellt eine neue Klasse mit einer Domäneneigenschaft als Name bezeichnet. Die **ist Elementname** und **wird der Monikerschlüssel** Eigenschaften dieser Domäneneigenschaft werden initialisiert, um `true`.  
   
--   \- oder –  
+- \- oder –  
   
      Erstellen Sie eine Vererbungsbeziehung besteht aus der Domänenklasse an eine andere Klasse, die über eine Schlüsseleigenschaft Moniker verfügt.  
   
@@ -163,11 +160,11 @@ Wenn der Benutzer eine Instanz, speichert oder *Modell*, der eine domänenspezif
   
  Es gibt mehrere Methoden, die dieses Problem zu vermeiden:  
   
--   Legen Sie **ist Elementname**  =  `true` für die wichtigsten Domäneneigenschaft. Wählen Sie die Eigenschaft "Domain" im DSL-Definitionsdiagramm, und legen Sie den Wert im Fenster Eigenschaften.  
+- Legen Sie **ist Elementname**  =  `true` für die wichtigsten Domäneneigenschaft. Wählen Sie die Eigenschaft "Domain" im DSL-Definitionsdiagramm, und legen Sie den Wert im Fenster Eigenschaften.  
   
      Wenn der Benutzer eine neue Instanz der Klasse erstellt wird, bewirkt dieser Wert der Eigenschaft "Domain" automatisch einen anderen Wert zugewiesen werden soll. Standardmäßig fügt eine Zahl am Ende den Namen der Klasse. Dies verhindert, dass des Benutzers nicht den Namen ändern, um ein Duplikat, aber in die Groß-/Kleinschreibung unterstützt, wenn der Benutzer vor dem Speichern des Modells nicht den Wert festgelegt.  
   
--   Aktivieren Sie die Validierung für die DSL. Klicken Sie im DSL-Explorer wählen editor\validierung, und legen die **verwendet...**  Eigenschaften `true`.  
+- Aktivieren Sie die Validierung für die DSL. Klicken Sie im DSL-Explorer wählen editor\validierung, und legen die **verwendet...**  Eigenschaften `true`.  
   
      Es gibt eine automatisch generierte Überprüfungsmethode, die überprüft für Mehrdeutigkeiten. Die Methode wird in der `Load` Überprüfung Kategorie. Dadurch wird sichergestellt, dass der Benutzer gewarnt werden, wenn es möglicherweise nicht möglich, die Datei erneut zu öffnen.  
   
@@ -207,7 +204,7 @@ Wenn der Benutzer eine Instanz, speichert oder *Modell*, der eine domänenspezif
 ## <a name="customizing-the-structure-of-the-xml"></a>Anpassen der XML-Struktur  
  Um die folgenden Anpassungen vorzunehmen, erweitern Sie die **XML-Serialisierungsverhalten** Knoten im DSL-Explorer. Erweitern Sie den Elementdaten-Knoten, um die Liste der Eigenschaften und Beziehungen, die auf diese Klasse erstellt werden, unter einer Domänenklasse. Wählen Sie eine Beziehung, und passen Sie die Optionen im Fenster Eigenschaften.  
   
--   Legen Sie **Element weglassen** auf true festlegen, um der Rolle Quellknoten, verlassen einfach die Liste der Zielelemente zu unterdrücken. Sie sollten diese Option nicht festgelegt, wenn mehr als eine Beziehung zwischen den Quell- und Zielklassen vorhanden ist.  
+- Legen Sie **Element weglassen** auf true festlegen, um der Rolle Quellknoten, verlassen einfach die Liste der Zielelemente zu unterdrücken. Sie sollten diese Option nicht festgelegt, wenn mehr als eine Beziehung zwischen den Quell- und Zielklassen vorhanden ist.  
   
     ```  
   
@@ -221,7 +218,7 @@ Wenn der Benutzer eine Instanz, speichert oder *Modell*, der eine domänenspezif
   
     ```  
   
--   Legen Sie **verwenden vollständiger Form** zum Einbetten von Zielknoten in Knoten die Beziehungsinstanzen darstellt. Diese Option wird automatisch festgelegt, wenn Sie die Domäneneigenschaften einer domänenbeziehung hinzufügen.  
+- Legen Sie **verwenden vollständiger Form** zum Einbetten von Zielknoten in Knoten die Beziehungsinstanzen darstellt. Diese Option wird automatisch festgelegt, wenn Sie die Domäneneigenschaften einer domänenbeziehung hinzufügen.  
   
     ```  
   
@@ -239,7 +236,7 @@ Wenn der Benutzer eine Instanz, speichert oder *Modell*, der eine domänenspezif
   
     ```  
   
--   Legen Sie **Darstellung** = **Element** eine Domäneneigenschaft als ein Element nicht als Attributwerte gespeichert haben.  
+- Legen Sie **Darstellung** = **Element** eine Domäneneigenschaft als ein Element nicht als Attributwerte gespeichert haben.  
   
     ```  
     <person name="Elizabeth I" birthYear="1533">  
@@ -247,7 +244,7 @@ Wenn der Benutzer eine Instanz, speichert oder *Modell*, der eine domänenspezif
     </person>  
     ```  
   
--   Klicken Sie zum Ändern der Reihenfolge, in denen Attribute und Beziehungen werden serialisiert, mit der rechten Maustaste unter Elementdaten ein Element, und Verwenden der **nach oben** oder **nach unten** Menübefehle.  
+- Klicken Sie zum Ändern der Reihenfolge, in denen Attribute und Beziehungen werden serialisiert, mit der rechten Maustaste unter Elementdaten ein Element, und Verwenden der **nach oben** oder **nach unten** Menübefehle.  
   
 ## <a name="major-customization-using-program-code"></a>Wichtige Anpassung, die mithilfe von Programmcode  
  Sie können teilweise oder vollständig von der Serialisierung Algorithmen ersetzen.  
@@ -256,13 +253,13 @@ Wenn der Benutzer eine Instanz, speichert oder *Modell*, der eine domänenspezif
   
 #### <a name="to-customize-the-serialization-of-a-particular-class"></a>Um die Serialisierung einer bestimmten Klasse anzupassen  
   
-1.  Legen Sie **ist Benutzerdefiniert** im Knoten für diese Klasse unter **XML-Serialisierungsverhalten**.  
+1. Legen Sie **ist Benutzerdefiniert** im Knoten für diese Klasse unter **XML-Serialisierungsverhalten**.  
   
-2.  Transformieren Sie alle Vorlagen, erstellen Sie die Projektmappe, und untersuchen Sie die resultierende Kompilierungsfehler. Kommentare in der Nähe von jeder Fehler wird erläutert, Sie angeben müssen, welchen Code.  
+2. Transformieren Sie alle Vorlagen, erstellen Sie die Projektmappe, und untersuchen Sie die resultierende Kompilierungsfehler. Kommentare in der Nähe von jeder Fehler wird erläutert, Sie angeben müssen, welchen Code.  
   
 #### <a name="to-provide-your-own-serialization-for-the-whole-model"></a>Um eigene Serialisierung für das gesamte Modell bereitzustellen.  
   
-1.  Überschreiben Sie Methoden in Dsl\GeneratedCode\SerializationHelper.cs  
+1. Überschreiben Sie Methoden in Dsl\GeneratedCode\SerializationHelper.cs  
   
 ## <a name="options-in-xml-serialization-behavior"></a>Optionen im XML-Serialisierungsverhalten  
  Im DSL-Explorer enthält die XML-Serialisierungsverhalten-Knoten einen untergeordneter Knoten für jede Domänenklasse, die Beziehung, die Form, Connector und Diagrammklasse. Unter diesen Knoten die ist eine Liste der Eigenschaften und Beziehungen, die auf dieses Element aus. Beziehungen werden sich genommen schon sowohl unter ihrer Datenquelle Klassen dargestellt.  
@@ -294,7 +291,7 @@ Wenn der Benutzer eine Instanz, speichert oder *Modell*, der eine domänenspezif
 |Eigenschaft|Beschreibung|  
 |Eigenschaft "Domain"|Die Eigenschaft, die Xml-serialisierungskonfigurationsdaten gelten. Schreibgeschützt.|  
 |Wird der Monikerschlüssel|Bei "true", dient die Eigenschaft als Schlüssel für das Erstellen von Monikern, die Instanzen dieser Domänenklasse verweisen.|  
-|Ist der Monikerqualifizierer|Wenn True, wird die Eigenschaft zum Erstellen des Qualifizierers in Monikern verwendet. Wenn "false", und SerializeId nicht "true" für diese Domänenklasse ist, werden Moniker durch den Moniker, der das übergeordnete Element in der einbettenden Struktur qualifiziert.|  
+|Is Moniker Qualifier|Wenn True, wird die Eigenschaft zum Erstellen des Qualifizierers in Monikern verwendet. Wenn "false", und SerializeId nicht "true" für diese Domänenklasse ist, werden Moniker durch den Moniker, der das übergeordnete Element in der einbettenden Struktur qualifiziert.|  
 |Darstellung|Wenn das Attribut, das die Eigenschaft als XML-Attribut serialisiert wird; Wenn das Element, es ist als ein Element serialisiert Falls Sie nicht serialisiert.|  
 |XML-Name|Namen für die XML-Attribut oder Element, das die Eigenschaft darstellt. Standardmäßig ist dies eine lower-case-Version vom Namen Domäne.|  
 |Hinweise|Informelle Hinweise, die mit diesem Element verknüpft sind|  
@@ -313,6 +310,3 @@ Wenn der Benutzer eine Instanz, speichert oder *Modell*, der eine domänenspezif
 ## <a name="see-also"></a>Siehe auch  
  [Navigieren in und Aktualisieren von Modellen im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Generieren von Code für eine domänenspezifische Sprache](../modeling/generating-code-from-a-domain-specific-language.md)
-
-
-

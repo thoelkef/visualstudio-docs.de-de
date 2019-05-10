@@ -13,17 +13,17 @@ helpviewer_keywords:
 - performance testing [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, performance testing
 - profiling [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8578a27dc6daceda25667142a3cdccae50a42552
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8b59a3de88403300a46b7992a2dad72e3d6b59e0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905688"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62563313"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>Profil der Leistung von SharePoint-Anwendungen
 
@@ -45,7 +45,7 @@ Nachdem Sie eine Leistungssitzung eingerichtet haben, wird die Sitzungskonfigura
 
 ## <a name="stress-test"></a>Belastungstest
 
-Sie können die belastungsleistung der Ihre Anwendungen analysieren, durch das Erstellen von Auslastungstests und Webleistungstests in Visual Studio. Wenn Sie einen Auslastungstest in Visual Studio erstellen, geben Sie eine Kombination von Faktoren, ein so genanntes Szenario, an, gegen das die Anwendung getestet werden soll. Diese Faktoren enthalten Auslastungsmuster, Testmischungsmodell, Testmischung, Netzwerkmischung und Browsermix. Auslastungstestszenarien können sowohl Komponententests als auch Webleistungstests enthalten.
+Sie können die belastungsleistung der Ihre Anwendungen analysieren, durch das Erstellen von Auslastungstests und Webleistungstests in Visual Studio. Wenn Sie einen Auslastungstest in Visual Studio erstellen, geben Sie eine Kombination von Faktoren, ein so genanntes Szenario, an, gegen das die Anwendung getestet werden soll. Diese Faktoren enthalten Auslastungsmuster, Testmischungsmodell, Testmischung, Netzwerkmischung und Browsermischung. Auslastungstestszenarien können sowohl Komponententests als auch Webleistungstests enthalten.
 
 Abbildung 1: Beispiel für Auslastungstestergebnisse
 
@@ -55,7 +55,7 @@ Webleistungstests simulieren die mögliche Interaktion eines Endbenutzers mit ei
 
 ## <a name="test-user-interfaces"></a>Testen von Benutzeroberflächen
 
-Tests der programmierten UI steuern automatisch die SharePoint-Anwendung über die Benutzeroberfläche (UI). Diese Tests decken UI-Steuerelemente, wie Schaltflächen und Menüs, ab, um zu überprüfen, ob sie ordnungsgemäß funktionieren. Diese Art von Tests sind besonders bei der Überprüfung oder einer anderen Logik der Benutzeroberfläche hilfreich, beispielsweise einer Webseite. Sie können auch Tests der codierten UI verwenden, um manuelle Tests zu automatisieren. Sie erstellen Tests der programmierten UI für die SharePoint-Anwendungen auf die gleiche Weise wie Sie Tests für andere Anwendungstypen erstellen. Weitere Informationen finden Sie unter [Testen von SharePoint 2010-Anwendungen mit Tests der programmierten UI](../test/testing-sharepoint-2010-applications-with-coded-ui-tests.md).
+Tests der programmierten UI steuern automatisch die SharePoint-Anwendung über die Benutzeroberfläche (UI). Diese Tests decken UI-Steuerelemente, wie Schaltflächen und Menüs, ab, um zu überprüfen, ob sie ordnungsgemäß funktionieren. Diese Art von Tests sind besonders bei der Validierung oder einer anderen Logik der Benutzeroberfläche hilfreich, beispielsweise einer Webseite. Sie können auch Tests der codierten UI verwenden, um manuelle Tests zu automatisieren. Sie erstellen Tests der programmierten UI für die SharePoint-Anwendungen auf die gleiche Weise wie Sie Tests für andere Anwendungstypen erstellen. Weitere Informationen finden Sie unter [Testen von SharePoint 2010-Anwendungen mit Tests der programmierten UI](../test/testing-sharepoint-2010-applications-with-coded-ui-tests.md).
 
 ## <a name="related-topics"></a>Verwandte Themen
 

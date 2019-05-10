@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: df7d854b-0a28-45a9-8a64-c015a4327701
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 96d770679055acd39f0913aef3e8a38281201762
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 97ed8dda2ea5d338bc7d60be845fafad6a30b47f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911311"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777595"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analysieren des Ressourcenverbrauchs und der Threadaktivitäten auf Benutzeroberflächen (XAML)
 
@@ -33,15 +33,15 @@ Sie können dieses Tool auf den folgenden Plattformen verwenden:
 
 > [!NOTE]
 > Zusätzlich zu den Daten der **Anwendungszeitachse** können Sie Daten zu CPU-Auslastung und Energieverbrauch sammeln und analysieren. Weitere Informationen finden Sie unter [Profilerstellungstools mit oder ohne den Debugger ausführen](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
-  
+
 ## <a name="collect-application-timeline-data"></a>Erfassen von Anwendungszeitachsen-Daten
 
 Sie können Profile für die Reaktionsfähigkeit Ihrer App auf dem lokalen Computer, einem angeschlossenen Gerät, dem Visual Studio-Simulator bzw. -Emulatoren sowie auf einem Remotegerät erstellen. Weitere Informationen finden Sie unter [Profilerstellungstools mit oder ohne den Debugger ausführen](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
 > [!TIP]
-> Führen Sie die App nach Möglichkeit direkt auf dem Gerät aus. Die Anwendungsleistung, die im Simulator oder über eine Remotedesktopverbindung überwacht wird, ist möglicherweise nicht identisch mit der tatsächlichen Leistung auf dem Gerät. Auf der anderen Seite wirkt sich das Sammeln der Daten mithilfe der Visual Studio-Remotetools nicht auf die Leistungsdaten aus.  
+> Führen Sie die App nach Möglichkeit direkt auf dem Gerät aus. Die Anwendungsleistung, die im Simulator oder über eine Remotedesktopverbindung überwacht wird, ist möglicherweise nicht identisch mit der tatsächlichen Leistung auf dem Gerät. Auf der anderen Seite wirkt sich das Sammeln der Daten mithilfe der Visual Studio-Remotetools nicht auf die Leistungsdaten aus.
 
-Im Folgenden finden Sie die grundlegenden Schritte:  
+Im Folgenden finden Sie die grundlegenden Schritte:
 
 1. Öffnen Sie die XAML-App.
 
@@ -62,69 +62,69 @@ Im Folgenden finden Sie die grundlegenden Schritte:
 
 ## <a name="analyze-timeline-profiling-data"></a>Analysieren von Zeitachsen-Profilerstellungsdaten
 
-Nachdem Sie die Profilerstellungsdaten gesammelt haben, können Sie diese Schritte ausführen, um mit der Analyse zu beginnen:  
-  
-1. Überprüfen Sie die Informationen in den Diagrammen **Auslastung des UI-Threads** und **Visueller Durchsatz (FPS)**, und wählen Sie dann über die Navigationsleisten der Zeitachse den Zeitraum aus, den Sie analysieren möchten.  
-  
+Nachdem Sie die Profilerstellungsdaten gesammelt haben, können Sie diese Schritte ausführen, um mit der Analyse zu beginnen:
+
+1. Überprüfen Sie die Informationen in den Diagrammen **Auslastung des UI-Threads** und **Visueller Durchsatz (FPS)**, und wählen Sie dann über die Navigationsleisten der Zeitachse den Zeitraum aus, den Sie analysieren möchten.
+
 2. Überprüfen Sie anhand der Informationen in den Diagrammen **Auslastung des UI-Threads** bzw. **Visueller Durchsatz (FPS)** die Details in der Ansicht **Zeitachsendetails**, um mögliche Ursachen für eine scheinbar mangelhafte Reaktionsfähigkeit zu finden.
-  
-### <a name="BKMK_Report_scenarios_categories_and_events"></a> Berichtsszenarien, Kategorien und Ereignisse  
 
-Das Tool **Anwendungszeitachse** zeigt zeitbezogene Daten zu Szenarien, Kategorien und Ereignissen im Zusammenhang mit der XAML-Leistung.  
+### <a name="BKMK_Report_scenarios_categories_and_events"></a> Berichtsszenarien, Kategorien und Ereignisse
 
-### <a name="BKMK_Diagnostic_session_timeline"></a> Zeitachse der Diagnosesitzung  
+Das Tool **Anwendungszeitachse** zeigt zeitbezogene Daten zu Szenarien, Kategorien und Ereignissen im Zusammenhang mit der XAML-Leistung.
 
-![Leistungs- und Diagnosezeitachse](../profiling/media/diaghub_timelinewithusermarks.png "DIAGHUB_TimelineWithUserMarks")  
+### <a name="BKMK_Diagnostic_session_timeline"></a> Zeitachse der Diagnosesitzung
 
-Das Lineal oben auf der Seite zeigt die Zeitachse für die Profilerstellungsinformationen an. Diese Zeitachse gilt sowohl für das Diagramm **Auslastung des UI-Threads** als auch für das Diagramm **Visueller Durchsatz** . Sie können den Bereich des Berichtes eingrenzen, indem Sie die Navigationsleisten auf der Zeitachse ziehen, um ein Segment der Zeitachse auszuwählen.  
+![Leistungs- und Diagnosezeitachse](../profiling/media/diaghub_timelinewithusermarks.png "DIAGHUB_TimelineWithUserMarks")
 
-Die Zeitachse zeigt auch alle Benutzermarkierungen an, die Sie eingefügt haben, sowie die Ereignisse des Aktivierungslebenszyklus der App.  
+Das Lineal oben auf der Seite zeigt die Zeitachse für die Profilerstellungsinformationen an. Diese Zeitachse gilt sowohl für das Diagramm **Auslastung des UI-Threads** als auch für das Diagramm **Visueller Durchsatz** . Sie können den Bereich des Berichtes eingrenzen, indem Sie die Navigationsleisten auf der Zeitachse ziehen, um ein Segment der Zeitachse auszuwählen.
+
+Die Zeitachse zeigt auch alle Benutzermarkierungen an, die Sie eingefügt haben, sowie die Ereignisse des Aktivierungslebenszyklus der App.
 
 ### <a name="BKMK_UI_thread_utilization_graph"></a> Diagramm der Auslastung des UI-Threads
 
-![CPU-Auslastungsdiagramm](../profiling/media/timeline_cpuutilization.png "TIMELINE_CpuUtilization")  
+![CPU-Auslastungsdiagramm](../profiling/media/timeline_cpuutilization.png "TIMELINE_CpuUtilization")
 
-Das Diagramm **Auslastung des UI-Threads (%)** ist ein Balkendiagramm, in dem für den Verlauf einer Datensammlung die relative Dauer in der jeweiligen Kategorie angezeigt wird.  
+Das Diagramm **Auslastung des UI-Threads (%)** ist ein Balkendiagramm, in dem für den Verlauf einer Datensammlung die relative Dauer in der jeweiligen Kategorie angezeigt wird.
 
-### <a name="BKMK_Visual_throughput_FPS_graph"></a> Diagramm des visuellen Durchsatzes (FPS)  
+### <a name="BKMK_Visual_throughput_FPS_graph"></a> Diagramm des visuellen Durchsatzes (FPS)
 
-![Diagramm des visuellen Durchsatzes](../profiling/media/timeline_visualthroughput.png "TIMELINE_VisualThroughput")  
+![Diagramm des visuellen Durchsatzes](../profiling/media/timeline_visualthroughput.png "TIMELINE_VisualThroughput")
 
-Das Liniendiagramm **Visueller Durchsatz (FPS)** zeigt die Bilder pro Sekunde (FPS) auf der UI und dem Kompositionsthread für die App an.  
+Das Liniendiagramm **Visueller Durchsatz (FPS)** zeigt die Bilder pro Sekunde (FPS) auf der UI und dem Kompositionsthread für die App an.
 
-### <a name="BKMK_Timeline_details_"></a> Zeitachse  
+### <a name="BKMK_Timeline_details_"></a> Zeitachse
 
 Die Detailansicht benötigen Sie am häufigsten, um den Bericht zu analysieren. Sie zeigt die CPU-Auslastung Ihrer Anwendung kategorisiert nach dem UI-Frameworksubsystem oder der Systemkomponente an, das/die die CPU verbraucht hat.
 
-Die folgenden Ereignisse werden unterstützt:  
+Die folgenden Ereignisse werden unterstützt:
 
-|||  
-|-|-|  
-|**Analyse**|Für das Analysieren von XAML-Dateien und Erstellen von Objekten benötigte Zeit.<br /><br /> Beim Erweitern eines **Analyse**-Knotens im Bereich **Zeitachsendetails** wird die Abhängigkeitskette aller XAML-Dateien anzeigt, die aufgrund des Ausgangsereignisses analysiert wurden. Mit diesem Tipp können Sie unnötige Dateianalysen und Objekterstellungen in leistungssensiblen Szenarios finden und entfernen.|  
-|**Layout**|In großen Anwendungen können Tausende von Elementen zur gleichen Zeit auf dem Bildschirm angezeigt werden. Diese Anzeige kann zu einer niedrigen UI-Framerate und einer entsprechend geringen Reaktionsfähigkeit der Anwendung führen. Das Layoutereignis bestimmt genau die Kosten für die Anordnung jedes Elements (d.h. die Zeit, die für die Vorgänge Arrange, Measure, ApplyTemplate, ArrangeOverride und MeasureOverride aufgewendet wird). Es erstellt auch die visuellen Strukturen, die an einem Layoutdurchlauf beteiligt waren. Sie können diese Visualisierung verwenden, um zu bestimmen, welche logischen Strukturen gelöscht werden müssen, oder um andere Mechanismen mit Verzögerungen auszuwerten, um Ihren Layoutdurchlauf zu optimieren.|  
-|**Rendern**|Zeitaufwand für das Zeichnen von XAML-Elementen auf dem Bildschirm.|  
-|**E/A**|Zeitaufwand für das Abrufen von Daten vom lokalen Datenträger oder von Netzwerkressourcen, auf die über die [Microsoft Windows Internet-API (WinINet)](/windows/desktop/WinInet/portal)zugegriffen wird.|  
-|**App-Code**|Der Zeitaufwand für die Ausführung von Anwendungs- bzw. Benutzercode, der nicht mit der Analyse oder dem Layout zusammenhängt.|  
-|**Andere XAML**|Zeitaufwand für die Ausführung von XAML-Laufzeitcode.|  
-  
+|||
+|-|-|
+|**Analyse**|Für das Analysieren von XAML-Dateien und Erstellen von Objekten benötigte Zeit.<br /><br /> Beim Erweitern eines **Analyse**-Knotens im Bereich **Zeitachsendetails** wird die Abhängigkeitskette aller XAML-Dateien anzeigt, die aufgrund des Ausgangsereignisses analysiert wurden. Mit diesem Tipp können Sie unnötige Dateianalysen und Objekterstellungen in leistungssensiblen Szenarios finden und entfernen.|
+|**Layout**|In großen Anwendungen können Tausende von Elementen zur gleichen Zeit auf dem Bildschirm angezeigt werden. Diese Anzeige kann zu einer niedrigen UI-Framerate und einer entsprechend geringen Reaktionsfähigkeit der Anwendung führen. Das Layoutereignis bestimmt genau die Kosten für die Anordnung jedes Elements (d.h. die Zeit, die für die Vorgänge Arrange, Measure, ApplyTemplate, ArrangeOverride und MeasureOverride aufgewendet wird). Es erstellt auch die visuellen Strukturen, die an einem Layoutdurchlauf beteiligt waren. Sie können diese Visualisierung verwenden, um zu bestimmen, welche logischen Strukturen gelöscht werden müssen, oder um andere Mechanismen mit Verzögerungen auszuwerten, um Ihren Layoutdurchlauf zu optimieren.|
+|**Rendern**|Zeitaufwand für das Zeichnen von XAML-Elementen auf dem Bildschirm.|
+|**E/A**|Zeitaufwand für das Abrufen von Daten vom lokalen Datenträger oder von Netzwerkressourcen, auf die über die [Microsoft Windows Internet-API (WinINet)](/windows/desktop/WinInet/portal)zugegriffen wird.|
+|**App-Code**|Der Zeitaufwand für die Ausführung von Anwendungs- bzw. Benutzercode, der nicht mit der Analyse oder dem Layout zusammenhängt.|
+|**Andere XAML**|Zeitaufwand für die Ausführung von XAML-Laufzeitcode.|
+
 > [!TIP]
-> Wählen Sie das Tool **CPU-Auslastung** zusammen mit dem Tool **Anwendungszeitachse** aus, wenn Sie mit der Profilerstellung beginnen, um App-Methoden anzuzeigen, die im UI-Thread ausgeführt werden. Durch das Verlagern von App-Code mit langer Ausführungsdauer in einen Hintergrundthread kann die UI-Reaktionsfähigkeit verbessert werden.  
-  
-#### <a name="BKMK_Customizing_Timeline_details_"></a> Anpassen von Zeitachsendetails  
+> Wählen Sie das Tool **CPU-Auslastung** zusammen mit dem Tool **Anwendungszeitachse** aus, wenn Sie mit der Profilerstellung beginnen, um App-Methoden anzuzeigen, die im UI-Thread ausgeführt werden. Durch das Verlagern von App-Code mit langer Ausführungsdauer in einen Hintergrundthread kann die UI-Reaktionsfähigkeit verbessert werden.
 
-Verwenden Sie die Symbolleiste **Zeitachsendetails** zum Sortieren, Filtern und Angeben der Anmerkungen zu Einträgen in der Ansicht **Zeitachsendetails** .  
-  
-|||  
-|-|-|  
-|**Sortieren nach**|Sortieren Sie nach Startzeit oder Ereignisdauer.|  
-|![Ereignisse nach Frame gruppieren](../profiling/media/timeline_groupbyframes.png "TIMELINE_GroupByFrames")|Dient zum Hinzufügen oder Entfernen einer Kategorie **Frame** der obersten Ebene, die Ereignisse nach Frame gruppiert.|  
-|![Filtern der Zeitachsendetails-Liste](../profiling/media/timeline_filter.png "TIMELINE_Filter")|Filtert die Liste anhand ausgewählter Kategorien und der Dauer von Ereignissen.|  
-|![Information zu Zeitachsendetails anpassen](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|Ermöglicht die Angabe von Anmerkungen zu Ereignissen.|  
-  
+#### <a name="BKMK_Customizing_Timeline_details_"></a> Anpassen von Zeitachsendetails
+
+Verwenden Sie die Symbolleiste **Zeitachsendetails** zum Sortieren, Filtern und Angeben der Anmerkungen zu Einträgen in der Ansicht **Zeitachsendetails** .
+
+|||
+|-|-|
+|**Sortieren nach**|Sortieren Sie nach Startzeit oder Ereignisdauer.|
+|![Ereignisse nach Frame gruppieren](../profiling/media/timeline_groupbyframes.png "TIMELINE_GroupByFrames")|Dient zum Hinzufügen oder Entfernen einer Kategorie **Frame** der obersten Ebene, die Ereignisse nach Frame gruppiert.|
+|![Filtern der Zeitachsendetails-Liste](../profiling/media/timeline_filter.png "TIMELINE_Filter")|Filtert die Liste anhand ausgewählter Kategorien und der Dauer von Ereignissen.|
+|![Information zu Zeitachsendetails anpassen](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|Ermöglicht die Angabe von Anmerkungen zu Ereignissen.|
+
 ## <a name="see-also"></a>Siehe auch
 
-- [WPF team blog: New UI performance analysis tool for WPF applications (WPF-Teamblog: Neues Tool für die Analyse der Benutzeroberflächenleistung für WPF-Anwendungen)](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/)  
+- [WPF team blog: New UI performance analysis tool for WPF applications (WPF-Teamblog: Neues Tool für die Analyse der Benutzeroberflächenleistung für WPF-Anwendungen)](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/)
 - [Bewährte Methoden zur Leistungsverbesserung für UWP-Apps mit C++, C# und Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))
-- [Optimieren der WPF-Anwendungsleistung](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
-- [Profilerstellung in Visual Studio](../profiling/index.md)  
+- [Optimieren der WPF-Anwendungsleistung](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)
+- [Profilerstellung in Visual Studio](../profiling/index.md)
 - [Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md)

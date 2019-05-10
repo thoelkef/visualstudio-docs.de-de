@@ -1,27 +1,24 @@
 ---
 title: Hinzufügen einer benutzerdefinierten architekturvalidierung zu Ebenendiagrammen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams, adding custom validation
 ms.assetid: fed7bc08-295a-46d6-9fd8-fb537f1f75f1
 caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 9748f2f7b43426f7f981d027400f097b260bf23d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 920b15d1cd4f7ed0ec11614a50f5dd32e050995a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432406"
 ---
-# <a name="add-custom-architecture-validation-to-layer-diagrams"></a>Hinzufügen einer benutzerdefinierten Architekturvalidierung zu Ebenendiagrammen
+# <a name="add-custom-architecture-validation-to-layer-diagrams"></a>Hinzufügen einer benutzerdefinierten Architekturüberprüfung zu Ebenendiagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Ebenenmodells validieren. So kann überprüft werden, ob der Quellcode den Abhängigkeiten in einem Ebenendiagramm entspricht. Es gibt zwar einen Standardvalidierungsalgorithmus, Sie können aber auch eigene Validierungserweiterungen definieren.  
@@ -29,12 +26,12 @@ In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Eb
  Wenn der Benutzer den Befehl **Architektur überprüfen** für ein Ebenendiagramm auswählt, wird die Standardvalidierungsmethode aufgerufen, anschließend folgen alle installierten Validierungserweiterungen.  
   
 > [!NOTE]
->  Die Validierung in einem Ebenendiagramm ist nicht mit einer Validierung in UML-Diagrammen vergleichbar. In einem Ebenendiagramm dient sie hauptsächlich dazu, das Diagramm mit dem Programmcode in anderen Teilen der Projektmappe zu vergleichen.  
+> Die Validierung in einem Ebenendiagramm ist nicht mit einer Validierung in UML-Diagrammen vergleichbar. In einem Ebenendiagramm dient sie hauptsächlich dazu, das Diagramm mit dem Programmcode in anderen Teilen der Projektmappe zu vergleichen.  
   
  Sie können die Ebenenvalidierungserweiterung in eine Visual Studio-Integrationserweiterung (VSIX) verpacken, die Sie an andere Visual Studio-Benutzer verteilen können. Sie können entweder das Validierungssteuerelement allein in eine VSIX einfügen, oder Sie können es in der gleichen VSIX mit anderen Erweiterungen kombinieren. Schreiben Sie den Code für das Validierungssteuerelement in einem eigenen Visual Studio-Projekt und nicht im gleichen Projekt wie andere Erweiterungen.  
   
 > [!WARNING]
->  Nachdem Sie ein Überprüfungsprojekt erstellt haben, kopieren Sie den [Beispielcode](#example) am Ende dieses Themas und bearbeiten diesen dann Ihren Anforderungen entsprechend.  
+> Nachdem Sie ein Überprüfungsprojekt erstellt haben, kopieren Sie den [Beispielcode](#example) am Ende dieses Themas und bearbeiten diesen dann Ihren Anforderungen entsprechend.  
   
 ## <a name="requirements"></a>Anforderungen  
  Siehe [Anforderungen](../modeling/extend-layer-diagrams.md#prereqs).  
@@ -51,17 +48,17 @@ In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Eb
     Mit dieser Vorlage wird ein Projekt mit einem kleinen Beispiel erstellt.  
   
    > [!WARNING]
-   >  Makethe Vorlage ordnungsgemäß funktioniert:  
+   > Makethe Vorlage ordnungsgemäß funktioniert:  
    > 
    > - Bearbeiten Sie Aufrufe zu `LogValidationError` , um die optionalen Argumente `errorSourceNodes` und `errorTargetNodes`zu entfernen.  
-   >   -   Wenn Sie benutzerdefinierte Eigenschaften verwenden, wenden Sie das Update, das im erwähnten [Hinzufügen benutzerdefinierter Eigenschaften zu Ebenendiagrammen](../modeling/add-custom-properties-to-layer-diagrams.md).  
+   >   - Wenn Sie benutzerdefinierte Eigenschaften verwenden, wenden Sie das Update, das im erwähnten [Hinzufügen benutzerdefinierter Eigenschaften zu Ebenendiagrammen](../modeling/add-custom-properties-to-layer-diagrams.md).  
   
 3. Bearbeiten Sie den Code, um die Validierung zu definieren. Weitere Informationen finden Sie unter [Programmieren einer Validierung](#programming).  
   
 4. Weitere Informationen zum Testen der Erweiterung finden Sie unter [Debuggen der Ebenenvalidierung](#debugging).  
   
    > [!NOTE]
-   >  Die Methode wird nur unter bestimmten Umständen aufgerufen, und Haltepunkte funktionieren nicht automatisch. Weitere Informationen finden Sie unter [Debuggen der Ebenenvalidierung](#debugging).  
+   > Die Methode wird nur unter bestimmten Umständen aufgerufen, und Haltepunkte funktionieren nicht automatisch. Weitere Informationen finden Sie unter [Debuggen der Ebenenvalidierung](#debugging).  
   
 5. Um die Erweiterung in der Hauptinstanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]oder auf einem anderen Computer zu installieren, suchen Sie die **.vsix** -Datei im Ordner *bin\\*. Kopieren Sie die Datei auf den Computer, auf dem Sie sie installieren möchten, und doppelklicken Sie dann darauf. Verwenden Sie zum Deinstallieren der Datei die Option **Erweiterungen und Updates** im Menü **Extras** .  
   
@@ -70,19 +67,19 @@ In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Eb
   
 #### <a name="to-add-layer-validation-to-a-separate-vsix"></a>So fügen Sie einer separaten VSIX eine Ebenenvalidierung hinzu  
   
-1.  Erstellen Sie in einer neuen oder vorhandenen Visual Studio-Projektmappe ein Klassenbibliotheksprojekt. Klicken Sie im Dialogfeld **Neues Projekt** auf **Visual C#** , und klicken Sie dann auf **Klassenbibliothek**. Dieses Projekt enthält die Ebenenvalidierungsklasse.  
+1. Erstellen Sie in einer neuen oder vorhandenen Visual Studio-Projektmappe ein Klassenbibliotheksprojekt. Klicken Sie im Dialogfeld **Neues Projekt** auf **Visual C#** , und klicken Sie dann auf **Klassenbibliothek**. Dieses Projekt enthält die Ebenenvalidierungsklasse.  
   
-2.  Identifizieren oder erstellen Sie ein VSIX-Projekt in der Projektmappe. Ein VSIX-Projekt enthält eine Datei mit dem Namen **source.extension.vsixmanifest**. Wenn Sie ein VSIX-Projekt hinzufügen müssen, führen Sie die folgenden Schritte aus:  
+2. Identifizieren oder erstellen Sie ein VSIX-Projekt in der Projektmappe. Ein VSIX-Projekt enthält eine Datei mit dem Namen **source.extension.vsixmanifest**. Wenn Sie ein VSIX-Projekt hinzufügen müssen, führen Sie die folgenden Schritte aus:  
   
-    1.  Wählen Sie im Dialogfeld **Neues Projekt** die Optionen **Visual C#Erweiterungen**, **Erweiterungen**und **VSIX-Projekt**aus.  
+    1. Wählen Sie im Dialogfeld **Neues Projekt** die Optionen **Visual C#Erweiterungen**, **Erweiterungen**und **VSIX-Projekt**aus.  
   
-    2.  Wählen Sie im **Projektmappen-Explorer**im Kontextmenü des VSIX-Projekts die Option **Als Startprojekt festlegen**aus.  
+    2. Wählen Sie im **Projektmappen-Explorer**im Kontextmenü des VSIX-Projekts die Option **Als Startprojekt festlegen**aus.  
   
-3.  Fügen Sie in **source.extension.vsixmanifest**unter **Objekte**das Ebenenvalidierungsprojekt als MEF-Komponente hinzu:  
+3. Fügen Sie in **source.extension.vsixmanifest**unter **Objekte**das Ebenenvalidierungsprojekt als MEF-Komponente hinzu:  
   
-    1.  Wählen Sie **Neu**aus.  
+    1. Wählen Sie **Neu**aus.  
   
-    2.  Legen Sie im Dialogfeld **Neues Objekt hinzufügen** Folgendes fest:  
+    2. Legen Sie im Dialogfeld **Neues Objekt hinzufügen** Folgendes fest:  
   
          **Typ** = **Microsoft.VisualStudio.MefComponent**  
   
@@ -90,11 +87,11 @@ In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Eb
   
          **Projekt** = *Ihr Validierungssteuerelement-Projekt*  
   
-4.  Außerdem müssen Sie das Projekt als Ebenenvalidierung hinzufügen:  
+4. Außerdem müssen Sie das Projekt als Ebenenvalidierung hinzufügen:  
   
-    1.  Wählen Sie **Neu**aus.  
+    1. Wählen Sie **Neu**aus.  
   
-    2.  Legen Sie im Dialogfeld **Neues Objekt hinzufügen** Folgendes fest:  
+    2. Legen Sie im Dialogfeld **Neues Objekt hinzufügen** Folgendes fest:  
   
          **Typ** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**. Dies ist keine der Optionen in der Dropdownliste. Sie müssen den Typ über die Tastatur eingeben.  
   
@@ -102,7 +99,7 @@ In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Eb
   
          **Projekt** = *Ihr Validierungssteuerelement-Projekt*  
   
-5.  Kehren Sie zum Ebenenvalidierungsprojekt zurück, und fügen Sie die folgenden Projektverweise hinzu:  
+5. Kehren Sie zum Ebenenvalidierungsprojekt zurück, und fügen Sie die folgenden Projektverweise hinzu:  
   
     |**Verweis**|**Optionen**|  
     |-------------------|------------------------------------|  
@@ -113,18 +110,18 @@ In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Eb
     |System.ComponentModel.Composition|Definieren der Validierungskomponente mithilfe von Managed Extensibility Framework (MEF)|  
     |Microsoft.VisualStudio.Modeling.Sdk.[Version]|Definieren von Modellierungserweiterungen|  
   
-6.  Kopieren Sie den Beispielcode am Ende dieses Themas in die Klassendatei im Bestätigungsbibliotheksprojekt, damit sie den Code für die Überprüfung enthält. Weitere Informationen finden Sie unter [Programmieren einer Validierung](#programming).  
+6. Kopieren Sie den Beispielcode am Ende dieses Themas in die Klassendatei im Bestätigungsbibliotheksprojekt, damit sie den Code für die Überprüfung enthält. Weitere Informationen finden Sie unter [Programmieren einer Validierung](#programming).  
   
-7.  Weitere Informationen zum Testen der Erweiterung finden Sie unter [Debuggen der Ebenenvalidierung](#debugging).  
+7. Weitere Informationen zum Testen der Erweiterung finden Sie unter [Debuggen der Ebenenvalidierung](#debugging).  
   
     > [!NOTE]
-    >  Die Methode wird nur unter bestimmten Umständen aufgerufen, und Haltepunkte funktionieren nicht automatisch. Weitere Informationen finden Sie unter [Debuggen der Ebenenvalidierung](#debugging).  
+    > Die Methode wird nur unter bestimmten Umständen aufgerufen, und Haltepunkte funktionieren nicht automatisch. Weitere Informationen finden Sie unter [Debuggen der Ebenenvalidierung](#debugging).  
   
-8.  Um die Erweiterung in der Hauptinstanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]oder auf einem anderen Computer zu installieren, suchen Sie die **.vsix** im Verzeichnis **bin** des VSIX-Projekts. Kopieren Sie die Datei auf den Computer, auf dem Sie die VSIX installieren möchten. Doppelklicken Sie in Windows-Explorer auf die VSIX-Datei. (Datei-Explorer in Windows 8.)  
+8. Um die Erweiterung in der Hauptinstanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]oder auf einem anderen Computer zu installieren, suchen Sie die **.vsix** im Verzeichnis **bin** des VSIX-Projekts. Kopieren Sie die Datei auf den Computer, auf dem Sie die VSIX installieren möchten. Doppelklicken Sie in Windows-Explorer auf die VSIX-Datei. (Datei-Explorer in Windows 8.)  
   
      Verwenden Sie zum Deinstallieren der Datei die Option **Erweiterungen und Updates** im Menü **Extras** .  
   
-##  <a name="programming"></a> Programmieren einer Validierung  
+## <a name="programming"></a> Programmieren einer Validierung  
  Zum Definieren einer Ebenenvalidierungserweiterung definieren Sie eine Klasse, die über die folgenden Eigenschaften verfügt:  
   
 - Die allgemeine Form der Deklaration lautet wie folgt:  
@@ -150,11 +147,11 @@ In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Eb
 - Wenn Sie einen Fehler entdecken, können Sie ihn mit `LogValidationError()`melden.  
   
   > [!WARNING]
-  >  Verwenden Sie nicht die optionalen Parameter von `LogValidationError`.  
+  > Verwenden Sie nicht die optionalen Parameter von `LogValidationError`.  
   
   Wenn der Benutzer den Menübefehl **Architektur überprüfen** aufruft, werden die Ebenen und ihre Artefakte vom Ebenenlaufzeitsystem analysiert, und es wird ein Diagramm erstellt. Das Diagramm besteht aus vier Teilen:  
   
-- Den Ebenenmodellen der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projektmappe, die als Knoten und Links im Diagramm dargestellt werden.  
+- Den Ebenenmodellen der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Projektmappe, die als Knoten und Links im Diagramm dargestellt werden.  
   
 - Dem Code, Projektelementen und anderen Artefakte, die in der Projektmappe definiert und als Knoten dargestellt werden, sowie den Links, die die vom Analyseprozess ermittelten Abhängigkeiten vertreten.  
   
@@ -165,7 +162,7 @@ In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Eb
   Wenn das Diagramm erstellt wurde, wird die Standardvalidierungsmethode aufgerufen. Nachdem diese abgeschlossen ist, werden alle installierten Erweiterungsvalidierungsmethoden ohne spezifische Reihenfolge aufgerufen. Das Diagramm wird an jede `ValidateArchitecture` -Methode übergeben, die das Diagramm überprüfen und gefundene Fehler melden kann.  
   
 > [!NOTE]
->  Dies ist nicht mit dem Validierungsprozess gleichzusetzen, der auf UML-Diagramme angewendet wird und auch nicht mit dem Validierungsprozess, der bei domänenspezifischen Sprachen verwendet werden kann.  
+> Dies ist nicht mit dem Validierungsprozess gleichzusetzen, der auf UML-Diagramme angewendet wird und auch nicht mit dem Validierungsprozess, der bei domänenspezifischen Sprachen verwendet werden kann.  
   
  Validierungsmethoden sollten das zu überprüfende Ebenenmodell oder den Code nicht ändern.  
   
@@ -193,7 +190,7 @@ In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Eb
   
   Links von Ebenen zu Elementen im Code haben die Kategorie "Represents".  
   
-##  <a name="debugging"></a> Debuggen der Validierung  
+## <a name="debugging"></a> Debuggen der Validierung  
  Drücken Sie STRG+F5, um die Ebenenvalidierungserweiterung zu debuggen. Eine experimentelle Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird geöffnet. Öffnen oder erstellen Sie ein Ebenenmodell in dieser Instanz. Dieses Modell muss Code zugeordnet sein und muss mindestens eine Abhängigkeit besitzen.  
   
 ### <a name="test-with-a-solution-that-contains-dependencies"></a>Test mit einer Projektmappe, die Abhängigkeiten enthält  
@@ -211,7 +208,7 @@ In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Eb
 ### <a name="launch-the-debugger-explicitly"></a>Explizites Starten des Debuggers  
  Die Validierung wird in einem separaten Prozess ausgeführt. Daher werden die Haltepunkte in der Überprüfungsmethode nicht ausgelöst. Sie müssen den Debugger explizit dem Prozess anfügen, wenn die Validierung gestartet wurde.  
   
- Fügen Sie am Anfang der Validierungsmethode einen Aufruf von `System.Diagnostics.Debugger.Launch()` ein, um den Debugger dem Validierungsprozess anzufügen. Wenn das Debugdialogfeld angezeigt wird, wählen Sie die Hauptinstanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aus.  
+ Fügen Sie am Anfang der Validierungsmethode einen Aufruf von `System.Diagnostics.Debugger.Launch()` ein, um den Debugger dem Validierungsprozess anzufügen. Wenn das Debugdialogfeld angezeigt wird, wählen Sie die Hauptinstanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]aus.  
   
  Alternativ können Sie einen Aufruf von `System.Windows.Forms.MessageBox.Show()`einfügen. Wenn das Meldungsfeld angezeigt wird, wechseln Sie zur Hauptinstanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , und klicken Sie im Menü **Debuggen** auf **An den Prozess anhängen**. Wählen Sie den Prozess mit dem Namen **Graphcmd.exe**aus.  
   
@@ -220,7 +217,7 @@ In Visual Studio können Benutzer den Quellcode in einem Projekt anhand eines Eb
 ### <a name="deploying-a-validation-extension"></a>Bereitstellen einer Validierungserweiterung  
  Um die Validierungserweiterung auf einem Computer zu installieren, auf dem eine geeignete Version von Visual Studio installiert ist, öffnen Sie die VSIX-Datei auf dem Zielcomputer. Um die Installation auf einem Computer mit [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] auszuführen, müssen Sie den VSIX-Inhalt manuell in einen Ordner "Extensions" extrahieren. Weitere Informationen finden Sie unter [bereitstellen eine ebenenmodellerweiterung](../modeling/deploy-a-layer-model-extension.md).  
   
-##  <a name="example"></a> Example code  
+## <a name="example"></a> Example code  
   
 ```csharp  
 using System;  
@@ -283,6 +280,3 @@ namespace Validator3
   
 ## <a name="see-also"></a>Siehe auch  
  [Erweitern von Ebenendiagrammen](../modeling/extend-layer-diagrams.md)
-
-
-

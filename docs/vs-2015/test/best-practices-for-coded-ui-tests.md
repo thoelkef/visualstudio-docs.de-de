@@ -1,26 +1,21 @@
 ---
 title: Empfohlene Vorgehensweisen für Tests der programmierten UI | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, best practices
 ms.assetid: d5aef766-a24c-4f1f-ac9b-e5462b6627d4
 caps.latest.revision: 41
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 1a067751662895f99f4caf95d487dc8c8a4672f3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 37e0ae51589d85ac52ec962fb3cb193fc37a7ad4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903581"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081254"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Empfohlene Vorgehensweisen für Tests der programmierten UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +24,7 @@ In diesem Thema werden die besten Verfahren zur Entwicklung von Tests der progra
   
  **Anforderungen**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 ## <a name="best-practices"></a>Bewährte Methoden  
  Halten Sie sich an die folgenden Richtlinien, um einen flexiblen Test der programmierten UI zu erstellen.  
@@ -69,11 +64,11 @@ In diesem Thema werden die besten Verfahren zur Entwicklung von Tests der progra
   
 - Wenn ein Steuerelement über eine Assertion verfügt, die nicht mehr gültig ist:  
   
-  -   Löschen Sie die Methode, die die Assertion enthält.  
+  - Löschen Sie die Methode, die die Assertion enthält.  
   
-  -   Entfernen Sie den Aufruf dieser Methode aus der Testmethode.  
+  - Entfernen Sie den Aufruf dieser Methode aus der Testmethode.  
   
-  -   Fügen Sie eine neue Assertion hinzu, indem Sie die Fadenkreuz-Schaltfläche auf das UI-Steuerelement ziehen, die UI-Zuordnung öffnen und die neue Assertion hinzufügen.  
+  - Fügen Sie eine neue Assertion hinzu, indem Sie die Fadenkreuz-Schaltfläche auf das UI-Steuerelement ziehen, die UI-Zuordnung öffnen und die neue Assertion hinzufügen.  
   
   Weitere Informationen über das Aufzeichnen von Tests der programmierten UI finden Sie unter [Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes ](../test/use-ui-automation-to-test-your-code.md).  
   
@@ -98,6 +93,3 @@ Playback.PlaybackSettings.WaitForReadyLevel = WaitForReadyLevel.UIThreadOnly;
  [Erstellen von Tests der codierten UI](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [Testing a Large Application with Multiple UI Maps (Testen einer großen Anwendung mit mehreren UI-Zuordnungen)](../test/testing-a-large-application-with-multiple-ui-maps.md)   
  [Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktionsaufzeichnungen](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-
-
-

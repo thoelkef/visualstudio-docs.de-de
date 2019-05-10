@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: a9ac8a2c-9d99-4207-8ed4-e87f033f440d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 825bf6e16aa0420a24b80dbfaaeb869325b3e68b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 607247c6853c59036d1ab386f7371964265a32b8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877418"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62995341"
 ---
 # <a name="just-my-code-threads-view"></a>Nur mein Code (Threadansicht)
-Mit dieser Option filtern Sie die Aufrufliste nach Ihrem Code sowie der Ebene der aufgerufenen Funktionen.  
-  
- Durch Aktivieren dieser Option können Sie die Komplexität der Aufrufliste erheblich reduzieren, und es wird möglicherweise einfacher, ein bestimmtes Problem zu diagnostizieren.  
-  
- In einigen Fällen kann durch diese Option auch der blockierende Aufruf herausgefiltert werden. Wenn Sie für diese Entscheidung die vollständigen Details zur Aufrufliste benötigen, löschen Sie diese Option, um die vollständige Aufrufliste verfügbar zu machen.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Threadansicht](../profiling/threads-view-parallel-performance.md)   
- [Prozentsatz der Rauschunterdrückung](../profiling/noise-reduction-percentage.md)
+Mit dieser Option filtern Sie die Aufrufliste nach Ihrem Code sowie der Ebene der aufgerufenen Funktionen.
+
+ Durch Aktivieren dieser Option können Sie die Komplexität der Aufrufliste erheblich reduzieren, und es wird möglicherweise einfacher, ein bestimmtes Problem zu diagnostizieren.
+
+ In einigen Fällen kann durch diese Option auch der blockierende Aufruf herausgefiltert werden. Wenn Sie für diese Entscheidung die vollständigen Details zur Aufrufliste benötigen, löschen Sie diese Option, um die vollständige Aufrufliste verfügbar zu machen.
+
+## <a name="see-also"></a>Siehe auch
+- [Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)
+- [Prozentsatz der Rauschunterdrückung](../profiling/noise-reduction-percentage.md)

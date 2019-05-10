@@ -1,35 +1,30 @@
 ---
 title: Übersicht über das Eigenschaftenfenster | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window
 ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8b733a6845a61a71f15d8574666b345dedbf6f50
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e43893af3275258c49e3e23348afb106416636a6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752100"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113845"
 ---
 # <a name="properties-window-overview"></a>Übersicht über Eigenschaftenfenster
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Die **Eigenschaften** Fenster wird verwendet, um die Anzeigeeigenschaften für Objekte, die in der zwei Haupttypen von Windows verfügbar in ausgewählten der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrierte Entwicklungsumgebung (IDE). Diese beiden Arten von Windows sind:  
   
--   Toolfenster, z. B. den Projektmappen-Explorer, Klassenansicht und Objekt-browser  
+- Toolfenster, z. B. den Projektmappen-Explorer, Klassenansicht und Objekt-browser  
   
--   Dokumentfenster mit, wie Editoren und Designern die Forms-Designer-Editor für XML und HTML-editor  
+- Dokumentfenster mit, wie Editoren und Designern die Forms-Designer-Editor für XML und HTML-editor  
   
 ## <a name="using-the-properties-window"></a>Mithilfe des Eigenschaftenfensters  
  Die **Eigenschaften** Fenster zeigt die Eigenschaften der einzelnen oder mehrerer ausgewählter Elemente. Wenn mehrere Elemente ausgewählt sind, wird die Schnittmenge aller Eigenschaften für alle ausgewählten Objekte angezeigt.  
@@ -43,7 +38,7 @@ Die **Eigenschaften** Fenster wird verwendet, um die Anzeigeeigenschaften für O
 |Schnittstellenname|Beschreibung|  
 |--------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>|Enthält eine Liste der Kategorien für die **Eigenschaften** Fenster und ordnet jede Eigenschaft zu einer Kategorie.|  
-|[IDispatch-Schnittstelle](http://msdn.microsoft.com/en-us/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)|Macht Methoden und Eigenschaften für die Programmierung von Tools und andere Anwendungen, die Unterstützung der Automatisierung des Objekts.|  
+|[IDispatch-Schnittstelle](http://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)|Macht Methoden und Eigenschaften für die Programmierung von Tools und andere Anwendungen, die Unterstützung der Automatisierung des Objekts.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>|Stellt mit den Auslassungspunkten (...)-Schaltflächen namens *Generatoren* öffnen, die Sie modalen Dialogfeldern, die durch das Objekt selbst implementiert. Verwendet, wenn ein Wert vom Benutzer in einem Textfeld einfach nicht typisiert ist. Beispielsweise kann verwendet werden, um ein Farbwähler zu öffnen, der den RGB-Wert für Sie bestimmt.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|Bietet Zugriff auf Objekte, die zum Aktualisieren von Informationen in den **Eigenschaften** Fenster. <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> wird von VSPackages für jedes Fenster implementiert, auswählbaren Objekte mit verwandten Eigenschaften, die angezeigt werden enthält.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>|Enthält Informationen zu den Typ eines Objekts, z. B. Methoden einer Schnittstelle und Felder einer Struktur.|  
@@ -58,4 +53,3 @@ Die **Eigenschaften** Fenster wird verwendet, um die Anzeigeeigenschaften für O
 ## <a name="see-also"></a>Siehe auch  
  [Erweitern von Eigenschaften](../../extensibility/internals/extending-properties.md)   
  [Felder und Schnittstellen des Eigenschaftenfensters](../../extensibility/internals/properties-window-fields-and-interfaces.md)
-

@@ -1,20 +1,19 @@
 ---
 title: Optionsseite, Eigenschaften des Knotens 'Debuggen'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: 564cc8b2-0084-420e-b560-200cc5621a7e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56b08ddcb278bb2c5f9ea4c8a5de66a184fe9fac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0a41b9286ba35351a0dea91d87a4852319a94e93
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859827"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969279"
 ---
 # <a name="options-page-debugging-node-properties"></a>Optionsseite, Eigenschaften des Knotens 'Debuggen'
 In den folgenden Tabellen werden die Seiten (bzw. Eigenschaftenauflistungen) beschrieben, die der Kategorie **Debugging** `DTE.Properties("Debugging", <Property Page>)` im Dialogfeld **Optionen** zugeordnet sind.
@@ -85,5 +84,5 @@ In den folgenden Tabellen werden die Seiten (bzw. Eigenschaftenauflistungen) bes
 - [Optionsseite, Eigenschaften des Knotens „Schriftarten und Farben“](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
 - [Optionsseite, Eigenschaften des Knotens „Text-Editor“](../../ide/reference/options-page-text-editor-node-properties.md)
 - [Allgemein, Debuggen, Dialogfeld "Optionen"](../../debugger/general-debugging-options-dialog-box.md)
-- [Bearbeiten und Fortfahren, Debuggen, Dialogfeld „Optionen“](../../debugger/edit-and-continue.md?view=vs-2015)
+- [Bearbeiten und Fortsetzen des Debuggens](../../debugger/edit-and-continue.md)
 - [Just-In-Time, Debuggen, Dialogfeld "Optionen"](../../debugger/just-in-time-debugging-options-dialog-box.md)

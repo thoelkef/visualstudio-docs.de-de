@@ -9,16 +9,15 @@ helpviewer_keywords:
 ms.assetid: 821de34b-eaa9-40af-b9aa-b8305de16899
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 064e6042e734b5564c1f7270ef41a1747919b877
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 9115e675c43e04496712784371ac2301ef7c2f8a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880324"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62566689"
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>Kompatible Datenbanksysteme für Visual Studio
 

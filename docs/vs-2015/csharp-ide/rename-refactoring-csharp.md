@@ -1,14 +1,9 @@
 ---
 title: Refactoring mit Umbenennen (c#) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.csharp.refactoring.rename
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: 268942fc-b142-4dfa-8d90-bedd548c2e4f
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: d88cf6d88f23a3a079d5f9a556c316a204c9ef27
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 971ca4e94f28016335483a03f4b0121de587f00d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274962"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439959"
 ---
 # <a name="rename-refactoring-c"></a>Umgestaltung durch Umbenennen (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ ms.locfileid: "49274962"
 **Benennen Sie** ist ein refactoring Feature in der Visual Studio integrierte Entwicklungsumgebung (IDE), die eine einfache Möglichkeit zum Umbenennen der Bezeichner für Codesymbole wie Felder, lokale Variablen, Methoden, Namespaces, Eigenschaften und Typen bereitstellt. **Benennen Sie** kann verwendet werden, um die Namen in den Kommentaren und Zeichenfolgen zu ändern und so ändern Sie die Deklarationen und Aufrufe eines Bezeichners.  
   
 > [!NOTE]
->  Bei Verwendung der Quellcodeverwaltung für Visual Studio erhalten Sie die neueste Version von Quellen, bevor Sie versuchen, führen Sie die Umgestaltung mit Umbenennen.  
+> Bei Verwendung der Quellcodeverwaltung für Visual Studio erhalten Sie die neueste Version von Quellen, bevor Sie versuchen, führen Sie die Umgestaltung mit Umbenennen.  
   
  Refactoring mit Umbenennung ist über die folgenden Visual Studio-Funktionen verfügbar:  
   
@@ -44,7 +39,7 @@ ms.locfileid: "49274962"
 |Klassenansicht|Wenn Sie einen Bezeichner in der Klassenansicht auswählen, refactoring mit Umbenennung ist im Kontextmenü verfügbar und **Umgestalten** Menü.|  
 |Objektkatalog|Bei Auswahl ein Bezeichners im Objektkatalog refactoring mit Umbenennung ist nur verfügbar in der **Umgestalten** Menü.|  
 |Das Eigenschaftenraster des Windows Forms-Designers|In der **Eigenschaftenraster** von der Windows Forms-Designer, ändern den Namen eines Steuerelements initiiert ein Umbenennungsvorgang für dieses Steuerelement. Die **umbenennen** wird das Dialogfeld nicht angezeigt.|  
-|Projektmappen-Explorer|In **Projektmappen-Explorer**, **umbenennen** Befehl im Kontextmenü verfügbar ist. Wenn die ausgewählte Quelldatei eine Klasse enthält, deren Klassenname den Dateinamen entspricht, können Sie mit diesem Befehl gleichzeitig die Quelldatei umbenannt und Umgestaltung mit Umbenennen.<br /><br /> Z. B. Wenn Sie eine standardmäßige Windows-basierte Anwendung erstellen und benennen Sie um TestForm.cs "Form1.cs", der Name der Quelldatei "Form1.cs" ändert sich TestForm.cs und die Klasse Form1 und alle Verweise auf, dass die Klasse in TestForm umbenannt wird. **Hinweis:** der **Rückgängig** Befehl (STRG + Z) nur rückgängig machen, refactoring mit Umbenennung im Code und wird nicht geändert, die der Dateinamen an den ursprünglichen Namen. <br /><br /> Wenn die ausgewählte Quelldatei eine Klasse keinen enthält, deren Name dem Dateinamen entspricht, der **umbenennen** Befehl **Projektmappen-Explorer** nur die Quelldatei umbenannt und Umbenennen wird nicht ausgeführt Refactoring.|  
+|Projektmappen-Explorer|In **Projektmappen-Explorer**, **umbenennen** Befehl im Kontextmenü verfügbar ist. Wenn die ausgewählte Quelldatei eine Klasse enthält, deren Klassenname den Dateinamen entspricht, können Sie mit diesem Befehl gleichzeitig die Quelldatei umbenannt und Umgestaltung mit Umbenennen.<br /><br /> Z. B. Wenn Sie eine standardmäßige Windows-basierte Anwendung erstellen und benennen Sie um TestForm.cs "Form1.cs", der Name der Quelldatei "Form1.cs" ändert sich TestForm.cs und die Klasse Form1 und alle Verweise auf, dass die Klasse in TestForm umbenannt wird. **Hinweis**:  Die **Rückgängig** Befehl (STRG + Z) nur rückgängig machen, refactoring mit Umbenennung im Code und wird nicht geändert, die der Dateinamen an den ursprünglichen Namen. <br /><br /> Wenn die ausgewählte Quelldatei eine Klasse keinen enthält, deren Name dem Dateinamen entspricht, der **umbenennen** Befehl **Projektmappen-Explorer** nur die Quelldatei umbenannt und Umbenennen wird nicht ausgeführt Refactoring.|  
   
 ## <a name="rename-operations"></a>Umbenennen von Vorgängen  
  Beim Ausführen **umbenennen**, die umgestaltungs-Engine führt eine spezifische Umbenennungsvorgänge für jedes Symbol Code aus, wie in der folgenden Tabelle beschrieben.  
@@ -53,14 +48,14 @@ ms.locfileid: "49274962"
 |-----------------|----------------------|  
 |Feld|Ändert sich die Deklaration und Verwendungen des Felds in den neuen Namen ein.|  
 |lokale variable|Ändert sich die Deklaration und Verwendung von Variablen in den neuen Namen ein.|  
-|Methode|Ändert den Namen der Methode "und" alle Verweise auf diese Methode in den neuen Namen an. **Hinweis:** beim Umbenennen einer Erweiterungsmethode gibt der Umbenennungsvorgang für alle Instanzen der Methode, die im Bereich, unabhängig davon, ob die Erweiterungsmethode als statische Methode oder Instanzmethode verwendet wird. Weitere Informationen finden Sie unter [Erweiterungsmethoden](http://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51).|  
-|Namespace|Ändert den Namen des Namespace in den neuen Namen in der Deklaration alle `using` Anweisungen und den vollqualifizierten Namen. **Hinweis:** beim Umbenennen eines Namespaces, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aktualisiert auch die **Standard-Namespace** Eigenschaft für die **Anwendung** auf der Seite die **Projekt-Designer**. Diese Eigenschaft kann nicht zurückgesetzt werden, dazu **rückgängig machen** aus der **bearbeiten** Menü. Zurücksetzen der **Default Namespace** Eigenschaftswert, müssen Sie die Eigenschaft im Ändern der **Projekt-Designer**. Weitere Informationen finden Sie unter [Anwendungsseite](../ide/reference/application-page-project-designer-csharp.md).|  
+|Methode|Ändert den Namen der Methode "und" alle Verweise auf diese Methode in den neuen Namen an. **Hinweis**:  Wenn Sie eine Erweiterungsmethode umbenennen, wird der Umbenennungsvorgang für alle Instanzen der Methode, die im Bereich, unabhängig davon, ob die Erweiterungsmethode als statische Methode oder Instanzmethode verwendet wird. Weitere Informationen finden Sie unter [Erweiterungsmethoden](http://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51).|  
+|Namespace|Ändert den Namen des Namespace in den neuen Namen in der Deklaration alle `using` Anweisungen und den vollqualifizierten Namen. **Hinweis**:  Beim Umbenennen eines Namespaces, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aktualisiert auch die **Default Namespace** Eigenschaft für die **Anwendung** auf der Seite die **Projekt-Designer**. Diese Eigenschaft kann nicht zurückgesetzt werden, dazu **rückgängig machen** aus der **bearbeiten** Menü. Zurücksetzen der **Default Namespace** Eigenschaftswert, müssen Sie die Eigenschaft im Ändern der **Projekt-Designer**. Weitere Informationen finden Sie unter [Anwendungsseite](../ide/reference/application-page-project-designer-csharp.md).|  
 |Eigenschaft|Ändert sich die Deklaration und Verwendung der Eigenschaft in den neuen Namen ein.|  
 |Typ|Ändert sich alle Deklarationen und alle Verwendungen des Typs in den neuen Namen ein, z. B. Konstruktoren und Destruktoren. Für partielle Typen wird der Umbenennungsvorgang für alle Komponenten.|  
   
 #### <a name="to-rename-an-identifier"></a>Um einen Bezeichner umbenennen  
   
-1.  Erstellen Sie eine Konsolenanwendung mit dem Namen `RenameIdentifier`, und ersetzen Sie `Program` durch den folgenden Beispielcode.  
+1. Erstellen Sie eine Konsolenanwendung mit dem Namen `RenameIdentifier`, und ersetzen Sie `Program` durch den folgenden Beispielcode.  
   
     ```csharp  
     class ProtoClassA  
@@ -81,23 +76,23 @@ ms.locfileid: "49274962"
     }  
     ```  
   
-2.  Platzieren Sie den Cursor auf `MethodB`, entweder in der Deklaration der Methode oder der Aufruf der Methode.  
+2. Platzieren Sie den Cursor auf `MethodB`, entweder in der Deklaration der Methode oder der Aufruf der Methode.  
   
-3.  Von der **Umgestalten** , wählen Sie im Menü **umbenennen**. Die **umbenennen** Dialogfeld wird angezeigt.  
+3. Von der **Umgestalten** , wählen Sie im Menü **umbenennen**. Die **umbenennen** Dialogfeld wird angezeigt.  
   
      Sie können auch mit der rechten Maustaste des Cursors, zeigen Sie auf **Umgestalten** auf das Kontextmenü, und klicken Sie dann auf **umbenennen** zum Anzeigen der **umbenennen** Dialogfeld.  
   
-4.  In der **neuen Namen** Feld `MethodC`.  
+4. In der **neuen Namen** Feld `MethodC`.  
   
-5.  Wählen Sie die **in Kommentaren suchen** Kontrollkästchen.  
+5. Wählen Sie die **in Kommentaren suchen** Kontrollkästchen.  
   
-6.  Klicken Sie auf **OK**.  
+6. Klicken Sie auf **OK**.  
   
-7.  In der **Vorschau der Änderungen** Dialogfeld klicken Sie auf **übernehmen**.  
+7. In der **Vorschau der Änderungen** Dialogfeld klicken Sie auf **übernehmen**.  
   
 #### <a name="to-rename-an-identifier-using-smart-tags"></a>Um einen Bezeichner mit Smarttags umbenennen  
   
-1.  Erstellen Sie eine Konsolenanwendung mit dem Namen `RenameIdentifier`, und ersetzen Sie `Program` durch den folgenden Beispielcode.  
+1. Erstellen Sie eine Konsolenanwendung mit dem Namen `RenameIdentifier`, und ersetzen Sie `Program` durch den folgenden Beispielcode.  
   
     ```csharp  
     class ProtoClassA  
@@ -118,18 +113,18 @@ ms.locfileid: "49274962"
     }  
     ```  
   
-2.  In der Deklaration für `MethodB`, oder geben Sie den Methodenbezeichner RÜCKTASTE. Unterhalb dieser Bezeichner ist eine Smarttag-Aufforderung erscheint.  
+2. In der Deklaration für `MethodB`, oder geben Sie den Methodenbezeichner RÜCKTASTE. Unterhalb dieser Bezeichner ist eine Smarttag-Aufforderung erscheint.  
   
     > [!NOTE]
-    >  Refactoring mit Umbenennung mit Smarttags bei der Deklaration eines Bezeichners kann nur aufgerufen werden.  
+    > Refactoring mit Umbenennung mit Smarttags bei der Deklaration eines Bezeichners kann nur aufgerufen werden.  
   
-3.  Geben Sie die Tastenkombination UMSCHALT + ALT + F10, und drücken Sie dann auf den Pfeil nach unten der Smarttag-Menü angezeigt werden soll.  
+3. Geben Sie die Tastenkombination UMSCHALT + ALT + F10, und drücken Sie dann auf den Pfeil nach unten der Smarttag-Menü angezeigt werden soll.  
   
      - oder -   
   
      Zeigen Sie den Mauszeiger auf die Smarttag-Eingabeaufforderung auf das Smarttag angezeigt werden soll. Klicken Sie dann den Mauszeiger auf das Smarttag, und klicken Sie auf den Pfeil nach unten, um die Smarttag-Menü angezeigt werden soll.  
   
-4.  Wählen Sie die **umbenennen "\<identifer1 >', '\<Bezeichner2 >"** Menüelement zum Aufrufen der Umgestaltung mit Umbenennen ohne eine Vorschau der Änderungen an Ihrem Code. Alle Verweise auf  **\<identifer1 >** werden automatisch aktualisiert werden, um  **\<Bezeichner2 >**.  
+4. Wählen Sie die **umbenennen "\<identifer1 >', '\<Bezeichner2 >"** Menüelement zum Aufrufen der Umgestaltung mit Umbenennen ohne eine Vorschau der Änderungen an Ihrem Code. Alle Verweise auf  **\<identifer1 >** werden automatisch aktualisiert werden, um  **\<Bezeichner2 >**.  
   
      - oder -   
   
@@ -149,7 +144,7 @@ ms.locfileid: "49274962"
  Wenn **Überladungen umbenennen** aktiviert ist, benennt die Refactor-Engine `Derived.Method(int i)` überlädt `Derived.Method()`, `Base.Method(int i)` , da sie von außer Kraft gesetzt wird `Derived.Method(int i)`, und `Base.Method()` da es sich um eine Überladung der handelt. `Base.Method(int i)`.  
   
 > [!NOTE]
->  Wenn Sie ein Element, die in einer referenzierten Assembly definiert wurde umbenennen, erklärt ein Dialogfeld an, dass es sich bei Umbenennung Erstellungsfehlern führen.  
+> Wenn Sie ein Element, die in einer referenzierten Assembly definiert wurde umbenennen, erklärt ein Dialogfeld an, dass es sich bei Umbenennung Erstellungsfehlern führen.  
   
 ## <a name="renaming-properties-of-anonymous-types"></a>Durch Umbenennen der Eigenschaften von anonymen Typen  
  Wenn Sie eine Eigenschaft in anonymen Typen umbenennen, werden die Eigenschaften in anderen anonymen Typen Umbenennungsvorgang, die die gleichen Eigenschaften verfügen. Die folgenden Beispiele veranschaulichen dieses Verhalten.  

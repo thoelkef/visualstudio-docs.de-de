@@ -1,14 +1,9 @@
 ---
 title: Exec-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Exec
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: c9b7525a-b1c9-40fc-8bce-77a5b8f960d8
 caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f3d092a6d69f668ef48ca2f586494f848795c178
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2a69fc64c3371a2970c03ec0129d4c733f5ae9cd
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300533"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660511"
 ---
 # <a name="exec-task"></a>Exec-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Führt das angegebene Programm oder den Befehl mit den angegebenen Argumenten aus.  
   
 ## <a name="parameters"></a>Parameter  
@@ -53,7 +47,7 @@ Führt das angegebene Programm oder den Befehl mit den angegebenen Argumenten au
 |`StdOutEncoding`|Optionaler `String`-Ausgabeparameter.<br /><br /> Gibt die Codierung des standardmäßigen Ausgabedatenstroms der erfassten Aufgabe an. Der Standardwert ist die aktuelle Konsolenausgabencodierung.|  
 |`WorkingDirectory`|Optionaler `String` -Parameter.<br /><br /> Gibt das Verzeichnis an, in dem der Befehl ausgeführt wird.|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Diese Aufgabe ist nützlich, wenn eine bestimmte [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Aufgabe für den Auftrag, den Sie ausführen möchten, nicht verfügbar ist. Allerdings kann die `Exec`-Aufgabe im Gegensatz zu einer spezifischeren Aufgabe weder Ausgaben des Tools erfassen noch Befehle, die es ausführt.  
   
  Die `Exec`-Aufgabe ruft „cmd.exe“ auf, anstatt direkt einen Prozess aufzurufen.  
@@ -80,6 +74,3 @@ Führt das angegebene Programm oder den Befehl mit den angegebenen Argumenten au
 ## <a name="see-also"></a>Siehe auch  
  [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
  [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)
-
-
-

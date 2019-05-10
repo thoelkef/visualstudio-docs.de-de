@@ -1,7 +1,6 @@
 ---
-title: 'CA2242: Ordnungsgemäß auf NaN testen'
+title: 'CA2242: Ordnungsgemäß auf NaN testen.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - TestForNaNCorrectly
@@ -11,20 +10,20 @@ helpviewer_keywords:
 ms.assetid: e12dcffc-e255-4e1e-8fdf-3c6054d44abe
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c809e6fe21bae15fed8c79c03a9210d518c157a3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 43c2dd1f6a23c3df4d77207efb49531b97b3b381
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838635"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62541401"
 ---
-# <a name="ca2242-test-for-nan-correctly"></a>CA2242: Ordnungsgemäß auf NaN testen
+# <a name="ca2242-test-for-nan-correctly"></a>CA2242: Ordnungsgemäß auf NaN testen.
 
 |||
 |-|-|

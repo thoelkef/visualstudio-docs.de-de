@@ -1,14 +1,9 @@
 ---
 title: Bedingte Konstrukte in MSBuild | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -27,18 +22,17 @@ ms.assetid: dd54258e-f4fb-448f-9da4-d1817e0cbaf2
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dc84f8ec612ff602a615f27489bce617b5b7009a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b7b22f63d5d3d6e0b1f7789561029bbfbfb4cdf4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264146"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667507"
 ---
 # <a name="msbuild-conditional-constructs"></a>MSBuild Conditional Constructs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] stellt einen Mechanismus für Entweder/Oder-Verarbeitung mit den Elementen [Choose](../msbuild/choose-element-msbuild.md), [When](../msbuild/when-element-msbuild.md) und [Otherwise](../msbuild/otherwise-element-msbuild.md) bereit.  
   
 ## <a name="using-the-choose-element"></a>Verwenden des Elements „Choose“  
@@ -90,6 +84,3 @@ ms.locfileid: "49264146"
  [When-Element (MSBuild)](../msbuild/when-element-msbuild.md)   
  [Otherwise-Element (MSBuild)](../msbuild/otherwise-element-msbuild.md)   
  [MSBuild-Referenz](../msbuild/msbuild-reference.md)
-
-
-

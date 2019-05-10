@@ -1,14 +1,9 @@
 ---
 title: In Visual Studio SDK | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - roadmap, Visual Studio integration SDK
 - Visual Studio integration SDK roadmap
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 caps.latest.revision: 31
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b7a7642d8cd33d53bb7d6d2a472a0690713e25d3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3c6c7bb6d149281048d281cb7af13fe51d75ffd5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795829"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443895"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Im Visual Studio SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ Generalisierte Überblick über die Architektur der Visual Studio
  Die Visual Studio-Shell stellt grundlegende Funktionalität bereit und unterstützt als auch die Kommunikation zwischen der Erweiterungen der VSPackages und MEF-Komponente. Weitere Informationen finden Sie unter [Visual Studio Shell](../../extensibility/internals/visual-studio-shell.md).  
   
 ## <a name="user-experience-guidelines"></a>Richtlinien zur Benutzerfreundlichkeit  
- Wenn Sie beabsichtigen, neuen Features für Visual Studio entwickeln, Sie sollten sehen Sie sich diese Richtlinien für Design und benutzerfreundlichkeit Tipps: [Visual Studio User Experience Guidelines](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).  
+ Wenn Sie beabsichtigen, neuen Features für Visual Studio entwickeln, sollten Sie diese Richtlinien für Design und benutzerfreundlichkeit Tipps ansehen: [Visual Studio User Experience Guidelines](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).  
   
 ## <a name="commands"></a>Befehle  
  Befehle sind Funktionen, mit denen Aufgaben wie das Drucken eines Dokuments, das Aktualisieren einer Ansicht oder das Erstellen einer neuen Datei ausgeführt werden können.  
@@ -95,20 +90,20 @@ Generalisierte Überblick über die Architektur der Visual Studio
   
  Projekte können auch in einer Lösung erfasst werden, eine Gruppierung von ein oder mehrere Projekte, die zusammenarbeiten, um eine Anwendung zu erstellen. Informationen zum Projekt und zum Status, die der Projektmappe gehört wird in zwei Projektmappendateien, die textbasierte Projektmappendatei (.sln) und die binären Lösung Benutzeroptionsdatei (SUO) gespeichert. Diese Dateien sind ähnlich wie die (vbg)-Gruppendateien, die in früheren Versionen von verwendeten [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)], und der Arbeitsbereich (.dsw) und der Benutzer "Optionen" (.opt)-Dateien, die in früheren Versionen von verwendeten [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)].  
   
- Weitere Informationen finden Sie unter [Projekte](../../extensibility/internals/projects.md) und [Lösungen](../../extensibility/internals/solutions.md).  
+ Weitere Informationen finden Sie unter [Projekte](../../extensibility/internals/projects.md) und [Lösungen](../../extensibility/internals/solutions-overview.md).  
   
 ## <a name="project-and-item-templates"></a>Projekt- und Elementvorlagen  
- Visual Studio enthält die vordefinierten Projektvorlagen und Projektelementvorlagen. Sie können stellen Sie außerdem Ihre eigenen Vorlagen oder Vorlagen aus der Community erhalten und diese dann in Visual Studio integrieren. Die [MSDN Code Gallery](http://code.msdn.microsoft.com/Project/ProjectDirectory.aspx?ProjectSearchText=visual%20studio) ist die Anlaufstelle für Vorlagen und Erweiterungen.  
+ Visual Studio enthält die vordefinierten Projektvorlagen und Projektelementvorlagen. Sie können stellen Sie außerdem Ihre eigenen Vorlagen oder Vorlagen aus der Community erhalten und diese dann in Visual Studio integrieren. Die [MSDN Code Gallery](https://code.msdn.microsoft.com/site/search?query=visual%20studio) ist die Anlaufstelle für Vorlagen und Erweiterungen.  
   
  Vorlagen enthalten die Projektstruktur und den grundlegenden Dateien, die erforderlich sind, um eine bestimmte Art von Anwendung "," Steuerelement ","-Bibliothek "oder"-Klasse zu erstellen. Wenn Sie Software entwickeln, die eine der Vorlagen gleicht möchten, erstellen Sie ein Projekt, das in der Vorlage basiert, und ändern Sie dann die Dateien in diesem Projekt.  
   
 > [!NOTE]
->  Diese Architektur wird nicht unterstützt, für die [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] Projekte. Informationen über das Erstellen [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] -Projektvorlagen, finden Sie unter [Entwerfen eines Assistenten](http://msdn.microsoft.com/library/a7c0be7e-9297-4fed-83e3-5645c896d56b).  
+> Diese Architektur wird nicht unterstützt, für die [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] Projekte. Informationen über das Erstellen [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] -Projektvorlagen, finden Sie unter [Entwerfen eines Assistenten](http://msdn.microsoft.com/library/a7c0be7e-9297-4fed-83e3-5645c896d56b).  
   
  Weitere Informationen finden Sie unter [Hinzufügen von Projekt- und Projektelementvorlagen](../../extensibility/internals/adding-project-and-project-item-templates.md).  
   
 ## <a name="properties-and-options"></a>Eigenschaften und Optionen  
- Die **Eigenschaften** Fenster zeigt die Eigenschaften der einzelnen oder mehreren gewählten Elementen: [Erweitern von Eigenschaften](../../extensibility/internals/extending-properties.md) Optionsseiten enthalten Gruppen von Optionen, die einer bestimmten Komponente, z. B. betreffen eine Programmieren von Sprache oder ein VSPackage: [Optionen und Optionsseiten](../../extensibility/internals/options-and-options-pages.md). Einstellungen sind im allgemeinen UI-bezogene Features, die nicht importiert und exportiert werden können: [Unterstützung für Benutzereinstellungen](../../extensibility/internals/support-for-user-settings.md).  
+ Die **Eigenschaften** Fenster zeigt die Eigenschaften der einzelnen oder mehrere ausgewählte Elemente: [Erweitern von Eigenschaften](../../extensibility/internals/extending-properties.md) Optionsseiten enthalten Gruppen von Optionen, die eine bestimmte Komponente, z. B. einer Programmiersprache oder ein VSPackage betreffen: [Optionen und Optionsseiten](../../extensibility/internals/options-and-options-pages.md). Einstellungen sind im allgemeinen UI-bezogene Features, die nicht importiert und exportiert werden können: [Unterstützung für Benutzereinstellungen](../../extensibility/internals/support-for-user-settings.md).  
   
 ## <a name="visual-studio-services"></a>Visual Studio-Diensten  
  Ein Dienst stellt einen bestimmten Satz von Schnittstellen für die Komponenten nutzen. Visual Studio bietet eine Reihe von Diensten, die von der alle Komponenten, einschließlich der Erweiterungen verwendet werden kann. Visual Studio-Diensten ermöglichen z. B. Toolfenster angezeigt oder ausgeblendet dynamisch Aktivieren des Zugriffs auf Hilfe, Statusleiste oder UI-Ereignisse. Visual Studio-Editor bietet auch Dienste, die durch Erweiterungen des Editors importiert werden können. Weitere Informationen finden Sie unter [verwenden und Bereitstellen von Diensten](../../extensibility/using-and-providing-services.md).  
@@ -133,4 +128,3 @@ Generalisierte Überblick über die Architektur der Visual Studio
   
 ## <a name="help-viewer"></a>Help Viewer  
  Sie können Ihre eigenen Hilfe und die F1-Seiten in Help Viewer integrieren. Weitere Informationen finden Sie unter [Microsoft Help Viewer SDK](../../extensibility/internals/microsoft-help-viewer-sdk.md).
-

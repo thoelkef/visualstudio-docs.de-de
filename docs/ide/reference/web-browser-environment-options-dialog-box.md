@@ -1,8 +1,6 @@
 ---
 title: Webbrowser, Umgebung, Dialogfeld "Optionen"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.Environment.Web Browser
@@ -11,7 +9,6 @@ f1_keywords:
 helpviewer_keywords:
 - browsers, customizing
 - searching, search page for Web browser
-- Visual Studio Start page, default URL
 - Web browsers, customizing
 - searches, default Web browser search page
 - URLs, specifying VS home page
@@ -21,22 +18,22 @@ helpviewer_keywords:
 ms.assetid: 586db4eb-032d-4cb5-93a6-a7c14de1ae49
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56bd77bb833e0fcc7e4e6e35304387d23b7c3f52
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: c40f2ba0f9d8c5f629f37a9e40a94d38273edfd9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389444"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788953"
 ---
-# <a name="web-browser-environment-options-dialog-box"></a>Webbrowser, Umgebung, Dialogfeld "Optionen"
+# <a name="options-dialog-box-environment--web-browser"></a>Dialogfeld „Optionen“: Umgebung \> Webbrowser
 
 Legt Optionen sowohl für den internen Webbrowser als auch für Internet Explorer fest. Klicken Sie zum Öffnen dieses Dialogfelds im Menü **Extras** auf **Optionen**, erweitern Sie den Ordner **Umgebung**, und klicken Sie dann auf **Webbrowser**.
 
 > [!NOTE]
-> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Einstellungen zurücksetzen](../environment-settings.md#reset-settings).
+> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Reset settings (Zurücksetzen der Einstellungen)](../environment-settings.md#reset-settings).
 
 > [!IMPORTANT]
 > Durch Öffnen bestimmter Webdateien oder -komponenten kann auf Ihrem Computer Code ausgeführt werden.
@@ -53,11 +50,11 @@ Hier können Sie eine Suchseite für den internen Webbrowser festlegen. Diese Ad
 
 Legt den Editor fest, der zum Öffnen einer Website verwendet wird, wenn Sie den Befehl **Quelltext anzeigen** auf der im internen Webbrowser angezeigten Seite wählen.
 
--   **Quellcode-Editor** Wählen Sie diese Option zum Anzeigen von Quellcode im [Editor](../../ide/writing-code-in-the-code-and-text-editor.md) aus.
+- **Quellcode-Editor** Wählen Sie diese Option zum Anzeigen von Quellcode im [Editor](../../ide/writing-code-in-the-code-and-text-editor.md) aus.
 
--   **HTML-Editor** Wählen Sie diese Option zum Anzeigen von Quellcode im [HTML-Designer](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477) aus. Verwenden Sie diese Option, wenn Sie die Website in einer von zwei Ansichten bearbeiten möchten: In der Entwurfsansicht oder in der Standardtext-Quellansicht.
+- **HTML-Editor** Wählen Sie diese Option zum Anzeigen von Quellcode im [HTML-Designer](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477) aus. Verwenden Sie diese Option, wenn Sie die Website in einer von zwei Ansichten bearbeiten möchten: in der Entwurfsansicht oder in der Standardtext-Quellansicht.
 
--   **Externer Editor** Wählen Sie diese Option zum Anzeigen von Quellcode in einem anderen Editor aus. Geben Sie den Pfad eines beliebigen Editors an, z.B. Notepad.exe.
+- **Externer Editor** Wählen Sie diese Option zum Anzeigen von Quellcode in einem anderen Editor aus. Geben Sie den Pfad eines beliebigen Editors an, z.B. Notepad.exe.
 
 ## <a name="internet-explorer-options"></a>Internet Explorer-Optionen
 

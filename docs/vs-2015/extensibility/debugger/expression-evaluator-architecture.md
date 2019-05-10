@@ -1,14 +1,9 @@
 ---
 title: Architektur der Ausdrucksauswertung | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - architecture, expression evaluators
 - expression evaluators, architecture
@@ -16,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: aad7c4c6-1dc1-4d32-b975-f1fdf76bdeda
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5ca1c7af9ee8a8a779cf238816125c0bc20199ca
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e8e0aa8f5cc45e0f6e012ecb3f0a27a22725a259
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772702"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421228"
 ---
 # <a name="expression-evaluator-architecture"></a>Architektur der Ausdrucksauswertung
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zu CLR-ausdrucksauswertungen implementieren, finden Sie unter [CLR Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zu CLR-ausdrucksauswertungen implementieren, finden Sie unter [CLR Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Integrieren von eine proprietäre Sprache in der Visual Studio-Paket Debuggen bedeutet, dass die erforderlichen Expression Evaluator (EE)-Schnittstellen implementieren und aufrufen, die common Language Run-Time-Symbol-Dienstanbieter (SP) und den Binder-Schnittstellen. Die SP und Binder-Objekte zusammen mit der aktuellen Adresse für die Ausführung stehen für Kontext in dem Ausdrücke ausgewertet werden. Die Informationen, die diese Schnittstellen zu erzeugen und nutzen, stellt die wichtigsten Konzepte in der Architektur eine EE dar.  
   
@@ -64,4 +59,3 @@ ms.locfileid: "51772702"
  [Schreiben Sie eine CLR-Ausdrucksauswertung](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
  [Anzeigen von lokalen Variablen](../../extensibility/debugger/displaying-locals.md)   
  [Ändern des Werts eines lokalen Elements](../../extensibility/debugger/changing-the-value-of-a-local.md)
-

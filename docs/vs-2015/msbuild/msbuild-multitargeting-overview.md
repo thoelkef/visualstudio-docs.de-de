@@ -1,46 +1,40 @@
 ---
 title: Übersicht über die Festlegung von Zielversionen mit MSBuild | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 ms.assetid: eecbcd65-9fbc-4307-a321-46d3c3b79b12
 caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: da5d8d5aae19bee458a6d0750cb0d8cd4efa8c4d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f5b60f44dd1d32a9d19814b4d2194e7586d86865
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426848"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Übersicht über die Festlegung von Zielversionen mit MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Mit MSBuild können Sie eine Anwendung kompilieren, die auf verschiedenen Versionen von .NET Framework und auf verschiedenen Systemplattformen ausgeführt werden kann. Beispielsweise können Sie die gleiche Anwendung für die Ausführung in .NET Framework 2.0 auf einer 32-Bit-Plattform und für die Ausführung in .NET Framework 4.5 auf einer 64-Bit-Plattform kompilieren.  
   
 > [!IMPORTANT]
->  Trotz des Namens "Festlegung von Zielversionen" hat ein Projekt immer nur jeweils ein Framework und eine Plattform als Ziel.  
+> Trotz des Namens "Festlegung von Zielversionen" hat ein Projekt immer nur jeweils ein Framework und eine Plattform als Ziel.  
   
  Dies sind einige Funktionen von MSBuild für die Festlegung von Zielversionen:  
   
--   Sie können Anwendungen entwickeln, die auf frühere Versionen von .NET Framework abzielen, z. B. Version 2.0, 3.5 oder 4.  
+- Sie können Anwendungen entwickeln, die auf frühere Versionen von .NET Framework abzielen, z. B. Version 2.0, 3.5 oder 4.  
   
--   Sie können neben .NET Framework auch auf andere Frameworks abzielen, z. B. auf das Silverlight-Framework.  
+- Sie können neben .NET Framework auch auf andere Frameworks abzielen, z. B. auf das Silverlight-Framework.  
   
--   Sie können auf ein *Frameworkprofil* abzielen, das einer vordefinierten Teilmenge eines Zielframeworks entspricht.  
+- Sie können auf ein *Frameworkprofil* abzielen, das einer vordefinierten Teilmenge eines Zielframeworks entspricht.  
   
--   Sie können ebenfalls auf neu veröffentlichte Service Packs für die aktuelle .NET Framework-Version abzielen.  
+- Sie können ebenfalls auf neu veröffentlichte Service Packs für die aktuelle .NET Framework-Version abzielen.  
   
--   Durch die Festlegung von Zielversionen mit MSBuild wird garantiert, dass von einer Anwendung nur die im Zielframework und die auf der Zielplattform verfügbaren Funktionen verwendet werden.  
+- Durch die Festlegung von Zielversionen mit MSBuild wird garantiert, dass von einer Anwendung nur die im Zielframework und die auf der Zielplattform verfügbaren Funktionen verwendet werden.  
   
 ## <a name="target-framework-and-platform"></a>Zielframework und -plattform  
  Ein *Zielframework* ist die Version von .NET Framework, in der ein erstelltes Projekt ausgeführt werden soll, und eine *Zielplattform* ist die Systemplattform, auf der das erstellte Projekt ausgeführt werden soll.  Beispielsweise können Sie eine Anwendung für die Ausführung in .NET Framework 2.0 auf einer 32-Bit-Plattform entwickeln, die mit der 802x86-Prozessorfamilie kompatibel ist (x86). Die Kombination von Zielframework und Zielplattform wird als *Zielkontext* bezeichnet. Weitere Informationen finden Sie unter [MSBuild-Zielframework und -Zielplattform](../msbuild/msbuild-target-framework-and-target-platform.md).  
@@ -56,6 +50,3 @@ Mit MSBuild können Sie eine Anwendung kompilieren, die auf verschiedenen Versio
   
 ## <a name="troubleshooting"></a>Problembehandlung  
  Es können Fehler angezeigt werden, wenn Sie versuchen, auf eine Assembly zu verweisen, die nicht Teil des Zielkontexts ist. Weitere Informationen zu diesen Fehlern und wie Sie diese beheben können, finden Sie unter [Problembehandlung bei .NET Framework-Zielversionsfehlern](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md).
-
-
-

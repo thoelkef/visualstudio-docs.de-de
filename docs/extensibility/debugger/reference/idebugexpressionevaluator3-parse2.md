@@ -1,28 +1,30 @@
 ---
 title: IDebugExpressionEvaluator3::Parse2 | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator3::Parse2
 ms.assetid: 78099628-d600-4f76-b7c8-ee07c864af1e
-author: gregvanl
+caps.latest.revision: 12
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 2236276e5d97b8c0d3d38921206ffd7d9506e243
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 626911d4eb9f23655ad2808e1e79ec6635cb8b00
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53901700"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62873906"
 ---
 # <a name="idebugexpressionevaluator3parse2"></a>IDebugExpressionEvaluator3::Parse2
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Konvertiert eine Ausdruckszeichenfolge in einen analysierten Ausdruck erhält der symbolanbieter und die Adresse des Frames, ausgewertet.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT Parse2 (  
    LPCOLESTR                upstrExpression,  
    PARSEFLAGS               dwFlags,  
@@ -82,7 +84,7 @@ HRESULT Parse2 (
 ## <a name="example"></a>Beispiel  
  Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CEE** -Objekt, das macht die [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md) Schnittstelle.  
   
-```cpp  
+```cpp#  
 HRESULT CEE::Parse2 ( LPCOLESTR in_szExprText,  
   PARSEFLAGS in_FLAGS,  
   UINT in_RADIX,  

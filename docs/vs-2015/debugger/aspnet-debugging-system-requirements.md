@@ -1,14 +1,9 @@
 ---
-title: 'ASP.NET-Debuggen: Systemanforderungen | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'ASP.NET-Debugging: Systemanforderungen für | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,44 +16,41 @@ ms.assetid: 7810b9b2-debf-4271-8fc7-1df031123255
 caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 16fcebe8ecb5fff974d5df6e2405acca546ea007
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7cf00897e68fc4b6858e747bd9b3a7f159bf73c1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439934"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>ASP.NET-Debugging: Systemanforderungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In diesem Thema werden die Software- und Sicherheitsanforderungen für die folgenden [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Debugszenarios beschrieben:  
   
--   Lokales Debuggen, bei dem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] und die Webanwendung auf demselben Computer ausgeführt werden. Es gibt zwei Versionen dieses Szenarios:  
+- Lokales Debuggen, bei dem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] und die Webanwendung auf demselben Computer ausgeführt werden. Es gibt zwei Versionen dieses Szenarios:  
   
-    -   Der [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Code befindet sich im Dateisystem.  
+    - Der [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Code befindet sich im Dateisystem.  
   
-    -   Der [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Code befindet sich in einer IIS-Website.  
+    - Der [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Code befindet sich in einer IIS-Website.  
   
--   Remotedebuggen: [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird auf einem Clientcomputer und die debuggte Webanwendung auf einem Remoteservercomputer ausgeführt.  
+- Remotedebuggen: [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird auf einem Clientcomputer und die debuggte Webanwendung auf einem Remoteservercomputer ausgeführt.  
   
 ## <a name="security-requirements"></a>Sicherheitsanforderungen  
  Lokale Computer und Remotecomputer müssen sich beim Remotedebuggen in einer Domänen- oder Arbeitsgruppenkonfiguration befinden.  
   
  Zum Debuggen des [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Arbeitsprozesses müssen Sie hierfür über eine Berechtigung verfügen. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Anwendungen werden standardmäßig als **ASPNET** -Benutzer ausgeführt. Wenn der Arbeitsprozess als **ASPNET**oder als **NETZWERKDIENST**ausgeführt wird, benötigen Sie zum Debuggen Administratorrechte.  
   
- Der Name des [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Arbeitsprozesses ist je nach Debugszenario und IIS-Version unterschiedlich. Weitere Informationen finden Sie unter [How to: Find the Name of the ASP.NET Process](../debugger/how-to-find-the-name-of-the-aspnet-process.md).  
+ Der Name des [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Arbeitsprozesses ist je nach Debugszenario und IIS-Version unterschiedlich. Weitere Informationen finden Sie unter [Vorgehensweise: Herausfinden des ASP.NET-Prozessnamens](../debugger/how-to-find-the-name-of-the-aspnet-process.md).  
   
- Sie können das Benutzerkonto, unter dem der [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Arbeitsprozess ausgeführt wird, ändern, indem Sie die Datei „machine.config“ auf dem Server ändern, auf dem IIS ausgeführt wird. Dazu verwenden Sie am besten den **Internet Information Services (IIS) Manager**. Weitere Informationen finden Sie unter [wie: Ausführen der Worker-Prozess unter einem Benutzerkonto](../debugger/how-to-run-the-worker-process-under-a-user-account.md).  
+ Sie können das Benutzerkonto, unter dem der [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Arbeitsprozess ausgeführt wird, ändern, indem Sie die Datei „machine.config“ auf dem Server ändern, auf dem IIS ausgeführt wird. Dazu verwenden Sie am besten den **Internet Information Services (IIS) Manager**. Weitere Informationen finden Sie unter [Vorgehensweise: Ausführen des Workerprozesses unter einem Benutzerkonto](../debugger/how-to-run-the-worker-process-under-a-user-account.md).  
   
  Wenn Sie den [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Arbeitsprozess so ändern, dass er unter Ihrem eigenen Benutzerkonto ausgeführt wird, müssen Sie kein Administrator auf dem IIS-Servercomputer sein.  
   
 > [!CAUTION]
->  Bevor Sie den [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Arbeitsprozess dahingehend ändern, dass er unter einem anderen Konto ausgeführt wird, sollten Sie mögliche Konsequenzen für den Fall bedenken, dass der [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Arbeitsprozess beim Ausführen unter diesem Konto von Hackern angegriffen wird. Die ASPNET- und NETZWERKDIENST-Benutzerkonten werden mit minimalen Berechtigungen ausgeführt, was mögliche Schäden bei einem Hackerangriff auf den Prozess minimiert. Wenn Sie den [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Arbeitsprozess dahingehend ändern müssen, dass er unter einem Konto mit weiter reichenden Berechtigungen ausgeführt wird, kann der Schaden größer sein.  
+> Bevor Sie den [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Arbeitsprozess dahingehend ändern, dass er unter einem anderen Konto ausgeführt wird, sollten Sie mögliche Konsequenzen für den Fall bedenken, dass der [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Arbeitsprozess beim Ausführen unter diesem Konto von Hackern angegriffen wird. Die ASPNET- und NETZWERKDIENST-Benutzerkonten werden mit minimalen Berechtigungen ausgeführt, was mögliche Schäden bei einem Hackerangriff auf den Prozess minimiert. Wenn Sie den [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] -Arbeitsprozess dahingehend ändern müssen, dass er unter einem Konto mit weiter reichenden Berechtigungen ausgeführt wird, kann der Schaden größer sein.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von ASP.NET- und AJAX-Anwendungen](../debugger/debugging-aspnet-and-ajax-applications.md)   
- [Gewusst wie: Ausführen des Workerprozesses unter einem Benutzerkonto](../debugger/how-to-run-the-worker-process-under-a-user-account.md)
-
-
-
+ [Vorgehensweise: Ausführen des Workerprozesses unter einem Benutzerkonto](../debugger/how-to-run-the-worker-process-under-a-user-account.md)

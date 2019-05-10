@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramNode2::DetachDebugger_V7 | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProgramNode2::DetachDebugger
 helpviewer_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 - IDebugProgramNode2::DetachDebugger_V7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 603c459d39f8141789b22955e916e3e8520214fb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: 0b7d97e277a3f7f327bf8830e49507d28e82568f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924149"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62869836"
 ---
 # <a name="idebugprogramnode2detachdebuggerv7"></a>IDebugProgramNode2::DetachDebugger_V7
 
@@ -49,4 +49,4 @@ Diese Methode wird aufgerufen, wenn der Debugger unerwartet beendet wird. Wenn d
 
 ## <a name="see-also"></a>Siehe auch
 
-[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
+- [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

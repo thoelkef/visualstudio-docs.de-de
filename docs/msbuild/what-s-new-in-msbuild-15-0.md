@@ -1,21 +1,20 @@
 ---
 title: Neues in MSBuild 15 | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 03/01/2017
-ms.technology: msbuild
 ms.topic: conceptual
 ms.assetid: 9976b6fd-d052-4017-b848-35b5bf4b2f66
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2333f45cca5510a4ba3bb0f54abf45a569454cf8
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+monikerRange: vs-2017
+ms.openlocfilehash: 718ef14fda76df87dc4627dc518e993058896471
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028961"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777983"
 ---
 # <a name="whats-new-in-msbuild-15"></a>Neues in MSBuild 15
 
@@ -25,7 +24,7 @@ MSBuild ist jetzt als Teil des [.NET Core SDK](https://www.microsoft.com/net/dow
 
  MSBuild wird jetzt in einem Ordner unterhalb der einzelnen Versionen von Visual Studio installiert. Z.B. *C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild*. Sie können MSBuild auch mit dem folgenden PowerShell-Modul suchen: [vssetup.powershell](https://github.com/Microsoft/vssetup.powershell).
 
- MSBuild wird nicht mehr im globalen Assemblycache installiert. Um programmgesteuert auf MSBuild zu verweisen, verwenden Sie NuGet-Pakete.
+ MSBuild wird nicht mehr im globalen Assemblycache installiert. Um programmgesteuert auf MSBuild zu verweisen, verwenden Sie NuGet-Pakete. Weitere Informationen finden Sie unter [Aktualisieren einer vorhandenen Anwendung für MSBuild 15.0](../msbuild/updating-an-existing-application.md).
 
 ## <a name="changed-properties"></a>Geänderte Eigenschaften
 
@@ -53,4 +52,4 @@ MSBuild ist jetzt als Teil des [.NET Core SDK](https://www.microsoft.com/net/dow
 - `GetPathOfFileAbove` gibt den Pfad der unmittelbar vorangehenden Datei zurück. Dies ist zum Aufruf von `<Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />` funktional äquivalent.
 
 ## <a name="see-also"></a>Siehe auch
-[MSBuild](../msbuild/msbuild.md)
+- [MSBuild](../msbuild/msbuild.md)

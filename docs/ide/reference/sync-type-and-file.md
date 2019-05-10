@@ -1,22 +1,21 @@
 ---
 title: Umbenennen eines Dateinamens entsprechend eines Typs
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 42e1d3cad1752649446a35abd863390166a57271
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 90783dcd609094659517d994c3a4d4e0610b7735
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945164"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>Refactoring des Synchronisierens eines Typs mit einem Dateinamen oder eines Dateinamens mit einem Typ
 
@@ -31,6 +30,9 @@ Dieses Refactoring gilt für:
 **Hintergrund:** Sie haben eine Datei oder einen Typ umbenannt und noch nicht die entsprechende Datei oder den entsprechenden Typ aktualisiert.
 
 **Vorteile**: Das Platzieren eines Typs in einer Datei mit einem anderen Namen oder umgekehrt erschwert die Suche nach den gewünschten Elementen. Durch das Umbenennen des Typs oder des Dateinamens wird der Code besser lesbar und einfacher zu navigieren.
+
+> [!NOTE]
+> Dieses Refactoring ist für Projekte in .NET Standard und .NET Core noch nicht verfügbar.
 
 ## <a name="how-to"></a>Vorgehensweise
 
@@ -62,8 +64,6 @@ Dieses Refactoring gilt für:
    - Visual Basic: Im nachfolgenden Beispiel wurde die Datei **Employee.vb** entsprechend des Typnamens in **Person.vb** umbenannt.
 
        ![Ergebnis des Inlinevorgangs in Visual Basic](media/synctype-result-vb.png)
-
-> ![HINWEIS] Dieses Refactoring ist für Projekte in .NET Standard und .NET Core noch nicht verfügbar.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,24 +1,19 @@
 ---
 title: CA5351 Verwenden Sie keine unterbrochene kryptografische Algorithmen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 ms.assetid: 483f51b3-e186-4433-b48e-5ca24a9a9c94
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7067d1d08be6de121986c60ead67086a11548ea8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 780745e2b4213d8fdd130fe03cac292b233c5b0c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889814"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430680"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 Verwenden Sie keine unterbrochenen kryptografischen Algorithmen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "49889814"
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|  
   
 > [!NOTE]
->  Diese Warnung wurde zuletzt im November 2015 aktualisiert.  
+> Diese Warnung wurde zuletzt im November 2015 aktualisiert.  
   
 ## <a name="cause"></a>Ursache  
  Hashfunktionen wie <xref:System.Security.Cryptography.MD5> und Verschlüsselungsalgorithmen wie <xref:System.Security.Cryptography.DES> und <xref:System.Security.Cryptography.RC2> können ein erhebliches Risiko darstellen und führen möglicherweise zur Enthüllung vertraulicher Informationen mithilfe einfacher Angriffsstrategien, wie z. B. Brute-Force-Angriffe und Kollisionsangriffe gegen Hashfunktionen.  
@@ -52,9 +47,9 @@ ms.locfileid: "49889814"
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
  Verwenden Sie kryptografisch sicherere Optionen:  
   
--   Verwenden Sie für MD5 Hashes der [SHA-2](https://msdn.microsoft.com/en-us/library/windows/desktop/aa382459.aspx) -Familie (z. B. <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).  
+- Verwenden Sie für MD5 Hashes der [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) -Familie (z. B. <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).  
   
--   Verwenden Sie für DES und RC2 eine <xref:System.Security.Cryptography.Aes> -Verschlüsselung.  
+- Verwenden Sie für DES und RC2 eine <xref:System.Security.Cryptography.Aes> -Verschlüsselung.  
   
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
  Unterdrücken Sie keine Warnung dieser Regel, bevor sie von einem Kryptografie-Experten geprüft wurde.  

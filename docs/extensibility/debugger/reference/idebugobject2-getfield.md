@@ -1,7 +1,7 @@
 ---
 title: IDebugObject2::GetField | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugObject2::GetField
 helpviewer_keywords:
@@ -9,43 +9,44 @@ helpviewer_keywords:
 ms.assetid: add6a6b5-e752-47dd-9613-29206ea809b0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c0380b3c51c1049cd1edc3185d5901b98abd9eb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: 797a18b678e815411b7ea7860e44ea6159caa2b5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53953467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62872406"
 ---
 # <a name="idebugobject2getfield"></a>IDebugObject2::GetField
-Ruft den Typ dieses Objekts.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-HRESULT GetField(  
- IDebugField** ppField  
-);  
-```  
-  
-```csharp  
-int GetField(  
-   out IDebugField ppField  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `ppField`  
- [out] Gibt eine [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) -Objekt, andernfalls ein null-Wert.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
-  
-## <a name="remarks"></a>Hinweise  
- Ein Feld beschreibt den Typ des Objekts.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)   
- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
+Ruft den Typ dieses Objekts.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+HRESULT GetField(
+ IDebugField** ppField
+);
+```
+
+```csharp
+int GetField(
+   out IDebugField ppField
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `ppField`
+
+ [out] Gibt eine [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) -Objekt, andernfalls ein null-Wert.
+
+## <a name="return-value"></a>Rückgabewert
+ Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.
+
+## <a name="remarks"></a>Hinweise
+ Ein Feld beschreibt den Typ des Objekts.
+
+## <a name="see-also"></a>Siehe auch
+- [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)
+- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

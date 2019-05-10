@@ -1,7 +1,6 @@
 ---
 title: 'CA1819: Eigenschaften sollten keine Arrays zurückgeben.'
-ms.date: 09/28/2018
-ms.prod: visual-studio-dev15
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - PropertiesShouldNotReturnArrays
@@ -12,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 85fcf312-57f8-438a-8b10-34441fe0bdeb
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6159d6b9a2d8d3dc02cd5f0690f3b1360b4461fd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 11209ec181e2c2b61c7767787ee99c2d69eabe8b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949455"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545562"
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819: Eigenschaften sollten keine Arrays zurückgeben.
 
@@ -36,7 +35,9 @@ ms.locfileid: "53949455"
 
 ## <a name="cause"></a>Ursache
 
-Eine öffentliche oder geschützte Eigenschaft in einem öffentlichen Typ zurückgegeben ein Array.
+Eine Eigenschaft gibt ein Array zurück.
+
+Diese Regel nur sucht standardmäßig an extern sichtbare Eigenschaften und Typen. Dies ist jedoch [konfigurierbare](#configurability).
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
@@ -53,6 +54,16 @@ Sie können eine Warnung, die für eine Eigenschaft eines Attributs ausgelöst w
 Sie können die Warnung unterdrücken, wenn die Eigenschaft Teil ist eine [Data Transfer Object (DTO)](/previous-versions/msp-n-p/ff649585(v=pandp.10)) Klasse.
 
 Unterdrücken Sie andernfalls keine Warnung dieser Regel.
+
+## <a name="configurability"></a>Konfigurierbarkeit
+
+Wenn Sie diese Regel aus ausführen, [FxCop-Analysen](install-fxcop-analyzers.md) (und nicht über die Analyse von statischem Code), können Sie konfigurieren, welche Teile Ihrer Codebasis, um die Ausführung dieser Regel auf, um basierend auf deren Barrierefreiheit. Z. B. um anzugeben, dass die Regel nur für die nicht öffentlichen API-Oberfläche ausgeführt werden soll, fügen Sie die folgenden Schlüssel-Wert-Paar in einer editorconfig-Datei in Ihrem Projekt:
+
+```
+dotnet_code_quality.ca1819.api_surface = private, internal
+```
+
+Sie können diese Option, die für diese eine Regel, für alle Regeln oder für alle Regeln in dieser Kategorie (Leistung) konfigurieren. Weitere Informationen finden Sie unter [konfigurieren FxCop-Analysetools](configure-fxcop-analyzers.md).
 
 ## <a name="example-violation"></a>Beispiel für einen Verstoß
 
@@ -91,4 +102,4 @@ Im folgenden Beispiel wird der Verstoß korrigiert, durch Ändern der Eigenschaf
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-- [CA1024: NACH MÖGLICHKEIT Verwenden Sie Eigenschaften](../code-quality/ca1024-use-properties-where-appropriate.md)
+- [CA1024: Verwenden Sie Eigenschaften](../code-quality/ca1024-use-properties-where-appropriate.md)

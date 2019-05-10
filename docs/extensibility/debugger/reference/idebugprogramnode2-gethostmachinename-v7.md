@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramNode2::GetHostMachineName_V7 | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProgramNode2::GetHostMachineName
 helpviewer_keywords:
@@ -9,15 +9,18 @@ helpviewer_keywords:
 - IDebugProgramNode2::GetHostMachineNameIDebugProgramNode2::GetHostMachineName
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4518ab3e4a4ee978c296815a81d8fbffb3e20db7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 09919ed73afc9115feffd1f828e9e8d14d1eae79
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966650"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457794"
 ---
 # <a name="idebugprogramnode2gethostmachinenamev7"></a>IDebugProgramNode2::GetHostMachineName_V7
 
@@ -38,10 +41,11 @@ int GetHostMachineName_V7 (
 );
 ```
 
-#### <a name="parameters"></a>Parameter
+## <a name="parameters"></a>Parameter
 
-`pbstrHostMachineName`  
-[out] Gibt den Namen des Computers in der das Programm ausgeführt wird.
+`pbstrHostMachineName`\
+
+ [out] Gibt den Namen des Computers in der das Programm ausgeführt wird.
 
 ## <a name="return-value"></a>Rückgabewert
 
@@ -54,4 +58,4 @@ Eine Implementierung sollte immer zurückgeben `E_NOTIMPL`.
 
 ## <a name="see-also"></a>Siehe auch
 
-[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
+- [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

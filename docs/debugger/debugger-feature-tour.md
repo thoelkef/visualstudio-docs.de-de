@@ -1,23 +1,23 @@
 ---
-title: Erste Schritte beim Debuggen in Visual Studio 2017
+title: Erster Einblick in den Debugger
 description: Erste Schritte beim Debuggen von Anwendungen mithilfe des Visual Studio-Debuggers
-ms.custom: mvc
-ms.date: 06/15/2018
+ms.custom: seoapril2019
+ms.date: 04/08/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
 ms.assetid: c763d706-3213-494f-b4d2-990b6e1ec456
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf7bcba0ceaa71b933d4875cd5eee28d7cea0028
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 78b27626c457b857f6f0ce195852922f2d5c89de
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904967"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62854087"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Ein erster Blick auf den Visual Studio-Debugger
 
@@ -27,7 +27,7 @@ Die hier beschriebenen Features gelten für C#, C++, Visual Basic, JavaScript un
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Festlegen eines Breakpoints und Starten des Debuggers
 
-Sie müssen Ihre App mit dem an den App-Prozess angefügten Debugger starten, um diese zu debuggen. Am häufigsten wird hierfür die Taste **F5** (alternativ: **Debuggen > Debuggen starten**) verwendet. Bisher haben Sie jedoch wahrscheinlich noch keine Breakpoints für die Untersuchung Ihres App-Codes festgelegt, deshalb werden Sie dies tun, bevor Sie mit dem Debuggen beginnen. Haltepunkte sind eine einfache und wichtige Funktion zum zuverlässigen Debuggen. Ein Haltepunkt gibt an, wo Visual Studio im ausgeführten Code angehalten werden soll. So können Sie einen Blick auf die Werte von Variablen oder das Speicherverhalten werfen oder überprüfen, ob eine Verzweigung im Code ausgeführt wird. 
+Sie müssen Ihre App mit dem an den App-Prozess angefügten Debugger starten, um diese zu debuggen. Am häufigsten wird hierfür die Taste **F5** (alternativ: **Debuggen > Debuggen starten**) verwendet. Bisher haben Sie jedoch wahrscheinlich noch keine Breakpoints für die Untersuchung Ihres App-Codes festgelegt, deshalb werden Sie dies tun, bevor Sie mit dem Debuggen beginnen. Haltepunkte sind eine einfache und wichtige Funktion zum zuverlässigen Debuggen. Ein Haltepunkt gibt an, wo Visual Studio im ausgeführten Code angehalten werden soll. So können Sie einen Blick auf die Werte von Variablen oder das Speicherverhalten werfen oder überprüfen, ob eine Verzweigung im Code ausgeführt wird.
 
 Wenn Sie eine Datei im Code-Editor geöffnet haben, können Sie einen Breakpoint festlegen, indem Sie auf den Rand links neben einer Codezeile klicken.
 
@@ -77,7 +77,7 @@ Zeigen Sie auf eine Codezeile, während der Debugger ausgeführt wird, bis die S
 ![Ausführung bis Klick](../debugger/media/dbg-tour-run-to-click-2.png "Run to Click")
 
 > [!NOTE]
-> Die Schaltfläche **Ausführung bis Klick** (Ausführung bis hier ausführen) ist neu in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> Die Schaltfläche für die Aktion **Ausführung bis Klick** (Ausführung bis hier ausführen) ist ab [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] verfügbar.
 
 Klicken Sie auf die Schaltfläche **Ausführung bis Klick** (Ausführung bis hier ausführen). Der Debugger wechselt zu der Codezeile, auf die Sie geklickt haben.
 
@@ -185,10 +185,10 @@ In diesem Beispiel zeigt die **Ausnahmen-Hilfe** eine `System.Argument`-Ausnahme
 
 In diesem Beispiel hat der `DirectoryInfo`-Aufruf den Fehler für eine leere Zeichenfolge zurückgegeben, die in der `value`-Variable gespeichert ist.
 
-Die Ausnahmen-Hilfe ist beim Debuggen von Fehlern sehr nützlich. Sie können zusätzlich Fehlerdetails anzeigen und eine Überwachung über die Ausnahmen-Hilfe hinzufügen. Bei Bedarf können Sie die Bedingungen ändern, die zum Auslösen einer bestimmten Ausnahme führen.
+Die Ausnahmen-Hilfe ist beim Debuggen von Fehlern sehr nützlich. Sie können zusätzlich Fehlerdetails anzeigen und eine Überwachung über die Ausnahmen-Hilfe hinzufügen. Bei Bedarf können Sie die Bedingungen ändern, die zum Auslösen einer bestimmten Ausnahme führen. Weitere Informationen zum Behandeln von Ausnahmen in Ihrem Code finden Sie unter [Debugging techniques and tools (Debugverfahren und Tools)](../debugger/write-better-code-with-visual-studio.md).
 
 > [!NOTE]
-> Die Ausnahmen-Hilfe ersetzt den Ausnahmen-Assistent in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> Der Ausnahmenassistent wurde in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] durch die Ausnahmenhilfe ersetzt.
 
 Erweitern Sie den Knoten **Ausnahmeeinstellungen**, um weitere Optionen zu diesem Ausnahmetyp anzuzeigen. Für dieses Tutorial müssen Sie dort jedoch keine Änderungen vornehmen.
 

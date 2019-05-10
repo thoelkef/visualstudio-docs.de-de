@@ -1,22 +1,20 @@
 ---
 title: Durchsuchungsbegrenzungen | Microsoft IntelliTest-Test-Tool für Entwickler
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Exploration bounds
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9d1ac08a2314119c924417191ca509a4bcd18021
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: ffa6908fe759f33ad1e82f2fd44975d6731cdf16
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000654"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978548"
 ---
 # <a name="exploration-bounds"></a>Durchsuchungsbegrenzungen
 
@@ -31,17 +29,17 @@ public partial class FooTest {...}
 
 * **Grenzen der Einschränkungs-Solver**
   * [MaxConstraintSolverTime](#maxconstraintsolvertime): Die Sekundenzahl, die dem [Einschränkungs-Solver](input-generation.md#constraint-solver) zur Verfügung stehen, um die Eingaben zu finden, die dazu führen, dass neue und andere Ausführungspfade befolgt werden
-  * [MaxConstraintSolverMemory](#maxconstraintsolvermemory): Die Größe in Megabyte, die der [verwenden darf](input-generation.md#constraint-solver), um Eingaben zu finden.<p />
+  * [MaxConstraintSolverMemory](#maxconstraintsolvermemory): Die Größe in Megabyte, die der [ verwenden darf](input-generation.md#constraint-solver), um Eingaben zu finden
 * **Grenzen des Explorationspfads**
   * [MaxBranches](#maxbranches): Die maximale Anzahl von Verzweigungen, die entlang eines einzelnen Ausführungspfads genommen werden können
   * [MaxCalls](#maxcalls): Die maximale Anzahl von Aufrufen, die während eines einzelnen Ausführungspfads durchgeführt werden können
   * [MaxStack](#maxstack): Die maximale Größe des Stapels während eines einzigen Ausführungspfads, gemessen als Anzahl der aktiven Aufrufframes
-  * [MaxConditions](#maxconditions): Die maximale Anzahl von Bedingungen zu den Eingaben, die während eines einzelnen Ausführungspfads überprüft werden können<p />
+  * [MaxConditions](#maxconditions): Die maximale Anzahl von Bedingungen zu den Eingaben, die während eines einzelnen Ausführungspfads überprüft werden können
 * **Durchsuchungsbegrenzungen**
   * [MaxRuns](#maxruns): Die maximale Anzahl von Ausführungen, die während einer Durchsuchung versucht werden
   * [MaxRunsWithoutNewTests](#maxrunswithoutnewtests): Die maximale Anzahl aufeinanderfolgender Ausführungen, ohne dass ein neuer Test ausgegeben wird
   * [MaxRunsWithUniquePaths](#maxrunswithuniquepaths): Die maximale Anzahl von Ausführungen mit einem eindeutigen Ausführungspfad, die während einer Durchsuchung versucht werden
-  * [MaxExceptions](#maxexceptions): Die maximale Anzahl von Ausnahmen, die für eine Kombination aus allen gefundenen Ausführungspfade gefunden werden dürfen<p />
+  * [MaxExceptions](#maxexceptions): Die maximale Anzahl von Ausnahmen, die für eine Kombination aus allen gefundenen Ausführungspfade gefunden werden dürfen
 * **Einstellungen für die Codegenerierung von Testsammlungen**
   * [TestExcludePathBoundsExceeded](#testexcludepathboundsexceeded): Wenn TRUE, werden Ausführungspfade, die die Grenzen des Pfads überschreiten ([MaxCalls](#maxcalls), [MaxBranches](#maxbranches), [MaxStack](#maxstack), [MaxConditions](#maxconditions)) ignoriert.
   * [TestEmissionFilter](#testemissionfilter): Gibt an, unter welchen Umständen IntelliTest Tests ausgeben soll.
@@ -107,7 +105,7 @@ Jeder Pfad im folgenden Code verwendet z.B. n + 1 Bedingungen:
 
 ```csharp
 [PexMethod]
-void ParameterizedTest(int n) 
+void ParameterizedTest(int n)
 {
      for (int i=0; i<n; i++) { // conditions are "0<n", "1<n", ..., "!(n<n)"
           ...
@@ -145,10 +143,10 @@ Die maximale Anzahl von eindeutigen Pfaden, die IntelliTest während einer Durch
 
 Diese Durchsuchungsbegrenzung soll IntelliTest während der [Eingabeerzeugung](input-generation.md) einschränken, da jeder Code, der Schleifen oder Rekursionen enthält, möglicherweise eine unendliche Anzahl von Ausführungspfaden enthält.
 
-Die beiden Einstellungen **MaxRuns** und **MaxRunsWithUniquePaths** sind folgendermaßen miteinander verknüpft. 
+Die beiden Einstellungen **MaxRuns** und **MaxRunsWithUniquePaths** sind folgendermaßen miteinander verknüpft.
 
 * IntelliTest ruft eine Methode eine parametrisierte Testmethode so oft auf, wie von **MaxRuns** angegeben. Dabei werden unterschiedliche Testeingaben verwendet.
-* Wenn der ausgeführte Code deterministisch ist, nimmt IntelliTest jedes Mal einen anderen Ausführungspfad. Unter bestimmten Umständen kann der ausgeführte Code jedoch einem Ausführungspfad folgen, den er bereits genommen hat, dann aber mit anderen Eingaben. 
+* Wenn der ausgeführte Code deterministisch ist, nimmt IntelliTest jedes Mal einen anderen Ausführungspfad. Unter bestimmten Umständen kann der ausgeführte Code jedoch einem Ausführungspfad folgen, den er bereits genommen hat, dann aber mit anderen Eingaben.
 * IntelliTest zählt, wie viele eindeutige Ausführungspfade es findet. Diese Zahl wird durch die Option **MaxRunsWithUniquePaths** eingeschränkt.
 
 <a name="maxexceptions"></a>

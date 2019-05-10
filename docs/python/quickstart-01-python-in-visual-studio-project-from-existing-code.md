@@ -2,25 +2,24 @@
 title: 'Schnellstart: Erstellen eines Python-Projekts aus vorhandenem Code'
 description: In diesem Schnellstart erstellen Sie mithilfe einer geeigneten Vorlage ein Visual Studio-Projekt für Python aus einem vorhandenen Ordner.
 ms.date: 12/06/2018
-ms.prod: visual-studio-dev15
 ms.topic: quickstart
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e26768c3e18fb12ca97e2875dec6ab84cb0344ac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8fbbd8c49ecc367a0dd01d9ab775735b93174fe6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965494"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429058"
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>Schnellstart: Erstellen eines Python-Projekts aus vorhandenem Code
 
-Sobald Sie [Python-Unterstützung für Visual Studio 2017 installiert](installing-python-support-in-visual-studio.md) haben, ist es einfach vorhandenen Python-Code in ein Visual Studio Projekt zu importieren.
+Sobald Sie [Python-Unterstützung für Visual Studio installiert](installing-python-support-in-visual-studio.md) haben, ist es einfach vorhandenen Python-Code in ein Visual Studio Projekt zu importieren.
 
 > [!Important]
 > Der hier beschriebene Prozess verschiebt oder kopiert die ursprünglichen Quelldateien nicht. Wenn Sie mit einer Kopie arbeiten möchten, erstellen Sie zunächst eine Kopie des Ordners.

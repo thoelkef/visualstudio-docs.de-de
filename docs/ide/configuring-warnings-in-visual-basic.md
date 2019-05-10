@@ -1,8 +1,6 @@
 ---
 title: Konfigurieren von Warnungen in Visual Basic
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - errors [Visual Basic], warnings
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 99cf4781-bd4d-47b4-91b9-217933509f82
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8cb2cec8258813fa9c93c466afb607ce88acc7e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 022ba767a7d1952b659d66532d5542c42fa2f9bb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865961"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976570"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Konfigurieren von Warnungen in Visual Basic
 
@@ -52,7 +50,7 @@ Der [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-Compiler enthält 
 ## <a name="examples"></a>Beispiele
  In dieser Tabelle mit Beispielen für Befehlszeilenargumente wird die Bedeutung der einzelnen Argumente beschrieben.
 
-|Argument|Beschreibung |
+|Argument|Beschreibung|
 |--------------|-----------------|
 |`vbc /warnaserror`|Gibt an, dass alle Warnungen als Fehler behandelt werden sollen.|
 |`vbc /warnaserror:42024`|Gibt an, dass die Warnung 42024 als Fehler behandelt werden soll.|

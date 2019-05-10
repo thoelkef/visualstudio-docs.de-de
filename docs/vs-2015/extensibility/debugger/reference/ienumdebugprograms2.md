@@ -1,14 +1,9 @@
 ---
 title: IEnumDebugPrograms2 | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IEnumDebugPrograms2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 7fbb8fb7-db64-4546-a364-dc668430c8af
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4a39fd4c6fa6621ac00e3bfe98060229509cb750
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f6d25c9856085938860180bf76a2f634aa651551
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726145"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112012"
 ---
 # <a name="ienumdebugprograms2"></a>IEnumDebugPrograms2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -55,13 +50,13 @@ IEnumDebugPrograms2 : IUnknown
 ## <a name="remarks"></a>Hinweise  
  Visual Studio verwendet diese Schnittstelle:  
   
--   Füllen Sie die **Module** Fenster (durch Aufrufen von [EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) und dem anschließenden Aufrufen [EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) für jedes Programm).  
+- Füllen Sie die **Module** Fenster (durch Aufrufen von [EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) und dem anschließenden Aufrufen [EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) für jedes Programm).  
   
--   Füllen Sie die **an den Prozess anhängen** Liste (durch Aufrufen von `IDebugProcess2::EnumPrograms` und dem anschließenden Aufrufen [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) auf jedem [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) Schnittstelle zum Abrufen einer [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md) Schnittstelle).  
+- Füllen Sie die **an den Prozess anhängen** Liste (durch Aufrufen von `IDebugProcess2::EnumPrograms` und dem anschließenden Aufrufen [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) auf jedem [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) Schnittstelle zum Abrufen einer [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md) Schnittstelle).  
   
--   Generiert eine Liste mit DEs, den jedes Programm in den Prozess zu debuggen, können (mit [GetEngineInfo](../../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md)).  
+- Generiert eine Liste mit DEs, den jedes Programm in den Prozess zu debuggen, können (mit [GetEngineInfo](../../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md)).  
   
--   Anwenden von Updates für bearbeiten und Fortfahren "(ENC) für jedes Programm (durch Aufrufen von IDebugProcess2::EnumPrograms und dem anschließenden Aufrufen [GetENCUpdate](../../../extensibility/debugger/reference/idebugprogram2-getencupdate.md)).  
+- Anwenden von Updates für bearbeiten und Fortfahren "(ENC) für jedes Programm (durch Aufrufen von IDebugProcess2::EnumPrograms und dem anschließenden Aufrufen [GetENCUpdate](../../../extensibility/debugger/reference/idebugprogram2-getencupdate.md)).  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
@@ -74,4 +69,3 @@ IEnumDebugPrograms2 : IUnknown
  [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
  [EnumPrograms](../../../extensibility/debugger/reference/idebugengine2-enumprograms.md)   
  [EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)
-

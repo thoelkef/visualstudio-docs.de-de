@@ -1,29 +1,31 @@
 ---
 title: IDebugDocumentChecksum2::GetChecksumAndAlgorithmId | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugDocumentChecksum2::GetChecksumAndAlgorithmI
 - GetChecksumAndAlgorithmI
 ms.assetid: 25efef99-0ef3-4332-a752-607605fc6e67
-author: gregvanl
+caps.latest.revision: 9
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: d484b46d6df22b68249873d225571a09f6e1d35d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0f1a00b34aa640f9198649552ad7f1620d9b026d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62875738"
 ---
 # <a name="idebugdocumentchecksum2getchecksumandalgorithmid"></a>IDebugDocumentChecksum2::GetChecksumAndAlgorithmId
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Ruft die Prüfsumme und Algorithmus Dokumentbezeichner erhalten die maximale Anzahl von Bytes, die ab.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT GetChecksumAndAlgorithmId(   
    GUID  *pRetVal,  
    ULONG cMaxBytes,  
@@ -60,7 +62,7 @@ public int GetChecksumAndAlgorithmId(
 ## <a name="example"></a>Beispiel  
  Im folgenden Beispiel wird diese Methode, um die Prüfsumme und den Algorithmus für ein Dokument abzurufen.  
   
-```cpp  
+```cpp#  
 HRESULT CDebugCodeContext::GetDocumentChecksumAndAlgorithmId(GUID *pguidAlgorithm, BYTE **ppChecksum, ULONG *pcNumBytes)  
 {  
     HRESULT hRes = E_FAIL;  

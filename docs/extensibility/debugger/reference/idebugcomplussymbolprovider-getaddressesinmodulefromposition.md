@@ -1,24 +1,26 @@
 ---
 title: IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - GetAddressesInModuleFromPosition
 - IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
 ms.assetid: f901c66e-f53c-4ea0-8004-d8fcbf46f916
-author: gregvanl
+caps.latest.revision: 13
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: a7b7cb39f5a8dbccd593f7adf33366a27829d9ee
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 153f891e9ab5497f90eeefc02191f9227c0108c6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923139"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62876723"
 ---
 # <a name="idebugcomplussymbolprovidergetaddressesinmodulefromposition"></a>IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Ordnet eine Dokumentposition im angegebenen Modul in ein Array von Debug-Adressen an.  
   
 ## <a name="syntax"></a>Syntax  
@@ -72,7 +74,7 @@ int GetAddressesInModuleFromPosition(
 ## <a name="example"></a>Beispiel  
  Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) Schnittstelle.  
   
-```cpp  
+```cpp#  
 HRESULT CDebugSymbolProvider::GetAddressesInModuleFromPosition(  
     ULONG32 ulAppDomainID,  
     GUID guidModule,  

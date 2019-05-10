@@ -1,26 +1,21 @@
 ---
 title: Zeichenfolgen, die als Schlüssel zum Suchen eines Quellcodeverwaltungs-Plug-in verwendet werden. | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, strings used for finding
 ms.assetid: c1e31f76-42a1-4c3d-afb2-664044ef12fd
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 693f4560d181aa765946bdd971f835ee651daed1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 83ba843e318aac6a74d318978e42e2f81802d8ac
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759956"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961427"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Als Schlüssel zum Suchen eines Quellcodeverwaltungs-Plug-Ins verwendete Zeichenfolgen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,13 +38,13 @@ Die nachfolgenden Zeichenfolgen sind die Schlüssel für den Zugriff auf die Reg
 |`STR_SCC_INI_KEY`|SourceCodeControlProvider|  
 |`SCC_PROJECTNAME_KEY`|SCC_Project_Name|  
 |`SCC_PROJECTAUX_KEY`|SCC_Aux_Path|  
-|`SCC_STATUS_FILE`|MSSCCPRJ. SCC|  
+|`SCC_STATUS_FILE`|MSSCCPRJ.SCC|  
 |`SCC_KEY`|SCC|  
 |`SCC_FILE_SIGNATURE`|Eine Quellcodedatei-Steuerelement|  
 |`SCC_NSE`|Namespace-Erweiterung|  
 |`SCC_NSE_PREFIX`|Protokoll-Präfix|  
 |`SCC_NSE_DisableOpenSCC`|DisableOpenFromSourceControl|  
-|`STR_SCCHELPCOLLECTION`|Helpcollection hinzu|  
+|`STR_SCCHELPCOLLECTION`|HelpCollection|  
 |`STR_UI_LANGUAGE`|UILanguage|  
 |`STR_SRCSAFE_ROOT_KEY`|Software\Microsoft\SourceSafe|  
   
@@ -57,4 +52,3 @@ Die nachfolgenden Zeichenfolgen sind die Schlüssel für den Zugriff auf die Reg
  [Quellcodeverwaltungs-Plug-ins](../extensibility/source-control-plug-ins.md)   
  [Vorgehensweise: Installieren eines Quellcodeverwaltungs-Plug-in](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
  [Datei „MSSCCPRJ.SCC“](../extensibility/mssccprj-scc-file.md)
-

@@ -1,7 +1,6 @@
 ---
 title: Befehl "Module auflisten"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - debug.listmodules
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 3cb73774-6ac0-43b2-b781-75ed47175bfd
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d13fe40866f8c3baf7d47e17a98515ea8197dfe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1d466a320d9acd968bfab07b7e8a595dde10ad9c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962648"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557062"
 ---
 # <a name="list-modules-command"></a>Befehl "Module auflisten"
 Listet die Module für den aktuellen Prozess auf.

@@ -1,14 +1,9 @@
 ---
 title: Benutzeroberflächenverarbeitungszeit | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.uiprocessing
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 0ddb05a3-8c6b-448b-8488-2751c1e5abcc
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ecf2c33b2af2e57c964e145a334f6dd0d7161a92
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4bbed9d8c4725b6bd497377d4a9dee22f2f8573d
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738438"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54783443"
 ---
 # <a name="ui-processing-time"></a>Benutzeroberflächenverarbeitungszeit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,6 +31,3 @@ Diese Segmente in der Zeitachse werden den Blockierungszeiten zugeordnet, die al
   
 ## <a name="see-also"></a>Siehe auch  
  [Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)
-
-
-

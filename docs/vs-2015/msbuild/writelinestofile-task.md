@@ -1,14 +1,9 @@
 ---
 title: WriteLinesToFile-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#WriteLinesToFile
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: 9c8862ac-8da5-4437-9430-ecc30421f1c9
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4af63679437e0b128472d084a55f1ef24a93bc4f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f530648c7dd772fb60148f4d755d4a4ffb420cbb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301846"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62419958"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Schreibt die Pfade der angegebenen Elemente in die angegebene Textdatei.  
   
 ## <a name="task-parameters"></a>Aufgabenparameter  
@@ -47,7 +41,7 @@ Schreibt die Pfade der angegebenen Elemente in die angegebene Textdatei.
 |`Overwrite`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, überschreibt die Aufgabe den vorhandenen Inhalt in der Datei|  
 |`Encoding`|Optionaler `String` -Parameter.<br /><br /> Wählt die Zeichencodierung aus, z.B. „Unicode“  Siehe auch <xref:System.Text.Encoding>.|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Wenn `Overwrite` `true` ist, wird eine neue Datei erstellt. Anschließend werden die Inhalte in die Datei geschrieben und diese wird geschlossen. Ist die Zieldatei bereits vorhanden, wird sie überschrieben. Wenn `Overwrite` `false` ist, wird der Inhalt an die Datei angefügt und die Zieldatei erstellt, wenn sie nicht bereits vorhanden ist.  
   
  Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
@@ -77,6 +71,3 @@ Schreibt die Pfade der angegebenen Elemente in die angegebene Textdatei.
 ## <a name="see-also"></a>Siehe auch  
  [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
  [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)
-
-
-

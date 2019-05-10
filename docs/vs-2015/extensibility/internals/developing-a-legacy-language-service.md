@@ -1,14 +1,9 @@
 ---
 title: Entwickeln eines Legacysprachdiensts | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - vs.vsip.LangServWiz.langtoks
 - vs.vsip.LangServWiz.welcome
@@ -20,13 +15,13 @@ helpviewer_keywords:
 ms.assetid: 6151ba88-c1c3-41de-a1cc-668f494d48d1
 caps.latest.revision: 29
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 801a349b588a1dd7612b573fcc97b4b344a69452
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 36ff8335bfaf99b5826d217a48910bfd581321e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746799"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440118"
 ---
 # <a name="developing-a-legacy-language-service"></a>Entwickeln eines Legacysprachdiensts
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ Dieser Abschnitt enthält Links zu Themen, mit denen Sie erstellen einen legacy-
  Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Um mehr über die neue Methode zum Implementieren von eines Sprachdiensts zu suchen, finden Sie unter [-Editor und Sprachdiensterweiterungen](../../extensibility/editor-and-language-service-extensions.md).  
   
 > [!NOTE]
->  Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
+> Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Modell eines Legacysprachdiensts](../../extensibility/internals/model-of-a-legacy-language-service.md)  
@@ -67,9 +62,8 @@ Dieser Abschnitt enthält Links zu Themen, mit denen Sie erstellen einen legacy-
  [Parameterinformationen in einem Legacysprachdienst](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)  
  Beschreibt, wie um methodentipps für überladene Funktionen und Methoden bereitzustellen.  
   
- [Gewusst wie: Unterstützen von ausgeblendetem Text in einem Legacysprachdienst](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
+ [Vorgehensweise: Unterstützen von ausgeblendetem Text in einem Legacysprachdienst](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
  Erläutert den Zweck eines Bereichs von ausgeblendetem Text, und enthält Anweisungen dazu, wie Sie einen Bereich des ausgeblendeten Textes zu implementieren.  
   
- [Gewusst wie: Bereitstellen von Unterstützung für erweiterte Gliederungen in einem Legacysprachdienst](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
+ [Vorgehensweise: Bereitstellen von Unterstützung für erweiterte Gliederungen in einem Legacysprachdienst](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
  Erläutert die zwei Optionen, die Gliederung für Ihre Sprache zu unterstützen, erweitert die *reduzieren auf Definitionen* Befehl.
-

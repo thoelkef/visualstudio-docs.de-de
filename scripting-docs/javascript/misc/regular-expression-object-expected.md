@@ -1,14 +1,9 @@
 ---
 title: Reguläres Ausdrucksobjekt erwartet | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5016
 dev_langs:
@@ -16,23 +11,22 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: e226096c-c58f-4bcb-a71e-fa32ce474b67
-caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b8e3c48b116680fe73d4cc318038cb2c13c4164
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: a42cf4b76f4de6d4170f7ef85dafc00841964cfc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280311"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006420"
 ---
 # <a name="regular-expression-object-expected"></a>Reguläres Ausdrucksobjekt erwartet
 Sie haben versucht, rufen Sie die **RegExp.prototype.ToString-Methode** oder **RegExp.prototype.valueOf** Methode für ein Objekt von einem anderen Typ als `RegExp`. Das Objekt dieser Art von Aufruf muss vom Typ `RegExp`.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Rufen Sie nur die **RegExp.prototype.ToString-Methode** oder **RegExp.prototype.valueOf** Methoden für Objekte vom Typ `RegExp`.  
+- Rufen Sie nur die **RegExp.prototype.ToString-Methode** oder **RegExp.prototype.valueOf** Methoden für Objekte vom Typ `RegExp`.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Regular Expression-Objekt](../../javascript/reference/regular-expression-object-javascript.md)   

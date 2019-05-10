@@ -1,12 +1,9 @@
 ---
 title: Definieren und installieren eine modellierungserweiterung | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending
 - UML model, extending
@@ -14,13 +11,13 @@ ms.assetid: 82a58dc5-c7cf-4521-a6da-7ff09cd0de9d
 caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6f7895916cc4ee877c53b056f703d8e46b64b409
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: cf370b4ca0e0a4d14c482c6ece46b79d2d224d34
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805566"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049736"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Definieren und Installieren einer Modellierungserweiterung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,41 +42,41 @@ In Visual Studio können Sie Erweiterungen zum Modellieren von Diagrammen defini
   
 #### <a name="to-create-a-class-library-project-for-menu-commands-gesture-handlers-or-validation"></a>Erstellen eines Klassenbibliothekprojekts für Menübefehle, Gestenhandler oder Überprüfung  
   
-1.  Wählen Sie im Menü **Datei** die Optionsfolge **Neu**, **Projekt**aus.  
+1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu**, **Projekt**aus.  
   
-2.  Wählen Sie unter **Installierte Vorlagen**die Option **Visual C#** oder **Visual Basic**aus, und wählen Sie anschließend **Klassenbibliothek**aus.  
+2. Wählen Sie unter **Installierte Vorlagen**die Option **Visual C#** oder **Visual Basic**aus, und wählen Sie anschließend **Klassenbibliothek**aus.  
   
 #### <a name="to-create-a-vsix-project"></a>So erstellen Sie ein VSIX-Projekt  
   
-1.  Wenn Sie eine Komponente mit Code erstellen, ist es am einfachsten, zuerst das Klassenbibliotheksprojekt zu erstellen. Diesem Projekt wird der Code hinzugefügt.  
+1. Wenn Sie eine Komponente mit Code erstellen, ist es am einfachsten, zuerst das Klassenbibliotheksprojekt zu erstellen. Diesem Projekt wird der Code hinzugefügt.  
   
-2.  Erstellen eines VSIX-Projekts  
+2. Erstellen eines VSIX-Projekts  
   
-    1.  Wählen Sie im **Projektmappen-Explorer**im Kontextmenü der Projektmappe die Option **Hinzufügen**und dann **Neues Projekt**aus.  
+    1. Wählen Sie im **Projektmappen-Explorer**im Kontextmenü der Projektmappe die Option **Hinzufügen**und dann **Neues Projekt**aus.  
   
-    2.  Erweitern Sie unter **Installierte Vorlagen**den Knoten **Visual C#** oder **Visual Basic**, und wählen Sie anschließend **Erweiterungen**aus. Wählen Sie in der mittleren Spalte **VSIX Project**.  
+    2. Erweitern Sie unter **Installierte Vorlagen**den Knoten **Visual C#** oder **Visual Basic**, und wählen Sie anschließend **Erweiterungen**aus. Wählen Sie in der mittleren Spalte **VSIX Project**.  
   
-3.  Legen Sie das VSIX-Projekt als Startprojekt der Projektmappe fest.  
+3. Legen Sie das VSIX-Projekt als Startprojekt der Projektmappe fest.  
   
-    -   Wählen Sie im Projektmappen-Explorer im Kontextmenü des VSIX-Projekts die Option **Als Startprojekt festlegen**aus.  
+    - Wählen Sie im Projektmappen-Explorer im Kontextmenü des VSIX-Projekts die Option **Als Startprojekt festlegen**aus.  
   
-4.  Öffnen Sie **source.extension.vsixmanifest**. Die Datei wird im Manifest-Editor geöffnet.  
+4. Öffnen Sie **source.extension.vsixmanifest**. Die Datei wird im Manifest-Editor geöffnet.  
   
-5.  Legen Sie auf der Registerkarte **MetaData** den Namen und die Beschreibungsfelder des VSIX fest.  
+5. Legen Sie auf der Registerkarte **MetaData** den Namen und die Beschreibungsfelder des VSIX fest.  
   
-6.  Klicken Sie auf der Registerkarte **Ziele installieren** auf **Neu** , und legen Sie dann die Visual Studio-Versionen als Ziele fest.  
+6. Klicken Sie auf der Registerkarte **Ziele installieren** auf **Neu** , und legen Sie dann die Visual Studio-Versionen als Ziele fest.  
   
-7.  Fügen Sie Ihre Komponenten auf der Registerkarte **Objekte** der Visual Studio-Erweiterung hinzu.  
+7. Fügen Sie Ihre Komponenten auf der Registerkarte **Objekte** der Visual Studio-Erweiterung hinzu.  
   
-    1.  Wählen Sie **Neu**aus.  
+    1. Wählen Sie **Neu**aus.  
   
-    2.  Legen Sie diese Felder für eine Komponente mit Code im Dialogfeld **Neues Objekt hinzufügen** fest:  
+    2. Legen Sie diese Felder für eine Komponente mit Code im Dialogfeld **Neues Objekt hinzufügen** fest:  
   
         |||  
         |-|-|  
         |**Typ** =|**Microsoft.VisualStudio.MefComponent**|  
         |**Source** =|**Ein Projekt in der aktuellen Projektmappe**|  
-        |**Projekt** =|*Ihr Klassenbibliotheksprojekt*|  
+        |**Project** =|*Ihr Klassenbibliotheksprojekt*|  
         |**Betten in diesen Ordner ein** =|*(leer)*|  
   
          Informationen zu anderen Komponententypen finden Sie unter den Links im nächsten Abschnitt.  
@@ -100,36 +97,36 @@ In Visual Studio können Sie Erweiterungen zum Modellieren von Diagrammen defini
   
 #### <a name="to-run-an-extension-during-its-development"></a>So führen Sie eine Erweiterung während ihrer Entwicklung aus  
   
-1.  Wählen Sie im Menü [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **Debuggen** das Element **Start Debuggenging**aus.  
+1. Wählen Sie im Menü [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **Debuggen** das Element **Start Debuggenging**aus.  
   
      Das Projekt wird erstellt, und eine neue Instanz von [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] wird im Testmodus gestartet.  
   
-    -   Alternativ können Sie auch **Starten ohne Debugging**auswählen. Dadurch wird das Programm schneller gestartet.  
+    - Alternativ können Sie auch **Starten ohne Debugging**auswählen. Dadurch wird das Programm schneller gestartet.  
   
-2.  Erstellen oder öffnen Sie in der experimentellen Instanz von Visual Studio ein Modellierungsprojekt, und erstellen oder öffnen Sie ein Diagramm.  
+2. Erstellen oder öffnen Sie in der experimentellen Instanz von Visual Studio ein Modellierungsprojekt, und erstellen oder öffnen Sie ein Diagramm.  
   
      Die Erweiterung wird geladen und ausgeführt.  
   
-3.  Wenn Sie **Starten ohne Debugging** ausgewählt haben, den Debugger aber verwenden möchten, wechseln Sie zurück zur Hauptinstanz von Visual Studio. Klicken Sie im Menü **Debuggen** auf **An den Prozess anhängen**. Wählen Sie im Dialogfeld die experimentelle Instanz von Visual Studio aus, die den Programmnamen **devenv**hat.  
+3. Wenn Sie **Starten ohne Debugging** ausgewählt haben, den Debugger aber verwenden möchten, wechseln Sie zurück zur Hauptinstanz von Visual Studio. Klicken Sie im Menü **Debuggen** auf **An den Prozess anhängen**. Wählen Sie im Dialogfeld die experimentelle Instanz von Visual Studio aus, die den Programmnamen **devenv**hat.  
   
-##  <a name="Installing"></a> Installieren und Deinstallieren einer Erweiterung  
+## <a name="Installing"></a> Installieren und Deinstallieren einer Erweiterung  
  Führen Sie die folgenden Schritte aus, um Ihre Erweiterung in der Hauptinstanz von Visual Studio auszuführen, entweder auf dem eigenen Computer oder auf anderen Computern.  
   
-1.  Suchen Sie auf dem Computer nach der **.vsix** -Datei, die vom Erweiterungsprojekt erstellt wurde.  
+1. Suchen Sie auf dem Computer nach der **.vsix** -Datei, die vom Erweiterungsprojekt erstellt wurde.  
   
-    1.  Wählen Sie im **Projektmappen-Explorer**im Kontextmenü Ihres Projekts **Ordner in Windows Explorer öffnen**aus.  
+    1. Wählen Sie im **Projektmappen-Explorer**im Kontextmenü Ihres Projekts **Ordner in Windows Explorer öffnen**aus.  
   
-    2.  Suchen Sie die Datei **Bin\\\*\\**_IhrProjekt_**VSIX**  
+    2. Suchen Sie die Datei **Bin\\\*\\**_IhrProjekt_**VSIX**  
   
-2.  Kopieren Sie die **.vsix** -Datei auf den Zielcomputer, auf dem Sie die Erweiterung installieren möchten. Dies kann Ihr eigener Computer oder ein anderer Computer sein.  
+2. Kopieren Sie die **.vsix** -Datei auf den Zielcomputer, auf dem Sie die Erweiterung installieren möchten. Dies kann Ihr eigener Computer oder ein anderer Computer sein.  
   
-    -   Der Zielcomputer muss über eine der Editionen von Visual Studio verfügen, die Sie auf der Registerkarte **Installationsziele** von **source.extension.vsixmanifest**angegeben haben.  
+    - Der Zielcomputer muss über eine der Editionen von Visual Studio verfügen, die Sie auf der Registerkarte **Installationsziele** von **source.extension.vsixmanifest**angegeben haben.  
   
-3.  Öffnen Sie auf dem Zielcomputer die Datei **.vsix** , indem Sie beispielsweise darauf doppelklicken.  
+3. Öffnen Sie auf dem Zielcomputer die Datei **.vsix** , indem Sie beispielsweise darauf doppelklicken.  
   
      **Installer für Visual Studio-Erweiterungen** wird geöffnet, und die Erweiterung wird installiert.  
   
-4.  Starten Sie Visual Studio.  
+4. Starten Sie Visual Studio.  
   
 #### <a name="to-uninstall-an-extension"></a>So deinstallieren Sie eine Erweiterung  
   
@@ -141,13 +138,10 @@ In Visual Studio können Sie Erweiterungen zum Modellieren von Diagrammen defini
   
    In seltenen Fällen kann es vorkommen, dass eine fehlerhafte Erweiterung nicht geladen und ein Bericht im Fehlerfenster erstellt wird, aber im Erweiterungs-Manager keine Informationen angezeigt werden. In diesem Fall können Sie die Erweiterung entfernen, durch das Löschen der Datei von folgendem Speicherort, in denen *%LocalAppData%* ist in der Regel *DriveName*: \Users\\*Benutzername*\AppData\Local:  
   
-   *%LocalAppData%* **\Microsoft\VisualStudio\\[Version] \Extensions**  
+   *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**  
   
 ## <a name="see-also"></a>Siehe auch  
  [Definieren eines Profils zum Erweitern von UML](../modeling/define-a-profile-to-extend-uml.md)   
  [Definieren eines benutzerdefinierten Elements für die Modellerstellungstoolbox](../modeling/define-a-custom-modeling-toolbox-item.md)   
  [Definieren von validierungseinschränkungen für UML-Modelle](../modeling/define-validation-constraints-for-uml-models.md)   
  [Definieren eines Menübefehls in einem Modellierungsdiagramm](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
-
-
-

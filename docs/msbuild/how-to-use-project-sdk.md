@@ -1,22 +1,20 @@
 ---
-title: 'Gewusst wie: Verweis auf MSBuild-Projekt-SDK | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Verweisen auf ein MSBuild-Projekt-SDK | Microsoft-Dokumentation'
 ms.date: 01/25/2018
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, SDKs, SDK
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abc61f0e07ed1e22d0ec3b2c8fb15d66c9eea3cd
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 55fcc74069ab912a7ec0fb9a6c4996cfd0b9cc36
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220443"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977320"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Vorgehensweise: Verwenden von MSBuild-Projekt SDKs
 
@@ -96,7 +94,7 @@ Während der Auswertung des Projekts fügt [!INCLUDE[vstecmsbuild](../extensibil
 Beim Auswerten des Imports löst [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] den Pfad zum Projekt-SDK dynamisch basierend auf dem Namen und der Version auf, die Sie angegeben haben.  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bietet auch eine Liste der registrierten SDK-Resolver, die Plug-Ins sind, die Projekt-SDKs auf Ihrem Computer suchen.  Zu diesen Plug-Ins zählen:
 
 1. Ein NuGet-basierter Resolver, der Ihre konfigurierten Paketfeeds auf NuGet-Pakete abfragt, die der ID und Version des von Ihnen angegebenen SDK entsprechen.<br/>
-   Dieser Resolver ist nur aktiv, wenn Sie eine optionale Version angegeben haben, und kann für jedes benutzerdefinierte Projekt-SDK verwendet werden.  
+   Dieser Resolver ist nur aktiv, wenn Sie eine optionale Version angegeben haben, und kann für jedes benutzerdefinierte Projekt-SDK verwendet werden.
 2. Ein .NET CLI-Resolver, der mit .NET CLI installierte SDKs auflöst.<br/>
    Dieser Resolver sucht Projekt-SDKs wie z.B. `Microsoft.NET.Sdk` und `Microsoft.NET.Sdk.Web`, die Bestandteil des Produkts sind.
 3. Ein standardmäßiger Resolver, der mit MSBuild installierte SDKs auflöst.
@@ -112,11 +110,11 @@ Der NuGet-basierte SDK-Resolver unterstützt die Angabe einer Version in Ihrer [
 }
 ```
 
-Nur eine Version jedes Projekt-SDK kann während eines Builds verwendet werden.  Wenn Sie auf zwei unterschiedliche Versionen desselben Projekt-SDK verweisen, gibt MSBuild eine Warnung aus.  Sie sollten **keine** Version in Ihren Projekten angeben, wenn in Ihrer *global.json*-Datei eine Version angegeben ist.  
+Nur eine Version jedes Projekt-SDK kann während eines Builds verwendet werden.  Wenn Sie auf zwei unterschiedliche Versionen desselben Projekt-SDK verweisen, gibt MSBuild eine Warnung aus.  Sie sollten **keine** Version in Ihren Projekten angeben, wenn in Ihrer *global.json*-Datei eine Version angegeben ist.
 
 ## <a name="see-also"></a>Siehe auch
 
- [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)   
- [Anpassen des Builds](../msbuild/customize-your-build.md)   
- [Pakete, Metadaten und Frameworks](/dotnet/core/packages)   
- [Erweiterungen des CSPROJ-Formats für .NET Core](/dotnet/core/tools/csproj)
+- [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)
+- [Customize your build (Anpassen Ihres Builds)](../msbuild/customize-your-build.md)
+- [Pakete, Metadaten und Frameworks](/dotnet/core/packages)
+- [Erweiterungen des CSPROJ-Formats für .NET Core](/dotnet/core/tools/csproj)

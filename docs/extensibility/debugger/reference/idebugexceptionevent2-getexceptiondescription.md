@@ -1,30 +1,32 @@
 ---
 title: IDebugExceptionEvent2::GetExceptionDescription | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugExceptionEvent2::GetExceptionDescription
 helpviewer_keywords:
 - IDebugExceptionEvent2::GetExceptionDescription
 ms.assetid: d07d458f-5729-47e4-9b77-1bd59c61a75a
-author: gregvanl
+caps.latest.revision: 11
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 90ca211f8d1c4e253de2934e89605508af867a0d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 732ca932179cee48a3395e6cdb765c244f007d0f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910125"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62920185"
 ---
 # <a name="idebugexceptionevent2getexceptiondescription"></a>IDebugExceptionEvent2::GetExceptionDescription
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Ruft eine anzeigbare Beschreibung der Ausnahme ab.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT GetExceptionDescription(   
    BSTR* pbstrDescription  
 );  

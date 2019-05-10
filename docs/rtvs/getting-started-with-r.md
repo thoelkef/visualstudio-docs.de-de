@@ -2,27 +2,26 @@
 title: 'Tutorial: Erste Schritte mit R'
 description: Exemplarische Vorgehensweise zur Verwendung von R in Visual Studio, einschließlich Projekterstellung, interaktivem Fenster, Codebearbeitung und Debuggen.
 ms.date: 06/29/2017
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: c156993bf2fe425368a2cfebcaca8ac18ea790f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: df46a2731f9923d85a16082f96c44947099db592
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944625"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000512"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Erste Schritte mit R Tools für Visual Studio
 
-Sobald Sie R Tools für Visual Studio (RTVS) installiert haben (siehe [Installation](installing-r-tools-for-visual-studio.md)), erhalten Sie schnell einen Vorgeschmack der Funktionalität, die diese Tools bieten. 
+Sobald Sie R Tools für Visual Studio (RTVS) installiert haben (siehe [Installation](installing-r-tools-for-visual-studio.md)), erhalten Sie schnell einen Vorgeschmack der Funktionalität, die diese Tools bieten.
 
 ## <a name="create-an-r-project"></a>Erstellen eines R-Projekts
 
-1. Starten Sie Visual Studio.
+1. Öffnen Sie Visual Studio.
 1. Klicken Sie auf **Datei** > **Neu** > **Projekt** (**STRG**+**UMSCHALTTASTE**+**N**).
 1. Wählen Sie unter **Vorlagen** > **R** „R-Projekt“ aus, weisen Sie dem Projekt einen Namen und Speicherort zu, und klicken Sie auf **OK**:
 
@@ -93,7 +92,7 @@ Als Beispiel erstellen die folgenden Schritte einen kleinen Code zum Erforschen 
 
 > [!Tip]
 > Lernen Sie die Muster kennen, mit denen Sie Bearbeitungen durchführen und **STRG**+**EINGABETASTE** drücken (oder alles mit **STRG**+**A** auswählen und danach **STRG**+**EINGABETASTE** drücken), um den Code schnell auszuführen. Das ist viel effizienter, als wenn Sie für denselben Vorgang die Maus verwenden.
-> 
+>
 > Sie können zusätzlich das Plotfenster durch Drag & Drop aus dem Visual Studio-Rahmen nehmen und es beliebig auf Ihrem Bildschirm platzieren. Sie können dann die Größe des Plotfensters wie gewünscht ändern und es dann in einer Bild- oder PDF-Datei speichern.
 
 1. Fügen Sie weitere Codezeilen hinzu, um einen zweiten Plot einzuschließen:

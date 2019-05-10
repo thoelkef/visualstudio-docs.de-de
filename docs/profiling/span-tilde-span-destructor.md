@@ -1,8 +1,6 @@
 ---
 title: 'span:: ~ span-Destruktor | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::span::~span
@@ -11,29 +9,32 @@ helpviewer_keywords:
 ms.assetid: 9ff61542-9be7-4e81-bfe5-5d2c6eb112c1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebde2e9659716a73943e2861f8856f6a9817b34b
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9b7174418267a77cc668ab0a79092fc7daefbf58
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35669018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979665"
 ---
 # <a name="spanspan-destructor"></a>span::~span-Destruktor
-Zerstört das `span`-Objekt und gibt seine Ressourcen frei.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-~span();  
-```  
-  
-## <a name="requirements"></a>Anforderungen  
- **Header:** *cvmarkersobj.h*  
-  
- **Namespace:** Concurrency::diagnostic
- 
- ## <a name="see-also"></a>Siehe auch
- [span-Klasse](../profiling/span-class.md)
+
+Zerstört das `span`-Objekt und gibt seine Ressourcen frei.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+~span();
+```
+
+## <a name="requirements"></a>Anforderungen
+
+**Header:** *cvmarkersobj.h*
+
+**Namespace:** Concurrency::diagnostic
+
+## <a name="see-also"></a>Siehe auch
+
+- [span-Klasse](../profiling/span-class.md)

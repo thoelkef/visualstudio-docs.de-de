@@ -1,26 +1,21 @@
 ---
 title: Vorlagen für die Websiteunterstützung | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - we site projects, templates
 ms.assetid: 37173c97-486b-4b3c-8ed3-cf5890c4de23
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: eebacb3006826a90320cbc61edf7d56467e688ce
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dca7768f31219328648d457d188086e0185e2ffc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760221"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044373"
 ---
 # <a name="web-site-support-templates"></a>Vorlagen für die Websiteunterstützung
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,66 +35,66 @@ ms.locfileid: "51760221"
 ## <a name="project-templates"></a>Projektvorlagen  
  Website-Projektvorlagen werden verwendet, um als Reaktion auf neue Websites erstellen die **neue Website** Befehl die **Datei** Menü. Drei Typen von Website-Projekt werden derzeit unterstützt:  
   
--   Leere Website-Projekten  
+- Leere Website-Projekten  
   
--   Website-Projekten  
+- Website-Projekten  
   
--   Web Service-Projekte  
+- Web Service-Projekte  
   
 ### <a name="empty-web-site-projects"></a>Leere Website-Projekten  
  Erstellen dieser Dateien eine neue leere Website als Reaktion auf die **leere Website** Befehl, der verfügbar ist, nachdem auf **neue Website** auf die **Datei** Menü:  
   
--   EmptyWeb.vstemplate  
+- EmptyWeb.vstemplate  
   
      Die Vorlagendatei, die die Erstellung der neue, leere Website führt.  
   
--   EmptyWeb.webproj  
+- EmptyWeb.webproj  
   
      Diese Datei ist ein Artefakt des Projektsystems Vorlage. Es erfüllt den Projektverweis für die Datei in der Datei EmptyWeb.vstemplate.  
   
 ### <a name="web-site-projects"></a>Website-Projekten  
  Diese Dateien eine neue Website erstellen, als Reaktion auf die **ASP.NET-Website** Befehl, der verfügbar ist, nachdem auf **neue Website** auf die **Datei** Menü:  
   
--   Default.aspx  
+- Default.aspx  
   
      Standard-Startseite für die neue Website. Language-Attribut gibt an, die Codebehind-Sprache, und das CodeFile-Attribut gibt an, die abhängige Datei, die den Codebehind-Code, der mit dieser Seite verknüpft sind.  
   
--   "Default.aspx". *Erweiterung*  
+- Default.aspx.*extension*  
   
      Die abhängige Datei, die den Codebehind-Code für die Standard-Startseite enthält. Die Codebehind-Sprache bestimmt das *Erweiterung* dieser Datei.  
   
--   web.config  
+- web.config  
   
      Die Konfigurationsdatei für den Stamm web.site.  
   
--   WebApplication.vstemplate  
+- WebApplication.vstemplate  
   
      Die Vorlagendatei, die bestimmt den Inhalt der Website-Lösung und erzwingt die Erstellung des dem App_Data-Ordner.  
   
--   WebApplication.webproj  
+- WebApplication.webproj  
   
      Diese Datei ist ein Artefakt des Projektsystems Vorlage. Es erfüllt den Projektverweis für die Datei in der Datei WebApplication.vstemplate.  
   
 ### <a name="web-service-projects"></a>Web Service-Projekte  
  Diese Dateien eine neue Website erstellen, als Reaktion auf die **ASP.NET Web Service** Befehl der verfügbar ist, nachdem auf **neue Website** auf die **Datei** Menü:  
   
--   Service.asmx  
+- Service.asmx  
   
      Die HTML-Seite für den neuen Webdienst. Language-Attribut gibt an, die Codebehind-Sprache, und das CodeBehind-Attribut gibt an, die abhängige Datei, die den Codebehind-Code, der diesem Dienst zugeordnet.  
   
--   -Dienst. *Erweiterung*  
+- -Dienst. *extension*  
   
      Die abhängige Datei, die die Dienstklasse implementiert wird. Die Codebehind-Sprache bestimmt das *Erweiterung* dieser Datei.  
   
--   web.config  
+- web.config  
   
--   Die Konfigurationsdatei für den Stamm web.site.  
+- Die Konfigurationsdatei für den Stamm web.site.  
   
--   WebService.vstemplate  
+- WebService.vstemplate  
   
      Die Vorlagendatei, die bestimmt den Inhalt der Website-Lösung und erzwingt die Erstellung der Ordner App_Data und "App_Code". Der Dienst. *Erweiterung* Datei in den Ordner "App_Code" kopiert.  
   
--   WebService.webproj  
+- WebService.webproj  
   
      Diese Datei ist ein Artefakt des Projektsystems Vorlage. Es erfüllt den Projektverweis für die Datei in der Datei WebService.vstemplate.  
   
@@ -109,33 +104,33 @@ ms.locfileid: "51760221"
 ## <a name="project-item-templates"></a>Projektelementvorlagen  
  Website-Projektelementvorlagen werden verwendet, um das Hinzufügen neuer Web-Seiten zu einer Website als Reaktion auf die **vorhandenes Element hinzufügen** Befehl. Diese Arten von Webseiten werden derzeit unterstützt:  
   
--   Neue Klasse  
+- Neue Klasse  
   
--   Neue HTML-Seite  
+- Neue HTML-Seite  
   
--   Neues Web Form  
+- Neues Web Form  
   
--   Neue Masterseite  
+- Neue Masterseite  
   
 ### <a name="new-class"></a>Neue Klasse  
  Diese Vorlage erstellt eine neue Quelldatei, die als Reaktion auf eine leere Klasse definiert die **neue Klasse hinzufügen** Befehl.  
   
--   Klasse. *Erweiterung*  
+- Klasse. *extension*  
   
      Die Quelldatei, die die leere Klasse implementiert. Die Codebehind-Sprache bestimmt das *Erweiterung* dieser Datei.  
   
--   Class.VSTEMPLATE  
+- Class.VSTEMPLATE  
   
      Die Vorlagendatei, die die Quelldatei erstellt und seinen Inhalt bestimmt.  
   
 ### <a name="new-html-page"></a>Neue HTML-Seite  
  Diese Vorlage erstellt eine neue Webseite in Reaktion auf die **neue HTML-Seite hinzufügen** Befehl.  
   
--   HTMLPage.htm  
+- HTMLPage.htm  
   
      Der ab Inhalt der Webseite. Diese Webseite weist normalerweise keine abhängigen zugeordneten Codebehind-Datei. Um eine intelligente Seite mit einer zugeordneten Codebehind-Datei zu erstellen, verwenden Sie stattdessen die Web Form-Vorlage.  
   
--   HTMLPage.vstemplate  
+- HTMLPage.vstemplate  
   
      Die Vorlagendatei, die die Webseite erstellt und dessen Inhalt bestimmt.  
   
@@ -146,27 +141,27 @@ ms.locfileid: "51760221"
   
  Wählen Sie zum Erstellen einer Inhaltsseite für eine ausgewählte Masterseite **Masterseite auswählen**.  
   
--   "Webform.aspx"  
+- WebForm.aspx  
   
      Der ab Inhalt der Webseite. Diese Webseite hat keine abhängigen zugeordneten Codebehind-Datei.  
   
--   WebForm_cb.aspx  
+- WebForm_cb.aspx  
   
      Der ab Inhalt der Webseite. Diese Webseite ist eine abhängige zugeordneten Codebehind-Datei.  
   
--   CodeBehind. *Erweiterung*  
+- Codebehind. *extension*  
   
      Die abhängige Datei, die der Webform-Klasse implementiert. Die Codebehind-Sprache bestimmt das *Erweiterung* dieser Datei.  
   
--   ContentPage.aspx  
+- ContentPage.aspx  
   
      Der ab Inhalt der Webseite als Inhaltsseite. Diese Webseite hat keine abhängigen zugeordneten Codebehind-Datei.  
   
--   ContentPage_cb.aspx  
+- ContentPage_cb.aspx  
   
      Der ab Inhalt der Webseite als Inhaltsseite. Diese Webseite ist eine abhängige zugeordneten Codebehind-Datei.  
   
--   WebForm.vstemplate  
+- WebForm.vstemplate  
   
      Die Vorlagendatei, die bestimmt, den Inhalt, der die neue Webseite und der abhängigen Datei, sofern vorhanden.  
   
@@ -175,22 +170,21 @@ ms.locfileid: "51760221"
   
  Wählen Sie zum Erstellen einer abhängigen Codebehind-Quelldatei **Code in eigener Datei platzieren**. Andernfalls wird eine einzelne Webseite erstellt, die einen leeren Block ein Skript keinen und \<% Page % > Anweisungen für eine abhängige Datei einbinden.  
   
--   MasterPage.master  
+- MasterPage.master  
   
      Der ab Inhalt der Masterseite. Diese Masterseite besitzt keine abhängigen zugeordneten Codebehind-Datei.  
   
--   MasterPage_cb.master  
+- MasterPage_cb.master  
   
      Der ab Inhalt der Masterseite. Diese Masterseite verfügt über eine abhängige zugeordneten Codebehind-Datei.  
   
--   CodeBehind. *Erweiterung*  
+- Codebehind.*extension*  
   
      Die abhängige Datei, die die Masterseite-Klasse implementiert. Die Codebehind-Sprache bestimmt das *Erweiterung* dieser Datei.  
   
--   MasterPage.vstemplate  
+- MasterPage.vstemplate  
   
      Die Vorlagendatei, die bestimmt, den Inhalt der neuen Masterseite und die abhängige Datei, sofern vorhanden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Websiteunterstützung](../../extensibility/internals/web-site-support.md)
-

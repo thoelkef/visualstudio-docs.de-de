@@ -2,7 +2,6 @@
 title: 'Idebugdocumenthelper:: Adddbcstext | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 86d4ac5cb7371f35edb84a44159e589c898bfa3d
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
-ms.translationtype: MT
+ms.openlocfilehash: 2d346f3877574c45aaff6dcef8ca99f699a42552
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54090388"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446654"
 ---
 # <a name="idebugdocumenthelperadddbcstext"></a>IDebugDocumentHelper::AddDBCSText
 Fügt eine DBCS-Zeichenfolge am Ende dieses Dokuments.  
@@ -52,9 +51,9 @@ HRESULT AddDBCSText(
  Diese Methode generiert `IDebugDocumentTextEvents` Benachrichtigungen.  
   
 > [!NOTE]
->  Wenn diese Methode, nach dem aufgerufen wird `IDebugDocumentHelper::AddDeferredText` aufgerufen wurde, `E_FAIL` zurückgegeben wird.  
+> Wenn diese Methode, nach dem aufgerufen wird `IDebugDocumentHelper::AddDeferredText` aufgerufen wurde, `E_FAIL` zurückgegeben wird.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugDocumentHelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)   
- [Adddeferredtext](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
+ [IDebugDocumentHelper::AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
  [IDebugDocumentTextEvents-Schnittstelle](../../winscript/reference/idebugdocumenttextevents-interface.md)

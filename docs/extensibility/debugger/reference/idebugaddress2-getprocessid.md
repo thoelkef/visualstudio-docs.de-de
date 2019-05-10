@@ -1,7 +1,7 @@
 ---
 title: IDebugAddress2::GetProcessID | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugAddress2::GetProcessID
 helpviewer_keywords:
@@ -9,39 +9,40 @@ helpviewer_keywords:
 ms.assetid: 2c18889d-074a-4b95-87b4-bf1a067f44ed
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 999ac618ff3656d4aea1fc96cc0b54427d55e285
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3d2fce11c4ddd5a2ca882749ff4ae4a9b3ee0434
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822715"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56723317"
 ---
 # <a name="idebugaddress2getprocessid"></a>IDebugAddress2::GetProcessID
-Ruft die ID des Prozesses, der das Objekt, das dargestellt durch diese besitzt [IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md) Schnittstelle.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-HRESULT GetProcessID (  
-   DWORD* pProcID  
-);  
-```  
-  
-```csharp  
-int GetProcessID (  
-   out uint pProcID  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pProcID`  
- [out] Die Prozess-ID.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md)
+Ruft die ID des Prozesses, der das Objekt, das dargestellt durch diese besitzt [IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md) Schnittstelle.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+HRESULT GetProcessID (
+   DWORD* pProcID
+);
+```
+
+```csharp
+int GetProcessID (
+   out uint pProcID
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pProcID`
+
+ [out] Die Prozess-ID.
+
+## <a name="return-value"></a>Rückgabewert
+ Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.
+
+## <a name="see-also"></a>Siehe auch
+- [IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md)

@@ -1,14 +1,9 @@
 ---
 title: Aktualisieren von Projekten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - upgrading VSPackages
 - upgrading applications, strategies
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a3f045d947f968655923df16de8c02aafc12a34b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8e838cb02aa1a620356f96d9e77f1752797ac409
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441240"
 ---
 # <a name="upgrading-projects"></a>Aktualisieren von Projekten
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,9 +27,9 @@ Das Projektmodell wird nun von einer Version von [!INCLUDE[vsprvs](../../include
 ## <a name="upgrade-strategies"></a>Aktualisierungsstrategien  
  Um ein Upgrade zu unterstützen, muss die Project-System-Implementierung definieren und implementieren eine Strategie für die Aktualisierung. Bei der Bestimmung Ihrer Strategie, können Sie auswählen, um Side-by-Side (SxS) Sicherung, Sicherung kopieren oder beides zu unterstützen.  
   
--   Parallele Sicherung bedeutet, dass ein Projekt nur die Dateien kopiert, die ein Upgrade Direktes Hinzufügen einer geeigneten Dateinamensuffix, z. B. ".old".  
+- Parallele Sicherung bedeutet, dass ein Projekt nur die Dateien kopiert, die ein Upgrade Direktes Hinzufügen einer geeigneten Dateinamensuffix, z. B. ".old".  
   
--   Kopieren Sie die Sicherung bedeutet, dass ein Projekt alle Projektelemente in einen vom Benutzer bereitgestellte Sicherungsspeicherort kopiert. Die relevanten Dateien auf den Speicherort des ursprünglichen Projekts werden anschließend aktualisiert.  
+- Kopieren Sie die Sicherung bedeutet, dass ein Projekt alle Projektelemente in einen vom Benutzer bereitgestellte Sicherungsspeicherort kopiert. Die relevanten Dateien auf den Speicherort des ursprünglichen Projekts werden anschließend aktualisiert.  
   
 ## <a name="how-upgrade-works"></a>Funktionsweise von Upgrades  
  Wenn eine Projektmappe, die in einer früheren Version erstellten [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] wird geöffnet, in einer neueren Version, die IDE-Überprüfungen, die die Projektmappendatei, um festzustellen, ob sie ein Upgrade erforderlich ist. Wenn ein Upgrade erforderlich ist, ist die **Aktualisierungs-Assistenten** wird automatisch gestartet, um den Benutzer über den Upgradeprozess geführt.  
@@ -51,7 +46,7 @@ Das Projektmodell wird nun von einer Version von [!INCLUDE[vsprvs](../../include
  Nach der Aktualisierung aller relevanten globale Dateien kann jedes Projekt-Factory zum Instanziieren ein Projekt auswählen. Die Projekt-Implementierung unterstützen muss <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> Methode wird aufgerufen, um alle relevanten Projektelemente zu aktualisieren.  
   
 > [!NOTE]
->  Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> Methode der SVsUpgradeLogger-Dienst nicht bereitstellt. Dieser Dienst abgerufen werden kann, durch den Aufruf <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>.  
+> Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> Methode der SVsUpgradeLogger-Dienst nicht bereitstellt. Dieser Dienst abgerufen werden kann, durch den Aufruf <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>.  
   
 ## <a name="best-practices"></a>Bewährte Methoden  
  Verwenden der <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> Dienst zu überprüfen, ob Sie eine Datei vor der Bearbeitung bearbeiten können, und vor dem Speichern speichern können. Dadurch wird die Sicherung und Upgrade Implementierungen verarbeiten, Projektdateien unter quellcodeverwaltung, Dateien mit nicht genügend Berechtigungen, und So weiter.  
@@ -64,4 +59,3 @@ Das Projektmodell wird nun von einer Version von [!INCLUDE[vsprvs](../../include
  [Projekte](../../extensibility/internals/projects.md)   
  [Aktualisieren von benutzerdefinierten Projekten](../../misc/upgrading-custom-projects.md)   
  [Aktualisieren von Projektelementen](../../misc/upgrading-project-items.md)
-

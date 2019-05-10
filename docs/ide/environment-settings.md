@@ -1,23 +1,22 @@
 ---
 title: Umgebungseinstellungen
 ms.date: 11/21/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba582f0c7445a64eb27ea2d3875cd7072f65fe3d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c799d903c29d745d97a407c4c25f1285a5f35151
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978209"
 ---
 # <a name="environment-settings-for-visual-studio"></a>Umgebungseinstellungen für Visual Studio
 
-Wenn Sie Visual Studio zum ersten Mal starten, können Sie die Entwicklungsumgebung für den Entwicklungstyp, den Sie am häufigsten verwenden, optimieren, indem Sie mehrere Einstellungen auswählen. Jede Sammlung optimiert Elemente wie Tastenkombinationen, Fensterlayouts, Projekt- und Elementvorlagen und Befehlssichtbarkeit.
+Wenn Sie Visual Studio zum ersten Mal öffnen, können Sie die Entwicklungsumgebung für den am häufigsten verwendeten Entwicklungstyp optimieren, indem Sie mehrere Einstellungen auswählen. Jede Sammlung optimiert Elemente wie Tastenkombinationen, Fensterlayouts, Projekt- und Elementvorlagen und Befehlssichtbarkeit.
 
 Die folgenden Einstellungssammlungen sind verfügbar:
 
@@ -31,7 +30,7 @@ Die folgenden Einstellungssammlungen sind verfügbar:
 
 ## <a name="reset-settings"></a>Zurücksetzen von Einstellungen
 
-Gehen Sie folgendermaßen vor, um Ihre Entwicklungseinstellungen zu ändern, nachdem Sie Visual Studio zum ersten Mal gestartet haben:
+Gehen Sie folgendermaßen vor, um Ihre Entwicklungseinstellungen zu ändern, nachdem Sie Visual Studio zum ersten Mal geöffnet haben:
 
 1. Klicken Sie in der Menüleiste auf **Extras** > **Einstellungen importieren/exportieren**, um den **Assistenten zum Importieren und Exportieren von Einstellungen** zu öffnen.
 

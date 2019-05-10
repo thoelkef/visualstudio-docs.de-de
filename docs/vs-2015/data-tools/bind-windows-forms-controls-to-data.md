@@ -1,12 +1,9 @@
 ---
 title: Windows Forms-Steuerelementen an Daten binden | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,18 +18,17 @@ ms.assetid: 0163a34a-38cb-40b9-8f38-3058a90caf21
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d1d8710ef98339c0cf4b44ddd3fa41cca8676570
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3541dada6167bd2f0a95913d9ccc385dc3e5ccc3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237470"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439470"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>Binden von Windows Forms-Steuerelementen an Daten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Sie können Datenquellen an Steuerelemente binden, durch Ziehen von Objekten aus der **Datenquellen** Fenster auf ein Windows-Formular oder auf ein vorhandenes Steuerelement in einem Formular. Bevor Sie Elemente ziehen, können Sie den Typ des Steuerelements festlegen, die, denen Sie binden möchten. Je nachdem, ob Sie in der Tabelle selbst oder eine einzelne Spalte auswählen, werden unterschiedliche Werte angezeigt.  Sie können auch benutzerdefinierte Werte festlegen. Für eine Tabelle bedeutet "Details" an, dass jede Spalte an einem separaten Steuerelement gebunden ist.  
   
  ![Binden Sie die Datenquelle an DataGridView](../data-tools/media/raddata-bind-data-source-to-datagridview.png "Raddata Bind-DataSource zu DataGridView")  
@@ -40,7 +36,7 @@ Sie können Datenquellen an Steuerelemente binden, durch Ziehen von Objekten aus
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="bind-to--data-in-a-datagridview-control"></a>Binden Sie an Daten in einem DataGridView-Steuerelement  
- Für DataGridView wird die gesamte Tabelle auf dieses einzelne Steuerelement gebunden. Wenn Sie ein DataGridView-Steuerelement auf das Formular ziehen, wird ein Tool für die Navigation in Datensätzen entfernen (<xref:System.Windows.Forms.BindingNavigator>) wird ebenfalls angezeigt. Ein [DataSet](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource>, und <xref:System.Windows.Forms.BindingNavigator> werden in der Komponentenleiste angezeigt. In der folgenden Abbildung wird ein TableAdapterManager ebenfalls hinzugefügt, da die Customers-Tabelle eine Beziehung zu der Orders-Tabelle hat. Diese Variablen werden in den automatisch generierten Code als Private Member in der Form-Klasse deklariert. Die automatisch generierten Code für das Ausfüllen der DataGridView befindet sich in den Form_load-Ereignishandler. Der Code zum Speichern der Daten zum Aktualisieren der Datenbank befindet sich in der Save-Ereignishandler für das BindingNavigator. Sie können verschieben oder diesen Code nach Bedarf ändern.  
+ Für DataGridView wird die gesamte Tabelle auf dieses einzelne Steuerelement gebunden. Wenn Sie ein DataGridView-Steuerelement auf das Formular ziehen, wird ein Tool für die Navigation in Datensätzen entfernen (<xref:System.Windows.Forms.BindingNavigator>) wird ebenfalls angezeigt. Ein [DataSet](../data-tools/dataset-tools-in-visual-studio.md), TableAdapter <xref:System.Windows.Forms.BindingSource>, und <xref:System.Windows.Forms.BindingNavigator> werden in der Komponentenleiste angezeigt. In der folgenden Abbildung wird ein TableAdapterManager ebenfalls hinzugefügt, da die Customers-Tabelle eine Beziehung zu der Orders-Tabelle hat. Diese Variablen werden in den automatisch generierten Code als Private Member in der Form-Klasse deklariert. Die automatisch generierten Code für das Ausfüllen der DataGridView befindet sich in den Form_load-Ereignishandler. Der Code zum Speichern der Daten zum Aktualisieren der Datenbank befindet sich in der Save-Ereignishandler für das BindingNavigator. Sie können verschieben oder diesen Code nach Bedarf ändern.  
   
  ![GridView mit BindingNavigator](../data-tools/media/raddata-gridview-with-bindingnavigator.png "Raddata GridView mit BindingNavigator")  
   
@@ -58,7 +54,7 @@ Sie können Datenquellen an Steuerelemente binden, durch Ziehen von Objekten aus
  ![Binden Sie die Datenquelle zu Details](../data-tools/media/raddata-bind-data-source-to-details.png "Raddata Bind-DataSource zu Details")  
   
 > [!IMPORTANT]
->  Beachten Sie, dass in der vorherigen Abbildung, die Sie aus der Eigenschaft "Orders" in der Customers-Tabelle, nicht aus der Orders-Tabelle ziehen. Durch die Bindung an die Customer.Orders-Eigenschaft, werden vorgenommen, die in der DataGridView Navigationsbefehle sofort in die Detailsteuerelemente. Wenn Sie aus der Tabelle Orders gezogen haben, die Steuerelemente würde weiterhin auf das Dataset gebunden werden, aber nicht würden sie nicht mit dem DataGridView synchronisiert.  
+> Beachten Sie, dass in der vorherigen Abbildung, die Sie aus der Eigenschaft "Orders" in der Customers-Tabelle, nicht aus der Orders-Tabelle ziehen. Durch die Bindung an die Customer.Orders-Eigenschaft, werden vorgenommen, die in der DataGridView Navigationsbefehle sofort in die Detailsteuerelemente. Wenn Sie aus der Tabelle Orders gezogen haben, die Steuerelemente würde weiterhin auf das Dataset gebunden werden, aber nicht würden sie nicht mit dem DataGridView synchronisiert.  
   
  Die folgende Abbildung zeigt die von datengebundenen Steuerelementen, die dem Formular hinzugefügt werden, nachdem die Order-Eigenschaft in der Tabelle Customers, klicken Sie auf "Details gebunden ist" in der **Datenquellen** Fenster.  
   
@@ -68,4 +64,3 @@ Sie können Datenquellen an Steuerelemente binden, durch Ziehen von Objekten aus
   
 ## <a name="see-also"></a>Siehe auch  
  [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-

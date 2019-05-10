@@ -1,14 +1,9 @@
 ---
 title: Befehl „Anweisung auswerten“ | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - debug.evaluatestatement
 helpviewer_keywords:
@@ -18,18 +13,17 @@ ms.assetid: 032039bc-9477-4f93-9b9d-66d4be0e90f4
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d3e50b519b162201d741f2460a8e9dbbe675c16e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f774458eb63d9e56b99a635e7b32309375a903ef
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230320"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669236"
 ---
 # <a name="evaluate-statement-command"></a>Befehl "Anweisung auswerten"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Wertet die angegebene Anweisung aus und zeigt sie an.  
   
 ## <a name="syntax"></a>Syntax  
@@ -42,7 +36,7 @@ Debug.EvaluateStatement text
  `text`  
  Erforderlich. Die auszuwertende Anweisung.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Abhängig vom Fenster, das zur Eingabe des Befehls **Anweisung auswerten** verwendet wird, wird ein Gleichheitszeichen (=) als Vergleichsoperator oder als Zuweisungsoperator interpretiert.  
   
  Im Fenster **Befehl** wird ein Gleichheitszeichen (=) als Vergleichsoperator interpretiert. Wenn die Werte der Variablen `a` und `b` beispielsweise unterschiedlich sind, gibt der Befehl  
@@ -73,6 +67,3 @@ Debug.EvaluateStatement text
  [Befehlsfenster](../../ide/reference/command-window.md)   
  [Such-/Befehlsfeld](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

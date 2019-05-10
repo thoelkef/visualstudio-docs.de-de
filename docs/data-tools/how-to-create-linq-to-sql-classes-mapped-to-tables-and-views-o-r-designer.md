@@ -5,17 +5,15 @@ ms.topic: conceptual
 ms.assetid: 0fb78bbc-7a78-4ab4-b32f-85ece912e660
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b66559061f0d66699a7505c71541b237814812c4
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
-ms.translationtype: MTE95
+ms.openlocfilehash: 1b9fb62fe3b6d92c617fc89f083aadcd262579e4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305597"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567008"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Vorgehensweise: Erstellen von LINQ to SQL-Klassen, die Tabellen und Ansichten zugeordnet sind (O/R-Designer)
 
@@ -28,15 +26,15 @@ ms.locfileid: "52305597"
 
 Ziehen von Tabellen oder Ansichten von **Server-Explorer** oder **Datenbank-Explorer** auf die **O/R Designer** erstellt Entitätsklassen zusätzlich zu den <xref:System.Data.Linq.DataContext> Methoden, die dienen zum Ausführen von Updates.
 
-Standardmäßig erstellt die [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]-Laufzeit die Logik zum Speichern von in einer aktualisierbaren Entitätsklasse vorgenommenen Änderungen in der Datenbank. Diese Logik basiert auf dem Schema der Tabelle (den Spaltendefinitionen und Primärschlüsselinformationen). Wenn Sie dieses Verhalten nicht wünschen, können Sie eine Entitätsklasse konfigurieren, um anstelle des [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]-Laufzeitverhaltens gespeicherte Prozeduren zum Durchführen von Einfüge-, Update- und Löschvorgängen zu verwenden. Weitere Informationen finden Sie unter [Vorgehensweise: Zuweisen von gespeicherten Prozeduren zum Ausführen von Updates, einfügungen und löschen (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
+Standardmäßig erstellt die [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]-Laufzeit die Logik zum Speichern von in einer aktualisierbaren Entitätsklasse vorgenommenen Änderungen in der Datenbank. Diese Logik basiert auf dem Schema der Tabelle (den Spaltendefinitionen und Primärschlüsselinformationen). Wenn Sie dieses Verhalten nicht wünschen, können Sie eine Entitätsklasse konfigurieren, um anstelle des [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]-Laufzeitverhaltens gespeicherte Prozeduren zum Durchführen von Einfüge-, Update- und Löschvorgängen zu verwenden. Weitere Informationen finden Sie unter [Vorgehensweise: Zuweisen von gespeicherten Prozeduren zum Durchführen von Aktionen zum Aktualisieren, Einfügen und Löschen (O/R-Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
 ### <a name="to-create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>So erstellen Sie LINQ to SQL-Klassen, die Datenbanktabellen oder -ansichten zugeordnet sind
 
-1.  Erweitern Sie unter **Server** oder im **Datenbank-Explorer** den Knoten **Tabellen** oder **Ansichten**, und suchen Sie die Datenbanktabelle oder -ansicht, die Sie in Ihrer Anwendung verwenden möchten.
+1. Erweitern Sie unter **Server** oder im **Datenbank-Explorer** den Knoten **Tabellen** oder **Ansichten**, und suchen Sie die Datenbanktabelle oder -ansicht, die Sie in Ihrer Anwendung verwenden möchten.
 
-2.  Ziehen Sie die Tabelle oder Ansicht auf die **O/R Designer**.
+2. Ziehen Sie die Tabelle oder Ansicht auf die **O/R Designer**.
 
      Eine Entitätsklasse wird erstellt und auf der Entwurfsoberfläche angezeigt. Die Entitätsklasse verfügt über Eigenschaften, die sich auf die Spalten in der ausgewählten Tabelle oder Ansicht beziehen.
 
@@ -46,27 +44,27 @@ Nach der Erstellung von Entitätsklassen mithilfe der **O/R Designer**, können 
 
 ### <a name="to-create-an-object-data-source-based-on-linq-to-sql-entity-classes"></a>So erstellen Sie eine Objektdatenquelle auf Grundlage von LINQ to SQL-Entitätsklassen
 
-1.  Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**, um ein Projekt zu erstellen.
+1. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**, um ein Projekt zu erstellen.
 
-2.  Zum Öffnen der **Datenquellen** Fenster auf die **Daten** Menü klicken Sie auf **Datenquellen anzeigen**.
+2. Zum Öffnen der **Datenquellen** Fenster auf die **Daten** Menü klicken Sie auf **Datenquellen anzeigen**.
 
-3.  Klicken Sie im **Datenquellenfenster** auf **Neue Datenquelle hinzufügen**.
+3. Klicken Sie im **Datenquellenfenster** auf **Neue Datenquelle hinzufügen**.
 
-4.  Klicken Sie auf der Seite **Datenquellentyp auswählen** auf **Objekt**, und klicken Sie dann auf **Weiter**.
+4. Klicken Sie auf der Seite **Datenquellentyp auswählen** auf **Objekt**, und klicken Sie dann auf **Weiter**.
 
-5.  Erweitern Sie die Knoten, suchen und wählen Sie die Klasse aus.
+5. Erweitern Sie die Knoten, suchen und wählen Sie die Klasse aus.
 
     > [!NOTE]
     > Wenn die Klasse **Customer** nicht verfügbar ist, beenden Sie den Assistenten, erstellen Sie das Projekt, und führen Sie den Assistenten erneut aus.
 
-6.  Klicken Sie auf **Fertig stellen**, um die Datenquelle zu erstellen, und fügen Sie die Entitätsklasse **Customer** zum Fenster **Datenquellen** hinzu.
+6. Klicken Sie auf **Fertig stellen**, um die Datenquelle zu erstellen, und fügen Sie die Entitätsklasse **Customer** zum Fenster **Datenquellen** hinzu.
 
-7.  Ziehen Sie Elemente aus dem Fenster **Datenquellen** auf ein Formular.
+7. Ziehen Sie Elemente aus dem Fenster **Datenquellen** auf ein Formular.
 
 ## <a name="see-also"></a>Siehe auch
 
 - [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Walkthrough: Creating LINQ to SQL classes (O-R Designer) (Exemplarische Vorgehensweise: Erstellen von LINQ to SQL-Klassen (O/R-Designer))](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [Exemplarische Vorgehensweise: Erstellen von LINQ to SQL-Klassen (O / R-Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [DataContext methods (O/R Designer) (DataContext-Methoden (O/R-Designer))](../data-tools/datacontext-methods-o-r-designer.md)
 - [Vorgehensweise: Erstellen von DataContext-Methoden, die zu gespeicherten Prozeduren und Funktionen zugeordnet sind (O/R-Designer)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)
 - [The LINQ to SQL object model (Das LINQ to SQL-Objektmodell)](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model)

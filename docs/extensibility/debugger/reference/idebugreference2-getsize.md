@@ -1,7 +1,7 @@
 ---
 title: IDebugReference2::GetSize | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugReference2::GetSize
 helpviewer_keywords:
@@ -9,39 +9,43 @@ helpviewer_keywords:
 ms.assetid: a404ddd9-d940-4513-97cd-f52b8ab6a560
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c475c1ecbcf6ff0dbabe498fa69c25178054c589
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9b414983121454a7e3fb7c1e631815bc830f51be
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920192"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458691"
 ---
 # <a name="idebugreference2getsize"></a>IDebugReference2::GetSize
-Ruft die Größe in Bytes, der den Wert des Verweises an. Für zukünftige Verwendung reserviert.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-HRESULT GetSize (   
-   DWORD* pdwSize  
-);  
-```  
-  
-```csharp  
-int GetSize (   
-   out uint pdwSize  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pdwSize`  
- [out] Gibt die Größe in Bytes, der den Wert des Verweises zurück.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Gibt immer `E_NOTIMPL` zurück.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
+Ruft die Größe in Bytes, der den Wert des Verweises an. Für zukünftige Verwendung reserviert.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+HRESULT GetSize ( 
+   DWORD* pdwSize
+);
+```
+
+```csharp
+int GetSize ( 
+   out uint pdwSize
+);
+```
+
+## <a name="parameters"></a>Parameter
+ `pdwSize`\
+
+ [out] Gibt die Größe in Bytes, der den Wert des Verweises zurück.
+
+## <a name="return-value"></a>Rückgabewert
+ Gibt immer `E_NOTIMPL` zurück.
+
+## <a name="see-also"></a>Siehe auch
+- [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

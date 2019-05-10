@@ -1,27 +1,30 @@
 ---
 title: Bereitstellen in einem lokalen Ordner
-ms.date: 06/22/2018
+ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, local folder
 ms.assetid: adb461c4-812a-4b8c-b2ab-96002379f6a9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4dff7adb3942fce20b7b6cb5b09c29965320399
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5627cd0f5ad37a7f92408e887b87d5eda14706eb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854034"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62927616"
 ---
 # <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>Bereitstellen einer App in einem lokalen Ordner mithilfe von Visual Studio
 
 Sie können das Tool zum **Veröffentlichen** verwenden, um ASP.NET-, ASP.NET Core-, .NET Core- und Python-Apps über Visual Studio in einem lokalen Ordner zu veröffentlichen. Für Node.js können Sie zwar gleichen Schritte ausführen, jedoch ist die Benutzeroberfläche anders.
 
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
+
+> [!NOTE]
+> Wenn Sie eine Windows-Desktopanwendung für einen lokalen Ordner veröffentlichen müssen, sehen Sie sich den Artikel [Bereitstellen einer Desktopanwendung mit ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# oder Visual Basic) an. Informationen zu C++/CLR finden Sie unter [ClickOnce-Bereitstellung für Visual C++-Anwendungen](/cpp/ide/clickonce-deployment-for-visual-cpp-applications), und Informationen zu C/C++ finden Sie unter [Bereitstellen einer Visual C++-Anwendung mithilfe eines Setup-Projekts](/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="deploy-to-a-local-folder"></a>Bereitstellen in einem lokalen Ordner
 

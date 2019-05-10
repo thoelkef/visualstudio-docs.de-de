@@ -6,16 +6,15 @@ helpviewer_keywords:
 - Domain-Specific Language, providing overridable classes
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 3ea0446d53ad3cc74bd8af96e95fabada1098da5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9aa4f39fb54617ae1dbf048a1e13f009c8df5185
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929279"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62814236"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>Außer Kraft setzen, und Erweitern der generierten Klassen
 
@@ -55,9 +54,9 @@ Dennoch können Sie diese Methoden überschreiben, durch Festlegen der **generie
 
 Im Beispiel Library.dsl, z. B. die `CirculationBook` Domänenklasse besitzt die `Generates``Double Derived` -Eigenschaftensatz auf `true`. Der generierte Code für diese Domänenklasse enthält zwei Klassen:
 
--   `CirculationBookBase`, dies ist eine abstrakte und alle Methoden und Eigenschaften enthält.
+- `CirculationBookBase`, dies ist eine abstrakte und alle Methoden und Eigenschaften enthält.
 
--   `CirculationBook`, ergibt sich aus `CirculationBookBase`. Er ist leer, mit Ausnahme der Konstruktoren.
+- `CirculationBook`, ergibt sich aus `CirculationBookBase`. Er ist leer, mit Ausnahme der Konstruktoren.
 
 Um eine beliebige Methode überschreiben, Sie erstellen eine partielle Definition der abgeleiteten Klasse wie z. B. `CirculationBook`. Sie können sowohl für die generierten Methoden als auch für den von der Modellierung Framework geerbten Methoden überschreiben.
 
@@ -91,6 +90,6 @@ Der Modellierung Store bietet es sich um einen Ereignismechanismus, den Sie verw
 
 Sie können einige Ereignisse auf Formen abonnieren. Beispielsweise können Sie auf Mausklicks auf einer Form lauschen. Sie müssen Code schreiben, der das Ereignis für jedes Objekt abonniert. Dieser Code kann in einer Außerkraftsetzung der InitializeInstanceResources() geschrieben werden.
 
-Einige Ereignisse werden auf ShapeFields, generiert, die zum Zeichnen von Decorator-Elemente auf einer Form verwendet werden. Ein Beispiel finden Sie unter [Vorgehensweise: Abfangen eines Klicks auf eine Form oder einen Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
+Einige Ereignisse werden auf ShapeFields, generiert, die zum Zeichnen von Decorator-Elemente auf einer Form verwendet werden. Ein Beispiel finden Sie unter [Gewusst wie: Abfangen eines Klicks auf eine Form oder einen Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
 
 Diese Ereignisse werden in der Regel nicht innerhalb einer Transaktion ausgeführt. Wenn Sie Änderungen an den Store vornehmen möchten, sollten Sie eine Transaktion erstellen.

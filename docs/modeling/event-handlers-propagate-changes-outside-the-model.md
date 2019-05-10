@@ -7,16 +7,15 @@ helpviewer_keywords:
 - Domain-Specific Language, events
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: f421874e092ff4d0d6e722b7bebee6f6bb48f7ff
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cd02491b42e9e6a5d677eca35ccde2aa559352c4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842446"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62994734"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Ereignishandler propagieren Änderungen außerhalb des Modells
 
@@ -26,21 +25,21 @@ Die grafische Oberfläche und andere Steuerelemente der Benutzeroberfläche sind
 
 ### <a name="to-define-a-store-event"></a>Um ein Speicherereignis definieren
 
-1.  Wählen Sie den Typ des Ereignisses, das Sie überwachen möchten. Eine vollständige Liste finden Sie in den Eigenschaften des <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Jede Eigenschaft entspricht ein Ereignistyp. Am häufigsten verwendeten häufig die Ereignis-Typen sind:
+1. Wählen Sie den Typ des Ereignisses, das Sie überwachen möchten. Eine vollständige Liste finden Sie in den Eigenschaften des <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Jede Eigenschaft entspricht ein Ereignistyp. Am häufigsten verwendeten häufig die Ereignis-Typen sind:
 
-    -   `ElementAdded` : wird ausgelöst, wenn ein Element des Modells, Beziehungslink "," Form "oder" Verbindung wird erstellt.
+    - `ElementAdded` : wird ausgelöst, wenn ein Element des Modells, Beziehungslink "," Form "oder" Verbindung wird erstellt.
 
-    -   ElementPropertyChanged - ausgelöst, wenn der Wert des einem `Normal` Domäneneigenschaft geändert wird. Das Ereignis wird ausgelöst, nur dann, wenn die neuen und alten Werte nicht gleich sind. Das Ereignis kann nicht auf berechnete und benutzerdefinierte Speichereigenschaften angewendet werden.
+    - ElementPropertyChanged - ausgelöst, wenn der Wert des einem `Normal` Domäneneigenschaft geändert wird. Das Ereignis wird ausgelöst, nur dann, wenn die neuen und alten Werte nicht gleich sind. Das Ereignis kann nicht auf berechnete und benutzerdefinierte Speichereigenschaften angewendet werden.
 
          Es kann nicht an den Rolleneigenschaften angewendet werden, die beziehungslinks entsprechen. Verwenden Sie stattdessen `ElementAdded` die domänenbeziehung zu überwachen.
 
-    -   `ElementDeleted` -ausgelöst, nachdem ein Element des Modells, Beziehung, eine Form oder Verbindung wurde gelöscht. Sie können weiterhin die Eigenschaftswerte des Elements zugreifen, aber es müssen keine Beziehungen zu anderen Elementen.
+    - `ElementDeleted` -ausgelöst, nachdem ein Element des Modells, Beziehung, eine Form oder Verbindung wurde gelöscht. Sie können weiterhin die Eigenschaftswerte des Elements zugreifen, aber es müssen keine Beziehungen zu anderen Elementen.
 
-2.  Fügen Sie eine partielle Klassendefinition für _Ihredsl_**DocData** in einer separaten Codedatei in die **DslPackage** Projekt.
+2. Fügen Sie eine partielle Klassendefinition für _Ihredsl_**DocData** in einer separaten Codedatei in die **DslPackage** Projekt.
 
-3.  Schreiben Sie den Code für das Ereignis als Methode, wie im folgenden Beispiel an. Es kann sein `static`, es sei denn, Sie möchten den Zugriff auf `DocData`.
+3. Schreiben Sie den Code für das Ereignis als Methode, wie im folgenden Beispiel an. Es kann sein `static`, es sei denn, Sie möchten den Zugriff auf `DocData`.
 
-4.  Außer Kraft setzen `OnDocumentLoaded()` Handler registriert werden. Wenn Sie mehr als einen Handler verfügen, können Sie diese alle an derselben Stelle registrieren.
+4. Außer Kraft setzen `OnDocumentLoaded()` Handler registriert werden. Wenn Sie mehr als einen Handler verfügen, können Sie diese alle an derselben Stelle registrieren.
 
 Der Speicherort des Registrierungscodes ist nicht wichtig. `DocView.LoadView()` ist ein alternativer Speicherort an.
 
@@ -161,11 +160,11 @@ private static void AlbumTitleAdjuster(object sender,
 
 Wenn Sie ein Ereignis, die den Speicher aktualisiert schreiben:
 
--   Verwendung `store.InUndoRedoOrRollback` um zu vermeiden, Änderungen an Modellelemente in rückgängig. Der Transaktions-Manager wird alles, was in den Speicher wieder in den ursprünglichen Zustand festgelegt.
+- Verwendung `store.InUndoRedoOrRollback` um zu vermeiden, Änderungen an Modellelemente in rückgängig. Der Transaktions-Manager wird alles, was in den Speicher wieder in den ursprünglichen Zustand festgelegt.
 
--   Verwendung `store.InSerializationTransaction` um zu vermeiden, Änderungen vornehmen, während das Modell aus einer Datei geladen wird.
+- Verwendung `store.InSerializationTransaction` um zu vermeiden, Änderungen vornehmen, während das Modell aus einer Datei geladen wird.
 
--   Ihre Änderungen bewirkt Weitere Ereignisse ausgelöst werden. Stellen Sie sicher, dass Sie eine unendliche Schleife vermeiden.
+- Ihre Änderungen bewirkt Weitere Ereignisse ausgelöst werden. Stellen Sie sicher, dass Sie eine unendliche Schleife vermeiden.
 
 ## <a name="store-event-types"></a>Store-Ereignistypen
 

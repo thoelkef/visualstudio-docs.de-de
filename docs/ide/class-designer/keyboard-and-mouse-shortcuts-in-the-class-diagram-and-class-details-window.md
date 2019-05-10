@@ -1,7 +1,6 @@
 ---
 title: Tastenkombinationen und Mausaktionen für den Klassen-Designer
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.classdetails.window
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: c12d8dac-9902-4fde-b721-2a8116da53b7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a5cce869c2dacb0b6b4bc3e4031860b6772a9a2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a867986f26037473f5a45341f8d454b560c586ff
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826733"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975059"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Tastenkombinationen und Mausaktionen im Klassendiagramm und im Fenster „Klassendetails“
 

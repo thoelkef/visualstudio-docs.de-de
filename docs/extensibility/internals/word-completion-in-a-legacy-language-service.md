@@ -1,31 +1,33 @@
 ---
 title: Word-Abschluss in einem Legacysprachdienst | Microsoft-Dokumentation
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], IntelliSense Complete Word
 - IntelliSense, Complete Word
 - Complete Word
 ms.assetid: 0ace5ac3-f9e1-4e6d-add4-42967b1f96a6
-author: gregvanl
+caps.latest.revision: 16
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 6cd60db1a18280d616d06a5f37bc5a7fc446bc7e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b65c1d7494e126dd9e3ee7f3d819fda66a55a3ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929331"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431039"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Wortvervollständigung in einem Legacysprachdienst
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Wortvervollständigung füllt das fehlenden Zeichen in eine teilweise eingegebenen Wort. Wenn nur eine mögliche abgeschlossen ist, ist das Wort abgeschlossen, wenn das Abschluss Zeichen eingegeben wird. Wenn die Wortteil mehr als eine Möglichkeit übereinstimmt, wird eine Liste der möglichen vervollständigungen angezeigt. Ein Vervollständigungszeichen kann es sich um eine beliebige Zeichen handeln, die nicht für Bezeichner verwendet wird.  
   
  Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Wenn Sie mehr erfahren möchten, finden Sie unter [Erweitern des Editors und Sprachdienste](../../extensibility/extending-the-editor-and-language-services.md).  
   
 > [!NOTE]
->  Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
+> Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
   
 ## <a name="implementation-steps"></a>Implementierungsschritte  
   

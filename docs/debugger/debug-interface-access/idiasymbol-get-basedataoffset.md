@@ -7,32 +7,33 @@ dev_langs:
 ms.assetid: bb2ff5ed-9293-4c37-9741-654058b571c5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0db92804ac10a011bcb7697da5e8899406295acb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 33967e2e3fd241bae772e1ec208f42f7c9ac7419
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923886"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62837619"
 ---
 # <a name="idiasymbolgetbasedataoffset"></a>IDiaSymbol::get_baseDataOffset
-Ruft den Offset für die Basisdaten ab.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_baseDataOffset(   
-   DWORD* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pRetVal`  
- [out] Ein Zeiger auf eine `DWORD` , die den Offset für die Basisdaten enthält.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Ruft den Offset für die Basisdaten ab.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_baseDataOffset(
+   DWORD* pRetVal);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pRetVal`
+
+[out] Ein Zeiger auf eine `DWORD` , die den Offset für die Basisdaten enthält.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

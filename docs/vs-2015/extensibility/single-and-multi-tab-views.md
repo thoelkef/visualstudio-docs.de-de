@@ -1,33 +1,28 @@
 ---
 title: Einer und mehreren Registerkarten Ansichten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - single and multi-tab views
 ms.assetid: e3611704-349f-4323-b03c-f2b0a445d781
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8231581761199be4df9c368494fb27bdc7926c51
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 804a37a43ffe25335dc522542f5035b0882e63ee
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748994"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58947070"
 ---
 # <a name="single-and-multi-tab-views"></a>Ansichten mit einer und mehreren Registerkarten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ein Editor kann verschiedene Arten von Ansichten erstellen. Ein Beispiel ist ein Code-Editor-Fenster, ein weiterer ist ein Forms-Designer.  
   
- Eine Ansicht mit mehreren Registerkarten ist eine Ansicht, die über mehrere Registerkarten verfügt. Z. B. der HTML-Editor verfügt über zwei Registerkarten am unteren Rand: **Entwurf** und **Quelle**, die jeweils eine logische Ansicht. Die Entwurfsansicht zeigt einer gerenderten Webseite an, während die andere den HTML-Code zeigt, die die Webseite enthält.  
+ Eine Ansicht mit mehreren Registerkarten ist eine Ansicht, die über mehrere Registerkarten verfügt. Der HTML-Editor verfügt beispielsweise über zwei Registerkarten am unteren Rand: **Entwurf** und **Quelle**, die jeweils eine logische Ansicht. Die Entwurfsansicht zeigt einer gerenderten Webseite an, während die andere den HTML-Code zeigt, die die Webseite enthält.  
   
 ## <a name="accessing-physical-views"></a>Zugriff auf physische Ansichten  
  Physische Ansichten hosten dokumentenansichtsobjekten, jeweils eine Ansicht der Daten in den Puffer, z. B. Code oder eine Form darstellen. Entsprechend hat jede dokumentenansichtsobjekt an eine physische Darstellung (identifiziert durch etwas wie eine Zeichenfolge der physischen Ansicht) und in der Regel eine einzelne logische Ansicht.  
@@ -123,4 +118,3 @@ Error:
  [Unterstützen mehrerer Dokumentansichten](../extensibility/supporting-multiple-document-views.md)   
  [Vorgehensweise: Anfügen von Ansichten zu Dokumentdaten](../extensibility/how-to-attach-views-to-document-data.md)   
  [Erstellen von benutzerdefinierten Editoren und Designern](../extensibility/creating-custom-editors-and-designers.md)
-

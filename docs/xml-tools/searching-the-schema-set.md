@@ -1,28 +1,27 @@
 ---
 title: 'XML-Schema-Explorer: Durchsuchen des Schemasets'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: ec1395e0-d03c-4130-810d-f2db656937bd
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26be8121c679cc2614440f8e28f52b383dbe944c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b73d5c8acac211db09926acf0ba8009aa04ac0a8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836568"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62784571"
 ---
 # <a name="search-the-schema-set"></a>Durchsuchen des Schemasets
 
 Die **XML-Schema-Explorer** ermöglicht es Ihnen, suchen Sie das Schema auf folgende Weise festlegen:
 
--   Schlüsselwortsuche
+- Schlüsselwortsuche
 
--   Schemaspezifische Suche
+- Schemaspezifische Suche
 
 ## <a name="keyword-search"></a>Schlüsselwortsuche
 
@@ -32,15 +31,15 @@ Die **XML-Schema-Explorer** ermöglicht es Ihnen, suchen Sie das Schema auf folg
 
  Die **XML-Schema-Explorer** durchsucht das Schemaset für die folgenden Attribute:
 
--   Alle `name`- oder `ref`-Attribute, die mit dem angegebenen Schlüsselwort übereinstimmen. Sie finden die Elemente, Attribute, Typen und So weiter, anhand des Namens.
+- Alle `name`- oder `ref`-Attribute, die mit dem angegebenen Schlüsselwort übereinstimmen. Sie finden die Elemente, Attribute, Typen und So weiter, anhand des Namens.
 
--   Die `schemaLocation`-Attribute von Include-Anweisungen.
+- Die `schemaLocation`-Attribute von Include-Anweisungen.
 
--   Die `namespace`-Attribute von Import-Anweisungen.
+- Die `namespace`-Attribute von Import-Anweisungen.
 
 ## <a name="schema-specific-search"></a>Schemaspezifische Suche
 
- Die **XML-Schema-Explorer** enthält auch integrierte Suchfunktionen, die Sie zugreifen können, indem Sie über das Kontextmenü des der **XML-Schema-Explorer**. Weitere Informationen zu verfügbaren Kontextmenüs finden Sie unter [Kontextmenüs](../xml-tools/context-menus-xml-schema-explorer.md). Sie können auch eine schemaspezifische Suche aus der Ausgangsansicht ausführen; Weitere Informationen finden Sie im Abschnitt "Details zum Schemaset" in der [Ausgangsansicht](../xml-tools/start-view.md) Thema.
+ Die **XML-Schema-Explorer** enthält auch integrierte Suchfunktionen, die Sie zugreifen können, mithilfe des Kontextmenüs (Rechtsklick), der die **XML-Schema-Explorer**. Weitere Informationen zu verfügbaren Kontextmenüs finden Sie unter [Kontextmenüs](../xml-tools/context-menus-xml-schema-explorer.md). Sie können auch eine schemaspezifische Suche aus der Ausgangsansicht ausführen; Weitere Informationen finden Sie im Abschnitt "Details zum Schemaset" in der [Ausgangsansicht](../xml-tools/start-view.md) Thema.
 
 ## <a name="display-and-navigate-search-results"></a>Anzeigen und Suchergebnissen navigieren
 

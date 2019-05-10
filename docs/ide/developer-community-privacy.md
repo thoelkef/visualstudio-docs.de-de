@@ -1,22 +1,21 @@
 ---
 title: Private Daten in Problemberichten
 ms.date: 06/21/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - developer community privacy
 - privacy, developer community
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c98747a4ad1d37d7a8b0d8cc51b4e1ddbd851663
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c45f4b374e553115462a010c4a61cc2d4a0a3e9c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895765"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978398"
 ---
 # <a name="developer-community-data-privacy"></a>Datenschutz in der Developer Community
 
@@ -86,5 +85,5 @@ Wenn Visual Studio den Vorgang **Problem melden** einleitet, wird mindestens ein
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Melden eines Problems mit Visual Studio](how-to-report-a-problem-with-visual-studio-2017.md)
+- [Melden eines Problems mit Visual Studio](how-to-report-a-problem-with-visual-studio.md)
 - [Datenschutz in C++-Problemberichten](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset#reports-and-privacy)

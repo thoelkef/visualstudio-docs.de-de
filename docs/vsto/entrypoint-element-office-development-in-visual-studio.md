@@ -13,15 +13,15 @@ helpviewer_keywords:
 - entryPoint element
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c99b6b052fcb411d3f5972d174f804f3000faabe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bd3da83a25a05690e56d229f61ee709473171dd7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62799773"
 ---
 # <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;EntryPoint&gt; -Element (Office-Entwicklung in Visual Studio)
   Durch jedes `entryPoint` -Element im `vstav3` -Namespace wird eine Anpassungsassembly gekennzeichnet, die bei Installation dieser [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] -Anwendung ausgeführt werden sollte.

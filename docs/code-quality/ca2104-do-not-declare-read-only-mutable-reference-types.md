@@ -1,7 +1,6 @@
 ---
-title: 'CA2104: Schreibgeschützte änderbare Referenztypen nicht deklarieren'
+title: 'CA2104: Deklarieren Sie schreibgeschützte änderbare Referenztypen nicht'
 ms.date: 11/01/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - DoNotDeclareReadOnlyMutableReferenceTypes
@@ -12,21 +11,21 @@ helpviewer_keywords:
 ms.assetid: 81b83ee5-4db5-4be0-9f8d-90b53894ec3b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dd84a9830f5c717595f9a2b0f25ac652e931b69
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 40fdeefc2d664b80bb6e17c109349cb5912b0516
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844209"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545354"
 ---
-# <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104: Schreibgeschützte änderbare Referenztypen nicht deklarieren
+# <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104: Schreibgeschützte änderbare Referenztypen nicht deklarieren.
 
 |||
 |-|-|
@@ -36,7 +35,7 @@ ms.locfileid: "53844209"
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 > [!NOTE]
-> Regel CA2104 ist veraltet und wird in einer zukünftigen Version von Visual Studio entfernt.
+> Regel CA2104 ist veraltet und wird in einer zukünftigen Version von Visual Studio entfernt. Es wird nicht als implementiert eine [Analyzer](roslyn-analyzers-overview.md) aufgrund der komplizierte Analysen, die erforderlich sind, um die tatsächlichen Unveränderlichkeit eines Typs zu bestimmen.
 
 ## <a name="cause"></a>Ursache
 

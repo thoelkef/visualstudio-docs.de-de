@@ -1,24 +1,20 @@
 ---
 title: Standardtastenkombinationen für häufig verwendete Befehle
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 5839d6ca-e5ac-4468-9025-3d5ea177f19c
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 52d14af4e3d8d4007aa235db72320f461e63d3c2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 7c64207f6ab26c78492db9feae80698b0af5679d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437508"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Standardtastenkombinationen für häufig verwendete Befehle in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +22,7 @@ ms.locfileid: "53942069"
 Sie können auf häufig verwendete Befehle in Visual Studio zugreifen, indem Sie diese Standardtastenkombinationen verwenden. Eine vollständige Liste von Befehlen, denen Standardtastenkombinationen zugeordnet sind, finden Sie unter [Standardtastenkombinationen](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
 > [!NOTE]
->  Sie können die Tastenkombination für jeden Befehl nachschlagen, indem Sie das Dialogfeld **Optionen** öffnen, den Knoten **Umgebung** erweitern und dann auf **Tastatur** klicken.
+> Sie können die Tastenkombination für jeden Befehl nachschlagen, indem Sie das Dialogfeld **Optionen** öffnen, den Knoten **Umgebung** erweitern und dann auf **Tastatur** klicken.
 
  **Inhalt**
 
@@ -35,7 +31,7 @@ Sie können auf häufig verwendete Befehle in Visual Studio zugreifen, indem Sie
 |[Erstellen](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_build)|[Bearbeiten](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_edit)|[Projekt](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_project)|[Extras](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_tools)|[Fenster](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_window)|
 |[Debuggen](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_debug)|[Datei](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_file)|[Refactor](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_refactor)|[Ansicht](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_view)||
 
-##  <a name="bkmk_build"></a> Erstellen
+## <a name="bkmk_build"></a> Erstellen
 
 |Befehle|Tastenkombinationen [Kontexte]|
 |--------------|-------------------------------------|
@@ -44,7 +40,7 @@ Sie können auf häufig verwendete Befehle in Visual Studio zugreifen, indem Sie
 |Build.Compile|STRG+F7 [Global]|
 |Build.RunCodeAnalysisonSolution|ALT+F11 [Global]|
 
-##  <a name="bkmk_debug"></a> Debuggen
+## <a name="bkmk_debug"></a> Debuggen
 
 |Befehle|Tastenkombinationen [Kontexte]|
 |--------------|-------------------------------------|
@@ -64,7 +60,7 @@ Sie können auf häufig verwendete Befehle in Visual Studio zugreifen, indem Sie
 |Debug.StopDebugging|UMSCHALT+F5 [Global]|
 |Debug.ToggleBreakpoint|F9 [Global]|
 
-##  <a name="bkmk_edit"></a> Bearbeiten
+## <a name="bkmk_edit"></a> Bearbeiten
 
 |Befehle|Tastenkombinationen [Kontexte]|
 |--------------|-------------------------------------|
@@ -115,7 +111,7 @@ dit.SurroundWith|STRG+K, STRG+S [Global]|
 |Edit.WordDeleteToEnd|STRG+ENTF [Text-Editor]|
 |Edit.WordDeleteToStart|STRG+RÜCKTASTE [Text-Editor]|
 
-##  <a name="bkmk_file"></a> Datei
+## <a name="bkmk_file"></a> Datei
 
 |Befehle|Tastenkombinationen [Kontexte]|
 |--------------|-------------------------------------|
@@ -131,26 +127,26 @@ dit.SurroundWith|STRG+K, STRG+S [Global]|
 |File.SaveSelectedItems|STRG+S [Global]|
 |File.ViewinBrowser|STRG+UMSCHALT+W [Global]|
 
-##  <a name="bkmk_project"></a> Projekt
+## <a name="bkmk_project"></a> Projekt
 
 |Befehle|Tastenkombinationen [Kontexte]|
 |--------------|-------------------------------------|
 |Project.AddExistingItem|UMSCHALT+ALT+A [Global]|
 |Project.AddNewItem|STRG+UMSCHALT+A [Global]|
 
-##  <a name="bkmk_refactor"></a> Refactor
+## <a name="bkmk_refactor"></a> Refactor
 
 |Befehl|Tastenkombination [Kontext]|
 |-------------|-----------------------------------|
 |Refactor.ExtractMethod|STRG+R, STRG+M [Global]|
 
-##  <a name="bkmk_tools"></a> Extras
+## <a name="bkmk_tools"></a> Extras
 
 |Befehl|Tastenkombination [Kontext]|
 |-------------|-----------------------------------|
 |Tools.AttachtoProcess|STRG+ALT+P [Global]|
 
-##  <a name="bkmk_view"></a> Ansicht
+## <a name="bkmk_view"></a> Ansicht
 
 |Befehle|Tastenkombinationen [Kontexte]|
 |--------------|-------------------------------------|
@@ -171,7 +167,7 @@ iew.TfsTeamExplorer|STRG+\\, STRG+M [Global]|
 |View.ViewCode|EINGABETASTE [Klassendiagramm]<br /><br /> oder F7 [Einstellungs-Designer]|
 |View.ViewDesigner|UMSCHALT+F7 [HTML-Editor-Quellansicht]|
 
-##  <a name="bkmk_window"></a> Fenster
+## <a name="bkmk_window"></a> Fenster
 
 |Befehle|Tastenkombinationen [Kontexte]|
 |--------------|-------------------------------------|

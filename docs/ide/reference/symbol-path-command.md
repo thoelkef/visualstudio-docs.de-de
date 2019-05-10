@@ -1,7 +1,6 @@
 ---
 title: Befehl "Symbolpfad"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - debug.symbolpath
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: b697ef2d-3f5d-40df-b113-7068a5bec0d4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56e274c103d9bc8d4f80606476c8c6fd4793a8a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 23a7a59ca23dc444bcdc714ade2fce5bedb87e8c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53903941"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945127"
 ---
 # <a name="symbol-path-command"></a>Befehl "Symbolpfad"
 Legt die Liste mit Verzeichnissen fest, in denen der Debugger nach Symbolen sucht.
@@ -36,7 +35,7 @@ Debug.SymbolPath pathname1;pathname2;... pathnameN
 
  Dies ist optional. Ein durch Semikolons getrennte Liste der Pfade, in denen der Debugger nach Symbolen sucht.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Anmerkungen
  Wenn kein `pathname` angegeben wird, werden von dem Befehl die aktuellen Symbolpfade aufgelistet.
 
 ## <a name="example"></a>Beispiel

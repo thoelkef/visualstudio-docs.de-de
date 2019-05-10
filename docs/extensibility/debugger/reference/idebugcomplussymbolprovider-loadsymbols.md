@@ -1,87 +1,93 @@
 ---
 title: IDebugComPlusSymbolProvider::LoadSymbols | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - LoadSymbols
 - IDebugComPlusSymbolProvider::LoadSymbols
 ms.assetid: 3499680d-0b9a-4f20-8432-c89a41b29b87
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cfbf15e53a9de0a1b89a854c3c107d0d9cf5542c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: 4c19070dce95a1f88398fe57d03e9d578086e9ae
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53953136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62922447"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbols"></a>IDebugComPlusSymbolProvider::LoadSymbols
-Lädt die angegebenen Debug-Symbole im Arbeitsspeicher.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-HRESULT LoadSymbols(  
-   ULONG32   ulAppDomainID,  
-   GUID      guidModule,  
-   ULONGLONG baseAddress,  
-   IUnknown* pUnkMetadataImport,  
-   BSTR      bstrModuleName,  
-   BSTR      bstrSymSearchPath  
-);  
-```  
-  
-```csharp  
-int LoadSymbols(  
-   uint   ulAppDomainID,  
-   Guid   guidModule,  
-   ulong  baseAddress,  
-   object pUnkMetadataImport,  
-   string bstrModuleName,  
-   string bstrSymSearchPath  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `ulAppDomainID`  
- [in] Der Bezeichner der Anwendungsdomäne.  
-  
- `guidModule`  
- [in] Eindeutiger Bezeichner der dem Mondule.  
-  
- `baseAddress`  
- [in] Basis Speicheradresse.  
-  
- `pUnkMetadataImport`  
- [in] Objekt, das die Symbol-Metadaten enthält.  
-  
- `bstrModuleName`  
- [in] Der Name des Moduls.  
-  
- `bstrSymSearchPath`  
- [in] Suchpfad für die Symboldatei.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
-  
-## <a name="example"></a>Beispiel  
- Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) Schnittstelle.  
-  
-```cpp  
-HRESULT CDebugSymbolProvider::LoadSymbols(  
-    ULONG32 ulAppDomainID,  
-    GUID guidModule,  
-    ULONGLONG baseOffset,  
-    IUnknown* _pMetadata,  
-    BSTR bstrModule,  
-    BSTR bstrSearchPath)  
-{  
-    return LoadSymbolsWithCorModule(ulAppDomainID, guidModule, baseOffset, _pMetadata, NULL, bstrModule, bstrSearchPath);  
-}  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+Lädt die angegebenen Debug-Symbole im Arbeitsspeicher.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+HRESULT LoadSymbols(
+    ULONG32   ulAppDomainID,
+    GUID      guidModule,
+    ULONGLONG baseAddress,
+    IUnknown* pUnkMetadataImport,
+    BSTR      bstrModuleName,
+    BSTR      bstrSymSearchPath
+);
+```
+
+```csharp
+int LoadSymbols(
+    uint   ulAppDomainID,
+    Guid   guidModule,
+    ulong  baseAddress,
+    object pUnkMetadataImport,
+    string bstrModuleName,
+    string bstrSymSearchPath
+);
+```
+
+#### <a name="parameters"></a>Parameter
+`ulAppDomainID`
+
+ [in] Der Bezeichner der Anwendungsdomäne.
+
+`guidModule`
+
+ [in] Eindeutiger Bezeichner der dem Mondule.
+
+`baseAddress`
+
+ [in] Basis Speicheradresse.
+
+`pUnkMetadataImport`
+
+ [in] Objekt, das die Symbol-Metadaten enthält.
+
+`bstrModuleName`
+
+ [in] Der Name des Moduls.
+
+`bstrSymSearchPath`
+
+ [in] Suchpfad für die Symboldatei.
+
+## <a name="return-value"></a>Rückgabewert
+Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+
+## <a name="example"></a>Beispiel
+Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) Schnittstelle.
+
+```cpp
+HRESULT CDebugSymbolProvider::LoadSymbols(
+    ULONG32 ulAppDomainID,
+    GUID guidModule,
+    ULONGLONG baseOffset,
+    IUnknown* _pMetadata,
+    BSTR bstrModule,
+    BSTR bstrSearchPath)
+{
+    return LoadSymbolsWithCorModule(ulAppDomainID, guidModule, baseOffset, _pMetadata, NULL, bstrModule, bstrSearchPath);
+}
+```
+
+## <a name="see-also"></a>Siehe auch
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

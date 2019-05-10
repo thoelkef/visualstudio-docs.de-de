@@ -1,8 +1,7 @@
 ---
-title: IDebugStackFrameSniffer-Schnittstelle | Microsoft Docs
+title: IDebugStackFrameSniffer-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,22 +13,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 250c104d24f27900a6ff0eb8e8f72644f820bf5a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
-ms.translationtype: MT
+ms.openlocfilehash: 5c9181b5013a9584a2a686ed0e499698be0b62b9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726800"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432258"
 ---
 # <a name="idebugstackframesniffer-interface"></a>IDebugStackFrameSniffer-Schnittstelle
-Bietet eine Möglichkeit zum Auflisten der logischen Stapelrahmen, der von einer Komponente bezeichnet. Script-Module in der Regel implementieren Sie diese Schnittstelle. Der Prozess Debug-Manager verwendet diese Schnittstelle, um alle Stapelrahmen finden, die ein bestimmter Thread zugeordnet ist.  
+Bietet eine Möglichkeit zum Auflisten der logischen Stapelrahmen, der von einer Komponente bezeichnet. Skript-Engines werden in der Regel diese Schnittstelle implementieren. Die Debug-Manager verwendet diese Schnittstelle, um alle Stapelrahmen zu finden, die ein bestimmter Thread zugeordnet ist.  
   
 > [!NOTE]
->  Der Debugger ruft diese Benutzeroberfläche des Abfragegenerators innerhalb der Thread von Interesse sind. Das Skriptmodul muss identifizieren den aktuellen Thread und einen entsprechenden Enumerator zurückgegeben.  
+> Der Debugger ruft dieser Schnittstelle vom innerhalb des Threads von Interesse sind. Die Skript-Engine muss identifiziert den aktuellen Thread und einen entsprechenden Enumerator zurückgeben.  
   
 ## <a name="methods"></a>Methoden  
- Zusätzlich zu den von geerbten Methoden `IUnknown`, `IDebugStackFrameSniffer` Schnittstelle macht die folgenden Methoden verfügbar.  
+ Zusätzlich zu den von geerbten Methoden `IUnknown`, `IDebugStackFrameSniffer` Schnittstelle verfügbar macht, die folgenden Methoden.  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IDebugStackFrameSniffer::EnumStackFrames](../../winscript/reference/idebugstackframesniffer-enumstackframes.md)|Gibt einen Enumerator für Stapelrahmen des aktuellen Threads zurück.|
+|[IDebugStackFrameSniffer::EnumStackFrames](../../winscript/reference/idebugstackframesniffer-enumstackframes.md)|Gibt einen Enumerator der Stapelrahmen des aktuellen Threads.|

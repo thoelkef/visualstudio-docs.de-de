@@ -1,14 +1,9 @@
 ---
 title: Unterstützung für Codeausschnitte in einem Legacysprachdienst | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - snippets, supporting in language services
 - code snippets, supporting in language services [managed package framework]
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 caps.latest.revision: 29
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bf26d48c541806a1dd65a0ffb4a8e3e974b11db4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e3fa0eaa6a0b301914f0ea908ef1222d1b342f5c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408454"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Unterstützen von Codeausschnitten in einem Legacysprachdienst
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ Ein Codeausschnitt ist ein Codeabschnitt, der in die Quelldatei eingefügt wird.
  Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Wenn Sie mehr erfahren möchten, finden Sie unter [Exemplarische Vorgehensweise: Implementieren von Codeausschnitten](../../extensibility/walkthrough-implementing-code-snippets.md).  
   
 > [!NOTE]
->  Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
+> Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
   
 ## <a name="managed-package-framework-support-for-code-snippets"></a>Managed Package Framework-Unterstützung für Codeausschnitte  
  Das managed Package Framework (MPF) unterstützt die meisten Funktionen für den Codeausschnitt, lesen Sie die Vorlage, die den Ausschnitt eingefügt, und aktivieren die spezielle Bearbeitungsmodus. Support wird über verwaltet die <xref:Microsoft.VisualStudio.Package.ExpansionProvider> Klasse.  
@@ -46,16 +41,16 @@ Ein Codeausschnitt ist ein Codeabschnitt, der in die Quelldatei eingefügt wird.
 ## <a name="providing-support-for-code-snippets"></a>Bereitstellen von Unterstützung für Codeausschnitte  
  Um Unterstützung für Codeausschnitte aktivieren, müssen Sie bereitstellen oder installieren Sie die Codeausschnitte, und Sie müssen angeben, das bedeutet, dass der Benutzer diese Ausschnitte einfügen. Es gibt drei Schritte zum Aktivieren der Unterstützung für Codeausschnitte aus:  
   
-1.  Installieren die codeausschnittsdateien an.  
+1. Installieren die codeausschnittsdateien an.  
   
-2.  Aktivieren Codeausschnitte für den Sprachdienst.  
+2. Aktivieren Codeausschnitte für den Sprachdienst.  
   
-3.  Aufrufen der <xref:Microsoft.VisualStudio.Package.ExpansionProvider> Objekt.  
+3. Aufrufen der <xref:Microsoft.VisualStudio.Package.ExpansionProvider> Objekt.  
   
 ### <a name="installing-the-snippet-files"></a>Installieren die Codeausschnittsdateien  
  Alle Codeausschnitte für eine Sprache werden als Vorlagen im XML-Dateien, in der Regel eine Ausschnittvorlage pro Datei gespeichert. Ausführliche Informationen zu den XML-Schema für Codeausschnittvorlagen verwendet, finden Sie unter [Schemareferenz für Codeausschnitte](../../ide/code-snippets-schema-reference.md). Jede Vorlage Codeausschnitt wird mit einer Sprachen-ID identifiziert. Diese Sprache-ID in der Registrierung angegeben ist und in den versetzt wird die `Language` Attribut der \<Code > Tag in der Vorlage.  
   
- Es gibt in der Regel zwei Orte, die, in dem Codeausschnitt-Vorlagendateien gespeichert sind: 1), in denen Ihre Sprache installiert wurde, und (2) in den Ordner des Benutzers. Diese Speicherorte werden der Registrierung hinzugefügt also, die Visual Studio **Codeausschnitt-Manager** finden Sie die Codeausschnitte. Im Ordner des Benutzers ist, in dem vom Benutzer erstellte Codeausschnitte gespeichert werden.  
+ Es gibt in der Regel zwei Orten, in dem Codeausschnitt-Vorlagendateien gespeichert sind: (1), wo Ihre Sprache installiert wurde, und klicken Sie mit der 2) in den Ordner des Benutzers. Diese Speicherorte werden der Registrierung hinzugefügt also, die Visual Studio **Codeausschnitt-Manager** finden Sie die Codeausschnitte. Im Ordner des Benutzers ist, in dem vom Benutzer erstellte Codeausschnitte gespeichert werden.  
   
  Typische ordnerlayouts für die installierte Vorlage codeausschnittsdateien sieht wie folgt aus: *[InstallRoot]*\\ *[TestLanguage]* \Snippets\\ *[LCID]* \Snippets.  
   
@@ -93,10 +88,10 @@ Ein Codeausschnitt ist ein Codeabschnitt, der in die Quelldatei eingefügt wird.
 |Element|Beschreibung|  
 |-------------|-----------------|  
 |% LCID %|Gebietsschema-ID.|  
-|Installroot%|Stamminstallationsordners für Visual Studio, z. B. c:\Programme\Microsoft c:\Programme\Microsoft Visual Studio 8.|  
-|ProjDir %|Ordner mit dem aktuellen Projekt.|  
-|ProjItem %|Dieser Ordner enthält das aktuelle Projektelement.|  
-|TestDocs %|Im Ordner "Einstellungen" des Benutzers, z. B. C:\Documents and Settings\\ *[Username]* \My Documents\Visual Studio\8.|  
+|%InstallRoot%|Stamminstallationsordners für Visual Studio, z. B. c:\Programme\Microsoft c:\Programme\Microsoft Visual Studio 8.|  
+|%ProjDir%|Ordner mit dem aktuellen Projekt.|  
+|%ProjItem%|Dieser Ordner enthält das aktuelle Projektelement.|  
+|%TestDocs%|Im Ordner "Einstellungen" des Benutzers, z. B. C:\Documents and Settings\\ *[Username]* \My Documents\Visual Studio\8.|  
   
 ### <a name="enabling-code-snippets-for-your-language-service"></a>Aktivieren Codeausschnitte für Ihren Sprachdienst  
  Sie können Codeausschnitte für den Sprachdienst aktivieren, durch das Hinzufügen der <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> Attribut für das VSPackage (finden Sie unter [Registrieren eines Legacysprachdiensts](../../extensibility/internals/registering-a-legacy-language-service1.md) Einzelheiten). Die <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A> und <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> Parameter sind optional, aber Sie sollten einschließen, die `SearchPaths` benannter Parameter, um zu den **Codeausschnitt-Manager** des Speicherorts für Ihre Ausschnitte.  
@@ -122,9 +117,9 @@ Ein Codeausschnitt ist ein Codeabschnitt, der in die Quelldatei eingefügt wird.
 ### <a name="inserting-a-code-snippet-by-using-a-menu-command"></a>Einfügen eines Codeausschnitts mithilfe eines Menübefehls  
  Um einen Befehl verwenden, um die im Codeausschnitt-Browser angezeigt werden, Sie fügen Sie einen Menübefehl hinzu, und rufen dann die <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> -Methode in der die <xref:Microsoft.VisualStudio.Package.ExpansionProvider> Schnittstelle als Reaktion auf dieser Menübefehl.  
   
-1.  Fügen Sie einen Befehl und eine Schaltfläche, um Ihre VSCT-Datei. Finden Sie Anweisungen zum Ausführen in [Exemplarische Vorgehensweise: Erstellen einer Menü-Befehl mit der Visual Studio-Paketvorlage](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
+1. Fügen Sie einen Befehl und eine Schaltfläche, um Ihre VSCT-Datei. Finden Sie Anweisungen zum Ausführen in [Exemplarische Vorgehensweise: Erstellen eines Menübefehls mithilfe der Visual Studio-Paketvorlage](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
   
-2.  Leiten Sie eine Klasse aus der <xref:Microsoft.VisualStudio.Package.ViewFilter> Klasse, und überschreiben die <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> Methode, um Unterstützung für den neuen Menübefehl anzugeben. In diesem Beispiel wird immer den Menübefehl aus.  
+2. Leiten Sie eine Klasse aus der <xref:Microsoft.VisualStudio.Package.ViewFilter> Klasse, und überschreiben die <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> Methode, um Unterstützung für den neuen Menübefehl anzugeben. In diesem Beispiel wird immer den Menübefehl aus.  
   
     ```csharp  
     using Microsoft.VisualStudio.Package;  
@@ -160,7 +155,7 @@ Ein Codeausschnitt ist ein Codeabschnitt, der in die Quelldatei eingefügt wird.
     }  
     ```  
   
-3.  Überschreiben der <xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A> -Methode in der die <xref:Microsoft.VisualStudio.Package.ViewFilter> Klasse zum Abrufen der <xref:Microsoft.VisualStudio.Package.ExpansionProvider> Objekt, und rufen die <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> Methode für dieses Objekt.  
+3. Überschreiben der <xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A> -Methode in der die <xref:Microsoft.VisualStudio.Package.ViewFilter> Klasse zum Abrufen der <xref:Microsoft.VisualStudio.Package.ExpansionProvider> Objekt, und rufen die <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> Methode für dieses Objekt.  
   
     ```csharp  
     using Microsoft.VisualStudio.Package;  
@@ -212,15 +207,15 @@ Ein Codeausschnitt ist ein Codeabschnitt, der in die Quelldatei eingefügt wird.
   
      Die folgenden Methoden in der <xref:Microsoft.VisualStudio.Package.ExpansionProvider> Klasse werden von Visual Studio in der angegebenen Reihenfolge aufgerufen, während des Prozesses, der den Ausschnitt eingefügt:  
   
-4.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnItemChosen%2A>  
+4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnItemChosen%2A>  
   
-5.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>  
+5. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>  
   
-6.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>  
+6. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>  
   
-7.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>  
+7. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>  
   
-8.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
+8. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
   
      Nach der <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A> Methode aufgerufen wird, wird der Codeausschnitt eingefügt wurde und die <xref:Microsoft.VisualStudio.Package.ExpansionProvider> Objekt befindet sich in einer speziellen Bearbeitungsmodus zum Ändern eines Codeausschnitts, der gerade eingefügt wurde.  
   
@@ -401,4 +396,3 @@ namespace TestLanguagePackage
  [Registrieren eines Legacysprachdiensts](../../extensibility/internals/registering-a-legacy-language-service1.md)   
  [Codeausschnitte](../../ide/code-snippets.md)   
  [Exemplarische Vorgehensweise: Abrufen einer Liste der installierten Codeausschnitte (Legacyimplementierung)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
-

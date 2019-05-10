@@ -1,26 +1,21 @@
 ---
 title: Gründe für das Erstellen von Projekttypen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project types, conditions for creating
 ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 021a4d5e527ca7a22ecd984805b9fbec547531ee
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1744801b7efe591c449e74796c3c7d297dc3f982
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801666"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061709"
 ---
 # <a name="when-to-create-project-types"></a>Gründe für das Erstellen von Projekttypen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,26 +25,26 @@ Erstellen einen neuen Projekttyp bildet die Grundlage für Anpassung [!INCLUDE[v
 ## <a name="create-a-new-project-type"></a>Erstellen Sie einen neuen Projekttyp  
  Sie müssen einen Projekttyp erstellen, wenn Sie anpassen möchten [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , die in eine oder mehrere der folgenden Methoden verwendet:  
   
--   Teilnahme an Build, bereitstellen, Konfigurationen und Datenquellen-Steuerelement.  
+- Teilnahme an Build, bereitstellen, Konfigurationen und Datenquellen-Steuerelement.  
   
--   Bieten Sie Unterstützung für Remotedebuggen.  
+- Bieten Sie Unterstützung für Remotedebuggen.  
   
--   Anzeigen der Projektelemente im **Projektmappen-Explorer**.  
+- Anzeigen der Projektelemente im **Projektmappen-Explorer**.  
   
--   Verwenden der **geöffneten Projekt** oder **neues Projekt** Dialogfeld.  
+- Verwenden der **geöffneten Projekt** oder **neues Projekt** Dialogfeld.  
   
--   Schachtelung von Projekt zu unterstützen.  
+- Schachtelung von Projekt zu unterstützen.  
   
 ## <a name="extend-an-existing-project-type"></a>Erweitern Sie einen vorhandenen Projekttyp  
  Möglicherweise möchten Sie einen neuen Projekttyp zu erstellen, können [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] auf folgende Weise ändern oder erweitern das Verhalten eines vorhandenen Projekts-Typs, z. B. die Änderung des Buildprozesses für [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] Projekte:  
   
--   Arbeiten Sie mit mehreren Dateien als einzelne Einheit ein.  
+- Arbeiten Sie mit mehreren Dateien als einzelne Einheit ein.  
   
--   Eine einzelne Datei als Hierarchie von untergeordneten Elementen anzeigen.  
+- Eine einzelne Datei als Hierarchie von untergeordneten Elementen anzeigen.  
   
--   Zeigen Sie einen Befehlskontext um Editoren.  
+- Zeigen Sie einen Befehlskontext um Editoren.  
   
--   Zeigen Sie einen Dienstkontext für Editoren an.  
+- Zeigen Sie einen Dienstkontext für Editoren an.  
   
 ## <a name="use-an-existing-project-type"></a>Verwenden Sie einen vorhandenen Projekttyp  
  Erstellen eines neuen Projekts ist manchmal nicht erforderlich. Die folgende Tabelle zeigt die Aufgaben, denen Sie nicht, erstellen Sie einen Projekttyp für verfügen.  
@@ -57,7 +52,7 @@ Erstellen einen neuen Projekttyp bildet die Grundlage für Anpassung [!INCLUDE[v
 |Aufgabe|Beschreibung|  
 |----------|-----------------|  
 |Behandeln von Kommentaren|Jedem VSPackage kann Befehle verarbeiten.|  
-|Erstellen eines Editors|Benutzerdefinierte Editoren können registriert werden. Weitere Informationen finden Sie unter [Dokument Windows und Editoren](http://msdn.microsoft.com/en-us/603625e1-62b6-413a-bc44-089346e166bc).|  
+|Erstellen eines Editors|Benutzerdefinierte Editoren können registriert werden. Weitere Informationen finden Sie unter [Dokument Windows und Editoren](http://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc).|  
 |Besitzer von windows|Sie können sowohl Tool-und Dokumentfenster erstellen, ohne dass einen neuer Projekttyp hinzugefügt.|  
 |Verfügbarmachen von Eigenschaften im Eigenschaftenfenster|Alle Objekte können Eigenschaften verfügbar machen.|  
   
@@ -65,7 +60,6 @@ Erstellen einen neuen Projekttyp bildet die Grundlage für Anpassung [!INCLUDE[v
  Sie können die Projektuntertypen verwenden, um ein verwaltetes Projekt zu erweitern, ohne einen neuen Projekttyp erstellen zu müssen. Projektuntertypen com-Aggregation verwenden Sie zum Erweitern von verwalteter Projekten, die bei Microsoft geschrieben [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] oder [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. Mit COM-Aggregation können ein Großteil der systemimplementierung verwaltetes Projekt wiederverwenden und dennoch für ein bestimmtes Szenario durch die Aggregation und die Verwendung von unterstützende Schnittstellen anpassen. Weitere Informationen zu Projektuntertypen, finden Sie unter [Projektuntertypen](../../extensibility/internals/project-subtypes.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Dokument Windows und Editoren](http://msdn.microsoft.com/en-us/603625e1-62b6-413a-bc44-089346e166bc)   
+ [Dokument Windows und Editoren](http://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)   
  [Prüfliste: Erstellen neuer Projekttypen](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Hierarchien in Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)
-

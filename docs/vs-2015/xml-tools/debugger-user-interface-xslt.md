@@ -1,25 +1,20 @@
 ---
 title: Debugger-Benutzeroberfläche (XSLT) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 02ba962a3410b2e964e7653fcb6308b9209def44
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f2920f73560e622c4336a1eedc23e5034fa8ff91
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891848"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417434"
 ---
 # <a name="debugger-user-interface-xslt"></a>Benutzeroberfläche des XSLT-Debuggers
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +56,7 @@ In diesem Thema werden die Fenster und Dialogfelder des Debuggers beschrieben. E
  Die Aufgabenliste enthält alle Fehler, die in den Skriptblöcken in der XSLT-Datei auftreten.  
   
 > [!NOTE]
->  Der XSLT-Debugger gibt keine Warnungen aus. Daher werden keine Warnungen in der Aufgabenliste angezeigt.  
+> Der XSLT-Debugger gibt keine Warnungen aus. Daher werden keine Warnungen in der Aufgabenliste angezeigt.  
   
 ## <a name="breakpoints-window"></a>Fenster "Haltepunkte"  
  Im Fenster Haltepunkte werden alle im aktuellen Projekt festgelegten Haltepunkte angezeigt. Wenn während der Anzeige dieses Fensters ein Haltepunkt hinzugefügt wird, wird das Fenster automatisch aktualisiert, sodass der neue Haltepunkt ebenfalls angezeigt wird.  
@@ -96,7 +91,7 @@ In diesem Thema werden die Fenster und Dialogfelder des Debuggers beschrieben. E
   
 - Benutzerdefinierte Funktionen sind nicht zulässig.  
   
-  Weitere Informationen finden Sie unter [wie: Auswerten eines XPath-Ausdrucks](../xml-tools/how-to-evaluate-an-xpath-expression.md).  
+  Weitere Informationen finden Sie unter [Vorgehensweise: Auswerten eines XPath-Ausdrucks](../xml-tools/how-to-evaluate-an-xpath-expression.md).  
   
 ## <a name="disassembly-window"></a>Disassemblyfenster  
  Im Disassemblyfenster wird der vom XSLT-Compiler generierte Assemblycode angezeigt. Dieser Fenster kann in gleicher Weise wie alle anderen Disassemblyfenster in Visual Studio verwendet werden.  
@@ -106,5 +101,4 @@ In diesem Thema werden die Fenster und Dialogfelder des Debuggers beschrieben. E
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von XSLT](../xml-tools/debugging-xslt.md)   
  [Debugger – Grundlagen](../debugger/debugger-basics.md)   
- [Variable Windows](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
-
+ [Variablenfenster](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

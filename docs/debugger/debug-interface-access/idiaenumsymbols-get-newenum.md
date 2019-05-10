@@ -1,30 +1,33 @@
 ---
 title: 'Idiaenumsymbols:: Get__newenum | Microsoft-Dokumentation'
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaEnumSymbols::get__NewEnum method
 ms.assetid: 879609ea-8e5a-4fa3-afa6-d24870fb4392
-author: mikejo5000
+caps.latest.revision: 10
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: fcc5bd0f10b659dbfe0c1be9b92eebcdc5c441a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 32525e2cf275b5918d5575caa1eec2ef56b46f46
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894180"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830448"
 ---
 # <a name="idiaenumsymbolsgetnewenum"></a>IDiaEnumSymbols::get__NewEnum
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Ruft die <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> Version von diesem Enumerator.  
   
 ## <a name="syntax"></a>Syntax  
   
-```C++  
+```cpp#  
 HRESULT get__NewEnum (   
    IUnknown** pRetVal  
 );  

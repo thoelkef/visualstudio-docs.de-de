@@ -7,21 +7,21 @@ helpviewer_keywords:
 - deployment, publish settings
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0af5732e80098cabeda8f11901e968ebb3d4a9a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3965fdaa085d609fd87bf070e9a38aa2079cc9b5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853943"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62899179"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Veröffentlichen einer Anwendung in Azure App Service durch Importieren von Veröffentlichungseinstellungen in Visual Studio
 
 Sie können das Tool **Veröffentlichen** zum Importieren von Veröffentlichungseinstellungen verwenden. Anschließend können Sie die App bereitstellen. In diesem Artikel werden Veröffentlichungseinstellungen für Azure App Service verwendet, allerdings können Sie die gleiche Vorgehensweise zum Importieren von Veröffentlichungseinstellungen aus [IIS](../deployment/tutorial-import-publish-settings-iis.md) verwenden. Die Verwendung eines Veröffentlichungseinstellungsprofils kann sich in einigen Szenarios als schneller als das manuelle Konfigurieren der Bereitstellung in den Dienst für jede Installation von Visual Studio erweisen.
 
-Die in diesem Artikel genannten Schritte gelten für ASP.NET, ASP.NET Core und .NET Core-Apps in Visual Studio. Sie können auch Veröffentlichungseinstellungen für [Python-Apps](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) importieren. Die Schritte sind auf dem Stand von Visual Studio 2017, Version 15.6.
+Die in diesem Artikel genannten Schritte gelten für ASP.NET, ASP.NET Core und .NET Core-Apps in Visual Studio. Sie können auch Veröffentlichungseinstellungen für [Python-Apps](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) importieren.
 
 In diesem Tutorial werden Sie Folgendes durchführen:
 
@@ -37,19 +37,31 @@ Eine Veröffentlichungseinstellungsdatei (*\*.publishsettings*) unterscheidet si
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
-* Sie müssen Visual Studio 2017 und die Workloads für die **ASP.NET**- und **.NET Framework**-Entwicklung installiert haben. Für eine .NET Core-App benötigen Sie außerdem die **.NET Core**-Workload.
+::: moniker range=">=vs-2019"
 
-    Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  kostenlos herunterladen.
+* Sie müssen Visual Studio 2019 und die Workload **ASP.NET und Webentwicklung** installiert haben.
+
+    Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/)  kostenlos herunterladen.
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+* Sie müssen Visual Studio 2017 und die Workload **ASP.NET und Webentwicklung** installiert haben.
+
+    Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/)  kostenlos herunterladen.
+::: moniker-end
 
 * Erstellen von Azure App Service. Ausführliche Anweisungen finden Sie unter [Veröffentlichen einer ASP.NET Core-App in Azure mit Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Erstellen eines neuen ASP.NET-Projekts in Visual Studio
 
-1. Klicken Sie auf dem Computer, auf dem Visual Studio ausgeführt wird, auf **Datei** > **Neues Projekt**.
+1. Erstellen Sie ein neues Projekt auf dem Computer, auf dem Visual Studio ausgeführt wird.
 
-1. Klicken Sie in **Visual C#** oder **Visual Basic** auf **Web**, wählen Sie dann im mittleren Bereich entweder **ASP.NET-Webanwendung (.NET Framework)** oder **ASP.NET Core-Webanwendung** (nur bei C#) aus, und klicken Sie anschließend auf **OK**.
+    Wählen Sie die richtige Vorlage aus. Wählen Sie für dieses Beispiel entweder **ASP.NET-Webanwendung (.NET Framework)** oder **ASP.NET Core-Webanwendung** (nur für C#) aus, und klicken Sie anschließend auf **OK**.
 
-    Wenn Ihnen die angegebenen Projektvorlagen nicht angezeigt werden, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** auf den Link **Visual Studio-Installer öffnen**. Der Visual Studio-Installer wird gestartet. Anhand der in diesem Artikel genannten Voraussetzungen können Sie die erforderlichen Visual Studio-Workloads identifizieren, die Sie installieren müssen.
+    Wenn Ihnen die angegebenen Projektvorlagen nicht angezeigt werden, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** auf den Link **Visual Studio-Installer öffnen**. Der Visual Studio-Installer wird gestartet. Installieren Sie die Workload **ASP.NET und Webentwicklung**.
+
+    Die ausgewählte Projektvorlage (ASP.NET oder ASP.NET Core) muss der ASP.NET-Version entsprechen, die auf dem Webserver installiert ist.
 
 1. Wählen Sie entweder **MVC** (für .NET Framework) oder **Webanwendung (Model-View-Controller)** (für .NET Core) aus, und stellen Sie sicher, dass **Keine Authentifizierung** ausgewählt ist, klicken Sie anschließend auf **OK**.
 
@@ -88,6 +100,7 @@ Eine Veröffentlichungseinstellungsdatei (*\*.publishsettings*) unterscheidet si
       </publishProfile>
     </publishData>
     ```
+
     In der Regel enthält die genannte Datei „*.publishsettings“ zwei Veröffentlichungsprofile, die Sie in Visual Studio verwenden können. Ein Profil dient zum Bereitstellen mit Web Deploy und das andere zum Bereitstellen mit FTP. Im vorhergehenden Code wird das Web Deploy-Profil dargestellt. Wenn Sie das Profil importieren, werden zu einem späteren Zeitpunkt beide Profile importiert.
 
 ## <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>Importieren und Bereitstellen der Veröffentlichungseinstellungen in Visual Studio

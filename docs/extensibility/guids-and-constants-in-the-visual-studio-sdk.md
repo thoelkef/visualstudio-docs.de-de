@@ -8,29 +8,25 @@ helpviewer_keywords:
 ms.assetid: 438c1079-0747-4995-ae7a-32aa399c96f5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0be911b312f5c3a6e54b0391c9ffe049fcaecb7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c79a22a81cd265d148987fc1660e6128ce0efceb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896295"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62911741"
 ---
 # <a name="guids-and-constants-in-the-visual-studio-sdk"></a>GUIDs und Konstanten im Visual Studio SDK
-Die <xref:Microsoft.VisualStudio.VSConstants> Klasse ermöglicht den Zugriff auf ausgewählte Umgebung GUIDs und Konstanten.  
-  
-## <a name="in-this-section"></a>In diesem Abschnitt  
- [IDE-GUIDs](../extensibility/ide-guids.md)  
- Listet die GUIDs, die von bereitgestellte <xref:Microsoft.VisualStudio.VSConstants>.  
-  
- [IDE-Konstanten](../extensibility/ide-constants.md)  
- Enthält SDK-Konstanten, die von bereitgestellte <xref:Microsoft.VisualStudio.VSConstants>.  
-  
-## <a name="related-sections"></a>Verwandte Abschnitte  
- [COM-Konstanten in verwaltetem code](../extensibility/com-constants-in-managed-code.md)  
- Die standardmäßigen COM-Konstanten, die verfügbar an verwalteten Code aus dem Managed Package Framework (MPF) aufgeführt.  
-  
- [IDE-definierte Befehle zum Erweitern von Projektsystemen](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)  
- Listet verschiedene Typen der Befehl-Elemente, die zum Erweitern von Projektsystemen verwendet.
+Die <xref:Microsoft.VisualStudio.VSConstants> Klasse ermöglicht den Zugriff auf ausgewählte Umgebung GUIDs und Konstanten.
+
+## <a name="in-this-section"></a>In diesem Abschnitt
+- [IDE-GUIDs](../extensibility/ide-guids.md) Listet die GUIDs, die von bereitgestellte <xref:Microsoft.VisualStudio.VSConstants>.
+
+- [IDE-Konstanten](../extensibility/ide-constants.md) SDK enthält Konstanten, die von bereitgestellte <xref:Microsoft.VisualStudio.VSConstants>.
+
+## <a name="related-sections"></a>Verwandte Abschnitte
+- [COM-Konstanten in verwaltetem Code](../extensibility/com-constants-in-managed-code.md) Listen der standard-COM-Konstanten, die zur verwalteten Code aus dem Managed Package Framework (MPF).
+
+- [IDE-definierte Befehle zum Erweitern von Projektsystemen](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md) listet verschiedene Typen der Befehl-Elemente, die zum Erweitern von Projektsystemen verwendet.

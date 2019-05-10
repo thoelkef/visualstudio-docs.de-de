@@ -1,30 +1,32 @@
 ---
 title: IEnumDebugAddresses::GetCount | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IEnumDebugAddresses::GetCount
 helpviewer_keywords:
 - IEnumDebugAddresses::GetCount method
 ms.assetid: f2ca8ff8-539f-457c-83f8-9bbf97618065
-author: gregvanl
+caps.latest.revision: 6
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: e8696e42459058e0f55f5d9a8de57b74eb2fcd48
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 21d722c557d6dc7dcb250b88abcebdf771af8647
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836386"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62867644"
 ---
 # <a name="ienumdebugaddressesgetcount"></a>IEnumDebugAddresses::GetCount
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Diese Methode gibt die Anzahl der Elemente in der Enumeration.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT GetCount(  
    [out] ULONG* pcelt  
 );  

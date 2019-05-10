@@ -1,7 +1,6 @@
 ---
 title: Reguläre Ausdrücke verwenden
 ms.date: 03/26/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vsregularexpressionhelp
@@ -14,15 +13,15 @@ helpviewer_keywords:
 - regular expressions
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e272e1aba8f7572ba3c4ce1f90a7b12676eb18b6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d62f999f485acaba168a50d404f2b5cbb272ef14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821077"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Verwenden von regulären Ausdrücken in Visual Studio
 
@@ -62,12 +61,12 @@ Hier einige Beispiele:
 |Übereinstimmung mit einer Wortgrenze|\b (Außerhalb einer Zeichenklasse gibt `\b` eine Wortgrenze, innerhalb einer Zeichenklasse gibt `\b` eine Rücktaste an.)|`\bin` findet „in“ in „inside“, jedoch nicht „pinto“.|
 |Übereinstimmung mit Zeilenumbruch (d.h. ein Wagenrücklaufzeichen gefolgt von einer neuen Zeile).|\r?\n|`End\r?\nBegin` findet „End“ und „Begin“ nur, wenn „End“ als letzte Zeichenfolge in einer Zeile vorkommt und „Begin“ als erste Zeichenfolge in der nächsten Zeile.|
 |Übereinstimmung mit beliebigem alphanumerischen Zeichen|\w|`a\wd` findet „add“ und „a1d“, jedoch nicht „a d“.|
-|Übereinstimmung mit beliebigem Leerzeichen.|(?([^\r\n])\s)|`Public\sInterface` findet den Begriff „Public Interface“.|
+|Übereinstimmung mit beliebigem Leerzeichen.|\s|`Public\sInterface` findet den Begriff „Public Interface“.|
 |Übereinstimmung mit beliebigem numerischen Zeichen|\d|`\d` findet „3“ in „3456“, „2“ in „23“ und „1“ in „1“.|
 |Übereinstimmung mit einem Unicode-Zeichen|"\uXXXX", wobei "XXXX"den Unicode-Zeichenwert angibt.|`\u0065` findet das Zeichen „e“.|
 |Übereinstimmung mit einem Bezeichner|\b[\_\w-[0-9]][\_\w]*\b|Findet „type1“, jedoch nicht „&type1“ oder „#define“.|
 |Übereinstimmung mit einer Zeichenfolge in Anführungszeichen|((\\".+?\\")&#124;('.+?'))|Übereinstimmung mit einer beliebigen Zeichenfolge in einfachen oder doppelten Anführungszeichen|
-|Übereinstimmung mit einer Hexadezimalzahl|\b0[xX]([0-9a-fA-F]\)\b|Findet "0xc67f", jedoch nicht "0xc67fc67f".|
+|Übereinstimmung mit einer Hexadezimalzahl|\b0[xX]([0-9a-fA-F]+\)\b|Entspricht „0xc67f“, jedoch nicht „0xc67g“.|
 |Übereinstimmung mit ganzen Zahlen und Dezimalzahlen|\b[0-9]*\\.\*[0-9]+\b|Findet "1.333".|
 
 > [!TIP]

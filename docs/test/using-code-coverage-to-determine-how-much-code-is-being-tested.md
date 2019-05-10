@@ -1,8 +1,6 @@
 ---
 title: Code Coverage-Tests
 ms.date: 09/18/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - code coverage
@@ -12,15 +10,15 @@ dev_langs:
 - CPP
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc8b08b68bb6c48fa22abaa90ba8b0b9daa25e89
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: a76b40e2a9848b0f80e755d15a9bd6e65fcf51da
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370938"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973068"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage
 
@@ -30,7 +28,7 @@ Die Codeabdeckungsanalyse kann sowohl in verwaltetem (CLI) als auch in nicht ver
 
 Sie sollten die Codeabdeckung verwenden, wenn Sie Testmethoden mit dem Test-Explorer ausführen. In der Ergebnistabelle wird der Prozentsatz des Codes angegeben, der in den einzelnen Assemblys, Klassen und Methoden ausgeführt wurde. Außerdem wird im Quellcode-Editor angezeigt, welcher Code getestet wurde.
 
-![Code Coverage-Ergebnisse mit Färbung](../test/media/codecoverage1.png)
+![Codeabdeckungsergebnisse mit Färbung](../test/media/codecoverage1.png)
 
 ## <a name="requirements"></a>Anforderungen
 
@@ -104,7 +102,7 @@ Sie können bestimmte Elemente im Code aus den Abdeckungsergebnissen ausschließ
 > [!TIP]
 > Durch das Ausschließen einer Klasse werden deren abgeleitete Klassen nicht ausgeschlossen.
 
-Zum Beispiel:
+Beispiel:
 
 ```csharp
 using System.Diagnostics.CodeAnalysis;
@@ -260,7 +258,17 @@ Verwenden Sie *vstest.console.exe*, um Tests über die Befehlszeile auszuführen
 
 1. Starten Sie die Developer-Eingabeaufforderung für Visual Studio:
 
+   ::: moniker range="vs-2017"
+
    Wählen Sie im Windows-**Startmenü** **Visual Studio 2017** > **Developer Command Prompt for VS 2017** (Developer-Eingabeaufforderung für VS 2017) aus.
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   Wählen Sie im Windows-**Startmenü** **Visual Studio 2019** > **Developer Command Prompt for VS 2019** (Developer-Eingabeaufforderung für VS 2019) aus.
+
+   ::: moniker-end
 
 2. Führen Sie an der Eingabeaufforderung folgenden Befehl aus:
 

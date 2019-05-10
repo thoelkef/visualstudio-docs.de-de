@@ -9,13 +9,13 @@ ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: be7577aba812e95f7788f8c3c54350ae8e4bcd33
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 6e655cf78db50f4fbd590c16dfa6561cbe376b83
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066300"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083958"
 ---
 # <a name="signing-in-to-visual-studio"></a>Anmelden bei Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,19 +25,19 @@ Sie können Ihre Bereitstellungsumgebung in Visual Studio personalisieren und op
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Warum sollte ich mich in Visual Studio anmelden?
  Durch die Anmeldung bei Visual Studio erhalten Sie folgende Vorteile:
 
--   **Vielzahl von Vorteilen** des Visual Studio Dev Essentials-Programms, u. a. kostenlose Software, Trainings und Support. Weitere Informationen finden Sie unter [Visual Studio Dev Essentials](http://aka.ms/vsdevhelp) .
+- **Vielzahl von Vorteilen** des Visual Studio Dev Essentials-Programms, u. a. kostenlose Software, Trainings und Support. Weitere Informationen finden Sie unter [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) .
 
--   **Synchronisiert die Visual Studio-Einstellungen** – Einstellungen, die Sie anpassen, beispielsweise Tastaturzuordnungen, Fensterlayout und Farbschema, werden sofort übernommen, wenn Sie sich bei Visual Studio auf einem Gerät anmelden. Weitere Informationen finden Sie unter [Synchronisierte Einstellungen in Visual Studio](http://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
+- **Synchronisiert die Visual Studio-Einstellungen** – Einstellungen, die Sie anpassen, beispielsweise Tastaturzuordnungen, Fensterlayout und Farbschema, werden sofort übernommen, wenn Sie sich bei Visual Studio auf einem Gerät anmelden. Weitere Informationen finden Sie unter [Synchronisierte Einstellungen in Visual Studio](http://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
 
--   **Entsperrt Visual Studio Express Edition dauerhaft** – Sie können jede Edition von Visual Studio Express so lange Sie möchten nutzen. Es findet keine Begrenzung auf den Testzeitraum von 30 Tagen statt.
+- **Entsperrt Visual Studio Express Edition dauerhaft** – Sie können jede Edition von Visual Studio Express so lange Sie möchten nutzen. Es findet keine Begrenzung auf den Testzeitraum von 30 Tagen statt.
 
--   **Entsperrt Visual Studio Community Edition** – Somit sind Sie nicht auf den Testzeitraum von 30 Tagen beschränkt.
+- **Entsperrt Visual Studio Community Edition** – Somit sind Sie nicht auf den Testzeitraum von 30 Tagen beschränkt.
 
--   **Verlängert den Visual Studio-Testzeitraum** – Sie können Visual Studio Professional oder Visual Studio Enterprise für 90 Tage zusätzlich verwenden und sind nicht auf den Testzeitraum von 30 Tagen beschränkt.
+- **Verlängert den Visual Studio-Testzeitraum** – Sie können Visual Studio Professional oder Visual Studio Enterprise für 90 Tage zusätzlich verwenden und sind nicht auf den Testzeitraum von 30 Tagen beschränkt.
 
--   **Entsperrt Visual Studio, wenn Sie ein Konto verwenden, das mit einem MSDN- oder VSO-Abonnement verknüpft ist**. Siehe [Entsperren von Visual Studio](../ide/how-to-unlock-visual-studio.md).
+- **Entsperrt Visual Studio, wenn Sie ein Konto verwenden, das mit einem MSDN- oder VSO-Abonnement verknüpft ist**. Siehe [Entsperren von Visual Studio](../ide/how-to-unlock-visual-studio.md).
 
--   **Stellt eine automatische Verbindung zu Diensten wie Azure und Visual Studio Team Services in der IDE her** , ohne dass Sie erneut aufgefordert werden, für dasselbe Konto Ihre Anmeldeinformationen einzugeben.
+- **Stellt eine automatische Verbindung zu Diensten wie Azure und Visual Studio Team Services in der IDE her** , ohne dass Sie erneut aufgefordert werden, für dasselbe Konto Ihre Anmeldeinformationen einzugeben.
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>So melden Sie sich bei Visual Studio an
  Wenn Sie Visual Studio erstmals starten, werden Sie aufgefordert, sich anzumelden und einige grundlegenden Registrierungsinformationen bereitzustellen. Sie sollten ein Microsoft-Konto oder ein Arbeits- oder Schulkonto auswählen, das Sie bestmöglich repräsentiert. Wenn Sie nicht über derartige Konten verfügen, können Sie kostenlos ein Microsoft-Konto erstellen. Weitere Informationen finden Sie unter [Wie registriere ich mich für ein Microsoft-Konto?](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
@@ -53,12 +53,12 @@ Sie können Ihre Bereitstellungsumgebung in Visual Studio personalisieren und op
 ## <a name="to-change-your-profile-information"></a>So ändern Sie Profilinformationen
  Unter **Datei &#124; Kontoeinstellungen** können Sie die Informationen über Ihr Visual Studio-Profil und Ihre -Lizenz anzeigen und aktualisieren. So bearbeiten Sie Ihre Profilinformationen wie Ihren Kontonamen, Ihr Avatarbild oder Ihre E-Mail-Adresse
 
-1.  Wechseln Sie zu **Datei &#124; Konteneinstellungen**.
+1. Wechseln Sie zu **Datei &#124; Konteneinstellungen**.
 
-2.  Wählen Sie im Dialogfeld **Kontoeinstellungen** den Link **Visual Studio-Profil verwalten** aus.
+2. Wählen Sie im Dialogfeld **Kontoeinstellungen** den Link **Visual Studio-Profil verwalten** aus.
 
-3.  Wählen Sie auf der Seite für die eigenen **Microsoft-Informationen** im Browser die Schaltfläche **Informationen bearbeiten** aus.
+3. Wählen Sie auf der Seite für die eigenen **Microsoft-Informationen** im Browser die Schaltfläche **Informationen bearbeiten** aus.
 
-4.  Ändern Sie die Einstellungen.
+4. Ändern Sie die Einstellungen.
 
-5.  Wählen Sie anschließend **Änderungen speichern** .
+5. Wählen Sie anschließend **Änderungen speichern** .

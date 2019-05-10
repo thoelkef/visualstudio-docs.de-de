@@ -1,30 +1,33 @@
 ---
 title: 'Idiasymbol:: Get_databytes | Microsoft-Dokumentation'
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_dataBytes method
 ms.assetid: 5eb37179-20d8-44ae-a72a-405c1b0435c4
-author: mikejo5000
+caps.latest.revision: 12
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: 3261c6331e1651b618b710116737bef5b465ec27
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 22ae91323300cd148cf13c4c4aef293709ef73f2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966358"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401969"
 ---
 # <a name="idiasymbolgetdatabytes"></a>IDiaSymbol::get_dataBytes
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Ruft die Datenbytes eine OEM-Symbols ab.  
   
 ## <a name="syntax"></a>Syntax  
   
-```C++  
+```cpp#  
 HRESULT get_dataBytes (   
    DWORD  cbData,  
    DWORD* pcbData,  
@@ -46,13 +49,13 @@ HRESULT get_dataBytes ( 
  Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
   
 ## <a name="requirements"></a>Anforderungen  
   
 |Anforderung|Beschreibung|  
 |-----------------|-----------------|  
-|Header:|Dia2.h|  
+|Header:|dia2.h|  
 |Version:|DIA-SDK V7. 0|  
   
 ## <a name="see-also"></a>Siehe auch  

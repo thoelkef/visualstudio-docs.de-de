@@ -1,30 +1,33 @@
 ---
 title: 'Idiaenumsegments:: Skip | Microsoft-Dokumentation'
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaEnumSegments::Skip method
 ms.assetid: ec67039f-da8c-4e70-8db7-957d7d5281e8
-author: mikejo5000
+caps.latest.revision: 10
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: 3e8fb7de90f43b6f8c4992366993c0c3d8409aba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: ff4c5d26d875dc098775d0d379e7d12b062801cd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840017"
 ---
 # <a name="idiaenumsegmentsskip"></a>IDiaEnumSegments::Skip
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Überspringt eine angegebene Anzahl von Segmenten in einer Enumerationsfolge.  
   
 ## <a name="syntax"></a>Syntax  
   
-```C++  
+```cpp#  
 HRESULT Skip (   
    ULONG celt  
 );  

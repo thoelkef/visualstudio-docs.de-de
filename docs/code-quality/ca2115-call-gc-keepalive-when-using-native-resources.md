@@ -1,7 +1,6 @@
 ---
-title: 'CA2115: Rufen Sie GC. KeepAlive beim Verwenden systemeigener Ressourcen'
+title: 'CA2115: GC.KeepAlive beim Verwenden nativer Ressourcen aufrufen.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CallGCKeepAliveWhenUsingNativeResources
@@ -12,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: f00a59a7-2c6a-4bbe-a1b3-7bf77d366f34
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d1f7214ce570042d1cebdbf0ac75ffaf81b0ea1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9a74f6313f90a31d43cf39443b1c44d78f0628f8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545188"
 ---
-# <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115: Rufen Sie GC. KeepAlive beim Verwenden systemeigener Ressourcen
+# <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115: GC.KeepAlive beim Verwenden nativer Ressourcen aufrufen.
 
 |||
 |-|-|

@@ -1,8 +1,6 @@
 ---
 title: Seite "Verweise", Projekt-Designer (Visual Basic)
 ms.date: 06/21/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesReference
@@ -11,19 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - References page in Project Designer
 - Project Designer, References page
-- Unused References dialog box
 ms.assetid: 5a47c595-e084-401c-86e1-74e0bf74fd86
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 719f58ff7a8fe333f43e13ddef298ba9938ad4e5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 88bd7571179d7841cc239052b7bf9f410761174c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815194"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62956452"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Seite "Verweise", Projekt-Designer (Visual Basic)
 
@@ -34,12 +31,6 @@ Um auf die Seite **Verweise** zuzugreifen, wählen Sie einen Projektknoten (nich
 ## <a name="uielement-list"></a>UIElement-Liste
 
 Mit folgenden Optionen können Sie Verweise und importierte Namespaces in Ihrem Projekt auswählen oder entfernen.
-
-**Nicht verwendete Verweise**
-
-Klicken Sie auf diese Schaltfläche, um auf das Dialogfeld **Nicht verwendete Verweise** zuzugreifen.
-
-Mit dem Dialogfeld **Nicht verwendete Verweise** können Sie Verweise entfernen, die in Ihrem Projekt enthalten sind, die aber nicht vom Code verwendet werden. Es enthält ein Raster, das die **Verweisnamen**, den **Pfad** und andere Informationen zu den nicht verwendeten Namespaceverweisen in Ihrem Projekt. Wählen Sie im Raster die Namespaceverweise, die Sie aus Ihrem Projekt entfernen möchten, und klicken Sie auf **Entfernen**.
 
 **Verweispfade**
 
@@ -91,14 +82,14 @@ Klicken Sie auf diese Schaltfläche, um auf das Dialogfeld **Verweispfade** zuzu
 
  Wählen Sie einen vom Benutzer angegebenen Namespace in der Namespaceliste aus, geben Sie den Namen im Feld **Importierte Namespaces** ein, der den Namespace ersetzen soll, und klicken Sie anschließend auf diese Schaltfläche, um den neuen Namespace zu ändern. Die Schaltfläche ist nur dann aktiviert, wenn der ausgewählte Namespace ein Namespace ist, den Sie der Liste mit der Schaltfläche **Benutzerimport hinzufügen** hinzugefügt haben. Sie können Folgendes hinzufügen:
 
--   Klassen oder Namespaces, wie z.B. <xref:System.Math?displayProperty=fullName>
+- Klassen oder Namespaces, wie z.B. <xref:System.Math?displayProperty=fullName>
 
--   Aliasimporte, wie z.B. `VB=Microsoft.VisualBasic`
+- Aliasimporte, wie z.B. `VB=Microsoft.VisualBasic`
 
--   XML-Namespaces, wie z.B. `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`
+- XML-Namespaces, wie z.B. `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Verwalten von Verweisen in einem Projekt](../../ide/managing-references-in-a-project.md)
-- [Gewusst wie: Hinzufügen oder Entfernen von importierten Namespaces (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)
+- [Vorgehensweise: Hinzufügen und Entfernen von importierten Namespaces (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)
 - [Imports-Anweisung (XML-Namespace)](/dotnet/visual-basic/language-reference/statements/imports-statement-xml-namespace)

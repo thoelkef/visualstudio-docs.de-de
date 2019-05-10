@@ -1,8 +1,6 @@
 ---
 title: Seite „Anwendung“ der C#-Projekteigenschaften
 ms.date: 10/30/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesApplicationWPF
@@ -12,15 +10,15 @@ helpviewer_keywords:
 - Application page in Project Designer
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6ac755bfab72a2e87b652bfb92d3343b46ff45dc
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 18527e9b45726dbd76f1e76f5d63976278800f6f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62791070"
 ---
 # <a name="application-page-project-designer-c"></a>Seite "Anwendung", Projekt-Designer (C#)
 
@@ -54,12 +52,12 @@ Informationen zum programmgesteuerten Zugriff auf diese Eigenschaft finden Sie u
 
 Gibt die .NET Framework-Version an, auf die die Anwendung ausgerichtet ist. Diese Option kann unterschiedliche Werte aufweisen, je nachdem, welche Versionen von .NET Framework auf dem Computer installiert sind.
 
-Standardmäßig entspricht der Wert dem Zielframework, das Sie im Dialogfeld **Neues Projekt** ausgewählt haben.
+Standardmäßig entspricht der Wert dem Zielframework, das Sie beim Erstellen des Projekts ausgewählt haben.
 
 > [!NOTE]
 > Die im Dialogfeld [Erforderliche Komponenten](../../ide/reference/prerequisites-dialog-box.md) aufgelisteten Pakete mit erforderlichen Komponenten werden automatisch festgelegt, wenn Sie das Dialogfeld zum ersten Mal öffnen. Wenn im Nachhinein Änderungen am Zielframework des Projekts vorgenommen werden, müssen Sie die erforderlichen Komponenten entsprechend dem neuen Zielframework manuell auswählen.
 
-Weitere Informationen finden Sie unter [Gewusst wie: Bestimmte .NET Framework-Version als Ziel](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) und [Übersicht über die Ausrichtung auf mehrere Zielversionen in Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).
+Weitere Informationen finden Sie unter [Vorgehensweise: Bestimmte .NET Framework-Version als Ziel](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) und [Übersicht über die Ausrichtung auf mehrere Zielversionen in Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).
 
 **Ausgabetyp**
 
@@ -73,7 +71,7 @@ Informationen zum programmgesteuerten Zugreifen auf diese Eigenschaft finden Sie
 
 **Bindungsumleitungen automatisch generieren**
 
-Bindungsumleitungen werden zu Ihrem Projekt hinzugefügt, wenn Ihre App oder die zugehörigen Komponenten auf mehrere Versionen derselben Assembly verweisen. Wenn Sie Bindungsumleitungen manuell in der Projektdatei definieren möchten, deaktivieren Sie **Bindungsumleitungen automatisch generieren**. Dieses Kontrollkästchen wurde in Visual Studio 2017 Version 15.7 eingeführt.
+Bindungsumleitungen werden zu Ihrem Projekt hinzugefügt, wenn Ihre App oder die zugehörigen Komponenten auf mehrere Versionen derselben Assembly verweisen. Wenn Sie Bindungsumleitungen manuell in der Projektdatei definieren möchten, deaktivieren Sie **Bindungsumleitungen automatisch generieren**.
 
 Weitere Informationen zur Umleitung finden Sie unter [Umleiten von Assemblyversionen](/dotnet/framework/configure-apps/redirect-assembly-versions).
 

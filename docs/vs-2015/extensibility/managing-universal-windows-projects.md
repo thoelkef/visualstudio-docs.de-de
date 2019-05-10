@@ -1,24 +1,19 @@
 ---
 title: Verwalten von universellen Windows-Projekten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b2c10232b917e8343ace8d1a31fcd3609ecdfb95
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d5e45c91e9dadb0f457e3a2ecfa2e5484fbe0e78
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783778"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412334"
 ---
 # <a name="managing-universal-windows-projects"></a>Verwalten von universellen Windows-Projekten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +25,11 @@ Universelle Windows-apps sind apps sowohl Windows 8.1 und Windows Phone 8.1, und
   
 ### <a name="navigate-the-shared-project"></a>Wechseln Sie das freigegebene Projekt  
   
-1.  Erstellen Sie ein C#-VSIX-Projekt mit dem Namen **TestUniversalProject**. (**Datei, neu, Projekt** und dann **C#-Erweiterbarkeit von Visual Studio-Paket**). Hinzufügen einer **benutzerdefinierten Befehls** Projektelementvorlage (klicken Sie auf im Projektmappen-Explorer mit der rechten Maustaste des Projektknotens, und wählen **hinzufügen / neues Element**, navigieren Sie zu **Erweiterbarkeit**). Nennen Sie die Datei **TestUniversalProject**.  
+1. Erstellen Sie ein C#-VSIX-Projekt mit dem Namen **TestUniversalProject**. (**Datei, neu, Projekt** und dann **C#-Erweiterbarkeit von Visual Studio-Paket**). Hinzufügen einer **benutzerdefinierten Befehls** Projektelementvorlage (klicken Sie auf im Projektmappen-Explorer mit der rechten Maustaste des Projektknotens, und wählen **hinzufügen / neues Element**, navigieren Sie zu **Erweiterbarkeit**). Nennen Sie die Datei **TestUniversalProject**.  
   
-2.  Hinzufügen eines Verweises auf Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll und Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll (in der **Erweiterungen** Abschnitt).  
+2. Hinzufügen eines Verweises auf Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll und Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll (in der **Erweiterungen** Abschnitt).  
   
-3.  TestUniversalProject.cs öffnen, und fügen Sie die folgenden `using` Anweisungen:  
+3. TestUniversalProject.cs öffnen, und fügen Sie die folgenden `using` Anweisungen:  
   
     ```csharp  
     using EnvDTE;  
@@ -47,7 +42,7 @@ Universelle Windows-apps sind apps sowohl Windows 8.1 und Windows Phone 8.1, und
     using System.Windows.Forms;  
     ```  
   
-4.  Fügen Sie in der Klasse TestUniversalProject ein privates Feld, das auf die **Ausgabe** Fenster.  
+4. Fügen Sie in der Klasse TestUniversalProject ein privates Feld, das auf die **Ausgabe** Fenster.  
   
     ```csharp  
     public sealed class TestUniversalProject   
@@ -57,7 +52,7 @@ Universelle Windows-apps sind apps sowohl Windows 8.1 und Windows Phone 8.1, und
     }  
     ```  
   
-5.  Legen Sie den Verweis auf den Ausgabebereich in TestUniversalProject-Konstruktor:  
+5. Legen Sie den Verweis auf den Ausgabebereich in TestUniversalProject-Konstruktor:  
   
     ```csharp  
     private TestUniversalProject(Package package)  
@@ -82,7 +77,7 @@ Universelle Windows-apps sind apps sowohl Windows 8.1 und Windows Phone 8.1, und
     }  
     ```  
   
-6.  Entfernen Sie den vorhandenen Code aus der `ShowMessageBox` Methode:  
+6. Entfernen Sie den vorhandenen Code aus der `ShowMessageBox` Methode:  
   
     ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)   
@@ -90,7 +85,7 @@ Universelle Windows-apps sind apps sowohl Windows 8.1 und Windows Phone 8.1, und
     }  
     ```  
   
-7.  Erhalten Sie das DTE-Objekt, das wir für verschiedene Zwecke in dieser exemplarischen Vorgehensweise verwenden können. Stellen Sie außerdem sicher, dass eine Projektmappe geladen wird, wenn auf die Schaltfläche geklickt wird.  
+7. Erhalten Sie das DTE-Objekt, das wir für verschiedene Zwecke in dieser exemplarischen Vorgehensweise verwenden können. Stellen Sie außerdem sicher, dass eine Projektmappe geladen wird, wenn auf die Schaltfläche geklickt wird.  
   
     ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)  
@@ -108,7 +103,7 @@ Universelle Windows-apps sind apps sowohl Windows 8.1 und Windows Phone 8.1, und
     }  
     ```  
   
-8.  Suchen Sie das freigegebene Projekt. Das freigegebene Projekt ist eine reine Container. nicht erstellen oder Ausgaben generieren. Die folgende Methode sucht das erste freigegebene Projekt in der Projektmappe durch Suchen nach den <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Objekt, das freigegebene Projekt kann.  
+8. Suchen Sie das freigegebene Projekt. Das freigegebene Projekt ist eine reine Container. nicht erstellen oder Ausgaben generieren. Die folgende Methode sucht das erste freigegebene Projekt in der Projektmappe durch Suchen nach den <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Objekt, das freigegebene Projekt kann.  
   
     ```csharp  
     private IVsHierarchy FindSharedProject()  
@@ -240,7 +235,7 @@ Universelle Windows-apps sind apps sowohl Windows 8.1 und Windows Phone 8.1, und
     ```  
   
     > [!IMPORTANT]
-    >  Wenn der Benutzer in der experimentellen Instanz ein C++ universal Windows app-Projekt geöffnet, in der obige Code eine Ausnahme ausgelöst. Dies ist ein bekanntes Problem. Um die Ausnahme zu vermeiden, ersetzen die `foreach` oben durch den folgenden block:  
+    > Wenn der Benutzer in der experimentellen Instanz ein C++ universal Windows app-Projekt geöffnet, in der obige Code eine Ausnahme ausgelöst. Dies ist ein bekanntes Problem. Um die Ausnahme zu vermeiden, ersetzen die `foreach` oben durch den folgenden block:  
   
     ```csharp  
     var importingProjects = sharedAssetsProject.EnumImportingProjects();  
@@ -311,7 +306,7 @@ Universelle Windows-apps sind apps sowohl Windows 8.1 und Windows Phone 8.1, und
   
 ### <a name="manage-the-shared-items-in-the-platform-project"></a>Verwalten der freigegebenen Elemente im plattformprojekt  
   
-1.  Suchen Sie die freigegebene Elemente im plattformprojekt. Die Elemente im freigegebenen Projekt, das im plattformprojekt als freigegebene Elemente angezeigt wird. Nicht sichtbar in der **Projektmappen-Explorer**, aber Sie können Schritt für Schritt die Projekthierarchie, um sie zu finden. Die folgende Methode führt die Hierarchie und alle freigegebenen Elemente erfasst. Es gibt optional die Beschriftung der einzelnen Elemente. Die freigegebene Elemente werden durch die neue Eigenschaft identifiziert <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7>.  
+1. Suchen Sie die freigegebene Elemente im plattformprojekt. Die Elemente im freigegebenen Projekt, das im plattformprojekt als freigegebene Elemente angezeigt wird. Nicht sichtbar in der **Projektmappen-Explorer**, aber Sie können Schritt für Schritt die Projekthierarchie, um sie zu finden. Die folgende Methode führt die Hierarchie und alle freigegebenen Elemente erfasst. Es gibt optional die Beschriftung der einzelnen Elemente. Die freigegebene Elemente werden durch die neue Eigenschaft identifiziert <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7>.  
   
     ```csharp  
     private void InspectHierarchyItems(IVsHierarchy hier, uint itemid, int level, List<uint> itemIds, bool getSharedItems, bool printItems)  
@@ -343,7 +338,7 @@ Universelle Windows-apps sind apps sowohl Windows 8.1 und Windows Phone 8.1, und
     }  
     ```  
   
-2.  In der `ShowMessageBox` -Methode den folgenden Code zum durchlaufen die Plattform Hierarchie Projektelemente hinzufügen. Fügen Sie ihn in das `foreach` Block.  
+2. In der `ShowMessageBox` -Methode den folgenden Code zum durchlaufen die Plattform Hierarchie Projektelemente hinzufügen. Fügen Sie ihn in das `foreach` Block.  
   
     ```csharp  
     output.OutputStringThreadSafe("Walk the active platform project:\n");  
@@ -351,7 +346,7 @@ Universelle Windows-apps sind apps sowohl Windows 8.1 und Windows Phone 8.1, und
     this.InspectHierarchyItems(activePlatformHier, (uint)VSConstants.VSITEMID.Root, 1, sharedItemIds, true, true);  
     ```  
   
-3.  Lesen Sie die freigegebene Elemente. Die freigegebene Elemente, die im plattformprojekt als ausgeblendete verknüpfte Dateien angezeigt, und Sie können alle Eigenschaften als normale verknüpfte Dateien lesen. Der folgende Code liest den vollständigen Pfad des ersten freigegebenen Elements.  
+3. Lesen Sie die freigegebene Elemente. Die freigegebene Elemente, die im plattformprojekt als ausgeblendete verknüpfte Dateien angezeigt, und Sie können alle Eigenschaften als normale verknüpfte Dateien lesen. Der folgende Code liest den vollständigen Pfad des ersten freigegebenen Elements.  
   
     ```csharp  
     var sharedItemId = sharedItemIds[0];  
@@ -360,7 +355,7 @@ Universelle Windows-apps sind apps sowohl Windows 8.1 und Windows Phone 8.1, und
     output.OutputStringThreadSafe(string.Format("Shared item full path: {0}\n", fullPath));  
     ```  
   
-4.  Probieren Sie es aus. Drücken Sie F5, um die experimentelle Instanz zu starten. Erstellen Sie ein C#-universal-Hub-app-Projekt in der experimentellen Instanz (in der **neues Projekt** Dialogfeld **Visual C#-/ Windows / Windows 8 / Universal / Hub-App**) wechseln Sie zu der **Tools** Menü **aufrufen TestUniversalProject**, und überprüfen Sie dann den Text in die **Ausgabe** Bereich. Es sollte nun etwa Folgendes angezeigt werden:  
+4. Probieren Sie es aus. Drücken Sie F5, um die experimentelle Instanz zu starten. Erstellen Sie ein C#-universal-Hub-app-Projekt in der experimentellen Instanz (in der **neues Projekt** Dialogfeld **Visual C#-/ Windows / Windows 8 / Universal / Hub-App**) wechseln Sie zu der **Tools** Menü **aufrufen TestUniversalProject**, und überprüfen Sie dann den Text in die **Ausgabe** Bereich. Es sollte nun etwa Folgendes angezeigt werden:  
   
     ```  
     Found shared project: HubApp.Shared  
@@ -530,7 +525,7 @@ Universelle Windows-apps sind apps sowohl Windows 8.1 und Windows Phone 8.1, und
 9. Ändern Sie das freigegebene Element an. Sie können freigegebene Elemente in ein Plattform-Projekt nicht ändern; Stattdessen müssen Sie sie im freigegebenen Projekt ändern, die die tatsächlichen Kontoinhaber dieser Elemente ist. Sie erhalten die entsprechenden Element-ID im freigegebenen Projekt mit <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A>, legen sie den vollständigen Pfad des freigegebenen Elements. Dann können Sie das freigegebene Element ändern. Die Änderung wird an die Plattformprojekte weitergegeben.  
   
     > [!IMPORTANT]
-    >  Sie sollten herausfinden, ob ein Projektelement eines freigegebenen Elements ist, bevor Sie Sie ändern.  
+    > Sie sollten herausfinden, ob ein Projektelement eines freigegebenen Elements ist, bevor Sie Sie ändern.  
   
      Die folgende Methode wird der Name einer Projektdatei für das Element geändert.  
   
@@ -578,4 +573,3 @@ Universelle Windows-apps sind apps sowohl Windows 8.1 und Windows Phone 8.1, und
     ```  
   
 13. Erstellen Sie das Projekt, und führen Sie es aus. Eine universelle C#-Projekt in der experimentellen Instanz zu erstellen, wechseln Sie zu der **Tools** Menü **TestUniversalProject Aufrufen**, und überprüfen Sie den Text in der allgemeine Ausgabebereich. Nachdem die Datei in die plattformprojekt umbenannt wurde, sollte Sie sowohl eine <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> Ereignis und einem <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> Ereignis. Da Änderungen verursacht die Datei keine anderen Dateien geändert werden, und da Änderungen an Elementen in einem plattformprojekt an einer beliebigen Stelle nicht weitergegeben werden, ist nur ein jedes dieser Ereignisse.
-

@@ -3,14 +3,15 @@ title: 'Vorgehensweise: Öffnen mehrerer Projektmappen in Visual Studio für Mac
 description: Erfahren Sie, wie Sie in Visual Studio für Mac mehrere Projektmappen und mehrere Instanzen der Anwendung öffnen.
 author: conceptdev
 ms.author: crdun
-ms.date: 07/19/2018
+ms.date: 04/02/2019
 ms.assetid: 592BA4E3-8DEF-4FCD-8BA0-519A4CEEE03E
-ms.openlocfilehash: 76a536f621a3c715a62b9e132dc661a2bcf8eb07
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.custom: video
+ms.openlocfilehash: 031ce885faa29e587fe5d48210d8e13b48fcdc4c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294928"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62937959"
 ---
 # <a name="open-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>Öffnen mehrerer Projektmappen oder Instanzen von Visual Studio für Mac
 
@@ -20,11 +21,9 @@ Darüber hinaus wird eine Projektmappe standardmäßig in einem neuen Arbeitsber
 
 ## <a name="open-a-second-instance-of-visual-studio-for-mac"></a>Öffnen einer zweiten Instanz von Visual Studio für Mac
 
-Wenn Sie eine zweite Instanz der integrierten Entwicklungsumgebung (IDE) öffnen möchten, müssen Sie hierzu die **Terminal**anwendung öffnen und die folgende Zeile eingeben:
+Wenn Sie eine zweite Instanz der integrierte Entwicklungsumgebung (Integrated Development Environment, IDE) öffnen möchten, klicken Sie mit der rechten Maustaste auf das Visual Studio-Symbol in Ihrem Dock- oder **Anwendungsordner**, und wählen Sie **Neue Instanz** aus.
 
-```bash
-open -n "/Applications/Visual Studio.app"
-```
+![Screenshot: Menüoption „Neue Instanz“, nachdem mit der rechten Maustaste auf das Visual Studio-Symbol geklickt wurde](media/open-new-instance.png)
 
 ## <a name="open-a-second-solution-inside-a-single-instance"></a>Öffnen einer zweiten Projektmappe in einer einfachen Instanz
 
@@ -49,3 +48,7 @@ Alternativ können Sie auch die folgenden Schritte ausführen, wenn Sie die Proj
     ![Screenshot des Menüs „Zuletzt verwendete Projektmappen“](media/open-multiple-solutions-image2.png)
 
 1. Halten Sie die **STRG**-Taste gedrückt, und wählen Sie die Projektmappe aus. Durch diese Kombination wird die zweite Projektmappe im Lösungspad geöffnet.
+
+## <a name="related-video"></a>Zugehörige Videos
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Work-With-Multiple-Solutions/player]

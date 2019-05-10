@@ -1,7 +1,6 @@
 ---
 title: Identifizieren und Anpassen von Tastenkombinationen
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.Keyboard
@@ -15,15 +14,15 @@ helpviewer_keywords:
 - exporting shortcut keys [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f52a2e57e913735ffe678768732a822e1bb30e6f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e166e28af02e3e9497b94cdf75a05bd9bf534629
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820396"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428654"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identifizieren und Anpassen von Tastenkombinationen in Visual Studio
 
@@ -107,11 +106,21 @@ Sie können Ihre selbstdefinierten Tastenkombinationen freigeben, indem Sie sie 
 
 4. Aktivieren Sie das Kontrollkästchen **Tastatur**, und klicken Sie dann auf **Weiter**.
 
-    ![Nur angepasste Tastenkombinationen exportieren](../ide/media/exportshortcuts.png)
+   ![Nur angepasste Tastenkombinationen exportieren](../ide/media/exportshortcuts.png)
 
-5. Übernehmen Sie in den Feldern **Geben Sie den Namen der Einstellungsdatei ein.** und **Einstellungsdatei in folgendem Verzeichnis speichern** entweder die Standardwerte, oder geben Sie andere Werte ein, und klicken Sie dann auf **Fertigstellen**.
+5. Übernehmen Sie in den Feldern **What do you want to name your settings file** (Geben Sie den Namen der Einstellungsdatei ein) und **Store my settings file in this directory** (Einstellungsdatei in folgendem Verzeichnis speichern) entweder die Standardwerte, oder geben Sie andere Werte ein, und klicken Sie dann auf die Schaltfläche **Fertigstellen**.
 
-    Standardmäßig werden die Tastenkombinationen in einer Datei im Ordner *%USERPROFILE%\Dokumente\Visual Studio 2017\Settings* gespeichert. Der Name der Datei entspricht dem Datum, an dem Sie die Einstellungen exportiert haben, und die Erweiterung ist *.vssettings*.
+::: moniker range="vs-2017"
+
+Standardmäßig werden die Tastenkombinationen in einer Datei im Ordner *%USERPROFILE%\Dokumente\Visual Studio 2017\Settings* gespeichert. Der Name der Datei entspricht dem Datum, an dem Sie die Einstellungen exportiert haben, und die Erweiterung ist *.vssettings*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Standardmäßig werden die Tastenkombinationen in einer Datei im Ordner *%USERPROFILE%\Dokumente\Visual Studio 2019\Settings* gespeichert. Der Name der Datei entspricht dem Datum, an dem Sie die Einstellungen exportiert haben, und die Erweiterung ist *.vssettings*.
+
+::: moniker-end
 
 ### <a name="to-import-only-keyboard-shortcuts"></a>So importieren Sie nur Tastenkombinationen
 
@@ -125,7 +134,7 @@ Sie können Ihre selbstdefinierten Tastenkombinationen freigeben, indem Sie sie 
 
 5. Klicken Sie auf **Weiter**.
 
-6.  Deaktivieren Sie unter **Welche Einstellungen sollen importiert werden?** das Kontrollkästchen **Alle Einstellungen**, und erweitern Sie dann **Optionen** sowie **Umgebung**.
+6. Deaktivieren Sie unter **Welche Einstellungen sollen importiert werden?** das Kontrollkästchen **Alle Einstellungen**, und erweitern Sie dann **Optionen** sowie **Umgebung**.
 
 7. Aktivieren Sie das Kontrollkästchen **Tastatur**, und klicken Sie dann auf **Fertigstellen**.
 

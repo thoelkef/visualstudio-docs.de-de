@@ -1,20 +1,18 @@
 ---
 title: Codegenerierung, Kompilierung und Benennungskonventionen in Microsoft Fakes
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7af8fc49896549fd553c8262b04e9d02f76f06e9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9685d1621f0e81adbbb034c250974b7bc9b36993
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058310"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822760"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Codegenerierung, Kompilierung und Benennungskonventionen in Microsoft Fakes
 
@@ -22,8 +20,8 @@ In diesem Artikel werden Optionen und Probleme der Fakes-Codegenerierung und -Co
 
 **Anforderungen**
 
--   Visual Studio Enterprise
--   Ein .NET Framework-Projekt
+- Visual Studio Enterprise
+- Ein .NET Framework-Projekt
 
 > [!NOTE]
 > .NET Standard-Projekte werden nicht unterstützt.
@@ -64,23 +62,23 @@ Beispielsweise werden durch die folgende *FAKES*-Datei Stubs für Typen unter de
 
 Von den Filterzeichenfolgen wird eine einfache Grammatik verwendet, um zu definieren, wie der Abgleich ausgeführt werden soll:
 
--   Bei Filtern wird standardmäßig die Groß-/Kleinschreibung nicht berücksichtigt. Filter führen einen Abgleich untergeordneter Zeichenfolgen aus:
+- Bei Filtern wird standardmäßig die Groß-/Kleinschreibung nicht berücksichtigt. Filter führen einen Abgleich untergeordneter Zeichenfolgen aus:
 
      `el` findet "hello"
 
--   Durch das Hinzufügen von `!` am Ende des Filters wird die Groß-/Kleinschreibung genau beachtet:
+- Durch das Hinzufügen von `!` am Ende des Filters wird die Groß-/Kleinschreibung genau beachtet:
 
      `el!` findet "hello" nicht
 
      `hello!` findet "hello"
 
--   Durch das Hinzufügen von `*` am Ende des Filters wird das Präfix der Zeichenfolge berücksichtigt:
+- Durch das Hinzufügen von `*` am Ende des Filters wird das Präfix der Zeichenfolge berücksichtigt:
 
      `el*` findet "hello" nicht
 
      `he*` findet "hello"
 
--   Mehrere Filter in einer durch Semikolons getrennten Liste werden als eine Disjunktion kombiniert:
+- Mehrere Filter in einer durch Semikolons getrennten Liste werden als eine Disjunktion kombiniert:
 
      `el;wo` findet "hello" und "world"
 
@@ -116,9 +114,9 @@ Der Fakes-Code-Generator generiert Shim-Typen und Stub-Typen für Typen, die fü
 
  Wenn die Shim-Assembly einen starken Namen hat und auf interne Typen der Assembly zugegriffen werden soll:
 
--   Es müssen sowohl die Testassembly als auch die Fakes-Assembly einen starken Namen haben.
+- Es müssen sowohl die Testassembly als auch die Fakes-Assembly einen starken Namen haben.
 
--   Fügen Sie den **InternalsVisibleToAttribute**-Attributen in den Shim-Assemblys die öffentlichen Schlüssel der Testassembly und der Fakes-Assembly hinzu. Im Folgenden wird gezeigt, wie die Beispielattribute im Shim-Assemblycode bei einer Shim-Assembly mit einem starken Namen aussehen würden:
+- Fügen Sie den **InternalsVisibleToAttribute**-Attributen in den Shim-Assemblys die öffentlichen Schlüssel der Testassembly und der Fakes-Assembly hinzu. Im Folgenden wird gezeigt, wie die Beispielattribute im Shim-Assemblycode bei einer Shim-Assembly mit einem starken Namen aussehen würden:
 
     ```csharp
     // FileSystem\AssemblyInfo.cs
@@ -136,7 +134,7 @@ Das Fakes-Framework verwendet den gleichen Schlüssel, um alle generierten Assem
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]
 ```
 
-Sie können einen anderen öffentlichen Schlüssel für die Fakes-Assembly angeben, beispielsweise einen Schlüssel, den Sie für die Shim-Assembly erstellt haben, indem Sie den vollständigen Pfad der *SNK*-Datei angeben, die den alternativen Schlüssel als `KeyFile`-Attributwert im `Fakes`\\`Compilation`-Element der *FAKES*-Datei enthält. Zum Beispiel:
+Sie können einen anderen öffentlichen Schlüssel für die Fakes-Assembly angeben, beispielsweise einen Schlüssel, den Sie für die Shim-Assembly erstellt haben, indem Sie den vollständigen Pfad der *SNK*-Datei angeben, die den alternativen Schlüssel als `KeyFile`-Attributwert im `Fakes`\\`Compilation`-Element der *FAKES*-Datei enthält. Beispiel:
 
 ```xml
 <-- FileSystem.Fakes.fakes -->
@@ -163,19 +161,19 @@ Die Kompilierung von Fakes-Assemblys kann die Buildzeit erheblich verlängern. S
 
 Fügen Sie in den Komponententestprojekten einen Verweis auf die kompilierten Fakes-Assemblys hinzu, die sich im Projektordner unter „FakesAssemblies“ befinden.
 
-1.  Erstellen Sie eine neue Klassenbibliothek mit der .NET-Laufzeitversion, die mit Ihren Testprojekten übereinstimmt. Nennen wir sie „Fakes.Prebuild“. Entfernen Sie die Datei *class1.cs* aus dem Projekt, da diese nicht benötigt wird.
+1. Erstellen Sie eine neue Klassenbibliothek mit der .NET-Laufzeitversion, die mit Ihren Testprojekten übereinstimmt. Nennen wir sie „Fakes.Prebuild“. Entfernen Sie die Datei *class1.cs* aus dem Projekt, da diese nicht benötigt wird.
 
-2.  Fügen Sie Verweise auf alle Systemassemblys und Assemblys von Drittanbietern hinzu, für die Sie Fakes benötigen.
+2. Fügen Sie Verweise auf alle Systemassemblys und Assemblys von Drittanbietern hinzu, für die Sie Fakes benötigen.
 
-3.  Fügen Sie jeder Assembly und jedem Build eine *FAKES*-Datei hinzu.
+3. Fügen Sie jeder Assembly und jedem Build eine *FAKES*-Datei hinzu.
 
-4.  Aus dem Testprojekt
+4. Aus dem Testprojekt
 
-    -   Stellen Sie sicher, dass es einen Verweis auf die Fakes-Runtime-DLL gibt:
+    - Stellen Sie sicher, dass es einen Verweis auf die Fakes-Runtime-DLL gibt:
 
          *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.QualityTools.Testing.Fakes.dll*
 
-    -   Fügen Sie für jede Assembly, für die Sie Fakes erstellt haben, einen Verweis auf die entsprechende DLL-Datei im Ordner *Fakes.Prebuild\FakesAssemblies* des Projekts hinzu.
+    - Fügen Sie für jede Assembly, für die Sie Fakes erstellt haben, einen Verweis auf die entsprechende DLL-Datei im Ordner *Fakes.Prebuild\FakesAssemblies* des Projekts hinzu.
 
 ### <a name="avoid-assembly-name-clashing"></a>Vermeiden von Konflikten bei Assemblynamen
 
@@ -272,9 +270,9 @@ attribute of the Assembly element in the .fakes:
 
 Die folgenden Regeln werden rekursiv angewendet:
 
--   Da Fakes C# zur Generierung der Fakes-Assemblys verwendet, wird jedes Zeichen, das ein ungültiges C#-Token erzeugen würde, mit einem "_" (Unterstrich) versehen.
+- Da Fakes C# zur Generierung der Fakes-Assemblys verwendet, wird jedes Zeichen, das ein ungültiges C#-Token erzeugen würde, mit einem "_" (Unterstrich) versehen.
 
--   Wenn ein resultierender Name einen Konflikt mit einem Mitglied des deklarierenden Typs verursacht, wird ein Nummerierungsschema verwendet, indem ein zweistelliger Indikator angefügt wird, der mit „01“ beginnt.
+- Wenn ein resultierender Name einen Konflikt mit einem Mitglied des deklarierenden Typs verursacht, wird ein Nummerierungsschema verwendet, indem ein zweistelliger Indikator angefügt wird, der mit „01“ beginnt.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,7 +1,6 @@
 ---
 title: Aktualisieren vorhandener Projektelementvorlagen
 ms.date: 01/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - item templates, updating
@@ -10,27 +9,27 @@ helpviewer_keywords:
 - updating templates [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: db5b9c3f601ae11b704e54ae2ebcd58f10c4c724
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 57e457224d47e278df169b931c6e9cf6b8ae25e1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835827"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974695"
 ---
 # <a name="how-to-update-existing-templates"></a>Vorgehensweise: Aktualisieren vorhandener Vorlagen
 
 Nachdem Sie eine Vorlage erstellt und die Dateien in eine *ZIP*-Datei komprimiert haben, sollten Sie die Vorlage ändern. Dazu können Sie die Dateien in der Vorlage manuell ändern oder aber eine neue Vorlage aus einem Projekt exportieren, das auf der Vorlage basiert.
 
-## <a name="using-the-export-template-wizard-to-update-an-existing-project-template"></a>Verwenden des Assistenten zum Exportieren von Vorlagen zum Aktualisieren einer vorhandenen Projektvorlage
+## <a name="use-the-export-template-wizard"></a>Verwenden des Assistenten zum Exportieren von Vorlagen
 
 Visual Studio stellt den **Assistenten zum Exportieren von Vorlagen** bereit, der zum Aktualisieren einer vorhandenen Vorlage verwendet werden kann:
 
-1. Wählen Sie **Datei** > **Neu** > **Projekt** aus, um das Dialogfeld **Neues Projekt** zu öffnen.
+1. Wählen Sie **Datei** > **Neu** > **Projekt** aus der Menüleiste aus.
 
-1. Wählen Sie die zu aktualisierende Vorlage aus, geben Sie einen Namen und Speicherort für Ihr Projekt ein, und klicken Sie auf **OK**.
+1. Wählen Sie die Vorlage aus, die Sie aktualisieren möchten, und führen Sie die Schritte zum Erstellen eines neuen Projekts aus.
 
-1. Bearbeiten Sie das Projekt in Visual Studio.
+1. Bearbeiten Sie das Projekt in Visual Studio. Ändern Sie beispielsweise den Ausgabetyp, oder fügen Sie dem Projekt eine neue Datei hinzu.
 
 1. Klicken Sie im Menü **Projekt** auf **Vorlage exportieren**.
 
@@ -38,7 +37,7 @@ Visual Studio stellt den **Assistenten zum Exportieren von Vorlagen** bereit, de
 
 1. Befolgen Sie die Anweisungen im Assistenten, um die Vorlage als *ZIP*-Datei zu exportieren.
 
-1. (Optional) Speichern Sie die *ZIP*-Datei im folgenden Verzeichnis, um die Vorlage zum Dialogfeld **Neues Projekt** hinzuzufügen: *%USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ProjectTemplates*. Sie müssen diesen Schritt ausführen, wenn Sie im **Assistenten zum Exportieren von Vorlagen** nicht die Option **Vorlage automatisch in Visual Studio importieren** ausgewählt haben.
+1. (Optional) Speichern Sie die *ZIP*-Datei im folgenden Verzeichnis: *%USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ProjectTemplates*, um es zur Auswahl verfügbar zu machen. Sie müssen diesen Schritt ausführen, wenn Sie im **Assistenten zum Exportieren von Vorlagen** nicht die Option **Vorlage automatisch in Visual Studio importieren** ausgewählt haben.
 
 1. Löschen Sie die alte *ZIP*-Vorlagendatei.
 

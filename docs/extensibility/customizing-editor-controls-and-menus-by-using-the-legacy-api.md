@@ -7,32 +7,27 @@ helpviewer_keywords:
 ms.assetid: 1ce1f55b-6825-4654-a60a-7831af2ab44f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30e30bd1ce04c6a554aa1ab737e4c8d7c36163da
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f52c0bbb87cc610b1b05ef987f43167f60292f4f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851260"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62926500"
 ---
 # <a name="customize-editor-controls-and-mmenus-by-using-the-legacy-api"></a>Passen Sie Editor-Steuerelemente und Mmenus an, indem Sie mit der legacy-API
-Ein Sprachdienst oder einer Textansicht kann die Kontextmenüs und die Steuerelemente im Editor steuern. Die Seiten in diesem Abschnitt erfahren Sie, wie diese Features funktionieren.  
-  
-## <a name="in-this-section"></a>In diesem Abschnitt  
- [Dropdownleiste](../extensibility/drop-down-bar.md)  
- Beschreibt die Dropdownleiste und enthält Anweisungen zum implementieren.  
-  
- [Behandlung von Befehlen](../extensibility/command-handling.md)  
- Details-Befehl, die in Editoren behandeln.  
-  
- [Kontextmenüs](../extensibility/context-menus.md)  
- Beschreibt die Editor-Kontextmenüs.  
-  
- [Vorgehensweise: Aktualisieren der Statusleiste](../extensibility/how-to-update-the-status-bar.md)  
- Enthält Anweisungen zum Aktualisieren der **Statusleiste**.  
-  
-## <a name="related-sections"></a>Verwandte Abschnitte  
- [Service-Erweiterungen, Editoren und Sprachen](../extensibility/editor-and-language-service-extensions.md)  
- Führt die verschiedenen Typen von Editoren, die Sie in Visual Studio verwenden können.
+Ein Sprachdienst oder einer Textansicht kann die Kontextmenüs und die Steuerelemente im Editor steuern. Die Seiten in diesem Abschnitt erfahren Sie, wie diese Features funktionieren.
+
+## <a name="in-this-section"></a>In diesem Abschnitt
+- [Dropdownleiste](../extensibility/drop-down-bar.md) wird beschrieben, die Dropdownleiste und enthält Anweisungen zum implementieren.
+
+- [Befehlsbehandlung](../extensibility/command-handling.md) Details-Befehl, die in Editoren behandeln.
+
+- [Kontextmenüs](../extensibility/context-menus.md) Editor-Kontextmenüs beschrieben.
+
+- [Vorgehensweise: Aktualisieren der Statusleiste](../extensibility/how-to-update-the-status-bar.md) enthält Anweisungen zum Aktualisieren der **Statusleiste**.
+
+## <a name="related-sections"></a>Verwandte Abschnitte
+- [Editoren und Sprachen Webdiensterweiterungen](../extensibility/editor-and-language-service-extensions.md) stellt die verschiedenen Typen von Editoren, die Sie in Visual Studio verwenden können.

@@ -1,14 +1,9 @@
 ---
-title: Bezeichnung wurde neu definiert | Microsoft Docs
-ms.custom: ''
+title: Neudefinition einer Bezeichnung | Microsoft-Dokumentation
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1025
 dev_langs:
@@ -16,23 +11,22 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 7fba49c9-9c95-4f46-b778-9c6ab33ab944
-caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6aff2415c08718e8b4ee82f817de337c9cda80f4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a5c6f44124ff49982d3821b1441eacf8dec7a666
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633020"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006991"
 ---
 # <a name="label-redefined"></a>Die Bezeichnung wurde neu definiert
-Sie erstellt eine neue Bezeichnung, aber den Namen einer vorhandenen Bezeichnung zugewiesen. Bezeichnungen können verwendet werden, um die Codeblöcke markieren, innerhalb eines angegebenen Bereichs, sie müssen jedoch eindeutig sein.  
+Sie erstellt eine neue Bezeichnung, aber den Namen einer vorhandenen Bezeichnung zugewiesen. Bezeichnungen können verwendet werden, um Blöcke von Code zu markieren, aber innerhalb eines angegebenen Bereichs ist, sie muss eindeutig sein.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Stellen Sie sicher, dass alle Bezeichnungen an, die Sie in Ihren Programmen zu verwenden in ihren jeweiligen Gültigkeitsbereichen eindeutig sind.  
+- Stellen Sie sicher, dass alle Bezeichnungen, die Sie in Ihren Programmen verwenden in ihren jeweiligen Gültigkeitsbereichen eindeutig sind.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Anweisung mit Bezeichnung](../../javascript/reference/labeled-statement-javascript.md)   

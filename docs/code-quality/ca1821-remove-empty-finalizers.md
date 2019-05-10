@@ -1,7 +1,6 @@
 ---
-title: 'CA1821: Leere Finalizer entfernen'
+title: 'CA1821: Leere Finalizer entfernen.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - RemoveEmptyFinalizers
@@ -11,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: 3f4855a0-e4a0-46e6-923c-4c3b7074048d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d155d8846828d8806fb4927d39120bfad2b01f33
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 16bb2786c4c7b0ca94fe60a9577e4b462d663bfc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937334"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545712"
 ---
-# <a name="ca1821-remove-empty-finalizers"></a>CA1821: Leere Finalizer entfernen
+# <a name="ca1821-remove-empty-finalizers"></a>CA1821: Leere Finalizer entfernen.
 
 |||
 |-|-|

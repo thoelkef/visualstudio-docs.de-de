@@ -9,78 +9,65 @@ helpviewer_keywords:
 ms.assetid: 14c2a786-c23a-4b2d-acad-8c32a856c70d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3f67a8e354addef7aca298ebac3740702951a17
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 6b20ed28518c9156e82c6fe75ecceda74c66615d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869884"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62845850"
 ---
 # <a name="messages-view"></a>Meldungsansicht
-Jedes Fenster verfügt über einen Stream zugeordnete Meldung. Ansichtsfenster Nachrichten wird Meldungsstream. Das Fensterhandle, Message Authentication Code und Meldung werden angezeigt. Sie können eine Ansicht "Nachrichten" für einen Thread oder Prozess sowie erstellen. Dadurch können Sie zum Anzeigen von Nachrichten an alle Fenster, die im Besitz von einem bestimmten Prozess oder Thread, der besonders nützlich für das Erfassen von fenstermeldungen für die Initialisierung ist.  
-  
- Eine typische Ansicht Meldungsfenster wird unten angezeigt. Beachten Sie, dass die erste Spalte das Fensterhandle enthält, und die zweite Spalte einen Message Authentication Code enthält (beschrieben [Meldungscodes](../debugger/message-codes.md)). Decodierte Nachrichtenparameter und Rückgabewerte werden auf der rechten Seite.  
-  
- ![Spy++&#43; &#43; Meldungsansicht](../debugger/media/spy--_messagesview.png "Spy-_MessagesView")  
-Spy++-Meldungsansicht  
-  
-## <a name="procedures"></a>Verfahren  
-  
-#### <a name="to-open-a-messages-view-for-a-window-process-or-thread"></a>Um eine Ansicht "Nachrichten" für ein Fenster, Prozess oder Thread zu öffnen.  
-  
-1.  Verschieben des Fokus um eine [Windows-Ansicht](../debugger/windows-view.md), [Prozessansicht](../debugger/processes-view.md), oder [Ansicht "Threads"](../debugger/threads-view.md) Fenster.  
-  
-2.  Suchen Sie den Knoten für das Element, dessen Nachrichten, die Sie untersuchen möchten, und wählen Sie ihn.  
-  
-3.  Von der **Spy** Menü wählen **Protokollmeldungen**.  
-  
-     Die [im Dialogfeld "Optionen" Nachricht](../debugger/message-options-dialog-box.md) wird geöffnet.  
-  
-4.  Wählen Sie die Optionen für die Nachricht, die Sie anzeigen möchten.  
-  
-5.  Drücken Sie **OK** zum Protokollieren von Nachrichten beginnen.  
-  
-     Ein Nachrichten, die Fenster "Berichtsansicht" geöffnet wird, sowie einen **Nachrichten** Menü zur Spy++-Symbolleiste hinzugefügt wird. Abhängig von den ausgewählten Optionen, Nachrichten mit dem streamen beginnen in das aktive Fenster des Nachrichten-Ansicht.  
-  
-6.  Wenn Sie über genügend Nachrichten verfügen, wählen Sie **Protokollierung beenden** aus der **Nachrichten** Menü.  
-  
-## <a name="in-this-section"></a>In diesem Abschnitt  
- [Steuern der Meldungsansicht](../debugger/how-to-control-messages-view.md)  
- Erläutert, wie zum Verwalten der Ansicht "Nachrichten".  
-  
- [Öffnen der Meldungsansicht aus "Fenster Suchen"](../debugger/how-to-open-messages-view-from-find-window.md)  
- Erläutert das Öffnen der Ansicht "Nachrichten" im Dialogfeld "Fenster Suchen".  
-  
- [Suchen nach einer Nachricht in der Meldungsansicht](../debugger/how-to-search-for-a-message-in-messages-view.md)  
- Erläutert, wie Sie eine bestimmte Nachricht in der Ansicht "Nachrichten".  
-  
- [Starten und Beenden der Meldungsprotokollanzeige](../debugger/how-to-start-and-stop-the-message-log-display.md)  
- Erläutert das Starten und beenden die nachrichtenprotokollierung.  
-  
- [Meldungscodes](../debugger/message-codes.md)  
- Definiert die Codes für Nachrichten, die in der Ansicht "Nachrichten" aufgeführt.  
-  
- [Anzeigen von Meldungseigenschaften](../debugger/how-to-display-message-properties.md)  
- So zeigen Sie weitere Informationen zu einer Meldung.  
-  
-## <a name="related-sections"></a>Verwandte Abschnitte  
- [Spy++-Ansichten](../debugger/spy-increment-views.md)  
- Erläutert die Spy++-Strukturansichten von Windows, Nachrichten, Prozesse und Threads.  
-  
- [Verwenden von Spy++](../debugger/using-spy-increment.md)  
- Führt das Tool Spy++ und erläutert, wie sie verwendet werden kann.  
-  
- [Dialogfeld "Meldungsoptionen"](../debugger/message-options-dialog-box.md)  
- Wird verwendet, um auszuwählen, welche Nachrichten in der aktiven Ansicht "Nachrichten" aufgeführt sind.  
-  
- [Meldungssuche (Dialogfeld)](../debugger/message-search-dialog-box.md)  
- Verwendet, um den Knoten für eine bestimmte Nachricht in der Ansicht "Nachrichten" suchen.  
-  
- [Dialogfeld "Meldungseigenschaften"](../debugger/message-properties-dialog-box.md)  
- Zum Anzeigen der Eigenschaften einer Nachricht, die ausgewählten Meldung verwendet.  
-  
- [Spy++-Referenz](../debugger/spy-increment-reference.md)  
- Enthält Abschnitte, die jedes Spy++ Menü- und Dialogfeldressourcen Feld beschreibt.
+Jedes Fenster verfügt über einen Stream zugeordnete Meldung. Ansichtsfenster Nachrichten wird Meldungsstream. Das Fensterhandle, Message Authentication Code und Meldung werden angezeigt. Sie können eine Ansicht "Nachrichten" für einen Thread oder Prozess sowie erstellen. Dadurch können Sie zum Anzeigen von Nachrichten an alle Fenster, die im Besitz von einem bestimmten Prozess oder Thread, der besonders nützlich für das Erfassen von fenstermeldungen für die Initialisierung ist.
+
+ Eine typische Ansicht Meldungsfenster wird unten angezeigt. Beachten Sie, dass die erste Spalte das Fensterhandle enthält, und die zweite Spalte einen Message Authentication Code enthält (beschrieben [Meldungscodes](../debugger/message-codes.md)). Decodierte Nachrichtenparameter und Rückgabewerte werden auf der rechten Seite.
+
+ ![Spy++&#43; &#43; Meldungsansicht](../debugger/media/spy--_messagesview.png "Spy-_MessagesView") Spy++-Meldungsansicht
+
+## <a name="procedures"></a>Verfahren
+
+#### <a name="to-open-a-messages-view-for-a-window-process-or-thread"></a>Um eine Ansicht "Nachrichten" für ein Fenster, Prozess oder Thread zu öffnen.
+
+1. Verschieben des Fokus um eine [Windows-Ansicht](../debugger/windows-view.md), [Prozessansicht](../debugger/processes-view.md), oder [Ansicht "Threads"](../debugger/threads-view.md) Fenster.
+
+2. Suchen Sie den Knoten für das Element, dessen Nachrichten, die Sie untersuchen möchten, und wählen Sie ihn.
+
+3. Von der **Spy** Menü wählen **Protokollmeldungen**.
+
+     Die [im Dialogfeld "Optionen" Nachricht](../debugger/message-options-dialog-box.md) wird geöffnet.
+
+4. Wählen Sie die Optionen für die Nachricht, die Sie anzeigen möchten.
+
+5. Drücken Sie **OK** zum Protokollieren von Nachrichten beginnen.
+
+     Ein Nachrichten, die Fenster "Berichtsansicht" geöffnet wird, sowie einen **Nachrichten** Menü zur Spy++-Symbolleiste hinzugefügt wird. Abhängig von den ausgewählten Optionen, Nachrichten mit dem streamen beginnen in das aktive Fenster des Nachrichten-Ansicht.
+
+6. Wenn Sie über genügend Nachrichten verfügen, wählen Sie **Protokollierung beenden** aus der **Nachrichten** Menü.
+
+## <a name="in-this-section"></a>In diesem Abschnitt
+ [Steuern der Meldungsansicht](../debugger/how-to-control-messages-view.md) wird erläutert, wie zum Verwalten der Ansicht "Nachrichten".
+
+ [Öffnen der Meldungsansicht aus "Fenster Suchen"](../debugger/how-to-open-messages-view-from-find-window.md) wird erläutert, wie im Dialogfeld "Fenster Suchen" Ansicht "Nachrichten" zu öffnen.
+
+ [Suchen nach einer Nachricht in der Meldungsansicht](../debugger/how-to-search-for-a-message-in-messages-view.md) wird erläutert, wie Sie eine bestimmte Nachricht in der Ansicht "Nachrichten".
+
+ [Starten und Beenden der Meldungsprotokollanzeige](../debugger/how-to-start-and-stop-the-message-log-display.md) wird erläutert, wie zum Starten und beenden die nachrichtenprotokollierung.
+
+ [Nachricht Codes](../debugger/message-codes.md) definiert, die die Codes für Nachrichten in der Meldungsansicht aufgeführt.
+
+ [Anzeigen von Meldungseigenschaften](../debugger/how-to-display-message-properties.md) wie Weitere Informationen zu einer Meldung angezeigt.
+
+## <a name="related-sections"></a>Verwandte Abschnitte
+ [Spy++-Ansichten](../debugger/spy-increment-views.md) wird erläutert, die Spy++-Strukturansichten von Windows, Nachrichten, Prozesse und Threads.
+
+ [Verwenden von Spy++](../debugger/using-spy-increment.md) stellt die Spy++-Tools vor und erläutert, wie sie verwendet werden kann.
+
+ [Optionen (Dialogfeld) Nachricht](../debugger/message-options-dialog-box.md) verwendet, um auszuwählen, welche Nachrichten in der aktiven Ansicht "Nachrichten" aufgeführt sind.
+
+ [Meldungssuche (Dialogfeld) Nachricht](../debugger/message-search-dialog-box.md) verwendet, um den Knoten für eine bestimmte Nachricht in der Ansicht "Nachrichten" suchen.
+
+ [Im Dialogfeld Eigenschaften von Nachrichten](../debugger/message-properties-dialog-box.md) verwendet, um die Eigenschaften einer Nachricht, die ausgewählten Meldung anzuzeigen.
+
+ [Spy++-Referenz](../debugger/spy-increment-reference.md) enthält Abschnitte, die jedes Spy++ Menü- und Dialogfeldressourcen Feld beschreibt.

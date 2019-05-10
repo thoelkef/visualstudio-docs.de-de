@@ -1,30 +1,24 @@
 ---
 title: XML-Editor IntelliSense-Funktionen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4dbb96ffcca47303a90b1ff4c71643a63f6b4aa5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9c691eea7417e882ee3b73e9f2adc538714b486a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830742"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094661"
 ---
 # <a name="xml-editor-intellisense-features"></a>IntelliSense-Funktionen des XML-Editors
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Der XML-Editor stellt ähnlich wie andere Spracheditoren in Visual Studio vollständige IntelliSense-Funktionen bereit. In diesem Abschnitt wird erläutert, wie IntelliSense mit XSD- (XML-Schemadefinitionssprache) und XSLT-Dokumenten verwendet werden kann.  
   
 ## <a name="intellisense-in-an-xsd-document"></a>IntelliSense in einem XSD-Dokument  
@@ -91,26 +85,26 @@ Der XML-Editor stellt ähnlich wie andere Spracheditoren in Visual Studio volls
   
  Dies wird vom XML-Editor für folgende Elemente ausgeführt:  
   
--   Zusammengehörige Start- und Endtags.  
+- Zusammengehörige Start- und Endtags.  
   
--   Ein beliebiges Paar von "\<" oder ">" spitzen Klammern.  
+- Ein beliebiges Paar von "\<" oder ">" spitzen Klammern.  
   
--   Anfang und Ende von Kommentaren.  
+- Anfang und Ende von Kommentaren.  
   
--   Anfang und Ende von Verarbeitungsanweisungen.  
+- Anfang und Ende von Verarbeitungsanweisungen.  
   
--   Anfang und Ende von CDATA-Blöcken.  
+- Anfang und Ende von CDATA-Blöcken.  
   
--   Anfang und Ende von DTD-Deklarationen.  
+- Anfang und Ende von DTD-Deklarationen.  
   
--   Öffnende und schließende Anführungszeichen für Attribute.  
+- Öffnende und schließende Anführungszeichen für Attribute.  
   
 ## <a name="modifying-the-intellisense-options"></a>Ändern der IntelliSense-Optionen  
  Die IntelliSense-Features und die automatische Vervollständigung sind in der Standardeinstellung nicht aktiviert. Diese können jedoch durch Ändern der Einstellungen für Extras/Optionen geändert werden.  
   
  Die **Automatisches Einfügen** Teil der **Sonstiges** -Seite steuert das folgende Verhalten:  
   
-|name|Beschreibung|  
+|Name|Beschreibung|  
 |----------|-----------------|  
 |Tags schließen|Fügt schließende Tags für neue Elemente ein.|  
 |Attributanführungszeichen|Fügt beim Eingeben eines neuen Attributnamens Anführungszeichen für den Attributwert ein.|  
@@ -118,16 +112,13 @@ Der XML-Editor stellt ähnlich wie andere Spracheditoren in Visual Studio volls
   
 #### <a name="to-change-the-auto-completion-behavior"></a>So ändern Sie das Verhalten bezüglich der automatischen Vervollständigung  
   
-1.  Wählen Sie im Menü **Extras** den Befehl **Optionen** aus.  
+1. Wählen Sie im Menü **Extras** den Befehl **Optionen** aus.  
   
-2.  Erweitern Sie **Text-Editor**, erweitern Sie **XML**, und wählen Sie **Sonstiges**.  
+2. Erweitern Sie **Text-Editor**, erweitern Sie **XML**, und wählen Sie **Sonstiges**.  
   
-3.  Nehmen Sie alle Änderungen an der **AutoEinfügen** aus, und klicken Sie auf **OK**.  
+3. Nehmen Sie alle Änderungen an der **AutoEinfügen** aus, und klicken Sie auf **OK**.  
   
 ## <a name="see-also"></a>Siehe auch  
  [XML-Editor](../xml-tools/xml-editor.md)   
  [Verwenden von IntelliSense](../ide/using-intellisense.md)   
  [Exemplarische Vorgehensweise: Verwenden von XSLT-IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)
-
-
-

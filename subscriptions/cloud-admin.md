@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 03/28/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Einrichten von Administratoren für Cloudabonnements
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 861862d964d5ccd8e926730f648a41bc790bc64d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 34479c21ec3cb0672b8d2354595c971b062bba56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283443"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945821"
 ---
 # <a name="set-up-administrators-for-visual-studio-cloud-subscriptions"></a>Einrichten von Administratoren für Visual Studio-Cloudabonnements
 
@@ -47,7 +45,6 @@ So fügen Sie Administratoren hinzu
 Der festgelegte Abonnent und dessen Rolle „Benutzerzugriffsadministrator“ werden in der Mitte der Seite angezeigt.
 
 Der neue Administrator kann sich jetzt beim [Verwaltungsportal](https://manage.visualstudio.com) anmelden, das gleiche Azure-Abonnement, das für den Kauf der Cloudabonnements verwendet wurde, aus der Liste oben links auf der Seite auswählen und damit beginnen, diese Abonnements zu verwalten.
-
 
 > [!NOTE]
 > Wenn Sie feststellen, dass die Benutzer zum Bearbeiten Ihrer Cloudabonnements Zugriff haben, den Sie nicht als Administratoren eingerichtet haben, haben diese Benutzer möglicherweise Rollen im zugrunde liegenden Azure-Abonnement, die es ihnen ermöglichen, Abonnements zu verwalten. Zu diesen Rollen gehören: Besitzer, Mitwirkender, Dienstadministrator oder Co-Admin. Weitere Informationen finden Sie unter [Hinzufügen von Rechnungs-Managern](/azure/devops/organizations/billing/add-backup-billing-managers?view=vsts).

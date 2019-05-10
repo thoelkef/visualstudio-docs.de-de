@@ -1,14 +1,9 @@
 ---
 title: SccGetProjPath-Funktion | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccGetProjPath
 helpviewer_keywords:
@@ -16,24 +11,24 @@ helpviewer_keywords:
 ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 978316cd9c953217a3e59a7ecd1b047cab12734b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 585402efbda165844f449e2477d5ca69722613a8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752594"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446872"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath-Funktion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Diese Funktion fordert den Benutzer einen Projektpfad, d. h. eine Zeichenfolge, die nur für das Quellcodeverwaltungs-Plug-in von Bedeutung ist. Wird aufgerufen, wenn der Benutzer ist:  
   
--   Erstellen eines neuen Projekts  
+- Erstellen eines neuen Projekts  
   
--   Hinzufügen eines vorhandenen Projekts zur Versionskontrolle  
+- Hinzufügen eines vorhandenen Projekts zur Versionskontrolle  
   
--   Es wird versucht, eine vorhandene Versionskontrollprojekt suchen  
+- Es wird versucht, eine vorhandene Versionskontrollprojekt suchen  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -75,7 +70,7 @@ SCCRTN SccGetProjPath (
  pbNew  
  [in, out] Eingehenden Wert gibt an, ob ein neues Projekt erstellen. Zurückgegebene Wert gibt Erfolg zum Erstellen eines Projekts:  
   
-|Eingehende|Interpretation|  
+|Eingehend|Interpretation|  
 |--------------|--------------------|  
 |true|Der Benutzer darf es sich um ein neues Projekt erstellen.|  
 |false|Der Benutzer kann ein neues Projekt nicht erstellt werden.|  
@@ -104,7 +99,7 @@ SCCRTN SccGetProjPath (
  Für `lpUser`, die IDE möglicherweise übergeben Sie einen Benutzernamen ein, oder es möglicherweise einfach übergeben eines Zeigers auf eine leere Zeichenfolge. Ist ein Benutzername, sollte das Quellcodeverwaltungs-Plug-in als Standard verwenden. Allerdings, wenn kein Name übergeben wurde, oder wenn Fehler bei der Anmeldung mit dem angegebenen Namen, den-Plug-in sollte den Benutzer auffordern für eine Anmeldung und übergeben Sie der Namen wieder `lpUser` gültigen Anmeldeinformationen empfängt. Da das plug-in dieser Zeichenfolge ändern kann, die IDE wird immer ein Puffer der Größe (`SCC_USER_LEN`+ 1).  
   
 > [!NOTE]
->  Die erste Aktion, die die IDE führt möglicherweise ein Aufruf der `SccOpenProject` Funktion oder die `SccGetProjPath` Funktion. Daher haben beide eine identische `lpUser` -Parameter, der das Quellcodeverwaltungs-Plug-in, um die Benutzer entweder zum Zeitpunkt ermöglicht. Auch wenn die Rückgabe der Funktion ein Fehler weist darauf hin, müssen die-Plug-in dieser Zeichenfolge durch einen gültigen Anmeldenamen ausfüllen.  
+> Die erste Aktion, die die IDE führt möglicherweise ein Aufruf der `SccOpenProject` Funktion oder die `SccGetProjPath` Funktion. Daher haben beide eine identische `lpUser` -Parameter, der das Quellcodeverwaltungs-Plug-in, um die Benutzer entweder zum Zeitpunkt ermöglicht. Auch wenn die Rückgabe der Funktion ein Fehler weist darauf hin, müssen die-Plug-in dieser Zeichenfolge durch einen gültigen Anmeldenamen ausfüllen.  
   
  `lpLocalPath` ist das Verzeichnis, in dem sich der Benutzer auf das Projekt zeigt. Es kann keine leere Zeichenfolge sein. Wenn kein Verzeichnis, die aktuell definiert (wie im Falle eines Benutzers, bei dem Versuch, ein Projekt aus dem Quellcodeverwaltungssystem herunterladen) vorhanden ist und `bAllowChangePath` ist `TRUE`, das Quellcodeverwaltungs-Plug-in kann Benutzer zur Eingabe auffordern oder eine andere Methode zum Platzieren der Zeichenfolge in Besitz `lpLocalPath`. Wenn `bAllowChangePath` ist `FALSE`, das plug-in sollte nicht ändern Sie die Zeichenfolge, da der Benutzer bereits im angegebenen Verzeichnis arbeitet.  
   
@@ -115,4 +110,3 @@ SCCRTN SccGetProjPath (
 ## <a name="see-also"></a>Siehe auch  
  [Quellcodeverwaltungsfunktionen-Plug-in-API](../extensibility/source-control-plug-in-api-functions.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)
-

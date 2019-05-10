@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Konfigurieren von Projekten für mehrere Zielplattformen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], targeting platforms
 - platforms, changing target platforms
@@ -16,15 +11,15 @@ ms.assetid: affa2392-7aed-45ac-9ffa-1d8e0496d590
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9a3010e6304124ee306c5ecad3593df98d555523
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 7457b5be3a6c1cbf2c2b6a1c6f66f9fb89e8d225
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921833"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62584313"
 ---
-# <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Gewusst wie: Konfigurieren von Projekten für mehrere Zielplattformen
+# <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Vorgehensweise: Konfigurieren von Projekten für mehrere Zielplattformen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ermöglicht es, dass eine Projektmappe mehrere verschiedene CPU-Architekturen oder Plattformen auf einmal ansteuert. Auf die Eigenschaften, die für das Festlegen erforderlich sind, kann über das Dialogfeld **Konfigurations-Manager** zugegriffen werden.  
@@ -34,31 +29,31 @@ ms.locfileid: "49921833"
   
 #### <a name="to-set-your-configuration-to-target-a-different-platform"></a>Festlegen der Konfiguration zum Ansteuern einer anderen Plattform  
   
-1.  Klicken Sie im Menü **Erstellen** auf **Konfigurations-Manager**.  
+1. Klicken Sie im Menü **Erstellen** auf **Konfigurations-Manager**.  
   
-2.  Wählen Sie im Feld **Aktive Projektmappenplattform** die Plattform aus, die Ihre Projektmappe ansteuern soll, oder klicken Sie auf **\<Neu>**, um eine neue Plattform zu erstellen. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] kompiliert Ihre Plattform, damit diese die Plattform ansteuert, die als aktive Plattform im Dialogfeld **Konfigurations-Manager** festgelegt ist.  
+2. Wählen Sie im Feld **Aktive Projektmappenplattform** die Plattform aus, die Ihre Projektmappe ansteuern soll, oder klicken Sie auf **\<Neu>**, um eine neue Plattform zu erstellen. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] kompiliert Ihre Plattform, damit diese die Plattform ansteuert, die als aktive Plattform im Dialogfeld **Konfigurations-Manager** festgelegt ist.  
   
 ## <a name="removing-a-platform"></a>Entfernen einer Plattform  
  Wenn Sie feststellen, dass Sie keine Plattform benötigen, können Sie diese mithilfe des Dialogfelds „Konfigurations-Manager“ entfernen. Dadurch werden alle Projektmappen- und Projekteinstellungen entfernt, die Sie für diese Kombination von Konfiguration und Ziel konfiguriert haben.  
   
 #### <a name="to-remove-a-platform"></a>Entfernen einer Plattform  
   
-1.  Klicken Sie im Menü **Erstellen** auf **Konfigurations-Manager**.  
+1. Klicken Sie im Menü **Erstellen** auf **Konfigurations-Manager**.  
   
-2.  Klicken Sie im Feld **Aktive Projektmappenplattform** auf **\<Bearbeiten>**. Das Dialogfeld **Projektmappenplattformen bearbeiten** wird geöffnet.  
+2. Klicken Sie im Feld **Aktive Projektmappenplattform** auf **\<Bearbeiten>**. Das Dialogfeld **Projektmappenplattformen bearbeiten** wird geöffnet.  
   
-3.  Klicken Sie auf die Plattform, die Sie entfernen möchten, und dann auf **Entfernen**.  
+3. Klicken Sie auf die Plattform, die Sie entfernen möchten, und dann auf **Entfernen**.  
   
 ## <a name="targeting-multiple-platforms-with-one-solution"></a>Ansteuern mehrerer Plattformen mit einer Projektmappe  
  Da Sie die Einstellungen basierend auf der Kombination von Konfigurations- und Plattformeinstellungen ändern können, können Sie eine Projektmappe einrichten, die mehr als eine Plattform ansteuern kann.  
   
 #### <a name="to-target-multiple-platforms"></a>Ansteuern mehrerer Plattformen  
   
-1.  Verwenden Sie den **Konfigurations-Manager**, um mindestens zwei Zielplattformen für die Projektmappe hinzuzufügen.  
+1. Verwenden Sie den **Konfigurations-Manager**, um mindestens zwei Zielplattformen für die Projektmappe hinzuzufügen.  
   
-2.  Wählen Sie die Plattform, die Sie ansteuern möchten, aus der Liste **Aktive Projektmappenplattform** aus.  
+2. Wählen Sie die Plattform, die Sie ansteuern möchten, aus der Liste **Aktive Projektmappenplattform** aus.  
   
-3.  Erstellen Sie die Projektmappe.  
+3. Erstellen Sie die Projektmappe.  
   
 #### <a name="to-build-multiple-solution-configurations-at-once"></a>Gleichzeitiges Erstellen von mehreren Projektmappenkonfigurationen  
   
@@ -72,6 +67,3 @@ ms.locfileid: "49921833"
  [Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen](../ide/how-to-create-and-edit-configurations.md)   
  [Grundlagen der Buildkonfiguration](../ide/understanding-build-configurations.md)   
  [Erstellen und Bereinigen von Projekten und Projektmappen in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
-
-
-

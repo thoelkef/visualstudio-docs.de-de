@@ -1,26 +1,21 @@
 ---
 title: Projektmappenkonfiguration | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - solution configurations
 ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 53d8e3d33a81e20d553e6a5c97eb6e6f33339079
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bbd47969a7a48be817e8e2f5359705e03b5d0dc2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432093"
 ---
 # <a name="solution-configuration"></a>Projektmappenkonfiguration
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ Projektmappenkonfigurationen auf Projektmappenebene Eigenschaften zu speichern. 
  Der standardmäßige Visual Studio-Symbolleiste enthält eine Schaltfläche "Start" und eine Projektmappenkonfiguration-Dropdownliste rechts neben der Schaltfläche "Start". Dieser Liste kann Benutzer wählen die Konfiguration gestartet werden soll, wenn F5 gedrückt wird, ihre eigenen Projektmappenkonfigurationen erstellen oder Bearbeiten einer vorhandenen Konfigurations.  
   
 > [!NOTE]
->  Es gibt keine Erweiterungsschnittstellen erstellen oder bearbeiten die Projektmappenkonfiguration ein. Verwenden Sie `DTE.SolutionBuilder`. Es gibt jedoch Erweiterbarkeits-APIs für die Verwaltung der Erstellung der Projektmappe. Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>.  
+> Es gibt keine Erweiterungsschnittstellen erstellen oder bearbeiten die Projektmappenkonfiguration ein. Verwenden Sie `DTE.SolutionBuilder`. Es gibt jedoch Erweiterbarkeits-APIs für die Verwaltung der Erstellung der Projektmappe. Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>.  
   
  Hier ist, wie Sie die Projektmappenkonfiguration, die vom Projekttyp unterstützt implementieren können:  
   
@@ -66,4 +61,3 @@ Projektmappenkonfigurationen auf Projektmappenebene Eigenschaften zu speichern. 
  [Verwalten von Konfigurationsoptionen](../../extensibility/internals/managing-configuration-options.md)   
  [Konfiguration für die Erstellung des Projekts](../../extensibility/internals/project-configuration-for-building.md)   
  [Projektkonfigurationsobjekt](../../extensibility/internals/project-configuration-object.md)
-

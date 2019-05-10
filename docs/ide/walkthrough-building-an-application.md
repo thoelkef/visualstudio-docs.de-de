@@ -1,20 +1,19 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen einer Anwendung'
 ms.date: 09/25/2017
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2987df6c8ed8a26c2cf95020e26f67c36721d676
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: c7f767f254119e1f9820c72a12e2aac7b4c141f1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672781"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62582943"
 ---
 # <a name="walkthrough-build-an-application"></a>Exemplarische Vorgehensweise: Erstellen einer Anwendung
 
@@ -26,7 +25,7 @@ Laden Sie das Beispiel [Introduction to Building WPF Applications (Einführung i
 
 ## <a name="create-a-custom-build-configuration"></a>Erstellen einer benutzerdefinierten Buildkonfiguration
 
-Wenn Sie eine Projektmappe erstellen, werden Debug- und Releasebuildkonfigurationen und ihre Standardplattformziele für die Projektmappe automatisch definiert. Sie können diese Konfigurationen dann anpassen oder eigene Konfigurationen erstellen. Buildkonfigurationen geben den Buildtyp an. Buildplattformen geben das Betriebssystem an, auf das eine Anwendung für diese Konfiguration ausgerichtet ist. Weitere Informationen finden Sie unter [Grundlagen der Buildkonfiguration](../ide/understanding-build-configurations.md), [Grundlagen zu Buildplattformen](../ide/understanding-build-platforms.md) und [Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen in Visual Studio](../debugger/how-to-set-debug-and-release-configurations.md).
+Wenn Sie eine Projektmappe erstellen, werden Debug- und Releasebuildkonfigurationen und ihre Standardplattformziele für die Projektmappe automatisch definiert. Sie können diese Konfigurationen dann anpassen oder eigene Konfigurationen erstellen. Buildkonfigurationen geben den Buildtyp an. Buildplattformen geben das Betriebssystem an, auf das eine Anwendung für diese Konfiguration ausgerichtet ist. Weitere Informationen finden Sie unter [Grundlagen der Buildkonfiguration](../ide/understanding-build-configurations.md), [Grundlagen zu Buildplattformen](../ide/understanding-build-platforms.md) und [Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen](../debugger/how-to-set-debug-and-release-configurations.md).
 
 Sie können Konfigurationen und Plattformeinstellungen mithilfe des Dialogfelds **Konfigurations-Manager** ändern oder erstellen. In dieser Prozedur erstellen Sie eine Buildkonfiguration zum Testen.
 
@@ -66,7 +65,7 @@ Danach erstellen Sie die Projektmappe mit der benutzerdefinierten Buildkonfigura
 
 ### <a name="build-the-solution"></a>Erstellen der Projektmappe
 
--   Wählen Sie auf der Menüleiste **Erstellen** > **Projektmappe erstellen** aus.
+- Wählen Sie auf der Menüleiste **Erstellen** > **Projektmappe erstellen** aus.
 
     Im Fenster **Ausgabe** wird das Ergebnis des Builds angezeigt. Der Buildvorgang war erfolgreich.
 
@@ -130,7 +129,7 @@ Sie können bestimmte Warnungen während eines Builds vorübergehend ausblenden,
 
    ![Ausgabefenster, Visual Basic-Buildwarnungen](../ide/media/buildwalk_visualbasicbuildwarnings.png)
 
-   Weitere Informationen finden Sie unter [Vorgehensweise: Unterdrücken von Compiler-Warnungen](../ide/how-to-suppress-compiler-warnings.md).
+   Weitere Informationen finden Sie unter [Vorgehensweise: Unterdrücken von Compilerwarnungen](../ide/how-to-suppress-compiler-warnings.md).
 
 ## <a name="display-additional-build-details-in-the-output-window"></a>Anzeigen zusätzlicher Builddetails im Ausgabefenster
 
@@ -164,7 +163,7 @@ Sie können die Menge der im Fenster **Ausgabe** angezeigten Informationen über
 
 Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md).
 
-## <a name="create-a-release-build"></a>Erstellen eines Releasebuilds
+## <a name="create-a-release-build"></a>Erstellen eines Versionsbuilds
 
 Sie können eine Version der Beispielanwendung erstellen, die für das Versenden optimiert wird. Beim Releasebuild geben Sie an, dass die ausführbare Datei auf eine Netzwerkfreigabe kopiert wird, bevor der Build gestartet wird.
 
@@ -193,7 +192,7 @@ Weitere Informationen finden Sie unter [Vorgehensweise: Ändern des Buildausgabe
 
      ![Befehl "Projektmappe erstellen" im Menü "Erstellen"](../ide/media/exploreide-buildsolution.png)
 
-### <a name="specify-a-release-build-for-c"></a>Angeben eines Releasebuilds für C# #
+### <a name="specify-a-release-build-for-c"></a>Angeben eines Releasebuilds für C\#
 
 1. Öffnen Sie den **Projekt-Designer**.
 

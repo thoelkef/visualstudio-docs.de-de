@@ -1,26 +1,22 @@
 ---
 title: Erstellen einer Benutzeroberfläche mit Blend
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - Blend.Start.Dev12
 ms.assetid: efd12263-cc2d-4081-a2bb-9a2cc17c442c
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a9b1bc090e46ddcb413b3c362af133e10eaaf50c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 78d4f63e2dbe84b878916757d1015e3c6d534258
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883145"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436182"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Erstellen einer Benutzeroberfläche mit Blend für Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,19 +28,19 @@ Mit Blend für Visual Studio können Sie XAML-basierte Windows-Desktop-, Web-, [
  Wenn Sie mit Blend für Visual Studio nicht vertraut sind, nehmen Sie sich einen Moment Zeit, um die besonderen Funktionen des Arbeitsbereichs kennenzulernen. In diesem Abschnitt erhalten Sie eine kurze Führung.
 
 > [!NOTE]
->  Informationen zu den freigegebenen Entwurfsfunktionen wie die Zeichenfläche, das Dokumentgliederungsfenster und das Gerätefenster finden Sie unter [Erstellen einer Benutzeroberfläche mit dem XAML-Designer in Visual Studio](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
+> Informationen zu den freigegebenen Entwurfsfunktionen wie die Zeichenfläche, das Dokumentgliederungsfenster und das Gerätefenster finden Sie unter [Erstellen einer Benutzeroberfläche mit dem XAML-Designer in Visual Studio](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
  **In diesem Thema**:
 
--   [Überblick über die Werkzeuge](#Tools)
+- [Überblick über die Werkzeuge](#Tools)
 
--   [Überblick über den Objektbereich](#Assets)
+- [Überblick über den Objektbereich](#Assets)
 
--   [Überblick über die Bereiche Objekte und Zeitachse](#Objects)
+- [Überblick über die Bereiche Objekte und Zeitachse](#Objects)
 
--   [Überblick über den Bereich Eigenschaften](#Properties)
+- [Überblick über den Bereich Eigenschaften](#Properties)
 
-##  <a name="Tools"></a>Überblick über die Werkzeuge
+## <a name="Tools"></a>Überblick über die Werkzeuge
  Mithilfe des Bereichs **Werkzeuge** in Blend für Visual Studio können Sie in Ihrer Anwendung Objekte erstellen und ändern. Die Objekte werden erstellt, indem Sie ein Werkzeug auswählen und die Objekte mit der Maus auf die Zeichenfläche ziehen.
 
  ![Werkzeugbereich](../designers/media/blend5toolspanel.png "Blend5Toolspanel")
@@ -60,7 +56,7 @@ Mit Blend für Visual Studio können Sie XAML-basierte Windows-Desktop-, Web-, [
 
  **Sehen Sie sich ein kurzes Video an:** ![Konfigurieren installierter Funktionen](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [der Symbolleiste](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
 
-##  <a name="Assets"></a>Überblick über den Objektbereich
+## <a name="Assets"></a>Überblick über den Objektbereich
  Sie finden alle Steuerelemente im **Objektbereich**, das der **Toolbox** in Visual Studio ähnelt. Zusätzlich zu den Steuerelementen befinden sich alle zur Zeichenfläche hinzufügbaren Objekte im **Objektbereich**, einschließlich Stile, Medien, Verhalten und Effekte.
 
  ![Objektbereich](../designers/media/blend5-assets-panel.png "Blend5_Assets_panel")
@@ -73,7 +69,7 @@ Mit Blend für Visual Studio können Sie XAML-basierte Windows-Desktop-, Web-, [
 |![](../designers/media/b1-4.png "B1_4")|**Formatvorlagen** Zeigt alle Stile an, die im Ressourcenverzeichnis enthalten sind.|
 |![](../designers/media/b1-5.png "B1_5")|**Beschreibung** Zeigen Sie eine Beschreibung der ausgewählten Objektkategorie oder Unterkategorie an.|
 
-##  <a name="Objects"></a>Überblick über die Bereiche Objekte und Zeitachse
+## <a name="Objects"></a>Überblick über die Bereiche Objekte und Zeitachse
  Verwenden Sie diesen Bereich, um die Objekte auf der Zeichenfläche zu organisieren und gegebenenfalls zu animieren.
 
  ![Objekt- und Zeitachsenbereich im Animationsmodus](../designers/media/b5-object-timeline-animation.png "b5_object_timeline_animation")
@@ -97,13 +93,12 @@ Mit Blend für Visual Studio können Sie XAML-basierte Windows-Desktop-, Web-, [
 |![](../designers/media/b1-15.png "B1_15")|**Zeitachsenzoom** Legt die Zoomauflösung der Zeitachse fest. Durch Vergrößern können Sie eine detailliertere Animation bearbeiten, während Sie beim Verkleinern eine Übersicht der Ereignisse über einen längeren Zeitraum hinweg anzeigen können. Wenn Sie beim Vergrößern kein Keyframe zum gewünschten Zeitpunkt festlegen können, stellen Sie sicher, dass die Auflösung zum Andocken hoch genug eingestellt ist.|
 |![Legende 16](../designers/media/b5-label-16.png "b5_label_16")|**Zeitachsen-Erfassungsbereich** Zeigt die Zeitachse an und ermöglicht Ihnen das Verschieben der Keyframes durch Ziehen oder Verwenden der Kontextmenüs.|
 
-##  <a name="Properties"></a>Überblick über den Bereich Eigenschaften
+## <a name="Properties"></a>Überblick über den Bereich Eigenschaften
  Verwenden Sie diesen Bereich, um die Eigenschaften eines Objekts anzuzeigen und zu ändern. Sie können sie auch direkt auf der Zeichenfläche festlegen. Wenn Sie dies tun, werden die Änderungen im Bereich **Eigenschaften** angezeigt.
 
  ![Bereich „Eigenschaften“](../designers/media/blend5-properties-panel.png "Blend5_properties_panel")
 
  **Kategorien** Erweitern und Reduzieren der Kategorien von Eigenschaften. Klicken Sie auf **Erweitern** ![](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png "6375953d-074c-421a-bbb3-6f5055b67b64") und **Reduzieren** ![Reduzieren](../designers/media/b5-collapse-button.png "Schaltfläche_Reduzieren"), um Kategoriedetails anzuzeigen oder auszublenden.
-
 
 |                                                                                                         |                                                                                                                                                                                                                                  |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

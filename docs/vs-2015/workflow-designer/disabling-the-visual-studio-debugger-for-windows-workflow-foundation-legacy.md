@@ -1,11 +1,8 @@
 ---
-title: Deaktivieren des Visual Studio-Debuggers für Windows Workflow Foundation (Vorgängerversion) | Microsoft-Dokumentation
-ms.custom: ''
+title: Deaktivieren des Debuggers für Windows Workflow Foundation (Vorgängerversion) | Microsoft-Dokumentation
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - workflows, disabling debugger
@@ -15,32 +12,31 @@ ms.assetid: 9da96d0e-f941-4fa9-a1a5-6bab50adfec9
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: fab5278c5f0c7385dd767b8994a04124bc40b283
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e5065de4ec0217123f76eb23d32bcb0facd25dcc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172210"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823348"
 ---
 # <a name="disabling-the-visual-studio-debugger-for-windows-workflow-foundation-legacy"></a>Deaktivieren des Visual Studio-Debuggers für Windows Workflow Foundation (Vorgängerversion)
-In diesem Thema wird das Deaktivieren des [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Debuggers mithilfe der Konfigurationsdatei beim Erstellen von [!INCLUDE[wf](../includes/wf-md.md)]-Anwendungen in der Vorgängerversion von [!INCLUDE[wfd1](../includes/wfd1-md.md)] beschrieben. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../includes/wfd2-md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.  
-  
- Standardmäßig ist der [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)]-Debugger für [!INCLUDE[wf](../includes/wf-md.md)] für einen Hostprozess aktiviert. Um workflowdebuggen zu deaktivieren, Sie müssen ausdrücklich ausschalten, indem Sie einen Eintrag "DisableWorkflowDebugging" hinzufügen  **\<Switches >** Element in der  **\<system.diagnostics >** Abschnitt der Konfigurationsdatei des Hosts.  
-  
- Im folgenden Beispiel wird gezeigt, wie die Hostkonfigurationsdatei geändert wird, um Workflowdebuggen zu deaktivieren.  
-  
-```  
-<?xml version="1.0" encoding="utf-8" ?>  
-<configuration>  
-   <system.diagnostics>  
-      <switches>  
-         <add name="DisableWorkflowDebugging" value="true"/>  
-      </switches>  
-   </system.diagnostics>  
-</configuration>  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [Aufrufen des Visual Studio-Debuggers für Windows Workflow Foundation (Vorgängerversion)](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)   
- [Debuggen von Legacyworkflows](../workflow-designer/debugging-legacy-workflows.md)
+In diesem Thema wird das Deaktivieren des [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Debuggers mithilfe der Konfigurationsdatei beim Erstellen von [!INCLUDE[wf](../includes/wf-md.md)]-Anwendungen in der Vorgängerversion von [!INCLUDE[wfd1](../includes/wfd1-md.md)] beschrieben. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../includes/wfd2-md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.
+
+ Standardmäßig ist der [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)]-Debugger für [!INCLUDE[wf](../includes/wf-md.md)] für einen Hostprozess aktiviert. Um workflowdebuggen zu deaktivieren, Sie müssen ausdrücklich ausschalten, indem Sie einen Eintrag "DisableWorkflowDebugging" hinzufügen  **\<Switches >** Element in der  **\<system.diagnostics >** Abschnitt der Konfigurationsdatei des Hosts.
+
+ Im folgenden Beispiel wird gezeigt, wie die Hostkonfigurationsdatei geändert wird, um Workflowdebuggen zu deaktivieren.
+
+```
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+   <system.diagnostics>
+      <switches>
+         <add name="DisableWorkflowDebugging" value="true"/>
+      </switches>
+   </system.diagnostics>
+</configuration>
+```
+
+## <a name="see-also"></a>Siehe auch
+ [Aufrufen des Visual Studio-Debuggers für Windows Workflow Foundation (Vorgängerversion)](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md) [Debuggen von Legacyworkflows](../workflow-designer/debugging-legacy-workflows.md)

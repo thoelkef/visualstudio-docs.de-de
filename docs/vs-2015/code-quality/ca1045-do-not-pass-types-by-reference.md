@@ -1,14 +1,9 @@
 ---
 title: 'CA1045: Typen nicht als Verweis übergeben | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1045
 - DoNotPassTypesByReference
@@ -20,14 +15,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1aa9077a0d27c105cd7008d550a4315ce8daf91a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 6bbdcb2e2ac8f905a2b52cfb41ed90217d215b4b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836566"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431541"
 ---
-# <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045: Typen nicht als Verweis übergeben
+# <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045: Typen nicht als Verweis übergeben.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -50,7 +45,7 @@ ms.locfileid: "49836566"
  Zwar sind in aller Munde und häufig verwendet, die richtige Anwendung der Rückgabewerte `out` und `ref` Parameter erfordert, mittlere Design- und Fertigkeiten im coding. Entwurf für eine Breite Zielgruppe master arbeiten mit Benutzern nicht erwarten sollten Entwickler von Bibliotheken `out` oder `ref` Parameter.
 
 > [!NOTE]
->  Bei der Arbeit mit Parametern, die große Strukturen sind, können die zusätzlichen Ressourcen, die erforderlich sind, zum Kopieren dieser Strukturen eine Auswirkung auf die Leistung führen, wenn Sie nach Wert übergeben. In diesen Fällen verwenden Sie ggf. `ref` oder `out` Parameter.
+> Bei der Arbeit mit Parametern, die große Strukturen sind, können die zusätzlichen Ressourcen, die erforderlich sind, zum Kopieren dieser Strukturen eine Auswirkung auf die Leistung führen, wenn Sie nach Wert übergeben. In diesen Fällen verwenden Sie ggf. `ref` oder `out` Parameter.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, die von einem Werttyp verursacht wird, müssen Sie die Methode, die das Objekt als ihren Rückgabewert zurück. Wenn die Methode mehrere Werte zurückgeben muss, Umgestalten Sie, um eine einzelne Instanz eines Objekts zurück, der die Werte enthält.
@@ -86,12 +81,9 @@ ms.locfileid: "49836566"
 **12345**
 **12345**
 **ändern – als Verweis übergebenen Zeiger:** 
- ** 12345**
+**12345**
 **12345 ABCDE**
 **Übergabe nach Wert zurückgibt:**
 **12345 ABCDE**
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA1021: out-Parameter vermeiden](../code-quality/ca1021-avoid-out-parameters.md)
-
-
-
+ [CA1021: Out-Parameter vermeiden](../code-quality/ca1021-avoid-out-parameters.md)

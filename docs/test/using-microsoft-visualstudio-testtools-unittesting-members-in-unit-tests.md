@@ -1,19 +1,18 @@
 ---
 title: Verwenden von Microsoft.VisualStudio.TestTools.UnitTesting-Membern in Komponententests
 ms.date: 03/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 13fb1fb6b0b78ffbb2e89b80180260f14b695282
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 12c1b35288ac5857ac2971ffc6cbdddd40aa5c40
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62776677"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>Verwenden des MSTest-Frameworks in Komponententests
 

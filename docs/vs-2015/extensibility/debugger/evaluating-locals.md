@@ -1,45 +1,40 @@
 ---
 title: Auswertung der lokalen Variablen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], evaluating locals
 - expression evaluation, evaluating locals
 ms.assetid: 7d1ed528-4e7a-4d8f-87b4-162440644a75
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 88b9fdd5ac8451056454b80ad0262b8aa9bf951b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7e31aa560422c9f18ec30a6e203559ef3ed10c52
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759010"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444769"
 ---
 # <a name="evaluating-locals"></a>Auswerten von lokalen Elementen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zu CLR-ausdrucksauswertungen implementieren, finden Sie unter [CLR Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen zu CLR-ausdrucksauswertungen implementieren, finden Sie unter [CLR Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) wird aufgerufen, um den Wert von einem lokalen, als auch den lokalen Namen und Typ abzurufen. Da der Wert eines lokalen Elements hängt von den aktuellen Zustand des Programms ist, muss den lokalen Wert aus dem Speicher abgerufen werden. Die [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) Objekt dient zum Anbinden der [IDebugField](../../extensibility/debugger/reference/idebugfield.md) Objekt, das an die gewünschte Position im Arbeitsspeicher, die mit dem Wert den lokalen darstellt. Dieser Speicherort im Arbeitsspeicher wird dargestellt, durch eine [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) Objekt.  
   
  Diese Funktionalität des Abrufen des Werts eines lokalen Elements wird in eine Hilfsfunktion gekapselt, die die folgenden Aufgaben ausführt:  
   
-1.  Bindet die `IDebugField` Objekt in den Speicher zum Abrufen einer `IDebugObject` Objekt.  
+1. Bindet die `IDebugField` Objekt in den Speicher zum Abrufen einer `IDebugObject` Objekt.  
   
-2.  Ruft den Wert aus dem Arbeitsspeicher. Dieser Wert wird als eine Reihe von Bytes dargestellt.  
+2. Ruft den Wert aus dem Arbeitsspeicher. Dieser Wert wird als eine Reihe von Bytes dargestellt.  
   
-3.  Formatiert den Wert basierend auf den lokalen Typ.  
+3. Formatiert den Wert basierend auf den lokalen Typ.  
   
-4.  Gibt ein generisches Objekt, das den lokalen Wert enthält. In c# ist dies ein `object`, und in C++ ist dies ein `VARIANT`.  
+4. Gibt ein generisches Objekt, das den lokalen Wert enthält. In c# ist dies ein `object`, und in C++ ist dies ein `VARIANT`.  
   
 ## <a name="managed-code"></a>Verwalteter Code  
  Dies ist eine Implementierung einer Funktion, die den Wert einer lokalen in verwaltetem Code abruft.  
@@ -200,4 +195,3 @@ HRESULT FieldGetPrimitiveValue(
  [Beispielimplementierung von lokalen Elementen](../../extensibility/debugger/sample-implementation-of-locals.md)   
  [Abrufen von lokalen Werten](../../extensibility/debugger/getting-local-values.md)   
  [Auswertungskontext](../../extensibility/debugger/evaluation-context.md)
-

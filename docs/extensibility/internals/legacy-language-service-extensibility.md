@@ -1,24 +1,26 @@
 ---
 title: Erweiterbarkeit von Legacysprachdiensten | Microsoft-Dokumentation
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services
 - Visual Studio, language services
 ms.assetid: 2700cd4d-5f68-43fc-b62f-dc80c3f3aa85
-author: gregvanl
+caps.latest.revision: 43
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 0e5dbb6e5b592a166c5110623886534967613d95
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 339e23411f10e8cde32900feea4618c0806faacf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853501"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860058"
 ---
 # <a name="legacy-language-service-extensibility"></a>Erweiterbarkeit von Legacysprachdiensten
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Ein Sprachdienst bietet die sprachspezifische-Unterstützung zum Bearbeiten von Quellcode in der IDE.  
   
  Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Um mehr über die neue Methode zum Implementieren von eines Sprachdiensts zu suchen, finden Sie unter [-Editor und Sprachdiensterweiterungen](../../extensibility/editor-and-language-service-extensions.md).  

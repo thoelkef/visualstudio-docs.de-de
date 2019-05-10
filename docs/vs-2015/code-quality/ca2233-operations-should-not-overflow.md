@@ -1,14 +1,9 @@
 ---
-title: 'CA2233: Vorgänge sollten nicht überlaufen. | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'CA2233: Vorgänge sollten nicht überlaufen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - OperationsShouldNotOverflow
 - CA2233
@@ -20,14 +15,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5f6690f6577d936757ae3bbe8b725b4434b6bee1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 52950f138354a72f7c0e781d761aa466760e3ca0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836657"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054793"
 ---
-# <a name="ca2233-operations-should-not-overflow"></a>CA2233: Vorgänge sollten nicht überlaufen
+# <a name="ca2233-operations-should-not-overflow"></a>CA2233: Vorgänge sollten nicht überlaufen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -112,14 +107,11 @@ End Sub
 
  **So schalten Sie die aktivierten arithmetischen Über-/Unterlauf in c#**
 
-1.  In **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und wählen Sie **Eigenschaften**.
+1. In **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und wählen Sie **Eigenschaften**.
 
-2.  Wählen Sie die Registerkarte **Build** aus, und klicken Sie auf **Erweitert**.
+2. Wählen Sie die Registerkarte **Build** aus, und klicken Sie auf **Erweitert**.
 
-3.  Wählen Sie **arithmetischen Über-/Unterlauf überprüfen** , und klicken Sie auf **OK**.
+3. Wählen Sie **arithmetischen Über-/Unterlauf überprüfen** , und klicken Sie auf **OK**.
 
 ## <a name="see-also"></a>Siehe auch
  <xref:System.OverflowException?displayProperty=fullName> [C#-Operatoren](http://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43) [Checked und Unchecked](http://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)
-
-
-

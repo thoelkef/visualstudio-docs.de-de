@@ -1,35 +1,29 @@
 ---
 title: Durchsuchen des Schemasets | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: ec1395e0-d03c-4130-810d-f2db656937bd
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 885797e319652aaf9573b0c171318506518f82df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1d388db50ae935ef85b720177bd31c832a353d31
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204203"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080558"
 ---
 # <a name="searching-the-schema-set"></a>Durchsuchen des Schemasets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Im XML-Schema-Explorer stehen Ihnen die folgenden Methoden zum Durchsuchen des Schemasets zur Verfügung:  
   
--   Schlüsselwortsuche  
+- Schlüsselwortsuche  
   
--   Schemaspezifische Suche  
+- Schemaspezifische Suche  
   
 ## <a name="keyword-search"></a>Schlüsselwortsuche  
  Durchführen von Schlüsselwortsuchen durch Eingabe einer Teilzeichenfolge in der **Schlüsselwortsuche** Textfeld der XML-Schema-Explorer-Symbolleiste.  
@@ -38,11 +32,11 @@ Im XML-Schema-Explorer stehen Ihnen die folgenden Methoden zum Durchsuchen des S
   
  Der XML-Schema-Explorer durchsucht das Schemaset nach Folgendem:  
   
--   Alle `name`- oder `ref`-Attribute, die mit dem angegebenen Schlüsselwort übereinstimmen. So können Sie anhand des Namens nach Elementen, Attributen, Typen usw. suchen.  
+- Alle `name`- oder `ref`-Attribute, die mit dem angegebenen Schlüsselwort übereinstimmen. So können Sie anhand des Namens nach Elementen, Attributen, Typen usw. suchen.  
   
--   Die `schemaLocation`-Attribute von Include-Anweisungen.  
+- Die `schemaLocation`-Attribute von Include-Anweisungen.  
   
--   Die `namespace`-Attribute von Import-Anweisungen.  
+- Die `namespace`-Attribute von Import-Anweisungen.  
   
 ## <a name="schema-specific-search"></a>Schemaspezifische Suche  
  Der XML-Schema-Explorer enthält auch integrierte Suchfunktionen, auf die Sie über das Kontextmenü des XML-Schema-Explorers zugreifen. Weitere Informationen zu verfügbaren Kontextmenüs finden Sie unter [Kontextmenüs](../xml-tools/context-menus-xml-schema-explorer.md). Sie können auch eine schemaspezifische Suche aus der Ausgangsansicht ausführen; Weitere Informationen finden Sie im Abschnitt "Details zum Schemaset" in der [Ausgangsansicht](../xml-tools/start-view.md) Thema.  
@@ -59,6 +53,3 @@ Im XML-Schema-Explorer stehen Ihnen die folgenden Methoden zum Durchsuchen des S
   
 ## <a name="see-also"></a>Siehe auch  
  [XML-Schema-Explorer](../xml-tools/xml-schema-explorer.md)
-
-
-

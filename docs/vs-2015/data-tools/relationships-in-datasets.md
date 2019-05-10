@@ -1,12 +1,9 @@
 ---
 title: Beziehungen in Datasets | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 f1_keywords:
 - vbData.Microsoft.VSDesigner.DataSource.DesignRelation
 - vbdata.Microsoft.VSDesigner.DataSource.DesignRelation
@@ -23,18 +20,17 @@ ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0b138b9ad49a0fd1a406e698aafd121478e95f4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9991adc9d770487c646c97da81b6245ae65ba5f5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935405"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425415"
 ---
 # <a name="relationships-in-datasets"></a>Beziehungen in datasets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Datasets, die verwandte Daten enthalten Tabellen <xref:System.Data.DataRelation> Objekte aus, um eine über-/unterordnungsbeziehung zwischen den Tabellen und verknüpften Datensätze von den anderen zurück. Hinzufügen verknüpfte Tabellen zu Datasets mithilfe der **Assistenten zur Datenquellenkonfiguration**, oder die **Dataset-Designer**, erstellt und konfiguriert die <xref:System.Data.DataRelation> -Objekt für Sie.  
   
  Die <xref:System.Data.DataRelation> Objekt erfüllt zwei Funktionen:  
@@ -70,7 +66,7 @@ Datasets, die verwandte Daten enthalten Tabellen <xref:System.Data.DataRelation>
 |Regel für Foreign Key-Einschränkung|Aktion|  
 |----------------------------------|------------|  
 |<xref:System.Data.Rule>|Die Änderung (Update- oder Delete) an den übergeordneten Datensatz wird auch in verwandten Datensätze in der untergeordneten Tabelle vorgenommen.|  
-|<xref:System.Data.Rule>|Untergeordnete Datensätze werden nicht gelöscht, aber der Fremdschlüssel in den untergeordneten Datensätzen wird festgelegt, um <xref:System.DBNull>. Mit dieser Einstellung können untergeordnete Datensätze als "verwaiste" bleiben – d. h., sie haben keine Beziehung zur übergeordneten Datensätze. **Hinweis:** mit dieser Regel kann ungültige Daten in der untergeordneten Tabelle führen.|  
+|<xref:System.Data.Rule>|Untergeordnete Datensätze werden nicht gelöscht, aber der Fremdschlüssel in den untergeordneten Datensätzen wird festgelegt, um <xref:System.DBNull>. Mit dieser Einstellung können untergeordnete Datensätze als "verwaiste" bleiben – d. h., sie haben keine Beziehung zur übergeordneten Datensätze. **Hinweis**:  Mit dieser Regel kann dazu führen, dass ungültige Daten in der untergeordneten Tabelle.|  
 |<xref:System.Data.Rule>|Der Fremdschlüssel in die zugehörigen untergeordneten Datensätze auf den Standardwert festgelegt ist (wie von der Spaltenwerts festgelegt <xref:System.Data.DataColumn.DefaultValue%2A> Eigenschaft).|  
 |<xref:System.Data.Rule>|Verknüpfte untergeordnete Datensätze wird nicht geändert. Mit dieser Einstellung können untergeordnete Datensätze Verweise auf ungültige übergeordnete Datensätze enthalten.|  
   
@@ -88,23 +84,23 @@ Datasets, die verwandte Daten enthalten Tabellen <xref:System.Data.DataRelation>
   
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>Um eine Beziehung zwischen zwei Datentabellen zu erstellen.  
   
-1.  Öffnen Sie das Dataset in den **Dataset-Designer**. Weitere Informationen finden Sie unter [Vorgehensweise: Öffnen Sie ein Dataset im Dataset-Designer](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Öffnen Sie das Dataset im **DataSet-Designer**. Weitere Informationen finden Sie unter [Vorgehensweise: Öffnen Sie ein Dataset im Dataset-Designer](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
-2.  Ziehen Sie eine **Beziehung** -Objekt aus der **DataSet** Toolbox auf die untergeordnete Datentabelle in der Beziehung.  
+2. Ziehen Sie eine **Beziehung** -Objekt aus der **DataSet** Toolbox auf die untergeordnete Datentabelle in der Beziehung.  
   
      Die **Beziehung** Dialogfeld geöffnet wird, füllen die **untergeordnete Tabelle** Feld mit der Tabelle, die Sie gezogen haben die **Beziehung** -Objekt auf.  
   
-3.  Wählen Sie die übergeordnete Tabelle aus der **übergeordnete Tabelle** Feld. Die übergeordnete Tabelle enthält die Datensätze auf der Seite "1" einer 1: n Beziehung.  
+3. Wählen Sie die übergeordnete Tabelle aus der **übergeordnete Tabelle** Feld. Die übergeordnete Tabelle enthält die Datensätze auf der Seite "1" einer 1: n Beziehung.  
   
-4.  Stellen Sie sicher, dass die richtige untergeordnete Tabelle, in angezeigt wird der **untergeordnete Tabelle** Feld. Die untergeordnete Tabelle enthält die Datensätze auf der Seite "many" einer 1: n Beziehung.  
+4. Stellen Sie sicher, dass die richtige untergeordnete Tabelle, in angezeigt wird der **untergeordnete Tabelle** Feld. Die untergeordnete Tabelle enthält die Datensätze auf der Seite "many" einer 1: n Beziehung.  
   
-5.  Geben Sie einen Namen für die Beziehung in der **Namen** ein, oder übernehmen Sie den Standardnamen, die basierend auf den ausgewählten Tabellen. Dies ist der Name des eigentlichen <xref:System.Data.DataRelation> -Objekt im Code.  
+5. Geben Sie einen Namen für die Beziehung in der **Namen** ein, oder übernehmen Sie den Standardnamen, die basierend auf den ausgewählten Tabellen. Dies ist der Name des eigentlichen <xref:System.Data.DataRelation> -Objekt im Code.  
   
-6.  Wählen Sie die Spalten, die Tabellen zu, in verknüpfen, der **Schlüsselspalten** und **Fremdschlüsselspalten** aufgeführt.  
+6. Wählen Sie die Spalten, die Tabellen zu, in verknüpfen, der **Schlüsselspalten** und **Fremdschlüsselspalten** aufgeführt.  
   
-7.  Wählen Sie, ob Sie eine Beziehung, Einschränkung oder beides zu erstellen. Weitere Informationen finden Sie unter [Einführung in DataRelation-Objekte](http://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192).  
+7. Wählen Sie, ob Sie eine Beziehung, Einschränkung oder beides zu erstellen. Weitere Informationen finden Sie unter [Einführung in DataRelation-Objekte](http://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192).  
   
-8.  Aktivieren oder deaktivieren Sie die **geschachtelte Beziehung** Feld. Wählen diese Option wird die <xref:System.Data.DataRelation.Nested%2A> Eigenschaft `true`, und die untergeordneten Zeilen der Beziehung, die innerhalb der übergeordneten Spalte geschachtelt werden, wenn diese Zeilen werden als XML-Daten geschrieben oder mit synchronisiert <xref:System.Xml.XmlDataDocument>. Weitere Informationen finden Sie unter [Schachteln von DataRelations](http://msdn.microsoft.com/library/9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab).  
+8. Aktivieren oder deaktivieren Sie die **geschachtelte Beziehung** Feld. Wählen diese Option wird die <xref:System.Data.DataRelation.Nested%2A> Eigenschaft `true`, und die untergeordneten Zeilen der Beziehung, die innerhalb der übergeordneten Spalte geschachtelt werden, wenn diese Zeilen werden als XML-Daten geschrieben oder mit synchronisiert <xref:System.Xml.XmlDataDocument>. Weitere Informationen finden Sie unter [Schachteln von DataRelations](http://msdn.microsoft.com/library/9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab).  
   
 9. Legen Sie die Regeln erzwungen werden, wenn Sie Änderungen an Datensätzen in diesen Tabellen vornehmen. Weitere Informationen finden Sie unter <xref:System.Data.Rule>.  
   
@@ -112,7 +108,6 @@ Datasets, die verwandte Daten enthalten Tabellen <xref:System.Data.DataRelation>
   
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>Um einen Beziehungsnamen im Dataset-Designer anzuzeigen.  
   
-1.  Öffnen Sie das Dataset in den **Dataset-Designer**. Weitere Informationen finden Sie unter [Vorgehensweise: Öffnen Sie ein Dataset im Dataset-Designer](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Öffnen Sie das Dataset im **DataSet-Designer**. Weitere Informationen finden Sie unter [Vorgehensweise: Öffnen Sie ein Dataset im Dataset-Designer](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
-2.  Von der **Daten** , wählen Sie im Menü der **Beziehungsbezeichnungen anzeigen** Befehl zur Anzeige der Name der Beziehung. Deaktivieren Sie diesen Befehl zum Ausblenden der Name der Beziehung.
-
+2. Von der **Daten** , wählen Sie im Menü der **Beziehungsbezeichnungen anzeigen** Befehl zur Anzeige der Name der Beziehung. Deaktivieren Sie diesen Befehl zum Ausblenden der Name der Beziehung.

@@ -1,20 +1,19 @@
 ---
 title: Texturknoten
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: b7df5ef3-dd4f-4964-9d96-34e0e180515e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 858857dae187174a70740a91063943383526def9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 73f5bfe71866422cd3717c2a29f1eeb48d15cc76
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830754"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844215"
 ---
 # <a name="texture-nodes"></a>Texturknoten
 

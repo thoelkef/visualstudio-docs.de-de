@@ -1,14 +1,9 @@
 ---
-title: 'Vorgehensweise: Anfügen eines Profilers an einen laufenden Prozess und Trennen eines Profilers an einen laufenden Prozess | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Anfügen und Trennen eines Profilers an einen laufenden Prozess | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.attach
 helpviewer_keywords:
@@ -21,21 +16,21 @@ ms.assetid: 56a99c39-e7f6-4f48-ae56-04ab8e022bf7
 caps.latest.revision: 35
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 931608decb44f0e49cb4ae2984b9cbf724a63d56
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0b8fc664ee47cd34ab984d1ac448b45c2f17c5b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778240"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443709"
 ---
-# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Vorgehensweise: Anfügen eines Profilers an einen laufenden Prozess und Trennen eines Profilers an einen laufenden Prozess
+# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Vorgehensweise: Anfügen und Trennen eines Profilers an einen laufenden Prozess
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Der Profiler kann verwendet werden, um an einen laufenden Prozess angefügt zu werden oder um von ihm getrennt zu werden, damit das Sampling und Sammeln von Leistungsdaten vereinfacht wird. Sie können diese Methode zum Erstellen eines Profils verwenden, wenn Sie das Sammeln von Daten über Anwendungsladezeiten vermeiden wollen oder nachdem es einen bestimmten Zustand erreicht hat.  
   
 > [!NOTE]
->  Die folgenden Schritte gelten für das Anfügen und Trennen von Prozessen innerhalb der integrierten Entwicklungsumgebung [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] (IDE) Informationen zur Verwendung von Befehlszeilentools finden Sie unter [Profilerstellung mithilfe der Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md). Informationen zur Erstellung von Dienstprofilen finden Sie unter [Profilerstellungsdienste](../profiling/command-line-profiling-of-services.md).  
+> Die folgenden Schritte gelten für das Anfügen und Trennen von Prozessen innerhalb der integrierten Entwicklungsumgebung [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] (IDE) Informationen zur Verwendung von Befehlszeilentools finden Sie unter [Profilerstellung mithilfe der Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md). Informationen zur Erstellung von Dienstprofilen finden Sie unter [Profilerstellungsdienste](../profiling/command-line-profiling-of-services.md).  
   
  Die Prozesse, die zur Profilerstellung verfügbar sind, hängen von den Benutzerzugriffsberechtigungen ab, die von einem Administrator des Computers festgelegt wurde. Ein Benutzerkonto kann z.B. Berechtigungen für eines der Folgenden haben:  
   
@@ -49,7 +44,7 @@ Der Profiler kann verwendet werden, um an einen laufenden Prozess angefügt zu w
   
 ### <a name="to-attach-to-a-running-process"></a>So fügen Sie einen Profiler an einen laufenden Prozess an  
   
-1.  Zeigen Sie im Menü **Analysieren** auf **Profiler**, und klicken Sie anschließend auf **Anfügen/Trennen**.  
+1. Zeigen Sie im Menü **Analysieren** auf **Profiler**, und klicken Sie anschließend auf **Anfügen/Trennen**.  
   
      \- oder –  
   
@@ -57,13 +52,13 @@ Der Profiler kann verwendet werden, um an einen laufenden Prozess angefügt zu w
   
      Das Dialogfeld **Profiler an den Prozess anhängen** wird angezeigt.  
   
-2.  Klicken Sie auf den Prozessnamen, mit dem eine Verbindung hergestellt werden soll.  
+2. Klicken Sie auf den Prozessnamen, mit dem eine Verbindung hergestellt werden soll.  
   
-3.  Klicken Sie auf **Anfügen**.  
+3. Klicken Sie auf **Anfügen**.  
   
 ### <a name="to-detach-from-a-running-process"></a>So trennen Sie den Profiler von einem laufenden Prozess  
   
-1.  Zeigen Sie im Menü **Analysieren** auf **Profiler**, und klicken Sie anschließend auf **Anfügen/Trennen**.  
+1. Zeigen Sie im Menü **Analysieren** auf **Profiler**, und klicken Sie anschließend auf **Anfügen/Trennen**.  
   
      \- oder –  
   
@@ -71,9 +66,9 @@ Der Profiler kann verwendet werden, um an einen laufenden Prozess angefügt zu w
   
      Das Dialogfeld **Profiler an den Prozess anhängen** wird angezeigt.  
   
-2.  Klicken Sie auf den Imagenamen, von dem Sie den Profiler trennen möchten.  
+2. Klicken Sie auf den Imagenamen, von dem Sie den Profiler trennen möchten.  
   
-3.  Klicken Sie auf **Trennen**.  
+3. Klicken Sie auf **Trennen**.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Steuern der Datensammlung](../profiling/controlling-data-collection.md)   
@@ -81,6 +76,3 @@ Der Profiler kann verwendet werden, um an einen laufenden Prozess angefügt zu w
  [Vorgehensweise: Starten und Beenden der Sammlung von Leistungsdaten](../profiling/how-to-start-and-end-performance-data-collection.md)   
  [Profilerstellung und Sicherheit in Windows Vista](../profiling/profiling-and-windows-vista-security.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)
-
-
-

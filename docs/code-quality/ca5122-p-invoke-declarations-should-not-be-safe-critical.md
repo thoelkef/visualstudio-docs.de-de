@@ -1,20 +1,19 @@
 ---
 title: CA5122 P-Invoke-Deklarationen sollten nicht sicherungskritisch sein
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: f2581a6d-2a0e-40c1-b600-f5dc70909200
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a79f9b56535cfcee5113adec91fd93c80a7cd47
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9abe71337b5eb09d44ec6a244dc17e656768847a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53819743"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62541050"
 ---
 # <a name="ca5122-pinvoke-declarations-should-not-be-safe-critical"></a>CA5122 P/Invoke-Deklarationen sollten nicht sicherungskritisch sein
 
@@ -43,7 +42,7 @@ public class C
  In diesem Beispiel wurde `C.Beep(...)` als sicherungskritische Methode markiert.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Methoden werden als SecuritySafeCritical markiert, wenn sie einen sicherheitsrelevanten Vorgang ausführen. Sie können jedoch auch mit transparentem Code verwendet werden. Eine der grundlegenden Regeln des Sicherheitstransparenzmodells lautet: Transparenter Code darf systemeigenen Code nie direkt mit P/Invoke aufrufen. Wenn daher P/Invoke als sicherungskritisch markiert wird, kann es nicht von transparentem Code aufgerufen werden, was bei der Sicherheitsanalyse irreführend ist.
+ Methoden werden als SecuritySafeCritical markiert, wenn sie einen sicherheitsrelevanten Vorgang ausführen. Sie können jedoch auch mit transparentem Code verwendet werden. Eine der grundlegenden Regeln des Sicherheitstransparenzmodells lautet: Transparenter Code darf nativen Code nie direkt mit P/Invoke aufrufen. Wenn daher P/Invoke als sicherungskritisch markiert wird, kann es nicht von transparentem Code aufgerufen werden, was bei der Sicherheitsanalyse irreführend ist.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um P/Invoke für transparenten Code verfügbar zu machen, muss eine sicherungskritische Wrappermethode dafür ausgeführt werden:

@@ -1,25 +1,22 @@
 ---
 title: Abrufen von UML-Modellelementen aus IDataObject | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API, copy and paste
 ms.assetid: e0b9cec8-3b93-4a24-8bd3-3e086501d387
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a560ce5116c52b8c2e83ce9b28252f060e2485f1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a5f60338a8a856b4c6ef8fa913d6d7168ff67bb9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427036"
 ---
 # <a name="get-uml-model-elements-from-idataobject"></a>Abrufen von UML-Modellelementen aus IDataObject
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,16 +24,16 @@ ms.locfileid: "51782075"
 Wenn der Benutzer Elemente aus einer Quelle in ein Diagramm zieht, werden diese Elemente in einem `System.Windows.Forms.IDataObject` codiert. Die Codierung hängt vom Typ des Quellobjekts ab. Das folgende Fragment zeigt, wie die Elemente abgerufen werden, wenn die Quelle ein UML-Diagramm ist.  
   
 > [!NOTE]
->  Die meisten Vorgänge, die Sie für die Sie für UML-Modelle können ausgeführt werden, mithilfe der Typen in definiert, in den Assemblys **Microsoft.VisualStudio.Uml.Interfaces** und  **Microsoft.VisualStudio.ArchitectureTools.Extensibility**. Zu diesem Zweck müssen Sie jedoch einige Klassen verwenden, die Teil der Implementierung der UML-Modellierungstools sind. `ShapeElement` in diesem Fragment ist z. B. nicht mit der UML-Klasse `IShape` identisch. Um das Risiko von Inkonsistenzen im UML-Modell und in den Diagrammen zu reduzieren, sollten die Methoden nun dann für diese Implementierungsklassen verwendet werden, wenn es keine Alternative gibt.  
+> Die meisten Vorgänge, die Sie für die Sie für UML-Modelle können ausgeführt werden, mithilfe der Typen in definiert, in den Assemblys **Microsoft.VisualStudio.Uml.Interfaces** und  **Microsoft.VisualStudio.ArchitectureTools.Extensibility**. Zu diesem Zweck müssen Sie jedoch einige Klassen verwenden, die Teil der Implementierung der UML-Modellierungstools sind. `ShapeElement` in diesem Fragment ist z. B. nicht mit der UML-Klasse `IShape` identisch. Um das Risiko von Inkonsistenzen im UML-Modell und in den Diagrammen zu reduzieren, sollten die Methoden nun dann für diese Implementierungsklassen verwendet werden, wenn es keine Alternative gibt.  
   
 ## <a name="code-sample"></a>Codebeispiel  
  Das Projekt muss die folgenden verweisen [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] Assemblys:  
   
- **Microsoft.VisualStudio.Modeling.Sdk. [Version]**  
+ **Microsoft.VisualStudio.Modeling.Sdk.[version]**  
   
- **Microsoft.VisualStudio.Modeling.Sdk.Diagrams. [Version]**  
+ **Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]**  
   
- **"System.Windows.Forms"**  
+ **System.Windows.Forms**  
   
 ```  
 using Microsoft.VisualStudio.Modeling;    
@@ -86,6 +83,3 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ## <a name="see-also"></a>Siehe auch  
  [Programmieren mit der UML-API](../modeling/programming-with-the-uml-api.md)   
  [Definieren eines Menübefehls in einem Modellierungsdiagramm](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
-
-
-

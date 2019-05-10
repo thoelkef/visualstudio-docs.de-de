@@ -3,30 +3,48 @@ title: 'Schnellstart: Erstellen Ihrer ersten Vue.js-App'
 description: In dieser Schnellstartanleitung erstellen Sie mit den Node.js-Tools für Visual Studio eine Vue.js-App in Visual Studio
 ms.custom: seodec18
 ms.date: 09/24/2018
-ms.prod: visual-studio-dev15
 ms.topic: quickstart
 ms.devlang: javascript
 ms.assetid: b0e4ebed-1a01-41ef-aad1-4d8465ce5322
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 61554a784c5e3f2abaa8987116854893408b2ded
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d28126c84312c13b04de6739340d2cfb6337a066
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853891"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840560"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Schnellstart: Erstellen Ihrer ersten Vue.js-App mit Visual Studio
 
-Mithilfe dieser fünf- bis zehnminütigen Einführung in die integrierte Entwicklungsumgebung (Integrated, Development Environment, IDE) von Visual Studio können Sie eine einfache Vue.js-Webanwendung erstellen und ausführen. Wenn Sie Visual Studio 2017 noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) kostenlos herunterladen.
+Mithilfe dieser fünf- bis zehnminütigen Einführung in die integrierte Entwicklungsumgebung (Integrated, Development Environment, IDE) von Visual Studio können Sie eine einfache Vue.js-Webanwendung erstellen und ausführen.
 
 > [!IMPORTANT]
 > Für diesen Artikel ist die Vue.js-Vorlage erforderlich, die in Visual Studio 2017 ab Version 15.8 verfügbar ist.
+
+## <a name="prerequisites"></a>Erforderliche Komponenten
+
+* Sie müssen Visual Studio und die Workload für die Node.js-Entwicklung installiert haben.
+
+    ::: moniker range=">=vs-2019"
+    Wenn Sie Visual Studio 2019 noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/) kostenlos herunterladen.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Wenn Sie Visual Studio 2017 noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/) kostenlos herunterladen.
+    ::: moniker-end
+
+    Wenn Sie die Workload installieren müssen, Visual Studio aber bereits besitzen, navigieren Sie zu **Tools** > **Tools und Features abrufen…**. Dadurch wird der Visual Studio-Installer geöffnet. Klicken Sie auf die Workload **Node.js-Entwicklung** und anschließend auf **Ändern**.
+
+    ![Node.js-Workload im VS-Installer](../ide/media/quickstart-nodejs-workload.png)
+
+* Die Node.js-Laufzeit muss installiert sein.
+
+    Wenn sie nicht bereits installiert ist, installieren Sie die LTS-Version über die [Node.js](https://nodejs.org/en/download/)-Website. Im Allgemeinen erkennt Visual Studio die installierte Node.js-Runtime automatisch. Wird die installierte Laufzeit nicht erkannt, können Sie das Projekt so konfigurieren, dass es auf die installierte Laufzeit auf der Eigenschaftenseite verweist (klicken Sie hierfür nach dem Erstellen des Projekts mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Eigenschaften** aus).
 
 ## <a name="create-a-project"></a>Erstellen eines Projekts
 
@@ -36,21 +54,23 @@ Zunächst müssen Sie ein Projekt für die Vue.js-Webanwendung erstellen.
 
     Im Allgemeinen erkennt Visual Studio die installierte Node.js-Runtime automatisch. Wird die installierte Runtime nicht erkannt, können Sie das Projekt so konfigurieren, dass es auf die installierte Runtime auf der Eigenschaftenseite verweist. Klicken Sie hierfür nach dem Erstellen des Projekts mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Eigenschaften** aus.
 
-1. Öffnen Sie Visual Studio 2017.
+1. Öffnen Sie Visual Studio.
 
-1. Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**.
+1. Erstellen Sie ein neues Projekt.
 
-1. Wählen Sie im Dialogfeld **Neues Projekt** unter **JavaScript** > **Node.js** oder unter **TypeScript** > **Node.js** die Option **Grundlegende Vue.js-Webanwendung** aus. Geben Sie einen Projektnamen ein, und klicken Sie dann auf **OK**.
+    ::: moniker range=">=vs-2019"
+    Drücken Sie **ESC**, um das Startfenster zu schließen. Geben Sie **STRG+Q** ein, um das Suchfeld zu öffnen, geben Sie **Grundlegende Vue.js** ein, und wählen Sie dann **Grundlegende Vue.js-Webanwendung** (entweder JavaScript oder TypeScript) aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
 
-     ![Vue.js-Vorlage](../javascript/media/vuejs-template.png)
+    ![Vue.js-Vorlage](../javascript/media/vs-2019/vuejs-template.png)
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Erweitern Sie im linken Bereich des Dialogfelds **Neues Projekt** den Eintrag **JavaScript** oder **TypeScript**, und wählen Sie dann **Node.js** aus. Wählen Sie im mittleren Bereich **Grundlegende Vue.js-Webanwendung** und anschließend **OK**.
+
+    ![Vue.js-Vorlage](../javascript/media/vuejs-template.png)
+    ::: moniker-end
+    Wenn die Projektvorlage **Grundlegende Vue.js-Webanwendung** nicht angezeigt wird, müssen Sie die Workload für die **Node.js-Entwicklung** hinzufügen. Ausführliche Anweisungen dazu finden Sie in den [Voraussetzungen](#prerequisites).
 
     Visual Studio erstellt daraufhin das neue Projekt. Das neue Projekt wird im Projektmappen-Explorer geöffnet (im rechten Bereich).
-
-     Falls Ihnen die Projektvorlage **Grundlegende Vue.js-Webanwendung** nicht angezeigt wird, klicken Sie auf den Link **Visual Studio-Installer öffnen** auf der linken Seite des Dialogfelds **Neues Projekt**. Der Visual Studio-Installer wird gestartet. Klicken Sie auf die Workload **Node.js-Entwicklung** und anschließend auf **Ändern**.
-
-     ![Node.js-Workload im VS-Installer](../ide/media/quickstart-nodejs-workload.png)
-
-    Visual Studio erstellt die neue Projektmappe und öffnet das Projekt.
 
 1. Überprüfen Sie während der Installation des npm-Pakets, das für die Anwendung erforderlich ist, im Fenster „Ausgabe“ (unterer Bereich) den Fortschritt.
 

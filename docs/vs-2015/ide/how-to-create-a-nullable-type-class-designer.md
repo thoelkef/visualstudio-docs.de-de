@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Erstellen eines Typs, der NULL-Werte zulässt (Klassen-Designer) | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - nullable types, Class Designer
 - Class Designer [Visual Studio], nullable types
@@ -16,15 +11,15 @@ ms.assetid: 84673a89-3f6d-4668-919e-1c0f56182fe5
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ab5bfe3068f79bceb02352b47de4beb08da75c85
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 3d5e74a4384cff0a68764ffe09a37ab28460d58b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422812"
 ---
-# <a name="how-to-create-a-nullable-type-class-designer"></a>Gewusst wie: Erstellen eines Typs, der Nullwerte zulässt (Klassen-Designer)
+# <a name="how-to-create-a-nullable-type-class-designer"></a>Vorgehensweise: Erstellen eines Typs, der NULL-Werte zulässt (Klassen-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Bestimmte Werttypen verfügen nicht immer über einen definierten Wert oder benötigen keinen. Dies ist in Datenbanken üblich, in denen möglicherweise einigen Feldern kein Wert zugewiesen wird. Sie können z.B. einem Datenbankfeld einen NULL-Wert zuweisen, um zu zeigen, dass noch kein Wert zugewiesen wurde.  
@@ -47,17 +42,17 @@ Bestimmte Werttypen verfügen nicht immer über einen definierten Wert oder ben�
   
 ### <a name="to-add-a-nullable-type-by-using-the-class-designer"></a>Hinzufügen eines Nullable-Typs mithilfe des Klassen-Designers  
   
-1.  Im Klassendiagramm erweitern Sie eine vorhandene Klasse, oder erstellen eine neue Klasse.  
+1. Im Klassendiagramm erweitern Sie eine vorhandene Klasse, oder erstellen eine neue Klasse.  
   
-2.  Klicken Sie im Menü **Klassendiagramm** auf **Hinzufügen** und anschließend auf **Klasse hinzufügen**, um dem Projekt eine Klasse hinzuzufügen.  
+2. Klicken Sie im Menü **Klassendiagramm** auf **Hinzufügen** und anschließend auf **Klasse hinzufügen**, um dem Projekt eine Klasse hinzuzufügen.  
   
-3.  Klicken Sie im Menü **Klassendiagramm** auf **Erweitern**, um die Klassenform zu erweitern.  
+3. Klicken Sie im Menü **Klassendiagramm** auf **Erweitern**, um die Klassenform zu erweitern.  
   
-4.  Wählen Sie die Klassenform aus. Klicken Sie im Menü **Klassendiagramm** auf **Hinzufügen** und anschließend auf **Feld**. Ein neues Feld mit den Standardnamen **Feld** wird in der Klassenform und auch im Fenster **Klassendetails** angezeigt.  
+4. Wählen Sie die Klassenform aus. Klicken Sie im Menü **Klassendiagramm** auf **Hinzufügen** und anschließend auf **Feld**. Ein neues Feld mit den Standardnamen **Feld** wird in der Klassenform und auch im Fenster **Klassendetails** angezeigt.  
   
-5.  Ändern Sie in der Spalte **Name** im Fenster **Klassendetails** (oder in der Klassenform selbst) den Namen des neuen Felds in einen gültigen und aussagekräftigen Namen.  
+5. Ändern Sie in der Spalte **Name** im Fenster **Klassendetails** (oder in der Klassenform selbst) den Namen des neuen Felds in einen gültigen und aussagekräftigen Namen.  
   
-6.  Deklarieren Sie in der Spalte **Typ** im Fenster **Klassendetails** den Typ als Nullable-Typ, wie im folgenden Code gezeigt:  
+6. Deklarieren Sie in der Spalte **Typ** im Fenster **Klassendetails** den Typ als Nullable-Typ, wie im folgenden Code gezeigt:  
   
     ```csharp  
     // Declare a nullable type in Visual C#:  
@@ -76,15 +71,15 @@ Bestimmte Werttypen verfügen nicht immer über einen definierten Wert oder ben�
   
 ### <a name="to-add-a-nullable-type-by-using-the-code-editor"></a>Hinzufügen eines Nullable-Typs mithilfe des Code-Editors  
   
-1.  Fügen Sie dem Projekt eine Klasse hinzu. Wählen Sie im **Projektmappen-Explorer** einen Projektknoten aus und klicken Sie dann im Menü **Projekt** auf **Klasse hinzufügen**.  
+1. Fügen Sie dem Projekt eine Klasse hinzu. Wählen Sie im **Projektmappen-Explorer** einen Projektknoten aus und klicken Sie dann im Menü **Projekt** auf **Klasse hinzufügen**.  
   
-2.  Fügen Sie in der CS- oder VB-Datei für die neue Klasse eine oder mehrere Nullable-Typen in der Klassendeklaration hinzu.  
+2. Fügen Sie in der CS- oder VB-Datei für die neue Klasse eine oder mehrere Nullable-Typen in der Klassendeklaration hinzu.  
   
-3.  Ziehen Sie das Klassensymbol in der Klassenansicht zur Entwurfsoberfläche des Klassen-Designers. Eine Klassenform wird im Klassendiagramm angezeigt.  
+3. Ziehen Sie das Klassensymbol in der Klassenansicht zur Entwurfsoberfläche des Klassen-Designers. Eine Klassenform wird im Klassendiagramm angezeigt.  
   
-4.  Erweitern Sie die Details für die Klassenform, und bewegen Sie den Mauszeiger über die Klassenmember. Die QuickInfo zeigt die Deklaration der einzelnen Member.  
+4. Erweitern Sie die Details für die Klassenform, und bewegen Sie den Mauszeiger über die Klassenmember. Die QuickInfo zeigt die Deklaration der einzelnen Member.  
   
-5.  Klicken Sie mit der rechten Maustaste auf Klassenform und auf **Klassendetails**. Sie können die Eigenschaften des neuen Typs im Fenster **Klassendetails** anzeigen oder ändern.  
+5. Klicken Sie mit der rechten Maustaste auf Klassenform und auf **Klassendetails**. Sie können die Eigenschaften des neuen Typs im Fenster **Klassendetails** anzeigen oder ändern.  
   
 ## <a name="see-also"></a>Siehe auch  
  <xref:System.Nullable%601>   
@@ -92,6 +87,3 @@ Bestimmte Werttypen verfügen nicht immer über einen definierten Wert oder ben�
  [Verwenden von auf NULL festlegbaren Typen](http://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28)   
  [Vorgehensweise: Identifizieren eines Typs, der NULL-Werte zulässt](http://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387)   
  [Auf NULL festlegbare Werttypen](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)
-
-
-

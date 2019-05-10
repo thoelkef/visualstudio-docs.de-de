@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 19bfabf3-1a2e-49dc-8819-a813982e86fd
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 917c9bab910b8f3153af46dc9d1d1a64ec6e529d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 7346b6fd8fbd483021437638f9e134ead88a0b93
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841264"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846322"
 ---
 # <a name="jit-optimization-and-debugging"></a>JIT-Optimierung und -Debuggen
 **Funktionsweise von Optimierungen in .NET:** Wenn Sie versuchen, Code zu debuggen, es ist einfacher bei, dass Code **nicht** optimiert. Das liegt bei der Code optimiert, Compiler und Laufzeit Änderungen an der ausgegebene Code für die CPU-vornehmen, damit sie schneller ausgeführt, aber eine weniger direkte Zuordnung zu den ursprünglichen Quellcode hat. Dies bedeutet, dass der Debugger sind häufig nicht teilen Sie den Wert der lokalen Variablen und code durchlaufen und Haltepunkte funktionieren möglicherweise nicht wie erwartet.
@@ -46,8 +46,8 @@ Wenn Sie nur den Code, den Sie lokal erstellen debuggen möchten, empfiehlt es s
 1. In Situationen, in dem Sie den Debugger an einem bereits laufenden Prozess anfügen, müssen diese Option keine Auswirkungen auf die Module, die bereits zum Zeitpunkt geladen wurden, die der Debugger angefügt wurde.
 2. Diese Option hat keine Auswirkungen auf DLLs, die wurden vorab in nativen Code kompiliert (bzw. mit NGen verarbeitet). Allerdings können Sie Verwendung von vorab kompilierter Code deaktivieren, durch den Prozess starten, mit der Umgebung, die Variable "COMPlus_ZapDisable' auf '1' festgelegt.
 
-## <a name="see-also"></a>Siehe auch  
- [Debuggen von verwaltetem Code](../debugger/debugging-managed-code.md)   
- [Navigieren im Code mit dem Debugger](../debugger/navigating-through-code-with-the-debugger.md)   
- [Attach to running processes (Anfügen an laufende Prozesse)](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
- [Der verwaltete Ausführungsprozess](/dotnet/standard/managed-execution-process)
+## <a name="see-also"></a>Siehe auch
+- [Debuggen von verwaltetem Code](../debugger/debugging-managed-code.md)
+- [Navigieren im Code mit dem Debugger](../debugger/navigating-through-code-with-the-debugger.md)
+- [Anfügen an laufende Prozesse](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
+- [Der verwaltete Ausführungsprozess](/dotnet/standard/managed-execution-process)

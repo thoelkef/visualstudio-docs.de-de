@@ -1,14 +1,9 @@
 ---
 title: Entwerfen und Anzeigen von Klassen und Typen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.diagram
 helpviewer_keywords:
@@ -21,13 +16,13 @@ ms.assetid: 40ed2c9d-0ce0-4b95-ad78-5dec2065ccea
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 559702f41f2694a6042e26b2760251e775c9cad3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c41dc9df835cc3799a35620730927b338224ea14
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191620"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045043"
 ---
 # <a name="designing-and-viewing-classes-and-types"></a>Entwerfen und Anzeigen von Klassen und Typen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +31,11 @@ Design, Visualisierung und Umgestaltung von Klassen und anderen Typen in Ihrem C
   
  Hier finden Sie mehr über die Möglichkeiten mit Klassendiagrammen:  
   
--   **Entwerfen**: Bearbeiten Sie den Code Ihres Projekts, indem Sie das Klassendiagramm bearbeiten. Neue Elemente hinzufügen und unerwünschte Elemente löschen. Die Änderungen werden im Code wiedergegeben.  
+- **Entwerfen**: Bearbeiten Sie den Code Ihres Projekts, indem Sie das Klassendiagramm bearbeiten. Neue Elemente hinzufügen und unerwünschte Elemente löschen. Die Änderungen werden im Code wiedergegeben.  
   
--   **Visualisieren**: Erhalten Sie Einblick in die Struktur des Projekts, indem Sie sich die Klassen in Ihrem Projekt in einem Diagramm ansehen. Passen Sie Ihr Diagramm so an, dass Sie sich auf die Projektdetails konzentrieren können, die Sie am meisten interessieren. Speichern Sie das Diagramm später zu Demonstrations- oder Dokumentationszwecken.  
+- **Visualisieren**: Erhalten Sie Einblick in die Struktur des Projekts, indem Sie sich die Klassen in Ihrem Projekt in einem Diagramm ansehen. Passen Sie Ihr Diagramm so an, dass Sie sich auf die Projektdetails konzentrieren können, die Sie am meisten interessieren. Speichern Sie das Diagramm später zu Demonstrations- oder Dokumentationszwecken.  
   
--   **Umgestalten**: Überschreiben Sie Methoden, benennen Sie Bezeichner um, gestalten Sie Parameter um und implementieren Sie Schnittstellen sowie abstrakte Klassen.  
+- **Umgestalten**: Überschreiben Sie Methoden, benennen Sie Bezeichner um, gestalten Sie Parameter um und implementieren Sie Schnittstellen sowie abstrakte Klassen.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Arbeiten mit Klassen und anderen Typen (Klassen-Designer)](../ide/working-with-classes-and-other-types-class-designer.md)  
@@ -61,6 +56,3 @@ Design, Visualisierung und Umgestaltung von Klassen und anderen Typen in Ihrem C
  [Schreiben von Code](../ide/writing-code-in-the-code-and-text-editor.md)  
   
  [Projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md)
-
-
-

@@ -1,8 +1,6 @@
 ---
 title: 'Idiastackwalkhelper:: Searchforreturnaddressstart | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,42 +9,45 @@ helpviewer_keywords:
 ms.assetid: 0a33142e-5d31-44ea-874a-a2e94d95cbd2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 016f2e3ab816b7def9aa0ef1e40ef5727063eb25
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a311b10f2fc5b53daff58e93feec3a9cd6077d14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895768"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62831981"
 ---
 # <a name="idiastackwalkhelpersearchforreturnaddressstart"></a>IDiaStackWalkHelper::searchForReturnAddressStart
-Sucht den angegebenen Stapelrahmen für eine Absenderadresse an oder in der Nähe der Adresse angegebenen Stapel an.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT searchForReturnAddressStart(   
-   IDiaFrameData*  frame,  
-   ULONGLONG       startAddress,  
-   ULONGLONG*      returnAddress  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `frame`  
- [in] Ein [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) Objekt, das den aktuellen Stapelrahmen darstellt.  
-  
- `startAddress`  
- [in] Eine Adresse des virtuellen Arbeitsspeichers aus dem die Suche beginnen soll.  
-  
- `ReturnAddress`  
- [out] Gibt die nächste Funktion zurückgeben Adresse `startAddress`.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+Sucht den angegebenen Stapelrahmen für eine Absenderadresse an oder in der Nähe der Adresse angegebenen Stapel an.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT searchForReturnAddressStart( 
+   IDiaFrameData*  frame,
+   ULONGLONG       startAddress,
+   ULONGLONG*      returnAddress
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `frame`
+
+[in] Ein [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) Objekt, das den aktuellen Stapelrahmen darstellt.
+
+ `startAddress`
+
+[in] Eine Adresse des virtuellen Arbeitsspeichers aus dem die Suche beginnen soll.
+
+ `ReturnAddress`
+
+[out] Gibt die nächste Funktion zurückgeben Adresse `startAddress`.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

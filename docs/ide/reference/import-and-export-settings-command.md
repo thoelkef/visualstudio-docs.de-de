@@ -1,7 +1,6 @@
 ---
 title: Befehl Einstellungen importieren und exportieren
 ms.date: 11/21/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - Tools.ImportandExportSettings
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 94a06468-a44d-403d-a931-77bbc9d06e56
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38144381520002e1e3e9f9c7b440d6b87b90cb6d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b9be5826edf0d7220d30ce5c4a99f333c2ab8b67
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943326"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953217"
 ---
 # <a name="import-and-export-settings-command"></a>Befehl Einstellungen importieren und exportieren
 
@@ -45,7 +44,7 @@ Dies ist optional. Importiert die aktuellen Einstellungen in eine angegebene Dat
 
 Dies ist optional. Setzt die aktuellen Einstellungen zurück
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Anmerkungen
 
 Wenn Sie diesen Befehl ohne Schalter ausführen, wird der Assistent **Einstellungen importieren und exportieren** geöffnet. Weitere Informationen finden Sie unter [Synchronisieren der Einstellungen](../synchronized-settings-in-visual-studio.md) und [Umgebungseinstellungen](../environment-settings.md).
 

@@ -1,22 +1,23 @@
 ---
 title: Automatisches Anwenden von Product Keys
 description: Erfahren Sie, wie Produktschlüssel bei der Bereitstellung von Visual Studio programmgesteuert angewendet werden.
-ms.date: 08/14/2017
+ms.date: 04/10/2019
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: d79260be-6234-4fd3-89b5-a9756b4a93c1
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa0ed93097c396808f8a4404243be925d1b03ca0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 3f1cdc3d8516271cd397c1d22118ca21a92f78cd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974214"
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>Automatisches Anwenden von Produktschlüsseln bei der Bereitstellung von Visual Studio
 
@@ -24,7 +25,17 @@ Sie können Ihren Product Key programmgesteuert als Teil eines Skripts anwenden,
 
 ## <a name="apply-the-license-after-installation"></a>Anwenden der Lizenz nach der Installation
 
- Sie können eine installierte Version von Visual Studio mit einem Product Key aktivieren, indem Sie das Hilfsprogramm `StorePID.exe` auf den Zielcomputern im automatischen Modus verwenden. `StorePID.exe` ist ein Hilfsprogramm im Installationsumfang von Visual Studio 2017, das am folgenden Standardspeicherort installiert wird: <br> `C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE`
+::: moniker range="vs-2017"
+
+Sie können eine installierte Version von Visual Studio mit einem Product Key aktivieren, indem Sie das Hilfsprogramm `StorePID.exe` auf den Zielcomputern im automatischen Modus verwenden. `StorePID.exe` ist ein Hilfsprogramm im Installationsumfang von Visual Studio 2017, das am folgenden Standardspeicherort installiert wird: <br> `C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE`
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Sie können eine installierte Version von Visual Studio mit einem Product Key aktivieren, indem Sie das Hilfsprogramm `StorePID.exe` auf den Zielcomputern im automatischen Modus verwenden. `StorePID.exe` ist ein Hilfsprogramm im Installationsumfang von Visual Studio 2019, das am folgenden Standardspeicherort installiert wird: <br> `C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE`
+
+::: moniker-end
 
  Führen Sie `StorePID.exe` mit erhöhten Rechten entweder mithilfe eines System Center-Agents oder einer Eingabeaufforderung mit erhöhten Rechten aus. Geben Sie dahinter den Product Key und den Microsoft-Produktcode (Microsoft Product Code, MPC) ein.
 
@@ -35,11 +46,27 @@ Sie können Ihren Product Key programmgesteuert als Teil eines Skripts anwenden,
  StorePID.exe [product key including the dashes] [MPC]
  ```
 
- Im folgenden Beispiel wird eine Beispielbefehlszeile für die Anwendung der Lizenz für Visual Studio 2017 Enterprise mit dem MPC 08860 und dem Product Key `AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE` gezeigt. Es wird angenommen, dass die Installation an einem Standardspeicherort erfolgt:
+::: moniker range="vs-2017"
 
- ```cmd
- "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\StorePID.exe" AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE 08860
- ```
+Im folgenden Beispiel wird eine Beispielbefehlszeile für die Anwendung der Lizenz für Visual Studio 2017 Enterprise mit dem MPC 08860 und dem Product Key `AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE` gezeigt. Es wird angenommen, dass die Installation an einem Standardspeicherort erfolgt:
+
+```cmd
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\StorePID.exe" AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE 08860
+```
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Im folgenden Beispiel wird eine Beispielbefehlszeile für die Anwendung der Lizenz für Visual Studio 2019 Enterprise mit dem MPC 09260 und dem Product Key `AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE` gezeigt. Es wird angenommen, dass die Installation an einem Standardspeicherort erfolgt:
+
+```cmd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\StorePID.exe" AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE 09260
+```
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
  In der folgenden Tabelle werden die MPC-Codes für jede Edition von Visual Studio aufgelistet:
 
@@ -48,6 +75,17 @@ Sie können Ihren Product Key programmgesteuert als Teil eines Skripts anwenden,
 | Visual Studio Enterprise 2017        | 08860 |
 | Visual Studio Professional 2017      | 08862 |
 | Visual Studio Test Professional 2017 | 08866 |
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+| Visual Studio-Edition                | MPC   |
+|--------------------------------------|-------|
+| Visual Studio Enterprise 2019        | 09260 |
+| Visual Studio Professional 2019      | 09262 |
+
+::: moniker-end
 
 Wenn der Product Key im Hilfsprogramm `StorePID.exe` erfolgreich angewendet wurde, wird als Wert von `%ERRORLEVEL%` 0 zurückgegeben. Wenn Fehler auftreten, wird einer der folgenden Codes entsprechend der Fehlerbedingung zurückgegeben:
 

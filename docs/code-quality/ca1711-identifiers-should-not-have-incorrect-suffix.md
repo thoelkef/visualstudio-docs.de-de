@@ -1,7 +1,6 @@
 ---
 title: 'CA1711: Bezeichner sollten kein falsches Suffix aufweisen.'
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - CA1711
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: a63359ab-386d-44ae-b381-ee3a983aca29
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86bcd9373fda82c1f650da88a87d905a7ba1e6a7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83eff2b91a62d389f2273ff600e077eaea379d88
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920432"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546221"
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: Bezeichner sollten kein falsches Suffix aufweisen.
 
@@ -34,6 +33,8 @@ ms.locfileid: "53920432"
 ## <a name="cause"></a>Ursache
 
 Ein Bezeichner weist ein falsches Suffix auf.
+
+Diese Regel nur sucht standardmäßig an extern sichtbare Bezeichner. Dies ist jedoch [konfigurierbare](#configurability).
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
@@ -73,6 +74,16 @@ Entfernen Sie das Suffix aus dem Typnamen.
 ## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
 
 Unterdrücken Sie keine Warnung dieser Regel, es sei denn, das Suffix hat eine eindeutige Bedeutung in der Anwendungsdomäne.
+
+## <a name="configurability"></a>Konfigurierbarkeit
+
+Wenn Sie diese Regel aus ausführen, [FxCop-Analysen](install-fxcop-analyzers.md) (und nicht über die Analyse von statischem Code), können Sie konfigurieren, welche Teile Ihrer Codebasis, um die Ausführung dieser Regel auf, um basierend auf deren Barrierefreiheit. Z. B. um anzugeben, dass die Regel nur für die nicht öffentlichen API-Oberfläche ausgeführt werden soll, fügen Sie die folgenden Schlüssel-Wert-Paar in einer editorconfig-Datei in Ihrem Projekt:
+
+```
+dotnet_code_quality.ca1711.api_surface = private, internal
+```
+
+Sie können diese Option, die für diese eine Regel, für alle Regeln oder für alle Regeln in dieser Kategorie (Naming) konfigurieren. Weitere Informationen finden Sie unter [konfigurieren FxCop-Analysetools](configure-fxcop-analyzers.md).
 
 ## <a name="related-rules"></a>Verwandte Regeln
 

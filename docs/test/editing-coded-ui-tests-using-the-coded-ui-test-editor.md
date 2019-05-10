@@ -1,24 +1,22 @@
 ---
 title: Bearbeiten von Tests der programmierten UI
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
 - vs.codedUItest.testeditor
 helpviewer_keywords:
 - coded UI test, Coded UI Test Editor
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6c45a8abceacb1d566ca5aba382e7955f1c2601e
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 88002f4187883d55f22ec9f3dc80f3ceb65e7e48
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62784419"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Bearbeiten von Tests der programmierten UI mithilfe des Editors für Tests der programmierten UI
 
@@ -61,7 +59,7 @@ Wenn Sie die Datei *UIMap.uitest* öffnen, die Ihrem Test der programmierten UI 
 
 Mit dem **Editor für Tests der programmierten UI** können Sie den Visual C#- und Visual Basic-basierten Test der programmierten UI anzeigen und bearbeiten.
 
-![Kontextmenü mit Test-Generator der programmierten UI](../test/media/editcodeduitest.png)
+![Kontextmenü mit Test-Generator für codierte UI](../test/media/editcodeduitest.png)
 
 Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für *UIMap.uitest*, und klicken Sie auf **Öffnen**. Der Test der programmierten UI wird im **Editor für Tests der programmierten UI** angezeigt. Sie können nun aufgezeichnete Methoden, Aktionen und entsprechende Steuerelemente im Test der programmierten UI anzeigen und bearbeiten.
 

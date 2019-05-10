@@ -1,14 +1,9 @@
 ---
 title: 'CA1032: Standardausnahmekonstruktoren implementieren | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1032
 - ImplementStandardExceptionConstructors
@@ -20,14 +15,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: efef441e84c4f1d51c633e3fdcb2da8d1ba3e963
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c59da56304a5d1d8f2cca7eaf886fd5ebc37f8ef
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49868611"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58957222"
 ---
-# <a name="ca1032-implement-standard-exception-constructors"></a>CA1032: Standardausnahmekonstruktoren implementieren
+# <a name="ca1032-implement-standard-exception-constructors"></a>CA1032: Standardausnahmekonstruktoren implementieren.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -43,7 +38,7 @@ ms.locfileid: "49868611"
 ## <a name="rule-description"></a>Regelbeschreibung
  Typen müssen die folgenden Konstruktoren implementieren:
 
-- Öffentliche NewException()
+- public NewException()
 
 - Öffentliche NewException(string)
 
@@ -63,6 +58,3 @@ ms.locfileid: "49868611"
  Das folgende Beispiel enthält einen Ausnahmetyp, der gegen diese Regel verstößt und einem Ausnahmetyp, der ordnungsgemäß implementiert ist.
 
  [!code-csharp[FxCop.Design.ExceptionMultipleCtors#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.ExceptionMultipleCtors/cs/FxCop.Design.ExceptionMultipleCtors.cs#1)]
-
-
-

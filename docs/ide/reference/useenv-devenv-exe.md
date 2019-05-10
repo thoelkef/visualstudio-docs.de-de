@@ -1,7 +1,6 @@
 ---
 title: -UseEnv („devenv.exe“)
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+ms.date: 01/10/2019
 ms.topic: reference
 f1_keywords:
 - VC.Project.UseEnvVars.ExcludePath
@@ -17,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 2dd14603-a61b-42d2-ba31-427a0ee8a799
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b597eae42eb36c8d034ca9a4038b6823c1121349
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 37326bbe44eed15a562f0d28c01eac02973a2487
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846333"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789257"
 ---
 # <a name="useenv-devenvexe"></a>/UseEnv (devenv.exe)
 
-Startet Visual Studio und lädt die Umgebungsvariablen in das Dialogfeld **VC++-Verzeichnisse**.
+Startet Visual Studio und lädt bestimmte Umgebungsvariablen für die Kompilierung.
 
 > [!NOTE]
 > Dieser Schalter wird mit der Workload **Desktopentwicklung mit C++** installiert.
@@ -37,17 +36,37 @@ Startet Visual Studio und lädt die Umgebungsvariablen in das Dialogfeld **VC++-
 ## <a name="syntax"></a>Syntax
 
 ```shell
-Devenv /useenv
+devenv /UseEnv {SolutionName|ProjectName}
 ```
+
+## <a name="arguments"></a>Argumente
+
+- *SolutionName*
+
+  Der vollständige Pfad und Name einer Projektmappendatei
+
+- *ProjectName*
+
+  Der vollständige Pfad und Name einer Projektdatei
+
+## <a name="remarks"></a>Anmerkungen
+
+Dieser Schalter wirkt sich auf die Visual Studio-IDE in den Projekteigenschaften für **VC++-Verzeichnisse** aus. Wenn Sie den Schalter `/UseEnv` angeben, zeigt der Knoten **VC++-Verzeichnisse** die Werte für die Umgebungsvariablen PATH, INCLUDE, LIBPATH und LIB. (Er zeigt auch Werte für **Quellverzeichnisse** und **Ausschließbare Verzeichnisse**.) Andernfalls ersetzt der Knoten die Umgebungsvariablen durch fünf Verzeichniswerte: **Ausführbare Verzeichnisse**, **Includeverzeichnisse**, **Verweisverzeichnisse**, **Bibliotheksverzeichnisse** und **WinRT-Bibliotheksverzeichnisse**.
+
+> [!TIP]
+> Sie können auf die Projekteigenschaften zugreifen, indem Sie mit der rechten Maustaste auf ein C++-Projekt klicken und **Eigenschaften** auswählen. Wählen Sie im Dialogfeld **Eigenschaftenseiten** die Option **Konfigurationseigenschaften** und dann **VC++-Verzeichnisse** aus.
+
+Wenn ein Projektname mit diesem Schalter angegeben wird, zeigt das Tool die Umgebungsvariablen für alle Projekte in der übergeordneten Projektmappe des Projekts an.
 
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel wird Visual Studio gestartet, und die Umgebungsvariablen werden in das Dialogfeld **VC++-Verzeichnisse** geladen.
+Im folgenden Beispiel wird Visual Studio gestartet, und die Umgebungsvariablen werden in die Eigenschaftenseiten der Projektmappe `MySolution` geladen.
 
 ```shell
-Devenv.exe /useenv
+devenv.exe /useenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln"
 ```
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Devenv-Befehlszeilenschalter](../../ide/reference/devenv-command-line-switches.md)
+- [Devenv-Befehlszeilenschalter](../../ide/reference/devenv-command-line-switches.md)
+- [Eigenschaftenseite „VC++-Verzeichnisse“ (Windows)](/cpp/ide/vcpp-directories-property-page)

@@ -1,23 +1,24 @@
 ---
-title: XML-editor
+title: XML-Editor
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5c1c81abbbc2f252744c465adf1cb99b3396d54
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 39e069dfd65294ed3d40342816e871757378a57b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873766"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002486"
 ---
-# <a name="xml-editor"></a>XML-editor
+# <a name="xml-editor"></a>XML-Editor
 
-Der XML-Editor basiert auf der Visual Studio-Text-Editor, und bietet zusätzliche Unterstützung für die XML-Sprachen. Der XML-Editor umfasst die folgenden Funktionen:
+Der XML-Editor in Visual Studio basiert auf den Text-Editor, und bietet zusätzliche Unterstützung für die XML-Sprachen. Wenn Sie eine XML-Datei in Visual Studio öffnen, wird es in der XML-Editor geöffnet.
+
+Der XML-Editor umfasst die folgenden Funktionen:
 
 - Syntaxüberprüfung für XML 1.0
 
@@ -33,21 +34,21 @@ Der XML-Editor basiert auf der Visual Studio-Text-Editor, und bietet zusätzlich
 
 - Konvertierung einer DTD oder eines XDR-Schemas (XML-Data Reduced) in ein XML-Schema.
 
-- Syntaxüberprüfung für XSLT 1.0
+- Syntaxüberprüfung für XSLT
 
 - Gliedern von Dokumenten, sodass Elemente erweitert und reduziert werden können
 
 - Integration in die [XML-Schema-Explorer](../xml-tools/xml-schema-explorer.md). Dadurch wird eine hierarchische Ansicht von XML-Schemas.
 
-Der XML-Editor wird für bekannte Dateierweiterungen aufgerufen, wie z. B. *XML*, *XSD*, *.xsl*, und *config*. Er wird auch für unbekannte Dateierweiterungen aufgerufen, wenn die Datei offenbar XML enthält. Sie können auch eine beliebige Datei im XML-Editor öffnen, mit der **Öffnen mit** Option und den XML-Editor aus der Liste auswählen.
+Der XML-Editor wird für bekannte Dateierweiterungen aufgerufen, wie z. B. *XML*, *XSD*, *.xsl*, und *config*. Er wird auch für unbekannte Dateierweiterungen aufgerufen, wenn die Datei offenbar XML enthält.
 
 ## <a name="xslt-intellisense"></a>XSLT-IntelliSense
 
 [XSLT-IntelliSense](../xml-tools/xml-editor-intellisense-features.md) ermöglicht das automatische Vervollständigung von attributsatznamen, vorlagenmodi und-Namen sowie Parameternamen für einen angegebenen Modus oder eine angegebene benannte Vorlage.
 
-## <a name="xslt-profiler"></a>XSLT-profiler
+## <a name="xslt-profiler"></a>XSLT-Profiler
 
-Die [XSLT-Profiler](../xml-tools/walkthrough-xslt-profiler.md) erstellt ausführliche XSLT-Leistung, Berichte, mit denen Sie messen, auswerten und leistungsbezogene Probleme im XSLT-Code. Der XSLT-Profiler enthält auch nützliche Hinweise zu XSL- und XSLT-Stylesheetoptimierungen.
+Die [XSLT-Profiler](../xml-tools/xslt-profiler.md) erstellt ausführliche XSLT-Leistung, Berichte, mit denen Sie messen, auswerten und leistungsbezogene Probleme im XSLT-Code. Der XSLT-Profiler enthält auch nützliche Hinweise zu XSL- und XSLT-Stylesheetoptimierungen.
 
 ## <a name="xslt-hierarchy"></a>XSLT-Hierarchie
 
@@ -55,6 +56,8 @@ Die [XSLT-hierarchietool](../xml-tools/walkthrough-using-xslt-hierarchy.md) kön
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Features des Code-Editor](../ide/writing-code-in-the-code-and-text-editor.md) enthält Informationen zu den Text-Editor.
-- [Referenzen zu XML-Standards](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) enthält Informationen zu XML-Technologien, einschließlich XML, Dokumenttypdefinition (DTD), XML Schema Definition Language (XSD) und XSLT.
+- [XML-Editor-Optionen - Formatierung](../ide/reference/options-text-editor-xml-formatting.md)
+- [XML-Editor-Optionen: sonstige](../ide/reference/options-text-editor-xml-miscellaneous.md)
+- [Features des Code-Editors](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Referenzen zu XML-standards](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)
 - [XML-Tools in Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

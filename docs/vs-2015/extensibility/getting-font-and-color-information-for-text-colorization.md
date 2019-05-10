@@ -1,27 +1,22 @@
 ---
 title: Abrufen von Informationen zur Schriftart und Farbe für die farbliche Kennzeichnung von Text | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - text, coloring
 - font and color control [Visual Studio SDK], coloring
 ms.assetid: d1f985bd-743e-40b7-9458-d9af53647c91
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 41fc6ac7ba20bc552ebdfde2cab69dd28867ee7f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 35372b6d228c8d1c0dbe985379b7753c0f88d311
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741295"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440122"
 ---
 # <a name="getting-font-and-color-information-for-text-colorization"></a>Abrufen von Informationen zur Schriftart und Farbe für die farbliche Kennzeichnung von Text
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ Der Prozess, der gerendert wird, oder zeigt farbige Text in die Elemente der Ben
  Die meisten Implementierungen, die farbige Text anzeigen müssen die `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults` und die zugehörigen Schnittstellen, für die darstellen, abgerufen und das Speichern von Text Einstellungen anzuzeigen.  
   
 > [!NOTE]
->  Beim Anpassen der Kern-Editor (welche unterstützt die **Text EditorCategory**), es wird dringend empfohlen, die Farbgebung-Technologie in den Sprachdienst zu verwenden. Weitere Informationen finden Sie unter [Schriftart und Farbe (Übersicht)](../extensibility/font-and-color-overview.md).  
+> Beim Anpassen der Kern-Editor (welche unterstützt die **Text EditorCategory**), es wird dringend empfohlen, die Farbgebung-Technologie in den Sprachdienst zu verwenden. Weitere Informationen finden Sie unter [Schriftart und Farbe (Übersicht)](../extensibility/font-and-color-overview.md).  
   
 ## <a name="getting-default-font-and-color-information"></a>Abrufen von Standardschriftart und Farbinformationen  
  Alle der **Schriftarten und Farben** Einstellungen von einem beliebigen Fenster, das Anzeigen von Text sollte angegeben werden, der **Anzeigeelemente** eines **Kategorie**. Weitere Informationen finden Sie unter [Schriftarten und Farben, Umgebung, Dialogfeld Optionen](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).  
@@ -53,5 +48,4 @@ Der Prozess, der gerendert wird, oder zeigt farbige Text in die Elemente der Ben
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>   
  [Verwenden von Schriftarten und Text](http://msdn.microsoft.com/library/d43640f3-da94-4df2-a29d-a9d021a1c069)   
  [Arbeiten mit Farben](http://msdn.microsoft.com/library/d34ff96f-241d-494f-abdd-13811ada8cd3)   
- [GDI (Graphics Device Interface)](http://msdn.microsoft.com/en-us/7e1d4540-bb2e-4257-8eee-eee376acba83)
-
+ [GDI (Graphics Device Interface)](http://msdn.microsoft.com/7e1d4540-bb2e-4257-8eee-eee376acba83)

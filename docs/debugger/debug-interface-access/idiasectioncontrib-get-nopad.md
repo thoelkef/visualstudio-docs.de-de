@@ -1,32 +1,33 @@
 ---
 title: 'Idiasectioncontrib:: Get_nopad | Microsoft-Dokumentation'
-ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSectionContrib::get_nopad method
 ms.assetid: f5c08603-0b3e-4e81-acf1-1b95a6a83bed
-author: mikejo5000
+caps.latest.revision: 9
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: 0cd7069b9b84ba088c7a40255a8805fc8bb2c394
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 51fb2c4ff2f27cee8fcc989139f5ae14c2641394
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858042"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62828099"
 ---
 # <a name="idiasectioncontribgetnopad"></a>IDiaSectionContrib::get_nopad
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Ruft ein Flag, der angibt, ob der Abschnitt nicht soll, können Sie auf die nächsten Begrenzung des Arbeitsspeichers aufgefüllt werden ab.  
   
 ## <a name="syntax"></a>Syntax  
   
-```C++  
+```cpp#  
 HRESULT get_nopad(  
    BOOL* pRetVal  
 };  
@@ -37,7 +38,7 @@ HRESULT get_nopad(
  [out] Gibt `TRUE` , wenn der Abschnitt nicht soll, können Sie bis zur nächsten Arbeitsspeicher Begrenzung aufgefüllt werden; andernfalls `FALSE`.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
  Dies ist eine Eigenschaft, die in der Regel nur für ältere Dateien angezeigt.  

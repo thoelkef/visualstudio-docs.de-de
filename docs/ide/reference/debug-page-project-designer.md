@@ -1,7 +1,6 @@
 ---
 title: Seite "Debuggen", Projekt-Designer
 ms.date: 06/27/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesDebug
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: ef11eae9-df96-4e20-aabd-2678ba317140
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f383701017e9fb830333f7a9869aac99684333a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a49b2c77833538cb983f776a2f54ad332fb87f59
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848258"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968180"
 ---
 # <a name="debug-page-project-designer"></a>Seite "Debuggen", Projekt-Designer
 
@@ -84,7 +83,7 @@ Aktivieren oder deaktivieren Sie dieses Kontrollkästchen, um das Debuggen von S
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Debuggen in Visual Studio](../../debugger/debugger-feature-tour.md)
+- [Erster Einblick in den Debugger](../../debugger/debugger-feature-tour.md)
 - [Projekteinstellungen für C#-Debugkonfigurationen](../../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Projekteinstellungen für eine Visual Basic-Debugkonfiguration](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
 - [Vorgehensweise: Debuggen einer ClickOnce-Anwendung mit eingeschränkten Berechtigungen](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)

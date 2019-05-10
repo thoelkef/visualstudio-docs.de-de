@@ -1,8 +1,7 @@
 ---
-title: SCRIPT_E_REPORTED-Fehlercode | Microsoft Docs
+title: SCRIPT_E_REPORTED-Fehlercode | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,15 +11,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 018cdb5c5fef4e12dc62cf4a06ef0e2b52a98216
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4466869f4da6a0efe20955af6e6ef35ca9479f6c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734050"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840264"
 ---
 # <a name="scriptereported-error-code"></a>SCRIPT_E_REPORTED-Fehlercode
-Das Skriptmodul hat eine nicht behandelte Ausnahme an den Host über gemeldet [IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md). Der Host kann diesen Fehler ignorieren.  
+Die Skript-Engine hat eine nicht behandelte Ausnahme an den Host über gemeldet [IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md). Der Host kann diesen Fehler ignorieren.  
   
 ## <a name="syntax"></a>Syntax  
   

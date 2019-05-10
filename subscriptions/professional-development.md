@@ -4,23 +4,21 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 07/31/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Erfahren Sie mehr über die Vorteile zum professionellen Entwickeln, die in Visual Studio-Abonnements enthalten sind
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 6943c0d0dbd023c0ead9b0f6d59e2fcb1228e8be
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d63fd098c003f606a1d88aec55157e554620b20b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855035"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007698"
 ---
 # <a name="professional-development-benefits-available-in-visual-studio-subscriptions"></a>In Visual Studio-Abonnements verfügbare Vorteile für professionelle Entwicklung
 
-Bringen Sie Ihr Können plattformübergreifend mit erstklassigen, professionellen technischen Schulungen zu den neuesten Trends und Technologien auf die nächste Stufe. 
+Bringen Sie Ihr Können plattformübergreifend mit erstklassigen, professionellen technischen Schulungen zu den neuesten Trends und Technologien auf die nächste Stufe.
 
-Abhängig von Ihrer Abonnementstufe können Sie Zugriff auf Schulungsinhalte von branchenführenden Anbietern erhalten.  Bleiben Sie mit der umfassenden Abdeckung von Microsoft-Technologien im MSDN Magazine und mit kritischen Entwicklernachrichten im MSDN Flash-Newsletter auf dem Laufenden. 
+Abhängig von Ihrer Abonnementstufe können Sie Zugriff auf Schulungsinhalte von branchenführenden Anbietern erhalten.  Bleiben Sie mit der umfassenden Abdeckung von Microsoft-Technologien im MSDN Magazine und mit kritischen Entwicklernachrichten im MSDN Flash-Newsletter auf dem Laufenden.
 
 Weitere Informationen zu den spezifischen Vorteilen finden Sie auf diesen Seiten:
 
@@ -28,3 +26,4 @@ Weitere Informationen zu den spezifischen Vorteilen finden Sie auf diesen Seiten
 - [Opsgility](vs-opsgility.md)
 - [Pluralsight](vs-pluralsight.md)
 - [MSDN Magazine](vs-msdn.md)
+- [LinkedIn Learning](vs-linkedin-learning.md)

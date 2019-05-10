@@ -1,30 +1,33 @@
 ---
 title: 'Idiasymbol:: Get_targetsection | Microsoft-Dokumentation'
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_targetSection method
 ms.assetid: 95382395-da41-4aa8-87f1-5b03da128565
-author: mikejo5000
+caps.latest.revision: 11
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: 36adc59d9b3dbeb9484433acea7301c55b9e7195
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 1dcfd72d7cd4cca527c2318b0c3c412020457e8e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400477"
 ---
 # <a name="idiasymbolgettargetsection"></a>IDiaSymbol::get_targetSection
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Ruft den Adressabschnitt eines Thunk-Ziels ab.  
   
 ## <a name="syntax"></a>Syntax  
   
-```C++  
+```cpp#  
 HRESULT get_targetSection (   
    DWORD* pRetVal  
 );  
@@ -38,7 +41,7 @@ HRESULT get_targetSection ( 
  Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

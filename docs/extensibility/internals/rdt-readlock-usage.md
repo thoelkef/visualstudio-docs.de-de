@@ -10,29 +10,29 @@ helpviewer_keywords:
 ms.assetid: b935fc82-9d6b-4a8d-9b70-e9a5c5ad4a55
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96248d799eae5005c996fa1cc192ee3b447571f8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 04997bfed66da015c4aef82f4741218c88b9ecd1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837432"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859363"
 ---
 # <a name="rdtreadlock-usage"></a>RDT_ReadLock-Verwendung
 
-<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> ist ein Flag, das Logik bereitstellt, für das Sperren eines Dokuments in der ausgeführten Dokumenttabelle (RDT), dies ist die Liste aller Dokumente, die derzeit in der Visual Studio-IDE geöffnet sind. Dieses Flag wird bestimmt, wenn Dokumente geöffnet sind, und gibt an, ob ein Dokument in der Benutzeroberfläche sichtbar oder unsichtbar im Arbeitsspeicher vorhandenen ist.
+[_VSRDTFLAGS. RDT_ReadLock](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS.RDT_ReadLock>) ist ein Flag, das Logik bereitstellt, für das Sperren eines Dokuments in der ausgeführten Dokumenttabelle (RDT), dies ist die Liste aller Dokumente, die derzeit in der Visual Studio-IDE geöffnet sind. Dieses Flag wird bestimmt, wenn Dokumente geöffnet sind, und gibt an, ob ein Dokument in der Benutzeroberfläche sichtbar oder unsichtbar im Arbeitsspeicher vorhandenen ist.
 
-Verwenden Sie in der Regel <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> Wenn eines der folgenden Bedingungen zutrifft:
+Im Allgemeinen verwenden Sie [_VSRDTFLAGS. RDT_ReadLock](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS.RDT_ReadLock>) Wenn eines der folgenden Bedingungen zutrifft:
 
-- Wenn Sie ein Dokument im Hintergrund öffnen möchten und schreibgeschützt, aber es ist noch nicht hergestellt, der <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> muss der Eigentümer.
+- Öffnen Sie ein Dokument im Hintergrund werden sollen und Read-only, aber es ist noch nicht hergestellt, der <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> muss der Eigentümer.
 
-- Wenn Sie möchten die Benutzer aufgefordert, ein Dokument zu speichern, die im Hintergrund geöffnet wurde, bevor der Benutzer sie in der Benutzeroberfläche angezeigt, und anschließend wurde versucht, ihn zu schließen.
+- Sie möchten die Benutzer aufgefordert, ein Dokument zu speichern, die im Hintergrund geöffnet wurde, bevor der Benutzer sie in der Benutzeroberfläche angezeigt, und anschließend wurde versucht, ihn zu schließen.
 
 ## <a name="how-to-manage-visible-and-invisible-documents"></a>So verwalten Sie sichtbar und unsichtbar Dokumente
 
-Wenn ein Benutzer ein Dokument in der Benutzeroberfläche öffnet eine <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Besitzer für das Dokument muss eingerichtet werden und ein <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> Flag festgelegt werden muss. Wenn kein <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Besitzer hergestellt werden kann, und klicken Sie dann das Dokument wird nicht gespeichert werden, wenn der Benutzer klickt **Alles speichern** oder die IDE geschlossen. Dies bedeutet, wenn ein Dokument geöffnet unsichtbar ist, wo er im Arbeitsspeicher geändert wird, und der Benutzer dazu aufgefordert werden, um das Dokument beim Herunterfahren speichern oder gespeichert, wenn **Alles speichern** ausgewählt wird, wird eine `RDT_ReadLock` kann nicht verwendet werden. Sie müssen stattdessen eine `RDT_EditLock` und registrieren Sie eine <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder> beim ein <xref:Microsoft.VisualStudio.Shell.Interop.__VSREGDOCLOCKHOLDER> Flag.
+Wenn ein Benutzer ein Dokument in der Benutzeroberfläche öffnet eine <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Besitzer für das Dokument muss eingerichtet werden und ein [_VSRDTFLAGS. RDT_EditLock](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS.RDT_EditLock>) Flag festgelegt werden muss. Wenn kein <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Besitzer hergestellt werden kann, und klicken Sie dann das Dokument wird nicht gespeichert werden, wenn der Benutzer klickt **Alles speichern** oder die IDE geschlossen. Dies bedeutet, wenn ein Dokument geöffnet unsichtbar ist, wo er im Arbeitsspeicher geändert wird, und der Benutzer dazu aufgefordert werden, um das Dokument beim Herunterfahren speichern oder gespeichert, wenn **Alles speichern** ausgewählt wird, wird eine `RDT_ReadLock` kann nicht verwendet werden. Sie müssen stattdessen eine `RDT_EditLock` und registrieren Sie eine <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder> beim ein [__VSREGDOCLOCKHOLDER. RDLH_WeakLockHolder](<xref:Microsoft.VisualStudio.Shell.Interop.__VSREGDOCLOCKHOLDER.RDLH_WeakLockHolder>) Flag.
 
 ## <a name="rdteditlock-and-document-modification"></a>RDT_EditLock und Änderung von Dokumenten
 

@@ -1,14 +1,9 @@
 ---
 title: SccAdd-Funktion | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccAdd
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 545268f3-8e83-446a-a398-1a9db9e866e8
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 29703be15369649df2208c1521a6636e5ccbefb9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: daac15bbb7829d510db17ba02057a2dc86c55990
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765845"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432511"
 ---
 # <a name="sccadd-function"></a>SccAdd-Funktion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,21 +80,20 @@ SCCRTN SccAdd(
  Die üblichen `fOptions` werden durch ein Array, hier ersetzt `pfOptions`, mit einem `LONG` option Spezifikation pro Datei. Das liegt der Dateityp von Dateien variieren.  
   
 > [!NOTE]
->  Es ist ungültig. Geben Sie beide `SCC_FILETYPE_TEXT` und `SCC_FILETYPE_BINARY` Optionen für die gleiche Datei, aber keines von beiden angegeben ist. Keine Einstellung entspricht der Einstellung `SCC_FILETYPE_AUTO`, in diesem Fall die Quelle-Plug-in erkennt automatisch den Dateityp zu steuern.  
+> Es ist ungültig. Geben Sie beide `SCC_FILETYPE_TEXT` und `SCC_FILETYPE_BINARY` Optionen für die gleiche Datei, aber keines von beiden angegeben ist. Keine Einstellung entspricht der Einstellung `SCC_FILETYPE_AUTO`, in diesem Fall die Quelle-Plug-in erkennt automatisch den Dateityp zu steuern.  
   
  Im folgenden finden Sie die Liste der Flags, die der `pfOptions` Array:  
   
 |Option|Wert|Bedeutung|  
 |------------|-----------|-------------|  
-|SCC_FILETYPE_AUTO|0 x 00|Das Quellcodeverwaltungs-Plug-in sollte es sich um den Dateityp erkennen.|  
-|SCC_FILETYPE_TEXT|0 x 01|Gibt eine ASCII-Textdatei an.|  
-|SCC_FILETYPE_BINARY|0 x 02|Gibt einen Dateityp als ASCII-Text an.|  
+|SCC_FILETYPE_AUTO|0x00|Das Quellcodeverwaltungs-Plug-in sollte es sich um den Dateityp erkennen.|  
+|SCC_FILETYPE_TEXT|0x01|Gibt eine ASCII-Textdatei an.|  
+|SCC_FILETYPE_BINARY|0x02|Gibt einen Dateityp als ASCII-Text an.|  
 |SCC_ADD_STORELATEST|0x04|Speichert nur die letzte Kopie der Datei keine Deltas.|  
-|SCC_FILETYPE_TEXT_ANSI|0 x 08|Die Datei behandelt als ANSI-Text.|  
+|SCC_FILETYPE_TEXT_ANSI|0x08|Die Datei behandelt als ANSI-Text.|  
 |SCC_FILETYPE_UTF8|0x10|Behandelt die Datei als Unicode-Text im UTF8-Format.|  
 |SCC_FILETYPE_UTF16LE|0x20|Behandelt die Datei als Unicode-Text im UTF16-Little-Endian-Format.|  
-|SCC_FILETYPE_UTF16BE|0 x 40|Behandelt die Datei im UTF16-Format Big-Endian Unicode-Text formatieren.|  
+|SCC_FILETYPE_UTF16BE|0x40|Behandelt die Datei im UTF16-Format Big-Endian Unicode-Text formatieren.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [API-Funktionen von Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-in-api-functions.md)
-

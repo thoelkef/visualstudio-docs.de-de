@@ -1,7 +1,6 @@
 ---
-title: Befehl "Drucken"
+title: Debug.Print
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - debug.print
@@ -12,49 +11,52 @@ helpviewer_keywords:
 ms.assetid: 0412d381-590a-483f-bab4-6e1cca095645
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31f604d6df45cb22d18401b5925867d5ab0e02b8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: df609011250cebc097d3d356242302dbe41f8007
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900885"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969084"
 ---
-# <a name="print-command"></a>Befehl "Drucken"
-Wertet einen Ausdruck aus oder zeigt angegebenen Text an
+# <a name="print-command"></a>Befehl „Drucken“
+
+Wertet einen Ausdruck aus oder zeigt angegebenen Text an.
 
 ## <a name="syntax"></a>Syntax
 
 ```cmd
-Debug.Print text
+>Debug.Print text
 ```
 
 ## <a name="arguments"></a>Argumente
- `text`
 
- Erforderlich. Der auszuwertende Ausdruck oder der anzuzeigende Text
+`text`
 
-## <a name="remarks"></a>Hinweise
- Sie können ein Fragezeichen (?) als Alias für diesen Befehl verwenden. Daher wird mit dem Befehl
+Erforderlich. Der auszuwertende Ausdruck oder der anzuzeigende Text
+
+## <a name="remarks"></a>Anmerkungen
+
+Sie können ein Fragezeichen (?) als Alias für diesen Befehl verwenden. Daher wird mit dem Befehl
 
 ```cmd
 >Debug.Print expA
 ```
 
- kann beispielsweise auch folgendermaßen geschrieben werden:
+kann beispielsweise auch folgendermaßen geschrieben werden:
 
 ```cmd
->? expA
+? expA
 ```
 
- Beide Versionen dieses Befehls geben den aktuellen Wert des Ausdrucks `expA` zurück.
+Beide Versionen dieses Befehls geben den aktuellen Wert des Ausdrucks `expA` zurück.
 
 ## <a name="example"></a>Beispiel
 
 ```cmd
->Debug.Print varA
+>Debug.Print DateTime.Now.Day
 ```
 
 ## <a name="see-also"></a>Siehe auch

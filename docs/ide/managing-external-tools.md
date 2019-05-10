@@ -1,7 +1,6 @@
 ---
 title: Verwalten externer Tools
 ms.date: 11/20/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.externaltools
@@ -9,15 +8,15 @@ helpviewer_keywords:
 - external tools [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8aa96b9204e81a2947e4eb4dca4bd7b9d5b8b341
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3562ed9ebf2d62ab002ac227486218c8c38ad337
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62535676"
 ---
 # <a name="manage-external-tools"></a>Verwalten externer Tools
 
@@ -25,13 +24,24 @@ Sie können externe Tools aus Visual Studio mithilfe des **Extras**-Menüs aufru
 
 ## <a name="tools-available-on-the-tools-menu"></a>Im Menü „Extras“ verfügbare Tools
 
-Das Menü **Extras** enthält mehrere integrierte Befehle, z.B.:
+Das Menü **Extras** enthält mehrere integrierte Befehle, z. B.:
+
+::: moniker range="vs-2017"
 
 * **Erweiterungen und Updates** für die [Verwaltung von Visual Studio-Erweiterungen](finding-and-using-visual-studio-extensions.md)
 * **Codeausschnitt-Manager** zum [Organisieren von Codeausschnitten](code-snippets.md)
-* **PreEmptive-Schutz: Dotfuscator** zum Starten von [Dotfuscator Community Edition (CE)](dotfuscator/index.md), sofern das Tool [installiert](dotfuscator/install.md) ist
 * **Anpassen** zum [Anpassen von Menüs und Symbolleisten](how-to-customize-menus-and-toolbars-in-visual-studio.md)
 * **Optionen** zum [Festlegen einer Vielzahl verschiedener Optionen für die Visual Studio-IDE und andere Tools](reference/options-dialog-box-visual-studio.md)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+* **Codeausschnitt-Manager** zum [Organisieren von Codeausschnitten](code-snippets.md)
+* **Anpassen** zum [Anpassen von Menüs und Symbolleisten](how-to-customize-menus-and-toolbars-in-visual-studio.md)
+* **Optionen** zum [Festlegen einer Vielzahl verschiedener Optionen für die Visual Studio-IDE und andere Tools](reference/options-dialog-box-visual-studio.md)
+
+::: moniker-end
 
 ## <a name="add-new-tools-to-the-tools-menu"></a>Neue Tools zum Menü „Extras“ hinzufügen
 
@@ -65,8 +75,8 @@ Im Folgenden finden Sie eine Liste der Argumente, die verwendet werden können, 
 |Target Name|$(TargetName)|Der Dateiname des zu erstellenden Elements.|
 |Zielerweiterung|$(TargetExt)|Die Dateinamenerweiterung zu erstellenden Elements.|
 |Binäres Verzeichnis|$(BinDir)|Der endgültige Position der Binärdatei, die erstellt wird (als Laufwerk + Pfad definiert).|
-|Projektverzeichnis|$(ProjDir)|Das Verzeichnisses des aktuellen Projekts (Laufwerk + Pfad).|
-|Projektdateiname|$(ProjFileName)|Der Dateiname des aktuellen Projekts (Laufwerk + Pfad + Dateiname).|
+|Projektverzeichnis|$(ProjectDir)|Das Verzeichnisses des aktuellen Projekts (Laufwerk + Pfad).|
+|Projektdateiname|$(ProjectFileName)|Der Dateiname des aktuellen Projekts (Laufwerk + Pfad + Dateiname).|
 |Projektmappenverzeichnis|$(SolutionDir)|Das Verzeichnisses der aktuellen Projektmappe (Laufwerk + Pfad).|
 |Projektmappen-Dateiname|$(SolutionFileName)|Der Dateiname der aktuellen Projektmappe (Laufwerk + Pfad + Dateiname).|
 

@@ -1,8 +1,6 @@
 ---
-title: IDiaReadExeAtRVACallback | Microsoft Docs
-ms.custom: ''
+title: IDiaReadExeAtRVACallback | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -11,46 +9,46 @@ helpviewer_keywords:
 ms.assetid: b2892513-3952-4f99-9b98-60cb9b1fdc91
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8836f1d234cddfff42f21a3d376eb93b21e4fe29
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c86a0e995e3336bc217bcc9ad0e7ce28a6434478
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832512"
 ---
 # <a name="idiareadexeatrvacallback"></a>IDiaReadExeAtRVACallback
-Ermöglicht es eine Clientanwendung Bytes für eine ausführbare Datei entsprechend den Angaben von eine relative virtuelle Adresse angeben.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```  
-IDiaReadExeAtRVACallback : IUnknown  
-```  
-  
-## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
- Die folgende Tabelle zeigt die Methoden der `IDiaReadExeAtRVACallback`.  
-  
-|Methode|Beschreibung|  
-|------------|-----------------|  
-|[IDiaReadExeAtRVACallback::ReadExecutableAtRVA](../../debugger/debug-interface-access/idiareadexeatrvacallback-readexecutableatrva.md)|Liest die angegebene Anzahl von Bytes beginnend bei der angegebenen relativen virtuellen Adresse (RVA) aus der ausführbaren Datei.|  
-  
-## <a name="remarks"></a>Hinweise  
- Die Clientanwendung implementiert diese Schnittstelle, um die Bytes der ausführbaren Datei mit der eine relative virtuelle Adresse in die ausführbare Datei bereitzustellen. Um einen absoluten Dateioffset verwenden, implementieren die [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md) Schnittstelle.  
-  
-## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- Diese Methode implementiert, die von der Clientanwendung und übergeben der [idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) Methode als eine alternative Methode zum Lesen der Datei.  
-  
-## <a name="requirements"></a>Anforderungen  
- Header: Dia2.h  
-  
- Bibliothek: diaguids.lib  
-  
- DLL: "MSDIA80.dll"  
-  
-## <a name="see-also"></a>Siehe auch  
- [Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
- [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)
+Ermöglicht eine Clientanwendung Bytes einer ausführbaren Datei gemäß der eine relative virtuelle Adresse angeben.
+
+## <a name="syntax"></a>Syntax
+
+```
+IDiaReadExeAtRVACallback : IUnknown
+```
+
+## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge
+ Die folgende Tabelle zeigt die Methoden der `IDiaReadExeAtRVACallback`.
+
+|Methode|Beschreibung|
+|------------|-----------------|
+|[IDiaReadExeAtRVACallback::ReadExecutableAtRVA](../../debugger/debug-interface-access/idiareadexeatrvacallback-readexecutableatrva.md)|Liest die angegebene Anzahl von Bytes, beginnend ab der angegebenen relativen virtuellen Adresse (RVA) der ausführbaren Datei an.|
+
+## <a name="remarks"></a>Hinweise
+ Die Client-Anwendung implementiert diese Schnittstelle, um die Bytes der ausführbaren Datei mit der eine relative virtuelle Adresse in der ausführbaren Datei Datei bereitzustellen. Um eine absolute Dateioffset verwenden zu können, implementieren die [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md) Schnittstelle.
+
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer
+ Diese Methode implementiert, die von der Clientanwendung und übergeben die [idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) Methode als eine alternative Methode zum Lesen der Datei.
+
+## <a name="requirements"></a>Anforderungen
+ Header: Dia2.h
+
+ Bibliothek: diaguids.lib
+
+ DLL: msdia80.dll
+
+## <a name="see-also"></a>Siehe auch
+- [Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
+- [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)

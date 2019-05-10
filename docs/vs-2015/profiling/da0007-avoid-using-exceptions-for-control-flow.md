@@ -1,14 +1,9 @@
 ---
 title: 'DA0007: Verwenden Sie keine Ausnahmen für die Ablaufsteuerung | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DAExceptionsThrown
 - vs.performance.7
@@ -18,21 +13,21 @@ ms.assetid: ee8ba8b5-2313-46c9-b129-3f3a2a232898
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a86c36c55d11f91daff8e876e852daed2f222307
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 2599282909c62e3a35702346f793dfd914c18ac4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737100"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62580211"
 ---
-# <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007: Verwenden Sie keine Ausnahmen für die Ablaufsteuerung
+# <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007: Vermeiden der Verwendung von Ausnahmen für die Ablaufsteuerung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Regel-Id | DA0007 |  
 | Kategorie |. NET Framework-Verwendung |  
 | Profilerstellungsmethoden | Alle |  
-| Nachricht | Permanent wird eine hohe Anzahl von Ausnahmen ausgelöst. Reduzieren Sie die Verwendung von Ausnahmen in der Programmlogik. |  
+| Nachricht | Permanent wird eine hohe Anzahl von Ausnahmen ausgelöst. Verwenden Sie nach Möglichkeit weniger Ausnahmen in der Programmlogik.|  
 | Nachrichtentyp | Warnung |  
   
  Wenn Sie Profile mithilfe der Sampling-, .NET-Arbeitsspeicher- oder Ressourcenkonfliktmethode Profile erstellen, müssen mindestens 25 Samplings erfasst werden, damit diese Regel ausgelöst wird.  
@@ -49,6 +44,3 @@ Regel-Id | DA0007 |
  Doppelklicken Sie auf die Meldung im Fenster „Fehlerliste“, um zur Ansicht „Markierungen“ zu navigieren. Suchen Sie die Spalte, die die Messung für **.NET CLR-Ausnahmen(@ProcessInstance)\\Anzahl der ausgelösten Ausnahmen/Sek.** enthält. Überprüfen Sie, ob die Ausnahmebehandlung in bestimmten Phasen der Programmausführung besonders häufig auftritt. Suchen Sie mithilfe eines Samplingprofils nach throw-Anweisungen und try/catch-Blöcken, die häufig Ausnahmen generieren. Ergänzen Sie ggf. catch-Blöcke mit einer Logik, die zeigt, welche Ausnahmen am häufigsten behandelt werden. Ersetzen Sie nach Möglichkeit häufig ausgeführte throw-Anweisungen oder catch-Blöcke durch einfache Flusssteuerungslogik oder Validierungscode.  
   
  Wenn Sie beispielsweise feststellen, dass von Ihrer Anwendung häufig DivideByZeroException-Ausnahmen behandelt werden, können Sie die Leistung der Anwendung verbessern, indem Sie eine Logik zum Programm hinzuzufügen, mit der überprüft wird, ob Nenner mit dem Wert null vorhanden sind.
-
-
-

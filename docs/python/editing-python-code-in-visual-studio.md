@@ -1,32 +1,27 @@
 ---
 title: Bearbeiten von Python-Code
 description: In Visual Studio stehen für Python umfassende IntelliSense-Funktionen, Codeausschnitte und Navigationsfunktionen sowie Formatierung, Linting und Umgestaltung zur Verfügung.
-ms.date: 11/19/2018
-ms.prod: visual-studio-dev15
+ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 62d22b286b6f0e58f6b833ba1975a07a6ab0500b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b111d3b0fe2f4af9098186aff3ef661045215473
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964363"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62959515"
 ---
 # <a name="edit-python-code"></a>Bearbeiten von Python-Code
 
 Da Sie einen Großteil Ihrer Entwicklungszeit im Code-Editor verbringen, bietet [die Python-Unterstützung in Visual Studio](installing-python-support-in-visual-studio.md) Funktionen, die Ihre Produktivität erhöhen. Zu den Funktionen gehören die Syntaxhervorhebung von IntelliSense, die automatische Vervollständigung, Signaturhilfe, Methodenüberschreibungen, die Suche und die Navigation.
 
 Der Editor ist darüber hinaus auch im **interaktiven** Fenster in Visual Studio integriert, sodass der Austausch von Code zwischen den beiden sehr leicht ist. Weitere Informationen finden Sie unter [Tutorial Schritt 3: Verwenden des interaktiven REPL-Fensters](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) und [Verwenden des interaktiven Fensters: Befehl „An Interactive senden“](python-interactive-repl-in-visual-studio.md#send-to-interactive-command).
-
-|   |   |
-|---|---|
-| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567) mit einer Demonstration zur Bearbeitung von Python-Code an (2 Minuten, 30 Sekunden).|
 
 Eine allgemeine Dokumentation zur Codebearbeitung in Visual Studio finden Sie unter [Features des Code-Editors](../ide/writing-code-in-the-code-and-text-editor.md). Lesen Sie auch den Artikel [Gliedern](../ide/outlining.md), um sich auf bestimmte Abschnitte Ihres Codes zu konzentrieren.
 
@@ -36,9 +31,9 @@ Sie können darüber hinaus den Visual Studio-**Objektkatalog** (**Ansicht** > *
 
 IntelliSense bietet [Vervollständigung](#completions), [Signaturhilfe](#signature-help), [QuickInfos](#quick-info) und [Codefarben](#code-coloring). Visual Studio 2017 Version 15.7 und höher unterstützt auch [Typhinweise](#type-hints).
 
-Zur Verbesserung der Leistung nutzt IntelliSense in **Visual Studio 2017 Version 15.5** und früher eine Vervollständigungsdatenbank, die für jede Python-Umgebung in Ihrem Projekt generiert wird. Sie müssen Datenbanken möglicherweise aktualisieren, wenn Sie Pakete hinzufügen, entfernen oder aktualisieren. Der Status der Datenbank wird im Fenster **Python-Umgebungen** (dem **Projektmappen-Explorer** gleichgeordnet) auf der Registerkarte **IntelliSense** angezeigt (siehe [Referenz zu den Registerkarten im Fenster „Python-Umgebungen“](python-environments-window-tab-reference.md#intellisense-tab)).
+Zur Verbesserung der Leistung nutzt IntelliSense in Visual Studio 2017 Version 15.5 und früher eine Vervollständigungsdatenbank, die für jede Python-Umgebung in Ihrem Projekt generiert wird. Sie müssen Datenbanken möglicherweise aktualisieren, wenn Sie Pakete hinzufügen, entfernen oder aktualisieren. Der Status der Datenbank wird im Fenster **Python-Umgebungen** (dem **Projektmappen-Explorer** gleichgeordnet) auf der Registerkarte **IntelliSense** angezeigt (siehe [Referenz zu den Registerkarten im Fenster „Python-Umgebungen“](python-environments-window-tab-reference.md#intellisense-tab)).
 
-**Visual Studio 2017 Version 15.6** und höher ermöglicht auf andere Weise IntelliSense-Vervollständigungen, die nicht von der Datenbank abhängig sind.
+Visual Studio 2017 Version 15.6 und höher ermöglicht auf andere Weise IntelliSense-Vervollständigungen, die nicht von der Datenbank abhängig sind.
 
 ### <a name="completions"></a>Vervollständigungen
 
@@ -114,10 +109,20 @@ Mithilfe des Befehls **Mypy ausführen** für diesen Code wird der folgende Fehl
 
 ![Beispielergebnis für die Mypy-Überprüfung von Typhinweisen](media/code-editing-type-hints-validation-error.png)
 
+::: moniker range="vs-2017"
 > [!Tip]
-> Für Versionen von Python vor 3.5 zeigt Visual Studio auch Typhinweise an, die Sie über *Stub-Dateien* (*.pyi*) angeben. Sie können Stub-Dateien immer dann verwenden, wenn Sie Typhinweise nicht direkt in Ihren Code einschließen möchten oder wenn Sie Typhinweise für eine Bibliothek erstellen wollen, die diese nicht direkt verwendet. Weitere Informationen finden Sie unter [Create Stubs for Python Modules (Erstellen von Stubs für Python-Module)](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) im Projekt-Wiki für MyPy.
+> Für Versionen von Python vor 3.5 zeigt Visual Studio auch Typhinweise an, die Sie über Typeshed-*Stub-Dateien* (*.pyi*) angeben. Sie können Stub-Dateien immer dann verwenden, wenn Sie Typhinweise nicht direkt in Ihren Code einschließen möchten oder wenn Sie Typhinweise für eine Bibliothek erstellen wollen, die diese nicht direkt verwendet. Weitere Informationen finden Sie unter [Create Stubs for Python Modules (Erstellen von Stubs für Python-Module)](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) im Projekt-Wiki für MyPy.
 >
 > Derzeit unterstützt Visual Studio keine Typhinweise in Kommentaren.
+::: moniker-end
+::: moniker range=">=vs-2019"
+> [!Tip]
+> Für Versionen von Python vor 3.5 zeigt Visual Studio auch Typhinweise an, die Sie über Typeshed-*Stub-Dateien* (*.pyi*) angeben. Sie können Stub-Dateien immer dann verwenden, wenn Sie Typhinweise nicht direkt in Ihren Code einschließen möchten oder wenn Sie Typhinweise für eine Bibliothek erstellen wollen, die diese nicht direkt verwendet. Weitere Informationen finden Sie unter [Create Stubs for Python Modules (Erstellen von Stubs für Python-Module)](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) im Projekt-Wiki für MyPy.
+>
+> Visual Studio enthält gebündelte Typeshed-Dateien für Python 2 und 3. So werden keine zusätzlichen Downloads benötigt. Wenn Sie andere Dateien verwenden möchten, können Sie den Pfad unter **Tools** > **Optionen** > **Python** > **Sprache** angeben. Siehe [Optionen – Sprachserver](python-support-options-and-settings-in-visual-studio.md#language-server-options).
+>
+> Derzeit unterstützt Visual Studio keine Typhinweise in Kommentaren.
+::: moniker-end
 
 ### <a name="signature-help"></a>Signaturhilfe
 

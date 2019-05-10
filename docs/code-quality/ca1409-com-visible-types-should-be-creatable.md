@@ -1,7 +1,6 @@
 ---
 title: 'CA1409: Für COM sichtbare Typen müssen erstellt werden können.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - ComVisibleTypesShouldBeCreatable
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 9f59569b-de15-4a38-b7cb-cff152972243
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fd168c5174dcc403a38c6eb3e443c3711fce537
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 05dbe964a16f838088fe8b053d59c1916daf38f7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821687"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546400"
 ---
 # <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409: Für COM sichtbare Typen müssen erstellt werden können.
 

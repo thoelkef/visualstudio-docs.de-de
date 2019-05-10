@@ -1,7 +1,6 @@
 ---
-title: 'CA1410: COM-Registrierungsmethoden müssen übereinstimmen.'
+title: 'CA1410: Die COM-Registrierungsmethoden müssen übereinstimmen.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1410
@@ -12,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: f3b2e62d-fd66-4093-9f0c-dba01ad995fd
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1701ac1a432a9957e4350601ea55f13c6371147d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c606a55be00ac8e44d54bad289076498e2655af1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872894"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546413"
 ---
-# <a name="ca1410-com-registration-methods-should-be-matched"></a>CA1410: COM-Registrierungsmethoden müssen übereinstimmen.
+# <a name="ca1410-com-registration-methods-should-be-matched"></a>CA1410: Die COM-Registrierungsmethoden müssen übereinstimmen.
 
 |||
 |-|-|

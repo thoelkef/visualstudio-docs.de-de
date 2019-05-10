@@ -1,14 +1,9 @@
 ---
 title: Tipps zur Volltextsuche | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - hv_search
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: bcaad23d-2ca7-4bec-8b54-b884bc34e70b
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 85770dfd3c610f92bcb190b7a2c151b40cd31a4c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 686bf7962e164e718f007a44c83febfc8f49418d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850047"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62584682"
 ---
 # <a name="full-text-search-tips"></a>Tipps zur Volltextsuche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ Eins der besonders nützlichen Verfahren zum Finden von Informationen in der Hil
   
 > [!IMPORTANT]
 > 1. Die Suche nach Ausdrücken wird nicht unterstützt. Wenn Sie in einer Suchzeichenfolge mehr als ein Wort angeben, enthalten die zurückgegebenen Themen alle angegebenen Wörter, aber nicht unbedingt genau den Ausdruck, den Sie angegeben haben.  
->    2.  Verwenden Sie logische Operatoren, um die Beziehung zwischen den Wörtern in Ihrem Suchausdruck anzugeben. Sie können logische Operatoren, wie etwa UND, ODER, NICHT und NAH eingeben, um Ihre Suche weiter einzugrenzen. Wenn Sie beispielsweise nach „Deklarieren NAH Vereinigungsmenge“ suchen, enthalten die Suchergebnisse Themen, die die Wörter „Deklarieren“ und „Vereinigungsmenge“ durch nicht mehr als ein paar Wörter getrennt enthalten. Weitere Informationen finden Sie unter [Logische Operatoren in Suchausdrücken](../ide/logical-operators-in-search-expressions.md).  
+>    2. Verwenden Sie logische Operatoren, um die Beziehung zwischen den Wörtern in Ihrem Suchausdruck anzugeben. Sie können logische Operatoren, wie etwa UND, ODER, NICHT und NAH eingeben, um Ihre Suche weiter einzugrenzen. Wenn Sie beispielsweise nach „Deklarieren NAH Vereinigungsmenge“ suchen, enthalten die Suchergebnisse Themen, die die Wörter „Deklarieren“ und „Vereinigungsmenge“ durch nicht mehr als ein paar Wörter getrennt enthalten. Weitere Informationen finden Sie unter [Logische Operatoren in Suchausdrücken](../ide/logical-operators-in-search-expressions.md).  
   
 ### <a name="filters"></a>Filter  
  Sie können die Suchergebnisse weiter eingrenzen, indem Sie erweiterte Suchoperatoren verwenden. Die Hilfe enthält drei Kategorien, die Sie zum Filtern von Ergebnissen einer Volltextsuche verwenden können: Titel, Code und Schlüsselwort. Weitere Informationen finden sie unter [Erweiterte Suchoperatoren in Suchausdrücken](../ide/advanced-search-operators-in-search-expressions.md).  
@@ -56,11 +51,11 @@ Eins der besonders nützlichen Verfahren zum Finden von Informationen in der Hil
 ### <a name="ranking-of-search-results"></a>Rangfolge von Suchergebnissen  
  Der Suchalgorithmus wendet bestimmte Kriterien an, um einen höheren oder niedrigeren Rang von Suchergebnissen in der Ergebnisliste auszuweisen. Allgemein:  
   
-1.  Inhalte, die Suchwörter im Titel enthalten, haben einen höheren Rang als Inhalte, auf die das nicht zutrifft.  
+1. Inhalte, die Suchwörter im Titel enthalten, haben einen höheren Rang als Inhalte, auf die das nicht zutrifft.  
   
-2.  Inhalte die Suchwörter in großer Nähe zueinander enthalten, erhalten einen höheren Rang als Inhalte, auf die das nicht zugrifft.  
+2. Inhalte die Suchwörter in großer Nähe zueinander enthalten, erhalten einen höheren Rang als Inhalte, auf die das nicht zugrifft.  
   
-3.  Inhalte, die eine höhere Dichte der Suchwörter aufweisen, erhalten einen höheren Rang als Inhalte mit einer geringeren Dichte der Suchwörter.  
+3. Inhalte, die eine höhere Dichte der Suchwörter aufweisen, erhalten einen höheren Rang als Inhalte mit einer geringeren Dichte der Suchwörter.  
   
 ### <a name="words-ignored-in-searches-stop-words"></a>Bei der Suche ignorierte Wörter (Stoppwörter)  
  Häufig auftretende Wörter oder Ziffern, die manchmal als Stoppwörter bezeichnet werden, werden bei der Volltextsuche automatisch ignoriert. Wenn Sie beispielsweise nach dem Ausdruck „übergeben durch“ suchen, zeigen die Suchergebnisse Themen an, die das Wort „übergeben“ enthalten, ignorieren aber das Wort „durch“.  
@@ -68,6 +63,3 @@ Eins der besonders nützlichen Verfahren zum Finden von Informationen in der Hil
 ## <a name="see-also"></a>Siehe auch  
  [Suchen nach Informationen](../ide/locate-information.md)   
  [Logische Operatoren in Suchausdrücken](../ide/logical-operators-in-search-expressions.md)
-
-
-

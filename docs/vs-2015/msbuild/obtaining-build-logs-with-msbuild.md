@@ -1,14 +1,9 @@
 ---
 title: Erhalten von Buildprotokollen mit MSBuild | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, logging
 - logging [MSBuild]
@@ -16,22 +11,21 @@ ms.assetid: 6ba9a754-9cc0-4fed-9fc8-4dcd3926a031
 caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6eb4a1822d0be86d19f25bfaa46e296abc7a73a0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c88288a7bed453ca14e9c14fd43706b97be04044
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811749"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430845"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>Erhalten von Buildprotokollen mit MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Indem Sie Schalter mit MSBuild verwenden, können Sie angeben, wie viele Builddaten zu überprüfen sind und ob Sie Builddaten in eine oder mehrere Dateien speichern möchten. Sie können auch eine benutzerdefinierte Protokollierung zum Sammeln von Builddaten angeben. Weitere Informationen zu MSBuild-Befehlszeilenschalter, die in diesem Thema nicht behandelt werden, finden Sie unter [Befehlszeilenreferenz](../msbuild/msbuild-command-line-reference.md).  
   
 > [!NOTE]
->  Wenn Sie Projekte mithilfe von Visual Studio-IDE erstellen, können Sie die Probleme diese Builds beheben, indem Sie Buildprotokolle überprüfen. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md).  
+> Wenn Sie Projekte mithilfe von Visual Studio-IDE erstellen, können Sie die Probleme diese Builds beheben, indem Sie Buildprotokolle überprüfen. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen, speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md).  
   
 ## <a name="setting-the-level-of-detail"></a>Festlegen des Detailgrads  
  Wenn Sie ein Projekt mithilfe von MSBuild ohne Angabe einer Detailebene erstellen, werden die folgenden Informationen im Ausgabeprotokoll angezeigt:  
@@ -88,6 +82,3 @@ msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorso
  [Protokollierung in einer Multiprozessorumgebung](../msbuild/logging-in-a-multi-processor-environment.md)   
  [Erstellen von Weiterleitungsprotokollierungen](../msbuild/creating-forwarding-loggers.md)   
  [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)
-
-
-

@@ -1,26 +1,29 @@
 ---
 title: Enum (Debug Interface Access SDK) | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - enumerated types as symbols
 - Enum symbol
 ms.assetid: c777e2e6-88be-435b-b632-8d43f42b0b49
-author: mikejo5000
+caps.latest.revision: 18
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: 4b9825f4c30569b4f251dc1128ec972307861b7b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: d40e0dd4f831ffa5a2da5e9143c907334eef8926
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987546"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554791"
 ---
 # <a name="enum-debug-interface-access-sdk"></a>Enum (Debug Interface Access SDK)
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Enumerationen werden identifiziert, indem `SymTagEnum` Symbole. Jeder Enumerationswert angezeigt wird, als untergeordnetes Element Klasse mit einem `SymTagConstant` Tag.  
   
 ## <a name="properties"></a>Eigenschaften  

@@ -1,25 +1,22 @@
 ---
 title: Navigieren im UML-Modell | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: 6d789b6d-2aa9-4ceb-92c4-84a300065a76
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6f77e72c55c0984f66a6884b0582716e5529abd0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b61492d992d37d7377e73185202bfbdd97063195
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727770"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116666"
 ---
 # <a name="navigate-the-uml-model"></a>Navigieren im UML-Modell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +30,9 @@ In diesem Thema werden die Haupttypen des UML-Modells vorgestellt.
   
  Alle Typen mit Ausnahme von IElement erben Eigenschaften von einem oder mehreren Obertypen (Supertypes).  
   
--   Eine Zusammenfassung der Modelltypen, finden Sie unter [UML-Modellelementtypen](../modeling/uml-model-element-types.md).  
+- Eine Zusammenfassung der Modelltypen, finden Sie unter [UML-Modellelementtypen](../modeling/uml-model-element-types.md).  
   
--   Vollständige Informationen zur API finden Sie unter [-API-Referenz für UML-UML-Modellierungserweiterbarkeit](../modeling/api-reference-for-uml-modeling-extensibility.md).  
+- Vollständige Informationen zur API finden Sie unter [-API-Referenz für UML-UML-Modellierungserweiterbarkeit](../modeling/api-reference-for-uml-modeling-extensibility.md).  
   
 ### <a name="relationships"></a>Beziehungen  
  Eigenschaften und Beziehungen, die in der UML-Spezifikation definiert sind, werden als .NET-Eigenschaften implementiert.  
@@ -48,7 +45,7 @@ In diesem Thema werden die Haupttypen des UML-Modells vorgestellt.
   
  Wenn Sie ein Element aus dem Modell löschen, werden alle Beziehungen, in denen es vorkommt, automatisch gelöscht, und die Eigenschaft am anderen Ende wird aktualisiert.  
   
- Wenn die UML-Spezifikation einer Eigenschaft eine Multiplizität von 0..1 zuweist, kann diese den Wert `null` haben. Eine Multiplizität mit Maximalwert als 1 bedeutet, dass die .NET-Eigenschaft den Typ hat: `IEnumerable<` *Typ*`>`.  
+ Wenn die UML-Spezifikation einer Eigenschaft eine Multiplizität von 0..1 zuweist, kann diese den Wert `null` haben. Eine Multiplizität mit Maximalwert als 1 bedeutet, dass die .NET-Eigenschaft den Typ hat: `IEnumerable<`*Typ*`>`.  
   
  Weitere Informationen zum Durchsuchen von Beziehungen finden Sie unter [Navigieren in Beziehungen mit der UML-API](../modeling/navigate-relationships-with-the-uml-api.md).  
   
@@ -125,15 +122,12 @@ foreach (IShape<IInterface> in
 ## <a name="accessing-another-model-or-diagrams"></a>Zugriff auf ein anderes Modell oder Diagramme  
  Sie haben folgende Möglichkeiten:  
   
--   Erstellen Sie mit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-ModelBus Links zwischen Elementen in unterschiedlichen Modellen. Weitere Informationen finden Sie unter [Integrieren von UML-Modellen in andere Modelle und Tools](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
+- Erstellen Sie mit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-ModelBus Links zwischen Elementen in unterschiedlichen Modellen. Weitere Informationen finden Sie unter [Integrieren von UML-Modellen in andere Modelle und Tools](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
   
--   Laden Sie ein Modellierungsprojekt und Diagramme im schreibgeschützten Modus, ohne sie in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Benutzeroberfläche anzuzeigen. Weitere Informationen finden Sie unter [lesen ein UML-Modells im Programmcode](../modeling/read-a-uml-model-in-program-code.md).  
+- Laden Sie ein Modellierungsprojekt und Diagramme im schreibgeschützten Modus, ohne sie in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Benutzeroberfläche anzuzeigen. Weitere Informationen finden Sie unter [lesen ein UML-Modells im Programmcode](../modeling/read-a-uml-model-in-program-code.md).  
   
--   Öffnen Sie ein Modellierungsprojekt und die darin enthaltenen Diagramme in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], und greifen Sie dann auf den Inhalt zu. Weitere Informationen finden Sie unter [öffnen ein UML-Modells mithilfe der Visual Studio-API](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md).  
+- Öffnen Sie ein Modellierungsprojekt und die darin enthaltenen Diagramme in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], und greifen Sie dann auf den Inhalt zu. Weitere Informationen finden Sie unter [öffnen ein UML-Modells mithilfe der Visual Studio-API](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erweitern von UML-Modellen und-Diagrammen](../modeling/extend-uml-models-and-diagrams.md)   
  [Programmieren mit der UML-API](../modeling/programming-with-the-uml-api.md)
-
-
-

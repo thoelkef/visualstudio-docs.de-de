@@ -1,14 +1,9 @@
 ---
 title: FileClassifier-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -22,18 +17,17 @@ ms.assetid: 14e03310-fcc0-4bb2-a84d-cda12be66367
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2e0515d4f21993a50ce590df10ca283e6e66b17a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b16933580037a8d4d331a1fd2b523b85b746dbdb
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271442"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668157"
 ---
 # <a name="fileclassifier-task"></a>FileClassifier-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Der <xref:Microsoft.Build.Tasks.Windows.FileClassifier>-Task klassifiziert eine Gruppe von Quellressourcen als diejenigen, die in eine Assembly eingebettet werden. Wenn eine Ressource nicht lokalisierbar ist, wird sie in die Hauptanwendungsassembly eingebettet; andernfalls wird sie in eine Satellitenassembly eingebettet.  
   
 ## <a name="task-parameters"></a>Aufgabenparameter  
@@ -49,7 +43,7 @@ Der <xref:Microsoft.Build.Tasks.Windows.FileClassifier>-Task klassifiziert eine 
 |`SatelliteEmbeddedFiles`|Optionaler **ITaskItem[]**-Ausgabeparameter.<br /><br /> Gibt die lokalisierbaren Dateien an, die für die durch den **Culture**-Parameter angegebene Kultur in die Satellitenassembly eingebettet werden.|  
 |`SourceFiles`|Erforderlicher **ITaskItem[]**-Parameter.<br /><br /> Gibt die Liste der zu klassifizierenden Dateien an.|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Wenn der **Culture**-Parameter nicht festgelegt ist, sind alle mit dem **SourceFiles**-Parameter angegebenen Ressourcen nicht lokalisierbar; andernfalls sind sie lokalisierbar, es sei denn, sie sind mit einem **Localizable**-Attribut verknüpft, das auf **false** festgelegt ist.  
   
 ## <a name="example"></a>Beispiel  
@@ -78,6 +72,3 @@ Der <xref:Microsoft.Build.Tasks.Windows.FileClassifier>-Task klassifiziert eine 
  [MSBuild Reference](../msbuild/msbuild-reference.md)  (MSBuild-Referenz)  
  [Task Reference](../msbuild/msbuild-task-reference.md)  (MSBuild-Aufgabenreferenz)  
  [Erstellen einer WPF-Anwendung (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)
-
-
-

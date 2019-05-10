@@ -1,24 +1,26 @@
 ---
 title: IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - GetAttributedClassesForLanguage
 - IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage
 ms.assetid: e5b1b8b6-52a6-4ade-9a36-644abfa9f4b2
-author: gregvanl
+caps.latest.revision: 11
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: abe021cd06f9263335519e3059c8fda727bf34bd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 10d25cb9e58ac3eb38282a3ef2a2f631b6ba0e66
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896512"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62922808"
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesforlanguage"></a>IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Ruft ab, die Klassen mit dem angegebenen Attribut an, die in der angegebenen Programmiersprache implementiert werden.  
   
 ## <a name="syntax"></a>Syntax  
@@ -57,7 +59,7 @@ int GetAttributedClassesForLanguage (
 ## <a name="example"></a>Beispiel  
  Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) Schnittstelle.  
   
-```cpp  
+```cpp#  
 HRESULT CDebugSymbolProvider::GetAttributedClassesForLanguage(  
     GUID guidLanguage,  
     __in_z LPOLESTR pstrAttribute,  

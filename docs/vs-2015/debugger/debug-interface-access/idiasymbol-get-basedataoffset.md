@@ -1,49 +1,39 @@
 ---
 title: IDiaSymbol::get_baseDataOffset | Microsoft-Dokumentation
-ms.custom: ''
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.date: 11/04/2016
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: bb2ff5ed-9293-4c37-9741-654058b571c5
-caps.latest.revision: 6
-author: MikeJo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 83400d6f474693a2044a293c4802e937a22d6b76
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.workload:
+- multiple
+ms.openlocfilehash: 7496cb318abdc194ff832d4fbdbaf570e5cc68e7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51744741"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62572873"
 ---
 # <a name="idiasymbolgetbasedataoffset"></a>IDiaSymbol::get_baseDataOffset
-[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+Ruft den Offset für die Basisdaten ab.
 
-Ruft den Offset für die Basisdaten ab.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-HRESULT get_baseDataOffset(   
-   DWORD* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pRetVal`  
- [out] Ein Zeiger auf eine `DWORD` , die den Offset für die Basisdaten enthält.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+## <a name="syntax"></a>Syntax
 
+```C++
+HRESULT get_baseDataOffset(
+   DWORD* pRetVal);
+```
 
+#### <a name="parameters"></a>Parameter
+ `pRetVal`
 
+[out] Ein Zeiger auf eine `DWORD` , die den Offset für die Basisdaten enthält.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

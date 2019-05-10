@@ -1,30 +1,33 @@
 ---
 title: 'Idiasymbol:: Get_sourcefilename | Microsoft-Dokumentation'
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_sourceFileName method
 ms.assetid: 0f5dce88-829e-4df3-8acd-8d71076ad167
-author: mikejo5000
+caps.latest.revision: 11
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: 5b0dc635c5f1dff8d8e41426a72df61888c032d9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 258abfc908a065f7f1854cb7b52d4c16afbdd314
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400265"
 ---
 # <a name="idiasymbolgetsourcefilename"></a>IDiaSymbol::get_sourceFileName
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Ruft den Dateinamen der Quelldatei Kompiliereinheit ab.  
   
 ## <a name="syntax"></a>Syntax  
   
-```C++  
+```cpp#  
 HRESULT get_sourceFileName (   
    BSTR* pRetVal  
 );  
@@ -38,7 +41,7 @@ HRESULT get_sourceFileName ( 
  Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

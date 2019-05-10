@@ -1,37 +1,32 @@
 ---
-title: 'Vorgehensweise: Anfügen des Profilers an einen .NET-Dienst zum Sammeln von Anwendungsstatistiken über die Befehlszeile | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Fügen Sie den Profiler an einen .NET-Dienst zum Sammeln von Anwendungsstatistiken über die Befehlszeile | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: a0046c47-26c8-4bec-96a0-81da05e5104a
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8100f04471b0fd5886bed5c5ea815632cb0031db
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fc65d8afc75229caed524e5414abe4595d4de65a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51800834"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433629"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>Gewusst wie: Anfügen des Profilers an einen .NET-Dienst zum Sammeln von Anwendungsstatistiken über die Befehlszeile
+# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>Vorgehensweise: Fügen Sie den Profiler an einen .NET-Dienst zum Sammeln von Anwendungsstatistiken über die Befehlszeile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In diesem Thema wird beschrieben, wie der Profiler mit den Befehlszeilentools der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungstools an einen .NET Framework-Dienst angefügt wird und wie Sie mit der Samplingmethode Leistungsstatistiken sammeln können.  
 
 > [!NOTE]
->  Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen Windows Store-Apps neue Erfassungsmethoden. Siehe [Profilerstellungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+> Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen Windows Store-Apps neue Erfassungsmethoden. Siehe [Profilerstellungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
 >   
->  Die Befehlszeilentools der Profilerstellungstools befinden sich im Unterverzeichnis "\Team Tools\Performance Tools" des [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]-Installationsverzeichnisses. Auf 64-Bit-Computern sind 64-Bit- und 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen. Weitere Informationen finden Sie unter [Angeben des Pfads zu Tools für die Befehlszeile](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+> Die Befehlszeilentools der Profilerstellungstools befinden sich im Unterverzeichnis "\Team Tools\Performance Tools" des [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]-Installationsverzeichnisses. Auf 64-Bit-Computern sind 64-Bit- und 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen. Weitere Informationen finden Sie unter [Angeben des Pfads zu Tools für die Befehlszeile](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
 >   
->  Das Hinzufügen von Ebeneninteraktionsdaten zu einer Profilerstellung erfordert bestimmte Verfahren der Befehlszeilenprofilerstellungstools. Informationen hierzu finden Sie unter [Erfassen von Ebeneninteraktionsdaten](../profiling/adding-tier-interaction-data-from-the-command-line.md).  
+> Das Hinzufügen von Ebeneninteraktionsdaten zu einer Profilerstellung erfordert bestimmte Verfahren der Befehlszeilenprofilerstellungstools. Informationen hierzu finden Sie unter [Erfassen von Ebeneninteraktionsdaten](../profiling/adding-tier-interaction-data-from-the-command-line.md).  
 
  Wenn Sie Leistungsdaten von einem .NET Framework-Dienst erfassen möchten, müssen Sie [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) verwenden, um die entsprechenden Umgebungsvariablen zu initialisieren. Sie müssen dann den Computer neu starten, der den Dienst hostet, und diesen Computer zur Profilerstellung konfigurieren. Sie fügen dann den Profiler an den Dienstprozess an. Während der Profiler an den Dienst angefügt ist, können Sie die Datensammlung anhalten und fortsetzen.  
 
@@ -49,9 +44,9 @@ In diesem Thema wird beschrieben, wie der Profiler mit den Befehlszeilentools de
 
     **VSPerfClrEnv /globalsampleon** [**/samplelineoff**]  
 
-   -   **/globalsampleon** aktiviert das Sampling.  
+   - **/globalsampleon** aktiviert das Sampling.  
 
-   -   **/samplelineoff** deaktiviert die Zuweisung gesammelter Daten zu bestimmten Quellcodezeilen. Wenn diese Option angegeben wird, werden Daten nur Funktionen zugewiesen.  
+   - **/samplelineoff** deaktiviert die Zuweisung gesammelter Daten zu bestimmten Quellcodezeilen. Wenn diese Option angegeben wird, werden Daten nur Funktionen zugewiesen.  
 
 4. Starten Sie den Computer neu.  
 
@@ -68,7 +63,7 @@ In diesem Thema wird beschrieben, wie der Profiler mit den Befehlszeilentools de
      Sie können jede der folgenden Optionen zusammen mit der Option **/start:sample** verwenden.  
 
    > [!NOTE]
-   >  Die Option **/user** und **/crosssession** sind normalerweise für Dienste erforderlich.  
+   > Die Option **/user** und **/crosssession** sind normalerweise für Dienste erforderlich.  
 
    |                                 Option                                  |                                                                                                                                          Beschreibung                                                                                                                                           |
    |-------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -77,7 +72,6 @@ In diesem Thema wird beschrieben, wie der Profiler mit den Befehlszeilentools de
    |    [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`     |                                                                                                           Gibt einen Windows-Leistungsindikator an, dessen Daten während der Profilerstellung gesammelt werden sollen.                                                                                                            |
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                         Verwenden Sie nur **/wincounter**. Gibt die Anzahl von Millisekunden zwischen Ereignissen bei der Datensammlung mit Windows-Leistungsindikatoren an. Der Standardwert ist 500 ms.                                                                          |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                            Gibt ein ETW-Ereignis (Ereignisablaufverfolgung für Windows) an, dessen Daten während der Profilerstellung gesammelt werden sollen. ETW-Ereignisse werden in einer separaten Datei (.etl) gesammelt.                                                                            |
-
 
 7. Starten Sie den Dienst bei Bedarf.  
 
@@ -96,14 +90,14 @@ In diesem Thema wird beschrieben, wie der Profiler mit den Befehlszeilentools de
    |[/sys](../profiling/sys-vsperfcmd.md)[`:``Interval`]|Ändert das Samplingereignis in Systemaufrufe des Prozesses an den Betriebssystem-Kernel (syscalls). Wenn `Interval` angegeben wird, wird dadurch die Anzahl der Aufrufe zwischen den Samplings angegeben. Der Standardwert ist 10.|  
    |[/counter](../profiling/counter.md) **:** `Config`|Ändert das Samplingereignis in den Prozessorleistungsindikator und das Samplingintervall in das in `Config` angegebene Intervall.|  
 
-   -   **/targetclr:** `Version` gibt die Version der CLR (Common Language Runtime) für die Profilerstellung an, wenn in einer Anwendung mehrere Laufzeitversionen geladen wurden. Dies ist optional.  
+   - **/targetclr:** `Version` gibt die Version der CLR (Common Language Runtime) für die Profilerstellung an, wenn in einer Anwendung mehrere Laufzeitversionen geladen wurden. Dies ist optional.  
 
 ## <a name="controlling-data-collection"></a>Steuern der Datenauflistung  
  Wenn der Dienst ausgeführt wird, können Sie die **VSPerfCmd.exe**-Optionen verwenden, um das Schreiben der Daten in die Profilerdatendatei zu starten und zu beenden. Durch das Steuern der Datensammlung können Sie Daten zu einem bestimmten Teil der Programmausführung sammeln, z. B. zum Starten oder Schließen der Anwendung.  
 
 #### <a name="to-start-and-stop-data-collection"></a>So starten und beenden Sie die Datensammlung  
 
--   Die folgenden Optionenpaare **VSPerfCmd** starten und beenden die Datensammlung. Geben Sie jede Option in einer eigenen Befehlszeile an. Sie können die Datensammlung mehrmals aktivieren und deaktivieren.  
+- Die folgenden Optionenpaare **VSPerfCmd** starten und beenden die Datensammlung. Geben Sie jede Option in einer eigenen Befehlszeile an. Sie können die Datensammlung mehrmals aktivieren und deaktivieren.  
 
     |Option|Beschreibung|  
     |------------|-----------------|  
@@ -118,27 +112,24 @@ In diesem Thema wird beschrieben, wie der Profiler mit den Befehlszeilentools de
 
 #### <a name="to-end-a-profiling-session"></a>So beenden Sie eine Profilerstellungssitzung  
 
-1.  Führen Sie einen der folgenden Schritte aus, um den Profiler von der Zielanwendung zu trennen:  
+1. Führen Sie einen der folgenden Schritte aus, um den Profiler von der Zielanwendung zu trennen:  
 
-    -   Beenden Sie den Dienst.  
+    - Beenden Sie den Dienst.  
 
          - oder -   
 
-    -   Geben Sie **VSPerfCmd /detach** ein.  
+    - Geben Sie **VSPerfCmd /detach** ein.  
 
-2.  Schließen Sie den Profiler. Typ:  
+2. Schließen Sie den Profiler. Typ:  
 
      **VSPerfCmd /shutdown**  
 
-3.  (Optional) Löschen Sie die Umgebungsvariablen für die Profilerstellung. Typ:  
+3. (Optional) Löschen Sie die Umgebungsvariablen für die Profilerstellung. Typ:  
 
      **VSPerfClrEnv /globaloff**  
 
-4.  Starten Sie den Computer neu.  
+4. Starten Sie den Computer neu.  
 
 ## <a name="see-also"></a>Siehe auch  
  [Profilerstellungsdienste](../profiling/command-line-profiling-of-services.md)   
  [Datenansichten der Profiler-Samplingmethode](../profiling/profiler-sampling-method-data-views.md)
-
-
-

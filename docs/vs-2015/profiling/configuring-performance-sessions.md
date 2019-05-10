@@ -1,14 +1,9 @@
 ---
 title: Konfigurieren von Leistungssitzungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - common tasks, performance
 - common tasks, profiling tools
@@ -18,13 +13,13 @@ ms.assetid: e1c3ba41-ffca-4edf-9a7f-8a5a9244ef9b
 caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 280d9023167b4d83dfb8b0137301219a518521b9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d67801cedded1ccf66544e21257866feda828e31
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790395"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434330"
 ---
 # <a name="configuring-performance-sessions"></a>Konfigurieren von Leistungssitzungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51790395"
 Mithilfe von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Profilerstellungstools können Sie eine Vielzahl von Leistungsdaten für eine große Anzahl von Anwendungstypen sammeln. In diesem Abschnitt erfahren Sie, wie Sie den Leistungsassistententen und die Eigenschaften der Leistungssitzung sowie der Zielbinärdatei einsetzen, um Profilerstellungstools für das Sammeln von für Sie interessanten Daten zu konfigurieren. Die Konfigurationseigenschaften von Profilerstellungstools lassen sich außerdem dazu verwenden, um zu steuern, wie viele Daten während einer Profilerstellung gesammelt werden. Weitere Informationen finden Sie unter [Steuern der Datensammlung](../profiling/controlling-data-collection.md).  
   
 > [!NOTE]
->  In vielen Fällen können Sie mithilfe der Standardeigenschaften des Leistungsassistenten das Sammeln von Profilerstellungsdaten effizient steuern. Weitere Informationen finden Sie unter [Beginners Guide to Performance Profiling (Einführung in die Leistungsprofilerstellung)](../profiling/beginners-guide-to-performance-profiling.md) und [Getting Started (Erste Schritte)](../profiling/getting-started-with-performance-tools.md).  
+> In vielen Fällen können Sie mithilfe der Standardeigenschaften des Leistungsassistenten das Sammeln von Profilerstellungsdaten effizient steuern. Weitere Informationen finden Sie unter [Beginners Guide to Performance Profiling (Einführung in die Leistungsprofilerstellung)](../profiling/beginners-guide-to-performance-profiling.md) und [Getting Started (Erste Schritte)](../profiling/getting-started-with-performance-tools.md).  
   
 ## <a name="common-tasks"></a>Allgemeine Aufgaben  
   
@@ -47,6 +42,3 @@ Mithilfe von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Profilerstellungstools
   
 ## <a name="see-also"></a>Siehe auch  
  [Performance Explorer (Leistungs-Explorer)](../profiling/performance-explorer.md)
-
-
-

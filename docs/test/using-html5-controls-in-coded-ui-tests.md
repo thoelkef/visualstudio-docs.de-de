@@ -1,20 +1,18 @@
 ---
 title: Verwenden von HTML5-Steuerelementen in Tests der programmierten UI
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a603a662c9007ab3ee0e66df0b23959bfdce83fb
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: ae861814a7219bfca1d6a074316910d459fc9999
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896189"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973104"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Verwenden von HTML5-Steuerelementen in Tests der programmierten UI
 
@@ -24,7 +22,7 @@ Bei Tests der programmierten UI werden einige HTML5-Steuerelemente unterstützt,
 
  **Anforderungen**
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
 > [!WARNING]
 > In Versionen vor Internet Explorer 10 konnten Tests der programmierten UI im Vergleich zum Internet Explorer-Prozess mit einer höheren Berechtigungsstufe ausgeführt werden. Beim Ausführen von Tests der programmierten UI in Internet Explorer 10 müssen sowohl der Prozess für Tests der programmierten UI als auch der Internet Explorer-Prozess dieselbe Berechtigungsstufe aufweisen. Dies liegt an sichereren AppContainer-Features in Internet Explorer 10.
@@ -34,7 +32,7 @@ Bei Tests der programmierten UI werden einige HTML5-Steuerelemente unterstützt,
 
 ## <a name="audio-control"></a>Audio-Steuerelement
 
-**Audiosteuerelement:** Aktionen im HTML5-Audiosteuerelement werden ordnungsgemäß aufgezeichnet und wiedergegeben.
+**Audio-Steuerelement:** Aktionen im HTML5-Audiosteuerelement werden ordnungsgemäß aufgezeichnet und wiedergegeben.
 
 ![HTML5-Audiosteuerelement](../test/media/codedui_html5_audio.png)
 
@@ -55,7 +53,6 @@ Unter [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioEle
 
 > [!NOTE]
 > Die Zeitdauer für das Suchen und Anhalten kann erheblich sein. Während der Wiedergabe wartet der Test der programmierten UI bis zur in `(TimeSpan)` angegebenen Zeit, bevor die Audiodatei angehalten wird. Wenn die angegebene Zeit unter bestimmten Ausnahmefällen verstrichen ist, bevor der Befehl „Pause“ aktiviert wurde, wird eine Ausnahme zurückgegeben.
-
 
 ## <a name="video-control"></a>Videosteuerelement
  **Videosteuerelement:** Aktionen im HTML5-Videosteuerelement werden ordnungsgemäß aufgezeichnet und wiedergegeben.

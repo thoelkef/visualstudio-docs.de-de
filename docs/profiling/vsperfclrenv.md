@@ -10,15 +10,15 @@ helpviewer_keywords:
 - VSPerfCLREnv tool
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae0e54aff0e4206bd5c79c30c810dc6ba497ddf3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 119aa0a710218635cca945372ba9ea6fb6d4d27b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822884"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 
@@ -56,7 +56,7 @@ Das folgende Beispiel schließt Ebeneninteraktionsdaten in eine Profilerstellung
 VSPerfCLREnv /GlobalSampleOn
 VSPerfCLREnv /GlobalInteractionOn
 REM Restart the computer and start the service
-VSPerfCmd /Start:Sample /Output:MyService.exe.vsp 
+VSPerfCmd /Start:Sample /Output:MyService.exe.vsp
 VSPerfCmd /Attach:MyService.exe
 ```
 
@@ -103,7 +103,7 @@ Um die Profilerstellung für einen verwalteten Dienst wie die ASP.NET-Webanwendu
 |**Off**|Löscht Umgebungsvariablen für die Standard-.NET-Profilerstellung. Verwenden Sie diese Option, wenn die nicht globalen VSPerfClrEnv-Optionen zum Festlegen der Profiler-Umgebungsvariablen verwendet wurden.|
 |**GlobalOff**|Löscht Umgebungsvariablen für die globale .NET-Profilerstellung. Verwenden Sie diese Option, wenn die Anwendung vom Betriebssystem anstatt vom Profiler gestartet wurde.|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Anmerkungen
 
 Diese Optionen sind für die Profilerstellung einer verwalteten Anwendung nicht erforderlich, wenn die Anwendung mithilfe des Leistungs-Explorers in der IDE gestartet wurde. Der Leistungs-Explorer legt alle erforderlichen Umgebungseinstellungen für Sie fest.
 

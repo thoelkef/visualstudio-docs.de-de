@@ -1,14 +1,9 @@
 ---
 title: Grundlagen zu Leistungserfassungsmethoden | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.wizard.methodpage
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: ea4881fd-bd04-4875-9b7b-28490d6706f9
 caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1a941b3c9dff3a80adea61026c6176dcf4c44361
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e398d7e5e297daa68663902efb8a9fa0775c86fa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809050"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431633"
 ---
 # <a name="understanding-performance-collection-methods"></a>Grundlagen zu Leistungserfassungsmethoden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51809050"
 Von den Profilerstellungstools für Visual Studio werden fünf Methoden zum Sammeln von Leistungsdaten bereitgestellt. In diesem Thema werden die verschiedenen Methoden beschrieben sowie einige Szenarien aufgeführt, in denen die Datensammlung mithilfe einer bestimmten Methode erfolgen kann.  
   
 > [!NOTE]
->  Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen Windows Store-Apps neue Erfassungsmethoden. Siehe [Profilerstellungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+> Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen Windows Store-Apps neue Erfassungsmethoden. Siehe [Profilerstellungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
@@ -43,7 +38,7 @@ Von den Profilerstellungstools für Visual Studio werden fünf Methoden zum Samm
   
  Mit einigen Profilerstellungsmethoden können auch weitere Daten gesammelt werden, z. B. Software- und Hardwareleistungsindikatoren. Weitere Informationen finden Sie unter [Sammeln zusätzlicher Leistungsdaten](../profiling/collecting-additional-performance-data.md).  
   
-##  <a name="sampling"></a> Sampling  
+## <a name="sampling"></a> Sampling  
  Bei der Samplingmethode für die Profilerstellung werden statistische Daten zu den Aufgaben gesammelt, die während einer Profilerstellung von einer Anwendung ausgeführt wurden. Die Samplingmethode ist einfach und wirkt sich kaum auf die Ausführung der Anwendungsmethoden aus.  
   
  Das Sampling ist die Standardmethode der Profilerstellungstools von Visual Studio. Es eignet sich für folgende Zwecke:  
@@ -62,7 +57,7 @@ Von den Profilerstellungstools für Visual Studio werden fünf Methoden zum Samm
   
   [Datenansichten der Profiler-Samplingmethode](../profiling/profiler-sampling-method-data-views.md)  
   
-##  <a name="instrumentation"></a> Instrumentierung  
+## <a name="instrumentation"></a> Instrumentierung  
  Bei der Instrumentierungsmethode zur Profilerstellung werden ausführliche Zeitsteuerungsinformationen für die Funktionsaufrufe in der Anwendung gesammelt, für die das Profil erstellt wird. Mögliche Anwendungsbereiche der instrumentierten Profilerstellung:  
   
 - Untersuchung von Eingabe/Ausgabe-Engpässen (beispielsweise Datenträger-E/A)  
@@ -87,7 +82,7 @@ Von den Profilerstellungstools für Visual Studio werden fünf Methoden zum Samm
   
   [Datenansichten der Instrumentierungsmethode](../profiling/instrumentation-method-data-views.md)  
   
-##  <a name="concurrency"></a> Parallelität  
+## <a name="concurrency"></a> Parallelität  
  Bei der Parallelitätsprofilerstellung werden Informationen zu Multithreadanwendungen gesammelt. Bei der Profilerstellung für Ressourcenkonflikte werden immer dann ausführliche Aufruflisteninformationen gesammelt, wenn von konkurrierenden Threads auf den Zugriff auf eine freigegebene Ressource gewartet werden muss. Bei der Parallelitätsschnellansicht werden zusätzlich allgemeinere Informationen zur Interaktion der Multithreadanwendung mit sich selbst, der Hardware, dem Betriebssystem und anderen Prozessen auf dem Hostcomputer gesammelt:  
   
 - Ressourcenkonfliktberichte enthalten für die Module, Funktionen, Quellcodezeilen und Anweisungen, in denen die Verzögerung aufgetreten ist, die Gesamtanzahl von Konflikten sowie die Gesamtwartezeit für eine Ressource. Die aufgetretenen Konflikte werden zudem in Zeitachsendiagrammen dargestellt.  
@@ -102,7 +97,7 @@ Von den Profilerstellungstools für Visual Studio werden fünf Methoden zum Samm
   
   [Nebenläufigkeitsschnellansicht](../profiling/concurrency-visualizer.md)  
   
-##  <a name="net_memory"></a> .NET-Arbeitsspeicher  
+## <a name="net_memory"></a> .NET-Arbeitsspeicher  
  Bei der .NET-Speicherbelegungsmethode zur Profilerstellung wird der Prozessor des Computers bei jeder Belegung eines .NET Framework-Objekts in einer Anwendung unterbrochen, für die das Profil erstellt wird. Wenn auch Objektlebensdauerdaten erfasst werden, unterbricht der Profiler den Prozessor nach jeder .NET Framework-Garbage Collection.  
   
  Vom Profiler werden Informationen zu Typ, Größe und Anzahl der Objekte gesammelt, die bei einer Speicherbelegung erstellt oder bei einer Garbage Collection zerstört wurden.  
@@ -123,7 +118,7 @@ Von den Profilerstellungstools für Visual Studio werden fünf Methoden zum Samm
   
   [.NET-Arbeitsspeicherdatenansichten](../profiling/dotnet-memory-data-views.md)  
   
-##  <a name="tier_interaction"></a> Ebeneninteraktion  
+## <a name="tier_interaction"></a> Ebeneninteraktion  
  Bei der Profilerstellung für die Ebeneninteraktion werden einer Profilerstellungsdatendatei Informationen zu synchronen [!INCLUDE[vstecado](../includes/vstecado-md.md)]-Aufrufen zwischen einer [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Seite oder einer anderen Anwendung und einer [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]-Datenbank hinzugefügt. Die Daten umfassen Anzahl und Zeit der Aufrufe sowie die höchsten und niedrigsten Zeiten. Ebeneninteraktionsdaten können den Profilerstellungsdaten hinzugefügt werden, die mithilfe der Sampling-, Instrumentierungs-, .NET-Speicher- oder Parallelitätsmethode gesammelt wurden.  
   
  ![Profilerstellungsdaten der Ebeneninteraktion](../profiling/media/tierinteraction-profilingtools.png "TierInteraction_ProfilingTools")  
@@ -136,6 +131,3 @@ Von den Profilerstellungstools gesammelte Ebeneninteraktionsdaten
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Sammeln von Leistungsdaten für eine Website](../profiling/how-to-collect-performance-data-for-a-web-site.md)   
  [Einführung in die Leistungsprofilerstellung](../profiling/beginners-guide-to-performance-profiling.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: -ResetSkipPkgs („devenv.exe“) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - /ResetSkipPkgs Devenv switch
 - Devenv, /ResetSkipPkgs switch
@@ -17,18 +12,17 @@ ms.assetid: 7ece64f9-cfa4-4b34-b0d9-1c338b9557b3
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 2345c675f55be5c01ea65f5266d4b73bff30feed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 44e2cb42bf6bf8c1a61512713e9fc87cbe8f0901
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190362"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648509"
 ---
 # <a name="resetskippkgs-devenvexe"></a>/ResetSkipPkgs (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Löscht alle Optionen, damit bei Benutzern, die keine problematischen VSPackages laden möchten, das Laden hinzugefügter VSPackages übersprungen wird, und startet dann [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
 ## <a name="syntax"></a>Syntax  
@@ -37,7 +31,7 @@ Löscht alle Optionen, damit bei Benutzern, die keine problematischen VSPackages
 Devenv /ResetSkipPkgs  
 ```  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Das Tag „SkipLoading“ deaktiviert das Laden eines VSPackage, während das Leeren des Tags das Laden des VSPackage erneut aktiviert.  
   
 ## <a name="example"></a>Beispiel  
@@ -49,6 +43,3 @@ Devenv.exe /ResetSkipPkgs
   
 ## <a name="see-also"></a>Siehe auch  
  [Devenv-Befehlszeilenschalter](../../ide/reference/devenv-command-line-switches.md)
-
-
-

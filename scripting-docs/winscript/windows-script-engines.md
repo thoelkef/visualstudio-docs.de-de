@@ -2,7 +2,6 @@
 title: Windows Script-Engines | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,25 +13,25 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 16e699ee789ae10883152b5d8aa7d8ffee0ddffd
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 1acbc364e9ee2a5a4911564eb6d2c7d4c34de458
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572620"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415997"
 ---
 # <a name="windows-script-engines"></a>Windows Script-Engines
 Um eine Windows Script-Engine zu implementieren, erstellen Sie ein OLE COM-Objekt, das die folgenden Schnittstellen unterstützt.  
   
 |||  
 |-|-|  
-|Interface|description|  
+|Interface|Beschreibung|  
 |[IActiveScript](../winscript/reference/iactivescript.md)|Bietet grundlegende Skriptmöglichkeiten. Die Implementierung dieser Schnittstelle ist erforderlich.|  
 |[IActiveScriptParse](../winscript/reference/iactivescriptparse.md)|Bietet die Möglichkeit, Skripttext hinzuzufügen, Ausdrücke auszuwerten usw. Die Implementierung dieser Schnittstelle ist optional. Wenn sie allerdings nicht implementiert ist, muss die Skript-Engine eine der IPersist*-Schnittstellen implementieren, um ein Skript zu laden.|  
-|IPersist*|Bietet Persistenzunterstützung. Die Implementierung mindestens einer der folgenden Schnittstellen ist erforderlich, wenn [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) nicht implementiert ist.<br /><br /> IPersistStorage: bietet Unterstützung für das Attribut DATA={url} im OBJECT-Tag.<br /><br /> IPersistStreamInit: bietet Unterstützung für das gleiche wie `IPersistStorage` sowie für das Attribut DATA="string-encoded byte stream" im OBJECT-Tag.<br /><br /> IPersistPropertyBag: bietet Unterstützung für das Attribut PARAM= im OBJECT-Tag.|  
+|IPersist*|Bietet Persistenzunterstützung. Die Implementierung mindestens einer der folgenden Schnittstellen ist erforderlich, wenn [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) nicht implementiert ist.<br /><br /> IPersistStorage: Bietet Unterstützung für das Attribut „DATA={url}“ im OBJECT-Tag.<br /><br /> IPersistStreamInit: Bietet Unterstützung für das gleiche Attribut wie `IPersistStorage` sowie für das Attribut „DATA="string-encoded byte stream"“ im OBJECT-Tag.<br /><br /> IPersistPropertyBag: Bietet Unterstützung für das Attribut „PARAM=“ im OBJECT-Tag.|  
   
 > [!NOTE]
->  Es ist möglich, dass die Skript-Engine nie aufgerufen wird, um einen Skriptzustand mit `IPersist*` zu speichern oder wiederherzustellen. Stattdessen wird [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) verwendet, indem [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) aufgerufen wird, um ein leeres Skript zu erstellen. Anschließend werden Scriptlets hinzugefügt und mit [IActiveScriptParse::AddScriptlet](../winscript/reference/iactivescriptparse-addscriptlet.md) mit Ereignissen verbunden, und allgemeiner Code wird mit [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) hinzugefügt. Nichtsdestoweniger sollte eine Skript-Engine mindestens eine `IPersist*`-Schnittstelle (bevorzugt `IPersistStreamInit`) vollständig implementieren, da andere Hostanwendungen diese möglicherweise verwenden möchten.  
+> Es ist möglich, dass die Skript-Engine nie aufgerufen wird, um einen Skriptzustand mit `IPersist*` zu speichern oder wiederherzustellen. Stattdessen wird [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) verwendet, indem [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) aufgerufen wird, um ein leeres Skript zu erstellen. Anschließend werden Scriptlets hinzugefügt und mit [IActiveScriptParse::AddScriptlet](../winscript/reference/iactivescriptparse-addscriptlet.md) mit Ereignissen verbunden, und allgemeiner Code wird mit [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) hinzugefügt. Nichtsdestoweniger sollte eine Skript-Engine mindestens eine `IPersist*`-Schnittstelle (bevorzugt `IPersistStreamInit`) vollständig implementieren, da andere Hostanwendungen diese möglicherweise verwenden möchten.  
   
  In den folgenden Abschnitten wird die Implementierung einer Windows-Skript-Engine ausführlicher beschrieben.  
   
@@ -43,7 +42,7 @@ Um eine Windows Script-Engine zu implementieren, erstellen Sie ein OLE COM-Objek
   
 |||  
 |-|-|  
-|Kategorie|description|  
+|Kategorie|Beschreibung|  
 |CATID_ActiveScript|Gibt an, dass die Klassenbezeichner (CLIDs) Windows-Skript-Engines sind, die mindestens die [IActiveScript](../winscript/reference/iactivescript.md)-Schnittstelle und einen Persistenzmechanismus (die Schnittstellen `IPersistStorage`, `IPersistStreamInit` oder IPersistPropertyBag) unterstützen|  
 |CATID_ActiveScriptParse|Gibt an, dass die CLIDs Windows-Skript-Engines sind, die mindestens die Schnittstellen [IActiveScript](../winscript/reference/iactivescript.md) und [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) unterstützen|  
   
@@ -54,7 +53,7 @@ Um eine Windows Script-Engine zu implementieren, erstellen Sie ein OLE COM-Objek
   
 |||  
 |-|-|  
-|Zustand|description|  
+|Zustand|Beschreibung|  
 |nicht initialisierte|Das Skript wurde nicht mit der Schnittstelle IPersist* initialisiert oder geladen, oder es wurde keine [IActiveScriptSite](../winscript/reference/iactivescriptsite.md)-Schnittstelle festgelegt. Die Skript-Engine kann in diesem Zustand prinzipiell nicht verwendet werden, bis das Skript geladen wird.|  
 |initialisiert|Das Skript wurde mit der `IPersist*`-Schnittstelle initialisiert und die [IActiveScriptSite](../winscript/reference/iactivescriptsite.md)-Schnittstelle ist festgelegt, aber nicht mit Hostobjekten und Senkereignissen verbunden. Beachten Sie, dass dieser Zustand einfach bedeutet, dass die Methoden `IPersist*::Load`, `IPersist*::InitNew` oder [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) abgeschlossen wurden, und dass die [IActiveScript::SetScriptSite](../winscript/reference/iactivescript-setscriptsite.md)-Methode aufgerufen wurde. Die Engine kann in diesem Modus keinen Code ausführen. Die Engine fügt Code einer Warteschlange hinzu, den der Host mit der [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md)-Methode übergibt, und führt den Code aus, nachdem es zum Anfangszustand übergegangen ist.<br /><br /> Weil Sprachen bei der Semantik stark variieren können, ist es nicht erforderlich, dass Skript-Engines diesen Statusübergang unterstützen. Engines, die die [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md)-Methode unterstützen müssen diesen Statusübergang allerdings unterstützen. Hosts müssen sich auf diesen Übergang vorbereiten und entsprechende Maßnahmen ergreifen: die aktuelle Skript-Engine veröffentlichen, neue Skript-Engines erstellen und `IPersist*::Load`, `IPersist*::InitNew` oder [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) aufrufen (und möglicherweise auch noch [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md)). Das Verwenden des Übergangs kann als Optimierung der oben stehenden Schritte angesehen werden. Beachten Sie, dass alle Informationen, die die Skript-Engine zu den Namen der benannten Elemente abgerufen hat, und die Typinformationen, die die benannten Elemente beschreiben, ihre Gültigkeit nicht verlieren.<br /><br /> Da Sprachen deutlich variieren, ist die Definition der Semantik dieses Übergangs schwierig. Es muss mindestens die Verbindung der Skript-Engine mit allen Ereignissen getrennt werden. Zudem muss die Engine alle SCRIPTINFO_IUNKNOWN-Zeiger freigeben, die durch den Aufruf der [IActiveScriptSite::GetItemInfo](../winscript/reference/iactivescriptsite-getiteminfo.md)-Methode erhalten wurden. Die Engine muss die Zeiger erneut abrufen, nachdem das Skript ausgeführt wurde. Die Skript-Engine sollte darüber hinaus das Skript in den ursprünglichen Zustand zurückversetzen, der der Sprache angemessen ist. VBScript setzt z.B. alle Variablen zurück und behält jeden Code bei, der dynamisch durch den Aufruf von [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) mit festgelegtem SCRIPTTEXT_ISPERSISTENT-Flag hinzugefügt wurde. Andere Sprachen müssen möglicherweise aktuelle Werte beibehalten (wie z.B. Lisp, da es keine Trennung von Code und Daten gibt) oder in einen bekannten Zustand zurückversetzt werden (dies gilt auch für Sprachen mit statisch initialisierten Variablen).<br /><br /> Beachten Sie, dass der Übergang zum Zustand „Gestartet“ die gleiche Semantik (d.h. die Skript-Engine sollte im gleichen Zustand bleiben) wie ein Aufruf von `IPersist*::Save` haben sollte, um die Skript-Engine zu speichern. Anschließend sollte `IPersist*::Load` aufgerufen werden, um eine neue Skript-Engine zu laden. Diese Aktionen sollten die gleiche Semantik wie [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md) aufweisen. Skript-Engines, die `IActiveScript::Clone` oder `IPersist*` noch nicht unterstützen, sollten genau abwägen, wie sich der Übergang zum Zustand „Gestartet“ verhalten sollte, sodass ein derartiger Übergang nicht gegen die oben stehenden Bedingungen verstößt, wenn die Unterstützung für `IActiveScript::Clone` oder `IPersist*` später hinzugefügt wurde.<br /><br /> Während dieses Übergangs zum Zustand „Gestartet“ unterbricht die Skript-Engine die Verbindung zu Ereignissenken, nachdem die entsprechenden Destruktoren usw. im Skript ausgeführt wurden. Um die Ausführung dieser Destruktoren zu verhindern, kann der Host das Skript zunächst in den Zustand „Getrennt“ versetzen, bevor es zum Zustand „Gestartet“ übergeht.<br /><br /> Verwenden Sie [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md), um einen ausgeführten Skriptthread abzubrechen, ohne darauf zu warten, dass aktuelle Ereignisse usw. fertig ausgeführt werden.|  
 |gestartet|Der Übergang vom Zustand „Initialisiert“ zum Zustand „Gestartet“ führt dazu, dass die Engine jeden Code ausführt, der im Zustand „Initialisiert“ der Warteschlange hinzugefügt wurde. Die Engine kann Code im Zustand „Gestartet“ ausführen, aber es besteht keine Verbindung zu Ereignissen, die mit der [IActiveScript::AddNamedItem](../winscript/reference/iactivescript-addnameditem.md)-Methode hinzugefügt wurden. Die Engine kann Code ausführen, indem sie die IDispatch-Schnittstelle aufruft, die von der [IActiveScript::GetScriptDispatch](../winscript/reference/iactivescript-getscriptdispatch.md)-Methode erhalten wurde, oder durch einen Aufruf von [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md). Es ist möglich, dass weitere Initialisierungen im Hintergrund fortlaufen (progressives Laden), und dass ein Aufruf der [IActiveScript::SetScriptState](../winscript/reference/iactivescript-setscriptstate.md)-Methode mit festgelegtem SCRIPTSTATE_CONNECTED-Flag dazu führt, dass das Skript blockiert ist, bis die Initialisierung abgeschlossen ist.|  

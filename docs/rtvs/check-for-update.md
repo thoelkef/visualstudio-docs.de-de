@@ -2,20 +2,18 @@
 title: Aktuelle Version von R Tools
 description: Überprüfen der Version von R-Tools für Visual Studio und Installieren von Updates.
 ms.date: 07/23/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 088d3048f33b998ebdb45b7a35b8b395cb3f525e
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 107e39e147c62f73c5656f3a398fbca231620c67
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39230982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62423977"
 ---
 # <a name="rtvs-current-version"></a>Aktuelle Version von RTVS
 
@@ -29,4 +27,4 @@ Für Visual Studio 2015 steht der neueste Installer unter [aka.ms/rtvs-current](
 
 Informationen zu Visual Studio- und Windows-Anforderungen finden Sie unter [Installation](installing-r-tools-for-visual-studio.md).
 
-Updates zu Microsoft R Open und Microsoft Machine Learning Server (früher Microsoft R Server) finden Sie unter [Microsoft R-Produkte](http://aka.ms/rtvs-msft-r).
+Updates zu Microsoft R Open und Microsoft Machine Learning Server (früher Microsoft R Server) finden Sie unter: [Microsoft R-Produkte](https://aka.ms/rtvs-msft-r).

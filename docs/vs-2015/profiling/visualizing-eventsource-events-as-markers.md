@@ -1,25 +1,20 @@
 ---
 title: Visualisieren von EventSource-Ereignissen als Marker | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 3a10022a-5c37-48b1-a833-dd35902176b6
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c39f137299c1f229de8c3c6dc8d7329cba6033cb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ffbd5568d35b59e262577102a9368089fdcac6be
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431094"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>Visualisieren von EventSource-Ereignissen als Marker
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +26,11 @@ Mit der Nebenläufigkeitsschnellansicht können EventSource-Ereignisse als Marke
   
 ### <a name="marker-type"></a>Markertyp  
   
-1.  Ereignisse mit dem [Opcode](http://msdn.microsoft.com/en-us/d97953df-669b-4c55-b1a8-925022b339b7) win:Start oder win:Stop werden als Anfang bzw. Ende eines Bereichs behandelt.  Geschachtelte oder überlappende Bereiche können nicht angezeigt werden. Ereignispaare, die mit einem Thread beginnen und mit einem anderen enden, können nicht angezeigt werden.  
+1. Ereignisse mit dem [Opcode](http://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) win:Start oder win:Stop werden als Anfang bzw. Ende eines Bereichs behandelt.  Geschachtelte oder überlappende Bereiche können nicht angezeigt werden. Ereignispaare, die mit einem Thread beginnen und mit einem anderen enden, können nicht angezeigt werden.  
   
-2.  Ein Ereignis, mit einem anderen Opcode als win:Start oder win:Stop wird als Flag-Marker behandelt, sofern für die [Ebene](http://msdn.microsoft.com/en-us/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (Feld EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) nicht win:Verbose oder höher festgelegt ist.  
+2. Ein Ereignis, mit einem anderen Opcode als win:Start oder win:Stop wird als Flag-Marker behandelt, sofern für die [Ebene](http://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (Feld EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) nicht win:Verbose oder höher festgelegt ist.  
   
-3.  In allen anderen Fällen wird das Ereignis als Meldung behandelt.  
+3. In allen anderen Fällen wird das Ereignis als Meldung behandelt.  
   
 ### <a name="importance"></a>Wichtigkeit  
  In der folgenden Tabelle wird das Verhältnis zwischen Ereignisebene und Markerwichtigkeit definiert.  
@@ -99,10 +94,7 @@ Mit der Nebenläufigkeitsschnellansicht können EventSource-Ereignisse als Marke
  Verwenden Sie das Feld cvSpanId, eine ganze Zahl, um Ereignisse passend zusammenzustellen. Der Wert der einzelnen Paare aus Start-/Stoppereignissen, die einen Bereich darstellen, müssen eindeutig sein. Für nebenläufigen Code müssen in der Regel Synchronisierungsprimitive wie <xref:System.Threading.Interlocked.Exchange%2A> verwendet werden, um sicherzustellen, dass der Schlüssel (der für CvSpanID verwendete Wert) richtig angegeben wird.  
   
 > [!NOTE]
->  Wenn zum Schachteln von Bereichen SpanID verwendet wird, wird nicht unterstützt, dass diese sich auf demselben Thread überlappen oder auf einem Thread beginnen und auf einem anderen enden.  
+> Wenn zum Schachteln von Bereichen SpanID verwendet wird, wird nicht unterstützt, dass diese sich auf demselben Thread überlappen oder auf einem Thread beginnen und auf einem anderen enden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Concurrency Visualizer Markers (Nebenläufigkeitsschnellansichtsmarker)](../profiling/concurrency-visualizer-markers.md)
-
-
-

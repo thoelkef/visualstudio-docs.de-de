@@ -5,17 +5,15 @@ ms.topic: reference
 ms.assetid: 3794e88b-4d3d-4e7a-ade6-8208eabe3eae
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fd679e9275aedc8db9f65864a240e1c12e4faffc
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 1b9f10c171d8369adfe460424b9b6abe047b1a24
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089463"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458255"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>Mindestens eines der ausgewählten Datenbankobjekte gibt ein Schema zurück, das nicht mit dem Schema der Zielklasse übereinstimmt.
 
@@ -25,11 +23,10 @@ Wenn Sie Datenbankobjekte auf vorhandene Entitätsklassen ziehen, müssen die vo
 
 ## <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler
 
-1. Klicken Sie auf **OK** um das Dialogfeld zu schließen.
+1. Klicken Sie auf **OK**, um das Dialogfeld zu schließen.
 
-2. Wählen Sie ein Objekt, das Daten zurückgibt, die das Schema der Zielklasse entspricht (die Klasse das Datenbankobjekt, das in abgelegt wird wird die **O/R Designer**).
+2. Wählen Sie ein Datenbankobjekt aus, das Daten zurückgibt, die dem Schema der Zielklasse entsprechen (der Klasse, auf die das Datenbankobjekt im **O/R-Designer** abgelegt wird).
 
 ## <a name="see-also"></a>Siehe auch
 
-- [O/R-Designer-Meldungen](../data-tools/o-r-designer-messages.md)
 - [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

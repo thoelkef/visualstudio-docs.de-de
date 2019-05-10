@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Hinzufügen, Aktualisieren oder Entfernen eines WCF-Datendienstverweises'
+title: 'Vorgehensweise: Hinzufügen, Aktualisieren oder Entfernen eines WCF-Datendienstverweises'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +11,17 @@ helpviewer_keywords:
 ms.assetid: 892ebf37-3af4-472e-8744-92837677d611
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9099c1ee0b1ed3af108c11792f7629453dfbf7c6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: e1fd14dcbe2ed5840fdaa2da755fe6a95d7c8e68
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819042"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402920"
 ---
-# <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Gewusst wie: hinzufügen, aktualisieren oder entfernen ein WCF-Datendienstverweises
+# <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Vorgehensweise: Hinzufügen, Aktualisieren oder Entfernen eines WCF-Datendienstverweises
 Ein *Dienstverweis* ermöglicht einem Projekt für den Zugriff auf eine oder mehrere [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Verwenden der **Hinzufügen eines Dienstverweises** Dialogfeld zu suchende [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] in der aktuellen Projektmappe lokal auf einem lokalen Netzwerk oder im Internet.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
@@ -32,24 +30,24 @@ Ein *Dienstverweis* ermöglicht einem Projekt für den Zugriff auf eine oder meh
 
 ### <a name="to-add-a-reference-to-an-external-service"></a>Einen Verweis auf einen externen Dienst hinzufügen
 
-1.  In **Projektmappen-Explorer**, mit der rechten Maustaste in des Namens für das Projekt, Sie fügen Sie den Dienst, und klicken Sie dann auf **Hinzufügen eines Dienstverweises**.
+1. In **Projektmappen-Explorer**, mit der rechten Maustaste in des Namens für das Projekt, Sie fügen Sie den Dienst, und klicken Sie dann auf **Hinzufügen eines Dienstverweises**.
 
      Die **Hinzufügen eines Dienstverweises** Dialogfeld wird angezeigt.
 
-2.  In der **Adresse** , geben Sie die URL für den Dienst, und klicken Sie dann auf **wechseln** für den Dienst zu suchen. Wenn der Dienst benutzersicherheit und das Kennwort implementiert, werden Sie möglicherweise für einen Benutzernamen und Kennwort aufgefordert.
+2. In der **Adresse** , geben Sie die URL für den Dienst, und klicken Sie dann auf **wechseln** für den Dienst zu suchen. Wenn der Dienst benutzersicherheit und das Kennwort implementiert, werden Sie möglicherweise für einen Benutzernamen und Kennwort aufgefordert.
 
     > [!NOTE]
-    >  Sie sollten nur auf Dienste aus einer vertrauenswürdigen Quelle verweisen. Wenn Sie Verweise aus nicht vertrauenswürdigen Quellen hinzufügen, hat das möglicherweise Auswirkungen auf die Sicherheit.
+    > Sie sollten nur auf Dienste aus einer vertrauenswürdigen Quelle verweisen. Wenn Sie Verweise aus nicht vertrauenswürdigen Quellen hinzufügen, hat das möglicherweise Auswirkungen auf die Sicherheit.
 
      Sie können auch auswählen, die URL aus der **Adresse** Liste, die vorherigen 15 URLs gespeichert, an dem gültigen Dienstmetadaten gefunden.
 
      Eine Statusanzeige eingeblendet, wenn die Suche durchgeführt wird. Sie können die Suche zu einem beliebigen Zeitpunkt beenden, indem Sie auf **beenden**.
 
-3.  In der **Services** aus, erweitern Sie den Knoten für den Dienst, den Sie verwenden möchten und wählen Sie eine Entitätenmenge.
+3. In der **Services** aus, erweitern Sie den Knoten für den Dienst, den Sie verwenden möchten und wählen Sie eine Entitätenmenge.
 
-4.  In der **Namespace** Geben Sie den Namespace, der für den Verweis verwendet werden sollen.
+4. In der **Namespace** Geben Sie den Namespace, der für den Verweis verwendet werden sollen.
 
-5.  Klicken Sie auf **OK** um den Verweis dem Projekt hinzuzufügen.
+5. Klicken Sie auf **OK** um den Verweis dem Projekt hinzuzufügen.
 
      Ein Dienstclient (Proxy) wird generiert, und Metadaten, die den Dienst beschreibt hinzugefügt wird die *"App.config"* Datei.
 
@@ -76,7 +74,7 @@ Ein *Dienstverweis* ermöglicht einem Projekt für den Zugriff auf eine oder meh
 
 ### <a name="to-update-a-service-reference"></a>Um einen Dienstverweis aktualisieren
 
--   In **Projektmappen-Explorer**mit der rechten Maustaste auf den Dienstverweis, und klicken Sie dann auf **Dienstverweis aktualisieren**.
+- In **Projektmappen-Explorer**mit der rechten Maustaste auf den Dienstverweis, und klicken Sie dann auf **Dienstverweis aktualisieren**.
 
      Ein Statusdialogfeld wird angezeigt, während der Verweis wird von ihrem ursprünglichen Speicherort aktualisiert, und der Dienstclient erneut generiert wird, um die Änderungen in den Metadaten widergespiegelt werden.
 
@@ -85,13 +83,13 @@ Ein *Dienstverweis* ermöglicht einem Projekt für den Zugriff auf eine oder meh
 
 ### <a name="to-remove-a-service-reference"></a>So entfernen Sie einen Dienstverweis
 
--   In **Projektmappen-Explorer**mit der rechten Maustaste auf den Dienstverweis, und klicken Sie dann auf **löschen**.
+- In **Projektmappen-Explorer**mit der rechten Maustaste auf den Dienstverweis, und klicken Sie dann auf **löschen**.
 
      Client des Diensts aus der Projektmappe entfernt werden, und Metadaten, die den Dienst zu beschreiben, entfernt werden, aus der *"App.config"* Datei.
 
     > [!NOTE]
-    >  Code, der den Dienstverweis verweist, muss manuell entfernt werden.
+    > Code, der den Dienstverweis verweist, muss manuell entfernt werden.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Windows Communication Foundation-Dienste und WCF-Datendienste in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Windows Communication Foundation-Dienste und WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

@@ -1,14 +1,9 @@
 ---
-title: Objektmember erwartet | Microsoft Docs
-ms.custom: ''
+title: Objektmember erwartet | Microsoft-Dokumentation
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5012
 dev_langs:
@@ -16,23 +11,22 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 3af95632-80e1-47c4-8e4b-81c5f2be8017
-caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 84ab153985935bcdf85aed205516610c04dea83f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5a30da75d5498cb9cb827ffaa89d2079f4e1b7a0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633230"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006385"
 ---
 # <a name="object-member-expected"></a>Objektmember erwartet
-Sie haben versucht, einen Vorgang auf Datenmember des Objekts ausführen, aber das Element ist nicht vorhanden.  
+Sie haben versucht, einen Vorgang auf Datenmember eines Objekts ausführen, aber das Element ist nicht vorhanden.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Stellen Sie sicher, dass Sie den Namen des Datenmembers richtig eingegeben haben.  
+- Stellen Sie sicher, dass Sie den Namen des Datenmembers richtig eingegeben haben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Object-Objekt](../../javascript/reference/object-object-javascript.md)   

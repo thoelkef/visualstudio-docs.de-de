@@ -1,14 +1,9 @@
 ---
-title: 'CA1812: Nicht instanziierte interne Klassen vermeiden. | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'CA1812: Nicht instanziierte interne Klassen vermeiden | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1812
 - AvoidUninstantiatedInternalClasses
@@ -20,14 +15,14 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5236fd2dd4635b88ce82b993ebbc15a25e767df1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f44dcb010dd9c62d130913efd590a4c1b651de50
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899785"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081996"
 ---
-# <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Nicht instanziierte interne Klassen vermeiden
+# <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Nicht instanziierte interne Klassen vermeiden.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -64,9 +59,9 @@ ms.locfileid: "49899785"
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie den Typ, oder fügen Sie den Code, der verwendet wird. Wenn der Typ nur statische Methoden enthält, fügen Sie eine der folgenden in den Typ aus, um zu verhindern, dass den Compiler einen Standardkonstruktor für die öffentliche Instanz ausgeben:
 
--   Ein privater Konstruktor für Typen, die auf [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] Versionen 1.0 und 1.1.
+- Ein privater Konstruktor für Typen, die auf [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] Versionen 1.0 und 1.1.
 
--   Die `static` (`Shared` in Visual Basic)-Modifizierer für Typen, die auf [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)].
+- Die `static` (`Shared` in Visual Basic)-Modifizierer für Typen, die auf [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)].
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Es ist sicher, unterdrücken Sie eine Warnung dieser Regel. Es wird empfohlen, dass Sie diese Warnung in den folgenden Situationen unterdrücken:
@@ -104,6 +99,3 @@ ms.locfileid: "49899785"
  [CA1801: Nicht verwendete Parameter überprüfen](../code-quality/ca1801-review-unused-parameters.md)
 
  [CA1804: Nicht verwendete lokale Variablen entfernen](../code-quality/ca1804-remove-unused-locals.md)
-
-
-

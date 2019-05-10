@@ -1,49 +1,38 @@
 ---
 title: 'Idialoadcallback2:: Restrictsystemrootaccess | Microsoft-Dokumentation'
-ms.custom: ''
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.date: 11/04/2016
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaLoadCallback2::RestrictSystemRootAccess method
 ms.assetid: 39f22db8-632a-4ef0-babc-23f758e6d937
-caps.latest.revision: 10
-author: MikeJo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 22be175f3d07dae440e3f409f6995200b9f66b8b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.workload:
+- multiple
+ms.openlocfilehash: a4a603936f58df37cd54bc32e7b4ea8e35838aa7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817268"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62539119"
 ---
 # <a name="idialoadcallback2restrictsystemrootaccess"></a>IDiaLoadCallback2::RestrictSystemRootAccess
-[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+Bestimmt, ob die Suche nach PDB-Dateien im Stammverzeichnis Systems zugelassen wird.
 
-Bestimmt, ob die Suche nach PDB-Dateien im Stammverzeichnis Systems zugelassen wird.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp#  
-HRESULT RestrictSystemRootAccess();  
-```  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
-  
-## <a name="remarks"></a>Hinweise  
- Code als Rückgabewert `S_OK` wird verhindert, dass das Systemstammverzeichnis nach PDB-Dateien zu suchen.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)
+## <a name="syntax"></a>Syntax
 
+```C++
+HRESULT RestrictSystemRootAccess();
+```
 
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
 
+## <a name="remarks"></a>Hinweise
+ Code als Rückgabewert `S_OK` wird verhindert, dass das Systemstammverzeichnis nach PDB-Dateien zu suchen.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

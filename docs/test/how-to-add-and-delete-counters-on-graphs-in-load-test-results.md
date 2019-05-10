@@ -10,14 +10,13 @@ helpviewer_keywords:
 ms.assetid: 81536233-1962-40d9-9511-0b4633814d90
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 079a7390b462dd8d48535f683f391ec2dca4827d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 692ea254719f5ae14491ae81e2e6ab0f5740fc05
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916795"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002275"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Vorgehensweise: Hinzufügen und Löschen von Indikatoren in Diagrammen in Auslastungstestergebnissen
 
@@ -52,25 +51,25 @@ Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der Eigenschaft 
 
 ## <a name="to-display-a-particular-performance-counter-on-a-load-test-graph"></a>So zeigen Sie einen bestimmten Leistungsindikator in einem Auslastungstestdiagramm an
 
-1.  Klicken Sie nach Abschluss eines Auslastungstests oder nach dem Laden eines Auslastungstestergebnisses auf der Symbolleiste des Auslastungstest-Analyzers auf **Diagramme**.
+1. Klicken Sie nach Abschluss eines Auslastungstests oder nach dem Laden eines Auslastungstestergebnisses auf der Symbolleiste des Auslastungstest-Analyzers auf **Diagramme**.
 
      Der Bereich **Indikatoren** wird in der Diagrammansicht angezeigt.
 
     > [!NOTE]
     > Falls das **Indikatorenfenster** nicht angezeigt wird, klicken Sie auf der Symbolleiste auf **Indikatorenfenster anzeigen**.
 
-2.  Erweitern Sie im **Indikatorenfenster** Hierarchieknoten, bis Sie den gewünschten Leistungsindikator finden, der grafisch dargestellt werden soll.
+2. Erweitern Sie im **Indikatorenfenster** Hierarchieknoten, bis Sie den gewünschten Leistungsindikator finden, der grafisch dargestellt werden soll.
 
      Um beispielsweise den Arbeitsspeicher anzuzeigen, der auf einem Testausführungscomputer verfügbar ist, erweitern Sie **Computer**, den Knoten des Computers und dann **Arbeitsspeicher**. Der Indikator **Verfügbare MB** wird angezeigt.
 
-3.  Klicken Sie auf das Diagramm, in dem der Leistungsindikator angezeigt werden soll.
+3. Klicken Sie auf das Diagramm, in dem der Leistungsindikator angezeigt werden soll.
 
-4.  Klicken Sie im Bereich **Indikatoren** mit der rechten Maustaste auf den Leistungsindikator, und klicken Sie auf **Indikator im Diagramm anzeigen**.
+4. Klicken Sie im Bereich **Indikatoren** mit der rechten Maustaste auf den Leistungsindikator, und klicken Sie auf **Indikator im Diagramm anzeigen**.
 
     > [!TIP]
     > Wenn die Daten des Leistungsindikators vorübergehend nicht im Diagramm angezeigt werden sollen, deaktivieren Sie in der Legende das Kontrollkästchen für den Leistungsindikator. So können die Statistiken für Minimal-, Maximal- und Mittelwert angezeigt werden, ohne die Trendlinie im Diagramm anzuzeigen. Dies kann beim Analysieren von Problemen nützlich sein, wenn das Diagramm mehrere überlappende Leistungsindikatorzeichnungen enthält. Weitere Informationen finden Sie unter [Verwenden der Legende der Diagrammansicht zum Analysieren von Auslastungstests](../test/use-the-graphs-view-legend-to-analyze-load-tests.md).
 
-5.  Um die Leistungsindikatordaten aus dem Diagramm zu entfernen, klicken Sie in der Spalte **Indikator** der Legende mit der rechten Maustaste auf den Leistungsindikator, und klicken Sie auf **Löschen**.
+5. Um die Leistungsindikatordaten aus dem Diagramm zu entfernen, klicken Sie in der Spalte **Indikator** der Legende mit der rechten Maustaste auf den Leistungsindikator, und klicken Sie auf **Löschen**.
 
      \- oder –
 

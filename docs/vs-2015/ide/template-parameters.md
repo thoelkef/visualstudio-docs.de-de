@@ -1,14 +1,9 @@
 ---
 title: Vorlagenparameter | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, parameters
 - template parameters [Visual Studio]
@@ -18,13 +13,13 @@ ms.assetid: 1b567143-08c6-4d7a-b484-49f0671754fe
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ef4e1a6e3c56df744ce5375a1cb3a1dbd53a6fad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ed7dd478f63cf4d5dba38f6d721d4b728e1856b4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238900"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419622"
 ---
 # <a name="template-parameters"></a>Vorlagenparameter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,21 +27,21 @@ ms.locfileid: "49238900"
 Indem Sie Parameter in Ihren Vorlagen verwenden, können Sie die Werte von Schlüsselteilen der Vorlage, wie z. B. Klassennamen und Namespaces, bei Instanziierung die Vorlage ersetzen. Diese Parameter werden durch den Vorlagen-Assistenten ersetzt, der im Hintergrund ausgeführt wird, wenn ein Benutzer in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** auf **OK** klickt.  
   
 ## <a name="declaring-and-enabling-template-parameters"></a>Deklarieren und Aktivieren von Vorlagenparametern  
- Vorlagenparameter werden im Format $*parameter*$ deklariert. Zum Beispiel:  
+ Vorlagenparameter werden im Format $*parameter*$ deklariert. Beispiel:  
   
--   $safeprojectname$  
+- $safeprojectname$  
   
--   $guid1$  
+- $guid1$  
   
--   $guid5$  
+- $guid5$  
   
 #### <a name="to-enable-parameter-substitution-in-templates"></a>So aktivieren Sie die Parameterersetzung in Vorlagen  
   
-1.  Suchen Sie in der VSTEMPLATE-Datei der Vorlage das `ProjectItem`-Element, das dem Element entspricht, für das Sie die Parameterersetzung aktivieren möchten.  
+1. Suchen Sie in der VSTEMPLATE-Datei der Vorlage das `ProjectItem`-Element, das dem Element entspricht, für das Sie die Parameterersetzung aktivieren möchten.  
   
-2.  Legen Sie das `ReplaceParameters`-Attribut des `ProjectItem`-Elements auf `true` fest.  
+2. Legen Sie das `ReplaceParameters`-Attribut des `ProjectItem`-Elements auf `true` fest.  
   
-3.  Schließen Sie in der Codedatei für das Projektelement ggf. Parameter ein. Durch den folgenden Parameter wird beispielsweise angegeben, dass der sichere Projektname für den Namespace in einer Datei verwendet werden soll:  
+3. Schließen Sie in der Codedatei für das Projektelement ggf. Parameter ein. Durch den folgenden Parameter wird beispielsweise angegeben, dass der sichere Projektname für den Namespace in einer Datei verwendet werden soll:  
   
     ```  
     namespace $safeprojectname$  
@@ -56,7 +51,7 @@ Indem Sie Parameter in Ihren Vorlagen verwenden, können Sie die Werte von Schl�
  In der folgenden Tabelle sind die reservierten Vorlagenparameter aufgelistet, die von beliebigen Vorlagen verwendet werden können.  
   
 > [!NOTE]
->  Bei Vorlagenparametern wird die Groß-/Kleinschreibung beachtet.  
+> Bei Vorlagenparametern wird die Groß-/Kleinschreibung beachtet.  
   
 |Parameter|Beschreibung|  
 |---------------|-----------------|  
@@ -130,6 +125,3 @@ namespace $safeprojectname$
   
 ## <a name="see-also"></a>Siehe auch  
  [Anpassen von Vorlagen](../ide/customizing-project-and-item-templates.md)
-
-
-

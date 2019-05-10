@@ -15,29 +15,27 @@ helpviewer_keywords:
 ms.assetid: a096a90d-6d0d-4752-9fb5-417635ccab3e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f494e365de28603d2231323fa1ab501b826c28e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 5fa8bb0fb7672c177d0543a06fe423ca1d115514
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923035"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851808"
 ---
 # <a name="debugging-web-applications"></a>Debuggen von Webanwendungen
-In diesem Abschnitt wird erläutert, wie verschiedene Typen von Webanwendungen debuggt werden.  
-  
-## <a name="in-this-section"></a>In diesem Abschnitt   
- [Debuggen von clientseitigen Skripts](../debugger/client-side-script-debugging.md)  
- Erläutert Testskripts und clientseitige Skripts in [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Seiten.  
-  
-## <a name="related-sections"></a>Verwandte Abschnitte  
- [Debuggen von ASP.NET-Anwendungen](../debugger/how-to-enable-debugging-for-aspnet-applications.md)  
- Beschreibt die erforderlichen Schritte, um das Debuggen von [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Anwendungen zu ermöglichen.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Debuggen von Webanwendungen und Skripts](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)   
- [Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)   
- [Ein erster Blick auf der Debugger](../debugger/debugger-feature-tour.md) [Debuggen in Visual Studio](../debugger/index.md)  
- [Debugger – Featuretour](../debugger/debugger-feature-tour.md)
+In diesem Abschnitt wird erläutert, wie verschiedene Typen von Webanwendungen debuggt werden.
+
+## <a name="in-this-section"></a>In diesem Abschnitt
+ [Debuggen von clientseitigen Skripts](../debugger/client-side-script-debugging.md) behandelt, die Tests, Skripts und clientseitige Skripts in [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Seiten.
+
+## <a name="related-sections"></a>Verwandte Abschnitte
+ [Debuggen von ASP.NET-Anwendungen](../debugger/how-to-enable-debugging-for-aspnet-applications.md) beschreibt die erforderlichen Schritte zum Aktivieren des Debuggens von [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Anwendungen.
+
+## <a name="see-also"></a>Siehe auch
+- [Debuggen von Webanwendungen und Skripts](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)
+- [Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)
+- [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)
+- [Debuggen in Visual Studio](../debugger/index.md)

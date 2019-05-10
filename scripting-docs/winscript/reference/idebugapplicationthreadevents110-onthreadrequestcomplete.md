@@ -1,8 +1,7 @@
 ---
-title: IDebugApplicationThreadEvents110::OnThreadRequestComplete | Microsoft Docs
+title: IDebugApplicationThreadEvents110::OnThreadRequestComplete | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4541ca6dbdb4756a5b1eee286e929385143323de
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
-ms.translationtype: MT
+ms.openlocfilehash: 5542d524506410e0a69dcb5addb6a7fe59209073
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725680"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440465"
 ---
 # <a name="idebugapplicationthreadevents110onthreadrequestcomplete"></a>IDebugApplicationThreadEvents110::OnThreadRequestComplete
-Ein Aufruf in dem Thread, der mithilfe der PDM Threads wechseln abgeschlossen wurde.  
+Ein Aufruf in dem Thread, der über das PDM Thread gewechselt wurde abgeschlossen.  
   
 > [!IMPORTANT]
->  [IDebugApplicationThreadEvents110-Schnittstelle](../../winscript/reference/idebugapplicationthreadevents110-interface.md) wird implementiert von PDM V11. 0 und höher. Gefunden in activdbg100.h.  
+> [IDebugApplicationThreadEvents110-Schnittstelle](../../winscript/reference/idebugapplicationthreadevents110-interface.md) wird implementiert von PDM V11. 0 und höher. Gefunden in activdbg100.h.  
   
 ## <a name="syntax"></a>Syntax  
   

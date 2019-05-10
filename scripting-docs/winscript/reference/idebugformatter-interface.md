@@ -1,8 +1,7 @@
 ---
-title: IDebugFormatter-Schnittstelle | Microsoft Docs
+title: IDebugFormatter-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,17 +13,17 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 97f95aa1ecb91f6caca187939a79a6f09cd2108f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f35d1b811a017895ca40f3325bd0ac456070184f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729170"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979226"
 ---
 # <a name="idebugformatter-interface"></a>IDebugFormatter-Schnittstelle
-Können eine Sprache oder eine IDE zum Anpassen der Konvertierung zwischen VARIANT-Werten oder VARTYPE-Typen und Zeichenfolgen.  
+Ermöglicht, dass eine Sprache oder IDE den Wechsel zwischen VARIANT-Werten oder VARTYPE-Typen und -Zeichenfolgen anpasst.  
   
- Zusätzlich zu den von geerbten Methoden `IUnknown`, `IDebugFormatter` Schnittstelle macht die folgenden Methoden verfügbar.  
+ Zusätzlich zu den von geerbten Methoden `IUnknown`, `IDebugFormatter` Schnittstelle verfügbar macht, die folgenden Methoden.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
   

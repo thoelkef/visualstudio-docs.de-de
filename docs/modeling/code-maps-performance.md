@@ -4,22 +4,21 @@ ms.date: 05/16/2018
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a7892e8e0bc347c4a22dd1a2ae2ee4b01882d6c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 12ba03ab97da3295a93b54dfc012d10fc012fd30
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905058"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62423926"
 ---
 # <a name="improve-performance-for-code-maps"></a>Verbessern der Leistung für Code maps
 
 Wenn Sie eine Code Map zum ersten Mal generieren, werden von Visual Studio alle gefundenen Abhängigkeiten indiziert. Dieser Vorgang kann einige Zeit dauern, insbesondere bei großen Projektmappen, aber die höhere Leistung verbessert. Wenn Ihr Code geändert wird, wird von Visual Studio nur der aktualisierte Code neu indiziert. Um den Zeitaufwand für die Karte, um das Rendern zu minimieren, sollten Sie die folgenden Vorschläge aus:
 
-- [Stellen Sie nur die Abhängigkeiten in der Code Map dar, die Sie interessieren.](#create-a-code-map-to-see-specific-dependencies)
+- Stellen Sie nur die Abhängigkeiten in der Code Map dar, die Sie interessieren.
 
 - Bevor Sie die Code Map für eine gesamte Projektmappe generieren, reduzieren Sie den Umfang der Projektmappe.
 

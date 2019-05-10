@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], developing
 - Web Parts [SharePoint development in Visual Studio], creating
 - Web Parts [SharePoint development in Visual Studio], designing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5f2c851659d09cc118f8f54b6e82bb3b806d7e34
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 622dfafbe16efee1e953fbc42bfa3b94cfa3cc58
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944284"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965270"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Exemplarische Vorgehensweise: Erstellen Sie ein Webpart für SharePoint
 
@@ -216,7 +216,7 @@ Zeigen Sie Mitarbeiter an, die keine Manager sind, und blenden Sie diese aus, in
 
 ## <a name="see-also"></a>Siehe auch
 
-[Erstellen von Webparts für SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)  
-[Vorgehensweise: Erstellen eines SharePoint-Webparts](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
-[Vorgehensweise: Erstellen Sie einen SharePoint-Webpart mithilfe eines Designers](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)  
+[Erstellen von Webparts für SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
+[Vorgehensweise: Erstellen eines SharePoint-Webparts](../sharepoint/how-to-create-a-sharepoint-web-part.md)
+[Vorgehensweise: Erstellen Sie einen SharePoint-Webpart mithilfe eines Designers](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)
 [Exemplarische Vorgehensweise: Erstellen Sie ein Webpart für SharePoint mithilfe eines Designers](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)

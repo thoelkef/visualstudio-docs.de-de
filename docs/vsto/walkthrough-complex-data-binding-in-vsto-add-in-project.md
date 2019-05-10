@@ -9,17 +9,17 @@ helpviewer_keywords:
 - data binding [Office development in Visual Studio], Excel
 - data [Office development in Visual Studio], binding data
 - complex data [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ce629e01192137474382452690e6d7051bb163ac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0cb4fc7b43ab3ae48f83f4497fe6fd0042d0c51a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831770"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62981632"
 ---
 # <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>Exemplarische Vorgehensweise: Komplexe Datenbindung in VSTO-Add-in-Projekt
   Sie können in VSTO-Add-In-Projekten Daten an Hoststeuerelemente und Windows Forms-Steuerelemente binden. In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie einem Microsoft Office Excel-Arbeitsblatt zur Laufzeit Steuerelemente hinzugefügt und diese Steuerelemente an Daten gebunden werden.
@@ -37,22 +37,22 @@ ms.locfileid: "53831770"
 ## <a name="prerequisites"></a>Vorraussetzungen
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] oder [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] oder [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
--   Zugriff auf eine aktive Instanz von SQL Server 2005 oder SQL Server 2005 Express, an die die `AdventureWorksLT` -Beispieldatenbank angefügt ist. Sie können die `AdventureWorksLT` -Datenbank von der [CodePlex-Website](http://go.microsoft.com/fwlink/?LinkId=115611). Weitere Informationen zum Anhängen von Datenbanken finden Sie in den folgenden Themen:
+- Zugriff auf eine aktive Instanz von SQL Server 2005 oder SQL Server 2005 Express, an die die `AdventureWorksLT` -Beispieldatenbank angefügt ist. Sie können die `AdventureWorksLT` -Datenbank von der [CodePlex-Website](http://go.microsoft.com/fwlink/?LinkId=115611). Weitere Informationen zum Anhängen von Datenbanken finden Sie in den folgenden Themen:
 
-    -   Zum Anfügen einer Datenbank mithilfe von SQL Server Management Studio oder SQL Server Management Studio Express finden Sie unter [Vorgehensweise: Anfügen einer Datenbank (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
+    - Zum Anfügen einer Datenbank mithilfe von SQL Server Management Studio oder SQL Server Management Studio Express finden Sie unter [Vorgehensweise: Anfügen einer Datenbank (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
-    -   Zum Anfügen einer Datenbank mithilfe der Befehlszeile finden Sie unter [Vorgehensweise: Anfügen eine Datenbankdatei an SQL Server Express](/previous-versions/sql/).
+    - Zum Anfügen einer Datenbank mithilfe der Befehlszeile finden Sie unter [Vorgehensweise: Anfügen eine Datenbankdatei an SQL Server Express](/previous-versions/sql/).
 
 ## <a name="create-a-new-project"></a>Erstellt ein neues Projekt
  Der erste Schritt besteht im Erstellen eines VSTO-Add-In-Projekts für Excel.
 
 ### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt
 
-1.  Erstellen Sie mit Visual Basic oder C# ein Excel-VSTO-Add-In-Projekt, das den Namen **Füllen von Arbeitsblättern aus einer Datenbank**hat.
+1. Erstellen Sie mit Visual Basic oder C# ein Excel-VSTO-Add-In-Projekt, das den Namen **Füllen von Arbeitsblättern aus einer Datenbank**hat.
 
      Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -94,27 +94,27 @@ ms.locfileid: "53831770"
 
 ### <a name="to-add-the-list-object-dataset-and-table-adapter"></a>So fügen Sie das Listenobjekt, das Dataset und den Tabellenadapter hinzu
 
-1.  Deklarieren Sie in der `ThisAddIn` -Klasse die folgenden Steuerelemente, um die `Address` -Tabelle des `AdventureWorksLTDataSet` -Datsets anzuzeigen.
+1. Deklarieren Sie in der `ThisAddIn` -Klasse die folgenden Steuerelemente, um die `Address` -Tabelle des `AdventureWorksLTDataSet` -Datsets anzuzeigen.
 
      [!code-csharp[Trin_ExcelAddInDatabase#1](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#1)]
      [!code-vb[Trin_ExcelAddInDatabase#1](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#1)]
 
-2.  Fügen Sie der `ThisAddIn_Startup` -Methode den folgenden Code hinzu, um das Dataset zu initialisieren und es mit Daten aus dem `AdventureWorksLTDataSet` -Dataset zu füllen.
+2. Fügen Sie der `ThisAddIn_Startup` -Methode den folgenden Code hinzu, um das Dataset zu initialisieren und es mit Daten aus dem `AdventureWorksLTDataSet` -Dataset zu füllen.
 
      [!code-csharp[Trin_ExcelAddInDatabase#2](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#2)]
      [!code-vb[Trin_ExcelAddInDatabase#2](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#2)]
 
-3.  Fügen Sie der `ThisAddIn_Startup` -Methode folgenden Code hinzu. Dadurch wird ein Hostelement generiert, das das Arbeitsblatt erweitert. Weitere Informationen finden Sie unter [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+3. Fügen Sie der `ThisAddIn_Startup` -Methode folgenden Code hinzu. Dadurch wird ein Hostelement generiert, das das Arbeitsblatt erweitert. Weitere Informationen finden Sie unter [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
      [!code-csharp[Trin_ExcelAddInDatabase#3](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#3)]
      [!code-vb[Trin_ExcelAddInDatabase#3](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#3)]
 
-4.  Erstellen Sie einen Bereich und fügen das <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement hinzu.
+4. Erstellen Sie einen Bereich und fügen das <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement hinzu.
 
      [!code-csharp[Trin_ExcelAddInDatabase#4](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#4)]
      [!code-vb[Trin_ExcelAddInDatabase#4](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#4)]
 
-5.  Binden Sie das Listenobjekt mithilfe der `AdventureWorksLTDataSet` an das <xref:System.Windows.Forms.BindingSource>. Übergeben Sie die Namen der Spalten, die an das Listenobjekt gebunden werden sollen.
+5. Binden Sie das Listenobjekt mithilfe der `AdventureWorksLTDataSet` an das <xref:System.Windows.Forms.BindingSource>. Übergeben Sie die Namen der Spalten, die an das Listenobjekt gebunden werden sollen.
 
      [!code-csharp[Trin_ExcelAddInDatabase#5](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#5)]
      [!code-vb[Trin_ExcelAddInDatabase#5](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#5)]
@@ -124,7 +124,7 @@ ms.locfileid: "53831770"
 
 ### <a name="to-test-the-vsto-add-in"></a>So testen Sie das VSTO-Add-In
 
--   Drücken Sie **F5**.
+- Drücken Sie **F5**.
 
      Im Arbeitsblatt wird ein <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement namens `addressListObject` erstellt. Gleichzeitig werden dem Projekt ein Datasetobjekt namens `adventureWorksLTDataSet` und ein <xref:System.Windows.Forms.BindingSource> -Objekt namens `addressBindingSource` hinzugefügt. Das <xref:Microsoft.Office.Tools.Excel.ListObject> -Steuerelement ist an das <xref:System.Windows.Forms.BindingSource>-Objekt gebunden, das wiederum an das Datasetobjekt gebunden ist.
 

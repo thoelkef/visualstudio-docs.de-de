@@ -1,33 +1,34 @@
 ---
-title: 'Idiasymbol:: Get_frontendminor | Microsoft-Dokumentation'
-ms.custom: ''
-ms.date: 11/04/2016
+title: IDiaSymbol::get_frontEndMinor | Microsoft-Dokumentation
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_frontEndMinor method
 ms.assetid: 40792153-827c-4859-be7c-6aa16d5abab6
-author: mikejo5000
+caps.latest.revision: 12
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: f02950b3eb3f55cb46be9689403d3c4f743fc988
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 87a23d3aeade62865f768f54eb8face462affee8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923905"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401785"
 ---
 # <a name="idiasymbolgetfrontendminor"></a>IDiaSymbol::get_frontEndMinor
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Ruft die Nebenversionsnummer der Front-End ab.  
   
 ## <a name="syntax"></a>Syntax  
   
-```C++  
-HRESULT get_frontEndMinor (   
+```cpp#  
+HRESULT get_frontEndMinor (   
    DWORD* pRetVal  
 );  
 ```  
@@ -40,7 +41,7 @@ HRESULT get_frontEndMinor (
  Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder den Fehlercode.  
   
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="remarks"></a>Hinweise  
  Ein Compiler besteht in der Regel zwei Hauptelemente: die Front-End (den Parser), der verarbeitet, analysiert den Quellcode in ein vorläufiges Formular, und ein Back-End (Codegenerator), konvertiert die vorläufiges Formular in der Assembly. Es ist nicht ungewöhnlich, dass das Front-End, um eine andere Version als das Back-End zu erhalten.  

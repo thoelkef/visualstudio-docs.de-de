@@ -1,8 +1,7 @@
 ---
-title: IRemoteDebugApplicationEvents-Schnittstelle | Microsoft Docs
+title: IRemoteDebugApplicationEvents-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,29 +13,29 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 04d40d3e03cfb9582075ec1be7abace963d1377f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 052a408d6e92066c14617f46f722d3e603985195
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729640"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62943810"
 ---
 # <a name="iremotedebugapplicationevents-interface"></a>IRemoteDebugApplicationEvents-Schnittstelle
-Die `IRemoteDebugApplicationEvents` Schnittstelle ist die Ereignisschnittstelle, die von einem Debuganwendung bereitgestellt wird. Diese Schnittstelle wird immer vom Debugger Thread aus aufgerufen.  
+Die `IRemoteDebugApplicationEvents` Schnittstelle ist die Ereignisschnittstelle, die von einer Debuganwendung bereitgestellt wird. Diese Schnittstelle wird immer aus der Debuggerthread aufgerufen.  
   
- Zusätzlich zu den von geerbten Methoden `IUnknown`, `IRemoteDebugApplicationEvents` Schnittstelle macht die folgenden Methoden verfügbar.  
+ Zusätzlich zu den von geerbten Methoden `IUnknown`, `IRemoteDebugApplicationEvents` Schnittstelle verfügbar macht, die folgenden Methoden.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IRemoteDebugApplicationEvents::OnConnectDebugger](../../winscript/reference/iremotedebugapplicationevents-onconnectdebugger.md)|Ereignis wird behandelt ein Debugger verbunden.|  
+|[IRemoteDebugApplicationEvents::OnConnectDebugger](../../winscript/reference/iremotedebugapplicationevents-onconnectdebugger.md)|Behandelt ein Debugger connect-Event.|  
 |[IRemoteDebugApplicationEvents::OnDisconnectDebugger](../../winscript/reference/iremotedebugapplicationevents-ondisconnectdebugger.md)|Behandelt ein Debugger trennen Ereignis.|  
-|[IRemoteDebugApplicationEvents::OnSetName](../../winscript/reference/iremotedebugapplicationevents-onsetname.md)|Ein Satz Name-Ereignis behandelt.|  
-|[IRemoteDebugApplicationEvents::OnDebugOutput](../../winscript/reference/iremotedebugapplicationevents-ondebugoutput.md)|Verarbeitet ein Debuggerereignis für die Ausgabe an.|  
-|[IRemoteDebugApplicationEvents::OnClose](../../winscript/reference/iremotedebugapplicationevents-onclose.md)|Behandelt das nach einer Anwendung schließen-Ereignis.|  
+|[IRemoteDebugApplicationEvents::OnSetName](../../winscript/reference/iremotedebugapplicationevents-onsetname.md)|Behandelt ein Ereignis der Set-Name.|  
+|[IRemoteDebugApplicationEvents::OnDebugOutput](../../winscript/reference/iremotedebugapplicationevents-ondebugoutput.md)|Behandelt ein Debugger-Ausgabe-Ereignis.|  
+|[IRemoteDebugApplicationEvents::OnClose](../../winscript/reference/iremotedebugapplicationevents-onclose.md)|Behandelt ein Anwendungsereignis schließen.|  
 |[IRemoteDebugApplicationEvents::OnEnterBreakPoint](../../winscript/reference/iremotedebugapplicationevents-onenterbreakpoint.md)|Behandelt ein Ereignis für die Eingabe eines Haltepunkts.|  
 |[IRemoteDebugApplicationEvents::OnLeaveBreakPoint](../../winscript/reference/iremotedebugapplicationevents-onleavebreakpoint.md)|Behandelt ein Ereignis für einen Haltepunkt zu verlassen.|  
-|[IRemoteDebugApplicationEvents::OnCreateThread](../../winscript/reference/iremotedebugapplicationevents-oncreatethread.md)|Verarbeitet eine Create-Thread-Ereignisses.|  
+|[IRemoteDebugApplicationEvents::OnCreateThread](../../winscript/reference/iremotedebugapplicationevents-oncreatethread.md)|Behandelt ein Ereignis der erstellen-Thread.|  
 |[IRemoteDebugApplicationEvents::OnDestroyThread](../../winscript/reference/iremotedebugapplicationevents-ondestroythread.md)|Behandelt ein Ereignis Thread zerstört.|  
-|[IRemoteDebugApplicationEvents::OnBreakFlagChange](../../winscript/reference/iremotedebugapplicationevents-onbreakflagchange.md)|Verarbeitet ein Ereignis, wenn die Unterbrechung Flags ändern.|
+|[IRemoteDebugApplicationEvents::OnBreakFlagChange](../../winscript/reference/iremotedebugapplicationevents-onbreakflagchange.md)|Behandelt ein Ereignis, wenn die Pause-Flags ändern.|

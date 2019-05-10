@@ -9,27 +9,27 @@ helpviewer_keywords:
 ms.assetid: 97ea62ed-bdf8-4df2-b178-b17b9df20adc
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33550851e261b8d6dc0724ebad7966c585ecb76e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 1fb0a79cf2ef300df7e0cf4a745d8d22a30a80fe
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847755"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62833245"
 ---
 # <a name="idiaenumsectioncontribsreset"></a>IDiaEnumSectionContribs::Reset
-Setzt eine Enumerationsfolge auf den Anfang zurück.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT Reset();  
-```  
-  
-## <a name="return-value"></a>Rückgabewert  
- Gibt `S_OK`zurück.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)
+Setzt eine Enumerationsfolge auf den Anfang zurück.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT Reset();
+```
+
+## <a name="return-value"></a>Rückgabewert
+ Gibt `S_OK`zurück.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)

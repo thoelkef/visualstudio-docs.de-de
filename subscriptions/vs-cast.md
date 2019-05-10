@@ -6,22 +6,19 @@ manager: lank
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Informationen zum CAST Highlight-Vorteil, der in ausgewählten Visual Studio-Abonnements enthalten ist
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7ee8059a8e80834b6b35f93be888d7fd90e4a3a3
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: a96b314a22bf3036167b0d7b1bb6077edee01f59
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739996"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947900"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Der CAST Highlight-Vorteil in Visual Studio-Abonnements
 
-Entwickler benötigen bei der Migration zur Cloud wichtige Einblicke in ihre Software. Mit CAST Highlight können Abonnenten von Visual Studio Enterprise ihren Anwendungsquellcode schnell überprüfen, um die Cloudbereitschaft ihrer Anwendungen für die Migration zu Azure zu ermitteln und den Fortschritt ihrer App während und nach der Migration zu überwachen.  
+Entwickler benötigen bei der Migration zur Cloud wichtige Einblicke in ihre Software. Mit CAST Highlight können Abonnenten von Visual Studio Enterprise ihren Anwendungsquellcode schnell überprüfen, um die Cloudbereitschaft ihrer Anwendungen für die Migration zu Azure zu ermitteln und den Fortschritt ihrer App während und nach der Migration zu überwachen.
 
-Abonnenten von Visual Studio Enterprise erhalten für bis zu fünf Apps pro Abonnent ein kostenloses einmonatiges Abonnement von CAST Highlight mit vollem Funktionsumfang. 
-
+Abonnenten von Visual Studio Enterprise erhalten für bis zu fünf Apps pro Abonnent ein kostenloses einmonatiges Abonnement von CAST Highlight mit vollem Funktionsumfang.
 
 ## <a name="activation-steps"></a>Aktivierungsschritte
 
@@ -32,7 +29,6 @@ Abonnenten von Visual Studio Enterprise erhalten für bis zu fünf Apps pro Abon
    > [!div class="mx-imgBorder"]
    > ![Kachel für den CAST Highlight-Vorteil](_img/vs-cast-highlight/vs-cast-highlight-tile.png)
 
-   
 0. Ihnen wird eine Meldung angezeigt, die bestätigt, dass Ihr Code erfolgreich abgerufen wurde.  Klicken Sie auf **Aktivieren**. Dadurch werden Sie auf die CAST Highlight-Seite weitergeleitet, auf der Sie mit der Aktivierung fortfahren können.  (Wenn Sie die Aktivierung noch nicht durchführen möchten, können Sie diese jederzeit über die CAST Highlight-Kachel im Abonnementportal durchführen.  Der Link „Get Code“ (Code abrufen) ändert sich in „Aktivieren“. Wenn Sie darauf klicken, gelangen Sie zum nächsten Schritt im Aktivierungsprozess.)
 
 0. Sie werden zur CAST Highlight-Seite umgeleitet, auf der Sie die Features Ihres Abonnements erkunden können.  Wenn Sie für die Erstellung Ihres Kontos bereit sind, geben Sie einfach Ihre Kontaktdaten in das Webformular ein, und klicken Sie auf **Senden**.
@@ -43,47 +39,44 @@ Abonnenten von Visual Studio Enterprise erhalten für bis zu fünf Apps pro Abon
    > [!NOTE]
    > Pro Organisation können bis zu zehn CAST Highlight-Vorteile aktiviert werden.  Wenn in Ihrer Organisation bereits zehn Aktivierung durchgeführt wurden, können Sie den CAST Highlight-Vorteil nicht aktivieren. Sie erhalten dann eine E-Mail mit weiteren Informationen.
 
- 0. Nachdem Sie Ihre Informationen gesendet haben, wird Ihnen eine Seite angezeigt, auf der Ihnen der Erhalt Ihrer Anforderung bestätigt wird.    
+0. Nachdem Sie Ihre Informationen gesendet haben, wird Ihnen eine Seite angezeigt, auf der Ihnen der Erhalt Ihrer Anforderung bestätigt wird.
 
     > [!div class="mx-imgBorder"]
     > ![Dankesseite von CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-thankyou.png)
 
-0.  Der CAST-Team werte Ihre Anforderung aus und kontaktiert Sie, um die Erstellung Ihres Kontos abzuschließen.  
+0. Der CAST-Team werte Ihre Anforderung aus und kontaktiert Sie, um die Erstellung Ihres Kontos abzuschließen.
 
-0.  Darüber hinaus erhalten Sie eine E-Mail wie die folgende von CAST, in der Ihnen der Erhalt Ihrer Anforderung bestätigt wird.
+0. Darüber hinaus erhalten Sie eine E-Mail wie die folgende von CAST, in der Ihnen der Erhalt Ihrer Anforderung bestätigt wird.
 
-   *Vielen Dank für Ihre Anforderung zur Aktivierung des 30-tägigen Zugriffs auf CAST Highlight, einem exklusiven Angebot für Kunden von Microsoft Visual Studio Enterprise!*  
+   > *Vielen Dank für Ihre Anforderung zur Aktivierung des 30-tägigen Zugriffs auf CAST Highlight, einem exklusiven Angebot für Kunden von Microsoft Visual Studio Enterprise!*
+   >
+   > *Derzeit überprüfen wir Ihre Anforderung zur Aktivierung und zum Zugriff auf CAST Highlight. Ich melde mich innerhalb der nächsten 48 Stunden bei Ihnen.*
+   >
+   > *Mit freundlichen Grüßen,*
+   > *Greg*
 
-   *Derzeit überprüfen wir Ihre Anforderung zur Aktivierung und zum Zugriff auf CAST Highlight. Ich melde mich innerhalb der nächsten 48 Stunden bei Ihnen.*
+Nach der Genehmigung Ihrer Anforderung erhalten Sie eine zweite E-Mail, in der die erfolgreiche Erstellung Ihres Kontos bestätigt wird. Darüber hinaus werden Sie darin dazu aufgefordert, zum Abschließen des Aktivierungsprozesses auf den Aktivierungslink zu klicken.
 
-   *Mit freundlichen Grüßen,*
-   *Greg*
-
-
-Nach der Genehmigung Ihrer Anforderung erhalten Sie eine zweite E-Mail, in der die erfolgreiche Erstellung Ihres Kontos bestätigt wird. Darüber hinaus werden Sie darin dazu aufgefordert, zum Abschließen des Aktivierungsprozesses auf den Aktivierungslink zu klicken. 
-
-   *Wir haben Ihre Anforderung zum Zugriff auf CAST Highlight erfolgreich überprüft und bestätigt. Willkommen an Bord!*
-
-   *Zum Abschließen der Aktivierung ist ein letzter Schritt Ihrerseits erforderlich. Sie haben sicher eine E-Mail von noreply@casthighlight.com mit einem Aktivierungslink erhalten. Überprüfen Sie Ihren Spamordner, wenn Ihnen diese E-Mai nicht angezeigt wird.*
-
-   *Klicken Sie auf den in der E-Mail enthaltenen Aktivierungslink, und schließen Sie den Aktivierungsprozess ab.*
-
-   *Nach der Aktivierung haben Sie 30 Tage lang Zugriff auf die CAST Highlight-Plattform und können bis zu fünf Anwendungen integrieren. Beachten Sie, dass dieses exklusive Angebot nur für Kunden von Microsoft Visual Studio Enterprise verfügbar ist.*
-
-   *Ich werde mich mit Ihnen in Verbindung setzen, um sicherzustellen, dass bei Ihnen alles reibungslos läuft. In der Zwischenzeit finden Sie hier einige nützliche Inhalte für Ihre ersten Schritte:*
-
-   - [CAST-Highlight – CloudReadiness-Demo](https://www.youtube.com/watch?v=wFUpAzn1Iu8&feature=youtu.be)
-    -   [Leitfaden für erste Schritte (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
-    -   Video-Tutorial: [Konfigurieren Ihres Portfolios](https://www.youtube.com/watch?v=MDm8ln4vuGE)
-    -   Video-Tutorial: [Integrieren Ihrer Apps](https://www.youtube.com/watch?v=x-7Dsn3Rmw4)
-    
-   *Mit freundlichen Grüßen,*
-   *Greg*
-
+   > *Wir haben Ihre Anforderung zum Zugriff auf CAST Highlight erfolgreich überprüft und bestätigt. Willkommen an Bord!*
+   >
+   > *Zum Abschließen der Aktivierung ist ein letzter Schritt Ihrerseits erforderlich. Sie haben sicher eine E-Mail von noreply@casthighlight.com mit einem Aktivierungslink erhalten. Überprüfen Sie Ihren Spamordner, wenn Ihnen diese E-Mai nicht angezeigt wird.*
+   >
+   > *Klicken Sie auf den in der E-Mail enthaltenen Aktivierungslink, und schließen Sie den Aktivierungsprozess ab.*
+   >
+   > *Nach der Aktivierung haben Sie 30 Tage lang Zugriff auf die CAST Highlight-Plattform und können bis zu fünf Anwendungen integrieren. Beachten Sie, dass dieses exklusive Angebot nur für Kunden von Microsoft Visual Studio Enterprise verfügbar ist.*
+   >
+   > *Ich werde mich mit Ihnen in Verbindung setzen, um sicherzustellen, dass bei Ihnen alles reibungslos läuft. In der Zwischenzeit finden Sie hier einige nützliche Inhalte für Ihre ersten Schritte:*
+   >
+   > - [CAST-Highlight – CloudReadiness-Demo](https://www.youtube.com/watch?v=wFUpAzn1Iu8&feature=youtu.be)
+   > - [Leitfaden für erste Schritte (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
+   > - Video-Tutorial: [Konfigurieren Ihres Portfolios](https://www.youtube.com/watch?v=MDm8ln4vuGE)
+   > - Video-Tutorial: [Integrieren Ihrer Apps](https://www.youtube.com/watch?v=x-7Dsn3Rmw4)
+   >
+   > *Mit freundlichen Grüßen,*
+   > *Greg*
 
    > [!NOTE]
    > Stellen Sie sicher, dass Sie in der E-Mail, die Ihnen gesendet wurde, auf den Aktivierungslink klicken.  Andernfalls können Sie nicht auf Ihr CAST Highlight-Abonnement zugreifen. Wenn Ihnen die E-Mail in Ihrem Posteingang nicht angezeigt wird, überprüfen Sie auch Ihre Spamordner.
-
 
 ## <a name="eligibility"></a>Berechtigung
 
@@ -94,30 +87,26 @@ Nach der Genehmigung Ihrer Anforderung erhalten Sie eine zweite E-Mail, in der d
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Nicht verfügbar                                             |  Nicht zutreffend           |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Nicht verfügbar                                              |  Nicht zutreffend          |
 | Visual Studio Dev Essentials | Nicht zutreffend  | Nicht verfügbar | Nicht zutreffend |
-| Visual Studio Enterprise (Standard, Cloudabonnement mit jährlicher Laufzeit)  | NFR<sup>1</sup> |Nicht verfügbar  | Nicht zutreffend |
+| Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Nicht verfügbar  | Nicht zutreffend |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure | Nicht verfügbar | Nicht zutreffend |
 
-
-
-<sup>1</sup> *Umfasst:  Not for Resale (NFR), FTE, Microsoft Valued Professional (MVP), Region Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
-
+<sup>1</sup> *Umfasst:  Not for Resale (NFR), FTE, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
 
 > [!NOTE]
 > In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.
 
-
 Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen.
 
 ## <a name="support-resources"></a>Supportressourcen
--  Benötigen Sie Hilfe bei der Verwendung von CAST Highlight?  Sehen Sie sich diese Ressourcen an:
+- Benötigen Sie Hilfe bei der Verwendung von CAST Highlight?  Sehen Sie sich diese Ressourcen an:
     - [Anfrage an den Support schicken](https://casthighlight.com/support/)
     - [Leitfaden für erste Schritte (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
 
--  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
--  Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
+- Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
+- Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Nächste Schritte
 
 Wenn Sie den Azure-Vorteil, der in Ihrem Abonnement enthalten ist, noch nicht aktiviert haben, besuchen Sie [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs), und klicken Sie auf die Azure-Kachel in der Kategorie „Extras“, um ein Azure-Abonnement einzurichten und Ihre kostenlose Azure-Gutschrift zu erhalten.
 
-Und vergessen Sie nicht, sich die Demo, das Benutzerhandbuch und die Tutorial-Videos anzusehen, die in Gregs E-Mail erwähnt wurden. 
+Und vergessen Sie nicht, sich die Demo, das Benutzerhandbuch und die Tutorial-Videos anzusehen, die in Gregs E-Mail erwähnt wurden.

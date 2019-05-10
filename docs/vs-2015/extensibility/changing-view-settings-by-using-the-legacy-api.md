@@ -1,26 +1,21 @@
 ---
 title: Ändern von Einstellungen mithilfe der Legacy-API | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - changing view settings
 ms.assetid: 12c9b300-0894-4124-96a1-764326176d77
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: df84fa92cb0da8dd408b1cc8717628afa3d5ba19
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a7d58d1477b9d7f58242f8cb4db7c3c360c248b9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730634"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094124"
 ---
 # <a name="changing-view-settings-by-using-the-legacy-api"></a>Ändern von Einstellungen mithilfe der Legacy-API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +27,13 @@ Einstellungen, die Kern-Editor-Features, z. B. Zeilenumbruch, Auswahlrand und vi
   
  Es folgt der typische Prozess zum Ändern der Einstellungen für eine Instanz von der Kern-Editor anzeigen.  
   
-1.  Rufen Sie `QueryInterface` auf die (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>) für die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> Schnittstelle.  
+1. Rufen Sie `QueryInterface` auf die (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>) für die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> Schnittstelle.  
   
-2.  Rufen Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> -Methode, geben Sie einen Wert GUID_EditPropCategory_View_MasterSettings für die `rguidCategory` Parameter.  
+2. Rufen Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> -Methode, geben Sie einen Wert GUID_EditPropCategory_View_MasterSettings für die `rguidCategory` Parameter.  
   
      Dies gibt einen Zeiger auf die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> -Schnittstelle, die den Satz der erzwungenen Eigenschaften für die Sicht enthält. Alle Einstellungen in dieser Gruppe werden dauerhaft erzwungen. Wenn eine Einstellung nicht in dieser Gruppe vorhanden ist, wird es im angegebenen Optionen folgen der **Optionen** Dialogfeld oder die Befehle des Benutzers.  
   
-3.  Rufen Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> Methode, und geben den Wert der entsprechenden Einstellungen in der `idprop` Parameter.  
+3. Rufen Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> Methode, und geben den Wert der entsprechenden Einstellungen in der `idprop` Parameter.  
   
      Beispielsweise um Zeilenumbruch zu erzwingen, rufen Sie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> und geben Sie den Wert VSEDITPROPID_ViewLangOpt_WordWrap, `vt` für die `idprop` Parameter. In diesem Aufruf `vt` ist eine Variante des Typs VT_BOOL und `vt.boolVal` auf VARIANT_TRUE festgelegt ist.  
   
@@ -53,4 +48,3 @@ Einstellungen, die Kern-Editor-Features, z. B. Zeilenumbruch, Auswahlrand und vi
  [In der Kern-Editor](../extensibility/inside-the-core-editor.md)   
  [Zugreifen auf TheText Ansicht mit der Legacy-API](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)   
  [Optionen (Dialogfeld)](../ide/reference/options-dialog-box-visual-studio.md)
-

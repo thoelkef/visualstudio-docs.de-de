@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Manuelles Erstellen von Webvorlagen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, Web
 - templates [Visual Studio], Web
@@ -18,21 +13,21 @@ ms.assetid: 731c4027-a152-48c5-bfc4-93490bf1949f
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 23d810c6bbb460f01528d5f9fb55bb8ca482e383
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8a505fe3428a8e16c321eee4764f8a62fff65511
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880753"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431099"
 ---
-# <a name="how-to-manually-create-web-templates"></a>Gewusst wie: Manuelles Erstellen von Webvorlagen
+# <a name="how-to-manually-create-web-templates"></a>Vorgehensweise: Manuelles Erstellen von Webvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Das Erstellen einer Webvorlage unterscheidet sich vom Erstellen anderer Vorlagen. Da Vorlagen für Webprojekte im Dialogfeld **Neue Website hinzufügen** angezeigt werden, und Elemente von Webprojekten nach Programmiersprache kategorisiert werden, muss die Vorlage in der VSTEMPLATE-Datei als Webvorlage angegeben sein. Die Datei muss außerdem Angaben zur Programmiersprache enthalten.  
   
 > [!NOTE]
->  Webvorlagen müssen eine leere WEBPROJ-Datei enthalten, die mithilfe des `File`-Attributs des `Project`-Elements angegeben wird. Obwohl Webprojekte keine Projektdateien benötigen, ist diese Datei erforderlich, damit eine Webvorlage richtig funktioniert.  
+> Webvorlagen müssen eine leere WEBPROJ-Datei enthalten, die mithilfe des `File`-Attributs des `Project`-Elements angegeben wird. Obwohl Webprojekte keine Projektdateien benötigen, ist diese Datei erforderlich, damit eine Webvorlage richtig funktioniert.  
   
 ### <a name="to-manually-create-a-web-template"></a>So erstellen Sie eine Webvorlage manuell  
   
@@ -94,6 +89,3 @@ Das Erstellen einer Webvorlage unterscheidet sich vom Erstellen anderer Vorlagen
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)   
  [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
-
-
-

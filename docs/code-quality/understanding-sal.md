@@ -1,7 +1,6 @@
 ---
 title: Einführung in SAL
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
 author: mikeblome
@@ -9,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 56d416ce154f071804beb9b47d2623f2acee15af
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: f306e0a30dc8faa8f961cb7096a31a049547a70e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889919"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820405"
 ---
 # <a name="understanding-sal"></a>Einführung in SAL
 
@@ -106,14 +105,14 @@ Diese Implementierung enthält einen häufiger Fehler der aus ein. Zum Glück en
 ## <a name="sal-examples"></a>Beispiele zu SAL
  Dieser Abschnitt zeigt die Codebeispiele für die grundlegende SAL-Anmerkungen.
 
-### <a name="using-the-visual-studio-code-analysis-tool-to-find-defects"></a>Suchen von Fehlern mit den Visual Studio Codeanalysetools
+### <a name="using-the-visual-studio-code-analysis-tool-to-find-defects"></a>Suchen von Fehlern mit den Visual Studio-Codeanalysetools
  In den Beispielen wird das Tool für Visual Studio-Codeanalyse zusammen mit SAL-Anmerkungen verwendet, um Codefehler zu finden. Hier ist wie das geht.
 
 #### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>So verwenden Sie Visual Studio-Codeanalysetools und SAL
 
-1.  Öffnen Sie in Visual Studio ein C++-Projekt, SAL-Anmerkungen enthält.
+1. Öffnen Sie in Visual Studio ein C++-Projekt, SAL-Anmerkungen enthält.
 
-2.  Wählen Sie auf der Menüleiste **erstellen**, **Codeanalyse für Lösung ausführen**.
+2. Wählen Sie auf der Menüleiste **erstellen**, **Codeanalyse für Lösung ausführen**.
 
      Betrachten Sie die \_In\_ Beispiel in diesem Abschnitt. Wenn Sie die Codeanalyse darauf ausführen, wird diese Warnung angezeigt:
 
@@ -123,15 +122,15 @@ Diese Implementierung enthält einen häufiger Fehler der aus ein. Zum Glück en
 
 Die `_In_` Anmerkung gibt an, dass:
 
--   Der Parameter muss gültig sein und wird nicht geändert werden.
+- Der Parameter muss gültig sein und wird nicht geändert werden.
 
--   Die Funktion liest nur aus dem Puffer für die einzelnen Element.
+- Die Funktion liest nur aus dem Puffer für die einzelnen Element.
 
--   Der Aufrufer muss den Puffer bereitstellen, und initialisieren Sie sie.
+- Der Aufrufer muss den Puffer bereitstellen, und initialisieren Sie sie.
 
--   `_In_` Gibt an, "schreibgeschützt". Ein häufiger Fehler besteht darin, anzuwendende `_In_` auf einen Parameter, die haben, sollte die `_Inout_` Anmerkung stattdessen.
+- `_In_` Gibt an, "schreibgeschützt". Ein häufiger Fehler besteht darin, anzuwendende `_In_` auf einen Parameter, die haben, sollte die `_Inout_` Anmerkung stattdessen.
 
--   `_In_` kann jedoch vom Analyzer auf Nichtzeiger skalare ignoriert.
+- `_In_` kann jedoch vom Analyzer auf Nichtzeiger skalare ignoriert.
 
 ```cpp
 void InCallee(_In_ int *pInt)

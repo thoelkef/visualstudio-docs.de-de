@@ -1,7 +1,6 @@
 ---
 title: 'Szenario: Ändern des Entwurfs mithilfe von Visualisierung und Modellierung'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code visualization [Visual Studio ALM]
@@ -13,15 +12,15 @@ helpviewer_keywords:
 - walkthroughs [Visual Studio ALM], modeling software
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89f39fd11e5f42a61fa322edddf83afef1d2fc4b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7f2e31e74ba89c30cfbacc46d1b72428372191ae
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821243"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476594"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Szenario: Ändern des Entwurfs mithilfe von Visualisierung und Modellierung
 
@@ -72,7 +71,7 @@ Beide Teams verwenden Modellierungsdiagramme in Visual Studio, die sie dabei unt
 
 Weitere Informationen über Team Foundation Server finden Sie unter:
 
-- [Planen und Nachverfolgen der Arbeit](#planning-and-tracking-work)
+- [Planen und Nachverfolgen der Arbeit](#plan-and-track-work)
 
 - [Testen, Überprüfen und Einchecken von aktualisiertem Code](#TestValidateCheckInCode)
 
@@ -96,7 +95,7 @@ Thema
 
 - [Projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md)
 
-- [Vorgehensweise: Hinzufügen von Klassendiagrammen zu Projekten (Klassen-Designer)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
+- [Vorgehensweise: Hinzufügen von Klassendiagrammen zu Projekten](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
 
 - [Modellierungs-SDK für Visual Studio - Domänenspezifische Sprachen](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
 
@@ -173,11 +172,11 @@ Dinner Now muss die Kosten für die Erfüllung der neuen Anforderung schätzen. 
 
 |**Diagramm**|**Beschreibt**|
 |-|-|
-|*Abhängigkeitsdiagramm*<br /><br /> Thema<br /><br /> - [Erstellen von Abhängigkeitsdiagrammen aus Ihrem code](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Abhängigkeitsdiagramme: Referenz](../modeling/layer-diagrams-reference.md)<br />- [Abhängigkeitsdiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md)<br />- [Überprüfen von Code mit Abhängigkeitsdiagrammen](../modeling/validate-code-with-layer-diagrams.md)|Die logische Architektur des Codes<br /><br /> Ein Abhängigkeitsdiagramm organisiert und ordnet die Elemente in Visual Studio-Projektmappe, abstrakten Gruppen, genannt *Ebenen*. Diese Ebenen identifizieren die Rollen, Aufgaben oder Funktionen, die diese Artefakte im System spielen.<br /><br /> Ebenendiagramme sind hilfreich, um den beabsichtigten Entwurf des Systems zu beschreiben und in der Entwicklung befindlichen Code anhand des Entwurfs zu validieren.<br /><br /> Um Ebenen zu erstellen, ziehen Sie Elemente aus dem Projektmappen-Explorer, Code Maps, der Klassenansicht und dem Objektkatalog. Verwenden Sie die Toolbox, oder klicken Sie mit der rechten Maustaste auf die Diagrammoberfläche, um neue Ebenen zu zeichnen.<br /><br /> Um vorhandene Abhängigkeiten anzuzeigen, klicken Sie mit der rechten Maustaste auf die Ebenendiagrammoberfläche, und klicken Sie dann auf **Abhängigkeiten generieren**. Um beabsichtigte Abhängigkeiten anzugeben, zeichnen Sie neue Abhängigkeiten.|
+|*Abhängigkeitsdiagramm*<br /><br /> Thema<br /><br /> - [Erstellen von Abhängigkeitsdiagrammen aus Ihrem code](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Abhängigkeitsdiagramme: Referenz](../modeling/layer-diagrams-reference.md)<br />- [Abhängigkeitsdiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md)<br />- [Überprüfen von Code mit Abhängigkeitsdiagrammen](../modeling/validate-code-with-layer-diagrams.md)|Die logische Architektur des Codes<br /><br /> Ein Abhängigkeitsdiagramm organisiert und ordnet die Elemente in Visual Studio-Projektmappe, abstrakten Gruppen, genannt *Ebenen*. Diese Ebenen identifizieren die Rollen, Aufgaben oder Funktionen, die diese Artefakte im System spielen.<br /><br /> Abhängigkeitsdiagramme eignen sich für den beabsichtigten Entwurf des Systems zu beschreiben und sich entwickelnden Code anhand des Entwurfs zu validieren.<br /><br /> Um Ebenen zu erstellen, ziehen Sie Elemente aus dem Projektmappen-Explorer, Code Maps, der Klassenansicht und dem Objektkatalog. Verwenden Sie die Toolbox, oder klicken Sie mit der rechten Maustaste auf die Diagrammoberfläche, um neue Ebenen zu zeichnen.<br /><br /> Um vorhandene Abhängigkeiten anzuzeigen, mit der rechten Maustaste in der Diagrammoberfläche Abhängigkeit, und klicken Sie dann auf **Abhängigkeiten generieren**. Um beabsichtigte Abhängigkeiten anzugeben, zeichnen Sie neue Abhängigkeiten.|
 
- Die folgende Abhängigkeitsdiagramm beschreibt z. B. Abhängigkeiten zwischen Ebenen sowie die Anzahl der Elemente, die jeder Ebene zugeordnet sind:
+Die folgende Abhängigkeitsdiagramm beschreibt z. B. Abhängigkeiten zwischen Ebenen sowie die Anzahl der Elemente, die jeder Ebene zugeordnet sind:
 
- ![Abhängigkeitsdiagramm für integriertes Zahlungssystem](../modeling/media/layer_integrated_dnlucerne.png)
+![Abhängigkeitsdiagramm für integriertes Zahlungssystem](../modeling/media/layer_integrated_dnlucerne.png)
 
  **Abhängigkeitsdiagramm**
 
@@ -195,7 +194,7 @@ Thema
 
 - Die meisten Diagramme bestehen aus Knoten, die durch Linien verbunden sind. Für jeden Diagrammtyp stellt die Toolbox verschiedene Arten von Knoten und Linien bereit.
 
-     Zum Öffnen der Toolbox klicken Sie im Menü **Ansicht** auf **Toolbox**.
+   Zum Öffnen der Toolbox klicken Sie im Menü **Ansicht** auf **Toolbox**.
 
 - Um einen Knoten zu erstellen, ziehen Sie ihn von der Toolbox in das Diagramm. Bestimmte Arten von Knoten müssen auf vorhandene Knoten gezogen werden. In einem Komponentendiagramm muss einer vorhandenen Komponente z. B. ein neuer Port hinzugefügt werden.
 
@@ -207,7 +206,7 @@ Visual Studio-Modellierungsdiagramme sind in Team Foundation Server integriert, 
 
 Im Verlauf ihrer Arbeit aktualisieren die Teams die Arbeitselemente, um die Zeit zu berücksichtigen, die sie mit ihren Aufgaben verbracht haben. Außerdem wird eine Überwachung und Berichterstellung des Status der Arbeit mithilfe der folgenden Team Foundation Server-Funktionen durchgeführt:
 
-- Tägliche *Burndownberichte* , die angeben, ob die geplante Arbeit in der erwarteten Zeit angeschlossen wird. Es werden andere ähnliche Berichte in Team Foundation Server generiert, um den Status von Fehlern zu verfolgen.
+- Tägliche *Berichten Burndown* , die anzeigen, ob die geplante Arbeit in der erwarteten Zeit angeschlossen wird. Es werden andere ähnliche Berichte in Team Foundation Server generiert, um den Status von Fehlern zu verfolgen.
 
 - Ein *Iterationsarbeitsblatt* , das Microsoft Excel verwendet, mit dem das Team die Arbeitsauslastung überwachen und zwischen den Mitgliedern ausgleichen kann. Dieses Arbeitsblatt ist mit Team Foundation Server verknüpft und bietet eine Diskussionsbasis bei den regelmäßigen Statusbesprechungen.
 
@@ -215,7 +214,7 @@ Im Verlauf ihrer Arbeit aktualisieren die Teams die Arbeitselemente, um die Zeit
 
 Thema
 
-- [Informationen zu Agile-Tools und Agile-projektverwaltung](/azure/devops/boards/backlogs/overview?view=vsts)
+- [Informationen zu Agile-Tools und Agile-projektverwaltung](/azure/devops/boards/backlogs/backlogs-overview?view=vsts)
 
 - [Diagramme, Dashboards und Widgets (Azure DevOps-Services)](/azure/devops/report/dashboards/overview?view=vsts)
 
@@ -330,7 +329,7 @@ Diese Code Map zeigt, dass sich die PaymentApprover-Klasse jetzt im DinnerNow.Bu
 
 |**Diagramm**|**Beschreibt**|
 |-|-|
-|Abhängigkeitsdiagramm|Die logische Architektur des Systems Verwenden Sie abhängigkeitsüberprüfung, um sicherzustellen, dass der Code konsistent mit dem Entwurf bleibt.<br /><br /> Um vorhandene Dependencys oder vorgesehenen Dependencys zu identifizieren, erstellen Sie eine Code Map aus, und gruppieren Sie verwandte Elemente. Um ein Abhängigkeitsdiagramm zu erstellen, finden Sie unter:<br /><br /> - [Erstellen von Abhängigkeitsdiagrammen aus Ihrem code](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Abhängigkeitsdiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md)|
+|Abhängigkeitsdiagramm|Die logische Architektur des Systems Verwenden Sie abhängigkeitsüberprüfung, um sicherzustellen, dass der Code konsistent mit dem Entwurf bleibt.<br /><br /> Um vorhandene Abhängigkeiten oder beabsichtigte Abhängigkeiten zu identifizieren, erstellen Sie eine Code Map aus, und gruppieren Sie verwandte Elemente. Um ein Abhängigkeitsdiagramm zu erstellen, finden Sie unter:<br /><br /> - [Erstellen von Abhängigkeitsdiagrammen aus Ihrem code](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Abhängigkeitsdiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md)|
 |Klassendiagramm (codebasiert)|Vorhandene Klassen in Code für ein bestimmtes Projekt<br /><br /> Verwenden Sie den Klassen-Designer, um eine vorhandene Klasse in Code zu visualisieren und zu ändern.<br /><br /> Weitere Informationen finden Sie unter [How to: Hinzufügen von Klassendiagrammen zu Projekten (Klassen-Designer)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md).|
 
 ### <a name="DefineClasses"></a> Definieren eines Glossars der Typen: Klassendiagramme
@@ -384,7 +383,7 @@ Ein Klassendiagramm umfasst die folgenden Hauptfunktionen:
 
 Als Ausgangspunkt für die Untersuchung und Besprechung bestehender Klassen können Sie mit dem Klassen-Designer Klassendiagramme aus Code erstellen.
 
-- [Vorgehensweise: Hinzufügen von Klassendiagrammen zu Projekten (Klassen-Designer)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
+- [Vorgehensweise: Hinzufügen von Klassendiagrammen zu Projekten](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
 
 #### <a name="summary-strengths-of-class-diagrams"></a>Zusammenfassung: Vorteile von Klassendiagrammen
  Mit Klassendiagrammen können Sie Folgendes definieren:

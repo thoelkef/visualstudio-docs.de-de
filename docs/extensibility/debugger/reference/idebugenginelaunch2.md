@@ -1,25 +1,27 @@
 ---
 title: IDebugEngineLaunch2 | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugEngineLaunch2
 helpviewer_keywords:
 - IDebugEngineLaunch2 interface
 ms.assetid: 5eaf2ad8-3fbf-446e-b48b-5327ad3f5255
-author: gregvanl
+caps.latest.revision: 13
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 06ca3d52c58ea1d8aff78936f8b7240e1b77e9c4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d7578bc8564e65211ec809710e4f69ec96bcdf5d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934264"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62920344"
 ---
 # <a name="idebugenginelaunch2"></a>IDebugEngineLaunch2
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Wird von einer Debug-Engine (DE) zum Starten und Beenden von Programmen.  
   
 ## <a name="syntax"></a>Syntax  

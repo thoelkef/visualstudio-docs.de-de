@@ -1,8 +1,6 @@
 ---
-title: 'Gewusst wie: Erstellen eines Typs, der Nullwerte zulässt (Klassen-Designer)'
+title: 'Vorgehensweise: Erstellen eines Typs, der NULL-Werte zulässt (Klassen-Designer)'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - nullable types, Class Designer
@@ -10,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 84673a89-3f6d-4668-919e-1c0f56182fe5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ef167e83bc8f27a53405ef6ab7a3f9271863b4d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 0212f7ef1c5b506ce7a1efbde60e7c46a424bfa3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38785836"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975517"
 ---
 # <a name="how-to-create-a-nullable-type-in-class-designer"></a>Vorgehensweise: Erstellen eines Typs im Klassen-Designer, der NULL-Werte zulässt
 
@@ -31,9 +29,9 @@ Ein *Nullable-Typ* ist ein Werttyp, den Sie erweitern, sodass der normale Werteb
 
 Auf NULL festlegbare Typen sind Instanzen der <xref:System.Nullable%601>-Struktur. Jede Instanz eines Nullable-Typs hat zwei öffentliche schreibgeschützte Eigenschaften `HasValue` und `Value`:
 
--   `HasValue` ist vom Typ `bool` und gibt an, ob die Variable einen definierten Wert enthält. `True` bedeutet, dass die Variable einen nicht-NULL-Wert enthält. Sie können mithilfe einer Anweisung wie `if (x.HasValue)` oder `if (y != null)` auf einen definierten Wert testen.
+- `HasValue` ist vom Typ `bool` und gibt an, ob die Variable einen definierten Wert enthält. `True` bedeutet, dass die Variable einen nicht-NULL-Wert enthält. Sie können mithilfe einer Anweisung wie `if (x.HasValue)` oder `if (y != null)` auf einen definierten Wert testen.
 
--   `Value` hat denselben Typ wie der zugrunde liegende Typ. Wenn `HasValue` `True` ist, enthält `Value` einen sinnvollen Wert. Wenn `HasValue` `False` ist, wird der Zugriff auf `Value` eine ungültige Operationsausnahme auslösen.
+- `Value` hat denselben Typ wie der zugrunde liegende Typ. Wenn `HasValue` `True` ist, enthält `Value` einen sinnvollen Wert. Wenn `HasValue` `False` ist, wird der Zugriff auf `Value` eine ungültige Operationsausnahme auslösen.
 
 Beim Deklarieren einer Variablen als Nullable-Typ verfügt sie standardmäßig über keinen definierten Wert (`HasValue` ist `False`) als der Standardwert des ihr zugrunde liegenden Werttyps.
 
@@ -45,26 +43,26 @@ Weitere Informationen zu Typen in C#, die NULL-Werte zulassen, finden Sie unter 
 
 ## <a name="to-add-a-nullable-type-by-using-the-class-designer"></a>Hinzufügen eines Nullable-Typs mithilfe des Klassen-Designers
 
-1.  Erweitern Sie im Klassendiagramm eine vorhandene Klasse, oder erstellen Sie eine neue Klasse.
+1. Erweitern Sie im Klassendiagramm eine vorhandene Klasse, oder erstellen Sie eine neue Klasse.
 
-2.  Klicken Sie im Menü **Klassendiagramm** auf **Hinzufügen** > **Klasse hinzufügen**, um dem Projekt eine Klasse hinzuzufügen.
+2. Klicken Sie im Menü **Klassendiagramm** auf **Hinzufügen** > **Klasse hinzufügen**, um dem Projekt eine Klasse hinzuzufügen.
 
-3.  Klicken Sie im Menü **Klassendiagramm** auf **Erweitern**, um die Klassenform zu erweitern.
+3. Klicken Sie im Menü **Klassendiagramm** auf **Erweitern**, um die Klassenform zu erweitern.
 
-4.  Wählen Sie die Klassenform aus. Klicken Sie im Menü **Klassendiagramm** auf **Hinzufügen** > **Feld**. Ein neues Feld mit den Standardnamen **Feld** wird in der Klassenform und auch im Fenster **Klassendetails** angezeigt.
+4. Wählen Sie die Klassenform aus. Klicken Sie im Menü **Klassendiagramm** auf **Hinzufügen** > **Feld**. Ein neues Feld mit den Standardnamen **Feld** wird in der Klassenform und auch im Fenster **Klassendetails** angezeigt.
 
-5.  Ändern Sie in der Spalte **Name** im Fenster **Klassendetails** (oder in der Klassenform selbst) den Namen des neuen Felds in einen gültigen und aussagekräftigen Namen.
+5. Ändern Sie in der Spalte **Name** im Fenster **Klassendetails** (oder in der Klassenform selbst) den Namen des neuen Felds in einen gültigen und aussagekräftigen Namen.
 
-6.  Deklarieren Sie den Typ in der Spalte **Typ** im Fenster **Klassendetails** wie im Folgenden dargestellt als Nullable-Typ:
+6. Deklarieren Sie den Typ in der Spalte **Typ** im Fenster **Klassendetails** wie im Folgenden dargestellt als Nullable-Typ:
 
     - `int?` (Visual C#)
     - `Nullable(Of Integer)` (Visual Basic)
 
 ## <a name="to-add-a-nullable-type-by-using-the-code-editor"></a>Hinzufügen eines Nullable-Typs mithilfe des Code-Editors
 
-1.  Fügen Sie dem Projekt eine Klasse hinzu. Wählen Sie im **Projektmappen-Explorer** einen Projektknoten aus und klicken Sie dann im Menü **Projekt** auf **Klasse hinzufügen**.
+1. Fügen Sie dem Projekt eine Klasse hinzu. Wählen Sie im **Projektmappen-Explorer** einen Projektknoten aus und klicken Sie dann im Menü **Projekt** auf **Klasse hinzufügen**.
 
-2.  Fügen Sie in der CS- oder VB-Datei für die neue Klasse eine oder mehrere Nullable-Typen in der Klassendeklaration hinzu.
+2. Fügen Sie in der CS- oder VB-Datei für die neue Klasse eine oder mehrere Nullable-Typen in der Klassendeklaration hinzu.
 
     ```csharp
     // Declare a nullable type in Visual C#:
@@ -81,16 +79,16 @@ Weitere Informationen zu Typen in C#, die NULL-Werte zulassen, finden Sie unter 
     End Class
     ```
 
-3.  Ziehen Sie das Klassensymbol in der Klassenansicht zur Entwurfsoberfläche des Klassen-Designers. Eine Klassenform wird im Klassendiagramm angezeigt.
+3. Ziehen Sie das Klassensymbol in der Klassenansicht zur Entwurfsoberfläche des Klassen-Designers. Eine Klassenform wird im Klassendiagramm angezeigt.
 
-4.  Erweitern Sie die Details für die Klassenform, und bewegen Sie den Mauszeiger über die Klassenmember. Die QuickInfo zeigt die Deklaration der einzelnen Member.
+4. Erweitern Sie die Details für die Klassenform, und bewegen Sie den Mauszeiger über die Klassenmember. Die QuickInfo zeigt die Deklaration der einzelnen Member.
 
-5.  Klicken Sie mit der rechten Maustaste auf Klassenform und auf **Klassendetails**. Sie können die Eigenschaften des neuen Typs im Fenster **Klassendetails** anzeigen oder ändern.
+5. Klicken Sie mit der rechten Maustaste auf Klassenform und auf **Klassendetails**. Sie können die Eigenschaften des neuen Typs im Fenster **Klassendetails** anzeigen oder ändern.
 
 ## <a name="see-also"></a>Siehe auch
 
 - <xref:System.Nullable%601>
 - [Typen mit Nullwert](/dotnet/csharp/programming-guide/nullable-types/index)
 - [Verwenden von Typen mit Nullwert](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types)
-- [Gewusst wie: Identifizieren eines Typs mit Nullwerten](/dotnet/csharp/programming-guide/nullable-types/how-to-identify-a-nullable-type)
+- [Vorgehensweise: Identifizieren eines Typs, der NULL-Werte zulässt](/dotnet/csharp/programming-guide/nullable-types/how-to-identify-a-nullable-type)
 - [Auf NULL festlegbare Werttypen](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)

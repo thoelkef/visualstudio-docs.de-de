@@ -1,21 +1,19 @@
 ---
 title: Anzeigen von Daten in Blend
 ms.date: 03/06/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 87d31b6c-4607-4121-bb7d-cfc80390ab93
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae09c6921bc4f6e0b3bb2a91eb9c3972c997d566
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9a17f3db9aac8128218f82d3faa3ff1b62f9822a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282169"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898010"
 ---
 # <a name="display-data-in-blend"></a>Anzeigen von Daten in Blend
 
@@ -33,9 +31,9 @@ Wenn die Beispieldaten beim Ausführen der Anwendung auf Ihren Seiten angezeigt 
 
 ![Menüelement „Beim Ausführen der Anwendung aktivieren“](../designers/media/05d5356d-91bb-4e6b-b3f7-29b76852c4b3.png)
 
- **Sehen Sie sich dieses kurze Video an:** ![Play-Symbol](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Neuerstellen von Beispieldaten](http://www.bing.com/videos/search?q=blend%20data&qs=n&form=QBVR&pq=blend%20data&sc=8-7&sp=-1&sk=#view=detail&mid=F8F2449A76956D480FD2F8F2449A76956D480FD2).
+ **Sehen Sie sich ein kurzes Video an:** ![Play-Symbol](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Neuerstellen von Beispieldaten](http://www.bing.com/videos/search?q=blend%20data&qs=n&form=QBVR&pq=blend%20data&sc=8-7&sp=-1&sk=#view=detail&mid=F8F2449A76956D480FD2F8F2449A76956D480FD2).
 
- **Sehen Sie sich dieses kurze Video an:** ![Play-Symbol](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Zusammenführen von Datenbindungen mit Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).
+ **Sehen Sie sich ein kurzes Video an:** ![Play-Symbol](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Zusammenführen von Datenbindungen mit Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).
 
 ## <a name="generate-sample-data-from-a-class"></a>Generieren von Beispieldaten aus einer Klasse
 
@@ -43,13 +41,13 @@ Wenn Sie bereits Klassen erstellt haben, die die Struktur Ihrer Daten beschreibe
 
 Öffnen Sie zum Generieren von Beispieldaten aus einer Klasse ein XAML-Dokument, klicken Sie im Bereich **Daten** auf die Schaltfläche **Beispieldaten erstellen** ![Beispieldaten erstellen Symbol](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png) und anschließend auf **Beispieldaten aus Klasse erstellen**.
 
-**Sehen Sie sich dieses kurze Video an:** ![Play-Symbol](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Erstellen von Beispieldaten aus einer Klasse](https://channel9.msdn.com/Shows/Inside+Windows+Phone/IWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML).
+**Sehen Sie sich ein kurzes Video an:** ![Play-Symbol](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Erstellen von Beispieldaten aus einer Klasse](https://channel9.msdn.com/Shows/Inside+Windows+Phone/IWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML).
 
-**Sehen Sie sich dieses kurze Video an:** ![Play-Symbol](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Zusammenführen von Datenbindungen mit Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).
+**Sehen Sie sich ein kurzes Video an:** ![Play-Symbol](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Zusammenführen von Datenbindungen mit Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).
 
 ## <a name="show-live-data-in-a-wpf-application"></a>Anzeigen von Live-Daten in einer WPF-Anwendung
 
-**Sehen Sie sich dieses kurze Video an:** ![Play-Symbol](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Erstellen einer XML-Datenquelle](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata).
+**Sehen Sie sich ein kurzes Video an:** ![Play-Symbol](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Erstellen einer XML-Datenquelle](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata).
 
 ## <a name="show-live-data-in-a-store-or-phone-app"></a>Anzeigen von Livedaten in einem Store oder einer Phone-App
 

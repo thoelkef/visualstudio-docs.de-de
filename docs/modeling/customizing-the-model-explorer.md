@@ -8,27 +8,26 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, Domain-Specific Language Explorer
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: f3b9df35c4dd69b52c6c4562f3e634dd9a2bdb56
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: 65ada4a061fd928a074c9fcdb24fab60a277c457
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986816"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445839"
 ---
 # <a name="customizing-the-model-explorer"></a>Anpassen des Modell-Explorers
 Sie können das Aussehen und Verhalten des Explorers für Ihre DSL-Designer wie folgt ändern:
 
--   Den Titel des Fensters zu ändern.
+- Den Titel des Fensters zu ändern.
 
--   Ändern Sie die Registerkarte.
+- Ändern Sie die Registerkarte.
 
--   Ändern Sie die Symbole für Knoten an.
+- Ändern Sie die Symbole für Knoten an.
 
--   Blenden Sie Knoten aus.
+- Blenden Sie Knoten aus.
 
 ## <a name="changing-the-window-title"></a>Den Titel des Fensters ändern
  Um dem Fenstertitel des generierter Explorer ändern, wählen **Explorer-Verhalten** in die **DSL-Explorer**, und klicken Sie dann in der **Eigenschaften** legen die  **Titel** Eigenschaft, um den Titel werden sollen.
@@ -60,32 +59,32 @@ Sie können das Aussehen und Verhalten des Explorers für Ihre DSL-Designer wie 
     Im Explorer sollte angezeigt werden drei **Actor** Knoten mit dem Symbol.
 
 > [!NOTE]
->  Wenn Sie ein Symbol "Knoten" für jedes Element festgelegt haben, die im generierten-Explorer angezeigt wird, werden alle Explorer-Knoten das Symbol angezeigt. Wenn das Symbol "keine" festgelegt wurde, werden der Knoten das Standardsymbol angezeigt.
+> Wenn Sie ein Symbol "Knoten" für jedes Element festgelegt haben, die im generierten-Explorer angezeigt wird, werden alle Explorer-Knoten das Symbol angezeigt. Wenn das Symbol "keine" festgelegt wurde, werden der Knoten das Standardsymbol angezeigt.
 
 ## <a name="changing-the-name-displayed-on-an-explorer-node"></a>Ändern des Namens angezeigt, die auf einem Explorerknoten
  Sie können ändern, wie die Namen von Modellelementen im Explorer angezeigt werden. Das folgende Verfahren zeigt, wie Sie den Namen des Anzeigen der **Aufgabe** auf den verwiesen wird durch eine **Kommentar** im Knoten "Kommentar".
 
 #### <a name="to-display-a-property"></a>Eine Eigenschaft an
 
-1.  Öffnen Sie die Projektmappe, die Sie im vorherigen Verfahren erstellt haben.
+1. Öffnen Sie die Projektmappe, die Sie im vorherigen Verfahren erstellt haben.
 
-2.  Stellen Sie sicher, dass die **Kommentar** verweist auf nur eine einzelne Domäne-Klasse durch die Multiplizität der Rolle mit dem Eigenschaftsnamen festlegen **Themen** auf 0.. 1. Namen der Eigenschaft sollte werden **Betreff**, und den Namen der Beziehung sollte werden **CommentReferencesSubject**.
+2. Stellen Sie sicher, dass die **Kommentar** verweist auf nur eine einzelne Domäne-Klasse durch die Multiplizität der Rolle mit dem Eigenschaftsnamen festlegen **Themen** auf 0.. 1. Namen der Eigenschaft sollte werden **Betreff**, und den Namen der Beziehung sollte werden **CommentReferencesSubject**.
 
-3.  In der **DSL-Explorer**, mit der rechten Maustaste **Explorer-Verhalten** , und klicken Sie dann auf **fügen neue Explorer-Knoteneinstellungen**.
+3. In der **DSL-Explorer**, mit der rechten Maustaste **Explorer-Verhalten** , und klicken Sie dann auf **fügen neue Explorer-Knoteneinstellungen**.
 
      Ein **ExplorerNodeSettings** Knoten befindet sich unter dem **benutzerdefinierte Knoteneinstellungen** Knoten.
 
-4.  Wählen Sie **ExplorerNodeSettings**, und klicken Sie dann in der **Eigenschaften** legen **Klasse** zu **Kommentar**.
+4. Wählen Sie **ExplorerNodeSettings**, und klicken Sie dann in der **Eigenschaften** legen **Klasse** zu **Kommentar**.
 
-5.  Mit der rechten Maustaste die **Kommentar** Knoten, und klicken Sie dann auf **Hinzufügen neuer Eigenschaftspfad**.
+5. Mit der rechten Maustaste die **Kommentar** Knoten, und klicken Sie dann auf **Hinzufügen neuer Eigenschaftspfad**.
 
      Ein neuer Knoten wird angezeigt, mit dem Namen **Eigenschaft angezeigt**.
 
-6.  Wählen Sie **Eigenschaft angezeigt**, und klicken Sie dann in der **Eigenschaften** Fenster klicken Sie auf das Wertfeld **Pfad (Eigenschaft),**. Wählen Sie **Kommentar**, klicken Sie dann **CommentReferencesSubject**, klicken Sie dann **FlowElement**. Der resultierende Pfad entspricht in etwa **CommentReferencesSubject.Subject/! Betreff**.
+6. Wählen Sie **Eigenschaft angezeigt**, und klicken Sie dann in der **Eigenschaften** Fenster klicken Sie auf das Wertfeld **Pfad (Eigenschaft),**. Wählen Sie **Kommentar**, klicken Sie dann **CommentReferencesSubject**, klicken Sie dann **FlowElement**. Der resultierende Pfad entspricht in etwa **CommentReferencesSubject.Subject/! Betreff**.
 
-7.  Klicken Sie im Feld mit Wert **Eigenschaft**Option **Namen**.
+7. Klicken Sie im Feld mit Wert **Eigenschaft**Option **Namen**.
 
-8.  Transformieren Sie alle Vorlagen, und klicken Sie dann erstellen Sie, und führen Sie die Projektmappe.
+8. Transformieren Sie alle Vorlagen, und klicken Sie dann erstellen Sie, und führen Sie die Projektmappe.
 
 9. Öffnen Sie im generierten Designer das Beispiel-Diagramm.
 
@@ -98,17 +97,17 @@ Sie können das Aussehen und Verhalten des Explorers für Ihre DSL-Designer wie 
 
 #### <a name="to-hide-an-explorer-node"></a>So blenden Sie ein Explorerknoten aus.
 
-1.  Öffnen Sie die Projektmappe, die Sie im vorherigen Verfahren erstellt haben.
+1. Öffnen Sie die Projektmappe, die Sie im vorherigen Verfahren erstellt haben.
 
-2.  In der **DSL-Explorer**, mit der rechten Maustaste **Explorer-Verhalten** , und klicken Sie dann auf **Pfad der neuen Domäne hinzufügen**.
+2. In der **DSL-Explorer**, mit der rechten Maustaste **Explorer-Verhalten** , und klicken Sie dann auf **Pfad der neuen Domäne hinzufügen**.
 
      Ein **Domänenpfad** Knoten befindet sich unter **ausgeblendete Knoten**.
 
-3.  Wählen Sie **Domänenpfad**, und klicken Sie dann in der **Eigenschaften** Fenster klicken Sie auf das Wertfeld **Pfaddefinition**. Wählen Sie **FlowGraph**, klicken Sie dann **FlowGraphHasComments**. Der resultierende Pfad entspricht in etwa **FlowGraphHasComments.Comments**
+3. Wählen Sie **Domänenpfad**, und klicken Sie dann in der **Eigenschaften** Fenster klicken Sie auf das Wertfeld **Pfaddefinition**. Wählen Sie **FlowGraph**, klicken Sie dann **FlowGraphHasComments**. Der resultierende Pfad entspricht in etwa **FlowGraphHasComments.Comments**
 
-4.  Transformieren Sie alle Vorlagen, und klicken Sie dann erstellen Sie, und führen Sie die Projektmappe.
+4. Transformieren Sie alle Vorlagen, und klicken Sie dann erstellen Sie, und führen Sie die Projektmappe.
 
-5.  Öffnen Sie im generierten Designer das Beispiel-Diagramm.
+5. Öffnen Sie im generierten Designer das Beispiel-Diagramm.
 
      Im Explorer sollte nur dann angezeigt, eine **Actors** Knoten, und sollte nicht anzeigen der **Kommentare** Knoten.
 

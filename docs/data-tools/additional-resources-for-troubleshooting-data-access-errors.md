@@ -221,33 +221,31 @@ helpviewer_keywords:
 ms.assetid: 357c9f0a-9d59-4db4-9b7c-b96cad839961
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 677374404de8469c8a99a906638f326ae7a9ff3c
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 9867f9b595937e0ae8586aabdba180f4b1d8d359
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62818077"
 ---
 # <a name="troubleshoot-data-access-errors-on-the-forums"></a>Beheben von Datenzugriffsfehlern in den Foren
 
 Hilfe bei der Problembehandlung für Fehler und Warnungen finden Sie in den öffentlichen Foren von MSDN (Microsoft Developer Network). Hier sind einige datenbezogenen Foren auf MSDN verfügbar sind:
 
-- [Windows Forms-Datensteuerelemente und Datenbindung](https://social.msdn.microsoft.com/Forums/windows/en-US/home?forum=winformsdatacontrols)
+- [Windows Forms-Datensteuerelemente und -Datenbindung](https://social.msdn.microsoft.com/Forums/windows/en-US/home?forum=winformsdatacontrols)
 
 - [ADO.NET DataSet-forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataset)
 
 - [ADO.NET Entity Framework und LINQ to Entities](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetentityframework)
 
-- [WCF Data Services-forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataservices)
+- [WCF Data Services-Forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataservices)
 
-- [SQL Server-datenzugriffsforum](https://social.msdn.microsoft.com/Forums/sqlserver/en-US/home?forum=sqldataaccess)
+- [Forum zum SQL Server-Datenzugriff](https://social.msdn.microsoft.com/Forums/sqlserver/en-US/home?forum=sqldataaccess)
 
-- [LINQ to SQL-forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=linqtosql)
+- [LINQ to SQL-Forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=linqtosql)
 
 - [ADO.NET-Forum für Data-Anbieter](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataproviders)
 

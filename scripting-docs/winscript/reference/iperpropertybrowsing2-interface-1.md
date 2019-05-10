@@ -1,8 +1,7 @@
 ---
-title: IPerPropertyBrowsing2-Schnittstelle 1 | Microsoft Docs
+title: IPerPropertyBrowsing2-Schnittstelle 1 | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,24 +17,24 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75a0a7ef30bca2205789a63ea577808c11582791
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 156cf9a1e104b8a2d7ffe4e48bd39642ef1abbd0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728390"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62944902"
 ---
 # <a name="iperpropertybrowsing2-interface-1"></a>IPerPropertyBrowsing2-Schnittstelle 1
-Greift auf angeboten die Informationen in den Eigenschaftenseiten von einem Objekt.  
+Greift auf können die Informationen in den Eigenschaftenseiten von ein-Objekt bereitgestellt werden.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|`GetDisplayString`|Gibt eine Textzeichenfolge, die die angegebene Eigenschaft beschreibt.|  
-|`MapPropertyToPage`|Gibt die CLSID der Eigenschaftenseite, die ermöglicht Manipulation der angegebenen Eigenschaft zurück.|  
-|`GetPredefinedStrings`|Gibt ein gezähltes Array von Zeichenfolgen (`LPOLESTR` Zeiger) Auflisten der Beschreibungen der zulässigen Werte, die die angegebene Eigenschaft annehmen kann.|  
-|`SetPredefinedValue`|Legt den Wert der Eigenschaft auf den vordefinierten Wert identifiziert, von dem token`dwCookie.`|  
+|`GetDisplayString`|Gibt eine Textzeichenfolge, die Beschreibung der angegebenen Eigenschaft zurück.|  
+|`MapPropertyToPage`|Gibt die CLSID der Eigenschaftenseite, die ermöglicht die Bearbeitung der angegebenen Eigenschaft zurück.|  
+|`GetPredefinedStrings`|Gibt ein gezähltes Array von Zeichenfolgen (`LPOLESTR` Zeiger) Auflisten von den Beschreibungen der zulässigen Werte, die die angegebene Eigenschaft annehmen kann.|  
+|`SetPredefinedValue`|Legt den Wert der Eigenschaft auf die vordefinierten Wert, der durch das Token identifiziert wird. `dwCookie.`|  
   
 ## <a name="requirements"></a>Anforderungen  
  Header: dbgprop.h

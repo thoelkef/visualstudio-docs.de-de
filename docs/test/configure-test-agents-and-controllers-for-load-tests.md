@@ -6,14 +6,13 @@ helpviewer_keywords:
 - load tests, test agents and controllers
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: c4462c97febc7f1075080bf659a679647bc7bbe5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: fca2436b99f97e18801f8adffdc27fd348fc8123
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899836"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783942"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Konfigurieren von Test-Agents und Testcontrollern für die Ausführung von Auslastungstests
 
@@ -28,11 +27,11 @@ Visual Studio kann eine simulierte Auslastung für Ihre App mithilfe von physisc
 
 Die Architektur der Auslastungssimulation besteht aus einem Visual Studio-Client, einem Testcontroller und Test-Agents.
 
--   Mit dem Client werden Tests entwickelt, Tests ausgeführt und Testergebnisse angezeigt.
+- Mit dem Client werden Tests entwickelt, Tests ausgeführt und Testergebnisse angezeigt.
 
--   Mit dem Testcontroller werden die Test-Agents verwaltet und Testergebnisse gesammelt.
+- Mit dem Testcontroller werden die Test-Agents verwaltet und Testergebnisse gesammelt.
 
--   Die Test-Agents werden verwendet, um die Tests auszuführen und Daten einschließlich Systeminformationen und ASP.NET-Profilerstellungsdaten zu sammeln, die in der Testeinstellung definiert sind.
+- Die Test-Agents werden verwendet, um die Tests auszuführen und Daten einschließlich Systeminformationen und ASP.NET-Profilerstellungsdaten zu sammeln, die in der Testeinstellung definiert sind.
 
 Diese Architektur bietet die folgenden Vorteile:
 

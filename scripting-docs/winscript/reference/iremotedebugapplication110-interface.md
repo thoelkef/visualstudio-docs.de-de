@@ -1,8 +1,7 @@
 ---
-title: IRemoteDebugApplication110-Schnittstelle | Microsoft Docs
+title: IRemoteDebugApplication110-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,18 +13,18 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d384cea22b79b2a7ca9af3424d053fb3062d79a3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
-ms.translationtype: MT
+ms.openlocfilehash: ea8f3f983cf7279cf6dc9600813a08268cef8301
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729540"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383493"
 ---
 # <a name="iremotedebugapplication110-interface"></a>IRemoteDebugApplication110-Schnittstelle
 Wird verwendet, um neue Funktionen bereitzustellen, die vom Skriptdebugger aufgerufen werden kann und in-Process-Aufrufer.  
   
 > [!IMPORTANT]
->  Diese Schnittstelle wird von PDM v11.0 und höher implementiert. Gefunden in activdbg100.h.  
+> Diese Schnittstelle wird von PDM v11.0 und höher implementiert. Gefunden in activdbg100.h.  
   
 ## <a name="methods"></a>Methoden  
  Die `IRemoteDebugApplication110`-Schnittstelle macht die folgenden Methoden verfügbar:  

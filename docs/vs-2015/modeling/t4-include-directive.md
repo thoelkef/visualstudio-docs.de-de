@@ -1,30 +1,27 @@
 ---
 title: T4-Include-Direktive | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 8c3de9f3-755a-47c5-a30a-65717dcaaac2
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e8de721b7f26152cd4e7f5df1ee7eb4d04770511
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 6b475b8e5c2138c909133aee0440f0dcaea99e13
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835942"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057704"
 ---
-# <a name="t4-include-directive"></a>T4-Include-Anweisung
+# <a name="t4-include-directive"></a>T4-Include-Direktive
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In einer Textvorlage in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] können Sie Text aus einer anderen Datei mit einer `<#@include#>`-Anweisung einschließen. Sie können `include`-Direktiven an einer beliebigen Stelle in einer Textvorlage platzieren, und zwar vor dem ersten Klassenfunktionsblock `<#+ ... #>`. Die eingeschlossenen Dateien können auch `include`-Direktiven und andere Direktiven enthalten. Dadurch können Sie Vorlagencode und Text mit Codebausteinen zwischen Vorlagen freigeben.  
+In einer Textvorlage in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] können Sie Text aus einer anderen Datei mit einer `<#@include#>`-Direktive einschließen. Sie können `include`-Anweisungen an einer beliebigen Stelle in einer Textvorlage platzieren, und zwar vor dem ersten Klassenfunktionsblock `<#+ ... #>`. Die eingeschlossenen Dateien können auch `include`-Direktiven und andere Direktiven enthalten. Dadurch können Sie Vorlagencode und Text mit Codebausteinen zwischen Vorlagen freigeben.  
   
-## <a name="using-include-directives"></a>Verwenden von Include-Direktiven  
+## <a name="using-include-directives"></a>Verwenden von Include-Anweisungen  
   
 ```  
 <#@ include file="filePath" [once="true"] #>  
@@ -48,7 +45,7 @@ In einer Textvorlage in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] können Sie
   
    Andererseits sollten Sie beachten, dass die Dateierweiterung in einigen Fällen Einfluss darauf hat, welche zusätzlichen Ordner nach Includedateien durchsucht werden. Dies könnte wichtig sein, wenn eine eingeschlossene Datei andere Dateien enthält.  
   
-- Der eingeschlossene Inhalt wird fast so verarbeitet, als wäre er Teil der jeweiligen Textvorlage. Sie können jedoch auch dann eine Datei einschließen, die einen Klassenfunktionsblock `<#+...#>` enthält, wenn nach der `include`-Direktive normale Text- und Standardkontrollblöcke eingefügt werden.  
+- Der eingeschlossene Inhalt wird fast so verarbeitet, als wäre er Teil der jeweiligen Textvorlage. Sie können jedoch auch dann eine Datei einschließen, die einen Klassenfunktionsblock `<#+...#>` enthält, wenn nach der `include`-Anweisung normale Text- und Standardkontrollblöcke eingefügt werden.  
   
 - Verwenden Sie `once="true"`, um sicherzustellen, dass eine Vorlage nur einmal eingeschlossen wird, auch wenn sie von mehr als einer Includedatei aufgerufen wird.  
   
@@ -115,7 +112,7 @@ Output message 5 (from top template).
   
 ```  
   
-##  <a name="msbuild"></a> Verwenden von Projekteigenschaften in MSBuild und Visual Studio  
+## <a name="msbuild"></a> Verwenden von Projekteigenschaften in MSBuild und Visual Studio  
  Sie können Visual Studio-Makros wie $ (SolutionDir) in einer Includeanweisung verwenden, nicht aber in MSBuild. Wenn Sie Vorlagen im Buildcomputer transformieren möchten, müssen Sie dies mithilfe von Projekteigenschaften tun.  
   
  Bearbeiten Sie die CSPROJ- oder VBPROJ-Datei, und definieren Sie eine Projekteigenschaft. In folgendem Beispiel wird eine Eigenschaft mit dem Namen `myIncludeFolder` definiert:  
@@ -140,6 +137,3 @@ Output message 5 (from top template).
 ```  
 <#@ include file="$(myIncludeFolder)\defs.tt" #>  
 ```
-
-
-

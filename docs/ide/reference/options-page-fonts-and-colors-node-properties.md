@@ -1,7 +1,6 @@
 ---
 title: Optionsseite, Eigenschaften des Knotens "Schriftarten und Farben"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - Tools Options settings, Fonts and Colors node properties
@@ -9,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 8e1ab784-5f85-4e2b-8ef9-e5d59ca4dbcb
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61b36afc1098a5045bfefcb92fb2a3fda36d81ca
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b5363d71082128c13146c445fe312424be7e4340
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938694"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945593"
 ---
 # <a name="options-page-fonts-and-colors-node-properties"></a>Optionsseite, Eigenschaften des Knotens "Schriftarten und Farben"
 Dieses Dokument beschreibt die Eigenschaften der Schriftarten und Farben für ein Toolfenster, das unter **Schriftarten und Farben** in der Kategorie **Umgebung** des Dialogfelds **Optionen** registriert ist. Dadurch wird die Dynamik von Gruppen von einfärbbaren Elementen unterstützt, die sich ändern kann, wenn VSPackages installiert oder deinstalliert werden.
@@ -31,7 +30,7 @@ Dieses Dokument beschreibt die Eigenschaften der Schriftarten und Farben für ei
 
  `DTE.Properties("FontsAndColors", "Printer")`
 
- - oder -
+ - oder - 
 
  `DTE.Properties("FontsAndColors", "Dialogs and Tool Windows")`
 

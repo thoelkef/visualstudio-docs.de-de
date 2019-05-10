@@ -1,14 +1,9 @@
 ---
 title: Schreiben von multiprozessorfähigen Protokollierungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, multi-proc aware loggers
 - multi-proc loggers
@@ -17,18 +12,17 @@ ms.assetid: ff987d1b-1798-4803-9ef6-cc8fcc263516
 caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2b05c0f1782382f437a5e1d90bf19c724a05ca6a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0d2eaf41ac66cd1bdf680145bef43b17cc29a505
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425879"
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>Schreiben von multiprozessorfähigen Protokollierungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Die Fähigkeit von [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], mehrere Prozessoren zu verwenden, kann die Dauer der Projekterstellung deutlich verringern, jedoch auch die Komplexität der Buildereignisprotokollierung erhöhen. In einer Umgebung mit nur einem Prozessor gehen Ereignisse, Meldungen, Warnungen und Fehler auf vorhersehbare, geordnete Weise bei der Protokollierung ein. In einer Umgebung mit mehreren Prozessoren können jedoch Ereignisse aus verschiedenen Quellen gleichzeitig und ungeordnet eintreffen. Um diese verarbeiten zu können, bietet [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] eine neue multiprozessorfähige Protokollierung und ein neues Protokollierungsmodell. Außerdem können Sie benutzerdefinierte „Weiterleitungsprotokollierungen“ erstellen.  
   
 ## <a name="multi-processor-logging-challenges"></a>Anforderungen bei der Multiprozessorprotokollierung  
@@ -87,7 +81,7 @@ msbuild.exe myproj.proj/distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.
 ```  
   
 > [!NOTE]
->  Ein Sternchen (*) muss zum Trennen der beiden Protokollierungsnamen im `/dl`-Schalter verwendet werden.  
+> Ein Sternchen (*) muss zum Trennen der beiden Protokollierungsnamen im `/dl`-Schalter verwendet werden.  
   
  Die Verwendung von ConfigurableForwardingLogger ist mit der Verwendung anderer Protokollierungen identisch (wie in [Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md) erläutert), mit der Ausnahme, dass die ConfigurableForwardingLogger-Protokollierung statt der normalen [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Protokollierung angehängt wird und dass Sie als Parameter die Ereignisse festlegen, die ConfigurableForwardingLogger an den zentralen Knoten weiterleiten soll.  
   
@@ -122,6 +116,3 @@ msbuild.exe myproj.proj /distributedlogger:XMLCentralLogger,MyLogger,Version=1.0
   
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen von Weiterleitungsprotokollierungen](../msbuild/creating-forwarding-loggers.md)
-
-
-

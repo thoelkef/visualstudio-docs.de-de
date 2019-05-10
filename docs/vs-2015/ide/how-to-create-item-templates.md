@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Erstellen von Elementvorlagen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - project item templates, XML reference
 - project item templates, custom template locations
@@ -18,47 +13,47 @@ ms.assetid: 77bc53d4-d607-4820-a032-7e3b365891b5
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8559fb8b32b83d352bd9ec82cf426903aff13a19
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4484ec75cf44fc60c72091fb17cce510efdb9cd4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863629"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417018"
 ---
-# <a name="how-to-create-item-templates"></a>Gewusst wie: Erstellen von Elementvorlagen
+# <a name="how-to-create-item-templates"></a>Vorgehensweise: Erstellen von Elementvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Anhand der Schritte im [ersten Verfahren](../ide/how-to-create-item-templates.md#export_template) dieses Themas wird gezeigt, wie Sie eine Elementvorlage mithilfe des Assistenten zum **Exportieren von Vorlagen** erstellen können. Wenn Ihre Vorlage mehrere Dateien enthalten soll, finden Sie unter [Vorgehensweise: Erstellen von Elementvorlagen mit mehreren Dateien](../ide/how-to-create-multi-file-item-templates.md) entsprechende Informationen dazu.  
+Anhand der Schritte im [ersten Verfahren](#to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box) dieses Themas wird gezeigt, wie Sie eine Elementvorlage mithilfe des Assistenten zum **Exportieren von Vorlagen** erstellen können. Wenn Ihre Vorlage mehrere Dateien enthalten soll, finden Sie im Artikel [Vorgehensweise: Erstellen von Elementvorlagen mit mehreren Dateien](../ide/how-to-create-multi-file-item-templates.md).  
   
- Der Assistent nimmt Ihnen einen Großteil der Arbeit beim Erstellen der Standardvorlage ab, in vielen Fällen müssen Sie die VSTEMPLATE-Datei jedoch manuell bearbeiten, nachdem Sie die Vorlage exportiert haben. Wenn z.B. das Element im Dialogfeld **Neues Element hinzufügen** für eine [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-App angezeigt werden soll, müssen Sie einige zusätzliche Schritte ausführen. Im [zweiten Verfahren](../ide/how-to-create-item-templates.md#modify_template) in diesem Thema wird beschrieben, wie Sie diese Aufgabe ausführen.  
+ Der Assistent nimmt Ihnen einen Großteil der Arbeit beim Erstellen der Standardvorlage ab, in vielen Fällen müssen Sie die VSTEMPLATE-Datei jedoch manuell bearbeiten, nachdem Sie die Vorlage exportiert haben. Wenn z.B. das Element im Dialogfeld **Neues Element hinzufügen** für eine [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-App angezeigt werden soll, müssen Sie einige zusätzliche Schritte ausführen. Im [zweiten Verfahren](#to-enable-the-item-template-to-be-used-in-a-store-project) in diesem Thema wird beschrieben, wie Sie diese Aufgabe ausführen.  
  
- In einigen Fällen möchten oder müssen Sie eine Elementvorlage ggf. manuell von Grund auf neu erstellen. Im [dritten Verfahren](../ide/how-to-create-item-templates.md#create_template) wird dies erläutert.  
+ In einigen Fällen möchten oder müssen Sie eine Elementvorlage ggf. manuell von Grund auf neu erstellen. Im [dritten Verfahren](#to-enable-templates-for-specific-project-sub-types) wird dies erläutert.  
   
  Informationen zu Elementen, die in der VSTEMPLATE-Datei verwendet werden können, finden Sie unter [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md).  
   
 ### <a name="to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box"></a>So fügen Sie dem Dialogfeld "Neues Element hinzufügen" eine benutzerdefinierte Projektelementvorlage hinzu  
   
-1.  Erstellen oder öffnen Sie ein Projekt in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+1. Erstellen oder öffnen Sie ein Projekt in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-2.  Fügen Sie dem Projekt ein Element hinzu, und ändern Sie dieses bei Bedarf.  
+2. Fügen Sie dem Projekt ein Element hinzu, und ändern Sie dieses bei Bedarf.  
   
-3.  Ändern Sie die Codedatei, um anzugeben, an welcher Stelle Parameterersetzungen stattfinden sollen. Weitere Informationen finden Sie unter [Vorgehensweise: Ersetzen von Parametern in einer Vorlage](../ide/how-to-substitute-parameters-in-a-template.md).  
+3. Ändern Sie die Codedatei, um anzugeben, an welcher Stelle Parameterersetzungen stattfinden sollen. Weitere Informationen finden Sie unter [Vorgehensweise: Ersetzen von Parametern in einer Vorlage](../ide/how-to-substitute-parameters-in-a-template.md).  
   
-4.  Klicken Sie im Menü **Datei** auf **Vorlage exportieren**.  
+4. Klicken Sie im Menü **Datei** auf **Vorlage exportieren**.  
   
-5.  Klicken Sie auf **Elementvorlage**, wählen Sie das Projekt aus, das das Element enthält, und klicken Sie auf **Weiter**.  
+5. Klicken Sie auf **Elementvorlage**, wählen Sie das Projekt aus, das das Element enthält, und klicken Sie auf **Weiter**.  
   
-6.  Wählen Sie das Element aus, für das Sie eine Vorlage erstellen möchten, und klicken Sie auf **Weiter**.  
+6. Wählen Sie das Element aus, für das Sie eine Vorlage erstellen möchten, und klicken Sie auf **Weiter**.  
   
-7.  Wählen Sie die Assemblyverweise aus, die in die Vorlage eingeschlossen werden sollen, und klicken Sie auf **Weiter**.  
+7. Wählen Sie die Assemblyverweise aus, die in die Vorlage eingeschlossen werden sollen, und klicken Sie auf **Weiter**.  
   
-8.  Geben Sie den Symboldateinamen, das Vorschaubild, den Vorlagennamen und die Vorlagenbeschreibung ein, und klicken Sie auf **Fertig stellen**.  
+8. Geben Sie den Symboldateinamen, das Vorschaubild, den Vorlagennamen und die Vorlagenbeschreibung ein, und klicken Sie auf **Fertig stellen**.  
   
      Die Dateien für die Vorlage werden einer ZIP-Datei hinzugefügt und in das von Ihnen im Dialogfeld angegebene Verzeichnis kopiert. Der Standardspeicherort ist der Ordner **..\Benutzer\\<Benutzername\>\Dokumente\Visual Studio \<Version>\Meine exportierten Vorlagen\\**.  
   
     > [!WARNING]
-    >  In älteren Version von Visual Studio ist der Standardspeicherort **..\Benutzer\\<Benutzername\>\Dokumente\Visual Studio \<Version>\Templates\ItemTemplates**.  
+    > In älteren Version von Visual Studio ist der Standardspeicherort **..\Benutzer\\<Benutzername\>\Dokumente\Visual Studio \<Version>\Templates\ItemTemplates**.  
   
 ### <a name="to-enable-the-item-template-to-be-used-in-a-store-project"></a>So aktivieren Sie die Elementvorlage, die in einem Store-Projekt verwendet werden soll  
   
@@ -72,7 +67,7 @@ Anhand der Schritte im [ersten Verfahren](../ide/how-to-create-item-templates.md
   
     Ein Windows 8.1 Store-Projekt in C++ verwendet den Wert von `WinRT-Native-6.3`. Informationen zu Windows 10- und anderen Projekttypen finden Sie unter [TemplateGroupID-Element (Visual Studio-Vorlagen)](../extensibility/templategroupid-element-visual-studio-templates.md).  
   
-    Das folgende Beispiel zeigt den gesamten Inhalt einer VSTEMPLATE-Datei an, nachdem die XML-Zeile `<TemplateGroupID>WinRT-Managed</TemplateGroupID>` hinzugefügt wurde. Dieses Beispiel gilt für C#-Projekte. Sie können die <ProjectTpe>- und \<[TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)>-Elemente ändern, um andere Sprachen- und Projekttypen anzugeben.  
+    Das folgende Beispiel zeigt den gesamten Inhalt einer VSTEMPLATE-Datei an, nachdem die XML-Zeile `<TemplateGroupID>WinRT-Managed</TemplateGroupID>` hinzugefügt wurde. Dieses Beispiel gilt für C#-Projekte. Sie können die \<ProjectType > und \< [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> Elemente, um andere Sprachen- und Projekttypen anzugeben.  
   
    ```xml  
    <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">  
@@ -146,21 +141,21 @@ Anhand der Schritte im [ersten Verfahren](../ide/how-to-create-item-templates.md
   
 ### <a name="to-manually-create-an-item-template-without-using-the-export-template-wizard"></a>So erstellen Sie eine Elementvorlage manuell ohne den Assistenten zum Exportieren von Vorlagen  
   
-1.  Erstellen Sie ein Projekt und ein Projektelement.  
+1. Erstellen Sie ein Projekt und ein Projektelement.  
   
-2.  Bearbeiten Sie das Projektelement solange, bis es als Vorlage gespeichert werden kann.  
+2. Bearbeiten Sie das Projektelement solange, bis es als Vorlage gespeichert werden kann.  
   
-3.  Ändern Sie nach Bedarf die Codedatei, um anzugeben, an welcher Stelle Parameterersetzungen stattfinden sollen. Weitere Informationen zu Parameterersetzungen finden Sie unter „Gewusst wie: Ersetzen von Parametern in einer Vorlage“.  
+3. Ändern Sie nach Bedarf die Codedatei, um anzugeben, an welcher Stelle Parameterersetzungen stattfinden sollen. Weitere Informationen zu parameterersetzungen finden Sie unter Vorgehensweise: Ersetzen von Parametern in einer Vorlage.  
   
-4.  Erstellen Sie eine XML-Datei, und speichern Sie sie mit der Dateinamenerweiterung „.vstemplate“ in demselben Verzeichnis wie die neue Elementvorlage.  
+4. Erstellen Sie eine XML-Datei, und speichern Sie sie mit der Dateinamenerweiterung „.vstemplate“ in demselben Verzeichnis wie die neue Elementvorlage.  
   
-5.  Erstellen Sie die VSTEMPLATE-XML-Datei, um Elementvorlagen-Metadaten bereitzustellen. Weitere Informationen finden Sie unter [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md) und im Beispiel im vorherigen Abschnitt.  
+5. Erstellen Sie die VSTEMPLATE-XML-Datei, um Elementvorlagen-Metadaten bereitzustellen. Weitere Informationen finden Sie unter [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md) und im Beispiel im vorherigen Abschnitt.  
   
-6.  Speichern Sie die VSTEMPLATE-Datei, und schließen Sie sie.  
+6. Speichern Sie die VSTEMPLATE-Datei, und schließen Sie sie.  
   
-7.  Wählen Sie im Windows-Explorer die Dateien aus, die in Ihrer Vorlage enthalten sein sollen, klicken Sie mit der rechten Maustaste auf die Auswahl, klicken Sie auf „Senden an“, und klicken Sie dann auf „ZIP-komprimierten Ordner“. Die ausgewählten Dateien werden in einer ZIP-Datei komprimiert.  
+7. Wählen Sie im Windows-Explorer die Dateien aus, die in Ihrer Vorlage enthalten sein sollen, klicken Sie mit der rechten Maustaste auf die Auswahl, klicken Sie auf „Senden an“, und klicken Sie dann auf „ZIP-komprimierten Ordner“. Die ausgewählten Dateien werden in einer ZIP-Datei komprimiert.  
   
-8.  Kopieren Sie die ZIP-Datei, und fügen Sie sie in dem Speicherort für die Benutzerelementvorlage ein. In Visual Studio 2015 ist das Standardverzeichnis... \Users\\< Benutzername\>\Documents\Visual Studio 2015\Templates\ItemTemplates\\. Weitere Informationen finden Sie unter „Gewusst wie: Suchen und Organisieren von Projekt- und Elementvorlagen“.  
+8. Kopieren Sie die ZIP-Datei, und fügen Sie sie in dem Speicherort für die Benutzerelementvorlage ein. In Visual Studio 2015 ist ..\Benutzer\\<Benutzername\>\Dokumente\Visual Studio 2015\Templates\ItemTemplates\\ das Standardverzeichnis. Weitere Informationen finden Sie unter „Gewusst wie: Suchen und Organisieren von Projekt- und Elementvorlagen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)   

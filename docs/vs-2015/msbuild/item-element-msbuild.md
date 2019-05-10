@@ -1,14 +1,9 @@
 ---
 title: Item-Element (MSBuild) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,18 +16,17 @@ ms.assetid: dcef5f91-0613-4bfc-8ee9-d7004bb6d3a9
 caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1dfec558a9958d980d25d4160c4b7f2ce269cbb5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: cc3d606bb890b5f95089bfc7b1e83b2d34cd56ba
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270026"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650761"
 ---
 # <a name="item-element-msbuild"></a>Item-Element (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Enthält ein benutzerdefiniertes Element und die zugehörigen Metadaten. Jedes Element, das in einem [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projekt verwendet wird, muss als untergeordnetes Element eines `ItemGroup` Elements angegeben werden.  
   
  \<Project>  
@@ -78,7 +72,7 @@ Enthält ein benutzerdefiniertes Element und die zugehörigen Metadaten. Jedes E
 |-------------|-----------------|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Grouping-Element für Elemente.|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  `Item`-Elemente definieren Eingaben ins Buildsystem und sind basierend auf ihren benutzerdefinierten Auflistungsnamen in Elementauflistungen gruppiert. Diese Elementtypen können als Parameter für [Aufgaben](../msbuild/msbuild-tasks.md) verwendet werden, die mithilfe der einzelnen Elemente in den Auflistungen die Schritte des Buildprozesses ausführen. Weitere Informationen finden Sie unter [Elemente](../msbuild/msbuild-items.md).  
   
  Mithilfe der Notation `@(`*myType*`)` kann eine Auflistung von Elementen vom Typ *myType* in einer durch Semikolons getrennten Liste von Zeichenfolgen erweitert und an einen Parameter übergeben werden. Wenn der Parameter vom Typ `string` ist, entspricht der Wert des Parameters der Liste der Elemente, die durch Semikolons getrennt sind. Wenn der Parameter ein Array von Zeichenfolgen ist (`string[]`), werden die einzelnen Elemente ins Array basierend auf der Position der Semikolons eingefügt. Ist der Task-Parameter vom Typ <xref:Microsoft.Build.Framework.ITaskItem>`[]`, entspricht der Wert dem Inhalt der Elementauflistung einschließlich ggf. angefügter Metadaten. Um jedes Element durch ein anderes Zeichen als ein Semikolon voneinander zu trennen, verwenden Sie die Syntax `@(`*myType*`, '`*Trennzeichen*`')`.  
@@ -101,6 +95,3 @@ Enthält ein benutzerdefiniertes Element und die zugehörigen Metadaten. Jedes E
  [Elemente](../msbuild/msbuild-items.md)   
  [MSBuild-Eigenschaften](msbuild-properties1.md)   
  [Project File Schema Reference](../msbuild/msbuild-project-file-schema-reference.md) (Referenz zum Projektdateischema von MSBuild)
-
-
-

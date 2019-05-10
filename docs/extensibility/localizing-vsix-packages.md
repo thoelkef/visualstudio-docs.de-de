@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 10e80b13-b39e-466c-a7c8-774a862355af
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d554819c8c615dc9f8fcd41bb4b460482e21fde
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 49908ba5110cf59d0aa4fff6f91bf356ec72c3c2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956932"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856558"
 ---
 # <a name="localizing-vsix-packages"></a>Lokalisieren von VSIX-Paketen
 
@@ -27,7 +27,7 @@ Wenn der Inhalt des VSIX-Pakets eine VSPackage enthält, die fügt Menübefehle 
 
 ## <a name="directory-structure"></a>Verzeichnisstruktur
 
- Wenn ein Benutzer eine Erweiterung installiert **Erweiterungen und Updates** überprüft die oberste Ebene der VSIX-Paket für einen Ordner, deren Name mit der Visual Studio-Gebietsschema des Zielcomputers übereinstimmt. Wenn **Erweiterungen und Updates** sucht nach einem *.vsixlangpack* Datei im Ordner "", ersetzt er die lokalisierte Werte in dieser Datei für die entsprechenden Werte in der *vsixmanifest*Datei. Diese Werte werden angezeigt, wenn die Erweiterung installiert wird. Das folgende Beispiel zeigt die Verzeichnisstruktur für ein VSIX-Paket, das in Spanisch (es-ES) und Französisch (fr-FR) lokalisiert ist.  
+ Wenn ein Benutzer eine Erweiterung installiert **Erweiterungen und Updates** überprüft die oberste Ebene der VSIX-Paket für einen Ordner, deren Name mit der Visual Studio-Gebietsschema des Zielcomputers übereinstimmt. Wenn **Erweiterungen und Updates** sucht nach einem *.vsixlangpack* Datei im Ordner "", ersetzt er die lokalisierte Werte in dieser Datei für die entsprechenden Werte in der *vsixmanifest*Datei. Diese Werte werden angezeigt, wenn die Erweiterung installiert wird. Das folgende Beispiel zeigt die Verzeichnisstruktur für ein VSIX-Paket, das in Spanisch (es-ES) und Französisch (fr-FR) lokalisiert ist.
 
 ```text
 .
@@ -53,7 +53,7 @@ Wenn Sie eine Vsixlangpack-Datei erstellen, müssen Sie festlegen der `Include i
 
 1. In **Projektmappen-Explorer**mit der rechten Maustaste auf die Extension.vsixlangpack-Datei, und klicken Sie dann auf **Eigenschaften**.
 
-2.  In der **Eigenschaftenraster**, klicken Sie auf **Include in VSIX-Datei**, und legen Sie dessen Wert auf `true`.
+2. In der **Eigenschaftenraster**, klicken Sie auf **Include in VSIX-Datei**, und legen Sie dessen Wert auf `true`.
 
 ## <a name="example"></a>Beispiel
 
@@ -63,7 +63,7 @@ Das folgende Beispiel zeigt die relevanten Teile einer *"Extension.vsixmanifest"
 
 ### <a name="code"></a>Code
 
- [*"Extension.vsixmanifest"*]
+- [*Extension.vsixmanifest*]
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -83,7 +83,7 @@ Das folgende Beispiel zeigt die relevanten Teile einer *"Extension.vsixmanifest"
 </PackageManifest>
 ```
 
- [*Extension.vsixlangpack*]
+- [*Extension.vsixlangpack*]
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

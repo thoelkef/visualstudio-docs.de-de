@@ -11,17 +11,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, IntelliTrace
 - data collector
 - IntelliTrace
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d2c36d2781e34f85e46fc8a1a56d384bad713399
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6cf4cd222c511d1ae9071d07f0fab517e36eb30e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865465"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965244"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Exemplarische Vorgehensweise: Debuggen einer SharePoint-Anwendung mit IntelliTrace
 
@@ -33,15 +33,15 @@ Mit IntelliTrace können Sie SharePoint-Lösungen einfacher debuggen. Herkömmli
 
  In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:
 
-- [Einen Funktionsempfänger erstellen](#BKMK_CreateReceiver)
+- [Einen Funktionsempfänger erstellen](#create-a-feature-receiver)
 
-- [Fügen Sie dem Funktionsempfänger Code hinzu](#BKMK_AddCode)
+- [Fügen Sie dem Funktionsempfänger Code hinzu](#add-code-to-the-feature-receiver)
 
-- [Testen Sie das Projekt](#BKMK_Test1)
+- [Testen Sie das Projekt](#test-the-project)
 
-- [Sammeln von IntelliTrace-Daten mithilfe von Microsoft Monitoring Agent](#BKMK_CollectDiagnosticData)
+- [Sammeln von IntelliTrace-Daten mithilfe von Microsoft Monitoring Agent](#collect-intellitrace-data-by-using-microsoft-monitoring-agent)
 
-- [Debuggen Sie und korrigieren Sie die SharePoint-Lösung](#BKMK_DebugSolution)
+- [Debuggen Sie und korrigieren Sie die SharePoint-Lösung](#debug-and-fix-the-sharepoint-solution)
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -291,7 +291,7 @@ Wenn Sie Microsoft Monitoring Agent auf dem System, auf dem SharePoint ausgefüh
 
    4. Wählen Sie auf der Seite Warnung die **deaktivieren Sie dieses Feature** Link.
 
-      Ein Fehler tritt auf (in diesem Fall aufgrund des Fehlers im Ereignishandler „FeatureDeactivating()“).
+      Ein Fehler tritt auf (in diesem Fall aufgrund des Fehlers im Ereignishandler "FeatureDeactivating()").
 
 3. Führen Sie im PowerShell-Fenster, das [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) Befehl aus, um die ITRACE-Datei erstellen, Überwachung zu beenden und starten Sie die SharePoint-Lösung neu.
 

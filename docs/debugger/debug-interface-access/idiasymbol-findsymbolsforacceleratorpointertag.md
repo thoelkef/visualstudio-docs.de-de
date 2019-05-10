@@ -1,45 +1,45 @@
 ---
-title: IDiaSymbol::findSymbolsForAcceleratorPointerTag | Microsoft Docs
-ms.custom: ''
+title: IDiaSymbol::findSymbolsForAcceleratorPointerTag | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: fb66852c-c5f7-4140-b9fe-20cb4e51a9fe
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b96de709ae3ff8e4f8e37e882ca634fb158518a5
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7bf55f372b9beb0a4cb0feda0dc5869ee9eb7c5f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62827731"
 ---
 # <a name="idiasymbolfindsymbolsforacceleratorpointertag"></a>IDiaSymbol::findSymbolsForAcceleratorPointerTag
-Gibt die Anzahl der Zugriffstaste Zeiger Tags in einer C++ AMP-Stub-Funktion zurück.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT findSymbolsForAccleratorPointerTag (   
-   DWORD             tagValue,  
-   IDiaEnumSymbols** ppResult);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `tagValue`  
- [in] Der Wert des Zeigers-Tag, für den die Pointee symboldatensätze gefunden werden.  
-  
- `ppResult`  
- [out] Ein Zeiger auf ein `IDiaEnumSymbols` Schnittstellenzeiger auf die mit dem Ergebnis initialisiert wird.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
+Gibt die Anzahl der Tags von Accelerator-Zeiger in einer C++ AMP-Stub-Funktion zurück.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT findSymbolsForAccleratorPointerTag (
+   DWORD             tagValue,
+   IDiaEnumSymbols** ppResult);
+```
+
+#### <a name="parameters"></a>Parameter
+ `tagValue`
+
+[in] Der Wert des Zeigers-Tag, für den die symboldatensätze Pointee gefunden werden.
+
+ `ppResult`
+
+[out] Ein Zeiger auf ein `IDiaEnumSymbols` Schnittstellenzeiger, der mit dem Ergebnis initialisiert wurde.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

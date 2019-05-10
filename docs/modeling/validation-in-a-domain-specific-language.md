@@ -7,16 +7,15 @@ helpviewer_keywords:
 - Domain-Specific Language, validation
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: f228d1cf68357711d106b9399477badce350f558
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: fcc35f74625b17762656451e598d131dfe85417e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943738"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385853"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Validierung in einer domänenspezifischen Sprache
 Als Autor einer domänenspezifischen Sprache (Domain-Specific Language, DSL) können Sie Validierungseinschränkungen definieren, um zu überprüfen, ob das vom Benutzer erstellte Modell sinnvoll ist. Wenn Benutzer in Ihrer DSL beispielsweise einen Stammbaum von Personen und deren Vorfahren zeichnen können, könnten Sie eine Einschränkung schreiben, mit der sichergestellt wird, dass die Geburtstage der Kinder nach denen der Eltern liegen.
@@ -26,7 +25,7 @@ Als Autor einer domänenspezifischen Sprache (Domain-Specific Language, DSL) kö
  Überprüfung ist besonders wichtig, wenn Sie schreiben den Textvorlagen oder andere Tools, die Modelle Ihrer Benutzer zu verarbeiten. Durch die Validierung wird sichergestellt, dass die Modelle die von den Tools angenommenen Vorbedingungen erfüllen.
 
 > [!WARNING]
->  Sie können auch zulassen, dass Validierungseinschränkungen in separaten Erweiterungen Ihrer DSL zusammen mit Menübefehlen und Gestenhandlern der Erweiterungen definiert werden. Die Benutzer könnten dann diese Erweiterungen zusätzlich zu Ihrer DSL installieren. Weitere Informationen finden Sie unter [Erweitern von DSL mittels MEF](../modeling/extend-your-dsl-by-using-mef.md).
+> Sie können auch zulassen, dass Validierungseinschränkungen in separaten Erweiterungen Ihrer DSL zusammen mit Menübefehlen und Gestenhandlern der Erweiterungen definiert werden. Die Benutzer könnten dann diese Erweiterungen zusätzlich zu Ihrer DSL installieren. Weitere Informationen finden Sie unter [Erweitern von DSL mittels MEF](../modeling/extend-your-dsl-by-using-mef.md).
 
 ## <a name="running-validation"></a>Ausführen der Validierung
  Wenn ein Benutzer ein Modell bearbeitet, also eine Instanz Ihrer domänenspezifischen Sprache, kann die Validierung mit den folgenden Aktionen ausgeführt werden:
@@ -49,19 +48,19 @@ Als Autor einer domänenspezifischen Sprache (Domain-Specific Language, DSL) kö
  Die von Validierungsmethoden gefundenen Fehler werden ausgegeben.
 
 > [!NOTE]
->  Validierungsmethoden geben Fehler aus, nehmen aber keine Änderungen am Modell vor. Wenn Sie möchten zum Anpassen oder verhindern bestimmter Änderungen finden Sie unter [Alternativen zur Validierung](#alternatives).
+> Validierungsmethoden geben Fehler aus, nehmen aber keine Änderungen am Modell vor. Wenn Sie möchten zum Anpassen oder verhindern bestimmter Änderungen finden Sie unter [Alternativen zur Validierung](#alternatives).
 
 #### <a name="to-define-a-validation-constraint"></a>So definieren Sie eine Validierungseinschränkung
 
 1. Aktivieren Sie die Überprüfung in der **editor\validierung** Knoten:
 
-   1.  Open **Dsl\DslDefinition.dsl**.
+   1. Open **Dsl\DslDefinition.dsl**.
 
-   2.  Erweitern Sie im DSL-Explorer die **Editor** Knoten, und wählen **Überprüfung**.
+   2. Erweitern Sie im DSL-Explorer die **Editor** Knoten, und wählen **Überprüfung**.
 
-   3.  Legen Sie im Fenster Eigenschaften die **verwendet** Eigenschaften `true`. Am zweckmäßigsten ist es, alle dieser Eigenschaften festzulegen.
+   3. Legen Sie im Fenster Eigenschaften die **verwendet** Eigenschaften `true`. Am zweckmäßigsten ist es, alle dieser Eigenschaften festzulegen.
 
-   4.  Klicken Sie auf **alle Vorlagen transformieren** in die **Projektmappen-Explorer** Symbolleiste.
+   4. Klicken Sie auf **alle Vorlagen transformieren** in die **Projektmappen-Explorer** Symbolleiste.
 
 2. Schreiben Sie partielle Klassendefinitionen für mindestens eine Ihrer Domänenklassen oder -beziehungen. Schreiben Sie diese Definitionen in eine neue Codedatei, in der **Dsl** Projekt.
 
@@ -71,7 +70,7 @@ Als Autor einer domänenspezifischen Sprache (Domain-Specific Language, DSL) kö
    [ValidationState(ValidationState.Enabled)]
    ```
 
-   -   Standardmäßig aktiviert dieses Attribut auch die Validierung für abgeleitete Klassen. Wenn Sie die Validierung für eine bestimmte abgeleitete Klasse deaktivieren möchten, können Sie `ValidationState.Disabled` verwenden.
+   - Standardmäßig aktiviert dieses Attribut auch die Validierung für abgeleitete Klassen. Wenn Sie die Validierung für eine bestimmte abgeleitete Klasse deaktivieren möchten, können Sie `ValidationState.Disabled` verwenden.
 
 4. Fügen Sie den Klassen Validierungsmethoden hinzu. Jede Validierungsmethode kann einen beliebigen Namen aufweisen, muss aber einen Parameter mit dem Typ <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext> enthalten.
 
@@ -83,7 +82,7 @@ Als Autor einer domänenspezifischen Sprache (Domain-Specific Language, DSL) kö
 
     Mit "ValidationCategories" wird angegeben, wann die Methode ausgeführt wird.
 
-   Beispiel:
+   Zum Beispiel:
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -178,7 +177,7 @@ public partial class Person
 
  Zu den Nachteilen gehört, dass die Verwaltung der kombinierten Methode schwieriger ist und dass alle Einschränkungen die gleichen `ValidationCategories` aufweisen müssen. Daher empfiehlt es sich, jede Einschränkung möglichst in einer gesonderten Methode zu belassen.
 
- **Übergeben von Werten in den Kontextcache.** Der Kontextparameter weist ein Wörterbuch, in dem Sie beliebige Werte aufnehmen können. Das Wörterbuch bleibt für die Dauer der Validierung erhalten. Eine bestimmte Validierungsmethode könnte beispielsweise eine Fehleranzahl im Kontext speichern und dazu verwenden, eine Überflutung des Fehlerfensters mit wiederholten Meldungen zu vermeiden. Beispiel:
+ **Übergeben von Werten in den Kontextcache.** Der Kontextparameter weist ein Wörterbuch, in dem Sie beliebige Werte aufnehmen können. Das Wörterbuch bleibt für die Dauer der Validierung erhalten. Eine bestimmte Validierungsmethode könnte beispielsweise eine Fehleranzahl im Kontext speichern und dazu verwenden, eine Überflutung des Fehlerfensters mit wiederholten Meldungen zu vermeiden. Zum Beispiel:
 
 ```csharp
 List<ParentsHaveChildren> erroneousLinks;
@@ -214,7 +213,7 @@ partial class MyLanguageCommandSet
 
  Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen eines Befehls zum Kontextmenü](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
- Sie können auch einen gesonderten Validierungscontroller erstellen und Fehler selbst verwalten. Beispiel:
+ Sie können auch einen gesonderten Validierungscontroller erstellen und Fehler selbst verwalten. Zum Beispiel:
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -311,7 +310,7 @@ private void TestForCircularLinks(ValidationContext context)
 ```
 
 > [!NOTE]
->  Sie können einer Methode beliebig viele `[ValidationMethod()]`-Attribute voranstellen. Sie können benutzerdefinierten und standardmäßigen Kategorien eine Methode hinzufügen.
+> Sie können einer Methode beliebig viele `[ValidationMethod()]`-Attribute voranstellen. Sie können benutzerdefinierten und standardmäßigen Kategorien eine Methode hinzufügen.
 
  So rufen Sie eine benutzerdefinierte Validierung auf
 

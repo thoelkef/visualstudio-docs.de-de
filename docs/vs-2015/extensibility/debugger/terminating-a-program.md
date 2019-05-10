@@ -1,27 +1,22 @@
 ---
 title: Beenden eines Programms | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - programs, termination events
 - debugging [Debugging SDK], terminating a program
 ms.assetid: eedda0a3-5e05-44fe-841d-a2f4866ac72d
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c3bc26486db7cdc5f8a29477b4380041b506c4e6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f0b9ad248751af0885fa4edc0275be2ede5ddd9f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772910"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62421862"
 ---
 # <a name="terminating-a-program"></a>Beenden eines Programms
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,4 +33,3 @@ Folgendes ist eine Beschreibung für die Beendigung der ein einzelnes Programm m
   
 ## <a name="see-also"></a>Siehe auch  
  [Aufrufen von Debuggerereignissen](../../extensibility/debugger/calling-debugger-events.md)
-

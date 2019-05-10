@@ -1,25 +1,28 @@
 ---
 title: 'Idiasymbol:: Get_hasalloca | Microsoft-Dokumentation'
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_hasAlloca method
 ms.assetid: 3b9fb747-670b-4da7-bb70-612f7b911786
-author: mikejo5000
+caps.latest.revision: 11
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: ecc7029ab515f1e47f52eb086aa0f099c13fc65c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 457f446af4a91141962fbbd3055d9ce4980c719a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990619"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401813"
 ---
 # <a name="idiasymbolgethasalloca"></a>IDiaSymbol::get_hasAlloca
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Ruft ein Flag, das angibt, ob die Funktion einen Aufruf von enthält `alloca` (dient zum Zuordnen von Speicher auf dem Stapel).  
   
 ## <a name="syntax"></a>Syntax  
@@ -36,13 +39,13 @@ Ruft ein Flag, das angibt, ob die Funktion einen Aufruf von enthält `alloca` (d
  Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
   
 ## <a name="requirements"></a>Anforderungen  
   
 |Anforderung|Beschreibung|  
 |-----------------|-----------------|  
-|Header:|Dia2.h|  
+|Header:|dia2.h|  
 |Version:|DIA-SDK 8.0|  
   
 ## <a name="see-also"></a>Siehe auch  

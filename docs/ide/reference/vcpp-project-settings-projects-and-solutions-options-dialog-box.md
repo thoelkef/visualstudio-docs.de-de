@@ -1,7 +1,6 @@
 ---
 title: VC++-Projekteinstellungen, Projekte und Projektmappen, Dialogfeld "Optionen"
 ms.date: 08/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.VCBuild
@@ -16,24 +15,24 @@ helpviewer_keywords:
 ms.assetid: 56420efd-6a95-464e-b890-e2b38c48d66a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cab1a6841a321489091bcf1e62dbf2d8eeafacdc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2d3f81659930f75cda3c4ec0873837f7486e8b60
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789321"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>VC++-Projekteinstellungen, Projekte und Projektmappen, Dialogfeld "Optionen"
 In diesem Dialogfeld können Sie [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]-Build- und Projekteinstellungen definieren, die für die Protokollierung, die Leistung sowie unterstützende Dateitypen relevant sind.
 
 ### <a name="to-access-this-dialog-box"></a>So öffnen Sie das Dialogfeld
 
-1.  Klicken Sie im Menü **Extras** auf **Optionen**.
+1. Klicken Sie im Menü **Extras** auf **Optionen**.
 
-2.  Wählen Sie **Projekte und Projektmappen** aus, und wählen Sie dann **VC++-Projekteinstellungen** aus.
+2. Wählen Sie **Projekte und Projektmappen** aus, und wählen Sie dann **VC++-Projekteinstellungen** aus.
 
 ## <a name="build-logging"></a>Buildprotokollierung
  **Ja**
@@ -94,5 +93,5 @@ Kein Verwenden von zwischengespeicherten Projektdaten. Analysieren Sie die Proje
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Erstellen von C/C++-Programmen](/cpp/build/building-c-cpp-programs)
+- [Erstellen von C/C++-Programmen](/cpp/build/projects-and-build-systems-cpp)
 - [Referenz zur C/C++-Erstellung](/cpp/build/reference/c-cpp-building-reference)

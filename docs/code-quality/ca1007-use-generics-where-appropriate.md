@@ -1,7 +1,6 @@
 ---
-title: 'CA1007: NACH MÖGLICHKEIT Verwenden Sie Generika'
+title: 'CA1007: Nach Möglichkeit Generics verwenden.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1007
@@ -12,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: eab780ea-3b1f-4d32-b15a-5d48da2df46b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 038f498b2f4ef01ac42535b32d4fefd39102e4fe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f1cf2939f0484c6defb76b88fb072fcd4b51849b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883012"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62779713"
 ---
-# <a name="ca1007-use-generics-where-appropriate"></a>CA1007: NACH MÖGLICHKEIT Verwenden Sie Generika
+# <a name="ca1007-use-generics-where-appropriate"></a>CA1007: Nach Möglichkeit Generics verwenden.
 
 |||
 |-|-|

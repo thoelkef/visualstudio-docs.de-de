@@ -1,31 +1,29 @@
 ---
 title: Profilerstellung für ASP.NET-Auslastungstests | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: c3f5c363-be79-40b5-bfa7-db8d21378d8d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 688b98baeec86b932e187cf27cd4661d45acf526
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: e78aa662d8bd90f3b2d11766d3a43f42dc1bbccf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220306"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62994968"
 ---
 # <a name="profile-aspnet-load-tests"></a>Profilerstellung für ASP.NET-Auslastungstests
-Sie können Profilerstellungsdaten von automatisierten [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)]-Webtests sammeln, die Sie für ASP.NET-Websiteprojekte ausführen. Sie können Sampling- und Ebeneninteraktionsdaten sammeln. Weitere Informationen finden Sie unter den folgenden Themen:  
-  
- [(NIB) Vorgehensweise: Erstellen einer Leistungssitzung für eine Webanwendung aus dem Webleistungstest-Editor](https://msdn.microsoft.com/d14e0a27-33cc-4e4e-8792-fe03e50d51e1)
-  
- [Gewusst wie: Konfigurieren von ASP.NET-Profiler für Auslastungstests mit Testeinstellungen in Visual Studio](https://msdn.microsoft.com/Library/6832fe39-04d5-4d94-8a18-3e2730bad423)  
-  
-## <a name="see-also"></a>Siehe auch  
- [Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)   
- [Verwenden von Leistungsregeln zur Analyse von Daten](../profiling/using-performance-rules-to-analyze-data.md)   
- [Datenansichten der Samplingmethode](../profiling/profiler-sampling-method-data-views.md)   
- [Ansicht „Ebeneninteraktionen“](../profiling/tier-interactions-view.md)
+Sie können Profilerstellungsdaten von automatisierten [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)]-Webtests sammeln, die Sie für ASP.NET-Websiteprojekte ausführen. Sie können Sampling- und Ebeneninteraktionsdaten sammeln. Weitere Informationen finden Sie unter den folgenden Themen:
+
+- [(NIB) Vorgehensweise: Erstellen einer Leistungssitzung für eine Webanwendung aus dem Webleistungstest-Editor](https://msdn.microsoft.com/d14e0a27-33cc-4e4e-8792-fe03e50d51e1)
+
+- [Vorgehensweise: Konfigurieren des ASP.NET-Profilers für Auslastungstests mit Testeinstellungen in Visual Studio](https://msdn.microsoft.com/Library/6832fe39-04d5-4d94-8a18-3e2730bad423)
+
+## <a name="see-also"></a>Siehe auch
+- [Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)
+- [Verwenden von Leistungsregeln zur Analyse von Daten](../profiling/using-performance-rules-to-analyze-data.md)
+- [Datenansichten der Samplingmethode](../profiling/profiler-sampling-method-data-views.md)
+- [Ansicht „Ebeneninteraktionen“](../profiling/tier-interactions-view.md)

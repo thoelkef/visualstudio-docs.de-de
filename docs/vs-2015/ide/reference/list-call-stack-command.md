@@ -1,14 +1,9 @@
 ---
 title: Befehl „Aufrufliste auflisten“ | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - debug.listcallstack
 helpviewer_keywords:
@@ -18,18 +13,17 @@ ms.assetid: a8b20bf2-81d2-4069-aea8-23e6b15b4347
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 69c3708960f5b1ddaf0ff6620b8d90eb64cd86d8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 932dbc9e3971598748e462de92280ac7112f8c62
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194375"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665115"
 ---
 # <a name="list-call-stack-command"></a>Befehl "Aufrufliste auflisten"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Zeigt die aktuelle Aufrufliste an.  
   
 ## <a name="syntax"></a>Syntax  
@@ -82,7 +76,7 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
  Thread:`n`  
  Dies ist optional. Zeigt die Aufrufliste für den Thread `n` an. Wenn kein Thread angegeben ist, wird die Aufrufliste für den aktuellen Thread angezeigt.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Änderungen an den Argumenten oder Schaltern gelten bei zukünftigen Aufrufen dieses Befehls. Wenn Sie Debug.ListCallStackby selbst ausgeben, wird die gesamte Aufrufliste angezeigt. Wenn Sie beispielsweise einen Index angeben  
   
 ```  
@@ -112,6 +106,3 @@ kb 2
  [Befehlsfenster](../../ide/reference/command-window.md)   
  [Such-/Befehlsfeld](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

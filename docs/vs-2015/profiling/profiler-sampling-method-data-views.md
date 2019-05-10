@@ -1,14 +1,9 @@
 ---
 title: Datenansichten der Profiler-Samplingmethode | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,sampling data views
 - sampling data views
@@ -16,13 +11,13 @@ ms.assetid: 798de693-e43a-4056-aff5-48310c2172c5
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bde5ae4d7f6fe7d556096ee29533bdbcae5445bf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5a0a5664b4c22aa8a31ab4f0f620c14b4aeadc50
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817216"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442516"
 ---
 # <a name="profiler-sampling-method-data-views"></a>Datenansichten der Profiler-Samplingmethode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "51817216"
 Dieser Abschnitt enthält Referenzinformationen zu den Ansichten und Berichten von Profiler-Datendateien, die mit der Samplingmethode generiert werden.  
   
 > [!NOTE]
->  Verbesserte Sicherheitsfeatures in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen Windows Store-Apps neue Erfassungsmethoden. Siehe [Profilerstellungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+> Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen Windows Store-Apps neue Erfassungsmethoden. Siehe [Profilerstellungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Zusammenfassungsansicht](../profiling/summary-view-sampling-data.md)  
@@ -73,6 +68,3 @@ Dieser Abschnitt enthält Referenzinformationen zu den Ansichten und Berichten v
   
 ## <a name="see-also"></a>Siehe auch  
  [Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)
-
-
-

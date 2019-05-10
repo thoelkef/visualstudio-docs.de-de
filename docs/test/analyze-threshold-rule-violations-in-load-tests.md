@@ -14,14 +14,13 @@ helpviewer_keywords:
 ms.assetid: 969ed346-cf2e-4d48-82b3-edb3e075e1c0
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: badeb0d01347bf4410b645dc901f3ec518178574
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 4a7cd36fcb144eaa098acc30a7da550b1288684a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823083"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analysieren von Verletzungen der Schwellenwertregeln in Auslastungstests mithilfe des Auslastungstest-Analyzers
 

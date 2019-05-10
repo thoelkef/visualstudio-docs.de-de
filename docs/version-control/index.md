@@ -4,7 +4,7 @@ title: Versionskontrolle
 description: Leitfaden für die ersten Schritte mit der Versionskontrolle in Visual Studio
 keywords: VSTS, TFS, Versionskontrolle
 author: steved0x
-ms.manager: douge
+ms.manager: jillfra
 ms.author: sdanie
 ms.date: 12/15/2017
 ms.topic: landing-page
@@ -12,12 +12,12 @@ ms.prod: .net-core
 ms.assetid: 2c119a5f-0272-48c0-8d6c-806196944aea
 ms.workload:
 - multiple
-ms.openlocfilehash: 3640fba7d1ca3993841adb94dfdd08bc7d405e9b
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 97facaed877030dca4a6a2257147c4d92201ab55
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348161"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62944922"
 ---
 # <a name="version-control-in-visual-studio"></a>Versionskontrolle in Visual Studio
 
@@ -27,6 +27,7 @@ Versionskontrollsysteme ermöglichen Ihnen das Nachverfolgen von Änderungen am 
 
 Git ist aktuell das am häufigsten verwendete Versionskontrollsystem und hat sich schnell als Standard für die Versionskontrolle etabliert. Git ist ein verteiltes Versionskontrollsystem. Dies bedeutet, dass Ihre lokale Kopie des Codes ein vollständiges Versionskontrollrepository darstellt. Diese voll funktionsfähigen lokalen Repositorys erleichtern das Offline- oder Remotearbeiten. Sie committen Ihre Arbeit lokal und synchronisieren dann Ihre Kopie des Repositorys mit der Kopie auf dem Server. Dieses Paradigma unterscheidet sich von der zentralisierten Versionskontrolle, bei der Clients Code mit einem Server synchronisieren müssen, bevor neue Versionen des Codes erstellt werden.
 
+<!-- markdownlint-disable MD033 -->
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="/azure/devops/git/what-is-git">

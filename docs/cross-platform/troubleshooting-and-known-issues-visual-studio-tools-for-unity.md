@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 1c69c78e9a081680c6ee5279ddce1816bf500672
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 57249507373199d217079a9b18c483fee9a51098
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815585"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Problembehandlung und bekannte Probleme (Visual Studio-Tools für Unity)
 
@@ -62,7 +62,7 @@ Für FMOD gibt es eine Möglichkeit zur Problemumgehung: Sie können das Initial
 
 ## <a name="extra-reloads-or-visual-studio-losing-all-open-windows"></a>Zusätzliches Neuladen oder Visual Studio verliert alle geöffneten Fenster
 
-Stellen Sie sicher, dass Sie Projektdateien nie direkt über Asset Processor oder ein anderes Tool direkt bearbeiten. Wenn Sie die Projektdatei wirklich bearbeiten müssen, verwenden Sie die hierfür verfügbare API. Lesen Sie den Abschnitt zu [Problemen mit Assemblyverweisen](#Assembly-reference-issues).
+Stellen Sie sicher, dass Sie Projektdateien nie direkt über Asset Processor oder ein anderes Tool direkt bearbeiten. Wenn Sie die Projektdatei wirklich bearbeiten müssen, verwenden Sie die hierfür verfügbare API. Lesen Sie den Abschnitt zu [Problemen mit Assemblyverweisen](#assembly-reference-issues).
 
 Wenn zusätzliches Neuladen auftritt oder Visual Studio alle geöffneten Fenster beim Neuladen verliert, stellen Sie sicher, dass die richtigen .NET-Pakete zur Festlegung von Zielversionen installiert sind. Weitere Informationen zu Frameworks finden Sie in folgendem Abschnitt.
 

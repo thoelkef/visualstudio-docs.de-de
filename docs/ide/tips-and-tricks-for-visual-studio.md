@@ -1,19 +1,18 @@
 ---
 title: Tastenkombinationen
 ms.date: 11/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d821d736bc73dbc64c947396ead683f59c4be0b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b985d4609c40c36d15a5ba8dea0a57aff06b2941
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53897812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950344"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Tastenkombinationen für Visual Studio
 
@@ -50,10 +49,10 @@ Sie können in Visual Studio einfacher navigieren, indem Sie die Tastenkombinati
 
 |||
 |-|-|
-|Suche in Projektmappen-Explorer|**STRG**+**;**|
+|Projektmappen-Explorer-Suche|**STRG**+**;**|
 |Platzieren des Fokus in das Suchfeld eines beliebigen Toolfensters|**Alt**+**`** wenn sich der Fokus im Toolfenster befindet|
-|Schnellstart|**Strg**+**Q**|
-|Eingrenzen der Schnellstart-Ergebnisbereiche|– @opt Optionen<br />– @cmdBefehle<br />– @mruZuletzt verwendet<br />– @docGeöffnete Dokumente|
+|Suchfeld|**Strg**+**Q**|
+|Ergebnisse im Suchfeld|– @opt Optionen<br />– @cmdBefehle<br />– @mruZuletzt verwendet<br />– @docGeöffnete Dokumente|
 |Suchen in den Tooloptionen|**STRG**+**E**|
 
 ## <a name="editor-find"></a>Suche im Editor
@@ -71,9 +70,9 @@ Sie können in Visual Studio einfacher navigieren, indem Sie die Tastenkombinati
 |Suchen in Dateien|**STRG**+**UMSCHALT**+**F**|
 |In Dateien ersetzen|**STRG**+**UMSCHALT**+**H**|
 
-##  <a name="BKMK_CodeEditor"></a> Code-Editor
+## <a name="BKMK_CodeEditor"></a> Code-Editor
 
-|Befehl|Verknüpfung|Verfügbarkeit der Versionen|
+|Befehl|Verknüpfung|Bei der Einführung|
 |-|-|-|
 |Gehe zu allen|**STRG**+**T**|
 |Zu zuletzt verwendeten Dateien wechseln|**STRG**+**T**,**R**|

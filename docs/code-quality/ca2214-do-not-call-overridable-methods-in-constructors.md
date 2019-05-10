@@ -1,7 +1,6 @@
 ---
-title: 'CA2214: Überschreibbare Methoden in Konstruktoren nicht aufrufen'
+title: 'CA2214: Überschreibbare Methoden in Konstruktoren nicht aufrufen.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - DoNotCallOverridableMethodsInConstructors
@@ -12,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: 335b57ca-a6e8-41b4-a20e-57ee172c97c3
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 01ec50272dafde23072f97f22946370dd2fc5d31
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ef2a5631247f882a70ae94877da02f576ff04a5d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62796704"
 ---
-# <a name="ca2214-do-not-call-overridable-methods-in-constructors"></a>CA2214: Überschreibbare Methoden in Konstruktoren nicht aufrufen
+# <a name="ca2214-do-not-call-overridable-methods-in-constructors"></a>CA2214: Überschreibbare Methoden in Konstruktoren nicht aufrufen.
 
 |||
 |-|-|

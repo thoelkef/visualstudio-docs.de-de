@@ -1,12 +1,9 @@
 ---
-title: 'Vorgehensweise: Erstellen einer einer domänenspezifischen Sprachlösung | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Erstellen Sie eine DSL-Projektmappe | Microsoft-Dokumentation'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.designerwizard
 helpviewer_keywords:
@@ -17,15 +14,15 @@ ms.assetid: e585b63b-34d2-405a-8d81-39ea22317975
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 2650afc2172cdcceca892d4ad19a05becac3e472
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e9afaa8fc74ef893b3b916c66907ae5d1a3af55f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908922"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441084"
 ---
-# <a name="how-to-create-a-domain-specific-language-solution"></a>Gewusst wie: Erstellen einer domänenspezifischen Sprachlösung
+# <a name="how-to-create-a-domain-specific-language-solution"></a>Vorgehensweise: Erstellen einer domänenspezifischen Sprachlösung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Eine domänenspezifische Sprache (DSL) wird erstellt, indem Sie mithilfe einer speziellen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Lösung.  
@@ -58,7 +55,7 @@ Eine domänenspezifische Sprache (DSL) wird erstellt, indem Sie mithilfe einer s
        Die **Domain-Specific Language-Designer-Assistenten** angezeigt wird.  
   
       > [!NOTE]
-      >  Vorzugsweise sollten die von Ihnen eingegebene Name ein gültiger Visual C#-Bezeichner, sein, da möglicherweise zum Generieren von Code verwendet werden.  
+      > Vorzugsweise sollten die von Ihnen eingegebene Name ein gültiger Visual C#-Bezeichner, sein, da möglicherweise zum Generieren von Code verwendet werden.  
   
       ![DSL-Dialogfeld "erstellen"](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
   
@@ -70,18 +67,18 @@ Eine domänenspezifische Sprache (DSL) wird erstellt, indem Sie mithilfe einer s
   
 3. Geben Sie eine Dateinamenerweiterung auf die **Dateierweiterung** Seite. Es muss auf dem Computer eindeutig sein und in jeder Computer, auf denen Sie die DSL installieren möchten. Daraufhin sollte die Nachricht **keine Anwendungen oder Visual Studio-Editoren mithilfe dieser Erweiterung**.  
   
-   -   Wenn Sie die Dateinamenerweiterung in vorherigen experimentelle DSLs verwendet haben, die nicht vollständig installiert wurden, Sie können sie sich durch Löschen mit der **Zurücksetzen der experimentellen Instanz** -Tool, das im befinden die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK-Menü.  
+   - Wenn Sie die Dateinamenerweiterung in vorherigen experimentelle DSLs verwendet haben, die nicht vollständig installiert wurden, Sie können sie sich durch Löschen mit der **Zurücksetzen der experimentellen Instanz** -Tool, das im befinden die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK-Menü.  
   
-   -   Wenn ein anderer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Erweiterung, die diese Dateierweiterung wird vollständig auf Ihrem Computer installiert wurde, sollten Sie es deinstallieren. Auf der **Tools** Menü klicken Sie auf **Erweiterungs-Manager**.  
+   - Wenn ein anderer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Erweiterung, die diese Dateierweiterung wird vollständig auf Ihrem Computer installiert wurde, sollten Sie es deinstallieren. Auf der **Tools** Menü klicken Sie auf **Erweiterungs-Manager**.  
   
 4. Überprüfen Sie und bei Bedarf passen Sie an, die Felder in den verbleibenden Seiten des Assistenten. Wenn Sie mit den Einstellungen zufrieden sind, klicken Sie auf **Fertig stellen**. Weitere Informationen zu den Einstellungen finden Sie unter [DSL-Designer-Assistentenseiten](#settings).  
   
     Der Assistent erstellt eine Projektmappe mit zwei Projekten, die benannt werden **Dsl** und **DslPackage**.  
   
    > [!NOTE]
-   >  Wenn Sie eine Meldung, die Sie benachrichtigt werden, nicht zum Ausführen von Textvorlagen aus nicht vertrauenswürdigen Quellen auf **OK**. Sie können diese Meldung nicht wieder angezeigt werden, festlegen.  
+   > Wenn Sie eine Meldung, die Sie benachrichtigt werden, nicht zum Ausführen von Textvorlagen aus nicht vertrauenswürdigen Quellen auf **OK**. Sie können diese Meldung nicht wieder angezeigt werden, festlegen.  
   
-##  <a name="settings"></a> Die DSL-Designer-Assistent-Seiten  
+## <a name="settings"></a> Die DSL-Designer-Assistent-Seiten  
  Sie können einige Felder die Standardwerte unverändert lassen. Allerdings stellen Sie sicher, dass Sie das Feld für die Erweiterung festlegen.  
   
 ### <a name="solution-settings-page"></a>Seite "Lösung-Einstellungen"  
@@ -101,15 +98,15 @@ Eine domänenspezifische Sprache (DSL) wird erstellt, indem Sie mithilfe einer s
   
  Wenn Sie eine Liste der Tools oder Pakete angezeigt wird, sollten Sie eine der folgenden tun:  
   
--   Geben Sie eine andere Dateinamenerweiterung.  
+- Geben Sie eine andere Dateinamenerweiterung.  
   
      \- oder –  
   
--   Zurücksetzen der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] experimentelle Instanz. Dadurch werden alle der DSLs Aufheben der Registrierung, die Sie zuvor erstellt haben. Auf der **starten** Menü klicken Sie auf **Programme**, **Microsoft Visual Studio 2010 SDK**, **Tools**, und klicken Sie dann **Zurücksetzen der Microsoft Visual Studio 2010 experimentelle Instanz**. Sie können eine beliebige andere DSLs neu erstellen, die Sie erneut verwenden möchten.  
+- Zurücksetzen der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] experimentelle Instanz. Dadurch werden alle der DSLs Aufheben der Registrierung, die Sie zuvor erstellt haben. Auf der **starten** Menü klicken Sie auf **Programme**, **Microsoft Visual Studio 2010 SDK**, **Tools**, und klicken Sie dann **Zurücksetzen der Microsoft Visual Studio 2010 experimentelle Instanz**. Sie können eine beliebige andere DSLs neu erstellen, die Sie erneut verwenden möchten.  
   
      \- oder –  
   
--   Wenn eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , deinstallieren sie die Erweiterung, die diese Dateierweiterung verwendet vollständig auf dem Computer installiert wurde. Auf der **Tools** Menü klicken Sie auf **Erweiterungs-Manager**.  
+- Wenn eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , deinstallieren sie die Erweiterung, die diese Dateierweiterung verwendet vollständig auf dem Computer installiert wurde. Auf der **Tools** Menü klicken Sie auf **Erweiterungs-Manager**.  
   
 ### <a name="product-settings-page"></a>Settings-Produktseite  
  **Was ist der Name des Produkts, das die neue domänenspezifische Sprache gehört?**  
@@ -136,7 +133,4 @@ Eine domänenspezifische Sprache (DSL) wird erstellt, indem Sie mithilfe einer s
   
 ## <a name="see-also"></a>Siehe auch  
  [Gewusst wie: Definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md)   
- [DSL-Tools – Glossar](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Erfahren Sie mehr über die Office 365-Vorteile für Entwickler, die in Ihrem Visual Studio-Abonnement enthalten sind.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4fde2da9c3d03b436614fdf58f3477c33091d1d8
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 31dae1adaaa4fd500357988471718f6ea074a40c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739720"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947190"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Die Office 365-Abonnementvorteile für Entwickler in Visual Studio-Abonnements
 
@@ -75,17 +73,15 @@ Weitere Informationen zum Office 365-Entwicklerabonnement finden Sie unter [FAQ:
 | Visual Studio Dev Essentials | NA  | Nicht verfügbar |NA |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure                                       | Nicht verfügbar                                                           |NA|
 
-<sup>1</sup> *Umfasst:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), FTE, BizSpark, MCT Software & Services (Developer), MCT Software & Services.  Umfasst nicht:  Microsoft Partner Network (MPN), Imagine, Microsoft Valued Professional (MVP), Region Director (RD).*
-
+<sup>1</sup> *Umfasst:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), FTE, BizSpark, MCT Software & Services (Developer), MCT Software & Services.  Umfasst nicht:  Microsoft Partner Network (MPN), Imagine, Most Valuable Professional (MVP), Regional Director (RD).*
 
 > [!NOTE]
 > In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.
-
 
 Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen.
 
 ## <a name="support-resources"></a>Supportressourcen
 
--  Benötigen Sie Hilfe bei Ihrem Office Developer-Abonnement? Sehen Sie sich die [Supportressourcen](https://developer.microsoft.com/office/support) im [Office Dev Center](https://developer.microsoft.com/office) an.
--  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
--  Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
+- Benötigen Sie Hilfe bei Ihrem Office Developer-Abonnement? Sehen Sie sich die [Supportressourcen](https://developer.microsoft.com/office/support) im [Office Dev Center](https://developer.microsoft.com/office) an.
+- Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
+- Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).

@@ -1,14 +1,9 @@
 ---
 title: GetFrameworkSdkPath-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GetFrameworkSdkPath
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: 2ef82b98-02b6-40cf-a9b5-f0e882fb5064
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1ca047d35ec914833d2044cb2ae9fd4f7cf322a6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e6d527b00e8cbfe6a6f4ad5d112a23e46d4edb8e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301781"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656959"
 ---
 # <a name="getframeworksdkpath-task"></a>GetFrameworkSdkPath-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Ruft den Pfad zu [!INCLUDE[winsdklong](../includes/winsdklong-md.md)] ab  
   
 ## <a name="task-parameters"></a>Aufgabenparameter  
@@ -47,7 +41,7 @@ Ruft den Pfad zu [!INCLUDE[winsdklong](../includes/winsdklong-md.md)] ab
 |`FrameworkSdkVersion40Path`|Optionaler schreibgeschützter `String`-Parameter<br /><br /> Gibt den Pfad zum .NET SDK-Version 4.0 zurück, falls vorhanden Andernfalls wird `String.Empty` zurückgegeben.|  
 |`Path`|Optionaler `String`-Ausgabeparameter.<br /><br /> Enthält den Pfad zum neuesten .NET SDK, wenn eine Version vorhanden ist. Andernfalls wird `String.Empty` zurückgegeben.|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Beispiel  
@@ -69,6 +63,3 @@ Ruft den Pfad zu [!INCLUDE[winsdklong](../includes/winsdklong-md.md)] ab
 ## <a name="see-also"></a>Siehe auch  
  [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
  [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)
-
-
-

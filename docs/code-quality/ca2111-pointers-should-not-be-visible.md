@@ -1,7 +1,6 @@
 ---
 title: 'CA2111: Zeiger sollten nicht sichtbar sein.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - PointersShouldNotBeVisible
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: b3a8d466-895b-43bc-a2df-5d7058fe915f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1427cc61d540599b04118e6efff020f62a58bd1b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 46284c37bc40f963253912b4b8b66cd20a871f83
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53839741"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545214"
 ---
 # <a name="ca2111-pointers-should-not-be-visible"></a>CA2111: Zeiger sollten nicht sichtbar sein.
 

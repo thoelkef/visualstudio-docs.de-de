@@ -10,14 +10,13 @@ helpviewer_keywords:
 ms.assetid: 47f981d9-3038-45cc-a486-82b9daf9a9a1
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: b58318bb5dbb92c47bc82f11616f93734999200b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 4da3fc51593cc877e09ca6f46db70303186b293e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783834"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>Bearbeiten der Testmischung zur Angabe der Webbrowsertypen in einem Auslastungstestszenario
 
@@ -25,9 +24,9 @@ Mithilfe des *Browsermix* kann die Auslastung in einem Auslastungstestszenario r
 
 Ein Browsermix legt die Wahrscheinlichkeit fest, mit der ein virtueller Benutzer einen bestimmten Webbrowsertyp in einem Auslastungstestszenario verwendet. Beim Erstellen eines Auslastungstests möchten Sie ggf. simulieren, dass die Auslastung durch verschiedene Webbrowser generiert wird. Wenn Sie der Mischung einen Webbrowsertyp aus den verfügbaren Webbrowsern hinzufügen, wird allen HTTP-Anforderungen, die von einem Webleistungstest gesendet werden, ein diesem Webbrowser zugeordneter Satz an Headern hinzugefügt.
 
-Der Browsermix funktioniert wie andere Mischoptionen. Einem virtuellen Benutzer wird auf Grundlage des Browsermix zufällig ein Webbrowsertyp zugeordnet. Die Tests dieses Benutzers werden auf einem bestimmten Webbrowser ausgeführt, basierend auf der Wahrscheinlichkeit, die in der Mischung angegeben wurde.
+Die Browsermischung funktioniert wie andere Mischoptionen. Einem virtuellen Benutzer wird auf Grundlage des Browsermix zufällig ein Webbrowsertyp zugeordnet. Die Tests dieses Benutzers werden auf einem bestimmten Webbrowser ausgeführt, basierend auf der Wahrscheinlichkeit, die in der Mischung angegeben wurde.
 
-Sie können dem Browsermix jederzeit weitere Webbrowsertypen hinzufügen oder Webbrowsertypen aus der Mischung entfernen. Über die Mischungssteuerung kann auch die Verteilung des Browsermixes geändert werden. Mit der Mischungssteuerung können Sie die Verteilung der Browser in einem Szenario auf einfache Weise anpassen.
+Sie können dem Browsermix jederzeit weitere Webbrowsertypen hinzufügen oder Webbrowsertypen aus der Mischung entfernen. Über die Mischungssteuerung kann auch die Verteilung der Browsermischung geändert werden. Mit der Mischungssteuerung können Sie die Verteilung der Browser in einem Szenario auf einfache Weise anpassen.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -35,34 +34,34 @@ Sie können dem Browsermix jederzeit weitere Webbrowsertypen hinzufügen oder We
 
 ### <a name="to-add-new-browsers-to-a-scenario"></a>So fügen Sie einem Szenario neue Browser hinzu
 
-1.  Klicken Sie während des Angebens des Browsermix für ein Szenario auf **Hinzufügen**.
+1. Klicken Sie während des Angebens des Browsermix für ein Szenario auf **Hinzufügen**.
 
      Dem Raster wird ein neuer Browsereintrag hinzugefügt.
 
     > [!NOTE]
     > Klicken Sie mit der rechten Maustaste auf ein vorhandenes Szenario, und klicken Sie anschließend auf **Browsermix bearbeiten**, um das Dialogfeld **Browsermix bearbeiten** anzuzeigen.
 
-2.  Klicken Sie in der Spalte **Browsertyp** auf den Pfeil für den neuen Eintrag, und wählen Sie den gewünschten Browsertyp aus.
+2. Klicken Sie in der Spalte **Browsertyp** auf den Pfeil für den neuen Eintrag, und wählen Sie den gewünschten Browsertyp aus.
 
-3.  (Optional) Passen Sie die Mischungssteuerung an, um die Testverteilung anzugeben.
+3. (Optional) Passen Sie die Mischungssteuerung an, um die Testverteilung anzugeben.
 
-4.  Wenn Sie keine weiteren Browser hinzufügen möchten, klicken Sie auf **OK**.
+4. Wenn Sie keine weiteren Browser hinzufügen möchten, klicken Sie auf **OK**.
 
-##  <a name="remove-browsers-from-a-scenario"></a>Entfernen von Browsern aus einem Szenario
+## <a name="remove-browsers-from-a-scenario"></a>Entfernen von Browsern aus einem Szenario
 
 ### <a name="to-remove-browsers-from-a-scenario"></a>So entfernen Sie Browser aus einem Szenario
 
-1.  Öffnen Sie einen Auslastungstest.
+1. Öffnen Sie einen Auslastungstest.
 
-2.  Klicken Sie mit der rechten Maustaste auf das Szenario, aus dem ein Browser entfernt werden soll, und klicken Sie auf **Browsermix bearbeiten**.
+2. Klicken Sie mit der rechten Maustaste auf das Szenario, aus dem ein Browser entfernt werden soll, und klicken Sie auf **Browsermix bearbeiten**.
 
      Das Dialogfeld **Browsermix bearbeiten** wird angezeigt.
 
-3.  Wählen Sie den Browser in der Tabelle aus, und klicken Sie dann auf **Entfernen**.
+3. Wählen Sie den Browser in der Tabelle aus, und klicken Sie dann auf **Entfernen**.
 
-4.  (Optional) Passen Sie die Mischungssteuerung an, um die Testverteilung anzugeben.
+4. (Optional) Passen Sie die Mischungssteuerung an, um die Testverteilung anzugeben.
 
-5.  Wenn Sie keine weiteren Browser entfernen möchten, klicken Sie auf **OK**.
+5. Wenn Sie keine weiteren Browser entfernen möchten, klicken Sie auf **OK**.
 
 ## <a name="about-the-mix-control"></a>Informationen zur Mischungssteuerung
 

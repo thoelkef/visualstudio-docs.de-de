@@ -1,7 +1,6 @@
 ---
 title: Bindung an Daten im XAML-Designer
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner.DataBinding
@@ -10,21 +9,21 @@ dev_langs:
 - VB
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: f0d9ccd32c8f616e6f998bcd1f31773460c89a20
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0c0d13603a2575a826a53bf145fd1f0218571243
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866123"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892844"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Exemplarische Vorgehensweise: Bindung an Daten im XAML-Designer
 
-Im XAML-Designer können Sie Datenbindungseigenschaften mithilfe der Zeichenfläche und des Eigenschaftenfensters festlegen. In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Daten an ein Steuerelement gebunden werden. Die exemplarische Vorgehensweise zeigt insbesondere, wie eine einfache Einkaufswagenklasse erstellt wird, die über eine [DependencyProperty](/uwp/api/Windows.UI.Xaml.DependencyProperty) mit der Bezeichnung `ItemCount` verfügt, und wie die Eigenschaft `ItemCount` an die Eigenschaft **Text** eines [TextBlock](/uwp/api/Windows.UI.Xaml.Controls.TextBlock)-Steuerelements gebunden wird.
+Im XAML-Designer können Sie Datenbindungseigenschaften einstellen, indem sie die Zeichenfläche und das Eigenschaftenfenster benutzen. In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Daten an ein Steuerelement gebunden werden. Die exemplarische Vorgehensweise zeigt insbesondere, wie eine einfache Einkaufswagenklasse erstellt wird, die über eine [DependencyProperty](/uwp/api/Windows.UI.Xaml.DependencyProperty) mit der Bezeichnung `ItemCount` verfügt, und wie die Eigenschaft `ItemCount` an die Eigenschaft **Text** eines [TextBlock](/uwp/api/Windows.UI.Xaml.Controls.TextBlock)-Steuerelements gebunden wird.
 
-## <a name="to-create-a-class-to-use-as-a-data-source"></a>So erstellen Sie eine Klasse, die als Datenquelle verwendet wird
+## <a name="to-create-a-class-to-use-as-a-data-source"></a>So erstellen Sie eine Klasse zur Verwendung als Datenquelle
 
 1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt** aus.
 
@@ -32,7 +31,7 @@ Im XAML-Designer können Sie Datenbindungseigenschaften mithilfe der Zeichenflä
 
 1. Geben Sie dem Projekt den Namen **BindingTest**, und wählen Sie anschließend die Schaltfläche **OK**.
 
-1. Öffnen Sie die Datei **MainWindow.xaml.cs** (oder **MainWindow.xaml.vb**), und fügen Sie den folgenden Code hinzu. Fügen Sie in C# den Code im `BindingTest`-Namespace (vor der letzten schließenden Klammer in der Datei) hinzu. In Visual Basic können Sie einfach die neue Klasse hinzufügen.
+1. Öffnen Sie die Datei **MainWindow.xaml.cs** (oder **MainWindow.xaml.vb**), und fügen Sie den folgenden Code hinzu. In C# fügen Sie den Code im Namespace `BindingTest` hinzu (vor der letzten schließenden Klammer in der Datei). Fügen Sie in Visual Basic einfach die neue Klasse hinzu.
 
    ```csharp
    public class ShoppingCart : DependencyObject
@@ -96,7 +95,7 @@ Im XAML-Designer können Sie Datenbindungseigenschaften mithilfe der Zeichenflä
 
 1. Drücken Sie **F5**, um die App auszuführen.
 
-     Das `TextBlock`-Steuerelement sollte den Standardwert 0 als Text anzeigen.
+     Die Steuerung `TextBlock` sollte den Standardwert von 0 als Text anzeigen.
 
 ## <a name="see-also"></a>Siehe auch
 

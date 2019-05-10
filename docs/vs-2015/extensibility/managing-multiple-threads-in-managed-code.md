@@ -1,24 +1,19 @@
 ---
 title: Verwalten von mehreren Threads in verwaltetem Code | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 59730063-cc29-4dae-baff-2234ad8d0c8f
 caps.latest.revision: 8
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a33b17ddc0eb2d6169761260905b9bf056a4c55e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4e7198623283fa3ef9c82d6a39a1f7c1db6c760c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802355"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433052"
 ---
 # <a name="managing-multiple-threads-in-managed-code"></a>Verwalten von mehreren Threads in verwaltetem Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,11 +23,11 @@ Wenn Sie eine verwaltete VSPackage-Erweiterung, die asynchrone Methoden aufrufen
  Sie können im Allgemeinen vom UI-Thread wechseln, zu einem anderen Thread aus, oder umgekehrt. Bei der Rückgabe der Methode ist der aktuelle Thread der Thread, von dem es ursprünglich aufgerufen wurde.  
   
 > [!IMPORTANT]
->  Die folgenden Richtlinien verwenden Sie die APIs in der <xref:Microsoft.VisualStudio.Threading> Namespace, insbesondere die <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> Klasse. Die APIs in diesem Namespace sind neu in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Erhalten Sie eine Instanz von einem <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> aus der <xref:Microsoft.VisualStudio.Shell.ThreadHelper> Eigenschaft `ThreadHelper.JoinableTaskFactory`.  
+> Die folgenden Richtlinien verwenden Sie die APIs in der <xref:Microsoft.VisualStudio.Threading> Namespace, insbesondere die <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> Klasse. Die APIs in diesem Namespace sind neu in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Erhalten Sie eine Instanz von einem <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> aus der <xref:Microsoft.VisualStudio.Shell.ThreadHelper> Eigenschaft `ThreadHelper.JoinableTaskFactory`.  
   
 ## <a name="switching-from-the-ui-thread-to-a-background-thread"></a>Wechseln Sie von der UI-Thread in einem Hintergrundthread  
   
-1.  Wenn Sie auf der UI-Thread und asynchronen Arbeit in einem Hintergrundthread möchten, verwenden Sie Task.Run():  
+1. Wenn Sie auf der UI-Thread und asynchronen Arbeit in einem Hintergrundthread möchten, verwenden Sie Task.Run():  
   
     ```csharp  
     await Task.Run(async delegate{  
@@ -42,7 +37,7 @@ Wenn Sie eine verwaltete VSPackage-Erweiterung, die asynchrone Methoden aufrufen
   
     ```  
   
-2.  Wenn Sie die UI-Thread und synchron blockiert, während Sie arbeiten in einem Hintergrundthread, Verwendung durchführen möchten die <xref:System.Threading.Tasks.TaskScheduler> Eigenschaft `TaskScheduler.Default` in <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>:  
+2. Wenn Sie die UI-Thread und synchron blockiert, während Sie arbeiten in einem Hintergrundthread, Verwendung durchführen möchten die <xref:System.Threading.Tasks.TaskScheduler> Eigenschaft `TaskScheduler.Default` in <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>:  
   
     ```csharp  
     // using Microsoft.VisualStudio.Threading;  
@@ -56,7 +51,7 @@ Wenn Sie eine verwaltete VSPackage-Erweiterung, die asynchrone Methoden aufrufen
   
 ## <a name="switching-from-a-background-thread-to-the-ui-thread"></a>Der Wechsel von einem Hintergrundthread zum UI-Thread  
   
-1.  Wenn Sie in einem Hintergrundthread und etwas der UI-Thread verwendet werden sollen <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>:  
+1. Wenn Sie in einem Hintergrundthread und etwas der UI-Thread verwendet werden sollen <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>:  
   
     ```csharp  
     // Switch to main thread  
@@ -74,4 +69,3 @@ Wenn Sie eine verwaltete VSPackage-Erweiterung, die asynchrone Methoden aufrufen
         // Do your work on the main thread here.  
     });  
     ```
-

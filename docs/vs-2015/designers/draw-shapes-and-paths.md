@@ -1,25 +1,20 @@
 ---
 title: Zeichnen von Formen und Pfaden in Blend | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0f59ecbdf9e69093d5c445cdb6d4780eb3b6f86e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c30b0a190d2a2abfed56004e167f6ee5ef5ecf97
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188187"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046072"
 ---
 # <a name="draw-shapes-and-paths"></a>Zeichnen von Formen und Pfaden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,19 +25,19 @@ In XAML-Designer ist eine *Form* genau das, was Sie erwarten. Beispielsweise ein
   
  **In diesem Thema:**  
   
--   [Zeichnen einer Form](#Shape)  
+- [Zeichnen einer Form](#Shape)  
   
--   [Zeichnen eines Pfads](#Path)  
+- [Zeichnen eines Pfads](#Path)  
   
--   [Konvertieren von Formen in Pfade](#Convert)  
+- [Konvertieren von Formen in Pfade](#Convert)  
   
--   [Kombinieren von Pfaden](#Combine)  
+- [Kombinieren von Pfaden](#Combine)  
   
--   [Erstellen eines zusammengesetzten Pfads](#Compound)  
+- [Erstellen eines zusammengesetzten Pfads](#Compound)  
   
--   [Erstellen eines Beschneidungspfads](#Clipping)  
+- [Erstellen eines Beschneidungspfads](#Clipping)  
   
-##  <a name="Shape"></a> Zeichnen einer Form  
+## <a name="Shape"></a> Zeichnen einer Form  
  Formen finden Sie im Bereich **Objekte** .  
   
  ![Kategorie „Formen“ im Bereich „Objekte“](../designers/media/b4-shapes-assetspanel.png "b4_Shapes_AssetsPanel")  
@@ -51,7 +46,7 @@ In XAML-Designer ist eine *Form* genau das, was Sie erwarten. Beispielsweise ein
   
  ![](../designers/media/84261e83-3091-4490-ab58-4218b188439e.png "84261e83-3091-4490-ab58-4218b188439e")  
   
-##  <a name="Path"></a> Zeichnen eines Pfads  
+## <a name="Path"></a> Zeichnen eines Pfads  
  Ein Pfad besteht aus einer Reihe von miteinander verbundenen Linien und Kurven. Verwenden Sie einen Pfad, um interessante Formen zu erstellen, die nicht im Bereich **Objekte** verfügbar sind.  
   
  Sie können einen Pfad mit einer Linie, einem Stift oder einem Zeichenstift zeichnen. Diese Tools finden Sie im Bereich **Tools** .  
@@ -101,12 +96,12 @@ In XAML-Designer ist eine *Form* genau das, was Sie erwarten. Beispielsweise ein
   
  Wählen Sie den Pfad mit der **Auswahl** ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") aus. Klicken Sie mit dem **Stift** ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") auf eine beliebige Stelle im Pfad, an der Sie den Punkt hinzufügen möchten.  
   
-##  <a name="Convert"></a> Konvertieren von Formen in Pfade  
+## <a name="Convert"></a> Konvertieren von Formen in Pfade  
  Um eine Form auf die gleiche Weise wie einen Pfad zu ändern, konvertieren Sie die Form in einen Pfad.  
   
- **Sehen Sie sich ein kurzes Video (in englischer Sprache) an:** ![Konfigurieren installierter Funktionen](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Working with paths: Convert a shape to a path](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).  
+ **Sehen Sie sich ein kurzes Video an:** ![Installierte Funktionen konfigurieren](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [arbeiten mit Pfaden: Konvertieren von Formen in Pfade](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147)  
   
-##  <a name="Combine"></a> Kombinieren von Pfaden  
+## <a name="Combine"></a> Kombinieren von Pfaden  
  Sie können Pfade und Formen zu einem einzelnen Pfad kombinieren.  
   
  ![](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png "2df17a5d-a338-4ef4-96c5-dae51cc1ca8a")  
@@ -117,26 +112,23 @@ In XAML-Designer ist eine *Form* genau das, was Sie erwarten. Beispielsweise ein
 |![](../designers/media/b1-2.png "B1_2")|Vereinigen|![](../designers/media/b1-5.png "B1_5")|Überlappung ausschließen|  
 |![](../designers/media/b1-3.png "B1_3")|Teilen|![](../designers/media/b1-6.png "B1_6")|Subtrahieren|  
   
- **Sehen Sie sich ein kurzes Video (in englischer Sprache) an:** ![Konfigurieren installierter Funktionen](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Working with paths: Combine paths](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).  
+ **Sehen Sie sich ein kurzes Video an:** ![Installierte Funktionen konfigurieren](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [arbeiten mit Pfaden: Kombinieren von Pfaden](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195)  
   
-##  <a name="Compound"></a> Erstellen eines zusammengesetzten Pfads  
+## <a name="Compound"></a> Erstellen eines zusammengesetzten Pfads  
  Wenn Sie einen zusammengesetzten Pfad erstellen, werden sich überschneidende Pfadsegmente vom Ergebnis subtrahiert. Der resultierende Pfad übernimmt die visuellen Eigenschaften des untersten Pfads.  
   
  Sie können einen zusammengesetzten Pfad nach der Erstellung jederzeit teilen.  
   
  ![](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png "2157a8aa-d9a7-4de4-8de5-b10d28f08a84")  
   
- **Sehen Sie sich ein kurzes Video (in englischer Sprache) an:** ![Konfigurieren installierter Funktionen](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Working with paths: Create a compound path](https://www.youtube.com/watch?v=Io5bC0-nH6Q).  
+ **Sehen Sie sich ein kurzes Video an:** ![Installierte Funktionen konfigurieren](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [arbeiten mit Pfaden: Erstellen eines zusammengesetzten Pfads](https://www.youtube.com/watch?v=Io5bC0-nH6Q)  
   
-##  <a name="Clipping"></a> Erstellen eines Beschneidungspfads  
+## <a name="Clipping"></a> Erstellen eines Beschneidungspfads  
  Freistellungspfade sind Pfade oder Formen, die auf ein anderes Objekt angewendet werden. Die Teile des maskierten Objekts, die außerhalb des Freistellungspfads liegen, werden ausgeblendet.  
   
  ![](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png "22471e98-a841-4f39-a3ef-36090cf5a625")  
   
- **Sehen Sie sich ein kurzes Video (in englischer Sprache) an:** ![Konfigurieren installierter Funktionen](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Working with paths: Create a clipping path](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).  
+ **Sehen Sie sich ein kurzes Video an:** ![Installierte Funktionen konfigurieren](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [arbeiten mit Pfaden: Erstellen eines Beschneidungspfads](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232)  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen einer Benutzeroberfläche mit Blend für Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
-
-
-

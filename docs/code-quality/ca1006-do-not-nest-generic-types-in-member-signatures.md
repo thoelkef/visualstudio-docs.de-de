@@ -1,7 +1,6 @@
 ---
-title: 'CA1006: Generische Typen in Membersignaturen nicht schachteln'
+title: 'CA1006: Generische Typen in Membersignaturen nicht schachteln.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - DoNotNestGenericTypesInMemberSignatures
@@ -12,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: dfc867bc-f4af-45d7-b071-db04a248f9fc
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cb71f6ccfeca25af54eab023b8ef077d758890d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 72d75985482ebf7e90db9d817212882b5ed8c292
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856838"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62779638"
 ---
-# <a name="ca1006-do-not-nest-generic-types-in-member-signatures"></a>CA1006: Generische Typen in Membersignaturen nicht schachteln
+# <a name="ca1006-do-not-nest-generic-types-in-member-signatures"></a>CA1006: Generische Typen in Membersignaturen nicht schachteln.
 
 |||
 |-|-|
@@ -65,7 +64,7 @@ ms.locfileid: "53856838"
 
  [CA1003: Generische Ereignishandlerinstanzen verwenden](../code-quality/ca1003-use-generic-event-handler-instances.md)
 
- [CA1007: NACH MÖGLICHKEIT Verwenden Sie Generika](../code-quality/ca1007-use-generics-where-appropriate.md)
+ [CA1007: Verwenden Sie Generika](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>Siehe auch
  [Generika](/dotnet/csharp/programming-guide/generics/index)

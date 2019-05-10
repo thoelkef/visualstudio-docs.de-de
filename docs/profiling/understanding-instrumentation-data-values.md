@@ -1,23 +1,21 @@
 ---
 title: Grundlagen zu Instrumentierungsdatenwerten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,instrumentation
 - instrumentation profiling method
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 524f6f575725fed754c3873af8a9ff62a3c3686f
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 0f10a3f434def1c96c2f096c4b299b47dd8aad9f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34477547"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63004413"
 ---
 # <a name="understand-instrumentation-data-values"></a>Grundlagen zu Instrumentierungsdatenwerten
 
@@ -99,5 +97,5 @@ Der prozentuale Anteil von Werten für „Exklusive Anwendungsintervalle“ von 
 
 ## <a name="see-also"></a>Siehe auch
 
-[Analysieren der durch Leistungstools erstellten Daten](../profiling/analyzing-performance-tools-data.md)  
-[Vorgehensweise: Auswählen von Sammlungsmethoden](../profiling/how-to-choose-collection-methods.md)
+[Analysieren der durch Leistungstools erstellten Daten](../profiling/analyzing-performance-tools-data.md)
+[Vorgehensweise: Auswählen von Collectionmethoden](../profiling/how-to-choose-collection-methods.md)

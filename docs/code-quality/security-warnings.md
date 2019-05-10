@@ -1,7 +1,6 @@
 ---
 title: Sicherheitswarnungen
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.securityrules
@@ -13,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 60d4e8ea-230a-494f-aa6a-b91db77540e4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 648625164d58dca8449196bc80373a0fbfa96d9d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e8d2dadbb4bbd17b1ee1856dd896d78b0faef2cd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825408"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825278"
 ---
 # <a name="security-warnings"></a>Sicherheitswarnungen
 
@@ -37,7 +36,7 @@ Sicherheitswarnungen sorgen für sicherere Bibliotheken und Anwendungen. Diese W
 |[CA2104: Schreibgeschützte änderbare Referenztypen nicht deklarieren](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md)|Ein extern sichtbarer Typ enthält ein extern sichtbares schreibgeschütztes Feld, bei dem es sich um einen änderbaren Referenztyp handelt. Ein änderbarer Typ ist ein Typ, dessen Instanzdaten geändert werden können.|
 |[CA2105: Arrayfelder dürfen nicht schreibgeschützt sein](../code-quality/ca2105-array-fields-should-not-be-read-only.md)|Wenn Sie den schreibgeschützten Modifizierer (ReadOnly in Visual Basic) auf ein Feld mit einem Array anwenden, kann das Feld nicht geändert werden, um auf ein anderes Array zu verweisen. Allerdings können die in einem schreibgeschützten Feld des Arrays gespeicherten Elemente geändert werden.|
 |[CA2106: Sichere Bestätigungen](../code-quality/ca2106-secure-asserts.md)|Eine Methode bestätigt eine Berechtigung, und es werden keine Sicherheitsüberprüfungen für den Aufrufer durchgeführt. Das Gewähren einer Sicherheitsberechtigung ohne Sicherheitsüberprüfungen durchzuführen, kann ein ausnutzbares Sicherheitsrisiko in Code hinterlassen.|
-|[CA2107: VERWENDUNG Deny und PermitOnly überprüfen](../code-quality/ca2107-review-deny-and-permit-only-usage.md)|Die PermitOnly-Methode und die CodeAccessPermission.Deny-Sicherheitsaktionen sollten nur von Entwicklern mit sehr guten Kenntnissen der .NET Framework-Sicherheit verwendet werden. Code, in dem diese Sicherheitsaktionen verwendet werden, sollte einer Sicherheitsüberprüfung unterzogen werden.|
+|[CA2107: Deny und PermitOnly überprüfen](../code-quality/ca2107-review-deny-and-permit-only-usage.md)|Die PermitOnly-Methode und die CodeAccessPermission.Deny-Sicherheitsaktionen sollten nur von Entwicklern mit sehr guten Kenntnissen der .NET Framework-Sicherheit verwendet werden. Code, in dem diese Sicherheitsaktionen verwendet werden, sollte einer Sicherheitsüberprüfung unterzogen werden.|
 |[CA2108: Deklarative Sicherheit auf Werttypen überprüfen](../code-quality/ca2108-review-declarative-security-on-value-types.md)|Ein öffentlicher oder geschützter Werttyp wird durch Datenzugriff oder Linkaufrufe gesichert.|
 |[CA2109: Sichtbare Ereignishandler überprüfen](../code-quality/ca2109-review-visible-event-handlers.md)|Eine öffentliche oder geschützte Ereignisbehandlungsmethode wurde erkannt. Ereignisbehandlungsmethoden sollten nur dann verfügbar gemacht werden, wenn dies absolut notwendig ist.|
 |[CA2111: Zeiger sollten nicht sichtbar sein.](../code-quality/ca2111-pointers-should-not-be-visible.md)|Ein Zeiger ist nicht privat, intern oder schreibgeschützt. Bösartiger Code kann den Wert des Zeigers ändern und damit potenziell Zugriffe auf beliebige Speicherbereiche ermöglichen oder Anwendungs- bzw. Systemfehler verursachen.|
@@ -78,5 +77,5 @@ Sicherheitswarnungen sorgen für sicherere Bibliotheken und Anwendungen. Diese W
 |[CA2153: Behandlung von Ausnahmen zu vermeiden](../code-quality/ca2153-avoid-handling-corrupted-state-exceptions.md)|[Ausnahmen bei Beschädigungen (Corrupted State Exceptions, CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx) weisen auf eine Speicherbeschädigung innerhalb des Prozesses hin. Diese abzufangen, statt einen Absturz des Prozesses zuzulassen, führt zu Sicherheitsrisiken, falls ein Angreifer einen Exploit in den beschädigten Speicherbereich einschleusen kann.|
 |[CA3075: Unsichere DTD-Verarbeitung](../code-quality/ca3075-insecure-dtd-processing.md)|Wenn Sie unsichere DTDProcessing-Instanzen verwenden oder auf externe Entitätsquellen verweisen, kann der Parser unter Umständen nicht vertrauenswürdige Eingaben akzeptieren und Angreifern vertrauliche Informationen offenlegen.|
 |[CA3076: Unsichere XSLT-Skriptausführung](../code-quality/ca3076-insecure-xslt-script-execution.md)|Wenn Sie Extensible Stylesheets Language Transformations (XSLT) ungesichert in .NET-Anwendungen ausführen, könnte der Prozessor möglicherweise nicht vertrauenswürdige URI-Verweise auflösen, wodurch Angreifern sensible Informationen offengelegt werden könnten, was wiederum zu Denial-of-Service- und Cross-Site-Angriffen führen kann.|
-|[CA3077: Unsichere Verarbeitung in API-Design, XML-Dokument und XML-TextReader](../code-quality/ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md)|Beim Entwerfen einer von XMLDocument und XMLTextReader abgeleiteten API sollten Sie DtdProcessing berücksichtigen.  Das Verwenden unsicherer DTDProcessing-Instanzen beim Verweisen auf externe Entitätsquellen bzw. bei deren Auflösung oder das Festlegen unsicherer Werte in XML-Code kann zum Offenlegen von Informationen führen.|
+|[CA3077: Unsichere Verarbeitung in API-Design, XML-Dokument und XML-TextReader](../code-quality/ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md)|Beim Entwerfen einer von XMLDocument und XMLTextReader abgeleiteten API sollten Sie DtdProcessing berücksichtigen. Das Verwenden unsicherer DTDProcessing-Instanzen beim Verweisen auf externe Entitätsquellen bzw. bei deren Auflösung oder das Festlegen unsicherer Werte in XML-Code kann zum Offenlegen von Informationen führen.|
 |[CA3147: Verb-Handler mit ValidateAntiForgeryToken markieren](../code-quality/ca3147-mark-verb-handlers-with-validateantiforgerytoken.md)|Wenn Sie ASP.NET MVC-Controller zu entwerfen, achten Sie darauf, dass Sie von websiteübergreifenden anforderungsfälschungen. Ein websiteübergreifende anforderungsfälschung Angriff kann böswillige Anforderungen von einem authentifizierten Benutzer in den ASP.NET MVC-Controller senden.|

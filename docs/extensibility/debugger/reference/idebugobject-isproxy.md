@@ -1,29 +1,31 @@
 ---
 title: IDebugObject::IsProxy | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugObject::IsProxy
 - IsProxy
 ms.assetid: 06c66b87-db95-4400-ab26-5d33e743a439
-author: gregvanl
+caps.latest.revision: 9
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 58978c5c7281e52adc0a417cb4ee3e8682094a48
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 037245524446ded2ec250f1d4a04e21bf5924a61
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959900"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62918456"
 ---
 # <a name="idebugobjectisproxy"></a>IDebugObject::IsProxy
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Bestimmt, ob das Objekt über einen transparenten Proxy ist.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT IsProxy (  
    BOOL* pfIsProxy  
 );  

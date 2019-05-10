@@ -1,25 +1,20 @@
 ---
 title: Erste Schritte mit Python | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-python
+ms.topic: conceptual
 ms.assetid: 33f4f6fb-0ae4-4234-9df2-531f2d3af17f
 caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
-manager: ghogen
-ms.openlocfilehash: 5cb04bb01aaa6eb06c5e3c50aa13ab51c136678c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9c18ae2731d92e6d128d13e7687bac77ae76dc8a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62575649"
 ---
 # <a name="getting-started-with-python"></a>Erste Schritte mit Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +29,9 @@ Ist als eine Programmiersprache Python:
   
 - Zuverlässig.
 - In der Regel nützlich für die Skripterstellung schnellen Erstellen von Programmen, app-Skripts, desktop-apps, Webserver, Webdienste und wissenschaftliche Berechnungen.
-- Leicht zu erlernen und einen guten Entwurf zu guter Programmierung (viele Universitäten nutzen für die Programmierung einführungskursen) hat.
+- Einfach zu erlernen und unterstützt dank seiner übersichtlichen Struktur eine saubere Programmierung (viele Universitäten wenden Python in Einführungskursen in die Programmierung an).
 - Flexible, zwingend erforderlich, funktionale und objektorientierte Programmierung Formate unterstützen.
-- Kostenlose open Source.
+- Kostenlos und Open Source.
 - Lässt sich problemlos auf allen wichtigen Betriebssystemen.  
 - Unterstützt viele kostenlose, hilfreiche und gut entworfene-Bibliotheken.  
 - Unterstützt zahlreiche Dokumentation, Beispiele und einer starken Entwicklercommunity.  
@@ -44,14 +39,13 @@ Ist als eine Programmiersprache Python:
 Weitere Informationen zur Sprache beginnen Sie mit [Python for Beginners](https://www.python.org/about/gettingstarted/) auf python.org.
 
 Um Python selbst zu installieren, besuchen Sie [ https://www.python.org/download/ ](https://www.python.org/download/).
- 
-  
+
 ## <a name="python-tools-for-visual-studio"></a>Python-Tools für Visual Studio
   
-Die Python-Tools für Visual Studio, die Installation von [visualstudio.com](https://www.visualstudio.com/en-us/explore/python-vs), bieten die folgenden Features:  
+Die Python-Tools für Visual Studio, die Installation von [visualstudio.com](https://www.visualstudio.com/explore/python-vs), bieten die folgenden Features:  
   
 - Unterstützung von mehreren Interpretern: verschiedene Versionen von CPython, IronPython und IPython  
-- Ein Projektsystem, die implizit eine Ordnerstruktur des Python-Codes übernimmt, und auch explizite Steuerung ermöglicht, damit Sie die app-Code, Testcode, Webseiten, JavaScript, Buildskripts usw. identifizieren können.  
+- Ein Projektsystem, das implizit eine Ordnerstruktur aus Python-Code übernimmt und eine explizite Steuerung ermöglicht, sodass Sie App-Code, Testcode, Webseiten, JavaScript, Buildskripts usw. identifizieren können.  
 - Projektvorlagen für Konsole, Internet, Azure, Data Science und andere Projekttypen.    
 - Das Azure SDK für Python (siehe unten)    
 - Umfangreiche Funktionen zur Bearbeitung und Kennzeichnung von Codes: Syntaxfarbgebung, automatischer Abschluss über den gesamten Code und allen Bibliotheken hinweg, Signaturhilfe, Klassenansicht, „Gehe zu Definition“, „Alle Verweise suchen“ und vieles mehr.    
@@ -69,8 +63,7 @@ Die folgenden Ressourcen helfen Ihnen beim Einstieg:
 - Demo zu Installation und Funktionen (27 Min.)])https://www.youtube.com/watch?v=JNNAOypc6Ek)  
 - [Dokumentation](https://github.com/Microsoft/PTVS/wiki)  
 
-
-Beachten Sie, dass Visual Studio keine derzeit die Möglichkeit bietet, erstellen eine eigenständige ausführbare Datei, die mithilfe von Python, das im Wesentlichen ein Programm mit einem eingebetteten Python-Interpreter bedeutet. Es gibt jedoch innerhalb der Python-Community verschiedene Arten, wie dies erreicht werden kann, wie unter [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency) beschrieben wird. CPython unterstützt es auch, in eine native Anwendung eingebettet zu werden, wie im Blogbeitrag [Using CPython's Embeddable Zip File (Verwenden der eingebetteten ZIP-Datei von CPython)](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/) beschrieben wird.
+Beachten Sie, dass Visual Studio keine derzeit die Möglichkeit bietet, erstellen eine eigenständige ausführbare Datei, die mithilfe von Python, das im Wesentlichen ein Programm mit einem eingebetteten Python-Interpreter bedeutet. Es gibt jedoch innerhalb der Python-Community verschiedene Arten, wie dies erreicht werden kann, wie unter [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency) beschrieben wird. CPython unterstützt es auch, in eine native Anwendung eingebettet zu werden, wie im Blogbeitrag [Using CPython's Embeddable Zip File (Verwenden der eingebetteten ZIP-Datei von CPython)](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/) beschrieben wird.
   
 ## <a name="building-ui-with-python"></a>Erstellen von Benutzeroberflächen mit Python  
 
@@ -99,9 +92,8 @@ Das Beschaffen von IPython und wissenschaftlichen Berechnungsbibliotheken (Matpl
 ## <a name="see-also"></a>Siehe auch  
 
 [Erste Schritte mit PTVS: Einrichten von Visual Studio](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
-[Erste Schritte mit PTVS: Programmieren beginnen (Projekte) ](../python/getting-started-with-ptvs-start-coding-projects.md)
-[Erste Schritte mit PTVS: Bearbeiten von Code](../python/getting-started-with-ptvs-editing-code.md)
-[Erste Schritte mit PTVS: Debuggen](../python/getting-started-with-ptvs-debugging.md)
-[Erste Schritte mit PTVS: Interaktives Python](../python/getting-started-with-ptvs-interactive-python.md)
-[Erste Schritte mit PTVS: Erstellen einer Website in Azure](../python/getting-started-with-ptvs-building-a-website-in-azure.md)
-
+[erste Schritte mit PTVS: Codieren beginnen (Projekte)](../python/getting-started-with-ptvs-start-coding-projects.md)
+[erste Schritte mit PTVS: Bearbeiten von Code](../python/getting-started-with-ptvs-editing-code.md)
+[erste Schritte mit PTVS: Debuggen von](../python/getting-started-with-ptvs-debugging.md)
+[erste Schritte mit PTVS: Interaktives Python](../python/getting-started-with-ptvs-interactive-python.md)
+[erste Schritte mit PTVS: Erstellen einer Website in Azure](../python/getting-started-with-ptvs-building-a-website-in-azure.md)

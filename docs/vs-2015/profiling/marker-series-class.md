@@ -1,14 +1,9 @@
 ---
 title: marker_series -Klasse | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::marker_series
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: b8445ed0-c512-4f92-b6b4-3d05c044f939
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bd82862800feacf92059a2d019e9f9988616d615
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cb199d74ade593d0bc8318c27bc96ffbf70e4dcf
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754190"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54778869"
 ---
 # <a name="markerseries-class"></a>marker_series-Klasse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,14 +35,14 @@ class marker_series;
   
 ### <a name="public-constructors"></a>Öffentliche Konstruktoren  
   
-|Name|Beschreibung|  
+|name|Beschreibung|  
 |----------|-----------------|  
 |[marker_series::marker_series-Konstruktor](../profiling/marker-series-marker-series-constructor.md)|Initialisiert eine neue Instanz der `marker_series`-Klasse.|  
 |[marker_series::~marker_series-Destruktor](../profiling/marker-series-tilde-marker-series-destructor.md)|Zerstört das marker_series-Objekt und gibt alle zugewiesenen Ressourcen frei|  
   
 ### <a name="public-methods"></a>Öffentliche Methoden  
   
-|Name|Beschreibung|  
+|name|Beschreibung|  
 |----------|-----------------|  
 |[marker_series::is_enabled-Methode](../profiling/marker-series-is-enabled-method.md)|Bestimmt, ob eine Sitzung den Anbieter aktiviert hat|  
 |[marker_series::write_alert-Methode](../profiling/marker-series-write-alert-method.md)|Schreibt eine Warnung in die Ablaufverfolgungsdatei der Nebenläufigkeitsschnellansicht|  
@@ -64,6 +59,3 @@ class marker_series;
   
 ## <a name="see-also"></a>Siehe auch  
  [diagnostic-Namespace](../profiling/diagnostic-namespace.md)
-
-
-

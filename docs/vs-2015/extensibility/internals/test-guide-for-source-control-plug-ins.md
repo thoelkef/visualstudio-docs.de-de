@@ -1,14 +1,9 @@
 ---
 title: Testleitfaden für Quellcodeverwaltungs-Plug-ins | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - plug-ins, source control
 - source control [Visual Studio SDK], testing plug-ins
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
 caps.latest.revision: 27
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: eea089da8c8e0b7e626f58660a57cd499a93fb7c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a3ed1acdbf8d09616c413fa832dc452af277434b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778905"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441202"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Testleitfaden für Quellcodeverwaltungs-Plug-Ins
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51778905"
 Dieser Abschnitt enthält Anweisungen zum Testen Ihrer plug-in mit quellcodeverwaltung [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Ein umfassender Überblick über die am häufigsten verwendeten Tests Bereiche sowie einige der schwierigeren Bereiche, die möglicherweise problematische wird bereitgestellt. In dieser Übersicht ist nicht vorgesehen, um eine vollständige Liste der Testfälle.  
   
 > [!NOTE]
->  Einige Fehlerkorrekturen und Verbesserungen an den neuesten [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE unter Umständen Probleme mit vorhandenen Quellcodeverwaltungs-Plug-ins, die bei der Verwendung von früheren Versionen von zuvor nicht aufgetreten sind aufdecken [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Es wird dringend empfohlen, dass Sie Ihrem vorhandenen Quellcodeverwaltungssystem-Plug-In für die Bereiche, die in diesem Abschnitt aufgelisteten testen, auch wenn keine Änderungen seit der vorherigen Version von an das plug-in vorgenommen wurden [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+> Einige Fehlerkorrekturen und Verbesserungen an den neuesten [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE unter Umständen Probleme mit vorhandenen Quellcodeverwaltungs-Plug-ins, die bei der Verwendung von früheren Versionen von zuvor nicht aufgetreten sind aufdecken [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Es wird dringend empfohlen, dass Sie Ihrem vorhandenen Quellcodeverwaltungssystem-Plug-In für die Bereiche, die in diesem Abschnitt aufgelisteten testen, auch wenn keine Änderungen seit der vorherigen Version von an das plug-in vorgenommen wurden [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
 ## <a name="common-preparation"></a>Allgemeine Vorbereitung  
  Ein Computer mit [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] und das Ziel-Quellcodeverwaltungs-Plug-In installiert ist, ist erforderlich. Ein zweiter Computer, auf ähnliche Weise konfiguriert werden, kann für einige der Öffnen aus der Quellcodeverwaltung, Tests verwendet werden.  
@@ -44,7 +39,7 @@ Dieser Abschnitt enthält Anweisungen zum Testen Ihrer plug-in mit quellcodeverw
  Einen Projekttyp in verfügbaren [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , unterstützt die Integration der quellcodeverwaltung (z. B. [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)], [!INCLUDE[csprcs](../../includes/csprcs-md.md)], oder [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]).  
   
  Webprojekt  
- Es gibt vier Arten von Webprojekten: File System, lokalen IIS, Remotestandorten und FTP.  
+ Es gibt vier Arten von Webprojekten: Dateisystem, lokale IIS, Remotestandorten und FTP.  
   
 - Datei-System-Projekte unter einem lokalen Pfad erstellt, aber sie erfordern nicht die IIS (Internetinformationsdienste) installiert werden, wie sie intern über einen UNC-Pfad zugegriffen wird, und in der quellcodeverwaltung aus der IDE, ähnlich wie Clientprojekte platziert werden können.  
   
@@ -62,56 +57,55 @@ Dieser Abschnitt enthält Anweisungen zum Testen Ihrer plug-in mit quellcodeverw
   
 ## <a name="test-areas-covered-in-this-section"></a>In diesem Abschnitt behandelten Testbereiche  
   
--   [Testbereich 1: Hinzufügen/Öffnen über die Quellcodeverwaltung](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
+- [Testbereich 1: Hinzufügen/Öffnen über die Quellcodeverwaltung](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
   
-    -   Case-1a: Projektmappe zur Quellcodeverwaltung hinzufügen  
+    - Groß-/Kleinschreibung 1a: Projektmappe zur Quellcodeverwaltung hinzufügen  
   
-    -   Fall 1 b: Öffnen Sie die Projektmappe aus der Quellcodeverwaltung  
+    - Fall 1 b: Die Projektmappe aus der Quellcodeverwaltung öffnen  
   
-    -   Fall 1c: Hinzufügen von Projektmappen aus der Quellcodeverwaltung  
+    - Fall 1c: Fügen Sie die Lösung aus der Quellcodeverwaltung hinzu  
   
--   [Testbereich 2: Abrufen aus der Quellcodeverwaltung](../../extensibility/internals/test-area-2-get-from-source-control.md)  
+- [Testbereich 2: Abrufen aus der Quellcodeverwaltung](../../extensibility/internals/test-area-2-get-from-source-control.md)  
   
--   [Testbereich 3: Auschecken/Auschecken rückgängig machen](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
+- [Testbereich 3: Auschecken/Auschecken rückgängig machen](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
   
-    -   Fall 3: Auschecken / Auschecken rückgängig machen  
+    - Fall 3: Auschecken / Auschecken rückgängig machen  
   
-    -   Case-3a: Auschecken  
+    - Groß-/Kleinschreibung 3a: Auschecken  
   
-    -   Fall 3 b: Auschecken getrennt  
+    - Fall 3 b: Offline-Auscheckvorgang  
   
-    -   Fall 3c: Abfrage bearbeiten/Abfrage speichern (QEQS.)  
+    - Fall 3c: / Queryeditquerysave (QEQS.)  
   
-    -   Fall 3d: Automatische Auschecken  
+    - Case-3d: Automatische Auschecken  
   
-    -   Case-3e: Rückgängig: Auschecken  
+    - Groß-/Kleinschreibung 3e: Rückgängig: Auschecken  
   
--   [Testbereich 4: Einchecken](../../extensibility/internals/test-area-4-check-in.md)  
+- [Testbereich 4: Einchecken](../../extensibility/internals/test-area-4-check-in.md)  
   
-    -   Case-4a: geänderten Elemente  
+    - Groß-/Kleinschreibung 4a: Geänderte Elemente  
   
-    -   Case-4 b: Hinzufügen von Dateien  
+    - Groß-/Kleinschreibung 4 b: Hinzufügen von Dateien  
   
-    -   Fall 4c: Hinzufügen von Projekten  
+    - Fall 4c: Hinzufügen von Projekten  
   
--   [Testbereich 5: Ändern der Quellcodeverwaltung](../../extensibility/internals/test-area-5-change-source-control.md)  
+- [Testbereich 5: Ändern der Quellcodeverwaltung](../../extensibility/internals/test-area-5-change-source-control.md)  
   
-    -   Case-5a: Binden  
+    - Groß-/Kleinschreibung 5a: Binden  
   
-    -   Fall 5 b: Aufheben der Bindung  
+    - Case 5b: Aufheben der Bindung  
   
-    -   Fall 5c: erneut binden  
+    - Fall 5c: erneut binden  
   
--   [Testbereich 6: Löschen](../../extensibility/internals/test-area-6-delete.md)  
+- [Testbereich 6: Löschen](../../extensibility/internals/test-area-6-delete.md)  
   
--   [Testbereich 7: Freigeben](../../extensibility/internals/test-area-7-share.md)  
+- [Testbereich 7: Freigeben](../../extensibility/internals/test-area-7-share.md)  
   
--   [Testbereich 8: Plug-In-Wechsel](../../extensibility/internals/test-area-8-plug-in-switching.md)  
+- [Testbereich 8: Plug-In-Wechsel](../../extensibility/internals/test-area-8-plug-in-switching.md)  
   
-    -   Case-8a: automatische Änderung  
+    - Groß-/Kleinschreibung 8a: Automatische Änderung  
   
-    -   Case-8 b: informationsreiche lösungsbasierte ändern  
+    - Groß-/Kleinschreibung 8 b: Informationsreiche lösungsbasierte ändern  
   
 ## <a name="see-also"></a>Siehe auch  
  [Quellcodeverwaltungs-Plug-Ins](../../extensibility/source-control-plug-ins.md)
-

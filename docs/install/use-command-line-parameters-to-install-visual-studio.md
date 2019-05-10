@@ -2,9 +2,8 @@
 title: Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio
 titleSuffix: ''
 description: Informationen zur Verwendung von Befehlszeilenparametern zum Steuern und Anpassen Ihrer Visual Studio-Installation
-ms.date: 11/14/2018
+ms.date: 03/30/2019
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - command-line parameters
@@ -13,19 +12,21 @@ f1_keywords:
 ms.assetid: 480f3cb4-d873-434e-a8bf-82cff7401cf2
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2955a9efae219cf992936a8b64cac672a0cd680
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 8e999df4fc1269025c9adc038c1a17dd586a3081
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869660"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951318"
 ---
-# <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio 2017
+# <a name="use-command-line-parameters-to-install-visual-studio"></a>Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio
 
-Wenn Sie Visual Studio 2017 von einer Befehlszeile aus installieren, können Sie die verschiedene Befehlszeilenparameter verwenden, um die Installation zu steuern und anzupassen. Über die Befehlszeile können Sie die folgenden Aktionen durchführen:
+Wenn Sie Visual Studio von einer Befehlszeile aus installieren, können Sie die verschiedene Befehlszeilenparameter verwenden, um die Installation zu steuern und anzupassen. Über die Befehlszeile können Sie die folgenden Aktionen durchführen:
 
 - Die Installation mit bestimmten vorab ausgewählten Optionen starten
 - Den Installationsprozess automatisieren
@@ -33,11 +34,23 @@ Wenn Sie Visual Studio 2017 von einer Befehlszeile aus installieren, können Sie
 
 Die Befehlszeilenoptionen werden in Verbindung mit dem Setup-Bootstrapper verwendet, die kleine Datei (ca. 1 MB), die den Downloadprozess initiiert. Der Bootstrapper ist die erste ausführbare Datei, die gestartet wird, wenn Sie von der Visual Studio-Website herunterladen. Verwenden Sie die folgenden Links, um einen direkten Link zum neuesten Release-Bootstrapper für die Produktversion zu erhalten, die Sie installieren:
 
-- [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
-- [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
-- [Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+::: moniker range="vs-2017"
 
-## <a name="list-of-command-line-parameters"></a>Liste der Befehlszeilenparameter
+- [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+- [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+- [Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+- [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
+- [Visual Studio 2019 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
+- [Visual Studio 2019 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
+
+::: moniker-end
+
+## <a name="command-line-parameters"></a>Befehlszeilenparameter
 
  Bei Visual Studio-Befehlszeilenparametern wird zwischen Groß- und Kleinschreibung nicht unterschieden.
 
@@ -46,7 +59,7 @@ Die Befehlszeilenoptionen werden in Verbindung mit dem Setup-Bootstrapper verwen
 (Ersetzen Sie `vs_enterprise.exe` nach Bedarf durch die Produktedition, die Sie installieren)
 
 >[!TIP]
-> Weitere Informationen zur Verwendung der Befehlszeile für die Installation von Visual Studio 2017 finden Sie auf der Seite mit [Beispielen für Befehlszeilenparameter](command-line-parameter-examples.md).)
+> Weitere Informationen zur Verwendung der Befehlszeile für die Installation von Visual Studio finden Sie auf der Seite mit [Beispielen für Befehlszeilenparameter](command-line-parameter-examples.md).
 
 | **Befehl** | **Beschreibung** |
 | ----------------------- | --------------- |
@@ -55,7 +68,9 @@ Die Befehlszeilenoptionen werden in Verbindung mit dem Setup-Bootstrapper verwen
 | `update` | Aktualisiert ein installiertes Produkt. |
 | `repair` | Repariert ein installiertes Produkt. |
 | `uninstall` | Deinstalliert ein installiertes Produkt. |
-| `export` | **Neues in 15.9:** Exportieren einer Installationsauswahl in eine Installationskonfigurationsdatei **Hinweis:** Kann nur mit der Datei „vs_installer.exe“ verwendet werden. |
+| `export` | **Neuerungen in Version 15.9**: Exportieren einer Installationsauswahl in eine Installationskonfigurationsdatei **Hinweis:** Kann nur mit der Datei „vs_installer.exe“ verwendet werden. |
+
+## <a name="install-options"></a>Installationsoptionen
 
 | **Option installieren** | **Beschreibung** |
 | ----------------------- | --------------- |
@@ -77,7 +92,10 @@ Die Befehlszeilenoptionen werden in Verbindung mit dem Setup-Bootstrapper verwen
 | `--help, --?, -h, -?` | Eine Offline-Version dieser Seite wird angezeigt. |
 | `--config <path>` | **Optionales** und **Neues in 15.9:** Während eines Installations- oder Änderungsvorgangs werden die hinzuzufügenden Workloads und Komponenten basierend auf einer zuvor gespeicherten Installationskonfigurationsdatei ermittelt. Dieser Vorgang ist optional und entfernt keine Workloads oder Komponenten, wenn diese nicht in der Datei vorhanden sind. Außerdem werden Elemente, die nicht für das Produkt gelten, nicht hinzugefügt. Während eines Exportvorgangs wird der Speicherort bestimmt, an dem die Installationskonfigurationsdatei gespeichert wird. |
 
-> Hinweis: Wenn Sie mehrere Workloads und Komponenten angeben, müssen Sie den `--add`- oder `--remove`-Befehlszeilenwechsel für jedes Element wiederholen.
+> [!IMPORTANT]
+> Wenn Sie mehrere Workloads und Komponenten angeben, müssen Sie den `--add`- oder `--remove`-Befehlszeilenwechsel für jedes Element wiederholen.
+
+## <a name="layout-options"></a>Layoutoptionen
 
 | **Layoutoptionen** | **Beschreibung** |
 | ----------------------- | --------------- |
@@ -103,7 +121,7 @@ Die Befehlszeilenoptionen werden in Verbindung mit dem Setup-Bootstrapper verwen
 | `--cache` | **Neu in Version 15.2 (optional):** Falls vorhanden, werden Pakete nach ihrer Installation für nachfolgende Reparaturen gespeichert. Dies überschreibt die globale Richtlinieneinstellung für nachfolgende Installationen, Reparaturen und Änderungen. Die Standardrichtlinie sieht das Zwischenspeichern von Paketen im Cache vor. Dies wird für den Deinstallationsbefehl ignoriert. Unter [Deaktivieren oder Verschieben des Paketcaches](disable-or-move-the-package-cache.md) finden Sie weitere Informationen. |
 | `--nocache` | **Neu in Version 15.2 (optional):** Falls vorhanden, werden Pakete nach ihrer Installation oder Reparatur gelöscht. Sie werden nur bei Bedarf erneut heruntergeladen und nach ihrer Verwendung wieder gelöscht. Dies überschreibt die globale Richtlinieneinstellung für nachfolgende Installationen, Reparaturen und Änderungen. Die Standardrichtlinie sieht das Zwischenspeichern von Paketen im Cache vor. Dies wird für den Deinstallationsbefehl ignoriert. Unter [Deaktivieren oder Verschieben des Paketcaches](disable-or-move-the-package-cache.md) finden Sie weitere Informationen. |
 | `--noUpdateInstaller` | **Neu in Version 15.2 (optional):** Falls vorhanden, hindert den Installer daran, sich selbst zu aktualisieren, wenn „quiet“ angegeben ist. Der Befehl wird für den Installer einen Fehler auslösen, und der Installer gibt einen Exitcode ungleich 0 (null) zurück, falls „noUpdateInstaller“ mit „quiet“ angegeben wird, wenn ein Installerupdate erforderlich ist. |
-| `--noWeb` | **Neu in Version 15.3 (optional):** Das Setup lädt jetzt jeden Inhalt herunter, der aus dem Internet installiert wird.  Jeder Inhalt, der installiert wird, muss in einem Offlinelayout verfügbar sein.  Wenn dem Layout Inhalt fehlt, schlägt die Einrichtung fehl.  Weitere Informationen finden Sie unter [Deploying from a network installation (Bereitstellung aus einer Netzwerkinstallation)](create-a-network-installation-of-visual-studio.md). |
+| `--noWeb` | **Neu in Version 15.3 (optional):** Falls vorhanden, verwendet das Visual Studio-Setup die Dateien in Ihrem Layoutverzeichnis zum Installieren von Visual Studio. Wenn ein Benutzer versucht, Komponenten zu installieren, die nicht im Layout enthalten sind, wird das Setup nicht abgeschlossen.  Weitere Informationen finden Sie unter [Deploying from a network installation (Bereitstellung aus einer Netzwerkinstallation)](create-a-network-installation-of-visual-studio.md). <br/><br/> **Wichtig:** Dieser Schalter verhindert nicht, dass das Visual Studio-Setup nach Updates sucht. Weitere Informationen finden Sie unter [Steuern von Updates für netzwerkbasierte Visual Studio-Bereitstellungen](controlling-updates-to-visual-studio-deployments.md).|
 | `--path <name>=<path>` | **Neu in Version 15.7 (optional):** Zur Angabe der benutzerdefinierten Installationspfade für die Installation. Unterstützte Pfadnamen lauten: „shared“, „cache“ und „install“. |
 | `--path cache=<path>` | **Neu in Version 15.7 (optional):** Verwendet den Speicherort, den Sie beim Herunterladen der Installationsdateien angeben. Dieser Speicherort kann nur bei der ersten Installation von Visual Studio festgelegt werden. Ein Beispiel: `--path cache="C:\VS\cache"` |
 | `--path shared=<path>` | **Neu in Version 15.7 (optional):** Enthält freigegebene Dateien für parallele Visual Studio-Installationen. Einige Tools und SDKs werden an einen Speicherort auf diesem Datenträger installiert. Andere überschreiben möglicherweise diese Einstellung und werden auf einen anderen Datenträger installiert. Ein Beispiel: `--path shared="C:\VS\shared"` <br><br>Wichtig: Dies kann nur einmal festgelegt werden, und zwar bei der ersten Installation von Visual Studio. |
@@ -111,7 +129,7 @@ Die Befehlszeilenoptionen werden in Verbindung mit dem Setup-Bootstrapper verwen
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>Liste der Arbeitsauslastungs-IDs und Komponenten-IDs
 
-Eine Liste der Arbeitsauslastungs- und Komponenten-IDs, sortiert nach Visual Studio-Produkt, finden Sie auf der Seite [Arbeitsauslastungs- und Komponenten-IDs in Visual Studio 2017](workload-and-component-ids.md).
+Eine Liste der Arbeitsauslastungs- und Komponenten-IDs, sortiert nach Visual Studio-Produkt, finden Sie auf der Seite [Arbeitsauslastungs- und Komponenten-IDs in Visual Studio](workload-and-component-ids.md).
 
 ## <a name="list-of-language-locales"></a>Liste der Gebietsschemas
 
@@ -151,7 +169,7 @@ Jeder Vorgang generiert mehrere Protokolldateien im `%TEMP%`-Verzeichnis, die de
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Beispiele für Befehlszeilenparameter für die Installation von Visual Studio 2017](command-line-parameter-examples.md)
-- [Erstellen einer Offlineinstallation von Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
+- [Beispiele für Befehlszeilenparameter für die Installation von Visual Studio](command-line-parameter-examples.md)
+- [Erstellen einer Offlineinstallation von Visual Studio](create-an-offline-installation-of-visual-studio.md)
 - [Automatisieren der Visual Studio-Installation mit einer Antwortdatei](automated-installation-with-response-file.md)
-- [Arbeitsauslastungs- und Komponenten-IDs von Visual Studio 2017](workload-and-component-ids.md)
+- [Arbeitsauslastung und Komponenten-IDs von Visual Studio](workload-and-component-ids.md)

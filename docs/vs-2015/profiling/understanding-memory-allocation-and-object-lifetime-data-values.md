@@ -1,14 +1,9 @@
 ---
 title: Datenwerte zur Speicherbelegung und Objektlebensdauer | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - .NET memory profiling method
 - Profiling Tools, .NET memory method
@@ -16,13 +11,13 @@ ms.assetid: a22445b3-39a6-4919-8506-2b5b0ceaf77e
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3df4fe3189078da07f282b6f323ca697c763a08b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 816f750148cc30de86fc116f80f64b218b4699d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793723"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069744"
 ---
 # <a name="understanding-memory-allocation-and-object-lifetime-data-values"></a>Datenwerte zur Speicherbelegung und Objektlebensdauer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,14 +35,11 @@ Die Profilerstellungsmethode *.NET-Speicherbelegung* der [!INCLUDE[vsprvs](../in
   
  Wenn ein Speicherbelegungsereignis auftritt, erhöht der Profiler die Samplinganzahl für jede Funktion in der Aufrufliste. Wenn die Daten erfasst werden, führt gerade nur eine Funktion auf der Aufrufliste den Code in ihrem Funktionsrumpf aus. Die anderen Funktionen in der Liste sind übergeordnete Elemente in der Hierarchie von Funktionsaufrufen, die auf den Abschluss der Funktionen warten, die sie aufgerufen haben.  
   
--   Für das Belegungsereignis erhöht der Profiler die *exklusive* Samplinganzahl der Funktion, die gerade die Anweisungen ausführt. Da ein exklusives Sampling auch Teil der gesamten (*inklusiven*) Samplings der Funktion ist, wird die inklusive Samplinganzahl der aktuell aktiven Funktion auch erhöht.  
+- Für das Belegungsereignis erhöht der Profiler die *exklusive* Samplinganzahl der Funktion, die gerade die Anweisungen ausführt. Da ein exklusives Sampling auch Teil der gesamten (*inklusiven*) Samplings der Funktion ist, wird die inklusive Samplinganzahl der aktuell aktiven Funktion auch erhöht.  
   
--   Der Profiler erhöht die inklusive Samplinganzahl aller anderen Funktionen in der Aufrufliste.  
+- Der Profiler erhöht die inklusive Samplinganzahl aller anderen Funktionen in der Aufrufliste.  
   
 ## <a name="lifetime-data"></a>Lebensdauerdaten  
  Der Garbage Collector von .NET Framework verwaltet die Belegung und Freigabe von Arbeitsspeicher für die Anwendung. Zur Optimierung der Leistung des Garbage Collectors wird der verwaltete Heap in drei Generationen unterteilt: 0, 1 und 2. Der Garbage Collector der Laufzeit speichert neue Objekte in Generation 0. Objekte, die nach den Garbage Collections noch vorhanden sind, werden höhergestuft und in den Generationen 1 und 2 gespeichert.  
   
  Der Garbage Collector gibt Arbeitsspeicher frei, indem er eine ganze Generation von Objekten freigibt. Für die von der profilierten Anwendung erstellten Objekte werden in der Objektlebensdaueransicht die Zahl und die Größe der Objekte sowie die Generation angezeigt, in der diese freigegeben werden.
-
-
-

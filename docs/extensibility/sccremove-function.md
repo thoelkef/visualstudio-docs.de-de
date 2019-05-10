@@ -1,30 +1,32 @@
 ---
 title: SccRemove-Funktion | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccRemove
 helpviewer_keywords:
 - SccRemove function
 ms.assetid: 20830fdc-c0e9-4a5f-bf60-33f28874442f
-author: gregvanl
+caps.latest.revision: 14
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 2b07706fd7e74011a87d0eb67c8a158208ac95a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 2183a73536e7e4251958680b25a8909ea2bb714e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53818429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62800308"
 ---
 # <a name="sccremove-function"></a>SccRemove-Funktion
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 Diese Funktion löscht Dateien vom Quellcodeverwaltungssystem.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 SCCRTN SccRemove(  
    LPVOID    pvContext,  
    HWND      hWnd,  

@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Erstellen identischer Quelldateien mit unterschiedlichen Optionen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - source files, building with different options
 - MSBuild, properties
@@ -18,18 +13,17 @@ ms.assetid: d14f1212-ddd9-434f-b138-f840011b0fb2
 caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c46d0577d19a3b3ad0fcd150f33d400e76d550d3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 3bce742d4ce0374cb7270b964354d65a03e917d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831002"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045602"
 ---
-# <a name="how-to-build-the-same-source-files-with-different-options"></a>Gewusst wie: Erstellen identischer Quelldateien mit unterschiedlichen Optionen
+# <a name="how-to-build-the-same-source-files-with-different-options"></a>Vorgehensweise: Erstellen identischer Quelldateien mit unterschiedlichen Optionen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Wenn Sie Projekte erstellen, kompilieren Sie häufig die gleichen Komponenten mit unterschiedlichen Buildoptionen. So können Sie, z.B. ein Debugbuild mit Symbolinformationen oder ein Releasebuild ohne Symbolversionen, aber mit aktivierten Optimierungen erstellen. Oder Sie können ein Projekt erstellen, das auf einer bestimmten Plattform wie x86 oder [!INCLUDE[vcprx64](../includes/vcprx64-md.md)] ausgeführt wird. In allen diesen Fällen bleiben die meisten Buildoptionen gleich. Nur ein paar Optionen werden zur Steuerung der Buildkonfiguration geändert. Sie verwenden Eigenschaften und Bedingungen mit [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], um die unterschiedlichen Buildkonfigurationen zu erstellen.  
   
 ## <a name="using-properties-to-modify-projects"></a>Verwenden von Eigenschaften zum Ändern von Projekten  
@@ -39,7 +33,7 @@ Wenn Sie Projekte erstellen, kompilieren Sie häufig die gleichen Komponenten mi
   
 #### <a name="to-set-a-group-of-properties-based-on-another-property"></a>So legen Sie eine Eigenschaftengruppe anhand einer anderen Eigenschaft fest.  
   
--   Verwenden Sie ein Attribut `Condition` in einem Element `PropertyGroup`, das ähnlich dem Folgenden ist:  
+- Verwenden Sie ein Attribut `Condition` in einem Element `PropertyGroup`, das ähnlich dem Folgenden ist:  
   
     ```  
     <PropertyGroup Condition="'$(Flavor)'=='DEBUG'">  
@@ -50,7 +44,7 @@ Wenn Sie Projekte erstellen, kompilieren Sie häufig die gleichen Komponenten mi
   
 #### <a name="to-define-a-property-based-on-another-property"></a>So definieren Sie eine Eigenschaft anhand einer anderen Eigenschaft  
   
--   Verwenden Sie ein Attribut `Condition` im Element `Property`, das ähnlich dem Folgenden ist:  
+- Verwenden Sie ein Attribut `Condition` im Element `Property`, das ähnlich dem Folgenden ist:  
   
     ```  
     <DebugType Condition="'$(Flavor)'=='DEBUG'">full</DebugType>  
@@ -61,7 +55,7 @@ Wenn Sie Projekte erstellen, kompilieren Sie häufig die gleichen Komponenten mi
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>So legen Sie eine Projekteigenschaft in der Befehlszeile fest  
   
--   Verwenden Sie den Schalter **/property** mit der Eigenschaft und dem Eigenschaftswert. Zum Beispiel:  
+- Verwenden Sie den Schalter **/property** mit der Eigenschaft und dem Eigenschaftswert. Zum Beispiel:  
   
     ```  
     msbuild file.proj /property:Flavor=Debug  
@@ -196,5 +190,3 @@ ToolsVersion="4.0" TreatAsLocalProperty="Color">
  [MSBuild Concepts](../msbuild/msbuild-concepts.md)  (MSBuild-Grundlagen)  
  [MSBuild Reference](../msbuild/msbuild-reference.md)  (MSBuild-Referenz)  
  [Project-Element (MSBuild)](../msbuild/project-element-msbuild.md)
-
-

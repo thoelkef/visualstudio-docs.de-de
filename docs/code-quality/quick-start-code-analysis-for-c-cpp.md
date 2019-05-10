@@ -1,7 +1,7 @@
 ---
 title: 'Schnellstart: Codeanalyse für C/C++'
+description: Führen Sie auf die statischen Analyse C++ Code in Visual Studio für allgemeine Programmierung Probleme und Fehler zu erkennen.
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - C/C++ code analysis
@@ -11,12 +11,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 00dedc25185dfc3a9f12ba645205ce47925003df
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 039ffcd1717dba8ec3c76ae1ca4a691d60851ee5
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825200"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226074"
 ---
 # <a name="quickstart-code-analysis-for-cc"></a>Schnellstart: Codeanalyse für C/C++
 
@@ -51,7 +51,7 @@ Visual Studio enthält zwei Standardregelsätze für systemeigenen Code:
 
 |Regelsatz|Beschreibung|
 |--------------|-----------------|
-|Von Microsoft empfohlene Mindestregeln für eigene Projekte|Dieser Regelsatz zielt auf die kritischsten Probleme in Ihrem systemeigenen Code ab, einschließlich potenzieller Sicherheitslücken und Anwendungsabstürzen. Der Regelsatz sollte in allen benutzerdefinierten Regelsätzen enthalten sein, die Sie für Ihre eigenen Projekte erstellen.|
+|Von Microsoft empfohlene Mindestregeln für eigene Projekte|Dieser Regelsatz zielt auf die kritischsten Probleme in Ihrem nativen Code ab, einschließlich potenzieller Sicherheitslücken und Anwendungsabstürzen. Der Regelsatz sollte in allen benutzerdefinierten Regelsätzen enthalten sein, die Sie für Ihre eigenen Projekte erstellen.|
 |Von Microsoft empfohlene Regeln für eigene Projekte|Dieser Regelsatz umfasst eine Vielzahl von Problemen. Sie enthält alle Regeln in den von Microsoft empfohlenen Mindestregeln für eigene Projekte|
 
 ## <a name="run-code-analysis"></a>Codeanalyse ausführen

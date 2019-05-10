@@ -2,9 +2,8 @@
 title: Installieren von Visual Studio
 titleSuffix: ''
 description: Erfahren Sie Schritt für Schritt, wie Sie Visual Studio installieren.
-ms.date: 05/07/2018
+ms.date: 04/16/2019
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.about
@@ -16,24 +15,46 @@ helpviewer_keywords:
 - Visual Studio installer
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4ab9fb30a1268778f47a0190d1b16b1cd48d974
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 0d4ad3767e8ee6076f45deefa5c532b62175520f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958435"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974949"
 ---
-# <a name="install-visual-studio-2017"></a>Installieren von Visual Studio 2017
+# <a name="install-visual-studio"></a>Installieren von Visual Studio
 
-Willkommen Sie bei einer neuen Möglichkeit zur Installation von Visual Studio. In unserer neuesten Version ist es noch einfacher, genau die Features auszuwählen und zu installieren, die Sie benötigen. Wir haben außerdem den mindestens benötigten Speicherplatz weiter verringert, sodass Visual Studio sich schneller und mit geringeren Systemauswirkungen als je zuvor installieren lässt.
+::: moniker range="vs-2019"
+
+Willkommen bei Visual Studio 2019. In dieser Version können Sie ganz einfach die Features auswählen und installieren, die Sie benötigen. Und aufgrund des reduzierten minimalen Speicherbedarfs, werden sie schnell und mit weniger Beeinträchtigung des Systems installiert.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+Willkommen bei einer neuen Möglichkeit zur Installation von Visual Studio. In dieser Version ist es noch einfacher, genau die Features auszuwählen und zu installieren, die Sie benötigen. Wir haben außerdem den mindestens benötigten Speicherplatz weiter verringert, sodass Visual Studio sich schneller und mit geringeren Systemauswirkungen als je zuvor installieren lässt.
+
+::: moniker-end
 
 > [!NOTE]
-> Dieses Thema gilt für Visual Studio unter Windows. Informationen zu Visual Studio für Mac finden Sie unter [Installieren von Visual Studio für Mac](/visualstudio/mac/installation).
+> Dieses Thema gilt für Visual Studio unter Windows. Informationen zu Visual Studio für Mac finden Sie unter [Installieren von Visual Studio für Mac](/visualstudio/mac/installation/).
+
+::: moniker range="vs-2019"
+
+Sie möchten mehr zu weiteren Neuerungen in dieser Version wissen? Sehen Sie sich die [Anmerkungen zur Version](/visualstudio/releases/2019/release-notes/) an.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 Sie möchten mehr zu weiteren Neuerungen in dieser Version wissen? Sehen Sie sich die [Anmerkungen zur Version](/visualstudio/releasenotes/vs2017-relnotes) an.
+
+::: moniker-end
 
 Bereit für die Installation? Schauen Sie sich diese Schritt-für-Schritt Anleitung an.
 
@@ -41,83 +62,142 @@ Bereit für die Installation? Schauen Sie sich diese Schritt-für-Schritt Anleit
 
 Vor der Installation von Visual Studio:
 
-1. Informieren Sie sich über die [Systemanforderungen](/visualstudio/productinfo/vs2017-system-requirements-vs). Anhand dieser Anforderungen können Sie feststellen, ob Ihr Computer Visual Studio 2017 unterstützt.
-2. Laden Sie die aktuellen Windows-Updates herunter. So stellen Sie sicher, dass Ihr Computer sowohl die neuesten Sicherheitsupdates als auch die erforderlichen Systemkomponenten für Visual Studio hat.
-3. Starten Sie den Computer neu. Dadurch wird sichergestellt, dass keine ausstehenden Installationen oder Updates die Installation von Visual Studio behindern.
-4. Geben Sie Speicherplatz frei. Entfernen Sie nicht benötigte Dateien und Anwendungen z.B. mit der Datenträgerbereinigung-App von Ihrem %Systemlaufwerk%.
+::: moniker range="vs-2017"
 
-Wenn Sie Fragen zum parallelen Ausführen früherer Versionen von Visual Studio mit Visual Studio 2017 haben, lesen Sie den Abschnitt [Kompatibilität mit vorherigen Versionen](/visualstudio/productinfo/vs2017-compatibility-vs#compatibility-with-previous-releases).
+1. Informieren Sie sich über die [Systemanforderungen](/visualstudio/productinfo/vs2017-system-requirements-vs). Anhand dieser Anforderungen können Sie feststellen, ob Ihr Computer Visual Studio 2017 unterstützt.
+
+1. Laden Sie die aktuellen Windows-Updates herunter. So stellen Sie sicher, dass Ihr Computer sowohl die neuesten Sicherheitsupdates als auch die erforderlichen Systemkomponenten für Visual Studio hat.
+
+1. Starten Sie den Computer neu. Dadurch wird sichergestellt, dass keine ausstehenden Installationen oder Updates die Installation von Visual Studio behindern.
+
+1. Geben Sie Speicherplatz frei. Entfernen Sie nicht benötigte Dateien und Anwendungen z.B. mit der Datenträgerbereinigung-App von Ihrem %Systemlaufwerk%.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Informieren Sie sich über die [Systemanforderungen](/visualstudio/releases/2019/system-requirements). Anhand dieser Anforderungen können Sie feststellen, ob Ihr Computer Visual Studio 2019 unterstützt.
+
+1. Laden Sie die aktuellen Windows-Updates herunter. So stellen Sie sicher, dass Ihr Computer sowohl die neuesten Sicherheitsupdates als auch die erforderlichen Systemkomponenten für Visual Studio hat.
+
+1. Starten Sie den Computer neu. Dadurch wird sichergestellt, dass keine ausstehenden Installationen oder Updates die Installation von Visual Studio behindern.
+
+1. Geben Sie Speicherplatz frei. Entfernen Sie nicht benötigte Dateien und Anwendungen z.B. mit der Datenträgerbereinigung-App von Ihrem %Systemlaufwerk%. 
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+Wenn Sie Fragen zum parallelen Ausführen früherer Versionen von Visual Studio mit Visual Studio 2017 haben, lesen Sie den Abschnitt [Kompatibilität mit vorherigen Versionen](/visualstudio/productinfo/vs2017-compatibility-vs#compatibility-with-previous-releases/).
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Informationen zur parallelen Ausführung vorheriger Versionen von Visual Studio und Visual Studio 2019 finden Sie auf der Seite [Visual Studio 2019 – Zielplattformen und Kompatibilität](/visualstudio/releases/2019/compatibility/).
+
+::: moniker-end
 
 ## <a name="step-2---download-visual-studio"></a>Schritt 2: Herunterladen von Visual Studio
 
-Laden Sie danach die Visual Studio-Bootstrapperdatei herunter. Klicken Sie zu diesem Zweck auf die folgende Schaltfläche, wählen Sie die gewünschte Edition von Visual Studio 2017 aus, und klicken Sie auf **Speichern** und dann auf **Ordner öffnen**.
+Laden Sie danach die Visual Studio-Bootstrapperdatei herunter. Klicken Sie zu diesem Zweck auf die folgende Schaltfläche, wählen Sie die gewünschte Edition von Visual Studio aus, und klicken Sie dann auf **Speichern** und **Ordner öffnen**.
+
+::: moniker range="vs-2017"
 
  > [!div class="button"]
- > [Visual Studio 2017 herunterladen](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
-<br/>
+ > [Herunterladen von Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 
-|         |         |
-|---------|---------|
-|  ![Kamerasymbol für Video](media/video-icon.png "Video ansehen")  |    [Sehen Sie sich ein Video an](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Download-the-Visual-Studio-Installer-GgrESHD6D_3311787171), das erläutert, wie Sie die Visual Studio-Bootstrapperdatei herunterladen und die Edition von Visual Studio auswählen, die sich für Ihre Zwecke eignet. |
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+ > [!div class="button"]
+ > [Herunterladen von Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
+
+::: moniker-end
 
 ## <a name="step-3---install-the-visual-studio-installer"></a>Schritt 3: Installieren des Visual Studio-Installers
 
-Führen Sie dann die Bootstrapperdatei aus, um den Visual Studio-Installer zu installieren. Dieses neue, schlanke Installationsprogramm enthält alle Elemente, die Sie zum Installieren und Anpassen von Visual Studio 2017 benötigen.
+Führen Sie die Bootstrapperdatei aus, um den Visual Studio-Installer zu installieren. Dieses neue, schlanke Installationsprogramm enthält alle Elemente, die Sie zum Installieren und Anpassen von Visual Studio benötigen.
 
 1. Doppelklicken Sie in Ihrem Ordner **Downloads** auf die Bootstrapperdatei, die einer der folgenden Dateien entspricht oder ähnelt:
 
-   * **vs_enterprise.exe** für Visual Studio Enterprise
+   * **vs_community.exe** für Visual Studio Community
    * **vs_professional.exe** für Visual Studio Professional
-   * **vs_community.exe** für Visual Studio Community  <br><br>
+   * **vs_enterprise.exe** für Visual Studio Enterprise
 
    Wenn eine Benachrichtigung der Benutzerkontensteuerung angezeigt wird, klicken Sie auf **Ja**.
 
 2. Sie werden gebeten, die Microsoft-[Lizenzbedingungen](https://visualstudio.microsoft.com/license-terms/) und die Microsoft-[Datenschutzbestimmungen](https://privacy.microsoft.com/privacystatement) zu akzeptieren. Klicken Sie auf **Weiter**.
 
-   ![Lizenzbedingungen und Datenschutzbestimmungen](media/vs2017-privacy-and-license-terms.PNG "Microsoft-Lizenzbedingungen und Microsoft-Datenschutzbestimmungen")
+   ![Lizenzbedingungen und Datenschutzbestimmungen](media/privacy-and-license-terms.png "Microsoft-Lizenzbedingungen und Microsoft-Datenschutzbestimmungen")
 
-## <a name="step-4---select-workloads"></a>Schritt 4: Auswählen der Arbeitsauslastungen
+## <a name="step-4---choose-workloads"></a>Schritt 4: Auswählen von Workloads
 
 Nach der Installation des Installers können Sie diesen zum Anpassen Ihrer Installation verwenden, indem Sie die Features – oder Arbeitsauslastungen – auswählen, die Sie wünschen. Gehen Sie folgendermaßen vor:
 
+ ::: moniker range="vs-2017"
+
 1. Suchen Sie die gewünschten Arbeitsauslastungen im Bildschirm **Visual Studio wird installiert**.
 
-   ![Auswählen einer Workload aus dem Visual Studio 2017-Setupdialogfeld](../install/media/install-visual-studio-community.png)
+   ![Visual Studio 2017: Workload installieren](../install/media/vs-installer-installing-workloads.png)
 
      Wählen Sie beispielsweise die Workload „.NET Desktopentwicklung“ aus. Sie wird mit dem standardmäßigen Kern-Editor bereitgestellt, der die grundlegende Codebearbeitung für über 20 Sprachen, die Möglichkeit, Code aus einem beliebigen Ordner heraus zu öffnen und zu bearbeiten, ohne dass ein Projekt erforderlich ist, und die integrierte Quellcodekontrolle unterstützt.
 
-2. Nachdem Sie die gewünschten Arbeitsauslastungen ausgewählt haben, klicken Sie auf **Installieren**.
+1. Nachdem Sie die gewünschten Workloads ausgewählt haben, klicken Sie auf **Installieren**.
 
     Als Nächstes werden Statusbildschirme angezeigt, die über den Fortschritt der Installation von Visual Studio informieren.
 
-3. Nachdem die neuen Arbeitsauslastungen und Komponenten installiert wurden, klicken Sie auf **Starten**.
+ ::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Nachdem die neuen Arbeitsauslastungen und Komponenten installiert wurden, wählen Sie **Starten**.
+
+   ![Visual Studio 2019: Workload installieren](../install/media/vs-2019/vs-installer-workloads.png)
+
+     Wählen Sie beispielsweise die Workload „ASP.NET und Webentwicklung“ aus. Sie wird mit dem standardmäßigen Kern-Editor bereitgestellt, der die grundlegende Codebearbeitung für über 20 Sprachen, die Möglichkeit, Code aus einem beliebigen Ordner heraus zu öffnen und zu bearbeiten, ohne dass ein Projekt erforderlich ist, und die integrierte Quellcodekontrolle unterstützt.
+
+1. Nachdem Sie die gewünschten Workloads ausgewählt haben, klicken Sie auf **Installieren**.
+
+    Als Nächstes werden Statusbildschirme angezeigt, die über den Fortschritt der Installation von Visual Studio informieren.
+
+ ::: moniker-end
 
 > [!TIP]
 > Nach der Installation können Sie jederzeit die Installation von Workloads oder Komponenten nachholen. Wenn Sie Visual Studio geöffnet haben, navigieren Sie zu **Extras** > **Tools und Features abrufen…**. Dadurch wird der Visual Studio-Installer geöffnet. Öffnen Sie den **Visual Studio-Installer** alternativ über das Startmenü. Nun können Sie die Workloads oder Komponenten auswählen, die Sie installieren möchten. Klicken Sie anschließend auf **Ändern**.
 
-|         |         |
-|---------|---------|
-|   ![Kamerasymbol für Video](media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video an](https://mva.microsoft.com/de-de/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Workloads-in-Visual-Studio-2017-jHE19HD6D_1611787171), in dem erläutert wird, wie Sie den Visual Studio-Installer und anschließend eine Arbeitsauslastung installieren. |
+## <a name="step-5---choose-individual-components-optional"></a>Schritt 5: Auswählen einzelner Komponenten (optional)
 
-## <a name="step-5---select-individual-components-optional"></a>Schritt 5: Auswählen einzelner Komponenten (optional)
+Wenn Sie nicht das Feature für Workloads verwenden möchten, um Ihre Visual Studio-Installation anzupassen, oder Sie mehr Komponenten hinzufügen möchten, als von einer Workload installiert werden, können Sie individuelle Komponenten über die Registerkarte **Einzelne Komponenten** installieren bzw. hinzufügen. Wählen Sie die gewünschten Komponenten aus, und führen Sie dann die Anweisungen aus.
 
-Wenn Sie das Feature für Arbeitsauslastungen nicht zur Anpassung Ihrer Visual Studio-Installation verwenden möchten, können Sie stattdessen auch einzelne Komponenten installieren. Klicken Sie dazu im Visual Studio-Installer auf die Option **Einzelne Komponenten**, wählen Sie die gewünschten Komponenten aus, und folgen Sie den Anweisungen.
+::: moniker range="vs-2017"
 
-  ![Visual Studio 2017: Installieren einzelner Komponenten](media/vs2017-components.PNG "Installieren einzelner Visual Studio-Komponenten")
+  ![Visual Studio 2017: Installieren einzelner Komponenten](media/vs-installer-installing-components.png "Installieren einzelner Visual Studio-Komponenten")
 
-  |         |         |
-  |---------|---------|
-  |  ![Kamerasymbol für Video](media/video-icon.png "Video ansehen")  |   [Sehen Sie sich ein Video an](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Components-in-Visual-Studio-2017-ZMfaVID6D_7411787171), in dem gezeigt wird, wie Sie mithilfe des Visual Studio-Installers eine einzelne Komponente installieren. |
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+  ![Visual Studio 2019: Installieren einzelner Komponenten](media/vs-2019/vs-installer-individual-components.png "Installieren einzelner Visual Studio-Komponenten")
+
+::: moniker-end
 
 ## <a name="step-6---install-language-packs-optional"></a>Schritt 6: Installieren von Language Packs (optional)
 
-Standardmäßig versucht das Installationsprogramm bei der ersten Ausführung die Sprache des Betriebssystems zu verwenden. Zum Installieren von Visual Studio 2017 in einer bestimmten Sprache Ihrer Wahl klicken Sie im Visual Studio-Installationsprogramm auf die Option **Sprachpakete** und folgen den Aufforderungen.
+Standardmäßig versucht das Installationsprogramm bei der ersten Ausführung die Sprache des Betriebssystems zu verwenden. Zum Installieren von Visual Studio in einer Sprache Ihrer Wahl klicken Sie im Visual Studio-Installer auf die Registerkarte **Sprachpakete**, und folgen Sie dann den Anweisungen.
 
-  ![Visual Studio 2017 - Installieren von Language Packs](media/vs2017-languages.PNG "Installieren von Visual Studio-Language Packs")
+::: moniker range="vs-2017"
 
-  |         |         |
-  |---------|---------|
-  |  ![Kamerasymbol für Video](media/video-icon.png "Video ansehen")  |   [Sehen Sie sich ein Video an](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Language-Packs-in-Visual-Studio-2017-ByT7yID6D_9011787171), in dem gezeigt wird, wie Sie mithilfe des Visual Studio-Installers ein Sprachpaket installieren. |
+  ![Visual Studio 2017 - Installieren von Language Packs](media/vs-installer-installing-language-packs.png "Installieren von Visual Studio-Language Packs")
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+  ![Visual Studio 2019 – Installieren von Sprachpaketen](media/vs-2019/vs-installer-language-packs.png "Installieren von Visual Studio-Sprachpaketen")
+
+::: moniker-end
 
 ### <a name="change-the-installer-language-from-the-command-line"></a>Ändern der Installersprache über die Befehlszeile
 
@@ -125,31 +205,64 @@ Eine andere Möglichkeit zum Ändern der Standardsprache ist die Ausführung des
 
 ## <a name="step-7---change-the-installation-location-optional"></a>Schritt 7: Ändern des Installationspfads (optional)
 
+::: moniker range="vs-2017"
+
 **Neues in 15.7:** Der Installationsspeicherbedarf für Visual Studio auf dem Systemlaufwerk kann reduziert werden. Sie können den Downloadcache, freigegebene Komponenten, SDKs und Tools auf andere Datenträger verschieben, und Visual Studio dort belassen, wo es am schnellsten ausgeführt werden kann.
 
   ![Visual Studio 2017: Ändern des Installationspfads](media/installation-options-by-location.png "Ändern des Installationspfads")
 
-Weitere Informationen finden Sie auf der Seite [Ändern der Installationspfade in Visual Studio](change-installation-locations.md).
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Sie können den Speicherbedarf für die Installation von Visual Studio auf Ihrem Systemlaufwerk reduzieren. Sie können den Downloadcache, freigegebene Komponenten, SDKs und Tools auf andere Datenträger verschieben, und Visual Studio dort belassen, wo es am schnellsten ausgeführt werden kann.
+
+  ![Visual Studio 2019: Ändern des Installationspfads](media/vs-2019/vs-installer-installation-locations.png "Ändern des Installationspfads")
+
+::: moniker-end
+
+> [!IMPORTANT]
+> Sie können nur bei der ersten Installation von Visual Studio ein anderes Laufwerk auswählen. Wenn Sie Visual Studio bereits installiert haben und das Laufwerk wechseln möchten, müssen Sie Visual Studio deinstallieren und anschließend neu installieren.
+
+Weitere Informationen finden Sie auf der Seite [Auswählen der Installationspfade in Visual Studio](change-installation-locations.md).
 
 ## <a name="step-8---start-developing"></a>Schritt 8: Mit dem Entwickeln beginnen
 
+::: moniker range="vs-2017"
+
 1. Klicken Sie nach Abschluss der Visual Studio-Installation auf **Starten**, um mit dem Programmieren in Visual Studio zu beginnen.
 
-2. Klicken Sie auf **Datei** und dann auf **Neues Projekt**.
+2. Klicken Sie auf **Datei**, und wählen Sie dann **Neues Projekt** aus.
 
 3. Wählen Sie einen neuen Projekttyp aus.
 
-   Um beispielsweise [eine C++-App zu erstellen](../ide/getting-started-with-cpp-in-visual-studio.md), klicken Sie auf **Installiert**, erweitern Sie **Visual C++**, und wählen Sie dann den C++-Projekttyp aus, den Sie erstellen möchten.
+   Wenn Sie beispielsweise [eine C++-App erstellen](../ide/getting-started-with-cpp-in-visual-studio.md) möchten, wählen Sie **Installiert** aus, erweitern Sie **Visual C++**, und wählen Sie dann den C++-Projekttyp aus, den Sie erstellen möchten.
 
-   Um [eine C#-App zu erstellen](../get-started/csharp/tutorial-wpf.md), klicken Sie auf **Installiert**, erweitern Sie **Visual C#**, und wählen Sie dann den C#-Projekttyp aus, den Sie erstellen möchten.
+   Klicken Sie zum [Erstellen einer C#-App](../get-started/csharp/tutorial-console.md) auf **Installiert**, erweitern Sie **Visual C#**, und wählen Sie dann den C#-Projekttyp aus, den Sie erstellen möchten.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Klicken Sie nach Abschluss der Visual Studio-Installation auf **Starten**, um mit dem Programmieren in Visual Studio zu beginnen.
+
+1. Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
+
+1. Geben Sie den Typ von App im Suchfeld ein, den Sie erstellen möchten, um eine Liste der verfügbaren Vorlagen anzuzeigen. Die Liste der Vorlagen basiert auf den Workloads, die Sie bei der Installation ausgewählt haben. Wählen Sie andere Workloads aus, um andere Vorlagen anzuzeigen.
+
+   Sie können die Suchergebnisse nach bestimmten Programmiersprachen filtern, indem Sie die Dropdownliste **Sprache** verwenden. Sie können außerdem die Listen **Plattform** und **Projekttyp** zum Filtern verwenden. 
+
+1. Ihr neues Projekt wird dann in Visual Studio geöffnet, und Sie können damit anfangen, Code zu schreiben.
+
+::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Aktualisieren von Visual Studio 2017](update-visual-studio.md)
-* [Ändern von Visual Studio 2017 RC](modify-visual-studio.md)
-* [Deinstallieren von Visual Studio 2017](uninstall-visual-studio.md)
-* [Erstellen einer Offlineinstallation von Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
-* [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
+* [Visual Studio aktualisieren](update-visual-studio.md)
+* [Ändern von Visual Studio](modify-visual-studio.md)
+* [Deinstallieren von Visual Studio](uninstall-visual-studio.md)
+* [Erstellen einer Offlineinstallation von Visual Studio](create-an-offline-installation-of-visual-studio.md)
+* [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Installieren von Visual Studio für Mac](/visualstudio/mac/installation)

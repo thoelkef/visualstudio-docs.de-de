@@ -1,12 +1,9 @@
 ---
-title: Installieren Sie Visual Studio-Versionen Seite-an-Seite | Microsoft-Dokumentation
+title: Parallele Installation mehrerer Visual Studio-Versionen | Microsoft-Dokumentation
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-install
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - side-by-side installations [Visual Studio]
 - Help [Visual Studio], installing
@@ -15,13 +12,13 @@ ms.assetid: 4d00f240-4910-4699-aaf3-cda6461f0c29
 caps.latest.revision: 48
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: f2bbf63e45996d41889109c7423611bfe3218f0f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 48d77b77367faa1ea1f59c1de7fdbad96d574e1b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838384"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117641"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Parallele Installation mehrerer Visual Studio-Versionen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +30,17 @@ Sie können diese Visual Studio-Version auf einem Computer installieren, auf dem
 
  Bevor Sie Versionen parallel installieren, sollten Sie die folgenden Bedingungen kennen:
 
--   Wenn Sie Visual Studio 2015 verwenden, um eine Projektmappe zu öffnen, die in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]erstellt wurde, können Sie die Projektmappe später erneut in der früheren Version öffnen und ändern, sofern Sie keine Funktionen implementiert haben, die für Visual Studio 2015 spezifisch sind.
+- Wenn Sie Visual Studio 2015 verwenden, um eine Projektmappe zu öffnen, die in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]erstellt wurde, können Sie die Projektmappe später erneut in der früheren Version öffnen und ändern, sofern Sie keine Funktionen implementiert haben, die für Visual Studio 2015 spezifisch sind.
 
--   Wenn Sie versuchen, eine Projektmappe mit Visual Studio 2015 zu öffnen, die mit [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] oder einer früheren Version erstellt wurde, müssen Sie gegebenenfalls ihre Projekte und Dateien ändern, damit diese mit Visual Studio 2015 kompatibel sind. Weitere Informationen finden Sie unter den [Übertragung, Migration und Upgrade der Visual Studio-Projekte](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015) Seite.
+- Wenn Sie versuchen, eine Projektmappe mit Visual Studio 2015 zu öffnen, die mit [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] oder einer früheren Version erstellt wurde, müssen Sie gegebenenfalls ihre Projekte und Dateien ändern, damit diese mit Visual Studio 2015 kompatibel sind. Weitere Informationen finden Sie unter [Portieren, Migrieren und Aktualisieren von Visual Studio-Projekten](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015).
 
--   Wenn Sie eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Version auf einem Computer deinstallieren, auf dem mehrere Versionen installiert sind, werden die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Dateizuordnungen für alle Versionen entfernt. Sie können diesen Dateizuordnungen mit der Schaltfläche **Dateizuordnungen wiederherstellen** auf der Seite **Umgebung**, **Allgemein** des Dialogfelds [Optionen](../ide/reference/general-environment-options-dialog-box.md) neu vornehmen.
+- Wenn Sie eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Version auf einem Computer deinstallieren, auf dem mehrere Versionen installiert sind, werden die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Dateizuordnungen für alle Versionen entfernt. Sie können diesen Dateizuordnungen mit der Schaltfläche **Dateizuordnungen wiederherstellen** auf der Seite **Umgebung**, **Allgemein** des Dialogfelds [Optionen](../ide/reference/general-environment-options-dialog-box.md) neu vornehmen.
 
--   Visual Studio aktualisiert die Erweiterungen nicht automatisch, da nicht alle Erweiterungen kompatibel sind. Installieren Sie erneut die Erweiterungen aus der [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkId=178891) oder vom Softwareherausgeber.
+- Visual Studio aktualisiert die Erweiterungen nicht automatisch, da nicht alle Erweiterungen kompatibel sind. Installieren Sie erneut die Erweiterungen aus dem [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkId=178891) oder vom Softwareherausgeber.
 
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>.NET Framework-Versionen und parallele Installationen
 
--   Visual Basic, Visual C# und Visual F#-Projekte nutzen die Option **Zielframework** im **Projekt-Designer** , um festzulegen, welche Version von .NET Framework ein Projekt verwendet. Für ein C++-Projekt können Sie das Zielframework durch Bearbeiten der Projektdatei (.vcxproj) ändern. Weitere Informationen finden Sie unter [Versionskompatibilität](http://msdn.microsoft.com/library/2f25e522-456a-48c3-8a53-e5f39275649f).
+- Visual Basic, Visual C# und Visual F#-Projekte nutzen die Option **Zielframework** im **Projekt-Designer** , um festzulegen, welche Version von .NET Framework ein Projekt verwendet. Für ein C++-Projekt können Sie das Zielframework durch Bearbeiten der Projektdatei (.vcxproj) ändern. Weitere Informationen finden Sie unter [Kompatibilität von Versionen](http://msdn.microsoft.com/library/2f25e522-456a-48c3-8a53-e5f39275649f).
 
      Wenn Sie ein Projekt erstellen, können Sie angeben, auf welche Version von .NET Framework das Projekt in der Liste **.NET Framework** im Dialogfeld **Neues Projekt** abzielt.
 
@@ -53,13 +50,13 @@ Sie können diese Visual Studio-Version auf einem Computer installieren, auf dem
     |--------------|-----------|
     |[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]|[Seite „Anwendung“, Projekt-Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)|
     |Visual C#|[Seite „Anwendung“, Projekt-Designer (C#)](../ide/reference/application-page-project-designer-csharp.md)|
-    |Visual F#|[Konfigurieren von Projekten](http://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526)|
+    |Visual F#|[Konfigurieren von Projekten](http://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526)|
     |C++|[Vorgehensweise: Ändern des Zielframeworks und des Plattformtoolsets](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)|
-    |[!INCLUDE[jsprjscript](../includes/jsprjscript-md.md)]|[Ausführen einer JScript-Anwendung auf einer früheren Version der Common Language Runtime](http://msdn.microsoft.com/en-us/bbea51b5-ac03-4e6c-b9a6-f487ef63eda5)|
+    |[!INCLUDE[jsprjscript](../includes/jsprjscript-md.md)]|[Ausführen einer JScript-Anwendung auf einer früheren Version der Common Language Runtime](http://msdn.microsoft.com/bbea51b5-ac03-4e6c-b9a6-f487ef63eda5)|
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Installieren von Visual Studio](../install/install-visual-studio-2015.md)
 - [Übertragung, Migration und Upgrade der Visual Studio-Projekte](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015)
 - [Erstellen von isolierten Anwendungen und parallelen Assemblys (C/C++)](http://msdn.microsoft.com/library/9465904e-76f7-48bd-bb3f-c55d8f1699b6)
-- [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+- [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

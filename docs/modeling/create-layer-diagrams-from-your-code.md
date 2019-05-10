@@ -9,20 +9,19 @@ helpviewer_keywords:
 - constraints, architectural
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: f10323a1123b795f1fa6b09d52252b8038b1a732
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b9822dda92a096e3c497d468865d3ed9fd56e16d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846164"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62421185"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Erstellen von Abhängigkeitsdiagrammen aus dem Code
 
-Um die hochrangige, logische-Architektur des Softwaresystems visuell darzustellen, erstellen Sie eine *Abhängigkeitsdiagramm* in Visual Studio. Um sicherzustellen, dass Code und Entwurf konsistent bleiben, können überprüfen Sie Ihren Code mit einem Abhängigkeitsdiagramm. Sie können Abhängigkeitsdiagramme für Visual c# und Visual Basic-Projekte erstellen. Welche Editionen von Visual Studio dieses Feature unterstützen, finden Sie unter [Edition-Unterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Um die hochrangige, logische-Architektur des Softwaresystems visuell darzustellen, erstellen Sie eine *Abhängigkeitsdiagramm* in Visual Studio. Um sicherzustellen, dass Code und Entwurf konsistent bleiben, können überprüfen Sie Ihren Code mit einem Abhängigkeitsdiagramm. Sie können Abhängigkeitsdiagramme für Visual c# und Visual Basic-Projekte erstellen. Welche Editionen von Visual Studio dieses Feature unterstützen, finden Sie unter [Edition-Unterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools).
 
 ![Erstellen Sie ein Abhängigkeitsdiagramm](../modeling/media/layerdiagramvisualizecode.png)
 
@@ -42,15 +41,15 @@ Bevor Sie ein Abhängigkeitsdiagramm erstellen, stellen Sie sicher, dass Ihre Pr
 ### <a name="add-a-new-dependency-diagram-to-a-modeling-project"></a>Fügen Sie ein neues Abhängigkeitsdiagramm zu einem Modellierungsprojekt
 
 > [!NOTE]
-> Abhängigkeitsdiagramme werden für .NET Core-Projekte in Visual Studio 2017 nicht unterstützt.
+> Abhängigkeitsdiagramme werden für .NET Core-Projekte in Visual Studio nicht unterstützt.
 
-1.  Auf der **Architektur** Menü wählen **neues Abhängigkeitsdiagramm**.
+1. Auf der **Architektur** Menü wählen **neues Abhängigkeitsdiagramm**.
 
-2.  Klicken Sie unter **Vorlagen**, wählen Sie **Abhängigkeitsdiagramm**.
+2. Klicken Sie unter **Vorlagen**, wählen Sie **Abhängigkeitsdiagramm**.
 
-3.  Benennen Sie das Diagramm.
+3. Benennen Sie das Diagramm.
 
-4.  In **zu Modellierungsprojekt hinzufügen**, navigieren Sie zu, und wählen Sie in der Projektmappe ein vorhandenes Modellierungsprojekt aus.
+4. In **zu Modellierungsprojekt hinzufügen**, navigieren Sie zu, und wählen Sie in der Projektmappe ein vorhandenes Modellierungsprojekt aus.
 
      - oder - 
 
@@ -59,7 +58,7 @@ Bevor Sie ein Abhängigkeitsdiagramm erstellen, stellen Sie sicher, dass Ihre Pr
     > [!NOTE]
     > Das Abhängigkeitsdiagramm muss in einem Modellierungsprojekt vorhanden sein. Sie können es allerdings mit Elementen an einer beliebigen Stelle in der Projektmappe verknüpfen.
 
-5.  Stellen Sie sicher, dass sowohl das Modellierungsprojekt und das Dependency-Diagramm zu speichern.
+5. Stellen Sie sicher, dass sowohl das Modellierungsprojekt und das Dependency-Diagramm zu speichern.
 
 ## <a name="drag-and-drop-or-copy-and-paste-from-a-code-map"></a>Ziehen und ablegen, oder durch Kopieren und Einfügen aus einer Code Map
 
@@ -82,7 +81,7 @@ Bevor Sie ein Abhängigkeitsdiagramm erstellen, stellen Sie sicher, dass Ihre Pr
 ## <a name="CreateLayers"></a> Ebenen aus Artefakten erstellen
  Ebenen können aus Visual Studio-Projektmappenelementen erstellt werden, z. B. Projekte, Codedateien, Namespaces, Klassen und Methoden. Dabei werden Verknüpfungen zwischen den Ebenen und den Elementen automatisch erstellt und im Ebenenvalidierungsprozess berücksichtigt.
 
- Sie können Ebenen auch mit den Elementen verknüpfen, die die Validierung nicht unterstützen, wie Word-Dokumente oder PowerPoint-Präsentationen, sodass Sie eine Ebene Spezifikationen oder Plänen zuordnen können. Außerdem können Sie Ebenen mit Dateien in Projekten verknüpfen, die für mehrere Apps freigegeben sind. Im Validierungsprozess werden diese Ebenen, die mit generischen Namen wie „Layer 1“ und „Layer 2“ angezeigt werden, jedoch nicht berücksichtigt.
+ Sie können Ebenen auch mit den Elementen verknüpfen, die die Validierung nicht unterstützen, wie Word-Dokumente oder PowerPoint-Präsentationen, sodass Sie eine Ebene Spezifikationen oder Plänen zuordnen können. Außerdem können Sie Ebenen mit Dateien in Projekten verknüpfen, die für mehrere Apps freigegeben sind. Im Validierungsprozess werden diese Ebenen, die mit generischen Namen wie "Layer 1" und "Layer 2" angezeigt werden, jedoch nicht berücksichtigt.
 
  Um festzustellen, ob ein verknüpftes Element die Validierung unterstützt, öffnen Sie **Ebenen-Explorer** und untersuchen Sie die **unterstützt die Validierung** -Eigenschaft des Elements. Finden Sie unter [Verwalten von Links zu Artefakten](#Managing).
 
@@ -102,19 +101,19 @@ Bevor Sie ein Abhängigkeitsdiagramm erstellen, stellen Sie sicher, dass Ihre Pr
 
  Die Zahl auf einer Ebene gibt die Anzahl von Artefakten an, die mit der Ebene verknüpft sind. Beachten Sie jedoch Folgendes, wenn Sie diese Zahl lesen:
 
--   Wenn eine Ebene mit einem Artefakt verknüpft ist, das andere Artefakte enthält, die Ebene jedoch nicht direkt mit den anderen Artefakten verknüpft ist, umfasst die Zahl nur das verknüpfte Artefakt. Die anderen Artefakte werden jedoch während der Ebenenvalidierung für die Analyse berücksichtigt.
+- Wenn eine Ebene mit einem Artefakt verknüpft ist, das andere Artefakte enthält, die Ebene jedoch nicht direkt mit den anderen Artefakten verknüpft ist, umfasst die Zahl nur das verknüpfte Artefakt. Die anderen Artefakte werden jedoch während der Ebenenvalidierung für die Analyse berücksichtigt.
 
      Ist z. B. eine Ebene mit einem einzelnen Namespace verknüpft, ist die Anzahl der verknüpften Artefakte 1, auch wenn der Namespace Klassen enthält. Wenn die Ebene auch mit den einzelnen Klassen im Namespace verknüpft ist, umfasst die Zahl die verknüpften Klassen.
 
--   Wenn eine Ebene andere Ebenen enthält, die mit Artefakten verknüpft sind, ist die Containerebene ebenfalls mit diesen Artefakten verknüpft, obwohl in der Zahl auf der Containerebene diese Artefakte nicht berücksichtigt sind.
+- Wenn eine Ebene andere Ebenen enthält, die mit Artefakten verknüpft sind, ist die Containerebene ebenfalls mit diesen Artefakten verknüpft, obwohl in der Zahl auf der Containerebene diese Artefakte nicht berücksichtigt sind.
 
 ## <a name="Managing"></a> Verwalten von Links zwischen Ebenen und Artefakten
 
-1.  Das Abhängigkeitsdiagramm, öffnen Sie das Kontextmenü für die Ebene, und wählen Sie dann **Links anzeigen**.
+1. Das Abhängigkeitsdiagramm, öffnen Sie das Kontextmenü für die Ebene, und wählen Sie dann **Links anzeigen**.
 
      **Ebenen-Explorer** werden die Artefaktlinks für die ausgewählte Ebene.
 
-2.  Verwenden Sie zum Verwalten dieser Links die folgenden Aufgaben:
+2. Verwenden Sie zum Verwalten dieser Links die folgenden Aufgaben:
 
 |**Aktion**|**Im Ebenen-Explorer**|
 |-|-|
@@ -151,14 +150,15 @@ Bevor Sie ein Abhängigkeitsdiagramm erstellen, stellen Sie sicher, dass Ihre Pr
 ## <a name="Codemaps"></a> Ermitteln von Mustern und Abhängigkeiten in einer Code map
  Beim Erstellen von Abhängigkeitsdiagrammen können Sie auch erstellen **von code Maps**. Diese Diagramme können Ihnen helfen, Muster und Abhängigkeiten zu ermitteln, während Sie den Code untersuchen. Mithilfe von Projektmappen-Explorer, Klassenansicht oder Objektkatalog können Assemblys, Namespaces und Klassen untersucht werden, die häufig den vorhandenen Ebenen entsprechen. Weitere Informationen zu Codezuordnungen finden Sie unter den folgenden Themen:
 
--   [Projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md)
+- [Projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md)
 
--   [Verwenden von Code Maps zum Debuggen von Anwendungen](../modeling/use-code-maps-to-debug-your-applications.md)
+- [Verwenden von Code Maps zum Debuggen von Anwendungen](../modeling/use-code-maps-to-debug-your-applications.md)
 
--   [Ermitteln potenzieller Probleme mithilfe von Code Map-Analyzern](../modeling/find-potential-problems-using-code-map-analyzers.md)
+- [Ermitteln potenzieller Probleme mithilfe von Code Map-Analyzern](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
 ## <a name="see-also"></a>Siehe auch
 
+- [Edition-Unterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools)
 - [Video: Überprüfen Sie Ihre architekturabhängigkeiten in Echtzeit](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
 - [Abhängigkeitsdiagramme: Referenz](../modeling/layer-diagrams-reference.md)
 - [Abhängigkeitsdiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md)

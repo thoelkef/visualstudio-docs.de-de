@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 6ba1953c-be3b-4df8-8561-e133408f8270
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a12991a8ea3de4348ce87686feadd7bc7681968
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6eb87a279da834004e599a49b33d0c1b32355269
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934234"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777615"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke-Aufgabe
 
@@ -30,7 +30,7 @@ Legt die Werte einer XML-Datei wie von der XPath-Abfrage angegeben fest
 ## <a name="parameters"></a>Parameter
 
  In der folgenden Tabelle werden die Parameter der `XmlPoke` -Aufgabe beschrieben.
-  
+
 |Parameter|Beschreibung|
 |---------------|-----------------|
 |`Namespaces`|Optionaler `String` -Parameter.<br /><br /> Gibt die Namespaces für die Präfixe von XPath-Abfragen an `Namespaces` ist ein XML-Ausschnitt, der aus `Namespace`-Elementen mit den Attributen `Prefix` und `Uri` besteht. Das Attribut `Prefix` gibt das Präfix an, das dem im `Uri`-Attribut angegebenen Namespace zugeordnet werden soll. Verwenden Sie kein leeres `Prefix`-Attribut.|
@@ -38,7 +38,7 @@ Legt die Werte einer XML-Datei wie von der XPath-Abfrage angegeben fest
 |`Value`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem> -Parameter.<br /><br /> Gibt den Wert an, der in den angegebenen Pfad eingefügt werden soll.|
 |`XmlInputPath`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem> -Parameter.<br /><br /> Gibt die XML-Eingabe als Dateipfad an|
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Anmerkungen
 
  Zusätzlich zu den in der Tabelle aufgeführten Parametern erbt dieser Task Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
@@ -81,5 +81,5 @@ Wenn Sie in diesem Beispiel `/Package/mp:PhoneIdentity/PhonePublisherId` ändern
 
 ## <a name="see-also"></a>Siehe auch
 
- [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
- [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
+- [Aufgaben](../msbuild/msbuild-tasks.md)
+- [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

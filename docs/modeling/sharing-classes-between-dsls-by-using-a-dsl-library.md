@@ -4,16 +4,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: f95cc7fad1b4aaac3da687352cf5561a7d72ff8e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 36c49d3447a5f1fafcf4601057c66ebedcb193ec
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53897838"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63003382"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Gemeinsame Nutzung von Klassen durch DSLs über eine DSL-Bibliothek
 In Visual Studio-Visualisierungs- und Modellierungs-SDK können Sie eine unvollständige DSL-Definition erstellen, die Sie in einer anderen DSL importieren können. Dadurch können Sie die allgemeinen Teile der ähnlichen Modellen zu berücksichtigen.
@@ -22,11 +21,11 @@ In Visual Studio-Visualisierungs- und Modellierungs-SDK können Sie eine unvolls
 
 #### <a name="to-create-a-dsl-library"></a>Um eine DSL-Bibliothek zu erstellen.
 
-1.  Erstellen eines neuen DSL-Projekts, und wählen Sie die Lösungsvorlage für die DSL-Bibliothek.
+1. Erstellen eines neuen DSL-Projekts, und wählen Sie die Lösungsvorlage für die DSL-Bibliothek.
 
      Ein einzelnes DSL-Projekt wird mit einem leeren Modell erstellt.
 
-2.  Sie können Domänenklassen, Beziehungen, Formen und so weiter hinzufügen.
+2. Sie können Domänenklassen, Beziehungen, Formen und so weiter hinzufügen.
 
      Die Elemente in der Bibliothek keine einzelne einbettende Struktur bilden.
 
@@ -34,15 +33,15 @@ In Visual Studio-Visualisierungs- und Modellierungs-SDK können Sie eine unvolls
 
      Neben der Einstellung der **Vererbungsmodifizierer** der Domänenklassen, `Abstract`.
 
-3.  Sie können Elemente hinzufügen, die Sie im DSL-Explorer, wie z. B. Verbindungs-Generatoren zu definieren.
+3. Sie können Elemente hinzufügen, die Sie im DSL-Explorer, wie z. B. Verbindungs-Generatoren zu definieren.
 
-4.  Sie können Anpassungen hinzufügen, die zusätzlichen Code, z. B. validierungseinschränkungen erfordern.
+4. Sie können Anpassungen hinzufügen, die zusätzlichen Code, z. B. validierungseinschränkungen erfordern.
 
-5.  Klicken Sie auf **alle Vorlagen transformieren**.
+5. Klicken Sie auf **alle Vorlagen transformieren**.
 
-6.  Erstellen Sie das Projekt.
+6. Erstellen Sie das Projekt.
 
-7.  Wenn Sie die DSL für andere Benutzer verteilen, müssen Sie sowohl die kompilierte Assembly (DLL) und die Datei bereitstellen `DslDefinition.dsl`. Sie können die kompilierte Assembly in einem Ordner unter finden. `Dsl\bin\*`
+7. Wenn Sie die DSL für andere Benutzer verteilen, müssen Sie sowohl die kompilierte Assembly (DLL) und die Datei bereitstellen `DslDefinition.dsl`. Sie können die kompilierte Assembly in einem Ordner unter finden. `Dsl\bin\*`
 
 #### <a name="to-import-a-dsl-library"></a>So importieren Sie eine DSL-Bibliothek
 

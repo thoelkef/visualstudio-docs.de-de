@@ -11,15 +11,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e935501e2e38c7e6c3abdb1c16e351342cf52a8a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6239bc351872dc7a945c3fbff8ad1ed13817c3ef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838293"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967783"
 ---
 # <a name="how-to-populate-documents-with-data-from-services"></a>Vorgehensweise: Auffüllen von Dokumenten mit Daten aus Diensten
 
@@ -33,21 +33,21 @@ Das folgende Beispiel zeigt, wie Sie Dokumenten zur Entwurfszeit datengebundene 
 
 ## <a name="to-populate-a-document-level-project-with-data-from-a-web-service"></a>Zum Auffüllen von einem Projekt auf Dokumentebene mit Daten von einem Webdienst
 
-1.  Öffnen Sie das Fenster **Datenquellen** , und erstellen Sie für Ihr Projekt eine Dienstdatenquelle. Weitere Informationen finden Sie unter [Neue Datenquelle hinzufügen](../data-tools/add-new-data-sources.md).
+1. Öffnen Sie das Fenster **Datenquellen** , und erstellen Sie für Ihr Projekt eine Dienstdatenquelle. Weitere Informationen finden Sie unter [Neue Datenquelle hinzufügen](../data-tools/add-new-data-sources.md).
 
-2.  Ziehen Sie die gewünschte Tabelle oder das gewünschte Feld vom Fenster **Datenquellen** in Ihr Dokument.
+2. Ziehen Sie die gewünschte Tabelle oder das gewünschte Feld vom Fenster **Datenquellen** in Ihr Dokument.
 
      Im Dokument wird ein Steuerelement erstellt. Zudem werden für den Dienst eine an die Objektklassen des Projekts gebundene <xref:System.Windows.Forms.BindingSource> und Klassen generiert.
 
-3.  Erstellen Sie in Ihrem Code eine Instanz der Webdienstklasse, die Sie in Schritt 1 eine Verbindung hergestellt.
+3. Erstellen Sie in Ihrem Code eine Instanz der Webdienstklasse, die Sie in Schritt 1 eine Verbindung hergestellt.
 
-4.  Wenn Eigenschaften, die für die Kommunikation mit dem Webdienst erforderlich sind, erstellen Sie Instanzen dieser Eigenschaften.
+4. Wenn Eigenschaften, die für die Kommunikation mit dem Webdienst erforderlich sind, erstellen Sie Instanzen dieser Eigenschaften.
 
-5.  Erstellen und senden Sie mithilfe der vom Webdienst bereitgestellten Methoden und der in Schritt 4 erstellten Dateninstanzen eine Datenanforderung.
+5. Erstellen und senden Sie mithilfe der vom Webdienst bereitgestellten Methoden und der in Schritt 4 erstellten Dateninstanzen eine Datenanforderung.
 
      Die Methoden, die Sie verwenden, hängt davon ab, die vom Webdienst bietet.
 
-6.  Weisen Sie die vom Webdienst, der <xref:System.Windows.Forms.BindingSource.DataSource%2A> Eigenschaft der <xref:System.Windows.Forms.BindingSource>.
+6. Weisen Sie die vom Webdienst, der <xref:System.Windows.Forms.BindingSource.DataSource%2A> Eigenschaft der <xref:System.Windows.Forms.BindingSource>.
 
 Wenn Sie das Projekt ausführen, zeigen die Steuerelemente den ersten Datensatz in der Datenquelle an. Sie können einen Bildlauf durch die Datensätze ermöglichen, indem Sie die „Currency“-Ereignisse mit den Objekten in der <xref:System.Windows.Forms.BindingSource>verarbeiten.
 

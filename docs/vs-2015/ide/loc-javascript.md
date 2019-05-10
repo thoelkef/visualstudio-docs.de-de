@@ -1,14 +1,9 @@
 ---
 title: '&lt;LOC&gt; (JavaScript) | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - <loc> JavaScript XML tag
 - loc JavaScript XML tag
@@ -16,15 +11,15 @@ ms.assetid: 0d3349b6-4bdd-418f-bc11-73665305baae
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9314453b5e75e31f98d6989efa274278706bc5a4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8029dc6282e7b5a4ff9075257bcb1b6213a4a6b4
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244009"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54758524"
 ---
-# <a name="ltlocgt-javascript"></a>&lt;LOC&gt; (JavaScript)
+# <a name="ltlocgt-javascript"></a>&lt;loc&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Gibt den Speicherort und den Typ der Sidecardatei an, die lokalisierte IntelliSense-Informationen bereitstellt.  
@@ -43,7 +38,7 @@ Gibt den Speicherort und den Typ der Sidecardatei an, die lokalisierte IntelliSe
  `format`  
  Dies ist optional. Der Typ der für die Lokalisierung verwendeten Sidecardatei. Verwenden Sie `messagebundle`, um die Verwendung der von Open Ajax-Metadaten definierten Meldungsbündel festzulegen. Das empfohlene Format ist `messagebundle`. Allerdings wird dieses Format nicht in Microsoft Ajax oder in WINMD-Dateien unterstützt. Verwenden Sie `vsdoc`, um das standardmäßige .NET Framework-Lokalisierungsformat anzugeben, das von Microsoft Ajax und Windows-Runtime verwendet wird. Dieses Attribut ist optional. Das Standardformat ist `vsdoc`.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Das `<loc>`-Element muss am Dateianfang in demselben Abschnitt wie das `<reference>`-Element angezeigt werden. Verwendungsregeln für das `<loc>`-Element entsprechen denen für das `<reference>`-Element. Weitere Informationen finden Sie im Abschnitt "References-Direktiven" in [JavaScript IntelliSense](../ide/javascript-intellisense.md).  
   
  Visual Studio verarbeitet ein einzelnes `<loc>`-Element für jede JS-Datei. Wenn mehrere `<loc>`-Elemente vorhanden sind, wird nur ein einzelnes `<loc>`-Element verwendet. Verhalten für das Bestimmen, welches zu verwendende `<loc>`-Element nicht definiert ist.  
@@ -110,6 +105,3 @@ function illuminate(a)
   
 ## <a name="see-also"></a>Siehe auch  
  [XML-Dokumentationskommentare](../ide/xml-documentation-comments-javascript.md)
-
-
-

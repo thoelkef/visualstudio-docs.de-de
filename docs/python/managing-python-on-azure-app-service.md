@@ -2,22 +2,21 @@
 title: Konfigurieren von Python in Azure App Service (Windows)
 description: Installieren von Python-Interpretern und -Bibliotheken in Azure App Service und Konfigurieren von Webanwendungen in der Weise, dass sie korrekt auf den Interpreter verweisen.
 ms.date: 01/07/2019
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 5bfa048f7f836e2e4108c3d30a1dfb89b764c59c
-ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
+ms.openlocfilehash: 7ffe0de939eba8af38c132fc3de5c96a9499e3f0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060742"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62535957"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Einrichten einer Python-Umgebung in Azure App Service (Windows)
 
@@ -77,7 +76,7 @@ Nach dem Hinzufügen eines Verweises auf `python361x64` (Python 3.6.1 x64), sieh
 
 ## <a name="set-webconfig-to-point-to-the-python-interpreter"></a>Festlegen, dass die „web.config“-Datei auf den Python-Interpreter verweist
 
-Nach der Installation der Websiteerweiterung (entweder über das Portal oder eine Azure Resource Manager-Vorlage), verweisen Sie als Nächstes mit der *web.config*-Datei Ihrer App auf den Python-Interpreter. Die *web.config*-Datei weist den in App Service ausgeführten IIS-Webserver (7 und höher) entweder über FastCGI oder über HttpPlatform an, wie er mit Python-Anforderungen umgehen soll.
+Nach der Installation der Websiteerweiterung (entweder über das Portal oder eine Azure Resource Manager-Vorlage), verweisen Sie als Nächstes mit der *web.config*-Datei Ihrer App auf den Python-Interpreter. Die *web.config*-Datei weist den in App Service ausgeführten IIS-Webserver (7 und höher) entweder über HttpPlatform (empfohlen) oder FastCGI an, wie er mit Python-Anforderungen umgehen soll.
 
 Suchen Sie zunächst den vollständigen Pfad zur *python.exe* der Websiteerweiterungen, und erstellen und ändern Sie dann die entsprechende *web.config*-Datei.
 
@@ -98,6 +97,33 @@ Wenn beim Anzeigen des Pfads zu einer Erweiterung Probleme auftreten, können Si
 1. Wählen Sie auf der Seite „App Service“ **Entwicklungstools** > **Konsole** aus.
 1. Geben Sie entweder den Befehl `ls ../home` oder den Befehl `dir ..\home` ein, um die Erweiterungsordner auf der obersten Ebene zu sehen, z.B. *Python361x64*.
 1. Geben Sie einen Befehl wie `ls ../home/python361x64` oder `dir ..\home\python361x64` ein, um zu bestätigen, dass er *Python361x64* und andere Interpreterdateien enthält.
+
+### <a name="configure-the-httpplatform-handler"></a>Konfigurieren des HttpPlatform-Handlers
+
+Das HTTP-Plattformmodul übergibt die Socketverbindungen direkt an einen eigenständigen Python-Prozess. Diese Weitergabe ermöglicht es Ihnen, einen beliebigen Webserver auszuführen, benötigt aber ein Startskript, das auf einem lokalen Webserver ausgeführt wird. Geben Sie das Skript in dem `<httpPlatform>`-Element von *web.config* an, in dem das `processPath`-Attribut auf den Python-Interpreter der Websiteerweiterung, und das `arguments`-Attribut auf Ihr Skript und alle Argumente verweist, die Sie bereitstellen möchten:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <system.webServer>
+    <handlers>
+      <add name="PythonHandler" path="*" verb="*" modules="httpPlatformHandler" resourceType="Unspecified"/>
+    </handlers>
+    <httpPlatform processPath="D:\home\Python361x64\python.exe"
+                  arguments="D:\home\site\wwwroot\runserver.py --port %HTTP_PLATFORM_PORT%"
+                  stdoutLogEnabled="true"
+                  stdoutLogFile="D:\home\LogFiles\python.log"
+                  startupTimeLimit="60"
+                  processesPerApplication="16">
+      <environmentVariables>
+        <environmentVariable name="SERVER_PORT" value="%HTTP_PLATFORM_PORT%" />
+      </environmentVariables>
+    </httpPlatform>
+  </system.webServer>
+</configuration>
+```
+
+Die Umgebungsvariable `HTTP_PLATFORM_PORT`, die an dieser Stelle angezeigt wird, enthält den Port, auf den Ihr lokaler Server nach Verbindungen von „localhost“ lauschen soll. In diesem Beispiel wird auch gezeigt, wie Sie gegebenenfalls eine andere Umgebungsvariable erstellen, in diesem Fall `SERVER_PORT`.
 
 ### <a name="configure-the-fastcgi-handler"></a>Konfigurieren des FastCGI-Handlers
 
@@ -126,36 +152,9 @@ Die an dieser Stelle definierten `<appSettings>` sind für Ihre Anwendung als Um
 
 - Der Wert für `PYTHONPATH` kann frei erweitert werden, muss jedoch den Stamm Ihrer App enthalten.
 - `WSGI_HANDLER` muss auf eine durch Ihre App importierbare WSGI-Anwendung verweisen.
-- `WSGI_LOG` ist optional, wird jedoch zum Debuggen Ihrer App empfohlen. 
+- `WSGI_LOG` ist optional, wird jedoch zum Debuggen Ihrer App empfohlen.
 
 Zusätzliche Informationen zu *web.config*-Inhalten für Bottle-, Flask- und Django-Web-Apps finden Sie unter [Veröffentlichen in Azure](publishing-python-web-applications-to-azure-from-visual-studio.md).
-
-### <a name="configure-the-httpplatform-handler"></a>Konfigurieren des HttpPlatform-Handlers
-
-Das HTTP-Plattformmodul übergibt die Socketverbindungen direkt an einen eigenständigen Python-Prozess. Diese Weitergabe ermöglicht es Ihnen, einen beliebigen Webserver auszuführen, benötigt aber ein Startskript, das auf einem lokalen Webserver ausgeführt wird. Geben Sie das Skript in dem `<httpPlatform>`-Element von *web.config* an, in dem das `processPath`-Attribut auf den Python-Interpreter der Websiteerweiterung, und das `arguments`-Attribut auf Ihr Skript und alle Argumente verweist, die Sie bereitstellen möchten:
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<configuration>
-  <system.webServer>
-    <handlers>
-      <add name="PythonHandler" path="*" verb="*" modules="httpPlatformHandler" resourceType="Unspecified"/>
-    </handlers>
-    <httpPlatform processPath="D:\home\Python361x64\python.exe"
-                  arguments="D:\home\site\wwwroot\runserver.py --port %HTTP_PLATFORM_PORT%"
-                  stdoutLogEnabled="true"
-                  stdoutLogFile="D:\home\LogFiles\python.log"
-                  startupTimeLimit="60"
-                  processesPerApplication="16">
-      <environmentVariables>
-        <environmentVariable name="SERVER_PORT" value="%HTTP_PLATFORM_PORT%" />
-      </environmentVariables>
-    </httpPlatform>
-  </system.webServer>
-</configuration>
-```
-
-Die Umgebungsvariable `HTTP_PLATFORM_PORT`, die an dieser Stelle angezeigt wird, enthält den Port, auf den Ihr lokaler Server nach Verbindungen von „localhost“ lauschen soll. In diesem Beispiel wird auch gezeigt, wie Sie gegebenenfalls eine andere Umgebungsvariable erstellen, in diesem Fall `SERVER_PORT`.
 
 ## <a name="install-packages"></a>Installieren von Paketen
 

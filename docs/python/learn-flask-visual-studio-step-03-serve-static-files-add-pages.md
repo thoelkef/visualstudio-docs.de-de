@@ -3,21 +3,20 @@ title: 'Tutorial zu Flask in Visual Studio, Schritt 3: Statische Dateien und Sei
 titleSuffix: ''
 description: Eine exemplarische Vorgehensweise der Grundlagen von Flask im Kontext von Visual Studio-Projekten, die zeigt, wie Sie statische Dateien bereitstellen, Seiten zur App hinzufügen, und die Vorlagenvererbung verwenden
 ms.date: 01/07/2019
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 15c336a0f026211f37c2435586e0e18df96ecf0f
-ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
+ms.openlocfilehash: d9d6f94a81eb97cb06820381ba09e13d4bdeb9d8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060789"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957184"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Schritt 3: Bereitstellen statischer Dateien, Hinzufügen von Seiten und Verwenden von Vorlagenvererbung
 

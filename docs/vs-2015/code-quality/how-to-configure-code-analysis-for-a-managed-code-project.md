@@ -1,14 +1,9 @@
 ---
-title: 'Vorgehensweise: Konfigurieren der Codeanalyse für ein Projekt mit verwaltetem Code | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Codeanalyse für ein Projekt mit verwaltetem Code konfigurieren | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.csvb
 helpviewer_keywords:
@@ -19,48 +14,45 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 98f3d14b73b0219d0fcec4312648bf613f37378e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.openlocfilehash: a37ededab38cf27a002117f874d17d6a340000d9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239186"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429168"
 ---
-# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Gewusst wie: Konfigurieren der Codeanalyse für ein Projekt mit verwaltetem Code
+# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Vorgehensweise: Konfigurieren der Codeanalyse für ein Projekt mit verwaltetem Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] und [!INCLUDE[vsPro](../includes/vspro-md.md)], können Sie aus einer Liste der Codeanalyse *-Regelsätze* um auf ein Projekt mit verwaltetem Code anzuwenden. Der Standardregelsatz sind die Microsoft-Mindestregeln. Sie können einen anderen Regelsatz auf ein Projekt oder alle Projekte in einer Projektmappe anwenden.  
   
 > [!NOTE]
->  Informationen dazu, wie Sie einen Regelsatz für ASP.NET-Webanwendungen zu konfigurieren, finden Sie unter [Vorgehensweise: Konfigurieren von Codeanalyse für eine ASP.NET-Webanwendung](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).  
+> Informationen dazu, wie Sie einen Regelsatz für ASP.NET-Webanwendungen zu konfigurieren, finden Sie unter [Vorgehensweise: Konfigurieren der Codeanalyse für eine ASP.NET-Webanwendung](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).  
   
 ### <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>So konfigurieren Sie einen Regelsatz für ein .NET Framework-Projekt  
   
-1.  In **Projektmappen-Explorer**, klicken Sie auf das Projekt.  
+1. In **Projektmappen-Explorer**, klicken Sie auf das Projekt.  
   
-2.  Auf der **analysieren** Menü klicken Sie auf **Konfigurieren der Codeanalyse für** *ProjectName*.  
+2. Auf der **analysieren** Menü klicken Sie auf **Konfigurieren der Codeanalyse für** *ProjectName*.  
   
-3.  In der **Konfiguration** und **Plattform** Listen, klicken Sie auf die Build-Konfiguration und die Zielplattform.  
+3. In der **Konfiguration** und **Plattform** Listen, klicken Sie auf die Build-Konfiguration und die Zielplattform.  
   
-4.  Codeanalyse ausführen jedes Mal, wenn das Projekt mit der ausgewählten Konfiguration erstellt wird, wählen die **Codeanalyse für Build aktivieren (definiert eine CODE_ANALYSIS-Konstante)** Kontrollkästchen. Sie können die Codeanalyse auch manuell ausführen, indem Sie öffnen die **analysieren** klicken und im Menü **Ausführen der Codeanalyse für** *ProjectName*.  
+4. Codeanalyse ausführen jedes Mal, wenn das Projekt mit der ausgewählten Konfiguration erstellt wird, wählen die **Codeanalyse für Build aktivieren (definiert eine CODE_ANALYSIS-Konstante)** Kontrollkästchen. Sie können die Codeanalyse auch manuell ausführen, indem Sie öffnen die **analysieren** klicken und im Menü **Ausführen der Codeanalyse für** *ProjectName*.  
   
-5.  Standardmäßig meldet die Codeanalyse keine Warnungen zu Code, der automatisch von Tools von Drittanbietern generiert wird. Um Warnungen zu generiertem Code anzuzeigen, deaktivieren Sie die **Ergebnisse aus generiertem Code unterdrücken** Kontrollkästchen.  
+5. Standardmäßig meldet die Codeanalyse keine Warnungen zu Code, der automatisch von Tools von Drittanbietern generiert wird. Um Warnungen zu generiertem Code anzuzeigen, deaktivieren Sie die **Ergebnisse aus generiertem Code unterdrücken** Kontrollkästchen.  
   
     > [!NOTE]
-    >  Allerdings werden durch diese Option keine Codeanalysefehler und -warnungen zu generiertem Code unterdrückt, wenn die Fehler und Warnungen in Formularen und Vorlagen auftreten. Der Quellcode für ein Formular oder eine Vorlage kann sowohl angezeigt als auch verwaltet werden.  
+    > Allerdings werden durch diese Option keine Codeanalysefehler und -warnungen zu generiertem Code unterdrückt, wenn die Fehler und Warnungen in Formularen und Vorlagen auftreten. Der Quellcode für ein Formular oder eine Vorlage kann sowohl angezeigt als auch verwaltet werden.  
   
-6.  In der **diesen Regelsatz ausführen** aufzulisten, führen Sie eine der folgenden:  
+6. In der **diesen Regelsatz ausführen** aufzulisten, führen Sie eine der folgenden:  
   
-    -   Wählen Sie den Regelsatz, den Sie verwenden möchten.  
+    - Wählen Sie den Regelsatz, den Sie verwenden möchten.  
   
-    -   Klicken Sie auf  **\<durchsuchen... >** einen vorhandenen benutzerdefinierten Regelsatz anzugeben, ist nicht in der Liste.  
+    - Klicken Sie auf  **\<durchsuchen... >** einen vorhandenen benutzerdefinierten Regelsatz anzugeben, ist nicht in der Liste.  
   
-    -   Definieren Sie einen benutzerdefinierten Regelsatz.  
+    - Definieren Sie einen benutzerdefinierten Regelsatz.  
   
          Weitere Informationen finden Sie unter [Erstellen von benutzerdefinierten Regelsätzen](../code-quality/creating-custom-code-analysis-rule-sets.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Exemplarische Vorgehensweise: Konfigurieren und Verwenden eines benutzerdefinierten Regelsatzes](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)
-
-
-
+ [Exemplarische Vorgehensweise: Legen Sie die Konfiguration und Verwendung einer benutzerdefinierten Regelsatzes](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)

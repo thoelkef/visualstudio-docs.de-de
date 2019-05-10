@@ -1,14 +1,9 @@
 ---
 title: .NET-Speicherbelegungsansicht | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.allocation
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: 01eb876e-c413-4516-977b-4f896929e8a6
 caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 73a2be1314b01a0a7de73f71794bc94b18f0e851
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a3c24d8aa984ddc947d3c532020974a196192940
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760359"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082385"
 ---
 # <a name="net-memory-allocations-view"></a>.NET-Speicherbelegungsansicht
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ In der Speicherbelegungsansicht werden die Typen aufgelistet, die während der P
 ## <a name="highlighting-the-execution-hot-path"></a>Hervorheben des langsamsten Ausführungspfads  
  Sie können den Ausführungspfad der Aufrufliste ermitteln, der die meisten Objekte des übergeordneten Typs erstellt hat.  
   
--   Klicken Sie mit der rechten Maustaste auf den Typ oder die Funktion, und klicken Sie dann auf **Langsamsten Pfad erweitern**, um den aktivsten Pfad anzuzeigen.  
+- Klicken Sie mit der rechten Maustaste auf den Typ oder die Funktion, und klicken Sie dann auf **Langsamsten Pfad erweitern**, um den aktivsten Pfad anzuzeigen.  
   
 |Spalte|Beschreibung|  
 |------------|-----------------|  
@@ -64,6 +59,3 @@ In der Speicherbelegungsansicht werden die Typen aufgelistet, die während der P
 |**Inklusive Bytes in %**|– Bei einer Funktion der Anteil des insgesamt bei der Profilerstellung zugeordneten Speicherplatzes, der inklusive Belegungen des übergeordneten Typs dieser Funktion war.<br />– für einen Typ: der Anteil des insgesamt bei der Profilerstellung zugeordneten Speicherplatzes, der den Instanzen des Typs zugeordnet war.|  
 |**Exklusive Bytes**|– für eine Funktion: die Anzahl der Bytes im Arbeitsspeicher, die von der Funktion dem Objekt des übergeordneten Typs zugeordnet wurden. Diese Zahl schließt den Arbeitsspeicher mit nicht ein, der von seinen untergeordneten Funktionen zugeordnet wurde.<br />– Bei einem Typ die Gesamtanzahl von Bytes, die bei der Profilerstellung für die Instanzen des Typs zugeordnet waren.|  
 |**Exklusive Bytes %**|– Bei einer Funktion der Anteil des insgesamt bei der Profilerstellung zugeordneten Speicherplatzes, der exklusive Belegungen des übergeordneten Typs dieser Funktion war.<br />– für einen Typ: der Anteil des insgesamt bei der Profilerstellung zugeordneten Speicherplatzes, der den Instanzen des Typs zugeordnet war.|
-
-
-

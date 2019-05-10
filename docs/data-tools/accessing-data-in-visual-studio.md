@@ -11,16 +11,15 @@ helpviewer_keywords:
 - ADO.NET, data access
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9a13efa2335cd0721b71dd61e270e5331d78dede
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 16cbdb0a673f503dcee49b7a323d1453ee93532a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62818227"
 ---
 # <a name="access-data-in-visual-studio"></a>Zugreifen auf Daten in Visual Studio
 
@@ -28,7 +27,7 @@ In Visual Studio können Sie Anwendungen, die eine zu Daten in praktisch jedem D
 
 Für Anwendungen in JavaScript, Python, PHP, Ruby oder C++ verbinden Sie mit Daten, wie Sie nichts anderes, durch Abrufen von Bibliotheken und Schreiben von Code. Für .NET-Anwendungen bietet Visual Studio Tools, die Sie zum Untersuchen von Datenquellen, erstellen Sie Objektmodelle zu speichern und Bearbeiten von Daten im Arbeitsspeicher und Binden von Daten an die Benutzeroberfläche verwenden können. Microsoft Azure bietet SDKs für .NET, Java, Node.js, PHP, Python, Ruby und mobilen apps, und in Visual Studio-Tools für die Verbindung mit Azure Storage.
 
-Die folgenden sind Listen nur einige der vielen Datenbank- und Systeme, die verwendet werden können in Visual Studio. Die [Microsoft Azure](https://azure.microsoft.com/) Angebote sind Datendienste, die alle Bereitstellung und Verwaltung von zugrunde liegenden Datenspeicher enthalten. Die **Azure-Entwicklung** arbeitsauslastung in [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) können Sie mit der Azure-Datenspeichern direkt aus Visual Studio arbeiten.
+Die folgenden sind Listen nur einige der vielen Datenbank- und Systeme, die verwendet werden können in Visual Studio. Die [Microsoft Azure](https://azure.microsoft.com/) Angebote sind Datendienste, die alle Bereitstellung und Verwaltung von zugrunde liegenden Datenspeicher enthalten. Die **Azure-Entwicklung** arbeitsauslastung in [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) können Sie mit der Azure-Datenspeichern direkt aus Visual Studio arbeiten.
 
 ![Workload „Azure-Entwicklung“](media/azure-development-workload.png)
 
@@ -61,15 +60,25 @@ Die meisten anderen SQL- und NoSQL-Datenbankprodukte, die hier aufgeführt sind,
 - CouchDB
 - MongoDB
 - NDatabase
-- OrientDB |
+- OrientDB|
 - RavenDB
 - VelocityDB
 - Und mehr...
 
-Viele Datenbankhersteller und Drittanbieter Unterstützung von Visual Studio-Integration von NuGet-Pakete. Die Angebote stehen auf nuget.org oder über den NuGet Package Manager in Visual Studio (**Tools** > **NuGet Package Manager** > **Verwalten von NuGet Pakete für Projektmappe**). Andere Datenbankprodukte, in Visual Studio als Erweiterung integrieren. Sie können diese Angebote im Visual Studio Marketplace durch Navigieren zu durchsuchen **Tools**, **Erweiterungen und Updates** auswählen und dann auf **Online** im linken Bereich des der Das Dialogfeld. Weitere Informationen finden Sie unter [kompatible Datenbanksysteme für Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+::: moniker range="vs-2017"
+
+Viele Datenbankhersteller und Drittanbieter Unterstützung von Visual Studio-Integration von NuGet-Pakete. Die Angebote stehen auf nuget.org oder über den NuGet Package Manager in Visual Studio (**Tools** > **NuGet Package Manager** > **Verwalten von NuGet Pakete für Projektmappe**). Andere Datenbankprodukte, in Visual Studio als Erweiterung integrieren. Sie können diese Angebote im Durchsuchen der [Visual Studio Marketplace](https://marketplace.visualstudio.com/) navigieren **Tools** > **Erweiterungen und Updates** auswählen und dann  **Online** im linken Bereich des Dialogfelds. Weitere Informationen finden Sie unter [kompatible Datenbanksysteme für Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Viele Datenbankhersteller und Drittanbieter Unterstützung von Visual Studio-Integration von NuGet-Pakete. Die Angebote stehen auf nuget.org oder über den NuGet Package Manager in Visual Studio (**Tools** > **NuGet Package Manager** > **Verwalten von NuGet Pakete für Projektmappe**). Andere Datenbankprodukte, in Visual Studio als Erweiterung integrieren. Sie können diese Angebote im Durchsuchen der [Visual Studio Marketplace](https://marketplace.visualstudio.com/) navigieren **Erweiterungen** > **Verwalten von Erweiterungen** auswählen und dann  **Online** im linken Bereich des Dialogfelds. Weitere Informationen finden Sie unter [kompatible Datenbanksysteme für Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+
+::: moniker-end
 
 > [!NOTE]
-> Der erweiterte Support für SQL Server 2005 endete am 12. April 2016 eingestellt. Es gibt keine Garantie, in der Data-Tools in Visual Studio 2015 und höher funktioniert mit SQL Server 2005 nach diesem Datum weiterhin. Weitere Informationen finden Sie unter den [Ankündigung der Ablauf des Supports für SQL Server 2005](https://www.microsoft.com/sql-server/sql-server-2005).
+> Der erweiterte Support für SQL Server 2005 endete am 12. April 2016 eingestellt. Es gibt keine Garantie dafür, die Data-Tools in Visual Studio 2015 und höher arbeiten mit SQL Server 2005 weiterhin vorhanden. Weitere Informationen finden Sie unter den [Ankündigung der Ablauf des Supports für SQL Server 2005](https://www.microsoft.com/sql-server/sql-server-2005).
 
 ## <a name="net-languages"></a>Sprachen für .NET
 
@@ -77,7 +86,7 @@ Alle .NET Datenzugriff, einschließlich der in .NET Core, basieren auf ADO.NET e
 
 Datenzugriffs-Dokumentation im Zusammenhang mit ASP.NET finden Sie [arbeiten mit Daten](https://www.asp.net/web-forms/overview/presenting-and-managing-data) auf der ASP.NET-Website. Ein Tutorial zur Verwendung von Entity Framework mit ASP.NET MVC finden Sie unter [erste Schritte mit Entity Framework 6 Code First anhand von MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
 
-Universelle Windows-Plattform (UWP)-apps in C# oder Visual Basic können das Microsoft Azure SDK für .NET verwenden, um den Zugriff auf Azure Storage und andere Azure-Dienste. Die Windows.Web.HttpClient-Klasse ermöglicht die Kommunikation mit RESTful-Dienst. Weitere Informationen finden Sie unter [Herstellen einer Verbindung mit einem HTTP-Server mithilfe von Windows.Web.Http](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
+Universelle Windows-Plattform (UWP)-apps in c# oder Visual Basic können das Microsoft Azure SDK für .NET verwenden, den Zugriff auf Azure Storage und andere Azure-Dienste. Die Windows.Web.HttpClient-Klasse ermöglicht die Kommunikation mit RESTful-Dienst. Weitere Informationen finden Sie unter [Herstellen einer Verbindung mit einem HTTP-Server mithilfe von Windows.Web.Http](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
 
 Die empfohlene Vorgehensweise werden für die datenspeicherung auf dem lokalen Computer SQLite, verwenden Sie die im selben Prozess wie die app ausgeführt wird. Wenn eine objektrelationale (ORM)-Zuordnungsebene erforderlich ist, können Sie Entity Framework. Weitere Informationen finden Sie unter [Datenzugriff](/windows/uwp/data-access/index) im Windows Developer Center.
 
@@ -141,7 +150,7 @@ Installieren Sie [Python-Unterstützung in Visual Studio](../python/overview-of-
 
 [Daten in Office-Projektmappen](../vsto/data-in-office-solutions.md)&mdash;enthält Links zu Themen, die allgemeine Funktionsweise von Daten in Office-Projektmappen erläutern. Dazu gehören Informationen über schemaorientierte Programmierung, Datenzwischenspeicherung und serverseitigen Datenzugriff.
 
-[LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)&mdash;wird beschrieben, die in integrierten Abfragefunktionen C# und Visual Basic und das allgemeine Abfragemodell für relationale Datenbanken, XML-Dokumente, Datasets und speicherinterne Auflistungen.
+[LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)&mdash;wird beschrieben, die Abfragefunktionen, die in c# und Visual Basic sowie das allgemeine Abfragemodell für relationale Datenbanken, XML-Dokumente, Datasets und speicherinterne Auflistungen integriert.
 
 [XML-Tools in Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)&mdash;erläutert dem Arbeiten mit XML-Daten, Debuggen von XSLT, .NET Framework-XML-Funktionen und die Architektur der XML-Abfrage.
 

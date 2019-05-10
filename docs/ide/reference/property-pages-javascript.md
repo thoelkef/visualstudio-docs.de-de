@@ -1,7 +1,6 @@
 ---
 title: Eigenschaftenseiten, JavaScript
 ms.date: 06/21/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - javascript.project.property.debugging.debuggertype
@@ -14,15 +13,15 @@ f1_keywords:
 ms.assetid: a05ab01f-3d5d-4675-a845-eab51807d3a3
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83c7a2b0d0004b1f96a1c46ab120814179f77d26
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c1f725c239df2ffc9683676c4c20a86ce12f873e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956530"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969019"
 ---
 # <a name="property-pages-javascript"></a>Eigenschaftenseiten, JavaScript
 Die **Eigenschaftenseiten** bieten Zugriff auf die Projekteinstellungen. Sie können die Seiten, die in den **Eigenschaftenseiten** angezeigt werden, zum Ändern der Projekteigenschaften verwenden.
@@ -50,7 +49,6 @@ Die folgenden Seiten und Optionen werden auf den **Eigenschaftenseiten** angezei
 > [!NOTE]
 > Einige Optionen sind nur für UWP-Apps verfügbar.
 
-
  **Ausgabepfad**
 
  Legt den Speicherort der Ausgabedateien für die Konfiguration des Projekts fest. Der Pfad ist relativ. Wenn Sie einen absoluten Pfad eingeben, wird der absolute Pfad im Projekt gespeichert. Der Standardpfad ist "bin\Debug".
@@ -67,16 +65,15 @@ Die folgenden Seiten und Optionen werden auf den **Eigenschaftenseiten** angezei
 > [!NOTE]
 > Einige Optionen sind nur für UWP-Apps verfügbar.
 
-
  **Zu startender Debugger**
 
  Gibt den Standardhost für den Debugger an.
 
--   Klicken Sie auf **Lokaler Computer**, um die Anwendung auf dem Visual Studio-Hostcomputer zu starten. Weitere Informationen finden Sie unter [Ausführen von Windows Store-Apps auf dem lokalen Computer](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
+- Klicken Sie auf **Lokaler Computer**, um die Anwendung auf dem Visual Studio-Hostcomputer zu starten. Weitere Informationen finden Sie unter [Ausführen von Windows Store-Apps auf dem lokalen Computer](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
 
--   Klicken Sie auf **Simulator**, um die Anwendung im Simulator zu starten. Weitere Informationen finden Sie unter [Ausführen von Windows Store-Apps im Simulator](../../debugger/run-windows-store-apps-in-the-simulator.md).
+- Klicken Sie auf **Simulator**, um die Anwendung im Simulator zu starten. Weitere Informationen finden Sie unter [Ausführen von Windows Store-Apps im Simulator](../../debugger/run-windows-store-apps-in-the-simulator.md).
 
--   Klicken Sie auf **Remotecomputer**, um die Anwendung auf einem Remotecomputer zu starten. Weitere Informationen zum Remotedebuggen finden Sie unter [Ausführen von Windows Store-Apps auf einem Remotecomputer](../../debugger/run-windows-store-apps-on-a-remote-machine.md).
+- Klicken Sie auf **Remotecomputer**, um die Anwendung auf einem Remotecomputer zu starten. Weitere Informationen zum Remotedebuggen finden Sie unter [Ausführen von Windows Store-Apps auf einem Remotecomputer](../../debugger/run-windows-store-apps-on-a-remote-machine.md).
 
 **Anwendung starten**
 

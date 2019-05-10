@@ -1,30 +1,33 @@
 ---
 title: 'Idiaenumdebugstreams:: Clone | Microsoft-Dokumentation'
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaEnumDebugStreams::Clone method
 ms.assetid: e85ec592-de97-4f95-a774-1623315ba415
-author: mikejo5000
+caps.latest.revision: 11
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: 9e22f7fffa3b1eab0726b47b8b4d8a23c91804b2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 11a7f8e051350b066c745c47530ab4ed818f8b1b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875350"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838388"
 ---
 # <a name="idiaenumdebugstreamsclone"></a>IDiaEnumDebugStreams::Clone
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Erstellt einen Enumerator, der den gleichen Enumerationszustand wie der aktuelle Enumerator enthält.  
   
 ## <a name="syntax"></a>Syntax  
   
-```C++  
+```cpp#  
 HRESULT Clone (   
    IDiaEnumDebugStreams** ppenum  
 );  

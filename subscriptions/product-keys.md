@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 10/03/2017
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Hier erhalten Sie Informationen zum Abrufen und Verwalten Ihrer Product Keys in Visual Studio-Abonnements.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cdd37aae3e0a3e3caebafa026fd5dcf3922c0998
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 74d13602dd27669233cd40ebdd2f5e165c09079a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977719"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Verwenden von Product Keys in Visual Studio-Abonnements
 
@@ -47,14 +45,13 @@ Unsere Untersuchungen zeigen, dass für die meisten Abonnenten die in ihrem Abon
 
 ## <a name="locating-and-claiming-product-keys"></a>Suchen nach und Inanspruchnahme von Product Keys
 Sie müssen bei Ihrem Visual Studio-Abonnement angemeldet sein, um Ihre Product Keys anzeigen zu können. Einzelne Product Keys können gefunden werden, indem Sie wie im Folgenden dargestellt auf der Seite [Downloads](https://my.visualstudio.com/downloads) auf den blauen Link **Schlüssel abrufen** für ein bestimmtes Produkt klicken.  Sämtliche Schlüssel sind auch zusammengefasst auf der Seite [Product Keys](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) verfügbar. Wenn für ein einzelnes Produkt mehrere Schlüssel vorhanden sind, werden in der Spalte „Hinweise“ Hinweise zum Download angezeigt, die Sie beim Ermitteln des erforderlichen Schlüssels unterstützen sollen.
-> [!div class="mx-imgBorder"]   
+> [!div class="mx-imgBorder"]
 > ![„Schlüssel abrufen“ auf der Seite „Downloads“](_img/product-keys/download-get-key.png)
-    
+
 Einige Produkte fassen mehrere Produkteditionen in einem einzigen Download zusammen. In diesen Fällen wird durch den eingegebenen Product Key festgelegt, welche Edition des Produkts installiert wird.
 Einige Schlüssel werden automatisch bereitgestellt, wie z.B. „statische“ Product Keys, die Sie so häufig wie nötig verwenden können, da keine Aktivierung erforderlich ist. Andere Product Keys müssen durch Klicken auf den Link **Schlüssel abrufen** für das entsprechende Produkt in Anspruch genommen werden.
 
 Abhängig vom Produkt ist eine Vielzahl von Schlüsseltypen verfügbar.
-
 
 ### <a name="product-key-types"></a>Product Key-Typen
 
@@ -76,7 +73,6 @@ Sie können einen Schlüssel von der Downloadseite des Produkts anfordern. Alter
 
 ### <a name="claiming-product-keys"></a>Inanspruchnahme von Product Keys
 Nur Abonnenten mit aktiven Abonnements können Produkte herunterladen und Product Keys in Anspruch nehmen.  Sie können Ihre in Anspruch genommenen Schlüssel von der Seite [Product Keys](https://my.visualstudio.com/productkeys) herunterladen, während Ihr Abonnement aktiv ist.
-
 
 So nehmen Sie einen Product Key in Anspruch:
 1. Melden Sie sich bei Ihrem Visual Studio-Abonnement an.  Sie müssen angemeldet sein, um Produkte herunterladen oder Product Keys in Anspruch nehmen zu können.
@@ -106,10 +102,10 @@ Visual Studio-Abonnenten können die Anzahl der Benutzer mit Zugriff auf Windows
 Für Windows Server 2008 R2 stehen für jeden Typ fünf Schlüssel zur Verfügung, die jeweils 20 Verbindungen unterstützen. Für Windows Server 2012 R2 stehen für jeden Typ vier Schlüssel zur Verfügung, die jeweils 50 Verbindungen unterstützen.
 
 #### <a name="to-enable-additional-connections-in-windows-server"></a>So aktivieren Sie unter Windows Server weitere Verbindungen:
-1.  Öffnen Sie den Server-Manager.
-2.  Öffnen Sie im linken Navigationsbereich die Liste „Server“.
-3.  Klicken Sie mit der rechten Maustaste auf Ihren Lizenzserver, und wählen Sie „Lizenzen installieren“ aus.
-4.  Folgen Sie den Anweisungen des Assistenten.  Wählen Sie bei der Auswahl des Vertragstyps „Vollprodukterwerb“ aus, und geben Sie den Product Key ein, den Sie unter „Mein Portal“ erhalten haben.
+1. Öffnen Sie den Server-Manager.
+2. Öffnen Sie im linken Navigationsbereich die Liste „Server“.
+3. Klicken Sie mit der rechten Maustaste auf Ihren Lizenzserver, und wählen Sie „Lizenzen installieren“ aus.
+4. Folgen Sie den Anweisungen des Assistenten.  Wählen Sie bei der Auswahl des Vertragstyps „Vollprodukterwerb“ aus, und geben Sie den Product Key ein, den Sie unter „Mein Portal“ erhalten haben.
 
 Benutzer können über RDS auf Anwendungen zugreifen, wenn die folgenden Bedingungen erfüllt sind:
 - Die Benutzer müssen anonym (nicht authentifiziert) sein.

@@ -1,11 +1,18 @@
 ---
-ms.technology: vs-ai-tools
-ms.openlocfilehash: 7e09023659b1f44af1951e157878d78b641be3f3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+title: Erstellen eines KI-Projekts aus vorhandenem Code
+author: lisawong19
+ms.author: liwong
+manager: routlaw
+ms.date: 11/13/2017
+ms.topic: conceptual
+ms.workload:
+- multiple
+ms.openlocfilehash: 57003538072c372ce877c40db76922d6eed7397d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433804"
 ---
 # <a name="create-an-ai-project-from-existing-code"></a>Erstellen eines KI-Projekts aus vorhandenem Code
 

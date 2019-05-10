@@ -1,7 +1,6 @@
 ---
-title: 'CA2236: Aufrufen von Basisklassenmethoden auf ISerializable-Typen'
+title: 'CA2236: Basisklassenmethoden auf ISerializable-Typen aufrufen.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2236
@@ -12,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: 5a15b20d-769c-4640-b31a-36e07077daae
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cdbd9a3af7c22e2afa29efdff411903c81b6620
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 000ce33b71c13f87f218a15c364fda21b99ccfe4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53862089"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62541834"
 ---
-# <a name="ca2236-call-base-class-methods-on-iserializable-types"></a>CA2236: Aufrufen von Basisklassenmethoden auf ISerializable-Typen
+# <a name="ca2236-call-base-class-methods-on-iserializable-types"></a>CA2236: Basisklassenmethoden auf ISerializable-Typen aufrufen.
 
 |||
 |-|-|

@@ -1,21 +1,20 @@
 ---
 title: Codemetrik berechnen
 ms.date: 11/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code metrics [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4be2b3672741d0bcae64085d1140e5c2ae2bbf63
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f989e5ec028f3a296585c54eb17b54f4da7c1cf0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855571"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62809314"
 ---
 # <a name="code-metrics-values"></a>Codemetrikwerte
 

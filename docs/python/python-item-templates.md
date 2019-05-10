@@ -2,21 +2,20 @@
 title: Elementvorlagen für Python-Projekte
 description: Eine Referenzliste von Elementvorlagen für Python-Projekte, die über Hinzufügen > Neues Element in Visual Studio verfügbar sind.
 ms.date: 12/06/2018
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 37c39346f7cad79e8008cc72711670159eb84f52
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c093dad1364fd5209f51c8e87e3fb99b3c1d3c4a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852163"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430333"
 ---
 # <a name="python-item-templates"></a>Python-Elementvorlagen
 

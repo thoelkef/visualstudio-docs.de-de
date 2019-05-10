@@ -2,21 +2,20 @@
 title: 'Workflow-Designer – Vorgehensweise: Verwenden des Ausdrucks Editors'
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Presentation.View.ExpressionTextBox.UI
 ms.assetid: b5f961dd-6dda-41a9-9cae-0383d479ef3d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63fca3051ce50f728cf83976f6ef6a5204ad35b8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ce46f1db900aa5c37b49a1cc228290d7d99d29a2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949538"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Vorgehensweise: Verwenden des Ausdrucks Editors
 
@@ -37,18 +36,18 @@ Die **Ausdrucks-Editor** verhält sich wie folgt:
 
 ## <a name="use-the-expression-editor"></a>Verwenden des Ausdrucks-Editors
 
-1.  Öffnen Sie in Visual Studio ein neues oder vorhandenes Workflowprojekt aus.
+1. Öffnen Sie in Visual Studio ein neues oder vorhandenes Workflowprojekt aus.
 
-2.  Fügen Sie dem Workflow z. B. die <xref:System.Activities.Statements.Assign>-Aktivität hinzu.
+2. Fügen Sie dem Workflow z. B. die <xref:System.Activities.Statements.Assign>-Aktivität hinzu.
 
     > [!NOTE]
     > Mehrere Workflowaktivitäten verfügen über Ausdrucks-Editoren. Ausdrucks-TextBlock-Steuerelemente werden auch im Variablen-Designer, Argument-Designer und dem dynamischen Argument-Designer angezeigt. Die <xref:System.Activities.Statements.Assign>-Aktivität wird als Beispiel verwendet.
 
-3.  Klicken Sie im Aktivitätsdesigner für die <xref:System.Activities.Statements.Assign>-Aktivität auf den linken Ausdrucks-Editor.
+3. Klicken Sie im Aktivitätsdesigner für die <xref:System.Activities.Statements.Assign>-Aktivität auf den linken Ausdrucks-Editor.
 
      Die grauen Wasserzeichen Zeichenfolgen  **\<auf >** und  **\<VB-Ausdruck eingeben >** sind die standardtextzeichenfolgen für Ausdrucks-Editoren in der <xref:System.Activities.Statements.Assign> Aktivität.
 
-4.  Geben Sie einen Ausdruck ein. Wenn Sie eine Zeichenfolge eingeben, setzen Sie diese unbedingt in Anführungszeichen. Wenn Sie das Ausdrucksargument an eine Variable zu binden, lassen Sie die Anführungszeichen weg.
+4. Geben Sie einen Ausdruck ein. Wenn Sie eine Zeichenfolge eingeben, setzen Sie diese unbedingt in Anführungszeichen. Wenn Sie das Ausdrucksargument an eine Variable zu binden, lassen Sie die Anführungszeichen weg.
 
      Wenn Sie fertig sind, wählen Sie eine Region oder einen Bereich außerhalb der Ausdrucks-Editor, um den Fokus auf einen anderen Teil des Designers zu verlagern. Verschieben des Fokus bewirkt, dass der Compiler den Ausdruck zu überprüfen, wie zuvor beschrieben.
 

@@ -1,30 +1,32 @@
 ---
 title: IDebugEngine2::SetLocale | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugEngine2::SetLocale
 helpviewer_keywords:
 - IDebugEngine2::SetLocale
 ms.assetid: cd0d2cf1-2aac-43da-a830-4bb3d696c219
-author: gregvanl
+caps.latest.revision: 11
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 6881a217ba1d5db885c8c963885eb69e4257b26e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 28eb188ed5b388ac642399630b1891e165d6c9a2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908409"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62875365"
 ---
 # <a name="idebugengine2setlocale"></a>IDebugEngine2::SetLocale
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Legt das Gebietsschema die Debug-Engine (DE) fest.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT SetLocale(   
    WORD wLangID  
 );  

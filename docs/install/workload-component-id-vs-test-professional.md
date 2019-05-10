@@ -1,30 +1,28 @@
 ---
-title: Workload- und Komponenten-IDs in Visual Studio Test Professional 2017
+title: Workload- und Komponenten-IDs in Visual Studio Test Professional
 titleSuffix: ''
 description: Verwenden Sie Arbeitsauslastungs- und Komponenten-IDs in Visual Studio, um Generalisten beim Testen integrierte Testtools bereitzustellen
-keywords: ''
 author: TerryGLee
 ms.author: tglee
-manager: douge
-ms.date: 11/13/2018
+manager: jillfra
+ms.date: 03/01/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
-ms.service: ''
-ms.prod: visual-studio-dev15
 ms.assetid: 70c03438-8434-4921-ada0-c172519af431
-ms.workload:
-- multiple
-ms.openlocfilehash: d166a0e0c2d21b9df80cce046d81b92806e16f87
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+monikerRange: vs-2017
+ms.openlocfilehash: 354fce02944b62e1ea9ea96e66f6fa34af8616fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937594"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62960673"
 ---
-# <a name="visual-studio-test-professional-2017-component-directory"></a>Visual Studio Test Professional 2017-Komponentenverzeichnis
+# <a name="visual-studio-test-professional-component-directory"></a>Visual Studio Test Professional: Komponentenverzeichnis
 
 In den Tabellen auf dieser Seite sind die IDs aufgeführt, die Sie verwenden können, um Visual Studio über die Befehlszeile zu installieren, oder die Sie als Abhängigkeit in einem VSIX-Manifest angeben können. Beachten Sie, dass weitere Komponenten hinzugefügt werden, wenn wir Updates für Visual Studio veröffentlichen.
 

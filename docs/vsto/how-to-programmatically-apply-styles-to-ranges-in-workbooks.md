@@ -11,63 +11,63 @@ helpviewer_keywords:
 - workbooks, styles
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d12b42d7af92204992f1e32cbb29f311d337b70f
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: f74b2d08a268bc79bcd7d2fd33513b5ccf5b1415
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54096127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817452"
 ---
 # <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>Vorgehensweise: Programmgesteuertes Anwenden von Formaten auf Bereiche in Arbeitsmappen
-  Sie können benannte Formatvorlagen auf Bereiche in Arbeitsmappen anwenden. Excel stellt eine Reihe von vordefinierten Formaten bereit.  
-  
- [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
-  
- Das Dialogfeld **Zellen formatieren** zeigt alle Optionen an, die Sie zum Formatieren von Zellen verwenden können, und jede dieser Optionen ist aus Ihrem Code verfügbar. Klicken Sie zum Anzeigen dieses Dialogfelds in Excel im Menü **Format** auf **Zellen** .  
-  
-## <a name="to-apply-a-style-to-a-named-range-in-a-document-level-customization"></a>So wenden Sie eine Formatvorlage auf einen benannten Bereich in einer Anpassung auf Dokumentebene an  
-  
-1.  Erstellen eine neue Formatvorlage, und legen Sie ihre Attribute fest.  
-  
+  Sie können benannte Formatvorlagen auf Bereiche in Arbeitsmappen anwenden. Excel stellt eine Reihe von vordefinierten Formaten bereit.
+
+ [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
+
+ Das Dialogfeld **Zellen formatieren** zeigt alle Optionen an, die Sie zum Formatieren von Zellen verwenden können, und jede dieser Optionen ist aus Ihrem Code verfügbar. Klicken Sie zum Anzeigen dieses Dialogfelds in Excel im Menü **Format** auf **Zellen** .
+
+## <a name="to-apply-a-style-to-a-named-range-in-a-document-level-customization"></a>So wenden Sie eine Formatvorlage auf einen benannten Bereich in einer Anpassung auf Dokumentebene an
+
+1. Erstellen eine neue Formatvorlage, und legen Sie ihre Attribute fest.
+
      [!code-csharp[Trin_VstcoreExcelAutomation#53](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#53)]
-     [!code-vb[Trin_VstcoreExcelAutomation#53](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#53)]  
-  
-2.  Erstellen Sie eine <xref:Microsoft.Office.Tools.Excel.NamedRange>-Steuerelement, weisen Sie diesem Text zu, und wenden Sie dann die neue Formatvorlage an. Dieser Code muss in einer Sheet-Klasse platziert werden und nicht in der `ThisWorkbook` -Klasse.  
-  
+     [!code-vb[Trin_VstcoreExcelAutomation#53](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#53)]
+
+2. Erstellen Sie eine <xref:Microsoft.Office.Tools.Excel.NamedRange>-Steuerelement, weisen Sie diesem Text zu, und wenden Sie dann die neue Formatvorlage an. Dieser Code muss in einer Sheet-Klasse platziert werden und nicht in der `ThisWorkbook` -Klasse.
+
      [!code-csharp[Trin_VstcoreExcelAutomation#54](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#54)]
-     [!code-vb[Trin_VstcoreExcelAutomation#54](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#54)]  
-  
-## <a name="to-clear-a-style-from-a-named-range-in-a-document-level-customization"></a>So löschen Sie eine Formatvorlage aus einem benannten Bereich in einer Anpassung auf Dokumentebene  
-  
-1.  Wenden Sie die Formatvorlage "NORMAL.DOT" auf den Bereich an. Dieser Code muss in einer Sheet-Klasse platziert werden und nicht in der `ThisWorkbook` -Klasse.  
-  
+     [!code-vb[Trin_VstcoreExcelAutomation#54](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#54)]
+
+## <a name="to-clear-a-style-from-a-named-range-in-a-document-level-customization"></a>So löschen Sie eine Formatvorlage aus einem benannten Bereich in einer Anpassung auf Dokumentebene
+
+1. Wenden Sie die Formatvorlage "NORMAL.DOT" auf den Bereich an. Dieser Code muss in einer Sheet-Klasse platziert werden und nicht in der `ThisWorkbook` -Klasse.
+
      [!code-csharp[Trin_VstcoreExcelAutomation#55](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#55)]
-     [!code-vb[Trin_VstcoreExcelAutomation#55](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#55)]  
-  
-## <a name="to-apply-a-style-to-a-named-range-in-a-vsto-add-in"></a>So wenden Sie eine Formatvorlage auf einen benannten Bereich in einem VSTO-Add-In an  
-  
-1.  Erstellen eine neue Formatvorlage, und legen Sie ihre Attribute fest.  
-  
+     [!code-vb[Trin_VstcoreExcelAutomation#55](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#55)]
+
+## <a name="to-apply-a-style-to-a-named-range-in-a-vsto-add-in"></a>So wenden Sie eine Formatvorlage auf einen benannten Bereich in einem VSTO-Add-In an
+
+1. Erstellen eine neue Formatvorlage, und legen Sie ihre Attribute fest.
+
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#28](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#28)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#28](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#28)]  
-  
-2.  Erstellen Sie einen <xref:Microsoft.Office.Interop.Excel.Range>, weisen Sie diesem Text zu, und wenden Sie dann die neue Formatvorlage an.  
-  
+     [!code-vb[Trin_VstcoreExcelAutomationAddIn#28](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#28)]
+
+2. Erstellen Sie einen <xref:Microsoft.Office.Interop.Excel.Range>, weisen Sie diesem Text zu, und wenden Sie dann die neue Formatvorlage an.
+
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#29](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#29)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#29](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#29)]  
-  
-## <a name="to-clear-a-style-from-a-named-range-in-a-vsto-add-in"></a>So löschen Sie eine Formatvorlage aus einem benannten Bereich in einem VSTO-Add-in  
-  
-1.  Wenden Sie die Formatvorlage "NORMAL.DOT" auf den Bereich an.  
-  
+     [!code-vb[Trin_VstcoreExcelAutomationAddIn#29](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#29)]
+
+## <a name="to-clear-a-style-from-a-named-range-in-a-vsto-add-in"></a>So löschen Sie eine Formatvorlage aus einem benannten Bereich in einem VSTO-Add-in
+
+1. Wenden Sie die Formatvorlage "NORMAL.DOT" auf den Bereich an.
+
      [!code-csharp[Trin_VstcoreExcelAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#56)]
-     [!code-vb[Trin_VstcoreExcelAutomation#56](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#56)]  
-  
-## <a name="see-also"></a>Siehe auch  
- [Arbeiten mit Bereichen](../vsto/working-with-ranges.md)   
- [NamedRange-Steuerelement](../vsto/namedrange-control.md)   
- [Globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md)   
- [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)  
+     [!code-vb[Trin_VstcoreExcelAutomation#56](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#56)]
+
+## <a name="see-also"></a>Siehe auch
+- [Arbeiten mit Bereichen](../vsto/working-with-ranges.md)
+- [NamedRange-Steuerelement](../vsto/namedrange-control.md)
+- [Globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md)
+- [Optionaler Parameter in Office-Projektmappen](../vsto/optional-parameters-in-office-solutions.md)

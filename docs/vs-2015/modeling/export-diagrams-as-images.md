@@ -1,12 +1,9 @@
 ---
 title: Exportieren von Diagrammen als Bild | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - modeling diagrams, saving
 - diagrams - modeling, saving modeling diagrams
@@ -15,13 +12,13 @@ ms.assetid: 0df68943-4c60-4f00-b1e8-b1cdee13762e
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 31b7527484bf377433a7fd80b6ccb8e87722c40d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: da424c2250c327a04a9f878e6bd953a664dcc4d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794425"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104121"
 ---
 # <a name="export-diagrams-as-images"></a>Exportieren von Diagrammen als Bild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,29 +29,26 @@ In Visual Studio können Sie speichern, Modellierungsdiagramme in schreibgeschü
   
 ### <a name="to-copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>So kopieren Sie ein Diagramm oder einen Teil eines Diagramms in eine andere Anwendung  
   
-1.  Wählen Sie im Diagramm einige oder alle Formen aus.  
+1. Wählen Sie im Diagramm einige oder alle Formen aus.  
   
-2.  Mit der rechten Maustaste in der Auswahl, und klicken Sie dann auf **Kopie**.  
+2. Mit der rechten Maustaste in der Auswahl, und klicken Sie dann auf **Kopie**.  
   
-3.  Fügen Sie die Auswahl in die gewünschte Anwendung ein.  
+3. Fügen Sie die Auswahl in die gewünschte Anwendung ein.  
   
 ### <a name="to-export-an-image-as-part-of-an-automated-process"></a>So exportieren Sie ein Bild im Rahmen eines automatisierten Prozesses  
   
--   Finden Sie unter [Exportieren von UML-Diagrammen in Bilddateien](../modeling/export-uml-diagrams-to-image-files.md).  
+- Finden Sie unter [Exportieren von UML-Diagrammen in Bilddateien](../modeling/export-uml-diagrams-to-image-files.md).  
   
 ### <a name="to-save-a-modeling-diagram-as-an-xml-paper-specification-xps-file"></a>So speichern Sie ein Modellierungsdiagramm als XPS-Datei (XML Paper Specification)  
   
-1.  Auf der **Datei** Menü klicken Sie auf **Drucken** zum Öffnen der **Drucken** im Dialogfeld.  
+1. Auf der **Datei** Menü klicken Sie auf **Drucken** zum Öffnen der **Drucken** im Dialogfeld.  
   
-2.  In der **Namen** Liste **Microsoft XPS Document Writer**, und klicken Sie dann auf **OK**.  
+2. In der **Namen** Liste **Microsoft XPS Document Writer**, und klicken Sie dann auf **OK**.  
   
-3.  In der **speichern Sie die Datei** (Dialogfeld), speichern Sie die Datei als ein **XPS-Dokument (\*.xps)** Datei.  
+3. In der **speichern Sie die Datei** (Dialogfeld), speichern Sie die Datei als ein **XPS-Dokument (\*.xps)** Datei.  
   
 ## <a name="net-framework-security"></a>.NET Framework-Sicherheit  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen von Modellen für Ihre app](../modeling/create-models-for-your-app.md)   
  [Freigeben von Modellen und Exportieren von Diagrammen](../modeling/share-models-and-exporting-diagrams.md)
-
-
-

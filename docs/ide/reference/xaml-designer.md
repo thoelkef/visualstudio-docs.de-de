@@ -1,29 +1,28 @@
 ---
 title: Seite „Optionen“ im XAML-Designer
 ms.date: 03/02/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.XAMLDesigner
+- VS.ToolsOptionsPages.XAML_Designer.General
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 52691c0b49c74bd39fa97ec8d297ffb823ba705c
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 4e2f38d4b5e8dd674dcc762219051c820b426a6c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388360"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788966"
 ---
 # <a name="xaml-designer-options-page"></a>Seite „Optionen“ im XAML-Designer
 
 Sie verwenden die Seite „Optionen“ im **XAML-Designer**, um anzugeben, wie Elemente und Attribute in XAML-Dokumenten formatiert werden. Wählen Sie zum Öffnen dieser Seite im Menü **Extras** den Befehl **Optionen** aus. Für den Zugriff auf die Eigenschaftenseite **XAML-Designer** wählen Sie den Knoten **XAML-Designer** aus. Einstellungen für den XAML-Designer werden angewendet, wenn Sie das Dokument öffnen. Wenn Sie die Einstellungen also ändern, müssen Sie Visual Studio schließen und wieder öffnen, damit die Änderungen angezeigt werden.
 
 > [!NOTE]
-> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Einstellungen zurücksetzen](../environment-settings.md#reset-settings).
+> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Reset settings (Zurücksetzen der Einstellungen)](../environment-settings.md#reset-settings).
 
 ## <a name="enable-xaml-designer"></a>XAML-Designer aktivieren
 
@@ -58,15 +57,15 @@ Mit dieser Einstellung wird bestimmt, wie das Zoomen beim Bearbeiten eines XAML-
 |||
 |-|-|
 |**Mausrad**|Sie vergrößern die Ansicht im XAML-Designer, indem Sie das Mausrad drehen.|
-|**STRG+Mausrad**|Sie vergrößern die Ansicht im XAML-Designer, indem Sie die STRG-Taste drücken, während Sie das Mausrad drehen.|
-|**Alt+Mausrad**|Sie vergrößern die Ansicht im XAML-Designer, indem Sie die ALT-Taste drücken, während Sie das Mausrad drehen.|
+|**STRG+Mausrad**|Sie vergrößern die Ansicht im XAML-Designer, indem Sie die **STRG**-Taste drücken, während Sie das Mausrad drehen.|
+|**Alt+Mausrad**|Sie vergrößern die Ansicht im XAML-Designer, indem Sie die **ALT**-Taste drücken, während Sie das Mausrad drehen.|
 
 Diese Einstellungen bestimmen das Designer-Verhalten beim Bearbeiten eines XAML-Dokuments.
 
 |||
 |-|-|
 |**Interaktive Elemente beim Erstellen automatisch benennen**|Gibt an, ob beim Hinzufügen eines neuen interaktiven Elements zum Designer ein Standardname für das Element bereitgestellt wird.|
-|**Layouteigenschaften bei Elementerstellung automatisch einfügen**|Gibt an, ob beim Hinzufügen eines neuen Elements zum Designer Layouteigenschaften für das Element bereitgestellt werden.|
+|**Layouteigenschaften bei Elementerstellung automatisch einfügen**|Gibt an, ob beim Hinzufügen eines neuen Elements zum Designer Layouteigenschaften für das Element bereitgestellt werden. Layouteigenschaften sind diejenigen, die sich auf das Layout eines Steuerelements auswirken, z.B. „Margin“ und „VerticalAlignment“. Der folgende XAML-Code zeigt, wie eine Schaltfläche mit und ohne diese Option erstellt wird:<br />`<Button Content="Button" HorizontalAlignment="Left" Margin="245,56,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>`<br />`<Button Content="Button" Grid.Row="1"/>`|
 |**Quadrantbasiertes Layout verwenden**|Gibt an, ob das momentan ausgewählte Steuerelement an den nächstgelegenen Kanten des übergeordneten Containers ausgerichtet wird. Ist dieses Kontrollkästchen deaktiviert, werden die Steuerelementausrichtungen während des Verschiebens oder Erstellens nicht geändert.|
 |**Toolboxelemente automatisch ausfüllen**|Gibt an, ob Benutzersteuerelemente und benutzerdefinierte Steuerelemente in der aktuellen Projektmappe automatisch in der Toolbox angezeigt werden.|
 
@@ -76,7 +75,7 @@ Verwenden Sie diese Optionen, um beim Bearbeiten von XAML-Dateien mit Blend die 
 
 |||
 |-|-|
-|**Zoomen durch Verwendung von**|Sie vergrößern die Ansicht im XAML-Designer, indem Sie das Mausrad drehen, oder indem Sie die STRG-Taste bzw. die ALT-Taste drücken, während Sie das Mausrad drehen.|
+|**Zoomen durch Verwendung von**|Sie vergrößern die Ansicht im XAML-Designer, indem Sie das Mausrad drehen, oder indem Sie die **STRG**-Taste bzw. die **ALT**-Taste drücken, während Sie das Mausrad drehen.|
 |**Texteinheiten**|Gibt an, ob Messungen im Designer auf Punkten oder Pixeln basieren. Da universelle Windows-Apps keine Punkte unterstützen, werden die Einheiten automatisch in Pixel konvertiert, falls **Punkt** ausgewählt ist.|
 
 ## <a name="artboard-blend-only"></a>Zeichenfläche (nur in Blend)
@@ -110,4 +109,4 @@ Mit diesen Einstellungen wird bestimmt, ob die Effekte gerendert werden, wenn XA
 ## <a name="see-also"></a>Siehe auch
 
 - [XAML in WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)
-- [Exemplarische Vorgehensweise: Meine erste WPF-Desktopanwendung](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)
+- [Exemplarische Vorgehensweise: Walkthrough: My first WPF desktop application (Exemplarische Vorgehensweise: Meine erste WPF-Desktopanwendung)](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)

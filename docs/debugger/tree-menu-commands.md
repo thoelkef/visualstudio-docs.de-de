@@ -1,35 +1,29 @@
 ---
-title: Struktur von Menübefehlen | Microsoft Docs
-ms.custom: ''
+title: Struktur von Menübefehlen | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Tree menu commands
 ms.assetid: ffc1b893-17b1-477f-92a1-e4a59261ca1a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 223821e6884dadd39c03e8af4605f207e6a28a2b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: bc840ac19e48f6a0a6a597ec667a4bc799070e59
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481355"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901828"
 ---
 # <a name="tree-menu-commands"></a>Befehle im Menü "Struktur"
-Die **Struktur** Menü enthält Befehle zum Erweitern oder Reduzieren von Ansichten.  
-  
- **Eine Ebene erweitern**  
- Wird erweitert, das aktuell ausgewählte Element in eine Systemsicht durch eine Ebene darunter anzeigen.  
-  
- **Erweitern Sie die Verzweigung**  
- Erweitert alle Ebenen unterhalb der aktuell ausgewählte Element an.  
-  
- **Alle Ebenen erweitern**  
- Erweitert und zeigt alle Ebenen in eine Systemsicht.  
-  
- **Reduzieren**  
- Reduziert alle Ebenen unterhalb der aktuell ausgewählte Element an.
+Die **Struktur** Menü enthält Befehle zum Erweitern oder Reduzieren von Ansichten.
+
+ **Eine Ebene aufklappen** erweitert das aktuell ausgewählte Element in einer Systemansicht durch eine Ebene darunter anzeigen.
+
+ **Erweitern Sie den Zweig** erweitert alle Ebenen unterhalb der aktuell ausgewählte Element.
+
+ **Erweitern Sie alle** wird erweitert und zeigt alle Ebenen in einer Systemansicht.
+
+ **Reduzieren** klappt alle Ebenen unterhalb der aktuell ausgewählte Element.

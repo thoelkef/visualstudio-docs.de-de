@@ -2,8 +2,6 @@
 title: Ressourcen für das Entwerfen von Anwendungen mit Barrierefreiheit
 description: Erfahren Sie, wie Sie zugängliche Anwendungen erstellen, die die Arbeit für Personen mit Behinderung erleichtern.
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility, Windows applications
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 426bf023-bb34-43c4-9edb-c307191c8170
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19642d5a327982454c9eaf4e5233451d5dba499e
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 7fe2a4b57fda3ab861b5471e1af70cd4bfcc55e6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62811780"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Ressourcen für das Entwerfen von Anwendungen mit Barrierefreiheit
 
@@ -37,7 +35,7 @@ Mithilfe der folgenden Links finden Sie Informationen zu Technologien für den b
 
 ## <a name="windows-applications"></a>Windows-Anwendungen
 
-* **[Walkthrough: Creating an Accessible Windows-based Application (Exemplarische Vorgehensweise: Erstellen von barrierefreien Windows-basierten Anwendungen)](/dotnet/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application)** Dieser Artikel enthält ausführliche Anweisungen zu den fünf Anforderungen an Barrierefreiheit, die eine Windows-Beispielanwendung erfüllen muss, um das Certified for Windows-Logo zu erhalten.
+* **[Exemplarische Vorgehensweise: Creating an accessible Windows-based application (Exemplarische Vorgehensweise: Erstellen von barrierefreien Windows-basierten Anwendungen)](/dotnet/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application)** Dieser Artikel enthält ausführliche Anweisungen zu den fünf Anforderungen an Barrierefreiheit, die eine Windows-Beispielanwendung erfüllen muss, um das Certified for Windows-Logo zu erhalten.
 
 * **Richtlinien zur Gestaltung einer tastaturgesteuerten Benutzeroberfläche** In diesem technischen Artikel wird das Entwerfen einer Windows-Anwendung beschrieben, die über die Tastatur gesteuert werden kann. Weitere Informationen finden Sie unter [Guidelines for Keyboard User Interface Design (Richtlinien zur Gestaltung einer tastaturgesteuerten Benutzeroberfläche)](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design).
 
@@ -45,13 +43,13 @@ Mithilfe der folgenden Links finden Sie Informationen zu Technologien für den b
 
 ## <a name="websites"></a>Websites
 
--   [Exemplarische Vorgehensweise: Richtlinien für Barrierefreiheit für die Verwendung von Bildsteuerelementen, Menüsteuerelementen und AutoPostBack](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Dieser Artikel enthält eine ausführliche Anleitung zum Einfügen barrierefreier Steuerelemente in eine Beispielwebseite. Außerdem gibt es darin einige Tipps für den barrierefreien Entwurf für das Web.
+- [Exemplarische Vorgehensweise: Accessibility Guidelines for Using Image Controls, Menu Controls, and AutoPostBack (Richtlinien für Barrierefreiheit für die Verwendung von Bildsteuerelementen, Menüsteuerelementen und AutoPostBack)](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Dieser Artikel enthält eine ausführliche Anleitung zum Einfügen barrierefreier Steuerelemente in eine Beispielwebseite. Außerdem gibt es darin einige Tipps für den barrierefreien Entwurf für das Web.
 
--   **Erstellen barrierefreier Webseiten mit DHTML** In diesem technischen Artikel sind die für den barrierefreien Entwurf geeigneten HTML 4.0-Elemente sowie Tipps für den Entwurf für barrierefreies Web aufgeführt. Weitere Informationen finden Sie unter [Creating Accessible Web Pages With DHTML (Erstellen barrierefreier Webseiten mit DHTML)](https://msdn.microsoft.com/library/ms528445.aspx).
+- **Erstellen barrierefreier Webseiten mit DHTML** In diesem technischen Artikel sind die für den barrierefreien Entwurf geeigneten HTML 4.0-Elemente sowie Tipps für den Entwurf für barrierefreies Web aufgeführt. Weitere Informationen finden Sie unter [Creating Accessible Web Pages With DHTML (Erstellen barrierefreier Webseiten mit DHTML)](https://msdn.microsoft.com/library/ms528445.aspx).
 
 ### <a name="third-party-resources"></a>Ressourcen von Drittanbietern
 
--   **Web Accessibility Initiative des World Wide Web Consortium (W3C)** Diese Website enthält Richtlinien und Techniken für die Entwicklung barrierefreier Websites. Weitere Informationen finden Sie unter [https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
+- **Web Accessibility Initiative des World Wide Web Consortium (W3C)** Diese Website enthält Richtlinien und Techniken für die Entwicklung barrierefreier Websites. Weitere Informationen finden Sie unter [https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
 
 ## <a name="see-also"></a>Siehe auch
 

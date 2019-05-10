@@ -1,14 +1,9 @@
 ---
 title: Refactoring (c#) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.csharp.refactoring.preview
 - vs.csharp.refactoring.issues
@@ -22,13 +17,13 @@ ms.assetid: a39e656a-f81f-4c87-b484-a23168ff1dfc
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: b4f74017a067d4681eb14ba4eb826df504497430
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fa8fbfd8837fb35617b79089fffd11ea3b8d2e93
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49262313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444527"
 ---
 # <a name="refactoring-c"></a>Refactoring (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,17 +32,17 @@ Refactoring, ist der Prozess, der den Code zu verbessern, nachdem dieser geschri
   
  Visual c# bietet die folgenden Befehle für die Umgestaltung für die **Refactoring** Menü:  
   
--   [Refactoring „Methode extrahieren“ (C#)](../csharp-ide/extract-method-refactoring-csharp.md)  
+- [Refactoring „Methode extrahieren“ (C#)](../csharp-ide/extract-method-refactoring-csharp.md)  
   
--   [Refactoring durch Umbenennen (C#)](../csharp-ide/rename-refactoring-csharp.md)  
+- [Refactoring durch Umbenennen (C#)](../csharp-ide/rename-refactoring-csharp.md)  
   
--   [Refactoring „Feld kapseln“ (C#)](../csharp-ide/encapsulate-field-refactoring-csharp.md)  
+- [Refactoring „Feld kapseln“ (C#)](../csharp-ide/encapsulate-field-refactoring-csharp.md)  
   
--   [Refactoring „Schnittstelle extrahieren“ (C#)](../csharp-ide/extract-interface-refactoring-csharp.md)  
+- [Refactoring „Schnittstelle extrahieren“ (C#)](../csharp-ide/extract-interface-refactoring-csharp.md)  
   
--   [Umgestaltung „Parameter entfernen“ (C#)](../csharp-ide/remove-parameters-refactoring-csharp.md)  
+- [Umgestaltung „Parameter entfernen“ (C#)](../csharp-ide/remove-parameters-refactoring-csharp.md)  
   
--   [Refactoring „Parameter neu anordnen“ (C#)](../csharp-ide/reorder-parameters-refactoring-csharp.md)  
+- [Refactoring „Parameter neu anordnen“ (C#)](../csharp-ide/reorder-parameters-refactoring-csharp.md)  
   
 ## <a name="multi-project-refactoring"></a>Refactoring mit mehreren Projekten  
  Visual Studio unterstützt mit mehreren Projekten refactoring für Projekte, die sich in derselben Projektmappe befinden. Alle der Umgestaltungsvorgänge, die Verweise auf Dateien zu korrigieren, korrigieren diese Verweise für alle Projekte die gleiche Sprache. Dies funktioniert für alle Verweise von Projekt-zu-Projekt. Für, wenn Sie z. B. eine Konsolenanwendung, die eine Klassenbibliothek verweist, wenn Sie einen Typ "Klassenbibliothek" Umbenennen (mithilfe der `Rename` refactoringvorgang), die Verweise auf den Typ "Klassenbibliothek" in der Konsolenanwendung werden ebenfalls aktualisiert.  
@@ -59,7 +54,7 @@ Refactoring, ist der Prozess, der den Code zu verbessern, nachdem dieser geschri
  Wenn der Compiler verfügt nicht über ein vollständiges Verständnis einer des Programms, und es ist möglich, dass die umgestaltungs-Engine alle entsprechenden Verweise nicht aktualisiert werden kann, wird das Dialogfeld "Warnung" angezeigt. Das Dialogfeld "Warnung" bietet außerdem die Gelegenheit für Sie Ihren Code in Vorschau anzeigen, die **Vorschau der Änderungen** (Dialogfeld), bevor Sie Änderungen zu übernehmen.  
   
 > [!NOTE]
->  Wenn eine Methode einen Syntaxfehler enthält (die die IDE mit einer roten wellenförmigen Unterstreichung angibt), aktualisiert die umgestaltungs-Engine keine Verweise auf ein Element innerhalb der betreffenden Methode. Das folgende Beispiel veranschaulicht dieses Verhalten.  
+> Wenn eine Methode einen Syntaxfehler enthält (die die IDE mit einer roten wellenförmigen Unterstreichung angibt), aktualisiert die umgestaltungs-Engine keine Verweise auf ein Element innerhalb der betreffenden Methode. Das folgende Beispiel veranschaulicht dieses Verhalten.  
   
  In der Standardeinstellung bei Ausführung ein Umgestaltungsvorgangs ohne Vorschau Verweis ändert ein Kompilierungsfehler in Ihrem Programm erkannt, und die Entwicklungsumgebung zeigt das Dialogfeld "Warnung".  
   
@@ -79,7 +74,7 @@ Refactoring, ist der Prozess, der den Code zu verbessern, nachdem dieser geschri
  Die **Ergebnisse der Überprüfung** Dialogfeld unterscheidet, den Unterschied zwischen zwei Arten von neubindung Probleme.  
   
 ### <a name="references-whose-definition-will-no-longer-be-the-renamed-symbol"></a>Verweise, dessen Definition nicht mehr das umbenannte Symbol ist.  
- Diese Art von das Problem tritt auf, wenn Sie ein Verweis auf ein Symbol umbenannt verweist nicht mehr. Beachten Sie z. B. folgenden Code:  
+ Diese Art von das Problem tritt auf, wenn Sie ein Verweis auf ein Symbol umbenannt verweist nicht mehr. Beachten Sie z. B. folgenden Code:  
   
 ```csharp  
 class Example  
@@ -113,4 +108,4 @@ class Example
   
 ## <a name="see-also"></a>Siehe auch  
  [Verwenden die Visual Studio-Entwicklungsumgebung für c#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)   
- [Gewusst wie: Wiederherstellen von C#-Refactoringausschnitten](../ide/how-to-restore-csharp-refactoring-snippets.md)
+ [Vorgehensweise: Restore C# Refactoring Snippets (Vorgehensweise: Wiederherstellen von C#-Umgestaltungsausschnitten)](../ide/how-to-restore-csharp-refactoring-snippets.md)

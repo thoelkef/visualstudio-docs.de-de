@@ -1,14 +1,9 @@
 ---
 title: Entwurfsentscheidungen bei Projekttypen Projekt | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project types, project file persistence
 - project types, commitment mechanics
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: f68671fe-fd7a-4e56-a0b5-330b0f1fedb1
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 62d1a0e78aebd39c1f305c3480d6a418b382b4fd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 323fbbc48953537dbcad4a13d2774fefec65dd52
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781789"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58960654"
 ---
 # <a name="project-type-design-decisions"></a>Entwurfsentscheidungen bei Projekttypen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ Bevor Sie einen neuen Projekttyp erstellen, müssen Sie einige entwurfsentscheid
   
  Die Elemente in einem Projekt können Dateien sein, oder sie können die eher abstrakte Objekte, z. B. Objekte in einer Datenbank-Repository oder die datenverbindungen sein, über das Internet. Wenn die Elemente Dateien befinden, kann das Projekt entweder eine verweisbasierte oder ein Verzeichnisbasiertes Projekt sein.  
   
- Im Verweis-basierten Projekten können die Elemente in mehr als ein Projekt angezeigt werden. Jedoch befindet sich die Datei, die ein Element darstellt, in nur einem Verzeichnis. Im Verzeichnis-basierte Projekte sind Sie alle Projektelemente in die Verzeichnisstruktur vorhanden. Weitere Informationen finden Sie unter [NIB: Elementverwaltung in Projekten](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0).  
+ Im Verweis-basierten Projekten können die Elemente in mehr als ein Projekt angezeigt werden. Jedoch befindet sich die Datei, die ein Element darstellt, in nur einem Verzeichnis. Im Verzeichnis-basierte Projekte sind Sie alle Projektelemente in die Verzeichnisstruktur vorhanden. Weitere Informationen finden Sie unter [NIB: Elementverwaltung in Projekten](http://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0).  
   
  Lokale Elemente werden auf demselben Computer gespeichert, in dem die Anwendung installiert wird. Remote-Elemente können auf einem separaten Server in einem lokalen Netzwerk oder an anderer Stelle im Internet gespeichert werden.  
   
@@ -65,10 +60,9 @@ Bevor Sie einen neuen Projekttyp erstellen, müssen Sie einige entwurfsentscheid
   
 ## <a name="see-also"></a>Siehe auch  
  [Prüfliste: Erstellen neuer Projekttypen](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [NIB: Elementverwaltung in Projekten](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0)   
+ [NIB: Elementverwaltung in Projekten](http://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0)   
  [Sie öffnen und Speichern von Projektelementen](../../extensibility/internals/opening-and-saving-project-items.md)   
  [Projektpersistenz](../../extensibility/internals/project-persistence.md)   
  [Elemente eines Projektmodells](../../extensibility/internals/elements-of-a-project-model.md)   
  [Hauptkomponenten eines Projektmodells](../../extensibility/internals/project-model-core-components.md)   
  [Erstellen von Projekttypen](../../extensibility/internals/creating-project-types.md)
-

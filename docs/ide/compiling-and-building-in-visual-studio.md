@@ -1,7 +1,6 @@
 ---
 title: Kompilieren und Erstellen
 ms.date: 07/14/2017
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c7958821-285f-4e28-9e7a-b5d8b40336a1
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7681ad9cd109dbc8da266721d9d8382d3552eda6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e943e43e93d7906c799b5ac5056f062d2522907f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976470"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Kompilieren und Erstellen in Visual Studio
 

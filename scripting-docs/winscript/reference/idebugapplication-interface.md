@@ -1,8 +1,7 @@
 ---
-title: IDebugApplication-Schnittstelle | Microsoft Docs
+title: IDebugApplication-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,39 +13,39 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 07964292785634212099a0bfcf8174ebb55e8713
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8229f234f8a8ce607f36c48e070cb3d40a211d45
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727440"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990825"
 ---
 # <a name="idebugapplication-interface"></a>IDebugApplication-Schnittstelle
-Macht nicht-Remote-debuggingmethoden für die Verwendung von Sprache-Module und Hosts an.  
+Macht nicht-Remote-debuggingmethoden für die Verwendung von Sprach-Engines und Hosts verfügbar.  
   
- Zusätzlich zu den von geerbten Methoden `IRemoteDebugApplication`, `IDebugApplication` Schnittstelle macht die folgenden Methoden verfügbar.  
+ Zusätzlich zu den von geerbten Methoden `IRemoteDebugApplication`, `IDebugApplication` Schnittstelle verfügbar macht, die folgenden Methoden.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
 |[IDebugApplication::SetName](../../winscript/reference/idebugapplication-setname.md)|Legt den Namen der Anwendung.|  
-|[IDebugApplication::StepOutComplete](../../winscript/reference/idebugapplication-stepoutcomplete.md)|Benachrichtigt, dass ein Sprachmodul im einschrittigen Modus umgehend an den Aufrufer zurückgeben dem Debug-Prozess-Manager.|  
-|[IDebugApplication::DebugOutput](../../winscript/reference/idebugapplication-debugoutput.md)|Bewirkt, dass die angegebene Zeichenfolge, die vom Debugger IDE angezeigt werden.|  
-|[IDebugApplication::StartDebugSession](../../winscript/reference/idebugapplication-startdebugsession.md)|Startet die Standarddebugger IDE und fügt eine Debugsitzung für diese Anwendung, wenn nicht bereits angefügt ist.|  
-|[IDebugApplication::HandleBreakPoint](../../winscript/reference/idebugapplication-handlebreakpoint.md)|Bewirkt, dass den aktuelle Thread blockiert, und sendet eine Benachrichtigung des Haltepunkts an den IDE-Debugger.|  
-|[IDebugApplication::Close](../../winscript/reference/idebugapplication-close.md)|Bewirkt, dass diese Anwendung alle Verweise freigeben, und geben einen inaktiven Status.|  
-|[IDebugApplication::GetBreakFlags](../../winscript/reference/idebugapplication-getbreakflags.md)|Gibt die aktuelle Break-Flags für die Anwendung zurück.|  
-|[IDebugApplication::GetCurrentThread](../../winscript/reference/idebugapplication-getcurrentthread.md)|Gibt den derzeit ausgeführten Thread zugeordneten Thread zurück.|  
-|[IDebugApplication::CreateAsyncDebugOperation](../../winscript/reference/idebugapplication-createasyncdebugoperation.md)|Asynchrone Zugang zu einer bestimmten synchronen Debugvorgang.|  
-|[IDebugApplication::AddStackFrameSniffer](../../winscript/reference/idebugapplication-addstackframesniffer.md)|Diese Anwendung hinzugefügt einen Stapel Frame Enumerator Anbieter.|  
-|[IDebugApplication::RemoveStackFrameSniffer](../../winscript/reference/idebugapplication-removestackframesniffer.md)|Entfernt einen Stapel Frame Enumerator-Anbieter von dieser Anwendung an.|  
+|[IDebugApplication::StepOutComplete](../../winscript/reference/idebugapplication-stepoutcomplete.md)|Benachrichtigt prozessbasierten Debug-Manager, dass es sich bei eine Sprach-Engine im einschrittigen Modus zum an den Aufrufer zurückgegeben wird.|  
+|[IDebugApplication::DebugOutput](../../winscript/reference/idebugapplication-debugoutput.md)|Bewirkt, dass die angegebene Zeichenfolge von der Debugger-IDE angezeigt werden soll.|  
+|[IDebugApplication::StartDebugSession](../../winscript/reference/idebugapplication-startdebugsession.md)|Startet den Standarddebugger-IDE, und fügt eine Debugsitzung dieser Anwendung, wenn noch nicht angefügt ist.|  
+|[IDebugApplication::HandleBreakPoint](../../winscript/reference/idebugapplication-handlebreakpoint.md)|Bewirkt, dass den aktuelle Thread blockiert, und sendet eine Benachrichtigung des Haltepunkts an der Debugger-IDE.|  
+|[IDebugApplication::Close](../../winscript/reference/idebugapplication-close.md)|Bewirkt, dass dieser Anwendung alle Verweise freigeben, und geben einen inaktiven Status.|  
+|[IDebugApplication::GetBreakFlags](../../winscript/reference/idebugapplication-getbreakflags.md)|Gibt den aktuellen Break-Flags für die Anwendung zurück.|  
+|[IDebugApplication::GetCurrentThread](../../winscript/reference/idebugapplication-getcurrentthread.md)|Gibt den Thread, der mit dem aktuell ausgeführten Thread verknüpft ist.|  
+|[IDebugApplication::CreateAsyncDebugOperation](../../winscript/reference/idebugapplication-createasyncdebugoperation.md)|Bietet asynchronen Zugriff auf einen bestimmten synchronen Debugvorgang.|  
+|[IDebugApplication::AddStackFrameSniffer](../../winscript/reference/idebugapplication-addstackframesniffer.md)|Diese Anwendung hinzugefügt einen Stack-Frame-Enumerator-Anbieter.|  
+|[IDebugApplication::RemoveStackFrameSniffer](../../winscript/reference/idebugapplication-removestackframesniffer.md)|Entfernt einen Stack-Frame-Enumerator-Anbieter von dieser Anwendung.|  
 |[IDebugApplication::QueryCurrentThreadIsDebuggerThread](../../winscript/reference/idebugapplication-querycurrentthreadisdebuggerthread.md)|Bestimmt, ob der aktuelle ausgeführte Thread Debugger ist.|  
-|[IDebugApplication::SynchronousCallInDebuggerThread](../../winscript/reference/idebugapplication-synchronouscallindebuggerthread.md)|Bietet einen Mechanismus für den Aufrufer, Code im Debuggerthread auszuführen.|  
-|[IDebugApplication::CreateApplicationNode](../../winscript/reference/idebugapplication-createapplicationnode.md)|Erstellt einen neue Anwendungsknoten, der einem bestimmten Dokument Anbieter zugeordnet ist.|  
-|[IDebugApplication::FireDebuggerEvent](../../winscript/reference/idebugapplication-firedebuggerevent.md)|Löst ein Ereignis aus, die im Debuggers generische `IApplicationDebugger` Schnittstelle.|  
-|[IDebugApplication::HandleRuntimeError](../../winscript/reference/idebugapplication-handleruntimeerror.md)|Bewirkt, dass den aktuelle Thread blockiert, und sendet eine Benachrichtigung über den Fehler an den IDE-Debugger.|  
-|[IDebugApplication::FCanJitDebug](../../winscript/reference/idebugapplication-fcanjitdebug.md)|Bestimmt, ob ein Just-in-Time (JIT)-Debugger registriert ist.|  
-|[IDebugApplication::FIsAutoJitDebugEnabled](../../winscript/reference/idebugapplication-fisautojitdebugenabled.md)|Bestimmt, ob ein Debugger JIT dumb Auto-Debug-Hosts registriert ist.|  
-|[IDebugApplication::AddGlobalExpressionContextProvider](../../winscript/reference/idebugapplication-addglobalexpressioncontextprovider.md)|Fügt einen globalen anwendungsausdrücken Kontextanbieter auf diese Anwendung an.|  
-|[IDebugApplication::RemoveGlobalExpressionContextProvider](../../winscript/reference/idebugapplication-removeglobalexpressioncontextprovider.md)|Entfernt eine globale Ausdruck Kontextanbieter aus dieser Anwendung an.|
+|[IDebugApplication::SynchronousCallInDebuggerThread](../../winscript/reference/idebugapplication-synchronouscallindebuggerthread.md)|Stellt einen Mechanismus für den Aufrufer zum Ausführen von Code im Debuggerthread.|  
+|[IDebugApplication::CreateApplicationNode](../../winscript/reference/idebugapplication-createapplicationnode.md)|Erstellt einen neuen Anwendungsknoten, der mit einem bestimmten Dokument Anbieter zugeordnet ist.|  
+|[IDebugApplication::FireDebuggerEvent](../../winscript/reference/idebugapplication-firedebuggerevent.md)|Wird ausgelöst, ein generisches Ereignisses des Debuggers `IApplicationDebugger` Schnittstelle.|  
+|[IDebugApplication::HandleRuntimeError](../../winscript/reference/idebugapplication-handleruntimeerror.md)|Bewirkt, dass den aktuelle Thread blockiert, und sendet eine Benachrichtigung über den Fehler an den Debugger-IDE.|  
+|[IDebugApplication::FCanJitDebug](../../winscript/reference/idebugapplication-fcanjitdebug.md)|Bestimmt, ob ein just-in-Time (JIT)-Debugger registriert ist.|  
+|[IDebugApplication::FIsAutoJitDebugEnabled](../../winscript/reference/idebugapplication-fisautojitdebugenabled.md)|Ermittelt, ob ein JIT-Debugger (Just-in-Time) für das automatische Debuggen von Dumb-Hosts registriert ist.|  
+|[IDebugApplication::AddGlobalExpressionContextProvider](../../winscript/reference/idebugapplication-addglobalexpressioncontextprovider.md)|Diese Anwendung hinzugefügt einen globalen anwendungsausdrücken Kontextanbieter.|  
+|[IDebugApplication::RemoveGlobalExpressionContextProvider](../../winscript/reference/idebugapplication-removeglobalexpressioncontextprovider.md)|Entfernt einen globalen anwendungsausdrücken Kontextanbieter aus dieser Anwendung an.|

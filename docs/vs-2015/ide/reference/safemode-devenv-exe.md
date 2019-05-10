@@ -1,14 +1,9 @@
 ---
 title: /SafeMode („devenv.exe“) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - /SafeMode Devenv switch
 - Devenv, /SafeMode switch
@@ -17,18 +12,17 @@ ms.assetid: b191f6a5-8f12-47ec-bcc7-b68149a22aa8
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b785a3e43726522f6e6cc6ce99dec4bf3815c81d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 94e8e87f4440644f76906a70ea09a46282b109c2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230075"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670354"
 ---
 # <a name="safemode-devenvexe"></a>/SafeMode (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Startet [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] im abgesicherten Modus und lädt nur die Standardumgebung und -dienste  
   
 ## <a name="syntax"></a>Syntax  
@@ -37,7 +31,7 @@ Startet [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] im abgesicherten Modus u
 devenv /SafeMode   
 ```  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Dieser Schalter verhindert, dass beim Start von [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] VSPackages von Drittanbietern geladen werden und stellt dadurch eine stabile Ausführung sicher.  
   
 ## <a name="description"></a>Beschreibung  
@@ -51,6 +45,3 @@ Devenv.exe /SafeMode
   
 ## <a name="see-also"></a>Siehe auch  
  [Devenv-Befehlszeilenschalter](../../ide/reference/devenv-command-line-switches.md)
-
-
-

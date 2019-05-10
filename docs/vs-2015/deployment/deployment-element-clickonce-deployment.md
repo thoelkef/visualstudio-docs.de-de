@@ -1,14 +1,9 @@
 ---
 title: '&lt;Bereitstellung&gt; -Element (ClickOnce-Bereitstellung) | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#subscription
 - urn:schemas-microsoft-com:asm.v2#beforeApplicationStartup
@@ -26,13 +21,13 @@ ms.assetid: 4fafa9c2-97a0-4cea-b8fd-9746dca33af4
 caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: d6d4472502315a12529c6c7ea59007c5502cfd5d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a55b5519d5abb7b40aeca23fed1bc2f8ea2cc33d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231542"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58946430"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;Bereitstellung&gt; -Element (ClickOnce-Bereitstellung)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,30 +38,30 @@ Identifiziert die Attribute, die für die Bereitstellung von Updates und zum Ver
   
 ```  
   
-      <deployment   
+      <deployment   
    install  
    minimumRequiredVersion  
    mapFileExtensions  
    disallowUrlActivation  
    trustUrlParameters  
->   
-   <subscription>   
-         <update>   
-            <beforeApplicationStartup/>   
+>   
+   <subscription>   
+         <update>   
+            <beforeApplicationStartup/>   
             <expiration  
                maximumAge  
                unit  
             />  
-         </update>    
-   </subscription>   
-   <deploymentProvider   
-      codebase   
-   />   
+         </update>    
+   </subscription>   
+   <deploymentProvider   
+      codebase   
+   />   
 </deployment>  
 ```  
   
 ## <a name="elements-and-attributes"></a>Elemente und Attribute  
- Das `deployment` -Element ist erforderlich und befindet sich im `urn:schemas-microsoft-com:asm.v1` -Namespace. Das-Element weist die folgenden Attribute.  
+ Das `deployment` -Element ist erforderlich und befindet sich im `urn:schemas-microsoft-com:asm.v1` -Namespace. Das Element weist folgende Attribute auf.  
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
@@ -89,7 +84,7 @@ Identifiziert die Attribute, die für die Bereitstellung von Updates und zum Ver
 ## <a name="beforeapplicationstartup"></a>beforeApplicationStartup  
  Dies ist optional. Dieses Element ist ein untergeordnetes Element des der `update` Element und weist keine Attribute. Wenn die `beforeApplicationStartup` Element vorhanden ist, wird die Anwendung blockiert, wenn [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] sucht nach Updates, wenn der Client online ist. Wenn dieses Element nicht vorhanden ist, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] scannt zunächst nach Updates, die basierend auf die Werte für die `expiration` Element. `beforeApplicationStartup` und `expiration` können nicht beide im gleichen Bereitstellungsmanifest angegeben werden.  
   
-## <a name="expiration"></a>Ablaufdatum  
+## <a name="expiration"></a>Ablauf  
  Dies ist optional. Dieses Element ist ein untergeordnetes Element des der `update` -Element, und hat keine untergeordneten Elemente. `beforeApplicationStartup` und `expiration` können nicht beide im gleichen Bereitstellungsmanifest angegeben werden. Wenn die Überprüfung auf Updates tritt ein, und eine aktualisierte Version gefunden wird, werden die neue Version zwischengespeichert, während die vorhandene Version ausgeführt wird. Installiert die neue Version dann beim nächsten Start von der [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung.  
   
  Die `expiration` Element unterstützt die folgenden Attribute.  
@@ -131,6 +126,3 @@ Identifiziert die Attribute, die für die Bereitstellung von Updates und zum Ver
   
 ## <a name="see-also"></a>Siehe auch  
  [ClickOnce-Bereitstellungsmanifest](../deployment/clickonce-deployment-manifest.md)
-
-
-

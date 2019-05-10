@@ -1,24 +1,20 @@
 ---
 title: Umgestaltung
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: f0181ee8-9b46-45f7-b86e-316e3de024b9
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d4b581162455daf36546604cc72c35c0612abde4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 5f98061cbc25bc4b4b7ef54a7027f40c9f780c6c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841702"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62540177"
 ---
 # <a name="refactoring-in-visual-studio"></a>Refactoring in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +31,7 @@ Refactoring stellt den Prozess der Codeänderung mit dem Ziel dar, diesen leicht
 
    Da die Logik des Refactorings eng mit der Sprachsyntax verbunden ist, stellt jeder Sprachdienst in Visual Studio eigene Umgestaltungsfunktionen bereit. Weitere Informationen finden Sie auf den folgenden Seiten:
 
-### <a name="refactoring-in-c"></a>Refactoring in C#
+### <a name="refactoring-in-c"></a>Refactoring in C\#
  [Refactoring (C#)](../csharp-ide/refactoring-csharp.md)
 
 ### <a name="refactoring-in-visual-basic"></a>Refactoring in Visual Basic
@@ -44,7 +40,7 @@ Refactoring stellt den Prozess der Codeänderung mit dem Ziel dar, diesen leicht
 ### <a name="refactoring-in-c"></a>Refactoring in C++
  [Schreiben und Refactoring von Code (C++)](http://msdn.microsoft.com/library/56ffb9e9-514f-41f4-a3cf-fd9ce2daf3b6)
 
-### <a name="refactoring-in-f"></a>Refactoring in F#
+### <a name="refactoring-in-f"></a>Refactoring in F\#
  Refactoring-Support für F# wird in [Visual F# Power Tools](https://visualstudiogallery.msdn.microsoft.com/136b942e-9f2c-4c0b-8bac-86d774189cff) bereitgestellt, eine Visual Studio-Erweiterung von Drittanbietern.
 
 ## <a name="see-also"></a>Siehe auch

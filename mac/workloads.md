@@ -1,32 +1,36 @@
 ---
 title: Visual Studio für Mac-Workloads
-description: In diesem Artikel erfahren Sie mehr über die verschiedenen Workloads, die in Visual Studio für Mac verwendet werden können.
+description: Dieser Artikel beschreibt die verschiedenen Workloads, die in Visual Studio für Mac verwendet werden können, einschließlich mobiler Xamarin-Apps, ASP.NET Core und Unity für Spiele.
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 04/02/2019
 ms.assetid: DDC39599-8C5D-4CB9-8DA5-229E085384CA
-ms.openlocfilehash: 2d3134d4016c6eb86f37832ba9998010bddd3f13
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 609f96f959b59184016093cdf2ba7a69bc6c0292
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295406"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62809369"
 ---
 # <a name="visual-studio-for-mac-workloads"></a>Visual Studio für Mac-Workloads
 
 Visual Studio für Mac enthält für die Entwicklung folgender App-Typen vorinstallierte Workloads:
 
-* Plattformübergreifende mobile Apps mit .NET: Android, iOS, tvOS, watchOS
+* Plattformübergreifende mobile Apps mit .NET unter Verwendung von Xamarin für Android, iOS, tvOS und watchOS
 * Mac-Desktop-Apps
 * .NET Core-Apps
 * ASP.NET Core-Web-Apps
 * Plattformübergreifende Unity-Spiele
 
-## <a name="xamarin"></a>Xamarin
+## <a name="mobile-applications-with-xamarin"></a>Mobile Anwendungen mit Xamarin
 
-Mit Xamarin können Sie plattformübergreifende mobilen Apps mit .NET für Android, iOS, tvOS, watchOS und Mac-Desktop-Apps erstellen.
+Mit [Xamarin](xamarin.md) können Sie plattformübergreifende mobile Apps mit .NET für Android, iOS, tvOS, watchOS und Mac-Desktop-Apps erstellen.
 
 Informationen zur Verwendung von Xamarin in Visual Studio für Mac finden Sie im [Xamarin-Entwicklercenter](https://developer.xamarin.com/), und sehen Sie sich das [praktische Lab](https://github.com/Microsoft/vs4mac-labs/tree/master/Mobile/Getting-Started) zu mobilen Apps an.
+
+## <a name="mac-desktop-applications"></a>Mac-Desktopanwendungen
+
+Sie können Mac-Apps mit [Xamarin.Mac](https://docs.microsoft.com/xamarin/mac/) mithilfe des Cocoa-Benutzeroberflächen-Frameworks erstellen, und mit [Xamarin.Forms auf Mac](https://docs.microsoft.com/xamarin/xamarin-forms/platform/other/mac) Apps erstellen, die Code und Benutzeroberfläche mit anderen Plattformen gemeinsam nutzen.
 
 ## <a name="net-core-applications"></a>.NET Core-Anwendungen
 
@@ -36,6 +40,6 @@ Weitere Informationen finden Sie zur Verwendung von .NET Core finden Sie in der 
 
 Informationen zum Einstieg in ASP.NET Core in Visual Studio für Mac finden Sie im Handbuch zu den [ersten Schritten mit ASP.NET Core](asp-net-core.md), oder sehen Sie sich das [praktische Lab](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started) zu Web-Apps mit ASP.NET Core an.
 
-## <a name="cross-platform-unity-game-development"></a>Plattformübergreifende Spieleentwicklung mit Unity
+## <a name="unity-game-development"></a>Spieleentwicklung mit Unity
 
 Um Spiele mit Unity zu erstellen, sehen Sie sich sie [Setupseite](setup-vsmac-tools-unity.md) und die [Anleitung zur Verwendung der Unity-Tools](using-vsmac-tools-unity.md) an, oder werfen Sie einen Blick auf das [praktische Lab](https://github.com/Microsoft/vs4mac-labs/tree/master/Unity/Getting-Started) zu Unity.

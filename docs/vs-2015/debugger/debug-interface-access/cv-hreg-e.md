@@ -1,14 +1,9 @@
 ---
 title: CV_HREG_e | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 3f0622f7-6790-41d8-8778-227cbbf8a212
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5387a697b025757388864289cbbd3fdcebc7a5ea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ace9f28c0726a762e0ffe2abcf0538c5a629b06c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724317"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443508"
 ---
 # <a name="cvhrege"></a>CV_HREG_e
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51724317"
 Gibt an, ein Ziel-Register.  
   
 > [!NOTE]
->  Da die `CV_HREG_e` Enumeration ist zu groß, um hier in seiner Gesamtheit duplizieren, ist eine verkürzte Version als Referenz angegeben. Fehlende Einträge werden in Kursivschrift angegeben werden. Die vollständige Enumeration ist in der Headerdatei cvconst.h verfügbar.  
+> Da die `CV_HREG_e` Enumeration ist zu groß, um hier in seiner Gesamtheit duplizieren, ist eine verkürzte Version als Referenz angegeben. Fehlende Einträge werden in Kursivschrift angegeben werden. Die vollständige Enumeration ist in der Headerdatei cvconst.h verfügbar.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -417,37 +412,37 @@ enum CV_HREG_e { 
 ```  
   
 ## <a name="elements"></a>Elements  
- CV_REG_ *  
+ CV_REG_*  
  Führt die Registrierung von Intel 80 x 86- und ix86 Prozessoren und p-Code genutzt werden.  
   
- CV_R68_ *  
+ CV_R68_*  
  Führt die Registrierung von 68 KB-Prozessor verwendet.  
   
- CV_M4_ *  
+ CV_M4_*  
  Führt die Registrierung von MIPS 4000 Reihe Prozessor verwendet.  
   
- CV_ALPHA_ *  
+ CV_ALPHA_*  
  Führt die Registrierung von Digital Equipment Corporation Alpha AXP-Reihe-Prozessor verwendet.  
   
- CV_PPC_ *  
+ CV_PPC_*  
  Führt die Registrierung, die von Get/IBM Motorola PowerPC-Prozessor verwendet.  
   
  CV_SH3_ * und CV_SH_\*  
  Führt die Registrierung von Hitachi Prozessoren SH3 und Hitachi SH-Reihe-Prozessor verwendet.  
   
- CV_ARM_ *  
+ CV_ARM_*  
  Führt die Registrierung von Advanced RISC Machine (ARM)-Prozessoren verwendet.  
   
- CV_IA64_ *  
+ CV_IA64_*  
  Führt die Registrierung von Prozessoren der Intel-IA64-Serie verwendet.  
   
- CV_TRI_ *  
+ CV_TRI_*  
  Führt die Registrierung von Infineon Technologien TriCore Prozessor verwendet.  
   
- CV_AM33_ *  
+ CV_AM33_*  
  Registriert von Matsushita/Panasonic AM33 verwendet und beziehen Prozessoren.  
   
- CV_M32R_ *  
+ CV_M32R_*  
  Führt die Registrierung von Mitsubishi M32R Prozessor verwendet.  
   
 ## <a name="remarks"></a>Hinweise  
@@ -455,26 +450,23 @@ enum CV_HREG_e { 
   
  Die Werte in dieser Enumeration werden für die folgenden Methoden übergeben:  
   
--   [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)  
+- [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)  
   
--   [IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)  
+- [IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)  
   
--   [IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)  
+- [IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)  
   
--   [IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)  
+- [IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)  
   
--   [IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)  
+- [IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)  
   
 ## <a name="requirements"></a>Anforderungen:  
  Header: cvconst.h  
   
 ## <a name="see-also"></a>Siehe auch  
  [Enumerationen und Strukturen](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [Idiastackwalkframe:: Get_registervalue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)   
- [Idiastackwalkframe:: Put_registervalue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)   
+ [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)   
+ [IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)   
  [IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)   
  [IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)   
  [IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)
-
-
-

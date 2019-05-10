@@ -1,29 +1,31 @@
 ---
 title: IDebugExpressionEvaluator2::Terminate | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - Terminate
 - IDebugExpressionEvaluator2::Terminate
 ms.assetid: 38265100-4d80-4902-833a-07bb569f9ba8
-author: gregvanl
+caps.latest.revision: 9
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 692165f11b9a43f62fc9d2d84faaba3c83fb5346
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3ef5f17354e45327a87ee77e5b437409719094e9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902564"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62873976"
 ---
 # <a name="idebugexpressionevaluator2terminate"></a>IDebugExpressionEvaluator2::Terminate
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Beendet und die ausdrucksauswertung bereinigt.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT Terminate (  
     void  
 );  
@@ -42,7 +44,7 @@ int Terminate ();
 ## <a name="example"></a>Beispiel  
  Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **ExpressionEvaluatorPackage** -Objekt, das macht die [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) Schnittstelle.  
   
-```cpp  
+```cpp#  
 STDMETHODIMP ExpressionEvaluatorPackage::Terminate(void)  
 {  
     // scan the namespaces contained and delete  

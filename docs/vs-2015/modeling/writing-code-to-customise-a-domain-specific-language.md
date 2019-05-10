@@ -1,25 +1,22 @@
 ---
 title: Schreiben von Code zum Anpassen einer domänenspezifischen Sprache | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming
 ms.assetid: a4a17f5b-9c97-4575-b2d1-3182c1896b72
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: affa3db292ed23ca52b0cca810daf5ca70ad0fd1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 03b92c8ea9b764df517b02dc0dc256b5837a6c10
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866323"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58957378"
 ---
 # <a name="writing-code-to-customise-a-domain-specific-language"></a>Schreiben von Code zum Anpassen einer domänenspezifischen Sprache
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +33,7 @@ In diesem Abschnitt erfahren Sie, wie Sie mit benutzerdefinierten Code zugreifen
   
 - **TextTransformation.** Sie können Textvorlagen schreiben, die Code, die ein Modell und generiert eine Textdatei, z. B. enthalten um Programmcode generieren. Weitere Informationen finden Sie unter [Generieren von Code aus einer domänenspezifischen Sprache](../modeling/generating-code-from-a-domain-specific-language.md).  
   
-- **Andere Visual Studio-Erweiterungen.** Sie können die separate VSIX-Erweiterungen schreiben, die gelesen und Modelle zu ändern. Weitere Informationen finden Sie unter [Vorgehensweise: Öffnen Sie ein Modell aus einer Datei im Programmcode](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
+- **Andere Visual Studio-Erweiterungen.** Sie können die separate VSIX-Erweiterungen schreiben, die gelesen und Modelle zu ändern. Weitere Informationen finden Sie unter [Vorgehensweise: Öffnen eines Modells aus einer Datei im Programmcode](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
   
   Instanzen der Klassen, die Sie in "DslDefinition.DSL" definieren, befinden sich in einer Datenstruktur, die Namen der *In-Memory-Store* (IMS) oder *Store*. Die Klassen, die Sie in einer DSL, immer definieren nehmen einen Store als Argument an dem Konstruktor. Wenn beispielsweise Ihre DSL auf eine Klasse namens Beispiel definiert:  
   
@@ -80,6 +77,3 @@ In diesem Abschnitt erfahren Sie, wie Sie mit benutzerdefinierten Code zugreifen
   
 ## <a name="see-also"></a>Siehe auch  
  [Anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md)
-
-
-

@@ -9,40 +9,47 @@ helpviewer_keywords:
 ms.assetid: 3e84e513-dc64-40bb-b385-03281f28b519
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b83ed1ae187647f4e1025d18b4973cb1e25b399
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8fd4e411fdb9b49a67f5fbddb27d2a0102cdc755
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844940"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62794399"
 ---
 # <a name="performance-report-views"></a>Leistungsberichtansichten
-Dieser Abschnitt enthält Referenzinformationen zu den Berichten und Ansichten der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools. Ansichten von Profilerstellungs-Datendateien werden in der [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]-IDE angezeigt. Berichte werden mithilfe des [VSPerfReport](../profiling/vsperfreport.md)-Befehlszeilentools erstellt.  
-  
-## <a name="in-this-section"></a>In diesem Abschnitt  
- [Allgemeine Datenansichten](../profiling/common-data-views.md)  
- Referenzinformationen über die Ansichten und Berichte von Profilerstellungs-Datendateien, die alle Profilerstellungsmethoden gemeinsam haben.  
-  
- [Datenansichten der Samplingmethode](../profiling/profiler-sampling-method-data-views.md)  
- Referenzinformationen zu den Ansichten und Berichten für Profilerstellungs-Datendateien, die mit der Samplingmethode generiert wurden.  
-  
- [Instrumentation Method Data views (Datenansichten der Instrumentierungsmethode)](../profiling/instrumentation-method-data-views.md)  
- Referenzinformationen zu den Ansichten und Berichten für Profilerstellungs-Datendateien, die mit der Instrumentierungsmethode generiert werden.  
-  
- [.NET-Arbeitsspeicherdatenansichten](../profiling/dotnet-memory-data-views.md)  
- Referenzinformationen zu den Ansichten und Berichten für Profilerstellungs-Datendateien, die .NET-Speicherdaten enthalten.  
-  
- [Ansichten für Ressourcenkonfliktdaten](../profiling/resource-contention-data-views.md)  
- Referenzinformationen zu den Ansichten und Berichten für Profilerstellungs-Datendateien, die mit der Parallelitätsmethode generiert wurden.  
-  
- [Parallelitätsschnellansicht](../profiling/concurrency-visualizer.md)  
- Referenzinformationen zu den Ansichten und Berichten der Profilerstellungs-Datendateien, die mithilfe der Parallelitätsmethode generiert werden und Threadausführungsdaten enthalten.  
-  
- [Ansicht „Ebeneninteraktionen“](../profiling/tier-interactions-view.md)  
- Referenzinformationen zur Interaktionsansicht und dem Bericht der Profilerstellungs-Datendateien, die Ebeneninteraktionsdaten enthalten.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Analysieren der durch Leistungstools erstellten Daten](../profiling/analyzing-performance-tools-data.md)
+Dieser Abschnitt enthält Referenzinformationen zu den Berichten und Ansichten der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools. Ansichten von Profilerstellungs-Datendateien werden in der [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]-IDE angezeigt. Berichte werden mithilfe des [VSPerfReport](../profiling/vsperfreport.md)-Befehlszeilentools erstellt.
+
+## <a name="in-this-section"></a>In diesem Abschnitt
+- [Allgemeine Datenansichten](../profiling/common-data-views.md)
+
+ Referenzinformationen über die Ansichten und Berichte von Profilerstellungs-Datendateien, die alle Profilerstellungsmethoden gemeinsam haben.
+
+- [Datenansichten der Samplingmethode](../profiling/profiler-sampling-method-data-views.md)
+
+ Referenzinformationen zu den Ansichten und Berichten für Profilerstellungs-Datendateien, die mit der Samplingmethode generiert wurden.
+
+- [Instrumentation Method Data views (Datenansichten der Instrumentierungsmethode)](../profiling/instrumentation-method-data-views.md)
+
+ Referenzinformationen zu den Ansichten und Berichten für Profilerstellungs-Datendateien, die mit der Instrumentierungsmethode generiert werden.
+
+- [.NET-Arbeitsspeicherdatenansichten](../profiling/dotnet-memory-data-views.md)
+
+ Referenzinformationen zu den Ansichten und Berichten für Profilerstellungs-Datendateien, die .NET-Speicherdaten enthalten.
+
+- [Ansichten für Ressourcenkonfliktdaten](../profiling/resource-contention-data-views.md)
+
+ Referenzinformationen zu den Ansichten und Berichten für Profilerstellungs-Datendateien, die mit der Parallelitätsmethode generiert wurden.
+
+- [Parallelitätsschnellansicht](../profiling/concurrency-visualizer.md)
+
+ Referenzinformationen zu den Ansichten und Berichten der Profilerstellungs-Datendateien, die mithilfe der Parallelitätsmethode generiert werden und Threadausführungsdaten enthalten.
+
+- [Ansicht „Ebeneninteraktionen“](../profiling/tier-interactions-view.md)
+
+ Referenzinformationen zur Interaktionsansicht und dem Bericht der Profilerstellungs-Datendateien, die Ebeneninteraktionsdaten enthalten.
+
+## <a name="see-also"></a>Siehe auch
+- [Analysieren der durch Leistungstools erstellten Daten](../profiling/analyzing-performance-tools-data.md)

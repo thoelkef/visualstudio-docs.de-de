@@ -1,25 +1,22 @@
 ---
 title: Hinzufügen benutzerdefinierter Eigenschaften zu Ebenendiagrammen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams, adding custom properties
 ms.assetid: 52b3ac25-d10b-4507-a1fe-209ccb4d2777
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 9024ccda38e6b261b29d808e6fafb7837776fc8c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d9db49c3aaaedde8676b4db2c5e798ad61782aed
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789277"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430520"
 ---
 # <a name="add-custom-properties-to-layer-diagrams"></a>Hinzufügen benutzerdefinierter Eigenschaften zu Ebenendiagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,22 +30,25 @@ Wenn Sie Erweiterungscode für Ebenendiagramme schreiben, können Sie Werte mit 
  **Erste Vorbereitung**  
   
 > [!IMPORTANT]
->  Um Eigenschaften anzuzeigen, müssen Sie die folgende Änderung auf jedem Computer vornehmen, in dem Ebeneneigenschaften sichtbar sein sollen.  
+> Um Eigenschaften anzuzeigen, müssen Sie die folgende Änderung auf jedem Computer vornehmen, in dem Ebeneneigenschaften sichtbar sein sollen.  
 > 
-> 1. Führen Sie mithilfe von Editor **als Administrator ausführen**. Öffnen Sie `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`.  
->    2.  Fügen Sie innerhalb des `Content`-Elements Folgendes hinzu:  
+>  1. Führen Sie mithilfe von Editor **als Administrator ausführen**. Öffnen Sie `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`.  
+>  
+>  2. Fügen Sie innerhalb des `Content`-Elements Folgendes hinzu:  
 > 
->    ```xml  
->    <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>  
->    ```  
->    3.  Unter den **Visual Studio-Tools** Abschnitt der Visual Studio-Anwendung im Startmenü öffnen **Developer-Eingabeaufforderung**.  
+>     ```xml  
+>     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>  
+>     ```  
+>
+>  3. Unter den **Visual Studio-Tools** Abschnitt der Visual Studio-Anwendung im Startmenü öffnen **Developer-Eingabeaufforderung**.  
 > 
->    Geben Sie Folgendes ein:  
+>     Geben Sie Folgendes ein:  
 > 
->    `devenv /rootSuffix /updateConfiguration`  
+>     `devenv /rootSuffix /updateConfiguration`  
 > 
->    `devenv /rootSuffix Exp /updateConfiguration`  
->    4.  Starten Sie Visual Studio neu.  
+>     `devenv /rootSuffix Exp /updateConfiguration`  
+>    
+>  4. Starten Sie Visual Studio neu.  
   
  **Stellen Sie sicher, dass Ihr Code in einem VSIX-Projekt ist.**  
   
@@ -69,15 +69,15 @@ public class MyProperty
   
  Sie können Eigenschaften für <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> oder eine der abgeleiteten Klassen definieren, darunter folgende:  
   
--   `ILayerModel` - das Modell  
+- `ILayerModel` - das Modell  
   
--   `ILayer` - jede Ebene  
+- `ILayer` - jede Ebene  
   
--   `ILayerDependencyLink` - die Links zwischen Ebenen  
+- `ILayerDependencyLink` - die Links zwischen Ebenen  
   
--   `ILayerComment`  
+- `ILayerComment`  
   
--   `ILayerCommentLink`  
+- `ILayerCommentLink`  
   
 ## <a name="example"></a>Beispiel  
  Der folgende Code entspricht einem typischen benutzerdefinierten Eigenschaftendeskriptor. Er definiert eine boolesche Eigenschaft für das Ebenenmodell (`ILayerModel`), mit dem der Benutzer Werte für eine benutzerdefinierte Validierungsmethode bereitstellen kann.  
@@ -167,6 +167,3 @@ namespace MyNamespace
   
 ## <a name="see-also"></a>Siehe auch  
  [Erweitern von Ebenendiagrammen](../modeling/extend-layer-diagrams.md)
-
-
-

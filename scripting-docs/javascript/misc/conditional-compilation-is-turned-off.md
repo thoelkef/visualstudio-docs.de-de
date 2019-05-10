@@ -1,14 +1,9 @@
 ---
 title: Für die bedingte Kompilierung ist deaktiviert. | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1030
 dev_langs:
@@ -16,16 +11,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 59a030b0-a6c6-47f2-b90e-c0ed204d5116
-caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bcbf844ced2bb74ddfea9bd62d68877b7a3c969c
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 8317121b840d82ab12d4a9e1ca50f6680eb1e21d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54092884"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946575"
 ---
 # <a name="conditional-compilation-is-turned-off"></a>Die bedingte Kompilierung ist deaktiviert
 Sie haben versucht, die auf eine Variable für die bedingte Kompilierung, ohne zuerst aktivieren, für die bedingte Kompilierung verwenden. Aktivieren der für die bedingte Kompilierung weist die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Compiler interpretiert Bezeichner als bedingte Kompilierungsvariablen mit @ beginnt. Dazu müssen Sie den bedingten Code mit der Anweisung ab:  
@@ -36,7 +30,7 @@ Sie haben versucht, die auf eine Variable für die bedingte Kompilierung, ohne z
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Fügen Sie die folgende Anweisung am Anfang des bedingten Code aus:  
+- Fügen Sie die folgende Anweisung am Anfang des bedingten Code aus:  
   
     ```JavaScript  
     /*@cc_on @*/  

@@ -1,24 +1,26 @@
 ---
 title: IDebugComPlusSymbolProvider::GetAssemblyName | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetAssemblyName
 - GetAssemblyName
 ms.assetid: a08cd609-b9b9-47bd-bf73-cbf851285907
-author: gregvanl
+caps.latest.revision: 11
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 4c1525ac5e18c779b4724094dadf6197f0ec5587
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 491e3cbb2003dc293f41a207ab7ae13a7e76cc68
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923191"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62876749"
 ---
 # <a name="idebugcomplussymbolprovidergetassemblyname"></a>IDebugComPlusSymbolProvider::GetAssemblyName
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Ruft den Namen der Assembly bei Angabe der Modul- und Domäne ab.  
   
 ## <a name="syntax"></a>Syntax  
@@ -57,7 +59,7 @@ int GetAssemblyName(
 ## <a name="example"></a>Beispiel  
  Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) Schnittstelle.  
   
-```cpp  
+```cpp#  
 HRESULT CDebugSymbolProvider::GetAssemblyName(  
     ULONG32 ulAppDomainID,  
     GUID guidModule,  

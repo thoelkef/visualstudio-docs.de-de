@@ -1,40 +1,35 @@
 ---
-title: 'Vorgehensweise: Erstellen eines standardmäßigen Farbshaders | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Erstellen ein standardmäßigen Farbshaders | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: c301328a-079a-49e8-b688-4749c01657c0
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3bcbbb8ede9f30ed1c0340098ffb358cf5715487
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 59259d8186803d966e79f27012e6be6c22b47dd8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813211"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414710"
 ---
-# <a name="how-to-create-a-basic-color-shader"></a>Gewusst wie: Erstellen eines standardmäßigen Farbshaders
+# <a name="how-to-create-a-basic-color-shader"></a>Vorgehensweise: Erstellen eines einfachen Farbshaders
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In diesem Dokument wird gezeigt, wie der Shader-Designer und die Directed Graph Shader Language (DGSL) zum Erstellen eines flachen Farbshaders verwendet wird. Dieser Shader legt die endgültige Farbe auf einen konstanten RGB-Farbwert fest.  
   
  In diesem Dokument werden die folgenden Aktivitäten veranschaulicht:  
   
--   Entfernen von Knoten aus einem Diagramm  
+- Entfernen von Knoten aus einem Diagramm  
   
--   Hinzufügen von Knoten in ein Diagramm  
+- Hinzufügen von Knoten in ein Diagramm  
   
--   Einstellen der Knoteneigenschaften  
+- Einstellen der Knoteneigenschaften  
   
--   Verbinden der Knoten  
+- Verbinden der Knoten  
   
 ## <a name="creating-a-flat-color-shader"></a>Erstellen eines flachen Farbshaders  
  Sie können einen flachen Farbshader implementieren, indem Sie die Farbwerte einer RGB-Farbkonstante in die endgültige Ausgabefarbe schreiben.  
@@ -56,7 +51,7 @@ In diesem Dokument wird gezeigt, wie der Shader-Designer und die Directed Graph 
    In der folgenden Abbildung wird das fertige Shader-Diagramm sowie eine Vorschau eines Würfels gezeigt, auf dem der Shader angewandt wurde.  
   
 > [!NOTE]
->  In der Abbildung wurde eine orangene Farbe angegeben, um den Effekt des Shaders besser zu veranschaulichen.  
+> In der Abbildung wurde eine orangene Farbe angegeben, um den Effekt des Shaders besser zu veranschaulichen.  
   
  ![Shader-Diagramm und seine Ergebnisse in einem 3D-Modell](../designers/media/digit-flat-color-effect.png "Digit-Flat-Color-Effect")  
   
@@ -67,6 +62,3 @@ In diesem Dokument wird gezeigt, wie der Shader-Designer und die Directed Graph 
  [Vorgehensweise: Exportieren eines Shaders](../designers/how-to-export-a-shader.md)   
  [Shader-Designer](../designers/shader-designer.md)   
  [Shader-Designer-Knoten](../designers/shader-designer-nodes.md)
-
-
-

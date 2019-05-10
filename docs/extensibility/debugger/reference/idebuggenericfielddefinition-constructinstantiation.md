@@ -1,29 +1,31 @@
 ---
 title: IDebugGenericFieldDefinition::ConstructInstantiation | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - ConstructInstantiation
 - IDebugGenericFieldDefinition::ConstructInstantiation
 ms.assetid: ef8ae261-a98b-4dc2-93b3-7c5191818ba2
-author: gregvanl
+caps.latest.revision: 9
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 6f72e251f66c196ec36eb68f5a228536658ab89d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8c2fc6b9b7683180c3a9c3f2aa967ba171a48097
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62873625"
 ---
 # <a name="idebuggenericfielddefinitionconstructinstantiation"></a>IDebugGenericFieldDefinition::ConstructInstantiation
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Erstellt eine Feldinstanz, die ein Array von Typargumenten.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT ConstructInstantiation(  
    ULONG32       cArgs,  
    IDebugField** ppArgs,  

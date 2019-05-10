@@ -1,25 +1,22 @@
 ---
 title: Erstellen von Elementen und Beziehungen in UML-Modellen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: cae81d32-8cc7-4f7c-9f00-20119952bc51
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5ed918bc96168196400dd34d87ec65574fdfc5b6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ce1f236347ad811f1c5d115f30907b7e3356e3af
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785871"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099272"
 ---
 # <a name="create-elements-and-relationships-in-uml-models"></a>Erstellen von Elementen und Beziehungen in UML-Modellen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +52,7 @@ IPackage linkedPackage = Context.CurrentDiagram.Element as IPackage;
 |`ILifeline, IMessage, ICombinedFragment`|`IInteraction`|  
   
 ### <a name="invoke-the-create-method-on-the-owner"></a>Aufrufen der Create-Methode für den Besitzer  
- Der Name der Methode hat das Format: `Create` *OwnedType*`()`. Zum Beispiel:  
+ Der Name der Methode ist das Format: `Create`*OwnedType*`()`. Zum Beispiel:  
   
 ```  
 IUseCase usecase1 = linkedPackage.CreateUseCase();  
@@ -90,11 +87,11 @@ using Microsoft.VisualStudio.Uml.Extensions;
   
 #### <a name="to-create-an-association"></a>So erstellen Sie eine Zuordnung  
   
-1.  Rufen Sie den Besitzer der Zuordnung ab. Dabei handelt es sich normalerweise um das Paket oder Modell, in dem das Quellende der Beziehung enthalten ist.  
+1. Rufen Sie den Besitzer der Zuordnung ab. Dabei handelt es sich normalerweise um das Paket oder Modell, in dem das Quellende der Beziehung enthalten ist.  
   
-2.  Rufen Sie die erforderliche Create-Methode für den Besitzer auf.  
+2. Rufen Sie die erforderliche Create-Methode für den Besitzer auf.  
   
-3.  Legen Sie die Eigenschaften der Beziehung fest, z. B. den Namen.  
+3. Legen Sie die Eigenschaften der Beziehung fest, z. B. den Namen.  
   
      Zum Beispiel:  
   
@@ -103,7 +100,7 @@ using Microsoft.VisualStudio.Uml.Extensions;
     association .Name = "Observes";  
     ```  
   
-4.  Legen Sie die Eigenschaften der beiden Enden der Beziehung fest. Es sind immer zwei `MemberEnds` vorhanden. Zum Beispiel:  
+4. Legen Sie die Eigenschaften der beiden Enden der Beziehung fest. Es sind immer zwei `MemberEnds` vorhanden. Zum Beispiel:  
   
     ```  
     association .MemberEnds[0].Name = "subject";   // role name  
@@ -128,13 +125,10 @@ anElement.Delete();
   
  Wenn Sie ein Element aus einem Modell löschen, gilt Folgendes:  
   
--   Jede Beziehung, die mit dem Element verknüpft ist, wird ebenfalls gelöscht.  
+- Jede Beziehung, die mit dem Element verknüpft ist, wird ebenfalls gelöscht.  
   
--   Jede Form, die das Element im Diagramm dargestellt hat, wird ebenfalls gelöscht.  
+- Jede Form, die das Element im Diagramm dargestellt hat, wird ebenfalls gelöscht.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erweitern von UML-Modellen und-Diagrammen](../modeling/extend-uml-models-and-diagrams.md)   
  [Anzeigen eines UML-Modells in Diagrammen](../modeling/display-a-uml-model-on-diagrams.md)
-
-
-

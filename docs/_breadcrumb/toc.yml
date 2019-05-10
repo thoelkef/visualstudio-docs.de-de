@@ -47,7 +47,7 @@
                   topicHref: /visualstudio/extensibility/debugger/reference/reference-visual-studio-debugging-apis
             - name: Richtlinien zur Benutzerfreundlichkeit
               tocHref: /visualstudio/extensibility/ux-guidelines/
-              topicHref: /visualstudio/extensibility/visual-studio-user-experience-guidelines
+              topicHref: /visualstudio/extensibility/ux-guidelines/visual-studio-user-experience-guidelines
         - name: IDE-Klassen-Designer
           tocHref: /visualstudio/ide/class-designer
           topicHref: /visualstudio/ide/class-designer/designing-and-viewing-classes-and-types
@@ -57,9 +57,9 @@
         - name: MSBuild
           tocHref: /visualstudio/msbuild/
           topicHref: /visualstudio/msbuild/msbuild
-        - name: Node.js
+        - name: JavaScript und TypeScript
           tocHref: /visualstudio/javascript/
-          topicHref: /visualstudio/javascript/tutorial-nodejs
+          topicHref: /visualstudio/javascript/index
         - name: Profilerstellung
           tocHref: /visualstudio/profiling/
           topicHref: /visualstudio/profiling/index

@@ -7,14 +7,13 @@ helpviewer_keywords:
 ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 72bac83cf3f71397d0950521c4252045eeaa2822
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 517d4e0558aeca1518316520191ae6c662b41a9e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886753"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950721"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Vorgehensweise: Erstellen eines Adapters für diagnostische Daten
 
@@ -49,37 +48,25 @@ Führen Sie die folgenden Schritte aus, um einen Adapter für diagnostische Date
 
 Ein vollständiges Beispielprojekt für Adapter für diagnostische Daten, einschließlich eines benutzerdefinierten Konfigurations-Editors, finden Sie unter [Beispielprojekt für das Erstellen eines Adapters für diagnostische Daten](../test/quickstart-create-a-load-test-project.md).
 
-##  <a name="create-and-install-a-diagnostic-data-adapter"></a>Erstellen und Installieren eines Adapters für diagnostische Daten
+## <a name="create-and-install-a-diagnostic-data-adapter"></a>Erstellen und Installieren eines Adapters für diagnostische Daten
 
-### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>So erstellen und installieren Sie einen Adapter für diagnostische Daten
-
-1. Erstellen Sie eine neue Klassenbibliothek.
-
-   1.  Wählen Sie im Menü **Datei** die Option **Neu**, und zeigen Sie dann auf **Neues Projekt**.
-
-   2.  Wählen Sie unter **Projekttypen** die zu verwendende Sprache aus.
-
-   3.  Wählen Sie unter **Von Visual Studio installierte Vorlagen** die Option **Klassenbibliothek** aus.
-
-   4.  Geben Sie einen Namen für den Adapter für diagnostische Daten ein.
-
-   5.  Klicken Sie auf **OK**.
+1. Erstellen Sie ein neues **Klassenbibliotheksprojekt**.
 
 2. Fügen Sie die Assembly **Microsoft.VisualStudio.QualityTools.ExecutionCommon** hinzu.
 
-   1.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **Verweise**, und wählen Sie den Befehl **Verweis hinzufügen** aus.
+   1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **Verweise**, und wählen Sie den Befehl **Verweis hinzufügen** aus.
 
-   2.  Wählen Sie **.NET** aus, und suchen Sie **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
+   2. Wählen Sie **.NET** aus, und suchen Sie **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
 
-   3.  Klicken Sie auf **OK**.
+   3. Klicken Sie auf **OK**.
 
 3. Fügen Sie die Assembly **Microsoft.VisualStudio.QualityTools.Common** hinzu.
 
-   1.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **Verweise**, und wählen Sie den Befehl **Verweis hinzufügen** aus.
+   1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **Verweise**, und wählen Sie den Befehl **Verweis hinzufügen** aus.
 
-   2.  Wählen Sie **/.NET** aus, und suchen Sie **Microsoft.VisualStudio.QualityTools.Common.dll**.
+   2. Wählen Sie **/.NET** aus, und suchen Sie **Microsoft.VisualStudio.QualityTools.Common.dll**.
 
-   3.  Klicken Sie auf **OK**.
+   3. Klicken Sie auf **OK**.
 
 4. Fügen Sie der Klassendatei die folgenden `using`-Anweisungen hinzu:
 

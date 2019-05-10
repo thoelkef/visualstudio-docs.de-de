@@ -1,19 +1,18 @@
 ---
 title: 'Vorgehensweise: Testen einer Visual C++-DLL für UWP-Apps'
 ms.date: 02/15/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: mblome
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: eea24b56d05f155b2b9cb0297aa58c34adac02cf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 20749240e95d167d1b0268b2605ffeede8cf797a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868773"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62562625"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Vorgehensweise: Testen einer Visual C++-DLL
 
@@ -23,33 +22,33 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
 
  In diesem Thema werden auch eine einzelne Visual Studio-Projektmappe und separate Projekte für die zu testenden Komponententests und DLLs erstellt. Sie können die Komponententests auch direkt in das DLL-Projekt einfügen, oder Sie können separate Lösungen für die Komponententests und die DLL erstellen. Hinweise dazu, welche Struktur verwendet werden soll, erhalten Sie unter [Ausführen von Komponententests für vorhandene C++-Anwendungen mit dem Test-Explorer](../test/how-to-use-microsoft-test-framework-for-cpp.md).
 
-##  <a name="Create_the_solution_and_the_unit_test_project"></a> Erstellen der Projektmappe und des Komponententestprojekts
+## <a name="Create_the_solution_and_the_unit_test_project"></a> Erstellen der Projektmappe und des Komponententestprojekts
 
-1.  Klicken Sie im Menü **Datei** auf **Neu** > **Neues Projekt**.
+1. Klicken Sie im Menü **Datei** auf **Neu** > **Neues Projekt**.
 
-2.  Erweitern Sie im Dialogfeld „Neues Projekt“ den Eintrag **Installiert** > **Visual C++**, und wählen Sie **Windows Universal** aus. Klicken Sie dann in der Liste der Projektvorlagen auf **Komponententest-App (Universelle Windows-App)**.
+2. Erweitern Sie im Dialogfeld „Neues Projekt“ den Eintrag **Installiert** > **Visual C++**, und wählen Sie **Windows Universal** aus. Klicken Sie dann in der Liste der Projektvorlagen auf **Komponententest-App (Universelle Windows-App)**.
 
-3.  Geben Sie dem Projekt den Namen `RooterLibTests`, legen Sie den Speicherort fest, geben Sie der Projektmappe den Namen `RooterLib`, und stellen Sie sicher, dass die Option **Projektmappenverzeichnis erstellen** aktiviert ist.
+3. Geben Sie dem Projekt den Namen `RooterLibTests`, legen Sie den Speicherort fest, geben Sie der Projektmappe den Namen `RooterLib`, und stellen Sie sicher, dass die Option **Projektmappenverzeichnis erstellen** aktiviert ist.
 
      ![Name und Speicherort für Projektmappe und Projekt angeben](../test/media/ute_cpp_windows_unittestlib_createspecs.png)
 
-4.  Öffnen Sie im neuen Projekt **unittest1.cpp**.
+4. Öffnen Sie im neuen Projekt **unittest1.cpp**.
 
      ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png)
 
      Hinweis:
 
-    -   Jeder Test wird definiert, indem `TEST_METHOD(YourTestName){...}` verwendet wird.
+    - Jeder Test wird definiert, indem `TEST_METHOD(YourTestName){...}` verwendet wird.
 
          Sie müssen keine herkömmliche Funktionssignatur schreiben. Die Signatur wird durch das Makro TEST_METHOD erstellt. Das Makro generiert eine Instanzfunktion ohne Rückgabe. Es generiert außerdem eine statische Funktion, die Informationen zur Testmethode zurückgibt. Diese Informationen ermöglichen dem Test-Explorer, die Methode zu finden.
 
-    -   Testmethoden werden in Klassen zusammengefasst, indem `TEST_CLASS(YourClassName){...}`verwendet wird.
+    - Testmethoden werden in Klassen zusammengefasst, indem `TEST_CLASS(YourClassName){...}`verwendet wird.
 
          Wenn die Tests ausgeführt werden, wird eine Instanz jeder Testklasse erstellt. Die Testmethoden werden in einer nicht vorgegebenen Reihenfolge aufgerufen. Sie können spezielle Methoden definieren, die vor und nach jedem Modul, jeder Klasse oder Methode aufgerufen werden. Weitere Informationen finden Sie unter [Verwenden von Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md).
 
-##  <a name="Verify_that_the_tests_run_in_Test_Explorer"></a> Sicherstellen, dass die Tests im Test-Explorer ausgeführt werden
+## <a name="Verify_that_the_tests_run_in_Test_Explorer"></a> Sicherstellen, dass die Tests im Test-Explorer ausgeführt werden
 
-1.  Fügen Sie den Testcode ein:
+1. Fügen Sie den Testcode ein:
 
     ```cpp
     TEST_METHOD(TestMethod1)
@@ -60,21 +59,21 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
 
      Beachten Sie, dass die `Assert` -Klasse mehrere statische Methoden zur Verfügung stellt, die Sie verwenden können, um Ergebnisse in den Testmethoden zu überprüfen.
 
-2.  Wählen Sie im Menü **Test** die Option **Ausführen** und dann **Alle ausführen** aus.
+2. Wählen Sie im Menü **Test** die Option **Ausführen** und dann **Alle ausführen** aus.
 
      Das Testprojekt wird erstellt und ausgeführt. Das Fenster **Test-Explorer** wird angezeigt, und der Test wird unter **Bestandene Tests** aufgeführt. Unten im Fenster im Bereich **Zusammenfassung** werden weitere Informationen zum ausgewählten Test angezeigt.
 
      ![Test-Explorer](../test/media/ute_cpp_testexplorer_testmethod1.png)
 
-##  <a name="Add_the_DLL_project_to_the_solution"></a> Hinzufügen des DLL-Projekts zur Projektmappe
+## <a name="Add_the_DLL_project_to_the_solution"></a> Hinzufügen des DLL-Projekts zur Projektmappe
 
-1.  Wählen Sie im **Projektmappen-Explorer** den Projektmappennamen aus. Wählen Sie im Kontextmenü **Hinzufügen** und dann **Neues Projekt hinzufügen** aus.
+1. Wählen Sie im **Projektmappen-Explorer** den Projektmappennamen aus. Wählen Sie im Kontextmenü **Hinzufügen** und dann **Neues Projekt hinzufügen** aus.
 
      ![RooterLib-Projekt erstellen](../test/media/ute_cpp_windows_rooterlib_create.png)
 
-2.  Klicken Sie im Dialogfeld **Neues Projekt hinzufügen** auf die Option **DLL (UWP-Apps)**.
+2. Klicken Sie im Dialogfeld **Neues Projekt hinzufügen** auf die Option **DLL (UWP-Apps)**.
 
-3.  Fügen Sie der *RooterLib.h*-Datei den folgenden Code hinzu:
+3. Fügen Sie der *RooterLib.h*-Datei den folgenden Code hinzu:
 
     ```cpp
     // The following ifdef block is the standard way of creating macros which make exporting
@@ -100,17 +99,17 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
 
      Die `CRooterLib`-Klasse deklariert einen Konstruktor und die `SqareRoot`-Abschätzermethode.
 
-4.  Fügen Sie der Befehlszeile das ROOTERLIB_EXPORTS-Symbol hinzu.
+4. Fügen Sie der Befehlszeile das ROOTERLIB_EXPORTS-Symbol hinzu.
 
-    1.  Wählen Sie im **Projektmappen-Explorer** das Projekt **RooterLib** aus, und klicken Sie anschließend im Kontextmenü auf **Eigenschaften**.
+    1. Wählen Sie im **Projektmappen-Explorer** das Projekt **RooterLib** aus, und klicken Sie anschließend im Kontextmenü auf **Eigenschaften**.
 
          ![Präprozessorsymboldefinition hinzufügen](../test/media/ute_cpp_windows_addpreprocessorsymbol.png)
 
-    2.  Erweitern Sie im Dialogfeld **RooterLib Property Page** (RooterLib-Eigenschaftenseite) die Option **Konfigurationseigenschaften** und anschließend **C++**, und wählen Sie **Präprozessor** aus.
+    2. Erweitern Sie im Dialogfeld **RooterLib Property Page** (RooterLib-Eigenschaftenseite) die Option **Konfigurationseigenschaften** und anschließend **C++**, und wählen Sie **Präprozessor** aus.
 
-    3.  Wählen Sie **\<Bearbeiten...>** aus der Liste **Präprozessordefinitionen** aus, und fügen Sie anschließend `ROOTERLIB_EXPORTS` zum Dialogfeld **Präprozessordefinitionen** hinzu.
+    3. Wählen Sie **\<Bearbeiten...>** aus der Liste **Präprozessordefinitionen** aus, und fügen Sie anschließend `ROOTERLIB_EXPORTS` zum Dialogfeld **Präprozessordefinitionen** hinzu.
 
-5.  Fügen Sie minimale Implementierungen der deklarierten Funktionen hinzu. Öffnen Sie *RooterLib.cpp* und fügen Sie den folgenden Code hinzu:
+5. Fügen Sie minimale Implementierungen der deklarierten Funktionen hinzu. Öffnen Sie *RooterLib.cpp* und fügen Sie den folgenden Code hinzu:
 
     ```cpp
     // constructor
@@ -126,23 +125,23 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
 
     ```
 
-##  <a name="make_the_dll_functions_visible_to_the_test_code"></a> Sichtbarmachen der DLL-Funktionen für den Testcode
+## <a name="make_the_dll_functions_visible_to_the_test_code"></a> Sichtbarmachen der DLL-Funktionen für den Testcode
 
 1. Fügen Sie dem Projekt "RooterLibTests" "RooterLib" hinzu.
 
-   1.  Wählen Sie im **Projektmappen-Explorer** das Projekt **RooterLibTests** aus, und klicken Sie anschließend im Kontextmenü auf **Verweise**.
+   1. Wählen Sie im **Projektmappen-Explorer** das Projekt **RooterLibTests** aus, und klicken Sie anschließend im Kontextmenü auf **Verweise**.
 
-   2.  Erweitern Sie im Dialogfeld **RooterLib Project Properties** (RooterLib-Projekteigenschaften) die Option **Allgemeine Eigenschaften**, und wählen Sie **Framework und Verweise** aus.
+   2. Erweitern Sie im Dialogfeld **RooterLib Project Properties** (RooterLib-Projekteigenschaften) die Option **Allgemeine Eigenschaften**, und wählen Sie **Framework und Verweise** aus.
 
-   3.  Klicken Sie auf **Neuen Verweis hinzufügen**.
+   3. Klicken Sie auf **Neuen Verweis hinzufügen**.
 
-   4.  Erweitern Sie im Dialogfeld **Verweis hinzufügen** den Eintrag **Projektmappe**, und wählen Sie **Projekte** aus. Wählen Sie dann das Element **RouterLib** aus.
+   4. Erweitern Sie im Dialogfeld **Verweis hinzufügen** den Eintrag **Projektmappe**, und wählen Sie **Projekte** aus. Wählen Sie dann das Element **RouterLib** aus.
 
 2. Fügen Sie die RooterLib-Headerdatei in *unittest1.cpp* ein.
 
-   1.  Öffnen *unittest1.cpp*.
+   1. Öffnen *unittest1.cpp*.
 
-   2.  Fügen Sie diesen Code unter der Zeile `#include "CppUnitTest.h"` hinzu:
+   2. Fügen Sie diesen Code unter der Zeile `#include "CppUnitTest.h"` hinzu:
 
        ```cpp
        #include "..\RooterLib\RooterLib.h"
@@ -178,9 +177,9 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
 
    Sie haben den Test und die Codeprojekte eingerichtet und überprüft, dass Sie Tests ausführen können, die Funktionen im Codeprojekt ausführen. Jetzt können Sie beginnen, echte Tests und Code zu schreiben.
 
-##  <a name="Iteratively_augment_the_tests_and_make_them_pass"></a> Die Tests iterativ steigern und erfolgreich abschließen
+## <a name="Iteratively_augment_the_tests_and_make_them_pass"></a> Die Tests iterativ steigern und erfolgreich abschließen
 
-1.  Fügen Sie einen neuen Test hinzu:
+1. Fügen Sie einen neuen Test hinzu:
 
     ```cpp
     TEST_METHOD(RangeTest)
@@ -201,16 +200,16 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
     >
     > Wenn Benutzer ihre Anforderungen ändern, deaktivieren Sie die Tests, die nicht mehr richtig sind. Schreiben Sie neue Tests und führen Sie diese jeweils nacheinander auf dieselbe inkrementelle Weise durch.
 
-2.  Wählen Sie im **Test-Explorer** die Option **Alle ausführen** aus.
+2. Wählen Sie im **Test-Explorer** die Option **Alle ausführen** aus.
 
-3.  Der Test schlägt fehl.
+3. Der Test schlägt fehl.
 
      ![Fehler beim RangeTest](../test/media/ute_cpp_testexplorer_rangetest_fail.png)
 
     > [!TIP]
     > Stellen Sie bei jedem Test unmittelbar nachdem Sie ihn geschrieben haben sicher, dass ein Fehler bei seiner Ausführung auftritt. Dadurch können Sie vermeiden, dass Sie einen Test schreiben, bei dessen Ausführung nie ein Fehler auftritt.
 
-4.  Erweitern Sie den Code unter dem Test, damit der neue Test erfolgreich ist. Fügen Sie *RooterLib.cpp* Folgendes hinzu:
+4. Erweitern Sie den Code unter dem Test, damit der neue Test erfolgreich ist. Fügen Sie *RooterLib.cpp* Folgendes hinzu:
 
     ```cpp
     #include <math.h>
@@ -231,15 +230,14 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
 
     ```
 
-5.  Erstellen Sie die Projektmappe, und wählen Sie dann im **Test-Explorer** die Option **Alle ausführen** aus.
+5. Erstellen Sie die Projektmappe, und wählen Sie dann im **Test-Explorer** die Option **Alle ausführen** aus.
 
      Beide Tests sind erfolgreich.
 
 > [!TIP]
 > Entwickeln Sie Code, indem Sie währenddessen Tests hinzufügen. Stellen Sie sicher, dass alle Tests nach jeder Iteration erfolgreich sind.
 
-
-##  <a name="Debug_a_failing_test"></a> Einen nicht bestandenen Test debuggen
+## <a name="Debug_a_failing_test"></a> Einen nicht bestandenen Test debuggen
 
 1. Fügen Sie einen anderen Test zu *unittest1.cpp* hinzu:
 
@@ -280,13 +278,13 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
 
 3. Um zu sehen, warum der Test nicht erfolgreich war, führen Sie schrittweise die Funktion aus:
 
-   1.  Legen Sie einen Haltepunkt am Anfang der `SquareRoot`-Funktion fest.
+   1. Legen Sie einen Haltepunkt am Anfang der `SquareRoot`-Funktion fest.
 
-   2.  Wählen Sie im Kontextmenü des nicht erfolgreichen Tests **Ausgewählte Tests debuggen**.
+   2. Wählen Sie im Kontextmenü des nicht erfolgreichen Tests **Ausgewählte Tests debuggen**.
 
         Wenn die Ausführung am Haltepunkt angehalten wird, führen Sie den Code schrittweise aus.
 
-   3.  Fügen Sie *RooterLib.cpp* einen Code hinzu, um die Ausnahme abzufangen:
+   3. Fügen Sie *RooterLib.cpp* einen Code hinzu, um die Ausnahme abzufangen:
 
        ```cpp
        #include <stdexcept>
@@ -302,15 +300,15 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
 
        ```
 
-   1.  Klicken Sie im **Test-Explorer** auf **Alle ausführen**, um die korrigierte Methode zu testen und sicherzustellen, dass Sie keine Regression eingeführt haben.
+   1. Klicken Sie im **Test-Explorer** auf **Alle ausführen**, um die korrigierte Methode zu testen und sicherzustellen, dass Sie keine Regression eingeführt haben.
 
    Alle Tests sind nun erfolgreich.
 
    ![Alle Tests erfolgreich](../test/media/ute_ult_alltestspass.png)
 
-##  <a name="Refactor_the_code_without_changing_tests"></a> Umgestalten des Codes, ohne Tests zu ändern
+## <a name="Refactor_the_code_without_changing_tests"></a> Umgestalten des Codes, ohne Tests zu ändern
 
-1.  Vereinfachen Sie die zentrale Berechnung in der `SquareRoot`-Funktion:
+1. Vereinfachen Sie die zentrale Berechnung in der `SquareRoot`-Funktion:
 
     ```csharp
     // old code
@@ -319,7 +317,7 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
     result = (result + v/result) / 2.0;
     ```
 
-2.  Wählen Sie **Alle ausführen** aus, um die umgestaltete Methode zu testen und zu überprüfen, dass Sie keine Regression eingeführt haben.
+2. Wählen Sie **Alle ausführen** aus, um die umgestaltete Methode zu testen und zu überprüfen, dass Sie keine Regression eingeführt haben.
 
     > [!TIP]
     > Mit einem stabilen Satz guter Komponententests haben Sie mehr Gewissheit, dass Sie beim Ändern des Codes keine Fehler eingeführt haben.

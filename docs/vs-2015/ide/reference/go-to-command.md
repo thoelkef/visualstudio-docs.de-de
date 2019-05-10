@@ -1,14 +1,9 @@
 ---
 title: Befehl „Gehe zu“ | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - edit.goto
 helpviewer_keywords:
@@ -18,18 +13,17 @@ ms.assetid: 201e1dd2-6701-467d-8cc1-faec2ef20511
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d23f7b9961f8386fb023fa747a647c14c9cd5db1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 010d2c395d77be590b3d8d3bc26fc83aaa63adfa
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303471"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660605"
 ---
 # <a name="go-to-command"></a>Befehl "Gehe zu"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Bewegt den Cursor in die angegebene Zeile.  
   
 ## <a name="syntax"></a>Syntax  
@@ -42,7 +36,7 @@ Edit.GoTo [linenumber]
  `linenumber`  
  Dies ist optional. Eine ganze Zahl, die die Zeilennummer, zu der Sie springen wollen, angibt.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Die Zeilennummerierung beginnt bei eins. Wenn der Wert von `linenumber` kleiner als eins ist, wird die erste Zeile angezeigt. Wenn der Wert von `linenumber` größer als die Nummer der letzten Zeile ist, wird die letzte Zeile angezeigt.  
   
  Wenn für `linenumber` kein Wert angegeben wird, wird das **Gehe zu Zeile**-Dialogfeld angezeigt.  
@@ -60,6 +54,3 @@ Edit.GoTo [linenumber]
  [Befehlsfenster](../../ide/reference/command-window.md)   
  [Such-/Befehlsfeld](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

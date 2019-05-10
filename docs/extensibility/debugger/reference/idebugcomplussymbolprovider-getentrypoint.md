@@ -1,29 +1,31 @@
 ---
 title: IDebugComPlusSymbolProvider::GetEntryPoint | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetEntryPoint
 - GetEntryPoint
 ms.assetid: 9640e121-1da1-41f9-8e66-76efca36baf2
-author: gregvanl
+caps.latest.revision: 10
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 0325065838f63614f67560d97e3061fea50a2d29
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f57cfec75e186fabb7611b14815375571b6349ce
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905045"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62922738"
 ---
 # <a name="idebugcomplussymbolprovidergetentrypoint"></a>IDebugComPlusSymbolProvider::GetEntryPoint
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Ruft den Einstiegspunkt der Anwendung ab.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT GetEntryPoint(  
    ULONG32         ulAppDomainID,  
    GUID            guidModule,  
@@ -55,7 +57,7 @@ int GetEntryPoint(
 ## <a name="example"></a>Beispiel  
  Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) Schnittstelle.  
   
-```cpp  
+```cpp#  
 HRESULT CDebugSymbolProvider::GetEntryPoint(  
     ULONG32 ulAppDomainID,  
     GUID guidModule,  

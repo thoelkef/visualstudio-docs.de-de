@@ -1,14 +1,9 @@
 ---
 title: IDiaSession | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 69dab9bf-2c68-4f70-9678-3b50fba3e6fa
 caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c2baa4b026fd9856625ce25be283c2c969f79a99
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 002e7198210e123fc2461f712bb8db442b9f25c8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799625"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58959111"
 ---
 # <a name="idiasession"></a>IDiaSession
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ IDiaSession : IUnknown
 |Methode|Beschreibung|  
 |------------|-----------------|  
 |[IDiaSession::get_loadAddress](../../debugger/debug-interface-access/idiasession-get-loadaddress.md)|Ruft ab die Ladeadresse für die ausführbare Datei, die die Symbole in diesem Symbolspeicher entspricht. Dies ist der gleiche Wert, der übergeben wurde die `put_loadAddress` Methode.|  
-|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|Legt die Ladeadresse für die ausführbare Datei, die entspricht auf die Symbole in diesem Symbolspeicher fest. **Hinweis:** es ist wichtig, diese Methode aufrufen, wenn Sie erhalten eine `IDiaSession` Objekt aus, und bevor Sie beginnen mit dem Objekt.|  
+|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|Legt die Ladeadresse für die ausführbare Datei, die entspricht auf die Symbole in diesem Symbolspeicher fest. **Hinweis**:  Es ist wichtig, diese Methode aufrufen, wenn Sie erhalten eine `IDiaSession` Objekt aus, und bevor Sie beginnen mit dem Objekt.|  
 |[IDiaSession::get_globalScope](../../debugger/debug-interface-access/idiasession-get-globalscope.md)|Ruft einen Verweis auf den globalen Bereich ab.|  
 |[IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)|Ruft einen Enumerator für alle Tabellen im Symbolspeicher ab.|  
 |[IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)|Ruft einen Enumerator für alle benannten Symbole an statische Speicherorten ab.|  
@@ -122,17 +117,14 @@ void InitializeDIA(const char *szFilename)
   
  Bibliothek: diaguids.lib  
   
- DLL: "MSDIA80.dll"  
+ DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Siehe auch  
  [Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Übersicht](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)   
- [EXE-Datei](../../debugger/debug-interface-access/exe.md)   
+ [Exe](../../debugger/debug-interface-access/exe.md)   
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
  [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)   
- [Idiadatasource:: OpenSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)   
- [Idiasymbol:: Findchildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)   
+ [IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)   
+ [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)   
  [Abfragen der PDB-Datei](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)
-
-
-

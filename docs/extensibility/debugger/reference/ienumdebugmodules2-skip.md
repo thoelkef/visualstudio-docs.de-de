@@ -1,30 +1,32 @@
 ---
 title: IEnumDebugModules2::Skip | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IEnumDebugModules2::Skip
 helpviewer_keywords:
 - IEnumDebugModules2::Skip
 ms.assetid: 61dc42f4-8544-45bb-8da0-fb22cccec7da
-author: gregvanl
+caps.latest.revision: 10
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: c0c3b73ad7caf66ea43f14d83b4fe5647b49baf3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 0789743324361f9bb274ca0307905131b26bb4a9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917042"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62866942"
 ---
 # <a name="ienumdebugmodules2skip"></a>IEnumDebugModules2::Skip
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Überspringt die angegebene Anzahl von Elementen.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT Skip(  
    ULONG celt  
 );  
@@ -41,7 +43,7 @@ int Skip(
  [in] Die Anzahl der zu überspringenden Elemente.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` Wenn `celt` größer als die Anzahl der verbleibenden Elemente ist; andernfalls ein Fehlercode zurückgegeben.  
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn `celt` größer als die Anzahl der verbleibenden Elemente ist; andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
  Wenn `celt` gibt einen Wert größer als die Anzahl der verbleibenden Elemente am Ende die Enumeration festgelegt ist und `S_FALSE` zurückgegeben wird.  

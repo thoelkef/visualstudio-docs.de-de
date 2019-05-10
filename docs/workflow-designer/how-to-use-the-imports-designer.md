@@ -2,21 +2,20 @@
 title: 'Workflow-Designer – Vorgehensweise: Verwenden des Imports-Designers'
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Presentation.View.ImportDesigner.UI
 ms.assetid: 61328ab6-9b66-4e12-8630-22e30ee8c9d1
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f0ae017eaf9843b4411ecf762b91d29ff9d95c0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 11c0c959964fee21f2cdfe098907ab2dfe184f7e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823966"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949061"
 ---
 # <a name="how-to-use-the-imports-designer"></a>Vorgehensweise: Verwenden des Imports-Designers
 
@@ -34,14 +33,14 @@ Der Importe-Designer reagiert sowohl auf Änderungen, die in der Benutzeroberfl�
 
 ## <a name="to-add-a-namespace-to-the-list-of-imported-namespaces"></a>So fügen Sie der Liste der importierten Namespaces einen Namespace hinzu
 
-1.  Öffnen Sie einen WCF-workflowdienstanwendung, Konsolenanwendung für Workflows oder Workflow-aktivitätsbibliothekprojekt in Visual Studio oder einer neu gehosteten workflowanwendung.
+1. Öffnen Sie einen WCF-workflowdienstanwendung, Konsolenanwendung für Workflows oder Workflow-aktivitätsbibliothekprojekt in Visual Studio oder einer neu gehosteten workflowanwendung.
 
-2.  Klicken Sie auf **Importe** am unteren Rand der hauptarbeitsfläche. Der Import-Designer wird angezeigt.
+2. Klicken Sie auf **Importe** am unteren Rand der hauptarbeitsfläche. Der Import-Designer wird angezeigt.
 
-3.  Geben Sie einen Namespace ein, oder wählen Sie einen Namespace im Dropdownlisten-Steuerelement am oberen Rand des Import-Designers aus.
+3. Geben Sie einen Namespace ein, oder wählen Sie einen Namespace im Dropdownlisten-Steuerelement am oberen Rand des Import-Designers aus.
 
      Während der Eingabe wird eine Liste gültiger Namespaces angezeigt, die mit den eingegebenen Zeichen übereinstimmen.
 
-4.  Drücken Sie **EINGABETASTE** den Namespace der Liste hinzufügen.
+4. Drücken Sie **EINGABETASTE** den Namespace der Liste hinzufügen.
 
-5.  Wenn Sie einen Namespace aus der Liste entfernen möchten, wählen Sie den Namespace, und drücken Sie dann die **löschen** auf der Tastatur die Taste. Beachten Sie, dass ein Namespace nur gelöscht werden kann, wenn er nicht gültig ist, z. B., wenn das Projekt nicht mehr auf die Assembly verweist, die den Namespace enthält.
+5. Wenn Sie einen Namespace aus der Liste entfernen möchten, wählen Sie den Namespace, und drücken Sie dann die **löschen** auf der Tastatur die Taste. Beachten Sie, dass ein Namespace nur gelöscht werden kann, wenn er nicht gültig ist, z. B., wenn das Projekt nicht mehr auf die Assembly verweist, die den Namespace enthält.

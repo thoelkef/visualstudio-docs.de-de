@@ -1,14 +1,9 @@
 ---
 title: Optionen, Text-Editor, Allgemein | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.TOOLSOPTIONSPAGES.TEXT_EDITOR.SQL_SERVER_TOOLS.GENERAL
 - VS.ToolsOptionsPages.Text_Editor.All_Languages.General
@@ -52,22 +47,21 @@ ms.assetid: 4ac21e48-3243-4141-9058-7eaf12b3cde7
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 47fb93aebeecf50ae20616fc47033be60724cd45
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b33fb6408bc9d37d7f0c94af9253a1ce9879235a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441322"
 ---
 # <a name="options-text-editor-general"></a>Optionen, Text-Editor, Allgemein
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Mit diesem Dialogfeld können Sie Einstellungen für den [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]-Code- und -Text-Editor global ändern. Klicken Sie zum Anzeigen dieses Dialogfelds im Menü **Extras** auf **Optionen**, erweitern Sie den Ordner **Text-Editor**, und klicken Sie dann auf **Allgemein**.  
   
 > [!NOTE]
->  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="settings"></a>Einstellungen  
  Textbearbeitung mit Drag & Drop  
@@ -109,6 +103,3 @@ Mit diesem Dialogfeld können Sie Einstellungen für den [!INCLUDE[vsprvs](../..
  [Identifizieren und Anpassen von Tastenkombinationen](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)   
  [Anpassen des Editors](../../ide/customizing-the-editor.md)   
  [Verwenden von IntelliSense](../../ide/using-intellisense.md)
-
-
-

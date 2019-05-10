@@ -1,42 +1,37 @@
 ---
 title: 'Vorgehensweise: Erstellen einer Basistextur | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 0222e8bf-d29f-421b-9b1f-123d500fa179
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 2312b82fbcb6f4cd4ed00b288cb87283538cb372
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bd1a9a2a269c173ef9dcb47b39921073802fe1ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855832"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438413"
 ---
-# <a name="how-to-create-a-basic-texture"></a>Gewusst wie: Erstellen einer Basistextur
+# <a name="how-to-create-a-basic-texture"></a>Vorgehensweise: Erstellen einer Basistextur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In diesem Dokument wird gezeigt, wie die Bildbearbeitung zum Erstellen einer Basistextur verwendet wird.  
   
  In diesem Dokument werden die folgenden Aktivitäten veranschaulicht:  
   
--   Festlegen der Texturgröße  
+- Festlegen der Texturgröße  
   
--   Festlegen der Vorder -und Hintergrundfarben  
+- Festlegen der Vorder -und Hintergrundfarben  
   
--   Verwenden des Alphakanals (Transparenz)  
+- Verwenden des Alphakanals (Transparenz)  
   
--   Verwenden der Tools **Füllung** und **Ellipse**  
+- Verwenden der Tools **Füllung** und **Ellipse**  
   
--   Festlegen der Tooleigenschaften  
+- Festlegen der Tooleigenschaften  
   
 ## <a name="creating-a-basic-texture"></a>So erstellen Sie eine Basistextur  
  Sie können die Bildbearbeitung zum Erstellen und Ändern von Bildern und Texturen Ihre Spiele und Anwendungen verwenden.  
@@ -60,7 +55,7 @@ In diesem Dokument wird gezeigt, wie die Bildbearbeitung zum Erstellen einer Bas
 5. Klicken Sie auf der Symbolleiste der Bildbearbeitung auf das Tool **Füllung**. Halten Sie anschließend die Umschalttaste gedrückt, und wählen Sie einen beliebigen Punkt im Bild aus. Indem die Umschalttaste verwendet wird, ersetzt der Alphawert der Füllfarbe die Farbe im Bild; ansonsten wird der Alphawert verwendet, um die Füllfarbe mit der Farbe im Bild zu vermischen.  
   
    > [!IMPORTANT]
-   >  Dieser Schritt stellt zusammen mit der Farbauswahl im vorherigen Schritt sicher, dass das Basisbild für die Zielscheibentextur vorbereitet ist, die Sie zeichnen werden. Wenn das Bild mit transparentem Schwarz gefüllt ist, und, da der Rahmen des Ziels schwarz ist, wird es keine Aliasing-Artefakte um das Ziel herum geben.  
+   > Dieser Schritt stellt zusammen mit der Farbauswahl im vorherigen Schritt sicher, dass das Basisbild für die Zielscheibentextur vorbereitet ist, die Sie zeichnen werden. Wenn das Bild mit transparentem Schwarz gefüllt ist, und, da der Rahmen des Ziels schwarz ist, wird es keine Aliasing-Artefakte um das Ziel herum geben.  
   
 6. Klicken Sie auf der Symbolleiste der Bildbearbeitung auf das Tool **Ellipse**.  
   
@@ -75,7 +70,7 @@ In diesem Dokument wird gezeigt, wie die Bildbearbeitung zum Erstellen einer Bas
 11. Zeichnen Sie mithilfe des Tools **Ellipse** einen Kreis von Pixelkoordinate `(3, 3)` bis Pixelkoordinate `(508, 508)`. Sie können während dem Zeichnen die Umschalttaste drücken und gedrückt halten, um den Kreis einfacher zu zeichnen.  
   
     > [!NOTE]
-    >  Die Pixelkoordinaten der aktuellen Zeigerposition werden auf der Statusleiste [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] angezeigt.  
+    > Die Pixelkoordinaten der aktuellen Zeigerposition werden auf der Statusleiste [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] angezeigt.  
   
 12. Ändern Sie die Hintergrundfarbe. Legen Sie **R** auf `44`, **G** auf `165`, **B** auf `211` und **A** auf `255` fest.  
   
@@ -93,10 +88,7 @@ In diesem Dokument wird gezeigt, wie die Bildbearbeitung zum Erstellen einer Bas
   
     ![Die vollständige Textur der Zielscheibe](../designers/media/gfx-image-demo-bullseye.png "gfx_image_demo_bullseye")  
   
-    Als nächsten Schritt können Sie die MIP-Ebenen dieser Textur generieren. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen und Ändern von MIP-Ebenen](../designers/how-to-create-and-modify-mip-levels.md)  
+    Als nächsten Schritt können Sie die MIP-Ebenen dieser Textur generieren. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen und Ändern von MIP-Ebenen](../designers/how-to-create-and-modify-mip-levels.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Image Editor](../designers/image-editor.md)
-
-
-

@@ -2,7 +2,6 @@
 title: 'IActiveScript:: Clone | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 084da486d2e5831176130ccd080b9e09a80c9bcc
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: bec912596c792a67f65434062bc0d0ed11bd3fb9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54093664"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935704"
 ---
 # <a name="iactivescriptclone"></a>IActiveScript::Clone
 Klont die aktuelle Skript-Engine (minus alle aktuellen Ausführungsstatus), eine geladene Skript-Engine, die keine Standort in den aktuellen Thread zurückgibt. Die Eigenschaften dieses neue Skriptmodul werden mit den Eigenschaften identisch sein, die, denen die ursprüngliche Skript-Engine in wäre, wenn sie zurück zum initialisierten Zustand umgestellt wurden.  

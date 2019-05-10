@@ -3,21 +3,20 @@ title: 'Tutorial „Lernen von Flask“, Visual Studio-Schritt 4: Vorlagen für 
 titleSuffix: ''
 description: In dieser exemplarischen Vorgehensweise erhalten Sie grundlegende Informationen zu Flask im Zusammenhang mit Visual Studio-Projekten, insbesondere zu Features, die durch die Vorlagen „Flask-Webprojekt“ und „Flask/Jade-Webprojekt“ bereitgestellt werden.
 ms.date: 01/07/2019
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 74118aee63a67310656926d84300ba180ff74188
-ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
+ms.openlocfilehash: 9f4c165f3e882cea71ee4aaff9f2358c27ce6a2b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957251"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>Schritt 4: Verwenden der vollständigen Vorlage „Flask-Webprojekt“
 
@@ -163,13 +162,14 @@ Die einzelnen Seitenvorlagen *about.html*, *contact.html* und *index.html* erwei
 
 Wie am Anfang dieses Artikels bereits erwähnt wurde, ist die Vorlage „Flask/Jade-Webprojekt“ in Visual Studio enthalten, mit der eine Anwendung erstellt wird, die optisch dem entspricht, was mit der Vorlage „Flask-Webprojekt“ generiert wird. Der Hauptunterschied besteht darin, dass diese die Jade-Vorlagen-Engine verwendet, die eine Erweiterung von Jinja darstellt und die gleichen Konzepte in einer kompakteren Sprache implementiert. Insbesondere verwendet Jade Schlüsselwörter anstelle von Tags, die beispielsweise in Trennzeichen ({% %}) eingeschlossen sind, und mit denen Sie mithilfe von Schlüsselwörtern auf CSS-Stile und HTML-Elemente verweisen können.
 
-Die Projektvorlage schließt zur Aktivierung von Jade zunächst das pyjade-Paket in *requirements.txt* ein. 
+Die Projektvorlage schließt zur Aktivierung von Jade zunächst das pyjade-Paket in *requirements.txt* ein.
 
 Die Datei *\_\_init\_\_.py* der App enthält folgende Zeile:
 
 ```python
 app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
 ```
+
 Im Ordner *templates* finden Sie *.jade*-Dateien anstelle von *.html-Vorlagen*, und die Ansichten in *views.py* verweisen auf diese Dateien, wenn sie `flask.render_template` aufrufen. Davon abgesehen ist der Code der Ansichten identisch.
 
 Wenn Sie eine der *.jade*-Dateien öffnen, sehen Sie den kompakteren Ausdruck einer Vorlage. Hier sehen Sie beispielsweise die Inhalte von *templates/layout.jade*, wie sie von der Vorlage „Flask/Jade-Webprojekt“ erstellt wurden:

@@ -7,32 +7,33 @@ dev_langs:
 ms.assetid: 166a1a3a-2e10-4baa-ace1-9104b56185ce
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ed21168c053e90d83f5377367e565d54b71467f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: b480cfee85af750addddbbc195881adab002e07c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910979"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62841541"
 ---
 # <a name="idiasymbolgettextureslot"></a>IDiaSymbol::get_textureSlot
-Ruft ab, der Textur-Slot.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_textureSlot(   
-   DWORD* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pRetVal`  
- [out] Ein Zeiger auf eine `DWORD` , enthält den Textur-Slot.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Ruft ab, der Textur-Slot.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_textureSlot(
+   DWORD* pRetVal);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pRetVal`
+
+[out] Ein Zeiger auf eine `DWORD` , enthält den Textur-Slot.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

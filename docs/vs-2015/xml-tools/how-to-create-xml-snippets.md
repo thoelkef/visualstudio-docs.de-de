@@ -1,52 +1,46 @@
 ---
 title: 'Vorgehensweise: Erstellen von XML-Ausschnitten | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 38bec6de97a0b9d38891046a1a6b57f4d31541bf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2c7eecfb6d56d4db378882f6cd45f96454a086dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818158"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421735"
 ---
 # <a name="how-to-create-xml-snippets"></a>Vorgehensweise: Erstellen von XML-Ausschnitten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Mithilfe des XML-Editors können neue XML-Ausschnitte erstellt werden. Der Editor enthält einen XML-Ausschnitt mit dem Namen "Snippet". Dies ist ein vorformulierter Ausschnitt zum Erstellen neuer XML-Ausschnitte.  
   
 ## <a name="to-create-a-new-xml-snippet"></a>So erstellen Sie einen neuen XML-Ausschnitt  
  Erstellen Sie einen neuen XML-Code Codeausschnitt erstellen Sie eine neue XML-Datei, und Verwenden der **Ausschnitt einfügen** Feature.  
   
-1.  Auf der **Datei** Menü klicken Sie auf **neu** , und klicken Sie dann auf **Datei**.  
+1. Auf der **Datei** Menü klicken Sie auf **neu** , und klicken Sie dann auf **Datei**.  
   
-2.  Klicken Sie auf **XML-Datei** , und klicken Sie dann auf **öffnen**.  
+2. Klicken Sie auf **XML-Datei** , und klicken Sie dann auf **öffnen**.  
   
-3.  Mit der rechten Maustaste im Editor-Bereich, und wählen Sie **Ausschnitt einfügen**.  
+3. Mit der rechten Maustaste im Editor-Bereich, und wählen Sie **Ausschnitt einfügen**.  
   
-4.  Wählen Sie **Codeausschnitt** aus der Liste und drücken Sie die EINGABETASTE.  
+4. Wählen Sie **Codeausschnitt** aus der Liste und drücken Sie die EINGABETASTE.  
   
-5.  Nehmen Sie die gewünschten Änderungen an dem neuen Ausschnitt vor.  
+5. Nehmen Sie die gewünschten Änderungen an dem neuen Ausschnitt vor.  
   
-6.  Von der **Datei** Menü die Option **XMLFile.xml speichern**.  
+6. Von der **Datei** Menü die Option **XMLFile.xml speichern**.  
   
      Die **Datei speichern unter** Dialogfeld wird angezeigt.  
   
-7.  Geben Sie den Namen für den neuen Ausschnitt aus, und wählen Sie **Codeausschnittsdateien** aus der **Dateityp** Dropdownfenster.  
+7. Geben Sie den Namen für den neuen Ausschnitt aus, und wählen Sie **Codeausschnittsdateien** aus der **Dateityp** Dropdownfenster.  
   
-8.  Verwenden der **speichern in** Dropdown-Liste aus, um den Dateispeicherort zu ändern, zu dem Ordner "Eigene Dateien\Visual Studio 2005\Codeausschnitte \XML\My XML Snippets", und drücken dann **speichern**.  
+8. Verwenden der **speichern in** Dropdown-Liste aus, um den Dateispeicherort zu ändern, zu dem Ordner "Eigene Dateien\Visual Studio 2005\Codeausschnitte \XML\My XML Snippets", und drücken dann **speichern**.  
   
 ## <a name="snippet-description"></a>Ausschnittbeschreibung  
  In diesem Abschnitt werden einige Schlüsselelemente im vorformulierten Ausschnitt beschrieben. Weitere Informationen zu Schema-Elemente, die von der XML-Ausschnitten verwendet, finden Sie unter [Schemareferenz für Codeausschnitte](../ide/code-snippets-schema-reference.md).  
@@ -67,7 +61,7 @@ Mithilfe des XML-Editors können neue XML-Ausschnitte erstellt werden. Der Edito
  Das `Code`-Element definiert den XML-Text, der beim Aufrufen des Ausschnitts eingefügt wird.  
   
 > [!NOTE]
->  Der XML-Ausschnitttext muss in einem `<![CDATA[...]]>`-Abschnitt eingeschlossen werden.  
+> Der XML-Ausschnitttext muss in einem `<![CDATA[...]]>`-Abschnitt eingeschlossen werden.  
   
  Es folgt das `Code`-Element, das von einem vorformulierten Ausschnitt erstellt wurde.  
   
@@ -121,7 +115,4 @@ Mithilfe des XML-Editors können neue XML-Ausschnitte erstellt werden. Der Edito
 ## <a name="see-also"></a>Siehe auch  
  [XML-Ausschnitte](../xml-tools/xml-snippets.md)   
  [Vorgehensweise: Verwenden von XML-Ausschnitten](../xml-tools/how-to-use-xml-snippets.md)   
- [Gewusst wie: Generieren eines XML-Ausschnitts aus einem XML-Schema](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
-
-
-
+ [Vorgehensweise: Generieren eines XML-Codeausschnitts aus einem XML-Schema](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

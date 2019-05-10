@@ -1,25 +1,20 @@
 ---
 title: Events (VSPerfCmd) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: eb139327-4783-4f2a-874c-efad377a7be4
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6c36fbcf8a4aedbf122974aa4161e58f436f3806
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: dae5bb86cd7f9da6151920a8020d71452bf8863f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782444"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443995"
 ---
 # <a name="events-vsperfcmd"></a>Events (VSPerfCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,20 +79,17 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
 ## <a name="remarks"></a>Hinweise  
   
 > [!NOTE]
->  Wenn CLR-ETW-Ereignisse aktiviert sind, werden im Bericht in der Ablaufverfolgungsansicht auch zusätzliche Startdaten gesammelt. Mit dem folgenden Befehl vermeiden Sie, dass Startereignisse im Bericht angezeigt werden:  
+> Wenn CLR-ETW-Ereignisse aktiviert sind, werden im Bericht in der Ablaufverfolgungsansicht auch zusätzliche Startdaten gesammelt. Mit dem folgenden Befehl vermeiden Sie, dass Startereignisse im Bericht angezeigt werden:  
   
 ```  
 C:\<path>VSPerfCmd -events on, \".NET Common Language Runtime\", 0x7fffffff, 5  
 ```  
   
 > [!IMPORTANT]
->  Wenn Sie Startereignisse nicht ausschließen, werden sie als GUIDs im Bericht angezeigt, weil sie nicht in der MOF-Datei (Managed Object Format) aufgeführt werden. Weitere Informationen finden Sie auf dieser Microsoft-Website: [Sample Managed Object Format (MOF) File (Managed Object Format-Beispieldatei (MOF))](http://go.microsoft.com/fwlink/?linkid=37118).  
+> Wenn Sie Startereignisse nicht ausschließen, werden sie als GUIDs im Bericht angezeigt, weil sie nicht in der MOF-Datei (Managed Object Format) aufgeführt werden. Weitere Informationen finden Sie auf der folgenden Microsoft-Website: [Sample Managed Object Format (MOF) Datei](http://go.microsoft.com/fwlink/?linkid=37118).  
   
 ## <a name="see-also"></a>Siehe auch  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profilerstellung für eigenständige Anwendungen](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Erstellen von Dienstprofilen](../profiling/command-line-profiling-of-services.md)
-
-
-

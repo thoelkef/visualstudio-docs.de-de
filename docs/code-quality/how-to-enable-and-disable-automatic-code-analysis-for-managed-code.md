@@ -1,19 +1,18 @@
 ---
 title: Aktivieren oder Deaktivieren der Codeanalyse
 ms.date: 10/25/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1620999385eec0862b4ba2aceadba10bb21d239d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4878c25021d87e91f6a575d11a876d7aac2455d5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905597"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816242"
 ---
 # <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>Vorgehensweise: Aktivieren Sie und deaktivieren Sie der automatischen Codeanalyse für verwalteten code
 

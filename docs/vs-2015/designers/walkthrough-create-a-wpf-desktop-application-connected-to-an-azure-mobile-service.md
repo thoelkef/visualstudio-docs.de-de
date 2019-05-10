@@ -1,91 +1,86 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erstellen einer WPF-Desktopanwendung, die mit einem Azure Mobile Service verbunden ist | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Exemplarische Vorgehensweise: Erstellen einer WPF-Desktopanwendung mit einem Azure Mobile Service verbunden | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 8d42620f-553b-4b04-a38b-f6b306d73a50
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9ab2c5bbea358c226407ba83e2a367195ecfef06
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 126aa1ad57aa5f8961803b8443365c208f5623ff
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270608"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421249"
 ---
-# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Exemplarische Vorgehensweise: Erstellen einer WPF-Desktopanwendung, die mit einem Azure Mobile Service verbunden ist
+# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Exemplarische Vorgehensweise: Erstellen einer WPF-Desktopanwendung mit einem Azure Mobile Service verbunden sind
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Desktopanwendung erstellen, die zum Speichern und Bereitstellen von Daten eines Azure Mobile Service verwendet.  
   
-##  <a name="Requirements"></a> Erforderliche Komponenten  
+## <a name="Requirements"></a> Erforderliche Komponenten  
  Für diese exemplarische Vorgehensweise wird Folgendes benötigt:  
   
--   Visual Studio 2015 – beliebige Version, die die WPF-Entwicklung unterstützt.  
+- Visual Studio 2015 – beliebige Version, die die WPF-Entwicklung unterstützt.  
   
--   Ein aktives Microsoft Azure-Konto.  
+- Ein aktives Microsoft Azure-Konto.  
   
-    -   Für ein kostenloses Testkonto können Sie sich [hier](http://azure.microsoft.com/pricing/free-trial/)anmelden.  
+    - Für ein kostenloses Testkonto können Sie sich [hier](http://azure.microsoft.com/pricing/free-trial/)anmelden.  
   
-    -   Sie können [Vorteile für MSDN-Abonnenten](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F)aktivieren. Über Ihr MSDN-Abonnement erhalten Sie monatlich eine Gutschrift, die Sie für kostenpflichtige Azure-Dienste verwenden können.  
+    - Sie können [Vorteile für MSDN-Abonnenten](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F)aktivieren. Über Ihr MSDN-Abonnement erhalten Sie monatlich eine Gutschrift, die Sie für kostenpflichtige Azure-Dienste verwenden können.  
   
 ## <a name="create-a-project-and-add-references"></a>Erstellen eines neuen Projekts und Hinzufügen von Verweisen  
  Zunächst erstellen Sie ein WPF-Projekt und fügen diesem ein NuGet-Paket hinzu, über das Sie eine Verbindung mit Azure Mobile Services herstellen können.  
   
 #### <a name="to-create-the-project"></a>So erstellen Sie das Projekt  
   
-1.  Wählen Sie in der Menüleiste **Datei** > **Neu** > **Projekt** aus.  
+1. Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt**aus.  
   
-2.  Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Visual C#** oder **Visual Basic** , und wählen Sie den Knoten **Windows** aus. Erweitern Sie dann den Knoten **Windows** , und wählen Sie den Knoten **Klassischer Desktop** aus.  
+2. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Visual C#** oder **Visual Basic** , und wählen Sie den Knoten **Windows** aus. Erweitern Sie dann den Knoten **Windows** , und wählen Sie den Knoten **Klassischer Desktop** aus.  
   
-3.  Wählen Sie in der Vorlagenliste die Vorlage **WPF-Anwendung** aus.  
+3. Wählen Sie in der Vorlagenliste die Vorlage **WPF-Anwendung** aus.  
   
-4.  Erweitern Sie im Dialogfeld **Name**  `WPFQuickStart`ein, und wählen Sie dann die Schaltfläche **OK** aus.  
+4. Erweitern Sie im Dialogfeld **Name**  `WPFQuickStart`ein, und wählen Sie dann die Schaltfläche **OK** aus.  
   
      Das Projekt wird erstellt, und die Projektdateien werden dem **Projektmappen-Explorer**hinzugefügt. Zudem wird der Designer für das Standardanwendungsfenster namens **MainWindow.xaml** angezeigt.  
   
 #### <a name="to-add-a-reference-to-the-windows-azure-mobile-services-sdk"></a>So fügen Sie dem Windows Azure Mobile Services SDK einen Verweis hinzu  
   
-1.  Öffnen Sie im **Projektmappen-Explorer**das Kontextmenü für den Knoten **Verweise** , und wählen Sie **NuGet-Pakete verwalten**aus.  
+1. Öffnen Sie im **Projektmappen-Explorer**das Kontextmenü für den Knoten **Verweise** , und wählen Sie **NuGet-Pakete verwalten**aus.  
   
-2.  Erweitern Sie im Dialogfeld **NuGet-Paket-Manager**das Feld **Suche** aus, und geben Sie `mobileservices`anmelden.  
+2. Erweitern Sie im Dialogfeld **NuGet-Paket-Manager**das Feld **Suche** aus, und geben Sie `mobileservices`anmelden.  
   
-3.  Wählen Sie im linken Bereich **WindowsAzure.MobileServices**aus, und wählen Sie dann im rechten Bereich die Schaltfläche **Installieren** aus.  
+3. Wählen Sie im linken Bereich **WindowsAzure.MobileServices**aus, und wählen Sie dann im rechten Bereich die Schaltfläche **Installieren** aus.  
   
     > [!NOTE]
-    >  Wenn ein Dialogfeld mit einer **Vorschau** angezeigt wird, prüfen Sie die vorgeschlagenen Änderungen, und wählen Sie dann die Schaltfläche **OK** aus.  
+    > Wenn ein Dialogfeld mit einer **Vorschau** angezeigt wird, prüfen Sie die vorgeschlagenen Änderungen, und wählen Sie dann die Schaltfläche **OK** aus.  
   
-4.  Lesen Sie im Dialogfeld zum **Akzeptieren der Lizenzbedingungen** die Lizenzbedingungen, und akzeptieren Sie diese durch Klicken auf die Schaltfläche **Ich stimme den Lizenzbedingungen zu** .  
+4. Lesen Sie im Dialogfeld zum **Akzeptieren der Lizenzbedingungen** die Lizenzbedingungen, und akzeptieren Sie diese durch Klicken auf die Schaltfläche **Ich stimme den Lizenzbedingungen zu** .  
   
      Die erforderlichen Verweise werden dem **Projektmappen-Explorer**hinzugefügt.  
   
     > [!NOTE]
-    >  Wenn Sie die Lizenzbedingungen nicht akzeptieren, wählen Sie die Schaltfläche **Ich stimme den Lizenzbedingungen nicht zu** aus. In diesem Fall können Sie die exemplarische Vorgehensweise nicht fortsetzen.  
+    > Wenn Sie die Lizenzbedingungen nicht akzeptieren, wählen Sie die Schaltfläche **Ich stimme den Lizenzbedingungen nicht zu** aus. In diesem Fall können Sie die exemplarische Vorgehensweise nicht fortsetzen.  
   
 ## <a name="create-the-user-interface"></a>Erstellen der Benutzeroberfläche  
  Im nächsten Schritt erstellen Sie die Benutzeroberfläche für die Anwendung. Zunächst erstellen Sie ein wiederverwendbares Benutzersteuerelement, das ein nebeneinander angeordnetes, in zwei Bereiche unterteiltes Standardbereichslayout anzeigt. Sie fügen das Benutzersteuerelement dem Hauptanwendungsfenster hinzu, und Sie fügen Steuerelemente zum Eingeben und Anzeigen von Daten hinzu. Dann schreiben Sie Code, um die Interaktion mit dem Mobile Service-Backend zu definieren.  
   
 #### <a name="to-add-a-user-control"></a>So fügen Sie ein Benutzersteuerelement hinzu  
   
-1.  Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü des Knotens **WPFQuickStart** , und wählen Sie **Hinzufügen**, **Neuer Ordner**aus.  
+1. Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü des Knotens **WPFQuickStart** , und wählen Sie **Hinzufügen**, **Neuer Ordner**aus.  
   
-2.  Geben Sie dem Ordner den Namen `Common`anmelden.  
+2. Geben Sie dem Ordner den Namen `Common`anmelden.  
   
-3.  Öffnen Sie das Kontextmenü des Ordners **Common** , und wählen Sie **Hinzufügen**, **Benutzersteuerelement**aus.  
+3. Öffnen Sie das Kontextmenü des Ordners **Common** , und wählen Sie **Hinzufügen**, **Benutzersteuerelement**aus.  
   
-4.  Erweitern Sie im Dialogfeld **Neues Element hinzufügen** das Feld "Name" aus, und geben Sie `QuickStartTask`ein, und wählen Sie dann die Schaltfläche **Hinzufügen** aus.  
+4. Erweitern Sie im Dialogfeld **Neues Element hinzufügen** das Feld "Name" aus, und geben Sie `QuickStartTask`ein, und wählen Sie dann die Schaltfläche **Hinzufügen** aus.  
   
      Das Benutzersteuerelement wird dem Projekt hinzugefügt, und die Datei **QuickStartTask.xaml** wird im Designer geöffnet.  
   
-5.  Wählen Sie im unteren Bereich des Designers die Tags `<Grid>` und `</Grid>` aus, und ersetzen Sie sie durch folgenden XAML-Code:  
+5. Wählen Sie im unteren Bereich des Designers die Tags `<Grid>` und `</Grid>` aus, und ersetzen Sie sie durch folgenden XAML-Code:  
   
     ```xaml  
     <Grid VerticalAlignment="Top">  
@@ -105,9 +100,9 @@ Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Deskt
   
      ![Das Benutzersteuerelement „QuickStartTask“](../designers/media/wpfquickstart1.PNG "WPFQuickStart1")  
   
-6.  Erweitern Sie in **Projektmappen-Explorer**den Knoten **QuickStartTask.xaml** , und öffnen Sie die Datei **QuickStartTask.xaml.cs** oder **QuickStartTask.xaml.vb** .  
+6. Erweitern Sie in **Projektmappen-Explorer**den Knoten **QuickStartTask.xaml** , und öffnen Sie die Datei **QuickStartTask.xaml.cs** oder **QuickStartTask.xaml.vb** .  
   
-7.  Ersetzen Sie im Code-Editor den `namespace WPFQuickStart.Common` -Namespace (C#) oder die `Public Class QuickStartTask` Methode (VB) durch folgenden Code:  
+7. Ersetzen Sie im Code-Editor den `namespace WPFQuickStart.Common` -Namespace (C#) oder die `Public Class QuickStartTask` Methode (VB) durch folgenden Code:  
   
     ```csharp  
     namespace WPFQuickStart.Common  
@@ -205,27 +200,27 @@ Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Deskt
   
      Dieser Code verwendet Abhängigkeitseigenschaften, um zur Laufzeit de Werte für die Felder für Zahlen, Titel und Beschreibungen festzulegen.  
   
-8.  Wählen Sie auf der Menüleiste **Erstellen**, **WPFQuickStart erstellen** aus, um das Benutzerelement zu erstellen.  
+8. Wählen Sie auf der Menüleiste **Erstellen**, **WPFQuickStart erstellen** aus, um das Benutzerelement zu erstellen.  
   
 #### <a name="to-create-and-modify-the-main-window"></a>So erstellen und ändern Sie das Hauptfenster  
   
-1.  Öffnen Sie im **Projektmappen-Explorer**die Datei **MainWindow.xaml** .  
+1. Öffnen Sie im **Projektmappen-Explorer**die Datei **MainWindow.xaml** .  
   
-2.  **Wichtig**. Dieser Schritt gilt nur für C#. Wenn Sie Visual Basic verwenden, fahren Sie mit dem nächsten Schritt fort. Navigieren Sie im unteren Bereich des Designers zur Zeile `xmlns:local=”clr-namespace:WPFQuickStart”` , und ersetzen Sie sie durch folgenden XAML-Code:  
+2. **Wichtig**. Dieser Schritt gilt nur für C#. Wenn Sie Visual Basic verwenden, fahren Sie mit dem nächsten Schritt fort. Navigieren Sie im unteren Bereich des Designers zur Zeile `xmlns:local=”clr-namespace:WPFQuickStart”` , und ersetzen Sie sie durch folgenden XAML-Code:  
   
     ```xaml  
     xmlns:local=”clr-namespace:WPFQuickStart.Common”  
     ```  
   
-3.  Erweitern Sie im Dialogfeld **Eigenschaften** den Kategorieknoten **Custom** , und wählen Sie die Eigenschaft **Title** aus. Geben Sie dann `WPF Todo List` ein, und drücken Sie die **EINGABETASTE** .  
+3. Erweitern Sie im Dialogfeld **Eigenschaften** den Kategorieknoten **Custom** , und wählen Sie die Eigenschaft **Title** aus. Geben Sie dann `WPF Todo List` ein, und drücken Sie die **EINGABETASTE** .  
   
      Beachten Sie, dass das **Title** -Element im XAML-Fenster nun dem neuen Wert entspricht. Sie können die XAML-Eigenschaften im XAML-Fenster oder im Fenster **Eigenschaften** bearbeiten. Die Änderungen werden synchronisiert.  
   
-4.  Legen Sie im XAML-Fenster den Wert des Elements **Height** auf `768`fest, und legen Sie den Wert der Eigenschaft **Width** auf `1280`anmelden.  
+4. Legen Sie im XAML-Fenster den Wert des Elements **Height** auf `768`fest, und legen Sie den Wert der Eigenschaft **Width** auf `1280`anmelden.  
   
      Diese Elemente entsprechen den Eigenschaften **Height** und **Width** in der Kategorie **Layout** im Fenster **Eigenschaften** .  
   
-5.  Wählen Sie die Tags `<Grid>` und `</Grid>` aus, und ersetzen Sie sie durch folgenden XAML-Code:  
+5. Wählen Sie die Tags `<Grid>` und `</Grid>` aus, und ersetzen Sie sie durch folgenden XAML-Code:  
   
     ```xaml  
     <Grid>  
@@ -293,11 +288,11 @@ Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Deskt
      ![Das MainWindow-Element im Designer](../designers/media/wpfquickstart2.PNG "WPFQuickStart2")  
   
     > [!NOTE]
-    >  Bei Ausführen der nächsten Vorgehensweisen werden möglicherweise Fehler in der **Fehlerliste** angezeigt, wenn diese geöffnet ist. Diese verschwinden wieder, während Sie die verbleibenden Vorgehensweisen ausführen.  
+    > Bei Ausführen der nächsten Vorgehensweisen werden möglicherweise Fehler in der **Fehlerliste** angezeigt, wenn diese geöffnet ist. Diese verschwinden wieder, während Sie die verbleibenden Vorgehensweisen ausführen.  
   
-6.  Erweitern Sie in **Projektmappen-Explorer**den Knoten **MainWindow.xaml** , und öffnen Sie die Datei **MainWindow.xaml.cs** oder **MainWindow.xaml.vb** .  
+6. Erweitern Sie in **Projektmappen-Explorer**den Knoten **MainWindow.xaml** , und öffnen Sie die Datei **MainWindow.xaml.cs** oder **MainWindow.xaml.vb** .  
   
-7.  Fügen Sie im Code-Editor am Anfang der Datei folgende `using` - oder `Imports` Direktive hinzu:  
+7. Fügen Sie im Code-Editor am Anfang der Datei folgende `using` - oder `Imports` Direktive hinzu:  
   
     ```csharp  
     using Microsoft.WindowsAzure.MobileServices;  
@@ -309,7 +304,7 @@ Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Deskt
     Imports Newtonsoft.Json  
     ```  
   
-8.  Ersetzen Sie den gesamten Code im **WPFQuickStart** -Namespace (C#) oder in der **Class MainWindow** -Klasse (VB) durch folgenden Code:  
+8. Ersetzen Sie den gesamten Code im **WPFQuickStart** -Namespace (C#) oder in der **Class MainWindow** -Klasse (VB) durch folgenden Code:  
   
     ```csharp  
     namespace WPFQuickStart  
@@ -480,31 +475,31 @@ Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Deskt
   
 #### <a name="to-create-a-mobile-service"></a>So erstellen Sie einen mobilen Service  
   
-1.  Öffnen Sie einen Webbrowser, und melden Sie sich bei Ihrem Microsoft Azure-Portal an. Wählen Sie dann die Registerkarte **MOBILE SERVICES** aus.  
+1. Öffnen Sie einen Webbrowser, und melden Sie sich bei Ihrem Microsoft Azure-Portal an. Wählen Sie dann die Registerkarte **MOBILE SERVICES** aus.  
   
-2.  Wählen Sie die Schaltfläche **NEU** aus, und wählen Sie im Popupdialogfenster nacheinander **COMPUTE** (BERECHNEN), **MOBILE SERVICE, CREATE** (MOBILER SERVICE, ERSTELLEN) aus.  
+2. Wählen Sie die Schaltfläche **NEU** aus, und wählen Sie im Popupdialogfenster nacheinander **COMPUTE** (BERECHNEN), **MOBILE SERVICE, CREATE** (MOBILER SERVICE, ERSTELLEN) aus.  
   
-3.  Wählen Sie im Dialogfeld **NEUER MOBILER SERVICE** das Textfeld **URL** aus, und geben Sie `wpfquickstart01` ein.  
-  
-    > [!NOTE]
-    >  Möglicherweise müssen Sie den numerischen Teil der URL zu ändern. Microsoft Azure erfordert eine eindeutige URL für jeden mobilen Service.  
-  
-     Hiermit wird die URL für den Dienst *https://wpfquickstart01.azure-mobile.net/*.  
-  
-4.  Wählen Sie in der Liste **DATENBANK** eine Datenbankoption aus. Da es sich dabei um eine Anwendung handelt, die nur selten verwendet wird, können Sie die Option **Eine kostenlose 20-MB-SQL-Datenbank erstellen** bzw. die bereits in Ihrem Abonnement enthaltene kostenlose Datenbank auswählen.  
-  
-5.  Wählen Sie in der Liste **REGION** das Rechenzentrum aus, in dem Sie den mobilen Service bereitstellen möchten, und wählen Sie dann **Weiter** (Pfeil nach rechts) aus.  
+3. Wählen Sie im Dialogfeld **NEUER MOBILER SERVICE** das Textfeld **URL** aus, und geben Sie `wpfquickstart01` ein.  
   
     > [!NOTE]
-    >  Für diesen Service verwenden Sie die standardmäßige **BACKEND** -Einstellung, **JavaScript**.  
+    > Möglicherweise müssen Sie den numerischen Teil der URL zu ändern. Microsoft Azure erfordert eine eindeutige URL für jeden mobilen Service.  
   
-6.  Wenn Sie eine neue Datenbank erstellen, wählen Sie auf der Seite **Datenbankeinstellungen angeben** in der Liste **SERVER** die Option **Neuer SQL-Datenbankserver**aus, geben Sie Ihren **SQL-ANMELDENAMEN** und Ihr **KENNWORT**ein, und wählen Sie dann die Schaltfläche **Abgeschlossen** (Häkchen) aus.  
+     Hiermit wird die URL für den Dienst `https://wpfquickstart01.azure-mobile.net/`.  
   
-7.  Wenn Sie eine vorhandene Datenbank verwenden, geben Sie auf der Seiten **Datenbankeinstellungen** Ihr **ANMELDEKENNWORT** ein, und wählen Sie dann die Schaltfläche **Abgeschlossen** (Häkchen) aus.  
+4. Wählen Sie in der Liste **DATENBANK** eine Datenbankoption aus. Da es sich dabei um eine Anwendung handelt, die nur selten verwendet wird, können Sie die Option **Eine kostenlose 20-MB-SQL-Datenbank erstellen** bzw. die bereits in Ihrem Abonnement enthaltene kostenlose Datenbank auswählen.  
+  
+5. Wählen Sie in der Liste **REGION** das Rechenzentrum aus, in dem Sie den mobilen Service bereitstellen möchten, und wählen Sie dann **Weiter** (Pfeil nach rechts) aus.  
+  
+    > [!NOTE]
+    > Für diesen Service verwenden Sie die standardmäßige **BACKEND** -Einstellung, **JavaScript**.  
+  
+6. Wenn Sie eine neue Datenbank erstellen, wählen Sie auf der Seite **Datenbankeinstellungen angeben** in der Liste **SERVER** die Option **Neuer SQL-Datenbankserver**aus, geben Sie Ihren **SQL-ANMELDENAMEN** und Ihr **KENNWORT**ein, und wählen Sie dann die Schaltfläche **Abgeschlossen** (Häkchen) aus.  
+  
+7. Wenn Sie eine vorhandene Datenbank verwenden, geben Sie auf der Seiten **Datenbankeinstellungen** Ihr **ANMELDEKENNWORT** ein, und wählen Sie dann die Schaltfläche **Abgeschlossen** (Häkchen) aus.  
   
      Der mobile Service wird nun erstellt. Sobald der Vorgang beendet ist, ändert sich der Status in **Bereit** , und Sie können mit dem nächsten Schritt fortfahren.  
   
-8.  Wählen Sie im Portal den neu erstellten mobilen Service und dann die Schaltfläche **SCHLÜSSEL VERWALTEN** aus.  
+8. Wählen Sie im Portal den neu erstellten mobilen Service und dann die Schaltfläche **SCHLÜSSEL VERWALTEN** aus.  
   
 9. Kopieren Sie in das Fenster **Zugriffsschlüssel verwalten** den **ANWENDUNGSSCHLÜSSEL**.  
   
@@ -512,17 +507,17 @@ Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Deskt
   
 #### <a name="to-create-a-table"></a>So erstellen Sie eine Tabelle  
   
-1.  Wählen Sie im Microsoft Azure-Portal den Pfeil nach rechts neben dem Namen Ihres mobilen Service aus, und wählen Sie auf der Menüleiste **DATEN**und dann den Link **EINE TABELLE HINZUFÜGEN** aus.  
+1. Wählen Sie im Microsoft Azure-Portal den Pfeil nach rechts neben dem Namen Ihres mobilen Service aus, und wählen Sie auf der Menüleiste **DATEN**und dann den Link **EINE TABELLE HINZUFÜGEN** aus.  
   
-2.  Erweitern Sie im Dialogfeld **Neue Tabelle erstellen** im Textfeld **TABELLENNAME**  `TodoItem`ein, und wählen Sie dann die Schaltfläche **Abgeschlossen** (Häkchen) aus.  
+2. Erweitern Sie im Dialogfeld **Neue Tabelle erstellen** im Textfeld **TABELLENNAME**  `TodoItem`ein, und wählen Sie dann die Schaltfläche **Abgeschlossen** (Häkchen) aus.  
   
      Warten Sie, bis die Tabelle erstellt ist, und fahren Sie dann mit der letzten Vorgehensweise fort.  
   
 #### <a name="to-add-a-declaration-for-the-mobile-service"></a>So fügen Sie eine Deklaration für den mobilen Service hinzu  
   
-1.  Kehren Sie zurück zu Visual Studio. Erweitern Sie in **Projektmappen-Explorer**den Knoten **App.xaml** (C#) oder **Application.xaml** (Visual Basic), und öffnen Sie die Datei **App.xaml.cs** oder **App.xaml.vb** .  
+1. Kehren Sie zurück zu Visual Studio. Erweitern Sie in **Projektmappen-Explorer**den Knoten **App.xaml** (C#) oder **Application.xaml** (Visual Basic), und öffnen Sie die Datei **App.xaml.cs** oder **App.xaml.vb** .  
   
-2.  Fügen Sie im Code-Editor am Anfang der Datei folgende `using` - oder **Imports** -Direktive hinzu:  
+2. Fügen Sie im Code-Editor am Anfang der Datei folgende `using` - oder **Imports** -Direktive hinzu:  
   
     ```csharp  
     using Microsoft.WindowsAzure.MobileServices;  
@@ -532,7 +527,7 @@ Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Deskt
     Imports Microsoft.WindowsAzure.MobileServices  
     ```  
   
-3.  Fügen Sie folgende Deklaration der Klasse hinzu. Dadurch wird *YOUR-SERVICE_HERE* durch den Namen der URL für Ihren Service und *YOUR-KEY-HERE* durch den Anwendungsschlüssel ersetzt, den Sie in der vorherigen Vorgehensweise kopiert haben:  
+3. Fügen Sie folgende Deklaration der Klasse hinzu. Dadurch wird *YOUR-SERVICE_HERE* durch den Namen der URL für Ihren Service und *YOUR-KEY-HERE* durch den Anwendungsschlüssel ersetzt, den Sie in der vorherigen Vorgehensweise kopiert haben:  
   
     ```csharp  
     public static MobileServiceClient MobileService = new MobileServiceClient(  
@@ -552,17 +547,17 @@ Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Deskt
   
 #### <a name="to-run-the-application"></a>So führen Sie die Anwendung aus  
   
-1.  Wählen Sie auf der Menüleiste **Debuggen**, **Debugging starten** aus (oder drücken Sie F5).  
+1. Wählen Sie auf der Menüleiste **Debuggen**, **Debugging starten** aus (oder drücken Sie F5).  
   
-2.  Erweitern Sie im Dialogfeld **TodoItem einfügen**  `Do something`ein, und wählen Sie dann die Schaltfläche **Speichern** aus.  
+2. Erweitern Sie im Dialogfeld **TodoItem einfügen**  `Do something`ein, und wählen Sie dann die Schaltfläche **Speichern** aus.  
   
-3.  EINGABETASTE `Do something else`ein, und wählen Sie dann die Schaltfläche **Speichern** aus.  
+3. EINGABETASTE `Do something else`ein, und wählen Sie dann die Schaltfläche **Speichern** aus.  
   
      Die beiden Einträge werden der Liste zum **Abfragen und Aktualisieren von Daten** hinzugefügt, wie in der folgenden Abbildung dargestellt.  
   
      ![Aktivitäteneinträge werden zur Liste hinzugefügt.](../designers/media/wpfquickstart3.PNG "WPFQuickStart3")  
   
-4.  Aktivieren Sie das Kontrollkästchen für den Eintrag **Do something else** in der Liste.  
+4. Aktivieren Sie das Kontrollkästchen für den Eintrag **Do something else** in der Liste.  
   
      Dadurch wird die **UpdateCheckedTodoItem** -Methode aufgerufen, die das Element von der Liste und aus der Datenbank entfernt.  
   
@@ -576,6 +571,3 @@ Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Deskt
 ## <a name="see-also"></a>Siehe auch  
  [Exemplarische Vorgehensweise: Meine erste WPF-Desktopanwendung](../designers/walkthrough-my-first-wpf-desktop-application2.md)   
  [Create Modern Desktop Applications with Windows Presentation Foundation (Erstellen von modernen Desktopanwendungen mit Windows Presentation Foundation)](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
-
-
-

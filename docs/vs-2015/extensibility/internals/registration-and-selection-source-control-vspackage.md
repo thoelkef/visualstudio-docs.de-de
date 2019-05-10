@@ -1,27 +1,22 @@
 ---
 title: Registrierung und Auswahl (Quellcodeverwaltungs-VSPackage) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, source control packages
 - source control packages, registration
 ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
 caps.latest.revision: 35
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 636e70357c23059a505d657af0078653de413976
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 692f2a9f34edd41839179f7229e079ec8e791800
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764459"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58960459"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Registrierung und Auswahl (Quellcodeverwaltungs-VSPackage)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,18 +35,18 @@ Ein Datenquellen-Steuerelement, das VSPackage registriert werden, um sie verfüg
   
 - Paket-GUID: Dies ist die Haupt-GUID für das Paket, das Implementierung des Datenquellen-Steuerelements (in diesem Abschnitt als ID_Package bezeichnet) enthält.  
   
-- Datenquellen-Steuerelement-GUID: Dies ist eine GUID für das Quellcodeverwaltungs-VSPackage verwendet, um mit der Visual Studio Quellcode-Verwaltungsstub registrieren und wird auch als eine befehlsbenutzeroberflächenkontext GUID verwendet. Die Datenquellen-Steuerelement-GUID ist die quellcodeverwaltung GUID registriert. Im Beispiel wird die quellcodeverwaltung GUID ID_SccProvider aufgerufen.  
+- Datenquellen Sie-Steuerelement-GUID: Dies ist eine GUID für das Quellcodeverwaltungs-VSPackage verwendet, um mit der Visual Studio Quellcode-Verwaltungsstub registrieren und wird auch als eine befehlsbenutzeroberflächenkontext GUID verwendet. Die Datenquellen-Steuerelement-GUID ist die quellcodeverwaltung GUID registriert. Im Beispiel wird die quellcodeverwaltung GUID ID_SccProvider aufgerufen.  
   
-- Source-Control-Dienst-GUID: Dies ist der private-GUID, die von Visual Studio (in diesem Abschnitt als SID_SccPkgService bezeichnet) verwendet. Darüber hinaus muss das Quellcodeverwaltungspaket anderen GUIDs für VSPackages, Toolfenster, definieren und so weiter.  
+- Quellcodeverwaltungsdienst GUID: Dies ist der private-GUID, die von Visual Studio (in diesem Abschnitt als SID_SccPkgService bezeichnet) verwendet. Darüber hinaus muss das Quellcodeverwaltungspaket anderen GUIDs für VSPackages, Toolfenster, definieren und so weiter.  
   
   Die folgenden Registrierungseinträge müssen durch ein Quellcodeverwaltungs-VSPackage vorgenommen werden:  
   
 |Schlüsselname|Einträge|  
 |--------------|-------------|  
-|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\`|(Standard) = Rg_sz: {ID_SccProvider}|  
-|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\`|(Standard) = Rg_sz:\<Anzeigename des Pakets ><br /><br /> Dienst = Rg_sz: {SID_SccPkgService}|  
-|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\               Name\`|(Standard) = Rg_sz: #\<Ressourcen-ID für lokalisierte Name ><br /><br /> Paket = Rg_sz: {ID_Package}|  
-|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SolutionPersistence\             <PackageName>\`<br /><br /> (Beachten Sie, dass der Schlüsselname, `SourceCodeControl`, wird bereits von verwendet [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] und ist nicht als Option verfügbar \<Paketname >.)|(Standard) = Rg_sz: {ID_Package}|  
+|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\`|(default) = rg_sz:{ID_SccProvider}|  
+|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\`|(Standard) = Rg_sz:\<Anzeigename des Pakets ><br /><br /> Service = rg_sz:{SID_SccPkgService}|  
+|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\               Name\`|(Standard) = Rg_sz: #\<Ressourcen-ID für lokalisierte Name ><br /><br /> Package = rg_sz:{ID_Package}|  
+|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SolutionPersistence\             <PackageName>\`<br /><br /> (Beachten Sie, dass der Schlüsselname, `SourceCodeControl`, wird bereits von verwendet [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] und ist nicht als Option verfügbar \<Paketname >.)|(default) = rg_sz:{ID_Package}|  
   
 ## <a name="selecting-a-source-control-package"></a>Ein Quellcodeverwaltungspaket auswählen  
  Mehrere Datenquellen-Steuerelement-Plug-in-API-basierte-Plug-ins und Datenquellen-Steuerelement, die VSPackages gleichzeitig registriert werden können. Der Prozess der Auswahl einer Datenquellen-Steuerelement-Plug-in oder VSPackage muss sicherstellen, dass [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] lädt das plug-in oder VSPackage zum richtigen Zeitpunkt, und können nicht benötigte Komponenten geladen, bis sie benötigt werden. Darüber hinaus [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] muss, entfernen Sie alle Benutzeroberfläche aus anderen inaktiv VSPackages, einschließlich werden, Menüelemente, Dialogfelder und Symbolleisten, und zeigt die grafische Benutzeroberfläche für das VSPackage aktiv.  
@@ -91,4 +86,3 @@ Ein Datenquellen-Steuerelement, das VSPackage registriert werden, um sie verfüg
  [Funktionen](../../extensibility/internals/source-control-vspackage-features.md)   
  [Erstellen eines Quellcodeverwaltungs-Plug-in](../../extensibility/internals/creating-a-source-control-plug-in.md)   
  [VSPackages](../../extensibility/internals/vspackages.md)
-

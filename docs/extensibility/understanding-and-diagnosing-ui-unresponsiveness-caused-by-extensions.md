@@ -4,14 +4,14 @@ ms.date: 01/26/2018
 ms.topic: conceptual
 author: PooyaZv
 ms.author: pozandev
-manager: douge
+manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: 461818080afadfde5b378174ecd12775e35c801f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b8138acda19152306efbd820cbba13e6dbf51b6f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62432056"
 ---
 # <a name="understanding-and-diagnosing-ui-unresponsiveness-caused-by-extensions"></a>Verstehen und Diagnostizieren von Erweiterungen aufgrund einer nicht reagierenden Benutzeroberfläche
 

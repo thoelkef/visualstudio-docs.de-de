@@ -8,15 +8,15 @@ helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c61e30e7085ff2f0f8cec5cc84d27efa0ea22be5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: c01317f3b8fa92cf1bc17c3745f708e0d3f26e5b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830968"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901223"
 ---
 # <a name="what-is-debugging"></a>Was bedeutet „Debuggen“?
 
@@ -44,11 +44,14 @@ Wenn Sie diese Einstellung wechseln, ändern Sie das Projekt aus einer Debugkonf
 
 ## <a name="when-to-use-a-debugger"></a>Beim Verwenden eines Debuggers
 
-Der Debugger ist ein wichtiges Tool zum Suchen und Beheben von Fehlern in Ihren apps. Allerdings ist entscheidend, Kontext, und es ist wichtig, nutzen Sie alle Tools stehen zu Ihrer verwerfbare Objekt können Sie schnell Fehler zu vermeiden. In einigen Fällen kann das Recht "Tool" besser Programmierstil sein. Erlernen den Debugger im Vergleich zu einem anderen Tool verwenden, erfahren Sie auch Gewusst wie: Verwenden Sie den Debugger effektiver. Wenn Sie bereits kennen müssen Sie den Debugger Informationen, finden Sie unter [Debuggen für absolute Anfänger](../debugger/debugging-absolute-beginners.md). Führen Sie andernfalls den Link in **nächste Schritte**.
+Der Debugger ist ein wichtiges Tool zum Suchen und Beheben von Fehlern in Ihren apps. Allerdings ist entscheidend, Kontext, und es ist wichtig, nutzen Sie alle Tools stehen zu Ihrer verwerfbare Objekt können Sie schnell Fehler zu vermeiden. In einigen Fällen kann das Recht "Tool" besser Programmierstil sein. Erlernen den Debugger im Vergleich zu einem anderen Tool verwenden, erfahren Sie auch Gewusst wie: Verwenden Sie den Debugger effektiver.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-In diesem Artikel haben Sie einige grundlegende Konzepte für das Debuggen kennengelernt. Als Nächstes können Sie beginnen, lernen, wie Sie mit Visual Studio zu debuggen und wie Sie Code mit weniger Fehlern schreiben. Der folgende Artikel zeigt C# Codebeispiele, die Konzepte gelten jedoch für alle Sprachen, die von Visual Studio unterstützt.
+In diesem Artikel haben Sie einige grundlegende Konzepte für das Debuggen kennengelernt. Als Nächstes können Sie beginnen, lernen, wie Sie mit Visual Studio zu debuggen und wie Sie Code mit weniger Fehlern schreiben. Die folgenden Artikel anzeigen C# Codebeispiele, die Konzepte gelten jedoch für alle Sprachen, die von Visual Studio unterstützt.
 
 > [!div class="nextstepaction"]
-> [Korrigieren von Fehlern durch das Schreiben von besserem C#-Code](../debugger/write-better-code-with-visual-studio.md)
+> [Debuggen für Einsteiger](../debugger/debugging-absolute-beginners.md)
+
+> [!div class="nextstepaction"]
+> [Debugging techniques and tools (Debugverfahren und -tools)](../debugger/write-better-code-with-visual-studio.md)

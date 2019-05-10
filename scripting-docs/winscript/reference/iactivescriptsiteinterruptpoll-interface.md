@@ -1,8 +1,7 @@
 ---
-title: IActiveScriptSiteInterruptPoll-Schnittstelle | Microsoft Docs
+title: IActiveScriptSiteInterruptPoll-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,19 +17,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6723d430b10d7278e47d4273ed10ae08762051e9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6e4ec765d61da4d727fc9b500602c0619569ff67
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725030"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992331"
 ---
 # <a name="iactivescriptsiteinterruptpoll-interface"></a>IActiveScriptSiteInterruptPoll-Schnittstelle
-Die `IActiveScriptSiteInterruptPoll` Schnittstelle ermöglicht es einen Host, um anzugeben, dass ein Skript beendet werden soll.  
+Die `IActiveScriptSiteInterruptPoll` Schnittstelle kann ein Host aus, um anzugeben, dass es sich bei einem Skript musste beendet werden soll.  
   
 ## <a name="methods"></a>Methoden  
  Zusätzlich zu den von geerbten Methoden `IUnknown`, `IActiveScriptSiteInterruptPoll` Schnittstelle verfügbar macht, die folgende Methode.  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IActiveScriptSiteInterruptPoll::QueryContinue](../../winscript/reference/iactivescriptsiteinterruptpoll-querycontinue.md)|Ermöglicht es einen Host, um anzugeben, dass ein Skript beendet werden soll.|
+|[IActiveScriptSiteInterruptPoll::QueryContinue](../../winscript/reference/iactivescriptsiteinterruptpoll-querycontinue.md)|Können Sie einen Host aus, um anzugeben, dass es sich bei einem Skript musste beendet werden soll.|

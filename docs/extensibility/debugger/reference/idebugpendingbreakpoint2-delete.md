@@ -1,31 +1,33 @@
 ---
 title: IDebugPendingBreakpoint2::Delete | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugPendingBreakpoint2::Delete
 helpviewer_keywords:
 - IDebugPendingBreakpoint2::Delete method
 - Delete method
 ms.assetid: 4cb5ed81-6f0c-41ce-a770-5adb6b4bf5d9
-author: gregvanl
+caps.latest.revision: 10
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 91885471093fd6f8d270d69d090b56472970a772
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7ae9b35ba47b08acd2623a3d28c9e634b1ffaa76
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62842619"
 ---
 # <a name="idebugpendingbreakpoint2delete"></a>IDebugPendingBreakpoint2::Delete
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Löscht diese ausstehenden Haltepunkt, und alle Breakpoints, die von ihm gebunden.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT Delete(   
    void   
 );  
@@ -41,7 +43,7 @@ int Delete();
 ## <a name="example"></a>Beispiel  
  Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine einfache `CPendingBreakpoint` Objekt, das implementiert die [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) Schnittstelle.  
   
-```cpp  
+```cpp#  
 HRESULT CPendingBreakpoint::Delete(void)    
 {    
    HRESULT hr;    

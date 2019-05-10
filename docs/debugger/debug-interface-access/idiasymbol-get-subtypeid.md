@@ -7,32 +7,33 @@ dev_langs:
 ms.assetid: 0f899920-4fc5-4de8-84a3-cd98c57bf124
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 858c4a5040b1823392d8a572a008f629c64745d7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: e54f800b5843a17e0617b57de21bfcdd4616cef4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919306"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62841639"
 ---
 # <a name="idiasymbolgetsubtypeid"></a>IDiaSymbol::get_subTypeId
-Ruft ab, der untergeordnete Typ-ID an.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_subTypeId(   
-   DWORD* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pRetVal`  
- [out] Ein Zeiger auf eine `DWORD` , enthält die Sub-ID.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Ruft ab, der untergeordnete Typ-ID an.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_subTypeId(
+   DWORD* pRetVal);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pRetVal`
+
+[out] Ein Zeiger auf eine `DWORD` , enthält die Sub-ID.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

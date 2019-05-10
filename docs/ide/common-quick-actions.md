@@ -1,22 +1,21 @@
 ---
 title: Häufige schnelle Aktionen
 ms.date: 03/28/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c2491ba0968f60f5e67e9829a19994b7d4cbe7d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f6f8872fa9acb2ca79010a87168c629dcbc3ac6e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877444"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976514"
 ---
 # <a name="common-quick-actions"></a>Häufige schnelle Aktionen
 

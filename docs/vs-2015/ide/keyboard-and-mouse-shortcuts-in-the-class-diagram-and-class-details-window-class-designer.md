@@ -1,14 +1,9 @@
 ---
 title: Tastenkombinationen und Mausaktionen im Klassendiagramm und im Klassendetailsfenster (Klassen-Designer) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdetails.window
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: c12d8dac-9902-4fde-b721-2a8116da53b7
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f607046609208804f349eb06e927ab8e72e28992
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 861ce1cf40dd5c56c043399387ef51fa3b4efee2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247909"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412256"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>Tastenkombinationen und Mausaktionen im Klassendiagramm und Fenster "Klassendetails" (Klassen-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,15 +28,15 @@ Zusätzlich zur Maus können Sie die Tastatur verwenden, um im Klassen-Designer 
   
  **Inhalt**  
   
--   [Verwenden der Tastatur im Klassen-Designer](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDesigner)  
+- [Verwenden der Tastatur im Klassen-Designer](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDesigner)  
   
--   [Verwenden der Maus im Klassendetailsfenster](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDetails)  
+- [Verwenden der Maus im Klassendetailsfenster](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDetails)  
   
--   [Verwenden der Tastatur im Klassen-Designer](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDesigner)  
+- [Verwenden der Tastatur im Klassen-Designer](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDesigner)  
   
--   [Verwenden der Tastatur im Klassendetailsfenster](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDetails)  
+- [Verwenden der Tastatur im Klassendetailsfenster](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDetails)  
   
-##  <a name="MouseClassDesigner"></a> Verwenden der Tastatur im Klassen-Designer  
+## <a name="MouseClassDesigner"></a> Verwenden der Tastatur im Klassen-Designer  
  Die folgenden Mausaktionen werden in Klassendiagrammen unterstützt:  
   
 |Mauskombination|Kontext|Beschreibung|  
@@ -54,20 +49,20 @@ Zusätzlich zur Maus können Sie die Tastatur verwenden, um im Klassen-Designer 
 |STRG + Mausrad|Klassendiagramm|Zoomen|  
 |STRG + UMSCHALT + Klicken|Klassendiagramm|Zoomen|  
   
-##  <a name="MouseClassDetails"></a> Verwenden der Maus im Klassendetailsfenster  
+## <a name="MouseClassDetails"></a> Verwenden der Maus im Klassendetailsfenster  
  Mit einer Maus können Sie auf folgende Weisen die Darstellung des Fensters "Klassendetails" und der in ihm angezeigten Daten ändern:  
   
--   Nach Klicken in einer bearbeitbaren Zelle können Sie den Inhalt dieser Zelle bearbeiten. Ihre Änderungen werden an allen Stellen übernommen, an denen diese Daten gespeichert sind oder angezeigt werden, somit auch im Eigenschaftenfenster und im Quellcode.  
+- Nach Klicken in einer bearbeitbaren Zelle können Sie den Inhalt dieser Zelle bearbeiten. Ihre Änderungen werden an allen Stellen übernommen, an denen diese Daten gespeichert sind oder angezeigt werden, somit auch im Eigenschaftenfenster und im Quellcode.  
   
--   Ein Klicken in eine beliebige Zelle einer Zeile bewirkt, dass im Eigenschaftenfenster die Eigenschaften für das Element angezeigt werden, das durch diese Zeile dargestellt wird.  
+- Ein Klicken in eine beliebige Zelle einer Zeile bewirkt, dass im Eigenschaftenfenster die Eigenschaften für das Element angezeigt werden, das durch diese Zeile dargestellt wird.  
   
--   Um die Breite einer Spalte zu ändern, ziehen Sie die Begrenzung der rechten Seite der Spaltenüberschrift solange, bis die Spalte die von Ihnen gewünschte Breite hat.  
+- Um die Breite einer Spalte zu ändern, ziehen Sie die Begrenzung der rechten Seite der Spaltenüberschrift solange, bis die Spalte die von Ihnen gewünschte Breite hat.  
   
--   Sie können Depot- oder Eigenschaftsknoten erweitern oder reduzieren, indem Sie auf die Pfeilsymbole links neben der Zeile klicken.  
+- Sie können Depot- oder Eigenschaftsknoten erweitern oder reduzieren, indem Sie auf die Pfeilsymbole links neben der Zeile klicken.  
   
--   Das Klassendetailsfenster enthält mehrere Schaltflächen zum Erstellen neuer Member in der aktuellen Klasse sowie zum Navigieren zwischen den Depots der Member im Raster des Klassendetailsfensters. Weitere Informationen finden Sie in den Beschreibungen der Schaltflächen des Klassendetailsfensters.  
+- Das Klassendetailsfenster enthält mehrere Schaltflächen zum Erstellen neuer Member in der aktuellen Klasse sowie zum Navigieren zwischen den Depots der Member im Raster des Klassendetailsfensters. Weitere Informationen finden Sie in den Beschreibungen der Schaltflächen des Klassendetailsfensters.  
   
-##  <a name="KeyboardClassDesigner"></a> Verwenden der Tastatur im Klassen-Designer  
+## <a name="KeyboardClassDesigner"></a> Verwenden der Tastatur im Klassen-Designer  
  Die folgenden Tastaturaktionen werden in Klassendiagrammen unterstützt:  
   
 |Key|Kontext|Beschreibung|  
@@ -94,10 +89,10 @@ Zusätzlich zur Maus können Sie die Tastatur verwenden, um im Klassen-Designer 
 |UMSCHALT+TAB|Alle Kontexte|Navigiert zum vorhergehenden untergeordneten Element desselben übergeordneten Elements (unterstützt Umschließen).|  
 |LEERTASTE|Alle Kontexte|Schaltet die Auswahl für das aktuelle Element um.|  
   
-##  <a name="KeyboardClassDetails"></a> Verwenden der Tastatur im Klassendetailsfenster  
+## <a name="KeyboardClassDetails"></a> Verwenden der Tastatur im Klassendetailsfenster  
   
 > [!NOTE]
->  Die folgenden Tastenbindungen wurden gewählt, um speziell die Erfahrung des Eingebens von Code zu imitieren.  
+> Die folgenden Tastenbindungen wurden gewählt, um speziell die Erfahrung des Eingebens von Code zu imitieren.  
   
  Verwenden Sie die folgenden Tasten, um im Klassendetailsfenster zu navigieren:  
   
@@ -116,6 +111,3 @@ Zusätzlich zur Maus können Sie die Tastatur verwenden, um im Klassen-Designer 
   
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen und Konfigurieren von Typmembern (Klassen-Designer)](../ide/creating-and-configuring-type-members-class-designer.md)
-
-
-

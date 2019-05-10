@@ -1,7 +1,6 @@
 ---
-title: 'CA2213: Verwerfbare Felder verwerfen'
+title: 'CA2213: Verwerfbare Felder verwerfen.'
 ms.date: 11/05/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - DisposableFieldsShouldBeDisposed
@@ -12,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: e99442c9-70e2-47f3-b61a-d8ac003bc6e5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de8df7e124cd8dd8ba9764add4006f7244155de8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1fff209c9a432b78ce27e9c344c1afd29e93d57f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882077"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806679"
 ---
-# <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213: Verwerfbare Felder verwerfen
+# <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213: Verwerfbare Felder verwerfen.
 
 |||
 |-|-|

@@ -1,14 +1,9 @@
 ---
 title: Binden von Tastenkombinationen an Menüelemente | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - keyboard command
 - keyboards
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5fd5ab9b09956c41620947ad1bcf529550db4aca
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fb85bc64164acc09aef6464b69e72b7c6cf46d77
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752910"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405644"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>Binden von Tastenkombinationen an Menüelemente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ Um eine Tastenkombination an einen benutzerdefinierten Befehl zu binden, fügen 
 4. Versuchen Sie es für verschiedene Kombinationen von Schlüsseln aus, bis Sie einen finden, die nicht zugeordnet ist.  
   
    > [!NOTE]
-   >  Tastenkombinationen in Visual Studio, die ALT-Taste verwenden möglicherweise ein Menü öffnen und nicht direkt einen Befehl ausführen. Aus diesem Grund die **momentan verwendet von** Feld möglicherweise leer, wenn Sie eine Verknüpfung eingeben, die ALT-Taste enthält. Sie können überprüfen, ob die Verknüpfung ein Menüs nicht durch Schließen geöffnet wird die **Optionen** (Dialogfeld), und drücken die Schlüssel.  
+   > Tastenkombinationen in Visual Studio, die ALT-Taste verwenden möglicherweise ein Menü öffnen und nicht direkt einen Befehl ausführen. Aus diesem Grund die **momentan verwendet von** Feld möglicherweise leer, wenn Sie eine Verknüpfung eingeben, die ALT-Taste enthält. Sie können überprüfen, ob die Verknüpfung ein Menüs nicht durch Schließen geöffnet wird die **Optionen** (Dialogfeld), und drücken die Schlüssel.  
   
    Das folgende Verfahren wird davon ausgegangen, dass Sie einen vorhandenen VSPackage mit einem Menübefehl verfügen. Wenn Sie hierzu Hilfe benötigen, sehen Sie sich [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
@@ -60,7 +55,7 @@ Um eine Tastenkombination an einen benutzerdefinierten Befehl zu binden, fügen 
 2. Erstellen Sie eine leere `<KeyBindings>` -Abschnitt nach dem `<Commands>` ist dies nicht bereits vorhanden.  
   
    > [!WARNING]
-   >  Weitere Informationen zu Tastenkombinationen finden Sie unter [Keybinding](../extensibility/keybinding-element.md).  
+   > Weitere Informationen zu Tastenkombinationen finden Sie unter [Keybinding](../extensibility/keybinding-element.md).  
   
     In der `<KeyBindings>` Abschnitt, erstellen Sie eine `<KeyBinding>` Eintrag.  
   
@@ -114,4 +109,3 @@ Um eine Tastenkombination an einen benutzerdefinierten Befehl zu binden, fügen 
   
 ## <a name="see-also"></a>Siehe auch  
  [Erweitern von Menüs und Befehlen](../extensibility/extending-menus-and-commands.md)
-

@@ -1,24 +1,23 @@
 ---
 title: Kontextmenüs im XML-Schema-Explorer
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d38dea96b109db9d60014df9bf7d4d420308f195
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4d6ab950c31bc6444eb0b8ae054d74c9a69ed466
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898894"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838645"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Kontextmenüs (XML-Schema-Explorer)
 
-Die folgenden Kontextmenüelemente werden verwendet, um schemaspezifische Suchen und andere Vorgänge auszuführen.
+Ein Kontextmenü ist das Menü, das angezeigt wird, wenn Sie mit der rechten auf ein beliebiges Objekt Maustaste an. Die folgenden Kontextmenüelemente werden verwendet, um schemaspezifische Suchen und andere Vorgänge auszuführen.
 
 ## <a name="node-type-schema-set"></a>Knotentyp: Schemaset
 
@@ -51,7 +50,7 @@ In der folgenden Tabelle werden die Optionen beschrieben, die für Schemasetknot
 |**Alle ausgehenden Verweise anzeigen**|Sucht und hebt Folgendes hervor:<br /><br /> – Alle Namespaces, die in den Namespaceattributen aller angegebenen importanweisungen, denen keine das `schemaLocation` Attribut.<br />– Alle angegebenen Dateien in die `schemaLocation` -Attributen aller Import- und include-Anweisungen.|
 |**Globale Typen anzeigen**|Sucht nach allen globalen Typen in dieser Datei und hebt sie hervor.|
 |**Globale Elemente anzeigen**|Sucht nach allen globalen Elementen in dieser Datei und hebt sie hervor.|
-|**Code anzeigen**|Öffnet die Datei, die den ausgewählten Knoten enthält, im XML-Editor. Das im XML-Schema-Explorer ausgewählte Element wird auch im XML-Editor ausgewählt.|
+|**Code anzeigen**|Öffnet die Datei, die den ausgewählten Knoten in der XML-Editor enthält. Das Element, das in der XML-Schema-Explorer ausgewählt ist, wird auch in der XML-Editor ausgewählt werden.|
 |**Eigenschaftenfenster**|Öffnet die **Eigenschaften** -Fenster (wenn es nicht bereits geöffnet ist). In diesem Fenster werden Informationen zum Knoten angezeigt.|
 
 ## <a name="all-global-node-types"></a>Alle globalen Knotentypen
@@ -61,7 +60,7 @@ In der folgenden Tabelle werden die Optionen beschrieben, die für Schemasetknot
 |-|-----------------|
 |**In Diagrammansicht anzeigen**|Öffnet die Diagrammansicht. Wenn der ausgewählte Knoten nicht im Arbeitsbereich vorhanden ist, wird er dem Arbeitsbereich hinzugefügt und ausgewählt.|
 |**In Inhaltsmodellansicht anzeigen**|Öffnet die Inhaltsmodellansicht. Wenn der ausgewählte Knoten nicht im Arbeitsbereich vorhanden ist, wird er dem Arbeitsbereich hinzugefügt und ausgewählt.|
-|**Code anzeigen**|Öffnet die Datei, die den ausgewählten Knoten enthält, im XML-Editor. Das im XML-Schema-Explorer ausgewählte Element wird auch im XML-Editor ausgewählt.|
+|**Code anzeigen**|Öffnet die Datei, die den ausgewählten Knoten in der XML-Editor enthält. Das Element, das in der XML-Schema-Explorer ausgewählt ist, wird auch in der XML-Editor ausgewählt werden.|
 |**Eigenschaftenfenster**|Öffnet die **Eigenschaften** -Fenster (wenn es nicht bereits geöffnet ist). In diesem Fenster werden Informationen zum Knoten angezeigt.|
 
 ## <a name="node-type-element"></a>Knotentyp: Element

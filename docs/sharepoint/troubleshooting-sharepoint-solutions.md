@@ -11,17 +11,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, troubleshooting
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0e72b1f8a7ca76aa2b3afd68041c500b24efd8db
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bab7f45824def7a4b5a385381a4789b7adc276d0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53957961"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008083"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Problembehandlung bei SharePoint-Lösungen
   Die folgenden Probleme oder Warnungen können auftreten, wenn SharePoint-Lösungen mithilfe des [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]-Debuggers debuggt werden. Weitere Informationen finden Sie unter [Debuggen von SharePoint 2007-Workflow-Projektmappen](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247).
@@ -115,9 +115,9 @@ ms.locfileid: "53957961"
 
 ##### <a name="to-reenter-the-workflow-wizard"></a>So starten Sie den Workflow-Assistenten erneut
 
-1.  In **Projektmappen-Explorer**, wählen Sie den Knoten "Workflow".
+1. In **Projektmappen-Explorer**, wählen Sie den Knoten "Workflow".
 
-2.  In der **Eigenschaften** Fenster, wählen Sie die Schaltfläche mit den Auslassungspunkten (...), auf einer beliebigen Eigenschaft, die eine Ellipsenschaltfläche aufweisen.
+2. In der **Eigenschaften** Fenster, wählen Sie die Schaltfläche mit den Auslassungspunkten (...), auf einer beliebigen Eigenschaft, die eine Ellipsenschaltfläche aufweisen.
 
 ## <a name="user-must-refresh-application-page-in-browser-while-debugging-to-view-updated-image"></a>Benutzer muss Anwendungsseite im Browser aktualisieren, während des Debuggens, um aktualisierte Bild anzuzeigen.
  Wenn Sie eine SharePoint-Lösung mit einer Anwendungsseite debuggen, die ein Steuerelement mit einem Bild (beispielsweise ein [!INCLUDE[TLA2#tla_html](../sharepoint/includes/tla2sharptla-html-md.md)]-Bild-Steuerelement) enthält, muss die Seite im Browser aktualisiert werden, damit am Bild vorgenommene Änderungen angezeigt werden.
@@ -127,13 +127,13 @@ ms.locfileid: "53957961"
 
 ### <a name="error-message"></a>Fehlermeldung
 
--   Der Speicherort der SharePoint-Site ist nicht gültig.
+- Der Speicherort der SharePoint-Site ist nicht gültig.
 
 ### <a name="resolution"></a>Auflösung
 
--   Installieren Sie [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].
+- Installieren Sie [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].
 
--   Stellen Sie sicher, dass Sie über Administratorzugriff auf die SharePoint-Website verfügen. Weitere Informationen finden Sie unter den [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] Onlineartikel [zuweisen oder Entfernen von Administratoren von dienstanwendungen in SharePoint Server](https://docs.microsoft.com/sharepoint/administration/assign-or-remove-administrators-of-service-applications).
+- Stellen Sie sicher, dass Sie über Administratorzugriff auf die SharePoint-Website verfügen. Weitere Informationen finden Sie unter den [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] Onlineartikel [zuweisen oder Entfernen von Administratoren von dienstanwendungen in SharePoint Server](https://docs.microsoft.com/sharepoint/administration/assign-or-remove-administrators-of-service-applications).
 
 ## <a name="site-deletion-web-event-does-not-occur-in-event-receiver-project"></a>Standort Löschen von Web-Ereignis tritt im Ereignisempfängerprojekt nicht ein.
  Wenn Sie ein Ereignisempfängerprojekt erstellen und Sie bestimmte Webereignisse auswählen, z. B. "eine Website wird gelöscht", tritt das Ereignis nie ein.
@@ -142,7 +142,7 @@ ms.locfileid: "53957961"
  Keine
 
 ### <a name="resolution"></a>Auflösung
- Dieses Problem tritt auf, da der Funktionsbereich "Site" sein muss, um Ereignisse auf Websiteebene zu behandeln, der Standardfunktionsbereich für Ereignisempfängerprojekte ist jedoch "Internet". Die betroffenen Webereignisse sind:
+ Dieses Problem tritt auf, da der Funktionsbereich „Site“ sein muss, um Ereignisse auf Websiteebene zu behandeln, der Standardfunktionsbereich für Ereignisempfängerprojekte ist jedoch „Internet“. Die betroffenen Webereignisse sind:
 
 - Eine Website wird gelöscht (WebDeleting)
 
@@ -156,46 +156,46 @@ ms.locfileid: "53957961"
 
 ##### <a name="to-change-the-feature-scope-of-the-event-receiver"></a>So ändern Sie den Funktionsbereich des Ereignisempfängers
 
-1.  In **Projektmappen-Explorer**, öffnen Sie des Ereignisempfängers *.feature* Datei die **Funktions-Designer** durch Doppelklicken auf die Datei, oder Sie das Kontextmenü öffnen und dann Auswahl **öffnen**.
+1. In **Projektmappen-Explorer**, öffnen Sie des Ereignisempfängers *.feature* Datei die **Funktions-Designer** durch Doppelklicken auf die Datei, oder Sie das Kontextmenü öffnen und dann Auswahl **öffnen**.
 
-2.  Wählen Sie den Pfeil neben **Bereich**, und wählen Sie dann **Site** in der Liste, die angezeigt wird.
+2. Wählen Sie den Pfeil neben **Bereich**, und wählen Sie dann **Site** in der Liste, die angezeigt wird.
 
 ## <a name="deployment-error-appears-after-the-name-of-an-identifier-in-a-business-data-connectivity-model-project-is-changed"></a>Fehler bei der Bereitstellung angezeigt wird, nachdem der Name eines Bezeichners in einem Business Data Connectivity-Modell-Projekt geändert wurde
  Dieses Problem tritt auf, wenn Sie den Bezeichnernamen einer Entität in einem Business Data Connectivity-Modell (BDC-Modell) ändern, und dann versuchen, die Projektmappe bereitzustellen.
 
 ### <a name="error-messages"></a>Fehlermeldungen
 
--   \<*Name des Modells*> verfügt über die folgenden Aktivierungsfehler für externe Inhalte...
+- \<*Name des Modells*> verfügt über die folgenden Aktivierungsfehler für externe Inhalte...
 
--   Das IMetadataObject mit dem Namen "\<*Modellname*>' weist einen Wert im Feld"Name", die doppelt vorhanden ist...
+- Das IMetadataObject mit dem Namen "\<*Modellname*>' weist einen Wert im Feld"Name", die doppelt vorhanden ist...
 
 ### <a name="resolution"></a>Auflösung
  Um dieses Problem zu beheben, löschen Sie das Modell manuell, und stellen Sie anschließend die Projektmappe erneut bereit.  Sie können das Modell mit einem der folgenden Tools löschen:
 
--   SharePoint 2010-Zentraladministration. Weitere Informationen finden Sie unter [BDC-Modell-Management](http://go.microsoft.com/fwlink/?LinkID=181472) auf der Website der Microsoft TechNet-Website.
+- SharePoint 2010-Zentraladministration. Weitere Informationen finden Sie unter [BDC-Modell-Management](http://go.microsoft.com/fwlink/?LinkID=181472) auf der Website der Microsoft TechNet-Website.
 
--   Windows PowerShell. Sie können das Modell löschen, indem Sie diesen Befehl an der Eingabeaufforderung eingeben: **Remove-SPBusinessDataCatalogModel**. Weitere Informationen finden Sie unter [allgemeine Cmdlets (SharePoint Server 2010)](http://go.microsoft.com/fwlink/?LinkID=182375) auf der Website der Microsoft TechNet-Website.
+- Windows PowerShell. Sie können das Modell löschen, indem Sie diesen Befehl an der Eingabeaufforderung eingeben: **Remove-SPBusinessDataCatalogModel**. Weitere Informationen finden Sie unter [allgemeine Cmdlets (SharePoint Server 2010)](http://go.microsoft.com/fwlink/?LinkID=182375) auf der Website der Microsoft TechNet-Website.
 
 ## <a name="an-error-appears-when-you-try-to-view-a-visual-web-part-in-sharepoint"></a>Wird ein Fehler angezeigt, wenn Sie versuchen, ein visuelles Webpart in SharePoint anzuzeigen.
  Dieses Problem tritt auf, wenn die **Pfad** Eigenschaft des Benutzersteuerelements beginnt nicht mit der Zeichenfolge "CONTROLTEMPLATES\\".
 
 ### <a name="error-messages"></a>Fehlermeldungen
 
--   Die Datei "/ _CONTROLTEMPLATES /*\<Projektname >*/*\<Webpart-Name >*/*\<Benutzersteuerelement Name >*.ascx "ist nicht vorhanden.
+- Die Datei "/ _CONTROLTEMPLATES /*\<Projektname >*/*\<Webpart-Name >*/*\<Benutzersteuerelement Name >*.ascx "ist nicht vorhanden.
 
--   Serverfehler in "/" Anwendung.
+- Serverfehler in "/" Anwendung.
 
 ### <a name="resolution"></a>Auflösung
 
 ##### <a name="to-resolve-this-issue"></a>So beheben Sie dieses Problem
 
-1.  In **Projektmappen-Explorer**, wählen Sie die Benutzersteuerelement-Datei, deren Dateinamenerweiterung ist *ascx*.
+1. In **Projektmappen-Explorer**, wählen Sie die Benutzersteuerelement-Datei, deren Dateinamenerweiterung ist *ascx*.
 
-2.  Wählen Sie auf der Menüleiste **Ansicht** > **Fenster "Eigenschaften"**.
+2. Wählen Sie auf der Menüleiste **Ansicht** > **Fenster "Eigenschaften"**.
 
-3.  In der **Eigenschaften** Fenster, erweitern Sie die **Bereitstellungsspeicherort** Knoten.
+3. In der **Eigenschaften** Fenster, erweitern Sie die **Bereitstellungsspeicherort** Knoten.
 
-4.  Stellen Sie sicher, dass den Wert des der **Pfad** Eigenschaft beginnt mit der Zeichenfolge "CONTROLTEMPLATES\\".
+4. Stellen Sie sicher, dass den Wert des der **Pfad** Eigenschaft beginnt mit der Zeichenfolge "CONTROLTEMPLATES\\".
 
 ## <a name="error-appears-when-an-imported-reusable-workflow-that-contains-a-task-form-field-is-run"></a>Der Fehler tritt beim Ausführen eines importierten wiederverwendbaren Workflows, das ein Aufgabenformularfeld enthält
  Dieses Problem tritt auf, wenn Sie einen Workflow importieren, der ein Aufgabenformular enthält, das über ein Feld verfügt, und dann den neuen Workflow auf dem gleichen System ausführen, aus dem Sie ihn importiert haben.
@@ -230,26 +230,26 @@ ms.locfileid: "53957961"
 
 ##### <a name="to-access-the-iis-app-pool-settings"></a>So greifen Sie auf die IIS-Einstellungen für den Anwendungspool zu
 
-1.  Öffnen Sie IIS-Manager.
+1. Öffnen Sie IIS-Manager.
 
-2.  In der **Verbindungen** Bereich, erweitern Sie den SharePoint-Serverknoten, und wählen Sie dann die **Anwendungspools** Knoten.
+2. In der **Verbindungen** Bereich, erweitern Sie den SharePoint-Serverknoten, und wählen Sie dann die **Anwendungspools** Knoten.
 
-3.  Auf der **Anwendungspools** Seite, und wählen Sie den SharePoint-Anwendungspool (in der Regel "SharePoint – 80"), und dann auf die **Aktionen** Bereich, wählen Sie die **Erweiterte Einstellungen** Link.
+3. Auf der **Anwendungspools** Seite, und wählen Sie den SharePoint-Anwendungspool (in der Regel "SharePoint – 80"), und dann auf die **Aktionen** Bereich, wählen Sie die **Erweiterte Einstellungen** Link.
 
-4.  Um die Wartezeit vor dem Timeout für IIS zu erhöhen, ändern Sie den Wert der **maximale Ping-Antwortzeit (Sekunden)** auf einen Wert, der größer als 90 Sekunden ist.
+4. Um die Wartezeit vor dem Timeout für IIS zu erhöhen, ändern Sie den Wert der **maximale Ping-Antwortzeit (Sekunden)** auf einen Wert, der größer als 90 Sekunden ist.
 
-5.  Legen Sie zum Deaktivieren Pingen von IIS **Ping aktiviert** zu **"false"**.
+5. Legen Sie zum Deaktivieren Pingen von IIS **Ping aktiviert** zu **"false"**.
 
 ## <a name="auto-retract-leaves-orphaned-list-instance-in-sharepoint"></a>Automatischen Zurückziehen hinterlässt das verwaiste Listeninstanz in SharePoint
  Dieses Problem tritt auf, wenn Sie die folgenden Schritte ausführen:
 
-1.  Erstellen einer Listendefinition, die in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] eine Listeninstanz hat.
+1. Erstellen einer Listendefinition, die in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] eine Listeninstanz hat.
 
-2.  Wählen Sie die **F5** Taste, um die Projektmappe auszuführen.
+2. Wählen Sie die **F5** Taste, um die Projektmappe auszuführen.
 
-3.  Beenden des Debugvorgangs oder Schließen der SharePoint-Website.
+3. Beenden des Debugvorgangs oder Schließen der SharePoint-Website.
 
-4.  Erneutes Öffnen der SharePoint-Website und Öffnen der Listeninstanz.
+4. Erneutes Öffnen der SharePoint-Website und Öffnen der Listeninstanz.
 
 ### <a name="error-message"></a>Fehlermeldung
  Serverfehler in "/" Anwendung.

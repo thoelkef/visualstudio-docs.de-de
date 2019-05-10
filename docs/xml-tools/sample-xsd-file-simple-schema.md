@@ -1,21 +1,19 @@
 ---
 title: 'XSD-Beispieldatei: Einfaches Schema'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: sample
 ms.assetid: f7e1dde1-b4f6-4371-add4-935b68ec77d7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11a74d5214e434c7d7330bc7ea4e3bcd8a3e5905
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8f7a4cd8e01f0538e2551b4b7c1c3ad67a221667
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955578"
 ---
 # <a name="sample-xsd-file-simple-schema"></a>XSD-Beispieldatei: Einfaches Schema
 

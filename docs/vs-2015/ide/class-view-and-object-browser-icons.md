@@ -1,14 +1,9 @@
 ---
 title: Symbole in der Klassenansicht und im Objektkatalog | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - icons, in Object Browser
 - signal icons
@@ -22,18 +17,18 @@ ms.assetid: 58cc3f44-c296-4a88-a008-09d28598d9c0
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: af7ce3ee9b97996f92ac9ca8537c583b063a3445
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ef14396e681f77eca469f40b2253c8a64296423d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279735"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422852"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Symbole in der Klassenansicht und im Objektbrowser
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Klasse anzeigen ** und **Objektkatalog** zeigt Symbole zur Darstellung der Entitäten, z. B., Namespaces, Klassen, Funktionen und Variablen. In der folgenden Tabelle werden die Symbole dargestellt und beschrieben.  
+Die **Klassenansicht** und der **Objektkatalog** zeigen Symbole an, die Codeentitäten darstellen, z.B. Namespaces, Klassen, Funktionen und Variablen. In der folgenden Tabelle werden die Symbole dargestellt und beschrieben.  
   
 |Symbol|Beschreibung|Symbol|Beschreibung|  
 |----------|-----------------|----------|-----------------|  
@@ -55,7 +50,7 @@ Klasse anzeigen ** und **Objektkatalog** zeigt Symbole zur Darstellung der Entit
  Die folgenden Signalsymbole gelten für alle zuvor erwähnten Symbole und geben deren Barrierefreiheit an.  
   
 > [!NOTE]
->  Wenn Ihr Projekt in einer Quellcodeverwaltungs-Datenbank enthalten ist, werden möglicherweise zusätzliche Signalsymbole angezeigt, um den Quellcodestatus anzugeben, z.B. eingecheckt oder ausgecheckt.  
+> Wenn Ihr Projekt in einer Quellcodeverwaltungs-Datenbank enthalten ist, werden möglicherweise zusätzliche Signalsymbole angezeigt, um den Quellcodestatus anzugeben, z.B. eingecheckt oder ausgecheckt.  
   
 |Symbol|Beschreibung|  
 |----------|-----------------|  
@@ -68,6 +63,3 @@ Klasse anzeigen ** und **Objektkatalog** zeigt Symbole zur Darstellung der Entit
   
 ## <a name="see-also"></a>Siehe auch  
  [Anzeigen der Codestruktur](../ide/viewing-the-structure-of-code.md)
-
-
-

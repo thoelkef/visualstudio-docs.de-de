@@ -2,7 +2,6 @@
 title: Entwickeln von Anwendungen mit dem Workflow-Designer
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
 f1_keywords:
 - DefaultWorkflowDesigner
 - DefaultWorkflowDesigner.UI
@@ -14,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 4cd062b1-b496-4668-bbc1-ee85545e066d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ef3b7e9bfc18407023e6a84a25eb32d453823ce
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 45c687be4efc5a83827836cd1ac89bbc38ad4cb1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53903630"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949778"
 ---
 # <a name="develop-apps-with-the-workflow-designer"></a>Entwickeln von Apps mit dem Workflow-Designer
 
@@ -30,7 +29,7 @@ Der Workflow-Designer ist ein visueller Designer und Debugger für die grafische
 
 ## <a name="install-windows-workflow-foundation"></a>Installieren Sie Windows Workflow Foundation
 
-Um Workflow-Projektvorlagen in Visual Studio 2017 zu verwenden, installieren Sie zuerst die **Windows Workflow Foundation** Komponente.
+Um Workflow-Projektvorlagen in Visual Studio zu verwenden, installieren Sie zuerst die **Windows Workflow Foundation** Komponente.
 
 1. Öffnen Sie Visual Studio-Installer. Eine schnelle Möglichkeit, ihn zu öffnen, ist die Auswahl **Tools** > **Tools und Features abrufen** in Visual Studio.
 
@@ -38,7 +37,7 @@ Um Workflow-Projektvorlagen in Visual Studio 2017 zu verwenden, installieren Sie
 
 1. Führen Sie einen Bildlauf nach unten, um die **Entwicklungsaktivitäten** Kategorie, und wählen Sie dann die **Windows Workflow Foundation** Komponente.
 
-   ![Windows Workflow Foundation-Komponente für Visual Studio 2017](media/windows-workflow-foundation-component.png)
+   ![Windows Workflow Foundation-Komponente für Visual Studio](media/windows-workflow-foundation-component.png)
 
 1. Klicken Sie auf **Ändern**.
 

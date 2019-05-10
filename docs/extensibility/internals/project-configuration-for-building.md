@@ -8,56 +8,54 @@ helpviewer_keywords:
 ms.assetid: 2c83615d-fa4d-4b9f-b315-7a69b3000da0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f320a23fa75dccdb4c273bc851832f3b762696d1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: 3ecbed7e1f57150e798818c24cb36a1de24e58aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910216"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423826"
 ---
 # <a name="project-configuration-for-building"></a>Projektkonfiguration beim Erstellen
-Die Liste der Konfigurationen für eine bestimmte Lösung wird im Dialogfeld Projektmappenkonfigurationen verwaltet.  
-  
- Ein Benutzer kann weitere Projektmappenkonfigurationen, jeweils mit eigenen eindeutigen Namen erstellen. Wenn der Benutzer eine neue Projektmappenkonfiguration erstellt, standardmäßig die IDE auf den Namen der entsprechenden in den Projekten oder Debuggen, wenn keine entsprechenden Namen vorhanden ist. Der Benutzer kann die Auswahl, um die jeweiligen Anforderungen zu erfüllen, bei Bedarf ändern. Die einzige Ausnahme für dieses Verhalten ist, wenn es sich bei das Projekt eine Konfiguration unterstützt, die den Namen der neuen Projektmappenkonfiguration entspricht. Nehmen wir beispielsweise an, dass eine Projektmappe Projekt1 und "Projekt2" enthält. Projekt1 hat Projektkonfigurationen MyConfig1, Retail- und Debug. "Projekt2" hat die Projektkonfigurationen MyConfig2, Retail- und Debug.  
-  
- Wenn der Benutzer eine neue Projektmappenkonfiguration, die mit dem Namen MyConfig2 erstellt, bindet Projekt1 die Debug-Konfiguration an die Projektmappenkonfiguration standardmäßig an. "Projekt2" wird außerdem die MyConfig2-Konfiguration auf die Projektmappenkonfiguration standardmäßig gebunden.  
-  
+Die Liste der Konfigurationen für eine bestimmte Lösung wird im Dialogfeld Projektmappenkonfigurationen verwaltet.
+
+ Ein Benutzer kann weitere Projektmappenkonfigurationen, jeweils mit eigenen eindeutigen Namen erstellen. Wenn der Benutzer eine neue Projektmappenkonfiguration erstellt, standardmäßig die IDE auf den Namen der entsprechenden in den Projekten oder Debuggen, wenn keine entsprechenden Namen vorhanden ist. Der Benutzer kann die Auswahl, um die jeweiligen Anforderungen zu erfüllen, bei Bedarf ändern. Die einzige Ausnahme für dieses Verhalten ist, wenn es sich bei das Projekt eine Konfiguration unterstützt, die den Namen der neuen Projektmappenkonfiguration entspricht. Nehmen wir beispielsweise an, dass eine Projektmappe Projekt1 und "Projekt2" enthält. Projekt1 hat Projektkonfigurationen MyConfig1, Retail- und Debug. "Projekt2" hat die Projektkonfigurationen MyConfig2, Retail- und Debug.
+
+ Wenn der Benutzer eine neue Projektmappenkonfiguration, die mit dem Namen MyConfig2 erstellt, bindet Projekt1 die Debug-Konfiguration an die Projektmappenkonfiguration standardmäßig an. "Projekt2" wird außerdem die MyConfig2-Konfiguration auf die Projektmappenkonfiguration standardmäßig gebunden.
+
 > [!NOTE]
->  Die Bindung ist Groß-/Kleinschreibung.  
-  
- Wenn der Benutzer wählt die **Mehrfachauswahl** Element in der Dropdown-Konfigurationsliste die Umgebung zeigt das Dialogfeld, das die Liste mit verfügbaren Konfigurationen bereitstellt.  
-  
- ![Konfigurationen mit mehreren](../../extensibility/internals/media/vsmultiplecfgs.gif "VsMultipleCfgs")  
-Mehrere Konfigurationen  
-  
- In diesem Dialogfeld kann der Benutzer eine oder mehrere Konfigurationen auswählen. Nach der Auswahl entsprechend die Eigenschaftswerten, die auf das Dialogfeld Eigenschaftenseiten angezeigten die Schnittmenge der Werte für die ausgewählten Konfigurationen.  
-  
- Finden Sie unter [Projektmappenkonfiguration](../../extensibility/internals/solution-configuration.md) Informationen im Zusammenhang mit hinzufügen und Umbenennen von Konfigurationen für Projektmappen und Projekten.  
-  
- Projektabhängigkeiten und Buildreihenfolge sind unabhängige Projektmappenkonfiguration: d. h. Sie können nur einrichten eine Abhängigkeitsstruktur für alle Projekte in der Projektmappe. Mit der rechten Maustaste die Projektmappe oder das Projekt, und wählen entweder die **Projektabhängigkeiten** oder **Projektbuildreihenfolge** option öffnet der **Projektabhängigkeiten** Dialogfeld. Sie können auch aus geöffnet werden die **Projekt** Menü.  
-  
- ![Projektabhängigkeiten](../../extensibility/internals/media/vsprojdependencies.gif "VsProjDependencies")  
-Projektabhängigkeiten  
-  
- Projektabhängigkeiten bestimmt die Reihenfolge, in der Projekte erstellen. Verwenden Sie die Registerkarte "Ziele" im Dialogfeld, um die genaue Reihenfolge anzeigen, in der Projekte in einer Projektmappe erstellen, und verwenden die Registerkarte "Abhängigkeiten", um die Buildreihenfolge zu ändern.  
-  
+> Die Bindung ist Groß-/Kleinschreibung.
+
+ Wenn der Benutzer wählt die **Mehrfachauswahl** Element in der Dropdown-Konfigurationsliste die Umgebung zeigt das Dialogfeld, das die Liste mit verfügbaren Konfigurationen bereitstellt.
+
+ ![Konfigurationen mit mehreren](../../extensibility/internals/media/vsmultiplecfgs.gif "VsMultipleCfgs") mehrere Konfigurationen
+
+ In diesem Dialogfeld kann der Benutzer eine oder mehrere Konfigurationen auswählen. Nach der Auswahl entsprechend die Eigenschaftswerten, die auf das Dialogfeld Eigenschaftenseiten angezeigten die Schnittmenge der Werte für die ausgewählten Konfigurationen.
+
+ Finden Sie unter [Projektmappenkonfiguration](../../extensibility/internals/solution-configuration.md) Informationen im Zusammenhang mit hinzufügen und Umbenennen von Konfigurationen für Projektmappen und Projekten.
+
+ Projektabhängigkeiten und Buildreihenfolge sind unabhängige Projektmappenkonfiguration: d. h. Sie können nur einrichten eine Abhängigkeitsstruktur für alle Projekte in der Projektmappe. Mit der rechten Maustaste die Projektmappe oder das Projekt, und wählen entweder die **Projektabhängigkeiten** oder **Projektbuildreihenfolge** option öffnet der **Projektabhängigkeiten** Dialogfeld. Sie können auch aus geöffnet werden die **Projekt** Menü.
+
+ ![Projektabhängigkeiten](../../extensibility/internals/media/vsprojdependencies.gif "VsProjDependencies") Projektabhängigkeiten
+
+ Projektabhängigkeiten bestimmt die Reihenfolge, in der Projekte erstellen. Verwenden Sie die Registerkarte "Ziele" im Dialogfeld, um die genaue Reihenfolge anzeigen, in der Projekte in einer Projektmappe erstellen, und verwenden die Registerkarte "Abhängigkeiten", um die Buildreihenfolge zu ändern.
+
 > [!NOTE]
->  Projekte in der Liste, auf denen die Kontrollkästchen ausgewählt, aber werden abgeblendet angezeigt wurde von der Umgebung aufgrund der expliziten Abhängigkeiten, die gemäß der <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> oder <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> Schnittstellen und kann nicht geändert werden. Z. B. Hinzufügen eines Projektverweises aus einem [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Projekt in ein anderes Projekt fügt automatisch eine Buildabhängigkeit, die nur entfernt werden kann, indem Sie nacheinander den Verweis auf. Projekte, deren Kontrollkästchen deaktiviert sind und abgeblendet angezeigt werden, können nicht ausgewählt werden, da auf diese Weise eine Abhängigkeitsschleife erstellt würde (z. B. Projekt1 wäre hängt von "Projekt2" und "Projekt2" wäre Projekt1 abhängig), würde die Builds installieren.  
-  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Buildprozesse umfassen die typische kompilieren und Verknüpfen von Operationen, die mit einem einzelnen Buildbefehl aufgerufen werden. Zwei andere Buildprozesse können auch unterstützt werden: eine saubere Operation So löschen Sie alle Ausgabeelemente aus einem vorherigen Build und eine Überprüfung auf dem neuesten Stand, um festzustellen, ob ein Output-Element in einer Konfiguration geändert hat.  
-  
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> Objekte zurückgeben, eine entsprechende <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> (Merry <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>) ihre Buildprozesse zu verwalten. Um den Status eines Buildvorgangs zu melden, während es ausgeführt wird, die Konfigurationen die Aufrufe an <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildStatusCallback>, eine Schnittstelle, die von der Umgebung implementiert und ein anderes Objekt von buildstatusereignissen interessiert.  
-  
- Nachdem Sie erstellt haben, können Konfigurationseinstellungen verwendet werden, um zu bestimmen, und zwar unabhängig davon, ob sie unter der Kontrolle des Debuggers ausgeführt werden können. Implementieren von Konfigurationen <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg> zur Debugunterstützung.  
-  
- Nach der Implementierung der projektabhängigkeiten, können Sie die Abhängigkeiten über das Automatisierungsmodell programmgesteuert ändern. Rufen Sie <xref:EnvDTE.SolutionBuild.BuildDependencies%2A> im Automatisierungsmodell. Es gibt keine verfügbaren VSIP-API-Ebene-Schnittstellen, die die direkte Bearbeitung der Projektmappenbuild-Konfigurationen-Manager und ihre Eigenschaften zu ermöglichen.  
-  
- Darüber hinaus können Sie ein Raster im Projektfenster Abhängigkeiten bereitstellen. Weitere Informationen finden Sie unter [Anzeigeraster für Eigenschaften](../../extensibility/internals/properties-display-grid.md).  
-  
-## <a name="see-also"></a>Siehe auch  
- [Verwalten von Konfigurationsoptionen](../../extensibility/internals/managing-configuration-options.md)   
- [Projektkonfiguration für die Verwaltung der Bereitstellung](../../extensibility/internals/project-configuration-for-managing-deployment.md)   
- [Projektkonfiguration für die Ausgabe](../../extensibility/internals/project-configuration-for-output.md)
+> Projekte in der Liste, auf denen die Kontrollkästchen ausgewählt, aber werden abgeblendet angezeigt wurde von der Umgebung aufgrund der expliziten Abhängigkeiten, die gemäß der <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> oder <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> Schnittstellen und kann nicht geändert werden. Z. B. Hinzufügen eines Projektverweises aus einem [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Projekt in ein anderes Projekt fügt automatisch eine Buildabhängigkeit, die nur entfernt werden kann, indem Sie nacheinander den Verweis auf. Projekte, deren Kontrollkästchen deaktiviert sind und abgeblendet angezeigt werden, können nicht ausgewählt werden, da auf diese Weise eine Abhängigkeitsschleife erstellt würde (z. B. Projekt1 wäre hängt von "Projekt2" und "Projekt2" wäre Projekt1 abhängig), würde die Builds installieren.
+
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Buildprozesse umfassen die typische kompilieren und Verknüpfen von Operationen, die mit einem einzelnen Buildbefehl aufgerufen werden. Zwei andere Buildprozesse können auch unterstützt werden: eine saubere Operation So löschen Sie alle Ausgabeelemente aus einem vorherigen Build und eine Überprüfung auf dem neuesten Stand, um festzustellen, ob ein Output-Element in einer Konfiguration geändert hat.
+
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> Objekte zurückgeben, eine entsprechende <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> (Merry <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>) ihre Buildprozesse zu verwalten. Um den Status eines Buildvorgangs zu melden, während es ausgeführt wird, die Konfigurationen die Aufrufe an <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildStatusCallback>, eine Schnittstelle, die von der Umgebung implementiert und ein anderes Objekt von buildstatusereignissen interessiert.
+
+ Nachdem Sie erstellt haben, können Konfigurationseinstellungen verwendet werden, um zu bestimmen, und zwar unabhängig davon, ob sie unter der Kontrolle des Debuggers ausgeführt werden können. Implementieren von Konfigurationen <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg> zur Debugunterstützung.
+
+ Nach der Implementierung der projektabhängigkeiten, können Sie die Abhängigkeiten über das Automatisierungsmodell programmgesteuert ändern. Rufen Sie <xref:EnvDTE.SolutionBuild.BuildDependencies%2A> im Automatisierungsmodell. Es gibt keine verfügbaren VSIP-API-Ebene-Schnittstellen, die die direkte Bearbeitung der Projektmappenbuild-Konfigurationen-Manager und ihre Eigenschaften zu ermöglichen.
+
+ Darüber hinaus können Sie ein Raster im Projektfenster Abhängigkeiten bereitstellen. Weitere Informationen finden Sie unter [Anzeigeraster für Eigenschaften](../../extensibility/internals/properties-display-grid.md).
+
+## <a name="see-also"></a>Siehe auch
+- [Verwalten von Konfigurationsoptionen](../../extensibility/internals/managing-configuration-options.md)
+- [Projektkonfiguration für die Verwaltung der Bereitstellung](../../extensibility/internals/project-configuration-for-managing-deployment.md)
+- [Projektkonfiguration für die Ausgabe](../../extensibility/internals/project-configuration-for-output.md)

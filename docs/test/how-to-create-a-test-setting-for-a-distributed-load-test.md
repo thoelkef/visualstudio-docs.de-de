@@ -7,14 +7,13 @@ helpviewer_keywords:
 ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 4e145834210ea3c9aa2addd0673befe497592cda
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 1e55e4fd2e67c07110fcd3351e492ec94ccc47fa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967186"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950212"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Vorgehensweise: Erstellen einer Testeinstellung für einen verteilten Auslastungstest
 
@@ -26,11 +25,11 @@ Sie können z. B. den Adapter für diagnostische Daten des ASP.NET-Profilers ve
 
 Die Testeinstellungen für Visual Studio werden in einer Datei gespeichert. Die Testeinstellungen definieren die folgenden Informationen über jede Rolle:
 
--   den Satz von Rollen, der für die zu testende Anwendung erforderlich ist
+- den Satz von Rollen, der für die zu testende Anwendung erforderlich ist
 
--   die für die Testausführung zu verwendende Rolle
+- die für die Testausführung zu verwendende Rolle
 
--   die für jede Rolle zu verwendenden Diagnosedatenadapter
+- die für jede Rolle zu verwendenden Diagnosedatenadapter
 
 Beim Ausführen der Tests wählen Sie die aktiven Testeinstellungen anhand der erforderlichen Elemente für diesen bestimmten Testlauf aus. Die Testeinstellungsdatei wird als Teil der Projektmappe gespeichert. Der Dateiname hat die Erweiterung *.testsettings*.
 
@@ -44,33 +43,33 @@ Befolgen Sie diese Schritte zum Erstellen und Entfernen von Testeinstellungen in
 
 ### <a name="to-add-a-test-settings-for-a-distributed-load-test"></a>So fügen Sie Testeinstellungen für einen verteilten Auslastungstest hinzu
 
-1.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **Projektmappenelemente**, verweisen Sie auf **Hinzufügen**, und klicken Sie anschließend auf **Neues Element**.
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **Projektmappenelemente**, verweisen Sie auf **Hinzufügen**, und klicken Sie anschließend auf **Neues Element**.
 
      Das Dialogfeld **Neues Element hinzufügen** wird angezeigt.
 
-2.  Klicken Sie im Bereich **Installierte Vorlagen** auf die Option **Testeinstellungen**.
+2. Klicken Sie im Bereich **Installierte Vorlagen** auf die Option **Testeinstellungen**.
 
-3.  (Optional) Ändern Sie Im Feld **Name** den Namen der Testeinstellungsdatei.
+3. (Optional) Ändern Sie Im Feld **Name** den Namen der Testeinstellungsdatei.
 
-4.  Wählen Sie **Hinzufügen** aus.
+4. Wählen Sie **Hinzufügen** aus.
 
      Die neue Testeinstellungsdatei wird im **Projektmappen-Explorer** unter dem Ordner **Projektmappenelemente** angezeigt.
 
     > [!NOTE]
     > Die in Visual Studio Enterprise angezeigte Liste der Testeinstellungen wird von der Liste der Testeinstellungsdateien im Ordner **Projektmappenelemente** abgeleitet. Die Testeinstellungsdateien im Ordner **Projektmappenelemente** werden z.B. angezeigt, wenn Sie die im Menü **Test** enthaltene Option **Aktive Testeinstellungen auswählen** verwenden. Wenn Sie eine Testeinstellungsdatei an einen anderen Speicherort der Projektmappenhierarchie verschieben, hat dies zur Folge, dass diese in der integrierten Entwicklungsumgebung von Visual Studio nicht mehr als Testeinstellung verwendet werden kann.
 
-5.  Das Dialogfeld **Testeinstellungen** wird angezeigt. Die Seite **Allgemein** ist ausgewählt.
+5. Das Dialogfeld **Testeinstellungen** wird angezeigt. Die Seite **Allgemein** ist ausgewählt.
 
      Sie können die Testeinstellungswerte jetzt bearbeiten und speichern.
 
     > [!NOTE]
     > Jeder erstellte Satz von Testeinstellungen wird im Menü **Test** als Option unter **Aktive Testeinstellungen auswählen** und **Testeinstellungen bearbeiten** aufgeführt.
 
-6.  Geben Sie unter **Name** den Namen für die Testeinstellungen ein.
+6. Geben Sie unter **Name** den Namen für die Testeinstellungen ein.
 
-7.  (Optional) Geben Sie unter **Beschreibung** eine Beschreibung für die Testeinstellung ein, damit andere Teammitglieder ihren Zweck erkennen können.
+7. (Optional) Geben Sie unter **Beschreibung** eine Beschreibung für die Testeinstellung ein, damit andere Teammitglieder ihren Zweck erkennen können.
 
-8.  (Optional) Um das Standardnamensschema für die Testläufe auszuwählen, wählen Sie **Standardbenennungsschema** aus. Um ein eigenes Namensschema zu definieren, wählen Sie **Benutzerdefiniertes Schema** aus, und geben Sie dann den Text ein, der in **Präfixtext** angezeigt werden soll. Wenn Sie das Datum und den Zeitstempel an den Testlaufnamen anfügen möchten, wählen Sie **Datums-/Zeitstempel anfügen** aus.
+8. (Optional) Um das Standardnamensschema für die Testläufe auszuwählen, wählen Sie **Standardbenennungsschema** aus. Um ein eigenes Namensschema zu definieren, wählen Sie **Benutzerdefiniertes Schema** aus, und geben Sie dann den Text ein, der in **Präfixtext** angezeigt werden soll. Wenn Sie das Datum und den Zeitstempel an den Testlaufnamen anfügen möchten, wählen Sie **Datums-/Zeitstempel anfügen** aus.
 
 9. Klicken Sie auf **Rollen**.
 
@@ -133,7 +132,7 @@ Befolgen Sie diese Schritte zum Erstellen und Entfernen von Testeinstellungen in
     |**Netzwerkemulation:** Mit einer Testeinstellung können Sie angeben, dass Sie eine künstliche Netzwerklast auf den Test anwenden möchten. Die Netzwerkemulation wirkt sich auf die Kommunikation vom und zum Computer aus, indem eine bestimmte Netzwerkverbindungsgeschwindigkeit, z. B. DFÜ, emuliert wird. **Hinweis**:  Die Netzwerkemulation kann nicht verwendet werden, um die Netzwerkverbindungsgeschwindigkeit zu erhöhen.|Der Netzwerkemulationsadapter wird von Auslastungstests ignoriert. Stattdessen verwenden Auslastungstests die Einstellungen, die in der Netzwerkmischung des Auslastungstestszenarios angegeben sind.<br /><br /> Weitere Informationen finden Sie unter [Angeben von virtuellen Netzwerktypen](../test/specify-virtual-network-types-in-a-load-test-scenario.md).||
     |**Systeminformationen:** Eine Testeinstellung kann so eingerichtet werden, dass sie die Systeminformationen zu den Computern einschließt, auf denen die Systeminformationsdiagnose und der Datensammler ausgeführt werden. Die Systeminformationen werden in den Testergebnissen mit einer Testeinstellung angegeben.|![Informationssymbol](../test/media/vc364f4.gif)<br /><br /> Sie können Systeminformationen sowohl für die Auslastungs-Agents als auch für das getestete System sammeln.|Zur Erfassung dieser Informationen ist keine Konfiguration erforderlich.|
     |**Testauswirkungen:** Sie können Informationen zu den Methoden des Anwendungscodes erfassen, die beim Ausführen eines Testfalls verwendet wurden. Diese können zusammen mit von Entwicklern am Anwendungscode vorgenommenen Änderungen verwendet werden, um zu ermitteln, auf welche Tests sich diese Entwicklungsänderungen ausgewirkt haben.|Bei Auslastungstests werden keine Testauswirkungsdaten erfasst.||
-    |**Videorekorder:** Sie können beim Ausführen eines automatisierten Tests eine Videoaufzeichnung der Desktopsitzung erstellen. Dies kann nützlich sein, um die Benutzeraktionen für einen Test der programmierten UI zu sehen. Das Video kann anderen Teammitgliedern helfen, Anwendungsprobleme zu isolieren, die schwer reproduzierbar sind. **Hinweis**:  Bei der Remoteausführung von Tests funktioniert die Videoaufzeichnung nicht, wenn der Agent nicht im interaktiven Prozessmodus ausgeführt wird.|![Symbol „Wichtig“](../test/media/vc364f3.gif) **Warnung:**  Es wird davon abgeraten, den Videoaufzeichnungsadapter für Auslastungstests zu verwenden.|[Vorgehensweise: Einschließen von Bildschirm- und Stimmaufnahmen während der Tests mit Testeinstellungen](../test/how-to-include-recordings-of-the-screen-and-voice-during-tests.md)|
+    |**Videorekorder:** Sie können beim Ausführen eines automatisierten Tests eine Videoaufzeichnung der Desktopsitzung erstellen. Dies kann nützlich sein, um die Benutzeraktionen für einen Test der codierten UI zu sehen. Das Video kann anderen Teammitgliedern helfen, Anwendungsprobleme zu isolieren, die schwer reproduzierbar sind. **Hinweis**:  Bei der Remoteausführung von Tests funktioniert die Videoaufzeichnung nicht, wenn der Agent nicht im interaktiven Prozessmodus ausgeführt wird.|![Symbol „Wichtig“](../test/media/vc364f3.gif) **Warnung:**  Es wird davon abgeraten, den Videoaufzeichnungsadapter für Auslastungstests zu verwenden.|[Vorgehensweise: Einschließen von Bildschirm- und Stimmaufnahmen während der Tests mit Testeinstellungen](../test/how-to-include-recordings-of-the-screen-and-voice-during-tests.md)|
 
 19. Klicken Sie auf **Bereitstellung**.
 
@@ -155,27 +154,27 @@ Befolgen Sie diese Schritte zum Erstellen und Entfernen von Testeinstellungen in
 
      Die Seite **Setup- und Bereinigungsskripts** wird angezeigt.
 
-    1.  Geben Sie den Speicherort der Skriptdatei unter **Setupskript** ein, oder klicken Sie auf die Auslassungspunkte (**…**), um das Setupskript zu suchen.
+    1. Geben Sie den Speicherort der Skriptdatei unter **Setupskript** ein, oder klicken Sie auf die Auslassungspunkte (**…**), um das Setupskript zu suchen.
 
-    2.  Geben Sie den Speicherort der Skriptdatei unter **Bereinigungsskript** ein, oder klicken Sie auf die Auslassungspunkte (**…**), um das Bereinigungsskript zu suchen.
+    2. Geben Sie den Speicherort der Skriptdatei unter **Bereinigungsskript** ein, oder klicken Sie auf die Auslassungspunkte (**…**), um das Bereinigungsskript zu suchen.
 
 24. Um die Tests mithilfe eines anderen Hosts auszuführen, klicken Sie auf **Hosts**.
 
-    1.  Stellen Sie sicher, dass unter **Hosttyp** die Option **Standard** ausgewählt ist.
+    1. Stellen Sie sicher, dass unter **Hosttyp** die Option **Standard** ausgewählt ist.
 
         > [!NOTE]
         > Die Option **ASP.NET** für **Hosttyp** wird in Auslastungstests nicht unterstützt.
 
-    2.  Wählen Sie mithilfe der Option **Tests als 32-Bit- oder 64-Bit-Prozess ausführen** aus, ob Sie die Webleistungs- und Komponententests in den Auslastungstests als 32-Bit- oder 64-Bit-Prozesse ausführen möchten.
+    2. Wählen Sie mithilfe der Option **Tests als 32-Bit- oder 64-Bit-Prozess ausführen** aus, ob Sie die Webleistungs- und Komponententests in den Auslastungstests als 32-Bit- oder 64-Bit-Prozesse ausführen möchten.
 
         > [!NOTE]
         > Maximale Flexibilität erhalten Sie, wenn Sie die Projekte für einen Webleistungs- und Auslastungstest mit der Konfiguration **Beliebige CPU** kompilieren. Die Ausführung ist dann sowohl auf 32- als auch auf 64-Bit-Agents möglich. Das Kompilieren von Projekten für einen Webleistungs- und Auslastungstest mit der **64-Bit-Konfiguration** bietet keinen Vorteil.
 
 25. (Optional) Zur Begrenzung der Dauer jedes Testlaufs und der einzelnen Tests wählen Sie **Test-Timeouts** aus.
 
-    1.  Um einen Testlauf bei Überschreitung eines Zeitlimits abzubrechen, wählen Sie **Testlauf abbrechen, wenn die gesamte Zeitdauer folgenden Wert überschreitet** aus und geben einen Wert für die Zeitdauer ein.
+    1. Um einen Testlauf bei Überschreitung eines Zeitlimits abzubrechen, wählen Sie **Testlauf abbrechen, wenn die gesamte Zeitdauer folgenden Wert überschreitet** aus und geben einen Wert für die Zeitdauer ein.
 
-    2.  Wenn ein einzelner Test bei Überschreitung eines Zeitlimits fehlschlagen soll, wählen Sie **Einzelnen Test als gescheitert markieren, wenn die Ausführungszeit folgenden Wert überschreitet** aus und geben einen Wert für diese Zeitdauer ein.
+    2. Wenn ein einzelner Test bei Überschreitung eines Zeitlimits fehlschlagen soll, wählen Sie **Einzelnen Test als gescheitert markieren, wenn die Ausführungszeit folgenden Wert überschreitet** aus und geben einen Wert für diese Zeitdauer ein.
 
 26. Überspringen Sie **Komponententest**. Diese Einstellungen werden von Auslastungstests nicht verwendet.
 

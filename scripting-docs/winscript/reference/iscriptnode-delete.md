@@ -2,7 +2,6 @@
 title: IScriptNode::Delete | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cce802cc1a6d63001cfbed020592b30a9d8dab1b
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 41bf932b242865b1deac4c61db400f973bd0b00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54094795"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62787159"
 ---
 # <a name="iscriptnodedelete"></a>IScriptNode::Delete
 Löscht die Struktur dieses Objekts.  

@@ -8,34 +8,34 @@ helpviewer_keywords:
 ms.assetid: 3e96e838-5675-46bb-99cf-40d420086038
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c312b6d89812a76f5fc8135eb18f02f0afedc5ec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a792bc7b0c64b7e509e6d426c8b4f33c9f816276
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940624"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908561"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Verwandte Dienste und Schnittstellen (Quellcodeverwaltungs-VSPackage)
-Dieser Abschnitt enthält alle VSPackage sammlungsbezogene Schnittstellen in der Quellcode der [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. Das Quellcodeverwaltungs-VSPackage implementiert einige dieser Schnittstellen und andere um Aufgaben der quellcodeverwaltung zu erreichen.  
-  
-## <a name="interfaces-implemented-by-and-for-source-control-vspackages"></a>Schnittstellen implementiert und für Quellcodeverwaltungs-VSPackages  
- Die folgenden Schnittstellen werden beschrieben, der [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], und das Quellcodeverwaltungs-VSPackage implementiert eine Teilmenge davon abhängig von der gewünschten Funktionsumfang. Einige Schnittstellen sind gekennzeichnet. als erforderlich und muss mit jeder Datenquellen-Steuerelement VSPackage implementiert werden.  
-  
- Zu diesen Schnittstellen, die ein Paket nicht implementiert, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] stellt eine Standardimplementierung bereit. Beachten Sie, dass die standardmäßige Implementierung für den Fall konzipiert ist, wenn keine VSPackage registriert ist und kein Projekt gesteuert wird. Ein ordentlich geschriebenen Quellcodeverwaltungs-VSPackage implementiert alle erforderlichen Schnittstellen anstatt über überlassen sie die standardmäßige Implementierung dieser Schnittstellen.  
-  
- Ein Quellcodeverwaltungs-VSPackage muss einen privaten Dienst implementieren, der einige oder alle der folgenden Schnittstellen kapselt.  
-  
- Schnittstellen sind:  
-  
--   Erforderlich: Die entsprechende Entität (Datenquellen-Steuerelement VSPackage, Quellcode-Verwaltungsstub Projekt) muss die Schnittstelle implementieren.  
-  
--   Empfohlen: Die Entität sollten diese Schnittstelle implementieren; Andernfalls kann Quellcodeverwaltungsfunktionen beschränkt sein.  
-  
--   Optional: die Entität kann diese Schnittstelle, um einen größeren Funktionsumfang bieten implementieren.  
-  
+Dieser Abschnitt enthält alle VSPackage sammlungsbezogene Schnittstellen in der Quellcode der [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. Das Quellcodeverwaltungs-VSPackage implementiert einige dieser Schnittstellen und andere um Aufgaben der quellcodeverwaltung zu erreichen.
+
+## <a name="interfaces-implemented-by-and-for-source-control-vspackages"></a>Schnittstellen implementiert und für Quellcodeverwaltungs-VSPackages
+ Die folgenden Schnittstellen werden beschrieben, der [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], und das Quellcodeverwaltungs-VSPackage implementiert eine Teilmenge davon abhängig von der gewünschten Funktionsumfang. Einige Schnittstellen sind gekennzeichnet. als erforderlich und muss mit jeder Datenquellen-Steuerelement VSPackage implementiert werden.
+
+ Zu diesen Schnittstellen, die ein Paket nicht implementiert, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] stellt eine Standardimplementierung bereit. Beachten Sie, dass die standardmäßige Implementierung für den Fall konzipiert ist, wenn keine VSPackage registriert ist und kein Projekt gesteuert wird. Ein ordentlich geschriebenen Quellcodeverwaltungs-VSPackage implementiert alle erforderlichen Schnittstellen anstatt über überlassen sie die standardmäßige Implementierung dieser Schnittstellen.
+
+ Ein Quellcodeverwaltungs-VSPackage muss einen privaten Dienst implementieren, der einige oder alle der folgenden Schnittstellen kapselt.
+
+ Schnittstellen sind:
+
+- Erforderlich: Die entsprechende Entität (Datenquellen-Steuerelement VSPackage, Quellcode-Verwaltungsstub Projekt) muss die Schnittstelle implementieren.
+
+- Empfohlen: Die Entität sollten diese Schnittstelle implementieren; Andernfalls kann Quellcodeverwaltungsfunktionen beschränkt sein.
+
+- Optional: die Entität kann diese Schnittstelle, um einen größeren Funktionsumfang bieten implementieren.
+
 | Interface | Zweck | Implementiert von | Implementiert werden? |
 | - | - |--------------------------|-------------|
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> | Editoren rufen Sie diese Schnittstelle vor dem ändern oder Speichern einer Datei. Das Datenquellen-Steuerelement VSPackage kann die Datei auschecken oder verweigern den Vorgang aus, wenn das Auschecken fehlschlägt. | Datenquellen-Steuerelement VSPackage | Empfohlen |
@@ -60,6 +60,6 @@ Dieser Abschnitt enthält alle VSPackage sammlungsbezogene Schnittstellen in der
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> | Diese Schnittstelle wird verwendet, um die Quelle in der Projektmappendatei (.sln) Einstellungen zu speichern. Die Einstellungen umfassen den Speicherort auf dem Quellcode und die Statusflags für Quelle-Steuerelement. | Datenquellen-Steuerelement VSPackage | Empfohlen |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> | Diese Schnittstelle wird verwendet, um die Einstellungen der quellcodeverwaltung in der Projektmappendatei (SUO)-Optionen zu speichern. Dies kann es sich um benutzerspezifische Quellcode-verwaltungseinstellungen, z. B. die aktuelle Position des Benutzers Eintragung umfassen. | Datenquellen-Steuerelement VSPackage | Empfohlen |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> | Diese Schnittstelle wird zum Überwachen von Ereignissen verwendet, damit Sie Vorgänge wie z. B. das Einchecken von Dateien des Projekts vor dem Schließen von Projektmappen oder neue Dateien aus der quellcodeverwaltung abrufen, beim Öffnen eines Projekts ausführen. | Datenquellen-Steuerelement VSPackage | Empfohlen |
-  
-## <a name="see-also"></a>Siehe auch  
- [Entwurfselemente](../../extensibility/internals/source-control-vspackage-design-elements.md)
+
+## <a name="see-also"></a>Siehe auch
+- [Entwurfselemente](../../extensibility/internals/source-control-vspackage-design-elements.md)

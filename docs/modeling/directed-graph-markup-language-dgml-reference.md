@@ -4,16 +4,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 406f92a9d7003f2c0fd36859a56b011e8a8a5f92
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b473dc706cd7183835c5d84091fb53e45337c013
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899784"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62834216"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Referenz zur Directed Graph Markup Language (DGML)
 
@@ -24,7 +23,7 @@ Beachten Sie, dass einige Versionen von Visual Studio unterstützen nur eine Tei
 > [!NOTE]
 > Wenn Sie eine DGML-Datei bearbeiten, unterstützt Sie IntelliSense beim Auffinden der für die Elemente verfügbaren Attribute und der zugehörigen Werte. Wenn Sie Farben in Attributen angeben möchten, verwenden Sie Namen für allgemeine Farben (z. B. "Blau") oder ARGB-Hexadezimalwerte (z. B. "#ffa0b1c3"). DGML verwendet eine kleine Teilmenge der WPF (Windows Presentation Foundation)-Farbdefinitionsformate. Weitere Informationen finden Sie unter [Colors-Klasse](http://go.microsoft.com/fwlink/?LinkId=182345).
 
-##  <a name="DGML"></a> DGML-syntax
+## <a name="DGML"></a> DGML-syntax
 
 In der folgenden Tabelle werden verschiedene in DGML verwendete Elementtypen beschrieben:
 
@@ -301,7 +300,7 @@ In der folgenden Tabelle werden verschiedene in DGML verwendete Elementtypen bes
   </DirectedGraph>
   ```
 
-###  <a name="AddAlias"></a> Aliase für häufig verwendete Pfade
+### <a name="AddAlias"></a> Aliase für häufig verwendete Pfade
 
 Das Ersetzen häufig verwendeter Pfade durch Aliase trägt dazu bei, die Größe der DGML-Datei und die erforderliche Zeit zum Laden und Speichern der Datei zu reduzieren. Fügen Sie zum Erstellen eines Alias am Ende der DGML-Datei einen `<Paths></Paths>`-Abschnitt hinzu. Fügen Sie in diesem Abschnitt ein `<Path/>`-Element hinzu, um einen Alias für den Pfad zu definieren:
 

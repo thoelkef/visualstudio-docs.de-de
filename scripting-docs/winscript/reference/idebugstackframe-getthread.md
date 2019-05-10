@@ -2,7 +2,6 @@
 title: IDebugStackFrame::GetThread | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6f6f21c553197a3967619b9aedc25779444185e4
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 6926347c67895b3860964a559898691dd3e61e6f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54095744"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935059"
 ---
 # <a name="idebugstackframegetthread"></a>IDebugStackFrame::GetThread
 Gibt die Threads mit Stapelrahmen zurück.  

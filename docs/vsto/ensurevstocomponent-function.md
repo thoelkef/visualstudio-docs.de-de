@@ -7,32 +7,32 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 88ed4de9f126f819f0cbdc7f3f49b4798ccb2195
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f99ccb4cb76f942852716abf1fcb0c0f280decbd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838962"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797610"
 ---
 # <a name="ensurevstocomponent-function"></a>EnsureVSTOComponent-Funktion
-  Diese API unterstützt die Office-Infrastruktur und ist nicht direkt aus Ihrem Code verwendet werden soll.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```csharp  
-HRESULT EnsureVSTOComponent(  
-    IVSTProject *pProject  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
-  
-|Parameter|Beschreibung|  
-|---------------|-----------------|  
-|*pProject*|Verwenden Sie nicht.|  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn die Funktion erfolgreich ist, gibt es **S_OK**. Wenn die Funktion fehlschlägt, wird einen Fehlercode zurückgegeben.  
+  Diese API unterstützt die Office-Infrastruktur und ist nicht direkt aus Ihrem Code verwendet werden soll.
+
+## <a name="syntax"></a>Syntax
+
+```csharp
+HRESULT EnsureVSTOComponent(
+    IVSTProject *pProject
+);
+```
+
+#### <a name="parameters"></a>Parameter
+
+|Parameter|Beschreibung|
+|---------------|-----------------|
+|*pProject*|Verwenden Sie nicht.|
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn die Funktion erfolgreich ist, gibt es **S_OK**. Wenn die Funktion fehlschlägt, wird einen Fehlercode zurückgegeben.

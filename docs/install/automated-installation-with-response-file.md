@@ -1,9 +1,8 @@
 ---
 title: Automatisieren der Installation mit einer Antwortdatei
 description: Erfahren Sie mehr über das Erstellen einer JSON-Antwortdatei, mit der Sie Ihre Visual Studio-Installation automatisieren können.
-ms.date: 08/14/2017
+ms.date: 03/30/2019
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - response file
@@ -12,15 +11,17 @@ helpviewer_keywords:
 - command-line
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4262e3d56793e1c664dc51a46403c8f9996e7bb7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: eb822a275f55b8c0f833f0c284aba2fd663a27fd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920296"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974448"
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>Gewusst wie: Definieren von Einstellungen in einer Antwortdatei
 
@@ -49,6 +50,8 @@ Sie können die Datei `response.json` aktualisieren, die in einem Offlinelayouto
 
 Die `response.json`-Basisdatei in einem Layout sollte dem folgenden Beispiel ähneln, es sei denn, sie enthält den Wert für das Produkt und den Kanal, die bzw. den Sie installieren möchten:
 
+::: moniker range="vs-2017"
+
 ```json
 {
   "installChannelUri": ".\\ChannelManifest.json",
@@ -59,11 +62,29 @@ Die `response.json`-Basisdatei in einem Layout sollte dem folgenden Beispiel äh
 }
 ```
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+```json
+{
+  "installChannelUri": ".\\ChannelManifest.json",
+  "channelUri": "https://aka.ms/vs/16/release/channel",
+  "installCatalogUri": ".\\Catalog.json",
+  "channelId": "VisualStudio.16.Release",
+  "productId": "Microsoft.VisualStudio.Product.Enterprise"
+}
+```
+
+::: moniker-end
+
 Beim Erstellen oder Aktualisieren eines Layouts wird auch eine „response.template.json“-Datei erstellt.  Diese Datei enthält alle Workloads, Komponenten und die Sprachen-IDs, die verwendet werden können.  Diese Datei wird als Vorlage für all das bereitgestellt, was in einer benutzerdefinierten Installation einbezogen werden kann.  Administratoren können diese Datei als Ausgangspunkt für eine benutzerdefinierte Antwortdatei verwenden.  Entfernen Sie einfach all die IDs, die Sie nicht installieren möchten, und speichern Sie das Ergebnis in Ihrer eigenen Antwortdatei.  Passen Sie die Datei „response.template.json“ nicht an. Andernfalls gehen die Änderungen bei dem nächsten Layoutupdate verloren.
 
 ## <a name="example-layout-response-file-content"></a>Beispiel des Inhalts einer Layoutantwortdatei
 
 Bei folgenden Beispiel wird Visual Studio Enterprise mit sechs allgemeinen Workloads und Komponenten sowie den Benutzeroberflächensprachen Englisch und Französisch installiert. Sie können dieses Beispiel als Vorlage nutzen. Ändern Sie dazu lediglich die Workloads und Komponenten in diejenigen, die Sie installieren möchten:
+
+::: moniker range="vs-2017"
 
 ```json
 {
@@ -96,8 +117,45 @@ Bei folgenden Beispiel wird Visual Studio Enterprise mit sechs allgemeinen Workl
 }
 ```
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+```json
+{
+  "installChannelUri": ".\\ChannelManifest.json",
+  "channelUri": "https://aka.ms/vs/16/release/channel",
+  "installCatalogUri": ".\\Catalog.json",
+  "channelId": "VisualStudio.16.Release",
+  "productId": "Microsoft.VisualStudio.Product.Enterprise",
+
+  "installPath": "C:\\VS2019",
+  "quiet": false,
+  "passive": false,
+  "includeRecommended": true,
+  "norestart": false,
+
+  "addProductLang": [
+    "en-US",
+    "fr-FR"
+    ],
+
+    "add": [
+        "Microsoft.VisualStudio.Workload.ManagedDesktop",
+        "Microsoft.VisualStudio.Workload.Data",
+        "Microsoft.VisualStudio.Workload.NativeDesktop",
+        "Microsoft.VisualStudio.Workload.NetWeb",
+        "Microsoft.VisualStudio.Workload.Office",
+        "Microsoft.VisualStudio.Workload.Universal",
+        "Component.GitHub.VisualStudio"
+    ]
+}
+```
+
+::: moniker-end
+
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Arbeitsauslastungs- und Komponenten-IDs von Visual Studio 2017](workload-and-component-ids.md)
+* [Arbeitsauslastung und Komponenten-IDs von Visual Studio](workload-and-component-ids.md)

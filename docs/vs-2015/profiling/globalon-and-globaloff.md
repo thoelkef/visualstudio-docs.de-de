@@ -1,25 +1,20 @@
 ---
 title: GlobalOn und GlobalOff | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 24b0ed68-d19e-473e-9af3-252c11d82bcf
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b8176f32a6d235a0df1c57b4e5ba9cf6e9268ccb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: eae720bdd904c7b904c906022cea700512167617
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762593"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62434227"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn und GlobalOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,6 +89,3 @@ VSPerfCmd /Shutdown
  [Profilerstellung für eigenständige Anwendungen](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Erstellen von Dienstprofilen](../profiling/command-line-profiling-of-services.md)
-
-
-

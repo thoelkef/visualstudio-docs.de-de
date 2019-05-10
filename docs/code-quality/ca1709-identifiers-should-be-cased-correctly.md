@@ -1,7 +1,6 @@
 ---
-title: 'CA1709: Bezeichner sollten beachtet werden'
+title: 'CA1709: Bei Bezeichnern sollte die Groß-/Kleinschreibung beachtet werden.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - IdentifiersShouldBeCasedCorrectly
@@ -12,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: f633d1a7-4ca4-40ae-b207-ec571c5fb083
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e954b3e3d346775d87cfcc8bb46bddca2b16056a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f692218cd051338a6bd4e83a07d985bb52f907e6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881726"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546234"
 ---
-# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Bezeichner sollten beachtet werden
+# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Bei Bezeichnern sollte die Groß-/Kleinschreibung beachtet werden.
 
 |||
 |-|-|

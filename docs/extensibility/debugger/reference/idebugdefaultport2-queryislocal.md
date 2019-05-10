@@ -1,30 +1,32 @@
 ---
 title: IDebugDefaultPort2::QueryIsLocal | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugDefaultPort2::QueryIsLocal
 helpviewer_keywords:
 - IDebugDefaultPort2::QueryIsLocal
 ms.assetid: 1a42e774-c6ed-419a-a0e3-cab5778652ca
-author: gregvanl
+caps.latest.revision: 11
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: a5becc75e76a0e219664ef07c148620fb2bc1e37
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1e9ca74b007c3da5ac3674813ff37c718cdd801e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900398"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62921743"
 ---
 # <a name="idebugdefaultport2queryislocal"></a>IDebugDefaultPort2::QueryIsLocal
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Diese Methode bestimmt, ob dieser Port auf dem lokalen Computer ist.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT QueryIsLocal(  
    void  
 );  

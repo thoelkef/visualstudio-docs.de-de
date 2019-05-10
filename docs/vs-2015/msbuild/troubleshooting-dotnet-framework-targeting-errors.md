@@ -1,14 +1,9 @@
 ---
 title: Problembehandlung bei .NET Framework-Zielversionsfehlern | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: troubleshooting
 f1_keywords:
 - vs.FrameworkTargetingErrors
 - MSBuild.ResolveAssemblyReference.FailedToResolveReferenceBecausePrimaryAssemblyInExclusionList
@@ -22,18 +17,17 @@ ms.assetid: 830e3e45-9a93-4279-a249-75b84599aefb
 caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: acadd858a1327380fc606bed36994ba0dda47169
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7795a5577a385542828a3d7c14670696f630544d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430438"
 ---
 # <a name="troubleshooting-net-framework-targeting-errors"></a>Problembehandlung bei .NET Framework-Zielversionsfehlern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Dieses Thema beschreibt MSBuild-Fehler, die aufgrund von Verweisproblemen auftreten könnten, und wie Sie diese Fehler auflösen können.  
   
 ## <a name="you-have-referenced-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>Sie haben auf ein Projekt oder eine Assembly verwiesen, das bzw. die auf eine andere Version von .NET Framework abzielt  
@@ -60,13 +54,10 @@ Dieses Thema beschreibt MSBuild-Fehler, die aufgrund von Verweisproblemen auftre
 ```  
   
 > [!NOTE]
->  Nach Schließen und erneutem Öffnen des Projekts sollten Sie es auch neu erstellen, um sicherzustellen, dass alle Verweise ordnungsgemäß aufgelöst werden.  
+> Nach Schließen und erneutem Öffnen des Projekts sollten Sie es auch neu erstellen, um sicherzustellen, dass alle Verweise ordnungsgemäß aufgelöst werden.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Gewusst wie: .NET Framework-Version als Ziel](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
+ [Vorgehensweise: .NET Framework-Version als Ziel](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
  [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)   
  [Festlegen einer bestimmten .NET-Framework-Zielversion](../ide/targeting-a-specific-dotnet-framework-version.md)   
  [Festlegen von Zielversionen](../msbuild/msbuild-multitargeting-overview.md)
-
-
-

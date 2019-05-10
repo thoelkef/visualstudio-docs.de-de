@@ -1,21 +1,20 @@
 ---
 title: Installieren von Test-Agents und Testcontrollern
-ms.date: 10/24/2018
-ms.prod: visual-studio-dev15
+ms.date: 04/17/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - configure test agents, test lab
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fc0ea16ea10f4479fb635d4b84cb2eaee24c8b7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c6597c47fd272beec2c82f7d4c2644291b168b5f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879869"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965414"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Installieren von Test-Agents und Testcontrollern
 
@@ -25,7 +24,7 @@ Sie könnten auch erwägen, ob es besser wäre, stattdessen [Build- oder Release
 
 ## <a name="system-requirements"></a>Systemanforderungen
 
-Die folgende Tabelle zeigt die Systemvoraussetzungen für die Installation des Test-Agent oder Testcontrollers für Visual Studio 2017:
+Die folgende Tabelle zeigt die Systemvoraussetzungen für die Installation des Test-Agent oder Testcontrollers für Visual Studio:
 
 | Element | Anforderungen |
 | ---- | ------------ |
@@ -35,9 +34,9 @@ Die folgende Tabelle zeigt die Systemvoraussetzungen für die Installation des T
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Installieren von Testcontroller und Test-Agents
 
-Sie können über [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents) Agents für Visual Studio 2017 herunterladen. Suchen Sie nach *Agents für Visual Studio 2017*, wählen Sie entweder *Agent* oder *Controller* aus, und klicken Sie auf *Herunterladen*. Führen Sie zum Installieren des Test-Agents oder -controllers die ausführbare Datei aus, die Sie heruntergeladen haben.
+Sie können über [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents) Agents für Visual Studio herunterladen. Suchen Sie nach *Agents für Visual Studio 2019*, wählen Sie entweder *Agent* oder *Controller* aus, und klicken Sie auf *Herunterladen*. Führen Sie zum Installieren des Test-Agents oder -controllers die ausführbare Datei aus, die Sie heruntergeladen haben.
 
-Sie können Agents für Visual Studio 2015 und Visual Studio 2013 von der Seite mit [älteren Downloads](https://visualstudio.microsoft.com/vs/older-downloads/) herunterladen.
+Sie können Agents für Visual Studio 2017, Visual Studio 2015 und Visual Studio 2013 von der Seite mit [älteren Downloads](https://visualstudio.microsoft.com/vs/older-downloads/) herunterladen.
 
 Diese Installer stehen als ISO-Dateien für die unkomplizierte Installation auf virtuellen Computern zur Verfügung.
 

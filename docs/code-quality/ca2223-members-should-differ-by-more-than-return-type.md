@@ -1,7 +1,6 @@
 ---
-title: 'CA2223: Member sollten sich durch mehr als den Rückgabetyp unterscheiden.'
+title: 'CA2223: Member sollten sich durch mehr als nur den Rückgabetyp unterscheiden.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - MembersShouldDifferByMoreThanReturnType
@@ -12,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: eb326d9f-50d9-48cb-84be-d41c84a8fe09
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c09239fbb904edac6481cee372b9e96e0183b62a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3e4e7aa59d273242bd8b97fd4f2777b7edcb5990
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890779"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806666"
 ---
-# <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: Member sollten sich durch mehr als den Rückgabetyp unterscheiden.
+# <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: Member sollten sich durch mehr als nur den Rückgabetyp unterscheiden.
 
 |||
 |-|-|

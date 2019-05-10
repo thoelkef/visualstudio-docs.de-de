@@ -1,22 +1,21 @@
 ---
 title: Webanwendungsvorlagen für Python
 description: Visual Studio stellt Vorlagen für in Python mithilfe der Bottle-, Flask- und Django-Frameworks erstellte Webanwendungen zur Verfügung. Der Support schließt Debugkonfigurationen und die Veröffentlichung in Azure App Service mit ein.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
+ms.date: 01/28/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 29730f6dfa2d220759a5e563305e4e0cbb9675c2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 952c4d9ab82275ff7b1550a3704e89b93c6260a3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954814"
 ---
 # <a name="python-web-application-project-templates"></a>Projektvorlagen für Python-Webanwendungen
 

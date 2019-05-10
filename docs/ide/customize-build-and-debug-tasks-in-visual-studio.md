@@ -1,7 +1,6 @@
 ---
 title: Anpassen von Build- und Debugtasks mithilfe von „tasks.vs.json“ und „launch.vs.json“
 ms.date: 02/21/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - NMAKE [Visual Studio]
@@ -12,15 +11,15 @@ helpviewer_keywords:
 - vsworkspacesettings.json file [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 434ba3e01313e79c734b67b65c7cff0530f4d41d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 23888809dd4dfd05058ed71ba8a82e8e532d7e61
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963174"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Anpassen von Build- und Debugtasks für die Open Folder-Entwicklung
 
@@ -57,6 +56,7 @@ Wenn Ihre Codebasis benutzerdefinierte Buildtools verwendet, die von Visual Stud
 
 Betrachten wir eine Codebasis, die aus einer einzelnen C#-Datei namens *hello.cs* besteht. Das *Makefile* für eine solche Codebasis könnte folgendermaßen aussehen:
 
+<!-- markdownlint-disable MD010 -->
 ```makefile
 build: directory hello.exe
 
@@ -73,6 +73,7 @@ directory: bin
 bin:
     md bin
 ```
+<!-- markdownlint-enable MD010 -->
 
 Für ein solches *Makefile*, das Ziele für die Kompilierung, Bereinigung und Neukompilierung enthält, können Sie die folgende *tasks.vs.json*-Datei definieren. Die Datei enthält drei Buildtasks zum Kompilieren, Neukompilieren und Bereinigen der Codebasis und verwendet NMAKE als Buildtool.
 

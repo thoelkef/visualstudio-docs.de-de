@@ -4,16 +4,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: ca8c5bf20b7559a6dabd1b17e0f3b6256d5e5a98
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f2961b2cbb65c1b8e3c28f1cac8a28806c0996d2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53884472"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62934317"
 ---
 # <a name="api-reference-for-t4-text-templates"></a>API-Referenz für T4-Textvorlagen
 

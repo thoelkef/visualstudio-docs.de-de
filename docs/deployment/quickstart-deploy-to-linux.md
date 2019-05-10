@@ -1,26 +1,30 @@
 ---
 title: Veröffentlichen in App Service unter Linux
-ms.date: 07/23/2018
+ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 6bec894c6968498c185364e917904295f76422a8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 12d1df3874388f0c113600e20ca2dbd080d15d10
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873770"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62899115"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Veröffentlichen einer ASP.NET Core-App in Azure App Service mit Visual Studio unter Linux
 
-Sie können das Tool zum **Veröffentlichen** verwenden, um ASP.NET Core-Apps unter Linux in Azure App Service zu veröffentlichen.
+Ab Version 15.7 von Visual Studio 2017 können Sie ASP.NET Core-Apps in Azure App Service Linux (mit Containern) mithilfe einer der folgenden Methoden veröffentlichen.
 
-Für die Bereitstellung in App Service unter Linux mithilfe des Tools zum **Veröffentlichen** muss Visual Studio 2017, Version 15.7, installiert sein.
+* Verwenden Sie Azure DevOps mit [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azdevops) für die kontinuierliche (oder automatisierte) Bereitstellung von Apps.
+
+* Verwenden Sie für die einmalige (oder manuelle) Bereitstellung von Apps das Tool zum **Veröffentlichen** in Visual Studio, um ASP.NET Core-Apps in App Service für Linux (mit Containern) zu veröffentlichen.
+
+In diesem Artikel wird beschrieben, wie Sie das Tool zum **Veröffentlichen** für die einmalige Bereitstellung verwenden.
 
 [!INCLUDE [quickstart-prereqs-azure-linux](includes/quickstart-prereqs-azure-linux.md)]
 

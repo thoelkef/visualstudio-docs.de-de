@@ -1,38 +1,34 @@
 ---
 title: O / R-Designermeldungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 42178ae8-be6c-4df6-9b7a-cdac24d71dd2
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c055321c3936f92c21d5bff6ac63ecbeb7c982e9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: bcde97691a2a3cec0e7b2452cfcac9b335a170f6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217645"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62559896"
 ---
 # <a name="or-designer-messages"></a>O/R-Designermeldungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 In diesem Thema werden die Meldungen aufgelistet, die beim Arbeiten mit dem O/R-Designer angezeigt werden.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- [Eine Zuordnung kann nicht erstellt werden \<Zuordnungsname >-Eigenschaft wird doppelt aufgeführt](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)  
+ [Die Zuordnung \<Zuordnungsname> kann nicht erstellt werden – Eigenschaft ist zweimal aufgelistet](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)  
   
- [Eine Zuordnung kann nicht erstellt werden \<Zuordnungsname >-Eigenschaftstypen stimmen nicht überein.](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)  
+ [Die Zuordnung \<Zuordnungsname> kann nicht erstellt werden – Eigenschaftstypen stimmen nicht überein](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)  
   
  [Eine Änderung des Rückgabetyps einer DataContext-Methode kann nicht rückgängig gemacht werden](../data-tools/changing-the-return-type-of-a-datacontext-method-cannot-be-undone.md)  
   
- [Schemainformationen für das Datenbankobjekt konnten nicht abgerufen werden \<Objektname >](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)  
+ [Die Schemainformationen für das Datenbankobjekt \<Objektname> konnten nicht abgerufen werden](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)  
   
  [Mindestens ein ausgewähltes Datenbankobjekt gibt ein Schema zurück, das nicht dem Schema der Zielklasse entspricht](../data-tools/one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class.md)  
   
@@ -44,9 +40,9 @@ In diesem Thema werden die Meldungen aufgelistet, die beim Arbeiten mit dem O/R-
   
  [Die dem Designer hinzugefügten Objekte verwenden eine andere Datenverbindung als die derzeit vom Designer verwendete](../data-tools/the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer-is-currently-using.md)  
   
- [Die Eigenschaft \<Eigenschaftenname > kann nicht gelöscht werden](../data-tools/the-property-property-name-cannot-be-deleted.md)  
+ [Die Eigenschaft \<Eigenschaftenname> kann nicht gelöscht werden](../data-tools/the-property-property-name-cannot-be-deleted.md)  
   
- [Die Eigenschaft \<Eigenschaftenname > kann nicht gelöscht werden, da sie in der Zuordnung teilnimmt \<Zuordnungsname >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)  
+ [Die Eigenschaft \<Eigenschaftenname> kann nicht gelöscht werden, weil sie Teil der Zuordnung \<Zuordnungsname> ist](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)  
   
  [Die ausgewählte Klasse kann nicht gelöscht werden, da sie als Rückgabetyp für mindestens eine DataContext-Methode verwendet wird](../data-tools/the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md)  
   
@@ -65,4 +61,3 @@ In diesem Thema werden die Meldungen aufgelistet, die beim Arbeiten mit dem O/R-
  [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
   
  [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)
-

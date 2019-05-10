@@ -1,30 +1,24 @@
 ---
 title: XML-Editor | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 623869f3-040b-4bf4-b353-ddc2229694e4
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5053910e4f5760648eef989162eb31e3c3cc5c9e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 5dd1834593be7638a56eb31c70677ea9be146b8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896327"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112174"
 ---
 # <a name="xml-editor"></a>XML-Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Der XML-Editor beruht auf dem [!INCLUDE[msCoName](../includes/msconame-md.md)]-Visual Studio-Texteditor und bietet weitere Unterstützung für die XML-Sprachen. Der XML-Editor verfügt über folgende Features:  
   
 - Syntaxüberprüfung für XML 1.0  
@@ -52,13 +46,13 @@ Der XML-Editor beruht auf dem [!INCLUDE[msCoName](../includes/msconame-md.md)]-V
 ## <a name="express-editions"></a>Express Editions  
  Die folgenden XML-Editor-Funktionen sind in Visual Studio Express-Editionen nicht verfügbar:  
   
--   Erstellen eines XML-Schemas aus einem XML-Instanzdokument.  
+- Erstellen eines XML-Schemas aus einem XML-Instanzdokument.  
   
--   Anzeigen der XSLT-Ausgabe im XML-Editor.  
+- Anzeigen der XSLT-Ausgabe im XML-Editor.  
   
--   Intelligente Validierung beim Bearbeiten von XSLT-Stylesheets.  
+- Intelligente Validierung beim Bearbeiten von XSLT-Stylesheets.  
   
--   XML-Schema-Explorer  
+- XML-Schema-Explorer  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Validierung von XML-Dokumenten](../xml-tools/xml-document-validation.md)  
@@ -68,7 +62,7 @@ Der XML-Editor beruht auf dem [!INCLUDE[msCoName](../includes/msconame-md.md)]-V
  In diesem Abschnitt werden die IntelliSense-Funktionen des Editors beschrieben.  
   
  [XML-Ausschnitte](../xml-tools/xml-snippets.md)  
- In diesem Abschnitt wird die Verwendung der Funktion für XML-Ausschnitte beschrieben.  
+ In diesem Abschnitt wird die Verwendung der XML-Ausschnitte beschrieben.  
   
  [Bearbeiten von XSLT-Stylesheets](../xml-tools/editing-xslt-style-sheets.md)  
  In diesem Abschnitt wird das Verhalten beim Bearbeiten von XSLT beschrieben.  
@@ -80,14 +74,11 @@ Der XML-Editor beruht auf dem [!INCLUDE[msCoName](../includes/msconame-md.md)]-V
  In diesem Abschnitt werden die Komponenten der Benutzeroberfläche des XML-Editors beschrieben.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
- [Bearbeiten von Text, Code und Markup](http://msdn.microsoft.com/en-us/0d9c00d7-5df4-48a3-b185-2a265f055439)  
+ [Bearbeiten von Text, Code und Markup](http://msdn.microsoft.com/0d9c00d7-5df4-48a3-b185-2a265f055439)  
  In diesem Abschnitt werden Informationen zum Texteditor bereitgestellt.  
   
- [Verweise zu XML-Standards](http://msdn.microsoft.com/en-us/79c78508-c9d0-423a-a00f-672e855de401)  
+ [Verweise zu XML-Standards](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
  Bietet Informationen über XML-Technologien, darunter XML, Document Type Definition (DTD), XML Schema Definition Language (XSD) und XSLT.  
   
 ## <a name="see-also"></a>Siehe auch  
  [XML-Tools in Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)
-
-
-

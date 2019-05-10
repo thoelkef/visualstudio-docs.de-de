@@ -1,21 +1,20 @@
 ---
 title: Refactoring von Code zum Konvertieren einer for-Schleife in eine foreach-Anweisung
 ms.date: 05/10/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 85a8d0c5644d1a7daf342b9524e75f7969b3781a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fc14a07557b3ae46a84f506bc0fa9007efface63
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888191"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62811888"
 ---
 # <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>Refactoring zum Konvertieren einer for-Schleife in eine foreach-Anweisung
 

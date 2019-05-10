@@ -1,27 +1,22 @@
 ---
 title: Funktionsansicht – .NET-Speicherinstrumentierungsdaten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Functions view
 ms.assetid: cd45b379-394b-4b71-828c-92cd89e46ae0
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8bacc61ec9c254ce662854a08fe6a508977a72e2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 340a12bfb8dc9a26c4200682851bb0acc684dddf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730186"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62419909"
 ---
 # <a name="functions-view---net-memory-instrumentation-data"></a>Funktionsansicht – .NET-Speicherinstrumentierungsdaten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -109,6 +104,3 @@ In der Funktionsansicht der Profilerstellungsdaten für die .NET-Speicherbelegun
  [Funktionsansicht - Sampling](../profiling/functions-view-dotnet-memory-sampling-data.md)   
  [Funktionsansicht](../profiling/functions-view-instrumentation-data.md)   
  [Funktionsansicht](../profiling/functions-view-sampling-data.md)
-
-
-

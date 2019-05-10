@@ -1,14 +1,9 @@
 ---
 title: MarkupCompilePass1-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -23,18 +18,17 @@ ms.assetid: 693d6945-fd6f-4698-8f64-9dfcb71052d3
 caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7db6923b0a729d909e22136bd3994af45dfe1da9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5ce5ad99abb356c1b047fb2507be9a08f688b993
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189357"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651434"
 ---
 # <a name="markupcompilepass1-task"></a>MarkupCompilePass1-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Der <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>-Task konvertiert nicht lokalisierte [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)]-Projektdateien in kompiliertes Binärformat.  
   
 ## <a name="task-parameters"></a>Aufgabenparameter  
@@ -70,7 +64,7 @@ Der <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>-Task konvertiert nic
 |`UICulture`|Optionaler **String**-Parameter.<br /><br /> Gibt die Satellitenassembly für die Benutzeroberflächenkultur an, in die die generierten [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)]-Binärformatdateien eingebettet werden. Wenn **UICulture** nicht festgelegt ist, werden die generierten [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)]-Binärformatdateien in die Hauptassembly eingebettet.|  
 |`XAMLDebuggingInformation`|Optionaler **Boolean**-Parameter.<br /><br /> Wenn **true**, werden Diagnoseinformationen generiert und in die kompilierte [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)]-Datei einbezogen, um das Debuggen zu unterstützen.|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Der <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>-Task kompiliert [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] normalerweise in Binärformat und generiert Codedateien. Wenn eine [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)]-Datei Verweise auf Typen enthält, die im gleichen Projekt definiert sind, wird ihre Kompilierung in das Binärformat durch **MarkupCompilePass1** auf einen zweiten Markupkompilierungsschritt (**MarkupCompilePass2**) aufgeschoben. Die Kompilierung solcher Dateien muss aufgeschoben werden, weil sie warten müssen, bis die referenzierten lokal definierten Typen kompiliert sind. Wenn eine [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)]-Datei allerdings ein `x:Class`-Attribut aufweist, generiert <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> die sprachspezfiische Codedatei für diese.  
   
  Eine [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)]-Datei ist lokalisierbar, wenn sie Elemente enthält, die das `x:Uid`-Attribut verwenden:  
@@ -133,6 +127,3 @@ Der <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>-Task konvertiert nic
  [Task Reference](../msbuild/msbuild-task-reference.md)  (MSBuild-Aufgabenreferenz)  
  [Erstellen einer WPF-Anwendung (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
  [Übersicht über WPF-XAML-Browseranwendungen](http://msdn.microsoft.com/library/3a7a86a8-75d5-4898-96b9-73da151e5e16)
-
-
-

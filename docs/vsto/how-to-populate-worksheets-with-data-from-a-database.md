@@ -11,15 +11,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], adding to worksheets
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf375b49525349cf28fb4b9dd1651ddadbf59360
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 67c12843d00bf8d5af51fa7af3175077527afa58
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967760"
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Vorgehensweise: Auffüllen von Arbeitsblättern mit Daten aus einer Datenbank
 
@@ -35,17 +35,17 @@ Das folgende Beispiel zeigt, wie Sie datengebundene Steuerelemente in Projekten 
 
 ### <a name="to-populate-a-worksheet-with-data-from-a-database"></a>Um ein Arbeitsblatt mit Daten aus einer Datenbank aufzufüllen.
 
-1.  Öffnen Sie ein Excel-Projekt auf Dokumentebene in Visual Studio, mit dem Arbeitsblatt im Designer geöffnet.
+1. Öffnen Sie ein Excel-Projekt auf Dokumentebene in Visual Studio, mit dem Arbeitsblatt im Designer geöffnet.
 
-2.  Öffnen Sie das Fenster **Datenquellen** , und erstellen Sie für Ihr Projekt eine Datenquelle. Weitere Informationen finden Sie unter [neue Verbindungen hinzufügen](../data-tools/add-new-connections.md).
+2. Öffnen Sie das Fenster **Datenquellen** , und erstellen Sie für Ihr Projekt eine Datenquelle. Weitere Informationen finden Sie unter [neue Verbindungen hinzufügen](../data-tools/add-new-connections.md).
 
-3.  Ziehen Sie das Feld oder die Tabelle aus der **Datenquellen** in das Arbeitsblatt.
+3. Ziehen Sie das Feld oder die Tabelle aus der **Datenquellen** in das Arbeitsblatt.
 
 Eines der folgenden Steuerelemente wird auf dem Arbeitsblatt erstellt:
 
--   Wenn Sie ein Feld, ziehen Sie eine <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelement auf dem Arbeitsblatt erstellt wird. Weitere Informationen finden Sie unter [NamedRange-Steuerelement](../vsto/namedrange-control.md).
+- Wenn Sie ein Feld, ziehen Sie eine <xref:Microsoft.Office.Tools.Excel.NamedRange> Steuerelement auf dem Arbeitsblatt erstellt wird. Weitere Informationen finden Sie unter [NamedRange-Steuerelement](../vsto/namedrange-control.md).
 
--   Wenn Sie eine Tabelle, ziehen Sie eine <xref:Microsoft.Office.Tools.Excel.ListObject> Steuerelement auf dem Arbeitsblatt erstellt wird. Weitere Informationen finden Sie unter [ListObject-Steuerelement](../vsto/listobject-control.md).
+- Wenn Sie eine Tabelle, ziehen Sie eine <xref:Microsoft.Office.Tools.Excel.ListObject> Steuerelement auf dem Arbeitsblatt erstellt wird. Weitere Informationen finden Sie unter [ListObject-Steuerelement](../vsto/listobject-control.md).
 
 Sie können das Feld oder ein anderes Steuerelement hinzufügen, indem Sie die Tabelle auswählen der **Datenquellen** Fenster, und klicken Sie dann ein anderes Steuerelement auswählen, aus der Dropdown-Liste.
 
@@ -53,19 +53,19 @@ Sie können das Feld oder ein anderes Steuerelement hinzufügen, indem Sie die T
 
 Neben dem Steuerelement werden die folgenden datenbezogenen Objekte dem Projekt automatisch hinzugefügt:
 
--   Ein typisiertes Dataset, das die Datentabellen kapselt, mit denen Sie in der Datenbank eine Verbindung hergestellt haben. Weitere Informationen finden Sie unter [datasettools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
+- Ein typisiertes Dataset, das die Datentabellen kapselt, mit denen Sie in der Datenbank eine Verbindung hergestellt haben. Weitere Informationen finden Sie unter [datasettools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
--   Eine <xref:System.Windows.Forms.BindingSource>, durch die das Steuerelement mit dem typisierten Dataset verbunden wird. Weitere Informationen finden Sie unter [Übersicht über die BindingSource-Komponente](/dotnet/framework/winforms/controls/bindingsource-component-overview).
+- Eine <xref:System.Windows.Forms.BindingSource>, durch die das Steuerelement mit dem typisierten Dataset verbunden wird. Weitere Informationen finden Sie unter [Übersicht über die BindingSource-Komponente](/dotnet/framework/winforms/controls/bindingsource-component-overview).
 
--   Einen TableAdapter, der das typisierte Dataset mit der Datenbank verbunden. Weitere Informationen finden Sie unter [Übersicht über TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
+- Einen TableAdapter, der das typisierte Dataset mit der Datenbank verbunden. Weitere Informationen finden Sie unter [Übersicht über TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
 
--   Einen TableAdapterManager, dient zum Koordinieren von Tabellenadaptern im Dataset um hierarchische Updates zu aktivieren. Weitere Informationen finden Sie unter [hierarchische Aktualisierung](../data-tools/hierarchical-update.md) und [TableAdapterManager-Verweis](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference).
+- Einen TableAdapterManager, dient zum Koordinieren von Tabellenadaptern im Dataset um hierarchische Updates zu aktivieren. Weitere Informationen finden Sie unter [hierarchische Aktualisierung](../data-tools/hierarchical-update.md) und [TableAdapterManager-Verweis](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference).
 
 Beim Ausführen des Projekts zeigt das Steuerelement den ersten Datensatz in der Datenquelle an. Sie können die <xref:System.Windows.Forms.BindingSource> verwenden, um Benutzern einen Bildlauf in den Datensätzen zu ermöglichen.
 
 ### <a name="to-scroll-through-the-records"></a>So führen Sie einen Bildlauf durch die Datensätze durch
 
--   Verwenden Sie <xref:System.Windows.Forms.BindingSource>-Methoden wie <xref:System.Windows.Forms.BindingSource.MoveNext%2A> und <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.
+- Verwenden Sie <xref:System.Windows.Forms.BindingSource>-Methoden wie <xref:System.Windows.Forms.BindingSource.MoveNext%2A> und <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.
 
 Informationen dazu, wie Sie Updates für das typisierte Dataset und die Datenbank zu senden, finden Sie unter [Vorgehensweise: Aktualisieren einer Datenquelle mit Daten eines Hoststeuerelements](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 

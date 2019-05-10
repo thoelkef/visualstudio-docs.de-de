@@ -1,30 +1,32 @@
 ---
 title: IDebugPort2::GetPortId | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugPort2::GetPortId
 helpviewer_keywords:
 - IDebugPort2::GetPortId
 ms.assetid: 837cb924-c113-4224-aa86-3e02b33dfa70
-author: gregvanl
+caps.latest.revision: 11
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 9ab8898801c274c3f54fbebc667ea3173f22f2d4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0ed27e5bc70a26c19784b3b543da791fdf1ff0bd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876483"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62842546"
 ---
 # <a name="idebugport2getportid"></a>IDebugPort2::GetPortId
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Ruft die Port-ID ab.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT GetPortId(   
    GUID* pguidPort  
 );  

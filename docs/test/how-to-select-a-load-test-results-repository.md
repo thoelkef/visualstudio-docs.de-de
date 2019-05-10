@@ -14,14 +14,13 @@ helpviewer_keywords:
 ms.assetid: fa0c4dd9-612f-4a57-b8eb-458f129d9cda
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: fcbe7979765fe921ccc42f7adfa556bc0b52b7d1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 602327d49733077e3c180c0e192027be6374afe6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950432"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950025"
 ---
 # <a name="how-to-select-a-load-test-results-repository"></a>Vorgehensweise: Auswählen eines Repositorys für Auslastungstestergebnisse
 
@@ -33,26 +32,26 @@ Testergebnisse von den Agents oder den lokalen Computern können auf einem belie
 
 ## <a name="identify-a-results-store-for-load-test-data"></a>Angeben eines Ergebnisspeichers für Auslastungstestdaten
 
-1.  Öffnen Sie im **Projektmappen-Explorer** die Auslastungstestdatei.
+1. Öffnen Sie im **Projektmappen-Explorer** die Auslastungstestdatei.
 
-2.  Klicken Sie auf der Symbolleiste **Auslastungstest** auf **Testcontroller verwalten**. Das Dialogfeld **Testcontroller verwalten** wird angezeigt. Wenn Sie einen Agent remote verwenden, müssen Sie einen Controller auswählen.
+2. Klicken Sie auf der Symbolleiste **Auslastungstest** auf **Testcontroller verwalten**. Das Dialogfeld **Testcontroller verwalten** wird angezeigt. Wenn Sie einen Agent remote verwenden, müssen Sie einen Controller auswählen.
 
      ![Verbindungseigenschaften des Ergebnisspeichers für Auslastungstests](../test/media/loadtestconnectionproperties.png) Verbindungseigenschaften des Ergebnisspeichers für Auslastungstests
 
-3.  Klicken Sie unter **Auslastungstest-Ergebnisspeicher** auf **(…)**, um das Dialogfeld **Verbindungseigenschaften** anzuzeigen.
+3. Klicken Sie unter **Auslastungstest-Ergebnisspeicher** auf **(…)**, um das Dialogfeld **Verbindungseigenschaften** anzuzeigen.
 
-4.  Geben Sie in **Servername** den Namen des Servers ein, auf dem Sie die `LoadTest`-Skripts ausgeführt haben.
+4. Geben Sie in **Servername** den Namen des Servers ein, auf dem Sie die `LoadTest`-Skripts ausgeführt haben.
 
     > [!TIP]
     > Wenn Sie SQL Express auf dem lokalen Computer für den Auslastungstestspeicher verwenden, geben Sie „\<Computername>\sqlexpress“ ein (z. B. **MyComputer\sqlexpress**).
 
-5.  Unter **Beim Server anmelden** können Sie **Windows-Authentifizierung verwenden** auswählen. Sie können einen Benutzernamen und das Kennwort angeben. In diesem Fall müssen Sie jedoch auch die Option **Kennwort speichern** auswählen.
+5. Unter **Beim Server anmelden** können Sie **Windows-Authentifizierung verwenden** auswählen. Sie können einen Benutzernamen und das Kennwort angeben. In diesem Fall müssen Sie jedoch auch die Option **Kennwort speichern** auswählen.
 
-6.  Klicken Sie unter **Mit Datenbank verbinden** auf **Select or enter a database name** (Datenbankname auswählen oder eingeben). Wählen Sie im Dropdown-Listenfeld **LoadTest** aus.
+6. Klicken Sie unter **Mit Datenbank verbinden** auf **Select or enter a database name** (Datenbankname auswählen oder eingeben). Wählen Sie im Dropdown-Listenfeld **LoadTest** aus.
 
-7.  Klicken Sie auf **OK**. Sie können die Verbindung testen, indem Sie auf **Verbindung testen** klicken.
+7. Klicken Sie auf **OK**. Sie können die Verbindung testen, indem Sie auf **Verbindung testen** klicken.
 
-8.  Klicken Sie im Dialogfeld **Testcontroller verwalten** auf **Schließen** aus.
+8. Klicken Sie im Dialogfeld **Testcontroller verwalten** auf **Schließen** aus.
 
 ## <a name="see-also"></a>Siehe auch
 

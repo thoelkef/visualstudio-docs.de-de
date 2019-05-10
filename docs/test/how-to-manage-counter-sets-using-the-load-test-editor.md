@@ -12,14 +12,13 @@ helpviewer_keywords:
 ms.assetid: 64315c2f-a0b2-4378-be16-0774b99beef5
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 89e582c4377d3948f5ed0cfdb1e23a3259bde27e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 4ca910038e35ee65e6d97999f08013f398eaec9e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941150"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950109"
 ---
 # <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Vorgehensweise: Verwalten von Indikatorensätzen mithilfe des Auslastungstest-Editors
 
@@ -36,9 +35,9 @@ Das Verwalten von Indikatorensätzen umfasst die Auswahl der Computer, für die 
 
 ## <a name="to-manage-counter-sets"></a>So verwalten Sie Indikatorensätze
 
-1.  Öffnen Sie einen Auslastungstest.
+1. Öffnen Sie einen Auslastungstest.
 
-2.  Klicken Sie auf die Schaltfläche **Indikatorensätze verwalten**.
+2. Klicken Sie auf die Schaltfläche **Indikatorensätze verwalten**.
 
      – oder –
 
@@ -46,20 +45,20 @@ Das Verwalten von Indikatorensätzen umfasst die Auswahl der Computer, für die 
 
      Das Dialogfeld **Indikatorensätze verwalten** wird angezeigt.
 
-3.  (Optional) Wählen Sie im Listenfeld **Die ausgewählten Computer und Indikatorensätze werden den folgenden standardmäßigen Laufzeiteinstellungen hinzugefügt** eine andere Laufzeiteinstellung aus.
+3. (Optional) Wählen Sie im Listenfeld **Die ausgewählten Computer und Indikatorensätze werden den folgenden standardmäßigen Laufzeiteinstellungen hinzugefügt** eine andere Laufzeiteinstellung aus.
 
     > [!NOTE]
     > Dies gilt nur, wenn der Auslastungstest mehrere Testlaufeinstellungen enthält.
 
-4.  (Optional) Klicken Sie auf **Hinzufügen**, um einen neuen zu überwachenden Computer hinzuzufügen. Sie werden aufgefordert, einen Namen einzugeben. Geben Sie den Namen eines Computers ein. Unter dem neuen Eintrag werden Knoten angezeigt. Zum Beispiel **ASP.NET**, **IIS**, **SQL** und andere. Aktivieren Sie die Kontrollkästchen vor den Knoten, die Sie auswählen möchten. Die neuen Indikatoren werden im Bereich **Vorschau für Auswahl** angezeigt.
+4. (Optional) Klicken Sie auf **Hinzufügen**, um einen neuen zu überwachenden Computer hinzuzufügen. Sie werden aufgefordert, einen Namen einzugeben. Geben Sie den Namen eines Computers ein. Unter dem neuen Eintrag werden Knoten angezeigt. Zum Beispiel **ASP.NET**, **IIS**, **SQL** und andere. Aktivieren Sie die Kontrollkästchen vor den Knoten, die Sie auswählen möchten. Die neuen Indikatoren werden im Bereich **Vorschau für Auswahl** angezeigt.
 
-5.  (Optional) Geben Sie im Textfeld **Computertags** ein Tag ein, das dem Computer zugeordnet werden soll, z. B. "TestMachine12 in lab3".
+5. (Optional) Geben Sie im Textfeld **Computertags** ein Tag ein, das dem Computer zugeordnet werden soll, z. B. "TestMachine12 in lab3".
 
      Computertags ermöglichen es Ihnen, einen Computer anhand eines einfachen Namens zu identifizieren.
 
      Die Tags werden im Knoten **Indikatorensatzzuordnungen** in der Struktur im Auslastungstest-Editor angezeigt. Wichtiger ist jedoch, dass die Tags in Excel-Berichten angezeigt werden, sodass die Projektbeteiligten die Rolle des Computers im Auslastungstest erkennen können. Beispiel: "Webserver1 in Lab2" oder "SQL Server2 im Phoenix-Büro". Weitere Informationen finden Sie unter [Erstellen von Berichten zu Auslastungstestergebnissen für Testvergleiche oder die Trendanalyse](../test/compare-load-test-results.md).
 
-6.  Klicken Sie auf **OK**.
+6. Klicken Sie auf **OK**.
 
 ## <a name="see-also"></a>Siehe auch
 

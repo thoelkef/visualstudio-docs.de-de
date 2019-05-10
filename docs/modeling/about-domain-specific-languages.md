@@ -6,16 +6,15 @@ helpviewer_keywords:
 - Domain-Specific Language
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: bef799b564c4d7bc7eada541bf0c88067403738e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4684a0256e01cafe79fc90ae1ae97dfc2be047d6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823361"
 ---
 # <a name="about-domain-specific-languages"></a>Informationen zu domänenspezifischen Sprachen
 
@@ -25,11 +24,11 @@ Well-Known DSLs sind reguläre Ausdrücke und SQL. Jede DSL ist viel besser als 
 
 Ihr Unternehmen und Ihr Projekt betreffen auch spezielle Sätze von Konzepten, die mit einer DSL beschrieben werden können. Beispielsweise können Sie eine DSL für eine dieser Anwendungen definieren:
 
--   Planen der Navigationspfade auf einer Website.
+- Planen der Navigationspfade auf einer Website.
 
--   Schaltpläne für elektronische Komponenten.
+- Schaltpläne für elektronische Komponenten.
 
--   Netzwerke von Fließbändern und gepäckbeförderungsausrüstung für einem Flughafen.
+- Netzwerke von Fließbändern und gepäckbeförderungsausrüstung für einem Flughafen.
 
 Beim Entwerfen einer DSL, die Sie definieren eine *Domänenklasse* für die einzelnen wichtiger Konzepte, die in der Domäne, z. B. eine Webseite, Lamp oder Flughafen-Check-in –. Sie definieren *domänenbeziehungen* wie Links, über das Netzwerk oder ein Fließband, um die Konzepte miteinander zu verknüpfen.
 
@@ -115,12 +114,12 @@ Eine domänenspezifische Sprache, bieten die folgenden Vorteile:
 
 Die meisten Softwareentwicklungsteams, die einer domänenspezifischen Sprachen verwenden, gehen Sie zum Erstellen und verwenden ihre Modelle:
 
--   Das Team unterscheidet es sich um die Variablen Teile der Domäne aus den Teilen, die sich nie ändern.
+- Das Team unterscheidet es sich um die Variablen Teile der Domäne aus den Teilen, die sich nie ändern.
 
--   Die Entwickler Schreiben von Code für die feste Bestandteile und Erweiterungspunkte für die Variablen Teile lassen.
+- Die Entwickler Schreiben von Code für die feste Bestandteile und Erweiterungspunkte für die Variablen Teile lassen.
 
--   Der Entwicklungsleiter für die Software oder der Architekt erstellt eine domänenspezifische Sprache, die die Entwurfsmuster festen Teile der Domäne und die Erweiterungspunkte für die Variablen Teile umfasst.
+- Der Entwicklungsleiter für die Software oder der Architekt erstellt eine domänenspezifische Sprache, die die Entwurfsmuster festen Teile der Domäne und die Erweiterungspunkte für die Variablen Teile umfasst.
 
--   Der Entwicklungsleiter für die Software oder der Architekt stellt die Entwickler von den verschiedenen Anwendungen, die das Team erstellt die Domain-Specific Languge bereit.
+- Der Entwicklungsleiter für die Software oder der Architekt stellt die Entwickler von den verschiedenen Anwendungen, die das Team erstellt die Domain-Specific Languge bereit.
 
--   Jeder Entwickler erstellt ein Modell, das für die jeweilige Anwendung gilt.
+- Jeder Entwickler erstellt ein Modell, das für die jeweilige Anwendung gilt.

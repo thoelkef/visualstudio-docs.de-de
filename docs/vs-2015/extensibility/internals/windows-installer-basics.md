@@ -1,34 +1,29 @@
 ---
 title: Windows Installer-Grundlagen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Windows Installer, VSPackages
 - VSPackages, Windows Installer basics
 ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b3756f8e9c8b22b9e6a7da52e076364024fe49d1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 516deb626bd8c6056612fcc481b9d530da504b9d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747648"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437269"
 ---
 # <a name="windows-installer-basics"></a>Grundlagen zu Windows Installer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Das Windows-Installationsprogramm installiert und deinstalliert, Anwendungen oder Softwareprodukte auf dem Computer eines Benutzers, Ausführen dieser Aufgaben in so genannten Windows Installer-Komponenten (manchmal als WICs oder nur Komponenten bezeichnet). Eine GUID identifiziert jedes WIC, die die grundlegende Einheit der Installation und die verweiszählung für Einrichtungen, die mit Windows Installer ist.  
   
- Umfassende Dokumentation zu den Windows Installer, finden Sie unter dem Thema Platform SDK [Windows Installer](http://msdn.microsoft.com/library/aa372866.aspx).  
+ Umfassende Dokumentation zu den Windows Installer, finden Sie unter dem Thema Platform SDK [Windows Installer](/previous-versions/2kt85ked(v=vs.120)).  
   
 ## <a name="authoring-a-vspackage"></a>Erstellen eine VSPackage  
  Windows Installer verwendet Installationspakete, die Informationen, die Windows Installer installieren enthalten, deinstallieren oder Reparieren eines Produkts und die Setup-Benutzeroberfläche (UI) ausführen. Jedem Installationspaket enthält eine MSI-Datei, die eine Installationsdatenbank, einen Stream zusammenfassende Informationen und Datenströme für die verschiedenen Teilen der Installation enthält. Um das Installationsprogramm zu verwenden, müssen Sie eine Installation erstellen. Da das Installationsprogramm Installationen auf dem Konzept von Komponenten organisiert und Informationen zur Installation in einer relationalen Datenbank speichert, umfasst der Prozess der Erstellung von einem Installationspaket Allgemein die folgenden Schritte aus:  
@@ -64,20 +59,19 @@ Das Windows-Installationsprogramm installiert und deinstalliert, Anwendungen ode
  Zwei Sätze von Regeln bestimmen, die Bereitstellung von Ressourcen durch das Setup Komponenten. Ein Regelsatz wird durch die Windows-Installer selbst verwaltet, während Sie die zweite Gruppe als Installation Autor erzwingen soll.  
   
 > [!NOTE]
->  Erzwingung von Windows Installer-Regeln tritt nur dann, wenn Sie eine Überprüfung der MSI-Datei ausführen. Dennoch sind Sie hingewiesen, um diese Regeln als bewährte Methoden zu behandeln. Weitere Informationen finden Sie unter [Überprüfen einer Installationsdatenbank](http://msdn.microsoft.com/library/aa372477\(VS.85\).aspx) und [Paketüberprüfung](http://msdn.microsoft.com/library/aa370569\(VS.85\).aspx).  
+> Erzwingung von Windows Installer-Regeln tritt nur dann, wenn Sie eine Überprüfung der MSI-Datei ausführen. Dennoch sind Sie hingewiesen, um diese Regeln als bewährte Methoden zu behandeln. Weitere Informationen finden Sie unter [Überprüfen einer Installationsdatenbank](http://msdn.microsoft.com/library/aa372477\(VS.85\).aspx) und [Paketüberprüfung](http://msdn.microsoft.com/library/aa370569\(VS.85\).aspx).  
   
 #### <a name="installer-enforced-rules"></a>Erzwungene Installer-Regeln  
   
--   Alle Dateien in einer bestimmten Komponente müssen in dasselbe Verzeichnis installiert sein. Im Gegensatz dazu müssen separate Ordner installierte Dateien gehören, um Komponenten zu trennen.  
+- Alle Dateien in einer bestimmten Komponente müssen in dasselbe Verzeichnis installiert sein. Im Gegensatz dazu müssen separate Ordner installierte Dateien gehören, um Komponenten zu trennen.  
   
--   Es können nur ein Pfad pro Komponente vorhanden sein. Der Schlüsselpfad ist einfach eine Datei oder einen Registrierungsschlüssel Schlüssel, der die ganze Komponente darstellt.  
+- Es können nur ein Pfad pro Komponente vorhanden sein. Der Schlüsselpfad ist einfach eine Datei oder einen Registrierungsschlüssel Schlüssel, der die ganze Komponente darstellt.  
   
 #### <a name="component-provider-responsibilities"></a>Komponentenanbieter Aufgaben  
   
--   Alle zwei Ressourcen, die getrennt in zukünftigen Versionen ausgeliefert werden können, sollte in separate Komponenten vorhanden sein. Ressourcen sollten in der gleichen Komponente gruppiert werden, nur, wenn Sie sicher sind, dass diese Ressourcen getrennt nie ausgeliefert werden. Es wird in der Tat empfohlen, alle primären Ressourcen (z. B. DLLs) in separaten WICs vorhanden sein. Weitere Informationen finden Sie unter [Installationsprogrammkomponenten definieren](http://msdn.microsoft.com/library/aa368269\(VS.85\).aspx).  
+- Alle zwei Ressourcen, die getrennt in zukünftigen Versionen ausgeliefert werden können, sollte in separate Komponenten vorhanden sein. Ressourcen sollten in der gleichen Komponente gruppiert werden, nur, wenn Sie sicher sind, dass diese Ressourcen getrennt nie ausgeliefert werden. Es wird in der Tat empfohlen, alle primären Ressourcen (z. B. DLLs) in separaten WICs vorhanden sein. Weitere Informationen finden Sie unter [Installationsprogrammkomponenten definieren](http://msdn.microsoft.com/library/aa368269\(VS.85\).aspx).  
   
--   Keine Ressource mit versionsverwaltung durch das sollte jemals in mehr als ein WIC liefern.  
+- Keine Ressource mit versionsverwaltung durch das sollte jemals in mehr als ein WIC liefern.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Was geschieht, wenn die Komponentenregeln unterbrochen werden?](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)
-

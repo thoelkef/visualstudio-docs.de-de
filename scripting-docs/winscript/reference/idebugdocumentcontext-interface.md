@@ -1,8 +1,7 @@
 ---
-title: IDebugDocumentContext-Schnittstelle | Microsoft Docs
+title: IDebugDocumentContext-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,21 +13,21 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 432fbe9de5b1ab19c64ae1b9eeee36f3b1156d06
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: df4c8b8639a6d4b232f82cf87fff7b069829cc46
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726230"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783193"
 ---
 # <a name="idebugdocumentcontext-interface"></a>IDebugDocumentContext-Schnittstelle
-Stellt eine abstrakte Darstellung eines Teils des Dokuments, der debuggt wird. Diese Darstellung besteht für Textdokumente eine Zeichenposition Bereich aus.  
+Stellt eine abstrakte Darstellung eines Teils des Debugdokuments dar. Für Textdokumente besteht diese Darstellung eine Zeichenposition Bereich aus.  
   
- Zusätzlich zu den von geerbten Methoden `IUnknown`, `IDebugDocumentContext` Schnittstelle macht die folgenden Methoden verfügbar.  
+ Zusätzlich zu den von geerbten Methoden `IUnknown`, `IDebugDocumentContext` Schnittstelle verfügbar macht, die folgenden Methoden.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IDebugDocumentContext::GetDocument](../../winscript/reference/idebugdocumentcontext-getdocument.md)|Gibt das Dokument, das diesem Kontext enthält.|  
-|[IDebugDocumentContext::EnumCodeContexts](../../winscript/reference/idebugdocumentcontext-enumcodecontexts.md)|Listet die Code-Kontexte, die diesem Dokumentenkontext zugeordnet.|
+|[IDebugDocumentContext::GetDocument](../../winscript/reference/idebugdocumentcontext-getdocument.md)|Gibt zurück, das Dokument, das diesem Kontext enthält.|  
+|[IDebugDocumentContext::EnumCodeContexts](../../winscript/reference/idebugdocumentcontext-enumcodecontexts.md)|Listet die Codekontexte mit diesem Dokumentenkontext verknüpft ist.|

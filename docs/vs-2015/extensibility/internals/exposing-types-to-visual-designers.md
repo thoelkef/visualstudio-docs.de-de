@@ -1,14 +1,9 @@
 ---
 title: Verfügbarmachen von Typen für visuelle Designer | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - types [Visual Studio SDK], exposing to visual designers
 - designers [Visual Studio SDK], exposing types
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c19fe00713bd328574e5a05cc6f6f3a60f18ddf9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2db026367e43c1092cf9744817449ce51556a4a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436316"
 ---
 # <a name="exposing-types-to-visual-designers"></a>Verfügbarmachen von Typen für visuelle Designer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,25 +29,24 @@ ms.locfileid: "51791552"
  Das Projektsystem bietet vollständige Unterstützung zum Nachverfolgen von Änderungen in die Ausgabedatei eines benutzerdefinierten Tools, vorausgesetzt, dass diese Änderungen auf das Ergebnis der Ausführung des benutzerdefinierten Tools sind. Jedes Mal, wenn das benutzerdefinierte Tool ausgeführt wird, wird eine neue temporäre PE-Datei generiert, und entsprechende Benachrichtigungen für Designer gesendet werden.  
   
 > [!NOTE]
->  Da-Datei der temporäre Programmdownloads ausführbare Generation im Hintergrund erfolgt, werden dem Benutzer keine Fehler gemeldet, wenn die Kompilierung schlägt fehl.  
+> Da-Datei der temporäre Programmdownloads ausführbare Generation im Hintergrund erfolgt, werden dem Benutzer keine Fehler gemeldet, wenn die Kompilierung schlägt fehl.  
   
  Benutzerdefinierte Tools, die temporäre PE-Support nutzen, müssen die folgenden Regeln entsprechen:  
   
--   `GeneratesDesignTimeSource` muss auf 1 in der Registrierung festgelegt werden.  
+- `GeneratesDesignTimeSource` muss auf 1 in der Registrierung festgelegt werden.  
   
      Keine ausführbare Datei Programmkompilierung erfolgt ohne diese Einstellung an.  
   
--   Der generierte Code muss in derselben Sprache wie die Einstellung der globalen projektauflistung ab.  
+- Der generierte Code muss in derselben Sprache wie die Einstellung der globalen projektauflistung ab.  
   
      Die temporäre PE-Datei kompiliert wird, unabhängig davon, was das benutzerdefinierte Tool, als die angeforderte Extension in meldet <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A> vorausgesetzt, dass `GeneratesDesignTimeSource` in der Registrierung auf 1 festgelegt ist. Die Erweiterung muss nicht vb oder CS jsl sein. Es kann eine beliebige Erweiterung sein.  
   
--   Der vom benutzerdefinierten Tool generierten Code muss gültig sein und muss es kompilieren, zur eigenen Verwendung nur die Gruppe der Verweise im Projekt vorhanden Zeitpunkt <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> Ausführung abgeschlossen ist.  
+- Der vom benutzerdefinierten Tool generierten Code muss gültig sein und muss es kompilieren, zur eigenen Verwendung nur die Gruppe der Verweise im Projekt vorhanden Zeitpunkt <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> Ausführung abgeschlossen ist.  
   
      Wenn eine temporäre PE-Datei kompiliert wird, ist die einzige Quelldatei bereitgestellt, um den Compiler die Ausgabe des benutzerdefinierten Tools. Aus diesem Grund muss ein benutzerdefiniertes Tool, das eine temporäre PE-Datei verwendet Ausgabedateien erstellen, die unabhängig von anderen Dateien in das Projekt kompiliert werden kann.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Einführung in das BuildManager-Objekt](http://msdn.microsoft.com/en-us/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   
+ [Einführung in das BuildManager-Objekt](http://msdn.microsoft.com/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   
  [Implementieren von Einzeldatei-Generatoren](../../extensibility/internals/implementing-single-file-generators.md)   
  [Bestimmen die Standard-Namespace eines Projekts](../../misc/determining-the-default-namespace-of-a-project.md)   
  [Registrieren von Generatoren einzelner Dateien](../../extensibility/internals/registering-single-file-generators.md)
-

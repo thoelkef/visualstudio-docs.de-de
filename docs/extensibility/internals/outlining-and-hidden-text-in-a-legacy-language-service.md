@@ -1,23 +1,25 @@
 ---
 title: Gliederung und ausgeblendeter Text in einem Legacysprachdienst | Microsoft-Dokumentation
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - outlining, supporting in native code
 ms.assetid: 252c5221-2e64-461c-8dcf-b622e400e0be
-author: gregvanl
+caps.latest.revision: 6
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: e6c63ba54a8dd35f884b07d9d7cf676c5477d6ec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 1061ba3967f34adf14c5e51562a2ad0939eb556d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966926"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859860"
 ---
 # <a name="outlining-and-hidden-text-in-a-legacy-language-service"></a>Gliederung und ausgeblendeter Text in einem Legacysprachdienst
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Gliederung ermöglicht eine Sequenz von Textzeilen zu einer einzigen Zeile zu reduzieren. In C++ können z. B. alle Methoden einer einzelnen Zeile zeigt nur die Signatur der Methode reduziert werden. Ausgeblendeter Text ist die Reihenfolge der Textzeilen, die angezeigt oder ausgeblendet werden können.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  

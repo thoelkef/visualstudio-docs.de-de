@@ -1,49 +1,50 @@
 ---
-title: Neuerungen für den Entwurf
+title: Neuerungen beim Entwurf in Visual Studio 2017
+titleSuffix: ''
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
-- what's new [VIsual Studio ALM], architecture and modeling
-- architecture [Visual Studio Ultimate], modeling
-- modeling software [Visual Studio ALM], What's New
+- what's new [Visual Studio], architecture and modeling
+- architecture [Visual Studio], modeling
+- modeling software [Visual Studio], What's New
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bdea0b8e24347e608ad0e1736b55e34acb4e5854
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+monikerRange: vs-2017
+ms.openlocfilehash: dc75c7414e0fff18f76d14f8f9a4e0779a9e7a2b
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956022"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476537"
 ---
-# <a name="whats-new-for-design-in-visual-studio"></a>Neues beim Entwurf in Visual Studio
+# <a name="whats-new-for-design-in-visual-studio-2017"></a>Neuerungen beim Entwurf in Visual Studio 2017
 
 ## <a name="live-dependency-validation"></a>Liveüberprüfung von Abhängigkeiten
 
-Entfernen unerwünschte Abhängigkeiten ist ein wichtiger Bestandteil der verwalten Ihre technischen Schulden. Live-Überprüfung von Abhängigkeiten ist jetzt enthalten, genaue Informationen zu Problemen bereitgestellt und vollständig von der neuen Funktionen in der Fehlerliste enthalten und dem Editor profitieren.
+Entfernen unerwünschte Abhängigkeiten ist ein wichtiger Bestandteil der verwalten Ihre technischen Schulden. Visual Studio bietet live Überprüfung von Abhängigkeiten, einschließlich präzise Informationen über Probleme, z. B. wo sich diese befinden. Liveüberprüfung von Abhängigkeiten Überprüfung akzeptiert vollständige Vorteile der neuen Funktionen in der Fehlerliste enthalten und den Editor.
 
 ![Live-abhängigkeitsüberprüfung in Aktion](media/dep-validation-whatsnew-01.png)
 
-Die Autoren-Benutzeroberfläche hat sich geändert, um die Auffindbarkeit und besser zugänglich sind, ändern die Terminologie von "Ebenendiagramm", "Abhängigkeitsdiagramm" abhängigkeitsüberprüfung zu machen.
+Die Autoren-Benutzeroberfläche hat sich geändert, um abhängigkeitsüberprüfung leichter auffindbar und zugänglicher zu machen. Die Terminologie wurde von "Ebenendiagramm" in "Abhängigkeitsdiagramm" geändert.
 
 Die **Architektur** enthält einen Befehl aus, um direkt zu einem Abhängigkeitsdiagramm erstellen:
 
 ![Liveüberprüfung von Abhängigkeiten-Element, auf das Menü "Architektur"](media/dep-validation-whatsnew-02.png)
 
-... und den Eigenschaftennamen in ein Abhängigkeitsdiagramm und deren Beschreibungen, eine Ebene wurden geändert, um aussagekräftigere:
+Layer-Eigenschaftennamen und Beschreibungen wurden geändert, um aussagekräftigere:
 
 ![Eigenschaftennamen aktualisiert liveüberprüfung von Abhängigkeiten](media/dep-validation-whatsnew-03.png)
 
-Sie sehen jetzt die Auswirkungen der Änderungen sofort in die Analyseergebnisse, nach dem aktuellen Code in der Lösung jedes Mal, wenn Sie das Diagramm speichern. Sie müssen nicht mehr auf den Abschluss des Befehls "Abhängigkeiten überprüfen" zu warten.
+Sie sehen sofort die Auswirkungen Ihrer Änderungen in den Ergebnissen der Analyse für den aktuellen Code in der Lösung jedes Mal, wenn Sie das Diagramm speichern. Sie müssen nicht auf den Abschluss warten die **Abhängigkeiten überprüfen** Befehl.
 
-Weitere Informationen finden Sie unter [in diesem Blogbeitrag](https://blogs.msdn.microsoft.com/devops/2016/10/07/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
+Weitere Informationen finden Sie unter [in diesem Blogbeitrag](https://devblogs.microsoft.com/devops/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
 
 ## <a name="uml-designers-have-been-removed"></a>UML-Designern wurden entfernt.
 
-Die UML-Designern wurden von der Visual Studio Enterprise-Version entfernt.
+Die UML-Designer wurden in Visual Studio entfernt.
 
 * UML-Diagramme werden als XML-Dateien jetzt angezeigt.
 * UML-Modell-Explorer ist nicht mehr vorhanden.
@@ -56,17 +57,17 @@ Die UML-Designern wurden von der Visual Studio Enterprise-Version entfernt.
 * Back Verknüpfen von DSL oder einer Ebene wird nicht mehr unterstützt.
 * UML-Erweiterungen in das Modellierungs-SDK wird nicht mehr unterstützt.
 
-Unterstützung für die Architektur von .NET und C++-Code zu visualisieren über verfügbar ist jedoch [von code Maps](map-dependencies-across-your-solutions.md), und die erheblichen Verbesserungen an der abhängigkeitsüberprüfung, die oben beschriebenen.
+Unterstützung für die visuelle Darstellung der Architektur von .NET und C++ Code steht über [von code Maps](map-dependencies-across-your-solutions.md).
 
 Wenn Sie eine erhebliche UML-Designern verwenden, können Sie weiterhin Visual Studio 2015 oder früher verwenden, während Sie möchten eine alternative Tool für Ihre Anforderungen UML.
 
-Weitere Informationen finden Sie unter [in diesem Blogbeitrag](https://blogs.msdn.microsoft.com/devops/2016/10/14/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
+Weitere Informationen finden Sie unter [in diesem Blogbeitrag](https://devblogs.microsoft.com/devops/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
 ## <a name="a-nameversionsupport-edition-support-for-architecture-and-modeling-tools"></a><a name="VersionSupport" />Edition-Unterstützung für Architektur- und Modellierungstools
 
-Visual Studio 2017 ist in mehreren Versionen verfügbar. Nicht alle diese bieten Unterstützung für die Architektur- und Modellierungstools. Die folgende Tabelle zeigt die Verfügbarkeit jedes Tools.
+Visual Studio ist in mehreren Versionen verfügbar. Nicht alle diese bieten Unterstützung für die Architektur- und Modellierungstools. Die folgende Tabelle zeigt die Verfügbarkeit jedes Tools.
 
 |**Funktion**|**Enterprise edition**|**Professional-edition**|**Community-edition**|
 |-|-|-|-|

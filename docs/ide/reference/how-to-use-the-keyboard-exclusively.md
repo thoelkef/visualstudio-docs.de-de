@@ -2,7 +2,6 @@
 title: 'Vorgehensweise: Ausschließliches Verwenden der Tastatur'
 description: Erfahren Sie, wie Sie Standardtastaturkombinationen verwenden, um Ihnen das Navigieren und Codieren innerhalb der Visual Studio-IDE zu erleichtern.
 ms.date: 08/22/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - Toolbox, shortcut keys
@@ -14,20 +13,20 @@ helpviewer_keywords:
 ms.assetid: d71a4cc1-d352-4164-8538-3f9fa070a331
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c32eadc67d0b36440d30f8fee75a5444a31eb60
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a770cf1ded0ef85e92f192398b03aa2015502fdf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874458"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789656"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Vorgehensweise: Ausschließliches Verwenden der Tastatur
 
 > [!TIP]
-> Weitere Informationen zu aktuellen Barrierefreiheitupdates finden Sie im Blogbeitrag [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Verbesserungen der Barrierefreiheit in Visual Studio 2017 [Version 15.3]).
+> Weitere Informationen zu aktuellen Barrierefreiheitupdates finden Sie im Blogbeitrag [Accessibility improvements in Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Verbesserungen der Barrierefreiheit in Visual Studio 2017 [Version 15.3]).
 
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] bietet viele Standardtastaturkombinationen, um Ihnen das Navigieren und Codieren innerhalb der IDE zu erleichtern. Eine vollständige Liste der Tastaturkombinationen für Visual Studio finden Sie unter [Standardtastenkombinationen](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Informationen zu Tastenkombinationen für andere Microsoft-Produkte finden Sie unter [http://www.microsoft.com/enable/products/keyboard.aspx](http://go.microsoft.com/fwlink/?LinkID=40400).
 
@@ -56,19 +55,19 @@ Sie können mit der Tastatur ein Steuerelement in ein Formular oder einen Design
 
 ### <a name="to-set-dialog-box-options-from-the-keyboard"></a>So legen Sie das Dialogfeld „Optionen“ mit der Tastatur fest
 
-1.  Verwenden Sie **TAB** oder **SHIFT** + **TAB**, um nach oben und unten zwischen den Steuerelementen im Dialogfeld zu wechseln.
+1. Verwenden Sie **TAB** oder **SHIFT** + **TAB**, um nach oben und unten zwischen den Steuerelementen im Dialogfeld zu wechseln.
 
-2.  So ändern Sie die Einstellungen der Optionen
+2. So ändern Sie die Einstellungen der Optionen
 
-    -   Verwenden Sie für Optionsfelder **NACH-OBEN** und **NACH-UNTEN**, um die Auswahl zu ändern.
+    - Verwenden Sie für Optionsfelder **NACH-OBEN** und **NACH-UNTEN**, um die Auswahl zu ändern.
 
-    -   Verwenden Sie für Kontrollkästchen die **LEERTASTE**, um diese zu aktivieren oder zu deaktivieren.
+    - Verwenden Sie für Kontrollkästchen die **LEERTASTE**, um diese zu aktivieren oder zu deaktivieren.
 
-    -   Verwenden Sie für Dropdownlisten **ALT** + **NACH-UNTEN**, um Elemente anzuzeigen, und verwenden Sie dann **NACH-OBEN** und **NACH-UNTEN**, um das ausgewählte Element zu ändern.
+    - Verwenden Sie für Dropdownlisten **ALT** + **NACH-UNTEN**, um Elemente anzuzeigen, und verwenden Sie dann **NACH-OBEN** und **NACH-UNTEN**, um das ausgewählte Element zu ändern.
 
-    -   Drücken Sie für Schaltflächen **EINGABE**, um diese aufzurufen.
+    - Drücken Sie für Schaltflächen **EINGABE**, um diese aufzurufen.
 
-    -   Verwenden Sie für Raster die PFEILTASTEN zum Navigieren. Verwenden Sie für Dropdownlisten in Rastern **UMSCHALT** + **ALT** + **NACH-UNTEN**, um Elemente anzuzeigen, und verwenden Sie dann **NACH-OBEN** und **NACH-UNTEN**, um das ausgewählte Element zu ändern.
+    - Verwenden Sie für Raster die PFEILTASTEN zum Navigieren. Verwenden Sie für Dropdownlisten in Rastern **UMSCHALT** + **ALT** + **NACH-UNTEN**, um Elemente anzuzeigen, und verwenden Sie dann **NACH-OBEN** und **NACH-UNTEN**, um das ausgewählte Element zu ändern.
 
 ## <a name="window-and-file-navigation"></a>Navigation in Fenstern und Dateien
 
@@ -76,29 +75,29 @@ Sie können mit der Tastatur ein Steuerelement in ein Formular oder einen Design
 
 ### <a name="to-navigate-among-windows-and-files-in-the-ide-from-the-keyboard"></a>So navigieren Sie mit der Tastatur zwischen Fenstern und Dateien in der IDE
 
--   Um zwischen Dateien in einem Editor oder Designer zu wechseln, drücken Sie STRG + TAB, um den IDE-Navigator mit **Aktive Dateien** anzuzeigen. Drücken Sie EINGABE, um zur markierten Datei zu navigieren.
+- Um zwischen Dateien in einem Editor oder Designer zu wechseln, drücken Sie STRG + TAB, um den IDE-Navigator mit **Aktive Dateien** anzuzeigen. Drücken Sie EINGABE, um zur markierten Datei zu navigieren.
 
--   Um zwischen angedockten Toolfenstern zu wechseln, drücken Sie ALT + F7, um den IDE-Navigator mit **Aktive Toolfenster** anzuzeigen. Drücken Sie die EINGABETASTE, um zur markierten Datei zu navigieren.
+- Um zwischen angedockten Toolfenstern zu wechseln, drücken Sie ALT + F7, um den IDE-Navigator mit **Aktive Toolfenster** anzuzeigen. Drücken Sie die EINGABETASTE, um zur markierten Datei zu navigieren.
 
 ### <a name="to-move-and-dock-tool-windows-from-the-keyboard"></a>So verschieben und docken Sie Toolfenster mit der Tastatur an
 
-1.  Navigieren Sie zum Toolfenster, dass Sie verschieben möchten, und setzen Sie dort den Fokus.
+1. Navigieren Sie zum Toolfenster, dass Sie verschieben möchten, und setzen Sie dort den Fokus.
 
-2.  Klicken Sie im Menü **Fenster** auf die Option **Andockbar**.
+2. Klicken Sie im Menü **Fenster** auf die Option **Andockbar**.
 
-3.  Drücken Sie **ALT** + **LEERTASTE**, und klicken Sie dann auf **Verschieben**.
+3. Drücken Sie **ALT** + **LEERTASTE**, und klicken Sie dann auf **Verschieben**.
 
      Die Führungsraute fürs Andocken wird angezeigt.
 
-4.  Verwenden Sie die **PFEILTASTEN**, um das Fenster an eine neue Stelle zu verschieben.
+4. Verwenden Sie die **PFEILTASTEN**, um das Fenster an eine neue Stelle zu verschieben.
 
      Der Mauszeiger bewegt sich mit dem Fenster, während Sie die **PFEILTASTEN** verwenden.
 
-5.  Wenn Sie die neue Stelle erreicht haben, verwenden Sie die **PFEILTASTEN**, um den Mauszeiger zur korrekten Stelle der Führungsraute zu bewegen.
+5. Wenn Sie die neue Stelle erreicht haben, verwenden Sie die **PFEILTASTEN**, um den Mauszeiger zur korrekten Stelle der Führungsraute zu bewegen.
 
      Der Umriss des Toolfensters wird an der neuen Dockstelle angezeigt.
 
-6.  Drücken Sie die **EINGABETASTE**.
+6. Drücken Sie die **EINGABETASTE**.
 
      Das Toolfenster springt zur neuen angedockten Stelle.
 

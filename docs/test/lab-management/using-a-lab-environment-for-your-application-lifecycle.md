@@ -1,21 +1,20 @@
 ---
 title: Verwenden einer Laborumgebung für DevOps
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - lab environment, test lab
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7b93e4f065cbd776de9f70fae61594e828a92fe8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0d8b4806a8db576f2aa6c9af198e9b7f2c974556
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783432"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Verwenden einer Laborumgebung für Ihre DevOps
 
@@ -56,7 +55,7 @@ Weitere Informationen finden Sie unter [Verwenden von Build und Release Manageme
 
 ## <a name="use-the-visual-studio-lab-management-features-of-microsoft-test-manager"></a>Das Verwenden der Funktionen von Visual Studio Lab Management von Microsoft Test Manager
 
-Sie können mit den Funktionen von Visual Studio Lab Management Laborumgebungen erstellen und verwalten, wenn Sie die Visual Studio 2017 Enterprise-Edition verwenden.
+Sie können mit den Visual Studio Lab Management-Features von Microsoft Test Manager Laborumgebungen erstellen und verwalten, wenn Sie die Visual Studio Enterprise-Edition verwenden.
 
 Lab Management installiert automatisch Test-Agents auf jedem Computer in Ihrer Umgebung .
 
@@ -142,4 +141,4 @@ Weitere Informationen zur Einrichtung von Umgebungen finden Sie unter:
 
 * [Installieren und Konfigurieren von Test-Agents](../../test/lab-management/install-configure-test-agents.md)
 * [Handbuch zu Visual Studio Lab Management](https://aka.ms/vsarsolutions)
-* [Microsoft DevOps-Blog](https://blogs.msdn.microsoft.com/devops/)
+* [Microsoft DevOps-Blog](https://devblogs.microsoft.com/devops/)

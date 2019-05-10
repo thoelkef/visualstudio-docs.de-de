@@ -1,27 +1,22 @@
 ---
 title: Abrufen eines Ports | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - ports, getting
 - debugging [Debugging SDK], ports
 ms.assetid: 745c2337-cfff-4d02-b49c-3ca7c4945c5e
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 660ead58af40f85b4da4d68d7172866f5fe1fd0c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f980c9d14bc2d0c9728f87374828cf690737429c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789901"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436406"
 ---
 # <a name="getting-a-port"></a>Abrufen eines Ports
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ Ein Port stellt eine Verbindung mit einem Computer, die für den Prozesse ausgef
  Dieses Codefragment zeigt, wie Sie den Port für angegebene verwenden [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) registrieren Sie einen Programm-Knoten in [ResumeProcess](../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md). Parameter, die nicht in direktem Zusammenhang mit diesem Konzept wurden aus Gründen der Übersichtlichkeit ausgelassen.  
   
 > [!NOTE]
->  In diesem Beispiel verwendet den Port starten und Fortsetzen des Vorgangs, und setzt voraus, dass die [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md) Schnittstelle wird implementiert, auf dem Port. Dies ist keineswegs die einzige Möglichkeit zum Ausführen dieser Aufgaben aus, und es ist möglich, dass der Port nicht selbst außer beteiligt sein kann damit der Anwendung die [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) an es übergeben.  
+> In diesem Beispiel verwendet den Port starten und Fortsetzen des Vorgangs, und setzt voraus, dass die [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md) Schnittstelle wird implementiert, auf dem Port. Dies ist keineswegs die einzige Möglichkeit zum Ausführen dieser Aufgaben aus, und es ist möglich, dass der Port nicht selbst außer beteiligt sein kann damit der Anwendung die [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) an es übergeben.  
   
 ```cpp#  
 // This is an IDebugEngineLaunch2 method.  
@@ -108,4 +103,3 @@ HRESULT CDebugEngine::ResumeProcess(IDebugProcess2 *pDebugProcess)
  [Aktivieren eines Programms, die debuggt werden](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)   
  [Portanbieter](../../extensibility/debugger/port-suppliers.md)   
  [Ports](../../extensibility/debugger/ports.md)
-

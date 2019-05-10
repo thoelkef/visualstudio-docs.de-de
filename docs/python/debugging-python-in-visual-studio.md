@@ -1,22 +1,21 @@
 ---
 title: Debuggen von Python-Code
 description: Visual Studio bietet umfassendes Debugging für Python-Code, einschließlich dem Festlegen von Haltepunkten, der Einzelschrittausführung, der Untersuchung von Werten, des Überprüfens von Ausnahmen und des Debuggens im interaktiven Fenster.
-ms.date: 01/07/2019
-ms.prod: visual-studio-dev15
+ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7ed108232fc1dd04785f5eeb68d29fb304607ed7
-ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
+ms.openlocfilehash: 4678e3508c16b38fec2a10cdeb79bc499eaf15fd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62959893"
 ---
 # <a name="debug-your-python-code"></a>Debuggen Ihres Python-Codes
 
@@ -27,10 +26,6 @@ Weitere Informationen finden Sie auch in den folgenden szenariospezifischen Arti
 - [Linux-Remotedebuggen](debugging-python-code-on-remote-linux-machines.md)
 - [Python/C++ – Debuggen im gemischten Modus](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - [Symbole für das Debuggen im gemischten Modus](debugging-symbols-for-mixed-mode-c-cpp-python.md)
-
-|   |   |
-|---|---|
-| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Debugging-Python-Ep5dp5LWE_3805918567) mit einer Demonstration zum Python-Debugging an (3 Minuten, 32 Sekunden).|
 
 <a name="debugging-without-a-project"></a>
 
@@ -45,7 +40,7 @@ Weitere Informationen finden Sie auch in den folgenden szenariospezifischen Arti
 
 Der grundlegende Debugworkflow umfasst das Festlegen von Haltepunkten, die Einzelschrittausführung des Codes, das Untersuchen von Code und das Behandeln von Ausnahmen, wie in den folgenden Abschnitten beschrieben.
 
-Eine Debugsitzung wird mit dem Befehl **Debuggen** > **Debuggen starten** der Schaltfläche **Start** auf der Symbolleiste oder der Taste **F5** gestartet. Diese Aktionen öffnen die Startdatei Ihres Projekts (im **Projektmappen-Explorer** fett hervorgehoben) mit der aktiven Umgebung des Projekts und allen Befehlszeilenargumenten oder Suchpfaden, die in den **Projekteigenschaften** festgelegt wurden (siehe [Projektbezogene Debugoptionen](#project-debugging-options)). **Visual Studio 2017 Version 15.6** und höher warnt Sie, wenn Sie keine Startdatei festgelegt haben; frühere Versionen öffnen möglicherweise ein Ausgabefenster, in dem der Python-Interpreter ausgeführt wird, oder das Ausgabefenster wird nur kurz angezeigt und dann geschlossen. Klicken Sie in jedem Fall mit der rechten Maustaste auf die entsprechende Datei, und wählen Sie **Als Startdatei festlegen** aus.
+Eine Debugsitzung wird mit dem Befehl **Debuggen** > **Debuggen starten** der Schaltfläche **Start** auf der Symbolleiste oder der Taste **F5** gestartet. Diese Aktionen öffnen die Startdatei Ihres Projekts (im **Projektmappen-Explorer** fett hervorgehoben) mit der aktiven Umgebung des Projekts und allen Befehlszeilenargumenten oder Suchpfaden, die in den **Projekteigenschaften** festgelegt wurden (siehe [Projektbezogene Debugoptionen](#project-debugging-options)). Visual Studio 2017 Version 15.6 und höher warnt Sie, wenn Sie keine Startdatei festgelegt haben. Frühere Versionen öffnen möglicherweise ein Ausgabefenster, in dem der Python-Interpreter ausgeführt wird, oder das Ausgabefenster wird nur kurz angezeigt und dann geschlossen. Klicken Sie in jedem Fall mit der rechten Maustaste auf die entsprechende Datei, und wählen Sie **Als Startdatei festlegen** aus.
 
 > [!Note]
 > Der Debugger startet immer mit der aktiven Python-Umgebung für das Projekt. Legen Sie, wie unter [Auswählen einer Python-Umgebung für ein Projekt](selecting-a-python-environment-for-a-project.md) beschrieben, eine andere Umgebung als aktiv fest, um die Umgebung zu ändern.
@@ -180,16 +175,12 @@ Das **Fenster zum interaktiven Debuggen** unterstützt zusätzlich zu den [REPL-
 | `$stepout`, `$return`, `$r` | Springt aus der aktuellen Funktion heraus. |
 | `$stepover`, `$until`, `$unt` | Springt über den nächsten Funktionsaufruf. |
 | `$thread` | | Zeigt die aktuelle Thread-ID an. |
-| `$thread` | thread id | Legt den aktuellen Thread auf die angegebene Thread-ID fest. |
+| `$thread` | Thread-ID | Legt den aktuellen Thread auf die angegebene Thread-ID fest. |
 | `$threads` | | Führt die aktuell im Debugmodus befindlichen Threads auf. |
 | `$up`, `$u` | | Verschiebt den aktuellen Rahmen in der Stapelüberwachung eine Ebene nach oben. |
 | `$where`, `$w`, `$bt` | Führt die Rahmen für den aktuellen Thread auf. |
 
 Beachten Sie, dass die standardmäßigen Debuggerfenster wie **Prozesse**, **Threads** und **Aufrufliste** nicht mit dem **Fenster zum interaktiven Debuggen** synchronisiert werden. Das Ändern des aktiven Prozesses, Threads oder Frames im **Fenster zum interaktiven Debuggen** wirkt sich nicht auf die anderen Debuggerfenster aus. Entsprechend gilt: Das Ändern des aktiven Prozesses, Threads oder Frames in anderen Debuggerfenster wirkt sich nicht auf das **Fenster zum interaktiven Debuggen** aus.
-
-Das **Fenster zum interaktiven Debuggen** verfügt über bestimmte Optionen, auf die Sie über **Extras** > **Optionen** > **Python-Tools** > **Fenster zum interaktiven Debuggen** zugreifen können. Im Gegensatz zum regulären **interaktiven Python-Fenster**, das über eine separate Instanz für jede Python-Umgebung verfügt, gibt es nur ein **Fenster zum interaktiven Debuggen**, und dieses verwendet immer den Python-Interpreter für den Prozess, für den das Debugging ausgeführt wird. Siehe [Options - Debugging options (Optionen: Debugoptionen)](python-support-options-and-settings-in-visual-studio.md#debugging-options).
-
-![Optionen für das Fenster zum interaktiven Debuggen](media/debugging-interactive-options.png)
 
 <a name="use-the-experimental-debugger"></a>
 
@@ -251,7 +242,7 @@ Die folgenden Schritte ermöglichen das Debuggen in der aktuellen Visual Studio-
 1. Geben Sie folgenden Befehl ein:
 
     ```ps
-    DebugAdapterHost.Logging /On
+    DebugAdapterHost.Logging /On /OutputWindow
     ```
 
 1. Beginnen Sie mit dem Debuggen, und führen Sie alle notwendigen Schritte aus, um Ihr Problem zu reproduzieren. Während dieser Zeit werden Debugprotokolle im Fenster **Ausgabe** unter **Adapterhostprotokoll debuggen** angezeigt. Sie können die Protokolle dann aus diesem Fenster kopieren und in ein GitHub-Problem, eine E-Mail usw. einfügen.
@@ -261,7 +252,7 @@ Die folgenden Schritte ermöglichen das Debuggen in der aktuellen Visual Studio-
 1. Wenn Visual Studio nicht mehr reagiert oder Sie anderweitig nicht auf das Fenster **Ausgabe** zugreifen können, starten Sie Visual Studio neu, öffnen Sie ein Befehlsfenster, und geben Sie den folgenden Befehl ein:
 
     ```ps
-    DebugAdapterHost.Logging /On /OutputWindow
+    DebugAdapterHost.Logging /On
     ```
 
 1. Beginnen Sie mit dem Debuggen, und reproduzieren Sie Ihr Problem erneut. Die Debuggerprotokolle finden Sie dann in `%temp%\DebugAdapterHostLog.txt`.

@@ -1,14 +1,9 @@
 ---
 title: Parameterinformationen in einem Legacysprachdienst 2 | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense, Parameter Info tool tip
 - language services [managed package framework], IntelliSense Parameter Info
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a540a2e5b282e1242109edd67a5dfbc95067e183
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d1fddc99c40e2472688a25ade121c2c762ade5da
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781321"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437930"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Parameterinformationen in einem Legacysprachdienst
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ IntelliSense-ParameterInfo wird eine QuickInfo, die die Signatur einer Methode a
  Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Wenn Sie mehr erfahren möchten, finden Sie unter [Erweitern des Editors und Sprachdienste](../../extensibility/extending-the-editor-and-language-services.md).  
   
 > [!NOTE]
->  Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
+> Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
   
 ## <a name="implementation"></a>Implementierung  
  Der Parser sollte den Triggerwert festgelegt <xref:Microsoft.VisualStudio.Package.TokenTriggers> wird festgelegt, wenn es sich um einen Parameter Liste Startzeichen (häufig eine öffnende Klammer) findet. Sollte ein <xref:Microsoft.VisualStudio.Package.TokenTriggers> auslösen, wenn der gefundenen Parametertrennzeichen (häufig ein Komma). Dies bewirkt, dass eine ParameterInfo-QuickInfo aktualisiert werden, und zeigen den nächsten Parameter in Fettschrift angezeigt. Der Parser sollte den Triggerwert festgelegt <xref:Microsoft.VisualStudio.Package.TokenTriggers> beim Wenn sucht nach dem Parameter Liste End-Zeichen (häufig eine schließende Klammer).  
@@ -42,7 +37,7 @@ IntelliSense-ParameterInfo wird eine QuickInfo, die die Signatur einer Methode a
  Die <xref:Microsoft.VisualStudio.Package.TokenTriggers> Triggerwert initiiert einen Aufruf der <xref:Microsoft.VisualStudio.Package.Source.MethodTip%2A> -Methode, die wiederum ruft die <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methode-Parser, mit einem Grund für die Analyse von <xref:Microsoft.VisualStudio.Package.ParseReason>. Wenn der Parser feststellt, dass der Bezeichner, bevor die Parameterliste beginnt Zeichen Methodenname erkannt, wird eine Liste von Methodensignaturen in der <xref:Microsoft.VisualStudio.Package.AuthoringScope> Objekt. Wenn alle Signaturen gefunden wurden, wird die ParameterInfo-QuickInfo mit der ersten Signatur in der Liste angezeigt. Diese QuickInfo wird aktualisiert, wie mehrere der Signatur eingegeben wird. Wenn der Parameter Liste Endzeichen eingegeben wird, wird die ParameterInfo-QuickInfo aus der Ansicht entfernt.  
   
 > [!NOTE]
->  Um sicherzustellen, dass die ParameterInfo-QuickInfo ist ordnungsgemäß formatiert, müssen Sie die Eigenschaften überschreiben, auf die <xref:Microsoft.VisualStudio.Package.Methods> Klasse, um die entsprechenden Zeichen angeben. Die Basis <xref:Microsoft.VisualStudio.Package.Methods> Klasse geht davon aus einer c#-Stil-Methodensignatur. Finden Sie unter den <xref:Microsoft.VisualStudio.Package.Methods> Klasse Einzelheiten, wie dies erreicht werden kann.  
+> Um sicherzustellen, dass die ParameterInfo-QuickInfo ist ordnungsgemäß formatiert, müssen Sie die Eigenschaften überschreiben, auf die <xref:Microsoft.VisualStudio.Package.Methods> Klasse, um die entsprechenden Zeichen angeben. Die Basis <xref:Microsoft.VisualStudio.Package.Methods> Klasse geht davon aus einer c#-Stil-Methodensignatur. Finden Sie unter den <xref:Microsoft.VisualStudio.Package.Methods> Klasse Einzelheiten, wie dies erreicht werden kann.  
   
 ## <a name="enabling-support-for-the-parameter-info"></a>Aktivieren der Unterstützung für die Parameterinformationen  
  Um Parameterinformationen, QuickInfos zu unterstützen, müssen Sie festlegen der `ShowCompletion` benannter Parameter, der die <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> zu `true`. Der Sprachdienst liest den Wert dieses Registrierungseintrags aus der <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> Eigenschaft.  
@@ -118,11 +113,10 @@ testfunc("a string",3);
   
  Die Schritte, die der Parser akzeptiert werden, sind unten beschrieben:  
   
-1.  Der Parser ruft <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> mit dem Text "Testfunc".  
+1. Der Parser ruft <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> mit dem Text "Testfunc".  
   
-2.  Der Parser ruft <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>.  
+2. Der Parser ruft <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>.  
   
-3.  Der Parser ruft <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>.  
+3. Der Parser ruft <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>.  
   
-4.  Der Parser ruft <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>.
-
+4. Der Parser ruft <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>.

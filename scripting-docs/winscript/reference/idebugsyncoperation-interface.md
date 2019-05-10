@@ -1,8 +1,7 @@
 ---
-title: IDebugSyncOperation-Schnittstelle | Microsoft Docs
+title: IDebugSyncOperation-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,22 +13,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6705c2aa990aef3cf551a94546bf78a64026cecc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7184be62a8ad2b65e81d1ad82f01f0ce3f4668c5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727010"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63004891"
 ---
 # <a name="idebugsyncoperation-interface"></a>IDebugSyncOperation-Schnittstelle
-Ermöglicht es, einen Vorgang (z. B. die Auswertung von Ausdrücken) zu abstrahieren, der ausgeführt werden, während in einem bestimmten blockierten Thread geschachtelt muss ein Skriptmodul. Die Schnittstelle bietet außerdem einen Mechanismus zum Abbrechen von Vorgängen nicht reagiert.  
+Ermöglicht eine Skript-Engine, um einen Vorgang (z. B. die Auswertung des Ausdrucks) zu abstrahieren, die ausgeführt werden, während in einen bestimmten blockierten Thread geschachtelt. Die Schnittstelle bietet außerdem einen Mechanismus zum Abbrechen von nicht reagierender Vorgängen.  
   
- Zusätzlich zu den von geerbten Methoden `IUnknown`, `IDebugSyncOperation` Schnittstelle macht die folgenden Methoden verfügbar.  
+ Zusätzlich zu den von geerbten Methoden `IUnknown`, `IDebugSyncOperation` Schnittstelle verfügbar macht, die folgenden Methoden.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IDebugSyncOperation::GetTargetThread](../../winscript/reference/idebugsyncoperation-gettargetthread.md)|Gibt den Zielthread für die Anwendung für diese synchron zurück.|  
-|[IDebugSyncOperation::Execute](../../winscript/reference/idebugsyncoperation-execute.md)|Synchron führt den Vorgang, und gibt zurück.|  
-|[IDebugSyncOperation::InProgressAbort](../../winscript/reference/idebugsyncoperation-inprogressabort.md)|Bricht eine laufende Operation auf einen anderen Thread ab.|
+|[IDebugSyncOperation::GetTargetThread](../../winscript/reference/idebugsyncoperation-gettargetthread.md)|Gibt den Zielthread für die Anwendung für diesen synchronen Vorgang zurück.|  
+|[IDebugSyncOperation::Execute](../../winscript/reference/idebugsyncoperation-execute.md)|Synchron den Vorgang ausführt, und gibt.|  
+|[IDebugSyncOperation::InProgressAbort](../../winscript/reference/idebugsyncoperation-inprogressabort.md)|Bricht eine laufende Operation auf einem anderen Thread ab.|

@@ -1,23 +1,20 @@
 ---
 title: Anpassen des Kopierverhaltens | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 87fff01c-60ba-440a-b8a0-185edcef83ac
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c2478925ecf481aaf49dbfbe5818d8839b9ad54f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b88d3541bc9c3b2f890c2aadf0103c48d3dad865
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844085"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433300"
 ---
 # <a name="customizing-copy-behavior"></a>Anpassen des Kopierverhaltens
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -218,9 +215,9 @@ partial class MyDslClipboardCommandSet // EDIT NAME
 ```  
   
  **Kann der Benutzer Elemente ziehen und ablegen.**  
- Finden Sie unter [Vorgehensweise: Hinzufügen eines Drag & Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md).  
+ Weitere Informationen finden Sie unter [How to: Hinzufügen eines Drag & Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md).  
   
-##  <a name="customizeLinks"></a> Anpassen des Kopierverhaltens Link  
+## <a name="customizeLinks"></a> Anpassen des Kopierverhaltens Link  
  Wenn der Benutzer ein Element kopiert, ist das Standardverhalten, dass etwaige eingebettete Elemente ebenfalls kopiert werden. Sie können das standardmäßige Kopierverhalten ändern. Wählen Sie in der DSL-Definition eine Rolle auf einer Seite einer Beziehung und in den Eigenschaften im Fenster der **überträgt Kopie** Wert.  
   
  ![Überträgt die kopieren-Eigenschaft einer Domänenrolle](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")  
@@ -241,7 +238,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
  Viele Aspekte des DSL-Verhaltens beim Kopieren, Einfügen, Erstellen und Löschen von Objekten werden von einer Instanz von <xref:Microsoft.VisualStudio.Modeling.ElementOperations> gesteuert, die mit dem Diagramm verknüpft ist. Sie können das DSL-Verhalten ändern, indem Sie eine eigene Klasse von <xref:Microsoft.VisualStudio.Modeling.ElementOperations> ableiten und die Eigenschaft <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> Ihrer Diagrammklasse überschreiben.  
   
 > [!TIP]
->  Weitere Informationen zum Anpassen des Modells mit Programmcode finden Sie unter [Navigieren in und Aktualisieren von Modellen im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md).  
+> Weitere Informationen zum Anpassen des Modells mit Programmcode finden Sie unter [Navigieren in und Aktualisieren von Modellen im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
  ![Sequenzdiagramm für den Kopiervorgang](../modeling/media/dslcopyseqdiagram.png "DslCopySeqDiagram")  
   
@@ -290,13 +287,13 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
 ```  
   
 ## <a name="receiving-items-dragged-from-other-models"></a>Empfangen von Elementen, die aus anderen Modellen gezogen wurden  
- Mit ElementOperations kann auch das Verhalten von Kopier-, Verschiebe-, Lösch- und Drag & Drop-Vorgängen definiert werden. Zur Veranschaulichung der Verwendung von ElementOperations wird im hier angegebenen Beispiel ein benutzerdefiniertes Drag & Drop-Verhalten konfiguriert. Allerdings für diesen Zweck Sie ggf. die beschriebene Alternativmethode in [Vorgehensweise: Hinzufügen eines Drag & Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md), die besser erweiterbar ist.  
+ Mit ElementOperations kann auch das Verhalten von Kopier-, Verschiebe-, Lösch- und Drag &amp; Drop-Vorgängen definiert werden. Zur Veranschaulichung der Verwendung von ElementOperations wird im hier angegebenen Beispiel ein benutzerdefiniertes Drag &amp; Drop-Verhalten konfiguriert. Allerdings für diesen Zweck Sie ggf. die beschriebene Alternativmethode in [Vorgehensweise: Hinzufügen eines Drag & Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md), die besser erweiterbar ist.  
   
  Definieren Sie zwei Methoden in Ihrer ElementOperations-Klasse:  
   
--   `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` bestimmt, ob das Quellelement auf die Zielform, den Zielkonnektor oder das Zieldiagramm gezogen werden kann.  
+- `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` bestimmt, ob das Quellelement auf die Zielform, den Zielkonnektor oder das Zieldiagramm gezogen werden kann.  
   
--   `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` kombiniert das Quellelement im Ziel.  
+- `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` kombiniert das Quellelement im Ziel.  
   
 ### <a name="canmerge"></a>CanMerge()  
  `CanMerge()` wird aufgerufen, um Feedback für den Benutzer festzulegen, wenn er die Maus über das Diagramm bewegt. Die Parameter der Methode sind die Elemente, über die die Maus bewegt wird, sowie die Daten zur Quelle, aus der der Ziehvorgang durchgeführt wurde. Der Benutzer kann von überall auf dem Bildschirm ziehen. Daher kann das Quellobjekt viele verschiedene Typen aufweisen und in unterschiedlichen Formaten serialisiert werden. Wenn die Quelle ein DSL- oder UML-Modell ist, ist der Datenparameter die Serialisierung von <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Zieh-, Kopier- und Toolboxvorgänge verwenden ElementGroupPrototypes zur Darstellung von Fragmenten von Modellen.  
@@ -570,7 +567,4 @@ namespace Company.MyDsl
  [Anpassen der Elementerstellung und-Verschiebung](../modeling/customizing-element-creation-and-movement.md)   
  [Vorgehensweise: Hinzufügen eines Drag & Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md)   
  [Anpassen des Löschverhaltens](../modeling/customizing-deletion-behavior.md)   
- [VMSDK: SCHALTPLANBEISPIEL Circuit Diagrams sample](http://go.microsoft.com/fwlink/?LinkId=213879)
-
-
-
+ [Beispiel: VMSDK Circuit Diagrams sample](http://go.microsoft.com/fwlink/?LinkId=213879)

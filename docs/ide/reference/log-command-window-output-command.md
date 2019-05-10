@@ -1,7 +1,6 @@
 ---
 title: Befehl "Befehlsfensterausgaben protokollieren"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - tools.logcommandwindowoutput
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d4ecec35-5af4-4954-8d60-2cd24583fbb4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23e6400df4323fc5bcf918448e35f6d4a2a9d767
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 24c72b0c5aeb510186728d66e51935c337547adf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830520"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946842"
 ---
 # <a name="log-command-window-output-command"></a>Befehl "Befehlsfensterausgaben protokollieren"
 Kopiert die gesamte Ein- und Ausgabe aus dem **Befehlsfenster** in eine Datei.
@@ -38,7 +37,6 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 > [!TIP]
 > Geben Sie den vollständigen Dateipfad in Anführungszeichen an, wenn der Pfad Leerzeichen enthält, um den Speicherort der Protokolldatei zu ändern.
 
-
 ## <a name="switches"></a>Schalter
  /on
 
@@ -52,7 +50,7 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 
  Dies ist optional. Wenn die angegebene Datei im `filename`-Argument mit einer vorhandenen Datei übereinstimmt, wird die Datei überschrieben.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Anmerkungen
  Wenn noch keine Datei angegeben ist, wird standardmäßig die Datei „cmdline.log“ erstellt. Der Alias dieses Befehls lautet standardmäßig „Log“.
 
 ## <a name="examples"></a>Beispiele

@@ -3,21 +3,20 @@ title: 'Tutorial zu Django in Visual Studio, Schritt 5: Authentifizierung'
 titleSuffix: ''
 description: In dieser exemplarischen Vorgehensweise erhalten Sie grundlegende Informationen zu Django im Zusammenhang mit Visual Studio-Projekten, insbesondere zu Authentifizierungsfeatures, die durch die Vorlage „Django-Webprojekt“ bereitgestellt werden.
 ms.date: 11/19/2018
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 26a8268508f4d53a488d2c9d5fd54ef9330b2fc5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bdc76b0a7b9d3f74da77b317faf31dae83706f04
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820305"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957856"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Schritt 5: Authentifizieren von Benutzern bei Django
 

@@ -1,30 +1,32 @@
 ---
 title: IDebugFunctionPosition2::GetFunctionName | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugFunctionPosition2::GetFunctionName
 helpviewer_keywords:
 - IDebugFunctionPosition2::GetFunctionName
 ms.assetid: eb7a348e-a7f5-4f25-be68-80482d5482a8
-author: gregvanl
+caps.latest.revision: 14
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: b9e06e8199e9cfe0c259b190817bf4b244b2727c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b98b1f2bcb8324544d88a9b002995ff472dec35d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820172"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62919243"
 ---
 # <a name="idebugfunctionposition2getfunctionname"></a>IDebugFunctionPosition2::GetFunctionName
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Ruft den Namen der Funktion auf die diese Position zeigt.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT GetFunctionName(   
    BSTR* pbstrFunctionName  
 );  

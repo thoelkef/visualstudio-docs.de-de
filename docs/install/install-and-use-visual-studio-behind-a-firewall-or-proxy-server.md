@@ -1,9 +1,8 @@
 ---
 title: Installation und Verwendung hinter einer Firewall oder einem Proxy
 description: Überprüfen Sie die Domänen-URLs, Ports und Protokolle, die Sie möglicherweise auf die Whitelist setzen oder öffnen möchten, wenn Ihre Organisation eine Firewall oder einen Proxyserver verwendet.
-ms.date: 07/10/2018
+ms.date: 03/30/2019
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -13,15 +12,17 @@ helpviewer_keywords:
 ms.assetid: ''
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55234231855761e0ad0206bdd96dfffcdb52690a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 227525b08e45832041b573fbb7cf3719484d1b8e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974708"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installieren und Verwenden von Visual Studio und Azure-Diensten hinter einer Firewall oder einem Proxyserver
 
@@ -85,7 +86,7 @@ Um sicherzustellen, dass Sie bei Verwendung von Visual Studio oder Azure-Dienste
 | Dienst oder Szenario | DNS-Endpunkt | Protokoll | Port | Beschreibung |
 | - | - | - | - | - |
 | URL<br>Auflösung | go.microsoft.com<br><br>aka.ms | | | Dient dem Verkürzen von URLs, die anschließend in längere URLs aufgelöst werden. |
-| Startseite | vsstartpage.blob.core.windows.net | | 443 | Dient der Anzeige Neuigkeiten für Entwickler auf der Startseite in Visual Studio. |
+| Startseite | vsstartpage.blob.core.windows.net | | 443 | Dient der Anzeige Neuigkeiten für Entwickler auf der Startseite (nur in Visual Studio 2017). |
 | Ziel-<br> benachrichtigungs- <br>Dienst | targetednotifications.azurewebsites.net <br><br>www.research.net | | 80<br><br>443 | Dient zum Filtern einer globalen Liste mit Benachrichtigungen in eine Liste, die nur für bestimmte Computertypen/Verwendungsszenarien gilt. |
 | Erweiterung <br>auf Update überprüfen | marketplace.visualstudio.com<br><br>&#42;.windows.net <br>&#42;.microsoftonline.com <br>&#42;.live.com | | 443 | Dient zum Bereitstellen von Benachrichtigungen wenn für eine installierte Erweiterung ein Update verfügbar ist. <br><br> Wird als Anmeldestandort verwendet. |
 | AI-Projekt <br>Integration | az861674.vo.msecnd.net | | 443<br> | Wird zum Konfigurieren neuer Projekte und zum Senden von Nutzungsdaten an Ihr registriertes Application Insights-Konto verwendet. |
@@ -101,7 +102,7 @@ Um sicherzustellen, dass Sie bei Verwendung von Visual Studio oder Azure-Dienste
 | GitHub-Repositoryinformationen | api.github.com | https | 443 | Erforderlich zum Abrufen zusätzlicher Informationen zu Bower-Paketen. |
 | Weblinter | Eslint.org<br><br>www.Bing.com <br><br>www.coffeelint.org | http | 80 | |
 | Cookiecutter<br>Explorer-Vorlage<br>Erkennung <br><br>Cookiecutter <br>Explorer-Projekt<br> Erstellung | api.github.com <br>raw.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org | https | 443<br> | Wird zum Ermitteln von Onlinevorlagen im empfohlenen Feed sowie in GitHub-Repositorys verwendet. <br><br>Dient zum Erstellen eines Projekts aus einer Cookiecutter-Vorlage, die eine einmalige Installation eines Cookiecutter-Python-Pakets aus dem Python-Paketindex (PyPI) erfordert. |
-| Python-Paket <br>Erkennung<br><br>Python-Paket <br>Verwaltung<br><br>Python <br>Neues Projekt <br>Vorlagen | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | https | 443 | Ermöglicht die Suche nach PIP-Paketen.<br><br>Installiert PIP automatisch, sofern nicht vorhanden. <br><br> Wird zur Erstellung verwendet. <br><br>Wird zum Auflösen der folgenden Python-Projektvorlagen im Dialogfeld für ein neues Projekt in Cookiecutter-Vorlagen-URLs verwendet:<br> – Klassifiziererprojekt<br>– Clusteringprojekt <br> – Regressionsprojekt <br> – PyGame unter Verwendung von PyKinect <br> – Pyvot-Projekt |
+| Python-Paket <br>Erkennung<br><br>Python-Paket <br>Verwaltung<br><br>Neu <br>Python <br> Projekt <br>Vorlagen | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | https | 443 | Ermöglicht die Suche nach PIP-Paketen.<br><br>Installiert PIP automatisch, sofern nicht vorhanden. <br><br>Wird zum Auflösen der folgenden neuen Python-Projektvorlagen für Cookiecutter-Vorlagen-URLs verwendet:<br> – Klassifiziererprojekt<br>– Clusteringprojekt <br> – Regressionsprojekt <br> – PyGame unter Verwendung von PyKinect <br> – Pyvot-Projekt |
 | Office Web <br>Add-In <br> Manifest <br>Überprüfung <br>Dienst | verificationservice.osi.office.net | https | 443 | Wird zum Validieren von Manifesten für Office Web-Add-Ins verwendet. |
 | SharePoint- und  <br>Office-Add-ins | sharepoint.com | https | 443 | Wird zum Veröffentlichen und Testen von SharePoint- und Office-Add-Ins in SharePoint Online verwendet. |
 | Workflow-Manager- <br>Testdienst-<br> Host | | http | 12292 | Eine Firewall, die zum Testen von SharePoint-Add-Ins mit Workflows automatisch erstellt wird. |
@@ -117,7 +118,7 @@ Um sicherzustellen, dass Sie bei Verwendung von Visual Studio oder Azure-Dienste
 | Cloud-Explorer | 1. &#60;Clusterendpunkt&#62; <br>Service Fabric <br>2. &#60;Verwaltungsendpunkt&#62;<br>Allgemeine Cloudoberfläche <br>3. &#60;Graph-Endpunkt&#62;<br>Allgemeine Cloudoberfläche<br>4. &#60;Speicherkontoendpunkt&#62;<br>Speicherknoten <br>5. &#60;Azure-Portal-URLs&#62;<br>Allgemeine Cloudoberfläche <br>6. &#60;Key Vault-Endpunkte&#62; <br>Azure Resource Manager-VM-Knoten<br>7. &#60;PublicIPAddressOfCluster&#62;<br>Service Fabric-Remotedebuggen und ETW-Ablaufverfolgungen | <br>1. https<br>2. https<br>3. https<br>4. https<br>5. https<br>6. https<br>7: TCP | 1. 19080<br>2. 443 <br>3. 443 <br>4. 443 <br>5. 443 <br>6. 443 <br>7. Dynamisch | 1. Beispiel: test12.eastus.cloudapp.com<br>2. Ruft Abonnements ab und ruft Azure-Ressourcen ab bzw. verwaltet sie.<br>3. Ruft Azure Stack-Abonnements ab.<br>4. Verwaltet Speicherressourcen (Beispiel: mystorageaccount.blob.core.windows.net).<br>5. Kontextmenüoption „In Portal öffnen“ (öffnet eine Ressource im Azure-Portal).<br>6. Erstellt und verwaltet Schlüsselspeicher für das VM-Debugging (Beispiel: myvault.vault.azure.net). <br><br>7. Hiermit wird ein Portblock basierend auf der Anzahl von Knoten im Cluster sowie den verfügbaren Ports dynamisch zugewiesen. <br><br>Ein Portblock versucht, die dreifache Anzahl von Knoten mit mindestens zehn Ports abzurufen.<br><br>Für Streamingablaufverfolgungen wird versucht, den Portblock ab 810 zu erhalten. Wenn einer dieser Ports bereits verwendet wird, wird versucht, den nächsten Block abzurufen usw. (Wenn der Load Balancer leer ist, werden die Ports ab 810 sehr wahrscheinlich verwendet.) <br><br>Ähnlich werden für das Debugging vier Sätze an Portblocks reserviert: <br>– connectorPort: 30398, <br>– forwarderPort: 31398, <br>– forwarderPortx86: 31399,<br>– fileUploadPort: 32398<br> |
 | Cloud Services | 1. RDP<br><br>2. core.windows.net <br><br>3.  management.azure.com<br> management.core.windows.net <br><br>4. &#42;.blob.core.windows.net <br>&#42;.queue.core.windows.net<br>&#42;.table.core.windows.net <br><br>5. portal.azure.com <br><br>6. &#60;Benutzerclouddienst&#62;.cloudapp.net <br> &#60;Benutzer-VM&#62;.&#60;Region&#62;.azure.com | 1. RDP <br><br> 2. https <br><br> 3. https <br><br> 4. https <br><br> 5. https <br><br>6. TCP | 1. 3389 <br><br> 2. 443 <br><br> 3. 443 <br><br>4. 443 <br><br>5. 443 <br><br> 6. a) 30398 <br> 6. b) 30400 <br> 6. c) 31398 <br> 6. d) 31400 <br> 6. e) 32398 <br> 6. f) 32400 | 1.  Remotedesktop zu Cloud Services-VM <br><br> 2.  Speicherkontokomponente der privaten Diagnosekonfiguration <br><br> 3.  Azure-Portal <br><br> 4. Server-Explorer – Azure Storage &#42; entspricht dem vom Kunden benannten Speicherkonto  <br><br> 5.  Links zum Öffnen des Portals &#47; Download des Abonnementzertifikats &#47; Veröffentlichen der Einstellungsdatei <br><br>6. a) Lokaler Connectorport für das Remotedebuggen von Clouddienst und VM<br> 6. b) Öffentlicher Connectorport für das Remotedebuggen von Clouddienst und VM <br> 6. c) Lokaler Weiterleitungsport für das Remotedebuggen von Clouddienst und VM <br> 6. d) Öffentlicher Weiterleitungsport für das Remotedebuggen von Clouddienst und VM  <br> 6. e) Lokaler Port des Programms zum Hochladen von Dateien für das Remotedebuggen von Clouddienst und VM <br> 6. f) Öffentlicher Port des Programms zum Hochladen von Dateien für das Remotedebuggen von Clouddienst und VM |
 | Service Fabric | 1. <br>ocs.Microsoft.com<br>aka.ms <br>go.microsoft.com <br><br>2. <br>vssftools.blob.core.windows.net <br>Vault.azure.com <br>Portal.azure.com <br><br> 3. &#42; vault.azure.net<br><br> 4. <br>app.vsaex.visualstudio.com<br>&#42; .vsspsext.visualstudio.com<br>clouds.vsrm.visualstudio.com <br>clouds.visualstudio.com<br>app.vssps.visualstudio.com <br>&#42; .visualstudio.com | https | 443 | 1. Dokumentation <br><br> 2. Feature zur Clustererstellung <br><br>3. &#42; ist der Azure Key Vault-Name (Beispiel: test11220180112110108.vault.azure.net)  <br><br>  4. &#42; ist dynamisch (Beispiel: vsspsextprodch1su1.vsspsext.visualstudio.com) |
-| Momentaufnahme <br>Debugger | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42;azurewebsites.net <br> 4. &#42;scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. msvsmon | 1. https <br>2. https  <br>3. http <br>4. https <br>5. https <br>6. Concord <br> | 1. 443<br> 2. 443<br>3. 80  <br>4. 443<br> 5. 443<br> 6. 4022 (abhängig von Visual Studio-Version) | 1. Abfrage-JSON-Datei für App Service-SKU-Größe <br>2. Verschiedene Azure-RM-Aufrufe <br>3. Aufruf zur Standortaufwärmung über  <br>4. Vom Kunden festgelegter App Service-Kudu-Endpunkt <br>5. Auf nuget.org veröffentlichte Erweiterungsversion für die Abfragewebsite <br>6. Kanal für Remotedebuggen |
+| Snapshot <br>Debugger | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42;azurewebsites.net <br> 4. &#42;scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. msvsmon | 1. https <br>2. https  <br>3. http <br>4. https <br>5. https <br>6. Concord <br> | 1. 443<br> 2. 443<br>3. 80  <br>4. 443<br> 5. 443<br> 6. 4022 (abhängig von Visual Studio-Version) | 1. Abfrage-JSON-Datei für App Service-SKU-Größe <br>2. Verschiedene Azure-RM-Aufrufe <br>3. Aufruf zur Standortaufwärmung über  <br>4. Vom Kunden festgelegter App Service-Kudu-Endpunkt <br>5. Auf nuget.org veröffentlichte Erweiterungsversion für die Abfragewebsite <br>6. Kanal für Remotedebuggen |
 | Azure Stream Analytics <br><br>HDInsight | Management.azure.com | https | 443 | Dient zum Anzeigen, Übermitteln, Ausführen und Verwalten von ASA-Aufträgen. <br><br> Wird verwendet, um HDI-Cluster zu durchsuchen und HDI-Aufträge zu übermitteln, zu diagnostizieren und zu debuggen. |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | Wird verwendet, um Auftrage zu kompilieren, zu übermitteln, anzuzeigen, zu diagnostizieren und zu debuggen. Dient zum Durchsuchen von ADLS-Dateien und zum Hoch- und Herunterladen von Dateien. |
 | Paketerstellungsdienst | [account].visualstudio.com <br/> [Konto].\*.visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | Die Domänen \*.npmjs.org, \*.nuget.org und \*.nodejs.org sind nur für bestimmte Buildtaskszenarios erforderlich (z. B.: NuGet-Toolinstaller, Node Tool-Installationsprogramm) oder wenn Sie öffentliche Upstreams mit Ihren Feeds verwenden müssen. Die anderen drei Domänen werden für wichtige Funktionen des Paketerstellungsdiensts benötigt. |
@@ -134,12 +135,13 @@ Für installationsbezogene Probleme wird außerdem ein [**Livechat**](https://vi
 
 Hier sind einige weitere Supportoptionen:
 
-* Sie können uns über Produktprobleme mit dem Tool [Problem melden](../ide/how-to-report-a-problem-with-visual-studio-2017.md) informieren, das sowohl im Visual Studio-Installer als auch in der Visual Studio-IDE angezeigt wird.
+* Sie können uns über Produktprobleme mit dem Tool [Problem melden](../ide/how-to-report-a-problem-with-visual-studio.md) informieren, das sowohl im Visual Studio-Installer als auch in der Visual Studio-IDE angezeigt wird.
 * Schlagen Sie ein Feature vor, verfolgen Sie Produktprobleme nach, und finden Sie Antworten in der [Visual Studio-Entwicklercommunity](https://developercommunity.visualstudio.com/).
 * Sie können Ihr [GitHub](https://github.com/)-Konto verwenden, um über die [Visual Studio-Unterhaltung in der Gitter-Community](https://gitter.im/Microsoft/VisualStudio) Kontakt zu uns oder zu anderen Visual Studio-Entwicklern aufzunehmen.
 
 ## <a name="see-also"></a>Siehe auch
 
+* [Anforderungen an die Konnektivität für Live Share](/visualstudio/liveshare/reference/connectivity/)
 * [Erstellen einer Netzwerkinstallation von Visual Studio](create-a-network-installation-of-visual-studio.md)
 * [Beheben von Netzwerkfehlern in Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
 * [Administratorhandbuch für Visual Studio 2017 RC](visual-studio-administrator-guide.md)

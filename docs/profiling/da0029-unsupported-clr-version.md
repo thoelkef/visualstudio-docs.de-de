@@ -1,8 +1,6 @@
 ---
 title: 'DA0029: Nicht unterstützte CLR-Version | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.29
@@ -14,31 +12,31 @@ helpviewer_keywords:
 ms.assetid: 76247259-c6f3-44c4-b3f9-d8dac16b5e0d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5067c9f93a489c09962a9402f4fe7672cbd61108
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a3855b8975684b088b2838a866db36e6ec19e665
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818444"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62936289"
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029: Nicht unterstützte CLR-Version
 
-|||  
-|-|-|  
-|Regel-ID|DA0029|  
-|Kategorie|Verwendung der Profilerstellungstools|  
-|Profilerstellungsmethode|Profilerstellung mithilfe der Befehlszeile|  
-|Meldung|Während der Sammlung wurde eine nicht unterstützte CLR-Version erkannt. Verwaltete Symbole wurden möglicherweise nicht ordnungsgemäß aufgelöst.|  
-|Regeltyp|Information|  
+|||
+|-|-|
+|Regel-ID|DA0029|
+|Kategorie|Verwendung der Profilerstellungstools|
+|Profilerstellungsmethode|Profilerstellung mithilfe der Befehlszeile|
+|Meldung|Während der Sammlung wurde eine nicht unterstützte CLR-Version erkannt. Verwaltete Symbole wurden möglicherweise nicht ordnungsgemäß aufgelöst.|
+|Regeltyp|Information|
 
-## <a name="cause"></a>Ursache  
- Sie versuchen, das Profil für eine Anwendung zu erstellen, die [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)] verwendet, was nicht von den Profilerstellungstools unterstützt wird.  
+## <a name="cause"></a>Ursache
+ Sie versuchen, das Profil für eine Anwendung zu erstellen, die [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)] verwendet, was nicht von den Profilerstellungstools unterstützt wird.
 
-## <a name="rule-description"></a>Regelbeschreibung  
- Diese Warnung tritt auf, da die Profilerstellungstools keine Symbole für den verwalteten Code auflösen können, der in der Anwendung ausgeführt wird. Die Profilerstellungstools können keine verwalteten Codesymbole für Anwendungen auflösen, die [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)] ausführen.  
+## <a name="rule-description"></a>Regelbeschreibung
+ Diese Warnung tritt auf, da die Profilerstellungstools keine Symbole für den verwalteten Code auflösen können, der in der Anwendung ausgeführt wird. Die Profilerstellungstools können keine verwalteten Codesymbole für Anwendungen auflösen, die [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)] ausführen.
 
-## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Keine

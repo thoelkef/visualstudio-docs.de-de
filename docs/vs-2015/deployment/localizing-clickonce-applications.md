@@ -1,14 +1,9 @@
 ---
 title: Lokalisieren von ClickOnce-Anwendungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -26,13 +21,13 @@ ms.assetid: c92b193b-054d-4923-834b-d4226a4c7a1a
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: d7c3b8527bf96ee783de6ac975117bd4c797d426
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1b57f3de72272e8d1ecc567b150d073cd8d69611
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261468"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443774"
 ---
 # <a name="localizing-clickonce-applications"></a>Lokalisieren von ClickOnce-Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,11 +38,11 @@ Lokalisierung ist der Prozess, mit dem Sie die Anwendung an eine bestimmte Kultu
   
  In diesem Thema werden drei Möglichkeiten beschrieben, eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendung für andere Kulturen bereitzustellen:  
   
--   Aufnehmen aller Satellitenassemblys in eine einzelne Bereitstellung.  
+- Aufnehmen aller Satellitenassemblys in eine einzelne Bereitstellung.  
   
--   Generieren einer Bereitstellung für jede Kultur, mit jeweils einer einzelnen darin enthaltenen Satellitenassembly.  
+- Generieren einer Bereitstellung für jede Kultur, mit jeweils einer einzelnen darin enthaltenen Satellitenassembly.  
   
--   Herunterladen von Satellitenassemblys bei Bedarf.  
+- Herunterladen von Satellitenassemblys bei Bedarf.  
   
 ## <a name="including-all-satellite-assemblies-in-a-deployment"></a>Aufnehmen aller Satellitenassemblys in eine einzelne Bereitstellung.  
  Anstatt mehrere [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Bereitstellungen zu veröffentlichen, können Sie eine einzelne [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Bereitstellung veröffentlichen, in der alle Satellitenassemblys enthalten sind.  
@@ -59,37 +54,34 @@ Lokalisierung ist der Prozess, mit dem Sie die Anwendung an eine bestimmte Kultu
  Der Vorteil dieses Ansatzes besteht darin, dass mit ihm eine einzelne Bereitstellung erstellt und der Verlauf der lokalisierten Bereitstellung vereinfacht wird. Zur Laufzeit wird die richtige Satellitenassembly verwendet, und zwar basierend auf der vom Benutzer für das Windows-Betriebssystem angegebenen Standardkultur. Ein Nachteil dieses Ansatzes besteht darin, dass bei jeder Installation oder jedem Update der Anwendung auf einem Clientcomputer alle Satellitenassemblys heruntergeladen werden. Wenn Ihre Anwendung eine große Zahl von Zeichenfolgen aufweist oder Ihre Kunden nur über eine langsame Netzwerkverbindung verfügen, kann dieser Prozess während des Anwendungsupdates zu Leistungseinbußen führen.  
   
 > [!NOTE]
->  Für diesen Ansatz wird davon ausgegangen, dass Ihre Anwendung die Höhe, Breite und Position von Steuerelementen automatisch anpasst, um Textzeichenfolgen aufzunehmen, die in verschiedenen Kulturen unterschiedlich lang sind. Windows Forms enthält eine Vielzahl von Steuerelementen und Technologien, mit denen Sie Ihr Formular so entwerfen können, dass es problemlos lokalisiert werden kann. Dazu gehören die Steuerelemente <xref:System.Windows.Forms.FlowLayoutPanel> und <xref:System.Windows.Forms.TableLayoutPanel> sowie die <xref:System.Windows.Forms.Control.AutoSize%2A>-Eigenschaft.  Siehe auch [wie: unterstützen der Lokalisierung in Windows Forms mithilfe von AutoSize und dem TableLayoutPanel-Steuerelement](http://msdn.microsoft.com/library/1zkt8b33\(v=vs.110\)).  
+> Für diesen Ansatz wird davon ausgegangen, dass Ihre Anwendung die Höhe, Breite und Position von Steuerelementen automatisch anpasst, um Textzeichenfolgen aufzunehmen, die in verschiedenen Kulturen unterschiedlich lang sind. Windows Forms enthält eine Vielzahl von Steuerelementen und Technologien, mit denen Sie Ihr Formular so entwerfen können, dass es problemlos lokalisiert werden kann. Dazu gehören die Steuerelemente <xref:System.Windows.Forms.FlowLayoutPanel> und <xref:System.Windows.Forms.TableLayoutPanel> sowie die <xref:System.Windows.Forms.Control.AutoSize%2A>-Eigenschaft.  Weitere Informationen hierzu finden Sie auch unter [Gewusst wie: Unterstützen der Lokalisierung in Windows Forms mithilfe von AutoSize und dem TableLayoutPanel-Steuerelement](http://msdn.microsoft.com/library/1zkt8b33\(v=vs.110\)).  
   
 ## <a name="generate-one-deployment-for-each-culture"></a>Generieren einer Bereitstellung für jede Kultur  
  In dieser Bereitstellungsstrategie generieren Sie mehrere Bereitstellungen. Sie nehmen in jede Bereitstellung nur die Satellitenassembly auf, die für eine bestimmte Kultur benötigt wird, und kennzeichnen die Bereitstellung als die für diese Kultur spezifische Bereitstellung.  
   
- Verwenden Sie diese Methode in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]legen die **Publish Language** Eigenschaft für die **veröffentlichen** Tab, um die gewünschte Region. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] schließt automatisch die für die ausgewählte Region erforderliche Satellitenassembly ein und schließt alle anderen Satellitenassemblys aus der Bereitstellung aus.  
+ Um diese Methode in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zu verwenden, legen Sie auf der Registerkarte **Veröffentlichen** die Eigenschaft **Sprache für Veröffentlichung** auf die gewünschte Region fest. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] schließt automatisch die für die ausgewählte Region erforderliche Satellitenassembly ein und schließt alle anderen Satellitenassemblys aus der Bereitstellung aus.  
   
  Sie können die gleiche Aufgabe auch mit dem Tool MageUI.exe in Microsoft [!INCLUDE[winsdklong](../includes/winsdklong-md.md)] ausführen. Verwenden der **Auffüllen** Schaltfläche der **Dateien** Registerkarte des Anwendungsmanifests können Sie alle anderen Satellitenassemblys aus dem Anwendungsverzeichnis ausschließen, und legen Sie die **Kultur**Feld der **Namen** das Bereitstellungsmanifest in MageUI.exe auf der Registerkarte. Auf diese Weise wird nicht nur die richtige Satellitenassembly eingeschlossen, sondern es wird auch das `language`-Attribut im `assemblyIdentity`-Element für das Bereitstellungsmanifest auf die entsprechende Kultur festgelegt.  
   
- Nachdem Sie die Anwendung veröffentlicht haben, müssen Sie diesen Schritt für jede zusätzliche Kultur wiederholen, die die Anwendung unterstützt. Sie müssen sicherstellen, dass Sie zu einem anderen Webserververzeichnis oder Dateifreigabeverzeichnis veröffentlichen, da jedes Anwendungsmanifest auf eine andere Satellitenassembly verweist, und jedes Bereitstellungsmanifest einen anderen Wert für die hat`language`Attribut.  
+ Nachdem Sie die Anwendung veröffentlicht haben, müssen Sie diesen Schritt für jede zusätzliche Kultur wiederholen, die die Anwendung unterstützt. Achten Sie darauf, dass Sie jeweils in einem anderen Webserververzeichnis oder Dateifreigabeverzeichnis veröffentlichen, denn jedes Anwendungsmanifest verweist auf eine andere Satellitenassembly, und jedes Bereitstellungsmanifest hat einen anderen Wert für das `language`-Attribut.  
   
 ## <a name="downloading-satellite-assemblies-on-demand"></a>Herunterladen von Satellitenassemblys bei Bedarf  
  Wenn Sie alle Satellitenassemblys in eine einzelne Bereitstellung aufnehmen möchten, können Sie die Leistung mit Herunterladen bei Bedarf verbessern. Damit können Sie Assemblys als optional kennzeichnen. Die gekennzeichneten Assemblys werden nicht heruntergeladen, wenn die Anwendung installiert oder aktualisiert wird. Wenn Sie die Assemblys benötigen, können Sie sie durch Aufruf der <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup%2A>-Methode in der <xref:System.Deployment.Application.ApplicationDeployment>-Klasse installieren.  
   
- Das Herunterladen von Satellitenassemblys bei Bedarf unterscheidet sich geringfügig vom Herunterladen anderer Typen von Assemblys bei Bedarf. Weitere Informationen und Codebeispiele zum Aktivieren dieses Szenarios mit dem [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] -tools für [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], finden Sie unter [Exemplarische Vorgehensweise: Bedarfsgerechtes Herunterladen von Satellitenassemblys bei Bedarf mit der ClickOnce-Bereitstellung-API](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md).  
+ Das Herunterladen von Satellitenassemblys bei Bedarf unterscheidet sich geringfügig vom Herunterladen anderer Typen von Assemblys bei Bedarf. Weitere Informationen und Codebeispiele zum Aktivieren dieses Szenarios mit dem [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] -tools für [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], finden Sie unter [Exemplarische Vorgehensweise: Herunterladen von Satellitenassemblys bei Bedarf mit der API für die ClickOnce-Bereitstellung](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md).  
   
- Sie können dieses Szenario auch in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aktivieren.  Siehe auch [Exemplarische Vorgehensweise: Bedarfsgerechtes Herunterladen von Satellitenassemblys mit der API für die ClickOnce-Bereitstellung unter Verwendung des Designers](http://msdn.microsoft.com/library/ms366788\(v=vs.110\)) oder [Exemplarische Vorgehensweise: Bedarfsgerechtes Herunterladen von Satellitenassemblys mit der API für die ClickOnce-Bereitstellung unter Verwendung des Designers](http://msdn.microsoft.com/library/ms366788\(v=vs.120\)).  
+ Sie können dieses Szenario auch in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aktivieren.  Siehe auch [Exemplarische Vorgehensweise: Herunterladen von Satellitenassemblys bei Bedarf mit der API, die mithilfe des Designers für die ClickOnce-Bereitstellung](http://msdn.microsoft.com/library/ms366788\(v=vs.110\)) oder [Exemplarische Vorgehensweise: Herunterladen von Satellitenassemblys bei Bedarf mit der API, die mithilfe des Designers für die ClickOnce-Bereitstellung](http://msdn.microsoft.com/library/ms366788\(v=vs.120\)).  
   
 ## <a name="testing-localized-clickonce-applications-before-deployment"></a>Testen von lokalisierten ClickOnce-Anwendungen vor der Bereitstellung  
  Eine Satellitenassembly wird nur dann für eine Windows Forms-Anwendung verwendet, wenn für die <xref:System.Threading.Thread.CurrentUICulture%2A>-Eigenschaft für den Hauptthread der Anwendung die Kultur der Satellitenassembly festgelegt ist. Kunden auf den lokalen Märkten führen wahrscheinlich bereits eine lokalisierte Version von Windows aus, für deren Kultur der entsprechende Standardwert festgelegt ist.  
   
  Sie haben drei Optionen zum Testen lokalisierter Bereitstellungen, bevor Sie die Anwendung Kunden zur Verfügung stellen:  
   
--   Sie können die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendung unter den entsprechenden lokalisierten Versionen von Windows ausführen.  
+- Sie können die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendung unter den entsprechenden lokalisierten Versionen von Windows ausführen.  
   
--   Sie können die <xref:System.Threading.Thread.CurrentUICulture%2A>-Eigenschaft programmgesteuert in der Anwendung festlegen. (Diese Eigenschaft muss vor dem Aufrufen der <xref:System.Windows.Forms.Application.Run%2A>-Methode festgelegt werden.)  
+- Sie können die <xref:System.Threading.Thread.CurrentUICulture%2A>-Eigenschaft programmgesteuert in der Anwendung festlegen. (Diese Eigenschaft muss vor dem Aufrufen der <xref:System.Windows.Forms.Application.Run%2A>-Methode festgelegt werden.)  
   
 ## <a name="see-also"></a>Siehe auch  
  [\<AssemblyIdentity >-Element](../deployment/assemblyidentity-element-clickonce-deployment.md)   
  [ClickOnce-Sicherheit und -Bereitstellung](../deployment/clickonce-security-and-deployment.md)   
  [Globalisieren von Windows Forms](http://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)
-
-
-

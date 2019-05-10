@@ -1,27 +1,22 @@
 ---
 title: Grafikpixelverlauf | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.pixelhistory
 ms.assetid: 0a2cbde5-1ad9-487e-857c-a3664158c268
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 20b33c987cf7e2b1ab57160b4f4917246d9030b6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 614977aef83092c64071524e33507848c34bf442
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733166"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420078"
 ---
 # <a name="graphics-pixel-history"></a>Grafikpixelverlauf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,15 +30,15 @@ Mit dem Fenster „Grafikpixelverlauf“ in der Visual Studio-Grafikanalyse kön
 ## <a name="understanding-the-pixel-history-window"></a>Grundlegendes zum Pixelverlaufsfenster  
  Mithilfe des Pixelverlaufs können Sie analysieren, wie sich Direct3D-Ereignisse während eines Frames auf ein bestimmtes Pixel oder Renderziel auswirken. Sie können ein Rendering-Problem auf ein bestimmtes Ereignis für Direct3D zurückführen, selbst wenn die nachfolgenden Ereignisse – oder nachfolgende Primitive im selben Ereignis – weiterhin den endgültigen Farbwert des Pixel verändern. Beispielsweise wird ein Pixel nicht ordnungsgemäß erzeugt und dann unleserlich durch ein anderes, halbtransparenten Pixel, dessen Farben in den Framebuffer-Kontrastwerten auftreten. Diese Art von Problem wäre nur schwer zu diagnostizieren, wenn Sie nur den endgültigen Inhalt des Renderingziels als Unterstützung zur Verfügung hätten.  
   
- Das Pixelverlaufsfenster zeigt den vollständigen Verlauf eines Pixels im Verlauf des ausgewählten Frames an. Die **letzte Framepuffer** am oberen Rand des Fensters zeigt die Farbe an, die am Framepuffer am Ende des Frames zusammen mit zusätzlichen Informationen über das Pixel wie z. B. der Frame, der sie stammen und des Bildschirms geschrieben wird koordiniert. Dieser Bereich enthält auch die **Alpha wiedergeben** Kontrollkästchen. Wenn dieses Kontrollkästchen aktiviert ist, die **letzte Framepuffer** werden Farbe und die Zwischenfarbe transparent über einem Schachbrettmuster angezeigt. Wenn das Kontrollkästchen deaktiviert ist, wird der Alphakanal der Farbwerte ignoriert.  
+ Das Pixelverlaufsfenster zeigt den vollständigen Verlauf eines Pixels im Verlauf des ausgewählten Frames an. Der **letzte Framepuffer** am oberen Fensterrand zeigt die Farbe an, die am Framepuffer am Ende des Frames zusammen mit zusätzlichen Informationen über das Pixel geschrieben wird, wie z.B. der Frame, der davon abgeleitet wird, und dessen Bildschirmkoordinaten. Dieser Bereich enthält auch das Kontrollkästchen **Alpha rendern**. Wenn dieses Kontrollkästchen aktiviert ist, werden die Farbe des **letzten Framepuffers** und die Zwischenfarbe transparent über einem Schachbrettmuster angezeigt. Wenn das Kontrollkästchen deaktiviert ist, wird der Alphakanal der Farbwerte ignoriert.  
   
- Der untere Teil des Fensters zeigt die Ereignisse, die keine Gelegenheit hatten, die die Farbe des Pixels, zusammen mit Auswirkungen auf die **anfängliche** und **endgültige** Pseudo-Ereignissen an, die die ersten und endgültigen Farbwerte der darstellen. die Pixel in der framepufferausgabe. Der ursprüngliche Farbwert wird bestimmt durch das erste Ereignis, das die Farbe des Pixels änderte (in der Regel ein `Clear`-Ereignis). Eine Pixel hat immer diese beiden Pseudo-Ereignisse in dessen Verlauf, auch wenn keine weiteren Ereignisse betroffen sind. Wenn andere Ereignisse auf die Pixels auswirken konnten, werden sie angezeigt, zwischen den **anfängliche** und **endgültige** Ereignisse. Die Ereignisse können erweitert werden, um ihre Details anzuzeigen. Bei einfachen Ereignissen, wie der Deaktivierung eines Renderingziels, wirkt sich das Ereignis nur einen Farbwert aus. Komplexere Ereignisse, wie Zeichnen-Aufrufe, generieren mindestens eine Primitive, die zur Farbe des Pixels beitragen könnten.  
+ Der untere Teil des Fensters zeigt die Ereignisse, die sich auf die Farbe des Pixels auswirken konnten, zusammen mit den **ersten** und **endgültigen** Pseudo-Ereignissen an, die die ersten und endgültigen Farbwerte der Pixel im Framepuffer darstellen. Der ursprüngliche Farbwert wird bestimmt durch das erste Ereignis, das die Farbe des Pixels änderte (in der Regel ein `Clear`-Ereignis). Eine Pixel hat immer diese beiden Pseudo-Ereignisse in dessen Verlauf, auch wenn keine weiteren Ereignisse betroffen sind. Wenn andere Ereignisse sich auf die Pixels auswirken konnten, werden sie zwischen den **ersten** und **letzten** Ereignissen angezeigt. Die Ereignisse können erweitert werden, um ihre Details anzuzeigen. Bei einfachen Ereignissen, wie der Deaktivierung eines Renderingziels, wirkt sich das Ereignis nur einen Farbwert aus. Komplexere Ereignisse, wie Zeichnen-Aufrufe, generieren mindestens eine Primitive, die zur Farbe des Pixels beitragen könnten.  
   
- Primitive, die vom Ereignis gezeichnet wurden, werden durch ihren Primitivtyp und Index zusammen mit der Gesamtzahl der Primitive für das Objekt angegeben. Angenommen, ein Bezeichner wie **Dreieck (1456) von (6214)** bedeutet, die der Primitiv dem 1456. Dreieck in einem Objekt entspricht, die aus 6214 Dreiecken besteht. Auf der linken Seite jeder Primitiv-ID befindet sich ein Symbol, das den Effekt des Primitivs auf das Pixel zusammenfasst. Primitive, die Auswirkungen auf die Pixelfarbe haben, werden durch ein abgerundetes Rechteck dargestellt, die mit der Ergebnisfarbe gefüllt ist. Primitive, die keine Auswirkungen auf die Pixelfarbe haben, werden durch Symbole dargestellt, die den Grund für den Ausschluss des Pixels angeben. Diese Symbole werden im Abschnitt beschriebenen [Ausschluss eines Primitivs](../debugger/graphics-pixel-history.md#exclusion) weiter unten in diesem Artikel.  
+ Primitive, die vom Ereignis gezeichnet wurden, werden durch ihren Primitivtyp und Index zusammen mit der Gesamtzahl der Primitive für das Objekt angegeben. Z.B. bedeutet ein Bezeichner wie **Dreieck (1456) von (6214)**, dass der Primitiv dem 1456. Dreieck in einem Objekt bestehend aus 6214 Dreiecken entspricht. Auf der linken Seite jeder Primitiv-ID befindet sich ein Symbol, das den Effekt des Primitivs auf das Pixel zusammenfasst. Primitive, die Auswirkungen auf die Pixelfarbe haben, werden durch ein abgerundetes Rechteck dargestellt, die mit der Ergebnisfarbe gefüllt ist. Primitive, die keine Auswirkungen auf die Pixelfarbe haben, werden durch Symbole dargestellt, die den Grund für den Ausschluss des Pixels angeben. Diese Symbole werden im Abschnitt [Ausschluss eines Primitivs](../debugger/graphics-pixel-history.md#exclusion) weiter unten in diesem Artikel beschrieben.  
   
  Sie können jeden Primitiv erweitern, um zu untersuchen, wie die Pixel-Shader-Ausgabe mit der vorhandenen Pixelfarbe zusammengeführt wurde, um die Ergebnisfarbe zu erzeugen. Von hier aus können Sie den Pixel Shader-Code prüfen oder debuggen, der dem Primitiv-Typ zugeordnet ist, und Sie können den Vertex-Shader Knoten zum Überprüfen der Vertex-Shaders-Eingaben erweitern.  
   
-###  <a name="exclusion"></a> Ausschluss eines Primitivs  
+### <a name="exclusion"></a> Ausschluss eines Primitivs  
  Wenn ein Primitiv die Pixelfarbe nicht beeinflusst, kann der Ausschluss für eine Vielzahl von Gründen erfolgen. Jeder Grund wird durch ein Symbol dargestellt, das in dieser Tabelle beschrieben wird:  
   
 |Symbol|Grund für den Ausschluss|  
@@ -60,31 +55,28 @@ Mit dem Fenster „Grafikpixelverlauf“ in der Visual Studio-Grafikanalyse kön
   
 ##### <a name="to-view-a-shaders-source-code"></a>Um einen Shader-Quellcode anzuzeigen  
   
-1.  In der **Grafikpixelverlauf** Fenster die Draw-Aufruf, der an den Shader entspricht Sie untersuchen, und erweitern es möchten.  
+1. Suchen Sie im Fenster **Grafikpixelverlauf** nach dem Zeichnen-Befehl, der dem zu überprüfenden Shader entspricht, und erweitern Sie ihn.  
   
-2.  Wählen Sie unter dem von Ihnen soeben erweiterten Zeichnen-Befehl ein Primitiv aus, welches das entsprechende Problem demonstriert, und erweitern Sie es.  
+2. Wählen Sie unter dem von Ihnen soeben erweiterten Zeichnen-Befehl ein Primitiv aus, welches das entsprechende Problem demonstriert, und erweitern Sie es.  
   
-3.  Unter den Grundtyp, Sie möchten, führen Sie auf der Shader-Titellink, z. B. auf den Link **Vertex Shader obj: 30** um den Vertex-Shader-Quellcode anzuzeigen.  
+3. Folgen sie unter dem entsprechenden Primitiv dem Shader-Titellink (folgen Sie beispielsweise dem Link **Vertex Shader obj:30**), um den Quellcode des Vertex-Shaders anzuzeigen.  
   
     > [!TIP]
-    >  Die Objektnummer **Obj:30**, identifiziert diesen Shader über die Grafikanalyse-Schnittstelle wie die Objekt-Tabelle und im pipelinestufenfenster.  
+    > Die Objektnummer **obj:30** identifiziert diesen Shader über die gesamte Grafikanalyseoberfläche hinweg, beispielsweise in der Objekttabelle und im Pipelinestufenfenster.  
   
 ##### <a name="to-debug-a-shader"></a>Um einen Shader zu debuggen  
   
-1.  In der **Grafikpixelverlauf** Fenster die Draw-Aufruf, der an den Shader entspricht Sie untersuchen, und erweitern es möchten.  
+1. Suchen Sie im Fenster **Grafikpixelverlauf** nach dem Zeichnen-Befehl, der dem zu überprüfenden Shader entspricht, und erweitern Sie ihn.  
   
-2.  Wählen Sie dann unter dem von Ihnen soeben erweiterten Zeichnen-Befehl ein Primitiv aus, welches das entsprechende Problem demonstriert, und erweitern Sie es.  
+2. Wählen Sie dann unter dem von Ihnen soeben erweiterten Zeichnen-Befehl ein Primitiv aus, welches das entsprechende Problem demonstriert, und erweitern Sie es.  
   
-3.  Wählen Sie unter den Grundtyp, die Sie interessiert, **Debuggen starten**. Durch diesen Einstiegspunkt in den HLSL-Debugger erfolgt die standardmäßige Festlegung auf den ersten Aufruf des Shaders für das entsprechende Primitiv, d. h. das erste Pixel oder Vertex, das bzw. der durch den Shader verarbeitet wird. Es ist nur ein Pixel mit dem Primitiv verknüpft. Es liegen jedoch mehrere Vertex-Shader-Aufrufe für Linien und Dreiecke vor.  
+3. Wählen Sie unter dem entsprechenden Primitiv **Debuggen starten** aus. Durch diesen Einstiegspunkt in den HLSL-Debugger erfolgt die standardmäßige Festlegung auf den ersten Aufruf des Shaders für das entsprechende Primitiv, d. h. das erste Pixel oder Vertex, das bzw. der durch den Shader verarbeitet wird. Es ist nur ein Pixel mit dem Primitiv verknüpft. Es liegen jedoch mehrere Vertex-Shader-Aufrufe für Linien und Dreiecke vor.  
   
-     Um den Vertex-Shader-Aufruf für einen bestimmten Vertex Debuggen, erweitern die Titellink, und suchen Sie den Vertex, das Sie interessiert, und wählen Sie dann **Debuggen starten** daneben.  
+     Erweitern Sie zum Debuggen des Vertex-Shader-Aufrufs für ein bestimmtes Vertex den VertexShader-Titellink, und suchen Sie nach dem entsprechenden Vertex. Wählen Sie dann **Debuggen starten** daneben aus.  
   
 ### <a name="links-to-graphics-objects"></a>Links zu Grafikobjekten  
- Um die Grafikereignisse im Pixelverlauf zu verstehen, benötigen Sie möglicherweise Informationen über den Gerätezustand zum Zeitpunkt des Ereignisses oder über die Direct3D-Objekte, auf die das Ereignis verweist. Für jedes Ereignis im pixelverlauf der **Grafikpixelverlauf** Links zu den aktuellen Gerätestatus und zu verwandte Objekten.  
+ Um die Grafikereignisse im Pixelverlauf zu verstehen, benötigen Sie möglicherweise Informationen über den Gerätezustand zum Zeitpunkt des Ereignisses oder über die Direct3D-Objekte, auf die das Ereignis verweist. Für jedes Ereignis im Pixelverlauf liefert der **Grafikpixelverlauf** Links zum aktuellen Gerätestatus und zu verwandten Objekten.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Exemplarische Vorgehensweise: Fehlende Objekte durch Gerätestatus](../debugger/walkthrough-missing-objects-due-to-device-state.md)   
  [Exemplarische Vorgehensweise: Debuggen von Renderingfehlern, die durch Schattierungen entstanden sind](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)
-
-
-

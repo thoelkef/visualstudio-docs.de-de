@@ -1,14 +1,9 @@
 ---
 title: 'Visual Basic: Standardeinstellungen, Projekte, Dialogfeld „Optionen“ | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.VBDefaults
 helpviewer_keywords:
@@ -19,18 +14,17 @@ ms.assetid: 2465cd9d-18b6-4c4a-b1ea-86dbab23fc79
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e4c8a1b593333c8b560a828bb0edc5fa7f0628b5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b8c4fc730b4ad110b3160a725be0d109cda8c7a7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274858"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667924"
 ---
 # <a name="visual-basic-defaults-projects-options-dialog-box"></a>VB-Standard, Projekte, Dialogfeld "Optionen"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Legt die Standardeinstellungen für Visual Basic-Projekteinstellungen fest. Beim Erstellen eines neuen Projekts werden die angegebenen Optionsanweisungen dem Projektheader im Code-Editor hinzugefügt. Die Optionen werden für alle Visual Basic-Projekte verwendet.  
   
  Klicken Sie zum Zugriff auf dieses Dialogfeld im Menü **Extras** auf **Optionen**, erweitern Sie den Ordner **Projekte und Projektmappen**, und klicken Sie auf **VB-Standard**.  
@@ -49,6 +43,3 @@ Legt die Standardeinstellungen für Visual Basic-Projekteinstellungen fest. Beim
   
 ## <a name="see-also"></a>Siehe auch  
  [Projektmappen und Projekte](../../ide/solutions-and-projects-in-visual-studio.md)
-
-
-

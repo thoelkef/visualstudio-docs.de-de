@@ -1,27 +1,22 @@
 ---
 title: 'Aufrufstrukturansicht: Konfliktdaten | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Call Tree view
 ms.assetid: 9bd4bde2-2ca3-446c-9ccc-7421522e03ae
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 003e25121b3761a6e9440dcd4f0885975e0d98c1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5d12f1a2343018f05f0e741222b844c562b50f5e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51816455"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048377"
 ---
 # <a name="call-tree-view---contention-data"></a>Aufrufstrukturansicht: Konfliktdaten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ In der Aufrufstrukturansicht werden die Funktionsausführungspfade angezeigt, di
 ## <a name="highlighting-the-execution-hot-path"></a>Hervorheben des langsamsten Ausführungspfads  
  Die Aufrufstrukturansicht kann erweitert werden und den Ausführungspfad des Prozesses oder der Funktion hervorheben, die die meisten Konflikte verursacht hat.  
   
--   Klicken Sie mit der rechten Maustaste auf den Prozess oder die Funktion, und klicken Sie dann auf **Langsamsten Pfad erweitern**, um den Pfad mit der höchsten Aktivität anzuzeigen.  
+- Klicken Sie mit der rechten Maustaste auf den Prozess oder die Funktion, und klicken Sie dann auf **Langsamsten Pfad erweitern**, um den Pfad mit der höchsten Aktivität anzuzeigen.  
   
 ## <a name="setting-the-call-tree-root-node"></a>Festlegen des Stammknotens der Aufrufstruktur  
  Jeder Prozess in der Profilerstellung wird als Stammknoten angezeigt. Sie können den Startknoten der Aufrufstrukturansicht festlegen, indem Sie mit der rechten Maustaste auf den Knoten klicken, der als Startknoten festgelegt werden soll, und dann auf **Stamm festlegen** klicken.  
@@ -67,6 +62,3 @@ In der Aufrufstrukturansicht werden die Funktionsausführungspfade angezeigt, di
  [Aufrufstrukturansicht – .NET-Speichersamplingdaten im Profiler](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
  [Aufrufstrukturansicht](../profiling/call-tree-view-instrumentation-data.md)   
  [Aufrufstrukturansicht](../profiling/call-tree-view-sampling-data.md)
-
-
-

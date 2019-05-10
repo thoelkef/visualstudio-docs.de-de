@@ -2,22 +2,21 @@
 title: 'Tutorial „Python in Visual Studio“, Schritt 4: Debuggen'
 titleSuffix: ''
 description: Dies ist Schritt 4 einer grundlegenden Einführung in Python-Funktionen in Visual Studio, in der das Ausführen von Python-Code im Debugger erläutert wird.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
+ms.date: 01/28/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7299765435cae99afedb176f0b8613d7b504b09f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3f6464986cb94ffa3ab3cc9264ab818112046ea9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931540"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002790"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>Schritt 4: Ausführen von Code im Debugger
 
@@ -48,12 +47,9 @@ Zusätzlich zum Verwalten von Projekten, das mit seinen umfassenden Bearbeitungs
 1. Überprüfen Sie, ob der Code ordnungsgemäß funktioniert, indem Sie **F5** drücken oder den Menübefehl **Debuggen** > **Debuggen starten** auswählen. Durch diesen Befehl wird der Code im Debugger ausgeführt. Da Sie jedoch keine Maßnahmen ergriffen haben, um das Programm während seiner Ausführung anzuhalten, werden nur Wellenmuster für ein paar Iterationen ausgegeben. Drücken Sie eine beliebige Taste, um das Ausgabefenster zu schließen.
 
     > [!Tip]
-    > Damit das Ausgabefenster automatisch geschlossen wird, wenn das Programm abgeschlossen ist, ersetzen Sie den `main()`-Aufruf durch den folgenden Code:
+    > Klicken Sie auf die Menübefehle **Extras** > **Optionen**, erweitern Sie den Knoten **Python**, wählen Sie die Option **Debuggen** aus, und deaktivieren Sie dann die Option **Auf Eingabe warten, wenn der Prozess normal beendet wird**, um das Ausgabefenster automatisch zu schließen, wenn das Programm abgeschlossen ist:
     >
-    > ```python
-    > if __name__ == "__main__":
-    >     sys.exit(int(main() or 0))
-    > ```
+    > ![Python-Debugoption zum Schließen des Ausgabefensters bei normaler Beendigung des Programms](media/vs-getting-started-python-22-debugging5.png)
 
 1. Legen Sie in der `for`-Anweisung einen Haltepunkt fest, indem Sie auf den grauen Rand dieser Zeile klicken oder das Caretzeichen in dieser Zeile platzieren und den Befehl **Debuggen** > **Haltepunkt ein/aus** (**F9**) ausführen. Auf dem grauen Rand erscheint ein roter Punkt, der den Haltepunkt kennzeichnet (siehe Pfeil unten):
 

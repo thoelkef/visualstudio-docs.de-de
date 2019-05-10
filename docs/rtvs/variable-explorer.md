@@ -2,20 +2,18 @@
 title: Variablen-Explorer für R
 description: Der Variablen-Explorer in Visual Studio zeigt alle Variablen für einen bestimmten Bereich in der aktuellen R-Sitzung an.
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: fbd20c362c407148262d8e1e61e15d22d9cbcf2f
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 799b7f2789898e0d02d9588f9a3ad7d1e8098a00
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978124"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62809814"
 ---
 # <a name="variable-explorer"></a>Variablen-Explorer
 
@@ -47,7 +45,7 @@ Da Daten in Tabellen erfasst werden, können Sie alle komplexen Datentypen als s
 
 Durch einen Klick auf eine Spaltenüberschrift werden die Daten nach Spalten sortiert (abwechselnd in aufsteigender und absteigender Reihenfolge). Wenn Sie die **UMSCHALTTASTE** gedrückt gehalten und auf zusätzliche Spalten klicken, werden diese Spalten ebenfalls der Sortierung hinzugefügt. Wenn Sie ohne **UMSCHALTTASTE** auf eine Spalte klicken, wird wieder nach einer Spalte sortiert.
 
-Die Reihenfolge, in der Sie auf die Spaltenüberschriften klicken, bestimmt die Reihenfolge, in der die Sortierung ausgeführt wird. Wenn Sie z.B. bei gedrückter **UMSCHALTTASTE** auf die Spalte **cyl**+ **klicken** und dann zweimal ebenfalls bei gedrückter **UMSCHALTTASTE** auf die Spalte **mpg** **klicken**, wird die Liste aufsteigend nach Zylindern und absteigend nach Meilen pro Gallone sortiert:
+Die Reihenfolge, in der Sie auf die Spaltenüberschriften klicken, bestimmt die Reihenfolge, in der die Sortierung ausgeführt wird. Wenn Sie z.B. bei gedrückter **UMSCHALTTASTE** auf die Spalte **cyl**+**klicken** und dann zweimal ebenfalls bei gedrückter **UMSCHALTTASTE** auf die Spalte **mpg**+**klicken**, wird die Liste aufsteigend nach Zylindern und absteigend nach Meilen pro Gallone sortiert:
 
 ![Tabellenansicht der Daten, nach zwei Spalten sortiert](media/variable-explorer-table-view-sorting.png)
 
@@ -71,7 +69,7 @@ Der **Variablen-Explorer** ändert automatisch den Funktionsbereich, während de
 
 ## <a name="import-data-into-variable-explorer"></a>Importieren von Daten in den Variablen-Explorer
 
-Es gibt zwei Befehle auf der Symbolleiste des **Variablen-Explorers**, die auch über das Menü **R Tools** > **Daten** verfügbar sind, die externe CSV-Datasets in Ihre R-Sitzung importieren: **Dataset aus Web-URL in R-Sitzung importieren** und **Dataset aus Textdatei in R-Sitzung importieren**.
+Es gibt zwei Befehle auf der Symbolleiste des **Variablen-Explorers**, die auch über das Menü **R-Tools** > **Daten** verfügbar sind und externe CSV-Datasets in Ihre R-Sitzung importieren:  **Dataset aus Web-URL in R-Sitzung importieren** und **Dataset aus Textdatei in R-Sitzung importieren**.
 
 Wenn Sie die zu importierende CSV-Datei ermittelt haben, zeigt Visual Studio das Dialogfeld **Dataset importieren** an, in dem Sie mit Optionen steuern können, wie eine Datendatei analysiert wird (d.h. wie der Feldseparator definiert ist und wie Anführungszeichen behandelt werden). Sie können auch eine Vorschauversion des importierten Datenrahmens und der ursprünglichen Datendatei anzeigen lassen:
 

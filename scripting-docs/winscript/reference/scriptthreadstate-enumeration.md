@@ -2,7 +2,6 @@
 title: SCRIPTTHREADSTATE-Enumeration | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2c66d078effd510b3f64cf1f443926984ff2e282
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 906a309b25a1fe606fb37f8cbab70040e5a4c46f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54094119"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840186"
 ---
 # <a name="scriptthreadstate-enumeration"></a>SCRIPTTHREADSTATE-Enumeration
 Gibt den Zustand eines Threads in einer Skript-Engine an. Diese Enumeration wird verwendet, durch die [IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md) Methode.  

@@ -2,20 +2,18 @@
 title: Remotearbeitsbereiche für R
 description: Einrichten von R-Remotearbeitsbereichen und Herstellen von Verbindungen mit ihnen aus Visual Studio.
 ms.date: 12/04/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 207e4c2d6e7db9dd40288306b3a87086c4568f76
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0263afa4eeb9094802fe6272380b6b53106da4a2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810167"
 ---
 # <a name="set-up-remote-workspaces"></a>Einrichten von Remotearbeitsbereichen
 
@@ -98,14 +96,19 @@ So erstellen Sie ein selbstsigniertes Zertifikat:
 
 1. Erstellen Sie eine SSH-Verbindung, oder melden Sie sich auf dem Linux-Computer an.
 2. Installieren Sie das `ssl-cert`-Paket:
+
     ```sh
     sudo apt-get install ssl-cert
     ```
+
 3. Führen Sie `make-ssl-cert` aus, um das selbstsignierte SSL-Standardzertifikat zu generieren:
+
     ```sh
     sudo make-ssl-cert generate-default-snakeoil --force-overwrite
     ```
+
 4. Konvertiert die generierte Schlüssel- und die PEM-Datei in PFX. Die generierten PFX-Dateien sollten sich im Basisordner befinden:
+
     ```sh
     openssl pkcs12 -export -out ~/ssl-cert-snakeoil.pfx -inkey /etc/ssl/private/ssl-cert-snakeoil.key -in /etc/ssl/certs/ssl-cert-snakeoil.pem -password pass:SnakeOil
     ```

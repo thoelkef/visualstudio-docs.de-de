@@ -12,24 +12,23 @@ helpviewer_keywords:
 ms.assetid: 99333e61-83c9-4804-84e3-eda297c2478d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82ab1ec887fd6a0c881f2d1e4b0c1295e1c67716
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3f9740da2674ad7e48f8863027fcb9a1acc8f1cb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967734"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62842169"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Reservierte und bekannte Eigenschaften für MSBuild
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] stellt eine Reihe vordefinierter Eigenschaften zum Speichern von Informationen über die Projektdatei und die [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Binärdateien bereit. Diese Eigenschaften werden auf dieselbe Weise ausgewertet wie andere [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Eigenschaften. Zum Verwenden der `MSBuildProjectFile`-Eigenschaft geben Sie beispielsweise `$(MSBuildProjectFile)` ein.  
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] stellt eine Reihe vordefinierter Eigenschaften zum Speichern von Informationen über die Projektdatei und die [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Binärdateien bereit. Diese Eigenschaften werden auf dieselbe Weise ausgewertet wie andere [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Eigenschaften. Zum Verwenden der `MSBuildProjectFile`-Eigenschaft geben Sie beispielsweise `$(MSBuildProjectFile)` ein.
 
  MSBuild verwendet die Werte in der folgenden Tabelle, um die reservierten und bekannten Eigenschaften vorzudefinieren. Reservierte Eigenschaften können nicht überschrieben werden, aber bekannte Eigenschaften können überschrieben werden, indem identisch benannte Umgebungseigenschaften, globale Eigenschaften oder Eigenschaften verwendet werden, die in der Projektdatei deklariert sind.
 
-## <a name="reserved-and-well-known-properties"></a>Reservierte und bekannte Eigenschaften  
- In der folgenden Tabelle werden die vordefinierten [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Eigenschaften beschrieben.  
-
+## <a name="reserved-and-well-known-properties"></a>Reservierte und bekannte Eigenschaften
+ In der folgenden Tabelle werden die vordefinierten [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Eigenschaften beschrieben.
 
 | Eigenschaft | Reserviert oder bekannt | Beschreibung |
 |----------------------------------|------------------------| - |
@@ -57,6 +56,7 @@ ms.locfileid: "53967734"
 | `MSBuildThisFileName` | Reserviert | Der Teil von `MSBuildThisFileFullPath`, der den Dateinamen angibt, jedoch ohne die Dateinamenerweiterung. |
 | `MSBuildToolsPath` | Reserviert | Der Installationspfad der [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Version, die mit dem Wert von `MSBuildToolsVersion` verknüpft ist.<br /><br /> Schließen Sie den abschließenden umgekehrten Schrägstrich nicht in den Pfad ein.<br /><br /> Diese Eigenschaft kann nicht überschrieben werden. |
 | `MSBuildToolsVersion` | Reserviert | Die Version des [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Toolsets, das zum Erstellen des Projekts verwendet wird.<br /><br /> Hinweis: Ein [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Toolset besteht aus Aufgaben, Zielen und Tools, die zum Erstellen einer Anwendung verwendet werden. Zu den Tools zählen Compiler wie *csc.exe* und *vbc.exe*. Weitere Informationen finden Sie unter [MSBuild-Toolset (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) sowie unter [Standardmäßige und benutzerdefinierte Toolsetkonfigurationen](../msbuild/standard-and-custom-toolset-configurations.md). |
+| `MSBuildVersion` | Reserviert | Die Version von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], die zum Erstellen des Projekts verwendet wird <br /><br/> Diese Eigenschaft kann nicht überschrieben werden. Andernfalls wird die Fehlermeldung `MSB4004 - The 'MSBuildVersion' property is reserved, and can not be modified.` zurückgegeben. |
 
 ## <a name="names-that-conflict-with-msbuild-elements"></a>Namen, die Konflikte mit MSBuild-Elementen auslösen
 
@@ -75,7 +75,7 @@ Zusätzlich zu den oben genannten können MSBuild-Sprachelemente entsprechende N
 * When
 * Otherwise
 
-## <a name="see-also"></a>Siehe auch  
-[MSBuild-Referenz](../msbuild/msbuild-reference.md)
+## <a name="see-also"></a>Siehe auch
+- [MSBuild-Referenz](../msbuild/msbuild-reference.md)
 
-[MSBuild-Eigenschaften](../msbuild/msbuild-properties.md)
+- [MSBuild-Eigenschaften](../msbuild/msbuild-properties.md)

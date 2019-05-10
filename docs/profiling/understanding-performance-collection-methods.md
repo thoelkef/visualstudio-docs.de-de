@@ -1,8 +1,6 @@
 ---
 title: Grundlagen zu Leistungserfassungsmethoden | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.wizard.methodpage
@@ -10,15 +8,15 @@ helpviewer_keywords:
 - Profiling Tools, profiling methods
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d278f8ca6019dd8a29d5e4c57e1e191137a32972
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 018c71be69efa7b68f08cb0d320633b82be9832d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668769"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821228"
 ---
 # <a name="understand-performance-collection-methods"></a>Grundlagen zu Leistungsauflistungsmethoden
 
@@ -27,7 +25,7 @@ Von den Profilerstellungstools für Visual Studio werden fünf Methoden zum Samm
 > [!NOTE]
 > Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen UWP-Apps neue Erfassungsmethoden. Siehe [Profilerstellungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
-|Methode|Beschreibung |
+|Methode|Beschreibung|
 |------------|-----------------|
 |[Sampling](#sampling)|Sammelt statistische Daten zu den von einer Anwendung ausgeführten Aufgaben.|
 |[Instrumentierung](#instrumentation)|Dient zum Sammeln ausführlicher Zeitsteuerungsinformationen zu den einzelnen Funktionsaufrufen.|
@@ -133,5 +131,5 @@ Von den Profilerstellungstools gesammelte Ebeneninteraktionsdaten
 
 ## <a name="see-also"></a>Siehe auch
 
-[Vorgehensweise: Sammeln von Leistungsdaten für eine Website](../profiling/how-to-collect-performance-data-for-a-web-site.md)  
-[Einführung in die Leistungsprofilerstellung](../profiling/beginners-guide-to-performance-profiling.md)
+[Vorgehensweise: Sammeln von Leistungsdaten für eine Website](../profiling/how-to-collect-performance-data-for-a-web-site.md)
+[Messen der Anwendungsleistung durch Analyse der CPU-Nutzung](../profiling/beginners-guide-to-performance-profiling.md)

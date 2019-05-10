@@ -9,17 +9,18 @@ helpviewer_keywords:
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f356fe21f512ae1fabb51df3ab562b067a692665
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: 078bf457c798c0be9ac56aad1859c6750881922a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909664"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Im Visual Studio SDK
+
 Dieser Abschnitt enthält ausführliche Informationen zu Visual Studio-Erweiterungen, einschließlich Visual Studio-Architektur, Komponenten, Dienste, Schemas, Hilfsprogramme und ähnliches.
 
 ## <a name="extensibility-architecture"></a>Architektur der Erweiterbarkeit
@@ -55,13 +56,13 @@ Dieser Abschnitt enthält ausführliche Informationen zu Visual Studio-Erweiteru
 
  Toolfenster bieten in der Regel verschiedene Steuerelemente, mit denen der Benutzer interagieren kann. Z. B. die **Eigenschaften** Fenster ermöglicht dem Benutzer, die Eigenschaften der Objekte, die einen bestimmten Zweck dienen, festgelegt. Die **Eigenschaften** Fenster ist in diesem Sinne spezialisierte, aber auch allgemeine, da es in vielen unterschiedlichen Situationen verwendet werden kann. Auf ähnliche Weise die **Ausgabe** Fenster ist darauf spezialisiert, da sie textbasierte Ausgabe ist jedoch Allgemein bietet, da es sich bei vielen Subsystemen in Visual Studio verwenden können, um Ausgabe für Visual Studio-Benutzer bereitzustellen.
 
- Betrachten Sie das folgende Bild von Visual Studio, die mehrere Toolfenster enthält.
+ Betrachten Sie das folgende Bild von Visual Studio, die mehrere Toolfenster enthält:
 
  ![Screenshot](../../extensibility/internals/media/t1gui.png "T1gui")
 
  Einige Toolfenster sind zusammen auf einem einzelnen Bereich angedockt, die zeigt das Toolfenster des Projektmappen-Explorer an und blendet Sie aus der andere Toolfenster, jedoch stellt sie durch Klicken auf die Registerkarten zur Verfügung. Die Abbildung zeigt zwei andere Toolfenster, die **Fehlerliste** und **Ausgabe** auf einem zentralen Fensterbereich zusammen angedockten Fenster.
 
- Außerdem wird dargestellt im Hauptabschnitt des Dokuments Bereich mehrere-Editor-Fenster angezeigt. Obwohl Toolfenster in der Regel nur eine Instanz haben (Sie können z. B. Öffnen nur eine **Projektmappen-Explorer**),-Editor-Fenster können mehrere Instanzen, von denen jeder wird verwendet, um ein separates Dokument zu bearbeiten, aber alle angedockt werden haben der gleiche Bereich. Die Abbildung zeigt ein Dokumentfenster, dessen zwei Editorfenster, ein Formular-Designer-Fenster und ein Browserfenster, das die Startseite zeigt. Alle Fenster in den Aufgabenbereich durch Klicken auf die Registerkarten verfügbar sind, aber im Editor-Fenster, das EditorPane.cs-Datei enthält ist sichtbar und aktiv.
+ Außerdem wird dargestellt im Hauptabschnitt des Dokuments Bereich mehrere-Editor-Fenster angezeigt. Obwohl Toolfenster in der Regel nur eine Instanz haben (Sie können z. B. Öffnen nur eine **Projektmappen-Explorer**),-Editor-Fenster können mehrere Instanzen, von denen jeder wird verwendet, um ein separates Dokument zu bearbeiten, aber alle angedockt werden haben der gleiche Bereich. Die Abbildung zeigt einen Dokument Bereich mit zwei-Editor-Fenster, ein Formular-Designer-Fenster. Alle Fenster in den Aufgabenbereich durch Klicken auf die Registerkarten verfügbar sind, aber im Editor-Fenster, das EditorPane.cs-Datei enthält ist sichtbar und aktiv.
 
  Wenn Sie Visual Studio erweitern, können Sie die Tool-Fenster, mit denen Visual Studio-Benutzer interagieren mit der Erweiterung erstellen. Sie können auch Ihren eigenen Editor erstellen, mit denen Sie Visual Studio-Benutzer, die Dokumente bearbeiten können. Da Ihr Toolfenster und Editoren in Visual Studio integriert werden, müssen Sie keinen programmieren, andocken oder ordnungsgemäß auf einer Registerkarte angezeigt werden. Wenn sie in Visual Studio ordnungsgemäß registriert sind, müssen sie den üblichen Features von Toolfenstern und Dokumentfenstern in Visual Studio automatisch. Weitere Informationen finden Sie unter [erweitern und Anpassen von Tool Windows](../../extensibility/extending-and-customizing-tool-windows.md).
 
@@ -83,14 +84,15 @@ Dieser Abschnitt enthält ausführliche Informationen zu Visual Studio-Erweiteru
  Das Herzstück von einem Sprachdienst sind ein Parser und Scanner. Scanner (oder Lexer) teilt eine Quelldatei in Elemente, die als Token bezeichnet werden, und ein Parser stellt die Beziehungen zwischen diesen Token her. Wenn Sie einen Sprachdienst erstellen, müssen Sie der Parser und die Überprüfung implementieren, damit Visual Studio die Token und die Grammatik der Sprache verstehen können. Sie können die Dienste für verwalteten oder nicht verwalteten Sprachen erstellen. Weitere Informationen finden Sie unter [Erweiterbarkeit von Legacysprachdiensten Legacy](../../extensibility/internals/legacy-language-service-extensibility.md).
 
 ## <a name="projects"></a>Projekte
- In Visual Studio sind Projekte die Container, mit denen Entwickler zum Organisieren und den Quellcode und weitere Ressourcen zu erstellen. Lassen Sie organisieren, erstellen, Debuggen und Bereitstellen von Quellcode-Projekte, Verweise auf Webdienste und Datenbanken und andere Ressourcen. VSPackages können die Visual Studio-Projektsystem erweitern, indem Projekttypen, Projektuntertypen und benutzerdefinierte Tools.
 
- Projekte können auch in einer Lösung erfasst werden, eine Gruppierung von ein oder mehrere Projekte, die zusammenarbeiten, um eine Anwendung zu erstellen. Informationen zum Projekt und zum Status, die der Projektmappe gehört wird in zwei Projektmappendateien, die textbasierte Projektmappendatei (.sln) und die binären Lösung Benutzeroptionsdatei (SUO) gespeichert. Diese Dateien sind ähnlich wie die (vbg)-Gruppendateien, die in früheren Versionen von verwendeten [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], und der Arbeitsbereich (.dsw) und der Benutzer "Optionen" (.opt)-Dateien, die in früheren Versionen von verwendeten [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)].
+In Visual Studio sind Projekte die Container, mit denen Entwickler zum Organisieren und den Quellcode und weitere Ressourcen zu erstellen. Lassen Sie organisieren, erstellen, Debuggen und Bereitstellen von Quellcode-Projekte, Verweise auf Webdienste und Datenbanken und andere Ressourcen. VSPackages können die Visual Studio-Projektsystem erweitern, indem Projekttypen, Projektuntertypen und benutzerdefinierte Tools.
 
- Weitere Informationen finden Sie unter [Projekte](../../extensibility/internals/projects.md) und [Lösungen](../../extensibility/internals/solutions.md).
+Projekte können auch gesammelt werden eine *Lösung*, dies ist eine Gruppierung von ein oder mehrere Projekte, die zum Erstellen einer Anwendung zusammenarbeiten. Informationen zum Projekt und zum Status, die der Projektmappe gehört befindet sich in zwei Projektmappendateien, die dem textbasierten [Projektmappendatei (.sln)](solution-dot-sln-file.md) und den binären [Lösung Benutzeroptionsdatei (.suo)](solution-user-options-dot-suo-file.md). Diese Dateien sind ähnlich wie die (vbg)-Gruppendateien, die in früheren Versionen von Visual Basic und den Arbeitsbereich (.dsw) verwendet wurden und die Benutzer-Optionen (.opt)-Dateien, die in früheren Versionen von C++ verwendet wurden.
+
+Weitere Informationen finden Sie unter [Projekte](../../extensibility/internals/projects.md) und [Lösungen](../../extensibility/internals/solutions-overview.md).
 
 ## <a name="project-and-item-templates"></a>Projekt- und Elementvorlagen
- Visual Studio enthält die vordefinierten Projektvorlagen und Projektelementvorlagen. Sie können stellen Sie außerdem Ihre eigenen Vorlagen oder Vorlagen aus der Community erhalten und diese dann in Visual Studio integrieren. Die [MSDN Code Gallery](http://code.msdn.microsoft.com/Project/ProjectDirectory.aspx?ProjectSearchText=visual%20studio) ist die Anlaufstelle für Vorlagen und Erweiterungen.
+ Visual Studio enthält die vordefinierten Projektvorlagen und Projektelementvorlagen. Sie können stellen Sie außerdem Ihre eigenen Vorlagen oder Vorlagen aus der Community erhalten und diese dann in Visual Studio integrieren. Die [MSDN Code Gallery](https://code.msdn.microsoft.com/site/search?query=visual%20studio) ist die Anlaufstelle für Vorlagen und Erweiterungen.
 
  Vorlagen enthalten die Projektstruktur und den grundlegenden Dateien, die erforderlich sind, um eine bestimmte Art von Anwendung "," Steuerelement ","-Bibliothek "oder"-Klasse zu erstellen. Wenn Sie Software entwickeln, die eine der Vorlagen gleicht möchten, erstellen Sie ein Projekt, das in der Vorlage basiert, und ändern Sie dann die Dateien in diesem Projekt.
 

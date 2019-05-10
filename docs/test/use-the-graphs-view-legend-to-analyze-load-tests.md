@@ -8,14 +8,13 @@ helpviewer_keywords:
 ms.assetid: 0f6ba8e4-1343-419c-8a9f-240cf50efed7
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: d6d152849eacc83674d95573e2b78088d66aed94
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 4c29620cad3333144d65386e509339e2f5eccddf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913341"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62562675"
 ---
 # <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>Verwenden der Legende der Diagrammansicht zum Analysieren von Auslastungstests
 
@@ -27,18 +26,18 @@ Die Diagrammansicht des Auslastungstest-Analyzers enthält einen Legendenbereich
 
 Die Legende enthält die folgenden Informationen:
 
--   **Im Diagramm anzeigen:** Geben Sie mithilfe der Kontrollkästchen an, ob die Linie für einen bestimmten Indikator wie z.B. **Benutzerauslastung** oder **Fehler/s** im Diagramm eingezeichnet werden soll. Aktivieren Sie ein Kontrollkästchen, wenn die Linie ins Diagramm eingezeichnet werden soll. Deaktivieren Sie ein Kontrollkästchen, um die Zeichnungslinie aus dem Diagramm zu entfernen. Wenn eine Zeichnungslinie entfernt wird, wird die Statistik für den Indikator weiterhin in der Legende angezeigt.
+- **Im Diagramm anzeigen:** Geben Sie mithilfe der Kontrollkästchen an, ob die Linie für einen bestimmten Indikator wie z.B. **Benutzerauslastung** oder **Fehler/s** im Diagramm eingezeichnet werden soll. Aktivieren Sie ein Kontrollkästchen, wenn die Linie ins Diagramm eingezeichnet werden soll. Deaktivieren Sie ein Kontrollkästchen, um die Zeichnungslinie aus dem Diagramm zu entfernen. Wenn eine Zeichnungslinie entfernt wird, wird die Statistik für den Indikator weiterhin in der Legende angezeigt.
 
--   **Bereich:** In dieser Spalte wird der y-Achsen-Bereich des Leistungsindikators angezeigt. Standardmäßig wird dieser Wert automatisch angepasst, wenn sich der Bereich der Beispieldaten ändert. Ein automatisch angepasster Bereich ist stets um die nächste Zehnerpotenz größer als der Maximalwert. Dazu gehören negative Zehnerpotenzen. Ein Diagramm kann eine Vielzahl von Indikatoren, jeder mit einem anderen Bereich, enthalten. Daher wird die y-Achse nicht mit einem bestimmten Bereich, sondern mit Werten von 0 bis 100 gekennzeichnet, die einen Prozentsatz des Gesamtbereichs für jeden Indikator darstellen. Für einen Indikator mit einem Bereich von 1000 z. B. würde ein Datenpunkt von 60 auf der y-Achse einem Wert von 600 für den Indikator entsprechen.
+- **Bereich:** In dieser Spalte wird der y-Achsen-Bereich des Leistungsindikators angezeigt. Standardmäßig wird dieser Wert automatisch angepasst, wenn sich der Bereich der Beispieldaten ändert. Ein automatisch angepasster Bereich ist stets um die nächste Zehnerpotenz größer als der Maximalwert. Dazu gehören negative Zehnerpotenzen. Ein Diagramm kann eine Vielzahl von Indikatoren, jeder mit einem anderen Bereich, enthalten. Daher wird die y-Achse nicht mit einem bestimmten Bereich, sondern mit Werten von 0 bis 100 gekennzeichnet, die einen Prozentsatz des Gesamtbereichs für jeden Indikator darstellen. Für einen Indikator mit einem Bereich von 1000 z. B. würde ein Datenpunkt von 60 auf der y-Achse einem Wert von 600 für den Indikator entsprechen.
 
     > [!NOTE]
     > Sie können die automatische Bereichswertanpassung deaktivieren, indem Sie den Bereich auf einen bestimmten Wert beschränken. Wenn der Bereich beschränkt ist, werden alle den Bereich überschreitenden Werte als der maximale Wert angezeigt, den Sie oben im Diagramm angegeben haben. Beschränken Sie mithilfe des Dialogfelds **Zeichnungsoptionen** den Bereich auf einen bestimmten Wert.
 
--   **Indikator:** Die vier Spalten **Indikator**, **Instanz**, **Kategorie** und **Computer** identifizieren zusammen den Leistungsindikator eindeutig.
+- **Indikator:** Die vier Spalten **Indikator**, **Instanz**, **Kategorie** und **Computer** identifizieren zusammen den Leistungsindikator eindeutig.
 
--   **Farbe:** Die Spalte **Farbe** zeigt die Farbe und die Linienart der gezeichneten Linie für den Leistungsindikator an. Im Dialogfeld **Zeichnungsoptionen** können Sie die Farbe oder Linienart eines Leistungsindikators im Diagramm ändern. Das Dialogfeld **Zeichnungsoptionen** ist im Kontextmenü der Legende verfügbar.
+- **Farbe:** Die Spalte **Farbe** zeigt die Farbe und die Linienart der gezeichneten Linie für den Leistungsindikator an. Im Dialogfeld **Zeichnungsoptionen** können Sie die Farbe oder Linienart eines Leistungsindikators im Diagramm ändern. Das Dialogfeld **Zeichnungsoptionen** ist im Kontextmenü der Legende verfügbar.
 
--   **Statistik:** Die Spalten **Min.**, **Max.**, **Durchschn.** und **Letzte** zeigen die jeweilige Statistik für den Leistungsindikator an. Diese Werte entsprechen den Daten, die im sichtbaren Bereich des Diagramms angezeigt werden. Wenn Sie z. B. einen Bereich einer Ausführung vergrößern, spiegelt die Legendenstatistik Werte nur für den vergrößerten Bereich wider. Die Spalte "Letzte" stellt den Wert des Leistungsindikators des zuletzt abgeschlossenen Samplingintervalls dar.
+- **Statistik:** Die Spalten **Min.**, **Max.**, **Durchschn.** und **Letzte** zeigen die jeweilige Statistik für den Leistungsindikator an. Diese Werte entsprechen den Daten, die im sichtbaren Bereich des Diagramms angezeigt werden. Wenn Sie z. B. einen Bereich einer Ausführung vergrößern, spiegelt die Legendenstatistik Werte nur für den vergrößerten Bereich wider. Die Spalte "Letzte" stellt den Wert des Leistungsindikators des zuletzt abgeschlossenen Samplingintervalls dar.
 
     > [!NOTE]
     > Die Spalte "Letzte" wird nur in der Legende des Auslastungstest-Analyzers während der Ausführung des Auslastungstests angezeigt.
@@ -47,13 +46,13 @@ Die Legende enthält die folgenden Informationen:
 
 Das Auswählen eines Elements in der Legende bewirkt Folgendes:
 
--   Das Element kann aus der Legende und dem Diagramm entfernt werden. Klicken Sie mit der rechten Maustaste auf das Element, und wählen Sie **Löschen** aus, oder drücken Sie die **ENTF-TASTE**.
+- Das Element kann aus der Legende und dem Diagramm entfernt werden. Klicken Sie mit der rechten Maustaste auf das Element, und wählen Sie **Löschen** aus, oder drücken Sie die **ENTF-TASTE**.
 
--   Die gezeichnete Zeile im Diagramm wird hervorgehoben.
+- Die gezeichnete Zeile im Diagramm wird hervorgehoben.
 
--   Im Datenraster werden Daten für das ausgewählte Element angezeigt.
+- Im Datenraster werden Daten für das ausgewählte Element angezeigt.
 
--   Ermöglicht den Zugriff auf das Dialogfeld **Zeichnungsoptionen** für den Leistungsindikator.
+- Ermöglicht den Zugriff auf das Dialogfeld **Zeichnungsoptionen** für den Leistungsindikator.
 
 > [!TIP]
 > Sie können auf der Symbolleiste des **Auslastungstest-Analyzers** die Dropdownschaltfläche **Diagrammoptionen** verwenden und auf **Legende anzeigen** klicken, um das der Diagrammansicht zugeordnete Panel **Legende** anzuzeigen oder auszublenden.

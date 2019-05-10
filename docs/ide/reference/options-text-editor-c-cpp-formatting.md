@@ -1,8 +1,6 @@
 ---
 title: Optionen, Text-Editor, C/C++, Formatierung
 ms.date: 04/30/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C/C++.Formatting.General
@@ -18,20 +16,20 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee7fab1564b39b29ae288e96c7aa77e0da21e88c
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 95683c93558f67457f0868a76f52d1334e7a6712
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817615"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Optionen, Text-Editor, C/C++, Formatierung
 
 Verwenden Sie diesen Eigenschaftenseiten, um das Standardverhalten des Code-Editors zu ändern, wenn Sie in C oder C++ programmieren.
 
-[Eigenschaftenseiten für die C++-Formatierung](media/cpp-formatting.png)
+![Eigenschaftenseiten für die C++-Formatierung](media/cpp-formatting.png)
 
- Um diese Seite zu öffnen, klicken Sie im linken Fenster auf das Dialogfeld **Optionen**, erweitern Sie den **Text-Editor** und **C/C++** und klicken dann auf **Formatieren**.
+Um diese Seite zu öffnen, klicken Sie im linken Fenster auf das Dialogfeld **Optionen**, erweitern Sie den **Text-Editor** und **C/C++** und klicken dann auf **Formatieren**.
 
 > [!NOTE]
 > Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).
@@ -40,14 +38,25 @@ Verwenden Sie diesen Eigenschaftenseiten, um das Standardverhalten des Code-Edit
 
 Diese Seite enthält Optionen für das Formatieren von Anweisungen und Blöcken während der Eingabe.
 
-**Visual Studio 2017, Version 15.7 und höher:** Die Seite enthält ebenfalls Optionen für das Konfigurieren der Unterstützung für [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) (Version 5.0). ClangFormat ist ein Hilfsprogramm, den Stil und die Formatierung Ihres Codes einfach basierend auf Regeln anpassen können, die in einer Datei mit der Erweiterung „.clang-format“ oder „_clang-format“ konfiguriert werden können.
+::: moniker range="vs-2017"
+
+**Visual Studio 2017 Version 15.7 und höher**:
+
+::: moniker-end
+
+Die Seite enthält ferner Optionen für das Konfigurieren der Unterstützung für [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) Version 5.0. ClangFormat ist ein Hilfsprogramm, den Stil und die Formatierung Ihres Codes einfach basierend auf Regeln anpassen können, die in einer Datei mit der Erweiterung „.clang-format“ oder „_clang-format“ konfiguriert werden können.
 
 ### <a name="configuring-clangformat-options"></a>Konfigurieren von ClangFormat-Optionen
 
-In Visual Studio 2017 (Version 15.7 und höher) ist die ClangFormat-Unterstützung standardmäßig aktiviert. Sie können auswählen, welcher dieser Formatierungskonventionen auf Ihre Projekte angewendet werden sollen: LLVM, Google, Chromium, Mozilla oder WebKit. Sie können ebenfalls eine benutzerdefinierte Datei („.clang-format“ oder „_clang-format“) für die Definition des Formats erstellen. Wenn eine solche Datei in einem Projektordner vorhanden ist, verwendet Visual Studio diese, um alle Quellcodedateien in diesem Ordner und dessen Unterordnern zu formatieren. 
+::: moniker range="vs-2017"
+
+**Visual Studio 2017 Version 15.7 und höher**:
+
+::: moniker-end
+
+Die ClangFormat-Unterstützung ist standardmäßig aktiviert. Sie können auswählen, welcher dieser gängigen Formatierungskonventionen auf Ihre Projekte angewendet werden sollen: LLVM, Google, Chromium, Mozilla oder WebKit. Sie können ebenfalls eine benutzerdefinierte Datei („.clang-format“ oder „_clang-format“) für die Definition des Formats erstellen. Wenn eine solche Datei in einem Projektordner vorhanden ist, verwendet Visual Studio diese, um alle Quellcodedateien in diesem Ordner und dessen Unterordnern zu formatieren.
 
 Standardmäßig führt Visual Studio „clangformat.exe“ im Hintergrund aus, wodurch die Formatierung während der Eingabe angewendet wird. Sie können ebenfalls festlegen, dass die Datei nur für manuell aufgerufene Formatierungsfehle wie **Dokument formatieren (STRG+K, STRG+D)** oder **Auswahl formatieren (STRG+K, STRG+F)** ausgeführt wird.
-
 
 ## <a name="indentation-new-lines-spacing-wrapping-pages"></a>Seiten „Einzug“, „Neue Zeilen“, „Abstand“, „Umbruch“
 

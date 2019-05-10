@@ -12,17 +12,15 @@ helpviewer_keywords:
 ms.assetid: efd6135a-40cf-4b0d-8f8b-41a5aaea7057
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c1203b3b129b42ca65b94cd7a4b9cebf108740f4
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: c672103c0426f2d49eb47aa41014ee13ff0ecae9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62565957"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Speichern von Daten aus einem Objekt in einer Datenbank
 
@@ -43,7 +41,7 @@ In der Standardeinstellung `DBDirect` Methoden werden erstellt, auf einem TableA
 
 ## <a name="to-save-new-records-from-an-object-to-a-database"></a>Um neue Datensätze aus einem Objekt in einer Datenbank zu speichern.
 
--   Erstellen Sie die Datensätze durch Übergeben der Werte, die `TableAdapter.Insert` Methode.
+- Erstellen Sie die Datensätze durch Übergeben der Werte, die `TableAdapter.Insert` Methode.
 
      Das folgende Beispiel erstellt einen neuer Kundendatensatz in der `Customers` Tabelle durch Übergeben der Werte in der `currentCustomer` -Objekt an die `TableAdapter.Insert` Methode.
 
@@ -52,7 +50,7 @@ In der Standardeinstellung `DBDirect` Methoden werden erstellt, auf einem TableA
 
 ## <a name="to-update-existing-records-from-an-object-to-a-database"></a>Zum Aktualisieren vorhandener Datensätze aus einem Objekt in einer Datenbank
 
--   Ändern Sie die Datensätze durch Aufrufen der `TableAdapter.Update` -Methode, indem Sie die neuen Werte zur Aktualisierung des Datensatzes übergeben und in den ursprünglichen Werten den Datensatz gesucht.
+- Ändern Sie die Datensätze durch Aufrufen der `TableAdapter.Update` -Methode, indem Sie die neuen Werte zur Aktualisierung des Datensatzes übergeben und in den ursprünglichen Werten den Datensatz gesucht.
 
     > [!NOTE]
     > Die ursprünglichen Werte beibehalten werden, um sie übergeben das Objekt muss die `Update` Methode. Dieses Beispiel verwendet die Eigenschaften mit einem `orig` Präfix, das die ursprünglichen Werte zu speichern.
@@ -64,7 +62,7 @@ In der Standardeinstellung `DBDirect` Methoden werden erstellt, auf einem TableA
 
 ## <a name="to-delete-existing-records-from-a-database"></a>So löschen Sie vorhandene Datensätze aus einer Datenbank
 
--   Löschen Sie die Datensätze durch Aufrufen der `TableAdapter.Delete` -Methode und übergeben die ursprünglichen Werte den Datensatz gesucht.
+- Löschen Sie die Datensätze durch Aufrufen der `TableAdapter.Delete` -Methode und übergeben die ursprünglichen Werte den Datensatz gesucht.
 
     > [!NOTE]
     > Die ursprünglichen Werte beibehalten werden, um sie übergeben das Objekt muss die `Delete` Methode. Dieses Beispiel verwendet die Eigenschaften mit einem `orig` Präfix, das die ursprünglichen Werte zu speichern.

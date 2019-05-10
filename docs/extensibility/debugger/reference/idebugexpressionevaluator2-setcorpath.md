@@ -1,29 +1,31 @@
 ---
 title: IDebugExpressionEvaluator2::SetCorPath | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - SetCorPath
 - IDebugExpressionEvaluator2::SetCorPath
 ms.assetid: 27b614ff-7325-4f9b-8da4-61ee020c9410
-author: gregvanl
+caps.latest.revision: 10
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: f45f436bc07d568ede498262872174cfac97f4cf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bf2495100a7ce52bcd937018414ed7198cf4ca0b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990294"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62873977"
 ---
 # <a name="idebugexpressionevaluator2setcorpath"></a>IDebugExpressionEvaluator2::SetCorPath
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Legt den Pfad fest, um die common Language Runtime (CLR), das in den Debugger geladen.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT SetCorPath(  
    LPCOLESTR pcstrCorPath  
 );  
@@ -45,7 +47,7 @@ int SetCorPath(
 ## <a name="example"></a>Beispiel  
  Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **ExpressionEvaluatorPackage** -Objekt, das macht die [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) Schnittstelle.  
   
-```cpp  
+```cpp#  
 STDMETHODIMP ExpressionEvaluatorPackage::SetCorPath(LPCOLESTR pcstrCorPath)  
 {  
     VerifyInPtr(pcstrCorPath);  

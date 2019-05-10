@@ -1,30 +1,32 @@
 ---
 title: IDebugBreakpointUnboundEvent2::GetReason | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugBreakpointUnboundEvent2::GetReason
 helpviewer_keywords:
 - IDebugBreakpointUnboundEvent2::GetReason
 ms.assetid: 0f8a4fec-d3eb-417d-8516-4f7b51904033
-author: gregvanl
+caps.latest.revision: 13
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: c8184e8779cae236233d8b8b5288c955771181ba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fe963923494d5dc68eb2ab3b6fd768036d1c5400
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62876925"
 ---
 # <a name="idebugbreakpointunboundevent2getreason"></a>IDebugBreakpointUnboundEvent2::GetReason
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Ruft den Grund ab, die, den der Haltepunkt aufgehoben wurde.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT GetReason(   
    BP_UNBOUND_REASON* pdwUnboundReason  
 );  
@@ -49,7 +51,7 @@ int GetReason( 
 ## <a name="example"></a>Beispiel  
  Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CBreakpointUnboundDebugEventBase** -Objekt, das macht die [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md) Schnittstelle.  
   
-```cpp  
+```cpp#  
 STDMETHODIMP CBreakpointUnboundDebugEventBase::GetReason(  
     BP_UNBOUND_REASON* pdwUnboundReason)  
 {  

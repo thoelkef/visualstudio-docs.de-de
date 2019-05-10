@@ -1,7 +1,6 @@
 ---
-title: 'CA2107: VERWENDUNG Deny und PermitOnly überprüfen'
+title: 'CA2107: Verwendung von Deny und PermitOnly überprüfen.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2107
@@ -12,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 366f4a56-ae93-4882-81d0-bd0a55ebbc26
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c8f4e108d8443816bf43dec9deb629a3a231822
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c251b9fbf8327369acf20ef6acea0518e2b16913
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826100"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62808262"
 ---
-# <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: VERWENDUNG Deny und PermitOnly überprüfen
+# <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Verwendung von Deny und PermitOnly überprüfen.
 
 |||
 |-|-|

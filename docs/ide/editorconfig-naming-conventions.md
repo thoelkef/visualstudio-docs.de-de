@@ -7,22 +7,21 @@ helpviewer_keywords:
 - EditorConfig naming conventions
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60bffcf458e96a5e224493ac9a33b8fa9fb72541
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bb72f491046d16f028561c19995a27a6ab64a830
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898660"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557319"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>.NET-Namenskonventionen für EditorConfig
 
 Namenskonventionen beziehen sich auf die Benennung von Codeelementen wie z.B. Klassen, Eigenschaften und Methoden. Sie können beispielsweise angeben, dass öffentliche Member großgeschrieben oder asynchrone Methoden mit „Async“ enden müssen. Sie können diese Regeln erzwingen, indem Sie sie in einer [.editorconfig](../ide/create-portable-custom-editor-options.md)-Datei angeben. Verletzungen von Namensregeln erscheinen entweder in der **Fehlerliste** oder als Vorschlag unter dem Namen, je nachdem, welchen Schweregrad Sie für Ihre Regel wählen. Es besteht keine Notwendigkeit, einen Build des Projekts zu erstellen, um Verstöße zu erkennen.
 
-Namenskonventionen sollten in der *EDITORCONFIG-Datei* von der spezifischsten zur allgemeinsten sortiert werden. Die erste Regel, die angewendet werden kann, ist die einzige Regel, die angewendet wird.
+Namenskonventionen sollten in der EditorConfig-Datei von der spezifischsten zur allgemeinsten sortiert werden. Die erste Regel, die angewendet werden kann, ist die einzige Regel, die angewendet wird. Wenn es jedoch mehrere *Regeleigenschaften* mit dem gleichen Namen gibt, hat die zuletzt gefundene Eigenschaft mit diesem Namen Vorrang. Weitere Informationen finden Sie unter [Dateihierarchie und Rangfolge](create-portable-custom-editor-options.md#file-hierarchy-and-precedence).
 
 Bei jeder Namenskonvention müssen Sie die Symbole, für die sie gilt, einen Benennungsstil und einen Schweregrad zum Erzwingen der Konvention mithilfe der nachstehend beschriebenen Eigenschaften angeben. Die Reihenfolge der Eigenschaften ist ohne Bedeutung.
 
@@ -46,7 +45,7 @@ In der folgenden Liste werden die zulässigen Werte aufgelistet. Sie können meh
 
 - \* (verwenden Sie diesen Wert, um alle Symbole anzugeben)
 - namespace
-- Klasse
+- class
 - struct
 - interface
 - enum
@@ -55,7 +54,7 @@ In der folgenden Liste werden die zulässigen Werte aufgelistet. Sie können meh
 - Feld
 - event
 - delegate
-- Parameter
+- -Parameter von
 - type_parameter
 - Lokal
 - local_function
@@ -74,18 +73,32 @@ In der folgenden Liste werden die zulässigen Werte aufgelistet. Sie können meh
 - private
 - protected
 - „protected\_internal“ oder „protected_friend“
+- private\_protected
 - Lokal
 
-> [!NOTE]
-> Geben Sie eine Zugriffsebene nicht im Rahmen Ihrer Benennungskonvention an, wenn der Zugriff nicht auf die Art des gewünschten Symbols anwendbar ist. Beispielsweise sind bei Parametern keine Zugriffsebenen vorhanden. Wenn Sie eine Zugriffsebene für eine Benennungskonvention für Parameter angeben, funktioniert Ihre Benennungsregel nicht ordnungsgemäß.
+   Die `local`-Zugriffsebene gilt für Symbole, die innerhalb einer Methode definiert sind. Dies ist nützlich bei der Definition von Namenskonventionen für Symbole, deren Barrierefreiheit nicht im Code angegeben werden kann. Wenn Sie beispielsweise `applicable_accessibilities = local` auf einer Benennungskonvention für Konstanten (`required_modifiers = const`) angeben, gilt die Regel nur für Konstanten, die innerhalb einer Methode definiert sind, und nicht für solche, die in einem Typ definiert sind.
 
-### <a name="symbol-modifiers"></a>Symbolmodifizierer
+   ```csharp
+   class TypeName
+   {
+     // Constant defined in a type.
+     const int X = 3;
+
+     void Method()
+     {
+       // Constant defined in a method with "local" accessibility.
+       const int Y = 4;
+     }
+   }
+   ```
+
+### <a name="symbol-modifiers-optional"></a>Symbolmodifizierer (optional)
 
 Um die Modifizierer der Symbole zu beschreiben, für die die Namensregel gelten soll, geben Sie einen Eigenschaftsnamen im folgenden Format an:
 
 `dotnet_naming_symbols.<symbolTitle>.required_modifiers = <values>`
 
-In der folgenden Liste werden die zulässigen Werte aufgelistet. Sie können mehrere Werte angeben, indem Sie sie durch ein Komma trennen.
+In der folgenden Liste werden die zulässigen Werte aufgelistet (Trennen Sie mehrere Werte durch ein Komma):
 
 - `abstract` oder `must_inherit`
 - `async`
@@ -96,7 +109,10 @@ In der folgenden Liste werden die zulässigen Werte aufgelistet. Sie können meh
    > [!NOTE]
    > Wenn Sie eine Benennungsregel für `static`- oder `shared`- Symbole haben, wird sie auch auf `const`-Symbole angewendet, da sie implizit statisch sind. Wenn Sie nicht möchten, dass die `static`-Benennungsregel auf `const`-Symbole angewendet wird, erstellen Sie eine separate Benennungsregel für `const`-Symbole.
 
-`required_modifiers` ist eine optionale Eigenschaft. Wenn Sie diese Eigenschaft nicht angeben, gilt die Benennungsregel für alle Modifizierer.
+Eine Namensregel stimmt mit den Signaturen überein, die *alle* Modifizierer besitzen, die in `required_modifiers` festgelegt sind. Wenn Sie diese Eigenschaft nicht bestimmen, wird der Standardwert einer leeren Liste verwendet, d. h. keine bestimmten Modifizierer werden für eine Übereinstimmung benötigt. Das bedeutet, dass die Modifizierer eines Symbols keine Auswirkungen darauf haben, ob die Regel angewendet wird oder nicht.
+
+> [!TIP]
+> Geben Sie nicht den Wert `*` für `required_modifiers` ein. Lassen Sie die Eigenschaft `required_modifiers` einfach weg. Ihre Benennungsregel gilt dann für alle Modifizierer.
 
 ## <a name="style"></a>Stil
 

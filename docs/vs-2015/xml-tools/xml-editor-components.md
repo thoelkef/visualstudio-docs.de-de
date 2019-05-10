@@ -1,30 +1,24 @@
 ---
 title: Komponenten des XML-Editor | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 417ec1ca-e2fa-4496-87cb-ac04c9f26741
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 83437ff6e715eaaa8d9f75ac00d2d6c6932b43bf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ea5433fc1dd12c759faa31599be029f1ba569db1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235832"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648951"
 ---
 # <a name="xml-editor-components"></a>Komponenten des XML-Editors
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 In diesem Abschnitt werden die Fenster und Dialogfelder im XML-Editor behandelt. Da der XML-Editor auf dem Texteditor basiert, wird ein Teil der IDE (Integrated Development Environment, Integrierte Entwicklungsumgebung) mithilfe der allgemeinen Texteditoreinstellungen konfiguriert.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
@@ -41,11 +35,8 @@ In diesem Abschnitt werden die Fenster und Dialogfelder im XML-Editor behandelt.
  In diesem Abschnitt wird das Auswählen der XML-Schemas erläutert, die dem XML-Dokument zugeordnet werden sollen.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
- [Vorgehensweise: Festlegen allgemeiner Editor-Optionen](http://msdn.microsoft.com/en-us/704e4a7b-2162-4bed-8a47-f4f6ffec98c2)  
+ [Vorgehensweise: Festlegen allgemeiner Editor-Optionen](http://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2)  
  In diesem Abschnitt wird beschrieben, wie die allgemeinen Einstellungen, z. B. die Anzeige, das Vervollständigen von Anweisungen usw. festgelegt werden.  
   
 ## <a name="see-also"></a>Siehe auch  
  [XML-Editor](../xml-tools/xml-editor.md)
-
-
-

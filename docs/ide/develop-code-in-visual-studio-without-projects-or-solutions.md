@@ -1,7 +1,6 @@
 ---
 title: Entwickeln von Code ohne Projekte oder Projektmappen
 ms.date: 02/21/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - open folder [Visual Studio]
@@ -9,19 +8,19 @@ helpviewer_keywords:
 - projects and solutions, develop code without
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1275a5c0ada3ddc12fe4257880e16d130243d0e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7554d3f89547701e1a7cad0280a1655450520586
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968471"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62962440"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Entwickeln von Code in Visual Studio ohne Projekte oder Projektmappen
 
-In Visual Studio 2017 können Sie Code von Directory-basierten Projekten nahezu jeder Art öffnen, ohne dass eine Projektmappen- oder Projektdatei erforderlich ist. Das bedeutet, dass Sie z.B. ein Repository in GitHub klonen, es direkt in Visual Studio öffnen und mit der Entwicklung beginnen können, ohne eine Projektmappe oder ein Projekt erstellen zu müssen. Bei Bedarf können Sie mithilfe einfacher JSON-Dateien benutzerdefinierte Buildtasks und Startparameter angeben.
+Sie können Code von Verzeichnisbasierten Projekten nahezu jeder Art öffnen, ohne dass eine Projektmappe oder Projektdatei erforderlich ist. Das bedeutet, dass Sie z.B. ein Repository in GitHub klonen, es direkt in Visual Studio öffnen und mit der Entwicklung beginnen können, ohne eine Projektmappe oder ein Projekt erstellen zu müssen. Bei Bedarf können Sie mithilfe einfacher JSON-Dateien benutzerdefinierte Buildtasks und Startparameter angeben.
 
 Nach dem Öffnen der Codedateien in Visual Studio zeigt der **Projektmappen-Explorer** alle Dateien im Ordner an. Sie können auf eine beliebige Datei klicken, um mit der Bearbeitung zu beginnen. Visual Studio beginnt im Hintergrund damit, die Dateien zu indizieren, um IntelliSense, Navigation und Refactoringfunktionen zu ermöglichen. Während Sie Dateien bearbeiten, erstellen, verschieben und löschen, verfolgt Visual Studio die Änderungen automatisch nach und aktualisiert den IntelliSense-Index kontinuierlich. Der Code wird mit Syntaxfarbgebung angezeigt und beinhaltet in vielen Fällen eine grundlegende Anweisungsvervollständigung per IntelliSense.
 
@@ -30,9 +29,19 @@ Nach dem Öffnen der Codedateien in Visual Studio zeigt der **Projektmappen-Expl
 Sie können Code in Visual Studio auf eine der folgenden Arten öffnen:
 
 - Wählen Sie in der Visual Studio-Menüleiste die Einträge **Datei** > **Öffnen** > **Ordner**, und navigieren Sie zum Codespeicherort.
+
 - Wählen Sie im Kontextmenü (Rechtsklick) eines Ordners, der Code enthält, den Befehl **In Visual Studio öffnen** .
+
+::: moniker range="vs-2017"
 - Klicken Sie auf der Visual Studio-**Startseite** auf den Link **Ordner öffnen**.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+- Wählen Sie im Startfenster den Link **Ordner öffnen** aus.
+::: moniker-end
+
 - Wenn Sie eine Tastatur verwenden, drücken Sie in Visual Studio die Tasten **STRG**+**UMSCHALT**+**ALT**+**O**.
+
 - Öffnen Sie Code aus einem geklonten GitHub-Repository.
 
 ### <a name="to-open-code-from-a-cloned-github-repo"></a>So öffnen Sie Code aus einem geklonten GitHub-Repository
@@ -62,10 +71,6 @@ Das folgende Beispiel zeigt, wie ein GitHub-Repository geklont und dann sein Cod
    ![Ordneransicht anzeigen](./media/VSIDE_Code_Clone3_show.png)
 
    Jetzt können Sie Ordner und Dateien im geklonten Repository durchsuchen und den Code im Code-Editor von Visual Studio anzeigen und durchsuchen, wobei die farbliche Syntaxhervorhebung und andere Funktionen zur Verfügung stehen.
-
-| | |
-|---------|---------|
-| ![Kamerasymbol für Video](../install/media/video-icon.png)| [Sehen Sie sich dieses Video an](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=lp3TOKD6D_6711787171), um zu erfahren, wie Sie Code aus einem GitHub-Repository in Visual Studio klonen und öffnen. |
 
 ## <a name="run-and-debug-your-code"></a>Ausführen und Debuggen Ihres Codes
 
@@ -98,7 +103,7 @@ Wenn Ihre Codebasis Python- oder JavaScript-Code enthält, müssen Sie keine *JS
 
 ### <a name="codebases-that-contain-c-code"></a>Codebasen mit C++-Code
 
-Informationen zum Öffnen von C++-Code ohne Projektmappen oder Projekte in Visual Studio finden Sie unter [Open Folder-Projekte für C++](/cpp/ide/non-msbuild-projects).
+Informationen zum Öffnen von C++-Code ohne Projektmappen oder Projekte in Visual Studio finden Sie unter [Open Folder-Projekte für C++](/cpp/build/open-folder-projects-cpp).
 
 ### <a name="codebases-that-contain-a-visual-studio-project"></a>Codebasen mit einem Visual Studio-Projekt
 
@@ -113,6 +118,6 @@ Der Text der Schaltfläche **Start** ändert sich und zeigt an, dass das Projekt
 ## <a name="see-also"></a>Siehe auch
 
 - [Anpassen von Build- und Debugtasks](../ide/customize-build-and-debug-tasks-in-visual-studio.md)
-- [Open Folder-Projekte für C++](/cpp/ide/non-msbuild-projects)
-- [CMake-Projekte in C++](/cpp/ide/cmake-tools-for-visual-cpp)
+- [Open Folder-Projekte für C++](/cpp/build/open-folder-projects-cpp)
+- [CMake-Projekte in C++](/cpp/build/cmake-projects-in-visual-studio)
 - [Writing code in the code and text editor (Schreiben von Code im Code- und Text-Editor)](../ide/writing-code-in-the-code-and-text-editor.md)

@@ -7,14 +7,13 @@ helpviewer_keywords:
 ms.assetid: 6832fe39-04d5-4d94-8a18-3e2730bad423
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: a2a8b32ae161a2c3ba0f58c37e2a369b00db534e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: fc0e9c9a8983d58b7b672be6c1cafb7360e25d28
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979301"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Vorgehensweise: Konfigurieren des ASP.NET-Profilers für Auslastungstests mit Testeinstellungen in Visual Studio
 
@@ -36,26 +35,26 @@ Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen einer Testeins
 
 Bevor Sie die Schritte in diesem Verfahren ausführen, müssen Sie die Testeinstellungen in Visual Studio und dann die Seite **Daten und Diagnose** öffnen.
 
-1.  Wählen Sie die Rolle aus, die zum Erfassen der ASP.NET-Profilerdaten verwendet werden soll.
+1. Wählen Sie die Rolle aus, die zum Erfassen der ASP.NET-Profilerdaten verwendet werden soll.
 
     > [!WARNING]
     > Diese Rolle muss ein Webserver sein.
 
-2.  Wählen Sie **ASP.NET-Profiler** aus, um die Erfassung von ASP.NET-Profilerstellungsdaten zu aktivieren, und klicken Sie dann auf **Konfigurieren**.
+2. Wählen Sie **ASP.NET-Profiler** aus, um die Erfassung von ASP.NET-Profilerstellungsdaten zu aktivieren, und klicken Sie dann auf **Konfigurieren**.
 
      Das Dialogfeld zum Konfigurieren der Erfassung von ASP.NET-Profilerstellungsdaten wird angezeigt.
 
-3.  Geben Sie im Feld **Profilersamplingintervall** die Anzahl nicht angehaltener CPU-Uhrzyklen an, nach der das nächste ASP.NET-Profilerstellungssample erfasst werden soll.
+3. Geben Sie im Feld **Profilersamplingintervall** die Anzahl nicht angehaltener CPU-Uhrzyklen an, nach der das nächste ASP.NET-Profilerstellungssample erfasst werden soll.
 
-4.  Klicken Sie zum Aktivieren der Profilerstellung für Ebeneninteraktion auf **Profilerstellung für Ebeneninteraktion aktivieren**.
+4. Klicken Sie zum Aktivieren der Profilerstellung für Ebeneninteraktion auf **Profilerstellung für Ebeneninteraktion aktivieren**.
 
      Bei der Profilerstellung für die Ebeneninteraktion wird die Anzahl von Anforderungen, die für jedes Artefakt (z.B. *MyPage.aspx* oder *CompanyLogo.gif*) an den Webserver gesendet werden, und die zum Verarbeiten jeder Anforderung benötigte Zeit erfasst. Zudem werden bei der Profilerstellung für die Interaktion die im Rahmen der Seitenanforderung verwendeten ADO.NET-Verbindungen und die Anzahl von Abfragen und Aufrufen gespeicherter Prozeduren erfasst, die bei der Verarbeitung dieser Anforderung ausgeführt wurden.
 
      Es werden zwei unterschiedliche Sätze von Zeitsteuerungsinformationen erfasst:
 
-    -   Die Zeitsteuerungsinformationen ("Min.", "Max.", "Mittelwert" und "Gesamt") für die Verarbeitung jeder Webanforderung
+    - Die Zeitsteuerungsinformationen ("Min.", "Max.", "Mittelwert" und "Gesamt") für die Verarbeitung jeder Webanforderung
 
-    -   Die Zeitsteuerungsinformationen ("Min.", "Max.", "Mittelwert" und "Gesamt") für die Ausführung jeder Abfrage
+    - Die Zeitsteuerungsinformationen ("Min.", "Max.", "Mittelwert" und "Gesamt") für die Ausführung jeder Abfrage
 
 Mit dem in der Testeinstellung konfigurierten Adapter für diagnostische Daten des ASP.NET-Profilers können Sie jetzt ASP.NET-Profilerstellungsdaten für die ASP.NET-Webanwendung erfassen.
 

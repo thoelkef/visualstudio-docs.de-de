@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: 7fbd275e3e946461559db41668a749cd6631ba09
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 0c2a4590b15faa2573ccab3ff51ff5cd54e177ca
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296306"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62983680"
 ---
 # <a name="customizing-the-build-system"></a>Anpassen des Buildsystems
 
@@ -66,14 +66,14 @@ Die Eigenschaftengruppe einer einfachen Konsolenanwendung kann z.B. wie die folg
 
 ```xml
 <PropertyGroup>
-        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-        <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-        <ProjectGuid>{E248730E-1393-43CC-9183-FFA42F63BE81}</ProjectGuid>
-        <OutputType>Exe</OutputType>
-        <RootNamespace>refactoring</RootNamespace>
-        <AssemblyName>refactoring</AssemblyName>
-        <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    </PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{E248730E-1393-43CC-9183-FFA42F63BE81}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>refactoring</RootNamespace>
+    <AssemblyName>refactoring</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+</PropertyGroup>
 ```
 
 Auf Eigenschaften kann von Ausdrücken aus mit `$()`-Syntax verwiesen werden. `$(Foo)` wird z.B. als Wert der `Foo`-Eigenschaft bewertet. Wenn die Eigenschaft nicht festgelegt wurde, wird sie als leere Zeichenfolge bewertet, ohne dass ein Fehler auftritt.

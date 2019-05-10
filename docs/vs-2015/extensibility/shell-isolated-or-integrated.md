@@ -1,14 +1,9 @@
 ---
 title: Shell (Isolated oder Integrated) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell
 - Visual Studio, Shell
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 856e32d4569e5dcb73e783d0a6b66e186fbb1848
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d570c181125a1f94108624e6f9b1ce23bdcca25a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447220"
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell (Isolated oder Integrated)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ Sie können Ihre eigene Anwendung mit Visual Studio-basierten isolierten oder in
  Die verteilbare Version der Visual Studio integrated Shell umfasst keine Programmiersprachen und die Funktionen, die jeweiligen Projektsysteme zu unterstützen.  
   
 > [!NOTE]
->  Die integrierte Visual Studio-Shell-Modus kann zusammen mit allen Editionen von Visual Studio mit Ausnahme der Express-Editionen installiert werden.  
+> Die integrierte Visual Studio-Shell-Modus kann zusammen mit allen Editionen von Visual Studio mit Ausnahme der Express-Editionen installiert werden.  
   
  Weitere Informationen finden Sie unter [Visual Studio Shell (integriert)](../extensibility/visual-studio-shell-integrated.md).  
   
@@ -52,16 +47,15 @@ Sie können Ihre eigene Anwendung mit Visual Studio-basierten isolierten oder in
  Um die integrierten oder isolierte shellanwendung verteilen, müssen Sie Ihre Anwendung, eine spezielle integriert oder isoliert-Shell redistributable und ein Installationsprogramm enthalten. Weitere Informationen zu Verteilung und Installation finden Sie unter [Verteilen von Isolated Shell-Anwendungen](../extensibility/distributing-isolated-shell-applications.md).  
   
 > [!IMPORTANT]
->  Die [(Endbenutzer-Lizenzvertrag)](https://www.visualstudio.com/en-us/support/legal/mt171552) für Visual Studio integrated und isolated Shells Abschnitt enthält, die Datensammlung (**Abschnitt 3. Daten**).  Es wird beschrieben, die Nutzung der Kundendaten, die von Microsoft Benutzer, der entweder integriert oder isolierte Shell-Software gesammelt werden können, die Sie in Ihrer Anwendung zu erstellen. Weitere Informationen finden Sie unter [Microsoft Visual Studio-Produktfamilie – Datenschutzbestimmungen](https://www.visualstudio.com/en-us/dn948229).  
+> Die [(Endbenutzer-Lizenzvertrag)](https://www.visualstudio.com/support/legal/mt171552) für Visual Studio integrated und isolated Shells Abschnitt enthält, die Datensammlung (**Abschnitt 3. Daten**).  Es wird beschrieben, die Nutzung der Kundendaten, die von Microsoft Benutzer, der entweder integriert oder isolierte Shell-Software gesammelt werden können, die Sie in Ihrer Anwendung zu erstellen. Weitere Informationen finden Sie unter [Microsoft Visual Studio-Produktfamilie – Datenschutzbestimmungen](https://www.visualstudio.com/dn948229).  
 > 
->  Wenn Sie separate Nutzungsdaten aus Ihrer Kunden durch Ihre Anwendung erfassen, müssen Sie die entsprechenden Beachten Sie, dass für Benutzer Ihrer Anwendung der Gegenstand der Sammlung bereitstellen.  Wenn Sie entweder die isolated oder integrated Shell-Software als Teil Ihrer Anwendung entsprechend der Visual Studio Software Development Kit-Lizenz, verteilen, müssen Sie eine der folgenden einschließen:  
+> Wenn Sie separate Nutzungsdaten aus Ihrer Kunden durch Ihre Anwendung erfassen, müssen Sie die entsprechenden Beachten Sie, dass für Benutzer Ihrer Anwendung der Gegenstand der Sammlung bereitstellen.  Wenn Sie entweder die isolated oder integrated Shell-Software als Teil Ihrer Anwendung entsprechend der Visual Studio Software Development Kit-Lizenz, verteilen, müssen Sie eine der folgenden einschließen:  
 > 
 > - der Endbenutzer-Lizenzvertrag als Teil Ihrer Anwendung-Lizenz  
->   -   Ihre eigenen Endbenutzer-Lizenzvertrag, die Ihre Kunden zu den Bedingungen zustimmen, die Visual Studio schützen erfordert integriert oder isoliert Shell mindestens so viel wie die Microsoft-Endbenutzer-Lizenzbedingungen für die Shell-software  
+> - Ihre eigenen Endbenutzer-Lizenzvertrag, die Ihre Kunden zu den Bedingungen zustimmen, die Visual Studio schützen erfordert integriert oder isoliert Shell mindestens so viel wie die Microsoft-Endbenutzer-Lizenzbedingungen für die Shell-software  
   
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen  
  Weitere Informationen zu den verteilbaren Paketen finden Sie unter den [Downloads zu Visual Studio-Erweiterbarkeit](http://go.microsoft.com/fwlink/?LinkID=119298) Website.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Bereitstellen von Visual Studio-Erweiterungen](../extensibility/shipping-visual-studio-extensions.md)
-

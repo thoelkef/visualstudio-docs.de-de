@@ -1,22 +1,21 @@
 ---
 title: Exemplarische Vorgehensweise Analysieren von verwaltetem Code auf Codefehler | Microsoft-Dokumentation
 ms.date: 01/29/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis [Visual Studio]
 - managed code, analyzing
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: fd24485d02d20bf4ab1b5def30e34b8d14a71cb3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3097e52f99f044257b8eaf634455bdf19978d0c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955252"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825042"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Exemplarische Vorgehensweise: Analysieren von verwaltetem Code für Codefehler
 
@@ -183,13 +182,11 @@ Diese exemplarische Vorgehensweise führt Sie schrittweise durch den Prozess der
 
 ## <a name="exclude-code-analysis-warnings"></a>Ausschließen von codeanalysewarnungen
 
-### <a name="to-exclude-code-defect-warnings"></a>Auszuschließende Mängel Code (Warnungen)
-
 1. Führen Sie für jede der verbleibenden Warnungen folgende Schritte aus:
 
     1. Wählen Sie die Warnung in der **Fehlerliste**.
 
-    1. Wählen Sie im Menü Kontextmenü **unterdrücken** > **In Unterdrückungsdatei**.
+    1. Wählen Sie im Kontextmenü (Kontextmenü) **unterdrücken** > **In Unterdrückungsdatei**.
 
 1. Erstellen Sie das Projekt neu.
 

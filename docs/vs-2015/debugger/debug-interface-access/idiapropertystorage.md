@@ -1,14 +1,9 @@
 ---
 title: IDiaPropertyStorage | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: d3197a38-5973-4e56-873e-4f1b84c3f674
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f59e0a2ee5c0ae82cfcf4ea56cc7095b21b8719e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 29832934b848729879ee1ba802c70f85117efd2a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773378"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537627"
 ---
 # <a name="idiapropertystorage"></a>IDiaPropertyStorage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,19 +51,19 @@ IDiaPropertyStorage : IUnknown
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
  Rufen Sie diese Schnittstelle durch Aufrufen der `QueryInterface` -Methode für eine andere Schnittstelle. Die folgenden Schnittstellen abgefragt werden können, für die `IDiaPropertyStorage` Schnittstelle:  
   
--   [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)  
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)  
   
--   [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)  
+- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)  
   
--   [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)  
+- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)  
   
--   [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)  
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)  
   
--   [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)  
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)  
   
--   [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)  
+- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)  
   
--   [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)  
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)  
   
 ## <a name="example"></a>Beispiel  
  Dieses Beispiel zeigt eine Funktion, die alle Eigenschaften, die verfügbar gemacht werden, indem Sie zeigt die `IDiaPropertyStorage` Objekt. Finden Sie unter den [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) Schnittstelle für ein Beispiel dafür, wie die `IDiaPropertyStorage` Schnittstelle wird vom Abrufen der [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) Schnittstelle.  
@@ -132,11 +127,11 @@ void PrintPropertyStorage(IDiaPropertyStorage* pPropertyStorage)
   
  Bibliothek: diaguids.lib  
   
- DLL: "MSDIA80.dll"  
+ DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Siehe auch  
  [Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Idiasession:: Getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
+ [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)   
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)   
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)   
@@ -145,6 +140,3 @@ void PrintPropertyStorage(IDiaPropertyStorage* pPropertyStorage)
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)   
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
-
-
-

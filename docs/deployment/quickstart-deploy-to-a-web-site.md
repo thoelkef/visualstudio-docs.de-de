@@ -1,27 +1,30 @@
 ---
 title: Veröffentlichen auf einer Website
-ms.date: 06/22/2018
+ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
 ms.assetid: fc82b1f1-d342-4b82-9a44-590479f0a895
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9744493a8be24ff9ab3e1f8749b02d77d8cc0b4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 41b8a6a7c075a72f010de1e3b57d5a47514498dd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937204"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62930258"
 ---
 # <a name="publish-a-web-app-to-a-web-site-using-visual-studio"></a>Veröffentlichen einer Web-App auf einer Website mithilfe von Visual Studio
 
 Sie können das Tool zum **Veröffentlichen** verwenden, um ASP.NET-, ASP.NET Core-, .NET Core- und Python-Apps über Visual Studio auf einer Website zu veröffentlichen. Für Node.js können Sie zwar gleichen Schritte ausführen, jedoch ist die Benutzeroberfläche anders.
 
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
+
+> [!NOTE]
+> Wenn Sie eine Windows-Desktopanwendung für eine Netzwerkdateifreigabe veröffentlichen müssen, sehen Sie sich den Artikel [Bereitstellen einer Desktopanwendung mit ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# oder Visual Basic) an. Informationen zu C++/CLR finden Sie unter [ClickOnce-Bereitstellung für Visual C++-Anwendungen](/cpp/ide/clickonce-deployment-for-visual-cpp-applications), und Informationen zu C/C++ finden Sie unter [Bereitstellen einer Visual C++-Anwendung mithilfe eines Setup-Projekts](/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-a-web-site"></a>Veröffentlichen auf einer Website
 

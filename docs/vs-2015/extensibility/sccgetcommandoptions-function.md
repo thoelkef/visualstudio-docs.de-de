@@ -1,14 +1,9 @@
 ---
 title: SccGetCommandOptions-Funktion | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccGetCommandOptions
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: bbe4aa4e-b4b0-403e-b7a0-5dd6eb24e5a9
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 10f47a193a3ff47412249e094c1c9364653350ae
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 55d4d2cae73dd77fc601ca85ab45d969fc0e4de8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810090"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432414"
 ---
 # <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions-Funktion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,9 +75,8 @@ SCCRTN SccGetCommandOptions(
  Abschließend, wenn der Benutzer klickt **OK** in der IDE **erhalten** (Dialogfeld), die IDE-Aufrufe der [SccGet](../extensibility/sccget-function.md), übergeben die Struktur zurückgegeben `ppvOptions` , enthält die Erweiterte Optionen.  
   
 > [!NOTE]
->  Der Befehl `SCC_COMMAND_OPTIONS` wird verwendet, wenn die IDE zeigt eine **Optionen** Dialogfeld, das der Benutzer kann Festlegen der Einstellungen, die steuern, wie die Integration funktioniert. Wenn möchte, dass das Quellcodeverwaltungs-Plug-in ein eigenes Dialogfeld Einstellungen angeben, können sie anzeigen, aus einer **erweitert** Schaltfläche im Dialogfeld "Einstellungen" der IDE. Das plug-in ist allein verantwortlich für das Abrufen und Speichern dieser Informationen. die IDE nicht verwenden, oder ändern Sie sie.  
+> Der Befehl `SCC_COMMAND_OPTIONS` wird verwendet, wenn die IDE zeigt eine **Optionen** Dialogfeld, das der Benutzer kann Festlegen der Einstellungen, die steuern, wie die Integration funktioniert. Wenn möchte, dass das Quellcodeverwaltungs-Plug-in ein eigenes Dialogfeld Einstellungen angeben, können sie anzeigen, aus einer **erweitert** Schaltfläche im Dialogfeld "Einstellungen" der IDE. Das plug-in ist allein verantwortlich für das Abrufen und Speichern dieser Informationen. die IDE nicht verwenden, oder ändern Sie sie.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Quellcodeverwaltungsfunktionen-Plug-in-API](../extensibility/source-control-plug-in-api-functions.md)   
  [Befehlscode](../extensibility/command-code-enumerator.md)
-

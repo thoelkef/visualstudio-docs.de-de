@@ -1,13 +1,8 @@
 ---
 title: 'Szenario: Ändern des Entwurfs mithilfe von Visualisierung und Modellierung | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - code visualization [Visual Studio ALM]
@@ -21,13 +16,13 @@ ms.assetid: ccc80825-a4a0-44fa-a0bb-f95254785a3b
 caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4dface8e157e44aa09b271446dba68b2779d0a6b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 914d5806ed0b40a227d61c673e5f463624b0cc11
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745773"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403569"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Szenario: Ändern des Entwurfs mithilfe von Visualisierung und Modellierung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +55,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
   
 - [Erstellen von Modellen für Ihre App](../modeling/create-models-for-your-app.md)  
   
-##  <a name="ScenarioOverview"></a> Übersicht über das Szenario  
+## <a name="ScenarioOverview"></a> Übersicht über das Szenario  
  Dieses Szenario beschreibt Episoden in den Lebenszyklen der Softwareentwicklung von zwei fiktiven Unternehmen: Dinner Now und Lucerne Publishing. Dinner Now bietet einen webbasierten Essenslieferdienst in Seattle an. Kunden können Essen bestellen auf der Dinner Now-Website bezahlen. Die Bestellungen werden dann an das entsprechende örtliche Restaurant für die Lieferung gesendet. Lucerne Publishing, ein Unternehmen in New York, unterhält mehrere Geschäfte sowohl im Internet als auch außerhalb des Internets. Beispielsweise wird eine Website betrieben, auf der Kunden Restaurantkritiken veröffentlichen können.  
   
  Lucerne hat vor kurzem Dinner Now übernommen und möchte die folgenden Änderungen vornehmen:  
@@ -83,7 +78,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
   
 - [Testen, Überprüfen und Einchecken von aktualisiertem Code](#TestValidateCheckInCode)  
   
-##  <a name="ModelingDiagramsTools"></a> Rollen von Architektur- und Modellierungsdiagrammen in der Softwareentwicklung  
+## <a name="ModelingDiagramsTools"></a> Rollen von Architektur- und Modellierungsdiagrammen in der Softwareentwicklung  
  In der folgenden Tabelle werden Rollen beschrieben, die diese Tools während verschiedener Phasen des Lebenszyklus der Softwareentwicklung spielen können:  
   
 ||**Modellieren von Benutzeranforderungen**|**Modellierung von Geschäftsprozessen**|**Systemarchitektur und -entwurf**|**Visualisieren und Untersuchen von Code**|**Überprüfung**|  
@@ -108,7 +103,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
   
 - [Projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md)  
   
-- [Gewusst wie: Hinzufügen von Klassendiagrammen zu Projekten (Klassen-Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
+- [Vorgehensweise: Hinzufügen von Klassendiagrammen zu Projekten](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
   
 - [Modellierungs-SDK für Visual Studio - Domänenspezifische Sprachen](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
   
@@ -125,9 +120,9 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
 - [Überprüfen von Code mit Ebenendiagrammen](../modeling/validate-code-with-layer-diagrams.md)  
   
   > [!NOTE]
-  >  Einige Versionen von Visual Studio unterstützen Ebenenvalidierung und schreibgeschützte Versionen von Code Maps und UML-Diagrammen zur Visualisierung und Modellierung. Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+  > Einige Versionen von Visual Studio unterstützen Ebenenvalidierung und schreibgeschützte Versionen von Code Maps und UML-Diagrammen zur Visualisierung und Modellierung. Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
-##  <a name="UnderstandingCommunicating"></a> Verstehen und Kommunizieren von Informationen zum System  
+## <a name="UnderstandingCommunicating"></a> Verstehen und Kommunizieren von Informationen zum System  
  Es gibt keine vorgeschriebene Reihenfolge zum Verwenden der Visual Studio-Modellierungsdiagramme. Daher können Sie sie ganz Ihren Anforderungen oder dem Ansatz entsprechend verwenden. Normalerweise rufen Teams ihre Modelle im Verlauf des Projekts wiederholt und häufig auf. Jedes Diagramm bietet bestimmte Vorteile, um verschiedene Aspekte des Systems in der Entwicklung zu verstehen, zu beschreiben und zu kommunizieren.  
   
  Dinner Now und Lucerne kommunizieren untereinander sowie mit Projektbeteiligten anhand von Diagrammen als einheitliche Sprache. Beispielsweise verwendet Dinner Now Diagramme, um folgende Aufgaben auszuführen:  
@@ -170,7 +165,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
   
 - [Testen, Überprüfen und Einchecken von aktualisiertem Code](#TestValidateCheckInCode)  
   
-###  <a name="UnderstandingBPMandSystemDesign"></a> Grundlegendes zur Rolle des Systems im Geschäftsprozess.  
+### <a name="UnderstandingBPMandSystemDesign"></a> Grundlegendes zur Rolle des Systems im Geschäftsprozess.  
  Lucerne möchte mehr über den Geschäftsprozess von Dinner Now erfahren. Die folgenden Diagramme werden erstellt, um den Kenntnisstand mit Dinner Now leichter abzuklären:  
   
 |**Diagramm**|**Beschreibt**|  
@@ -197,7 +192,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
   
  **UML-Klassendiagramm**  
   
-###  <a name="DescribingURM"></a> Beschreiben neuer oder aktualisierter Benutzeranforderungen  
+### <a name="DescribingURM"></a> Beschreiben neuer oder aktualisierter Benutzeranforderungen  
  Lucerne will dem Dinner Now-System Funktionen hinzufügen, damit Kunden Restaurantkritiken lesen und veröffentlichen können. Die folgenden Diagramme werden aktualisiert, um diese neue Anforderung mit Dinner Now zu besprechen:  
   
 |**Diagramm**|**Beschreibt**|  
@@ -224,7 +219,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
   
  **UML-Klassendiagramm**  
   
-###  <a name="CreatingTests"></a> Erstellen von Tests aus Modellen  
+### <a name="CreatingTests"></a> Erstellen von Tests aus Modellen  
  Beide Teams stimmen darin überein, dass sie einen vollständigen Satz von Tests für das System und seine Komponenten benötigen, bevor sie Änderungen vornehmen können. Lucerne verfügt über ein spezialisiertes Team, das Tests auf System- und Komponentenebene durchführt. Die von Dinner Now erstellten Tests werden wiederverwendet und mithilfe von UML-Diagrammen strukturiert:  
   
 - Jeder Anwendungsfall wird durch einen oder mehrere Tests dargestellt. Die Elemente im Anwendungsfalldiagramm sind mit Testfallarbeitselementen in Team Foundation Server verknüpft.  
@@ -241,13 +236,13 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
   
 - [Überprüfen des UML-Modells](../modeling/validate-your-uml-model.md)  
   
-###  <a name="DeterminingChanges"></a> Identifying Changes to the Existing System  
+### <a name="DeterminingChanges"></a> Identifying Changes to the Existing System  
  Dinner Now muss die Kosten für die Erfüllung der neuen Anforderung schätzen. Diese hängen teilweise davon ab, wie sehr sich diese Änderung auf andere Teile des Systems auswirkt. Zur Verdeutlichung erstellt einer der Dinner Now-Entwickler die folgenden Code Maps und Diagramme aus vorhandenem Code:  
   
 |**Code Map oder Diagramm**|**Zeigt Folgendes an**|  
 |------------------------|---------------|  
 |*Code Map*<br /><br /> Thema<br /><br /> -   [Projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Durchsuchen und Neuanordnen von Code maps](../modeling/browse-and-rearrange-code-maps.md)<br />-   [Anpassen von Code Maps durch Bearbeiten der DGML-Dateien](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|Abhängigkeiten und andere Beziehungen im Code.<br /><br /> Dinner Now könnte z. B. damit beginnen, Assembly-Code Maps zu überprüfen, um eine Übersicht der Assemblys und ihrer Abhängigkeiten zu erhalten. Sie können in den Code Maps einen Drilldown durchführen, um die Namespaces und Klassen in diesen Assemblys zu untersuchen.<br /><br /> Dinner Now kann auch Code Maps erstellen, um bestimmte Bereiche und andere Arten von Beziehungen im Code zu untersuchen. Sie verwenden den Projektmappen-Explorer, um relevante Bereiche und Beziehungen zu finden und auszuwählen.|  
-|*Codebasiertes Klassendiagramm*<br /><br /> Siehe [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Vorhandene Klassen in Code|  
+|*Codebasiertes Klassendiagramm*<br /><br /> Weitere Informationen finden Sie unter [How to: Hinzufügen von Klassendiagrammen zu Projekten (Klassen-Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Vorhandene Klassen in Code|  
   
  Beispiel: Die Entwicklerin erstellt eine Code Map. Sie passt den Umfang an, um sich auf die Bereiche zu konzentrieren, die von dem neuen Szenario betroffen sind. Diese Bereiche werden ausgewählt und auf der Code Map hervorgehoben:  
   
@@ -269,7 +264,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
 |------------------|-------------------|  
 |*Aktivitätsdiagramm (UML)*<br /><br /> Thema<br /><br /> -   [UML-Aktivitätsdiagramme: Referenz](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML-Aktivitätsdiagramme: Richtlinien](../modeling/uml-activity-diagrams-guidelines.md)|Der Ablauf von Schritten, wenn das System erkennt, dass ein Kunde erneut eine Bestellung bei einem Restaurant aufgibt, und der Kunden aufgefordert wird, eine Kritik zu schreiben|  
 |*Klassendiagramm (UML)*<br /><br /> Thema<br /><br /> -   [UML-Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md)<br />-   [UML-Klassendiagramme: Richtlinien](../modeling/uml-class-diagrams-guidelines.md)|Logische Klassen und ihre Beziehungen Beispielsweise wird eine neue Klasse hinzugefügt, um eine **Kritik** und die Beziehungen mit anderen Entitäten zu beschreiben, wie z. B. **Restaurant**, **Menü**und **Kunde**.<br /><br /> Um Kritiken einem Kunden zuzuordnen, muss das System Kundendetails speichern. Ein UML-Klassendiagramm kann helfen, diese Details zu klären.|  
-|*Codebasiertes Klassendiagramm*<br /><br /> Siehe [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Vorhandene Klassen in Code|  
+|*Codebasiertes Klassendiagramm*<br /><br /> Weitere Informationen finden Sie unter [How to: Hinzufügen von Klassendiagrammen zu Projekten (Klassen-Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Vorhandene Klassen in Code|  
 |*Komponentendiagramm (UML)*<br /><br /> Thema<br /><br /> -   [UML-Komponentendiagramme: Referenz](../modeling/uml-component-diagrams-reference.md)<br />-   [UML-Komponentendiagramme: Richtlinien](../modeling/uml-component-diagrams-guidelines.md)|Die Teile des Systems auf höherer Ebene, wie z. B. die Dinner Now-Website und ihre Schnittstellen Diese Schnittstellen definieren, wie Komponenten untereinander durch die Methoden oder Dienste interagieren, die sie bereitstellen und nutzen.|  
 |*Sequenzdiagramm (UML)*<br /><br /> Thema<br /><br /> -   [UML-Sequenzdiagramme: Referenz](../modeling/uml-sequence-diagrams-reference.md)<br />-   [UML-Sequenzdiagramme: Richtlinien](../modeling/uml-sequence-diagrams-guidelines.md)|Die Sequenz der Interaktionen zwischen Instanzen|  
   
@@ -285,7 +280,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
   
  **UML-Sequenzdiagramm**  
   
-###  <a name="ValidatingCode"></a> Sicherstellen der Konsistenz von Code und Entwurf  
+### <a name="ValidatingCode"></a> Sicherstellen der Konsistenz von Code und Entwurf  
  Dinner Now muss sicherstellen, dass der aktualisierte Code konsistent mit dem Entwurf bleibt. Es werden Ebenendiagramme erstellt, die die Funktionsebenen im System beschreiben, die erlaubten Abhängigkeiten zwischen ihnen angeben und diesen Ebenen Lösungsartefakte zuordnen.  
   
 |**Diagramm**|**Beschreibt**|  
@@ -302,13 +297,13 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
   
  Thema  
   
--   [Definieren des Buildprozesses](http://msdn.microsoft.com/library/61593e10-d24b-492f-b19a-af4d85abea6b)  
+- [Definieren des Buildprozesses](http://msdn.microsoft.com/library/61593e10-d24b-492f-b19a-af4d85abea6b)  
   
--   [Verwenden eines abgegrenzten Eincheckbuildprozesses zur Überprüfung von Änderungen](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
+- [Verwenden eines abgegrenzten Eincheckbuildprozesses zur Überprüfung von Änderungen](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
   
--   [Anpassen der Buildprozessvorlage](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
+- [Anpassen der Buildprozessvorlage](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
   
-###  <a name="GeneralTips"></a> General Tips for Creating and Using Models  
+### <a name="GeneralTips"></a> General Tips for Creating and Using Models  
   
 - Die meisten Diagramme bestehen aus Knoten, die durch Linien verbunden sind. Für jeden Diagrammtyp stellt die Toolbox verschiedene Arten von Knoten und Linien bereit.  
   
@@ -328,7 +323,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
   
   Finden Sie unter [Erstellen von Modellen für Ihre app](../modeling/create-models-for-your-app.md).  
   
-###  <a name="PlanningTracking"></a> Planning and Tracking Work  
+### <a name="PlanningTracking"></a> Planning and Tracking Work  
  Visual Studio-Modellierungsdiagramme sind in Team Foundation Server integriert, sodass Sie Arbeit leichter planen, verwalten und nachverfolgen können. Beide Teams verwenden Modelle, um Testfälle und Entwicklungsaufgaben zu identifizieren und ihre Arbeit einzuschätzen. Lucerne erstellt und verknüpft Team Foundation Server-Arbeitselemente mit Modellelementen, wie z. B. Anwendungsfälle oder Komponenten. Auf diese Weise kann der Status überwacht werden, und die Arbeit kann bis zu den Benutzeranforderungen zurückverfolgt werden. Somit wird sichergestellt, dass die Änderungen stets den Anforderungen entsprechen.  
   
  Im Verlauf ihrer Arbeit aktualisieren die Teams die Arbeitselemente, um die Zeit zu berücksichtigen, die sie mit ihren Aufgaben verbracht haben. Außerdem wird eine Überwachung und Berichterstellung des Status der Arbeit mithilfe der folgenden Team Foundation Server-Funktionen durchgeführt:  
@@ -349,7 +344,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
   
 - [Erstellen von Backlog und Aufgaben mit Project](http://msdn.microsoft.com/library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
   
-###  <a name="TestValidateCheckInCode"></a> Testen, Überprüfen und Einchecken von Code  
+### <a name="TestValidateCheckInCode"></a> Testen, Überprüfen und Einchecken von Code  
  Beim Abschließen der einzelnen Aufgaben wird der Code von den Teams in der Team Foundation-Versionskontrolle eingecheckt. Wird dies vergessen, werden von Team Foundation Server entsprechende Erinnerungen angezeigt. Bevor Team Foundation Server das Einchecken akzeptiert, führen die Teams Komponententests und Ebenenvalidierung aus, um den Code anhand der Testfälle und des Entwurfs zu überprüfen. Mit Team Foundation Server werden regelmäßig Builds, automatisierte Komponententests und eine Ebenenvalidierung ausgeführt. Dadurch wird sichergestellt, dass der Code die folgenden Kriterien erfüllt:  
   
 - Er funktioniert.  
@@ -372,10 +367,10 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
   
 - [Erstellen der Anwendung](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
   
-##  <a name="UpdatingSystem"></a> Updating the System Using Visualization and Modeling  
+## <a name="UpdatingSystem"></a> Updating the System Using Visualization and Modeling  
  Lucerne und Dinner Now müssen ihre Zahlungssysteme integrieren. Die folgenden Abschnitte zeigen die Modellierungsdiagramme in Visual Studio, die beim Ausführen dieser Aufgabe helfen:  
   
-- [Verstehen der Benutzeranforderungen: Anwendungsfalldiagramme](#UnderstandUseCases)  
+- [Verstehen der Benutzeranforderungen: Verwenden von Anwendungsfalldiagrammen](#UnderstandUseCases)  
   
 - [Verstehen des Geschäftsprozesses: Aktivitätsdiagramme](#UnderstandActivities)  
   
@@ -383,7 +378,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
   
 - [Beschreiben der Interaktionen: Sequenzdiagramme](#DescribeSequence)  
   
-- [Visualisieren von vorhandenem Code: Code Maps](#VisualizeCode)  
+- [Visualisieren von vorhandenem Code: Codezuordnungen](#VisualizeCode)  
   
 - [Definieren eines Glossars der Typen: Klassendiagramme](#DefineClasses)  
   
@@ -401,7 +396,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
   
 - [Modellieren der Architektur Ihrer App](../modeling/model-your-app-s-architecture.md)  
   
-###  <a name="UnderstandUseCases"></a> Verstehen der Benutzeranforderungen: Anwendungsfalldiagramme  
+### <a name="UnderstandUseCases"></a> Verstehen der Benutzeranforderungen: Verwenden von Anwendungsfalldiagrammen  
  Anwendungsfalldiagramme fassen zusammen, welche Aktivitäten ein System unterstützt und von wem diese ausgeführt werden. Lucerne verwendet ein Anwendungsfalldiagramm, um die folgenden Informationen über das Dinner Now-System zu erhalten:  
   
 - Kunden geben Bestellungen auf.  
@@ -452,13 +447,13 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
 #### <a name="summary-strengths-of-use-case-diagrams"></a>Zusammenfassung: Vorteile von Anwendungsfalldiagrammen  
  Mit Anwendungsfalldiagrammen können Sie Folgendes visualisieren:  
   
--   Die Aktivitäten, die ein System unterstützt bzw. nicht unterstützt  
+- Die Aktivitäten, die ein System unterstützt bzw. nicht unterstützt  
   
--   Die Personen und externen Systeme, von denen diese Aktivitäten ausgeführt werden  
+- Die Personen und externen Systeme, von denen diese Aktivitäten ausgeführt werden  
   
--   Die Hauptkomponenten des Systems, die die einzelnen Aktivitäten unterstützen und die Sie als im übergeordneten System geschachtelte Subsysteme darstellen können  
+- Die Hauptkomponenten des Systems, die die einzelnen Aktivitäten unterstützen und die Sie als im übergeordneten System geschachtelte Subsysteme darstellen können  
   
--   Wie ein Anwendungsfall in kleinere Anwendungsfälle oder Variationen unterteilt sein kann  
+- Wie ein Anwendungsfall in kleinere Anwendungsfälle oder Variationen unterteilt sein kann  
   
 #### <a name="relationship-to-other-diagrams"></a>Beziehung zu anderen Diagrammen  
   
@@ -468,7 +463,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
 |Sequenzdiagramm|Die Reihenfolge der Interaktionen zwischen den Teilnehmern in einem Anwendungsfall.<br /><br /> Thema<br /><br /> -   [UML-Sequenzdiagramme: Referenz](../modeling/uml-sequence-diagrams-reference.md)<br />-   [UML-Sequenzdiagramme: Richtlinien](../modeling/uml-sequence-diagrams-guidelines.md)|  
 |Klassendiagramm (UML)|Die am Anwendungsfall beteiligten Entitäten oder Typen.<br /><br /> Thema<br /><br /> -   [UML-Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md)<br />-   [UML-Klassendiagramme: Richtlinien](../modeling/uml-class-diagrams-guidelines.md)|  
   
-###  <a name="UnderstandActivities"></a> Verstehen des Geschäftsprozesses: Aktivitätsdiagramme  
+### <a name="UnderstandActivities"></a> Verstehen des Geschäftsprozesses: Aktivitätsdiagramme  
  Aktivitätsdiagramme beschreiben den Ablauf von Schritten in einem Geschäftsprozess und bieten eine einfache Möglichkeit, den Workflow zu kommunizieren. Ein Entwicklungsprojekt kann mehrere Aktivitätsdiagramme umfassen. Normalerweise umfasst eine Aktivität alle Aktionen, die sich aus einer externen Aktion ergeben, wie z. B. das Bestellen einer Mahlzeit, das Aktualisieren eines Menüs oder das Hinzufügen eines neuen Restaurants zum Geschäft. Eine Aktivität kann auch die Details einer komplexen Aktion beschreiben.  
   
  Lucerne aktualisiert das folgende Aktivitätsdiagramm, um zu zeigen, dass Lucerne die Zahlung verarbeitet und das Restaurant bezahlt. Das Dinner Now-Zahlungssystem wird durch das Lucerne-Zahlungssystem ersetzt, wie hervorgehoben wird:  
@@ -485,9 +480,9 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
   
  Thema  
   
--   [UML-Aktivitätsdiagramme: Referenz](../modeling/uml-activity-diagrams-reference.md)  
+- [UML-Aktivitätsdiagramme: Referenz](../modeling/uml-activity-diagrams-reference.md)  
   
--   [UML-Aktivitätsdiagramme: Richtlinien](../modeling/uml-activity-diagrams-guidelines.md)  
+- [UML-Aktivitätsdiagramme: Richtlinien](../modeling/uml-activity-diagrams-guidelines.md)  
   
 #### <a name="drawing-an-activity-diagram"></a>Zeichnen eines Aktivitätsdiagramms  
  Ein Aktivitätsdiagramm umfasst die folgenden Hauptfunktionen:  
@@ -524,7 +519,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
 |Anwendungsfalldiagramm|Fassen Sie die Aktivitäten zusammen, die jeder Akteur ausführt.<br /><br /> Thema<br /><br /> -   [UML-Anwendungsfalldiagramme: Referenz](../modeling/uml-use-case-diagrams-reference.md)<br />-   [UML-Anwendungsfalldiagramme: Richtlinien](../modeling/uml-use-case-diagrams-guidelines.md)|  
 |Komponentendiagramm|Visualisieren Sie das System als Auflistung von wiederverwendbaren Komponenten, die durch einen genau definierten Satz von Schnittstellen Verhaltensweisen bereitstellen oder nutzen.<br /><br /> Thema<br /><br /> -   [UML-Komponentendiagramme: Referenz](../modeling/uml-component-diagrams-reference.md)<br />-   [UML-Komponentendiagramme: Richtlinien](../modeling/uml-component-diagrams-guidelines.md)|  
   
-###  <a name="DescribeComponents"></a> Beschreiben der Systemstruktur: Komponentendiagramme  
+### <a name="DescribeComponents"></a> Beschreiben der Systemstruktur: Komponentendiagramme  
  Komponentendiagramme beschreiben ein System als Auflistung trennbarer Komponenten, die durch einen genau definierten Satz von Schnittstellen Verhaltensweisen bereitstellen oder nutzen. Die Komponenten können einen beliebigen Umfang aufweisen und auf beliebige Art miteinander verbunden sein.  
   
  Damit Lucerne und Dinner Now die Komponenten und Schnittstellen des Systems leichter visualisieren und besprechen können, werden die folgenden Komponentendiagramme erstellt:  
@@ -587,9 +582,9 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
 #### <a name="summary-strengths-of-component-diagrams"></a>Zusammenfassung: Vorteile von Komponentendiagrammen  
  Mit Komponentendiagramme können Sie Folgendes visualisieren:  
   
--   Das System als Auflistung trennbarer Teile, unabhängig von ihrer Implementierungssprache oder ihres Formats.  
+- Das System als Auflistung trennbarer Teile, unabhängig von ihrer Implementierungssprache oder ihres Formats.  
   
--   Komponenten mit genau definierten Schnittstellen, um den Entwurf leichter verstehen und aktualisieren zu können, wenn sich die Anforderungen ändern.  
+- Komponenten mit genau definierten Schnittstellen, um den Entwurf leichter verstehen und aktualisieren zu können, wenn sich die Anforderungen ändern.  
   
 #### <a name="relationship-to-other-diagrams"></a>Beziehung zu anderen Diagrammen  
   
@@ -601,7 +596,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
 |Ebenendiagramm|Beschreiben Sie die logische Architektur des Systems in Bezug auf die Komponenten. Stellen Sie durch Ebenenvalidierung sicher, dass der Code konsistent mit dem Entwurf bleibt.<br /><br /> Thema<br /><br /> -   [Erstellen von Ebenendiagrammen aus Ihrem code](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Ebenendiagramme: Referenz](../modeling/layer-diagrams-reference.md)<br />-   [Ebenendiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md)<br />-   [Überprüfen von Code mit Ebenendiagrammen](../modeling/validate-code-with-layer-diagrams.md)|  
 |Aktivitätsdiagramm|Visualisieren Sie die interne Verarbeitung, die Komponenten als Reaktion auf eingehende Nachrichten durchführen.<br /><br /> Thema<br /><br /> -   [UML-Aktivitätsdiagramme: Referenz](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML-Aktivitätsdiagramme: Richtlinien](../modeling/uml-activity-diagrams-guidelines.md)|  
   
-###  <a name="VisualizeCode"></a> Visualisieren von vorhandenem Code: Code Maps  
+### <a name="VisualizeCode"></a> Visualisieren von vorhandenem Code: Codezuordnungen  
  Code Maps zeigen die aktuelle Organisation und die Beziehungen im Code. Elemente werden auf der Code Map durch *Knoten* und Beziehungen durch *Links*dargestellt. Mit Code Maps können Sie die folgenden Arten von Aufgaben ausführen:  
   
 - Untersuchen von unbekanntem Code  
@@ -642,26 +637,26 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
   
 #### <a name="creating-a-code-map"></a>Erstellen einer Code Map  
   
--   Folgen Sie den folgenden Schritten zum Generieren einer Code Map, um eine schnelle Übersicht über Quellcode zu erhalten:  
+- Folgen Sie den folgenden Schritten zum Generieren einer Code Map, um eine schnelle Übersicht über Quellcode zu erhalten:  
   
      Klicken Sie im Menü **Architektur** auf **Code Map für Projektmappe generieren**.  
   
      Erstellen Sie für eine schnelle Übersicht über kompilierten Code eine leere Code Map, und ziehen Sie dann Assemblydateien oder Binärdateien auf die Oberfläche der Code Map.  
   
--   Um bestimmte Code- oder Projektmappenelemente zu untersuchen, wählen Sie im Projektmappen-Explorer die Elemente und Beziehungen aus, die Sie visualisieren möchten. Sie können dann entweder eine neue Code Map generieren oder einer vorhandenen Code Map ausgewählte Elemente hinzufügen. Siehe [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md).  
+- Um bestimmte Code- oder Projektmappenelemente zu untersuchen, wählen Sie im Projektmappen-Explorer die Elemente und Beziehungen aus, die Sie visualisieren möchten. Sie können dann entweder eine neue Code Map generieren oder einer vorhandenen Code Map ausgewählte Elemente hinzufügen. Siehe [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md).  
   
--   Um die Code Map einfacher zu untersuchen, können Sie das Layout den auszuführenden Aufgaben entsprechend neu anordnen.  
+- Um die Code Map einfacher zu untersuchen, können Sie das Layout den auszuführenden Aufgaben entsprechend neu anordnen.  
   
      Wählen Sie beispielsweise ein Strukturlayout aus, um die Ebenen im Code zu visualisieren. Finden Sie unter [durchsuchen und Neuanordnen code Maps](../modeling/browse-and-rearrange-code-maps.md).  
   
 #### <a name="summary-strengths-of-code-maps"></a>Zusammenfassung: Vorteile von Code Maps  
  Mit Code Maps können Sie Folgendes durchführen:  
   
--   Verdeutlichen der Organisation und Beziehungen in vorhandenem Code  
+- Verdeutlichen der Organisation und Beziehungen in vorhandenem Code  
   
--   Identifizieren der Bereiche, die von einer vorgeschlagenen Änderung betroffen sein könnten  
+- Identifizieren der Bereiche, die von einer vorgeschlagenen Änderung betroffen sein könnten  
   
--   Auffinden von Bereichen mit Komplexität, Mustern oder Ebenen sowie andere Bereichen, die Sie optimieren könnten, um den Code leichter verwalten, ändern und wiederverwenden zu können  
+- Auffinden von Bereichen mit Komplexität, Mustern oder Ebenen sowie andere Bereichen, die Sie optimieren könnten, um den Code leichter verwalten, ändern und wiederverwenden zu können  
   
 #### <a name="relationship-to-other-diagrams"></a>Beziehung zu anderen Diagrammen  
   
@@ -670,9 +665,9 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
 |Ebenendiagramm|Die logische Architektur des Systems Stellen Sie durch Ebenenvalidierung sicher, dass der Code konsistent mit dem Entwurf bleibt.<br /><br /> Erstellen Sie eine Code Map, und gruppieren Sie zugehörige Elemente, um vorhandene oder beabsichtigte Ebenen besser identifizieren zu können. Informationen zum Erstellen eines Ebenendiagramms finden Sie unter:<br /><br /> -   [Erstellen von Ebenendiagrammen aus Ihrem code](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Ebenendiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md)|  
 |Komponentendiagramm|Komponenten, ihre Schnittstellen und ihre Beziehungen<br /><br /> Um Komponenten zu identifizieren, erstellen Sie eine Code Map, und gruppieren Sie Elemente nach ihrer Funktion im System.<br /><br /> Thema<br /><br /> -   [UML-Komponentendiagramme: Referenz](../modeling/uml-component-diagrams-reference.md)<br />-   [UML-Komponentendiagramme: Richtlinien](../modeling/uml-component-diagrams-guidelines.md)|  
 |Klassendiagramm (UML)|Klassen, ihre Attribute und Vorgänge und ihre Beziehungen<br /><br /> Um diese Elemente leichter zu identifizieren, erstellen Sie ein UML-Klassendiagramm, das die betreffenden Elemente zeigt.<br /><br /> Thema<br /><br /> -   [UML-Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md)<br />-   [UML-Klassendiagramme: Richtlinien](../modeling/uml-class-diagrams-guidelines.md)|  
-|Klassendiagramm (codebasiert)|Vorhandene Klassen in Code für ein bestimmtes Projekt<br /><br /> Verwenden Sie den Klassen-Designer, um eine vorhandene Klasse in Code zu visualisieren und zu ändern.<br /><br /> Siehe [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|  
+|Klassendiagramm (codebasiert)|Vorhandene Klassen in Code für ein bestimmtes Projekt<br /><br /> Verwenden Sie den Klassen-Designer, um eine vorhandene Klasse in Code zu visualisieren und zu ändern.<br /><br /> Weitere Informationen finden Sie unter [How to: Hinzufügen von Klassendiagrammen zu Projekten (Klassen-Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|  
   
-###  <a name="DescribeSequence"></a> Beschreiben der Interaktionen: Sequenzdiagramme  
+### <a name="DescribeSequence"></a> Beschreiben der Interaktionen: Sequenzdiagramme  
  Sequenzdiagramme beschreiben eine Reihe von Interaktionen zwischen Teilen eines Systems. Die Teile können beliebig skaliert sein. Sie können z. B. von einzelnen Objekten in einem Programm bis hin zu großen Subsystemen oder externen Akteuren reichen. Skala und Typ der Interaktionen können beliebig sein. Sie können z. B. von einzelnen Nachrichten bis hin zu erweiterten Transaktionen reichen, und es kann sich um Funktionsaufrufe oder Webdienstmeldungen handeln.  
   
  Um die Schritte im Anwendungsfall "Process Payment" (Zahlung verarbeiten) besser besprechen und erläutern zu können, erstellen Lucerne und Dinner Now das folgende Sequenzdiagramm aus dem Komponentendiagramm. Die Lebenslinien spiegeln die Dinner Now-Websitekomponente und seine Teile wider. Die Meldungen, die zwischen Lebenslinien auftreten, folgen den Verbindungen in den Komponentendiagrammen:  
@@ -687,11 +682,11 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
   
  Thema  
   
--   [UML-Sequenzdiagramme: Referenz](../modeling/uml-sequence-diagrams-reference.md)  
+- [UML-Sequenzdiagramme: Referenz](../modeling/uml-sequence-diagrams-reference.md)  
   
--   [UML-Sequenzdiagramme: Richtlinien](../modeling/uml-sequence-diagrams-guidelines.md)  
+- [UML-Sequenzdiagramme: Richtlinien](../modeling/uml-sequence-diagrams-guidelines.md)  
   
--   [Projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md)  
+- [Projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md)  
   
 #### <a name="drawing-a-sequence-diagram"></a>Zeichnen eines Sequenzdiagramms  
  Ein Sequenzdiagramm umfasst die folgenden Hauptfunktionen:  
@@ -715,9 +710,9 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
 #### <a name="summary-strengths-of-sequence-diagrams"></a>Zusammenfassung: Vorteile von Sequenzdiagrammen  
  Mit Sequenzdiagrammen können Sie Folgendes visualisieren:  
   
--   Der Kontrollfluss, der während der Ausführung eines Anwendungsfalls zwischen Akteuren oder Objekten übertragen wird.  
+- Der Kontrollfluss, der während der Ausführung eines Anwendungsfalls zwischen Akteuren oder Objekten übertragen wird.  
   
--   Die Implementierung eines Methodenaufrufs oder einer Meldung  
+- Die Implementierung eines Methodenaufrufs oder einer Meldung  
   
 #### <a name="relationship-to-other-diagrams"></a>Beziehung zu anderen Diagrammen  
   
@@ -727,7 +722,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
 |Komponentendiagramm|Beschreiben Sie die Komponenten, die Lebenslinien darstellen, sowie die Schnittstellen, die das von Meldungen dargestellte Verhalten bereitstellen und nutzen.<br /><br /> Um eine Lebenslinie aus einem Komponentendiagramm zu erstellen, klicken Sie mit der rechten Maustaste auf die Komponente, und klicken Sie dann auf **Lebenslinie erstellen**.<br /><br /> Thema<br /><br /> -   [UML-Komponentendiagramme: Referenz](../modeling/uml-component-diagrams-reference.md)<br />-   [UML-Komponentendiagramme: Richtlinien](../modeling/uml-component-diagrams-guidelines.md)|  
 |Anwendungsfalldiagramm|Fassen Sie die Interaktionen zwischen Benutzern und Komponenten in einem Sequenzdiagramm als Anwendungsfall zusammen, der das Ziel eines Benutzers darstellt.<br /><br /> Thema<br /><br /> -   [UML-Anwendungsfalldiagramme: Referenz](../modeling/uml-use-case-diagrams-reference.md)<br />-   [UML-Anwendungsfalldiagramme: Richtlinien](../modeling/uml-use-case-diagrams-guidelines.md)|  
   
-###  <a name="DefineClasses"></a> Definieren eines Glossars der Typen: Klassendiagramme  
+### <a name="DefineClasses"></a> Definieren eines Glossars der Typen: Klassendiagramme  
  Klassendiagramme definieren die am System beteiligten Entitäten, Begriffe oder Konzepte sowie ihre Beziehungen untereinander. Beispielsweise können Sie diese Diagramme während der Entwicklung verwenden, um die Attribute und Vorgänge für jede Klasse unabhängig von Implementierungssprache oder Format zu beschreiben.  
   
  Um die am Anwendungsfall "Process Payment" (Zahlung verarbeiten) beteiligten Entitäten zu erläutern und zu besprechen, zeichnet Lucerne das folgende Klassendiagramm:  
@@ -746,20 +741,20 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
   
  Thema  
   
--   [UML-Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md)  
+- [UML-Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md)  
   
--   [UML-Klassendiagramme: Richtlinien](../modeling/uml-class-diagrams-guidelines.md)  
+- [UML-Klassendiagramme: Richtlinien](../modeling/uml-class-diagrams-guidelines.md)  
   
 #### <a name="drawing-a-class-diagram"></a>Zeichnen eines Klassendiagramms  
  Ein Klassendiagramm umfasst die folgenden Hauptfunktionen:  
   
 - Typen wie z. B. Klassen, Schnittstellen und Enumerationen:  
   
-  -   Eine *Klasse* ist die Definition von Objekten, die gemeinsame strukturelle Merkmale oder Verhaltensmerkmale aufweisen.  
+  - Eine *Klasse* ist die Definition von Objekten, die gemeinsame strukturelle Merkmale oder Verhaltensmerkmale aufweisen.  
   
-  -   Eine *Schnittstelle* definiert einen Teil des extern sichtbaren Verhaltens eines Objekts.  
+  - Eine *Schnittstelle* definiert einen Teil des extern sichtbaren Verhaltens eines Objekts.  
   
-  -   Eine *Enumeration* ist eine Klassifizierung, die eine Liste von literalen Werten enthält.  
+  - Eine *Enumeration* ist eine Klassifizierung, die eine Liste von literalen Werten enthält.  
   
 - *Attribute* sind Werte eines bestimmten Typs, der die einzelnen Instanzen einer *Klassifizierung*beschreiben. Eine Klassifizierung ist ein allgemeiner Name für Typen, Komponenten, Anwendungsfälle und sogar Akteure.  
   
@@ -789,16 +784,16 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
   
 - [UML-Klassendiagramme: Richtlinien](../modeling/uml-class-diagrams-guidelines.md)  
   
-- [Gewusst wie: Hinzufügen von Klassendiagrammen zu Projekten (Klassen-Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
+- [Vorgehensweise: Hinzufügen von Klassendiagrammen zu Projekten](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
   
 #### <a name="summary-strengths-of-class-diagrams"></a>Zusammenfassung: Vorteile von Klassendiagrammen  
  Mit Klassendiagrammen können Sie Folgendes definieren:  
   
--   Ein allgemeines Glossar von Begriffen, die zum Erläutern der Benutzeranforderungen und der am System beteiligten Entitäten verwendet werden. Finden Sie unter [Modellieren von benutzeranforderungen](../modeling/model-user-requirements.md).  
+- Ein allgemeines Glossar von Begriffen, die zum Erläutern der Benutzeranforderungen und der am System beteiligten Entitäten verwendet werden. Finden Sie unter [Modellieren von benutzeranforderungen](../modeling/model-user-requirements.md).  
   
--   Typen, die von Teilen des Systems verwendet werden, wie z. B. Komponenten, unabhängig von ihrer Implementierung. Finden Sie unter [Modellieren der Architektur Ihrer app](../modeling/model-your-app-s-architecture.md).  
+- Typen, die von Teilen des Systems verwendet werden, wie z. B. Komponenten, unabhängig von ihrer Implementierung. Finden Sie unter [Modellieren der Architektur Ihrer app](../modeling/model-your-app-s-architecture.md).  
   
--   Beziehungen, wie z. B. Abhängigkeiten zwischen Typen. Sie können z. B. anzeigen, dass ein Typ mehreren Instanzen eines anderen Typs zugeordnet sein kann.  
+- Beziehungen, wie z. B. Abhängigkeiten zwischen Typen. Sie können z. B. anzeigen, dass ein Typ mehreren Instanzen eines anderen Typs zugeordnet sein kann.  
   
 #### <a name="relationship-to-other-diagrams"></a>Beziehung zu anderen Diagrammen  
   
@@ -811,7 +806,7 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
 |Sequenzdiagramm|Definieren Sie die Typen von Lebenslinien sowie die Vorgänge, Parameter und Rückgabewerte für alle Meldungen, die die Lebenslinie empfangen kann.<br /><br /> Um eine Lebenslinie aus einem Typ in einem Klassendiagramm zu erstellen, klicken Sie mit der rechten Maustaste auf den Typ, und klicken Sie dann auf **Lebenslinie erstellen**erstellen.<br /><br /> Thema<br /><br /> -   [UML-Sequenzdiagramme: Referenz](../modeling/uml-sequence-diagrams-reference.md)<br />-   [UML-Sequenzdiagramme: Richtlinien](../modeling/uml-sequence-diagrams-guidelines.md)|  
 |Code Map|Visualisieren Sie die Organisation und Beziehungen in vorhandenem Code.<br /><br /> Um Klassen, ihre Beziehungen und ihre Methoden zu identifizieren, erstellen Sie eine Code Map, in der diese Elemente angezeigt werden.<br /><br /> Thema<br /><br /> -   [Projektmappenübergreifendes Zuordnen von Abhängigkeiten](../modeling/map-dependencies-across-your-solutions.md)|  
   
-###  <a name="DescribeLayers"></a> Beschreiben der logischen Architektur: Ebenendiagramme  
+### <a name="DescribeLayers"></a> Beschreiben der logischen Architektur: Ebenendiagramme  
  Ebenendiagramme beschreiben die logische Architektur eines Systems, indem die Artefakte in der Projektmappe in abstrakten Gruppen bzw. *Ebenen*organisiert werden. Artefakte können viele Dinge sein, z. B. Namespaces, Projekte, Klassen, Methoden usw. Ebenen stellen die Rollen oder Aufgaben dar, die die Artefakte im System ausführen. Sie können auch eine Ebenenvalidierung in die Build- und Eincheckvorgänge einschließen, um sicherzustellen, dass der Code konsistent mit dem Entwurf bleibt.  
   
  Um den Code mit dem Entwurf konsistent zu halten, überprüfen Dinner Now und Lucerne ihren Code während der Entwicklung mit dem folgenden Ebenendiagramm:  
@@ -872,9 +867,9 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
 #### <a name="summary-strengths-of-layer-diagrams"></a>Zusammenfassung: Vorteile von Ebenendiagrammen  
  Mit Ebenendiagrammen können Sie Folgendes ausführen:  
   
--   Beschreiben der logischen Architektur eines Systems entsprechend den Funktionen der zugehörigen Artefakte  
+- Beschreiben der logischen Architektur eines Systems entsprechend den Funktionen der zugehörigen Artefakte  
   
--   Sicherstellen, dass dieser Code in der Entwicklung dem vorgegebenen Entwurf entspricht  
+- Sicherstellen, dass dieser Code in der Entwicklung dem vorgegebenen Entwurf entspricht  
   
 #### <a name="relationship-to-other-diagrams"></a>Beziehung zu anderen Diagrammen  
   
@@ -893,9 +888,6 @@ Stellen Sie sicher, dass das Softwaresystem die Anforderungen der Benutzer erfü
  [Visualisieren von code](../modeling/visualize-code.md)   
  [Erstellen von Modellen für Ihre app](../modeling/create-models-for-your-app.md)   
  [Verwenden von Modellen im Entwicklungsprozess](../modeling/use-models-in-your-development-process.md)   
- [Verwenden von Modellen in der Agile-Entwicklung](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+ [Verwenden von Modellen in der Agile-Entwicklung](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
  [Überprüfen des Systems während der Entwicklung](../modeling/validate-your-system-during-development.md)   
  [Erweitern von UML-Modellen und -Diagrammen](../modeling/extend-uml-models-and-diagrams.md)
-
-
-

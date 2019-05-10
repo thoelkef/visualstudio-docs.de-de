@@ -2,21 +2,20 @@
 title: Workflow-Designer - Compensate-Aktivitätsdesigner
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.Compensate.UI
 ms.assetid: 7347c947-bfff-4bad-becd-5cd23e7b24cd
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2fd99ae4fded96b1d01a23a8ae7da47c6f09255
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c55ecd8e3402d927b11cc00d18d6d134a5b25681
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949837"
 ---
 # <a name="compensate-activity-designer"></a>Compensate-Aktivitätsdesigner
 

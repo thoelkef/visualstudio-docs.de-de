@@ -1,7 +1,7 @@
 ---
 title: IDebugDefaultPort2::GetPortNotify | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugDefaultPort2::GetPortNotify
 helpviewer_keywords:
@@ -9,43 +9,44 @@ helpviewer_keywords:
 ms.assetid: 3ae715ee-9886-4694-a52b-59bb3b27467a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f91fd7792a47b0a2e02bdf28c75702e896b704f4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: e7e0cc45ba3f692f799deb568bcbb84cc5edf7bf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865569"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62921808"
 ---
 # <a name="idebugdefaultport2getportnotify"></a>IDebugDefaultPort2::GetPortNotify
-Diese Methode ruft eine [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) Schnittstelle für diesen Port.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-HRESULT GetPortNotify(  
-   IDebugPortNotify2** ppPortNotify  
-);  
-```  
-  
-```csharp  
-int GetPortNotify(  
-   out IDebugPortNotify2 ppPortNotify  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `ppPortNotify`  
- [out] Ein [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) Objekt.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
-  
-## <a name="remarks"></a>Hinweise  
- In der Regel die `QueryInterface` Methode wird aufgerufen, die Objekt-Implementierung der [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) Schnittstelle zum Abrufen einer [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) Schnittstelle. Es gibt jedoch Situationen, in denen die gewünschte Schnittstelle auf einem anderen Objekt implementiert wird. Diese Methode blendet diese Umstände und gibt die `IDebugPortNotify2` Schnittstelle aus dem am besten geeigneten-Objekt.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)   
- [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)
+Diese Methode ruft eine [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) Schnittstelle für diesen Port.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+HRESULT GetPortNotify(
+   IDebugPortNotify2** ppPortNotify
+);
+```
+
+```csharp
+int GetPortNotify(
+   out IDebugPortNotify2 ppPortNotify
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `ppPortNotify`
+
+ [out] Ein [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) Objekt.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+
+## <a name="remarks"></a>Hinweise
+ In der Regel die `QueryInterface` Methode wird aufgerufen, die Objekt-Implementierung der [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) Schnittstelle zum Abrufen einer [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) Schnittstelle. Es gibt jedoch Situationen, in denen die gewünschte Schnittstelle auf einem anderen Objekt implementiert wird. Diese Methode blendet diese Umstände und gibt die `IDebugPortNotify2` Schnittstelle aus dem am besten geeigneten-Objekt.
+
+## <a name="see-also"></a>Siehe auch
+- [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)
+- [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)

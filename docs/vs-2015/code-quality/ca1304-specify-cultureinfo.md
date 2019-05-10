@@ -1,14 +1,9 @@
 ---
 title: 'CA1304: CultureInfo angeben | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - SpecifyCultureInfo
 - CA1304
@@ -20,14 +15,14 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0078309f1c87e4bd1feb9a8c82d7c654185c13df
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8757b04423037d821d7b74293e508f567975da57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948778"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047931"
 ---
-# <a name="ca1304-specify-cultureinfo"></a>CA1304: CultureInfo angeben
+# <a name="ca1304-specify-cultureinfo"></a>CA1304: CultureInfo angeben.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -40,11 +35,11 @@ ms.locfileid: "49948778"
 ## <a name="cause"></a>Ursache
  Eine Methode oder der Konstruktor ruft einen Member auf, die eine Überladung, die akzeptiert eine <xref:System.Globalization.CultureInfo?displayProperty=fullName> -Parameter, und die Methode oder der Konstruktor ruft nicht die Überladung, akzeptiert die <xref:System.Globalization.CultureInfo> Parameter. Diese Regel ignoriert Aufrufe der folgenden Methoden:
 
--   <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>
+- <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>
 
--   <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=fullName>
+- <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=fullName>
 
--   <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName>
+- <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName>
 
 ## <a name="rule-description"></a>Regelbeschreibung
  Wenn eine <xref:System.Globalization.CultureInfo> oder <xref:System.IFormatProvider?displayProperty=fullName> Objekt ist nicht angegeben, der Standardwert, der vom überladenen Member bereitgestellte ist möglicherweise nicht die in allen Gebietsschemas den gewünschten Effekt. Darüber hinaus [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] Membern die Standardkultur Auswahl und Formatierung basierend auf Annahmen, die möglicherweise nicht korrekt für Ihren Code. Um sicherzustellen, dass der Code funktioniert, wie für Ihre Szenarien erwartet, sollten Sie die kulturspezifische Informationen, anhand der folgenden Richtlinien angeben:
@@ -83,7 +78,4 @@ ms.locfileid: "49948778"
  [CA1305: IFormatProvider angeben](../code-quality/ca1305-specify-iformatprovider.md)
 
 ## <a name="see-also"></a>Siehe auch
- [NIB: Verwenden der CultureInfo-Klasse](http://msdn.microsoft.com/en-us/d4329e34-64c3-4d1e-8c73-5b0ee626ba7a)
-
-
-
+ [NIB: Verwenden der CultureInfo-Klasse](http://msdn.microsoft.com/d4329e34-64c3-4d1e-8c73-5b0ee626ba7a)

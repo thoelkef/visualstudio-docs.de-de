@@ -1,30 +1,33 @@
 ---
 title: 'Idiasymbol:: Get_value | Microsoft-Dokumentation'
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_value method
 ms.assetid: 2e40174a-2a61-4e5f-bb32-9e0ceec2178a
-author: mikejo5000
+caps.latest.revision: 12
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: bb8e85296338782cac0de27e1e121ed25d8e823c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 0f7eee2acc1c131e146f115d75130eabbb5fd1a8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62834544"
 ---
 # <a name="idiasymbolgetvalue"></a>IDiaSymbol::get_value
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Ruft den Wert einer Konstante.  
   
 ## <a name="syntax"></a>Syntax  
   
-```C++  
+```cpp#  
 HRESULT get_value (   
    VARIANT* pRetVal  
 );  
@@ -38,14 +41,14 @@ HRESULT get_value ( 
  Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="remarks"></a>Hinweise  
  Die angegebene Variante muss initialisiert werden, bevor sie an diese Methode übergeben wird. Weitere Informationen finden Sie im Beispiel.  
   
 ## <a name="example"></a>Beispiel  
   
-```C++  
+```cpp#  
 void ProcessValue(IDiaSymbol *pSymbol)  
 {  
     VARIANT value;  

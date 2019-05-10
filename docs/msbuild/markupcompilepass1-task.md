@@ -1,8 +1,6 @@
 ---
 title: MarkupCompilePass1-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -16,15 +14,15 @@ helpviewer_keywords:
 - MarkupCompilePass1 task [WPF MSBuild], converting XAML to binary format
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9db623dd06db06a1dfee3e22345564f888431d1c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dfcd34daa6a9a2b4cb4bd095bc91ac5962c7335d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855329"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979787"
 ---
 # <a name="markupcompilepass1-task"></a>MarkupCompilePass1-Aufgabe
 
@@ -32,7 +30,7 @@ Der <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>-Task konvertiert nic
 
 ## <a name="task-parameters"></a>Aufgabenparameter
 
-| Parameter | Beschreibung  |
+| Parameter | Beschreibung |
 | - | - |
 | `AllGeneratedFiles` | Optionaler **ITaskItem[]**-Ausgabeparameter.<br /><br /> Enthält eine vollständige Liste von Dateien, die vom <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>-Task generiert werden. |
 | `AlwaysCompileMarkupFilesInSeparateDomain` | Optionaler **Boolean**-Parameter.<br /><br /> Gibt an, ob der Task in einer separaten <xref:System.AppDomain> ausgeführt werden soll. Wenn dieser Parameter **FALSE** zurückgibt, wird der Task in der gleichen <xref:System.AppDomain> wie [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] und schneller ausgeführt. Wenn der Parameter **TRUE** zurückgibt, wird der Task in einer zweiten <xref:System.AppDomain>, die von [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] isoliert ist, und langsamer ausgeführt. |
@@ -63,7 +61,7 @@ Der <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>-Task konvertiert nic
 | `UICulture` | Optionaler **String**-Parameter.<br /><br /> Gibt die Satellitenassembly für die Benutzeroberflächenkultur an, in die die generierten [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Binärformatdateien eingebettet werden. Wenn **UICulture** nicht festgelegt ist, werden die generierten [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Binärformatdateien in die Hauptassembly eingebettet. |
 | `XAMLDebuggingInformation` | Optionaler **Boolean**-Parameter.<br /><br /> Wenn **true**, werden Diagnoseinformationen generiert und in die kompilierte [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Datei einbezogen, um das Debuggen zu unterstützen. |
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Anmerkungen
 
 Der <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>-Task kompiliert [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] normalerweise in Binärformat und generiert Codedateien. Wenn eine [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Datei Verweise auf Typen enthält, die im gleichen Projekt definiert sind, wird ihre Kompilierung in das Binärformat durch **MarkupCompilePass1** auf einen zweiten Markupkompilierungsschritt (**MarkupCompilePass2**) aufgeschoben. Die Kompilierung solcher Dateien muss aufgeschoben werden, weil sie warten müssen, bis die referenzierten lokal definierten Typen kompiliert sind. Wenn eine [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Datei allerdings ein `x:Class`-Attribut aufweist, generiert <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> die sprachspezfiische Codedatei für diese.
 
@@ -104,11 +102,11 @@ Das folgende Beispiel zeigt, wie drei [!INCLUDE[TLA2#tla_xaml](../msbuild/includ
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <UsingTask 
-    TaskName="Microsoft.Build.Tasks.Windows.MarkupCompilePass1" 
+  <UsingTask
+    TaskName="Microsoft.Build.Tasks.Windows.MarkupCompilePass1"
     AssemblyFile="C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\PresentationBuildTasks.dll" />
   <Target Name="MarkupCompilePass1Task">
-    <MarkupCompilePass1 
+    <MarkupCompilePass1
       AssemblyName="WPFMSBuildSample"
       Language="C#"
       OutputType="WinExe"
@@ -123,9 +121,9 @@ Das folgende Beispiel zeigt, wie drei [!INCLUDE[TLA2#tla_xaml](../msbuild/includ
 
 ## <a name="see-also"></a>Siehe auch
 
-[WPF-MSBuild-Referenz](../msbuild/wpf-msbuild-reference.md)  
-[Referenz zu MSBuild-Tasks für WPF](../msbuild/wpf-msbuild-task-reference.md)  
-[MSBuild-Referenz](../msbuild/msbuild-reference.md)  
-[Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)  
-[Erstellen einer WPF-Anwendung (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)  
-[Übersicht über WPF-XAML-Browseranwendungen](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)
+- [WPF-MSBuild-Referenz](../msbuild/wpf-msbuild-reference.md)
+- [Referenz zu MSBuild-Tasks für WPF](../msbuild/wpf-msbuild-task-reference.md)
+- [MSBuild-Referenz](../msbuild/msbuild-reference.md)
+- [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
+- [Erstellen einer WPF-Anwendung (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+- [Übersicht über WPF-XAML-Browseranwendungen](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)

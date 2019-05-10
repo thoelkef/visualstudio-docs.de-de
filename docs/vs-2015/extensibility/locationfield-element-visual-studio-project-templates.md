@@ -1,14 +1,9 @@
 ---
 title: LocationField-Element (Visual Studio-Projektvorlagen) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#LocationField
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 6aaaa155-6ce0-4f7f-aa50-8d63d7a7c992
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9d7d1abef8213ea06e04d35c05b38295e0b01bd9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b28fe0e696b23724758bd877b6031287290f879e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778643"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068781"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>LocationField-Element (Visual Studio-Projektvorlagen)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ Gibt an, ob die **Speicherort** Textfeld in die **neues Projekt** Dialogfeld ist
   
  \<VSTemplate>  
  \<TemplateData>  
- \<LocationField >  
+ \<LocationField>  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -59,11 +54,11 @@ Gibt an, ob die **Speicherort** Textfeld in die **neues Projekt** Dialogfeld ist
   
  Gültigen Werte sind:  
   
--   `Enabled`, der angibt, dass die **Speicherort** im Feld der **neues Projekt** Dialogfeld ist aktiviert.  
+- `Enabled`, der angibt, dass die **Speicherort** im Feld der **neues Projekt** Dialogfeld ist aktiviert.  
   
--   `Disabled`, der angibt, dass die **Speicherort** im Feld der **neues Projekt** Dialogfeld deaktiviert ist.  
+- `Disabled`, der angibt, dass die **Speicherort** im Feld der **neues Projekt** Dialogfeld deaktiviert ist.  
   
--   `Hidden`, der angibt, dass die **Speicherort** im Feld der **neues Projekt** Dialogfeld ausgeblendet wird.  
+- `Hidden`, der angibt, dass die **Speicherort** im Feld der **neues Projekt** Dialogfeld ausgeblendet wird.  
   
 ## <a name="remarks"></a>Hinweise  
  Der Standardwert ist `Enabled`.  
@@ -103,4 +98,3 @@ Gibt an, ob die **Speicherort** Textfeld in die **neues Projekt** Dialogfeld ist
 ## <a name="see-also"></a>Siehe auch  
  [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
  [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
-

@@ -1,21 +1,20 @@
 ---
 title: Verwenden von Modellen im Entwicklungsprozess
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - UML, using models
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1a507a6995ceb3c04dfc3d9daf57fa341fe6fc7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aced2be4d584fb2ede58527a1d541f24089f220d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832817"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62907288"
 ---
 # <a name="use-models-in-your-development-process"></a>Verwenden von Modellen im Entwicklungsprozess
 
@@ -134,7 +133,7 @@ Zum Beschreiben des Entwurfs auf unterschiedlichen Abstraktionsebenen eignen sic
 |-|-|
 |**Videos**|![Link zum Video](../data-tools/media/playvideo.gif) [MSDN Anleitungsvideos: Das Erstellen und Verwenden von UML-Modellen und Diagrammen (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![Link zum Video](../data-tools/media/playvideo.gif) [Channel 9: UML mit Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![Link zum Video](../data-tools/media/playvideo.gif) [MSDN-Reihe: UML-Tools und Erweiterbarkeit (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|
 |**Foren**|- [Visual Studio-Visualisierungs- & Modellierungstools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio Visualization & Modeling SDK (DSL Tools)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Blogs**|[Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)|
+|**Blogs**|[Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
 |**Technische Artikel und Journale**|[MSDN Architecture Center](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Visual Studio Architecture Tooling Guidance](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
 ## <a name="see-also"></a>Siehe auch

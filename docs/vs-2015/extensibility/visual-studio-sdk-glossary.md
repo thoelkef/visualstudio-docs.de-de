@@ -1,26 +1,21 @@
 ---
 title: Visual Studio SDK-Glossar | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - glossary [Visual Studio SDK]
 ms.assetid: b64d432b-c39b-4904-ad18-3c3218b6e3aa
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0ec2300e8bf700deacd50a4a980e02aa4b903bae
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8c189c4c9e06d224d7cef296a2c39e732cbc29f6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758958"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62538706"
 ---
 # <a name="visual-studio-sdk-glossary"></a>Glossar für das Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +62,7 @@ In diesem Glossar enthält Definitionen für Begriffe, die in dienen der [!INCLU
   Designer  
   Eine Programmierschnittstelle, die Benutzern zum Bearbeiten von Elementen der Benutzeroberfläche (Formulare, Schaltflächen und andere Steuerelemente) ermöglicht.  
   
-  Docdata-Objekt  
+  DocData  
   Ein COM-Objekt, das die zugrunde liegenden Daten eines Dokuments in einer Welt kapseln, wenn die Trennung von Dokument/Ansicht vorhanden ist (z. B. im Text-Editor-Fall, wäre dies der Textpuffer, der zugrunde liegenden alle Text-Editor-Ansichten). Wenn dieses Objekt nicht von EditorFactory bereitstellt werden, wird die IDE eine Webauthentifizierung produzieren. Die Verantwortung für dieses Objekt wird zum Verwalten von Datenpersistenz und die Freigabe Semantik für mehrere Ansichten auf diesem gleichen `DocData`. Wenn die `DocData` -Objekt unterstützt die `IOleCommandTarget` -Schnittstelle, wird es in das Befehlsrouting der UIShell enthalten sein.  
   
   DocObject  
@@ -191,4 +186,3 @@ In diesem Glossar enthält Definitionen für Begriffe, die in dienen der [!INCLU
   
   VSPackage  
   Eine installierbare Softwarekomponente, die Visual Studio-IDE erweitert, indem beitragen, eine oder mehrere der folgenden:-Benutzeroberfläche, Dienste, Projekttypen oder Designer/Editor. Eine VSPackage besteht aus einer COM-Objekt, das implementiert die `IVsPackage` Schnittstelle und eine oder mehrere andere COM-Objekten, die andere Schnittstellen zur Unterstützung von Auswahl und andere Funktionen implementieren. Darüber hinaus weist eine VSPackage spezifische registrierungsanforderungen.
-

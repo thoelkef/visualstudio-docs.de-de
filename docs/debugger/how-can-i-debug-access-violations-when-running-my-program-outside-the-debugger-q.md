@@ -16,24 +16,24 @@ helpviewer_keywords:
 ms.assetid: 780a298a-132e-4245-8370-8c82ca27c6c1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b65c10b07b93e657a9e3cb9da5f94d5c9b14362
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 657d8730f923d144d0691afe921ad5eaf9337a42
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854021"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62895091"
 ---
 # <a name="how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger"></a>Wie können Zugriffsverletzungen, die beim Ausführen des Programms außerhalb des Debuggers auftreten, gedebuggt werden?
 
-## <a name="problem-description"></a>Problembeschreibung  
- Das Programm läuft in der Visual Studio-Umgebung einwandfrei. Wird es jedoch eigenständig unter dem Windows-Betriebssystem ausgeführt, generiert es eine Zugriffsverletzung. Wie kann dieses Problem behoben werden?  
-  
-## <a name="solution"></a>Lösung  
- Legen Sie die Option für das [Just-In-Time-Debuggen](../debugger/just-in-time-debugging-in-visual-studio.md) fest, und führen Sie das Programm im eigenständigen Modus aus, bis eine Zugriffsverletzung auftritt. Dann können Sie im Dialogfeld **Zugriffsverletzung** auf **Abbrechen** klicken, um den Debugger zu starten.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Debugging Native Code FAQs (Häufig gestellte Fragen zum Debuggen von nativem Code)](../debugger/debugging-native-code-faqs.md)   
- [Debuggen von nativem Code](../debugger/debugging-native-code.md)
+## <a name="problem-description"></a>Problembeschreibung
+ Das Programm läuft in der Visual Studio-Umgebung einwandfrei. Wird es jedoch eigenständig unter dem Windows-Betriebssystem ausgeführt, generiert es eine Zugriffsverletzung. Wie kann dieses Problem behoben werden?
+
+## <a name="solution"></a>Lösung
+ Legen Sie die Option für das [Just-In-Time-Debuggen](../debugger/just-in-time-debugging-in-visual-studio.md) fest, und führen Sie das Programm im eigenständigen Modus aus, bis eine Zugriffsverletzung auftritt. Dann können Sie im Dialogfeld **Zugriffsverletzung** auf **Abbrechen** klicken, um den Debugger zu starten.
+
+## <a name="see-also"></a>Siehe auch
+- [FAQs zum Debuggen von nativem Code](../debugger/debugging-native-code-faqs.md)
+- [Debuggen von nativem Code](../debugger/debugging-native-code.md)

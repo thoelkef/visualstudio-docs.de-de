@@ -1,25 +1,26 @@
 ---
 title: Zusammenfassungsansicht – Ansicht für Ressourcenkonflikte | Microsoft-Dokumentation
-ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Summary view
 ms.assetid: 6da57b83-7b42-4d7c-9aea-8e0a830faf6b
-author: mikejo5000
+caps.latest.revision: 13
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: ed1db5bd560c32cdb40ddc728b3ede63c70dbc88
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+manager: jillfra
+ms.openlocfilehash: bc0997d46b928d4aef21c152fa4bf27f095f0d22
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31581174"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62419867"
 ---
 # <a name="summary-view---resource-contention-view"></a>Zusammenfassungsansicht – Ansicht für Ressourcenkonflikte
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 Die Zusammenfassung zeigt Informationen zu den Ereignissen in der Anwendung an, in der ein Thread oder Prozess angehalten wurde, während er auf den Zugriff auf eine Ressource gewartet hat.  
   
  Weitere Informationen, einschließlich einer Beschreibung der Benachrichtigungslinks und Berichtslisten, finden Sie unter [Zusammenfassungsansicht](../profiling/summary-view.md).  
@@ -32,7 +33,7 @@ Die Zusammenfassung zeigt Informationen zu den Ereignissen in der Anwendung an, 
   
  **Ressourcen mit den meisten Konflikten** umfasst die folgenden Daten für jede Ressource.  
   
-|Spalte|description|  
+|Spalte|Beschreibung|  
 |------------|-----------------|  
 |**Name**|Der Name der Ressource.|  
 |**Konflikte %**|Der Prozentsatz aller Konfliktereignisse in den Profilerstellungsdaten, die Konflikte für die Ressource waren.|  
@@ -42,7 +43,7 @@ Die Zusammenfassung zeigt Informationen zu den Ereignissen in der Anwendung an, 
   
  **Ressourcen mit den meisten Konflikten** umfasst die folgenden Daten für jeden Thread.  
   
-|Spalte|description|  
+|Spalte|Beschreibung|  
 |------------|-----------------|  
 |**ID**|Der Threadbezeichner.|  
 |**Name**|Der Name des Prozesses, der den Thread besitzt.|  

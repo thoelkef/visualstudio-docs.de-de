@@ -1,32 +1,26 @@
 ---
 title: Inkrementelle Builds | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, incremental builds
 ms.assetid: 325e28c7-4838-4e3f-b672-4586adc7500c
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 187761ce813081877434c2a7c3a570059bc556ee
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: eb11467d8d59e7af11741d7719da2858ac1a784c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812321"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654034"
 ---
 # <a name="incremental-builds"></a>Inkrementelle Builds
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Inkrementelle Builds sind Buildvorgänge, die so optimiert werden, dass Ziele mit Ausgabedateien, die hinsichtlich der zugehörigen Eingabedateien aktuell sind, nicht ausgeführt werden. Zielelemente können über ein `Inputs`-Attribut, das die Elemente angibt, die das Ziel als Eingabe erwartet, sowie ein `Outputs`-Attribut verfügen, das die Elemente angibt, die es als Ausgabe erzeugt. MSBuild versucht, zwischen den Werten dieser Attribute eine 1:1-Zuordnung zu erzielen. Wenn eine 1:1-Zuordnung vorhanden ist, vergleicht MSBuild den Zeitstempel jedes Eingabeelements mit dem Zeitstempel des zugehörigen Ausgabeelements. Ausgabedateien ohne 1:1-Zuordnung werden mit allen Eingabedateien verglichen. Ein Element wird als aktuell betrachtet, wenn dessen Ausgabedatei genau so alt oder neuer als seine Eingabedatei oder -dateien ist.  
   
  Wenn alle Ausgabeelemente aktuell sind, überspringt MSBuild das Ziel. Mit diesem *inkrementellen Build* kann die Buildgeschwindigkeit für das Ziel entscheidend erhöht werden. Wenn nur einige Dateien aktuell sind, führt MSBuild das Ziel aus, überspringt jedoch die aktuellen Elemente und bringt so alle Elemente auf den aktuellen Stand. Dies wird als *partieller inkrementeller Build* bezeichnet.  
@@ -43,7 +37,7 @@ Inkrementelle Builds sind Buildvorgänge, die so optimiert werden, dass Ziele mi
 </Target>  
 ```  
   
- Der durch den `Compile`-Elementtyp dargestellte Satz von Dateien wird in ein Sicherungsverzeichnis kopiert. Die Sicherungsdateien weisen die Dateinamenerweiterung .bak auf. Wenn die durch den `Compile`-Elementtyp dargestellten Dateien oder die entsprechenden Sicherungsdateien nach dem Ausführen des Sicherungsziels nicht gelöscht oder geändert werden, wird das Sicherungsziel in nachfolgenden Builds übersprungen.  
+ Der durch den `Compile`-Elementtyp dargestellte Satz von Dateien wird in ein Sicherungsverzeichnis kopiert. Die Sicherungsdateien weisen die Dateierweiterung .bak auf. Wenn die durch den `Compile`-Elementtyp dargestellten Dateien oder die entsprechenden Sicherungsdateien nach dem Ausführen des Sicherungsziels nicht gelöscht oder geändert werden, wird das Sicherungsziel in nachfolgenden Builds übersprungen.  
   
 ## <a name="output-inference"></a>Ausgaberückschluss  
  MSBuild bestimmt durch Vergleich des `Inputs`-Attributs mit dem `Outputs`-Attribut eines Ziels, ob dieses ausgeführt werden muss. Idealerweise bleibt der nach einem inkrementellen Build vorhandene Satz von Dateien unabhängig davon gleich, ob die zugeordneten Ziele ausgeführt werden oder nicht. Da sich Eigenschaften und Elemente, die von Aufgaben erstellt oder geändert werden, auf den Build auswirken können, muss MSBuild deren Werte auch dann ableiten, wenn das Ziel, das sich auf sie auswirkt, übersprungen wird. Dies wird als *Ausgaberückschluss* bezeichnet.  
@@ -89,6 +83,3 @@ Inkrementelle Builds sind Buildvorgänge, die so optimiert werden, dass Ziele mi
   
 ## <a name="see-also"></a>Siehe auch  
  [Ziele](../msbuild/msbuild-targets.md)
-
-
-

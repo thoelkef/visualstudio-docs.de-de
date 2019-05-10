@@ -1,27 +1,25 @@
 ---
 title: Verwenden der CookieCutter-Vorlagen für Python
 description: Visual Studio unterstützt die grafische Cookiecutter-Erweiterung für die Ermittlung von Vorlagen für Python-Code und zum Erstellen von Projekten aus diesen Vorlagen.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-python
+ms.date: 01/28/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6ca47c1410fd11c32cbce95b9adc5a62c6c26dcf
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: eeea19b1d2ff4a4d24f27280a48b9ae673406908
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057190"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832154"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Verwenden der Cookiecutter-Erweiterung
 
-[Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) stellt eine grafische Benutzeroberfläche bereit, auf der Sie Vorlagen ermitteln, Vorlageoptionen eingeben und Projekte und Dateien erstellen können. Die Erweiterung ist im Lieferumfang von Visual Studio 2017 enthalten und kann separat in früheren Versionen von Visual Studio installiert werden.
+[Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) stellt eine grafische Benutzeroberfläche bereit, auf der Sie Vorlagen ermitteln, Vorlageoptionen eingeben und Projekte und Dateien erstellen können. Die Erweiterung ist im Lieferumfang von Visual Studio 2017 und höher enthalten und kann separat in früheren Versionen von Visual Studio installiert werden.
 
 Cookiecutter erfordert Python 3.3 oder höher (32-Bit oder 64-Bit) oder Anaconda 3 4.2 oder höher (32-Bit oder 64 Bit). Wenn kein geeigneter Python-Interpreter verfügbar ist, zeigt Visual Studio eine Warnung an. Wenn Sie einen Python-Interpreter installieren, während Visual Studio ausgeführt wird, klicken Sie auf der Symbolleiste von Cookiecutter auf die **Startschaltfläche**, um den neu installierten Interpreter zu erkennen. (Unter [Python-Umgebungen](managing-python-environments-in-visual-studio.md) finden Sie Informationen zu Umgebungen im Allgemeinen.)
 
@@ -61,7 +59,7 @@ Nachdem die Vorlage lokal installiert wurde, zeigt Cookiecutter eine Optionsseit
 
 ![Cookiecutter – Optionsseite](media/cookiecutter-template-options.png)
 
-Jede Cookiecutter-Vorlage definiert einen eigenen Satz von Optionen und legt einen Standardwert für jede Option fest (angezeigt als vorgeschlagener Text in den jeweiligen Eingabefeldern). Bei einem Standardwert kann es sich um einen Codeausschnitt handeln. Dies ist häufig bei dynamischen Werten der Fall, die weitere Optionen nutzen. 
+Jede Cookiecutter-Vorlage definiert einen eigenen Satz von Optionen und legt einen Standardwert für jede Option fest (angezeigt als vorgeschlagener Text in den jeweiligen Eingabefeldern). Bei einem Standardwert kann es sich um einen Codeausschnitt handeln. Dies ist häufig bei dynamischen Werten der Fall, die weitere Optionen nutzen.
 
 Es ist möglich, Standardwerte für bestimmte Optionen mithilfe einer Benutzerkonfigurationsdatei anzupassen. Wenn die Cookiecutter-Erweiterung eine Benutzerkonfigurationsdatei erkennt, werden die Standardwerte der Vorlage mit den Standardwerten der Benutzerkonfiguration überschrieben. Dieses Verhalten wird im Abschnitt [Benutzerkonfiguration](https://cookiecutter.readthedocs.io/en/latest/advanced/user_config.html) der Cookiecutter-Dokumentation erläutert.
 
@@ -189,7 +187,7 @@ Wenn Sie mehrere Argumente übergeben möchten, verwenden Sie ein Array. Wenn Si
 
 Argumente können auf andere Cookiecutter-Variablen verweisen. In den oben stehenden Beispielen wird die interne `_output_folder_path`-Variable verwendet, um einen absoluten Pfad zu den generierten Dateien zu bilden.
 
-Beachten Sie, dass der `Python.InstallProjectRequirements`-Befehl nur beim Hinzufügen von Dateien zu einem vorhandenen Projekt funktioniert. Diese Einschränkung besteht, weil der Befehl vom Python-Projekt im **Projektmappen-Explorer** verarbeitet wird und kein Projekt zum Empfangen der Meldung vorhanden ist, wenn Sie sich in der **Ordneransicht** des **Projektmappen-Explorers** befinden. Wir hoffen, diese Einschränkung in einer zukünftigen Version aufzuheben (und eine bessere Unterstützung der **Ordneransicht** im Allgemeinen zu ermöglichen).
+Beachten Sie, dass der `Python.InstallProjectRequirements`-Befehl nur beim Hinzufügen von Dateien zu einem vorhandenen Projekt funktioniert. Diese Einschränkung besteht, weil der Befehl vom Python-Projekt im **Projektmappen-Explorer** verarbeitet wird und kein Projekt zum Empfangen der Meldung vorhanden ist, wenn Sie sich in der  - **Ordneransicht** des **Projektmappen-Explorers** befinden. Wir hoffen, diese Einschränkung in einer zukünftigen Version aufzuheben (und eine bessere Unterstützung der **Ordneransicht** im Allgemeinen zu ermöglichen).
 
 ## <a name="troubleshooting"></a>Problembehandlung
 

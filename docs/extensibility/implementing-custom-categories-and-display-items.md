@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 178cd43486a9553f70853c9df0e106ac3ece78f1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: 124b1a1f5e6bbf0f07bf8533940820d4f5ca9247
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908435"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418843"
 ---
 # <a name="implement-custom-categories-and-display-items"></a>Implementieren Sie benutzerdefinierte Kategorien und Einblenden von Elementen
 Eine VSPackage kann Kontrolle über die Schriftarten und Farben des Texts zum Bereitstellen der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (IDE) über den benutzerdefinierten Kategorien und Anzeigeelemente.
@@ -51,7 +51,7 @@ Eine VSPackage kann Kontrolle über die Schriftarten und Farben des Texts zum Be
 
 - Füllen Sie die Registrierung mit zwei Werten:
 
-  |name|Typ|Daten|Beschreibung|
+  |Name|Typ|Daten|Beschreibung|
   |----------|----------|----------|-----------------|
   |Kategorie|REG_SZ|GUID|Eine GUID zum Identifizieren der Kategorie erstellt.|
   |Package|REG_SZ|GUID|Die GUID des VSPackage-Diensts, der die Kategorie unterstützt.|
@@ -66,7 +66,7 @@ Eine VSPackage kann Kontrolle über die Schriftarten und Farben des Texts zum Be
 
 - Füllen Sie die Registrierung mit zwei Werten:
 
-  |name|Typ|Daten|Beschreibung|
+  |Name|Typ|Daten|Beschreibung|
   |----------|----------|----------|-----------------|
   |Kategorie|REG_SZ|GUID|Eine GUID, die zur Identifizierung der Gruppe erstellt wird.|
   |Package|REG_SZ|GUID|Die GUID des Diensts, der die Kategorie unterstützt.|
@@ -81,24 +81,24 @@ Eine VSPackage kann Kontrolle über die Schriftarten und Farben des Texts zum Be
 
 - Die Methoden implementiert, über <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> müssen die IDE mit bereitstellen:
 
-  -   Listen von **Anzeigeelemente** in die **Kategorie.**
+  - Listen von **Anzeigeelemente** in die **Kategorie.**
 
-  -   Lokalisierbaren Namen für die **Anzeigeelemente**.
+  - Lokalisierbaren Namen für die **Anzeigeelemente**.
 
-  -   Anzeigen von Informationen für jeden Member des **Kategorie**.
+  - Anzeigen von Informationen für jeden Member des **Kategorie**.
 
   > [!NOTE]
-  >  Jede **Kategorie** muss mindestens einen enthalten **Anzeigeelement**.
+  > Jede **Kategorie** muss mindestens einen enthalten **Anzeigeelement**.
 
 - Die IDE verwendet das <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> Schnittstelle, um eine Kombination aus verschiedenen Kategorien zu definieren.
 
    Die Implementierung bietet die IDE mit:
 
-  -   Eine Liste mit den **Kategorien** , die eine bestimmte Gruppe enthalten.
+  - Eine Liste mit den **Kategorien** , die eine bestimmte Gruppe enthalten.
 
-  -   Zugriff auf Instanzen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> unterstützen jeweils **Kategorie** innerhalb der Gruppe.
+  - Zugriff auf Instanzen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> unterstützen jeweils **Kategorie** innerhalb der Gruppe.
 
-  -   Lokalisierbare Gruppennamen.
+  - Lokalisierbare Gruppennamen.
 
 - Aktualisieren die IDE:
 
@@ -109,18 +109,18 @@ Eine VSPackage kann Kontrolle über die Schriftarten und Farben des Texts zum Be
 ## <a name="to-handle-font-and-color-changes"></a>Behandeln von Schriftart- und farbänderungen an
  Um die farbliche Kennzeichnung von Text ordnungsgemäß zu unterstützen, die eine VSPackage anzeigt, der Farbgebung-Dienst unterstützt das VSPackage muss auf Antworten, die vom Benutzer initiierte Änderungen, die über die **Schriftarten und Farben** Seite "Eigenschaften". Eine VSPackage erledigt dies durch:
 
--   Behandeln von Ereignissen IDE generiert wurde durch die Implementierung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> Schnittstelle.
+- Behandeln von Ereignissen IDE generiert wurde durch die Implementierung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> Schnittstelle.
 
      Die IDE Ruft die entsprechende Methode, die folgenden Änderungen durch den Benutzer von der **Schriftarten und Farben** Seite. Beispielsweise ruft die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents.OnFontChanged%2A> Methode, wenn eine neue Schriftart ausgewählt ist.
 
      - oder - 
 
--   Abrufen der IDE Änderungen an.
+- Abrufen der IDE Änderungen an.
 
      Dies kann erfolgen über das System implementierter <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> Schnittstelle. Zwar in erster Linie für die Unterstützung von Persistenz der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> Methode kann verwendet werden, zum Abrufen von Informationen von Schriftart- und farbeinstellungen für **Anzeigeelemente**. Weitere Informationen finden Sie unter [gespeicherte Schriftart-und farbeinstellungen](../extensibility/accessing-stored-font-and-color-settings.md).
 
     > [!NOTE]
-    >  Um sicherzustellen, dass die Ergebnisse der Abfrage korrekt sind, es kann hilfreich sein, verwenden Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> Schnittstelle, um zu bestimmen, ob eine Entleerung des Cache und die Updates erforderlich sind, vor dem Aufrufen der Abrufmethoden, der die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> Schnittstelle.
+    > Um sicherzustellen, dass die Ergebnisse der Abfrage korrekt sind, es kann hilfreich sein, verwenden Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> Schnittstelle, um zu bestimmen, ob eine Entleerung des Cache und die Updates erforderlich sind, vor dem Aufrufen der Abrufmethoden, der die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> Schnittstelle.
 
 ## <a name="see-also"></a>Siehe auch
 

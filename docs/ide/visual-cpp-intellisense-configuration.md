@@ -1,25 +1,22 @@
 ---
 title: Konfigurieren eines C++-Projekts für IntelliSense
 ms.date: 10/08/2018
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: mblome
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3772c2c910188aacb675f267d20f5e0f16565001
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 188b1f8e96dca3ba76a9334f04156a1e30ededa9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836639"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62582604"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Konfigurieren eines C++-Projekts für IntelliSense
 
 In einigen Fällen müssen Sie Ihr C++-Projekt möglicherweise manuell konfigurieren, damit IntelliSense ordnungsgemäß funktioniert. Für MSBuild-Projekte (basierend auf VCXPROJ-Dateien) können Sie Einstellungen in den Projekteigenschaften anpassen. Für Nicht-MSBuild-Projekte passen Sie die Einstellungen in der Datei „CppProperties.json“ im Stammverzeichnis des Projekts an. In einigen Fällen müssen Sie möglicherweise eine Hinweisdatei erstellen, damit IntelliSense Makrodefinitionen besser verstehen kann. Die Visual Studio-IDE hilft Ihnen, IntelliSense-Probleme zu identifizieren und zu beheben.
-
-
 
 ## <a name="single-file-intellisense"></a>IntelliSense mit Einzeldatei
 
@@ -53,7 +50,7 @@ Weitere Informationen finden Sie unter [Vorgehensweise: Aktivieren von IntelliSe
 
 ### <a name="open-folder-projects"></a>Open Folder-Projekte
 
-Stellen Sie für CMake-Projekte sicher, dass die #include-Pfade für alle Konfigurationen in „CMakeLists.txt“ richtig angegeben werden. Andere Projekttypen erfordern möglicherweise eine Datei „CppProperties.json“. Weitere Informationen finden Sie unter [Konfigurieren von IntelliSense mit „CppProperties.json“](/cpp/ide/non-msbuild-projects#cppproperties). Stellen Sie sicher, dass die Pfade für jede Konfiguration richtig sind, die in der Datei definiert ist.
+Stellen Sie für CMake-Projekte sicher, dass die #include-Pfade für alle Konfigurationen in „CMakeLists.txt“ richtig angegeben werden. Andere Projekttypen erfordern möglicherweise eine Datei „CppProperties.json“. Weitere Informationen finden Sie unter [Konfigurieren von IntelliSense mit „CppProperties.json“](/cpp/build/open-folder-projects-cpp#configure-intellisense-and-browsing-hints-with-cpppropertiesjson). Stellen Sie sicher, dass die Pfade für jede Konfiguration richtig sind, die in der Datei definiert ist.
 
 Wenn ein Syntaxfehler in der Datei „CppProperties.json“ vorliegt, ist IntelliSense in den betroffenen Dateien fehlerhaft. Visual Studio zeigt den Fehler im Ausgabefenster an.
 
@@ -73,9 +70,9 @@ Dieses Problem manifestiert sich in Visual Studio häufig auf zweierlei Weise:
 
    ![Tagparser bietet an, eine vorhandene Funktion zu definieren](media/vcpp-intellisense-tag-parser-function.png)
 
-Um diese Art von Problemen zu beheben, fügen Sie dem Stammverzeichnis Ihres Lösungsverzeichnisses eine Datei namens **cpp.hint** hinzu. Weitere Informationen finden Sie unter [Hinweisdateien](/cpp/ide/hint-files).
+Um diese Art von Problemen zu beheben, fügen Sie dem Stammverzeichnis Ihres Lösungsverzeichnisses eine Datei namens **cpp.hint** hinzu. Weitere Informationen finden Sie unter [Hinweisdateien](/cpp/build/reference/hint-files).
 
-**Visual Studio 2017 Version 15.7**: Tagparserfehler werden im Fenster „Fehlerliste“ angezeigt.
+Tagparserfehler werden im Fenster **Fehlerliste** angezeigt.
 
 ## <a name="validate-project-settings-with-diagnostic-logging"></a>Überprüfen der Projekteinstellungen mit Diagnoseprotokollierung
 
@@ -108,7 +105,7 @@ In einigen Fällen kann es jedoch vorkommen, dass Visual Studio die IntelliSense
 
 ## <a name="troubleshooting-intellisense-build-failures"></a>Problembehandlung bei IntelliSense-Buildfehlern
 
-Ein IntelliSense-Build generiert zwar keine Binärdateien, kann aber trotzdem fehlschlagen. Eine mögliche Ursache für Fehler sind benutzerdefinierte PROPS- oder TARGET-Dateien. In Visual Studio 2017 Version 15.6 werden reine IntelliSense-Buildfehler im Ausgabefenster protokolliert. Legen sie zum Anzeigen dieser Fehler **Ausgabe anzeigen von** auf **Projektmappe** fest:
+Ein IntelliSense-Build generiert zwar keine Binärdateien, kann aber trotzdem fehlschlagen. Eine mögliche Ursache für Fehler sind benutzerdefinierte PROPS- oder TARGET-Dateien. In Visual Studio 2017 Version 15.6 und höher werden reine IntelliSense-Buildfehler im Ausgabefenster protokolliert. Legen sie zum Anzeigen dieser Fehler **Ausgabe anzeigen von** auf **Projektmappe** fest:
 
 ![Ausgabefenster für Projektmappenfehler](media/vcpp-intellisense-output-window.png)
 

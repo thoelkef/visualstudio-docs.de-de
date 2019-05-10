@@ -1,23 +1,25 @@
 ---
 title: Objektliste des Eigenschaftenfensters | Microsoft-Dokumentation
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, object list
 ms.assetid: 6c159c9d-345d-4b23-8ddd-9839d338b62f
-author: gregvanl
+caps.latest.revision: 13
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 5e014889613317f773a741b6e43e6f08e5494af5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: eccc7cfc432918a80723251a7b9a87ec4e13450d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868719"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909096"
 ---
 # <a name="properties-window-object-list"></a>Objektliste des Eigenschaftenfensters
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 In der Liste der **Eigenschaften** Fenster ist eine Dropdown-Liste, die Ihnen ermöglicht, ändern die Auswahl auf andere Objekte innerhalb von ein oder mehrere ausgewählte Windows zur Verfügung. Ein anderes Objekt aus, in der Liste auswählen, startet einen Aufruf an <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> um der Umgebung zu informieren, dass ein neues Objekt ausgewählt wurde. Die Informationen den **Eigenschaften** Fenster wird dann geändert, um das neu ausgewählte Objekt zugeordneten Eigenschaften anzuzeigen.  
   
 ## <a name="the-object-list"></a>Objektliste  

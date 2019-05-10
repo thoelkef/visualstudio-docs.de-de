@@ -1,20 +1,18 @@
 ---
 title: Generieren einer Konstruktorschnellaktion
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c6b267bee0c78de19ffa0d443f515375eeae949a
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: faef5f2420f4abd30ecec9151212b8a731736886
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62795211"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Generieren eines Konstruktors in Visual Studio
 
@@ -24,19 +22,19 @@ Diese Codegenerierung gilt für:
 
 - Visual Basic
 
-**Beschreibung**: Hiermit können Sie sofort den Code für einen neuen Konstruktor in einer Klasse generieren.
+**Beschreibung:** Hiermit können Sie sofort den Code für einen neuen Konstruktor in einer Klasse generieren.
 
-**Hintergrund**: Sie führen einen neuen Konstruktor ein, der ordnungsgemäß automatisch deklariert werden soll, oder ändern einen vorhandenen Konstruktor.
+**Hintergrund:** Sie führen einen neuen Konstruktor ein, der ordnungsgemäß automatisch deklariert werden soll, oder ändern einen vorhandenen Konstruktor.
 
 **Vorteile**: Sie können den Konstruktor vor der Verwendung zwar deklarieren, bei diesem Feature wird dieser jedoch automatisch mit den entsprechenden Parametern generiert. Darüber hinaus müssen durch das Ändern eines vorhandenen Konstruktors alle Aufrufsites aktualisiert werden, es sei denn, Sie aktualisieren diese automatisch mithilfe dieses Features.
 
 **Vorgehensweise**: Es gibt mehrere Möglichkeiten zum Generieren eines Konstruktors:
 
-   - [Generieren eines Konstruktors und Auswählen von Membern](#pick)
-   - [Generieren eines Konstruktors über ausgewählte Felder](#selection)
-   - [Generieren eines Konstruktors aus der neuen Verwendung](#usage)
-   - [Hinzufügen eines Parameters zu einem vorhandenen Konstruktor](#addparameter)
-   - [Erstellen und Initialisieren eines Felds bzw. einer Eigenschaft anhand eines Konstruktorparameters](#create)
+- [Generieren eines Konstruktors und Auswählen von Membern](#pick)
+- [Generieren eines Konstruktors über ausgewählte Felder](#selection)
+- [Generieren eines Konstruktors aus der neuen Verwendung](#usage)
+- [Hinzufügen eines Parameters zu einem vorhandenen Konstruktor](#addparameter)
+- [Erstellen und Initialisieren eines Felds bzw. einer Eigenschaft anhand eines Konstruktorparameters](#create)
 
 ## <a id = "pick"></a> Generieren eines Konstruktors und Auswählen von Membern (nur in C#)
 
@@ -50,7 +48,7 @@ Diese Codegenerierung gilt für:
       - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen.
    - **Maus**
       - Führen Sie einen Rechtsklick durch, und klicken Sie auf das Menü **Schnellaktionen und Refactorings**.
-      - Klicken Sie auf die Schaltfläche ![Glühbirnensymbol,](media/bulb-cs.png) das am linken Rand angezeigt wird, sofern der Textcursor bereits in der leeren Zeile in der Klasse platziert wurde.
+      - Klicken Sie auf die Schaltfläche ![Schraubendrehersymbol](media/screwdriver.png) das am linken Rand angezeigt wird, sofern der Textcursor bereits in der leeren Zeile in der Klasse platziert wurde.
 
    ![Vorschau der Aktion zum Generieren eines Konstruktors](media/constructor1-preview-cs.png)
 
@@ -81,7 +79,7 @@ Diese Codegenerierung gilt für:
       - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen.
    - **Maus**
       - Führen Sie einen Rechtsklick durch, und klicken Sie auf das Menü **Schnellaktionen und Refactorings**.
-      - Klicken Sie auf die Schaltfläche ![Glühbirnensymbol,](media/bulb-cs.png) das am linken Rand angezeigt wird, sofern der Textcursor bereits in der Zeile mit der Auswahl platziert wurde.
+      - Klicken Sie auf die Schaltfläche ![Schraubendrehersymbol](media/screwdriver.png) das am linken Rand angezeigt wird, sofern der Textcursor bereits in der Zeile mit der Auswahl platziert wurde.
 
       ![Vorschau der Aktion zum Generieren eines Konstruktors](media/constructor2-preview-cs.png)
 
@@ -109,8 +107,8 @@ Diese Codegenerierung gilt für:
       - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen.
    - **Maus**
       - Führen Sie einen Rechtsklick durch, und klicken Sie auf das Menü **Schnellaktionen und Refactorings**.
-      - Zeigen Sie auf die rote Wellenlinie, und klicken Sie auf das ![Glühbirnensymbol,](media/bulb-cs.png) das angezeigt wird.
-      - Klicken Sie auf die Schaltfläche ![Glühbirnensymbol,](media/bulb-cs.png) das am linken Rand angezeigt wird, sofern der Textcursor bereits in der Zeile mit der roten Wellenlinie platziert wurde.
+      - Zeigen Sie auf die rote Wellenlinie, und klicken Sie auf das ![Fehlerglühbirnensymbol](media/error-bulb.png) das angezeigt wird.
+      - Klicken Sie auf die Schaltfläche ![Fehlerglühbirnensymbol](media/error-bulb.png) das am linken Rand angezeigt wird, sofern der Textcursor bereits in der Zeile mit der roten Wellenlinie platziert wurde.
 
       ![Vorschau der Aktion zum Generieren eines Konstruktors](media/constructor-preview-cs.png)
 
@@ -143,8 +141,8 @@ Diese Codegenerierung gilt für:
       - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen.
    - **Maus**
       - Führen Sie einen Rechtsklick durch, und klicken Sie auf das Menü **Schnellaktionen und Refactorings**.
-      - Zeigen Sie auf die rote Wellenlinie, und klicken Sie auf das ![Glühbirnensymbol,](media/bulb-cs.png) das angezeigt wird.
-      - Klicken Sie auf die Schaltfläche ![Glühbirnensymbol,](media/bulb-cs.png) das am linken Rand angezeigt wird, sofern der Textcursor bereits in der Zeile mit der roten Wellenlinie platziert wurde.
+      - Zeigen Sie auf die rote Wellenlinie, und klicken Sie auf das ![Fehlerglühbirnensymbol](media/error-bulb.png) das angezeigt wird.
+      - Klicken Sie auf die Schaltfläche ![Fehlerglühbirnensymbol](media/error-bulb.png) das am linken Rand angezeigt wird, sofern der Textcursor bereits in der Zeile mit der roten Wellenlinie platziert wurde.
 
       ![Vorschau der Aktion zum Generieren eines Konstruktors](media/constructor4-preview-cs.png)
 
@@ -170,7 +168,7 @@ Sie können auch einer vorhandenen Methode einen Parameter hinzufügen. Weitere 
       - Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen.
    - **Maus**
       - Führen Sie einen Rechtsklick durch, und klicken Sie auf das Menü **Schnellaktionen und Refactorings**.
-      - Klicken Sie auf die Schaltfläche ![Glühbirnensymbol,](media/bulb-cs.png) das am linken Rand angezeigt wird, sofern der Textcursor bereits in der Zeile mit dem hinzugefügten Parameter platziert wurde.
+      - Klicken Sie auf die Schaltfläche ![Schraubendrehersymbol](media/screwdriver.png) das am linken Rand angezeigt wird, sofern der Textcursor bereits in der Zeile mit dem hinzugefügten Parameter platziert wurde.
 
    ![Vorschau der Aktion zum Generieren eines Konstruktors](media/constructor5-preview-cs.png)
 

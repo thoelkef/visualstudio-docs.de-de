@@ -1,8 +1,6 @@
 ---
 title: StartTrackingContext| Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 apiname:
 - StartTrackingContext
@@ -14,34 +12,36 @@ helpviewer_keywords:
 ms.assetid: 720cd295-38e7-4974-86db-b8106b1207ba
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b6cb8676f95ff86efbcfbe421872cf2d9a3f47c
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: c395df1e08f1b4e33e9cd34fec54bdd044f3b4c9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39150798"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939208"
 ---
 # <a name="starttrackingcontext"></a>StartTrackingContext
-Starten eines Nachverfolgungskontexts.  
-  
-## <a name="syntax"></a>Syntax  
-  
+Starten eines Nachverfolgungskontexts.
+
+## <a name="syntax"></a>Syntax
+
 ```cpp
-HRESULT WINAPI StartTrackingContext(LPCTSTR intermediateDirectory, LPCTSTR taskName);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- [in] `intermediateDirectory`  
- Das Verzeichnis, in dem das Nachverfolgungsprotokoll gespeichert werden soll  
-  
- [in] `taskName`  
- Identifiziert den Nachverfolgungskontext. Dieser Name wird verwendet, um den Protokolldateinamen zu erstellen.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Ein **HRESULT**, bei dem **SUCCEEDED** festgelegt ist, wenn der Nachverfolgungskontext erstellt wurde  
-  
-## <a name="requirements"></a>Anforderungen  
+HRESULT WINAPI StartTrackingContext(LPCTSTR intermediateDirectory, LPCTSTR taskName);
+```
+
+#### <a name="parameters"></a>Parameter
+[in] `intermediateDirectory`
+
+ Das Verzeichnis, in dem das Nachverfolgungsprotokoll gespeichert werden soll
+
+[in] `taskName`
+
+ Identifiziert den Nachverfolgungskontext. Dieser Name wird verwendet, um den Protokolldateinamen zu erstellen.
+
+## <a name="return-value"></a>Rückgabewert
+ Ein **HRESULT**, bei dem **SUCCEEDED** festgelegt ist, wenn der Nachverfolgungskontext erstellt wurde
+
+## <a name="requirements"></a>Anforderungen
  **Header:** *FileTracker.h*

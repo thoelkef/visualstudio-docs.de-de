@@ -1,14 +1,9 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, walkthrough
 - unit tests, creating
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 50d8190f386a4923fd05cbfaec137791bd9f2b5a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7fcea011f78688630a94cff64f9d2a627acea88c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874500"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408489"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,16 +47,16 @@ Diese exemplarische Vorgehensweise führt Sie durch das Erstellen, Ausführen un
   [Den Code mit Komponententests verbessern](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Use_unit_tests_to_improve_your_code)  
   
 > [!NOTE]
->  In dieser exemplarischen Vorgehensweise wird das Microsoft-Komponententest-Framework für verwalteten Code verwendet. Test-Explorer kann außerdem Tests von Drittanbieter-Komponententest-Frameworks ausführen, die über Adapter für Test-Explorer verfügen. Weitere Informationen finden Sie unter [Installieren von Frameworks für Komponententests von Drittanbietern](../test/install-third-party-unit-test-frameworks.md).  
+> In dieser exemplarischen Vorgehensweise wird das Microsoft-Komponententest-Framework für verwalteten Code verwendet. Test-Explorer kann außerdem Tests von Drittanbieter-Komponententest-Frameworks ausführen, die über Adapter für Test-Explorer verfügen. Weitere Informationen finden Sie unter [Installieren von Frameworks für Komponententests von Drittanbietern](../test/install-third-party-unit-test-frameworks.md).  
   
 > [!NOTE]
->  Informationen zum Ausführen von Tests über die Befehlszeile finden Sie unter [Exemplarische Vorgehensweise: Verwenden des Befehlszeilen-Testprogramms](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867).  
+> Informationen zum Ausführen von Tests über die Befehlszeile finden Sie unter [Exemplarische Vorgehensweise: Verwenden des Befehlszeilen-Testprogramms](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867).  
   
 ## <a name="prerequisites"></a>Vorraussetzungen  
   
--   Das Projekt "Bank". Weitere Informationen finden Sie unter [Beispielprojekt zum Erstellen von Komponententests](../test/sample-project-for-creating-unit-tests.md).  
+- Das Projekt "Bank". Weitere Informationen finden Sie unter [Beispielprojekt zum Erstellen von Komponententests](../test/sample-project-for-creating-unit-tests.md).  
   
-##  <a name="BKMK_Prepare_the_walkthrough"></a> Vorbereiten der exemplarischen Vorgehensweise  
+## <a name="BKMK_Prepare_the_walkthrough"></a> Vorbereiten der exemplarischen Vorgehensweise  
   
 1. Öffnen Sie Visual Studio.  
   
@@ -76,12 +71,12 @@ Diese exemplarische Vorgehensweise führt Sie durch das Erstellen, Ausführen un
 5. Geben Sie im Feld **Name** die Bezeichnung `Bank` , und klicken Sie dann auf **OK**.  
   
    > [!NOTE]
-   >  Wenn der Name "Bank" bereits verwendet wird, wählen Sie einen anderen Namen für das Projekt aus.  
+   > Wenn der Name "Bank" bereits verwendet wird, wählen Sie einen anderen Namen für das Projekt aus.  
   
     Das neue Bank-Projekt wird erstellt und im Projektmappen-Explorer angezeigt, wobei der Code-Editor mit der Datei Class1.cs geöffnet wird.  
   
    > [!NOTE]
-   >  Wenn die Datei Class1.cs nicht im Code-Editor geöffnet wird, doppelklicken Sie im Projektmappen-Explorer auf die Datei Class1.cs, um diese zu öffnen.  
+   > Wenn die Datei Class1.cs nicht im Code-Editor geöffnet wird, doppelklicken Sie im Projektmappen-Explorer auf die Datei Class1.cs, um diese zu öffnen.  
   
 6. Kopieren Sie den Quellcode aus dem [Beispielprojekt zum Erstellen von Komponententests](../test/sample-project-for-creating-unit-tests.md).  
   
@@ -112,28 +107,28 @@ public void Debit(double amount)
   
 ```  
   
-##  <a name="BKMK_Create_a_unit_test_project"></a> Ein Komponententestprojekt erstellen  
- **Voraussetzung**: Führen Sie die im Verfahren " [Prepare the walkthrough](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough)" angegebenen Schritte aus.  
+## <a name="BKMK_Create_a_unit_test_project"></a> Ein Komponententestprojekt erstellen  
+ **Erforderliche**: Führen Sie die Schritte im Verfahren [Vorbereiten der exemplarischen Vorgehensweise](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough).  
   
 #### <a name="to-create-a-unit-test-project"></a>So erstellen Sie ein Komponententestprojekt  
   
-1.  Wählen Sie im Menü **Datei** die Option **Hinzufügen**aus, und klicken Sie auf **Neues Projekt...**.  
+1. Wählen Sie im Menü **Datei** die Option **Hinzufügen**aus, und klicken Sie auf **Neues Projekt...**.  
   
-2.  Erweitern Sie im Dialogfeld "Neues Projekt" die Option **Installiert**und dann die Option **Visual C#**, und wählen Sie dann **Test**aus.  
+2. Erweitern Sie im Dialogfeld "Neues Projekt" die Option **Installiert**und dann die Option **Visual C#**, und wählen Sie dann **Test**aus.  
   
-3.  Wählen Sie in der Liste der Vorlagen **Komponententestprojekt**aus.  
+3. Wählen Sie in der Liste der Vorlagen **Komponententestprojekt**aus.  
   
-4.  Geben Sie in das Feld **Name** "BankTests" ein, und klicken Sie dann auf **OK**.  
+4. Geben Sie in das Feld **Name** "BankTests" ein, und klicken Sie dann auf **OK**.  
   
      Das Projekt **BankTests** wird der Projektmappe **Bank** hinzugefügt.  
   
-5.  Fügen Sie im Projekt **BankTests** einen Verweis auf die Projektmappe **Bank** ein.  
+5. Fügen Sie im Projekt **BankTests** einen Verweis auf die Projektmappe **Bank** ein.  
   
      Wählen Sie im Projektmappen-Explorer im Projekt **BankTests** die Option **Verweise** aus, und klicken Sie dann im Kontextmenü auf **Verweis hinzufügen** .  
   
-6.  Erweitern Sie im Dialogfeld "Verweis-Manager" den Eintrag **Projektmappe** , und überprüfen Sie das Element **Bank** .  
+6. Erweitern Sie im Dialogfeld "Verweis-Manager" den Eintrag **Projektmappe** , und überprüfen Sie das Element **Bank** .  
   
-##  <a name="BKMK_Create_the_test_class"></a> Die Testklasse erstellen  
+## <a name="BKMK_Create_the_test_class"></a> Die Testklasse erstellen  
  Zum Überprüfen der `BankAccount` -Klasse wird eine Testklasse benötigt. Sie können UnitTest1.cs verwenden, die von der Projektvorlage generiert wurde, doch Datei und Klasse sollten einen aussagekräftigeren Namen erhalten. Sie können das in einem Schritt erledigen, indem Sie die Datei im Projektmappen-Explorer umbenennen.  
   
  **Umbenennen einer Klassendatei**  
@@ -168,7 +163,7 @@ namespace BankTests
 using BankAccountNS;  
 ```  
   
-###  <a name="BKMK_Test_class_requirements"></a> Testklassenanforderungen  
+### <a name="BKMK_Test_class_requirements"></a> Testklassenanforderungen  
  Die Mindestanforderungen für eine Testklasse sind die folgenden:  
   
 - Im Microsoft-Komponententest-Framework für verwalteten Code ist das `[TestClass]` -Attribut für jede Klasse erforderlich, die in Test-Explorer auszuführende Komponententestmethoden enthält.  
@@ -177,12 +172,12 @@ using BankAccountNS;
   
   Ein Komponententestprojekt kann auch über andere Klassen ohne das `[TestClass]` -Attribut verfügen, und Testklassen können andere Methoden ohne das `[TestMethod]` -Attribut aufweisen. Sie können diese anderen Klassen und Methoden in den Testmethoden verwenden.  
   
-##  <a name="BKMK_Create_the_first_test_method"></a> Die erste Testmethode erstellen  
+## <a name="BKMK_Create_the_first_test_method"></a> Die erste Testmethode erstellen  
  In dieser Vorgehensweise schreiben Sie Komponententestmethoden, um das Verhalten der `Debit` -Methode der `BankAccount` -Klasse zu überprüfen. Die Methode ist weiter oben aufgeführt.  
   
  Anhand der Analyse der zu testenden Methode bestimmen Sie, dass mindestens drei Verhaltensweisen überprüft werden müssen:  
   
-1. Löst die Methode [ArgumentOutOfRangeException] (<!-- TODO: review code entity reference <xref:assetId:///ArgumentOutOfRangeException?qualifyHint=False&amp;autoUpgrade=True>  -->) Wenn der abbuchungsbetrag größer ist als das Guthaben ist.  
+1. Löst die Methode ein [ArgumentOutOfRangeException])<!-- TODO: review code entity reference <xref:assetId:///ArgumentOutOfRangeException?qualifyHint=False&amp;autoUpgrade=True>  -->), wenn der abbuchungsbetrag größer ist als das Guthaben ist.  
   
 2. Außerdem löst sie eine `ArgumentOutOfRangeException` aus, wenn der Abbuchungsbetrag kleiner als null ist.  
   
@@ -218,28 +213,28 @@ using BankAccountNS;
   
    Die Methode ist recht einfach. Sie richten ein neues `BankAccount` -Objekt mit einem Startguthaben ein und buchen dann einen gültigen Betrag ab. Sie verwenden die <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A> -Methode des Microsoft-Komponententest-Frameworks für verwalteten Code, um sicherzustellen, dass das Guthaben zum Schluss wie erwartet ausfällt.  
   
-###  <a name="BKMK_Test_method_requirements"></a> Testmethodenanforderungen  
+### <a name="BKMK_Test_method_requirements"></a> Testmethodenanforderungen  
  Eine Testmethode muss die folgenden Anforderungen erfüllen:  
   
--   Die Methode muss mit dem `[TestMethod]` -Attribut ausgestattet sein.  
+- Die Methode muss mit dem `[TestMethod]` -Attribut ausgestattet sein.  
   
--   Die Methode muss `void`zurückgeben.  
+- Die Methode muss `void`zurückgeben.  
   
--   Die Methode darf keine Parameter aufweisen.  
+- Die Methode darf keine Parameter aufweisen.  
   
-##  <a name="BKMK_Build_and_run_the_test"></a> Den Test erstellen und ausführen  
+## <a name="BKMK_Build_and_run_the_test"></a> Den Test erstellen und ausführen  
   
 #### <a name="to-build-and-run-the-test"></a>So erstellen Sie den Test und führen ihn aus  
   
-1.  Wählen Sie im Menü **Erstellen** die Option **Projektmappe erstellen**.  
+1. Wählen Sie im Menü **Erstellen** die Option **Projektmappe erstellen**.  
   
      Wenn keine Fehler auftreten, wird das UnitTestExplorer-Fenster geöffnet, und in der Gruppe **Nicht ausgeführte Tests** wird **Debit_WithValidAmount_UpdatesBalance** aufgelistet. Wenn Test-Explorer nach einem erfolgreichen Build nicht angezeigt wird, wählen Sie im Menü **Testen** aus, wählen Sie **Fenster**aus, und wählen Sie dann  **Test-Explorer**aus.  
   
-2.  Wählen Sie **Alle ausführen** aus, um den Test auszuführen. Während der Test ausgeführt wird, gibt die Statusleiste am oberen Fensterrand den aktuellen Status an. Am Ende des Testlaufs wird die Leiste grün, wenn alle Tests erfolgreich sind, oder rot, sofern bei einem der Tests ein Fehler auftritt.  
+2. Wählen Sie **Alle ausführen** aus, um den Test auszuführen. Während der Test ausgeführt wird, gibt die Statusleiste am oberen Fensterrand den aktuellen Status an. Am Ende des Testlaufs wird die Leiste grün, wenn alle Tests erfolgreich sind, oder rot, sofern bei einem der Tests ein Fehler auftritt.  
   
-3.  In diesem Fall schlägt der Test fehl. Die Testmethode wird in die Gruppe **Tests mit Fehlern** aufgelistet. Wählen Sie die Methode im Test-Explorer aus, um die Details unten im Fenster anzuzeigen.  
+3. In diesem Fall schlägt der Test fehl. Die Testmethode wird in die Gruppe **Tests mit Fehlern** aufgelistet. Wählen Sie die Methode im Test-Explorer aus, um die Details unten im Fenster anzuzeigen.  
   
-##  <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Den Code korrigieren und die Tests erneut ausführen  
+## <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Den Code korrigieren und die Tests erneut ausführen  
  **Analysieren der Testergebnisse**  
   
  Das Testergebnis enthält eine Meldung mit der Fehlerbeschreibung. Bei der `AreEquals`-Methode wird in der Meldung angezeigt, was erwartet wurde (Parameter <strong>Expected\<*XXX*></strong>) und was tatsächlich gefunden wurde (Parameter **Actual\<*YYY*>**). Erwartet wurde, dass das neue Guthaben geringer ist als das Startguthaben. Stattdessen hat es sich um den Betrag der Abbuchung vergrößert.  
@@ -264,7 +259,7 @@ m_balance -= amount;
   
  Wählen Sie im Test-Explorer **Alle ausführen** aus, um den Test erneut auszuführen. Die Statusleiste wird grün, und der Test wird in die Gruppe **Bestandene Tests** verschoben.  
   
-##  <a name="BKMK_Use_unit_tests_to_improve_your_code"></a> Den Code mit Komponententests verbessern  
+## <a name="BKMK_Use_unit_tests_to_improve_your_code"></a> Den Code mit Komponententests verbessern  
  In diesem Abschnitt wird beschrieben, wie ein iterativer Prozess bestehend aus Analyse, Komponententestentwicklung und Umgestaltung helfen kann, die Robustheit und Effektivität des Produktionscodes zu verbessern.  
   
  **Analysieren der Probleme**  
@@ -423,6 +418,3 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 ```  
   
  In diesem letzten Abschnitt hat die Verbesserung des Testcodes zu robusteren und informativeren Testmethoden geführt. Noch wichtiger ist jedoch, dass die zusätzliche Analyse auch zu besserem Code im zu testenden Projekt geführt hat.
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Seite „Kompilieren“, Projekt-Designer (Visual Basic) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesCompile
 helpviewer_keywords:
@@ -23,18 +18,17 @@ ms.assetid: b2a80230-906e-4e85-b3e0-fcd9c40426e1
 caps.latest.revision: 65
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4b369b1aa8d9e6857b29a5c37d13169b2e21ea74
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e0352f98fe4d053f8c90d1b2c8f910e73cde23a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441501"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Seite "Kompilieren", Projekt-Designer (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Verwenden Sie die Seite **Kompilieren** des Projekt-Designers, um Kompilieranweisungen festzulegen. Sie können auch erweiterte Compileroptionen und Präbuild- oder Postbuildereignisse auf dieser Seite angeben.  
   
  Um auf die Seite **Kompilieren** zuzugreifen, wählen Sie einen Projektknoten (nicht den Knoten **Projektmappe**) im **Projektmappen-Explorer**. Wählen Sie dann in der Menüleiste die Option **Projekt** und dann **Eigenschaften** aus. Sobald der Projekt-Designer angezeigt wird, klicken Sie auf die Registerkarte **Veröffentlichen**.  
@@ -45,21 +39,21 @@ Verwenden Sie die Seite **Kompilieren** des Projekt-Designers, um Kompilieranwei
  Die folgenden Eigenschaften ermöglichen es Ihnen, die anzuzeigende bzw. zu ändernde Konfiguration und Plattform auszuwählen.  
   
 > [!NOTE]
->  Mit vereinfachten Buildkonfigurationen bestimmt das Projektsystem, ob eine Debug- oder eine Releaseversion erstellt werden soll. Deshalb werden die Listen **Konfiguration** und **Plattform** nicht angezeigt. Weitere Informationen finden Sie unter [Debug- und Releaseprojektkonfigurationen](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+> Mit vereinfachten Buildkonfigurationen bestimmt das Projektsystem, ob eine Debug- oder eine Releaseversion erstellt werden soll. Deshalb werden die Listen **Konfiguration** und **Plattform** nicht angezeigt. Weitere Informationen finden Sie unter [Debug- und Releaseprojektkonfigurationen](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  **Konfiguration**  
- Gibt an, welche Konfigurationseinstellungen angezeigt oder geändert werden sollen. Die Einstellungen sind **Debuggen** (Standard), **Freigeben** oder **Alle Konfigurationen**. Weitere Informationen finden Sie unter [Debug- und Releaseprojektkonfigurationen](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e) und [Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen](../../ide/how-to-create-and-edit-configurations.md).  
+ Gibt an, welche Konfigurationseinstellungen angezeigt oder geändert werden sollen. Die Einstellungen sind **Debuggen** (Standard), **Freigeben** oder **Alle Konfigurationen**. Weitere Informationen finden Sie unter [Debug- und Releaseprojektkonfigurationen](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) und [Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen](../../ide/how-to-create-and-edit-configurations.md).  
   
  **Plattform**  
- Gibt an, welche Plattformeinstellungen angezeigt oder geändert werden sollen. Sie können **Beliebige CPU** (Standard), **x64** oder **x86** angeben. Weitere Informationen finden Sie unter [Debug- und Releaseprojektkonfigurationen](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Gibt an, welche Plattformeinstellungen angezeigt oder geändert werden sollen. Sie können **Beliebige CPU** (Standard), **x64** oder **x86** angeben. Weitere Informationen finden Sie unter [Debug- und Releaseprojektkonfigurationen](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
 ## <a name="compiler-configuration-options"></a>Compilerkonfigurationsoptionen  
  Mithilfe der folgenden Einstellungen können Sie die Compilerkonfigurationsoptionen festlegen.  
   
  **Ausgabepfad erstellen**  
- Legt den Speicherort der Ausgabedateien für die Konfiguration des Projekts fest. Geben Sie den Pfad der Buildausgabe in dieses Feld ein, oder klicken Sie auf die Schaltfläche **Durchsuchen**, um einen Pfad auszuwählen. Beachten Sie, dass der Pfad relativ ist. Bei der Eingabe eines absoluten Pfads wird dieser als relativer Pfad gespeichert. Der Standardpfad lautet „bin\Debug\ oder bin\Release\\“. Weitere Informationen finden Sie unter [Debug- und Releaseprojektkonfigurationen](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Legt den Speicherort der Ausgabedateien für die Konfiguration des Projekts fest. Geben Sie den Pfad der Buildausgabe in dieses Feld ein, oder klicken Sie auf die Schaltfläche **Durchsuchen**, um einen Pfad auszuwählen. Beachten Sie, dass der Pfad relativ ist. Bei der Eingabe eines absoluten Pfads wird dieser als relativer Pfad gespeichert. Der Standardpfad lautet „bin\Debug\ oder bin\Release\\“. Weitere Informationen finden Sie unter [Debug- und Releaseprojektkonfigurationen](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
- Mit vereinfachten Buildkonfigurationen bestimmt das Projektsystem, ob eine Debug- oder eine Releaseversion erstellt werden soll. Mit dem Befehl **Erstellen** im Menü **Debuggen** (F5) wird der Build unabhängig vom angegebenen **Ausgabepfad** am Debugspeicherort abgelegt. Mit dem Befehl **Erstellen** im Menü **Erstellen** hingegen wird er an dem Speicherort abgelegt, den Sie angeben. Weitere Informationen finden Sie unter [Debug- und Releaseprojektkonfigurationen](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Mit vereinfachten Buildkonfigurationen bestimmt das Projektsystem, ob eine Debug- oder eine Releaseversion erstellt werden soll. Mit dem Befehl **Erstellen** im Menü **Debuggen** (F5) wird der Build unabhängig vom angegebenen **Ausgabepfad** am Debugspeicherort abgelegt. Mit dem Befehl **Erstellen** im Menü **Erstellen** hingegen wird er an dem Speicherort abgelegt, den Sie angeben. Weitere Informationen finden Sie unter [Debug- und Releaseprojektkonfigurationen](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  **Option Explicit**  
  Gibt an, ob implizite Deklaration von Variablen zugelassen werden. Wählen Sie **Ein**, um die explizite Variablendeklaration festzulegen. Dadurch meldet der Compiler Fehler, wenn Variablen nicht deklariert werden, bevor sie verwendet werden. Wählen Sie **Aus**, um implizite Deklaration von Variablen zuzulassen.  
@@ -175,11 +169,8 @@ Verwenden Sie die Seite **Kompilieren** des Projekt-Designers, um Kompilieranwei
   Klicken Sie auf diese Schaltfläche, um auf das Dialogfeld **Erweiterte Compileroptionen** zuzugreifen. Verwenden Sie das Dialogfeld **Erweiterte Compilereinstellungen**, um die erweiterten Buildkonfigurationseigenschaften des Projekts anzugeben. Dieses Dialogfeld gilt nur für Visual Basic-Projekte. Weitere Informationen finden Sie im [Dialogfeld „Erweiterte Compilereinstellungen“ (Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Debug- und Release-Projektkonfigurationen](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)   
- [Verwalten von Kompilierungseigenschaften](http://msdn.microsoft.com/en-us/94308881-f10f-4caf-a729-f1028e596a2c)   
+ [Debug- und Release-Projektkonfigurationen](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)   
+ [Verwalten von Kompilierungseigenschaften](http://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
  [Vorgehensweise: Festlegen von Buildereignissen (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
  [Visual Basic-Befehlszeilencompiler](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)   
- [Gewusst wie: Erstellen und Bearbeiten von Konfigurationen](../../ide/how-to-create-and-edit-configurations.md)
-
-
-
+ [Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen](../../ide/how-to-create-and-edit-configurations.md)

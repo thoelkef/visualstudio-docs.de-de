@@ -1,32 +1,33 @@
 ---
 title: 'Idiaenumdebugstreams:: Next | Microsoft-Dokumentation'
-ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaEnumDebugStreams::Next method
 ms.assetid: eb8eae5a-be27-45f4-a7bd-6e4ef0652385
-author: mikejo5000
+caps.latest.revision: 10
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: acd95d68ed32e5bb9116123f4cbdfd9d30e26f16
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: a1b7819c90804933795c220c4d47f288d29abfe1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220451"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838297"
 ---
 # <a name="idiaenumdebugstreamsnext"></a>IDiaEnumDebugStreams::Next
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Ruft eine angegebene Anzahl von Debug-Streams in der Enumerationsfolge ab.  
   
 ## <a name="syntax"></a>Syntax  
   
-```C++  
+```cpp#  
 HRESULT Next (   
    ULONG                     celt,   
    IDiaEnumDebugStreamData** rgelt,  
@@ -45,7 +46,7 @@ HRESULT Next ( 
  [out] Gibt die Anzahl der Debug-Streams zurückgegeben.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` Wenn sind keine weitere Datenströme. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn sind keine weitere Datenströme. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

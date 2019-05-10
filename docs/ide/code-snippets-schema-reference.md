@@ -1,7 +1,6 @@
 ---
 title: Schemareferenz für Codeausschnitte
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+ms.date: 02/25/2019
 ms.topic: reference
 helpviewer_keywords:
 - schema reference [Visual Studio]
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e16df68ef36ee38b20be4da0150ca6550cd3644
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 034fd1f31b24dce2d8ecc3d805b78c35c8498d6c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974981"
 ---
 # <a name="code-snippets-schema-reference"></a>Schemareferenz für Codeausschnitte
 
@@ -118,6 +117,7 @@ Für dieses Codeelement sind drei Attribute verfügbar:
    |`CPP`|Bezeichnet einen C++-Codeausschnitt.|
    |`XML`|Bezeichnet einen XML-Codeausschnitt.|
    |`JavaScript`|Bezeichnet einen JavaScript-Codeausschnitt.|
+   |`TypeScript`|Bezeichnet einen TypeScript-Codeausschnitt.|
    |`SQL`|Bezeichnet einen SQL-Codeausschnitt.|
    |`HTML`|Bezeichnet einen HTML-Codeausschnitt.|
 
@@ -320,9 +320,6 @@ Ein Textwert ist erforderlich. Dieser Text bezeichnet den eindeutigen Bezeichner
 
 Gibt die importierten Namespaces an, die von einem IntelliSense-Codeausschnitt verwendet werden.
 
-> [!NOTE]
-> Das `Import`-Element wird nur für Visual Basic-Projekte unterstützt.
-
 ```xml
 <Import>
     <Namespace>... </Namespace>
@@ -340,9 +337,6 @@ Gibt die importierten Namespaces an, die von einem IntelliSense-Codeausschnitt v
 ## <a name="imports-element"></a>Imports-Element
 
 Gruppiert einzelne `Import`-Elemente.
-
-> [!NOTE]
-> Das `Imports`-Element wird nur für Visual Basic-Projekte unterstützt.
 
 ```xml
 <Imports>
@@ -425,10 +419,7 @@ Literale und Objekte können kein **ID**-Element mit dem Wert „selected“ ode
 
 ## <a name="namespace-element"></a>Namespace-Element
 
-Gibt den Namespace an, der für die Kompilierung und Ausführung des Codeausschnitts importiert werden muss. Der im `Namespace`-Element angegebene Namespace wird automatisch einer `Imports`-Anweisung am Anfang des Codes hinzugefügt, sofern er nicht bereits vorhanden ist.
-
-> [!NOTE]
-> Das `Namespace`-Element wird nur für Visual Basic-Projekte unterstützt.
+Gibt den Namespace an, der für die Kompilierung und Ausführung des Codeausschnitts importiert werden muss. Der im `Namespace`-Element angegebene Namespace wird automatisch einer `using`- oder `Imports`-Anweisung am Anfang des Codes hinzugefügt, sofern er nicht bereits vorhanden ist.
 
 ```xml
 <Namespace>
@@ -547,7 +538,7 @@ Gibt die Verweise, Importe, Deklarationen und den Code für den Codeausschnitt a
 |[Code-Element](../ide/code-snippets-schema-reference.md#code-element)|Erforderliches Element. Gibt den Code an, den Sie in eine Dokumentationsdatei einfügen möchten. Es muss genau ein `Code`-Element in einem `Snippet`-Element vorhanden sein.|
 |[Declarations-Element](../ide/code-snippets-schema-reference.md#declarations-element)|Optionales Element. Gibt die Literale und Objekte an, die die bearbeitbaren Teile eines Codeausschnitts darstellen. Ein `Declarations`-Element kann kein oder ein `Snippet`-Element enthalten.|
 |[Imports-Element](../ide/code-snippets-schema-reference.md#imports-element)|Optionales Element. Gruppiert einzelne `Import`-Elemente. Ein `Imports`-Element kann kein oder ein `Snippet`-Element enthalten.|
-||Optionales Element. Gruppiert einzelne `Reference`-Elemente. Ein `References`-Element kann kein oder ein `Snippet`-Element enthalten.|
+|[References-Element](../ide/code-snippets-schema-reference.md#references-element)|Optionales Element. Gruppiert einzelne `Reference`-Elemente. Ein `References`-Element kann kein oder ein `Snippet`-Element enthalten.|
 
 |Übergeordnetes Element|Beschreibung|
 | - |-----------------|
@@ -569,11 +560,11 @@ Gibt an, wie Visual Studio den Codeausschnitt einfügt.
 
 Der Textwert muss einer der folgenden Werte sein:
 
--   `SurroundsWith`: Der Codeausschnitt kann ein ausgewähltes Codeelement umschließen.
+- `SurroundsWith`: Der Codeausschnitt kann ein ausgewähltes Codeelement umschließen.
 
--   `Expansion`: Der Codeausschnitt kann an der Cursorposition eingefügt werden.
+- `Expansion`: Der Codeausschnitt kann an der Cursorposition eingefügt werden.
 
--   `Refactoring`: Der Codeausschnitt wird während des C#-Refactorings verwendet. `Refactoring` kann in benutzerdefinierten Codeausschnitten nicht verwendet werden.
+- `Refactoring`: Der Codeausschnitt wird während des C#-Refactorings verwendet. `Refactoring` kann in benutzerdefinierten Codeausschnitten nicht verwendet werden.
 
 ## <a name="snippettypes-element"></a>SnippetTypes-Element
 

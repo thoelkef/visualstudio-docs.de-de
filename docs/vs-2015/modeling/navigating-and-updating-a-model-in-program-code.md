@@ -1,25 +1,22 @@
 ---
 title: Navigieren in und Aktualisieren eines Modells im Programmcode | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 ms.assetid: 1427ae91-be8a-4ce7-85df-00038faa2cbb
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6707f585e8f432a96c2a8cdeef06acb9e903c58e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 260d726ef9f6478292fe80c7fd90ffc4a807265d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863164"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110803"
 ---
 # <a name="navigating-and-updating-a-model-in-program-code"></a>Navigieren in und Aktualisieren von Modellen im Programmcode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,9 +54,9 @@ Sie können Code zum Erstellen und Löschen von Modellelementen, legen Sie deren
   
  [DocView- und docdata-Objekt](#docdata)  
   
- Formen, Konnektoren und Diagrammen und ihre Beziehungen zu Modellelementen werden in einem separaten Thema beschrieben. Weitere Informationen finden Sie unter [wie: Navigieren in und aktualisieren ein Diagramms](../misc/how-to-navigate-and-update-a-diagram.md).  
+ Formen, Konnektoren und Diagrammen und ihre Beziehungen zu Modellelementen werden in einem separaten Thema beschrieben. Weitere Informationen finden Sie unter [Vorgehensweise: Navigieren in und aktualisieren ein Diagramms](../misc/how-to-navigate-and-update-a-diagram.md).  
   
-##  <a name="example"></a> Eine Beispiel-DSL-Definition  
+## <a name="example"></a> Eine Beispiel-DSL-Definition  
  Dies ist der Hauptteil der "DslDefinition.DSL" für die Beispiele in diesem Thema:  
   
  ![DSL-Definitionsdiagramm &#45; stammstrukturmodell](../modeling/media/familyt-person.png "FamilyT_Person")  
@@ -79,7 +76,7 @@ Sie können Code zum Erstellen und Löschen von Modellelementen, legen Sie deren
   
  Wenn Sie den Code in einem anderen Projekt als dem Schreiben in denen DSL definiert ist, sollten Sie darüber hinaus die Assembly importieren, die von der Dsl-Projekt erstellt wird.  
   
-##  <a name="navigation"></a> Navigieren Sie in das Modell  
+## <a name="navigation"></a> Navigieren Sie in das Modell  
   
 ### <a name="properties"></a>Eigenschaften  
  Domäneneigenschaften, die Sie in der DSL-Definition zu definieren, werden Eigenschaften, die Sie im Programmcode zugreifen können:  
@@ -146,7 +143,7 @@ Sie können Code zum Erstellen und Löschen von Modellelementen, legen Sie deren
   
  `store.ElementDirectory.GetElement(elementId);`  
   
-##  <a name="metadata"></a> Zugreifen auf Klasseninformationen  
+## <a name="metadata"></a> Zugreifen auf Klasseninformationen  
  Sie erhalten Informationen über die Klassen, Beziehungen und andere Aspekte der DSL-Definition. Zum Beispiel:  
   
  `DomainClassInfo personClass = henry.GetDomainClass();`  
@@ -163,11 +160,11 @@ Sie können Code zum Erstellen und Löschen von Modellelementen, legen Sie deren
   
  Die übergeordneten Klassen von Modellelementen lauten wie folgt aus:  
   
--   Der ModelElement - alle Elemente und Beziehungen werden ModelElements  
+- Der ModelElement - alle Elemente und Beziehungen werden ModelElements  
   
--   ElementLink - sind alle Beziehungen ElementLinks  
+- ElementLink - sind alle Beziehungen ElementLinks  
   
-##  <a name="transaction"></a> Nehmen Sie Änderungen innerhalb einer Transaktion  
+## <a name="transaction"></a> Nehmen Sie Änderungen innerhalb einer Transaktion  
  Änderung des Programm-Codes in den Store, muss dies innerhalb einer Transaktion erfolgen. Dies gilt für alle Modellelementen, Beziehungen, Formen, Diagramme und ihre Eigenschaften. Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.Modeling.Transaction>.  
   
  Die einfachste Methode der Verwaltung einer Transaktion wird mit einem `using` -Anweisung eingeschlossen werden, einem `try...catch` Anweisung:  
@@ -200,7 +197,7 @@ catch (Exception ex)
   
  Um die Änderungen permanent zu machen, sollten Sie `Commit` der Transaktion, bevor es verworfen wird. Wenn eine Ausnahme, die innerhalb der Transaktion nicht abgefangen wird auftritt, wird der Store in dem Zustand vor der Änderungen zurückgesetzt.  
   
-##  <a name="elements"></a> Erstellen von Modellelementen  
+## <a name="elements"></a> Erstellen von Modellelementen  
  In diesem Beispiel fügt ein Element zu einem vorhandenen Modell:  
   
 ```  
@@ -233,38 +230,38 @@ using (Transaction t =
   
   Wenn Sie ein Element auf diese Weise erstellen, wird eine Form (wenn die DSL ein Diagramm verfügt) automatisch erstellt. Er wird in einen automatisch zugewiesenen Speicherort mit Standardform, Farbe und andere Funktionen. Wenn Sie möchten steuern, wo und wie die zugeordnete Form angezeigt wird, finden Sie unter [erstellen ein Element und seine Form](#merge).  
   
-##  <a name="links"></a> Erstellen von Beziehungslinks  
+## <a name="links"></a> Erstellen von Beziehungslinks  
  Es gibt zwei Beziehungen, die in der Beispiel-DSL-Definition definiert. Jede Beziehung definiert eine *Rolleneigenschaft* für die Klasse an beiden Enden der Beziehung.  
   
  Es gibt drei Möglichkeiten, die in denen Sie eine Instanz einer Beziehung erstellen können. Jede dieser drei Methoden hat dieselbe Wirkung:  
   
 - Legen Sie die Eigenschaft des der quellrolleninhaber. Zum Beispiel:  
   
-  -   `familyTree.People.Add(edward);`  
+  - `familyTree.People.Add(edward);`  
   
-  -   `edward.Parents.Add(henry);`  
+  - `edward.Parents.Add(henry);`  
   
 - Legen Sie die Eigenschaft des der Zielrolleninhaber. Zum Beispiel:  
   
-  -   `edward.familyTreeModel = familyTree;`  
+  - `edward.familyTreeModel = familyTree;`  
   
        Die Multiplizität dieser Rolle ist `1..1`, sodass wir den Wert zuzuweisen.  
   
-  -   `henry.Children.Add(edward);`  
+  - `henry.Children.Add(edward);`  
   
        Die Multiplizität dieser Rolle ist `0..*`, also fügen wir der Auflistung hinzu.  
   
 - Erstellen Sie explizit eine Instanz der Beziehung. Zum Beispiel:  
   
-  -   `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`  
+  - `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`  
   
-  -   `ParentsHaveChildren edwardHenryLink = new ParentsHaveChildren(henry, edward);`  
+  - `ParentsHaveChildren edwardHenryLink = new ParentsHaveChildren(henry, edward);`  
   
   Die letzte Methode ist nützlich, wenn Sie Eigenschaften für die Beziehung selbst festlegen möchten.  
   
   Wenn Sie ein Element auf diese Weise erstellen, ein Connector im Diagramm wird automatisch erstellt, aber es verfügt über eine Standardform, Farbe und andere Funktionen. Um zu steuern, wie die zugeordnete Connector erstellt wird, finden Sie unter [erstellen ein Element und seine Form](#merge).  
   
-##  <a name="deleteelements"></a> Löschen von Elementen  
+## <a name="deleteelements"></a> Löschen von Elementen  
  Löschen eines Elements durch den Aufruf `Delete()`:  
   
  `henry.Delete();`  
@@ -287,7 +284,7 @@ using (Transaction t =
   
   In einigen Fällen wird ein Löschen verhindert, durch das Vorhandensein einer Sperre, die auf das Element oder auf ein Element, das von der Verteilung gelöscht werden würde. Sie können `element.CanDelete()` zu überprüfen, ob das Element gelöscht werden kann.  
   
-##  <a name="deletelinks"></a> Löschen von Beziehungslinks  
+## <a name="deletelinks"></a> Löschen von Beziehungslinks  
  Sie können einen Beziehungslink löschen, durch das Entfernen eines Elements aus einer Rolleneigenschaft:  
   
  `henry.Children.Remove(edward); // or:`  
@@ -306,7 +303,7 @@ using (Transaction t =
   
  `edward.FamilyTreeModel = anotherFamilyTree;`  
   
-##  <a name="reorder"></a> Die Reihenfolge von Links einer Beziehung  
+## <a name="reorder"></a> Die Reihenfolge von Links einer Beziehung  
  Die Links von einer bestimmten Beziehung, die Quelle oder Ziel auf einem bestimmten Modellelement müssen eine bestimmte Reihenfolge. Sie werden in der Reihenfolge, in der sie hinzugefügt wurden. Diese Anweisung ergibt z. B. immer die untergeordneten Elemente in der gleichen Reihenfolge:  
   
  `foreach (Person child in henry.Children) ...`  
@@ -323,12 +320,12 @@ using (Transaction t =
   
  `link.MoveBefore(role, nextLink);`  
   
-##  <a name="locks"></a> Sperren  
+## <a name="locks"></a> Sperren  
  Ihre Änderungen möglicherweise durch eine Sperre verhindert werden. Sperren können für einzelne Elemente, Partitionen und im Speicher festgelegt werden. Wenn einer dieser Ebenen verfügt eine Sperre, die verhindert, dass die Art der Änderung, die Sie vornehmen möchten, möglicherweise eine Ausnahme ausgelöst werden, wenn Sie es versuchen. Sie können ermitteln, ob Sperren mithilfe-Elements festgelegt werden. GetLocks(), die eine Erweiterungsmethode ist, die im Namespace definiert ist <xref:Microsoft.VisualStudio.Modeling.Immutability>.  
   
  Weitere Informationen finden Sie unter [Definieren einer Sperrrichtlinie zum Read-Only-Segmente erstellen](../modeling/defining-a-locking-policy-to-create-read-only-segments.md).  
   
-##  <a name="copy"></a> Kopieren und einfügen  
+## <a name="copy"></a> Kopieren und einfügen  
  Sie können kopieren, Elemente oder Gruppen von Elementen, die eine <xref:System.Windows.Forms.IDataObject>:  
   
 ```  
@@ -353,7 +350,7 @@ using (Transaction t = targetDiagram.Store.
   
  `Merge ()` akzeptiert entweder eine `PresentationElement` oder `ModelElement`. Wenn Sie ihm geben eine `PresentationElement`, Sie können auch eine Position im Diagramm "Target" als dritten Parameter angeben.  
   
-##  <a name="diagrams"></a> Navigieren in und Aktualisieren von Diagrammen  
+## <a name="diagrams"></a> Navigieren in und Aktualisieren von Diagrammen  
  In einer DSL unterscheidet sich das Domain-Model-Element, das ein Konzept wie z. B. die Person oder "Song" darstellt, aus dem FormElement, das darstellt, was Sie im Diagramm angezeigt. Das Modellelement Domäne speichert der wichtigen Eigenschaften und Beziehungen der Konzepte. Das FormElement speichert die Größe, Position und Farbe der Ansicht des Objekts im Diagramm und das Layout der seine Komponenten unterteilen.  
   
 ### <a name="presentation-elements"></a>Präsentationselementen  
@@ -375,7 +372,7 @@ using (Transaction t = targetDiagram.Store.
   
  Untergeordnete Formen können zwei Formen enthalten. Eine Form in die `NestedChildShapes` Satz ist auf das umgebende Feld des übergeordneten beschränkt. Eine Form in die `RelativeChildShapes` Liste kann außerhalb oder teilweise außerhalb der Grenzen des übergeordneten Elements – z. B. eine Bezeichnung oder einen Port angezeigt. Ein Diagramm hat keine `RelativeChildShapes` und es wird kein `Parent`.  
   
-###  <a name="views"></a> Navigieren zwischen Formen und Elemente  
+### <a name="views"></a> Navigieren zwischen Formen und Elemente  
  Domänenmodellelemente und Formelemente sind verknüpft, von der <xref:Microsoft.VisualStudio.Modeling.Diagrams.PresentationViewsSubject> Beziehung.  
   
 ```csharp  
@@ -447,22 +444,22 @@ FamilyTreeDiagram diagram =
   
  --------- *YourConnector*  
   
-###  <a name="shapeProperties"></a> Eigenschaften von Formen und Konnektoren  
+### <a name="shapeProperties"></a> Eigenschaften von Formen und Konnektoren  
  In den meisten Fällen ist es nicht notwendig, explizite Änderungen an Formen vornehmen. Wenn Sie die Modellelemente geändert haben, aktualisieren die Regeln "Reparieren", Formen und Konnektoren. Weitere Informationen finden Sie unter [reagieren auf und propagieren Änderungen](../modeling/responding-to-and-propagating-changes.md).  
   
  Allerdings ist es hilfreich, einige explizite Formen in den Eigenschaften ändern, die von den Modellelementen unabhängig sind. Beispielsweise können Sie diese Eigenschaften ändern:  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape.Size%2A> – Bestimmt die Höhe und Breite der Form.  
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape.Size%2A> – Bestimmt die Höhe und Breite der Form.  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape.Location%2A> -die Position relativ zu die übergeordnete Form oder das Diagramm  
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape.Location%2A> -die Position relativ zu die übergeordnete Form oder das Diagramm  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.StyleSet%2A> – der Satz von Stifte und Pinsel zum Zeichnen der Form oder -Connector  
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.StyleSet%2A> – der Satz von Stifte und Pinsel zum Zeichnen der Form oder -Connector  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.Hide%2A> -wird die Form unsichtbar  
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.Hide%2A> -wird die Form unsichtbar  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.Show%2A> – Stellt die Form sichtbar, nachdem ein `Hide()`  
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.Show%2A> – Stellt die Form sichtbar, nachdem ein `Hide()`  
   
-###  <a name="merge"></a> Erstellen ein Element und seine Form  
+### <a name="merge"></a> Erstellen ein Element und seine Form  
  Wenn Sie ein Element erstellen und in die Struktur einbettender Beziehungen verknüpfen, wird eine Form automatisch erstellt und zugeordnet. Dies erfolgt durch die Regeln "Reparieren", die am Ende der Transaktion ausgeführt werden. Allerdings die Form wird angezeigt, an einem Speicherort automatisch zugewiesen, und die Form, Farbe und andere Funktionen haben Standardwerte. Um zu steuern, wie die Form erstellt wird, können Sie die Merge-Funktion verwenden. Sie müssen zuerst die Elemente, die Sie in eine ElementGroup hinzufügen möchten, und klicken Sie dann die Gruppe in das Diagramm zusammenführen.  
   
  Diese Methode:  
@@ -515,7 +512,7 @@ partial class MyDiagram
 ### <a name="use-transactions"></a>Verwenden von Transaktionen  
  Formen, Konnektoren und Diagrammen sind Untertypen von <xref:Microsoft.VisualStudio.Modeling.ModelElement> als auch in den Store. Sie müssen deshalb Änderungen werden nur innerhalb einer Transaktion vornehmen. Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden von Transaktionen zum Aktualisieren des Modells](../modeling/how-to-use-transactions-to-update-the-model.md).  
   
-##  <a name="docdata"></a> Ansicht des Dokuments und Dokumentdaten  
+## <a name="docdata"></a> Ansicht des Dokuments und Dokumentdaten  
  ![Klassendiagramm für Standarddiagrammtypen](../modeling/media/dsldiagramsanddocs.png "DSLDiagramsandDocs")  
   
 ## <a name="store-partitions"></a>Store-Partitionen  
@@ -528,6 +525,3 @@ partial class MyDiagram
  [Vorgehensweise: Verwenden von Transaktionen zum Aktualisieren des Modells](../modeling/how-to-use-transactions-to-update-the-model.md)   
  [Integrieren von Modellen mit Visual Studio-Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   
  [Reagieren auf und Propagieren von Änderungen](../modeling/responding-to-and-propagating-changes.md)
-
-
-

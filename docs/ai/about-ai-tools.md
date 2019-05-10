@@ -1,5 +1,6 @@
 ---
 title: KI-Tools für Visual Studio
+titleSuffix: ''
 description: Übersicht über KI-Tools für Visual Studio
 keywords: KI, Visual Studio
 author: lisawong19
@@ -7,16 +8,14 @@ ms.author: liwong
 manager: routlaw
 ms.date: 11/13/2017
 ms.topic: conceptual
-ms.devlang: multiple
-ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: bb68e1b7b109b762f11410194076ab2b2eb30bb5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 39d562509a62874a32e8442e18dece8e3c26fbfc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430428"
 ---
 # <a name="visual-studio-tools-for-ai"></a>Visual Studio-Tools für KI
 
@@ -30,7 +29,7 @@ Verwenden Sie die Produktivitätsfeatures von Visual Studio, um KI-Innovationen 
 ![Deep Learning-IDE](media/about/ide.png)
 
 ## <a name="get-started-quickly-with-the-azure-machine-learning-sample-gallery"></a>Schneller Einstieg in den Azure Machine Learning-Beispielkatalog
-Visual Studio-Tools für KI ist in Azure Machine Learning enthalten, um das Durchsuchen eines Katalogs mit Beispielexperimenten mithilfe von CNTK, TensorFlow, MMLSpark usw. zu erleichtern.
+Visual Studio Tools for AI ist in Azure Machine Learning enthalten, um das Durchsuchen eines Katalogs mit Beispielexperimenten mithilfe von CNTK, TensorFlow, MMLSpark usw. zu erleichtern.
 
 ![Beispiele im Explorer](media/about/gallery.png)
 
@@ -46,5 +45,5 @@ Diese Erweiterung vereinfacht das Trainieren von Modellen auf Ihrem lokalen Comp
 ## <a name="supported-operating-systems"></a>Unterstützte Betriebssysteme
 Derzeit unterstützt diese Erweiterung Windows 64-Bit-Betriebssysteme.
 
-# <a name="support"></a>Unterstützung
+## <a name="support"></a>Support
 Die Unterstützung für diese Erweiterung wird auf dem [GitHub Issue Tracker](http://github.com/Microsoft/vs-tools-for-ai/issues) bereitgestellt. Sie können einen Fehlerbericht oder einen Vorschlag für ein Feature übermitteln oder an Diskussionen teilnehmen.

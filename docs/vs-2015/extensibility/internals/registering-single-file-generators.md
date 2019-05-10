@@ -1,27 +1,22 @@
 ---
 title: Registrieren von Generatoren einzelner Dateien | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, custom tools
 - custom tools, defining registry settings
 ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8e601b3fcf8bd702c1bc6cde427766d0f107e6bd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1ced598c2a670cd79d7daeeac90f6807baf7d1dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51780983"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436608"
 ---
 # <a name="registering-single-file-generators"></a>Registrieren von Generatoren einzelner Dateien
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ Ein benutzerdefiniertes Tool in zur Verfügung stellen [!INCLUDE[vsprvs](../../i
   
 ### <a name="to-register-a-custom-tool"></a>Registrieren Sie ein benutzerdefiniertes tool  
   
-1.  Registrieren Sie das benutzerdefinierte Tool DLL entweder in der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] lokale Registrierung oder in der Registrierung des Systems unter HKEY_CLASSES_ROOT.  
+1. Registrieren Sie das benutzerdefinierte Tool DLL entweder in der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] lokale Registrierung oder in der Registrierung des Systems unter HKEY_CLASSES_ROOT.  
   
      Hier ist z. B. die Registrierungsinformationen für das verwaltete MSDataSetGenerator benutzerdefiniertes Tool, das mit [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]:  
   
@@ -43,22 +38,22 @@ Ein benutzerdefiniertes Tool in zur Verfügung stellen [!INCLUDE[vsprvs](../../i
     "Assembly"="Microsoft.VSDesigner, Version=14.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a"  
     ```  
   
-2.  Erstellen Sie einen Registrierungsschlüssel in der gewünschten [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Hive unter Generatoren\\*GUID* , in denen *GUID* wird die GUID, die durch der spezifischen Sprache Projektsystem oder Dienst definiert. Der Name des Schlüssels wird der programmgesteuerte Name des benutzerdefinierten Tools. Der benutzerdefinierte Schlüssel hat die folgenden Werte:  
+2. Erstellen Sie einen Registrierungsschlüssel in der gewünschten [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Hive unter Generatoren\\*GUID* , in denen *GUID* wird die GUID, die durch der spezifischen Sprache Projektsystem oder Dienst definiert. Der Name des Schlüssels wird der programmgesteuerte Name des benutzerdefinierten Tools. Der benutzerdefinierte Schlüssel hat die folgenden Werte:  
   
-    -   (Standard)  
+    - (Standard)  
   
          Dies ist optional. Stellt eine benutzerfreundliche Beschreibung des benutzerdefinierten Tools bereit. Dieser Parameter ist optional, jedoch empfohlen.  
   
-    -   CLSID  
+    - CLSID  
   
          Erforderlich. Gibt den Bezeichner der Klassenbibliothek von COM-Komponente, die implementiert <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.  
   
-    -   GeneratesDesignTimeSource  
+    - GeneratesDesignTimeSource  
   
          Erforderlich. Gibt an, ob die Typen von Dateien, die von diesem benutzerdefinierten Tool erzeugt visuellen Designern zur Verfügung gestellt werden. Der Wert dieses Parameters muss 0 (null) Typen für visuelle Designer nicht verfügbar sind oder (1) 1 für Typen, die für den visuellen Designern verfügbar sein.  
   
     > [!NOTE]
-    >  Sie müssen das benutzerdefinierte Tool für jede Sprache einzeln registrieren, für die das benutzerdefinierte Tool verfügbar sein soll.  
+    > Sie müssen das benutzerdefinierte Tool für jede Sprache einzeln registrieren, für die das benutzerdefinierte Tool verfügbar sein soll.  
   
      Zum Beispiel registriert die MSDataSetGenerator sich einmal für jede Sprache:  
   
@@ -84,5 +79,4 @@ Ein benutzerdefiniertes Tool in zur Verfügung stellen [!INCLUDE[vsprvs](../../i
  [Implementieren von Einzeldatei-Generatoren](../../extensibility/internals/implementing-single-file-generators.md)   
  [Bestimmen die Standard-Namespace eines Projekts](../../misc/determining-the-default-namespace-of-a-project.md)   
  [Verfügbarmachen von Typen für visuelle Designer](../../extensibility/internals/exposing-types-to-visual-designers.md)   
- [Einführung in das BuildManager-Objekt](http://msdn.microsoft.com/en-us/50080ec2-c1c9-412c-98ef-18d7f895e7fa)
-
+ [Einführung in das BuildManager-Objekt](http://msdn.microsoft.com/50080ec2-c1c9-412c-98ef-18d7f895e7fa)

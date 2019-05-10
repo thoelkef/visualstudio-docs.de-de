@@ -2,7 +2,6 @@
 title: Implementieren von Smart Host-Hilfsprogrammschnittstellen | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2aff2d43d36fd543eea12d7fc60d3c56271af641
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: a9a5b94a25a838845acab2ce1c49295b0b28d425
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54088347"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976194"
 ---
 # <a name="implementing-smart-host-helper-interfaces"></a>Implementieren von Smart Host-Hilfsprogrammschnittstellen
 Die [IDebugDocumentHelper-Schnittstelle](../winscript/reference/idebugdocumenthelper-interface.md) vereinfacht das Erstellen eines Smarthosts für aktives Debuggen immens, da sie Implementierungen für viele Schnittstellen bereitstellt, die für Smarthosts benötigt werden.  
@@ -43,13 +42,13 @@ Die [IDebugDocumentHelper-Schnittstelle](../winscript/reference/idebugdocumenthe
   
 #### <a name="to-create-an-application-object"></a>Zum Erstellen einer Anwendungsseite müssen Sie:  
   
-1.  Eine Instanz des prozessbasierten Debugmanager über eine `CoCreateInstance` erstellen.  
+1. Eine Instanz des prozessbasierten Debugmanager über eine `CoCreateInstance` erstellen.  
   
-2.  [IProcessDebugManager::CreateApplication](../winscript/reference/iprocessdebugmanager-createapplication.md) aufrufen.  
+2. [IProcessDebugManager::CreateApplication](../winscript/reference/iprocessdebugmanager-createapplication.md) aufrufen.  
   
-3.  Den Namen für die Anwendung über [IDebugApplication::SetName](../winscript/reference/idebugapplication-setname.md) festlegen.  
+3. Den Namen für die Anwendung über [IDebugApplication::SetName](../winscript/reference/idebugapplication-setname.md) festlegen.  
   
-4.  Das Anwendungsobjekt der Liste mit debugfähigen Anwendungen über [IProcessDebugManager::AddApplication](../winscript/reference/iprocessdebugmanager-addapplication.md) hinzufügen.  
+4. Das Anwendungsobjekt der Liste mit debugfähigen Anwendungen über [IProcessDebugManager::AddApplication](../winscript/reference/iprocessdebugmanager-addapplication.md) hinzufügen.  
   
      Im untenstehenden Code wird der Prozess dargestellt. Allerdings enthält er keine Techniken zum Prüfen von Fehlern oder andere stabile Programmierverfahren.  
   
@@ -67,15 +66,15 @@ Die [IDebugDocumentHelper-Schnittstelle](../winscript/reference/idebugdocumenthe
   
 #### <a name="to-use-the-helper-minimal-sequence-of-steps"></a>So verwenden Sie das Hilfsprogramm (minimale Schrittsequenz)  
   
-1.  Erstellen Sie für jedes Hostdokument ein Hilfsprogramm über [IProcessDebugManager::CreateDebugDocumentHelper](../winscript/reference/iprocessdebugmanager-createdebugdocumenthelper.md).  
+1. Erstellen Sie für jedes Hostdokument ein Hilfsprogramm über [IProcessDebugManager::CreateDebugDocumentHelper](../winscript/reference/iprocessdebugmanager-createdebugdocumenthelper.md).  
   
-2.  Rufen Sie im Hilfsprogramm [IDebugDocumentHelper::Init](../winscript/reference/idebugdocumenthelper-init.md) auf, und spezifizieren Sie Name, Dokumentattribute usw.  
+2. Rufen Sie im Hilfsprogramm [IDebugDocumentHelper::Init](../winscript/reference/idebugdocumenthelper-init.md) auf, und spezifizieren Sie Name, Dokumentattribute usw.  
   
-3.  Rufen Sie [IDebugDocumentHelper::Attach](../winscript/reference/idebugdocumenthelper-attach.md) (oder NULL, wenn er sich bei dem Dokument um den Stamm handelt) mit dem übergeordneten Hilfsprogramm für das Dokument auf, um die Position des Dokuments in der Struktur zu bestimmen, und machen Sie es sichtbar für den Debugger.  
+3. Rufen Sie [IDebugDocumentHelper::Attach](../winscript/reference/idebugdocumenthelper-attach.md) (oder NULL, wenn er sich bei dem Dokument um den Stamm handelt) mit dem übergeordneten Hilfsprogramm für das Dokument auf, um die Position des Dokuments in der Struktur zu bestimmen, und machen Sie es sichtbar für den Debugger.  
   
-4.  Rufen Sie [IDebugDocumentHelper::AddDBCSText](../winscript/reference/idebugdocumenthelper-adddbcstext.md) oder [IDebugDocumentHelper::AddUnicodeText](../winscript/reference/idebugdocumenthelper-addunicodetext.md), um den Text des Dokuments zu definieren. (Diese können mehrmals aufgerufen werden, wenn das Dokument, wie im Fall des Browsers, inkrementell herunterladen wird.)  
+4. Rufen Sie [IDebugDocumentHelper::AddDBCSText](../winscript/reference/idebugdocumenthelper-adddbcstext.md) oder [IDebugDocumentHelper::AddUnicodeText](../winscript/reference/idebugdocumenthelper-addunicodetext.md), um den Text des Dokuments zu definieren. (Diese können mehrmals aufgerufen werden, wenn das Dokument, wie im Fall des Browsers, inkrementell herunterladen wird.)  
   
-5.  Rufen Sie [IDebugDocumentHelper::DefineScriptBlock](../winscript/reference/idebugdocumenthelper-definescriptblock.md) auf, um die Geltungsbereiche der Skriptblöcke und die zugehörigen Skript-Engines zu definieren.  
+5. Rufen Sie [IDebugDocumentHelper::DefineScriptBlock](../winscript/reference/idebugdocumenthelper-definescriptblock.md) auf, um die Geltungsbereiche der Skriptblöcke und die zugehörigen Skript-Engines zu definieren.  
   
 ## <a name="implementing-iactivescriptsitedebug"></a>Implementieren von IActiveScriptSiteDebug  
  Rufen Sie zum Implementieren von [IActiveScriptSiteDebug::GetDocumentContextFromPosition](../winscript/reference/iactivescriptsitedebug-getdocumentcontextfromposition.md) das der vorhanden Website zugehörige Hilfsprogramm auf, und rufen Sie anschließend wie folgt den Offset des Startdokuments für den vorhandenen Quellkontext auf:  
@@ -97,13 +96,13 @@ pddh->CreateDebugDocumentContext(ulStartPos + uCharacterOffset, cChars, &pddcNew
 ## <a name="the-optional-idebugdocumenthost-interface"></a>Die optionale IDebugDocumentHost-Schnittstelle  
  Der Host kann eine Implementierung der [IDebugDocumentHost-Schnittstelle](../winscript/reference/idebugdocumenthost-interface.md) bereitstellen, wenn er [IDebugDocumentHelper::SetDebugDocumentHost](../winscript/reference/idebugdocumenthelper-setdebugdocumenthost.md) verwendet, um dieser zusätzliche Kontrolle über das Hilfsprogramm zu geben. Im Folgenden werden einige Schlüsselfunktionen dargestellt, die die Hostschnittstelle bereitstellt:  
   
--   Fügen Sie mithilfe von [IDebugDocumentHelper::AddDeferredText](../winscript/reference/idebugdocumenthelper-adddeferredtext.md) Text hinzu, damit der Host die tatsächlichen Zeichen nicht unmittelbar zur Verfügung stellen muss. Wenn die Zeichen tatsächlich benötigt werden, ruft das Hilfsprogramm [IDebugDocumentHost::GetDeferredText](../winscript/reference/idebugdocumenthost-getdeferredtext.md) für den Host auf.  
+- Fügen Sie mithilfe von [IDebugDocumentHelper::AddDeferredText](../winscript/reference/idebugdocumenthelper-adddeferredtext.md) Text hinzu, damit der Host die tatsächlichen Zeichen nicht unmittelbar zur Verfügung stellen muss. Wenn die Zeichen tatsächlich benötigt werden, ruft das Hilfsprogramm [IDebugDocumentHost::GetDeferredText](../winscript/reference/idebugdocumenthost-getdeferredtext.md) für den Host auf.  
   
--   Setzen Sie die standardmäßig vom Hilfsprogramm zur Verfügung gestellten Syntaxfarben außer Kraft. Das Hilfsprogramm ruft [IDebugDocumentHost::GetScriptTextAttributes](../winscript/reference/idebugdocumenthost-getscripttextattributes.md) auf, um für einen bestimmten Zeichenbereich die Farben zu bestimmen. Dabei wird die Standardimplementierung wiederhergestellt, wenn der Host `E_NOTIMPL` zurückgibt.  
+- Setzen Sie die standardmäßig vom Hilfsprogramm zur Verfügung gestellten Syntaxfarben außer Kraft. Das Hilfsprogramm ruft [IDebugDocumentHost::GetScriptTextAttributes](../winscript/reference/idebugdocumenthost-getscripttextattributes.md) auf, um für einen bestimmten Zeichenbereich die Farben zu bestimmen. Dabei wird die Standardimplementierung wiederhergestellt, wenn der Host `E_NOTIMPL` zurückgibt.  
   
--   Stellen Sie eine unbekannte Steuerung für Dokumentenkontexte bereit, die über das Hilfsprogramm erstellt wurden, indem Sie [IDebugDocumentHost::OnCreateDocumentContext](../winscript/reference/idebugdocumenthost-oncreatedocumentcontext.md) implementieren. Dadurch kann der Host die Funktionen der standardmäßigen Implementierung des Dokumentenkontexts überschreiben.  
+- Stellen Sie eine unbekannte Steuerung für Dokumentenkontexte bereit, die über das Hilfsprogramm erstellt wurden, indem Sie [IDebugDocumentHost::OnCreateDocumentContext](../winscript/reference/idebugdocumenthost-oncreatedocumentcontext.md) implementieren. Dadurch kann der Host die Funktionen der standardmäßigen Implementierung des Dokumentenkontexts überschreiben.  
   
--   Stellen Sie im Dateisystem einen Pfadnamen für das Dokument zur Verfügung. Diese Funktion verwenden einige Benutzeroberflächen zum Debuggen, damit der Benutzer Änderungen an dem Dokument bearbeiten und speichern kann. [IDebugDocumentHost::NotifyChanged](../winscript/reference/idebugdocumenthost-notifychanged.md) wird aufgerufen, um den Host zu benachrichtigen, nachdem das Dokument gespeichert wurde.  
+- Stellen Sie im Dateisystem einen Pfadnamen für das Dokument zur Verfügung. Diese Funktion verwenden einige Benutzeroberflächen zum Debuggen, damit der Benutzer Änderungen an dem Dokument bearbeiten und speichern kann. [IDebugDocumentHost::NotifyChanged](../winscript/reference/idebugdocumenthost-notifychanged.md) wird aufgerufen, um den Host zu benachrichtigen, nachdem das Dokument gespeichert wurde.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen mit Active Script – Übersicht](../winscript/active-script-debugging-overview.md)

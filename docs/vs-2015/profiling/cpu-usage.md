@@ -1,25 +1,20 @@
 ---
 title: CPU-Auslastung | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: af6d58ac5cd87523124d567e36559a82d69ddfc6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a78025bd11e56b001514f580acca18b7d21d5424
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810532"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067052"
 ---
 # <a name="cpu-usage"></a>CPU-Auslastung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,19 +27,19 @@ Wenn Sie Leistungsprobleme in Ihrer App untersuchen müssen, ist ein guter Ausga
   
  Der Hub "Leistung und Diagnose" bietet Ihnen viele weitere Optionen zum Ausführen und Verwalten Ihrer Diagnosesitzung. Sie können z. B. das Tool **CPU-Auslastung** auf lokalen oder Remotecomputern oder in einem Simulator oder Emulator ausführen. Sie können die Leistung eines geöffneten Projekts in Visual Studio analysieren, eine Verbindung mit einer ausgeführten App herstellen oder eine App starten, die aus dem Windows Store installiert wurde. Weitere Informationen finden Sie unter [Ausführen von Profilerstellungstools ohne Debuggen](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
   
-##  <a name="BKMK_Collect_CPU_usage_data"></a> Erfassen von CPU-Auslastungsdaten  
+## <a name="BKMK_Collect_CPU_usage_data"></a> Erfassen von CPU-Auslastungsdaten  
   
 1. Legen Sie in Visual Studio die Konfiguration der Projektmappe auf **Release** fest, und wählen Sie das Bereitstellungsziel.  
   
     ![Version und lokalen Computer auswählen](../profiling/media/cpuuse-selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
   
-   -   Durch das Ausführen der App im **Release** -Modus erhalten Sie eine bessere Übersicht über die tatsächliche Leistung Ihrer App.  
+   - Durch das Ausführen der App im **Release** -Modus erhalten Sie eine bessere Übersicht über die tatsächliche Leistung Ihrer App.  
   
-   -   Durch Ausführen der App auf dem lokalen Computer wird die Ausführung der installierten App am besten repliziert.  
+   - Durch Ausführen der App auf dem lokalen Computer wird die Ausführung der installierten App am besten repliziert.  
   
-   -   Wenn Sie Daten von einem Remotegerät sammeln, führen Sie die App direkt auf dem Gerät und nicht über eine Remotedesktopverbindung aus.  
+   - Wenn Sie Daten von einem Remotegerät sammeln, führen Sie die App direkt auf dem Gerät und nicht über eine Remotedesktopverbindung aus.  
   
-   -   Bei Windows Phone-Apps bietet das Sammeln von Daten direkt auf dem **Gerät** die genauesten Daten.  
+   - Bei Windows Phone-Apps bietet das Sammeln von Daten direkt auf dem **Gerät** die genauesten Daten.  
   
 2. Klicken Sie im Menü **Debuggen** auf **Leistungsprofiler…**.  
   
@@ -64,10 +59,10 @@ Wenn Sie Leistungsprobleme in Ihrer App untersuchen müssen, ist ein guter Ausga
   
 ## <a name="analyze-the-cpu-usage-report"></a>Analysieren des CPU-Auslastungsberichts  
   
-###  <a name="BKMK_The_CPU_Usage_call_tree"></a> Die Aufrufstruktur der CPU-Auslastung  
+### <a name="BKMK_The_CPU_Usage_call_tree"></a> Die Aufrufstruktur der CPU-Auslastung  
  Um sich mit den Informationen in der Aufrufstruktur vertraut zu machen, wählen Sie zunächst `GetMaxNumberButton_Click` erneut aus, und sehen Sie sich dann die Aufrufstrukturdetails an.  
   
-####  <a name="BKMK_Call_tree_structure"></a> Struktur der Aufrufstruktur  
+#### <a name="BKMK_Call_tree_structure"></a> Struktur der Aufrufstruktur  
  ![GetMaxNumberButton&#95;Click call tree](../profiling/media/cpu-use-wt-getmaxnumbercalltree-annotated.png "CPU_USE_WT_GetMaxNumberCallTree_annotated")  
   
 |||  
@@ -77,7 +72,7 @@ Wenn Sie Leistungsprobleme in Ihrer App untersuchen müssen, ist ein guter Ausga
 |![Schritt 3](../profiling/media/procguid-3.png "ProcGuid_3")|Die untergeordneten Elemente des Knotens der zweiten Ebene sind die Benutzercodemethoden und asynchronen Routinen, die vom System- und Frameworkcode der zweiten Ebene aufgerufen oder erstellt werden.|  
 |![Schritt 4](../profiling/media/procguid-4.png "ProcGuid_4")|Untergeordnete Knoten einer Methode enthalten Daten nur für die Aufrufe der übergeordneten Methode. Wenn **Externen Code anzeigen** deaktiviert ist, können App-Methoden auch den Knoten **[Externer Code]** enthalten.|  
   
-####  <a name="BKMK_External_Code"></a> Externer Code  
+#### <a name="BKMK_External_Code"></a> Externer Code  
  Externer Code umfasst Funktionen in System- und Frameworkkomponenten, die vom Code ausgeführt werden, den Sie schreiben. Externer Code umfasst Funktionen, die die App starten und beenden, die Benutzeroberfläche zeichnen, das Threading steuern und der App andere hardwarenahe Dienste bereitstellen. In den meisten Fällen sind Sie nicht an externem Code interessiert, weshalb die Aufrufstruktur "CPU-Auslastung" die externen Funktionen einer Benutzermethode im Knoten **[Externer Code]** sammelt.  
   
  Wenn Sie die Aufrufpfade von externem Code anzeigen möchten, wählen Sie aus der Liste **Ansicht filtern** die Option **Externen Code anzeigen** und dann **Übernehmen**aus.  
@@ -92,7 +87,7 @@ Wenn Sie Leistungsprobleme in Ihrer App untersuchen müssen, ist ein guter Ausga
   
  ![Suche nach geschachteltem externen Code](../profiling/media/cpu-use-wt-showexternalcodetoowide-found.png "CPU_USE_WT_ShowExternalCodeTooWide_Found")  
   
-###  <a name="BKMK_Call_tree_data_columns"></a> Spalten mit Aufrufstrukturdaten  
+### <a name="BKMK_Call_tree_data_columns"></a> Spalten mit Aufrufstrukturdaten  
   
 |||  
 |-|-|  
@@ -102,7 +97,7 @@ Wenn Sie Leistungsprobleme in Ihrer App untersuchen müssen, ist ein guter Ausga
 |**Eigen-CPU (ms)**|Die Anzahl der Millisekunden für Aufrufe an die Funktion im ausgewählten Zeitraum und die von der Funktion aufgerufenen Funktionen.|  
 |**Modul**|Der Name des Moduls mit der Funktion oder die Anzahl der Module, die die Funktionen in einem Knoten vom Typ [Externer Code] enthalten.|  
   
-###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Asynchrone Funktionen in der Aufrufstruktur der CPU-Auslastung  
+### <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Asynchrone Funktionen in der Aufrufstruktur der CPU-Auslastung  
  Wenn der Compiler auf eine asynchrone Methode trifft, erstellt er eine versteckte Klasse zum Steuern der Ausführung der Methode. Grundsätzlich ist die Klasse ein Zustandsautomat mit einer Liste von vom Compiler generierten Funktionen, die Vorgänge der ursprünglichen Methode asynchron aufrufen, und den Rückrufen, dem Scheduler und den Iteratoren, die für diese ordnungsgemäß erforderlich sind. Wenn die ursprüngliche Methode von einer übergeordneten Methode aufgerufen wird, entfernt die Runtime die Methode aus dem Ausführungskontext der übergeordneten Methode und führt die Methode der ausgeblendeten Klasse im Kontext des System- und Frameworkcodes durch, der die Ausführung der App steuert. Die asynchronen Methoden werden oft, jedoch nicht immer, in einem oder mehreren verschiedenen Threads ausgeführt. Dieser Code wird in der Aufrufstruktur der CPU-Auslastung als untergeordnete Elemente des Knotens **[Externer Code]** direkt unter dem obersten Knoten der Struktur gezeigt.  
   
  Um dies in unserem Beispiel zu sehen, wählen Sie erneut das Segment `GetMaxNumberAsyncButton_Click` in der Zeitachse aus.  
@@ -113,11 +108,8 @@ Wenn Sie Leistungsprobleme in Ihrer App untersuchen müssen, ist ein guter Ausga
   
  ![Erweitert GetMaxNumberAsyncButton&#95;Aufrufstruktur anklicken](../profiling/media/cpu-use-wt-getmaxnumberasync-expandedcalltree.png "CPU_USE_WT_GetMaxNumberAsync_ExpandedCallTree")  
   
--   `MainPage::GetMaxNumberAsyncButton_Click` macht sehr wenig, nämlich Verwalten einer Liste von Aufgabenwerten, Berechnen des Maximums der Ergebnisse und Anzeigen der Ausgabe.  
+- `MainPage::GetMaxNumberAsyncButton_Click` macht sehr wenig, nämlich Verwalten einer Liste von Aufgabenwerten, Berechnen des Maximums der Ergebnisse und Anzeigen der Ausgabe.  
   
--   `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext` zeigt die erforderliche Aktivität zum Planen und Starten der 48 Aufgaben, die den Aufruf von `GetNumberAsync`umschließen.  
+- `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext` zeigt die erforderliche Aktivität zum Planen und Starten der 48 Aufgaben, die den Aufruf von `GetNumberAsync`umschließen.  
   
--   `MainPage::<GetNumberAsync>b__b` zeigt die Aktivität der Aufgaben, die `GetNumber`aufrufen.
-
-
-
+- `MainPage::<GetNumberAsync>b__b` zeigt die Aktivität der Aufgaben, die `GetNumber`aufrufen.

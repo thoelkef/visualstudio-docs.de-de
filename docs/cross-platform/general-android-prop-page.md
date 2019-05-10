@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.assetid: 65f4868b-b864-4989-a275-1e51869ef599
 author: corob
 ms.author: mblome
-manager: douge
+manager: jillfra
 f1_keywords:
 - VC.Project.VCConfiguration.OutputDirectory
 - VC.Project.VCConfiguration.IntermediateDirectory
@@ -22,16 +22,16 @@ f1_keywords:
 - VC.Project.VCConfiguration.ThumbMode
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: b72cbb0d2660507a0578781c79a7cbdf60be7d8b
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 4bb6f26fe40b639b43cb803577a785fa9b48823d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252237"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62818946"
 ---
 # <a name="general-project-properties-android-c"></a>Allgemeine Projekteigenschaften (Android C++)
 
-Eigenschaft | Beschreibung  | Auswahlmöglichkeiten
+Eigenschaft | Beschreibung | Auswahlmöglichkeiten
 --- | ---| ---
 Ausgabeverzeichnis | Gibt einen relativen Pfad zum Ausgabedateiverzeichnis an. Kann Umgebungsvariablen enthalten.
 Zwischenverzeichnis | Gibt einen relativen Pfad zum Zwischendateiverzeichnis an. Kann Umgebungsvariablen enthalten.

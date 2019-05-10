@@ -1,7 +1,6 @@
 ---
 title: Seite der Anwendungseigenschaften für UWP-Apps
 ms.date: 01/23/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - AppPackage.Properties.Application
@@ -9,15 +8,15 @@ helpviewer_keywords:
 - Application page [UWP project]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 2808afab24fa4a78d881dd23cc2b1a8efa364b2a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 416661a39f54429f24cca66a0ec1be7b6c87629d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62791050"
 ---
 # <a name="application-property-page-uwp-projects"></a>Eigenschaftenseite der Anwendung (UWP-Projekte)
 
@@ -45,7 +44,7 @@ Informationen zum programmgesteuerten Zugriff auf diese Eigenschaft finden Sie u
 
 Sie können die Zielversion und die Mindestversion von Windows 10 für Ihre App mithilfe der Dropdownlisten in diesem Abschnitt festlegen. Es wird empfohlen, die neueste Version von Windows 10 als Ziel zu verwenden. Wenn Sie eine Unternehmens-App entwickeln, sollten Sie außerdem eine ältere Mindestversion unterstützen. Weitere Informationen zur Auswahl der Windows 10-Version finden Sie unter [Auswählen einer UWP-Version](/windows/uwp/updates-and-versions/choose-a-uwp-version).
 
-Informationen zur Auswahl der Zielplattform in Visual Studio 2017 finden Sie unter [Zielplattformen](/visualstudio/productinfo/vs2017-compatibility-vs#platform-targeting).
+Informationen zur Auswahl der Zielplattform in Visual Studio finden Sie unter [Zielplattformen](/visualstudio/productinfo/vs2017-compatibility-vs#platform-targeting).
 
 ## <a name="see-also"></a>Siehe auch
 

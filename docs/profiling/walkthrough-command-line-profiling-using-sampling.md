@@ -8,15 +8,15 @@ helpviewer_keywords:
 - performance tools, command-line tools
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10fe1aaaa9301429d3ef80fa12713b5cc4fbcc68
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1c76fd1d18b41073bf92ed18dadeeeb3a90c9209
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433613"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>Exemplarische Vorgehensweise: Profilerstellung über die Befehlszeile mit Sampling
 
@@ -41,7 +41,7 @@ Im Verlauf dieser exemplarischen Vorgehensweise führen Sie die folgenden Schrit
 Das Sampling ist eine Methode der Profilerstellung, bei der ein bestimmter Prozess periodisch zum Bestimmen der aktiven Funktion überprüft wird. Die resultierenden Daten enthalten Angaben dazu, wie häufig die Funktion sich während des Samplings des Prozesses in der Aufrufliste ganz oben befunden hat.
 
 > [!NOTE]
->  Informationen zum Abrufen des Pfads zu den Profilerstellungstools finden Sie unter [Angeben des Pfads zu Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Auf 64-Bit-Computern sind sowohl 64 Bit- als auch 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen.  
+> Informationen zum Abrufen des Pfads zu den Profilerstellungstools finden Sie unter [Angeben des Pfads zu Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Auf 64-Bit-Computern sind sowohl 64 Bit- als auch 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen.
 
 ### <a name="to-profile-the-peopletrax-application-by-using-the-sampling-method"></a>So erstellen Sie ein Profil für die Anwendung "PeopleTrax" mithilfe der Samplingmethode
 
@@ -99,8 +99,8 @@ Das Sampling ist eine Methode der Profilerstellung, bei der ein bestimmter Proze
 
 ## <a name="see-also"></a>Siehe auch
 
-[Übersicht über Leistungssitzungen](../profiling/performance-session-overview.md)  
-[Profilerstellung über die Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md)  
-[VSPerfCmd](../profiling/vsperfcmd.md)  
-[Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)  
+[Übersicht über Leistungssitzungen](../profiling/performance-session-overview.md)
+[Verwenden der Profilerstellungstools über die Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md)
+[VSPerfCmd](../profiling/vsperfcmd.md)
+[Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)
 [Leistungsberichtansichten](../profiling/performance-report-views.md)

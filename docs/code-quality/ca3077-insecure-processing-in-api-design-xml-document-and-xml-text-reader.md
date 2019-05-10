@@ -1,22 +1,21 @@
 ---
-title: 'CA3077: Unsichere Verarbeitung in API-Design, XML-Dokument und XML-TextReader'
+title: 'CA3077: Unsichere Verarbeitung in API-Design, XML-Dokument und XML-Textreader.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: 7f33771b-f3c8-4c02-bef6-f581b623c303
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33c6aaea4cdc7de1c81338eb4861d56d73cb5909
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dd3b17ad3449bebcab57344355f7cc7687ea6b19
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841277"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62541076"
 ---
-# <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077: Unsichere Verarbeitung in API-Design, XML-Dokument und XML-TextReader
+# <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077: Unsichere Verarbeitung in API-Design, XML-Dokument und XML-Textreader.
 
 |||
 |-|-|

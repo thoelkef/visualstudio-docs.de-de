@@ -1,28 +1,30 @@
 ---
 title: IDebugCodeContext3::GetModule | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugCodeContext3::GetModule
 ms.assetid: 8e4317b8-8255-486c-a896-a68ed94f8aa1
-author: gregvanl
+caps.latest.revision: 10
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 964307760c0ff5224bf56db3d3779771725b7e9d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ae925ab4c05db45d09638070df9291541f19a869
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915019"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62922790"
 ---
 # <a name="idebugcodecontext3getmodule"></a>IDebugCodeContext3::GetModule
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Ruft einen Verweis auf die Schnittstelle von der Debug-Modul ab.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT GetModule(   
    IDebugModule2 **ppModule  
 );  
@@ -44,7 +46,7 @@ public int GetModule(
 ## <a name="example"></a>Beispiel  
  Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugCodeContext** -Objekt, das macht die [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) Schnittstelle.  
   
-```cpp  
+```cpp#  
 HRESULT CDebugCodeContext::GetModule(IDebugModule2** ppModule)  
 {  
     HRESULT hr = S_OK;  

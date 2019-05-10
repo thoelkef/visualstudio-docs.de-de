@@ -1,30 +1,33 @@
 ---
 title: 'Idiasymbol:: Get_localbasepointerregisterid | Microsoft-Dokumentation'
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_localBasePointerRegisterId method
 ms.assetid: 9cbcaf00-9ace-45e1-b164-7a9439e08083
-author: mikejo5000
+caps.latest.revision: 8
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: 040905a1e61f84e36bc2f01191a69ca1eceda0f7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: f2c556d67ca8823ce54da19de51c934181465807
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400501"
 ---
 # <a name="idiasymbolgetlocalbasepointerregisterid"></a>IDiaSymbol::get_localBasePointerRegisterId
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Ruft die ID des Registers, das ein basiszeiger auf lokale Variablen im Stapel enthält ab. Verwenden, wenn die [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) nastaven NA hodnotu `SymTagFunction`.  
   
 ## <a name="syntax"></a>Syntax  
   
-```C++  
+```cpp#  
 HRESULT get_localBasePointerRegisterId (   
    DWORD* pRetVal  
 );  
@@ -38,7 +41,7 @@ HRESULT get_localBasePointerRegisterId ( 
  Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="remarks"></a>Hinweise  
   

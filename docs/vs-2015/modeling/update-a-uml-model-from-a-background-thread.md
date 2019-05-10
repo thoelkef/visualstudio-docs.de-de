@@ -1,23 +1,20 @@
 ---
 title: Aktualisieren eines UML-Modells aus einem Hintergrundthread | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 42c06b0b-b681-4e19-b5f3-6116dd2a4072
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4173b70cda9df39ce8a4500817fff199ed1a2996
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d5a7ad318b5bd9fac41d5e8835169e4075d1da67
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749996"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093006"
 ---
 # <a name="update-a-uml-model-from-a-background-thread"></a>Aktualisieren eines UML-Modells aus einem Hintergrundthread
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,9 +23,9 @@ Gelegentlich kann es nützlich sein, Änderungen an einem Modell in einem Hinter
   
  Dabei ist jedoch zu beachten, dass der UML-Speicher nicht threadsicher ist. Die folgenden Vorsichtsmaßnahmen sind zu beachten:  
   
--   Jedes Update eines Modells oder Diagramm muss im UI-Thread (Benutzeroberflächenthread) ausgeführt werden. Der Hintergrundthread muss <xref:System.Windows.Forms.Control.Invoke%2A> oder `Dispatcher.`<xref:System.Windows.Threading.Dispatcher.Invoke%2A> verwenden, damit der UI-Thread die tatsächlichen Updates ausführt.  
+- Jedes Update eines Modells oder Diagramm muss im UI-Thread (Benutzeroberflächenthread) ausgeführt werden. Der Hintergrundthread muss <xref:System.Windows.Forms.Control.Invoke%2A> oder `Dispatcher.`<xref:System.Windows.Threading.Dispatcher.Invoke%2A> verwenden, damit der UI-Thread die tatsächlichen Updates ausführt.  
   
--   Wenn Sie eine Reihe von Änderungen in einer einzigen Transaktion zusammenfassen, sollten Sie verhindern, dass der Benutzer das Modell bearbeitet, während die Transaktion ausgeführt wird. Andernfalls werden vom Benutzer vorgenommene Änderungen zum Teil dieser Transaktion. Sie können verhindern, dass Benutzer Änderungen vornehmen, indem Sie ein modales Dialogfeld anzeigen. Sie können ggf. eine Schaltfläche Abbrechen im Dialogfeld bereitstellen. Die Änderungen werden für den Benutzer in Echtzeit angezeigt.  
+- Wenn Sie eine Reihe von Änderungen in einer einzigen Transaktion zusammenfassen, sollten Sie verhindern, dass der Benutzer das Modell bearbeitet, während die Transaktion ausgeführt wird. Andernfalls werden vom Benutzer vorgenommene Änderungen zum Teil dieser Transaktion. Sie können verhindern, dass Benutzer Änderungen vornehmen, indem Sie ein modales Dialogfeld anzeigen. Sie können ggf. eine Schaltfläche Abbrechen im Dialogfeld bereitstellen. Die Änderungen werden für den Benutzer in Echtzeit angezeigt.  
   
 ## <a name="example"></a>Beispiel  
  In diesem Beispiel werden mit einem Hintergrundthread mehrere Änderungen an einem Modell vorgenommen. Mithilfe eines Dialogfelds werden Bearbeitungen durch den Benutzer verhindert, während der Thread ausgeführt wird. In diesem einfachen Beispiel wird keine Schaltfläche Abbrechen im Dialogfeld bereitgestellt. Diese Funktion kann jedoch auf einfache Weise hinzugefügt werden.  
@@ -39,17 +36,17 @@ Gelegentlich kann es nützlich sein, Änderungen an einem Modell in einem Hinter
   
 2. Stellen Sie sicher, dass das Projekt Verweise auf die folgenden Assemblys enthält:  
   
-   -   Microsoft.VisualStudio.ArchitectureTools.Extensibility  
+   - Microsoft.VisualStudio.ArchitectureTools.Extensibility  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.[version]  
+   - Microsoft.VisualStudio.Modeling.Sdk.[Version]  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]  
+   - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[Version]  
   
-   -   Microsoft.VisualStudio.Uml.Interfaces  
+   - Microsoft.VisualStudio.Uml.Interfaces  
   
-   -   System.ComponentModel.Composition  
+   - System.ComponentModel.Composition  
   
-   -   System.Windows.Forms  
+   - System.Windows.Forms  
   
 3. Fügen Sie dem Projekt ein Windows-Formular mit dem Namen **ProgressForm hinzu**. Dieses muss eine Meldung anzeigen, mit der angegeben wird, dass die Updates ausgeführt werden. Weitere Steuerelemente müssen nicht enthalten sein.  
   
@@ -165,9 +162,9 @@ namespace BackgroundThreadProgressUI // CHANGE TO YOUR NAMESPACE
   
 #### <a name="to-allow-the-user-to-cancel-the-thread-in-the-example"></a>So lassen Sie zu, dass Benutzer den Thread im Beispiel abbrechen  
   
-1.  Fügen Sie dem Statusdialogfeld eine Schaltfläche zum Abbrechen hinzu.  
+1. Fügen Sie dem Statusdialogfeld eine Schaltfläche zum Abbrechen hinzu.  
   
-2.  Fügen Sie dem Statusdialogfeld den folgenden Code hinzu:  
+2. Fügen Sie dem Statusdialogfeld den folgenden Code hinzu:  
   
      `public event MethodInvoker Cancel;`  
   
@@ -179,7 +176,7 @@ namespace BackgroundThreadProgressUI // CHANGE TO YOUR NAMESPACE
   
      `}`  
   
-3.  Fügen Sie in der Execute()-Methode nach der Formularkonstruktion die folgende Zeile ein:  
+3. Fügen Sie in der Execute()-Methode nach der Formularkonstruktion die folgende Zeile ein:  
   
      `form.Cancel += delegate() { worker.CancelAsync(); };`  
   
@@ -193,6 +190,3 @@ namespace BackgroundThreadProgressUI // CHANGE TO YOUR NAMESPACE
 ## <a name="see-also"></a>Siehe auch  
  [Definieren eines Menübefehls in einem Modellierungsdiagramm](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [Definieren eines Gestenhandlers in einem Modellierungsdiagramm](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)
-
-
-

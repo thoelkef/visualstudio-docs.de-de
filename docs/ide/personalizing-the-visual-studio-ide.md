@@ -1,19 +1,18 @@
 ---
 title: Anpassen der IDE
 ms.date: 11/20/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f564268b198a75655c68b5ede34591fe5845593
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 62f2d98777f1fe87b67bdb28e6302f29f752f27f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919043"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953295"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personalisieren der Visual Studio-IDE
 
@@ -32,28 +31,32 @@ Sie können eine Standardsammlung von Einstellungen auswählen, die Visual Studi
 
 - Klicken Sie in der Menüleiste auf **Extras** > **Optionen**, und erweitern Sie ggf. den Knoten **Umgebung**.
 
-- Geben Sie `environment` im Feld **Schnellstart** ein, und klicken Sie in der Ergebnisliste auf **Umgebung > Allgemein**.
+- Drücken Sie **STRG**+**Q**, geben Sie im Suchfeld den Begriff **Umgebung** ein, und wählen Sie aus den Ergebnissen dann **Umgebung --> Allgemein** aus.
 
-   > [!TIP]
-   > Wenn das Dialogfeld angezeigt wird, können Sie **F1** drücken, um Hilfe zu den verschiedenen Einstellungen auf dieser Seite zu erhalten.
+> [!TIP]
+> Wenn das Dialogfeld „Optionen“ angezeigt wird, können Sie **F1** drücken, um Hilfe zu den verschiedenen Einstellungen auf dieser Seite zu erhalten.
 
 ## <a name="environment-color-themes"></a>Umgebungsfarbschemas
 
-Geben Sie `environment` im Feld **Schnellstart** ein, und klicken Sie auf **Umgebung > Allgemein**, um das Farbschema zwischen hell, dunkel und blau zu ändern. Ändern Sie die Option **Farbschema** im Dialogfeld **Optionen**.
+Geben Sie im Suchfeld den Begriff **Umgebung** ein, und klicken Sie auf **Umgebung --> Allgemein**, um das Farbdesign zwischen hell, dunkel und blau zu ändern. Ändern Sie die Option **Farbschema** im Dialogfeld **Optionen**.
 
-Geben Sie `environment` im Feld **Schnellstart** ein, und klicken Sie auf **Umgebung > Schriftarten und Farben**, um die Optionen für die farbliche Kennzeichnung im Editor zu ändern. Weitere Informationen finden Sie unter [Vorgehensweise: Ändern von Schriftarten und Farben](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
+Geben Sie im Suchfeld den Begriff **Umgebung** ein, und klicken Sie auf **Umgebung --> Schriftarten und Farben**, um die Optionen für die farbliche Kennzeichnung im Editor zu ändern. Weitere Informationen finden Sie unter [How to: Ändern von Schriftarten und Farben](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
 
 ### <a name="main-menu-casing"></a>Groß-/Kleinschreibung im Hauptmenü
 
-Sie können für die Groß- und Kleinschreibung im Hauptmenü zwischen **Erster Buchstabe groß** (z.B. „Datei“) und **Großbuchstaben** (z.B. „DATEI“) wechseln. Geben Sie `environment` im Feld **Schnellstart** ein, klicken Sie auf **Umgebung > Allgemein**, und ändern Sie dann die Option **Traditionellen Menüleistenstil mit großen Anfangsbuchstaben verwenden**.
+Sie können für die Groß- und Kleinschreibung im Hauptmenü zwischen **Erster Buchstabe groß** (z.B. „Datei“) und **Großbuchstaben** (z.B. „DATEI“) wechseln. Geben Sie im Suchfeld den Begriff **Umgebung** ein, wählen Sie **Umgebung --> Allgemein** aus, und ändern Sie dann die Option **Traditionellen Menüleistenstil mit großen Anfangsbuchstaben verwenden**.
 
 ### <a name="customize-menus-and-toolbars"></a>Anpassen von Menüs und Symbolleisten
 
 Informationen zum Hinzufügen oder Entfernen von Menü- oder Symbolleistenelementen finden Sie unter [Vorgehensweise: Anpassen von Menüs und Symbolleisten](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
+::: moniker range="vs-2017"
+
 ## <a name="start-page"></a>Startseite
 
 Informationen zum Erstellen einer benutzerdefinierten Startseite für Sie und Ihr Team finden Sie unter [Anpassen der Startseite](../ide/customizing-the-start-page-for-visual-studio.md).
+
+::: moniker-end
 
 ## <a name="window-layouts"></a>Fensterlayouts
 

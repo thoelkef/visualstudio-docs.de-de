@@ -1,29 +1,31 @@
 ---
 title: IDebugGenericFieldInstance::GetTypeArguments | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - GetTypeArguments
 - IDebugGenericFieldInstance::GetTypeArguments
 ms.assetid: 6e7e0f95-181a-4805-adb3-c2407de0ab93
-author: gregvanl
+caps.latest.revision: 10
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: fbf1869603ca5f68d0e923dd81e15732046a77fe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bcc83d6f3ab6764a0a9a985e1d3be0f033a0128a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880847"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62919181"
 ---
 # <a name="idebuggenericfieldinstancegettypearguments"></a>IDebugGenericFieldInstance::GetTypeArguments
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Ruft die Typargumente für die Parameter für diese Instanz ab.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT GetTypeArguments(  
    ULONG32       cArgs,  
    IDebugField** ppArgs,  

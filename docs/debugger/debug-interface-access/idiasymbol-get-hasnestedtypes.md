@@ -1,30 +1,33 @@
 ---
 title: 'Idiasymbol:: Get_hasnestedtypes | Microsoft-Dokumentation'
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_hasNestedTypes method
 ms.assetid: 1a8306bd-10dd-40a9-81fc-01f71c348484
-author: mikejo5000
+caps.latest.revision: 11
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: 3d1b11f79e47b6b78eed95a1199f0ef8352a0e76
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 61073f5630e5da7edeb761774e4ba8b4c341a8cd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401421"
 ---
 # <a name="idiasymbolgethasnestedtypes"></a>IDiaSymbol::get_hasNestedTypes
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Ruft ein Flag, das angibt, ob der benutzerdefinierte Datentyp Typdefinitionen geschachtelte ab.  
   
 ## <a name="syntax"></a>Syntax  
   
-```C++  
+```cpp#  
 HRESULT get_hasNestedTypes (   
    BOOL* pRetVal  
 );  
@@ -38,13 +41,13 @@ HRESULT get_hasNestedTypes ( 
  Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
   
 ## <a name="requirements"></a>Anforderungen  
   
 |Anforderung|Beschreibung|  
 |-----------------|-----------------|  
-|Header:|Dia2.h|  
+|Header:|dia2.h|  
 |Version:|DIA-SDK V7. 0|  
   
 ## <a name="see-also"></a>Siehe auch  

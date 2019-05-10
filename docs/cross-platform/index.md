@@ -6,20 +6,21 @@ ms.date: 10/31/2018
 author: jasongroce
 ms.author: jasgro
 ms.topic: landing-page
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-mobile
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: 3db198017d15961cf10e30caa1fd860804b9ad3a
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: d9c50abb749829843c7794688b94bf84f5bc1fb3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154002"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824918"
 ---
 # <a name="mobile-development-with-c-documentation"></a>Mobile Entwicklung mit C++-Dokumentation
 
 Erstellen Sie mit Visual Studio native C++-Apps für iOS-, Android- und Windows-Geräte.
+
+<!-- markdownlint-disable MD033 -->
 
 <ul class="panelContent cardsF">
     <li>

@@ -1,22 +1,24 @@
 ---
 layout: LandingPage
 title: Debuggen von Apps | Microsoft-Dokumentation
-description: Erfahren Sie, wie Sie Visual Studio 2017 für das Debuggen von Anwendungen, Diensten und Tools in der Sprache Ihrer Wahl für Ihre Plattformen und Geräte verwenden können.
+description: Erfahren Sie, wie Sie Visual Studio für das Debuggen von Anwendungen, Diensten und Tools in der Sprache Ihrer Wahl für Ihre Plattformen und Geräte verwenden können.
 ms.custom: seodec18
 ms.topic: landing-page
 ms.author: mikejo
 author: mikejo5000
-manager: douge
-ms.openlocfilehash: 79a3aa8fd2d86b7c64d719dc745138b970b92d3c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: f3bf5cc1dd11e0062ca849f16fb806fa756e2203
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886636"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846353"
 ---
 # <a name="debugging-in-visual-studio"></a>Debuggen in Visual Studio
 
 Mit dem Visual Studio-Debugger können Sie das Laufzeitverhalten eines Programms überwachen und Probleme finden. Der Debugger kann mit allen Visual Studio-Programmiersprachen sowie den zugehörigen Bibliotheken verwendet werden. Mithilfe des Debuggers können Sie die Ausführung des Programms unterbrechen, um den Code zu untersuchen, Variablen im Programm zu untersuchen und zu bearbeiten, Register anzuzeigen, die aus dem Quellcode erstellten Anweisungen zu lesen und den von der Anwendung belegten Speicherplatz anzuzeigen.
+
+<!-- markdownlint-disable MD033 -->
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -48,25 +50,7 @@ Mit dem Visual Studio-Debugger können Sie das Laufzeitverhalten eines Programms
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>C#-Code mit weniger Fehlern schreiben</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_video.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Video zur Verwendung des Debuggers ansehen</h3>
+                        <h3>Debugverfahren und -tools</h3>
                     </div>
                 </div>
             </div>

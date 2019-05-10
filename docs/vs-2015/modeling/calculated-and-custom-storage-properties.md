@@ -1,25 +1,22 @@
 ---
 title: Berechnete und benutzerdefinierte Speichereigenschaften | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain properties
 ms.assetid: 42b785f9-2b0f-4f13-a6b4-246e5e0d477a
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 82d90d6965558ba6d28753fb71b3b227a84467a6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a5aa6edaaba54f9c08921a594b90ca1a7352e4da
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852855"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433441"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Berechnete und benutzerdefinierte Speichereigenschaften
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,30 +37,30 @@ Alle Domäneneigenschaften in einer domänenspezifischen Sprache (DSL) können f
   
 #### <a name="to-define-a-calculated-or-custom-storage-property"></a>Zum Definieren einer berechneten oder benutzerdefinierte Storage-Eigenschaft  
   
-1.  Wählen Sie in "DslDefinition.DSL", die Eigenschaft "Domain" im Diagramm oder im **DSL-Explorer**.  
+1. Wählen Sie in "DslDefinition.DSL", die Eigenschaft "Domain" im Diagramm oder im **DSL-Explorer**.  
   
-2.  In der **Eigenschaften** legen die **Art** Feld **berechnete** oder **benutzerdefinierten Speicher**.  
+2. In der **Eigenschaften** legen die **Art** Feld **berechnete** oder **benutzerdefinierten Speicher**.  
   
      Stellen Sie sicher, dass Sie auch festlegen, haben die **Typ** auf die gewünschte.  
   
-3.  Klicken Sie auf **alle Vorlagen transformieren** auf der Symbolleiste des **Projektmappen-Explorer**.  
+3. Klicken Sie auf **alle Vorlagen transformieren** auf der Symbolleiste des **Projektmappen-Explorer**.  
   
-4.  Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.  
+4. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.  
   
-     Sie erhalten die folgende Fehlermeldung angezeigt: "*Ihreklasse* enthält keine Definition für Get*YourProperty*."  
+     Die folgende Fehlermeldung wird angezeigt: "*Ihreklasse* enthält keine Definition für Get*YourProperty*."  
   
-5.  Doppelklicken Sie auf die Fehlermeldung angezeigt.  
+5. Doppelklicken Sie auf die Fehlermeldung angezeigt.  
   
      Dsl\GeneratedCode\DomainClasses.cs oder DomainRelationships.cs wird geöffnet. Über den hervorgehobenen Methodenaufruf, ein Kommentar aufgefordert, eine Implementierung für Get bereitstellen*YourProperty*().  
   
     > [!NOTE]
-    >  Diese Datei wird aus "DslDefinition.DSL" generiert. Wenn Sie diese Datei bearbeiten, Ihre Änderungen verloren das nächste Mal, die Sie klicken **alle Vorlagen transformieren**. Fügen Sie stattdessen die erforderliche Methode in einer separaten Datei hinzu.  
+    > Diese Datei wird aus "DslDefinition.DSL" generiert. Wenn Sie diese Datei bearbeiten, Ihre Änderungen verloren das nächste Mal, die Sie klicken **alle Vorlagen transformieren**. Fügen Sie stattdessen die erforderliche Methode in einer separaten Datei hinzu.  
   
-6.  Erstellen oder öffnen Sie eine Datei in einem separaten Ordner, z. B. CustomCode\\*YourDomainClass*. Cs.  
+6. Erstellen oder öffnen Sie eine Datei in einem separaten Ordner, z. B. CustomCode\\*YourDomainClass*. Cs.  
   
      Stellen Sie sicher, dass der Namespace des generierten Codes identisch ist.  
   
-7.  Schreiben Sie eine partielle Implementierung der Domänenklasse in der Klassendatei. Schreiben Sie in der Klasse, eine Definition für die fehlende `Get` -Methode, die das folgende Beispiel ähnelt:  
+7. Schreiben Sie eine partielle Implementierung der Domänenklasse in der Klassendatei. Schreiben Sie in der Klasse, eine Definition für die fehlende `Get` -Methode, die das folgende Beispiel ähnelt:  
   
     ```  
     namespace Company.FamilyTree  
@@ -73,7 +70,7 @@ Alle Domäneneigenschaften in einer domänenspezifischen Sprache (DSL) können f
     }  }  
     ```  
   
-8.  Setzen Sie **Art** zu **benutzerdefinierten Speicher**, außerdem müssen Sie zu einer `Set` Methode. Zum Beispiel:  
+8. Setzen Sie **Art** zu **benutzerdefinierten Speicher**, außerdem müssen Sie zu einer `Set` Methode. Zum Beispiel:  
   
     ```  
     void SetAgeValue(int value)  
@@ -88,7 +85,7 @@ Alle Domäneneigenschaften in einer domänenspezifischen Sprache (DSL) können f
   
 10. Testen Sie die Eigenschaft an. Stellen Sie sicher, dass Sie versuchen **Rückgängig** und **wiederholen**.  
   
-##  <a name="setters"></a> Transaktionen und benutzerdefinierten Setter  
+## <a name="setters"></a> Transaktionen und benutzerdefinierten Setter  
  In der Set-Methode der Eigenschaft des benutzerdefinierten Speicher müssen Sie keinen zu eine Transaktion zu öffnen, da die Methode in der Regel innerhalb einer aktiven Transaktion aufgerufen wird.  
   
  Die Set-Methode kann jedoch auch aufgerufen werden, wenn der Benutzer zum Rückgängigmachen oder Wiederholen aufruft, oder wenn eine Transaktion ein Rollback ausgeführt wird. Wenn <xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A> ist "true", die Set-Methode sollte Verhalten sich wie folgt:  
@@ -118,6 +115,3 @@ void SetAgeValue(int value)
  [Navigieren in und Aktualisieren von Modellen im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Eigenschaften von Domäneneigenschaften](../modeling/properties-of-domain-properties.md)   
  [So definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md)
-
-
-

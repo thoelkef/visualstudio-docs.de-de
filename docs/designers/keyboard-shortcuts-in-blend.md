@@ -1,20 +1,19 @@
 ---
 title: Tastenkombinationen in Blend
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 3a1b6830-30c2-4a36-bd14-6961f5edf9cb
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86f60d0643c5c81a1d351d3be8ba29ee8b97ba86
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c38eaaa42ae0869ae26f0a048f69a94684b240c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965952"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844324"
 ---
 # <a name="keyboard-shortcuts-in-blend"></a>Tastenkombinationen in Blend
 

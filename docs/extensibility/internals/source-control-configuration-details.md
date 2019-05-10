@@ -7,24 +7,24 @@ helpviewer_keywords:
 ms.assetid: adbee9fc-7a2e-4abe-a3b8-e6615bcd797f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca634ae50268a87f637dd812508ae793bad74115
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: 59aa3ac36e989b2e2e1af2e36e8360ef53cb8438
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894232"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428996"
 ---
 # <a name="source-control-configuration-details"></a>Konfigurationsdetails für die Quellcodeverwaltung
 Um die Datenquellen-Steuerelement zu implementieren, müssen Sie zum ordnungsgemäßen Konfigurieren von Ihrem Projektsystem oder Editor, um die folgenden Schritte ausführen:
 
--   Berechtigung zum Übergang in den geänderten Zustand anfordern
+- Berechtigung zum Übergang in den geänderten Zustand anfordern
 
--   Berechtigung zum Speichern einer Datei
+- Berechtigung zum Speichern einer Datei
 
--   Fordern Sie über die Berechtigung zum Hinzufügen, entfernen oder Umbenennen von Dateien im Projekt
+- Fordern Sie über die Berechtigung zum Hinzufügen, entfernen oder Umbenennen von Dateien im Projekt
 
 ## <a name="request-permission-to-transition-to-changed-state"></a>Berechtigung zum Übergang in den geänderten Zustand anfordern
  Ein Projekt oder eine Editor muss über die Berechtigung zum Übergang in den Zustand der geänderten (geändert) anfordern, indem er <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>. Jede-Editor, der implementiert <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A> müssen Aufrufen <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> und Genehmigung zum Wechseln des Dokuments aus der Umgebung vor der Rückgabe `True` für <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A>. Ein Projekt ist im Wesentlichen ein Editor für eine Projektdatei, und daher hat die gleiche Verantwortung für die Implementierung geändert-statusüberwachung für die Projektdatei aus, wie in ein Text-Editor für die Dateien. Die Umgebung verarbeitet den geänderten Zustand der Lösung, jedoch müssen Sie den geänderten Zustand eines Objekts die Projektmappe verweist, jedoch nicht gespeichert, z. B. einer Projektdatei oder seiner Elemente behandeln. Im Allgemeinen, wenn Ihrem Projekt oder den Editor zum Verwalten der Persistenz für ein Element verantwortlich ist, ist dann verantwortlich für die Implementierung geändert-statusüberwachung.
@@ -41,7 +41,7 @@ Um die Datenquellen-Steuerelement zu implementieren, müssen Sie zum ordnungsgem
  Bevor ein Projekt oder der Editor eine Datei gespeichert wird, muss er Aufrufen <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A> oder <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>. Für Projektdateien werden diese Aufrufe automatisch von der Lösung durchgeführt, die weiß, wann eine Projektdatei zu speichern. Editoren sind dafür verantwortlich, dass diese Aufrufe, es sei denn, die Implementierung von `IVsPersistDocData2` verwendet die Hilfsfunktion <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>. Wenn Ihr Editor implementiert `IVsPersistDocData2` in auf diese Weise, und klicken Sie dann auf den Aufruf von `IVsQueryEditQuerySave2::QuerySaveFile` oder `IVsQueryEditQuerySave2::QuerySaveFiles` für Sie vorgenommen wird.
 
 > [!NOTE]
->  Stellen Sie diese Aufrufe immer präemptiv, d. h. zu einem Zeitpunkt, wenn der Editor ist einen Abbruch zu empfangen.
+> Stellen Sie diese Aufrufe immer präemptiv, d. h. zu einem Zeitpunkt, wenn der Editor ist einen Abbruch zu empfangen.
 
 ## <a name="request-permission-to-add-remove-or-rename-files-in-the-project"></a>Fordern Sie über die Berechtigung zum Hinzufügen, entfernen oder Umbenennen von Dateien im Projekt
  Bevor ein Projekt hinzufügen, umbenennen oder einer Datei oder eines Verzeichnisses entfernen kann, müssen die entsprechenden Aufrufen `IVsTrackProjectDocuments2::OnQuery*` Methode um eine Berechtigung aus der Umgebung. Wenn die Berechtigung erteilt, und klicken Sie dann das Projekt muss der Vorgang abgeschlossen und rufen Sie dann auf die entsprechende `IVsTrackProjectDocuments2::OnAfter*` Methode, um der Umgebung zu benachrichtigen, dass der Vorgang abgeschlossen ist. Das Projekt muss Aufrufen der Methoden der <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> Schnittstelle für alle Dateien (z. B. spezielle Dateien) und nicht nur die übergeordneten-Dateien. Datei-Aufrufe sind obligatorisch, aber Directory-Aufrufe sind optional. Wenn Ihr Projekt Verzeichnisinformationen, sollten Sie den entsprechenden Aufrufen <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> Methoden, aber wenn keine dieser Informationen, und klicken Sie dann die Umgebung Verzeichnisinformationen folgert.

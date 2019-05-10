@@ -1,25 +1,20 @@
 ---
 title: 0 x-2 x-4 X MSAA Varianten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8e661823a07945c22679832dc716ad2f25f4f6aa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f6cc62e4ba56cb7be461bbf3cee5435cb404b7fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793775"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439985"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x-MSAA-Varianten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,20 +29,20 @@ ms.locfileid: "51793775"
  Wenn das MSAA auf Ihrer App nicht bereits aktualisiert ist, dann zeigen die Varianten 2x MSAA und 4x MSAA die relative Auswirkung einer Aktivierung in Ihrer App auf die Leistung an. Wenn die Auswirkung in akzeptabler Weise niedrig ist, können Sie MSAA aktivieren, um die Bildqualität ihrer App zu steigern.  
   
 > [!NOTE]
->  Ihre Hardware unterstützt MSAA eventuell nicht vollständig für alle Formate. Wenn für eine dieser Varianten eine Hardwarebeschränkung gilt, die nicht umgangen werden kann, wird die entsprechende Spalte in der Leistungszusammenfassungstabelle leer gelassen und eine Fehlermeldung ausgegeben.  
+> Ihre Hardware unterstützt MSAA eventuell nicht vollständig für alle Formate. Wenn für eine dieser Varianten eine Hardwarebeschränkung gilt, die nicht umgangen werden kann, wird die entsprechende Spalte in der Leistungszusammenfassungstabelle leer gelassen und eine Fehlermeldung ausgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
  Diese Varianten überschreiben die Samplinganzahl- und die Samplingqualitäts-Argumente auf Aufrufen von `ID3DDevice::CreateTexture2D`, die Renderziele erstellen. Diese Parameter werden insbesondere überschrieben, wenn:  
   
 - Das in `D3D11_TEXTURE2D_DESC` übergebene `pDesc`-Objekt ein Renderziel mit folgenden Eigenschaften beschreibt:  
   
-  -   Für das BindFlags-Member ist entweder das Flag D3D11_BIND_TARGET oder das Flag D3D11_BIND_DEPTH_STENCIL gesetzt.  
+  - Für das BindFlags-Member ist entweder das Flag D3D11_BIND_TARGET oder das Flag D3D11_BIND_DEPTH_STENCIL gesetzt.  
   
-  -   Das Usage-Member ist auf D3D11_USAGE_DEFAULT gesetzt.  
+  - Das Usage-Member ist auf D3D11_USAGE_DEFAULT gesetzt.  
   
-  -   Das CPUAccessFlags-Member ist auf 0 gesetzt.  
+  - Das CPUAccessFlags-Member ist auf 0 gesetzt.  
   
-  -   Das MipLevels-Member ist auf 1 gesetzt.  
+  - Das MipLevels-Member ist auf 1 gesetzt.  
   
 - Das Gerät unterstützt die angefragte Samplinganzahl (0, 2 oder 4) und Samplingqualität (0) für das angefragte Renderzielformat (Member D3D11_TEXTURE2D_DESC::Format), wie durch `ID3D11Device::CheckMultisampleQualityLevels` festgelegt.  
   
@@ -55,7 +50,7 @@ ms.locfileid: "51793775"
   
   Diese Varianten überschreiben auch MSAA-Einstellungen auf allen durch Verwendung von `IDXGIFactory::CreateSwapChain`, `IDXGIFactory2::CreateSwapChainForHwnd`, `IDXGIFactory2::CreateSwapChainForCoreWindow`, `IDXGIFactory2::CreateSwapChainForComposition` und `ID3D11CreateDeviceAndSwapChain` erstellten Swapketten.  
   
-  Der Nettoeffekt dieser Änderungen ist, dass das gesamte Rendering in ein MSAA-Renderziel geht, aber wenn Ihre Anwendung eines dieser Renderziele oder einen dieser Swapketten-Puffer als Ansicht für eine Shaderressource oder für einen ungeordneten Zugang verwendet, dann werden die Daten aus der aufgelösten MSAA-Kopie des Renderziels gesampelt.  
+  Der Nettoeffekt dieser Änderungen ist, dass das gesamte Rendering in ein MSAA-Renderziel geht, aber wenn Ihre Anwendung eines dieser Renderziele oder einen dieser Swapketten-Puffer als Shaderressourcenansicht oder unsortierte Zugriffsansicht verwendet, dann werden die Daten aus der aufgelösten MSAA-Kopie des Renderziels gesampelt.  
   
 ## <a name="restrictions-and-limitations"></a>Einschränkungen  
  In Direct3D11 sind MSAA-Texturen mehr eingeschränkt als Nicht-MSAA-Texturen. Sie können z. B. `ID3D11DeviceContext::UpdateSubresource` nicht auf einer MSAA-Textur aufrufen, und der Aufruf von `ID3D11DeviceContext::CopySubresourceRegion` schlägt fehl, wenn die Samplinganzahl und die Samplingqualität der Quellressource und der Zielressource nicht übereinstimmen, was passieren kann, wenn die Variante die MSAA-Einstellungen einer, aber nicht der anderen Ressource überschreibt.  
@@ -83,6 +78,3 @@ chain_description.SampleDesc.Quality = 0;
   
 // Call IDXGISwapChain::CreateSwapChain or D3D11CreateDeviceAndSwapChain, etc.  
 ```
-
-
-

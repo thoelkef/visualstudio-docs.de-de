@@ -2,21 +2,20 @@
 title: Workflow-Designer - Receive-Aktivitätsdesigner
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.ServiceModel.Activities.Receive.UI
 ms.assetid: f58d3c70-944d-4bb4-90a7-e68c103caddc
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86c2d67d3922679096a3b3980a928a234515b78e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bcab59a631b1dbf9c85c7bff2454a42e97accff8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858991"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969331"
 ---
 # <a name="receive-activity-designer"></a>Receive-Aktivitätsdesigner
 
@@ -38,7 +37,6 @@ Alternativ die **ReceiveAndSendReply** -Vorlagendesigner in der **Messaging** Ka
 
 In der folgenden Tabelle werden die <xref:System.ServiceModel.Activities.Receive>-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden. Diese Eigenschaften können im Eigenschaftenraster oder auf der Oberfläche des Workflow-Designer bearbeitet werden. Die einzige erforderliche Eigenschaft ist die <xref:System.ServiceModel.Activities.Receive.OperationName%2A>-Eigenschaft.
 
-
 | Eigenschaftenname | Erforderlich | Verwendung |
 |-|----------|-|
 | <xref:System.Activities.Activity.DisplayName%2A> | False | Gibt den benutzerfreundlichen Namen der <xref:System.ServiceModel.Activities.Receive>-Aktivität an. Der Standardwert lautet Receive.<br /><br /> Obwohl die Verwendung eines nicht standardmäßigen Werts für den benutzerfreundlichen <xref:System.Activities.Activity.DisplayName%2A> nicht zwingend erforderlich ist, wird empfohlen, einen solchen Wert zu verwenden. |
@@ -52,7 +50,7 @@ In der folgenden Tabelle werden die <xref:System.ServiceModel.Activities.Receive
 | <xref:System.ServiceModel.Activities.Receive.KnownTypes%2A> | False | Gibt eine Auflistung bekannter Typen für den von dieser <xref:System.ServiceModel.Activities.Receive>-Aktivität implementierten Dienstvorgang an. Diese Eigenschaft muss in Verbindung mit der <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A>-Eigenschaft verwendet werden, die auf <xref:System.Runtime.Serialization.DataContractSerializer> festgelegt wurde. Sie wird ignoriert, wenn der <xref:System.Xml.Serialization.XmlSerializer> verwendet wird.<br /><br /> Wählen Sie die Schaltfläche mit den Auslassungspunkten neben der **KnownTypes** Feld im Eigenschaftenraster zum Anzeigen der **Typauflistungs-Editor** Dialogfeld, in dem Sie relevante Typen hinzufügen können. Weitere Informationen zur Verwendung dieses Dialogfelds finden Sie unter den [Auflistung-Editor-Dialogfeld](../workflow-designer/type-collection-editor-dialog-box.md) Thema. |
 | <xref:System.ServiceModel.Activities.Receive.ProtectionLevel%2A> | False | Gibt die <xref:System.Net.Security.ProtectionLevel>-Einstellung für die Nachricht an.<br /><br /> 1. <xref:System.Net.Security.ProtectionLevel> bedeutet, dass nur die Authentifizierung.<br />2. <xref:System.Net.Security.ProtectionLevel> bedeutet, dass signiert Daten, die Integrität übertragener Daten sicherzustellen.<br />3. <xref:System.Net.Security.ProtectionLevel> bedeutet, dass Daten verschlüsselt und signiert, um die Vertraulichkeit und Integrität übertragener Daten sicherzustellen. |
 | <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> | False | Gibt den Typ des Serialisierungsprogramms an, das für den von der <xref:System.ServiceModel.Activities.Receive>-Aktivität implementierten Dienstvorgang verwendet werden soll. Der Standardwert ist <xref:System.Runtime.Serialization.DataContractSerializer>, der eine Instanz eines Typs, der einen angegebenen Datenvertrag verwendet, in einen XML-Datenstrom oder ein Dokument serialisiert und deserialisiert. Der <xref:System.Xml.Serialization.XmlSerializer> kann auch verwendet werden, wenn eine genauere Kontrolle des XML-Codes erforderlich ist. |
-| <xref:System.ServiceModel.Activities.Receive.Action%2A> | False | Gibt den Aktionsheader der Nachricht an. Wenn sie nicht explizit festgelegt wird, sein Standardwert: https://tempuri.org/{service Vertrag Namespace} / {Dienstvertragsname} / {Vorgangsname}. |
+| <xref:System.ServiceModel.Activities.Receive.Action%2A> | False | Gibt den Aktionsheader der Nachricht an. Wenn sie nicht explizit festgelegt wird, sein Standardwert: `https://tempuri.org/{service contract namespace}/{service contract name}/{operation name}`. |
 
 ## <a name="see-also"></a>Siehe auch
 

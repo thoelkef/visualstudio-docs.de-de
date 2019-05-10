@@ -7,16 +7,15 @@ helpviewer_keywords:
 - models, versions of Visual Studio
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 06a34bd09c84c3afc4162c4930fc34963b56b8fb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7d8366c0f87830a77f550dabbce2e8f875171418
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905451"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823980"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Lesen von Modellen und Diagrammen in anderen Versionen von Visual Studio
 
@@ -35,16 +34,16 @@ Aus diesem Grund sollten Sie ein Abhängigkeitsdiagramm, lesen müssen Sie auch 
 
 Um ein Abhängigkeitsdiagramm zu lesen, lautet der minimale Satz von Dateien, die Sie benötigen:
 
--   Die beiden Diagrammdateien für das Diagramm, das Sie lesen z. B., möchten **MyDiagram.classdiagram und MyDiagram.classdiagram.layout**.
+- Die beiden Diagrammdateien für das Diagramm, das Sie lesen z. B., möchten **MyDiagram.classdiagram und MyDiagram.classdiagram.layout**.
 
     > [!NOTE]
     > Bei Abhängigkeitsdiagramme, sollten Sie auch die Datei mit dem Namen haben _MyDiagram_**. layerdiagram.suppressions**.
 
--   Die Modellierungsprojektdatei (**MyModel.modelproj**)
+- Die Modellierungsprojektdatei (**MyModel.modelproj**)
 
--   Die Stammmodelldatei (**ModelDefinition\MyModel. UML**)
+- Die Stammmodelldatei (**ModelDefinition\MyModel. UML**)
 
--   Die Paketdateien für ein beliebiges Paket im Diagramm auf die verwiesen wird. (**ModelDefinition\MyPackage. UML**)
+- Die Paketdateien für ein beliebiges Paket im Diagramm auf die verwiesen wird. (**ModelDefinition\MyPackage. UML**)
 
 ## <a name="changes-that-you-can-make-in-read-only-mode"></a>Änderungen, die Sie im schreibgeschützten Modus vornehmen können
 

@@ -1,14 +1,9 @@
 ---
 title: 'Exemplarische Vorgehensweise: Konfigurieren und verwenden einen benutzerdefinierten Regelsatz | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, walkthroughs
 - code analysis, rule sets
@@ -17,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5976ee0c0fbfc4befe97f2ab25c46744a8267134
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: fa3a91df779094e3e11722dfc7bfc03c58bcea7e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906044"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383417"
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Exemplarische Vorgehensweise: Konfigurieren und Verwenden eines benutzerdefinierten Regelsatzes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,21 +26,21 @@ In dieser exemplarischen Vorgehensweise veranschaulicht, wie Code Analysetools v
   
  In dieser exemplarischen Vorgehensweise werden Sie diese Prozesse durchlaufen:  
   
--   Erstellen Sie eine Klassenbibliothek.  
+- Erstellen Sie eine Klassenbibliothek.  
   
--   Wählen Sie die **grundlegende Microsoft-Regeln für Entwurfsrichtlinien** Codeanalyse-Regelsatz.  
+- Wählen Sie die **grundlegende Microsoft-Regeln für Entwurfsrichtlinien** Codeanalyse-Regelsatz.  
   
--   Fügen Sie Ihren eigenen Code zur Klasse hinzu.  
+- Fügen Sie Ihren eigenen Code zur Klasse hinzu.  
   
--   Codeanalyse ausführen.  
+- Codeanalyse ausführen.  
   
--   Passen Sie den Regelsatz an.  
+- Passen Sie den Regelsatz an.  
   
--   Führen Sie der Codeanalyse aus aus, und sehen Sie, wie den Regelsatz Anpassung Verhalten funktioniert.  
+- Führen Sie der Codeanalyse aus aus, und sehen Sie, wie den Regelsatz Anpassung Verhalten funktioniert.  
   
 ## <a name="prerequisites"></a>Vorraussetzungen  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]oder [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]oder [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 ## <a name="using-rule-sets-with-code-analysis"></a>Mit Regel legt fest, mit der Codeanalyse  
  Erstellen Sie zunächst eine einfache Klassenbibliothek.  
@@ -75,7 +70,7 @@ In dieser exemplarischen Vorgehensweise veranschaulicht, wie Code Analysetools v
     Klicken Sie auf im Menü Datei auf **ausgewählte Elemente speichern** können Sie die Projektdatei mit Informationen zu den Regelsatz aus, die Sie ausgewählt und dessen Einstellungen.  
   
    > [!TIP]
-   >  In einer realen Situation wird empfohlen, für die Priorisierung der Probleme, die Sie mit der Codeanalyse möchten verwenden für den Einstieg die **Mindestregeln** Regelsatz und beheben Sie die gewünschten Probleme und klicken Sie dann inkrementell hinzufügen Weitere Regeln oder Regelsätze legt fest, zu finden und beheben Sie die zusätzliche Probleme.  
+   > In einer realen Situation wird empfohlen, für die Priorisierung der Probleme, die Sie mit der Codeanalyse möchten verwenden für den Einstieg die **Mindestregeln** Regelsatz und beheben Sie die gewünschten Probleme und klicken Sie dann inkrementell hinzufügen Weitere Regeln oder Regelsätze legt fest, zu finden und beheben Sie die zusätzliche Probleme.  
   
    Als Nächstes werden Sie Code hinzufügen, auf die Klassenbibliothek, die verwendet wird, um Verstöße gegen die CA1704 veranschaulichen "Bezeichner sollten korrekt geschrieben werden" Codeanalyseregel. Weitere Informationen finden Sie unter [CA1704: Bezeichner sollten korrekt geschrieben werden](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).  
   
@@ -115,7 +110,7 @@ In dieser exemplarischen Vorgehensweise veranschaulicht, wie Code Analysetools v
   
 2. Klicken Sie im Fenster "Fehlerliste", auf **Warnungen** , und klicken Sie dann auf die **Beschreibung** Spaltenheader, um die Warnungen sortieren alphanumerisch.  
   
-    In einer echten Anwendung würden Sie beheben Sie alle Regelverstöße, korrigieren sich an diesem Punkt oder optional deaktivieren oder eine Regel unterdrücken, wenn Sie ermittelt, dass nicht zu beheben. Weitere Informationen finden Sie unter [unterdrückt Warnungen durch mithilfe des SuppressMessage-Attributs](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md).  
+    In einer echten Anwendung würden Sie beheben Sie alle Regelverstöße, korrigieren sich an diesem Punkt oder optional deaktivieren oder eine Regel unterdrücken, wenn Sie ermittelt, dass nicht zu beheben. Weitere Informationen finden Sie unter [Suppress Warnings By Using the SuppressMessage Attribute (Unterdrücken von Warnungen mithilfe des SuppressMessage-Attributs)](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md).  
   
 3. Beachten Sie, dass die CA1704 Warnungen. Diese Verletzungen dieser Regel anzugeben, dass Sie "sollten einen aussagekräftigeren Namen für die Parameter." Konnte, beheben Sie das Problem in Ihrem Code aus, oder Sie können die Regel deaktivieren, wie in der nächsten Prozedur beschrieben.  
   
@@ -153,13 +148,10 @@ In dieser exemplarischen Vorgehensweise veranschaulicht, wie Code Analysetools v
   
 #### <a name="run-code-analysis-on-the-rulesetsample-project-for-the-second-time"></a>Codeanalyse für das Projekt RuleSetSample zum zweiten Mal ausführen.  
   
-1.  Auf der **analysieren** Menü klicken Sie auf **Codeanalyse für RuleSetSample ausführen**.  
+1. Auf der **analysieren** Menü klicken Sie auf **Codeanalyse für RuleSetSample ausführen**.  
   
-2.  Im Fenster "Fehlerliste", beachten Sie, dass wenn Sie auf **Warnungen**, nicht mehr die CA1704 Warnung Verletzungen für die Regel "Bezeichner sollten korrekt geschrieben werden." angezeigt.  
+2. Im Fenster "Fehlerliste", beachten Sie, dass wenn Sie auf **Warnungen**, nicht mehr die CA1704 Warnung Verletzungen für die Regel "Bezeichner sollten korrekt geschrieben werden." angezeigt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Konfigurieren der Codeanalyse für ein Projekt mit verwaltetem Code](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
  [Codeanalyse-Regelsatzreferenz](../code-quality/code-analysis-rule-set-reference.md)
-
-
-

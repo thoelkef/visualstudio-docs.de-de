@@ -1,8 +1,6 @@
 ---
 title: Seite "Erstellen", Projekt-Designer (C#)
 ms.date: 06/20/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuild
@@ -12,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 77ff1bfc-d633-4634-ba29-9afdb6d7e362
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b003b3f965ab4f3857e2a532ae715d99533aa8e7
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: f9aa586f5036c4aa2c321f2dda8333ad4342e165
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38783817"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62791668"
 ---
 # <a name="build-page-project-designer-c"></a>Seite "Erstellen", Projekt-Designer (C#)
 Verwenden Sie die Seite **Erstellen** des **Projekt-Designers**, um die Buildkonfigurationseigenschaften des Projekts anzugeben. Diese Seite bezieht sich nur auf [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]-Projekte.
@@ -33,7 +31,7 @@ Um auf die Seite **Erstellen** zuzugreifen, wählen Sie einen Projektknoten (nic
 Die folgenden Optionen ermöglichen es Ihnen, die anzuzeigende bzw. zu ändernde Konfiguration und Plattform auszuwählen.
 
 > [!NOTE]
-> Mit vereinfachten Buildkonfigurationen bestimmt das Projektsystem, ob eine Debug- oder eine Releaseversion erstellt werden soll. Deshalb werden diese Optionen nicht angezeigt. Weitere Informationen finden Sie unter [Gewusst wie: Festlegen von Debug- und Releasekonfigurationen](../../debugger/how-to-set-debug-and-release-configurations.md).
+> Mit vereinfachten Buildkonfigurationen bestimmt das Projektsystem, ob eine Debug- oder eine Releaseversion erstellt werden soll. Deshalb werden diese Optionen nicht angezeigt. Weitere Informationen finden Sie unter [Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen](../../debugger/how-to-set-debug-and-release-configurations.md).
 
 **Konfiguration**: gibt an, welche Konfigurationseinstellungen angezeigt oder geändert werden sollen. Es stehen die Einstellungen **Aktiv (Debuggen)** (Standard), **Debuggen**, **Release** oder **Alle Konfigurationen** zur Verfügung.
 
@@ -58,12 +56,11 @@ Wenn Sie eine Anwendung als 64-Bit-Anwendung ausführen, wird die Zeigergröße 
 
 Dieses Kontrollkästchen ist nur verfügbar, wenn die folgenden Bedingungen zutreffen:
 
--   Auf der Seite **Erstellen** ist die Liste **Plattformziel** auf **Any CPU** festgelegt.
+- Auf der Seite **Erstellen** ist die Liste **Plattformziel** auf **Any CPU** festgelegt.
 
--   Auf der Seite **Anwendung** wird in der Liste **Ausgabetyp** angegeben, dass das Projekt eine Anwendung ist.
+- Auf der Seite **Anwendung** wird in der Liste **Ausgabetyp** angegeben, dass das Projekt eine Anwendung ist.
 
--   Auf der Seite **Anwendung** ist in der Liste **Zielframework** „.NET Framework 4.5“ angegeben.
-
+- Auf der Seite **Anwendung** ist in der Liste **Zielframework** „.NET Framework 4.5“ angegeben.
 
 **Unsicheren Code zulassen**: ermöglicht das Kompilieren von Code, der das [unsafe](/dotnet/csharp/language-reference/keywords/unsafe)-Schlüsselwort verwendet. Weitere Informationen finden Sie unter [/unsafe (C# Compiler Options](/dotnet/csharp/language-reference/compiler-options/unsafe-compiler-option).
 
@@ -85,7 +82,7 @@ Die folgenden Einstellungen werden verwendet, um anzugeben, welche Warnungen als
 
 **Alle**: Alle Warnungen werden als Fehler behandelt.
 
-## <a name="output"></a>Ausgabe
+## <a name="output"></a>Output
 Die folgenden Einstellungen werden verwendet, um die Ausgabeoptionen für den Buildvorgang zu konfigurieren.
 
 **Ausgabepfad**: legt den Speicherort der Ausgabedateien für die Konfiguration des Projekts fest. Geben Sie den Pfad der Buildausgabe in dieses Feld ein, oder wählen Sie die Schaltfläche **Durchsuchen**, um einen Pfad anzugeben. Beachten Sie, dass der Pfad relativ ist. Bei der Eingabe eines absoluten Pfads wird dieser als relativer Pfad gespeichert. Der Standardpfad lautet bin\Debug\ oder bin\Release\\.

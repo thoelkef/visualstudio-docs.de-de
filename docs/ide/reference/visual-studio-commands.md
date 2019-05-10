@@ -1,7 +1,6 @@
 ---
 title: Befehle
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - Visual Studio, commands
@@ -10,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 76ffa394-ee89-4629-aba9-1a62b72e6cc1
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d4b2c4a3f7995fd00b9997e68a6bd7f64114d4a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5730238ec899aa4e34c8ed548f49625b33d432d7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909761"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789369"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio-Befehle
 

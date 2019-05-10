@@ -1,25 +1,20 @@
 ---
 title: 'Exemplarische Vorgehensweise: Fehlende Objekte durch Gerätestatus | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 1b0d2bbd-0729-4aa5-8308-70c5bf1468c5
 caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5c0ad6017dd6ff660dfbd47977e1a53346cf6c55
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 51fb019d428ed7196818c96e759c0abc8f8e68c7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773729"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961188"
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>Exemplarische Vorgehensweise: Fehlende Objekte durch Gerätestatus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,6 +108,3 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie mit [!INCLUDE[vsprvs](..
    Nachdem Sie ermittelt haben, dass der Grund für den Renderfehler eine fehlerhaft konfigurierte Tiefenfunktion sein könnte, können Sie anhand dieser Information und Ihrer Kenntnisse des Codes feststellen, wo die Tiefenfunktion falsch eingestellt wird, und das Problem dann beheben. Wenn Ihnen der Code unbekannt ist, könnten Sie anhand der Anhaltspunkte, die Sie beim Debuggen gesammelt haben, nach dem Problem suchen: Beispielsweise könnten Sie entsprechend der **Beschreibung der Tiefenschablone** in diesem Szenario den Code nach Wörtern wie „depth“ oder „GREATER“ durchsuchen. Nachdem Sie den Code korrigiert haben, erstellen Sie die App neu und führen diese erneut aus, um nun festzustellen, dass das Renderproblem behoben ist:  
   
    ![App nach Behebung des Problems](../debugger/media/vsg-walkthru1-finalview.png "vsg_walkthru1_finalview")
-
-
-

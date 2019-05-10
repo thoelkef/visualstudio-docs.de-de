@@ -9,17 +9,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, building
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d7c6b0b3a3e99c5c62713d1fdc12952ea421d8c5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 99109376c6c0279bcdd3852bd5bbadd8795c8564
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966886"
 ---
 # <a name="how-to-build-sharepoint-solutions"></a>Vorgehensweise: Erstellen von SharePoint-Lösungen
 
@@ -27,11 +27,11 @@ Erstellen Sie Ihre SharePoint Lösung funktioniert genauso wie andere Anwendunge
 
 ## <a name="to-build-sharepoint-solutions"></a>Zum Erstellen von SharePoint-Lösungen
 
-1.  Entscheiden Sie, ob Sie eine Debug- oder ein Releasebuild erstellt werden. Weitere Informationen finden Sie unter [Debuggerprojekteinstellungen](../debugger/debugger-project-settings.md).
+1. Entscheiden Sie, ob Sie eine Debug- oder ein Releasebuild erstellt werden. Weitere Informationen finden Sie unter [Debuggerprojekteinstellungen](../debugger/debugger-project-settings.md).
 
-2.  Wählen Sie die entsprechende Option zum Erstellen oder Neuerstellen der Projektmappe oder Projekt. Weitere Informationen finden Sie unter [kompilieren und generieren in Visual Studio](../ide/compiling-and-building-in-visual-studio.md).
+2. Wählen Sie die entsprechende Option zum Erstellen oder Neuerstellen der Projektmappe oder Projekt. Weitere Informationen finden Sie unter [kompilieren und generieren in Visual Studio](../ide/compiling-and-building-in-visual-studio.md).
 
-3.  Wählen Sie auf der Menüleiste **Erstellen** > **Projektmappe erstellen** aus.
+3. Wählen Sie auf der Menüleiste **Erstellen** > **Projektmappe erstellen** aus.
 
 ## <a name="see-also"></a>Siehe auch
 

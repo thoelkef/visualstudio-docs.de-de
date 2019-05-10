@@ -1,7 +1,6 @@
 ---
-title: 'CA2237: Markieren von ISerializable-Typen mit SerializableAttribute'
+title: 'CA2237: ISerializable-Typen mit SerializableAttribute markieren.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2237
@@ -12,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: 9bd6bb24-a527-43dd-9952-043c0c694f46
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8918b00ff7138c1e59644a0d124c3c3f9487ad4a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7ccc7819de8e79cae86a60fd015e6b8268c2456c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838806"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62541648"
 ---
-# <a name="ca2237-mark-iserializable-types-with-serializableattribute"></a>CA2237: Markieren von ISerializable-Typen mit SerializableAttribute
+# <a name="ca2237-mark-iserializable-types-with-serializableattribute"></a>CA2237: ISerializable-Typen mit SerializableAttribute markieren.
 
 |||
 |-|-|

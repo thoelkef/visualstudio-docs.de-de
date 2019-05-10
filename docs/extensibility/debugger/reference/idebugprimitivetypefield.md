@@ -1,23 +1,25 @@
 ---
 title: IDebugPrimitiveTypeField | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugPrimitiveTypeField interface
 ms.assetid: 73a428fd-797e-4ceb-8392-ba16f1c5226b
-author: gregvanl
+caps.latest.revision: 7
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: d6bad8b67d766b18a217fbdccd5ae3fdd5f7ec19
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 25af7b2126be79901ceb97d6c93786d59111bfe1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934043"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62871466"
 ---
 # <a name="idebugprimitivetypefield"></a>IDebugPrimitiveTypeField
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Stellt einen primitiven Typ Enumeration-Wert aus einer [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) Schnittstelle.  
   
 ## <a name="syntax"></a>Syntax  

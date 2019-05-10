@@ -13,30 +13,29 @@ dev_langs:
 - VB
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: c23d2571b021532b1a78a8207844561cc0c659b1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: a6f1c524b879d5d5476491a8979d86449f3d43c0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837172"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002565"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Generieren und Ausführen eines codierten Webleistungstests
 
-Webleistungstests werden aufgezeichnet, indem die Web-App durchsucht wird. Die Tests sind in Auslastungstests enthalten, um die Leistung der Webanwendung unter der Last mehrerer Benutzer zu messen. Ein Webleistungstest kann in ein codebasiertes Skript konvertiert werden, das Sie wie jeden anderen Quellcode bearbeiten und anpassen können. Beispielsweise können Sie Schleifen- und Verzweigungskonstrukte hinzufügen.
+Webleistungstests werden aufgezeichnet, indem die Web-App durchsucht wird. Die Tests sind in Auslastungstests enthalten, um die Leistung der Webanwendung unter der Last mehrerer Benutzer zu messen. Ein Webleistungstest kann in ein codebasiertes Skript konvertiert werden, das Sie wie jeden anderen Quellcode bearbeiten und anpassen können. Beispielsweise können Sie Schleifen- und Branchkonstrukte hinzufügen.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="generate-a-coded-web-performance-test"></a>Einen codierten Webleistungstest generieren
+## <a name="generate-a-coded-web-performance-test"></a>Generieren eines codierten Webleistungstests
 
-1.  Wenn Sie keinen Webleistungstest erstellt haben, finden Sie weitere Informationen unter [Record a web performance test (Aufzeichnen eines Webleistungstests)](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project?view=vsts).
+1. Wenn Sie keinen Webleistungstest erstellt haben, finden Sie weitere Informationen unter [Record a web performance test (Aufzeichnen eines Webleistungstests)](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project).
 
-2.  Generieren Sie den codierten Test.
+2. Generieren Sie den codierten Test.
 
-     ![Einen codierten Webleistungstest generieren](../test/media/web_test_coded_generate.png)
+     ![Generieren eines codierten Webleistungstests](../test/media/web_test_coded_generate.png)
 
-3.  Geben Sie dem Test einen Namen.
+3. Geben Sie dem Test einen Namen.
 
      ![Einen Namen für den codierten Webleistungstest eingeben](../test/media/web_test_coded_generate_nametest.png)
 
@@ -48,7 +47,7 @@ Webleistungstests werden aufgezeichnet, indem die Web-App durchsucht wird. Die T
 
      Im Code können Sie sehen, dass die GetRequestEnumerator()-Methode in C# bzw. die Run()-Methode in Visual Basic jede Validierungsregel und jede Webanforderung enthält, die im umcodierten Test enthalten war.
 
-4.  Um zu demonstrieren, wie einfacher Code hinzugefügt wird, führen Sie einen Bildlauf zum Ende der Methode durch, und fügen Sie nach dem Code für die letzte Webanforderung folgenden Code hinzu:
+4. Um zu demonstrieren, wie einfacher Code hinzugefügt wird, führen Sie einen Bildlauf zum Ende der Methode durch, und fügen Sie nach dem Code für die letzte Webanforderung folgenden Code hinzu:
 
     ```c#
     if (DateTime.Today.DayOfWeek == DayOfWeek.Wednesday)
@@ -73,9 +72,9 @@ Webleistungstests werden aufgezeichnet, indem die Web-App durchsucht wird. Die T
     End If
     ```
 
-5.  Erstellen Sie die Projektmappe, um sicherzustellen, dass der benutzerdefinierte Code kompiliert werden kann.
+5. Erstellen Sie die Projektmappe, um sicherzustellen, dass der benutzerdefinierte Code kompiliert werden kann.
 
-6.  Führen Sie den Test aus.
+6. Führen Sie den Test aus.
 
      ![Ausführung des codierten Webleistungstests](../test/media/web_test_coded_generate_run.png)
 

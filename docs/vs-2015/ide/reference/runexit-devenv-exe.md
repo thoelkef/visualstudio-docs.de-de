@@ -1,14 +1,9 @@
 ---
 title: /Runexit („devenv.exe“) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - runexit Devenv switch
 - Devenv, /runexit switch
@@ -17,18 +12,17 @@ ms.assetid: bfc94875-5fc0-4110-b961-d59c0b403790
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 86a99aed7876454d09e5bb0157f6dcaaa7fb4072
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0206f01df517c2dbd0c1c4052201dc8ded1bcbf9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242256"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115678"
 ---
 # <a name="runexit-devenvexe"></a>/Runexit (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Kompiliert das angegebene Projekt oder die angegebene Projektmappe, führt diese aus und schließt die Integrierte Entwicklungsumgebung (Integrated Development Environment; IDE)  
   
 ## <a name="syntax"></a>Syntax  
@@ -44,12 +38,12 @@ devenv /runexit {SolutionName|ProjectName}
  `ProjectName`  
  Erforderlich. Der vollständige Pfad und Name einer Projektdatei  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Kompiliert das angegebene Projekt oder die angegebene Projektmappe entsprechend den Einstellungen, die für die aktive Projektmappenkonfiguration angegeben wurde, und führt sie aus. Dieser Schalter minimiert die Integrierte Entwicklungsumgebung während das Projekt oder die Projektmappe ausgeführt wird und schließt die Entwicklungsumgebung, wenn die Ausführung abgeschlossen ist.  
   
--   Schließen Sie Zeichenfolgen, die Leerzeichen enthalten, in doppelten Anführungszeichen ein.  
+- Schließen Sie Zeichenfolgen, die Leerzeichen enthalten, in doppelten Anführungszeichen ein.  
   
--   Zusammenfassende Informationen inklusive Fehlermeldungen können im Fenster **Befehl** oder durch den `/out`-Schalter in einer Protokolldatei angezeigt werden.  
+- Zusammenfassende Informationen inklusive Fehlermeldungen können im Fenster **Befehl** oder durch den `/out`-Schalter in einer Protokolldatei angezeigt werden.  
   
 ## <a name="example"></a>Beispiel  
  In diesem Beispiel wird die Projektmappe mit der aktiven Bereitstellungskonfiguration `MySolution` in einer minimierten integrierten Entwicklungsumgebung ausgeführt. Diese wird anschließend geschlossen.  
@@ -64,6 +58,3 @@ devenv /runexit "C:\Documents and Settings\someuser\My Documents\Visual Studio\P
  [/Build („devenv.exe“)](../../ide/reference/build-devenv-exe.md)   
  [/Rebuild („devenv.exe“)](../../ide/reference/rebuild-devenv-exe.md)   
  [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)
-
-
-

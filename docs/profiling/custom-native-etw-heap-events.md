@@ -5,23 +5,23 @@ ms.topic: conceptual
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1414c2102d2b19728c8dfb74470fefae499bc622
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1bb6f906cbfb715d67f6e10ddcecf094bc25821f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62552968"
 ---
 # <a name="custom-native-etw-heap-events"></a>Ereignisse für benutzerdefinierte native ETW-Heaps
 
 Visual Studio enthält eine Vielzahl von [profiling and diagnostic tools (Profilerstellungs- und Diagnosetools)](../profiling/profiling-feature-tour.md), einschließlich einer nativen Speicherprofilerstellung.  Dieser Profiler hängt sich an [ETW-Ereignisse](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) vom Heap-Anbieter, und bietet eine Analyse, wie Speicher zugeordnet und verwendet wird.  Dieses Tool kann standardmäßig nur aus dem standardmäßigen Windows-Heap vorgenommene Zuordnungen analysieren. Zuordnungen außerhalb dieses nativen Heap werden nicht angezeigt.
 
-Es gibt viele Fälle, in denen Sie Ihren eigenen benutzerdefinierten Heap verwenden und den Zuordnungsaufwand aus dem Standard-Heap vermeiden möchten.  Beispielsweise können Sie [VirtualAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx) verwenden, um eine große Menge an Speicher am Anfang der App oder des Spiels zuzuordnen, und anschließend Ihre eigenen Blöcke in dieser Liste zu verwalten.  In diesem Szenario würde das Speicherprofilerstellungstool nur diese anfänglichen Zuordnung und nicht die benutzerdefinierte Verwaltung innerhalb des Speicherblocks finden.  Jedoch können Sie mithilfe des benutzerdefinierten nativen Heap-ETW-Anbieters dafür sorgen,dass das Tool alle Zuordnungen kennt, die Sie außerhalb des Standard-Heaps vornehmen.
+Es gibt viele Fälle, in denen Sie Ihren eigenen benutzerdefinierten Heap verwenden und den Zuordnungsaufwand aus dem Standard-Heap vermeiden möchten.  Beispielsweise können Sie [VirtualAlloc](/windows/desktop/api/memoryapi/nf-memoryapi-virtualalloc) verwenden, um eine große Menge an Speicher am Anfang der App oder des Spiels zuzuordnen, und anschließend Ihre eigenen Blöcke in dieser Liste zu verwalten.  In diesem Szenario würde das Speicherprofilerstellungstool nur diese anfänglichen Zuordnung und nicht die benutzerdefinierte Verwaltung innerhalb des Speicherblocks finden.  Jedoch können Sie mithilfe des benutzerdefinierten nativen Heap-ETW-Anbieters dafür sorgen,dass das Tool alle Zuordnungen kennt, die Sie außerhalb des Standard-Heaps vornehmen.
 
 In einem Projekt wie dem Folgenden, in dem `MemoryPool` ein benutzerdefinierter Heap ist, würden Sie z.B. nur eine einzige Zuordnung auf dem Windows-Heap sehen:
 
@@ -34,7 +34,7 @@ public:
 
 ...
 
-// MemoryPool is a custom managed heap, which allocates 8192 bytes 
+// MemoryPool is a custom managed heap, which allocates 8192 bytes
 // on the standard Windows Heap named "Windows NT"
 MemoryPool<Foo, 8192> mPool;
 
@@ -66,7 +66,7 @@ Diese Bibliothek kann problemlos in C und C++ verwendet werden.
    ```cpp
    __declspec(allocator) void *MyMalloc(size_t size);
    ```
-   
+
    > [!NOTE]
    > Dieser Decorator informiert den Compiler, dass diese Funktion ein Aufruf an eine Zuweisung ist.  Jeder Aufruf der Funktion wird die Adresse der Aufrufsite, die Größe der Aufrufanweisung und die TypeId des neuen Objekts zu einem neuen `S_HEAPALLOCSITE`-Symbol ausgeben.  Wenn eine Aufrufliste zugeordnet ist, wird Windows ein ETW-Ereignis mit diesen Informationen ausgeben.  Der Speicherprofilerstellungstool führt die Aufrufliste dazu, eine Rückgabeadresse entsprechend des `S_HEAPALLOCSITE`-Symbols zu suchen. Die TypeId-Informationen im Symbol wird verwendet, um den Laufzeittyp der Zuordnung anzuzeigen.
    >
@@ -79,7 +79,7 @@ Diese Bibliothek kann problemlos in C und C++ verwendet werden.
    ```
 
    Wenn Sie C verwenden, verwenden Sie stattdessen.die `OpenHeapTracker`-Funktion.  Diese Funktion gibt ein Handle zurück, das Sie verwenden, wenn Sie andere Nachverfolgungsfunktionen aufrufen:
-  
+
    ```C
    VSHeapTrackerHandle hHeapTracker = OpenHeapTracker("MyHeap");
    ```
@@ -136,7 +136,7 @@ Diese Bibliothek kann problemlos in C und C++ verwendet werden.
    ```
 
 ## <a name="track-memory-usage"></a>Nachverfolgen der Speicherauslastung
-Mit diesen Aufrufen kann Ihr benutzerdefinierter Heapverbrauch jetzt mithilfe des Standard-**Speicherauslastungs**-Tools in Visual Studio nachverfolgt werden.  Weitere Informationen zur Verwendung dieses Tools finden Sie unter der [Speicherauslastungs](../profiling/memory-usage.md)-Dokumentation. Stellen Sie sicher, dass Sie die Heap-Profilerstellung mit Momentaufnahmen aktiviert haben, andernfalls wird Ihr benutzerdefinierter Heapverbrauch nicht angezeigt. 
+Mit diesen Aufrufen kann Ihr benutzerdefinierter Heapverbrauch jetzt mithilfe des Standard-**Speicherauslastungs**-Tools in Visual Studio nachverfolgt werden.  Weitere Informationen zur Verwendung dieses Tools finden Sie unter der [Speicherauslastungs](../profiling/memory-usage.md)-Dokumentation. Stellen Sie sicher, dass Sie die Heap-Profilerstellung mit Momentaufnahmen aktiviert haben, andernfalls wird Ihr benutzerdefinierter Heapverbrauch nicht angezeigt.
 
 ![Aktivieren der Heap-Profilerstellung](media/heap-enable-heap.png)
 
@@ -156,5 +156,5 @@ Wie bei dem standardmäßigen Windows-Heap, können Sie dieses Tool auch verwend
 > Visual Studio enthält auch ein **Speicherauslastungstool** im **Leistungsprofilerstellungs-Toolset**, das in der Menüoption **Debuggen** > **Leistungsprofilerstellung** oder über die Tastenkombination **ALT**+**F2** aktiviert wird.  Diese Funktion enthält keine Heap-Nachverfolgung und wird Ihren benutzerdefinierten Heap nicht wie hier beschrieben anzeigen.  Nur das **Diagnosetools**-Fenster, das im Menü **Debuggen** > **Windows** > **Diagnosetools anzeigen** oder mit der Tastenkombination **STRG**+**ALT**+**F2** aktiviert werden kann, enthält diese Funktion.
 
 ## <a name="see-also"></a>Siehe auch
-[Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md)  
-[Speicherauslastung](../profiling/memory-usage.md)
+[Einführung in Profilerstellungstools](../profiling/profiling-feature-tour.md)
+[Messen der Speicherauslastung in Visual Studio](../profiling/memory-usage.md)

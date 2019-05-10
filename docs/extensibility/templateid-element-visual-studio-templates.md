@@ -11,54 +11,52 @@ helpviewer_keywords:
 ms.assetid: 6ca24b4e-0325-4a9e-855e-0cbbe7361d8f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8bbd9bddaeab9d073affb35a1b275f0eef7afe99
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f1f992d9f501b965fc300b97613a3d6f3bd4e35d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62798963"
 ---
 # <a name="templateid-element-visual-studio-templates"></a>TemplateID-Element (Visual Studio-Vorlagen)
-Gibt einen Bezeichner für eine Elementvorlage, die in einer Gruppe von Elementvorlagen von kategorisiert ist die [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md) Element.  
-  
- \<VSTemplate>  
- \<TemplateData>  
- \<TemplateID >  
-  
-## <a name="syntax"></a>Syntax  
-  
-```  
-<TemplateID> ... </TemplateID>  
-```  
-  
-## <a name="attributes-and-elements"></a>Attribute und Elemente  
- In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
-  
-### <a name="attributes"></a>Attribute  
- Keine  
-  
-### <a name="child-elements"></a>Untergeordnete Elemente  
- Keine  
-  
-### <a name="parent-elements"></a>Übergeordnete Elemente  
-  
-|Element|Beschreibung|  
-|-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|  
-  
-## <a name="text-value"></a>Textwert  
- Ein `string` , das darstellt, eines Bezeichners für eine Elementvorlage, die in einer Gruppe von Elementvorlagen von kategorisiert ist die `TemplateGroupID` Element.  
-  
-## <a name="remarks"></a>Hinweise  
- `TemplateID` ist ein optionales Element.  
-  
- Wenn eine VSTEMPLATE-Datei fehlt die `TemplateID` -Element, das [Name](../extensibility/name-element-visual-studio-templates.md) Element wird als Bezeichner für die Vorlage verwendet.  
-  
- Der Wert des der `TemplateID` Element dient zusammen mit der projektsystemregistrierung (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Projects\\) Filterung von Vorlagen, die in angezeigt werden. die **neues Element hinzufügen** Das Dialogfeld.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+Gibt einen Bezeichner für eine Elementvorlage, die in einer Gruppe von Elementvorlagen von kategorisiert ist die [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md) Element.
+
+ \<VSTemplate> \<TemplateData> \<TemplateID>
+
+## <a name="syntax"></a>Syntax
+
+```
+<TemplateID> ... </TemplateID>
+```
+
+## <a name="attributes-and-elements"></a>Attribute und Elemente
+ In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
+
+### <a name="attributes"></a>Attribute
+ Keine
+
+### <a name="child-elements"></a>Untergeordnete Elemente
+ Keine
+
+### <a name="parent-elements"></a>Übergeordnete Elemente
+
+|Element|Beschreibung|
+|-------------|-----------------|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|
+
+## <a name="text-value"></a>Textwert
+ Ein `string` , das darstellt, eines Bezeichners für eine Elementvorlage, die in einer Gruppe von Elementvorlagen von kategorisiert ist die `TemplateGroupID` Element.
+
+## <a name="remarks"></a>Hinweise
+ `TemplateID` ist ein optionales Element.
+
+ Wenn eine VSTEMPLATE-Datei fehlt die `TemplateID` -Element, das [Name](../extensibility/name-element-visual-studio-templates.md) Element wird als Bezeichner für die Vorlage verwendet.
+
+ Der Wert des der `TemplateID` Element dient zusammen mit der projektsystemregistrierung (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Projects\\) Filterung von Vorlagen, die in angezeigt werden. die **neues Element hinzufügen** Das Dialogfeld.
+
+## <a name="see-also"></a>Siehe auch
+- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
+- [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

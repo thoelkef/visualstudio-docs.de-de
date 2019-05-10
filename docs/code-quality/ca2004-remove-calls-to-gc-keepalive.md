@@ -1,7 +1,6 @@
 ---
-title: 'CA2004: Entfernen Sie Aufrufe von GC. KeepAlive'
+title: 'CA2004: Aufrufe an GC.KeepAlive entfernen.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - RemoveCallsToGCKeepAlive
@@ -12,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: bc543b5b-23eb-4b45-abc2-9325cd254ac2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e025a8af3f7f5c1810abe2b9e182f607a29760e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4520649050e6e4004b2c8864d5c081897852826c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915830"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62808365"
 ---
-# <a name="ca2004-remove-calls-to-gckeepalive"></a>CA2004: Entfernen Sie Aufrufe von GC. KeepAlive
+# <a name="ca2004-remove-calls-to-gckeepalive"></a>CA2004: Aufrufe an GC.KeepAlive entfernen.
 
 |||
 |-|-|

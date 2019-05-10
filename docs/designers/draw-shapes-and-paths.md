@@ -1,21 +1,19 @@
 ---
 title: Zeichnen von Formen und Pfaden
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97172253a088be86f20fae77fe62d01330a3b801
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 2e0efd4b4f9fb301f5bcba4a12857647a8d911f1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513092"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62899335"
 ---
 # <a name="draw-shapes-and-paths"></a>Zeichnen von Formen und Pfaden
 
@@ -23,7 +21,7 @@ In XAML-Designer ist eine *Form* genau das, was Sie erwarten. Beispielsweise ein
 
 Formen und Pfade verwenden Vektorgrafiken, sodass sie gut für Displays mit hoher Auflösung skaliert werden können. Weitere Informationen zu Vektorgrafiken finden Sie unter [Was sind Vektorgrafiken](https://www.youtube.com/watch?v=MoCSwF0n-io) oder unter [Vektorgrafiken](http://www.webopedia.com/TERM/V/vector_graphics.html).
 
-##  <a name="Shape"></a> Zeichnen einer Form
+## <a name="Shape"></a> Zeichnen einer Form
  Formen finden Sie im Bereich **Objekte** .
 
  ![Formenkategorie im Objektbereich](../designers/media/b4_shapes_assetspanel.png)
@@ -32,7 +30,7 @@ Formen und Pfade verwenden Vektorgrafiken, sodass sie gut für Displays mit hohe
 
  ![Handles](../designers/media/84261e83-3091-4490-ab58-4218b188439e.png)
 
-##  <a name="Path"></a> Zeichnen eines Pfads
+## <a name="Path"></a> Zeichnen eines Pfads
  Ein Pfad besteht aus einer Reihe von miteinander verbundenen Linien und Kurven. Verwenden Sie einen Pfad, um interessante Formen zu erstellen, die nicht im Bereich **Objekte** verfügbar sind.
 
  Sie können einen Pfad mit einer Linie, einem Stift oder einem Zeichenstift zeichnen. Diese Tools finden Sie im Bereich **Tools** .
@@ -82,12 +80,12 @@ Formen und Pfade verwenden Vektorgrafiken, sodass sie gut für Displays mit hohe
 
  Verwenden Sie das **Auswahltool** ![Auswahltool](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png), um den Pfad auszuwählen. Verwenden Sie das **Stifttool** ![Stifttool](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png), um an eine beliebige Stelle auf dem Pfad zu klicken, an der Sie den Punkt hinzufügen möchten.
 
-##  <a name="Convert"></a> Konvertieren von Formen in Pfade
+## <a name="Convert"></a> Konvertieren von Formen in Pfade
  Um eine Form auf die gleiche Weise wie einen Pfad zu ändern, konvertieren Sie die Form in einen Pfad.
 
- **Sehen Sie sich ein kurzes Video an:** ![Konfigurieren installierter Features](../designers/media/bldadminconsoleinitialconfigicon.png) [Arbeiten mit Pfaden: Konvertieren von Formen in einen Pfad](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147)
+ **Sehen Sie sich ein kurzes Video an:** ![Installierte Features konfigurieren](../designers/media/bldadminconsoleinitialconfigicon.png) [Arbeiten mit Pfaden: Konvertieren von Formen in Pfade](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147)
 
-##  <a name="Combine"></a> Kombinieren von Pfaden
+## <a name="Combine"></a> Kombinieren von Pfaden
  Sie können Pfade und Formen zu einem einzelnen Pfad kombinieren.
 
  ![Kombinieren von Pfaden](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
@@ -98,23 +96,23 @@ Formen und Pfade verwenden Vektorgrafiken, sodass sie gut für Displays mit hohe
 |![Überlappung ausschließen](../designers/media/b1_2.png)|Vereinigen|![](../designers/media/b1_5.png)|Überlappung ausschließen|
 |![Subtrahieren](../designers/media/b1_3.png)|Teilen|![](../designers/media/b1_6.png)|Subtrahieren|
 
- **Sehen Sie sich ein kurzes Video an:** ![Konfigurieren installierter Features](../designers/media/bldadminconsoleinitialconfigicon.png) [Arbeiten mit Pfaden: Kombinieren von Pfaden](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195)
+ **Sehen Sie sich ein kurzes Video an:** ![Installierte Features konfigurieren](../designers/media/bldadminconsoleinitialconfigicon.png) [Arbeiten mit Pfaden: Kombinieren von Pfaden](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195)
 
-##  <a name="Compound"></a> Erstellen eines zusammengesetzten Pfads
+## <a name="Compound"></a> Erstellen eines zusammengesetzten Pfads
  Wenn Sie einen zusammengesetzten Pfad erstellen, werden sich überschneidende Pfadsegmente vom Ergebnis subtrahiert. Der resultierende Pfad übernimmt die visuellen Eigenschaften des untersten Pfads.
 
  Sie können einen zusammengesetzten Pfad nach der Erstellung jederzeit teilen.
 
  ![Teilen eines zusammengesetzten Pfads](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png)
 
- **Sehen Sie sich ein kurzes Video an:** ![Konfigurieren installierter Features](../designers/media/bldadminconsoleinitialconfigicon.png) [Arbeiten mit Pfaden: Erstellen eines zusammengesetzten Pfads](https://www.youtube.com/watch?v=Io5bC0-nH6Q)
+ **Sehen Sie sich ein kurzes Video an:** ![Installierte Features konfigurieren](../designers/media/bldadminconsoleinitialconfigicon.png) [Arbeiten mit Pfaden: Erstellen eines zusammengesetzten Pfads](https://www.youtube.com/watch?v=Io5bC0-nH6Q)
 
-##  <a name="Clipping"></a> Erstellen eines Beschneidungspfads
+## <a name="Clipping"></a> Erstellen eines Beschneidungspfads
  Freistellungspfade sind Pfade oder Formen, die auf ein anderes Objekt angewendet werden. Die Teile des maskierten Objekts, die außerhalb des Freistellungspfads liegen, werden ausgeblendet.
 
  ![Beschneidungspfad](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png)
 
- **Sehen Sie sich ein kurzes Video an:** ![Konfigurieren installierter Features](../designers/media/bldadminconsoleinitialconfigicon.png) [Arbeiten mit Pfaden: Erstellen eines Beschneidungspfads](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232)
+ **Sehen Sie sich ein kurzes Video an:** ![Installierte Features konfigurieren](../designers/media/bldadminconsoleinitialconfigicon.png) [Arbeiten mit Pfaden: Erstellen eines Beschneidungspfads](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232)
 
 ## <a name="see-also"></a>Siehe auch
 

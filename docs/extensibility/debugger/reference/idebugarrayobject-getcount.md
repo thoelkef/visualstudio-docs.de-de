@@ -1,25 +1,27 @@
 ---
 title: IDebugArrayObject::GetCount | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugArrayObject::GetCount
 helpviewer_keywords:
 - IDebugArrayObject::GetCount method
 ms.assetid: 7931f3f7-033c-4bf8-8abd-95183952ebb0
-author: gregvanl
+caps.latest.revision: 11
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 1ab25e2dacce444ad8b72bb86dc2e07bf7ae8c34
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 30419e20b6ac1519e3d9b278aabfcb012372d193
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908604"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62923753"
 ---
 # <a name="idebugarrayobjectgetcount"></a>IDebugArrayObject::GetCount
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Ruft die Anzahl der Elemente im Array ab.  
   
 ## <a name="syntax"></a>Syntax  

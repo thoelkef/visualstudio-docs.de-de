@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4de9446afcc7528ba5c27160b4e00ad911b657e9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dd5bfc24fcf1cd8a465bafe1e5bcf6c4df61308c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958738"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62796448"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Exemplarische Vorgehensweise: Erstellen Sie eine Ansicht Zusatzelement, Befehle und Einstellungen)
 Sie können die Visual Studio-Text, Code-Editor mit Befehlen und Anzeigen von Effekten erweitern. Diesem Artikel erfahren Sie, wie zum Einstieg in eine Funktion für beliebte Erweiterung Spaltenführungslinien können. Spaltenführungslinien werden visuell hell Zeilen, die auf den Text-Editor-Ansicht helfen Ihnen beim Verwalten von Code, um bestimmte Spaltenbreite gezeichnet. Insbesondere kann formatierten Code für Beispiele wichtig sein, Sie enthalten, die in Dokumenten, Blogbeiträgen oder Fehlerberichte, werden sollen.
@@ -24,10 +24,10 @@ In dieser exemplarischen Vorgehensweise Sie:
 - Hinzufügen von Unterstützung für das Speichern und Abrufen von Einstellungen (Ort von Zeichnen-Befehl Spaltenführungslinien und ihre Farbe)
 - Hinzufügen von Befehlen (Spaltenführungslinien hinzufügen/entfernen, ändern Sie ihre Farbe)
 - Platzieren Sie die Befehle auf dem Menü "Bearbeiten" und Text-Dokument-Kontextmenüs
-- Hinzufügen von Unterstützung für die Befehle in der Visual Studio-Befehlsfenster aufrufen  
-  
-  Sie können versuchen, eine Version von der Funktion "Spalte Guides" mit diesem Visual Studio Gallery[Erweiterung](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines).  
-  
+- Hinzufügen von Unterstützung für die Befehle in der Visual Studio-Befehlsfenster aufrufen
+
+  Sie können versuchen, eine Version von der Funktion "Spalte Guides" mit diesem Visual Studio Gallery[Erweiterung](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines).
+
   **HINWEIS**: In dieser exemplarischen Vorgehensweise fügen Sie eine große Menge an Code, in einigen Dateien, die von Visual Studio-Extension-Vorlagen generiert. Aber in Kürze in dieser exemplarischen Vorgehensweise wird finden Sie eine vollständige Lösung auf GitHub mit anderen Beispielen für die Erweiterung. Der fertige Code unterscheidet sich geringfügig, dass es sich um echte Befehlssymbole anstelle von Generictemplate Symbole hat.
 
 ## <a name="get-started"></a>Erste Schritte
@@ -38,14 +38,14 @@ Zunächst erstellen Sie ein VSIX-Projekt, ein Zusatzelement der Editor-Ansicht h
 - Sie haben einen Text-Ansicht-erstellen-Listener, der erstellt eine `ColumnGuideAdornment` Objekt pro Ansicht. Dieses Objekt überwacht Ereignisse im Zusammenhang mit der Ansicht ändern, oder die Einstellungen ändern, aktualisieren oder das Neuzeichnen-Spalte führt nach Bedarf.
 - Es gibt eine `GuidesSettingsManager` , verarbeitet werden, lesen und Schreiben von aus dem Speicher der Visual Studio-Einstellungen. Der Settings Manager verfügt auch über die Vorgänge zum Aktualisieren der Einstellungen, die der Benutzerbefehle unterstützen (Spalte hinzufügen, entfernen Sie die Spalte, ändern Sie die Farbe).
 - Es ist ein VSIP-Paket, das ist erforderlich, wenn Sie Benutzerbefehle haben, aber es ist nur für den Standardcode, der die Befehle Implementierungsobjekt initialisiert.
-- Gibt es eine `ColumnGuideCommands` -Objekt, das der Benutzer führt Befehle und verknüpft die Befehlshandler für die deklarierten Befehle in der *VSCT* Datei.  
-  
-  **VSIX**. Verwendung **Datei &#124; neu...**  Befehl aus, um ein Projekt zu erstellen. Wählen Sie die **Erweiterbarkeit** Knoten unter **c#** im linken Navigationsbereich, und wählen Sie **VSIX-Projekt** im rechten Bereich. Geben Sie den Namen **ColumnGuides** , und wählen Sie **OK** zum Erstellen des Projekts.  
-  
-  **Anzeigen des Zusatzelements**. Drücken Sie die Zeiger nach rechts auf den Projektknoten im Projektmappen-Explorer. Wählen Sie die **hinzufügen &#124; neues Element...**  Befehl aus, um ein neues Ansicht Zusatzelement Element hinzuzufügen. Wählen Sie **Erweiterbarkeit &#124; Editor** im linken Navigationsbereich, und wählen Sie **Editor Viewport Zusatzelement** im rechten Bereich. Geben Sie den Namen **ColumnGuideAdornment** als Element benennen, und wählen **hinzufügen** hinzugefügt.  
-  
-  Sie können sehen, dass diese Elementvorlage zwei Dateien dem Projekt (sowie Verweise usw.) hinzugefügt: **ColumnGuideAdornment.cs** und **ColumnGuideAdornmentTextViewCreationListener.cs**. Die Vorlagen zeichnen eine violette Rechteck für die Sicht. Im folgenden Abschnitt, ändern Sie ein paar Codezeilen in der Ansicht erstellen Listener, und ersetzen den Inhalt der **ColumnGuideAdornment.cs**.  
-  
+- Gibt es eine `ColumnGuideCommands` -Objekt, das der Benutzer führt Befehle und verknüpft die Befehlshandler für die deklarierten Befehle in der *VSCT* Datei.
+
+  **VSIX**. Verwendung **Datei &#124; neu...**  Befehl aus, um ein Projekt zu erstellen. Wählen Sie die **Erweiterbarkeit** Knoten unter **c#** im linken Navigationsbereich, und wählen Sie **VSIX-Projekt** im rechten Bereich. Geben Sie den Namen **ColumnGuides** , und wählen Sie **OK** zum Erstellen des Projekts.
+
+  **Anzeigen des Zusatzelements**. Drücken Sie die Zeiger nach rechts auf den Projektknoten im Projektmappen-Explorer. Wählen Sie die **hinzufügen &#124; neues Element...**  Befehl aus, um ein neues Ansicht Zusatzelement Element hinzuzufügen. Wählen Sie **Erweiterbarkeit &#124; Editor** im linken Navigationsbereich, und wählen Sie **Editor Viewport Zusatzelement** im rechten Bereich. Geben Sie den Namen **ColumnGuideAdornment** als Element benennen, und wählen **hinzufügen** hinzugefügt.
+
+  Sie können sehen, dass diese Elementvorlage zwei Dateien dem Projekt (sowie Verweise usw.) hinzugefügt: **ColumnGuideAdornment.cs** und **ColumnGuideAdornmentTextViewCreationListener.cs**. Die Vorlagen zeichnen eine violette Rechteck für die Sicht. Im folgenden Abschnitt, ändern Sie ein paar Codezeilen in der Ansicht erstellen Listener, und ersetzen den Inhalt der **ColumnGuideAdornment.cs**.
+
   **Befehle**. In **Projektmappen-Explorer**, drücken Sie die Zeiger nach rechts-Taste auf den Projektknoten. Wählen Sie die **hinzufügen &#124; neues Element...**  Befehl aus, um ein neues Ansicht Zusatzelement Element hinzuzufügen. Wählen Sie **Erweiterbarkeit &#124; VSPackage** im linken Navigationsbereich, und wählen Sie **benutzerdefinierten Befehls** im rechten Bereich. Geben Sie den Namen **ColumnGuideCommands** als Element benennen, und wählen **hinzufügen**. Zusätzlich zur mehrere Verweise, hinzufügen, die Befehle und das Paket auch hinzugefügt **ColumnGuideCommands.cs**, **ColumnGuideCommandsPackage.cs**, und **ColumnGuideCommandsPackage.vsct** . Im folgenden Abschnitt ersetzen Sie den Inhalt der ersten und letzten Dateien zu definieren und implementieren Sie die Befehle aus.
 
 ## <a name="set-up-the-text-view-creation-listener"></a>Einrichten des textlisteners der Ansicht erstellen
@@ -370,7 +370,7 @@ namespace ColumnGuides
         /// <summary>
         /// Creates editor column guidelines
         /// </summary>
-        /// <param name="view">The <see cref="IWpfTextView"/> upon 
+        /// <param name="view">The <see cref="IWpfTextView"/> upon
         /// which the adornment will be drawn</param>
         public ColumnGuideAdornment(IWpfTextView view)
         {
@@ -378,7 +378,7 @@ namespace ColumnGuides
             _guidelines = CreateGuidelines();
             GuidesSettingsManager.SettingsChanged +=
                 new GuidesSettingsManager.SettingsChangedHandler(SettingsChanged);
-            view.LayoutChanged += 
+            view.LayoutChanged +=
                 new EventHandler<TextViewLayoutChangedEventArgs>(OnViewLayoutChanged);
             _view.Closed += new EventHandler(OnViewClosed);
         }
@@ -466,7 +466,7 @@ namespace ColumnGuides
 
         void AddGuidelinesToAdornmentLayer()
         {
-            // Grab a reference to the adornment layer that this adornment 
+            // Grab a reference to the adornment layer that this adornment
             // should be added to
             // Must match exported name in ColumnGuideAdornmentTextViewCreationListener
             IAdornmentLayer adornmentLayer =
@@ -710,7 +710,7 @@ Die *VSCT* Datei deklariert die Befehle und, zusammen mit Symbolen und wo sie. E
                 value="{e914e5de-0851-4904-b361-1a3a9d449704}" />
 
     <!-- This is the guid used to group the menu commands together -->
-    <GuidSymbol name="guidColumnGuidesCommandSet" 
+    <GuidSymbol name="guidColumnGuidesCommandSet"
                 value="{c2bc0047-8bfa-4e5a-b5dc-45af8c274d8e}">
       <IDSymbol name="GuidesContextMenuGroup" value="0x1020" />
       <IDSymbol name="GuidesMenuItemsGroup" value="0x1021" />
@@ -843,7 +843,7 @@ namespace ColumnGuides
         /// <summary>
         /// Command menu group (command set GUID).
         /// </summary>
-        static readonly Guid CommandSet = 
+        static readonly Guid CommandSet =
             new Guid("c2bc0047-8bfa-4e5a-b5dc-45af8c274d8e");
 
         /// <summary>
@@ -1143,7 +1143,7 @@ namespace ColumnGuides
                                                              color.B);
                 if (picker.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
-                    GuidesSettingsManager.GuidelinesColor = 
+                    GuidesSettingsManager.GuidelinesColor =
                         System.Windows.Media.Color.FromRgb(picker.Color.R,
                                                            picker.Color.G,
                                                            picker.Color.B);
@@ -1204,7 +1204,7 @@ private int GetApplicableColumn(EventArgs e)
 
 ```csharp
    IVsMonitorSelection selection =
-       this.ServiceProvider.GetService(typeof(IVsMonitorSelection)) 
+       this.ServiceProvider.GetService(typeof(IVsMonitorSelection))
            as IVsMonitorSelection;
    object frameObj = null;
 
@@ -1339,9 +1339,9 @@ Es ist bald ein GitHub-Projekt von Visual Studio-Erweiterbarkeit-Beispielen, und
 Sie können versuchen, eine Version von der Funktion "Spalte Guides" mit diesem Visual Studio Gallery[Erweiterung](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines).
 
 ## <a name="see-also"></a>Siehe auch
-[Innerhalb des Editors](../extensibility/inside-the-editor.md)
-[Erweiterung der Dienste, Editoren und Sprachen](../extensibility/extending-the-editor-and-language-services.md) 
-[Language Service und Editor Erweiterungspunkte](../extensibility/language-service-and-editor-extension-points.md)  
- [Erweitern von Menüs und Befehlen](../extensibility/extending-menus-and-commands.md)
-[Hinzufügen eines Untermenüs zu einem Menü](../extensibility/adding-a-submenu-to-a-menu.md)
-[erstellen Sie eine Erweiterung mit einer Editor-Elementvorlage](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+- [Im editor](../extensibility/inside-the-editor.md)
+- [Erweitern Sie die Dienste, Editoren und Sprachen](../extensibility/extending-the-editor-and-language-services.md)
+- [Language-Dienst und -Editor-Erweiterungspunkte](../extensibility/language-service-and-editor-extension-points.md)
+- [Erweitern von Menüs und Befehlen](../extensibility/extending-menus-and-commands.md)
+- [Hinzufügen eines Untermenüs zu einem Menü](../extensibility/adding-a-submenu-to-a-menu.md)
+- [Erstellen Sie eine Erweiterung mit einer Editor-Elementvorlage](../extensibility/creating-an-extension-with-an-editor-item-template.md)

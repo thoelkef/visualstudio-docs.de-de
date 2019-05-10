@@ -1,8 +1,6 @@
 ---
 title: Erstellen einer Benutzeroberfläche mit XAML-Designer
-ms.date: 11/05/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
+ms.date: 03/28/2019
 ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner
@@ -12,15 +10,15 @@ f1_keywords:
 ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: b991b50ab2ee329adaaff7a31c2dbb4f2d5bb806
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 3cd26f35111fc2e79290b30e7ae488b268e558d0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220995"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62899426"
 ---
 # <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>Erstellen einer Benutzeroberfläche mit dem XAML-Designer in Visual Studio
 
@@ -106,56 +104,9 @@ Die Leiste für geteilte Ansicht wird am oberen Rand der XAML-Ansicht angezeigt,
 
 Der Markupzoom ermöglicht es Ihnen, die **XAML**-Ansicht zu skalieren. Es stehen Zoomstufen von 20 % bis 400 % zur Verfügung.
 
-## <a name="device-window"></a>Gerätefenster
-
-> [!NOTE]
-> Wenn die Version der Zielplattform (`TargetPlatformVersion`) einer UWP-Anwendung 10.0.16299.0 oder höher ist, ist das **Gerätefenster** nicht verfügbar.
-
-Das **Gerätefenster** im XAML-Designer ermöglicht es Ihnen, während der Entwurfszeit verschiedene Ansichten, Anzeigevarianten und Anzeigeoptionen für Ihr Projekt zu simulieren. Das **Gerätefenster** ist im Menü **Entwurf** verfügbar, wenn Sie im XAML-Designer arbeiten. Hier sehen Sie, wie es aussieht:
-
-![Gerätefenster](../designers/media/xaml_editor_device_panel.png)
-
-Dies sind die Optionen, die im Gerätefenster verfügbar sind:
-
-**Anzeige**
-
-Gibt die verschiedenen Anzeigegrößen und Auflösungen für die App an.
-
-**Ausrichtung**
-
-Gibt die verschiedenen Ausrichtungen für die App an: **Querformat** oder **Hochformat**.
-
-**Kante**
-
-Gibt die verschiedenen Randausrichtungen für die App an: **Beide**, **Links**, **Rechts**oder **Keine**.
-
-**Hoher Kontrast**
-
-Zeigt eine Vorschau der App auf Grundlage der ausgewählten Kontrasteinstellung an Diese Einstellung überschreibt, sofern der Wert nicht auf **Standard** festgelegt ist, die in *App.xaml* festgelegte `RequestedTheme`-Eigenschaft.
-
-**Skalierung überschreiben**
-
-Schaltet die Emulation der Dokumentskalierung innerhalb der Entwurfsoberfläche ein und aus. Dies ermöglicht es Ihnen, den skalierenden Prozentsatz um einem Faktor zu erhöhen. Aktivieren Sie das Kontrollkästchen, um die Emulation einzuschalten. Wenn beispielsweise der Skalierungsprozentsatz 100 % beträgt, kann das Dokument innerhalb der Entwurfsoberfläche auf bis zu 140 % skaliert werden. Diese Option ist deaktiviert, wenn der aktuelle Skalierungsprozentsatz 180 beträgt.
-
-**Mindestbreite**
-
-Gibt die Einstellung für die Mindestbreite an. Die Mindestbreite kann in *App.xaml* geändert werden.
-
-**Design**
-
-Gibt das App-Design an. Beispielsweise können sie zwischen einem **dunklen** und einem **hellen** Thema wechseln.
-
-**Chrom anzeigen**
-
-Schaltet den simulierten Tablet-Rahmen um Ihre App in der Entwurfsansicht ein und aus. Aktivieren Sie das Kontrollkästchen, um den Rahmen anzuzeigen.
-
-**Auf Bildschirm zuschneiden**
-
-Gibt den Anzeigemodus an. Aktivieren Sie das Kontrollkästchen, wenn die Dokumentgröße auf die Größe der Anzeige zugeschnitten werden soll.
-
 ## <a name="document-outline-window"></a>Fenster Dokumentgliederung
 
-Das Dokumentgliederungsfenster im XAML-Designer unterstützt Sie bei der Ausführung dieser Aufgaben:
+Das Fenster „Dokumentgliederung“ in XAML-Designer ist ähnlich wie das Fenster **Objekte und Zeitachsen** in Blend für Visual Studio. Mithilfe der **Dokumentgliederung** können Sie die folgenden Aufgaben erledigen:
 
 - Anzeigen der hierarchischen Struktur aller Elemente auf der Zeichenfläche.
 
@@ -163,11 +114,11 @@ Das Dokumentgliederungsfenster im XAML-Designer unterstützt Sie bei der Ausfüh
 
 - Erstellen und Ändern von Vorlagen für Elemente, welche Steuerelemente sind.
 
-- Verwenden Sie das Kontextmenü für ausgewählte Elemente. Das gleiche Menü ist auch für ausgewählte Elemente auf der Zeichenfläche verfügbar.
+- Verwenden Sie das Kontextmenü (Rechtsklick) für ausgewählte Elemente. Das gleiche Menü ist auch für ausgewählte Elemente auf der Zeichenfläche verfügbar.
 
 Wählen Sie zum Anzeigen des Fensters **Dokumentgliederung** in der Menüleiste **Ansicht** > **Weitere Fenster** > **Dokumentgliederung** aus.
 
-![Fenster Dokumentgliederung](../designers/media/xaml_editor_doc_outline.png)
+![Screenshot: Fenster „Dokumentgliederung“ in Visual Studio](../designers/media/document-outline-window.png)
 
 Dies sind die verfügbaren Optionen im Fenster **Dokumentgliederung**:
 
@@ -181,7 +132,7 @@ Zeigt Zeichenflächen-Elemente an, welche Elementen in der Dokumentgliederung en
 
 **Sperren/Entsperren**
 
-Sperrt oder entsperrt Zeichenflächen-Elemente, welche Elementen in der Dokumentgliederung entsprechen. Gesperrte Elemente können nicht geändert werden. Verwenden Sie die Schaltflächen **Sperren/Entsperren**, die beim Sperren ein Vorhängeschlosssymbol anzeigen, oder drücken Sie **STRG**+**L**, um Elemente zu sperren, und **UMSCHALT**+**STRG**+**L**, um diese zu entsperren.
+Sperrt oder entsperrt Zeichenflächenelemente, die Elementen in der Dokumentgliederung entsprechen. Gesperrte Elemente können nicht geändert werden. Verwenden Sie die Schaltflächen **Sperren/Entsperren**, die beim Sperren ein Vorhängeschlosssymbol anzeigen, oder drücken Sie **STRG**+**L**, um Elemente zu sperren, und **UMSCHALT**+**STRG**+**L**, um diese zu entsperren.
 
 **Bereich zurücksetzen auf**
 
@@ -191,9 +142,13 @@ Die Option oben im Fenster **Dokumentgliederung**, die das Symbol eines Nach-Obe
 
 Im Fenster **Eigenschaften** können Sie Eigenschaftswerte für Steuerelemente festlegen. Hier sehen Sie, wie es aussieht:
 
-![Eigenschaftenfenster](../designers/media/xaml_editor_prop_window.png)
+![Eigenschaftenfenster](../designers/media/xaml-designer-properties-window.png)
 
-Oben im Fenster **Eigenschaften** gibt es verschiedene Optionen. Sie können den Namen des aktuell ausgewählten Elements ändern, indem Sie das Feld **Name** verwenden. In der linken oberen Ecke gibt es ein Symbol, welches das aktuell ausgewählte Element darstellt. Um die Eigenschaften nach Kategorie oder alphabetisch zu sortieren, klicken Sie auf **Kategorie**, **Name**oder auf **Quelle** in der Liste **Anordnen nach** . Um die Liste der Ereignisse für ein Steuerelement zu sehen, klicken Sie auf die Schaltfläche **Ereignisse** , wodurch ein Blitzschlagsymbol angezeigt wird. Um nach einer Eigenschaft zu suchen, beginnen Sie mit der Eingabe des Namens der Eigenschaft im Feld **Eigenschaften durchsuchen** . Im Fenster **Eigenschaften** werden die Eigenschaften angezeigt, die mit Ihrer Suche übereinstimmen, während Sie Ihre Eingabe vornehmen. Einige Eigenschaften ermöglichen es Ihnen, erweiterte Eigenschaften festzulegen, indem Sie eine Nach-Unten-Schaltfläche auswählen. Weitere Informationen zur Verwendung von Eigenschaften und zur Behandlung von Ereignissen finden Sie unter [Intro to controls and patterns (Einführung in Steuerelemente und Muster)](/windows/uwp/design/controls-and-patterns/controls-and-events-intro).
+Oben im Fenster **Eigenschaften** gibt es verschiedene Optionen. Sie können den Namen des aktuell ausgewählten Elements ändern, indem Sie das Feld **Name** verwenden. In der linken oberen Ecke gibt es ein Symbol, welches das aktuell ausgewählte Element darstellt. Um die Eigenschaften nach Kategorie oder alphabetisch zu sortieren, klicken Sie auf **Kategorie**, **Name**oder auf **Quelle** in der Liste **Anordnen nach** . Um die Liste der Ereignisse für ein Steuerelement zu sehen, klicken Sie auf die Schaltfläche **Ereignisse** , wodurch ein Blitzschlagsymbol angezeigt wird.
+
+Wenn Sie nach einer Eigenschaft suchen möchten, beginnen Sie mit der Eingabe des Namens der Eigenschaft im Suchfeld. Im Fenster **Eigenschaften** werden die Eigenschaften angezeigt, die mit Ihrer Suche übereinstimmen, während Sie Ihre Eingabe vornehmen. Einige Eigenschaften ermöglichen es Ihnen, erweiterte Eigenschaften festzulegen, indem Sie eine Nach-Unten-Schaltfläche auswählen.
+
+Weitere Informationen zur Verwendung von Eigenschaften und zur Behandlung von Ereignissen finden Sie unter [Intro to controls and patterns (Einführung in Steuerelemente und Muster)](/windows/uwp/design/controls-and-patterns/controls-and-events-intro).
 
 Rechts von jedem Eigenschaftenwert befindet sich ein *Eigenschaftenmarker* , der als Feldsymbol angezeigt wird. Die Anzeige des Eigenschaftenmarkers weist darauf hin, ob es eine Datenbindung oder eine Ressource gibt, die auf die Eigenschaft angewendet wurde. Beispielsweise zeigt ein weißes Feldsymbol einen Standardwert an, ein schwarzes Feldsymbol zeigt in der Regel an, dass eine lokale Ressource angewendet wurde, und ein oranges Feld zeigt in der Regel an, dass eine Datenbindung angewendet wurde. Wenn Sie auf den Eigenschaftenmarker klicken, können Sie zur Definition eines Stils navigieren, den Datenbindungs-Generator öffnen oder die Ressourcenauswahl öffnen.
 
@@ -201,4 +156,4 @@ Rechts von jedem Eigenschaftenwert befindet sich ein *Eigenschaftenmarker* , der
 
 - [Arbeiten mit Elementen im XAML-Designer](../designers/working-with-elements-in-xaml-designer.md)
 - [So erstellen Sie eine Ressource und wenden Sie an](../designers/how-to-create-and-apply-a-resource.md)
-- [Exemplarische Vorgehensweise: Binden an Daten im XAML-Designer](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
+- [Exemplarische Vorgehensweise: Bindung an Daten im XAML-Designer](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

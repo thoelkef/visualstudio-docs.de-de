@@ -2,19 +2,18 @@
 title: 'Vorgehensweise: Verwenden der Suche im Workflow-Designer'
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
 ms.assetid: f42d3115-2ed2-4941-8f1e-92dac41c30fa
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 52adbded9f570689cd5749cc620ca8f74222e308
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0a80bfecaa288eabc0161d0262535a7912411f78
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854671"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949570"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>Vorgehensweise: Verwenden der Suche im Workflow-Designer
 
@@ -24,13 +23,13 @@ Um zu ermöglichen, größerer, komplexerer Workflows zu erstellen, können Sie 
 
 Schnellsuche findet der Designer die folgenden:
 
--   Eigenschaften von <xref:System.Activities.Activity>-Objekten, <xref:System.Activities.Statements.FlowNode>-Objekten, <xref:System.Activities.Statements.State>-Objekten, Übergängen und anderen benutzerdefinierten Flusssteuerungselementen.
+- Eigenschaften von <xref:System.Activities.Activity>-Objekten, <xref:System.Activities.Statements.FlowNode>-Objekten, <xref:System.Activities.Statements.State>-Objekten, Übergängen und anderen benutzerdefinierten Flusssteuerungselementen.
 
--   Variablen
+- Variablen
 
--   Argumente
+- Argumente
 
--   Ausdrücke
+- Ausdrücke
 
 ### <a name="use-quick-find"></a>Verwenden der Schnellsuche
 
@@ -48,8 +47,8 @@ Suche in Dateien sucht Zeichenfolgen in Workflowdateien, einschließlich XAML-Da
 
 ### <a name="use-find-in-files"></a>Verwenden Sie in Dateien suchen
 
-1.  Drücken Sie in Visual Studio **STRG**+**UMSCHALT**+**F**, oder wählen Sie **bearbeiten**  >   **Suchen und Ersetzen** > **in Dateien suchen**.
+1. Drücken Sie in Visual Studio **STRG**+**UMSCHALT**+**F**, oder wählen Sie **bearbeiten**  >   **Suchen und Ersetzen** > **in Dateien suchen**.
 
-2.  Geben Sie den Suchbegriff in das **Suchen nach** Textfeld, und klicken Sie auf **alle suchen**.
+2. Geben Sie den Suchbegriff in das **Suchen nach** Textfeld, und klicken Sie auf **alle suchen**.
 
-3.  Das Suchergebnis wird angezeigt, der **Suchergebnisse** anzeigen. Durch Doppelklicken auf ein Ergebniselement navigieren, auf die Aktivität, die die Übereinstimmung im Workflow-Designer enthält.
+3. Das Suchergebnis wird angezeigt, der **Suchergebnisse** anzeigen. Durch Doppelklicken auf ein Ergebniselement navigieren, auf die Aktivität, die die Übereinstimmung im Workflow-Designer enthält.

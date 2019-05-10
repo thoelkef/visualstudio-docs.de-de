@@ -1,14 +1,9 @@
 ---
 title: Project-Element (MSBuild) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Project
 dev_langs:
@@ -24,18 +19,17 @@ ms.assetid: d1cda56a-dbef-4109-9201-39e962e3f653
 caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 923cfa4a32362e28705e9f7fddfa3461979f84e4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 132d1c3fbf23433ea89e7dba39bc226bc253b015
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820024"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650823"
 ---
 # <a name="project-element-msbuild"></a>Project-Element (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] -Projektdatei.  
   
 ## <a name="syntax"></a>Syntax  
@@ -66,7 +60,7 @@ Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../includes/vstecmsbui
 |    `DefaultTargets`    |                                                                                                                                                                                                                                                                                                 Optionales Attribut.<br /><br /> Das Standardziel oder die Standardziele, die zum Einstiegspunkt des Builds werden, wenn kein Ziel angegeben wurde. Mehrere Ziele werden durch Semikolons (;) getrennt.<br /><br /> Wenn kein Standardziel im `DefaultTargets`-Attribut oder der [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Befehlszeile angegeben ist, führt die Engine das erste Ziel in der Projektdatei aus, nachdem die [Import](../msbuild/import-element-msbuild.md)-Elemente ausgewertet wurden.                                                                                                                                                                                                                                                                                                  |
 |    `InitialTargets`    |                                                                                                                                                                                                                                                                                                                                                                                                                                             Optionales Attribut.<br /><br /> Die anfänglichen Ziele werden ausgeführt bevor die Ziele im `DefaultTargets`-Attribut oder in der Befehlszeile angegeben werden . Mehrere Ziele werden durch Semikolons (;) getrennt.                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |     `ToolsVersion`     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Optionales Attribut.<br /><br /> Die Version des Toolsets, das MSBuild verwendet, um die Werte für $(MSBuildBinPath) und (MSBuildToolsPath) zu bestimmen.                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| `TreatAsLocalProperty` | Optionales Attribut.<br /><br /> Eigenschaftennamen, die nicht als global betrachtet werden. Dieses Attribut verhindert, dass bestimmte Befehlszeileneigenschaften Eigenschaftswerte überschreiben, die in einer Projekt- oder Zieldatei und allen nachfolgenden Importen festgelegt sind. Mehrere Eigenschaften werden durch Semikolons (;) getrennt.<br /><br /> Diese globalen Eigenschaften überschreiben normalerweise Eigenschaftswerte, die in der Projektdatei oder in Zieldateien festgelegt werden. Wenn die Eigenschaft im `TreatAsLocalProperty`-Wert aufgeführt wird, überschreibt der globale Eigenschaftenwert die Eigenschaftenwerte nicht, die in dieser Datei und allen nachfolgenden Importen festgelegt werden. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen identischer Quelldateien mit unterschiedlichen Optionen](../msbuild/how-to-build-the-same-source-files-with-different-options.md). **Hinweis:** Festlegen globaler Eigenschaften in der Befehlszeile mithilfe des Schalters **/property** (oder **/p**). Globale Eigenschaften können auch für untergeordnete Projekte in einem Build mit mehreren Projekten festgelegt oder geändert werden, indem das `Properties`-Attribut der MSBuild-Aufgabe verwendet wird. Weitere Informationen finden Sie unter [MSBuild-Aufgabe](../msbuild/msbuild-task.md). |
+| `TreatAsLocalProperty` | Optionales Attribut.<br /><br /> Eigenschaftennamen, die nicht als global betrachtet werden. Dieses Attribut verhindert, dass bestimmte Befehlszeileneigenschaften Eigenschaftswerte überschreiben, die in einer Projekt- oder Zieldatei und allen nachfolgenden Importen festgelegt sind. Mehrere Eigenschaften werden durch Semikolons (;) getrennt.<br /><br /> Diese globalen Eigenschaften überschreiben normalerweise Eigenschaftswerte, die in der Projektdatei oder in Zieldateien festgelegt werden. Wenn die Eigenschaft im `TreatAsLocalProperty`-Wert aufgeführt wird, überschreibt der globale Eigenschaftenwert die Eigenschaftenwerte nicht, die in dieser Datei und allen nachfolgenden Importen festgelegt werden. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen identischer Quelldateien mit unterschiedlichen Optionen](../msbuild/how-to-build-the-same-source-files-with-different-options.md). **Hinweis**:  Festlegen globaler Eigenschaften an einer Eingabeaufforderung mit dem **"/ Property"** (oder **/p**) wechseln. Globale Eigenschaften können auch für untergeordnete Projekte in einem Build mit mehreren Projekten festgelegt oder geändert werden, indem das `Properties`-Attribut der MSBuild-Aufgabe verwendet wird. Weitere Informationen finden Sie unter [MSBuild-Aufgabe](../msbuild/msbuild-task.md). |
 |        `Xmlns`         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Erforderliches Attribut.<br /><br /> Die `xmlns` %{parentproperty/}-Attributs müssen den Wert des "<http://schemas.microsoft.com/developer/msbuild/2003>".                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
@@ -85,9 +79,7 @@ Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../includes/vstecmsbui
  Keine  
   
 ## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Angeben des zuerst zu erstellenden Ziels](../msbuild/how-to-specify-which-target-to-build-first.md)   
+ [Vorgehensweise: Geben Sie zuerst zu erstellenden Ziels](../msbuild/how-to-specify-which-target-to-build-first.md)   
  [Befehlszeilenreferenz](../msbuild/msbuild-command-line-reference.md)   
  [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)   
  [MSBuild](msbuild.md)
-
-

@@ -2,38 +2,37 @@
 title: 'Workflow-Designer – Vorgehensweise: Hinzufügen von Kommentaren zu einem workflow'
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Presentation.Annotations.Annotation.UI
 - Annotation
 ms.assetid: 9aa0e8d6-8129-4438-8389-d460611581a7
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2f440102f1a155f179273f145adc58be54c275e8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c7eb15c6d19ab40df6913dd67466dc20012492b7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950403"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Vorgehensweise: Hinzufügen von Kommentaren zu einem Workflow im Workflow-Designer
 
 Um zu ermöglichen, größerer, komplexerer Workflows zu erstellen, kann .NET Framework 4.5 der Entwickler auf die folgenden Elementtypen im Designer Anmerkungen hinzuzufügen:
 
--   <xref:System.Activities.Activity>
+- <xref:System.Activities.Activity>
 
--   <xref:System.Activities.Statements.State>
+- <xref:System.Activities.Statements.State>
 
--   <xref:System.Activities.Statements.Transition>
+- <xref:System.Activities.Statements.Transition>
 
--   Von <xref:System.Activities.Statements.FlowNode> abgeleitete Klassen
+- Von <xref:System.Activities.Statements.FlowNode> abgeleitete Klassen
 
--   <xref:System.Activities.Variable>
+- <xref:System.Activities.Variable>
 
--   <xref:System.Activities.Argument>
+- <xref:System.Activities.Argument>
 
 > [!IMPORTANT]
 > Der Inhalt einer Anmerkung wird im Nur-Text-Format in der XAML-Datei gespeichert, die dem Workflow zugeordnet ist, und kann möglicherweise von anderen gelesen werden. Bedenken Sie diesen Umstand, wenn Sie vertrauliche Informationen in eine Anmerkung einfügen.

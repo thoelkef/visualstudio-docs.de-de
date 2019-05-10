@@ -1,14 +1,9 @@
 ---
 title: Probleme mit Sicherheit, Versionsverwaltung und Manifesten in ClickOnce-Bereitstellungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -28,13 +23,13 @@ ms.assetid: d5d0c90b-ac1a-44e2-88dc-0d0ffd881624
 caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 77685b2eb6397d1edf9a342c25838fcefac2e619
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a4864d37cb5930075b292ee765bce9b288794019
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289223"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444990"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Probleme mit Sicherheit, Versionsverwaltung und Manifesten in ClickOnce-Bereitstellungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,11 +67,11 @@ Es gibt eine Vielzahl von Problemen bei der [!INCLUDE[ndptecclick](../includes/n
   
  Wenn Sie Ihre bereitstellungs- noch die Anwendungsmanifeste manuell bearbeitet haben, Sie möglicherweise unbeabsichtigt sie beschädigt. Beschädigtes Manifest wird verhindert, dass eine korrekte [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Installation. Sie können solche Fehler zur Laufzeit Debuggen, indem Sie auf **Details** auf die **ClickOnce-Fehler** (Dialogfeld), und die Fehlermeldung in das Protokoll lesen. Das Protokoll Listet die folgenden Meldungen:  
   
--   Eine Beschreibung der Syntaxfehler, und die Zeilennummer und Zeichenposition Position, in dem der Fehler aufgetreten ist.  
+- Eine Beschreibung der Syntaxfehler, und die Zeilennummer und Zeichenposition Position, in dem der Fehler aufgetreten ist.  
   
--   Der Name der ein Element oder Attribut verwendet wird, gegen das Schema des Manifests. Wenn Sie XML manuell den Manifesten hinzugefügt haben, müssen Sie die Erweiterungen, die von Manifestschemas verglichen werden soll. Weitere Informationen finden Sie unter [ClickOnce-Bereitstellungsmanifest](../deployment/clickonce-deployment-manifest.md) und [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md).  
+- Der Name der ein Element oder Attribut verwendet wird, gegen das Schema des Manifests. Wenn Sie XML manuell den Manifesten hinzugefügt haben, müssen Sie die Erweiterungen, die von Manifestschemas verglichen werden soll. Weitere Informationen finden Sie unter [ClickOnce-Bereitstellungsmanifest](../deployment/clickonce-deployment-manifest.md) und [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md).  
   
--   Ein ID-Konflikt auftritt. Dependency-Verweise in bereitstellungs- und Anwendungsmanifeste müssen in beiden eindeutig sein ihre `name` und `publicKeyToken` Attribute. Wenn beide Attribute zwischen zwei beliebigen Elementen in einem Manifest übereinstimmen, ist das manifest Analyse nicht erfolgreich.  
+- Ein ID-Konflikt auftritt. Dependency-Verweise in bereitstellungs- und Anwendungsmanifeste müssen in beiden eindeutig sein ihre `name` und `publicKeyToken` Attribute. Wenn beide Attribute zwischen zwei beliebigen Elementen in einem Manifest übereinstimmen, ist das manifest Analyse nicht erfolgreich.  
   
 ## <a name="precautions-when-manually-changing-manifests-or-applications"></a>Vorsichtsmaßnahmen bei der Manifeste oder Anwendungen manuell zu ändern.  
  Wenn Sie ein Anwendungsmanifest aktualisieren, müssen Sie sowohl das Anwendungsmanifest und das Bereitstellungsmanifest erneut signieren. Das Bereitstellungsmanifest enthält einen Verweis auf das Anwendungsmanifest, das diese Dateihash und seiner digitalen Signatur enthält.  
@@ -93,12 +88,9 @@ Es gibt eine Vielzahl von Problemen bei der [!INCLUDE[ndptecclick](../includes/n
  Wenn Sie eine Anwendung verschieben oder kopieren möchten, müssen Sie auch aktualisieren die `deploymentProvider` Pfad, damit der Client vom neuen Speicherort vornimmt. Aktualisiert diesen Pfad ist vor allem relevant, wenn Sie die Anwendungen installiert haben. Für online-Anwendungen, die immer über die ursprüngliche URL, die Einstellung gestartet, werden die `deploymentProvider` ist optional. Wenn `deploymentProvider` festgelegt ist, wird es berücksichtigt werden; andernfalls wird zum Starten der Anwendung verwendete URL als Basis-URL verwendet werden, zum Herunterladen von Anwendungsdateien.  
   
 > [!NOTE]
->  Jedes Mal, wenn Sie das Manifest aktualisieren, müssen Sie es auch erneut signieren.  
+> Jedes Mal, wenn Sie das Manifest aktualisieren, müssen Sie es auch erneut signieren.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Problembehandlung bei ClickOnce-Bereitstellungen](../deployment/troubleshooting-clickonce-deployments.md)   
  [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)   
  [Auswählen einer Strategie für die ClickOnce-Bereitstellung](../deployment/choosing-a-clickonce-deployment-strategy.md)
-
-
-

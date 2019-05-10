@@ -1,7 +1,6 @@
 ---
-title: 'CA1804: Nicht verwendete lokale Variablen entfernen'
+title: 'CA1804: Nicht verwendete lokale Variablen entfernen.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1804
@@ -12,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: cc332e67-6543-4813-bd8a-6f6fc75bf22a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 47578cc281334da7eeebeea6eaa5ef0c1c021c8f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f567fa1d1f793395532efac5991b01c5087b638a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53819860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545751"
 ---
-# <a name="ca1804-remove-unused-locals"></a>CA1804: Nicht verwendete lokale Variablen entfernen
+# <a name="ca1804-remove-unused-locals"></a>CA1804: Nicht verwendete lokale Variablen entfernen.
 
 |||
 |-|-|

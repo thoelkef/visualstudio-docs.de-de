@@ -2,7 +2,6 @@
 title: Dispatch-Erweiterungsschnittstellen | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -15,12 +14,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b7b77f096d70b15272e0cce1b985f3c32f89e495
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 77d6a486c20b2fbbb27d917758fac894fb65e330
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935843"
 ---
 # <a name="dispatch-extension-interfaces"></a>Dispatch-Erweiterungsschnittstellen
 Die Headerdatei DispEx.h stellt die Schnittstellen, die in diesem Abschnitt aufgeführten bereit.  

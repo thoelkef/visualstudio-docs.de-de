@@ -1,8 +1,6 @@
 ---
 title: Ändern von Schriftarten und Farben im Editor
 ms.date: 11/26/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - editors, fonts
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 3f7629d1-1cdf-4046-9a31-0632517f234d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2894039fc963ef089d0a1551d8b8afc7713edd4f
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: f0ebc1e4707b0240791524cb0b6b4ba75be897cd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894546"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789591"
 ---
-# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio-2017"></a>Vorgehensweise: Ändern der im Editor in Visual Studio 2017 verwendeten Schriftarten und Farben
+# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Vorgehensweise: Ändern der im Editor in Visual Studio verwendeten Schriftarten und Farben
 
 Sie können im Code-Editor die Standardschriftart ändern, den Schriftgrad anpassen und die Vorder- und Hintergrundfarben für verschiedene Text-**Anzeigeelemente** ändern. Beim Verändern der Schriftarteinstellungen sollten Sie Folgendes beachten:
 
@@ -35,20 +33,20 @@ Sie können im Code-Editor die Standardschriftart ändern, den Schriftgrad anpas
 
 ## <a name="change-the-default-font-face-size-and-colors"></a>So ändern Sie die Standardschriftart, -größe und -farben
 
-1.  Wählen Sie im Menü **Extras** **Optionen** aus, und wählen Sie im Ordner **Umgebung** **Schriftarten und Farben** aus.
+1. Wählen Sie im Menü **Extras** **Optionen** aus, und wählen Sie im Ordner **Umgebung** **Schriftarten und Farben** aus.
 
      [Schriftarten und Farben, Umgebung, Dialogfeld „Optionen“](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md) wird geöffnet.
 
-2.  Wählen Sie unter **Einstellungen anzeigen für** die Option **Text-Editor** aus.
+2. Wählen Sie unter **Einstellungen anzeigen für** die Option **Text-Editor** aus.
 
-3.  Ändern Sie die Optionen **Schriftart** und **Größe**, um die Schriftart und -größe für alle Textelemente in allen Editoren zu ändern.
+3. Ändern Sie die Optionen **Schriftart** und **Größe**, um die Schriftart und -größe für alle Textelemente in allen Editoren zu ändern.
 
-4.  Wählen Sie unter **Elemente anzeigen** das entsprechende Element aus, und ändern Sie anschließend die Optionen **Elementvordergrund** und **Elementhintergrund**.
+4. Wählen Sie unter **Elemente anzeigen** das entsprechende Element aus, und ändern Sie anschließend die Optionen **Elementvordergrund** und **Elementhintergrund**.
 
     > [!TIP]
     > Klicken Sie auf **Standardwerte verwenden**, um die Standardeinstellungen wiederherzustellen.
 
-5.  Klicken Sie auf **OK**.
+5. Klicken Sie auf **OK**.
 
 ## <a name="see-also"></a>Siehe auch
 

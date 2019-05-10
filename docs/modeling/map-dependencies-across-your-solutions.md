@@ -13,16 +13,15 @@ helpviewer_keywords:
 - dependency graphs
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 084518e27924c714b2e1ca7982389fb93ff274cc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6e060f168ea301b898fe578ac0d5030a2ae7e774
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62937703"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Zuordnen von Abhängigkeiten mit Code maps
 
@@ -48,7 +47,7 @@ Sie können Abhängigkeiten für Code in diesen Sprachen zuordnen:
 
 ## <a name="install-code-map-and-live-dependency-validation"></a>Installieren Sie Code Map "und" Live-Abhängigkeitsüberprüfung
 
-Um eine Code Map in Visual Studio 2017 erstellen möchten, installieren Sie zuerst die **Code Map** und **Live-Abhängigkeitsvalidierung** Komponenten:
+Zum Erstellen einer Code Map in Visual Studio installieren Sie zuerst die **Code Map** und **Live-Abhängigkeitsvalidierung** Komponenten:
 
 1. Open **Visual Studio-Installer**. Können Sie sie öffnen in Visual Studio oder über das Startmenü von Windows dazu **Tools** > **Tools und Features abrufen**.
 
@@ -157,7 +156,7 @@ Siehe auch:
 
 Nehmen wir an, dass Sie eine codeüberprüfung in einigen Dateien mit ausstehenden Änderungen ausgeführt haben. Um die Abhängigkeiten in diesen Änderungen anzuzeigen, können Sie eine Code Map aus diesen Dateien erstellen.
 
-   ![Anzeigen bestimmter Abhängigkeiten in Code Maps](../modeling/media/codemapsspecificdependenciesintro.png)
+   ![Anzeigen bestimmter Abhängigkeiten in Codeübersichten](../modeling/media/codemapsspecificdependenciesintro.png)
 
 1. In **Projektmappen-Explorer**, wählen Sie die Projekte, Assemblyverweise, Ordner, Dateien, Typen oder Member, die Sie zuordnen möchten.
 
@@ -231,7 +230,7 @@ Nehmen wir an, dass Sie eine codeüberprüfung in einigen Dateien mit ausstehend
 
 7. Die Beziehungen werden auf der Code Map angezeigt. In diesem Beispiel die Code Map zeigt die Methoden aufgerufen werden, indem die `Find` -Methode und ihre Position, die in der Projektmappe oder extern.
 
-   ![Anzeigen bestimmter Abhängigkeiten in Code Maps](../modeling/media/codemapsspecificdependenciesintro.png)
+   ![Anzeigen bestimmter Abhängigkeiten in Codeübersichten](../modeling/media/codemapsspecificdependenciesintro.png)
 
 8. Um die Code Map zu vereinfachen und sich auf einzelne Teile zu konzentrieren, wählen Sie **Filter** auf der Symbolleiste der Code Map aus, und wählen Sie dann nur die Knoten- und Linktypen aus, die für Sie von Interesse sind. Deaktivieren Sie z. B. die Anzeige von Projektmappenordnern, Assemblys und Namespaces.
 

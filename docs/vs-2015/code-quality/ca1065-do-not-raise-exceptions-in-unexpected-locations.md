@@ -1,14 +1,9 @@
 ---
 title: 'CA1065: Keine Ausnahmen an unerwarteten Speicherorten auslösen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1065
 - DoNotRaiseExceptionsInUnexpectedLocations
@@ -20,14 +15,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 142322360d4ba1ffed6ef893bf02254548ee2705
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6c5a393c32d7f7182fc3226689e24d20a4cae1ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887590"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095352"
 ---
-# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Keine Ausnahmen an unerwarteten Speicherorten auslösen
+# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Keine Ausnahmen an unerwarteten Speicherorten auslösen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -70,24 +65,24 @@ ms.locfileid: "49887590"
 
  Die folgenden Ausnahmen sind zulässig, von einem Property-Get-Methode ausgelöst werden:
 
--   <xref:System.InvalidOperationException?displayProperty=fullName> und alle davon abgeleiteten Klassen (einschließlich <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> und alle davon abgeleiteten Klassen (einschließlich <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
--   <xref:System.NotSupportedException?displayProperty=fullName> und alle davon abgeleiteten Klassen
+- <xref:System.NotSupportedException?displayProperty=fullName> und alle davon abgeleiteten Klassen
 
--   <xref:System.ArgumentException?displayProperty=fullName> (nur von Get)
+- <xref:System.ArgumentException?displayProperty=fullName> (nur von Get)
 
--   <xref:System.Collections.Generic.KeyNotFoundException> (nur von Get)
+- <xref:System.Collections.Generic.KeyNotFoundException> (nur von Get)
 
 ### <a name="event-accessor-methods"></a>Ereigniszugriffsmethoden
  Ereignisaccessoren sollte es sich um einfache Operationen sein, die keine Ausnahmen auslösen. Ein Ereignis sollte keine Ausnahme auslösen, wenn Sie versuchen, hinzufügen oder Entfernen eines ereignishandlers.
 
  Die folgenden Ausnahmen sind zulässig, von einem Ereignisaccessor ausgelöst wird:
 
--   <xref:System.InvalidOperationException?displayProperty=fullName> und alle davon abgeleiteten Klassen (einschließlich <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> und alle davon abgeleiteten Klassen (einschließlich <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
--   <xref:System.NotSupportedException?displayProperty=fullName> und alle davon abgeleiteten Klassen
+- <xref:System.NotSupportedException?displayProperty=fullName> und alle davon abgeleiteten Klassen
 
--   <xref:System.ArgumentException> und davon abgeleiteten Klassen
+- <xref:System.ArgumentException> und davon abgeleiteten Klassen
 
 ### <a name="equals-methods"></a>Equals-Methoden
  Die folgenden **gleich** Methoden sollte keine Ausnahmen auslösen:
@@ -142,6 +137,3 @@ ms.locfileid: "49887590"
 
 ## <a name="see-also"></a>Siehe auch
  [Entwurfswarnungen](../code-quality/design-warnings.md)
-
-
-

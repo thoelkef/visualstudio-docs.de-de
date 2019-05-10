@@ -1,14 +1,9 @@
 ---
 title: 'DA0021: Hohes Maß an Garbage Collections der Generation 1 | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.21
 - vs.performance.DA0021
@@ -17,13 +12,13 @@ ms.assetid: ebf5d9b3-a1ac-4688-8f0f-39a85f4dd15f
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 77bcfd877bb0e5a8bf20caa629c226c4f304fafa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2a4502be6c683376b93bc144ef5b3568550a1c9e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765858"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62584035"
 ---
 # <a name="da0021-high-rate-of-gen-1-garbage-collections"></a>DA0021: Hohes Maß an Garbage Collections der Generation 1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51765858"
 Regel-Id | DA0021 |  
 | Kategorie |. NET Framework-Verwendung |  
 | Profilerstellungsmethoden | Alle |  
-| Nachricht | Es ist ein relativ hohes Maß an Garbage Collections der Generation 1 auftreten. Ist ein Großteil der Programmdatenstrukturen entwurfsbedingt zugeordnet und für einen längeren Zeitraum gespeichert, stellt dies üblicherweise kein Problem dar. Ist dieses Verhalten jedoch nicht beabsichtigt, werden von der Anwendung unter Umständen Objekte festgehalten. Wenn Sie nicht sicher sind, können Sie sammeln, .NET-Speicherbelegungsdaten und Lebensdauerinformationen um das Muster der speicherbelegung zu verstehen, die Anwendung verwendet. |  
+| Nachricht | Es ist ein relativ hohes Maß an Garbage Collections der Generation 1 auftreten. Ist ein Großteil der Programmdatenstrukturen entwurfsbedingt zugeordnet und für einen längeren Zeitraum gespeichert, stellt dies üblicherweise kein Problem dar. Ist dieses Verhalten jedoch nicht beabsichtigt, werden von der Anwendung unter Umständen Objekte festgehalten. Sollten Sie nicht sicher sein, sammeln Sie die .NET-Speicherbelegungsdaten und die Informationen zur Objektlebensdauer, um nachvollziehen zu können, welches Speicherbelegungsmuster von der Anwendung verwendet wird.|  
 | Regeltyp | Informationen |  
   
  Wenn Sie Profile mithilfe der Sampling-, .NET-Arbeitsspeicher- oder Ressourcenkonfliktmethode Profile erstellen, müssen mindestens 10 Samplings erfasst werden, damit diese Regel ausgelöst wird.  
@@ -52,6 +47,3 @@ Regel-Id | DA0021 |
  Führen Sie die Profilerstellung mithilfe eines .NET-Speicherbelegungsprofils erneut aus, und rufen Sie Informationen zur Objektlebensdauer ab, damit Sie das Muster für die verwaltete Speicherauslastung der Anwendung nachvollziehen können.  
   
  Informationen zur Verbesserung der Garbage Collection-Leistung finden Sie unter [Garbage Collector-Grundlagen und Tipps zur Leistung](http://go.microsoft.com/fwlink/?LinkId=148226) auf der Microsoft-Website. Informationen zum Mehraufwand der automatischen Garbage Collection finden Sie unter [Large Object Heap Uncovered (Informationen zum Heap für große Objekte)](http://go.microsoft.com/fwlink/?LinkId=177836).
-
-
-

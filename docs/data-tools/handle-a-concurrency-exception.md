@@ -15,16 +15,15 @@ helpviewer_keywords:
 ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b626aa489323d26ef439ade216d1fa97a52a8d13
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: a8e14a53719d4913bcc04bcb2b702ca4ec4a8c55
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825645"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62566741"
 ---
 # <a name="handle-a-concurrency-exception"></a>Behandeln einer Parallelitätsausnahme
 
@@ -46,7 +45,7 @@ Diese exemplarische Vorgehensweise enthält folgende Vorgänge:
 
 7. Fangen Sie den Fehler ab, und zeigen Sie anschließend die verschiedenen Versionen des Datensatzes an, um festzulegen, ob die Aktualisierung der Datenbank fortgesetzt oder abgebrochen werden soll.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Vorraussetzungen
 
 In dieser exemplarischen Vorgehensweise verwendet SQL Server Express LocalDB und der Beispieldatenbank Northwind.
 
@@ -70,7 +69,7 @@ Beginnen Sie mit der Erstellung einer neuen Windows Forms-Anwendung:
 
 1. In Visual Studio auf die **Datei** , wählen Sie im Menü **neu** > **Projekt**.
 
-2. Erweitern Sie entweder **Visual C#**  oder **Visual Basic** wählen Sie im linken Bereich **Windows Desktop**.
+2. Erweitern Sie entweder **Visual C#-** oder **Visual Basic** wählen Sie im linken Bereich **Windows Desktop**.
 
 3. Wählen Sie im mittleren Bereich die **Windows Forms-App** Projekttyp.
 
@@ -117,7 +116,7 @@ In diesem Abschnitt erstellen Sie eine <xref:System.Windows.Forms.DataGridView?d
 
 ## <a name="test-the-form"></a>Testen Sie das Formular
 
-Sie können das Formular jetzt testen, um sicherzustellen, dass das Verhalten bisher wie erwartet ausfällt.
+Sie können das Formular jetzt testen, um sicherzustellen, dass das Verhalten bisher wie erwartet ausfällt:
 
 1. Wählen Sie **F5** zum Ausführen der Anwendung.
 
@@ -166,16 +165,16 @@ Wenn Sie versuchen, ein Update ausführen und eine Ausnahme ausgelöst wird, mö
    [!code-csharp[VbRaddataConcurrency#2](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_2.cs)]
    [!code-vb[VbRaddataConcurrency#2](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_2.vb)]
 
-### <a name="display-choices-to-the-user"></a>Zeigen Sie die Auswahloptionen für den Benutzer an.
+### <a name="display-choices-to-the-user"></a>Anzeigen der Auswahloptionen für den Benutzer
 
 Durch den soeben geschriebenen Code wird die `CreateMessage`-Prozedur aufgerufen, um Fehlerinformationen für den Benutzer anzuzeigen. In dieser exemplarischen Vorgehensweise verwenden Sie ein Meldungsfeld, um die verschiedenen Versionen des Datensatzes für den Benutzer anzuzeigen. Dadurch kann der Benutzer auswählen, ob der Datensatz mit den Änderungen überschreiben oder die Bearbeitung abbricht. Wenn der Benutzer durch Klicken auf eine Schaltfläche eine Option im Meldungsfeld ausgewählt hat, wird die Antwort an die `ProcessDialogResult`-Methode übergeben.
 
-Erstellen Sie die Meldung, indem Sie dem Code-Editor** folgenden Code hinzufügen. Geben Sie diesen Code unter der `UpdateDatabase`-Methode ein.
+Erstellen Sie die Meldung, indem Sie dem **Code-Editor** folgenden Code hinzufügen. Geben Sie diesen Code unter der `UpdateDatabase`-Methode ein:
 
 [!code-csharp[VbRaddataConcurrency#4](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_3.cs)]
 [!code-vb[VbRaddataConcurrency#4](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_3.vb)]
 
-### <a name="process-the-users-response"></a>Verarbeitet die Antwort des Benutzers
+### <a name="process-the-users-response"></a>Verarbeiten der Antwort des Benutzers
 
 Außerdem benötigen Sie Code zum Verarbeiten der Antwort des Benutzers in der MessageBox. Die Optionen sind entweder auf den aktuellen Datensatz in der Datenbank mit der vorgeschlagenen Änderung überschreiben oder die lokalen Änderungen verwerfen und aktualisieren Sie die Datentabelle mit dem Datensatz, der derzeit in der Datenbank vorhanden ist. Wenn der Benutzer **Ja**, wird die <xref:System.Data.DataTable.Merge%2A> Methode wird aufgerufen, mit der *PreserveChanges* Argument festgelegt wird, um **"true"**. Dies bewirkt, dass den Updateversuch, die erfolgreich ist, muss, da die ursprüngliche Version des Datensatzes nun der Eintrag in der Datenbank übereinstimmt.
 
@@ -194,7 +193,7 @@ Sie können das Formular jetzt testen, um sicherzustellen, dass das Verhalten wi
 
 3. Auf der **Ansicht** Menü wählen **Server-Explorer**.
 
-4. Erweitern Sie im Server-Explorer **die Verbindung, die von der Anwendung verwendet wird, und erweitern Sie den Knoten Tabellen**.
+4. Erweitern Sie im **Server-Explorer** die Verbindung, die von der Anwendung verwendet wird, und erweitern Sie den Knoten **Tabellen**.
 
 5. Mit der rechten Maustaste die **Kunden** Tabelle, und wählen Sie dann **Tabellendaten anzeigen**.
 
@@ -207,7 +206,7 @@ Sie können das Formular jetzt testen, um sicherzustellen, dass das Verhalten wi
 
 8. Im ersten Datensatz auf dem Formular (**ALFKI**), ändern Sie **ContactName** zu **Maria Anders1**.
 
-9. Wählen Sie die **speichern** Schaltfläche.
+9. Klicken Sie auf die Schaltfläche **Speichern**.
 
      Der Parallelitätsfehler wird ausgelöst, und das Meldungsfeld wird angezeigt.
 

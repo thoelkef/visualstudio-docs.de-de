@@ -1,7 +1,6 @@
 ---
 title: Hinzufügen von Namensparametern zu Projekt- und Elementvorlagen
 ms.date: 01/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - template parameters
@@ -9,13 +8,13 @@ helpviewer_keywords:
 - Visual Studio templates, using parameters
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fa06783acf3feaa863b788c3c0b976b0c762d0c8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: cf9a990be3f5e87180967a4f9f274ec79fbc357e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986907"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946880"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>Vorgehensweise: Ersetzen von Parametern in einer Vorlage
 
@@ -25,7 +24,7 @@ Vorlagenparameter werden im Format $*Parameter*$ geschrieben. Eine vollständige
 
 Im folgenden Abschnitt wird erläutert, wie Sie eine Vorlage ändern, um den Namen eines Namespaces durch den „sicheren Projektnamen“ zu ersetzen.
 
-## <a name="to-use-a-parameter-to-replace-the-namespace-name"></a>Verwenden eines Parameters, um einen Namespacenamen zu ersetzen
+## <a name="example---namespace-name"></a>Beispiel: Namespacename
 
 1. Fügen Sie den Parameter in eine oder mehrere Codedateien in der Vorlage ein. Beispiel:
 

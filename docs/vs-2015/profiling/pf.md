@@ -1,25 +1,20 @@
 ---
 title: PF | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: cdc0a094-a986-4629-bd1c-dd5fdca323dc
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 67663c067188a703ff6228a703a71ac8a1a0b355
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 243d5fada7342bc05d8768a7e33cca6f55e309ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442466"
 ---
 # <a name="pf"></a>PF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +22,7 @@ ms.locfileid: "51757095"
 Die VSPerfCmd.exe-Option **PF** legt das Profilerstellungsereignis fest, das auf Seitenfehler gesampelt wird, und optional wird die Anzahl der Zyklen in einem Samplingintervall vom Standard „10“ auf einen anderen Wert geändert.  
   
 > [!NOTE]
->  PF kann nicht in 64-Bit-Systemen verwendet werden.  
+> PF kann nicht in 64-Bit-Systemen verwendet werden.  
   
  **Hinweis:** **PF** wird auf 64-Bit-Computern nicht unterstützt und kann nur in einer Befehlszeile verwendet werden, die auch die Optionen **Launch** oder **Attach** enthält.  
   
@@ -82,6 +77,3 @@ VSPerfCmd.exe /Launch:TestApp.exe /PF:20
  [Profilerstellung für eigenständige Anwendungen](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Erstellen von Dienstprofilen](../profiling/command-line-profiling-of-services.md)
-
-
-

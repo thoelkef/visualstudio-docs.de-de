@@ -2,7 +2,6 @@
 title: BREAKRESUMEACTION-Enumeration | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3186ac39353d11f327f7940ae5fc03ae2238ddd9
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: e5c79aacc64eb57282bf09f7e4673980396b37ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54090467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955288"
 ---
 # <a name="breakresumeaction-enumeration"></a>BREAKRESUMEACTIONS-Enumeration
 Beschreibt, wie der Vorgang von einem Haltepunkt aus fortgesetzt wird.  

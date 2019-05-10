@@ -2,7 +2,6 @@
 title: IActiveScriptProfilerCallback::Shutdown | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -16,12 +15,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bbe5acd75ecf4f004d835490579b1f35c1bf675c
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 091ccc30f16081fdca8f10778efec208ef5ccb16
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54086813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993422"
 ---
 # <a name="iactivescriptprofilercallbackshutdown"></a>IActiveScriptProfilerCallback::Shutdown
 Wird aufgerufen, um das Profilerobjekt zu informieren, wenn auf eine Skript-Engine die profilerstellung beendet wird. Auf diese Weise kann das Profilerobjekt seine Bereinigungsroutinen aufrufen, wenn erforderlich. Diese Methode wird auch von der Skript-Engine aufgerufen, wenn die Skript-Engine heruntergefahren wird oder wenn ein Aufruf von [IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md) ein Fehler auftritt.  

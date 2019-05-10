@@ -1,7 +1,6 @@
 ---
 title: Angeben benutzerdefinierter Buildereignisse
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 69e935a5-e208-4bcd-865c-3e5f9b047ca8
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6c5bde6b6dce7655043f3dc766a5faa81fa944e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c1acd55ad9ea2d671730a656a673fd1f2ca3aa19
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430884"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Festlegen von benutzerdefinierten Buildereignissen in Visual Studio
 
@@ -25,11 +24,11 @@ Durch Angeben eines benutzerdefinierten Buildereignisses können Sie vor dem Sta
 
  Spezifische Informationen zu den verwendeten Programmiersprachen finden Sie in den folgenden Themen:
 
--   Visual Basic: [Vorgehensweise: Angeben von Buildereignissen (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
+- Visual Basic: [Vorgehensweise: Angeben von Buildereignissen (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
 
--   C# und F#: [Vorgehensweise: Angeben von Buildereignissen (C#)](../ide/how-to-specify-build-events-csharp.md)
+- C# und F#: [Vorgehensweise: Angeben von Buildereignissen (C#)](../ide/how-to-specify-build-events-csharp.md)
 
--   Visual C++: [Festlegen von Buildereignissen](/cpp/ide/specifying-build-events).
+- Visual C++: [Festlegen von Buildereignissen](/cpp/ide/specifying-build-events).
 
 ## <a name="syntax"></a>Syntax
 
@@ -54,7 +53,7 @@ Buildereignisse folgen derselben Syntax wie DOS-Befehle, Sie können aber außer
    Beispiel: `for %I in (*.txt *.doc *.html) do copy %I c:\`*meinverzeichnis*`\`
 
   > [!NOTE]
-  >  `%I` im oben abgebildeten Code sollte in Batchskripts zu `%%I` werden.
+  > `%I` im oben abgebildeten Code sollte in Batchskripts zu `%%I` werden.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -2,20 +2,19 @@
 title: Einrichten von Remote R Service unter Linux
 description: Einrichten des Remote R Services unter Ubuntu und des Windows-Subsystems für Linux.
 ms.date: 12/04/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 ms.reviewer: karthiknadig
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: c9406db2f7ae97a40936d672fb01d4943aeadcce
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c4d65388db0ef90f807ec85b8c9216d717c2b571
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62809556"
 ---
 # <a name="remote-r-service-for-linux"></a>Remote R Service für Linux
 
@@ -167,5 +166,6 @@ Auf dem Remotecomputer muss in jedem Fall einer der folgenden R-Interpreter inst
     ```bash
     az container create --image myimage:latest --name myaz-container --resource-group myaz-container-res --ip-address public --port 5444 --cpu 2 --memory 4 --command-line "rtvsd"
     ```
+
 1. Führen Sie den Befehl `az container list` aus, um den Status zu überprüfen. Suchen Sie nach `provisioningState`: `Succeeded`.
 1. Wenn die Bereitstellung erfolgreich war, können Sie jetzt eine Verbindung mit dem Container herstellen. Suchen Sie im Feld `ipAddress` nach der öffentlichen IP-Adresse, die Sie mit den Anmeldeinformationen in der Docker-Datei verwenden, um eine Verbindung mit dem Container aus RTVS herzustellen.

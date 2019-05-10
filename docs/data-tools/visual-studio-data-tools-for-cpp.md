@@ -1,26 +1,25 @@
 ---
-title: Datatools für C++
+title: Datatools fürC++
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
 - CPP
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: b13b7e8e23367fe83afb9e3ccf1a081f369867af
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 5157f1d6a851e0784e79dfbfe5b94aef0490a026
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895479"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62565243"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Visual Studio-Datentools für C++
 
-Systemeigener C++-Code kann oft die schnellste beim Zugreifen auf Datenquellen verwendet werden. Data Tools für C++-Anwendungen in Visual Studio ist jedoch nicht so umfangreich wie es für .NET-Anwendungen ist. Z. B. die **Datenquellen** Fenster kann nicht verwendet werden, um Drag & drop-Datenquellen auf einer C++-Entwurfsoberfläche. Wenn Sie eine objektrelationale Ebene benötigen, müssen Sie einen eigenen Handler erstellen, oder verwenden Sie ein Produkt von Drittanbietern. Dies gilt auch für die Datenbindung Funktionalität, obwohl Anwendungen, die die Microsoft Foundation Class-Bibliothek verwenden einige Datenbankklassen mit Dokumenten und Ansichten, verwenden können, um Daten im Arbeitsspeicher speichern und für den Benutzer anzuzeigen. Weitere Informationen finden Sie unter [-Datenzugriff in Visual C++](/cpp/data/data-access-in-cpp).
+Systemeigener C++-Code kann oft die schnellste beim Zugreifen auf Datenquellen verwendet werden. Data Tools für C++-Anwendungen in Visual Studio ist jedoch nicht so umfangreich wie es für .NET-Anwendungen ist. Z. B. die **Datenquellen** Fenster kann nicht verwendet werden, um Drag & drop-Datenquellen auf einem C++ Entwurfsoberfläche. Wenn Sie eine objektrelationale Ebene benötigen, müssen Sie einen eigenen Handler erstellen, oder verwenden Sie ein Produkt von Drittanbietern. Dies gilt auch für die Datenbindung Funktionalität, obwohl Anwendungen, die die Microsoft Foundation Class-Bibliothek verwenden einige Datenbankklassen mit Dokumenten und Ansichten, verwenden können, um Daten im Arbeitsspeicher speichern und für den Benutzer anzuzeigen. Weitere Informationen finden Sie unter [-Datenzugriff in Visual C++](/cpp/data/data-access-in-cpp).
 
 Zum Verbinden mit SQL-Datenbanken können systemeigene C++-Anwendungen, die ODBC- und OLE DB-Treiber und der ADO-Anbieter, der in Windows enthalten sind. Diese können auf eine beliebige Datenbank verbinden, die diese Schnittstellen unterstützt. Der ODBC-Treiber ist der Standard. OLE DB wird für die Abwärtskompatibilität bereitgestellt. Weitere Informationen zu diesen Data-Technologien, finden Sie unter [Windows Data Access Components](/previous-versions/windows/desktop/ms692897(v=vs.85)).
 
@@ -28,7 +27,7 @@ Profitieren Sie von benutzerdefinierten Funktionen in SQL Server 2005 und höher
 
 ## <a name="to-connect-to-localdb-through-odbc-and-sql-native-client-from-a-c-application"></a>Aus einer C++-Anwendung eine Verbindung mit LocalDB über ODBC und SQL Native Client
 
-1. SQL Server Data Tools installieren
+1. Installieren Sie SQL Server Data Tools.
 
 2. Wenn Sie eine Beispiel-SQL-Datenbank für die Verbindung benötigen, laden Sie die Northwind-Datenbank, und Entzippen Sie sie an einem neuen Speicherort.
 
@@ -57,7 +56,7 @@ Profitieren Sie von benutzerdefinierten Funktionen in SQL Server 2005 und höher
    #include <sqlncli.h>
    ```
 
-    Beachten Sie, dass das Beispiel nicht tatsächlich die native Client-Funktionalität, verwendet damit die vorherigen Schritte nicht erforderlich, dafür sind zu kompilieren und auszuführen. Aber das Projekt ist jetzt für die Sie verwenden diese Funktion konfiguriert. Weitere Informationen finden Sie unter [SQL Server Native Client Programming (SQL Server Native Client-Programmierung)](/sql/relational-databases/native-client/sql-server-native-client)
+    Beachten Sie, dass das Beispiel nicht tatsächlich die native Client-Funktionalität, verwendet damit die vorherigen Schritte nicht erforderlich, dafür sind zu kompilieren und auszuführen. Aber das Projekt ist jetzt für die Sie verwenden diese Funktion konfiguriert. Weitere Informationen finden Sie unter [SQL Server Native Client-Programmierung](/sql/relational-databases/native-client/sql-server-native-client).
 
 7. Geben Sie den zu verwendenden im Subsystem ODBC-Treiber. Im Beispiel wird das Treiber Verbindungszeichenfolgen-Attribut in als ein Befehlszeilenargument übergeben. In **Projekt** > **Eigenschaften** > **Debuggen**, fügen Sie diesen Befehlsargument hinzu:
 
@@ -65,7 +64,7 @@ Profitieren Sie von benutzerdefinierten Funktionen in SQL Server 2005 und höher
    DRIVER="SQL Server Native Client 11.0"
    ```
 
-8. Drücken Sie **F5**, um die Anwendung zu erstellen und auszuführen. Daraufhin sollte ein Dialogfeld aus dem Treiber, die Sie aufgefordert werden, geben Sie eine Datenbank. Geben Sie `(localdb)\MSSQLLocalDB`, und überprüfen Sie **vertrauenswürdige Verbindung**. Klicken Sie auf „OK“: Eine Konsole mit Nachrichten, die eine erfolgreiche Verbindung angeben, sollte angezeigt werden. Außerdem sollte eine Eingabeaufforderung angezeigt werden, können Sie in einer SQL-Anweisung eingeben. Der folgende Bildschirm zeigt eine Beispielabfrage und die Ergebnisse:
+8. Drücken Sie **F5**, um die Anwendung zu erstellen und auszuführen. Daraufhin sollte ein Dialogfeld aus dem Treiber, die Sie aufgefordert werden, geben Sie eine Datenbank. Geben Sie `(localdb)\MSSQLLocalDB`, und überprüfen Sie **vertrauenswürdige Verbindung**. Klicken Sie auf **OK**. Eine Konsole mit Nachrichten, die eine erfolgreiche Verbindung angeben, sollte angezeigt werden. Außerdem sollte eine Eingabeaufforderung angezeigt werden, können Sie in einer SQL-Anweisung eingeben. Der folgende Bildschirm zeigt eine Beispielabfrage und die Ergebnisse:
 
    ![ODBC-Beispiel-Abfrageausgabe](../data-tools/media/raddata-odbc-sample-query-output.png)
 

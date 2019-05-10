@@ -13,17 +13,15 @@ helpviewer_keywords:
 ms.assetid: 56a1fbff-c7e8-4187-a1c1-ffd17024bc1b
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c76f769234d8b8c14ccd44d8c2cf4c669bf48ffd
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
-ms.translationtype: MTE95
+ms.openlocfilehash: 1631f1b93f79c21914f990620f7e0047c301163f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305480"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567818"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Erstellen von Nachschlagetabellen in WPF-Anwendungen
 
@@ -33,49 +31,49 @@ Als Beispiel kann eine Tabelle mit dem Namen `Orders` dienen, die Teil einer Ver
 
 ## <a name="to-create-a-lookup-table"></a>So erstellen Sie eine Suchtabelle
 
-1.  Fügen Sie eine der folgenden Typen von Datenquellen mit zugehörigen Daten zu Ihrem Projekt hinzu:
+1. Fügen Sie eine der folgenden Typen von Datenquellen mit zugehörigen Daten zu Ihrem Projekt hinzu:
 
-    -   DataSet oder ein Entity Data Model.
+    - DataSet oder ein Entity Data Model.
 
-    -   WCF Data Service, WCF-Dienst oder einen Webdienst. Weitere Informationen finden Sie unter [Vorgehensweise: Verbinden mit Daten in einem Dienst](../data-tools/how-to-connect-to-data-in-a-service.md).
+    - WCF Data Service, WCF-Dienst oder einen Webdienst. Weitere Informationen finden Sie unter [Vorgehensweise: Herstellen einer Verbindung mit Daten in einem Dienst](../data-tools/how-to-connect-to-data-in-a-service.md).
 
-    -   Objekte Weitere Informationen finden Sie unter [Binden an Objekte in Visual Studio](bind-objects-in-visual-studio.md).
+    - Objekte. Weitere Informationen finden Sie unter [Binden an Objekte in Visual Studio](bind-objects-in-visual-studio.md).
 
     > [!NOTE]
     > Bevor Sie eine Nachschlagetabelle erstellen können, müssen zwei zusammengehörige Tabellen oder Objekte als Datenquelle für das Projekt vorhanden.
 
-2.  Öffnen der **WPF-Designer**, und stellen Sie sicher, dass der Designer ein Container enthält, die für Elemente in ein gültiges Ablageziel ist die **Datenquellen** Fenster.
+2. Öffnen der **WPF-Designer**, und stellen Sie sicher, dass der Designer ein Container enthält, die für Elemente in ein gültiges Ablageziel ist die **Datenquellen** Fenster.
 
      Weitere Informationen über gültige Ablageziele finden Sie unter [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 
-3.  Klicken Sie im Menü Daten **auf Datenquellen anzeigen**, um das Datenquellenfenster** zu öffnen.
+3. Klicken Sie im Menü **Daten** auf **Datenquellen anzeigen**, um das Fenster **Datenquellen** zu öffnen.
 
-4.  Erweitern Sie die Knoten in der **Datenquellen** Fenster, bis die übergeordnete Tabelle oder Objekt und die zugehörige untergeordnete Tabelle oder das Objekt angezeigt werden.
+4. Erweitern Sie die Knoten in der **Datenquellen** Fenster, bis die übergeordnete Tabelle oder Objekt und die zugehörige untergeordnete Tabelle oder das Objekt angezeigt werden.
 
     > [!NOTE]
     > Zugehörige untergeordnete Tabelle oder des Objekts ist der Knoten, der als ein erweiterbarer untergeordneter Knoten unter der übergeordneten Tabelle oder ein Objekt angezeigt wird.
 
-5.  Klicken Sie auf das Dropdownmenü für den untergeordneten Knoten, und wählen **Details**.
+5. Klicken Sie auf das Dropdownmenü für den untergeordneten Knoten, und wählen **Details**.
 
-6.  Erweitern Sie den untergeordneten Knoten.
+6. Erweitern Sie den untergeordneten Knoten.
 
-7.  Klicken Sie unter den untergeordneten Knoten auf das Dropdownmenü für das Element, das die untergeordneten und übergeordneten Daten beziehen. (Im obigen Beispiel ist dies die **"CustomerID"** Knoten.) Wählen Sie eine der folgenden Typen von Steuerelementen, die nachschlagebindung unterstützt:
+7. Klicken Sie unter den untergeordneten Knoten auf das Dropdownmenü für das Element, das die untergeordneten und übergeordneten Daten beziehen. (Im obigen Beispiel ist dies die **"CustomerID"** Knoten.) Wählen Sie eine der folgenden Typen von Steuerelementen, die nachschlagebindung unterstützt:
 
-    -   **ComboBox**
+    - **ComboBox**
 
-    -   **ListBox**
+    - **ListBox**
 
-    -   **ListView**
+    - **ListView**
 
         > [!NOTE]
         > Wenn die **ListBox** oder **ListView** Steuerelement erscheint nicht in der Liste, Sie können diese Steuerelemente hinzufügen, um die Liste. Weitere Informationen finden Sie unter [legen Sie das Steuerelement erstellt werden, beim Ziehen aus Datenquellenfenster](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
-    -   Jedes benutzerdefinierten Steuerelements, die von abgeleitet <xref:System.Windows.Controls.Primitives.Selector>.
+    - Jedes benutzerdefinierten Steuerelements, die von abgeleitet <xref:System.Windows.Controls.Primitives.Selector>.
 
         > [!NOTE]
         > Für Informationen zur Vorgehensweise beim Hinzufügen der benutzerdefinierten Steuerelemente auf die Liste der Steuerelemente Sie, für Elemente in auswählen kann der **Datenquellen** Fenster finden Sie unter [Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellenfenster](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
-8.  Ziehen Sie den untergeordneten Knoten aus der **Datenquellen** auf einen Container im WPF-Designer. (Im vorherigen Beispiel ist der untergeordnete Knoten ist der **Bestellungen** Knoten.)
+8. Ziehen Sie den untergeordneten Knoten aus der **Datenquellen** auf einen Container im WPF-Designer. (Im vorherigen Beispiel ist der untergeordnete Knoten ist der **Bestellungen** Knoten.)
 
      Visual Studio generiert XAML, das neue datengebundene Steuerelemente für jedes der Elemente erstellt, die Sie ziehen. Das XAML fügt auch ein neues <xref:System.Windows.Data.CollectionViewSource> für die untergeordnete Tabelle oder ein Objekt, das die Ressourcen des Ablageziels. Für einige Datenquellen generiert Visual Studio auch Code zum Laden von Daten in der Tabelle oder ein Objekt. Weitere Informationen finden Sie unter [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 
@@ -94,4 +92,4 @@ Als Beispiel kann eine Tabelle mit dem Namen `Orders` dienen, die Teil einer Ver
 
 - [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Anzeigen zugehöriger Daten in WPF-Anwendungen](../data-tools/display-related-data-in-wpf-applications.md)
-- [Exemplarische Vorgehensweise: Anzeigen verknüpfter Daten in einer WPF-Anwendung](../data-tools/display-related-data-in-wpf-applications.md)
+- [Exemplarische Vorgehensweise: Anzeigen zugehöriger Daten in WPF-Anwendungen](../data-tools/display-related-data-in-wpf-applications.md)

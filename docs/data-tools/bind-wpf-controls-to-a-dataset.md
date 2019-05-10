@@ -12,16 +12,15 @@ helpviewer_keywords:
 ms.assetid: 177420b9-568b-4dad-9d16-1b0e98a24d71
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 585b5b5397ebd259476654dc2cc62f1add262af9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: b85999a22bf49923630a0abe2f9ef33950edd8fe
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918900"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815634"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Binden von WPF-Steuerelementen an ein Dataset
 
@@ -39,7 +38,7 @@ In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschau
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Vorraussetzungen
 
 Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
 
@@ -57,15 +56,29 @@ Vorkenntnisse der folgenden Konzepte sind ebenfalls hilfreich, wenn auch für di
 
 Erstellen Sie ein neues WPF-Projekt zur Produktdatensätze.
 
-1. Starten Sie Visual Studio.
+::: moniker range="vs-2017"
 
-2. Klicken Sie im Menü **Datei** auf **Neu** > **Projekt**.
+1. Öffnen Sie Visual Studio.
+
+2. Wählen Sie im Menü **Datei** die Option **Neu** > **Projekt** aus.
 
 3. Erweitern Sie **Visual Basic** oder **Visual C#**, und wählen Sie dann **Windows** aus.
 
-4. Wählen Sie die Projektvorlage **WPF-Anwendung** aus.
+4. Wählen Sie die **WPF-App** Projektvorlage.
 
 5. In der **Namen** geben **AdventureWorksProductsEditor** und wählen Sie dann **OK**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Öffnen Sie Visual Studio.
+
+2. Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
+
+3. Suchen Sie nach der C# **WPF-App** -Projektvorlage aus, und führen Sie die Schritte, um das Projekt, und benennen das Projekt erstellen **AdventureWorksProductsEditor**.
+
+::: moniker-end
 
    Visual Studio erstellt das Projekt „AdventureWorksProductsEditor“.
 

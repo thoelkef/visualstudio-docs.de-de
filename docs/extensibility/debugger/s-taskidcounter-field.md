@@ -7,32 +7,32 @@ helpviewer_keywords:
 ms.assetid: 7e5a1907-c652-4046-b207-d2f1ef7b8029
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d62e91274d7576360152512a9b42d8203199a297
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cdd8619592a1f9201402e8d987b0a0f129d08edb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870085"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62913022"
 ---
 # <a name="staskidcounter-field"></a>s_taskIdCounter-Feld
-Der nächste verfügbare Bezeichner für eine <xref:System.Threading.Tasks.Task> Objekt.  
-  
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
-  
- **Assembly:** "mscorlib" (in "mscorlib.dll")  
-  
- Da Sie diesen internen Member von .NET Framework zugreifen können, wird die folgende Syntax in Common Intermediate Language (CIL) bereitgestellt.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```csharp  
-.field static assembly int32 s_taskIdCounter  
-```  
-  
-## <a name="remarks"></a>Hinweise  
-  
-## <a name="see-also"></a>Siehe auch  
- [Task class (Task-Klasse)](../../extensibility/debugger/task-class-internal-members.md)
+Der nächste verfügbare Bezeichner für eine <xref:System.Threading.Tasks.Task> Objekt.
+
+ **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>
+
+ **Assembly:** "mscorlib" (in "mscorlib.dll")
+
+ Da Sie diesen internen Member von .NET Framework zugreifen können, wird die folgende Syntax in Common Intermediate Language (CIL) bereitgestellt.
+
+## <a name="syntax"></a>Syntax
+
+```csharp
+.field static assembly int32 s_taskIdCounter
+```
+
+## <a name="remarks"></a>Hinweise
+
+## <a name="see-also"></a>Siehe auch
+- [Task class (Task-Klasse)](../../extensibility/debugger/task-class-internal-members.md)

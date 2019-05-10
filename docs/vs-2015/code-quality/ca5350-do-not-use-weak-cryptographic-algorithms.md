@@ -1,26 +1,21 @@
 ---
 title: 'CA5350: Verwenden Sie keine schwache kryptografische Algorithmen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 ms.assetid: 4c51bb8a-fcfa-46aa-ab61-634be84c4a7a
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c22c10467c620d41e0cc73ab763a260f278f8a34
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.openlocfilehash: 004b09c471ea163a17391a8ad51abcc0aefee1ed
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234222"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430709"
 ---
-# <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350: Verwenden Sie keine schwachen kryptografischen Algorithmen.
+# <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350: Keine schwachen Kryptografiealgorithmen verwenden.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||  
@@ -31,7 +26,7 @@ ms.locfileid: "49234222"
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|  
   
 > [!NOTE]
->  Diese Warnung wurde zuletzt im November 2015 aktualisiert.  
+> Diese Warnung wurde zuletzt im November 2015 aktualisiert.  
   
 ## <a name="cause"></a>Ursache  
  Verschlüsselungsalgorithmen, wie z. B. <xref:System.Security.Cryptography.TripleDES> , und Hashalgorithmen, wie z. B. <xref:System.Security.Cryptography.SHA1> und <xref:System.Security.Cryptography.RIPEMD160> , gelten als schwach.  
@@ -46,9 +41,9 @@ ms.locfileid: "49234222"
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
  Verwenden Sie kryptografisch sicherere Optionen:  
   
--   Verwenden Sie für TripleDES-Verschlüsselung die <xref:System.Security.Cryptography.Aes> -Verschlüsselung.  
+- Verwenden Sie für TripleDES-Verschlüsselung die <xref:System.Security.Cryptography.Aes> -Verschlüsselung.  
   
--   Verwenden Sie für SHA1- oder RIPEMD160-Hashfunktionen diejenigen der [SHA-2](https://msdn.microsoft.com/en-us/library/windows/desktop/aa382459.aspx) -Produktfamilie (z. B. <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).  
+- Verwenden Sie für SHA1- oder RIPEMD160-Hashfunktionen diejenigen der [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) -Produktfamilie (z. B. <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).  
   
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
  Unterdrücken Sie eine Warnung dieser Regel, wenn der für die Daten benötigte Schutzgrad keine Sicherheitsgarantie erfordert.  

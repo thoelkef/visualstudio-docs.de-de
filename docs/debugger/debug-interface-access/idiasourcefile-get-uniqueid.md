@@ -9,36 +9,37 @@ helpviewer_keywords:
 ms.assetid: e0b8dbc0-6061-4f31-bead-2cd72be44e41
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3eef4e6f435b60f024067e13c884c7742df0ffa2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: c4a204e04c1c99dcbe8c6ba6d5e3457ca875dde4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832252"
 ---
 # <a name="idiasourcefilegetuniqueid"></a>IDiaSourceFile::get_uniqueId
-Ruft einen Wert des Schlüssels einfachen ganzen Zahl, der eindeutig für dieses Image ist.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_uniqueId (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pRetVal`  
- [out] Gibt einen Wert des Schlüssels einfachen ganzen Zahl, der eindeutig für dieses Image ist.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
-  
-## <a name="remarks"></a>Hinweise  
- Vergleichen von Schlüsseln, anstatt Zeichenfolgen Line Number Verarbeitung beschleunigt werden können.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
+Ruft einen Wert des Schlüssels einfachen ganzen Zahl, der eindeutig für dieses Image ist.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_uniqueId ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pRetVal`
+
+[out] Gibt einen Wert des Schlüssels einfachen ganzen Zahl, der eindeutig für dieses Image ist.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+
+## <a name="remarks"></a>Hinweise
+ Vergleichen von Schlüsseln, anstatt Zeichenfolgen Line Number Verarbeitung beschleunigt werden können.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

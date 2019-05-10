@@ -1,14 +1,9 @@
 ---
 title: Copy-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Copy
 - MSBuild.Copy.SourceFileNotFound
@@ -26,18 +21,17 @@ ms.assetid: a46ba9da-3e4e-4890-b4ea-09a099b6bc40
 caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 44136d52c1fd33d3f4dac225c6e8d83a0c9569f4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 08442d6044ca978e69f199e76c4668db63c319da
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290224"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086272"
 ---
 # <a name="copy-task"></a>Copy-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Kopiert Dateien an einen neuen Speicherort im Dateisystem.  
   
 ## <a name="parameters"></a>Parameter  
@@ -58,23 +52,23 @@ Kopiert Dateien an einen neuen Speicherort im Dateisystem.
 ## <a name="warnings"></a>Warnungen  
  Warnungen werden protokolliert, darunter:  
   
--   `Copy.DestinationIsDirectory`  
+- `Copy.DestinationIsDirectory`  
   
--   `Copy.SourceIsDirectory`  
+- `Copy.SourceIsDirectory`  
   
--   `Copy.SourceFileNotFound`  
+- `Copy.SourceFileNotFound`  
   
--   `Copy.CreatesDirectory`  
+- `Copy.CreatesDirectory`  
   
--   `Copy.HardLinkComment`  
+- `Copy.HardLinkComment`  
   
--   `Copy.RetryingAsFileCopy`  
+- `Copy.RetryingAsFileCopy`  
   
--   `Copy.FileComment`  
+- `Copy.FileComment`  
   
--   `Copy.RemovingReadOnlyAttribute`  
+- `Copy.RemovingReadOnlyAttribute`  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Es muss entweder der `DestinationFolder`-Parameter oder der `DestinationFiles`-Parameter angegeben werden, jedoch nicht beide. Wenn beide angegeben werden, schlägt der Task fehl, und ein Fehler wird protokolliert.  
   
  Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
@@ -122,6 +116,3 @@ Kopiert Dateien an einen neuen Speicherort im Dateisystem.
 ## <a name="see-also"></a>Siehe auch  
  [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
  [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)
-
-
-

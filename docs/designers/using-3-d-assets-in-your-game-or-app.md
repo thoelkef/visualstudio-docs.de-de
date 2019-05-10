@@ -1,8 +1,6 @@
 ---
 title: Verwenden von 3D-Objekten in Spielen oder Apps
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - VC.Project.ImageContentTask.ContentOutput
@@ -14,15 +12,15 @@ f1_keywords:
 ms.assetid: ea587909-e434-46a8-abf8-9b3e95a58b4f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b41416ea923e8f14aa39bf1607ad7c349e0b149c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0cb6b6d7969742f4cd1c155e800464a6f645649d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892904"
 ---
 # <a name="use-3d-assets-in-your-game-or-app"></a>Verwenden von 3D-Objekten in Spielen oder Apps
 
@@ -36,9 +34,9 @@ Bevor Sie die 3D-Objekte als Teil des Builds bereitstellen können, muss Visual 
 
 ### <a name="to-add-the-build-customizations-to-your-project"></a>So fügen Sie die Buildanpassungen dem Projekt hinzu
 
-1.  Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für das Projekt, und wählen Sie **Buildabhängigkeiten** > **Buildanpassungen** aus. Das Dialogfeld **Buildanpassungsdateien in Visual C++** wird angezeigt.
+1. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für das Projekt, und wählen Sie **Buildabhängigkeiten** > **Buildanpassungen** aus. Das Dialogfeld **Buildanpassungsdateien in Visual C++** wird angezeigt.
 
-2.  Aktivieren Sie unter **Verfügbare Buildanpassungsdateien** die Kontrollkästchen für die in der folgenden Tabelle beschriebenen Ressourcentypen, die Sie im Projekt verwenden möchten:
+2. Aktivieren Sie unter **Verfügbare Buildanpassungsdateien** die Kontrollkästchen für die in der folgenden Tabelle beschriebenen Ressourcentypen, die Sie im Projekt verwenden möchten:
 
     |Ressourcentyp|Name der Buildanpassung|
     |----------------| - |
@@ -46,23 +44,23 @@ Bevor Sie die 3D-Objekte als Teil des Builds bereitstellen können, muss Visual 
     |3D-Modelle|**MeshContentTask(.targets, .props)**|
     |Shader|**ShaderGraphContentTask(.targets, .props)**|
 
-3.  Klicken Sie auf die Schaltfläche **OK** .
+3. Klicken Sie auf die Schaltfläche **OK** .
 
 ## <a name="include-assets-in-your-build"></a>Integrieren der Objekte in den Build
  Nachdem dem Projekt nun die verschiedenen Arten von 3D-Objekten mitgeteilt wurden, die Sie verwenden möchten, besteht der nächste Schritt darin, Informationen darüber zu liefern, welche Dateien 3D-Objekte sind und um welche Art von Objekten es sich handelt.
 
 ### <a name="to-add-an-asset-to-your-build"></a>So fügen Sie eine Ressource dem Build hinzu
 
-1.  Öffnen Sie im **Projektmappen-Explorer** in Ihrem Projekt das Kontextmenü für eine Ressource, und wählen Sie **Eigenschaften** aus. Das Dialogfeld **Eigenschaftenseite** für die Ressource wird angezeigt.
+1. Öffnen Sie im **Projektmappen-Explorer** in Ihrem Projekt das Kontextmenü für eine Ressource, und wählen Sie **Eigenschaften** aus. Das Dialogfeld **Eigenschaftenseite** für die Ressource wird angezeigt.
 
-2.  Stellen Sie sicher, dass die Eigenschaften **Konfiguration** und **Plattform** auf die Werte festgelegt werden, für die Ihre Änderungen gelten sollen.
+2. Stellen Sie sicher, dass die Eigenschaften **Konfiguration** und **Plattform** auf die Werte festgelegt werden, für die Ihre Änderungen gelten sollen.
 
-3.  Wählen Sie unter **Konfigurationseigenschaften** die Option **Allgemein** aus. Legen Sie dann im Eigenschaftenraster unter **Allgemein** die Eigenschaft **Elementtyp** auf den entsprechenden Inhaltspipeline-Elementtyp fest. Wählen Sie z.B. für eine Bild- oder Texturdatei **Pipeline für Bildinhalte** aus.
+3. Wählen Sie unter **Konfigurationseigenschaften** die Option **Allgemein** aus. Legen Sie dann im Eigenschaftenraster unter **Allgemein** die Eigenschaft **Elementtyp** auf den entsprechenden Inhaltspipeline-Elementtyp fest. Wählen Sie z.B. für eine Bild- oder Texturdatei **Pipeline für Bildinhalte** aus.
 
     > [!IMPORTANT]
     > Standardmäßig geht Visual Studio davon aus, dass viele unterschiedliche Bilddateitypen anhand des Elementtyps **Bild** kategorisiert werden sollen, der in Visual Studio integriert ist. Deshalb müssen Sie die Eigenschaft **Elementtyp** jedes Bilds ändern, das durch die Bildinhaltspipeline verarbeitet werden soll. Für andere Typen von Quelldateien der Inhaltspipeline für 3D-Modelle und visuelle Shadergrafiken wird standardmäßig der richtige **Elementtyp** vorgeschlagen.
 
-4.  Klicken Sie auf die Schaltfläche **OK** .
+4. Klicken Sie auf die Schaltfläche **OK** .
 
 Nachstehend sind die drei Elementtypen für die Inhaltspipeline und ihre zugeordneten Quell- und Ausgabedateitypen aufgeführt.
 
@@ -78,46 +76,46 @@ Sie können die Eigenschaften der Inhaltspipeline für jede Ressourcendatei fest
 
 ### <a name="to-configure-content-pipeline-properties"></a>So konfigurieren Sie Inhaltspipelineeigenschaften
 
-1.  Öffnen Sie im **Projektmappen-Explorer** in Ihrem Projekt das Kontextmenü für die Ressourcendatei, und wählen Sie **Eigenschaften** aus. Das Dialogfeld **Eigenschaftenseite** für die Ressource wird angezeigt.
+1. Öffnen Sie im **Projektmappen-Explorer** in Ihrem Projekt das Kontextmenü für die Ressourcendatei, und wählen Sie **Eigenschaften** aus. Das Dialogfeld **Eigenschaftenseite** für die Ressource wird angezeigt.
 
-2.  Stellen Sie sicher, dass die Eigenschaften **Konfiguration** und **Plattform** auf die Werte festgelegt werden, für die Ihre Änderungen gelten sollen.
+2. Stellen Sie sicher, dass die Eigenschaften **Konfiguration** und **Plattform** auf die Werte festgelegt werden, für die Ihre Änderungen gelten sollen.
 
-3.  Wählen Sie unter **Konfigurationseigenschaften** den Inhaltspipelineknoten aus, z.B. **Bildinhaltspipeline** für Textur- und Bildressourcen. Legen Sie dann im Eigenschaftenraster die Eigenschaften auf die entsprechenden Werte fest. Um beispielsweise Mipmaps für eine Texturressource zum Zeitpunkt der Erstellung zu generieren, legen Sie die Eigenschaft **MIPS generieren** auf **Ja** fest.
+3. Wählen Sie unter **Konfigurationseigenschaften** den Inhaltspipelineknoten aus, z.B. **Bildinhaltspipeline** für Textur- und Bildressourcen. Legen Sie dann im Eigenschaftenraster die Eigenschaften auf die entsprechenden Werte fest. Um beispielsweise Mipmaps für eine Texturressource zum Zeitpunkt der Erstellung zu generieren, legen Sie die Eigenschaft **MIPS generieren** auf **Ja** fest.
 
-4.  Klicken Sie auf die Schaltfläche **OK** .
+4. Klicken Sie auf die Schaltfläche **OK** .
 
 ### <a name="image-content-pipeline-configuration"></a>Konfiguration der Bildinhaltspipeline
 
 Wenn Sie zur Erstellung einer Texturressource das Tool für Bildinhaltspipelines verwenden, können Sie die Textur auf verschiedene Arten komprimieren. Und Sie können angeben, ob MIP-Ebenen zum Zeitpunkt der Erstellung generiert werden sollen, und den Namen der Ausgabedatei angeben.
 
-|Eigenschaft|Beschreibung |
+|Eigenschaft|Beschreibung|
 |--------------|-----------------|
 |**Komprimieren**|Gibt den Komprimierungstyp an, der für die Ausgabedatei verwendet wird.<br /><br /> Die folgenden Optionen sind verfügbar:<br /><br /> -   **Keine Komprimierung**<br />-   **BC1_UNORM-Komprimierung**<br />-   **BC1_UNORM_SRGB-Komprimierung**<br />-   **BC2_UNORM-Komprimierung**<br />-   **BC2_UNORM_SRGB-Komprimierung**<br />-   **BC3_UNORM-Komprimierung**<br />-   **BC3_UNORM_SRGB-Komprimierung**<br />-   **BC4_UNORM-Komprimierung**<br />-   **BC4_SNORM-Komprimierung**<br />-   **BC5_UNORM-Komprimierung**<br />-   **BC5_SNORM-Komprimierung**<br />-   **BC6H_UF16-Komprimierung**<br />-   **BC6H_SF16-Komprimierung**<br />-   **BC7_UNORM-Komprimierung**<br />-   **BC7_UNORM_SRGB-Komprimierung**<br /><br /> Informationen darüber, welche Komprimierungsformate von den verschiedenen Versionen von DirectX unterstützt werden, finden Sie unter [Programmierhandbuch für DXGI](http://go.microsoft.com/fwlink/p/?LinkId=246265).|
 |Konvertieren in ein vorab multipliziertes Alphaformat.|**Ja**, um das Bild in ein vorab multipliziertes Alphaformat in der Ausgabedatei zu konvertieren, andernfalls **Nein**. Nur die Ausgabedatei wird geändert, das Quellbild bleibt unverändert.|
 |**MIPS generieren**|**Ja**, um eine vollständige MIP-Kette zum Zeitpunkt der Erstellung zu generieren und in die Ausgabedatei einzuschließen; andernfalls **Nein**. Falls Sie **Nein** auswählen und die Quelldatei bereits eine Mipmap-Kette enthält, verfügt die Ausgabedatei über eine MIP-Kette; andernfalls hat die Ausgabedatei keine MIP-Kette.|
-|**Inhaltsausgabe**|Gibt den Namen der Ausgabedatei an. **Wichtig:** Das Ändern des Ausgabedateisuffixes hat keine Auswirkungen auf das Dateiformat.|
+|**Inhaltsausgabe**|Gibt den Namen der Ausgabedatei an. **Wichtig:**  Das Ändern der Dateinamenerweiterung der Ausgabedatei hat keine Auswirkungen auf das Dateiformat.|
 
 ### <a name="mesh-content-pipeline-configuration"></a>Konfiguration der Mesh-Inhaltspipeline
 
 Wenn Sie das Tool für Mesh-Inhaltspipelines verwenden, um eine Meshressource zu erstellen, können Sie den Namen der Ausgabedatei ändern.
 
-|Eigenschaft|Beschreibung |
+|Eigenschaft|Beschreibung|
 |--------------|-----------------|
-|**Inhaltsausgabe**|Gibt den Namen der Ausgabedatei an. **Wichtig:** Das Ändern des Ausgabedateisuffixes hat keine Auswirkungen auf das Dateiformat.|
+|**Inhaltsausgabe**|Gibt den Namen der Ausgabedatei an. **Wichtig:**  Das Ändern der Dateinamenerweiterung der Ausgabedatei hat keine Auswirkungen auf das Dateiformat.|
 
 ### <a name="shader-content-pipeline-configuration"></a>Konfiguration der Shader-Inhaltspipeline
 
 Wenn Sie das Tool für Shader-Inhaltspipelines verwenden, um eine Shader-Ressource zu erstellen, können Sie den Namen der Ausgabedatei ändern.
 
-|Eigenschaft|Beschreibung |
+|Eigenschaft|Beschreibung|
 |--------------|-----------------|
-|**Inhaltsausgabe**|Gibt den Namen der Ausgabedatei an. **Wichtig:** Das Ändern des Ausgabedateisuffixes hat keine Auswirkungen auf das Dateiformat.|
+|**Inhaltsausgabe**|Gibt den Namen der Ausgabedatei an. **Wichtig:**  Das Ändern der Dateinamenerweiterung der Ausgabedatei hat keine Auswirkungen auf das Dateiformat.|
 
 ## <a name="load-and-use-3d-assets-at-run-time"></a>Laden und verwenden von 3D-Objekten zur Laufzeit
 
 ### <a name="use-textures-and-images"></a>Verwenden von Texturen und Bildern
 
-Direct3D stellt Funktionen zum Erstellen von Texturressourcen bereit. In Direct3D 11 bietet die Dienstbibliothek D3DX11 zusätzliche Funktionen für das Erstellen von Texturressourcen und Ressourcenansichten direkt aus Bilddateien. Weitere Informationen über die Erstellung einer Texturressource in Direct3D 11 finden Sie unter [Texturen](http://go.microsoft.com/fwlink/p/?LinkID=246267). Weitere Informationen darüber, wie Sie die Bibliothek „D3DX11“ verwenden, um eine Texturressource oder Ressourcenansicht aus einer Bilddatei zu erstellen, finden Sie unter [Vorgehensweise: Initialisieren einer Textur aus einer Datei](http://go.microsoft.com/fwlink/p/?LinkId=246268).
+Direct3D stellt Funktionen zum Erstellen von Texturressourcen bereit. In Direct3D 11 bietet die Dienstbibliothek D3DX11 zusätzliche Funktionen für das Erstellen von Texturressourcen und Ressourcenansichten direkt aus Bilddateien. Weitere Informationen über die Erstellung einer Texturressource in Direct3D 11 finden Sie unter [Texturen](http://go.microsoft.com/fwlink/p/?LinkID=246267). Weitere Informationen darüber, wie Sie die Bibliothek „D3DX11“ verwenden, um eine Texturressource oder Ressourcenansicht aus einer Bilddatei zu erstellen, finden Sie unter [How to: Initialize a Texture From a File (Initialisieren einer Textur aus einer Datei)](http://go.microsoft.com/fwlink/p/?LinkId=246268).
 
 ### <a name="use-3d-models"></a>Verwenden von 3D-Modellen
 
@@ -206,10 +204,10 @@ cbuffer MiscVars : register(b3)
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|Beschreibung |
+|Titel|Beschreibung|
 |-----------|-----------------|
-|[Vorgehensweise: Erstellen einer Textur, die Mipmaps enthält](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Beschreibt, wie die Bildinhaltspipeline zum Exportieren einer Textur verwendet wird, die vorausberechnete Mipmaps enthält.|
-|[Vorgehensweise: Erstellen einer Textur, in der integrierte Alphakanäle verwendet werden](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Beschreibt, wie die Bildinhaltspipeline zum Exportieren einer Textur verwendet wird, die prämultiplizierte Alphawerte enthält.|
+|[Vorgehensweise: Exportieren einer Textur, die Mipmaps enthält](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Beschreibt, wie die Bildinhaltspipeline zum Exportieren einer Textur verwendet wird, die vorausberechnete Mipmaps enthält.|
+|[Vorgehensweise: Exportieren einer Textur, in der integrierte Alphakanäle verwendet werden](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Beschreibt, wie die Bildinhaltspipeline zum Exportieren einer Textur verwendet wird, die prämultiplizierte Alphawerte enthält.|
 |[Vorgehensweise: Exportieren einer Textur für die Verwendung mit Direct2D- oder Javascript-Apps](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Beschreibt, wie die Bildinhaltspipeline zum Exportieren einer Textur verwendet wird, die in einer Direct2D- oder einer JavaScript-App verwendet werden kann.|
 |[Arbeiten mit 3D-Objekten für Spiele und Apps](../designers/working-with-3-d-assets-for-games-and-apps.md)|Es werden die Bearbeitungstools, die Visual Studio zum Erstellen und Bearbeiten von 3D-Objekten bereitstellt, inklusive Texturen und Bildern, 3D Modellen sowie Shadern beschrieben.|
 |[Vorgehensweise: Exportieren eines Shaders](../designers/how-to-export-a-shader.md)|Das Exportieren eines Shaders vom Shader-Designer wird beschrieben.|

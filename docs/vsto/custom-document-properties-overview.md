@@ -14,15 +14,15 @@ helpviewer_keywords:
 - _AssemblyName property
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bd76957844008975f67c6c1cb504aa0388b9e91b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7b3f4038a05478d8e2d747efa700c7ece02e4827
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936892"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951180"
 ---
 # <a name="custom-document-properties-overview"></a>Übersicht über benutzerdefinierte Dokumenteigenschaften
 
@@ -38,15 +38,15 @@ Diese Eigenschaft enthält die CLSID einer Schnittstelle in der Office-Lösung L
 
 Diese Eigenschaft enthält eine Zeichenfolge, die Details zum Bereitstellungsmanifest für die Anpassung enthält. Weitere Informationen zu Manifesten finden Sie unter [Anwendungs- und Bereitstellungsmanifeste in Office-Projektmappen](../vsto/application-and-deployment-manifests-in-office-solutions.md).
 
- The_AssemblyLocation-Eigenschaftswert haben unterschiedliche Formate, je nachdem, wie die Lösung bereitgestellt wird:
+ Die \_AssemblyLocation-Eigenschaftswert verfügen kann verschiedene Formate, je nachdem, wie die Lösung bereitgestellt wird:
 
 - Wenn die Projektmappe veröffentlicht wird, um von einer Website, UNC-Pfad oder ein CD oder USB-Laufwerk installiert werden, hat die _AssemblyLocation-Eigenschaft das Format *DeploymentManifestPath*|*SolutionID*. Die folgende Zeichenfolge ist ein Beispiel:
 
-     file://deployserver/myshare/ExcelWorkbook1.VSTO | 74744e4b-e4d6-41eb-84f7-ad20346fe2d9
+     file://deployserver/MyShare/ExcelWorkbook1.vsto|74744e4b-e4d6-41eb-84f7-ad20346fe2d9
 
 - Wenn Sie ausführen oder Debuggen der Projektmappe in Visual Studio, hat die _AssemblyLocation-Eigenschaft das Format *DeploymentManifestName*|*SolutionID*| Vstolocal. Die folgende Zeichenfolge ist ein Beispiel:
 
-     ExcelWorkbook1.vsto|74744e4b-e4d6-41eb-84f7-ad20346fe2d9 | Vstolocal
+     ExcelWorkbook1.vsto|74744e4b-e4d6-41eb-84f7-ad20346fe2d9|vstolocal
 
   Die *SolutionID* ist eine GUID, die die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] zum Identifizieren der Lösung verwendet. Die *SolutionID* wird automatisch generiert, wenn Sie das Projekt erstellen. Die **Vstolocal** -Begriff gibt an, um die [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , dass die Assembly aus dem gleichen Ordner wie das Dokument geladen werden soll.
 

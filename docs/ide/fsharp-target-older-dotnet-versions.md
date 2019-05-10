@@ -2,19 +2,18 @@
 title: Vorherige .NET Framework-Zielversionen für F#
 description: Hier erhalten Sie Informationen zur älteren .NET Framework-Zielversion bei der Verwendung von F# in Visual Studio.
 ms.date: 07/11/2018
-ms.prod: visual-studio-dev15
 ms.topic: troubleshooting
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4f5ef4e8b46681cc102a6678fcd4cb38f3e6f069
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3572e48328317634f036e8c1301d81c38314a21c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62547883"
 ---
 # <a name="target-older-versions-of-net-f"></a>Ältere .NET-Zielversionen (F#)
 
@@ -54,7 +53,7 @@ So beheben Sie diesen Fehler:
 
 ### <a name="to-install-the-f-20-runtime"></a>So installieren Sie die Laufzeit F# 2.0
 
-Führen Sie die [Schritte zum Reparieren von Visual Studio 2017](../install/repair-visual-studio.md) aus.
+Führen Sie die [Schritte zum Reparieren von Visual Studio](../install/repair-visual-studio.md) aus.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,7 +1,6 @@
 ---
 title: Verwaltbarkeitswarnungen
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.maintainabilityrules
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 537e70ca-a88c-49df-bfc7-0ee63bbe4f16
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fc9b8be565cb7b8bad25b8bddbcb35158dcc0bd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7d5508e203b8ed5087f456c715c492d8f1ca7c86
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938661"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823555"
 ---
 # <a name="maintainability-warnings"></a>Verwaltbarkeitswarnungen
 

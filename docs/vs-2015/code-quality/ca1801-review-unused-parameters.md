@@ -1,14 +1,9 @@
 ---
 title: 'CA1801: Nicht verwendete Parameter überprüfen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - AvoidUnusedParameters
 - CA1801
@@ -21,39 +16,39 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b0946e315aef0c333207d49eb14820d287a9b361
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0efbec121e08d026145d8762b574847fbd4a2b88
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269684"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045641"
 ---
-# <a name="ca1801-review-unused-parameters"></a>CA1801: Nicht verwendete Parameter überprüfen
+# <a name="ca1801-review-unused-parameters"></a>CA1801: Nicht verwendete Parameter überprüfen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Dokumentation für Visual Studio 2017 finden Sie unter [CA1801: nicht verwendete Parameter überprüfen](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters) auf docs.microsoft.com.  
+Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1801: Nicht verwendete Parameter überprüfen](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters).  
   
 |||  
 |-|-|  
 |TypeName|ReviewUnusedParameters|  
 |CheckId|CA1801|  
 |Kategorie|Microsoft.Usage|  
-|Unterbrechende Änderung|Nicht unterbrechend – Wenn das Element nicht außerhalb der Assembly, unabhängig von der Änderung angezeigt wird, die Sie vornehmen.<br /><br /> Nicht unterbrechend – Wenn Sie ändern, dass das Element, um die Parameter innerhalb des Texts zu verwenden.<br /><br /> Wichtige – Wenn Sie den Parameter entfernen und außerhalb der Assembly sichtbar ist.|  
+|Unterbrechende Änderung|Nicht unterbrechend – Wenn das Element nicht außerhalb der Assembly sichtbar ist müssen unabhängig von der Änderung.<br /><br /> Nicht unterbrechend – Wenn Sie ändern, dass das Element, um die Parameter innerhalb des Texts zu verwenden.<br /><br /> Wichtige – Wenn Sie den Parameter entfernen und außerhalb der Assembly sichtbar ist.|  
   
 ## <a name="cause"></a>Ursache  
  Eine Methodensignatur enthält einen Parameter, der nicht im Methodentext verwendet wird. Diese Regel untersucht nicht die folgenden Methoden:  
   
--   Methoden, die einen Delegaten auf.  
+- Methoden, die einen Delegaten auf.  
   
--   Methoden, die als Ereignishandler verwendet werden.  
+- Methoden, die als Ereignishandler verwendet werden.  
   
--   Methoden deklariert werden, mit der `abstract` (`MustOverride` in Visual Basic) Modifizierer.  
+- Methoden deklariert werden, mit der `abstract` (`MustOverride` in Visual Basic) Modifizierer.  
   
--   Methoden deklariert werden, mit der `virtual` (`Overridable` in Visual Basic) Modifizierer.  
+- Methoden deklariert werden, mit der `virtual` (`Overridable` in Visual Basic) Modifizierer.  
   
--   Methoden deklariert werden, mit der `override` (`Overrides` in Visual Basic) Modifizierer.  
+- Methoden deklariert werden, mit der `override` (`Overrides` in Visual Basic) Modifizierer.  
   
--   Methoden deklariert werden, mit der `extern` (`Declare` -Anweisung in Visual Basic) Modifizierer.  
+- Methoden deklariert werden, mit der `extern` (`Declare` -Anweisung in Visual Basic) Modifizierer.  
   
 ## <a name="rule-description"></a>Regelbeschreibung  
  Überprüfen Sie die Parameter in nicht virtuellen Methoden, die nicht im Methodentext verwendet werden, um sicherzustellen, dass keine Richtigkeit Umfeld des Fehlers für den Zugriff darauf vorhanden ist. Nicht verwendete Parameter fallen Kosten für Wartung und Leistung.  
@@ -77,4 +72,3 @@ Die neueste Dokumentation für Visual Studio 2017 finden Sie unter [CA1801: nich
  [CA1812: Nicht instanziierte interne Klassen vermeiden](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)  
   
  [CA1804: Nicht verwendete lokale Variablen entfernen](../code-quality/ca1804-remove-unused-locals.md)
-

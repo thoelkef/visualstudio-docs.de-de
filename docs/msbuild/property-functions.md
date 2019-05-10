@@ -7,21 +7,23 @@ helpviewer_keywords:
 ms.assetid: 2253956e-3ae0-4bdc-9d3a-4881dfae4ddb
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cb006506b479b98710059e8c4d40f0b1af4682c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c94b33fad50cb5e271615629641ea7307f669255
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911090"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788541"
 ---
 # <a name="property-functions"></a>Eigenschaftenfunktionen
 
 In .NET Framework, Versionen 4 und 4.5, können Eigenschaftenfunktionen zur Auswertung von MSBuild-Skripts verwendet werden. Eigenschaftenfunktionen können immer dann verwendet werden, wenn Eigenschaften vorhanden sind. Im Gegensatz zu Aufgaben können Eigenschaftenfunktionen außerhalb von Zielen verwendet werden, und sie werden ausgewertet, bevor Ziele ausgeführt werden.
 
  Sie können die Systemzeit lesen, Zeichenfolgen vergleichen, reguläre Ausdrücke abgleichen und viele weitere Aktionen im Buildskript ausführen, ohne MSBuild-Aufgaben zu verwenden. MSBuild versucht, eine Zeichenfolge in eine Zahl und eine Zahl in eine Zeichenfolge zu konvertieren und nimmt je nach Bedarf andere Konvertierungen vor.
+ 
+Zeichenfolgenwerte, die von Eigenschaftsfunktionen zurückgegeben werden, haben als [Sonderzeichen](msbuild-special-characters.md) ein Escapezeichen. Wenn Sie möchten, dass der Wert so behandelt wird, als wäre er direkt in der Projektdatei platziert, verwenden Sie `$([MSBuild]::Unescape())`, um die Sonderzeichen zu entfernen.
 
 ## <a name="property-function-syntax"></a>Syntax einer Eigenschaftenfunktion
 
@@ -128,7 +130,7 @@ Der Name der Klasse muss mit dem Namespace vollqualifiziert sein.
 Sie können beispielsweise den folgenden Code verwenden, um eine Buildeigenschaft auf das heutige Datum festzulegen.
 
 ```xml
-<Today>$([System.DateTime]::Now.ToString("yyyy.MM.dd"))</Today>
+<Today>$([System.DateTime]::Now.ToString('yyyy.MM.dd'))</Today>
 ```
 
 ### <a name="msbuild-property-functions"></a>MSBuild-Eigenschaftenfunktionen
@@ -166,7 +168,7 @@ Nachfolgend finden Sie eine Liste mit MSBuild-Eigenschaftenfunktionen:
 |int BitwiseXor(int first, int second)|Führt einen bitweisen `XOR`-Vorgang für das erste und zweite Element aus (first ^ second).|
 |int BitwiseNot(int first)|Führt einen bitweisen `NOT`-Vorgang aus (~first).|
 |bool IsOsPlatform(string platformString)|Gibt an, ob die aktuelle Betriebssystemplattform `platformString` ist. `platformString` muss ein Mitglied von <xref:System.Runtime.InteropServices.OSPlatform> sein.|
-|bool IsOSUnixLike|„TRUE“, wenn das aktuelle Betriebssystem ein Unix-System ist.|
+|bool IsOSUnixLike()|„TRUE“, wenn das aktuelle Betriebssystem ein Unix-System ist.|
 |string NormalizePath(params string[] path)|Ruft den vereinheitlichten vollständigen Pfad des bereitgestellten Pfads ab und stellt sicher, dass dieser die richtigen Verzeichnistrennzeichen für das aktuelle Betriebssystem enthält.|
 |string NormalizeDirectory(params string[] path)|Ruft den vereinheitlichten vollständigen Pfad des bereitgestellten Verzeichnisses ab und stellt sicher, dass dieser die richtigen Verzeichnistrennzeichen für das aktuelle Betriebssystem und einen nachstehenden Schrägstrich enthält.|
 |string EnsureTrailingSlash(string path)|Wenn der angegebene Pfad keinen nachgestellten Schrägstrich besitzt, fügen Sie einen hinzu. Wenn der Pfad eine leere Zeichenfolge ist, ändern Sie diesen nicht.|
@@ -175,7 +177,7 @@ Nachfolgend finden Sie eine Liste mit MSBuild-Eigenschaftenfunktionen:
 |string MakeRelative(string basePath, string path)|Macht `path` relativ zu `basePath`. Bei `basePath` muss es sich um ein absolutes Verzeichnis handeln. Wenn `path` nicht relativ gemacht werden kann, wird dieses wörtlich zurückgegeben. Vergleichbar zu `Uri.MakeRelativeUri`.|
 |string ValueOrDefault(string conditionValue, string defaultValue)|Geben Sie die Zeichenfolge im Parameter „DefaultValue“ nur zurück, wenn der Parameter „ConditionValue“ leer ist. Geben Sie ansonsten ist den Wert ConditionValue zurück.|
 
-##  <a name="nested-property-functions"></a>Geschachtelte Eigenschaftenfunktionen
+## <a name="nested-property-functions"></a>Geschachtelte Eigenschaftenfunktionen
 
 Sie können Eigenschaftenfunktionen kombinieren, um komplexere Funktionen zu erstellen, wie das folgende Beispiel zeigt.
 
@@ -338,6 +340,6 @@ Output:
 
 ## <a name="see-also"></a>Siehe auch
 
-[MSBuild-Eigenschaften](../msbuild/msbuild-properties.md)
+- [MSBuild-Eigenschaften](../msbuild/msbuild-properties.md)
 
-[Übersicht über MSBuild](../msbuild/msbuild.md)
+- [Übersicht über MSBuild](../msbuild/msbuild.md)

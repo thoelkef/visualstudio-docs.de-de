@@ -2,21 +2,20 @@
 title: Workflow-Designer - Interop-Aktivitätsdesigner
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.Interop.UI
 ms.assetid: 800a3403-ba86-41c4-8de1-c4fee9703eb1
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66734cd555c88d960431373d4ccf6a7ca0b39099
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e020e2f4e1ffae9c0e979f2230ff845b1cda203e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867289"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62536424"
 ---
 # <a name="interop-activity-designer"></a>Interop-Aktivitätsdesigner
 

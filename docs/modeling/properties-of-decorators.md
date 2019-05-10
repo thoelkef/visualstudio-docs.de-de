@@ -6,16 +6,15 @@ helpviewer_keywords:
 - Domain-Specific Language, decorators
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: fc0f6e3fe8078675792109c41ee75272b44ca714
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 76129141ed293281eeb3179a654f470bcf608bdf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865361"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62996801"
 ---
 # <a name="properties-of-decorators"></a>Eigenschaften von Decorators
 Decorator-Elemente sind Symbole, Text oder Chevrons erweitern/reduzieren, die Formen oder Konnektoren im Diagramm angezeigt werden können. Die folgenden Tabellen zeigen die Eigenschaften für die drei Arten von Decorator-Element. Einige Eigenschaften werden nur auf das Form-Decorator-Elemente oder nur auf die Connector-Decorator-Elemente angezeigt.
@@ -27,8 +26,8 @@ Decorator-Elemente sind Symbole, Text oder Chevrons erweitern/reduzieren, die Fo
 |Eigenschaft|Beschreibung|Standard|
 |-|-|-|
 |DisplayName|Der Name des Decorator-Elements, der im generierten Designer angezeigt wird.|Erweitern Reduzieren-Decorator-Element|
-|name|Der Name des Decorator-Elements.|ExpandCollapseDecorator|
-|Hinweise|Informelle Hinweise, die dieses Decorator-Element zugeordnet sind.|\<Keine >|
+|Name|Der Name des Decorator-Elements.|ExpandCollapseDecorator|
+|Hinweise|Informelle Hinweise, die dieses Decorator-Element zugeordnet sind.|\<none>|
 |HorizontalOffset|Der horizontale Offset relativ zur Standardposition des Decorator-Elements, in Zoll. (Auf nur-Shapes.)|0|
 |VerticalOffset|Der vertikale Offset relativ zur Standardposition des Decorator-Elements, in Zoll. (Auf nur-Shapes.)|0|
 |OffsetFromLine|Der Offset des Decorator-Elements über die Befehlszeile, relativ zur Standardposition in Zoll. (Auf Connectors nur.)|0|
@@ -39,10 +38,10 @@ Decorator-Elemente sind Symbole, Text oder Chevrons erweitern/reduzieren, die Fo
 
 |Eigenschaft|Beschreibung|Standard|
 |-|-|-|
-|DefaultIcon-Werts|Der Pfad der Datei Symbol oder Bild, die angezeigt werden soll.|\<Keine >|
+|DefaultIcon|Der Pfad der Datei Symbol oder Bild, die angezeigt werden soll.|\<none>|
 |DisplayName|Der Name des Decorator-Elements, der im generierten Designer angezeigt werden.|Symbol für Decorator-Element|
-|name|Der Name des Decorator-Elements.|IconDecorator|
-|Hinweise|Informelle Hinweise, die das Decorator-Element zugeordnet sind.|\<Keine >|
+|Name|Der Name des Decorator-Elements.|IconDecorator|
+|Hinweise|Informelle Hinweise, die das Decorator-Element zugeordnet sind.|\<none>|
 |HorizontalOffset|Der horizontale Offset relativ zur Standardposition des Decorator-Elements, in Zoll. (Auf nur-Shapes.)|0|
 |VerticalOffset|Der vertikale Offset relativ zur Standardposition des Decorator-Elements, in Zoll. (Auf nur-Shapes.)|0|
 |OffsetFromLine|Der Offset des Decorator-Elements über die Befehlszeile, relativ zur Standardposition in Zoll. (Auf Connectors nur.)|0|
@@ -57,8 +56,8 @@ Decorator-Elemente sind Symbole, Text oder Chevrons erweitern/reduzieren, die Fo
 |DisplayName|Der Name des Decorator-Elements, der im generierten Designer angezeigt werden.|Bezeichnung|
 |FontSize|Der Schriftgrad für den Text, der im Decorator-Element angezeigt wird.|8|
 |FontStyle|Der Schriftschnitt für den Text, der im Decorator-Element angezeigt wird.|Regulär|
-|name|Der Name des Decorator-Elements.|Bezeichnung|
-|Hinweise|Informelle Hinweise, die das Decorator-Element zugeordnet sind.|\<Keine >|
+|Name|Der Name des Decorator-Elements.|Bezeichnung|
+|Hinweise|Informelle Hinweise, die das Decorator-Element zugeordnet sind.|\<none>|
 |HorizontalOffset|Der horizontale Offset relativ zur Standardposition des Decorator-Elements, in Zoll. (Auf nur-Shapes.)|0|
 |VerticalOffset|Der vertikale Offset relativ zur Standardposition des Decorator-Elements, in Zoll. (Auf nur-Shapes.)|0|
 |OffsetFromLine|Der Offset des Decorator-Elements über die Befehlszeile, relativ zur Standardposition in Zoll. (Auf Connectors nur.)|0|
@@ -67,4 +66,4 @@ Decorator-Elemente sind Symbole, Text oder Chevrons erweitern/reduzieren, die Fo
 
 ## <a name="see-also"></a>Siehe auch
 
-- [DSL-Tools – Glossar](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

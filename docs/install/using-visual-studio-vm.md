@@ -2,9 +2,8 @@
 title: Verwenden von Visual Studio auf einem virtuellen Azure-Computer
 titleSuffix: ''
 description: Erfahren Sie, wie Visual Studio auf einem virtuellen Azure-Computer verwendet wird
-ms.date: 09/12/2018
+ms.date: 04/02/2019
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - azure services
@@ -13,15 +12,17 @@ helpviewer_keywords:
 - visual studio
 author: PhilLee-MSFT
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f139c93eeb64a56f0bd422137417e5ad6e36cb11
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 41619e780d02f20fc21bd2b51cc0b0a3eede90fd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951494"
 ---
 # <a id="top"> </a> Visual Studio-Images in Azure
 
@@ -31,13 +32,13 @@ Neu bei Azure? [Kostenloses Azure-Konto erstellen](https://azure.microsoft.com/f
 
 ## <a name="what-configurations-and-versions-are-available"></a>Welche Konfigurationen und Versionen sind verfügbar?
 
-Im Azure Marketplace finden Sie Images für die aktuellen Hauptversionen: Visual Studio 2017 und Visual Studio 2015.  Vor kurzem wurde die Unterstützung von Vorschauversionen der kommenden Hauptversion Visual Studio 2019 hinzugefügt.  Für jedes Release einer Hauptversion finden Sie die ursprünglich herausgegebene Version (RTW) und die zuletzt aktualisierten Versionen.  Jede dieser Versionen ist in den Editionen Visual Studio Enterprise und Visual Studio Community erhältlich.  Diese Images werden mindestens monatlich aktualisiert, sodass sie die neuesten Visual Studio- und Windows-Updates enthalten.  Zwar bleiben die Namen der Images unverändert, die Beschreibung zu jedem Image beinhaltet aber dessen installierte Produktversion und das Statusdatum des Images.
+Im Azure Marketplace finden Sie Images für die aktuellen Hauptversionen: Visual Studio 2019, Visual Studio 2017 und Visual Studio 2015.  Für jedes Release einer Hauptversion finden Sie die ursprünglich herausgegebene Version (RTW) und die zuletzt aktualisierten Versionen.  Jede dieser Versionen ist in den Editionen Visual Studio Enterprise und Visual Studio Community erhältlich.  Diese Images werden mindestens monatlich aktualisiert, sodass sie die neuesten Visual Studio- und Windows-Updates enthalten.  Zwar bleiben die Namen der Images unverändert, die Beschreibung zu jedem Image beinhaltet aber dessen installierte Produktversion und das Statusdatum des Images.
 
 | Releaseversion                                              | Editionen                     |     Produktversion      |
 |:------------------------------------------------------------:|:----------------------------:|:------------------------:|
-|    Visual Studio 2019: Preview (Vorschauversion 1)                   |           Enterprise         | Version 16.0.0, Vorschauversion 1 |
-| Visual Studio 2017: Aktuellste Version (Version 15.9)                    |    Enterprise, Community     |      Version 15.9.4      |
-|         Visual Studio 2017: RTW                              |    Enterprise, Community     |      Version 15.0.20     |
+|       Visual Studio 2019: RTW                                |    Enterprise, Community     |      Version 16.0.0      |
+| Visual Studio 2017: Aktuellste Version (Version 15.9)                    |    Enterprise, Community     |      Version 15.9.10     |
+|         Visual Studio 2017: RTW                              |    Enterprise, Community     |      Version 15.0.22     |
 |   Visual Studio 2015: Aktuellste Version (Update 3)                      |    Enterprise, Community     |  Version 14.0.25431.01   |
 |         Visual Studio 2015: RTW                              |             Keiner             | (Aus dem Wartungsfenster gelaufen)  |
 
@@ -52,7 +53,7 @@ Jedes Image enthält die für die betreffende Visual Studio-Edition empfohlene F
 
 * Alle verfügbaren Workloads einschließlich der jeweils empfohlenen optionalen Komponenten
 * .NET 4.6.2 und .NET 4.7 SDKs, Pakete zur Festlegung von Zielversionen und Entwicklertools
-* Visual F#
+* Visual F#
 * GitHub-Erweiterung für Visual Studio
 * LINQ zu SQL-Tools
 
@@ -76,13 +77,13 @@ Wenn die Images ein Visual Studio-Feature nicht enthalten, das Sie benötigen, g
 
 Azure bietet eine umfangreiche Palette an VM-Größen. Da Visual Studio eine leistungsstarke Multithread-Anwendung ist, empfiehlt sich eine VM-Größe von mindestens zwei Prozessoren und 7 GB Arbeitsspeicher. Die folgenden VM-Größen werden für die Visual Studio-Images empfohlen:
 
-   * Standard_D2_v3
-   * Standard_D2s_v3
-   * Standard_D4_v3
-   * Standard_D4s_v3
-   * Standard_D2_v2
-   * Standard_D2S_v2
-   * Standard_D3_v2
+* Standard_D2_v3
+* Standard_D2s_v3
+* Standard_D4_v3
+* Standard_D4s_v3
+* Standard_D2_v2
+* Standard_D2S_v2
+* Standard_D3_v2
 
 Weitere Informationen zu den aktuellen Computergrößen finden Sie unter [Größen für virtuelle Windows-Computer in Azure](/azure/virtual-machines/windows/sizes).
 
@@ -102,7 +103,9 @@ Die Bandbreite von Entwicklungsumgebungen ist riesig, und der Ausbau der komplex
 
 Kurz zusammengefasst: Verwenden Sie das Systemvorbereitungstool (Sysprep), fahren Sie den virtuellen Computer herunter, und erfassen Sie den virtuellen Computer *(Abbildung 1)* als Image über die Benutzeroberfläche des Azure-Portals. Azure speichert die `.vhd`-Datei, die das Image enthält, in einem Speicherkonto Ihrer Wahl. Anschließend wird das neue Image als Imageressource in der Ressourcenliste Ihres Abonnements angezeigt.
 
-<img src="media/capture-vm.png" alt="Capture an image through the Azure portal’s UI" style="border:3px solid Silver; display: block; margin: auto;"><center>*(Abbildung 1) Erfassen eines Images über die Benutzeroberfläche des Azure-Portals*</center>
+![Erfassen eines Images über die Benutzeroberfläche des Azure-Portals](media/capture-vm.png)
+
+*(Abbildung 1) Erfassen eines Images über die Benutzeroberfläche des Azure-Portals*
 
 Weitere Informationen finden Sie unter [Erstellen eines verwalteten Images eines generalisierten virtuellen Computers in Azure](/azure/virtual-machines/windows/capture-image-resource).
 

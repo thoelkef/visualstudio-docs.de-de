@@ -1,24 +1,19 @@
 ---
 title: Erstellen einer Erweiterung mit einem Toolfenster | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 585b0a3a-f85b-4f92-81bb-9ca499bb8a89
 caps.latest.revision: 6
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 79ba397bf2dee5ae18b727830af87ae57415d885
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 94c8335b8d723ef20c04cfffe6b3788d71ecaa4f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738347"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431848"
 ---
 # <a name="creating-an-extension-with-a-tool-window"></a>Erstellen einer Erweiterung mit einem Toolfenster
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,17 +25,16 @@ In diesem Verfahren erfahren Sie, wie Sie die VSIX-Projektvorlage verwenden und 
   
 ### <a name="creating-a-tool-window"></a>Erstellen eines Toolfensters  
   
-1.  Erstellen Sie ein VSIX-Projekt mit dem Namen **FirstWindow**. Sie finden die VSIX-Projektvorlage in das **neues Projekt** Dialogfeld unter **Visual c# / Erweiterbarkeit**.  
+1. Erstellen Sie ein VSIX-Projekt mit dem Namen **FirstWindow**. Sie finden die VSIX-Projektvorlage in das **neues Projekt** Dialogfeld unter **Visual c# / Erweiterbarkeit**.  
   
-2.  Wenn das Projekt geöffnet wird, fügen Sie eine Elementvorlage der Tool-Fenster mit dem Namen **FirstWindow**. In der **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie **hinzufügen / neues Element**. In der **neues Element hinzufügen** wechseln Sie zum Dialogfeld **Visual c# / Erweiterbarkeit** , und wählen Sie **benutzerdefinierten Toolfensters**. In der **Namen** Feld am unteren Rand des Fensters, ändern Sie den Dateinamen des Tool-Fenster an **FirstWindow.cs**.  
+2. Wenn das Projekt geöffnet wird, fügen Sie eine Elementvorlage der Tool-Fenster mit dem Namen **FirstWindow**. In der **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie **hinzufügen / neues Element**. In der **neues Element hinzufügen** wechseln Sie zum Dialogfeld **Visual c# / Erweiterbarkeit** , und wählen Sie **benutzerdefinierten Toolfensters**. In der **Namen** Feld am unteren Rand des Fensters, ändern Sie den Dateinamen des Tool-Fenster an **FirstWindow.cs**.  
   
-3.  Erstellen Sie das Projekt, und starten Sie das Debugging.  
+3. Erstellen Sie das Projekt, und starten Sie das Debugging.  
   
      Die experimentelle Instanz von Visual Studio wird angezeigt. Weitere Informationen zur experimentellen Instanz finden Sie unter [die experimentelle Instanz](../extensibility/the-experimental-instance.md).  
   
-4.  Wechseln Sie in der experimentellen Instanz zu **anzeigen / Other Windows**.  
+4. Wechseln Sie in der experimentellen Instanz zu **anzeigen / Other Windows**.  
   
      Daraufhin sollte ein Menüelement für **FirstWindow**. Klicken Sie darauf.  
   
      Daraufhin sollte ein Toolfenster mit dem Titel **FirstWindow** und einem Spruch Schaltfläche **hier klicken.**
-

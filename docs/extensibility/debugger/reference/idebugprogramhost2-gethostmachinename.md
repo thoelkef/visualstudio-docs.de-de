@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramHost2::GetHostMachineName | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProgramHost2::GetHostMachineName
 helpviewer_keywords:
@@ -9,39 +9,40 @@ helpviewer_keywords:
 ms.assetid: 4677ffe4-aa9b-4450-a63b-74cd3984d956
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db80058c70d84782c817a6f3a1679496d6019f77
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: f8cc1a3581ffd46bb345bcbbeb135f7ebe296fff
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848190"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62916848"
 ---
 # <a name="idebugprogramhost2gethostmachinename"></a>IDebugProgramHost2::GetHostMachineName
-Ruft den Namen des Computers, den der Hostprozess für dieses Programm ausgeführt wird.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-HRESULT GetHostMachineName(   
-   BSTR* pbstrHostMachineName  
-);  
-```  
-  
-```csharp  
-int GetHostMachineName(   
-   out string pbstrHostMachineName  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pbstrHostMachineName`  
- [out] Gibt den Namen des Computers.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDebugProgramHost2](../../../extensibility/debugger/reference/idebugprogramhost2.md)
+Ruft den Namen des Computers, den der Hostprozess für dieses Programm ausgeführt wird.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+HRESULT GetHostMachineName( 
+   BSTR* pbstrHostMachineName
+);
+```
+
+```csharp
+int GetHostMachineName( 
+   out string pbstrHostMachineName
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pbstrHostMachineName`
+
+ [out] Gibt den Namen des Computers.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+
+## <a name="see-also"></a>Siehe auch
+- [IDebugProgramHost2](../../../extensibility/debugger/reference/idebugprogramhost2.md)

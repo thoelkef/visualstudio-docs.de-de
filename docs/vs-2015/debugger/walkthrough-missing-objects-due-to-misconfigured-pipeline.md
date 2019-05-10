@@ -1,25 +1,20 @@
 ---
 title: 'Exemplarische Vorgehensweise: Fehlende Objekte durch falsch konfigurierte Pipeline | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: ed8ac02d-b38f-4055-82fb-67757c2ccbb9
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cd28886695e3234240de5675e5e2b19972b105fa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9d74006051fd39043de75cec81fdad3f1083adef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782011"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444285"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Exemplarische Vorgehensweise: Fehlende Objekte durch falsch konfigurierte Pipeline
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,13 +23,13 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
   
  In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben beschrieben:  
   
--   Verwenden der **Grafikereignisliste** , um mögliche Quellen des Problems zu suchen.  
+- Verwenden der **Grafikereignisliste** , um mögliche Quellen des Problems zu suchen.  
   
--   Verwenden des Fensters **Grafikpipelinestufen** zum Untersuchen der Wirkung des `DrawIndexed` -Direct3D-API-Aufrufs.  
+- Verwenden des Fensters **Grafikpipelinestufen** zum Untersuchen der Wirkung des `DrawIndexed` -Direct3D-API-Aufrufs.  
   
--   Untersuchen des Gerätekontexts, um zu bestätigen, dass keine Shaderstufe festgelegt wurde.  
+- Untersuchen des Gerätekontexts, um zu bestätigen, dass keine Shaderstufe festgelegt wurde.  
   
--   Verwenden des Fensters **Grafikpipelinestufen** in Kombination mit der **Aufrufliste des Grafikereignisses** , um die Suche nach der Ursache des nicht festgelegten Pixelshaders zu unterstützen.  
+- Verwenden des Fensters **Grafikpipelinestufen** in Kombination mit der **Aufrufliste des Grafikereignisses** , um die Suche nach der Ursache des nicht festgelegten Pixelshaders zu unterstützen.  
   
 ## <a name="scenario"></a>Szenario  
  Wenn ein Objekt in einer 3D-App fehlt, hat das manchmal die Ursache, dass eine der Shaderstufen vor dem Rendern des Objekts nicht festgelegt wurde. In Apps mit einfachen Ansprüchen an das Rendering liegt die Ursache für diesen Fehler normalerweise irgendwo in der Aufrufliste des Zeichnen-Befehls des Objekts. Zur Optimierung fassen einige Apps Objekte mit gemeinsamen Shaderprogrammen, Texturen oder anderen Daten allerdings zu Batches zusammen, um Mehraufwand durch häufige Statuswechsel zu minimieren. In diesen Apps kann sich die Ursache des Fehlers im Batchsystem statt in der Aufrufliste des Zeichnen-Befehls verstecken. Das Szenario dieser exemplarischen Vorgehensweise bildet eine App, die einfache Anforderungen an das Rendering stellt, daher lässt sich die Ursache des Fehlers in der Aufrufliste finden.  
@@ -69,7 +64,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
     Im Fenster **Grafikpipelinestufen** zeigt die Stufe **Eingabeassembler** die Geometrie des Objekts vor dem Transformieren, und die Stufe **Vertexshader** zeigt das gleiche Objekt nach dem Transformieren. Beachten Sie in diesem Szenario, dass das Fenster **Grafikpipelinestufen** für einen der Zeichnen-Befehle die Stufen **Eingabeassembler** und  **Vertexshader** , nicht jedoch die Stufe **Pixelshader** anzeigt.  
   
    > [!NOTE]
-   >  Wenn das Objekt in weiteren Pipelinestufen verarbeitet wird – beispielsweise im Hullshader, dem Domainshader oder dem Geometryshader – kann die Ursache des Problems in jeder von ihnen liegen. Normalerweise hängt das Problem mit der frühesten Stufe zusammen, in der das Ergebnis nicht oder nicht in der erwarteten Weise angezeigt wird.  
+   > Wenn das Objekt in weiteren Pipelinestufen verarbeitet wird – beispielsweise im Hullshader, dem Domainshader oder dem Geometryshader – kann die Ursache des Problems in jeder von ihnen liegen. Normalerweise hängt das Problem mit der frühesten Stufe zusammen, in der das Ergebnis nicht oder nicht in der erwarteten Weise angezeigt wird.  
   
 4. Halten Sie an, wenn Sie den Zeichnen-Befehl erreichen, der dem fehlenden Objekt entspricht. In diesem Szenario zeigt das Fenster **Grafikpipelinestufen** an, dass die Geometrie an die GPU ausgegeben (worauf das Vorhandensein der Stufe **Eingabeassembler** hinweist) und transformiert wurde (worauf die Stufe **Vertexshader** hinweist), aber nicht im Renderziel erscheint, da anscheinend kein aktiver Pixelshader vorhanden ist (worauf das Fehlen der Stufe **Pixelshader** hinweist). In diesem Szenario können Sie sogar die Silhouette des fehlenden Objekts in der Stufe **Ausgabezusammenführung** sehen:  
   
@@ -92,7 +87,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
 1. Suchen Sie den `PSSetShader` -Befehl, der dem fehlenden Objekt entspricht. Geben Sie im Fenster **Grafikereignisliste** die Zeichenfolge "Draw;PSSetShader" im Feld **Suchen** in der oberen rechten Ecke des Fensters **Grafikereignisliste** ein. Dadurch wird die Liste so gefiltert, dass sie nur PSSetShader-Ereignisse sowie Ereignisse mit "Draw" im Titel enthält. Wählen Sie den ersten `PSSetShader` -Aufruf aus, der vor dem Zeichnen-Befehl des fehlenden Objekts erscheint.  
   
    > [!NOTE]
-   >  `PSSetShader` wird im Fenster **Grafikereignisliste** nicht angezeigt, wenn es in diesem Frame nicht festgelegt wurde. Normalerweise tritt dieser Fall nur ein, wenn für alle Objekte nur ein Pixelshader verwendet wird oder der `PSSetShader` -Aufruf während dieses Frames unabsichtlich ausgelassen wurde. In beiden Fällen empfiehlt es sich, den Quellcode der Apps nach `PSSetShader` -Aufrufen zu durchsuchen und traditionelle Debugtechniken zu verwenden, um das Verhalten der Aufrufe zu untersuchen.  
+   > `PSSetShader` wird im Fenster **Grafikereignisliste** nicht angezeigt, wenn es in diesem Frame nicht festgelegt wurde. Normalerweise tritt dieser Fall nur ein, wenn für alle Objekte nur ein Pixelshader verwendet wird oder der `PSSetShader` -Aufruf während dieses Frames unabsichtlich ausgelassen wurde. In beiden Fällen empfiehlt es sich, den Quellcode der Apps nach `PSSetShader` -Aufrufen zu durchsuchen und traditionelle Debugtechniken zu verwenden, um das Verhalten der Aufrufe zu untersuchen.  
   
 2. Öffnen Sie das Fenster **Aufrufliste des Grafikereignisses** . Wählen Sie auf der Symbolleiste **Grafikdiagnose** die **Aufrufliste des Grafikereignisses**aus.  
   
@@ -101,7 +96,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
     ![Der Code, der den PixelShader nicht initialisiert](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-5.png "gfx_diag_demo_misconfigured_pipeline_step_5")  
   
    > [!NOTE]
-   >  Wenn Sie die Quelle des NULL-Werts durch einfaches Untersuchen der Aufrufliste nicht finden können, empfiehlt es sich, für den `PSSetShader` -Aufruf einen bedingten Haltepunkt festzulegen, damit der Programmablauf unterbrochen wird, wenn der Pixelshader auf NULL festgelegt wird. Starten Sie anschließend die App im Debugmodus erneut, und verwenden Sie herkömmliche Debugtechniken, um die Quelle des NULL-Werts zu ermitteln.  
+   > Wenn Sie die Quelle des NULL-Werts durch einfaches Untersuchen der Aufrufliste nicht finden können, empfiehlt es sich, für den `PSSetShader` -Aufruf einen bedingten Haltepunkt festzulegen, damit der Programmablauf unterbrochen wird, wenn der Pixelshader auf NULL festgelegt wird. Starten Sie anschließend die App im Debugmodus erneut, und verwenden Sie herkömmliche Debugtechniken, um die Quelle des NULL-Werts zu ermitteln.  
   
    Um das Problem zu beheben, weisen Sie den richtigen Pixelshader zu, indem Sie den ersten Parameter des `ID3D11DeviceContext::PSSetShader` -API-Aufrufs verwenden.  
   
@@ -110,6 +105,3 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
    Nachdem Sie den Code repariert haben, können Sie die App erneut erstellen und ausführen, um zu überprüfen, ob das Renderingproblem behoben wurde:  
   
    ![Das Objekt wird jetzt angezeigt.](../debugger/media/gfx-diag-demo-misconfigured-pipeline-resolution.jpg "Gfx_diag_demo_misconfigured_pipeline_resolution")
-
-
-

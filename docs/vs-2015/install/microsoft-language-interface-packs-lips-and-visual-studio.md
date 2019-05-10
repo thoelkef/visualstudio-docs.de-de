@@ -1,13 +1,9 @@
 ---
 title: Microsoft Language Interface Packs (LIPs) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-install
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text [Visual Studio], multiple languages
 - Multilingual User Interface [Visual Studio]
@@ -21,13 +17,13 @@ ms.assetid: dc86304b-65b7-47e6-9314-1dfd02ecfa65
 caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: cfe304141489a73f2d9c816a945463ddf8593f93
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 503f97d1530f8d22184f42a2452046782a997c18
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963999"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432997"
 ---
 # <a name="microsoft-language-interface-packs-lips-and-visual-studio"></a>Microsoft Language Interface Packs (LIPs) und Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,57 +38,57 @@ Mit dem Windows Multilingual User Interface Packs (LIP) können Sie eine Sprachv
  Visual Studio verwendet ein einheitliches Sprachpaket. Um mehr als eine Sprachversion dieser Produkte zu installieren, müssen Sie das vollständige Sprachenprodukt zuerst installieren und dann ein oder mehrere Sprachpakete einrichten.
 
 > [!NOTE]
->  Visual Studio unterstützt nicht die Installation mehrerer Sprachversionen des vollständigen Sprachenprodukts auf demselben Computer. Wenn Sie ein vollständiges Sprachenprodukt installiert haben, müssen Sie die Sprachversionen mithilfe von Sprachpaketen hinzufügen. Sie können immer noch mehrere vollständige Sprachenprodukte der Express-Editionen auf demselben Computer installieren.
+> Visual Studio unterstützt nicht die Installation mehrerer Sprachversionen des vollständigen Sprachenprodukts auf demselben Computer. Wenn Sie ein vollständiges Sprachenprodukt installiert haben, müssen Sie die Sprachversionen mithilfe von Sprachpaketen hinzufügen. Sie können immer noch mehrere vollständige Sprachenprodukte der Express-Editionen auf demselben Computer installieren.
 
 ### <a name="support-for-code-pages"></a>Unterstützung für Codepages
  In einigen Visual Studio-Tools wird Text nicht korrekt angezeigt, wenn er Zeichen enthält, die nicht in der aktuellen Codepage verfügbar sind. Stattdessen werden Fragezeichen oder fehlerhafter Text angezeigt. Die folgenden Tools oder Bereiche sind betroffen:
 
--   Über FTP bereitgestellte Websites
+- Über FTP bereitgestellte Websites
 
--   Computernamen mit Nicht-ASCII-Zeichen in einigen Steuerelementen.
+- Computernamen mit Nicht-ASCII-Zeichen in einigen Steuerelementen.
 
--   Außerhalb von Visual Studio ausgeführte Befehlszeilentools
+- Außerhalb von Visual Studio ausgeführte Befehlszeilentools
 
--   Visual Basic-Assistent für die Migration
+- Visual Basic-Assistent für die Migration
 
--   Testcontainer für ActiveX-Steuerelemente
+- Testcontainer für ActiveX-Steuerelemente
 
--   OLE/COM-Objektkatalog
+- OLE/COM-Objektkatalog
 
--   ISAPI-Webdebugtool
+- ISAPI-Webdebugtool
 
--   MFC-Anwendungsprojekte mit HTML-Hilfeinhalt
+- MFC-Anwendungsprojekte mit HTML-Hilfeinhalt
 
--   Die Visual SourceSafe/SCCI-Benutzeroberfläche schaltet bei einer nicht kompatiblen Codepage automatisch auf Englisch zurück.
+- Die Visual SourceSafe/SCCI-Benutzeroberfläche schaltet bei einer nicht kompatiblen Codepage automatisch auf Englisch zurück.
 
--   Visual SourceSafe unterstützt keine Unicode-Dateinamen.
+- Visual SourceSafe unterstützt keine Unicode-Dateinamen.
 
--   Vom Endbenutzer definierte Zeichen (private gebrauchte Zone) können nicht als Token/Bezeichner verwendet werden.
+- Vom Endbenutzer definierte Zeichen (private gebrauchte Zone) können nicht als Token/Bezeichner verwendet werden.
 
--   Erweiterte Lateinisch-B-Zeichen können in einigen Visual Studio-Toolfenstern nicht angezeigt werden, wenn die Windows-Codepage auf eine ostasiatische Sprache festgelegt ist.
+- Erweiterte Lateinisch-B-Zeichen können in einigen Visual Studio-Toolfenstern nicht angezeigt werden, wenn die Windows-Codepage auf eine ostasiatische Sprache festgelegt ist.
 
--   Bei Lauftexten, die aus Zeichen von mehreren Sprachskripts bestehen, wird möglicherweise das standardmäßige Symbol für einige Zeichen angezeigt.
+- Bei Lauftexten, die aus Zeichen von mehreren Sprachskripts bestehen, wird möglicherweise das standardmäßige Symbol für einige Zeichen angezeigt.
 
--   Das Kopieren und Einfügen von komplexen Skriptzeichenfolgen in allgemeine Steuerelemente bewirkt möglicherweise, dass die Zeichenstrukturierung verloren geht. Geben Sie Text stattdessen über die entsprechende Sprachtastatur ein.
+- Das Kopieren und Einfügen von komplexen Skriptzeichenfolgen in allgemeine Steuerelemente bewirkt möglicherweise, dass die Zeichenstrukturierung verloren geht. Geben Sie Text stattdessen über die entsprechende Sprachtastatur ein.
 
 ##### <a name="to-correctly-display-characters-that-are-not-included-in-the-current-code-page"></a>So zeigen Sie nicht in der aktuellen Codepage enthaltene Zeichen ordnungsgemäß an
 
-1.  Klicken Sie auf **Start** und dann auf **Systemsteuerung**. Rufen Sie die **Regions- und Sprachoptionen** (oder **Region** in [!INCLUDE[win8](../includes/win8-md.md)]) auf.
+1. Klicken Sie auf **Start** und dann auf **Systemsteuerung**. Rufen Sie die **Regions- und Sprachoptionen** (oder **Region** in [!INCLUDE[win8](../includes/win8-md.md)]) auf.
 
     > [!NOTE]
-    >  Sie müssen auf dem Computer als Administrator angemeldet sein, um die folgenden Schritte auszuführen.
+    > Sie müssen auf dem Computer als Administrator angemeldet sein, um die folgenden Schritte auszuführen.
 
-2.  Klicken Sie auf die Registerkarte **Erweitert**.
+2. Klicken Sie auf die Registerkarte **Erweitert**.
 
-3.  Wählen Sie in der Liste **Select a language to match the language version of the non-Unicode programs you want to use** (Wählen Sie die Sprachversion der Programme aus, die Unicode nicht unterstützen) die aktuell verwendete Sprache aus.
+3. Wählen Sie in der Liste **Select a language to match the language version of the non-Unicode programs you want to use** (Wählen Sie die Sprachversion der Programme aus, die Unicode nicht unterstützen) die aktuell verwendete Sprache aus.
 
-4.  Klicken Sie auf **OK**.
+4. Klicken Sie auf **OK**.
 
 ## <a name="changing-the-language-used-for-the-ui-text-in-visual-studio"></a>Ändern der in Visual Studio für den Benutzeroberflächen-Text verwendeten Sprache
  Wenn Sie mehrere Sprachversionen von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] auf demselben Computer installieren, wird die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Benutzeroberfläche standardmäßig auf **Wie Microsoft Windows** gesetzt. Diese Einstellung gibt an, dass [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] den Text für die Benutzeroberfläche in der als Anzeigesprache für das Betriebssystem angegebenen Sprache anzeigt.
 
 > [!NOTE]
->  Wenn Visual Studio auf die Verwendung von **Wie Microsoft Windows** festgelegt ist und das entsprechende Visual Studio-Sprachpaket nicht installiert ist, verwendet Visual Studio die Sprache der ersten Visual Studio-Installation.
+> Wenn Visual Studio auf die Verwendung von **Wie Microsoft Windows** festgelegt ist und das entsprechende Visual Studio-Sprachpaket nicht installiert ist, verwendet Visual Studio die Sprache der ersten Visual Studio-Installation.
 
 #### <a name="to-set-the-language-that-is-used-for-the-ui-text-in-visual-studio"></a>So legen Sie die in Visual Studio für den Benutzeroberflächentext verwendete Sprache fest
 

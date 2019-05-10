@@ -1,7 +1,6 @@
 ---
 title: Konvertieren von Text in Groß- oder Kleinschreibung
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - editors, text case
@@ -9,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: b04d1327-a45e-4c12-a0d0-67672b3fa855
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9a239c601032a21cd34636ed79871cd108b853e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a2c0a6f7c2203e7b3a37f974d916010dbe70b31f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879266"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824216"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>Vorgehensweise: Ändern der Groß-/Kleinschreibung im Editor
 
@@ -28,11 +27,11 @@ Sie können Menübefehle oder Tastenkombinationen verwenden, um die Groß-/Klein
 
 ## <a name="to-switch-text-to-upper-case"></a>So ändern Sie Text in Großbuchstaben
 
-1.  Markieren Sie den Text, den Sie konvertieren möchten.
+1. Markieren Sie den Text, den Sie konvertieren möchten.
 
-2.  Wählen Sie im Menü **Bearbeiten** die Option **Erweitert** aus.
+2. Wählen Sie im Menü **Bearbeiten** die Option **Erweitert** aus.
 
-3.  Klicken Sie auf **In Großbuchstaben umwandeln**, um Text in Großbuchstaben zu ändern, oder drücken Sie **STRG**+**UMSCHALTTASTE**+**U**.
+3. Klicken Sie auf **In Großbuchstaben umwandeln**, um Text in Großbuchstaben zu ändern, oder drücken Sie **STRG**+**UMSCHALTTASTE**+**U**.
 
     - oder -
 

@@ -1,14 +1,9 @@
 ---
-title: '&lt;Var&gt; (JavaScript) | Microsoft-Dokumentation'
-ms.custom: ''
+title: '&lt;var&gt; (JavaScript) | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - <var> JavaScript XML tag
 - var JavaScript XML tag
@@ -16,15 +11,15 @@ ms.assetid: 34ff9023-c81c-46d1-85b6-0022f0962e66
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 04f592bab7679ed3e8fe8791872ce2280d05359a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 98bf86f807874fefe066ed2d1008e31451fbbba0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62558410"
 ---
-# <a name="ltvargt-javascript"></a>&lt;Var&gt; (JavaScript)
+# <a name="ltvargt-javascript"></a>&lt;var&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Gibt Dokumentationsinformationen für eine Variable an.  
@@ -57,7 +52,7 @@ Gibt Dokumentationsinformationen für eine Variable an.
   Dies ist optional. Dieses Attribut ist veraltet; das Attribut `type` hat Vorrang vor diesem Attribut. Dieses Attribut gibt an, ob die dokumentierte Variable ein DOM-Element ist. Legen Sie es auf `true` fest, um anzugeben, dass die Variable ein DOM-Element ist; andernfalls ist es auf `false` festzulegen. Wenn das `type`-Attribut nicht festgelegt ist und `domElement` auf `true` festgelegt wurde, behandelt IntelliSense die dokumentierte Variable bei Ausführung einer Anweisungsvervollständigung als `HTMLElement`.  
   
   `mayBeNull`  
-  Dies ist optional. Gibt an, ob die dokumentierte Variable auf NULL festgelegt werden kann. Legen Sie das Attribut auf `true` fest, um anzugeben, dass die Variable auf NULL festgelegt werden kann; andernfalls ist es auf `false` festzulegen. Der Standardwert ist `false`. Dieses Attribut wird von nicht Visual Studio verwendet, um IntelliSense-Informationen bereitzustellen.  
+  Dies ist optional. Gibt an, ob die dokumentierte Variable auf NULL festgelegt werden kann. Legen Sie das Attribut auf `true` fest, um anzugeben, dass die Variable auf NULL festgelegt werden kann; andernfalls ist es auf `false` festzulegen. Der Standardwert ist `false`sein. Dieses Attribut wird von nicht Visual Studio verwendet, um IntelliSense-Informationen bereitzustellen.  
   
   `elementType`  
   Dies ist optional. Wenn das `type`-Attribut `Array` lautet, wird der Typ des Elements im Array angegeben.  
@@ -69,13 +64,13 @@ Gibt Dokumentationsinformationen für eine Variable an.
   Dies ist optional. Dieses Attribut ist veraltet; das Attribut `elementType` hat Vorrang vor diesem Attribut. Wenn das `type`-Attribut `Array` lautet, wird angegeben, ob die Elemente im Array DOM-Elemente sind. Wenn Sie Attribut auf `true` festlegen, wird angegeben, dass die Elemente DOM-Elemente sind; andernfalls ist das Attribut auf `false` festzulegen. Wenn das `elementType`-Attribut nicht festgelegt ist und `elementDomElement` auf `true` festgelegt wird, behandelt IntelliSense jedes Element im Array bei Ausführung einer Anweisungsvervollständigung als `HTMLElement`.  
   
   `elementMayBeNull`  
-  Dies ist optional. Wenn das `type`-Attribut `Array` lautet, wird angegeben, ob die Elemente im Array auf NULL festgelegt werden können. Wenn Sie das Attribut auf `true` festlegen, wird angegeben, dass die Elemente im Array auf NULL festgelegt werden können; andernfalls ist das Attribut auf `false` festzulegen. Der Standardwert ist `false`. Dieses Attribut wird von nicht Visual Studio verwendet, um IntelliSense-Informationen bereitzustellen.  
+  Dies ist optional. Wenn das `type`-Attribut `Array` lautet, wird angegeben, ob die Elemente im Array auf NULL festgelegt werden können. Wenn Sie das Attribut auf `true` festlegen, wird angegeben, dass die Elemente im Array auf NULL festgelegt werden können; andernfalls ist das Attribut auf `false` festzulegen. Der Standardwert ist `false`sein. Dieses Attribut wird von nicht Visual Studio verwendet, um IntelliSense-Informationen bereitzustellen.  
   
   `helpKeyword`  
   Dies ist optional. Das Schlüsselwort für die F1-Hilfe.  
   
   `locid`  
-  Dies ist optional. Der Bezeichner für Lokalisierungsinformationen über die Variable. Der Bezeichner ist entweder eine Member-ID, oder er entspricht dem `name`-Attributwert in einem Meldungsbündel, das von OpenAjax-Metadaten definiert wird. Der Bezeichnertyp hängt von dem angegebenen Format in die [ \<Loc >](../ide/loc-javascript.md) Tag.  
+  Dies ist optional. Der Bezeichner für Lokalisierungsinformationen über die Variable. Der Bezeichner ist entweder eine Member-ID, oder er entspricht dem `name`-Attributwert in einem Meldungsbündel, das von OpenAjax-Metadaten definiert wird. Der Bezeichnertyp hängt vom Format ab, das im Tag [\<loc>](../ide/loc-javascript.md) angegeben wird.  
   
   `description`  
   Dies ist optional. Eine Beschreibung der Variable.  
@@ -99,6 +94,3 @@ var Rectangle = {
   
 ## <a name="see-also"></a>Siehe auch  
  [XML-Dokumentationskommentare](../ide/xml-documentation-comments-javascript.md)
-
-
-

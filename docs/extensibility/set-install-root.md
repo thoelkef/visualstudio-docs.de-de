@@ -5,27 +5,27 @@ ms.topic: conceptual
 ms.assetid: 913c3745-8aa9-4260-886e-a05aecfb2225
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 847ce9bc55e93f292ffdfe6f237e8c39eeac9fd4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 09b3b23a89450bb1abac4f8ebb10d00396a251b2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968497"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433145"
 ---
 # <a name="installing-outside-the-extensions-folder"></a>Installieren von außerhalb des Ordners für Erweiterungen
 
 Beginnend mit Visual Studio 2017 und VSIX v3 (Version 3), unterstützt jetzt für die Installation der Erweiterung Ressourcen außerhalb der Ordner "Extensions". Derzeit werden die folgenden Speicherorte als gültige Installationsorte aktiviert (wobei die [INSTALLDIR] zum Installationsverzeichnis von Visual Studio-Instanz zugeordnet ist):
 
 * [INSTALLDIR] \MSBuild
-* [INSTALLDIR] \Xml\Schemas
-* [INSTALLDIR] \Common7\IDE\PublicAssemblies
+* [INSTALLDIR]\Xml\Schemas
+* [INSTALLDIR]\Common7\IDE\PublicAssemblies
 * [INSTALLDIR] \Licenses
-* [INSTALLDIR] \Common7\IDE\ReferenceAssemblies
-* [INSTALLDIR] \Common7\IDE\RemoteDebugger
-* [INSTALLDIR] \Common7\IDE\VC\VCTargets
+* [INSTALLDIR]\Common7\IDE\ReferenceAssemblies
+* [INSTALLDIR]\Common7\IDE\RemoteDebugger
+* [INSTALLDIR]\Common7\IDE\VC\VCTargets
 
 >**Hinweis**: Das VSIX-Format lässt nicht zu, dass Sie außerhalb der Ordnerstruktur des Visual Studio-Installation installieren.
 

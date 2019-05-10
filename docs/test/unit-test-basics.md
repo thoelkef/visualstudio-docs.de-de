@@ -1,21 +1,20 @@
 ---
 title: Grundlagen zum Komponententest
-ms.date: 2016-01-07
-ms.prod: visual-studio-dev15
+ms.date: 01/07/2016
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce1689f6780f88dd57d41090969082de7ac5685d
-ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
+ms.openlocfilehash: 7a464103d38a9ba0d2215f53a593809b6136aa3d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060802"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990279"
 ---
 # <a name="unit-test-basics"></a>Grundlagen zum Komponententest
 
@@ -39,7 +38,7 @@ Eine Einführung in Komponententests, in der Sie direkt in die Codierung eingef�
 
 ## <a name="the-mybank-solution-example"></a>Beispiel „MyBank-Projektmappe“
 
-In diesem Thema dient die Entwicklung einer fiktiven Anwendung mit dem Namen `MyBank` als Beispiel. Sie benötigen den tatsächlichen Code nicht, um den Erläuterungen in diesem Thema folgen zu können. Testmethoden werden in C# geschrieben und mithilfe des Microsoft Unit Testing Framework for Managed Code angezeigt. Die Konzepte lassen sich jedoch leicht auf andere Sprachen und Frameworks übertragen.
+In diesem Artikel dient die Entwicklung einer fiktiven Anwendung mit dem Namen `MyBank` als Beispiel. Sie benötigen den tatsächlichen Code nicht, um den Erläuterungen in diesem Thema folgen zu können. Testmethoden werden in C# geschrieben und mithilfe des Microsoft Unit Testing Framework for Managed Code angezeigt. Die Konzepte lassen sich jedoch leicht auf andere Sprachen und Frameworks übertragen.
 
 ![Projektmappe MyBank](../test/media/ute_mybanksolution.png)
 
@@ -79,17 +78,20 @@ Der nun vorliegende Code kann getestet werden.
 
 ## <a name="create-unit-test-projects-and-test-methods"></a>Erstellen von Komponententestprojekten und Testmethoden
 
-Häufig ist es schneller, das Komponententestprojekt und die Komponententest-Stubs aus Ihrem Code zu generieren. Sie können das Komponententestprojekt und die Tests je nach Ihren Anforderungen auch manuell erstellen.
+Häufig ist es schneller, das Komponententestprojekt und die Komponententest-Stubs aus Ihrem Code zu generieren. Sie können das Komponententestprojekt und die Tests je nach Ihren Anforderungen auch manuell erstellen. Wenn Sie Komponententests mit dem Framework eines Drittanbieters erstellen möchten, muss eine dieser Erweiterungen installiert sein: [NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) oder [xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator).
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>Generieren des Komponententestprojekts und der Komponententest-Stubs
 
-1. Klicken Sie im Code-Editorfenster mit der rechten Maustaste, und wählen Sie im Kontextmenü die Option **Komponententests erstellen** .
+1. Klicken Sie im Code-Editorfenster mit der rechten Maustaste, und wählen Sie im Kontextmenü die Option [**Komponententests erstellen**](create-unit-tests-menu.md) aus.
 
-    ![Im Editorfenster das Kontextmenü anzeigen](../test/media/createunittestsrightclick.png)
+   ![Im Editorfenster das Kontextmenü anzeigen](../test/media/createunittestsrightclick.png)
+
+   > [!NOTE]
+   > Der Menübefehl **Komponententests erstellen** steht nur für verwalteten Code für das .NET Framework (aber nicht für .NET Core) zur Verfügung.
 
 2. Klicken Sie auf **OK**, um die Komponententests mit den Standardeinstellungen erstellen. Sie können die Werte zum Erstellen und Benennen des Komponententestprojekts und der Komponententests jedoch ändern. Sie können den Code auswählen, der den Komponententestmethoden standardmäßig hinzugefügt wird.
 
-    ![Mit der rechten Maustaste in den Editor klicken und „Komponententests erstellen“ auswählen](../test/media/createunittestsdialog.png)
+    ![Screenshot: Dialogfeld „Komponententests erstellen“ in Visual Studio](../test/media/create-unit-tests.png)
 
 3. Die Komponententest-Stubs werden in einem neuen Komponententestprojekt für alle Methoden in der Klasse erstellt.
 
@@ -103,30 +105,42 @@ Ein Komponententestprojekt entspricht in der Regel der Struktur eines einzelnen 
 
 **So fügen Sie einer Projektmappe ein Komponententestprojekt hinzu**
 
-1. Klicken Sie im Menü **Datei** auf **Neu** und dann auf **Projekt** (Tastatur: **STRG**+**UMSCHALTTASTE**+**N**).
+1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf die Projektmappe, und wählen Sie dann **Hinzufügen** > **Neues** **Projekt** aus.
 
-2. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Installiert**, wählen Sie die Sprache aus, die Sie für das Testprojekt verwenden möchten, und wählen Sie dann **Test** aus.
+::: moniker range="vs-2017"
+
+2. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Installiert**, wählen die Sprache aus, die Sie für das Testprojekt verwenden möchten, und wählen Sie anschließend **Test** aus.
 
 3. Wenn Sie ein Microsoft-Komponententest-Framework verwenden möchten, wählen Sie aus der Liste der Projektvorlagen **Komponententestprojekt** aus. Wählen Sie andernfalls die Projektvorlage des Komponententest-Frameworks aus, das Sie verwenden möchten. Nennen Sie das Projekt zum Testen des Projekts `Accounts` in diesem Beispiel `AccountsTests`.
 
-   > [!WARNING]
+   > [!NOTE]
    > Nicht alle Drittanbieter- und Open-Source-Komponententest-Frameworks stellen eine Visual Studio-Projektvorlage bereit. Lesen Sie die Dokumentation des Frameworks, um Informationen zum Erstellen eines Projekts zu erhalten.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Verwenden Sie das Projektvorlagen-Suchfeld, um eine Komponententest-Projektvorlage für das Testframework zu finden, das Sie verwenden möchten.
+
+3. Benennen Sie das Projekt auf der nächsten Seite. Beispielsweise können Sie das Projekt zum Testen des Projekts `Accounts` in unserem Beispiel `AccountsTests` nennen.
+
+::: moniker-end
 
 4. Fügen Sie im Komponententestprojekt unter "Test" einen Verweis auf das Codeprojekt hinzu, in unserem Beispiel auf das Projekt "Accounts".
 
    So erstellen Sie den Verweis auf das Codeprojekt
 
-   1.  Wählen Sie das Projekt im **Projektmappen-Explorer** aus.
+   1. Wählen Sie das Projekt im **Projektmappen-Explorer** aus.
 
-   2.  Wählen Sie im Menü **Projekt** den Eintrag **Verweis hinzufügen**aus.
+   2. Wählen Sie im Menü **Projekt** den Eintrag **Verweis hinzufügen**aus.
 
-   3.  Öffnen Sie im Dialogfeld **Verweis-Manager** den Knoten **Projektmappe**, und wählen Sie **Projekte** aus. Wählen Sie den Namen des Codeprojekts aus, und schließen Sie das Dialogfeld.
+   3. Öffnen Sie im Dialogfeld **Verweis-Manager** den Knoten **Projektmappe**, und wählen Sie **Projekte** aus. Wählen Sie den Namen des Codeprojekts aus, und schließen Sie das Dialogfeld.
 
 Jedes Komponententestprojekt enthält Klassen, die die Namen der Klassen im Codeprojekt widerspiegeln. In diesem Beispiel enthält das Projekt `AccountsTests` die folgenden Klassen:
 
--   Die`AccountInfoTests` -Klasse enthält die Komponententestmethoden für die `AccountInfo` -Klasse im Projekt `Accounts` .
+- Die`AccountInfoTests` -Klasse enthält die Komponententestmethoden für die `AccountInfo` -Klasse im Projekt `Accounts` .
 
--   Die`CheckingAccountTests` -Klasse enthält die Komponententestmethoden für die `CheckingAccount` -Klasse.
+- Die`CheckingAccountTests` -Klasse enthält die Komponententestmethoden für die `CheckingAccount` -Klasse.
 
 ## <a name="write-your-tests"></a>Erstellen der Tests
 
@@ -174,11 +188,11 @@ Beachten Sie, dass in `Withdraw_ValidAmount_ChangesBalance` eine explizite `Asse
 
 Weitere Informationen zu den Microsoft-Komponententest-Frameworks finden Sie in einem der folgenden Themen:
 
--   [Ausführen von Komponententests für Code](unit-test-your-code.md)
+- [Ausführen von Komponententests für Code](unit-test-your-code.md)
 
--   [Schreiben von Komponententests für C/C++](writing-unit-tests-for-c-cpp.md)
+- [Schreiben von Komponententests für C/C++](writing-unit-tests-for-c-cpp.md)
 
--   [Verwenden des MSTest-Frameworks in Komponententests](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
+- [Verwenden des MSTest-Frameworks in Komponententests](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
 
 ## <a name="set-timeouts-for-unit-tests"></a>Festlegen von Timeouts für Komponententests
 
@@ -249,12 +263,12 @@ Weitere Informationen finden Sie unter [Run unit tests with Test Explorer (Ausf�
 
 **Antwort:** Mit dem **Test-Explorer** können Sie Debugsitzungen für Ihre Tests starten. Beim schrittweisen Durchlaufen des Codes mit dem Visual Studio-Debugger wechseln Sie nahtlos zwischen den Komponententests und dem zu testenden Projekt hin und zurück. Starten des Debuggens:
 
-1.  Legen Sie im Visual Studio-Editor in mindestens einer zu debuggenden Testmethode einen Haltepunkt fest.
+1. Legen Sie im Visual Studio-Editor in mindestens einer zu debuggenden Testmethode einen Haltepunkt fest.
 
     > [!NOTE]
     > Da Testmethoden in jeder die oft ausgegebene Befehlszeilen  Reihenfolge ausgeführt werden können, legen Sie Haltepunkte in allen Testmethoden fest, die Sie debuggen möchten.
 
-2.  Wählen Sie im **Test-Explorer** die Testmethoden aus, und wählen Sie dann im Kontextmenü **Ausgewählte Tests debuggen** aus.
+2. Wählen Sie im **Test-Explorer** die Testmethoden aus, und wählen Sie dann im Kontextmenü **Ausgewählte Tests debuggen** aus.
 
 Erfahren Sie mehr über das [Debuggen von Komponententests](../debugger/debugger-feature-tour.md).
 
@@ -306,7 +320,7 @@ Wählen Sie zum Ausführen der Codeabdeckung für Testmethoden in einer Projektm
 
 Die Abdeckungsergebnisse werden im Fenster **Code Coverage-Ergebnisse** angezeigt.
 
-![Code Coverage-Ergebnisse](../test/media/ute_codecoverageresults.png)
+![Codeabdeckungsergebnisse](../test/media/ute_codecoverageresults.png)
 
 Erfahren Sie mehr über [Codeabdeckung](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) .
 
@@ -316,9 +330,9 @@ Erfahren Sie mehr über [Codeabdeckung](../test/using-code-coverage-to-determine
 
 Microsoft Fakes verwendet zwei Ansätze zum Erstellen von Ersatzklassen für externe Abhängigkeiten:
 
-1.  *Stubs* generieren Ersatzklassen, die von der übergeordneten Schnittstelle der Abhängigkeitszielklasse abgeleitet werden. Stubmethoden können als Ersatz für öffentliche virtuelle Methoden der Zielklasse verwendet werden.
+1. *Stubs* generieren Ersatzklassen, die von der übergeordneten Schnittstelle der Abhängigkeitszielklasse abgeleitet werden. Stubmethoden können als Ersatz für öffentliche virtuelle Methoden der Zielklasse verwendet werden.
 
-2.  *Shims* verwenden die Laufzeitinstrumentation, um Aufrufe einer Zielmethode zu einer Shim-Ersatzmethode für nicht virtuelle Methoden umzuleiten.
+2. *Shims* verwenden die Laufzeitinstrumentation, um Aufrufe einer Zielmethode zu einer Shim-Ersatzmethode für nicht virtuelle Methoden umzuleiten.
 
 Bei beiden Ansätzen verwenden Sie die generierten Delegaten von Aufrufen der Abhängigkeitsmethode, um das Verhalten festzulegen, das Sie in der Testmethode haben möchten.
 

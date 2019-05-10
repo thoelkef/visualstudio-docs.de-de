@@ -1,14 +1,9 @@
 ---
-title: 'CA2243: Attribute-Zeichenfolgenliterale müssen analysiert ordnungsgemäß | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'CA2243: Attribute-Zeichenfolgenliterale müssen stets richtig analysiert | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2243
 - AttributeStringLiteralsShouldParseCorrectly
@@ -20,14 +15,14 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3155006ecfc0e65365f23a6e09f6ec23e9d0e12d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f23db8a9674de621090be70067a555ef4fca2b99
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914735"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061423"
 ---
-# <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243: Attribute-Zeichenfolgenliterale müssen stets richtig analysiert werden
+# <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243: Attribute-Zeichenfolgenliterale müssen stets richtig analysiert werden.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -60,14 +55,11 @@ ms.locfileid: "49914735"
 
  Die Regel wird durch Folgendes ausgelöst:
 
--   Parameter, 'Version' enthalten und können nicht analysiert werden, um System.Version.
+- Parameter, 'Version' enthalten und können nicht analysiert werden, um System.Version.
 
--   Parameter, "Guid" enthalten und können nicht analysiert werden, um System.Guid.
+- Parameter, "Guid" enthalten und können nicht analysiert werden, um System.Guid.
 
--   Parameter, "Uri", "Urn" oder "Url" enthalten und können nicht analysiert werden, in System.Uri.
+- Parameter, "Uri", "Urn" oder "Url" enthalten und können nicht analysiert werden, in System.Uri.
 
 ## <a name="see-also"></a>Siehe auch
- [CA1054: URI-Parameter dürfen keine Zeichenfolgen sein](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
-
-
-
+ [CA1054: URI-Parameter dürfen keine Zeichenfolgen sein.](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)

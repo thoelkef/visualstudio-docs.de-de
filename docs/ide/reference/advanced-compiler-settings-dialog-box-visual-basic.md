@@ -1,8 +1,6 @@
 ---
 title: Dialogfeld "Erweiterte Compilereinstellungen (Visual Basic)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesAdvancedCompile
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1f81133a-293f-4dba-bc1c-8baafb01d857
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 593bb95e45ecdbda14eba49425ce5db08369e6cf
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: c8aec1862424be0182e99285ac3772cc9c4bb19f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38783687"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62792230"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Dialogfeld "Erweiterte Compilereinstellungen (Visual Basic)
 
@@ -27,13 +25,13 @@ Verwenden Sie das Dialogfeld **Erweiterte Compilereinstellungen** des **Projekt-
 
 ## <a name="to-access-this-dialog-box"></a>So öffnen Sie das Dialogfeld
 
-1.  Wählen Sie im **Projektmappen-Explorer** einen Projektknoten (nicht den Knoten **Projektmappe**) aus.
+1. Wählen Sie im **Projektmappen-Explorer** einen Projektknoten (nicht den Knoten **Projektmappe**) aus.
 
-2.  Klicken Sie im Menü **Projekt** auf **Eigenschaften**. Sobald der **Projekt-Designer** angezeigt wird, klicken Sie auf die Registerkarte **Kompilieren**.
+2. Klicken Sie im Menü **Projekt** auf **Eigenschaften**. Sobald der **Projekt-Designer** angezeigt wird, klicken Sie auf die Registerkarte **Kompilieren**.
 
-3.  Wählen Sie auf der Seite [„Kompilieren“, Projekt-Designer (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) die **Konfiguration** und **Plattform** aus. In vereinfachten Buildkonfigurationen werden die Listen **Konfiguration** und **Plattform** nicht angezeigt. Weitere Informationen finden Sie unter [Gewusst wie: Festlegen von Debug- und Releasekonfigurationen](../../debugger/how-to-set-debug-and-release-configurations.md).
+3. Wählen Sie auf der Seite [„Kompilieren“, Projekt-Designer (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) die **Konfiguration** und **Plattform** aus. In vereinfachten Buildkonfigurationen werden die Listen **Konfiguration** und **Plattform** nicht angezeigt. Weitere Informationen finden Sie unter [Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen](../../debugger/how-to-set-debug-and-release-configurations.md).
 
-4.  Klicken Sie auf **Erweiterte Kompilierungsoptionen**.
+4. Klicken Sie auf **Erweiterte Kompilierungsoptionen**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -73,7 +71,7 @@ Bedingte Kompilierungskonstanten haben einen ähnlichen Effekt wie das Verwenden
 
  **Benutzerdefinierte Konstanten**
 
- Geben Sie in dieses Textfeld beliebige benutzerdefinierte Konstanten für Ihre Anwendung ein. Die Einträge müssen durch Kommas getrennt sein und folgendes Format vorweisen: **Name1="Wert1",Name2="Wert2",Name3="Wert3"**
+ Geben Sie in dieses Textfeld beliebige benutzerdefinierte Konstanten für Ihre Anwendung ein. Einträge sind durch Kommas getrennt in der folgenden Form anzugeben: **Name1="Value1",Name2="Value2",Name3="Value3"**.
 
 ## <a name="other-settings"></a>Weitere Einstellungen
 

@@ -1,30 +1,32 @@
 ---
 title: IDebugPortSupplier2::GetPortSupplierId | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugPortSupplier2::GetPortSupplierId
 helpviewer_keywords:
 - IDebugPortSupplier2::GetPortSupplierId
 ms.assetid: 741d0829-0943-49bf-b56e-61e836043006
-author: gregvanl
+caps.latest.revision: 11
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 3d22ab3bd39ab5604ecd7a5446d394f5d24d4369
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d7f4c2928c5660d69b78fddcd2b82e537f42941b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62918050"
 ---
 # <a name="idebugportsupplier2getportsupplierid"></a>IDebugPortSupplier2::GetPortSupplierId
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Ruft die Port-Lieferanten-ID ab.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT GetPortSupplierId(   
    GUID* pguidPortSupplier  
 );  

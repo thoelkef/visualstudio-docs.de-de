@@ -1,14 +1,9 @@
 ---
-title: Objekt erwartet | Microsoft Docs
-ms.custom: ''
+title: Objekt erwartet | Microsoft-Dokumentation
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5007
 dev_langs:
@@ -16,27 +11,26 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 5d88c93d-e5b5-4b11-9bb5-bf1a5e41ccc3
-caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6add25325653627d23eb699ab53c0f2799c8322f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 501496c4f1bb929308ffbb75c6572de3d3f5b33b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632810"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006365"
 ---
 # <a name="object-expected"></a>Objekt erwartet
 Sie haben versucht, eine Methode oder Eigenschaft für ein Objekt aufzurufen, dessen Typ nicht `Object` lautete, oder Sie haben ein Argument übergeben, dessen Typ nicht `Object` lautete, als `Object` erforderlich war.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Rufen Sie die Methode oder Eigenschaft nur für Objekte vom Typ `Object` auf.  
+- Rufen Sie die Methode oder Eigenschaft nur für Objekte vom Typ `Object` auf.  
   
--   Sollte der Fehler für ein Nicht-Objekt-Argument auftreten, übergeben Sie ein Objekt vom Typ `Object`.  
+- Sollte der Fehler für ein Nicht-Objekt-Argument auftreten, übergeben Sie ein Objekt vom Typ `Object`.  
   
--   Überprüfen Sie, ob ein nicht definierter oder NULL-Verweis anstelle eines Objekts vom Typ `Object` aufgerufen wird.  
+- Überprüfen Sie, ob ein nicht definierter oder NULL-Verweis anstelle eines Objekts vom Typ `Object` aufgerufen wird.  
   
      Beispiel: Angenommen dieser Fehler tritt auf myVar im folgenden Code auf:  
   

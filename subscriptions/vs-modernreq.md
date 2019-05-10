@@ -4,22 +4,19 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Informationen zur ModernRequirements-Suite von Produkten, die in ausgewählten Visual Studio Enterprise-Abonnements enthalten sind
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 69dcde708cdd88c1e9945567fc8525fb1763627c
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 77729e8e5bf39d252ebd570d7d6d514e9ffdcdbb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740259"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947769"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>Der MODERNRequirements4TFS-Vorteil in Visual Studio-Abonnements
 
 Ausgewählte Visual Studio-Abonnements enthalten ein sechsmonatiges Abonnement für MODERNRequirements SmartOffice4TFS und ModernRequirements4TFS.  MODERNRequirements SmartOffice4TFS erweitert die Möglichkeiten von TFS und Azure DevOps Services um Berichtfunktionen auf Basis von Microsoft Word und eine schnelle, vereinfachte Rich-Text-Bearbeitung.  ModernRequirements4TFS stellt Baselining für Arbeitselemente und Möglichkeiten zur HTML5-Simulation zur Verfügung.
-
 
 ## <a name="activation-steps"></a>Aktivierungsschritte
 1. Melden Sie sich bei [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) an, damit Sie Ihren MODERNRequirementsTFS-Vorteil nutzen können.
@@ -33,11 +30,9 @@ Ausgewählte Visual Studio-Abonnements enthalten ein sechsmonatiges Abonnement f
    > [!div class="mx-imgBorder"]
    > ![ModernRequirements-Angebotsseite](_img/vs-modernreq/vs-modernreq-landing.png)
 
-
 5. Auf der nächsten Seite wird Ihr Lizenzschlüssel angegeben.  Bitte lesen Sie sich die auf der Seite zur Verfügung gestellten Informationen durch, und klicken Sie anschließend auf den blauen Link **To download the software please click here (Klicken Sie hier, um die Software herunterzuladen)**.
    > [!div class="mx-imgBorder"]
    > ![ModernRequirements-Lizenzschlüssel](_img/vs-modernreq/vs-modernreq-license-new-resized.png)
-
 
 6. Auf der Downloadseite haben Sie die Möglichkeit, entweder die MODERNRequirements-Suites oder individuelle Module aus der SMARTOffice4TFS-Suite zu installieren.  Welche für Sie die richtige Option ist, hängt von Ihren Vorlieben ab und davon, welche TFS-Version Sie installiert haben.  Machen Sie sich mit der Informationsseite vertraut, damit Sie entscheiden können, welche Produktversionen für Sie die richtigen sind.
    > [!div class="mx-imgBorder"]
@@ -95,15 +90,14 @@ Ausgewählte Visual Studio-Abonnements enthalten ein sechsmonatiges Abonnement f
 | Visual Studio Dev Essentials | NA  |Nicht verfügbar                                                          |NA     |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure                                       | Nicht verfügbar                                                           |NA|
 
-<sup>1</sup> *Umfasst:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (Enterprise) und FTE.  Umfasst nicht:  Microsoft Partner Network (Professional), MCT Software & Services Developer, BizSpark, Imagine, Microsoft Valued Professional (MVP) und Region Director (RD).  MCT Software & Services.*
+<sup>1</sup> *Umfasst:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (Enterprise) und FTE.  Umfasst nicht:  Microsoft Partner Network (Professional), MCT Software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  MCT Software & Services.*
 
 > [!NOTE]
 > In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.
 
-
 Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen.
 
 ## <a name="support-resources"></a>Supportressourcen
--  Benötigen Sie Hilfe bei ModernRequirements-Produkten?  Besuchen Sie https://www.modernrequirements.com/support-2/.
--  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
--  Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
+- Benötigen Sie Hilfe bei ModernRequirements-Produkten?  Besuchen Sie https://www.modernrequirements.com/support-2/.
+- Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
+- Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).

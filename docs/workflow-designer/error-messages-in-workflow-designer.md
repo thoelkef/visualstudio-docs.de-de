@@ -2,7 +2,6 @@
 title: Fehlermeldungen im Workflow-Designer
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - WFDErrorMessages.UI
 - System.Activities.Presentation.ErrorActivity.UI
@@ -10,15 +9,15 @@ f1_keywords:
 ms.assetid: 4d8bbc2e-34fc-477f-9140-4adfd70c34a0
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 393157c11029a36038b3fea0fa78af413d650ef3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ab2cb4562f816b254b658cfdc152dc38033fbe03
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949690"
 ---
 # <a name="error-messages-in-workflow-designer"></a>Fehlermeldungen im Workflow-Designer
 
@@ -28,13 +27,13 @@ Dieses Thema beschreibt die Arten von Fehlermeldungen, die bei der Arbeit mit Wo
 
 Fehler im Workflow-Designer werden in den folgenden Situationen auftreten:
 
-1.  In einem Ausdruck liegt ein Fehler vor.
+1. In einem Ausdruck liegt ein Fehler vor.
 
-2.  Die Validierungseinschränkungen einer Aktivität wurden nicht erfüllt.
+2. Die Validierungseinschränkungen einer Aktivität wurden nicht erfüllt.
 
-3.  Die XAML-Datei enthält Fehler, die bewirken, dass eine Aktivität nicht geladen werden kann.
+3. Die XAML-Datei enthält Fehler, die bewirken, dass eine Aktivität nicht geladen werden kann.
 
-4.  Die XAML-Datei enthält Fehler, die bewirken, dass der Workflow nicht geladen werden kann.
+4. Die XAML-Datei enthält Fehler, die bewirken, dass der Workflow nicht geladen werden kann.
 
 Ungültige Ausdrücke und nicht erfüllte Validierungseinschränkungen bewirken nicht, dass der Workflow nicht erstellt wird. Der Workflow wird erfolgreich erstellt, zur Laufzeit wird jedoch eine Ausnahme vom Typ <xref:System.Activities.InvalidWorkflowException> ausgelöst. Wenn die XAML-Datei Fehler enthält, schlägt die Erstellung fehl.
 

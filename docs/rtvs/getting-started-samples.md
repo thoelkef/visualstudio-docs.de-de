@@ -2,19 +2,18 @@
 title: R-Beispielprojekte
 description: Ein Index einer Sammlung von Beispielen für den Einstieg in R und Visual Studio.
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 80553e54489b5c887facca57f3491fd81fd8d24b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: adcc5ce422cdd06e641408b3506fb751a4c730d1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837458"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950473"
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>Beispielprojekte für R Tools für Visual Studio
 
@@ -48,7 +47,7 @@ Diese Sammlung von Beispielen zeigt, wie Sie R zum Erstellen von Modellen für d
 
     ![Benchmark-Beispielzeichnung](media/samples-mro-benchmark-plot.png)
 
-- `Bike_Rental_Estimation_with_MRS` erstellt ein Vorhersagemodell für die Nachfrage mithilfe von Microsoft ML Server für Fahrradverleihe, die auf Verlaufsdaten basieren. 
+- `Bike_Rental_Estimation_with_MRS` erstellt ein Vorhersagemodell für die Nachfrage mithilfe von Microsoft ML Server für Fahrradverleihe, die auf Verlaufsdaten basieren.
 
 - `Data_Exploration` enthält drei Skripts:
 
@@ -59,14 +58,14 @@ Diese Sammlung von Beispielen zeigt, wie Sie R zum Erstellen von Modellen für d
       ![Ausgabe eines „ggplot2.R“-Beispiels](media/samples-3d-interactive.png)
 
 - `Datasets` enthält drei *CSV*-Dateien, die von anderen Beispielen verwendet werden.
-- `Flight_Delays_Prediction_with_R` und `Flight_Delays_Prediction_with_MRS` zeigen, wie Verspätungen bei Flügen mithilfe von R, des maschinellen Lernens sowie mithilfe der historischen Echtzeitleistung und Wetterdaten vorhergesagt werden. 
+- `Flight_Delays_Prediction_with_R` und `Flight_Delays_Prediction_with_MRS` zeigen, wie Verspätungen bei Flügen mithilfe von R, des maschinellen Lernens sowie mithilfe der historischen Echtzeitleistung und Wetterdaten vorhergesagt werden.
 - `Machine learning` enthält drei Beispiele für das Erlernen der Vorhersage von Flugverspätungen, Immobilienpreisen und Fahrradvermietungen. Zusammen veranschaulichen diese Beispiele die Anwendung von R und Microsoft Machine Learning Server auf reale Probleme. Es wird auch gezeigt, wie Sie mehrere beliebte Modelle für das maschinelle Lernen verwenden können und diese als Azure-Webdienst mithilfe eines [Azure Machine Learning](https://azure.microsoft.com/services/machine-learning/)-Arbeitsbereichs bereitstellen können.
 
 - `R_MRO_MRS_Comparison` ist ein Vergleich mit sechs Teilen, der die Ähnlichkeiten und Unterschiede von R, Microsoft R Open und Microsoft ML Server mit Befehlen, Syntax, Konstrukten und Leistung darstellt.
 
 ## <a name="whats-special-about-microsoft-r-open-and-microsoft-ml-server"></a>Was ist so besonders an Microsoft R Open und Microsoft ML Server?
 
-[Microsoft R Open](http://aka.ms/rtvs-r-open), die Verteilung von R von Microsoft, unterscheidet sich in zwei wichtigen Punkten von [CRAN R](https://cran.r-project.org/):
+[Microsoft R Open](https://aka.ms/rtvs-r-open), die Verteilung von R von Microsoft, unterscheidet sich in zwei wichtigen Punkten von [CRAN R](https://cran.r-project.org/):
 
 1. [Bessere Rechnungsleistung](https://mran.revolutionanalytics.com/rro/#intelmkl1) unter Verwendung der [Intel Math Kernel Libraries](https://software.intel.com/intel-mkl). Diese Bibliotheken sind als kostenloser Download unter Microsoft für die Verwendung mit Microsoft R Open erhältlich.
 

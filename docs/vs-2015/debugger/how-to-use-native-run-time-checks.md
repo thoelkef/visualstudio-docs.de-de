@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Verwenden von systemeigenen Laufzeitprüfungen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - c.runtime.errorchecks
 dev_langs:
@@ -45,15 +40,15 @@ ms.assetid: dc7b2f1e-5ff6-42e0-89b3-dc9dead83ee1
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4efbb4e151ea47f655f0b28e19d2811d5541e944
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 02f619d727b83e681d9dda6dd851c43f168f1311
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798754"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101677"
 ---
-# <a name="how-to-use-native-run-time-checks"></a>Gewusst wie: Verwenden von systemeigenen Laufzeitprüfungen
+# <a name="how-to-use-native-run-time-checks"></a>Vorgehensweise: Verwenden von nativen Laufzeitüberprüfungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In Visual C++ können Sie mit systemeigenen [runtime_checks](http://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b) häufige Laufzeitfehler abfangen. Beispiele:  
@@ -82,18 +77,13 @@ In Visual C++ können Sie mit systemeigenen [runtime_checks](http://msdn.microso
   
 ### <a name="to-enable-native-run-time-checks-in-a-debug-build"></a>So aktivieren Sie systemeigene Laufzeitfehlerüberprüfungen in einem Debugbuild  
   
--   Verwenden Sie die Option **/RTC** , und stellen Sie eine Verknüpfung zu der Debugversion einer C-Laufzeitbibliothek (z. B. /MDd) her.  
+- Verwenden Sie die Option **/RTC** , und stellen Sie eine Verknüpfung zu der Debugversion einer C-Laufzeitbibliothek (z. B. /MDd) her.  
   
 ### <a name="to-modify-native-run-time-check-behavior"></a>So ändern Sie das Verhalten von systemeigenen Laufzeitfehlerüberprüfungen  
   
--   Verwenden Sie das `runtime_checks` -Pragma.  
+- Verwenden Sie das `runtime_checks` -Pragma.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md)   
  [runtime_checks](http://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b)   
  [Laufzeitfehlerüberprüfung](http://msdn.microsoft.com/library/c965dd01-57ad-4a3c-b1d6-5aa04f920501)
-
-
-
-
-

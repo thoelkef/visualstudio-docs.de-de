@@ -1,14 +1,9 @@
 ---
 title: 'Gewusst wie: Suchen vom Themen im Index | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Index tab [Help Viewer 2.0]
 - Help Viewer 2.0, using the index
@@ -20,13 +15,13 @@ ms.assetid: cb071e93-f297-459c-a6fa-8ae0dabc42a4
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 50c19fdaeaf9842c91e5dd7e9ca1472355b1b3e0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 67eb54d06297458915edfe34718948b085c6e86b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416830"
 ---
 # <a name="how-to-find-topics-in-the-index"></a>Gewusst wie: Suchen vom Themen im Index
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ Der Index enthält eine Liste mit Stichwörtern, die Themen in den installierten
       Mithilfe der Filterschaltfläche nahe dem oberen Rand der Registerkarte können Sie entweder alle Einträge anzeigen, die den angegebenen Text enthalten oder nur die Einträge, die mit dem angegebenen Text beginnen.  
   
      > [!NOTE]
-     >  Wenn die Filterschaltfläche auf einem dunkleren Hintergrund mit einem Rahmen angezeigt wird, müssen die Einträge den von Ihnen angegebenen Text enthalten. Wenn Hintergrund und Rahmen nicht angezeigt werden, müssen die Einträge mit dem angegebenen Text beginnen.  
+     > Wenn die Filterschaltfläche auf einem dunkleren Hintergrund mit einem Rahmen angezeigt wird, müssen die Einträge den von Ihnen angegebenen Text enthalten. Wenn Hintergrund und Rahmen nicht angezeigt werden, müssen die Einträge mit dem angegebenen Text beginnen.  
   
    - Scrollen Sie durch den Index, und wählen Sie ein Stichwort aus.  
   
@@ -50,6 +45,3 @@ Der Index enthält eine Liste mit Stichwörtern, die Themen in den installierten
   
 ## <a name="see-also"></a>Siehe auch  
  [Indexsuchtipps](../ide/index-search-tips.md)
-
-
-

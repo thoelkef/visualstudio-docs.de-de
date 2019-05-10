@@ -3,21 +3,20 @@ title: 'Tutorial zu Django in Visual Studio, Schritt 1: Grundlagen zu Django'
 titleSuffix: ''
 description: In dieser exemplarischen Vorgehensweise erhalten Sie grundlegende Informationen zu Django im Zusammenhang mit Visual Studio-Projekten und zur Unterstützung der Django-Entwicklung durch Visual Studio.
 ms.date: 11/19/2018
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ce92fa303da56b72c1c5bd7b9f2c11be0e542ed3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b41ed3901cd4ad18a1b52ddbdc7ee6fd82cb5380
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941098"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62962162"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Tutorial: Erste Schritte mit dem Django-Webframework in Visual Studio
 
@@ -35,7 +34,7 @@ In diesem Tutorial lernen Sie, wie die folgenden Aufgaben ausgeführt werden:
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
-- Visual Studio 2017 unter Windows mit den folgenden Optionen:
+- Visual Studio 2017 oder höher unter Windows mit den folgenden Optionen:
   - Die Workload **Python-Entwicklung** (Registerkarte **Workload** im Installationsprogramm). Eine Anleitung finden Sie unter [Installieren der Python-Unterstützung für Visual Studio](installing-python-support-in-visual-studio.md).
   - **Git für Windows** und **GitHub-Erweiterung für Visual Studio** auf der Registerkarte **Einzelne Komponenten** unter **Codetools**.
 
@@ -66,7 +65,7 @@ Beim Arbeiten mit Django über die Befehlszeile wird ein Projekt in der Regel du
     - **Projektmappe**: Behalten Sie die Standardoption **Neue Projektmappe erstellen** bei.
     - **Projektmappenname**: Legen Sie den Namen auf **LearningDjango** fest, da er sich für die Projektmappe als Container für mehrere Projekte in diesem Tutorial eignet.
     - **Projektmappenverzeichnis erstellen:** Übernehmen Sie die Einstellungen (den Standardwert).
-    - **Neues Git-Repository erstellen:** Aktivieren Sie das Kontrollkästchen (das standardmäßig deaktiviert ist), damit Visual Studio beim Erstellen der Projektmappe ein lokales Git-Repository erstellt. Wenn diese Option nicht angezeigt wird, führen Sie den Visual Studio 2017-Installer aus, und fügen Sie unter **Codetools** auf der Registerkarte **Einzelne Komponenten** **Git für Windows** und die **GitHub-Erweiterung für Visual Studio** hinzu.
+    - **Neues Git-Repository erstellen:** Aktivieren Sie das Kontrollkästchen (das standardmäßig deaktiviert ist), damit Visual Studio beim Erstellen der Projektmappe ein lokales Git-Repository erstellt. Wenn diese Option nicht angezeigt wird, führen Sie den Visual Studio-Installer aus, und fügen Sie unter **Codetools** auf der Registerkarte **Einzelne Komponenten** **Git für Windows** und die **GitHub-Erweiterung für Visual Studio** hinzu.
 
 1. Nach kurzer Zeit wird Ihnen von Visual Studio das Dialogfeld **Dieses Projekt erfordert externe Pakete** angezeigt (siehe unten). Dieses Dialogfeld wird angezeigt, da die Vorlage eine *requirements.txt*-Datei enthält, die auf das neueste Django-Paket 1.x verweist. (Wählen Sie die Option **Show required packages (Erforderliche Pakete anzeigen)** aus, um die genauen Abhängigkeiten anzuzeigen.)
 

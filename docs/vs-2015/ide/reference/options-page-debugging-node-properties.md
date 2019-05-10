@@ -1,30 +1,24 @@
 ---
 title: Optionsseite, Eigenschaften des Knotens „Debuggen“ | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 ms.assetid: 564cc8b2-0084-420e-b560-200cc5621a7e
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8bcc4637ebb933c2d6cc8a06d15ad70c1fbb76c1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a9ebedd1a764098d8e4a4866a9645d10aa999062
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223848"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670185"
 ---
 # <a name="options-page-debugging-node-properties"></a>Optionsseite, Eigenschaften des Knotens 'Debuggen'
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 In den folgenden Tabellen werden die Seiten (bzw. Eigenschaftenauflistungen) beschrieben, die der Kategorie **Debugging** `DTE.Properties("Debugging", <Property Page>)` im Dialogfeld **Optionen** zugeordnet sind.  
   
 ## <a name="general"></a>Allgemein  
@@ -94,6 +88,3 @@ In den folgenden Tabellen werden die Seiten (bzw. Eigenschaftenauflistungen) bes
  [Allgemein, Debuggen, Dialogfeld „Optionen“](../../debugger/general-debugging-options-dialog-box.md)   
  [Bearbeiten und Fortfahren, Debuggen, Dialogfeld „Optionen“](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
  [Just-In-Time, Debuggen, Dialogfeld "Optionen"](../../debugger/just-in-time-debugging-options-dialog-box.md)
-
-
-

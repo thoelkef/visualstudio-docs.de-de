@@ -1,29 +1,24 @@
 ---
 title: 'Testbereich 1: Hinzufügen / öffnen aus der Quellcodeverwaltung | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], adding and opening solutions
 - source control plug-ins, adding and opening solutions
 ms.assetid: 5b3b5b08-5e9b-41be-ac72-c63957faed22
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1ab1a267984f1a50cfd8e95cc8217572c0dacbcf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e7b65eae0dcd71c2ad1bb3d72bf08ea90e69036a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441259"
 ---
-# <a name="test-area-1-add-toopen-from-source-control"></a>Testbereich 1: Fügen Sie zu / Open aus der Quellcodeverwaltung hinzu
+# <a name="test-area-1-add-toopen-from-source-control"></a>Testbereich 1: Fügen Sie in / öffnen aus der Quellcodeverwaltung hinzu.
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Diese quellcodeverwaltung-Plug-in testen Bereich erläutert das Platzieren von Projektmappen oder Projekte unter quellcodeverwaltung und Abrufen von Verbindungszeichenfolgen aus der quellcodeverwaltung.  
@@ -31,37 +26,37 @@ Diese quellcodeverwaltung-Plug-in testen Bereich erläutert das Platzieren von P
 ## <a name="command-menu-access"></a>Menüzugriff Befehl  
  Die folgenden [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrierte Development-Umgebung im Menüpfade werden verwendet, in den Testfällen:  
   
--   Für [!INCLUDE[vsvss](../../includes/vsvss-md.md)]aus der quellcodeverwaltung öffnen: **Datei**, **öffnen**, **Projekt**/**Lösung**; Suchen in der [!INCLUDE[vsvss](../../includes/vsvss-md.md)] Speicherort.  
+- Für [!INCLUDE[vsvss](../../includes/vsvss-md.md)]aus der quellcodeverwaltung öffnen: **Datei**, **öffnen**, **Projekt**/**Lösung**; Suchen in der [!INCLUDE[vsvss](../../includes/vsvss-md.md)] Speicherort.  
   
--   Öffnen Sie für andere Quellcodeverwaltungs-Plug-ins, Datenquellen-Steuerelement: **Datei**, **Quellcodeverwaltung**, **aus Quellcodeverwaltung öffnen**.  
+- Öffnen Sie für andere Quellcodeverwaltungs-Plug-ins aus der quellcodeverwaltung: **Datei**, **Quellcodeverwaltung**, **aus Quellcodeverwaltung öffnen**.  
   
--   Zur quellcodeverwaltung hinzufügen: **Datei**, **Quellcodeverwaltung**, **Lösung hinzufügen, zu der Quellcodeverwaltungsdatei**, **Quellcodeverwaltung**, **hinzufügen Ausgewählte Projekte zur Quellcodeverwaltung**.  
+- Zur quellcodeverwaltung hinzufügen: **Datei**, **Quellcodeverwaltung**, **Quellcodeverwaltungsdatei Lösung hinzugefügt**, **Quellcodeverwaltung**, **ausgewählte Projekte zur QuellcodeverwaltungHinzufügen**.  
   
--   Im Kontextmenü (Projekt/Projektmappe), **Projektmappe zur Quellcodeverwaltung hinzufügen**.  
+- Im Kontextmenü (Projekt/Projektmappe), **Projektmappe zur Quellcodeverwaltung hinzufügen**.  
   
--   Hinzufügen von Datenquellen-Steuerelement: **Datei**, **Quellcodeverwaltung**, **Projekt hinzufügen, aus der Quellcodeverwaltung**.  
+- Fügen Sie aus der quellcodeverwaltung hinzu: **Datei**, **Quellcodeverwaltung**, **Projekt aus der Quellcodeverwaltung hinzufügen**.  
   
--   Für [!INCLUDE[vsvss](../../includes/vsvss-md.md)], Hinzufügen von Quelle Steuerelement steht auch auf **Datei**, **hinzufügen**, **vorhandenes Projekt**; Suchen in der [!INCLUDE[vsvss](../../includes/vsvss-md.md)] Speicherort.  
+- Für [!INCLUDE[vsvss](../../includes/vsvss-md.md)], Hinzufügen von Quelle Steuerelement steht auch auf **Datei**, **hinzufügen**, **vorhandenes Projekt**; Suchen in der [!INCLUDE[vsvss](../../includes/vsvss-md.md)] Speicherort.  
   
     > [!NOTE]
-    >  Ein Pfad von einer lokalen Datei oder eine lokale IIS (Webserver) kann in diesem Test verwendet werden.  
+    > Ein Pfad von einer lokalen Datei oder eine lokale IIS (Webserver) kann in diesem Test verwendet werden.  
   
 ## <a name="expected-behavior"></a>Es wird erwartet  
   
--   Für jede unterstützte Projekttyp muss ein Benutzer können Sie "Hinzufügen" und "Öffnen in" Datenquellen-Steuerelement.  
+- Für jede unterstützte Projekttyp muss ein Benutzer können Sie "Hinzufügen" und "Öffnen in" Datenquellen-Steuerelement.  
   
--   Wenn ein Projekt zur Quellcodeverwaltung, ein entsprechendes hinzugefügt wird \< *ProjectName*> .vspscc-Datei (Projektdatei Hinweis) erstellt wird. Es enthält Informationen von Ausschluss-Datei Liste und die Verbindungszeichenfolge. Diese Datei kann nicht gelöscht werden, da sie Informationen, die spezifisch für das Projekt enthält.  
+- Wenn ein Projekt zur Quellcodeverwaltung, ein entsprechendes hinzugefügt wird \< *ProjectName*> .vspscc-Datei (Projektdatei Hinweis) erstellt wird. Es enthält Informationen von Ausschluss-Datei Liste und die Verbindungszeichenfolge. Diese Datei kann nicht gelöscht werden, da sie Informationen, die spezifisch für das Projekt enthält.  
   
--   Wenn eine Projektmappe zur quellcodeverwaltung, ein entsprechendes hinzugefügt wird \< *SolutionName*> .vssscc (Tripel S)-Datei erstellt wird. Die Textdatei enthält die Verbindungsinformationen und eine Datei Ausschlussliste, ähnlich wie die Hinweis-Projektdatei. Diese Datei besteht nur vorübergehend und nur im Quellcode-Verwaltungsdatenbank vorhanden ist.  
+- Wenn eine Projektmappe zur quellcodeverwaltung, ein entsprechendes hinzugefügt wird \< *SolutionName*> .vssscc (Tripel S)-Datei erstellt wird. Die Textdatei enthält die Verbindungsinformationen und eine Datei Ausschlussliste, ähnlich wie die Hinweis-Projektdatei. Diese Datei besteht nur vorübergehend und nur im Quellcode-Verwaltungsdatenbank vorhanden ist.  
   
--   Wenn eine Projektmappe, aus der quellcodeverwaltung geöffnet ist eine \< *SolutionName*> .vsscc (double-S)-Datei, die nur in der Quellcode-Verwaltungsdatenbank vorhanden ist wird lokal in eine temporäre Datei erstellt. Diese Datei enthält den Pfad aus dem Projektmappenordner für die Verbindung zur Projektmappendatei. Diese Datei ist vorübergehend, und die lokale Kopie wird gelöscht, wenn der Vorgang "Aus Quellcodeverwaltung öffnen" abgeschlossen wurde.  
+- Wenn eine Projektmappe, aus der quellcodeverwaltung geöffnet ist eine \< *SolutionName*> .vsscc (double-S)-Datei, die nur in der Quellcode-Verwaltungsdatenbank vorhanden ist wird lokal in eine temporäre Datei erstellt. Diese Datei enthält den Pfad aus dem Projektmappenordner für die Verbindung zur Projektmappendatei. Diese Datei ist vorübergehend, und die lokale Kopie wird gelöscht, wenn der Vorgang "Aus Quellcodeverwaltung öffnen" abgeschlossen wurde.  
   
--   Nachdem ein Projekt der quellcodeverwaltung hinzugefügt wurde, können Sie alle Datenquellen-Steuerelement-Aktionen auf (sehen Sie sich, Get usw.) ausführen.  
+- Nachdem ein Projekt der quellcodeverwaltung hinzugefügt wurde, können Sie alle Datenquellen-Steuerelement-Aktionen auf (sehen Sie sich, Get usw.) ausführen.  
   
 ## <a name="test-cases"></a>Testfälle  
  Im folgenden sind bestimmte Testfälle für das Hinzufügen zu / von Testbereich Quellcodeverwaltung öffnen.  
   
-### <a name="case-1a-add-solution-to-source-control"></a>Case-1a: Projektmappe zur Quellcodeverwaltung hinzufügen  
+### <a name="case-1a-add-solution-to-source-control"></a>Groß-/Kleinschreibung 1a: Projektmappe zur Quellcodeverwaltung hinzufügen  
  Dieser Testfall konzentriert sich auf Lösungen zur quellcodeverwaltung hinzufügen.  
   
 |Aktion|Testschritte|Erwartete Ergebnisse überprüfen|  
@@ -81,7 +76,7 @@ Diese quellcodeverwaltung-Plug-in testen Bereich erläutert das Platzieren von P
 |Öffnen Sie eine Projektmappe mit einem lokalen oder den IIS-Web-Projekt aus der quellcodeverwaltung|1.  Erstellen Sie eine lokale oder eine IIS-Webprojekt.<br />2.  Fügen Sie der Projektmappe zur quellcodeverwaltung hinzu.<br />3.  Schließen Sie die Projektmappe.<br />4.  Öffnen Sie die Projektmappe aus der quellcodeverwaltung an einem neuen Speicherort ein.|Projektmappe oder eines Projekts aus der quellcodeverwaltung geöffnet.|  
 |Öffnen Sie eine Projektmappe mit einem Remote-Website-Webprojekt aus der quellcodeverwaltung|1.  Erstellen Sie ein Projekt für die Remotewebzugriff-Website.<br />2.  Fügen Sie der Projektmappe zur quellcodeverwaltung hinzu. Wenn dieser Schritt erfolgreich ist, können Sie mit nächsten Schritt fort.<br />3.  Schließen Sie die Projektmappe.<br />4.  Öffnen Sie die Projektmappe aus der quellcodeverwaltung an einem neuen Speicherort ein.|`Result from Step 2:`<br /><br /> Remotewebzugriff-Website ist nicht unter quellcodeverwaltung.<br /><br /> `Result from Step 4:`<br /><br /> Lösung, die aus der quellcodeverwaltung geöffnet werden.<br /><br /> Remote-Websiteprojekt wird geladen, aber es ist nicht unter quellcodeverwaltung.|  
   
-### <a name="case-1c-add-solution-from-source-control"></a>Fall 1c: Hinzufügen von Projektmappen aus der Quellcodeverwaltung  
+### <a name="case-1c-add-solution-from-source-control"></a>Fall 1c: Fügen Sie die Lösung aus der Quellcodeverwaltung hinzu  
  Dieser Testfall konzentriert sich auf Lösungen aus der quellcodeverwaltung hinzufügen.  
   
 |Aktion|Testschritte|Erwartete Ergebnisse überprüfen|  
@@ -92,4 +87,3 @@ Diese quellcodeverwaltung-Plug-in testen Bereich erläutert das Platzieren von P
   
 ## <a name="see-also"></a>Siehe auch  
  [Testleitfaden für Quellcodeverwaltungs-Plug-Ins](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-

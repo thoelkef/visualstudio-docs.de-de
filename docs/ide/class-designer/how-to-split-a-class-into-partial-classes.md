@@ -1,8 +1,6 @@
 ---
-title: 'Gewusst wie: Aufteilen einer Klasse in partielle Klassen (Klassen-Designer)'
+title: 'Vorgehensweise: Aufteilen einer Klasse in partielle Klassen (Klassen-Designer)'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Class Designer, partial classes
@@ -10,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 6f6b0b30-3996-4569-9200-20482b3adf90
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f5ee6aa016cb75ef9c9822dcd79046680f689fa2
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 32ac7dc37787a91504988fc43636d49d2b3c9ce0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179166"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975150"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Vorgehensweise: Aufteilen einer Klasse in partielle Klassen im Klassen-Designer
 

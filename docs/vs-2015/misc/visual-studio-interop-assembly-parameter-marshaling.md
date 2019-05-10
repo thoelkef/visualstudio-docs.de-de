@@ -1,27 +1,22 @@
 ---
 title: Visual Studio-Interop-Assembly-Parameter-Marshalling | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - troubleshooting Visual Studio SDK interop assemblies
 - interop assemblies, parameter marshaling
 - interop assemblies, troubleshooting
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
-manager: douge
-ms.openlocfilehash: e18667adb48f565f73acc14f5012f9c96283efe9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b0ad8fce0fc582b42cc64944677f7b680aa96541
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195014"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436526"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Parameter-Marshalling für Visual Studio-Interopassemblys
 VSPackages, die in verwaltetem Code geschrieben sind möglicherweise aufrufen oder von nicht verwalteten COM-Code aufgerufen werden. In der Regel Methodenargumente umgewandelt oder gemarshallt werden, automatisch von der interop-Marshaller. Allerdings können keine Argumente manchmal nicht in einer unkomplizierten Weise transformiert werden. In diesen Fällen werden die interop-Assembly-Methode Prototyp-Parameter verwendet, um die COM-Funktionsparameter so weit wie möglich entsprechen. Weitere Informationen finden Sie unter [Interop-Marshalling](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
@@ -33,11 +28,11 @@ VSPackages, die in verwaltetem Code geschrieben sind möglicherweise aufrufen od
   
  Die Referenzdokumentation für jede Methode enthält drei relevanten Abschnitte:  
   
--   Die [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] Prototyp der COM-Funktion.  
+- Die [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] Prototyp der COM-Funktion.  
   
--   Der Prototyp des interop-Assembly-Methode.  
+- Der Prototyp des interop-Assembly-Methode.  
   
--   Eine Liste der COM-Parameter und eine kurze Beschreibung der einzelnen.  
+- Eine Liste der COM-Parameter und eine kurze Beschreibung der einzelnen.  
   
 ##### <a name="look-for-differences-between-the-two-prototypes"></a>Suchen Sie nach den Unterschieden zwischen den zwei Prototypen  
  Die meisten Interoperabilitätsprobleme abgeleitet von Konflikten zwischen der Definition eines bestimmten Typs in eine COM-Schnittstelle und die Definition des gleichen Typs in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] interop-Assemblys. Betrachten Sie beispielsweise den Unterschied in der Lage, übergeben Sie einen `null` Wert in einen [Out]-Parameter. Sie müssen Unterschiede zwischen den zwei Prototypen suchen und betrachten Sie die Auswirkungen für die Daten übergeben werden.  
@@ -51,7 +46,7 @@ VSPackages, die in verwaltetem Code geschrieben sind möglicherweise aufrufen od
  In manchen Fällen eine COM-Schnittstelle generiert eine `IUnknown` Objekt und der COM-Schnittstelle anschließend übergibt es als Typ `void **`. Diese Schnittstellen sind besonders wichtig, da, wenn die Variable, als definiert ist [out] ein, in der IDL-Datei, und klicken Sie dann die `IUnknown` Objekt ist mit verweiszählung der `AddRef` Methode. Ein Arbeitsspeicherverlust tritt auf, wenn das Objekt nicht ordnungsgemäß behandelt wird.  
   
 > [!NOTE]
->  Ein `IUnknown` durch die COM-Schnittstelle erstellt wird und in einer Variablen [Out] zurückgegeben bewirkt, dass einen Speicherverlust, wenn sie nicht explizit freigegeben wird.  
+> Ein `IUnknown` durch die COM-Schnittstelle erstellt wird und in einer Variablen [Out] zurückgegeben bewirkt, dass einen Speicherverlust, wenn sie nicht explizit freigegeben wird.  
   
  Verwaltete Methoden, die die Behandlung solcher Objekte behandeln <xref:System.IntPtr> als Zeiger auf ein `IUnknown` Objekt aus, und rufen Sie die <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> Methode, um das Objekt abzurufen. Der Aufrufer sollte dann den Rückgabewert in den Datentyp geeignet ist umgewandelt. Wenn das Objekt nicht mehr benötigt wird, rufen Sie <xref:System.Runtime.InteropServices.Marshal.Release%2A> , diese freizugeben.  
   
@@ -82,19 +77,19 @@ else
 ```  
   
 > [!NOTE]
->  Die folgenden Methoden sind bekannte übergeben `IUnknown` Zeiger-Objekt als Typ <xref:System.IntPtr>. Verarbeiten Sie diese Option aus, wie in diesem Abschnitt beschrieben.  
+> Die folgenden Methoden sind bekannte übergeben `IUnknown` Zeiger-Objekt als Typ <xref:System.IntPtr>. Verarbeiten Sie diese Option aus, wie in diesem Abschnitt beschrieben.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.CreateProject%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.CreateProject%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>  
   
 ### <a name="optional-out-parameters"></a>[Out]-Parameter optional.  
  Suchen Sie nach Parametern, die als [Out] definiert werden-Datentyp (`int`, `object`usw.) in der COM+-Schnittstelle, aber das sind definiert als Arrays des gleichen Datentyps in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Methodenprototyps der interop-Assembly.  
@@ -128,7 +123,7 @@ else
  Verwaltete Methoden, die Schnittstellen dieses Typs aufrufen sollten das erste Element aus dem [Out] Array extrahieren. Dieses Element behandelt werden kann, als wäre er ein `retval` Wert aus der entsprechenden COM-Schnittstelle zurückzugeben.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Interop-Marshalling](http://msdn.microsoft.com/en-us/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
+ [Interop-Marshalling](http://msdn.microsoft.com/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
  [Interop-Marshalling](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)   
  [Problembehandlung bei der Interoperabilität](http://msdn.microsoft.com/library/b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37)   
  [Verwaltete VSPackages](../misc/managed-vspackages.md)

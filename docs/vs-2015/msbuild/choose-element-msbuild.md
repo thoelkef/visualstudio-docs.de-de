@@ -1,14 +1,9 @@
 ---
 title: Choose-Element (MSBuild) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Choose
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: 7b8b025a-d944-4f5c-9018-c89fc2ef146d
 caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4c5fe8ede508f82984bb3101ecb74cb2ed3e7626
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 642a4996b9b7cb24ead5b58e8f3f98b8abf7657c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225719"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650615"
 ---
 # <a name="choose-element-msbuild"></a>Choose-Element (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Bewertet untergeordnete Elemente, um einen Satz von auszuwertenden `ItemGroup`-Elementen und/oder `PropertyGroup`-Elementen auszuwählen.  
   
  \<Project>  
@@ -76,7 +70,7 @@ Bewertet untergeordnete Elemente, um einen Satz von auszuwertenden `ItemGroup`-E
 |[Projekt](../msbuild/project-element-msbuild.md)|Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] -Projektdatei.|  
 |[When](../msbuild/when-element-msbuild.md)|Gibt einen möglichen Codeblock an, den das `Choose`-Element auswählen kann.|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Die Elemente `Choose`, `When` und `Otherwise` werden zusammen verwendet, um eine Möglichkeit zu bieten, einen Codeabschnitt aus einer Reihe von möglichen Alternativen zur Ausführung auszuwählen. Weitere Informationen finden Sie unter [MSBuild Conditional Constructs](../msbuild/msbuild-conditional-constructs.md).  
   
 ## <a name="example"></a>Beispiel  
@@ -130,6 +124,3 @@ Bewertet untergeordnete Elemente, um einen Satz von auszuwertenden `ItemGroup`-E
 ## <a name="see-also"></a>Siehe auch  
  [Conditional Constructs](../msbuild/msbuild-conditional-constructs.md)  (Bedingte Konstrukte in MSBuild)  
  [Project File Schema Reference](../msbuild/msbuild-project-file-schema-reference.md) (Referenz zum Projektdateischema von MSBuild)
-
-
-

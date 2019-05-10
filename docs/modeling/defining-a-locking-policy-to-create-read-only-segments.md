@@ -4,16 +4,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: eb39e9d510d2da8a7e8b7ae9ac08ff655f334f2e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: 22eaa971035b4b202ecb76b3f1d29e286516a69b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866490"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445835"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definieren einer Sperrrichtlinie zum Erstellen von schreibgeschützten Segmenten
 Die Unveränderlichkeit-API der Visual Studio-Visualisierungs und Modellierungs-SDK können ein Programm, um ein Modell einer domänenspezifischen Sprache (DSL) ganz oder teilweise zu sperren, sodass sie zwar gelesen, aber nicht geändert. Diese schreibgeschützte Option kann verwendet werden, z. B., damit ein Benutzer lassen Kollegen mit Anmerkungen versehen, und überprüfen eine DSL-Modell, jedoch kann verhindern, dass sie die ursprüngliche ändern.
@@ -21,7 +20,7 @@ Die Unveränderlichkeit-API der Visual Studio-Visualisierungs und Modellierungs-
  Sie können darüber hinaus als Autor einer DSL und definieren eine *Sperrrichtlinie.* Eine Sperrrichtlinie definiert, welche Sperren zulässigen, nicht zulässig oder erforderlich sind. Wenn Sie eine DSL veröffentlichen, können Sie z. B. Drittanbieter-Entwickler so erweitern, mit neuen Befehlen empfehlen. Aber Sie können auch eine Sperrrichtlinie verwenden, um zu verhindern, dass Sie den schreibgeschützten Status des angegebenen Teile des Modells ändern.
 
 > [!NOTE]
->  Eine Sperrrichtlinie kann umgangen werden, mithilfe der Reflektion. Stellt eine klare Hürde für externe Entwickler, sondern bietet keine hohe Sicherheit.
+> Eine Sperrrichtlinie kann umgangen werden, mithilfe der Reflektion. Stellt eine klare Hürde für externe Entwickler, sondern bietet keine hohe Sicherheit.
 
  Weitere Informationen und Beispiele finden Sie auf die Visual Studio [Visualisierungs- und Modellierungs-SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db) Website.
 
@@ -57,15 +56,15 @@ partition.SetLocks(Locks.Delete);
 ### <a name="using-locks"></a>Verwenden von Sperren
  Sie können Sperren verwenden, um Schemas, z. B. den folgenden Beispielen zu implementieren:
 
--   Unterbinden Sie Änderungen an allen Elementen und Beziehungen mit Ausnahme derjenigen, die Kommentare darstellen. Dadurch können Benutzer ein Modell mit Anmerkungen versehen, ohne ihn zu ändern.
+- Unterbinden Sie Änderungen an allen Elementen und Beziehungen mit Ausnahme derjenigen, die Kommentare darstellen. Dadurch können Benutzer ein Modell mit Anmerkungen versehen, ohne ihn zu ändern.
 
--   Änderungen in der Standardpartition nicht zulassen, aber Änderungen in der Partition Diagramm zulassen. Die Benutzer kann das Diagramm ändern, aber das zugrunde liegende Modell kann nicht geändert werden.
+- Änderungen in der Standardpartition nicht zulassen, aber Änderungen in der Partition Diagramm zulassen. Die Benutzer kann das Diagramm ändern, aber das zugrunde liegende Modell kann nicht geändert werden.
 
--   Unterbinden Sie Änderungen an den Store mit Ausnahme von einer Gruppe von Benutzern, die in einer separaten Datenbank registriert sind. Für andere Benutzer sind das Diagramm und das Modell schreibgeschützt.
+- Unterbinden Sie Änderungen an den Store mit Ausnahme von einer Gruppe von Benutzern, die in einer separaten Datenbank registriert sind. Für andere Benutzer sind das Diagramm und das Modell schreibgeschützt.
 
--   Änderungen für das Modell nicht zulassen, wenn eine boolesche Eigenschaft des Diagramms festgelegt ist auf "true". Geben Sie einen Menübefehl, diese Eigenschaft zu ändern. Dadurch wird sichergestellt, Benutzer, die sie keine versehentlich ändert.
+- Änderungen für das Modell nicht zulassen, wenn eine boolesche Eigenschaft des Diagramms festgelegt ist auf "true". Geben Sie einen Menübefehl, diese Eigenschaft zu ändern. Dadurch wird sichergestellt, Benutzer, die sie keine versehentlich ändert.
 
--   Nicht zulassen Sie, hinzufügen und Löschen von Elementen und Beziehungen zwischen bestimmten Klassen, doch gestatten Sie eigenschaftenänderungen. Dies bietet Benutzern mit einem festen Formular, in dem sie die Eigenschaften gefüllt werden können.
+- Nicht zulassen Sie, hinzufügen und Löschen von Elementen und Beziehungen zwischen bestimmten Klassen, doch gestatten Sie eigenschaftenänderungen. Dies bietet Benutzern mit einem festen Formular, in dem sie die Eigenschaften gefüllt werden können.
 
 ## <a name="lock-values"></a>Lock-Werte
  Sperren können für eine Store, Partitions- oder einzelne ModelElement festgelegt werden. Sperrt eine `Flags` Enumeration: können kombiniert werden die Werte, die mit "&#124;".
@@ -78,7 +77,7 @@ partition.SetLocks(Locks.Delete);
 
 |Wert|D. h., wenn `IsLocked(Value)` ist "true"|
 |-|-|
-|Keine|Keine Einschränkung.|
+|Keiner|Keine Einschränkung.|
 |Eigenschaft|Domäneneigenschaften der Elemente werden nicht geändert. Dies gilt nicht für Eigenschaften, die von der Rolle einer Domänenklasse in einer Beziehung generiert werden.|
 |Hinzufügen|Neue Elemente und Links kann nicht in einer Partition erstellt werden oder zu speichern.<br /><br /> Gilt nicht für `ModelElement`.|
 |Verschieben|Element kann nicht zwischen Partitionen verschoben werden, wenn `element.IsLocked(Move)` ist "true", oder wenn `targetPartition.IsLocked(Move)` ist "true".|
@@ -96,9 +95,9 @@ partition.SetLocks(Locks.Delete);
 
  Zum Definieren einer Sperrrichtlinie müssen Sie:
 
--   Erstellen Sie eine Klasse, die das <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> implementiert.
+- Erstellen Sie eine Klasse, die das <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> implementiert.
 
--   Fügen Sie dieser Klasse mit den Diensten, die über das docdata-Objekt Ihrer DSL zur Verfügung stehen.
+- Fügen Sie dieser Klasse mit den Diensten, die über das docdata-Objekt Ihrer DSL zur Verfügung stehen.
 
 ### <a name="to-define-a-locking-policy"></a>Zum Definieren einer Sperrrichtlinie
  <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> weist folgende Definition:

@@ -1,14 +1,9 @@
 ---
 title: 'Idiasegment:: Get_addresssection | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 360b61b1-69b1-4a8b-ba37-97a1d835ac53
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 66a7a6ef863cbb981bc952c80dc5a4719d940482
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2f1dfe6971d4e5c57af0f350b9978a0081761f5d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51731689"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961072"
 ---
 # <a name="idiasegmentgetaddresssection"></a>IDiaSegment::get_addressSection
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,10 +38,7 @@ HRESULT get_addressSection ( 
  [out] Gibt die Abschnitt zurück, die dieses Segment zugeordnet ist.  
   
 ## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
+ Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)
-
-
-

@@ -1,21 +1,19 @@
 ---
 title: Übersicht über WPF-Datenbindung mit LINQ to XML
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 3bf80845-891b-41de-a71b-4080b5bd3ea6
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15f726527a743e70cced0e274fbde6b7afa8691a
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: 2ef02735ab10d6223e9098a4fa03312507d961cb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890369"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62843927"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Übersicht über WPF-Datenbindung mit LINQ to XML
 
@@ -37,11 +35,11 @@ In dieser Dokumentation wird das zweite Szenario beschrieben.
 
 Die WPF-Datenbindung ermöglicht es einem Benutzeroberflächenelement, eine seiner Eigenschaften einer Datenquelle zuzuordnen. Ein einfaches Beispiel dafür ist ein <xref:System.Windows.Controls.Label>, dessen Text den Wert einer öffentlichen Eigenschaft in einem benutzerdefinierten Objekt angibt. Die WPF-Datenbindung basiert auf den folgenden Komponenten:
 
-|Komponente|Beschreibung |
+|Komponente|Beschreibung|
 |---------------|-----------------|
 |Bindungsziel|Das Benutzeroberflächenelement, das der Datenquelle zugeordnet werden soll. Visuelle Elemente in WPF werden von der <xref:System.Windows.UIElement>-Klasse abgeleitet.|
 |Zieleigenschaft|Die *Abhängigkeitseigenschaft* des Bindungsziels, das den Wert der Datenbindungsquelle wiedergibt. Abhängigkeitseigenschaften werden direkt von der <xref:System.Windows.DependencyObject>-Klasse unterstützt, von der sich <xref:System.Windows.UIElement> herleitet.|
-|Bindungsquelle|Das Quellobjekt für die Werte, die dem Benutzeroberflächenelement für die Präsentation bereitgestellt werden. WPF unterstützt automatisch die folgenden Typen als Bindungsquellen: CLR-Objekte, ADO.NET-Datenobjekte, XML-Daten (aus XPath- oder LINQ to XML-Abfragen) oder ein anderes <xref:System.Windows.DependencyObject>.|
+|Bindungsquelle|Das Quellobjekt für die Werte, die dem Benutzeroberflächenelement für die Präsentation bereitgestellt werden. WPF unterstützt automatisch die folgenden Typen als Bindungsquellen: CLR-Objekte, ADO.NET-Datenobjekte, XML-Daten (aus XPath- oder LINQ to XML-Abfragen ) oder andere <xref:System.Windows.DependencyObject>.|
 |Quellpfad|Die Eigenschaft der Bindungsquelle, aus der sich der Wert oder der Satz von Werten herleitet, der bzw. die gebunden werden sollen.|
 
 Die Abhängigkeitseigenschaft ist ein WPF-spezifisches Konzept, das eine dynamisch berechnete Eigenschaft eines Benutzeroberflächenelements darstellt. So besitzen Abhängigkeitseigenschaften z. B. häufig Standardwerte oder Werte, die von einem übergeordneten Element bereitgestellt werden. Diese speziellen Eigenschaften werden von Instanzen der <xref:System.Windows.DependencyProperty>-Klasse (und nicht wie bei Standardeigenschaften von Feldern) gestützt. Weitere Informationen finden Sie unter [Übersicht über Abhängigkeitseigenschaften](/dotnet/framework/wpf/advanced/dependency-properties-overview).

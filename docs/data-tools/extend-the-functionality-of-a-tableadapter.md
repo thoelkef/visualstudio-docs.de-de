@@ -12,17 +12,15 @@ helpviewer_keywords:
 ms.assetid: 418249c8-c7f3-47ef-a94c-744cb6fe6aaf
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a5b34bcb9c1532190f730e26c691289d489a2f3c
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: d0ec905670c72ff7c2c5f5d94c9f5189241daebb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50751075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567431"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>Erweitern der Funktionalität eines TableAdapter
 
@@ -40,13 +38,13 @@ Im folgende Beispiel wird davon ausgegangen, einen TableAdapter namens `Customer
 
 ### <a name="to-create-a-partial-class-for-a-tableadapter"></a>Um eine partielle Klasse für einen TableAdapter zu erstellen.
 
-1.  Fügen Sie eine neue Klasse hinzu, indem Sie auf die **Projekt** Menü und auswählen **Klasse hinzufügen**.
+1. Fügen Sie eine neue Klasse hinzu, indem Sie auf die **Projekt** Menü und auswählen **Klasse hinzufügen**.
 
-2.  Nennen Sie die Klasse `CustomersTableAdapterExtended`.
+2. Nennen Sie die Klasse `CustomersTableAdapterExtended`.
 
-3.  Wählen Sie **Hinzufügen** aus.
+3. Wählen Sie **Hinzufügen** aus.
 
-4.  Ersetzen Sie den Code mit den richtigen Namespace und den Namen der partiellen Klasse für das Projekt wie folgt:
+4. Ersetzen Sie den Code mit den richtigen Namespace und den Namen der partiellen Klasse für das Projekt wie folgt:
 
      [!code-csharp[VbRaddataTableAdapters#2](../data-tools/codesnippet/CSharp/extend-the-functionality-of-a-tableadapter_1.cs)]
      [!code-vb[VbRaddataTableAdapters#2](../data-tools/codesnippet/VisualBasic/extend-the-functionality-of-a-tableadapter_1.vb)]

@@ -1,30 +1,32 @@
 ---
 title: IDebugProcess2::GetProcessId | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProcess2::GetProcessId
 helpviewer_keywords:
 - IDebugProcess2::GetProcessId
 ms.assetid: d5b6f03c-d49d-4b83-b072-016ac3124f5f
-author: gregvanl
+caps.latest.revision: 11
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: ab75af91d1b1eb2108a555deae575acec00a4bfd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b927d5a8da316faa76b5d102ad0cfb14e0cb61e7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885021"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62870936"
 ---
 # <a name="idebugprocess2getprocessid"></a>IDebugProcess2::GetProcessId
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Ruft die GUID für diesen Prozess ab.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT GetProcessId(  
    GUID* pguidProcessId  
 );  

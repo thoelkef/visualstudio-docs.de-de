@@ -2,21 +2,20 @@
 title: Erstellen von C++-Erweiterungen für Python
 description: Eine exemplarische Vorgehensweise zum Erstellen einer C++-Erweiterung für Python mithilfe von Visual Studio, CPython und PyBind11 einschließlich Informationen zum Debuggen im gemischten Modus.
 ms.date: 11/19/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8703174b2eef580b34f48c090802822bbf6cc6c9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9c81984e8921e44e32b58ae7f5c5c27c5fe8b12f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947840"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62956945"
 ---
 # <a name="create-a-c-extension-for-python"></a>Erstellen einer C++-Erweiterung für Python
 
@@ -39,7 +38,7 @@ Das abgeschlossene Beispiel aus dieser exemplarischen Vorgehensweise finden Sie 
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
-- Visual Studio 2017, wobei die Workloads **Desktopentwicklung mit C++** und **Python-Entwicklung** mit den Standardoptionen installiert werden müssen.
+- Visual Studio 2017 oder höher, wobei die Workloads **Desktopentwicklung mit C++** und **Python-Entwicklung** mit den Standardoptionen installiert werden müssen.
 - Aktivieren Sie in der Workload **Python-Entwicklung** ebenfalls das Kontrollkästchen **Native Python-Entwicklungstools** auf der rechten Seite. Durch diese Option wird der Großteil der Konfigurationen eingerichtet, die in diesem Artikel beschrieben werden. (Diese Option enthält automatisch auch die C++-Workload.)
 
     ![Auswählen der Option „Native Python-Entwicklungstools“](media/cpp-install-native.png)
@@ -108,7 +107,7 @@ Folgen Sie den Anweisungen in diesem Abschnitt, um zwei identische C++-Projekte 
 1. Suchen Sie nach „C++“, wählen Sie **Leeres Projekt** aus, geben Sie den Namen „superfastcode“ (bzw. „superfastcode2“ für das zweite Projekt) ein, und klicken Sie dann auf **OK**.
 
     > [!Tip]
-    > Wenn **Native Python-Entwicklungstools** in Visual Studio 2017 installiert ist, können Sie stattdessen mit der Vorlage **Python-Erweiterungsmodul** beginnen, die bereits vieles von dem enthält, was im Folgenden beschrieben wird. In dieser Vorgehensweise zeigt jedoch der Start mit einem leeren Projekt ausführlich die Erstellung des Erweiterungsmoduls. Sobald Sie den Prozess verstanden haben, spart Ihnen die Vorlage Zeit beim Schreiben Ihrer eigenen Erweiterungen.
+    > Wenn **Native Python-Entwicklungstools** in Visual Studio installiert ist, können Sie stattdessen mit der Vorlage **Python-Erweiterungsmodul** beginnen, die bereits vieles von dem enthält, was im Folgenden beschrieben wird. In dieser Vorgehensweise zeigt jedoch der Start mit einem leeren Projekt ausführlich die Erstellung des Erweiterungsmoduls. Sobald Sie den Prozess verstanden haben, spart Ihnen die Vorlage Zeit beim Schreiben Ihrer eigenen Erweiterungen.
 
 1. Erstellen Sie eine C++-Datei im neuen Projekt, indem Sie mit der rechten Maustaste auf den Knoten **Quelldateien** klicken, **Hinzufügen** > **Neues Element** und dann **C++-Datei** auswählen, es `module.cpp` benennen und dann auf **OK** klicken.
 
@@ -127,7 +126,7 @@ Folgen Sie den Anweisungen in diesem Abschnitt, um zwei identische C++-Projekte 
     | | **Allgemein** > **Zielerweiterung** | **.pyd** |
     | | **Projektstandards** > **Konfigurationstyp** | **Dynamische Bibliothek (.dll)** |
     | **C/C++-** > **Allgemein** | **Zusätzliche Includeverzeichnisse** | Fügen Sie den für Ihre Installation geeigneten Python Add the Python *include*-Ordner hinzu, z.B. `c:\Python36\include`.  |
-    | **C/C++-** > **Präprozessor** | **Präprozessordefinitionen** | Fügen Sie `Py_LIMITED_API;` (einschließlich des Semikolons) zum Anfang der Zeichenfolge hinzu. Durch diese Definition werden einige Funktionen eingeschränkt, die Sie aus Python aufrufen können, und der Code wird zwischen unterschiedlichen Python-Versionen portabler. |
+    | **C/C++-** > **Präprozessor** | **Präprozessordefinitionen** | **Nur CPython**: Fügen Sie `Py_LIMITED_API;` (einschließlich des Semikolons) zum Anfang der Zeichenfolge hinzu. Durch diese Definition werden einige Funktionen eingeschränkt, die Sie aus Python aufrufen können, und der Code wird zwischen unterschiedlichen Python-Versionen portabler. Wenn Sie mit PyBind11 arbeiten, fügen Sie diese Definition nicht hinzu, da sonst Buildfehler angezeigt werden. |
     | **C/C++** > **Codegenerierung** | **Laufzeitbibliothek** | **Multithreaded-DLL (/MD)** (siehe Warnung unten) |
     | **Linker** > **Allgemein** | **Zusätzliche Bibliotheksverzeichnisse** | Fügen Sie den für Ihre Installation geeigneten Python *libs*-Ordner hinzu, der *.lib*-Dateien enthält, z.B. `c:\Python36\libs`. (Achten Sie darauf, dass Sie auf den *libs*-Ordner verweisen, der *.lib*-Dateien enthält und *nicht* auf den *Lib*-Ordner, der *.py*-Dateien enthält.) |
 
@@ -135,7 +134,7 @@ Folgen Sie den Anweisungen in diesem Abschnitt, um zwei identische C++-Projekte 
     > Wenn die Registerkarte „C/C++“ nicht in den Projekteigenschaften angezeigt wird, enthält das Projekt keine Dateien, die als C/C++-Quelldateien identifiziert werden. Dieser Zustand kann eintreten, wenn Sie eine Quelldatei ohne eine *.c*- oder *.cpp*-Erweiterung erstellen. Wenn Sie zuvor versehentlich `module.coo` statt `module.cpp` im Dialogfeld „Neues Element“ eingegeben haben, erstellt Visual Studio die Datei, legt den Dateityp jedoch nicht auf „C/C++-Code“ fest, was die Registerkarte „C/C++-Eigenschaften“ aktiviert. Solche falschen Identifizierungen können auch auftreten, wenn Sie die Datei mit `.cpp` umbenennen. Zum Festlegen des korrekten Dateityps klicken Sie mit der rechten Maustaste auf die Datei im **Projektmappen-Explorer**, wählen **Eigenschaften** aus und legen **Dateityp** auf **C/C++-Code** fest.
 
     > [!Warning]
-    > Legen Sie die Option **C/C++** > **Codegenerierung** > **Runtimebibliothek** auch für eine Debugkonfiguration immer auf **Multithreaded-DLL (/MD)** fest, da durch diese Einstellung die Python-Binärdateien erstellt werden, die nicht für das Debuggen verwendet werden. Wenn Sie die **Multithreaded-Debug-DLL (/MDd)**-Option festlegen, wird beim Erstellen einer **Debugkonfiguration** die folgende Fehlermeldung ausgegeben: **C1189: Py_LiMITED_API is incompatible with Py_DEBUG, Py_TRACE_REFS und Py_REF_DEBUG (C1189: Py_LIMITED_API ist nicht mit Py_DEBUG, Py_TRACE_REFS und Py_REF_DEBUG kompatibel)**. Wenn Sie darüber hinaus `Py_LIMITED_API` entfernen, um den Buildfehler zu vermeiden, stürzt Python beim Versuch, das Modul zu importieren, ab. (Der Absturz geschieht, wie im Folgenden beschrieben, innerhalb des DLL-Aufrufs von `PyModule_Create`, mit der Ausgabemeldung **Fatal Python error: PyThreadState_Get: no current thread** (Schwerwiegender Python-Fehler: PyThreadState_Get: kein aktueller Thread.))
+    > Legen Sie die Option **C/C++** > **Codegenerierung** > **Runtimebibliothek** auch für eine Debugkonfiguration immer auf **Multithreaded-DLL (/MD)** fest, da durch diese Einstellung die Python-Binärdateien erstellt werden, die nicht für das Debuggen verwendet werden. Wenn Sie CPython verwenden und die **Multithreaded-Debug-DLL (/MDd)**-Option festlegen, wird beim Erstellen einer **Debug**-Konfiguration die folgende Fehlermeldung ausgegeben: **C1189: Py_LiMITED_API is incompatible with Py_DEBUG, Py_TRACE_REFS und Py_REF_DEBUG (C1189: Py_LIMITED_API ist nicht mit Py_DEBUG, Py_TRACE_REFS und Py_REF_DEBUG kompatibel)**. Wenn Sie darüber hinaus `Py_LIMITED_API` entfernen (dies ist bei CPython, aber nicht bei PyBind11 erforderlich), um den Buildfehler zu vermeiden, stürzt Python beim Versuch, das Modul zu importieren, ab. (Der Absturz geschieht, wie im Folgenden beschrieben, innerhalb des DLL-Aufrufs von `PyModule_Create`, mit der Ausgabemeldung **Fatal Python error: PyThreadState_Get: no current thread** (Schwerwiegender Python-Fehler: PyThreadState_Get: kein aktueller Thread.))
     >
     > Die /MDd-Option wird zum Erstellen der Python-Debugbinärdateien (z.B. *python_d.exe*) verwendet. Wenn Sie sie jedoch für eine Erweiterungs-DLL verwenden, wird weiterhin der Buildfehler mit `Py_LIMITED_API` verursacht.
 
@@ -285,7 +284,7 @@ Die erste Methode funktioniert, wenn das Python-Projekt und das C++-Projekt sich
 
 Durch die alternative Methode, die in den folgenden Schritten beschrieben wird, wird das Modul in der globalen Python-Umgebung installiert. Dadurch wird es ebenfalls für andere Python-Projekte zur Verfügung gestellt. (In der Regel erfordert dies, dass Sie die IntelliSense-Vervollständigungsdatenbank für diese Umgebung in Visual Studio 2017 Version 15.5 und früher aktualisieren. Eine Aktualisierung ist ebenfalls erforderlich, wenn das Modul aus der Umgebung entfernt wird.)
 
-1. Wenn Sie Visual Studio 2017 verwenden, führen Sie den Visual Studio-Installer aus, wählen Sie **Ändern** und anschließend **Einzelne Komponenten** > **Compiler, Buildtools und Runtimes** > **Visual C++ 2015.3 v140-Toolset** aus. Dieser Schritt ist notwendig, da Python (für Windows) selbst mit Visual Studio 2015 (Version 14.0) erstellt wurde und erwartet, dass diese Tools beim Erstellen einer Erweiterung über die hier beschriebene Methode verfügbar ist. (Beachten Sie, dass Sie möglicherweise eine 32-Bit-Version von Python installieren müssen, um die DLL auf Win32 statt x64 auszurichten.)
+1. Wenn Sie Visual Studio 2017 oder höher verwenden, führen Sie den Visual Studio-Installer aus, wählen Sie **Ändern** und anschließend **Einzelne Komponenten** > **Compiler, Buildtools und Runtimes** > **Visual C++ 2015.3 v140-Toolset** aus. Dieser Schritt ist notwendig, da Python (für Windows) selbst mit Visual Studio 2015 (Version 14.0) erstellt wurde und erwartet, dass diese Tools beim Erstellen einer Erweiterung über die hier beschriebene Methode verfügbar ist. (Beachten Sie, dass Sie möglicherweise eine 32-Bit-Version von Python installieren müssen, um die DLL auf Win32 statt x64 auszurichten.)
 
 1. Erstellen Sie im C++-Projekt eine Datei mit dem Namen *setup.py*, indem Sie mit der rechten Maustaste auf Projekt klicken und anschließend auf **Hinzufügen** > **Neues Element**. Wählen Sie dann **C++-Datei (.cpp)** aus, benennen Sie die Datei `setup.py`, und wählen Sie anschließend auf **OK** aus (wenn Sie die Datei mit der *.py*-Erweiterung benennen, erkennt Visual Studio sie als Python an, obwohl die C++-Dateivorlage verwendet wird). Wenn die Datei im Editor angezeigt wird, fügen Sie den nachstehenden für die Erweiterungsmethode geeigneten Code ein:
 
@@ -323,7 +322,7 @@ Durch die alternative Methode, die in den folgenden Schritten beschrieben wird, 
 
     setup(
         name = 'superfastcode2',
-        version = '1.0',    
+        version = '1.0',
         description = 'Python package with superfastcode2 C++ extension (PyBind11)',
         ext_modules = [sfc_module],
     )
@@ -409,7 +408,7 @@ Es gibt wie in der folgenden Tabelle beschrieben verschiedene Methoden zum Erste
 | ctypes | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | Keine Kompilierung, breite Verfügbarkeit | Unpraktisches und fehleranfälliges Zugreifen und Mutieren von C-Strukturen |
 | SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | Generieren von Bindungen gleichzeitig für mehrere Sprachen | Übermäßiger Mehraufwand, wenn Python das einzige Ziel darstellt |
 | cffi | 2013 | [cryptography](https://cryptography.io/en/latest/), [pypy](https://pypy.org/) | Einfache Integration, PyPy-Kompatibilität | Neuer, weniger ausgefeilt |
-| [cppyy](https://cppyy.readthedocs.io/en/latest/) | 2017 | | Ähnlich wie cffi mit C++. | Neuer, kann möglicherweise zu Problemen mit Visual Studio 2017 führen. |  
+| [cppyy](https://cppyy.readthedocs.io/en/latest/) | 2017 | | Ähnlich wie cffi mit C++. | Neuer, kann möglicherweise zu Problemen mit Visual Studio 2017 führen. |
 
 ## <a name="see-also"></a>Siehe auch
 

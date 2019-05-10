@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Debuggen eine teilweise vertrauenswürdigen Anwendung | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,15 +17,15 @@ ms.assetid: 9d30ad92-28ce-4b21-91d8-698474cddf64
 caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 76cce8cfcf57f956b5de16b72f7a275e1d629630
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 61b5a5d04e9c59d9c4034cb97c8ec0fd79264d48
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782049"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437318"
 ---
-# <a name="how-to-debug-a-partial-trust-application"></a>Gewusst wie: Debuggen einer teilweise vertrauenswürdigen Anwendung
+# <a name="how-to-debug-a-partial-trust-application"></a>Vorgehensweise: Debuggen einer teilweise vertrauenswürdigen Anwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Gilt für für Windows- und Konsolenanwendungen.  
@@ -46,49 +41,46 @@ Gilt für für Windows- und Konsolenanwendungen.
  Später können Sie zurückgehen und sehen, welche Berechtigungen Sie während des Debuggens hinzugefügt haben. Wenn Sie während des Debuggens eine Berechtigung hinzufügen mussten, zeigt dies wahrscheinlich an, dass Sie an dieser Stelle in Ihren Code eine Meldung einfügen und den Benutzer zur Bestätigung auffordern müssen.  
   
 > [!NOTE]
->  Debuggerschnellansichten erfordern umfangreichere Privilegien, als sie von einer partiell vertrauenswürdigen Anwendung zugelassen werden. Schnellansichten werden nicht geladen, wenn die Ausführung in Code mit partieller Vertrauenswürdigkeit unterbrochen wurde. Wenn Sie in einer Schnellansicht debuggen möchten, müssen Sie den Code mit voller Vertrauenswürdigkeit ausführen.  
+> Debuggerschnellansichten erfordern umfangreichere Privilegien, als sie von einer partiell vertrauenswürdigen Anwendung zugelassen werden. Schnellansichten werden nicht geladen, wenn die Ausführung in Code mit partieller Vertrauenswürdigkeit unterbrochen wurde. Wenn Sie in einer Schnellansicht debuggen möchten, müssen Sie den Code mit voller Vertrauenswürdigkeit ausführen.  
   
 ### <a name="to-choose-a-zone-for-your-partial-trust-application"></a>So wählen Sie eine Zone für die teilweise vertrauenswürdige Anwendung aus  
   
-1.  Von der **Projekt** Menü wählen _Projectname_**Eigenschaften**.  
+1. Von der **Projekt** Menü wählen _Projectname_**Eigenschaften**.  
   
-2.  In der *Projectname* Eigenschaftenseiten, klicken Sie auf die **Sicherheit** Seite.  
+2. In der *Projectname* Eigenschaftenseiten, klicken Sie auf die **Sicherheit** Seite.  
   
-3.  Wählen Sie **ClickOnce-Sicherheitseinstellungen aktivieren**.  
+3. Wählen Sie **ClickOnce-Sicherheitseinstellungen aktivieren**.  
   
-4.  Klicken Sie unter **Zone, die von Ihrer Anwendung installiert werden**, klicken Sie auf das Dropdown-Listenfeld, und wählen Sie die Zone, die Sie der Anwendung simulieren möchten.  
+4. Klicken Sie unter **Zone, die von Ihrer Anwendung installiert werden**, klicken Sie auf das Dropdown-Listenfeld, und wählen Sie die Zone, die Sie der Anwendung simulieren möchten.  
   
      Die **Berechtigungen, die von der Anwendung benötigten** Raster zeigt alle verfügbare Berechtigungen. Das Häkchen zeigt an, welche Berechtigungen die Anwendung besitzt.  
   
-5.  Bei die Zone, die Sie auswählen, **(Benutzerdefiniert)**, wählen Sie die korrekten benutzerdefinierten Einstellungen in der **Einstellung** Spalte die **Berechtigungen** Raster.  
+5. Bei die Zone, die Sie auswählen, **(Benutzerdefiniert)**, wählen Sie die korrekten benutzerdefinierten Einstellungen in der **Einstellung** Spalte die **Berechtigungen** Raster.  
   
-6.  Klicken Sie auf **OK**, um die Eigenschaftenseiten zu schließen.  
+6. Klicken Sie auf **OK**, um die Eigenschaftenseiten zu schließen.  
   
 ### <a name="to-add-an-extra-permission-when-a-security-exception-occurs"></a>So fügen Sie eine zusätzliche Berechtigung hinzu, wenn eine Sicherheitsausnahme eintritt  
   
-1.  Die **Ausnahmen-Assistent** Dialogfeld wird angezeigt, mit der Meldung: **SecurityException wurde nicht behandelt.**  
+1. Die **Ausnahmen-Assistent** Dialogfeld wird angezeigt, mit der Meldung: **SecurityException wurde nicht behandelt.**  
   
-2.  In der **Ausnahmen-Assistent** Dialogfeld **Aktionen**, klicken Sie auf **Berechtigung hinzufügen, um das Projekt**.  
+2. In der **Ausnahmen-Assistent** Dialogfeld **Aktionen**, klicken Sie auf **Berechtigung hinzufügen, um das Projekt**.  
   
-3.  Die **Debuggen neu starten** Dialogfeld wird angezeigt.  
+3. Die **Debuggen neu starten** Dialogfeld wird angezeigt.  
   
-    -   Wenn Sie die Debugsitzung mit der neuen Berechtigung neu starten möchten, klicken Sie auf **Ja**.  
+    - Wenn Sie die Debugsitzung mit der neuen Berechtigung neu starten möchten, klicken Sie auf **Ja**.  
   
-    -   Wenn Sie nicht noch neu starten möchten, klicken Sie auf **keine**.  
+    - Wenn Sie nicht noch neu starten möchten, klicken Sie auf **keine**.  
   
 ### <a name="to-view-extra-permissions-added-while-debugging"></a>So zeigen Sie zusätzliche Berechtigungen an, die beim Debuggen hinzugefügt wurden  
   
-1.  Von der **Projekt** Menü wählen _Projectname_**Eigenschaften**.  
+1. Von der **Projekt** Menü wählen _Projectname_**Eigenschaften**.  
   
-2.  In der *Projectname* Eigenschaftenseiten, klicken Sie auf die **Sicherheit** Seite.  
+2. In der *Projectname* Eigenschaftenseiten, klicken Sie auf die **Sicherheit** Seite.  
   
-3.  Sehen Sie sich die **Berechtigungen, die von der Anwendung benötigten** Raster. Alle von Ihnen hinzugefügte zusätzliche Berechtigung hat zwei Symbole in der **eingeschlossene** Spalte: das normale Häkchen, das alle eingeschlossenen Berechtigungen aufweisen, und ein zusätzliches Symbol, etwa eine Sprechblase mit dem Buchstaben "i".  
+3. Sehen Sie sich die **Berechtigungen, die von der Anwendung benötigten** Raster. Alle von Ihnen hinzugefügte zusätzliche Berechtigung hat zwei Symbole in der **eingeschlossene** Spalte: das normale Häkchen, das alle eingeschlossenen Berechtigungen aufweisen, und ein zusätzliches Symbol, etwa eine Sprechblase mit dem Buchstaben "i".  
   
-4.  Verwenden Sie die vertikale scrollleiste, um die gesamte anzuzeigen **Berechtigungen, die von der Anwendung benötigten** Raster.  
+4. Verwenden Sie die vertikale scrollleiste, um die gesamte anzuzeigen **Berechtigungen, die von der Anwendung benötigten** Raster.  
   
 ## <a name="see-also"></a>Siehe auch  
  [ClickOnce-Sicherheit und -Bereitstellung](../deployment/clickonce-security-and-deployment.md)   
  [Debuggersicherheit](../debugger/debugger-security.md)
-
-
-

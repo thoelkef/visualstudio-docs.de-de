@@ -1,8 +1,7 @@
 ---
-title: IActiveScriptProperty | Microsoft Docs
+title: IActiveScriptProperty | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,15 +13,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 13603bf00d758a99ba421c4ed2ef23ed30f3c25b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 62b0d49ea4ebccfe70955c2f5315918807121447
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724570"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992774"
 ---
 # <a name="iactivescriptproperty"></a>IActiveScriptProperty
-Die `IActiveScriptProperty` Schnittstelle dient zum Abrufen und Festlegen von Konfigurationseigenschaften.  
+Die `IActiveScriptProperty` Schnittstelle wird zum Abrufen und Festlegen von Konfigurationseigenschaften verwendet.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
   

@@ -1,14 +1,9 @@
 ---
 title: 'DA0011: Speicherintensive CompareTo-Funktionen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0011
 - vs.performance.rules.DAExpensiveCompareTo
@@ -18,18 +13,18 @@ ms.assetid: 239a381d-0d97-4367-8668-746c93f5af2c
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: af5797a9e3939d3163d6d1cee9719f38036543ab
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 86d41a2717eb3ef7bd49f8d34b85198a55e5101c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51720849"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655750"
 ---
 # <a name="da0011-expensive-compareto"></a>DA0011: Speicherintensive CompareTo-Funktionen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die neueste Dokumentation für Visual Studio 2017 finden Sie unter [DA0011: speicherintensive CompareTo-Funktionen](https://docs.microsoft.com/visualstudio/profiling/da0011-expensive-compareto) auf docs.microsoft.com.  
+Die neueste Dokumentation zu Visual Studio finden Sie unter [DA0011: Speicherintensive CompareTo-Funktionen](https://docs.microsoft.com/visualstudio/profiling/da0011-expensive-compareto).  
   
 |||  
 |-|-|  
@@ -47,4 +42,3 @@ Die neueste Dokumentation für Visual Studio 2017 finden Sie unter [DA0011: spei
   
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
  Verringern Sie die Komplexität der CompareTo-Methode.
-

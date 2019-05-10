@@ -1,14 +1,9 @@
 ---
 title: Microsoft Help Viewer | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-help-viewer
+ms.topic: conceptual
 f1_keywords:
 - hv_general
 helpviewer_keywords:
@@ -24,13 +19,13 @@ ms.assetid: 74e41666-2ce8-4ac0-a0e5-3723d1e322c2
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c8c8803394c4f6d31db187384304f8fbb1db4468
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3a1e9a3abd6b16ae0365279a6eb9cb067bfeb225
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430850"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,19 +33,19 @@ ms.locfileid: "49820095"
 Sie können Inhalte für verschiedene Produkte und Technologien mithilfe von Microsoft Help Viewer auf einem lokalen Computer installieren und anzeigen.  
   
 > [!WARNING]
->  Help Viewer wird gemeinsam mit Visual Studio installiert. Um Hilfethemen nicht auf der MSDN-Downloadsite, sondern in Help Viewer lesen zu starten, wechseln Sie zu der **Hilfe** in Visual Studio, wählen Sie im Menü **Hilfeeinstellungen festlegen**, und wählen Sie dann **starten in der Hilfe Viewer**. Die offline bereitgestellten Themen für eine bestimmte Visual Studio-Version sind erst nach dem endgültigen Release dieser Version verfügbar.  
+> Help Viewer wird gemeinsam mit Visual Studio installiert. Wenn Sie Hilfeartikel nicht auf der MSDN-Downloadwebsite, sondern in Help Viewer zu lesen, wechseln Sie zum Menü **Hilfe** in Visual Studio, wählen Sie **Hilfeeinstellungen festlegen** aus, und klicken Sie dann auf **In Help Viewer starten**. Die offline bereitgestellten Themen für eine bestimmte Visual Studio-Version sind erst nach dem endgültigen Release dieser Version verfügbar.  
   
  Sie haben folgende Möglichkeiten:  
   
--   Suchen Sie nach Inhaltssätzen (auch als Bücher bezeichnet), und laden Sie diese herunter.  
+- Suchen Sie nach Inhaltssätzen (auch als Bücher bezeichnet), und laden Sie diese herunter.  
   
--   Navigieren Sie zum und durchsuchen Sie das Inhaltsverzeichnis, um Themen nach Titel zu finden.  
+- Navigieren Sie zum und durchsuchen Sie das Inhaltsverzeichnis, um Themen nach Titel zu finden.  
   
--   Suchen Sie nach Themen im Index.  
+- Suchen Sie nach Themen im Index.  
   
--   Suchen Sie mithilfe der Volltextsuche nach Informationen.  
+- Suchen Sie mithilfe der Volltextsuche nach Informationen.  
   
--   Zeigen Sie Themen an, versehen Sie Themen mit Lesezeichen, und drucken Sie Themen aus.  
+- Zeigen Sie Themen an, versehen Sie Themen mit Lesezeichen, und drucken Sie Themen aus.  
   
 ## <a name="navigating-the-help-viewer"></a>Navigieren in Help Viewer  
  Sie können Informationen im installierten Inhalt suchen, indem Sie die Navigationsregisterkarten verwenden, installierten Inhalt auf der Themenregisterkarte oder den Registerkarten anzeigen und Inhalt mit der Registerkarte **Inhalt verwalten** verwalten. Sie können auch zusätzliche Aufgaben ausführen, indem Sie die Schaltflächen auf der Symbolleiste verwenden. Zusätzliche Informationen finden Sie in der unteren rechten Ecke des Fensters.  
@@ -59,7 +54,7 @@ Sie können Inhalte für verschiedene Produkte und Technologien mithilfe von Mic
 |-|-|  
 |Navigation|Über die Registerkarte **Inhalt** können Sie installierten Inhalt als Hierarchie anzeigen und Kriterien angeben, über die Sie die angezeigten Titel filtern können.<br /><br /> Über die Registerkarte **Suchen** können Sie überall im Inhalt, einschließlich im Code und in den Themenüberschriften, nach Begriffen suchen.<br /><br /> Über die Registerkarte **Index** können Sie den Index durchsuchen, Kriterien zum Filtern der Einträge angeben und festlegen, dass Indexeinträge entweder eine bestimmte Textzeichenfolge enthalten oder mit dieser beginnen.<br /><br /> Über die Registerkarte **Favoriten** können Sie Links zu Themen speichern, die Sie häufig verwenden. Außerdem können Sie eine Liste von Themen anzeigen, die Sie zuletzt angesehen haben.|  
 |Anzeige nach Thema|Jedes Thema wird auf einer Registerkarte angezeigt, und Sie können mehrere Themen gleichzeitig öffnen.|  
-|Verwalten von Inhalt|Sie können Inhalt mit der Registerkarte **Inhalt verwalten** installieren, aktualisieren, verschieben oder löschen. Oben in der Registerkarte können Sie über das Steuerelement **Installation source** (Installationsquelle) angeben, ob Bücher von einer Netzwerkadresse, von einem Datenträger oder von einem URI installiert werden sollen. Im Feld **Local store path** (Lokaler Speicherpfad) wird angezeigt, in welchem Verzeichnis die Bücher auf dem lokalen Computer installiert sind. Mit der Schaltfläche **Verschieben** können Sie die Bücher an einen anderen Speicherort verschieben.<br /><br /> In der Inhaltsliste wird angezeigt, welche Bücher Sie installieren können bzw. welche Bücher Sie bereits installiert haben, ob ein Update verfügbar ist und wie groß jedes Buch ist. Sie können ein oder mehrere Bücher mit den Links **Hinzufügen** oder **Entfernen** installieren oder entfernen und dann im Bereich **Ausstehende Änderungen** auf die Schaltfläche **Aktualisieren** klicken. Wenn Updates für bereits installierte Bücher verfügbar sind, können Sie diese Inhalte aktualisieren, indem Sie unten im Fenster auf **Hier klicken, um den Download jetzt zu starten** klicken. Darüber hinaus werden bei der Installation zusätzlicher Bücher alle installierten Bücher aktualisiert, wenn Updates verfügbar sind. **Hinweis:** Die Funktionalität der Registerkarte **Inhalt verwalten** unterscheidet sich möglicherweise, wenn der Help Viewer-Administrator diese Funktionen deaktiviert oder kein Internetzugang verfügbar ist.|  
+|Verwalten von Inhalt|Sie können Inhalt mit der Registerkarte **Inhalt verwalten** installieren, aktualisieren, verschieben oder löschen. Oben in der Registerkarte können Sie über das Steuerelement **Installation source** (Installationsquelle) angeben, ob Bücher von einer Netzwerkadresse, von einem Datenträger oder von einem URI installiert werden sollen. Im Feld **Local store path** (Lokaler Speicherpfad) wird angezeigt, in welchem Verzeichnis die Bücher auf dem lokalen Computer installiert sind. Mit der Schaltfläche **Verschieben** können Sie die Bücher an einen anderen Speicherort verschieben.<br /><br /> In der Inhaltsliste wird angezeigt, welche Bücher Sie installieren können bzw. welche Bücher Sie bereits installiert haben, ob ein Update verfügbar ist und wie groß jedes Buch ist. Sie können ein oder mehrere Bücher mit den Links **Hinzufügen** oder **Entfernen** installieren oder entfernen und dann im Bereich **Ausstehende Änderungen** auf die Schaltfläche **Aktualisieren** klicken. Wenn Updates für bereits installierte Bücher verfügbar sind, können Sie diese Inhalte aktualisieren, indem Sie unten im Fenster auf **Hier klicken, um den Download jetzt zu starten** klicken. Darüber hinaus werden bei der Installation zusätzlicher Bücher alle installierten Bücher aktualisiert, wenn Updates verfügbar sind. **Hinweis**:  Die Funktionalität der Registerkarte **Inhalt verwalten** unterscheidet sich möglicherweise, wenn der Help Viewer-Administrator diese Features deaktiviert oder kein Internetzugang verfügbar ist.|  
   
  Die Symbolleiste im Help Viewer-Fenster umfasst die folgenden Schaltflächen:  
   
@@ -84,6 +79,3 @@ Sie können Inhalte für verschiedene Produkte und Technologien mithilfe von Mic
  [Installieren und Verwalten von lokalen Inhalten](../ide/install-and-manage-local-content.md)   
  [Suchen nach Informationen](../ide/locate-information.md)   
  [Problembehandlung bei Help Viewer](../ide/troubleshooting-the-help-viewer.md)
-
-
-

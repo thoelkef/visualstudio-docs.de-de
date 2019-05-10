@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Ausschließen von Dateien vom Buildvorgang | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, wildcards
 - MSBuild, excluding files
@@ -17,18 +12,17 @@ ms.assetid: 1be36e45-01da-451c-972d-f9fc0e7d663c
 caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 114c973246c325604c79ca248cc3487fd495a19a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0cd59df3b6056040445ac8de79e064a939aff145
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230594"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440063"
 ---
-# <a name="how-to-exclude-files-from-the-build"></a>Gewusst wie: Ausschließen von Dateien vom Buildvorgang
+# <a name="how-to-exclude-files-from-the-build"></a>Vorgehensweise: Ausschließen von Dateien aus den Buildvorgang
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Sie können in einer Projektdatei Platzhalter verwenden, um alle Dateien in einem Verzeichnis oder einer geschachtelten Gruppe von Verzeichnissen als Eingaben für einen Buildvorgang einzuschließen. Möglicherweise gibt es jedoch eine Datei im Verzeichnis oder ein Verzeichnis in einer geschachtelten Gruppe von Verzeichnissen, die nicht als Eingabe für einen Buildvorgang eingeschlossen werden sollen. Sie können diese Datei oder dieses Verzeichnis explizit aus der Liste der Eingaben ausschließen. Vielleicht gibt es auch eine Datei in einem Projekt, das Sie nur unter bestimmten Umständen miteinbeziehen wollen. Sie können die Bedingungen explizit deklarieren, unter denen eine Datei in einem Buildvorgang enthalten ist.  
   
 ## <a name="excluding-a-file-or-directory-from-the-inputs-for-a-build"></a>Ausschließen einer Datei oder eines Verzeichnis aus den Eingaben für einen Buildvorgang  
@@ -45,7 +39,7 @@ Sie können in einer Projektdatei Platzhalter verwenden, um alle Dateien in eine
   
 #### <a name="to-include-all-cs-or-vb-files-except-form2"></a>So schließen Sie alle CS- oder VB-Dateien außer Form2 ein.  
   
--   Ändern Sie eines der folgenden Attribute `Include` und `Exclude`:  
+- Ändern Sie eines der folgenden Attribute `Include` und `Exclude`:  
   
     ```  
     <CSFile Include="*.cs" Exclude="Form2.cs"/>  
@@ -59,7 +53,7 @@ Sie können in einer Projektdatei Platzhalter verwenden, um alle Dateien in eine
   
 #### <a name="to-include-all-cs-or-vb-files-except-form2-and-form3"></a>So schließen Sie alle CS- oder VB-Dateien außer Form2 und Form3 ein.  
   
--   Ändern Sie eines der folgenden Attribute `Include` und `Exclude`:  
+- Ändern Sie eines der folgenden Attribute `Include` und `Exclude`:  
   
     ```  
     <CSFile Include="*.cs" Exclude="Form2.cs;Form3.cs"/>  
@@ -73,7 +67,7 @@ Sie können in einer Projektdatei Platzhalter verwenden, um alle Dateien in eine
   
 #### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>So schließen Sie alle JPG-Dateien in Unterverzeichnisse des Imageverzeichnisses ein, außer den Dateien im Version2-Verzeichnis.  
   
--   Verwenden Sie die folgenden Attribute `Include` und `Exclude`:  
+- Verwenden Sie die folgenden Attribute `Include` und `Exclude`:  
   
     ```  
     <JPGFile  
@@ -82,14 +76,14 @@ Sie können in einer Projektdatei Platzhalter verwenden, um alle Dateien in eine
     ```  
   
     > [!NOTE]
-    >  Sie müssen den Pfad für beide Attribute angeben. Wenn Sie einen absoluten Pfad zum Angeben von Dateispeicherorten im Attribut `Include` verwenden, müssen Sie auch einen absoluten Pfad im Attribut `Exclude` verwenden. Verwenden Sie einen relativen Pfad im Attribut `Include`, müssen Sie auch einen relativen Pfad im Attribut `Exclude` verwenden.  
+    > Sie müssen den Pfad für beide Attribute angeben. Wenn Sie einen absoluten Pfad zum Angeben von Dateispeicherorten im Attribut `Include` verwenden, müssen Sie auch einen absoluten Pfad im Attribut `Exclude` verwenden. Verwenden Sie einen relativen Pfad im Attribut `Include`, müssen Sie auch einen relativen Pfad im Attribut `Exclude` verwenden.  
   
 ## <a name="using-conditions-to-exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>Verwenden von Bedingungen zum Ausschließen einer Datei oder eines Verzeichnis aus den Eingaben für einen Buildvorgang  
  Wenn es Elemente gibt, die Sie einschließen möchten, z.B. in einem Debugebuild, aber nicht in einem Releasebuild, können Sie das Element `Condition` verwenden, um die Bedingungen anzugeben, unter denen Sie das Element einschließen möchten.  
   
 #### <a name="to-include-the-file-formulavb-only-in-release-builds"></a>So schließen Sie die Formula.vb-Datei nur in Releasebuilds ein  
   
--   Verwenden Sie Attribut `Condition`, das ähnlich des Folgenden ist:  
+- Verwenden Sie Attribut `Condition`, das ähnlich des Folgenden ist:  
   
     ```  
     <Compile  
@@ -134,5 +128,3 @@ Sie können in einer Projektdatei Platzhalter verwenden, um alle Dateien in eine
 ## <a name="see-also"></a>Siehe auch  
  [Elemente](../msbuild/msbuild-items.md)   
  [MSBuild](msbuild.md) [Vorgehensweise: Auswählen von Dateien für den Buildvorgang](../msbuild/how-to-select-the-files-to-build.md)
-
-

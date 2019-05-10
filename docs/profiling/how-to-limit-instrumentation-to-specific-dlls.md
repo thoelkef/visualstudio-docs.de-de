@@ -1,22 +1,20 @@
 ---
 title: 'Vorgehensweise: Beschränken der Instrumentierung auf bestimmte DLLs | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, runtime profiling control window
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aefa0d5953d1e8d61615ac5bfe0af136082c96f3
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: b39689219b113343162aa0e814cfa68e2422f08d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62980914"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Vorgehensweise: Beschränken der Instrumentierung auf bestimmte DLLs
 
@@ -71,5 +69,5 @@ Mithilfe der Instrumentierungs-Profilerstellungsmethode können Sie die Auflistu
 
 ## <a name="see-also"></a>Siehe auch
 
-[Steuerung der Datensammlung](../profiling/controlling-data-collection.md)  
-[Vorgehensweise: Beschränken der Instrumentierung auf bestimmte Funktionen](../profiling/how-to-limit-instrumentation-to-specific-functions.md)
+[Steuern der Datensammlung](../profiling/controlling-data-collection.md)
+[Vorgehensweise: Einschränken der Instrumentierung auf bestimmte Funktionen](../profiling/how-to-limit-instrumentation-to-specific-functions.md)

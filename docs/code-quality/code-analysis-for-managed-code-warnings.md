@@ -1,7 +1,6 @@
 ---
 title: Warnungen bei der Analyse von verwaltetem Code
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vc.project.vcfxcoptool.enablefxcop
@@ -13,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 3c2741ff-0d3a-42e6-acd5-d42310bd03c4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3840fc6ee7a5ef0075463462062f78c1a3d2a0c4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d6238919db971492ffd226708209b97bceceb9e0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876139"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62540767"
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>Warnungen bei der Analyse von verwaltetem Code
 Das Tool für die Analyse von verwaltetem Code stellt Warnungen über Regelverletzungen in verwalteten Codebibliotheken bereit. Die Warnungen werden in Regelbereichen, etwa Design, Lokalisierung, Leistung und Sicherheit, angeordnet. Jede Warnung steht für die Verletzung einer Analyseregel für verwalteten Code. Dieser Abschnitt enthält ausführliche Diskussionen und Beispiele für jede Warnung zur Analyse von verwaltetem Code.

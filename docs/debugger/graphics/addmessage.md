@@ -1,38 +1,35 @@
 ---
-title: AddMessage | Microsoft Docs
-ms.custom: ''
+title: AddMessage | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 102a0404-a00c-4566-93f3-01bc8df63280
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de3460a345dba21e3a8f481adb510b9e3bdd4990
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 41a71a69c916bf2fff30b2dee8784d5d9997436b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473347"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62896354"
 ---
 # <a name="addmessage"></a>AddMessage
-Fügt eine benutzerdefinierte Meldung an das Grafikdiagnose *HUD* (Head-Up-Display).  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-void AddMessage(  
-  wchar_t const * szMessage  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `szMessage`  
- Die dem HUD hinzuzufügende Meldung.  
-  
-## <a name="remarks"></a>Hinweise  
- Das Grafikdiagnose-HUD wird in der linken oberen Ecke der App angezeigt, die unter der Grafikdiagnose ausgeführt wird. Es werden Laufzeitinformationen über die App und die Erfassung von Grafikinformationen sowie Meldungen angezeigt, die hinzugefügt werden, indem diese Funktion aufgerufen wird.  
-  
- Um die HUD eine Meldung hinzugefügt haben, müssen Sie nicht aktiv Grafikinformationen erfasst werden – d. h. eine Nachricht über eine Instanz hinzugefügt werden kann die `VsgDbg` -Klasse, aber die [Init](init.md) Member-Funktion werden keine zuerst aufgerufen werden. Meldungen werden nur im HUD angezeigt, sie werden nicht in der Grafikprotokolldatei aufgezeichnet.
+Fügt dem Grafikdiagnose-*HUD* (Head-Up Display) eine benutzerdefinierte Meldung hinzu.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+void AddMessage(
+  wchar_t const * szMessage
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `szMessage` Die dem HUD hinzuzufügende Meldung.
+
+## <a name="remarks"></a>Hinweise
+ Das Grafikdiagnose-HUD wird in der linken oberen Ecke der App angezeigt, die unter der Grafikdiagnose ausgeführt wird. Es werden Laufzeitinformationen über die App und die Erfassung von Grafikinformationen sowie Meldungen angezeigt, die hinzugefügt werden, indem diese Funktion aufgerufen wird.
+
+ Um dem HUD eine Meldung hinzuzufügen, müssen Sie Grafikinformationen nicht aktiv erfassen – d.h. eine Meldung kann durch eine Instanz der `VsgDbg`-Klasse hinzugefügt werden, die Memberfunktion [Init](init.md) muss jedoch nicht zuerst aufgerufen werden. Meldungen werden nur im HUD angezeigt, sie werden nicht in der Grafikprotokolldatei aufgezeichnet.

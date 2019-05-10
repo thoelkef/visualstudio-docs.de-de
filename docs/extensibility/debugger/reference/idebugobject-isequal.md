@@ -1,30 +1,32 @@
 ---
 title: IDebugObject::IsEqual | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugObject::IsEqual
 helpviewer_keywords:
 - IDebugObject::IsEqual method
 ms.assetid: 4b76e663-ef2e-41ff-9be1-bf26d666a34a
-author: gregvanl
+caps.latest.revision: 10
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: c5f928d2fc845f6dbab99504d0967e11e7a51142
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 49d909dc0896bcc1b130ce908699c04ad9543c73
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878152"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62918504"
 ---
 # <a name="idebugobjectisequal"></a>IDebugObject::IsEqual
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Vergleicht ein Objekt mit diesem Objekt.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT IsEqual(   
    IDebugObject* pObject,  
    BOOL*         pfIsEqual  

@@ -1,14 +1,9 @@
 ---
 title: 'CA2000: Objekte verwerfen, bevor Bereich verloren geht | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2000
 - Dispose objects before losing scope
@@ -21,14 +16,14 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ce258af87dc9a7732200b410113ee778e0bfbccb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4cc41376905dd5bd5df5711d2de3edf1ea1d04dd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857860"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085037"
 ---
-# <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: Objekte verwerfen, bevor Bereich verloren geht
+# <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: Objekte verwerfen, bevor Bereich verloren geht.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||  
@@ -51,11 +46,11 @@ ms.locfileid: "49857860"
   
  Im Folgenden werden einige Situationen beschrieben, in denen die using-Anweisung nicht zum Schutz von IDisposable-Objekten ausreicht und bewirken kann, dass CA2000 ausgelöst wird.  
   
--   Um ein verwerfbares Objekt zurückzugeben, ist es erforderlich, dass das Objekt in einem try/finally-Block außerhalb eines using-Blocks erstellt ist.  
+- Um ein verwerfbares Objekt zurückzugeben, ist es erforderlich, dass das Objekt in einem try/finally-Block außerhalb eines using-Blocks erstellt ist.  
   
--   Die Member eines verwerfbaren Objekts sollten nicht im Konstruktor einer using-Anweisung initialisiert werden.  
+- Die Member eines verwerfbaren Objekts sollten nicht im Konstruktor einer using-Anweisung initialisiert werden.  
   
--   Das Schachteln von Konstruktoren, die nur von einem Ausnahmehandler geschützt sind. Ein auf ein Objekt angewendeter  
+- Das Schachteln von Konstruktoren, die nur von einem Ausnahmehandler geschützt sind. Ein auf ein Objekt angewendeter  
   
     ```  
     using (StreamReader sr = new StreamReader(new FileStream("C:\myfile.txt", FileMode.Create)))  
@@ -64,7 +59,7 @@ ms.locfileid: "49857860"
   
      Dadurch wird bewirkt, dass CA2000 ausgelöst wird, da ein Fehler in der Konstruktion des StreamReader-Objekts dazu führen kann, dass das FileStream-Objekt nie geschlossen wird.  
   
--   Dynamische Objekte sollten ein Schattenobjekt verwenden, um das Dispose-Muster von IDisposable-Objekten zu implementieren.  
+- Dynamische Objekte sollten ein Schattenobjekt verwenden, um das Dispose-Muster von IDisposable-Objekten zu implementieren.  
   
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
  Unterdrücken Sie keine Warnung dieser Regel, es sei denn, Sie haben eine Methode für das Objekt aufgerufen, die `Dispose` aufruft, zum Beispiel <xref:System.IO.Stream.Close%2A>, oder die Methode, durch die die Warnung ausgelöst wurde, gibt ein IDisposable-Objekt zurück, das das Objekt umschließt.  

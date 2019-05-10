@@ -5,19 +5,18 @@ ms.topic: conceptual
 ms.assetid: afa7db3b-8c1d-473a-81ac-24ede112a17f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd7a74f546a7d9ae09767ee79747ce9d7fcaba36
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4c763e24ae79591f4c9779421da9e41cf8f710e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961802"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968118"
 ---
 # <a name="profiling-tools-usage-rules"></a>Verwendungsregeln für Profilerstellungstools
-Leistungsregeln in der Kategorie Verwendung der Profilerstellungstools bieten eine Anleitung für die Verwendung des Profiler zur effektivsten Datensammlung.  
-
+Leistungsregeln in der Kategorie Verwendung der Profilerstellungstools bieten eine Anleitung für die Verwendung des Profiler zur effektivsten Datensammlung.
 
 | | |
 | - | - |

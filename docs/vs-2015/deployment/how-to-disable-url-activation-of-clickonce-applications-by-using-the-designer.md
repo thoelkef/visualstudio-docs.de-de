@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Deaktivieren der URL-Aktivierung von ClickOnce-Anwendungen mithilfe des Designers | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,15 +16,15 @@ ms.assetid: a337a582-e67c-409a-b52e-607cd1a8fc57
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 37049ab5c3d696c992cb1d7deca857706f98df92
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 27690ab275d0c7ef2a090fa8ef2e42887ae9daeb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307612"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043848"
 ---
-# <a name="how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer"></a>Gewusst wie: Deaktivieren der URL-Aktivierung von ClickOnce-Anwendungen mithilfe des Designers
+# <a name="how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer"></a>Vorgehensweise: Deaktivieren der URL-Aktivierung von ClickOnce-Anwendungen mithilfe des Designers
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In der Regel eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendung wird automatisch gestartet, sobald sie von einem Webserver installiert ist. Aus Gründen der Sicherheit könnten Sie dieses Verhalten deaktivieren, und informieren Benutzer zum Starten der Anwendung aus der **starten** Menü stattdessen. Das folgende Verfahren beschreibt das Deaktivieren der URL-Aktivierung.  
@@ -42,20 +37,17 @@ In der Regel eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Anwendu
   
 #### <a name="to-disable-url-activation-for-your-application"></a>So deaktivieren Sie die URL-Aktivierung für Ihre Anwendung  
   
-1.  Mit der rechten Maustaste des Projektnamen in **Projektmappen-Explorer**, und klicken Sie auf **Eigenschaften**.  
+1. Mit der rechten Maustaste des Projektnamen in **Projektmappen-Explorer**, und klicken Sie auf **Eigenschaften**.  
   
-2.  Auf der **Eigenschaften** klicken Sie auf die **veröffentlichen** Registerkarte.  
+2. Auf der **Eigenschaften** klicken Sie auf die **veröffentlichen** Registerkarte.  
   
-3.  Klicken Sie auf **Optionen**.  
+3. Klicken Sie auf **Optionen**.  
   
-4.  Klicken Sie auf **Manifeste**.  
+4. Klicken Sie auf **Manifeste**.  
   
-5.  Aktivieren Sie das Kontrollkästchen mit der Bezeichnung **blockieren Sie die Anwendung wird über eine URL aktiviert**.  
+5. Aktivieren Sie das Kontrollkästchen mit der Bezeichnung **blockieren Sie die Anwendung wird über eine URL aktiviert**.  
   
-6.  Stellen Sie die Anwendung bereit.  
+6. Stellen Sie die Anwendung bereit.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)
-
-
-

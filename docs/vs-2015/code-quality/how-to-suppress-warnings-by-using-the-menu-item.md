@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Unterdrücken von Warnungen über das Menüelement | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - warnings, suppressing
 - code analysis, suppressing warnings
@@ -17,18 +12,18 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1c756a5ab6516d78f5370622555898c98658e8b3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.openlocfilehash: 5097ecb0f7458e739def275d616eb344a2a6db0d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426568"
 ---
-# <a name="how-to-suppress-warnings-by-using-the-menu-item"></a>Gewusst wie: Unterdrücken von Warnungen über das Menüelement
+# <a name="how-to-suppress-warnings-by-using-the-menu-item"></a>Vorgehensweise: Unterdrücken von Warnungen über das Menüelement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 HINWEIS]
->  In der Quelle wird die Unterdrückung für Websiteprojekte nicht unterstützt.  
+> In der Quelle wird die Unterdrückung für Websiteprojekte nicht unterstützt.  
   
  Das Fenster "Codeanalyse" können Warnungen der Codeanalyse unterdrückt werden sollen. Unterdrücken eine Warnung ist nicht identisch mit deaktivieren. Wenn Sie eine Warnung unterdrücken, gilt sie nur für eine bestimmte Instanz des Verstoßes. Andere Verstöße gegen die gleichen Warnung werden weiterhin in das Fenster "Fehlerliste" gemeldet.  
   
@@ -38,16 +33,13 @@ HINWEIS]
   
 ### <a name="to-suppress-a-warning-by-using-menu-item"></a>Eine Warnung zu unterdrücken, über Menüelement  
   
-1.  Auf der **analysieren** Menü wählen **Windows** und wählen Sie dann **Codeanalyse**.  
+1. Auf der **analysieren** Menü wählen **Windows** und wählen Sie dann **Codeanalyse**.  
   
-2.  In der **Codeanalyse** Fenster, wählen Sie die Warnung unterdrücken.  
+2. In der **Codeanalyse** Fenster, wählen Sie die Warnung unterdrücken.  
   
-3.  Wählen Sie die Aktionen, und wählen Sie dann **Nachrichten unterdrücken**, und wählen Sie dann entweder **In Quelle** oder **In Projektunterdrückungsdatei**.  
+3. Wählen Sie die Aktionen, und wählen Sie dann **Nachrichten unterdrücken**, und wählen Sie dann entweder **In Quelle** oder **In Projektunterdrückungsdatei**.  
   
      Die betreffende Warnung unterdrückt wird, und die Warnung wird im Fenster "Codeanalyse" durchgestrichen angezeigt.  
   
 > [!NOTE]
->  Unterdrückungen, die kein Ziel verfügen, die in der Datei globale Unterdrückung angezeigt werden.
-
-
-
+> Unterdrückungen, die kein Ziel verfügen, die in der Datei globale Unterdrückung angezeigt werden.

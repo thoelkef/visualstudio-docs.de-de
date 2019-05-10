@@ -1,14 +1,9 @@
 ---
 title: Gemeinsame MSBuild-Projektelemente | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,30 +15,29 @@ ms.assetid: 1eba3721-cc12-4b80-9987-84923ede5e2e
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0d4975390802c8a04459750be5e5405bd17c3a68
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8e36d5e50b15a5ede425715ec756f05ab8d014de
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238406"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655815"
 ---
 # <a name="common-msbuild-project-items"></a>Gemeinsame MSBuild-Projektelemente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ist ein Element ein benannter Verweis auf eine oder mehrere Dateien. Elemente enthalten Metadaten wie Dateinamen, Pfade und Versionsnummern. Alle Projekttypen in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] haben mehrere Elemente gemeinsam. Diese Elemente werden in der Datei microsoft.build.commontypes.xsd definiert.  
   
 ## <a name="common-items"></a>Gemeinsame Elemente  
  In der folgenden Liste werden alle gemeinsamen Projektelemente aufgeführt.  
   
-### <a name="reference"></a>Verweis  
+### <a name="reference"></a>Referenz  
  Stellt einen Assemblyverweis (verwaltet) im Projekt dar.  
   
 |Elementname|Beschreibung|  
 |---------------|-----------------|  
 |HintPath|Optionale Zeichenfolge. Relativer oder absoluter Pfad der Assembly.|  
-|Name|Optionale Zeichenfolge. Der Anzeigename der Assembly, z. B. "System.Windows.Forms".|  
+|name|Optionale Zeichenfolge. Der Anzeigename der Assembly, z. B. "System.Windows.Forms".|  
 |FusionName|Optionale Zeichenfolge. Gibt den einfachen oder starken Fusionsnamen für das Element an.<br /><br /> Wenn dieses Attribut vorhanden ist, führt dies zu Zeiteinsparungen, da die Assemblydatei zum Abrufen des Fusionsnamens nicht geöffnet werden muss.|  
 |SpecificVersion|Optionaler boolescher Wert. Gibt an, ob nur auf die Version im Fusionsnamen verwiesen werden soll.|  
 |Aliase|Optionale Zeichenfolge. Alle Aliase für den Verweis.|  
@@ -54,8 +48,8 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ist ein Element ein 
   
 |Elementname|Beschreibung|  
 |---------------|-----------------|  
-|Name|Optionale Zeichenfolge. Der Anzeigename der Komponente.|  
-|Guid|Optionale Zeichenfolge. Eine GUID für die Komponente im Format {12345678-1234-1234-1234-1234567891234}.|  
+|name|Optionale Zeichenfolge. Der Anzeigename der Komponente.|  
+|GUID|Optionale Zeichenfolge. Eine GUID für die Komponente im Format {12345678-1234-1234-1234-1234567891234}.|  
 |VersionMajor|Optionale Zeichenfolge. Der Hauptteil der Versionsnummer der Komponente. Beispielsweise "5", wenn die Versionsnummer "5.46" lautet.|  
 |VersionMinor|Optionale Zeichenfolge. Der zweite Teil der Versionsnummer (Nebenversionsnummer) der Komponente. Beispielsweise "46", wenn die Versionsnummer "5.46" lautet.|  
 |LCID|Optionale Zeichenfolge. Die LocaleID (Gebietsschema-ID) für die Komponente.|  
@@ -74,7 +68,7 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ist ein Element ein 
   
 |Elementname|Beschreibung|  
 |---------------|-----------------|  
-|Name|Erforderliche Zeichenfolge. Der Basisname der Manifestdatei.|  
+|name|Erforderliche Zeichenfolge. Der Basisname der Manifestdatei.|  
 |HintPath|Erforderliche Zeichenfolge. Der relative Pfad der Manifestdatei.|  
   
 ### <a name="projectreference"></a>ProjectReference  
@@ -82,8 +76,8 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ist ein Element ein 
   
 |Elementname|Beschreibung|  
 |---------------|-----------------|  
-|Name|Optionale Zeichenfolge. Der Anzeigename des Verweises.|  
-|Project|Optionale Zeichenfolge. Eine GUID für den Verweis im Format {12345678-1234-1234-1234-1234567891234}.|  
+|name|Optionale Zeichenfolge. Der Anzeigename des Verweises.|  
+|Projekt|Optionale Zeichenfolge. Eine GUID für den Verweis im Format {12345678-1234-1234-1234-1234567891234}.|  
 |Package|Optionale Zeichenfolge. Der Pfad der Projektdatei, auf die verwiesen wird.|  
   
 ### <a name="compile"></a>Compile  
@@ -94,8 +88,8 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ist ein Element ein 
 |DependentUpon|Optionale Zeichenfolge. Gibt die Datei an, von der diese Datei abhängt, um ordnungsgemäß zu kompilieren.|  
 |AutoGen|Optionaler boolescher Wert. Gibt an, ob die Datei für das Projekt von der integrierten [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Entwicklungsumgebung (IDE) generiert wurde.|  
 |Link|Optionale Zeichenfolge. Der anzuzeigende Notationspfad, wenn sich die Datei physisch außerhalb des Einflusses der Projektdatei befindet.|  
-|Visible|Optionaler boolescher Wert. Gibt an, ob die Datei im **Projektmappen-Explorer** in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] angezeigt wird.|  
-|CopyToOutputDirectory|Optionale Zeichenfolge. Bestimmt, ob die Datei in das Ausgabeverzeichnis kopiert werden soll. Gültige Werte:<br /><br /> 1.  Nie<br />2.  Immer<br />3.  PreserveNewest|  
+|Sichtbar|Optionaler boolescher Wert. Gibt an, ob die Datei im **Projektmappen-Explorer** in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] angezeigt wird.|  
+|CopyToOutputDirectory|Optionale Zeichenfolge. Bestimmt, ob die Datei in das Ausgabeverzeichnis kopiert werden soll. Gültige Werte:<br /><br /> 1.  Nie<br />2.  Always<br />3.  PreserveNewest|  
   
 ### <a name="embeddedresource"></a>EmbeddedResource  
  Stellt Ressourcen dar, die in die generierte Assembly eingebettet werden.  
@@ -107,8 +101,8 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ist ein Element ein 
 |LastGenOutput|Erforderliche Zeichenfolge. Der Name der Datei, die von einem die oft ausgegebene Befehlszeilen  Datei-Generator erstellt wurde, der über diesem Element ausgeführt wurde.|  
 |CustomToolNamespace|Erforderliche Zeichenfolge. Der Namespace, in dem ein beliebiger Datei-Generator, der über diesem Element ausgeführt wird, Code erstellen sollte.|  
 |Link|Optionale Zeichenfolge. Der Notationspfad wird angezeigt, wenn sich die Datei physisch außerhalb des Einflusses des Projekts befindet.|  
-|Visible|Optionaler boolescher Wert. Gibt an, ob die Datei im **Projektmappen-Explorer** in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] angezeigt wird.|  
-|CopyToOutputDirectory|Optionale Zeichenfolge. Bestimmt, ob die Datei in das Ausgabeverzeichnis kopiert werden soll. Gültige Werte:<br /><br /> 1.  Nie<br />2.  Immer<br />3.  PreserveNewest|  
+|Sichtbar|Optionaler boolescher Wert. Gibt an, ob die Datei im **Projektmappen-Explorer** in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] angezeigt wird.|  
+|CopyToOutputDirectory|Optionale Zeichenfolge. Bestimmt, ob die Datei in das Ausgabeverzeichnis kopiert werden soll. Gültige Werte:<br /><br /> 1.  Nie<br />2.  Always<br />3.  PreserveNewest|  
 |LogicalName|Erforderliche Zeichenfolge. Der logische Name der eingebetteten Ressource.|  
   
 ### <a name="content"></a>Inhalt  
@@ -123,10 +117,10 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ist ein Element ein 
 |Link|Optionaler boolescher Wert. Gibt an, ob die Datei im **Projektmappen-Explorer** in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] angezeigt wird.|  
 |PublishState|Erforderliche Zeichenfolge. Der Inhalt kann einen der folgenden Veröffentlichungszustände aufweisen:<br /><br /> –  Default (Standard)<br />–   Included (Enthalten)<br />–   Excluded (Ausgeschlossen)<br />–   DataFile<br />–   Prerequisite (Voraussetzung)|  
 |IsAssembly|Optionaler boolescher Wert. Gibt an, ob die Datei eine Assembly ist.|  
-|Visible|Optionaler boolescher Wert. Gibt an, ob die Datei im **Projektmappen-Explorer** in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] angezeigt wird.|  
-|CopyToOutputDirectory|Optionale Zeichenfolge. Bestimmt, ob die Datei in das Ausgabeverzeichnis kopiert werden soll. Gültige Werte:<br /><br /> 1.  Nie<br />2.  Immer<br />3.  PreserveNewest|  
+|Sichtbar|Optionaler boolescher Wert. Gibt an, ob die Datei im **Projektmappen-Explorer** in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] angezeigt wird.|  
+|CopyToOutputDirectory|Optionale Zeichenfolge. Bestimmt, ob die Datei in das Ausgabeverzeichnis kopiert werden soll. Gültige Werte:<br /><br /> 1.  Nie<br />2.  Always<br />3.  PreserveNewest|  
   
-### <a name="none"></a>Keine  
+### <a name="none"></a>Keiner  
  Stellt Dateien dar, die keine Rolle im Buildprozess haben sollen.  
   
 |Elementname|Beschreibung|  
@@ -136,8 +130,8 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ist ein Element ein 
 |LastGenOutput|Erforderliche Zeichenfolge. Der Name der Datei, die von einem die oft ausgegebene Befehlszeilen  Datei-Generator erstellt wurde, der über diesem Element ausgeführt wurde.|  
 |CustomToolNamespace|Erforderliche Zeichenfolge. Der Namespace, in dem ein beliebiger Datei-Generator, der über diesem Element ausgeführt wird, Code erstellen sollte.|  
 |Link|Optionale Zeichenfolge. Der anzuzeigende Notationspfad, wenn sich die Datei physisch außerhalb des Einflusses des Projekts befindet.|  
-|Visible|Optionaler boolescher Wert. Gibt an, ob die Datei im **Projektmappen-Explorer** in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] angezeigt wird.|  
-|CopyToOutputDirectory|Optionale Zeichenfolge. Bestimmt, ob die Datei in das Ausgabeverzeichnis kopiert werden soll. Gültige Werte:<br /><br /> 1.  Nie<br />2.  Immer<br />3.  PreserveNewest|  
+|Sichtbar|Optionaler boolescher Wert. Gibt an, ob die Datei im **Projektmappen-Explorer** in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] angezeigt wird.|  
+|CopyToOutputDirectory|Optionale Zeichenfolge. Bestimmt, ob die Datei in das Ausgabeverzeichnis kopiert werden soll. Gültige Werte:<br /><br /> 1.  Nie<br />2.  Always<br />3.  PreserveNewest|  
   
 ### <a name="baseapplicationmanifest"></a>BaseApplicationManifest  
  Stellt das Basisanwendungsmanifest für den Build dar und enthält Sicherheitsinformationen für die [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Bereitstellung.  
@@ -150,6 +144,3 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ist ein Element ein 
   
 ## <a name="see-also"></a>Siehe auch  
  [Gemeinsame MSBuild-Projekteigenschaften](../msbuild/common-msbuild-project-properties.md)
-
-
-

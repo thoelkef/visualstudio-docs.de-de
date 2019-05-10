@@ -1,23 +1,25 @@
 ---
 title: IDebugGenericFieldDefinition | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugGenericFieldDefinition interface
 ms.assetid: b5a853b7-221e-4d62-8948-07423089d75d
-author: gregvanl
+caps.latest.revision: 8
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: e4f81691f60619cd9442e86b155850cd29e2cbd5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: ea197cf5b6207117007c5d6d95b742e3a892223b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62919151"
 ---
 # <a name="idebuggenericfielddefinition"></a>IDebugGenericFieldDefinition
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Stellt die Definition eines Felds für einen generischen Typ von verwaltetem Code dar.  
   
 ## <a name="syntax"></a>Syntax  

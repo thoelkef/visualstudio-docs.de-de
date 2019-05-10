@@ -1,30 +1,33 @@
 ---
 title: 'Idiasymbol:: Get_lowerboundid | Microsoft-Dokumentation'
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_lowerBoundId method
 ms.assetid: 12ce98e9-a225-4947-88c9-5fda39dd67e4
-author: mikejo5000
+caps.latest.revision: 11
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: d0d47fad6015a39550eca8e6ea046f7ec9c6417f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: d0e84f50ce73fded7809478441e88649ff4f1d82
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833901"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399209"
 ---
 # <a name="idiasymbolgetlowerboundid"></a>IDiaSymbol::get_lowerBoundId
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Ruft den Symbol-Bezeichner, der die untere Grenze des eine FORTRAN Arraydimension ab.  
   
 ## <a name="syntax"></a>Syntax  
   
-```C++  
+```cpp#  
 HRESULT get_lowerBoundId (   
    DWORD* pRetVal  
 );  
@@ -38,7 +41,7 @@ HRESULT get_lowerBoundId ( 
  Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="remarks"></a>Hinweise  
  Der Bezeichner ist ein eindeutiger Wert erstellt, das DIA SDK alle Symbole als eindeutig kennzeichnen.  

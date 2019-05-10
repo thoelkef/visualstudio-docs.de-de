@@ -1,7 +1,6 @@
 ---
 title: Befehl "Überwachung"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - debug.watch
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: aa02e647-d9f5-4905-a651-52a8df595795
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccc9c6af2a87502c2b651e91f7d935ffc7ae3474
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a6965378151bb44db1024ac4e9a49de618f410dc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964480"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788999"
 ---
 # <a name="watch-command"></a>Befehl "Überwachung"
 Erstellt und öffnet eine angegebene Instanz des Fensters **Überwachen** . Sie können das Fenster **Überwachen** verwenden, um die Werte von Variablen, Ausdrücken und Registern zu berechnen, um diese Werte zu berechnen und die Ergebnisse zu speichern.
@@ -35,7 +34,7 @@ Debug.Watch[index]
 
  Erforderlich. Die Instanznummer des Fensters „Überwachen“.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Anmerkungen
  Der `index` muss eine ganze Zahl sein. Gültige Werte sind 1, 2, 3 oder 4.
 
 ## <a name="example"></a>Beispiel

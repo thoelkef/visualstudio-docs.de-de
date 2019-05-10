@@ -2,19 +2,18 @@
 title: 'Workflow-Designer – Vorgehensweise: Definieren und Verarbeiten von aktivitätsdelegaten'
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 95aede6217bca263be7edd7440cc5e9bb23e25ab
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: 25f844acefed50b5bb35e3b1d8c6a570e11ca194
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949517"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Vorgehensweise: Definieren und Verarbeiten von Aktivitätsdelegaten im Workflow-Designer
 
@@ -22,12 +21,10 @@ ms.locfileid: "53908461"
 
 ## <a name="define-an-activity-delegate"></a>Definieren eines Aktivitätsdelegaten
 
-1. Klicken Sie in Visual Studio auf **Datei** > **Neu** > **Projekt**.
-
-2. In der **neues Projekt** wählen Sie im Dialogfeld die **Workflow** Kategorie auf der linken Seite, und wählen Sie dann die **Konsolenanwendung für Workflows** Projektvorlage. Nennen Sie das Projekt (falls gewünscht), und klicken Sie auf **Ok**.
+1. Erstellen Sie ein neues **Konsolenanwendung für Workflows** Projekt.
 
    > [!NOTE]
-   > Wenn Sie nicht sehen die **Workflow** Kategorie, der ersten Installation der **Windows Workflow Foundation** Komponente von Visual Studio 2017. Ausführliche Anweisungen finden Sie unter [Installieren von Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
+   > Wenn Sie nicht sehen die **Workflow** -Projektvorlagen, installieren Sie zuerst die **Windows Workflow Foundation** Komponente von Visual Studio. Ausführliche Anweisungen finden Sie unter [Installieren von Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
 3. Mit der rechten Maustaste auf das Projekt im **Projektmappen-Explorer** , und wählen Sie **hinzufügen** > **neues Element**. Wählen Sie die **Workflow** Kategorie, und wählen Sie dann die **Aktivität** Elementvorlage. Nennen Sie die neue Aktivität **MyForEach.xaml** und wählen Sie dann **OK**.
 
@@ -73,19 +70,19 @@ ms.locfileid: "53908461"
 
 ## <a name="use-the-custom-activity-in-a-workflow"></a>Verwenden der benutzerdefinierten Aktivität in einem Workflow
 
-1.  Erstellen Sie das Projekt durch Drücken von **STRG**+**UMSCHALT**+**B**.
+1. Erstellen Sie das Projekt durch Drücken von **STRG**+**UMSCHALT**+**B**.
 
-2.  In **Projektmappen-Explorer**öffnen **"Workflow1.xaml"** im Designer.
+2. In **Projektmappen-Explorer**öffnen **"Workflow1.xaml"** im Designer.
 
-3.  Ziehen Sie eine **MyForEach** Aktivität aus der Toolbox auf die Designeroberfläche. Die Aktivität ist in einem Abschnitt der Toolbox mit dem gleichen Namen wie das Projekt.
+3. Ziehen Sie eine **MyForEach** Aktivität aus der Toolbox auf die Designeroberfläche. Die Aktivität ist in einem Abschnitt der Toolbox mit dem gleichen Namen wie das Projekt.
 
-4.  Legen Sie die **Elemente** Eigenschaft der **MyForEach** Aktivität **new Object [] {1, "Abc"}**.
+4. Legen Sie die **Elemente** Eigenschaft der **MyForEach** Aktivität **new Object [] {1, "Abc"}**.
 
-5.  Ziehen Sie eine <xref:System.Activities.Statements.WriteLine> Aktivität aus der **primitive** Abschnitt der Toolbox auf die **Delegate: Body** Teil der **MyForEach** Aktivität.
+5. Ziehen Sie eine <xref:System.Activities.Statements.WriteLine> Aktivität aus der **primitive** Abschnitt der Toolbox auf die **Delegate: Body** Teil der **MyForEach** Aktivität.
 
-6.  Legen Sie die **Text** Eigenschaft der <xref:System.Activities.Statements.WriteLine> Aktivität **Argument.ToString()**.
+6. Legen Sie die **Text** Eigenschaft der <xref:System.Activities.Statements.WriteLine> Aktivität **Argument.ToString()**.
 
 Wenn der Workflow ausgeführt wird, wird die Konsole die folgende Ausgabe:
 
 **1**
-**Abc**
+**abc**

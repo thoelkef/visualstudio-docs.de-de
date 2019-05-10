@@ -1,14 +1,9 @@
 ---
 title: Extrahovat Metodu Refactoring (c#) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.csharp.refactoring.extractmethod
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: eeba11df-a815-4bec-9c21-8a831891b783
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: cc05da79676beed5fa698f11843a6b7485280e71
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5a889250e641e004bdb0d89f6965c43c3d6b8e2a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228058"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041397"
 ---
 # <a name="extract-method-refactoring-c"></a>Umgestaltung "Methode extrahieren" (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,19 +32,19 @@ ms.locfileid: "49228058"
   
  **Methode extrahieren** hat die folgenden Vorteile:  
   
--   Ermutigt bewährten Programmiermethoden, indem diskret, wieder verwendbaren Methoden hervorgehoben.  
+- Ermutigt bewährten Programmiermethoden, indem diskret, wieder verwendbaren Methoden hervorgehoben.  
   
--   Ermutigt Dokumentieren von Code über die Struktur selbst.  
+- Ermutigt Dokumentieren von Code über die Struktur selbst.  
   
      Erfahren Sie mehr kann beschreibende Namen verwendet wird, allgemeine Methoden sind eine Reihe von Kommentaren wie.  
   
--   Ermöglicht die Erstellung von differenziertere Methoden zur Vereinfachung der überschreiben.  
+- Ermöglicht die Erstellung von differenziertere Methoden zur Vereinfachung der überschreiben.  
   
--   Reduziert die Duplizierung von Code.  
+- Reduziert die Duplizierung von Code.  
   
 ### <a name="to-use-extract-method"></a>Verwenden der Methode extrahieren  
   
-1.  Erstellen Sie eine Konsolenanwendung mit dem Namen `ExtractMethod`, und ersetzen Sie `Program` durch den folgenden Beispielcode.  
+1. Erstellen Sie eine Konsolenanwendung mit dem Namen `ExtractMethod`, und ersetzen Sie `Program` durch den folgenden Beispielcode.  
   
     ```csharp  
     class A  
@@ -73,13 +68,13 @@ ms.locfileid: "49228058"
     }  
     ```  
   
-2.  Wählen Sie das Codefragment, die, das Sie extrahieren möchten:  
+2. Wählen Sie das Codefragment, die, das Sie extrahieren möchten:  
   
     ```csharp  
     double area = PI * radius * radius;  
     ```  
   
-3.  Auf der **Umgestalten** Menü klicken Sie auf **Methode extrahieren**.  
+3. Auf der **Umgestalten** Menü klicken Sie auf **Methode extrahieren**.  
   
      Die **Methode extrahieren** Dialogfeld wird angezeigt.  
   
@@ -87,11 +82,11 @@ ms.locfileid: "49228058"
   
      Sie können auch mit der rechten Maustaste den ausgewählten code, zeigen Sie auf **Umgestalten**, und klicken Sie dann auf **Methode extrahieren** zum Anzeigen der **Methode extrahieren** Dialogfeld.  
   
-4.  Geben Sie einen Namen für die neue Methode, wie z. B. `CircleArea`in die **Neuer Methodenname** Feld.  
+4. Geben Sie einen Namen für die neue Methode, wie z. B. `CircleArea`in die **Neuer Methodenname** Feld.  
   
      Eine Vorschau auf die neue Methodensignatur zeigt unter **Vorschau der Methodensignatur**.  
   
-5.  Klicken Sie auf **OK**.  
+5. Klicken Sie auf **OK**.  
   
 ## <a name="remarks"></a>Hinweise  
  Bei Verwendung der **Methode extrahieren** können die neue Methode ist die Quelle Element in der gleichen Klasse eingefügt.  

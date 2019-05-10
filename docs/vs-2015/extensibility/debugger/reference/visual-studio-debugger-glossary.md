@@ -1,27 +1,22 @@
 ---
 title: Visual Studio-Debugger-Glossar | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - glossary [Debugging SDK]
 - debugging [Debugging SDK], glossary
 ms.assetid: 4a2cfaab-1fbd-4a23-bd00-9ac4cc50d7fd
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 37c0608b5684c9d16041ce89707dd81e665b0623
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 19d82f006bb1c37981f60e1a0b2710588eb0053c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757930"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58956010"
 ---
 # <a name="visual-studio-debugger-glossary"></a>Glossar zum Visual Studio-Debugger
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -73,7 +68,7 @@ Im folgenden sind die Begriffe in der [!INCLUDE[vsprvs](../../../includes/vsprvs
   
   Jedes Mal Code lädt, alle ausstehenden Haltepunkte in einem Programm werden überprüft, um festzustellen, ob sie binden können. Ein ausstehender Haltepunkt ist dann alle gebundenen Breakpoints enthalten, die gebunden wird.  
   
-  process  
+  Prozess  
   Ein physischer Win32-Prozess. Ein Prozess kann mehrere Programme enthalten. Siehe auch *Programm*.  
   
   Programm  
@@ -85,7 +80,7 @@ Im folgenden sind die Begriffe in der [!INCLUDE[vsprvs](../../../includes/vsprvs
   Stapelrahmen  
   Stellt den Status der Berechnung auf einem bestimmten Frame und Maß Aufrufe geschachtelter Funktionen dar.  
   
-  Thread  
+  thread  
   Das generalisierte Konzept der Anweisung stapelbasierten Ausführung auf mindestens ein Programm.  
   
   Haltepunkt mit Warnung  
@@ -93,4 +88,3 @@ Im folgenden sind die Begriffe in der [!INCLUDE[vsprvs](../../../includes/vsprvs
   
 ## <a name="see-also"></a>Siehe auch  
  [Visual Studio Debugger-Erweiterbarkeit](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)
-

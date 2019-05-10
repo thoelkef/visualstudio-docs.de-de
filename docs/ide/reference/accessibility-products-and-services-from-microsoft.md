@@ -2,7 +2,6 @@
 title: Produkte und Dienste von Microsoft für Barrierefreiheit
 description: Erfahren Sie mehr über die Produkte und Dienste von Microsoft, die dabei helfen können, den Zugriff auf unsere Betriebssysteme, Programme und Anwendungen für jeden zu verbessern, einschließlich für Personen mit Behinderungen.
 ms.date: 08/22/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - TTY/TDD services
@@ -17,35 +16,35 @@ helpviewer_keywords:
 ms.assetid: ef3c6247-9f59-4ef4-aa8b-a8922b3e0943
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e209e609caf073a7360bad3d0991a6fbd873989
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 81245640c8c73b77dc563c28f1d3d20168203029
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793083"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Produkte und Dienste von Microsoft für Barrierefreiheit
 
 > [!TIP]
-> Weitere Informationen zu aktuellen Barrierefreiheitupdates für Visual Studio finden Sie im Blogbeitrag [Accessibility improvements in Visual Studio 2017 version 15.3 (Verbesserungen der Barrierefreiheit in Visual Studio 2017 [Version 15.3])](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/).
+> Weitere Informationen zu aktuellen Barrierefreiheitupdates für Visual Studio finden Sie im Blogbeitrag [Accessibility improvements in Visual Studio 2017 version 15.3 (Verbesserungen der Barrierefreiheit in Visual Studio 2017 [Version 15.3])](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/).
 
 Microsoft hat es sich zur Aufgabe gemacht, die Handhabung der Produkte und Dienste für alle Benutzer möglichst einfach zu gestalten. Die folgenden Themen enthalten Informationen über die Funktionen, Produkte und Dienste, die Menschen mit Behinderungen die Verwendung von Microsoft Windows erleichtern:
 
--   [Barrierefreiheitsfeatures in Windows](../../ide/reference/accessibility-products-and-services-from-microsoft.md#windows)
+- [Barrierefreiheitsfeatures in Windows](../../ide/reference/accessibility-products-and-services-from-microsoft.md#windows)
 
--   [Dokumentation in alternativen Formaten](../../ide/reference/accessibility-products-and-services-from-microsoft.md#altfortmats)
+- [Dokumentation in alternativen Formaten](../../ide/reference/accessibility-products-and-services-from-microsoft.md#altfortmats)
 
--   [Kundensupport für Benutzer mit Beeinträchtigungen des Gehörs](../../ide/reference/accessibility-products-and-services-from-microsoft.md#hearing)
+- [Kundensupport für Benutzer mit Beeinträchtigungen des Gehörs](../../ide/reference/accessibility-products-and-services-from-microsoft.md#hearing)
 
--   [Weitere Informationen](../../ide/reference/accessibility-products-and-services-from-microsoft.md#moreinfo)
+- [Weitere Informationen](../../ide/reference/accessibility-products-and-services-from-microsoft.md#moreinfo)
 
 > [!NOTE]
 > Die Informationen in diesem Abschnitt gelten möglicherweise nur für Benutzer, die Microsoft-Produkte in den USA lizenziert haben. Wenn Sie dieses Produkt außerhalb der USA erworben haben, können Sie die im Softwarepaket enthaltene Informationskarte verwenden oder auf der [Microsoft-Website für Barrierefreiheit](http://go.microsoft.com/fwlink/?LinkId=8431) eine Liste mit Telefonnummern und Adressen des Microsoft-Produktsupports anzeigen. In Ihrer Niederlassung erhalten Sie Informationen darüber, welche der in diesem Abschnitt beschriebenen Produkte und Dienste in Ihrer Region verfügbar sind. Informationen über Barrierefreiheit sind auch in anderen Sprachen verfügbar, darunter Japanisch und Französisch.
 
-##  <a name="windows"></a> Barrierefreiheitsfeatures in Windows
+## <a name="windows"></a> Barrierefreiheitsfeatures in Windows
 
  Das Windows-Betriebssystem verfügt über zahlreiche integrierte Barrierefreiheitsfeatures für Benutzer, die Schwierigkeiten mit der Tastatureingabe oder der Bedienung der Maus haben oder sehbehindert oder blind bzw. taub oder schwerhörig sind. Die Barrierefreiheitfunktionen können während der Ausführung des Setupprogramms installiert werden. Weitere Informationen zu diesen Funktionen finden Sie in der Windows-Hilfe und auf der [Microsoft-Website für Barrierefreiheit](http://go.microsoft.com/fwlink/?LinkId=8431).
 
@@ -61,7 +60,7 @@ Microsoft hat es sich zur Aufgabe gemacht, die Handhabung der Produkte und Diens
 
  Wenn Sie Hilfstechnologien verwenden, informieren Sie sich bei Ihrem Hilfstechnologieanbieter über mögliche Kompatibilitätsprobleme, bevor Sie Ihre Software oder Hardware aktualisieren.
 
-##  <a name="altfortmats"></a> Dokumentation in alternativen Formaten
+## <a name="altfortmats"></a> Dokumentation in alternativen Formaten
 
 Wenn Ihnen gedruckte Materialien Probleme bereiten, können Sie die Dokumentation für viele Microsoft-Produkte in Formaten erhalten, die einfacher zu handhaben sind. Sie können einen Index der barrierefreien Produktdokumentationen auf der [Microsoft-Website für Barrierefreiheit anzeigen](http://go.microsoft.com/fwlink/?LinkId=8431).
 
@@ -73,7 +72,7 @@ Darüber hinaus erhalten Sie weitere Microsoft-Veröffentlichungen von Learning 
 
 Da sich Webadressen ändern können, kann es passieren, dass eine Verbindung zu den hier genannten Websites nicht möglich ist.
 
-##  <a name="hearing"></a> Kundensupport für Benutzer mit Beeinträchtigungen des Gehörs
+## <a name="hearing"></a> Kundensupport für Benutzer mit Beeinträchtigungen des Gehörs
 
 Wenn Sie taub oder schwerhörig sind, können Sie über den Texttelefondienst (TTY/TDD) auf alle Produkt- und Kundensupportdienste von Microsoft zugreifen:
 
@@ -83,7 +82,7 @@ Wenn Sie taub oder schwerhörig sind, können Sie über den Texttelefondienst (T
 
 Der Microsoft-Produktsupport unterliegt den jeweils aktuellen Preisen und allgemeinen Bedingungen.
 
-##  <a name="moreinfo"></a> Weitere Informationen
+## <a name="moreinfo"></a> Weitere Informationen
 
 Weitere Informationen dazu, wie barrierefreie Computertechnologien dazu beitragen, Menschen mit Behinderungen zu unterstützen, finden Sie auf der [Microsoft-Website für Barrierefreiheit](http://go.microsoft.com/fwlink/?LinkId=8431).
 

@@ -1,14 +1,9 @@
 ---
 title: Verwenden gespeicherter IntelliTrace-Daten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.norepro
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: 9f2cce86-345a-4e22-84ba-91542d81e67a
 caps.latest.revision: 112
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f10878e9717ca90725455d5c66f6f9a015040dc1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 549c4f5225773a7d9ac40c16a9db6ca9309c7d6f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51723591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437778"
 ---
 # <a name="using-saved-intellitrace-data"></a>Verwenden gespeicherter IntelliTrace-Daten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +30,11 @@ Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie 
   
  Stellen Sie sicher, dass Sie über Folgendes verfügen:  
   
--   Quelldateien und Symboldateien (PDB-Dateien) für Ihren Anwendungscode abgleichen. Andernfalls kann Visual Studio die Quellspeicherorte nicht auflösen und zeigt eine Meldung an, die darauf hinweist, dass die Symbole nicht gefunden wurden. Finden Sie unter [angeben von Symbol (.pdb) und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) und [Diagnostizieren von Problemen nach der Bereitstellung](../debugger/diagnose-problems-after-deployment.md).  
+- Quelldateien und Symboldateien (PDB-Dateien) für Ihren Anwendungscode abgleichen. Andernfalls kann Visual Studio die Quellspeicherorte nicht auflösen und zeigt eine Meldung an, die darauf hinweist, dass die Symbole nicht gefunden wurden. Finden Sie unter [angeben von Symbol (.pdb) und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) und [Diagnostizieren von Problemen nach der Bereitstellung](../debugger/diagnose-problems-after-deployment.md).  
   
--   Visual Studio Enterprise (nicht Professional oder Community Editions) auf Ihrem Entwicklungscomputer oder einem anderen Computer zum Öffnen von ITRACE-Dateien  
+- Visual Studio Enterprise (nicht Professional oder Community Editions) auf Ihrem Entwicklungscomputer oder einem anderen Computer zum Öffnen von ITRACE-Dateien  
   
--   Eine ITRACE-Datei aus einer der folgenden Quellen:  
+- Eine ITRACE-Datei aus einer der folgenden Quellen:  
   
     |**Quelle**|**Weitere Informationen finden Sie unter**|  
     |----------------|-------------|  
@@ -47,33 +42,33 @@ Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie 
     |Eine Testsitzung in Microsoft Test Manager. Dadurch wird einem Team Foundation Server-Arbeitselement eine ITRACE-Datei angefügt.|[Sammeln weiterer Diagnosedaten in manuellen Tests](http://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
     |Microsoft Monitoring Agent, entweder allein oder mit System Center 2012 R2 Operations Manager für ASP.NET-Webanwendungen und SharePoint-Anwendungen, bei der Bereitstellung ausgeführt|-   [Diagnostizieren von Problemen nach der Bereitstellung](../debugger/diagnose-problems-after-deployment.md)<br />-   [What's New for System Center 2012 R2 Operations Manager](http://technet.microsoft.com/library/dn249700.aspx)|  
   
-##  <a name="GetStarted"></a> Wie möchten Sie vorgehen?  
+## <a name="GetStarted"></a> Wie möchten Sie vorgehen?  
   
--   [Öffnen eines IntelliTrace-Protokolls](#Open)  
+- [Öffnen eines IntelliTrace-Protokolls](#Open)  
   
--   [Verstehen des IntelliTrace-Protokolls](#Understand)  
+- [Verstehen des IntelliTrace-Protokolls](#Understand)  
   
--   [Starten des Debuggen von einem IntelliTrace-Protokoll aus](#StartDebugging)  
+- [Starten des Debuggen von einem IntelliTrace-Protokoll aus](#StartDebugging)  
   
-##  <a name="Open"></a> Öffnen eines IntelliTrace-Protokolls  
+## <a name="Open"></a> Öffnen eines IntelliTrace-Protokolls  
  Öffnen Sie die ITRACE-Datei auf einen Computer mit Visual Studio Enterprise.  
   
--   Doppelklicken Sie außerhalb von Visual Studio auf die ITRACE-Datei, oder öffnen Sie die Datei aus Visual Studio heraus.  
+- Doppelklicken Sie außerhalb von Visual Studio auf die ITRACE-Datei, oder öffnen Sie die Datei aus Visual Studio heraus.  
   
      \- oder –  
   
--   Wenn die ITRACE-Datei einem Team Foundation Server-Arbeitselement angefügt ist, führen Sie folgende Schritte im Arbeitselement durch:  
+- Wenn die ITRACE-Datei einem Team Foundation Server-Arbeitselement angefügt ist, führen Sie folgende Schritte im Arbeitselement durch:  
   
-    -   Suchen Sie in **Alle Links**die ITRACE-Datei. Öffnen Sie sie.  
+    - Suchen Sie in **Alle Links**die ITRACE-Datei. Öffnen Sie sie.  
   
          \- oder –  
   
-    -   Wählen Sie unter **Reproduktionsschritte**den Link **IntelliTrace** aus.  
+    - Wählen Sie unter **Reproduktionsschritte**den Link **IntelliTrace** aus.  
   
 > [!TIP]
->  Wenn Sie die IntelliTrace-Datei während des Debuggens geschlossen haben, können Sie sie einfach erneut öffnen. Wechseln Sie zum Menü **Debuggen** , wählen Sie die Option **IntelliTrace**, **Protokollzusammenfassung anzeigen**aus. Sie können **Protokollzusammenfassung anzeigen** auch im Fenster **IntelliTrace** auswählen. Dieser Befehl ist nur beim Debuggen mit IntelliTrace verfügbar.  
+> Wenn Sie die IntelliTrace-Datei während des Debuggens geschlossen haben, können Sie sie einfach erneut öffnen. Wechseln Sie zum Menü **Debuggen** , wählen Sie die Option **IntelliTrace**, **Protokollzusammenfassung anzeigen**aus. Sie können **Protokollzusammenfassung anzeigen** auch im Fenster **IntelliTrace** auswählen. Dieser Befehl ist nur beim Debuggen mit IntelliTrace verfügbar.  
   
-##  <a name="Understand"></a> Verstehen des IntelliTrace-Protokolls  
+## <a name="Understand"></a> Verstehen des IntelliTrace-Protokolls  
  Einige der folgenden Abschnitte in der ITRACE-Datei werden nur angezeigt, wenn Sie Daten von einer bestimmten Quelle, beispielsweise Test Manager oder SharePoint-Anwendungen, gesammelt wurden.  
   
 |**Bereich**|**Enthält**|**Sammelquelle**|  
@@ -88,61 +83,61 @@ Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie 
   
  Im Folgenden einige Tipps, mit deren Hilfe Sie Informationen in einem der Abschnitte finden können:  
   
--   Wählen Sie einen Spaltenheader zum Sortieren der Daten aus.  
+- Wählen Sie einen Spaltenheader zum Sortieren der Daten aus.  
   
--   Verwenden Sie das Suchfeld zum Filtern der Daten. Nur-Text-Suche funktioniert bei allen Spalten mit Ausnahme der Zeitspalten. Sie können auch Suchen in einer bestimmten Spalte filtern, mit einem Filter pro Spalte. Geben Sie den Spaltennamen ohne Leerzeichen ein, mit einem Doppelpunkt (**:**) und dem Suchwert. Setzen Sie danach ein Semikolon (**;**), um eine weitere Spalte und einen weiteren Suchwert hinzuzufügen.  
+- Verwenden Sie das Suchfeld zum Filtern der Daten. Nur-Text-Suche funktioniert bei allen Spalten mit Ausnahme der Zeitspalten. Sie können auch Suchen in einer bestimmten Spalte filtern, mit einem Filter pro Spalte. Geben Sie den Spaltennamen ohne Leerzeichen ein, mit einem Doppelpunkt (**:**) und dem Suchwert. Setzen Sie danach ein Semikolon (**;**), um eine weitere Spalte und einen weiteren Suchwert hinzuzufügen.  
   
      Um beispielsweise Leistungsereignisse zu suchen, die das Wort "langsam" in der Spalte **Beschreibung** haben, geben Sie ein:  
   
      `Description:slow`  
   
-##  <a name="StartDebugging"></a> Starten des Debuggen von einem IntelliTrace-Protokoll aus  
+## <a name="StartDebugging"></a> Starten des Debuggen von einem IntelliTrace-Protokoll aus  
   
-###  <a name="Performance"></a> Leistungsverletzungen  
+### <a name="Performance"></a> Leistungsverletzungen  
  Überprüfen Sie die Leistungsereignisse, die für Ihre App aufgezeichnet wurden. Sie können diese Ereignisse ausblenden, die nicht häufig vorkommen.  
   
 ##### <a name="to-start-debugging-from-a-performance-event"></a>So starten Sie das Debuggen von einem Leistungsereignis aus  
   
-1.  Unter **Leistungsverletzungen**überprüfen Sie die aufgezeichneten Leistungsereignisse, ihre Gesamtausführungszeiten und andere Ereignisinformationen. Sehen Sie sich anschließend die Details der Methoden näher an, die während eines bestimmten Leistungsereignisses aufgerufen wurden.  
+1. Unter **Leistungsverletzungen**überprüfen Sie die aufgezeichneten Leistungsereignisse, ihre Gesamtausführungszeiten und andere Ereignisinformationen. Sehen Sie sich anschließend die Details der Methoden näher an, die während eines bestimmten Leistungsereignisses aufgerufen wurden.  
   
-     ![Informationen zum Leistungsereignis anzeigen](../debugger/media/ffr-itsummarypageperformance.png "FFR_ITSummaryPagePerformance")  
+     ![Anzeigen von Leistungsereignisdetails](../debugger/media/ffr-itsummarypageperformance.png "FFR_ITSummaryPagePerformance")  
   
      Sie können auch einfach auf das Ereignis doppelklicken.  
   
-2.  Überprüfen Sie auf der Ereignisseite die Ausführungszeiten für diese Aufrufe. Suchen Sie einen langsamen Aufruf in der Ausführungsstruktur.  
+2. Überprüfen Sie auf der Ereignisseite die Ausführungszeiten für diese Aufrufe. Suchen Sie einen langsamen Aufruf in der Ausführungsstruktur.  
   
      Die langsamsten Aufrufe werden in einem eigenen Bereich angezeigt, wenn Sie mehrere, geschachtelte oder andere Aufrufe haben.  
   
-3.  Erweitern Sie diesen Aufruf, um alle geschachtelten Aufrufe und Parameterwerte zu überprüfen, die zu diesem Zeitpunkt aufgezeichnet wurden.  
+3. Erweitern Sie diesen Aufruf, um alle geschachtelten Aufrufe und Parameterwerte zu überprüfen, die zu diesem Zeitpunkt aufgezeichnet wurden.  
   
-     (Tastatur: Um einen geschachtelten Aufruf anzuzeigen oder auszublenden, drücken Sie die **NACH-RECHTS-TASTE** , bzw. die **NACH-LINKS-TASTE** . Um Parameterwerte für einen geschachtelten Aufruf anzuzeigen und auszublenden, drücken Sie die **LEERTASTE** .)  
+     (Tastatur: Um anzuzeigen, oder einen geschachtelten Aufruf auszublenden, drücken Sie die **Pfeil nach rechts** oder **nach-links** bzw. Schlüssel. Um Parameterwerte für einen geschachtelten Aufruf anzuzeigen und auszublenden, drücken Sie die **LEERTASTE** .)  
   
      Starten Sie das Debuggen über diesen Aufruf.  
   
-     ![Starten Sie das Debuggen über Methodenaufruf](../debugger/media/ffr-itsummarypageperformancemethodscalled.png "FFR_ITSummaryPagePerformanceMethodsCalled")  
+     ![Starten des Debuggens über einen Methodenaufruf](../debugger/media/ffr-itsummarypageperformancemethodscalled.png "FFR_ITSummaryPagePerformanceMethodsCalled")  
   
      Sie können auch einfach auf den Aufruf doppelklicken oder die **EINGABETASTE** drücken.  
   
      Wenn die Methode in Ihrem Anwendungscode enthalten ist, wechselt Visual Studio zu dieser Methode.  
   
-     ![Wechseln Sie zum Anwendungscode von Leistungsereignissen](../debugger/media/ffr-itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
+     ![Wechseln zum Anwendungscode vom Leistungsereignis](../debugger/media/ffr-itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
   
      Jetzt können Sie andere aufgezeichnete Werte und die Aufrufliste überprüfen, den Code schrittweise durchlaufen oder das Fenster **IntelliTrace** verwenden, um [sich zwischen anderen Methoden zeitlich rückwärts oder vorwärts zu bewegen](../debugger/intellitrace.md) , die während dieses Leistungsereignisses aufgerufen wurden.  
   
-###  <a name="ExceptionData"></a> Ausnahmedaten  
+### <a name="ExceptionData"></a> Ausnahmedaten  
  Überprüfen Sie die Ausnahmen, die für die Anwendung ausgelöst und aufgezeichnet wurden. Sie können Ausnahmen gruppieren, die denselben Typ und dieselbe Aufrufliste haben, damit nur die letzte Ausnahme angezeigt wird.  
   
 ##### <a name="to-start-debugging-from-an-exception"></a>So starten Sie das Debuggen aus einer Ausnahme heraus  
   
-1.  Überprüfen Sie unter **Ausnahmedaten**die aufgezeichneten Ausnahmeereignisse, deren Typen und Meldungen und wann die Ausnahmen aufgetreten sind. Um tiefer in den Code zu vorzudringen, starten Sie das Debuggen des letzten Ereignisses in einer Gruppe von Ausnahmen.  
+1. Überprüfen Sie unter **Ausnahmedaten**die aufgezeichneten Ausnahmeereignisse, deren Typen und Meldungen und wann die Ausnahmen aufgetreten sind. Um tiefer in den Code zu vorzudringen, starten Sie das Debuggen des letzten Ereignisses in einer Gruppe von Ausnahmen.  
   
-     ![Starten Sie das Debuggen von einem Ausnahmeereignis aus](../debugger/media/ffr-itsummarypageexception.png "FFR_ITSummaryPageException")  
+     ![Starten des Debuggens von einem Ausnahmeereignis aus](../debugger/media/ffr-itsummarypageexception.png "FFR_ITSummaryPageException")  
   
      Sie können auch einfach auf das Ereignis doppelklicken. Wenn die Ereignisse nicht gruppiert werden, wählen Sie **Dieses Ereignis debuggen**aus.  
   
      Wenn die Ausnahme im Anwendungscode aufgetreten ist, wechselt Visual Studio zu der Stelle, an der die Ausnahme aufgetreten ist.  
   
-     ![Wechseln Sie zum Anwendungscode von einem Ausnahmeereignis aus](../debugger/media/ffr-itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")  
+     ![Wechseln zum Anwendungscode von einem Leistungsereignis aus](../debugger/media/ffr-itsummarypageexceptiongotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
   
      Jetzt können Sie andere aufgezeichnete Werte und die Aufrufliste überprüfen oder das Fenster **IntelliTrace** verwenden, um [sich zwischen anderen aufgezeichneten Ereignissen](../debugger/intellitrace.md), zugehörigem Code und den Werten zu bewegen, die zu diesen Zeitpunkten erfasst wurden.  
   
@@ -155,12 +150,12 @@ Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie 
     |**Neueste Ereigniszeit** oder **Ereigniszeit**|Der beim Auslösen der Ausnahme aufgezeichnete Zeitstempel|  
     |**Aufrufliste**|Aufrufliste für eine Ausnahme.<br /><br /> Wählen Sie zum Anzeigen der Aufrufliste eine Ausnahme in der Liste aus. Die Aufrufliste wird unter der Ausnahmeliste angezeigt.|  
   
-###  <a name="Analysis"></a> Analyse  
+### <a name="Analysis"></a> Analyse  
  Diagnostizieren Sie Probleme mit SharePoint 2010- und SharePoint 2013-Anwendungen, indem Sie eine SharePoint-Korrelations-ID verwenden, oder überprüfen Sie alle Ausnahmefehler, die Microsoft Monitoring Agent gefunden hat.  
   
--   Verwenden einer SharePoint-Korrelations-ID, um die entsprechende Webanforderung und Ereignisse zu suchen Wählen Sie ein Ereignis aus, und beginnen Sie dann an dem Punkt mit dem Debuggen, an dem das Ereignis aufgetreten ist.  
+- Verwenden einer SharePoint-Korrelations-ID, um die entsprechende Webanforderung und Ereignisse zu suchen Wählen Sie ein Ereignis aus, und beginnen Sie dann an dem Punkt mit dem Debuggen, an dem das Ereignis aufgetreten ist.  
   
--   Wenn Microsoft Monitoring Agent Ausnahmefehler gefunden hat, können Sie eine Ausnahme auswählen und dann an dem Punkt mit dem Debuggen beginnen, an dem die Ausnahme aufgetreten ist.  
+- Wenn Microsoft Monitoring Agent Ausnahmefehler gefunden hat, können Sie eine Ausnahme auswählen und dann an dem Punkt mit dem Debuggen beginnen, an dem die Ausnahme aufgetreten ist.  
   
 ##### <a name="start-debugging-with-a-sharepoint-correlation-id"></a>Das Debuggen mit einer SharePoint-Korrelations-ID starten  
   
@@ -184,11 +179,11 @@ Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie 
   
    Sie können diese Art von SharePoint-Ereignissen zusammen mit IntelliTrace-Ereignissen anzeigen:  
   
--   **Benutzerprofilereignisse**  
+- **Benutzerprofilereignisse**  
   
      Diese Ereignisse treten auf, wenn SharePoint ein Benutzerprofil lädt und wenn Benutzerprofileigenschaften gelesen oder geändert werden.  
   
--   **Einheitliche Ereignisse des Protokollierungs-Systems (ULS)**  
+- **Einheitliche Ereignisse des Protokollierungs-Systems (ULS)**  
   
      Microsoft Monitoring Agent zeichnet eine Teilmenge von SharePoint ULS-Ereignissen und diese Felder auf:  
   
@@ -212,9 +207,9 @@ Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie 
   
     ![IntelliTrace-Protokoll &#45; SharePoint nicht behandelte Ausnahmen](../debugger/media/sharepointunhandledexceptions-intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
   
-   Eine exemplarische Vorgehensweise finden Sie unter [Exemplarische Vorgehensweise: Debuggen einer SharePoint-Anwendung durch Verwenden von IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4). Für die Arten von Daten, die vom Agent aufgezeichnet werden, finden Sie unter [IntelliTrace-Funktionen](../debugger/intellitrace-features.md).  
+   Eine exemplarische Vorgehensweise finden Sie unter [Exemplarische Vorgehensweise: Debuggen einer SharePoint-Anwendung mithilfe von IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4). Für die Arten von Daten, die vom Agent aufgezeichnet werden, finden Sie unter [IntelliTrace-Funktionen](../debugger/intellitrace-features.md).  
   
-###  <a name="ThreadsList"></a> Threadliste  
+### <a name="ThreadsList"></a> Threadliste  
  Untersuchen Sie die aufgezeichneten Threads, die im Zielprozess ausgeführt wurden. Sie können das Debuggen vom ersten gültigen IntelliTrace-Ereignis in einem ausgewählten Thread starten.  
   
 ##### <a name="to-start-debugging-from-a-specific-thread"></a>So starten Sie das Debuggen über einen bestimmten Thread  
@@ -230,18 +225,18 @@ Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie 
 |**Spalte**|**Enthält Folgendes**|  
 |----------------|-------------------|  
 |**ID**|Thread-ID-Nummer|  
-|**Name**|Threadname. Unbenannte Threads werden als "\<kein Name >".|  
+|**Name**|Threadname. Unbenannte Threads werden als „\<Kein Name>“ angezeigt.|  
 |**Startzeit**|Zeitpunkt der Threaderstellung.|  
 |**Endzeit**|Zeitpunkt des Threadabschlusses|  
   
-###  <a name="TestData"></a> Testdaten  
+### <a name="TestData"></a> Testdaten  
  Überprüfen Sie die von Test Manager aufgezeichneten IntelliTrace-Daten, während Sie Ihre App testen.  
   
 ##### <a name="to-start-debugging-from-a-specific-test-step"></a>So starten Sie das Debuggen über einen bestimmten Testschritt  
   
-1.  Erweitern Sie **Testschritte-Raster**. Wählen Sie einen Testschritt aus.  
+1. Erweitern Sie **Testschritte-Raster**. Wählen Sie einen Testschritt aus.  
   
-2.  Wählen Sie am unteren Rand von **Testschritte-Raster**die Option **Debuggen starten**aus. Sie können auch auf einen Testschritt doppelklicken.  
+2. Wählen Sie am unteren Rand von **Testschritte-Raster**die Option **Debuggen starten**aus. Sie können auch auf einen Testschritt doppelklicken.  
   
      Hierdurch wird das Debuggen über das erste gültige IntelliTrace-Ereignis nach dem ausgewählten Testschritt gestartet.  
   
@@ -253,17 +248,17 @@ Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie 
 |**Testfall**|Testfälle aus der ausgewählten Testsitzung. Diese Liste ist leer, wenn Testdaten mithilfe eines manuellen explorativen Tests erstellt wurden.|  
 |**Testschritte-Raster**|Testschritte, die mit dem Testergebnis "Erfolgreich" oder "Fehler" aufgezeichnet wurden|  
   
-###  <a name="SystemInfo"></a> Systeminfo  
+### <a name="SystemInfo"></a> Systeminfo  
  Dieser Abschnitt zeigt Informationen über das System, das die Anwendung gehostet hat, wie z. B. Hardware, Betriebssystem, umgebungsbedingte und prozessspezifische Informationen.  
   
-###  <a name="Modules"></a> Module  
+### <a name="Modules"></a> Module  
  In diesem Abschnitt werden die Module angezeigt, die vom Zielprozess geladen wurden. Module werden in der Reihenfolge angezeigt, in der sie geladen wurden.  
   
 |**Spalte**|**Enthält Folgendes**|  
 |----------------|-------------------|  
 |**Modulname**|Moduldateiname|  
 |**Modulpfad**|Speicherort auf einem Datenträger, in dem das Modul geladen wurde|  
-|**Modul-ID**|Eindeutiger Bezeichner des Moduls, der versionsspezifisch ist und zu den übereinstimmenden Symboldateien (PDB) beiträgt. Siehe [Finding symbol (.pdb) files and source files](http://msdn.microsoft.com/en-us/05384c85-d264-4e18-abaa-aa482ab25470).|  
+|**Modul-ID**|Eindeutiger Bezeichner des Moduls, der versionsspezifisch ist und zu den übereinstimmenden Symboldateien (PDB) beiträgt. Siehe [Finding symbol (.pdb) files and source files](http://msdn.microsoft.com/05384c85-d264-4e18-abaa-aa482ab25470).|  
   
 ### <a name="where-can-i-get-more-information"></a>Wo kann ich weitere Informationen abrufen?  
  [Verwenden des eigenständigen IntelliTrace-Collectors](../debugger/using-the-intellitrace-stand-alone-collector.md)  
@@ -279,10 +274,3 @@ Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie 
   
 #### <a name="guidance"></a>Empfehlungen  
  [Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 6: Ein Testwerkzeugkasten](http://go.microsoft.com/fwlink/?LinkID=255203)
-
-
-
-
-
-
-

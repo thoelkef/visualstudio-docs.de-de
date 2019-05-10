@@ -2,19 +2,17 @@
 title: Suchen und Filtern | Microsoft-Dokumentation
 author: evanwindom
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.date: 06/27/2018
 ms.topic: conceptual
 description: Erfahren Sie, wie Administratoren einzelne Abonnenten oder Gruppen im Administratorportal suchen können.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2caf95d4b24fd686a885a122657b2dc040b80cdf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fe77781c67e773086f07ac39130c472f28acd71f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883392"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008162"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Suchen und Filtern von Abonnenten in Visual Studio-Abonnements
 

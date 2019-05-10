@@ -1,24 +1,26 @@
 ---
 title: Bereitstellen von Automatisierung für VSPackages | Microsoft-Dokumentation
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, automation [Visual Studio SDK]
 - automation [Visual Studio SDK], VSPackages
 ms.assetid: 104c4c55-78b8-42f4-b6b0-9a334101aaea
-author: gregvanl
+caps.latest.revision: 16
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: fad1d3145a50238dbc2b00cc450a5065bd5e0a04
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 1b72e1493e8ab00f3aa98f3a9bd8e1e1dd30201e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926856"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909076"
 ---
 # <a name="providing-automation-for-vspackages"></a>Bereitstellen von Automatisierung für VSPackages
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Es gibt zwei Hauptmethoden zum Bereitstellen von Automatisierung für VSPackages, die Ihre: durch Implementieren der VSPackage-Objekten und Implementieren von Automation standard-Objekten. Diese werden in der Regel zusammen verwendet, zum Erweitern des Automatisierungsmodells der Umgebung.  
   
 ## <a name="vspackage-specific-objects"></a>VSPackage-Objekten  

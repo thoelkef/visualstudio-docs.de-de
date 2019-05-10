@@ -11,16 +11,15 @@ helpviewer_keywords:
 ms.assetid: b1488366-6dfb-454e-9751-f42fd3f3ddfb
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9f1390e0d2d69bb46ffad6f1ac426eabd43aeea2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 6c3d9394eef00ef315d6a0c6afc35e0af5dd7854
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824924"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567485"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Erstellen eines Windows Forms-Benutzersteuerelements, das die einfache Datenbindung unterstützt
 
@@ -40,27 +39,27 @@ In dieser exemplarischen Vorgehensweise wird ein einfaches Steuerelement erstell
 
 Bei dieser exemplarischen Vorgehensweise lernen Sie Folgendes:
 
--   Erstellen Sie eine neue **Windows Forms-Anwendung**.
+- Erstellen Sie eine neue **Windows Forms-Anwendung**.
 
--   Ihrem Projekt ein neues **Benutzersteuerelement** hinzufügen.
+- Ihrem Projekt ein neues **Benutzersteuerelement** hinzufügen.
 
--   Entwerfen des Benutzersteuerelements im visuellen Designer.
+- Entwerfen des Benutzersteuerelements im visuellen Designer.
 
--   Implementieren des `DefaultBindingProperty`-Attributs.
+- Implementieren des `DefaultBindingProperty`-Attributs.
 
--   Erstellen eines Datasets mit dem **Datenquellenkonfiguration** Assistenten.
+- Erstellen eines Datasets mit dem **Datenquellenkonfiguration** Assistenten.
 
--   Legen Sie für die Spalte **Phone** im **Datenquellenfenster** fest, dass das neue Steuerelement verwendet wird.
+- Legen Sie für die Spalte **Phone** im **Datenquellenfenster** fest, dass das neue Steuerelement verwendet wird.
 
--   Erstellen eines Formulars, um Daten in dem neuen Steuerelement anzuzeigen.
+- Erstellen eines Formulars, um Daten in dem neuen Steuerelement anzuzeigen.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Vorraussetzungen
 
 In dieser exemplarischen Vorgehensweise verwendet SQL Server Express LocalDB und der Beispieldatenbank Northwind.
 
-1.  Wenn Sie SQL Server Express LocalDB nicht haben, installieren Sie es entweder über die [Downloadseite für SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), oder über die **Visual Studio-Installer**. In der **Visual Studio-Installer**, können Sie SQL Server Express LocalDB installieren, als Teil der **datenspeicherung und-Verarbeitung** Workload oder als eine einzelne Komponente.
+1. Wenn Sie SQL Server Express LocalDB nicht haben, installieren Sie es entweder über die [Downloadseite für SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), oder über die **Visual Studio-Installer**. In der **Visual Studio-Installer**, können Sie SQL Server Express LocalDB installieren, als Teil der **datenspeicherung und-Verarbeitung** Workload oder als eine einzelne Komponente.
 
-2.  Installieren der Northwind-Beispieldatenbank mit folgenden Schritten:
+2. Installieren der Northwind-Beispieldatenbank mit folgenden Schritten:
 
     1. Öffnen Sie in Visual Studio die **Objekt-Explorer von SQL Server** Fenster. (Objekt-Explorer von SQL Server installiert ist, als Teil der **datenspeicherung und-Verarbeitung** arbeitsauslastung in der **Visual Studio-Installer**.) Erweitern Sie die **SQL Server** Knoten. Mit der rechten Maustaste auf der LocalDB-Instanz, und wählen Sie **neue Abfrage**.
 
@@ -78,7 +77,7 @@ Der erste Schritt ist die Erstellung einer **Windows Forms-Anwendung**:
 
 1. In Visual Studio auf die **Datei** , wählen Sie im Menü **neu** > **Projekt**.
 
-2. Erweitern Sie entweder **Visual C#**  oder **Visual Basic** wählen Sie im linken Bereich **Windows Desktop**.
+2. Erweitern Sie entweder **Visual C#-** oder **Visual Basic** wählen Sie im linken Bereich **Windows Desktop**.
 
 3. Wählen Sie im mittleren Bereich die **Windows Forms-App** Projekttyp.
 
@@ -90,9 +89,9 @@ Der erste Schritt ist die Erstellung einer **Windows Forms-Anwendung**:
 
 In dieser exemplarischen Vorgehensweise erstellt ein einfaches, datenbindbares Steuerelement aus einem **Benutzersteuerelement**. Hinzufügen einer **Benutzersteuerelement** Element für die **SimpleControlWalkthrough** Projekt:
 
-1.  Klicken Sie im Menü **Projekt** auf **Benutzersteuerelement hinzufügen**.
+1. Klicken Sie im Menü **Projekt** auf **Benutzersteuerelement hinzufügen**.
 
-2.  Geben Sie **PhoneNumberBox** in den Bereich Name ein, und klicken Sie anschließend auf **Hinzufügen**.
+2. Geben Sie **PhoneNumberBox** in den Bereich Name ein, und klicken Sie anschließend auf **Hinzufügen**.
 
      Das **PhoneNumberBox**-Steuerelement wird dem **Projektmappen-Explorer** hinzugefügt und im Designer geöffnet.
 
@@ -100,48 +99,48 @@ In dieser exemplarischen Vorgehensweise erstellt ein einfaches, datenbindbares S
 
 Diese exemplarische Vorgehensweise baut auf den vorhandenen <xref:System.Windows.Forms.MaskedTextBox> zum Erstellen der **PhoneNumberBox** Steuerelement:
 
-1.  Ziehen Sie ein <xref:System.Windows.Forms.MaskedTextBox> aus der **Toolbox** auf die Entwurfsoberfläche des Benutzersteuerelements.
+1. Ziehen Sie ein <xref:System.Windows.Forms.MaskedTextBox> aus der **Toolbox** auf die Entwurfsoberfläche des Benutzersteuerelements.
 
-2.  Klicken Sie auf das Smarttag auf das soeben gezogene <xref:System.Windows.Forms.MaskedTextBox>-Objekt, und klicken Sie dann auf **Maske festlegen**.
+2. Klicken Sie auf das Smarttag auf das soeben gezogene <xref:System.Windows.Forms.MaskedTextBox>-Objekt, und klicken Sie dann auf **Maske festlegen**.
 
-3.  Wählen Sie **Telefonnummer** im Dialogfeld **Eingabeformat** aus, und klicken Sie auf **OK**, um die Maske festzulegen.
+3. Wählen Sie **Telefonnummer** im Dialogfeld **Eingabeformat** aus, und klicken Sie auf **OK**, um die Maske festzulegen.
 
 ## <a name="add-the-required-data-binding-attribute"></a>Fügen Sie das erforderliche Attribut für die Datenbindung hinzu
 
 Implementieren Sie <xref:System.ComponentModel.DefaultBindingPropertyAttribute> für einfache Steuerelemente, die Datenbindung unterstützen:
 
-1.  Wechseln der **PhoneNumberBox** -Steuerelement zur Codeansicht. (Wählen Sie im Menü **Ansicht** den Befehl **Code** aus.)
+1. Wechseln der **PhoneNumberBox** -Steuerelement zur Codeansicht. (Wählen Sie im Menü **Ansicht** den Befehl **Code** aus.)
 
-2.  Ersetzen Sie den Code in die **PhoneNumberBox** durch Folgendes:
+2. Ersetzen Sie den Code in die **PhoneNumberBox** durch Folgendes:
 
      [!code-csharp[VbRaddataDisplaying#3](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-simple-data-binding_1.cs)]
      [!code-vb[VbRaddataDisplaying#3](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-simple-data-binding_1.vb)]
 
-3.  Wählen Sie im Menü **Erstellen** die Option **Projektmappe erstellen**aus.
+3. Wählen Sie im Menü **Erstellen** die Option **Projektmappe erstellen**aus.
 
 ## <a name="create-a-data-source-from-your-database"></a>Erstellen Sie eine Datenquelle aus der Datenbank
 
 In diesem Schritt wird der **Assistent zum Konfigurieren von Datenquellen** verwendet, um eine Datenquelle anhand der `Customers`-Tabelle in der Beispieldatenbank Northwind zu erstellen. Sie benötigen Zugriff auf die Beispieldatenbank Northwind, um die Verbindung herstellen zu können. Informationen zum Einrichten der Beispieldatenbank Northwind finden Sie unter [Vorgehensweise: Installieren von Beispieldatenbanken](../data-tools/installing-database-systems-tools-and-samples.md).
 
-1.  Zum Öffnen der **Datenquellen** Fenster auf die **Daten** Menü klicken Sie auf **Datenquellen anzeigen**.
+1. Zum Öffnen der **Datenquellen** Fenster auf die **Daten** Menü klicken Sie auf **Datenquellen anzeigen**.
 
-2.  Klicken Sie im **Datenquellenfenster** auf **Neue Datenquelle hinzufügen**, um den **Assistenten zum Konfigurieren von Datenquellen** zu starten.
+2. Klicken Sie im **Datenquellenfenster** auf **Neue Datenquelle hinzufügen**, um den **Assistenten zum Konfigurieren von Datenquellen** zu starten.
 
-3.  Wählen Sie auf der Seite **Datenquellentyp auswählen** die Option **Datenbank** aus, und klicken Sie dann auf **Weiter**.
+3. Wählen Sie auf der Seite **Datenquellentyp auswählen** die Option **Datenbank** aus, und klicken Sie dann auf **Weiter**.
 
-4.  Führen Sie auf der Seite **Wählen Sie Ihre Datenverbindung aus** einen der folgenden Schritte aus:
+4. Führen Sie auf der Seite **Wählen Sie Ihre Datenverbindung aus** einen der folgenden Schritte aus:
 
-    -   Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „Northwind“ verfügbar ist, wählen Sie diese aus.
+    - Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank „Northwind“ verfügbar ist, wählen Sie diese aus.
 
-    -   Klicken Sie auf **Neue Verbindung**, um das Dialogfeld **Add/Modify Connection** (Verbindung hinzufügen/ändern) zu öffnen.
+    - Klicken Sie auf **Neue Verbindung**, um das Dialogfeld **Add/Modify Connection** (Verbindung hinzufügen/ändern) zu öffnen.
 
-5.  Falls die Datenbank ein Kennwort erfordern sollte, aktivieren Sie die Option für die Einbeziehung vertraulicher Daten, und klicken Sie dann auf **Weiter**.
+5. Falls die Datenbank ein Kennwort erfordern sollte, aktivieren Sie die Option für die Einbeziehung vertraulicher Daten, und klicken Sie dann auf **Weiter**.
 
-6.  Klicken Sie auf der Seite **Save connection string to the Application Configuration file** (Verbindungszeichenfolge in der Programmkonfigurationsdatei speichern) auf **Weiter**.
+6. Klicken Sie auf der Seite **Save connection string to the Application Configuration file** (Verbindungszeichenfolge in der Programmkonfigurationsdatei speichern) auf **Weiter**.
 
-7.  Erweitern Sie auf der Seite **Datenbankobjekte auswählen** den Knoten **Tabellen**.
+7. Erweitern Sie auf der Seite **Datenbankobjekte auswählen** den Knoten **Tabellen**.
 
-8.  Wählen Sie die `Customers`-Tabelle aus, und klicken Sie anschließend auf **Fertig stellen**.
+8. Wählen Sie die `Customers`-Tabelle aus, und klicken Sie anschließend auf **Fertig stellen**.
 
      Das **NorthwindDataSet** wird dem Projekt hinzugefügt, und die Tabelle `Customers` wird im **Datenquellenfenster** angezeigt.
 
@@ -149,17 +148,17 @@ In diesem Schritt wird der **Assistent zum Konfigurieren von Datenquellen** verw
 
 Im **Datenquellenfenster** können Sie vor dem Ziehen von Elementen auf das Formular festlegen, welches Steuerelement erstellt werden soll:
 
-1.  Öffnen Sie **Form1** im Designer.
+1. Öffnen Sie **Form1** im Designer.
 
-2.  Erweitern Sie im **Datenquellenfenster** den Knoten **Customers**.
+2. Erweitern Sie im **Datenquellenfenster** den Knoten **Customers**.
 
-3.  Klicken Sie auf den Dropdownpfeil auf dem Knoten **Customers**, und wählen Sie **Details** aus der Steuerelementliste aus.
+3. Klicken Sie auf den Dropdownpfeil auf dem Knoten **Customers**, und wählen Sie **Details** aus der Steuerelementliste aus.
 
-4.  Klicken Sie auf den Dropdownpfeil auf der Spalte **Phone**, und wählen Sie **Anpassen** aus.
+4. Klicken Sie auf den Dropdownpfeil auf der Spalte **Phone**, und wählen Sie **Anpassen** aus.
 
-5.  Wählen Sie im Dialogfeld **Data UI Customization Options** (Optionen für die Anpassung der Datenbenutzeroberfläche) in der Liste **Zugeordnete Steuerelemente** den Eintrag **PhoneNumberBox** aus.
+5. Wählen Sie im Dialogfeld **Data UI Customization Options** (Optionen für die Anpassung der Datenbenutzeroberfläche) in der Liste **Zugeordnete Steuerelemente** den Eintrag **PhoneNumberBox** aus.
 
-6.  Klicken Sie auf den Dropdownpfeil auf der Spalte **Phone**, und wählen Sie **PhoneNumberBox** aus.
+6. Klicken Sie auf den Dropdownpfeil auf der Spalte **Phone**, und wählen Sie **PhoneNumberBox** aus.
 
 ## <a name="add-controls-to-the-form"></a>Hinzufügen von Steuerelementen zu dem Formular
 
@@ -177,9 +176,9 @@ Drücken Sie **F5**, um die Anwendung auszuführen.
 
 Entsprechend den Anforderungen an Ihre Anwendung können Sie nach der Erstellung eines Steuerelements, das Datenbindung unterstützt, noch weitere Schritte ausführen. Zu den typischen nächsten Schritten gehören Folgende:
 
--   Platzieren der benutzerdefinierten Steuerelemente in eine Steuerelementbibliothek, sodass Sie sie in anderen Anwendungen wiederverwenden können.
+- Platzieren der benutzerdefinierten Steuerelemente in eine Steuerelementbibliothek, sodass Sie sie in anderen Anwendungen wiederverwenden können.
 
--   Erstellen von Steuerelementen, die komplexere Datenbindungsszenarien unterstützen. Weitere Informationen finden Sie unter [Erstellen eines Windows Forms-Benutzersteuerelements, das komplexe Datenbindung unterstützt](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md) und [Erstellen eines Windows Forms-Benutzersteuerelements, die Bindung an Nachschlagedaten unterstützt](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).
+- Erstellen von Steuerelementen, die komplexere Datenbindungsszenarien unterstützen. Weitere Informationen finden Sie unter [Erstellen eines Windows Forms-Benutzersteuerelements, das komplexe Datenbindung unterstützt](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md) und [Erstellen eines Windows Forms-Benutzersteuerelements, die Bindung an Nachschlagedaten unterstützt](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).
 
 ## <a name="see-also"></a>Siehe auch
 

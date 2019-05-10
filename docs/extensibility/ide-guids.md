@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d31a0f97-b7be-4fb5-a942-8ba4527bc068
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c338ad22b9ca11b510ed331649f7264725249d1d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3cdd656367e42a0a5b5636049ff4483b3aa1e9f3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910790"
 ---
 # <a name="ide-guids"></a>IDE-GUIDs
 
@@ -32,8 +32,8 @@ Die <xref:Microsoft.VisualStudio.VSConstants> -Klasse GUIDs der einige Teile der
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.MiscellaneousFilesProject_guid>|A2FE74E1-B743-11d0-AE1A-00A0C90FFFC3|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.SolutionItemsProject_guid>|D1DCDB85-C5E8-11d2-BFCA-00C04F990235|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsEnvironmentPackage_guid>|DA9FB551-C724-11d0-AE1F-00A0C90FFFC3|
-|<xref:Microsoft.VisualStudio.VSConstants.VsEditorFactoryGuid.HtmlEditor_guid>|C76D83F8-A489-11D0-8195-00A0C91BBEE3|  
-|<xref:Microsoft.VisualStudio.VSConstants.VsEditorFactoryGuid.TextEditor_guid>|8B382828-6202-11d1-8870-0000F87579D2|  
+|<xref:Microsoft.VisualStudio.VSConstants.VsEditorFactoryGuid.HtmlEditor_guid>|C76D83F8-A489-11D0-8195-00A0C91BBEE3|
+|<xref:Microsoft.VisualStudio.VSConstants.VsEditorFactoryGuid.TextEditor_guid>|8B382828-6202-11d1-8870-0000F87579D2|
 
 ## <a name="broadly-visible-components"></a>Allgemein sichtbaren Komponenten
 
@@ -41,7 +41,7 @@ Die <xref:Microsoft.VisualStudio.VSConstants> -Klasse GUIDs der einige Teile der
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsUIHierarchyWindow_guid>|7D960B07-7AF8-11D0-8E5E-00A0C911005A|
 |<xref:Microsoft.VisualStudio.VSConstants.VsEditorFactoryGuid.ExternalEditor_guid>|8137C9E8-35FE-4AF2-87B0-DE3C45F395FD|
-|Microsoft.VisualStudio.VSConstants.SID_SUIHostCommandDispatcher|e69cd190-1276-11D1-9f64-00a0c911004f|
+|Microsoft.VisualStudio.VSConstants.SID_SUIHostCommandDispatcher|e69cd190-1276-11d1-9f64-00a0c911004f|
 |Microsoft.VisualStudio.VSConstants.SID_SVsGeneralOutputWindowPane|65482c72-defa-41b7-902c-11c091889c83|
 
 ## <a name="files-virtual-and-physical-folders-and-subprojects"></a>Dateien, virtuellen und physischen Ordner und seine Unterprojekte
@@ -85,7 +85,7 @@ Die <xref:Microsoft.VisualStudio.VSConstants> -Klasse GUIDs der einige Teile der
 |Konstante|GUID|
 |--------------|----------|
 |Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97|5EFC7975-14BC-11CF-9B2B-00AA00573819|
-|Microsoft.VisualStudio.VSConstants.GUID_VsUIHierarchyWindowCmds >|60481700-078b-11d1-aaf8-00a0c9055a90|
+|Microsoft.VisualStudio.VSConstants.GUID_VsUIHierarchyWindowCmds>|60481700-078b-11d1-aaf8-00a0c9055a90|
 
 ## <a name="iunknown"></a>IUnknown
 
@@ -97,15 +97,15 @@ Die <xref:Microsoft.VisualStudio.VSConstants> -Klasse GUIDs der einige Teile der
 
 |Konstante|GUID|
 |--------------|----------|
-|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.All>|1880202e-fc20-11D2-8bb1-00c04f8ec28c|
-|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.CheckedTasks>|18802036-fc20-11D2-8bb1-00c04f8ec28c|
-|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.CommentTasks>|18802034-fc20-11D2-8bb1-00c04f8ec28c|
-|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.CompilerTasks>|18802033-fc20-11D2-8bb1-00c04f8ec28c|
-|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.CurrentFileTasks>|18802035-fc20-11D2-8bb1-00c04f8ec28c|
-|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.HTMLTasks>|36ac1c0d-fe86-11D2-8bb1-00c04f8ec28c|
-|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.ShortcutTasks>|18802030-fc20-11D2-8bb1-00c04f8ec28c|
-|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.UncheckedTasks>|18802037-fc20-11D2-8bb1-00c04f8ec28c|
-|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.UserTasks>|1880202f-fc20-11D2-8bb1-00c04f8ec28c|
+|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.All>|1880202e-fc20-11d2-8bb1-00c04f8ec28c|
+|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.CheckedTasks>|18802036-fc20-11d2-8bb1-00c04f8ec28c|
+|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.CommentTasks>|18802034-fc20-11d2-8bb1-00c04f8ec28c|
+|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.CompilerTasks>|18802033-fc20-11d2-8bb1-00c04f8ec28c|
+|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.CurrentFileTasks>|18802035-fc20-11d2-8bb1-00c04f8ec28c|
+|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.HTMLTasks>|36ac1c0d-fe86-11d2-8bb1-00c04f8ec28c|
+|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.ShortcutTasks>|18802030-fc20-11d2-8bb1-00c04f8ec28c|
+|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.UncheckedTasks>|18802037-fc20-11d2-8bb1-00c04f8ec28c|
+|<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.UserTasks>|1880202f-fc20-11d2-8bb1-00c04f8ec28c|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsTaskList_guid>|BC5955D5-aa0d-11d0-a8c5-00a0c921a4d2|
 |<xref:Microsoft.VisualStudio.VSConstants.VsPackageGuid.VsTaskListPackage_guid>|4A9B7E50-aa16-11d0-a8c5-00a0c921a4d2|
 
@@ -121,8 +121,8 @@ Die <xref:Microsoft.VisualStudio.VSConstants> -Klasse GUIDs der einige Teile der
 
 |Konstanten|GUID|
 |---------------|----------|
-|<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsCfgProviderEventsHelper_guid>|99913f1f-1ee3-11D1-8a6e-00c04f682e21|
-|<xref:Microsoft.VisualStudio.VSConstants.VsPackageGuid.VsDocOutlinePackage_guid>|21af45b0-ffa5-11D0-b63f-00a0c922e851|
+|<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsCfgProviderEventsHelper_guid>|99913f1f-1ee3-11d1-8a6e-00c04f682e21|
+|<xref:Microsoft.VisualStudio.VSConstants.VsPackageGuid.VsDocOutlinePackage_guid>|21af45b0-ffa5-11d0-b63f-00a0c922e851|
 |Microsoft.VisualStudio.VSConstants.SID_SVsToolboxActiveXDataProvider|35222106-bb44-11d0-8c46-00c04fc2aae2|
 
 ## <a name="see-also"></a>Siehe auch

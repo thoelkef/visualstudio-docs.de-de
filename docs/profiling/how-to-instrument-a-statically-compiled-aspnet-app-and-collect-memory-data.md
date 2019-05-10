@@ -5,64 +5,64 @@ ms.topic: conceptual
 ms.assetid: ea1dcb7c-1dc3-49ff-9418-8795b5b3d3bc
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d37df1d22f42e3046960c81b1cd75d6c6ae0898f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5ac3b886fec1ab2135dd74b24b7d2fe3284249f8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850595"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386724"
 ---
 # <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Vorgehensweise: Instrumentieren einer statisch kompilierten ASP.NET-Webanwendung und Sammeln von Speicherdaten über die Profilerbefehlszeile
-In diesem Artikel wird beschrieben, wie die Befehlszeilentools der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools verwendet werden, um eine vorkompilierte [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webkomponente oder -Website zu instrumentieren und Daten zur .NET-Speicherbelegung und zur Objektlebensdauer sowie ausführliche Zeitsteuerungsdaten zu sammeln.  
+In diesem Artikel wird beschrieben, wie die Befehlszeilentools der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools verwendet werden, um eine vorkompilierte [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webkomponente oder -Website zu instrumentieren und Daten zur .NET-Speicherbelegung und zur Objektlebensdauer sowie ausführliche Zeitsteuerungsdaten zu sammeln.
 
 > [!NOTE]
->  Informationen zum Abrufen des Pfads zu den Profilerstellungstools finden Sie unter [Angeben des Pfads zu Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Auf 64-Bit-Computern sind sowohl 64 Bit- als auch 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen.
+> Informationen zum Abrufen des Pfads zu den Profilerstellungstools finden Sie unter [Angeben des Pfads zu Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Auf 64-Bit-Computern sind sowohl 64 Bit- als auch 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen.
 
- Um Daten aus einer [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webkomponente mithilfe der Instrumentierungsmethode zu erfassen, generieren Sie mit dem Tool [VSInstr.exe](../profiling/vsinstr.md) eine instrumentierte Version der Komponente. Auf dem Computer, der die Komponente hostet, müssen Sie die nicht instrumentierte Version der Komponente durch die instrumentierte Version ersetzen. Mit [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) können Sie die globalen Umgebungsvariablen für die Profilerstellung initialisieren und den Hostcomputer neu starten. Starten Sie dann den Profiler.  
+ Um Daten aus einer [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webkomponente mithilfe der Instrumentierungsmethode zu erfassen, generieren Sie mit dem Tool [VSInstr.exe](../profiling/vsinstr.md) eine instrumentierte Version der Komponente. Auf dem Computer, der die Komponente hostet, müssen Sie die nicht instrumentierte Version der Komponente durch die instrumentierte Version ersetzen. Mit [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) können Sie die globalen Umgebungsvariablen für die Profilerstellung initialisieren und den Hostcomputer neu starten. Starten Sie dann den Profiler.
 
- Wenn die instrumentierte Komponente ausgeführt wird, werden Zeitsteuerungsdaten automatisch in einer Datendatei erfasst. Sie können die Datensammlung während der Profilerstellungssitzung anhalten und fortsetzen.  
+ Wenn die instrumentierte Komponente ausgeführt wird, werden Zeitsteuerungsdaten automatisch in einer Datendatei erfasst. Sie können die Datensammlung während der Profilerstellungssitzung anhalten und fortsetzen.
 
- Wenn Sie eine Profilerstellungssitzung beenden möchten, schließen Sie den [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Workerprozess, der die Komponente hostet, und anschließend explizit den Profiler. In den meisten Fällen empfiehlt es sich, die Umgebungsvariablen für die Profilerstellung am Ende einer Sitzung zu entfernen.  
+ Wenn Sie eine Profilerstellungssitzung beenden möchten, schließen Sie den [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Workerprozess, der die Komponente hostet, und anschließend explizit den Profiler. In den meisten Fällen empfiehlt es sich, die Umgebungsvariablen für die Profilerstellung am Ende einer Sitzung zu entfernen.
 
-## <a name="start-to-profile"></a>Erste Schritte der Profilerstellung  
+## <a name="start-to-profile"></a>Erste Schritte der Profilerstellung
 
-#### <a name="to-instrument-an-aspnet-web-component-and-start-profiling"></a>So instrumentieren Sie eine ASP.NET-Webkomponente und starten die Profilerstellung  
+#### <a name="to-instrument-an-aspnet-web-component-and-start-profiling"></a>So instrumentieren Sie eine ASP.NET-Webkomponente und starten die Profilerstellung
 
-1. Generieren Sie mit dem Tool **VSInstr** eine instrumentierte Version der Zielanwendung. Ersetzen Sie die Anwendungsbinärdateien auf dem ASP.NET-Hostcomputer falls notwendig durch die instrumentierten Binärdateien.  
+1. Generieren Sie mit dem Tool **VSInstr** eine instrumentierte Version der Zielanwendung. Ersetzen Sie die Anwendungsbinärdateien auf dem ASP.NET-Hostcomputer falls notwendig durch die instrumentierten Binärdateien.
 
-2. Öffnen Sie ein Eingabeaufforderungsfenster.  
+2. Öffnen Sie ein Eingabeaufforderungsfenster.
 
-3. Initialisieren Sie die .NET-Umgebungsvariablen für die Profilerstellung. Geben Sie im Eingabeaufforderungsfenster Folgendes ein:  
+3. Initialisieren Sie die .NET-Umgebungsvariablen für die Profilerstellung. Geben Sie im Eingabeaufforderungsfenster Folgendes ein:
 
-    **VSPerfClrEnv /globaltracegc**  
+    **VSPerfClrEnv /globaltracegc**
 
-    - oder -   
+    - oder - 
 
-    **VSPerfClrEnv /globaltracegclife**  
+    **VSPerfClrEnv /globaltracegclife**
 
-   -   **/globaltracegc** sammelt Daten zur .NET-Speicherbelegung sowie zur Zeitsteuerung.  
+   - **/globaltracegc** sammelt Daten zur .NET-Speicherbelegung sowie zur Zeitsteuerung.
 
-   -   **/globaltracegclife** sammelt Daten zur .NET-Speicherbelegung, Objektlebensdauer sowie ausführliche Zeitsteuerungsdaten.  
+   - **/globaltracegclife** sammelt Daten zur .NET-Speicherbelegung, Objektlebensdauer sowie ausführliche Zeitsteuerungsdaten.
 
-4. Starten Sie den Computer neu.  
+4. Starten Sie den Computer neu.
 
-5. Öffnen Sie ein Eingabeaufforderungsfenster.  
+5. Öffnen Sie ein Eingabeaufforderungsfenster.
 
-6. Starten Sie den Profiler. Geben Sie im Eingabeaufforderungsfenster Folgendes ein:  
+6. Starten Sie den Profiler. Geben Sie im Eingabeaufforderungsfenster Folgendes ein:
 
-    **VSPerfCmd /start:trace /output:** `OutputFile` [`Options`]  
+    **VSPerfCmd /start:trace /output:** `OutputFile` [`Options`]
 
-   - Mit der Option [/start](../profiling/start.md)**:trace** wird der Profiler initialisiert.  
+   - Mit der Option [/start](../profiling/start.md)**:trace** wird der Profiler initialisiert.
 
-   - Die Option [/output](../profiling/output.md)**:**`OutputFile` ist zusammen mit **/start** erforderlich. Mit dem `OutputFile`-Objekt werden Name und Speicherort der Profilerstellungs-Datendatei (VSP-Datei) angegeben.  
+   - Die Option [/output](../profiling/output.md)**:**`OutputFile` ist zusammen mit **/start** erforderlich. Mit dem `OutputFile`-Objekt werden Name und Speicherort der Profilerstellungs-Datendatei (VSP-Datei) angegeben.
 
-     Sie können jede der folgenden Optionen zusammen mit der Option **/start:trace** verwenden.  
+     Sie können jede der folgenden Optionen zusammen mit der Option **/start:trace** verwenden.
 
    > [!NOTE]
-   >  Die Optionen **/user** und **/crosssession** sind normalerweise für ASP.NET-Anwendungen erforderlich.  
+   > Die Optionen **/user** und **/crosssession** sind normalerweise für ASP.NET-Anwendungen erforderlich.
 
    | Option | Beschreibung |
    | - | - |
@@ -73,45 +73,44 @@ In diesem Artikel wird beschrieben, wie die Befehlszeilentools der [!INCLUDE[vsp
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Gibt ein ETW-Ereignis (Ereignisablaufverfolgung für Windows) an, dessen Daten während der Profilerstellung gesammelt werden sollen. ETW-Ereignisse werden in einer separaten Datei (.etl) gesammelt. |
    | [/globaloff](../profiling/globalon-and-globaloff.md) | Fügen Sie der Befehlszeile **/start** die Option **globaloff** hinzu, um den Profiler mit angehaltener Datensammlung zu starten. Mit **/globalon** setzen Sie die Profilerstellung fort. |
 
+7. Öffnen Sie die Website, die die instrumentierte Komponente enthält.
 
-7. Öffnen Sie die Website, die die instrumentierte Komponente enthält.  
+## <a name="control-data-collection"></a>Steuern der Datensammlung
+ Während die Zielanwendung ausgeführt wird, können Sie die Datensammlung steuern, indem Sie das Schreiben von Daten in die Datei mit Option *VSPerfCmd.exe* starten und beenden. Durch das Steuern der Datensammlung können Sie Daten zu einem bestimmten Teil der Programmausführung sammeln, z. B. zum Starten oder Schließen der Anwendung.
 
-## <a name="control-data-collection"></a>Steuern der Datensammlung  
- Während die Zielanwendung ausgeführt wird, können Sie die Datensammlung steuern, indem Sie das Schreiben von Daten in die Datei mit Option *VSPerfCmd.exe* starten und beenden. Durch das Steuern der Datensammlung können Sie Daten zu einem bestimmten Teil der Programmausführung sammeln, z. B. zum Starten oder Schließen der Anwendung.  
+#### <a name="to-start-and-stop-data-collection"></a>So starten und beenden Sie die Datensammlung
 
-#### <a name="to-start-and-stop-data-collection"></a>So starten und beenden Sie die Datensammlung  
+- Mit den folgenden Optionspaaren wird die Datensammlung gestartet und beendet. Geben Sie jede Option in einer eigenen Befehlszeile an. Sie können die Datensammlung mehrmals aktivieren und deaktivieren.
 
--   Mit den folgenden Optionspaaren wird die Datensammlung gestartet und beendet. Geben Sie jede Option in einer eigenen Befehlszeile an. Sie können die Datensammlung mehrmals aktivieren und deaktivieren.  
+    |Option|Beschreibung|
+    |------------|-----------------|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Die Datensammlung wird für alle Prozesse gestartet (**/globalon**) oder beendet (**/globaloff**).|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Die Datensammlung wird für den mit der Prozess-ID (`PID`) angegebenen Prozess gestartet (**/processon**) oder beendet (**/processoff**).|
+    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Die Datensammlung wird für den mit der Prozess-ID (`TID`) angegebenen Prozess gestartet (**/threadon**) oder beendet (**/threadoff**).|
 
-    |Option|Beschreibung|  
-    |------------|-----------------|  
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Die Datensammlung wird für alle Prozesse gestartet (**/globalon**) oder beendet (**/globaloff**).|  
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Die Datensammlung wird für den mit der Prozess-ID (`PID`) angegebenen Prozess gestartet (**/processon**) oder beendet (**/processoff**).|  
-    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Die Datensammlung wird für den mit der Prozess-ID (`TID`) angegebenen Prozess gestartet (**/threadon**) oder beendet (**/threadoff**).|  
+## <a name="end-the-profiling-session"></a>Beenden der Profilerstellungssitzung
+ Schließen Sie die [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendung, um eine Profilerstellungssitzung zu beenden, und verwenden Sie den Befehl **IISReset** der Internetinformationsdienste (IIS), um den [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Workerprozess zu schließen. Rufen Sie die Option **VSPerfCmd** [/shutdown](../profiling/shutdown.md) auf, um den Profiler zu deaktivieren und die Profilerstellungs-Datendatei zu schließen. Mit dem Befehl **VSPerfClrEnv /globaloff** werden die Umgebungsvariablen für die Profilerstellung gelöscht. Sie müssen den Computer neu starten, damit die neuen Umgebungseinstellungen übernommen werden.
 
-## <a name="end-the-profiling-session"></a>Beenden der Profilerstellungssitzung  
- Schließen Sie die [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendung, um eine Profilerstellungssitzung zu beenden, und verwenden Sie den Befehl **IISReset** der Internetinformationsdienste (IIS), um den [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Workerprozess zu schließen. Rufen Sie die Option **VSPerfCmd** [/shutdown](../profiling/shutdown.md) auf, um den Profiler zu deaktivieren und die Profilerstellungs-Datendatei zu schließen. Mit dem Befehl **VSPerfClrEnv /globaloff** werden die Umgebungsvariablen für die Profilerstellung gelöscht. Sie müssen den Computer neu starten, damit die neuen Umgebungseinstellungen übernommen werden.  
+#### <a name="to-end-a-profiling-session"></a>So beenden Sie eine Profilerstellungssitzung
 
-#### <a name="to-end-a-profiling-session"></a>So beenden Sie eine Profilerstellungssitzung  
+1. Schließen Sie die [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendung.
 
-1. Schließen Sie die [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendung.  
+2. Schließen Sie den [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Arbeitsprozess. Typ:
 
-2. Schließen Sie den [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Arbeitsprozess. Typ:  
+    **IISReset /stop**
 
-    **IISReset /stop**  
+3. Schließen Sie den Profiler. Typ:
 
-3. Schließen Sie den Profiler. Typ:  
+    **VSPerfCmd /shutdown**
 
-    **VSPerfCmd /shutdown**  
+4. (Optional) Löschen Sie die Umgebungsvariablen für die Profilerstellung. Typ:
 
-4. (Optional) Löschen Sie die Umgebungsvariablen für die Profilerstellung. Typ:  
+    **VSPerfCmd /globaloff**
 
-    **VSPerfCmd /globaloff**  
+5. Starten Sie den Computer neu. Falls erforderlich, starten Sie IIS erneut. Typ:
 
-5. Starten Sie den Computer neu. Falls erforderlich, starten Sie IIS erneut. Typ:  
+    **IISReset /start**
 
-    **IISReset /start**  
-
-## <a name="see-also"></a>Siehe auch  
- [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [.NET-Arbeitsspeicherdatenansichten](../profiling/dotnet-memory-data-views.md)
+## <a name="see-also"></a>Siehe auch
+- [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [.NET-Arbeitsspeicherdatenansichten](../profiling/dotnet-memory-data-views.md)

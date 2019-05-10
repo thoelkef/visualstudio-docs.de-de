@@ -8,16 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, diagram
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 8bbb876ddd8a3615b7e31d0dbf9d005b69f2d03d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 05c348edfa4665b138ac0f6069b0afaf6735da7a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937792"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62999257"
 ---
 # <a name="properties-of-diagrams"></a>Eigenschaften von Diagrammen
 Sie können Eigenschaften festlegen, die angeben, wie Diagramme im generierten Designer angezeigt werden. Beispielsweise können Sie eine Standardfarbe für Text in das Diagramm angeben.
@@ -31,20 +30,20 @@ Sie können Eigenschaften festlegen, die angeben, wie Diagramme im generierten D
 |Füllfarbe|Die Füllfarbe für das Diagramm.|Weiß|
 |Textfarbe|Die Farbe des Texts, der im Diagramm angezeigt wird.|Schwarz|
 |Zugriffsmodifizierer|Der Zugriffsmodifizierer der-Klasse (öffentlich oder intern).|Public|
-|Benutzerdefinierte Attribute|Verwendet, um die Attribute der generierten Codeklasse hinzuzufügen.|\<Keine >|
+|Benutzerdefinierte Attribute|Verwendet, um die Attribute der generierten Codeklasse hinzuzufügen.|\<none>|
 |Double-Wert generiert abgeleitet|Wenn `True`, sowohl eine Basisklasse und eine partielle Klasse (zur Unterstützung von Anpassung über überschreibungen) generiert werden. Weitere Informationen finden Sie unter [überschreiben und Erweitern der generierten Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|False|
 |Hat benutzerdefinierten Konstruktor|Wenn `True`, ein benutzerdefinierter Konstruktor wird im Quellcode angegeben werden. Weitere Informationen finden Sie unter [überschreiben und Erweitern der generierten Klassen](../modeling/overriding-and-extending-the-generated-classes.md)...|False|
-|Vererbungsmodifizierer|Beschreibt die Art der Vererbung, der die Quellklasse für Code, der aus dem Diagramm generiert wird (`none`, `abstract`, oder `sealed`).|Keine|
+|Vererbungsmodifizierer|Beschreibt die Art der Vererbung, der die Quellklasse für Code, der aus dem Diagramm generiert wird (`none`, `abstract`, oder `sealed`).|Keiner|
 |Basisdiagramm|Die Basisklasse des Diagramms.|(keine)|
-|name|Der Name des Diagramms.|Aktuelle name|
+|Name|Der Name des Diagramms.|Aktuelle name|
 |Namespace|Der Namespace, der in diesem Diagramm zugeordnet ist.|Aktuellen namespace|
 |Dargestellte Klasse|Die Stamm-Domänenklasse, die in diesem Diagramm darstellt.|Aktuelle Stammklasse ggf.|
-|Hinweise|Informelle Hinweise, die mit diesem Element verknüpft sind.|\<Keine >|
+|Hinweise|Informelle Hinweise, die mit diesem Element verknüpft sind.|\<none>|
 |Macht die Füllfarbe als Eigenschaft|Wenn `True`, der Benutzer kann die Füllfarbe des Diagramms des generierten Designers festlegen. Klicken Sie zum Festlegen dieser Eigenschaft mit der rechten Maustaste der Diagrammform, und klicken Sie auf **verfügbare hinzufügen**.|False|
 |Textfarbe als Eigenschaft zur Verfügung gestellt|Wenn `True`, der Benutzer kann die Textfarbe des Diagramms im generierten Designer festlegen. Klicken Sie zum Festlegen dieser Eigenschaft mit der rechten Maustaste der Diagrammform, und klicken Sie auf **verfügbare hinzufügen**.|False|
-|Beschreibung|Die Beschreibung, die zum Dokumentieren des generierten Designers verwendet wird.|\<Keine >|
-|Anzeigename|Der Name, der im generierten Designer für dieses Diagramm angezeigt werden soll.|\<Keine >|
-|Hilfsschlüsselwort|Das Schlüsselwort, das zum Indizieren der F1-Hilfe für dieses Diagramm verwendet wird.|\<Keine >|
+|Beschreibung|Die Beschreibung, die zum Dokumentieren des generierten Designers verwendet wird.|\<none>|
+|Anzeigename|Der Name, der im generierten Designer für dieses Diagramm angezeigt werden soll.|\<none>|
+|Hilfsschlüsselwort|Das Schlüsselwort, das zum Indizieren der F1-Hilfe für dieses Diagramm verwendet wird.|\<none>|
 
 ## <a name="see-also"></a>Siehe auch
 

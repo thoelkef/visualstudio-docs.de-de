@@ -1,14 +1,9 @@
 ---
 title: Erstellen von Weiterleitungsprotokollierungen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, forwarding loggers
 - MSBuild, logging
@@ -16,18 +11,17 @@ ms.assetid: 3aebf9c8-b62c-4cb2-b2d6-8cdfcd369a24
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 46cff57e8238e00f914f8437fbc81d1887e7d629
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ecc9bae7176c0d8c0f79452baff87a7a697db459
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281241"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648220"
 ---
 # <a name="creating-forwarding-loggers"></a>Erstellen von Weiterleitungsprotokollierungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Weiterleitungsprotokollierungen verbessern die Protokollierungseffizienz, da Sie wählen können, welche Ereignisse Sie gerne protokollieren möchten, wenn Sie Projekte auf einem System mit mehreren Prozessoren erstellen. Wenn Sie Weiterleitungsprotokollierungen aktivieren, können Sie vermeiden, dass nicht benötigte Ereignisse die zentrale Protokollierung überlasten, die Buildzeit verlangsamen und dafür sorgen, dass das Protokoll unübersichtlich wird.  
   
  Sie können entweder zuerst die <xref:Microsoft.Build.Framework.IForwardingLogger>-Schnittstelle und dann manuell die Methode implementieren oder die <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger>-Klasse und deren vorkonfigurierte Methoden verwenden, um eine Weiterleitungsprotokollierung zu erstellen. (Letztere Methode sollte für die meisten Anwendungen ausreichend sein.)  
@@ -51,6 +45,3 @@ Weiterleitungsprotokollierungen verbessern die Protokollierungseffizienz, da Sie
  [Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [Buildprotokollierungen](../msbuild/build-loggers.md)   
  [Protokollierung in einer Multiprozessorumgebung](../msbuild/logging-in-a-multi-processor-environment.md)
-
-
-

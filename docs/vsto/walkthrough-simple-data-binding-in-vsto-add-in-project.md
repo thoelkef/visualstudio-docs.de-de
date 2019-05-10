@@ -9,17 +9,17 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], binding data
 - data binding [Office development in Visual Studio], Word
 - data [Office development in Visual Studio], simple binding data
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: df572f63ec6bb8a77a854144dd2ff4a165148c41
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6b6cf1e800c785f73ebb11e09f11b617fe42aa32
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828419"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62981080"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Exemplarische Vorgehensweise: Einfache Datenbindung in VSTO-Add-in-Projekt
 
@@ -29,11 +29,11 @@ Sie können in VSTO-Add-In-Projekten Daten an Hoststeuerelemente und Windows For
 
 In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:
 
--   Hinzufügen einer <xref:Microsoft.Office.Tools.Word.ContentControl> zu einem Dokument zur Laufzeit.
+- Hinzufügen einer <xref:Microsoft.Office.Tools.Word.ContentControl> zu einem Dokument zur Laufzeit.
 
--   Erstellen eines <xref:System.Windows.Forms.BindingSource> -Objekts, das das Steuerelement mit einer Instanz eines Datasets verbindet
+- Erstellen eines <xref:System.Windows.Forms.BindingSource> -Objekts, das das Steuerelement mit einer Instanz eines Datasets verbindet
 
--   Ermöglichen, dass Benutzer durch die Datensätze scrollen und diese im Steuerelement anzeigen können
+- Ermöglichen, dass Benutzer durch die Datensätze scrollen und diese im Steuerelement anzeigen können
 
 [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -41,15 +41,15 @@ In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschau
 
 Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] oder [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
+- [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] oder [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
 
--   Zugriff auf eine aktive Instanz von SQL Server 2005 oder SQL Server 2005 Express, an die die `AdventureWorksLT` -Beispieldatenbank angefügt ist. Sie können die `AdventureWorksLT` -Datenbank von der [CodePlex-Website](http://go.microsoft.com/fwlink/?LinkId=115611). Weitere Informationen zum Anhängen von Datenbanken finden Sie in den folgenden Themen:
+- Zugriff auf eine aktive Instanz von SQL Server 2005 oder SQL Server 2005 Express, an die die `AdventureWorksLT` -Beispieldatenbank angefügt ist. Sie können die `AdventureWorksLT` -Datenbank von der [CodePlex-Website](http://go.microsoft.com/fwlink/?LinkId=115611). Weitere Informationen zum Anhängen von Datenbanken finden Sie in den folgenden Themen:
 
-    -   Zum Anfügen einer Datenbank mithilfe von SQL Server Management Studio oder SQL Server Management Studio Express finden Sie unter [Vorgehensweise: Anfügen einer Datenbank (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
+    - Zum Anfügen einer Datenbank mithilfe von SQL Server Management Studio oder SQL Server Management Studio Express finden Sie unter [Vorgehensweise: Anfügen einer Datenbank (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
-    -   Zum Anfügen einer Datenbank mithilfe der Befehlszeile finden Sie unter [Vorgehensweise: Anfügen eine Datenbankdatei an SQL Server Express](/previous-versions/sql/).
+    - Zum Anfügen einer Datenbank mithilfe der Befehlszeile finden Sie unter [Vorgehensweise: Anfügen eine Datenbankdatei an SQL Server Express](/previous-versions/sql/).
 
 ## <a name="create-a-new-project"></a>Erstellt ein neues Projekt
 
@@ -57,13 +57,13 @@ Der erste Schritt besteht im Erstellen eines VSTO-Add-In-Projekts für Word.
 
 ### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt
 
-1.  Erstellen Sie mit Visual Basic oder C# ein Word-VSTO-Add-In-Projekt, das den Namen **Füllen von Dokumenten aus einer Datenbank**hat.
+1. Erstellen Sie mit Visual Basic oder C# ein Word-VSTO-Add-In-Projekt, das den Namen **Füllen von Dokumenten aus einer Datenbank**hat.
 
      Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      Visual Studio öffnet die *"ThisAddIn.vb"* oder *"ThisAddIn.cs"* Datei und fügt die **Füllen von Dokumenten aus einer Datenbank** Projekt **Projektmappen-Explorer** .
 
-2.  Wenn das Projekt auf die [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], fügen einen Verweis auf die *Microsoft.Office.Tools.Word.v4.0.Utilities.dll* Assembly. Dieser Verweis ist erforderlich, um später in dieser exemplarischen Vorgehensweise dem Dokument programmgesteuert Windows Forms-Steuerelemente hinzuzufügen.
+2. Wenn das Projekt auf die [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], fügen einen Verweis auf die *Microsoft.Office.Tools.Word.v4.0.Utilities.dll* Assembly. Dieser Verweis ist erforderlich, um später in dieser exemplarischen Vorgehensweise dem Dokument programmgesteuert Windows Forms-Steuerelemente hinzuzufügen.
 
 ## <a name="create-a-data-source"></a>Erstellen einer Datenquelle
 
@@ -103,37 +103,37 @@ Weitere Informationen zum Binden von Steuerelementen an Daten finden Sie unter [
 
 ### <a name="to-create-the-interface-in-the-document"></a>So erstellen Sie die Benutzeroberfläche im Dokument
 
-1.  Deklarieren Sie in der `ThisAddIn` -Klasse die folgenden Steuerelemente, um die `Customer` -Tabelle der `AdventureWorksLTDataSet` -Datenbank anzuzeigen und sie durchlaufen zu können.
+1. Deklarieren Sie in der `ThisAddIn` -Klasse die folgenden Steuerelemente, um die `Customer` -Tabelle der `AdventureWorksLTDataSet` -Datenbank anzuzeigen und sie durchlaufen zu können.
 
      [!code-vb[Trin_WordAddInDatabase#1](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#1)]
      [!code-csharp[Trin_WordAddInDatabase#1](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#1)]
 
-2.  Fügen Sie der `ThisAddIn_Startup` -Methode den folgenden Code hinzu, um das Dataset zu initialisieren und es mit Daten aus der `AdventureWorksLTDataSet` -Datenbank zu füllen.
+2. Fügen Sie der `ThisAddIn_Startup` -Methode den folgenden Code hinzu, um das Dataset zu initialisieren und es mit Daten aus der `AdventureWorksLTDataSet` -Datenbank zu füllen.
 
      [!code-vb[Trin_WordAddInDatabase#2](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#2)]
      [!code-csharp[Trin_WordAddInDatabase#2](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#2)]
 
-3.  Fügen Sie der `ThisAddIn_Startup`-Methode folgenden Code hinzu. Dadurch wird ein Hostelement generiert, das das Dokument erweitert. Weitere Informationen finden Sie unter [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+3. Fügen Sie der `ThisAddIn_Startup` -Methode folgenden Code hinzu. Dadurch wird ein Hostelement generiert, das das Dokument erweitert. Weitere Informationen finden Sie unter [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
      [!code-vb[Trin_WordAddInDatabase#3](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#3)]
      [!code-csharp[Trin_WordAddInDatabase#3](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#3)]
 
-4.  Definieren Sie am Anfang des Dokuments mehrere Bereiche. Diese Bereiche geben an, wo Text eingefügt und die Steuerelemente positioniert werden sollen.
+4. Definieren Sie am Anfang des Dokuments mehrere Bereiche. Diese Bereiche geben an, wo Text eingefügt und die Steuerelemente positioniert werden sollen.
 
      [!code-vb[Trin_WordAddInDatabase#4](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#4)]
      [!code-csharp[Trin_WordAddInDatabase#4](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#4)]
 
-5.  Fügen Sie den zuvor definierten Bereichen die Steuerelemente der Benutzeroberfläche hinzu.
+5. Fügen Sie den zuvor definierten Bereichen die Steuerelemente der Benutzeroberfläche hinzu.
 
      [!code-vb[Trin_WordAddInDatabase#5](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#5)]
      [!code-csharp[Trin_WordAddInDatabase#5](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#5)]
 
-6.  Binden Sie das Inhaltssteuerelement an `AdventureWorksLTDataSet` , indem Sie das <xref:System.Windows.Forms.BindingSource>-Objekt verwenden. C#-Entwickler müssen zwei Ereignishandler für die <xref:Microsoft.Office.Tools.Word.Controls.Button> -Steuerelemente hinzufügen.
+6. Binden Sie das Inhaltssteuerelement an `AdventureWorksLTDataSet` , indem Sie das <xref:System.Windows.Forms.BindingSource>-Objekt verwenden. C#-Entwickler müssen zwei Ereignishandler für die <xref:Microsoft.Office.Tools.Word.Controls.Button> -Steuerelemente hinzufügen.
 
      [!code-vb[Trin_WordAddInDatabase#6](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#6)]
      [!code-csharp[Trin_WordAddInDatabase#6](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#6)]
 
-7.  Fügen Sie den folgenden Code hinzu, damit durch die Datenbankdatensätze navigiert werden kann.
+7. Fügen Sie den folgenden Code hinzu, damit durch die Datenbankdatensätze navigiert werden kann.
 
      [!code-vb[Trin_WordAddInDatabase#7](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#7)]
      [!code-csharp[Trin_WordAddInDatabase#7](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#7)]
@@ -144,11 +144,11 @@ Wenn Sie Word öffnen, werden im Inhaltssteuerelement Daten aus dem `AdventureWo
 
 ### <a name="to-test-the-vsto-add-in"></a>So testen Sie das VSTO-Add-In
 
-1.  Drücken Sie **F5**.
+1. Drücken Sie **F5**.
 
      Das Inhaltssteuerelement `customerContentControl` wird erstellt und mit Daten gefüllt. Gleichzeitig werden dem Projekt ein Datasetobjekt namens `adventureWorksLTDataSet` und ein <xref:System.Windows.Forms.BindingSource> -Objekt namens `customerBindingSource` hinzugefügt. Das <xref:Microsoft.Office.Tools.Word.ContentControl> -Steuerelement ist an das <xref:System.Windows.Forms.BindingSource>-Objekt gebunden, das wiederum an das Datasetobjekt gebunden ist.
 
-2.  Klicken Sie auf die Schaltflächen **Next** und **Previous** , um die Datenbankdatensätze zu durchlaufen.
+2. Klicken Sie auf die Schaltflächen **Next** und **Previous** , um die Datenbankdatensätze zu durchlaufen.
 
 ## <a name="see-also"></a>Siehe auch
 

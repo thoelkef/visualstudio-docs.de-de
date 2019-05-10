@@ -15,40 +15,40 @@ helpviewer_keywords:
 ms.assetid: 70d8c9e5-4b0b-4a69-b3b3-90f36debe880
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77ba75a0b62f2b0cbac1d7c60875dd322d0feaf2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: 87612ebc9bbcaf14bdf25d91a4e5dbe018c22143
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841978"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428757"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>Unterstützen von Tools zum Durchsuchen von Symbolen
-**Objektkatalog**, **Klassenansicht**, **Aufrufbrowser** und **Ergebnisse der Symbolsuche** Tools bieten Symbol Suchfunktionen in Visual Studio. Diese Tools Ansichten der hierarchischen Struktur von Symbolen angezeigt, und die Beziehungen zwischen den Symbolen in der Struktur angezeigt. Die Symbole können Namespaces, Objekte, Klassen, Klassenmembern und anderen Sprachelemente, die in verschiedenen Komponenten enthalten darstellen. Zu den Komponenten zählen Visual Studio-Projekte, externe [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] Komponenten und Typbibliotheken (TLB). Weitere Informationen finden Sie unter [Anzeigen der Codestruktur](../../ide/viewing-the-structure-of-code.md).  
-  
-## <a name="symbol-browsing-libraries"></a>Symbol zum Durchsuchen von Bibliotheken  
- Als eine Sprache-Implementierung können Sie die Funktionen von Visual Studio zum Durchsuchen von Symbolen durch Erstellen von Bibliotheken, die die Symbole in Ihren Komponenten nachverfolgen, und geben Sie die Liste der Symbole auf dem Visual Studio-Objekt-Manager über einen Satz von Schnittstellen erweitern. Eine Bibliothek wird beschrieben, durch die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2> Schnittstelle. Der Objekt-Manager für Visual Studio reagiert auf Anforderungen für neue Daten über die Tools zum Durchsuchen von Symbolen durch Abrufen von Daten aus den Bibliotheken und Organisieren sie. Klicken sie anschließend füllt oder aktualisiert die Tools, mit der angeforderten Daten. Abrufen eines Verweises auf die Visual Studio-Objekt-Manager, <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>, übergeben die <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> -service-ID, die `GetService` Methode.  
-  
- Jede Bibliothek muss bei der Visual Studio-Objekt-Manager registrieren, und die Informationen zu allen Bibliotheken zu sammeln. Um eine Bibliothek zu registrieren, rufen die <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> Methode. Je nachdem, welches Tool die Anforderung initiiert wird wird der Objekt-Manager für Visual Studio sucht die entsprechende Bibliothek und fordert Daten. Die Datenübertragung zwischen den Bibliotheken und die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Objekt-Manager in der Liste der Symbole beschrieben, die von der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> Schnittstelle.  
-  
- Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Objekt-Manager ist verantwortlich für das Aktualisieren in regelmäßigen Abständen von Tools zum Durchsuchen von Symbolen, entsprechend die aktuellen Daten, die in den Bibliotheken enthalten.  
-  
- Das folgende Diagramm enthält ein Beispiel für wichtige Elemente, die den Anforderungen/Data Exchange-Prozess zwischen einer Bibliothek und der Objekt-Manager für Visual Studio. Die Schnittstellen in der Abbildung sind Teil einer Anwendung mit verwaltetem Code.  
-  
- ![Datenfluss zwischen einer Bibliothek und der Objekt-Manager](../../extensibility/internals/media/callbrowserdiagram.gif "CallBrowserDiagram")  
-  
- Die Listen von Symbolen, um dem Objekt-Manager von Visual Studio zu bieten, müssen Sie zuerst die Bibliothek mit der Objekt-Manager für Visual Studio registrieren, durch den Aufruf der <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> Methode. Nachdem die Bibliothek registriert wurde, fordert der Objekt-Manager für Visual Studio bestimmte Informationen zu den Funktionen der Bibliothek. Beispielsweise er fordert die Bibliotheksflags und unterstützt Sie durch Aufrufen von Kategorien der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetLibFlags2%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetSupportedCategoryFields2%2A> Methoden. An einem bestimmten Punkt, wenn eines der Tools aus dieser Bibliothek, die Daten anfordert der Objekt-Manager fordert die obersten Ebene Liste von Symbolen durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetList2%2A> Methode. Im Gegenzug die Bibliothek stellt eine Liste von Symbolen und macht es für den Visual Studio-Objekt-Manager über die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> Schnittstelle. Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Objekt-Manager bestimmt, wie viele Elemente in der Liste befinden, durch den Aufruf der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A> Methode. Alle folgende Anforderungen beziehen sich auf ein bestimmtes Element in der Liste, und geben die Indexnummer des Elements in jeder Anforderung. Der Visual Studio-Objekt-Manager wird zum Sammeln von Informationen auf den Typ, der Zugriff auf und andere Eigenschaften des Elements durch den Aufruf der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A> Methode.  
-  
- Es bestimmt den Namen des Elements durch einen Aufruf der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A> Methode und fordert die Symbolinformationen durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A> Methode. Das Symbol auf der linken Seite des Elementnamens angezeigt, und zeigt den Typ des Elements, den Zugriff auf und andere Eigenschaften.  
-  
- Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Objekt Manager Ruft die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> Methode, um zu bestimmen, ob ein bestimmtes Listenelement erweiterbar und untergeordnete Elemente verfügt. Wenn eine Anforderung an ein Element erweitern UI gesendet werden, fordert der Objekt-Manager die untergeordnete Liste von Symbolen durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> Methode. Der Prozess weiterhin mit verschiedenen Teilen der Struktur, die bei Bedarf erstellt wird.  
-  
+**Objektkatalog**, **Klassenansicht**, **Aufrufbrowser** und **Ergebnisse der Symbolsuche** Tools bieten Symbol Suchfunktionen in Visual Studio. Diese Tools Ansichten der hierarchischen Struktur von Symbolen angezeigt, und die Beziehungen zwischen den Symbolen in der Struktur angezeigt. Die Symbole können Namespaces, Objekte, Klassen, Klassenmembern und anderen Sprachelemente, die in verschiedenen Komponenten enthalten darstellen. Zu den Komponenten zählen Visual Studio-Projekte, externe [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] Komponenten und Typbibliotheken (TLB). Weitere Informationen finden Sie unter [Anzeigen der Codestruktur](../../ide/viewing-the-structure-of-code.md).
+
+## <a name="symbol-browsing-libraries"></a>Symbol zum Durchsuchen von Bibliotheken
+ Als eine Sprache-Implementierung können Sie die Funktionen von Visual Studio zum Durchsuchen von Symbolen durch Erstellen von Bibliotheken, die die Symbole in Ihren Komponenten nachverfolgen, und geben Sie die Liste der Symbole auf dem Visual Studio-Objekt-Manager über einen Satz von Schnittstellen erweitern. Eine Bibliothek wird beschrieben, durch die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2> Schnittstelle. Der Objekt-Manager für Visual Studio reagiert auf Anforderungen für neue Daten über die Tools zum Durchsuchen von Symbolen durch Abrufen von Daten aus den Bibliotheken und Organisieren sie. Klicken sie anschließend füllt oder aktualisiert die Tools, mit der angeforderten Daten. Abrufen eines Verweises auf die Visual Studio-Objekt-Manager, <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>, übergeben die <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> -service-ID, die `GetService` Methode.
+
+ Jede Bibliothek muss bei der Visual Studio-Objekt-Manager registrieren, und die Informationen zu allen Bibliotheken zu sammeln. Um eine Bibliothek zu registrieren, rufen die <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> Methode. Je nachdem, welches Tool die Anforderung initiiert wird wird der Objekt-Manager für Visual Studio sucht die entsprechende Bibliothek und fordert Daten. Die Datenübertragung zwischen den Bibliotheken und die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Objekt-Manager in der Liste der Symbole beschrieben, die von der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> Schnittstelle.
+
+ Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Objekt-Manager ist verantwortlich für das Aktualisieren in regelmäßigen Abständen von Tools zum Durchsuchen von Symbolen, entsprechend die aktuellen Daten, die in den Bibliotheken enthalten.
+
+ Das folgende Diagramm enthält ein Beispiel für wichtige Elemente, die den Anforderungen/Data Exchange-Prozess zwischen einer Bibliothek und der Objekt-Manager für Visual Studio. Die Schnittstellen in der Abbildung sind Teil einer Anwendung mit verwaltetem Code.
+
+ ![Datenfluss zwischen einer Bibliothek und der Objekt-Manager](../../extensibility/internals/media/callbrowserdiagram.gif "CallBrowserDiagram")
+
+ Die Listen von Symbolen, um dem Objekt-Manager von Visual Studio zu bieten, müssen Sie zuerst die Bibliothek mit der Objekt-Manager für Visual Studio registrieren, durch den Aufruf der <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> Methode. Nachdem die Bibliothek registriert wurde, fordert der Objekt-Manager für Visual Studio bestimmte Informationen zu den Funktionen der Bibliothek. Beispielsweise er fordert die Bibliotheksflags und unterstützt Sie durch Aufrufen von Kategorien der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetLibFlags2%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetSupportedCategoryFields2%2A> Methoden. An einem bestimmten Punkt, wenn eines der Tools aus dieser Bibliothek, die Daten anfordert der Objekt-Manager fordert die obersten Ebene Liste von Symbolen durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2.GetList2%2A> Methode. Im Gegenzug die Bibliothek stellt eine Liste von Symbolen und macht es für den Visual Studio-Objekt-Manager über die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> Schnittstelle. Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Objekt-Manager bestimmt, wie viele Elemente in der Liste befinden, durch den Aufruf der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A> Methode. Alle folgende Anforderungen beziehen sich auf ein bestimmtes Element in der Liste, und geben die Indexnummer des Elements in jeder Anforderung. Der Visual Studio-Objekt-Manager wird zum Sammeln von Informationen auf den Typ, der Zugriff auf und andere Eigenschaften des Elements durch den Aufruf der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A> Methode.
+
+ Es bestimmt den Namen des Elements durch einen Aufruf der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A> Methode und fordert die Symbolinformationen durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A> Methode. Das Symbol auf der linken Seite des Elementnamens angezeigt, und zeigt den Typ des Elements, den Zugriff auf und andere Eigenschaften.
+
+ Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Objekt Manager Ruft die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> Methode, um zu bestimmen, ob ein bestimmtes Listenelement erweiterbar und untergeordnete Elemente verfügt. Wenn eine Anforderung an ein Element erweitern UI gesendet werden, fordert der Objekt-Manager die untergeordnete Liste von Symbolen durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> Methode. Der Prozess weiterhin mit verschiedenen Teilen der Struktur, die bei Bedarf erstellt wird.
+
 > [!NOTE]
->  Um einen systemeigenen Code Symbol-Anbieter implementieren, verwenden die <xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> Schnittstellen.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Registrieren einer Bibliothek mit der Objekt-Manager](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
- [Vorgehensweise: Verfügbarmachen der Listen von Symbolen, die von der Bibliothek bereitgestellt, der Objekt-Manager](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)   
- [Vorgehensweise: Identifizieren von Symbolen in einer Bibliothek](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)
+> Um einen systemeigenen Code Symbol-Anbieter implementieren, verwenden die <xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> Schnittstellen.
+
+## <a name="see-also"></a>Siehe auch
+- [Vorgehensweise: Registrieren einer Bibliothek beim Objekt-Manager](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
+- [Vorgehensweise: Verfügbarmachen der Listen von Symbolen, die von der Bibliothek für den Objekt-Manager bereitgestellt werden](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+- [Vorgehensweise: Identifizieren von Symbolen in einer Bibliothek](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)

@@ -1,14 +1,9 @@
 ---
 title: Befehlsfenster | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.CommandWindow
 helpviewer_keywords:
@@ -21,18 +16,17 @@ ms.assetid: 48711628-1909-4713-a73e-d7b714c77f8a
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b83a9e86aea02e27242a0c1f02ca3f8459152214
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 491d6c044b22a89e8ea61a78d5dd70e0a348b893
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870184"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441456"
 ---
 # <a name="command-window"></a>Befehlsfenster
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Das Fenster **Befehl** wird verwendet, um Befehle oder Aliase direkt in der integrierten Entwicklungsumgebung (IDE) von [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] auszuführen. Sie können sowohl Menübefehle als auch Befehle ausführen, die in keinem Menü angezeigt werden. Wählen Sie zum Anzeigen des Fensters **Befehl** im Menü **Ansicht** den Befehl **Weitere Fenster** aus, und klicken Sie dann auf **Befehlsfenster**.  
   
 ## <a name="displaying-the-values-of-variables"></a>Anzeigen der Werte von Variablen  
@@ -68,7 +62,7 @@ Das Fenster **Befehl** wird verwendet, um Befehle oder Aliase direkt in der inte
 |Im Fenster einen Bildlauf nach unten durchführen|Inhalt im Befehlsfenster|NACH-UNTEN oder STRG+NACH-UNTEN|  
   
 > [!TIP]
->  Sie können den zuvor ausgegebenen Befehl ganz oder teilweise in die Eingabezeile kopieren, indem Sie einen Bildlauf dorthin durchführen, den Befehl ganz oder teilweise hervorheben und dann die EINGABETASTE drücken.  
+> Sie können den zuvor ausgegebenen Befehl ganz oder teilweise in die Eingabezeile kopieren, indem Sie einen Bildlauf dorthin durchführen, den Befehl ganz oder teilweise hervorheben und dann die EINGABETASTE drücken.  
   
 ## <a name="mark-mode"></a>Markierungsmodus  
  Wenn Sie im Fenster **Befehl** auf eine zuvor ausgegebene Zeile klicken, schalten Sie automatisch in den Markierungsmodus um. Auf diese Weise können Sie den Text vorheriger Befehle wie in einem beliebigen anderen Text-Editor markieren, bearbeiten, kopieren und in die aktuelle Zeile einfügen.  
@@ -110,7 +104,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 - `var[1-3]+` sowie `oldpar` sind Parameter.  
   
   > [!NOTE]
-  >  Jeder Befehl, Parameter, Schalter oder Wert, der Leerzeichen enthält, muss in doppelte Anführungszeichen eingeschlossen werden.  
+  > Jeder Befehl, Parameter, Schalter oder Wert, der Leerzeichen enthält, muss in doppelte Anführungszeichen eingeschlossen werden.  
   
   Die Position von Schaltern und Parametern kann im Allgemeinen frei auf der Befehlszeile kombiniert werden, mit Ausnahme des [Shell](../../ide/reference/shell-command.md)-Befehls, für den eine bestimmte Reihenfolge der Schalter und Parameter erforderlich ist.  
   
@@ -133,6 +127,3 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 ## <a name="see-also"></a>Siehe auch  
  [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)   
  [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)
-
-
-

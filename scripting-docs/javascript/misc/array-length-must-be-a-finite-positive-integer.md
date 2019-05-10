@@ -1,14 +1,9 @@
 ---
 title: Die Arraylänge muss eine endliche positive Ganzzahl sein | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5029
 dev_langs:
@@ -16,23 +11,22 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 1a467040-4702-4178-848f-418a5974e907
-caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c6589bd2e9bb4acbec5f169087a49e64417dfae7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 31673205a7ca94783985e0249c5664b4bbca6147
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62818123"
 ---
 # <a name="array-length-must-be-a-finite-positive-integer"></a>Die Arraylänge muss eine endliche positive Ganzzahl sein.
 Sie sind Aufrufen der **Array** Konstruktor mit einem Argument, das keine ganze Zahl ist (ganze Zahlen bestehen aus 0 (null) und den Satz von positiven ganzen Zahlen).  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Verwenden von positiven ganzen Zahlen, nur beim Erstellen eines neuen `Array` Objekt. Sollten Sie ein Array mit einem einzelnen Element zu erstellen, die keine ganze Zahl ist, führen Sie es in einem zweistufigen Prozess. Zuerst erstellen Sie ein Array, mit je einem Element und dann fügen Sie den Wert in das erste Element (array[0]). Im folgenden finden ein Beispiel, das diesen Fehler generiert.  
+- Verwenden von positiven ganzen Zahlen, nur beim Erstellen eines neuen `Array` Objekt. Sollten Sie ein Array mit einem einzelnen Element zu erstellen, die keine ganze Zahl ist, führen Sie es in einem zweistufigen Prozess. Zuerst erstellen Sie ein Array, mit je einem Element und dann fügen Sie den Wert in das erste Element (array[0]). Im folgenden finden ein Beispiel, das diesen Fehler generiert.  
   
     ```JavaScript  
     var piArray = new Array(3.14159);  

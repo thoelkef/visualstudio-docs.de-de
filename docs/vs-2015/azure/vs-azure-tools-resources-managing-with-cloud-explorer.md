@@ -1,8 +1,8 @@
 ---
-title: Verwalten von Azure-Ressourcen mit Cloud-Explorer | Microsoft-Dokumentation
-description: Erfahren Sie, wie Sie mit der Cloud-Explorer zum Durchsuchen und Verwalten von Azure-Ressourcen in Visual Studio.
+title: Verwalten von Azure-Ressourcen mit dem Cloud-Explorer | Microsoft Docs
+description: Informationen dazu, wie Sie Azure-Ressourcen mit dem Cloud-Explorer innerhalb von Visual Studio durchsuchen und verwalten.
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 6347dc53-f497-49d5-b29b-e8b9f0e939d7
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
@@ -11,100 +11,100 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: a5b75aa5e1310e02befe162199472eef987d7cd9
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 25995eacc961474fcb6486668c918d2e5be5ba76
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51001714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62936178"
 ---
-# <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Verwalten der Ihren Azure-Konten im Visual Studio Cloud-Explorer zugeordneten Ressourcen
+# <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Verwalten der Ihren Azure-Konten zugeordneten Ressourcen im Visual Studio Cloud-Explorer
 
-Cloud-Explorer können Sie Ihre Azure-Ressourcen und Ressourcengruppen anzeigen, deren Eigenschaften überprüfen und wichtige Diagnosen entwickleraktionen in Visual Studio ausführen. 
+Mit dem Cloud-Explorer können Sie Ihre Azure-Ressourcen und -Ressourcengruppen anzeigen, deren Eigenschaften überprüfen und wichtige Entwickleraktionen für die Diagnose in Visual Studio ausführen.
 
-Wie die [Azure-Portal](http://go.microsoft.com/fwlink/p/?LinkID=525040), Cloud-Explorer auf dem Azure Resource Manager-Stapel erstellt wird. Aus diesem Grund erkennt Cloud-Explorer, Ressourcen wie Azure-Ressourcengruppen und Azure-Diensten wie Logic apps und API-apps und unterstützt [Role-based Access Control,](/azure/role-based-access-control/role-assignments-portal.md) (RBAC). 
+Der Cloud-Explorer setzt wie das [Azure-Portal](http://go.microsoft.com/fwlink/p/?LinkID=525040) auf dem Azure Resource Manager-Stapel auf. Daher kann der Cloud-Explorer mit Ressourcen wie Azure-Ressourcengruppen und Azure-Diensten wie Logic Apps und API-Apps arbeiten und unterstützt die [rollenbasierte Zugriffssteuerung](/azure/role-based-access-control/role-assignments-portal) (Role-Based Access Control, RBAC).
 
 ## <a name="prerequisites"></a>Vorraussetzungen
 
-* Visual Studio 2015 mit dem [Microsoft Azure SDK für .NET 2.9](https://www.microsoft.com/en-us/download/details.aspx?id=51657).
-* Microsoft Azure-Konto – Wenn Sie kein Konto besitzen, können Sie [registrieren Sie sich für eine kostenlose Testversion](http://go.microsoft.com/fwlink/?LinkId=623901) oder [Ihre Visual Studio-abonnentenvorteile aktivieren](http://go.microsoft.com/fwlink/?LinkId=623901).
+* Visual Studio 2015 mit dem [Microsoft Azure SDK für .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657).
+* Microsoft Azure-Konto: Wenn Sie noch nicht über ein Konto verfügen, können Sie sich [für eine kostenlose Testversion registrieren](http://go.microsoft.com/fwlink/?LinkId=623901) oder Ihre [Visual Studio-Abonnentenvorteile aktivieren](http://go.microsoft.com/fwlink/?LinkId=623901).
 
 > [!NOTE]
-> Wählen Sie zum Anzeigen von Cloud-Explorer **Ansicht** > **Cloud-Explorer** in der Menüleiste.
+> Um den Cloud-Explorer anzuzeigen, wählen Sie auf der Menüleiste die Option **Ansicht** > **Cloud-Explorer**.
 
-## <a name="add-an-azure-account-to-cloud-explorer"></a>Hinzufügen eines Azure-Konto zum Cloud-Explorer
+## <a name="add-an-azure-account-to-cloud-explorer"></a>Hinzufügen eines Azure-Kontos zum Cloud-Explorer
 
-Um die Azure-Konto zugeordneten Ressourcen anzuzeigen, müssen Sie das Konto zuerst zum Cloud-Explorer hinzufügen. 
+Um die Ressourcen anzuzeigen, die einem Azure-Konto zugeordnet sind, müssen Sie das Konto zuerst zum Cloud-Explorer hinzufügen.
 
-1. In **Cloud-Explorer**Option **Azure-kontoeinstellungen**.
+1. Wählen Sie im **Cloud-Explorer** die Option **Azure-Kontoeinstellungen**.
 
-   ![Symbol "Einstellungen" Cloud-Explorer-Azure-Konto](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
+   ![Symbol für die Azure-Kontoeinstellungen im Cloud-Explorer](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
 
-1. Wählen Sie **Verwalten von Konten**. 
+1. Wählen Sie **Konten verwalten** aus.
 
-   ![Link für Cloud-Explorer-Konto hinzufügen](./media/vs-azure-tools-resources-managing-with-cloud-explorer/manage-accounts-link.png)
+   ![Cloud-Explorer-Link zum Hinzufügen eines Kontos](./media/vs-azure-tools-resources-managing-with-cloud-explorer/manage-accounts-link.png)
 
-1. Melden Sie sich an den Azure-Konto, dessen Ressourcen Sie durchsuchen möchten. 
+1. Melden Sie sich bei dem Azure-Konto an, dessen Ressourcen Sie durchsuchen möchten.
 
-1. Sobald Sie angemeldet sind, um ein Azure-Konto, zeigen die mit diesem Konto verknüpften Abonnements. Wählen Sie die Kontrollkästchen für die Kontoabonnements, die Sie verwenden möchten, suchen und wählen Sie dann **übernehmen**. 
+1. Wenn Sie bei einem Azure-Konto angemeldet sind, werden die Abonnements angezeigt, die diesem Konto zugeordnet sind. Aktivieren Sie die Kontrollkästchen für die Kontoabonnements, die Sie durchsuchen möchten, und wählen dann **Übernehmen**.
 
-   ![Cloud-Explorer: Wählen Sie anzuzeigende Azure-Abonnements](./media/vs-azure-tools-resources-managing-with-cloud-explorer/select-subscriptions.png)
+   ![Cloud-Explorer: anzuzeigende Azure-Abonnements auswählen](./media/vs-azure-tools-resources-managing-with-cloud-explorer/select-subscriptions.png)
 
-1. Nach der Auswahl der Abonnements, deren Ressourcen Sie durchsuchen möchten, zeigen diese Abonnements und Ressourcen im Cloud-Explorer aus.
+1. Nach der Auswahl der Abonnements, deren Ressourcen Sie durchsuchen möchten, werden diese Abonnements und Ressourcen im Cloud-Explorer angezeigt.
 
-   ![Cloud-Explorer-Ressourcenliste für ein Azure-Konto](./media/vs-azure-tools-resources-managing-with-cloud-explorer/resources-listed.png)
+   ![Ressourcenliste für ein Azure-Konto im Cloud-Explorer](./media/vs-azure-tools-resources-managing-with-cloud-explorer/resources-listed.png)
 
-## <a name="remove-an-azure-account-from-cloud-explorer"></a>Entfernen Sie ein Azure-Konto im Cloud-Explorer 
+## <a name="remove-an-azure-account-from-cloud-explorer"></a>Entfernen eines Azure-Kontos aus dem Cloud-Explorer
 
-1. In **Cloud-Explorer**Option **Kontoverwaltung**.
+1. Wählen Sie im **Cloud-Explorer** die Option **Kontenverwaltung** aus.
 
-   ![Symbol "Einstellungen" Cloud-Explorer-Azure-Konto](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
+   ![Symbol für die Azure-Kontoeinstellungen im Cloud-Explorer](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
 
-1. Wählen Sie neben dem Konto, das Sie entfernen möchten, **Verwalten von Konten**.
+1. Wählen Sie neben dem Konto, das Sie entfernen möchten, **Konten verwalten** aus.
 
-   ![Symbol "Einstellungen" Cloud-Explorer-Azure-Konto](./media/vs-azure-tools-resources-managing-with-cloud-explorer/remove-account.png)
+   ![Symbol für die Azure-Kontoeinstellungen im Cloud-Explorer](./media/vs-azure-tools-resources-managing-with-cloud-explorer/remove-account.png)
 
-1. Wählen Sie **entfernen** um ein Konto zu entfernen.
+1. Wählen Sie **Entfernen** aus, um ein Konto zu entfernen.
 
-    ![Cloud-Explorer Verwalten von Konten (Dialogfeld)](./media/vs-azure-tools-resources-managing-with-cloud-explorer/accountmanage.PNG)
+    ![Cloud-Explorer-Dialogfeld „Konten verwalten“](./media/vs-azure-tools-resources-managing-with-cloud-explorer/accountmanage.PNG)
 
 ## <a name="view-resource-types-or-resource-groups"></a>Anzeigen von Ressourcentypen oder Ressourcengruppen
 
-Um Ihre Azure-Ressourcen anzuzeigen, wählen Sie entweder **Ressourcentypen** oder **Ressourcengruppen** anzeigen.
+Um Ihre Azure-Ressourcen anzuzeigen, wählen Sie entweder die Ansicht **Ressourcentypen** oder **Ressourcengruppen** aus.
 
-1. In **Cloud-Explorer**, wählen Sie die Dropdownliste für die Ressourcenansicht.
+1. Wählen Sie im **Cloud-Explorer** die Dropdownliste für die Ressourcenansicht.
 
    ![Cloud-Explorer-Dropdownliste zum Auswählen der gewünschten Ressourcenansicht](./media/vs-azure-tools-resources-managing-with-cloud-explorer/resources-view-dropdown.png)
 
-1. Wählen Sie im Kontextmenü die gewünschte Ansicht aus: 
+1. Wählen Sie im Kontextmenü die gewünschte Ansicht aus:
 
-   * **Ressourcentypen** anzeigen – die übliche Ansicht der [Azure-Portal](http://go.microsoft.com/fwlink/p/?LinkID=525040), zeigt Ihre Azure-Ressourcen Typkategorien, z. B. Web-apps, Speicherkonten und virtuelle Computer. 
-   * **Ressourcengruppen** anzeigen: Zeigt Azure-Ressourcen von Azure-Ressourcengruppe mit dem sie zugeordnet sind. Eine Ressourcengruppe ist ein Bündel von Azure-Ressourcen in der Regel eine bestimmte Anwendung verwendet. Weitere Informationen zu Azure-Ressourcengruppen finden Sie unter [Übersicht über Azure Resource Manager](/azure/azure-resource-manager/resource-group-overview).
+   * Ansicht **Ressourcentypen**: Die übliche Ansicht im [Azure-Portal](http://go.microsoft.com/fwlink/p/?LinkID=525040), zeigt Ihre Azure-Ressourcen in Typkategorien wie Web-Apps, Speicherkonten und virtuellen Computern.
+   * In Ansicht **Ressourcengruppen**: Zeigt Azure-Ressourcen gemäß der Kategorie der Azure-Ressourcengruppe, der sie zugeordnet sind. Eine Ressourcengruppe ist ein Bündel von Azure-Ressourcen, die in der Regel von einer bestimmten Anwendung verwendet werden. Weitere Informationen zu Azure-Ressourcengruppen finden Sie unter [Azure Resource Manager – Übersicht](/azure/azure-resource-manager/resource-group-overview).
 
    Die folgende Abbildung zeigt einen Vergleich der beiden Ressourcenansichten:
 
-   ![Cloud-Explorer-Ressourcenansichten](./media/vs-azure-tools-resources-managing-with-cloud-explorer/resource-views-comparison.png)
+   ![Vergleich der Cloud-Explorer-Ressourcenansichten](./media/vs-azure-tools-resources-managing-with-cloud-explorer/resource-views-comparison.png)
 
-## <a name="view-and-navigate-resources-in-cloud-explorer"></a>Zeigen Sie an von und navigieren Sie Ressourcen im Cloud-Explorer
+## <a name="view-and-navigate-resources-in-cloud-explorer"></a>Anzeigen von und Navigieren in Ressourcen im Cloud-Explorer
 
-Klicken Sie zum Navigieren zu einer Azure-Ressource aus, und die Informationen im Cloud-Explorer anzuzeigen, erweitern Sie Typ oder die zugeordnete Ressourcengruppe des Elements, und wählen Sie dann auf die Ressource. Wenn Sie eine Ressource auswählen, Informationen angezeigt, auf den beiden Registerkarten - **Aktionen** und **Eigenschaften** : am unteren Rand der Cloud-Explorer.
+Um zu einer Azure-Ressource zu navigieren und zugehörige Informationen im Cloud-Explorer anzuzeigen, erweitern Sie den Typ oder die zugeordnete Ressourcengruppe des Elements und wählen dann die Ressource aus. Wenn Sie eine Ressource auswählen, werden Informationen auf den beiden Registerkarten **Aktionen** und **Eigenschaften** unten im Cloud-Explorer angezeigt.
 
-* **Aktionen** Registerkarte: führt die Aktionen, die Sie im Cloud-Explorer für die ausgewählte Ressource ausführen können. Sie können diese Optionen auch anzeigen, durch Rechtsklick auf die Ressource, um das Kontextmenü anzuzeigen.
+* Registerkarte **Aktionen**: Führt die Aktionen auf, die Sie im Cloud-Explorer für die ausgewählte Ressource ausführen können. Sie können diese Optionen auch anzeigen, indem Sie mit der rechten Maustaste auf die Ressource klicken, um das Kontextmenü zu öffnen.
 
-* **Eigenschaften** Registerkarte: Zeigt die Eigenschaften der Ressource, z.B. Typ, Gebietsschema und die Ressourcengruppe mit dem es verknüpft ist.
+* Registerkarte **Eigenschaften**: Zeigt die Eigenschaften der Ressource an, z.B. Typ, Gebietsschema und die Ressourcengruppe, der die Ressource zugeordnet ist.
 
-Die folgende Abbildung zeigt einen Beispiel-Vergleich von was Sie auf jeder Registerkarte für eine App Service finden Sie unter:
+Die folgende Abbildung zeigt einen Vergleich der Informationen, die auf beiden Registerkarten beispielsweise für eine App Service-Instanz angezeigt werden:
 
-  ![Screenshot des Cloud-Explorer](./media/vs-azure-tools-resources-managing-with-cloud-explorer/actions-and-properties.png)
+  ![Screenshot des Cloud-Explorers](./media/vs-azure-tools-resources-managing-with-cloud-explorer/actions-and-properties.png)
 
-Jede Ressource verfügt über die Aktion **im Portal öffnen**. Wenn Sie diese Aktion auswählen, zeigt der Cloud-Explorer die ausgewählte Ressource im der [Azure-Portal](http://go.microsoft.com/fwlink/p/?LinkID=525040). Die **im Portal öffnen** Funktion ist nützlich für die Navigation zu tief geschachtelten Ressourcen.
+Für jede Ressource gibt es die Aktion **Im Portal öffnen**. Wenn Sie diese Aktion auswählen, zeigt der Cloud-Explorer die ausgewählte Ressource im [Azure-Portal](http://go.microsoft.com/fwlink/p/?LinkID=525040)an. Das Feature **Im Portal öffnen** ist besonders nützlich für die Navigation in sehr tief geschachtelten Ressourcen.
 
-Zusätzliche Aktionen und Eigenschaftswerte können auch basierend auf der Azure-Ressource angezeigt. Angenommen, Web-apps und Logik-apps auch verfügen über die Aktionen **im Browser öffnen** und **Debugger Anfügen** zusätzlich zu **im Portal öffnen**. Aktionen zum Öffnen von Editoren werden angezeigt, wenn Sie ein Speicherkonto-Blob, Warteschlange oder Tabelle auswählen. Azure-apps stehen **URL** und **Status** Eigenschaften, während Speicherressourcen Schlüssel und Verbindungszeichenfolgen-Eigenschaften aufweisen.
+Zusätzliche Aktionen und Eigenschaftswerte können auch basierend auf der Azure-Ressource angezeigt werden. Für Web- und Logik-Apps gibt es zusätzlich zu **Im Portal öffnen** die Aktionen **Im Browser öffnen** und **Debugger anfügen**. Aktionen zum Öffnen von Editoren werden angezeigt, wenn Sie ein Blob, eine Warteschlange oder Tabelle eines Speicherkontos auswählen. Für Azure-Apps stehen die Eigenschaften **URL** und **Status** zur Verfügung, während Speicherressourcen Schlüssel und Verbindungszeichenfolgen-Eigenschaften aufweisen.
 
 ## <a name="find-resources-in-cloud-explorer"></a>Suchen von Ressourcen im Cloud-Explorer
 
-Um in Ihren Azure-Kontoabonnements Ressourcen mit einem bestimmten Namen suchen, geben Sie auf den Namen in der **Suche** Feld im Cloud-Explorer.
+Um in Ihren Azure-Kontoabonnements Ressourcen mit einem bestimmten Namen zu suchen, geben Sie den Namen in das Feld **Suchen** im Cloud-Explorer ein.
 
   ![Suchen von Ressourcen im Cloud-Explorer](./media/vs-azure-tools-resources-managing-with-cloud-explorer/search-for-resources.png)
 
-Eingabe von Zeichen in der **Suche** Feld nur Ressourcen, die diese Zeichen entsprechen, die in der Ressourcenstruktur angezeigt werden.
+Bei der Eingabe von Zeichen in das Feld **Suchen** werden in der Ressourcenstruktur nur die Ressourcen angezeigt, die mit diesen Zeichen übereinstimmen.

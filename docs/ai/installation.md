@@ -7,16 +7,14 @@ ms.author: liwong
 manager: routlaw
 ms.date: 11/13/2017
 ms.topic: conceptual
-ms.devlang: multiple
-ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: ab5101d6b6ddca4a86e635fff70b52429888001a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 623aa21e94ff25b8190bae82ca836ed16f64bcaa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821100"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62548454"
 ---
 # <a name="installation"></a>Installation
 
@@ -26,7 +24,7 @@ Visual Studio-Tools für Künstliche Intelligenz (KI) können auf 64-Bit-Windows
 
 Diese Erweiterung gilt für Visual Studio 2015 und Visual Studio 2017 in der Community Edition oder höher.
 
-Sie können die Tools aus [Visual Studio Marketplace](http://aka.ms/vstoolsforai) oder direkt in Visual Studio herunterladen:
+Sie können die Tools aus [Visual Studio Marketplace](https://aka.ms/vstoolsforai) oder direkt in Visual Studio herunterladen:
 
 1. Wählen Sie **Tools** > **Erweiterungen und Updates** aus.
 
@@ -89,6 +87,7 @@ Deep Learning-Frameworks benötigen pip für die Installation.
 Anschließend sollten Sie prüfen, ob Python 3.5 richtig installiert ist, und aktualisieren Sie pip auf die neuste Version, indem Sie den folgenden Befehl über ein Terminal ausführen:
 
 - **Windows**
+
     ```cmd
     C:\Users\test>python -V
     Python 3.5.4
@@ -100,6 +99,7 @@ Anschließend sollten Sie prüfen, ob Python 3.5 richtig installiert ist, und ak
     ```
 
 - **macOS**
+
     ```bash
     MyMac:~ test$ python3.5 -V
     Python 3.5.4
@@ -161,10 +161,13 @@ Gehen Sie auf diesen [Link](https://caffe2.ai/docs/getting-started.html), um Que
 Führen Sie den folgenden Befehl über ein Terminal aus, um MXNet zu installieren:
 
 - Mit GPU
+
     ```bash
     pip3.5 install mxnet-cu80==0.12.0
     ```
+
 - Ohne GPU
+
     ```bash
     pip3.5 install mxnet==0.12.0
     ```
@@ -199,21 +202,32 @@ pip3.5 install Theano==0.9.0
 Führen Sie den folgenden Befehl über ein Terminal aus, um PyTorch zu installieren:
 
 - **Windows**
-    - Derzeit gibt es noch kein offizielles Wheel-Paket. Sie können aber ein [Anaconda PyTorch-Paket](https://anaconda.org/pytorch/repo?type=all) eines Drittanbieters herunterladen.
-    - Dekomprimieren Sie es in Ihr Basisverzeichnis, z.B.: „C:\Users\test\pytorch“.
-    - Fügen Sie „C:\Users\test\pytorch\Lib\site-packages“ der Umgebungsvariablen „%PYTHONPATH%“ hinzu.
+
+   Derzeit gibt es noch kein offizielles Wheel-Paket. Sie können von [Anaconda](https://anaconda.org/pytorch/repo?type=all) oder von der [University of California](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pytorch) ein Drittanbieter-Paket herunterladen.
+
+   - Dekomprimieren Sie es in Ihrem Basisverzeichnis, z. B. in *C:\Users\test\pytorch*.
+   - Fügen Sie *C:\Users\test\pytorch\Lib\site-packages* der Umgebungsvariable „%PYTHONPATH%“ hinzu.
+
+      ```bash
+      pip3 install http://download.pytorch.org/whl/cu80/torch-0.4.0-cp36-cp36m-win_amd64.whl
+      pip3 install torchvision
+      ```
 
 - **macOS**
+
     ```bash
     pip3.5 install http://download.pytorch.org/whl/torch-0.2.0.post3-cp35-cp35m-macosx_10_7_x86_64.whl
     ```
+
     > [!NOTE]
     > macOS-Binärdateien unterstützen CUDA nicht. Führen Sie daher eine Installation aus der Quelle durch, wenn CUDA benötigt wird.
 
 - **Linux**
+
     ```bash
     pip3.5 install http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp35-cp35m-manylinux1_x86_64.whl
     ```
+
     > [!NOTE]
     > Dieses einzelne Paket unterstützt sowohl GPU als auch CPU.
 

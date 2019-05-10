@@ -1,30 +1,29 @@
 ---
-title: Workload- und Komponenten-IDs in Visual Studio Feedback Client 2017
+title: Workload- und Komponenten-IDs in Visual Studio Feedback Client
 titleSuffix: ''
 description: Verwenden von Workload- und Komponenten-IDs in Visual Studio, um umfangreiches Feedback für Azure DevOps Services oder Team Foundation Server zu geben
 keywords: ''
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.date: 11/13/2018
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
-ms.service: ''
-ms.prod: visual-studio-dev15
 ms.assetid: 7392a100-100c-458c-9394-828695109015
-ms.workload:
-- multiple
-ms.openlocfilehash: 408f6b01cbc008ae1357c20d06882f08fe8b960e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+monikerRange: vs-2017
+ms.openlocfilehash: f23af12a79e1b04c193e85c6fa31ac225af68a6d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62960748"
 ---
-# <a name="visual-studio-feedback-client-2017-component-directory"></a>Visual Studio Feedback Client 2017-Komponentenverzeichnis
+# <a name="visual-studio-feedback-client-component-directory"></a>Visual Studio Feedback Client: Komponentenverzeichnis
 
 In den Tabellen auf dieser Seite sind die IDs aufgeführt, die Sie verwenden können, um Visual Studio über die Befehlszeile zu installieren, oder die Sie als Abhängigkeit in einem VSIX-Manifest angeben können. Beachten Sie, dass weitere Komponenten hinzugefügt werden, wenn wir Updates für Visual Studio veröffentlichen.
 

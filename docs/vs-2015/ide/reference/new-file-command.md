@@ -1,14 +1,9 @@
 ---
 title: Befehl „Neue Datei“ | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - file.newfile
 helpviewer_keywords:
@@ -18,18 +13,17 @@ ms.assetid: 767868d6-a525-425b-a43b-2198f636ab6b
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1043dc600d339e2a0989bb71fc7e8a09e712e102
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bb86a15e73ac2410ad763acd3b361e4a82bc44f1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264094"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662425"
 ---
 # <a name="new-file-command"></a>Befehl "Neue Datei"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Erstellt eine neue Datei und öffnet sie. Die Datei wird unter „Sonstige Dateien“ (Ordner) angezeigt.  
   
 ## <a name="syntax"></a>Syntax  
@@ -80,6 +74,3 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
  [Direktfenster](../../ide/reference/immediate-window.md)   
  [Such-/Befehlsfeld](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

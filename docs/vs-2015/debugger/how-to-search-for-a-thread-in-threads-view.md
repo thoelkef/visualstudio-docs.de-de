@@ -1,29 +1,24 @@
 ---
-title: 'Vorgehensweise: Suchen nach einem Thread in der Ansicht "Threads" | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Suchen Sie nach einem Thread in der Ansicht "Threads" | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - threads, searching
 ms.assetid: 5609a9b3-c279-4426-9e2e-dd87896a6d6f
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fb1c3979b0505305fd4f6a600e3352c0d08955de
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d5974bc962faf439af8de5d50bf51bad3d824647
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439086"
 ---
-# <a name="how-to-search-for-a-thread-in-threads-view"></a>Gewusst wie: Suchen nach einem Thread in der Threadansicht
+# <a name="how-to-search-for-a-thread-in-threads-view"></a>Vorgehensweise: Suchen nach einem Thread in der Threadansicht
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können mithilfe der Thread-ID oder eine Modul-Zeichenfolge als Suchkriterium für einen bestimmten Thread in der Ansicht "Threads" suchen. Sie können auch die anfangsrichtung für die Suche angeben. Die Felder im Dialogfeld werden die Attribute des ausgewählten Threads in der Threadstruktur angezeigt werden.  
@@ -41,13 +36,10 @@ Sie können mithilfe der Thread-ID oder eine Modul-Zeichenfolge als Suchkriteriu
 4. Deaktivieren Sie alle Felder, die für die Sie keine Werte angeben möchten.  
   
    > [!TIP]
-   >  Um alle Threads, die im Besitz von einem Modul zu suchen, deaktivieren Sie die **Thread** nennen Sie das Textfeld, und geben das Modul die **Modul** Feld. Verwenden Sie dann **Weitersuchen** für Threads Suche fort.  
+   > Um alle Threads, die im Besitz von einem Modul zu suchen, deaktivieren Sie die **Thread** nennen Sie das Textfeld, und geben das Modul die **Modul** Feld. Verwenden Sie dann **Weitersuchen** für Threads Suche fort.  
   
 5. Wählen Sie **einrichten** oder **unten** für die anfängliche Richtung für die Suche.  
   
 6. Klicken Sie auf **OK**.  
   
    Wenn ein entsprechender Thread gefunden wird, wird es in der Threads an hervorgehoben.
-
-
-

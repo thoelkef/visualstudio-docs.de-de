@@ -1,27 +1,22 @@
 ---
 title: Starten eines Programms | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, launching
 - programs, launching
 ms.assetid: 6857e9c6-e44a-468a-afa4-f7c4a0b77844
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c3af2c1f571287a4a33c1dd57340e2a66197bd59
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b54250a54960f346f60c5d668755fb5d28ab376e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753963"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430212"
 ---
 # <a name="launching-a-program"></a>Starten eines Programms
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,12 +32,12 @@ Benutzer, die ein Programm debuggen möchten, können F5 zum Ausführen des Debu
     Wenn eine bereitgestellten Kompatibilitätsrichtlinie nicht angegeben ist, ruft der Port des Betriebssystems, um das Programm zu starten, das wodurch das Programm die Runtime-Umgebung geladen werden.  
   
    > [!NOTE]
-   >  Wenn ein DE zum Starten eines Programms verwendet wird, ist es wahrscheinlich, dass die gleichen DE an die Anwendung angefügt wird.  
+   > Wenn ein DE zum Starten eines Programms verwendet wird, ist es wahrscheinlich, dass die gleichen DE an die Anwendung angefügt wird.  
   
 3. Je nachdem, ob die DE oder den Port des Programms gestartet die DE oder die Laufzeitumgebung klicken Sie dann erstellt eine Beschreibung des Programms, oder klicken Sie auf Knoten und benachrichtigt den Port, den das Programm ausgeführt wird.  
   
    > [!NOTE]
-   >  Es wird empfohlen, dass die Laufzeitumgebung den Programm-Knoten, zu erstellen, da der Programm-Knoten eine vereinfachte Darstellung ein Programm ist, die debuggt werden kann. Besteht keine Notwendigkeit einer gesamten DE nur zum Erstellen und registrieren einen Knoten für die Anwendung laden. Wenn die DE entworfen wurde gerade die IDE, jedoch keine IDE ausführen tatsächlich auszuführen, muss es eine Komponente, die an den Port einen Programm Knoten hinzufügen können.  
+   > Es wird empfohlen, dass die Laufzeitumgebung den Programm-Knoten, zu erstellen, da der Programm-Knoten eine vereinfachte Darstellung ein Programm ist, die debuggt werden kann. Besteht keine Notwendigkeit einer gesamten DE nur zum Erstellen und registrieren einen Knoten für die Anwendung laden. Wenn die DE entworfen wurde gerade die IDE, jedoch keine IDE ausführen tatsächlich auszuführen, muss es eine Komponente, die an den Port einen Programm Knoten hinzufügen können.  
   
    Die neu erstellte Anwendung, zusammen mit alle anderen Programme, verknüpft oder unabhängig vom stagingstatus, gestartet oder angefügt werden, um die gleichen IDE, eine Debugsitzung zu verfassen.  
   
@@ -66,4 +61,3 @@ Benutzer, die ein Programm debuggen möchten, können F5 zum Ausführen des Debu
 ## <a name="related-sections"></a>Verwandte Abschnitte  
  [Debuggingaufgaben](../../extensibility/debugger/debugging-tasks.md)  
  Enthält Links zu verschiedenen Debuggen Aufgaben wie das Starten eines Programms und Auswerten von Ausdrücken.
-

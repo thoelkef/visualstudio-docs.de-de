@@ -1,14 +1,9 @@
 ---
 title: FindUnderPath-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#FindUnderPath
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: 3c6d58b0-36e8-47aa-bfca-b73dd2045d91
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a6ff04bad3f2f8c18175c8e96647fa1217c44725
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1c679352fb8db81379ab93e800efa9f631773c36
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198535"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666610"
 ---
 # <a name="findunderpath-task"></a>FindUnderPath-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Bestimmt, welche Elemente in der angegebenen Elementauflistung über Pfade im oder unter dem angegebenen Ordner verfügen  
   
 ## <a name="parameters"></a>Parameter  
@@ -48,7 +42,7 @@ Bestimmt, welche Elemente in der angegebenen Elementauflistung über Pfade im od
 |`Path`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem> -Parameter.<br /><br /> Gibt den Ordnerpfad an, der als Verweis verwendet werden soll|  
 |`UpdateToAbsolutePaths`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn TRUE, werden die Pfade der Ausgabeelemente als absolute Pfade aktualisiert.|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Beispiel  
@@ -85,6 +79,3 @@ Bestimmt, welche Elemente in der angegebenen Elementauflistung über Pfade im od
  [Task Reference](../msbuild/msbuild-task-reference.md)  (MSBuild-Aufgabenreferenz)  
  [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
  [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)
-
-
-

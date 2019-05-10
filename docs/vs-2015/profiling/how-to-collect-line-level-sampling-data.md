@@ -1,29 +1,24 @@
 ---
 title: 'Vorgehensweise: Sammeln von Samplingdaten auf Zeilenebene | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, line-level sampling
 ms.assetid: 44803aad-dd39-4c2e-9209-d35185d44983
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 21ef50736e00bd835b4e1bc88530d2aaef30ee82
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 65890bf31a1257c3a41bc1fd7ed3f732c50eda14
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51767547"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068098"
 ---
-# <a name="how-to-collect-line-level-sampling-data"></a>Gewusst wie: Sammeln von Samplingdaten auf Zeilenebene
+# <a name="how-to-collect-line-level-sampling-data"></a>Vorgehensweise: Sammeln von Samplingdaten auf Zeilenebene
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sampling auf Zeilenebene ermöglicht es dem Profiler zu bestimmen, wo eine prozessorintensive Funktion im Code ist, z.B. eine Funktion mit äußerst exklusiven Stichproben, die vom Prozessor die meiste Zeit beanspruchen.  
@@ -57,15 +52,12 @@ Sampling auf Zeilenebene ermöglicht es dem Profiler zu bestimmen, wo eine proze
 ### <a name="turn-off-line-level-sampling-for-managed-code"></a>Deaktivieren Sie das Sampling auf Zeilenebene für verwalteten Code  
  Sampling auf Zeilenebene ist standardmäßig aktiviert. Sie können die Datensammlung auf Zeilenebene für verwalteten Code deaktivieren, indem Sie einen der folgenden Schritte durchführen:  
   
--   Bevor Sie ein Profil erstellen, geben Sie **VSPerfCLREnv /samplelineoff** ein. Dies wirkt sich auf Anwendungen und Dienste aus.  
+- Bevor Sie ein Profil erstellen, geben Sie **VSPerfCLREnv /samplelineoff** ein. Dies wirkt sich auf Anwendungen und Dienste aus.  
   
      - oder -  
   
--   Wenn eine Anwendung starten, geben Sie **VSPerfCmd/lineoff \<other arguments >** ein.  
+- Wenn eine Anwendung starten, geben Sie **VSPerfCmd/lineoff \<other arguments >** ein.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)   
  [Analysieren der durch Leistungstools erstellten Daten](../profiling/analyzing-performance-tools-data.md)
-
-
-

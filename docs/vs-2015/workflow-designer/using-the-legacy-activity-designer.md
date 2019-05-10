@@ -1,11 +1,8 @@
 ---
 title: Verwenden des Aktivitätsdesigners der Vorgängerversion | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - activities, configuring
@@ -18,13 +15,13 @@ ms.assetid: 2fea8a05-6e58-423d-94bf-a822b15ffb80
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: a6c8aafe9eac26080bfbf57d06c7d512d1e1e62d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 5755c6a3b4ece5b40c7799d83bdf33966d5c2b3e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843430"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62855770"
 ---
 # <a name="using-the-legacy-activity-designer"></a>Verwenden des Aktivitätsdesigners der Vorgängerversion
 In diesem Thema wird beschrieben, wie der Aktivitätsdesigner in der Vorgängerversion von [!INCLUDE[wfd1](../includes/wfd1-md.md)] verwendet wird. Verwenden Sie den Designer der Vorgängerversion, wenn Sie auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.  
@@ -38,13 +35,13 @@ In diesem Thema wird beschrieben, wie der Aktivitätsdesigner in der Vorgängerv
   
 2. Wählen Sie die **Aktivität** oder **Aktivität (mit getrenntem Code)** Vorlage.  
   
-   1.  Verwenden der **Aktivität** Vorlage zum Erstellen einer Aktivität mit der Aktivitätsdefinition und dem Benutzercode in derselben Codedatei.  
+   1. Verwenden der **Aktivität** Vorlage zum Erstellen einer Aktivität mit der Aktivitätsdefinition und dem Benutzercode in derselben Codedatei.  
   
-   2.  Verwenden der **Aktivität (mit getrenntem Code)** Vorlage zum Erstellen einer Aktivität mit der als Workflowmarkup und dem Benutzercode in einer eigenen Codedatei ausgedrückte Aktivitätsdefinition.  
+   2. Verwenden der **Aktivität (mit getrenntem Code)** Vorlage zum Erstellen einer Aktivität mit der als Workflowmarkup und dem Benutzercode in einer eigenen Codedatei ausgedrückte Aktivitätsdefinition.  
   
 3. Geben Sie einen Aktivitätsnamen oder behalten Sie den Standardnamen, und klicken Sie dann auf **hinzufügen**.  
   
-   Sie können auch einen Satz von benutzerdefinierten Aktivitäten erstellen, durch das Erstellen eines neuen Projekts vom Typ **Workflowaktivitätsbibliothek**. Weitere Informationen zu diesem Projekttyp finden Sie unter [Vorgehensweise: Erstellen einer Workflowaktivitätsbibliothek (Vorgängerversion)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).  
+   Sie können auch einen Satz von benutzerdefinierten Aktivitäten erstellen, durch das Erstellen eines neuen Projekts vom Typ **Workflowaktivitätsbibliothek**. Weitere Informationen zu diesem Projekttyp finden Sie unter [Vorgehensweise: Erstellen eine Workflowaktivitätsbibliothek (Vorgängerversion)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).  
   
 ## <a name="configuring-an-activity"></a>Konfigurieren einer Aktivität  
  Wenn der Aktivitätsdesigner aktiv ist, können Sie mit dem Eigenschaftenbrowser die in der folgenden Tabelle aufgeführten Eigenschaften konfigurieren.  
@@ -64,5 +61,5 @@ In diesem Thema wird beschrieben, wie der Aktivitätsdesigner in der Vorgängerv
  [Erstellen von benutzerdefinierten Aktivitäten](http://go.microsoft.com/fwlink?LinkID=65021)   
  [Legacyworkflowaktivitäten](../workflow-designer/legacy-workflow-activities.md)   
  [Beispiele für benutzerdefinierte Aktivitäten](http://go.microsoft.com/fwlink?LinkID=65022)   
- [Vorgehensweise: erstellen eine Workflowaktivitätsbibliothek (Vorgängerversion)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)   
+ [Vorgehensweise: Erstellen einer Workflowaktivitätsbibliothek (Vorgängerversion)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)   
  [Verwenden des Legacyworkflow-Designers](../workflow-designer/using-the-legacy-workflow-designer.md)

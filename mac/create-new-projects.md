@@ -3,20 +3,20 @@ title: Erstellen neuer Projekte und Projektmappen
 description: In diesem Artikel erfahren Sie, wie Sie Projekte und Projektmappen in Visual Studio für Mac erstellen können.
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 04/02/2019
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: b6f355dbe10cf250ec397cb817643984b438a92e
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: ae69c71b3b70e950bc0b58b1c34335f3a52529df
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294265"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62983644"
 ---
 # <a name="creating-new-projects-and-solutions"></a>Erstellen neuer Projekte und Projektmappen
 
 ## <a name="creating-new-projects-and-solutions-from-a-template"></a>Erstellen neuer Projekte und Projektmappen mit einer Vorlage
 
-Projektmappen können zu jedem beliebigen Zeitpunkt mit einer vordefinierten Vorlage erstellt werden. Wenn Sie auf diese Weise eine Projektmappe erstellen möchten, navigieren Sie zu  **Datei > Neue Projektmappe**, wählen Sie die erforderliche Plattform bzw. die erforderlichen Plattformen und anschließend die erforderliche Vorlage aus:
+Projektmappen können zu jedem beliebigen Zeitpunkt mit einer vordefinierten Vorlage erstellt werden. Wählen Sie ab Visual Studio 2019 für Mac im Startfenster **Neu** aus. Als Alternative können Sie zu  **Datei > Neue Projektmappe** navigieren. Wählen Sie eine oder mehrere benötigte Plattformen aus und dann die benötigte Vorlage:
 
 ![Erstellen einer neuen Projektmappen](media/projects-and-solutions-image0.png)
 

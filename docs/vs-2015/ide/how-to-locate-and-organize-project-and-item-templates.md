@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Suchen und Organisieren von Projekt- und Elementvorlagen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], locations
 - custom template locations [Visual Studio]
@@ -20,15 +15,15 @@ ms.assetid: 71f9ed52-c9c9-4818-9bce-c279ffaa0438
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 2a3954e5d18db6585c8dbda017773969f96b33de
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4b14a374214a605ec718ad60c6942752f3134edd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830976"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416722"
 ---
-# <a name="how-to-locate-and-organize-project-and-item-templates"></a>Gewusst wie: Suchen und Organisieren von Projekt- und Elementvorlagen
+# <a name="how-to-locate-and-organize-project-and-item-templates"></a>Vorgehensweise: Suchen und Organisieren von Projekt- und Elementvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vorlagendateien müssen an einem Speicherort abgelegt werden, an dem Visual Studio nach den Vorlagen sucht, damit sie im Dialogfeld **Neues Projekt** und **Neues Element hinzufügen** angezeigt werden können. Sie können benutzerdefinierte Unterkategorien für Vorlagen erstellen, damit die Unterkategorien auch auf der Benutzeroberfläche angezeigt werden.  
@@ -56,7 +51,7 @@ Vorlagendateien müssen an einem Speicherort abgelegt werden, an dem Visual Stud
   
   Im folgenden Verzeichnis sind beispielsweise benutzerdefinierte [!INCLUDE[csprcs](../includes/csprcs-md.md)]-Projektvorlagen enthalten:  
   
-  C:\Documents und Einstellungen\Benutzername\Eigene Dokumente\\< Visual Studio-Version\>\Templates\ProjectTemplates\Visual C# \  
+  C:\Dokumente und Einstellungen\Benutzername\Eigene Dateien\\<Visual Studio-Version\>\Templates\ProjectTemplates\Visual C#\  
   
   Benutzerdefinierte Vorlagen enthalten kein Unterverzeichnis für lokalisierte Vorlagen. Sie können das Standardverzeichnis für benutzerdefinierte Vorlagen im Dialogfeld **Optionen** unter **Umgebung\Projekte und Projektmappen** ändern.  
   
@@ -64,7 +59,7 @@ Vorlagendateien müssen an einem Speicherort abgelegt werden, an dem Visual Stud
  Die Kategorien in den Dialogfeldern **Neues Projekt** und **Neues Element hinzufügen** spiegeln die Verzeichnisstrukturen wider, so wie sie an den Speicherorten für installierte und benutzerdefinierte Vorlagen angelegt sind. Sie können diese Verzeichnisstrukturen ändern, um Ihre Vorlagen in einer sinnvollen Weise zu organisieren.  
   
 > [!NOTE]
->  Auf Programmiersprachenebene können keine neuen Kategorien erstellt werden. Neue Kategorien können nur innerhalb der einzelnen Programmiersprachen erstellt werden.  
+> Auf Programmiersprachenebene können keine neuen Kategorien erstellt werden. Neue Kategorien können nur innerhalb der einzelnen Programmiersprachen erstellt werden.  
   
  Wenn die Verzeichnisstrukturen installierter und benutzerdefinierter Vorlagen einer bestimmten Programmiersprache nicht dieselbe Struktur aufweisen (ein Ordner verfügt beispielsweise über Unterverzeichnisse, die im anderen Ordner nicht enthalten sind), handelt es sich bei den Kategorien im Dialogfeld **Neues Projekt** um eine Zusammenfassung aller Kategorien.  
   
@@ -95,23 +90,23 @@ Vorlagendateien müssen an einem Speicherort abgelegt werden, an dem Visual Stud
   
 ##### <a name="to-create-new-installed-item-template-categories"></a>So erstellen Sie neue Kategorien für installierte Elementvorlagen  
   
-1.  Erstellen Sie einen Ordner im Programmiersprachenordner des Verzeichnisses für die installierte Vorlage. Um z. B. die Kategorie Web für [!INCLUDE[csprcs](../includes/csprcs-md.md)] -Elementvorlagen einzurichten, würden Sie das folgende Verzeichnis erstellen:  
+1. Erstellen Sie einen Ordner im Programmiersprachenordner des Verzeichnisses für die installierte Vorlage. Um z. B. die Kategorie Web für [!INCLUDE[csprcs](../includes/csprcs-md.md)] -Elementvorlagen einzurichten, würden Sie das folgende Verzeichnis erstellen:  
   
      \\*\VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\CSharp\1033\Web\  
   
-2.  Fügen Sie alle Vorlagen für diese Kategorie in den neuen Ordner ein.  
+2. Fügen Sie alle Vorlagen für diese Kategorie in den neuen Ordner ein.  
   
-3.  Schließen Sie alle Instanzen von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+3. Schließen Sie alle Instanzen von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-4.  Klicken Sie im Menü **Start** auf **Ausführen**, geben Sie **cmd** ein, und klicken Sie auf **OK**.  
+4. Klicken Sie im Menü **Start** auf **Ausführen**, geben Sie **cmd** ein, und klicken Sie auf **OK**.  
   
-5.  Suchen Sie an der Eingabeaufforderung das Verzeichnis, das „devenv.exe“ enthält, und geben Sie **devenv /setup** ein.  
+5. Suchen Sie an der Eingabeaufforderung das Verzeichnis, das „devenv.exe“ enthält, und geben Sie **devenv /setup** ein.  
   
-6.  Führen Sie aus [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+6. Führen Sie aus [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-7.  Erstellen Sie ein Projekt, oder öffnen Sie ein vorhandenes Projekt.  
+7. Erstellen Sie ein Projekt, oder öffnen Sie ein vorhandenes Projekt.  
   
-8.  Klicken Sie im Menü **Projekt** auf **Neues Element hinzufügen**.  
+8. Klicken Sie im Menü **Projekt** auf **Neues Element hinzufügen**.  
   
 9. Stellen Sie sicher, dass die Kategorie „Web“ im Dialogfeld **Neues Element hinzufügen** im Bereich **Projekttypen** angezeigt wird.  
   
@@ -122,7 +117,7 @@ Vorlagendateien müssen an einem Speicherort abgelegt werden, an dem Visual Stud
   
 1. Erstellen Sie im Verzeichnis für benutzerdefinierte Projektvorlagen einen Ordner im jeweiligen Programmiersprachenordner. Um z. B. die Kategorie "HelloWorld" für [!INCLUDE[csprcs](../includes/csprcs-md.md)] -Vorlagen einzurichten, erstellen Sie das folgende Verzeichnis:  
   
-    \My Dokumente\\< Visual Studio-Version\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
+    \Eigene Dateien\\<Visual Studio-Version\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
   
 2. Fügen Sie alle Vorlagen für diese Kategorie in den neuen Ordner ein.  
   
@@ -134,30 +129,30 @@ Vorlagendateien müssen an einem Speicherort abgelegt werden, an dem Visual Stud
   
 ##### <a name="to-create-new-custom-item-template-categories"></a>So erstellen Sie neue Kategorien für benutzerdefinierte Elementvorlagen  
   
-1.  Erstellen Sie im Verzeichnis für benutzerdefinierte Elementvorlagen einen Ordner im jeweiligen Programmiersprachenordner. Um z. B. die Kategorie HelloWorld für [!INCLUDE[csprcs](../includes/csprcs-md.md)] -Vorlagen einzurichten, würden Sie das folgende Verzeichnis erstellen:  
+1. Erstellen Sie im Verzeichnis für benutzerdefinierte Elementvorlagen einen Ordner im jeweiligen Programmiersprachenordner. Um z. B. die Kategorie HelloWorld für [!INCLUDE[csprcs](../includes/csprcs-md.md)] -Vorlagen einzurichten, würden Sie das folgende Verzeichnis erstellen:  
   
-     \My Dokumente\\< Visual Studio-Version\>\Templates\ItemTemplates\CSharp\HelloWorld\  
+     \Eigene Dateien\\<Visual Studio-Version\>\Templates\ProjectTemplates\Language\  
   
-2.  Fügen Sie alle Vorlagen für diese Kategorie in den neuen Ordner ein.  
+2. Fügen Sie alle Vorlagen für diese Kategorie in den neuen Ordner ein.  
   
-3.  Erstellen Sie ein Projekt, oder öffnen Sie ein vorhandenes Projekt.  
+3. Erstellen Sie ein Projekt, oder öffnen Sie ein vorhandenes Projekt.  
   
-4.  Klicken Sie im Menü **Projekt** auf **Neues Element hinzufügen**.  
+4. Klicken Sie im Menü **Projekt** auf **Neues Element hinzufügen**.  
   
-5.  Stellen Sie sicher, dass die Kategorie „HelloWorld“ im Dialogfeld **Neues Element hinzufügen** im Bereich **Projekttypen** angezeigt wird.  
+5. Stellen Sie sicher, dass die Kategorie „HelloWorld“ im Dialogfeld **Neues Element hinzufügen** im Bereich **Projekttypen** angezeigt wird.  
   
 ### <a name="displaying-templates-in-parent-categories"></a>Anzeigen von Vorlagen in übergeordneten Kategorien  
  Sie können in Unterkategorien enthaltene Vorlagen in den übergeordneten Kategorien anzeigen lassen, indem Sie das `NumberOfParentCategoriesToRollUp`-Element in der VSTEMPLATE-Datei verwenden. Diese Schritte sind für Projektvorlagen und Elementvorlagen identisch.  
   
 ##### <a name="to-display-templates-in-parent-categories"></a>So zeigen Sie Vorlagen in übergeordneten Kategorien an  
   
-1.  Suchen Sie die ZIP-Datei, die die Vorlage enthält.  
+1. Suchen Sie die ZIP-Datei, die die Vorlage enthält.  
   
-2.  Extrahieren Sie die ZIP-Datei.  
+2. Extrahieren Sie die ZIP-Datei.  
   
-3.  Öffnen Sie die VSTEMPLATE-Datei in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+3. Öffnen Sie die VSTEMPLATE-Datei in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-4.  Fügen Sie im `TemplateData`-Element ein `NumberOfParentCategoriesToRollUp`-Element hinzu. Durch den folgenden Code wird die Vorlage beispielsweise in der unmittelbar übergeordneten Kategorie, nicht jedoch in höheren Kategorien angezeigt.  
+4. Fügen Sie im `TemplateData`-Element ein `NumberOfParentCategoriesToRollUp`-Element hinzu. Durch den folgenden Code wird die Vorlage beispielsweise in der unmittelbar übergeordneten Kategorie, nicht jedoch in höheren Kategorien angezeigt.  
   
     ```  
     <TemplateData>  
@@ -169,20 +164,17 @@ Vorlagendateien müssen an einem Speicherort abgelegt werden, an dem Visual Stud
     </TemplateData>  
     ```  
   
-5.  Speichern und schließen Sie die VSTEMPLATE-Datei.  
+5. Speichern und schließen Sie die VSTEMPLATE-Datei.  
   
-6.  Wählen Sie die Dateien in der Vorlage aus, klicken Sie mit der rechten Maustaste auf die Auswahl, klicken Sie auf **Senden an**, und klicken Sie dann auf **ZIP-komprimierten Ordner**. Die Dateien werden in eine ZIP-Datei komprimiert.  
+6. Wählen Sie die Dateien in der Vorlage aus, klicken Sie mit der rechten Maustaste auf die Auswahl, klicken Sie auf **Senden an**, und klicken Sie dann auf **ZIP-komprimierten Ordner**. Die Dateien werden in eine ZIP-Datei komprimiert.  
   
-7.  Löschen Sie die extrahierten Vorlagendateien und die alte ZIP-Datei der Vorlage.  
+7. Löschen Sie die extrahierten Vorlagendateien und die alte ZIP-Datei der Vorlage.  
   
-8.  Fügen Sie die neue ZIP-Datei in das Verzeichnis ein, in dem sich die gelöschte ZIP-Datei befunden hat.  
+8. Fügen Sie die neue ZIP-Datei in das Verzeichnis ein, in dem sich die gelöschte ZIP-Datei befunden hat.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Anpassen von Vorlagen](../ide/customizing-project-and-item-templates.md)   
  [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
  [NumberOfParentCategoriesToRollUp (Visual Studio-Vorlagen)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)   
  [Vorgehensweise: Erstellen von Projektvorlagen](../ide/how-to-create-project-templates.md)   
- [Gewusst wie: Erstellen von Elementvorlagen](../ide/how-to-create-item-templates.md)
-
-
-
+ [Vorgehensweise: Create Item Templates (Vorgehensweise: Erstellen von Elementvorlagen)](../ide/how-to-create-item-templates.md)

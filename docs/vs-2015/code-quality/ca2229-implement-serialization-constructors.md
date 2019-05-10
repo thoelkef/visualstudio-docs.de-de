@@ -1,14 +1,9 @@
 ---
 title: 'CA2229: Serialisierungskonstruktoren implementieren | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2229
 - ImplementSerializationConstructors
@@ -20,14 +15,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 45a7c9d74c5574b0e39f77f1b29fad15d9f19dbe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 41e296a979557a42a96c2f57ce49610d88b98a40
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858380"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073163"
 ---
-# <a name="ca2229-implement-serialization-constructors"></a>CA2229: Serialisierungskonstruktoren implementieren
+# <a name="ca2229-implement-serialization-constructors"></a>CA2229: Serialisierungskonstruktoren implementieren.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -40,11 +35,11 @@ ms.locfileid: "49858380"
 ## <a name="cause"></a>Ursache
  Der Typ implementiert die <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> Schnittstelle, keinen Delegaten oder eine Schnittstelle, und eine der folgenden Bedingungen gilt:
 
--   Der Typ keinen Konstruktor, akzeptiert eine <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> Objekt und ein <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> Objekt (die Signatur des Serialisierungskonstruktors).
+- Der Typ keinen Konstruktor, akzeptiert eine <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> Objekt und ein <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> Objekt (die Signatur des Serialisierungskonstruktors).
 
--   Der Typ ist nicht versiegelte und der Zugriffsmodifizierer für seinen Serialisierungskonstruktor nicht geschützt (Familie).
+- Der Typ ist nicht versiegelte und der Zugriffsmodifizierer für seinen Serialisierungskonstruktor nicht geschützt (Familie).
 
--   Der Typ ist versiegelt, und der Zugriffsmodifizierer für die Serialisierungskonstruktor ist nicht privat.
+- Der Typ ist versiegelt, und der Zugriffsmodifizierer für die Serialisierungskonstruktor ist nicht privat.
 
 ## <a name="rule-description"></a>Regelbeschreibung
  Diese Regel gilt für Typen, die benutzerdefinierte Serialisierung unterstützen. Ein Typ unterstützt die benutzerdefinierte Serialisierung, wenn er implementiert die <xref:System.Runtime.Serialization.ISerializable> Schnittstelle. Der Serialisierungskonstruktor ist erforderlich, um zu deserialisieren, Objekte oder neu erstellt, die mit serialisiert wurden die <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> Methode.
@@ -66,6 +61,3 @@ ms.locfileid: "49858380"
 ## <a name="see-also"></a>Siehe auch
  <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>
  <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>
-
-
-

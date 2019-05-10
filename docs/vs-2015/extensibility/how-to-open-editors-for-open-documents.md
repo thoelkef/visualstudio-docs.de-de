@@ -1,26 +1,21 @@
 ---
 title: 'Vorgehensweise: Öffnen von Editoren für geöffnete Dokumente | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], opening for open documents
 ms.assetid: 1a0fa49c-efa4-4dcc-bdc0-299b7052acdc
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4bb21def7e9d283c287c375bd9b8b4cc6bd30c3c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ae6e565e026ca49825a7b00a82e4e5c62a2f6c3c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750982"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092330"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>Vorgehensweise: Öffnen von Editoren für geöffnete Dokumente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,14 +48,13 @@ Bevor ein Dokumentfenster wird ein Projekt geöffnet wird, muss das Projekt zuer
   
 #### <a name="to-open-a-standard-editor-for-an-open-file"></a>Um einen standard-Editor für eine geöffnete Datei zu öffnen.  
   
-1.  Rufen Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> auf.  
+1. Rufen Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> auf.  
   
      Diese Methode zunächst überprüft, ob das Dokument nicht bereits geöffnet durch Aufrufen von <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>. Wenn das Dokument bereits geöffnet ist, und klicken Sie dann das Editorfenster Aufkommen ist.  
   
-2.  Wenn das Dokument nicht geöffnet ist, führen Sie die Schritte im [wie: Öffnen Sie Standard-Editoren](../extensibility/how-to-open-standard-editors.md).  
+2. Wenn das Dokument nicht geöffnet ist, führen Sie die Schritte im [Vorgehensweise: Öffnen Sie die Standard-Editoren](../extensibility/how-to-open-standard-editors.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Sie öffnen und Speichern von Projektelementen](../extensibility/internals/opening-and-saving-project-items.md)   
  [Vorgehensweise: Öffnen von projektspezifischen Editoren](../extensibility/how-to-open-project-specific-editors.md)   
- [Gewusst wie: Öffnen von Standard-Editoren](../extensibility/how-to-open-standard-editors.md)
-
+ [Vorgehensweise: Open-Standard-Editoren](../extensibility/how-to-open-standard-editors.md)

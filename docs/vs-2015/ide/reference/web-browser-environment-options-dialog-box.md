@@ -1,14 +1,9 @@
 ---
 title: Webbrowser, Umgebung, Dialogfeld „Optionen“ | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.Environment.Web Browser
 - VS.ToolsOptionsPages.Environment.WebBrowser
@@ -28,25 +23,24 @@ ms.assetid: 586db4eb-032d-4cb5-93a6-a7c14de1ae49
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: fa793fa91667dd360c301442ccb0831d11122473
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: df33215bab20be8744ed2455ef87f1a037871f95
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931832"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419718"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Webbrowser, Umgebung, Dialogfeld "Optionen"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Legt Optionen sowohl für den internen Webbrowser als auch für Internet Explorer fest. Klicken Sie zum Öffnen dieses Dialogfelds im Menü **Extras** auf **Optionen**, erweitern Sie den Ordner **Umgebung**, und klicken Sie dann auf **Webbrowser**.  
   
 > [!NOTE]
->  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü Extras auf Einstellungen importieren und exportieren, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü Extras auf Einstellungen importieren und exportieren, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 > [!IMPORTANT]
->  Durch Öffnen bestimmter Webdateien oder -komponenten kann auf Ihrem Computer Code ausgeführt werden.  
+> Durch Öffnen bestimmter Webdateien oder -komponenten kann auf Ihrem Computer Code ausgeführt werden.  
   
  Startseite  
  Legt die Seite fest, die beim Öffnen des IDE-Webbrowsers angezeigt wird.  
@@ -67,12 +61,9 @@ Legt Optionen sowohl für den internen Webbrowser als auch für Internet Explore
   Klicken Sie hier, um im Dialogfeld **Interneteigenschaften** Optionen für Internet Explorer zu ändern. Änderungen, die in diesem Dialogfeld vorgenommen werden, wirken sich sowohl auf den internen Webbrowser als auch auf die Internet Explorer-Instanzen aus, die außerhalb der Visual Studio-IDE (z.B. über das Startmenü) gestartet wurden.  
   
 > [!NOTE]
->  Verwenden Sie das Dialogfeld „Browserauswahl“, um den internen Webbrowser von Visual Studio, der eine Version von Internet Explorer ist,durch einen anderen, externen Webbrowser zu ersetzen.  
+> Verwenden Sie das Dialogfeld „Browserauswahl“, um den internen Webbrowser von Visual Studio, der eine Version von Internet Explorer ist,durch einen anderen, externen Webbrowser zu ersetzen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Dialogfeld „Umgebungsoptionen“](../../ide/reference/environment-options-dialog-box.md)   
  [Allgemein, Umgebung, Dialogfeld „Optionen“](../../ide/reference/general-environment-options-dialog-box.md)   
  [HTML-Designer](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477)
-
-
-

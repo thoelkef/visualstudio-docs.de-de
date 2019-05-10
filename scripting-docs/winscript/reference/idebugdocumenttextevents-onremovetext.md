@@ -2,7 +2,6 @@
 title: IDebugDocumentTextEvents::onRemoveText | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 81d7345d0832d0f9bfc6942fa5a27db82b45bb95
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 506d7c5349cf074ce4a4cbe60e33459a09a91b67
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54097200"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946712"
 ---
 # <a name="idebugdocumenttexteventsonremovetext"></a>IDebugDocumentTextEvents::onRemoveText
 Gibt an, dass Text aus dem Dokument entfernt wurde.  

@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Erfahren Sie mehr zum DataCamp-Schulungsabonnements, das in ausgewählten Visual Studio-Abonnement enthalten ist.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 47199fc27491843985326f3ceee5dd6fbf3677ad
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 5d6f9d2a642a13b350e539383a1abb74835bf9d3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948130"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Der DataCamp-Trainingsvorteil in Visual Studio-Abonnements
 
@@ -33,7 +31,7 @@ Der Gültigkeitszeitraum Ihres DataCamp-Vorteils hängt von Ihrem Visual Studio-
 3. Auf der DataCamp-Seite können Sie ein neues Konto erstellen.  Sie können entweder eine E-Mail-Adresse und ein Kennwort eingeben, um sich anzumelden, oder ein vorhandenes Facebook-, LinkedIn- oder Google-Konto verwenden.  Nachdem Sie Ihre Anmeldeinformationen eingegeben haben, klicken Sie auf **Erste Schritte**.
    > [!div class="mx-imgBorder"]
    > ![Erstellen eines neuen DataCamp-Kontos](_img/vs-datacamp/vs-datacamp-create-account.png)
-   > 
+   >
    > [!NOTE]
    > Wenn Sie Ihr Konto erstellen, erhalten Sie möglicherweise folgende Fehlermeldung:  „OOPS! Your promo code is invalid or expired.“ („Hoppla! Ihr Angebotscode ist ungültig oder abgelaufen.“)  Dies liegt daran, dass der Angebotscode einige Minuten nach der Erstellung abläuft.  Wenn Sie diese Meldung erhalten, kehren Sie zur Seite [Vorteile](https://my.visualstudio.com/benefits) zurück, und klicken Sie auf der Kachel mit dem DataCamp-Vorteil auf den Link **Aktivieren**.
 
@@ -50,7 +48,6 @@ Der Gültigkeitszeitraum Ihres DataCamp-Vorteils hängt von Ihrem Visual Studio-
    > [!div class="mx-imgBorder"]
    > ![DataScience-Fähigkeiten in DataCamp](_img/vs-datacamp/vs-datacamp-datascience.png)
 
-
 6. Basierend auf dem Pfad und den Optionen, die Sie ausgewählt haben, wird Ihnen eine Auswahl von Karrierepfaden angezeigt.  Klicken Sie beim Pfad Ihrer Wahl auf **Registrieren**.
    > [!div class="mx-imgBorder"]
    > ![DataCamp-Lernfortschritt](_img/vs-datacamp/vs-datacamp-all-tracks.png)
@@ -62,7 +59,7 @@ Der Gültigkeitszeitraum Ihres DataCamp-Vorteils hängt von Ihrem Visual Studio-
 
 Sie können Ihr Training jederzeit beenden und in der nächsten Sitzung fortsetzen.  Besuchen Sie [http://www.datacamp.com](http://www.datacamp.com), und melden Sie sich an.  Zunächst wird Ihnen Ihr Dashboard angezeigt, und Sie können Ihr Training dort fortsetzen, wo Sie es angehalten haben. Klicken Sie einfach auf **Continue Track** (Pfad fortsetzen).
 
-> [!div class="mx-imgBorder"]   
+> [!div class="mx-imgBorder"]
 > ![Fortsetzen des DataCamp-Trainings](_img/vs-datacamp/vs-datacamp-continue-training.png)
 
 ## <a name="eligibility"></a>Berechtigung
@@ -71,28 +68,23 @@ Sie können Ihr Training jederzeit beenden und in der nächsten Sitzung fortsetz
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, | 3 Monate       |  Nein.  Nur für neue Abonnenten verfügbar          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 3 Monate                                                            |  Nein.  Nur für neue Abonnenten verfügbar           |
-| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Verfügbar                                             |  Nein.  Nur für neue Abonnenten verfügbar           |
-| MSDN Platforms (Standard)                                          | VL, Retail                                              | Verfügbar                                              |  Nein.  Nur für neue Abonnenten verfügbar           |
+| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | 3 Monate                                             |  Nein.  Nur für neue Abonnenten verfügbar           |
+| MSDN Platforms (Standard)                                          | VL, Retail                                              | 3 Monate                                              |  Nein.  Nur für neue Abonnenten verfügbar           |
 | Visual Studio Dev Essentials | Nicht zutreffend  | 2 Monate | Nein. Nur für neue Abonnenten verfügbar |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Nicht verfügbar  | Nicht zutreffend |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure | Nicht verfügbar | Nicht zutreffend |
 
-
-
-<sup>1</sup> *Umfasst:  Not for Resale (NFR), FTE, Microsoft Valued Professional (MVP), Region Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
-
+<sup>1</sup> *Umfasst:  Not for Resale (NFR), FTE, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
 
 > [!NOTE]
 > In Cloud-Abonnements enthaltene Jahresabonnements von Visual Studio Professional und Visual Studio Enterprise werden von Microsoft nicht mehr angeboten. An den vorhandenen Funktionen und der Möglichkeit, Abonnements zu erneuern, erhöhen, verringern oder zu kündigen, wird sich nichts ändern. Neuen Kunden wird empfohlen, die verschiedenen Optionen für den Erwerb von Visual Studio unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) zu vergleichen.
 
-
 Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen.
 
-
 ## <a name="support-resources"></a>Supportressourcen
--  Benötigen Sie Hilfe bei der Verwendung von DataCamp?  Sehen Sie sich diese Ressourcen an:
+- Benötigen Sie Hilfe bei der Verwendung von DataCamp?  Sehen Sie sich diese Ressourcen an:
     - [DataCamp Community](https://www.datacamp.com/community/tutorials) mit Foren und Tutorials.
     - Im [DataCamp-Hilfecenter](https://support.datacamp.com/hc) können Sie Hilfethemen durchsuchen und sich Fragen anderer Benutzer ansehen.
     - [Anfrage an den Support schicken](https://support.datacamp.com/hc/requests/new)
--  Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
--  Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).
+- Wenn Sie Unterstützung bei Vertrieb, Abonnements, Konten und Abrechnung für Visual Studio-Abonnements benötigen, wenden Sie sich an den [Abonnementsupport](https://visualstudio.microsoft.com/subscriptions/support/) für Visual Studio.
+- Haben Sie Fragen zur Visual Studio-IDE, zu Azure DevOps Services oder zu anderen Visual Studio-Produkten oder -Diensten?  Besuchen Sie die [Visual Studio-Supportwebsite](https://visualstudio.microsoft.com/support/).

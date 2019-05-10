@@ -1,7 +1,6 @@
 ---
 title: 'CA2210: Assemblys müssen gültige starke Namen aufweisen.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - AssembliesShouldHaveValidStrongNames
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 8ed33d1c-8ec6-4b47-a692-e22dc8693088
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3d6eb70e22da0b17fff9febce47bcaa5b980269
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e596f2e970df487a31628ab0bd29051172b950e4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908347"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62796678"
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210: Assemblys müssen gültige starke Namen aufweisen.
 

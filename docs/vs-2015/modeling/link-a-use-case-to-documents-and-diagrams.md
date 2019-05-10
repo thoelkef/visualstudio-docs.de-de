@@ -1,12 +1,9 @@
 ---
 title: Verknüpfen eines Anwendungsfalls mit Dokumenten und Diagrammen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.usecasediagram.artifact.properties.artifactlink
 - vs.teamarch.usecasediagram.artifact
@@ -16,13 +13,13 @@ ms.assetid: 4c9ed205-9197-4ed5-b39d-ddfa24a0a421
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a5b4ef580825115a1d44c3abb39404332a4277ea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ee7657b12741cf65583317ba87bd465e15eb02bb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787912"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440968"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>Verknüpfen eines Anwendungsfalls mit Dokumenten und Diagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,54 +40,51 @@ Sie können einen Anwendungsfall in einem Anwendungsfalldiagramm mit einem ander
   
 ### <a name="to-open-a-document-associated-with-an-artifact"></a>So öffnen Sie ein mit einem Artefakt verknüpftes Dokument  
   
--   Doppelklicken Sie im Anwendungsfalldiagramm auf die Artefaktform.  
+- Doppelklicken Sie im Anwendungsfalldiagramm auf die Artefaktform.  
   
      Das zugehörige Dokument wird geöffnet.  
   
 ### <a name="to-link-a-use-case-to-a-diagram-or-file-in-the-same-solution"></a>So verknüpfen Sie einen Anwendungsfall mit einem Diagramm oder einer Datei in der gleichen Projektmappe  
   
-1.  Zeichnen Sie ein Diagramm, um ein Szenario des Anwendungsfalls zu veranschaulichen, z. B. ein Sequenz- oder Aktivitätsdiagramm.  
+1. Zeichnen Sie ein Diagramm, um ein Szenario des Anwendungsfalls zu veranschaulichen, z. B. ein Sequenz- oder Aktivitätsdiagramm.  
   
-2.  Wechseln Sie zurück zum Anwendungsfalldiagramm.  
+2. Wechseln Sie zurück zum Anwendungsfalldiagramm.  
   
-3.  Ziehen Sie das Diagramm oder die Datei vom Projektmappen-Explorer auf einen leeren Teil des Anwendungsfalldiagramms.  
+3. Ziehen Sie das Diagramm oder die Datei vom Projektmappen-Explorer auf einen leeren Teil des Anwendungsfalldiagramms.  
   
-4.  Verbinden Sie das Artefakt mit die Verwendung von Groß-/Kleinschreibung mit einem **Abhängigkeit**.  
+4. Verbinden Sie das Artefakt mit die Verwendung von Groß-/Kleinschreibung mit einem **Abhängigkeit**.  
   
 ### <a name="to-link-to-a-solution-file-such-as-a-word-document-or-powerpoint-presentation"></a>So erstellen Sie einen Link zu einer Projektmappendatei (z. B. ein Word-Dokument oder eine PowerPoint-Präsentation)  
   
-1.  Fügen Sie das Dokument der Projektmappe hinzu.  
+1. Fügen Sie das Dokument der Projektmappe hinzu.  
   
-    1.  Verschieben Sie das Word-Dokument in den gleichen Windows-Ordner wie die Projektmappe.  
+    1. Verschieben Sie das Word-Dokument in den gleichen Windows-Ordner wie die Projektmappe.  
   
-    2.  Im Projektmappen-Explorer mit der Maustaste der Projektmappe, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **vorhandenes Element**.  
+    2. Im Projektmappen-Explorer mit der Maustaste der Projektmappe, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **vorhandenes Element**.  
   
-    3.  Navigieren Sie zum Word-Dokument, und klicken Sie auf **hinzufügen**.  
+    3. Navigieren Sie zum Word-Dokument, und klicken Sie auf **hinzufügen**.  
   
          Das Word-Dokument wird im Projektmappen-Explorer in einem Projektmappenordner angezeigt.  
   
-2.  Ziehen Sie das Word-Dokument aus dem Projektmappen-Explorer auf einen leeren Teil des Anwendungsfalldiagramms.  
+2. Ziehen Sie das Word-Dokument aus dem Projektmappen-Explorer auf einen leeren Teil des Anwendungsfalldiagramms.  
   
      Ein neues Artefakt wird angezeigt.  
   
-3.  Verbinden Sie das Artefakt mit die Verwendung von Groß-/Kleinschreibung mit einem **Abhängigkeit**.  
+3. Verbinden Sie das Artefakt mit die Verwendung von Groß-/Kleinschreibung mit einem **Abhängigkeit**.  
   
 ### <a name="to-link-to-a-shared-document-onenote-element-or-web-page"></a>So erstellen Sie einen Link zu einem freigegebenen Dokument, einem OneNote-Element oder einer Webseite  
   
-1.  Sie benötigen die URL des freigegebenen Elements. Dies kann sein, z. B. eine beginnender Netzwerkdateipfad "\\\\", oder die Seite einer Webseite oder Sharepoint-URL "http://" beginnende oder ein Link zu einem OneNote-Abschnitt oder-Absatz "Onenote:".  
+1. Sie benötigen die URL des freigegebenen Elements. Dies kann sein, z. B. eine beginnender Netzwerkdateipfad "\\\\", oder die Seite einer Webseite oder Sharepoint-URL "http://" beginnende oder ein Link zu einem OneNote-Abschnitt oder-Absatz "Onenote:".  
   
-2.  Klicken Sie in der Toolbox auf **Artefakt** , und klicken Sie dann in das Anwendungsfalldiagramm.  
+2. Klicken Sie in der Toolbox auf **Artefakt** , und klicken Sie dann in das Anwendungsfalldiagramm.  
   
-3.  Das neue Artefakt aus, und geben oder fügen Sie die URL in die **Hyperlink** Eigenschaft.  
+3. Das neue Artefakt aus, und geben oder fügen Sie die URL in die **Hyperlink** Eigenschaft.  
   
     > [!NOTE]
-    >  Wenn Sie einen Dateipfad angeben möchten, empfiehlt sich, eine Datei auszuwählen, entweder in einem gemeinsamen Arbeitsbereich (beginnend mit "\\\\"), oder eine Datei in Visual Studio-Projektmappe. Dadurch wird sichergestellt, dass der Dateipfad auf dem Computer eines anderen Teammitglieds oder beim Verschieben der Projektmappe seine Gültigkeit behält. Um ein Dokument wie z. B. ein Word-Dokument der Projektmappe hinzuzufügen, mit der rechten Maustaste in der Projektmappe im Projektmappen-Explorer, zeigen Sie auf **hinzufügen** , und klicken Sie dann auf **vorhandenes Element**.  
+    > Wenn Sie einen Dateipfad angeben möchten, empfiehlt sich, eine Datei auszuwählen, entweder in einem gemeinsamen Arbeitsbereich (beginnend mit "\\\\"), oder eine Datei in Visual Studio-Projektmappe. Dadurch wird sichergestellt, dass der Dateipfad auf dem Computer eines anderen Teammitglieds oder beim Verschieben der Projektmappe seine Gültigkeit behält. Um ein Dokument wie z. B. ein Word-Dokument der Projektmappe hinzuzufügen, mit der rechten Maustaste in der Projektmappe im Projektmappen-Explorer, zeigen Sie auf **hinzufügen** , und klicken Sie dann auf **vorhandenes Element**.  
   
 ## <a name="see-also"></a>Siehe auch  
  [UML-Anwendungsfalldiagramme: Referenz](../modeling/uml-use-case-diagrams-reference.md)   
  [UML-Anwendungsfalldiagramme: Richtlinien](../modeling/uml-use-case-diagrams-guidelines.md)   
  [Bearbeiten von UML-Modellen und-Diagrammen](../modeling/edit-uml-models-and-diagrams.md)   
  [Erstellen von Modellen für Ihre App](../modeling/create-models-for-your-app.md)
-
-
-

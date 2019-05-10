@@ -1,14 +1,9 @@
 ---
-title: 'DA0003: Viele Kernelbeispiele | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'DA0003: Zahlreiche Kernelbeispiele | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DA0003
 - vs.performance.DA0003
@@ -18,13 +13,13 @@ ms.assetid: c1f46f77-eb95-42e5-b340-d86bc9de41b4
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 922cc6998db9813c188eb9028b8e855a8b860270
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ad9a0671595d4628932ff4f2db41a137e060c4d1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741697"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076484"
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003: Zahlreiche Kernelbeispiele
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51741697"
 Regel-Id | DA0003 |  
 | Kategorie | Verwendung der Profilerstellungstools |  
 | Profilerstellungsmethoden | Erstellen von Stichproben |  
-| Nachricht | Sie haben einen hohen Anteil von Beispielen im Kernelmodus ausgeführt. Dies deutet auf ein hohes Maß an E/A-Aktivitäten oder auf häufige Kontextwechsel hin. Betrachten Sie die profilerstellung für Ihre Anwendung erneut mit Instrumentationsmodus. |  
+| Nachricht | Sie haben einen hohen Anteil von Beispielen im Kernelmodus ausgeführt. Dies deutet auf ein hohes Maß an E/A-Aktivitäten oder auf häufige Kontextwechsel hin. Erstellen Sie nach Möglichkeit ein neues Profil für die Anwendung, und verwenden Sie dabei den Instrumentierungsmodus.|  
 | Regeltyp | Informationen |  
   
 ## <a name="cause"></a>Ursache  
@@ -46,9 +41,6 @@ Regel-Id | DA0003 |
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
  Erstellen Sie nach Möglichkeit ein neues Profil für die Anwendung, und verwenden Sie dabei eine der folgenden Optionen:  
   
--   Profilerstellung mit der Instrumentierungsmethode  
+- Profilerstellung mit der Instrumentierungsmethode  
   
--   Erhöhen der Samplingrate, um weitere Samples im Benutzermodus zu sammeln
-
-
-
+- Erhöhen der Samplingrate, um weitere Samples im Benutzermodus zu sammeln

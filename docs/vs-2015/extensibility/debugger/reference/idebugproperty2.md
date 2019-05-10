@@ -1,14 +1,9 @@
 ---
 title: IDebugProperty2 | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProperty2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: a7d5c70f-a1a5-4120-9f70-184e01c25bff
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: cc5e780bb5e211b8900a22b181749e0376c6f242
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1f72a66e6dbfe2749910019760c16f6363498785
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742620"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403270"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "51742620"
 Diese Schnittstelle stellt eine Stack-Frame-Eigenschaft, einer Dokumenteigenschaft Programm oder eine andere Eigenschaft. Die Eigenschaft ist in der Regel das Ergebnis der Auswertung eines Ausdrucks.  
   
 > [!NOTE]
->  Diese Verwendung von "Property" dürfen nicht verwechselt werden mit, d. h. einer Membervariablen einer Klasse, obwohl ein `IDebugProperty2` können solche Entität darstellen.  
+> Diese Verwendung von "Property" dürfen nicht verwechselt werden mit, d. h. einer Membervariablen einer Klasse, obwohl ein `IDebugProperty2` können solche Entität darstellen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -87,4 +82,3 @@ IDebugProperty2 : IUnknown
  [Wichtige Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
  [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)   
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
-

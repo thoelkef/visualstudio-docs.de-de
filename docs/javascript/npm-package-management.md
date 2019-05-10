@@ -7,17 +7,17 @@ ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: bae9beac69daf78bfd6a8604c4364af857dff0a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 17b373e38d9a808ea830f758c28bea1218bb0b69
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845953"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446347"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Verwalten von NPM-Paketen in Visual Studio
 
@@ -36,7 +36,7 @@ NPM-Pakete lassen sich am einfachsten über das NPM-Paketinstallationsfenster in
 
 ![Installieren eines neuen NPM-Pakets über den Projektmappen-Explorer](../javascript/media/solution-explorer-install-package.png)
 
-In diesem Fenster können Sie nach einem Paket suchen sowie Optionen angeben und installieren. 
+In diesem Fenster können Sie nach einem Paket suchen sowie Optionen angeben und installieren.
 
 ![Suchen nach einem NPM-Paket](../javascript/media/search-package.png)
 
@@ -73,10 +73,10 @@ Zum Ausführen von NPM-Befehlen können Sie auch den Befehl `.npm` im interaktiv
 In diesem Fenster können Sie Befehle wie die folgenden zum Installieren eines Pakets verwenden:
 
 `.npm install azure@4.2.3`
- 
+
  > [!Tip]
- > NPM wird standardmäßig im Basisverzeichnis Ihres Projekts ausgeführt. Wenn sich in Ihrer Projektmappe mehrere Projekte befinden, geben Sie den Namen oder den Pfad des Projekts in Klammern an. 
+ > NPM wird standardmäßig im Basisverzeichnis Ihres Projekts ausgeführt. Wenn sich in Ihrer Projektmappe mehrere Projekte befinden, geben Sie den Namen oder den Pfad des Projekts in Klammern an.
  > `.npm [MyProjectNameOrPath] install azure@4.2.3`
 
  > [!Tip]
- > Wenn in Ihrem Projekt die Datei „package.json“ nicht enthalten ist, verwenden Sie `.npm init -y`, um eine neue „package.json“-Datei mit Standardeinträgen zu erstellen. 
+ > Wenn in Ihrem Projekt die Datei „package.json“ nicht enthalten ist, verwenden Sie `.npm init -y`, um eine neue „package.json“-Datei mit Standardeinträgen zu erstellen.

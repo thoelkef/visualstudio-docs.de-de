@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d7a0f2b0-d427-4d49-9536-54edfb37c0f3
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e04561a5b61aed471840e5e835b942c1b2a81717
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 58b2495adf66f6c83bc631650e2a0f06f5b7cdd0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823431"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433616"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>Speichern Sie die Eigenschaft eines Projektelements
 Sie sollten eine Eigenschaft beibehalten werden, in denen Sie ein Projektelement, z. B. der Autor einer Quelldatei hinzu. Dies ist möglich, indem die Eigenschaft in der Projektdatei gespeichert.
@@ -27,7 +27,7 @@ Sie sollten eine Eigenschaft beibehalten werden, in denen Sie ein Projektelement
 
 ## <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>Um die Projekthierarchie, mit dem DTE-Objekt zu erhalten.
 
-1.  Fügen Sie den folgenden Code zu Ihrem VSPackage an:
+1. Fügen Sie den folgenden Code zu Ihrem VSPackage an:
 
     ```csharp
     EnvDTE.DTE dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));
@@ -41,7 +41,7 @@ Sie sollten eine Eigenschaft beibehalten werden, in denen Sie ein Projektelement
 
 ## <a name="to-persist-the-project-item-property-with-the-dte-object"></a>Die Projekt-Item-Eigenschaft mit dem DTE-Objekt beibehalten werden.
 
-1.  Fügen Sie den folgenden Code, die den Code in der Methode im vorherigen Verfahren aus:
+1. Fügen Sie den folgenden Code, die den Code in der Methode im vorherigen Verfahren aus:
 
     ```csharp
     IVsBuildPropertyStorage buildPropertyStorage =
@@ -58,7 +58,7 @@ Sie sollten eine Eigenschaft beibehalten werden, in denen Sie ein Projektelement
 
 ## <a name="to-obtain-the-project-hierarchy-using-ivsmonitorselection"></a>Zum Abrufen der Projekthierarchie IVsMonitorSelection verwenden
 
-1.  Fügen Sie den folgenden Code zu Ihrem VSPackage an:
+1. Fügen Sie den folgenden Code zu Ihrem VSPackage an:
 
     ```csharp
     IVsHierarchy hierarchy = null;
@@ -102,7 +102,7 @@ Sie sollten eine Eigenschaft beibehalten werden, in denen Sie ein Projektelement
 
 ## <a name="to-persist-the-selected-project-item-property-given-the-project-hierarchy"></a>Die ausgewählten Projekt-Item-Eigenschaft beibehalten werden, erhalten der Teamprojekthierarchie
 
-1.  Fügen Sie den folgenden Code, die den Code in der Methode im vorherigen Verfahren aus:
+1. Fügen Sie den folgenden Code, die den Code in der Methode im vorherigen Verfahren aus:
 
     ```csharp
     IVsBuildPropertyStorage buildPropertyStorage =

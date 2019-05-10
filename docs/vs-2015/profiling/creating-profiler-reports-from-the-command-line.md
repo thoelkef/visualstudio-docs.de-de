@@ -1,25 +1,20 @@
 ---
 title: Erstellen von Profiler-Berichten über die Befehlszeile | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: c886f8af-2014-4fec-9b24-d98b68ecafb7
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c4cf566affff500d372a980a6f07122c2df33a23
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 489ebd4e5aff3ef9b93ef0d8fe18f9ae8cc85011
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788588"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537201"
 ---
 # <a name="creating-profiler-reports-from-the-command-line"></a>Erstellen von Profiler-Berichten über die Befehlszeile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,6 +32,3 @@ Mit dem Befehlszeilentool **VSPerfReport** können Sie Berichte im XML- oder CSV
 |**Anzeigen von Daten über Aufrufablaufverfolgung und Ereignisablaufverfolgung für Windows (ETW):** Erstellen Sie einen Aufrufablaufverfolgungsbericht, in dem Zeitsteuerungsinformationen für jeden Einstiegs- und Endpunkt der Funktionen Ihrer Anwendung sowie jeder Aufruf anderer Funktionen durch die Funktion aufgeführt sind. Sie können auch eine ausführliche Auflistung aller ETW-Ereignisse erstellen, die bei einer Profilerstellungsausführung erfasst wurden.|-   [Vorgehensweise: Erstellen eines Aufrufablaufverfolgungsberichts](../profiling/how-to-create-a-profiling-tools-call-trace-report.md)|  
 |**Filtern eines Berichts:** Filtern Sie einen Bericht auf nur die Funktionen im Code oder auf eine Zeit in der Profilerstellungs-Datendatei.|-   [Vorgehensweise: Filtern von Berichten über die Befehlszeile](../profiling/how-to-filter-reports-from-the-command-line.md)|  
 |**Erstellen portierbarer Profilerstellungs-Datendateien:** Um die Freigabe von Profilerstellungsdaten zu vereinfachen, können Sie die Symbole für eine Profilerstellungsausführung in die VSP-Datei einbetten. Sie können auch eine bereits analysierte Profilerstellungs-Datendatei (.vsps) erstellen, die kleiner ist und sich schneller öffnen lässt.|-   [Erstellen portierbarer Profilerstellungs-Datendateien](../profiling/creating-portable-profiling-data-files-from-the-command-line.md)|
-
-
-

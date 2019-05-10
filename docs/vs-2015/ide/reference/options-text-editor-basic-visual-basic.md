@@ -1,14 +1,9 @@
 ---
 title: Optionen, Text-Editor, Basic (Visual Basic) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Visual_Basic.Editor
 - VS.ToolsOptionsPages.Text_Editor.Basic.Editor
@@ -22,18 +17,17 @@ ms.assetid: 5a8cafca-f7b4-4a2d-92ce-6894a7673d00
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: cb8856f250810988b73058562402c8d1fe8c644f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 068475e24e77969886afbfc806cb2e85c1f368dc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902476"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667936"
 ---
 # <a name="options-text-editor-basic-visual-basic"></a>Optionen, Text-Editor, Standard (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Die Eigenschaftenseite **VB-spezifisch** im Ordner **Basic** im Ordner **Text-Editor** des Dialogfelds **Optionen** (Menü **Extras**) enthält die folgenden Eigenschaften.  
   
  **Automatisches Einfügen von End-Konstruktionen**  
@@ -80,6 +74,3 @@ Die Eigenschaftenseite **VB-spezifisch** im Ordner **Basic** im Ordner **Text-Ed
 ## <a name="see-also"></a>Siehe auch  
  [Allgemein, Umgebung, Dialogfeld „Optionen“](../../ide/reference/general-environment-options-dialog-box.md)   
  [Optionen, Text-Editor, Alle Sprachen, Registerkarten](../../ide/reference/options-text-editor-all-languages-tabs.md)
-
-
-

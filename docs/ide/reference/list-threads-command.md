@@ -1,7 +1,6 @@
 ---
 title: Befehl "Threads auflisten"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - debug.listthreads
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 34b665c0-d46f-4c1a-a066-b678eba5ac54
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1a914ffcd242626b0f519ab541c4c381a4597da
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 44c66eab323f42ba3aa5392fed657e3afd3a6e5c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946829"
 ---
 # <a name="list-threads-command"></a>Befehl "Threads auflisten"
 Zeigt eine Liste der Threads im aktuellen Programm an.
@@ -36,7 +35,7 @@ Debug.ListThreads [index]
 
  Dies ist optional. Wählt einen Thread nach seinem Index als aktuellen Thread aus
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Anmerkungen
  Wenn angegeben, kennzeichnet das `index`-Argument den angegebenen Thread als aktuellen Thread. Ein Sternchen (*) wird in der Liste neben dem aktuellen Thread angezeigt.
 
 ## <a name="example"></a>Beispiel

@@ -1,25 +1,22 @@
 ---
 title: Überschreiben und erweitern die generierten Klassen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, providing overridable classes
 ms.assetid: 30baa60d-a8ea-4611-96c1-8fcc3317cf21
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a5aef90403babfd7a30812cac59b8c0c5acff79f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a7b9733a47b4763a0f28ee4b24b54fdfd44bf066
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435006"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Überschreiben und Erweitern der generierten Klassen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +46,7 @@ Ihrer DSL-Definition ist eine Plattform, auf der Sie einen Reihe leistungsstarke
  `} }`  
   
 > [!NOTE]
->  Um Methoden in einer generierten Klasse zu überschreiben, Schreiben von Code immer in eine Datei, die von die generierten Dateien getrennt ist. In der Regel ist die Datei in einem Ordner enthalten, mit dem Namen CustomCode. Wenn Sie Änderungen an den generierten Code vornehmen, geht diese verloren, wenn Sie den Code aus der DSL-Definition erneut generieren.  
+> Um Methoden in einer generierten Klasse zu überschreiben, Schreiben von Code immer in eine Datei, die von die generierten Dateien getrennt ist. In der Regel ist die Datei in einem Ordner enthalten, mit dem Namen CustomCode. Wenn Sie Änderungen an den generierten Code vornehmen, geht diese verloren, wenn Sie den Code aus der DSL-Definition erneut generieren.  
   
  Geben Sie zum Ermitteln von welche Methoden Sie außer Kraft setzen können **überschreiben** in der Klasse, gefolgt von einem Leerzeichen. Die IntelliSense-QuickInfo informiert Sie, welche Methoden überschrieben werden können.  
   
@@ -91,9 +88,6 @@ Ihrer DSL-Definition ist eine Plattform, auf der Sie einen Reihe leistungsstarke
 ### <a name="net-events"></a>Ereignisse für .NET  
  Sie können einige Ereignisse auf Formen abonnieren. Beispielsweise können Sie auf Mausklicks auf einer Form lauschen. Sie müssen Code schreiben, der das Ereignis für jedes Objekt abonniert. Dieser Code kann in einer Außerkraftsetzung der InitializeInstanceResources() geschrieben werden.  
   
- Einige Ereignisse werden auf ShapeFields, generiert, die zum Zeichnen von Decorator-Elemente auf einer Form verwendet werden. Ein Beispiel finden Sie unter [wie: Abfangen eines Klicks auf eine Form oder einen Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).  
+ Einige Ereignisse werden auf ShapeFields, generiert, die zum Zeichnen von Decorator-Elemente auf einer Form verwendet werden. Ein Beispiel finden Sie unter [Gewusst wie: Abfangen eines Klicks auf eine Form oder einen Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).  
   
  Diese Ereignisse werden in der Regel nicht innerhalb einer Transaktion ausgeführt. Wenn Sie Änderungen an den Store vornehmen möchten, sollten Sie eine Transaktion erstellen.
-
-
-

@@ -3,40 +3,42 @@ title: Debuggen von ASP.NET
 description: Debuggen von ASP.NET mithilfe des Visual Studio-Debuggers
 ms.custom: mvc
 ms.date: 08/06/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
 ms.assetid: f4cea2e1-08dc-47ac-aba2-3b8c338e607f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 82288b67916255914d352e4f0f6f2fd75aa9571d
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: e011d564af02bf6370536086ad0c95b5432cfa04
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561956"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62904006"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Schnellstart: Debuggen von ASP.NET mithilfe des Visual Studio-Debuggers
 
 Der Visual Studio-Debugger umfasst viele nützliche Features zum Debuggen von Apps. In diesem Thema werden einige der grundlegenden Funktionen erläutert.
 
-## <a name="create-a-new-project"></a>Erstellt ein neues Projekt 
+## <a name="create-a-new-project"></a>Erstellt ein neues Projekt
 
-1. Klicken Sie in Visual Studio auf **Datei > Neues Projekt**.
+1. Öffnen Sie Visual Studio.
 
-1. Klicken Sie unter **Visual C#** auf **Web** und dann im mittleren Bereich auf **ASP.NET Core-Webanwendung**.
+    ::: moniker range=">=vs-2019"
+    Drücken Sie **ESC**, um das Startfenster zu schließen. Geben Sie **STRG + Q** ein, um das Suchfeld zu öffnen, geben Sie **asp.net** ein, und wählen Sie **Vorlagen** und dann **Neue ASP.NET Core-Webanwendung erstellen** aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialogfelds **Neues Projekt** unter **Visual C#** **Web** aus, und wählen Sie dann im mittleren Bereich **ASP.NET Core-Webanwendung** aus. Geben Sie einen Namen wie **MyDbgApp** ein, und klicken Sie auf **OK**.
 
-1. Geben Sie einen Namen wie **MyDbgApp** ein, und klicken Sie auf **OK**.
-
-1. Wählen Sie im angezeigten Dialogfeld im mittleren Bereich **Webanwendung** aus, und klicken Sie dann auf **OK**.
-
-     Wenn Ihnen die Projektvorlage **Webanwendung** nicht angezeigt wird, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** auf den Link **Visual Studio-Installer öffnen**. Der Visual Studio-Installer wird gestartet. Klicken Sie auf die Workload **ASP.NET und Webentwicklung**, und klicken Sie anschließend auf **Ändern**.
+    Wählen Sie im angezeigten Dialogfeld im mittleren Bereich **Webanwendung** aus, und klicken Sie dann auf **OK**.
 
     ![Auswählen einer Webanwendung](../debugger/media/dbg-qs-aspnet-choose-web-app.png)
+    ::: moniker-end
+
+    Wenn die Projektvorlage **ASP.NET Core-Webanwendung** nicht angezeigt wird, öffnen Sie unter **Tools** > **Tools und Features abrufen ...** den Visual Studio-Installer. Klicken Sie auf die Workload **ASP.NET und Webentwicklung**, und klicken Sie anschließend auf **Ändern**.
 
     Visual Studio erstellt daraufhin das Projekt.
 
@@ -95,7 +97,7 @@ Ein *Breakpoint* gibt an, an welcher Stelle Visual Studio ausgeführten Code anh
 
 ## <a name="navigate-code"></a>Navigieren durch den Code
 
-Es gibt verschiedene Befehle, über die der Debugger zum Fortfahren angewiesen werden kann. In diesem Artikel wird ein nützlicher Befehl zur Codenavigation erläutert, der neu für Visual Studio 2017 ist.
+Es gibt verschiedene Befehle, über die der Debugger zum Fortfahren angewiesen werden kann. In diesem Artikel wird ein nützlicher Befehl zur Codenavigation erläutert, der ab Visual Studio 2017 verfügbar ist.
 
 Wenn der Vorgang am Breakpoint ausgesetzt wurde, zeigen Sie auf die Anweisung `return c2`, bis die grüne Schaltfläche **Run to click** (Ausführen bis Klick) ![Ausführen bis Klick](../debugger/media/dbg-tour-run-to-click.png) angezeigt wird, und klicken Sie dann auf diese.
 
@@ -111,7 +113,7 @@ Häufig werden die Tastaturbefehle **F10** und **F11** verwendet, um Code durchz
 
     ![Anzeigen eines Datentipps](../debugger/media/dbg-qs-data-tip-aspnet.png)
 
-    Der aktuelle Wert der Variable `c2` wird angezeigt, und Sie können die Eigenschaften untersuchen. Wenn Sie beim Debuggen einen nicht erwarteten Wert antreffen, enthalten die vorhergehenden oder die aufrufenden Codezeilen möglicherweise einen Fehler. 
+    Der aktuelle Wert der Variable `c2` wird angezeigt, und Sie können die Eigenschaften untersuchen. Wenn Sie beim Debuggen einen nicht erwarteten Wert antreffen, enthalten die vorhergehenden oder die aufrufenden Codezeilen möglicherweise einen Fehler.
 
 2. Erweitern Sie den Datentipp, um die Eigenschaftswerte des `c2`-Objekts einzusehen.
 
@@ -136,4 +138,4 @@ Weitere Informationen zum Bearbeiten und Fortfahren und zu Einschränkungen von 
 In diesem Tutorial haben Sie gelernt, wie Sie den Debugger starten, Code schrittweise durchlaufen und Variablen untersuchen. Sie sollten sich einen allgemeinen Überblick über die Debugger-Features verschaffen und die zugehörigen Links aufrufen, um weitere Informationen hierzu zu erhalten.
 
 > [!div class="nextstepaction"]
-> [Debugger – Featuretour](../debugger/debugger-feature-tour.md)
+> [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)

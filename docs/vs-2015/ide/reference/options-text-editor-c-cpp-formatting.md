@@ -1,14 +1,9 @@
 ---
 title: Optionen, Text-Editor, C/C++, Formatierung | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C/C++.Formatting.General
 - VS.ToolsOptionsPages.Text_Editor.C%2fC%2b%2b.Formatting.General
@@ -20,24 +15,23 @@ ms.assetid: cb6f1cbb-5305-48da-a8e8-33fd70775d46
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a8589696e669c83b65951d81d155033d45533710
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ea9f23147c6ad7a8b3b28f799b90044763d36d16
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237002"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441385"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Optionen, Text-Editor, C/C++, Formatierung
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Ermöglicht es Ihnen, das Standardverhalten des Code-Editors zu ändern, wenn Sie in C oder C++ programmieren.  
   
  Um diese Seite zu öffnen, klicken Sie im linken Fenster auf das Dialogfeld **Optionen**, erweitern Sie den **Text-Editor** und **C/C++** und klicken dann auf **Formatieren**.  
   
 > [!NOTE]
->  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="cc-options"></a>C/C++-Optionen  
  **Automatische QuickInfos aktivieren**  
@@ -77,15 +71,12 @@ Ermöglicht es Ihnen, das Standardverhalten des Code-Editors zu ändern, wenn Si
  **Automatische Gliederung von Anweisungsblöcken**  
  Wenn diese Option ausgewählt ist, wird die automatische Gliederung für die folgenden Anweisungskonstrukte aktiviert:  
   
--   [if-else](http://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2)  
+- [if-else](http://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2)  
   
--   [switch-Anweisung (C++)](http://msdn.microsoft.com/library/6c3f3ed3-5593-463c-8f4b-b33742b455c6)  
+- [switch-Anweisung (C++)](http://msdn.microsoft.com/library/6c3f3ed3-5593-463c-8f4b-b33742b455c6)  
   
--   [while-Anweisung (C++)](http://msdn.microsoft.com/library/358dbe76-5e5e-4af5-b575-c2293c636899)  
+- [while-Anweisung (C++)](http://msdn.microsoft.com/library/358dbe76-5e5e-4af5-b575-c2293c636899)  
   
 ## <a name="see-also"></a>Siehe auch  
  [Allgemein, Umgebung, Dialogfeld „Optionen“](../../ide/reference/general-environment-options-dialog-box.md)   
  [Verwenden von IntelliSense](../../ide/using-intellisense.md)
-
-
-

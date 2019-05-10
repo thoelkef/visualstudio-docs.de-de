@@ -1,12 +1,9 @@
 ---
-title: 'UML-Anwendungsfalldiagramme: Verweisen | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'UML-Anwendungsfalldiagramme: Verweis | Microsoft-Dokumentation'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.usecasediagram.toolbox
 - vs.teamarch.usecasediagram.diagram
@@ -21,13 +18,13 @@ ms.assetid: aa15772b-eb67-4366-b145-b559112817df
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 64eece28fc46fce799eff01e7ed1e7302e939dbc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 45f8d742af1cd6a0ed73f3beda24e829b417e81f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791761"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424319"
 ---
 # <a name="uml-use-case-diagrams-reference"></a>UML-Anwendungsfalldiagramme: Referenz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +36,7 @@ In Visual Studio eine *Anwendungsfalldiagramm* zusammengefasst, die Ihre Anwendu
  Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!NOTE]
->  In diesem Thema werden die Elemente beschrieben, die in Anwendungsfalldiagrammen verfügbar sind. Weitere Informationen über das Zeichnen von Anwendungsfalldiagrammen finden Sie unter [UML-Anwendungsfalldiagrammen: Richtlinien](../modeling/uml-use-case-diagrams-guidelines.md). Weitere Informationen zum Erstellen und Zeichnen von Modellierungsdiagrammen finden Sie unter [Bearbeiten von UML-Modellen und Diagrammen](../modeling/edit-uml-models-and-diagrams.md).  
+> In diesem Thema werden die Elemente beschrieben, die in Anwendungsfalldiagrammen verfügbar sind. Weitere Informationen über das Zeichnen von Anwendungsfalldiagrammen finden Sie unter [UML-Anwendungsfalldiagrammen: Richtlinien](../modeling/uml-use-case-diagrams-guidelines.md). Weitere Informationen zum Erstellen und Zeichnen von Modellierungsdiagrammen finden Sie unter [Bearbeiten von UML-Modellen und Diagrammen](../modeling/edit-uml-models-and-diagrams.md).  
   
 ## <a name="reading-use-case-diagrams"></a>Lesen von Anwendungsfalldiagrammen  
  In den Tabellen in den folgenden Abschnitten werden die Elemente, die in einem Anwendungsfalldiagramm verfügbar sind, zusammen mit ihren Haupteigenschaften beschrieben. Eine vollständige Liste der Eigenschaften, finden Sie unter [Eigenschaften von Elementen in UML-Anwendungsfalldiagrammen](../modeling/properties-of-elements-on-uml-use-case-diagrams.md).  
@@ -74,6 +71,3 @@ In Visual Studio eine *Anwendungsfalldiagramm* zusammengefasst, die Ihre Anwendu
  [UML-Klassendiagramme: Referenz](../modeling/uml-class-diagrams-reference.md)   
  [UML-Komponentendiagramme: Referenz](../modeling/uml-component-diagrams-reference.md)   
  [UML-Komponentendiagramme: Referenz](../modeling/uml-component-diagrams-reference.md)
-
-
-

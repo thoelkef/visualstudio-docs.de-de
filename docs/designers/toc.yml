@@ -4,12 +4,12 @@
     - name: Entwerfen von XAML-Code in Visual Studio
       href: designing-xaml-in-visual-studio.md
       items:
-        - name: Erstellen einer Benutzeroberfläche mit dem XAML-Designer
+        - name: XAML-Designer
           href: creating-a-ui-by-using-xaml-designer-in-visual-studio.md
           items:
-            - name: Arbeiten mit Elementen im XAML-Designer
+            - name: Arbeiten mit Elementen
               href: working-with-elements-in-xaml-designer.md
-            - name: Organisieren von Objekten in Layoutcontainern im XAML-Designer
+            - name: Organisieren von Objekten in Layoutcontainern
               href: organize-objects-into-layout-containers-in-xaml-designer.md
             - name: Erstellen und Anwenden einer Ressource
               href: how-to-create-and-apply-a-resource.md
@@ -17,26 +17,26 @@
               href: walkthrough-binding-to-data-in-xaml-designer.md
             - name: Tastenkombinationen für XAML-Designer
               href: keyboard-shortcuts-for-xaml-designer.md
-            - name: Debuggen oder Deaktivieren von Projektcode im XAML-Designer
+            - name: Aktivieren und Deaktivieren von Projektcode
               href: debugging-or-disabling-project-code-in-xaml-designer.md
             - name: XAML-Fehler und -Warnungen
               href: xaml-errors-warnings.md
-        - name: Erstellen einer Benutzeroberfläche mit Blend für Visual Studio
+        - name: Blend for Visual Studio
           href: creating-a-ui-by-using-blend-for-visual-studio.md
           items:
-            - name: Einfügen von Steuerelementen und Ändern des Verhaltens im XAML-Designer
+            - name: Einfügen von Steuerelementen und Ändern des Verhaltens
               href: insert-controls-and-modify-their-behavior-in-xaml-designer.md
-            - name: 'Einfügen von Bildern, Videos und Audioclips im XAML-Designer'
+            - name: 'Einfügen von Bildern, Videos und Audioclips'
               href: insert-images-videos-and-audio-clips-in-xaml-designer.md
             - name: Zeichnen von Formen und Pfaden
               href: draw-shapes-and-paths.md
             - name: Ändern des Stils von Objekten in Blend
               href: modify-the-style-of-objects-in-blend.md
-            - name: Animieren von Objekten im XAML-Designer
+            - name: Animieren von Objekten
               href: animate-objects-in-xaml-designer.md
             - name: Anzeigen von Daten
               href: display-data-in-blend.md
-            - name: Tastenkombinationen und Zusatztasten in Blend
+            - name: Tastenkombinationen und Zusatztasten
               href: keyboard-shortcuts-and-modifier-keys-in-blend.md
               items:
                 - name: Tastenkombinationen
@@ -85,7 +85,7 @@
                   items:
                     - name: Erstellen und Ausführen des LinqToXmlDataBinding-Beispiels
                       href: how-to-build-and-run-the-linqtoxmldatabinding-example.md
-                    - name: 'Exemplarische Vorgehensweise: Datenbindung mit LINQ to XML'
+                    - name: 'Exemplarische Vorgehensweise: LINQ to XML-Datenbindung'
                       href: walkthrough-linqtoxmldatabinding-example.md
                       items:
                         - name: L2DBForm.xaml-Quellcode

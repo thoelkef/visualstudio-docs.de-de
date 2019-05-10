@@ -1,7 +1,6 @@
 ---
 title: Befehl "Start"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - debug.start
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: dc4e4aa2-b0ab-4e00-92db-6dc3058ddc21
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3e15e9bcea439e6e01ff3bb233622d119fa4b46
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1f7488353cd4c64b0afca27060c364a1f9ddc6f8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53903928"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950436"
 ---
 # <a name="start-command"></a>Befehl "Start"
 Startet das Debuggen des Startup-Projekts.
@@ -35,7 +34,7 @@ Debug.Start [address]
 
  Dies ist optional. Die Adresse, an der das Programm die Ausführung anhält, ähnlich wie ein Breakpoint im Quellcode. Dieses Argument ist nur im Debugmodus gültig.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Anmerkungen
  Der Befehl **Start** führt bei der Ausführung einen RunToCursor-Vorgang auf die angegebene Adresse aus.
 
 ## <a name="example"></a>Beispiel

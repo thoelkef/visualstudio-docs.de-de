@@ -1,25 +1,22 @@
 ---
 title: Verknüpfen von UML-modellaktualisierungen mithilfe von Transaktionen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API, transactions
 ms.assetid: a1df6c38-a3d1-4a3f-82bc-c8f363ab916e
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fb8bb5dfd5238871324b786f120d618d70f14b43
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f938e08d2bc9363be5e3f9e1ac247dea36f25a80
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51800405"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064829"
 ---
 # <a name="link-uml-model-updates-by-using-transactions"></a>Verknüpfen von UML-Modellaktualisierungen mithilfe von Transaktion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +32,7 @@ Wenn Sie eine Erweiterung zu den UML-Designern in Visual Studio definieren, kön
 ## <a name="to-group-changes-into-a-single-transaction"></a>So gruppieren Sie Änderungen in einer einzelnen Transaktion  
  Stellen Sie sicher, dass die Projektverweise diese .NET-Assembly enthalten:  
   
- **Microsoft.VisualStudio.Modeling.Sdk. [Version] .dll**  
+ **Microsoft.VisualStudio.Modeling.Sdk.[version].dll**  
   
  Deklarieren Sie in der Klasse eine importierte Eigenschaft vom Typ <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ILinkedUndoContext>:  
   
@@ -65,15 +62,15 @@ Wenn Sie eine Erweiterung zu den UML-Designern in Visual Studio definieren, kön
   
  Beachten Sie Folgendes:  
   
--   Sie müssen am Ende der Transaktion immer `Commit()` einschließen. Wenn eine Transaktion verworfen wird, ohne übermittelt worden zu sein, wird die Transaktion zurückgesetzt. Das heißt, dass für das Modell der Zustand zu Beginn der Transaktion wiederhergestellt wird.  
+- Sie müssen am Ende der Transaktion immer `Commit()` einschließen. Wenn eine Transaktion verworfen wird, ohne übermittelt worden zu sein, wird die Transaktion zurückgesetzt. Das heißt, dass für das Modell der Zustand zu Beginn der Transaktion wiederhergestellt wird.  
   
--   Wenn eine Ausnahme auftritt, die innerhalb der Transaktion nicht aufgefangen werden kann, wird die Transaktion zurückgesetzt. Es ist ein häufig verwendetes Muster, den `using`-Block der Transaktion in einen `try…catch`-Block einzuschließen.  
+- Wenn eine Ausnahme auftritt, die innerhalb der Transaktion nicht aufgefangen werden kann, wird die Transaktion zurückgesetzt. Es ist ein häufig verwendetes Muster, den `using`-Block der Transaktion in einen `try…catch`-Block einzuschließen.  
   
--   Sie können Transaktionen verschachteln.  
+- Sie können Transaktionen verschachteln.  
   
--   Sie können jeden nicht leeren Namen für `BeginTransaction()` bereitstellen.  
+- Sie können jeden nicht leeren Namen für `BeginTransaction()` bereitstellen.  
   
--   Nur der UML-Modellspeicher ist von diesen Transaktionen betroffen. Modellerstellungstransaktionen wirken sich nicht auf folgende Elemente aus: Variablen, externe Speicher wie Dateien und Datenbanken, Ebenendiagramme und Codemodelle.  
+- Nur der UML-Modellspeicher ist von diesen Transaktionen betroffen. Modellerstellungstransaktionen wirken sich nicht auf folgende Elemente aus: Variablen, externe Speicher wie Dateien und Datenbanken, Ebenendiagramme und Codemodelle.  
   
 ## <a name="example"></a>Beispiel  
   
@@ -115,6 +112,3 @@ Wenn Sie eine Erweiterung zu den UML-Designern in Visual Studio definieren, kön
  [Programmieren mit der UML-API](../modeling/programming-with-the-uml-api.md)   
  [Definieren eines Menübefehls in einem Modellierungsdiagramm](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [Erweitern von UML-Modellen und -Diagrammen](../modeling/extend-uml-models-and-diagrams.md)
-
-
-

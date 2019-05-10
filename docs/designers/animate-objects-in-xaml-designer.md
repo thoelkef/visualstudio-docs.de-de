@@ -1,20 +1,19 @@
 ---
 title: Animieren von Objekten im XAML-Designer
 ms.date: 04/11/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: fb88fa26-e835-47f5-9771-2f279441c83c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 312721cb47858d3c5462fcbee99289dbad526180
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a5bd9c24351201d066f9055554468939df02b33e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941491"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62927028"
 ---
 # <a name="animate-objects-in-xaml-designer"></a>Animieren von Objekten im XAML-Designer
 

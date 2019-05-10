@@ -1,30 +1,32 @@
 ---
 title: IDebugProgramEx2::Attach | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProgramEx2::Attach
 helpviewer_keywords:
 - IDebugProgramEx2::Attach
 ms.assetid: 33b22b2f-431e-4205-9441-d28a9c928c97
-author: gregvanl
+caps.latest.revision: 14
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: f885bd3cdd09caa145451e922ad154b60fdb1ff4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7f2ec56f5c9392f623cdca13306c81382d1b6b2d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412740"
 ---
 # <a name="idebugprogramex2attach"></a>IDebugProgramEx2::Attach
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Fügen Sie eine Sitzung mit einem Programm.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT Attach(   
    IDebugEventCallback2* pCallback,  
    DWORD                 dwReason,  
@@ -58,7 +60,7 @@ int Attach( 
  Der Port, der das Programm enthält, können den Wert in `pSession` um zu bestimmen, welche Sitzung versucht, die an die Anwendung anfügen. Wenn ein Port zum Anfügen an einen Prozess zu einem Zeitpunkt nur eine Debugsitzung zulässt, kann z. B. der Port ermitteln, ob die gleiche Sitzung bereits für andere Programme im Prozess angefügt ist.  
   
 > [!NOTE]
->  Die Schnittstelle übergebenen `pSession` nur als ein Cookie, das einen Wert behandelt werden soll, die eindeutig den Anfügen an diesem Programm; sitzungsbasierter Debug-Manager keine der Methoden für die angegebene Schnittstelle funktionsfähig sind.  
+> Die Schnittstelle übergebenen `pSession` nur als ein Cookie, das einen Wert behandelt werden soll, die eindeutig den Anfügen an diesem Programm; sitzungsbasierter Debug-Manager keine der Methoden für die angegebene Schnittstelle funktionsfähig sind.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)

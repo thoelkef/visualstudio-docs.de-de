@@ -1,12 +1,9 @@
 ---
 title: Debuggen, indem Sie mit dem Store-Viewer | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, store viewer
 - Domain-Specific Language, store
@@ -14,13 +11,13 @@ ms.assetid: 0178db2e-ae99-4ed3-9b87-8620fa9fa8e4
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 78a7cad2db2efa8057f2b95d117f93c59cc328cb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1a76cd9b726e534271937cb67a8d3f946d4eb477
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189076"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433194"
 ---
 # <a name="debugging-by-using-the-store-viewer"></a>Debuggen mithilfe der Speicheranzeige
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +32,13 @@ Microsoft.VisualStudio.Modeling.Diagnostics.StoreViewer.Show(mystore);
 ```  
   
 > [!NOTE]
->  Ersetzen Sie `mystore` mit dem Namen Ihrer Store-Instanz. Wenn Sie den Namespace an Ihrem Code hinzufügen, können Sie auch den Befehl zum Anzeigen von Store-Viewer ohne den vollqualifizierten Namespace eingeben:  
+> Ersetzen Sie `mystore` mit dem Namen Ihrer Store-Instanz. Wenn Sie den Namespace an Ihrem Code hinzufügen, können Sie auch den Befehl zum Anzeigen von Store-Viewer ohne den vollqualifizierten Namespace eingeben:  
 >   
->  `using Microsoft.VisualStudio.Modeling.Diagnostics;`  
+> `using Microsoft.VisualStudio.Modeling.Diagnostics;`  
 >   
->  `…`  
+> `…`  
 >   
->  `StoreViewer.Show(mystore);`  
+> `StoreViewer.Show(mystore);`  
   
  Die `Show` -Methode weist mehrere Überladungen. Sie können eine Instanz von einem Store oder eine Partition als Parameter angeben.  
   
@@ -57,6 +54,3 @@ Store-Viewer
   
 ## <a name="see-also"></a>Siehe auch  
  [Navigieren in und Aktualisieren von Modellen im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md)
-
-
-

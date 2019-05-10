@@ -1,14 +1,9 @@
 ---
 title: Die Struktur der Content_types] .xml-Datei | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - content_types
 - content types
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d5892ab545c41f7d58f0d097f3d27c90c090f0ff
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4117e028611c2ff64102a97579d17d72f50407e0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430152"
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>Die Struktur der Content_types] .xml-Datei
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51736581"
 Enthält Informationen zu den Arten von Inhalten in einem VSIX-Paket. Visual Studio verwendet die [Content_Types] .xml-Datei zum Installieren des Pakets, aber die Datei selbst werden nicht installiert.  
   
 > [!NOTE]
->  Obwohl in diesem Thema nur für XML-Dateien [Content_Type], die in VSIX-Paketen verwendet werden gilt, wird der [Content_Types] .xml-Dateityp ist Teil der *Open Packaging Conventions (OPC)* standard. Weitere Informationen finden Sie unter [OPC: A New Standard für die Paketerstellung Your Data](http://go.microsoft.com/fwlink/?LinkID=148207) auf der MSDN-Website.  
+> Obwohl in diesem Thema nur für XML-Dateien [Content_Type], die in VSIX-Paketen verwendet werden gilt, wird der [Content_Types] .xml-Dateityp ist Teil der *Open Packaging Conventions (OPC)* standard. Weitere Informationen finden Sie unter [OPC: Eine neue Standard für die Paketerstellung Your Data](http://go.microsoft.com/fwlink/?LinkID=148207) auf der MSDN-Website.  
   
 ## <a name="attributes-and-elements"></a>Attribute und Elemente  
  In den folgenden Abschnitten wird beschrieben, das Stammelement und seine Attribute und untergeordneten Elementen.  
@@ -73,16 +68,16 @@ Enthält Informationen zu den Arten von Inhalten in einem VSIX-Paket. Visual Stu
   
 |Erweiterung|ContentType|  
 |---------------|-----------------|  
-|TXT|Text/plain|  
-|PKGDEF|Text/plain|  
+|txt|Text/plain|  
+|pkgdef|Text/plain|  
 |xml|text/xml|  
 |vsixmanifest|text/xml|  
-|htm- oder HTML-|Text/html|  
-|RTF|Anwendung/rtf|  
-|PDF-Datei|Application/PDF-Datei|  
+|htm- oder HTML-|text/html|  
+|rtf|application/rtf|  
+|pdf|application/pdf|  
 |GIF|Image/gif|  
 |JPG oder JPEG-Format|Image/jpg|  
-|TIFF|Image/tiff|  
+|tiff|Image/tiff|  
 |VSIX|Application/zip|  
 |ZIP|Application/zip|  
 |dll|application/octet-stream|  
@@ -108,6 +103,5 @@ Enthält Informationen zu den Arten von Inhalten in einem VSIX-Paket. Visual Stu
   
 ## <a name="see-also"></a>Siehe auch  
  [Anatomie eines VSIX-Pakets](../extensibility/anatomy-of-a-vsix-package.md)   
- [Referenz zum VSIX-Erweiterung Schema 1.0](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
+ [Referenz zum VSIX-Erweiterung Schema 1.0](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
  [OPC: Ein neuer Standard für das Verpacken Ihrer Daten](http://go.microsoft.com/fwlink/?LinkID=148207)
-

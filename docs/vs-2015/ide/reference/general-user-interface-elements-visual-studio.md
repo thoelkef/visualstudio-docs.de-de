@@ -1,24 +1,20 @@
 ---
 title: Allgemeine Benutzeroberflächenelemente | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 ms.assetid: bc67652d-1001-4979-ba71-d57147d21928
 caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9222a03b9df8997298e473c7248307341d89409f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 39669408402a12ce8010865606e2a2ec3929569b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931170"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537601"
 ---
 # <a name="general-user-interface-elements-visual-studio"></a>Allgemeine Elemente der Benutzeroberfläche (Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,11 +45,11 @@ Dieser Abschnitt beschreibt einige Benutzeroberflächenelemente der integrierten
 
  [Optionen, Text-Editor, C/C++, erweitert](../../ide/reference/options-text-editor-c-cpp-advanced.md) können Sie erweiterte Optionen für C- oder C++-Dateien anzugeben.
 
- [Optionen, Text-Editor, C#, Formatierung](../../ide/reference/options-text-editor-csharp-formatting.md) ermöglicht Ihnen die Angabe von Formatierungsoptionen für C# Dateien.
+ [Optionen, Text-Editor, c#, Formatierung](../../ide/reference/options-text-editor-csharp-formatting.md) ermöglicht Ihnen die Angabe von Formatierungsoptionen für C#-Dateien.
 
- [Optionen, Text-Editor, C#, erweiterte](../../ide/reference/options-text-editor-csharp-advanced.md) ermöglicht Ihnen die Angabe von erweiterten Optionen für die C# Dateien.
+ [Optionen, Text-Editor, c#, erweitert](../../ide/reference/options-text-editor-csharp-advanced.md) können Sie erweiterte Optionen für C#-Dateien anzugeben.
 
- [Optionen, Text-Editor, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) ermöglicht Ihnen die Angabe von IntelliSense-Optionen für C# Dateien.
+ [Optionen, Text-Editor, c#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) können Sie IntelliSense-Optionen für C#-Dateien angeben.
 
  [Optionen, Text-Editor, XAML, Formatierung](../../ide/reference/options-text-editor-xaml-formatting.md) ermöglicht Ihnen die Angabe von Formatierungsoptionen für XAML-Dateien.
 

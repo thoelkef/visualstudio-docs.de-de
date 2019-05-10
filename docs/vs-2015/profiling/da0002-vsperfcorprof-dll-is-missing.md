@@ -1,14 +1,9 @@
 ---
 title: 'DA0002: „VSPerfCorProf.dll“ fehlt | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0002
 - vs.performance.2
@@ -18,13 +13,13 @@ ms.assetid: 76e614b3-ad7e-4b92-b7be-88dc1329be1d
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bb1359b525b286dbc88cbd3d8eecaef27060ab23
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5723506415a0ddbf816b896e23e93eaa706bf7e7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809466"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792922"
 ---
 # <a name="da0002-vsperfcorprofdll-is-missing"></a>DA0002: VSPerfCorProf.dll fehlt
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51809466"
 Regel-Id | DA0002 |  
 | Kategorie | Verwendung der Profilerstellungstools |  
 | Profilerstellungsmethoden | Profilerstellung mithilfe der Befehlszeilentools VSPerfCmd und VSPerfASPNETCmd |  
-| Nachricht | Offenbar wurde die Datei ohne ordnungsgemäße Festlegen der Umgebungsvariablen mit "VSPerfCLREnv.cmd" erfasst. Symbole für verwaltete Binärdateien können nicht aufgelöst werden. |  
+| Nachricht | Offenbar wurde die Datei ohne ordnungsgemäße Festlegen der Umgebungsvariablen mit "VSPerfCLREnv.cmd" erfasst. Die Symbole für verwaltete Binärdateien können möglicherweise nicht aufgelöst werden.|  
 | Regeltyp | Informationen |  
   
 ## <a name="cause"></a>Ursache  
@@ -43,6 +38,3 @@ Regel-Id | DA0002 |
   
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
  Wenn Sie für verwaltete Anwendungen mithilfe der Befehlszeilentools in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Profilerstellungstools Profile erstellen, führen Sie das Befehlszeilentool [VSPerfCLREnv](../profiling/vsperfclrenv.md) aus, bevor Sie mit dem Erfassen von Daten beginnen.
-
-
-

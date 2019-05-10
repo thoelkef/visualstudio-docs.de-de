@@ -1,14 +1,9 @@
 ---
 title: Erstellen einer benutzerdefinierten Debug-Engine | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, implementing
 - debug engines, custom
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 52794238-6fae-451c-bf1c-99f344c6f173
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 516fda63a1a36e407a71cd6711ecdfabdc1e5e58
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b2a73dfae7772d8edec076238704aa1b52c9b028
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784693"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383443"
 ---
 # <a name="creating-a-custom-debug-engine"></a>Erstellen einer benutzerdefinierten Debug-Engine
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,21 +25,21 @@ ms.locfileid: "51784693"
 Ein Debugmodul (DE) ist eine Komponente, die ermöglicht das Debuggen von bestimmten Laufzeit-Architekturen. Es gibt in der Regel nur eine Implementierung von DE pro-Umgebung ausgeführt.  
   
 > [!NOTE]
->  Es gibt separate DE-Implementierungen für Transact-SQL und JScript, VBScript und JScript einer einzelnen DE freigeben.  
+> Es gibt separate DE-Implementierungen für Transact-SQL und JScript, VBScript und JScript einer einzelnen DE freigeben.  
   
  Eine bereitgestellten Kompatibilitätsrichtlinie arbeitet mit den Interpreter oder Vorgang System solche Debugdienste Ausführung-Steuerelement, Haltepunkte und Ausdruck Evaluierungsversion bereit. Diese Dienste werden über die DE-Schnittstellen implementiert und können dazu führen, dass den Debugger für den Übergang zwischen verschiedenen Betriebsmodi. Weitere Informationen finden Sie unter [Betriebsmodi](../../extensibility/debugger/operational-modes.md).  
   
  Zur Erstellung einer bereitgestellten Kompatibilitätsrichtlinie gehören die folgenden Schritte aus:  
   
-1.  Registrieren einer bereitgestellten Kompatibilitätsrichtlinie mit Visual Studio  
+1. Registrieren einer bereitgestellten Kompatibilitätsrichtlinie mit Visual Studio  
   
-2.  Aktivieren eines Programms, die debuggt werden  
+2. Aktivieren eines Programms, die debuggt werden  
   
-3.  Ausführung und Auswertung  
+3. Ausführung und Auswertung  
   
-4.  Senden von Ereignissen  
+4. Senden von Ereignissen  
   
-5.  Beenden und trennen  
+5. Beenden und trennen  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Registrieren einer benutzerdefinierten Debug-Engine](../../extensibility/debugger/registering-a-custom-debug-engine.md)  
@@ -65,9 +60,8 @@ Ein Debugmodul (DE) ist eine Komponente, die ermöglicht das Debuggen von bestim
  [Aufrufen von Debuggerereignissen](../../extensibility/debugger/calling-debugger-events.md)  
  Dokumentiert die Aufrufreihenfolge der Ereignisse, die in einer Debugsitzung an.  
   
- [Gewusst wie: Debuggen einer benutzerdefinierten Debug-Engine](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md)  
+ [How To: Debug a Custom Debug Engine (Vorgehensweise: Debuggen einer benutzerdefinierten Debug-Engine)](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md)  
  Erläutert, wie eine benutzerdefinierte DE zu debuggen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Visual Studio Debugger-Erweiterbarkeit](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
-

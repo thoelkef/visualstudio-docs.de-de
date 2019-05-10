@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 17AB4F31-4921-4B4E-8D9D-95FB84294521
-ms.openlocfilehash: 8ae291054a08a8835d7bf3d1d1df77c1c6eb8519
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 71233b609f2e68935b71e3044a9b6ec0f59091bb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224333"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966229"
 ---
 # <a name="user-accounts"></a>Benutzerkonten
 
@@ -21,4 +21,4 @@ Durch die Anmeldung erhalten Sie Zugriff auf alle Ihrem Benutzerkonto zugeordnet
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
 * [Anmelden bei Visual Studio für Mac](signing-in.md)
-* [Enable Subscription (Abonnement aktivieren)](activation.md)
+* [Enable Subscription (Abonnement aktivieren)](enable-subscription.md)

@@ -1,14 +1,9 @@
 ---
 title: Hinzufügen von Kommentaren Sperrverhalten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - _Releases_nonreentrant_lock_
 - _Lock_kind_mutex_
@@ -37,13 +32,13 @@ ms.assetid: 07769c25-9b97-4ab7-b175-d1c450308d7a
 caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: f09b38ceb4a6824ec38f0d9206cf37e0f056ce28
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 66c4aafb380d50ec0faafce931b8ce73e5138e6f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790759"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052388"
 ---
 # <a name="annotating-locking-behavior"></a>Hinzufügen einer Anmerkung zum Sperrverhalten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,11 +58,11 @@ Um Fehler bei der Parallelität in einem Multithreadprogramm zu vermeiden, führ
   
  Einige Threads Besitzregeln zu beachten:  
   
--   Spinlocks sind ungezählte sperren, die klare Thread den Besitz an.  
+- Spinlocks sind ungezählte sperren, die klare Thread den Besitz an.  
   
--   Mutexe und kritische Abschnitte werden Sperren gezählt, die klare Thread den Besitz zu haben.  
+- Mutexe und kritische Abschnitte werden Sperren gezählt, die klare Thread den Besitz zu haben.  
   
--   Semaphoren und Ereignissen werden Sperren gezählt, die keine klare Thread den Besitz aufweisen.  
+- Semaphoren und Ereignissen werden Sperren gezählt, die keine klare Thread den Besitz aufweisen.  
   
 ## <a name="locking-annotations"></a>Sperren von Anmerkungen  
  Die folgende Tabelle enthält die Sperren von Anmerkungen.  
@@ -123,6 +118,3 @@ Um Fehler bei der Parallelität in einem Multithreadprogramm zu vermeiden, führ
  [Systeminterne Funktionen](../code-quality/intrinsic-functions.md)   
  [Empfohlene Vorgehensweisen und Beispiele](../code-quality/best-practices-and-examples-sal.md)   
  [Code Analysis-Teamblog](http://go.microsoft.com/fwlink/p/?LinkId=251197)
-
-
-

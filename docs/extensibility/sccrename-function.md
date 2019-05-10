@@ -1,30 +1,32 @@
 ---
 title: SccRename-Funktion | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccRename
 helpviewer_keywords:
 - SccRename function
 ms.assetid: b467ade6-a1db-4c0b-b60f-7850ec4f79eb
-author: gregvanl
+caps.latest.revision: 13
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: efd86fcfa728e9dfad05d9feb934bc2b54e5272b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 2e270d1be9cdf935dbffa7d094fddaecd4f73a02
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896135"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433070"
 ---
 # <a name="sccrename-function"></a>SccRename-Funktion
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 Diese Funktion benennt eine Datei in das Quellcodeverwaltungssystem.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 SCCRTN SccRename(  
    LPVOID pvContext,  
    HWND   hWnd,  

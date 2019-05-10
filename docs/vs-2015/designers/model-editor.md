@@ -1,14 +1,9 @@
 ---
 title: Modell-Editor | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.3dscene
 - vs.graphics.modelviewer
@@ -16,13 +11,13 @@ ms.assetid: 5edf1a30-9307-43c3-9b8b-831217be0104
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1e947793dff1f0068c1341ba6b70c21df07463f6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 81f2766e5c382f8beaa4cb20472da6e0e6fc94e2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844086"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432629"
 ---
 # <a name="model-editor"></a>Modell-Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,13 +40,13 @@ In diesem Dokument wird beschrieben, wie Sie mit dem [!INCLUDE[vsprvs](../includ
   
 #### <a name="to-add-a-3-d-model-to-your-project"></a>So fügen Sie Ihrem Projekt ein 3D-Modell hinzu  
   
-1.  Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü des Projekts, zu dem Sie das Image hinzufügen möchten, und klicken Sie dann auf **Hinzufügen** und **Neues Element**.  
+1. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü des Projekts, zu dem Sie das Image hinzufügen möchten, und klicken Sie dann auf **Hinzufügen** und **Neues Element**.  
   
-2.  Klicken Sie im Dialogfeld **Neues Element hinzufügen** unter **Installiert** auf **Grafiken** und anschließend auf **3D-Szene (.fbx)**.  
+2. Klicken Sie im Dialogfeld **Neues Element hinzufügen** unter **Installiert** auf **Grafiken** und anschließend auf **3D-Szene (.fbx)**.  
   
-3.  Geben Sie den **Namen** der Modelldatei und den **Speicherort** an, an dem diese erstellt werden soll.  
+3. Geben Sie den **Namen** der Modelldatei und den **Speicherort** an, an dem diese erstellt werden soll.  
   
-4.  Wählen Sie die Schaltfläche **Hinzufügen** aus.  
+4. Wählen Sie die Schaltfläche **Hinzufügen** aus.  
   
 ### <a name="axis-orientation"></a>Achsenausrichtung  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] unterstützt jede Ausrichtung der 3D-Achse und lädt Informationen zur Achsenausrichtung aus den unterstützten Modelldateiformaten. Wird keine Achsenausrichtung angegeben, verwendet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] standardmäßig das rechtshändige Koordinatensystem. Der **Achsenindikator** zeigt die aktuelle Achsenausrichtung in der rechten unteren Ecke der Entwurfsoberfläche an. Der **Achsenindikator** stellt die X-Achse in rot, die Y-Achse in grün und die Z-Achse in blau dar.  
@@ -78,14 +73,14 @@ In diesem Dokument wird beschrieben, wie Sie mit dem [!INCLUDE[vsprvs](../includ
 |**Auswählen**|Ermöglicht, abhängig vom aktiven Auswahlmodus, das Auswählen von Punkten, Rändern, Flächen oder Objekten in der Szene.|  
 |**Schwenken**|Ermöglicht das Bewegen einer 3D-Szene relativ zum Fensterrahmen. Wählen Sie zum Schwenken einen Punkt in der Szene aus und verschieben Sie ihn.<br /><br /> Im **Auswahl**-Modus können Sie den **Schwenken**-Modus durch Gedrückthalten der STRG-TASTE vorübergehend aktivieren.|  
 |**Zoom**|Ermöglicht das Anzeigen von mehr oder weniger Szenendetails relativ zum Fensterrahmen. Klicken Sie im **Zoom**-Modus auf einen Punkt in der Szene, und verschieben Sie ihn: zum Vergrößern nach rechts oder nach unten, und zum Verkleinern nach links oder nach oben.<br /><br /> Im **Auswählen**-Modus können Sie zum Vergrößern oder Verkleinern das Mausrad verwenden. Halten Sie währenddessen die STRG-TASTE gedrückt.|  
-|**Orbit**|Positioniert die Ansicht auf einem kreisförmigen Pfad um das ausgewählte Objekt. Ist kein Objekt ausgewählt, wird der Pfad auf den Szenenursprung zentriert. **Hinweis**: Dieser Modus hat keine Auswirkungen, wenn die Projektionsoption **Orthografisch** aktiviert ist.|  
+|**Orbit**|Positioniert die Ansicht auf einem kreisförmigen Pfad um das ausgewählte Objekt. Ist kein Objekt ausgewählt, wird der Pfad auf den Szenenursprung zentriert. **Hinweis**:  Dieser Modus hat keine Auswirkungen, wenn die Projektionsoption **Orthografisch** aktiviert ist.|  
 |**World Local**|Ist dieses Element aktiviert, werden Transformationen am ausgewählten Objekt im Welt-Raum umgesetzt. Andernfalls werden Transformationen am ausgewählten Objekt in lokalem Raum umgesetzt.|  
 |**Pivot-Modus**|Ist dieses Element aktiviert, beeinflussen Transformationen den Ort und die Ausrichtung des *Pivotpunkts* des ausgewählten Objekts (der Pivotpunkt definiert den Mittelpunkt der Verschiebungs-, Skalierungs- und Drehvorgänge.) Andernfalls beeinflussen Transformationen den Ort und die Ausrichtung der Geometrie des Objekts relativ zum Pivotpunkt.|  
 |**X-Achse sperren**|Beschränkt die Bearbeitung des Objekts auf die X-Achse. Gilt nur bei Verwendung des mittleren Teils des Manipulator-Widgets.|  
 |**Y-Achse sperren**|Beschränkt die Bearbeitung des Objekts auf die Y-Achse. Gilt nur bei Verwendung des mittleren Teils des Manipulator-Widgets.|  
 |**Z-Achse sperren**|Beschränkt die Bearbeitung des Objekts auf die Z-Achse. Gilt nur bei Verwendung des mittleren Teils des Manipulator-Widgets.|  
 |**Rahmenobjekt**|Rahmt das ausgewählte Objekt ein, sodass es sich in der Mitte der Ansicht befindet.|  
-|**Ansicht**|Legt die Ausrichtung der Ansicht fest. Im Folgenden finden Sie die verfügbaren Ausrichtungen:<br /><br /> **Front** (Vorderseite)<br /> Positioniert die Ansicht vor der Szene.<br /><br /> **Zurück**<br /> Positioniert die Ansicht hinter die Szene.<br /><br /> **Links**<br /> Positioniert die Ansicht links von der Szene.<br /><br /> **Rechts**<br /> Positioniert die Ansicht rechts von der Szene.<br /><br /> **Top** (Oben)<br /> Positioniert die Ansicht über der Szene.<br /><br /> **Bottom** (Unten)<br /> Positioniert die Ansicht unter der Szene. **Hinweis:** Dies ist die einzige Möglichkeit, die Ansichtsrichtung zu ändern, wenn die Projektionsoption **Orthografisch** aktiviert ist.|  
+|**Ansicht**|Legt die Ausrichtung der Ansicht fest. Im Folgenden finden Sie die verfügbaren Ausrichtungen:<br /><br /> **Front** (Vorderseite)<br /> Positioniert die Ansicht vor der Szene.<br /><br /> **Zurück**<br /> Positioniert die Ansicht hinter die Szene.<br /><br /> **Links**<br /> Positioniert die Ansicht links von der Szene.<br /><br /> **Rechts**<br /> Positioniert die Ansicht rechts von der Szene.<br /><br /> **Top** (Oben)<br /> Positioniert die Ansicht über der Szene.<br /><br /> **Bottom** (Unten)<br /> Positioniert die Ansicht unter der Szene. **Hinweis**:  Das ist die einzige Möglichkeit, die Ansichtsrichtung zu ändern, wenn die Projektionsoption **Orthografisch** aktiviert ist.|  
 |**Projektion**|Legt die Projektionsart fest, die zum Zeichnen der Szene verwendet wird. Im Folgenden finden Sie die verfügbaren Projektionsarten:<br /><br /> **Perspektive**<br /> In der perspektivischen Projektion erscheinen weiter vom Blickpunkt entfernte Objekte kleiner und laufen letztendlich in der Entfernung zu einem Punkt zusammen.<br /><br /> **Orthografisch**<br /> In der ortographischen Projektion erscheinen Objekte unabhängig von ihrer Entfernung zum Blickpunkt gleich Groß. Es wird keine Konvergenz angezeigt. Ist die Projektionsoption **Orthografisch** aktiviert, können Sie den **Orbit**-Modus nicht zum Positionieren der Ansicht verwenden.|  
 |**Zeichenstil**|Legt fest, wie Objekte in der Szene gerendert werden. Im Folgenden finden Sie die verfügbaren Stile:<br /><br /> **Drahtmodell**<br /> Ist diese Option aktiviert, werden Objekte als Drahtmodelle gerendert.<br /><br /> **Überzeichnen**<br /> Ist diese Option aktiviert, werden Objekte durch Additive Blending gerendert. Sie können diese Option verwenden, um darzustellen, wie ausgeprägt die Überzeichnung in der Szene ist.<br /><br /> **Flach schattiert**<br /> Ist diese Option aktiviert, werden Objekte mithilfe eines einfachen flach schattierten Beleuchtungsmodells gerendert. Verwenden Sie diese Option, um die Flächen eines Objekts leichter zu erkennen.<br /><br /> Wenn keine dieser Optionen aktiviert ist, wird jedes Objekt in dem darauf angewendeten Material gerendert.|  
 |**Real-Time Rendering Mode** (Echtzeit-Renderingmodus)|Bei aktiviertem Real-Time Rendering, zeichnet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] die Entwurfsoberfläche auch dann neu, wenn keine Benutzeraktion ausgeführt wird. Ein hilfreicher Modus, bei der Arbeit mit Shadern, die sich im Laufe der Zeit ändern.|  
@@ -93,7 +88,7 @@ In diesem Dokument wird beschrieben, wie Sie mit dem [!INCLUDE[vsprvs](../includ
 |**Werkzeugkasten**|Zeigt die **Toolbox** entweder an oder blendet sie aus.|  
 |**Dokumentgliederung**|Zeigt das Fenster **Dokumentgliederung** entweder an oder blendet es aus.|  
 |**Eigenschaften**|Zeigt das Fenster **Eigenschaften** entweder an oder blendet es aus.|  
-|**Erweitert**|Enthält erweiterte Befehle und Optionen.<br /><br /> **Grafik-Engines**<br /><br /> **Mit D3D11 rendern**<br /> Verwendet Direct3D 11 zum Rendern der Model-Editor-Entwurfsoberfläche.<br /><br /> **Mit D3D11WARP rendern**<br /> Verwendet Direct3D 11 Windows Advanced Rasterization Platform (WARP) zum Rendern der Entwurfsoberfläche des Model-Editors.<br /><br /> **Szenenverwaltung**<br /><br /> **Importieren**<br /> Importiert Objekte von einer anderen 3D-Modelldatei in die aktuelle Szene.<br /><br /> **Attach to Parent** (Übergeordnetes Element festlegen)<br /> Definiert das erste mehrerer ausgewählter Objekte als übergeordnetes Element der verbleibenden ausgewählten Objekte.<br /><br /> **Detach from Parent** (Übergeordnetes Element entfernen)<br /> Trennt das ausgewählte Objekt von seinem übergeordneten Element. Das ausgewählte Objekt wird zu einem *Stammobjekt* in der Szene. Ein Stammobjekt verfügt über kein übergeordnetes Objekt.<br /><br /> **Gruppe erstellen**<br /> Gruppiert die ausgewählten Objekte als gleichgeordnete Objekte.<br /><br /> **Objekte zusammenführen**<br /> Kombiniert die ausgewählten Objekte in einem Objekt.<br /><br /> **Create New Object From Polygon Selection** (Neues Objekt aus Polygonauswahl erstellen)<br /> Entfernt die ausgewählten Oberflächen aus dem aktuellen Objekt und fügt der Szene ein neues Objekt hinzu, das die entsprechenden Oberflächen enthält.<br /><br /> **Extras**<br /><br /> **Polygonwicklung spiegeln**<br /> Kippt die ausgewählten Polygone in der Weise, dass ihre Wicklungsreihenfolgen und Oberflächennormale umgekehrt werden.<br /><br /> **Alle Animationen entfernen**<br /> Entfernt Animationsdaten aus den Objekten.<br /><br /> **Triangulieren**<br /> Konvertiert das ausgewählte Objekt in Dreiecke.<br /><br /> **Ansicht**<br /><br /> Backface Culling<br /> Aktiviert oder deaktiviert Backface Culling.<br /><br /> **Bildfrequenz**<br /> Zeigt in der rechten oberen Ecke der Entwurfsoberfläche die Einzelbildrate an. Die Einzelbildrate ist die Anzahl von Bildern, die pro Sekunde gezeichnet werden.<br /><br /> Diese Option ist hilfreich, wenn Sie die Option **Real-Time Rendering Mode** (Echtzeit-Renderingmodus) aktivieren.<br /><br /> **Alle anzeigen**<br /> Zeigt alle Objekte in der Szene an. Dadurch wird die Eigenschaft **Ausgeblendet** für jedes Objekt auf **FALSE** zurückgesetzt.<br /><br /> **Show Face Normals** (Flächennormale anzeigen)<br /> Zeigt die Normale jeder einzelnen Fläche an.<br /><br /> **Show Missing Materials** (Fehlende Materialien anzeigen)<br /> Zeigt auf Objekten, denen kein Material zugewiesen wurde, eine spezielle Textur an.<br /><br /> **Pivot anzeigen**<br /> Aktiviert oder deaktiviert das Anzeigen eines 3D-Achsenmarkers am Pivotpunkt der aktiven Auswahl.<br /><br /> **Show Placeholder Nodes** (Platzhalterknoten anzeigen)<br /> Platzhalterknoten anzeigen Ein Platzhalterknoten wird erstellt, wenn Sie Objekte gruppieren.<br /><br /> **Show Vertex Normals** (Vertexnormale anzeigen)<br /> Zeigt die Normale jedes Vertex an. **Tipp**: Sie können auf die Schaltfläche **Skripts** klicken, um das letzte Skript erneut auszuführen.|  
+|**Erweitert**|Enthält erweiterte Befehle und Optionen.<br /><br /> **Grafik-Engines**<br /><br /> **Mit D3D11 rendern**<br /> Verwendet Direct3D 11 zum Rendern der Model-Editor-Entwurfsoberfläche.<br /><br /> **Mit D3D11WARP rendern**<br /> Verwendet Direct3D 11 Windows Advanced Rasterization Platform (WARP) zum Rendern der Entwurfsoberfläche des Model-Editors.<br /><br /> **Szenenverwaltung**<br /><br /> **Importieren**<br /> Importiert Objekte von einer anderen 3D-Modelldatei in die aktuelle Szene.<br /><br /> **Attach to Parent** (Übergeordnetes Element festlegen)<br /> Definiert das erste mehrerer ausgewählter Objekte als übergeordnetes Element der verbleibenden ausgewählten Objekte.<br /><br /> **Detach from Parent** (Übergeordnetes Element entfernen)<br /> Trennt das ausgewählte Objekt von seinem übergeordneten Element. Das ausgewählte Objekt wird zu einem *Stammobjekt* in der Szene. Ein Stammobjekt verfügt über kein übergeordnetes Objekt.<br /><br /> **Gruppe erstellen**<br /> Gruppiert die ausgewählten Objekte als gleichgeordnete Objekte.<br /><br /> **Objekte zusammenführen**<br /> Kombiniert die ausgewählten Objekte in einem Objekt.<br /><br /> **Create New Object From Polygon Selection** (Neues Objekt aus Polygonauswahl erstellen)<br /> Entfernt die ausgewählten Oberflächen aus dem aktuellen Objekt und fügt der Szene ein neues Objekt hinzu, das die entsprechenden Oberflächen enthält.<br /><br /> **Extras**<br /><br /> **Polygonwicklung spiegeln**<br /> Kippt die ausgewählten Polygone in der Weise, dass ihre Wicklungsreihenfolgen und Oberflächennormale umgekehrt werden.<br /><br /> **Alle Animationen entfernen**<br /> Entfernt Animationsdaten aus den Objekten.<br /><br /> **Triangulieren**<br /> Konvertiert das ausgewählte Objekt in Dreiecke.<br /><br /> **Ansicht**<br /><br /> Backface Culling<br /> Aktiviert oder deaktiviert Backface Culling.<br /><br /> **Bildfrequenz**<br /> Zeigt in der rechten oberen Ecke der Entwurfsoberfläche die Einzelbildrate an. Die Einzelbildrate ist die Anzahl von Bildern, die pro Sekunde gezeichnet werden.<br /><br /> Diese Option ist hilfreich, wenn Sie die Option **Real-Time Rendering Mode** (Echtzeit-Renderingmodus) aktivieren.<br /><br /> **Alle anzeigen**<br /> Zeigt alle Objekte in der Szene an. Dadurch wird die Eigenschaft **Ausgeblendet** für jedes Objekt auf **FALSE** zurückgesetzt.<br /><br /> **Show Face Normals** (Flächennormale anzeigen)<br /> Zeigt die Normale jeder einzelnen Fläche an.<br /><br /> **Show Missing Materials** (Fehlende Materialien anzeigen)<br /> Zeigt auf Objekten, denen kein Material zugewiesen wurde, eine spezielle Textur an.<br /><br /> **Pivot anzeigen**<br /> Aktiviert oder deaktiviert das Anzeigen eines 3D-Achsenmarkers am Pivotpunkt der aktiven Auswahl.<br /><br /> **Show Placeholder Nodes** (Platzhalterknoten anzeigen)<br /> Platzhalterknoten anzeigen Ein Platzhalterknoten wird erstellt, wenn Sie Objekte gruppieren.<br /><br /> **Show Vertex Normals** (Vertexnormale anzeigen)<br /> Zeigt die Normale jedes Vertex an. **Tipp:**  Sie können die Schaltfläche **Skripts** auswählen, um das letzte Skript erneut auszuführen.|  
   
  Die Symbolleiste **Model Editor** (Modell-Editor):  
   
@@ -122,7 +117,7 @@ In diesem Dokument wird beschrieben, wie Sie mit dem [!INCLUDE[vsprvs](../includ
 |------------------|-----------------|  
 |**Schwenken**|Ermöglicht das Bewegen einer 3D-Szene relativ zum Fensterrahmen. Wählen Sie zum Schwenken einen Punkt in der Szene aus und verschieben Sie ihn.<br /><br /> Im **Auswahl**-Modus können Sie den **Schwenken**-Modus durch Gedrückthalten der STRG-TASTE vorübergehend aktivieren.|  
 |**Zoom**|Ermöglicht das Anzeigen von mehr oder weniger Szenendetails relativ zum Fensterrahmen. Klicken Sie im **Zoom**-Modus auf einen Punkt in der Szene, und verschieben Sie ihn: zum Vergrößern nach rechts oder nach unten, und zum Verkleinern nach links oder nach oben.<br /><br /> Im **Auswählen**-Modus können Sie zum Vergrößern oder Verkleinern das Mausrad verwenden. Halten Sie währenddessen die STRG-TASTE gedrückt.|  
-|**Orbit**|Positioniert die Ansicht auf einem kreisförmigen Pfad um das ausgewählte Objekt. Ist kein Objekt ausgewählt, wird der Pfad auf den Szenenursprung zentriert. **Hinweis**: Dieser Modus hat keine Auswirkungen, wenn die Projektionsoption **Orthografisch** aktiviert ist.|  
+|**Orbit**|Positioniert die Ansicht auf einem kreisförmigen Pfad um das ausgewählte Objekt. Ist kein Objekt ausgewählt, wird der Pfad auf den Szenenursprung zentriert. **Hinweis**:  Dieser Modus hat keine Auswirkungen, wenn die Projektionsoption **Orthografisch** aktiviert ist.|  
 |**Rahmenobjekt**|Rahmt das ausgewählte Objekt ein, sodass es sich in der Mitte der Ansicht befindet.|  
   
  Die Ansicht wird zwar von der virtuellen Kamera erstellt, ist jedoch auch durch eine Projektion definiert. Die Projektion definiert, wie Formen und Objekte in der Ansicht auf der Entwurfsoberfläche in Pixel übersetzt werden. Sie können auf der Symbolleiste **Model Editor** (Modell-Editor) zwischen der Projektionsoption **Perspektive** oder **Orthografisch** auswählen.  
@@ -137,8 +132,8 @@ In diesem Dokument wird beschrieben, wie Sie mit dem [!INCLUDE[vsprvs](../includ
 ### <a name="viewing-additional-geometry-details"></a>Anzeigen zusätzlicher Geometriedetails  
  Zum besseren Verständnis eines 3D-Objekts oder einer 3D-Szene, können Sie zusätzliche Geometriedetails wie die vertexspezifische oder flächenspezifische Normale oder Pivotpunkte der aktuellen Auswahl und weitere Details anzeigen. Klicken Sie auf **Skripts** und **Ansicht**, und wählen Sie anschließend die gewünschte Option aus, um sie auf der Symbolleiste **Model Editor** (Modell-Editor) zu aktivieren oder zu deaktivieren.  
   
-###  <a name="Adding3DObjects"></a> Erstellen und Importieren dreidimensionaler Objekte  
- Wählen Sie in der **Toolbox** die gewünschte Form aus, und verschieben Sie sie dann auf die Entwurfsoberfläche, um der Szene eine vordefinierte dreidimensionale Form hinzuzufügen. Neue Formen werden am Ursprung der Szene positioniert. Der Modell-Editor stellt sieben Formen zur Verfügung: **Kegel**, **Würfel**, **Zylinder**, **Scheibe**, **Ebene**, **Kugel** und **Teekanne**.  
+### <a name="Adding3DObjects"></a> Erstellen und Importieren dreidimensionaler Objekte  
+ Wählen Sie in der **Toolbox** die gewünschte Form aus, und verschieben Sie sie dann auf die Entwurfsoberfläche, um der Szene eine vordefinierte dreidimensionale Form hinzuzufügen. Neue Formen werden am Ursprung der Szene positioniert. Der Modell-Editor stellt sieben Formen bereit: **Kegel**, **Würfel**, **Zylinder**, **Scheibe**, **Ebene**, **Kugel** und **Teekanne**.  
   
  Klicken Sie auf der Symbolleiste **Model Editor** (Modell-Editor) auf **Erweitert**, **Szenenverwaltung**, **Importieren**, und geben Sie dann die Datei an, die Sie importieren möchten, um ein dreidimensionales Objekt aus einer Datei zu importieren.  
   
@@ -149,11 +144,11 @@ In diesem Dokument wird beschrieben, wie Sie mit dem [!INCLUDE[vsprvs](../includ
   
 ##### <a name="to-transform-an-object-by-using-modeling-tools"></a>So transformieren Sie ein Objekt mithilfe der Modellingtools  
   
-1.  Wählen Sie im **Auswahlmodus** das Objekt aus, das Sie transformieren möchten. Eine Drahtmodellüberlappung zeigt an, dass das Objekt ausgewählt ist.  
+1. Wählen Sie im **Auswahlmodus** das Objekt aus, das Sie transformieren möchten. Eine Drahtmodellüberlappung zeigt an, dass das Objekt ausgewählt ist.  
   
-2.  Klicken Sie auf der Symbolleiste **Model Editor** (Modell-Editor) auf eins der folgenden Tools: **Verschieben**, **Skalierung** oder **Drehen**. Ein Übersetzungs-, Skalierungs- oder ein Drehungsmanipulator wird angezeigt.  
+2. Klicken Sie auf der Symbolleiste **Model Editor** (Modell-Editor) auf eins der folgenden Tools: **Verschieben**, **Skalierung** oder **Drehen**. Ein Übersetzungs-, Skalierungs- oder ein Drehungsmanipulator wird angezeigt.  
   
-3.  Verwenden Sie den Manipulator, um die Transformation durchzuführen. Der Manipulator für Übersetzungs- und Skalierungstransformationen ist ein Achsenindikator. Sie können eine Achse nacheinander ändern oder, mithilfe des weißen Würfels in der Mitte des Indikators, alle Achsen gleichzeitig. Der Manipulator für Drehung ist eine Kugel aus farbcodierten Kreisen, entsprechend der x-Achse (rot), der y-Achse (grün) und der z-Achse (blau). Für eine gewünschte Drehung müssen Sie jede Achse einzeln ändern.  
+3. Verwenden Sie den Manipulator, um die Transformation durchzuführen. Der Manipulator für Übersetzungs- und Skalierungstransformationen ist ein Achsenindikator. Sie können eine Achse nacheinander ändern oder, mithilfe des weißen Würfels in der Mitte des Indikators, alle Achsen gleichzeitig. Der Manipulator für Drehung ist eine Kugel aus farbcodierten Kreisen, entsprechend der x-Achse (rot), der y-Achse (grün) und der z-Achse (blau). Für eine gewünschte Drehung müssen Sie jede Achse einzeln ändern.  
   
 ##### <a name="to-transform-an-object-by-setting-its-properties"></a>So transformieren Sie ein Objekt durch Festlegen der Eigenschaften  
   
@@ -162,7 +157,7 @@ In diesem Dokument wird beschrieben, wie Sie mit dem [!INCLUDE[vsprvs](../includ
 2. Geben Sie im Fenster **Eigenschaften** Werte für die Eigenschaften **Drehung**, **Skalierung** und **Übersetzung** an.  
   
    > [!IMPORTANT]
-   >  Geben Sie für die Eigenschaft **Drehung** den Grad der Drehung um jede der drei Achsen an. Drehungen werden nach der Reihe ausgeführt. Planen Sie daher eine Drehung zuerst in Hinblick auf die Drehung der x-Achse, dann die der Y-Achse und anschließend die der z-Achse.  
+   > Geben Sie für die Eigenschaft **Drehung** den Grad der Drehung um jede der drei Achsen an. Drehungen werden nach der Reihe ausgeführt. Planen Sie daher eine Drehung zuerst in Hinblick auf die Drehung der x-Achse, dann die der Y-Achse und anschließend die der z-Achse.  
   
    Mithilfe der Modellierungstools können Sie schnell Transformationen erstellen, die jedoch nicht genau sind. Durch Festlegen der Objekteigenschaften, können Sie Transformationen genau allerdings nicht schnell angeben. Es wird empfohlen, die Modellierungstools zu verwenden, um sich so weit wie möglich an die gewünschte Transformationen anzunähern und die Feinabstimmung anschließend über die Eigenschaftswerte vorzunehmen.  
   
@@ -173,21 +168,21 @@ In diesem Dokument wird beschrieben, wie Sie mit dem [!INCLUDE[vsprvs](../includ
 ### <a name="working-with-the-pivot-point"></a>Arbeiten mit dem Pivotpunkt  
  Der Pivotpunkt eines Objekts definiert seinen Drehungs- und Skalierungsmittelpunkt. Sie können den Pivotpunkt eines Objekts ändern, um die Auswirkungen von Drehungs- und Skalierungstransformationen auf das Objekt zu ändern. Klicken Sie zum Aktivieren (oder Deaktivieren) des Pivotmodus auf der Symbolleiste **Model Editor Mode** (Modell-Editor-Modus) auf **Pivot-Modus**. Bei aktiviertem Pivotmodus wird ein kleiner Achsenindikator am Pivotpunkt des ausgewählten Objekts angezeigt. Sie können die Tools **Übersetzung** und **Drehung** anschließend zur Bearbeitung des Pivotpunkts verwenden.  
   
- Unter [Vorgehensweise: Ändern des Pivotpunkts eines dreidimensionalen Modells](../designers/how-to-modify-the-pivot-point-of-a-3-d-model.md) wird die Verwendung eines Pivotpunkts dargestellt.  
+ Ein Beispiel für die Verwendung des Pivotpunkts finden Sie unter [Vorgehensweise: Ändern des Pivotpunkts eines 3D-Modells](../designers/how-to-modify-the-pivot-point-of-a-3-d-model.md).  
   
 ### <a name="world-and-local-modes"></a>Welt-Modus und lokaler Modus  
  Die Tools „Übersetzung“ und „Drehung“ lassen sich im lokalen Koordinatensystem (oder im *lokalen Bezugsrahmen*) des Objekts oder im Koordinatensystem der Welt (oder im *Weltbezugsrahmen*) umsetzen. Der Weltverweisrahmen ist von der Drehung des Objekts unabhängig. Die Standardeinstellung ist der lokale Modus. Klicken Sie zum Aktivieren (oder Deaktivieren) des Weltmodus auf der Symbolleiste **Model Editor Mode** (Modell-Editor-Modus) auf die Schaltfläche **WorldLocal**.  
   
-###  <a name="ModifyingObjects"></a> Ändern von Objekten  
+### <a name="ModifyingObjects"></a> Ändern von Objekten  
  Sie können die Form eines 3D-Objekts ändern, indem Sie die Schnittpunkte, Ränder und Flächen verschieben oder löschen. Standardmäßig ist der Modell-Editor auf den *Objektmodus* eingestellt, damit Sie komplette Objekte auswählen und transformieren können. Wählen Sie Punkte, Ränder oder Flächen mithilfe des entsprechenden Auswahlmodus aus. Klicken Sie auf der Symbolleiste **Model Editor Mode** (Modell-Editor-Modus) auf **Selection modes** (Auswahlmodi), und wählen Sie dann den gewünschten Modus aus.  
   
  Mithilfe von Extrusionen oder Unterteilungen können Sie zusätzliche Schnittpunkte erstellen. Extrusion dupliziert die Vertices einer Fläche (ein koplanarer Satz von Vertices), die durch die duplizierten Vertices verbunden bleiben. Mit Unterteilung werden Schnittpunkte hinzugefügt, um aus einer Fläche mehrere Flächen zu erstellen. Zum Erstellen der neuen Flächen werden neue Schnittpunkte hinzugefügt. Einer im Mittelpunkt der ursprünglichen Fläche und jeweils ein weiterer mitten auf jedem Rand. Sie werden dann mit den ursprünglichen Schnittpunkten verknüpft. Die Anzahl der hinzugefügten Flächen entspricht der Anzahl Rändern der ursprünglichen Fläche. In beiden Fällen können Sie die neuen Schnittpunkte übersetzen, drehen und anpassen, um die Geometrie des Objekts zu ändern.  
   
 ##### <a name="to-extrude-a-face-from-an-object"></a>So extrudieren Sie eine Fläche aus einem Objekt  
   
-1.  Wählen Sie im Flächenauswahlmodus die Fläche aus, die Sie extrudieren möchten.  
+1. Wählen Sie im Flächenauswahlmodus die Fläche aus, die Sie extrudieren möchten.  
   
-2.  Klicken Sie auf der Symbolleiste **Model Editor** (Modell-Editor) auf **Skripts** > **Extras** > **Extrudieren**.  
+2. Klicken Sie auf der Symbolleiste **Model Editor** (Modell-Editor) auf **Skripts** > **Extras** > **Extrudieren**.  
   
 ##### <a name="to-subdivide-faces"></a>So unterteilen Sie Flächen.  
   
@@ -199,21 +194,21 @@ In diesem Dokument wird beschrieben, wie Sie mit dem [!INCLUDE[vsprvs](../includ
   
 ##### <a name="to-triangulate-a-face"></a>So triangulieren Sie eine Fläche  
   
-1.  Wählen Sie im Flächenauswahlmodus die Fläche aus, die Sie triangulieren möchten.  
+1. Wählen Sie im Flächenauswahlmodus die Fläche aus, die Sie triangulieren möchten.  
   
-2.  Klicken Sie auf der Symbolleiste **Model Editor** (Modell-Editor) auf **Skripts** > **Extras** > **Triangulieren**.  
+2. Klicken Sie auf der Symbolleiste **Model Editor** (Modell-Editor) auf **Skripts** > **Extras** > **Triangulieren**.  
   
 ##### <a name="to-merge-objects"></a>So führen Sie Objekte zusammen  
   
-1.  Wählen Sie im Modus "Objektauswahl" die Objekte, die Sie zusammenführen möchten.  
+1. Wählen Sie im Modus "Objektauswahl" die Objekte, die Sie zusammenführen möchten.  
   
-2.  Klicken Sie auf der Symbolleiste **Model Editor** (Modell-Editor)auf **Skripts** > **Extras** > **Objekte zusammenführen**.  
+2. Klicken Sie auf der Symbolleiste **Model Editor** (Modell-Editor)auf **Skripts** > **Extras** > **Objekte zusammenführen**.  
   
 ##### <a name="to-create-an-object-from-a-polygon-selection"></a>So erstellen Sie ein Objekt aus einer Polygon-Auswahl  
   
-1.  Wählen Sie im Flächenauswahlmodus die Fläche aus, aus der Sie in ein neues Objekt erstellen möchten.  
+1. Wählen Sie im Flächenauswahlmodus die Fläche aus, aus der Sie in ein neues Objekt erstellen möchten.  
   
-2.  Klicken Sie auf der Symbolleiste **Model Editor** (Modell-Editor) auf **Skripts** > **Extras** > **Create New Object from Polygon Selection** (Neues Objekt aus Polygonauswahl erstellen).  
+2. Klicken Sie auf der Symbolleiste **Model Editor** (Modell-Editor) auf **Skripts** > **Extras** > **Create New Object from Polygon Selection** (Neues Objekt aus Polygonauswahl erstellen).  
   
 ### <a name="working-with-materials-and-shaders"></a>Arbeiten mit Materialien und Shadern  
  Die Darstellung eines Objekts wird durch das Zusammenwirken der Beleuchtung in der Szene und dem Material des Objekts bestimmt. Materialien werden über Eigenschaften definiert, die beschreiben, wie die Oberfläche auf unterschiedliche Lichtarten reagiert und über ein Shaderprogramm, das die endgültige Farbe jedes Pixels auf der Objektoberfläche auf Grundlage von Beleuchtungsinformationen, Strukturschemas, normalen Schemas und anderen Daten berechnet.  
@@ -242,7 +237,7 @@ In diesem Dokument wird beschrieben, wie Sie mit dem [!INCLUDE[vsprvs](../includ
   
  Klicken Sie auf der Symbolleiste **Model Editor** (Modell-Editor) auf **Skripts** > **Material** > **Materialien entfernen**, um alle Materialien von einem Objekt zu entfernen.  
   
- Sie können den **Shader-Designer** verwenden, um benutzerdefinierte Shadermaterialien zu erstellen, die Sie auf Objekte in der dreidimensionalen Szene anwenden können. Informationen zum Erstellen benutzerdefinierter Shadermaterialien finden Sie unter [Shader-Designer](../designers/shader-designer.md). Weitere Informationen zur Anwendung benutzerdefinierter Shadermaterialien auf ein Objekt finden Sie unter [Vorgehensweise: Anwenden eines Shaders auf ein dreidimensionales Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
+ Sie können den **Shader-Designer** verwenden, um benutzerdefinierte Shadermaterialien zu erstellen, die Sie auf Objekte in der dreidimensionalen Szene anwenden können. Informationen zum Erstellen benutzerdefinierter Shadermaterialien finden Sie unter [Shader-Designer](../designers/shader-designer.md). Weitere Informationen zur Anwendung benutzerdefinierter Shadermaterialien auf ein Objekt finden Sie unter [Vorgehensweise: Anwenden eines Shaders auf ein 3D-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
   
 ### <a name="scene-management"></a>Szenenverwaltung  
  Sie können Szenen wie eine Hierarchie von Objekten verwalten. Werden mehrere Objekte in einer Hierarchie angeordnet, wirkt sich jede Übersetzung, Skalierung oder Drehung eines übergeordneten Knotens auch auf die untergeordneten Elemente aus. Das ist hilfreich, wenn Sie aus grundlegenderen Objekten komplexe Objekte oder Szenen erstellen möchten.  
@@ -253,9 +248,9 @@ In diesem Dokument wird beschrieben, wie Sie mit dem [!INCLUDE[vsprvs](../includ
   
 ##### <a name="to-create-a-hierarchy-that-has-a-parent-object"></a>So erstellen Sie eine Hierarchie mit übergeordnetem Objekt  
   
-1.  Wählen Sie im **Auswahlmodus** mindestens zwei Objekte aus. Das erste Objekt, das Sie auswählen, wird zum übergeordneten Objekt.  
+1. Wählen Sie im **Auswahlmodus** mindestens zwei Objekte aus. Das erste Objekt, das Sie auswählen, wird zum übergeordneten Objekt.  
   
-2.  Klicken Sie auf der Symbolleiste **Model Editor** (Modell-Editor) auf **Skripts** > **Szenenverwaltung** > **Übergeordnetes Element festlegen**.  
+2. Klicken Sie auf der Symbolleiste **Model Editor** (Modell-Editor) auf **Skripts** > **Szenenverwaltung** > **Übergeordnetes Element festlegen**.  
   
 ##### <a name="to-create-a-hierarchy-of-sibling-objects"></a>So erstellen Sie eine Hierarchie gleichgeordneter Objekte  
   
@@ -317,6 +312,3 @@ In diesem Dokument wird beschrieben, wie Sie mit dem [!INCLUDE[vsprvs](../includ
 |[Working with 3-D Assets for Games and Apps (Arbeiten mit 3D-Objekten für Spiele und Apps)](../designers/working-with-3-d-assets-for-games-and-apps.md)|Bietet eine Übersicht über die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Tools, die Sie bei der Arbeit mit Grafikressourcen wie Texturen und Bildern, 3D-Modellen und Shadereffekten verwenden können.|  
 |[Image Editor](../designers/image-editor.md)|Beschreibt, wie der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Bild-Editor für die Arbeit mit Texturen und Bildern verwendet wird.|  
 |[Shader-Designer](../designers/shader-designer.md)|Beschreibt die Verwendung des [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Shader-Designers zur Arbeit mit Shadern.|
-
-
-

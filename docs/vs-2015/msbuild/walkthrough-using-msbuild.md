@@ -1,32 +1,26 @@
 ---
 title: 'Exemplarische Vorgehensweise: Verwenden von MSBuild | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
 caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 56d8ea0c4b79764c1326c96b42748b8291349ac2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b6e77934f8e565800eb4a7a753df4beb3b003fbb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841417"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445580"
 ---
 # <a name="walkthrough-using-msbuild"></a>Exemplarische Vorgehensweise: Verwenden von MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 MSBuild ist die Buildplattform für Microsoft und Visual Studio. In dieser exemplarischen Vorgehensweise machen Sie sich mit den Bausteinen von MSBuild vertraut, zudem wird erläutert, wie Sie MSBuild-Projekte erstellen, bearbeiten und debuggen. Zu folgenden Aspekten erfahren Sie mehr:  
   
 - Erstellen und Bearbeiten einer Projektdatei.  
@@ -42,11 +36,11 @@ MSBuild ist die Buildplattform für Microsoft und Visual Studio. In dieser exemp
   
 #### <a name="to-create-a-project-file"></a>So erstellen Sie eine neue Projektdatei  
   
-1.  Öffnen Sie Visual Studio.  
+1. Öffnen Sie Visual Studio.  
   
-2.  Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.  
+2. Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.  
   
-3.  Wählen Sie im Dialogfeld **Neues Projekt** den Projekttyp „Visual C#“ und anschließend die Vorlage **Windows Forms-Anwendung** aus. Geben Sie im Feld **Name** `BuildApp`ein. Geben Sie einen **Speicherort** für die Projektmappe ein, z.B. `D:\`. Übernehmen Sie die Standardwerte für **Projektmappenverzeichnis erstellen** (ausgewählt), **Zur Quellcodeverwaltung hinzufügen** (nicht ausgewählt) und **Projektmappenname** (`BuildApp`).  
+3. Wählen Sie im Dialogfeld **Neues Projekt** den Projekttyp „Visual C#“ und anschließend die Vorlage **Windows Forms-Anwendung** aus. Geben Sie im Feld **Name** `BuildApp`ein. Geben Sie einen **Speicherort** für die Projektmappe ein, z.B. `D:\`. Übernehmen Sie die Standardwerte für **Projektmappenverzeichnis erstellen** (ausgewählt), **Zur Quellcodeverwaltung hinzufügen** (nicht ausgewählt) und **Projektmappenname** (`BuildApp`).  
   
      Klicken Sie auf **OK**, um die neue Projektdatei zu erstellen.  
   
@@ -55,13 +49,13 @@ MSBuild ist die Buildplattform für Microsoft und Visual Studio. In dieser exemp
   
 #### <a name="to-examine-the-project-file"></a>So überprüfen Sie die Projektdatei  
   
-1.  Klicken Sie im **Projektmappen-Explorer** auf den Projektknoten „BuildApp“.  
+1. Klicken Sie im **Projektmappen-Explorer** auf den Projektknoten „BuildApp“.  
   
-2.  Im **Eigenschaftenbrowser** wird als **Projektdatei**-Eigenschaft „BuildApp.csproj“ angezeigt. Alle Projektdateien werden mit dem Suffix "proj" benannt. Wenn Sie ein Visual Basic-Projekt erstellt hätten, wäre der Projektdateiname BuildApp.vbproj.  
+2. Im **Eigenschaftenbrowser** wird als **Projektdatei**-Eigenschaft „BuildApp.csproj“ angezeigt. Alle Projektdateien werden mit dem Suffix "proj" benannt. Wenn Sie ein Visual Basic-Projekt erstellt hätten, wäre der Projektdateiname BuildApp.vbproj.  
   
-3.  Klicken Sie mit der rechten Maustaste auf den Projektknoten, und klicken Sie dann auf **Projekt entladen**.  
+3. Klicken Sie mit der rechten Maustaste auf den Projektknoten, und klicken Sie dann auf **Projekt entladen**.  
   
-4.  Klicken Sie erneut mit der rechten Maustaste auf den Projektknoten, klicken Sie dann auf **BuildApp.csproj bearbeiten**.  
+4. Klicken Sie erneut mit der rechten Maustaste auf den Projektknoten, klicken Sie dann auf **BuildApp.csproj bearbeiten**.  
   
      Die Projektdatei wird im Code-Editor angezeigt.  
   
@@ -79,7 +73,7 @@ MSBuild ist die Buildplattform für Microsoft und Visual Studio. In dieser exemp
   
 - Eine Aufgabe bildet die kleinste Arbeitseinheit, d. h. das „Atom“ eines Builds. Aufgaben sind unabhängige ausführbare Komponenten, die über Eingaben und Ausgaben verfügen können. Derzeit wird in der Projektdatei nicht auf Aufgaben verwiesen, und solche wurden nicht definiert. In den folgenden Abschnitten fügen Sie der Projektdatei Aufgaben hinzu. Weitere Informationen finden Sie im Thema [Aufgaben](../msbuild/msbuild-tasks.md).  
   
-- Als Ziel wird eine benannte Sequenz von Aufgaben bezeichnet. Am Ende der Projektdatei befinden sich zwei Ziele, die derzeit in HTML-Kommentare eingeschlossen sind: BeforeBuild und AfterBuild.  
+- Als Ziel wird eine benannte Sequenz von Aufgaben bezeichnet. Es gibt zwei Ziele am Ende der Projektdatei, die derzeit in HTML-Kommentare eingeschlossen werden: BeforeBuild und AfterBuild.  
   
   ```  
   <Target Name="BeforeBuild">  
@@ -138,21 +132,21 @@ MSBuild ist die Buildplattform für Microsoft und Visual Studio. In dieser exemp
  Führen Sie MSBuild an der **Visual Studio-Eingabeaufforderung** aus, um das oben definierte Ziel „HelloWorld“ zu erstellen. Verwenden Sie den Befehlszeilenschalter /target oder /t, um das Ziel auszuwählen.  
   
 > [!NOTE]
->  In den folgenden Abschnitten wird die **Visual Studio-Eingabeaufforderung** als **Befehlsfenster** bezeichnet.  
+> In den folgenden Abschnitten wird die **Visual Studio-Eingabeaufforderung** als **Befehlsfenster** bezeichnet.  
   
 #### <a name="to-build-the-target"></a>So erstellen Sie das Ziel  
   
-1.  Klicken Sie auf **Start**, und klicken Sie dann auf **Alle Programme**. Suchen Sie im Ordner **Visual Studio Tools** die **Visual Studio-Eingabeaufforderung**, und klicken Sie darauf.  
+1. Klicken Sie auf **Start**, und klicken Sie dann auf **Alle Programme**. Suchen Sie im Ordner **Visual Studio Tools** die **Visual Studio-Eingabeaufforderung**, und klicken Sie darauf.  
   
-2.  Navigieren im Befehlsfenster zum Ordner mit der Projektdatei, in diesem Fall D:\BuildApp\BuildApp.  
+2. Navigieren im Befehlsfenster zum Ordner mit der Projektdatei, in diesem Fall D:\BuildApp\BuildApp.  
   
-3.  Führen Sie msbuild mit dem Befehlsschalter /t:HelloWorld aus. Damit wird das Ziel HelloWorld ausgewählt und erstellt:  
+3. Führen Sie msbuild mit dem Befehlsschalter /t:HelloWorld aus. Damit wird das Ziel HelloWorld ausgewählt und erstellt:  
   
     ```  
     msbuild buildapp.csproj /t:HelloWorld  
     ```  
   
-4.  Untersuchen Sie die Ausgabe im **Befehlsfenster**. Die beiden Zeilen "Hello" und "World" sollten angezeigt werden:  
+4. Untersuchen Sie die Ausgabe im **Befehlsfenster**. Die beiden Zeilen "Hello" und "World" sollten angezeigt werden:  
   
     ```  
     Hello  
@@ -160,12 +154,12 @@ MSBuild ist die Buildplattform für Microsoft und Visual Studio. In dieser exemp
     ```  
   
 > [!NOTE]
->  Wenn stattdessen `The target "HelloWorld" does not exist in the project` angezeigt wird, haben Sie wahrscheinlich vergessen, die Projektdatei im Code-Editor zu speichern. Speichern Sie die Datei, und versuchen Sie es erneut.  
+> Wenn stattdessen `The target "HelloWorld" does not exist in the project` angezeigt wird, haben Sie wahrscheinlich vergessen, die Projektdatei im Code-Editor zu speichern. Speichern Sie die Datei, und versuchen Sie es erneut.  
   
  Durch Wechsel zwischen Code-Editor und dem Befehlsfenster können Sie die Projektdatei ändern und die Ergebnisse schnell anzeigen.  
   
 > [!NOTE]
->  Wenn Sie msbuild ohne den Befehlsschalter /t ausführen, erstellt msbuild das vom DefaultTarget-Attribut des Project-Elements angegebene Ziel, in diesem Fall "Build". Damit wird die Windows Forms-Anwendung BuildApp.exe erstellt.  
+> Wenn Sie msbuild ohne den Befehlsschalter /t ausführen, erstellt msbuild das vom DefaultTarget-Attribut des Project-Elements angegebene Ziel, in diesem Fall "Build". Damit wird die Windows Forms-Anwendung BuildApp.exe erstellt.  
   
 ## <a name="build-properties"></a>Buildeigenschaften  
  Buildeigenschaften sind Name-Wert-Paare, anhand derer der Build ausgeführt wird. Am Anfang der Projektdatei sind bereits mehrere Buildeigenschaften definiert:  
@@ -208,7 +202,7 @@ $(PropertyName)
   
 #### <a name="to-examine-a-property-value"></a>So untersuchen Sie einen Eigenschaftswert  
   
-1.  Ersetzen Sie im Code-Editor das Ziel HelloWorld durch den folgenden Code:  
+1. Ersetzen Sie im Code-Editor das Ziel HelloWorld durch den folgenden Code:  
   
     ```  
     <Target Name="HelloWorld">  
@@ -217,15 +211,15 @@ $(PropertyName)
     </Target>  
     ```  
   
-2.  Speichern Sie die Projektdatei.  
+2. Speichern Sie die Projektdatei.  
   
-3.  Geben Sie im **Befehlsfenster** die folgende Zeile ein, und führen Sie diese aus:  
+3. Geben Sie im **Befehlsfenster** die folgende Zeile ein, und führen Sie diese aus:  
   
     ```  
     msbuild buildapp.csproj /t:HelloWorld  
     ```  
   
-4.  Prüfen Sie die Ausgabe. Die folgenden beiden Zeilen sollten angezeigt werden (die Version von .NET Framework kann abweichen):  
+4. Prüfen Sie die Ausgabe. Die folgenden beiden Zeilen sollten angezeigt werden (die Version von .NET Framework kann abweichen):  
   
     ```  
     Configuration is Debug  
@@ -233,7 +227,7 @@ $(PropertyName)
     ```  
   
 > [!NOTE]
->  Wenn diese Zeilen nicht angezeigt werden, haben Sie wahrscheinlich vergessen, die Projektdatei im Code-Editor zu speichern. Speichern Sie die Datei, und versuchen Sie es erneut.  
+> Wenn diese Zeilen nicht angezeigt werden, haben Sie wahrscheinlich vergessen, die Projektdatei im Code-Editor zu speichern. Speichern Sie die Datei, und versuchen Sie es erneut.  
   
 ### <a name="conditional-properties"></a>Bedingte Eigenschaften  
  Viele Eigenschaften, z. B. Configuration, werden bedingt definiert, das heißt, im Eigenschaftenelement wird das Condition-Attribut angezeigt. Bedingte Eigenschaften werden nur definiert oder erneut definiert, wenn die Bedingung "true" ergibt. Nicht definierten Eigenschaften wird der Standardwert, eine leere Zeichenfolge, zugewiesen. Ein auf ein Objekt angewendeter  
@@ -247,7 +241,7 @@ $(PropertyName)
  Fast alle MSBuild-Elemente können ein Condition-Attribut besitzen. Die Verwendung des Condition-Attributs wird unter [Bedingungen](../msbuild/msbuild-conditions.md) näher besprochen.  
   
 ### <a name="reserved-properties"></a>Reservierte Eigenschaften  
- Einige Eigenschaftennamen werden von MSBuild reserviert, um Informationen zur Projektdatei und zu den Binärdateien von MSBuild zu speichern. Ein Beispiel für eine reservierte Eigenschaft ist "MSBuildToolsPath". Auf reservierte Eigenschaften wird wie auf jede andere Eigenschaft mit der $-Notation verwiesen. Weitere Informationen finden Sie unter [Vorgehensweise: Verweisen auf den Namen oder Speicherort der Projektdatei](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) und [Reservierte und bekannte Eigenschaften für MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).  
+ Einige Eigenschaftennamen werden von MSBuild reserviert, um Informationen zur Projektdatei und zu den Binärdateien von MSBuild zu speichern. Ein Beispiel für eine reservierte Eigenschaft ist "MSBuildToolsPath". Auf reservierte Eigenschaften wird wie auf jede andere Eigenschaft mit der $-Notation verwiesen. Weitere Informationen finden Sie unter [Vorgehensweise: Verweisen auf den Namen oder Speicherort der Projektdatei](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) und [MSBuild reservierte und bekannte Eigenschaften](../msbuild/msbuild-reserved-and-well-known-properties.md).  
   
 ### <a name="environment-variables"></a>Umgebungsvariablen  
  Auf Umgebungsvariablen in Projektdateien kann auf die gleiche Weise verwiesen werden wie auf Buildeigenschaften. Um die PATH-Umgebungsvariable in der Projektdatei zu verwenden, verwenden Sie beispielsweise $(Path). Wenn das Projekt eine Eigenschaftendefinition enthält, die denselben Namen wie eine Umgebungsvariable hat, wird der Wert der Umgebungsvariablen von der Eigenschaft im Projekt überschrieben. Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden von Umgebungsvariablen in einem Build](../msbuild/how-to-use-environment-variables-in-a-build.md).  
@@ -312,7 +306,7 @@ $(PropertyName)
 </ItemGroup>  
 ```  
   
- definiert eine Elementgruppe mit zwei Elementen. Der Compile-Elementtyp umfasst zwei Werte: "Program.cs" und "Properties\AssemblyInfo.cs".  
+ definiert eine Elementgruppe mit zwei Elementen. Der Elementtyp „Compile“ verfügt über zwei Werte: "Program.cs" und "Properties\AssemblyInfo. cs".  
   
  Mit folgendem Code wird der gleiche Elementtyp erstellt, indem die beiden durch ein Semikolon getrennten Dateien in einem Include-Attribut deklariert werden.  
   
@@ -325,7 +319,7 @@ $(PropertyName)
  Weitere Informationen finden Sie unter [Elemente](../msbuild/msbuild-items.md).  
   
 > [!NOTE]
->  Dateipfade werden relativ zum Ordner mit der MSBuild-Projektdatei angegeben.  
+> Dateipfade werden relativ zum Ordner mit der MSBuild-Projektdatei angegeben.  
   
 ## <a name="examining-item-type-values"></a>Untersuchen von Elementtypwerten  
  Werte eines Elementtyps rufen Sie mit der folgenden Syntax ab, wobei ItemType den Name des Elementtyps darstellt:  
@@ -372,19 +366,19 @@ $(PropertyName)
   
 #### <a name="to-display-item-type-values-one-per-line"></a>So zeigen Sie Elementtypwerte auf jeweils eigenen Zeilen an  
   
-1.  Ersetzen Sie die Message-Aufgabe im Code-Editor durch diese Zeile:  
+1. Ersetzen Sie die Message-Aufgabe im Code-Editor durch diese Zeile:  
   
     ```  
     <Message Text="Compile item type contains @(Compile, '%0A%0D')" />  
     ```  
   
-2.  Speichern Sie die Projektdatei.  
+2. Speichern Sie die Projektdatei.  
   
-3.  Geben Sie im **Befehlsfenster** die folgende Zeile ein, und führen Sie diese aus:  
+3. Geben Sie im **Befehlsfenster** die folgende Zeile ein, und führen Sie diese aus:  
   
      `msbuild buildapp.csproj /t:HelloWorld`  
   
-4.  Prüfen Sie die Ausgabe. Die folgenden Zeilen sollten angezeigt werden:  
+4. Prüfen Sie die Ausgabe. Die folgenden Zeilen sollten angezeigt werden:  
   
     ```  
     Compile item type contains Form1.cs  
@@ -408,7 +402,7 @@ $(PropertyName)
 <Photos Include="images\**.jpeg" />  
 ```  
   
- alle Dateien mit der Dateierweiterung ".jpeg" im Bilderordner und allen Unterordnern dem Photos-Elementtyp hinzufügt. Weitere Beispiele finden Sie unter [Vorgehensweise: Auswählen von Dateien für den Buildvorgang](../msbuild/how-to-select-the-files-to-build.md).  
+ alle Dateien mit der Dateierweiterung ".jpeg" im Bilderordner und allen Unterordnern dem Photos-Elementtyp hinzufügt. Weitere Beispiele finden Sie unter [Vorgehensweise: Wählen Sie die Dateien für den Buildvorgang](../msbuild/how-to-select-the-files-to-build.md).  
   
  Beachten Sie, dass deklarierte Elemente sofort dem jeweiligen Elementtyp hinzugefügt werden. Ein auf ein Objekt angewendeter  
   
@@ -442,13 +436,13 @@ $(PropertyName)
   
 ##### <a name="to-include-and-exclude-items"></a>So schließen Sie Elemente ein oder aus  
   
-1.  Ersetzen Sie die Message-Aufgabe im Code-Editor durch diese Zeile:  
+1. Ersetzen Sie die Message-Aufgabe im Code-Editor durch diese Zeile:  
   
     ```  
     <Message Text="Compile item type contains @(XFiles)" />  
     ```  
   
-2.  Fügen Sie diese Elementgruppe genau nach dem Import-Element hinzu:  
+2. Fügen Sie diese Elementgruppe genau nach dem Import-Element hinzu:  
   
     ```  
     <ItemGroup>  
@@ -456,15 +450,15 @@ $(PropertyName)
     </ItemGroup>  
     ```  
   
-3.  Speichern Sie die Projektdatei.  
+3. Speichern Sie die Projektdatei.  
   
-4.  Geben Sie im **Befehlsfenster** die folgende Zeile ein, und führen Sie diese aus:  
+4. Geben Sie im **Befehlsfenster** die folgende Zeile ein, und führen Sie diese aus:  
   
     ```  
     msbuild buildapp.csproj /t:HelloWorld  
     ```  
   
-5.  Prüfen Sie die Ausgabe. Die folgende Zeile sollte angezeigt werden:  
+5. Prüfen Sie die Ausgabe. Die folgende Zeile sollte angezeigt werden:  
   
     ```  
     Compile item type contains Form1.cs;Program.cs;Properties/Resources.resx  
@@ -582,10 +576,8 @@ $(PropertyName)
    Beachten Sie, dass die in dieser Syntax ausgedrückten Metadaten keine Batchverarbeitung verursachen.  
   
 ## <a name="whats-next"></a>Weitere Informationen  
- Probieren Sie die [Exemplarische Vorgehensweise: Erstellen einer neuen MSBuild-Projektdatei](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md), um zu erfahren, wie Sie schrittweise eine einfache Projektdatei erstellen können.  
+ Einzelne Schritte zum Erstellen einer einfachen Projektdatei finden Sie unter [Exemplarische Vorgehensweise: MSBuild-Projektdatei von Grund auf neu erstellen](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  
   
 ## <a name="see-also"></a>Siehe auch
 [Übersicht über MSBuild](msbuild.md)  
  [MSBuild-Referenz](../msbuild/msbuild-reference.md)
-
-

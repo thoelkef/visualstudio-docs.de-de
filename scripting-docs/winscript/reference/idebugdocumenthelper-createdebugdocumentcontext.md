@@ -2,7 +2,6 @@
 title: IDebugDocumentHelper::CreateDebugDocumentContext | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d91a24a9255ff9ae558e9ff821b358331ef788b9
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 8b2dddfc76f2bbc3e629b2d48febb6b582a3a779
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54097265"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783170"
 ---
 # <a name="idebugdocumenthelpercreatedebugdocumentcontext"></a>IDebugDocumentHelper::CreateDebugDocumentContext
 Erstellt einen neuen Dokumentkontext für den Debugmodus.  

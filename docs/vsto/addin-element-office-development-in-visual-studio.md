@@ -2,7 +2,6 @@
 title: '&lt;Add-in&gt; -Element (Office-Entwicklung in Visual Studio)'
 titleSuffix: ''
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,15 +12,15 @@ helpviewer_keywords:
 - <addin> element
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6ab185a1341192542d4e35ad01aa2d5ce5fba748
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3ab7b0617f09b98c9e30c7f198ef0e2aaa301e33
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867727"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62931008"
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;Add-in&gt; -Element (Office-Entwicklung in Visual Studio)
   Die **-Add-in** Element der `vstav3` -Namespace enthält spezifische Informationen zu Microsoft Office VSTO-Add-ins und Anpassungen auf Dokumentebene, die mit Visual Studio entwickelt wurden.

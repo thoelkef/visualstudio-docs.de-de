@@ -2,21 +2,20 @@
 title: Debuggen im gemischten Modus für Python
 description: Gleichzeitiges Debuggen von C++ und Python in Visual Studio einschließlich abwechselnder Einzelschrittausführung in beiden Umgebungen, Anzeigen von Werten und Auswerten von Ausdrücken
 ms.date: 11/12/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b654af11ce61cb9331682f8b46e4476c06020ed3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a2848f04e2765c23f60de041e865e7684901b924
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885954"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62962670"
 ---
 # <a name="debug-python-and-c-together"></a>Gleichzeitiges Debuggen von Python und C++
 
@@ -58,13 +57,13 @@ Features für das Debuggen im gemischten Modus sind, wie in diesem Artikel besch
 
     Sie können anstelle von oder zusätzlich zu **Nativ** auch weitere Codetypen auswählen. Wenn eine verwaltete Anwendung z.B. den Interpreter CPython hostet, der wiederum native Erweiterungsmodule verwendet, und Sie alle drei Typen debuggen möchten, können Sie die Optionen **Python**, **Nativ** und **Verwaltet** zusammen aktivieren. So erhalten Sie eine einheitliche Debugleistung einschließlich kombinierter Aufruflisten und abwechselnder Einzelschrittausführung zwischen allen drei Runtimes.
 
-1. Wenn Sie das Debuggen im gemischten Modus zum ersten Mal starten, wird womöglich das Dialogfeld **Python-Symbole erforderlich** angezeigt (Informationen finden Sie unter [Symbole für Debuggen im gemischten Modus](debugging-symbols-for-mixed-mode-c-cpp-python.md)). Sie müssen Symbole für jede Python-Umgebung nur einmal installieren. Symbole sind automatisch enthalten, wenn Sie die Python-Unterstützung über das Visual Studio 2017-Installationsprogramm installieren.
+1. Wenn Sie das Debuggen im gemischten Modus zum ersten Mal starten, wird womöglich das Dialogfeld **Python-Symbole erforderlich** angezeigt (Informationen finden Sie unter [Symbole für Debuggen im gemischten Modus](debugging-symbols-for-mixed-mode-c-cpp-python.md)). Sie müssen Symbole für jede Python-Umgebung nur einmal installieren. Symbole sind automatisch enthalten, wenn Sie die Python-Unterstützung über den Visual Studio-Installer (Visual Studio 2017 und höher) installieren.
 
 1. Sie stellen den Quellcode für die Standardversion von Python beim Debuggen selbst zur Verfügung. Besuchen Sie hierzu [https://www.python.org/downloads/source/](https://www.python.org/downloads/source/). Laden Sie anschließend die für Ihre Version geeignete Archivdatei herunter, und extrahieren Sie sie in einen Ordner. Sie verweisen Visual Studio dann auf bestimmte Dateien in diesem Ordner, egal zu welchem Punkt Sie aufgefordert werden.
 
 ## <a name="enable-mixed-mode-debugging-in-a-cc-project"></a>Aktivieren des Debuggens im gemischten Modus in einem C/C++-Projekt
 
-Visual Studio 2017 (Version 15.5 und höher) unterstützt das Debuggen im gemischten Modus von einem C/C++-Projekt aus (wenn z.B. [Python in einer anderen Anwendung, wie auf python.org beschrieben, eingebettet wird](https://docs.python.org/3/extending/embedding.html)). Konfigurieren Sie das C/C++-Projekt, um **Python-/Natives Debuggen** zu starten, um das Debuggen im gemischten Modus zu aktivieren:
+Visual Studio (2017, Version 15.5 und höher) unterstützt das Debuggen im gemischten Modus von einem C/C++-Projekt aus (wenn z.B. [Python in einer anderen Anwendung, wie auf python.org beschrieben, eingebettet wird](https://docs.python.org/3/extending/embedding.html)). Konfigurieren Sie das C/C++-Projekt, um **Python-/Natives Debuggen** zu starten, um das Debuggen im gemischten Modus zu aktivieren:
 
 1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das C/C++-Projekt, und wählen Sie **Eigenschaften** aus.
 1. Klicken Sie auf die Registerkarte **Debuggen**, wählen Sie aus dem Debugger **Python-/Natives Debuggen** unter **Zu startender Debugger** aus, und klicken Sie auf **OK**.

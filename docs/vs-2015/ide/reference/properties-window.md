@@ -1,14 +1,9 @@
 ---
 title: Eigenschaftenfenster | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - properties [Visual Studio], Properties Window
 - handler functions, Properties window
@@ -25,18 +20,17 @@ ms.assetid: e6e0fa4f-75c4-4a52-af15-281cd61876ca
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a3faa4b9e0bf7d0ad59a33ed93f895a83e6ff8dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 582905042938d79a1885279bd19c18f48b49bb84
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282372"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438032"
 ---
 # <a name="properties-window"></a>Eigenschaftenfenster
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 In diesem Fenster können Sie die Eigenschaften und Ereignisse zur Entwurfszeit für die ausgewählten Objekte in Editoren und Designern anzeigen und ändern. Außerdem können Sie im **Eigenschaftenfenster** die Eigenschaften von Dateien, Projekten oder Projektmappen anzeigen und bearbeiten. Das Fenster **Eigenschaften** finden Sie im Menü **Anzeigen**. Sie können es auch öffnen, indem Sie F4 drücken oder **Eigenschaften** im Fenster **Schnellstart** eingeben.  
   
  Je nach den Erfordernissen der einzelnen Eigenschaften werden im **Eigenschaftenfenster** verschiedene Arten von Bearbeitungsfeldern angezeigt. Diese Bearbeitungsfelder bestehen beispielsweise aus Eingabefeldern, Dropdownlisten und Links zu benutzerdefinierten Editor-Dialogfeldern. In Grau angezeigte Eigenschaften sind schreibgeschützt.  
@@ -64,25 +58,25 @@ In diesem Fenster können Sie die Eigenschaften und Ereignisse zur Entwurfszeit 
  Zeigt die Ereignisse eines Objekts an.  
   
 > [!NOTE]
->  Dieses Symbolleisten-Steuerelement des **Eigenschaftenfensters** ist nur dann verfügbar, wenn im Kontext eines [!INCLUDE[csprcs](../../includes/csprcs-md.md)]-Projekts ein Designer für Formulare oder Steuerelemente aktiviert ist. Wenn Sie XAML-Dateien bearbeiten, werden Ereignisse auf einer separaten Registerkarte des Eigenschaftenfensters angezeigt.  
+> Dieses Symbolleisten-Steuerelement des **Eigenschaftenfensters** ist nur dann verfügbar, wenn im Kontext eines [!INCLUDE[csprcs](../../includes/csprcs-md.md)]-Projekts ein Designer für Formulare oder Steuerelemente aktiviert ist. Wenn Sie XAML-Dateien bearbeiten, werden Ereignisse auf einer separaten Registerkarte des Eigenschaftenfensters angezeigt.  
   
- Mitteilungen  
+ Meldungen  
  Führt alle Windows-Meldungen auf. Ermöglicht das Hinzufügen oder Löschen bestimmter Handlerfunktionen für die Nachrichten, die für die ausgewählte Klasse gelten.  
   
 > [!NOTE]
->  Dieses Symbolleisten-Steuerelement des **Eigenschaftenfensters** ist nur dann verfügbar, wenn im Kontext eines [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]-Projekts die **Klassenansicht** das aktive Fenster ist.  
+> Dieses Symbolleisten-Steuerelement des **Eigenschaftenfensters** ist nur dann verfügbar, wenn im Kontext eines [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]-Projekts die **Klassenansicht** das aktive Fenster ist.  
   
  Overrides  
  Führt alle virtuellen Funktionen für die ausgewählte Klasse auf und ermöglicht das Hinzufügen oder Löschen überschreibender Funktionen.  
   
 > [!NOTE]
->  Dieses Symbolleisten-Steuerelement des **Eigenschaftenfensters** ist nur dann verfügbar, wenn im Kontext eines [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]-Projekts die **Klassenansicht** das aktive Fenster ist.  
+> Dieses Symbolleisten-Steuerelement des **Eigenschaftenfensters** ist nur dann verfügbar, wenn im Kontext eines [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]-Projekts die **Klassenansicht** das aktive Fenster ist.  
   
  Beschreibungsbereich  
  Zeigt den Eigenschaftentyp und eine Kurzbeschreibung der Eigenschaft an. Mithilfe des Befehls "Beschreibung" im Kontextmenü können Sie die Beschreibung der Eigenschaft ein- und ausblenden.  
   
 > [!NOTE]
->  Dieses Symbolleisten-Steuerelement für das **Eigenschaftenfenster** ist nicht verfügbar, wenn XAML-Dateien im Designer bearbeitet werden.  
+> Dieses Symbolleisten-Steuerelement für das **Eigenschaftenfenster** ist nicht verfügbar, wenn XAML-Dateien im Designer bearbeitet werden.  
   
  Miniaturansicht  
  Zeigt beim Bearbeiten von XAML-Dateien im Designer eine visuelle Darstellung des gerade ausgewählten Elements an.  
@@ -93,6 +87,3 @@ In diesem Fenster können Sie die Eigenschaften und Ereignisse zur Entwurfszeit 
 ## <a name="see-also"></a>Siehe auch  
  [Projekteigenschaftenverweise](../../ide/reference/project-properties-reference.md)   
  [Anpassen von Fensterlayouts](../../ide/customizing-window-layouts-in-visual-studio.md)
-
-
-

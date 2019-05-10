@@ -1,7 +1,6 @@
 ---
 title: Festlegen von .NET Framework als Ziel.
 ms.date: 02/06/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
@@ -11,15 +10,15 @@ helpviewer_keywords:
 - .NET framework targeting [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 763e02dbd491e132dc91ec7a79717fab1e645d86
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 451464cd2576c1dd70c7b8235cead327b2f05ca2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955200"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62582111"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Übersicht: Ausrichtung auf mehrere Zielframeworkversionen in Visual Studio
 
@@ -36,13 +35,13 @@ Frameworkziele umfassen folgende Funktionen:
 
 - Wenn Sie ein Projekt öffnen, das auf eine frühere Version von [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] ausgerichtet ist, kann Visual Studio das Projekt automatisch aktualisieren oder die Zielversion unverändert lassen.
 
-- Wenn Sie ein Projekt erstellen, können Sie die gewünschte [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Zielversion angeben.
+- Wenn Sie ein Projekt erstellen, können Sie die gewünschte .NET Framework-Zielversion angeben.
 
-- Sie können die Version von [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] ändern, auf die ein vorhandenes Projekt abzielt.
+- Sie können die Version von .NET Framework ändern, auf die ein vorhandenes Projekt abzielt.
 
-- Sie können eine andere [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Version als Zielversion für unterschiedliche Projekte in der gleichen Projektmappe festlegen.
+- Sie können eine andere .NET Framework-Version als Zielversion für unterschiedliche Projekte in der gleichen Projektmappe festlegen.
 
-- Wenn Sie die Version von [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] ändern, auf die ein Projekt ausgerichtet ist, werden in [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] alle erforderlichen Änderungen an Verweisen und Konfigurationsdateien vorgenommen.
+- Wenn Sie die Version von .NET Framework ändern, auf die ein Projekt ausgerichtet ist, werden in [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] alle erforderlichen Änderungen an Verweisen und Konfigurationsdateien vorgenommen.
 
 Visual Studio kann dynamisch Änderungen in der Entwicklungsumgebung vornehmen, wenn Sie mit einem Projekt arbeiten, das eine frühere [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Version als Ziel hat. Dazu zählen u. a. folgende Aktionen:
 
@@ -63,17 +62,27 @@ Visual Studio kann dynamisch Änderungen in der Entwicklungsumgebung vornehmen, 
 
 ## <a name="select-a-target-framework-version"></a>Auswählen einer Zielframeworkversion
 
-Wenn Sie ein Projekt erstellen, wählen Sie die .NET Framework-Version im Dialogfeld **Neues Projekt** aus. Die Liste der verfügbaren Frameworks enthält die installierten Framework-Versionen, die auf den Typ der ausgewählten Vorlage anwendbar sind. Für Vorlagentypen, die .NET Framework nicht benötigen, z.B. .NET Core-Vorlagen, wird die **Framework**-Dropdownliste ausgeblendet.
+Wenn Sie ein Projekt erstellen, wählen Sie die .NET Framework-Zielversion nach dem Auswählen einer Projektvorlage aus. Die Liste der verfügbaren Frameworks enthält die installierten Framework-Versionen, die auf den Typ der ausgewählten Vorlage anwendbar sind. Für Vorlagentypen, die .NET Framework nicht benötigen, z.B. .NET Core-Vorlagen, wird die **Framework**-Dropdownliste ausgeblendet.
 
-![Framework-Dropdownliste im Dialogfeld „Neues Projekt“](media/vside-newproject-framework.png)
+::: moniker range="vs-2017"
 
-Für ein vorhandenes Projekt können Sie die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Zielversion über das Dialogfeld „Projekteigenschaften“ ändern. Weitere Informationen finden Sie unter [Vorgehensweise: .NET Framework-Version als Ziel](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+![Framework-Dropdownliste in VS 2017](media/vside-newproject-framework.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+![Framework-Dropdownliste in VS 2019](media/vs-2019/configure-new-project-framework.png)
+
+::: moniker-end
+
+Für ein vorhandenes Projekt können Sie die .NET Framework-Zielversion über das Dialogfeld „Projekteigenschaften“ ändern. Weitere Informationen finden Sie unter [Vorgehensweise: .NET Framework-Version als Ziel](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 ## <a name="resolve-system-and-user-assembly-references"></a>Auflösen von System- und Benutzerassemblyverweisen
 
 Um eine .NET Framework-Version als Ziel zu verwenden, müssen Sie zunächst die entsprechenden Assemblyverweise installieren. Sie können Developer Packs für verschiedene Versionen von .NET Framework auf der Website für [.NET-Downloads](https://www.microsoft.com/net/download/windows) herunterladen.
 
-Über das Dialogfeld **Verweis hinzufügen[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] werden Systemassemblys deaktiviert, die nicht zur** -Zielversion gehören, sodass sie nicht versehentlich zu einem Projekt hinzugefügt werden können. (Systemassemblys sind *DLL*-Dateien, die in einer [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Version enthalten sind.) Verweise, die zu einer .NET Framework-Version gehören, die älter ist als die Zielversion, werden nicht aufgelöst, und Steuerelemente, die von einem solchen Verweis abhängen, können nicht hinzugefügt werden. Wenn Sie einen solchen Verweis aktivieren möchten, setzen Sie das [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Ziel des Projekts auf eine Version zurück, die den Verweis enthält.  Weitere Informationen finden Sie unter [Vorgehensweise: .NET Framework-Version als Ziel](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+Über das Dialogfeld **Verweis hinzufügen** werden Systemassemblys deaktiviert, die nicht zur .NET Framework-Zielversion gehören, sodass sie nicht versehentlich zu einem Projekt hinzugefügt werden können. (Systemassemblys sind *DLL*-Dateien, die in einer .NET Framework-Version enthalten sind.) Verweise, die zu einer .NET Framework-Version gehören, die älter ist als die Zielversion, werden nicht aufgelöst, und Steuerelemente, die von einem solchen Verweis abhängen, können nicht hinzugefügt werden. Wenn Sie einen solchen Verweis aktivieren möchten, setzen Sie das .NET Framework-Ziel des Projekts auf eine Version zurück, die den Verweis enthält.  Weitere Informationen finden Sie unter [Vorgehensweise: .NET Framework-Version als Ziel](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 Weitere Informationen zu Assemblyverweisen finden Sie unter [Auflösen von Assemblys zur Entwurfszeit](../msbuild/resolving-assemblies-at-design-time.md).
 

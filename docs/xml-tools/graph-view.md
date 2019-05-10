@@ -1,20 +1,19 @@
 ---
 title: Diagrammansicht im XML-Schema-Designer
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: 5881afde-3f24-4eb9-bff8-6cb3fc8aade7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7623198cc31e8ee955f00cd06b7ca91f8d32a31
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3beeb41d89f96cea8ab0f7f97bada815101f7e2f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826993"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62997398"
 ---
 # <a name="graph-view"></a>Diagrammansicht
 
@@ -28,7 +27,7 @@ Die Diagrammansicht bietet eine grafische Darstellung der globalen Schemaknoten 
 
  Die Entwurfsoberfläche der Diagrammansicht zeigt den Inhalt der [Arbeitsbereich des XML-Schema-Designers](../xml-tools/xml-schema-designer-workspace.md). Wenn der Arbeitsbereich globale Knoten aus dem Schemaset enthält, werden die Knoten auf der Entwurfsoberfläche der Diagrammansicht angezeigt, und zwischen Knoten mit Beziehungen werden Pfeile gezeichnet.
 
- Per Doppelklick auf einen Knoten in der Diagrammansicht öffnen Sie den XML-Editor.
+ Durch Doppelklicken auf einen Knoten in der Diagrammansicht wird angezeigt, wenn XML-Editor.
 
  Zum ausgewählte Knoten aus dem Arbeitsbereich löschen, verwenden Sie die XSD-Designer-Symbolleiste oder die **löschen** Schlüssel.
 
@@ -42,7 +41,7 @@ Die Diagrammansicht bietet eine grafische Darstellung der globalen Schemaknoten 
 
  Die Breadcrumb-Leiste am unteren Rand der Diagrammansicht zeigt an, wo sich der ausgewählte Knoten im Schemaset befindet. Wenn mehrere Elemente ausgewählt sind, ist die Breadcrumb-Leiste leer.
 
-## <a name="context-menu"></a>Kontextmenü
+## <a name="context-right-click-menu"></a>Im Kontextmenü (Rechtsklick)
 
  In der folgenden Tabelle werden die Optionen beschrieben, die für alle Knoten auf der Entwurfsoberfläche der Diagrammansicht verfügbar sind.
 
@@ -56,7 +55,7 @@ Die Diagrammansicht bietet eine grafische Darstellung der globalen Schemaknoten 
 |**Alles außer Auswahl aus Arbeitsbereich entfernen**|Entfernt nicht ausgewählte Knoten aus dem Arbeitsbereich und der Entwurfsoberfläche.|
 |**Diagramm als Bild exportieren**|Speichert die Entwurfsoberfläche in einer XPS-Datei.|
 |**Wählen Sie alle**|Wählt alle Knoten auf der Entwurfsoberfläche aus.|
-|**Code anzeigen**|Öffnet die Datei, die den ausgewählten Knoten enthält, im XML-Editor. Das Element, das ausgewählt wird die **XML-Schema-Explorer** auch in der XML-Editor aktiviert ist.|
+|**Code anzeigen**|Öffnet die Datei, die den ausgewählten Knoten in der XML-Editor enthält. Das Element, das ausgewählt wird die **XML-Schema-Explorer** auch in der XML-Editor ausgewählt ist.|
 |**Eigenschaftenfenster**|Öffnet die **Eigenschaften** -Fenster (wenn es nicht bereits geöffnet ist). In diesem Fenster werden Informationen zum Knoten angezeigt.|
 
  Neben den oben beschriebenen allgemeinen Optionen enthält das Kontextmenü für globale Elemente die folgenden Optionen:
@@ -92,7 +91,7 @@ Die Diagrammansicht bietet eine grafische Darstellung der globalen Schemaknoten 
 
 ## <a name="properties-window"></a>Eigenschaftenfenster
 
- Verwenden Sie das Kontextmenü um zu Beginn zu öffnen der **Eigenschaften** Fenster. In der Standardeinstellung die **Eigenschaften** Fenster wird angezeigt, in der unteren rechten Ecke von Visual Studio. Wenn Sie einen Knoten, die in der Inhaltsmodellansicht gerendert wird klicken, werden die Eigenschaften des Knotens angezeigt werden, der **Eigenschaften** Fenster.
+ Verwenden Sie im Kontextmenü (Rechtsklick), öffnen Sie zunächst die **Eigenschaften** Fenster. In der Standardeinstellung die **Eigenschaften** Fenster wird angezeigt, in der unteren rechten Ecke von Visual Studio. Wenn Sie einen Knoten, die in der Inhaltsmodellansicht gerendert wird klicken, werden die Eigenschaften des Knotens angezeigt werden, der **Eigenschaften** Fenster.
 
 ## <a name="xsd-toolbar"></a>XSD-Symbolleiste
 
@@ -102,9 +101,9 @@ Die Diagrammansicht bietet eine grafische Darstellung der globalen Schemaknoten 
 
 |Option|Beschreibung|
 |-|-----------------|
-|**Ausgangsansicht anzeigen**|Wechselt in den [Ausgangsansicht](../xml-tools/start-view.md). In dieser Ansicht kann mit der Tastenkombination zugegriffen werden: **STRG**+**1**.|
-|**Inhaltsmodellansicht anzeigen**|Wechselt in den [Inhalt Modellansicht](../xml-tools/content-model-view.md). In dieser Ansicht kann mit der Tastenkombination zugegriffen werden: **STRG**+**2**.|
-|**Diagrammansicht anzeigen**|Wechselt in den [Diagrammansicht](../xml-tools/graph-view.md). In dieser Ansicht kann mit der Tastenkombination zugegriffen werden: **STRG**+**3**.|
+|**Ausgangsansicht anzeigen**|Wechselt in den [Ausgangsansicht](../xml-tools/start-view.md). In dieser Ansicht kann mit der Tastenkombination zugegriffen werden: **Ctrl**+**1**.|
+|**Inhaltsmodellansicht anzeigen**|Wechselt in den [Inhalt Modellansicht](../xml-tools/content-model-view.md). In dieser Ansicht kann mit der Tastenkombination zugegriffen werden: **Ctrl**+**2**.|
+|**Diagrammansicht anzeigen**|Wechselt in den [Diagrammansicht](../xml-tools/graph-view.md). In dieser Ansicht kann mit der Tastenkombination zugegriffen werden: **Ctrl**+**3**.|
 |**Arbeitsbereich löschen**|Löscht den Arbeitsbereich und die Entwurfsoberfläche.|
 |**Aus Arbeitsbereich entfernen**|Entfernt ausgewählte Knoten aus dem Arbeitsbereich und der Entwurfsoberfläche.|
 |**Alles außer Auswahl aus Arbeitsbereich entfernen**|Entfernt nicht ausgewählte Knoten aus dem Arbeitsbereich und der Entwurfsoberfläche. Diese Option ist in der Inhaltsmodellansicht und der Diagrammansicht aktiviert.|
@@ -121,11 +120,11 @@ Die Diagrammansicht bietet eine grafische Darstellung der globalen Schemaknoten 
 
  Die Funktion zum Rückgängigmachen bzw. Wiederholen ist in der Diagrammansicht für folgende Aktionen aktiviert:
 
--   Hinzufügen eines einzelnen Knotens per Drag & Drop
+- Hinzufügen eines einzelnen Knotens per Drag &amp; Drop
 
--   Hinzufügen mehrerer Knoten aus dem Suchergebnisfenster im Schema-Explorer oder Abfragen in der Ausgangsansicht
+- Hinzufügen mehrerer Knoten aus dem Suchergebnisfenster im Schema-Explorer oder Abfragen in der Ausgangsansicht
 
--   Löschen einzelner oder mehrerer Knoten
+- Löschen einzelner oder mehrerer Knoten
 
 ## <a name="zoom"></a>Zoom
 
@@ -133,17 +132,17 @@ Die Diagrammansicht bietet eine grafische Darstellung der globalen Schemaknoten 
 
  Der Zoomfaktor kann wie folgt gesteuert werden:
 
--   Durch Drücken der **STRG** whell Schlüssel, und drehen Sie die Maus, wenn die Maus über die Oberfläche der Diagrammansicht zeigt.
+- Durch Drücken der **STRG** whell Schlüssel, und drehen Sie die Maus, wenn die Maus über die Oberfläche der Diagrammansicht zeigt.
 
--   Verwenden Sie das Schieberegler-Steuerelement. Auf dem Schieberegler wird der aktuelle Zoomfaktor angezeigt.
+- Verwenden Sie das Schieberegler-Steuerelement. Auf dem Schieberegler wird der aktuelle Zoomfaktor angezeigt.
 
 Der Zoomschieberegler ist nicht transparent, wenn Sie es auswählen, zeigen Sie darauf, oder verwenden **STRG** mit dem Mausrad zum Zoomen, in allen anderen Fällen ist er transparent.
 
 ## <a name="xml-editor-integration"></a>Integration des XML-Editors
 
- Klicken Sie auf einen Knoten, und wählen Sie das Kontextmenüelement "Code anzeigen" aus, um zwischen der Diagrammansicht und dem XML-Editor hin- und herzuwechseln.
+ Sie können hin und her zwischen der Diagrammansicht und der XML-Editor wechseln, indem Sie auf einen Knoten klicken und im Kontextmenü (Rechtsklick) "Anzeigecode".
 
- Wenn Sie im XML-Editor Änderungen am Schemaset vornehmen, werden die Änderungen in der Diagrammansicht synchronisiert. Weitere Informationen finden Sie unter [-Integration mit XML-Editor](../xml-tools/integration-with-xml-editor.md).
+ Wenn Sie Änderungen am Schemaset im XML-Editor vornehmen, werden die Änderungen in der Diagrammansicht synchronisiert werden. Weitere Informationen finden Sie unter [-Integration mit XML-Editor](../xml-tools/integration-with-xml-editor.md).
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 02/13/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Hier erhalten Sie Informationen zu Visual Studio Dev Essentials und zur Registrierung.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e04e361dc36b0e4253edc695d79664995f681970
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 3f193d2f1d2f2f1f031773dcde3b2a209f8eebb7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283047"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62833984"
 ---
 # <a name="how-to-join-visual-studio-dev-essentials"></a>Teilnahme an Visual Studio Dev Essentials
 

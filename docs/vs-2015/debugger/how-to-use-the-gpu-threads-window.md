@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Verwenden Sie das GPU-Threadfenster | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.gputthreads
 - vs.debug.gputhreads
@@ -23,15 +18,15 @@ ms.assetid: c647c502-a9f0-48e0-a430-976744a5fa51
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8afd9cd09cf5977f58ee3a48b891f5291869b49c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dcb55ee2128d237c2be6f57da828ec3c5877cfdd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799170"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445075"
 ---
-# <a name="how-to-use-the-gpu-threads-window"></a>Gewusst wie: Verwenden des Fensters "GPU-Threads"
+# <a name="how-to-use-the-gpu-threads-window"></a>Vorgehensweise: Verwenden des Fensters „GPU-Threads“
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Im Fenster "GPU-Threads" können Sie Threads in der debuggten GPU überprüfen und diese bearbeiten. Weitere Informationen zu Anwendungen, die auf dem GPU ausgeführt werden, finden Sie unter [Übersicht über C++ AMP](http://msdn.microsoft.com/library/9e593b06-6e3c-43e9-8bae-6d89efdd39fc).  
@@ -42,17 +37,17 @@ Im Fenster "GPU-Threads" können Sie Threads in der debuggten GPU überprüfen u
   
 - Die Spalte mit aktiven Threads, in der ein gelber Pfeil einen aktiven Thread anzeigt. Ein Pfeil gibt den Thread an, in dem die Ausführung durch den Debugger unterbrochen wurde.  
   
-- Die **Threadanzahl** Spalte, die die Anzahl der Threads an derselben Position anzeigt.  
+- Die Spalte **Threadanzahl**, in der die Anzahl von Threads an derselben Position angezeigt wird.  
   
-- Die **Zeile** Spalte, die die Zeile des Codes angezeigt wird, in dem jede Gruppe von Threads befindet.  
+- Die Spalte **Zeile**, in der die Codezeile angezeigt wird, in der sich die jeweilige Threadgruppe befindet.  
   
-- Die **Adresse** Spalte, in der die Anweisungsadresse angezeigt wird, in dem jede Gruppe von Threads befindet. Standardmäßig ist diese Spalte ausgeblendet.  
+- Die Spalte **Adresse**, in der die Anweisungsadresse angezeigt wird, in der sich die jeweilige Threadgruppe befindet. Standardmäßig ist diese Spalte ausgeblendet.  
   
-- Die **Speicherort** Spalte, die die Position in der Quellcode ist.  
+- Die Spalte **Position**, in der die Position im Quellcode angegeben ist.  
   
-- Die **Status** Spalte, die anzeigt, ob der Thread aktiv, blockiert, nicht gestartet oder abgeschlossen ist.  
+- Die Spalte **Status**, in der angegeben ist, ob der Thread aktiv, blockiert oder nicht gestartet bzw. abgeschlossen ist.  
   
-- Die **Kachel** Spalte, in der der kachelindex für die Threads in der Zeile anzeigt.  
+- Die Spalte **Kachel**, in der der Kachelindex für die Threads in der Zeile angezeigt wird.  
   
   Im Header der Tabelle werden die Kachel und der Thread, die dargestellt werden, angezeigt.  
   
@@ -60,60 +55,57 @@ Im Fenster "GPU-Threads" können Sie Threads in der debuggten GPU überprüfen u
   
 ### <a name="to-display-the-gpu-threads-window"></a>So öffnen Sie das GPU-Threadfenster  
   
-1.  Öffnen Sie im **Projektmappen-Explorer**das Kontextmenü für das Projekt, und wählen Sie **Eigenschaften**aus.  
+1. Öffnen Sie im **Projektmappen-Explorer**das Kontextmenü für das Projekt, und wählen Sie **Eigenschaften**aus.  
   
-2.  In der **Eigenschaftenseiten** Fenster für das Projekt unter **Konfigurationseigenschaften**, wählen Sie **Debuggen**.  
+2. Wählen Sie im Fenster **Eigenschaftenseiten** für das Projekt unter **Konfigurationseigenschaften** die Option **Debuggen** aus.  
   
-3.  In der **zu startender Debugger** Liste **lokaler Windows-Debugger**. In der **Debuggertyp** Liste **nur GPU**. Sie müssen für diesen Debugger festlegen, im Code, der auf der GPU ausgeführt wird, am Haltepunkt zu unterbrechen.  
+3. Wählen Sie in der Liste **Zu startender Debugger** die Option **Lokaler Windows-Debugger** aus. Wählen Sie in der Liste **Debuggertyp** die Option **Nur GPU** aus. Sie müssen für diesen Debugger festlegen, im Code, der auf der GPU ausgeführt wird, am Haltepunkt zu unterbrechen.  
   
-4.  Klicken Sie auf die Schaltfläche **OK** .  
+4. Klicken Sie auf die Schaltfläche **OK** .  
   
-5.  Legen Sie einen Haltepunkt im GPU-Code fest.  
+5. Legen Sie einen Haltepunkt im GPU-Code fest.  
   
-6.  Klicken Sie in der Menüleiste auf **Debuggen** und dann auf **Debuggen starten**. Warten Sie, bis die Anwendung den Haltepunkt erreicht hat.  
+6. Klicken Sie in der Menüleiste auf **Debuggen** und dann auf **Debuggen starten**. Warten Sie, bis die Anwendung den Haltepunkt erreicht hat.  
   
-7.  Eine Menüleiste den Menüpunkt wählen **Debuggen**, **Windows**, **GPU-Threads**.  
+7. Klicken Sie in der Menüleiste auf **Debuggen**, **Fenster** und **GPU-Threads**.  
   
 ### <a name="to-change-to-a-different-active-thread"></a>So wechseln Sie zu einem anderen aktiven Thread  
   
--   Doppelklicken Sie auf die Spalte. (Tastatur: Wählen Sie die Zeile aus, und drücken Sie die EINGABETASTE.)  
+- Doppelklicken Sie auf die Spalte. (Tastatur: Wählen Sie die Zeile, und wählen Sie die EINGABETASTE.)  
   
 ### <a name="to-display-a-particular-tile-and-thread"></a>So zeigen Sie eine bestimmte Kachel und einen bestimmten Thread an  
   
-1.  Wählen Sie die **Threadumschaltung erweitern** GPU-Threadfenster die Schaltfläche.  
+1. Klicken Sie im GPU-Threadfenster auf die Schaltfläche **Threadumschaltung erweitern**.  
   
-2.  Geben Sie die Kachel- und Threadwerte in den Textfeldern an.  
+2. Geben Sie die Kachel- und Threadwerte in den Textfeldern an.  
   
-3.  Wählen Sie die Schaltfläche mit dem Pfeil darauf aus.  
+3. Wählen Sie die Schaltfläche mit dem Pfeil darauf aus.  
   
 ### <a name="to-display-or-hide-a-column"></a>So blenden Sie Spalten ein oder aus  
   
--   Öffnen Sie das Kontextmenü für das GPU-Threadfenster, und wählen **Spalten**, und wählen Sie dann auf die Spalte, die Sie anzeigen oder ausblenden möchten.  
+- Öffnen Sie das Kontextmenü für das GPU-Threadfenster, klicken Sie auf die Option **Spalten**, und wählen Sie anschließend die Spalte aus, die Sie anzeigen oder ausblenden möchten.  
   
 ### <a name="to-sort-by-a-column"></a>So sortieren Sie nach Spalte  
   
--   Wählen Sie Spaltenüberschrift aus.  
+- Wählen Sie Spaltenüberschrift aus.  
   
 ### <a name="to-group-threads"></a>So gruppieren Sie Threads  
   
--   Öffnen Sie das Kontextmenü für das GPU-Threadfenster, und wählen **Group By**, und wählen Sie dann eine der angezeigten Spaltennamen. Wählen Sie **keine** auf die Gruppierung der Threads aufzuheben.  
+- Öffnen Sie das Kontextmenü für das GPU-Threadfenster, klicken Sie auf **Gruppieren nach**, und wählen Sie dann einen der angezeigten Spaltennamen aus. Wählen Sie **Keine**, um die Gruppierung der Threads aufzuheben.  
   
 ### <a name="to-freeze-or-thaw-a-row-of-threads"></a>So können Sie eine Threadzeile einfrieren oder reaktivieren  
   
--   Öffnen Sie das Kontextmenü für die Zeile, und wählen **fixieren** oder **reaktivieren**.  
+- Öffnen Sie das Kontextmenü für die Zeile, und wählen Sie dann **Einfrieren** oder **Reaktivieren** aus.  
   
 ### <a name="to-flag-or-unflag-a-row-of-threads"></a>So können Sie Threadzeile kennzeichnen oder die Kennzeichnung aufheben  
   
--   Wählen Sie die Spalte zur Kennzeichnung für den Thread, oder öffnen Sie das Kontextmenü für den Thread aus, und wählen Sie **Flag** oder **Flag**.  
+- Wählen Sie die Spalte zur Kennzeichnung für den Thread aus, oder öffnen Sie das Kontextmenü für den Thread, und wählen Sie **Kennzeichnen** oder **Kennzeichnung aufheben** aus.  
   
 ### <a name="to-display-only-flagged-threads"></a>So zeigen Sie nur gekennzeichnete Threads an  
   
--   Wählen Sie im GPU-Threadfenster die Schaltfläche "Kennzeichnen" aus.  
+- Wählen Sie im GPU-Threadfenster die Schaltfläche "Kennzeichnen" aus.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von Multithreadanwendungen](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Vorgehensweise: Verwenden des parallelen Überwachungsfensters](../debugger/how-to-use-the-parallel-watch-window.md)   
+ [Vorgehensweise: Verwenden des Fensters „Parallele Überwachung“](../debugger/how-to-use-the-parallel-watch-window.md)   
  [Exemplarische Vorgehensweise: Debuggen einer C++ AMP-Anwendung](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)
-
-
-

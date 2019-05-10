@@ -1,8 +1,6 @@
 ---
 title: Codenavigationsbefehle
 ms.date: 08/14/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, navigation
@@ -17,15 +15,15 @@ helpviewer_keywords:
 - go to
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ac6fb3ae1f8c4e7fb48c9cd9a0d2b77cb875094
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 792b3ccf09faf9983afcd72de9acc0f23540683d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894468"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62570087"
 ---
 # <a name="navigate-code"></a>Navigieren durch den Code
 
@@ -84,13 +82,13 @@ Es existieren folgende „Gehe zu“-Befehle, die im Menü **Bearbeiten** unter 
 
 - **Zu Datei wechseln** (**STRG**+**1**, **STRG**+**F**): zur angegebenen Datei in der Projektmappe wechseln.
 
-- **Go To Recent File** (Gehe zur zuletzt bearbeiteten Datei) (**STRG**+**1**, **STRG**+**R**): zur angegebenen und zuletzt besuchten Datei in der Projektmappe wechseln (neu in Visual Studio 2017 Version 15.8).
+- **Go To Recent File** (Gehe zur zuletzt bearbeiteten Datei) (**STRG**+**1**, **STRG**+**R**): zur angegebenen und zuletzt besuchten Datei in der Projektmappe wechseln.
 
-- **Gehe zu Typ** (**STRG**+**1**, **STRG**+**T**): zum angegebenen Typ in der Projektmappe wechseln.
+- **Gehen zu Typ** (**STRG**+**1**, **STRG**+**T**): zum angegebenen Typ in der Projektmappe wechseln.
 
-- **Zu Member navigieren** (**STRG**+**1**, **STRG**+**M**): zum angegebenen Member in der Projektmappe wechseln.
+- **Gehe zu Member** (**STRG**+**1**, **STRG**+**T**): zum angegebenen Member in der Projektmappe wechseln.
 
-- **Gehe zu Symbol** (**STRG**+**1**, **STRG**+**S**): zum angegebenen Symbol in der Projektmappe wechseln.
+- **Gehe zu Symbol** (**STRG**+**1**, **STRG**+**T**): zum angegebenen Symbol in der Projektmappe wechseln.
 
 In Visual Studio 2017 Version 15.8 und höher, sind die folgenden **Gehe zu**-Navigationsbefehle ebenfalls verfügbar:
 
@@ -107,11 +105,11 @@ Mithilfe der „Gehe zu Definition“ gelangen Sie zur Definition des ausgewähl
 Eingabe | Funktion
 ------------ | ---
 **Tastatur** | Platzieren Sie den Textcursor an einer beliebigen Position innerhalb des Typnamens, und drücken Sie **F12**
-**Maus** | Klicken Sie mit der rechten Maustaste auf den Typnamen, und wählen Sie **Gehe zu Definition** aus, ODER drücken Sie **STRG**, und klicken Sie auf den Typnamen (neu in Visual Studio 2017, Version 15.4).
+**Maus** | Klicken Sie mit der rechten Maustaste auf den Typnamen, und wählen Sie **Gehe zu Definition** aus, ODER drücken Sie **STRG**, und klicken Sie auf den Typnamen.
 
 ## <a name="peek-definition"></a>Peek-Definition
 
-Mithilfe von „Peek-Definition“ wird die Definition des ausgewählten Elements in einem Fenster angezeigt, ohne dass Ihre aktuelle Position im Code-Editor verlassen wird. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen und Bearbeiten von Code mithilfe von „Definition einsehen“](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) und [Go To Definition and Peek Definition („Gehe zu Definition“ und „Definition einsehen“)](../ide/go-to-and-peek-definition.md).
+Mithilfe von „Peek-Definition“ wird die Definition des ausgewählten Elements in einem Fenster angezeigt, ohne dass Ihre aktuelle Position im Code-Editor verlassen wird. Weitere Informationen finden Sie unter [Vorgehensweise: Anzeigen und Bearbeiten von Code mithilfe von „Definition einsehen“](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) sowie [„Gehe zu Definition“ und „Definition einsehen“](../ide/go-to-and-peek-definition.md).
 
 Eingabe | Funktion
 ------------ | ---

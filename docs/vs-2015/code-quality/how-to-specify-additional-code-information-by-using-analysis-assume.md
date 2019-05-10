@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Angeben zusätzlicher Codeinformationen mit __analysis_assume | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - __analysis_assume
 helpviewer_keywords:
@@ -17,15 +12,15 @@ ms.assetid: 51205d97-4084-4cf4-a5ed-3eeaf67deb1b
 caps.latest.revision: 12
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: de4d70dc615c14e9f9355608fa6b352b799c2c1a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e130f2248ae6715b3248226c780bc162e1ff01ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51776901"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426643"
 ---
-# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Gewusst wie: Angeben zusätzlicher Codeinformationen mit __analysis_assume
+# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Vorgehensweise: Angeben zusätzlicher Codeinformationen mit „__analysis_assume“
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können Hinweise an, die das Codeanalysetool für C/C++-Code angeben, die den Analyse zu unterstützen und Warnungen zu reduzieren. Um zusätzliche Informationen bereitzustellen, verwenden Sie die folgende Funktion:  
@@ -37,7 +32,7 @@ Sie können Hinweise an, die das Codeanalysetool für C/C++-Code angeben, die de
  Das Codeanalysetool wird davon ausgegangen, dass die Bedingung, die durch den Ausdruck dargestellt wird "true", an dem Punkt ist, in dem die Funktion angezeigt wird, und "true" bleibt, bis der Ausdruck geändert wird, z. B. durch die Zuweisung zur Variable.  
   
 > [!NOTE]
->  `__analysis_assume` codeoptimierung hat keine Auswirkungen. Außerhalb der Codeanalysetools `__analysis_assume` als keine Aktion definiert ist.  
+> `__analysis_assume` codeoptimierung hat keine Auswirkungen. Außerhalb der Codeanalysetools `__analysis_assume` als keine Aktion definiert ist.  
   
 ## <a name="example"></a>Beispiel  
  Der folgende code verwendet `__analysis_assume` der codeanalysewarnung zu korrigieren [C6388](../code-quality/c6388.md):  
@@ -65,6 +60,3 @@ void test( )
   
 ## <a name="see-also"></a>Siehe auch  
  [__assume](http://msdn.microsoft.com/library/d8565123-b132-44b1-8235-5a8c8bff85a7)
-
-
-

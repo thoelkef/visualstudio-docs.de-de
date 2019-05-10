@@ -1,7 +1,6 @@
 ---
 title: Codeausschnittfunktionen
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - code snippets [Visual Studio], functions
@@ -10,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c0a2bf21-8fa5-4457-9281-f599beb53e7d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cf31fed530447af986d96418d06cf46f02b14b1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 60453b6842dd321b7c85c2837e12b1208adb18f9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974968"
 ---
 # <a name="code-snippet-functions"></a>Codeausschnittfunktionen
 
@@ -30,11 +29,11 @@ In der folgenden Tabelle werden die verfügbaren Funktionen für die Verwendung 
 
 |Funktion|Beschreibung|Sprache|
 |--------------|-----------------|--------------|
-|`GenerateSwitchCases(` `EnumerationLiteral` `)`|Es werden eine switch-Anweisung sowie mehrere case-Anweisungen für die vom `EnumerationLiteral`-Parameter angegebenen Member der Enumeration generiert. Der `EnumerationLiteral`-Parameter muss entweder ein Verweis auf ein Enumerationsliteral oder auf einen Enumerationstyp sein.|C#|
+|`GenerateSwitchCases(EnumerationLiteral)`|Es werden eine switch-Anweisung sowie mehrere case-Anweisungen für die vom `EnumerationLiteral`-Parameter angegebenen Member der Enumeration generiert. Der `EnumerationLiteral`-Parameter muss entweder ein Verweis auf ein Enumerationsliteral oder auf einen Enumerationstyp sein.|C#|
 |`ClassName()`|Gibt den Namen der Klasse zurück, die den eingefügten Ausschnitt enthält.|C#|
-|`SimpleTypeName(` `TypeName` `)`|Reduziert den *TypeName*-Parameter auf seine einfachste Form im Kontext, in dem der Ausschnitt aufgerufen wurde.|C#|
+|`SimpleTypeName(TypeName)`|Reduziert den *TypeName*-Parameter auf seine einfachste Form im Kontext, in dem der Ausschnitt aufgerufen wurde.|C#|
 
-## <a name="example"></a>Beispiel
+## <a name="generateswitchcases-example"></a>Beispiel für GenerateSwitchCases
 
 Im folgenden Beispiel wird die Verwendung der `GenerateSwitchCases`-Funktion veranschaulicht. Wenn dieser Ausschnitt eingefügt wird und eine Enumeration in das `$switch_on$`-Literal eingefügt wird, generiert das `$cases$`-Literal eine `case`-Anweisung für jeden Wert in der Enumeration.
 
@@ -76,7 +75,7 @@ Im folgenden Beispiel wird die Verwendung der `GenerateSwitchCases`-Funktion ver
 </CodeSnippets>
 ```
 
-## <a name="example"></a>Beispiel
+## <a name="classname-example"></a>Beispiel für ClassName
 
 Im folgenden Beispiel wird die Verwendung der `ClassName`-Funktion veranschaulicht. Wenn dieser Ausschnitt eingefügt wird, wird das `$classname$`-Literal mit dem Namen der einschließenden Klasse an diesem Speicherort in der Codedatei ersetzt.
 
@@ -123,7 +122,7 @@ Im folgenden Beispiel wird die Verwendung der `ClassName`-Funktion veranschaulic
 </CodeSnippets>
 ```
 
-## <a name="example"></a>Beispiel
+## <a name="simpletypename-example"></a>Beispiel für SimpleTypeName
 
 In diesem Beispiel wird die Verwendung der `SimpleTypeName`-Funktion veranschaulicht. Wenn dieser Codeausschnitt in eine Codedatei eingefügt wird, wir das `$SystemConsole$`-Literal mit der einfachsten Form des Typs <xref:System.Console> im Kontext ersetzt, in dem der Ausschnitt aufgerufen wurde.
 

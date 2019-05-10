@@ -15,23 +15,23 @@ helpviewer_keywords:
 ms.assetid: 9857505d-ae15-42f1-936d-6cd7fb9dd276
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3f01d9d35f8b2c122fb61f4fd9b3a8a22090b21
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a0ecdd051ecc44cb3205ca8793653bf31a63abd2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918763"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62570293"
 ---
 # <a name="common-msbuild-project-properties"></a>Gemeinsame MSBuild-Projekteigenschaften
-In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, die in den Visual Studio-Projektdateien definiert oder in den *TARGETS*-Dateien enthalten sind, die von MSBuild bereitgestellt werden.  
-  
- Projektdateien in Visual Studio (*CSPROJ-*, *VBPROJ-*, *VCXPROJ*-Dateien und andere) enthalten MSBuild-XML-Code, der ausgeführt wird, wenn Sie ein Projekt mithilfe der IDE erstellen. Projekte importieren in der Regel mindestens eine *TARGETS*-Datei, um den entsprechenden Buildprozess zu definieren. Weitere Informationen finden Sie unter [TARGETS-Dateien von MSBuild](../msbuild/msbuild-dot-targets-files.md).  
-  
-## <a name="list-of-common-properties-and-parameters"></a>Liste häufig verwendeter Eigenschaften und Parameter  
-  
+In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, die in den Visual Studio-Projektdateien definiert oder in den *TARGETS*-Dateien enthalten sind, die von MSBuild bereitgestellt werden.
+
+ Projektdateien in Visual Studio (*CSPROJ-*, *VBPROJ-*, *VCXPROJ*-Dateien und andere) enthalten MSBuild-XML-Code, der ausgeführt wird, wenn Sie ein Projekt mithilfe der IDE erstellen. Projekte importieren in der Regel mindestens eine *TARGETS*-Datei, um den entsprechenden Buildprozess zu definieren. Weitere Informationen finden Sie unter [TARGETS-Dateien von MSBuild](../msbuild/msbuild-dot-targets-files.md).
+
+## <a name="list-of-common-properties-and-parameters"></a>Liste häufig verwendeter Eigenschaften und Parameter
+
 | Eigenschaften- oder Parametername | Beschreibung |
 |------------------------------------| - |
 | AdditionalLibPaths | Gibt weitere Ordner an, in denen Compiler nach Verweisassemblys suchen sollen. |
@@ -54,7 +54,7 @@ In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, di
 | CscToolPath | Der Pfad von *csc.exe*, dem [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Compiler. |
 | CustomBeforeMicrosoftCommonTargets | Der Name einer Projektdatei oder TARGETS-Datei, die vor dem allgemeinen TARGETS-Import automatisch importiert werden soll. |
 | DebugSymbols | Ein boolescher Wert, der angibt, ob Symbole vom Build generiert werden.<br /><br /> Durch das Festlegen von **-p:DebugSymbols=false** in der Befehlszeile wird die Generierung von Programmdatenbank-Symboldateien (*PDB*-Dateien) deaktiviert. |
-| DebugType | Definiert den Umfang der zu generierenden Debuginformationen. Gültige Werte sind "full", "pdbonly" und "none". |
+| DebugType | Definiert den Umfang der zu generierenden Debuginformationen. Gültige Werte sind „full“, „pdbonly“, „portable“, „embedded“ und „none“. |
 | DefineConstants | Definiert Konstanten für die bedingte Kompilierung. Symbol-Wert-Paare werden durch Semikolons getrennt und mit der folgenden Syntax angegeben:<br /><br /> *symbol1 = value1 ; symbol2 = value2*<br /><br /> Die Eigenschaft entspricht dem `/define`-Compilerschalter. |
 | DefineDebug | Ein boolescher Wert, der angibt, ob die DEBUG-Konstante definiert werden soll. |
 | DefineTrace | Ein boolescher Wert, der angibt, ob die TRACE-Konstante definiert werden soll. |
@@ -64,7 +64,7 @@ In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, di
 | DisableFastUpToDateCheck | Ein boolescher Wert, der nur für [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] gilt. Der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Build-Manager stellt mithilfe des "FastUpToDateCheck"-Prozesses fest, ob ein Projekt neu erstellt werden muss, damit es aktuell ist. Dieser Prozess ist schneller als die Verwendung von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Durch Festlegen der „DisableFastUpToDateCheck“-Eigenschaft auf `true` können Sie den [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Build-Manager umgehen und die Verwendung von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zum Bestimmen der Aktualität des Projekts erzwingen. |
 | DocumentationFile | Der Name der Datei, die als XML-Dokumentationsdatei generiert wird. Dieser Name umfasst nur den Dateinamen und weist keine Pfadinformationen auf. |
 | ErrorReport | Gibt an, wie interne Compilerfehler von der Compileraufgabe gemeldet werden sollen. Gültige Werte sind "prompt", "send" und "none". Diese Eigenschaft entspricht dem `/errorreport`-Compilerschalter. |
-| ExcludeDeploymentUrl | Dem Bereitstellungsmanifest wird durch die [GenerateDeploymentManifest-Aufgabe](../msbuild/generatedeploymentmanifest-task.md) ein deploymentProvider-Tag hinzugefügt, wenn die Projektdatei eines der folgenden Elemente enthält:<br /><br /> – UpdateUrl<br />– InstallUrl<br />– PublishUrl<br /><br /> Sie können mithilfe von „ExcludeDeploymentUrl“ jedoch verhindern, dass das „deploymentProvider“-Tag zum Bereitstellungsmanifest hinzugefügt wird, auch wenn eine der vorgenannten URLs angegeben wird. Fügen Sie der Projektdatei zu diesem Zweck die folgende Eigenschaft hinzu:<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` <br /><br />**Hinweis**:  "ExcludeDeploymentUrl" wird in der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-IDE nicht verfügbar gemacht und kann nur festgelegt werden, indem die Projektdatei manuell bearbeitet wird. Das Festlegen dieser Eigenschaft hat keine Auswirkung auf die Veröffentlichung in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Das bedeutet, dass das Tag "deploymentProvider" weiterhin zu der durch "PublishUrl" angegebenen URL hinzugefügt wird. |
+| ExcludeDeploymentUrl | Dem Bereitstellungsmanifest wird durch die [GenerateDeploymentManifest-Aufgabe](../msbuild/generatedeploymentmanifest-task.md) ein deploymentProvider-Tag hinzugefügt, wenn die Projektdatei eines der folgenden Elemente enthält:<br /><br /> – UpdateUrl<br />– InstallUrl<br />– PublishUrl<br /><br /> Sie können mithilfe von „ExcludeDeploymentUrl“ jedoch verhindern, dass das „deploymentProvider“-Tag zum Bereitstellungsmanifest hinzugefügt wird, auch wenn eine der vorgenannten URLs angegeben wird. Fügen Sie der Projektdatei zu diesem Zweck die folgende Eigenschaft hinzu:<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` <br /><br />**Hinweis**:  „ExcludeDeploymentUrl“ wird in der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-IDE nicht zur Verfügung gestellt und kann nur festgelegt werden, indem die Projektdatei manuell bearbeitet wird. Das Festlegen dieser Eigenschaft hat keine Auswirkung auf die Veröffentlichung in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Das bedeutet, dass das Tag "deploymentProvider" weiterhin zu der durch "PublishUrl" angegebenen URL hinzugefügt wird. |
 | FileAlignment | Gibt die Ausrichtung der Abschnitte der Ausgabedatei in Bytes an. Gültige Werte sind 512, 1024, 2048, 4096 und 8192. Diese Eigenschaft entspricht dem `/filealignment`-Compilerschalter. |
 | FrameworkPathOverride | Gibt den Speicherort von *mscorlib.dll* und *microsoft.visualbasic.dll* an. Dieser Parameter entspricht der `/sdkpath`-Option des Compilers *vbc.exe*. |
 | GenerateDocumentation | (Nur Visual Basic ) Ein boolescher Parameter, der angibt, ob eine Dokumentation vom Build generiert wird. Wenn der Wert `true` lautet, werden Dokumentationsinformationen vom Build generiert und zusammen mit dem Namen der ausführbaren Datei oder der Bibliothek, die von der Buildaufgabe erstellt wurde, in einer *XML*-Datei gespeichert. |
@@ -85,9 +85,11 @@ In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, di
 | OutputPath | Gibt den Pfad zum Ausgabeverzeichnis relativ zum Projektverzeichnis an, zum Beispiel *bin\Debug*. |
 | OutputType | Gibt das Dateiformat der Ausgabedatei an. Dieser Parameter kann einen der folgenden Werte aufweisen:<br /><br /> – Library. Erstellt eine Codebibliothek. (Standardwert)<br />– Exe. Erstellt eine Konsolenanwendung.<br />– Module. Erstellt ein Modul.<br />– Winexe. Erstellt ein Windows-Programm.<br /><br /> Diese Eigenschaft entspricht der `/target`-Option des Compilers *vbc.exe*. |
 | OverwriteReadOnlyFiles | Ein boolescher Wert, der angibt, ob schreibgeschützte Dateien vom Build überschrieben werden sollen oder ob ein Fehler ausgelöst werden soll. |
+| PathMap | Gibt an, wie physische Pfade den Quellpfadnamen zugeordnet werden, die vom Compiler ausgegeben werden. Diese Eigenschaft entspricht der `/pathmap`-Option des Compilers *csc.exe*. |
 | PdbFile | Der Dateiname der *PDB*-Datei, die Sie ausgeben. Diese Eigenschaft entspricht der `/pdb`-Option des Compilers *csc.exe*. |
 | Plattform | Das Betriebssystem, für das Sie erstellen. Gültige Werte sind "Beliebige CPU", "x86" und "x64". |
 | ProduceReferenceAssembly | Ein boolescher Wert, der auf `true` festgelegt wurde, ermöglicht die Produktion von [Verweisassemblys](https://github.com/dotnet/roslyn/blob/master/docs/features/refout.md) für die aktuelle Assembly. `Deterministic` sollte beim Verwenden dieser Funktion `true` entsprechen. Diese Eigenschaft entspricht der `/refout`-Option der Compiler *vbc.exe* und *csc.exe*. |
+| ProduceOnlyReferenceAssembly | Ein boolescher Wert, der den Compiler anweist, nur eine Verweisassembly und keinen kompilierten Code ausgegeben. Kann nicht in Verbindung mit `ProduceReferenceAssembly` verwendet werden.  Diese Eigenschaft entspricht der `/refonly`-Option der Compiler *vbc.exe* und *csc.exe*. |
 | RemoveIntegerChecks | Ein boolescher Wert, der angibt, ob Überprüfungen auf Ganzzahlüberlauf-Fehler deaktiviert werden sollen. Der Standardwert ist `false`sein. Diese Eigenschaft entspricht der `/removeintchecks`-Option des Compilers *vbc.exe*. |
 | SGenUseProxyTypes | Ein boolescher Wert, der angibt, ob Proxytypen von *SGen.exe* generiert werden sollen.<br /><br /> Das SGen-Ziel verwendet diese Eigenschaft, um das "UseProxyTypes"-Flag festzulegen. Diese Eigenschaft wird standardmäßig auf "true" festgelegt. Es ist keine Benutzeroberfläche verfügbar, um diesen Wert zu ändern. Fügen Sie diese Eigenschaft der Projektdatei hinzu, und legen Sie sie auf FALSE fest, bevor Sie *Microsoft.Common.Targets* oder *C#/VB.targets* importieren, um die Serialisierungsassembly für nicht webdienstbezogene Typen zu generieren. |
 | SGenToolPath | Ein optionaler Toolpfad, der angibt, von wo *SGen.exe* abgerufen werden kann, wenn die aktuelle Version von *SGen.exe* überschrieben wurde. |
@@ -126,6 +128,6 @@ In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, di
 | WarningsNotAsErrors | Gibt eine Liste mit Warnungen an, die nicht als Fehler behandelt werden sollen. Dieser Parameter entspricht dem `/warnaserror`-Compilerschalter. |
 | Win32Manifest | Der Name der Manifestdatei, die in die endgültige Assembly eingebettet werden soll. Dieser Parameter entspricht dem `/win32Manifest`-Compilerschalter. |
 | Win32Resource | Der Dateiname der Win32-Ressource, die in die endgültige Assembly eingebettet werden soll. Dieser Parameter entspricht dem `/win32resource`-Compilerschalter. |
-  
-## <a name="see-also"></a>Siehe auch  
- [Gemeinsame MSBuild-Projektelemente](../msbuild/common-msbuild-project-items.md)
+
+## <a name="see-also"></a>Siehe auch
+- [Gemeinsame MSBuild-Projektelemente](../msbuild/common-msbuild-project-items.md)

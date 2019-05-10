@@ -1,14 +1,9 @@
 ---
 title: 'DA0017: Hohes Maß an Paging von aktivem Speicher auf den Datenträger | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.17
 - vs.performance.rules.DA0017
@@ -17,13 +12,13 @@ ms.assetid: 01011eec-5930-43b3-980d-2cb01e2ca7f6
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6a7fbe924ee3d0f5dbd142d8e7f7020c6eed1ee5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 00df8bf8757b9dba35537942716c37f66675bf32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435861"
 ---
 # <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017: Hohes Maß an Paging von aktivem Speicher auf den Datenträger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51766584"
 Regel-Id | DA0017 |  
 | Kategorie | Speicher und Auslagerung |  
 | Profilerstellungsmethode | Alle |  
-| Nachricht | Ein hohes Maß an paging von aktivem Speicher auf den Datenträger wurde festgestellt. Ihre Anwendung ist möglicherweise speichergebunden. |  
+| Nachricht | Ein hohes Maß an paging von aktivem Speicher auf den Datenträger wurde festgestellt. Die Anwendung ist möglicherweise speichergebunden.|  
 | Regeltyp | Informationen |  
   
  Wenn Sie Profile mithilfe der Sampling-, .NET-Arbeitsspeicher- oder Ressourcenkonfliktmethode Profile erstellen, müssen mindestens 10 Samplings erfasst werden, damit diese Regel ausgelöst wird.  
@@ -42,7 +37,7 @@ Regel-Id | DA0017 |
 ## <a name="rule-description"></a>Regelbeschreibung  
   
 > [!NOTE]
->  Diese Informationsregel wird ausgelöst, wenn die Auslagerung des aktiven Speichers ein hohes Maß erreicht. Bei Erreichen eines äußerst hohen Auslagerungsaufkommens wird stattdessen die Warnregel [DA0014: Äußerst hohes Maß an Paging von aktivem Speicher auf den Datenträger](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md) ausgelöst.  
+> Diese Informationsregel wird ausgelöst, wenn die Auslagerung des aktiven Speichers ein hohes Maß erreicht. Wenn eine äußerst hohes Auslagerungsrate erreicht ist, wird stattdessen die Warnregel [DA0014: Äußerst hohes Maß an Auslagerung von aktivem Speicher auf den Datenträger](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md) angezeigt.  
   
  Eine übermäßige Auslagerung auf den Datenträger kann auf einen zu kleinen physischen Speicher zurückzuführen sein. Wenn der physische Datenträger, auf dem sich die Auslagerungsdatei befindet, hauptsächlich für Auslagerungsvorgänge verwendet wird, kann dies zu einer Verlangsamung anderer anwendungsorientierter Datenträgervorgänge auf diesem Datenträger führen.  
   
@@ -54,6 +49,3 @@ Regel-Id | DA0017 |
  Wenn Sie in einem Auslastungstest-Szenario Profildaten für eine ASP.NET-Anwendung erfassen, führen Sie den Auslastungstest auf einem Computer mit zusätzlichem physischem Speicher (oder RAM) erneut aus.  
   
  Verringern Sie ggf. die Speicherbelegungen, indem Sie die Algorithmen überarbeiten, und vermeiden Sie speicherintensive APIs wie String.Concat und String.Substring.
-
-
-

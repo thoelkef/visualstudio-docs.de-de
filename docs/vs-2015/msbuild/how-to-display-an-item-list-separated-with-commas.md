@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Anzeigen einer durch Trennzeichen getrennten Elementliste | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, separating items with semicolons
 - MSBuild, formatting item collections
@@ -16,18 +11,17 @@ ms.assetid: 3cae844c-7c6d-4144-82dc-efad10ba458f
 caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c9de7655335d2937a31cc2d63f5220fbf5415745
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 93451d6d49082621df48c734de951e6a4bc7e281
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195870"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059356"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Gewusst wie: Anzeigen einer durch Trennzeichen getrennten Elementliste
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Beim Arbeiten mit dem Elementlisten in [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ([!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]) ist es manchmal hilfreich, den Inhalt dieser Elementlisten in einer leicht lesbaren Ansicht anzuzeigen. Oder Sie haben eine Aufgabe, die eine Liste von durch ein bestimmtes Trennzeichen getrennten Elementen akzeptiert. In beiden Fällen haben Sie die Möglichkeit, eine Trennzeichenabfolge für eine Elementliste anzugeben.  
   
 ## <a name="separating-items-in-a-list-with-commas"></a>Trennen von Elementen in einer Liste mit Kommas  
@@ -47,7 +41,7 @@ Beim Arbeiten mit dem Elementlisten in [!INCLUDE[vstecmsbuildengine](../includes
   
 #### <a name="to-insert-a-comma-and-a-space-between-items"></a>So fügen Sie ein Komma und ein Leerzeichen zwischen Elementen ein  
   
--   Verwenden Sie in etwa diese Elementnotation:  
+- Verwenden Sie in etwa diese Elementnotation:  
   
      `@(TXTFile, ', ')`  
   
@@ -78,6 +72,3 @@ Beim Arbeiten mit dem Elementlisten in [!INCLUDE[vstecmsbuildengine](../includes
 ## <a name="see-also"></a>Siehe auch  
  [MSBuild Reference](../msbuild/msbuild-reference.md)  (MSBuild-Referenz)  
  [Elemente](../msbuild/msbuild-items.md)
-
-
-

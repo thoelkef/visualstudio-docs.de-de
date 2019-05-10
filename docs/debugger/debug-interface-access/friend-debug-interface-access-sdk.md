@@ -1,7 +1,9 @@
 ---
 title: Friend (Debug Interface Access SDK) | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -9,19 +11,20 @@ helpviewer_keywords:
 - friend classes [DIA SDK]
 - Friend symbol
 ms.assetid: 5147a170-41ce-4727-8ace-c318e8d11647
-author: mikejo5000
+caps.latest.revision: 19
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: fb8b1dc7d54cc913a1ed1986576fa559c7134bd2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 118a6b6caf6a208898bba3894d532e5dc6e4a14a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868260"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554690"
 ---
 # <a name="friend-debug-interface-access-sdk"></a>Friend (Debug Interface Access SDK)
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Friend-Klassen und Friend-Funktionen werden durch identifiziert `SymTagFriend` Symbole. Sie sind untergeordnete Elemente des übergeordneten Elements benutzerdefinierte Typen (UDTs) und haben eine [idiasymbol:: Get_classparent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md) Eigenschaft.  
   
 ## <a name="properties"></a>Eigenschaften  

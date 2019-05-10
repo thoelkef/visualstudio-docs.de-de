@@ -1,29 +1,24 @@
 ---
 title: 'Vorgehensweise: Öffnen Sie die Standard-Editoren | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], opening
 - projects [Visual Studio SDK], opening standard editors
 ms.assetid: d5ce10f9-047a-4b74-aa1d-295128898b89
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fc6829ba4d1267d7a17c609f973b5ee6b570e9ac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 792ac8a0859481fd97b2eaee4bd66753f0460a37
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742502"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042535"
 ---
-# <a name="how-to-open-standard-editors"></a>Vorgehensweise: Öffnen Sie die Standard-Editoren
+# <a name="how-to-open-standard-editors"></a>Vorgehensweise: Öffnen von Standard-Editoren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Wenn Sie einen standard-Editor öffnen, können Sie die IDE einen standard-Editor für einen angegebenen Dateityp, anstatt einen projektspezifischen Editor für die Datei zu bestimmen.  
@@ -32,25 +27,25 @@ Wenn Sie einen standard-Editor öffnen, können Sie die IDE einen standard-Edito
   
 ### <a name="to-implement-the-openitem-method-with-a-standard-editor"></a>So implementieren Sie die OpenItem-Methode mit einem standard-editor  
   
-1.  Rufen Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable> (`RDT_EditLock`) zu bestimmen, ob die Datendatei Objekt das Dokument bereits geöffnet ist.  
+1. Rufen Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable> (`RDT_EditLock`) zu bestimmen, ob die Datendatei Objekt das Dokument bereits geöffnet ist.  
   
-2.  Wenn die Datei bereits geöffnet ist, diesem die Datei durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> Methode, die Angabe des Werts `IDO_ActivateIfOpen` für die `grfIDO` Parameter.  
+2. Wenn die Datei bereits geöffnet ist, diesem die Datei durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> Methode, die Angabe des Werts `IDO_ActivateIfOpen` für die `grfIDO` Parameter.  
   
      Wenn die Datei geöffnet ist, und das Dokument ist im Besitz eines anderen Projekts als des aufrufenden Projekts, erhält das Projekt eine Warnung, die der Editor geöffnet wird aus einem anderen Projekt ist. Fenster "Datei" wird dann angezeigt.  
   
-3.  Wenn das Dokument nicht geöffnet ist oder nicht in der Tabelle aktiver Dokumente vorhanden ist, rufen die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> Methode (`OSE_ChooseBestStdEditor`) zu einen standard-Editor für die Datei zu öffnen.  
+3. Wenn das Dokument nicht geöffnet ist oder nicht in der Tabelle aktiver Dokumente vorhanden ist, rufen die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> Methode (`OSE_ChooseBestStdEditor`) zu einen standard-Editor für die Datei zu öffnen.  
   
      Wenn Sie die Methode aufrufen, führt die IDE die folgenden Aufgaben aus:  
   
-    1.  Die IDE überprüft die Editoren / {GuidEditorType} / Unterschlüssel in der Registrierung, um zu bestimmen, welcher Editor Extensions kann die Datei öffnen, und hat die höchste Priorität, um dieses Ziel erreichen.  
+    1. Die IDE überprüft die Editoren / {GuidEditorType} / Unterschlüssel in der Registrierung, um zu bestimmen, welcher Editor Extensions kann die Datei öffnen, und hat die höchste Priorität, um dieses Ziel erreichen.  
   
-    2.  Nachdem die IDE ermittelt hat, welcher Editor die Datei öffnen kann, ruft die IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>. Die Anmerkung der Redaktion Implementierung dieser Methode Informationen zurückgegeben, die für die IDE aufgerufen werden muss <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateDocumentWindow%2A> und das neu geöffnete Dokument.  
+    2. Nachdem die IDE ermittelt hat, welcher Editor die Datei öffnen kann, ruft die IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>. Die Anmerkung der Redaktion Implementierung dieser Methode Informationen zurückgegeben, die für die IDE aufgerufen werden muss <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateDocumentWindow%2A> und das neu geöffnete Dokument.  
   
-    3.  Zum Schluss die IDE, lädt das Dokument mithilfe der üblichen beibehaltungsschnittstelle, wie z. B. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>.  
+    3. Zum Schluss die IDE, lädt das Dokument mithilfe der üblichen beibehaltungsschnittstelle, wie z. B. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>.  
   
-    4.  Wenn die IDE zuvor erkannt wurde, dass die Hierarchie oder das hierarchienelement verfügbar ist, ruft die IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.GetItemContext%2A> Methode auf das Projekt für ein Projekt auf Dokumentebene Kontext <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> Zeiger auf das erneute übergeben die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateDocumentWindow%2A> Methodenaufruf.  
+    4. Wenn die IDE zuvor erkannt wurde, dass die Hierarchie oder das hierarchienelement verfügbar ist, ruft die IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.GetItemContext%2A> Methode auf das Projekt für ein Projekt auf Dokumentebene Kontext <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> Zeiger auf das erneute übergeben die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateDocumentWindow%2A> Methodenaufruf.  
   
-4.  Zurückgeben einer <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> Zeiger auf die IDE, wenn die IDE aufruft <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.GetItemContext%2A> auf Ihr Projekt aus, wenn Sie die Editor-Get-Kontext aus Ihrem Projekt informieren möchten.  
+4. Zurückgeben einer <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> Zeiger auf die IDE, wenn die IDE aufruft <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.GetItemContext%2A> auf Ihr Projekt aus, wenn Sie die Editor-Get-Kontext aus Ihrem Projekt informieren möchten.  
   
      Durch diesen Schritt können zusätzliche Dienste die Projekt-Angebot in den Editor.  
   
@@ -62,4 +57,3 @@ Wenn Sie einen standard-Editor öffnen, können Sie die IDE einen standard-Edito
  [Vorgehensweise: Öffnen von projektspezifischen Editoren](../extensibility/how-to-open-project-specific-editors.md)   
  [Vorgehensweise: Öffnen von Editoren für geöffnete Dokumente](../extensibility/how-to-open-editors-for-open-documents.md)   
  [Anzeigen von Dateien mit dem Befehl „Datei öffnen“](../extensibility/internals/displaying-files-by-using-the-open-file-command.md)
-

@@ -1,14 +1,9 @@
 ---
 title: Visual Studio-SDK | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - VSSDK.v90.StartPage
 helpviewer_keywords:
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 1f7c348a-114c-4243-b392-3531e9c9c6fd
 caps.latest.revision: 57
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e64506ca544dd3811864358f9c928f6893dc8448
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0c338648ebb69874781906c0eabff670e5158be8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758970"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62538797"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ Visual Studio SDK können Sie die Visual Studio-Features erweitern oder neue Fea
   
 - Hinzufügen eines benutzerdefinierten Projekttyps  
   
-- Erreichen Sie Millionen von Entwicklern über Visual Studio Gallery  
+- Erreichen Sie Millionen von Entwicklern über den Visual Studio Marketplace  
   
   Wenn Sie Visual Studio-Erweiterung vor nie geschrieben haben, sollte Weitere Informationen finden Sie Informationen zu diesen Features und zur [ab, die für Visual Studio-Erweiterungen entwickeln](../extensibility/starting-to-develop-visual-studio-extensions.md).  
   
@@ -61,7 +56,7 @@ Visual Studio SDK können Sie die Visual Studio-Features erweitern oder neue Fea
  Profitieren Sie von der [Bilddienst und-Katalog](../extensibility/image-service-and-catalog.md) für gute Verwaltung und Unterstützung für hohe DPI-Werte und Designs.  
   
 ## <a name="finding-and-installing-existing-visual-studio-extensions"></a>Suchen und Installieren von vorhandenen Visual Studio-Erweiterungen  
- Sie finden die Visual Studio-Erweiterungen in der **Erweiterungen und Updates** -Dialogfeld auf die **Tools** im Menü. Weitere Informationen finden Sie unter [Suchen und Verwenden von Visual Studio-Erweiterungen](../ide/finding-and-using-visual-studio-extensions.md). Sie erhalten auch Erweiterungen in der [Visual Studio Gallery](https://visualstudiogallery.msdn.microsoft.com/)  
+ Sie finden die Visual Studio-Erweiterungen in der **Erweiterungen und Updates** -Dialogfeld auf die **Tools** im Menü. Weitere Informationen finden Sie unter [Suchen und Verwenden von Visual Studio-Erweiterungen](../ide/finding-and-using-visual-studio-extensions.md). Sie erhalten auch Erweiterungen in der [Visual Studio Marketplace](https://marketplace.visualstudio.com/)  
   
 ## <a name="visual-studio-sdk-reference"></a>Visual Studio SDK-Referenz  
  Sie finden die Visual Studio SDK-API-Referenz unter [Visual Studio SDK-Referenz](../extensibility/visual-studio-sdk-reference.md).  
@@ -74,16 +69,16 @@ Visual Studio SDK können Sie die Visual Studio-Features erweitern oder neue Fea
   
  Können weitere Informationen finden Sie in der [VSX Arcana Blog](http://blogs.msdn.com/b/vsx/) und eine Anzahl von Blogs von Microsoft-MVPs geschrieben:  
   
--   [Bevorzugten Visual Studio-Erweiterungen](http://geekswithblogs.net/sdorman/archive/2014/10/05/favorite-visual-studio-extensions.aspx)  
+- [Bevorzugten Visual Studio-Erweiterungen](http://geekswithblogs.net/sdorman/archive/2014/10/05/favorite-visual-studio-extensions.aspx)  
   
--   [Visual Studio-Erweiterbarkeit](http://www.visualstudioextensibility.com/overview/vs/)  
+- [Visual Studio-Erweiterbarkeit](http://www.visualstudioextensibility.com/overview/vs/)  
   
--   [Erweitern von Visual Studio](http://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)  
+- [Erweitern von Visual Studio](http://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen einer Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md)   
  [Vorgehensweise: Migrieren von Erweiterungsprojekten zu Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)   
- [Häufig gestellte Fragen: Konvertieren von Add-Ins in VSPackage-Erweiterungen](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
+ [HÄUFIG GESTELLTE FRAGEN: Konvertieren von Add-Ins in VSPackage-Erweiterungen](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
  [Verwalten von mehreren Threads in verwaltetem Code](../extensibility/managing-multiple-threads-in-managed-code.md)   
  [Erweitern von Menüs und Befehle](../extensibility/extending-menus-and-commands.md)   
  [Hinzufügen von Befehlen zu Symbolleisten](../extensibility/adding-commands-to-toolbars.md)   
@@ -103,4 +98,3 @@ Visual Studio SDK können Sie die Visual Studio-Features erweitern oder neue Fea
  [Unterstützung für Visual Studio SDK](../extensibility/support-for-the-visual-studio-sdk.md)   
  [Archiv](../extensibility/archive.md)   
  [Visual Studio SDK-Referenz](../extensibility/visual-studio-sdk-reference.md)
-

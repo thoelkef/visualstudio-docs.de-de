@@ -1,25 +1,27 @@
 ---
 title: IDebugPortSupplier3::CanPersistPorts | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugPortSupplier3::CanPersistPorts
 helpviewer_keywords:
 - IDebugPortSupplier3::CanPersistPorts
 ms.assetid: 4127760c-e602-4e86-9232-457e382a52c7
-author: gregvanl
+caps.latest.revision: 10
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 5d9038663bd74b5dabeda92d8b6b9e4e31d092de
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ad31d015048d8e0732c32652141b7be060628663
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939965"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62918014"
 ---
 # <a name="idebugportsupplier3canpersistports"></a>IDebugPortSupplier3::CanPersistPorts
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Diese Methode bestimmt, ob die anschlusslieferant Ports gespeichert werden kann (indem sie auf den Datenträger geschrieben werden müssen) zwischen den Aufrufen des Debuggers.  
   
 ## <a name="syntax"></a>Syntax  

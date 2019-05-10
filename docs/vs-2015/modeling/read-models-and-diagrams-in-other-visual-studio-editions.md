@@ -1,25 +1,22 @@
 ---
 title: Lesen von Modellen und Diagrammen in anderen Visual Studio-Versionen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - models, versions of Visual Studio
 ms.assetid: 46eee279-a9e4-4742-a024-5bd2cf032b86
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6d104d8d92345ba56d390fdd7ad9b856432b4c92
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 21dc0cb7f02639ca6faa89ae4c067f21e083d6d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757366"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387499"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Lesen von Modellen und Diagrammen in anderen Versionen von Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,20 +31,20 @@ Wenn Sie ein Model in einer Version von Visual Studio öffnen, die keine Modell
  Wenn Sie ein UML-Diagramm oder ein Ebenendiagramm lesen möchten, benötigen Sie daher auch Zugriff auf das Modellierungsprojekt, in dem es erstellt wurde. Dafür können Sie entweder aus [!INCLUDE[esprscc](../includes/esprscc-md.md)] auf das Projekt zugreifen oder eine Kopie der Projektdateien abrufen.  
   
 > [!NOTE]
->  Dies gilt nicht für Codezuordnungen und .NET-Klassendiagramme, die aus Code generiert wurden. Diese Diagramme können unabhängig von einem Modellierungsprojekt angezeigt werden.  
+> Dies gilt nicht für Codezuordnungen und .NET-Klassendiagramme, die aus Code generiert wurden. Diese Diagramme können unabhängig von einem Modellierungsprojekt angezeigt werden.  
   
  Um ein UML-Diagramm oder ein Ebenendiagramm zu lesen, benötigen Sie mindestens die folgenden Dateien:  
   
--   Die beiden Diagrammdateien für das Diagramm, das Sie lesen z. B., möchten **MyDiagram.classdiagram und MyDiagram.classdiagram.layout**.  
+- Die beiden Diagrammdateien für das Diagramm, das Sie lesen z. B., möchten **MyDiagram.classdiagram und MyDiagram.classdiagram.layout**.  
   
     > [!NOTE]
-    >  Für Ebenendiagramme sollten Sie auch die Datei mit dem Namen haben _MyDiagram_**. layerdiagram.suppressions**.  
+    > Für Ebenendiagramme sollten Sie auch die Datei mit dem Namen haben _MyDiagram_**. layerdiagram.suppressions**.  
   
--   Die Modellierungsprojektdatei (**MyModel.modelproj**)  
+- Die Modellierungsprojektdatei (**MyModel.modelproj**)  
   
--   Die Stammmodelldatei (**ModelDefinition\MyModel. UML**)  
+- Die Stammmodelldatei (**ModelDefinition\MyModel. UML**)  
   
--   Die Paketdateien für ein beliebiges Paket im Diagramm auf die verwiesen wird. (**ModelDefinition\MyPackage. UML**)  
+- Die Paketdateien für ein beliebiges Paket im Diagramm auf die verwiesen wird. (**ModelDefinition\MyPackage. UML**)  
   
 ## <a name="changes-that-you-can-make-in-read-only-mode"></a>Änderungen, die Sie im schreibgeschützten Modus vornehmen können  
  Wenn Sie ein Modell und seine Diagramme in einer Version von Visual Studio öffnen, die keine Modellerstellung unterstützt, können Sie das Modell nicht ändern. Das heißt, dass Sie nicht die Elemente und Beziehungen ändern können, die in den Diagrammen oder im Modell-Explorer angezeigt werden. Sie können jedoch einige Änderungen am Layout der Diagramme vornehmen:  
@@ -58,7 +55,7 @@ Wenn Sie ein Model in einer Version von Visual Studio öffnen, die keine Modell
   
   Sie können diese Änderungen speichern. Wenn Sie Ihre Änderungen für andere Benutzer sichtbar machen möchten, müssen Sie mindestens Senden der aktualisierten **.layout** Dateien.  
   
-##  <a name="RelatedTopics"></a> Verwandte Themen  
+## <a name="RelatedTopics"></a> Verwandte Themen  
   
 |Titel|Beschreibung|  
 |-----------|-----------------|  
@@ -71,6 +68,3 @@ Wenn Sie ein Model in einer Version von Visual Studio öffnen, die keine Modell
   
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen von Modellen für Ihre App](../modeling/create-models-for-your-app.md)
-
-
-

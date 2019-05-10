@@ -7,39 +7,35 @@ helpviewer_keywords:
 ms.assetid: 064231e7-59b5-4437-8240-a23c0a7ec2a9
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f4ee7ab58f95ede913536102573a8c6061f860a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cd282dd38d322a5b7d9821406d30a303fabb02bb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62864349"
 ---
 # <a name="send-events"></a>Senden von Ereignissen
-Der Mechanismus für die Kommunikation zwischen dem Debugger und die Debug-Engine (DE) ist eine auf DCOM basierende Ereignismodell. Ereignisse werden als COM-Objekte gesendet, und jedes Ereignis verfügt über Parameter, die angeben:  
-  
-- Die DE, die das Ereignis aufgerufen.  
-  
-- Eine Beschreibung des was passiert ist.  
-  
-- Der Prozess, Anwendung und Threadinformationen, identifiziert der Kontext, in dem das Ereignis aufgetreten ist. Der Prozess wird nicht für Ereignisse, die von einer bereitgestellten Kompatibilitätsrichtlinie gesendeten gesendet.  
-  
-- Der Ereignistyp, der angibt, ob das Ereignis synchron oder asynchron ist.  
-  
-  Alle Debug-Ereignisse gesendet werden, mithilfe der Methode [IDebugEventCallback2::Event](../../extensibility/debugger/reference/idebugeventcallback2-event.md).  
-  
-## <a name="in-this-section"></a>In diesem Abschnitt  
- [Ereignisquellen](../../extensibility/debugger/event-sources-visual-studio-sdk.md)  
- Erläutert, die zwei Quellen von Ereignissen: die Debug-Engine (DE) und die Sitzung debug-Manager (SDM).  
-  
- [Unterstützte Ereignistypen](../../extensibility/debugger/supported-event-types.md)  
- Erläutert, die derzeit unterstützten Ereignistypen: asynchrone und synchrone.  
-  
- [Ereignisbeschreibungen](../../extensibility/debugger/event-descriptions.md)  
- Definiert Ereignisse und die Gründe für deren Verwendung.  
-  
-## <a name="related-sections"></a>Verwandte Abschnitte  
- [Erstellen einer benutzerdefinierten Debug-engine](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
- Beschreibt die Funktionsweise von einer bereitgestellten Kompatibilitätsrichtlinie mit den Interpreter Betriebssystem oder Debugdienste bereit.
+Der Mechanismus für die Kommunikation zwischen dem Debugger und die Debug-Engine (DE) ist eine auf DCOM basierende Ereignismodell. Ereignisse werden als COM-Objekte gesendet, und jedes Ereignis verfügt über Parameter, die angeben:
+
+- Die DE, die das Ereignis aufgerufen.
+
+- Eine Beschreibung des was passiert ist.
+
+- Der Prozess, Anwendung und Threadinformationen, identifiziert der Kontext, in dem das Ereignis aufgetreten ist. Der Prozess wird nicht für Ereignisse, die von einer bereitgestellten Kompatibilitätsrichtlinie gesendeten gesendet.
+
+- Der Ereignistyp, der angibt, ob das Ereignis synchron oder asynchron ist.
+
+  Alle Debug-Ereignisse gesendet werden, mithilfe der Methode [IDebugEventCallback2::Event](../../extensibility/debugger/reference/idebugeventcallback2-event.md).
+
+## <a name="in-this-section"></a>In diesem Abschnitt
+ [Ereignisquellen](../../extensibility/debugger/event-sources-visual-studio-sdk.md) wird erläutert, die zwei Quellen von Ereignissen: die Debug-Engine (DE) und die Sitzung debug-Manager (SDM).
+
+ [Unterstützte Ereignistypen](../../extensibility/debugger/supported-event-types.md) wird erläutert, die derzeit unterstützten Ereignistypen: asynchrone und synchrone.
+
+ [Ereignisbeschreibungen](../../extensibility/debugger/event-descriptions.md) definiert, Ereignisse und die Gründe für deren Verwendung.
+
+## <a name="related-sections"></a>Verwandte Abschnitte
+ [Erstellen einer benutzerdefinierten Debug-Engine](../../extensibility/debugger/creating-a-custom-debug-engine.md) beschreibt die Funktionsweise einer bereitgestellten Kompatibilitätsrichtlinie mit den Interpreter Betriebssystem oder Debugdienste bereit.

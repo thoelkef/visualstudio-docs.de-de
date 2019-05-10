@@ -1,7 +1,7 @@
 ---
 title: IDebugPortNotify2::AddProgramNode | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugPortNotify2::AddProgramNode
 helpviewer_keywords:
@@ -9,44 +9,45 @@ helpviewer_keywords:
 ms.assetid: 34c0e949-1eb9-4108-9cb8-a3eb87fcf190
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 134d24778b74bbb06f68eff0f4037ec883f8a8c0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: 38ca78b16947d706d9297fa3045f0f5067f8ef86
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908766"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62918251"
 ---
 # <a name="idebugportnotify2addprogramnode"></a>IDebugPortNotify2::AddProgramNode
-Registriert ein Programm, das Debuggen kann mit dem Port, den es ausgeführt wird.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-HRESULT AddProgramNode(   
-   IDebugProgramNode2* pProgramNode  
-);  
-```  
-  
-```csharp  
-int AddProgramNode(   
-   IDebugProgramNode2 pProgramNode  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pProgramNode`  
- [in] Ein [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) -Objekt, das Programm zu registrierende darstellt.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
-  
-## <a name="remarks"></a>Hinweise  
- Ein Programm-Knoten kann aufgehoben werden dem Port durch Aufrufen der [RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) Methode.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)   
- [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)   
- [RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)
+Registriert ein Programm, das Debuggen kann mit dem Port, den es ausgeführt wird.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+HRESULT AddProgramNode( 
+   IDebugProgramNode2* pProgramNode
+);
+```
+
+```csharp
+int AddProgramNode( 
+   IDebugProgramNode2 pProgramNode
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pProgramNode`
+
+ [in] Ein [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) -Objekt, das Programm zu registrierende darstellt.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+
+## <a name="remarks"></a>Hinweise
+ Ein Programm-Knoten kann aufgehoben werden dem Port durch Aufrufen der [RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) Methode.
+
+## <a name="see-also"></a>Siehe auch
+- [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)
+- [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
+- [RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)

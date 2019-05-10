@@ -1,12 +1,9 @@
 ---
 title: 'Exemplarische Vorgehensweise: Generieren von Code mithilfe von Textvorlagen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], generating application code
 - walkthroughs [text templates]
@@ -14,13 +11,13 @@ ms.assetid: 24602ade-baca-425e-a6ce-be09a2c7f7e1
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: bd360e07ca555bb7cb2c482970ab9a202f7bb630
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 37abc4862b12ab11239b2dd8a24b8c18acab2a51
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446704"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Exemplarische Vorgehensweise: Generieren von Code mithilfe von Textvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +30,7 @@ Durch Codegenerierung können Sie Programmcode erstellen, der stark typisiert is
  In diesem Beispielprojekt liest eine Vorlage eine Beispiel-XML-Datei und generiert Klassen, die jedem Knotentyp entsprechen. Bei handgeschriebenem Code können Sie diese Klassen verwenden, um in der XML-Datei zu navigieren. Sie können Ihre Anwendung auch mit anderen Dateien ausführen, die die gleichen Knotentypen verwenden. Die XML-Beispieldatei dient dazu, Beispiele für alle Knotentypen bereitzustellen, für die Ihre Anwendung gedacht ist.  
   
 > [!NOTE]
->  Die Anwendung [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), die in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]enthalten ist, kann stark typisierte Klassen aus XML-Dateien generieren. Die hier gezeigte Vorlage wird als Beispiel bereitgestellt.  
+> Die Anwendung [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), die in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]enthalten ist, kann stark typisierte Klassen aus XML-Dateien generieren. Die hier gezeigte Vorlage wird als Beispiel bereitgestellt.  
   
  Hier ist die Beispieldatei:  
   
@@ -89,9 +86,9 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
   
 ##### <a name="to-create-the-project"></a>So erstellen Sie das Projekt  
   
-1.  Klicken Sie im Menü **Datei** auf **Neu** und dann auf **Projekt**.  
+1. Klicken Sie im Menü **Datei** auf **Neu** und dann auf **Projekt**.  
   
-2.  Klicken Sie auf den **Visual C#** -Knoten und anschließend im Bereich **Vorlagen** auf **Konsolenanwendung**.  
+2. Klicken Sie auf den **Visual C#** -Knoten und anschließend im Bereich **Vorlagen** auf **Konsolenanwendung**.  
   
 ### <a name="add-a-prototype-xml-file-to-the-project"></a>Fügen Sie eine XML-Prototypdatei zum Projekt hinzu  
  Diese Datei dient dazu, Beispiele der XML-Knotentypen bereitzustellen, die Ihre Anwendung lesen können soll. Es kann eine Datei sein, die zum Testen der Anwendung verwendet wird. Die Vorlage erzeugt eine C#-Klasse für jeden Knotentyp in dieser Datei.  
@@ -145,7 +142,7 @@ namespace MyProject
 2. Wählen Sie im Dialogfeld **Neues Element hinzufügen** **Textvorlage** aus den **Vorlagen** aus.  
   
    > [!NOTE]
-   >  Stellen Sie sicher, dass Sie eine Textvorlage und keine vorverarbeitete Textvorlage hinzufügen.  
+   > Stellen Sie sicher, dass Sie eine Textvorlage und keine vorverarbeitete Textvorlage hinzufügen.  
   
 3. Ändern Sie in der Datei, in der Vorlagendirektive das `hostspecific` -Attribut in `true`.  
   
@@ -426,6 +423,3 @@ namespace MyProject
 ## <a name="see-also"></a>Siehe auch  
  [Generieren von Code zur Entwurfszeit mithilfe von T4-Textvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md)   
  [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md)
-
-
-

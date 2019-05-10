@@ -1,29 +1,31 @@
 ---
 title: IDebugFunctionObject2::CreateStringObjectWithLength | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - CreateStringObjectWithLength
 - IDebugFunctionObject2::CreateStringObjectWithLength
 ms.assetid: 1f43ec66-1615-4a4c-8b9d-e933f549f96d
-author: gregvanl
+caps.latest.revision: 10
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: b43bf35b916616524c45847e378e1f63752cda1e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 02ee13b62a2238624f1c6d42c52bf67db2ceaae4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843881"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62873793"
 ---
 # <a name="idebugfunctionobject2createstringobjectwithlength"></a>IDebugFunctionObject2::CreateStringObjectWithLength
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Erstellt ein String-Objekt, das die angegebene Länge aufweist.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT CreateStringObjectWithLength (  
    LPCOLESTR      pcstrString,  
    UINT           uiLength,  

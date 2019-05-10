@@ -1,7 +1,6 @@
 ---
 title: Suchen der Aufrufe einer Methode
 ms.date: 05/18/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.CallHierarchy
@@ -9,15 +8,15 @@ helpviewer_keywords:
 - Call Hierarchy
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1ca479a335cc46e199a107ec38d937dc5774d2f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ad95d1c48992b8ecac6715db41aa9d85791999bb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915694"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62791370"
 ---
 # <a name="view-call-hierarchy"></a>Anzeigen der Aufrufhierarchie
 

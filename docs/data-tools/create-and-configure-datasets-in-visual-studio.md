@@ -1,8 +1,6 @@
 ---
 title: Erstellen und Konfigurieren von Datasets
 ms.date: 11/21/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.topic: conceptual
 helpviewer_keywords:
 - typed datasets, creating
@@ -10,17 +8,17 @@ helpviewer_keywords:
 - datasets, configuring
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 23837bcfb1d3761f8ebf23020c15e901833d63b3
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
-ms.translationtype: MTE95
+ms.openlocfilehash: 41a7a699506853d6891c7d7b66fef4082814c06a
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305221"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460617"
 ---
-# <a name="create-and-configure-datasets-in-visual-studio"></a>Erstellen und Konfigurieren von Datasets in Visual Studio
+# <a name="how-to-create-and-configure-datasets-in-visual-studio"></a>Vorgehensweise: Erstellen und Konfigurieren von Datasets in Visual Studio
 
 Ein Dataset ist ein Satz von Objekten, die Speichern von Daten aus einer Datenbank im Arbeitsspeicher und unterstützen das Nachverfolgen von Änderungen zu erstellen, lesen, aktualisieren und löschen (CRUD) für diese Daten ohne die Notwendigkeit, immer mit der Datenbank verbunden werden. DataSets wurden entwickelt, für einfache *Formulare über Daten* Geschäftsanwendungen. Für neue Anwendungen sollten Sie in Betracht ziehen, Entity Framework zum Speichern und Modellieren von Daten im Arbeitsspeicher zu verwenden. Um mit Datasets arbeiten, sollten Sie über Grundkenntnisse der Konzepte der Datenbank verfügen.
 
@@ -40,7 +38,7 @@ Sie können einen typisierten erstellen <xref:System.Data.DataSet> Klasse in Vis
 
 4. Wählen Sie die Tabellen (oder einzelne Spalten), gespeicherte Prozeduren, Funktionen und Sichten aus der Datenbank, die im Dataset dargestellt werden sollen.
 
-     ![Wählen Sie Datenbankobjekte aus](../data-tools/media/raddata-chose-objects.png)
+     ![Datenbankobjekte auswählen](../data-tools/media/raddata-chose-objects.png)
 
 5. Klicken Sie auf **Fertig stellen**.
 
@@ -72,7 +70,7 @@ Diese Prozedur zeigt, wie Sie eine Tabelle aus der gleichen Datenbank hinzufüge
 
 1. Klicken Sie auf der datasetknoten in **Projektmappen-Explorer** , schalten Sie die **DataSet-Designer** in den Fokus.
 
-2. Klicken Sie auf die **Datenquellen** Registerkarte am linken Rand von Visual Studio oder Typ **Datenquellen** in die **Schnellstart** Feld.
+2. Klicken Sie auf die **Datenquellen** Registerkarte am linken Rand von Visual Studio oder Typ **Datenquellen** in das Suchfeld.
 
 3. Mit der rechten Maustaste des datasetknoten, und wählen Sie **Datenquelle mit Assistenten konfigurieren**.
 
@@ -82,7 +80,7 @@ Diese Prozedur zeigt, wie Sie eine Tabelle aus der gleichen Datenbank hinzufüge
 
 ## <a name="add-a-stand-alone-data-table-to-a-dataset"></a>Hinzufügen einer eigenständigen Datentabelle zu einem dataset
 
-1. Öffnen Sie das Dataset im DataSet-Designer **.
+1. Öffnen Sie das Dataset im **DataSet-Designer**.
 
 2. Ziehen Sie eine <xref:System.Data.DataTable> -Klasse aus der **DataSet** Registerkarte die **Toolbox** auf die **Dataset-Designer**.
 

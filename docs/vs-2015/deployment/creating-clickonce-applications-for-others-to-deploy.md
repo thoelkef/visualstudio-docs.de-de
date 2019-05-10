@@ -1,14 +1,9 @@
 ---
 title: Erstellen von ClickOnce-Anwendungen für andere bereitstellen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -29,13 +24,13 @@ ms.assetid: d20766c7-4ef3-45ab-8aa0-3f15b61eccaa
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: f2b7bb6c990567a483ab28d215019fe1b259d166
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 049d557959a53c00be461a2b0e44338216c7e3a3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862085"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958513"
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Erstellen von ClickOnce-Anwendungen für die Bereitstellung durch Dritte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +59,7 @@ Beim Versuch, die Anwendungen selbst bereitstellen, ist nicht für alle Entwickl
   
  Verwenden ein selbstsigniertes Zertifikat für das Bereitstellungsmanifest bietet mehrere Vorteile. Durch den Wegfall des Kunden zum Abrufen oder erstellen ihre eigenen Authenticode-Zertifikat, `<useManifestForTrust>` vereinfacht die Bereitstellung für den Kunden, während den Entwickler, ihre eigenen branding Identität für die Anwendung zu erhalten. Das Ergebnis ist eine Reihe von signierten Bereitstellungen, die sicherer und verfügen über eindeutige Identitäten. Dadurch werden Konflikte, die von der Bereitstellung von der gleichen Anwendung für mehrere Kunden auftreten kann.  
   
- Ausführliche Informationen zur Vorgehensweise: erstellen eine ClickOnce-Bereitstellung mit `<useManifestForTrust>` aktiviert ist, finden Sie [Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung, ist nicht erforderlich Re-Signing und behält Branding-Informationen](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md).  
+ Ausführliche Informationen zur Vorgehensweise: erstellen eine ClickOnce-Bereitstellung mit `<useManifestForTrust>` aktiviert ist, finden Sie [Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung, die kein erneutes Signieren erfordert und Brandinginformationen beibehält](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required?view=vs-2015).  
   
 ### <a name="how-application-manifest-for-trust-works-at-runtime"></a>Wie das Anwendungsmanifest für die Vertrauensstellung funktioniert zur Laufzeit  
  Um ein besseres Verständnis der Funktionsweise der mit dem Anwendungsmanifest für die Vertrauensstellung zur Laufzeit zu erhalten, erwägen Sie das folgende Beispiel aus. Eine ClickOnce-Anwendung, die .NET Framework 3.5 ausgerichtet ist, wird von Microsoft erstellt. Das Anwendungsmanifest verwendet die `<useManifestForTrust>` Element und wird von Microsoft signiert. Adventure Works signiert das Bereitstellungsmanifest mithilfe eines selbstsignierten Zertifikats. Adventure Works-Clients so konfiguriert werden, dass um jede Anwendung, die von Microsoft signiert zu vertrauen.  
@@ -108,7 +103,4 @@ Beim Versuch, die Anwendungen selbst bereitstellen, ist nicht für alle Entwickl
 ## <a name="see-also"></a>Siehe auch  
  [Bereitstellen von ClickOnce-Anwendungen für Tests und Produktionsserver ohne erneutes Signieren](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)   
  [Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
- [Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung, die kein erneutes Signieren erfordert und Brandinginformationen beibehält](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md)
-
-
-
+ [Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung, die kein erneutes Signieren erfordert und Brandinginformationen beibehält](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required?view=vs-2015)

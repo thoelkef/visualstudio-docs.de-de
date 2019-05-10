@@ -1,8 +1,7 @@
 ---
-title: IVariantChangeType-Schnittstelle | Microsoft Docs
+title: IVariantChangeType-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,18 +17,18 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95b1b761195a3b004ddaf13d17eafd2c8fe9982b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7273b92c591d71834859500da78abe23fe19f194
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733830"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945649"
 ---
 # <a name="ivariantchangetype-interface"></a>IVariantChangeType-Schnittstelle
-Ermöglicht dem Aufrufer einen VARIANT-Wert von einem Typ in einen anderen zu konvertieren.  
+Ermöglicht dem Aufrufer einen VARIANT-Wert von einem Typ in einen anderen konvertiert.  
   
 ## <a name="methods"></a>Methoden  
- Zusätzlich zu den von geerbten Methoden `IUnknown`, `IVariantChangeType` Schnittstelle macht die folgenden Methoden verfügbar.  
+ Zusätzlich zu den von geerbten Methoden `IUnknown`, `IVariantChangeType` Schnittstelle verfügbar macht, die folgenden Methoden.  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  

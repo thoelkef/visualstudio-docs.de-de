@@ -1,8 +1,6 @@
 ---
 title: Anpassen Ihres Builds | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 06/14/2017
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, transforms
@@ -10,17 +8,17 @@ helpviewer_keywords:
 ms.assetid: d0bceb3b-14fb-455c-805a-63acefa4b3ed
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85ae5d93d5bb05aa8511b17a5b2d5b775dcc0aae
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: 2bb6b2d6e7ae3504415f59aeef1fddb8d9f98865
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684664"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778100"
 ---
-# <a name="customize-your-build-c-visual-basic"></a>Anpassen Ihres Builds (C#, Visual Basic)
+# <a name="customize-your-build"></a>Anpassen Ihres Builds
 
 MSBuild-Projekte, die den Standardbuildprozess verwenden und *Microsoft.Common.props* und *Microsoft.Common.targets* importieren, beinhalten einige Erweiterungsmöglichkeiten, die zum Anpassen Ihres Buildprozesses verwendet werden können.
 
@@ -53,6 +51,7 @@ Wenn Sie beispielsweise für alle Ihre Projekte den Zugriff auf die neue Roslyn-
     </PropertyGroup>
    </Project>
    ```
+
 3. Führen Sie MSBuild aus. Die vorhandenen Importe des Projekts von *Microsoft.Common.props* und *Microsoft.Common.targets* finden die Datei und importieren sie.
 
 ### <a name="search-scope"></a>Suchbereich
@@ -162,6 +161,6 @@ Sie können beispielsweise ein neues Ziel definieren, um eine benutzerdefinierte
 
 ## <a name="see-also"></a>Siehe auch
 
-[MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)
+- [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)
 
-[MSBuild-Referenz](../msbuild/msbuild-reference.md)
+- [MSBuild-Referenz](../msbuild/msbuild-reference.md)

@@ -1,53 +1,47 @@
 ---
 title: Elementdefinitionen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, item definitions
 ms.assetid: 8e3dc223-f9e5-4974-aa0e-5dc7967419cb
 caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 35506967ee20ff6c936e2de4a19d7860e154e4c5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7097311c3d1aae718096c3bf74ec04c3e5ea8818
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866570"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433586"
 ---
 # <a name="item-definitions"></a>Elementdefinitionen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2.0 aktiviert die statische Deklaration von Elementen in Projektdateien mit dem [ItemGroup](../msbuild/itemgroup-element-msbuild.md)-Element. Metadaten können jedoch nur auf Elementebene hinzugefügt werden, auch wenn die Metadaten für alle Elemente gleich sind. In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5 wurde das Projektelement [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) eingeführt, das diese Einschränkung aufhebt. Mit *ItemDefinitionGroup* können Sie einen Satz von Elementdefinitionen festlegen, um allen Elementen im benannten Elementtyp Standardwerte für Metadaten hinzuzufügen.  
   
  Das *ItemDefinitionGroup*-Element wird unmittelbar nach dem [Project](../msbuild/project-element-msbuild.md)-Element der Projektdatei angezeigt. Elementdefinitionen bieten die folgenden Funktionen:  
   
--   Sie können globale Standardmetadaten für Elemente außerhalb eines Ziels definieren. Das heißt, für alle Elemente des angegebenen Typs gelten die gleichen Metadaten.  
+- Sie können globale Standardmetadaten für Elemente außerhalb eines Ziels definieren. Das heißt, für alle Elemente des angegebenen Typs gelten die gleichen Metadaten.  
   
--   Elementtypen können mehrere Definitionen aufweisen. Wenn dem Typ weitere Metadatenspezifikationen hinzugefügt werden, hat die letzte Spezifikation Vorrang. \(Die Metadaten folgen der gleichen Importreihenfolge wie Eigenschaften.\)  
+- Elementtypen können mehrere Definitionen aufweisen. Wenn dem Typ weitere Metadatenspezifikationen hinzugefügt werden, hat die letzte Spezifikation Vorrang. \(Die Metadaten folgen der gleichen Importreihenfolge wie Eigenschaften.\)  
   
--   Metadaten können additiv sein. Zum Beispiel werden CDefines-Werte bedingt akkumuliert, abhängig von den festgelegten Eigenschaften. Beispielsweise `MT;STD_CALL;DEBUG;UNICODE`.  
+- Metadaten können additiv sein. Zum Beispiel werden CDefines-Werte bedingt akkumuliert, abhängig von den festgelegten Eigenschaften. Beispielsweise `MT;STD_CALL;DEBUG;UNICODE`.  
   
--   Metadaten können entfernt werden.  
+- Metadaten können entfernt werden.  
   
--   Bedingungen können verwendet werden, um das Einschließen der Metadaten zu steuern.  
+- Bedingungen können verwendet werden, um das Einschließen der Metadaten zu steuern.  
   
 ## <a name="item-metadata-default-values"></a>Standardwerte von Elementmetadaten  
  Elementmetadaten, die in ItemDefinitionGroup definiert werden, sind nur eine Deklaration der Standardmetadaten. Die Metadaten finden nur dann Anwendung, wenn Sie ein Element definieren, das zum Einschließen der Metadatenwerte ItemGroup verwendet.  
   
 > [!NOTE]
->  In mehreren Beispielen in diesem Thema wird ein ItemDefinitionGroup-Element angezeigt, wobei die entsprechende ItemGroup-Definition aus Gründen der Übersichtlichkeit weggelassen wird.  
+> In mehreren Beispielen in diesem Thema wird ein ItemDefinitionGroup-Element angezeigt, wobei die entsprechende ItemGroup-Definition aus Gründen der Übersichtlichkeit weggelassen wird.  
   
- Explizit in einem ItemGroup-Element definierte Metadaten haben Vorrang vor Metadaten in einem ItemDefinitionGroup-Element. Metadaten in einem ItemDefinitionGroup-Element werden nur auf nicht definierte Metadaten in einem ItemGroup-Element angewendet. Zum Beispiel:  
+ Explizit in einem ItemGroup-Element definierte Metadaten haben Vorrang vor Metadaten in einem ItemDefinitionGroup-Element. Metadaten in einem ItemDefinitionGroup-Element werden nur auf nicht definierte Metadaten in einem ItemGroup-Element angewendet. Beispiel:  
   
 ```  
 <ItemDefinitionGroup>  
@@ -67,29 +61,29 @@ ms.locfileid: "49866570"
  In diesem Beispiel wird das Standardmetadatum "m" auf das Element "i" angewendet, da das Metadatum "m" nicht explizit durch das Element "i" definiert wird. Das Standardmetadatum "n" wird jedoch nicht auf das Element "i" angewendet, da das Metadatum "n" bereits durch Element "i" definiert ist.  
   
 > [!NOTE]
->  Bei XML-Elementen und XML-Parameternamen muss die Groß\-/Kleinschreibung beachtet werden. Bei Elementmetadaten und Element\//Eigenschaftennamen muss die Groß\-/Kleinschreibung nicht beachtet werden. Daher sollten ItemDefinitionGroup-Elemente, deren Namen sich nur durch die Groß-/Kleinschreibung unterscheiden, als gleiches ItemGroup behandelt werden.  
+> Bei XML-Elementen und XML-Parameternamen muss die Groß\-/Kleinschreibung beachtet werden. Bei Elementmetadaten und Element\//Eigenschaftennamen muss die Groß\-/Kleinschreibung nicht beachtet werden. Daher sollten ItemDefinitionGroup-Elemente, deren Namen sich nur durch die Groß-/Kleinschreibung unterscheiden, als gleiches ItemGroup behandelt werden.  
   
 ## <a name="value-sources"></a>Wertquellen  
  Die Werte der in ItemDefinitionGroup definierten Metadaten können aus verschiedenen Quellen stammen:  
   
--   PropertyGroup-Eigenschaft  
+- PropertyGroup-Eigenschaft  
   
--   Element aus ItemDefinitionGroup  
+- Element aus ItemDefinitionGroup  
   
--   Elementtransformation für ein ItemDefinitionGroup-Element  
+- Elementtransformation für ein ItemDefinitionGroup-Element  
   
--   Umgebungsvariable  
+- Umgebungsvariable  
   
--   Globale Eigenschaft \(von der MSBuild.exe-Befehlszeile\)  
+- Globale Eigenschaft \(von der MSBuild.exe-Befehlszeile\)  
   
--   Reservierte Eigenschaft  
+- Reservierte Eigenschaft  
   
--   Bekannte Metadaten über ein Element aus ItemDefinitionGroup  
+- Bekannte Metadaten über ein Element aus ItemDefinitionGroup  
   
--   CDATA-Abschnitt \<\!\[CDATA\[Dies hier wird nicht analysiert.\]\]\>  
+- CDATA-Abschnitt \<\!\[CDATA\[Dies hier wird nicht analysiert.\]\]\>  
   
 > [!NOTE]
->  Elementmetadaten aus ItemGroup sind in einer ItemDefinitionGroup-Metadatendeklaration nicht nützlich, da ItemDefinitionGroup-Elemente vor ItemGroup-Elementen verarbeitet werden.  
+> Elementmetadaten aus ItemGroup sind in einer ItemDefinitionGroup-Metadatendeklaration nicht nützlich, da ItemDefinitionGroup-Elemente vor ItemGroup-Elementen verarbeitet werden.  
   
 ## <a name="additive-and-multiple-definitions"></a>Additive und mehrfache Definitionen  
  Wenn Sie Definitionen hinzufügen oder mehrere ItemDefinitionGroups verwenden, beachten Sie Folgendes:  
@@ -98,7 +92,7 @@ ms.locfileid: "49866570"
   
 - Die letzte Spezifikation hat Vorrang.  
   
-  Wenn Sie über mehrere ItemDefinitionGroups verfügen, werden die Metadaten jeder folgenden Spezifikation der vorhergehenden Definition hinzugefügt. Zum Beispiel:  
+  Wenn Sie über mehrere ItemDefinitionGroups verfügen, werden die Metadaten jeder folgenden Spezifikation der vorhergehenden Definition hinzugefügt. Beispiel:  
   
 ```  
 <ItemDefinitionGroup>  
@@ -116,7 +110,7 @@ ms.locfileid: "49866570"
   
  In diesem Beispiel werden die Metadaten"o" zu "m" und "n" hinzugefügt.  
   
- Darüber hinaus können auch bereits definierte Metadatenwerte hinzugefügt werden. Zum Beispiel:  
+ Darüber hinaus können auch bereits definierte Metadatenwerte hinzugefügt werden. Beispiel:  
   
 ```  
 <ItemDefinitionGroup>  
@@ -134,7 +128,7 @@ ms.locfileid: "49866570"
  In diesem Beispiel wird der bereits definierte Wert für die Metadaten „m“ \(m1\) dem neuen Wert \(m2\) hinzugefügt, sodass der Endwert „m1;m2“ lautet.  
   
 > [!NOTE]
->  Dies kann auch im gleichen ItemDefinitionGroup auftreten.  
+> Dies kann auch im gleichen ItemDefinitionGroup auftreten.  
   
  Wenn Sie die bereits definierten Metadaten überschreiben, hat die letzte Spezifikation Vorrang. Im folgenden Beispiel ändert sich der endgültige Wert der Metadaten "m" von "m1" in "m1a".  
   
@@ -152,7 +146,7 @@ ms.locfileid: "49866570"
 ```  
   
 ## <a name="using-conditions-in-an-itemdefinitiongroup"></a>Verwenden von Bedingungen in ItemDefinitionGroup  
- Sie können Bedingungen in ItemDefinitionGroup verwenden, um das Einschließen von Metadaten zu steuern. Zum Beispiel:  
+ Sie können Bedingungen in ItemDefinitionGroup verwenden, um das Einschließen von Metadaten zu steuern. Beispiel:  
   
 ```  
 <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">  
@@ -165,9 +159,9 @@ ms.locfileid: "49866570"
  In diesem Fall werden die Standardmetadaten "m1" für Element "i" nur dann eingeschlossen, wenn der Wert der "Configuration"-Eigenschaft "Debug" lautet.  
   
 > [!NOTE]
->  In Bedingungen werden nur lokale Metadatenverweise unterstützt.  
+> In Bedingungen werden nur lokale Metadatenverweise unterstützt.  
   
- Verweise auf Metadaten, die in einem früheren ItemDefinitionGroup definiert sind, sind für das Element lokal, nicht für die Definitionsgruppe. Das heißt, der Umfang der Verweise ist elementspezifisch. Zum Beispiel:  
+ Verweise auf Metadaten, die in einem früheren ItemDefinitionGroup definiert sind, sind für das Element lokal, nicht für die Definitionsgruppe. Das heißt, der Umfang der Verweise ist elementspezifisch. Beispiel:  
   
 ```  
 <ItemDefinitionGroup>  
@@ -183,7 +177,7 @@ ms.locfileid: "49866570"
  In diesem Beispiel verweist Element "i" auf das Element "test" in der Bedingung.  
   
 ## <a name="overriding-and-deleting-metadata"></a>Überschreiben und Löschen von Metadaten  
- In einem ItemDefinitionGroup-Element definierte Metadaten können in einem späteren ItemDefinitionGroup-Element überschrieben werden, indem der Metadatenwert leer gelassen wird. Sie können ein Metadatenelement auch löschen, indem Sie es auf einen leeren Wert festlegen. Zum Beispiel:  
+ In einem ItemDefinitionGroup-Element definierte Metadaten können in einem späteren ItemDefinitionGroup-Element überschrieben werden, indem der Metadatenwert leer gelassen wird. Sie können ein Metadatenelement auch löschen, indem Sie es auf einen leeren Wert festlegen. Beispiel:  
   
 ```  
 <ItemDefinitionGroup>  
@@ -234,7 +228,7 @@ ms.locfileid: "49866570"
 </ItemDefinitionGroup>  
 ```  
   
- Ab [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5 können ItemGroups auch auf sich selbst verweisen. Zum Beispiel:  
+ Ab [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5 können ItemGroups auch auf sich selbst verweisen. Beispiel:  
   
 ```  
 <ItemGroup>  
@@ -247,6 +241,3 @@ ms.locfileid: "49866570"
   
 ## <a name="see-also"></a>Siehe auch  
  [Batchverarbeitung](../msbuild/msbuild-batching.md)
-
-
-

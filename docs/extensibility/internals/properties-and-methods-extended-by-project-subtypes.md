@@ -1,24 +1,26 @@
 ---
 title: Eigenschaften und Methoden von Projektuntertypen erweitert | Microsoft-Dokumentation
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project subtypes, extended methods
 - project subtypes, extended properties
 ms.assetid: 2b9833bf-8551-4ae1-93db-197ba645c65e
-author: gregvanl
+caps.latest.revision: 18
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: e325e7cb352592903d869c158e72b766a657ff08
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 9b944d493e8c7668d331a2db12302cea709df239
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873404"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909055"
 ---
 # <a name="properties-and-methods-extended-by-project-subtypes"></a>Eigenschaften und Methoden, die von Projektuntertypen erweitert werden
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Einem Projektuntertyp bietet viele Möglichkeiten, um das Verhalten des Projekts zu beeinflussen, da er als Aggregatoren eines Basis-Projekts erstellt wird. In diesem Abschnitt werden einige der Features, die erweitert werden können oder die Projektuntertypen geändert, zusammengefasst.  
   
 ## <a name="features-gained-by-aggregation"></a>Funktionen, die sich aus der Aggregation ergeben  

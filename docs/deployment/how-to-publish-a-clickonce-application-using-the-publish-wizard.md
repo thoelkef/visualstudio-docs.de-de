@@ -1,8 +1,6 @@
 ---
-title: 'Gewusst wie: Veröffentlichen einer ClickOnce-Anwendung, die mit dem Webpublishing-Assistenten | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung, die mit dem Webpublishing-Assistenten | Microsoft-Dokumentation'
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,17 +14,17 @@ helpviewer_keywords:
 ms.assetid: 2e4aa67c-4445-4f7b-9e03-9acb95829127
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 890a61290d7606fb2a03ea7aed2c4782e5b69b67
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: MTE95
+ms.openlocfilehash: 2eac5778320b45b841cdff2c8d95f6a591386712
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388862"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406736"
 ---
-# <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Veröffentlichungs-Assistenten
+# <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten
 Wenn Sie eine ClickOnce-Anwendung für Benutzer bereitstellen möchten, müssen Sie sie auf einer Dateifreigabe oder unter einem Dateipfad, auf einem FTP-Server oder einem Wechselmedium veröffentlichen. Sie können die Anwendung mit dem Veröffentlichungs-Assistenten veröffentlichen. Für die Veröffentlichung stehen im **Projekt-Designer** auf der Seite **Veröffentlichen** zusätzliche Eigenschaften zur Verfügung. Weitere Informationen finden Sie unter [Publishing ClickOnce applications (Veröffentlichen von ClickOnce-Anwendungen)](../deployment/publishing-clickonce-applications.md).
 
 Bevor Sie den Webpublishing-Assistenten ausführen, sollten Sie die Veröffentlichungseigenschaften entsprechend festlegen. Wenn Sie z.B. einen Schlüssel zum Signieren der ClickOnce-Anwendung angeben möchten, können Sie dies im **Projekt-Designer** auf der Seite **Signierung** vornehmen. Weitere Informationen finden Sie unter [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md).
@@ -49,11 +47,11 @@ Bevor Sie den Webpublishing-Assistenten ausführen, sollten Sie die Veröffentli
 
 4. Wählen Sie auf der Seite **Wie werden Benutzer die Anwendung installieren?** den Speicherort aus, auf den Benutzer beim Installieren der Anwendung zugreifen:
 
-   -   Wenn die Installation über eine Website durchgeführt werden soll, klicken Sie auf **Von einer Website**, und geben Sie eine URL ein, die dem im vorherigen Schritt eingegebenen Dateipfad entspricht. Klicken Sie auf **Weiter**. (Diese Option wird normalerweise verwendet, wenn eine FTP-Adresse als Veröffentlichungsort angegeben werden soll. Der direkte Download per FTP wird nicht unterstützt. Daher müssen Sie hier eine URL eingeben.)
+   - Wenn die Installation über eine Website durchgeführt werden soll, klicken Sie auf **Von einer Website**, und geben Sie eine URL ein, die dem im vorherigen Schritt eingegebenen Dateipfad entspricht. Klicken Sie auf **Weiter**. (Diese Option wird normalerweise verwendet, wenn eine FTP-Adresse als Veröffentlichungsort angegeben werden soll. Der direkte Download per FTP wird nicht unterstützt. Daher müssen Sie hier eine URL eingeben.)
 
-   -   Wenn die Installation direkt über die Dateifreigabe durchgeführt werden soll, klicken Sie auf **Von UNC-Pfad oder Dateifreigabe**, und klicken Sie dann auf **Weiter**. (Hiermit können Veröffentlichungsorte im Format *c:\deploy\myapp* oder *\\\server\myapp* verwendet werden.)
+   - Wenn die Installation direkt über die Dateifreigabe durchgeführt werden soll, klicken Sie auf **Von UNC-Pfad oder Dateifreigabe**, und klicken Sie dann auf **Weiter**. (Hiermit können Veröffentlichungsorte im Format *c:\deploy\myapp* oder *\\\server\myapp* verwendet werden.)
 
-   -   Wenn die Installation über Wechselmedien durchgeführt werden soll, klicken Sie auf **Von CD-ROM oder DVD-ROM**, und klicken Sie dann auf **Weiter**.
+   - Wenn die Installation über Wechselmedien durchgeführt werden soll, klicken Sie auf **Von CD-ROM oder DVD-ROM**, und klicken Sie dann auf **Weiter**.
 
 5. Wählen Sie auf der Seite **Wird die Anwendung offline verfügbar sein?** die gewünschte Option aus:
 
@@ -82,7 +80,7 @@ Bevor Sie den Webpublishing-Assistenten ausführen, sollten Sie die Veröffentli
 4. Klicken Sie auf der Seite **Wie werden Benutzer die Anwendung installieren?** auf **Von CD-ROM oder DVD-ROM**, und klicken Sie dann auf **Weiter**.
 
    > [!NOTE]
-   >  Falls Sie die Installation ausgeführt werden soll, wenn die CD-ROM in das Laufwerk eingelegt wird, öffnen Sie im **Projekt-Designer** die Seite **Veröffentlichen** und klicken auf die Schaltfläche **Optionen**. Wählen Sie in den **Veröffentlichungsoptionen** des Assistenten dann die Option **Bei CD-Installationen automatisch Setup starten, wenn CD eingelegt wird** aus.
+   > Falls Sie die Installation ausgeführt werden soll, wenn die CD-ROM in das Laufwerk eingelegt wird, öffnen Sie im **Projekt-Designer** die Seite **Veröffentlichen** und klicken auf die Schaltfläche **Optionen**. Wählen Sie in den **Veröffentlichungsoptionen** des Assistenten dann die Option **Bei CD-Installationen automatisch Setup starten, wenn CD eingelegt wird** aus.
 
 5. Wenn Sie Ihre Anwendung auf einer CD-ROM veröffentlichen, können Sie dennoch Updates auf einer Website zur Verfügung stellen. Wählen Sie auf der Seite **Die Anwendung überprüft folgenden Speicherort auf Updates** eine Updateoption aus:
 
@@ -97,7 +95,7 @@ Bevor Sie den Webpublishing-Assistenten ausführen, sollten Sie die Veröffentli
     Der Veröffentlichungsstatus wird im Statusinfobereich angezeigt.
 
    > [!NOTE]
-   >  Wenn die Veröffentlichung abgeschlossen ist, benötigen Sie einen CD-Rekorder oder einen DVD-Rekorder, um die Dateien von dem in Schritt 3 angegebenen Speicherort auf CD-ROM oder DVD-ROM zu kopieren.
+   > Wenn die Veröffentlichung abgeschlossen ist, benötigen Sie einen CD-Rekorder oder einen DVD-Rekorder, um die Dateien von dem in Schritt 3 angegebenen Speicherort auf CD-ROM oder DVD-ROM zu kopieren.
 
 ## <a name="see-also"></a>Siehe auch
 

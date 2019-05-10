@@ -13,14 +13,13 @@ helpviewer_keywords:
 ms.assetid: b0a3e694-2894-479b-b270-7e61e9fafacd
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 74c30506dacd4b156fa7d065b11478fcf5e63765
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: e4b14be6df351a6975fb8a7cf6fa506a5d4f6041
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890667"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979431"
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>Vorgehensweise: Zugreifen auf Auslastungstestergebnisse für die Analyse
 
@@ -32,24 +31,24 @@ Das Auslastungstestergebnis für den abgeschlossenen Auslastungstest enthält Le
 
 ## <a name="to-access-a-load-test-result"></a>So greifen Sie auf ein Auslastungstestergebnis zu
 
-1.  Öffnen Sie in einem Webleistungs- und Auslastungstestprojekt einen Auslastungstest.
+1. Öffnen Sie in einem Webleistungs- und Auslastungstestprojekt einen Auslastungstest.
 
-2.  Klicken Sie auf der Symbolleiste des Auslastungstest-Editors auf die Schaltfläche **Ergebnisse öffnen und verwalten**.
+2. Klicken Sie auf der Symbolleiste des Auslastungstest-Editors auf die Schaltfläche **Ergebnisse öffnen und verwalten**.
 
      Das Dialogfeld **Ergebnisse öffnen und verwalten** wird angezeigt.
 
-3.  Wählen Sie in **Controllernamen für die Suche nach Auslastungstestergebnissen eingeben** einen Controller aus. Wählen Sie **\<Lokal> - Kein Controller** aus, um auf lokal gespeicherte Ergebnisse zuzugreifen.
+3. Wählen Sie in **Controllernamen für die Suche nach Auslastungstestergebnissen eingeben** einen Controller aus. Wählen Sie **\<Lokal> - Kein Controller** aus, um auf lokal gespeicherte Ergebnisse zuzugreifen.
 
-4.  Wählen Sie in **Ergebnisse für den folgenden Auslastungstest anzeigen** den Auslastungstest aus, dessen Ergebnisse angezeigt werden sollen. Wählen Sie **\<Ergebnisse für alle Tests anzeigen>** aus, um alle Ergebnisse für alle Tests anzuzeigen.
+4. Wählen Sie in **Ergebnisse für den folgenden Auslastungstest anzeigen** den Auslastungstest aus, dessen Ergebnisse angezeigt werden sollen. Wählen Sie **\<Ergebnisse für alle Tests anzeigen>** aus, um alle Ergebnisse für alle Tests anzuzeigen.
 
      Wenn Auslastungstestergebnisse verfügbar sind, werden diese in der Liste **Auslastungstestergebnisse** angezeigt. Die Spalten lauten **Time**, **Duration**, **User**, **Outcome**, **Test**, and **Description** (Zeit, Dauer, Benutzer, Ergebnis, Test und Beschreibung). **Test** ist der Name des Tests und unter **Beschreibung** wird die optionale Beschreibung angegeben, die vor der Ausführung des Tests hinzugefügt wurde.
 
     > [!NOTE]
     > Die Ergebnisse werden mit den neuesten Ergebnissen am Anfang der Liste angezeigt.
 
-5.  Wählen Sie in der Liste **Auslastungstestergebnisse** die zu analysierenden Auslastungstestergebnisse aus, und klicken Sie auf **Öffnen**.
+5. Wählen Sie in der Liste **Auslastungstestergebnisse** die zu analysierenden Auslastungstestergebnisse aus, und klicken Sie auf **Öffnen**.
 
-6.  Der **Auslastungstest-Analyzer** wird angezeigt. Das ausgewählte Auslastungstestergebnis wird in der Zusammenfassungsansicht angezeigt. Weitere Informationen finden Sie unter [Übersicht der Auslastungstestergebnisse](../test/load-test-results-summary-overview.md).
+6. Der **Auslastungstest-Analyzer** wird angezeigt. Das ausgewählte Auslastungstestergebnis wird in der Zusammenfassungsansicht angezeigt. Weitere Informationen finden Sie unter [Übersicht der Auslastungstestergebnisse](../test/load-test-results-summary-overview.md).
 
      Im Dialogfeld **Ergebnisse öffnen und verwalten** können Sie andere Aspekte von Auslastungstests verwalten, etwa das Importieren, Exportieren und Entfernen von Auslastungstestergebnissen. Weitere Informationen finden Sie unter [Verwalten von Auslastungstestergebnissen im Ergebnisrepository für Auslastungstests](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 

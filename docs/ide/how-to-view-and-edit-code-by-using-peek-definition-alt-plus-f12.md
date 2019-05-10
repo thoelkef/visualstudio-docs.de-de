@@ -1,19 +1,18 @@
 ---
 title: Verwenden von „Definition einsehen“
 ms.date: 01/10/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5013e04d1d5b6c73255be907d2b460cb186cea8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5ce26aeb22ca34a6cb01608e89dba4666e30f846
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537482"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Vorgehensweise: Anzeigen und Bearbeiten von Code mithilfe von „Definition einsehen“ (Alt+F12)
 
@@ -25,7 +24,7 @@ Sie können **Definition einsehen** mit C#-, Visual Basic- und C++-Code verwende
 
 ### <a name="to-open-a-peek-definition-window"></a>So öffnen Sie ein Fenster "Definition einsehen"
 
-1. Klicken Sie im Kontextmenü eines Typs oder Members auf **Definition einsehen**, um eine Definition einzusehen. In Visual Studio 2017 Version 15.4 und höher können Sie, wenn die Option aktiviert ist, eine Definition auch mithilfe der Maus einsehen, indem Sie **STRG** (oder eine andere Zusatztaste) gedrückt halten und auf den Namen des Members klicken. Alternativ drücken Sie auf der Tastatur die Tasten **ALT**+**F12**.
+1. Klicken Sie im Kontextmenü eines Typs oder Members auf **Definition einsehen**, um eine Definition einzusehen. Wenn die Option aktiviert ist,können Sie eine Definition auch mithilfe der Maus einsehen, indem Sie **STRG** (oder eine andere Zusatztaste) gedrückt halten und auf den Namen des Members klicken. Alternativ drücken Sie auf der Tastatur die Tasten **ALT**+**F12**.
 
      Diese Abbildung zeigt das Fenster **Definition einsehen** für eine Methode mit dem Namen `Print()`:
 

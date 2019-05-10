@@ -1,30 +1,24 @@
 ---
 title: Integration in XML-Editor | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 43d7a8e6-bd94-4407-a800-15a145c74223
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 81cf6b3cb58ceeb118b6e3cc181d417104c40cb0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 350b97385ab03daca80cc86d4f672dfec07222aa
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895404"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654021"
 ---
 # <a name="integration-with-xml-editor"></a>Integration in den XML-Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Der XML-Schema-Designer ist in den XML-Editor integriert. Wenn Sie eine XSD-Datei im XML-Editor ändern, die Änderung der [XML-Schema-Explorer](../xml-tools/xml-schema-explorer.md). Wenn Sie haben die [Diagrammansicht](../xml-tools/graph-view.md) oder [Inhaltsmodellansicht](../xml-tools/content-model-view.md) geöffnet ist, die Änderung dort ebenfalls wiedergegeben vorhanden. Sie können wie folgt zwischen dem XML-Schema-Designer und dem XML-Editor navigieren:  
   
 - In der XML-Editor, mit der rechten Maustaste in eines Knotens, und wählen Sie **im XML-Schema-Explorer anzeigen**.  
@@ -41,6 +35,3 @@ Der XML-Schema-Designer ist in den XML-Editor integriert. Wenn Sie eine XSD-Date
   
 ## <a name="see-also"></a>Siehe auch  
  [XML-Schema-Explorer](../xml-tools/xml-schema-explorer.md)
-
-
-

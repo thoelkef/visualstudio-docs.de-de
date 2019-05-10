@@ -1,7 +1,6 @@
 ---
 title: Erstellen und Konfigurieren von Typmembern (Klassen-Designer)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.classdetails.method
@@ -27,15 +26,15 @@ helpviewer_keywords:
 ms.assetid: 42af8738-3738-4ca7-82ff-edf573a68f96
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7063b536c50cff39bfeb3adabe989b3cd9a56ddf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 39932fe8d4afa31c66d6daa4af33d963b5612eb2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975540"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Erstellen und Konfigurieren von Typmembern im Klassen-Designer
 
@@ -48,7 +47,7 @@ Sie können diese Member zu Typen in einem Klassendiagramm hinzufügen und diese
 |Interface|Methode, Eigenschaft, Ereignis (bei C# und Visual Basic)|
 |Abstrakte Klasse|Methode, Eigenschaft (bei C# und Visual Basic), Feld, Ereignis (bei C# und Visual Basic), Konstruktor (Methode), Destruktor (Methode), Konstante|
 |Struktur (Struct in C#)|Methode, Eigenschaft (bei C# und Visual Basic), Feld, Ereignis (bei C# und Visual Basic), Konstruktor (Methode), Konstante|
-|delegate|Parameter|
+|delegate|-Parameter von|
 |Modul (nur VB)|Methode, Eigenschaft, Feld, Ereignis, Konstruktor, Konstante|
 
 > [!NOTE]
@@ -87,41 +86,41 @@ Sie können einen Member mit einem der folgenden Tools erstellen:
 
 ### <a name="create-a-member-using-class-designer"></a>Erstellen eines Members mit dem Klassen-Designer
 
-1.  Klicken Sie mit der rechten Maustaste auf den Typ, dem Sie einen Member hinzufügen möchten, zeigen Sie auf **Hinzufügen**, und wählen Sie dann den hinzuzufügenden Membertyp aus.
+1. Klicken Sie mit der rechten Maustaste auf den Typ, dem Sie einen Member hinzufügen möchten, zeigen Sie auf **Hinzufügen**, und wählen Sie dann den hinzuzufügenden Membertyp aus.
 
      Daraufhin wird eine neue Membersignatur erstellt und dem Typ hinzugefügt. Der Signatur wird ein Standardname zugewiesen, den Sie im **Klassen-Designer**, im Fenster **Klassendetails** oder im Fenster **Eigenschaften** ändern können.
 
-2.  Wahlweise können Sie weitere Memberdetails angeben, z. B. den Typ.
+2. Wahlweise können Sie weitere Memberdetails angeben, z. B. den Typ.
 
 ### <a name="create-a-member-using-the-class-details-window-toolbar"></a>Erstellen eines Members mithilfe der Symbolleiste des Fensters „Klassendetails“
 
-1.  Wählen Sie auf der Diagrammoberfläche den Typ aus, dem Sie einen Member hinzufügen möchten.
+1. Wählen Sie auf der Diagrammoberfläche den Typ aus, dem Sie einen Member hinzufügen möchten.
 
      Der Typ erhält den Fokus, und sein Inhalt wird im Fenster **Klassendetails** angezeigt.
 
-2.  Klicken Sie auf der Symbolleiste des Fensters **Klassendetails** auf das obere Symbol, und wählen Sie **Neuer \<Member>** aus der Dropdownliste aus.
+2. Klicken Sie auf der Symbolleiste des Fensters **Klassendetails** auf das obere Symbol, und wählen Sie **Neuer \<Member>** aus der Dropdownliste aus.
 
      Der Cursor wird in das Feld **Name** in einer Zeile für die gewünschte Art von Member verschoben. Wenn Sie z.B. auf **Neue Eigenschaft** klicken, wird der Cursor in eine neue Zeile im Abschnitt **Eigenschaften** des Fensters **Klassendetails** verschoben.
 
-3.  Geben Sie den Namen des zu erstellenden Members ein, und drücken Sie die EINGABETASTE (oder verschieben Sie den Fokus, z. B. durch Drücken der TAB-TASTE).
+3. Geben Sie den Namen des zu erstellenden Members ein, und drücken Sie die EINGABETASTE (oder verschieben Sie den Fokus, z. B. durch Drücken der TAB-TASTE).
 
      Daraufhin wird eine neue Membersignatur erstellt und dem Typ hinzugefügt. Der Member ist nun im Code vorhanden und wird im **Klassen-Designer**, im Fenster **Klassendetails** und im Eigenschaftenfenster angezeigt.
 
-4.  Wahlweise können Sie weitere Memberdetails angeben, z. B. den Typ.
+4. Wahlweise können Sie weitere Memberdetails angeben, z. B. den Typ.
 
 ### <a name="create-a-member-using-the-class-details-window"></a>Erstellen eines Members mithilfe des Fensters „Klassendetails“
 
-1.  Wählen Sie auf der Diagrammoberfläche den Typ aus, dem Sie einen Member hinzufügen möchten.
+1. Wählen Sie auf der Diagrammoberfläche den Typ aus, dem Sie einen Member hinzufügen möchten.
 
      Der Typ erhält den Fokus, und sein Inhalt wird im Fenster **Klassendetails** angezeigt.
 
-2.  Klicken Sie im Fenster **Klassendetails** in dem Abschnitt, der die Art von Member enthält, die hinzugefügt werden soll, auf **\<Member hinzufügen>**. Wenn Sie z.B. ein Feld hinzufügen möchten, klicken Sie auf **\<Feld hinzufügen>**.
+2. Klicken Sie im Fenster **Klassendetails** in dem Abschnitt, der die Art von Member enthält, die hinzugefügt werden soll, auf **\<Member hinzufügen>**. Wenn Sie z.B. ein Feld hinzufügen möchten, klicken Sie auf **\<Feld hinzufügen>**.
 
-3.  Geben Sie den Namen des zu erstellenden Members ein, und drücken Sie die EINGABETASTE.
+3. Geben Sie den Namen des zu erstellenden Members ein, und drücken Sie die EINGABETASTE.
 
      Daraufhin wird eine neue Membersignatur erstellt und dem Typ hinzugefügt. Der Member ist nun im Code vorhanden und wird im **Klassen-Designer**, im Fenster **Klassendetails** und im Eigenschaftenfenster angezeigt.
 
-4.  Wahlweise können Sie weitere Memberdetails angeben, z. B. den Typ.
+4. Wahlweise können Sie weitere Memberdetails angeben, z. B. den Typ.
 
      **Hinweis**: Sie können Member auch mithilfe von Tastenkombinationen erstellen. Weitere Informationen finden Sie unter [Tastenkombinationen und Mausaktionen im Klassendiagramm und Fenster „Klassendetails“ (Klassen-Designer)](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md).
 
@@ -171,11 +170,11 @@ In jeder Memberzeile werden die folgenden Elemente angezeigt:
 
 ### <a name="to-modify-a-type-member"></a>So ändern Sie einen Typmember
 
-1.  Wählen Sie mit dem Klassen-Designer einen Typ aus.
+1. Wählen Sie mit dem Klassen-Designer einen Typ aus.
 
-2.  Wenn das Fenster **Klassendetails** nicht angezeigt wird, klicken Sie auf der Symbolleiste des Klassen-Designers auf die Schaltfläche **Klassendetails**.
+2. Wenn das Fenster **Klassendetails** nicht angezeigt wird, klicken Sie auf der Symbolleiste des Klassen-Designers auf die Schaltfläche **Klassendetails**.
 
-3.  Bearbeiten Sie die Werte in den Feldern des Rasters im Fenster **Klassendetails**. Drücken Sie nach jeder Änderung die EINGABETASTE, oder aktivieren Sie auf andere Weise ein anderes Feld, z. B. durch Drücken der TAB-TASTE. Die Änderungen sind im Code sofort sichtbar.
+3. Bearbeiten Sie die Werte in den Feldern des Rasters im Fenster **Klassendetails**. Drücken Sie nach jeder Änderung die EINGABETASTE, oder aktivieren Sie auf andere Weise ein anderes Feld, z. B. durch Drücken der TAB-TASTE. Die Änderungen sind im Code sofort sichtbar.
 
     > [!NOTE]
     > Wenn Sie nur den Namen eines Members ändern möchten, können Sie dafür die direkte Bearbeitung verwenden.
@@ -206,7 +205,7 @@ Parameterzeilen enthalten die folgenden Elemente:
 
 - **\<Parameter hinzufügen>**
 
-     Die letzte Parameterzeile eines Members enthält in der Zelle **Name** den Text **<add parameter>** (Parameter hinzufügen>). Klicken Sie in die Zelle, um einen neuen Parameter zu erstellen. Weitere Informationen finden Sie unter [So fügen Sie einer Methode einen Parameter hinzu](creating-and-configuring-type-members.md#add-parameters-to-methods).
+     Die letzte Parameterzeile eines Members enthält im Feld **Name** den Text **<Parameter hinzufügen\>**. Klicken Sie in die Zelle, um einen neuen Parameter zu erstellen. Weitere Informationen finden Sie unter [So fügen Sie einer Methode einen Parameter hinzu](creating-and-configuring-type-members.md#add-parameters-to-methods).
 
 Im Fenster **Eigenschaften** werden die gleichen Parametereigenschaften angezeigt wie im Fenster **Klassendetails**: **Name**, **Typ**, **Modifizierer**, **Zusammenfassung** sowie die Eigenschaft **Optional Default** (Optionaler Standard). Wenn Sie eine Eigenschaft in einem der beiden Fenster ändern, wird der Wert der Eigenschaft global aktualisiert, d. h. auch die Anzeige des zugehörigen Werts im jeweils anderen Fenster.
 
@@ -218,35 +217,35 @@ Im Fenster **Eigenschaften** werden die gleichen Parametereigenschaften angezeig
 
 ### <a name="to-add-a-parameter-to-a-method"></a>So fügen Sie einer Methode einen Parameter hinzu
 
-1.  Klicken Sie auf der Diagrammoberfläche auf den Typ, der die Methode enthält, der Sie einen Parameter hinzufügen möchten.
+1. Klicken Sie auf der Diagrammoberfläche auf den Typ, der die Methode enthält, der Sie einen Parameter hinzufügen möchten.
 
      Der Typ erhält den Fokus, und sein Inhalt wird im Fenster **Klassendetails** angezeigt.
 
-2.  Erweitern Sie im Fenster **Klassendetails** die Zeile der Methode, der Sie einen Parameter hinzufügen möchten.
+2. Erweitern Sie im Fenster **Klassendetails** die Zeile der Methode, der Sie einen Parameter hinzufügen möchten.
 
      Es wird eine eingerückte Parameterzeile angezeigt, die nur ein Klammernpaar und die Wörter **\<Parameter hinzufügen>** enthält.
 
-3.  Klicken Sie auf **\<Parameter hinzufügen>**, geben Sie den Namen des neuen Parameters ein, und drücken Sie die **EINGABETASTE**.
+3. Klicken Sie auf **\<Parameter hinzufügen>**, geben Sie den Namen des neuen Parameters ein, und drücken Sie die **EINGABETASTE**.
 
      Der neue Parameter wird der Methode und dem Code der Methode hinzugefügt. Er wird im Fenster **Klassendetails** und im Eigenschaftenfenster angezeigt.
 
-4.  Wahlweise können Sie weitere Parameterdetails angeben, z. B. den Typ.
+4. Wahlweise können Sie weitere Parameterdetails angeben, z. B. den Typ.
 
 ### <a name="to-add-an-optional-parameter-to-a-method"></a>So fügen Sie einer Methode einen optionalen Parameter hinzu
 
-1.  Klicken Sie auf der Diagrammoberfläche auf den Typ, der die Methode enthält, der Sie einen optionalen Parameter hinzufügen möchten.
+1. Klicken Sie auf der Diagrammoberfläche auf den Typ, der die Methode enthält, der Sie einen optionalen Parameter hinzufügen möchten.
 
      Der Typ erhält den Fokus, und sein Inhalt wird im Fenster **Klassendetails** angezeigt.
 
-2.  Erweitern Sie im Fenster **Klassendetails** die Zeile der Methode, der Sie einen optionalen Parameter hinzufügen möchten.
+2. Erweitern Sie im Fenster **Klassendetails** die Zeile der Methode, der Sie einen optionalen Parameter hinzufügen möchten.
 
      Es wird eine eingerückte Parameterzeile angezeigt, die nur ein Klammernpaar und die Wörter **\<Parameter hinzufügen>** enthält.
 
-3.  Klicken Sie auf **\<Parameter hinzufügen>**, geben Sie den Namen des neuen Parameters ein, und drücken Sie die **EINGABETASTE**.
+3. Klicken Sie auf **\<Parameter hinzufügen>**, geben Sie den Namen des neuen Parameters ein, und drücken Sie die **EINGABETASTE**.
 
      Der neue Parameter wird der Methode und dem Code der Methode hinzugefügt. Er wird im Fenster **Klassendetails** und im Eigenschaftenfenster angezeigt.
 
-4.  Geben Sie im Eigenschaftenfenster einen Wert für die Eigenschaft **Optional Default** ein. Wenn Sie die "Optional Default"-Eigenschaft eines Parameters festlegen, wird dieser Parameter optional.
+4. Geben Sie im Eigenschaftenfenster einen Wert für die Eigenschaft **Optional Default** ein. Wenn Sie die "Optional Default"-Eigenschaft eines Parameters festlegen, wird dieser Parameter optional.
 
     > [!NOTE]
     > Optionale Parameter müssen in der Parameterliste die letzten Parameter sein.
@@ -263,7 +262,7 @@ Alle Zellen im Fenster **Klassendetails** sind bis auf einige Ausnahmen bearbeit
 
 - Für Indexer ist der Name schreibgeschützt, der Rest (Typ, Modifizierer, Zusammenfassung) ist jedoch bearbeitbar.
 
-- Alle Generika weisen im Fenster **Klassendetails** schreibgeschützte Parameter auf. Um einen generischen Parameter zu ändern, bearbeiten Sie den entsprechenden Quellcode.
+- Alle Generics weisen im Fenster **Klassendetails** schreibgeschützte Parameter auf. Um einen generischen Parameter zu ändern, bearbeiten Sie den entsprechenden Quellcode.
 
 - Der Name des für einen generischen Typ definierten Typparameters ist schreibgeschützt.
 

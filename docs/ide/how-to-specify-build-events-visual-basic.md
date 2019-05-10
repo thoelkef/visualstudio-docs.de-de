@@ -1,8 +1,6 @@
 ---
-title: 'Vorgehensweise: Festlegen von Buildereignissen (Visual Basic)'
+title: 'Vorgehensweise: Angeben von Buildereignissen (Visual Basic)'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
@@ -13,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 40dc83bf-a7c5-4a14-816a-fa0980b6e4c3
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24eb6d7637f949abf60eeb2d0659fac1bfa1cae7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e9dc571576346aa246452cdebf0a147468d6dfea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831732"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62549332"
 ---
-# <a name="how-to-specify-build-events-visual-basic"></a>Vorgehensweise: Festlegen von Buildereignissen (Visual Basic)
+# <a name="how-to-specify-build-events-visual-basic"></a>Vorgehensweise: Angeben von Buildereignissen (Visual Basic)
 
 Buildereignisse in Visual Basic können für das Ausführen von Skripts, Makros oder anderen Aktionen als Teil des Kompilierungsprozesses verwendet werden. Präbuildereignisse treten vor der Kompilierung auf, während Postbuildereignisse nach der Kompilierung auftreten.
 
@@ -36,13 +34,13 @@ Buildereignisse werden im Dialogfeld **Buildereignisse** angegeben, das über di
 
 ### <a name="to-specify-a-build-event"></a>Angeben eines Buildereignisses
 
-1.  Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.
+1. Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.
 
-2.  Klicken Sie auf die Registerkarte **Kompilieren**.
+2. Klicken Sie auf die Registerkarte **Kompilieren**.
 
-3.  Klicken Sie auf die Schaltfläche **Buildereignisse**, um das Dialogfeld **Buildereignisse** zu öffnen.
+3. Klicken Sie auf die Schaltfläche **Buildereignisse**, um das Dialogfeld **Buildereignisse** zu öffnen.
 
-4.  Geben Sie die Befehlszeilenargumente für Ihre Prä- oder Postbuildaktion ein, und klicken Sie dann auf **OK**.
+4. Geben Sie die Befehlszeilenargumente für Ihre Prä- oder Postbuildaktion ein, und klicken Sie dann auf **OK**.
 
     > [!NOTE]
     > Fügen Sie allen Postbuildbefehlen, die *BAT*-Dateien ausführen, eine `call`-Anweisung hinzu. Beispielsweise `call C:\MyFile.bat` oder `call C:\MyFile.bat call C:\MyFile2.bat`.
@@ -117,7 +115,7 @@ In der folgenden Prozedur wird veranschaulicht, wie Sie das mindestens erforderl
    End Sub
    ```
 
-   Der Befehl benötigt zwei Argumente. Beim ersten Argument handelt es sich um den Pfad zum Anwendungsmanifest (also den Ordner, in dem der Buildprozess das Manifest erstellt, in der Regel *<Projectname>.publish*). Beim zweiten Argument handelt es sich um die neue Version des Betriebssystems.
+   Der Befehl benötigt zwei Argumente. Beim ersten Argument handelt es sich um den Pfad zum Anwendungsmanifest (also den Ordner, in dem der Buildprozess das Manifest erstellt, üblicherweise *\<Projektname>.publish*). Beim zweiten Argument handelt es sich um die neue Version des Betriebssystems.
 
 5. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
 
@@ -127,14 +125,14 @@ In der folgenden Prozedur wird veranschaulicht, wie Sie das mindestens erforderl
 
 ### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>Aufrufen eines Postbuildereignisses zum Ändern des Anwendungsmanifests
 
-1.  Erstellen Sie eine Windows-Anwendung für das zu veröffentlichende Projekt. Klicken Sie im Menü **Datei** auf **Neu**und dann auf **Projekt**.
+1. Erstellen Sie eine Windows-Anwendung für das zu veröffentlichende Projekt. Klicken Sie im Menü **Datei** auf **Neu**und dann auf **Projekt**.
 
-2.  Klicken Sie im Dialogfeld **Neues Projekt** im Knoten **Visual Basic** auf **Windows-Desktop**, und wählen Sie dann die Vorlage **Windows Forms-App** aus. Benennen Sie das Projekt mit `VBWinApp`.
-3.  Klicken Sie für das im **Projektmappen-Explorer** ausgewählte Projekt im Menü **Projekt** auf **Eigenschaften**.
+2. Klicken Sie im Dialogfeld **Neues Projekt** im Knoten **Visual Basic** auf **Windows-Desktop**, und wählen Sie dann die Vorlage **Windows Forms-App** aus. Benennen Sie das Projekt mit `VBWinApp`.
+3. Klicken Sie für das im **Projektmappen-Explorer** ausgewählte Projekt im Menü **Projekt** auf **Eigenschaften**.
 
-4.  Navigieren Sie im **Projekt-Designer** zu der Seite **Veröffentlichen**, und legen Sie den **Veröffentlichungsort** auf *C:\TEMP* fest.
+4. Navigieren Sie im **Projekt-Designer** zu der Seite **Veröffentlichen**, und legen Sie den **Veröffentlichungsort** auf *C:\TEMP* fest.
 
-5.  Veröffentlichen Sie das Projekt, indem Sie auf **Jetzt veröffentlichen** klicken.
+5. Veröffentlichen Sie das Projekt, indem Sie auf **Jetzt veröffentlichen** klicken.
 
      Dann wird die Manifestdatei erstellt und unter *C:\TEMP\VBWinApp_1_0_0_0\VBWinApp.exe.manifest* gespeichert. Klicken Sie mit der rechten Maustaste auf die Datei, und klicken Sie dann auf **Öffnen mit** > **Programm aus einer Liste auswählen** und anschließend auf **Editor**, um das Manifest anzuzeigen.
 
@@ -144,9 +142,9 @@ In der folgenden Prozedur wird veranschaulicht, wie Sie das mindestens erforderl
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
     ```
 
-6.  Navigieren Sie im **Projekt-Designer** zu der Registerkarte **Kompilieren**, und klicken Sie auf die Schaltfläche **Buildereignisse**, um das Dialogfeld **Buildereignisse** zu öffnen.
+6. Navigieren Sie im **Projekt-Designer** zu der Registerkarte **Kompilieren**, und klicken Sie auf die Schaltfläche **Buildereignisse**, um das Dialogfeld **Buildereignisse** zu öffnen.
 
-7.  Geben Sie im Feld **Befehlszeile für Postbuildereignis** den folgenden Befehl ein:
+7. Geben Sie im Feld **Befehlszeile für Postbuildereignis** den folgenden Befehl ein:
 
      `C:\TEMP\ChangeOSVersionVB.exe "$(TargetPath).manifest" 5.1.2600.0`
 
@@ -154,7 +152,7 @@ In der folgenden Prozedur wird veranschaulicht, wie Sie das mindestens erforderl
 
      Das `$(TargetPath)`-Makro gibt den vollständigen Pfad für die ausführbare Datei an, die erstellt wird. Deshalb gibt *$(TargetPath).manifest* das Anwendungsmanifest an, das im *bin*-Verzeichnis erstellt wird. Durch die Veröffentlichung wird dieses Manifest an den Veröffentlichungsspeicherort kopiert, den Sie in einem vorherigen Schritt festgelegt haben.
 
-8.  Veröffentlichen Sie das Projekt erneut. Wechseln Sie zur Seite **Veröffentlichen**, und klicken Sie anschließen auf **Jetzt veröffentlichen**.
+8. Veröffentlichen Sie das Projekt erneut. Wechseln Sie zur Seite **Veröffentlichen**, und klicken Sie anschließen auf **Jetzt veröffentlichen**.
 
      Zeigen Sie das Manifest erneut an. Klicken Sie mit der rechten Maustaste auf die Datei, wechseln Sie zum Veröffentlichungsverzeichnis, und klicken Sie auf **Öffnen mit** > **Programm aus einer Liste auswählen** und anschließend auf **Editor**, um das Manifest anzuzeigen.
 

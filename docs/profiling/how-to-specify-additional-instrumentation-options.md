@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Angeben zusätzlicher Instrumentierungsoptionen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.advanced
@@ -12,15 +10,15 @@ helpviewer_keywords:
 - performance sessions, options
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f97bc28277adfe1e181e0f6a5be210e45b250717
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: c95add435824663e798d226e0be11ddbe06b8aba
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845248"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62539139"
 ---
 # <a name="how-to-specify-additional-instrumentation-options"></a>Vorgehensweise: Angeben zusätzlicher Instrumentierungsoptionen
 
@@ -43,5 +41,5 @@ Sie können Binärdateien über die Visual Studio-IDE oder mithilfe von Befehlsz
 
 ## <a name="see-also"></a>Siehe auch
 
-[Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)  
-[Profilerstellung über die Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md)
+[Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)
+[Verwenden der Profilerstellungstools über die Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md)

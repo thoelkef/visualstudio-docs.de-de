@@ -1,7 +1,6 @@
 ---
 title: 'Vorgehensweise: Erstellen und Entfernen von Projektabhängigkeiten'
 ms.date: 06/21/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - VS.ProjectDependenciesDlg
@@ -15,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: e2a0a8ff-dae7-40a8-b774-b88aa5235183
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24f44545ebc591a8e3b1a8359e0d7db8dddbb5d5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 14c31acc336818a8846d2ddf7981f64e045f68e8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925693"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824190"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Vorgehensweise: Erstellen und Entfernen von Projektabhängigkeiten
 
@@ -48,18 +47,18 @@ Beim Erstellen einer Projektmappe, die mehrere Projekte enthält, kann es erford
 
 ## <a name="to-remove-dependencies-from-projects"></a>So entfernen Sie Abhängigkeiten aus Projekten
 
-1.  Wählen Sie im **Projektmappen-Explorer** ein Projekt aus.
+1. Wählen Sie im **Projektmappen-Explorer** ein Projekt aus.
 
-2.  Klicken Sie im Menü **Projekt** auf **Projektabhängigkeiten**.
+2. Klicken Sie im Menü **Projekt** auf **Projektabhängigkeiten**.
 
      Das Dialogfeld **Projektabhängigkeiten** wird geöffnet.
 
     > [!NOTE]
     > Die Option **Projektabhängigkeiten** ist nur in einer Projektmappe mit mehr als einem Projekt verfügbar.
 
-3.  Wählen Sie auf der Registerkarte **Abhängigkeiten** ein Projekt aus dem Dropdownmenü **Projekt** aus.
+3. Wählen Sie auf der Registerkarte **Abhängigkeiten** ein Projekt aus dem Dropdownmenü **Projekt** aus.
 
-4.  Deaktivieren Sie im Feld **Abhängigkeiten** die Kästchen neben anderen Projekten, die keine Abhängigkeiten dieses Projekts mehr sind.
+4. Deaktivieren Sie im Feld **Abhängigkeiten** die Kästchen neben anderen Projekten, die keine Abhängigkeiten dieses Projekts mehr sind.
 
 ## <a name="see-also"></a>Siehe auch
 

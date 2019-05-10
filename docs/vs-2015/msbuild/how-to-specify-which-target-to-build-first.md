@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Angeben des zuerst zu erstellenden Ziels | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - DefaultTargets attribute [MSBuild]
 - MSBuild, specifying the defalut target
@@ -17,18 +12,17 @@ ms.assetid: a580ba5b-2919-42d2-ae38-1af991e0205a
 caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f4ea97ed3650e74a10bfc5e49657f0ed3dce60ba
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 7d7d47746aed2e663eb1fa25e3bb9ca2c6bed2c9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840694"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076418"
 ---
-# <a name="how-to-specify-which-target-to-build-first"></a>Gewusst wie: Angeben des zuerst zu erstellenden Ziels
+# <a name="how-to-specify-which-target-to-build-first"></a>Vorgehensweise: Angeben des zuerst zu erstellenden Ziels
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Eine Projektdatei kann ein oder mehrere `Target`-Elemente enthalten, die definieren, wie das Projekt erstellt wird. Die [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ([!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)])-Engine erstellt das erste Projekt, das es findet, sowie alle Abhängigkeiten, es sei denn, die Projektdatei enthält ein `DefaultTargets`-Attribut, ein `InitialTargets`-Attribut oder ein Ziel, das in der Befehlszeile unter Verwendung des **/target**-Schalters angegeben ist.  
   
 ## <a name="using-the-initialtargets-attribute"></a>Verwenden des InitialTargets-Attributs  
@@ -44,7 +38,7 @@ Eine Projektdatei kann ein oder mehrere `Target`-Elemente enthalten, die definie
   
 #### <a name="to-specify-more-than-one-initial-target"></a>Mehr als ein erstes Ziel angeben  
   
--   Listen Sie die ersten Ziele durch Semikolons getrennt im `InitialTargets`-Attribut des `Project`-Elements auf. Geben Sie zum Beispiel zum Ausführen des `Clean`-Ziels und anschließend des `Compile`-Ziels Folgendes ein:  
+- Listen Sie die ersten Ziele durch Semikolons getrennt im `InitialTargets`-Attribut des `Project`-Elements auf. Geben Sie zum Beispiel zum Ausführen des `Clean`-Ziels und anschließend des `Compile`-Ziels Folgendes ein:  
   
      `<Project InitialTargets="Clean;Compile">`  
   
@@ -61,7 +55,7 @@ Eine Projektdatei kann ein oder mehrere `Target`-Elemente enthalten, die definie
   
 #### <a name="to-specify-more-than-one-default-target"></a>Mehr als ein erstes Ziel angeben  
   
--   Listen Sie die ersten Ziele durch Semikolons getrennt im `DefaultTargets`-Attribut des `Project`-Elements auf. Geben Sie zum Beispiel zum Ausführen des `Clean`-Ziels und anschließend des `Compile`-Ziels Folgendes ein:  
+- Listen Sie die ersten Ziele durch Semikolons getrennt im `DefaultTargets`-Attribut des `Project`-Elements auf. Geben Sie zum Beispiel zum Ausführen des `Clean`-Ziels und anschließend des `Compile`-Ziels Folgendes ein:  
   
      `<Project DefaultTargets="Clean;Compile">`  
   
@@ -70,19 +64,17 @@ Eine Projektdatei kann ein oder mehrere `Target`-Elemente enthalten, die definie
   
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>Zuerst ein anderen Ziels und nicht das Standardziel verwenden  
   
--   Geben Sie das Ziel als das erstes Ziel mithilfe des **/target**-Befehlszeilenschalters ein. Zum Beispiel:  
+- Geben Sie das Ziel als das erstes Ziel mithilfe des **/target**-Befehlszeilenschalters ein. Zum Beispiel:  
   
      `msbuild file.proj /target:Clean`  
   
 #### <a name="to-use-several-targets-other-than-the-default-targets-first"></a>So können Sie zuerst mehrere Ziele, die nicht die Standardziele sind, verwenden  
   
--   Listen Sie die Ziele, getrennt durch Semikolons oder Kommas, mit dem **/target**-Befehlszeilenschalter auf. Zum Beispiel:  
+- Listen Sie die Ziele, getrennt durch Semikolons oder Kommas, mit dem **/target**-Befehlszeilenschalter auf. Zum Beispiel:  
   
      `msbuild <file name>.proj /t:Clean;Compile`  
   
 ## <a name="see-also"></a>Siehe auch
   [MSBuild](msbuild.md)  
  [Ziele](../msbuild/msbuild-targets.md)   
- [Gewusst wie: Bereinigen eines Builds](../msbuild/how-to-clean-a-build.md)
-
-
+ [Vorgehensweise: Bereinigen eines Builds](../msbuild/how-to-clean-a-build.md)

@@ -1,21 +1,20 @@
 ---
 title: Refactoring von Code zum Ersetzen von var durch einen expliziten Typ
 ms.date: 05/15/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 893fc2f989dab579690cdac37edae3ba0fad606a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2708bca578b613fac77e9b8ce77b1b2aff8f0945
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869137"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968150"
 ---
 # <a name="refactoring-to-replace-var-with-an-explicit-type"></a>Refactoring zum Ersetzen von var durch einen expliziten Typ
 

@@ -1,7 +1,6 @@
 ---
-title: 'CA2105: Arrayfelder dürfen nicht schreibgeschützt sein'
+title: 'CA2105: Arrayfelder dürfen nicht schreibgeschützt sein.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2105
@@ -12,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 0bdc3421-3ceb-4182-b30c-a992fbfcc35d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0969147ce4f454f7720f26f72b46cab6e91c37bf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eeadbd977b8c7d97af611a2054692a6071f21a36
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937968"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62808301"
 ---
-# <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105: Arrayfelder dürfen nicht schreibgeschützt sein
+# <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105: Arrayfelder dürfen nicht schreibgeschützt sein.
 
 |||
 |-|-|

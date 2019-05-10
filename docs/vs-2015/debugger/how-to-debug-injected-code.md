@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Debuggen von eingefügtem Code | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.injected
 dev_langs:
@@ -30,53 +25,50 @@ ms.assetid: a1b4104d-d49e-451f-a91e-e39ceaf35875
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7ff81b082c877098acec78e56ef9ef211cae8854
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b7b411574dcf65bdd1ec64c1fc51bd1813f09abb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778149"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432343"
 ---
-# <a name="how-to-debug-injected-code"></a>Gewusst wie: Debuggen von eingefügtem Code
+# <a name="how-to-debug-injected-code"></a>Vorgehensweise: Debuggen von eingefügtem Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 HINWEIS]
->  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü Extras auf Einstellungen importieren und exportieren, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü Extras auf Einstellungen importieren und exportieren, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Die Verwendung von Attributen kann die C++-Programmierung erheblich vereinfachen. Weitere Informationen finden Sie unter [Konzepte](http://msdn.microsoft.com/library/563e7e7c-65e1-44f4-b0b2-da04a6c1bc9e). Einige Attribute werden direkt vom Compiler interpretiert. Andere Attribute fügen Code in den Programmquellcode ein, der anschließend vom Compiler kompiliert wird. Dieser eingefügte Code kann die Programmierung vereinfachen, da weniger Code geschrieben werden muss. Manchmal kann die Anwendung jedoch aufgrund eines Fehlers fehlschlagen, der beim Ausführen von eingefügtem Code auftritt. In diesem Fall möchten Sie den eingefügten Code wahrscheinlich überprüfen. Visual Studio bietet zwei Möglichkeiten, eingefügten Code zu überprüfen:  
   
-- Sehen Sie eingefügten Code in die **Disassembly** Fenster.  
+- Sie können den eingefügten Code im Fenster **Disassemblierung** anzeigen.  
   
-- Mithilfe von [/FX](http://msdn.microsoft.com/library/14f0e301-3bab-45a3-bbdf-e7ce66f20560), Sie können eine zusammengeführte Quelldatei, die ursprüngliche und die eingefügten Code enthält erstellen.  
+- Sie können mit [/Fx](http://msdn.microsoft.com/library/14f0e301-3bab-45a3-bbdf-e7ce66f20560) eine zusammengeführte Quelldatei erstellen, die sowohl Original- als auch den eingefügten Code enthält.  
   
-  Die **Disassembly** Fenster werden Assemblysprachanweisungen, die den Quellcode und den mittels Attributen eingefügten Code entsprechen. Darüber hinaus die **Disassembly** Fenster kann die Quellcode-Anmerkung anzeigen.  
+  Im Fenster **Disassemblierung** werden Assemblysprachanweisungen angezeigt, die für den Quellcode sowie für den mittels Attributen eingefügten Code stehen. Darüber hinaus können im Fenster **Disassemblierung** Quellcodeanmerkungen angezeigt werden.  
   
 ### <a name="to-turn-on-source-annotation"></a>So aktivieren Sie Quellcodeanmerkungen  
   
--   Mit der rechten Maustaste die **Disassembly** Fenster, und wählen Sie **Quellcode anzeigen** aus dem Kontextmenü.  
+- Klicken Sie mit der rechten Maustaste auf das **Disassemblierungsfenster**, und wählen Sie im Kontextmenü **Quellcode anzeigen** aus.  
   
-     Wenn Sie den Speicherort eines Attributs in einem Quellcodefenster kennen, können das Kontextmenü in den eingefügten Code Suchen der **Disassembly** Fenster.  
+     Wenn Sie wissen, an welcher Stelle sich ein Attribut im Quellcodefenster befindet, können Sie das Kontextmenü verwenden, um den eingefügten Code im **Disassemblierungsfenster** zu suchen.  
   
 ### <a name="to-view-injected-code"></a>So zeigen Sie eingefügten Code an  
   
-1.  Der Debugger muss sich im Unterbrechungsmodus befinden.  
+1. Der Debugger muss sich im Unterbrechungsmodus befinden.  
   
-2.  Positionieren Sie den Cursor im Quellcodefenster vor dem Attribut, dessen eingefügter Code angezeigt werden soll.  
+2. Positionieren Sie den Cursor im Quellcodefenster vor dem Attribut, dessen eingefügter Code angezeigt werden soll.  
   
-3.  Mit der rechten Maustaste, und wählen **Gehe zu Disassembly** aus dem Kontextmenü.  
+3. Klicken Sie mit der rechten Maustaste, und wählen Sie im Kontextmenü **Zu Disassemblierung wechseln** aus.  
   
-     Wenn das Attribut in der Nähe des aktuellen Ausführungspunktes befindet, können Sie auswählen der **Disassembly** Fenster über die **Debuggen** Menü.  
+     Wenn sich das Attribut in der Nähe des aktuellen Ausführungspunktes befindet, können Sie das **Disassemblierungsfenster** über das Menü **Debuggen** öffnen.  
   
 ### <a name="to-view-the-disassembly-code-at-the-current-execution-point"></a>So zeigen Sie den Disassemblycode am aktuellen Ausführungspunkt an  
   
-1.  Der Debugger muss sich im Unterbrechungsmodus befinden.  
+1. Der Debugger muss sich im Unterbrechungsmodus befinden.  
   
-2.  Von der **Debuggen** Menü wählen **Windows**, und klicken Sie auf **Disassembly**.  
+2. Wählen Sie im Menü **Debuggen** die Option **Fenster** aus, und klicken Sie auf **Disassemblierung**.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Debuggersicherheit](../debugger/debugger-security.md)   
+ [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
  [Debuggen von nativem Code](../debugger/debugging-native-code.md)
-
-
-

@@ -9,36 +9,35 @@ helpviewer_keywords:
 ms.assetid: 8d74379e-295d-452b-bd5f-0769df387d4f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 419cf6c30822a041397e73104974989881ac6e59
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0008b7476290558c098b2241fde5c9b209933a0a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822475"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974045"
 ---
 # <a name="cvreleaseprovider-function"></a>CvReleaseProvider-Funktion
-Gibt Markeranbieter frei. Die Freigabe des Markeranbieters hat keine Auswirkungen auf bereits erstellte Markerreihen dieses Anbieters. Markerreihen müssen durch den Aufruf von CvReleaseMarkerSeries getrennt freigegeben werden. Wenn Markeranbieter nicht freigegeben werden, führt dies zu einem Arbeitsspeicherverlust.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C  
-HRESULT CvReleaseProvider(  
-   _In_ PCV_PROVIDER pProvider  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pProvider`  
- Anbieterkontext. Darf nicht NULL sein.  
-  
-## <a name="return-value"></a>Rückgabewert  
- S_OK, wenn der Anbieter erfolgreich freigegeben wurde, oder Fehlercode, wenn Fehler aufgetreten sind. Prüfen Sie mit den Makros SUCCEEDED bzw. FAILED, ob Fehler vorliegen.  
-  
-## <a name="requirements"></a>Anforderungen  
- **Header:** *cvmarkers.h*  
-  
-## <a name="see-also"></a>Siehe auch  
- [C++-Bibliotheksreferenz](../profiling/cpp-library-reference.md)
+Gibt Markeranbieter frei. Die Freigabe des Markeranbieters hat keine Auswirkungen auf bereits erstellte Markerreihen dieses Anbieters. Markerreihen müssen durch den Aufruf von CvReleaseMarkerSeries getrennt freigegeben werden. Wenn Markeranbieter nicht freigegeben werden, führt dies zu einem Arbeitsspeicherverlust.
+
+## <a name="syntax"></a>Syntax
+
+```C
+HRESULT CvReleaseProvider(
+   _In_ PCV_PROVIDER pProvider
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pProvider`: der Anbieterkontext. Darf nicht NULL sein.
+
+## <a name="return-value"></a>Rückgabewert
+ S_OK, wenn der Anbieter erfolgreich freigegeben wurde, oder Fehlercode, wenn Fehler aufgetreten sind. Prüfen Sie mit den Makros SUCCEEDED bzw. FAILED, ob Fehler vorliegen.
+
+## <a name="requirements"></a>Anforderungen
+ **Header:** *cvmarkers.h*
+
+## <a name="see-also"></a>Siehe auch
+- [C++-Bibliotheksreferenz](../profiling/cpp-library-reference.md)

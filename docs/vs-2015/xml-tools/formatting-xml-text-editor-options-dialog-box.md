@@ -1,41 +1,35 @@
 ---
 title: Formatierung, XML, Text-Editor, Dialogfeld "Optionen" | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: bb539b3a-027c-4b2f-906e-403e0e22ba8d
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5c8379393dd5327359789f8621cf67ed55e89209
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 588bf415a801a9244cd9a046e0c503c0b238db58
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256671"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417414"
 ---
 # <a name="formatting-xml-text-editor-options-dialog-box"></a>Formatierung, XML, Texteditor, Dialogfeld "Optionen"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 In diesem Dialogfeld können Sie die Formatierungseinstellungen für den XML-Editor angeben. Sie können den Zugriff auf die **Optionen** das Dialogfeld die **Tools** Menü.  
   
 > [!NOTE]
->  Diese Einstellungen sind verfügbar, wenn Sie auswählen der **Text-Editor** Ordner die **XML** Ordner, und klicken Sie dann die **Formatierung** option die **Optionen** Dialogfeld.  
+> Diese Einstellungen sind verfügbar, wenn Sie auswählen der **Text-Editor** Ordner die **XML** Ordner, und klicken Sie dann die **Formatierung** option die **Optionen** Dialogfeld.  
   
 ## <a name="attributes"></a>Attribute  
- **Manuelle attributformatierung beibehalten**  
+ **Manuelle Attributformatierung beibehalten**  
  Attribute werden nicht neu formatiert. Dies ist die Standardeinstellung.  
   
 > [!NOTE]
->  Wenn sich die Attribute auf mehreren Zeilen befinden, zieht der Editor jede Attributzeile ein, sodass das Einzugsmuster des übergeordneten Elements festgelegt wird.  
+> Wenn sich die Attribute auf mehreren Zeilen befinden, zieht der Editor jede Attributzeile ein, sodass das Einzugsmuster des übergeordneten Elements festgelegt wird.  
   
  **Attribute jeweils in einer eigenen Zeile ausrichten**  
  Richtet das zweite und die nachfolgenden Attribute vertikal aus, damit sie dem Einzug des ersten Attributs entsprechen. Der folgende XML-Text veranschaulicht, wie die Attribute ausgerichtet werden.  
@@ -51,7 +45,7 @@ In diesem Dialogfeld können Sie die Formatierungseinstellungen für den XML-Edi
  **Bei einfügen aus der Zwischenablage**  
  Formatiert den aus der Zwischenablage eingefügten XML-Text neu.  
   
- **Nach Abschluss des Endtags**  
+ **Bei Komplettierung des Endtags**  
  Formatiert das Element neu, wenn das Endtag vervollständigt wird.  
   
 ## <a name="mixed-content"></a>	Gemischter Inhalt  
@@ -70,6 +64,3 @@ In diesem Dialogfeld können Sie die Formatierungseinstellungen für den XML-Edi
 ## <a name="see-also"></a>Siehe auch  
  [XML-Dokumenteigenschaften, Eigenschaftenfenster](../xml-tools/xml-document-properties-properties-window.md)   
  [Komponenten des XML-Editors](../xml-tools/xml-editor-components.md)
-
-
-

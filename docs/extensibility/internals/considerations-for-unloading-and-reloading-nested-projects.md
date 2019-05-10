@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 06c3427e-c874-45b1-b9af-f68610ed016c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db5af7d761df39e2a0fee29f27e3f34526f07a7e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b0b5738a5e8cf01466dd632797c3f92ffd135a44
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870939"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861334"
 ---
 # <a name="considerations-for-unloading-and-reloading-nested-projects"></a>Überlegungen zu entladen und Neuladen von geschachtelten Projekten
 

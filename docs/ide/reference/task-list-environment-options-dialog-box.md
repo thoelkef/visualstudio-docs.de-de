@@ -1,7 +1,6 @@
 ---
 title: Aufgabenliste, Umgebung, Dialogfeld "Optionen"
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.Task_List
@@ -20,67 +19,47 @@ helpviewer_keywords:
 ms.assetid: 88327e04-fa3e-48db-995b-ad89e0dc4ed2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4645b1a9bb594e5e4b2ca7220c6eda32947ab4f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8b2fc59a2f04dc30ef8b052e93fc6ffdf030e054
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833619"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945026"
 ---
-# <a name="task-list-environment-options-dialog-box"></a>Aufgabenliste, Umgebung, Dialogfeld "Optionen"
+# <a name="options-dialog-box-environment--task-list"></a>Dialogfeld „Optionen“: Umgebung \> Aufgabenliste
 
 Auf der Seite „Optionen“ können Sie die Kommentartoken hinzufügen, löschen und ändern, mit denen die Erinnerungen für **Aufgabenliste** generiert werden. Wählen Sie zum Anzeigen dieser Einstellungen **Optionen** aus dem Menü **Extras**, erweitern Sie den Ordner **Umgebung**, und wählen Sie **Aufgabenliste**.
 
-## <a name="task-list-options"></a>Aufgabenlistenoptionen
- Löschen von Aufgaben bestätigen
+## <a name="task-list-tokens"></a>Aufgabenlistentoken
 
- Bei Auswahl dieser Option wird ein Meldungsfeld angezeigt, wenn eine Benutzeraufgabe aus der **Aufgabenliste** gelöscht wird, damit Sie den Löschvorgang bestätigen können. Diese Option ist standardmäßig ausgewählt.
+Wenn Sie einen Kommentar in den Code einfügen, dessen Text mit einem Token aus der **Tokenliste** beginnt, wird in der **Aufgabenliste** der Kommentar als neuer Eintrag angezeigt, wenn die Datei zur Bearbeitung geöffnet ist. Klicken Sie auf einen Eintrag in der **Aufgabenliste**, um direkt zur Kommentarzeile im Code zu springen. Weitere Informationen finden Sie unter [Verwenden der Aufgabenliste](../../ide/using-the-task-list.md).
 
-> [!NOTE]
-> Verwenden Sie zum Löschen eines Aufgabenkommentars den Link, um nach dem Kommentar zu suchen, und entfernen Sie ihn dann aus dem Code.
-
-
- Nur Dateinamen anzeigen
-
- Bei Auswahl dieser Option werden in der Spalte **Datei** der **Aufgabenliste** nur die Namen der zu bearbeitenden Dateien angezeigt, und nicht die vollständigen Pfade.
-
-## <a name="tokens"></a>tokens
- Wenn Sie einen Kommentar in den Code einfügen, dessen Text mit einem Token aus der **Tokenliste** beginnt, wird in der **Aufgabenliste** der Kommentar als neuer Eintrag angezeigt, wenn die Datei zur Bearbeitung geöffnet ist. Klicken Sie auf diesen Eintrag der **Aufgabenliste**, um direkt zur Kommentarzeile im Code zu springen. Weitere Informationen finden Sie unter [Verwenden der Aufgabenliste](../../ide/using-the-task-list.md).
-
- Tokenliste
-
- Zeigt eine Liste mit Token an und ermöglicht es Ihnen, benutzerdefinierte Token hinzuzufügen oder zu entfernen. In C# und Visual C++ wird die Groß-/Kleinschreibung von Kommentartoken berücksichtigt, in Visual Basic jedoch nicht.
+Tokenliste\
+Zeigt eine Liste mit Token an und ermöglicht es Ihnen, benutzerdefinierte Token hinzuzufügen oder zu entfernen. In C# und C++ wird die Groß-/Kleinschreibung von Kommentartoken berücksichtigt, in Visual Basic jedoch nicht.
 
 > [!NOTE]
-> Wenn Sie das gewünschte Token nicht exakt so eingeben, wie es in der **Tokenliste** aufgeführt ist, wird in der **Aufgabenliste** keine Kommentaraufgabe angezeigt.
+> Wenn Sie das gewünschte Token nicht exakt so eingeben, wie es in der Tokenliste aufgeführt ist, wird in der **Aufgabenliste** keine Kommentaraufgabe angezeigt.
 
+Priorität\
+Legt die Priorität von Aufgaben fest, die das ausgewählte Token verwenden (niedrig, normal, hoch). Aufgabenkommentaren, die mit diesem Token beginnen, wird in der **Aufgabenliste** automatisch die festgelegte Priorität zugewiesen.
 
- Priorität
+Name\
+Geben Sie hier die Tokenzeichenfolge ein, und klicken Sie dann auf **Hinzufügen**, um die Zeichenfolge der Tokenliste hinzuzufügen.
 
- Legt die Priorität von Aufgaben fest, die das ausgewählte Token verwenden. Aufgabenkommentaren, die mit diesem Token beginnen, wird in der **Aufgabenliste** automatisch die festgelegte Priorität zugewiesen.
+Hinzufügen\
+Wird aktiviert, wenn Sie einen neuen **Namen** eingeben. Klicken Sie auf diese Schaltfläche, um unter Verwendung der in die Felder **Name** und **Priorität** eingegebenen Werte eine neue Tokenzeichenfolge hinzuzufügen.
 
- name
+Löschen\
+Klicken Sie auf diese Schaltfläche, wenn Sie das ausgewählte Token aus der Tokenliste entfernen möchten. Das Standardkommentartoken kann nicht gelöscht werden.
 
- Geben Sie die Tokenzeichenfolge ein. Dadurch wird die Schaltfläche **Hinzufügen** aktiviert. Durch Klicken auf **Hinzufügen** wird diese Zeichenfolge in die **Tokenliste** eingeschlossen, und in der **Aufgabenliste** werden Kommentare angezeigt, die mit diesem Namen beginnen.
-
- Hinzufügen
-
- Wird aktiviert, wenn Sie einen neuen **Namen** eingeben. Klicken Sie auf diese Schaltfläche, um unter Verwendung der in die Felder **Name** und **Priorität** eingegebenen Werte eine neue Tokenzeichenfolge hinzuzufügen.
-
- Löschen
-
- Klicken Sie auf diese Schaltfläche, wenn Sie das ausgewählte Token aus der **Tokenliste** entfernen möchten. Das Standardkommentartoken kann nicht gelöscht werden.
-
- Änderung
-
- Klicken Sie auf diese Schaltfläche, um unter Verwendung der in die Felder **Name** und **Priorität** eingegebenen Werte Änderungen an einem vorhandenen Token vorzunehmen.
+Ändern\
+Klicken Sie auf diese Schaltfläche, um unter Verwendung der in die Felder **Name** und **Priorität** eingegebenen Werte Änderungen an einem vorhandenen Token vorzunehmen.
 
 > [!NOTE]
 > Sie können das Standardkommentartoken weder umbenennen noch löschen, jedoch die Priorität dieses Tokens ändern.
-
 
 ## <a name="see-also"></a>Siehe auch
 

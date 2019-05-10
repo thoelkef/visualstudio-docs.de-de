@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 9efcf0a3-dbde-4cab-8ed3-425826a48b2e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88e68ae7e6a88d1acd88016819eb4634962ef101
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: caa7593c85351512e683f2cf93adeb3211e3e4d8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952208"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951195"
 ---
 # <a name="what39s-new-in-the-visual-studio-2017-sdk"></a>Was&#39;Neues in Visual Studio 2017 SDK
 
@@ -31,7 +31,7 @@ Das neue Format verfügt über Unterstützung für:
 
 Zu diesen Änderungen finden Sie unter den folgenden Themen:
 
-* [Änderungen an Erweiterbarkeit für 2017](breaking-changes-2017.md)
+* [Änderungen an Erweiterbarkeit für Visual Studio 2017](breaking-changes-2017.md)
 * [NGen-Unterstützung in VSIX v3](ngen-support.md)
 * [Installieren Sie außerhalb des Ordners für Erweiterungen](set-install-root.md)
 * [Häufig gestellte Fragen zu Visual Studio 2017-Erweiterbarkeit](faq-2017.md)

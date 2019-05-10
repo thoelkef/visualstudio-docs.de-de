@@ -1,14 +1,9 @@
 ---
 title: 'Verwaltetes Debuggen: Empfohlene Eigenschafteneinstellungen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,13 +16,13 @@ ms.assetid: 3d14a8d4-2925-44d0-be41-ec546d411db9
 caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6c82a624e5a2847da5c0f85a9e2ef4180a338a34
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f63e1382d242a679ed4fac09bfb3040200fed551
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724696"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58961479"
 ---
 # <a name="managed-debugging-recommended-property-settings"></a>Verwaltetes Debuggen: Empfohlene Eigenschafteneinstellungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,17 +31,17 @@ Bestimmte Eigenschaften sollten für alle Szenarios des verwalteten Debuggens gl
   
  Die folgenden Tabellen zeigen die empfohlenen Eigenschafteneinstellungen.  
   
- Die hier nicht aufgeführten Einstellungen können je nach verwaltetem Projekttyp unterschiedlich sein. Z. B. **Startaktion** wird anders festgelegt werden, in einem Windows Forms-Projekt als in einem [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Projekt.  
+ Die hier nicht aufgeführten Einstellungen können je nach verwaltetem Projekttyp unterschiedlich sein. So wird beispielweise die Einstellung für **Startaktion[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] in einem Windows Forms-Projekt anders als in einem** -Projekt festgelegt.  
   
 ### <a name="configuration-properties-on-the-build-c-or-compile-visual-basic-tab"></a>Konfigurationseigenschaften auf der Registerkarte Erstellen (C#) oder auf der Registerkarte Kompilieren (Visual Basic)  
   
 |**Eigenschaftenname**|**Einstellung**|  
 |-----------------------|-----------------|  
-|**DEBUG-Konstante definieren**|C# und F#: Kontrollkästchen aktivieren. Dadurch kann die Anwendung die Debug-Klasse verwenden.|  
-|**TRACE-Konstante definieren**|C# und F#: Kontrollkästchen aktivieren. Dadurch kann die Anwendung die Trace-Klasse verwenden.|  
-|**Code optimieren**|C#, F# und Visual Basic: Auf false festlegen. Optimierter Code ist schwieriger zu debuggen, da die generierten Anweisungen nicht direkt mit dem Quellcode übereinstimmen. Wenn Sie feststellen, das Programm hat einen Fehler, der nur im optimierten Code auftritt, können Sie diese Einstellung aktivieren, aber denken Sie daran, im gezeigten Code der **Disassembly** aus optimiertem, die nicht mit Anzeige im Code generiert wurde Der Editor. Um optimierten Code zu debuggen, müssen Sie deaktivieren [nur mein Code](just-my-code.md).<br /><br /> Weitere Informationen finden Sie unter [Projekteinstellungen für c# Debug Configurations](../debugger/project-settings-for-csharp-debug-configurations.md) oder [Projekteinstellungen für eine Visual Basic-Debugkonfiguration](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).|  
-|**Ausgabepfad**|Legen Sie auf "bin\Debug"\\.|  
-|**Erweiterte Kompilierungsoptionen**|nur Visual Basic. Klicken Sie auf **erweitert** auf die erweiterten Eigenschaften festzulegen, die beschrieben werden in der folgenden Tabelle.|  
+|**DEBUG-Konstante definieren**|C#und F#: Legen Sie das Kontrollkästchen aktiviert. Dadurch kann die Anwendung die Debug-Klasse verwenden.|  
+|**TRACE-Konstante definieren**|C#und F#: Legen Sie das Kontrollkästchen aktiviert. Dadurch kann die Anwendung die Trace-Klasse verwenden.|  
+|**Code optimieren**|C#, F#, und Visual Basic: Legen Sie auf "false". Optimierter Code ist schwieriger zu debuggen, da die generierten Anweisungen nicht direkt mit dem Quellcode übereinstimmen. Wenn das Programm einen Fehler aufweist, der nur im optimierten Code auftritt, können Sie diese Einstellung aktivieren. Beachten Sie jedoch, dass der im Fenster **Disassembly** angezeigte Code aus optimiertem Code generiert wurde, der möglicherweise nicht mit dem Code im Code-Editor übereinstimmt. Um optimierten Code zu debuggen, müssen Sie deaktivieren [nur mein Code](just-my-code.md).<br /><br /> Weitere Informationen finden Sie unter [Projekteinstellungen für C# Debug Configurations](../debugger/project-settings-for-csharp-debug-configurations.md) oder [Projekteinstellungen für eine Visual Basic-Debugkonfiguration](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).|  
+|**Ausgabepfad**|Legen Sie als Ausgabepfad „bin\Debug\\\“ fest.|  
+|**Erweiterte Kompilierungsoptionen**|nur Visual Basic. Klicken Sie auf **Erweitert**, um die erweiterten Eigenschaften festzulegen, die in der folgenden Tabelle beschrieben werden.|  
   
 ### <a name="advanced-compiler-settings-dialog-box"></a>Dialogfeld "Erweiterte Compilereinstellungen"  
   
@@ -60,6 +55,3 @@ Bestimmte Eigenschaften sollten für alle Szenarios des verwalteten Debuggens gl
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von verwaltetem Code](../debugger/debugging-managed-code.md)   
  [C#-, F#- und Visual Basic-Projekttypen](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
-
-
-

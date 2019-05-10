@@ -1,14 +1,9 @@
 ---
 title: Kann nicht zu einem Funktionsergebnis zuweisen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5003
 dev_langs:
@@ -16,16 +11,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: ee8ffb3a-1451-4cb3-99bf-5e9cf8b77d79
-caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1a29c3f20392dc216c0306137c0dec6b22aaa58a
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 226056f139e45f432d757aff8f8774b013742de3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54093860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946601"
 ---
 # <a name="cannot-assign-to-a-function-result"></a>Zuweisen zu einem Funktionsergebnis nicht möglich
 Sie haben versucht, einen Wert zu einem Funktionsergebnis zuzuweisen. Das Ergebnis einer Funktion einer Variablen zugewiesen werden kann, aber es kann nicht als Variable verwendet werden. Wenn Sie einen neuen Wert für die Funktion selbst zuweisen möchten, lassen Sie die Klammern (den Funktionsaufruf-Operator). Das folgende Beispiel zeigt eine Situation, in der dieser Fehler generiert wird.  
@@ -36,13 +30,13 @@ myFunction() = 42;  // Attempting to assign the value 42 to the result of the fu
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Verwenden Sie den Wert des Ergebnisses eines Funktionsaufrufs nicht etwa Sie können *zuweisen*. Sie können das Ergebnis des Funktionsaufrufs zuweisen *auf eine Variable* jedoch.  
+- Verwenden Sie den Wert des Ergebnisses eines Funktionsaufrufs nicht etwa Sie können *zuweisen*. Sie können das Ergebnis des Funktionsaufrufs zuweisen *auf eine Variable* jedoch.  
   
     ```JavaScript  
     myVar = myFunction(42);  
     ```  
   
--   Alternativ können Sie der Funktion selbst (und nicht den Rückgabewert) einer Variablen zuweisen.  
+- Alternativ können Sie der Funktion selbst (und nicht den Rückgabewert) einer Variablen zuweisen.  
   
     ```JavaScript  
     myFunction = new Function("return 42;");  

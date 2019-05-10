@@ -1,30 +1,32 @@
 ---
 title: IDebugProgram2::WriteDump | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProgram2::WriteDump
 helpviewer_keywords:
 - IDebugProgram2::WriteDump
 ms.assetid: 375afb8c-882d-44db-bfa7-e2c9eb555122
-author: gregvanl
+caps.latest.revision: 12
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: d7282a7bd57397f6dc1a09dac44dfb0cdfcf9078
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: abafa1e3673a334105e8b8ec6e7957f631f000b2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915967"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62917291"
 ---
 # <a name="idebugprogram2writedump"></a>IDebugProgram2::WriteDump
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Schreibt einen Dump in eine Datei an.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT WriteDump(   
    DUMPTYPE  DumpType,  
    LPCOLESTR pszDumpUrl  

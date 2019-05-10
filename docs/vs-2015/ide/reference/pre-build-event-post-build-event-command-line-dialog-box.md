@@ -1,14 +1,9 @@
 ---
 title: Dialogfeld „Befehlszeile für Präbuildereignis“/„Befehlszeile für Postbuildereignis“ | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuildEventsBuilder
 - vb.ProjectPropertiesBuildEventsBuilder
@@ -38,29 +33,28 @@ ms.assetid: d49b2c57-24bf-4fb2-8351-5c4b6cca938f
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f4c2f0297195dc1a9be23a1dd8aca980a6e32958
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 213535d983f95f304b8e0fba3241fa502577f0f4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202513"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438053"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Dialogfeld "Befehlszeile für Präbuildereignis"/"Befehlszeile für Postbuildereignis"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Sie können Prä- oder Postbuildereignisse für die [Seite „Buildereignisse“, Projekt-Designer (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) direkt in das Bearbeitungsfeld eingeben oder Prä- und Postbuildmakros aus der Liste der verfügbaren Makros auswählen.  
   
 > [!NOTE]
->  Präbuildereignisse werden nicht ausgeführt, wenn das Projekt auf dem neuesten Stand ist, und es wird kein Build gestartet.  
+> Präbuildereignisse werden nicht ausgeführt, wenn das Projekt auf dem neuesten Stand ist, und es wird kein Build gestartet.  
   
 ## <a name="ui-element-list"></a>Liste der Elemente der Benutzeroberfläche  
  **Bearbeitungsfeld der Befehlszeile**  
  Enthält die auszuführenden Ereignisse für den Prä- oder Postbuild.  
   
 > [!NOTE]
->  Fügen Sie allen Postbuildbefehlen, die BAT-Dateien ausführen, eine `call`-Anweisung hinzu. Beispielsweise `call C:\MyFile.bat` oder `call C:\MyFile.bat call C:\MyFile2.bat`.  
+> Fügen Sie allen Postbuildbefehlen, die BAT-Dateien ausführen, eine `call`-Anweisung hinzu. Beispielsweise `call C:\MyFile.bat` oder `call C:\MyFile.bat call C:\MyFile2.bat`.  
   
  **Makros**  
  Erweitert das Bearbeitungsfeld, um eine Liste der Makros anzuzeigen, die in das Bearbeitungsfeld der Befehlszeile eingefügt werden sollen.  
@@ -100,7 +94,4 @@ Sie können Prä- oder Postbuildereignisse für die [Seite „Buildereignisse“
  [Angeben von benutzerdefinierten Buildereignissen in Visual Studio](../../ide/specifying-custom-build-events-in-visual-studio.md)   
  [Seite "Buildereignisse", Projekt-Designer (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)   
  [Vorgehensweise: Festlegen von Buildereignissen (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
- [Gewusst wie: Angeben von Buildereignissen (C#)](../../ide/how-to-specify-build-events-csharp.md)
-
-
-
+ [Vorgehensweise: Angeben von Buildereignissen (C#)](../../ide/how-to-specify-build-events-csharp.md)

@@ -1,23 +1,27 @@
 ---
 title: Einfügen von XML-Dokumentationskommentaren
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 05104b9c734b35226fcd9a964372802f351605df
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 085e2fe029daf246f6883e6856ddff6a9bacccdc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964282"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790110"
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Vorgehensweise: Einfügen von XML-Kommentaren für die Generierung der Dokumentation
 
-Visual Studio unterstützt Sie dabei, Codeelemente wie z.B. Klassen und Methoden zu dokumentieren, indem es automatisch die Standardstruktur für XML-Dokumentationskommentare generiert. Sie können eine XML-Datei zur Kompilierzeit erstellen, die die Dokumentationskommentare enthält. Die vom Compiler generierte XML-Datei kann zusammen mit Ihrer .NET-Assembly verteilt werden, damit Visual Studio und andere IDEs mit IntelliSense QuickInfos über Typen und Member anzeigen können. Darüber hinaus kann die XML-Datei mithilfe von Tools wie [DocFX](https://dotnet.github.io/docfx/) und [Sandcastle](https://www.microsoft.com/download/details.aspx?id=10526) ausgeführt werden, um API-Verweiswebsites zu generieren.
+Visual Studio unterstützt Sie dabei, Codeelemente wie z.B. Klassen und Methoden zu dokumentieren, indem es automatisch die Standardstruktur für XML-Dokumentationskommentare generiert. Sie können eine XML-Datei zur Kompilierzeit erstellen, die die Dokumentationskommentare enthält.
+
+> [!TIP]
+> Informationen zum Konfigurieren des Namens und des Speicherorts der erzeugten XML-Datei finden Sie unter [Dokumentieren von Code mit XML-Kommentaren (C# Guide)](/dotnet/csharp/codedoc).
+
+Die vom Compiler generierte XML-Datei kann zusammen mit Ihrer .NET-Assembly verteilt werden, damit Visual Studio und andere IDEs mit IntelliSense QuickInfos über Typen und Member anzeigen können. Darüber hinaus kann die XML-Datei mithilfe von Tools wie [DocFX](https://dotnet.github.io/docfx/) und [Sandcastle](https://www.microsoft.com/download/details.aspx?id=10526) ausgeführt werden, um API-Verweiswebsites zu generieren.
 
 > [!NOTE]
 > Der Befehl **Kommentar einfügen**, der automatisch XML-Dokumentationskommentare einfügt, ist in [C#](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments) und [Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation) verfügbar. Dennoch können Sie [XML-Dokumentationskommentare in C++-Dateien](/cpp/ide/xml-documentation-visual-cpp) manuell einfügen, und weiterhin XML-Dokumentationskommentare zur Kompilierzeit generieren.

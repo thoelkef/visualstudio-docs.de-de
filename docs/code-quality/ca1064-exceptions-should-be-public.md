@@ -1,7 +1,6 @@
 ---
 title: 'CA1064: Ausnahmen sollten öffentlich sein.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1064
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 83eb224c-2456-4368-acf4-3b3378e67759
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b2698207f687656148d3c38106bc3e4da527e74
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8196d4c48bfb93735b62c6f24cb08ec462e64c91
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936957"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788580"
 ---
 # <a name="ca1064-exceptions-should-be-public"></a>CA1064: Ausnahmen sollten öffentlich sein.
 

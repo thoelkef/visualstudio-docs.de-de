@@ -1,7 +1,6 @@
 ---
 title: Toolbox, Registerkarte „Komponenten“
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.CHOOSEITEMS.FrameworkComponents
@@ -11,15 +10,15 @@ helpviewer_keywords:
 - Toolbox, Components tab
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3324063e80bdb33ec928135ef8760c5e15c7a8c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 24f5e486d49dca8290c9063625132f673bf79c3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62944944"
 ---
 # <a name="toolbox-components-tab"></a>Toolbox, Registerkarte „Komponenten“
 

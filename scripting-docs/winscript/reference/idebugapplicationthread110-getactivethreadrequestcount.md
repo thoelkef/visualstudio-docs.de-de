@@ -2,7 +2,6 @@
 title: IDebugApplicationThread110::GetActiveThreadRequestCount | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,18 +13,18 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fb4d19bb77a4380c3c0a04f7e7808b82ca3f6ae4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
-ms.translationtype: MT
+ms.openlocfilehash: 3df2f0c44e42cf9e2c2aa846db4b88821fd73996
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726280"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440572"
 ---
 # <a name="idebugapplicationthread110getactivethreadrequestcount"></a>IDebugApplicationThread110::GetActiveThreadRequestCount
-Gibt die Anzahl der Threadanforderungen aus dem PDM Thread wechseln Mechanismen, die gerade verarbeitet werden. Diese Nummer ist in der Regel 0 oder 1. Allerdings die Zahl kann höher sein, wenn ein Thread-Aufruf startet die Verarbeitung jedoch einen synchronen Aufruf nicht genügend Threads löst, oder andernfalls den Thread hält und eingehende Aufrufe für erneut verarbeitet werden kann (z. B. durch das Auslösen einer [ IRemoteDebugApplicationEvents-Schnittstelle](../../winscript/reference/iremotedebugapplicationevents-interface.md) -Ereignis, das im Debugger Thread ausgestellt wird).  
+Gibt die Anzahl der Threadanforderungen aus der PDM Threadwechsel Mechanismen, die gerade verarbeitet werden zurück. Diese Nummer ist in der Regel 0 oder 1. Jedoch die Zahl kann höher sein, wenn ein Thread-Aufruf startet die Verarbeitung jedoch einen synchronen Aufruf Out-of-Thread startet oder andernfalls den Thread hält und eingehende Aufrufe an die erneut verarbeitet werden kann (z. B. durch Auslösen einer [ IRemoteDebugApplicationEvents-Schnittstelle](../../winscript/reference/iremotedebugapplicationevents-interface.md) -Ereignis, das für den Debuggerthread ausgestellt wird).  
   
 > [!IMPORTANT]
->  [IDebugApplicationThread110-Schnittstelle](../../winscript/reference/idebugapplicationthread110-interface.md) wird implementiert von PDM V11. 0 und höher. Gefunden in activdbg100.h.  
+> [IDebugApplicationThread110-Schnittstelle](../../winscript/reference/idebugapplicationthread110-interface.md) wird implementiert von PDM V11. 0 und höher. Gefunden in activdbg100.h.  
   
 ## <a name="syntax"></a>Syntax  
   

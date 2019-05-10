@@ -2,7 +2,6 @@
 title: IDebugApplication::HandleBreakPoint | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0478d0154ee79c1781885b94ae342e421e61e5e1
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
-ms.translationtype: MT
+ms.openlocfilehash: 5e3444e6eedde9576216552e41abb0e97aafa2d7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54095367"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412381"
 ---
 # <a name="idebugapplicationhandlebreakpoint"></a>IDebugApplication::HandleBreakPoint
 Bewirkt, dass den aktuelle Thread blockiert, und sendet eine Benachrichtigung des Haltepunkts an der Debugger-IDE.  
@@ -55,7 +54,7 @@ HRESULT HandleBreakPoint(
  Eine Sprach-Engine ruft diese Methode im Kontext eines Threads, die einen Haltepunkt trifft. Diese Methode blockiert den aktuellen Thread und sendet eine Haltepunkt-Benachrichtigung an den Debugger-IDE. Wenn der Debugger die Anwendung wird die `pbra` Parameter gibt an, welche Aktionen durchzuführen sind.  
   
 > [!NOTE]
->  Die Sprach-Engine kann durch den Thread zum Ausführen von Aufgaben wie z.B. das Auflisten von Stack frames oder Auswerten von Ausdrücken bei der der Breakpoint aufgerufen werden.  
+> Die Sprach-Engine kann durch den Thread zum Ausführen von Aufgaben wie z.B. das Auflisten von Stack frames oder Auswerten von Ausdrücken bei der der Breakpoint aufgerufen werden.  
   
  Diese Methode bewirkt, dass `IApplicationDebugger::onHandleBreakPoint` aufgerufen werden.  
   

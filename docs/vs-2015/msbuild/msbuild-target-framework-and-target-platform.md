@@ -1,30 +1,24 @@
 ---
 title: MSBuild-Zielframework und -Zielplattform | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 ms.assetid: df6517c5-edd6-4cc4-97ad-b3cdfc78e799
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 74ca7eb25aac26eb66628ea76be502e4a244a2bd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1a550b4a6634604594da0893e3f420fd9c38ca3c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923367"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650732"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild-Zielframework und -Zielplattform
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Ein Projekt kann erstellt werden, um in einem *Zielframework*, bei dem es sich um eine bestimmte Version von .NET Framework handelt, und auf einer *Zielplattform*, bei der es sich um eine bestimmte Softwarearchitektur handelt, ausgeführt zu werden.  Beispielsweise können Sie eine Anwendung für die Ausführung in .NET Framework 2.0 auf einer 32-Bit-Plattform entwickeln, die mit der 802x86-Prozessorfamilie kompatibel ist ("x86"). Die Kombination von Zielframework und Zielplattform wird als *Zielkontext* bezeichnet.  
   
 ## <a name="target-framework-and-profile"></a>Zielframework und -profil  
@@ -93,6 +87,3 @@ Ein Projekt kann erstellt werden, um in einem *Zielframework*, bei dem es sich u
   
 ## <a name="see-also"></a>Siehe auch  
  [Festlegen von Zielversionen](../msbuild/msbuild-multitargeting-overview.md)
-
-
-

@@ -8,67 +8,54 @@ dev_langs:
 helpviewer_keywords:
 - Word [Office development in Visual Studio], walkthroughs
 - walkthroughs [Office development in Visual Studio], Word
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a439b100c273ee7e884e54b03a44049ad8494935
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: af68c595134aa52979d68065de1249124ca8bca0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009288"
 ---
 # <a name="walkthroughs-using-word"></a>Exemplarische Vorgehensweisen mit Word
-  Die folgenden exemplarischen Vorgehensweisen zeigen, wie Sie Anpassungen auf Dokumentebene und VSTO-Add-Ins zum Automatisieren von Microsoft Office Word und Anpassen der Benutzeroberfläche (User Interface, UI) verwenden können.  
-  
-## <a name="document-level-walkthroughs"></a>Exemplarische Vorgehensweisen auf Dokumentebene für  
- [Exemplarische Vorgehensweise: Erstellen der ersten Anpassung der auf Dokumentebene für Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)  
- Veranschaulicht, wie eine grundlegende Anpassung auf Dokumentebene für Word erstellt wird.  
-  
- [Exemplarische Vorgehensweise: Einfügen von Text in ein Dokument aus einem Aktionsbereich](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
- Zeigt , wie Text einem Word-Dokument hinzugefügt wird, wenn Benutzer Text in Steuerelemente in einem Aktionsbereich eingeben.  
-  
- [Exemplarische Vorgehensweise: Binden von Daten an Steuerelemente in einem Word-Aktionsbereich](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)  
- Zeigt , wie Daten in einem Aktionsbereich an Steuerelemente gebunden werden. Die Steuerelemente zeigen eine Master/Detail-Beziehung zwischen Tabellen in einer SQL Server-Datenbank.  
-  
- [Exemplarische Vorgehensweise: Ändern der dokumentformatierung mit CheckBox-Steuerelementen](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)  
- Zeigt, wie Kontrollkästchen zum Ändern der Formatierung in einem Word-Dokument verwendet werden.  
-  
- [Exemplarische Vorgehensweise: Anzeigen von Text in einem Textfeld in einem Dokument mithilfe einer Schaltfläche](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)  
- Zeigt, wie Schaltflächen und Textfelder in Word-Dokumenten verwendet werden.  
-  
- [Exemplarische Vorgehensweise: Aktualisieren eines Diagramms in einem Dokument mithilfe von Optionsfeldern](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)  
- Zeigt, wie Diagrammformatvorlagen in einem Word-Dokument mithilfe von Optionsschaltflächen in einer Anpassung auf Dokumentebene geändert werden.  
-  
- [Exemplarische Vorgehensweise: Erstellen von Kontextmenüs für Lesezeichen](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)  
- Veranschaulicht das Erstellen eines Kontextmenüs, das zum Formatieren des Texts in einem Lesezeichen verwendet werden kann.  
-  
- [Exemplarische Vorgehensweise: Aufrufen von Code aus VBA in einem Visual Basic-Projekt](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)  
- Veranschaulicht, wie Code in einer Anpassungsassembly über VBA-Code im Dokument aufgerufen wird.  
-  
- [Exemplarische Vorgehensweise: Erstellen Sie eine Vorlage mithilfe von Inhaltssteuerelementen](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)  
- Zeigt, wie Inhaltssteuerelemente verwendet werden, um strukturierten und wiederverwendbaren Inhalt in einer Word-Vorlage zu erstellen.  
-  
- [Exemplarische Vorgehensweise: Binden von Inhaltssteuerelementen an benutzerdefinierte XML-Abschnitte](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)  
- Veranschaulicht, wie Inhaltssteuerelemente in einem Word-Dokument an XML-Daten gebunden werden, die im Dokument gespeichert sind.  
-  
-## <a name="application-level-walkthroughs"></a>Exemplarische Vorgehensweisen auf Anwendungsebene für  
- [Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
- Veranschaulicht die Erstellung eines grundlegenden VSTO-Add-Ins für Word.  
-  
- [Exemplarische Vorgehensweise: Hinzufügen von Steuerelementen zu einem Dokument zur Laufzeit in einem VSTO-Add-in](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md)  
- Veranschaulicht das Hinzufügen von Steuerelementen zu einem Dokument mithilfe eines VSTO-Add-Ins.  
-  
- [Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit Menüband-XML](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
- Veranschaulicht, wie eine benutzerdefinierte Registerkarte des Menübands mithilfe einer XML-Beschreibungsdatei in einem VSTO-Add-In erstellt wird.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Exemplarische Vorgehensweisen in Excel](../vsto/walkthroughs-using-excel.md)   
- [Daten in Exemplarische Vorgehensweisen für Office-Lösungen](../vsto/data-in-office-solutions-walkthroughs.md)   
- [Exemplarische Vorgehensweisen für die Anpassung von Office-Benutzeroberfläche](../vsto/office-ui-customization-walkthroughs.md)   
- [Vorgehensweisen für Sicherheit und Bereitstellung](../vsto/security-and-deployment-walkthroughs.md)   
- [Office-Entwicklungsbeispiele und exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md)   
- [Programmieren von VSTO-Add-ins](../vsto/programming-vsto-add-ins.md)   
- [Programmieren von Anpassungen auf Dokumentebene](../vsto/programming-document-level-customizations.md)  
+  Die folgenden exemplarischen Vorgehensweisen zeigen, wie Sie Anpassungen auf Dokumentebene und VSTO-Add-Ins zum Automatisieren von Microsoft Office Word und Anpassen der Benutzeroberfläche (User Interface, UI) verwenden können.
+
+## <a name="document-level-walkthroughs"></a>Exemplarische Vorgehensweisen auf Dokumentebene für
+- [Exemplarische Vorgehensweise: Erstellen der ersten Anpassung der auf Dokumentebene für Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md) wird veranschaulicht, wie eine grundlegende Anpassung der auf Dokumentebene für Word zu erstellen.
+
+- [Exemplarische Vorgehensweise: Einfügen von Text in ein Dokument aus einem Aktionsbereich](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md) wird veranschaulicht, wie Text in einem Word-Dokument hinzugefügt wird, wenn Benutzer Text in Steuerelementen in einem Aktionsbereich eingeben.
+
+- [Exemplarische Vorgehensweise: Binden von Daten an Steuerelemente in einem Word-Aktionsbereich](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md) wird veranschaulicht, wie Sie Daten an Steuerelemente in einem Bereich "Aktionen" binden. Die Steuerelemente zeigen eine Master/Detail-Beziehung zwischen Tabellen in einer SQL Server-Datenbank.
+
+- [Exemplarische Vorgehensweise: Ändern der dokumentformatierung mit CheckBox-Steuerelementen](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md) veranschaulicht, wie Sie die Kontrollkästchen für ein Worddokument zum Ändern der Formatierung.
+
+- [Exemplarische Vorgehensweise: Anzeigen von Text in einem Textfeld in einem Dokument mithilfe einer Schaltfläche](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md) veranschaulicht, wie Schaltflächen und Textfeldern in Word-Dokumenten.
+
+- [Exemplarische Vorgehensweise: Aktualisieren eines Diagramms in einem Dokument mithilfe von Optionsfeldern](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md) wird veranschaulicht, wie Diagrammformatvorlagen in einem Word-Dokument zu ändern, indem Sie mithilfe von Optionsfeldern in einer Anpassung auf Dokumentebene.
+
+- [Exemplarische Vorgehensweise: Erstellen von Kontextmenüs für Lesezeichen](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md) veranschaulicht, wie ein Kontextmenü aufrufen, die zum Formatieren des Texts in einem Lesezeichen verwendet werden können.
+
+- [Exemplarische Vorgehensweise: Aufrufen von Code aus VBA in einem Visual Basic-Projekt](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md) wird veranschaulicht, wie zum Aufrufen von Code in einer Anpassungsassembly aus VBA-Code im Dokument.
+
+- [Exemplarische Vorgehensweise: Erstellen Sie eine Vorlage mithilfe von Inhaltssteuerelementen](../vsto/walkthrough-creating-a-template-by-using-content-controls.md) veranschaulicht, wie Inhaltssteuerelemente zum Erstellen strukturierter und wiederverwendbarer Inhalte in einem Word-Vorlage.
+
+- [Exemplarische Vorgehensweise: Binden von Inhaltssteuerelementen an benutzerdefinierte XML-Abschnitte](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md) wird veranschaulicht, wie Inhaltssteuerelemente in Word-Dokumenten auf XML-Daten zu binden, die im Dokument gespeichert wird.
+
+## <a name="application-level-walkthroughs"></a>Exemplarische Vorgehensweisen auf Anwendungsebene für
+- [Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins für Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md) wird veranschaulicht, wie Sie ein einfaches VSTO-Add-in für Word zu erstellen.
+
+- [Exemplarische Vorgehensweise: Hinzufügen von Steuerelementen zu einem Dokument zur Laufzeit in einem VSTO-Add-in](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md) veranschaulicht das Hinzufügen von Steuerelementen zu einem Dokument mithilfe eines VSTO-Add-Ins.
+
+- [Exemplarische Vorgehensweise: Erstellen eine benutzerdefinierte Registerkarte mit Menüband-XML-](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md) veranschaulicht, wie eine benutzerdefinierte Registerkarte des Menübands mithilfe einer XML-Beschreibungsdatei in einem VSTO-Add-in.
+
+## <a name="see-also"></a>Siehe auch
+- [Exemplarische Vorgehensweisen in Excel](../vsto/walkthroughs-using-excel.md)
+- [Daten in Exemplarische Vorgehensweisen für Office-Lösungen](../vsto/data-in-office-solutions-walkthroughs.md)
+- [Exemplarische Vorgehensweisen für die Anpassung von Office-Benutzeroberfläche](../vsto/office-ui-customization-walkthroughs.md)
+- [Vorgehensweisen für Sicherheit und Bereitstellung](../vsto/security-and-deployment-walkthroughs.md)
+- [Office-Entwicklungsbeispiele und exemplarische Vorgehensweisen](../vsto/office-development-samples-and-walkthroughs.md)
+- [Programmieren von VSTO-Add-ins](../vsto/programming-vsto-add-ins.md)
+- [Programmieren von Anpassungen auf Dokumentebene](../vsto/programming-document-level-customizations.md)

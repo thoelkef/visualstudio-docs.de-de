@@ -1,7 +1,6 @@
 ---
 title: Schriftarten und Farben, Umgebung, Dialogfeld "Optionen"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.FontsAndColors
@@ -23,19 +22,19 @@ helpviewer_keywords:
 ms.assetid: c767d302-51ed-47a8-a527-c07bce2aa485
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55f402eaaa1ee11feb115e38ae5e7759bbbb93f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b1576af2511f3bd24c26a64c1667c6b466bedd1e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966011"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790207"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Schriftarten und Farben, Umgebung, Dialogfeld "Optionen"
 
-Auf der Seite **Schriftarten und Farben** des Dialogfelds **Optionen** können Sie ein benutzerdefiniertes Schriftart- und Farbschema für verschiedene Elemente der Benutzeroberfläche in der integrierten Entwicklungsumgebung (IDE) festlegen. Sie können dieses Dialogfeld aufrufen, indem Sie auf **Extras/Optionen** klicken und dann **Umgebung/Schriftarten und Farben** wählen. Wenn diese Seite nicht in der Liste angezeigt wird, aktivieren Sie im Dialogfeld **Optionen** das Kontrollkästchen **Alle Einstellungen anzeigen**.
+Auf der Seite **Schriftarten und Farben** des Dialogfelds **Optionen** können Sie ein benutzerdefiniertes Schriftart- und Farbschema für verschiedene Elemente der Benutzeroberfläche in der integrierten Entwicklungsumgebung (IDE) festlegen. Sie können dieses Dialogfeld aufrufen, indem Sie auf **Extras** > **Optionen** klicken und dann **Umgebung** > **Schriftarten und Farben** auswählen.
 
 Änderungen am Farbschema gelten noch nicht für die Sitzung, in der Sie die Änderungen vorgenommen haben. Sie können Farbänderungen auswerten, indem Sie eine weitere Instanz von Visual Studio öffnen und die Bedingungen erzeugen, unter denen die Änderungen gelten sollen.
 
@@ -43,30 +42,36 @@ Auf der Seite **Schriftarten und Farben** des Dialogfelds **Optionen** können S
 
 Zeigt eine Liste aller Elemente der Benutzeroberfläche an, für die Sie Schriftart- und Farbschemas ändern können. Nach Auswahl eines Elements in dieser Liste können Sie die Farbeinstellungen für das in **Elemente anzeigen** ausgewählte Element anpassen.
 
--   **Text-Editor**
+- **Text-Editor**
 
      Änderungen an den Einstellungen für den Schriftschnitt und -grad sowie die Farbwiedergabe unter „Text-Editor“ beeinflussen die Darstellung von Text in Ihrem Standard-Text-Editor. Dokumente, die in einem Text-Editor außerhalb der IDE geöffnet werden, sind von diesen Einstellungen nicht betroffen.
 
--   **Drucker**
+- **Drucker**
 
      Änderungen an den Einstellungen für den Schriftschnitt und -grad sowie die Farbwiedergabe unter „Drucker“ beeinflussen die Darstellung von Text in gedruckten Dokumenten.
 
     > [!NOTE]
     > Bei Bedarf können Sie für den Druck eine andere Standardschriftart als für die Anzeige im Text-Editor auswählen. Dies kann beim Drucken von Code hilfreich sein, der sowohl Einzel- als auch Doppelbytezeichen enthält.
 
--   **Anweisungsvervollständigung**
+- **Anweisungsvervollständigung**
 
      Ändert den Schriftschnitt und -grad für den Text, der im Popupfeld mit der Anweisungsvervollständigung im Editor angezeigt wird.
 
--   **Editor-QuickInfo**
+- **Editor-QuickInfo**
 
      Ändert den Schriftschnitt und -grad für den Text, der in QuickInfos im Editor angezeigt wird.
 
--   **Umgebungsschriftart**
+- **Umgebungsschriftart**
 
-     Ändert den Schriftschnitt und -grad für alle Elemente der IDE-Benutzeroberfläche, für die keine separate Option unter **Einstellungen anzeigen für** vorhanden ist. Diese Option gilt beispielsweise für die **Startseite**, hat jedoch keine Auswirkung auf das Fenster **Ausgabe**.
+     Ändert den Schriftschnitt und -grad für alle Elemente der IDE-Benutzeroberfläche, für die keine separate Option unter **Einstellungen anzeigen für** vorhanden ist.
 
--   **[Alle Texttoolfenster]**
+     ::: moniker range="vs-2017"
+
+     Diese Option gilt beispielsweise für die **Startseite**, hat jedoch keine Auswirkung auf das Fenster **Ausgabe**.
+
+     ::: moniker-end
+
+- **[Alle Texttoolfenster]**
 
      Änderungen an den Einstellungen für den Schriftschnitt und -grad sowie die Farbwiedergabe für dieses Element betreffen die Darstellung von Text in Toolfenstern, die über Ausgabebereiche in der IDE verfügen. Beispiele: Ausgabefenster, Befehlsfenster, Direktfenster usw.
 
@@ -213,7 +218,7 @@ Elemente können die Vordergrundfarbe von anderen Anzeigeelementen wie z.B. **Nu
 
 **Default**
 
-Die Farbe, die für das Element angezeigt wird, wenn Sie Visual Studio das erste Mal starten. Durch Klicken auf die Schaltfläche **Standardwerte verwenden** wird diese Farbe wiederhergestellt.
+Die Farbe, die für das Element angezeigt wird, wenn Sie Visual Studio das erste Mal öffnen. Durch Klicken auf die Schaltfläche **Standardwerte verwenden** wird diese Farbe wiederhergestellt.
 
 **Benutzerdefiniert**
 
@@ -232,7 +237,7 @@ Elemente können die Hintergrundfarbe von anderen Anzeigeelementen wie z.B. **Nu
 
 **Default**
 
-Die Farbe, die für das Element angezeigt wird, wenn Sie Visual Studio das erste Mal starten. Durch Klicken auf die Schaltfläche **Standardwerte verwenden** wird diese Farbe wiederhergestellt.
+Die Farbe, die für das Element angezeigt wird, wenn Sie Visual Studio das erste Mal öffnen. Durch Klicken auf die Schaltfläche **Standardwerte verwenden** wird diese Farbe wiederhergestellt.
 
 **Benutzerdefiniert**
 

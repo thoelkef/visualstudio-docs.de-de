@@ -2,18 +2,17 @@
 title: Arbeitsbereich dateikontexte in Visual Studio | Microsoft-Dokumentation
 ms.date: 02/21/2018
 ms.topic: conceptual
-ms.assetid: 7aaa0e65-f492-49ea-a845-35bd14910ca7
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93690eab989cee62d756a774675bf1d46da017fb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 36f986db6f2c7b483b46060e1f514acc8dd9e758
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826863"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952813"
 ---
 # <a name="workspace-file-contexts"></a>Arbeitsbereich dateikontexte
 
@@ -27,7 +26,7 @@ Die häufigsten Szenarien für dateikontexte beziehen sich auf Build-, Debug- un
 
 ## <a name="file-context-lifecycle"></a>Datei-Kontext-Lebenszyklus
 
-Lebenszyklen für das ein `FileContext` sind nicht deterministisch. Zu jedem Zeitpunkt kann eine Komponente für eine Gruppe von der Kontexttypen asynchron anfordern. Anbieter, die eine Teilmenge von der Kontexttypen Anforderung unterstützen werden abgefragt. Die `IWorkspace` -Instanz fungiert als mittelsmann zwischen dem Consumer und Anbieter über die <xref:Microsoft.VisualStudio.Workspace.IWorkspace.GetFileContextsAsync%2A> Methode. Consumer möglicherweise einen Anforderungskontext und führen Sie eine kurzfristige Aktion, die auf Grundlage des Kontexts, während andere möglicherweise eine Anforderungskontext und langlebig verweisen. 
+Lebenszyklen für das ein `FileContext` sind nicht deterministisch. Zu jedem Zeitpunkt kann eine Komponente für eine Gruppe von der Kontexttypen asynchron anfordern. Anbieter, die eine Teilmenge von der Kontexttypen Anforderung unterstützen werden abgefragt. Die `IWorkspace` -Instanz fungiert als mittelsmann zwischen dem Consumer und Anbieter über die <xref:Microsoft.VisualStudio.Workspace.IWorkspace.GetFileContextsAsync%2A> Methode. Consumer möglicherweise einen Anforderungskontext und führen Sie eine kurzfristige Aktion, die auf Grundlage des Kontexts, während andere möglicherweise eine Anforderungskontext und langlebig verweisen.
 
 Änderungen können Dateien auftreten, die dazu führen, einen Kontext dass veraltet. Der Anbieter kann ein Ereignis auslösen, auf die `FileContext` Consumer von Updates benachrichtigt. Beispielsweise kann wird ein buildkontext für eine Datei bereitgestellt, aber eine Änderung auf dem Datenträger wird diesem Kontext ungültig, klicken Sie dann der ursprüngliche Producer das Ereignis aufrufen. Verweisen Sie immer noch auf Consumer `FileContext` kann dann für einen neuen requery `FileContext`.
 

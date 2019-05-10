@@ -2,7 +2,6 @@
 title: IDispatchEx::InvokeEx | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e631ecca1181a25fa3cf419f5fc96666f0db3cd6
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 33494836e463c9c2fd74acf7835d7e4630747b0e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54086527"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000746"
 ---
 # <a name="idispatchexinvokeex"></a>IDispatchEx::InvokeEx
 Ermöglicht den Zugriff auf Eigenschaften und Methoden verfügbar gemacht werden, indem ein `IDispatchEx` Objekt.  
@@ -52,7 +51,7 @@ HRESULT InvokeEx(
  `wFlags`  
  Die gültige Werte für `wFlags` sind:  
   
- DISPATCH_PROPERTYGET &AMP;#124; DISPATCH_METHOD &AMP;#124; DISPATCH_PROPERTYPUT &AMP;#124; DISPATCH_PROPERTYPUTREF &AMP;#124; DISPATCH_CONSTRUCT  
+ DISPATCH_PROPERTYGET &#124; DISPATCH_METHOD &#124; DISPATCH_PROPERTYPUT &#124; DISPATCH_PROPERTYPUTREF &#124; DISPATCH_CONSTRUCT  
   
  Flags, die den Kontext der beschreiben die `InvokeEx` aufrufen:  
   

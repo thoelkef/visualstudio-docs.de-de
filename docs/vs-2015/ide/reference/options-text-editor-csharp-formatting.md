@@ -1,14 +1,9 @@
 ---
 title: Optionen, Text-Editor, C#, Formatierung | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting.Spacing
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting.NewLines
@@ -30,22 +25,21 @@ ms.assetid: 5a7bb668-1d0c-4ffe-9508-24592813162e
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9acd9d882fb2cf0decff4c9f4ab657cf831e74ee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 96828d4fe9871e81b05923f2dc1bf9ca7a53faaa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441335"
 ---
 # <a name="options-text-editor-c-formatting"></a>Optionen, Text-Editor, C#, Formatierung
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Verwenden Sie das Dialogfeld mit der Eigenschaftenseite **Formatierung**, um Optionen zur Formatierung von Code im Code-Editor festzulegen. Klicken Sie zum Öffnen dieses Dialogfelds im Menü **Extras** auf **Optionen**, erweitern Sie den Ordner **Text-Editor**, erweitern Sie **C#**, und klicken Sie dann auf **Formatierung**.  
   
 > [!NOTE]
->  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="general-settings"></a>Allgemeine Einstellungen  
  Es hängt von den allgemeinen Einstellungen ab, wie Formatierungsoptionen für den Code vom Code-Editor übernommen werden.  
@@ -61,11 +55,8 @@ Verwenden Sie das Dialogfeld mit der Eigenschaftenseite **Formatierung**, um Opt
 ## <a name="preview-window"></a>Vorschaufenster  
  Die Bereiche, in denen Optionen für **Einzug**, **Neue Zeilen**, **Abstand** und **Umbruch** angezeigt werden, enthalten jeweils ein Vorschaufenster. Im Vorschaufenster wird die Auswirkung der einzelnen Optionen angezeigt. Wählen Sie zur Verwendung des Vorschaufensters eine Formatierungsoption aus. Im Vorschaufenster wird ein Beispiel der ausgewählten Option angezeigt. Wenn Sie die Einstellung ändern, beispielsweise ein Kontrollkästchen aktivieren oder deaktivieren, wird das Vorschaufenster in Anpassung an die neue Einstellung aktualisiert.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Durch die Einzugsoptionen auf den Seiten **Tabstopps** für die jeweiligen Sprachen wird lediglich festgelegt, an welche Position der Cursor im Code-Editor gesetzt wird, wenn Sie am Ende einer Zeile die EINGABETASTE drücken. Die Einzugsoptionen unter **Formatierung** werden bei der automatischen Codeformatierung übernommen, beispielsweise wenn Sie Code bei aktivierter Option **Einzug beim Einfügen anpassen** in die Datei einfügen, und wenn der zu formatierende Block manuell eingegeben wird.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Allgemein, Umgebung, Optionen (Dialogfeld)](../../ide/reference/general-environment-options-dialog-box.md)
-
-
-

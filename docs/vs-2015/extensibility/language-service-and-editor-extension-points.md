@@ -1,49 +1,44 @@
 ---
 title: Sprachdienst und Erweiterungspunkte-Editor | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extension points
 ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
 caps.latest.revision: 34
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0bcbef5094bd12392b7ea79865e1d28e2934a11e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5bf0e34c76406b054ea2d27434f749b676b0b30c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743585"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439806"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Erweiterungspunkte für den Sprachdienst und den Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Der Editor stellt Erweiterungspunkte, die Sie als Managed Extensibility Framework (MEF) Komponenten, einschließlich der meisten Language Service-Features erweitern können. Dies sind die haupterweiterung zeigen Kategorien:  
   
--   Inhaltstypen  
+- Inhaltstypen  
   
--   Klassifizierungstypen und Klassifizierung-Formate  
+- Klassifizierungstypen und Klassifizierung-Formate  
   
--   Rändern und Bildlaufleisten  
+- Rändern und Bildlaufleisten  
   
--   Tags  
+- Tags  
   
--   Zusatzelemente  
+- Zusatzelemente  
   
--   Maus-Prozessoren  
+- Maus-Prozessoren  
   
--   Drop-Handler  
+- Drop-Handler  
   
--   Optionen  
+- Optionen  
   
--   IntelliSense  
+- IntelliSense  
   
 ## <a name="extending-content-types"></a>Erweitern von Inhaltstypen  
  Inhaltstypen sind die Definitionen für die Arten von behandelten vom Editor, z. B. Text, "Text", "Code" oder "CSharp". Sie definieren einen neuen Inhaltstyp durch Deklarieren einer Variablen des Typs <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> und dem neuen Inhaltstyp einen eindeutigen Namen. Um den Inhaltstyp für den Editor zu registrieren, exportieren Sie es zusammen mit den folgenden Attributen:  
@@ -98,7 +93,7 @@ internal static ContentTypeDefinition TestContentTypeDefinition;
   
 - ENC  
   
-- (Findresults) aus  
+- FindResults  
   
 - F#  
   
@@ -120,7 +115,7 @@ internal IContentTypeRegistryService ContentTypeRegistryService { get; set; }
  Verwenden Sie zum Zuordnen eines Inhaltstyps mit einer Dateinamenerweiterung <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition>.  
   
 > [!NOTE]
->  In Visual Studio Dateinamenerweiterungen Weitere Erweiterungen registriert sind, mithilfe der <xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute> auf ein Sprachpaket für den Dienst. Die <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> ordnet einen MEF-Inhaltstyp eine Dateinamenerweiterung, die auf diese Weise registriert wurde.  
+> In Visual Studio Dateinamenerweiterungen Weitere Erweiterungen registriert sind, mithilfe der <xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute> auf ein Sprachpaket für den Dienst. Die <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> ordnet einen MEF-Inhaltstyp eine Dateinamenerweiterung, die auf diese Weise registriert wurde.  
   
  Um die Dateinamenerweiterung der Content-Type-Definition exportieren, müssen Sie die folgenden Attribute einschließen:  
   
@@ -236,7 +231,7 @@ internal IEditorFormatMapService FormatMapService { get; set; }
   
    Dies sind die integrierten Ränder:  
   
-  - "WPF-horizontale Bildlaufleiste"  
+  - "Wpf Horizontal Scrollbar"  
   
   - "Wpf vertikale Bildlaufleiste"  
   
@@ -283,7 +278,7 @@ internal class TestTaggerProvider : ITaggerProvider
 - <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>: ein Zusatzelement zugeordnet.  
   
   > [!NOTE]
-  >  Ein Beispiel für eine <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, finden Sie unter der Definition HighlightWordTag in [Exemplarische Vorgehensweise: Hervorheben von Text](../extensibility/walkthrough-highlighting-text.md).  
+  > Ein Beispiel für eine <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, finden Sie unter der Definition HighlightWordTag in [Exemplarische Vorgehensweise: Markieren von Text](../extensibility/walkthrough-highlighting-text.md).  
   
 - <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>: zugeordneten Regionen, die erweitert oder reduziert werden, in der Gliederung werden können.  
   
@@ -329,7 +324,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
  Verweisen auf den Namen, die, den Sie in das Name-Attribut der Klasse (nicht den Anzeigenamen) festlegen, zum Anwenden dieser Formatdefinition, die ein Tag.  
   
 > [!NOTE]
->  Ein Beispiel für eine <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, finden Sie unter der HighlightWordFormatDefinition-Klasse in [Exemplarische Vorgehensweise: Hervorheben von Text](../extensibility/walkthrough-highlighting-text.md).  
+> Ein Beispiel für eine <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, finden Sie unter der HighlightWordFormatDefinition-Klasse in [Exemplarische Vorgehensweise: Markieren von Text](../extensibility/walkthrough-highlighting-text.md).  
   
 ## <a name="extending-adornments"></a>Erweitern von Randsteuerelementen  
  Zusatzelemente definieren die visuelle Effekte, die hinzugefügt werden können entweder auf den Text, der in einer Textansicht angezeigt wird, oder zeigen Sie auf den Text selbst. Sie können Ihre eigenen Zusatzelement definieren, als jede Art von <xref:System.Windows.UIElement>.  
@@ -338,7 +333,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
   
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: der Name des Zusatzelements ab.  
   
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: die Reihenfolge des Zusatzelements in Bezug auf andere Ebenen des Zusatzelements ab. Die Klasse <xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers> definiert vier Standardfolien: Auswahl, Gliederung, Einfügemarke und Text.  
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: die Reihenfolge des Zusatzelements in Bezug auf andere Ebenen des Zusatzelements ab. Die Klasse <xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers> vier Standardfolien definiert: Auswahl, Gliederung, Einfügemarke und Text.  
   
   Das folgende Beispiel zeigt die ExportAttribute auf eine Definition einer Ebene Zusatzelements ab.  
   
@@ -414,21 +409,21 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
   
 - <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.DropFormatAttribute>: der Text-Format für den dieser Ablagehandler gültig ist. Die folgenden Formate werden in der Reihenfolge ihrer Priorität von der höchsten zur niedrigsten behandelt:  
   
-  1.  Alle benutzerdefinierten format  
+  1. Alle benutzerdefinierten format  
   
-  2.  FileDrop  
+  2. FileDrop  
   
-  3.  EnhancedMetafile  
+  3. EnhancedMetafile  
   
-  4.  WaveAudio  
+  4. WaveAudio  
   
-  5.  RIFF  
+  5. RIFF  
   
-  6.  DIF  
+  6. Dif  
   
-  7.  Gebietsschema  
+  7. Gebietsschema  
   
-  8.  Palette  
+  8. Palette  
   
   9. PenData  
   
@@ -436,7 +431,7 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
   
   11. SymbolicLink  
   
-  12. XAML  
+  12. Xaml  
   
   13. XamlPackage  
   
@@ -512,39 +507,39 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 ### <a name="implementing-an-intellisense-source"></a>Implementieren eine IntelliSense-Quelle  
  Wenn eine Quelle anpassen möchten, müssen Sie (mindestens) der folgenden Quellschnittstellen implementieren:  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSource>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSource>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>  
   
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> ist veraltet zugunsten des <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.  
+> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> ist veraltet zugunsten des <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.  
   
  Darüber hinaus müssen Sie einen Anbieter der gleichen Art implementieren:  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSourceProvider>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSourceProvider>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>  
   
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> ist veraltet zugunsten des <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>.  
+> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> ist veraltet zugunsten des <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>.  
   
  Sie müssen den Anbieter zusammen mit den folgenden Attributen exportieren:  
   
--   <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: der Name der Quelle.  
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: der Name der Quelle.  
   
--   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: die Art des Inhalts (z. B. "Text" oder "code"), die auf die die Quelle angewendet wird.  
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: die Art des Inhalts (z. B. "Text" oder "code"), die auf die die Quelle angewendet wird.  
   
--   <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: die Reihenfolge, in der die Quelle angezeigt (in Bezug auf andere Quellen werden soll).  
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: die Reihenfolge, in der die Quelle angezeigt (in Bezug auf andere Quellen werden soll).  
   
--   Das folgende Beispiel zeigt ExportAttribute auf einen Vervollständigungsanbieter für die Datenquelle an.  
+- Das folgende Beispiel zeigt ExportAttribute auf einen Vervollständigungsanbieter für die Datenquelle an.  
   
 ```  
 Export(typeof(ICompletionSourceProvider))]  
@@ -560,7 +555,7 @@ internal class TestCompletionSourceProvider : ICompletionSourceProvider
   
  [Exemplarische Vorgehensweise: Anzeigen der Signaturhilfe](../extensibility/walkthrough-displaying-signature-help.md)  
   
- [Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigung](../extensibility/walkthrough-displaying-statement-completion.md)  
+ [Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigungen](../extensibility/walkthrough-displaying-statement-completion.md)  
   
 ### <a name="implementing-an-intellisense-controller"></a>Implementieren einen IntelliSense-Controller  
  Wenn einen Controller anpassen möchten, müssen Sie implementieren die <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseController> Schnittstelle. Darüber hinaus müssen Sie einen Controller-Anbieter zusammen mit den folgenden Attributen implementieren:  
@@ -584,4 +579,3 @@ internal class TestIntellisenseControllerProvider : IIntellisenseControllerProvi
  Weitere Informationen zur Verwendung von IntelliSense-Controller finden Sie in den folgenden exemplarischen Vorgehensweisen:  
   
  [Exemplarische Vorgehensweise: Anzeigen von QuickInfos](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
-

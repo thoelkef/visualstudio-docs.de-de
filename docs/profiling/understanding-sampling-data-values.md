@@ -1,23 +1,21 @@
 ---
 title: Grundlagen zu Samplingdatenwerten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - sampling profiling method
 - Profiling Tools, sampling
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6eb52273633e0b65aa4a7a7049198c49c20633d
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: f2668d5b60fba429613975cc24e751dbe07f87b7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477001"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830866"
 ---
 # <a name="understand-sampling-data-values"></a>Grundlagen zu Samplingdatenwerten
 
@@ -53,5 +51,5 @@ Der prozentuale Anteil der Gesamtanzahl exklusiver Samplings in der Profilerstel
 
 ## <a name="see-also"></a>Siehe auch
 
-[Vorgehensweise: Auswählen von Sammlungsmethoden](../profiling/how-to-choose-collection-methods.md)  
+[Vorgehensweise: Auswählen von Sammlungsmethoden](../profiling/how-to-choose-collection-methods.md)
 [Analysieren der durch Leistungstools erstellten Daten](../profiling/analyzing-performance-tools-data.md)

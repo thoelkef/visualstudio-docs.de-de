@@ -2,22 +2,21 @@
 title: Erstellen Sie ein Workflow Foundation-Projekt
 ms.date: 06/25/2018
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
 helpviewer_keywords:
 - Workflow Designer, creating a workflow project
 - creating a workflow project
 ms.assetid: 235a125e-ebe7-4a98-bf77-86c8558728fb
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0856ff93beef602d02defb58f90f69898a121f2c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 15c02312d5c257f13b9c0394790bc8a2611d7972
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943352"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949798"
 ---
 # <a name="workflow-project-templates"></a>Workflow-Projektvorlagen
 
@@ -35,22 +34,16 @@ Visual Studio bietet vier verschiedene Vorlagen für die Workflow-Projekt:
 
 - Aktivitäts-designerbibliothek
 
-Installieren Sie zuerst diese Vorlagen für den Zugriff auf die **Windows Workflow Foundation** Komponente von Visual Studio 2017. Ausführliche Anweisungen finden Sie unter [Installieren von Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
+Installieren Sie zuerst diese Vorlagen für den Zugriff auf die **Windows Workflow Foundation** Komponente von Visual Studio. Ausführliche Anweisungen finden Sie unter [Installieren von Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
-1. Nach der Installation der **Windows Workflow Foundation** Komponente, öffnen die **neues Projekt** Dialogfeld dazu **Datei** > **neu**  >  **Projekt**.
+1. Nach der Installation der **Windows Workflow Foundation** Komponente, wählen **Datei** > **neu** > **Projekt**.
 
-1. Wählen Sie im linken Bereich die **Visual C#-** > **Workflow** Kategorie (oder **Visual Basic** > **Workflow**, wenn Sie Visual Basic bevorzugen).
+1. Suchen Sie nach, und wählen Sie eine Workflow-Projektvorlage, z. B. die **Konsolenanwendung für Workflows** Vorlage.
 
-1. Wählen Sie im mittleren Bereich eine Projektvorlage, z. B. **Konsolenanwendung für Workflows**.
-
-1. In der **Namen** Geben Sie einen beschreibenden Namen für das Projekt in der es einfach identifizieren zu können.
-
-1. In der **Speicherort** Geben Sie das Verzeichnis, in dem Sie das Projekt gespeichert werden soll, oder wählen möchten **Durchsuchen** dorthin navigieren.
-
-1. In der **Lösung** Geben Sie den Namen für die neue Projektmappe. Wählen Sie **OK** zum Erstellen der Anwendung.
+1. Führen Sie zum Erstellen des Projekts.
 
    > [!NOTE]
-   > Wenn Sie ein neues Projekt zu einer vorhandenen Projektmappe hinzufügen möchten, öffnen Sie die Projektmappe in Visual Studio, mit der rechten Maustaste in der Lösung in **Projektmappen-Explorer**, und wählen Sie **hinzufügen** > **neu Projekt** zum Öffnen der **neues Projekt** Dialogfeld.
+   > Wenn Sie ein neues Projekt zu einer vorhandenen Projektmappe hinzufügen möchten, öffnen Sie die Projektmappe in Visual Studio, mit der rechten Maustaste in der Lösung in **Projektmappen-Explorer**, und wählen Sie **hinzufügen** > **neu Projekt**.
 
 ## <a name="workflow-console-app"></a>Workflow-Konsolen-app
 

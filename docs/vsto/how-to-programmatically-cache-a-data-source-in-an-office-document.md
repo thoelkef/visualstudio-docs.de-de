@@ -13,15 +13,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], caching
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 46411ef1827f6a5adead8ff58e42eaf68e6c58ae
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
-ms.translationtype: MT
+ms.openlocfilehash: 23ea89b25ca1bd1e7aa48ab1782d23bd7db057f0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54088490"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437110"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>Vorgehensweise: Programmgesteuertes Zwischenspeichern von Datenquellen in einem Office-Dokument
   Sie können ein Objekt, das dem Datencache in einem Dokument programmgesteuert hinzufügen, durch den Aufruf der `StartCaching` Methode von einem Host-Elements, z. B. eine <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>, oder <xref:Microsoft.Office.Tools.Excel.Worksheet>. Entfernen Sie ein Datenobjekt aus dem Datencache durch Aufrufen der `StopCaching` Methode eines Hostelements.
@@ -34,25 +34,25 @@ ms.locfileid: "54088490"
 
 ## <a name="to-programmatically-cache-a-data-object"></a>Ein Datenobjekt programmgesteuert zwischenspeichern
 
-1.  Das Datenobjekt auf Klassenebene, nicht innerhalb einer Methode zu deklarieren. In diesem Beispiel wird davon ausgegangen, dass Sie deklarieren eine <xref:System.Data.DataSet> mit dem Namen `dataSet1` , die Sie programmgesteuert zwischenspeichern möchten.
+1. Das Datenobjekt auf Klassenebene, nicht innerhalb einer Methode zu deklarieren. In diesem Beispiel wird davon ausgegangen, dass Sie deklarieren eine <xref:System.Data.DataSet> mit dem Namen `dataSet1` , die Sie programmgesteuert zwischenspeichern möchten.
 
      [!code-csharp[Trin_VstcoreDataExcel#12](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#12)]
      [!code-vb[Trin_VstcoreDataExcel#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#12)]
 
-2.  Das Datenobjekt, das Instanziieren und rufen Sie dann die `StartCaching` Methode des Dokument oder Arbeitsblatt-Instanz, und übergeben den Namen des Datenobjekts.
+2. Das Datenobjekt, das Instanziieren und rufen Sie dann die `StartCaching` Methode des Dokument oder Arbeitsblatt-Instanz, und übergeben den Namen des Datenobjekts.
 
      [!code-csharp[Trin_VstcoreDataExcel#13](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#13)]
      [!code-vb[Trin_VstcoreDataExcel#13](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#13)]
 
 ## <a name="to-stop-caching-a-data-object"></a>So beenden Sie das Zwischenspeichern eines Datenobjekts
 
-1.  Rufen Sie die `StopCaching` Methode des Dokument oder Arbeitsblatt-Instanz, und übergeben den Namen des Datenobjekts. In diesem Beispiel wird davon ausgegangen, dass Sie haben eine <xref:System.Data.DataSet> mit dem Namen `dataSet1` , die Sie beenden das Zwischenspeichern möchten.
+1. Rufen Sie die `StopCaching` Methode des Dokument oder Arbeitsblatt-Instanz, und übergeben den Namen des Datenobjekts. In diesem Beispiel wird davon ausgegangen, dass Sie haben eine <xref:System.Data.DataSet> mit dem Namen `dataSet1` , die Sie beenden das Zwischenspeichern möchten.
 
      [!code-csharp[Trin_VstcoreDataExcel#14](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#14)]
      [!code-vb[Trin_VstcoreDataExcel#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#14)]
 
     > [!NOTE]
-    >  Rufen Sie keine `StopCaching` aus der Ereignishandler für die `Shutdown` Ereignis von einem Dokument oder Arbeitsblatt. Mit der Zeit die `Shutdown` Ereignis wird ausgelöst, ist es zu spät, den Datencache zu ändern. Weitere Informationen zu den `Shutdown` Ereignis finden Sie unter [Ereignisse in Office-Projekten](../vsto/events-in-office-projects.md).
+    > Rufen Sie keine `StopCaching` aus der Ereignishandler für die `Shutdown` Ereignis von einem Dokument oder Arbeitsblatt. Mit der Zeit die `Shutdown` Ereignis wird ausgelöst, ist es zu spät, den Datencache zu ändern. Weitere Informationen zu den `Shutdown` Ereignis finden Sie unter [Ereignisse in Office-Projekten](../vsto/events-in-office-projects.md).
 
 ## <a name="see-also"></a>Siehe auch
 

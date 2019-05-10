@@ -2,21 +2,20 @@
 title: Workflow-Designer - Zustands-Aktivitätsdesigner
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.State.UI
 ms.assetid: 9455ab37-93a0-4c46-9eb8-b6611ca23167
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bbecce45ddaa883dc53a9b5b105959aa8be7e33f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4d07cfeeb713767bc4f711c99b6b482759af2232
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62434073"
 ---
 # <a name="state-activity-designer"></a>Zustandsaktivitäts-Designer
 

@@ -1,14 +1,9 @@
 ---
 title: Visual C++-Typedefs im Klassen-Designer | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.typedef
 - vs.classdesigner.aliasofline
@@ -18,13 +13,13 @@ ms.assetid: c1984108-71fc-4d3a-b4d4-3eac2c6b4ebf
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1ba65af46589e01aa5473b5757124ed184da2197
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 234b4252edc587ef52db57d3ec18eb98bb6b849b
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230229"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54778616"
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>Visual C++-Typedefs im Klassen-Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +50,7 @@ typedef class coord
 };  
 ```  
   
- Weitere Informationen zur Verwendung des Typs `typedef` finden Sie unter [(NOTINBUILD)typedef-Spezifizierer](http://msdn.microsoft.com/en-us/cc96cf26-ba93-4179-951e-695d1f5fdcf1).  
+ Weitere Informationen zur Verwendung des Typs `typedef` finden Sie unter [(NOTINBUILD)typedef-Spezifizierer](http://msdn.microsoft.com/cc96cf26-ba93-4179-951e-695d1f5fdcf1).  
   
  Eine C++-typedef-Form weist die Form des in der typedef definierten Typs auf. Wenn die Quelle beispielsweise `typedef class` deklariert, hat die Form abgerundete Ecken und trägt die Bezeichnung **Class**. Für `typedef struct` hat die Form rechtwinklige Ecken und die Bezeichnung **Struct**.  
   
@@ -207,7 +202,4 @@ class A {
   
 ## <a name="see-also"></a>Siehe auch  
  [Arbeiten mit Visual C++-Code (Klassen-Designer)](../ide/working-with-visual-cpp-code-class-designer.md)   
- [(NOTINBUILD)typedef-Spezifizierer](http://msdn.microsoft.com/en-us/cc96cf26-ba93-4179-951e-695d1f5fdcf1)
-
-
-
+ [(NOTINBUILD)typedef-Spezifizierer](http://msdn.microsoft.com/cc96cf26-ba93-4179-951e-695d1f5fdcf1)

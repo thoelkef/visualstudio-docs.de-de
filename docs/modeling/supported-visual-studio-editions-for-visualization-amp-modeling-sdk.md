@@ -7,16 +7,15 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, supported Visual Studio editions
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 402c746f23eb472b3b63066389464c4fed6346a0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1e5898a95f10875f0880e4b4799f17b78aa8e79b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63003415"
 ---
 # <a name="supported-visual-studio-editions-for-visualization--modeling-sdk"></a>Unterstützte Visual Studio-Versionen für das Visualisierungs- und Modellierungs-SDK
 
@@ -38,13 +37,13 @@ Zur Definition einer DSL müssen folgende Komponenten installiert sein:
 
 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] unterstützt die folgenden Konfigurationen für die Bereitstellung der von Ihnen erstellten domänenspezifischen Sprachen:
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
--   Visual Studio Professional
+- Visual Studio Professional
 
--   Visual Studio Shell (integrierter Modus) verteilbares Paket
+- Visual Studio Shell (integrierter Modus) verteilbares Paket
 
--   Visual Studio Shell (isolierter Modus), verteilbares Paket
+- Visual Studio Shell (isolierter Modus), verteilbares Paket
 
 > [!NOTE]
 > Damit wird eine DSL, die auf einem Shell-Produkt ausführen können, müssen Sie festlegen der **Visual Studio-Edition unterstützt** im Erweiterungsmanifest Feld. Weitere Informationen finden Sie unter [Bereitstellen von domänenspezifischen Sprachlösungen](../modeling/deploying-domain-specific-language-solutions.md).

@@ -1,14 +1,9 @@
 ---
 title: Erwartet '}' | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1009
 dev_langs:
@@ -16,23 +11,22 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: dff04495-9a6e-4604-9231-e40433fec152
-caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 42e0c220466291f845209f22917d728dee3e553e
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: 02d6772a6bfe8d71c65fb866f097d3f2da97f86a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53348309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935010"
 ---
 # <a name="expected-"></a>"}" erwartet
 Sie nicht die rechte geschweifte Klammer, die das Ende der Funktionsrumpf, Schleife, Codeblock markiert sind oder Objektinitialisierer. Ein Beispiel für diesen Fehler wäre eine **für** -Schleife mit der nur die linke geschweifte Klammer der Hauptteil der Schleife markiert.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Fügen Sie die rechte geschweifte Klammer, die das Ende der Funktion, Schleife, blockieren oder Objektinitialisierer markiert.  
+- Fügen Sie die rechte geschweifte Klammer, die das Ende der Funktion, Schleife, blockieren oder Objektinitialisierer markiert.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Function-Objekt](../../javascript/reference/function-object-javascript.md)   

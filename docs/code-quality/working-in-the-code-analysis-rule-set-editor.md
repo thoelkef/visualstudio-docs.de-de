@@ -1,22 +1,21 @@
 ---
 title: Verwenden Sie die Codeanalyse-Regelsätze-Editor festgelegt.
 ms.date: 04/04/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.ruleseteditor
 ms.assetid: 370c97bf-bb29-4b2f-b9ae-ba125bce7b2d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 548f50b3d348c520ed7746b7dc3d123ffeb4c6aa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 719d8f1e11365de0b864f41f54546fb4bfc64cd2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826035"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820313"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Verwenden Sie den Code Analysis Regelsatz-editor
 
@@ -30,7 +29,7 @@ Die folgende Tabelle zeigt die Schweregrad-Optionen:
 |Fehler|Generiert einen Fehler in der **Fehlerliste** und auch zum Zeitpunkt der Erstellung.|
 |Info|Generiert eine Nachricht in die **Fehlerliste**.|
 |Hidden|Die Verletzung ist nicht für den Benutzer sichtbar. Die IDE wird die Verletzung jedoch informiert.|
-|Keine|Die Regel unterdrückt wird. Das Verhalten ist dasselbe, als ob die Regel aus dem Regelsatz entfernt wurde.|
+|Keiner|Die Regel unterdrückt wird. Das Verhalten ist dasselbe, als ob die Regel aus dem Regelsatz entfernt wurde.|
 
 Der Editor zeigt die Regeln in einer Baumstruktur, die Gruppen, die Regeln durch eine Regel Feld festlegen, die Sie angeben. Führen Sie zum Hinzufügen oder Entfernen von Regeln in einem Regelsatz, eine oder mehrere der folgenden Schritte aus:
 
@@ -51,7 +50,7 @@ In der folgende Tabelle werden die Steuerelemente auf der Symbolleiste des Regel
 
 |ToolBar-Steuerelement|Beschreibung|
 |---------------------|-----------------|
-|**Alle erweitern**|Die Regeln in allen Gruppen angezeigt.|
+|**Alle aufklappen**|Die Regeln in allen Gruppen angezeigt.|
 |**Alle reduzieren**|Blendet die Regeln in allen Gruppen an.|
 |**Group By**|Gibt das Feld, nach dem Regeln gruppiert werden. Klicken Sie auf  **\<None >** ohne Gruppen angezeigt.|
 |**Spaltenoptionen**|Gibt die Regelfelder angezeigt werden sollen.|

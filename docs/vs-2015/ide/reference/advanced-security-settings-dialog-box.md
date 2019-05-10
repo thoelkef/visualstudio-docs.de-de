@@ -1,14 +1,9 @@
 ---
 title: Erweiterte Sicherheitseinstellungen (Dialogfeld) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.err.debug_in_zone_no_hostproc
 - vs.err.debug_in_zone_no_hostproc:11310
@@ -22,18 +17,17 @@ ms.assetid: 2e7aefe9-6d20-4f3e-b257-aee1ebcc6f5d
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ff49418b23317b590776c0f81d334480f460780a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: afdeda6c18c20af1b7f82e42cedc4aadac13ebcb
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232997"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661672"
 ---
 # <a name="advanced-security-settings-dialog-box"></a>Erweiterte Sicherheitseinstellungen (Dialogfeld)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Mit diesem Dialogfeld können Sie Sicherheitseinstellungen bezüglich des Debuggens in einer Zone angeben.  
   
  Wählen Sie zum Aufrufen des Dialogfelds im **Projektmappen-Explorer** einen Projektknoten aus, und klicken Sie anschließend im Menü **Projekt** auf **Eigenschaften**. Sobald der **Projekt-Designer** angezeigt wird, klicken Sie auf die Registerkarte **Sicherheit**. Wählen Sie auf der Seite **Sicherheit** die Option **ClickOnce-Sicherheitseinstellungen aktivieren** aus, klicken Sie auf **Teilweise vertrauenswürdige Anwendung**, und klicken Sie dann auf **Erweitert**.  
@@ -54,6 +48,3 @@ Mit diesem Dialogfeld können Sie Sicherheitseinstellungen bezüglich des Debugg
   
 ## <a name="see-also"></a>Siehe auch  
  [Seite „Sicherheit“, Projekt-Designer](../../ide/reference/security-page-project-designer.md)
-
-
-

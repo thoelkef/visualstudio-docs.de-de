@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Registrieren einer Bibliothek mit der Objekt-Manager | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - libraries, registering with object manager
 - IVsLibrary2 interface, registering library with object manager
@@ -18,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: f124dd05-cb0f-44ad-bb2a-7c0b34ef4038
 caps.latest.revision: 27
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ed547d82ccacec44383fed29a0c04bb363b10084
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c40c695a912e97269263ba14747b72382847324d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51732950"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042462"
 ---
-# <a name="how-to-register-a-library-with-the-object-manager"></a>Vorgehensweise: Registrieren einer Bibliothek mit der Objekt-Manager
+# <a name="how-to-register-a-library-with-the-object-manager"></a>Vorgehensweise: Registrieren einer Bibliothek beim Objekt-Manager
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Tools zum Durchsuchen von Symbolen, z. B. **Klassenansicht**, **Objektkatalog**, **Aufrufbrowser** und **Ergebnisse der Symbolsuche**, können Sie anzeigen Symbole in Ihrem Projekt oder in externen Komponenten. Die Symbole enthalten Namespaces, Klassen, Schnittstellen, Methoden und anderen Sprachelemente. Die Bibliotheken diese Symbole verfolgen und verfügbar zu machen, damit die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] -Objekt-Manager, die die Tools mit den Daten auffüllt.  
@@ -45,7 +40,7 @@ Tools zum Durchsuchen von Symbolen, z. B. **Klassenansicht**, **Objektkatalog**,
   
 #### <a name="to-register-a-library-with-the-object-manager"></a>Um eine Bibliothek mit der Objekt-Manager zu registrieren.  
   
-1.  Erstellen Sie eine Bibliothek an.  
+1. Erstellen Sie eine Bibliothek an.  
   
     ```vb  
     Private m_CallBrowserLibrary As CallBrowser.Library = Nothing  
@@ -62,7 +57,7 @@ Tools zum Durchsuchen von Symbolen, z. B. **Klassenansicht**, **Objektkatalog**,
   
     ```  
   
-2.  Rufen Sie einen Verweis auf ein Objekt der <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> geben, und rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> Methode.  
+2. Rufen Sie einen Verweis auf ein Objekt der <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> geben, und rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> Methode.  
   
     ```vb  
     Private Sub RegisterLibrary()  
@@ -118,7 +113,7 @@ Tools zum Durchsuchen von Symbolen, z. B. **Klassenansicht**, **Objektkatalog**,
   
 #### <a name="to-unregister-a-library-with-the-object-manager"></a>Beim Aufheben der Registrierung einer Bibliotheks mit der Objekt-manager  
   
-1.  Rufen Sie einen Verweis auf ein Objekt der <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> geben, und rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> Methode.  
+1. Rufen Sie einen Verweis auf ein Objekt der <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> geben, und rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> Methode.  
   
     ```vb  
     Private Sub UnregisterLibrary()  
@@ -174,5 +169,4 @@ Tools zum Durchsuchen von Symbolen, z. B. **Klassenansicht**, **Objektkatalog**,
 ## <a name="see-also"></a>Siehe auch  
  [Erweiterbarkeit von Legacysprachdiensten](../../extensibility/internals/legacy-language-service-extensibility.md)   
  [Unterstützung von Tools zum Durchsuchen von Symbolen](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [Gewusst wie: Verfügbarmachen der Listen von Symbolen, die von der Bibliothek für den Objekt-Manager bereitgestellt werden](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
-
+ [Vorgehensweise: Verfügbarmachen der Listen von Symbolen, die von der Bibliothek bereitgestellt, der Objekt-Manager](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

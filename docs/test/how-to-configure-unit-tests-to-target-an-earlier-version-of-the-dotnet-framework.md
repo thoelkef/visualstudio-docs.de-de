@@ -1,19 +1,18 @@
 ---
 title: Komponententests zur Ausrichtung auf eine frühere Version von .NET Framework
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: df8489decc50c863bdfaec65c6de6ddc4d2dd229
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0d77bd4fa5a1797b5e405c0b1af12cd1c24b18f7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979371"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Vorgehensweise: Konfigurieren von Komponententests zur Ausrichtung auf eine frühere Version von .NET Framework
 
@@ -47,66 +46,48 @@ Die folgenden Einschränkungen gelten, wenn Sie Ihre Testprojekte zum Verwenden 
 
 - Sie können keine Komponententests zu früheren Clientversionen des Frameworks leiten.
 
-## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-basic-unit-test-projects"></a>Umleiten zu einer bestimmten Version von .NET Framework für Visual Basic-Komponententestprojekte
+## <a name="retargeting-for-visual-basic-unit-test-projects"></a>Neuzuweisung für Visual Basic-Komponententestprojekte
 
-1.  Erstellen Sie ein neues Visual Basic-Komponententestprojekt. Wählen Sie im Menü **Datei** die Option **Neu** und anschließend **Projekt** aus.
+1. Erstellen Sie ein neues Visual Basic-**Komponententestprojekt**-Projekt.
 
-     Das Dialogfeld **Neues Projekt** wird angezeigt.
-
-2.  Klicken Sie unter **Installierte Vorlagen**auf **Visual Basic**. Wählen Sie **Test** und anschließend die Vorlage **Testprojekt** aus.
-
-3.  Geben Sie im Textfeld **Name** einen Namen für das Projekt ein, und klicken Sie anschließend auf **OK**.
-
-4.  Wählen Sie im **Projektmappen-Explorer** aus dem Kontextmenü des neuen Visual Basic-Testprojekts die Option **Eigenschaften** aus.
+2. Wählen Sie im **Projektmappen-Explorer** aus dem Kontextmenü des neuen Visual Basic-Testprojekts die Option **Eigenschaften** aus.
 
      Die Eigenschaften für Ihr Visual Basic-Testprojekt werden angezeigt.
 
-5.  Klicken sie auf der Registerkarte **Kompilieren** auf **Erweiterte Kompilierungsoptionen**, wie es in der folgenden Abbildung gezeigt wird.
+3. Klicken sie auf der Registerkarte **Kompilieren** auf **Erweiterte Kompilierungsoptionen**, wie es in der folgenden Abbildung gezeigt wird.
 
      ![Erweiterte Kompilierungsoptionen](../test/media/howtoconfigureunittest35frameworka.png)
 
-6.  Verwenden Sie die Dropdownliste **Zielframework (alle Konfigurationen)**, um das Zielframework auf **.NET Framework 3.5** oder eine höhere Version zu ändern, wie es im Beispiel B der folgenden Abbildung gezeigt wird. Sie sollten keine Clientversion angeben.
+4. Verwenden Sie die Dropdownliste **Zielframework (alle Konfigurationen)**, um das Zielframework auf **.NET Framework 3.5** oder eine höhere Version zu ändern, wie es im Beispiel B der folgenden Abbildung gezeigt wird. Sie sollten keine Clientversion angeben.
 
      ![Dropdownliste für Zielframework](../test/media/howtoconfigureunitest35frameworkstepb.png)
 
-## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-c-unit-test-projects"></a>Umleiten zu einer bestimmten Version von .NET Framework für Visual C#-Komponententestprojekte
+## <a name="retargeting-for-c-unit-test-projects"></a>Neuzuweisung für C#-Komponententestprojekte
 
-1.  Erstellen Sie ein neues Visual C#-Komponententestprojekt. Wählen Sie im Menü **Datei** die Option **Neu** und anschließend **Projekt** aus.
+1. Erstellen Sie ein neues C#-**Komponententestprojekt**-Projekt.
 
-     Das Dialogfeld **Neues Projekt** wird angezeigt.
+2. Wählen Sie im **Projektmappen-Explorer** aus dem Kontextmenü Ihres neuen C#-Testprojekts die Option **Eigenschaften** aus.
 
-2.  Klicken Sie unter **Installierte Vorlagen**auf **Visual C#**. Wählen Sie **Test** und anschließend die Vorlage **Testprojekt** aus.
+   Die Eigenschaften für Ihr C#-Testprojekt werden angezeigt.
 
-3.  Geben Sie im Textfeld **Name** einen Namen für Ihr Visual C#-Testprojekt ein, und klicken Sie anschließend auf **OK**.
+3. Wählen Sie auf der Registerkarte **Anwendung** die Option **Zielframework** aus. Wählen Sie aus der Dropdown-Liste **.NET Framework 3.5** oder eine höhere Version aus, wie in der folgenden Abbildung dargestellt wird. Sie sollten keine Clientversion angeben.
 
-4.  Wählen Sie im **Projektmappen-Explorer** aus dem Kontextmenü Ihres neuen Visual C#-Testprojekts die Option **Eigenschaften** aus.
+   ![Dropdownliste für Zielframework](../test/media/howtoconfigureunittest35frameworkcsharp.png)
 
-     Die Eigenschaften für Ihr Visual C#-Testprojekt werden angezeigt.
+## <a name="retargeting-for-ccli-unit-test-projects"></a>Neuzuweisung für C++/CLI-Komponententestprojekte
 
-5.  Wählen Sie auf der Registerkarte **Anwendung** die Option **Zielframework** aus. Wählen Sie aus der Dropdown-Liste **.NET Framework 3.5** oder eine höhere Version aus, wie in der folgenden Abbildung dargestellt wird. Sie sollten keine Clientversion angeben.
+1. Erstellen Sie ein neues C++-**Komponententestprojekt**-Projekt.
 
-     ![Dropdownliste für Zielframework](../test/media/howtoconfigureunittest35frameworkcsharp.png)
+   > [!WARNING]
+   > Sie müssen die entsprechende Version von Visual Studio verwenden, um C++/CLI-Komponententestprojekte für eine frühere Version von .NET Framework für C++ zu erstellen.
 
-## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-ccli-unit-test-projects"></a>Umleiten zu einer bestimmten Version von .NET Framework für C++/CLI-Komponententestprojekte
+2. Wählen Sie im **Projektmappen-Explorer** aus Ihrem neuen C++-Testprojekt die Option **Projekt entladen** aus.
 
-1.  Erstellen Sie ein neues C++-Komponententestprojekt. Klicken Sie im Menü **Datei** auf **Neu** und anschließend auf **Projekt**.
+3. Wählen Sie im **Projektmappen-Explorer** das entladene C++-Testprojekt und anschließend **Projektname\<>.vcxproj bearbeiten** aus.
 
-     Das Dialogfeld **Neues Projekt** wird angezeigt.
+   Die *VCXPROJ*-Datei wird im Editor geöffnet.
 
-    > [!WARNING]
-    > Sie müssen die entsprechende Version von Visual Studio verwenden, um C++/CLI-Komponententestprojekte für eine frühere Version von .NET Framework für C++ zu erstellen. Sie müssen Visual Studio 2008 und Visual Studio 2008 Service Pack 1 installieren, um z.B. .NET Framework 3.5 als Ziel zu verwenden.
-
-2.  Klicken Sie unter **Installierte Vorlagen**auf **Visual C ++**. Wählen Sie **Test** und anschließend die Vorlage **Testprojekt** aus.
-
-3.  Geben Sie im Textfeld **Name** einen Namen für Ihr Visual C++-Testprojekt ein, und klicken Sie anschließend auf **OK**.
-
-4.  Wählen Sie im **Projektmappen-Explorer** aus Ihrem neuen Visual C++-Testprojekt die Option **Projekt entladen** aus.
-
-5.  Wählen Sie im **Projektmappen-Explorer** das entladene Visual C++-Testprojekt und anschließend **Projektname\<>.vcxproj bearbeiten** aus.
-
-     Die *VCXPROJ*-Datei wird im Editor geöffnet.
-
-6.  Legen Sie `TargetFrameworkVersion` auf Version 3.5 oder höher in `PropertyGroup`, die als `"Globals"` bezeichnet wird, fest. Sie sollten keine Clientversion angeben:
+4. Legen Sie `TargetFrameworkVersion` auf Version 3.5 oder höher in `PropertyGroup`, die als `"Globals"` bezeichnet wird, fest. Sie sollten keine Clientversion angeben:
 
     ```xml
     <PropertyGroup Label="Globals">
@@ -119,9 +100,9 @@ Die folgenden Einschränkungen gelten, wenn Sie Ihre Testprojekte zum Verwenden 
       </PropertyGroup>
     ```
 
-7.  Speichern und schließen Sie die *VCXPROJ*-Datei.
+5. Speichern und schließen Sie die *VCXPROJ*-Datei.
 
-8.  Wählen Sie im **Projektmappen-Explorer** aus dem Kontextmenü Ihres neuen Visual C++-Testprojekts die Option **Projekt erneut laden** aus.
+6. Wählen Sie im **Projektmappen-Explorer** aus dem Kontextmenü Ihres neuen C++-Testprojekts die Option **Projekt erneut laden** aus.
 
 ## <a name="see-also"></a>Siehe auch
 

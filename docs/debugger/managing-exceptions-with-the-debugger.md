@@ -30,21 +30,21 @@ helpviewer_keywords:
 ms.assetid: 43a77fa8-37d0-4c98-a334-0134dbca4ece
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 647749b2993b41180852aca43f99ce15844c6d71
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
-ms.translationtype: MTE95
+ms.openlocfilehash: b83cb026bec6d33490517e5703a042b4a8e2434c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54094813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846586"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Verwalten von Ausnahmen mit der Debugger in Visual Studio
 
-Eine Ausnahme ist ein Hinweis auf einen Fehlerstatus, der auftritt, während ein Programm ausgeführt wird. Sie können dem Debugger anweisen, welche Ausnahmen oder Sätze von Ausnahmen auf unterbrochen, und an diesem Punkt des Debuggers zum unterbrechen soll. Wenn der Debugger unterbrochen wird, wird es Sie, wo die Ausnahme ausgelöst wurde. Sie können auch hinzufügen oder Löschen von Ausnahmen. Mit einer Lösung in Visual Studio geöffnet ist, verwenden Sie **Debuggen > Windows > Ausnahmeeinstellungen** zum Öffnen der **Ausnahmeeinstellungen** Fenster.
+Eine Ausnahme ist ein Hinweis auf einen Fehlerstatus, der auftritt, während ein Programm ausgeführt wird. Sie können dem Debugger anweisen, welche Ausnahmen oder Sätze von Ausnahmen auf unterbrochen, und an diesem Punkt des Debuggers zum unterbrechen soll (d. h. im Debugger angehalten). Wenn der Debugger unterbrochen wird, wird es Sie, wo die Ausnahme ausgelöst wurde. Sie können auch hinzufügen oder Löschen von Ausnahmen. Mit einer Lösung in Visual Studio geöffnet ist, verwenden Sie **Debuggen > Windows > Ausnahmeeinstellungen** zum Öffnen der **Ausnahmeeinstellungen** Fenster.
 
-Geben Sie Handler, die auf die wichtigsten Ausnahmen reagieren. Außerdem erfahren Sie, wie konfigurieren Sie den Debugger, um die Ausführung für einige Ausnahmen immer dann unterbrochen.
+Geben Sie Handler, die auf die wichtigsten Ausnahmen reagieren. Wenn Sie müssen wissen, wie zum Hinzufügen von Ereignishandlern für Ausnahmen finden Sie unter [Beheben von Fehlern durch das Schreiben von besser C# Code](../debugger/write-better-code-with-visual-studio.md). Darüber hinaus erfahren Sie, wie konfigurieren Sie den Debugger, um die Ausführung für einige Ausnahmen immer dann unterbrochen.
 
 Wenn eine Ausnahme ausgelöst wird, schreibt der Debugger eine Ausnahmemeldung an das Fenster **Ausgabe**. Es kann die Ausführung unterbrechen, in den folgenden Fällen:
 
@@ -100,7 +100,7 @@ Wenn Sie auswählen, dass eine Ausnahme in der **Ausnahmeeinstellungen** Fenster
 
   Es zeigt jedoch nicht die `here` Zeile.
 
-- Ein C# -Konsolenanwendung verweist auf eine Klassenbibliothek mit einer Klasse, die über zwei Methoden verfügt. Die Methode löst eine Ausnahme aus, und verarbeitet, während eine zweite Methode, die gleiche Ausnahme auslöst, jedoch nicht behandelt.
+- Eine C#-Konsolenanwendung verweist auf eine Klassenbibliothek mit einer Klasse, die über zwei Methoden verfügt. Die Methode löst eine Ausnahme aus, und verarbeitet, während eine zweite Methode, die gleiche Ausnahme auslöst, jedoch nicht behandelt.
 
   ```csharp
   public class Class1
@@ -204,7 +204,7 @@ Sie können die Ausnahme hinzufügen **Ausnahmeeinstellungen** mithilfe der vorh
 Verwenden der **Ausnahmeeinstellungen** Fenster Bedingungen auf Ausnahmen festzulegen. Derzeit unterstützte Bedingungen umfassen die Namen der Module zum ein- oder ausschließen, für die Ausnahme. Wenn Sie Modulnamen als Bedingungen festlegen, können Sie auswählen, für die Ausnahme nur für bestimmte Codemodule unterbrochen. Sie können auch auswählen, um wichtige auf bestimmte Module zu vermeiden.
 
 > [!NOTE]
-> Hinzufügen von Bedingungen zu einer Ausnahme ist neu in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> Hinzufügen von Bedingungen zu einer Ausnahme wird ab unterstützt [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 So fügen Sie bedingte Ausnahmen hinzu:
 
@@ -222,8 +222,8 @@ So fügen Sie bedingte Ausnahmen hinzu:
 
 ## <a name="see-also"></a>Siehe auch
 
-[Fortfahren mit der Ausführung nach einer Ausnahme](../debugger/continuing-execution-after-an-exception.md)<br/>
-[Vorgehensweise: Untersuchen von Systemcode nach einer Ausnahme](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
-[Vorgehensweise: Use native run-time checks (Vorgehensweise: Verwenden von nativen Laufzeitüberprüfungen)](../debugger/how-to-use-native-run-time-checks.md)<br/>
-[Use run-time checks without the C run-time library (Verwenden von Laufzeitüberprüfungen ohne die C-Laufzeitbibliothek)](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
-[Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)
+- [Fortfahren mit der Ausführung nach einer Ausnahme](../debugger/continuing-execution-after-an-exception.md)<br/>
+- [Vorgehensweise: Untersuchen von Systemcode nach einer Ausnahme](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
+- [Vorgehensweise: Use native run-time checks (Vorgehensweise: Verwenden von nativen Laufzeitüberprüfungen)](../debugger/how-to-use-native-run-time-checks.md)<br/>
+- [Use run-time checks without the C run-time library (Verwenden von Laufzeitüberprüfungen ohne die C-Laufzeitbibliothek)](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
+- [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)

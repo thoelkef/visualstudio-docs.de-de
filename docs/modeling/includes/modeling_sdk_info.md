@@ -1,11 +1,11 @@
 ---
 ms.topic: include
-ms.openlocfilehash: 27c5c7126f66ad909264bdd6fb2505e5e8d87c3c
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 29673fe79c7d0cf8aa6e41fcfb5b1eeb40acbd37
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "48020871"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62577683"
 ---
 > [!NOTE]
-> In Visual Studio 2017 die **Textvorlagen-Transformationsprozess** Komponente wird automatisch installiert, als Teil der **-Entwicklung Visual Studio-Erweiterung** arbeitsauslastung. Sie können auch Installation über die **Einzelkomponenten** Visual Studio-Installer auf der Registerkarte unter der **Codetools** Kategorie. Installieren Sie die **Modellierungs-SDK** -Komponente aus der **Einzelkomponenten** Registerkarte.
+> Die **Textvorlagen-Transformationsprozess** Komponente wird automatisch installiert, als Teil der **Visual Studio-extensionentwicklung** arbeitsauslastung. Sie können auch Installation über die **Einzelkomponenten** Visual Studio-Installer auf der Registerkarte unter der **Codetools** Kategorie. Installieren Sie die **Modellierungs-SDK** -Komponente aus der **Einzelkomponenten** Registerkarte.

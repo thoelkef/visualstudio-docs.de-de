@@ -2,21 +2,20 @@
 title: Workflow-Designer - PickBranch-Aktivitätsdesigner
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.PickBranch.UI
 ms.assetid: f523ad47-bbc0-4cda-a35c-41e67c4ba081
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3a692d08a8117eca4bbd4765cc9d21ba7b8c770
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c6c452cb4fd5b8a343473204c2b2bee614383ebb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860256"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63003647"
 ---
 # <a name="pickbranch-activity-designer"></a>PickBranch-Aktivitätsdesigner
 
@@ -32,7 +31,7 @@ Zugriff die **PickBranch** im Designer die **Ablaufsteuerung** Kategorie der **T
 
 Zwei leere <xref:System.Activities.Statements.PickBranch> Objekte mit den Anzeigenamen **Branch1** und **Branch2** werden als Elemente standardmäßig erstellt eine <xref:System.Activities.Statements.Pick> Aktivität bei der **auswählen** Aktivitäts-Designer wird zunächst an den Workflow-Designer gelöscht werden. Die jeweiligen <xref:System.Activities.Statements.PickBranch.DisplayName%2A> Eigenschaftswerte können bearbeitet werden, der **PickBranch** Designer-Header oder in der **Eigenschaften** für jeden Branch.
 
-Es gibt zwei Möglichkeiten zum Hinzufügen von <xref:System.Activities.Statements.PickBranch> Objekte auf die Auflistung von einer <xref:System.Activities.Statements.Pick> Objekt: Drag & Drop die **PickBranch** -Designer aus der **Toolbox**, oder indem Sie das Kontextmenü in in der **auswählen** Entwurfsoberfläche:
+Es gibt zwei Möglichkeiten zum Hinzufügen von <xref:System.Activities.Statements.PickBranch> Objekte auf die Auflistung von einer <xref:System.Activities.Statements.Pick> Objekt: Ziehen und Ablegen der **PickBranch** -Designer aus der **Toolbox**, oder mithilfe von mit der rechten Maustaste in der **auswählen** Entwurfsoberfläche:
 
 - Die **PickBranch** -Designer erstellt eine <xref:System.Activities.Statements.PickBranch> Wenn es gezogen wird von der **Toolbox** und in einer der Verzweigungen einer **auswählen** Aktivitäts-Designer auf der Workflow-Designer-Oberfläche. Die neuen <xref:System.Activities.Statements.PickBranch>-Objekte können im <xref:System.Activities.Statements.Pick>-Designer auf der linken oder rechten Seite jedes <xref:System.Activities.Statements.PickBranch>-Elements platziert werden, das bereits in der Auflistung enthalten ist. Beim Ziehen einer **PickBranch** Designer auf die **auswählen** mit der Maus, die **auswählen** Designer mithilfe ein vertikales blaugrauen Bands an, wo entsprechend der <xref:System.Activities.Statements.PickBranch> wird für den gegebenen Mausposition hinzugefügt.
 

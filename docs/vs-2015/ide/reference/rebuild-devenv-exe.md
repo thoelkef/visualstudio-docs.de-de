@@ -1,14 +1,9 @@
 ---
 title: /Rebuild („devenv.exe“) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Devenv, /rebuild switch
 - rebuild Devenv switch (/rebuild)
@@ -19,18 +14,17 @@ ms.assetid: c5a8a4bf-0e2b-46eb-a44a-8aeb29b92c32
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 58cd259f602d1f2364b37d8d6905753b2ce44068
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 72818a3bdb4f983326c95b10cfe4e6af4445cc2f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285765"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037945"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Bereinigt und erstellt die angegebene Projektmappenkonfiguration  
   
 ## <a name="syntax"></a>Syntax  
@@ -52,13 +46,13 @@ devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig 
  /projectconfig `ProjConfigName`  
  Dies ist optional. Der Name der Projektbuildkonfiguration für die Neuerstellung des benannten `/project`.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
   
--   Dieser Schalter führt dieselbe Funktion aus wie der Menübefehl **Projektmappe neu erstellen** in der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE).  
+- Dieser Schalter führt dieselbe Funktion aus wie der Menübefehl **Projektmappe neu erstellen** in der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE).  
   
--   Schließen Sie Zeichenfolgen, die Leerzeichen enthalten, in doppelten Anführungszeichen ein.  
+- Schließen Sie Zeichenfolgen, die Leerzeichen enthalten, in doppelten Anführungszeichen ein.  
   
--   Zusammenfassende Informationen für Bereinigungen und Builds, inklusive Fehlermeldungen, können im **Befehlsfenster** oder durch den `/out`-Schalter in einer Protokolldatei angezeigt werden.  
+- Zusammenfassende Informationen für Bereinigungen und Builds, inklusive Fehlermeldungen, können im **Befehlsfenster** oder durch den `/out`-Schalter in einer Protokolldatei angezeigt werden.  
   
 ## <a name="example"></a>Beispiel  
  Dieses Beispiel bereinigt und erstellt das Projekt `CSharpWinApp` mithilfe der Projektbuildkonfiguration `Debug` in der `Debug`-Projektmappenkonfiguration von `MySolution` neu.  
@@ -72,6 +66,3 @@ devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\M
  [/Build („devenv.exe“)](../../ide/reference/build-devenv-exe.md)   
  [/Clean („devenv.exe“)](../../ide/reference/clean-devenv-exe.md)   
  [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)
-
-
-

@@ -1,8 +1,6 @@
 ---
 title: Exec-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Exec
@@ -17,61 +15,61 @@ helpviewer_keywords:
 ms.assetid: c9b7525a-b1c9-40fc-8bce-77a5b8f960d8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbefb90cad3b2aa3e6e7b0870548d44567ea8914
-ms.sourcegitcommit: 56f3c31f1a06f6a6d2a8793b1abfa60cdf482497
+ms.openlocfilehash: ef9759c5a422a0b67cdb9e8f7dde565b732958dd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48817320"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973655"
 ---
 # <a name="exec-task"></a>Exec-Aufgabe
-Führt das angegebene Programm oder den Befehl mit den angegebenen Argumenten aus.  
-  
-## <a name="parameters"></a>Parameter  
- In der folgenden Tabelle werden die Parameter für die `Exec`-Aufgabe beschrieben.  
-  
-|Parameter|Beschreibung |  
-|---------------|-----------------|  
-|`Command`|Erforderlicher `String` -Parameter.<br /><br /> Der/die auszuführende(n) Befehl(e). Dies kann ein Systembefehl sein, z.B. „attrib“, oder eine ausführbare Datei wie *program.exe*, *runprogram.bat* oder *setup.msi*.<br /><br /> Dieser Parameter kann mehrere Zeilen mit Befehlen enthalten. Alternativ können Sie mehrere Befehle in einer Batchdatei speichern und sie ausführen, indem Sie diesen Parameter verwenden.|  
+Führt das angegebene Programm oder den Befehl mit den angegebenen Argumenten aus.
+
+## <a name="parameters"></a>Parameter
+In der folgenden Tabelle werden die Parameter für die `Exec`-Aufgabe beschrieben.
+
+|Parameter|Beschreibung|
+|---------------|-----------------|
+|`Command`|Erforderlicher `String` -Parameter.<br /><br /> Der/die auszuführende(n) Befehl(e). Dies kann ein Systembefehl sein, z.B. „attrib“, oder eine ausführbare Datei wie *program.exe*, *runprogram.bat* oder *setup.msi*.<br /><br /> Dieser Parameter kann mehrere Zeilen mit Befehlen enthalten. Alternativ können Sie mehrere Befehle in einer Batchdatei speichern und sie ausführen, indem Sie diesen Parameter verwenden.|
 |`ConsoleOutput`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Jede Elementausgabe stellt eine Zeile der Standardausgabe oder einen Standardfehlerstream dar, der vom Tool ausgegeben wird. Dies wird nur erfasst, wenn `ConsoleToMsBuild` auf `true` festgelegt ist.|
-|`ConsoleToMsBuild`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, erfasst der Task den Standardfehler und die Standardausgabe des Tools und macht sie im Ausgabeparameter `ConsoleOutput` verfügbar.<br /><br />Standardwert: `false`.|  
-|`CustomErrorRegularExpression`|Optionaler `String` -Parameter.<br /><br /> Legt einen regulären Ausdruck fest, der verwendet wird, um Fehlerzeilen in der Ausgabe des Tools zu erkennen. Dies ist nützlich für Tools, die eine außergewöhnlich formatierte Ausgabe erzeugen.<br /><br />Standardwert: `null` (keine benutzerdefinierte Verarbeitung).|  
-|`CustomWarningRegularExpression`|Optionaler `String` -Parameter.<br /><br /> Legt einen regulären Ausdruck fest, der verwendet wird, um Warnungszeilen in der Ausgabe des Tools zu erkennen. Dies ist nützlich für Tools, die eine außergewöhnlich formatierte Ausgabe erzeugen.<br /><br />Standardwert: `null` (keine benutzerdefinierte Verarbeitung).|  
+|`ConsoleToMsBuild`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, erfasst der Task den Standardfehler und die Standardausgabe des Tools und macht sie im Ausgabeparameter `ConsoleOutput` verfügbar.<br /><br />Standardwert: `false`.|
+|`CustomErrorRegularExpression`|Optionaler `String` -Parameter.<br /><br /> Legt einen regulären Ausdruck fest, der verwendet wird, um Fehlerzeilen in der Ausgabe des Tools zu erkennen. Dies ist nützlich für Tools, die eine außergewöhnlich formatierte Ausgabe erzeugen.<br /><br />Standardwert: `null` (keine benutzerdefinierte Verarbeitung).|
+|`CustomWarningRegularExpression`|Optionaler `String` -Parameter.<br /><br /> Legt einen regulären Ausdruck fest, der verwendet wird, um Warnungszeilen in der Ausgabe des Tools zu erkennen. Dies ist nützlich für Tools, die eine außergewöhnlich formatierte Ausgabe erzeugen.<br /><br />Standardwert: `null` (keine benutzerdefinierte Verarbeitung).|
 |`EchoOff`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, gibt der Task nicht die erweiterte Form von `Command` an das MSBuild-Protokoll aus.<br /><br />Standardwert: `false`.|
-|`ExitCode`|Optionaler schreibgeschützter `Int32`-Ausgabeparameter.<br /><br /> Gibt den durch den ausgeführten Befehl bereitgestellten Exitcode an.|  
-|`IgnoreExitCode`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, ignoriert die Aufgabe den durch den ausgeführten Befehl bereitgestellten Exitcode. Andernfalls gibt die Aufgabe `false` zurück, wenn der ausgeführte Befehl einen Exitcode ungleich null (0) zurückgibt.<br /><br />Standardwert: `false`.|  
-|`IgnoreStandardErrorWarningFormat`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `false`, werden Zeilen in der Ausgabe ausgewählt, die dem standardmäßigen Fehler-/Warnungsformat entsprechen, und als Fehler/Warnungen protokolliert. Wenn `true`, wird dieses Verhalten deaktiviert.<br /><br />Standardwert: `false`.|  
-|`Outputs`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Enthält die Ausgabeelemente aus der Aufgabe. Die `Exec`-Aufgabe legt diese nicht selbst fest. Stattdessen können Sie sie so bereitstellen, als ob die Aufgabe sie festgelegt hätte, damit sie später im Projekt verwendet werden können.|  
-|`StdErrEncoding`|Optionaler `String`-Ausgabeparameter.<br /><br /> Gibt die Codierung des standardmäßigen Fehlerdatenstroms der erfassten Aufgabe an. Der Standardwert ist die aktuelle Konsolenausgabencodierung.|  
-|`StdOutEncoding`|Optionaler `String`-Ausgabeparameter.<br /><br /> Gibt die Codierung des standardmäßigen Ausgabedatenstroms der erfassten Aufgabe an. Der Standardwert ist die aktuelle Konsolenausgabencodierung.|  
-|`WorkingDirectory`|Optionaler `String` -Parameter.<br /><br /> Gibt das Verzeichnis an, in dem der Befehl ausgeführt wird.<br /><br />Standardwert: Das aktuelle Arbeitsverzeichnis des Projekts.|  
-  
-## <a name="remarks"></a>Hinweise  
- Diese Aufgabe ist nützlich, wenn eine bestimmte [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Aufgabe für den Auftrag, den Sie ausführen möchten, nicht verfügbar ist. Im Gegensatz zu einer spezifischeren Aufgabe kann die `Exec`-Aufgabe jedoch keine zusätzliche Verarbeitung oder bedingten Vorgänge durchführen, die auf dem Ergebnis des Tools oder des Befehls basieren, das bzw. der von dieser ausgeführt wird.
-  
- Die `Exec`-Aufgabe ruft *cmd.exe* auf, anstatt direkt einen Prozess aufzurufen.  
-  
- Zusätzlich zu den in diesem Artikel aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.ToolTaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.ToolTask>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [ToolTaskExtension-Basisklasse](../msbuild/tooltaskextension-base-class.md).  
-  
-## <a name="example"></a>Beispiel  
- Im folgenden Beispiel wird die `Exec`-Aufgabe zum Ausführen eines Befehls verwendet.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <ItemGroup>  
-        <Binaries Include="*.dll;*.exe"/>  
-    </ItemGroup>  
-  
-    <Target Name="SetACL">  
-        <!-- set security on binaries-->  
-        <Exec Command="echo y| cacls %(Binaries.Identity) /G everyone:R"/>  
-    </Target>  
-</Project>  
+|`ExitCode`|Optionaler schreibgeschützter `Int32`-Ausgabeparameter.<br /><br /> Gibt den durch den ausgeführten Befehl bereitgestellten Exitcode an.|
+|`IgnoreExitCode`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, ignoriert die Aufgabe den durch den ausgeführten Befehl bereitgestellten Exitcode. Andernfalls gibt die Aufgabe `false` zurück, wenn der ausgeführte Befehl einen Exitcode ungleich null (0) zurückgibt.<br /><br />Standardwert: `false`.|
+|`IgnoreStandardErrorWarningFormat`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `false`, werden Zeilen in der Ausgabe ausgewählt, die dem standardmäßigen Fehler-/Warnungsformat entsprechen, und als Fehler/Warnungen protokolliert. Wenn `true`, wird dieses Verhalten deaktiviert.<br /><br />Standardwert: `false`.|
+|`Outputs`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Enthält die Ausgabeelemente aus der Aufgabe. Die `Exec`-Aufgabe legt diese nicht selbst fest. Stattdessen können Sie sie so bereitstellen, als ob die Aufgabe sie festgelegt hätte, damit sie später im Projekt verwendet werden können.|
+|`StdErrEncoding`|Optionaler `String`-Ausgabeparameter.<br /><br /> Gibt die Codierung des standardmäßigen Fehlerdatenstroms der erfassten Aufgabe an. Der Standardwert ist die aktuelle Konsolenausgabencodierung.|
+|`StdOutEncoding`|Optionaler `String`-Ausgabeparameter.<br /><br /> Gibt die Codierung des standardmäßigen Ausgabedatenstroms der erfassten Aufgabe an. Der Standardwert ist die aktuelle Konsolenausgabencodierung.|
+|`WorkingDirectory`|Optionaler `String` -Parameter.<br /><br /> Gibt das Verzeichnis an, in dem der Befehl ausgeführt wird.<br /><br />Standard: Das aktuelle Arbeitsverzeichnis des Projekts.|
+
+## <a name="remarks"></a>Anmerkungen
+Diese Aufgabe ist nützlich, wenn eine bestimmte [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Aufgabe für den Auftrag, den Sie ausführen möchten, nicht verfügbar ist. Im Gegensatz zu einer spezifischeren Aufgabe kann die `Exec`-Aufgabe jedoch keine zusätzliche Verarbeitung oder bedingten Vorgänge durchführen, die auf dem Ergebnis des Tools oder des Befehls basieren, das bzw. der von dieser ausgeführt wird.
+
+Die `Exec`-Aufgabe ruft *cmd.exe* auf, anstatt direkt einen Prozess aufzurufen.
+
+Zusätzlich zu den in diesem Artikel aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.ToolTaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.ToolTask>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [ToolTaskExtension-Basisklasse](../msbuild/tooltaskextension-base-class.md).
+
+## <a name="example"></a>Beispiel
+Im folgenden Beispiel wird die `Exec`-Aufgabe zum Ausführen eines Befehls verwendet.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <Binaries Include="*.dll;*.exe"/>
+    </ItemGroup>
+
+    <Target Name="SetACL">
+        <!-- set security on binaries-->
+        <Exec Command="echo y| cacls %(Binaries.Identity) /G everyone:R"/>
+    </Target>
+</Project>
 ```
 
-## <a name="see-also"></a>Siehe auch  
- [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
- [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>Siehe auch
+- [Aufgaben](../msbuild/msbuild-tasks.md)
+- [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

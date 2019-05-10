@@ -1,40 +1,35 @@
 ---
 title: Persistenz Projekt | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - persistence, projects
 - projects [Visual Studio SDK], persistance
 ms.assetid: 42907bcf-4e27-46bd-a8cb-01c2ccd2bde5
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ff836f56601adeba7b3df675207701f6e2d6e7fa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: abbcc1fc1048866ef790a4b6779ed15ef80a9be1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729566"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429521"
 ---
 # <a name="project-persistence"></a>Projektpersistenz
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Persistenz ist eine wichtige Design-Überlegungen für das Projekt. Die meisten Projekte verwenden Projektelemente, die Dateien darstellen. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] unterstützt auch Projekte, deren Daten nicht dateibasierte sind. Alle Dateien im Besitz des Projekts und die Projektdatei müssen beibehalten werden. Die IDE weist das Projekt, um sich selbst oder ein Projektelement speichern.  
   
- Vorlagen für Projekte, die auf die Projektzuordnungsinstanz übergeben werden. Die Vorlagen sollten die Initialisierung von alle Projektelemente gemäß den Anforderungen der bestimmten Projekttyp unterstützen. Diese Vorlagen können später als Projektdateien gespeichert und von der IDE über die Lösung verwaltet werden. Weitere Informationen finden Sie unter [erstellen Projekt Instanzen von mithilfe von Projektfactorys](../../extensibility/internals/creating-project-instances-by-using-project-factories.md) und [Lösungen](../../extensibility/internals/solutions.md).  
+ Vorlagen für Projekte, die auf die Projektzuordnungsinstanz übergeben werden. Die Vorlagen sollten die Initialisierung von alle Projektelemente gemäß den Anforderungen der bestimmten Projekttyp unterstützen. Diese Vorlagen können später als Projektdateien gespeichert und von der IDE über die Lösung verwaltet werden. Weitere Informationen finden Sie unter [erstellen Projekt Instanzen von mithilfe von Projektfactorys](../../extensibility/internals/creating-project-instances-by-using-project-factories.md) und [Lösungen](../../extensibility/internals/solutions-overview.md).  
   
  Projektelemente können es sich um einen dateibasierten oder nicht dateibasierte sein:  
   
--   Dateibasierte Elemente können lokal oder remote sein. In Webprojekten in C# geschrieben beibehalten, z. B. Verbindungen mit Dateien auf einem Remotesystem lokal, während die Dateien selbst auf dem remoten System beibehalten werden.  
+- Dateibasierte Elemente können lokal oder remote sein. In Webprojekten in C# geschrieben beibehalten, z. B. Verbindungen mit Dateien auf einem Remotesystem lokal, während die Dateien selbst auf dem remoten System beibehalten werden.  
   
--   Nicht dateibasierte Elemente können Elemente in einer Datenbank oder einem Repository speichern.  
+- Nicht dateibasierte Elemente können Elemente in einer Datenbank oder einem Repository speichern.  
   
 ## <a name="commit-models"></a>Commit-Modelle  
  Nach der Entscheidung, wo sich die Projektelemente befinden, müssen Sie die entsprechenden Commit-Modell auswählen. Beispielsweise kann in einem dateibasierten Modell mit lokalen Dateien, jedes Projekt autonom gespeichert werden. In einem Repository-Modell können Sie mehrere Elemente in einer Transaktion speichern. Weitere Informationen finden Sie unter [Entwurfsentscheidungen bei Projekttypen](../../extensibility/internals/project-type-design-decisions.md).  
@@ -52,4 +47,3 @@ Persistenz ist eine wichtige Design-Überlegungen für das Projekt. Die meisten 
 ## <a name="see-also"></a>Siehe auch  
  [Prüfliste: Erstellen neuer Projekttypen](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Erstellen von Projektinstanzen mithilfe von Projektfactorys](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
-

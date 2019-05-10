@@ -3,21 +3,20 @@ title: 'Tutorial zu Django in Visual Studio, Schritt 2: Ansichten und Seitenvorl
 titleSuffix: ''
 description: In dieser exemplarischen Vorgehensweise erhalten Sie grundlegende Informationen zu Django im Zusammenhang mit Visual Studio-Projekten, insbesondere zu Schritten zur Erstellung einer App oder Verwendung von Ansichten und Vorlagen.
 ms.date: 11/19/2018
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ce819f5d0a7167c4fce2871894df7c6edd26e6a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: de486593c21813746c6c13fa835506d7b1703279
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871702"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62958183"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Schritt 2: Erstellen einer Django-App mit Ansichten und Seitenvorlagen
 
@@ -35,7 +34,7 @@ In diesem Schritt wird Folgendes erläutert:
 
 ## <a name="step-2-1-create-an-app-with-a-default-structure"></a>Schritt 2.1: Erstellen einer App mit einer Standardstruktur
 
-Eine Django-App ist ein separates Python-Paket, das einen Satz von zugehörigen Dateien für einen bestimmten Zweck enthält. Ein Django-Projekt kann eine beliebige Anzahl von Apps enthalten, da ein Webhost eine beliebige Anzahl getrennter Einstiegspunkte über einen Domänennamen bedienen kann. Beispielsweise enthält ein Django-Projekt für eine Domäne wie contoso.com möglicherweise eine App für www.contoso.com, eine zweite App für support.contoso.com und eine dritte App für docs.contoso.com. In diesem Fall verarbeitet das Django-Projekt das URL-Routing auf Websiteebene (in seinen Dateien *urls.py* und *settings.py*), während jede App durch ihr internes Routing, ihre Ansichten und Modelle, ihre statischen Dateien und ihre Verwaltungsschnittstelle ihren eigenen Stil und ihr eigenes Verhalten hat.
+Eine Django-App ist ein separates Python-Paket, das einen Satz von zugehörigen Dateien für einen bestimmten Zweck enthält. Ein Django-Projekt kann eine beliebige Anzahl von Apps enthalten, da ein Webhost eine beliebige Anzahl getrennter Einstiegspunkte über einen Domänennamen bedienen kann. Beispielsweise enthält ein Django-Projekt für eine Domäne wie contoso.com möglicherweise eine App für `www.contoso.com`, eine zweite App für support.contoso.com und eine dritte App für docs.contoso.com. In diesem Fall verarbeitet das Django-Projekt das URL-Routing auf Websiteebene (in seinen Dateien *urls.py* und *settings.py*), während jede App durch ihr internes Routing, ihre Ansichten und Modelle, ihre statischen Dateien und ihre Verwaltungsschnittstelle ihren eigenen Stil und ihr eigenes Verhalten hat.
 
 Eine Django-App beginnt normalerweise mit einen Standardsatz von Dateien. Visual Studio bietet Elementvorlagen, um eine Django-App in einem Django-Projekt zusammen mit einem integrierten Menübefehl zu initialisieren, der demselben Zweck dient:
 

@@ -3,29 +3,39 @@ title: Einführung in die Bearbeitung von Code für C#-Entwickler
 description: In dieser zehnminütigen Einführung in den Code-Editor von Visual Studio wird erläutert, inwiefern Visual Studio das Schreiben und Verstehen von sowie das Navigieren in C#-Code vereinfacht.
 ms.custom: seodec18, get-started
 ms.date: 11/20/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: tutorial
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5eda81f5d10a8c7b116d9be690de71017735bf45
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 5abd287533f2489346b41cdbae5526ed946aa746
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53442011"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971068"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Informationen zur Verwendung des Code-Editors
 
 In dieser Einführung in den Code-Editor von Visual Studio, die etwa zehn Minuten Ihrer Zeit in Anspruch nehmen wird, wird Code zu einer Datei hinzugefügt, um zu veranschaulichen, inwiefern Visual Studio das Schreiben, Navigieren und Verstehen von Code vereinfacht.
 
+::: moniker range="vs-2017"
+
 > [!TIP]
-> Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) kostenlos herunterladen.
+> Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) kostenlos herunterladen.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+> [!TIP]
+> Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) kostenlos herunterladen.
+
+::: moniker-end
 
 In diesem Artikel wird davon ausgegangen, dass Sie bereits mit C# vertraut sind. Wenn das nicht der Fall ist, sollten Sie sich zunächst Tutorials wie [Erste Schritte mit C# und ASP.NET Core in Visual Studio](tutorial-aspnet-core.md) ansehen.
 
@@ -36,9 +46,21 @@ In diesem Artikel wird davon ausgegangen, dass Sie bereits mit C# vertraut sind.
 
 Beginnen Sie mit dem Erstellen einer neuen Datei, und fügen Sie dieser Code hinzu.
 
-1. Öffnen Sie Visual Studio, und klicken Sie im Menü **Datei** in der Menüleiste auf **Neu** > **Datei**.
+::: moniker range="vs-2017"
 
-1. Klicken Sie im Dialogfeld **Neue Datei** unter der Kategorie **Allgemein** auf die Option **Visual C#-Klasse**, und klicken Sie dann auf **Öffnen**.
+1. Öffnen Sie Visual Studio.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Öffnen Sie Visual Studio. Drücken Sie **ESC**, oder klicken Sie im Startfenster auf **Ohne Code fortfahren**, um die Entwicklungsumgebung zu öffnen.
+
+::: moniker-end
+
+2. Wählen Sie im Menü **Datei** auf der Menüleiste **Neu** > **Datei** aus.
+
+3. Klicken Sie im Dialogfeld **Neue Datei** unter der Kategorie **Allgemein** auf die Option **Visual C#-Klasse**, und klicken Sie dann auf **Öffnen**.
 
    Im Editor öffnet sich eine neue Datei mit dem Skelett einer C#-Klasse. (Beachten Sie, dass Sie kein vollständiges Visual Studio-Projekt erstellen müssen, um einen Nutzen aus dem Code-Editor zu ziehen; Sie benötigen lediglich eine Codedatei.)
 
@@ -110,7 +132,7 @@ Der Codeblock wird bis auf die erste Zeile reduziert, an die Auslassungspunkte a
 
 ## <a name="view-symbol-definitions"></a>Anzeigen von Symboldefinitionen
 
-Der Visual Studio-Editor erleichtert u.a. die Prüfung der Definition eines Typs oder einer Methode. Sie können z.B. zu der Datei navigieren, die die Definition enthält, indem Sie an einer beliebigen Stelle, an der auf das Symbol verwiesen wird, **Gehe zu Definition** auswählen. Sie können auch die Option [Definition einsehen](../../ide/go-to-and-peek-definition.md#peek-definition) verwenden. Dies stellt eine schnellere Möglichkeit dar, bei der der Fokus weiterhin auf der Datei liegt. Im Folgenden wird die Definition von Typ `string` dargestellt.
+Der Visual Studio-Editor erleichtert u.a. die Prüfung der Definition eines Typs oder einer Methode. Sie können z.B. zu der Datei navigieren, die die Definition enthält, indem Sie an einer beliebigen Stelle, an der auf das Symbol verwiesen wird, **Gehe zu Definition** auswählen oder **F12** drücken. Sie können auch die Option [Definition einsehen](../../ide/go-to-and-peek-definition.md#peek-definition) verwenden. Dies stellt eine schnellere Möglichkeit dar, bei der der Fokus weiterhin auf der Datei liegt. Im Folgenden wird die Definition von Typ `string` dargestellt.
 
 1. Klicken Sie mit der rechten Maustaste auf eine beliebige Darstellung von `string`, und wählen Sie im Inhaltsmenü die Option **Definition einsehen** aus. Drücken Sie alternativ **ALT**+**F12**.
 

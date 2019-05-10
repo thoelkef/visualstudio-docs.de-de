@@ -1,7 +1,6 @@
 ---
 title: Befehl "Haltepunkt ein/aus"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - debug.togglebreakpoint
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: d50dfadb-ce79-4d5e-9c09-1cfddd57876d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a2e9857e752d01f03e7d9219c5e030dae921cc9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 214897a0f938d8ea52306b8f605948b38f196111
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833752"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62944968"
 ---
 # <a name="toggle-breakpoint-command"></a>Befehl "Haltepunkt ein/aus"
 Schaltet den Haltepunkt entweder ein oder aus, je nach seinem aktuellen Status an der aktuellen Position in der Datei.

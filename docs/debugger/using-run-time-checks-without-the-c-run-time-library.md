@@ -20,48 +20,48 @@ helpviewer_keywords:
 ms.assetid: 30ed90f3-9323-4784-80a4-937449eb54f6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ae0b5831ef6007832438c4d589c4385711666dc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: a2d9d97b9ba8a93864ec9af6ff02df7b20bbb35e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921928"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929654"
 ---
 # <a name="using-run-time-checks-without-the-c-run-time-library"></a>Verwenden von Laufzeitüberprüfungen ohne die C-Laufzeitbibliothek
-Wenn Sie das Programm ohne die C-Laufzeitbibliothek verknüpfen, **/NODEFAULTLIB**, und Überprüfungen zur Laufzeit verwendet werden soll, müssen Sie mit RunTmChk.lib verknüpfen.  
-  
- `_RTC_Initialize` initialisiert das Programm für Laufzeitüberprüfungen. Wenn Sie keine Verknüpfung mit der C-Laufzeitbibliothek erstellen, müssen Sie sicherstellen, dass das Programm mit Laufzeitüberprüfungen kompiliert wurde, bevor Sie `_RTC_Initialize` aufrufen:  
-  
+Wenn Sie das Programm ohne die C-Laufzeitbibliothek verknüpfen, **/NODEFAULTLIB**, und Überprüfungen zur Laufzeit verwendet werden soll, müssen Sie mit RunTmChk.lib verknüpfen.
+
+`_RTC_Initialize` initialisiert das Programm für Laufzeitüberprüfungen. Wenn Sie keine Verknüpfung mit der C-Laufzeitbibliothek erstellen, müssen Sie sicherstellen, dass das Programm mit Laufzeitüberprüfungen kompiliert wurde, bevor Sie `_RTC_Initialize` aufrufen:
+
 ```cpp
-#ifdef __MSVC_RUNTIME_CHECKS  
-    _RTC_Initialize();  
-#endif  
-```  
-  
- Wenn Sie keine Verknüpfung mit der C-Laufzeitbibliothek herstellen, müssen Sie außerdem eine Funktion mit der Bezeichnung `_CRT_RTC_INITW` definieren. `_CRT_RTC_INITW` installiert die benutzerdefinierte Funktion folgendermaßen als Standardfehlerberichtsfunktion:  
-  
+#ifdef __MSVC_RUNTIME_CHECKS
+    _RTC_Initialize();
+#endif
+```
+
+Wenn Sie keine Verknüpfung mit der C-Laufzeitbibliothek herstellen, müssen Sie außerdem eine Funktion mit der Bezeichnung `_CRT_RTC_INITW` definieren. `_CRT_RTC_INITW` installiert die benutzerdefinierte Funktion folgendermaßen als Standardfehlerberichtsfunktion:
+
 ```cpp
-// C version:  
-_RTC_error_fnW __cdecl _CRT_RTC_INITW(  
-        void *res0, void **res1, int res2, int res3, int res4)  
-{  
-    // set the error handler.  
-    return &MyErrorFunc;   
-}  
-  
-// C++ version:  
-extern "C" _RTC_error_fnW __cdecl _CRT_RTC_INITW(  
-       void *res0, void **res1, int res2, int res3, int res4)  
-{  
-    // set the error handler:  
-    return &MyErrorFunc;  
-}  
-```  
-  
- Nach der Installation der standardmäßigen Fehlerberichtsfunktion können Sie mit `_RTC_SetErrorFuncW` weitere Fehlerberichtsfunktionen installieren. Weitere Informationen finden Sie unter [_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw).  
-  
-## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Verwenden von nativen Laufzeitüberprüfungen](../debugger/how-to-use-native-run-time-checks.md)
+// C version:
+_RTC_error_fnW __cdecl _CRT_RTC_INITW(
+        void *res0, void **res1, int res2, int res3, int res4)
+{
+    // set the error handler.
+    return &MyErrorFunc;
+}
+
+// C++ version:
+extern "C" _RTC_error_fnW __cdecl _CRT_RTC_INITW(
+       void *res0, void **res1, int res2, int res3, int res4)
+{
+    // set the error handler:
+    return &MyErrorFunc;
+}
+```
+
+Nach der Installation der standardmäßigen Fehlerberichtsfunktion können Sie mit `_RTC_SetErrorFuncW` weitere Fehlerberichtsfunktionen installieren. Weitere Informationen finden Sie unter [_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw).
+
+## <a name="see-also"></a>Siehe auch
+[Vorgehensweise: Verwenden von nativen Laufzeitüberprüfungen](../debugger/how-to-use-native-run-time-checks.md)

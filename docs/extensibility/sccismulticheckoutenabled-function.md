@@ -1,30 +1,32 @@
 ---
 title: SccIsMultiCheckoutEnabled-Funktion | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccIsMultiCheckoutEnabled
 helpviewer_keywords:
 - SccIsMultiCheckoutEnabled function
 ms.assetid: 6721639d-e475-4766-81b5-ee40a280fc70
-author: gregvanl
+caps.latest.revision: 14
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: ded0e14a1a3d7cbbe1261328672bb6aad89d6628
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: a0b4d13367977081b757fa9b0ef2823154dc348a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874744"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433057"
 ---
 # <a name="sccismulticheckoutenabled-function"></a>SccIsMultiCheckoutEnabled-Funktion
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 Diese Funktion überprüft, ob das Quellcodeverwaltungs-Plug-in Mehrfaches Auschecken in einer Datei ermöglicht.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 SCCRTN SccIsMultiCheckoutEnabled(  
    LPVOID pContext,  
    LPBOOL pbMultiCheckout  

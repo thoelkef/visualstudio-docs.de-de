@@ -2,19 +2,18 @@
 title: Workflow-Designer - Migrations-Aktivitätsdesigner
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 ms.assetid: 7598e869-1da1-4721-b4bf-6cbe402be1a2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc20f1390b3c4e30f3c7233d7f1c0f55ca0d56ee
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 900a555f5e4ba4c1750dcbedc526a233e422bd43
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879678"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63005695"
 ---
 # <a name="migration-activity-designers"></a>Migrationsaktivitätsdesigner
 

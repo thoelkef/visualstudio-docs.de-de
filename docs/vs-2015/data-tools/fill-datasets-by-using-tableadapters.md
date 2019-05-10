@@ -1,12 +1,9 @@
 ---
 title: Füllen von Datasets mit TableAdapters | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -24,22 +21,21 @@ ms.assetid: 55f3bfbe-db78-4486-add3-c62f49e6b9a0
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 118b8165b4c5ad972aacf9a3d91cff78c1b776e1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0d4fca66296f4437d3c9af55142d9fdbc56f21b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251848"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431943"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Füllen von Datasets mit TableAdapters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Eine Komponente des TableAdapter füllt ein Dataset mit Daten aus der Datenbank, basierend auf eine oder mehrere Abfragen oder gespeicherte Prozeduren, die Sie angeben. TableAdapter-Steuerelemente können auch ausführen, fügt, Aktualisierungen und löschungen in der Datenbank um Änderungen permanent zu speichern, die Sie auf das Dataset vornehmen. Sie können auch globale Befehle ausgeben, die nicht zu einer bestimmten Tabelle verbunden sind.  
   
 > [!NOTE]
->  TableAdapters werden von Visual Studio-Designer generiert. Wenn Sie Datasets programmgesteuert erstellen, verwenden Sie DataAdapter, ist eine .NET Framework-Klasse.  
+> TableAdapters werden von Visual Studio-Designer generiert. Wenn Sie Datasets programmgesteuert erstellen, verwenden Sie DataAdapter, ist eine .NET Framework-Klasse.  
   
  Ausführliche Informationen zu Vorgängen des TableAdapter können Sie direkt auf einen der folgenden Themen überspringen:  
   
@@ -49,7 +45,7 @@ Eine Komponente des TableAdapter füllt ein Dataset mit Daten aus der Datenbank,
 |[Erstellen von parametrisierten TableAdapter-Abfragen](../data-tools/create-parameterized-tableadapter-queries.md)|Benutzer geben Sie Argumente für die TableAdapter-Prozeduren oder Abfragen aktivieren|  
 |[Direktes Zugreifen auf die Datenbank mit einem TableAdapter](../data-tools/directly-access-the-database-with-a-tableadapter.md)|Wie Sie mit der TableAdapter Dbdirect-Methoden|  
 |[Deaktivieren von Einschränkungen beim Auffüllen von Datasets](../data-tools/turn-off-constraints-while-filling-a-dataset.md)|Arbeiten Sie mit foreign Key-Einschränkungen beim Aktualisieren von Daten|  
-|[Gewusst wie: Erweitern der Funktionalität eines TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)|Hinzufügen von benutzerdefiniertem Code zu TableAdapters|  
+|[Erweitern der Funktionalität eines TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)|Hinzufügen von benutzerdefiniertem Code zu TableAdapters|  
 |[Laden von Daten in ein Dataset](../data-tools/read-xml-data-into-a-dataset.md)|Arbeiten mit XML|  
   
 ## <a name="tableadapters-overview"></a>Übersicht über TableAdapters  
@@ -62,7 +58,7 @@ Eine Komponente des TableAdapter füllt ein Dataset mit Daten aus der Datenbank,
  [!code-csharp[VbRaddataTableAdapters#7](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataTableAdapters/CS/Class1.cs#7)]
  [!code-vb[VbRaddataTableAdapters#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/Class1.vb#7)]  
   
-## <a name="associated-datatable-schema"></a>Zugeordnetes DataTable-schema  
+## <a name="associated-datatable-schema"></a>Zugeordnetes DataTable-Schema  
  Wenn Sie einen TableAdapter erstellen, verwenden Sie die ursprüngliche Abfrage oder gespeicherte Prozedur definiert das Schema des TableAdapter zugeordnete <xref:System.Data.DataTable>. Sie führen diese anfängliche Abfrage oder gespeicherte Prozedur durch den Aufruf des TableAdapter `Fill` Methode (übernimmt den TableAdapter zugeordnete <xref:System.Data.DataTable>). Alle Änderungen, die an der Hauptabfrage des TableAdapter vorgenommen werden, werden im Schema der zugeordneten Datentabelle wiedergegeben. Beispielsweise entfernt Entfernen einer Spalte aus der Hauptabfrage auch die Spalte aus der zugeordneten Datentabelle. Wenn alle zusätzlichen Abfragen auf dem TableAdapter SQL-Anweisungen, die Spalten zurückgeben, die nicht in der Hauptabfrage enthalten sind verwenden, versucht der Designer, um die Spaltenänderungen zwischen der Hauptabfrage und die zusätzlichen Abfragen zu synchronisieren. Weitere Informationen finden Sie unter [Vorgehensweise: Bearbeiten von TableAdapters](http://msdn.microsoft.com/library/ca178745-e35a-45f1-a395-23cddfd8f855).  
   
 ## <a name="tableadapter-update-commands"></a>Aktualisierungsbefehle für TableAdapter  
@@ -83,8 +79,8 @@ Eine Komponente des TableAdapter füllt ein Dataset mit Daten aus der Datenbank,
 ## <a name="tableadapter-inheritance"></a>TableAdapter-Vererbung  
  TableAdapters, die die Funktionalität von Standarddatenadaptern erweitert, indem ein konfigurierter kapseln <xref:System.Data.Common.DataAdapter> Klasse? QualifyHint = False & AutoUpgrade = True. Standardmäßig erbt der TableAdapter von der <xref:System.ComponentModel.Component> Klasse und kann nicht umgewandelt werden, um die <xref:System.Data.Common.DataAdapter> Klasse. Umwandlung eines TableAdapter in die <xref:System.Data.Common.DataAdapter> Klasse führt zu einem <xref:System.InvalidCastException> Fehler? QualifyHint = False & AutoUpgrade = True. Um die Basisklasse eines TableAdapter zu ändern, können Sie eine abgeleitete Klasse eingeben <xref:System.ComponentModel.Component> in die **Basisklasse** Eigenschaft von TableAdapter in die **Dataset-Designer**.  
   
-## <a name="tableadapter-methods-and-properties"></a>TableAdapter-Methoden und Eigenschaften  
- Die TableAdapter-Klasse ist nicht Teil der [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Dies bedeutet, Sie können nicht Nachschlagen in der Dokumentation oder der **Objektkatalog**. Er wird zur Entwurfszeit erstellt, wenn Sie einen der zuvor erwähnten Assistenten verwenden. Der Name, der einem TableAdapter zugewiesen ist, bei der Erstellung basiert auf den Namen der Tabelle, mit denen Sie arbeiten werden. Beispielsweise wird beim Erstellen eines TableAdapters basierend auf einer Tabelle in einer Datenbank mit dem Namen `Orders`, den Namen des TableAdapters `OrdersTableAdapter`. Der Klassenname des TableAdapter kann geändert werden, mithilfe der **Namen** -Eigenschaft in der **Dataset-Designer**.  
+## <a name="tableadapter-methods-and-properties"></a>TableAdapter-Methoden und -Eigenschaften  
+ Die TableAdapter-Klasse ist nicht Teil der [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Dies bedeutet, Sie können nicht Nachschlagen in der Dokumentation oder der **Objektkatalog**. Er wird zur Entwurfszeit erstellt, wenn Sie einen der zuvor erwähnten Assistenten verwenden. Der Name, der einem TableAdapter zugewiesen ist, bei der Erstellung basiert auf den Namen der Tabelle, mit denen Sie arbeiten werden. Beispielsweise wird beim Erstellen eines TableAdapters basierend auf einer Tabelle in einer Datenbank mit dem Namen `Orders`, den Namen des TableAdapters `OrdersTableAdapter`. Sie können den Klassennamen für den TableAdapter ändern, indem Sie die **Name**-Eigenschaft im **DataSet-Designer** verwenden.  
   
  Es folgen die häufig verwendeten Methoden und Eigenschaften der TableAdapter-Steuerelemente:  
   
@@ -102,14 +98,14 @@ Eine Komponente des TableAdapter füllt ein Dataset mit Daten aus der Datenbank,
  Wenn Sie einen TableAdapter verwenden, führt er effektiv dieselben Operationen mit den Befehlen aus, die Sie normalerweise ausführen würden. Z. B. beim Aufruf des Adapters `Fill` -Methode der Adapter führt den Datenbefehl in die `SelectCommand` Eigenschaft und verwendet einen Datenreader (z. B. <xref:System.Data.SqlClient.SqlDataReader>) um das Resultset in der Datentabelle zu laden. Auf ähnliche Weise werden beim Aufruf des Adapters `Update` -Methode, wird der entsprechenden Befehl ausgeführt (in der `UpdateCommand`, `InsertCommand`, und `DeleteCommand` Eigenschaften) für jeden geänderten Datensatz in der Datentabelle.  
   
 > [!NOTE]
->  Wenn die Hauptabfrage genügend Informationen enthält, werden beim Generieren des TableAdapter standardmäßig die Befehle `InsertCommand`, `UpdateCommand` und `DeleteCommand` erstellt. Wenn die Hauptabfrage des TableAdapter auf mehr als eine einzelne Tabelle SELECT-Anweisung ist, kann der Designer wird nicht in der Lage, generieren `InsertCommand`, `UpdateCommand`, und `DeleteCommand`. Wenn diese Befehle nicht generiert werden, erhalten Sie möglicherweise eine Fehlermeldung beim Ausführen der `TableAdapter.Update` Methode.  
+> Wenn die Hauptabfrage genügend Informationen enthält, werden beim Generieren des TableAdapter standardmäßig die Befehle `InsertCommand`, `UpdateCommand` und `DeleteCommand` erstellt. Wenn die Hauptabfrage des TableAdapter auf mehr als eine einzelne Tabelle SELECT-Anweisung ist, kann der Designer wird nicht in der Lage, generieren `InsertCommand`, `UpdateCommand`, und `DeleteCommand`. Wenn diese Befehle nicht generiert werden, erhalten Sie möglicherweise eine Fehlermeldung beim Ausführen der `TableAdapter.Update` Methode.  
   
 ## <a name="tableadapter-generatedbdirectmethods"></a>TableAdapter GenerateDbDirectMethods  
  Zusätzlich zu `InsertCommand`, `UpdateCommand`, und `DeleteCommand`, TableAdapter-Erstellung mit Methoden, die direkt in der Datenbank ausgeführt werden können. Diese Methoden (`TableAdapter.Insert`, `TableAdapter.Update` und `TableAdapter.Delete`) können direkt aufgerufen werden, um Daten in der Datenbank zu bearbeiten. Dies bedeutet, Sie können eine dieser individuellen Methoden aufrufen, aus dem Code statt `TableAdapter.Update` behandelt, die einfügungen, Updates und löschungen, die ausstehend sind für die zugeordnete Datentabelle.  
   
  Wenn Sie nicht diese direkten Methoden erstellen möchten, legen Sie der TableAdapters **GenerateDbDirectMethods** Eigenschaft `false` (in der **Eigenschaften** Fenster). Zusätzliche Abfragen, die dem TableAdapter hinzugefügt werden, sind eigenständige Abfragen – sie können diese Methoden nicht generieren.  
   
-## <a name="tableadapter-support-for-nullable-types"></a>TableAdapter-Unterstützung für auf NULL festlegbaren Typen  
+## <a name="tableadapter-support-for-nullable-types"></a>TableAdapter-Unterstützung für Typen mit Nullwert  
  TableAdapters unterstützen die Typen `Nullable(Of T)` und `T?`. Weitere Informationen zu Nullable-Typen in Visual Basic finden Sie unter [Auf NULL festlegbare Werttypen](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6). Weitere Informationen zu nullable-Typen in c#, finden Sie unter [Using Nullable Types](http://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28).  
   
 ## <a name="security"></a>Sicherheit  
@@ -117,4 +113,3 @@ Eine Komponente des TableAdapter füllt ein Dataset mit Daten aus der Datenbank,
   
 ## <a name="see-also"></a>Siehe auch  
  [Datasettools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
-

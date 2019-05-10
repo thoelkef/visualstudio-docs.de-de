@@ -1,25 +1,24 @@
 ---
 title: Verwenden von Regelsätzen zum Festlegen von C++-Regeln für die Ausführung
 ms.date: 04/28/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a556b0bb051ea25b438f91696b5e55b0c984115c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d4d7dfc1f010b860653edbe14fa7af9050bddba4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873534"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820372"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Verwenden von Regelsätzen zum Festlegen von C++-Regeln für die Ausführung
 
 In Visual Studio können Sie erstellen und ändern Sie eine benutzerdefinierte *Regelsatz* um bestimmte projektanforderungen mit der Codeanalyse zu erfüllen. Die Standardregelsätze befinden sich im `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`.
 
-**Visual Studio 2017 Version 15.7** Sie benutzerdefinierten Regelsätzen, die mit einem beliebigen Text-Editor erstellen und sie in Befehlszeilenbuilds unabhängig davon, was System erstellen, Sie verwenden, anwenden können. Weitere Informationen finden Sie unter [/ analyze: Ruleset](/cpp/build/reference/analyze-code-analysis).
+**Visual Studio 2017 Version 15.7 und höher** Sie benutzerdefinierten Regelsätzen, die mit einem beliebigen Text-Editor erstellen und sie in Befehlszeilenbuilds unabhängig davon, was System erstellen, Sie verwenden, anwenden können. Weitere Informationen finden Sie unter [/ analyze: Ruleset](/cpp/build/reference/analyze-code-analysis).
 
 Um eine benutzerdefinierte C++-Regel legen Sie in Visual Studio zu erstellen, muss eine C/C++-Projekt in Visual Studio-IDE geöffnet sein. Sie öffnen Sie dann einen standard-Regelsatz im Regelsatz-Editor, und klicken Sie dann hinzufügen oder entfernen bestimmte Regeln und optional ändern die Aktion, die tritt auf, wenn der Codeanalyse festgestellt, dass eine Regel verletzt wurde.
 
@@ -83,8 +82,9 @@ Können Sie einen benutzerdefinierten Regelsatz erstellen Sie in einem Text-Edit
 
 Das folgende Beispiel zeigt, dass eine einfache Regel Datei festgelegt, die Sie als Ausgangspunkt verwenden können:
 
-```xml
+::: moniker range="vs-2017"
 
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <RuleSet Name="New Rule Set" Description=" " ToolsVersion="15.0">
   <Rules AnalyzerId="Microsoft.Analyzers.NativeCodeAnalysis" RuleNamespace="Microsoft.Rules.Native">
@@ -93,3 +93,19 @@ Das folgende Beispiel zeigt, dass eine einfache Regel Datei festgelegt, die Sie 
   </Rules>
 </RuleSet>
 ```
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="New Rule Set" Description=" " ToolsVersion="16.0">
+  <Rules AnalyzerId="Microsoft.Analyzers.NativeCodeAnalysis" RuleNamespace="Microsoft.Rules.Native">
+    <Rule Id="C6001" Action="Warning" />
+    <Rule Id="C26494" Action="Warning" />
+  </Rules>
+</RuleSet>
+```
+
+::: moniker-end

@@ -1,14 +1,9 @@
 ---
-title: 'CA2236: Basisklassenmethoden auf ISerializable-Typen aufrufen | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'CA2236: Aufrufen von Basisklassenmethoden auf ISerializable-Typen | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2236
 - CallBaseClassMethodsOnISerializableTypes
@@ -20,14 +15,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: bcde222020ca18b918ad694abe42c2c76a4a613c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4ec8c14da5c691f6f9740c6df86cb38aeb9fac5e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886681"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057640"
 ---
-# <a name="ca2236-call-base-class-methods-on-iserializable-types"></a>CA2236: Basisklassenmethoden auf ISerializable-Typen aufrufen
+# <a name="ca2236-call-base-class-methods-on-iserializable-types"></a>CA2236: Basisklassenmethoden auf ISerializable-Typen aufrufen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -40,9 +35,9 @@ ms.locfileid: "49886681"
 ## <a name="cause"></a>Ursache
  Ein Typ abgeleitet wird, von einem Typ, der implementiert die <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> Schnittstelle und eine der folgenden Bedingungen zutrifft:
 
--   Der Typ implementiert den Serialisierungskonstruktor, d. h. einen Konstruktor mit der <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>, <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> Parametersignatur, aber nicht den Serialisierungskonstruktor des Basistyps aufgerufen wird.
+- Der Typ implementiert den Serialisierungskonstruktor, d. h. einen Konstruktor mit der <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>, <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> Parametersignatur, aber nicht den Serialisierungskonstruktor des Basistyps aufgerufen wird.
 
--   Der Typ implementiert die <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> Methode jedoch nicht auf die <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> Methode des Basistyps.
+- Der Typ implementiert die <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> Methode jedoch nicht auf die <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> Methode des Basistyps.
 
 ## <a name="rule-description"></a>Regelbeschreibung
  In einem Prozess benutzerdefinierte Serialisierung, ein Typ implementiert die <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> Methode, um die Felder und den Serialisierungskonstruktor deserialisiert die Felder serialisiert werden sollen. Wenn der Typ von einem Typ abgeleitet wird, implementiert die <xref:System.Runtime.Serialization.ISerializable> Schnittstelle, die den Basistyp <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> -Methode und der Serialisierungskonstruktor aufgerufen werden soll, zu serialisieren/Deserialisieren die Felder des Basistyps. Andernfalls, der Typ wird nicht werden serialisiert und deserialisiert ordnungsgemäß. Beachten Sie, dass wenn der abgeleitete Typ keine neuen Felder hinzugefügt wird, der Typ nicht zum Implementieren notwendigerweise der <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> Methode noch den Serialisierungskonstruktor oder rufen Sie die Entsprechungen für Basistyp.
@@ -73,6 +68,3 @@ ms.locfileid: "49886681"
  [CA2239: Deserialisierungsmethoden für optionale Felder angeben](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
 
  [CA2120: Sichere Serialisierungskonstruktoren](../code-quality/ca2120-secure-serialization-constructors.md)
-
-
-

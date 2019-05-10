@@ -1,11 +1,10 @@
 ---
 title: Umgestalten der Methodensignatur
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.remove
 - vs.csharp.refactoring.reorder
@@ -14,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 68c814fca9d5e1df2c01e803b13cd5b03e8935e4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 89af8235f897858094058981df52d6a3fec8a7d6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968403"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62791110"
 ---
 # <a name="change-a-method-signature-refactoring"></a>Ändern einer Methodensignatur durch Refactoring
 

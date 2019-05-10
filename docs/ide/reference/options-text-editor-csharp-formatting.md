@@ -1,7 +1,6 @@
 ---
 title: C# -Editor-Formatierungsoptionen
 ms.date: 08/14/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting.Spacing
@@ -16,15 +15,15 @@ helpviewer_keywords:
 - Text editor Options dialog box, formatting
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b3c4aa17e31797c9c8bbfa1a931369f371977e26
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ec1847f30f5c04bd32ddea85ff95a0808daa8aa7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946408"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817816"
 ---
 # <a name="options-text-editor-c-code-style-formatting"></a>Optionen Text-Editor, C#, Codeformat, Formatierung
 

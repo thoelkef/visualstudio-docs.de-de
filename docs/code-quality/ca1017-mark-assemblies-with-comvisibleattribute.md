@@ -1,7 +1,6 @@
 ---
-title: 'CA1017: Assemblys mit ComVisibleAttribute markieren'
+title: 'CA1017: Assemblys mit ComVisibleAttribute markieren.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1017
@@ -12,21 +11,21 @@ helpviewer_keywords:
 ms.assetid: 4842cb49-8dd8-4e5d-a2d6-ceeaf6c6cf8e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c6d5f2356f6174739cc4a19e49265f0b163d035
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 648c59e2660c0509edfcf65ac50bf8791bc5896e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62779431"
 ---
-# <a name="ca1017-mark-assemblies-with-comvisibleattribute"></a>CA1017: Assemblys mit ComVisibleAttribute markieren
+# <a name="ca1017-mark-assemblies-with-comvisibleattribute"></a>CA1017: Assemblys mit ComVisibleAttribute markieren.
 
 |||
 |-|-|

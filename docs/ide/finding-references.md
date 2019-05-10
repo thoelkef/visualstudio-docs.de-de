@@ -1,28 +1,27 @@
 ---
 title: Suchen von Verweisen im Code
 ms.date: 09/26/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, find all references
 - find all references
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f1e1e01721ae261b756bd6f3567b8f06dc73f12
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: df3eb6577c72aa421f2a22d93b3109f63548cc96
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921337"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793502"
 ---
 # <a name="find-references-in-your-code"></a>Suchen von Verweisen im Code
 
 Mithilfe des Befehls **Alle Verweise suchen** können Sie in Ihrer gesamten Codebasis die Stellen finden, an denen auf bestimmte Codeelemente verwiesen wird. Den Befehl **Alle Verweise suchen** finden Sie im Kontextmenü (Rechtsklick) des Elements, für das Sie Verweise suchen möchten. Wenn Sie eine Tastatur verwenden, können Sie einfach **UMSCHALT+F12** drücken.
 
-Die Ergebnisse werden in einem Toolfenster mit der Bezeichnung **<element>-Verweise** angezeigt, wobei *element* dem Namen des gesuchten Elements entspricht. Mit einer Symbolleiste im **Verweisfenster** können Sie Folgendes tun:
+Die Ergebnisse werden in einem Toolfenster mit der Bezeichnung **\<Element>-Verweise** angezeigt, wobei *Element* der Name des gesuchten Elements ist. Mit einer Symbolleiste im **Verweisfenster** können Sie Folgendes tun:
 - Den Suchbereich über ein Dropdown-Listenfeld ändern. Sie können auswählen, nur in geänderten Dokumenten bis hin zur gesamten Projektmappe zu suchen.
 - Das ausgewählte Verweiselement durch Auswählen der Schaltfläche **Kopieren** kopieren.
 - Schaltflächen auswählen, um zum nächsten oder vorherigen Element in der Liste zu wechseln. Drücken Sie dazu alternativ die Tasten **F8** und **UMSCHALT+F8**.
@@ -47,6 +46,11 @@ Mithilfe der folgenden Methoden können Sie zu den **Verweisen** im entsprechend
 Standardmäßig werden Verweise vom Projekt dann per Definition gruppiert. Sie können diese Gruppierungsreihenfolge jedoch ändern, indem Sie im Dropdown-Listenfeld auf der Symbolleiste die Einstellung **Gruppieren nach:** ändern. Sie können sie beispielsweise von der Standardeinstellung **Projekt, dann Definition** in **Definition, dann Projekt** ändern.
 
 **Definition** und **Projekt** sind die beiden verwendeten Standardgruppierungen, aber Sie können andere hinzufügen, indem Sie den Befehl **Gruppierung** im Kontextmenü des ausgewählten Elements auswählen. Das Hinzufügen weiterer Gruppen kann hilfreich sein, wenn Ihre Projektmappe viele Dateien und Pfade enthält.
+
+## <a name="filter-by-reference-type-in-net"></a>Filtern nach Verweistyp in .NET
+In C# oder Visual Basic verfügt das Fenster „Verweise suchen“ über eine Spalte „Art“, in der die gefundenen Verweistypen aufgeführt sind. Diese Spalte kann verwendet werden, um nach dem Verweistyp zu filtern. Klicken Sie dazu auf das Filtersymbol, das angezeigt wird, wenn Sie mit der Maus auf die Kopfzeile der Spalte zeigen. Verweise können nach „Read“, „Write“, „Reference“ und „NameOnly“ gefiltert werden.
+
+![Suche in der Spalte „Art“ im Fenster „Verweise“ ](../ide/media/vside_findallreferencesKind.png)
 
 ## <a name="see-also"></a>Siehe auch
 

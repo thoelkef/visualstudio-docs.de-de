@@ -1,19 +1,18 @@
 ---
 title: Empfohlene Vorgehensweisen und Beispiele (SAL)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 51d9526cb9778dd7f4fde61cca5667c7eaece2f1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 28d17301d81ee5b206feb0c3afefba35e50615cd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959195"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62560032"
 ---
 # <a name="best-practices-and-examples-sal"></a>Empfohlene Vorgehensweisen und Beispiele (SAL)
 Hier sind einige Möglichkeiten, um die am häufigsten aus der Source Code Annotation Language (SAL) zu erhalten und einige der häufigsten Probleme zu vermeiden.
@@ -239,7 +238,7 @@ In diesem Beispiel `_Out_opt_` besagt, dass der Zeiger NULL als Teil der Vorbedi
 
 ## <a name="see-also"></a>Siehe auch
 
-[Verwenden von SAL-Anmerkungen zum Reduzieren von C/C++-Codefehlern](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+[Verwenden von SAL-Anmerkungen zum Reduzieren von C /C++ Codedefekte](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 [verstehen von SAL](../code-quality/understanding-sal.md)
 [Hinzufügen einer Anmerkung zu Funktionsparametern und Rückgabewerten](../code-quality/annotating-function-parameters-and-return-values.md) 
  [Funktionsverhalten](../code-quality/annotating-function-behavior.md)

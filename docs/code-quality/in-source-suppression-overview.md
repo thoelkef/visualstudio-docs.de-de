@@ -1,26 +1,25 @@
 ---
 title: Unterdrücken von codeanalysewarnungen
-ms.date: 08/03/2018
-ms.prod: visual-studio-dev15
+ms.date: 12/01/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - source suppression, code analysis
 - code analysis, source suppression
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: d72697a8969983d83445808b75c63bc8657ecf1f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6cd61304e150da63d2d461ef364e7039789c71fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825819"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Unterdrücken von codeanalysewarnungen
 
@@ -28,13 +27,13 @@ Es ist häufig nützlich, um anzugeben, dass eine Warnung nicht anwendbar ist. D
 
 Die <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> -Attribut ist ein conditional-Attribut, das in der Assembly mit verwaltetem Code, den IL-Metadaten enthalten ist, nur dann, wenn das Symbol für die CODE_ANALYSIS-Kompilierung zum Zeitpunkt der Kompilierung definiert wird.
 
-In C++ / CLI, verwenden Sie die Makros Zertifizierungsstelle\_UNTERDRÜCKEN\_Nachricht oder einer Zertifizierungsstelle\_GLOBAL\_SUPPRESS_MESSAGE in der Headerdatei, um das Attribut hinzuzufügen.
+In C++/CLI, verwenden Sie die Makros Zertifizierungsstelle\_UNTERDRÜCKEN\_Nachricht oder einer Zertifizierungsstelle\_GLOBAL\_SUPPRESS_MESSAGE in der Headerdatei, um das Attribut hinzuzufügen.
 
 > [!NOTE]
 > Sie sollten nicht im Quellcode-Unterdrückungen für Releasebuilds verwenden, um zu verhindern, dass die Metadaten für die Unterdrückung im Quellcode versehentlich Protokollversand. Darüber hinaus kann aufgrund der Verarbeitungskosten Unterdrückung im Quellcode, die Leistung Ihrer Anwendung beeinträchtigt werden.
 
 > [!NOTE]
-> Wenn Sie ein Projekt in Visual Studio 2017 migrieren, können Sie plötzlich eine große Anzahl von Warnungen der Codeanalyse ausgesetzt sind. Diese Warnungen stammen [Roslyn-Analysetools](roslyn-analyzers-overview.md). Wenn Sie nicht bereit, die Warnungen zu beheben sind, können Sie alle unterdrücken, indem auswählen **analysieren** > **Codeanalyse ausführen und aktive Probleme unterdrücken**.
+> Wenn Sie ein Projekt in Visual Studio 2017 oder Visual Studio-2019 migrieren, können Sie mit einer großen Anzahl von Warnungen der Codeanalyse plötzlich konfrontiert werden. Diese Warnungen stammen [Roslyn-Analysetools](roslyn-analyzers-overview.md). Wenn Sie nicht bereit, die Warnungen zu beheben sind, können Sie alle unterdrücken, indem auswählen **analysieren** > **Codeanalyse ausführen und aktive Probleme unterdrücken**.
 >
 > ![Ausführen der Codeanalyse und Unterdrücken von Problemen in Visual Studio](media/suppress-active-issues.png)
 
@@ -66,17 +65,19 @@ Die Eigenschaften des Attributs gehören:
 
 - **MessageId** – Eindeutiger Bezeichner für ein Problem für jede Nachricht.
 
-- **Bereich** -Ziel auf dem die Warnung unterdrückt wird. Wenn das Ziel nicht angegeben ist, wird es an das Ziel des Attributs festgelegt. Die folgenden: Bereiche werden unterstützt
+- **Bereich** -Ziel auf dem die Warnung unterdrückt wird. Wenn das Ziel nicht angegeben ist, wird es an das Ziel des Attributs festgelegt. Unterstützt [Bereiche](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope) umfassen Folgendes:
 
-    - Modul
+   - `module`
 
-    - Namespace
+   - `resource`
 
-    - Ressource
+   - `type`
 
-    - Typ
+   - `member`
 
-    - Member
+   - `namespace` : In diesem Bereich unterdrückt Warnungen für den Namespace selbst. Unterdrückt nicht die Warnungen für Typen im Namespace.
+
+   - `namespaceanddescendants` -(Neu in Visual Studio-2019) unterdrückt dieses Bereichs Warnungen in einem Namespace und alle seine untergeordneten Symbole. Die `namespaceanddescendants` Wert gilt nur für Roslyn-Analysetools und wird ignoriert, binär-, FxCop-basierten statischen Analyse.
 
 - **Ziel** – ein Bezeichner, der verwendet wird, an das Ziel, auf dem die Warnung unterdrückt wird. Es muss eine vollständig qualifizierte Elementnamen enthalten.
 
@@ -151,7 +152,7 @@ Das Analysetool für verwalteten Code untersucht `SuppressMessage` Attribute, di
 `[module: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "MyNamespace")]`
 
 > [!NOTE]
-> Wenn Sie eine Warnung mit dem Namespace-Gültigkeitsbereich unterdrücken, unterdrückt sie die Warnung für den Namespace selbst. Unterdrückt nicht die Warnung für Typen im Namespace.
+> Wenn Sie eine Warnung mit unterdrücken `namespace` Bereich es unterdrückt die Warnmeldung für den Namespace selbst. Unterdrückt nicht die Warnung für Typen im Namespace.
 
 Durch einen expliziten Bereich angeben, kann jede Unterdrückung ausgedrückt werden. Diese Unterdrückungen müssen auf globaler Ebene befinden. Sie können nicht auf Memberebene Unterdrückung angeben, durch das ergänzen eines Typs.
 
@@ -168,5 +169,6 @@ Der globale Unterdrückungsdatei verwaltet Unterdrückungen, die entweder auf gl
 
 ## <a name="see-also"></a>Siehe auch
 
+- <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>
 - [Verwenden von Roslyn-Analysetools](../code-quality/use-roslyn-analyzers.md)

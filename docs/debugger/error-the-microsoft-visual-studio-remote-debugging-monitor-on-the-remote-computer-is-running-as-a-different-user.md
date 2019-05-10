@@ -18,30 +18,30 @@ helpviewer_keywords:
 - msvsmon.exe
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d6d36844883b1acd51d169015a226d584c6c096
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 607369b4b10a98e9464a0ede15e2f9dce5fac5a9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399152"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user"></a>Fehler: Der Microsoft Visual Studio-Remotedebugmonitor auf dem Remotecomputer wird als anderer Benutzer ausgeführt
-Wenn Sie versuchen, Remotedebuggen auszuführen, wird möglicherweise folgende Fehlermeldung angezeigt:  
-  
- Der Microsoft Visual Studio-Remotedebugmonitor auf dem Remotecomputer wird als anderer Benutzer ausgeführt.  
-  
-## <a name="cause"></a>Ursache  
- Diese Meldung wird angezeigt, wenn Sie sich im Modus "Keine Authentifizierung debuggen" befinden, und der Benutzer, der "msvsmon" gestartet hat, nicht mit dem Benutzer identisch ist, der Visual Studio ausführt.  
-  
-## <a name="solution"></a>Lösung  
- Die sicherste und beste Lösung besteht darin, den Remotedebugmonitor (msvsmon.exe) unter demselben Benutzerkonto auszuführen wie Visual Studio. Wenn dies nicht möglich ist, können Sie den Remotedebugmonitor unter dem anderen Konto ausführen, indem Sie im Dialogfeld **Optionen** des Remotedebugmonitors die Option **Allow any user to debug** (Allen Benutzern das Debuggen erlauben) aktivieren.  
-  
+Wenn Sie versuchen, Remotedebuggen auszuführen, wird möglicherweise folgende Fehlermeldung angezeigt:
+
+ Der Microsoft Visual Studio-Remotedebugmonitor auf dem Remotecomputer wird als anderer Benutzer ausgeführt.
+
+## <a name="cause"></a>Ursache
+ Diese Meldung wird angezeigt, wenn Sie sich im Modus "Keine Authentifizierung debuggen" befinden, und der Benutzer, der "msvsmon" gestartet hat, nicht mit dem Benutzer identisch ist, der Visual Studio ausführt.
+
+## <a name="solution"></a>Lösung
+ Die sicherste und beste Lösung besteht darin, den Remotedebugmonitor (msvsmon.exe) unter demselben Benutzerkonto auszuführen wie Visual Studio. Wenn dies nicht möglich ist, können Sie den Remotedebugmonitor unter dem anderen Konto ausführen, indem Sie im Dialogfeld **Optionen** des Remotedebugmonitors die Option **Allow any user to debug** (Allen Benutzern das Debuggen erlauben) aktivieren.
+
 > [!CAUTION]
->  Indem anderen Benutzern die Berechtigung zum Herstellen einer Verbindung gewährt wird, besteht die Möglichkeit, dass unbeabsichtigt eine Verbindung mit der falschen Remotedebugsitzung hergestellt wird. Das Debuggen im Modus **Keine Authentifizierung** ist immer unsicher und sollte daher nur mit Vorsicht verwendet werden.
-  
-## <a name="see-also"></a>Siehe auch  
- [Remote Debugging Errors and Troubleshooting (Remotedebuggen – Fehler und Problembehandlung)](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [Remote Debugging](../debugger/remote-debugging.md)
+> Indem anderen Benutzern die Berechtigung zum Herstellen einer Verbindung gewährt wird, besteht die Möglichkeit, dass unbeabsichtigt eine Verbindung mit der falschen Remotedebugsitzung hergestellt wird. Das Debuggen im Modus **Keine Authentifizierung** ist immer unsicher und sollte daher nur mit Vorsicht verwendet werden.
+
+## <a name="see-also"></a>Siehe auch
+- [Remotedebuggen – Fehler und Problembehandlung](../debugger/remote-debugging-errors-and-troubleshooting.md)
+- [Remote Debugging](../debugger/remote-debugging.md)

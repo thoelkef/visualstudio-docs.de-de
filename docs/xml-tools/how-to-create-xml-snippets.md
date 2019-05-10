@@ -1,46 +1,45 @@
 ---
 title: 'Vorgehensweise: Erstellen von XML-Ausschnitten'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec6332f52e732e99cc6d81512c9b3c469e99e18e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 99ad13fd3c8c1c2efeeec28794e10a91d9dd0db1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829101"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948838"
 ---
 # <a name="how-to-create-xml-snippets"></a>Vorgehensweise: Erstellen von XML-Ausschnitten
 
-Mithilfe des XML-Editors können neue XML-Ausschnitte erstellt werden. Der Editor enthält einen XML-Ausschnitt mit dem Namen "Snippet". Dies ist ein vorformulierter Ausschnitt zum Erstellen neuer XML-Ausschnitte.
+Der XML-Editor kann verwendet werden, zum Erstellen neuer XML-Ausschnitte. Der Editor enthält einen XML-Ausschnitt mit dem Namen "Snippet". Dies ist ein vorformulierter Ausschnitt zum Erstellen neuer XML-Ausschnitte.
 
 ## <a name="to-create-a-new-xml-snippet"></a>So erstellen Sie einen neuen XML-Ausschnitt
 
  Erstellen Sie einen neuen XML-Code Codeausschnitt erstellen Sie eine neue XML-Datei, und Verwenden der **Ausschnitt einfügen** Feature.
 
-1.  Auf der **Datei** Menü klicken Sie auf **neu** , und klicken Sie dann auf **Datei**.
+1. Auf der **Datei** Menü klicken Sie auf **neu** , und klicken Sie dann auf **Datei**.
 
-2.  Klicken Sie auf **XML-Datei** , und klicken Sie dann auf **öffnen**.
+2. Klicken Sie auf **XML-Datei** , und klicken Sie dann auf **öffnen**.
 
-3.  Mit der rechten Maustaste im Editor-Bereich, und wählen Sie **Ausschnitt einfügen**.
+3. Mit der rechten Maustaste im Editor-Bereich, und wählen Sie **Ausschnitt einfügen**.
 
-4.  Wählen Sie **Codeausschnitt** aus der Liste und drücken Sie **EINGABETASTE**.
+4. Wählen Sie **Codeausschnitt** aus der Liste und drücken Sie **EINGABETASTE**.
 
-5.  Nehmen Sie die gewünschten Änderungen an dem neuen Ausschnitt vor.
+5. Nehmen Sie die gewünschten Änderungen an dem neuen Ausschnitt vor.
 
-6.  Von der **Datei** Menü die Option **XMLFile.xml speichern**.
+6. Von der **Datei** Menü die Option **XMLFile.xml speichern**.
 
      Die **Datei speichern unter** Dialogfeld wird angezeigt.
 
-7.  Geben Sie den Namen für den neuen Ausschnitt aus, und wählen Sie **Codeausschnittsdateien** aus der **Dateityp** Dropdownfenster.
+7. Geben Sie den Namen für den neuen Ausschnitt aus, und wählen Sie **Codeausschnittsdateien** aus der **Dateityp** Dropdownfenster.
 
-8.  Verwenden der **speichern in** Dropdown-Liste so ändern Sie den Speicherort der *Eigene Dateien\Visual Studio 2005\Codeausschnitte \XML\My XML Snippets* Ordner, und drücken Sie dann die **speichern**.
+8. Verwenden der **speichern in** Dropdown-Liste so ändern Sie den Speicherort der *Eigene Dateien\Visual Studio 2005\Codeausschnitte \XML\My XML Snippets* Ordner, und drücken Sie dann die **speichern**.
 
 ## <a name="snippet-description"></a>Ausschnittbeschreibung
 
@@ -66,7 +65,6 @@ Mithilfe des XML-Editors können neue XML-Ausschnitte erstellt werden. Der Edito
 > [!NOTE]
 > Der XML-Ausschnitttext muss in einem `<![CDATA[...]]>`-Abschnitt eingeschlossen werden.
 
-
  Es folgt das `Code`-Element, das von einem vorformulierten Ausschnitt erstellt wurde.
 
 ```xml
@@ -81,7 +79,7 @@ Mithilfe des XML-Editors können neue XML-Ausschnitte erstellt werden. Der Edito
 
 - $name$ ist eine benutzerdefinierte Variable. Sie erstellt ein `name`-Element mit einem editierbaren Wert, dessen Standardwert "name" ist. Benutzerdefinierte Variablen werden mithilfe des `Literal`-Elements definiert.
 
-- $selected$ ist eine vordefinierte Variable. Sie stellt den Text dar, der im XML-Editor vor dem Aufrufen des Ausschnitts ausgewählt wurde. Die Positionierung dieser Variablen bestimmt, an welcher Position der ausgewählte Text im Codeausschnitt angezeigt wird, der die Auswahl umgibt.
+- $selected$ ist eine vordefinierte Variable. Es stellt den Text, der in der XML-Editor vor dem Aufrufen des Ausschnitts ausgewählt wurde. Die Positionierung dieser Variablen bestimmt, an welcher Position der ausgewählte Text im Codeausschnitt angezeigt wird, der die Auswahl umgibt.
 
 - $end$ ist eine vordefinierte Variable. Wenn der Benutzer drückt **EINGABETASTE** zur Bearbeitung der Codeausschnittfelder abgeschlossen haben, dieser Variablen wird festgelegt, in dem das Caretzeichen (^) in verschoben wird.
 

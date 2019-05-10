@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 4a0ecef49d8c3493ff6094be66f1d05ad588077c
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 428c5ceb878d2ec0f4185ad70772672733fda517
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295669"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971444"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Deinstallieren von Visual Studio für Mac
 
@@ -34,10 +34,11 @@ In folgenden Abschnitten werden Informationen zum Herunterladen und Verwenden de
 
 Sie können Visual Studio- und Xamarin-Komponenten mithilfe des [Deinstallationsskripts](https://raw.githubusercontent.com/MicrosoftDocs/visualstudio-docs/master/mac/resources/uninstall-vsmac.sh) gleichzeitig deinstallieren.
 
-Dieses Deinstallationsskript enthält die meisten Befehle, die Sie im Artikel finden. Es gibt zwei wichtigsten Auslassungen gegenüber dem Skript, die aufgrund von möglichen externen Abhängigkeiten nicht enthalten sind:
+Dieses Deinstallationsskript enthält die meisten Befehle, die Sie im Artikel finden. Es gibt drei wichtige Auslassungen gegenüber dem Skript, die aufgrund von möglichen externen Abhängigkeiten nicht enthalten sind. Um diese zu entfernen, wechseln Sie zum entsprechenden Abschnitt unten, und entfernen Sie sie manuell:
 
-- **Deinstallation von Mono**
-- **Deinstallieren von Android AVD**
+- **[Deinstallieren von Mono](#uninstall-mono-sdk-mdk)**
+- **[Deinstallieren von Android-AVDs](#uninstall-android-avd)**
+- **[Deinstallieren des Android SDK und des Java SDK](#uninstall-android-sdk-and-java-sdk)**
 
 Führen Sie die folgenden Schritte durch, um das Skript auszuführen:
 
@@ -45,14 +46,16 @@ Führen Sie die folgenden Schritte durch, um das Skript auszuführen:
 2. Öffnen Sie das Terminal, und ändern Sie das Arbeitsverzeichnis, in das das Skript heruntergeladen wurde:
 
     ```bash
-    $ cd /location/of/file
+    cd /location/of/file
     ```
+
 3. Machen Sie das Skript ausführbar, und führen Sie es mit **sudo** aus:
 
     ```bash
-    $ chmod +x ./uninstall-vsmac.sh
-    $ sudo ./uninstall-vsmac.sh
+    chmod +x ./uninstall-vsmac.sh
+    sudo ./uninstall-vsmac.sh
     ```
+
 4. Löschen Sie schließlich das Deinstallationsskript.
 
 ### <a name="net-core-script"></a>.NET Core-Skript
@@ -65,14 +68,16 @@ Führen Sie die folgenden Schritte durch, um das Skript auszuführen:
 2. Öffnen Sie das Terminal, und ändern Sie das Arbeitsverzeichnis, in das das Skript heruntergeladen wurde:
 
     ```bash
-    $ cd /location/of/file
+    cd /location/of/file
     ```
+
 3. Machen Sie das Skript ausführbar, und führen Sie es mit **sudo** aus:
 
     ```bash
-    $ chmod +x ./dotnet-uninstall-pkgs.sh
-    $ sudo ./dotnet-uninstall-pkgs.sh
+    chmod +x ./dotnet-uninstall-pkgs.sh
+    sudo ./dotnet-uninstall-pkgs.sh
     ```
+
 4. Löschen Sie schließlich das .NET Core-Deinstallationsskript.
 
 ## <a name="uninstall-visual-studio-for-mac"></a>Deinstallieren von Visual Studio für Mac
@@ -93,9 +98,15 @@ rm -rf ~/Library/Preferences/Visual\ Studio
 rm -rf ~/Library/Logs/VisualStudio
 rm -rf ~/Library/VisualStudio
 rm -rf ~/Library/Preferences/Xamarin/
-rm -rf ~/Library/Developer/Xamarin
 rm -rf ~/Library/Application\ Support/VisualStudio
 rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
+rm -rf ~/Library/Application\ Support/VisualStudio/8.0/LocalInstall/Addins/
+```
+
+Sie können auch das folgende Verzeichnis entfernen, das verschiedene Xamarin-Dateien und -Ordner enthält. Sie sollten sich dabei aber bewusst sein, dass dieses Verzeichnis die Android-Signaturschlüssel enthält. Weitere Informationen finden Sie im Abschnitt **[Deinstallieren des Android SDK und des Java SDK](#uninstall-android-sdk-and-java-sdk)**.
+
+```bash
+rm -rf ~/Library/Developer/Xamarin
 ```
 
 ## <a name="uninstall-mono-sdk-mdk"></a>Deinstallieren des Mono SDK (MDK)
@@ -130,6 +141,9 @@ sudo rm -rf /Library/Frameworks/Xamarin.Android.framework
 ### <a name="uninstall-android-sdk-and-java-sdk"></a>Deinstallieren des Android SDK und des Java SDK
 
 Das Android SDK ist für die Entwicklung von Android-Anwendungen erforderlich. Um alle Bestandteile des Android SDK vollständig zu entfernen, suchen Sie die Datei unter **~/Library/Developer/Xamarin/**, und verschieben Sie sie in den **Papierkorb**.
+
+> [!WARNING]
+> Sie sollten dabei beachten, dass sich Android Signaturschlüssel, die von Visual Studio für Mac generiert werden, in `~/Library/Developer/Xamarin/Keystore` befinden. Stellen Sie sicher, dass diese entsprechend gesichert werden, oder vermeiden Sie es, dieses Verzeichnis zu entfernen, wenn Sie Ihren Keystore beibehalten möchten.
 
 Java SDK (JDK) muss nicht deinstalliert werden, da es unter Mac OS X/macOS bereits vorab installiert ist.
 
@@ -206,6 +220,22 @@ rm -rf ~/Library/Logs/XamarinInstaller/
 rm -rf ~/Library/Logs/VisualStudioInstaller/
 rm -rf ~/Library/Preferences/Xamarin/
 rm -rf "~/Library/Preferences/Visual Studio/"
+```
+
+## <a name="uninstall-visual-studio-2019-for-mac-preview"></a>Deinstallieren der Vorschauversion von Visual Studio 2019 für Mac
+
+Visual Studio 2019 für Mac Preview wurde als eigene Vorschauversion veröffentlicht, neben der Sie Ihre Visual Studio 2017 für Mac-Installation parallel verwenden konnten.
+
+Da nun Visual Studio 2019 für Mac veröffentlicht wurde, können Sie die Anwendung „Visual Studio 2019 für Mac Preview“ sicher entfernen.
+
+Das Preview-Anwendungspaket deinstallieren Sie, indem Sie in Ihrem **Anwendungsordner** die Anwendung **Visual Studio (Preview)** auswählen und wie auf folgendem Bild dargestellt auf die Option **In den Papierkorb legen** klicken:
+
+![Screenshot: Auswählen der Option „In den Papierkorb legen“](media/uninstall-remove-vspreview.png)
+
+Mit dem folgenden Befehl können Sie auch die PLIST-Datei der Vorschauversion entfernen:
+
+```bash
+rm -rf ~/Library/Preferences/com.microsoft.visual-studio-preview.plist
 ```
 
 ## <a name="see-also"></a>Siehe auch

@@ -1,23 +1,20 @@
 ---
 title: Definieren einer Sperrrichtlinie zum Erstellen von schreibgeschützten Segmenten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: fa549c71-2bf6-4b08-b7b2-7756dd6f1dc8
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 298e649704731157164db363dfa198ff6f2cdc41
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6044e9c47a0dcbc95fd1503906cbd81ac8e44526
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893824"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422656"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definieren einer Sperrrichtlinie zum Erstellen von schreibgeschützten Segmenten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +24,7 @@ Die Unveränderlichkeit-API, der die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)
  Sie können darüber hinaus als Autor einer DSL und definieren eine *Sperrrichtlinie.* Eine Sperrrichtlinie definiert, welche Sperren zulässigen, nicht zulässig oder erforderlich sind. Wenn Sie eine DSL veröffentlichen, können Sie z. B. Drittanbieter-Entwickler so erweitern, mit neuen Befehlen empfehlen. Aber Sie können auch eine Sperrrichtlinie verwenden, um zu verhindern, dass Sie den schreibgeschützten Status des angegebenen Teile des Modells ändern.  
   
 > [!NOTE]
->  Eine Sperrrichtlinie kann umgangen werden, mithilfe der Reflektion. Stellt eine klare Hürde für externe Entwickler, sondern bietet keine hohe Sicherheit.  
+> Eine Sperrrichtlinie kann umgangen werden, mithilfe der Reflektion. Stellt eine klare Hürde für externe Entwickler, sondern bietet keine hohe Sicherheit.  
   
  Weitere Informationen und Beispiele finden Sie unter den [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [Visualisierungs- und Modellierungs-SDK](http://go.microsoft.com/fwlink/?LinkId=186128) Website.  
   
@@ -61,15 +58,15 @@ partition.SetLocks(Locks.Delete);
 ### <a name="using-locks"></a>Verwenden von Sperren  
  Sie können Sperren verwenden, um Schemas, z. B. den folgenden Beispielen zu implementieren:  
   
--   Unterbinden Sie Änderungen an allen Elementen und Beziehungen mit Ausnahme derjenigen, die Kommentare darstellen. Dadurch können Benutzer ein Modell mit Anmerkungen versehen, ohne ihn zu ändern.  
+- Unterbinden Sie Änderungen an allen Elementen und Beziehungen mit Ausnahme derjenigen, die Kommentare darstellen. Dadurch können Benutzer ein Modell mit Anmerkungen versehen, ohne ihn zu ändern.  
   
--   Änderungen in der Standardpartition nicht zulassen, aber Änderungen in der Partition Diagramm zulassen. Die Benutzer kann das Diagramm ändern, aber das zugrunde liegende Modell kann nicht geändert werden.  
+- Änderungen in der Standardpartition nicht zulassen, aber Änderungen in der Partition Diagramm zulassen. Die Benutzer kann das Diagramm ändern, aber das zugrunde liegende Modell kann nicht geändert werden.  
   
--   Unterbinden Sie Änderungen an den Store mit Ausnahme von einer Gruppe von Benutzern, die in einer separaten Datenbank registriert sind. Für andere Benutzer sind das Diagramm und das Modell schreibgeschützt.  
+- Unterbinden Sie Änderungen an den Store mit Ausnahme von einer Gruppe von Benutzern, die in einer separaten Datenbank registriert sind. Für andere Benutzer sind das Diagramm und das Modell schreibgeschützt.  
   
--   Änderungen für das Modell nicht zulassen, wenn eine boolesche Eigenschaft des Diagramms festgelegt ist auf "true". Geben Sie einen Menübefehl, diese Eigenschaft zu ändern. Dadurch wird sichergestellt, Benutzer, die sie keine versehentlich ändert.  
+- Änderungen für das Modell nicht zulassen, wenn eine boolesche Eigenschaft des Diagramms festgelegt ist auf "true". Geben Sie einen Menübefehl, diese Eigenschaft zu ändern. Dadurch wird sichergestellt, Benutzer, die sie keine versehentlich ändert.  
   
--   Nicht zulassen Sie, hinzufügen und Löschen von Elementen und Beziehungen zwischen bestimmten Klassen, doch gestatten Sie eigenschaftenänderungen. Dies bietet Benutzern mit einem festen Formular, in dem sie die Eigenschaften gefüllt werden können.  
+- Nicht zulassen Sie, hinzufügen und Löschen von Elementen und Beziehungen zwischen bestimmten Klassen, doch gestatten Sie eigenschaftenänderungen. Dies bietet Benutzern mit einem festen Formular, in dem sie die Eigenschaften gefüllt werden können.  
   
 ## <a name="lock-values"></a>Lock-Werte  
  Sperren können für eine Store, Partitions- oder einzelne ModelElement festgelegt werden. Sperrt eine `Flags` Enumeration: können kombiniert werden die Werte, die mit "&#124;".  
@@ -100,9 +97,9 @@ partition.SetLocks(Locks.Delete);
   
  Zum Definieren einer Sperrrichtlinie müssen Sie:  
   
--   Erstellen Sie eine Klasse, die das <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> implementiert.  
+- Erstellen Sie eine Klasse, die das <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> implementiert.  
   
--   Fügen Sie dieser Klasse mit den Diensten, die über das docdata-Objekt Ihrer DSL zur Verfügung stehen.  
+- Fügen Sie dieser Klasse mit den Diensten, die über das docdata-Objekt Ihrer DSL zur Verfügung stehen.  
   
 ### <a name="to-define-a-locking-policy"></a>Zum Definieren einer Sperrrichtlinie  
  <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> weist folgende Definition:  
@@ -193,6 +190,3 @@ namespace Company.YourDsl.DslPackage // Change
     }  
 }  
 ```
-
-
-

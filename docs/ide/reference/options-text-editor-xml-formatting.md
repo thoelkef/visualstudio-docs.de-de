@@ -1,24 +1,23 @@
 ---
 title: Optionen, Text-Editor, XML, Formatierung
 ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.XML.Formatting
 ms.assetid: 203e60b2-7b80-4ff4-9fa1-aa9f4374377b
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0d8420df205d49df3c6799e62adbc4e759a4aed2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: e20b2f7ebe351aa050ea66468fb33aba8e4a31bc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969266"
 ---
 # <a name="options-text-editor-xml-formatting"></a>Optionen, Text-Editor, XML, Formatierung
 
-Verwenden Sie die Eigenschaftenseite **Formatierung**, um anzugeben, wie Elemente und Attribute in Ihren XML-Dokumenten formatiert werden. Klicken Sie zum Öffnen des Dialogfelds **Optionen** auf das Menü **Tools** und anschließend auf **Optionen**. Erweitern Sie für den Zugriff auf die Eigenschaftenseite **Formatierung** den Knoten **Text-Editor** > **XML** > **Formatierung**.
+Verwenden Sie die Optionsseite **Formatierung**, um anzugeben, wie Elemente und Attribute in Ihren XML-Dokumenten formatiert werden. Wählen Sie für den Zugriff auf XML-Formatierungsoptionen **Extras** > **Optionen** > **Text-Editor** > **XML** und dann **Formatierung** aus.
 
 ## <a name="attributes"></a>Attribute
 
@@ -31,7 +30,7 @@ Formatiert Attribute nicht neu. Dies ist die Standardeinstellung.
 
 **Attribute jeweils in einer eigenen Zeile ausrichten**
 
-Richtet das zweite und die nachfolgenden Attribute vertikal aus, damit sie dem Einzug des ersten Attributs entsprechen. Der folgende XML-Text veranschaulicht, wie die Attribute ausgerichtet werden.
+Richtet das zweite und die nachfolgenden Attribute vertikal aus, damit sie dem Einzug des ersten Attributs entsprechen. Der folgende XML-Text veranschaulicht, wie die Attribute ausgerichtet werden:
 
 ```xml
 <item id = "123-A"
@@ -67,5 +66,5 @@ Wenn ein Element eine Mischung aus Text und Markup enthält, wird der Inhalt als
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Vorgehensweise: How to: Create XML documentation (Visual Basic) (Vorgehensweise: Erstellen von XML-Dokumentation in Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
-- [Codegenerierung](../code-generation-in-visual-studio.md)
+- [XML-Optionen – Sonstiges](options-text-editor-xml-miscellaneous.md)
+- [XML-Tools in Visual Studio](../../xml-tools/xml-tools-in-visual-studio.md)

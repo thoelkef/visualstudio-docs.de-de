@@ -1,7 +1,6 @@
 ---
-title: 'CA1600: Verwenden Sie nicht im Leerlauf Prozesse mit der Priorität'
+title: 'CA1600: Verwenden Sie keine Prozesse mit der Priorität "idle".'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - DoNotUseIdleProcessPriority
@@ -12,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 9b0d073b-78b6-41be-8ef3-14692a735283
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e606850298841d1d1c77435d83dbbe12c4e55d64
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a1774b3feb2da4939420bf75506892aac6dedd72
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921042"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797526"
 ---
-# <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600: Verwenden Sie nicht im Leerlauf Prozesse mit der Priorität
+# <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600: Verwenden Sie keine Prozesse mit der Priorität "idle".
 
 |||
 |-|-|

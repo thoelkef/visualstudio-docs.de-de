@@ -2,22 +2,21 @@
 title: Workflow-Designer - TryCatch-Aktivitätsdesigner
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.TryCatch.UI
 - System.Activities.Statements.Catch`1.UI
 ms.assetid: 02a326c2-4009-442f-b7cb-e42121fd2992
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 280f844ec08ea5e75a78d2e9ea1596b0fb7162eb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 079c25b2bbaa37432009f0eeade9673f8d0afd28
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858995"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433954"
 ---
 # <a name="trycatch-activity-designer"></a>TryCatch-Aktivitätsdesigner
 
@@ -34,7 +33,7 @@ Die **TryCatch** Aktivitäts-Designer gezogen werden kann, aus der **Toolbox** u
 
 Klicken Sie auf die Erweiterungsschaltfläche auf der rechten oberen Ecke des **TryCatch** -Designer finden Sie unter der **versuchen**, **fängt**, und **schließlich** Dialogfelder in der Erweiterte Ansicht. Um einen Catch hinzuzufügen, klicken Sie auf die **neuen Catch hinzufügen** Schaltfläche **TryCatch** Designer. Die Schaltfläche nimmt die Form eines Kombinationsfelds an. Wählen Sie einen Ausnahmetyp aus, und drücken Sie die EINGABETASTE, um den Catch hinzuzufügen. Nach dem Hinzufügen einer **Catch**der Catch-Bereich wird erweitert, und eine Aktivität kann gelöscht werden, in der Haken, um die Ausführungslogik für den Catch zu definieren. Auf der rechten Seite des erweiterten Catch-Bereichs befindet sich ein Textfeld. In dieses Textfeld können Sie den Namen einer Ausnahmevariablen eingeben. Die Ausnahmevariable kann nur verwendet werden, für die Aktivitäten im gleichen **Catch**.
 
-Die **TryCatch** Designer unterstützt keine Bearbeitung **Catch**. Wenn Sie den Ausnahmetyp ändern möchten, müssen Sie löschen die **Catch** und ein neues Konto hinzufügen. Ein **Catch** kann gelöscht werden, indem Sie ihn auswählen und gelöscht wird oder mithilfe von der **löschen** auf das Kontextmenü auf der rechten Maustaste auf den zugegriffen.
+Die **TryCatch** Designer unterstützt keine Bearbeitung **Catch**. Wenn Sie den Ausnahmetyp ändern möchten, müssen Sie löschen die **Catch** und ein neues Konto hinzufügen. Ein **Catch** kann gelöscht werden, indem Sie ihn auswählen und gelöscht wird oder indem **löschen** im Kontextmenü an, mit der rechten Maustaste auf die zugegriffen wird.
 
 ### <a name="the-trycatch-properties"></a>Die TryCatch-Eigenschaften
 

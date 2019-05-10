@@ -1,29 +1,27 @@
 ---
 title: Visual Studio-Datentools für .NET | Microsoft-Dokumentation
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c3175080-1dfb-4ab8-a460-92dadbb844b4
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 841311af90ddf4bedfb9d055e5764068cdc71632
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: b42617892e377dcf750e9f5cafc914759b7d0c13
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859706"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110922"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Visual Studio-Datentools für .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio und .NET Framework bieten zusammen umfangreiche API und toolunterstützung für die Verbindung mit Datenbanken und Modellieren von Daten im Arbeitsspeicher zum Anzeigen der Daten in der Benutzeroberfläche.  .NET Framework-Klassen, die Datenzugriff-Funktionalität bereitstellen, werden als bezeichnet [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx). ADO.NET, zusammen mit den Daten, die in Visual Studio-Tools wurde ursprünglich entworfen, hauptsächlich als Unterstützung für relationale Datenbanken und XML. Heutzutage bieten viele NoSQL-Datenbank-Anbieter oder von Dritten, ADO.NET-Anbieter gewährleistet.  
   
- Visual Studio 2015 Update 2 enthält die neuesten Updates für [SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx), dem Aktivieren der Unterstützung für die neuesten Features in Azure [SQL-Datenbank](https://azure.microsoft.com/en-us/services/sql-database/) und [SQL Server 2016](https://www.microsoft.com/en-us/server-cloud/products/sql-server-2016/). [.NET Core](https://www.dotnetfoundation.org/netcore) ADO.NET, mit Ausnahme von Datasets und verknüpfte Typen unterstützt. Wenn Sie .NET Core Anzielen und eine Ebene objektrelationales Mapping (ORM), verwenden Sie [Entity Framework Core](https://msdn.microsoft.com/data/ef.aspx).  
+ Visual Studio 2015 Update 2 enthält die neuesten Updates für [SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx), dem Aktivieren der Unterstützung für die neuesten Features in Azure [SQL-Datenbank](https://azure.microsoft.com/services/sql-database/) und [SQL Server 2016](https://www.microsoft.com/sql-server/sql-server-2016). [.NET Core](https://www.dotnetfoundation.org/projects?searchquery=dotnet+core&type=project) ADO.NET, mit Ausnahme von Datasets und verknüpfte Typen unterstützt. Wenn Sie .NET Core Anzielen und eine Ebene objektrelationales Mapping (ORM), verwenden Sie [Entity Framework Core](https://msdn.microsoft.com/data/ef.aspx).  
   
  Das folgende Diagramm zeigt eine vereinfachte Ansicht der grundlegenden Architektur:  
   
@@ -45,34 +43,27 @@ Visual Studio und .NET Framework bieten zusammen umfangreiche API und toolunters
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
   
--   [Erstellen einer einfachen Datenanwendung mit ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md)  
+- [Erstellen einer einfachen Datenanwendung mit ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md)  
   
--   [Neue Verbindungen hinzufügen](../data-tools/add-new-connections.md)  
+- [Neue Verbindungen hinzufügen](../data-tools/add-new-connections.md)  
   
--   [Neue Datenquelle hinzufügen](../data-tools/add-new-data-sources.md)  
+- [Neue Datenquelle hinzufügen](../data-tools/add-new-data-sources.md)  
   
--   [Verwenden der Entity Data Model-Tools mit Visual Studio](../data-tools/entity-data-model-tools-in-visual-studio.md)  
+- [Verwenden der Entity Data Model-Tools mit Visual Studio](../data-tools/entity-data-model-tools-in-visual-studio.md)  
   
--   [Datasettools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)  
+- [Datasettools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)  
   
--   [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
+- [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
   
--   [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)  
+- [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)  
   
--   [Zusätzliche Ressourcen zur Problembehandlung beim Datenzugriff](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)  
+- [Zusätzliche Ressourcen zur Problembehandlung beim Datenzugriff](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)  
   
--   [Windows Communication Foundation-Dienste und WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)  
+- [Windows Communication Foundation-Dienste und WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)  
   
--   [Erstellen und Verwalten von Anwendungen auf Datenebene und Datenbanken in Visual Studio](../data-tools/creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md)  
+- [Erstellen und Verwalten von Anwendungen auf Datenebene und Datenbanken in Visual Studio](../data-tools/creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md)  
   
--   [Zusätzliche Ressourcen zur Problembehandlung beim Datenzugriff](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)  
+- [Zusätzliche Ressourcen zur Problembehandlung beim Datenzugriff](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)  
   
 ## <a name="see-also"></a>Siehe auch  
  [Zugreifen auf Daten in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
-
-
-
-
-
-
-

@@ -1,30 +1,32 @@
 ---
 title: IDebugProcessEx2::Attach | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProcessEx2::Attach
 helpviewer_keywords:
 - IDebugProcessEx2::Attach method
 ms.assetid: f3334ed7-39bf-4d02-a338-36f567b9b287
-author: gregvanl
+caps.latest.revision: 16
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 3bef8e8016d89c2a7a4c98e9f486358fa8ba108a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0a39f674744d0b1e97e815d33c2d9564f4a39c0d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905110"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62917580"
 ---
 # <a name="idebugprocessex2attach"></a>IDebugProcessEx2::Attach
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Diese Methode informiert dem Prozess, dass eine Sitzung jetzt Debuggen des Prozesses ist.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT Attach(   
    IDebugSession2* pSession  
 );  

@@ -1,14 +1,9 @@
 ---
 title: Fortsetzen der Ausführung nach einer Ausnahme | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -33,13 +28,13 @@ ms.assetid: 6fe97aac-2131-4615-bd92-d3afee741558
 caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 947a17993fe0e8366149d1cef79c26c68b11d22a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a43983846263fa49a7ff501b0d87c460990e8a37
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730036"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105473"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Fortfahren mit der Ausführung nach einer Ausnahme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,17 +49,12 @@ Wenn die Ausführung wegen einer Ausnahme vom Debugger unterbrochen wird, wird e
 ## <a name="native-code"></a>nativer Code  
  Bei systemeigenem C/C++ haben Sie zwei Möglichkeiten:  
   
--   Klicken Sie auf **unterbrechen** und versuchen Sie es, um das Problem zu beheben. Während Sie sich im Unterbrechungsmodus befinden, können Sie die Aufrufliste entladen, indem Sie mit der rechten Maustaste auf einen Rahmen in der **Aufrufliste** Fenster, und wählen **Entladung an diesen Rahmen** im Kontextmenü auf. Wenn Sie fortfahren, Debuggen, die **Ausnahme** Dialogfeld wird erneut angezeigt, wenn Sie das Problem nicht behoben haben. Andernfalls die **Ausnahme** im Dialogfeld werden nicht erneut angezeigt.  
+- Klicken Sie auf **unterbrechen** und versuchen Sie es, um das Problem zu beheben. Während Sie sich im Unterbrechungsmodus befinden, können Sie die Aufrufliste entladen, indem Sie mit der rechten Maustaste auf einen Rahmen in der **Aufrufliste** Fenster, und wählen **Entladung an diesen Rahmen** im Kontextmenü auf. Wenn Sie fortfahren, Debuggen, die **Ausnahme** Dialogfeld wird erneut angezeigt, wenn Sie das Problem nicht behoben haben. Andernfalls die **Ausnahme** im Dialogfeld werden nicht erneut angezeigt.  
   
--   Klicken Sie auf **Weiter** um die Ausführung fortzusetzen, ohne zu versuchen, das Problem zu beheben. Die **Ausnahme** Dialogfeld wird erneut angezeigt.  
+- Klicken Sie auf **Weiter** um die Ausführung fortzusetzen, ohne zu versuchen, das Problem zu beheben. Die **Ausnahme** Dialogfeld wird erneut angezeigt.  
   
 ## <a name="mixed-code"></a>Gemischter Code  
  Wenn beim Debuggen gemischten Codes (systemeigener und verwalteter Code) ein Ausnahmefehler auftritt, verhindern Einschränkungen des Betriebssystems das Entladen der Aufrufliste. Sollten Sie versuchen, die Aufrufliste über das Kontextmenü neu zu laden, erhalten Sie die Fehlermeldung, dass der Debugger beim Debuggen von gemischtem Code keine Entladung aus einer unbehandelten Ausnahme vornehmen kann.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Verwalten von Ausnahmen mit dem Debugger](../debugger/managing-exceptions-with-the-debugger.md)
-
-
-
-
-

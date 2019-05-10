@@ -1,32 +1,26 @@
 ---
 title: Elementfunktionen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, Item functions
 ms.assetid: 5e6df3cc-2db8-4cbd-8fdd-3ffd03ac0876
 caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 687d740a379bd3b04bd47d0d2e3111bb71e7934d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c94624aaea629c087b552ee46266a44f534888d5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207921"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670263"
 ---
 # <a name="item-functions"></a>Elementfunktionen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Ab MSBuild 4.0 kann Code in Tasks und Zielen Elementfunktionen aufrufen, um Informationen zu den Elementen des Projekts zu erhalten. Diese Funktionen vereinfachen das Abrufen von Distinct()-Elementen, und mit ihnen erfolgt der Abruf schneller als beim Durchlaufen der Elemente.  
   
 ## <a name="string-item-functions"></a>Zeichenfolgenelementfunktionen  
@@ -110,6 +104,3 @@ Ab MSBuild 4.0 kann Code in Tasks und Zielen Elementfunktionen aufrufen, um Info
   
 ## <a name="see-also"></a>Siehe auch  
  [Elemente](../msbuild/msbuild-items.md)
-
-
-

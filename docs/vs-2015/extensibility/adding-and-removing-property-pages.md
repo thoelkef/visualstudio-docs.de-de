@@ -1,14 +1,9 @@
 ---
 title: Hinzufügen und Entfernen von Eigenschaftenseiten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - property pages, adding
 - property pages, project subtypes
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 34853412-ab8a-4caa-9601-7d0727b2985d
 caps.latest.revision: 30
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 680a375d025d59d12c2a070bc564ff94085bc4b5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 98838f09df3094e16d5f1a18263ffdad603ded0b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798962"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440144"
 ---
 # <a name="adding-and-removing-property-pages"></a>Hinzufügen und Entfernen von Eigenschaftenseiten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ Projekt-Designer bietet einen zentralen Ort zum Verwalten von Projekteigenschaft
   
 #### <a name="to-remove-a-property-page-in-project-designer"></a>So entfernen Sie eine Eigenschaftenseite im Projekt-Designer  
   
-1.  Überschreiben der `GetProperty(uint itemId, int propId, out object property)` Methode, um Eigenschaftenseiten zu filtern und Abrufen einer `clsids` Liste.  
+1. Überschreiben der `GetProperty(uint itemId, int propId, out object property)` Methode, um Eigenschaftenseiten zu filtern und Abrufen einer `clsids` Liste.  
   
     ```vb  
     Protected Overrides int GetProperty(uint itemId, int propId, out object property)  
@@ -80,7 +75,7 @@ Projekt-Designer bietet einen zentralen Ort zum Verwalten von Projekteigenschaft
     }  
     ```  
   
-2.  Entfernen Sie die **Buildereignisse** Seite abgerufen `clsids` Liste.  
+2. Entfernen Sie die **Buildereignisse** Seite abgerufen `clsids` Liste.  
   
     ```vb  
     Private buildEventsPageGuid As String = "{1E78F8DB-6C07-4D61-A18F-7514010ABD56}"  
@@ -116,7 +111,7 @@ Projekt-Designer bietet einen zentralen Ort zum Verwalten von Projekteigenschaft
   
 #### <a name="to-add-a-property-page-in-project-designer"></a>Hinzufügen eine Eigenschaftenseite im Projekt-Designer  
   
-1.  Erstellen Sie eine Eigenschaftenseite, die Sie hinzufügen möchten.  
+1. Erstellen Sie eine Eigenschaftenseite, die Sie hinzufügen möchten.  
   
     ```vb  
     Class DeployPropertyPage  
@@ -161,7 +156,7 @@ Projekt-Designer bietet einen zentralen Ort zum Verwalten von Projekteigenschaft
     }  
     ```  
   
-2.  Registrieren Sie Ihre neue Eigenschaftenseite an.  
+2. Registrieren Sie Ihre neue Eigenschaftenseite an.  
   
     ```vb  
     <MSVSIP.ProvideObject(GetType(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)>  
@@ -171,7 +166,7 @@ Projekt-Designer bietet einen zentralen Ort zum Verwalten von Projekteigenschaft
     [MSVSIP.ProvideObject(typeof(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)]  
     ```  
   
-3.  Überschreiben der `GetProperty(uint itemId, int propId, out object property)` Methode, um Eigenschaftenseiten zu filtern, erhalten eine `clsids` aus, und fügen Sie eine neue Eigenschaftsseite hinzu.  
+3. Überschreiben der `GetProperty(uint itemId, int propId, out object property)` Methode, um Eigenschaftenseiten zu filtern, erhalten eine `clsids` aus, und fügen Sie eine neue Eigenschaftsseite hinzu.  
   
     ```vb  
     Protected Overrides Function GetProperty(ByVal itemId As UInteger, ByVal propId As Integer, ByRef [property] As Object) As Integer  
@@ -210,8 +205,7 @@ Projekt-Designer bietet einen zentralen Ort zum Verwalten von Projekteigenschaft
     ```  
   
 > [!NOTE]
->  Alle Codebeispiele in diesem Thema werden die Teile eines größeren Beispiels, [VSSDK-Beispiele](../misc/vssdk-samples.md).  
+> Alle Codebeispiele in diesem Thema werden die Teile eines größeren Beispiels, [VSSDK-Beispiele](../misc/vssdk-samples.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Projektuntertypen](../extensibility/internals/project-subtypes.md)
-

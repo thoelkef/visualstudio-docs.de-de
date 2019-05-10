@@ -1,7 +1,6 @@
 ---
-title: 'CA1601: Verwenden Sie keine Timer, die Änderungen am Betriebszustand zu verhindern.'
+title: 'CA1601: Verwenden Sie keine Timer, um Änderungen am Betriebszustand zu verhindern.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1601
@@ -12,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: b8028c92-0696-4c54-9773-0028f29bda9a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eebcd4f370055b9fb5f27d5b5694534ed8b46a76
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fc6db6dff5ee4c4e4d387399dbf79277046d6c02
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797446"
 ---
-# <a name="ca1601-do-not-use-timers-that-prevent-power-state-changes"></a>CA1601: Verwenden Sie keine Timer, die Änderungen am Betriebszustand zu verhindern.
+# <a name="ca1601-do-not-use-timers-that-prevent-power-state-changes"></a>CA1601: Verwenden Sie keine Timer, um Änderungen am Betriebszustand zu verhindern.
 
 |||
 |-|-|

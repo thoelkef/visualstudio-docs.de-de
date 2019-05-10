@@ -1,8 +1,6 @@
 ---
 title: CvCreateMarkerSeries-Funktion | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkers/CvCreateMarkerSeriesA
@@ -13,52 +11,49 @@ helpviewer_keywords:
 ms.assetid: e280530b-137a-43a7-8643-aa514ab86ed7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55dd6658aca332937299b2301d8294081bc7d3fd
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: eb3ef4d928aaac57f39a48e5be212c1148ef58eb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62552680"
 ---
 # <a name="cvcreatemarkerseries-function"></a>CvCreateMarkerSeries-Funktion
-Erstellt Markerreihen für einen angegebenen Anbieter.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C  
-_Check_return_ HRESULT CvCreateMarkerSeriesW(  
-    _In_ PCV_PROVIDER  pProvider,  
-    _In_ LPCWSTR pSeriesName,  
-    _Out_ PCV_MARKERSERIES* ppMarkerSeries);  
-  
-_Check_return_ HRESULT CvCreateMarkerSeriesA(  
-    _In_ PCV_PROVIDER  pProvider,  
-    _In_ LPCSTR pSeriesName,  
-    _Out_ PCV_MARKERSERIES* ppMarkerSeries);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pProvider`  
- Durch CvInitProvider bereits initialisiertes Anbieterobjekt. Darf nicht NULL sein.  
-  
- `pSeriesName`  
- Markerreihenname. Darf nicht NULL sein, aber eine leere Zeichenfolge ist zulässig.  
-  
- `ppMarkerSeries`  
- Adresse einer Ausgabevariablen, mit der Markerreihenkontext gespeichert wird. Darf nicht NULL sein.  
-  
-## <a name="return-value"></a>Rückgabewert  
- S_OK, wenn Markerreihen erfolgreich erstellt wurden, oder Fehlercode, wenn Fehler aufgetreten sind. Prüfen Sie mit den Makros SUCCEEDED bzw. FAILED, ob Fehler vorliegen.  
-  
-## <a name="requirements"></a>Anforderungen  
- **Header:** *cvmarkers.h*  
-  
- **Unicode:** CvCreateMarkerSeriesW  
-  
- **ANSI:** CvCreateMarkerSeriesA  
-  
-## <a name="see-also"></a>Siehe auch  
- [C++-Bibliotheksreferenz](../profiling/cpp-library-reference.md)
+Erstellt Markerreihen für einen angegebenen Anbieter.
+
+## <a name="syntax"></a>Syntax
+
+```C
+_Check_return_ HRESULT CvCreateMarkerSeriesW(
+    _In_ PCV_PROVIDER  pProvider,
+    _In_ LPCWSTR pSeriesName,
+    _Out_ PCV_MARKERSERIES* ppMarkerSeries);
+
+_Check_return_ HRESULT CvCreateMarkerSeriesA(
+    _In_ PCV_PROVIDER  pProvider,
+    _In_ LPCSTR pSeriesName,
+    _Out_ PCV_MARKERSERIES* ppMarkerSeries);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pProvider`: durch CvInitProvider bereits initialisiertes Anbieterobjekt. Darf nicht NULL sein.
+
+ `pSeriesName` der Markerreihenname. Darf nicht NULL sein, aber eine leere Zeichenfolge ist zulässig.
+
+ `ppMarkerSeries`: die Adresse einer Ausgabevariablen, mit der der Markerreihenkontext gespeichert wird. Darf nicht NULL sein.
+
+## <a name="return-value"></a>Rückgabewert
+ S_OK, wenn Markerreihen erfolgreich erstellt wurden, oder Fehlercode, wenn Fehler aufgetreten sind. Prüfen Sie mit den Makros SUCCEEDED bzw. FAILED, ob Fehler vorliegen.
+
+## <a name="requirements"></a>Anforderungen
+ **Header:** *cvmarkers.h*
+
+ **Unicode:** CvCreateMarkerSeriesW
+
+ **ANSI:** CvCreateMarkerSeriesA
+
+## <a name="see-also"></a>Siehe auch
+- [C++-Bibliotheksreferenz](../profiling/cpp-library-reference.md)

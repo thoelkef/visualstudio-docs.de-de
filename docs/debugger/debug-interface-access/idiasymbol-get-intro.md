@@ -1,30 +1,33 @@
 ---
 title: 'Idiasymbol:: Get_intro | Microsoft-Dokumentation'
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_intro method
 ms.assetid: 101afe4a-4c57-45de-87b4-330394c6de10
-author: mikejo5000
+caps.latest.revision: 12
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: 05d520947c5e5e998ecf67a1b9dbb6d77bdff2c4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 153daa1f43ba4945a5eb32aea82c5d58ff57c5f6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62836799"
 ---
 # <a name="idiasymbolgetintro"></a>IDiaSymbol::get_intro
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Ruft ein Flag, das angibt, ob die Funktion eine Einführung in virtuelle Funktion ist ab.  
   
 ## <a name="syntax"></a>Syntax  
   
-```C++  
+```cpp#  
 HRESULT get_intro (   
    BOOL* pRetVal  
 );  
@@ -38,11 +41,11 @@ HRESULT get_intro ( 
  Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder den Fehlercode.  
   
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="example"></a>Beispiel  
   
-```C++  
+```cpp#  
 class A {  
    virtual int f1();  
 }  
@@ -57,7 +60,7 @@ class B : public A {
   
 |Anforderung|Beschreibung|  
 |-----------------|-----------------|  
-|Header:|Dia2.h|  
+|Header:|dia2.h|  
 |Version:|DIA-SDK V7. 0|  
   
 ## <a name="see-also"></a>Siehe auch  

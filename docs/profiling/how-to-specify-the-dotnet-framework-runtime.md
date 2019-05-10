@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Angeben der .NET Framework-Laufzeit | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools, .NET Framework versions
@@ -10,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d39f3579-719a-4f47-a97d-5b4232fe4c64
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e85e1c571ecb900d5ce7ffdecf8e85b8c367de5c
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: d9c62e430d19bbd2c03afbb4db76fca56563cb3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844133"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62996316"
 ---
 # <a name="how-to-specify-the-net-framework-runtime"></a>Vorgehensweise: Angeben der .NET Framework-Laufzeit
 

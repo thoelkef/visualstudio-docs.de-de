@@ -1,7 +1,7 @@
 ---
 title: IDebugArrayObject::GetRank | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugArrayObject::GetRank
 helpviewer_keywords:
@@ -9,42 +9,43 @@ helpviewer_keywords:
 ms.assetid: 9948551a-e334-4ff6-979c-08dab633b9b6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e433b8c50b363347469586d2ecde4bd287a58264
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: a0391030e77e5959fdc28c94f63e099e5c505d77
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62923727"
 ---
 # <a name="idebugarrayobjectgetrank"></a>IDebugArrayObject::GetRank
-Ruft den Rang des Arrays, d. h. die Anzahl der Dimensionen ab.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-HRESULT GetRank(   
-   DWORD* pdwRank  
-);  
-```  
-  
-```csharp  
-int GetRank(  
-   out uint pdwRank  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pdwRank`  
- [out] Gibt den Rang zurück.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
-  
-## <a name="remarks"></a>Hinweise  
- Verwenden der [GetDimensions](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md) Methode, um die Größe der einzelnen Dimensionen des Array-Objekt abzurufen.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)
+Ruft den Rang des Arrays, d. h. die Anzahl der Dimensionen ab.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+HRESULT GetRank( 
+   DWORD* pdwRank
+);
+```
+
+```csharp
+int GetRank(
+   out uint pdwRank
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pdwRank`
+
+ [out] Gibt den Rang zurück.
+
+## <a name="return-value"></a>Rückgabewert
+ Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.
+
+## <a name="remarks"></a>Hinweise
+ Verwenden der [GetDimensions](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md) Methode, um die Größe der einzelnen Dimensionen des Array-Objekt abzurufen.
+
+## <a name="see-also"></a>Siehe auch
+- [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

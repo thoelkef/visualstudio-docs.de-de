@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Festlegen von Präinstrumentations- und Postinstrumentationsbefehlen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.instrument
 helpviewer_keywords:
@@ -19,15 +14,15 @@ ms.assetid: 6a8d5340-1d1b-4d81-88dd-8e1f435eb828
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b88d49be8ee4651d82135b3e8d27bef8218ffd43
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ab7ecbe97ba0b174a1cc4c0f0d169834ce25e8d8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439711"
 ---
-# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Gewusst wie: Festlegen von Präinstrumentations- und Postinstrumentationsbefehlen
+# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Vorgehensweise: Festlegen von Präinstrumentations-und Postinstrumentationsbefehlen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können Befehle angeben, die ausgeführt werden, bevor oder nachdem die Binärdateien in einer Leistungssitzung instrumentiert werden. Jeder Befehl, der über die Befehlszeile ausgegeben werden kann, kann als Präinstrumentations- oder Postinstrumentationsereignis angegeben werden. Beispielsweise können Sie Befehle angeben, die das erneute Signieren einer Assembly mit einem Schlüssel mit starkem Namen in einer Batchdatei automatisiert, die ausgeführt wird, nachdem die Binärdateien instrumentiert werden.  
@@ -58,44 +53,41 @@ Sie können Befehle angeben, die ausgeführt werden, bevor oder nachdem die Bin�
   
 ### <a name="to-specify-pre-instrument-commands"></a>So geben Sie Präinstrumentationsbefehle an  
   
-1.  Führen Sie einen der folgenden Schritte aus:  
+1. Führen Sie einen der folgenden Schritte aus:  
   
-    -   Zum Angeben von Präinstrumentationsbefehle für alle Binärdateien in einer Leistungssitzung wählen Sie den Knoten Leistungssitzung im **Leistungs-Explorer**, klicken Sie anschließend mit der rechten Maustaste und wählen Sie **Eigenschaften** aus.  
+    - Zum Angeben von Präinstrumentationsbefehle für alle Binärdateien in einer Leistungssitzung wählen Sie den Knoten Leistungssitzung im **Leistungs-Explorer**, klicken Sie anschließend mit der rechten Maustaste und wählen Sie **Eigenschaften** aus.  
   
-    -   Zum Angeben von Präinstrumentationsbefehlen für eine bestimmte Binärdatei klicken Sie mit der rechten Maustaste auf die Binärdatei in der Liste **Ziele** der Leistungssitzung und wählen Sie anschließend **Eigenschaften** aus.  
+    - Zum Angeben von Präinstrumentationsbefehlen für eine bestimmte Binärdatei klicken Sie mit der rechten Maustaste auf die Binärdatei in der Liste **Ziele** der Leistungssitzung und wählen Sie anschließend **Eigenschaften** aus.  
   
-2.  Klicken Sie auf den **Eigenschaftenseiten** auf **Instrumentation** .  
+2. Klicken Sie auf den **Eigenschaftenseiten** auf **Instrumentation** .  
   
-3.  Geben Sie den Befehl im Textfeld **Befehlszeile** unter **Präinstrumentationsereignisse** ein.  
+3. Geben Sie den Befehl im Textfeld **Befehlszeile** unter **Präinstrumentationsereignisse** ein.  
   
     > [!NOTE]
-    >  Sie können auf die Auslassungszeichen **(…)** klicken, die neben dem Feld **Befehlszeile** stehen, um die entsprechende EXE-, CMD- oder BAT-Datei zu suchen und auszuwählen.  
+    > Sie können auf die Auslassungszeichen **(…)** klicken, die neben dem Feld **Befehlszeile** stehen, um die entsprechende EXE-, CMD- oder BAT-Datei zu suchen und auszuwählen.  
   
-4.  Klicken Sie auf **OK**.  
+4. Klicken Sie auf **OK**.  
   
      Um den Befehl zu deaktivieren, ohne ihn zu entfernen, wählen Sie das Kontrollkästchen **Aus Instrumentation ausschließen** aus. Verwenden Sie zum Ändern der Compiler- oder Linkereinstellungen die Eigenschaftenseiten des Projekts.  
   
 ### <a name="to-specify-post-instrument-commands"></a>So geben Sie Postinstrumentationsbefehle an  
   
-1.  Führen Sie einen der folgenden Schritte aus:  
+1. Führen Sie einen der folgenden Schritte aus:  
   
-    -   Zum Angeben von Postinstrumentationsbefehlen für alle Binärdateien in einer Leistungssitzung wählen Sie den Knoten Leistungssitzung im **Leistungs-Explorer**, klicken Sie anschließend mit der rechten Maustaste und wählen Sie **Eigenschaften** aus.  
+    - Zum Angeben von Postinstrumentationsbefehlen für alle Binärdateien in einer Leistungssitzung wählen Sie den Knoten Leistungssitzung im **Leistungs-Explorer**, klicken Sie anschließend mit der rechten Maustaste und wählen Sie **Eigenschaften** aus.  
   
-    -   Zum Angeben von Präinstrumentationsbefehlen für eine bestimmte Binärdatei klicken Sie mit der rechten Maustaste auf die Binärdatei in der Liste **Ziele** der Leistungssitzung und wählen Sie anschließend **Eigenschaften** aus.  
+    - Zum Angeben von Präinstrumentationsbefehlen für eine bestimmte Binärdatei klicken Sie mit der rechten Maustaste auf die Binärdatei in der Liste **Ziele** der Leistungssitzung und wählen Sie anschließend **Eigenschaften** aus.  
   
-2.  Klicken Sie auf den **Eigenschaftenseiten** auf **Instrumentation** .  
+2. Klicken Sie auf den **Eigenschaftenseiten** auf **Instrumentation** .  
   
-3.  Geben Sie den Befehl im Textfeld **Befehlszeile** unter **Postinstrumentationsereignisse** ein.  
+3. Geben Sie den Befehl im Textfeld **Befehlszeile** unter **Postinstrumentationsereignisse** ein.  
   
     > [!NOTE]
-    >  Sie können auf die Auslassungszeichen **(…)** klicken, die neben dem Feld **Befehlszeile** stehen, um die entsprechende EXE-, CMD- oder BAT-Datei zu suchen und auszuwählen.  
+    > Sie können auf die Auslassungszeichen **(…)** klicken, die neben dem Feld **Befehlszeile** stehen, um die entsprechende EXE-, CMD- oder BAT-Datei zu suchen und auszuwählen.  
   
-4.  Klicken Sie auf **OK**.  
+4. Klicken Sie auf **OK**.  
   
      Um den Befehl zu deaktivieren, ohne ihn zu entfernen, wählen Sie das Kontrollkästchen **Aus Instrumentation ausschließen** aus. Verwenden Sie zum Ändern der Compiler- oder Linkereinstellungen die Eigenschaftenseiten des Projekts.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)
-
-
-

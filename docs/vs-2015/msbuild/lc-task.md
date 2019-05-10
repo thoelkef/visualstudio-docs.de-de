@@ -1,14 +1,9 @@
 ---
 title: LC-Aufgabe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#LC
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: d5a53472-6f2a-42b8-a6db-593ca99c9790
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9f265e06deab522c0b994f0892fb6a96c7ac4a7f
-ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6470125656debf420990ed9b471a5303f66d5712
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51645054"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654914"
 ---
 # <a name="lc-task"></a>LC-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Umschließt „LC.exe“, womit eine LICENSE-Datei aus einer LICX-Datei generiert wird. Weitere Informationen zu „LC.exe“ finden Sie unter [Lc.exe (License Compiler)](http://msdn.microsoft.com/library/2de803b8-495e-4982-b209-19a72aba0460) (Lc.exe [Lizenzcompiler]).  
   
 ## <a name="parameters"></a>Parameter  
@@ -78,6 +72,3 @@ Umschließt „LC.exe“, womit eine LICENSE-Datei aus einer LICX-Datei generier
 ## <a name="see-also"></a>Siehe auch  
  [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
  [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)
-
-
-

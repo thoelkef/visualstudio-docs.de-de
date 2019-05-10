@@ -1,14 +1,9 @@
 ---
 title: MarkupCompilePass2-Aufgabe | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -22,18 +17,17 @@ ms.assetid: 1d25689a-d21f-4b05-be26-95aa0ed4fd03
 caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ea61e827bfae47c3bea961cb15c208f585aa6ed9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7d7656d3b0ac887ec33cae5dad7c391fa0639fc3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179232"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660683"
 ---
 # <a name="markupcompilepass2-task"></a>MarkupCompilePass2-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Der [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)]-Task führt den zweiten Markupkompilierungsschritt für <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass2>-Dateien aus, die auf Typen im selben Projekt verweisen.  
   
 ## <a name="task-parameters"></a>Aufgabenparameter  
@@ -53,7 +47,7 @@ Der [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)]-Task führt den
 |`RootNamespace`|Optionaler **String**-Parameter.<br /><br /> Gibt den Stammnamespace für Klassen innerhalb des Projekts an. **RootNamespace** wird auch als Standardnamespace für eine generierte Datei mit verwaltetem Code verwendet, wenn die entsprechende [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)]-Datei nicht das `x:Class`-Attribut enthält.|  
 |`XAMLDebuggingInformation`|Optionaler **Boolean**-Parameter.<br /><br /> Wenn **true**, werden Diagnoseinformationen generiert und in die kompilierte [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)]-Datei einbezogen, um das Debuggen zu unterstützen.|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Vor dem Ausführen von **MarkupCompilePass2** müssen Sie eine temporäre Assembly generieren, die die Typen enthält, die von den [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)]-Dateien verwendet werden, deren Markupkompilierungsschritt aufgeschoben wurde. Sie generieren die temporäre Assembly durch Ausführen der **GenerateTemporaryTargetAssembly**-Aufgabe.  
   
  Ein Verweis auf die generierte temporäre Assembly wird bei der Ausführung an <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass2> bereitgestellt, sodass die [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)]-Dateien, deren Kompilierung im ersten Markupkompilierungsschritt aufgeschoben wurde, nun zur Kompilierung in das binäre Format übergeben werden.  
@@ -84,6 +78,3 @@ Der [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)]-Task führt den
  [Task Reference](../msbuild/msbuild-task-reference.md)  (MSBuild-Aufgabenreferenz)  
  [Erstellen einer WPF-Anwendung (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
  [Übersicht über WPF-XAML-Browseranwendungen](http://msdn.microsoft.com/library/3a7a86a8-75d5-4898-96b9-73da151e5e16)
-
-
-

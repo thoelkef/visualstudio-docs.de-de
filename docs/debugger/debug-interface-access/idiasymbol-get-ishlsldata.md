@@ -1,28 +1,31 @@
 ---
 title: IDiaSymbol::get_isHLSLData | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 4662058b-c505-4ccf-ae03-739a62c814ca
-author: mikejo5000
+caps.latest.revision: 6
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: b1bd237833e27c3c83a24345e6b7c436b40aa8b7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 03b0bf45d4b8100f4ebfd1d6a61dc73547312fe6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875124"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62836702"
 ---
 # <a name="idiasymbolgetishlsldata"></a>IDiaSymbol::get_isHLSLData
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Gibt an, ob dieses Symbol High Level Shader Language (HLSL) Daten darstellt.  
   
 ## <a name="syntax"></a>Syntax  
   
-```C++  
+```cpp  
 HRESULT get_isHLSLData(   
    BOOL* pRetVal);  
 ```  

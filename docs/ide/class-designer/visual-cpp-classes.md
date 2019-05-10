@@ -1,8 +1,6 @@
 ---
 title: Visual C++-Klassen im Klassen-Designer
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.inheritancelinelabel
@@ -11,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 75e56f8c-11ef-42a3-b7ec-3d2cf25c581b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d2ff2b6660b7ef7530d3a37d251904fa54b5ce0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b8312e0db76dd3ce064172116aecd82daab56e90
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856196"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975046"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Visual C++-Klassen im Klassen-Designer
 
@@ -130,7 +128,6 @@ Weitere Informationen zu anonymen Klassen finden Sie unter [Anonyme Klassentypen
 ## <a name="template-classes"></a>Vorlagenklassen
 
 Der **Klassen-Designer** unterstützt die Visualisierung von Vorlagenklassen. Geschachtelte Deklarationen werden unterstützt. Die folgende Tabelle zeigt einige Standarddeklarationen.
-
 
 | Codeelement | Ansicht „Klassen-Designer“ |
 | - | - |

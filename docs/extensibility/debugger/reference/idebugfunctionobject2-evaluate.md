@@ -1,28 +1,30 @@
 ---
 title: IDebugFunctionObject2::Evaluate | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugFunctionObject2::Evaluate
 ms.assetid: bc54c652-904b-4297-a6db-faa329684881
-author: gregvanl
+caps.latest.revision: 9
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: f785e698e0c73146e4b80838d815c300bffa7abc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 441126724c78c2045e3e870fcdf7baa23f9149c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53991216"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62919204"
 ---
 # <a name="idebugfunctionobject2evaluate"></a>IDebugFunctionObject2::Evaluate
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Ruft die Funktion und der resultierende Wert als Objekt zurückgegeben.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT Evaluate (  
    IDebugObject** ppParams,  
    DWORD          dwParams,  

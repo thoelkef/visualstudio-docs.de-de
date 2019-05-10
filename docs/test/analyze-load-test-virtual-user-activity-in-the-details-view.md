@@ -10,14 +10,13 @@ helpviewer_keywords:
 ms.assetid: 63f4bd42-3cfb-4eee-af68-e8334976539e
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 484c80e474fdce799bc10787bddf157a19f46740
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 54f9c7b982f1774c79d7cd1e7c0affa29dfbb65d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823420"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Analysieren der Aktivität virtueller Benutzer bei Auslastungstests in der Detailansicht des Auslastungstest-Analyzers
 
@@ -36,7 +35,7 @@ In der **Detailansicht** wird das **Diagramm für Aktivitäten virtueller Benutz
 
  ![Detaillegendenbereich](../test/media/ltest_detailslegend.png)
 
- Der Bereich „Detaillegende“ wird im **Diagramm für Aktivitäten virtueller Benutzer** angezeigt. Im Bereich „Detaillegende“ können Sie Tests, Seiten und Transaktionen auf Grundlage unterschiedlicher Kriterien herausfiltern. Sie können z. B. bestimmte Tests aus der Ansicht bzw. alle erfolgreich verlaufenen Tests oder Tests entfernen, die aufgrund bestimmter Fehler fehlgeschlagen sind. Sie können auch alle Tests entfernen, für die keine Protokolle verfügbar sind.
+ Der Bereich „Detaillegende“ wird im **Diagramm für Aktivitäten virtueller Benutzer** angezeigt. Im Bereich "Detaillegende" können Sie Tests, Seiten und Transaktionen auf Grundlage unterschiedlicher Kriterien herausfiltern. Sie können z. B. bestimmte Tests aus der Ansicht bzw. alle erfolgreich verlaufenen Tests oder Tests entfernen, die aufgrund bestimmter Fehler fehlgeschlagen sind. Sie können auch alle Tests entfernen, für die keine Protokolle verfügbar sind.
 
  Sie können fehlgeschlagene Tests markieren, woraufhin alle fehlgeschlagenen Tests rot hervorgehoben werden. Sie können auch Tests hervorheben, für die Testprotokolle vorhanden sind. Tests mit Protokollen erhalten die Farbe Grün.
 
@@ -46,11 +45,11 @@ In der **Detailansicht** wird das **Diagramm für Aktivitäten virtueller Benutz
 
  Der Bereich „Filterergebnisse“ wird im **Diagramm für Aktivitäten virtueller Benutzer** angezeigt. Im Bereich "Filterergebnisse" können Sie Ergebnisse wie folgt filtern:
 
--   **Nur Ergebnisse mit Protokollen anzeigen**: zeigt nur Testergebnisse an, denen Testprotokolle zugeordnet sind.
+- **Nur Ergebnisse mit Protokollen anzeigen**: zeigt nur Testergebnisse an, denen Testprotokolle zugeordnet sind.
 
--   **Erfolgreiche Ergebnisse anzeigen**: zeigt erfolgreiche Ergebnisse an.
+- **Erfolgreiche Ergebnisse anzeigen**: zeigt erfolgreiche Ergebnisse an.
 
--   **Ergebnisse mit Fehlern anzeigen**: zeigt Ergebnisse mit Fehlern an, die beim Debuggen hilfreich sein können.
+- **Ergebnisse mit Fehlern anzeigen**: zeigt Ergebnisse mit Fehlern an, die beim Debuggen hilfreich sein können.
 
 ## <a name="tasks"></a>Aufgaben
 

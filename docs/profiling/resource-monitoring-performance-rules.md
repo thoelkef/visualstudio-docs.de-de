@@ -1,21 +1,24 @@
 ---
 title: Leistungsregeln für die Ressourcenüberwachung | Microsoft-Dokumentation
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: f0f77faf-0a05-4718-a2c5-47934be40868
-author: mikejo5000
+caps.latest.revision: 12
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: 7e4071820aece2f58f0a1345e1110a80c9f76f0f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 6818bab45532aa44b8ed9ed73978df7c3a05a7bf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947919"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62834063"
 ---
 # <a name="resource-monitoring-performance-rules"></a>Leistungsregeln für die Ressourcenüberwachung
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 Über Leistungsmeldungen in der Kategorie „Ressourcenüberwachung“ erhalten Sie zusätzliche Informationen zur Leistung Ihrer Anwendung. Sie können diese Daten verwenden, um Probleme mit der Leistung zu analysieren. Diese Regeln haben einen informativen Charakter und werden bei jeder Profilerstellung angezeigt.  
   
 |||  

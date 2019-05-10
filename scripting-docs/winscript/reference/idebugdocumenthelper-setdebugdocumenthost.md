@@ -2,7 +2,6 @@
 title: 'Idebugdocumenthelper:: Setdebugdocumenthost | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c4a935d849fed2b617abf5ee33ca2901b9c944c
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 47c003657518edae0e8ffed13ffef9f6f072d296
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54088217"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948992"
 ---
 # <a name="idebugdocumenthelpersetdebugdocumenthost"></a>IDebugDocumentHelper::SetDebugDocumentHost
 Legt die `IDebugDocumentHost` für dieses Dokument.  

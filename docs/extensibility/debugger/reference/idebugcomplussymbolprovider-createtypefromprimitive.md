@@ -1,24 +1,26 @@
 ---
 title: IDebugComPlusSymbolProvider::CreateTypeFromPrimitive | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::CreateTypeFromPrimitive
 - CreateTypeFromPrimitive
 ms.assetid: 37213cc2-a038-42ea-9b28-3ae40d4cfe69
-author: gregvanl
+caps.latest.revision: 14
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 813caf10c9222d4cdb8ca651d04a50032ef51617
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: da9d0639ec6cf6cae01298273f21e3fde1f2aafd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62922641"
 ---
 # <a name="idebugcomplussymbolprovidercreatetypefromprimitive"></a>IDebugComPlusSymbolProvider::CreateTypeFromPrimitive
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Erstellt einen vom angegebenen primitiven Typs.  
   
 ## <a name="syntax"></a>Syntax  
@@ -57,7 +59,7 @@ int CreateTypeFromPrimitive(
 ## <a name="example"></a>Beispiel  
  Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) Schnittstelle.  
   
-```cpp  
+```cpp#  
 HRESULT CDebugSymbolProvider::CreateTypeFromPrimitive(  
     DWORD dwPrimType,  
     IDebugAddress* pAddress,  

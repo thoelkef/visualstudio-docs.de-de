@@ -1,19 +1,18 @@
 ---
 title: Ausnahme von Windows Information Protection
 ms.date: 06/01/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 665a4e893b8b146555dd35caad5cc521e1630dd9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 714d85ea41674563922903f5bf38db04ffc2fbce
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978122"
 ---
 # <a name="configure-visual-studio-as-a-wip-exempt-app"></a>Konfigurieren von Visual Studio als Ausnahme-App von WIP
 

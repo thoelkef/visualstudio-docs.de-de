@@ -10,55 +10,41 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: aeeacdd9fc52f26a14930f0756be463ac4f87eec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: 0ac8a47aeca8875dabe3fdf388e9a73d68ec514e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943771"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445209"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Vorgehensweise: Erstellen einer domänenspezifischen Sprachlösung
 Eine domänenspezifische Sprache (DSL) wird mit speziellen Visual Studio-Projektmappe erstellt.
 
 ## <a name="prerequisites"></a>Vorraussetzungen
- Bevor Sie dieses Verfahren starten können, müssen Sie zunächst diese Komponenten installieren:
 
+Bevor Sie dieses Verfahren starten können, werden installieren Sie diese Komponenten:
 
-| | |
-|-|-|
-| Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579) |
-| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580) |
-| Visual Studio Visualization and Modeling SDK | |
+- Visual Studio
+- Visual Studio SDK (als Teil der **Visual Studio-extensionentwicklung** arbeitsauslastung)
+- Modellierungs-SDK (als Visual Studio-Komponente installiert)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-
 ## <a name="creating-a-domain-specific-language-solution"></a>Erstellen einer Lösung einer domänenspezifischen Sprache
 
-#### <a name="to-create-a-domain-specific-language-solution"></a>Zum Erstellen einer Lösung einer domänenspezifischen Sprache
+1. Die DSL-Assistenten starten, indem Sie beim Erstellen eines neuen **domänenspezifischen Sprachdesigner** Projekt.
 
-1. Starten Sie die DSL-Assistenten.
+   > [!NOTE]
+   > Idealerweise sollte der Name, den Sie für das Projekt auswählen ein gültiger Visual C# Bezeichner, weil sie zum Generieren von Code verwendet werden kann.
 
-   1. Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.
+   ::: moniker range="vs-2017"
 
-   2. Das Dialogfeld **Neues Projekt** wird angezeigt.
+   ![Dialogfeld "DSL erstellen"](../modeling/media/create_dsldialog.png)
 
-   3. Klicken Sie unter **Projekttypen**, erweitern Sie die **andere Projekttypen** Knoten, und klicken Sie auf **Erweiterbarkeit**.
-
-   4. Klicken Sie auf **domänenspezifischen Sprachdesigner**.
-
-   5. In der **Namen** geben einen Namen für die Lösung. Klicken Sie auf **OK**.
-
-       Die **Domain-Specific Language-Designer-Assistenten** angezeigt wird.
-
-      > [!NOTE]
-      >  Vorzugsweise sollten die von Ihnen eingegebene Name ein gültiger Visual C#-Bezeichner, sein, da möglicherweise zum Generieren von Code verwendet werden.
-
-      ![Dialogfeld „DSL erstellen“](../modeling/media/create_dsldialog.png)
+   ::: moniker-end
 
 2. Wählen Sie eine DSL-Vorlage.
 
@@ -68,16 +54,16 @@ Eine domänenspezifische Sprache (DSL) wird mit speziellen Visual Studio-Projekt
 
 3. Geben Sie eine Dateinamenerweiterung auf die **Dateierweiterung** Seite. Es muss auf dem Computer eindeutig sein und in jeder Computer, auf denen Sie die DSL installieren möchten. Daraufhin sollte die Nachricht **keine Anwendungen oder Visual Studio-Editoren mithilfe dieser Erweiterung**.
 
-   -   Wenn Sie die Dateinamenerweiterung in vorherigen experimentelle DSLs verwendet haben, die nicht vollständig installiert wurden, Sie können diese out durch Löschen mit der **Zurücksetzen der experimentellen Instanz** -Tool, das in das Menü "Visual Studio SDK" gefunden werden kann.
+   - Wenn Sie die Dateinamenerweiterung in vorherigen experimentelle DSLs verwendet haben, die nicht vollständig installiert wurden, Sie können diese out durch Löschen mit der **Zurücksetzen der experimentellen Instanz** -Tool, das in das Menü "Visual Studio SDK" gefunden werden kann.
 
-   -   Wenn eine andere Visual Studio-Erweiterung, die diese Dateierweiterung verwendet vollständig auf dem Computer installiert wurde, sollten Sie es deinstallieren. Auf der **Tools** Menü klicken Sie auf **Erweiterungs-Manager**.
+   - Wenn eine andere Visual Studio-Erweiterung, die diese Dateierweiterung verwendet vollständig auf dem Computer installiert wurde, sollten Sie es deinstallieren. Auf der **Tools** Menü klicken Sie auf **Erweiterungs-Manager**.
 
 4. Überprüfen Sie und bei Bedarf passen Sie an, die Felder in den verbleibenden Seiten des Assistenten. Wenn Sie mit den Einstellungen zufrieden sind, klicken Sie auf **Fertig stellen**. Weitere Informationen zu den Einstellungen finden Sie unter [DSL-Designer-Assistentenseiten](#settings).
 
     Der Assistent erstellt eine Projektmappe mit zwei Projekten, die benannt werden **Dsl** und **DslPackage**.
 
    > [!NOTE]
-   >  Wenn Sie eine Meldung, die Sie benachrichtigt werden, nicht zum Ausführen von Textvorlagen aus nicht vertrauenswürdigen Quellen auf **OK**. Sie können diese Meldung nicht wieder angezeigt werden, festlegen.
+   > Wenn Sie eine Meldung, die Sie benachrichtigt werden, nicht zum Ausführen von Textvorlagen aus nicht vertrauenswürdigen Quellen auf **OK**. Sie können diese Meldung nicht wieder angezeigt werden, festlegen.
 
 ## <a name="settings"></a> Die DSL-Designer-Assistent-Seiten
  Sie können einige Felder die Standardwerte unverändert lassen. Allerdings stellen Sie sicher, dass Sie das Feld für die Erweiterung festlegen.
@@ -99,15 +85,15 @@ Geben Sie eine neue Dateierweiterung ein.
 
  Wenn Sie eine Liste der Tools oder Pakete angezeigt wird, sollten Sie eine der folgenden tun:
 
--   Geben Sie eine andere Dateinamenerweiterung.
+- Geben Sie eine andere Dateinamenerweiterung.
 
      \- oder –
 
--   Zurücksetzen der experimentellen Instanz von Visual Studio. Dadurch werden alle der DSLs Aufheben der Registrierung, die Sie zuvor erstellt haben. Auf der **starten** Menü klicken Sie auf **Programme**, **Microsoft Visual Studio 2010 SDK**, **Tools**, und klicken Sie dann **Zurücksetzen der Microsoft Visual Studio 2010 experimentelle Instanz**. Sie können eine beliebige andere DSLs neu erstellen, die Sie erneut verwenden möchten.
+- Zurücksetzen der experimentellen Instanz von Visual Studio. Dadurch werden alle der DSLs Aufheben der Registrierung, die Sie zuvor erstellt haben. Auf der **starten** Menü klicken Sie auf **Programme**, **Microsoft Visual Studio 2010 SDK**, **Tools**, und klicken Sie dann **Zurücksetzen der Microsoft Visual Studio 2010 experimentelle Instanz**. Sie können eine beliebige andere DSLs neu erstellen, die Sie erneut verwenden möchten.
 
      \- oder –
 
--   Wenn Sie eine Visual Studio-Erweiterung, die diese Dateierweiterung verwendet vollständig auf dem Computer installiert wurde, deinstallieren Sie es aus. Auf der **Tools** Menü klicken Sie auf **Erweiterungs-Manager**.
+- Wenn Sie eine Visual Studio-Erweiterung, die diese Dateierweiterung verwendet vollständig auf dem Computer installiert wurde, deinstallieren Sie es aus. Auf der **Tools** Menü klicken Sie auf **Erweiterungs-Manager**.
 
 ### <a name="product-settings-page"></a>Settings-Produktseite
  **Was ist der Name des Produkts, das die neue domänenspezifische Sprache gehört?**
@@ -133,4 +119,4 @@ Dies ist standardmäßig auf einen Namen, die von Ihrem Unternehmen besteht und 
 ## <a name="see-also"></a>Siehe auch
 
 - [So definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md)
-- [DSL-Tools – Glossar](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

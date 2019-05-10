@@ -3,40 +3,42 @@ title: Debuggen mit C++
 description: Debuggen von nativem Code mithilfe des Visual Studio-Debuggers
 ms.custom: mvc
 ms.date: 08/06/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
 ms.assetid: 639e430b-6d2d-46bd-b738-8c60dfb384f1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 33d96729507e0e85318ee357240580d3f3a1c328
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: ac95fc54b410700f3ce28f3ace6192787400d64b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561761"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62903892"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Schnellstart: Debuggen mit C++ mithilfe des Visual Studio-Debuggers
 
 Der Visual Studio-Debugger umfasst viele nützliche Features zum Debuggen von Apps. In diesem Thema werden einige der grundlegenden Funktionen erläutert.
 
-## <a name="create-a-new-project"></a>Erstellt ein neues Projekt 
+## <a name="create-a-new-project"></a>Erstellt ein neues Projekt
 
-1. Klicken Sie in Visual Studio auf **Datei > Neues Projekt**.
+1. Öffnen Sie Visual Studio, und erstellen Sie ein Projekt.
 
-2. Klicken Sie unter **Visual C++** auf **Windows-Desktop** und dann im mittleren Bereich auf **Windows-Konsolenanwendung**.
+    ::: moniker range=">=vs-2019"
+    Drücken Sie **ESC**, um das Startfenster zu schließen. Geben Sie **STRG + Q** ein, um das Suchfeld zu öffnen, geben Sie **C++** ein, und wählen Sie **Vorlagen** und dann **Neues Konsolen-App-Projekt erstellen** aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialogfelds **Neues Projekt** unter **Visual C++** **Windows Desktop** und dann im mittleren Bereich **Windows-Konsolenanwendung** aus. Geben Sie dann einen Namen wie **MyDbgApp** ein, und klicken Sie auf **OK**.
+    ::: moniker-end
 
-    Wenn Ihnen die Projektvorlage **Windows-Konsolenanwendung** nicht angezeigt wird, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** auf den Link **Visual Studio-Installer öffnen**. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Desktopentwicklung mit C++**, und klicken Sie dann auf **Ändern**.
-
-3. Geben Sie einen Namen wie **MyDbgApp** ein, und klicken Sie auf **OK**.
+    Wenn die Projektvorlage **Windows-Konsolenanwendung** nicht angezeigt wird, öffnen Sie unter **Tools** > **Tools und Features abrufen ...** den Visual Studio-Installer. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Desktopentwicklung mit C++**, und klicken Sie dann auf **Ändern**.
 
     Visual Studio erstellt daraufhin das Projekt.
 
-4. Ersetzen Sie in „MyDbgApp.cpp“ den folgenden Code
+1. Ersetzen Sie in „MyDbgApp.cpp“ den folgenden Code
 
     ```c++
     int main()
@@ -48,7 +50,7 @@ Der Visual Studio-Debugger umfasst viele nützliche Features zum Debuggen von Ap
     durch den folgenden (`#include "stdafx.h"` nicht entfernen):
 
     ```c++
-    #include <list>  
+    #include <list>
     #include <iostream>
 
     using namespace std;
@@ -91,11 +93,11 @@ Ein *Breakpoint* gibt an, an welcher Stelle Visual Studio ausgeführten Code anh
     > [!TIP]
     > Verwenden Sie bei Breakpoints in einer Schleife oder Rekursion oder bei sehr vielen Breakpoints, die Sie häufig schrittweise durchlaufen, einen [bedingten Breakpoint](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression), damit die Codeausführung NUR unterbrochen wird, wenn bestimmte Bedingungen erfüllt sind. Wenn Sie mit einem bedingten Breakpoint arbeiten, sparen Sie Zeit und erleichtern sich möglicherweise das Debuggen von Problemen, die nur schwierig zu reproduzieren sind.
 
-    Wenn Sie versuchen, in C++ Fehler zu debuggen, die im Zusammenhang mit dem Arbeitsspeicher stehen, können Sie Breakpoints auch dazu verwenden, Adresswerte (suchen Sie nach NULL-Werten) und die Anzahl von Verweisen zu untersuchen. 
+    Wenn Sie versuchen, in C++ Fehler zu debuggen, die im Zusammenhang mit dem Arbeitsspeicher stehen, können Sie Breakpoints auch dazu verwenden, Adresswerte (suchen Sie nach NULL-Werten) und die Anzahl von Verweisen zu untersuchen.
 
 ## <a name="navigate-code"></a>Navigieren durch den Code
 
-Es gibt verschiedene Befehle, über die der Debugger zum Fortfahren angewiesen werden kann. In diesem Artikel wird ein nützlicher Befehl zur Codenavigation erläutert, der neu für Visual Studio 2017 ist.
+Es gibt verschiedene Befehle, über die der Debugger zum Fortfahren angewiesen werden kann. In diesem Artikel wird ein nützlicher Befehl zur Codenavigation erläutert, der ab Visual Studio 2017 verfügbar ist.
 
 Wenn der Vorgang am Breakpoint ausgesetzt wurde, zeigen Sie auf die Anweisung `c1.push_back(20)`, bis die Schaltfläche **Run to click** (Ausführen bis Klick) ![Ausführen bis Klick](../debugger/media/dbg-tour-run-to-click.png "Run to Click") angezeigt wird, und klicken Sie diese an.
 
@@ -111,7 +113,7 @@ Häufig werden die Tastaturbefehle **F10** und **F11** verwendet, um Code durchz
 
     ![Datentipp anzeigen](../debugger/media/dbg-qs-data-tip.png "View a datatip")
 
-    Der aktuelle Wert der Variable `c1` wird angezeigt, und Sie können die Eigenschaften untersuchen. Wenn Sie beim Debuggen einen nicht erwarteten Wert antreffen, enthalten die vorhergehenden oder die aufrufenden Codezeilen möglicherweise einen Fehler. 
+    Der aktuelle Wert der Variable `c1` wird angezeigt, und Sie können die Eigenschaften untersuchen. Wenn Sie beim Debuggen einen nicht erwarteten Wert antreffen, enthalten die vorhergehenden oder die aufrufenden Codezeilen möglicherweise einen Fehler.
 
 2. Erweitern Sie den Datentipp, um die Eigenschaftswerte des `c1`-Objekts einzusehen.
 
@@ -136,4 +138,4 @@ Weitere Informationen zum Bearbeiten und Fortfahren und zu Einschränkungen von 
 In diesem Tutorial haben Sie gelernt, wie Sie den Debugger starten, Code schrittweise durchlaufen und Variablen untersuchen. Sie sollten sich einen allgemeinen Überblick über die Debugger-Features verschaffen und die zugehörigen Links aufrufen, um weitere Informationen hierzu zu erhalten.
 
 > [!div class="nextstepaction"]
-> [Debugger – Featuretour](../debugger/debugger-feature-tour.md)
+> [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)

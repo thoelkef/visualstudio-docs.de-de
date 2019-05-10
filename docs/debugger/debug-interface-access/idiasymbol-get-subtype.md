@@ -7,32 +7,33 @@ dev_langs:
 ms.assetid: 0b3cbf77-8f11-434a-ad60-ea9829fec6fa
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5753faf29c6794dcf9b16fdecab9502d7e96b5b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 4639df568b033eea03ff4ad61c4ddd4e512e2bfc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880100"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62835463"
 ---
 # <a name="idiasymbolgetsubtype"></a>IDiaSymbol::get_subType
-Ruft den Untertyp ab.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C++  
-HRESULT get_subType(   
-   IDiaSymbol** pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pRetVal`  
- [out] Ein Zeiger auf den untergeordneten Typ.  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
-  
-## <a name="see-also"></a>Siehe auch  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Ruft den Untertyp ab.
+
+## <a name="syntax"></a>Syntax
+
+```C++
+HRESULT get_subType(
+   IDiaSymbol** pRetVal);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pRetVal`
+
+[out] Ein Zeiger auf den untergeordneten Typ.
+
+## <a name="return-value"></a>Rückgabewert
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.
+
+## <a name="see-also"></a>Siehe auch
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

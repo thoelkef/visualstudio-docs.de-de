@@ -1,14 +1,9 @@
 ---
 title: Optionsseite, Eigenschaften des Knotens „Umgebung“ | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - automation [Visual Studio], controlling Tools Options
 - Tools Options settings, Environment node properties
@@ -16,18 +11,17 @@ ms.assetid: 26dca41f-91fc-4ca7-9103-3da402baa1d5
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8deae718faceb1613f73e9be732706c7d5441c8f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a5c6a2314fe1673efba27d829c1141dcfd5be1cc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239641"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666818"
 ---
 # <a name="options-page-environment-node-properties"></a>Optionsseite, Eigenschaften des Knotens "Umgebung"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 In diesem Dokument werden die Seiten (oder Eigenschaftenauflistungen) beschrieben, die der Kategorie **Umgebung**, `DTE.Properties("Environment", <Property Page>)`, des Dialogfelds **Optionen** zugeordnet sind. Den Titel für jeden Unterabschnitt bildet der Aufruf zum Zugriff auf die Properties-Auflistung, und die Tabelle in jedem Unterabschnitt führt die Eigenschaften in der Auflistung auf.  
   
 ## <a name="general"></a>Allgemein  
@@ -38,7 +32,7 @@ In diesem Dokument werden die Seiten (oder Eigenschaftenauflistungen) beschriebe
 |ShowStatusBar|Get/Set (boolesch)|Bestimmt, ob die Statusleiste sichtbar ist.|  
 |WindowMenuContainsNItems|Get/Set (kurzer Name)|Bestimmt, wie Dokumentfenster unten im Windows-Menü erfasst werden.|  
 |MRUListContainsNItems|Get/Set (kurzer Name)|Bestimmt, wie viele Dateien im Untermenü "Zuletzt geöffnet" angezeigt werden.|  
-|Animations|Get/Set (boolesch)|Bestimmt, ob die integrierte Entwicklungsumgebung (Integrated Development Environment – IDE) in der Statusleiste Animation verwendet.|  
+|Animationen|Get/Set (boolesch)|Bestimmt, ob die integrierte Entwicklungsumgebung (Integrated Development Environment – IDE) in der Statusleiste Animation verwendet.|  
 |AnimationSpeed|Get/Set (kurzer Name)||  
 |AutoAdjustExperience|Get/Set (boolesch)|Passt automatisch die visuelle Darstellung entsprechend der Clientleistung an.|  
 |RichClientExperienceOptions|Get/Set (Enumeration)|Ermöglicht mit Werten in <xref:EnvDTE100.vsRichClientExperienceOptions> eine umfassende visuelle Darstellung auf dem Client.|  
@@ -172,6 +166,3 @@ In diesem Dokument werden die Seiten (oder Eigenschaftenauflistungen) beschriebe
  [Optionsseite, Eigenschaften des Knotens „Schriftarten und Farben“](../../ide/reference/options-page-fonts-and-colors-node-properties.md)   
  [Optionsseite, Eigenschaften des Knotens „Text-Editor“](../../ide/reference/options-page-text-editor-node-properties.md)   
  [Dialogfeld „Umgebungsoptionen“](../../ide/reference/environment-options-dialog-box.md)
-
-
-

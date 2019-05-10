@@ -1,7 +1,6 @@
 ---
-title: 'CA1502: Übermäßige Komplexität vermeiden'
+title: 'CA1502: Übermäßige Komplexität vermeiden.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - AvoidExcessiveComplexity
@@ -12,21 +11,21 @@ helpviewer_keywords:
 ms.assetid: d735454b-2f8f-47ce-907d-f7a5a5391221
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 21b623041bdf599439fd51f99354f206eb25c433
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e968cef6491e1c24d98e5f64248b5104db8c5b65
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893155"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797405"
 ---
-# <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Übermäßige Komplexität vermeiden
+# <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Übermäßige Komplexität vermeiden.
 
 |||
 |-|-|
@@ -45,11 +44,11 @@ Eine Methode hat eine übermäßige zyklomatische Komplexität.
 
 Zyklomatische Komplexität die Anzahl Rändern - die Anzahl der Knoten + 1 =
 
-wobei ein Knoten einem zweigverteilungspunkt Logik und einen Edge darstellt, stellt eine Linie zwischen Knoten dar.
+Ein *Knoten* einem zweigverteilungspunkt Logik darstellt und ein *Edge* eine Linie zwischen den Knoten darstellt.
 
 Einen Verstoß wird von die Regel berichtet, wenn die zyklomatische Komplexität mehr als 25 ist.
 
-Weitere Informationen finden Sie Informationen zu codemetriken auf [Messen von Komplexität und verwaltbarkeit von verwaltetem Code](../code-quality/code-metrics-values.md),
+Weitere Informationen finden Sie Informationen zu codemetriken auf [Messen von Komplexität von verwaltetem Code](../code-quality/code-metrics-values.md).
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 

@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Erstellen und Entfernen von Projektabhängigkeiten | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.ProjectDependenciesDlg
 helpviewer_keywords:
@@ -22,13 +17,13 @@ ms.assetid: e2a0a8ff-dae7-40a8-b774-b88aa5235183
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: cc63ef7159b0f11b3d170e0b4123f337ba413d65
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 539b27c914555dad88442fd4d65e1bf8416dae3c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823839"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422887"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Gewusst wie: Erstellen und Entfernen von Projektabhängigkeiten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ Beim Erstellen einer Projektmappe, die mehrere Projekte enthält, kann es erford
     Das Dialogfeld **Projektabhängigkeiten** wird geöffnet.  
   
    > [!NOTE]
-   >  Die Option **Projektabhängigkeiten** ist nur in einer Projektmappe mit mehr als einem Projekt verfügbar.  
+   > Die Option **Projektabhängigkeiten** ist nur in einer Projektmappe mit mehr als einem Projekt verfügbar.  
   
 3. Wählen Sie auf der Registerkarte **Abhängigkeiten** ein Projekt aus dem Dropdownmenü **Projekt** aus.  
   
@@ -54,24 +49,21 @@ Beim Erstellen einer Projektmappe, die mehrere Projekte enthält, kann es erford
   
 ### <a name="to-remove-dependencies-from-projects"></a>So entfernen Sie Abhängigkeiten aus Projekten  
   
-1.  Wählen Sie im Projektmappen-Explorer ein Projekt aus.  
+1. Wählen Sie im Projektmappen-Explorer ein Projekt aus.  
   
-2.  Klicken Sie im Menü **Projekt** auf **Projektabhängigkeiten**.  
+2. Klicken Sie im Menü **Projekt** auf **Projektabhängigkeiten**.  
   
      Das Dialogfeld **Projektabhängigkeiten** wird geöffnet.  
   
     > [!NOTE]
-    >  Die Option **Projektabhängigkeiten** ist nur in einer Projektmappe mit mehr als einem Projekt verfügbar.  
+    > Die Option **Projektabhängigkeiten** ist nur in einer Projektmappe mit mehr als einem Projekt verfügbar.  
   
-3.  Wählen Sie auf der Registerkarte **Abhängigkeiten** ein Projekt aus dem Dropdownmenü **Projekt** aus.  
+3. Wählen Sie auf der Registerkarte **Abhängigkeiten** ein Projekt aus dem Dropdownmenü **Projekt** aus.  
   
-4.  Deaktivieren Sie im Feld **Abhängigkeiten** die Kästchen neben anderen Projekten, die keine Abhängigkeiten dieses Projekts mehr sind.  
+4. Deaktivieren Sie im Feld **Abhängigkeiten** die Kästchen neben anderen Projekten, die keine Abhängigkeiten dieses Projekts mehr sind.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen und Bereinigen von Projekten und Projektmappen in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
  [Kompilieren und Erstellen](../ide/compiling-and-building-in-visual-studio.md)   
  [Grundlagen der Buildkonfiguration](../ide/understanding-build-configurations.md)   
- [NIB: Gewusst wie: Ändern von Projekteigenschaften und Konfigurationseinstellungen](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
-
-
-
+ [NIB: Gewusst wie: Ändern von Projekteigenschaften und Konfigurationseinstellungen](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)

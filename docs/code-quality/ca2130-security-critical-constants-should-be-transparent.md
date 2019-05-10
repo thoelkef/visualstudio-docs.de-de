@@ -1,22 +1,21 @@
 ---
 title: 'CA2130: Sicherheitskritische Konstanten sollten transparent sein.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2130
 ms.assetid: 344c7f7b-9130-4675-ae7f-9fa260cc9789
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e91ac642f0ead181378af78dc9d48434ae0f51b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cbe1f5c58b957cf3ed226af7c7b879c7a6dcfc0a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881967"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62796799"
 ---
 # <a name="ca2130-security-critical-constants-should-be-transparent"></a>CA2130: Sicherheitskritische Konstanten sollten transparent sein.
 

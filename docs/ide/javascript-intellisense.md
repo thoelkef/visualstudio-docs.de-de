@@ -1,8 +1,8 @@
 ---
 title: JavaScript IntelliSense
 ms.date: 06/28/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
+ms.technology: vs-javascript
 helpviewer_keywords:
 - IntelliSense [JavaScript]
 - <reference> JavaScript XML tag
@@ -20,31 +20,31 @@ helpviewer_keywords:
 - IntelliSense [JavaScript], about
 - IntelliSense extensibility [JavaScript]
 - XML documentation comments [JavaScript]
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: mikejo5000
+ms.author: mikejo
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de5470f0c48e76d972cd78fd84b7629b8f2426d2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6ee40d877af75469dcc1abc176d67f43c8bdcfb3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849673"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62538173"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 
-[!include[vs_dev15](../misc/includes/vs_dev15_md.md)] bietet eine leistungsfähige direkte JavaScript-Zuordnung. Unterstützt von einem TypeScript-basierten Sprachdienst, bietet Visual Studio umfangreichere IntelliSense, Support für moderne JavaScript-Funktionen und verbesserte Produktivitätsfeatures wie die „Gehe zu Definition“, die Umgestaltung und vieles mehr.
+Visual Studio bietet eine leistungsfähige, sofort einsatzfähige JavaScript-Bearbeitung. Unterstützt von einem TypeScript-basierten Sprachdienst, bietet Visual Studio umfangreichere IntelliSense, Support für moderne JavaScript-Funktionen und verbesserte Produktivitätsfeatures wie die „Gehe zu Definition“, die Umgestaltung und vieles mehr.
 
 > [!NOTE]
-> Der JavaScript-Sprachdienst in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] verwendet eine neue Engine für den Sprachdienst mit dem Namen „Salsa“. Details dazu finden Sie in diesem Artikel und im folgenden [Blogbeitrag](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/more-productive-javascript-in-visual-studio-2017-rc/). Der neue Bearbeitungsvorgang gilt weitestgehend auch für Visual Studio Code. Finden Sie unter [VS Code docs (VS Code Dokumentation)](https://code.visualstudio.com/docs/languages/javascript) weitere Informationen.
+> Ab Visual Studio 2017 verwendet der JavaScript-Sprachdienst eine neue Engine für den Sprachdienst mit dem Namen „Salsa“. Details dazu finden Sie in diesem Artikel und im folgenden [Blogbeitrag](https://devblogs.microsoft.com/visualstudio/previewing-salsa-javascript-language-service-visual-studio-15/). Der neue Bearbeitungsvorgang gilt weitestgehend auch für Visual Studio Code. Finden Sie unter [VS Code docs (VS Code Dokumentation)](https://code.visualstudio.com/docs/languages/javascript) weitere Informationen.
 
 Weitere Informationen zur allgemeinen IntelliSense-Funktionalität von Visual Studio finden Sie unter [Using IntelliSense (Verwenden von IntelliSense)](../ide/using-intellisense.md).
 
-## <a name="whats-new-in-the-javascript-language-service-in-includevsdev15miscincludesvsdev15mdmd"></a>Neues im JavaScript-Sprachdienst in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+## <a name="whats-new-in-the-javascript-language-service-in-visual-studio-2017"></a>Neues im JavaScript-Sprachdienst in Visual Studio 2017
 
-Ab [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] zeigt JavaScript IntelliSense eine Vielzahl weiterer Informationen zu Parameter- und Memberlisten an.
-Diese neuen Informationen werden vom TypeScript-Sprachdienst bereitgestellt, der statische Analyse im Hintergrund verwendet, um Ihren Code besser zu verstehen.
+Ab Visual Studio 2017 zeigt JavaScript IntelliSense eine Vielzahl weiterer Informationen zu Parameter- und Memberlisten an. Diese neuen Informationen werden vom TypeScript-Sprachdienst bereitgestellt, der statische Analyse im Hintergrund verwendet, um Ihren Code besser zu verstehen.
+
 TypeScript verwendet mehrere Quellen, um diese Informationen zu erstellen:
 
 - [IntelliSense basierend auf dem Typrückschluss](#TypeInference)
@@ -53,6 +53,7 @@ TypeScript verwendet mehrere Quellen, um diese Informationen zu erstellen:
 - [Automatische Übernahme von Typdefinitionen](#Auto)
 
 <a name="TypeInference"></a>
+
 ### <a name="intellisense-based-on-type-inference"></a>IntelliSense (auf Typrückschluss basierend)
 
 In JavaScript ist in den meisten Fällen keine explizite Typinformationen verfügbar. Glücklicherweise ist es in der Regel recht einfach, einen Typ mit dem angegebenen umgebenden Codekontext abzuleiten.
@@ -90,6 +91,7 @@ exports.Foo = Foo;
 ```
 
 <a name="JsDoc"></a>
+
 ### <a name="intellisense-based-on-jsdoc"></a>IntelliSense (auf JSDoc basierend)
 
 Wo der Typrückschluss nicht die gewünschten Typinformationen bietet (oder die Dokumentation unterstützt), können Typinformationen ausdrücklich über JSDoc-Anmerkungen angegeben werden.  Sie können beispielsweise den `@type`-Tag wie im Folgenden verwenden, um einem teilweise deklarierten Objekt einen bestimmten Typ zu geben:
@@ -123,7 +125,7 @@ Da JavaScript und TypeScript jetzt auf dem gleichen Sprachdienst basieren, könn
 
 Im Folgenden wird ein einfaches Beispiel für eine TypeScript-Definitionsdatei dargestellt, die solche Typinformationen (über eine Schnittstelle) in einer JavaScript-Datei im selben Projekt (mit einem `JsDoc`-Tag) bereitstellt.
 
-<img src="https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png" height="400" width="640" alt="TypeScript definition file" />
+![TypeScript-Definitionsdatei](https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png)
 
 <a name="Auto"></a>
 ### <a name="automatic-acquisition-of-type-definitions"></a>Automatische Übernahme von Typdefinitionen

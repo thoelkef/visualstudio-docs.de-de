@@ -1,25 +1,20 @@
 ---
 title: GPU-Nutzung | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 957fed3c-4ded-4e05-87c6-ccc33de65349
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3068f614275c14d022ed4d74fa6a10ffe396f68b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b7dee579f726a1edfc81e1f3e1ec62bf7d8beba4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817502"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437956"
 ---
 # <a name="gpu-usage"></a>GPU-Nutzung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ Verwenden Sie das GPU-Nutzungstool im Visual Studio-Leistungs- und Diagnosehub, 
 - Ein Grafikprozessor und Treiber, die die erforderliche zeitliche Timinginstrumentierung unterstützen.  
   
   > [!NOTE]
-  >  Weitere Informationen zu unterstützter Hardware und unterstützten Treibern finden Sie unter [Unterstützte Hardware und Treiber](#hwsupport) am Ende dieses Dokuments.  
+  > Weitere Informationen zu unterstützter Hardware und unterstützten Treibern finden Sie unter [Unterstützte Hardware und Treiber](#hwsupport) am Ende dieses Dokuments.  
   
   Weitere Informationen zu Anforderungen für die Grafikdiagnose finden Sie unter [Erste Schritte](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md).  
   
@@ -52,7 +47,7 @@ Verwenden Sie das GPU-Nutzungstool im Visual Studio-Leistungs- und Diagnosehub, 
     ![Wählen Sie die Diagnosetools, die Sie verwenden möchten.](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
   
    > [!NOTE]
-   >  Nicht alle Leistungs- und Diagnosetools können gleichzeitig verwendet werden.  
+   > Nicht alle Leistungs- und Diagnosetools können gleichzeitig verwendet werden.  
   
 3. Wählen Sie die blaue Schaltfläche **Start** am unteren Rand des Leistungs- und Diagnosehubs, um Ihre App unter den ausgewählten Tools auszuführen.  
   
@@ -99,7 +94,7 @@ Verwenden Sie das GPU-Nutzungstool im Visual Studio-Leistungs- und Diagnosehub, 
 |--------------------|-----------------|  
 |**Process**|Der Name des Prozesses, der Sie interessiert. Alle Prozesse, die GPU während der Diagnosesitzung verwenden, sind in dieser Dropdownliste enthalten. Die dem Prozess in dieser Dropdownliste zugeordnete Farbe entspricht der Farbe der Threadvorgänge auf den Zeitachsen unten.|  
 |**Thread**|Die Thread-ID, die Sie interessiert. In einer Multithread-App können Sie hiermit bestimmte Threads isolieren, die mit dem gewünschten Prozess verknüpft sind. Die im Zusammenhang mit dem ausgewählten Thread stehenden Ereignisse werden auf jeder Zeitachse hervorgehoben.|  
-|**Display**|Die Anzahl von Anzeigen, deren Aktualisierungsrate angezeigt wird. **Hinweis:** Einige Treiber können so konfiguriert werden, dass mehrere physische Anzeigen als eine einzige große virtuelle Anzeige dargestellt werden. Selbst wenn mehrere Monitore an den Computer angeschlossen sind, wird ggf. nur eine Anzeige aufgeführt.|  
+|**Anzeige**|Die Nummer der Anzeige, deren Aktualisierungsrate angezeigt wird. **Hinweis:**  Einige Treiber können so konfiguriert werden, dass mehrere physische Anzeigen als eine einzelne, große virtuelle Anzeige dargestellt werden. Selbst wenn mehrere Monitore an den Computer angeschlossen sind, wird ggf. nur eine Anzeige aufgeführt.|  
 |**Filter**|Die Schlüsselwörter, die Sie interessieren. Ereignisse im unteren Bereich des Berichts beinhalten nur diejenigen, die mit einem Schlüsselwort ganz oder teilweise übereinstimmen. Sie können mehrere Schlüsselwörter durch Semikolons (;) getrennt angeben.|  
 |**Hierarchische Sortierung**|Ein Kontrollkästchen, das angibt, ob durch Benutzermarkierungen definierte  Ereignishierarchien beibehalten oder ignoriert werden.|  
   
@@ -115,27 +110,27 @@ Verwenden Sie das GPU-Nutzungstool im Visual Studio-Leistungs- und Diagnosehub, 
 |**Thread-ID**|Die Thread-ID, von der das Ereignis stammt.|  
   
 > [!IMPORTANT]
->  Windows 8.1 ist für Ereignisattribute erforderlich. Wenn GPU oder Treiber nicht die erforderlichen Instrumentationsfeatures unterstützen, werden darüber hinaus alle Ereignisse mit dem Zusatz „ohne Attribute“ aufgeführt. Stellen Sie sicher, dass Ihr GPU-Treiber aktualisiert ist, und versuchen Sie es erneut, wenn dieses Problem auftritt. Weitere Informationen finden Sie unter [Unterstützte Hardware und Treiber](#hwsupport) weiter unten.  
+> Windows 8.1 ist für Ereignisattribute erforderlich. Wenn GPU oder Treiber nicht die erforderlichen Instrumentationsfeatures unterstützen, werden darüber hinaus alle Ereignisse mit dem Zusatz „ohne Attribute“ aufgeführt. Stellen Sie sicher, dass Ihr GPU-Treiber aktualisiert ist, und versuchen Sie es erneut, wenn dieses Problem auftritt. Weitere Informationen finden Sie unter [Unterstützte Hardware und Treiber](#hwsupport) weiter unten.  
   
 ## <a name="gpu-usage-settings"></a>GPU-Nutzungseinstellungen  
  Sie können das GPU-Nutzungstool so konfigurieren, dass die Erfassung von Profilerstellungsinformationen zurückgestellt wird, und nicht bereits beim Appstart beginnt. Da die Größe der Profilerstellungsinformationen beträchtlich sein kann, ist dies hilfreich, dass es erst zu einem späteren Zeitpunkt zur Verlangsamung der Leistung Ihrer App kommt.  
   
 #### <a name="to-postpone-profiling-from-the-start-of-the-app"></a>So stellen Sie die Profilerstellung beim Start der App zurück  
   
-1.  Wählen Sie im Hauptmenü **Debuggen** und dann **Leistung und Diagnose** (Tastatur: Drücken Sie Alt+F2).  
+1. Wählen Sie im Hauptmenü **Debuggen** und dann **Leistung und Diagnose** (Tastatur: Drücken Sie Alt+F2).  
   
-2.  Klicken Sie im Leistungs- und Diagnosehub auf den Link **Einstellungen** neben **GPU-Nutzung**.  
+2. Klicken Sie im Leistungs- und Diagnosehub auf den Link **Einstellungen** neben **GPU-Nutzung**.  
   
-3.  Deaktivieren Sie unter **GPU-Profilerstellungskonfiguration** auf der Eigenschaftenseite **Allgemein** das Kontrollkästchen **Profilerstellung beim Appstart beginnen**, um die Profilerstellung zurückzustellen.  
+3. Deaktivieren Sie unter **GPU-Profilerstellungskonfiguration** auf der Eigenschaftenseite **Allgemein** das Kontrollkästchen **Profilerstellung beim Appstart beginnen**, um die Profilerstellung zurückzustellen.  
   
      ![Konfigurieren, wenn die GPU-Nutzungserfassung startet](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
   
 > [!IMPORTANT]
->  Das Zurückstellen der Profilerstellung wird derzeit nicht für Direct3D 12-Apps unterstützt.  
+> Das Zurückstellen der Profilerstellung wird derzeit nicht für Direct3D 12-Apps unterstützt.  
   
  Wenn Sie die Erfassung von Profilerstellungsinformationen mit dieser Einstellung zurückstellen, steht im unteren Bereich des GPU-Nutzungstoolfensters ein zusätzlicher Link zur Verfügung, wenn Sie die App im GPU-Nutzungstool ausführen. Wählen Sie zum Starten der Erfassung von Profilinformationen den Link **Starten** in der Meldung **Erfassung detaillierter GPU-Nutzungsdaten starten**.  
   
-##  <a name="hwsupport"></a> Unterstützte Hardware und Treiber  
+## <a name="hwsupport"></a> Unterstützte Hardware und Treiber  
  Folgende GPU-Hardware und Treiber werden unterstützt:  
   
 |Hersteller|GPU-Beschreibung|Erforderliche Treiberversion|  
@@ -148,13 +143,10 @@ Verwenden Sie das GPU-Nutzungstool im Visual Studio-Leistungs- und Diagnosehub, 
   
 ## <a name="see-also"></a>Siehe auch  
   
--   [Solve the Tough Graphics Problems with your Game Using DirectX Tools (video) (Lösen Sie die großen Grafikprobleme bei Ihrem Spiel mithilfe von DirectX-Tools (Video))](http://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)  
+- [Solve the Tough Graphics Problems with your Game Using DirectX Tools (video) (Lösen Sie die großen Grafikprobleme bei Ihrem Spiel mithilfe von DirectX-Tools (Video))](http://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)  
   
--   [GPU Usage Tool in Visual Studio (video) (GPU-Auslastungstool in Visual Studio (Video))](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)  
+- [GPU Usage Tool in Visual Studio (video) (GPU-Auslastungstool in Visual Studio (Video))](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)  
   
--   [GPU Usage tool in Visual Studio 2013 Update 4 CTP1 (blog) (GPU-Auslastungstool in Visual Studio 2013 Update 4 CTP1 (Blog))](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)  
+- [GPU Usage tool in Visual Studio 2013 Update 4 CTP1 (blog) (GPU-Auslastungstool in Visual Studio 2013 Update 4 CTP1 (Blog))](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)  
   
--   [GPU Usage for DirectX in Visual Studio (blog) (GPU-Auslastung für DirectX in Visual Studio (Blog))](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx)
-
-
-
+- [GPU Usage for DirectX in Visual Studio (blog) (GPU-Auslastung für DirectX in Visual Studio (Blog))](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx)

@@ -8,27 +8,28 @@ helpviewer_keywords:
 ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cd076e19a1732309a07feccca899669741b6482
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 87a2b604b27b58c40f1ba1ad8628fe2be06701e5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964636"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860358"
 ---
 # <a name="list-of-available-services"></a>Liste der verfügbaren Dienste
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] und Visual Studio SDK unterstützen die folgenden Dienste. Einige Pakete bieten, ihre eigenen Dienste, die hier nicht aufgeführt sind, z. B. Sprachdienste keinen einzelnen Dienst GUID haben. Sie müssen den Namen der Sprache verwenden, um die GUID des Sprachdiensts in der Registrierung zu suchen.  
-  
- Verwenden Sie die Dienst-GUIDs, die hier aufgeführten oder von einer anderen Quelle (z. B. Sprachdienste) abgerufen, um die primäre Schnittstelle oder Schnittstellen, der für jeden Dienst zu erhalten.  
-  
-## <a name="the-services"></a>Die Dienste  
-  
+
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] und Visual Studio SDK unterstützen die folgenden Dienste. Einige Pakete bieten, ihre eigenen Dienste, die hier nicht aufgeführt sind, z. B. Sprachdienste keinen einzelnen Dienst GUID haben. Sie müssen den Namen der Sprache verwenden, um die GUID des Sprachdiensts in der Registrierung zu suchen.
+
+Verwenden Sie die Dienst-GUIDs, die hier aufgeführten oder von einer anderen Quelle (z. B. Sprachdienste) abgerufen, um die primäre Schnittstelle oder Schnittstellen, der für jeden Dienst zu erhalten.
+
+## <a name="the-services"></a>Die Dienste
+
 | Dienst | Interface | Visual Studio | Visual Studio 2005 | Beschreibung |
 | - | - |---------------|--------------------| - |
 | <xref:Microsoft.VisualStudio.OLE.Interop.SBindHost> | <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> | Ja | Ja | Wird von VSPackages verwendet zum Abrufen einer <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> Schnittstelle aus einem ActiveX-Steuerelement, um asynchrone Datenübertragungen zu ermöglichen. |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SDTE> | <xref:EnvDTE.DTE> | Nein | Ja | Ruft die Design-Time-Erweiterbarkeit (DTE)-Objekt, das verwendet wird, für die Automatisierung ab.<br /><br /> C/C++-ID: SID_SDTE |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SDTE> | <xref:EnvDTE.DTE> | Nein | Ja | Ruft die Design-Time-Erweiterbarkeit (DTE)-Objekt, das verwendet wird, für die Automatisierung ab.<br /><br /> C/C++ ID: SID_SDTE |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SCodeNavigate> | <xref:Microsoft.VisualStudio.Shell.Interop.ICodeNavigate> | Ja | Ja | Durch ein Forms-Designer zum Anzeigen des Standardereignishandler für ein Steuerelement implementiert. |
 | <xref:Microsoft.VisualStudio.OLE.Interop.SContainerDispatch> | IDispatch | Ja | Ja | Ermöglicht einem VSPackages, die Automationsschnittstelle von einem anderen VSPackage oder ein Steuerelement zugreifen. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SExtendedTypeLib> | <xref:Microsoft.VisualStudio.Shell.Interop.IExtendedTypeLib> | Ja | Ja | Aktiviert ein VSPackage hinzufügen oder erstellen eine erweiterte Typbibliothek. |
@@ -119,7 +120,7 @@ ms.locfileid: "53964636"
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellDebugger> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebugger> | Ja | Ja | Ermöglicht den Zugriff auf die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debugger. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> | Ja | Ja | Aktiviert ein VSPackage zugreifen auf die aktuelle Auswahl und Verwalten von Benutzeroberflächen-Kontexten zu Befehl. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVSMDCodeDomProvider> | IVSMDCodeDomProvider | Nein | Ja | Bietet Zugriff auf ein Dokument Objekt Dokumentobjektmodell (DOM) Codeanbieter die in nativem Code verwendet werden kann. |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVSMDDesignerService> | Schnittstellen IVSMDCodeDomCreator<br /><br /> IVSMDDesignerService | Nein | Ja | Ermöglicht den Zugriff auf die IDE Unterstützung für verwaltete Formular-Designer. Die `IVSMDCodeDomCreator` kann zum Erstellen von Code-DOM-Anbieter verwendet werden. |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVSMDDesignerService> | IVSMDCodeDomCreator<br /><br /> IVSMDDesignerService | Nein | Ja | Ermöglicht den Zugriff auf die IDE Unterstützung für verwaltete Formular-Designer. Die `IVSMDCodeDomCreator` kann zum Erstellen von Code-DOM-Anbieter verwendet werden. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVSMDPropertyBrowser> | IVSMDPropertyBrowser | Nein | Ja | Bietet Zugriff auf den Designer Eigenschaft Windows-Dienst. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVSMDTypeResolutionService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVSMDTypeResolutionService> | Nein | Ja | Ermöglicht den Zugriff auf eine Schnittstelle, die zurückgegeben werden kann eine <xref:System.ComponentModel.Design.ITypeResolutionService> Objekt in systemeigenem Code verwendbar. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsSmartOpenScope> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSmartOpenScope> | Nein | Ja | Bietet eine Möglichkeit, um einen Bereich für eine Assembly, die Berücksichtigung Sperren nach Bedarf zu öffnen. |
@@ -128,7 +129,7 @@ ms.locfileid: "53964636"
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolutionObject> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution> | Ja | Ja | Verwenden der <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution> stattdessen service. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolutionPersistence> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> | Ja | Ja | Aktiviert ein VSPackage zum Speichern und Abrufen von Informationen aus der aktuellen Projektmappe sln-Datei. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsSQLCLRReferences> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSQLCLRReferences> | Nein | Ja | Ermöglicht das Hinzufügen und Aktualisieren von Verweisen in Assemblys mit verwaltetem Code. |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsStartPageDownload> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStartPageDownload> | Nein | Ja | Bietet Zugriff auf die Startseite-Downloaddienst für starten und beenden die Download-Diensts in einem Hintergrundthread. |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsStartPageDownload> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStartPageDownload> | Nein | Ja | Bietet Zugriff auf den Dienst zum Starten und beenden den Downloaddienst in einem Hintergrundthread zum Herunterladen der Visual Studio 2017 beginnen Seite. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar> | Ja | Ja | Bietet Zugriff auf die IDE Statusleiste angezeigt. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsStrongNameKeys> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStrongNameKeys> | Nein | Ja | Bietet Zugriff auf Methoden zum Erstellen von starken Schlüsselnamen und Schlüsseldateien mit Kennwörtern, die bei der Signierung von Assemblys mit verwaltetem Code verwendet werden. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsStructuredFileIO> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStructuredFileIO> | Ja | Ja | Ermöglicht einem VSPackages, die zum Speichern von Daten in verschiedenen Formaten zu unterstützen. |
@@ -156,7 +157,7 @@ ms.locfileid: "53964636"
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsWebURLMRU> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWebURLMRU> | Ja | Ja | Aktiviert ein VSPackage, die zuletzt verwendeten (MRU)-Liste der URLs eine URL hinzuzufügen und zum Abrufen einer Liste aller URLs in der MRU-Liste. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsWindowFrame> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> | Ja | Ja | Aktiviert ein VSPackage, um den Fensterrahmen zu erhalten, in dem das Paket oder einen Teil des Pakets belegen kann. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService> | Ja | Ja | Bietet Zugriff auf XML-formatierte Dokumentationsdateien, die einer bestimmten Metadaten-Datei zugeordnet. |
-  
-## <a name="see-also"></a>Siehe auch  
- [Com- und verwalteten Diensten](http://msdn.microsoft.com/en-us/6c5808b4-ad87-48d7-ae06-33a81e7052af)   
- [Verwenden und Bereitstellen von Diensten](../../extensibility/using-and-providing-services.md)
+
+## <a name="see-also"></a>Siehe auch
+
+- [Verwenden und Bereitstellen von Diensten](../../extensibility/using-and-providing-services.md)

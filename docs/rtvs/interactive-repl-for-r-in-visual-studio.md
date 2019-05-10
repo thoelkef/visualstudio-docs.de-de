@@ -2,19 +2,18 @@
 title: Interaktive REPL für R
 description: Verwenden der interaktiven REPL-Umgebung für R in Visual Studio, die in die Editor-Fenster integriert ist.
 ms.date: 06/28/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 7df300a57120bec2fc93ec7433a7ea9fdd3a2fc8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7109e74e858aa308b8f49e6e1e335478f801070b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815007"
 ---
 # <a name="work-with-the-r-interactive-window"></a>Arbeiten mit dem R Interactive-Fenster
 
@@ -51,24 +50,24 @@ Hier sehen Sie das interaktive Fenster mit seiner Symbolleiste:
 
 Die meisten Symbolleistenbefehle, die unten aufgeführt sind, haben Tastaturentsprechungen und sind auch in den Menüs **R Tools** > **Sitzung** und **R Tools** > **Arbeitsverzeichnis** (oder wie aufgeführt) verfügbar:
 
-| Schaltfläche | Befehl | Tastenkombination | Beschreibung | 
+| Schaltfläche | Befehl | Tastenkombination | Beschreibung |
 | --- | --- | --- | --- |
 | ![Schaltfläche „Zurücksetzen“](media/repl-toolbar-01-reset.png) | Zurücksetzen | **STRG**+**UMSCHALT**+**F10** | Setzt die Sitzung des interaktiven Fensters zurück und löscht alle Variablen sowie die Versionsgeschichte. |
 | ![Schaltfläche „Löschen“](media/repl-toolbar-02-clear.png) | Clear | **STRG**+**L** | Löscht die Ausgabe, die im interaktiven Fenster angezeigt wird. Beeinträchtigt keine Sitzungsvariablen oder die Versionsgeschichte. |
 | ![Schaltflächen zur Versionsgeschichte](media/repl-toolbar-03-history.png) | Vorheriger History-Befehl<br/>Nächster History-Befehl | **Nach oben**, **Nach unten**<br/>**Alt**+**Nach oben**, **Alt**+**Nach unten** | Führt einen Bildlauf durch die Versionsgeschichte mit bestimmten Verhalten für mehrzeilige Codeblöcke aus. Weitere Informationen finden Sie unter [Versionsgeschichte](#history). |
 | ![Schaltfläche „Arbeitsbereich laden“](media/repl-toolbar-04-load-workspace.png) | Arbeitsbereich laden | n/v | Lädt einen zuvor gespeicherten Arbeitsbereich (siehe [Arbeitsbereiche und Sitzungen](#workspaces-and-sessions)). |
 | ![Schaltfläche „Arbeitsbereich speichern unter“](media/repl-toolbar-05-save-workspace-as.png)| Arbeitsbereich speichern unter | n/v | Speichert den aktuellen Zustand der Sitzung als Arbeitsbereich (siehe [Arbeitsbereiche und Sitzungen](#workspaces-and-sessions)). |
-| ![Schaltfläche „R-Skript einbinden“](media/repl-toolbar-06-source-r-script.png) | R-Skript einbinden | **STRG**+**UMSCHALT**+**S** | Ruft `source` mit dem derzeit aktiven R-Skript im Visual Studio-Editor, das den Code ausführt.  Diese Schaltfläche wird nur angezeigt, wenn eine R-Datei im Visual Studio-Editor geöffnet ist. | 
+| ![Schaltfläche „R-Skript einbinden“](media/repl-toolbar-06-source-r-script.png) | R-Skript einbinden | **STRG**+**UMSCHALT**+**S** | Ruft `source` mit dem derzeit aktiven R-Skript im Visual Studio-Editor, das den Code ausführt.  Diese Schaltfläche wird nur angezeigt, wenn eine R-Datei im Visual Studio-Editor geöffnet ist. |
 | ![Schaltfläche „R-Skript mit Echo einbinden“](media/repl-toolbar-07-source-r-script-with-echo.png) | R-Skript mit Echo einbinden | **STRG**+**UMSCHALT**+**Eingabetaste** | Das gleiche wie „R-Skript einbinden“, es wird jedoch der Inhalt des Skripts im interaktiven Fenster angezeigt. |
 | ![Schaltfläche „Interrupt-R“](media/repl-toolbar-08-interrupt-r.png)| Interrupt-R | **ESC** | Hält den ausgeführten Code im interaktiven Fenster an, so wie die `while`-Schleife, die im Screenshot am Anfang dieses Abschnitts dargestellt wird. |
-| ![Schaltfläche „Debugger anfügen“](media/repl-toolbar-09b-attach-debugger.png)| Debugger anfügen | n/v | Auch mithilfe des Befehls **Debuggen** > **An R Interactive anfügen** verfügbar. | 
+| ![Schaltfläche „Debugger anfügen“](media/repl-toolbar-09b-attach-debugger.png)| Debugger anfügen | n/v | Auch mithilfe des Befehls **Debuggen** > **An R Interactive anfügen** verfügbar. |
 | ![Schaltfläche „Arbeitsverzeichnis auf Quelldateispeicherort festlegen“](media/repl-toolbar-10-set-working-directory-source.png)| Arbeitsverzeichnis auf Quelldateispeicherort festlegen | **STRG**+**UMSCHALT**+**E** | Legt das Arbeitsverzeichnis auf die zuletzt eingebundene Datei fest, die in das interaktive Fenster geladen wurde (mithilfe von `source`). Weitere Informationen finden Sie unter [Arbeitsverzeichnis](#working-directory). |
 | ![Schaltfläche „Arbeitsverzeichnis auf Projektspeicherort festlegen“](media/repl-toolbar-11-set-working-directory-to-project.png) | Arbeitsverzeichnis auf Projektspeicherort festlegen | **STRG**+**UMSCHALT**+**P** | Legt das Arbeitsverzeichnis auf den Stamm des zuletzt geladenen Projekts in Visual Studio fest. Weitere Informationen finden Sie unter [Arbeitsverzeichnis](#working-directory). |
 | (Textfeld) | Arbeitsverzeichnis auswählen | n/v | Direktes Eingabefeld für das Arbeitsverzeichnis. Weitere Informationen finden Sie unter [Arbeitsverzeichnis](#working-directory). |
 
 ## <a name="workspaces-and-sessions"></a>Arbeitsbereiche und Sitzungen
 
-Das Ausführen von Code im interaktiven Fenster erstellt einen Kontext in Ihrer aktuellen Sitzung. Der Kontext besteht aus globalen Variablen, Funktionsdefinitionen, geladenen Bibliotheken usw. Dieser Kontext wird im Allgemeinen als *Arbeitsbereich* bezeichnen. Sie können Arbeitsbereiche jederzeit speichern und laden. 
+Das Ausführen von Code im interaktiven Fenster erstellt einen Kontext in Ihrer aktuellen Sitzung. Der Kontext besteht aus globalen Variablen, Funktionsdefinitionen, geladenen Bibliotheken usw. Dieser Kontext wird im Allgemeinen als *Arbeitsbereich* bezeichnen. Sie können Arbeitsbereiche jederzeit speichern und laden.
 
 Wenn Sie die Schaltfläche **Arbeitsbereich speichern unter** auswählen oder den Befehl **R Tools** > **Sitzung** > **Arbeitsbereich speichern unter** verwenden, werden Sie zur Eingabe eines Speicherorts und eines Dateinamens aufgefordert (die Standarderweiterung lautet *RDATA*).
 

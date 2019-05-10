@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Verschieben instrumentierter Binärdateien | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.binaries
@@ -13,15 +11,15 @@ helpviewer_keywords:
 - profiling tools, instrumented binaries
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a060506f818ac000611fc0c29988ed324ae89226
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 96faf382145d7c4541f1fe66f872ad3622f64631
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843652"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62539298"
 ---
 # <a name="how-to-relocate-instrumented-binaries"></a>Vorgehensweise: Verschieben instrumentierter Binärdateien
 
@@ -39,5 +37,5 @@ Während der Instrumentation werden Sonden in die Binärdatei eingeführt, um di
 
 ## <a name="see-also"></a>Siehe auch
 
-[Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)  
+[Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)
 [VSInstr](../profiling/vsinstr.md)

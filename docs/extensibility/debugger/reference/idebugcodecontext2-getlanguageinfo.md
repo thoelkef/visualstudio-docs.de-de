@@ -1,30 +1,32 @@
 ---
 title: IDebugCodeContext2::GetLanguageInfo | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugCodeContext2::GetLanguageInfo
 helpviewer_keywords:
 - IDebugCodeContext2::GetLanguageInfo
 ms.assetid: 03002ef1-9fe6-44b6-b23b-ef7b86b2b21b
-author: gregvanl
+caps.latest.revision: 11
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: f6ed38b05e7e7453a5a3d622e0d5746964a41e6a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e4afcb2a8fd9de89b74fccec373e71e19264fe56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889056"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62922751"
 ---
 # <a name="idebugcodecontext2getlanguageinfo"></a>IDebugCodeContext2::GetLanguageInfo
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Ruft die Sprachinformationen für diesen Codekontext ab.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT GetLanguageInfo(   
    BSTR* pbstrLanguage,  
    GUID* pguidLanguage  
@@ -40,7 +42,7 @@ int GetLanguageInfo( 
   
 #### <a name="parameters"></a>Parameter  
  `pbstrLanguage`  
- [in, out] Gibt eine Zeichenfolge mit dem Namen der Sprache, z. B. "C++".  
+ [in, out] Gibt eine Zeichenfolge mit dem Namen der Sprache, z. B. "C++."  
   
  `pguidLanguage`  
  [in, out] Beispielsweise gibt die GUID für die Sprache der Codekontext `guidCPPLang`.  

@@ -1,22 +1,21 @@
 ---
 title: 'CA2137: Transparente Methoden dürfen nur überprüfbare IL enthalten.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2137
 ms.assetid: cbaeb0e1-56b6-43b4-812a-596b2859c329
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76d628b05ae5c0b6ccb8db94a1bf2c09537fd812
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f74b539d9382bf8b5f5fe319ff319cdf6f372340
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913197"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806957"
 ---
 # <a name="ca2137-transparent-methods-must-contain-only-verifiable-il"></a>CA2137: Transparente Methoden dürfen nur überprüfbare IL enthalten.
 

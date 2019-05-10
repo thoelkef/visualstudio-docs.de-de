@@ -2,35 +2,34 @@
 title: 'Tutorial „Python in Visual Studio“, Schritt 0: Installation'
 titleSuffix: ''
 description: Dies ist Schritt 0 einer grundlegenden Einführung in die Arbeit mit Python in Visual Studio.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
+ms.date: 01/28/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5e9fda2004d80f8512fcb09f7cc493927d6ef23b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 96c067d4c55a5df4d9343e60360142466e8f218f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937620"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431295"
 ---
 # <a name="install-python-support-in-visual-studio"></a>Installieren der Python-Unterstützung für Visual Studio
 
 > [!Note]
 > Derzeit wird Python nur für Visual Studio für Windows unterstützt. Unter Mac und Linux ist die Python-Unterstützung nur über [Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial) verfügbar.
 
-1. Laden Sie den neusten Visual Studio 2017-Installer für Windows herunter, und führen Sie ihn aus (umfasst die Unterstützung von Python ab dem Release 15.2). Wenn Sie Visual Studio bereits installiert haben, führen Sie den Visual Studio-Installer aus, und fahren Sie mit Schritt 2 fort.
+1. Laden Sie den neuesten Visual Studio-Installer für Windows herunter, und führen Sie ihn aus (umfasst die Unterstützung von Python ab dem Release 15.2). Wenn Sie Visual Studio bereits installiert haben, führen Sie den Visual Studio-Installer aus, und fahren Sie mit Schritt 2 fort.
 
     > [!div class="nextstepaction"]
-    > [Installieren von Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted)
+    > [Installieren von Visual Studio Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted)
 
     >[!Tip]
-    > Die Community Edition eignet sich für einzelne Entwickler, Schulungsumgebungen, akademische Forschung und Open Source-Entwicklung. Installieren Sie für andere Verwendungen [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted) oder [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted).
+    > Die Community Edition eignet sich für einzelne Entwickler, Schulungsumgebungen, akademische Forschung und Open Source-Entwicklung. Installieren Sie für andere Verwendungszwecke [Visual Studio Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted) oder [Visual Studio Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted).
 
 1. Der Installer bietet Ihnen eine Liste von Workloads, bei denen es sich um Gruppen von verwandten Optionen für bestimmte Entwicklungsbereiche handelt. Wählen Sie für Python die Workload **Python-Entwicklung** aus, und klicken Sie auf **Installieren**:
 

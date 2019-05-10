@@ -1,14 +1,9 @@
 ---
 title: Verwenden des DebuggerDisplay-Attributs | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,13 +17,13 @@ ms.assetid: f4eb7c76-af4e-493b-9ab6-9cb05949d9b3
 caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9637bd2d2a057615fd758ecec80a914931822b64
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 04a941ae7aab30825c66ac5d3d81ac12d4b7c7db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736874"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437744"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Verwenden des DebuggerDisplay-Attributs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ Das <xref:System.Diagnostics.DebuggerDisplayAttribute> steuert die Anzeige von O
  Ob der Debugger diesen impliziten `ToString()` -Aufruf auswertet, hängt von einer Benutzereinstellung im Dialogfeld **Extras / Optionen / Debugging** ab. Visual Basic implementiert diese implizite `ToString()` -Auswertung nicht.  
   
 > [!IMPORTANT]
->  Wenn das Kontrollkästchen **Unformatierte Struktur von Objekten in Variablenfenstern anzeigen** im Dialogfeld **Extras / Optionen / Debugging** aktiviert ist, wird das `DebuggerDisplay` -Attribut ignoriert.  
+> Wenn das Kontrollkästchen **Unformatierte Struktur von Objekten in Variablenfenstern anzeigen** im Dialogfeld **Extras / Optionen / Debugging** aktiviert ist, wird das `DebuggerDisplay` -Attribut ignoriert.  
   
  In der folgenden Tabelle werden einige Verwendungsmöglichkeiten des `DebuggerDisplay` -Attributs sowie Beispielausgaben gezeigt.  
   
@@ -186,6 +181,3 @@ class MyHashtable
   
 ## <a name="see-also"></a>Siehe auch  
  [Verwenden des DebuggerTypeProxy-Attributs](../debugger/using-debuggertypeproxy-attribute.md) [verbessern des Debuggens mit den Debuggeranzeigeattributen](http://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)
-
-
-

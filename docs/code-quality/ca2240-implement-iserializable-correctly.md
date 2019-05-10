@@ -1,7 +1,6 @@
 ---
-title: 'CA2240: ISerializable ordnungsgemäß implementieren'
+title: 'CA2240: ISerializable ordnungsgemäß implementieren.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2240
@@ -12,21 +11,21 @@ helpviewer_keywords:
 ms.assetid: cf05936d-0d6c-49ed-a1b4-220032e50b97
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 966e92b7973ee22ce4da2be7edb1cc075c42077a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9ef3e012b3a818c60be23278fe622a40330f3b43
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868364"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62541479"
 ---
-# <a name="ca2240-implement-iserializable-correctly"></a>CA2240: ISerializable ordnungsgemäß implementieren
+# <a name="ca2240-implement-iserializable-correctly"></a>CA2240: ISerializable ordnungsgemäß implementieren.
 
 |||
 |-|-|

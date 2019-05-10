@@ -10,52 +10,52 @@ helpviewer_keywords:
 ms.assetid: c923dfe6-084a-4105-aec1-f0a3f8399c54
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16941cad9ef34f93fd443f0b9bf0192cb46c0a04
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d77cca0b197f939170fc92f4d7d07bcadae8b53d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830335"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861800"
 ---
 # <a name="include-element"></a>Include-element
-Das Include-Element gibt eine Datei, die gefunden werden, kann für die angegebenen Includepfad für das Einfügen in die aktuelle Datei.  Alle Symbole und Typen, die definiert, werden Teil des kompilierten Ergebnisses.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```csharp  
-<Include href="stdidcmd.h" />  
-```  
-  
-## <a name="attributes-and-elements"></a>Attribute und Elemente  
- In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
-  
-### <a name="attributes"></a>Attribute  
-  
-|Attribut|Beschreibung|  
-|---------------|-----------------|  
-|href|Erforderlich. Der Pfad zur Headerdatei:<br /><br /> href="stdidcmd.h"|  
-|Bedingung|Dies ist optional. Finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
-  
-### <a name="child-elements"></a>Untergeordnete Elemente  
-  
-|Element|Beschreibung|  
-|-------------|-----------------|  
-|Keine|Keine|  
-  
-### <a name="parent-elements"></a>Übergeordnete Elemente  
-  
-|Element|Beschreibung|  
-|-------------|-----------------|  
-|[CommandTable-element](../extensibility/commandtable-element.md)|Definiert alle Elemente, die Befehle darstellen, d. h. Menüelemente, Menüs, Symbolleisten und Kombinationsfeldern –, die eine VSPackage für die IDE bietet.|  
-  
-## <a name="example"></a>Beispiel  
-  
-```  
-<Include href="PackagePlacements.vsct"/>  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [Visual Studio-Befehlstabellen (VSCT)-Befehlsdateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+Das Include-Element gibt eine Datei, die gefunden werden, kann für die angegebenen Includepfad für das Einfügen in die aktuelle Datei.  Alle Symbole und Typen, die definiert, werden Teil des kompilierten Ergebnisses.
+
+## <a name="syntax"></a>Syntax
+
+```csharp
+<Include href="stdidcmd.h" />
+```
+
+## <a name="attributes-and-elements"></a>Attribute und Elemente
+ In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
+
+### <a name="attributes"></a>Attribute
+
+|Attribut|Beschreibung|
+|---------------|-----------------|
+|href|Erforderlich. Der Pfad zur Headerdatei:<br /><br /> href="stdidcmd.h"|
+|Bedingung|Dies ist optional. Finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+
+### <a name="child-elements"></a>Untergeordnete Elemente
+
+|Element|Beschreibung|
+|-------------|-----------------|
+|Keine|Keine|
+
+### <a name="parent-elements"></a>Übergeordnete Elemente
+
+|Element|Beschreibung|
+|-------------|-----------------|
+|[CommandTable-element](../extensibility/commandtable-element.md)|Definiert alle Elemente, die Befehle darstellen, d. h. Menüelemente, Menüs, Symbolleisten und Kombinationsfeldern –, die eine VSPackage für die IDE bietet.|
+
+## <a name="example"></a>Beispiel
+
+```
+<Include href="PackagePlacements.vsct"/>
+```
+
+## <a name="see-also"></a>Siehe auch
+- [Visual Studio-Befehlstabellen (VSCT)-Befehlsdateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

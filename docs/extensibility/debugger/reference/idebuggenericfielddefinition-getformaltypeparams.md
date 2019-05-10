@@ -1,29 +1,31 @@
 ---
-title: IDebugGenericFieldDefinition::GetFormalTypeParams | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+title: IDebugGenericFieldDefinition::GetFormalTypeParams | Microsoft Docs
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - GetFormalTypeParams
 - IDebugGenericFieldDefinition::GetFormalTypeParams
 ms.assetid: cadbd6a1-bc7c-4aff-8777-5396b7a23c3e
-author: gregvanl
+caps.latest.revision: 10
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 6cc935bf8e04f4e8445664f12ef01a388d691453
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 22b02361b13a1fb639afc74fa7e0d8421a3ae19c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824495"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62919193"
 ---
 # <a name="idebuggenericfielddefinitiongetformaltypeparams"></a>IDebugGenericFieldDefinition::GetFormalTypeParams
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Ruft die Typparameter in Anbetracht der Anzahl von Parametern ab.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT GetFormalTypeParams(  
    ULONG32                   cParams,  
    IDebugGenericParamField** ppParams,  

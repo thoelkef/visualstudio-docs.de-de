@@ -1,27 +1,27 @@
 ---
 title: Veröffentlichen in IIS durch Importieren von Veröffentlichungseinstellungen
 description: Erstellen und Importieren eines Veröffentlichungsprofils zum Bereitstellen einer Anwendung aus Visual Studio in IIS
-ms.date: 05/07/2018
+ms.date: 01/31/2019
 ms.topic: tutorial
 helpviewer_keywords:
 - deployment, publish settings
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13a4210e24fe64db79be897bc159477e9b2f5a3a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b6b0c4f870de455238c02f5dbecbc0c5d56dfbc9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53897383"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62927183"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Veröffentlichen einer Anwendung in IIS durch Importieren von Veröffentlichungseinstellungen in Visual Studio
 
 Sie können das Tool **Veröffentlichen** zum Importieren von Veröffentlichungseinstellungen verwenden. Anschließend können Sie die App bereitstellen. In diesem Artikel werden Veröffentlichungseinstellungen für IIS verwendet, allerdings können Sie die gleiche Vorgehensweise zum Importieren von Veröffentlichungseinstellungen für [Azure App Service](../deployment/tutorial-import-publish-settings-azure.md) verwenden. Die Verwendung eines Veröffentlichungseinstellungsprofils kann sich in einigen Szenarios als schneller als das manuelle Konfigurieren der Bereitstellung in IIS für jede Installation von Visual Studio erweisen.
 
-Die in diesem Artikel genannten Schritte gelten für ASP.NET, ASP.NET Core und .NET Core-Apps in Visual Studio. Die Schritte sind auf dem Stand von Visual Studio 2017, Version 15.6.
+Die in diesem Artikel genannten Schritte gelten für ASP.NET, ASP.NET Core und .NET Core-Apps in Visual Studio.
 
 In diesem Tutorial werden Sie Folgendes durchführen:
 
@@ -38,19 +38,31 @@ Eine Veröffentlichungseinstellungsdatei (*\*.publishsettings*) unterscheidet si
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
-* Sie müssen Visual Studio 2017 und die Workloads für die **ASP.NET**- und **.NET Framework**-Entwicklung installiert haben. Für eine .NET Core-App benötigen Sie außerdem die **.NET Core**-Workload.
+::: moniker range=">=vs-2019"
 
-    Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  kostenlos herunterladen.
+* Sie müssen Visual Studio 2019 und die Workload **ASP.NET und Webentwicklung** installiert haben.
 
-* Zum Generieren der Veröffentlichungseinstellungsdatei aus IIS benötigen Sie einen Computer, auf dem Windows Server 2012 oder Windows Server 2016 ausgeführt wird, und die IIS-Webserverrolle muss ordnungsgemäß konfiguriert sein. Außerdem muss entweder ASP.NET 4.5 oder ASP.NET Core installiert sein. Informationen zu ASP.NET Core finden Sie unter [Veröffentlichen in IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). Informationen zu ASP.NET 4.5 finden Sie unter [IIS 8.0 Using ASP.NET 3.5 and ASP.NET 4.5 (IIS 8.0 mit ASP.NET 3.5 und ASP.NET 4.5)](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
+    Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/)  kostenlos herunterladen.
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+* Sie müssen Visual Studio 2017 und die Workload **ASP.NET und Webentwicklung** installiert haben.
+
+    Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/)  kostenlos herunterladen.
+::: moniker-end
+
+* Sie müssen Windows Server 2012 oder Windows Server 2016 auf Ihrem Server ausführen, und die [IIS-Webserverrolle](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) muss ordnungsgemäß installiert sein (zum Generieren der Veröffentlichungseinstellungsdatei (*\*.publishsettings*) erforderlich). Außerdem muss entweder ASP.NET 4.5 oder ASP.NET Core auf dem Server installiert sein. Informationen zum Einrichten von ASP.NET 4.5 finden Sie unter [IIS 8.0 Using ASP.NET 3.5 and ASP.NET 4.5 (IIS 8.0 mit ASP.NET 3.5 und ASP.NET 4.5)](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). Informationen zum Einrichten von ASP.NET Core finden Sie unter [Hosten von ASP.NET Core unter Windows mit IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Erstellen eines neuen ASP.NET-Projekts in Visual Studio
 
-1. Klicken Sie auf dem Computer, auf dem Visual Studio ausgeführt wird, auf **Datei** > **Neues Projekt**.
+1. Erstellen Sie ein neues Projekt auf dem Computer, auf dem Visual Studio ausgeführt wird.
 
-1. Klicken Sie in **Visual C#** oder **Visual Basic** auf **Web**, wählen Sie dann im mittleren Bereich entweder **ASP.NET-Webanwendung (.NET Framework)** oder **ASP.NET Core-Webanwendung** (nur bei C#) aus, und klicken Sie anschließend auf **OK**.
+    Wählen Sie die richtige Vorlage aus. Wählen Sie für dieses Beispiel entweder **ASP.NET-Webanwendung (.NET Framework)** oder **ASP.NET Core-Webanwendung** (nur für C#) aus, und klicken Sie anschließend auf **OK**.
 
-    Wenn Ihnen die angegebenen Projektvorlagen nicht angezeigt werden, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** auf den Link **Visual Studio-Installer öffnen**. Der Visual Studio-Installer wird gestartet. Anhand der in diesem Artikel genannten Voraussetzungen können Sie die erforderlichen Visual Studio-Workloads identifizieren, die Sie installieren müssen.
+    Wenn Ihnen die angegebenen Projektvorlagen nicht angezeigt werden, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** auf den Link **Visual Studio-Installer öffnen**. Der Visual Studio-Installer wird gestartet. Installieren Sie die Workload **ASP.NET und Webentwicklung**.
+
+    Die ausgewählte Projektvorlage (ASP.NET oder ASP.NET Core) muss der ASP.NET-Version entsprechen, die auf dem Webserver installiert ist.
 
 1. Wählen Sie entweder **MVC** (für .NET Framework) oder **Webanwendung (Model-View-Controller)** (für .NET Core) aus, und stellen Sie sicher, dass **Keine Authentifizierung** ausgewählt ist, klicken Sie anschließend auf **OK**.
 

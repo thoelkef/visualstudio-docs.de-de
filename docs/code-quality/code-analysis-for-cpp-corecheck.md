@@ -1,7 +1,6 @@
 ---
 title: C++ Core Guidelines Überprüfungsprogramm Verweis
 ms.date: 03/22/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - code analysis, C++ core check
@@ -11,12 +10,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d6824041d362c0dda584c59998090e85f38d35a8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0b725d0ee49590062ebdde9a1ef27f838678ccf5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959481"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62540793"
 ---
 # <a name="c-core-guidelines-checker-reference"></a>C++ Core Guidelines Überprüfungsprogramm Verweis
 
@@ -108,12 +107,9 @@ Ausdruck "% Expr %": Kein Array zu zeigerverfall. Finden Sie unter [C++ Core Ric
 
 [C26435 SINGLE_VIRTUAL_SPECIFICATION](c26435.md) Funktion "% Symbol %" muss genau eines der "virtual", "override" oder "final" angeben. Finden Sie unter [128: Virtuelle Funktionen sollten genau einem der virtuell, "Override", "oder" letzte angeben](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
 
-
 [C26436 NEED_VIRTUAL_DTOR](C26436.md) der Typ "% Symbol %" mit einer virtuellen Funktion benötigt entweder öffentlichen virtuellen oder einen geschützten nicht virtuellen Destruktor. Finden Sie unter [C++ Core Guidelines 35](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c35-a-base-class-destructor-should-be-either-public-and-virtual-or-protected-and-nonvirtual).
 
-
 [C26443 NO_EXPLICIT_DTOR_OVERRIDE](c26443.md) Außerkraftsetzen Destruktor sollten nicht verwenden, explizite 'Override' oder 'virtual'-Spezifizierer. Finden Sie unter [128: Virtuelle Funktionen sollten genau einem der virtuell, "Override", "oder" letzte angeben](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
-
 
 ## <a name="type-group"></a>Typ-Gruppe
 
@@ -202,11 +198,10 @@ Finden Sie unter [GSL.view für C++-Core-Richtlinien: Ansichten](https://github.
 
 [C26446 USE_GSL_AT](c26446.md) bevorzugen `gsl::at()` anstelle von ungeprüften subscript-Operator. Finden Sie unter [C++ Core Guidelines:  Bounds.4: Verwenden Sie keine Standard-Library-Funktionen und Typen, die keine Grenzen überprüft sind](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
 
-[C26448 USE_GSL_FINALLY ](c26448.md) erwägen `gsl::finally` Wenn abschließende Aktion beabsichtigt ist. Finden Sie unter [C++ Core Guidelines:  GSL.util: Dienstprogramme](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-utilities).
+[C26448 USE_GSL_FINALLY](c26448.md) erwägen `gsl::finally` Wenn abschließende Aktion beabsichtigt ist. Finden Sie unter [C++ Core Guidelines:  GSL.util: Dienstprogramme](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-utilities).
 
 [C26449 NO_SPAN_FROM_TEMPORARY](c26449.md) 
  `gsl::span` oder `std::string_view` erstellt aus einer temporären werden ungültige bei temporären für ungültig erklärt. Finden Sie unter [C++ Core Guidelines: GSL.view: Ansichten](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views).
-
 
 ## <a name="deprecated-warnings"></a>Veraltete Warnungen
 

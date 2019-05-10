@@ -1,7 +1,6 @@
 ---
-title: 'CA1701: Zusammengesetzte Begriffen in Ressourcenzeichenfolgen sollte beachtet werden'
+title: 'CA1701: Bei zusammengesetzten Begriffen in Ressourcenzeichenfolgen sollte die Groß-/Kleinschreibung beachtet werden.'
 ms.date: 03/28/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - ResourceStringCompoundWordsShouldBeCasedCorrectly
@@ -12,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 4ddbe09f-24b8-4c47-9373-a06f4487ca0d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2cc74bb7d3cc15e593d465a8c8d0d55275954ff
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8fdae06137586f11de1a30a73894c46c7fb18fa6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841780"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546283"
 ---
-# <a name="ca1701-resource-string-compound-words-should-be-cased-correctly"></a>CA1701: Zusammengesetzte Begriffen in Ressourcenzeichenfolgen sollte beachtet werden
+# <a name="ca1701-resource-string-compound-words-should-be-cased-correctly"></a>CA1701: Bei zusammengesetzten Begriffen in Ressourcenzeichenfolgen sollte die Groß-/Kleinschreibung beachtet werden.
 
 |||
 |-|-|
@@ -63,7 +62,7 @@ Sie können auch ein benutzerdefiniertes Wörterbuch für die Rechtschreibprüfu
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-- [CA1702: BEI Bei zusammengesetzten Begriffen sollte beachtet werden](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+- [CA1702: Bei zusammengesetzten Begriffen sollte beachtet werden](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 - [CA1709: Bezeichner sollten beachtet werden](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 - [CA1708: Bezeichner sollten sich durch die Groß-/Kleinschreibung unterscheiden.](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 

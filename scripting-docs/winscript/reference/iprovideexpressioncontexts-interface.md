@@ -1,8 +1,7 @@
 ---
-title: IProvideExpressionContexts-Schnittstelle | Microsoft Docs
+title: IProvideExpressionContexts-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,23 +13,23 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 402b439da6f1fa369accacb27f987ac77119e343
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
-ms.translationtype: MT
+ms.openlocfilehash: b6ec0d5e17b0d3527252352c2e789adfac4fa859
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728100"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410049"
 ---
 # <a name="iprovideexpressioncontexts-interface"></a>IProvideExpressionContexts-Schnittstelle
-Bietet eine Möglichkeit zum Aufzählen von ausdruckskontexten, die von einer bestimmten Komponente bezeichnet. Script-Module in der Regel implementieren Sie diese Schnittstelle.  
+Bietet eine Möglichkeit zum Aufzählen von Ausdruckskontexten, die von einer bestimmten Komponente bekannt sind. Skript-Engines werden in der Regel diese Schnittstelle implementieren.  
   
- Der Prozess-Manager verwendet diese Schnittstelle, um alle globalen ausdruckskontexten, die ein bestimmter Thread zugeordnet zu suchen.  
+ Prozessbasierten Debug-Manager verwendet diese Schnittstelle, um alle globalen ausdruckskontexten, die einem bestimmten Thread suchen.  
   
 > [!NOTE]
->  Diese Schnittstelle wird von innerhalb des relevanten Threads aufgerufen. Es wird vom Implementierer identifizieren den aktuellen Thread und einen entsprechenden Enumerator zurück.  
+> Diese Schnittstelle wird von innerhalb des relevanten Threads aufgerufen werden. Es obliegt dem Implementierer, identifizieren den aktuellen Thread und einen entsprechenden Enumerator zurückgeben.  
   
 ## <a name="methods"></a>Methoden  
- Zusätzlich zu den von geerbten Methoden `IUnknown`, `IProvideExpressionContexts` Schnittstelle macht die folgenden Methoden verfügbar.  
+ Zusätzlich zu den von geerbten Methoden `IUnknown`, `IProvideExpressionContexts` Schnittstelle verfügbar macht, die folgenden Methoden.  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  

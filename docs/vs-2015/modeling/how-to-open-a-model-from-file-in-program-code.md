@@ -1,25 +1,22 @@
 ---
 title: 'Vorgehensweise: Öffnen Sie ein Modell aus einer Datei im Programmcode | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: d7d68697-5418-4263-bdb2-48401924ea71
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5c084e756492a03abc86f7281728222632e12ec1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c87b197219cec112a9235f4af6fb1a51ae793a88
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940865"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441017"
 ---
-# <a name="how-to-open-a-model-from-file-in-program-code"></a>Gewusst wie: Öffnen eines Modells aus einer Datei im Programmcode
+# <a name="how-to-open-a-model-from-file-in-program-code"></a>Vorgehensweise: Öffnen eines Modells aus einer Datei im Programmcode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können die DSL-Modelle in einer beliebigen Anwendung öffnen.  
@@ -31,34 +28,34 @@ Sie können die DSL-Modelle in einer beliebigen Anwendung öffnen.
   
 #### <a name="to-set-the-target-framework"></a>Um das Zielframework festzulegen.  
   
-1.  Öffnen der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Projekt für die Anwendung, in dem Sie ein DSL-Modell lesen möchten.  
+1. Öffnen der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Projekt für die Anwendung, in dem Sie ein DSL-Modell lesen möchten.  
   
-2.  In **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und klicken Sie dann auf **Eigenschaften**.  
+2. In **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und klicken Sie dann auf **Eigenschaften**.  
   
-3.  Im Fenster für die Projekteigenschaften auf die **Anwendung** Registerkarte die **Zielframework** Feld **.NET Framework 4**.  
+3. Im Fenster für die Projekteigenschaften auf die **Anwendung** Registerkarte die **Zielframework** Feld **.NET Framework 4**.  
   
 > [!NOTE]
->  Müssen Sie möglicherweise dazu, auch wenn Sie **.NET Framework 4** in das Dialogfeld für die Erstellung des Projekts. Das Zielframework sollte nicht **.NET Framework 4 Client Profile**.  
+> Müssen Sie möglicherweise dazu, auch wenn Sie **.NET Framework 4** in das Dialogfeld für die Erstellung des Projekts. Das Zielframework sollte nicht **.NET Framework 4 Client Profile**.  
   
 ## <a name="references"></a>Verweise  
  Sie müssen diese Verweise hinzufügen Ihrer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Anwendungsprojekt:  
   
--   `Microsoft.VisualStudio.Modeling.Sdk.11.0`  
+- `Microsoft.VisualStudio.Modeling.Sdk.11.0`  
   
-    -   Wenn diese nicht angezeigt wird der **.NET** Registerkarte die **Verweise hinzufügen** im Dialogfeld klicken Sie auf die **Durchsuchen** Registerkarte, und navigieren Sie zu `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.  
+    - Wenn diese nicht angezeigt wird der **.NET** Registerkarte die **Verweise hinzufügen** im Dialogfeld klicken Sie auf die **Durchsuchen** Registerkarte, und navigieren Sie zu `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.  
   
--   Die DSL-Assembly, die sich unter dem Ordner "Bin" Ihrem DSL-Projekt werden. Der Name hat in der Regel Folgendes Format: *ihrunternehmen*. *IhrProjekt*`.Dsl.dll`.  
+- Die DSL-Assembly, die sich unter dem Ordner "Bin" Ihrem DSL-Projekt werden. Der Name hat in der Regel Folgendes Format: *Ihrunternehmen*. *IhrProjekt*`.Dsl.dll`.  
   
 ## <a name="important-classes-in-the-dsl"></a>Wichtige Klassen in der DSL  
  Bevor Sie den Code, der Ihre DSL liest schreiben können, sollten Sie die Namen einiger der von Ihrer DSL generierten Klassen wissen. Öffnen Sie in der DSL-Projektmappe, die **Dsl** Projekt, und suchen Sie in der **GeneratedCode** Ordner. Doppelklicken Sie alternativ auf die DSL-Assembly in Ihrem Projekt **Verweise**, und öffnen Sie in den DSL-Namespace **Objektkatalog**.  
   
  Dies sind die Klassen, die gekennzeichnet werden sollen:  
   
--   *YourDslRootClass* – Dies ist der Name der Stammklasse in Ihre `DslDefinition.dsl`.  
+- *YourDslRootClass* – Dies ist der Name der Stammklasse in Ihre `DslDefinition.dsl`.  
   
--   *Ihrdslname* `SerializationHelper` – diese Klasse wird definiert, `SerializationHelper.cs` in Ihrem DSL-Projekt.  
+- *Ihrdslname* `SerializationHelper` – diese Klasse wird definiert, `SerializationHelper.cs` in Ihrem DSL-Projekt.  
   
--   *Ihrdslname* `DomainModel` – diese Klasse wird definiert, `DomainModel.cs` in Ihrem DSL-Projekt.  
+- *Ihrdslname* `DomainModel` – diese Klasse wird definiert, `DomainModel.cs` in Ihrem DSL-Projekt.  
   
 ## <a name="reading-from-a-file"></a>Lesen aus einer Datei  
  Im folgende Beispiel wird entworfen, um eine DSL Lesen in der zu die wichtigsten Klassen wie folgt:  
@@ -141,6 +138,3 @@ try
 catch (System.IO.IOException ex)  
 { ... }  
 ```
-
-
-

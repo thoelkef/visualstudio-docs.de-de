@@ -7,24 +7,24 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, samples
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 21cfe0af20b2cb7f1aab413fbc6412975ecc9ed1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f1719656c475dc6ee78de27f068baaf77c8b2a85
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971408"
 ---
 # <a name="sharepoint-development-samples"></a>Beispiele für die SharePoint-Entwicklung
-  Sie können Visual Studio verwenden, herunterladen und Installieren der Beispiele für SharePoint-Anwendungen von der [MSDN Code Gallery](http://go.microsoft.com/fwlink/?LinkId=254185).  
-  
- Sie können jedes Beispiel einzeln herunterladen. Sie können auch ein Beispielpaket herunterladen, die Beispiele, die gemeinsam eine Technologie oder einen Artikel über verknüpfte hat. Sie erhalten eine Benachrichtigung, wenn Quellcodeänderungen für ein Beispiel veröffentlicht werden, das Sie herunterladen.  
-  
+  Sie können Visual Studio verwenden, herunterladen und Installieren der Beispiele für SharePoint-Anwendungen von der [MSDN Code Gallery](http://go.microsoft.com/fwlink/?LinkId=254185).
+
+ Sie können jedes Beispiel einzeln herunterladen. Sie können auch ein Beispielpaket herunterladen, die Beispiele, die gemeinsam eine Technologie oder einen Artikel über verknüpfte hat. Sie erhalten eine Benachrichtigung, wenn Quellcodeänderungen für ein Beispiel veröffentlicht werden, das Sie herunterladen.
+
 ## <a name="see-also"></a>Siehe auch
- [Erstellen von SharePoint-Lösungen](../sharepoint/create-sharepoint-solutions.md)   
- [Visual Studio-Beispiele](http://go.microsoft.com/fwlink/?LinkId=150928)   
- [Häufige Aufgaben bei der Programmierung mit Office](../vsto/common-tasks-in-office-programming.md)  
+- [Erstellen von SharePoint-Lösungen](../sharepoint/create-sharepoint-solutions.md)
+- [Visual Studio-Beispiele](http://go.microsoft.com/fwlink/?LinkId=150928)
+- [Häufige Aufgaben bei der Programmierung mit Office](../vsto/common-tasks-in-office-programming.md)

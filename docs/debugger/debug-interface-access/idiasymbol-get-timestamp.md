@@ -1,30 +1,33 @@
 ---
 title: 'Idiasymbol:: Get_timestamp | Microsoft-Dokumentation'
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_timeStamp method
 ms.assetid: 5d707b76-dbaa-4d88-86c3-6f3672cc6d4c
-author: mikejo5000
+caps.latest.revision: 11
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: c7e0fdcc529a3a12ac12ea0c9522eeeeb7d4bce7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 91f75ab56c8c34e2c58e0f0560422021299c9540
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963365"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399867"
 ---
 # <a name="idiasymbolgettimestamp"></a>IDiaSymbol::get_timeStamp
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Ruft den Zeitstempel der zugrunde liegenden ausführbaren Datei ab.  
   
 ## <a name="syntax"></a>Syntax  
   
-```C++  
+```cpp#  
 HRESULT get_timeStamp (   
    DWORD* pRetVal  
 );  
@@ -38,7 +41,7 @@ HRESULT get_timeStamp ( 
  Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

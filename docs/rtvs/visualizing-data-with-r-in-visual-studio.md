@@ -2,20 +2,18 @@
 title: Visualisieren von Daten mit R
 description: Zeichnen von Daten aus R-Programmen in Visual Studio mithilfe von Plotfenstern.
 ms.date: 06/29/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: f44ba213defef153acd2f5d1ef247bb093448263
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: a48ad7800f8ea2b992e848cfbf6b4fdac99b2062
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235324"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62811193"
 ---
 # <a name="create-visual-data-plots-with-r"></a>Erstellen von visuellen Datenplots mit R
 
@@ -25,7 +23,7 @@ Das Erstellen von Grafiken ist ein wichtiger Bestandteil der Arbeit von Datenana
 
 |   |   |
 |---|---|
-| ![Kamerasymbol für video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video (youtube.com)](https://www.youtube.com/watch?v=ZTbKmz5RSgY) zum Plotten mit R an (2m 02s). |
+| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video (youtube.com)](https://www.youtube.com/watch?v=ZTbKmz5RSgY) zum Plotten mit R an (2m 02s). |
 
 ## <a name="the-plot-window"></a>Das Plotfenster
 
@@ -39,7 +37,7 @@ Plotfenster sind nicht von Visual Studio-Projekten abhängig und bleiben geöffn
 
 Zum Generieren eines Plots wird das „aktive“ Plotfenster verwendet, wobei jeder vorherige Plot im Plotverlauf gespeichert wird (siehe [Plotversionsgeschichte](#plot-history)). Geben Sie z.B. `plot(100:1)` ein, und das erste Diagramm wird durch eine Linie nach unten ersetzt.
 
-Wie alle anderen Visual Studio-Fenster. unterstützt das Plotfenster benutzerdefinierte Layouts (siehe [Anpassen von Fensterlayouts in Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md)). Plotfenster können an verschiedenen Orten innerhalb des Visual Studio-Rahmens andocken, ihre Größe kann innerhalb dieses Rahmens geändert werden oder sie können gänzlich aus dem Rahmen gezogen werden, um ihre Größe völlig unabhängig anzupassen. 
+Wie alle anderen Visual Studio-Fenster. unterstützt das Plotfenster benutzerdefinierte Layouts (siehe [Anpassen von Fensterlayouts in Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md)). Plotfenster können an verschiedenen Orten innerhalb des Visual Studio-Rahmens andocken, ihre Größe kann innerhalb dieses Rahmens geändert werden oder sie können gänzlich aus dem Rahmen gezogen werden, um ihre Größe völlig unabhängig anzupassen.
 
 Durch die Größenanpassung eines Plotfensters wird immer der Plot erneut gerendert, um die beste Bildqualität bereitzustellen. In der Regel sollten Sie die Größenanpassung eines Plots vor einem Export des Plots in eine Datei oder in die Zwischenablage mithilfe der im vorherigen Abschnitt beschriebenen Befehle durchführen.
 
@@ -47,7 +45,7 @@ Durch die Größenanpassung eines Plotfensters wird immer der Plot erneut gerend
 
 Die Symbolleiste des Plotfensters enthält anwendbare Befehle, von denen die meisten auch über das Menü **R Tools** > **Plots** verfügbar sind.
 
-| Schaltfläche | Befehl | Beschreibung  | 
+| Schaltfläche | Befehl | Beschreibung |
 | --- | --- | --- |
 | ![Schaltfläche „Neues Plotfenster“](media/plotting-toolbar-01-new-plot-window.png) | Neues Plotfenster | Erstellt ein separates Plotfenster mit eigener Versionsgeschichte. Weitere Informationen unter [Mehrere Plotfenster](#multiple-plot-windows). |
 | ![Schaltfläche „Plotfenster aktivieren“](media/plotting-toolbar-02-activate-plot-window.png) | Plotfenster aktivieren | Legt das aktuelle Plotfenster als aktives Fenster fest, sodass nachfolgende `plot`-Befehle an dieses Fenster gerendert werden. Weitere Informationen unter [Mehrere Plotfenster](#multiple-plot-windows). Weitere Informationen unter [Mehrere Plotfenster](#multiple-plot-windows). |
@@ -55,8 +53,8 @@ Die Symbolleiste des Plotfensters enthält anwendbare Befehle, von denen die mei
 | ![Schaltflächen zum Plotverlauf](media/plotting-toolbar-04-plot-history-arrows.png) | Vorheriger/Nächster Plot |  Navigiert zum vorherigen oder nächsten Plot im Verlauf. Sie können auch mit STRG+ALT+F11 (Vorheriger Plot) und STRG+Alt+F12 (Nächster Plot) durch den Verlauf navigieren. Weitere Informationen unter [Plotverlauf](#plot-history). |
 | ![Schaltfläche „Als Bild speichern“](media/plotting-toolbar-05-save-as-image.png)| Als Bild speichern | Fragt nach einem Dateinamen und speichert den aktuellen Plot (die Fensterinhalte bei der entsprechenden Fenstergröße) in eine Bilddatei. Die verfügbaren Formate sind `.png`, `.jpg`, `.bmp` und `.tif`. |
 | ![Schaltfläche „Als PDF speichern“](media/plotting-toolbar-06-save-as-pdf.png)| Als PDF speichern | Speichert den aktuellen Plot mithilfe der aktuellen Fenstergröße in einer PDF-Datei. Der Plot wird erneut gerendert, wenn die PDF-Datei skaliert wird. |
-| ![Schaltfläche „Als Bitmap kopieren“](media/plotting-toolbar-07-copy-as-bitmap.png)| Als Bitmap kopieren | Kopiert den Plot als Rasterbitmap in der aktuellen Fenstergröße in die Zwischenablage. | 
-| ![Schaltfläche „Als Metafile kopieren“](media/plotting-toolbar-08-copy-as-metafile.png)| Als Metafile kopieren | Kopiert den Plot als [Windows-Metadatei](https://en.wikipedia.org/wiki/Windows_Metafile) (Wikipedia) in die Zwischenablage | 
+| ![Schaltfläche „Als Bitmap kopieren“](media/plotting-toolbar-07-copy-as-bitmap.png)| Als Bitmap kopieren | Kopiert den Plot als Rasterbitmap in der aktuellen Fenstergröße in die Zwischenablage. |
+| ![Schaltfläche „Als Metafile kopieren“](media/plotting-toolbar-08-copy-as-metafile.png)| Als Metafile kopieren | Kopiert den Plot als [Windows-Metadatei](https://en.wikipedia.org/wiki/Windows_Metafile) (Wikipedia) in die Zwischenablage |
 | ![Schaltfläche „Plot entfernen“](media/plotting-toolbar-09-remove-plot.png)| Plot entfernen | Entfernt den aktuellen Plot aus dem Verlauf |
 | ![Schaltfläche „Alle Zeichnungen löschen“](media/plotting-toolbar-10-clear-all-plots.png) | Alle Zeichnungen löschen | Entfernt alle Plots aus dem Verlauf (erfordert eine Bestätigung) |
 
@@ -85,7 +83,7 @@ Die Lebensdauer des fensterübergreifenden Plotverlaufs ist an die Lebensdauer d
 
 ## <a name="programmatically-manipulate-plot-windows"></a>Programmgesteuertes Bearbeiten von Plotfenstern
 
-Sie können Plotfenster programmgesteuert über den R-Code mithilfe der Gerätenummern zum Identifizieren der einzelnen Plotfenster bearbeiten. 
+Sie können Plotfenster programmgesteuert über den R-Code mithilfe der Gerätenummern zum Identifizieren der einzelnen Plotfenster bearbeiten.
 
 - `dev.list()`: Liste aller Grafikgeräte innerhalb der aktuellen R-Sitzung
 - `dev.new()`: Erstellt ein neues Grafikgerät (ein neues Plotfenster)

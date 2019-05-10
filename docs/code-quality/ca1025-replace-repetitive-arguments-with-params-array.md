@@ -1,7 +1,6 @@
 ---
-title: 'CA1025: Sich wiederholende Argumente durch ein Parameterarray ersetzen'
+title: 'CA1025: Sich wiederholende Argumente durch ein Parameterarray ersetzen.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1025
@@ -12,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: f009b340-dea3-4459-8fe1-2143aa8b5d0b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e4d2bb3330883e44b015698b740cd6403f953dc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b4a292cb3f3221b36c163c87881fd23db0606399
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868864"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62779418"
 ---
-# <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025: Sich wiederholende Argumente durch ein Parameterarray ersetzen
+# <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025: Sich wiederholende Argumente durch ein Parameterarray ersetzen.
 
 |||
 |-|-|

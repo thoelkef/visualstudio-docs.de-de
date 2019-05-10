@@ -14,17 +14,17 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], entity backed list
 - Business Data Connectivity service [SharePoint development in Visual Studio], entity backed list
 - Business Data Connectivity service [SharePoint development in Visual Studio], external list
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 96c52d1d30444aa557465ce2022a3ef1db4c3de0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 45f0a896db97d489d58036ea226962550b512665
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965218"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Exemplarische Vorgehensweise: Erstellen Sie eine externe Liste in SharePoint mithilfe von Geschäftsdaten
 
@@ -76,7 +76,7 @@ Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgend
 
 1. Wählen Sie auf der Menüleiste **Tools** > **Herstellen einer Verbindung mit Datenbank**.
 
-     Die **Verbindung hinzufügen** Dialogfeld wird geöffnet.
+     Das Dialogfeld **Verbindung hinzufügen** wird geöffnet.
 
 2. Fügen Sie eine Verbindung mit der SQL Server AdventureWorks-Beispieldatenbank hinzu.
 
@@ -186,8 +186,8 @@ Die Entität "Contact" eine bestimmten Finder-Methode hinzugefügt, mit der **BD
     |----------|---------------|
     |FirstName|System.String|
     |LastName|System.String|
-    |Telefon|System.String|
-    |E-Mail-Adresse|System.String|
+    |Phone|System.String|
+    |EmailAddress|System.String|
     |EmailPromotion|System.Int32|
     |NameStyle|System.Boolean|
     |PasswordHash|System.String|
@@ -276,7 +276,7 @@ Erfahren Sie mehr über das Entwerfen von Modellen für den BDC-Dienst in ShareP
 
 ## <a name="see-also"></a>Siehe auch
 
-[Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md)  
-[Erstellen eines Business Data Connectivity-Modells](../sharepoint/creating-a-business-data-connectivity-model.md)  
-[Übersicht über Entwurfstools für BDC-Modell](../sharepoint/bdc-model-design-tools-overview.md)  
-[Integrieren von Geschäftsdaten in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)
+[Entwerfen ein Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md)
+[erstellen ein Business Data Connectivity-Modells](../sharepoint/creating-a-business-data-connectivity-model.md)
+[BDC-Modell-Designtools Übersicht](../sharepoint/bdc-model-design-tools-overview.md) 
+ [ Integrieren von Geschäftsdaten in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)

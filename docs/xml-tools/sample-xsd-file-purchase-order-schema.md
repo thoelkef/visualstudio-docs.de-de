@@ -1,21 +1,19 @@
 ---
 title: 'XSD-Beispieldatei: Bestellungsschema'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: sample
 ms.assetid: f92b63b5-ec61-43b5-ae1e-63432a7a7e30
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c26272b2e30fa505a196828ecddc9fc8385fe4c
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: c3a799337c098a8ce04bbb5dff0eb3eb046b04f4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810579"
 ---
 # <a name="sample-xsd-file-purchase-order-schema"></a>XSD-Beispieldatei: Bestellungsschema
 

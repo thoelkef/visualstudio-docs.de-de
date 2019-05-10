@@ -1,27 +1,22 @@
 ---
 title: Implementieren und Registrieren eines Portanbieters | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], registering port suppliers
 - port suppliers, registering
 ms.assetid: fb057052-ee16-4272-8e16-a4da5dda0ad4
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3844d6beca76781f741bfbe0c6bff71923075d36
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 377aa88df71fd0d3c42745fe2d3ce3b648191aa4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430259"
 ---
 # <a name="implementing-and-registering-a-port-supplier"></a>Implementieren und Registrieren eines Portanbieters
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,7 +57,7 @@ RemoveMetric(metrictypePortSupplier,
 ```  
   
 > [!NOTE]
->  Die [SDK-Hilfsprogramme zum Debugging](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) `SetMetric` und `RemoveMetric` statische Funktionen in dbgmetric.h definiert und in ad2de.lib kompiliert werden. Die `metrictypePortSupplier`, `metricCLSID`, und `metricName` Hilfsprogramme sind auch in dbgmetric.h definiert.  
+> Die [SDK-Hilfsprogramme zum Debugging](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) `SetMetric` und `RemoveMetric` statische Funktionen in dbgmetric.h definiert und in ad2de.lib kompiliert werden. Die `metrictypePortSupplier`, `metricCLSID`, und `metricName` Hilfsprogramme sind auch in dbgmetric.h definiert.  
   
  Ein portanbieters kann angeben, dessen Name und GUID mithilfe der Methoden [GetPortSupplierName](../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md) und [GetPortSupplierId](../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md)bzw.  
   
@@ -70,4 +65,3 @@ RemoveMetric(metrictypePortSupplier,
  [Implementieren eines Portanbieters](../../extensibility/debugger/implementing-a-port-supplier.md)   
  [SDK-Hilfsprogramme für das Debuggen](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
  [Portanbieter](../../extensibility/debugger/port-suppliers.md)
-

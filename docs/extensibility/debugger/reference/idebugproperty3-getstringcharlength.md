@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty3::GetStringCharLength | Microsoft-Dokumentation
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProperty3::GetStringCharLength
 helpviewer_keywords:
@@ -9,88 +9,91 @@ helpviewer_keywords:
 ms.assetid: 89a8676b-6da9-4358-91c2-039bf33f99e4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c642a5e20b512b9c71284669d68c36f3c55fd235
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 105fd78ab743d9560cc2973e467efd070c1b00d6
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988215"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458828"
 ---
 # <a name="idebugproperty3getstringcharlength"></a>IDebugProperty3::GetStringCharLength
-Gibt die Anzahl der Zeichen in Zeichenfolge für die zugeordnete Eigenschaft zurück.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cpp  
-HRESULT GetStringCharLength(  
-   ULONG *pLen  
-);  
-```  
-  
-```csharp  
-int GetStringCharLength(  
-   out uint pLen  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
-  
-|Parameter|Beschreibung|  
-|---------------|-----------------|  
-|`pLen`|[out] Gibt die Anzahl der Zeichen in der Eigenschaft Zeichenfolge zurück.|  
-  
-## <a name="return-value"></a>Rückgabewert  
- Wenn erfolgreich, wird `S_OK`; gibt andernfalls den Fehlercode zurück.  
-  
-## <a name="remarks"></a>Hinweise  
- Diese Methode wird in der Regel verwendet, als Vorbereitung für die Zuweisung eines Puffers für einen Aufruf der [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) Methode.  
-  
-## <a name="example"></a>Beispiel  
- Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CProperty** -Objekt, das macht die [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) Schnittstelle.  
-  
-```cpp  
-STDMETHODIMP CProperty::GetStringCharLength(ULONG *pLen)  
-{  
-    HRESULT hr = E_INVALIDARG;  
-  
-    EVALFLAGS oldEVALFLAGS = m_EVALFLAGS;  
-  
-    m_EVALFLAGS &= ~EVAL_NOFUNCEVAL;  
-  
-    if (pLen)  
-    {  
-        DEBUG_PROPERTY_INFO dpInfo;  
-        dpInfo.bstrValue = NULL;  
-        ULONG ulen = 0;  
-        hr = GetPropertyInfo(DEBUGPROP_INFO_VALUE,10,DEFAULT_TIMEOUT,NULL,0,&dpInfo);  
-        if (hr == S_OK && dpInfo.bstrValue)  
-        {  
-            if (wcscmp(dpInfo.bstrValue,L"Nothing") == 0)  
-            {  
-                ulen = 0;   //VSWhidbey#64815  
-            }  
-            else  
-            {  
-                ulen = ::SysStringLen(dpInfo.bstrValue);  
-                if( ulen > 2 &&  
-                    dpInfo.bstrValue[0] == L'"' &&  
-                    dpInfo.bstrValue[ulen-1] == L'"')  
-                {                      
-                    ulen = ulen > 2 ? ulen - 2 : ulen;  //remove two double quotes  
-                }  
-            }  
-        }  
-        ::SysFreeString(dpInfo.bstrValue);  
-        *pLen = ulen;  
-    }  
-    m_EVALFLAGS = oldEVALFLAGS;  
-    return hr;  
-}  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md)   
- [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
+Gibt die Anzahl der Zeichen in Zeichenfolge für die zugeordnete Eigenschaft zurück.
+
+## <a name="syntax"></a>Syntax
+
+```cpp
+HRESULT GetStringCharLength(
+    ULONG *pLen
+);
+```
+
+```csharp
+int GetStringCharLength(
+    out uint pLen
+);
+```
+
+## <a name="parameters"></a>Parameter
+
+|Parameter|Beschreibung|
+|---------------|-----------------|
+|`pLen`|[out] Gibt die Anzahl der Zeichen in der Eigenschaft Zeichenfolge zurück.|
+
+## <a name="return-value"></a>Rückgabewert
+Wenn erfolgreich, wird `S_OK`; gibt andernfalls den Fehlercode zurück.
+
+## <a name="remarks"></a>Hinweise
+Diese Methode wird in der Regel verwendet, als Vorbereitung für die Zuweisung eines Puffers für einen Aufruf der [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) Methode.
+
+## <a name="example"></a>Beispiel
+Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CProperty** -Objekt, das macht die [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) Schnittstelle.
+
+```cpp
+STDMETHODIMP CProperty::GetStringCharLength(ULONG *pLen)
+{
+    HRESULT hr = E_INVALIDARG;
+
+    EVALFLAGS oldEVALFLAGS = m_EVALFLAGS;
+
+    m_EVALFLAGS &= ~EVAL_NOFUNCEVAL;
+
+    if (pLen)
+    {
+        DEBUG_PROPERTY_INFO dpInfo;
+        dpInfo.bstrValue = NULL;
+        ULONG ulen = 0;
+        hr = GetPropertyInfo(DEBUGPROP_INFO_VALUE,10,DEFAULT_TIMEOUT,NULL,0,&dpInfo);
+        if (hr == S_OK && dpInfo.bstrValue)
+        {
+            if (wcscmp(dpInfo.bstrValue,L"Nothing") == 0)
+            {
+                ulen = 0; //VSWhidbey#64815
+            }
+            else
+            {
+                ulen = ::SysStringLen(dpInfo.bstrValue);
+                if( ulen > 2 &&
+                    dpInfo.bstrValue[0] == L'"' &&
+                    dpInfo.bstrValue[ulen-1] == L'"')
+                {
+                    ulen = ulen > 2 ? ulen - 2 : ulen; //remove two double quotes
+                }
+            }
+        }
+        ::SysFreeString(dpInfo.bstrValue);
+        *pLen = ulen;
+    }
+    m_EVALFLAGS = oldEVALFLAGS;
+    return hr;
+}
+```
+
+## <a name="see-also"></a>Siehe auch
+- [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md)
+- [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

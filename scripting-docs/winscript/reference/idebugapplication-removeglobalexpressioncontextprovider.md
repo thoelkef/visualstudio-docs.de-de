@@ -2,7 +2,6 @@
 title: IDebugApplication::RemoveGlobalExpressionContextProvider | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5038d85e48b6735c81977d20f295dd4e0868e2e2
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 12ac95ee040d3813aa1fcac6358b8328c780a9d4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54093885"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990788"
 ---
 # <a name="idebugapplicationremoveglobalexpressioncontextprovider"></a>IDebugApplication::RemoveGlobalExpressionContextProvider
 Entfernt einen globalen anwendungsausdrücken Kontextanbieter aus dieser Anwendung an.  

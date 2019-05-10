@@ -1,33 +1,34 @@
 ---
 title: 'Idiasymbol:: Get_backendminor | Microsoft-Dokumentation'
-ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_backEndMinor method
 ms.assetid: 37f38d19-6685-440d-a477-7127c4f8699e
-author: mikejo5000
+caps.latest.revision: 12
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: a47287abb5230b44ebbdf0dcb300f6f386fccee4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8dfeb0dd9fd729f0502215defdbeac0c542c509a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925941"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402201"
 ---
 # <a name="idiasymbolgetbackendminor"></a>IDiaSymbol::get_backEndMinor
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Ruft die Nebenversionsnummer der Back-End des Compilers ab.  
   
 ## <a name="syntax"></a>Syntax  
   
-```C++  
-HRESULT get_backEndMinor (   
+```cpp#  
+HRESULT get_backEndMinor (   
    DWORD* pRetVal  
 );  
 ```  
@@ -40,7 +41,7 @@ HRESULT get_backEndMinor (
  Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
   
 ## <a name="remarks"></a>Hinweise  
  Ein Compiler besteht in der Regel zwei Hauptelemente: die Front-End (den Parser), der verarbeitet, analysiert den Quellcode in ein vorläufiges Formular, und ein Back-End (Codegenerator), konvertiert die vorläufiges Formular in der Assembly. Es ist nicht ungewöhnlich, dass das Front-End, um eine andere Version als das Back-End zu erhalten.  

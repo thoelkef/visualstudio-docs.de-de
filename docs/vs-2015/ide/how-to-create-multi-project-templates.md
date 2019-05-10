@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Erstellen von Vorlagen mit mehreren Projekten | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-project templates
 - project templates, creating multi-project templates
@@ -17,15 +12,15 @@ ms.assetid: 8c7f7065-137e-40ad-868d-37e007270efd
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: eee52a4f77c7d3a07b237f01877c5cba30e53900
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 394c9adf6794ae6e6c547a46e1fe469e0c642ba8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950848"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096451"
 ---
-# <a name="how-to-create-multi-project-templates"></a>Gewusst wie: Erstellen von Vorlagen mit mehreren Projekten
+# <a name="how-to-create-multi-project-templates"></a>Vorgehensweise: Erstellen von Vorlagen mit mehreren Projekten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vorlagen mit mehreren Projekten fungieren als Container für mindestens zwei Projekte. Wenn ein Projekt über das Dialogfeld **Neues Projekt** erstellt wird, das auf einer Vorlage mit mehreren Projekten basiert, wird jedes Projekt in der Vorlage zur Projektmappe hinzugefügt.  
@@ -84,15 +79,15 @@ Vorlagen mit mehreren Projekten fungieren als Container für mindestens zwei Pro
   
 ### <a name="to-create-a-multi-project-template"></a>Erstellen einer Vorlage mit mehreren Projekten  
   
-1.  Erstellen Sie die Projekte, die in der Vorlage mit mehreren Projekten enthalten sein sollen.  
+1. Erstellen Sie die Projekte, die in der Vorlage mit mehreren Projekten enthalten sein sollen.  
   
-2.  Erstellen Sie für jedes Projekt VSTEMPLATE-Dateien. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Projektvorlagen](../ide/how-to-create-project-templates.md).  
+2. Erstellen Sie für jedes Projekt VSTEMPLATE-Dateien. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Projektvorlagen](../ide/how-to-create-project-templates.md).  
   
-3.  Erstellen Sie eine VSTEMPLATE-Stammdatei, die die Metadaten für die Vorlage mit mehreren Projekten enthalten soll. Weitere Informationen finden Sie im ersten Beispiel im folgenden Abschnitt.  
+3. Erstellen Sie eine VSTEMPLATE-Stammdatei, die die Metadaten für die Vorlage mit mehreren Projekten enthalten soll. Weitere Informationen finden Sie im ersten Beispiel im folgenden Abschnitt.  
   
-4.  Wählen Sie die Dateien und Ordner aus, die in der Vorlage enthalten sein sollen, klicken Sie mit der rechten Maustaste auf die Auswahl, klicken Sie auf **Senden an** und dann auf **ZIP-komprimierten Ordner**. Die Dateien und Ordner werden in eine ZIP-Datei komprimiert.  
+4. Wählen Sie die Dateien und Ordner aus, die in der Vorlage enthalten sein sollen, klicken Sie mit der rechten Maustaste auf die Auswahl, klicken Sie auf **Senden an** und dann auf **ZIP-komprimierten Ordner**. Die Dateien und Ordner werden in eine ZIP-Datei komprimiert.  
   
-5.  Platzieren die ZIP-Vorlagendatei im [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projektvorlagenverzeichnis. Standardmäßig ist dies das Verzeichnis \Eigene Dateien\Visual Studio *Version*\Templates\ProjectTemplates\\.  
+5. Platzieren die ZIP-Vorlagendatei im [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projektvorlagenverzeichnis. Standardmäßig ist dies das Verzeichnis \Eigene Dateien\Visual Studio *Version*\Templates\ProjectTemplates\\.  
   
 ## <a name="example"></a>Beispiel  
  Dieses Beispiel zeigt eine einfache VSTEMPLATE-Stammdatei für mehrere Projekte. In diesem Beispiel enthält die Vorlage zwei Projekte: `My Windows Application` und `My Class Library`. Durch das `ProjectName`-Attribut im `ProjectTemplateLink`-Element wird der Name festgelegt, der dem Projekt in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zugewiesen wird. Wenn das `ProjectName`-Attribut nicht vorhanden ist, wird der Name der VSTEMPLATE-Datei als Projektname verwendet.  
@@ -161,6 +156,3 @@ Vorlagen mit mehreren Projekten fungieren als Container für mindestens zwei Pro
  [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
  [SolutionFolder-Element (Visual Studio-Vorlagen)](../extensibility/solutionfolder-element-visual-studio-templates.md)   
  [ProjectTemplateLink-Element (Visual Studio-Vorlagen)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)
-
-
-

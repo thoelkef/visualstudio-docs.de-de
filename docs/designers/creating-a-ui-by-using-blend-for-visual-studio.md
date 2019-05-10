@@ -1,24 +1,23 @@
 ---
-title: Erstellen einer Benutzeroberfläche mit Blend für Visual Studio
+title: Featuretour zu Blend für Visual Studio
 titleSuffix: ''
 ms.date: 07/17/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - Blend.Start.Dev12
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b44f49c08be44ec16cbd90d06cef96cb091e67f6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a27799eb9c22ec633d5c8d8604fe58d6924cd623
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847324"
 ---
-# <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Erstellen einer Benutzeroberfläche mit Blend für Visual Studio
+# <a name="blend-for-visual-studio-overview"></a>Übersicht über Blend für Visual Studio
 
 Blend für Visual Studio unterstützt Sie beim Erstellen von XAML-basierten Windows- und Web-Anwendungen. Es bietet die gleiche einfache XAML-Entwurfsumgebung wie Visual Studio und fügt visuelle Designer für erweiterte Aufgaben hinzu, z. B. Animationen und Verhalten. Einen Vergleich zwischen Blend und Visual Studio finden Sie unter [Entwerfen von XAML in Visual Studio und Blend für Visual Studio](../designers/designing-xaml-in-visual-studio.md).
 
@@ -31,11 +30,18 @@ Wenn Sie mit Blend für Visual Studio nicht vertraut sind, nehmen Sie sich einen
 > [!NOTE]
 > Informationen zu den freigegebenen Entwurfsfeatures wie die Zeichenfläche, das **Dokumentgliederungsfenster** und das **Gerätefenster** finden Sie unter [Erstellen einer Benutzeroberfläche mit dem XAML-Designer in Visual Studio](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
-## <a name="tour-of-the-tools-panel"></a>Überblick über die Werkzeuge
+## <a name="tools-panel"></a>Werkzeugbereich
 
-Mithilfe des Bereichs **Werkzeuge** in Blend für Visual Studio können Sie in Ihrer Anwendung Objekte erstellen und ändern. Die Objekte werden erstellt, indem Sie ein Werkzeug auswählen und die Objekte mit der Maus auf die Zeichenfläche ziehen.
+Mithilfe des Bereichs **Werkzeuge** in Blend für Visual Studio können Sie in Ihrer Anwendung Objekte erstellen und ändern. Der Bereich **Extras** wird auf der linken Seite im XAML-Designer angezeigt, wenn Sie eine *.XAML*-Datei geöffnet haben.
 
-![Werkzeugbereich](../designers/media/blend5toolspanel.png)
+Die Objekte werden erstellt, indem Sie ein Werkzeug auswählen und die Objekte mit der Maus auf die Zeichenfläche ziehen.
+
+![Screenshot: Bereich „Extras“ in Blend für Visual Studio](../designers/media/blend5toolspanel.png)
+
+> [!TIP]
+> Einige der Tools im Bereich **Extras** variieren. Dies wird in der Illustration durch die Buchstaben A bis F angezeigt. Wenn Sie auf diese Variationen zugreifen möchten, klicken Sie mit der rechten Maustaste auf das Tool, oder klicken Sie auf das Tool, und halten Sie die Maustaste dabei gedrückt.
+>
+> ![Screenshot: Formenwerkzeugvariationen in Blend für Visual Studio](media/rectangle-shape-tool-blend.png)
 
 |||||
 |-|-|-|-|
@@ -46,13 +52,11 @@ Mithilfe des Bereichs **Werkzeuge** in Blend für Visual Studio können Sie in I
 |![Objekttools](../designers/media/b1_5.png)|**Objektwerkzeuge** Sie ermöglichen den Zugriff auf den **Objektbereich** und die Anzeige des zuletzt verwendeten Objekts aus der Bibliothek.|![Legende E](../designers/media/b5_label_e.png)|**Textsteuerelemente**|
 |||![Legende F](../designers/media/b5_label_f.png)|**Allgemeine Steuerelemente**|
 
-**Sehen Sie sich ein kurzes Video an:** ![Installierte Features konfigurieren](../designers/media/bldadminconsoleinitialconfigicon.png)[Die Toolbar](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4)
+## <a name="assets-window"></a>Objektfenster
 
-## <a name="tour-of-the-assets-panel"></a>Überblick über den Objektbereich
+Das **Objektfenster** enthält alle verfügbaren Steuerelemente und ähnelt der **Toolbox** in Visual Studio. Zusätzlich zu den Steuerelementen befinden sich alle zur Zeichenfläche hinzufügbaren Objekte im **Objektfenster**, einschließlich Stile, Medien, Verhalten und Effekte. Wenn Sie das **Objektfenster** öffnen möchten, wählen Sie entweder **Ansicht** > **Objektfenster** aus, oder Sie drücken **STRG**+**ALT**+**X**.
 
-Sie finden alle Steuerelemente im **Objektbereich**, das der **Toolbox** in Visual Studio ähnelt. Zusätzlich zu den Steuerelementen befinden sich alle zur Zeichenfläche hinzufügbaren Objekte im **Objektbereich**, einschließlich Stile, Medien, Verhalten und Effekte.
-
-![Objektbereich](../designers/media/blend5_assets_panel.png)
+![Screenshot: Objektfenster in Blend für Visual Studio](../designers/media/blend5_assets_panel.png)
 
 |||
 |-|-|
@@ -62,11 +66,11 @@ Sie finden alle Steuerelemente im **Objektbereich**, das der **Toolbox** in Visu
 |![Stile](../designers/media/b1_4.png)|**Formatvorlagen** Zeigt alle Stile an, die im Ressourcenverzeichnis enthalten sind.|
 |![Beschreibung](../designers/media/b1_5.png)|**Beschreibung** Zeigen Sie eine Beschreibung der ausgewählten Objektkategorie oder Unterkategorie an.|
 
-## <a name="tour-of-the-objects-and-timeline-panel"></a>Überblick über die Bereiche Objekte und Zeitachse
+## <a name="objects-and-timeline-window"></a>Objekte und Zeitachsen (Fenster)
 
-Verwenden Sie diesen Bereich, um die Objekte auf der Zeichenfläche zu organisieren und gegebenenfalls zu animieren.
+Verwenden Sie dieses Fenster, um die Objekte auf der Zeichenfläche zu organisieren und gegebenenfalls zu animieren. Wenn Sie das Fenster **Objekte und Zeitachsen** öffnen möchten, wählen Sie entweder **Ansicht** > **Objekte und Zeitachsen** aus, oder Sie drücken **STRG**+**W**, **U**.
 
-![Objekt- und Zeitachsenbereich im Animationsmodus](../designers/media/b5_object_timeline_animation.png)
+![Screenshot: Fenster „Objekte und Zeitachsen“ im Animationsmodus](../designers/media/b5_object_timeline_animation.png)
 
 |||
 |-|-|
@@ -87,11 +91,11 @@ Verwenden Sie diesen Bereich, um die Objekte auf der Zeichenfläche zu organisie
 |![Zeitachsenzoom](../designers/media/b1_15.png)|**Zeitachsenzoom** Legt die Zoomauflösung der Zeitachse fest. Durch Vergrößern können Sie eine detailliertere Animation bearbeiten, während Sie beim Verkleinern eine Übersicht der Ereignisse über einen längeren Zeitraum hinweg anzeigen können. Wenn Sie beim Vergrößern kein Keyframe zum gewünschten Zeitpunkt festlegen können, stellen Sie sicher, dass die Auflösung zum Andocken hoch genug eingestellt ist.|
 |![Legende 16](../designers/media/b5_label_16.png)|**Zeitachsen-Erfassungsbereich** Zeigt die Zeitachse an und ermöglicht Ihnen das Verschieben der Keyframes durch Ziehen oder Verwenden der Kontextmenüs.|
 
-## <a name="tour-of-the-properties-panel"></a>Überblick über den Bereich Eigenschaften
+## <a name="properties-window"></a>Eigenschaftenfenster
 
-Verwenden Sie diesen Bereich, um die Eigenschaften eines Objekts anzuzeigen und zu ändern. Sie können sie auch direkt auf der Zeichenfläche festlegen. Wenn Sie dies tun, werden die Änderungen im Bereich **Eigenschaften** angezeigt.
+Verwenden Sie dieses Fenster, um die Eigenschaften eines Objekts anzeigen zu lassen und zu ändern. Sie können sie auch direkt auf der Zeichenfläche festlegen. Wenn Sie dies tun, werden die Änderungen an Eigenschaften im Fenster **Eigenschaften** angezeigt. Wenn Sie das Fenster **Eigenschaften** öffnen möchten, wählen Sie entweder **Ansicht** > **Eigenschaftenfenster** aus, oder Sie drücken **STRG**+**W**, **P**.
 
-![Eigenschaftenbereich](../designers/media/blend5_properties_panel.png)
+![Screenshot: Eigenschaftenfenster in Blend für Visual Studio](../designers/media/blend5_properties_panel.png)
 
 **Kategorien** Erweitern und Reduzieren der Kategorien von Eigenschaften. Klicken Sie auf **Erweitern** ![Erweitern](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png) und auf **Reduzieren** ![Reduzieren](../designers/media/b5_collapse_button.png), um Kategoriedetails anzuzeigen oder auszublenden.
 
@@ -114,8 +118,6 @@ Verwenden Sie diesen Bereich, um die Eigenschaften eines Objekts anzuzeigen und 
 |![](../designers/media/b1_15.png)|**Farbtonwert** Zeigt den hexadezimalen Wert der angezeigten Farbe an.|
 |![Legende 16](../designers/media/b5_label_16.png)|**Schieberegler für Farbverlauf** Erscheint nur, wenn ein Farbverlaufspinsel ausgewählt ist.|
 |![Erweiterte Eigenschaften anzeigen](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png)|**Erweiterte Eigenschaften einblenden** Zeigt Kategorien von Eigenschaften an, die weniger häufig verwendet werden.|
-
-**Sehen Sie sich ein kurzes Video an:** ![Installierte Features konfigurieren](../designers/media/bldadminconsoleinitialconfigicon.png)[Eigenschaftenpanel](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7)
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,34 +1,31 @@
 ---
 title: 'Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: d7165d08-ace3-457d-b57d-fb8f80760a6f
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38a0cef2600234be17b80fc53ac40a828ad6e2f7
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 4ececa58d04ea7cfebe6178faae724038e353f06
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672638"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821622"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung
 
 In diesem Lernprogramm erstellen Sie ein Quiz, bei dem der Quizteilnehmer vier zufällige Mathematikaufgaben innerhalb einer angegebenen Zeit lösen muss. Sie lernen Folgendes:
 
--   Generieren von Zufallszahlen mithilfe der <xref:System.Random>-Klasse.
+- Generieren von Zufallszahlen mithilfe der <xref:System.Random>-Klasse.
 
--   Auslösen von Ereignissen, die zu einem bestimmten Zeitpunkt ausgeführt werden, mithilfe eines <xref:System.Windows.Forms.Timer>-Steuerelements.
+- Auslösen von Ereignissen, die zu einem bestimmten Zeitpunkt ausgeführt werden, mithilfe eines <xref:System.Windows.Forms.Timer>-Steuerelements.
 
--   Steuern des Programmablaufs mit `if else`-Anweisungen.
+- Steuern des Programmablaufs mit `if else`-Anweisungen.
 
--   Ausführen grundlegender arithmetischer Operationen im Code.
+- Ausführen grundlegender arithmetischer Operationen im Code.
 
 Nach Abschluss der Übung sieht das Quiz wie die folgende Abbildung aus, enthält jedoch andere Zahlen:
 
@@ -43,7 +40,7 @@ Informationen zum Herunterladen einer vollständigen Version des Quiz finden Sie
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-|Titel|Beschreibung |
+|Titel|Beschreibung|
 |-----------|-----------------|
 |[Schritt 1: Erstellen eines Projekts und Hinzufügen von Bezeichnungen zum Formular](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)|Beginnen Sie, indem Sie das Projekt erstellen, Eigenschaften ändern und `Label`-Steuerelemente hinzufügen.|
 |[Schritt 2: Erstellen einer zufälligen Additionsaufgabe](../ide/step-2-create-a-random-addition-problem.md)|Erstellen Sie eine Additionsaufgabe, und erstellen Sie Zufallszahlen mithilfe der `Random`-Klasse.|

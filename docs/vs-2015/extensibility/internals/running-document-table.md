@@ -1,14 +1,9 @@
 ---
 title: Document-Tabelle mit | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - read locks
 - running document table (RDT), IVsDocumentLockHolder interface
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bd7b8cd44c72ea058f71575bdd1774efafa86731
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7ea32df892efa47c91d8292bdc9065080318a059
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746303"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044605"
 ---
 # <a name="running-document-table"></a>Aktive Dokumenttabelle
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,11 +54,10 @@ Die IDE verwaltet die Liste aller aktuell geöffneten Dokumente in einer interne
   
  Die IDE verwendet auch den RDT an diesem (Verschieben in den Vordergrund) einem geöffneten Dokument, wenn ein Benutzer das Dokument anfordert. Weitere Informationen finden Sie unter [Anzeigen von Dateien mithilfe des Befehls der geöffneten Datei](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md). Bestimmt, ob eine Datei geöffnet, in der RDT ist, führen Sie eine der folgenden.  
   
--   Abfrage für den dokumentmoniker (d. h. der vollständigen Dokuments-Pfad), um herauszufinden, ob das Element geöffnet ist.  
+- Abfrage für den dokumentmoniker (d. h. der vollständigen Dokuments-Pfad), um herauszufinden, ob das Element geöffnet ist.  
   
--   Verwenden Sie die Hierarchie oder das Element-ID, bitten Sie das Projektsystem für den Pfad des vollständigen Dokuments und suchen Sie dann das Element in der RDT.  
+- Verwenden Sie die Hierarchie oder das Element-ID, bitten Sie das Projektsystem für den Pfad des vollständigen Dokuments und suchen Sie dann das Element in der RDT.  
   
 ## <a name="see-also"></a>Siehe auch  
- [RDT_ReadLock-Verwendung](../../extensibility/internals/rdt-readlock-usage.md)   
+ [RDT_ReadLock Usage](../../extensibility/internals/rdt-readlock-usage.md)   
  [Persistenz und die aktive Dokumenttabelle](../../extensibility/internals/persistence-and-the-running-document-table.md)
-

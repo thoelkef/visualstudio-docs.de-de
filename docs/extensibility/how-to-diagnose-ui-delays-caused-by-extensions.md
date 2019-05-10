@@ -4,14 +4,14 @@ ms.date: 01/26/2018
 ms.topic: conceptual
 author: PooyaZv
 ms.author: pozandev
-manager: douge
+manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: 1bd09827899000e4f3d1f65fae27da969bcbc107
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 00266fd8fbc881707652247e08b093ca4b15a88d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887710"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912083"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Vorgehensweise: Analysieren von Benutzeroberflächen-Verzögerungen durch Erweiterungen
 
@@ -21,7 +21,7 @@ Bei der Benutzeroberfläche nicht mehr reagiert, überprüft Visual Studio die A
 
 Die Benachrichtigung informiert den Benutzer, dass die Verzögerung der Benutzeroberfläche (d. h., die eine nicht reagierende Benutzeroberfläche in der Benutzeroberfläche) für das Ergebnis des Codes von einer Erweiterung gegangen sein könnte. Darüber hinaus werden die Benutzer mit Optionen, um die Erweiterung oder zukünftige Benachrichtigungen für diese Erweiterung zu deaktivieren.
 
-In diesem Dokument wird beschrieben, wie Sie diagnostizieren können, was zu Ihrem Erweiterungscode Benachrichtigungen zur UI Verzögerung verursacht. 
+In diesem Dokument wird beschrieben, wie Sie diagnostizieren können, was zu Ihrem Erweiterungscode Benachrichtigungen zur UI Verzögerung verursacht.
 
 > [!NOTE]
 > Verwenden Sie nicht die experimentelle Instanz von Visual Studio, um Verzögerungen zu diagnostizieren. Einige Teile der Aufrufliste-Analyse für Benachrichtigungen zur UI Verzögerung erforderlich sind deaktiviert, wenn mit der experimentellen Instanz ein, was bedeutet, dass Benachrichtigungen zur UI Verzögerung nicht angezeigt werden können.
@@ -43,7 +43,7 @@ Um eine Verzögerung der Benutzeroberfläche zu diagnostizieren, müssen Sie zun
 
 ## <a name="restart-vs-with-activity-logging-on"></a>Starten Sie Visual Studio mit der Aktivität, die Protokollierung auf neu
 
-Visual Studio kann ein "Aktivitätsprotokoll" generieren, die hilfreiche Informationen bereitstellt, wenn ein Problem debuggen. Um die Aktivität, die Protokollierung in Visual Studio zu aktivieren, starten Sie Visual Studio mit der `/log` -Befehlszeilenoption. Nach dem Start von Visual Studio wird das Aktivitätsprotokoll an folgendem Speicherort gespeichert:
+Visual Studio kann ein "Aktivitätsprotokoll" generieren, die hilfreiche Informationen bereitstellt, wenn ein Problem debuggen. So schalten Sie die Aktivität, die Protokollierung in Visual Studio, öffnen Sie Visual Studio mit der `/log` -Befehlszeilenoption. Nach dem Start von Visual Studio wird das Aktivitätsprotokoll an folgendem Speicherort gespeichert:
 
 ```DOS
 %APPDATA%\Microsoft\VisualStudio\<vs_instance_id>\ActivityLog.xml
@@ -102,7 +102,7 @@ Nachdem Sie die richtige Verzögerung der Benutzeroberfläche im Aktivitätsprot
 Wählen Sie die Datei im linken Bereich und öffnen Sie es durch Auswahl **öffnen** aus dem Kontextmenü -Menü.
 
 > [!NOTE]
-> Standardmäßig gibt PerfView ein Zip-Archiv. Beim Öffnen *trace.zip*, wird automatisch das Archiv dekomprimiert und öffnet Sie die Ablaufverfolgung. Sie können diesen Schritt überspringen, wenn Sie deaktivieren die **Zip** Feld bei der Ablaufverfolgungssammlung. Aber wenn Sie beabsichtigen, übertragen und ablaufverfolgungen auf unterschiedlichen Computern verwenden, wird dringend empfohlen Deaktivieren der **Zip** Feld. Ohne diese Option die erforderlichen PDBs für Assemblys mit Ngen werden die Ablaufverfolgung nicht begleitet, und daher Symbole von Assemblys mit Ngen nicht auf dem Zielcomputer aufgelöst werden werden. (Finden Sie unter [in diesem Blogbeitrag](https://blogs.msdn.microsoft.com/devops/2012/12/10/creating-ngen-pdbs-for-profiling-reports/) für Weitere Informationen zu PDB-Dateien für Assemblys mit Ngen.) 
+> Standardmäßig gibt PerfView ein Zip-Archiv. Beim Öffnen *trace.zip*, wird automatisch das Archiv dekomprimiert und öffnet Sie die Ablaufverfolgung. Sie können diesen Schritt überspringen, wenn Sie deaktivieren die **Zip** Feld bei der Ablaufverfolgungssammlung. Aber wenn Sie beabsichtigen, übertragen und ablaufverfolgungen auf unterschiedlichen Computern verwenden, wird dringend empfohlen Deaktivieren der **Zip** Feld. Ohne diese Option die erforderlichen PDBs für Assemblys mit Ngen werden die Ablaufverfolgung nicht begleitet, und daher Symbole von Assemblys mit Ngen nicht auf dem Zielcomputer aufgelöst werden werden. (Finden Sie unter [in diesem Blogbeitrag](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) für Weitere Informationen zu PDB-Dateien für Assemblys mit Ngen.)
 
 Es dauert einige Minuten, bis PerfView zum Verarbeiten und die Ablaufverfolgung zu öffnen. Sobald die Ablaufverfolgung geöffnet ist, wird eine Liste der verschiedenen "Ansichten" darunter angezeigt.
 

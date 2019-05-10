@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 0fc18fab56f5b46ef097cdf699e4f0569dc190c9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62904384"
+---
 Web Deploy 3.6 für Hostingserver umfasst zusätzliche Konfigurationsfeatures für die Erstellung der Datei mit Veröffentlichungseinstellungen über die Benutzeroberfläche.
 
 1. Wenn Sie Web Deploy 3.6 bereits in Windows Server installiert haben, führen Sie über **Einstellungen** > **Programme** > **Uninstall a Program** (Programm deinstallieren) eine Deinstallation durch.
@@ -18,4 +26,4 @@ Web Deploy 3.6 für Hostingserver umfasst zusätzliche Konfigurationsfeatures f�
 
 4. (Optional) Überprüfen Sie, ob Web Deploy korrekt ausgeführt wird, indem Sie **Einstellungen > System and Security (System und Sicherheit) > Verwaltung > Dienste** öffnen und sich vergewissern, dass der **Webbereitstellungs-Agent-Dienst**  ausgeführt wird (in älteren Versionen ist dieser Dienst anders benannt).
 
-    Wenn der Agent-Dienst noch nicht ausgeführt wird, starten Sie ihn. Wenn er gar nicht vorhanden ist, navigieren Sie zu **Einstellungen > Programm > Uninstall a program** (Programm deinstallieren), und suchen Sie **Microsoft Web Deploy<version>**. **Ändern** Sie die Installation, und vergewissern Sie sich, dass Sie für die Web Deploy-Komponenten **Will be installed to the local hard drive** (Wird auf der lokalen Festplatte installiert) auswählen. Führen Sie die Schritte zur Änderung der Installation durch.
+    Wenn der Agent-Dienst noch nicht ausgeführt wird, starten Sie ihn. Wenn er gar nicht vorhanden ist, navigieren Sie zu **Einstellungen > Programm > Uninstall a program** (Programm deinstallieren), und suchen Sie die **Microsoft Web Deploy\<-Version**. **Ändern** Sie die Installation, und vergewissern Sie sich, dass Sie für die Web Deploy-Komponenten **Will be installed to the local hard drive** (Wird auf der lokalen Festplatte installiert) auswählen. Führen Sie die Schritte zur Änderung der Installation durch.

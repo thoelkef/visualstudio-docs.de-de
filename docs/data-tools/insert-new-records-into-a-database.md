@@ -14,16 +14,15 @@ helpviewer_keywords:
 ms.assetid: ea118fff-69b1-4675-b79a-e33374377f04
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9025f854b79e46ce3756916bd133a8a0380c82a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: a3fb276b3efb0d437d66d3e38c9e55b45b43e9c6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824248"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62566341"
 ---
 # <a name="insert-new-records-into-a-database"></a>Einfügen neuer Datensätze in eine Datenbank
 

@@ -1,70 +1,82 @@
 ---
-title: DevEnv-Schalter „ProjectConfig“
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+title: -ProjectConfig („devenv.exe“)
+ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
-- /projectconfig Devenv switch
+- /ProjectConfig Devenv switch
 - configurations, rebuilding
 - deployment projects, creating
 - configurations, cleaning
 - deployment projects, specifying
 - deployment projects, adding
 - build configurations, specifying
-- Devenv, /projectconfig switch
-- projectconfig Devenv switch (/projectconfig)
+- Devenv, /ProjectConfig switch
+- ProjectConfig Devenv switch (/ProjectConfig)
 - projects [Visual Studio], build configuration
 - projects [Visual Studio], cleaning
 ms.assetid: 6b54ef59-ffed-4f62-a645-1279ede97ebf
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ca481d23757cc9022042db42a6d4be477880367
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e6127be41e4b791fa03182b65ab78c9814e16d30
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968902"
 ---
 # <a name="projectconfig-devenvexe"></a>/ProjectConfig (devenv.exe)
 
-Gibt eine Projektbuildkonfiguration an, die beim Erstellen, Bereinigen, Neuerstellen oder Bereitstellen des im **/project**-Argument benannten Projekts angewendet werden soll.
+Gibt eine Projektbuildkonfiguration an, die beim Erstellen, Bereinigen, Neuerstellen oder Bereitstellen des im `/Project`-Argument benannten Projekts angewendet werden soll.
 
 ## <a name="syntax"></a>Syntax
 
-```cmd
-devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project ProjName] [/projectconfig ProjConfigName]
+```shell
+devenv SolutionName {/Build|/Clean|/Deploy|/Rebuild} [SolnConfigName [/Project ProjName [/ProjectConfig ProjConfigName]] [/Out OutputFilename]]
 ```
 
 ## <a name="arguments"></a>Argumente
 
-|||
-|-|-|
-|/build|Erstellt das durch das **/project**-Argument angegebene Projekt.|
-|/clean|Bereinigt alle Zwischendateien und Ausgabeverzeichnisse, die während eines Builds erstellt werden|
-|/rebuild|Bereinigt das durch das **/project**-Argument angegebene Projekt und erstellt es anschließend.|
-|/deploy|Gibt an, dass das Projekt nach dem Erstellen oder Neuerstellen bereitgestellt werden soll|
-|*SolnConfigName*|Erforderlich. Der Name der Projektmappenkonfiguration, die auf die in *SolutionName* benannte Projektmappe angewendet wird. Wenn mehrere Projektmappenplattformen verfügbar sind, müssen Sie auch die Plattform angeben, z.B. **"Debug\|Win32"**.|
-|*SolutionName*|Erforderlich. Der vollständige Pfad und Name der Projektmappendatei|
-|/project *ProjName*|Dies ist optional. Der Pfad und der Name einer Projektdatei innerhalb der Projektmappe. Sie können einen relativen Pfad vom *SolutionName*-Ordner zur Projektdatei, dem Anzeigenamen des Projekts oder dem vollständigen Pfad und Namen der Projektdatei eingeben.|
-|/projectconfig *ProjConfigName*|Dies ist optional. Der Name der Projektbuildkonfiguration für die Anwendung auf das durch das **/project**-Argument angegebene Projekt. Wenn mehrere Projektmappenplattformen verfügbar sind, müssen Sie auch die Plattform angeben, z.B. **"Debug\|Win32"**.|
+- *SolutionName*
 
-## <a name="remarks"></a>Hinweise
+  Erforderlich. Der vollständige Pfad und Name der Projektmappendatei
 
-Der **/projectconfig**-Schalter muss mit dem **/project**-Schalter als Teil eines **/build**-, **/clean**-, **/rebuild**- oder **/deploy**-Befehls verwendet werden.
+- {`/Build`|`/Clean`|`/Deploy`|`/Rebuild`}
+
+  Erforderlich. Dient zum [Erstellen](build-devenv-exe.md), [Bereinigen](clean-devenv-exe.md), [Bereitstellen](deploy-devenv-exe.md) oder [Neuerstellen](rebuild-devenv-exe.md) des Projekts.
+
+- *SolnConfigName*
+
+  Dies ist optional. Der Name der Projektmappenkonfiguration (z.B. `Debug` oder `Release`), die auf die in *SolutionName* benannte Projektmappe angewendet werden soll. Wenn mehrere Projektmappenplattformen verfügbar sind, müssen Sie auch die Plattform angeben (z.B. `Debug|Win32`). Wenn dieses Argument nicht angegeben wird oder eine leere Zeichenfolge (`""`) enthält, verwendet das Tool die aktive Konfiguration der Projektmappe.
+
+- `/Project` *ProjName*
+
+  Dies ist optional. Der Pfad und der Name einer Projektdatei innerhalb der Projektmappe. Sie können den Anzeigenamen des Projekts oder einen relativen Pfad vom *SolutionName*-Ordner zur Projektdatei eingeben. Sie können auch den vollständigen Pfad und Namen der Projektdatei eingeben.
+
+- `/ProjectConfig` *ProjConfigName*
+
+  Dies ist optional. Der Name der Buildkonfiguration des Projekts (z.B. `Debug` oder `Release`), die auf das benannte `/Project` angewendet werden soll. Wenn mehrere Projektmappenplattformen verfügbar sind, müssen Sie auch die Plattform angeben (z.B. `Debug|Win32`).
+
+- `/Out` *OutputFilename*
+
+  Dies ist optional. Der Name der Datei, an die die Ausgabe des Tools gesendet werden soll. Wenn die Datei bereits vorhanden ist, fügt das Tool die Ausgabe an das Ende der Datei an.
+
+## <a name="remarks"></a>Anmerkungen
+
+Der `/ProjectConfig`-Schalter muss zusammen mit dem `/Project`-Schalter als Teil eines `/Build`-, /`Clean`-, `/Deploy`- oder`/Rebuild`-Befehls verwendet werden.
 
 Schließen Sie Zeichenfolgen, die Leerzeichen enthalten, in doppelten Anführungszeichen ein.
 
-Zusammenfassungsinformationen für Builds, inklusive Fehlermeldungen, können im Befehlsfenster oder in einer Protokolldatei, die durch den **/out**-Schalter angegeben wird, angezeigt werden.
+Zusammenfassende Informationen für Builds, inklusive Fehlermeldungen, können im Befehlsfenster oder in einer Protokolldatei, die durch den Schalter `/Out` angegeben wird, angezeigt werden.
 
 ## <a name="example"></a>Beispiel
 
-Mit dem folgenden Befehl wird das Projekt „CSharpConsoleApp“ mithilfe der Projektbuildkonfiguration „Debug“ innerhalb der Projektmappenkonfiguration „Debug“ von „MySolution“ erstellt:
+Mit dem folgenden Befehl wird das Projekt `CSharpWinApp` mithilfe der `Debug`-Projektbuildkonfiguration in `MySolution` erstellt:
 
-```cmd
-devenv "C:\Visual Studio Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
+```shell
+devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 
 ## <a name="see-also"></a>Siehe auch

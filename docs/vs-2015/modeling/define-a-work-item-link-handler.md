@@ -1,25 +1,22 @@
 ---
 title: Definieren ein linkhandlers für Arbeitsaufgaben | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: d52e0bbf-0166-4bb4-a2e3-cefed6188875
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7ce74627d1d2d48ab02e0b124fbc38949f1f76f9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cd50f4c80e5e67f6fb7582dc2bc22963151b42fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433118"
 ---
 # <a name="define-a-work-item-link-handler"></a>Definieren eines Linkhandlers für Arbeitselemente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,39 +26,39 @@ Sie können eine Visual Studio Integration Extension erstellen, die auf das Erst
 ## <a name="set-up-a-uml-extension-solution"></a>Einrichten einer UML-Erweiterungsprojektmappe  
  Auf diese Weise können Sie Handler entwickeln und dann an andere Benutzer verteilen. Sie müssen zwei Visual Studio-Projekte einrichten:  
   
--   Ein Klassenbibliotheksprojekt, das den Code für den Linkhandler enthält.  
+- Ein Klassenbibliotheksprojekt, das den Code für den Linkhandler enthält.  
   
--   Ein VSIX-Projekt, das als Container zum Installieren des Befehls fungiert. Gegebenenfalls können Sie in dasselbe VSIX auch weitere Komponenten einschließen.  
+- Ein VSIX-Projekt, das als Container zum Installieren des Befehls fungiert. Gegebenenfalls können Sie in dasselbe VSIX auch weitere Komponenten einschließen.  
   
 #### <a name="to-set-up-the-visual-studio-solution"></a>So richten Sie die Visual Studio-Projektmappe ein  
   
-1.  Erstellen Sie ein Klassenbibliotheksprojekt. Sie können dieses entweder zu einer vorhandenen VSIX-Projektmappe hinzufügen, oder Sie können eine neue Projektmappe erstellen.  
+1. Erstellen Sie ein Klassenbibliotheksprojekt. Sie können dieses entweder zu einer vorhandenen VSIX-Projektmappe hinzufügen, oder Sie können eine neue Projektmappe erstellen.  
   
-    1.  Wählen Sie im Menü **Datei** die Optionsfolge **Neu**, **Projekt**aus.  
+    1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu**, **Projekt**aus.  
   
-    2.  Klicken Sie unter **installierte Vorlagen**, erweitern Sie **Visual C#-** oder **Visual Basic**, klicken Sie dann in der mittleren Spalte auf **Klassenbibliothek**.  
+    2. Klicken Sie unter **installierte Vorlagen**, erweitern Sie **Visual C#-** oder **Visual Basic**, klicken Sie dann in der mittleren Spalte auf **Klassenbibliothek**.  
   
-    3.  Legen Sie **Projektmappe** fest, um anzugeben, ob eine neue Projektmappe erstellt oder einer bereits geöffneten VSIX-Projektmappe eine Komponente hinzugefügt werden soll.  
+    3. Legen Sie **Projektmappe** fest, um anzugeben, ob eine neue Projektmappe erstellt oder einer bereits geöffneten VSIX-Projektmappe eine Komponente hinzugefügt werden soll.  
   
-    4.  Legen Sie Name und Speicherort für das Projekt fest, und klicken Sie auf OK.  
+    4. Legen Sie Name und Speicherort für das Projekt fest, und klicken Sie auf OK.  
   
-2.  Erstellen Sie ein VSIX-Projekt, sofern die Projektmappe noch kein VSIX-Projekt enthält.  
+2. Erstellen Sie ein VSIX-Projekt, sofern die Projektmappe noch kein VSIX-Projekt enthält.  
   
-    1.  Wählen Sie im **Projektmappen-Explorer**im Kontextmenü der Projektmappe die Option **Hinzufügen**und dann **Neues Projekt**aus.  
+    1. Wählen Sie im **Projektmappen-Explorer**im Kontextmenü der Projektmappe die Option **Hinzufügen**und dann **Neues Projekt**aus.  
   
-    2.  Erweitern Sie unter **Installierte Vorlagen**den Knoten **Visual C#** oder **Visual Basic**, und wählen Sie anschließend **Erweiterungen**aus. Wählen Sie in der mittleren Spalte **VSIX Project**.  
+    2. Erweitern Sie unter **Installierte Vorlagen**den Knoten **Visual C#** oder **Visual Basic**, und wählen Sie anschließend **Erweiterungen**aus. Wählen Sie in der mittleren Spalte **VSIX Project**.  
   
-3.  Legen Sie das VSIX-Projekt als Startprojekt der Projektmappe fest.  
+3. Legen Sie das VSIX-Projekt als Startprojekt der Projektmappe fest.  
   
-    -   Wählen Sie im Projektmappen-Explorer im Kontextmenü des VSIX-Projekts die Option **Als Startprojekt festlegen**aus.  
+    - Wählen Sie im Projektmappen-Explorer im Kontextmenü des VSIX-Projekts die Option **Als Startprojekt festlegen**aus.  
   
-4.  In **"Source.Extension.vsixmanifest"** unter **Content**, fügen Sie das Klassenbibliotheksprojekt als MEF-Komponente hinzu.  
+4. In **"Source.Extension.vsixmanifest"** unter **Content**, fügen Sie das Klassenbibliotheksprojekt als MEF-Komponente hinzu.  
   
-    1.  Legen Sie auf der Registerkarte **MetaData** einen Namen für VSIX fest.  
+    1. Legen Sie auf der Registerkarte **MetaData** einen Namen für VSIX fest.  
   
-    2.  Legen Sie auf der Registerkarte **Ziele installieren** die Visual Studio-Versionen als Ziele fest.  
+    2. Legen Sie auf der Registerkarte **Ziele installieren** die Visual Studio-Versionen als Ziele fest.  
   
-    3.  Wählen Sie auf der Registerkarte **Objekte** die Option **Neu**und wählen Sie im Dialogfeld:  
+    3. Wählen Sie auf der Registerkarte **Objekte** die Option **Neu**und wählen Sie im Dialogfeld:  
   
          **Typ** = **MEF-Komponente**  
   
@@ -155,41 +152,41 @@ namespace WorkItems
  Führen Sie den Linkhandler zu Testzwecken im Debugmodus aus.  
   
 > [!WARNING]
->  Sie müssen bereits mit der TFS-Quellcodeverwaltung verbunden sein, um ein Arbeitselement zu erstellen oder zu verknüpfen. Wenn Sie versuchen, eine Verbindung mit einer anderen TFS-Quellcodeverwaltung herzustellen, schließt Visual Studio automatisch die aktuelle Projektmappe. Stellen Sie sicher, dass Sie bereits mit der richtigen Quellcodeverwaltung verbunden sind, bevor Sie versuchen, ein Arbeitselement zu erstellen oder zu verknüpfen. In höheren Versionen von Visual Studio stehen die Menübefehle nicht zur Verfügung, wenn Sie mit keiner Quellcodeverwaltung verbunden sind.  
+> Sie müssen bereits mit der TFS-Quellcodeverwaltung verbunden sein, um ein Arbeitselement zu erstellen oder zu verknüpfen. Wenn Sie versuchen, eine Verbindung mit einer anderen TFS-Quellcodeverwaltung herzustellen, schließt Visual Studio automatisch die aktuelle Projektmappe. Stellen Sie sicher, dass Sie bereits mit der richtigen Quellcodeverwaltung verbunden sind, bevor Sie versuchen, ein Arbeitselement zu erstellen oder zu verknüpfen. In höheren Versionen von Visual Studio stehen die Menübefehle nicht zur Verfügung, wenn Sie mit keiner Quellcodeverwaltung verbunden sind.  
   
 #### <a name="to-test-the-link-handler"></a>So testen Sie den Linkhandler  
   
-1.  Drücken Sie **F5**oder wählen Sie im Menü **Debug** die Option **Debugging starten**.  
+1. Drücken Sie **F5**oder wählen Sie im Menü **Debug** die Option **Debugging starten**.  
   
      Eine experimentelle Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wird gestartet.  
   
      **Problembehandlung bei**: Wenn ein neuer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nicht gestartet wird, stellen Sie sicher, dass das VSIX-Projekt als Startprojekt der Projektmappe festgelegt ist.  
   
-2.  Öffnen oder erstellen Sie in der experimentellen Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ein Modellierungsprojekt, und öffnen oder erstellen Sie ein Modellierungsdiagramm.  
+2. Öffnen oder erstellen Sie in der experimentellen Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ein Modellierungsprojekt, und öffnen oder erstellen Sie ein Modellierungsdiagramm.  
   
-3.  Erstellen Sie ein Modellelement (z. B. eine UML-Klasse), und legen Sie dessen Namen fest.  
+3. Erstellen Sie ein Modellelement (z. B. eine UML-Klasse), und legen Sie dessen Namen fest.  
   
-4.  Mit der rechten Maustaste in des Elements, und klicken Sie dann auf **Arbeitselement erstellen**.  
+4. Mit der rechten Maustaste in des Elements, und klicken Sie dann auf **Arbeitselement erstellen**.  
   
-    -   Wenn im Untermenü **Team Foundation Server-Verbindung öffnen**, Sie benötigen, schließen Sie das Projekt, eine Verbindung mit dem richtigen TFS herstellen und Vorgang erneut starten.  
+    - Wenn im Untermenü **Team Foundation Server-Verbindung öffnen**, Sie benötigen, schließen Sie das Projekt, eine Verbindung mit dem richtigen TFS herstellen und Vorgang erneut starten.  
   
-    -   Wenn im Untermenü eine Liste von Arbeitselementtypen angezeigt wird, klicken Sie auf einen Arbeitselementtyp.  
+    - Wenn im Untermenü eine Liste von Arbeitselementtypen angezeigt wird, klicken Sie auf einen Arbeitselementtyp.  
   
          Ein neues Arbeitsaufgabenformular wird geöffnet.  
   
-5.  Vergewissern Sie sich, dass der Titel der Arbeitsaufgabe dem des Modellelements entspricht, wenn Sie den Beispielcode aus dem vorherigen Abschnitt verwendet haben. Dadurch wird nachgewiesen, dass `OnWorkItemCreated()` erfolgreich ausgeführt wurde.  
+5. Vergewissern Sie sich, dass der Titel der Arbeitsaufgabe dem des Modellelements entspricht, wenn Sie den Beispielcode aus dem vorherigen Abschnitt verwendet haben. Dadurch wird nachgewiesen, dass `OnWorkItemCreated()` erfolgreich ausgeführt wurde.  
   
-6.  Füllen Sie das Formular aus. Speichern und schließen Sie anschließend die Arbeitsaufgabe.  
+6. Füllen Sie das Formular aus. Speichern und schließen Sie anschließend die Arbeitsaufgabe.  
   
-7.  Überprüfen Sie, ob die Arbeitsaufgabe jetzt rot gefärbt ist. Dies wird von `OnWorkItemLinked()` im Beispielcode veranschaulicht.  
+7. Überprüfen Sie, ob die Arbeitsaufgabe jetzt rot gefärbt ist. Dies wird von `OnWorkItemLinked()` im Beispielcode veranschaulicht.  
   
-     **Problembehandlung bei**: Wenn die Handlermethoden nicht ausgeführt haben, überprüfen Sie Folgendes:  
+     **Problembehandlung bei**: Wenn die Handlermethoden nicht ausgeführt haben, überprüfen Sie Folgendes aus:  
   
-    -   Das Klassenbibliotheksprojekt als MEF-Komponente auf aufgeführt ist die **Content** Liste **source.extensions.manifest** im VSIX-Projekt.  
+    - Das Klassenbibliotheksprojekt als MEF-Komponente auf aufgeführt ist die **Content** Liste **source.extensions.manifest** im VSIX-Projekt.  
   
-    -   An die Handlerklasse ist das richtige `Export`-Attribut angefügt, und von der Klasse wird `ILinkedWorkItemExtension` implementiert.  
+    - An die Handlerklasse ist das richtige `Export`-Attribut angefügt, und von der Klasse wird `ILinkedWorkItemExtension` implementiert.  
   
-    -   Die Parameter aller `Import`-Attribute und `Export`-Attribute sind gültig.  
+    - Die Parameter aller `Import`-Attribute und `Export`-Attribute sind gültig.  
   
 ## <a name="about-the-work-item-handler-code"></a>Informationen zum Arbeitsaufgaben-Handlercode  
   
@@ -224,7 +221,7 @@ public void OnWorkItemLinked
 ```  
   
 > [!NOTE]
->  Damit dieses Beispiel funktioniert, müssen Sie einen Projektverweis auf `System.Drawing.dll` hinzufügen und den `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation`-Namespace importieren. Diese Hinzufügungen sind für andere Implementierungen von `OnWorkItemLinked` jedoch nicht erforderlich.  
+> Damit dieses Beispiel funktioniert, müssen Sie einen Projektverweis auf `System.Drawing.dll` hinzufügen und den `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation`-Namespace importieren. Diese Hinzufügungen sind für andere Implementierungen von `OnWorkItemLinked` jedoch nicht erforderlich.  
   
 ### <a name="listening-for-link-removal"></a>Lauschen auf Linkentfernung  
  `OnWorkItemRemoved` wird einmal unmittelbar vor dem Entfernen des Arbeitsaufgabenlinks aufgerufen. Wenn ein Modellelement gelöscht wird, werden alle Links entfernt.  
@@ -240,9 +237,9 @@ public void OnWorkItemRemoved
   
  Fügen Sie den Verweisen des Projekts die folgenden .NET-Assemblys hinzu, um das folgende Beispiel zu verwenden:  
   
--   Microsoft.TeamFoundation.Client.dll  
+- Microsoft.TeamFoundation.Client.dll  
   
--   Microsoft.TeamFoundation.WorkItemTracking.Client.dll  
+- Microsoft.TeamFoundation.WorkItemTracking.Client.dll  
   
 ```  
   
@@ -304,6 +301,3 @@ element.AddReference(ReferenceConstants.WorkItem, linkString, true);
  [Anfügen von Referenzzeichenfolgen an UML-Modellelemente](../modeling/attach-reference-strings-to-uml-model-elements.md)   
  [Definieren und Installieren einer modellierungserweiterung](../modeling/define-and-install-a-modeling-extension.md)   
  [Programmieren mit der UML-API](../modeling/programming-with-the-uml-api.md)
-
-
-

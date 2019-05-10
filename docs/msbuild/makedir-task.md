@@ -15,48 +15,48 @@ helpviewer_keywords:
 ms.assetid: bc951577-1bfb-4100-b1f1-bc8278c45bf7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d56801821a0c041e5de0785a39146a0e8f5a747b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 89bfc33aaf4b3f80ee6b80a93ad6b71dd3786599
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960929"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62855928"
 ---
 # <a name="makedir-task"></a>MakeDir-Aufgabe
-Erstellt Verzeichnisse und ggf. übergeordnete Verzeichnisse  
-  
-## <a name="parameters"></a>Parameter  
- In der folgenden Tabelle werden die Parameter der `MakeDir` -Aufgabe beschrieben.  
-  
-|Parameter|Beschreibung|  
-|---------------|-----------------|  
-|`Directories`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Der Satz von zu erstellenden Verzeichnissen.|  
-|`DirectoriesCreated`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Die von dieser Aufgabe erstellten Verzeichnisse. Wenn bestimmte Verzeichnisse nicht erstellt werden konnten, enthält dieser Parameter möglicherweise nicht alle Elemente, die an den `Directories`-Parameter übergeben wurden.|  
-  
-## <a name="remarks"></a>Hinweise  
- Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).  
-  
-## <a name="example"></a>Beispiel  
- Im folgenden Codebeispiel wird das von der Eigenschaft `OutputDirectory` angegebene Verzeichnis mit der `MakeDir`-Aufgabe erstellt.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  
-    <PropertyGroup>  
-        <OutputDirectory>\Output\</OutputDirectory>  
-    </PropertyGroup>  
-  
-    <Target Name="CreateDirectories">  
-        <MakeDir  
-            Directories="$(OutputDirectory)"/>  
-    </Target>  
-  
-</Project>  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
- [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
+Erstellt Verzeichnisse und ggf. übergeordnete Verzeichnisse
+
+## <a name="parameters"></a>Parameter
+In der folgenden Tabelle werden die Parameter der `MakeDir` -Aufgabe beschrieben.
+
+|Parameter|Beschreibung|
+|---------------|-----------------|
+|`Directories`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Der Satz von zu erstellenden Verzeichnissen.|
+|`DirectoriesCreated`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Die von dieser Aufgabe erstellten Verzeichnisse. Wenn bestimmte Verzeichnisse nicht erstellt werden konnten, enthält dieser Parameter möglicherweise nicht alle Elemente, die an den `Directories`-Parameter übergeben wurden.|
+
+## <a name="remarks"></a>Anmerkungen
+Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
+
+## <a name="example"></a>Beispiel
+Im folgenden Codebeispiel wird das von der Eigenschaft `OutputDirectory` angegebene Verzeichnis mit der `MakeDir`-Aufgabe erstellt.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <PropertyGroup>
+        <OutputDirectory>\Output\</OutputDirectory>
+    </PropertyGroup>
+
+    <Target Name="CreateDirectories">
+        <MakeDir
+            Directories="$(OutputDirectory)"/>
+    </Target>
+
+</Project>
+```
+
+## <a name="see-also"></a>Siehe auch
+- [Aufgaben](../msbuild/msbuild-tasks.md)
+- [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

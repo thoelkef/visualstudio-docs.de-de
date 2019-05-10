@@ -1,14 +1,9 @@
 ---
 title: Zirkelverweis in Wertargument nicht unterstützt | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5034
 dev_langs:
@@ -20,19 +15,19 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d25489065ceece41108a75c9d3763a95e4adb924
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a31b56b4b2d568b3bc3fd59f876f5052b9f6faff
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949421"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946367"
 ---
 # <a name="circular-reference-in-value-argument-not-supported"></a>Zirkelverweis in Wertargument nicht unterstützt
 Wurde versucht, aufzurufen `JSON.stringify` mit einem Wert, der ungültig ist. Die `value` Argument, ein Array oder Objekt enthält einen Zirkelverweis.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Entfernen Sie den Zirkelverweis aus dem Argument an.  
+- Entfernen Sie den Zirkelverweis aus dem Argument an.  
   
 ## <a name="example"></a>Beispiel  
  Der Code in diesem Beispiel verursacht einen Laufzeitfehler, da `john` enthält einen Verweis auf `mary` und `mary` enthält einen Verweis auf `john`. um den zirkulären Verweis zu entfernen, entfernen Sie entweder oder verworfen Eigenschaft `brother` aus der `mary` Objekt oder die `sister` Eigenschaft aus der `john` Objekt.  

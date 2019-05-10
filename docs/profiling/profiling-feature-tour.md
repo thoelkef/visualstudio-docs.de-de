@@ -2,23 +2,22 @@
 title: Messen von Leistung mit Profilerstellungstools
 description: Einführung in die verschiedenen für Visual Studio verfügbaren Diagnosetools
 ms.custom: mvc
-ms.date: 05/18/2017
-ms.technology: vs-ide-debug
+ms.date: 05/18/2018
 ms.topic: quickstart
 helpviewer_keywords:
 - diagnostic tools
 ms.assetid: d2ee0301-ea78-43d8-851a-71b7b2043d73
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f884b92d03027782eed27f4583e06b1141341db
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: af87464f8fb49ca68ecf8c442a099c71b9df5b69
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356794"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62995803"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Schnellstart: Einführung in Profilerstellungstools
 
@@ -120,6 +119,7 @@ Wenn Sie einen Zeitraum im Diagramm und **Details anzeigen** auswählen, wird ei
 
 Die Diagramme können auch bestimmen, ob es CPU-gebundene oder GPU-gebundene Leistungsengpässe gibt.
 
+::: moniker range="vs-2017"
 ## <a name="analyze-performance-javascript-uwp"></a>Analysieren der Leistung (JavaScript UWP)
 
 Für UWP-Apps können Sie das JavaScript-Speichertool und das Tool für die Reaktionsfähigkeit der HTML-Benutzeroberfläche verwenden.
@@ -131,6 +131,7 @@ Das JavaScript-Speichertool ähnelt dem für andere App-Typen verfügbaren Speic
 Verwenden Sie das Tool für die Reaktionsfähigkeit der HTML-Benutzeroberfläche, um die UI-Reaktionsfähigkeit, die langsame Ladezeit und die langsamen visuellen Updates in UWP-Apps zu diagnostizieren. Der Verbrauch ähnelt dem Anwendungszeitachsen-Tool für andere App-Typen. Weitere Informationen finden Sie unter [HTML-UI-Reaktionsfähigkeit](../profiling/html-ui-responsiveness.md).
 
 ![Profilerstellungstool „HTML-UI-Reaktionsfähigkeit“](../profiling/media/diaghtmlresp.png "DiagHTMLResp")
+::: moniker-end
 
 ## <a name="analyze-network-usage-uwp"></a>Analysieren der Netzwerkverwendung (UWP)
 
@@ -150,22 +151,22 @@ Wenn Sie Funktionen wie z.B. Instrumentation benötigen, die derzeit nicht in de
 
 ![Tool „Leistungs-Explorer“](../profiling/media/prof-tour-performance-explorer.png "Leistungs-Explorer")
 
-## <a name="which-tool-should-i-use"></a>Welches Tool soll ich verwenden?  
+## <a name="which-tool-should-i-use"></a>Welches Tool soll ich verwenden?
 
 Hier sehen Sie eine Tabelle, in der die verschiedenen Tools aufgelistet sind, die Visual Studio anbietet sowie die verschiedenen Projekttypen, die Sie mit diesen verwenden können:
-  
-|Leistungstool|Windows-Desktop|UWP|ASP.NET/ASP.NET Core| 
-|----------------------|---------------------|-------------|-------------|  
+
+|Leistungstool|Windows-Desktop|UWP|ASP.NET/ASP.NET Core|
+|----------------------|---------------------|-------------|-------------|
 |[CPU-Auslastung](../profiling/cpu-usage.md)|ja|ja|ja|
-|[Speicherauslastung](../profiling/memory-usage.md)|ja|ja|ja| 
-|[GPU-Nutzung](../debugger/gpu-usage.md)|ja|ja|Nein| 
+|[Speicherauslastung](../profiling/memory-usage.md)|ja|ja|ja|
+|[GPU-Nutzung](../debugger/gpu-usage.md)|ja|ja|Nein|
 |[Anwendungszeitachse](../profiling/application-timeline.md)|ja|ja|Nein|
 |[PerfTips](../profiling/perftips.md)|ja|ja für XAML, nicht für HTML|ja|
 |[Leistungs-Explorer](../profiling/performance-explorer.md)|ja|Nein|ja|
 |[IntelliTrace](../debugger/intellitrace.md)|Nur .NET mit Visual Studio Enterprise|Nur .NET mit Visual Studio Enterprise|Nur .NET mit Visual Studio Enterprise|
 |[Netzwerkverwendung](../profiling/network-usage.md)|Nein|ja|Nein|
-|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|Nein|ja für HTML, nicht für XAML|Nein| 
+|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|Nein|ja für HTML, nicht für XAML|Nein|
 |[JavaScript-Speicher](../profiling/javascript-memory.md)|Nein|ja für HTML, nicht für XAML|Nein|
 
-## <a name="see-also"></a>Siehe auch  
- [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md)
+## <a name="see-also"></a>Siehe auch
+- [Debuggen in Visual Studio](/visualstudio/debugger/debugger-feature-tour)

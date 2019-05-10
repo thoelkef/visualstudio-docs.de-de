@@ -1,14 +1,9 @@
 ---
 title: 'CA2116: APTCA-Methoden sollten nur APTCA-Methoden aufrufen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - AptcaMethodsShouldOnlyCallAptcaMethods
 - CA2116
@@ -20,14 +15,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 766de62f4781dc7ce164155a2090ffabac913a22
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 916b30cf4cff357ba468faae524d6b0ca7806959
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819549"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58955790"
 ---
-# <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: APTCA-Methoden sollten nur APTCA-Methoden aufrufen
+# <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: APTCA-Methoden sollten nur APTCA-Methoden aufrufen.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -54,7 +49,7 @@ ms.locfileid: "49819549"
   Ein teilweise vertrauenswürdiger Aufrufer `X` Methode aufrufen `M1`, und bewirkt, `M1` aufzurufende `M2`. Da `M2` verfügt nicht über das APTCA-Attribut angegeben haben, wird ihr unmittelbarer Aufrufer (`M1`) erfüllen müssen, einen Linkaufruf voll vertrauenswürdig sind. `M1` ist voll vertrauenswürdig und erfüllt daher diese Überprüfung. Das Sicherheitsrisiko liegt daran, dass `X` nicht beteiligt, die schützt Verknüpfungsaufrufs `M2` von nicht vertrauenswürdigen Aufrufern. Methoden mit dem APTCA-Attribut müssen daher keine Methoden aufrufen, die nicht mit das Attribut verfügen.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Wenn das APTCA-Attribut erforderlich ist, verwenden Sie eine Anforderung, um die Methode zu schützen, die voll vertrauenswürdige Assembly aufruft. Die genauen Berechtigungen, die Sie bei Bedarf hängt von die Funktionalität, die durch die Methode verfügbar gemacht. Wenn es möglich ist, schützen Sie die Methode mit einer Anforderung für volle Vertrauenswürdigkeit, um sicherzustellen, dass die zugrunde liegende Funktionalität nicht für teilweise vertrauenswürdige Aufrufer verfügbar gemacht wird. Wenn dies nicht möglich ist, wählen Sie einen Satz von Berechtigungen, der effektiv die verfügbar gemachte Funktionalität schützt. Weitere Informationen zu Anforderungen, finden Sie unter [Anforderungen](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48).
+ Wenn das APTCA-Attribut erforderlich ist, verwenden Sie eine Anforderung, um die Methode zu schützen, die voll vertrauenswürdige Assembly aufruft. Die genauen Berechtigungen, die Sie bei Bedarf hängt von die Funktionalität, die durch die Methode verfügbar gemacht. Wenn es möglich ist, schützen Sie die Methode mit einer Anforderung für volle Vertrauenswürdigkeit, um sicherzustellen, dass die zugrunde liegende Funktionalität nicht für teilweise vertrauenswürdige Aufrufer verfügbar gemacht wird. Wenn dies nicht möglich ist, wählen Sie einen Satz von Berechtigungen, der effektiv die verfügbar gemachte Funktionalität schützt. Weitere Informationen zu Anforderungen, finden Sie unter [Anforderungen](http://msdn.microsoft.com/e5283e28-2366-4519-b27d-ef5c1ddc1f48).
 
 ## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?
  Um problemlos eine Warnung dieser Regel zu unterdrücken, müssen Sie sicherstellen, dass die Funktionalität verfügbar gemacht werden, indem Sie die Methode nicht direkt oder indirekt zulässt Aufrufer Zugriff auf vertrauliche Informationen, Vorgänge oder Ressourcen, die auf schädigende Weise verwendet werden können.
@@ -79,10 +74,7 @@ ms.locfileid: "49819549"
  **Fordern Sie für vollständige Vertrauenswürdigkeit: Fehler bei der Anforderung. ** 
  **ClassRequiringFullTrust.DoWork wurde aufgerufen.**
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA2117: APTCA-Typen sollten nur APTCA-Basistypen erweitern](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)
+ [CA2117: APTCA-Typen sollten nur APTCA-Basistypen erweitern.](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)
 
 ## <a name="see-also"></a>Siehe auch
- [Sichern Sie die Richtlinien für das Codieren](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [.NET Framework-Assemblys aufgerufen durch teilweise vertrauenswürdigen Code](http://msdn.microsoft.com/en-us/a417fcd4-d3ca-4884-a308-3a1a080eac8d) [Verwenden von Bibliotheken aus teilweise vertrauenswürdigem Code](http://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74) [Anforderungen](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48) [Linkaufrufe](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [Daten und Modellierung](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
-
-
-
+ [Sichern Sie die Richtlinien für das Codieren](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [.NET Framework-Assemblys aufgerufen durch teilweise vertrauenswürdigen Code](http://msdn.microsoft.com/a417fcd4-d3ca-4884-a308-3a1a080eac8d) [Verwenden von Bibliotheken aus teilweise vertrauenswürdigem Code](http://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74) [Anforderungen](http://msdn.microsoft.com/e5283e28-2366-4519-b27d-ef5c1ddc1f48) [Linkaufrufe](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [Daten und Modellierung](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

@@ -1,26 +1,21 @@
 ---
 title: IDebugComPlusSymbolProvider | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider interface
 ms.assetid: 5b98e908-fd15-49a6-9010-933c9b948085
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 036d545b6bc8f2b59b76fdbc777680d0307f6972
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b70701aa9c4b339749554601e2a565c17697c6a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721978"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58958974"
 ---
 # <a name="idebugcomplussymbolprovider"></a>IDebugComPlusSymbolProvider
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ IDebugComPlusSymbolProvider : IDebugSymbolProvider
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Obwohl es keine Trennung zwischen Schnittstellen, die für eine ausdrucksauswertung (EE) nützlich sind, und diejenigen, die von einer Debug-Engine (DE) verwendet werden sollen ist, die folgenden Methoden wahrscheinlich nur DE Entwickler interessieren: AreSymbolsLoaded, GetAddressesInModuleFromPosition GetEntryPoint, GetFunctionLineOffset, GetLocalVariableLayout, IsFunctionStale, LoadSymbols, LoadSymbolsFromStream, ReplaceSymbols, UnloadSymbols und UpdateSymbols.  
+ Obwohl es keine Trennung zwischen Schnittstellen, die für eine ausdrucksauswertung (EE) nützlich sind, und diejenigen, die von einer Debug-Engine (DE) verwendet werden sollen ist, werden die folgenden Methoden wahrscheinlich DE Entwickler nur Bedeutung sein: AreSymbolsLoaded, GetAddressesInModuleFromPosition, GetEntryPoint, GetFunctionLineOffset, GetLocalVariableLayout, IsFunctionStale, LoadSymbols, LoadSymbolsFromStream, ReplaceSymbols, UnloadSymbols und UpdateSymbols.  
   
 ## <a name="methods"></a>Methoden  
  Zusätzlich zu den Methoden für die [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) Schnittstelle, die diese Schnittstelle implementiert die folgenden Methoden:  
@@ -70,4 +65,3 @@ IDebugComPlusSymbolProvider : IDebugSymbolProvider
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
-

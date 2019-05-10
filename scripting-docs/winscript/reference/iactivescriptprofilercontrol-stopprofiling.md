@@ -2,7 +2,6 @@
 title: IActiveScriptProfilerControl::StopProfiling | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -16,12 +15,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b65c536c303a9bc0da7d0e29992315c05a61de52
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 750693db9aa809e6b3521f0312cebcf45d8d720d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54092481"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993007"
 ---
 # <a name="iactivescriptprofilercontrolstopprofiling"></a>IActiveScriptProfilerControl::StopProfiling
 Beendet die profilerstellung auf die Skript-Engine. Diese Methode ruft [IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md) für die Profilerobjekt und gibt Sie frei.  

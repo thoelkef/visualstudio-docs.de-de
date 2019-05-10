@@ -2,20 +2,19 @@
 title: Beheben von Programmfehlern und Verbessern von Code
 description: In diesem Artikel werden einige grundlegende Methoden beschrieben, wie Sie mit Visual Studio Probleme im Code finden und beheben können, einschließlich Buildfehler, Codeanalyse, des Debuggens von Tools und Komponententests.
 ms.date: 05/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e61c5917ee3d77161c31213d4851472e714d1679
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a43be698fd908737c96f9de3cf346b48e84f27fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62798678"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Erstellen von funktionierendem Code in Visual Studio
 
@@ -45,7 +44,7 @@ Sofern Sie keine Änderungen am Code vorgenommen haben, den Sie zuvor erfolgreic
 
 ![Visual Studio, Ausgabe und Fehlerliste](../ide/media/vs_ide_gs_debug_bad_build_error_list.png)
 
-Klicken Sie im Fenster **Fehlerliste** auf die Zeile mit dem Fehler, um direkt in die Zeile zu springen, in der der Fehler aufgetreten ist. (Blenden Sie alternativ die Zeilennummern ein, indem Sie oben rechts auf die **Schnellstartleiste** klicken, „Zeilennummern“ eingeben und die **EINGABETASTE** drücken. Dies ist die schnellste Möglichkeit zum Aufrufen des Dialogfeldes **Optionen**, in dem Sie Zeilennummern aktivieren können. Machen Sie sich mit der Verwendung der **Schnellstartleiste** vertraut, denn sie erspart Ihnen viele Klicks auf der Benutzeroberfläche!)
+Klicken Sie im Fenster **Fehlerliste** auf die Zeile mit dem Fehler, um direkt in die Zeile zu springen, in der der Fehler aufgetreten ist. (Aktivieren Sie alternativ Zeilennummern, indem Sie **STRG**+**Q** drücken, **Zeilennummern** eingeben und dann aus den Ergebnissen die Option **Zeilennummern aktivieren oder deaktivieren** auswählen. Dies ist die schnellste Möglichkeit zum Aufrufen des Dialogfeldes **Optionen**, in dem Sie Zeilennummern aktivieren können.)
 
 ![Visual Studio, Editor mit Zeilennummern](../ide/media/vs_ide_gs_debug_line_numbers.png)
 
@@ -75,7 +74,7 @@ Codeanalysetools suchen nach häufig auftretenden Codeproblemen, die Laufzeitfeh
 
 ### <a name="c-and-visual-basic-code-analysis"></a>Codeanalyse in C# und Visual Basic
 
-Visual Studio 2017 enthält einen integrierten Satz von [.NET Compiler Platform-Analysetools](../code-quality/roslyn-analyzers-overview.md), die C#- und Visual Basic-Code während der Eingabe untersuchen. Sie können aber auch zusätzliche Analysetools als Visual Studio-Erweiterung oder als NuGet-Paket installieren. Wenn Verletzungen von Schwellenwertregeln gefunden werden, wird der fehlerhafte Code im Code-Editor mit einer gewellten Linie unterstrichen. Außerdem wird er in der **Fehlerliste** gemeldet.
+Visual Studio enthält mehrere integrierte [.NET Compiler Platform-Analysetools](../code-quality/roslyn-analyzers-overview.md), die C#- und Visual Basic-Code während der Eingabe untersuchen. Sie können aber auch zusätzliche Analysetools als Visual Studio-Erweiterung oder als NuGet-Paket installieren. Wenn Verletzungen von Schwellenwertregeln gefunden werden, wird der fehlerhafte Code im Code-Editor mit einer gewellten Linie unterstrichen. Außerdem wird er in der **Fehlerliste** gemeldet.
 
 ### <a name="c-code-analysis"></a>C++-Codeanalyse
 
@@ -89,9 +88,9 @@ Alle neuen oder aktualisierten Warnungen werden auf der Registerkarte **Fehlerli
 
 ![Visual Studio, Fehlerliste mit Warnungen](../ide/media/cpp-code-analysis-warning.png)
 
-## <a name="use-light-bulbs-to-fix-or-refactor-code"></a>Verwenden von Glühbirnen zum Beheben oder Umgestalten von Code
+## <a name="use-quick-actions-to-fix-or-refactor-code"></a>Verwenden von Schnellaktionen zum Beheben oder Umgestalten von Code
 
-Über [Schnelle Aktionen](../ide/quick-actions.md) (über das Glühbirnen- oder Schraubendrehersymbol verfügbar) können Sie eine Inline-Umgestaltung von Code vornehmen. Damit können allgemeine Warnungen in C#, C++ und Visual Basic schnell und effektiv behoben werden. Um darauf zuzugreifen, klicken Sie mit der rechten Maustaste auf die gewellte Linie, und klicken Sie auf **Schnelle Aktionen und Refactorings**. Wenn der Cursor sich in der Zeile mit der farbigen Wellenlinie befindet, können Sie auch **STRG**+**.** drücken oder auf das Glühbirnen- oder Schraubendrehersymbol auf dem rechten Rand klicken. Daraufhin wird eine Liste mit möglichen Korrekturen oder Umgestaltungen angezeigt, die Sie in dieser Codezeile vornehmen können.
+Über [Schnelle Aktionen](../ide/quick-actions.md) (über das Glühbirnen- oder Schraubendrehersymbol verfügbar) können Sie eine Inline-Umgestaltung von Code vornehmen. Damit können allgemeine Warnungen in C#, C++ und Visual Basic schnell und effektiv behoben werden. Um darauf zuzugreifen, klicken Sie mit der rechten Maustaste auf die gewellte Linie, und klicken Sie auf **Schnelle Aktionen und Refactorings**. Wenn der Cursor sich in der Zeile mit der farbigen Wellenlinie befindet, können Sie auch **STRG**+**.** drücken oder im Randbereich auf das Glühbirnen-, Fehlerglühbirnen- oder Schraubendrehersymbol klicken. Daraufhin wird eine Liste mit möglichen Korrekturen oder Umgestaltungen angezeigt, die Sie in dieser Codezeile vornehmen können.
 
 ![Visual Studio, Glühbirne mit Vorschau](../ide/media/quick-actions-options.png)
 
@@ -157,6 +156,6 @@ Weitere Informationen zu Komponententests in Visual Studio und wie diese Ihnen h
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Debugger – Featuretour](../debugger/debugger-feature-tour.md)
-- [Weitere Informationen zur Verwendung des Debuggers](../debugger/debugger-feature-tour.md)
+- [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md)
+- [Weitere Informationen zur Verwendung des Debuggers](../debugger/index.md)
 - [Generieren und Korrigieren von Code](../ide/code-generation-in-visual-studio.md)

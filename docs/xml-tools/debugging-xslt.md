@@ -1,35 +1,97 @@
 ---
-title: Debugging von XSLT
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+title: Möglichkeiten zum Debuggen von XSLT-code
+ms.date: 03/05/2019
 ms.topic: conceptual
-ms.assetid: 344940bd-c41e-4ed9-8458-3e3aa8e6bb37
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
+dev_langs:
+- CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d62f95b934e2dc292aca1716223be2458e778c1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 23e108e476bfa9cb3ce699a16c77eb3520ed4785
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923386"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838479"
 ---
 # <a name="debugging-xslt"></a>Debugging von XSLT
 
-Mithilfe des Visual Studio-Debuggers können Sie XSLT debuggen. Der Debugger unterstützt das Festlegen von Haltepunkten, das Anzeigen des XSLT-Ausführungszustands und weitere Vorgänge.
+Sie können XSLT-Code in Visual Studio debuggen. Die XSLT-Datei unterstützt das Festlegen von Haltepunkten, Anzeigen des XSLT-debugger, und so weiter. Der XSLT-Debugger kann zum Debuggen von XSLT-Stylesheets oder XSLT-Anwendungen verwendet werden.
+
+Sie können eine Codezeile zu einem Zeitpunkt ausführen, durch Ausführen in Einzelschritten, überspringen oder beim Ausführen von Code. Die Befehle für die Code-stepping Funktionen von der XSLT-Debugger sind, dass die identisch mit denen für andere Visual Studio Debugger.
+
+Wenn Sie das Debuggen starten, öffnet der XSLT-Debugger Fenster, in denen das Eingabedokument und die XSLT-Ausgabe angezeigt werden.
 
 > [!NOTE]
-> Der XSLT-Debugger ist nur verfügbar, in der Enterprise Edition von Visual Studio 2017.
+> Der XSLT-Debugger ist nur verfügbar, in der Enterprise Edition von Visual Studio.
 
-## <a name="xslt-profiler"></a>XSLT-profiler
+## <a name="debug-from-the-xml-editor"></a>Debuggen Sie im XML-Editor
 
-Die [XSLT-Profiler](../xml-tools/xslt-profiler.md) ist ein Tool, mit dem Entwickler zu messen, auswerten und leistungsbezogener Probleme im XSLT-Code durch das Erstellen von ausführlichen XSLT-Leistungsberichten.
+Sie können den Debugger starten, wenn man entweder ein Stylesheet oder eine XML-Eingabedatei im Editor zu öffnen. Dadurch können Sie das Debuggen, wie Sie das Stylesheet entwerfen.
 
-## <a name="related-sections"></a>Verwandte Abschnitte
+1. Öffnen Sie das Stylesheet oder eine XML-Datei in Visual Studio.
 
-- [Bearbeiten von XSLT-Stylesheets](../xml-tools/editing-xslt-style-sheets.md) erläutert die Verwendung von XML-Editor zum Bearbeiten von Stylesheets.
-- [Überlegungen zur Sicherheit bei der Arbeit mit XML-Daten](../xml-tools/security-considerations-when-working-with-xml-data.md) erläutert Sicherheitsprobleme, die Sie bei der Arbeit der XML-Editor oder dem XSLT-Debugger kennen müssen.
-- [Debuggen in Visual Studio](../debugger/debugger-feature-tour.md) führt Visual Studio-Debugger.
-- [Referenz zu XSLT](https://msdn.microsoft.com/678bcd68-cbbb-4be5-9dd2-40f94488a1cf) enthält Referenzmaterial für XSLT-Elemente und Funktionen.
+1. Wählen Sie **XSLT Debuggen starten** aus der **XML** Menü, oder drücken Sie **Alt**+**F5**.
+
+## <a name="debug-from-an-app-that-uses-xslt"></a>Debuggen Sie über eine app, die mithilfe von XSLT
+
+Sie können beim Debuggen einer Anwendung XSLT schrittweise. Beim Drücken **F11** auf eine <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=fullName> Aufruf des Debuggers schrittweise den XSLT-Code.
+
+> [!NOTE]
+> Die schrittweise Ausführung von XSLT aus der <xref:System.Xml.Xsl.XslTransform>-Klasse wird nicht unterstützt. Die <xref:System.Xml.Xsl.XslCompiledTransform>-Klasse ist der einzige XSLT-Prozessor, der beim Debuggen die schrittweise Ausführung von XSLT unterstützt.
+
+### <a name="to-start-debugging-an-xslt-application"></a>So starten Sie das Debuggen einer XSLT-Anwendung
+
+1. Legen Sie beim Instanziieren des <xref:System.Xml.Xsl.XslCompiledTransform>-Objekts im Code den `enableDebug`-Parameter auf `true` fest. Damit wird der XSLT-Prozessor angewiesen, dass beim Kompilieren des Codes Debuginformationen erstellt werden sollen.
+
+1. Drücken Sie **F11** um in den XSLT-Code zu springen.
+
+   XSLT-Stylesheet wird in einem neuen Dokumentfenster geladen, und der XSLT-Debugger wird gestartet.
+
+   Alternativ können Sie dem Stylesheet einen Haltepunkt hinzufügen und die Anwendung ausführen.
+
+### <a name="example"></a>Beispiel
+
+Im folgenden Beispiel wird ein C#-XSLT-Programm dargestellt. Darin wird veranschaulicht, wie das XSLT-Debuggen aktiviert wird.
+
+```csharp
+using System;
+using System.IO;
+using System.Xml;
+using System.Xml.Xsl;
+
+namespace ConsoleApplication
+{
+  class Program
+  {
+    private const string sourceFile = @"c:\data\xsl_files\books.xml";
+    private const string stylesheet = @"c:\data\xsl_files\below-average.xsl";
+    private const string outputFile = @"c:\data\xsl_files\output.xml";
+
+    static void Main(string[] args)
+    {
+      // Enable XSLT debugging.
+      XslCompiledTransform xslt = new XslCompiledTransform(true);
+
+      // Compile the style sheet.
+      xslt.Load(stylesheet)
+
+      // Execute the XSLT transform.
+      FileStream outputStream = new FileStream(outputFile, FileMode.Append);
+      xslt.Transform(sourceFile, null, outputStream);
+    }
+  }
+}
+```
+
+## <a name="xslt-profiler"></a>XSLT-Profiler
+
+Die [XSLT-Profiler](../xml-tools/xslt-profiler.md) ist ein Tool, mit dem Entwickler, die messen, auswerten und leistungsbezogener Probleme im XSLT-Code durch das Erstellen von ausführlichen XSLT-Leistungsberichten. Weitere Informationen finden Sie unter [XSLT-Profiler](../xml-tools/xslt-profiler.md).
+
+## <a name="see-also"></a>Siehe auch
+
+- [Exemplarische Vorgehensweise: Debuggen eines XSLT-Stylesheets](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
+- [Erster Einblick in die Visual Studio-debugger](../debugger/debugger-feature-tour.md)
+- [Debuggrundlagen: Haltepunkte](../debugger/using-breakpoints.md)

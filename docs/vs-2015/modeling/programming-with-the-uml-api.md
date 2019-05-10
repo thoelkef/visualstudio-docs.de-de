@@ -1,12 +1,9 @@
 ---
 title: Programmieren mit der UML-API | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML model, API
 - UML model, extending
@@ -14,13 +11,13 @@ ms.assetid: c5937139-49d0-4439-8a9f-89f5e0474618
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d5670b0c0806d59119e1a1af87bae5642255c5a9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e85fc0add84f6f6097355d1fc7a58cc954c8e538
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793177"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111752"
 ---
 # <a name="programming-with-the-uml-api"></a>Programmieren mit der UML-API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +28,7 @@ Die UML-API von Visual Studio können Sie das Schreiben von Code zum Erstellen, 
   
 |Thema|Beschriebene Beispieltypen und -methoden|Beschriebene Funktionen|  
 |-----------|-----------------------------------------|------------------------|  
-|[Navigieren in Beziehungen mit der UML-API](../modeling/navigate-relationships-with-the-uml-api.md)|UML-Elemente und ihre Eigenschaften und Zuordnungen. Zum Beispiel "IElement" und die zugehörigen Nachfolgerelemente wie IClass, IActivity, IUseCase, IComponent, IInteraction, IModel, IPackage.|In Visual Studio entsprechen UML-Modelle der UML-Spezifikationsversion 2.1.2, die zur abgerufen werden kann die [UML-Ressourcenseite](http://go.microsoft.com/fwlink/?LinkId=160796). Jeder Typ ist eine Schnittstelle, die den gleichen Namen wie der UML-Typ hat, dem jedoch ein "I" vorangestellt ist.|  
+|[Navigieren in Beziehungen mit der UML-API](../modeling/navigate-relationships-with-the-uml-api.md)|UML-Elemente und ihre Eigenschaften und Zuordnungen. Zum Beispiel "IElement" und seiner Nachfolgerelemente, einschließlich: IClass, IActivity, IUseCase, IComponent, IInteraction, IModel, IPackage|In Visual Studio entsprechen UML-Modelle der UML-Spezifikationsversion 2.1.2, die zur abgerufen werden kann die [UML-Ressourcenseite](http://go.microsoft.com/fwlink/?LinkId=160796). Jeder Typ ist eine Schnittstelle, die den gleichen Namen wie der UML-Typ hat, dem jedoch ein "I" vorangestellt ist.|  
 |[Erstellen von Elementen und Beziehungen in UML-Modellen](../modeling/create-elements-and-relationships-in-uml-models.md)|IPackage.CreateClass()<br /><br /> IClass.CreateOperation()|Jeder Elementtyp verfügt über Methoden zum Erstellen seiner untergeordneten Elemente.|  
 |[Anzeigen eines UML-Modells in Diagrammen](../modeling/display-a-uml-model-on-diagrams.md)|IShape, IDiagram<br /><br /> IShape.Move()|Jedes Element in einem Modell kann als Form in einem Diagramm dargestellt werden. In einigen Fällen können Sie für die einzelnen Objekte neue Formen erstellen. Sie können diese Formen verschieben, ihre Größe ändern, mit Farbe versehen und reduzieren oder erweitern.|  
 |[Navigieren im UML-Modell](../modeling/navigate-the-uml-model.md)|IModelStore<br /><br /> IDiagramContext|Das Modell wird im Modellspeicher gespeichert.<br /><br /> Über den Diagrammkontext erhalten Sie Zugriff auf das aktuelle Diagramm und den Speicher.|  
@@ -47,9 +44,9 @@ Die UML-API von Visual Studio können Sie das Schreiben von Code zum Erstellen, 
   
  Typen von dieser Plattform sind in einigen der Assemblys sichtbar, auf die Sie zum Schreiben von UML-Erweiterungen verweisen. Erweiterungen der UML-Tools können zwar über die [!INCLUDE[dsl](../includes/dsl-md.md)]-API erstellt werden, dabei ist jedoch Folgendes zu bedenken:  
   
--   Es kann vorkommen, dass scheinbar einfache Änderungen zu Inkonsistenzen führen und unerwartete Auswirkungen haben.  
+- Es kann vorkommen, dass scheinbar einfache Änderungen zu Inkonsistenzen führen und unerwartete Auswirkungen haben.  
   
--   Die Implementierung kann sich in der Zukunft ändern, sodass mit der [!INCLUDE[dsl](../includes/dsl-md.md)]-API vorgenommene Anpassungen nicht mehr funktionieren.  
+- Die Implementierung kann sich in der Zukunft ändern, sodass mit der [!INCLUDE[dsl](../includes/dsl-md.md)]-API vorgenommene Anpassungen nicht mehr funktionieren.  
   
 ## <a name="the-api-assemblies"></a>API-Assemblys  
  In der folgenden Tabelle werden die Assemblys für die Erweiterung der UML-Tools und die empfohlenen Namespaces zusammengefasst.  
@@ -74,6 +71,3 @@ Die UML-API von Visual Studio können Sie das Schreiben von Code zum Erstellen, 
 ## <a name="see-also"></a>Siehe auch  
  [Erweitern von UML-Modellen und-Diagrammen](../modeling/extend-uml-models-and-diagrams.md)   
  [API-Referenz für UML-Modellierungserweiterbarkeit](../modeling/api-reference-for-uml-modeling-extensibility.md)
-
-
-

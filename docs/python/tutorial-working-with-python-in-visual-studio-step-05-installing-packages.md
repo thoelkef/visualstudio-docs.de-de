@@ -2,22 +2,21 @@
 title: 'Tutorial „Python in Visual Studio“, Schritt 5: Installieren von Paketen'
 titleSuffix: ''
 description: Dies ist Schritt 5 einer grundlegenden Einführung in die Arbeit mit Python in Visual Studio, in dem die Features von Visual Studio zum Verwalten von Paketen in einer Python-Umgebung veranschaulicht werden.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
+ms.date: 01/28/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 666b780506784d7c252d37bc018817101bcfede8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bf38def7be9607868df8f9c116266632ffcad710
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964966"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62831200"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>Schritt 5: Installieren von Paketen in Ihrer Python-Umgebung
 
@@ -27,27 +26,27 @@ Die Python-Entwicklercommunity hat Tausende von nützlichen Paketen erzeugt, die
 
 1. Wählen Sie den Menübefehl **Ansicht** > **Weitere Fenster** > **Python-Umgebungen** aus. Das Fenster **Python-Umgebungen** wird als Peer für den **Projektmappen-Explorer** geöffnet und zeigt die verschiedenen Umgebungen an, die für Sie verfügbar sind. Die Liste enthält die Umgebungen, die Sie mithilfe des Visual Studio-Installers installiert haben und die, die Sie separat installiert haben. Die Umgebung in Fettdruck ist die Standardumgebung, die für neue Projekte verwendet wird.
 
-   ![Fenster „Python-Umgebungen“](media/environments-default-view-blue.png)
+   ![Fenster „Python-Umgebungen“](media/environments/environments-default-view-blue.png)
 
 2. Die Registerkarte **Übersicht** der Umgebung bietet schnellen Zugriff auf ein **interaktives** Fenster für diese Umgebung zusammen mit dem Installationsordner und den Interpretern der Umgebung. Klicken Sie beispielsweise auf **Interaktives Fenster öffnen**, und ein **interaktives** Fenster für diese bestimmte Umgebung wird in Visual Studio angezeigt.
 
 3. Klicken Sie auf die Registerkarte **Pakete**, und Ihnen wird eine Liste der Pakete angezeigt, die derzeit in der Umgebung installiert sind.
 
-   ![In einer Umgebung installierte Pakete](media/environments-installed-packages-blue.png)
+   ![In einer Umgebung installierte Pakete](media/environments/environments-installed-packages-blue.png)
 
 4. Installieren Sie `matplotlib`, indem Sie den Namen in das Suchfeld eingeben und dann **pip-Installation** auswählen.
 
-   ![Installieren von matplotlib in der Umgebung](media/environments-add-matplotlib1.png)
+   ![Installieren von matplotlib in der Umgebung](media/environments/environments-add-matplotlib1.png)
 
 5. Stimmen Sie zu, wenn Sie zur Erhöhung der Rechte aufgefordert werden.
 
 6. Nachdem das Paket installiert ist, wird es im Fenster der **Python-Umgebung** angezeigt. Über das **X** auf der rechten Seite des Pakets kann dieses deinstalliert werden.
 
-   ![Abschließen der Installation von matplotlib in der Umgebung](media/environments-add-matplotlib2.png)
+   ![Abschließen der Installation von matplotlib in der Umgebung](media/environments/environments-add-matplotlib2.png)
 
    Unterhalb der Umgebung wird möglicherweise eine kleine Statusanzeige eingeblendet, um darauf hinzuweisen, dass Visual Studio die IntelliSense-Datenbank für neu installierte Pakete erstellt. Die Registerkarte **IntelliSense** zeigt ausführlichere Informationen an. Beachten Sie, dass IntelliSense-Funktionen wie die automatische Vervollständigung und die Syntaxüberprüfung für dieses Paket nicht im Editor aktiv sind, bis die Datenbank vollständig erstellt ist.
 
-   Beachten Sie, dass **Visual Studio 2017 Version 15.6** und höher eine andere und schnellere Methode für die Arbeit mit IntelliSense verwendet, und zeigen Sie eine diesbezügliche Meldung auf der **IntelliSense**-Registerkarte an.
+   Beachten Sie, dass Visual Studio 2017 Version 15.6 und höher eine andere und schnellere Methode für die Arbeit mit IntelliSense verwendet, und zeigen Sie eine diesbezügliche Meldung auf der **IntelliSense**-Registerkarte an.
 
 7. Erstellen Sie ein Projekt, indem Sie auf **Datei** > **Neu** > **Projekt** klicken und die Vorlage **Python-Anwendung** auswählen. Fügen Sie folgenden Code in die angezeigte Codedatei ein. Dadurch wird eine Kosinuswelle wie in den vorherigen Schritten des Tutorials erstellt, die dieses Mal jedoch grafisch dargestellt wird:
 
@@ -66,7 +65,7 @@ Die Python-Entwicklercommunity hat Tausende von nützlichen Paketen erzeugt, die
 
 8. Führen Sie das Programm mit (**F5**) oder ohne Debugger (**STRG**+**F5**) aus, um die Ausgabe anzuzeigen:
 
-   ![Ausgabe des matplotlib-Beispiels](media/environments-add-matplotlib3.png)
+   ![Ausgabe des matplotlib-Beispiels](media/environments/environments-add-matplotlib3.png)
 
 ## <a name="next-step"></a>Nächster Schritt
 

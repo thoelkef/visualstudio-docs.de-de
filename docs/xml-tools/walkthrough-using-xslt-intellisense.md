@@ -1,20 +1,19 @@
 ---
 title: 'Exemplarische Vorgehensweise: Verwenden von XSLT-IntelliSense'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 079d95ac-2eaf-4ae1-9cd3-2c81a961a942
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cbd8c7d49719ad1b3d04d9336f222b45a0b33d8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 880f098d96c23236a065894629a36a746ecedce7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62808009"
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>Exemplarische Vorgehensweise: Verwenden von XSLT-IntelliSense
 
@@ -22,7 +21,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie XSLT-IntelliSe
 
 ## <a name="to-use-intellisense-in-the-name-attribute-of-xslwith-param-and-xslcall-template-elements"></a>So verwenden Sie IntelliSense im name-Attribut von xsl:with-param- und xsl:call-template-Elementen
 
-1.  Erstellen Sie eine neue XSLT-Datei, und kopieren Sie den folgenden Code in die Datei:
+1. Erstellen Sie eine neue XSLT-Datei, und kopieren Sie den folgenden Code in die Datei:
 
     ```xml
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
@@ -46,7 +45,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie XSLT-IntelliSe
     </xsl:stylesheet>
     ```
 
-2.  Fügen Sie den Cursor nach `<xsl:template name="msg23" match="msg23">` , und drücken Sie **EINGABETASTE**. Geben Sie dann das folgende `xsl:call-template`-Element ein:
+2. Fügen Sie den Cursor nach `<xsl:template name="msg23" match="msg23">` , und drücken Sie **EINGABETASTE**. Geben Sie dann das folgende `xsl:call-template`-Element ein:
 
     ```xml
     <xsl:call-template name="localized-message">
@@ -55,7 +54,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie XSLT-IntelliSe
 
      Während der Eingabe wird die Liste der Vorlagennamen im `name=""`-Attribut des `xsl:call-template`-Elements angezeigt.
 
-3.  Fügen Sie den Cursor nach `<xsl:call-template name="localized-message">` , und drücken Sie **EINGABETASTE**. Geben Sie dann das folgende `xsl:with-param`-Element ein:
+3. Fügen Sie den Cursor nach `<xsl:call-template name="localized-message">` , und drücken Sie **EINGABETASTE**. Geben Sie dann das folgende `xsl:with-param`-Element ein:
 
     ```xml
     <xsl:with-param name="msgcode">msg23</xsl:with-param>
@@ -65,7 +64,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie XSLT-IntelliSe
 
 ## <a name="to-use-intellisense-in-the-mode-attribute-of-an-xslapply-templates-element"></a>So verwenden Sie IntelliSense im mode-Attribut eines xsl:apply-templates-Elements
 
-1.  Erstellen Sie eine neue XSLT-Datei, und kopieren Sie den folgenden Code in die Datei:
+1. Erstellen Sie eine neue XSLT-Datei, und kopieren Sie den folgenden Code in die Datei:
 
     ```xml
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
@@ -112,7 +111,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie XSLT-IntelliSe
     </xsl:stylesheet>
     ```
 
-2.  Fügen Sie den Cursor nach `<xsl:apply-templates select="phone" />` , und drücken Sie **EINGABETASTE**. Geben Sie dann das folgende `xsl: apply-templates`-Element ein:
+2. Fügen Sie den Cursor nach `<xsl:apply-templates select="phone" />` , und drücken Sie **EINGABETASTE**. Geben Sie dann das folgende `xsl: apply-templates`-Element ein:
 
     ```xml
     <xsl:apply-templates select="phone"  mode="accountNumber">
@@ -122,7 +121,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie XSLT-IntelliSe
 
 ## <a name="to-use-intellisense-in-the-stylesheet-prefix-and-result-prefix-attributes-of-an-xslnamespace-alias-element"></a>So verwenden Sie IntelliSense in den stylesheet-prefix- und result-prefix-Attributen eines xsl:namespace-Alias-Elements
 
-1.  Erstellen Sie eine neue XSLT-Datei, und kopieren Sie den folgenden Code in die Datei:
+1. Erstellen Sie eine neue XSLT-Datei, und kopieren Sie den folgenden Code in die Datei:
 
     ```xml
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate"
@@ -153,7 +152,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie XSLT-IntelliSe
     </xsl:stylesheet>
     ```
 
-2.  Fügen Sie den Cursor nach `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` , und drücken Sie **EINGABETASTE**. Geben Sie dann das folgende `xsl:namespace-alias`-Element ein:
+2. Fügen Sie den Cursor nach `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` , und drücken Sie **EINGABETASTE**. Geben Sie dann das folgende `xsl:namespace-alias`-Element ein:
 
     ```xml
     <xsl:namespace-alias stylesheet-prefix="alt" result-prefix="xsl"/>

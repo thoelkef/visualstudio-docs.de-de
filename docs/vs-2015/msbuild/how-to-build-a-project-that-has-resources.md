@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Erstellen eines Projekts, das über Ressourcen verfügt | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - resource files, compiling with MSBuild
 - resources [Visual Studio], compiling with MSBuild
@@ -18,18 +13,17 @@ ms.assetid: d07ac73f-2c2d-4e9a-812a-6dcb632bafe2
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e2383f563b8f6e80111d382c9abe96a66efadd69
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0806df31b7e1f225ecefc823cbcbdb0a72ff2058
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256924"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660267"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Gewusst wie: Erstellen eines Projekts, das über Ressourcen verfügt
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Wenn Sie lokalisierte Versionen eines Projekts erstellen, müssen alle Benutzeroberflächenelemente in Ressourcendateien für die verschiedenen Sprachen eingeteilt werden. Wenn das Projekt nur Zeichenfolgen verwendet, können die Ressourcendateien Textdateien verwenden. Alternativ können Sie RESX-Dateien als Ressourcendateien verwenden.  
   
 ## <a name="compiling-resources-with-msbuild"></a>Kompilieren von Ressourcen mit MSBuild  
@@ -90,5 +84,3 @@ Wenn Sie lokalisierte Versionen eines Projekts erstellen, müssen alle Benutzero
  [GenerateResource-Aufgabe](../msbuild/generateresource-task.md)   
  [Csc-Aufgabe](../msbuild/csc-task.md)   
  [Resgen.exe (Resource File Generator)](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)
-
-

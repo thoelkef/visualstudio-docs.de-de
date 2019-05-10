@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a02bdd92211003388ecd21e370a7a5f64da6227
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b5aac06c9d06145f288a64deb210e3c8cb1bd2bd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918637"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62857733"
 ---
 # <a name="upgrading-projects"></a>Aktualisieren von Projekten
 
@@ -27,9 +27,9 @@ ms.locfileid: "53918637"
 
 Um ein Upgrade zu unterstützen, muss die Project-System-Implementierung definieren und implementieren eine Strategie für die Aktualisierung. Bei der Bestimmung Ihrer Strategie, können Sie auswählen, um Side-by-Side (SxS) Sicherung, Sicherung kopieren oder beides zu unterstützen.
 
--   Parallele Sicherung bedeutet, dass ein Projekt nur die Dateien kopiert, die ein Upgrade Direktes Hinzufügen einer geeigneten Dateinamensuffix, z. B. ".old".
+- Parallele Sicherung bedeutet, dass ein Projekt nur die Dateien kopiert, die ein Upgrade Direktes Hinzufügen einer geeigneten Dateinamensuffix, z. B. ".old".
 
--   Kopieren Sie die Sicherung bedeutet, dass ein Projekt alle Projektelemente in einen vom Benutzer bereitgestellte Sicherungsspeicherort kopiert. Die relevanten Dateien auf den Speicherort des ursprünglichen Projekts werden anschließend aktualisiert.
+- Kopieren Sie die Sicherung bedeutet, dass ein Projekt alle Projektelemente in einen vom Benutzer bereitgestellte Sicherungsspeicherort kopiert. Die relevanten Dateien auf den Speicherort des ursprünglichen Projekts werden anschließend aktualisiert.
 
 ## <a name="how-upgrade-works"></a>Funktionsweise von Upgrades
 
@@ -64,19 +64,19 @@ Wenn Sie die in der Projektdatei dauerhaft gespeicherten Informationen zwischen 
 
 Der alte Mechanismus, der die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>-Schnittstelle verwendet, wird noch unterstützt, doch wird dabei das abweichende Konzept verfolgt, das Upgrade des Projektsystems beim Öffnen des Projekts vorzunehmen. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> Schnittstelle wird daher aufgerufen, der Visual Studio-Umgebung selbst dann durch die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> Schnittstelle aufgerufen wird oder implementiert ist. Aufgrund dieses Ansatzes können Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> verwenden, um die Kopie zu implementieren und nur Teile des Upgrades zu projizieren, wobei der Rest der Arbeit für die Ausführung an Ort und Stelle (also möglichst dem neuen Speicherort) durch die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>-Schnittstelle delegiert wird.
 
-Eine beispielimplementierung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>, finden Sie unter [VSSDK-Beispiele](http://aka.ms/vs2015sdksamples).
+Eine beispielimplementierung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>, finden Sie unter [VSSDK-Beispiele](https://aka.ms/vs2015sdksamples).
 
 Im Rahmen von Projektupgrades stellen sich die folgenden Szenarien dar:
 
--   Wenn die Datei ein neueres Format aufweist, als es vom Projekt unterstützt werden kann, muss eine Fehlermeldung zurückgegeben werden, aus der dieser Umstand hervorgeht. Dies setzt voraus, dass die ältere Version Ihres Produkts zum Überprüfen der Version enthält.
+- Wenn die Datei ein neueres Format aufweist, als es vom Projekt unterstützt werden kann, muss eine Fehlermeldung zurückgegeben werden, aus der dieser Umstand hervorgeht. Dies setzt voraus, dass die ältere Version Ihres Produkts zum Überprüfen der Version enthält.
 
--   Wenn das <xref:Microsoft.VisualStudio.Shell.Interop.__VSPPROJECTUPGRADEVIAFACTORYFLAGS.PUVFF_SXSBACKUP>-Flag in der <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A>-Methode angegeben ist, wird das Upgrade vor dem Öffnen des Projekts als Upgrade an Ort und Stelle ausgeführt.
+- Wenn das <xref:Microsoft.VisualStudio.Shell.Interop.__VSPPROJECTUPGRADEVIAFACTORYFLAGS.PUVFF_SXSBACKUP>-Flag in der <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A>-Methode angegeben ist, wird das Upgrade vor dem Öffnen des Projekts als Upgrade an Ort und Stelle ausgeführt.
 
--   Wenn das <xref:Microsoft.VisualStudio.Shell.Interop.__VSPPROJECTUPGRADEVIAFACTORYFLAGS.PUVFF_COPYBACKUP>-Flag in der <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A>-Methode angegeben ist, wird das Upgrade als Kopierupgrade implementiert.
+- Wenn das <xref:Microsoft.VisualStudio.Shell.Interop.__VSPPROJECTUPGRADEVIAFACTORYFLAGS.PUVFF_COPYBACKUP>-Flag in der <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A>-Methode angegeben ist, wird das Upgrade als Kopierupgrade implementiert.
 
--   Wenn das <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS.UPF_SILENTMIGRATE>-Flag im <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A>-Aufruf angegeben ist, wurde der Benutzer von der Umgebung aufgefordert, nach dem Öffnen des Projekts ein Upgrade der Projektdatei an Ort und Stelle auszuführen. Beispielsweise fordert die Umgebung den Benutzer zum Upgrade auf, wenn der Benutzer eine ältere Version der Lösung öffnet.
+- Wenn das <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS.UPF_SILENTMIGRATE>-Flag im <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A>-Aufruf angegeben ist, wurde der Benutzer von der Umgebung aufgefordert, nach dem Öffnen des Projekts ein Upgrade der Projektdatei an Ort und Stelle auszuführen. Beispielsweise fordert die Umgebung den Benutzer zum Upgrade auf, wenn der Benutzer eine ältere Version der Lösung öffnet.
 
--   Wenn das <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS.UPF_SILENTMIGRATE>-Flag nicht im <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A>-Aufruf angegeben ist, müssen Sie den Benutzer auffordern, ein Upgrade der Projektdatei auszuführen.
+- Wenn das <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS.UPF_SILENTMIGRATE>-Flag nicht im <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A>-Aufruf angegeben ist, müssen Sie den Benutzer auffordern, ein Upgrade der Projektdatei auszuführen.
 
      Die folgende Aufforderungsnachricht stellt ein Beispiel dar:
 
@@ -84,17 +84,17 @@ Im Rahmen von Projektupgrades stellen sich die folgenden Szenarien dar:
 
 ### <a name="to-implement-ivsprojectupgradeviafactory"></a>So implementieren Sie IVsProjectUpgradeViaFactory
 
-1.  Implementieren Sie die Methode der <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>-Schnittstelle, insbesondere die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A>-Methode in Ihrer Projektfactoryimplementierung, oder machen Sie die Implementierungen von Ihrer Projektfactoryimplementierung aus aufrufbar.
+1. Implementieren Sie die Methode der <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>-Schnittstelle, insbesondere die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A>-Methode in Ihrer Projektfactoryimplementierung, oder machen Sie die Implementierungen von Ihrer Projektfactoryimplementierung aus aufrufbar.
 
-2.  Wenn Sie ein Upgrade an Ort und Stelle als Teil des Öffnens der Projektmappe ausführen möchten, geben Sie das Flag <xref:Microsoft.VisualStudio.Shell.Interop.__VSPPROJECTUPGRADEVIAFACTORYFLAGS.PUVFF_SXSBACKUP> als Parameter von `VSPUVF_FLAGS` in Ihrer <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A>-Implementierung an.
+2. Wenn Sie ein Upgrade an Ort und Stelle als Teil des Öffnens der Projektmappe ausführen möchten, geben Sie das Flag <xref:Microsoft.VisualStudio.Shell.Interop.__VSPPROJECTUPGRADEVIAFACTORYFLAGS.PUVFF_SXSBACKUP> als Parameter von `VSPUVF_FLAGS` in Ihrer <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A>-Implementierung an.
 
-3.  Wenn Sie ein Upgrade an Ort und Stelle als Teil des Öffnens der Projektmappe ausführen möchten, geben Sie das Flag <xref:Microsoft.VisualStudio.Shell.Interop.__VSPPROJECTUPGRADEVIAFACTORYFLAGS.PUVFF_COPYBACKUP> als Parameter von `VSPUVF_FLAGS` in Ihrer <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A>-Implementierung an.
+3. Wenn Sie ein Upgrade an Ort und Stelle als Teil des Öffnens der Projektmappe ausführen möchten, geben Sie das Flag <xref:Microsoft.VisualStudio.Shell.Interop.__VSPPROJECTUPGRADEVIAFACTORYFLAGS.PUVFF_COPYBACKUP> als Parameter von `VSPUVF_FLAGS` in Ihrer <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A>-Implementierung an.
 
-4.  Für die Schritte 2 und 3, die eigentlichen Dateiupgradeschritte, kann die Verwendung von <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> wie im Abschnitt "Implementierung von `IVsProjectUpgade`" im Abschnitt unten beschrieben implementiert werden; alternativ können Sie das eigentliche Dateiupgrade an <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> delegieren.
+4. Für die Schritte 2 und 3, die eigentlichen Dateiupgradeschritte, kann die Verwendung von <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> wie im Abschnitt "Implementierung von `IVsProjectUpgade`" im Abschnitt unten beschrieben implementiert werden; alternativ können Sie das eigentliche Dateiupgrade an <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> delegieren.
 
-5.  Verwenden Sie die Methoden von <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger>, um mit Upgrades zusammenhängende Nachrichten für Benutzer mithilfe des Visual Studio-Migrations-Assistenten zu veröffentlichen.
+5. Verwenden Sie die Methoden von <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger>, um mit Upgrades zusammenhängende Nachrichten für Benutzer mithilfe des Visual Studio-Migrations-Assistenten zu veröffentlichen.
 
-6.  Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileUpgrade>-Schnittstelle wird verwendet, um jede Art von Dateiupgrade zu implementieren, die im Rahmen eines Projektupgrades erfolgen muss. Diese Schnittstelle wird nicht von <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> aufgerufen, sondern als Mechanismus für das Upgrade von Dateien bereitgestellt, die zum Projektsystem gehören, von denen das Projekthauptsystem jedoch möglicherweise keine unmittelbare Kenntnis hat. Diese Situation kann beispielsweise eintreten, wenn die compilerbezogenen Dateien und Eigenschaften nicht vom gleichen Entwicklungsteam wie der Rest des Projektsystems betreut werden.
+6. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileUpgrade>-Schnittstelle wird verwendet, um jede Art von Dateiupgrade zu implementieren, die im Rahmen eines Projektupgrades erfolgen muss. Diese Schnittstelle wird nicht von <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> aufgerufen, sondern als Mechanismus für das Upgrade von Dateien bereitgestellt, die zum Projektsystem gehören, von denen das Projekthauptsystem jedoch möglicherweise keine unmittelbare Kenntnis hat. Diese Situation kann beispielsweise eintreten, wenn die compilerbezogenen Dateien und Eigenschaften nicht vom gleichen Entwicklungsteam wie der Rest des Projektsystems betreut werden.
 
 ### <a name="ivsprojectupgrade-implementation"></a>IVsProjectUpgrade-Implementierung
 
@@ -102,33 +102,33 @@ Wenn Ihr Projektsystem implementiert <xref:Microsoft.VisualStudio.Shell.Interop.
 
 #### <a name="to-implement-ivsprojectupgrade"></a>So implementieren Sie IVsProjectUpgrade
 
-1.  Wenn ein Benutzer versucht, ein Projekt zu öffnen, wird die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A>-Methode von der Umgebung aufgerufen, nachdem das Projekt geöffnet wurde und bevor andere Benutzeraktionen für das Projekt ausgeführt werden können. Wenn der Benutzer bereits aufgefordert wurde, ein Upgrade der Projektmappe auszuführen, wird im `grfUpgradeFlags`-Parameter das <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS.UPF_SILENTMIGRATE>-Flag übergeben. Wenn der Benutzer ein Projekt direkt, solche öffnet wie mit der **vorhandenes Projekt hinzufügen** Befehl ein, und klicken Sie dann die <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS.UPF_SILENTMIGRATE> Flag nicht übergeben, und das Projekt muss der Benutzer zum upgrade auffordern.
+1. Wenn ein Benutzer versucht, ein Projekt zu öffnen, wird die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A>-Methode von der Umgebung aufgerufen, nachdem das Projekt geöffnet wurde und bevor andere Benutzeraktionen für das Projekt ausgeführt werden können. Wenn der Benutzer bereits aufgefordert wurde, ein Upgrade der Projektmappe auszuführen, wird im `grfUpgradeFlags`-Parameter das <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS.UPF_SILENTMIGRATE>-Flag übergeben. Wenn der Benutzer ein Projekt direkt, solche öffnet wie mit der **vorhandenes Projekt hinzufügen** Befehl ein, und klicken Sie dann die <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS.UPF_SILENTMIGRATE> Flag nicht übergeben, und das Projekt muss der Benutzer zum upgrade auffordern.
 
-2.  In Reaktion auf den <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A>-Aufruf muss das Projekt bewerten, ob für die Projektdatei ein Upgrade ausgeführt werden muss. Wenn das Projekt für den Projekttyp kein Upgrade auf eine neue Version ausführen muss, kann es einfach das <xref:Microsoft.VisualStudio.VSConstants.S_OK>-Flag zurückgeben.
+2. In Reaktion auf den <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A>-Aufruf muss das Projekt bewerten, ob für die Projektdatei ein Upgrade ausgeführt werden muss. Wenn das Projekt für den Projekttyp kein Upgrade auf eine neue Version ausführen muss, kann es einfach das <xref:Microsoft.VisualStudio.VSConstants.S_OK>-Flag zurückgeben.
 
-3.  Wenn das Projekt ein Upgrade des Projekttyps auf eine neue Version vornehmen muss, muss es bestimmen, ob die Projektdatei durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>-Methode und Übergeben des Werts <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags> für den `rgfQueryEdit`-Parameter geändert werden kann. In diesem Fall muss das Projekt folgendes ausführen:
+3. Wenn das Projekt ein Upgrade des Projekttyps auf eine neue Version vornehmen muss, muss es bestimmen, ob die Projektdatei durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>-Methode und Übergeben des Werts <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags> für den `rgfQueryEdit`-Parameter geändert werden kann. In diesem Fall muss das Projekt folgendes ausführen:
 
-    -   Wenn der im `pfEditCanceled`-Parameter zurückgegebene `VSQueryEditResult`-Wert <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult.QER_EditOK> ist, kann das Upgrade fortgesetzt werden, weil die Projektdatei geschrieben werden kann.
+    - Wenn der im `pfEditCanceled`-Parameter zurückgegebene `VSQueryEditResult`-Wert <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult.QER_EditOK> ist, kann das Upgrade fortgesetzt werden, weil die Projektdatei geschrieben werden kann.
 
-    -   Wenn der im `pfEditCanceled`-Parameter zurückgegebene `VSQueryEditResult`-Wert <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult.QER_EditNotOK> ist und für den `VSQueryEditResult`-Wert das <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResultFlags.QER_ReadOnlyNotUnderScc>-Bit festgelegt ist, muss <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> einen Fehler zurückgeben, da der Benutzer das Berechtigungsproblem selbst lösen muss. Das Projekt sollte dann Folgendes ausführen:
+    - Wenn der im `pfEditCanceled`-Parameter zurückgegebene `VSQueryEditResult`-Wert <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult.QER_EditNotOK> ist und für den `VSQueryEditResult`-Wert das <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResultFlags.QER_ReadOnlyNotUnderScc>-Bit festgelegt ist, muss <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> einen Fehler zurückgeben, da der Benutzer das Berechtigungsproblem selbst lösen muss. Das Projekt sollte dann Folgendes ausführen:
 
          Melden Sie den Fehler an den Benutzer durch Aufrufen von <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A> und Zurückgeben der <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes.VS_E_PROJECTMIGRATIONFAILED> Fehlercode <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>.
 
-    -   Wenn der `VSQueryEditResult`-Wert <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult.QER_EditNotOK> ist und für den `VSQueryEditResultFlags`-Wert das <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResultFlags.QER_ReadOnlyUnderScc>-Bit festgelegt ist, sollte die Projektdatei durch Aufrufen von <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags.QEF_ForceEdit_NoPrompting>, <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags.QEF_DisallowInMemoryEdits>,...) ausgecheckt werden.
+    - Wenn der `VSQueryEditResult`-Wert <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult.QER_EditNotOK> ist und für den `VSQueryEditResultFlags`-Wert das <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResultFlags.QER_ReadOnlyUnderScc>-Bit festgelegt ist, sollte die Projektdatei durch Aufrufen von <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags.QEF_ForceEdit_NoPrompting>, <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags.QEF_DisallowInMemoryEdits>,...) ausgecheckt werden.
 
-4.  Wenn der <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>-Aufruf der Projektdateien zum Auschecken der Datei und zum Abrufen der letzten Version führt, wird das Projekt entladen und erneut geladen. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A>-Methode wird erneut aufgerufen, sobald eine weitere Instanz des Projekts erstellt wird. Bei diesem zweiten Aufruf kann die Projektdatei auf den Datenträger geschrieben werden; es wird empfohlen, dass das Projekt eine Kopie der Projektdatei im vorherigen Format mit einer OLD-Erweiterung speichert, die für das Upgrade erforderlichen Änderungen vornimmt und die Projektdatei anschließend im neuen Format speichert. Wenn bei irgendeinem Teil des Upgradevorgangs ein Fehler auftritt muss auch hier die Methode den Fehler durch Zurückgeben von <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes.VS_E_PROJECTMIGRATIONFAILED> anzeigen. Dadurch wird das Projekt aus dem Projektmappen-Explorer entladen.
+4. Wenn der <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>-Aufruf der Projektdateien zum Auschecken der Datei und zum Abrufen der letzten Version führt, wird das Projekt entladen und erneut geladen. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A>-Methode wird erneut aufgerufen, sobald eine weitere Instanz des Projekts erstellt wird. Bei diesem zweiten Aufruf kann die Projektdatei auf den Datenträger geschrieben werden; es wird empfohlen, dass das Projekt eine Kopie der Projektdatei im vorherigen Format mit einer OLD-Erweiterung speichert, die für das Upgrade erforderlichen Änderungen vornimmt und die Projektdatei anschließend im neuen Format speichert. Wenn bei irgendeinem Teil des Upgradevorgangs ein Fehler auftritt muss auch hier die Methode den Fehler durch Zurückgeben von <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes.VS_E_PROJECTMIGRATIONFAILED> anzeigen. Dadurch wird das Projekt aus dem Projektmappen-Explorer entladen.
 
      Für den Fall, dass der Aufruf der <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>-Methode (mit dem Wert „ReportOnly“) die Flags <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult.QER_EditNotOK> und <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResultFlags.QER_ReadOnlyUnderScc> zurückgibt, ist es wichtig, den gesamten Prozess zu verstehen, der in der Umgebung geschieht.
 
-5.  Der Benutzer versucht, die Projektdatei zu öffnen.
+5. Der Benutzer versucht, die Projektdatei zu öffnen.
 
-6.  Die Umgebung ruft Ihre <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CanCreateProject%2A>-Implementierung auf.
+6. Die Umgebung ruft Ihre <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CanCreateProject%2A>-Implementierung auf.
 
-7.  Wenn <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CanCreateProject%2A> `true` zurückgibt, ruft die Umgebung Ihre <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CanCreateProject%2A>-Implementierung auf.
+7. Wenn <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CanCreateProject%2A> `true` zurückgibt, ruft die Umgebung Ihre <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CanCreateProject%2A>-Implementierung auf.
 
-8.  Die Umgebung ruft Ihre <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat.Load%2A>-Implementierung auf, um die Datei zu öffnen und das Projektobjekt zu initialisieren z. B. „Projekt1“.
+8. Die Umgebung ruft Ihre <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat.Load%2A>-Implementierung auf, um die Datei zu öffnen und das Projektobjekt zu initialisieren z. B. „Projekt1“.
 
-9. Die Umgebung ruft Ihre `IVsProjectUpgrade::UpgradeProject`-Implementierung auf, um zu bestimmen, ob ein Upgrade der Projektdatei erforderlich ist.
+9. Die Umgebung ruft Ihre `IVsProjectUpgrade::UpgradeProject` -Implementierung auf, um zu bestimmen, ob ein Upgrade der Projektdatei erforderlich ist.
 
 10. Sie rufen <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> auf und übergeben den Wert <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags.QEF_ReportOnly> für den `rgfQueryEdit`-Parameter.
 
@@ -138,26 +138,26 @@ Wenn Ihr Projektsystem implementiert <xref:Microsoft.VisualStudio.Shell.Interop.
 
 Dieser Aufruf kann dazu führen, dass eine neue Kopie Ihrer Projektdatei ausgecheckt und die neueste Version abgerufen wird, wodurch es erforderlich wird, die Projektdatei neu zu laden. An diesem Punkt geschieht eins von zwei Dingen:
 
--   Wenn Sie das erneute Laden des Projekts selbst vornehmen, ruft die Umgebung Ihre <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A>-Implementierung (VSITEMID_ROOT) auf. Wenn Sie diesen Aufruf empfangen, laden Sie die erste Instanz des Projekts (Projekt1) erneut, und fahren Sie mit dem Upgrade Ihrer Projektdatei fort. Die Umgebung weiß, dass Sie das erneute Laden des Projekts selbst übernehmen, wenn Sie für <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_HandlesOwnReload>) `true` zurückgeben.
+- Wenn Sie das erneute Laden des Projekts selbst vornehmen, ruft die Umgebung Ihre <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A>-Implementierung (VSITEMID_ROOT) auf. Wenn Sie diesen Aufruf empfangen, laden Sie die erste Instanz des Projekts (Projekt1) erneut, und fahren Sie mit dem Upgrade Ihrer Projektdatei fort. Die Umgebung weiß, dass Sie das erneute Laden des Projekts selbst übernehmen, wenn Sie für <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_HandlesOwnReload>) `true` zurückgeben.
 
--   Wenn Sie das erneute Laden des Projekts nicht selbst ausführen, geben Sie für <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_HandlesOwnReload>) `false` zurück. In diesem Fall vor dem <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>(QEF_ForceEdit_NoPrompting, QEF_DisallowInMemoryEdits) zurückgegeben wird, Erstellen der Umgebung eine andere neue Instanz des Projekts, z. B. "Projekt2", wie folgt:
+- Wenn Sie das erneute Laden des Projekts nicht selbst ausführen, geben Sie für <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_HandlesOwnReload>) `false` zurück. In diesem Fall vor dem <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>(QEF_ForceEdit_NoPrompting, QEF_DisallowInMemoryEdits) zurückgegeben wird, Erstellen der Umgebung eine andere neue Instanz des Projekts, z. B. "Projekt2", wie folgt:
 
-    1.  Die Umgebung ruft <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.Close%2A> für Ihr erstes Projektobjekt „Project1“ auf und versetzt dieses Objekt dadurch in den inaktiven Zustand.
+    1. Die Umgebung ruft <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.Close%2A> für Ihr erstes Projektobjekt „Project1“ auf und versetzt dieses Objekt dadurch in den inaktiven Zustand.
 
-    2.  Die Umgebung ruft Ihre `IVsProjectFactory::CreateProject`-Implementierung auf, um eine zweite Instanz Ihres Projekts zu erstellen, „Project2“.
+    2. Die Umgebung ruft Ihre `IVsProjectFactory::CreateProject` -Implementierung auf, um eine zweite Instanz Ihres Projekts zu erstellen, „Project2“.
 
-    3.  Die Umgebung ruft Ihre `IPersistFileFormat::Load` -Implementierung auf, um die Datei zu öffnen und das zweite Projektobjekt, „Projekt2“, zu initialisieren.
+    3. Die Umgebung ruft Ihre `IPersistFileFormat::Load` -Implementierung auf, um die Datei zu öffnen und das zweite Projektobjekt, „Projekt2“, zu initialisieren.
 
-    4.  Die Umgebung ruft `IVsProjectUpgrade::UpgradeProject` ein zweites Mal auf, um zu bestimmen, ob für das Projektobjekt ein Upgrade ausgeführt werden soll. Dieser Aufruf erfolgt jedoch für eine neue, zweite Instanz des Projekts, „Projekt2“. Dies ist das Projekt, das in der Projektmappe geöffnet ist.
+    4. Die Umgebung ruft `IVsProjectUpgrade::UpgradeProject` ein zweites Mal auf, um zu bestimmen, ob für das Projektobjekt ein Upgrade ausgeführt werden soll. Dieser Aufruf erfolgt jedoch für eine neue, zweite Instanz des Projekts, „Projekt2“. Dies ist das Projekt, das in der Projektmappe geöffnet ist.
 
         > [!NOTE]
         > Wenn die Instanz Ihres ersten Projekts, „Projekt1“, in den inaktiven Status versetzt wurde, müssen Sie vom ersten Aufruf <xref:Microsoft.VisualStudio.VSConstants.S_OK> an Ihre <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A>-Implementierung zurückgeben.
 
-    5.  Sie rufen <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> auf und übergeben den Wert <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags.QEF_ReportOnly> für den `rgfQueryEdit`-Parameter.
+    5. Sie rufen <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> auf und übergeben den Wert <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags.QEF_ReportOnly> für den `rgfQueryEdit`-Parameter.
 
-    6.  Die Umgebung gibt <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult.QER_EditOK> zurück, und das Upgrade kann fortgesetzt werden, weil die Projektdatei geschrieben werden kann.
+    6. Die Umgebung gibt <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditResult.QER_EditOK> zurück, und das Upgrade kann fortgesetzt werden, weil die Projektdatei geschrieben werden kann.
 
-Wenn Sie das Upgrade versäumen, geben Sie <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes.VS_E_PROJECTMIGRATIONFAILED> aus `IVsProjectUpgrade::UpgradeProject` zurück. Wenn für Sie kein Upgrade erforderlich ist oder Sie sich gegen das Upgrade entscheiden, behandeln Sie den `IVsProjectUpgrade::UpgradeProject`-Aufruf als nicht erfolgten Vorgang (No-Op). Wenn Sie <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes.VS_E_PROJECTMIGRATIONFAILED> zurückgeben, wird dem Projektmappe für Ihr Projekt ein Platzhalterknoten hinzugefügt.
+Wenn Sie das Upgrade versäumen, geben Sie <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes.VS_E_PROJECTMIGRATIONFAILED> aus `IVsProjectUpgrade::UpgradeProject` zurück. Wenn für Sie kein Upgrade erforderlich ist oder Sie sich gegen das Upgrade entscheiden, behandeln Sie den `IVsProjectUpgrade::UpgradeProject` -Aufruf als nicht erfolgten Vorgang (No-Op). Wenn Sie <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes.VS_E_PROJECTMIGRATIONFAILED> zurückgeben, wird dem Projektmappe für Ihr Projekt ein Platzhalterknoten hinzugefügt.
 
 ## <a name="upgrading-project-items"></a>Aktualisieren von Projektelementen
 
@@ -167,17 +167,17 @@ In der Regel Implementierungen der Project-Element einem Projekt bereits vollst�
 
 ### <a name="to-get-the-project-upgrade-notification"></a>Um die Projekt-Upgrade-Benachrichtigung zu erhalten.
 
-1.  Legen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80.SolutionOrProjectUpgrading> Flag (definiert in der vsshell80.idl) in Ihrer Implementierung der Project-Element. Dies bewirkt, dass Ihr Projektelement VSPackage automatisch geladen, wenn die Visual Studio Shell feststellt, dass ein Projektsystem im Aktualisierungsprozess ist.
+1. Legen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80.SolutionOrProjectUpgrading> Flag (definiert in der vsshell80.idl) in Ihrer Implementierung der Project-Element. Dies bewirkt, dass Ihr Projektelement VSPackage automatisch geladen, wenn die Visual Studio Shell feststellt, dass ein Projektsystem im Aktualisierungsprozess ist.
 
-2.  Empfehlen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade> -Oberfläche über die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution2.AdviseSolutionEvents%2A> Methode.
+2. Empfehlen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade> -Oberfläche über die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution2.AdviseSolutionEvents%2A> Methode.
 
-3.  Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade> Schnittstelle wird immer dann ausgelöst, nachdem die systemimplementierung des Projekts ein Upgrade abgeschlossen wurde aus, und die neue, aktualisierte Projekt wird erstellt. Je nach Szenario das <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade> Schnittstelle wird ausgelöst, nachdem die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenSolution%2A>, <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>, oder die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterLoadProject%2A> Methoden.
+3. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade> Schnittstelle wird immer dann ausgelöst, nachdem die systemimplementierung des Projekts ein Upgrade abgeschlossen wurde aus, und die neue, aktualisierte Projekt wird erstellt. Je nach Szenario das <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade> Schnittstelle wird ausgelöst, nachdem die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenSolution%2A>, <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>, oder die <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterLoadProject%2A> Methoden.
 
 ### <a name="to-upgrade-the-project-item-files"></a>So aktualisieren die Element-Projektdateien
 
-1.  Sie müssen sorgfältig den Sicherungsvorgang für die Datei in Ihrer Implementierung der Project-Element verwalten. Dies gilt insbesondere für eine Seite-an-Seite-Sicherung, in denen die `fUpgradeFlag` Parameter der <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> Methode nastaven NA hodnotu <xref:Microsoft.VisualStudio.Shell.Interop.__VSPPROJECTUPGRADEVIAFACTORYFLAGS.PUVFF_SXSBACKUP>, in Dateien, die gesichert wurden auf der Seite Dateien platziert werden, die als ".old" gekennzeichnet sind. Die gesicherten Dateien, die älter sind als die Systemzeit, wenn das Projekt aktualisiert wurde, können als veraltet festgelegt werden. Darüber hinaus können sie überschrieben werden, es sei denn, Sie bestimmte Schritte, um dies zu verhindern, dass Unternehmen.
+1. Sie müssen sorgfältig den Sicherungsvorgang für die Datei in Ihrer Implementierung der Project-Element verwalten. Dies gilt insbesondere für eine Seite-an-Seite-Sicherung, in denen die `fUpgradeFlag` Parameter der <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> Methode nastaven NA hodnotu <xref:Microsoft.VisualStudio.Shell.Interop.__VSPPROJECTUPGRADEVIAFACTORYFLAGS.PUVFF_SXSBACKUP>, in Dateien, die gesichert wurden auf der Seite Dateien platziert werden, die als ".old" gekennzeichnet sind. Die gesicherten Dateien, die älter sind als die Systemzeit, wenn das Projekt aktualisiert wurde, können als veraltet festgelegt werden. Darüber hinaus können sie überschrieben werden, es sei denn, Sie bestimmte Schritte, um dies zu verhindern, dass Unternehmen.
 
-2.  Zum Zeitpunkt des Projektelements eine Benachrichtigung über das Upgraden von Projekten, ruft der **Visual Studio-Konvertierungs-Assistenten** wird weiterhin angezeigt. Aus diesem Grund sollten Sie die Methoden verwenden die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> Schnittstelle, um ein Upgrade von Nachrichten auf der Benutzeroberfläche des Assistenten bereitzustellen.
+2. Zum Zeitpunkt des Projektelements eine Benachrichtigung über das Upgraden von Projekten, ruft der **Visual Studio-Konvertierungs-Assistenten** wird weiterhin angezeigt. Aus diesem Grund sollten Sie die Methoden verwenden die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> Schnittstelle, um ein Upgrade von Nachrichten auf der Benutzeroberfläche des Assistenten bereitzustellen.
 
 ## <a name="see-also"></a>Siehe auch
 

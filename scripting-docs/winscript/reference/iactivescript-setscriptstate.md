@@ -2,7 +2,6 @@
 title: 'IActiveScript:: Setscriptstate | Microsoft-Dokumentation'
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 58edef17fec1d94a09b327dff626658c42a273ba
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 16a13b545ddd482f8aa143d289d46447370e23ac
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54095029"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935530"
 ---
 # <a name="iactivescriptsetscriptstate"></a>IActiveScript::SetScriptState
 Setzt das Skriptmodul in den angegebenen Zustand. Diese Methode kann von nicht-Base Threads aufgerufen werden, ohne dass eine nicht-Base-Legende Hostobjekte oder in der [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) Schnittstelle.  
@@ -55,8 +54,8 @@ HRESULT SetScriptState(
  Weitere Informationen zur Skripterstellung für Engine-Status finden Sie im Abschnitt "Skriptmodulzustände" der [Windows Script-Engines](../../winscript/windows-script-engines.md) .  
   
 ## <a name="see-also"></a>Siehe auch  
- [IActiveScript:: Clone](../../winscript/reference/iactivescript-clone.md)   
- [Getscriptdispatch](../../winscript/reference/iactivescript-getscriptdispatch.md)   
- [IActiveScript:: Interruptscriptthread](../../winscript/reference/iactivescript-interruptscriptthread.md)   
- [IActiveScriptParse:: Parsescripttext](../../winscript/reference/iactivescriptparse-parsescripttext.md)   
+ [IActiveScript::Clone](../../winscript/reference/iactivescript-clone.md)   
+ [IActiveScript::GetScriptDispatch](../../winscript/reference/iactivescript-getscriptdispatch.md)   
+ [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)   
+ [IActiveScriptParse::ParseScriptText](../../winscript/reference/iactivescriptparse-parsescripttext.md)   
  [IActiveScriptSite::GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md)

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], troubleshooting
 - Office development in Visual Studio, troubleshooting
 - deploying applications [Office development in Visual Studio], troubleshooting
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5d6dc3a871389b8b7624b31a4f2a4d3e4e185865
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 418a1a22979b701ec1d1d32521f7f89e2c5274eb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947256"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978327"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Problembehandlung bei Office-projektmappenbereitstellung
   Dieses Thema enthält Informationen zur Lösung von allgemeinen Problemen, die beim Bereitstellen von Office-Projektmappen auftreten können.
@@ -43,11 +43,11 @@ ms.locfileid: "53947256"
 
 #### <a name="to-set-the-time-out-value"></a>So legen Sie den Timeoutwert fest
 
-1.  Navigieren Sie in der Registrierung zu folgendem Schlüssel:
+1. Navigieren Sie in der Registrierung zu folgendem Schlüssel:
 
      **HKEY_CURRENT_USER\Software\Microsoft\VSTA**
 
-2.  Legen Sie im Unterschlüssel **AddInTimeout** den Timeoutwert in Millisekunden fest.
+2. Legen Sie im Unterschlüssel **AddInTimeout** den Timeoutwert in Millisekunden fest.
 
      Ist der Unterschlüssel **AddInTimeout** nicht vorhanden, erstellen Sie ihn als DWORD.
 

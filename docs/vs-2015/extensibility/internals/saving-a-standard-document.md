@@ -1,14 +1,9 @@
 ---
 title: Speichern eines Standarddokuments | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], saving standard documents
 - projects [Visual Studio SDK], saving standard documents
@@ -16,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: d692fedf-b46e-4d60-84bd-578635042235
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 72415a4ddfa3de9511aab4b52ae37960af872fde
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5040070287db6486fa62c9010fe023be31b04cbe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803577"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052479"
 ---
 # <a name="saving-a-standard-document"></a>Speichern eines Standarddokuments
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Die Umgebung verarbeitet die speichern, speichern unter, und speichern Sie alle Befehle. Wenn ein Benutzer auswählt **speichern**, **speichern unter**, oder **alle speichern** aus der **Datei** Menü oder schließt die Projektmappe, wodurch eine  **Speichern Sie alle**, der folgende Prozess durchgeführt.  
   
- ![Standard-Editor](../../extensibility/internals/media/public.gif "öffentliche")  
+ ![Standard Editor](../../extensibility/internals/media/public.gif "Public")  
 Speichern Sie, speichern und Klassenbehandlung für ein standard-Editor-Befehl Alle speichern  
   
  Dieser Prozess wird in den folgenden Schritten beschrieben:  
@@ -58,13 +53,12 @@ Speichern Sie, speichern und Klassenbehandlung für ein standard-Editor-Befehl A
   
 #### <a name="to-change-file-ownership-to-the-miscellaneous-files-project"></a>So ändern Sie den Besitzer auf das Projekt verschiedene Dateien  
   
-1.  Dienst für die Abfrage die <xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager> Schnittstelle.  
+1. Dienst für die Abfrage die <xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager> Schnittstelle.  
   
      Ein Zeiger auf <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2> zurückgegeben wird.  
   
-2.  Rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> (`pszMkDocumentNew`, `punkWindowFrame`) Methode, um das Dokument an die neue Hierarchie übertragen. Diese Methode wird von die Hierarchie Ausführen den Befehl Speichern unter aufgerufen.  
+2. Rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> (`pszMkDocumentNew`, `punkWindowFrame`) Methode, um das Dokument an die neue Hierarchie übertragen. Diese Methode wird von die Hierarchie Ausführen den Befehl Speichern unter aufgerufen.  
   
 ## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
  [Öffnen und Speichern von Projektelementen](../../extensibility/internals/opening-and-saving-project-items.md)
-

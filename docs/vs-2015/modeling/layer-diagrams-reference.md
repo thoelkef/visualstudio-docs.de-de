@@ -1,12 +1,9 @@
 ---
-title: 'Ebenendiagramme: Verweisen | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Ebenendiagramme: Verweis | Microsoft-Dokumentation'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.layerdiagram.layerexplorer.artifactlink
 - vs.teamarch.layerdiagram.layerexplorer.artifactlink.properties
@@ -24,13 +21,13 @@ ms.assetid: f26c986c-1e79-420e-b29a-a283e6d8a71d
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 904b92a058b8fb50f3f2e53f093f4add3730dfbf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d281b0ddb15a2acc455acd037c088c133c74c1f1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783219"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440986"
 ---
 # <a name="layer-diagrams-reference"></a>Ebenendiagramme: Referenz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,13 +57,13 @@ In Visual Studio können Sie eine *Ebenendiagramm* um die hochrangige, logische 
   
 |**Form "**|**Element**|**Beschreibung**|  
 |---------------|-----------------|---------------------|  
-|1|**Ebene**|Eine logische Gruppe von physischen Artefakten im System. Diese Artefakte können Namespaces, Projekte, Klassen, Methoden usw. sein.<br /><br /> Um die Artefakte anzuzeigen, die auf eine Ebene verknüpft sind, öffnen Sie das Kontextmenü für die Ebene, und wählen Sie dann **Links anzeigen** öffnen **Ebenen-Explorer**.<br /><br /> Weitere Informationen finden Sie unter [Ebenen-Explorer](#Explorer).<br /><br /> -   **Namespace-Abhängigkeiten verboten** – gibt an, dass dieser Ebene zugeordnete Artefakte nicht von den angegebenen Namespaces abhängen dürfen.<br />-   **Forbidden Namespaces** – gibt an, dass dieser Ebene zugeordnete Artefakte nicht zu den angegebenen Namespaces gehören müssen.<br />-   **Erforderliche Namespaces** – gibt an, dass dieser Ebene zugeordnete Artefakte zu einem der angegebenen Namespaces gehören müssen.|  
+|1|**Layer**|Eine logische Gruppe von physischen Artefakten im System. Diese Artefakte können Namespaces, Projekte, Klassen, Methoden usw. sein.<br /><br /> Um die Artefakte anzuzeigen, die auf eine Ebene verknüpft sind, öffnen Sie das Kontextmenü für die Ebene, und wählen Sie dann **Links anzeigen** öffnen **Ebenen-Explorer**.<br /><br /> Weitere Informationen finden Sie unter [Ebenen-Explorer](#Explorer).<br /><br /> -   **Namespace-Abhängigkeiten verboten** – gibt an, dass dieser Ebene zugeordnete Artefakte nicht von den angegebenen Namespaces abhängen dürfen.<br />-   **Forbidden Namespaces** – gibt an, dass dieser Ebene zugeordnete Artefakte nicht zu den angegebenen Namespaces gehören müssen.<br />-   **Erforderliche Namespaces** – gibt an, dass dieser Ebene zugeordnete Artefakte zu einem der angegebenen Namespaces gehören müssen.|  
 |2|**Abhängigkeit**|Gibt an, dass eine Ebene die Funktionen in einer anderen Ebene verwenden darf, jedoch nicht umgekehrt.<br /><br /> -   **Richtung** -gibt die Richtung der Abhängigkeit.|  
 |3|**Bidirektionale Abhängigkeit**|Gibt an, dass eine Ebene die Funktionen in einer anderen Ebene verwenden darf und umgekehrt.<br /><br /> -   **Richtung** -gibt die Richtung der Abhängigkeit.|  
 |4|**Kommentar**|Verwenden Sie einen Kommentar, um dem Diagramm oder Elementen im Diagramm allgemeine Hinweise hinzuzufügen.|  
 |5|**Kommentarverknüpfung**|Verwenden Sie dieses Feature, um Kommentare mit Elementen im Diagramm zu verknüpfen.|  
   
-##  <a name="Explorer"></a> Ebenen-Explorer  
+## <a name="Explorer"></a> Ebenen-Explorer  
  Sie können jede Ebene mit Artefakten in der Projektmappe verknüpfen, z. B. Projekte, Klassen, Namespaces, Projektdateien und andere Teile der Software. Die Zahl auf einer Ebene zeigt die Anzahl von Artefakten an, die mit der Ebene verknüpft sind. Beachten Sie jedoch beim Lesen der Anzahl der Artefakte in einer Ebene Folgendes:  
   
 - Wenn eine Ebene mit einem Artefakt verknüpft ist, das andere Artefakte enthält, die Ebene jedoch nicht direkt mit den anderen Artefakten verknüpft ist, umfasst die Zahl nur das verknüpfte Artefakt. Die anderen Artefakte werden jedoch während der Ebenenvalidierung für die Analyse berücksichtigt.  
@@ -83,22 +80,19 @@ In Visual Studio können Sie eine *Ebenendiagramm* um die hochrangige, logische 
   
 #### <a name="to-examine-the-linked-artifacts"></a>So untersuchen Sie die verknüpften Artefakte  
   
--   Im Ebenendiagramm das Kontextmenü für eine oder mehrere Ebenen öffnen, und wählen Sie dann **Links anzeigen**.  
+- Im Ebenendiagramm das Kontextmenü für eine oder mehrere Ebenen öffnen, und wählen Sie dann **Links anzeigen**.  
   
      **Ebenen-Explorer** wird geöffnet und zeigt die Elemente, die mit den ausgewählten Ebenen verknüpft sind. **Ebenen-Explorer** verfügt über eine Spalte, die die Eigenschaften der Artefaktlinks anzeigt.  
   
     > [!NOTE]
-    >  Wenn Sie alle diese Eigenschaften können nicht angezeigt wird, erweitern Sie die **Ebenen-Explorer** Fenster.  
+    > Wenn Sie alle diese Eigenschaften können nicht angezeigt wird, erweitern Sie die **Ebenen-Explorer** Fenster.  
   
     |**Die Spalte im Ebenen-Explorer**|**Beschreibung**|  
     |----------------------------------|---------------------|  
     |**Kategorien**|Die Art des Artefakts, z. B. Klasse, Namespace, Quelldatei usw.|  
-    |**Ebene**|Die Ebene, die mit dem Artefakt verknüpft ist.|  
+    |**Layer**|Die Ebene, die mit dem Artefakt verknüpft ist.|  
     |**Unterstützt die Validierung**|Wenn **"true"**, und klicken Sie dann die ebenenvalidierung überprüfen kann, dass das Projekt mit Abhängigkeiten zu oder von diesem Element entspricht.<br /><br /> Wenn **"false"**, und klicken Sie dann der Link nicht an der ebenenvalidierung beteiligt ist.<br /><br /> Weitere Informationen finden Sie unter [Ebenendiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md).|  
     |**Bezeichner**|Der Verweis auf das verknüpfte Artefakt|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen von Modellen für Ihre App](../modeling/create-models-for-your-app.md)
-
-
-

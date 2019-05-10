@@ -1,25 +1,20 @@
 ---
 title: BC-Texturkomprimierungsvariante | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 2d0f5305-585b-4b01-bc9a-7a32d6e991da
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 818998511a4ef8b7f10b8225e71b414edafd9769
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f0758d9eb5a003b0353ceb4fee21996d90685fa5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736558"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111232"
 ---
 # <a name="bc-texture-compression-variant"></a>BC-Texturkomprimierungsvariante
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,13 +31,13 @@ Aktiviert die Blockkomprimierung von Texturen mit einem Pixelformat, das eine Va
   
 - Das in `D3D11_TEXTURE2D_DESC` übergebene `pDesc`-Objekt beschreibt eine nicht geänderte Shaderressource. Das bedeutet:  
   
-  -   Für das BindFlags-Member ist nur das Flag D3D11_BIND_SHADER_RESOURCE gesetzt.  
+  - Für das BindFlags-Member ist nur das Flag D3D11_BIND_SHADER_RESOURCE gesetzt.  
   
-  -   Das Usage-Member ist entweder auf D3D11_USAGE_DEFAULT oder auf D3D11_USAGE_IMMUTABLE gesetzt.  
+  - Das Usage-Member ist entweder auf D3D11_USAGE_DEFAULT oder auf D3D11_USAGE_IMMUTABLE gesetzt.  
   
-  -   Das CPUAccessFlags-Member ist auf 0 (kein Zugriff auf die CPU) gesetzt.  
+  - Das CPUAccessFlags-Member ist auf 0 (kein Zugriff auf die CPU) gesetzt.  
   
-  -   Das Count-Member des SamplerDesc-Members ist auf 1 (kein Multi-Sample Anti-Aliasing (MSAA)) gesetzt.  
+  - Das Count-Member des SamplerDesc-Members ist auf 1 (kein Multi-Sample Anti-Aliasing (MSAA)) gesetzt.  
   
 - Die ursprünglichen Daten werden beim Aufruf von `CreateTexture2D` bereitgestellt.  
   
@@ -70,6 +65,3 @@ Aktiviert die Blockkomprimierung von Texturen mit einem Pixelformat, das eine Va
   
 ## <a name="see-also"></a>Siehe auch  
  [Halb-/Viertel-Texturdimensionsvariante](../debugger/half-quarter-texture-dimensions-variant.md)
-
-
-

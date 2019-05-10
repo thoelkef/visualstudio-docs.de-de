@@ -1,11 +1,8 @@
 ---
 title: Mithilfe der Vorgängerversion des Zustandsautomatworkflow-Designers | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - StateFinalizationActivity activity
@@ -20,16 +17,16 @@ ms.assetid: 2cd21123-35c2-4eaf-82f6-86fce7a8f04d
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 30eaf026d0558538c51b4cbda313e051348a5120
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 54469f2e255ff9ea726ea1b6c13abcb55c33252d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444116"
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Verwenden des Zustandsautomatworkflow-Designers der Vorgängerversion
-Wenn erstellen Sie ein neues Zustandsautomat-Workflowprojekt in [!INCLUDE[vs2010](../includes/vs2010-md.md)] abzielt der [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], Sie können auch eine verwenden die **Konsolenanwendung für Zustandsautomatworkflows Zustand** oder die  **Status der Workflowbibliothek** legacy-Projektvorlage. Bei Auswahl einer der Zustandsautomatprojektvorlagen wird der Zustandsautomatdesigner als Workflow-Designer-Benutzeroberfläche der Vorgängerversion angezeigt. Informationen zu den älteren zustandsautomatprojektvorlagen finden Sie unter [Vorgehensweise: Erstellen Zustand Konsolenanwendungen für Zustandsautomatworkflows (Vorgängerversion)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) und [Vorgehensweise: Erstellen einer Zustandsautomatworkflowbibliothek (Vorgängerversion)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  
+Wenn erstellen Sie ein neues Zustandsautomat-Workflowprojekt in [!INCLUDE[vs2010](../includes/vs2010-md.md)] abzielt der [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], Sie können auch eine verwenden die **Konsolenanwendung für Zustandsautomatworkflows Zustand** oder die  **Status der Workflowbibliothek** legacy-Projektvorlage. Bei Auswahl einer der Zustandsautomatprojektvorlagen wird der Zustandsautomatdesigner als Workflow-Designer-Benutzeroberfläche der Vorgängerversion angezeigt. Weitere Informationen zu den älteren zustandsautomatprojektvorlagen, finden Sie unter [Vorgehensweise: Erstellen von Konsolenanwendungen für Zustandsautomat-Workflows (Vorgängerversion)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) und [Vorgehensweise: Erstellen einer Zustandsautomatworkflowbibliothek (Vorgängerversion)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  
   
  Ein Zustandsautomatworkflow besteht aus einem Statusset. Ein Status wird als der Ausgangsstatus bezeichnet. Jeder Zustand kann einen bestimmten Satz Ereignisse erhalten. Auf Grundlage eines Ereignisses kann ein Übergang zu einem anderen Zustand erfolgen. Der Zustandsautomatworkflow kann über einen Endzustand verfügen. Beim Übergang zum Endstatus wird der Workflow abgeschlossen.  
   
@@ -56,9 +53,9 @@ Wenn erstellen Sie ein neues Zustandsautomat-Workflowprojekt in [!INCLUDE[vs2010
  Wenn Sie ein neues ziehen **StateActivity** auf der Workflowentwurfsoberfläche, können Sie hinzufügen [EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65029), [StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65044), [ StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65043), oder zusätzliche **StateActivity** Aktivitäten als untergeordnete Aktivitäten.  
   
 > [!CAUTION]
->  Wenn Sie das Zustandsautomatworkflow-Designers verwenden, um Workflows zu erstellen, müssen Sie die Struktur des Workflows, die Sie entwerfen mit überwachen die **Dokumentgliederung** Fenster "Berichtsansicht". Die Ansicht der Struktur des zustandsautomatenworkflows in der **Dokumentgliederung** spiegelt die logische Struktur der Aktivitäten in der Workflowmarkupdatei anzeigen. Die physische Struktur der Workflowaktivitäten gemäß Darstellung auf der Entwurfsoberfläche spiegelt möglicherweise nicht die logische Struktur der Aktivitäten in der Workflowmarkupdatei wider.  
+> Wenn Sie das Zustandsautomatworkflow-Designers verwenden, um Workflows zu erstellen, müssen Sie die Struktur des Workflows, die Sie entwerfen mit überwachen die **Dokumentgliederung** Fenster "Berichtsansicht". Die Ansicht der Struktur des zustandsautomatenworkflows in der **Dokumentgliederung** spiegelt die logische Struktur der Aktivitäten in der Workflowmarkupdatei anzeigen. Die physische Struktur der Workflowaktivitäten gemäß Darstellung auf der Entwurfsoberfläche spiegelt möglicherweise nicht die logische Struktur der Aktivitäten in der Workflowmarkupdatei wider.  
 >   
->  Zum Öffnen der **Dokumentgliederung** Fenster auf die **Ansicht** , zeigen Sie auf **andere Windows**, und wählen Sie dann **Dokumentgliederung**.  
+> Zum Öffnen der **Dokumentgliederung** Fenster auf die **Ansicht** , zeigen Sie auf **andere Windows**, und wählen Sie dann **Dokumentgliederung**.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Vorgehensweise: Erstellen von Konsolenanwendungen für Zustandsautomat-Workflows (Vorgängerversion)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)   

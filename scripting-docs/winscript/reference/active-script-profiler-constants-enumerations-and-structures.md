@@ -1,8 +1,7 @@
 ---
-title: Active Script Profiler-Konstanten, Enumerationen und Strukturen | Microsoft Docs
+title: Active Script Profiler-Konstanten, Enumerationen und Strukturen | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a37f64b14d0d732e48de66bb5268d47c95426937
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1d39e6feb2cddd0c573368db9bf50b1e77f2e48d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24642050"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955494"
 ---
 # <a name="active-script-profiler-constants-enumerations-and-structures"></a>Konstanten, Enumerationen und Strukturen für die Active Script-Profilerstellung
 Die folgenden Enumerationen werden von Active Script-Profilerschnittstellen verwendet.  

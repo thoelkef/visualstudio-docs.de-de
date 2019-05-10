@@ -1,46 +1,50 @@
 ---
 title: 'Fehler: Eine Sicherheitsprüfung ist fehlgeschlagen, weil der IIS-Verwaltungsdienst nicht reagiert hat | Microsoft-Dokumentation'
-ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
-ms.topic: troubleshooting
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.iis_not_responding
 dev_langs:
-- CSharp
-- VB
 - FSharp
+- VB
+- CSharp
 - C++
 helpviewer_keywords:
 - debugger, Web application errors
-author: mikejo5000
+ms.assetid: 6060e94e-71dc-49f2-bb59-2584216eadbf
+caps.latest.revision: 13
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: 4f307e84f5267036e480ab1ec8118c32ee632bff
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+manager: jillfra
+ms.openlocfilehash: 8ae97ae0594b06e9b35ac3bdd61eacf852968889
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058060"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851033"
 ---
 # <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>Fehler: Fehler bei einer Sicherheitsüberprüfung, weil der IIS-Verwaltungsdienst nicht reagiert hat
-Dieser Fehler tritt auf, wenn der IIS-Verwaltungsdienst nicht reagiert. Normalerweise weist dies auf ein Problem mit der IIS-Installation hin. Überprüfen Sie, dass der Dienst ausgeführt wird, mit der **Services** tool **Verwaltung**.  
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
+Dieser Fehler tritt auf, wenn der IIS-Verwaltungsdienst nicht reagiert. Normalerweise weist dies auf ein Problem mit der IIS-Installation hin. Stellen Sie zunächst in der **Verwaltung** unter **Dienste** sicher, dass der Dienst ausgeführt wird.  
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Installieren Sie IIS mithilfe der **Software** Systemsteuerung.  
+- Installieren Sie IIS mithilfe der Option **Software** in der Systemsteuerung neu.  
   
--   - oder -   
+- - oder -   
   
--   IIS in der Systemsteuerung mithilfe der Einstellungen „Software“ vom Computer entfernen. Wenn Sie IIS entfernt haben und die Probleme weiterhin auftreten, vergewissern Sie sich in der Registrierung, dass der folgende Schlüssel nicht mehr existiert:  
+- IIS in der Systemsteuerung mithilfe der Einstellungen „Software“ vom Computer entfernen. Wenn Sie IIS entfernt haben und die Probleme weiterhin auftreten, vergewissern Sie sich in der Registrierung, dass der folgende Schlüssel nicht mehr existiert:  
   
-    `HKEY_CLASSES_ROOT\CLSID\{A9E69610-B80D-11D0-B9B9-00A0C922E750}`  
+    ```  
+    HKEY_CLASSES_ROOT\CLSID\{A9E69610-B80D-11D0-B9B9-00A0C922E750}  
+    ```  
   
      - oder -   
   
--   Deaktivieren Sie den IIS-Verwaltungsdienst mithilfe der Einstellungen „Verwaltung“. Dadurch wird IIS auf dem Computer deaktiviert.  
+- Deaktivieren Sie den IIS-Verwaltungsdienst in der Systemsteuerung über die Option Verwaltung. Dadurch wird IIS auf dem Computer deaktiviert.  
   
      Sie müssen den Computer nach jedem dieser drei Schritte neu starten.  
   

@@ -1,7 +1,6 @@
 ---
 title: Als Administrator ausführen
 ms.date: 06/05/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, user permissions
@@ -10,15 +9,15 @@ helpviewer_keywords:
 - permissions
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14d82825d9f1db2cd95222f4722d19b2f9347186
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 229b1606a8a7de18da7354852e3e5adb9123f5b5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833590"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821642"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Benutzerberechtigungen und Visual Studio
 
@@ -51,11 +50,25 @@ Wenn Sie Visual Studio als Administrator ausführen müssen, befolgen Sie diese 
 > [!NOTE]
 > Diese Anweisungen gelten für Windows 10. Für andere Windows-Versionen lauten die Anweisungen ähnlich.
 
+::: moniker range="vs-2017"
+
 1. Öffnen Sie das Menü **Start**, und scrollen Sie zu Visual Studio 2017.
 
 1. Wählen Sie im Kontextmenü von **Visual Studio 2017** die Optionen **Mehr** > **Als Administrator ausführen** aus.
 
    Beim Starten von Visual Studio wird **(Administrator)** nach dem Produktnamen in der Titelleiste angezeigt.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Öffnen Sie das Menü **Start**, und scrollen Sie zu Visual Studio 2019.
+
+1. Wählen Sie im Kontextmenü von **Visual Studio 2019** die Optionen **Mehr** > **Als Administrator ausführen** aus.
+
+   Beim Starten von Visual Studio wird **(Administrator)** nach dem Produktnamen in der Titelleiste angezeigt.
+
+::: moniker-end
 
 Sie können die Anwendungsverknüpfung ebenfalls so ändern, dass die Anwendung immer mit Administratorberechtigungen ausgeführt wird.
 

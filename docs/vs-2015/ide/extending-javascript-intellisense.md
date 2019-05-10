@@ -1,14 +1,9 @@
 ---
 title: Erweitern von JavaScript IntelliSense | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - JavaScript, intellisense object
 - extending JavaScript IntelliSense
@@ -19,13 +14,13 @@ ms.assetid: 004e1ab6-bd7a-4327-9e01-89b9be96ba2f
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 239416a1638940207a8dcb78b395ed1915e8a93a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e995d9cfd37c625c03df0b607a9dd5184bec5d08
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867070"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441463"
 ---
 # <a name="extending-javascript-intellisense"></a>Erweitern von JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +75,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
  Weitere Beispiele finden Sie in der \\ \\ *Visual Studio-Installationspfad*\JavaScript\References-Ordner. Die showPlainComments.js-Datei in diesem Ordner enthält Beispiele für die Verwendung von anderen Ereignissen zu Standard-IntelliSense-Unterstützung für den standardmäßigen JavaScript-Kommentartags (/ /). Wie underscorefilter.js showPlainComments.js ist bereits als eine Erweiterung für die Arbeit zur Verfügung, und sehen Sie die resultierende IntelliSense-Informationen beim Kommentartags für Variablen, Funktionen und Objekte in Ihrem Code verwenden. Weitere Beispiele finden Sie unter [Codebeispiele](#CodeExamples).  
   
 > [!WARNING]
->  Wenn Sie die Erweiterungsdateien in Visual Studio enthaltenen ändern, können Sie JavaScript-IntelliSense oder die Funktion, die von der Erweiterung unterstützten deaktivieren.  
+> Wenn Sie die Erweiterungsdateien in Visual Studio enthaltenen ändern, können Sie JavaScript-IntelliSense oder die Funktion, die von der Erweiterung unterstützten deaktivieren.  
   
  Sie können Handler für die folgenden Ereignistypen in Ihrem Erweiterungscode erstellen, mit `addEventListener`:  
   
@@ -93,14 +88,14 @@ intellisense.addEventListener('statementcompletion', function (event) {
   Beispiele, die IntelliSense-Features wie Anweisungsvervollständigung, Informationen zu den Parametern und QuickInfo anzeigen, finden Sie unter [Verwenden von IntelliSense](../ide/using-intellisense.md).  
   
 > [!NOTE]
->  In JavaScript bezieht sich auf das Popup-Feld, das rechts vom eine Vervollständigungsliste angezeigt wird. "QuickInfo". Sie können keine QuickInfo manuell aufrufen.  
+> In JavaScript bezieht sich auf das Popup-Feld, das rechts vom eine Vervollständigungsliste angezeigt wird. "QuickInfo". Sie können keine QuickInfo manuell aufrufen.  
   
-##  <a name="intellisenseObject"></a> IntelliSense-Objekt  
+## <a name="intellisenseObject"></a> IntelliSense-Objekt  
  Die folgende Tabelle zeigt die verfügbaren Funktionen für die `intellisense` Objekt. Die `intellisense` Objekt steht nur zur Entwurfszeit.  
   
 |Funktion|Beschreibung|  
 |--------------|-----------------|  
-|`addEventListener(type, handler);`|Fügt einen Ereignishandler für ein IntelliSense-Ereignis hinzu.<br /><br /> `type` ist ein Zeichenfolgenwert. Gültige Werte sind `statementcompletion`, `signaturehelp`, und `statementcompletionhint`.<br /><br /> `handler` ist eine Ereignishandlerfunktion, die empfängt ein Ereignisobjekt, eines der folgenden Typen:<br /><br /> -   `CompletionEvent`, verwendet für die `statementcompletion` Ereignis.<br />-   `SignatureHelpEvent`, verwendet für die `signaturehelp` Ereignis.<br />-   `CompletionHintEvent`, verwendet für die `statementcompletionhint` Ereignis.<br /><br /> Beispiele, die diese Funktion verwenden, finden Sie unter [Codebeispiele](#CodeExamples).|  
+|`addEventListener(type, handler);`|Fügt einen Ereignishandler für ein IntelliSense-Ereignis hinzu.<br /><br /> `type` ist ein Zeichenfolgenwert. Gültige Werte sind u.a. `statementcompletion`, `signaturehelp` und `statementcompletionhint`.<br /><br /> `handler` ist eine Ereignishandlerfunktion, die empfängt ein Ereignisobjekt, eines der folgenden Typen:<br /><br /> -   `CompletionEvent`, verwendet für die `statementcompletion` Ereignis.<br />-   `SignatureHelpEvent`, verwendet für die `signaturehelp` Ereignis.<br />-   `CompletionHintEvent`, verwendet für die `statementcompletionhint` Ereignis.<br /><br /> Beispiele, die diese Funktion verwenden, finden Sie unter [Codebeispiele](#CodeExamples).|  
 |`annotate(obj, doc);`|Gibt die Dokumentation für ein Objekt durch Kopieren der Kommentare zur Dokumentation von einem Objekt in ein anderes Objekt an.<br /><br /> `obj` Gibt das Objekt, in der Dokumentation zu kopieren.<br /><br /> `doc` Gibt das Objekt aus der Dokumentation zu kopieren.<br /><br /> Ein Beispiel, das zeigt, wie Sie diese Funktion verwenden, finden Sie unter [Hinzufügen von IntelliSense Anmerkungen](#Annotations).|  
 |`getFunctionComments(func);`|Gibt die Kommentare für eine angegebene Funktion zurück.<br /><br /> `func` Gibt die Funktion für die Kommentare zurückgegeben werden.<br /><br /> Sie können festlegen, die `func` Parameter, indem `completionItem.value`.<br /><br /> Das zurückgegebene `functionComments` Objekt enthält die folgenden Elemente: `above`, `inside`, und `paramComment`. Weitere Informationen finden Sie unter den [FunctionComments Eigenschaft](#FunctionComments) Eigenschaft.<br /><br /> `getFunctionComments` kann nur aufgerufen werden, in einem Ereignishandler, die von registriert werden `addEventListener`.<br /><br /> Ein Beispiel, das zeigt, wie Sie diese Funktion verwenden, finden Sie unter \\ \\ *Visual Studio-Installationspfad*\JavaScript\References\showPlainComments.js.|  
 |`logMessage(msg);`|Sendet diagnosemeldungen im Ausgabefenster.<br /><br /> `msg` ist eine Zeichenfolge, die die Nachricht enthält.<br /><br /> Ein Beispiel, das zeigt, wie Sie diese Funktion verwenden, finden Sie unter [Senden von Nachrichten an das Fenster "Ausgabe"](#Logging).|  
@@ -113,118 +108,118 @@ intellisense.addEventListener('statementcompletion', function (event) {
 ## <a name="event-members"></a>Ereignismember  
  Die folgenden Abschnitte beschreiben die Elemente, die in das Ereignisobjekt für die folgenden Ereignisse verfügbar gemacht werden: `statementcompletion`, `signaturehelp`, und `statementcompletionhint`.  
   
-###  <a name="CompletionItem"></a> CompletionItem-Eigenschaft  
+### <a name="CompletionItem"></a> CompletionItem-Eigenschaft  
  Gibt den Bezeichner, bekannt als die vervollständigungselement, für die eine QuickInfo-Popupfeld angefordert werden. Diese Eigenschaft steht für die `statementcompletionhint` Ereignisobjekt und für die [-Elementeigenschaft](#Items) Eigenschaft der `statementcompletion` Ereignisobjekt.  
   
  Rückgabewert: `completionItem` Objekt  
   
  Folgende Elemente gehören die `completionItem` Objekt:  
   
--   `name`. Lese-/Schreibzugriff, bei der Verwendung in der `items` Auflistung, andernfalls schreibgeschützt. Gibt eine Zeichenfolge, die dem Abschlusselement identifiziert.  
+- `name`. Lese-/Schreibzugriff, bei der Verwendung in der `items` Auflistung, andernfalls schreibgeschützt. Gibt eine Zeichenfolge, die dem Abschlusselement identifiziert.  
   
--   `kind`. Lese-/Schreibzugriff, bei der Verwendung in der `items` Auflistung, andernfalls schreibgeschützt. Gibt eine Zeichenfolge, die den Typ des Elements Vervollständigung darstellt. Die möglichen Werte sind-Methode, Feld, Eigenschaft, Parameter, Variablen, und reserviert.  
+- `kind`. Lese-/Schreibzugriff, bei der Verwendung in der `items` Auflistung, andernfalls schreibgeschützt. Gibt eine Zeichenfolge, die den Typ des Elements Vervollständigung darstellt. Die möglichen Werte sind-Methode, Feld, Eigenschaft, Parameter, Variablen, und reserviert.  
   
--   `glyph`. Lese-/Schreibzugriff, bei der Verwendung in der `items` Auflistung, andernfalls schreibgeschützt. Gibt eine Zeichenfolge, die ein Symbol darstellt, die in der Vervollständigungsliste angezeigt wird. Die möglichen Werte für `glyph` verwenden das folgende Format: Visual Studio:*GlyphType*, wobei *GlyphType* entspricht die sprachunabhängige Elemente in der <xref:Microsoft.VisualStudio.Language.Intellisense.StandardGlyphGroup> Enumeration. Z. B. `vs:GlyphGroupMethod` ist ein möglicher Wert für `glyph`. Wenn `glyph` nicht festgelegt ist, die `kind` -Eigenschaft bestimmt das Standardsymbol.  
+- `glyph`. Lese-/Schreibzugriff, bei der Verwendung in der `items` Auflistung, andernfalls schreibgeschützt. Gibt eine Zeichenfolge, die ein Symbol darstellt, die in der Vervollständigungsliste angezeigt wird. Die möglichen Werte für `glyph` verwenden das folgende Format: Visual Studio:*GlyphType*, wobei *GlyphType* entspricht die sprachunabhängige Elemente in der <xref:Microsoft.VisualStudio.Language.Intellisense.StandardGlyphGroup> Enumeration. Z. B. `vs:GlyphGroupMethod` ist ein möglicher Wert für `glyph`. Wenn `glyph` nicht festgelegt ist, die `kind` -Eigenschaft bestimmt das Standardsymbol.  
   
--   `parentObject`. Schreibgeschützt. Gibt das übergeordnete Objekt zurück.  
+- `parentObject`. Schreibgeschützt. Gibt das übergeordnete Objekt zurück.  
   
--   `value`. Schreibgeschützt. Gibt ein Objekt, das den Wert des Elements der Vervollständigung darstellt.  
+- `value`. Schreibgeschützt. Gibt ein Objekt, das den Wert des Elements der Vervollständigung darstellt.  
   
--   `comments`. Schreibgeschützt. Gibt eine Zeichenfolge, die die Kommentare enthält, die über das Feld oder Variable.  
+- `comments`. Schreibgeschützt. Gibt eine Zeichenfolge, die die Kommentare enthält, die über das Feld oder Variable.  
   
--   `scope`. Schreibgeschützt. Gibt den Bereich des Elements der Vervollständigung zurück. Die möglichen Werte sind global, lokal, Parameter und Member.  
+- `scope`. Schreibgeschützt. Gibt den Bereich des Elements der Vervollständigung zurück. Die möglichen Werte sind global, lokal, Parameter und Member.  
   
-###  <a name="Items"></a> -Elementeigenschaft  
+### <a name="Items"></a> -Elementeigenschaft  
  Übernimmt oder bestimmt das Array der Anweisung Vervollständigungselemente. Jedes Element im Array ist ein [CompletionItem Eigenschaft](#CompletionItem) Objekt. Die `items` Eigenschaft steht für die `statementcompletion` Ereignisobjekt.  
   
  Rückgabewert: Array  
   
-###  <a name="FunctionComments"></a> FunctionComments-Eigenschaft  
+### <a name="FunctionComments"></a> FunctionComments-Eigenschaft  
  Gibt die Kommentare für die Funktion zurück. Diese Eigenschaft steht für die `signaturehelp` Ereignisobjekt.  
   
  Rückgabewert: `comments` Objekt  
   
  Folgende Elemente gehören die `comments` Objekt:  
   
--   `above`. Gibt die Kommentare über die Funktion zurück.  
+- `above`. Gibt die Kommentare über die Funktion zurück.  
   
--   `inside`. Gibt die Kommentare innerhalb der Funktion, die in der Regel in VSDoc-Format zurück.  
+- `inside`. Gibt die Kommentare innerhalb der Funktion, die in der Regel in VSDoc-Format zurück.  
   
--   `paramComments`. Gibt ein Array, der Kommentare für jeden Parameter in der Funktion darstellt. Die Elemente des Arrays enthalten:  
+- `paramComments`. Gibt ein Array, der Kommentare für jeden Parameter in der Funktion darstellt. Die Elemente des Arrays enthalten:  
   
-    -   `name`. Gibt eine Zeichenfolge, die den Namen des Parameters darstellt.  
+    - `name`. Gibt eine Zeichenfolge, die den Namen des Parameters darstellt.  
   
-    -   `comment`. Gibt eine Zeichenfolge, die die Parameter-Kommentar enthält.  
+    - `comment`. Gibt eine Zeichenfolge, die die Parameter-Kommentar enthält.  
   
-###  <a name="FunctionHelp"></a> FunctionHelp-Eigenschaft  
+### <a name="FunctionHelp"></a> FunctionHelp-Eigenschaft  
  Gibt die Hilfe für die Funktion zurück. Diese Eigenschaft steht für die `signaturehelp` Ereignisobjekt.  
   
  Rückgabewert: `functionHelp` Objekt  
   
  Folgende Elemente gehören die `functionHelp` Objekt:  
   
--   `functionName`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die den Namen der Funktion enthält.  
+- `functionName`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die den Namen der Funktion enthält.  
   
--   `signatures`. Lese-/Schreibzugriff. Übernimmt oder bestimmt das Array von Funktionssignaturen. Jedes Element im Array ist ein `signature` Objekt. Einige `signature` Eigenschaften, z. B. `locid`, entsprechen allgemeinen [XML-Dokumentationskommentare](../ide/xml-documentation-comments-javascript.md) Attribute.  
+- `signatures`. Lese-/Schreibzugriff. Übernimmt oder bestimmt das Array von Funktionssignaturen. Jedes Element im Array ist ein `signature` Objekt. Einige `signature` Eigenschaften, z. B. `locid`, entsprechen allgemeinen [XML-Dokumentationskommentare](../ide/xml-documentation-comments-javascript.md) Attribute.  
   
      Die Mitglieder der `signature` Objekt einfügen möchten:  
   
-    -   `description`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die die Funktion beschreibt.  
+    - `description`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die die Funktion beschreibt.  
   
-    -   `locid`. Lese-/Schreibzugriff. Gibt einen Zeichenfolgenbezeichner, der Lokalisierungsinformationen über die Funktion enthält.  
+    - `locid`. Lese-/Schreibzugriff. Gibt einen Zeichenfolgenbezeichner, der Lokalisierungsinformationen über die Funktion enthält.  
   
-    -   `helpKeyword`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die das Hilfeschlüsselwort enthält.  
+    - `helpKeyword`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die das Hilfeschlüsselwort enthält.  
   
-    -   `externalFile`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die die Datei darstellt, die Member-ID. enthält  
+    - `externalFile`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die die Datei darstellt, die Member-ID. enthält  
   
-    -   `externalid`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die die Element-ID der Funktion darstellt.  
+    - `externalid`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die die Element-ID der Funktion darstellt.  
   
-    -   `params`. Lese-/Schreibzugriff. Ruft ab oder legt das Array von Parametern für die Funktion fest. Jedes Element im Parameterarray ist eine `parameter` Objekt mit Eigenschaften, die die folgenden Attribute des entsprechen, den [ \<Param >](../ide/param-javascript.md) Element:  
+    - `params`. Lese-/Schreibzugriff. Ruft ab oder legt das Array von Parametern für die Funktion fest. Jedes Element im Parameterarray ist eine `parameter` Objekt mit Eigenschaften, die die folgenden Attribute des entsprechen, den [ \<Param >](../ide/param-javascript.md) Element:  
   
-        -   `name`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die den Namen des Parameters darstellt.  
+        - `name`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die den Namen des Parameters darstellt.  
   
-        -   `type`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die den Parameter darstellt.  
+        - `type`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die den Parameter darstellt.  
   
-        -   `elementType`. Lese-/Schreibzugriff. Wenn der Typ ist `Array`, gibt eine Zeichenfolge, die den Typ der Elemente im Array darstellt.  
+        - `elementType`. Lese-/Schreibzugriff. Wenn der Typ ist `Array`, gibt eine Zeichenfolge, die den Typ der Elemente im Array darstellt.  
   
-        -   `description`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die die Parameter beschreibt.  
+        - `description`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die die Parameter beschreibt.  
   
-        -   `locid`. Lese-/Schreibzugriff. Gibt einen Zeichenfolgenbezeichner, der Lokalisierungsinformationen über die Funktion enthält.  
+        - `locid`. Lese-/Schreibzugriff. Gibt einen Zeichenfolgenbezeichner, der Lokalisierungsinformationen über die Funktion enthält.  
   
-        -   `optional`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die angibt, ob der Parameter optional ist. `true` Gibt an, dass der Parameter optional ist; `false` gibt an, dass dies nicht der Fall.  
+        - `optional`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die angibt, ob der Parameter optional ist. `true` Gibt an, dass der Parameter optional ist; `false` gibt an, dass dies nicht der Fall.  
   
-    -   `returnValue`. Lese-/Schreibzugriff. Übernimmt oder bestimmt ein Rückgabewert-Objekt mit Eigenschaften, entsprechen die folgenden Attribute des der [ \<gibt >](../ide/returns-javascript.md) Element:  
+    - `returnValue`. Lese-/Schreibzugriff. Übernimmt oder bestimmt ein Rückgabewert-Objekt mit Eigenschaften, entsprechen die folgenden Attribute des der [ \<gibt >](../ide/returns-javascript.md) Element:  
   
-        -   `type`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die den Rückgabetyp darstellt.  
+        - `type`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die den Rückgabetyp darstellt.  
   
-        -   `elementType`. Lese-/Schreibzugriff. Wenn der Typ ist `Array`, gibt eine Zeichenfolge, die den Typ der Elemente im Array darstellt.  
+        - `elementType`. Lese-/Schreibzugriff. Wenn der Typ ist `Array`, gibt eine Zeichenfolge, die den Typ der Elemente im Array darstellt.  
   
-        -   `description`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die den Rückgabewert beschreibt.  
+        - `description`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die den Rückgabewert beschreibt.  
   
-        -   `locid`. Lese-/Schreibzugriff. Gibt einen Zeichenfolgenbezeichner, der Lokalisierungsinformationen über die Funktion enthält.  
+        - `locid`. Lese-/Schreibzugriff. Gibt einen Zeichenfolgenbezeichner, der Lokalisierungsinformationen über die Funktion enthält.  
   
-        -   `helpKeyword`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die das Hilfeschlüsselwort enthält.  
+        - `helpKeyword`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die das Hilfeschlüsselwort enthält.  
   
-        -   `externalFile`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die die Datei darstellt, die Member-ID. enthält  
+        - `externalFile`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die die Datei darstellt, die Member-ID. enthält  
   
-        -   `externalid`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die die Element-ID der Funktion darstellt.  
+        - `externalid`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die die Element-ID der Funktion darstellt.  
   
-###  <a name="ParentObject"></a> ParentObject-Eigenschaft  
+### <a name="ParentObject"></a> ParentObject-Eigenschaft  
  Gibt das übergeordnete Objekt einer Memberfunktion zurück. Beispielsweise `document.getElementByID`, `parentObject` gibt die `document` Objekt. Diese Eigenschaft steht für die `signaturehelp` Ereignisobjekt.  
   
  Rückgabewert: Objekt  
   
-###  <a name="Target"></a> Zieleigenschaft  
+### <a name="Target"></a> Zieleigenschaft  
  Gibt ein Objekt, das Element auf der linken Seite des Zeichens, Trigger, darstellt, die einen Punkt (.) ist. Für Funktionen `target` gibt die Funktion für die Parameterinformationen angefordert wird. Diese Eigenschaft steht für die `statementcompletion` und `signaturehelp` solcher Objekte.  
   
  Rückgabewert: Objekt  
   
-###  <a name="TargetName"></a> TargetName-Eigenschaft  
+### <a name="TargetName"></a> TargetName-Eigenschaft  
  Gibt eine Zeichenfolge, die das Ziel darstellt. "This.", z. B. für `targetName` gibt "this" zurück. Für "A.B" (wenn der Cursor hinter "B") `targetName` "B" zurückgegeben. Diese Eigenschaft steht für die `statementcompletion` Ereignisobjekt.  
   
  Rückgabewert: Zeichenfolge  
   
-###  <a name="SymbolHelp"></a> SymbolHelp-Eigenschaft  
+### <a name="SymbolHelp"></a> SymbolHelp-Eigenschaft  
  Gibt zurück, dem Abschlusselement für das eine QuickInfo-Popupfeld angefordert wird. Diese Eigenschaft steht für die `statementcompletionhint` Ereignisobjekt.  
   
  Rückgabewert: `symbolHelp` Objekt.  
@@ -233,29 +228,29 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
  Folgende Elemente gehören die `symbolHelp` Objekt:  
   
--   `name`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die den Namen des Bezeichners enthält.  
+- `name`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die den Namen des Bezeichners enthält.  
   
--   `symbolType`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die den Symboltyp darstellt. Mögliche Werte sind unbekannt, boolescher Wert, Zahl, Zeichenfolge, Objekt, Funktion, Array, Datum und Regex.  
+- `symbolType`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die den Symboltyp darstellt. Mögliche Werte sind unbekannt, boolescher Wert, Zahl, Zeichenfolge, Objekt, Funktion, Array, Datum und Regex.  
   
--   `symbolDisplayType`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die der Typname enthält angezeigt. Wenn `symbolDisplayType` ist nicht festgelegt, `symbolType` verwendet wird.  
+- `symbolDisplayType`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die der Typname enthält angezeigt. Wenn `symbolDisplayType` ist nicht festgelegt, `symbolType` verwendet wird.  
   
--   `elementType`. Lese-/Schreibzugriff. Wenn die `symbolType` ist `Array`, gibt eine Zeichenfolge, die den Typ der Elemente im Array darstellt.  
+- `elementType`. Lese-/Schreibzugriff. Wenn die `symbolType` ist `Array`, gibt eine Zeichenfolge, die den Typ der Elemente im Array darstellt.  
   
--   `scope`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die den Bereich des Symbols darstellt. Mögliche Werte sind global, lokal, Parameter und Member.  
+- `scope`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die den Bereich des Symbols darstellt. Mögliche Werte sind global, lokal, Parameter und Member.  
   
--   `description`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die eine Beschreibung des Symbols enthält, zurück.  
+- `description`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die eine Beschreibung des Symbols enthält, zurück.  
   
--   `locid`. Lese-/Schreibzugriff. Gibt einen Zeichenfolgenbezeichner, der Lokalisierungsinformationen über das Symbol enthält.  
+- `locid`. Lese-/Schreibzugriff. Gibt einen Zeichenfolgenbezeichner, der Lokalisierungsinformationen über das Symbol enthält.  
   
--   `helpKeyword`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die das Hilfeschlüsselwort enthält.  
+- `helpKeyword`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die das Hilfeschlüsselwort enthält.  
   
--   `externalFile`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die die Datei darstellt, die Member-ID. enthält  
+- `externalFile`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die die Datei darstellt, die Member-ID. enthält  
   
--   `externalid`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die die Element-ID des Symbols darstellt.  
+- `externalid`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die die Element-ID des Symbols darstellt.  
   
--   `functionHelp`. Lese-/Schreibzugriff. Gibt eine [FunctionHelp Eigenschaft](#FunctionHelp), die enthalten möglicherweise Informationen bei der `symbolType` Funktion.  
+- `functionHelp`. Lese-/Schreibzugriff. Gibt eine [FunctionHelp Eigenschaft](#FunctionHelp), die enthalten möglicherweise Informationen bei der `symbolType` Funktion.  
   
-###  <a name="Scope"></a> Scope-Eigenschaft  
+### <a name="Scope"></a> Scope-Eigenschaft  
  Gibt den Bereich "Abschluss" des Ereignisses an. Die möglichen Werte für den Abschluss Bereich sind global und Member. Diese Eigenschaft steht für die `statementcompletion` Ereignisobjekt.  
   
  Rückgabewert: Zeichenfolge  
@@ -263,27 +258,27 @@ intellisense.addEventListener('statementcompletion', function (event) {
 ## <a name="debugging-intellisense-extensions"></a>Debuggen von IntelliSense-Erweiterungen  
  Sie können die Erweiterungen nicht debuggen, jedoch können Sie die [Intellisense-Objekt](#intellisenseObject) Funktion zum Senden von Informationen an das Ausgabefenster von Visual Studio-Fenster. Ein Beispiel, das zeigt, wie Sie diese Funktion verwenden, finden Sie unter [Senden von Nachrichten an das Fenster "Ausgabe"](#Logging) weiter unten in diesem Thema. Für `logMessage` funktioniert, muss mindestens ein Ereignishandler in einer Erweiterung registriert werden.  
   
-##  <a name="CodeExamples"></a> Codebeispiele  
+## <a name="CodeExamples"></a> Codebeispiele  
  Dieser Abschnitt enthält Codebeispiele, die zeigen, wie Sie mit der IntelliSense-Erweiterbarkeits-APIs. Es gibt auch andere Möglichkeiten, diese APIs verwenden. Weitere Beispiele finden Sie unter den folgenden Dateien in die \\ \\ *Visual Studio-Installationspfad*\JavaScript\References-Ordner. Diese arbeiten Beispiele von JavaScript Language Service.  
   
--   underscoreFilter.js. Dieser Code wird die Private Member von IntelliSense ausgeblendet. Es enthält die Ereignishandler für die `statementcompletion` Ereignis.  
+- underscoreFilter.js. Dieser Code wird die Private Member von IntelliSense ausgeblendet. Es enthält die Ereignishandler für die `statementcompletion` Ereignis.  
   
--   showPlainComments.js. Dieser Code bietet IntelliSense-Unterstützung für standard-Kommentare. Es enthält die Ereignishandler für die `signaturehelp` und `statementcompletionhint` Ereignisse.  
+- showPlainComments.js. Dieser Code bietet IntelliSense-Unterstützung für standard-Kommentare. Es enthält die Ereignishandler für die `signaturehelp` und `statementcompletionhint` Ereignisse.  
   
-###  <a name="Annotations"></a> Hinzufügen von IntelliSense-Anmerkungen  
+### <a name="Annotations"></a> Hinzufügen von IntelliSense-Anmerkungen  
  Das folgende Verfahren zeigt, wie Dokumentation IntelliSense-Unterstützung für eine Drittanbieter-Bibliothek bereitgestellt werden, ohne die Bibliothek direkt ändern. Zu diesem Zweck können Sie `intellisense.annotate` in einer Erweiterung.  
   
  Damit dieses Beispiel funktioniert, benötigen Sie die folgenden JavaScript-Dateien im Projekt:  
   
--   demoLib.js, d.h. eine Projektdatei, die eine Drittanbieter-Bibliothek darstellt.  
+- demoLib.js, d.h. eine Projektdatei, die eine Drittanbieter-Bibliothek darstellt.  
   
--   demoLib.intellisense.js, das den IntelliSense-Erweiterung ist. Diese Datei muss nicht in das Projekt aufgenommen werden, muss sich aber im gleichen Ordner wie "exampleLib.js" befinden.  
+- demoLib.intellisense.js, das den IntelliSense-Erweiterung ist. Diese Datei muss nicht in das Projekt aufgenommen werden, muss sich aber im gleichen Ordner wie "exampleLib.js" befinden.  
   
--   appCode.js, eine Projektdatei, die App-Code darstellt.  
+- appCode.js, eine Projektdatei, die App-Code darstellt.  
   
 ##### <a name="to-add-an-intellisense-annotation"></a>Zum Hinzufügen einer IntelliSense-Anmerkung  
   
-1.  Fügen Sie den folgenden Code, um demoLib.js.  
+1. Fügen Sie den folgenden Code, um demoLib.js.  
   
     ```javascript  
     function someFunc(a) { };  
@@ -291,7 +286,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
     ```  
   
-2.  Fügen Sie den folgenden Code, um demoLib.intellisense.js.  
+2. Fügen Sie den folgenden Code, um demoLib.intellisense.js.  
   
     ```javascript  
     intellisense.annotate(someFunc, function (a) {  
@@ -307,35 +302,35 @@ intellisense.addEventListener('statementcompletion', function (event) {
     });  
     ```  
   
-3.  Fügen Sie die folgende Reference-Anweisung als erste Zeile in appCode.js hinzu. Der hier verwendete Pfad gibt an, dass sich die JavaScript-Dateien im gleichen Ordner befinden.  
+3. Fügen Sie die folgende Reference-Direktive als erste Zeile in appCode.js hinzu. Der hier verwendete Pfad gibt an, dass sich die JavaScript-Dateien im gleichen Ordner befinden.  
   
     ```javascript  
     /// <reference path="demoLib.js" />  
   
     ```  
   
-4.  Geben Sie in appCode.js den folgenden Code ein. Sie sehen, dass die XML-Dokumentationskommentare in der Erweiterung, die als IntelliSense-ParameterInfo angezeigt.  
+4. Geben Sie in appCode.js den folgenden Code ein. Sie sehen, dass die XML-Dokumentationskommentare in der Erweiterung, die als IntelliSense-ParameterInfo angezeigt.  
   
      ![Beispiel für die Verwendung von intellisense.annotate](../ide/media/js-intellisense-annotate-paraminfo.png "Js_intellisense_annotate_paraminfo")  
   
-5.  Geben Sie in appCode.js den folgenden Code ein. Während der Eingabe, sehen Sie die standard-Kommentare in der Erweiterung, die als IntelliSense-QuickInfo angezeigt.  
+5. Geben Sie in appCode.js den folgenden Code ein. Während der Eingabe, sehen Sie die standard-Kommentare in der Erweiterung, die als IntelliSense-QuickInfo angezeigt.  
   
      ![Beispiel für die Verwendung von intellisense.annotate](../ide/media/js-intellisense-annotations.png "Js_intellisense_annotations")  
   
-###  <a name="Logging"></a> Senden von Nachrichten an das Fenster "Ausgabe"  
+### <a name="Logging"></a> Senden von Nachrichten an das Fenster "Ausgabe"  
  Das folgende Verfahren veranschaulicht das Senden von Nachrichten an das Fenster "Ausgabe". Sie können Nachrichten zum Debuggen von IntelliSense-Erweiterungen senden.  
   
  Damit dieses Beispiel funktioniert, benötigen Sie die folgenden JavaScript-Dateien im Projekt:  
   
--   "examplelib.js", d.h. eine Projektdatei, die eine Drittanbieter-Bibliothek darstellt.  
+- "examplelib.js", d.h. eine Projektdatei, die eine Drittanbieter-Bibliothek darstellt.  
   
--   exampleLib.intellisense.js, das den IntelliSense-Erweiterung ist. Diese Datei muss nicht in das Projekt aufgenommen werden, muss sich aber im gleichen Ordner wie "exampleLib.js" befinden.  
+- exampleLib.intellisense.js, das den IntelliSense-Erweiterung ist. Diese Datei muss nicht in das Projekt aufgenommen werden, muss sich aber im gleichen Ordner wie "exampleLib.js" befinden.  
   
--   appCode.js, eine Projektdatei, die App-Code darstellt.  
+- appCode.js, eine Projektdatei, die App-Code darstellt.  
   
 ##### <a name="to-send-a-message-to-the-output-window"></a>Zum Senden einer Nachricht an das Ausgabefenster  
   
-1.  Fügen Sie den folgenden Code, um "examplelib.js".  
+1. Fügen Sie den folgenden Code, um "examplelib.js".  
   
     ```javascript  
     var someVar = {  
@@ -344,7 +339,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
     };  
     ```  
   
-2.  Fügen Sie den folgenden Code, um exampleLib.intellisense.js.  
+2. Fügen Sie den folgenden Code, um exampleLib.intellisense.js.  
   
     ```javascript  
     intellisense.addEventListener('statementcompletion', function (e) {  
@@ -362,16 +357,16 @@ intellisense.addEventListener('statementcompletion', function (event) {
     });  
     ```  
   
-3.  Fügen Sie die folgende Reference-Direktive als erste Zeile in appCode.js hinzu. Der hier verwendete Pfad gibt an, dass sich die JavaScript-Dateien im gleichen Ordner befinden.  
+3. Fügen Sie die folgende Reference-Direktive als erste Zeile in appCode.js hinzu. Der hier verwendete Pfad gibt an, dass sich die JavaScript-Dateien im gleichen Ordner befinden.  
   
     ```javascript  
     /// <reference path="exampleLib.js" />  
   
     ```  
   
-4.  Wählen Sie im Ausgabefenster **JavaScript Language Service** in die **Ausgabe anzeigen von** Liste. (Wählen Sie zum Anzeigen im Ausgabefenster **Ausgabe** aus dem Menü "Ansicht".)  
+4. Wählen Sie im Ausgabefenster **JavaScript Language Service** in die **Ausgabe anzeigen von** Liste. (Wählen Sie zum Anzeigen im Ausgabefenster **Ausgabe** aus dem Menü "Ansicht".)  
   
-5.  Geben Sie in appCode.js den folgenden Code ein. Während der Eingabe, zeigt das Fenster "Ausgabe" Nachrichten aus den Sprachdienst. Die erste Nachricht in das Fenster "Ausgabe" gibt an, dass die Anweisungsvervollständigung für den aktuellen Bereich angefordert wurde.  
+5. Geben Sie in appCode.js den folgenden Code ein. Während der Eingabe, zeigt das Fenster "Ausgabe" Nachrichten aus den Sprachdienst. Die erste Nachricht in das Fenster "Ausgabe" gibt an, dass die Anweisungsvervollständigung für den aktuellen Bereich angefordert wurde.  
   
     ```javascript  
     some  
@@ -388,9 +383,9 @@ intellisense.addEventListener('statementcompletion', function (event) {
     …  
     ```  
   
-6.  Wählen Sie die **alle löschen** Schaltfläche im Ausgabefenster angezeigt.  
+6. Wählen Sie die **alle löschen** Schaltfläche im Ausgabefenster angezeigt.  
   
-7.  Geben Sie den folgenden Code ein. Die erste Nachricht in das Fenster "Ausgabe" zeigt an, dass es sich bei eine Memberliste angefordert wurde.  
+7. Geben Sie den folgenden Code ein. Die erste Nachricht in das Fenster "Ausgabe" zeigt an, dass es sich bei eine Memberliste angefordert wurde.  
   
     ```javascript  
     someVar.  
@@ -407,22 +402,22 @@ intellisense.addEventListener('statementcompletion', function (event) {
     …  
     ```  
   
-###  <a name="Icons"></a> Ändern die IntelliSense-Symbole  
+### <a name="Icons"></a> Ändern die IntelliSense-Symbole  
  Das folgende Verfahren zeigt, wie so ändern Sie die Symbole, die von IntelliSense wird standardmäßig angezeigt wird. Dies kann nützlich sein, wenn Sie angeben, dass IntelliSense-Informationen zur Bibliothek-spezifische Konzepte beziehen, z. B. Namespaces, Klassen, Schnittstellen und Enumerationen.  
   
  Symbol "verfügbar"-Werte finden Sie unter <xref:Microsoft.VisualStudio.Language.Intellisense.StandardGlyphGroup>.  
   
  Damit dieses Beispiel funktioniert, benötigen Sie die folgenden JavaScript-Dateien im Projekt:  
   
--   in der Datei "examplelib.js", die ein Projekt ist diese Represens ein Drittanbieter-Bibliothek.  
+- in der Datei "examplelib.js", die ein Projekt ist diese Represens ein Drittanbieter-Bibliothek.  
   
--   exampleLib.intellisense.js, das den IntelliSense-Erweiterung ist. Diese Datei muss nicht in das Projekt aufgenommen werden, muss sich aber im gleichen Ordner wie "exampleLib.js" befinden.  
+- exampleLib.intellisense.js, das den IntelliSense-Erweiterung ist. Diese Datei muss nicht in das Projekt aufgenommen werden, muss sich aber im gleichen Ordner wie "exampleLib.js" befinden.  
   
--   appCode.js, eine Projektdatei, die App-Code darstellt.  
+- appCode.js, eine Projektdatei, die App-Code darstellt.  
   
 ##### <a name="to-change-the-icons"></a>So ändern Sie die Symbole  
   
-1.  Fügen Sie den folgenden Code, um "examplelib.js".  
+1. Fügen Sie den folgenden Code, um "examplelib.js".  
   
     ```javascript  
     function Namespace(name) {  
@@ -442,7 +437,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
     SomeNamespace.Enum1 = new Enum({ VALUE1: 0, VALUE2: 1 });  
     ```  
   
-2.  Fügen Sie den folgenden Code, um exampleLib.intellisense.js.  
+2. Fügen Sie den folgenden Code, um exampleLib.intellisense.js.  
   
     ```javascript  
     intellisense.addEventListener('statementcompletion', function (e) {  
@@ -484,35 +479,35 @@ intellisense.addEventListener('statementcompletion', function (event) {
     });  
     ```  
   
-3.  Fügen Sie die folgende Reference-Direktive als erste Zeile in appCode.js hinzu. Der hier verwendete Pfad gibt an, dass sich die JavaScript-Dateien im gleichen Ordner befinden.  
+3. Fügen Sie die folgende Reference-Direktive als erste Zeile in appCode.js hinzu. Der hier verwendete Pfad gibt an, dass sich die JavaScript-Dateien im gleichen Ordner befinden.  
   
     ```javascript  
     /// <reference path="exampleLib.js" />  
   
     ```  
   
-4.  Geben Sie in appCode.js den folgenden Code ein. Während der Eingabe, werden Sie feststellen, dass das Symbol für den Namespace, um geändert hat "{}", wie in c# verwendet wird.  
+4. Geben Sie in appCode.js den folgenden Code ein. Während der Eingabe, werden Sie feststellen, dass das Symbol für den Namespace, um geändert hat "{}", wie in c# verwendet wird.  
   
      ![Beispiel für die Verwendung der Symboleigenschaft](../ide/media/js-intellisense-glyph-namespace.png "Js_intellisense_glyph_namespace")  
   
-5.  Geben Sie in appCode.js den folgenden Code ein. Während der Eingabe, sehen Sie ein neues Symbol "Enumeration" für das Enum1-Element, und ein neues Klassensymbol für den SomeClass1-Member.  
+5. Geben Sie in appCode.js den folgenden Code ein. Während der Eingabe, sehen Sie ein neues Symbol "Enumeration" für das Enum1-Element, und ein neues Klassensymbol für den SomeClass1-Member.  
   
      ![Beispiel zur Verwendung der Symboleigenschaft](../ide/media/js-intellisense-glyph-class-enum.png "Js_intellisense_glyph_class_enum")  
   
-###  <a name="Overriding"></a> Vermeiden von Run-Time-Auswirkungen auf IntelliSense-Ergebnisse  
+### <a name="Overriding"></a> Vermeiden von Run-Time-Auswirkungen auf IntelliSense-Ergebnisse  
  JavaScript Language Service führt Code aus, um die IntelliSense-Informationen dynamisch bereitzustellen. Daher kann gelegentlich Laufzeitverhalten gewünschten Ergebnisse beeinflussen. Das folgende Verfahren veranschaulicht das Überschreiben von IntelliSense-Ergebnisse, wenn der falsche IntelliSense Laufzeitverhalten führt.  
   
  Damit dieses Beispiel funktioniert, benötigen Sie die folgenden JavaScript-Dateien im Projekt:  
   
--   "examplelib.js", d.h. eine Projektdatei, die eine Drittanbieter-Bibliothek darstellt.  
+- "examplelib.js", d.h. eine Projektdatei, die eine Drittanbieter-Bibliothek darstellt.  
   
--   exampleLib.intellisense.js, das den IntelliSense-Erweiterung ist. Diese Datei muss nicht in das Projekt aufgenommen werden, muss sich aber im gleichen Ordner wie "exampleLib.js" befinden.  
+- exampleLib.intellisense.js, das den IntelliSense-Erweiterung ist. Diese Datei muss nicht in das Projekt aufgenommen werden, muss sich aber im gleichen Ordner wie "exampleLib.js" befinden.  
   
--   appCode.js, eine Projektdatei, die App-Code darstellt.  
+- appCode.js, eine Projektdatei, die App-Code darstellt.  
   
 ##### <a name="to-avoid-run-time-effects-on-intellisense-results"></a>Um zur Laufzeit Auswirkungen auf IntelliSense-Ergebnisse zu vermeiden.  
   
-1.  Fügen Sie den folgenden Code, um "examplelib.js".  
+1. Fügen Sie den folgenden Code, um "examplelib.js".  
   
     ```javascript  
     function after(count, func) {  
@@ -526,18 +521,18 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
      Im vorangehenden Code ignoriert der umschlossene Funktion basierend auf den Wert des ersten Aufrufe `count`, und keine Ergebnisse zurückgeben.  
   
-2.  Fügen Sie die folgende Reference-Anweisung als erste Zeile in appCode.js hinzu. Der hier verwendete Pfad gibt an, dass sich die JavaScript-Dateien im gleichen Ordner befinden.  
+2. Fügen Sie die folgende Reference-Direktive als erste Zeile in appCode.js hinzu. Der hier verwendete Pfad gibt an, dass sich die JavaScript-Dateien im gleichen Ordner befinden.  
   
     ```javascript  
     /// <reference path="exampleLib.js" />  
   
     ```  
   
-3.  Geben Sie in appCode.js den folgenden Code ein. Die bezeichnerliste wird anstelle von IntelliSense angezeigt, da die umschlossene Funktion nie aufgerufen wird, bedeutet, dass, die `throttled` Funktion keine Ergebnisse zurück.  
+3. Geben Sie in appCode.js den folgenden Code ein. Die bezeichnerliste wird anstelle von IntelliSense angezeigt, da die umschlossene Funktion nie aufgerufen wird, bedeutet, dass, die `throttled` Funktion keine Ergebnisse zurück.  
   
      ![Beispiel zum Überschreiben der Intellisense-Ergebnisse](../ide/media/js-intellisense-override.png "Js_intellisense_override")  
   
-4.  Fügen Sie den folgenden Code, um exampleLib.intellisense.js. Dadurch wird das Verhalten während der Entwurfszeit geändert, damit, dass IntelliSense für die umschlossene Funktion angezeigt wird, wie erwartet.  
+4. Fügen Sie den folgenden Code, um exampleLib.intellisense.js. Dadurch wird das Verhalten während der Entwurfszeit geändert, damit, dass IntelliSense für die umschlossene Funktion angezeigt wird, wie erwartet.  
   
     ```javascript  
     window.after = function (count, func) {  
@@ -546,13 +541,10 @@ intellisense.addEventListener('statementcompletion', function (event) {
     };  
     ```  
   
-5.  Testen Sie die Ergebnisse in appcode.js hinzu Geben Sie den gleichen Code, den Sie zuvor eingegeben. Dieses Mal bietet IntelliSense die gewünschte Informationen.  
+5. Testen Sie die Ergebnisse in appcode.js hinzu Geben Sie den gleichen Code, den Sie zuvor eingegeben. Dieses Mal bietet IntelliSense die gewünschte Informationen.  
   
      ![Beispiel zum Überschreiben der IntelliSense-Ergebnisse](../ide/media/js-intellisense-override-fixed.png "Js_intellisense_override_fixed")  
   
 ## <a name="see-also"></a>Siehe auch  
  [JavaScript-IntelliSense](../ide/javascript-intellisense.md)   
  [Anweisungsvervollständigung für Bezeichner](../ide/statement-completion-for-identifiers.md)
-
-
-

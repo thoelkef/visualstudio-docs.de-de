@@ -1,14 +1,9 @@
 ---
 title: IDiaEnumLineNumbers | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: cdf07b4f-19e4-4dcd-8af8-c2dbca586a7c
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 087ebeee78d6b88ab1e3de20bc2553e6cfca749a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 98ed42fe1ae496e4c8692c2fd599eceb1c9508af
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772156"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079447"
 ---
 # <a name="idiaenumlinenumbers"></a>IDiaEnumLineNumbers
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ IDiaEnumLineNumbers : IUnknown
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IDiaEnumLineNumbers::get__NewEnum](../../debugger/debug-interface-access/idiaenumlinenumbers-get-newenum.md)|Ruft die [IEnumVARIANT-Schnittstelle](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e) Version von diesem Enumerator.|  
+|[IDiaEnumLineNumbers::get__NewEnum](../../debugger/debug-interface-access/idiaenumlinenumbers-get-newenum.md)|Ruft die [IEnumVARIANT-Schnittstelle](http://msdn.microsoft.com/139e3c93-faef-4003-9079-e0e94494db3e) Version von diesem Enumerator.|  
 |[IDiaEnumLineNumbers::get_Count](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md)|Ruft die Anzahl der Zeilennummern.|  
 |[IDiaEnumLineNumbers::Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)|Ruft die Nummer einer Zeile mithilfe eines Indexes ab.|  
 |[IDiaEnumLineNumbers::Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md)|Ruft eine angegebene Anzahl von Zeilennummern, in der Enumerationsfolge ab.|  
@@ -54,15 +49,15 @@ IDiaEnumLineNumbers : IUnknown
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
  Diese Schnittstelle wird abrufen durch Aufrufen einer der folgenden Methoden in der [IDiaSession](../../debugger/debug-interface-access/idiasession.md) Schnittstelle:  
   
--   [IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)  
+- [IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)  
   
--   [IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)  
+- [IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)  
   
--   [IDiaSession::findLinesByRVA](../../debugger/debug-interface-access/idiasession-findlinesbyrva.md)  
+- [IDiaSession::findLinesByRVA](../../debugger/debug-interface-access/idiasession-findlinesbyrva.md)  
   
--   [IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)  
+- [IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)  
   
--   [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)  
+- [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)  
   
 ## <a name="example"></a>Beispiel  
  Dieses Beispiel zeigt, wie Sie erhalten die `IDiaEnumLineNumbers` Schnittstelle aus einer Sitzung. In diesem Fall zeigt das Beispiel zum Abrufen der Anzahl Line-Enumeration für eine Funktion (dargestellt durch `pSymbol`). Ein vollständigeres Beispiel der Verwendung von Zeilennummern, finden Sie unter den [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) Schnittstelle.  
@@ -98,16 +93,13 @@ void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
   
  Bibliothek: diaguids.lib  
   
- DLL: "MSDIA80.dll"  
+ DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Siehe auch  
  [Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [Idiasession:: Findlinesbylinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
- [Idiasession:: Findlinesbyrva](../../debugger/debug-interface-access/idiasession-findlinesbyrva.md)   
- [Idiasession:: Findlinesbyva](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)   
- [Idiasession:: Findlines](../../debugger/debug-interface-access/idiasession-findlines.md)   
+ [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
+ [IDiaSession::findLinesByRVA](../../debugger/debug-interface-access/idiasession-findlinesbyrva.md)   
+ [IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)   
+ [IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)   
  [IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)
-
-
-

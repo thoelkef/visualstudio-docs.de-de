@@ -1,67 +1,61 @@
 ---
 title: Erste Schritte mit Visual Studio-Tools für Unity | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
+ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 66b5b4eb-13b5-4071-98d2-87fafa4598a8
 caps.latest.revision: 12
 author: conceptdev
 ms.author: crdun
-manager: ghogen
-ms.openlocfilehash: 9ed6cb4127ba57c6b9b84a32996968dbf9fac4fe
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d2959164c9c585ae2661517922464dd63845a836
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762725"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443056"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Erste Schritte mit Visual Studio-Tools für Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 In diesem Abschnitt erfahren Sie, wie Sie Visual Studio-Tools für Unity installieren und Ihr Unity-Projekt für die Zusammenarbeit mit Visual Studio konfigurieren.  
   
 > [!IMPORTANT]
->  In Unity 5.2 ist die Unterstützung von Visual Studio-Tools für Unity 2.1 bereits integriert, wodurch die Projekterstellung vereinfacht wird. Um diesen Vorteil zu nutzen, benötigen Sie Unity 5.2.0 oder höher unter Windows sowie Visual Studio-Tools für Unity 2.1 oder höher.  
+> In Unity 5.2 ist die Unterstützung von Visual Studio-Tools für Unity 2.1 bereits integriert, wodurch die Projekterstellung vereinfacht wird. Um diesen Vorteil zu nutzen, benötigen Sie Unity 5.2.0 oder höher unter Windows sowie Visual Studio-Tools für Unity 2.1 oder höher.  
   
 ## <a name="prerequisites"></a>Vorraussetzungen  
  Sie benötigen die folgenden Komponenten, um Visual Studio-Tools für Unity nutzen zu können:  
   
--   Eine Version von **Visual Studio** , die Erweiterungen unterstützt (z. B. Visual Studio Community, Professional, Premium oder Enterprise). Visual Studio Community können Sie kostenlos herunterladen.  
+- Eine Version von **Visual Studio** , die Erweiterungen unterstützt (z. B. Visual Studio Community, Professional, Premium oder Enterprise). Visual Studio Community können Sie kostenlos herunterladen.  
   
      [Visual Studio Community herunterladen](http://www.visualstudio.com/downloads/download-visual-studio-vs)  
   
--   **Unity** Version 4.0.0 oder höher; **Unity** Version 5.2.0 oder höher mit integrierter Unterstützung für Visual Studio-Tools für Unity Version 2.1 oder höher.  
+- **Unity** Version 4.0.0 oder höher; **Unity** Version 5.2.0 oder höher mit integrierter Unterstützung für Visual Studio-Tools für Unity Version 2.1 oder höher.  
   
      [Unity herunterladen](https://unity3d.com/get-unity/download)  
   
 ## <a name="install-visual-studio-tools-for-unity"></a>Installieren von Visual Studio-Tools für Unity  
  Laden Sie Visual Studio-Tools für Unity aus dem Visual Studio-Katalog herunter, und installieren Sie sie. Sie müssen das richtige Paket für Ihre Version von Visual Studio installieren. Stellen Sie sicher, dass Visual Studio-Tools für Unity 2.1 oder höher installiert ist, damit Sie die integrierte Unterstützung für VSTU in Unity 5.2 oder höher nutzen können.  
   
--   Für Visual Studio 2015 Community, Visual Studio 2015 Professional oder Visual Studio 2015 Enterprise:  
+- Für Visual Studio 2015 Community, Visual Studio 2015 Professional oder Visual Studio 2015 Enterprise:  
   
      [Visual Studio 2015-Tools für Unity herunterladen](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)  
   
--   Für Visual Studio 2013 Community, Visual Studio 2013 Professional oder Visual Studio 2013 Premium:  
+- Für Visual Studio 2013 Community, Visual Studio 2013 Professional oder Visual Studio 2013 Premium:  
   
      [Visual Studio 2013-Tools für Unity herunterladen](https://visualstudiogallery.msdn.microsoft.com/20b80b8c-659b-45ef-96c1-437828fe7cf2)  
   
--   Für Visual Studio 2012 Professional oder Visual Studio 2012 Premium:  
+- Für Visual Studio 2012 Professional oder Visual Studio 2012 Premium:  
   
      [Visual Studio 2012-Tools für Unity herunterladen](https://visualstudiogallery.msdn.microsoft.com/7ab11d2a-f413-4ed6-b3de-ff1d05157714)  
   
--   Für Visual Studio 2010 Professional oder Visual Studio 2010 Premium:  
+- Für Visual Studio 2010 Professional oder Visual Studio 2010 Premium:  
   
      [Visual Studio 2010-Tools für Unity herunterladen](https://visualstudiogallery.msdn.microsoft.com/6e536faa-ce73-494a-a746-6a14753015f1)  
   
 > [!NOTE]
->  Express-Editionen von Visual Studio unterstützen keine Erweiterungen wie z. B. Visual Studio-Tools für Unity. Visual Studio Community ist eine kostenlose Version von Visual Studio, die Visual Studio-Tools für Unity und andere Erweiterungen unterstützt. Für die meisten Benutzer ist Visual Studio Community besser geeignet als Express.  
+> Express-Editionen von Visual Studio unterstützen keine Erweiterungen wie z. B. Visual Studio-Tools für Unity. Visual Studio Community ist eine kostenlose Version von Visual Studio, die Visual Studio-Tools für Unity und andere Erweiterungen unterstützt. Für die meisten Benutzer ist Visual Studio Community besser geeignet als Express.  
   
 ## <a name="your-first-unity-project-with-visual-studio-tools-for-unity"></a>Ihr erstes Unity-Projekt mit Visual Studio-Tools für Unity  
  Nun, da Sie alles haben, was Sie brauchen, können Sie Ihr erstes Unity-Projekt mit Visual Studio in Angriff nehmen. Die Einrichtung Ihres Unity-Projekts hängt von der installierten Unity-Version und der Version von Visual Studio-Tools für Unity ab. Führen Sie nachfolgend die Schritte für die jeweils installierte Version von Unity und Visual Studio-Tools für Unity aus.  
@@ -119,4 +113,3 @@ In diesem Abschnitt erfahren Sie, wie Sie Visual Studio-Tools für Unity install
   
 ## <a name="see-also"></a>Siehe auch  
  [Unity-Homepage](http://unity3d.com)
-

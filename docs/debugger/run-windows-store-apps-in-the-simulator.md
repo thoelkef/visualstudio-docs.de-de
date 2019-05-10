@@ -10,108 +10,116 @@ dev_langs:
 ms.assetid: 81b69bf8-ec87-4bb6-9ad4-1fa7b7802d16
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 76803a268d06de276b8158a583f307d3f7e2f242
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 30952d191d6163e6ba82491342b5084e8e3f67b2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62930135"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Ausführen von UWP-Apps im Simulator
+
 Visual Studio-Simulator für UWP-apps ist eine Desktopanwendung, die eine UWP-app simuliert. In der Regel sollten Sie auf dem lokalen Computer, einem verbundenen Gerät oder einem Remotecomputer zu debuggen. In einigen Szenarien möchten jedoch möglicherweise Visual Studio-Simulator zu verwenden, um eine andere physische Bildschirmgröße und Auflösung zu emulieren. Sie können auch allgemeine berührungs- und drehungsereignisse simulieren und Netzwerkverbindungseigenschaften simulieren.
 
- Der Simulator stellt eine Umgebung, in der Sie können zu entwerfen, entwickeln, Debuggen und Testen von UWP-Apps, bereit. Bevor Sie Ihre app in Microsoft Store veröffentlichen, sollten Sie jedoch Ihre app auf einem echten Gerät testen.
+Der Simulator stellt eine Umgebung, in der Sie können zu entwerfen, entwickeln, Debuggen und Testen von UWP-Apps, bereit. Bevor Sie Ihre app in Microsoft Store veröffentlichen, sollten Sie jedoch Ihre app auf einem echten Gerät testen.
 
- Visual Studio-Simulator für UWP-apps wird nicht in einer isolierten Umgebung auf dem lokalen Computer ausgeführt werden. Daher können im Simulator auftretende Fehler, z. B. nicht behebbare systemweite Fehler, auch Auswirkungen auf den restlichen Computer haben.
+Visual Studio-Simulator für UWP-apps wird nicht in einer isolierten Umgebung auf dem lokalen Computer ausgeführt werden. Daher können im Simulator auftretende Fehler, z. B. nicht behebbare systemweite Fehler, auch Auswirkungen auf den restlichen Computer haben.
 
 > [!IMPORTANT]
->  Der Visual Studio 2015-Simulator umfasst nicht die Geolocation-Schaltfläche. Dies ist darin begründet, dass der Windows 10-Simulator keine Geolocation-Simulation umfasst.
+> Der Visual Studio 2015-Simulator umfasst nicht die Geolocation-Schaltfläche. Dies ist darin begründet, dass der Windows 10-Simulator keine Geolocation-Simulation umfasst.
 
-##  <a name="BKMK_Set_the_simulator_as_the_target"></a> Festlegen des Simulators als Ziel
- Wählen Sie zum Ausführen Ihrer UWP-app im Simulator **Simulator** aus der Dropdown-Liste neben der **Debuggen starten** Schaltfläche auf der Debugger **Standard** Symbolleiste. Diese Option ist nur verfügbar wenn Ihrer app **Mindestversion. Version** ist kleiner als oder gleich der für das Betriebssystem auf dem Entwicklungscomputer.
+## <a name="BKMK_Set_the_simulator_as_the_target"></a> Festlegen des Simulators als Ziel
 
- ![Ausführung im Simulator](../debugger/media/vsrun_f5_simulator.png "VSRUN_F5_Simulator")
+Wählen Sie zum Ausführen Ihrer UWP-app im Simulator **Simulator** aus der Dropdown-Liste neben der **Debuggen starten** Schaltfläche auf der Debugger **Standard** Symbolleiste. Diese Option ist nur verfügbar wenn Ihrer app **Mindestversion. Version** ist kleiner als oder gleich der für das Betriebssystem auf dem Entwicklungscomputer.
 
-##  <a name="BKMK_Choose_an_interaction_mode"></a> Auswählen eines Interaktionsmodus
- Sie können zwischen folgenden Interaktionsmodi wählen:
+![Ausführung im Simulator](../debugger/media/vsrun_f5_simulator.png "VSRUN_F5_Simulator")
 
--   ![Schaltfläche für Mausmodus](../debugger/media/simulator_mousemodebtn.png "SIMULATOR_MouseModeBtn") mausmodus: Legt den interaktionsmodus auf Mausgesten fest. Zu Mausgesten zählen Klicks, Doppelklicks und Ziehen.
+## <a name="BKMK_Choose_an_interaction_mode"></a> Auswählen eines Interaktionsmodus
 
--   ![Schaltfläche "Start Fingereingabe-Emulation"](../debugger/media/simulator_starttouchemulationbtn.png "SIMULATOR_StartTouchEmulationBtn") Fingereingabe-Emulation starten: Legt den interaktionsmodus auf fingereingabegesten mit einem einzelnen Finger fest. Zu Einfingerereignissen zählen Tippen, Ziehen und Streifen.
+Sie können die folgenden Interaktionsmodi wählen:
 
-     ![Simulator-Ziel für einen Finger](../debugger/media/simulator_onefinger.png "SIMULATOR_OneFinger") das einzelne Zielsymbol gibt die Position von Ereignissen im Simulator an. Verwenden Sie die Maus, um den Zeiger zu positionieren.
+- ![Schaltfläche für Mausmodus](../debugger/media/simulator_mousemodebtn.png "SIMULATOR_MouseModeBtn") mausmodus: Legt den interaktionsmodus auf Mausgesten fest. Zu Mausgesten zählen Klicks, Doppelklicks und Ziehen.
 
-     ![Ziel für eine fingerberührung](../debugger/media/simulator_onefingerengaged.png "SIMULATOR_OneFingerEngaged") drücken Sie die linke Maustaste gedrückt, um den fingereingabemodus zu aktivieren. Klicken Sie beispielsweise auf die Schaltfläche, um ein Tippen zu simulieren oder drücken und halten Sie die Schaltfläche beim Ziehen oder Streifen.
+- ![Schaltfläche "Start Fingereingabe-Emulation"](../debugger/media/simulator_starttouchemulationbtn.png "SIMULATOR_StartTouchEmulationBtn") Fingereingabe-Emulation starten: Legt den interaktionsmodus auf fingereingabegesten mit einem einzelnen Finger fest. Zu Einfingerereignissen zählen Tippen, Ziehen und Streifen.
+
+   ![Simulator-Ziel für einen Finger](../debugger/media/simulator_onefinger.png "SIMULATOR_OneFinger")
+   
+   Das einzelne Zielsymbol gibt die Position von Ereignissen im Simulator an. Verwenden Sie die Maus, um den Zeiger zu positionieren.
+
+   ![Ziel für eine fingerberührung](../debugger/media/simulator_onefingerengaged.png "SIMULATOR_OneFingerEngaged")
+   
+   Drücken Sie die linke Maustaste, um den Fingereingabemodus zu aktivieren. Klicken Sie beispielsweise auf die Schaltfläche, um ein Tippen zu simulieren oder drücken und halten Sie die Schaltfläche beim Ziehen oder Streifen.
 
 ## <a name="pinch-and-zoom"></a>Verkleinern und vergrößern
- Legt den Interaktionsmodus auf Verkleinerungs- und Vergrößerungsgesten fest.
 
--   ![Ziel der Simulator zwei-Finger](../debugger/media/simulator_twofinger.png "SIMULATOR_TwoFinger")
+Legt den Interaktionsmodus auf Verkleinerungs- und Vergrößerungsgesten fest.
 
-     Das doppelte Zielsymbol gibt die Position von zwei Fingern auf dem Gerätebildschirm an.
+![Simulator-zwei-Finger-Ziel](../debugger/media/simulator_twofinger.png)
 
-    -   Bewegen Sie den Mauszeiger, um die Symbole über dem Objekt auf dem Gerätebildschirm zu positionieren.
+Das doppelte Zielsymbol gibt die Position von zwei Fingern auf dem Gerätebildschirm an.
 
-    -   Drehen Sie das Mausrad nach oben oder unten , um den simulierten Abstand der zwei Finger vor dem Zusammendrücken oder Zoomen zu simulieren.
+- Bewegen Sie den Mauszeiger, um die Symbole über dem Objekt auf dem Gerätebildschirm zu positionieren.
 
--   -   ![Verkleinern, vergrößern und Drehen von Zielen](../debugger/media/simulator_twofingerengaged.png "SIMULATOR_TwoFingerEngaged")
+- Drehen Sie das Mausrad nach oben oder unten , um den simulierten Abstand der zwei Finger vor dem Zusammendrücken oder Zoomen zu simulieren.
 
-         Drücken Sie die linke Maustaste und drehen Sie das Mausrad nach unten (zu Ihnen hin), um zu vergrößern.
+![Verkleinern, Vergrößern und Drehen von Zielen](../debugger/media/simulator_twofingerengaged.png)
 
-    -   Drücken Sie die linke Maustaste und drehen Sie das Mausrad nach oben (von Ihnen weg), um zu verkleinern .
+- Drücken Sie die linke Maustaste und drehen Sie das Mausrad nach unten (zu Ihnen hin), um zu vergrößern.
+
+- Drücken Sie die linke Maustaste und drehen Sie das Mausrad nach oben (von Ihnen weg), um zu verkleinern .
 
 ## <a name="object-rotation"></a>Objektdrehung
- Die Schaltfläche **Fingereingabe-Emulation – Drehen** legt den Interaktionsmodus auf Drehbewegungen mit zwei Fingern fest.
 
--   -   Bewegen Sie den Mauszeiger, um die Symbole über dem Objekt auf dem Gerätebildschirm zu positionieren.
+Die Schaltfläche **Fingereingabe-Emulation – Drehen** legt den Interaktionsmodus auf Drehbewegungen mit zwei Fingern fest.
 
-    -   Drehen Sie das Mausrad nach oben oder unten, um die simulierte Ausrichtung der zwei Finger vor dem Drehen des Objekts zu simulieren.
+- Bewegen Sie den Mauszeiger, um die Symbole über dem Objekt auf dem Gerätebildschirm zu positionieren. Drehen Sie das Mausrad nach oben oder unten, um die simulierte Ausrichtung der zwei Finger vor dem Drehen des Objekts zu simulieren.
 
--   -   Drücken Sie die linke Maustaste und drehen Sie das Mausrad nach unten (zu Ihnen hin), um das Objekt gegen den Uhrzeigersinn zu drehen. Beim Drehen des Mausrads rotiert eines der beiden Zielsymbole um das andere, um die relative Größe der Drehung anzugeben.
+- Drücken Sie die linke Maustaste und drehen Sie das Mausrad nach unten (zu Ihnen hin), um das Objekt gegen den Uhrzeigersinn zu drehen. Beim Drehen des Mausrads rotiert eines der beiden Zielsymbole um das andere, um die relative Größe der Drehung anzugeben.
 
-    -   Drücken Sie die linke Maustaste und drehen Sie das Mausrad nach oben (von Ihnen weg), um das Objekt im Uhrzeigersinn zu drehen.
+- Drücken Sie die linke Maustaste und drehen Sie das Mausrad nach oben (von Ihnen weg), um das Objekt im Uhrzeigersinn zu drehen.
 
-##  <a name="BKMK_Enable_or_disable_Always_on_top_mode"></a> Aktivieren oder deaktivieren des "Immer im Vordergrund"-Modus
+## <a name="BKMK_Enable_or_disable_Always_on_top_mode"></a> Aktivieren oder deaktivieren des "Immer im Vordergrund"-Modus
  Sie können festlegen, dass das Simulatorfenster immer an der obersten Position aller Fenster angezeigt wird. Die Schaltfläche **Umschalten des obersten Fensters** aktiviert oder deaktiviert den Modus **Immer im Vordergrund** des Simulatorfensters.
 
-##  <a name="BKMK_Change_the_device_orientation"></a> Ändern der Geräteausrichtung
+## <a name="BKMK_Change_the_device_orientation"></a> Ändern der Geräteausrichtung
  Sie können Hochformat- und Querformatausrichtung des Geräts wechseln, indem Sie den Simulator in beliebiger Richtung um 90 Grad drehen.
 
 > [!NOTE]
->  Der Simulator berücksichtigt nicht die Eigenschaft [DisplayProperties.AutoRotationPreferences](http://go.microsoft.com/fwlink/?LinkId=249460) eines Projekts. Wenn Ihr Projekt beispielsweise auf die Ausrichtung `Landscape`festgelegt ist und Sie den Simulator in die Ausrichtung "Hochformat" drehen, wird die Anzeige des Simulators ebenfalls gedreht und die Größe angepasst. Testen Sie diese Einstellungen auf einem echten Gerät.
+> Der Simulator berücksichtigt nicht die Eigenschaft [DisplayProperties.AutoRotationPreferences](http://go.microsoft.com/fwlink/?LinkId=249460) eines Projekts. Wenn Ihr Projekt beispielsweise auf die Ausrichtung `Landscape`festgelegt ist und Sie den Simulator in die Ausrichtung "Hochformat" drehen, wird die Anzeige des Simulators ebenfalls gedreht und die Größe angepasst. Testen Sie diese Einstellungen auf einem echten Gerät.
 
 > [!NOTE]
->  Wenn Sie den Simulator so drehen, dass der Simulator größer als der Bildschirm ist, auf dem er angezeigt wird, erfolgt eine automatische Größenanpassung auf die Bildschirmgröße. Die ursprüngliche Größe des Simulators wird nicht wiederhergestellt, wenn Sie diesen erneut drehen.
+> Wenn Sie den Simulator so drehen, dass der Simulator größer als der Bildschirm ist, auf dem er angezeigt wird, erfolgt eine automatische Größenanpassung auf die Bildschirmgröße. Die ursprüngliche Größe des Simulators wird nicht wiederhergestellt, wenn Sie diesen erneut drehen.
 
-##  <a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a> Ändern der simulierten Bildschirmgröße und -auflösung
+## <a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a> Ändern der simulierten Bildschirmgröße und -auflösung
  Verwenden Sie die Schaltfläche **Auflösung ändern** auf der Palette, und wählen Sie anschließend eine neue Größe und Auflösung aus der Liste aus, um die simulierte Bildschirmgröße und -auflösung zu ändern.
 
  Die Bildschirmgröße und -auflösung werden als *Bildschirmbreite Zoll, Pixel Breite X Pixel Höhe*aufgeführt. Beachten Sie, dass sowohl Bildschirmgröße als auch -auflösung simuliert werden. Die Positionskoordinaten im Simulator werden in die Koordinaten der ausgewählten Gerätegröße und -auflösung übersetzt.
 
 > [!NOTE]
->  Sie können skalierte Versionen von Bitmapbildern in Ihrer App speichern, und Windows lädt das richtige Bild für die aktuelle Skalierung. Weitere Informationen finden Sie unter [Entwurfs- und Benutzeroberfläche-Einführung](/windows/uwp/layout/design-and-ui-intro). Wenn Sie die Simulatorauflösung ändern, sodass Windows ein anderes Bild für die Auflösung auswählt, müssen Sie die Debugsitzung beenden und erneut starten, damit das neue Bild angezeigt wird.
+> Sie können skalierte Versionen von Bitmapbildern in Ihrer App speichern, und Windows lädt das richtige Bild für die aktuelle Skalierung. Weitere Informationen finden Sie unter [Entwurfs- und Benutzeroberfläche-Einführung](/windows/uwp/layout/design-and-ui-intro). Wenn Sie die Simulatorauflösung ändern, sodass Windows ein anderes Bild für die Auflösung auswählt, müssen Sie die Debugsitzung beenden und erneut starten, damit das neue Bild angezeigt wird.
 
-##  <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Erstellen eines Screenshots Ihrer App für die Übermittlung zum Microsoft Store
+## <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Erstellen eines Screenshots Ihrer App für die Übermittlung zum Microsoft Store
  Wenn Sie eine app zum Microsoft Store übermitteln, müssen Sie Screenshots der app einschließen.
 
 > [!NOTE]
->  Der Screenshot wird in der aktuellen Auflösung des Simulators gespeichert. Verwenden Sie die Schaltfläche **Auflösung ändern** , um die Auflösung zu ändern.
+> Der Screenshot wird in der aktuellen Auflösung des Simulators gespeichert. Verwenden Sie die Schaltfläche **Auflösung ändern** , um die Auflösung zu ändern.
 
--   Verwenden Sie die Schaltfläche **Screenshot in Zwischenablage ablegen** , um Screenshots Ihrer App im Simulator zu erstellen.
+- Verwenden Sie die Schaltfläche **Screenshot in Zwischenablage ablegen** , um Screenshots Ihrer App im Simulator zu erstellen.
 
--   Verwenden Sie die Schaltfläche **Screenshoteinstellungen** , und wählen Sie im Kontextmenü den Speicherort aus, um den Speicherort der Screenshots festzulegen.
+- Verwenden Sie die Schaltfläche **Screenshoteinstellungen** , und wählen Sie im Kontextmenü den Speicherort aus, um den Speicherort der Screenshots festzulegen.
 
-     ![Kontextmenü für Screenshoteinstellungen](../debugger/media/simulator_screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")
+   ![Kontextmenü für Screenshoteinstellungen](../debugger/media/simulator_screenshotsettingscntxmnu.png)
 
-##  <a name="BKMK_Simulate_network_connection_properties"></a> Simulieren der Netzwerkverbindungseigenschaften
- Sie können die Benutzer der App dabei unterstützen, die Kosten gemessener Netzwerkverbindungen zu verwalten, indem Sie die Statusänderungen von Netzwerkverbindungskosten oder Datentarifplänen präsent halten und die App so aktivieren, dass zusätzliche Kosten für das Roaming oder das Überschreiten angegebener Datenübertragungsgrenzen anhand dieser Informationen vermieden werden. Mithilfe der [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) -APIs können Sie auf [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) - und [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) -Ereignisse antworten, die signieren. (Siehe [Schnellstart: Verwalten von gemessenen netzwerkkosteneinschränkungen](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).
+## <a name="BKMK_Simulate_network_connection_properties"></a> Simulieren der Netzwerkverbindungseigenschaften
 
- Um den Code für die kostenbewusste Nutzung des Netzwerks zu debuggen oder zu testen, kann der Simulator Eigenschaften eines Netzwerks imitieren, die vom [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) -Objekt verfügbar gemacht werden, das von [GetInternetConnectionProfile](/uwp/api/windows.networking.connectivity.networkinformation)zurückgegeben wird.
+Sie können die Benutzer der App dabei unterstützen, die Kosten gemessener Netzwerkverbindungen zu verwalten, indem Sie die Statusänderungen von Netzwerkverbindungskosten oder Datentarifplänen präsent halten und die App so aktivieren, dass zusätzliche Kosten für das Roaming oder das Überschreiten angegebener Datenübertragungsgrenzen anhand dieser Informationen vermieden werden. Mithilfe der [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) -APIs können Sie auf [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) - und [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) -Ereignisse antworten, die signieren. Ein Beispiel finden Sie unter [Schnellstart: Verwalten von gemessenen netzwerkkosteneinschränkungen](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).
 
- So simulieren Sie Netzwerkeigenschaften:
+Um den Code für die kostenbewusste Nutzung des Netzwerks zu debuggen oder zu testen, kann der Simulator Eigenschaften eines Netzwerks imitieren, die vom [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) -Objekt verfügbar gemacht werden, das von [GetInternetConnectionProfile](/uwp/api/windows.networking.connectivity.networkinformation)zurückgegeben wird.
+
+So simulieren Sie Netzwerkeigenschaften:
 
 1. Wählen Sie auf der Simulatorsymbolleiste die Schaltfläche **Netzwerkeigenschaften ändern** aus.
 
@@ -129,24 +137,26 @@ Visual Studio-Simulator für UWP-apps ist eine Desktopanwendung, die eine UWP-ap
 
 7. Wählen Sie **Eigenschaften festlegen** , um die Netzwerkeigenschaften zu simulieren, indem Sie ein [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) -Vordergrundereignis und einen Hintergrund- [SystemTrigger](/uwp/api/windows.applicationmodel.background.systemtrigger) vom Typ **NetworkStateChange**starten.
 
-   **Weitere Informationen zum Verwalten von Netzwerkverbindungen**
+Weitere Informationen zum Verwalten von Netzwerkverbindungen finden Sie unter:
 
-   [Schnellstart: Verwalten von gemessenen netzwerkkosteneinschränkungen](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)
+[Schnellstart: Verwalten von gemessenen netzwerkkosteneinschränkungen](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)
 
-   [Beispiel für Netzwerkinformationen](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)
+[Beispiel für Netzwerkinformationen](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)
 
-   [Analysieren des Energieverbrauchs](../profiling/analyze-energy-use-in-store-apps.md)
+[Analysieren des Energieverbrauchs](../profiling/analyze-energy-use-in-store-apps.md)
 
-   [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity)
+[Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity)
 
-   [Reagieren auf Systemereignisse mit Hintergrundaufgaben](/previous-versions/windows/apps/hh977058(v=win.10))
+[Reagieren auf Systemereignisse mit Hintergrundaufgaben](/previous-versions/windows/apps/hh977058(v=win.10))
 
-   [So können Sie Ereignisse in Windows UWP-Apps auslösen, anhalten, fortsetzen und im Hintergrund ausführen](how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)
+[So können Sie Ereignisse in Windows UWP-Apps auslösen, anhalten, fortsetzen und im Hintergrund ausführen](how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)
 
-##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Navigieren des Simulators mit der Tastatur
- Sie können die simulatorsymbolleiste navigieren, durch Drücken von **STRG + ALT + nach-oben** , den Fokus vom simulatorfenster auf die simulatorsymbolleiste zu verschieben. Verwenden Sie die **NACH-OBEN-TASTE** und die **NACH-UNTEN-TASTE** , um zwischen den Schaltflächen auf der Symbolleiste zu wechseln.
+## <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Navigieren des Simulators mit der Tastatur
 
- Sie können den Simulator durch Drücken von Herunterfahren **STRG + ALT + F4**.
+Sie können die simulatorsymbolleiste navigieren, durch Drücken von **STRG + ALT + nach-oben** , den Fokus vom simulatorfenster auf die simulatorsymbolleiste zu verschieben. Verwenden Sie die **NACH-OBEN-TASTE** und die **NACH-UNTEN-TASTE** , um zwischen den Schaltflächen auf der Symbolleiste zu wechseln.
+
+Sie können den Simulator durch Drücken von Herunterfahren **STRG + ALT + F4**.
 
 ## <a name="see-also"></a>Siehe auch
- [Ausführen von Apps aus Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+
+- [Ausführen von Apps aus Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)

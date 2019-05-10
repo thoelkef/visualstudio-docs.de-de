@@ -1,34 +1,29 @@
 ---
 title: Erweitern von Projekten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - solutions [Visual Studio]
 - projects [Visual Studio]
 ms.assetid: 096d273d-4fe9-4f24-9b00-470bfbdf4bdf
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8ad4218447e6cc910ff98970d14a53d83ccc8497
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 72841d1f0bbc812d80528858384b14ced2048857
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796570"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58957916"
 ---
 # <a name="extending-projects"></a>Erweitern von Projekten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Projekte und Projektmappen sind die Methoden, die Visual Studio Code und Ressourcendateien in Einheiten für die Kompilierung und Bereitstellung bereit. Weitere Informationen zu in-Projekten finden Sie [Projekte (Visual Studio SDK)](../extensibility/extending-projects.md).  
   
- Sie können eigene Projekttypen erstellen, mit dem Visual Studio SDK und dem Managed Package Framework für Projekte, die Sie herunterladen können, auf [Managed Package Framework for Projects](http://mpfproj12.codeplex.com/). Um zu verstehen, wie benutzerdefinierte Projekte implementiert werden, finden Sie unter [Generieren neuer Projekte: Under the Hood, Teil 1](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) und [Generieren neuer Projekte: Under the Hood, Teil 2](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Sie können eigene Projekttypen erstellen, mit dem Visual Studio SDK und dem Managed Package Framework für Projekte, die Sie herunterladen können, auf [Managed Package Framework for Projects](http://mpfproj12.codeplex.com/). Um zu verstehen, wie benutzerdefinierte Projekte implementiert werden, finden Sie unter [Generieren neuer Projekte: In die Hintergründe, Teil 1](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) und [Generieren neuer Projekte: In die Hintergründe, Teil 2](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  In die Themen in diesem Abschnitt wird beschrieben, wie zum Erstellen von benutzerdefinierter Projekten und verschiedene Arten von Visual Studio-Projektmappe zu verwalten.  
   
@@ -58,4 +53,3 @@ Projekte und Projektmappen sind die Methoden, die Visual Studio Code und Ressour
  Erläutert, wie universelle-Projekte zu verwalten.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte
-

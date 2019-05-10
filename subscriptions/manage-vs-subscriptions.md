@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 10/03/2017
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Erfahren Sie, wie Sie Ihr Visual Studio-Abonnement bestmöglich nutzen.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 84e3f62bfb0939bdb30f562629c84a092cd02f4b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2739578bb170d32b61246bb01236e621c8b7df8b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822162"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62833943"
 ---
 # <a name="managing-subscriptions"></a>Verwalten von Abonnements
 
@@ -92,18 +90,18 @@ Auf der Seite „Vorteile“ wird das genutzte Abonnement sichtbar auf dem blaue
 **Standardabonnements**
 
 - Microsoft Store: Wenn Sie Ihr Abonnement im [Microsoft Store](http://www.microsoft.com/store) erworben haben, können Sie es auch dort verlängern.
-- Volumenlizenz: Wenn Ihr Unternehmen Abonnements über eine Volumenlizenz erwirbt, sollte sich der Administrator für die Verlängerung Ihres Abonnements an einen Händler wenden.
+- Volumenlizenz:  Wenn Ihr Unternehmen Abonnements über eine Volumenlizenz erwirbt, sollte sich der Administrator für die Verlängerung Ihres Abonnements an einen Händler wenden.
 
-**Cloudabonnements**: Cloudabonnements müssen nicht verlängert werden. Solange Ihr Abonnement bezahlt wird, bleibt es aktiv.
+**Cloudabonnements:**  Cloudabonnements müssen nicht verlängert werden. Solange Ihr Abonnement bezahlt wird, bleibt es aktiv.
 
-**Über Programme erworbene Abonnements**: Wenn Sie Ihr Abonnement über ein Programm erwerben, ist dieses an Ihre Teilnahme am Programm gebunden. Wenden Sie sich für weitere Informationen an Ihre Programmkontakte.
+**Über Programme erworbene Abonnements:**  Wenn Sie Ihr Abonnement über ein Programm erwerben, ist dieses an Ihre Teilnahme am Programm gebunden. Wenden Sie sich für weitere Informationen an Ihre Programmkontakte.
 
 - [Imagine](https://imagine.microsoft.com/about)
 - [BizSpark](https://bizspark.microsoft.com/About/Offers)
 - [Microsoft Partner Network](https://partner.microsoft.com/en-us)
 - [Microsoft Certified Trainer](https://www.microsoft.com/en-us/learning/mct-certification.aspx)
 
-**Visual Studio Dev Essentials**: Dev Essentials ist ein kostenloses Programm, die Mitgliedschaften laufen nicht ab.
+**Visual Studio Dev Essentials:**  Dev Essentials ist ein kostenloses Programm. Die Mitgliedschaften laufen nicht ab.
 
 ## <a name="transferring-subscriptions"></a>Übertragen von Abonnements
 
@@ -147,9 +145,9 @@ Nachdem Sie ein alternatives Konto hinzugefügt haben, können Sie es jederzeit 
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
-### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>F: Wie lange behält Microsoft meine Daten bei, wenn ich mein Abonnement nicht verlängere?
+### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>Frage: Wie lange behält Microsoft meine Daten bei, wenn ich mein Abonnement nicht verlängere?
 
-A: Kundendaten werden abhängig vom Erwerbskanal unterschiedlich lang gespeichert.
+Antwort: Kundendaten werden abhängig vom Erwerbskanal unterschiedlich lang gespeichert.
 
 | Kanal                                                | Dauer (Tage) |
 |--------------------------------------------------------|-----------------|

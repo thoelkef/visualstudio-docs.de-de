@@ -1,23 +1,21 @@
 ---
 title: Optionen, Text-Editor, C#, Erweitert
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
+ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7cfbc6d57e5bfd3c6a8f317967448039a9b3f5e4
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 010f2a2e6dc163f24a29e8e352b21d8ef8d72b48
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62811828"
 ---
 # <a name="options-text-editor-c-advanced"></a>Optionen, Text-Editor, C#, Erweitert
 
@@ -48,7 +46,7 @@ Mithilfe der Optionsseite **Erweitert** können Sie die Einstellungen für Forma
    using Newtonsoft.Json;
    using System;
    ```
-   
+
    Nach dem Sortieren:
 
    ```csharp
@@ -59,7 +57,7 @@ Mithilfe der Optionsseite **Erweitert** können Sie die Einstellungen für Forma
    using FluentValidation;
    using Newtonsoft.Json;
    ```
-   
+
 - Using-Direktivengruppen trennen
 
    Wenn ausgewählt, trennt der Befehl **Using-Anweisungen entfernen und sortieren** im Kontextmenü die `using`-Anweisungen, indem er eine leere Zeile zwischen Gruppen von Anweisungen einfügt, die den gleichen Stammnamespace aufweisen.
@@ -74,28 +72,28 @@ Mithilfe der Optionsseite **Erweitert** können Sie die Einstellungen für Forma
    using Newtonsoft.Json;
    using System;
    ```
-   
+
    Nach dem Sortieren:
-   
+
    ```csharp
    using AutoMapper;
-   
+
    using FluentValidation;
-   
+
    using Newtonsoft.Json;
-   
+
    using System;
    using System.Collections.Generic;
    using System.Linq;
    ```
-   
-- Using-Direktiven für Typen in Verweisassemblys vorschlagen 
-- Using-Direktiven für Typen in NuGet-Paketen vorschlagen 
+
+- Using-Direktiven für Typen in Verweisassemblys vorschlagen
+- Using-Direktiven für Typen in NuGet-Paketen vorschlagen
 
    Wenn diese Optionen ausgewählt wurden, ist eine [Schnellaktion](../quick-actions.md) zum Installieren eines NuGet-Pakets und Hinzufügen einer `using`-Anweisung für nicht referenzierte Typen verfügbar.
 
    ![Schnellaktion zum Installieren eines NuGet-Pakets in Visual Studio](media/nuget-lightbulb.png)
-  
+
 ## <a name="highlighting"></a>Markieren
 
 - Verweise auf Symbole unter dem Cursor markieren
@@ -110,13 +108,17 @@ Mithilfe der Optionsseite **Erweitert** können Sie die Einstellungen für Forma
 
 - Zeilentrennzeichen zwischen Prozeduren anzeigen
 
-   Der Text-Editor gibt den visuellen Bereich von Prozeduren an. In den *VB*-Quelldateien des Projekts werden an den in der folgenden Tabelle aufgeführten Positionen Linien gezeichnet:
+   Der Text-Editor gibt den visuellen Bereich von Prozeduren an. In den *CS*-Quelldateien des Projekts werden an den in der folgenden Tabelle aufgeführten Positionen Linien gezeichnet:
 
-   |Position in der VB-Quelldatei|Beispiel für die Linienposition|
+   |Position in der CS-Quelldatei|Beispiel für die Linienposition|
    |---------------------------------|------------------------------|
    |Nach dem Schließen eines Blockdeklarationskonstrukts|– Am Ende einer Klasse, einer Struktur, eines Moduls, einer Schnittstelle oder einer Enumeration<br />– Hinter einer Eigenschaft, Funktion oder Sub<br />– Nicht zwischen den get- und set-Klauseln in einer Eigenschaft|
    |Nach mehreren Einzelzeilenkonstrukten|– Hinter Import-Anweisungen, vor einer Typdefinition in einer Klassendatei<br />– Hinter den in einer Klasse deklarierten Variablen, vor jeglichen Prozeduren|
    |Nach Einzelzeilendeklarationen (Deklarationen, die nicht auf Blockebene erfolgen)|– Nach Import-Anweisungen, Inherits-Anweisungen, Variablendeklarationen, Ereignisdeklarationen, Delegatdeklarationen und Declare-Anweisungen für DLLs|
+
+## <a name="block-structure-guides"></a>Führungslinien für Blockstruktur
+
+Aktivieren Sie diese Kontrollkästchen, um gestrichelte vertikale Linien zwischen geschweiften Klammern (**{}**) in Ihrem Code anzuzeigen. Dann können Sie leicht einzelne Codeblöcke für Ihre Deklarations- und Codeebenen erkennen.
 
 ## <a name="editor-help"></a>Editor-Hilfe
 

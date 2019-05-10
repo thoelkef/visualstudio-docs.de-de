@@ -1,7 +1,6 @@
 ---
 title: Umbenennen und verschieben von Klassen und Typen im Klassen-Designer
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.ClassDesigner.OverrideMembersDialog
@@ -17,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: dcf07bb4-fa3b-4224-9dec-566fd924a8ce
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e85c4b760bab242ba5aa43f0e1aab0936565af33
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d99fc68f6b42b442a87ead02aba888063b1b42a1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891465"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975085"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>Umgestalten von Klassen und Typen im Klassen-Designer
 

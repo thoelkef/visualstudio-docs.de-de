@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Hinzufügen eines vertrauenswürdigen Herausgebers auf einen Clientcomputer für ClickOnce-Anwendungen | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,23 +15,23 @@ ms.assetid: 35fe324c-45a1-4509-b7be-5c18b4b1b4ab
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 956690a89425f55de01afe84f4f3e2f9b2c71bd5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7129d8de5e37b24304b7f1cbf862e4cd299cdf72
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442207"
 ---
-# <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Gewusst wie: Hinzufügen eines vertrauenswürdigen Herausgebers zu einem Clientcomputer für ClickOnce-Anwendungen
+# <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Vorgehensweise: Hinzufügen eines vertrauenswürdigen Herausgebers auf einen Clientcomputer für ClickOnce-Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Mit der Bereitstellung einer vertrauenswürdigen Anwendung können Sie Clientcomputer so konfigurieren, dass Ihre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendungen mit einer höheren Vertrauensebene ausgeführt werden ohne den Benutzer dazu aufzufordern. Die folgenden Verfahren zeigen, wie das Befehlszeilentool CertMgr.exe verwendet wird, um das Zertifikat des Herausgebers zum Speicher für vertrauenswürdige Herausgeber auf einem Clientcomputer hinzuzufügen.  
+Mit der Bereitstellung einer vertrauenswürdigen Anwendung können Sie Clientcomputer so konfigurieren, dass Ihre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendungen mit einer höheren Vertrauensebene ausgeführt werden ohne den Benutzer dazu aufzufordern. Die folgenden Verfahren zeigen, wie das Befehlszeilentool CertMgr.exe verwendet wird, um das Zertifikat des Herausgebers zum Speicher für vertrauenswürdige Herausgeber auf einem Clientcomputer hinzuzufügen.  
   
  Die von Ihnen verwendeten Befehle weichen leicht davon ab, je nachdem ob die Zertifizierungsstelle, die Ihr Zertifikat herausgegeben hat, Teil eines vertrauenswürdigen Stamms eines Clients ist. Wenn ein Windows-Clientcomputer Teil einer Domäne ist, enthält er in einer Liste Zertifizierungsstellen, die als vertrauenswürdige Stämme gelten. Diese Liste wird normalerweise vom Systemadministrator konfiguriert. Wenn das Zertifikat von einer der vertrauenswürdigen Stämmen oder von einer Zertifizierungsstelle herausgegeben wurde, die mit einer dieser vertrauenswürdigen Stämme verknüpft ist, können Sie das Zertifikat zum vertrauenswürdigen Stammspeicher des Clients hinzufügen. Wenn andererseits das Zertifikat nicht von einem dieser vertrauenswürdigen Stämme ausgestellt wurde, müssen Sie das Zertifikat jeweils dem vertrauenswürdigen Stammspeicher des Clients und dem Speicher des vertrauenswürdigen Herausgebers hinzufügen.  
   
 > [!NOTE]
->  Sie müssen Zertifikate auf diese Weise jedem Clientcomputer hinzufügen, auf dem Sie eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendung bereitstellen möchten, die erweiterte Berechtigungen erfordert. Sie können die Zertifikate entweder manuell oder über eine Anwendung hinzufügen, die Sie für Ihre Clients bereitstellen. Sie müssen diese Computer nur einmal konfigurieren. Danach können Sie eine beliebige Anzahl von [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendungen signiert mit demselben Zertifikat bereitstellen.  
+> Sie müssen Zertifikate auf diese Weise jedem Clientcomputer hinzufügen, auf dem Sie eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendung bereitstellen möchten, die erweiterte Berechtigungen erfordert. Sie können die Zertifikate entweder manuell oder über eine Anwendung hinzufügen, die Sie für Ihre Clients bereitstellen. Sie müssen diese Computer nur einmal konfigurieren. Danach können Sie eine beliebige Anzahl von [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] -Anwendungen signiert mit demselben Zertifikat bereitstellen.  
   
  Sie können ein Zertifikat auch mithilfe der Klasse <xref:System.Security.Cryptography.X509Certificates.X509Store> programmgesteuert zu einem Speicher hinzufügen.  
   
@@ -44,21 +39,21 @@ Mit der Bereitstellung einer vertrauenswürdigen Anwendung können Sie Clientcom
   
 ### <a name="to-add-a-certificate-to-the-trusted-publishers-store-under-the-trusted-root"></a>So fügen Sie ein Zertifikat zum Speicher für vertrauenswürdige Herausgeber unter dem vertrauenswürdigen Stamm hinzu  
   
-1.  Abrufen eines digitales Zertifikats von einer Zertifizierungsstelle.  
+1. Abrufen eines digitales Zertifikats von einer Zertifizierungsstelle.  
   
-2.  Exportieren Sie das Zertifikat in das Format Base64 X.509 (.cer). Weitere Informationen zu den Zertifikatformaten finden Sie unter [Exportieren eines Zertifikats](http://go.microsoft.com/fwlink/?LinkId=164793).  
+2. Exportieren Sie das Zertifikat in das Format Base64 X.509 (.cer). Weitere Informationen zu den Zertifikatformaten finden Sie unter [Exportieren eines Zertifikats](http://go.microsoft.com/fwlink/?LinkId=164793).  
   
-3.  Führen Sie über die Eingabeaufforderung auf Clientcomputern den folgenden Befehl aus:  
+3. Führen Sie über die Eingabeaufforderung auf Clientcomputern den folgenden Befehl aus:  
   
      **certmgr.exe -add certificate.cer -c -s -r localMachine TrustedPublisher**  
   
 ### <a name="to-add-a-certificate-to-the-trusted-publishers-store-under-a-different-root"></a>So fügen Sie ein Zertifikat zum Speicher für vertrauenswürdige Herausgeber unter einem anderen Stamm hinzu  
   
-1.  Abrufen eines digitales Zertifikats von einer Zertifizierungsstelle.  
+1. Abrufen eines digitales Zertifikats von einer Zertifizierungsstelle.  
   
-2.  Exportieren Sie das Zertifikat in das Format Base64 X.509 (.cer). Weitere Informationen zu den Zertifikatformaten finden Sie unter [Exportieren eines Zertifikats](http://go.microsoft.com/fwlink/?LinkId=164793).  
+2. Exportieren Sie das Zertifikat in das Format Base64 X.509 (.cer). Weitere Informationen zu den Zertifikatformaten finden Sie unter [Exportieren eines Zertifikats](http://go.microsoft.com/fwlink/?LinkId=164793).  
   
-3.  Führen Sie über die Eingabeaufforderung auf Clientcomputern den folgenden Befehl aus:  
+3. Führen Sie über die Eingabeaufforderung auf Clientcomputern den folgenden Befehl aus:  
   
      **certmgr.exe -add good.cer -c -s -r localMachine Root**  
   
@@ -70,13 +65,10 @@ Mit der Bereitstellung einer vertrauenswürdigen Anwendung können Sie Clientcom
  [Code Access Security for ClickOnce Applications (Codezugriffssicherheit für ClickOnce-Anwendungen)](../deployment/code-access-security-for-clickonce-applications.md)   
  [ClickOnce und Authenticode](../deployment/clickonce-and-authenticode.md)   
  [Überblick über die Bereitstellung vertrauenswürdiger Anwendungen](../deployment/trusted-application-deployment-overview.md)   
- [How to: Enable ClickOnce Security Settings (Vorgehensweise: Aktivieren von ClickOnce-Sicherheitseinstellungen)](../deployment/how-to-enable-clickonce-security-settings.md)   
- [How to: Set a Security Zone for a ClickOnce Application (Vorgehensweise: Festlegen einer Sicherheitszone für eine ClickOnce-Anwendung)](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [How to: Set Custom Permissions for a ClickOnce Application (Vorgehensweise: Festlegen von benutzerdefinierten Berechtigungen für eine ClickOnce-Anwendung)](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [How to: Debug a ClickOnce Application with Restricted Permissions (Vorgehensweise: Debuggen einer ClickOnce-Anwendung mit eingeschränkten Berechtigungen)](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
- [Gewusst wie: Hinzufügen eines vertrauenswürdigen Herausgebers zu einem Clientcomputer für ClickOnce-Anwendungen](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
+ [Vorgehensweise: ClickOnce-Sicherheitseinstellungen aktivieren](../deployment/how-to-enable-clickonce-security-settings.md)   
+ [Vorgehensweise: Festlegen einer Sicherheitszone für eine ClickOnce-Anwendung](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [Vorgehensweise: Festlegen Sie benutzerdefinierter Berechtigungen für eine ClickOnce-Anwendung](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [Vorgehensweise: Debuggen einer ClickOnce-Anwendung mit eingeschränkten Berechtigungen](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [Vorgehensweise: Hinzufügen eines vertrauenswürdigen Herausgebers auf einen Clientcomputer für ClickOnce-Anwendungen](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
  [Vorgehensweise: Erneutes Signieren von Anwendungs- und Bereitstellungsmanifesten](../deployment/how-to-re-sign-application-and-deployment-manifests.md)   
- [Gewusst wie: Konfigurieren des Verhaltens der ClickOnce-Eingabeaufforderung zur Vertrauenswürdigkeit](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)
-
-
-
+ [Vorgehensweise: Konfigurieren des Verhaltens der ClickOnce-Eingabeaufforderung zur Vertrauenswürdigkeit](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)

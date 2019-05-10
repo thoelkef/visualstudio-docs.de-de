@@ -1,17 +1,16 @@
 ---
 title: 'Exemplarische Vorgehensweise: Verwenden der XSLT-Hierarchie'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 65af5f973f9440ac781a8af1042700cf89acee1c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 3cf836ed59dadba71314aa38cd4d2907bee384a6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834723"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62808157"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>Exemplarische Vorgehensweise: Verwenden von XSLT-Hierarchie
 
@@ -70,7 +69,7 @@ Im Beispiel in diesem Thema wird das Debugging in einem referenzierten Styleshee
     </xsl:stylesheet>
     ```
 
-3.  Fügen Sie die folgenden *xslinclude.xsl* Datei:
+3. Fügen Sie die folgenden *xslinclude.xsl* Datei:
 
     ```xml
     <?xml version='1.0'?>
@@ -104,12 +103,12 @@ Im Beispiel in diesem Thema wird das Debugging in einem referenzierten Styleshee
     </xsl:stylesheet>
     ```
 
-4.  Fügen Sie einen Haltepunkt bei der Anweisung `<xsl:include href="xslincludefile.xsl" />`.
+4. Fügen Sie einen Haltepunkt bei der Anweisung `<xsl:include href="xslincludefile.xsl" />`.
 
-5.  Beginnen Sie mit dem Debuggen.
+5. Beginnen Sie mit dem Debuggen.
 
-6.  Wenn der Debugger hält bei der Anweisung `<xsl:include href="xslincludefile.xsl" />`, drücken Sie die **Einzelschritt** Schaltfläche. Das Debuggen kann im referenzierten Stylesheet fortgesetzt werden. Die Hierarchie ist sichtbar, und im Designer wird der richtige Pfad angezeigt.
+6. Wenn der Debugger hält bei der Anweisung `<xsl:include href="xslincludefile.xsl" />`, drücken Sie die **Einzelschritt** Schaltfläche. Das Debuggen kann im referenzierten Stylesheet fortgesetzt werden. Die Hierarchie ist sichtbar, und im Designer wird der richtige Pfad angezeigt.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Exemplarische Vorgehensweise: XSLT-profiler](../xml-tools/walkthrough-xslt-profiler.md)
+- [XSLT-profiler](../xml-tools/xslt-profiler.md)

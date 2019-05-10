@@ -13,16 +13,15 @@ helpviewer_keywords:
 ms.assetid: e05a1e0c-5082-479d-bbc9-d395b0bc6580
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6b1f884018be97e49dfa9c300a2ad126fa185cf4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 0d1769440ea72ff477ac78230f2c7c1bb71b5ace
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932784"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816273"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Binden von WPF-Steuerelementen an Daten in Visual Studio
 
@@ -62,9 +61,9 @@ Die folgende Tabelle enthält die [!INCLUDE[TLA#tla_titlexaml](../data-tools/inc
 
 Beim Ziehen einer Tabelle oder Spalte aus der **Datenquellen** in den Designer, Visual Studio generiert [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] , die bewirkt Folgendes:
 
--   Den Ressourcen des Containers, in den Sie das Element gezogen haben, werden das Dataset und eine neue <xref:System.Windows.Data.CollectionViewSource> hinzugefügt. Die <xref:System.Windows.Data.CollectionViewSource> ist ein Objekt, das verwendet werden kann, um in den Daten des Datasets zu navigieren und diese anzuzeigen.
+- Den Ressourcen des Containers, in den Sie das Element gezogen haben, werden das Dataset und eine neue <xref:System.Windows.Data.CollectionViewSource> hinzugefügt. Die <xref:System.Windows.Data.CollectionViewSource> ist ein Objekt, das verwendet werden kann, um in den Daten des Datasets zu navigieren und diese anzuzeigen.
 
--   Es wird eine Datenbindung für ein Steuerelement erstellt. Wenn Sie das Element auf ein vorhandenes Steuerelement im Designer ziehen, bindet das XAML das Steuerelement an das Element. Wenn Sie das Element in einen Container ziehen, die XAML erstellt, das Steuerelement, das für das gezogene Element ausgewählt wurde, und bindet das Steuerelement auf das Element. Das Steuerelement wird in einem neuen <xref:System.Windows.Controls.Grid> erstellt.
+- Es wird eine Datenbindung für ein Steuerelement erstellt. Wenn Sie das Element auf ein vorhandenes Steuerelement im Designer ziehen, bindet das XAML das Steuerelement an das Element. Wenn Sie das Element in einen Container ziehen, die XAML erstellt, das Steuerelement, das für das gezogene Element ausgewählt wurde, und bindet das Steuerelement auf das Element. Das Steuerelement wird in einem neuen <xref:System.Windows.Controls.Grid> erstellt.
 
 Visual Studio nimmt außerdem die folgenden Änderungen an der Code-Behind-Datei vor:
 
@@ -99,13 +98,13 @@ Visual Studio generiert XAML, das folgende Aktionen ausführt:
 Beim Ziehen eines Objekts oder einer Eigenschaft aus der **Datenquellen** in den Designer, Visual Studio generiert [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] , die ein vom datengebundenen Steuerelement erstellt (oder ein vorhandenes Steuerelement an das Objekt oder die Eigenschaft bindet). Visual Studio erzeugt Code, um das Objekt mit Daten füllen jedoch nicht. Sie müssen diesen Code selbst schreiben.
 
 > [!NOTE]
-> Benutzerdefinierte Klassen müssen öffentlich sein und in der Standardeinstellung haben einen Konstruktor ohne Parameter. Diese can'tbe geschachtelte Klassen, die einen "Punkt" in der Syntax definiert. Weitere Informationen finden Sie unter [XAML und benutzerdefinierte Klassen für WPF](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf).
+> Benutzerdefinierte Klassen müssen öffentlich sein und in der Standardeinstellung haben einen Konstruktor ohne Parameter. Geschachtelte Klassen nicht möglich, die einen "Punkt" in der Syntax definiert. Weitere Informationen finden Sie unter [XAML und benutzerdefinierte Klassen für WPF](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf).
 
 Visual Studio generiert [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] , die bewirkt Folgendes:
 
--   Den Ressourcen des Containers, in den Sie das Element gezogen haben, wird eine neue <xref:System.Windows.Data.CollectionViewSource> hinzugefügt. Die <xref:System.Windows.Data.CollectionViewSource> ist ein Objekt, das verwendet werden kann, um in den Daten des Objekt zu navigieren und diese anzuzeigen.
+- Den Ressourcen des Containers, in den Sie das Element gezogen haben, wird eine neue <xref:System.Windows.Data.CollectionViewSource> hinzugefügt. Die <xref:System.Windows.Data.CollectionViewSource> ist ein Objekt, das verwendet werden kann, um in den Daten des Objekt zu navigieren und diese anzuzeigen.
 
--   Es wird eine Datenbindung für ein Steuerelement erstellt. Wenn Sie das Element auf ein vorhandenes Steuerelement im Designer ziehen, bindet das XAML das Steuerelement an das Element. Wenn Sie das Element in einen Container ziehen, die XAML erstellt, das Steuerelement, das für das gezogene Element ausgewählt wurde, und bindet das Steuerelement auf das Element. Das Steuerelement wird in einem neuen <xref:System.Windows.Controls.Grid> erstellt.
+- Es wird eine Datenbindung für ein Steuerelement erstellt. Wenn Sie das Element auf ein vorhandenes Steuerelement im Designer ziehen, bindet das XAML das Steuerelement an das Element. Wenn Sie das Element in einen Container ziehen, die XAML erstellt, das Steuerelement, das für das gezogene Element ausgewählt wurde, und bindet das Steuerelement auf das Element. Das Steuerelement wird in einem neuen <xref:System.Windows.Controls.Grid> erstellt.
 
 ## <a name="see-also"></a>Siehe auch
 

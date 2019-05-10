@@ -1,26 +1,21 @@
 ---
 title: Editor-Importe | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - services
 ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8f82815871f59dfcf4d384157a9461388e96d05e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4805bff12d284dc5a54451e157c9e8fb92deeae2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759025"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432134"
 ---
 # <a name="editor-imports"></a>Editor-Importe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ Sie können eine Anzahl von Editor-Dienste, Factorys und Broker, mit die die Erw
  Um einen Import Editor verwenden, importieren Sie sie als ein Feld oder eine Eigenschaft einer Klasse, die von einer Managed Extensibility Framework-Komponente exportiert.  
   
 > [!NOTE]
->  Weitere Informationen über das Managed Extensibility Framework, finden Sie unter [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
+> Weitere Informationen über das Managed Extensibility Framework, finden Sie unter [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
   
 ## <a name="import-syntax"></a>Importsyntax  
  Das folgende Beispiel zeigt den Editor importieren Optionen Factory-Dienst.  
@@ -53,15 +48,15 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
   
  [Exemplarische Vorgehensweise: Anpassen der Textansicht](../extensibility/walkthrough-customizing-the-text-view.md)  
   
- [Exemplarische Vorgehensweise: Markieren von Text](../extensibility/walkthrough-highlighting-text.md)  
+ [Exemplarische Vorgehensweise: Hervorheben von Text](../extensibility/walkthrough-highlighting-text.md)  
   
  [Exemplarische Vorgehensweise: Anzeigen von QuickInfos](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
  [Exemplarische Vorgehensweise: Anzeigen der Signaturhilfe](../extensibility/walkthrough-displaying-signature-help.md)  
   
- [Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigung](../extensibility/walkthrough-displaying-statement-completion.md)  
+ [Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigungen](../extensibility/walkthrough-displaying-statement-completion.md)  
   
- [Exemplarische Vorgehensweise: Anzeigen von Smarttags](../misc/walkthrough-displaying-smarttags.md)  
+ [Exemplarische Vorgehensweise: Anzeigen von SmartTags](../misc/walkthrough-displaying-smarttags.md)  
   
 ## <a name="importing-the-service-provider"></a>Importieren den Service-Anbieter  
  Sie können auch Importieren einer <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> (gefunden in der Assembly Microsoft.VisualStudio.Shell.Immutable.10.0) auf die gleiche Weise für den Zugriff auf Visual Studio-Diensten:  
@@ -71,7 +66,7 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
 internal SVsServiceProvider ServiceProvider = null;   
 ```  
   
- Finden Sie unter [Exemplarische Vorgehensweise: Zugreifen auf das DTE-Objekt aus einer Editor-Erweiterung](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md) für Weitere Informationen.  
+ Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Zugreifen auf das DTE-Objekt aus einer Editor-Erweiterung](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md) für Weitere Informationen.  
   
 ## <a name="services"></a>Dienste  
  Editor-Dienste sind, in der Regel einzelnen Entitäten, die einen Service bieten, und werden über mehrere Komponenten gemeinsam genutzt wird.  
@@ -129,4 +124,3 @@ internal SVsServiceProvider ServiceProvider = null;
   
 ## <a name="see-also"></a>Siehe auch  
  [Erweiterungspunkte für den Sprachdienst und den Editor](../extensibility/language-service-and-editor-extension-points.md)
-

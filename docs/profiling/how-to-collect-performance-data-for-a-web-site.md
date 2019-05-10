@@ -14,15 +14,15 @@ helpviewer_keywords:
 - ASP.NET, performance profilng
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e50855061a69a8d3b5fd6aa068b0f8c1385173e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f91646575fba2df1f48c08adc7a9233bb63f27df
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864150"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974012"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Vorgehensweise: Sammeln von Leistungsdaten für eine Website
 
@@ -101,7 +101,7 @@ Sie können den **Leistungs-Assistenten** zum Sammeln von Leistungsdaten einer [
 
 ## <a name="see-also"></a>Siehe auch
 
-[Übersichten](../profiling/overviews-performance-tools.md)  
-[Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)  
-[Grundlagen zu Instrumentierungsdatenwerten](../profiling/understanding-instrumentation-data-values.md)  
+[Übersichten (Leistungstools)](../profiling/overviews-performance-tools.md)
+[Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)
+[Grundlagen zu Instrumentierungsdatenwerten](../profiling/understanding-instrumentation-data-values.md)
 [Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)

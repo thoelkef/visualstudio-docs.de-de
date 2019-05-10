@@ -12,14 +12,13 @@ helpviewer_keywords:
 ms.assetid: c2afe36b-d061-4f0e-9580-c18569ec08f9
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 1165da402fc10f1562155ef6e4aaff25249b17a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: f37edcadb1d8800cb784771f9cc4f93d885bea65
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846847"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950006"
 ---
 # <a name="how-to-delete-load-test-results-from-a-repository"></a>Vorgehensweise: Löschen von Auslastungstestergebnissen aus einem Repository
 
@@ -31,21 +30,21 @@ Sie können Auslastungstestergebnisse aus dem Auslastungstest-Editor im Dialogfe
 
 ## <a name="to-delete-results-from-a-repository"></a>So löschen Sie Ergebnisse aus einem Repository
 
-1.  Öffnen Sie in einem Webleistungs- und Auslastungstestprojekt einen Auslastungstest.
+1. Öffnen Sie in einem Webleistungs- und Auslastungstestprojekt einen Auslastungstest.
 
-2.  Klicken Sie auf der eingebetteten Symbolleiste auf **Ergebnisse öffnen und verwalten**.
+2. Klicken Sie auf der eingebetteten Symbolleiste auf **Ergebnisse öffnen und verwalten**.
 
      Das Dialogfeld **Auslastungstestergebnisse öffnen und verwalten** wird angezeigt.
 
-3.  Wählen Sie unter **Enter a controller name to find load test results** (Controllernamen für die Suche nach Auslastungstestergebnissen eingeben) einen Controller aus. Wählen Sie **\<Local - No controller>** (<Lokal - Kein Controller>) aus, um auf lokal gespeicherte Ergebnisse zuzugreifen.
+3. Wählen Sie unter **Enter a controller name to find load test results** (Controllernamen für die Suche nach Auslastungstestergebnissen eingeben) einen Controller aus. Wählen Sie **\<Local - No controller>** (<Lokal - Kein Controller>) aus, um auf lokal gespeicherte Ergebnisse zuzugreifen.
 
-4.  Wählen Sie unter **Show results for the following load test** (Ergebnisse für den folgenden Auslastungstest anzeigen) den Auslastungstest aus, dessen Ergebnisse angezeigt werden sollen. Wählen Sie **\<Show results for all tests>** (<Ergebnisse für alle Tests anzeigen>) aus, um alle Ergebnisse für alle Tests anzuzeigen.
+4. Wählen Sie unter **Show results for the following load test** (Ergebnisse für den folgenden Auslastungstest anzeigen) den Auslastungstest aus, dessen Ergebnisse angezeigt werden sollen. Wählen Sie **\<Show results for all tests>** (<Ergebnisse für alle Tests anzeigen>) aus, um alle Ergebnisse für alle Tests anzuzeigen.
 
      Wenn Auslastungstestergebnisse verfügbar sind, werden diese in der Liste **Auslastungstestergebnisse** angezeigt. Die Spalten lauten **Time**, **Duration**, **User**, **Outcome**, **Test**, and **Description** (Zeit, Dauer, Benutzer, Ergebnis, Test und Beschreibung). **Test** ist der Name des Tests und unter **Beschreibung** wird die optionale Beschreibung angegeben, die vor der Ausführung des Tests hinzugefügt wurde. In der Spalte **Beschreibung** werden die kurzen Beschreibungen angezeigt, die in den **Analysekommentaren** für dieses Testergebnis eingegeben wurden.
 
-5.  Klicken Sie in der Liste **Auslastungstestergebnisse** auf ein Ergebnis. Sie können die **UMSCHALTTASTE** und/oder **STRG** drücken, um mehr als ein Ergebnis auszuwählen.
+5. Klicken Sie in der Liste **Auslastungstestergebnisse** auf ein Ergebnis. Sie können die **UMSCHALTTASTE** und/oder **STRG** drücken, um mehr als ein Ergebnis auszuwählen.
 
-6.  Klicken Sie auf **Entfernen**.
+6. Klicken Sie auf **Entfernen**.
 
      Die Ergebnisse werden aus dem Repository entfernt.
 

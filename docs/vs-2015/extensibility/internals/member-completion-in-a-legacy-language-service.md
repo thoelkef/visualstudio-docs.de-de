@@ -1,14 +1,9 @@
 ---
 title: Membervervollständigung in einem Legacysprachdienst | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense, Member Completion tool tip
 - Member Completion, supporting in language services [managed package framework]
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 500f718d-9028-49a4-8615-ba95cf47fc52
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b8b5940e473c639600c30e66e7dc0c732359322d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 93182d61b6ecf5bf22ea7117bf8ccfd17e2acd1a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790985"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437910"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>Membervervollständigung in einem Legacysprachdienst
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ Der Member IntelliSense-Vervollständigung wird eine QuickInfo, die eine Liste d
  Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Wenn Sie mehr erfahren möchten, finden Sie unter [Erweitern des Editors und Sprachdienste](../../extensibility/extending-the-editor-and-language-services.md).  
   
 > [!NOTE]
->  Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
+> Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
   
 ## <a name="how-it-works"></a>So funktioniert es  
  Es folgen die beiden Möglichkeiten, die mit die MPF-Klassen, in denen eine Memberliste angezeigt wird:  
@@ -262,4 +257,3 @@ namespace TestLanguagePackage
     }  
 }  
 ```
-

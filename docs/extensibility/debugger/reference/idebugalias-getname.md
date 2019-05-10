@@ -1,25 +1,27 @@
 ---
 title: IDebugAlias::GetName | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugAlias::GetName
 helpviewer_keywords:
 - IDebugAlias::GetName method
 ms.assetid: ac2d8891-56b5-40ef-9866-ed74f18bb043
-author: gregvanl
+caps.latest.revision: 9
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 9a148be6d72971f0e9eea0865400c41a2f7f17b5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5858c5b559720486c24bf3fbc7562a13b9fb8372
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990128"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62923869"
 ---
 # <a name="idebugaliasgetname"></a>IDebugAlias::GetName
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Ruft den Namen dieses Alias aus.  
   
 ## <a name="syntax"></a>Syntax  

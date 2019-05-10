@@ -1,14 +1,9 @@
 ---
 title: Verwenden mehrerer Prozessoren für die Erstellung von Projekten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - multiple processors
 - MSBuild, multiple processor systems
@@ -16,18 +11,17 @@ ms.assetid: 49fa36c9-8e14-44f5-8a2b-34146cf6807b
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 67b873b8ab1668ea2fea3b3bf0487339a86c9ffe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3a590d3dc3053c5b857917dc358e32a2c7d5247c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199913"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651749"
 ---
 # <a name="using-multiple-processors-to-build-projects"></a>Verwenden mehrerer Prozessoren für die Erstellung von Projekten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 MSBuild kann Systeme nutzen, die über mehrere Prozessoren oder Prozessoren mit mehreren Kernen verfügen. Für jeden verfügbaren Prozessor wird ein separater Buildprozess erstellt. Wenn das System zum Beispiel über vier Prozessoren verfügt, werden vier Buildprozesse erstellt. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] kann diese Builds gleichzeitig verarbeiten und daher die Gesamtbuildzeit verringern. Das gleichzeitige Erstellen von Builds führt jedoch zu einigen Änderungen bei Buildprozessen. In diesem Thema werden diese Änderungen erläutert.  
   
 ## <a name="project-to-project-references"></a>Projekt-zu-Projekt-Verweise  
@@ -50,6 +44,3 @@ MSBuild kann Systeme nutzen, die über mehrere Prozessoren oder Prozessoren mit 
 ## <a name="see-also"></a>Siehe auch  
  [Paralleles Erstellen von mehreren Projekten](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)   
  [Aufgaben](../msbuild/msbuild-tasks.md)
-
-
-

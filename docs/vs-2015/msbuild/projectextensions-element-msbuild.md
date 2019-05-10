@@ -1,14 +1,9 @@
 ---
 title: ProjectExtensions-Element (MSBuild) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ProjectExtensions
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: f95f312f-ff92-41eb-9469-ad99e236a307
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 41b3ed5fc742f95cde3c834e5d8612daafef5d6d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0afc4f73ed287f753acf87bd0b112e6f5303e996
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189110"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62551252"
 ---
 # <a name="projectextensions-element-msbuild"></a>ProjectExtensions-Element (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Ermöglicht es [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projektdateien, nicht-[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Informationen zu enthalten. Alles innerhalb eines `ProjectExtensions`-Elements wird von [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ignoriert.  
   
  \<Project>  
@@ -63,7 +57,7 @@ Ermöglicht es [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projektd
 |-------------|-----------------|  
 |[Projekt](../msbuild/project-element-msbuild.md)|Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] -Projektdatei.|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Nur ein `ProjectExtensions`-Element kann in einem [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projekt verwendet werden.  
   
 ## <a name="example"></a>Beispiel  
@@ -84,5 +78,3 @@ Ermöglicht es [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Projektd
 ## <a name="see-also"></a>Siehe auch  
  [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)  
  [MSBuild](msbuild.md)
-
-

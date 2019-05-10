@@ -1,23 +1,25 @@
 ---
 title: IDebugDocumentChecksum2 | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugDocumentChecksum2 interface
 ms.assetid: 6d22fa94-21aa-46cb-b5b5-32a6399ebb20
-author: gregvanl
+caps.latest.revision: 8
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 784c8cd4bf762e97b69c6a88ae99701dc993efc5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 9b40129cb8623e6ea68babe2c480da4e4d4198f3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921678"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62921596"
 ---
 # <a name="idebugdocumentchecksum2"></a>IDebugDocumentChecksum2
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Stellt eine Prüfsumme für eine Debug-Dokument und ermöglicht die Prüfsumme zwischen Komponenten übergeben.  
   
 ## <a name="syntax"></a>Syntax  

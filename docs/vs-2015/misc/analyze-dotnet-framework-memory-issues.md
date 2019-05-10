@@ -1,26 +1,21 @@
 ---
 title: Analysieren von .NET Framework-Arbeitsspeicherproblemen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 f1_keywords:
 - vs.diagnostics.managedmemoryanalysis
 ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: mikejo
-manager: douge
-ms.openlocfilehash: 5b5b79e351f828f443e133f40c322ffba3f1a8b6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e78cefa9778e2889130f865e4c61cc8a97014db7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810480"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444665"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>Analysieren von .NET Framework-Arbeitsspeicherproblemen
 Ermitteln Sie mithilfe des Analyzers für verwalteten Speicher von Visual Studio Speicherverluste und ineffiziente Arbeitsspeichernutzung in .NET Framework-Code. Die mindestens erforderliche .NET Framework-Version für den Zielcode ist .NET Framework 4.5.  
@@ -33,7 +28,7 @@ Ermitteln Sie mithilfe des Analyzers für verwalteten Speicher von Visual Studio
   
   Eine exemplarische Vorgehensweise des Analyzers für verwalteten Arbeitsspeicher finden Sie unter [mithilfe von Visual Studio 2013 to Diagnose .NET Memory Issues in Production](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx) auf dem Visual Studio ALM + Team Foundation Server-Blog.  
   
-##  <a name="BKMK_Contents"></a> Inhalt  
+## <a name="BKMK_Contents"></a> Inhalt  
  [Arbeitsspeichernutzung in .NET Framework-apps](#BKMK_Memory_use_in__NET_Framework_apps)  
   
  [Erkennen eines Arbeitsspeicherproblems in einer app](#BKMK_Identify_a_memory_issue_in_an_app)  
@@ -42,7 +37,7 @@ Ermitteln Sie mithilfe des Analyzers für verwalteten Speicher von Visual Studio
   
  [Analysieren der arbeitsspeichernutzung](#BKMK_Analyze_memory_use)  
   
-##  <a name="BKMK_Memory_use_in__NET_Framework_apps"></a> Arbeitsspeichernutzung in .NET Framework-apps  
+## <a name="BKMK_Memory_use_in__NET_Framework_apps"></a> Arbeitsspeichernutzung in .NET Framework-apps  
  .NET Framework ist eine speicherbereinigte Laufzeitumgebung, sodass die Speichernutzung in den meisten Apps kein Problem darstellt. In Anwendungen mit langer Laufzeit jedoch, wie z. B. Webdienste und Anwendungen, sowie auf Geräten, die einen begrenzten Arbeitsspeicher haben, kann die Ansammlung von Objekten im Arbeitsspeicher die Leistung der App und auch das Gerät, auf dem sie ausgeführt wird, beeinträchtigen. Übermäßige Arbeitsspeichernutzung kann die Anwendung und den Computer durch Ressourcen blockieren, wenn der Garbage Collector zu häufig ausgeführt wird oder wenn das Betriebssystem gezwungen wird, Arbeitsspeicher zwischen RAM und Datenträger zu verschieben. Im ungünstigsten Fall kann eine Anwendung bei einer Ausnahme aufgrund "nicht genügend Arbeitsspeicher" abstürzen.  
   
  .NET *verwalteten Heap* ist ein Bereich des virtuellen Speichers, in dem Verweisobjekte, die von einer Anwendung erstellt gespeichert werden. Die Lebensdauer der Objekte wird vom Garbage Collector (GC) verwaltet. Der Garbage Collector verwendet Verweise, um Objekte zu verfolgen, die Speicherblöcke belegen. Ein Verweis wird erstellt, wenn ein Objekt erstellt und einer Variablen zugewiesen wird. Ein einzelnes Objekt kann mehrere Verweise haben. Beispielsweise können zusätzliche Verweise auf ein Objekt erstellt werden, indem das Objekt einer Klasse, Auflistung oder anderen Datenstruktur hinzufügt wird oder indem das Objekt einer zweiten Variable zugeordnet wird. Eine weniger offensichtliche Methode zum Erstellen eines Verweises besteht darin, dass ein Objekt einen Handler zum Ereignis eines anderen Objekts hinzufügt. In diesem Fall behält das zweite Objekt den Verweis zum ersten Objekt, bis der Handler explizit entfernt ist oder das zweite Objekt vernichtet wird.  
@@ -51,7 +46,7 @@ Ermitteln Sie mithilfe des Analyzers für verwalteten Speicher von Visual Studio
   
  ![Zurück nach oben](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)  
   
-##  <a name="BKMK_Identify_a_memory_issue_in_an_app"></a> Erkennen eines Arbeitsspeicherproblems in einer app  
+## <a name="BKMK_Identify_a_memory_issue_in_an_app"></a> Erkennen eines Arbeitsspeicherproblems in einer app  
  Das sichtbarste Symptom von Arbeitsspeicherproblemen ist die Leistung der App, insbesondere dann, wenn die Leistung im Zeitverlauf abnimmt. Eine Verringerung der Leistung anderer Apps während der Ausführung Ihrer App kann ebenfalls auf ein Arbeitsspeicherproblem hinweisen. Wenn Sie ein Arbeitsspeicherproblem vermuten, verwenden Sie ein Tool wie Task-Manager oder [Windows Performance Monitor](http://technet.microsoft.com/library/cc749249.aspx) um weiter zu untersuchen. Schauen Sie beispielsweise, ob die Gesamtgröße des Speichers angestiegen ist, was sich aber nicht als potenzielle Quelle von Arbeitsspeicherverlusten erklären lässt:  
   
  ![Konsistente speichervergrößerung im Ressourcenmonitor](../misc/media/mngdmem-resourcemanagerconsistentgrowth.png "MNGDMEM_ResourceManagerConsistentGrowth")  
@@ -60,11 +55,11 @@ Ermitteln Sie mithilfe des Analyzers für verwalteten Speicher von Visual Studio
   
  ![Speicherspitzen im Ressourcen-Manager](../misc/media/mngdmem-resourcemanagerspikes.png "MNGDMEM_ResourceManagerSpikes")  
   
-##  <a name="BKMK_Collect_memory_snapshots"></a> Sammeln von Momentaufnahmen des Arbeitsspeichers  
+## <a name="BKMK_Collect_memory_snapshots"></a> Sammeln von Momentaufnahmen des Arbeitsspeichers  
  Das arbeitsspeicheranalysetool analysiert Informationen in *Dumpdateien* , die Heapinformationen enthalten. Sie können Dumpdateien in Visual Studio erstellen oder Sie können ein Tool wie [ProcDump](http://technet.microsoft.com/sysinternals/dd996900.aspx) aus [Windows Sysinternals](http://technet.microsoft.com/sysinternals). Finden Sie unter [Was ist ein Speicherabbild, und wie erstelle ich eine?](http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx) Blog des Visual Studio Debugger Team.  
   
 > [!NOTE]
->  Die meisten Tools können Dumpinformationen mit oder ohne vollständige Heapspeicherdaten sammeln. Die Speicheranalyse von Visual Studio erfordert vollständige Heapinformationen.  
+> Die meisten Tools können Dumpinformationen mit oder ohne vollständige Heapspeicherdaten sammeln. Die Speicheranalyse von Visual Studio erfordert vollständige Heapinformationen.  
   
  **Sammeln Sie einen Dump von Visual Studio**  
   
@@ -80,7 +75,7 @@ Ermitteln Sie mithilfe des Analyzers für verwalteten Speicher von Visual Studio
   
    ![Zurück nach oben](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)  
   
-##  <a name="BKMK_Analyze_memory_use"></a> Analysieren der arbeitsspeichernutzung  
+## <a name="BKMK_Analyze_memory_use"></a> Analysieren der arbeitsspeichernutzung  
  [Die Liste der Objekte filtern](#BKMK_Filter_the_list_of_objects) **&#124;** [Analysieren der Arbeitsspeicherdaten von einer einzelnen Momentaufnahme](#BKMK_Analyze_memory_data_in_from_a_single_snapshot) **&#124;** [vergleichen zwei Momentaufnahmen](#BKMK_Compare_two_memory_snapshots)  
   
  So analysieren Sie eine Dumpdatei bei Problemen mit der Arbeitsspeichernutzung  
@@ -95,7 +90,7 @@ Ermitteln Sie mithilfe des Analyzers für verwalteten Speicher von Visual Studio
   
    ![Zurück nach oben](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)  
   
-###  <a name="BKMK_Filter_the_list_of_objects"></a> Die Liste der Objekte filtern  
+### <a name="BKMK_Filter_the_list_of_objects"></a> Die Liste der Objekte filtern  
  Standardmäßig wird die Liste der Objekte in einer Speichermomentaufnahme von der Speicheranalyse gefiltert, um nur die Typen und die Instanzen anzuzeigen, die Benutzercode sind, und nur die Typen darzustellen, deren inklusive Gesamtgröße einen prozentualen Schwellenwert der gesamten Heapgröße überschreitet. Sie können diese Optionen im Ändern der **Ansichtseinstellungen** Liste:  
   
 |||  
@@ -107,7 +102,7 @@ Ermitteln Sie mithilfe des Analyzers für verwalteten Speicher von Visual Studio
   
  ![Zurück nach oben](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)  
   
-###  <a name="BKMK_Analyze_memory_data_in_from_a_single_snapshot"></a> Analysieren der Arbeitsspeicherdaten von einer einzelnen Momentaufnahme  
+### <a name="BKMK_Analyze_memory_data_in_from_a_single_snapshot"></a> Analysieren der Arbeitsspeicherdaten von einer einzelnen Momentaufnahme  
  Visual Studio beginnt eine neue Debugsitzung zur Analyse der Datei und zeigt die Speicherdaten in einem Fenster Heap-Ansicht an.  
   
  ![Die objekttypliste](../misc/media/dbg-mma-objecttypelist.png "DBG_MMA_ObjectTypeList")  
@@ -142,9 +137,9 @@ Ermitteln Sie mithilfe des Analyzers für verwalteten Speicher von Visual Studio
   
 #### <a name="paths-to-root"></a>Pfade zum Stamm  
   
--   Für einen aus der **Objekttyp** Tabelle, die **Pfade zum Stamm** Tabelle werden den eindeutigen Typhierarchien, führen zu den Stammobjekten für alle Objekte des Typs führen, sowie die Anzahl der Verweise auf die Typ, der in der Hierarchie jeweils darüber liegt.  
+- Für einen aus der **Objekttyp** Tabelle, die **Pfade zum Stamm** Tabelle werden den eindeutigen Typhierarchien, führen zu den Stammobjekten für alle Objekte des Typs führen, sowie die Anzahl der Verweise auf die Typ, der in der Hierarchie jeweils darüber liegt.  
   
--   Für ein von der Instanz eines Typs ausgewähltes Objekt **Pfade zum Stamm** zeigt ein Diagramm der tatsächlichen Objekte an, die einen Verweis auf die Instanz enthalten. Sie können den Mauszeiger über den Namen des Objekts bewegen, sodass sein Datenwert in einem Datentipp angezeigt wird.  
+- Für ein von der Instanz eines Typs ausgewähltes Objekt **Pfade zum Stamm** zeigt ein Diagramm der tatsächlichen Objekte an, die einen Verweis auf die Instanz enthalten. Sie können den Mauszeiger über den Namen des Objekts bewegen, sodass sein Datenwert in einem Datentipp angezeigt wird.  
   
 #### <a name="referenced-types--referenced-objects"></a>Referenzierte Typen / Referenzierte Objekte  
   
@@ -173,7 +168,7 @@ Ermitteln Sie mithilfe des Analyzers für verwalteten Speicher von Visual Studio
 |**SizedRef-Handle**|Ein starkes Handle, das eine ungefähre Größe des kollektiven Abschlusses aller Objekte und Objektstämme zur Garbage Collection-Zeit enthält.|  
 |**Angeheftete lokale variable**|Eine angeheftete lokale Variable.|  
   
-###  <a name="BKMK_Compare_two_memory_snapshots"></a> Vergleich von zwei Speichermomentaufnahmen  
+### <a name="BKMK_Compare_two_memory_snapshots"></a> Vergleich von zwei Speichermomentaufnahmen  
  Sie können zwei Dumpdateien eines Prozesses vergleichen, um nach Objekten zu suchen, die möglicherweise die Ursache von Speicherverlusten sind. Das Intervall zwischen der Auflistung aus der ersten (früheren) und zweiten (späteren) Datei sollte so groß sein, dass der Anstieg der Anzahl von Objekten, die Speicherverluste verursachen, leicht ersichtlich ist. So vergleichen Sie die beiden Dateien  
   
 1. Öffnen Sie die zweite Dumpdatei, und wählen Sie dann **verwalteten Speicher Debuggen** auf die **Minidumpdatei-Zusammenfassung** Seite.  

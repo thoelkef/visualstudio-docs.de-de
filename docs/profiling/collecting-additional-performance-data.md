@@ -1,20 +1,18 @@
 ---
 title: Sammeln zusätzlicher Leistungsdaten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 562f1cf090ffe169ead30b3bd7c4bdce515d3b22
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: c68ddbcf6d2284cc3cb2ec103fa9417a6e0338f9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34266325"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777358"
 ---
 # <a name="collect-additional-performance-data"></a>Sammeln zusätzlicher Leistungsdaten
 

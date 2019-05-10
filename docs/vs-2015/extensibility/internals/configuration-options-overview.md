@@ -1,27 +1,22 @@
 ---
 title: Übersicht der Konfigurationsoptionen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project configurations
 - configuration options, about configuration options
 ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 44c5f424ec36d3c04403f62547920f59622208a9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0b37d93adbd2accb7a12fb176ab15aafc6914190
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441513"
 ---
 # <a name="configuration-options-overview"></a>Übersicht über Konfigurationsoptionen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,11 +34,11 @@ Projekte in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] unterstützen mehrer
 |Konfigurationsname|Plattform: Win32|Plattform: Win64|  
 |------------------------|----------------------|----------------------|  
 |Debug|\<Debug-Win32-Einstellungen >|\<Debug-Win64-Einstellungen >|  
-|Release|\<Einstellungen für die Win32-Version >|\<Releaseeinstellungen Win64 >|  
+|Freigabe|\<Einstellungen für die Win32-Version >|\<Releaseeinstellungen Win64 >|  
 |MyConfig|Nicht zutreffend|\<MyConfig Win64-Einstellungen >|  
   
 > [!NOTE]
->  Sie können keine Projektmappenkonfiguration "MyConfig" erstellen, die eine Plattform für die "Win32" ausschließt, es sei denn, das Projekt, die, das Sie Anzielen, Win32 nicht unterstützt.  
+> Sie können keine Projektmappenkonfiguration "MyConfig" erstellen, die eine Plattform für die "Win32" ausschließt, es sei denn, das Projekt, die, das Sie Anzielen, Win32 nicht unterstützt.  
   
  Ändern die aktive Konfiguration für eine Lösung wählt den Satz von Projektkonfigurationen, die erstellt, ausführen, Debuggen oder bereitgestellt werden, in dieser Lösung. Wenn Sie die aktive Projektmappenkonfiguration aus Release in Debug ändern, werden in der Projektmappe alle Projekte z. B. automatisch mit der Projekte Konfiguration angegeben, in der Projektmappe-Debug-Konfiguration erstellt. Die Projekte-Konfigurationen sind in der Regel auch benannte Debuggen, wenn der Benutzer die manuelle Änderungen im Konfigurations-Manager der Umgebung vorgenommen hat.  
   
@@ -80,4 +75,3 @@ Konfigurationsschnittstellen
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>   
  [Konfiguration für die Erstellung des Projekts](../../extensibility/internals/project-configuration-for-building.md)   
  [Projektmappenkonfiguration](../../extensibility/internals/solution-configuration.md)
-

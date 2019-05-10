@@ -1,14 +1,9 @@
 ---
 title: Erstellen von Bootstrapperpaketen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -25,13 +20,13 @@ ms.assetid: ba1a785b-693d-446b-bcae-b88cadee73d1
 caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: dcc331defab98303a805f75f75afb3e309c7d2dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ac304d695c13fde2b69aafbb903493ad9865bf87
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910926"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59001443"
 ---
 # <a name="creating-bootstrapper-packages"></a>Erstellen von Bootstrapperpaketen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ Das Setupprogramm ist ein generisches Installationsprogramm, das für die Ermitt
  Der Bootstrapper ermittelt zunächst, ob erforderliche Komponenten bereits installiert sind. Ist dies nicht der Fall, werden vom Bootstrapper die Lizenzverträge angezeigt. Nachdem der Endbenutzer die Lizenzverträge akzeptiert hat, beginnt die Installation der erforderlichen Komponenten. Wurden alle erforderlichen Komponenten ermittelt, wird direkt das Installationsprogramm der Anwendung gestartet.  
   
 ## <a name="creating-custom-packages"></a>Erstellen von benutzerdefinierten Paketen  
- Sie können die Manifeste mit dem XML-Editor in Visual Studio generieren. Weitere Informationen finden Sie unter [How to: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md) und [How to: Create a Product Manifest](../deployment/how-to-create-a-product-manifest.md). Ein Beispiel für das Erstellen eines Bootstrapperpakets finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bootstrappers zum Anzeigen einer Datenschutzeingabeaufforderung](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
+ Sie können die Manifeste mit dem XML-Editor in Visual Studio generieren. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen eines Paketmanifests](../deployment/how-to-create-a-package-manifest.md) und [Vorgehensweise: Erstellen eines Produktmanifests](../deployment/how-to-create-a-product-manifest.md). Ein Beispiel zum Erstellen eines Bootstrapperpakets finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bootstrappers zum Datenschutzbestimmungen Eingabeaufforderung anzeigen](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
   
  Zur Erstellung eines Bootstrapperpakets muss die weitervertreibbare Komponente in Form einer EXE- oder MSI-Datei im Bootstrapper Manifest-Generator angegeben werden. Dann werden vom Bootstrapper Manifest-Generator die folgenden Dateien erstellt:  
   
@@ -75,7 +70,7 @@ Das Setupprogramm ist ein generisches Installationsprogramm, das für die Ermitt
   
   `package.xml`  
   
-  Schließlich kopieren Sie die verteilbaren Dateien in den Bootstrapperordner. Weitere Informationen finden Sie unter [How to: Create a Localized Bootstrapper Package](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
+  Schließlich kopieren Sie die verteilbaren Dateien in den Bootstrapperordner. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen eines lokalisierten Bootstrapperpakets](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
   
 ```  
 \Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
@@ -108,19 +103,19 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 |Eigenschaft|Beschreibung|  
 |--------------|-----------------|  
 |ApplicationName|Der Name der Anwendung.|  
-|ProcessorArchitecture|Der Prozessor und die Bits pro Wort für die Plattform, auf die eine ausführbare Datei zielt. Folgende Werte sind gültig:<br /><br /> -Intel<br />-IA64<br />-AMD64|  
+|ProcessorArchitecture|Der Prozessor und die Bits pro Wort für die Plattform, auf die eine ausführbare Datei zielt. Folgende Werte sind gültig:<br /><br /> –   Intel<br />–   IA64<br />–   AMD64|  
 |[Version9x](https://msdn.microsoft.com/library/aa372490\(v=vs.140\).aspx)|Die Versionsnummer für Microsoft Windows 95, Windows 98 oder Windows ME. Die Syntax der Version lautet "Major.Minor.ServicePack".|  
-|[VersionNT](https://msdn.microsoft.com/library/aa372495\(v=vs.140\).xaspx)|Die Versionsnummer für Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 oder Windows 7. Die Syntax der Version lautet "Major.Minor.ServicePack".|  
+|[VersionNT](/windows/desktop/Msi/versionnt)|Die Versionsnummer für Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 oder Windows 7. Die Syntax der Version lautet "Major.Minor.ServicePack".|  
 |[VersionMSI](https://msdn.microsoft.com/library/aa372493\(v=vs.140\).aspx)|Die Version der Windows Installer-Assembly (msi.dll), die während der Installation ausgeführt wird.|  
 |[AdminUser](https://msdn.microsoft.com/library/aa367545\(v=vs.140\).aspx)|Diese Eigenschaft wird festgelegt, wenn der Benutzer über Administratorrechte verfügt. Gültige Werte sind "true" und "false".|  
-|InstallMode|Der Installationsmodus gibt an, von welchem Speicherort die Komponente installiert werden muss. Folgende Werte sind gültig:<br /><br /> -HomeSite - Voraussetzungen werden von der Website des Anbieters installiert.<br />-SpecificSite: Voraussetzungen werden von dem Speicherort installiert, die Sie auswählen.<br />-SameSite - Voraussetzungen werden von demselben Speicherort wie die Anwendung installiert.|  
+|InstallMode|Der Installationsmodus gibt an, von welchem Speicherort die Komponente installiert werden muss. Folgende Werte sind gültig:<br /><br /> –   HomeSite: Die erforderlichen Komponenten werden von der Website des Anbieters installiert.<br />–   SpecificSite: Die erforderlichen Komponenten werden vom ausgewählten Speicherort installiert.<br />–   SameSite: Die erforderlichen Komponenten werden vom gleichen Speicherort wie die Anwendung installiert.|  
   
 ## <a name="separating-redistributables-from-application-installations"></a>Trennen von weitervertreibbaren Komponenten von Anwendungsinstallationen  
  Sie können die Bereitstellung von verteilbaren Dateien in Setupprojekten auch deaktivieren. Erstellen Sie hierzu im Ordner "RedistList" im Verzeichnis von .NET Framework eine verteilbare Liste:  
   
  `%ProgramFiles%\Microsoft.NET\RedistList`  
   
- Die verteilbare Liste ist eine XML-Datei, die entsprechend dem folgenden Format benannt wird: *Company Name*.*Component Name*.RedistList.xml. Beispiel: Wenn die Komponente "Datawidgets" heißt und von der Firma Acme stammt, nennen Sie die Datei "Acme.DataWidgets.RedistList.xml". Der Inhalt der verteilbaren Liste könnte in etwa so aussehen:  
+ Die verteilbare Liste ist eine XML-Datei, die Sie entsprechend dem folgenden Format benennen sollten: *Name des Unternehmens*. *Name der Komponente*. RedistList.xml. Beispiel: Wenn die Komponente "Datawidgets" heißt und von der Firma Acme stammt, nennen Sie die Datei "Acme.DataWidgets.RedistList.xml". Der Inhalt der verteilbaren Liste könnte in etwa so aussehen:  
   
 ```  
 <?xml version="1.0" encoding="UTF-8"?>  
@@ -130,10 +125,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Installieren von erforderlichen Komponenten mit einer ClickOnce-Anwendung](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [Vorgehensweise: Installieren der erforderlichen Komponenten mit einer ClickOnce-Anwendung](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [Dialogfeld "Erforderliche Komponenten"](../ide/reference/prerequisites-dialog-box.md)   
  [Produkt- und Paketschemareferenz](../deployment/product-and-package-schema-reference.md)   
  [Artikel zum Verwenden des Visual Studio 2005-Bootstrappers zum Starten der Installation](http://go.microsoft.com/fwlink/?LinkId=107537)
-
-
-

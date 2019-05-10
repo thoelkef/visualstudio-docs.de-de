@@ -1,14 +1,9 @@
 ---
 title: Optionsseite, Eigenschaften des Knotens „Text-Editor“ | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Tools Options settings, Text Editor node properties
 - automation [Visual Studio], controlling Tools Options
@@ -16,18 +11,17 @@ ms.assetid: 19438302-0677-4f4d-9720-5667e6a22ab2
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 88ba9765e292d4f07a7e1392a64270ddf27e8f60
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fa63e84cd7655ebf8a48ff47a8d844a471c193cd
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241903"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651616"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Optionsseite, Eigenschaften des Knotens "Text-Editor"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 In diesem Dokument werden einige Seiten (oder Eigenschaftenauflistungen) beschrieben, die der Kategorie **Text-Editor**, `DTE.Properties("TextEditor", <Property Page>)`, des Dialogfelds **Optionen** zugeordnet sind. Den Titel für jeden Unterabschnitt bildet der Aufruf zum Zugriff auf die `Properties`-Auflistung, und die Tabelle in jedem Unterabschnitt führt die Eigenschaften in der Auflistung auf.  
   
  Die Visual Basic-Makros in [Steuern der Einstellungen im Dialogfeld „Optionen“ (Menü „Extras“)](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) veranschaulichen, wie aktuelle Optionen und ihre Werte für die einzelnen Seiten des Dialogfelds **Optionen** angezeigt werden.  
@@ -76,6 +70,3 @@ In diesem Dokument werden einige Seiten (oder Eigenschaftenauflistungen) beschri
  [Bestimmen der Namen von Eigenschaftenelementen auf Optionsseiten](http://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [Seite „Optionen“, Eigenschaften des Knotens „Umgebung“](../../ide/reference/options-page-environment-node-properties.md)   
  [Optionsseite, Eigenschaften des Knotens „Schriftarten und Farben“](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
-
-
-

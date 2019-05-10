@@ -1,30 +1,24 @@
 ---
 title: 'XSD-Beispieldatei: Einfaches Schema | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: f7e1dde1-b4f6-4371-add4-935b68ec77d7
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 026201bcc2f02b91662990c71e648fe9f6c8f1f3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: beea8103cce20d7437965b94a5ace10605847546
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261624"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662044"
 ---
 # <a name="sample-xsd-file-simple-schema"></a>XSD-Beispieldatei: Einfaches Schema
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Die folgende XSD-Datei wird in verschiedenen Beispielen in der Dokumentation zum XSD-Schema-Designer verwendet. Bei dieser Datei handelt es sich um ein einfaches Bestellungsschema.  
   
 ```xml  
@@ -53,6 +47,3 @@ Die folgende XSD-Datei wird in verschiedenen Beispielen in der Dokumentation zum
  </xsd:complexType>  
 </xsd:schema>  
 ```
-
-
-

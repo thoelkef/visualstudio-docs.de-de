@@ -9,14 +9,13 @@ helpviewer_keywords:
 ms.assetid: e61c49f3-3161-45b1-9220-08b5459065a2
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 885729100f56c7f3491f17b10f6731e3d4df6eb1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: ed1bd922b390d5b6e90c68b08683e1b9bdb46f32
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850137"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821247"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Vorgehensweise: Anzeigen der Antwortzeit von Websites in einem Auslastungstest mit dem Auslastungstest-Analyzer
 
@@ -26,15 +25,15 @@ Die Zeit, die Websites benötigen, bis sie vollständig geladen sind, wird *Antw
 
 Wenn der Webleistungstest unter Belastung in einem Auslastungstest ausgeführt wird, können für jede Seite folgende Informationen analysiert werden:
 
--   Die durchschnittliche Antwortzeit der Seite.
+- Die durchschnittliche Antwortzeit der Seite.
 
--   Testiterationen in Prozent, die dem Antwortzeitziel der Seite entsprechen.
+- Testiterationen in Prozent, die dem Antwortzeitziel der Seite entsprechen.
 
--   Sie können die Antwortzeiten von Webseiten mit den Ansichten „Tabellen“ oder „Diagramme“ im **Auslastungstest-Analyzer** analysieren:
+- Sie können die Antwortzeiten von Webseiten mit den Ansichten „Tabellen“ oder „Diagramme“ im **Auslastungstest-Analyzer** analysieren:
 
--   Analysieren der Antwortzeiten von Webseiten in der Tabellenansicht
+- Analysieren der Antwortzeiten von Webseiten in der Tabellenansicht
 
--   Analysieren der Antwortzeiten von Webseiten in der Diagrammansicht
+- Analysieren der Antwortzeiten von Webseiten in der Diagrammansicht
 
 ## <a name="view-response-time-data-in-a-table"></a>Anzeigen der Antwortzeitdaten in einer Tabelle
 

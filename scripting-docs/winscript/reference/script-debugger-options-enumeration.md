@@ -2,7 +2,6 @@
 title: SCRIPT_DEBUGGER_OPTIONS-Enumeration | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e35d90a3750c759282d86c7383bf25204fbf4fcd
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
-ms.translationtype: MT
+ms.openlocfilehash: 404d3939e0a328beb5e2413d25885fddf8478ead
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54088594"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443635"
 ---
 # <a name="scriptdebuggeroptions-enumeration"></a>SCRIPT_DEBUGGER_OPTIONS-Enumeration
 Gibt eine Reihe von Optionen und/oder Funktionen, die für den angefügten Debugger gelten. Verwendet [IDebugApplicationNode100::GetExcludedDocuments](../../winscript/reference/idebugapplicationnode100-getexcludeddocuments.md) und [IDebugApplicationNode100::SetFilterForEventSink](../../winscript/reference/idebugapplicationnode100-setfilterforeventsink.md)  
   
 > [!IMPORTANT]
->  Diese Konstanten werden durch PDM v10. 0 und höher implementiert. Gefunden in activdbg100.h.  
+> Diese Konstanten werden durch PDM v10. 0 und höher implementiert. Gefunden in activdbg100.h.  
   
 ## <a name="syntax"></a>Syntax  
   

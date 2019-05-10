@@ -2,7 +2,6 @@
 title: IActiveScriptSiteDebug::OnScriptErrorDebug | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5680d22ffa5ec648afaced5e98f651e35758f929
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 50e8c7baa42d6f2f36dc71b768797dfe2a464bf3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54092117"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992427"
 ---
 # <a name="iactivescriptsitedebugonscripterrordebug"></a>IActiveScriptSiteDebug::OnScriptErrorDebug
 Ermöglicht einen Smarthost zu bestimmen, wie zum Behandeln von Laufzeitfehlern führen.  

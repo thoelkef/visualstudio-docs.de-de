@@ -1,7 +1,6 @@
 ---
 title: Befehl "Registrierungen auflisten"
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - debug.listregisters
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 19a9d789-f6c9-46b3-b1f6-4934fc33e055
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 942ab10a1d660ea5e33ca2cb679e4655bd6b3fbc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fb1a2361534f167a0b88b3f1b5b38c005915243d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959964"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62422964"
 ---
 # <a name="list-registers-command"></a>Befehl "Registrierungen auflisten"
 Zeigt den Wert des ausgewählten Registers an und ermöglicht es Ihnen, die Liste der anzuzeigenden Register zu ändern
@@ -56,7 +55,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 
  Entfernt einen oder mehrere `register`- oder `registerGroup`-Werte aus der Liste
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Anmerkungen
  Der Alias `r` kann anstelle von `Debug.ListRegisters` verwendet werden.
 
 ## <a name="example"></a>Beispiel

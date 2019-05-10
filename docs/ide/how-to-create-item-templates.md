@@ -1,25 +1,24 @@
 ---
 title: Erstellen von Elementvorlagen
 ms.date: 01/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - item templates [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d921257e202e3b8175fcfd01910c00ece4306136
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: a861843da139701c23e38df11c7ad380c047a846
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952260"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823923"
 ---
 # <a name="how-to-create-item-templates"></a>Vorgehensweise: Erstellen von Elementvorlagen
 
 In diesem Artikel wird erläutert, wie Sie eine Elementvorlage mithilfe des **Assistenten zum Exportieren von Vorlagen** erstellen können. Wenn Ihre Vorlage mehrere Dateien enthalten soll, finden Sie im Artikel [Vorgehensweise: Erstellen von Elementvorlagen mit mehreren Dateien](../ide/how-to-create-multi-file-item-templates.md) entsprechende Informationen dazu.
 
-## <a name="to-add-a-user-item-template-to-the-add-new-item-dialog-box"></a>Hinzufügen einer Benutzerelementvorlage zum Dialogfeld „Neues Element hinzufügen“
+## <a name="add-an-item-template-to-the-add-new-item-dialog-box"></a>Hinzufügen einer Elementvorlage zum Dialogfeld „Neues Element hinzufügen“
 
 1. Erstellen oder Öffnen Sie ein Projekt in Visual Studio.
 
@@ -47,7 +46,7 @@ In diesem Artikel wird erläutert, wie Sie eine Elementvorlage mithilfe des **As
 
    Die Elementvorlage wird im Dialogfeld **Neues Element hinzufügen** angezeigt. Wenn Sie dem **Assistenten zum Exportieren von Vorlagen** eine Beschreibung hinzugefügt haben, wird diese rechts neben dem Dialogfeld angezeigt.
 
-## <a name="to-enable-the-item-template-to-be-used-in-a-universal-windows-app-project"></a>Aktivieren der Elementvorlage, die in einem Universellen Windows-App-Projekt verwendet werden soll
+## <a name="enable-the-item-template-to-be-used-in-a-universal-windows-app-project"></a>Aktivieren der Elementvorlage für die Verwendung in einem Universellen Windows-App-Projekt
 
 Der Assistent nimmt Ihnen einen Großteil der Arbeit beim Erstellen der Standardvorlage ab. In vielen Fällen müssen Sie die *VSTEMPLATE*-Datei jedoch manuell bearbeiten, nachdem Sie die Vorlage exportiert haben. Wenn z.B. das Element im Dialogfeld **Neues Element hinzufügen** für ein Universelles Windows-App-Projekt angezeigt werden soll, müssen Sie einige zusätzliche Schritte ausführen.
 
@@ -69,7 +68,7 @@ Der Assistent nimmt Ihnen einen Großteil der Arbeit beim Erstellen der Standard
 
 Sie können nun ein Element auf der Grundlage dieser Vorlage einem Universellen Windows-Projekt hinzufügen, indem Sie das Dialogfeld **Neues Element hinzufügen** verwenden.
 
-## <a name="to-enable-templates-for-specific-project-subtypes"></a>Aktivieren der Vorlagen für bestimmte Projektuntertypen
+## <a name="enable-templates-for-specific-project-subtypes"></a>Aktivieren von Vorlagen für bestimmte Projektuntertypen
 
 Sie können angeben, dass die Vorlage nur für bestimmte Projektuntertypen wie Windows, Office, Datenbank oder Web angezeigt wird.
 
@@ -104,25 +103,35 @@ Im folgenden Beispiel wird eine Elementvorlage für **Office**-Projekte dargeste
 </VSTemplate>
 ```
 
-## <a name="to-manually-create-an-item-template-without-using-the-export-template-wizard"></a>So erstellen Sie eine Elementvorlage manuell ohne den Assistenten zum Exportieren von Vorlagen
+## <a name="manually-create-an-item-template"></a>Manuelles Erstellen einer Elementvorlage
 
 In einigen Fällen sollten Sie eine Elementvorlage manuell von Grund auf neu erstellen.
 
 1. Erstellen Sie ein Projekt und ein Projektelement.
 
-1. Bearbeiten Sie das Projektelement solange, bis es als Vorlage gespeichert werden kann.
+2. Bearbeiten Sie das Projektelement solange, bis es als Vorlage gespeichert werden kann.
 
-1. Ändern Sie nach Bedarf die Codedatei, um anzugeben, an welcher Stelle Parameter ersetzt werden sollen. Weitere Informationen zu Parameterersetzungen finden Sie unter [Vorgehensweise: Ersetzen von Parametern in einer Vorlage](../ide/how-to-substitute-parameters-in-a-template.md).
+3. Ändern Sie nach Bedarf die Codedatei, um anzugeben, an welcher Stelle Parameter ersetzt werden sollen. Weitere Informationen zu Parameterersetzungen finden Sie unter [Vorgehensweise: Ersetzen von Parametern in einer Vorlage](../ide/how-to-substitute-parameters-in-a-template.md).
 
-1. Erstellen Sie eine XML-Datei, und speichern Sie sie mit der Erweiterung *VSTEMPLATE* in demselben Verzeichnis wie die Projektelementdatei.
+4. Erstellen Sie eine XML-Datei, und speichern Sie sie mit der Erweiterung *VSTEMPLATE* in demselben Verzeichnis wie die Projektelementdatei.
 
-1. Erstellen Sie die *VSTEMPLATE*-XML-Datei, um Metadaten für Elementvorlagen bereitzustellen. Weitere Informationen finden Sie unter [Template schema reference (extensibility) (Schemareferenz zu Vorlagen (Erweiterbarkeit))](../extensibility/visual-studio-template-schema-reference.md) und im Beispiel im vorherigen Abschnitt.
+5. Erstellen Sie die *VSTEMPLATE*-XML-Datei, um Metadaten für Elementvorlagen bereitzustellen. Weitere Informationen finden Sie unter [Template schema reference (extensibility) (Schemareferenz zu Vorlagen (Erweiterbarkeit))](../extensibility/visual-studio-template-schema-reference.md) und im Beispiel im vorherigen Abschnitt.
 
-1. Speichern Sie die *VSTEMPLATE*-Datei, und schließen Sie sie.
+6. Speichern Sie die *VSTEMPLATE*-Datei, und schließen Sie sie.
 
-1. Wählen Sie im **Windows-Explorer** die Dateien aus, die in Ihrer Vorlage enthalten sein sollen. Klicken Sie mit der rechten Maustaste auf Auswahl, und klicken Sie anschließend auf **Senden an** > **ZIP-komprimierter Ordner**. Die ausgewählten Dateien werden in eine *ZIP*-Datei komprimiert.
+7. Wählen Sie im **Windows-Explorer** die Dateien aus, die in Ihrer Vorlage enthalten sein sollen. Klicken Sie mit der rechten Maustaste auf Auswahl, und klicken Sie anschließend auf **Senden an** > **ZIP-komprimierter Ordner**. Die ausgewählten Dateien werden in eine *ZIP*-Datei komprimiert.
 
-1. Kopieren Sie die *ZIP*-Datei, und fügen Sie sie an dem Speicherort für die Benutzerelementvorlage ein. In Visual Studio 2017 ist *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates* das Standardverzeichnis. Weitere Informationen finden Sie unter [Vorgehensweise: Suchen und Organisieren von Projekt- und Elementvorlagen](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+::: moniker range="vs-2017"
+
+8. Kopieren Sie die *ZIP*-Datei, und fügen Sie sie an dem Speicherort für die Benutzerelementvorlage ein. Das Standardverzeichnis ist *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*. Weitere Informationen finden Sie unter [Vorgehensweise: Suchen und Organisieren von Projekt- und Elementvorlagen](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+8. Kopieren Sie die *ZIP*-Datei, und fügen Sie sie an dem Speicherort für die Benutzerelementvorlage ein. Das Standardverzeichnis ist *%USERPROFILE%\Documents\Visual Studio 2019\Templates\ItemTemplates*. Weitere Informationen finden Sie unter [Vorgehensweise: Suchen und Organisieren von Projekt- und Elementvorlagen](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+
+::: moniker-end
 
 ## <a name="see-also"></a>Siehe auch
 

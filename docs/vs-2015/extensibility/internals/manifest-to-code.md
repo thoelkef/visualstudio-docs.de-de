@@ -1,21 +1,17 @@
 ---
 title: Manifest für Code | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 caps.latest.revision: 5
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e07700b73c4f419e5dd0fa31c5e2aad9f3d6693d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5dd39ecfb25b4b21f7a9064da7621bcc77aab791
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758227"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076705"
 ---
 # <a name="manifest-to-code"></a>Manifest für Code
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,29 +28,29 @@ Das Manifest für Code-Tool ist eine Konsolenanwendung, die akzeptiert einer .im
 ||||  
 |-|-|-|  
 |**SwitchName**|**Notizen**|**Erforderlich oder Optional**|  
-|"/ manifest"|Der Pfad, der dem Manifest Image zum Erstellen oder aktualisieren den Codewrapper verwenden.|Erforderlich|  
-|/ Language|Die Sprache, in dem den Codewrapper generiert werden soll.<br /><br /> Gültige Werte: die Werte sind Groß-/Kleinschreibung, CPP, C++, CS, CSharp, c#, VB oder VSCT.<br /><br /> Für die VSCT-Sprache werden die Option, die die /monikerClass, /classAccess und/Namespace Optionen ignoriert.|Erforderlich|  
-|/imageIdClass|Der Name der ImageIdClass und die zugehörige Datei, die vom Tool erstellt. Für die C++-Language-Option werden nur die h-Dateien generiert.<br /><br /> Standardwert: \<Manifestpfad > \MyImageIds.\< Lang-Ext >|Optional|  
-|/monikerClass|Der Name der MonikerClass und die zugehörige Datei, die vom Tool erstellt. Für die C++-Language-Option werden nur die h-Dateien generiert. Dies wird für die VSCT-Sprache ignoriert.<br /><br /> Standardwert: \<Manifestpfad > \MyMonikers.\< Lang-Ext >|Optional|  
-|/classAccess|Der Zugriffsmodifizierer für die ImageIdClass und die MonikerClass. Stellen Sie sicher, dass der Zugriffsmodifizierer für die angegebene Sprache ungültig ist. Dies wird für die VSCT-Language-Option ignoriert.<br /><br /> Standard: Öffentliche|Optional|  
-|/ Namespace|Der Namespace, der im Codewrapper definiert wird. Dies wird für die VSCT-Language-Option ignoriert. Entweder "." oder "::" sind gültige Namespace-Trennzeichen, unabhängig von der gewählten Sprache.<br /><br /> Standard: MyImages|Optional|  
+|/manifest|Der Pfad, der dem Manifest Image zum Erstellen oder aktualisieren den Codewrapper verwenden.|Erforderlich|  
+|/ Language|Die Sprache, in dem den Codewrapper generiert werden soll.<br /><br /> Gültige Werte: CPP, C++, CS, CSharp, C#, VB oder VSCT Groß-/Kleinschreibung der Werte.<br /><br /> Für die VSCT-Sprache werden die Option, die die /monikerClass, /classAccess und/Namespace Optionen ignoriert.|Erforderlich|  
+|/imageIdClass|Der Name der ImageIdClass und die zugehörige Datei, die vom Tool erstellt. Für die C++-Language-Option werden nur die h-Dateien generiert.<br /><br /> Standard: \<Manifestpfad > \MyImageIds. \<Lang Ext >|Optional|  
+|/monikerClass|Der Name der MonikerClass und die zugehörige Datei, die vom Tool erstellt. Für die C++-Language-Option werden nur die h-Dateien generiert. Dies wird für die VSCT-Sprache ignoriert.<br /><br /> Standard: \<Manifestpfad > \MyMonikers. \<Lang Ext >|Optional|  
+|/classAccess|Der Zugriffsmodifizierer für die ImageIdClass und die MonikerClass. Stellen Sie sicher, dass der Zugriffsmodifizierer für die angegebene Sprache ungültig ist. Dies wird für die VSCT-Language-Option ignoriert.<br /><br /> Standard: Public|Optional|  
+|/namespace|Der Namespace, der im Codewrapper definiert wird. Dies wird für die VSCT-Language-Option ignoriert. Entweder "." oder "::" sind gültige Namespace-Trennzeichen, unabhängig von der gewählten Sprache.<br /><br /> Standard: MyImages|Optional|  
 |/noLogo|Dieses Flag wird beendet, Produkt und das Copyright-Informationen aus drucken.|Optional|  
 |/?|Ausgeben von Hilfeinformationen.|Optional|  
 |/help|Ausgeben von Hilfeinformationen.|Optional|  
   
  **Beispiele**  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest/Language: CSharp  
+- ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:CSharp  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:C++/Namespace: Meine:: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend  
+- ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:C++/Namespace: Meine:: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:VSCT /imageIdClass:MyImageIds  
+- ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds  
   
 ## <a name="notes"></a>Hinweise  
   
--   Es wird empfohlen, dass Sie dieses Tool mit bildmanifesten verwenden, die vom Manifest aus Ressourcen Tool generiert wurden.  
+- Es wird empfohlen, dass Sie dieses Tool mit bildmanifesten verwenden, die vom Manifest aus Ressourcen Tool generiert wurden.  
   
--   Das Tool untersucht nur die Symbol-Einträge, die Code-Wrapper erstellt werden. Wenn einem bildmanifest keine Symbole enthält, werden der generierte Code Wrapper leer sein. Liegt ein Bild oder einen Satz von Bildern in das Image-Manifest, die keine Symbole verwenden, werden sie aus dem Codewrapper ausgeschlossen werden.  
+- Das Tool untersucht nur die Symbol-Einträge, die Code-Wrapper erstellt werden. Wenn einem bildmanifest keine Symbole enthält, werden der generierte Code Wrapper leer sein. Liegt ein Bild oder einen Satz von Bildern in das Image-Manifest, die keine Symbole verwenden, werden sie aus dem Codewrapper ausgeschlossen werden.  
   
 ## <a name="sample-output"></a>Beispielausgabe:  
  **C#-Wrapper**  
@@ -236,4 +232,3 @@ End Namespace
   </Symbols>  
 </CommandTable>  
 ```
-

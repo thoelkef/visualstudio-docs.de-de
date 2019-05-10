@@ -1,14 +1,9 @@
 ---
 title: Seite „Anwendung“, Projekt-Designer (Visual Basic) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesApplicationWPF
 - vb.ProjectPropertiesApplication
@@ -19,18 +14,17 @@ ms.assetid: 8cec9fea-cd92-47ff-88dd-7c928f0b4a74
 caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9d2b23b5570a6372b727906a63ffb51513019df7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4c4e034659298cfa4aa67023767bd4c90ac745c9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433765"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Legen Sie auf der Seite **Anwendung** des Projekt-Designers die Anwendungseinstellungen und -eigenschaften eines Projekts fest.  
   
  Um auf die Seite **Anwendung** zuzugreifen, wählen Sie im **Projektmappen-Explorer** einen Projektknoten (nicht den Knoten **Projektmappen** aus. Wählen Sie dann in der Menüleiste die Option **Projekt** und dann **Eigenschaften** aus. Wenn der Projekt-Designer angezeigt wird, klicken Sie auf die Registerkarte **Anwendung**.  
@@ -49,7 +43,7 @@ Legen Sie auf der Seite **Anwendung** des Projekt-Designers die Anwendungseinste
  Wenn Sie den **Stammnamespace** löschen, können Sie die Namespacestruktur Ihres Projekts im Code festlegen.  
   
 > [!NOTE]
->  Wenn Sie das Global-Schlüsselwort in einer [Namespaceanweisung](http://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2) verwenden, können Sie einen Namespace außerhalb des Stammnamespaces Ihres Projekts definieren. Wenn Sie den **Stammnamespace** löschen, wird der Namespace `Global` der Namespace der obersten Ebene, wodurch die Notwendigkeit entfällt, das `Global`-Schlüsselwort in einer `Namespace`-Anweisung zu verwenden. Weitere Informationen finden Sie unter „Global-Schlüsselwort in Namespace-Anweisungen“ unter [Namespaces in Visual Basic](http://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88).  
+> Wenn Sie das Global-Schlüsselwort in einer [Namespaceanweisung](http://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2) verwenden, können Sie einen Namespace außerhalb des Stammnamespaces Ihres Projekts definieren. Wenn Sie den **Stammnamespace** löschen, wird der Namespace `Global` der Namespace der obersten Ebene, wodurch die Notwendigkeit entfällt, das `Global`-Schlüsselwort in einer `Namespace`-Anweisung zu verwenden. Weitere Informationen finden Sie unter „Global-Schlüsselwort in Namespace-Anweisungen“ unter [Namespaces in Visual Basic](http://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88).  
   
  Informationen zum Erstellen von Namespaces im Code finden Sie unter [Namespace-Anweisung](http://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2).  
   
@@ -63,7 +57,7 @@ Legen Sie auf der Seite **Anwendung** des Projekt-Designers die Anwendungseinste
  Der Standardwert entspricht dem Zielframework, das im Dialogfeld **Neues Projekt** angegeben wurde.  
   
 > [!NOTE]
->  Die im Dialogfeld [Erforderliche Komponenten](../../ide/reference/prerequisites-dialog-box.md) aufgelisteten Pakete mit erforderlichen Komponenten werden automatisch festgelegt, wenn Sie das Dialogfeld zum ersten Mal öffnen. Wenn im Nachhinein Änderungen am Zielframework des Projekts vorgenommen werden, müssen Sie die erforderlichen Komponenten entsprechend dem neuen Zielframework manuell auswählen.  
+> Die im Dialogfeld [Erforderliche Komponenten](../../ide/reference/prerequisites-dialog-box.md) aufgelisteten Pakete mit erforderlichen Komponenten werden automatisch festgelegt, wenn Sie das Dialogfeld zum ersten Mal öffnen. Wenn im Nachhinein Änderungen am Zielframework des Projekts vorgenommen werden, müssen Sie die erforderlichen Komponenten entsprechend dem neuen Zielframework manuell auswählen.  
   
  Weitere Informationen finden Sie unter [Gewusst wie: Bestimmte .NET Framework-Version als Ziel](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) und [Übersicht über die Ausrichtung auf mehrere Zielversionen in Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).  
   
@@ -75,7 +69,7 @@ Legen Sie auf der Seite **Anwendung** des Projekt-Designers die Anwendungseinste
  Wenn Sie die Option **WinMD-Datei** angeben, können Typen in eine beliebige Windows Runtime-Programmiersprache projiziert werden. Wenn Sie die Ausgabe des Projekts als WinMD-Datei packen, können Sie eine Anwendung in mehreren Sprachen codieren und einer Interaktion der verschiedenen Codes erreichen, als ob sie in derselben Sprache geschrieben wären. Sie können die Option **WinMD-Datei** für Projektmappen verwenden, die auf Windows Runtime-Bibliotheken abzielen, beispielsweise [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]-Apps. Weitere Informationen finden Sie unter [Erstellen von Windows-Runtime-Komponenten in C# und Visual Basic](http://go.microsoft.com/fwlink/?LinkId=231895).  
   
 > [!NOTE]
->  Die Windows Runtime kann Typen so projizieren, dass sie unabhängig von der verwendeten Sprache als systemeigene Objekte erscheinen. Beispielsweise verwenden JavaScript-Anwendungen, die mit der Windows Runtime interagieren, diese als JavaScript-Objektsatz, und C#-Anwendungen benutzen die Bibliothek als eine Sammlung von .NET-Objekten. Wenn Sie die Ausgabe des Projekts als WinMD-Datei packen, können Sie die gleiche Technologie nutzen, die Windows Runtime verwendet.  
+> Die Windows Runtime kann Typen so projizieren, dass sie unabhängig von der verwendeten Sprache als systemeigene Objekte erscheinen. Beispielsweise verwenden JavaScript-Anwendungen, die mit der Windows Runtime interagieren, diese als JavaScript-Objektsatz, und C#-Anwendungen benutzen die Bibliothek als eine Sammlung von .NET-Objekten. Wenn Sie die Ausgabe des Projekts als WinMD-Datei packen, können Sie die gleiche Technologie nutzen, die Windows Runtime verwendet.  
   
  Weitere Informationen zur Eigenschaft **Anwendungstyp** finden Sie unter [/target (Visual Basic)](http://msdn.microsoft.com/library/e0954147-548b-461f-9c4b-a8f88845616c). Informationen zum programmgesteuerten Zugreifen auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.OutputType%2A>.  
   
@@ -116,7 +110,7 @@ Legen Sie auf der Seite **Anwendung** des Projekt-Designers die Anwendungseinste
  Die folgenden Einstellungen sind im Abschnitt **Eigenschaften des Windows-Anwendungsframeworks** verfügbar. Diese Optionen sind nur verfügbar, wenn das Kontrollkästchen **Anwendungsframework aktivieren** aktiviert ist. Im folgenden Abschnitt werden die **Eigenschaften des Windows-Anwendungsframeworks**-Einstellungen für Windows Presentation Foundation (WPF)-Anwendungen beschrieben.  
   
  **Visuelle XP-Stile aktivieren**  
- Aktiviert oder deaktiviert die visuellen Windows XP-Stile, auch als *Windows XP-Designs* bezeichnet. Die visuellen Windows XP-Stile aktivieren z.B. Steuerelemente mit gerundeten Ecken und dynamischen Farben. Die Option ist standardmäßig aktiviert. Weitere Informationen zu visuellen Stilen für Windows XP finden Sie unter [Windows XP-Features und Windows Forms-Steuerelemente](http://msdn.microsoft.com/en-us/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)).  
+ Aktiviert oder deaktiviert die visuellen Windows XP-Stile, auch als *Windows XP-Designs* bezeichnet. Die visuellen Windows XP-Stile aktivieren z.B. Steuerelemente mit gerundeten Ecken und dynamischen Farben. Die Option ist standardmäßig aktiviert. Weitere Informationen zu visuellen Stilen für Windows XP finden Sie unter [Windows XP-Features und Windows Forms-Steuerelemente](http://msdn.microsoft.com/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)).  
   
  **Einzelinstanzanwendung erstellen**  
  Aktivieren Sie dieses Kontrollkästchen, um zu verhindern, dass Benutzer mehrere Instanzen der Anwendung ausführen. Das Kontrollkästchen ist standardmäßig deaktiviert. Mit dieser Einstellung können mehrere Instanzen der Anwendung ausgeführt werden.  
@@ -166,6 +160,3 @@ Legen Sie auf der Seite **Anwendung** des Projekt-Designers die Anwendungseinste
   
 ## <a name="see-also"></a>Siehe auch  
 [Verwalten von Anwendungseigenschaften](../../ide/application-properties.md) [Schreiben von Code in Office-Projektmappen](http://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
-
-
-

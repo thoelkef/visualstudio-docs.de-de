@@ -1,32 +1,26 @@
 ---
 title: MSBuild-Inlineaufgaben | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - MSBuild, tasks
 ms.assetid: e72e6506-4a11-4edf-ae8d-cfb5a3b9d8a0
 caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1f210aa8e33859f41046edc8e524cbfbeaf5417b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: cea0d72488bbd18972b2a2f6d87f21dfb32481d6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439364"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild-Inlineaufgaben
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 MSBuild-Aufgaben werden in der Regel durch Kompilieren einer Klasse erstellt, die die <xref:Microsoft.Build.Framework.ITask>-Schnittstelle implementiert. Weitere Informationen finden Sie unter [MSBuild-Aufgaben](../msbuild/msbuild-tasks.md).  
   
  Ab .NET Framework Version 4 können Sie Aufgaben inline in der Projektdatei erstellen. Zum Hosten der Aufgabe müssen Sie keine separate Assembly erstellen. Dies vereinfacht das Nachverfolgen von Quellcode und das Bereitstellen der Aufgabe. Der Quellcode ist im Skript integriert.  
@@ -73,7 +67,7 @@ MSBuild-Aufgaben werden in der Regel durch Kompilieren einer Klasse erstellt, di
   Das `Reference`-Element und das `Using`-Element sind sprachunabhängig. Inlineaufgaben können jeder unterstützten .NET CodeDom-Sprache geschrieben werden, z. B. Visual Basic oder Visual C#.  
   
 > [!NOTE]
->  Elemente im `Task`-Element sind für die Aufgabenfactory spezifisch, in diesem Fall die Codeaufgabenfactory.  
+> Elemente im `Task`-Element sind für die Aufgabenfactory spezifisch, in diesem Fall die Codeaufgabenfactory.  
   
 ### <a name="code-element"></a>Codeelement  
  Als letztes untergeordnetes Element wird im `Task`-Element das `Code`-Element angegeben. Das `Code`-Element enthält oder sucht den Code, den Sie zu einer Aufgabe kompilieren möchten. Welche Elemente Sie im `Code`-Element einfügen, ist davon abhängig, wie Sie die Aufgabe erstellen möchten.  
@@ -93,7 +87,7 @@ MSBuild-Aufgaben werden in der Regel durch Kompilieren einer Klasse erstellt, di
   Sie können den Speicherort einer Datei mit dem Code für die Aufgabe auch über das `Source`-Attribut des `Code`-Elements angeben. Der Code in der Quelldatei muss den vom `Type`-Attribut angegebenen Typ aufweisen. Bei vorhandenem `Source`-Attribut ist der Standardwert von `Type` `Class`. Wenn `Source` nicht vorhanden ist, lautet der Standardwert `Fragment`.  
   
 > [!NOTE]
->  Bei der Definition der Aufgabenklasse in der Quelldatei muss der Klassenname mit dem `TaskName`-Attribut des entsprechenden [UsingTask](../msbuild/usingtask-element-msbuild.md)-Elements übereinstimmen.  
+> Bei der Definition der Aufgabenklasse in der Quelldatei muss der Klassenname mit dem `TaskName`-Attribut des entsprechenden [UsingTask](../msbuild/usingtask-element-msbuild.md)-Elements übereinstimmen.  
   
 ## <a name="hello-world"></a>Hello World  
  Im Folgenden finden Sie eine robustere Inlineaufgabe. Die HalloWelt-Aufgabe gibt „Hallo, Welt!“ auf dem Standardgerät für die Fehlerprotokollierung aus. In der Regel handelt es sich dabei um die Systemkonsole oder das Fenster **Ausgabe** in Visual Studio. Das `Reference`-Element im Beispiel wurde nur zur Veranschaulichung eingefügt.  
@@ -199,7 +193,4 @@ File.WriteAllText(Path, content);
   
 ## <a name="see-also"></a>Siehe auch  
  [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
- [Exemplarische Vorgehensweise: Erstellen einer Inlineaufgabe](../msbuild/walkthrough-creating-an-inline-task.md)
-
-
-
+ [Exemplarische Vorgehensweise: Erstellen eines Inlinetasks](../msbuild/walkthrough-creating-an-inline-task.md)

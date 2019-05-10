@@ -1,14 +1,9 @@
 ---
 title: BP_LOCATION | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - BP_LOCATION
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: ed1e874c-f289-4c31-8b6c-04dde03ad0f5
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6e154fe6b1121855e50c32b342c3c11566cbcd03
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2a3e5f690a679118c7bb02c110d6e5d066a2bd0d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749110"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58946527"
 ---
 # <a name="bplocation"></a>BP_LOCATION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -110,7 +105,7 @@ public struct BP_LOCATION {
 |`BPLT_RESOLUTION`|[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)|-|-|-|  
   
 ## <a name="example"></a>Beispiel  
- In diesem Beispiel wird gezeigt, wie zum Interpretieren der `BP_LOCATION` Struktur in c# für die `BPLT_DATA_STRING` Typ. Dieses bestimmten Typs zeigt, wie alle vier interpretieren `unionmemberX` Elemente in allen möglichen Formaten (Object, String und Anzahl).  
+ In diesem Beispiel wird gezeigt, wie zum Interpretieren der `BP_LOCATION` Struktur in C# für die `BPLT_DATA_STRING` Typ. Dieses bestimmten Typs zeigt, wie alle vier interpretieren `unionmemberX` Elemente in allen möglichen Formaten (Object, String und Anzahl).  
   
 ```csharp  
 using System;  
@@ -152,4 +147,3 @@ namespace MyPackage
  [BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md)   
  [BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md)   
  [BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md)
-

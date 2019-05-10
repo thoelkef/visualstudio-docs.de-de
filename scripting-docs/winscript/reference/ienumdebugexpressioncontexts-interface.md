@@ -1,8 +1,7 @@
 ---
-title: IEnumDebugExpressionContexts-Schnittstelle | Microsoft Docs
+title: IEnumDebugExpressionContexts-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,23 +13,23 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f48a9bcf42b0aadd3716924e120bff403d87769d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0c257fe12f27bb5e6ffd5835986d0c7cac6193a8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728360"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62807373"
 ---
 # <a name="ienumdebugexpressioncontexts-interface"></a>IEnumDebugExpressionContexts-Schnittstelle
-Zählt eine Auflistung von `IDebugExpressionContexts` Objekte.  
+Zählt eine Sammlung von `IDebugExpressionContexts`-Objekten auf.  
   
- Zusätzlich zu den von geerbten Methoden `IUnknown`, `IEnumDebugExpressionContexts` Schnittstelle macht die folgenden Methoden verfügbar.  
+ Zusätzlich zu den von geerbten Methoden `IUnknown`, `IEnumDebugExpressionContexts` Schnittstelle verfügbar macht, die folgenden Methoden.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IEnumDebugExpressionContexts::Next](../../winscript/reference/ienumdebugexpressioncontexts-next.md)|Ruft eine angegebene Anzahl von Segmenten in die Enumerationsfolge ab.|  
-|[IEnumDebugExpressionContexts::Skip](../../winscript/reference/ienumdebugexpressioncontexts-skip.md)|Überspringt eine angegebene Anzahl von Segmenten in einem Enumerationsfolge an.|  
-|[IEnumDebugExpressionContexts::Reset](../../winscript/reference/ienumdebugexpressioncontexts-reset.md)|Setzt ein Enumerationsfolge auf den Anfang zurück.|  
+|[IEnumDebugExpressionContexts::Next](../../winscript/reference/ienumdebugexpressioncontexts-next.md)|Ruft eine angegebene Anzahl von Segmenten in der Enumerationsfolge ab.|  
+|[IEnumDebugExpressionContexts::Skip](../../winscript/reference/ienumdebugexpressioncontexts-skip.md)|Überspringt eine angegebene Anzahl von Segmenten in einer Enumerationsfolge.|  
+|[IEnumDebugExpressionContexts::Reset](../../winscript/reference/ienumdebugexpressioncontexts-reset.md)|Setzt eine Enumerationsfolge auf den Anfang zurück.|  
 |[IEnumDebugExpressionContexts::Clone](../../winscript/reference/ienumdebugexpressioncontexts-clone.md)|Erstellt einen Enumerator, der den gleichen Zustand wie der aktuelle Enumerator enthält.|

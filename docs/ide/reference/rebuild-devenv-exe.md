@@ -1,66 +1,72 @@
 ---
 title: -Rebuild („devenv.exe“)
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
 - Devenv, /rebuild switch
-- rebuild Devenv switch (/rebuild)
+- Rebuild Devenv switch (/Rebuild)
 - projects [Visual Studio], rebuilding
-- /rebuild Devenv switch
+- /Rebuild Devenv switch
 - applications [Visual Studio], rebuilding
 ms.assetid: c5a8a4bf-0e2b-46eb-a44a-8aeb29b92c32
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 782a0864c692d8c50932f41077762c994f24eeae
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 44e8675b0a913873ce9b89d9d9c4ceb431dffa0d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53985682"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945541"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
+
 Bereinigt und erstellt die angegebene Projektmappenkonfiguration
 
 ## <a name="syntax"></a>Syntax
 
-```cmd
-devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig ProjConfigName]
+```shell
+devenv SolutionName /Rebuild [SolnConfigName [/Project ProjName [/ProjectConfig ProjConfigName]] [/Out OutputFilename]]
 ```
 
 ## <a name="arguments"></a>Argumente
- `SolnConfigName`
 
- Erforderlich. Der Name der Projektmappenkonfiguration, die für das Erstellen der Projektmappe verwendet wird, die in `SolutionName` benannt wurde
+- *SolutionName*
 
- `SolutionName`
+  Erforderlich. Der vollständige Pfad und Name der Projektmappendatei
 
- Erforderlich. Der vollständige Pfad und Name der Projektmappendatei
+- *SolnConfigName*
 
- /project `ProjName`
+  Dies ist optional. Der Name der Projektmappenkonfiguration (z.B. `Debug` oder `Release`), die zum erneuten Erstellen der in *SolutionName* benannten Projektmappe verwendet werden soll. Wenn mehrere Projektmappenplattformen verfügbar sind, müssen Sie auch die Plattform angeben (z.B. `Debug|Win32`). Wenn dieses Argument nicht angegeben wird oder eine leere Zeichenfolge (`""`) enthält, verwendet das Tool die aktive Konfiguration der Projektmappe.
 
- Dies ist optional. Der Pfad und der Name einer Projektdatei innerhalb der Projektmappe. Sie können einen relativen Pfad vom `SolutionName`-Ordner zur Projektdatei, dem Anzeigenamen des Projekts oder dem vollständigen Pfad und Namen der Projektdatei eingeben.
+- `/Project` *ProjName*
 
- /projectconfig `ProjConfigName`
+  Dies ist optional. Der Pfad und der Name einer Projektdatei innerhalb der Projektmappe. Sie können den Anzeigenamen des Projekts oder einen relativen Pfad vom *SolutionName*-Ordner zur Projektdatei eingeben. Sie können auch den vollständigen Pfad und Namen der Projektdatei eingeben.
 
- Dies ist optional. Der Name der Projektbuildkonfiguration für die Neuerstellung des benannten `/project`.
+- `/ProjectConfig` *ProjConfigName*
 
-## <a name="remarks"></a>Hinweise
+  Dies ist optional. Der Name der Buildkonfiguration des Projekts (z.B. `Debug` oder `Release`), die beim erneuten Erstellen des benannten `/Project` verwenden wird. Wenn mehrere Projektmappenplattformen verfügbar sind, müssen Sie auch die Plattform angeben (z.B. `Debug|Win32`). Wenn dieser Schalter angegeben ist, überschreibt er das Argument *SolnConfigName*.
 
--   Dieser Schalter führt dieselbe Funktion aus wie der Menübefehl **Projektmappe neu erstellen** in der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE).
+- `/Out` *OutputFilename*
 
--   Schließen Sie Zeichenfolgen, die Leerzeichen enthalten, in doppelten Anführungszeichen ein.
+  Dies ist optional. Der Name der Datei, an die die Ausgabe des Tools gesendet werden soll. Wenn die Datei bereits vorhanden ist, fügt das Tool die Ausgabe an das Ende der Datei an.
 
--   Zusammenfassende Informationen für Bereinigungen und Builds, inklusive Fehlermeldungen, können im **Befehlsfenster** oder durch den `/out`-Schalter in einer Protokolldatei angezeigt werden.
+## <a name="remarks"></a>Anmerkungen
+
+- Dieser Schalter entspricht dem Menübefehl **Projektmappe neu erstellen** in der IDE.
+
+- Schließen Sie Zeichenfolgen, die Leerzeichen enthalten, in doppelten Anführungszeichen ein.
+
+- Zusammenfassende Informationen zum Bereinigen und Erstellen, inklusive Fehlermeldungen, können im Fenster **Befehl** oder in einer Protokolldatei, die durch den [/Out](out-devenv-exe.md)-Schalter angegeben wird, angezeigt werden.
 
 ## <a name="example"></a>Beispiel
- Dieses Beispiel bereinigt und erstellt das Projekt `CSharpWinApp` mithilfe der Projektbuildkonfiguration `Debug` in der `Debug`-Projektmappenkonfiguration von `MySolution` neu.
 
-```cmd
-devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /rebuild Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
+Dieses Beispiel bereinigt und erstellt das Projekt `CSharpWinApp` mithilfe der Projektbuildkonfiguration `Debug` in `MySolution` neu.
+
+```shell
+devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /rebuild Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 
 ## <a name="see-also"></a>Siehe auch

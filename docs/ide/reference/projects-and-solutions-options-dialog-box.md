@@ -1,8 +1,6 @@
 ---
 title: Projekte und Projektmappen, Dialogfeld "Optionen"
 ms.date: 07/14/2017
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.General
@@ -13,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 2801f24e-a138-488a-ae3c-e1f99a678ac0
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09881462b0723dc1e601c908efeabc317ed70b69
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 21d101ff4cd8503935fceb72b5350a6ce0e1ce2e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969071"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>Projekte und Projektmappen, Dialogfeld „Optionen“
 
@@ -51,9 +49,13 @@ Wenn diese Option deaktiviert ist, werden die Befehle im Menü **Erstellen**, z.
 
 Bei Auswahl dieser Option werden die Projektmappe und alle Befehle, die für Projektmappen ausgeführt werden, immer in der IDE angezeigt. Wenn diese Option deaktiviert ist, werden alle Projekte als eigenständige Projekte erstellt, und Sie können die Projektmappe im Projektmappen-Explorer oder Befehle, die für Projektmappen ausgeführt werden, in der IDE nicht sehen, wenn die Projektmappe nur ein Projekt enthält.
 
+::: moniker range="vs-2017"
+
 ### <a name="save-new-projects-when-created"></a>Neue Projekte beim Erstellen speichern
 
 Bei Auswahl dieser Option können Sie einen Speicherort für das Projekt im Dialogfeld **Neues Projekt** festlegen. Wenn diese Option deaktiviert ist, werden alle neuen Projekte als temporäre Projekte erstellt. Bei der Arbeit mit temporären Projekten können Sie ein Projekt erstellen und damit experimentieren, ohne einen Speicherort angeben zu müssen.
+
+::: moniker-end
 
 ### <a name="warn-user-when-the-project-location-is-not-trusted"></a>Benutzer bei nicht vertrauenswürdigem Projektspeicherort warnen
 
@@ -73,7 +75,7 @@ Wenn diese Option aktiviert ist, zeigt Visual Studio ein Bestätigungsmeldungsfe
 
 ### <a name="reopen-documents-on-solution-load"></a>Dokumente beim Laden der Projektmappe erneut öffnen
 
-**Neu in Visual Studio 2017 Version 15.8 Preview 2 und höher**
+**Eingeführt in Visual Studio 2017 Version 15.8**
 
 Wenn diese Option aktiviert ist, werden die Dokumente, die beim letzten Schließen dieser Projektmappe noch geöffnet waren, automatisch geöffnet, wenn die Projektmappe geöffnet wird.
 
@@ -89,11 +91,11 @@ Legt den Standardspeicherort fest, an dem neue Projekte und Projektmappenordner 
 
 ### <a name="user-project-templates-location"></a>Speicherort von Benutzerprojektvorlagen
 
-Gibt den Standardspeicherort an, der vom Dialogfeld **Neues Projekt** verwendet wird, um die Liste **Meine Vorlagen** zu erstellen. Weitere Informationen finden Sie unter [Vorgehensweise: Suchen und Organisieren von Projekt- und Elementvorlagen](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Gibt den Standardspeicherort an, der bei der Suche nach vom Benutzer erstellten Projektvorlagen verwendet wird. Weitere Informationen finden Sie unter [Vorgehensweise: Suchen und Organisieren von Vorlagen](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ### <a name="user-item-templates-location"></a>Speicherort von Benutzerelementvorlagen
 
-Legt den Standardspeicherort fest, der vom Dialogfeld **Neues Element hinzufügen** verwendet wird, um die Liste **Meine Vorlagen** zu erstellen. Weitere Informationen finden Sie unter [Vorgehensweise: Suchen und Organisieren von Projekt- und Elementvorlagen](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Gibt den Standardspeicherort an, der bei der Suche nach vom Benutzer erstellten Elementvorlagen verwendet wird. Weitere Informationen finden Sie unter [Vorgehensweise: Suchen und Organisieren von Vorlagen](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="see-also"></a>Siehe auch
 

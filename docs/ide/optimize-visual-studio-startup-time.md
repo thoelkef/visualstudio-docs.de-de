@@ -9,18 +9,17 @@ helpviewer_keywords:
 ms.assetid: d1508121-8499-4084-8eb5-fa89fa7b17d3
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 f1_keywords:
 - vs.performancecenter
-ms.prod: visual-studio-dev15
 ms.workload:
 - multiple
-ms.openlocfilehash: 39dd45f7b66dfe0966f3a8c62841f591d56a195a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 60302646abbf36034756f38183d7be7f0d28c1ca
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865543"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62812499"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Verbessern der Startzeit von Visual Studio
 
@@ -28,7 +27,7 @@ Visual Studio wurde dafür entworfen, so schnell und effizient wie möglich zu s
 
 ## <a name="startup-behavior"></a>Startverhalten
 
-Visual Studio 2017 lädt Erweiterungen mithilfe eines _bedarfsgesteuerten_ Ansatzes, um verlängerte Startzeiten zu vermeiden. Dieses Verhalten bedeutet, dass Erweiterungen nicht sofort nach dem Start von Visual Studio, sondern nach Bedarf geöffnet werden. Da Toolfenster, die in einer früheren Visual Studio-Sitzung offen gelassen wurden, die Startzeit verlängern können, öffnet Visual Studio Toolfenster auf intelligentere Weise, um Auswirkungen auf die Startzeit zu vermeiden.
+Visual Studio lädt Erweiterungen mithilfe eines _bedarfsgesteuerten_ Ansatzes, um verlängerte Startzeiten zu vermeiden. Dieses Verhalten bedeutet, dass Erweiterungen nicht sofort nach dem Start von Visual Studio, sondern nach Bedarf geöffnet werden. Da Toolfenster, die in einer früheren Visual Studio-Sitzung offen gelassen wurden, die Startzeit verlängern können, öffnet Visual Studio Toolfenster auf intelligentere Weise, um Auswirkungen auf die Startzeit zu vermeiden.
 
 Wenn Visual Studio einen langsamen Start erkennt, wird eine Popupmeldung angezeigt, die Sie auf die Erweiterung oder das Toolfenster hinweist, die bzw. das für die Verzögerung verantwortlich ist. Die Meldung enthält einen Link zum Dialogfeld **Visual Studio-Leistung verwalten**. Sie können auf dieses Dialogfeld ebenfalls zugreifen, indem Sie in der Menüleiste auf **Hilfe** > **Visual Studio-Leistung verwalten** klicken.
 
@@ -67,10 +66,10 @@ Sie können die Erweiterung jederzeit über den **Erweiterungs-Manager** oder da
      ![„Visual Studio-Leistung verwalten“ – Ansicht des Toolfensters](../ide/media/vside_perfdialog_toolwindows.png)
 
 > [!NOTE]
-> In einigen Visual Studio-Versionen vor Version 2017 war ein Feature namens **Lightweight-Ladevorgang für Projektmappen** integriert. Diese Funktion ist in Visual Studio 2017 Version 15.5 und höher nicht mehr enthalten. In Visual Studio Version 2017 Version 15.5 und höher laden große Projektmappen, die verwalteten Code enthalten, auch ohne den Lightweight-Ladevorgang für Projektmappen viel schneller als zuvor.
+> In einigen Visual Studio-Versionen vor Version 2017 war ein Feature namens **Lightweight-Ladevorgang für Projektmappen** integriert. In den aktuellen Versionen laden große Projektmappen, die verwalteten Code enthalten, auch ohne den Lightweight-Ladevorgang für Projektmappen viel schneller als zuvor.
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Optimieren der Leistung von Visual Studio](../ide/optimize-visual-studio-performance.md)
 - [Tipps und Tricks zur Leistungssteigerung für Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md)
-- [Blog zu Visual Studio: Schnelleres Laden von Projektmappen mit Visual Studio 2017 (Version 15.6)](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)
+- [Blog zu Visual Studio: Schnelleres Laden von Projektmappen mit Visual Studio 2017 (Version 15.6)](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

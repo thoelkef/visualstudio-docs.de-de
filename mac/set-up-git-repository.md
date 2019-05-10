@@ -3,14 +3,14 @@ title: Einrichten eines Git-Repositorys
 description: Verwenden von Git und Subversion in Visual Studio für Mac
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 02/15/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: c8d1cec438c0d942290997a6d51c4c0f2252bf8e
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: ca216f3f2a65e1c17e2ab8cc1ca17f6f707afb79
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296215"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62938475"
 ---
 # <a name="set-up-a-git-repository"></a>Einrichten eines Git-Repositorys
 
@@ -44,7 +44,7 @@ Führen sie die folgenden Schritte aus, um ein Git-Repository einzurichten:
 
 Gehen Sie folgendermaßen vor, um ein vorhandenes Projekt, das sich _noch nicht_ in der Versionskontrolle befindet, in Git einzurichten:
 
-1.  Wählen Sie aus dem Projektmappenpad in Visual Studio für Mac den Namen der Projektmappe aus.
+1. Wählen Sie aus dem Projektmappenpad in Visual Studio für Mac den Namen der Projektmappe aus.
 
 2. Klicken Sie in der Menüleiste auf **Versionskontrolle > Publish in Version Control** (In Versionskontrolle veröffentlichen), damit das Dialogfeld **Repository auswählen** angezeigt wird.
 
@@ -68,7 +68,10 @@ Gehen Sie folgendermaßen vor, um ein vorhandenes Projekt, das sich _noch nicht_
 
 6. Klicken Sie auf **OK** und dann auf **Veröffentlichen** im Warndialogfeld.
 
-7. Wenn Sie Ihre Git-Anmeldeinformationen noch nicht in den Einstellungen von Visual Studio für Mac eingegeben haben, tun sie dies jetzt. Zunächst müssen Sie einen Zugriffstoken erstellen, der anstelle des Kennworts verwendet wird. Wenn Sie kein Zugriffstoken erstellt haben, führen Sie die Schritte in der Git-[Zugriffstoken](https://help.github.com/articles/creating-an-access-token-for-command-line-use/)-Dokumentation aus.
+7. Geben Sie im Fenster **Git-Anmeldeinformationen** Ihren Benutzernamen und das Kennwort für GitHub ein. 
+
+> [!NOTE]
+> Wenn für Ihr Konto die zweistufige Authentifizierung aktiviert ist, müssen Sie ein Zugriffstoken erstellen, das anstelle eines Kennworts verwendet wird. Wenn Sie kein Zugriffstoken erstellt haben, führen Sie die Schritte in der Git-[Zugriffstoken](https://help.github.com/articles/creating-an-access-token-for-command-line-use/)-Dokumentation aus.
 
 8. Geben Sie den Benutzernamen und den persönlichen Zugriffstoken ein, und klicken Sie auf **OK**:
 
@@ -84,9 +87,45 @@ Gehen Sie folgendermaßen vor, um ein vorhandenes Projekt, das sich _noch nicht_
 
 ## <a name="publishing-a-new-project"></a>Veröffentlichen eines neuen Projekts
 
-Das Dialogfeld „Neues Projekt“ kann verwendet werden, um ein neues Projekt mithilfe von Git zu veröffentlichen. Um dies zu aktivieren, aktivieren Sie das Kontrollkästchen **Git-Versionskontrolle verwenden.** , wie im folgenden Screenshot dargestellt. Dadurch wird Ihr Repository initialisiert, außerdem wird eine optionale GITIGNORE-Datei hinzugefügt:
+Das Dialogfeld „Neues Projekt“ kann zum Erstellen eines neuen Projekts mit einem lokalen Git-Repository verwendet werden. Aktivieren Sie wie im folgenden Screenshot zu sehen das Kontrollkästchen **Use git for version control** (Git zur Versionskontrolle verwenden), damit Sie dieses Dialogfeld verwenden können. Dadurch wird Ihr Repository initialisiert, außerdem wird eine optionale GITIGNORE-Datei hinzugefügt:
 
-![Übertragen von Änderungen mit einem Push an ein Remoterepository](media/version-control-git12.png)
+![Erstellen eines neuen Projekts mit Git-Unterstützung](media/version-control-git-publish-new1.png)
+
+Führen Sie die folgenden Schritte aus, um Ihr neues lokales Repository auf ein neues GitHub-Repository zu pushen:
+
+> [!NOTE]
+> Wenn Sie noch kein GitHub-Repository erstellt haben, lesen Sie sich den Abschnitt [Erstellen eines Remoterepository auf GitHub](#creating-a-remote-repo-on-github) durch.
+
+1. Erstellen Sie Ihren ersten Commit, indem Sie in der Menüleiste zu **Versionskontrolle > Review Solution and Commit** (Projektmappe überprüfen und committen) navigieren.
+
+2. Klicken Sie auf der Registerkarte „Status“ oben links auf **Committen**.
+
+3. Schreiben Sie eine Commitnachricht wie „First Commit“ (Erster Commit), und klicken Sie anschließend auf **Committen**:
+
+    ![Committen von ersten Änderungen am Git-Repository](media/version-control-git-publish-new2.png)
+
+4. Navigieren Sie als Nächstes in der Menüleiste zu **Versionskontrolle > Branches und Git-Remotespeicherorte verwalten**.
+
+5. Gehen Sie zur Registerkarte **Remotequellen**, und klicken Sie auf **Hinzufügen**.
+
+6. Fügen Sie im Fenster **Remotequelle** die Details zu Ihrem zuvor erstellten GitHub-Repository hinzu, und klicken Sie auf **OK**.
+
+    ![Konfigurieren von Remotequellen für das Git-Repository](media/version-control-git-publish-new3.png)
+
+7. Schließen Sie das Fenster **Git-Repositorykonfiguration**, und navigieren Sie anschließend in der Menüleiste zu **Versionskontrolle > Änderungen mit Push übertragen**.
+
+8. Klicken Sie im Fenster **Mit Push an Repository übertragen** auf die Schaltfläche **Änderungen mit Push übertragen**.
+
+    ![Änderungen auf das Remoterepository pushen](media/version-control-git-publish-new4.png)
+
+9. Geben Sie Ihren Benutzernamen und Ihre Kennwort für GitHub ein, wenn Sie dazu aufgefordert werden.
+
+> [!NOTE]
+> Wenn für Ihr Konto die zweistufige Authentifizierung aktiviert ist, müssen Sie ein Zugriffstoken erstellen, das anstelle eines Kennworts verwendet wird. Wenn Sie kein Zugriffstoken erstellt haben, führen Sie die Schritte in der Git-[Zugriffstoken](https://help.github.com/articles/creating-an-access-token-for-command-line-use/)-Dokumentation aus.
+
+Dann pusht Visual Studio für Mac die Änderungen auf das GitHub-Remoterepository:
+
+![Bestätigung eines erfolgreichen Pushvorgangs](media/version-control-git11.png)
 
 ## <a name="check-out-an-existing-repository"></a>Auschecken eines vorhandenen Repositorys
 

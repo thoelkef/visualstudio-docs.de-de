@@ -1,25 +1,22 @@
 ---
 title: Das Textvorlagen-Transformationsprozess | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, transformation process
 ms.assetid: 80b3f0e0-49e7-4865-a1ac-dba068abe96b
 caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 146d391cc843291b79dc34af29851cfed4c80a46
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0f92b4053006aa5da3c28d9330b372466f84d0fd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203774"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113988"
 ---
 # <a name="the-text-template-transformation-process"></a>Textvorlagen-Transformationsprozess
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,22 +38,22 @@ Das Textvorlagen-Transformationsprozess akzeptiert eine Textvorlagendatei als Ei
 ## <a name="the-engine"></a>Die Engine  
  Das Modul empfängt die Vorlage als eine Zeichenfolge mit dem Host, der alle Dateien verarbeitet, die im Transformationsprozess verwendet werden. Das Modul fragt dann den Host aus, um eine beliebige benutzerdefinierten anweisungsprozessoren und andere Aspekte der Umgebung zu suchen. Die Engine wird dann kompiliert und führt die generierten Transformationsklasse. Das Modul gibt den generierten Text zurück, an den Host, der normalerweise den Text einer Datei speichert.  
   
-## <a name="the-host"></a>Der Host  
+## <a name="the-host"></a>Hosting  
  Der Host ist verantwortlich für alle Elemente, die mit der Umgebung außerhalb des Transformationsvorgangs, einschließlich der folgenden verknüpft:  
   
--   Suchen von Text und Binärdateien, die von der Engine oder ein anweisungsprozessor angefordert. Der Host kann es sich um Verzeichnisse und den globalen Assemblycache nach Assemblys durchsuchen. Der Host kann benutzerdefinierten anweisungsprozessor-Code für das Modul suchen. Der Host kann auch suchen und Lesen von Textdateien und ihren Inhalt als Zeichenfolgen zurückgegeben.  
+- Suchen von Text und Binärdateien, die von der Engine oder ein anweisungsprozessor angefordert. Der Host kann es sich um Verzeichnisse und den globalen Assemblycache nach Assemblys durchsuchen. Der Host kann benutzerdefinierten anweisungsprozessor-Code für das Modul suchen. Der Host kann auch suchen und Lesen von Textdateien und ihren Inhalt als Zeichenfolgen zurückgegeben.  
   
--   Bereitstellen von Listen mit standard-Assemblys und Namespaces, die von der Engine verwendet werden, um die generierten Transformationsklasse zu erstellen.  
+- Bereitstellen von Listen mit standard-Assemblys und Namespaces, die von der Engine verwendet werden, um die generierten Transformationsklasse zu erstellen.  
   
--   Bereitstellen der Anwendungsdomäne, die verwendet wird, wenn das Modul kompiliert und führt die generierten Transformationsklasse. Eine separate Anwendungsdomäne wird verwendet, um die hostanwendung von Fehlern im Vorlagencode zu schützen.  
+- Bereitstellen der Anwendungsdomäne, die verwendet wird, wenn das Modul kompiliert und führt die generierten Transformationsklasse. Eine separate Anwendungsdomäne wird verwendet, um die hostanwendung von Fehlern im Vorlagencode zu schützen.  
   
--   Schreiben die generierte Ausgabedatei an.  
+- Schreiben die generierte Ausgabedatei an.  
   
--   Wenn die standarderweiterung für die generierte Ausgabedatei an.  
+- Wenn die standarderweiterung für die generierte Ausgabedatei an.  
   
--   Behandeln von Fehlern bei der Textvorlagentransformation. Beispielsweise kann der Host die Fehler in der Benutzeroberfläche anzeigen oder in eine Datei schreiben. (In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], Fehler im Fenster mit Fehlermeldungen angezeigt.)  
+- Behandeln von Fehlern bei der Textvorlagentransformation. Beispielsweise kann der Host die Fehler in der Benutzeroberfläche anzeigen oder in eine Datei schreiben. (In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], Fehler im Fenster mit Fehlermeldungen angezeigt.)  
   
--   Einen Erforderlicher Parameterwert bereit, wenn ein Benutzer eine Richtlinie aufgerufen hat, ohne einen Wert. Der anweisungsprozessor kann Geben Sie den Namen der Anweisung und der Parameter, und bitten Sie den Host auf einen Standardwert angeben, sofern vorhanden.  
+- Einen Erforderlicher Parameterwert bereit, wenn ein Benutzer eine Richtlinie aufgerufen hat, ohne einen Wert. Der anweisungsprozessor kann Geben Sie den Namen der Anweisung und der Parameter, und bitten Sie den Host auf einen Standardwert angeben, sofern vorhanden.  
   
 ## <a name="directives-and-directive-processors"></a>Anweisungen und Anweisungsprozessoren  
  Eine Direktive ist ein Befehl in der Textvorlage. Es stellt Parameter für den Generierungsprozess bereit. In der Regel definieren Direktiven, die Quelle und Typ des Modells oder andere Eingabe und die Dateinamenerweiterung der Ausgabedatei.  
@@ -68,6 +65,3 @@ Das Textvorlagen-Transformationsprozess akzeptiert eine Textvorlagendatei als Ei
  `<#@ import namespace="System.Text" #>`  
   
  Der standard anweisungsprozessor konvertiert diese Option, um eine `using` -Anweisung in der generierten Transformationsklasse. Anschließend können Sie die `StringBuilder` Klasse in der restlichen Vorlagencode ohne Qualifizierung als `System.Text.StringBuilder`.
-
-
-

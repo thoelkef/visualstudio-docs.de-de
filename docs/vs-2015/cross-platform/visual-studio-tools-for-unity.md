@@ -1,30 +1,24 @@
 ---
 title: Visual Studio-Tools für Unity | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-unity-tools
+ms.topic: conceptual
 ms.assetid: 6cabc626-5310-4622-a743-210a9abb5535
 caps.latest.revision: 6
 author: conceptdev
 ms.author: crdun
-manager: ghogen
-ms.openlocfilehash: 7bdcdbc4a19914494b0a48932afc25c1f7626fbb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9d2bfa0a3ca4a751637204ef156a609f4ee0c3e5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762331"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657479"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools für Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 In diesem Abschnitt erfahren Sie mehr über Visual Studio-Tools für Unity, eine kostenlose Visual Studio-Erweiterung, durch die Visual Studio zu einem leistungsstarken Tool für das Erstellen von Spielen mit Unity wird.  
   
 ## <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools für Unity  
@@ -53,5 +47,4 @@ In diesem Abschnitt erfahren Sie mehr über Visual Studio-Tools für Unity, ein
  In diesem Abschnitt finden Sie Lösungen für häufige Probleme mit Visual Studio-Tools für Unity und Beschreibungen bekannter Probleme. Außerdem erfahren Sie, wie Sie Visual Studio-Tools für Unity verbessern können, indem Sie Fehler melden.  
   
  [Änderungsprotokoll](../cross-platform/change-log-visual-studio-tools-for-unity.md)  
- In diesem Abschnitt erfahren Sie mehr über die neuen Funktionen, Fehlerkorrekturen und andere Änderungen in jeder Version von Visual Studio-Tools für Unity.
-
+ In diesem Abschnitt erfahren Sie mehr über die neuen Features, Fehlerkorrekturen und andere Änderungen in jeder Version von Visual Studio-Tools für Unity.

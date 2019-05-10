@@ -1,30 +1,33 @@
 ---
 title: 'Idiasymbol:: Get_types | Microsoft-Dokumentation'
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_types method
 ms.assetid: 5f056e0c-e15b-4e00-8f78-aadc8574f7ea
-author: mikejo5000
+caps.latest.revision: 11
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: 94ff65cd9218ce26964d4dbb0da6fe2c3ffcae36
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 19642e6875e81220cb20109ce45e8dca40777a63
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868010"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400001"
 ---
 # <a name="idiasymbolgettypes"></a>IDiaSymbol::get_types
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Ruft ein Array von Compiler-spezifische Typen für dieses Symbol ab.  
   
 ## <a name="syntax"></a>Syntax  
   
-```C++  
+```cpp#  
 HRESULT get_types (   
    DWORD       cTypes,  
    DWORD*      pcTypes,  
@@ -46,7 +49,7 @@ HRESULT get_types ( 
  Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

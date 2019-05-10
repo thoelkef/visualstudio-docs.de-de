@@ -1,7 +1,6 @@
 ---
-title: 'CA1822: Member als statisch markieren'
+title: 'CA1822: Member als statisch markieren.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - MarkMembersAsStatic
@@ -12,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 743f0af7-41d1-4852-8d97-af0688b31118
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a566518d41a37e12ce20188bfe84c02a6cabcf9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e5ac9aff8741654ee5799724feb09c53f588dafb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890192"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62796665"
 ---
-# <a name="ca1822-mark-members-as-static"></a>CA1822: Member als statisch markieren
+# <a name="ca1822-mark-members-as-static"></a>CA1822: Member als statisch markieren.
 
 |||
 |-|-|

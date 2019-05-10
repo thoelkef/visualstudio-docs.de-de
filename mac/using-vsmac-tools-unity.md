@@ -3,14 +3,14 @@ title: Verwenden der Visual Studio für Mac-Tools für Unity
 description: In diesem Leitfaden wird erklärt, wie Sie die Erweiterung Visual Studio für Mac-Tools für Unity verwenden.
 author: therealjohn
 ms.author: johmil
-ms.date: 07/17/2017
+ms.date: 04/02/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: d4df59273db1fab8492b36e87e48e0e770072f17
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 56050de063dcbc86bfa469ee9f466a8e87bba973
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027301"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965994"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Verwenden der Visual Studio für Mac-Tools für Unity
 
@@ -103,6 +103,12 @@ Starten des Debuggens:
 
 3. Wenn das Spiel in Unity-Editor ausgeführt wird und gleichzeitig ein Verbindung mit Visual Studio besteht, pausieren alle vorgefundenen Breakpoints die Ausführung des Spiels und bringen die Codezeile hervor, in der das Spiel den Breakpoint in Visual Studio für Mac erreicht hat.
 
+### <a name="start-debugging-in-a-single-step"></a>Debuggen starten in einem Schritt
+
+Das Debuggen zu starten und den Unity-Editor wiederzugeben kann als einzelner Schritt direkt in Visual Studio für Mac ausgeführt werden, indem Sie die Konfiguration **An Unity anfügen und wiedergeben** auswählen.
+
+![Screenshot: An Unity anfügen und wiedergeben](media/using-vsmac-tools-unity-image8.png)
+
 ### <a name="stop-debugging"></a>Beenden des Debuggens
 
 So beenden Sie das Debuggen:
@@ -110,5 +116,8 @@ So beenden Sie das Debuggen:
 1. Klicken Sie in Visual Studio für Mac auf **Stop** (Beenden), oder drücken Sie **UMSCHALTTASTE+CMD+EINGABETASTE**.
 
    ![In Visual Studio auf „Beenden“ klicken](media/using-vsmac-tools-unity-image7.png)
+
+> [!NOTE]
+> Wenn Sie das Debuggen mithilfe der Konfiguration **An Unity anfügen und wiedergeben** gestartet haben, hält die **Stopp**-Schaltfläche auch den Debugvorgang im Unity-Editor an.
 
 Weitere Informationen zum Debuggen in Visual Studio für Mac finden Sie unter [Verwenden des Debuggers](debugging.md).

@@ -1,7 +1,6 @@
 ---
 title: Parameterinfo, Member auflisten und QuickInfo
 ms.date: 05/25/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vc.tools.intellisense
@@ -13,15 +12,15 @@ helpviewer_keywords:
 - IntelliSense [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2adb067377ac417073785df63d68e51040752218
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 38c621a09c6a000c9e3c7e52caa99569f7e5d781
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53953075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821689"
 ---
 # <a name="intellisense-in-visual-studio"></a>IntelliSense in Visual Studio
 

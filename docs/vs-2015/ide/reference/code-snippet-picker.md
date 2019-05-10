@@ -1,14 +1,9 @@
 ---
 title: Codeausschnittauswahl | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.expansionpicker
 helpviewer_keywords:
@@ -19,18 +14,17 @@ ms.assetid: f0862d48-fbbc-4cfe-b228-24492d5c89c4
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 31d5ced897badded98aa82b2245e8f210517afd6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: a986303025460d6ca57cd3aa836a9f61f1804461
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845295"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62423231"
 ---
 # <a name="code-snippet-picker"></a>Codeausschnittauswahl
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Der Code-Editor von [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] stellt eine **Codeausschnittauswahl** bereit, mit der Sie in wenigen Mausklicks vordefinierte Codeblöcke in ein aktives Dokument einfügen können.  
   
  Wie Sie die **Codeausschnittauswahl** aufrufen, hängt von der verwendeten Sprache ab.  
@@ -64,7 +58,4 @@ Der Code-Editor von [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] stellt eine 
  [Empfohlene Vorgehensweisen für die Verwendung von Codeausschnitten](../../ide/best-practices-for-using-code-snippets.md)   
  [Visual Basic IntelliSense Code Snippets (Visual Basic IntelliSense-Codeausschnitte)](http://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   
  [Festlegen von Lesezeichen im Code](../../ide/setting-bookmarks-in-code.md)   
- [Gewusst wie: Verwenden von umschließenden Codeausschnitten](../../ide/how-to-use-surround-with-code-snippets.md)
-
-
-
+ [Vorgehensweise: Verwenden von umschließenden Codeausschnitten](../../ide/how-to-use-surround-with-code-snippets.md)

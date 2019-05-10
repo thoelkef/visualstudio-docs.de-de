@@ -11,20 +11,20 @@ helpviewer_keywords:
 - mixed mode debugging
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 475160a7ba08cb334eeb26be26731deea547f6ad
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d1fefda9d8d639bf8d360bbd6b869b75b7dae903
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920867"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847914"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Tutorial: Debuggen von C# und C++ in derselben Debugsitzung
 
-In Visual Studio können Sie mehr als einen Debugtyp in einer Debugsitzung aktivieren. Dies wird als Debuggen im gemischten Modus bezeichnet. In diesem Tutorial lernen Sie das Debuggen verwalteten und nativen Codes in einer einzigen Debugsitzung. 
+In Visual Studio können Sie mehr als einen Debugtyp in einer Debugsitzung aktivieren. Dies wird als Debuggen im gemischten Modus bezeichnet. In diesem Tutorial lernen Sie das Debuggen verwalteten und nativen Codes in einer einzigen Debugsitzung.
 
 Sie lernen, wie Sie nativen Code aus einer verwalteten App debuggen, aber Sie können auch [verwalteten Code aus einer nativen App debuggen](../debugger/how-to-debug-in-mixed-mode.md). Der Debugger unterstützt auch andere Typen des Debuggens im gemischten Modus, wie z.B. das [Debuggen von Python- und nativem Code](../python/debugging-mixed-mode-c-cpp-python-in-visual-studio.md) und das Verwenden des Skriptdebuggers in App-Typen wie ASP.NET.
 
@@ -44,7 +44,7 @@ Visual Studio muss in den folgenden Workloads installiert sein:
 - **Desktopentwicklung mit C++**
 - Entweder **.NET-Desktopentwicklung** oder **Plattformübergreifende .NET Core-Entwicklung**, je nachdem, welchen App-Typ Sie erstellen möchten
 
-Wenn Sie Visual Studio noch nicht installiert haben, können Sie es unter  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  kostenlos herunterladen.
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es unter  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/)  kostenlos herunterladen.
 
 Falls Sie bereits über Visual Studio verfügen, aber die Workloads noch installieren müssen, klicken Sie im linken Bereich des Dialogfelds **Neues Projekt** auf den Link **Visual Studio-Installer öffnen**. Wählen Sie im Visual Studio-Installer die benötigten Workloads aus, und klicken Sie dann auf **Modify** (Anpassen).
 
@@ -52,7 +52,18 @@ Falls Sie bereits über Visual Studio verfügen, aber die Workloads noch install
 
 **So erstellen Sie die Dateien für das DLL-Projekt:**
 
-1. Klicken Sie in Visual Studio auf **Datei** > **Neu** > **Projekt**.
+1. Öffnen Sie Visual Studio, und erstellen Sie ein Projekt.
+
+    ::: moniker range=">=vs-2019"
+    Drücken Sie **ESC**, um das Startfenster zu schließen. Geben Sie **STRG + Q** ein, um das Suchfeld zu öffnen, geben Sie **Leeres Projekt** ein, wählen Sie **Vorlagen** und dann **Neues leeres Projekt erstellen** für C++ aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus. Geben Sie anschließend einen Namen wie **Debuggen_im_gemischten_Modus** ein, und klicken Sie auf **Erstellen**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialogfelds **Neues Projekt** unter **Visual C++** **Andere** aus, und wählen Sie dann im mittleren Bereich **Leeres Projekt** aus. Geben Sie anschließend einen Namen wie **Debuggen_im_gemischten_Modus** ein, und klicken Sie auf **OK**.
+    ::: moniker-end
+
+    Wenn die Projektvorlage **Leeres Projekt** nicht angezeigt wird, öffnen Sie unter **Tools** > **Tools und Features abrufen...** den Visual Studio-Installer. Der Visual Studio-Installer wird gestartet. Wählen Sie die Workload **Desktopentwicklung mit C++**, und klicken Sie dann auf **Ändern**.
+
+    Visual Studio erstellt daraufhin das Projekt.
 
 1. Klicken Sie im Dialogfeld **Neues Projekt** unter **Visual C++** auf **Sonstiges**, und wählen Sie **Leeres Projekt** in der Mitte der Ansicht.
 
@@ -60,7 +71,7 @@ Falls Sie bereits über Visual Studio verfügen, aber die Workloads noch install
 
    Visual Studio erstellt das leere Projekt und zeigt es im **Projektmappen-Explorer** an.
 
-1. Wählen Sie im **Projektmappen-Explorer** **Quelldateien** aus, und klicken sie dann auf **Projekt** > **Neues Element hinzufügen**. Klicken Sie alternativ auf **Quelldateien**, und wählen Sie **Hinzufügen** > **Neues Element** aus. 
+1. Wählen Sie im **Projektmappen-Explorer** **Quelldateien** aus, und klicken sie dann auf **Projekt** > **Neues Element hinzufügen**. Klicken Sie alternativ auf **Quelldateien**, und wählen Sie **Hinzufügen** > **Neues Element** aus.
 
 1. Klicken Sie im Dialogfeld **Neues Element** auf **C++-Datei (.cpp)**. Geben Sie im Feld **Name** **Mixed_Mode.cpp** ein, und klicken Sie dann auf **Hinzufügen**.
 
@@ -71,7 +82,8 @@ Falls Sie bereits über Visual Studio verfügen, aber die Workloads noch install
     ```cpp
     #include "Mixed_Mode.h"
     ```
-1. Wählen Sie im **Projektmappen-Explorer** **Headerdateien** aus, und klicken sie dann auf **Projekt** > **Neues Element hinzufügen**. Klicken Sie alternativ auf **Headerdateien**, und wählen Sie **Hinzufügen** > **Neues Element** aus. 
+
+1. Wählen Sie im **Projektmappen-Explorer** **Headerdateien** aus, und klicken sie dann auf **Projekt** > **Neues Element hinzufügen**. Klicken Sie alternativ auf **Headerdateien**, und wählen Sie **Hinzufügen** > **Neues Element** aus.
 
 1. Klicken Sie im Dialogfeld **Neues Element** auf **Headerdatei (.h)**. Geben Sie im Feld **Name** **Mixed_Mode.h** ein, und klicken Sie dann auf **Hinzufügen**.
 
@@ -85,9 +97,9 @@ Falls Sie bereits über Visual Studio verfügen, aber die Workloads noch install
 
     extern "C"
     {
-        __declspec(dllexport) int __stdcall mixed_mode_multiply(int a, int b) {
-            return a * b;
-        }
+      __declspec(dllexport) int __stdcall mixed_mode_multiply(int a, int b) {
+        return a * b;
+      }
     }
     #endif
     ```
@@ -100,10 +112,10 @@ Falls Sie bereits über Visual Studio verfügen, aber die Workloads noch install
 
 1. Wählen Sie im **Projektmappen-Explorer** den Projektknoten **Mixed_Mode_Debugging** aus, und klicken Sie auf das **Eigenschaftensymbol**. Klicken Sie alternativ auf den Projektknoten und dann auf **Eigenschaften**.
 
-1. Achten Sie darauf, dass die **Konfiguration** oben im **Eigenschaftenpanel** auf **Active(Debug)** festgelegt ist und die **Plattform** mit der in der Symbolleiste angegeben Einstellung übereinstimmt (**x64** oder **Win32** für die x86-Plattform). 
+1. Achten Sie darauf, dass die **Konfiguration** oben im **Eigenschaftenpanel** auf **Active(Debug)** festgelegt ist und die **Plattform** mit der in der Symbolleiste angegeben Einstellung übereinstimmt (**x64** oder **Win32** für die x86-Plattform).
 
    > [!IMPORTANT]
-   > Wenn Sie die Plattform von **x86** in **x64** (oder andersherum) ändern, müssen Sie die Eigenschaften für die neue Plattform erneut festlegen. 
+   > Wenn Sie die Plattform von **x86** in **x64** (oder andersherum) ändern, müssen Sie die Eigenschaften für die neue Plattform erneut festlegen.
 
 1. Wählen Sie links unter **Konfigurationseigenschaften** **Linker** > **Erweitert** aus, und wählen Sie in der Dropdownliste neben **Kein Einstiegspunkt** **Nein** aus. Wenn Sie die Einstellung in **Nein** geändert haben, klicken Sie auf **Anwenden**.
 
@@ -117,18 +129,23 @@ Falls Sie bereits über Visual Studio verfügen, aber die Workloads noch install
 
 ## <a name="create-a-simple-managed-app-to-call-the-dll"></a>Erstellen einer einfachen verwalteten App, die die DLL aufruft
 
-1. Klicken Sie in Visual Studio auf **Datei** > **Neu** > **Projekt**.
+1. Öffnen Sie Visual Studio, und erstellen Sie ein neues Projekt.
 
-   > [!NOTE]
-   > Sie könnten das neue verwaltete Projekt Ihrer bereits vorhandenen C++-Projektmappe hinzufügen. Wenn Sie jedoch eine neue Projektmappe erstellen, werden mehr Debuggingszenarios unterstützt.
+    ::: moniker range=">=vs-2019"
+    Drücken Sie **ESC**, um das Startfenster zu schließen. Geben Sie **STRG + Q** ein, um das Suchfeld zu öffnen, geben Sie **Konsole** ein, wählen Sie **Vorlagen** und dann **Neues Konsolen-App-Projekt (.NET Framework) erstellen** für C# aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
 
-1. Wählen Sie im Dialogfeld **Neues Projekt** **Visual C#** aus, und wählen Sie im mittleren Bereich wie folgt aus:
+    Geben Sie dann einen Namen wie **Anruf_App_im_gemischten_Modus** ein, und klicken Sie auf **Erstellen**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Wählen Sie im linken Bereich des Dialogfelds **Neues Projekt** unter **Visual C#** **Windows Desktop** und dann im mittleren Bereich **Konsolen-App (.NET Framework)** oder **Konsolen-App (.NET Core)** aus.
 
-   - Wählen Sie für eine .NET Framework-App **Konsolen-App (.NET Framework)** aus.
-   
-   - Wählen Sie für eine .NET Core-App **Konsolen-App (.NET Core)** aus.
+    Geben Sie dann einen Namen wie **Anruf_App_im_gemischten_Modus** ein, und klicken Sie auf **OK**.
+    ::: moniker-end
 
-1. Geben Sie im Feld **Name** **Mixed_Mode_Calling_App** ein, und klicken Sie dann auf **OK**.
+    Wenn die Vorlage **Konsolen-App** nicht angezeigt wird, öffnen Sie unter **Tools** > **Tools und Features abrufen...** den Visual Studio-Installer. Wählen Sie beispielsweise die Workload **.NET-Desktopentwicklung** aus, und klicken Sie anschließend auf **Ändern**.
+
+    > [!NOTE]
+    > Sie könnten das neue verwaltete Projekt Ihrer bereits vorhandenen C++-Projektmappe hinzufügen. Wenn Sie jedoch eine neue Projektmappe erstellen, werden mehr Debuggingszenarios unterstützt.
 
    Visual Studio erstellt das leere Projekt und zeigt es im **Projektmappen-Explorer** an.
 
@@ -164,9 +181,9 @@ Falls Sie bereits über Visual Studio verfügen, aber die Workloads noch install
 
 1. Klicken Sie auf **Datei** > **Save Program.cs** (Program.cs speichern), oder drücken Sie **STRG**+**S**, um die Datei zu speichern.
 
-## <a name="configure-mixed-mode-debugging"></a>Konfigurieren des Debuggens im gemischten Modus 
+## <a name="configure-mixed-mode-debugging"></a>Konfigurieren des Debuggens im gemischten Modus
 
-### <a name="to-configure-mixed-mode-debugging-for-a-net-framework-app"></a>So konfigurieren Sie das Debuggen im gemischten Modus für eine .NET Framework-App 
+### <a name="to-configure-mixed-mode-debugging-for-a-net-framework-app"></a>So konfigurieren Sie das Debuggen im gemischten Modus für eine .NET Framework-App
 
 1. Wählen Sie im **Projektmappen-Explorer** den Projektknoten **Mixed_Mode_Calling_App** aus, und klicken Sie auf das **Eigenschaftensymbol**. Klicken Sie alternativ auf den Projektknoten und dann auf **Eigenschaften**.
 
@@ -174,11 +191,11 @@ Falls Sie bereits über Visual Studio verfügen, aber die Workloads noch install
 
     ![Debuggen im gemischten Modus aktivieren](../debugger/media/mixed-mode-enable-native-code-debugging.png)
 
-### <a name="to-configure-mixed-mode-debugging-for-a-net-core-app"></a>So konfigurieren Sie das Debuggen im gemischten Modus für eine .NET Core-App 
+### <a name="to-configure-mixed-mode-debugging-for-a-net-core-app"></a>So konfigurieren Sie das Debuggen im gemischten Modus für eine .NET Core-App
 
-In den meisten Visual Studio 2017-Versionen müssen Sie die Datei *launchSettings.json* statt der Projekteigenschaften verwenden, um das Debuggen im gemischten Modus für nativen Code in einer :NET Core-App zu aktivieren. In diesem [GitHub-Issue](https://github.com/dotnet/project-system/issues/1125) finden Sie UI-Updates für dieses Feature.
+In den meisten Visual Studio Versionen ab Visual Studio 2017 müssen Sie die Datei *launchSettings.json* statt der Projekteigenschaften verwenden, um das Debuggen im gemischten Modus für nativen Code in einer .NET Core-App zu aktivieren. In diesem [GitHub-Issue](https://github.com/dotnet/project-system/issues/1125) finden Sie UI-Updates für dieses Feature.
 
-1. Erweitern Sie im **Projektmappen-Explorer** die **Eigenschaften**, und öffnen Sie die Datei *launchSettings.json*. 
+1. Erweitern Sie im **Projektmappen-Explorer** die **Eigenschaften**, und öffnen Sie die Datei *launchSettings.json*.
 
    >[!NOTE]
    >Standardmäßig befindet sich *launchSettings.json* unter *C:\Benutzer\Benutzername\source\repos\Mixed_Mode_Calling_App\Properties*. Wählen Sie das Projekt **Mixed_Mode_Calling_App** aus, und klicken Sie auf im **Projektmappen-Explorer** auf das **Eigenschaftensymbol**, wenn *launchSettings.json* nicht vorhanden ist. Klicken Sie alternativ mit der rechten Maustaste auf das Projekt und dann auf **Eigenschaften**. Nehmen Sie eine vorrübergehende Änderung auf der Registerkarte **Debuggen** vor, und erstellen Sie das Projekt. Dadurch wird die Datei *launchSettings.json* erstellt. Machen Sie die auf der Registerkarte **Debuggen** vorgenommene Änderung rückgängig.

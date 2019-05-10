@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 8f20177b-dab9-43a3-b959-81a591b451d6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ce21c10f1a64bf8edad9181d66b83291d0405c4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1aabb7feaa565f5118904bba3850b153a20445b9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902479"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62911780"
 ---
 # <a name="how-to-add-a-dependency-to-a-vsix-package"></a>Vorgehensweise: Fügen Sie eine Abhängigkeit zu einem VSIX-Paket
 
@@ -46,9 +46,8 @@ Wenn Ihre Erweiterung erforderlich, Version 15.3 ist oder höher verwenden, müs
 
 Die VSIX-Installationsprogramm erkennt von früheren Versionen von Visual Studio und informieren Sie den Benutzer, dass ein neueres Update erforderlich ist.
 
-
 ## <a name="see-also"></a>Siehe auch
 
- [Referenz zum VSIX-Erweiterung Schema 1.0](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
- [Anatomie eines VSIX-Pakets](../extensibility/anatomy-of-a-vsix-package.md)   
- [Vorbereiten von Erweiterungen für Windows Installer-Bereitstellung](../extensibility/preparing-extensions-for-windows-installer-deployment.md)
+- [Referenz zum VSIX-Erweiterung Schema 1.0](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
+- [Anatomie eines VSIX-Pakets](../extensibility/anatomy-of-a-vsix-package.md)
+- [Vorbereiten von Erweiterungen für Windows Installer-Bereitstellung](../extensibility/preparing-extensions-for-windows-installer-deployment.md)

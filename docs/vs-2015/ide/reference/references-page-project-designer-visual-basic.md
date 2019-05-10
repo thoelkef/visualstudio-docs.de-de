@@ -1,14 +1,9 @@
 ---
 title: Seite „Verweise“, Projekt-Designer (Visual Basic) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesReference
 - vb.ProjectPropertiesUnusedReference
@@ -21,18 +16,17 @@ ms.assetid: 5a47c595-e084-401c-86e1-74e0bf74fd86
 caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0dabf5b84eb1adde1d6e579b7ec5ad6a6c443723
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a714c3b3b282d37e4f8c9e73a593c9a35298f151
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859056"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443846"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Seite "Verweise", Projekt-Designer (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Verwenden Sie die Seite **Verweise** des **Projekt-Designers**, um Verweise, Webverweise und wichtige Namespaces in Ihrem Projekt zu verwalten. Projekte können Verweise auf COM-Komponenten, XML-Webdienste, Klassenbibliotheken oder Assemblys von .NET Framework oder andere Klassenbibliotheken enthalten. Weitere Informationen zum Verwenden von Verweisen finden Sie unter [Verwalten von Verweisen in einem Projekt](../../ide/managing-references-in-a-project.md).  
   
  Um auf die Seite **Verweise** zuzugreifen, wählen Sie einen Projektknoten (nicht den Knoten **Projektmappe**) im **Projektmappen-Explorer**. Wählen Sie dann in der Menüleiste die Option **Projekt** und dann **Eigenschaften** aus. Sobald der Projekt-Designer angezeigt wird, klicken Sie auf die Registerkarte **Dienste**.  
@@ -49,12 +43,12 @@ Verwenden Sie die Seite **Verweise** des **Projekt-Designers**, um Verweise, Web
  Klicken Sie auf diese Schaltfläche, um auf das Dialogfeld **Verweispfade** zuzugreifen.  
   
 > [!NOTE]
->  Wenn das Projektsystem einen Assemblyverweis findet, löst das System den Verweis auf, indem es die folgenden Speicherorte in folgender Reihenfolge durchsucht:  
+> Wenn das Projektsystem einen Assemblyverweis findet, löst das System den Verweis auf, indem es die folgenden Speicherorte in folgender Reihenfolge durchsucht:  
 > 
 > 1. Der Projektordner. Die Projektordnerdateien werden im **Projektmappen-Explorer**, wenn **Alle Dateien anzeigen** nicht aktiv ist.  
->    2.  Ordner, die im Dialogfeld **Verweispfade** angegeben sind.  
->    3.  Ordner, die Dateien im Dialogfeld **Verweis hinzufügen** anzeigen  
->    4.  Der OBJ-Ordner des Projekts (Wenn Sie Ihrem Projekt einen COM-Verweis hinzufügen, werden möglicherweise mindestens eine Assembly in den OBJ-Ordner eingefügt.)  
+>    2. Ordner, die im Dialogfeld **Verweispfade** angegeben sind.  
+>    3. Ordner, die Dateien im Dialogfeld **Verweis hinzufügen** anzeigen  
+>    4. Der OBJ-Ordner des Projekts (Wenn Sie Ihrem Projekt einen COM-Verweis hinzufügen, werden möglicherweise mindestens eine Assembly in den OBJ-Ordner eingefügt.)  
   
  **Verweise**  
  Diese Liste zeigt alle Verweise im Projekt, sowohl verwendete als auch nicht verwendete.  
@@ -86,17 +80,14 @@ Verwenden Sie die Seite **Verweise** des **Projekt-Designers**, um Verweise, Web
  **Benutzerimport aktualisieren**  
  Wählen Sie einen vom Benutzer angegebenen Namespace in der Namespaceliste aus, geben Sie den Namen im Feld **Importierte Namespaces** ein, der den Namespace ersetzen soll, und klicken Sie anschließend auf diese Schaltfläche, um den neuen Namespace zu ändern. Die Schaltfläche ist nur dann aktiviert, wenn der ausgewählte Namespace ein Namespace ist, den Sie der Liste mit der Schaltfläche **Benutzerimport hinzufügen** hinzugefügt haben. Sie können Folgendes hinzufügen:  
   
--   Klassen oder Namespaces, wie z.B. <xref:System.Math?displayProperty=fullName>  
+- Klassen oder Namespaces, wie z.B. <xref:System.Math?displayProperty=fullName>  
   
--   Aliasimporte, wie z.B. `VB=Microsoft.VisualBasic`  
+- Aliasimporte, wie z.B. `VB=Microsoft.VisualBasic`  
   
--   XML-Namespaces, wie z.B. `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`  
+- XML-Namespaces, wie z.B. `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`  
   
 ## <a name="see-also"></a>Siehe auch  
- [NIB: Gewusst wie: Hinzufügen oder Entfernen von Verweisen mithilfe des Dialogfelds „Verweis hinzufügen“](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
+ [NIB: Vorgehensweise: Hinzufügen oder Entfernen von verweisen mithilfe des Dialogfelds "Verweis" hinzufügen "](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
  [Vorgehensweise: Hinzufügen oder Entfernen von importierten Namespaces (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)   
- [NIB: Hinzufügen von Web-Dialogfelds "Verweis"](http://msdn.microsoft.com/en-us/bdf05776-c591-40af-bfd7-e1e2aa1e87b5)   
+ [NIB: Hinzufügen von Web-Dialogfelds "Verweis"](http://msdn.microsoft.com/bdf05776-c591-40af-bfd7-e1e2aa1e87b5)   
  [Imports-Anweisung (XML-Namespace)](http://msdn.microsoft.com/library/1f4d50a6-08c7-4c2e-8206-ccae35fcd1b4)
-
-
-

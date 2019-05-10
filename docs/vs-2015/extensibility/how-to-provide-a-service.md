@@ -1,28 +1,23 @@
 ---
-title: 'Vorgehensweise: Bereitstellen ein Diensts | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Vorgehensweise: Geben Sie einen Dienst | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - services, providing
 ms.assetid: 12bc1f12-47b1-44f6-b8db-862aa88d50d1
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3e0d0425e0e931d28157439d3d8a4174f1d4961a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 565a8a91797c826b6419dc5a8488d7d3baf9cddc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785910"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435912"
 ---
-# <a name="how-to-provide-a-service"></a>Vorgehensweise: Bereitstellen ein Diensts
+# <a name="how-to-provide-a-service"></a>Vorgehensweise: Bereitstellen eines Diensts
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Eine VSPackage kann Dienste bereitstellen, die anderen VSPackages verwenden können. Um einen Dienst bereitstellen zu können, muss eine VSPackage registrieren den Dienst mit Visual Studio, und fügen Sie den Dienst.  
@@ -32,7 +27,7 @@ Eine VSPackage kann Dienste bereitstellen, die anderen VSPackages verwenden kön
  Weitere Informationen zu Diensten finden Sie unter [Dienstgrundlagen](../extensibility/internals/service-essentials.md) .  
   
 > [!NOTE]
->  Wenn eine VSPackage ist entladen wird, wartet Visual Studio, bis alle Anforderungen für Dienste, die ein VSPackage bereitstellt übermittelt wurden. Neue Anforderungen für diese Dienste ist nicht zulässig. Rufen Sie nicht explizit die <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A> Methode, um einen Dienst zu widerrufen, beim Entladen.  
+> Wenn eine VSPackage ist entladen wird, wartet Visual Studio, bis alle Anforderungen für Dienste, die ein VSPackage bereitstellt übermittelt wurden. Neue Anforderungen für diese Dienste ist nicht zulässig. Rufen Sie nicht explizit die <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A> Methode, um einen Dienst zu widerrufen, beim Entladen.  
   
 #### <a name="implementing-a-service"></a>Implementieren eines Diensts  
   
@@ -83,7 +78,7 @@ Eine VSPackage kann Dienste bereitstellen, die anderen VSPackages verwenden kön
   
 ### <a name="registering-a-service"></a>Registrieren eines Diensts  
   
-1.  Um einen Dienst zu registrieren, fügen die <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> für das VSPackage, das den Dienst bereitstellt. Im Folgenden ein Beispiel:  
+1. Um einen Dienst zu registrieren, fügen die <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> für das VSPackage, das den Dienst bereitstellt. Im Folgenden ein Beispiel:  
   
     ```csharp  
     [ProvideService(typeof(SMyService))]  
@@ -96,11 +91,11 @@ Eine VSPackage kann Dienste bereitstellen, die anderen VSPackages verwenden kön
      Dieses Attribut registriert `SMyService` mit Visual Studio.  
   
     > [!NOTE]
-    >  Verwenden, um einen Dienst zu registrieren, die einen anderen Dienst mit dem gleichen Namen ersetzt, die <xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute>. Beachten Sie, nur eine außer Kraft setzen eines Diensts ist zulässig.  
+    > Verwenden, um einen Dienst zu registrieren, die einen anderen Dienst mit dem gleichen Namen ersetzt, die <xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute>. Beachten Sie, nur eine außer Kraft setzen eines Diensts ist zulässig.  
   
 ### <a name="adding-a-service"></a>Hinzufügen eines Diensts  
   
-1.  1.  Klicken Sie in der VSPackage-Initialisierer fügen Sie den Dienst, und fügen Sie eine Rückrufmethode, um die Dienste zu erstellen. Hier ist die Änderung an der <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> Methode:  
+1. 1.  Klicken Sie in der VSPackage-Initialisierer fügen Sie den Dienst, und fügen Sie eine Rückrufmethode, um die Dienste zu erstellen. Hier ist die Änderung an der <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> Methode:  
   
     ```csharp  
     protected override void Initialize()  
@@ -112,7 +107,7 @@ Eine VSPackage kann Dienste bereitstellen, die anderen VSPackages verwenden kön
     }  
     ```  
   
-2.  Implementieren Sie die Callback-Methode, die sollte erstellen und Zurückgeben des Diensts oder null, wenn sie nicht erstellt werden kann.  
+2. Implementieren Sie die Callback-Methode, die sollte erstellen und Zurückgeben des Diensts oder null, wenn sie nicht erstellt werden kann.  
   
     ```  
     private object CreateService(IServiceContainer container, Type serviceType)  
@@ -124,9 +119,9 @@ Eine VSPackage kann Dienste bereitstellen, die anderen VSPackages verwenden kön
     ```  
   
     > [!NOTE]
-    >  Visual Studio kann eine Anforderung zur Bereitstellung eines Diensts ablehnen. Dies geschieht, wenn einem anderen VSPackage bereits den Dienst bereitstellt.  
+    > Visual Studio kann eine Anforderung zur Bereitstellung eines Diensts ablehnen. Dies geschieht, wenn einem anderen VSPackage bereits den Dienst bereitstellt.  
   
-3.  Jetzt können Sie den Dienst abrufen und seine Methoden verwenden. Wir zeigen dies im Initialisierer. allerdings erhalten Sie den Dienst an einer beliebigen Stelle, den Sie den Dienst verwenden möchten.  
+3. Jetzt können Sie den Dienst abrufen und seine Methoden verwenden. Wir zeigen dies im Initialisierer. allerdings erhalten Sie den Dienst an einer beliebigen Stelle, den Sie den Dienst verwenden möchten.  
   
     ```csharp  
     protected override void Initialize()  
@@ -149,4 +144,3 @@ Eine VSPackage kann Dienste bereitstellen, die anderen VSPackages verwenden kön
  [Vorgehensweise: Abrufen eines Diensts](../extensibility/how-to-get-a-service.md)   
  [Verwenden und Bereitstellen von Diensten](../extensibility/using-and-providing-services.md)   
  [Dienstgrundlagen](../extensibility/internals/service-essentials.md)
-

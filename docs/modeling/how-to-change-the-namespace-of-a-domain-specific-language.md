@@ -6,16 +6,15 @@ helpviewer_keywords:
 - Domain-Specific Language, namespace
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 3209f1942e95e8cfd883f938722ccfbc713e64db
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 16fec4cf6150fe0711812d9fabe57fc667e36eef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889997"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993499"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Vorgehensweise: Ändern Sie den Namespace einer domänenspezifischen Sprache
 

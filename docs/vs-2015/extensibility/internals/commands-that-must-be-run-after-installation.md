@@ -1,26 +1,21 @@
 ---
 title: Befehle, die nach der Installation ausgeführt werden müssen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - post-install commands
 ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 90ce272270ffd511ee3b0efe8a711730ccdb92b5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 158119759f8e90161e1f3b5267be498dfc1c9b38
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724196"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441526"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Befehle, die nach der Installation ausgeführt werden müssen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,14 +23,14 @@ ms.locfileid: "51724196"
 Wenn Sie die Erweiterung über eine MSI-Datei bereitstellen, müssen Sie ausführen `devenv /setup` im Rahmen der Installation in der Reihenfolge für Visual Studio, um Ihre Erweiterungen zu ermitteln.  
   
 > [!NOTE]
->  Die Informationen in diesem Thema gilt für die DevEnv mit Visual Studio 2008 und früheren Versionen zu suchen. Informationen dazu, wie Sie DevEnv mit höheren Versionen von Visual Studio zu ermitteln, finden Sie unter [Systemanforderungen erkennen](../../extensibility/internals/detecting-system-requirements.md).  
+> Die Informationen in diesem Thema gilt für die DevEnv mit Visual Studio 2008 und früheren Versionen zu suchen. Informationen dazu, wie Sie DevEnv mit höheren Versionen von Visual Studio zu ermitteln, finden Sie unter [Systemanforderungen erkennen](../../extensibility/internals/detecting-system-requirements.md).  
   
 ## <a name="finding-devenvexe"></a>Suchen von devenv.exe  
  Finden Sie jede Version des devenv.exe aus der Registrierung zu Werten, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Installationsprogramme schreiben, mit, dass die RegLocator-Tabelle und die AppSearch Tabelle um die Registrierungswerte als Eigenschaften zu speichern. Weitere Informationen finden Sie unter [Systemanforderungen erkennen](../../extensibility/internals/detecting-system-requirements.md).  
   
 ### <a name="reglocator-table-rows-to-locate-devenvexe-from-different-versions-of-visual-studio"></a>Zeilen der RegLocator devenv.exe aus verschiedenen Versionen von Visual Studio zu suchen.  
   
-|Signature_|Stammverzeichnis|Key|name|Typ|  
+|Signature_|Stammverzeichnis|Key|Name|Typ|  
 |-----------------|----------|---------|----------|----------|  
 |RL_DevenvExe_2002|2|SOFTWARE\Microsoft\VisualStudio\7.0\Setup\VS|EnvironmentPath|2|  
 |RL_DevenvExe_2003|2|SOFTWARE\Microsoft\VisualStudio\7.1\Setup\VS|EnvironmentPath|2|  
@@ -66,15 +61,15 @@ Wenn Sie die Erweiterung über eine MSI-Datei bereitstellen, müssen Sie ausfüh
   
 |Aktion|Typ|Source|Target|  
 |------------|----------|------------|------------|  
-|CA_RunDevenv2002|1586|DEVENV_EXE_2002|/ Setup|  
-|CA_RunDevenv2003|1586|DEVENV_EXE_2003|/ Setup|  
-|CA_RunDevenv2005|1586|DEVENV_EXE_2005|/ Setup|  
-|CA_RunDevenv2008|1586|DEVENV_EXE_2008|/ Setup|  
+|CA_RunDevenv2002|1586|DEVENV_EXE_2002|/setup|  
+|CA_RunDevenv2003|1586|DEVENV_EXE_2003|/setup|  
+|CA_RunDevenv2005|1586|DEVENV_EXE_2005|/setup|  
+|CA_RunDevenv2008|1586|DEVENV_EXE_2008|/setup|  
   
  Benutzerdefinierte Aktionen müssen in die Tabelle InstallExecuteSequence Planung für die Ausführung bei der Installation erstellt werden. Verwenden Sie die entsprechende Eigenschaft in jeder Zeile der Spalte Bedingung, um zu verhindern, dass die benutzerdefinierte Aktion ausgeführt werden, wenn diese Version von [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] nicht auf dem System installiert ist.  
   
 > [!NOTE]
->  `Null` Auswerten von Eigenschaften zu `False` bei der Verwendung in Bedingungen.  
+> `Null` Auswerten von Eigenschaften zu `False` bei der Verwendung in Bedingungen.  
   
  Der Wert von der Sequence-Spalte für jede benutzerdefinierte Aktion hängt von anderen Sequence-Werte in der Windows Installer-Paket ab. Sequence-Werte muss, dass die benutzerdefinierten devenv.exe-Aktionen, die als Ausführen als möglich, direkt vor dem die Standardaktionen InstallFinalize zu schließen.  
   
@@ -89,4 +84,3 @@ Wenn Sie die Erweiterung über eine MSI-Datei bereitstellen, müssen Sie ausfüh
   
 ## <a name="see-also"></a>Siehe auch  
  [Installieren von VSPackages mit Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
-

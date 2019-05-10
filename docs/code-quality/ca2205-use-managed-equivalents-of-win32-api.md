@@ -1,7 +1,6 @@
 ---
-title: 'CA2205: Verwenden Sie verwaltete Entsprechungen der Win32-API'
+title: 'CA2205: Verwaltete Entsprechungen der Win32 API verwenden.'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - UseManagedEquivalentsOfWin32Api
@@ -12,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: 1c65ab59-3e50-4488-a727-3969c7f6cbe4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: d0b43d328dc122a60d2c397cc59e39426e4c4f4c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b049f55d9361b409504cd798b7c878efb5c79ee6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860740"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806807"
 ---
-# <a name="ca2205-use-managed-equivalents-of-win32-api"></a>CA2205: Verwenden Sie verwaltete Entsprechungen der Win32-API
+# <a name="ca2205-use-managed-equivalents-of-win32-api"></a>CA2205: Verwaltete Entsprechungen der Win32 API verwenden.
 
 |||
 |-|-|

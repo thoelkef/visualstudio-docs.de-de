@@ -15,67 +15,65 @@ helpviewer_keywords:
 ms.assetid: 765767d3-ecb7-4cd9-ba1e-d9468964dddc
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43e76a9ffece66a6330b634bb982ec14b10b803c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ff783c76595e1cc79d2520a4e27f5afa01b0a978
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62964065"
 ---
 # <a name="onerror-element-msbuild"></a>OnError-Element (MSBuild)
-Bewirkt, dass mindestens ein Ziel ausgeführt wird, wenn das `ContinueOnError`-Attribut für eine Aufgabe, bei der ein Fehler aufgetreten ist, `false` ist.  
+Bewirkt, dass mindestens ein Ziel ausgeführt wird, wenn das `ContinueOnError`-Attribut für eine Aufgabe, bei der ein Fehler aufgetreten ist, `false` ist.
 
- \<Project>  
- \<Target>  
- \<OnError>  
+ \<Project> \<Target> \<OnError>
 
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntax
 
-```xml  
-<OnError ExecuteTargets="TargetName"  
-    Condition="'String A'=='String B'" />  
-```  
+```xml
+<OnError ExecuteTargets="TargetName"
+    Condition="'String A'=='String B'" />
+```
 
-## <a name="attributes-and-elements"></a>Attribute und Elemente  
- In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
+## <a name="attributes-and-elements"></a>Attribute und Elemente
+ In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
 
-### <a name="attributes"></a>Attribute  
+### <a name="attributes"></a>Attribute
 
-|Attribut|Beschreibung|  
-|---------------|-----------------|  
-|`Condition`|Optionales Attribut.<br /><br /> Die auszuwertende Bedingung. Weitere Informationen finden Sie unter [Conditions (Bedingungen)](../msbuild/msbuild-conditions.md).|  
-|`ExecuteTargets`|Erforderliches Attribut.<br /><br /> Die Ziele, die ausgeführt werden, wenn bei einer Aufgabe ein Fehler auftritt. Trennen Sie mehrere Ziele durch Semikolons. Mehrere Ziele werden in der angegebenen Reihenfolge ausgeführt.|  
+|Attribut|Beschreibung|
+|---------------|-----------------|
+|`Condition`|Optionales Attribut.<br /><br /> Die auszuwertende Bedingung. Weitere Informationen finden Sie unter [Conditions (Bedingungen)](../msbuild/msbuild-conditions.md).|
+|`ExecuteTargets`|Erforderliches Attribut.<br /><br /> Die Ziele, die ausgeführt werden, wenn bei einer Aufgabe ein Fehler auftritt. Trennen Sie mehrere Ziele durch Semikolons. Mehrere Ziele werden in der angegebenen Reihenfolge ausgeführt.|
 
-### <a name="child-elements"></a>Untergeordnete Elemente  
- Keine  
+### <a name="child-elements"></a>Untergeordnete Elemente
+ Keine
 
-### <a name="parent-elements"></a>Übergeordnete Elemente  
+### <a name="parent-elements"></a>Übergeordnete Elemente
 
 | Element | Beschreibung |
 | - | - |
 | [Target](../msbuild/target-element-msbuild.md) | Containerelement für [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Aufgaben. |
 
-## <a name="remarks"></a>Hinweise  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] führt das `OnError`-Element aus, wenn bei einer der Aufgaben des `Target`-Elements ein Fehler auftritt, wenn der `ContinueOnError`-Attributsatz auf `ErrorAndStop` (oder `false`) festgelegt ist. Wenn bei der Aufgabe ein Fehler auftritt, werden die im `ExecuteTargets`-Attribut festgelegten Ziele ausgeführt. Wenn das Ziel mehrere `OnError`-Elemente enthält, werden die `OnError`-Elemente sequenziell ausgeführt, wenn bei der Aufgabe ein Fehler auftritt.  
+## <a name="remarks"></a>Anmerkungen
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] führt das `OnError`-Element aus, wenn bei einer der Aufgaben des `Target`-Elements ein Fehler auftritt, wenn der `ContinueOnError`-Attributsatz auf `ErrorAndStop` (oder `false`) festgelegt ist. Wenn bei der Aufgabe ein Fehler auftritt, werden die im `ExecuteTargets`-Attribut festgelegten Ziele ausgeführt. Wenn das Ziel mehrere `OnError`-Elemente enthält, werden die `OnError`-Elemente sequenziell ausgeführt, wenn bei der Aufgabe ein Fehler auftritt.
 
- Weitere Informationen zu den `ContinueOnError`-Attributen finden Sie unter [Aufgabenelement (MSBuild)](../msbuild/task-element-msbuild.md). Informationen zu Zielen finden Sie unter [Targets](../msbuild/msbuild-targets.md).  
+ Weitere Informationen zu den `ContinueOnError`-Attributen finden Sie unter [Aufgabenelement (MSBuild)](../msbuild/task-element-msbuild.md). Informationen zu Zielen finden Sie unter [Targets](../msbuild/msbuild-targets.md).
 
-## <a name="example"></a>Beispiel  
- Der folgende Code führt die `TaskOne`- und `TaskTwo`-Aufgabe aus. Wenn bei `TaskOne` ein Fehler auftritt, wertet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] das `OnError`-Element aus und führt das `OtherTarget`-Ziel aus.  
+## <a name="example"></a>Beispiel
+ Der folgende Code führt die `TaskOne`- und `TaskTwo`-Aufgabe aus. Wenn bei `TaskOne` ein Fehler auftritt, wertet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] das `OnError`-Element aus und führt das `OtherTarget`-Ziel aus.
 
-```xml  
-<Target Name="ThisTarget">  
-    <TaskOne ContinueOnError="ErrorAndStop">  
-    </TaskOne>  
-    <TaskTwo>  
-    </TaskTwo>  
-    <OnError ExecuteTargets="OtherTarget" />  
-</Target>  
-```  
+```xml
+<Target Name="ThisTarget">
+    <TaskOne ContinueOnError="ErrorAndStop">
+    </TaskOne>
+    <TaskTwo>
+    </TaskTwo>
+    <OnError ExecuteTargets="OtherTarget" />
+</Target>
+```
 
-## <a name="see-also"></a>Siehe auch  
- [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)   
- [Ziele](../msbuild/msbuild-targets.md)
+## <a name="see-also"></a>Siehe auch
+- [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)
+- [Ziele](../msbuild/msbuild-targets.md)

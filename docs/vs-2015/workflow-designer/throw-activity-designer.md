@@ -1,11 +1,8 @@
 ---
 title: Throw-Aktivitätsdesigner | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Throw.UI
@@ -13,13 +10,13 @@ ms.assetid: 5e97c947-be39-4a1f-af04-000e2e09528a
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 335601a40b21400e77aad5c493788db6e7146acd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: db909618971eeab2d92506d1c29b06290aa9263b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275677"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976615"
 ---
 # <a name="throw-activity-designer"></a>Throw-Aktivitätsdesigner
 Die **auslösen** Aktivitäts-Designer dient zum Erstellen und Konfigurieren einer <xref:System.Activities.Statements.Throw> Aktivität.  

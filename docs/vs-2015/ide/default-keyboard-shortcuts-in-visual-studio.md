@@ -1,13 +1,9 @@
 ---
 title: Standardtastenkombinationen
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - shortcut keys [Visual Studio], keyboard binding schemes
 - keyboard binding schemes [Visual Studio]
@@ -18,13 +14,13 @@ ms.assetid: c2c64648-00f8-4e48-a8a0-96c67cfd968c
 caps.latest.revision: 59
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 95d7f9c542bccfd5f78b0aafef276147e8534257
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 2a0aa54cd3fa6456d2a41e5418c497b284d01547
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847635"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095451"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Standardtastenkombinationen in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,22 +58,22 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |[HTML-Editor, Entwurfsansicht](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditorDesign)|[Berichts-Designer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_ReportDesigner)|[VC-Zugriffstasten-Editor](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcaccelerator)|[XML-(Text)-Editor](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xmlTextEditor)|
 |[HTML-Editor-Quellansicht](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditorSource)|[Sequenzdiagramm](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SequenceDiagram)|[VC-Dialog-Editor](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcdialogeditor)|[XML-Schema-Designer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xmlSchemaDesigner)|
 
-##  <a name="bkmk_global"></a> Global
+## <a name="bkmk_global"></a> Global
 
-###  <a name="bkmk_analyze"></a> Analyse
+### <a name="bkmk_analyze"></a> Analyse
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
 |Analyze.NavigateBackward|UMSCHALT+ALT+3|
 |Analyze.NavigateForward|UMSCHALT+ALT+4|
 
-###  <a name="bkmk_architecture"></a> Architektur
+### <a name="bkmk_architecture"></a> Architektur
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
 |Architecture.NewDiagram|STRG+\\, STRG+N|
 
-###  <a name="bkmk_build"></a> Erstellen
+### <a name="bkmk_build"></a> Erstellen
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -86,13 +82,13 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |Build.Compile|Strg+F7|
 |Build.RunCodeAnalysisonSolution|Alt+F11|
 
-###  <a name="bkmk_classview"></a> Klassenansicht: Kontextmenüs
+### <a name="bkmk_classview"></a> Klassenansicht: Kontextmenüs
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
 |ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties|Alt+Eingabe|
 
-###  <a name="bkmk_debug"></a> Debuggen
+### <a name="bkmk_debug"></a> Debuggen
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -160,7 +156,7 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |Debug.Watch3|STRG+ALT+W, 3|
 |Debug.Watch4|STRG+ALT+W, 4|
 
-###  <a name="bkmk_debugger"></a> Debugger-Kontextmenüs
+### <a name="bkmk_debugger"></a> Debugger-Kontextmenüs
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -168,13 +164,13 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |DebuggerContextMenus.BreakpointsWindow.GoToDisassembly|ALT+F9, A|
 |DebuggerContextMenus.BreakpointsWindow.GoToSourceCode|ALT+F9, S|
 
-###  <a name="bkmk_diagnostics"></a> Diagnosehub
+### <a name="bkmk_diagnostics"></a> Diagnosehub
 
 |Befehl|Tastenkombination|
 |-------------|-----------------------|
 |DiagnosticsHub.StopCollection|STRG+ALT+F2|
 
-###  <a name="bkmk_edit"></a> Bearbeiten
+### <a name="bkmk_edit"></a> Bearbeiten
 
 |Befehle||
 |--------------|-|
@@ -233,7 +229,7 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |Edit.SurroundWith|STRG+K, STRG+S|
 |Edit.Undo|STRG+Z<br /><br /> oder<br /><br /> ALT+RÜCKTASTE|
 
-###  <a name="bkmk_editorContext"></a> Editor-Kontextmenüs
+### <a name="bkmk_editorContext"></a> Editor-Kontextmenüs
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -244,7 +240,7 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|STRG+K, STRG+O|
 |EditorContextMenus.CodeWindow.ViewCallHierarchy|STRG+K, STRG+T<br /><br /> oder<br /><br /> STRG+K, T|
 
-###  <a name="bkmk_file"></a> Datei
+### <a name="bkmk_file"></a> Datei
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -260,7 +256,7 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |File.SaveSelectedItems|STRG+S|
 |File.ViewinBrowser|STRG+UMSCHALT+W|
 
-###  <a name="bkmk_help"></a> Hilfe
+### <a name="bkmk_help"></a> Hilfe
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -269,19 +265,19 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |Help.ViewHelp|Strg+F1|
 |Help.WindowHelp|UMSCHALTTASTE+F1|
 
-###  <a name="bkmk_loadtest"></a> Auslastungstest
+### <a name="bkmk_loadtest"></a> Auslastungstest
 
 |Befehl|Tastenkombination|
 |-------------|-----------------------|
 |LoadTest.JumpToCounterPane|STRG+R, Q|
 
-###  <a name="bkmk_otherContext"></a> Weitere Kontextmenüs
+### <a name="bkmk_otherContext"></a> Weitere Kontextmenüs
 
 |Befehl|Tastenkombination|
 |-------------|-----------------------|
 |OtherContextMenus.MicrosoftDataEntityDesignContext.AddNewDiagram|Insert|
 
-###  <a name="bkmk_project"></a> Projekt
+### <a name="bkmk_project"></a> Projekt
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -293,14 +289,14 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |Project.Publishselectedfiles|ALT+;, ALT+P|
 |Project.Replaceselectedfilesfromserver|ALT+;, ALT+R|
 
-###  <a name="bkmk_projectContext"></a> Kontextmenüs für Projekte und Projektmappen
+### <a name="bkmk_projectContext"></a> Kontextmenüs für Projekte und Projektmappen
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
 |ProjectandSolutionContextMenus.Item.MoveDown|ALT+NACH-UNTEN|
 |ProjectandSolutionContextMenus.Item.MoveUp|ALT+NACH-OBEN|
 
-###  <a name="bkmk_refactor"></a> Refactor
+### <a name="bkmk_refactor"></a> Refactor
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -311,7 +307,7 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |Refactor.Rename|STRG+R, STRG+R|
 |Refactor.ReorderParameters|STRG+R, STRG+O|
 
-###  <a name="bkmk_solutionexplorerGLOBAL"></a> Projektmappen-Explorer
+### <a name="bkmk_solutionexplorerGLOBAL"></a> Projektmappen-Explorer
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -319,7 +315,7 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |SolutionExplorer.PendingChangesFilter|STRG+[, P<br /><br /> oder<br /><br /> STRG+[,, STRG+P|
 |SolutionExplorer.SyncWithActiveDocument|STRG+[, S<br /><br /> oder<br /><br /> STRG+[, STRG+S|
 
-###  <a name="bkmk_team"></a> Team
+### <a name="bkmk_team"></a> Team
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -328,7 +324,7 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |Team.Git.GoToGitCommits|STRG+0, STRG+O<br /><br /> oder<br /><br /> STRG+0, O|
 |Team.TeamExplorerSearch|STRG+'|
 
-###  <a name="bkmk_TFcontext"></a> Team Foundation-Kontextmenüs
+### <a name="bkmk_TFcontext"></a> Team Foundation-Kontextmenüs
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -343,14 +339,14 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |TeamFoundationContextMenus.Commands.GoToWebAccess|STRG+0, STRG+A<br /><br /> oder<br /><br /> STRG+0, A|
 |TeamFoundationContextMenus.Commands.GoToWorkItems|STRG+0, STRG+W<br /><br /> oder<br /><br /> STRG+0, W|
 
-###  <a name="bkmk_test"></a> Test
+### <a name="bkmk_test"></a> Test
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
 |Test.UseCodedUITestBuilder|STRG+\\, STRG+C|
 |Test.UseExistingActionRecording|STRG+\\, STRG+A|
 
-###  <a name="bkmk_testexplorerGLOBAL"></a> Test-Explorer
+### <a name="bkmk_testexplorerGLOBAL"></a> Test-Explorer
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -360,7 +356,7 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |TestExplorer.RunAllTests|STRG+R, A|
 |TestExplorer.RunAllTestsInContext|STRG+R, T|
 
-###  <a name="bkmk_tools"></a> Extras
+### <a name="bkmk_tools"></a> Extras
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -369,7 +365,7 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |Tools.ForceGC|STRG+UMSCHALT+ALT+F12, STRG+UMSCHALT+ALT+F12|
 |Tools.GoToCommandLine|STRG+/|
 
-###  <a name="bkmk_view"></a> Ansicht
+### <a name="bkmk_view"></a> Ansicht
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -418,7 +414,7 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |View.ZoomIn|STRG+UMSCHALT+.|
 |View.ZoomOut|STRG+UMSCHALT+,|
 
-###  <a name="bkmk_window"></a> Fenster
+### <a name="bkmk_window"></a> Fenster
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -449,14 +445,14 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |Window.SolutionExplorerSearch|STRG+;|
 |Window.WindowSearch|ALT+`|
 
-###  <a name="bkmk_windowsazure"></a> Azure
+### <a name="bkmk_windowsazure"></a> Azure
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
 |WindowsAzure.RetryMobileServiceScriptOperation|STRG+NUM *, STRG+R|
 |WindowsAzure.ShowMobileServiceScriptErrorDetails|STRG+NUM *, STRG+D|
 
-##  <a name="bkmk_ADONET"></a> ADO.NET Entity Data Model-Designer
+## <a name="bkmk_ADONET"></a> ADO.NET Entity Data Model-Designer
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -471,7 +467,7 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |View.EntityDataModelBrowser|STRG+1|
 |View.EntityDataModelMappingDetails|STRG+2|
 
-##  <a name="bkmk_classDiagram"></a> Klassendiagramm
+## <a name="bkmk_classDiagram"></a> Klassendiagramm
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -483,7 +479,7 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |Edit.RemovefromDiagram|Löschen|
 |View.ViewCode|Eingabe|
 
-##  <a name="bkmk_codedUItest"></a> Editor für Tests der programmierten UI
+## <a name="bkmk_codedUItest"></a> Editor für Tests der programmierten UI
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -494,14 +490,14 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |OtherContextMenus.UITestEditorContextMenu.Movecode|STRG+ALT+C|
 |OtherContextMenus.UITestEditorContextMenu.Splitintoanewmethod|STRG+UMSCHALT+T|
 
-##  <a name="bkmk_dataset"></a> DataSet-Editor
+## <a name="bkmk_dataset"></a> DataSet-Editor
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
 |OtherContextMenus.ColumnContext.InsertColumn|Insert|
 |OtherContextMenus.DbTableContext.Add.Column|STRG+L|
 
-##  <a name="bkmk_diff"></a> Unterschiedanzeige
+## <a name="bkmk_diff"></a> Unterschiedanzeige
 
 |||
 |-|-|
@@ -518,7 +514,7 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |EditorContextMenus.CodeWindow.AddComment|STRG+UMSCHALT+K|
 |EditorContextMenus.CodeWindow.EditLocalFile|STRG+UMSCHALTTASTE+P|
 
-##  <a name="bkmk_DOM"></a> DOM Explorer
+## <a name="bkmk_DOM"></a> DOM Explorer
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -526,13 +522,13 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |DOMExplorer.SelectElement|Strg+B|
 |DOMExplorer.ShowLayout|STRG+UMSCHALT+I|
 
-##  <a name="bkmk_FSharp"></a> F# Interactive
+## <a name="bkmk_FSharp"></a> F# Interactive
 
 |Befehl|Tastenkombination|
 |-------------|-----------------------|
 |OtherContextMenus.FSIConsoleContext.CancelInteractiveEvaluation|STRG+UNTBR|
 
-##  <a name="bkmk_graphDoc"></a> Diagrammdokument-Editor
+## <a name="bkmk_graphDoc"></a> Diagrammdokument-Editor
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -544,7 +540,7 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |ArchitectureContextMenus.DirectedGraphContextMenu.Remove|Löschen|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Rename|F2|
 
-##  <a name="bkmk_graphicsDebugger"></a> Grafikdiagnose
+## <a name="bkmk_graphicsDebugger"></a> Grafikdiagnose
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -558,13 +554,13 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |Graphics.ZoomIn|UMSCHALT+ALT+=|
 |Graphics.ZoomOut|UMSCHALT+ALT+-|
 
-##  <a name="bkmk_HTMLeditor"></a> HTML-Editor
+## <a name="bkmk_HTMLeditor"></a> HTML-Editor
 
 |Befehl|Tastenkombination|
 |-------------|-----------------------|
 |OtherContextMenus.HTMLContext.GoToController|STRG+M, STRG+G|
 
-##  <a name="bkmk_HTMLeditorDesign"></a> HTML-Editor, Entwurfsansicht
+## <a name="bkmk_HTMLeditorDesign"></a> HTML-Editor, Entwurfsansicht
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -587,7 +583,7 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |View.ViewMarkup|UMSCHALTTASTE+F7|
 |Window.PreviousTab|STRG+BILD-AUF|
 
-##  <a name="bkmk_HTMLeditorSource"></a> HTML-Editor-Quellansicht
+## <a name="bkmk_HTMLeditorSource"></a> HTML-Editor-Quellansicht
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -597,13 +593,13 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |View.ViewDesigner|UMSCHALTTASTE+F7|
 |Window.PreviousTab|STRG+BILD-AUF|
 
-##  <a name="bkmk_layerDiagram"></a> Ebenendiagramm
+## <a name="bkmk_layerDiagram"></a> Ebenendiagramm
 
 |Befehl|Tastenkombination|
 |-------------|-----------------------|
 |Edit.Delete|UMSCHALT+ENTF|
 
-##  <a name="bkmk_managedResources"></a> Verwaltete Ressourcen-Editor
+## <a name="bkmk_managedResources"></a> Verwaltete Ressourcen-Editor
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -618,7 +614,7 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |Resources.Other|STRG+6|
 |Resources.Strings|STRG+1|
 
-##  <a name="bkmk_MergeEditor"></a> Mergeeditorfenster
+## <a name="bkmk_MergeEditor"></a> Mergeeditorfenster
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -626,7 +622,7 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonResultWindow|ALT+2|
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonRightWindow|ALT+3|
 
-##  <a name="bkmk_SchemaCompare"></a> Microsoft SQL Server Data Tools, Schemavergleich
+## <a name="bkmk_SchemaCompare"></a> Microsoft SQL Server Data Tools, Schemavergleich
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -637,7 +633,7 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |SQL.SSDTSchemaCompareStop|ALT+PAUSE|
 |SQL.SSDTSchemaCompareWriteUpdates|UMSCHALT+ALT+U|
 
-##  <a name="bkmk_TableDesigner"></a> Microsoft SQL Server Data Tools, Tabellen-Designer
+## <a name="bkmk_TableDesigner"></a> Microsoft SQL Server Data Tools, Tabellen-Designer
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -648,7 +644,7 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |SQL.Rename|F2<br /><br /> oder<br /><br /> STRG+R, R<br /><br /> oder<br /><br /> STRG+R, STRG+R|
 |ViewFileInScriptPanel|UMSCHALT+ALT+BILD-AB|
 
-##  <a name="bkmk_TSQLeditor"></a> Microsoft SQL Server Data Tools, T-SQL-Editor
+## <a name="bkmk_TSQLeditor"></a> Microsoft SQL Server Data Tools, T-SQL-Editor
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -669,7 +665,7 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |TSqlEditorCloneQuery|STRG+ALT+N|
 |TSqlEditorDatabaseCombo|UMSCHALT+ALT+BILD-AB|
 
-##  <a name="bkmk_linkfix"></a> Microsoft SQL Server Data Tools, T-SQL-PDW-Editor
+## <a name="bkmk_linkfix"></a> Microsoft SQL Server Data Tools, T-SQL-PDW-Editor
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -684,13 +680,13 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |TSqlEditorCloneQuery|STRG+ALT+N|
 |TSqlEditorDatabaseCombo|UMSCHALT+ALT+BILD-AB|
 
-##  <a name="bkmk_PageInspector"></a> Seitenprüfung
+## <a name="bkmk_PageInspector"></a> Seitenprüfung
 
 |Befehl|Tastenkombination|
 |-------------|-----------------------|
 |PageInspector.Minimize|F12|
 
-##  <a name="bkmk_QueryDesigner"></a> Abfrage-Designer
+## <a name="bkmk_QueryDesigner"></a> Abfrage-Designer
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -703,7 +699,7 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |QueryDesigner.Results|STRG+4|
 |QueryDesigner.SQL|STRG+3|
 
-##  <a name="bkmk_QueryResults"></a> Abfrageergebnisse
+## <a name="bkmk_QueryResults"></a> Abfrageergebnisse
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -711,7 +707,7 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |SQL.QueryResultsRefresh|UMSCHALT+ALT+R|
 |SQL.QueryResultsStop|ALT+PAUSE|
 
-##  <a name="bkmk_ReportDesigner"></a> Berichts-Designer
+## <a name="bkmk_ReportDesigner"></a> Berichts-Designer
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -737,14 +733,14 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |Edit.TabLeft|UMSCHALT+TAB|
 |View.ReportData|STRG+ALT+D|
 
-##  <a name="bkmk_SequenceDiagram"></a> Sequenzdiagramm
+## <a name="bkmk_SequenceDiagram"></a> Sequenzdiagramm
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
 |ArchitectureDesigner.Sequence.NavigateToCode|F12|
 |Edit.Delete|UMSCHALT+ENTF|
 
-##  <a name="bkmk_SettingsDesigner"></a> Einstellungs-Designer
+## <a name="bkmk_SettingsDesigner"></a> Einstellungs-Designer
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -753,13 +749,13 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |Edit.SelectionCancel|Esc|
 |View.ViewCode|F7|
 
-##  <a name="bkmk_SolutionExplorer"></a> Projektmappen-Explorer
+## <a name="bkmk_SolutionExplorer"></a> Projektmappen-Explorer
 
 |Befehl|Tastenkombination|
 |-------------|-----------------------|
 |ClassViewContextMenus.ClassViewProject.View.ViewinPageInspector|STRG+K, STRG+G|
 
-##  <a name="bkmk_TeamExplorer"></a> Team Explorer
+## <a name="bkmk_TeamExplorer"></a> Team Explorer
 
 |Befehl|Tastenkombination|
 |-------------|-----------------------|
@@ -784,19 +780,19 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageNewLinkedWI|UMSCHALT+ALT+L|
 |View.Refresh|F5|
 
-##  <a name="bkmk_TFBuild"></a> Team Foundation Build-Detail-Editor
+## <a name="bkmk_TFBuild"></a> Team Foundation Build-Detail-Editor
 
 |Befehl|Tastenkombination|
 |-------------|-----------------------|
 |View.Refresh|F5|
 
-##  <a name="bkmk_TestExplorer"></a> Test-Explorer
+## <a name="bkmk_TestExplorer"></a> Test-Explorer
 
 |Befehl|Tastenkombination|
 |-------------|-----------------------|
 |TestExplorer.OpenTest|F12|
 
-##  <a name="bkmk_TextEditor"></a> Text-Editor
+## <a name="bkmk_TextEditor"></a> Text-Editor
 
 |                             Befehle                              |                  Tastenkombinationen                   |
 |-------------------------------------------------------------------|-------------------------------------------------------|
@@ -906,38 +902,38 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |   TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion   |                       Alt+PgDn                        |
 | TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion |                       ALT+BILD-AUF                        |
 
-##  <a name="bkmk_UMLactivityDiagram"></a> UML-Aktivitätsdiagramm
+## <a name="bkmk_UMLactivityDiagram"></a> UML-Aktivitätsdiagramm
 
 |Befehl|Tastenkombination|
 |-------------|-----------------------|
 |Edit.Delete|UMSCHALT+ENTF|
 
-##  <a name="bkmk_UMLclassDiagram"></a> UML-Klassendiagramm
+## <a name="bkmk_UMLclassDiagram"></a> UML-Klassendiagramm
 
 |Befehl|Tastenkombination|
 |-------------|-----------------------|
 |Edit.DeleteFromModel|UMSCHALT+ENTF|
 
-##  <a name="bkmk_UMLcomponentDiagram"></a> UML-Komponentendiagramm
+## <a name="bkmk_UMLcomponentDiagram"></a> UML-Komponentendiagramm
 
 |Befehl|Tastenkombination|
 |-------------|-----------------------|
 |Edit.DeleteFromModel|UMSCHALT+ENTF|
 
-##  <a name="bkmk_UMLusecaseDiagram"></a> UML-Anwendungsfalldiagramm
+## <a name="bkmk_UMLusecaseDiagram"></a> UML-Anwendungsfalldiagramm
 
 |Befehl|Tastenkombination|
 |-------------|-----------------------|
 |Edit.DeleteFromModel|UMSCHALT+ENTF|
 
-##  <a name="bkmk_vcaccelerator"></a> VC-Zugriffstasten-Editor
+## <a name="bkmk_vcaccelerator"></a> VC-Zugriffstasten-Editor
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
 |Edit.NewAccelerator|Insert|
 |Edit.NextKeyTyped|STRG+W|
 
-##  <a name="bkmk_vcdialogeditor"></a> VC-Dialog-Editor
+## <a name="bkmk_vcdialogeditor"></a> VC-Dialog-Editor
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -971,7 +967,7 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |Format.TestDialog|STRG+T|
 |Format.ToggleGuides|STRG+G|
 
-##  <a name="bkmk_vcimageeditor"></a> VC-Bildbearbeitung
+## <a name="bkmk_vcimageeditor"></a> VC-Bildbearbeitung
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -1013,13 +1009,13 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |Image.ZoomIn|STRG+UMSCHALT+.<br /><br /> oder<br /><br /> STRG+NACH-OBEN|
 |Image.ZoomOut|STRG+UMSCHALT+,<br /><br /> oder<br /><br /> STRG+NACH-UNTEN|
 
-##  <a name="bkmk_vcstringeditor"></a> VC-Zeichenfolgen-Editor
+## <a name="bkmk_vcstringeditor"></a> VC-Zeichenfolgen-Editor
 
 |Befehl|Tastenkombination|
 |-------------|-----------------------|
 |Edit.NewString|Insert|
 
-##  <a name="bkmk_viewDesigner"></a> Ansicht-Designer
+## <a name="bkmk_viewDesigner"></a> Ansicht-Designer
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -1032,13 +1028,13 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |QueryDesigner.Results|STRG+4|
 |QueryDesigner.SQL|STRG+3|
 
-##  <a name="bkmk_visualstudio"></a> Visual Studio
+## <a name="bkmk_visualstudio"></a> Visual Studio
 
 |Befehl|Tastenkombination|
 |-------------|-----------------------|
 |OtherContextMenus.ORDesignerContext.HideMethodsPane|STRG+1|
 
-##  <a name="bkmk_wfdesigner"></a> Windows Forms-Designer
+## <a name="bkmk_wfdesigner"></a> Windows Forms-Designer
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -1067,7 +1063,7 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |Edit.SizeControlUp|STRG+UMSCHALT+NACH-OBEN|
 |Edit.TabLeft|UMSCHALT+TAB|
 
-##  <a name="bkmk_workItemEditor"></a>Arbeitselement-Editor
+## <a name="bkmk_workItemEditor"></a>Arbeitselement-Editor
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -1075,7 +1071,7 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |Edit.RefreshWorkItem|F5|
 |Team.NewLinkedWorkItem|UMSCHALT+ALT+L|
 
-##  <a name="bkmk_WIqueryview"></a> Abfrageansicht für Arbeitselemente
+## <a name="bkmk_WIqueryview"></a> Abfrageansicht für Arbeitselemente
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -1086,7 +1082,7 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |Team.Refresh|F5|
 |Window.Toggle|UMSCHALT+ALT+V|
 
-##  <a name="bkmk_WIresultsview"></a> Abfrageergebnisse für Arbeitselemente
+## <a name="bkmk_WIresultsview"></a> Abfrageergebnisse für Arbeitselemente
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -1099,7 +1095,7 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |Team.Refresh|F5|
 |Window.Toggle|UMSCHALT+ALT+V|
 
-##  <a name="bkmk_workflowdesigner"></a> Workflow-Designer
+## <a name="bkmk_workflowdesigner"></a> Workflow-Designer
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -1127,7 +1123,7 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |WorkflowDesigner.ZoomIn|STRG+NUM +|
 |WorkflowDesigner.ZoomOut|STRG+NUM -|
 
-##  <a name="bkmk_xamluidesigner"></a> XAML-Benutzeroberflächen-Designer
+## <a name="bkmk_xamluidesigner"></a> XAML-Benutzeroberflächen-Designer
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
@@ -1143,14 +1139,14 @@ Sie können einfach auf eine Reihe von Befehlen und Fenster in Visual Studio zug
 |View.EdgeRightMoveRight|STRG+UMSCHALT+ALT+.|
 |Projektcode ausführen|Strg+F9|
 
-##  <a name="bkmk_xmlTextEditor"></a> XML-(Text)-Editor
+## <a name="bkmk_xmlTextEditor"></a> XML-(Text)-Editor
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|
 |XML.StartXSLTDebugging|Alt+F5|
 |XML.StartXSLTWithoutDebugging|STRG+ALT+F5|
 
-##  <a name="bkmk_xmlSchemaDesigner"></a> XML-Schema-Designer
+## <a name="bkmk_xmlSchemaDesigner"></a> XML-Schema-Designer
 
 |Befehle|Tastenkombinationen|
 |--------------|------------------------|

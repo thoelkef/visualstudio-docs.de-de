@@ -1,14 +1,9 @@
 ---
 title: Hinzufügen eines Befehls zur Symbolleiste Projektmappen-Explorer | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - toolbars [Visual Studio], adding buttons
 - buttons [Visual Studio], adding to Solution Explorer
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 caps.latest.revision: 40
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 52e963a202d75c29c65521729e70e062a579d479
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ac07a2c6becd46a2536e6a9b3340d075d5f078f2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403245"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>Hinzufügen eines Befehls zur Symbolleiste des Projektmappen-Explorers
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie eine Schaltfläche
  Weitere Informationen über die Menüs, Befehle und VSCT-Dateien finden Sie unter [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md).  
   
 > [!NOTE]
->  Verwenden Sie XML-Command Table (.vsct)-Dateien anstelle von Befehlsdateien Tabelle-Konfigurationsdatei (.ctc) definieren, wie Menüs und Befehle in Ihre VSPackages angezeigt werden. Weitere Informationen finden Sie unter [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
+> Verwenden Sie XML-Command Table (.vsct)-Dateien anstelle von Befehlsdateien Tabelle-Konfigurationsdatei (.ctc) definieren, wie Menüs und Befehle in Ihre VSPackages angezeigt werden. Weitere Informationen finden Sie unter [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
 ## <a name="prerequisites"></a>Vorraussetzungen  
  Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können das VS-SDK auch später installieren. Weitere Informationen finden Sie unter [Installieren von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -45,13 +40,13 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie eine Schaltfläche
 ## <a name="adding-a-button-to-the-solution-explorer-toolbar"></a>Hinzufügen einer Schaltfläche auf der Symbolleiste des Projektmappen-Explorer  
  In diesem Abschnitt der exemplarischen Vorgehensweise wird gezeigt, wie eine Schaltfläche zum Hinzufügen der **Projektmappen-Explorer** Symbolleiste. Wenn die Schaltfläche geklickt wird, wird der Code in der Rückrufmethode ausgeführt.  
   
-1.  Wechseln Sie in der Datei ToolbarButtonPackage.vsct zu den `<Symbols>` Abschnitt. Die `<GuidSymbol>` Knoten enthält die Gruppe und der Befehl, der durch die Paket-Vorlage generiert wurde. Hinzufügen einer `<IDSymbol>` Element auf diesen Knoten aus, um die Gruppe zu deklarieren, der den Befehl enthält.  
+1. Wechseln Sie in der Datei ToolbarButtonPackage.vsct zu den `<Symbols>` Abschnitt. Die `<GuidSymbol>` Knoten enthält die Gruppe und der Befehl, der durch die Paket-Vorlage generiert wurde. Hinzufügen einer `<IDSymbol>` Element auf diesen Knoten aus, um die Gruppe zu deklarieren, der den Befehl enthält.  
   
     ```xml  
     <IDSymbol name="SolutionToolbarGroup" value="0x0190"/>  
     ```  
   
-2.  In der `<Groups>` Abschnitt nach den vorhandenen Gruppeneintrag definieren, die neue Gruppe, die Sie deklariert haben im vorherigen Schritt.  
+2. In der `<Groups>` Abschnitt nach den vorhandenen Gruppeneintrag definieren, die neue Gruppe, die Sie deklariert haben im vorherigen Schritt.  
   
     ```xml  
     <Group guid="guidToolbarButtonPackageCmdSet"  
@@ -62,7 +57,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie eine Schaltfläche
   
      Festlegen des GUID: ID-Paar für das übergeordnete Element `guidSHLMainMenu` und `IDM_VS_TOOL_PROJWIN` legt dieser Gruppe auf die **Projektmappen-Explorer** Symbolleiste, und eine wichtige Einstellung nach dem anderen Befehlsgruppen eingefügt.  
   
-3.  In der `<Buttons>` Abschnitt, ändern Sie die übergeordnete ID der generierten `<Button>` einen Eintrag in der Gruppe anzugeben, die Sie im vorherigen Schritt definiert. Die geänderte `<Button>` -Element sollte wie folgt aussehen:  
+3. In der `<Buttons>` Abschnitt, ändern Sie die übergeordnete ID der generierten `<Button>` einen Eintrag in der Gruppe anzugeben, die Sie im vorherigen Schritt definiert. Die geänderte `<Button>` -Element sollte wie folgt aussehen:  
   
     ```xml  
     <Button guid="guidToolbarButtonPackageCmdSet" id="ToolbarButtonId" priority="0x0100" type="Button">  
@@ -74,11 +69,11 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie eine Schaltfläche
     </Button>  
     ```  
   
-4.  Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz angezeigt wird.  
+4. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz angezeigt wird.  
   
      Die **Projektmappen-Explorer** Symbolleiste sollte die neue Schaltfläche rechts neben der vorhandenen Schaltflächen angezeigt. Das Symbol "Schaltfläche" ist die durchgestrichen.  
   
-5.  Klicken Sie auf die Schaltfläche "Neu".  
+5. Klicken Sie auf die Schaltfläche "Neu".  
   
      Ein Dialogfeld mit der Nachricht **ToolbarButtonPackage in SolutionToolbar.ToolbarButton.MenuItemCallback()** angezeigt werden soll.  
   
@@ -125,4 +120,3 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie Sie eine Schaltfläche
   
 ## <a name="see-also"></a>Siehe auch  
  [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)
-

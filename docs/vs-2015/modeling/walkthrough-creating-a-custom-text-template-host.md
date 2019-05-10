@@ -1,12 +1,9 @@
 ---
 title: 'Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Textvorlagenhosts | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], custom host
 - text templates, custom host walkthrough
@@ -14,13 +11,13 @@ ms.assetid: d00bc366-65ed-4229-885a-196ef9625f05
 caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ee1a6ebfdcad2f9ec50c5a76d5c14cd44028eeb7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1aaff1fa5d31fe22c8a0b079498ffc07a11b9a7e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817274"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446748"
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Textvorlagenhosts
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,35 +27,35 @@ Ein *Textvorlage*<em>Host</em> bietet eine Umgebung, die es ermöglicht die *Tex
  Sie können einem benutzerdefinierten Host schreiben, sollten Sie verwenden die *Textvorlagen-Transformationsprozess* Funktionalität außerhalb [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oder wenn Sie diese Funktion in benutzerdefinierte Tools integrieren möchten. Um einen benutzerdefinierten Host zu erstellen, müssen Sie eine Klasse erstellen, die von <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> erbt. Die Dokumentation der einzelnen Methoden finden Sie unter <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.  
   
 > [!WARNING]
->  Wenn Sie eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Erweiterung oder ein -Paket schreiben, verwenden Sie ggf. den Textvorlagendienst, anstatt einen eigenen Host zu erstellen. Weitere Informationen finden Sie unter [Aufrufen von Texttransformation in einer VS-Erweiterung](../modeling/invoking-text-transformation-in-a-vs-extension.md).  
+> Wenn Sie eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Erweiterung oder ein -Paket schreiben, verwenden Sie ggf. den Textvorlagendienst, anstatt einen eigenen Host zu erstellen. Weitere Informationen finden Sie unter [Aufrufen von Texttransformation in einer VS-Erweiterung](../modeling/invoking-text-transformation-in-a-vs-extension.md).  
   
  In dieser exemplarischen Vorgehensweise werden u. a. die folgenden Aufgaben beschrieben:  
   
--   Erstellen eines benutzerdefinierten Textvorlagenhosts  
+- Erstellen eines benutzerdefinierten Textvorlagenhosts  
   
--   Testen des benutzerdefinierten Hosts  
+- Testen des benutzerdefinierten Hosts  
   
 ## <a name="prerequisites"></a>Vorraussetzungen  
  Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:  
   
--   Visual Studio 2010 oder höher  
+- Visual Studio 2010 oder höher  
   
--   Visual Studio SDK  
+- Visual Studio SDK  
   
 ## <a name="creating-a-custom-text-template-host"></a>Erstellen eines benutzerdefinierten Textvorlagenhosts  
  In dieser exemplarischen Vorgehensweise erstellen Sie einen benutzerdefinierten Host in einer ausführbaren Anwendung, die über die Befehlszeile aufgerufen werden kann. Die Anwendung akzeptiert eine Textvorlagendatei als Argument, liest die Vorlage, ruft die Engine zum Transformieren der Vorlage auf und zeigt aufgetretene Fehler im Eingabeaufforderungsfenster an.  
   
 #### <a name="to-create-a-custom-host"></a>So erstellen Sie einen benutzerdefinierten Host  
   
-1.  Erstellen Sie in Visual Studio eine neue Visual Basic- oder C#-Konsolenanwendung mit dem Namen "CustomHost".  
+1. Erstellen Sie in Visual Studio eine neue Visual Basic- oder C#-Konsolenanwendung mit dem Namen "CustomHost".  
   
-2.  Fügen Sie Verweise auf die folgenden Assemblys hinzu:  
+2. Fügen Sie Verweise auf die folgenden Assemblys hinzu:  
   
-    -   **Microsoft.VisualStudio.TextTemplating.\*.0**  
+    - **Microsoft.VisualStudio.TextTemplating.\*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0 and later versions**  
+    - **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0 and later versions**  
   
-3.  Ersetzen Sie den Code in der Datei "Program.cs" oder "Module1.vb" durch folgenden Code:  
+3. Ersetzen Sie den Code in der Datei "Program.cs" oder "Module1.vb" durch folgenden Code:  
   
     ```csharp  
     using System;  
@@ -717,25 +714,25 @@ Ein *Textvorlage*<em>Host</em> bietet eine Umgebung, die es ermöglicht die *Tex
     End Namespace  
     ```  
   
-4.  Für [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] öffnen die **Projekt** und auf **CustomHost-Eigenschaften**. In der **Startobjekt** auf **CustomHost.Program**.  
+4. Für [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] öffnen die **Projekt** und auf **CustomHost-Eigenschaften**. In der **Startobjekt** auf **CustomHost.Program**.  
   
-5.  Auf der **Datei** Menü klicken Sie auf **Alles speichern**.  
+5. Klicken Sie im Menü **Datei** auf **Alle speichern**.  
   
-6.  Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.  
+6. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.  
   
 ## <a name="testing-the-custom-host"></a>Testen des benutzerdefinierten Hosts  
  Zum Testen des benutzerdefinierten Hosts schreiben Sie eine Textvorlage. Anschließend führen Sie den benutzerdefinierten Host aus, übergeben den Namen der Textvorlage an den Host und überprüfen, ob die Vorlage transformiert wird.  
   
 #### <a name="to-create-a-text-template-to-test-the-custom-host"></a>So erstellen Sie eine Textvorlage zum Testen des benutzerdefinierten Hosts  
   
-1.  Erstellen Sie eine Textdatei, und nennen Sie es `TestTemplate.tt`.  
+1. Erstellen Sie eine Textdatei, und nennen Sie es `TestTemplate.tt`.  
   
      Sie können einen beliebigen Text-Editor (z. B. Editor) zum Erstellen der Datei verwenden.  
   
-2.  Fügen Sie der Datei die folgende Zeile hinzu:  
+2. Fügen Sie der Datei die folgende Zeile hinzu:  
   
     > [!NOTE]
-    >  Die Programmiersprache der Textvorlage muss nicht mit der Sprache des benutzerdefinierten Hosts identisch sein.  
+    > Die Programmiersprache der Textvorlage muss nicht mit der Sprache des benutzerdefinierten Hosts identisch sein.  
   
     ```csharp  
     Text Template Host Test  
@@ -775,39 +772,39 @@ Ein *Textvorlage*<em>Host</em> bietet eine Umgebung, die es ermöglicht die *Tex
   
     ```  
   
-3.  Speichern und schließen Sie die Datei.  
+3. Speichern und schließen Sie die Datei.  
   
 #### <a name="to-test-the-custom-host"></a>So testen Sie den benutzerdefinierten Host  
   
-1.  Öffnen Sie das Eingabeaufforderungsfenster.  
+1. Öffnen Sie das Eingabeaufforderungsfenster.  
   
-2.  Geben Sie den Pfad der ausführbaren Datei für den benutzerdefinierten Host ein, drücken Sie aber noch nicht die EINGABETASTE.  
+2. Geben Sie den Pfad der ausführbaren Datei für den benutzerdefinierten Host ein, drücken Sie aber noch nicht die EINGABETASTE.  
   
      Beispiel:  
   
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`  
   
     > [!NOTE]
-    >  Anstatt die Adresse einzugeben, können Sie auf die Datei CustomHost.exe durchsuchen in **Windows Explorer** , und klicken Sie dann die Datei in das Eingabeaufforderungsfenster ziehen.  
+    > Anstatt die Adresse einzugeben, können Sie auf die Datei CustomHost.exe durchsuchen in **Windows Explorer** , und klicken Sie dann die Datei in das Eingabeaufforderungsfenster ziehen.  
   
-3.  Geben Sie ein Leerzeichen ein.  
+3. Geben Sie ein Leerzeichen ein.  
   
-4.  Geben Sie den Pfad der Textvorlagendatei ein, und drücken Sie dann die EINGABETASTE.  
+4. Geben Sie den Pfad der Textvorlagendatei ein, und drücken Sie dann die EINGABETASTE.  
   
      Beispiel:  
   
      `C:\<YOUR PATH>TestTemplate.tt`  
   
     > [!NOTE]
-    >  Anstatt die Adresse einzugeben, können Sie in die Datei "TestTemplate.tt" navigieren, in **Windows Explorer** , und klicken Sie dann die Datei in das Eingabeaufforderungsfenster ziehen.  
+    > Anstatt die Adresse einzugeben, können Sie in die Datei "TestTemplate.tt" navigieren, in **Windows Explorer** , und klicken Sie dann die Datei in das Eingabeaufforderungsfenster ziehen.  
   
      Die benutzerdefinierte Hostanwendung wird ausgeführt und schließt den Textvorlagen-Transformationsprozess ab.  
   
-5.  In **Windows Explorer**, navigieren Sie zu dem Ordner, die Datei "TestTemplate.tt" enthält.  
+5. In **Windows Explorer**, navigieren Sie zu dem Ordner, die Datei "TestTemplate.tt" enthält.  
   
      Dieser Ordner enthält auch die Datei "TestTemplate1.txt".  
   
-6.  Öffnen Sie diese Datei, um die Ergebnisse der Textvorlagentransformation anzuzeigen.  
+6. Öffnen Sie diese Datei, um die Ergebnisse der Textvorlagentransformation anzuzeigen.  
   
      Die generierte Textausgabe wird angezeigt und sieht wie folgt aus:  
   
@@ -820,10 +817,7 @@ Ein *Textvorlage*<em>Host</em> bietet eine Umgebung, die es ermöglicht die *Tex
     ```  
   
 ## <a name="next-steps"></a>Nächste Schritte  
- In dieser exemplarischen Vorgehensweise haben Sie einen Textvorlagen-Transformationshost erstellt, der die grundlegende Transformationsfunktion unterstützt. Sie können den Host erweitern, um Textvorlagen zu unterstützen, die benutzerdefinierte oder generierte Anweisungsprozessoren aufrufen. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Verbinden eines Hosts auf einen generierten Richtlinie Prozessor](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).  
+ In dieser exemplarischen Vorgehensweise haben Sie einen Textvorlagen-Transformationshost erstellt, der die grundlegende Transformationsfunktion unterstützt. Sie können den Host erweitern, um Textvorlagen zu unterstützen, die benutzerdefinierte oder generierte Direktivenprozessoren aufrufen. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Verbinden eines Hosts mit einem generierten Direktivenprozessor](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>
-
-
-

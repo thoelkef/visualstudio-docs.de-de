@@ -13,17 +13,15 @@ helpviewer_keywords:
 ms.assetid: 68b8327c-ae05-49ff-b9ba-99183e70b52c
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5a1b0c453f3b48b12c5a77fce86789a66fe77c26
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 3c993ac8703468a24a99e114563fec1bdc817581
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37173996"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62566227"
 ---
 # <a name="save-a-dataset-as-xml"></a>Speichern eines Datasets als XML
 
@@ -35,7 +33,7 @@ Aufrufen der <xref:System.Data.DataSet.WriteXml%2A> Methode sendet die XML-forma
 
 ## <a name="to-save-the-data-in-a-dataset-as-xml-to-a-variable"></a>Um die Daten in einem Dataset als XML einer Variablen speichern
 
-- Die <xref:System.Data.DataSet.GetXml%2A> Methode gibt eine <xref:System.String>. Deklarieren Sie eine Variable vom Typ <xref:System.String> und weisen sie die Ergebnisse der <xref:System.Data.DataSet.GetXml%2A> Methode.
+- Die <xref:System.Data.DataSet.GetXml%2A>-Methode gibt <xref:System.String> zurück. Deklarieren Sie eine Variable vom Typ <xref:System.String> und weisen sie die Ergebnisse der <xref:System.Data.DataSet.GetXml%2A> Methode.
 
      [!code-vb[VbRaddataSaving#12](../data-tools/codesnippet/VisualBasic/save-a-dataset-as-xml_1.vb)]
      [!code-csharp[VbRaddataSaving#12](../data-tools/codesnippet/CSharp/save-a-dataset-as-xml_1.cs)]

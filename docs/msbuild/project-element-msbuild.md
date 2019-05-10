@@ -16,43 +16,43 @@ helpviewer_keywords:
 ms.assetid: d1cda56a-dbef-4109-9201-39e962e3f653
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8f04a3d8e960b63dec4771c749ab6404cf1c01d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c69d010f9a4e834f9435616747c2776786706445
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841368"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62999338"
 ---
 # <a name="project-element-msbuild"></a>Project-Element (MSBuild)
-Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] -Projektdatei.  
+Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] -Projektdatei.
 
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>Syntax
 
-```xml  
-<Project InitialTargets="TargetA;TargetB"  
-         DefaultTargets="TargetC;TargetD"  
-         TreatAsLocalProperty="PropertyA;PropertyB"  
+```xml
+<Project InitialTargets="TargetA;TargetB"
+         DefaultTargets="TargetC;TargetD"
+         TreatAsLocalProperty="PropertyA;PropertyB"
          ToolsVersion=<version number>
          Sdk="name[/version]"
-         xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+         xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <Sdk... />
-    <Choose>... </Choose>  
-    <PropertyGroup>... </PropertyGroup>  
-    <ItemGroup>... </ItemGroup>  
-    <Target>... </Target>  
-    <UsingTask.../>  
-    <ProjectExtensions>... </ProjectExtensions>  
-    <Import... />  
-</Project>  
-```  
+    <Choose>... </Choose>
+    <PropertyGroup>... </PropertyGroup>
+    <ItemGroup>... </ItemGroup>
+    <Target>... </Target>
+    <UsingTask.../>
+    <ProjectExtensions>... </ProjectExtensions>
+    <Import... />
+</Project>
+```
 
-## <a name="attributes-and-elements"></a>Attribute und Elemente  
- In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
+## <a name="attributes-and-elements"></a>Attribute und Elemente
+ In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.
 
-### <a name="attributes"></a>Attribute  
+### <a name="attributes"></a>Attribute
 
 | Attribut | Beschreibung |
 |------------------------| - |
@@ -61,9 +61,9 @@ Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../extensibility/inter
 | `Sdk` | Optionales Attribut. <br /><br /> Der SDK-Name und optional die Version, mit denen implizite Importanweisungen, die der PROJ-Datei hinzugefügt werden, erstellt werden. Wenn keine Version angegeben wird, versucht MSBuild eine Standardversion aufzulösen.  Beispielsweise `<Project Sdk="Microsoft.NET.Sdk" />` oder `<Project Sdk="My.Custom.Sdk/1.0.0" />`. |
 | `ToolsVersion` | Optionales Attribut.<br /><br /> Die Version des Toolsets, das MSBuild verwendet, um die Werte für $(MSBuildBinPath) und (MSBuildToolsPath) zu bestimmen. |
 | `TreatAsLocalProperty` | Optionales Attribut.<br /><br /> Eigenschaftennamen, die nicht als global betrachtet werden. Dieses Attribut verhindert, dass bestimmte Befehlszeileneigenschaften Eigenschaftswerte überschreiben, die in einer Projekt- oder Zieldatei und allen nachfolgenden Importen festgelegt sind. Mehrere Eigenschaften werden durch Semikolons (;) getrennt.<br /><br /> Diese globalen Eigenschaften überschreiben normalerweise Eigenschaftswerte, die in der Projektdatei oder in Zieldateien festgelegt werden. Wenn die Eigenschaft im `TreatAsLocalProperty`-Wert aufgeführt wird, überschreibt der globale Eigenschaftenwert die Eigenschaftenwerte nicht, die in dieser Datei und allen nachfolgenden Importen festgelegt werden. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen identischer Quelldateien mit unterschiedlichen Optionen](../msbuild/how-to-build-the-same-source-files-with-different-options.md). **Hinweis**:  Sie legen globale Eigenschaften in der Befehlszeile mit dem Switch **-property** (oder **-p**) fest. Globale Eigenschaften können auch für untergeordnete Projekte in einem Build mit mehreren Projekten festgelegt oder geändert werden, indem das `Properties`-Attribut der MSBuild-Aufgabe verwendet wird. Weitere Informationen finden Sie unter [MSBuild-Aufgabe](../msbuild/msbuild-task.md). |
-| `Xmlns` | Optionales Attribut.<br /><br /> Wenn das `xmlns`-Attribut angegeben wird, muss als Wert `http://schemas.microsoft.com/developer/msbuild/2003` festgelegt sein. |
+| `xmlns` | Optionales Attribut.<br /><br /> Wenn das `xmlns`-Attribut angegeben wird, muss als Wert `http://schemas.microsoft.com/developer/msbuild/2003` festgelegt sein. |
 
-### <a name="child-elements"></a>Untergeordnete Elemente  
+### <a name="child-elements"></a>Untergeordnete Elemente
 
 | Element | Beschreibung |
 | - | - |
@@ -78,11 +78,11 @@ Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../extensibility/inter
 | [Target](../msbuild/target-element-msbuild.md) | Optionales Element.<br /><br /> Enthält eine Reihe von Aufgaben, die [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] sequenziell ausführt. Aufgaben werden mit dem [Aufgaben](../msbuild/task-element-msbuild.md)-Element angegeben. Es kann kein oder mehrere `Target`-Elemente in einem Projekt geben. |
 | [UsingTask](../msbuild/usingtask-element-msbuild.md) | Optionales Element.<br /><br /> Bietet eine Möglichkeit, Aufgaben in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zu registrieren. Es kann kein oder mehrere `UsingTask`-Elemente in einem Projekt geben. |
 
-### <a name="parent-elements"></a>Übergeordnete Elemente  
- Keine  
+### <a name="parent-elements"></a>Übergeordnete Elemente
+ Keine
 
-## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Angeben des zuerst zu erstellenden Ziels](../msbuild/how-to-specify-which-target-to-build-first.md)   
- [Befehlszeilenreferenz](../msbuild/msbuild-command-line-reference.md)   
- [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)   
- [MSBuild](../msbuild/msbuild.md)
+## <a name="see-also"></a>Siehe auch
+- [Vorgehensweise: Angeben des zuerst zu erstellenden Ziels](../msbuild/how-to-specify-which-target-to-build-first.md)
+- [Befehlszeilenreferenz](../msbuild/msbuild-command-line-reference.md)
+- [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)
+- [MSBuild](../msbuild/msbuild.md)

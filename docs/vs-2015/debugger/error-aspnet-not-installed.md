@@ -1,14 +1,9 @@
 ---
-title: 'Fehler: ASP.NET ist nicht installiert. | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Fehler: ASP.NET ist nicht installiert | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.http_not_supported
 dev_langs:
@@ -25,13 +20,13 @@ ms.assetid: 6286dd3d-3e2b-4edd-959d-81e0ed45500b
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 20a6d85fbdc7fad9077a19704b6c448c73dae787
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2198ed401f714353be2dd18846dd527cc433e695
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739590"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447308"
 ---
 # <a name="error-aspnet-not-installed"></a>Fehler: ASP.NET ist nicht installiert
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ Dieser Fehler tritt auf, wenn [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] a
   
 ### <a name="to-reinstall-aspnet"></a>So installieren Sie ASP.NET neu  
   
-1.  Führen Sie in einem Eingabeaufforderungsfenster den folgenden Befehl aus:  
+1. Führen Sie in einem Eingabeaufforderungsfenster den folgenden Befehl aus:  
   
     ```  
     \WINDOWS\Microsoft.NET\Framework\version\aspnet_regiis -i  
@@ -49,10 +44,7 @@ Dieser Fehler tritt auf, wenn [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] a
      wo *Version* stellt die Versionsnummer von .NET Framework installiert, auf dem Computer, z.B. v1.0.370 dar. Sie können die Frameworkversion feststellen, anhand der `\WINDOWS\Microsoft.NET\Framework` Verzeichnis.  
   
     > [!NOTE]
-    >  Sie können mit Windows Server 2003 installieren [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] mit **Software** in der Systemsteuerung.  
+    > Unter Windows Server 2003 können Sie [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] in der Systemsteuerung über die Option **Software** installieren.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von Webanwendungen: Fehler und Problembehandlung](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
-
-
-

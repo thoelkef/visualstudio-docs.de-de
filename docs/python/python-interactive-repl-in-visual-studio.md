@@ -1,22 +1,21 @@
 ---
 title: Interaktives Python-Fenster (REPL)
 description: Verwenden Sie das interaktive Fenster (REPL) für die schnelle Entwicklung von Python-Code in Visual Studio.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
+ms.date: 02/11/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d092feee3327af0f7ee7c439eb4c9fc1e74e9138
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bc813868f3284ad81849e3a03d864de65d9f54ed
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835645"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62896895"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Arbeiten mit dem interaktiven Python-Fenster
 
@@ -31,15 +30,11 @@ Visual Studio stellt eine Reihe von Python-REPL-Modi zur Auswahl:
 | Standard | Standard-REPL, kommuniziert direkt mit Python | Standardbearbeitung (mehrzeilig usw.) | Ja, über `$attach` | Nein |
 | Debug | Standard-REPL, kommuniziert mit gedebuggtem Python-Prozess | Standardbearbeitung | Nur Debuggen | Nein |
 | IPython | REPL kommuniziert mit IPython-Back-End | IPython-Befehle, Pylab-Vorteile | Nein | Ja, inline in REPL |
-| IPython ohne Pylab | REPL kommuniziert mit IPython-Back-End | Standardmäßiges IPython | Nein | Ja, separates Fenster | 
+| IPython ohne Pylab | REPL kommuniziert mit IPython-Back-End | Standardmäßiges IPython | Nein | Ja, separates Fenster |
 
 In diesem Artikel werden der **Standard**- und **Debug**-REPL-Modus beschrieben. Ausführliche Informationen zu den IPython-Modi finden Sie unter [Verwenden von IPython REPL](interactive-repl-ipython.md) (Verwenden von IPython REPL).
 
-Eine detaillierte exemplarische Vorgehensweise mit Beispielen, einschließlich der Interaktionen mit dem Editor wie **STRG**+**EINGABETASTE**, finden Sie unter [Tutorial Schritt 3: Verwenden des interaktiven REPL-Fensters](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md). 
-
-|   |   |
-|---|---|
-| ![Kamerasymbol für Video](../install/media/video-icon.png "Video ansehen") | [Sehen Sie sich ein Video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567) zum **interaktiven** Fenster an (2 Minuten, 22 Sekunden).|
+Eine detaillierte exemplarische Vorgehensweise mit Beispielen, einschließlich der Interaktionen mit dem Editor wie **STRG**+**EINGABETASTE**, finden Sie unter [Tutorial Schritt 3: Verwenden des interaktiven REPL-Fensters](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md).
 
 ## <a name="open-an-interactive-window"></a>Öffnen eines interaktiven Fensters
 
@@ -61,7 +56,7 @@ Schließlich können Sie Code in der Datei auswählen und den unten beschriebene
 
 ## <a name="interactive-window-options"></a>Optionen für das interaktive Fenster
 
-Sie können verschiedene Aspekte des **interaktiven** Fensters über **Extras** > **Optionen** > **Python-Tools** > **Interaktive Fenster** (siehe [Optionen](python-support-options-and-settings-in-visual-studio.md)) steuern:
+Sie können verschiedene Aspekte des **interaktiven** Fensters über **Extras** > **Optionen** > **Python** > **Interaktive Fenster** (siehe [Optionen](python-support-options-and-settings-in-visual-studio.md)) steuern:
 
 ![Optionen für interaktives Python-Fenster](media/options-interactive-windows.png)
 
@@ -126,4 +121,4 @@ Visual Studio erkennt auch Codezellen, die mit Kommentaren wie `# In[1]:` beginn
 
 Das **interaktive** Fenster enthält IntelliSense auf der Basis von Liveobjekten, im Gegensatz zum Code-Editor, in dem IntelliSense nur auf der Quellcodeanalyse basiert. Diese Vorschläge im **interaktiven** Fenster sind korrekter, insbesondere bei dynamisch generiertem Code. Der Nachteil besteht darin, dass Funktionen mit Nebenwirkungen (z.B. Protokollierungsmeldungen) Ihre Entwicklungserfahrung beeinträchtigen können.
 
-Wenn dieses Verhalten ein Problem darstellt, ändern Sie die Einstellungen unter **Extras** > **Optionen** > **Python-Tools** > **Interaktive Fenster** in der Gruppe **Vervollständigungsmodus**, wie unter [Options – Interactive Windows options](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options) (Optionen: Optionen zu interaktiven Fenstern) beschrieben.
+Wenn dieses Verhalten ein Problem darstellt, ändern Sie die Einstellungen unter **Extras** > **Optionen** > **Python** > **Interaktive Fenster** in der Gruppe **Vervollständigungsmodus**. Informationen dazu finden Sie unter [Optionen – Optionen für interaktive Fenster](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options).

@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Ignorieren von Fehlern in Aufgaben | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, ignoring errors
 - ContinueOnError attribute [MSBuild]
@@ -16,18 +11,17 @@ ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 72f638a17fd6d49157f13d54a6ec1deba0e2bf27
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5025cc3e9dc0e13c3ae4658d129f5d0ac94f6fd6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891192"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062138"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Gewusst wie: Ignorieren von Fehlern in Aufgaben
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Manchmal benötigen Sie ein Build, der in bestimmten Aufgaben fehlertolerant ist. Wenn diese nicht kritischen Aufgaben fehlschlagen, soll der Buildvorgang fortgesetzt werden, da er immer noch die gewünschte Ausgabe erzeugen kann. Wenn z.B. ein Projekt eine Aufgabe `SendMail` zum Senden einer E-Mail-Nachricht verwendet, nachdem jede Komponente erzeugt wurde, sollte der Build bis zum Abschluss weiterarbeiten, selbst wenn der Mailserver nicht verfügbar ist und die Statusnachricht nicht gesendet werden kann. Oder wenn beispielsweise temporäre Dateien während des Buildvorgangs normalerweise gelöscht werden, sollte der Build auch bis zum Abschluss weiterarbeiten, selbst wenn diese Dateien nicht gelöscht werden können.  
   
 ## <a name="using-the-continueonerror-attribute"></a>Verwenden des ContinueOnError-Attributs  
@@ -47,7 +41,7 @@ Manchmal benötigen Sie ein Build, der in bestimmten Aufgaben fehlertolerant ist
   
 #### <a name="to-ignore-an-error-in-a-task"></a>So ignorieren Sie Fehler in einer Aufgabe  
   
--   Verwenden Sie das Attribut `ContinueOnError` der Aufgabe. Zum Beispiel:  
+- Verwenden Sie das Attribut `ContinueOnError` der Aufgabe. Beispiel:  
   
      `<Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>`  
   
@@ -74,5 +68,3 @@ Manchmal benötigen Sie ein Build, der in bestimmten Aufgaben fehlertolerant ist
 [MSBuild](msbuild.md)  
  [Task Reference (Aufgabenreferenz)](../msbuild/msbuild-task-reference.md)   
  [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)
-
-

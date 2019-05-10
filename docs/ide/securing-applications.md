@@ -1,7 +1,6 @@
 ---
 title: Sicherheit
 ms.date: 06/01/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - security [Visual Studio], applications
@@ -9,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 7d32c4cf-8bec-4307-a2a8-42f0ceddf3eb
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74643454c4e96f5f4c1faa98b26fa1f26bd2790b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6398a28394c8918d574a3b3eca4cf54b21f3d7bd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904629"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979535"
 ---
 # <a name="secure-applications"></a>Sichern von Anwendungen
 

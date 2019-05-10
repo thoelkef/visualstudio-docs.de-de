@@ -13,17 +13,17 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], Windows Forms controls
 - documents [Office development in Visual Studio], host controls
 - host controls [Office development in Visual Studio], persisting in the document
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 570131dfdb3cb582ba6ee6c8a12fff2dfcc01e98
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8fd44d535cd8a9920ebc3de37d0c483a19dac8f8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894794"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976591"
 ---
 # <a name="persist-dynamic-controls-in-office-documents"></a>Beibehalten von dynamischen Steuerelementen in Office-Dokumente
 
@@ -76,11 +76,11 @@ In VSTO-Add-Ins werden die Steuerelemente entfernt, die ActiveX-Wrapper hingegen
 
 Gelöschte Windows Forms-Steuerelemente können neu erstellt werden, wenn der Benutzer das Dokument erneut öffnet. Hierzu müssen in der Projektmappe folgende Aufgaben ausgeführt werden:
 
-1.  Informationen zu Größe, Position und Zustand der Steuerelemente müssen beim Speichern oder Schließen des Dokuments gespeichert werden. In einer Anpassung auf Dokumentebene können Sie die Daten, das dem Datencache im Dokument speichern. In einem VSTO-Add-in können Sie die Daten an einen benutzerdefinierten XML-Abschnitt im Dokument speichern.
+1. Informationen zu Größe, Position und Zustand der Steuerelemente müssen beim Speichern oder Schließen des Dokuments gespeichert werden. In einer Anpassung auf Dokumentebene können Sie die Daten, das dem Datencache im Dokument speichern. In einem VSTO-Add-in können Sie die Daten an einen benutzerdefinierten XML-Abschnitt im Dokument speichern.
 
-2.  Die Steuerelemente werden im Falle eines Ereignisses neu erstellt, das beim Öffnen des Dokuments ausgelöst wird. Bei Projekten auf Dokumentebene können Sie dieses Verhalten im `Sheet`*n*`_Startup` - oder `ThisDocument_Startup` -Ereignishandler veranlassen. Bei VSTO-Add-In-Projekten können Sie dieses Verhalten in den Ereignishandlern für das <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> - oder das <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> -Ereignis veranlassen.
+2. Die Steuerelemente werden im Falle eines Ereignisses neu erstellt, das beim Öffnen des Dokuments ausgelöst wird. Bei Projekten auf Dokumentebene können Sie dieses Verhalten im `Sheet`*n*`_Startup` - oder `ThisDocument_Startup` -Ereignishandler veranlassen. Bei VSTO-Add-In-Projekten können Sie dieses Verhalten in den Ereignishandlern für das <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> - oder das <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> -Ereignis veranlassen.
 
-###  <a name="removingActiveX"></a> Entfernen von ActiveX-Wrappern in einem Add-in
+### <a name="removingActiveX"></a> Entfernen von ActiveX-Wrappern in einem Add-in
 
 Wenn Sie Dokumenten dynamische Windows Forms-Steuerelemente mithilfe eines VSTO-Add-Ins hinzufügen, können Sie verhindern, dass die ActiveX-Wrapper für die Steuerelemente im Dokument das nächste Mal auf folgende Weise öffnen angezeigt werden.
 

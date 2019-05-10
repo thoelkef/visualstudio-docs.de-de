@@ -1,12 +1,9 @@
 ---
 title: Laufzeit-Textgenerierung mithilfe von T4-Textvorlagen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Preprocessed Text Template project item
 - TextTemplatingFilePreprocessor custom tool
@@ -16,13 +13,13 @@ ms.assetid: 79b4b3c6-a9a7-4446-b6fd-e2388fc6b05f
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 75da17b32d3997121777f398a6663932c7d7143d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 586ad1d68ce1d0310b30b8bdac8aa2fb55acdeb5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920130"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411880"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Laufzeittextgenerierung mithilfe von T4-Textvorlagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,16 +53,16 @@ This report is Company Confidential.
   
 #### <a name="to-create-a-run-time-text-template"></a>Zum Erstellen einer Laufzeit-Textvorlage  
   
-1.  Wählen Sie im Projektmappen-Explorer im Kontextmenü des Projekts **hinzufügen**, **neues Element**.  
+1. Wählen Sie im Projektmappen-Explorer im Kontextmenü des Projekts **hinzufügen**, **neues Element**.  
   
-2.  In der **neues Element hinzufügen** wählen Sie im Dialogfeld **Runtimetextvorlage**. (In [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] suchen Sie unter **allgemeine Items\General**.)  
+2. In der **neues Element hinzufügen** wählen Sie im Dialogfeld **Runtimetextvorlage**. (In [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] suchen Sie unter **allgemeine Items\General**.)  
   
-3.  Geben Sie einen Namen für die Vorlagendatei an.  
+3. Geben Sie einen Namen für die Vorlagendatei an.  
   
     > [!NOTE]
-    >  Der Name der Vorlagendatei wird als Klassenname im generierten Code verwendet werden. Aus diesem Grund sollten sie Leerzeichen oder Interpunktionszeichen keine.  
+    > Der Name der Vorlagendatei wird als Klassenname im generierten Code verwendet werden. Aus diesem Grund sollten sie Leerzeichen oder Interpunktionszeichen keine.  
   
-4.  Wählen Sie **Hinzufügen** aus.  
+4. Wählen Sie **Hinzufügen** aus.  
   
      Eine neue Datei wird erstellt, mit der Erweiterung **TT**. Die **benutzerdefiniertes Tool** -Eigenschaftensatz auf **TextTemplatingFilePreprocessor**. Es enthält die folgenden Zeilen:  
   
@@ -82,18 +79,18 @@ This report is Company Confidential.
   
 #### <a name="to-convert-an-existing-text-file-to-a-run-time-template"></a>Um eine vorhandene Textdatei in eine Laufzeitvorlage zu konvertieren.  
   
-1.  Schließen Sie die Datei in Ihrem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Projekt. Wählen Sie im Projektmappen-Explorer im Kontextmenü des Projekts **hinzufügen**, **vorhandenes Element**.  
+1. Schließen Sie die Datei in Ihrem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Projekt. Wählen Sie im Projektmappen-Explorer im Kontextmenü des Projekts **hinzufügen**, **vorhandenes Element**.  
   
-2.  Legen Sie die Datei **benutzerdefinierte Tools** Eigenschaft **TextTemplatingFilePreprocessor**. Wählen Sie im Projektmappen-Explorer im Kontextmenü der Datei **Eigenschaften**.  
+2. Legen Sie die Datei **benutzerdefinierte Tools** Eigenschaft **TextTemplatingFilePreprocessor**. Wählen Sie im Projektmappen-Explorer im Kontextmenü der Datei **Eigenschaften**.  
   
     > [!NOTE]
-    >  Wenn die Eigenschaft bereits festgelegt ist, stellen Sie sicher, dass er ist **TextTemplatingFilePreprocessor** und nicht **TextTemplatingFileGenerator**. Dies kann auftreten, wenn Sie eine Datei einschließen, die die Erweiterung bereits **TT**.  
+    > Wenn die Eigenschaft bereits festgelegt ist, stellen Sie sicher, dass er ist **TextTemplatingFilePreprocessor** und nicht **TextTemplatingFileGenerator**. Dies kann auftreten, wenn Sie eine Datei einschließen, die die Erweiterung bereits **TT**.  
   
-3.  Ändern Sie die Dateinamenerweiterung zu **TT**. Obwohl dieser Schritt optional ist, können Sie vermeiden Sie die Datei in einem falschen Editor öffnen.  
+3. Ändern Sie die Dateinamenerweiterung zu **TT**. Obwohl dieser Schritt optional ist, können Sie vermeiden Sie die Datei in einem falschen Editor öffnen.  
   
-4.  Entfernen Sie alle Leerzeichen oder Satzzeichen, aus dem Hauptteil des Dateinamens. Z. B. "Meine Web Page.tt" wird nicht korrekt, aber "MyWebPage.tt" korrekt ist. Der Dateiname wird als Klassenname im generierten Code verwendet werden.  
+4. Entfernen Sie alle Leerzeichen oder Satzzeichen, aus dem Hauptteil des Dateinamens. Z. B. "Meine Web Page.tt" wird nicht korrekt, aber "MyWebPage.tt" korrekt ist. Der Dateiname wird als Klassenname im generierten Code verwendet werden.  
   
-5.  Fügen Sie die folgende Zeile am Anfang der Datei. Wenn Sie in Visual Basic-Projekt arbeiten, ersetzen Sie "C#", mit "VB".  
+5. Fügen Sie die folgende Zeile am Anfang der Datei. Wenn Sie in Visual Basic-Projekt arbeiten, ersetzen Sie "C#", mit "VB".  
   
      `<#@ template language="C#" #>`  
   
@@ -292,7 +289,7 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 ### <a name="inheritance-between-run-time-text-templates"></a>Vererbung zwischen Laufzeit-Textvorlagen  
  Sie können Freigeben von Inhalten zwischen Laufzeitvorlagen durch Schreiben einer Textvorlage Basisklasse, die kann abstrakt sein. Verwenden der `inherits` Parameter, der die `<@#template#>` Richtlinie auf eine andere Runtime-Vorlagenklasse.  
   
-#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Vererbungsmuster: Fragmente in Base-Methoden  
+#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Vererbungsmuster: Fragmente in Basismethoden  
  Beachten Sie, dass im Muster, die in das folgende Beispiel verwendet die folgenden Punkte:  
   
 - Die Basisklasse `SharedFragments` definiert die Methoden in Klassenfunktionsblöcken `<#+ ... #>`.  
@@ -375,7 +372,7 @@ End of common template.
   
 ```  
   
- **"DerivedTemplate1.tt":**  
+ **DerivedTemplate1.tt:**  
   
 ```csharp  
 <#@ template language="C#" inherits="AbstractBaseTemplate1" #>  
@@ -431,7 +428,4 @@ End material for DerivedTemplate1.
 ## <a name="see-also"></a>Siehe auch  
  [Codegenerierung und T4-Textvorlagen](../modeling/code-generation-and-t4-text-templates.md)   
  [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md)   
- [Grundlegendes zur T4: Vorverarbeitete Textvorlagen von Oleg Sych](http://www.olegsych.com/2009/09/t4-preprocessed-text-templates/)
-
-
-
+ [Grundlegendes zur T4: Vorverarbeitete Textvorlagen von Oleg Sych](https://github.com/olegsych/T4Toolbox)

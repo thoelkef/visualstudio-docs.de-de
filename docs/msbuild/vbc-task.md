@@ -15,22 +15,21 @@ helpviewer_keywords:
 ms.assetid: 595278b1-2782-4577-b1ba-b4b5ab5625a3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b186f5be27bb1457b7d9beb1a056bec90821f45
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 247d7c5a204418fdddf41e906a12ef2ef1fb232f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956152"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62577771"
 ---
 # <a name="vbc-task"></a>Vbc-Aufgabe
-Umschließt die Datei *vbc.exe*, die ausführbare Dateien (*EXE*), Dynamic Link Libraries (*DLL*) oder Codemodule (*NETMODULE*) produziert. Weitere Informationen zu *vbc.exe* finden Sie unter [Visual Basic-Befehlszeilencompiler](/dotnet/visual-basic/reference/command-line-compiler/index).  
+Umschließt die Datei *vbc.exe*, die ausführbare Dateien (*EXE*), Dynamic Link Libraries (*DLL*) oder Codemodule (*NETMODULE*) produziert. Weitere Informationen zu *vbc.exe* finden Sie unter [Visual Basic-Befehlszeilencompiler](/dotnet/visual-basic/reference/command-line-compiler/index).
 
-## <a name="parameters"></a>Parameter  
- In der folgenden Tabelle werden die Parameter der `Vbc` -Aufgabe beschrieben.  
-
+## <a name="parameters"></a>Parameter
+ In der folgenden Tabelle werden die Parameter der `Vbc` -Aufgabe beschrieben.
 
 | Parameter | Beschreibung |
 |------------------------------| - |
@@ -51,7 +50,7 @@ Umschließt die Datei *vbc.exe*, die ausführbare Dateien (*EXE*), Dynamic Link 
 | `Imports` | Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Importiert Namespaces aus den angegebenen Auflistungen. Dieser Parameter entspricht der Option [-imports](/dotnet/visual-basic/reference/command-line-compiler/imports) des Compilers *vbc.exe*. |
 | `KeyContainer` | Optionaler `String` -Parameter.<br /><br /> Gibt den Namen des kryptografischen Schlüsselcontainers an. Dieser Parameter entspricht der Option [-keycontainer](/dotnet/visual-basic/reference/command-line-compiler/keycontainer) des Compilers *vbc.exe*. |
 | `KeyFile` | Optionaler `String` -Parameter.<br /><br /> Gibt den Dateinamen mit dem kryptografischen Schlüssel an. Weitere Informationen finden Sie unter [-keyfile](/dotnet/visual-basic/reference/command-line-compiler/keyfile). |
-| `LangVersion` | Optionaler <xref:System.String?displayProperty=fullName> -Parameter.<br /><br /> Gibt die Sprachversion (entweder 9 oder 10) an |
+| `LangVersion` | Optionaler <xref:System.String?displayProperty=fullName> -Parameter.<br /><br /> Gibt die [Sprachversion](/dotnet/visual-basic/language-reference/configure-language-version) (z.B. 15.5) an. |
 | `LinkResources` | Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Erstellt einen Link zu einer .NET Framework-Ressource in der Ausgabedatei. Die Ressourcendatei wird nicht in der Ausgabedatei platziert. Dieser Parameter entspricht der Option [-linkresource](/dotnet/visual-basic/reference/command-line-compiler/linkresource) des Compilers *vbc.exe*. |
 | `MainEntryPoint` | Optionaler `String` -Parameter.<br /><br /> Gibt die Klasse oder das Modul mit dem Speicherort der `Sub Main`-Prozedur an. Dieser Parameter entspricht der Option [-main](/dotnet/visual-basic/reference/command-line-compiler/main) des Compilers *vbc.exe*. |
 | `ModuleAssemblyName` | Optionaler `String` -Parameter.<br /><br /> Gibt die Assembly an, zu der dieses Modul gehört. |
@@ -88,21 +87,21 @@ Umschließt die Datei *vbc.exe*, die ausführbare Dateien (*EXE*), Dynamic Link 
 | `Win32Icon` | Optionaler `String` -Parameter.<br /><br /> Fügt der Assembly eine *ICO*-Datei hinzu, die der Ausgabedatei im **Datei-Explorer** das gewünschte Aussehen verleiht. Dieser Parameter entspricht der Option [-win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) des Compilers *vbc.exe*. |
 | `Win32Resources` | Optionaler `String` -Parameter.<br /><br /> Fügt eine Win32-Ressource (*RES*-Datei) in die Ausgabedatei ein. Dieser Parameter entspricht der Option [-win32resource](/dotnet/visual-basic/reference/command-line-compiler/win32resource) des Compilers *vbc.exe*. |
 
-## <a name="remarks"></a>Hinweise  
- Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.ToolTaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.ToolTask>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [ToolTaskExtension-Basisklasse](../msbuild/tooltaskextension-base-class.md).  
+## <a name="remarks"></a>Anmerkungen
+ Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.ToolTaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.ToolTask>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [ToolTaskExtension-Basisklasse](../msbuild/tooltaskextension-base-class.md).
 
-## <a name="example"></a>Beispiel  
- Im folgenden Beispiel wird ein Visual Basic-Projekt kompiliert.  
+## <a name="example"></a>Beispiel
+ Im folgenden Beispiel wird ein Visual Basic-Projekt kompiliert.
 
-```xml  
-<VBC  
-   Sources="@(sources)"  
-   Resources="strings.resources"  
-   Optimize="true"  
-   OutputAssembly="out.exe"/>  
-```  
+```xml
+<VBC
+   Sources="@(sources)"
+   Resources="strings.resources"
+   Optimize="true"
+   OutputAssembly="out.exe"/>
+```
 
-## <a name="see-also"></a>Siehe auch  
- [Visual Basic-Befehlszeilencompiler](/dotnet/visual-basic/reference/command-line-compiler/index)   
- [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
- [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>Siehe auch
+- [Visual Basic command-line compiler (Visual Basic-Befehlszeilencompiler)](/dotnet/visual-basic/reference/command-line-compiler/index)
+- [Aufgaben](../msbuild/msbuild-tasks.md)
+- [Referenz zu MSBuild-Tasks](../msbuild/msbuild-task-reference.md)

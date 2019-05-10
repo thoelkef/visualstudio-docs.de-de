@@ -4,16 +4,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 4786b0ba6ee981ce14b60b1af87252e3d9582a0e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: fcc08f9af3452289b3e0e76fe6970e75e8f854db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414812"
 ---
 # <a name="customizing-copy-behavior"></a>Anpassen des Kopierverhaltens
 In einer domänenspezifischen Sprache (DSL) mit Visual Studio-Visualisierungs und Modellierungs-SDK erstellt können Sie ändern, was geschieht, wenn das Kopieren und Einfügen von Elementen.
@@ -233,7 +232,7 @@ Weitere Informationen finden Sie unter [How to: Hinzufügen eines Drag & Drop-Ha
  Viele Aspekte einer DSL Verhaltens beim Kopieren, einfügen, erstellen und Löschen von Objekten auf einer Instanz von unterliegen <xref:Microsoft.VisualStudio.Modeling.ElementOperations> , mit dem Diagramm verknüpft ist. Sie können das DSL Verhalten ändern, indem Sie eine eigene Klasse von ableiten <xref:Microsoft.VisualStudio.Modeling.ElementOperations> und überschreiben die <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> Eigenschaft Ihrer Diagrammklasse.
 
 > [!TIP]
->  Weitere Informationen zum Anpassen des Modells mit Programmcode finden Sie unter [Navigieren in und Aktualisieren von Modellen im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md).
+> Weitere Informationen zum Anpassen des Modells mit Programmcode finden Sie unter [Navigieren in und Aktualisieren von Modellen im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
  ![Sequenzdiagramm für den Kopiervorgang](../modeling/media/dslcopyseqdiagram.png)
 
@@ -281,13 +280,13 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
 ```
 
 ## <a name="receiving-items-dragged-from-other-models"></a>Empfangen von Elementen, die aus anderen Modellen gezogen wurden
- Mit ElementOperations kann auch das Verhalten von Kopier-, Verschiebe-, Lösch- und Drag & Drop-Vorgängen definiert werden. Zur Veranschaulichung der Verwendung von ElementOperations wird im hier angegebenen Beispiel ein benutzerdefiniertes Drag & Drop-Verhalten konfiguriert. Allerdings für diesen Zweck Sie ggf. die beschriebene Alternativmethode in [Vorgehensweise: Hinzufügen eines Drag & Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md), die besser erweiterbar ist.
+ Mit ElementOperations kann auch das Verhalten von Kopier-, Verschiebe-, Lösch- und Drag &amp; Drop-Vorgängen definiert werden. Zur Veranschaulichung der Verwendung von ElementOperations wird im hier angegebenen Beispiel ein benutzerdefiniertes Drag &amp; Drop-Verhalten konfiguriert. Allerdings für diesen Zweck Sie ggf. die beschriebene Alternativmethode in [Vorgehensweise: Hinzufügen eines Drag & Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md), die besser erweiterbar ist.
 
  Definieren Sie zwei Methoden in Ihrer ElementOperations-Klasse:
 
--   `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` bestimmt, ob das Quellelement auf die Zielform, den Zielkonnektor oder das Zieldiagramm gezogen werden kann.
+- `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` bestimmt, ob das Quellelement auf die Zielform, den Zielkonnektor oder das Zieldiagramm gezogen werden kann.
 
--   `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` kombiniert das Quellelement im Ziel.
+- `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` kombiniert das Quellelement im Ziel.
 
 ### <a name="canmerge"></a>CanMerge()
  `CanMerge()` wird aufgerufen, um Feedback für den Benutzer festzulegen, wenn er die Maus über das Diagramm bewegt. Die Parameter der Methode sind die Elemente, über die die Maus bewegt wird, sowie die Daten zur Quelle, aus der der Ziehvorgang durchgeführt wurde. Der Benutzer kann von überall auf dem Bildschirm ziehen. Daher kann das Quellobjekt viele verschiedene Typen aufweisen und in unterschiedlichen Formaten serialisiert werden. Wenn die Quelle ein DSL- oder UML-Modell ist, ist der Datenparameter die Serialisierung von <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Zieh-, Kopier- und Toolboxvorgänge verwenden ElementGroupPrototypes zur Darstellung von Fragmenten von Modellen.
@@ -557,7 +556,6 @@ namespace Company.MyDsl
 
 - [Anpassen der Elementerstellung und -verschiebung](../modeling/customizing-element-creation-and-movement.md)
 - [Vorgehensweise: Hinzufügen eines Drag & Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md)
-- [Anpassen des Löschverhaltens](../modeling/customizing-deletion-behavior.md)
 - [Beispiel: VMSDK Circuit Diagrams sample](http://go.microsoft.com/fwlink/?LinkId=213879)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

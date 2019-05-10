@@ -10,15 +10,15 @@ helpviewer_keywords:
 - performance tools, setting profiling permissions
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bfe3773032ff29fce831f675921289ed7a825ea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e40438b6b14414371adaba6cb7eafc6377ae1187
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828107"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62539184"
 ---
 # <a name="how-to-set-permissions"></a>Vorgehensweise: Festlegen von Berechtigungen
 
@@ -121,6 +121,6 @@ Mitglieder der Benutzergruppe können die Profilerstellungstools ausführen, wen
 
 ## <a name="see-also"></a>Siehe auch
 
-[Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)  
-[VSPerfCmd](../profiling/vsperfcmd.md)  
-[Profilerstellung und Sicherheit in Windows Vista](../profiling/profiling-and-windows-vista-security.md)
+[Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)
+[VSPerfCmd](../profiling/vsperfcmd.md)
+[Profilerstellung und Sicherheit in Windows Vista](../profiling/profiling-and-windows-vista-security.md)

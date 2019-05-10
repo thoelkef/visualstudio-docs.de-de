@@ -1,8 +1,7 @@
 ---
-title: IActiveScriptSiteWindow | Microsoft Docs
+title: IActiveScriptSiteWindow | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,22 +13,22 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3043a3c36b2f1ebdf439f22b1de19dd559e50cfa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3691a874121c00dcccc69958eb5746a2c1d78122
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725130"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992025"
 ---
 # <a name="iactivescriptsitewindow"></a>IActiveScriptSiteWindow
-Diese Schnittstelle wird implementiert, indem Hosts, die eine Benutzeroberfläche für das gleiche Objekt als unterstützen [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) . Hosts, die eine Benutzeroberfläche, z. B. Server, nicht unterstützen würden nicht implementieren die `IActiveScriptSiteWindow` Schnittstelle. Das Skriptmodul greift auf diese Schnittstelle durch den Aufruf `QueryInterface` aus `IActiveScriptSite`.  
+Diese Schnittstelle wird implementiert von Hosts, die eine Benutzeroberfläche auf dasselbe Objekt wie unterstützen [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) . Hosts, die nicht über eine Benutzeroberfläche, z. B. Server, unterstützen würde nicht implementiert. die `IActiveScriptSiteWindow` Schnittstelle. Die Skript-Engine greift auf diese Schnittstelle durch den Aufruf `QueryInterface` aus `IActiveScriptSite`.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IActiveScriptSiteWindow::GetWindow](../../winscript/reference/iactivescriptsitewindow-getwindow.md)|Ruft das Fensterhandle, das als Besitzer eines Popupfensters bearbeiten können, die das Skriptmodul angezeigt werden muss.|  
-|[IActiveScriptSiteWindow::EnableModeless](../../winscript/reference/iactivescriptsitewindow-enablemodeless.md)|Bewirkt, dass den Host zum Aktivieren oder deaktivieren das Hauptfenster als auch für alle nicht modale Dialogfelder.|  
+|[IActiveScriptSiteWindow::GetWindow](../../winscript/reference/iactivescriptsitewindow-getwindow.md)|Ruft das Fensterhandle, das als Besitzer eines Popupfensters fungieren kann, die die Skript-Engine angezeigt werden muss.|  
+|[IActiveScriptSiteWindow::EnableModeless](../../winscript/reference/iactivescriptsitewindow-enablemodeless.md)|Bewirkt, dass den Host zum Aktivieren oder deaktivieren das Hauptfenster als auch für alle Dialogfelder ohne Modus.|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Active Script-Schnittstellen](../../winscript/reference/active-script-interfaces.md)

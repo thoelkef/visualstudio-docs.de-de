@@ -1,28 +1,30 @@
 ---
 title: IDebugComPlusSymbolProvider::IsFunctionStale | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::IsFunctionStale
 ms.assetid: dcffc090-4ed8-47b2-ba51-bce1a6b6428d
-author: gregvanl
+caps.latest.revision: 10
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 6ad07b5b43635d0797a674e5349492b52a080144
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d17b6a6fc84a7e0d2787e93bb12345d8243bfd41
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62922377"
 ---
 # <a name="idebugcomplussymbolproviderisfunctionstale"></a>IDebugComPlusSymbolProvider::IsFunctionStale
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Bestimmt, ob die Funktion an der angegebenen Debug-Adresse als veraltet angesehen wird.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT IsFunctionStale(  
    IDebugAddress* pAddress  
 );  
@@ -44,7 +46,7 @@ int IsFunctionStale(
 ## <a name="example"></a>Beispiel  
  Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) Schnittstelle.  
   
-```cpp  
+```cpp#  
 HRESULT CDebugSymbolProvider::IsFunctionStale(  
     IDebugAddress* pAddress  
 )  

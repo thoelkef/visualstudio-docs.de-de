@@ -1,14 +1,9 @@
 ---
 title: Threadansicht (Parallele Leistung) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.threadblocking
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 2e441103-a266-407b-88c3-fb58716257a3
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 39457684ba19ecbb0ad2ef82caa349e67cdaf8a7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0d685dc39f5e07840a5995f7fe67988840c3f50a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756339"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441654"
 ---
 # <a name="threads-view-parallel-performance"></a>Threadansicht (Parallele Leistung)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,19 +42,19 @@ Die Threadansicht ist die detaillierteste und funktionsreichste Ansicht in der P
 ## <a name="usage"></a>Verwendung  
  Sie können die Threadansicht unter anderem folgendermaßen verwenden:  
   
--   Gründe identifizieren, warum die Benutzeroberfläche (UI) einer Anwendung in bestimmten Ausführungsphasen nicht reagiert.  
+- Gründe identifizieren, warum die Benutzeroberfläche (UI) einer Anwendung in bestimmten Ausführungsphasen nicht reagiert.  
   
--   Die Zeitdauer identifizieren, die für das Blockieren von Synchronisierung, E/A, Seitenfehlern und anderen Ereignissen aufgewendet wird.  
+- Die Zeitdauer identifizieren, die für das Blockieren von Synchronisierung, E/A, Seitenfehlern und anderen Ereignissen aufgewendet wird.  
   
--   Den Grad der Störung durch andere Prozesse identifizieren, die auf dem System ausgeführt werden.  
+- Den Grad der Störung durch andere Prozesse identifizieren, die auf dem System ausgeführt werden.  
   
--   Lastenausgleichsprobleme bei paralleler Ausführung identifizieren.  
+- Lastenausgleichsprobleme bei paralleler Ausführung identifizieren.  
   
--   Gründe für suboptimale oder nicht vorhandene Skalierbarkeit identifizieren, z.B. warum sich die Leistung einer parallelen Anwendung nicht verbessert, wenn mehr logische Kerne verfügbar sind.  
+- Gründe für suboptimale oder nicht vorhandene Skalierbarkeit identifizieren, z.B. warum sich die Leistung einer parallelen Anwendung nicht verbessert, wenn mehr logische Kerne verfügbar sind.  
   
--   Den Parallelitätsgrad in der Anwendung verstehen, um die Parallelisierung zu unterstützen.  
+- Den Parallelitätsgrad in der Anwendung verstehen, um die Parallelisierung zu unterstützen.  
   
--   Abhängigkeiten zwischen Arbeitsthreads und kritischen Pfaden der Ausführung verstehen.  
+- Abhängigkeiten zwischen Arbeitsthreads und kritischen Pfaden der Ausführung verstehen.  
   
 ## <a name="examining-specific-time-intervals-and-threads"></a>Untersuchen von bestimmten Zeitintervallen und Threads  
  In der Threadansicht wird eine Zeitachse angezeigt. Sie können in der Zeitachse vergrößern und schwenken, um bestimmte Intervalle und Threads der Anwendung zu überprüfen. Die x-Achse gibt die Zeit an und auf der y-Achse gibt es verschiedene Kanäle:  
@@ -102,7 +97,7 @@ Die Threadansicht ist die detaillierteste und funktionsreichste Ansicht in der P
  Wenn Sie einen Punkt in einem Ausführungssegment auswählen, durchsucht die Parallelitätsschnellansicht die relevante Aufrufliste nach diesem Zeitpunkt, zeigt dann darüber ein schwarzes Caretzeichen an sowie die Aufrufliste selbst auf der Registerkarte **Aktueller Stapel**. Sie können auf dem Ausführungssegment mehrere Punkte auswählen.  
   
 > [!NOTE]
->  Die Parallelitätsschnellansicht ist möglicherweise nicht in der Lage, eine Auswahl auf einem Ausführungssegment aufzulösen. In der Regel tritt dies auf, wenn die Dauer des Segments weniger als eine Millisekunde beträgt.  
+> Die Parallelitätsschnellansicht ist möglicherweise nicht in der Lage, eine Auswahl auf einem Ausführungssegment aufzulösen. In der Regel tritt dies auf, wenn die Dauer des Segments weniger als eine Millisekunde beträgt.  
   
  Um ein Ausführungsprofil für alle aktivierten (nicht ausgeblendeten) Threads im aktuell ausgewählten Zeitraum zu erhalten, wählen Sie in der aktiven Legende die Schaltfläche **Ausführung** aus.  
   
@@ -156,6 +151,3 @@ Die Threadansicht ist die detaillierteste und funktionsreichste Ansicht in der P
   
 ## <a name="see-also"></a>Siehe auch  
  [Nebenläufigkeitsschnellansicht](../profiling/concurrency-visualizer.md)
-
-
-

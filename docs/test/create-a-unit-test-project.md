@@ -1,48 +1,59 @@
 ---
 title: Ein Komponententestprojekt erstellen
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+ms.date: 01/29/2019
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8b3b3f8af1dbc2cfd745a56238694cd19cc1f16d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ca83689628f02a8c7a2e0166b390d5b277086c1d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965530"
 ---
 # <a name="create-a-unit-test-project"></a>Ein Komponententestprojekt erstellen
 
 Komponententests spiegeln häufig die Struktur des getesteten Codes. Angenommen, für jedes Codeprojekt im Produkt wird ein Komponententestprojekt erstellt. Das Testprojekt kann sich in der gleichen Projektmappe wie der Produktionscode oder in einer separaten Projektmappe befinden. In einer Projektmappe können sich mehrere Komponententestprojekte befinden.
 
 > [!NOTE]
-> Der Speicherort von Komponententests für nativen Code und die Testprojektstruktur können sich von in diesem Thema beschriebenen Struktur unterscheiden. Weitere Informationen finden unter [Erstellen von Komponententests für C/C++](writing-unit-tests-for-c-cpp.md).
+> Der Speicherort von Komponententests für nativen Code und die Testprojektstruktur können sich von in diesem Artikel beschriebenen Struktur unterscheiden. Weitere Informationen finden unter [Erstellen von Komponententests für C/C++](writing-unit-tests-for-c-cpp.md).
 
 ## <a name="to-create-a-unit-test-project"></a>So erstellen Sie ein Komponententestprojekt
 
-1.  Klicken Sie im Menü **Datei** auf **Neu** und dann auf **Projekt** (Tastatur: **STRG**+**UMSCHALTTASTE**+**N**).
+1. Wählen Sie im Menü **Datei** die Befehlsfolge **Neu** > **Projekt...** aus, oder drücken Sie **STRG**+**UMSCHALT**+**N**.
 
-2.  Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Installiert**, wählen die Sprache aus, die Sie für das Testprojekt verwenden möchten, und wählen Sie anschließend **Test** aus.
+::: moniker range="vs-2017"
 
-3.  Wenn Sie ein Microsoft-Komponententest-Framework verwenden möchten, wählen Sie aus der Liste der Projektvorlagen **Komponententestprojekt** aus. Wählen Sie andernfalls die Projektvorlage des Komponententest-Frameworks aus, das Sie verwenden möchten. Nennen Sie das Projekt zum Testen des Projekts „Accounts“ in diesem Beispiel **AccountsTests**.
+2. Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Installiert**, wählen die Sprache aus, die Sie für das Testprojekt verwenden möchten, und wählen Sie anschließend **Test** aus.
 
-4.  Fügen Sie Ihrem Komponententestprojekt einen Verweis auf den zu testenden Code hinzu.  So erstellen Sie den Verweis auf ein Codeprojekt in der gleichen Projektmappe:
+3. Wenn Sie ein Microsoft-Komponententest-Framework verwenden möchten, wählen Sie aus der Liste der Projektvorlagen **Komponententestprojekt** aus. Wählen Sie andernfalls die Projektvorlage des Komponententest-Frameworks aus, das Sie verwenden möchten. Geben Sie dem Projekt einen Namen, und klicken Sie dann auf **OK**.
 
-    1.  Wählen Sie das Projekt im **Projektmappen-Explorer** aus.
+::: moniker-end
 
-    2.  Wählen Sie im Menü **Projekt** den Eintrag **Verweis hinzufügen**aus.
+::: moniker range=">=vs-2019"
 
-    3.  Öffnen Sie im Dialogfeld **Verweis-Manager** den Knoten **Projektmappe**, und wählen Sie **Projekte** aus. Wählen Sie den Namen des Codeprojekts aus, und schließen Sie das Dialogfeld.
+2. Geben Sie auf der Seite **Neues Projekt erstellen** **Komponententest** in das Suchfeld ein. Wählen Sie die Projektvorlage **Komponententestprojekt (.NET Framework)** aus, und klicken Sie dann auf **Weiter**.
 
-5.  Wenn sich der zu testende Code an einem anderen Speicherort befindet, finden Sie unter [Verwalten von Verweisen in einem Projekt](../ide/managing-references-in-a-project.md) weitere Informationen zum Hinzufügen von Verweisen.
+3. Geben Sie auf der Seite **Neues Projekt konfigurieren** einen Namen für Ihr Projekt ein, und klicken Sie dann auf **Erstellen**.
+
+::: moniker-end
+
+4. Fügen Sie Ihrem Komponententestprojekt einen Verweis auf den zu testenden Code hinzu. So fügen Sie einen Verweis auf ein Codeprojekt in derselben Projektmappe ein:
+
+   1. Wählen Sie das Testprojekt im **Projektmappen-Explorer** aus.
+
+   2. Wählen Sie im Menü **Projekt** den Eintrag **Verweis hinzufügen**aus.
+
+   3. Wählen Sie im **Verweis-Manager** den Knoten **Projektmappe** unter **Projekte** aus. Wählen Sie das zu testende Codeprojekt aus, und klicken Sie dann auf **OK**.
+
+   Wenn sich der zu testende Code an einem anderen Speicherort befindet, finden Sie unter [Verwalten von Verweisen in einem Projekt](../ide/managing-references-in-a-project.md) weitere Informationen zum Hinzufügen eines Verweises.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
- Siehe eines der folgenden Themen:
+Siehe eines der folgenden Themen:
 
 **Schreiben von Komponententests**
 

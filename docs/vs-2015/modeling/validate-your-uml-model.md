@@ -1,12 +1,9 @@
 ---
 title: Überprüfen des UML-Modells | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML, constraints
 - UML, validation
@@ -14,13 +11,13 @@ ms.assetid: deed5092-c11d-4431-a801-1e866a103075
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fea958a20e5eee78f79f324ad19ef646f7920951
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f795928677f4a232c3ae3cec0d3bab9d9266cb35
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437463"
 ---
 # <a name="validate-your-uml-model"></a>Überprüfen des UML-Modells
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +32,7 @@ Einige der UML-Modelle, die Sie in Visual Studio zeichnen können, werden in Ihr
 - **Validierungsbefehl.** Klicken Sie zum Aufrufen der Validierung zu einem beliebigen Zeitpunkt auf **UML-Modell überprüfen** auf die **Architektur** Menü.  
   
   > [!NOTE]
-  >  Der Befehl wird nur angezeigt, wenn Validierungseinschränkungen installiert sind.  
+  > Der Befehl wird nur angezeigt, wenn Validierungseinschränkungen installiert sind.  
   
 - **Beim Speichern eines Modells.** Validierungseinschränkungen können beim Speichern des Modells angewendet werden. Mithilfe dieser Einschränkungen soll sichergestellt werden, dass Sie kein Modell speichern, das gemäß der Interpretation durch das Projekt ungültig ist.  
   
@@ -52,29 +49,26 @@ Einige der UML-Modelle, die Sie in Visual Studio zeichnen können, werden in Ihr
   
 #### <a name="to-install-a-visual-studio-extension"></a>So installieren Sie eine Visual Studio-Erweiterung  
   
-1.  Doppelklicken Sie auf die **VSIX** -Datei im Windows-Explorer (oder Datei-Explorer).  
+1. Doppelklicken Sie auf die **VSIX** -Datei im Windows-Explorer (oder Datei-Explorer).  
   
-2.  Starten Sie eine beliebige bereits ausgeführte Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] neu.  
+2. Starten Sie eine beliebige bereits ausgeführte Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] neu.  
   
 ## <a name="disabling-and-uninstalling-validation-constraints"></a>Deaktivieren und Deinstallieren von Validierungseinschränkungen  
  Wenn Sie mit einem Modell arbeiten möchten, für das die Einschränkungen nicht gelten, können Sie die Erweiterung mit den Einschränkungen vorübergehend deaktivieren. Dank der Möglichkeit zum Aktivieren und Deaktivieren verschiedener Erweiterungen können Sie zu unterschiedlichen Zeiten an unterschiedlichen Arten von Modellen arbeiten.  
   
 #### <a name="to-disable-or-uninstall-a-visual-studio-extension"></a>So deaktivieren oder deinstallieren Sie eine Visual Studio-Erweiterung  
   
-1.  Auf der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Tools** Menü klicken Sie auf **Erweiterungen und Updates**.  
+1. Auf der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Tools** Menü klicken Sie auf **Erweiterungen und Updates**.  
   
-2.  Klicken Sie neben der Erweiterung auf **deaktivieren** die Erweiterung vorübergehend zu deaktivieren. Sie können später erneut aktivieren durch Rückgabe der **Erweiterungen und Updates** Fenster.  
+2. Klicken Sie neben der Erweiterung auf **deaktivieren** die Erweiterung vorübergehend zu deaktivieren. Sie können später erneut aktivieren durch Rückgabe der **Erweiterungen und Updates** Fenster.  
   
      \- oder –  
   
      Klicken Sie auf **Deinstallieren** auf die Erweiterung zu entfernen.  
   
-3.  Starten Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]neu.  
+3. Starten Sie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]neu.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Definieren von validierungseinschränkungen für UML-Modelle](../modeling/define-validation-constraints-for-uml-models.md)   
  [Erstellen von Modellen für Ihre app](../modeling/create-models-for-your-app.md)   
  [Verwenden von Modellen im Entwicklungsprozess](../modeling/use-models-in-your-development-process.md)
-
-
-

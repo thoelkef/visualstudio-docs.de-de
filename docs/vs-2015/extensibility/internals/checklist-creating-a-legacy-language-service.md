@@ -1,27 +1,22 @@
 ---
 title: 'Prüfliste: Erstellen eines Legacysprachdiensts | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services
 - language services, native code
 ms.assetid: 8b73b341-a33a-4ab5-9390-178c9e563d2d
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 330270b34d55e88c883b9d8a6270b4abad02d9c1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3b79afe64aafac473d4fe5d22464998d0c2f0537
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782985"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437610"
 ---
 # <a name="checklist-creating-a-legacy-language-service"></a>Prüfliste: Erstellen eines Legacysprachdiensts
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,13 +25,13 @@ Die folgende Checkliste werden zusammengefasst, die grundlegenden Schritte müss
   
 ## <a name="steps-for-creating-a-language-service"></a>Schritte zum Erstellen eines Sprachdiensts  
   
-1.  Implementieren Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>-Schnittstelle.  
+1. Implementieren Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>-Schnittstelle.  
   
-    -   In einem VSPackage, implementieren die <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> Schnittstelle, um den Sprachdienst bereitzustellen.  
+    - In einem VSPackage, implementieren die <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> Schnittstelle, um den Sprachdienst bereitzustellen.  
   
-    -   Verfügbarmachen von Ihren Sprachdienst für die integrierte Entwicklungsumgebung (IDE) in Ihrer <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> Implementierung.  
+    - Verfügbarmachen von Ihren Sprachdienst für die integrierte Entwicklungsumgebung (IDE) in Ihrer <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> Implementierung.  
   
-2.  Implementieren der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> -Schnittstelle in der Hauptsprache Dienstklasse.  
+2. Implementieren der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> -Schnittstelle in der Hauptsprache Dienstklasse.  
   
      Die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> Schnittstelle ist der Ausgangspunkt der Interaktion zwischen der Kern-Editor und den Sprachdienst.  
   
@@ -68,7 +63,7 @@ Die folgende Checkliste werden zusammengefasst, die grundlegenden Schritte müss
     Befehle, die verarbeitet werden müssen, hängen von der Dienste, die bereitgestellt werden. Weitere Informationen finden Sie unter [wichtige Befehle für Sprachdienstfilter](../../extensibility/internals/important-commands-for-language-service-filters.md).  
   
   > [!NOTE]
-  >  Die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> -Schnittstelle muss implementiert werden, auf das gleiche Objekt wie die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle.  
+  > Die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> -Schnittstelle muss implementiert werden, auf das gleiche Objekt wie die <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Schnittstelle.  
   
 - Anweisungsvervollständigung  
   
@@ -116,7 +111,7 @@ Die folgende Checkliste werden zusammengefasst, die grundlegenden Schritte müss
   
 - Gliedern  
   
-   Es gibt mehrere Optionen für die Unterstützung der Gliederung. Sie können z. B. unterstützen die **reduzieren auf Definitionen** Befehl, editorgesteuert Gliederungsbereiche bereitzustellen oder Client gesteuerter Regionen unterstützen. Weitere Informationen finden Sie unter [Vorgehensweise: Bereitstellen erweitert Gliederung-Unterstützung in einem Legacysprachdienst](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md).  
+   Es gibt mehrere Optionen für die Unterstützung der Gliederung. Sie können z. B. unterstützen die **reduzieren auf Definitionen** Befehl, editorgesteuert Gliederungsbereiche bereitzustellen oder Client gesteuerter Regionen unterstützen. Weitere Informationen finden Sie unter [Vorgehensweise: Geben Sie die Unterstützung für erweiterte Gliederungen in einem Legacysprachdienst](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md).  
   
 - Language-Service-Registrierung  
   
@@ -126,11 +121,10 @@ Die folgende Checkliste werden zusammengefasst, die grundlegenden Schritte müss
   
    Bereitstellen von Kontext für den Editor in einem der folgenden Methoden:  
   
-  -   Bereitstellen von Kontext für Textmarker durch die Implementierung der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> Schnittstelle.  
+  - Bereitstellen von Kontext für Textmarker durch die Implementierung der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> Schnittstelle.  
   
   Geben Sie alle Benutzerkontext durch die Implementierung der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> Schnittstelle.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Entwickeln eines Legacysprachdiensts](../../extensibility/internals/developing-a-legacy-language-service.md)   
  [Schreiben einer CLR-Ausdrucksauswertung](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
-

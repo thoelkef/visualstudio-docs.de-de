@@ -1,37 +1,32 @@
 ---
 title: L2DBForm.xaml.cs – Quellcode | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 5a40dad3-6763-4576-b3ad-874df3f2c8d9
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6ac13d8998972ddf60576537f8b0af55d832d820
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ba6262ef3174428dc14c5f747c4346b5f04e35ee
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817534"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428000"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>L2DBForm.xaml.cs Source Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dieses Thema enthält den Inhalt und die Beschreibung des C#-Quellcodes in der Datei <legacyBold>L2DBForm.xaml.cs</legacyBold>. Die in dieser Datei enthaltene <legacyBold>L2XDBForm</legacyBold>-Teilklasse kann in die folgenden drei logischen Abschnitte unterteilt werden: Datenmember und die Ereignishandler `OnRemove` und `OnAddBook` für das Klicken auf Schaltflächen.  
+Dieses Thema enthält den Inhalt und die Beschreibung des C#-Quellcodes in der Datei &lt;legacyBold&gt;L2DBForm.xaml.cs&lt;/legacyBold&gt;. Die in dieser Datei enthaltene L2XDBForm`OnRemove`-Teilklasse kann in die folgenden drei logischen Abschnitte unterteilt werden: Datenmember und die Ereignishandler `OnAddBook` und  für das Klicken auf Schaltflächen.  
   
 ## <a name="data-members"></a>Datenmember  
- Für die Zuordnung dieser Klasse zu den in <legacyBold>L2DBForm.xaml</legacyBold> verwendeten Fensterressourcen werden zwei private Datenmember verwendet.  
+ Für die Zuordnung dieser Klasse zu den in L2DBForm.xaml verwendeten Fensterressourcen werden zwei private Datenmember verwendet.  
   
--   Die `myBooks`-Namespacevariable wird mit `"http://www.mybooks.com"` initialisiert.  
+- Die `myBooks`-Namespacevariable wird mit `"http://www.mybooks.com"` initialisiert.  
   
--   Der `bookList`-Member wird im Konstruktor mit der folgenden Zeile in die CDATA-Zeichenfolge in <legacyBold>L2DBForm.xaml</legacyBold> initialisiert:  
+- Der `bookList`-Member wird im Konstruktor mit der folgenden Zeile in die CDATA-Zeichenfolge in L2DBForm.xaml initialisiert:  
   
     ```  
     bookList = (XElement)((ObjectDataProvider)Resources["LoadedBooks"]).Data;  
@@ -40,11 +35,11 @@ Dieses Thema enthält den Inhalt und die Beschreibung des C#-Quellcodes in der D
 ## <a name="onaddbook-event-handler"></a>"OnAddBook"-Ereignishandler  
  Diese Methode enthält die folgenden drei Anweisungen:  
   
--   Die erste Bedingungsanweisung wird zur Eingabevalidierung verwendet.  
+- Die erste Bedingungsanweisung wird zur Eingabevalidierung verwendet.  
   
--   Die zweite Anweisung erstellt aus den Zeichenfolgenwerten, die der Benutzer im Benutzeroberflächenabschnitt **Add New Book** eingegeben hat, ein neues <xref:System.Xml.Linq.XElement>.  
+- Die zweite Anweisung erstellt aus den Zeichenfolgenwerten, die der Benutzer im Benutzeroberflächenabschnitt **Add New Book** eingegeben hat, ein neues <xref:System.Xml.Linq.XElement>.  
   
--   Die letzte Anweisung fügt dem Datenanbieter in <legacyBold>L2DBForm.xaml</legacyBold> dieses neue Buchelement hinzu. Daraufhin aktualisiert die dynamische Datenbindung automatisch die Benutzeroberfläche mit diesem neuen Element. Zusätzlicher, vom Benutzer bereitgestellter Code ist nicht erforderlich.  
+- Die letzte Anweisung fügt dem Datenanbieter in L2DBForm.xaml dieses neue Buchelement hinzu. Daraufhin aktualisiert die dynamische Datenbindung automatisch die Benutzeroberfläche mit diesem neuen Element. Zusätzlicher, vom Benutzer bereitgestellter Code ist nicht erforderlich.  
   
 ## <a name="onremove-event-handler"></a>"OnRemove"-Ereignishandler  
  Der `OnRemove`-Handler ist aus zwei Gründen komplizierter als der `OnAddBook`-Handler. Erstens: Das unformatierte XML enthält beibehaltenen Leerraum, sodass zusammen mit dem Bucheintrag auch  passende neue Zeilen entfernt werden müssen. Zweitens: Im Sinne der Bequemlichkeit wird die Auswahl, die auf dem gelöschten Element lag, auf das vorherige Element in der Liste zurückgesetzt.  
@@ -143,8 +138,5 @@ namespace LinqToXmlDataBinding {
  Informationen zur zugeordneten XAML-Quelle für diese Handler finden Sie unter [L2DBForm.xaml.cs – Quellcode](../designers/l2dbform-xaml-source-code.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Exemplarische Vorgehensweise: LinqToXmlDataBinding-Beispiel](../designers/walkthrough-linqtoxmldatabinding-example.md)   
+ [Exemplarische Vorgehensweise: LinqToXmlDataBinding-Beispiels](../designers/walkthrough-linqtoxmldatabinding-example.md)   
  [L2DBForm.xaml-Quellcode](../designers/l2dbform-xaml-source-code.md)
-
-
-

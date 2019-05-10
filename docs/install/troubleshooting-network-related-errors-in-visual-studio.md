@@ -1,8 +1,7 @@
 ---
 title: Problembehandlung von Netzwerk- oder Proxyfehlern
 description: Finden Sie Lösungen für netzwerk- oder proxybezogene Fehler, die beim Installieren oder Verwenden von Visual Studio hinter einer Firewall oder einem Proxyserver auftreten können.
-ms.date: 02/12/2018
-ms.prod: visual-studio-dev15
+ms.date: 03/30/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -13,15 +12,17 @@ helpviewer_keywords:
 ms.assetid: ''
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4693a50246493a97e74ba75dc7f516ce72a215ad
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: e98f06a2dabd6627fbc70b1d072d0e34924c6691
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914941"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968131"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Beheben von Netzwerkfehlern beim Installieren oder Verwenden von Visual Studio
 
@@ -49,9 +50,11 @@ Dieser Fehler tritt normalerweise auf, wenn Benutzer über einen Proxyserver mit
 
 - Sie können die Adresse „http:&#47;&#47;go.microsoft.com“ andernfalls aus der Whitelist entfernen, damit das Dialogfeld „Proxyauthentifizierung“ beim Neustart von Visual Studio sowohl für die Adresse „http:&#47;&#47;go.microsoft.com“ als auch die Serverendpunkte angezeigt wird.
 
-    ODER
+  -ODER-
 
 - Wenn Sie die standardmäßigen Anmeldeinformationen mit Ihrem Proxy verwenden möchten, können Sie Folgendes tun:
+
+::: moniker range="vs-2017"
 
   1. Suchen Sie **devenv.exe.config** (die Konfigurationsdatei „devenv.exe“) in **%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE** oder **%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE**.
 
@@ -59,15 +62,35 @@ Dieser Fehler tritt normalerweise auf, wenn Benutzer über einen Proxyserver mit
 
       ```xml
       <defaultProxy enabled="true" useDefaultCredentials="true">
-          <proxy bypassonlocal="True" proxyaddress=" HYPERLINK "http://<yourproxy:port#>" http://<yourproxy:port#>"/>
+          <proxy bypassonlocal="True" proxyaddress="http://<yourproxy:port#>"/>
       </defaultProxy>
       ```
 
       Sie müssen die korrekte Proxy-Adresse für Ihr Netzwerk in `proxyaddress="<http://<yourproxy:port#>` einfügen.
 
-     ODER
+     > [!NOTE]
+     > Weitere Informationen finden Sie auf den Seiten zu den Elementen [&lt;defaultProxy&gt; (Netzwerkeinstellungen)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) und [&lt;proxy&gt; (Netzwerkeinstellungen)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings).
 
-- Folgen Sie außerdem den Anweisungen im Blog [How to connect to TFS through an authentication Web Proxy](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/) (Verbindungsherstellung mit TFS über einen Webproxy für die Authentifizierung), um Code hinzuzufügen, mit dem Sie den Proxy verwenden können.
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+  1. Suchen Sie **devenv.exe.config** (die Konfigurationsdatei „devenv.exe“) in **%ProgramFiles%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE** oder **%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE**.
+
+  2. Suchen Sie in der Konfigurationsdatei die `<system.net>`-Sperre und fügen Sie dann diesen Code hinzu:
+
+      ```xml
+      <defaultProxy enabled="true" useDefaultCredentials="true">
+          <proxy bypassonlocal="True" proxyaddress="http://<yourproxy:port#>"/>
+      </defaultProxy>
+      ```
+
+      Sie müssen die korrekte Proxy-Adresse für Ihr Netzwerk in `proxyaddress="<http://<yourproxy:port#>` einfügen.
+
+     > [!NOTE]
+     > Weitere Informationen finden Sie auf den Seiten zu den Elementen [&lt;defaultProxy&gt; (Netzwerkeinstellungen)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) und [&lt;proxy&gt; (Netzwerkeinstellungen)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings).
+
+::: moniker-end
 
 ## <a name="error-the-underlying-connection-was-closed"></a>Fehler: „The underlying connection was closed.“ (Die zugrunde liegende Verbindung wurde geschlossen)
 
@@ -116,4 +139,4 @@ Lassen Sie Verbindungen mit den folgenden URLs zu:
 
 * [Installieren und Verwenden von Visual Studio hinter einer Firewall oder einem Proxyserver](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Administratorhandbuch für Visual Studio](visual-studio-administrator-guide.md)
-* [Installieren von Visual Studio 2017](install-visual-studio.md)
+* [Installieren von Visual Studio](install-visual-studio.md)

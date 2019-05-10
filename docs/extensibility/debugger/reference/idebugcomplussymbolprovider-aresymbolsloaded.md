@@ -1,29 +1,31 @@
 ---
 title: IDebugComPlusSymbolProvider::AreSymbolsLoaded | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - AreSymbolsLoaded
 - IDebugComPlusSymbolProvider::AreSymbolsLoaded
 ms.assetid: bbf8707d-f89c-4177-b019-d519f1ec6f4a
-author: gregvanl
+caps.latest.revision: 12
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: b81fb4799306b596719ef6b9d9b167e61dc75710
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a53b1a1ad377543107154e355a47b7100dcb2f16
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923178"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62876791"
 ---
 # <a name="idebugcomplussymbolprovideraresymbolsloaded"></a>IDebugComPlusSymbolProvider::AreSymbolsLoaded
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Bestimmt, ob die Debugsymbole für das angegebene Modul mit dem angegebenen Bezeichner der Anwendungsdomäne geladen wurden.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT AreSymbolsLoaded (  
    ULONG32 ulAppDomainID,  
    GUID    guidModule  
@@ -50,7 +52,7 @@ int AreSymbolsLoaded (
 ## <a name="example"></a>Beispiel  
  Das folgende Beispiel zeigt, wie Sie die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) Schnittstelle.  
   
-```cpp  
+```cpp#  
 HRESULT CDebugSymbolProvider::AreSymbolsLoaded(  
     ULONG32 ulAppDomainID,  
     GUID guidModule  

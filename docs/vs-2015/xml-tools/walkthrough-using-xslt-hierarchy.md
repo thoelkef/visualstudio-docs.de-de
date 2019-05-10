@@ -1,30 +1,24 @@
 ---
-title: 'Exemplarische Vorgehensweise: Verwenden von XSLT-Hierarchie | Microsoft-Dokumentation'
-ms.custom: ''
+title: 'Exemplarische Vorgehensweise: XSLT-Hierarchie mit | Microsoft-Dokumentation'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 5e60c8ec-cd05-4597-b856-55038218acf4
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5b94a958a915ad7858575e093cae525df17cc23e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ed644c1dda4ac3674ef60d0027c37532fc6d0f92
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280957"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075623"
 ---
 # <a name="walkthrough-using-xslt-hierarchy"></a>Exemplarische Vorgehensweise: Verwenden der XSLT-Hierarchie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Das XSLT-Hierarchietool vereinfacht viele XML-Entwicklungsaufgaben. In einem XSLT-Stylesheet werden oft `includes`- und `imports`-Anweisungen verwendet. Die Kompilierung beginnt mit dem Hauptstylesheet. Wenn in Folge der Kompilierung eines XSLT-Stylesheets ein Fehler angezeigt wird, kann dieser jedoch aus einer anderen Quelle als dem Hauptstylesheet stammen. Zum Beheben des Fehlers oder Bearbeiten des Stylesheets müssen Sie möglicherweise auf eingeschlossene oder importierte Stylesheets zugreifen. Beim schrittweisen Ausführen des Stylesheets im Debugger werden ggf. eingeschlossene und importierte Stylesheets geöffnet, und Sie können einen Haltepunkt in den eingeschlossenen Stylesheets hinzufügen.  
   
  Ein anderes Szenario, in dem das XSLT-Hierarchietool nützlich sein kann, ist das Einfügen von Haltepunkten in den integrierten Vorlagenregeln. Vorlagenregeln sind spezielle, für jeden Modus des Stylesheets generierte Vorlagen, die von `xsl:apply-templates` aufgerufen werden, wenn keine andere Vorlage dem Knoten entspricht. Der XSLT-Debugger generiert die Datei mit den Regeln im temporären Ordner und kompiliert sie zusammen mit dem Hauptstylesheet, um das Debugging in integrierten Vorlagenregeln zu implementieren. Ohne einen Einzelschritt von `xsl:apply-template` in den Code kann es schwierig sein, im Hauptstylesheet enthaltene Stylesheets zu finden oder das Stylesheet mit den integrierten Vorlagenregeln zu finden und zu öffnen.  
@@ -33,7 +27,7 @@ Das XSLT-Hierarchietool vereinfacht viele XML-Entwicklungsaufgaben. In einem XSL
   
 ### <a name="procedure-title"></a>Titel des Verfahrens  
   
-1.  Öffnen Sie in Visual Studio ein XML-Dokument. In diesem Beispiel wird das folgende Dokument `collection.xml` verwendet.  
+1. Öffnen Sie in Visual Studio ein XML-Dokument. In diesem Beispiel wird das folgende Dokument `collection.xml` verwendet.  
   
     ```  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -57,7 +51,7 @@ Das XSLT-Hierarchietool vereinfacht viele XML-Entwicklungsaufgaben. In einem XSL
     </COLLECTION>  
     ```  
   
-2.  Fügen Sie die folgende Datei `xslincludefile.xsl` hinzu:  
+2. Fügen Sie die folgende Datei `xslincludefile.xsl` hinzu:  
   
     ```  
     <?xml version='1.0'?>  
@@ -80,7 +74,7 @@ Das XSLT-Hierarchietool vereinfacht viele XML-Entwicklungsaufgaben. In einem XSL
     </xsl:stylesheet>  
     ```  
   
-3.  Fügen Sie die folgende Datei `xslinclude.xsl` hinzu:  
+3. Fügen Sie die folgende Datei `xslinclude.xsl` hinzu:  
   
     ```  
     <?xml version='1.0'?>  
@@ -114,14 +108,11 @@ Das XSLT-Hierarchietool vereinfacht viele XML-Entwicklungsaufgaben. In einem XSL
     </xsl:stylesheet>  
     ```  
   
-4.  Fügen Sie einen Haltepunkt bei der Anweisung hinzu: `<xsl:include href="xslincludefile.xsl" />`  
+4. Fügen Sie einen Haltepunkt bei der Anweisung hinzu: `<xsl:include href="xslincludefile.xsl" />`  
   
-5.  Beginnen Sie mit dem Debuggen.  
+5. Beginnen Sie mit dem Debuggen.  
   
-6.  Klicken Sie auf die Schaltfläche "Einzelschritt", wenn der Debugger bei der `<xsl:include href="xslincludefile.xsl" />`-Anweisung anhält. Das Debugging kann im referenzierten Stylesheet fortgesetzt werden. Die Hierarchie ist sichtbar, und im Designer wird der richtige Pfad angezeigt.  
+6. Klicken Sie auf die Schaltfläche "Einzelschritt", wenn der Debugger bei der `<xsl:include href="xslincludefile.xsl" />`-Anweisung anhält. Das Debugging kann im referenzierten Stylesheet fortgesetzt werden. Die Hierarchie ist sichtbar, und im Designer wird der richtige Pfad angezeigt.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Exemplarische Vorgehensweise: XSLT-Profiler](../xml-tools/walkthrough-xslt-profiler.md)
-
-
-

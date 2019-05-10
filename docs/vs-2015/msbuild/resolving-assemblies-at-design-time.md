@@ -1,32 +1,26 @@
 ---
 title: Auflösen von Assemblys zur Entwurfszeit | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild
 ms.assetid: 20dae076-733e-49c1-a2e9-b336757ae21d
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cc10169ac07efdeded41a9bb2990bdc206a17435
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 920e7222b3b425cbb13c962ff8c2e1e2fc551bd8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224652"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657102"
 ---
 # <a name="resolving-assemblies-at-design-time"></a>Auflösen von Assemblys zur Entwurfszeit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Wenn Sie über die Registerkarte ".NET" des Dialogfelds "Verweis hinzufügen" einen Verweis auf eine Assembly hinzufügen, zeigt der Verweis auf eine Zwischenverweisassembly, also eine Assembly, die alle Typ- und Signaturinformationen, aber nicht notwendigerweise Code enthält. Auf der Registerkarte ".NET" sind Verweisassemblys aufgeführt, die Laufzeitassemblys in .NET Framework entsprechen. Außerdem werden Verweisassemblys aufgeführt, die den Laufzeitassemblys in den von Drittanbietern verwendeten registrierten AssemblyFoldersEx-Ordnern entsprechen.  
   
 ## <a name="multi-targeting"></a>Festlegung von Zielversionen  
@@ -47,6 +41,3 @@ Wenn Sie über die Registerkarte ".NET" des Dialogfelds "Verweis hinzufügen" ei
   
 ## <a name="see-also"></a>Siehe auch  
  [MSBuild Advanced Concepts (Weiterführende MSBuild-Konzepte)](../msbuild/msbuild-advanced-concepts.md)
-
-
-

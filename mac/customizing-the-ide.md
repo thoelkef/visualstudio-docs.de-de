@@ -5,12 +5,13 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
-ms.openlocfilehash: 58ad6f41528fd11510d55c4062cdd9a6ae678989
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.custom: video
+ms.openlocfilehash: b8386e5d27c2ddf6abd93ac93266f58869cd6c79
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62984656"
 ---
 # <a name="customizing-the-ide"></a>Anpassen der IDE
 
@@ -126,6 +127,10 @@ Die Registerkarten des Editors können aus dem Dokumentbereich gezogen werden, u
 ![Zwei parallele Spalten mit zusätzlichen Registerkarten](media/customizing-the-ide-sbs2.png)
 
 Klicken Sie auf **View > Editor Columns > 1 column** (Ansicht > Editor-Spalten > 1 Spalte), um zu einem einzigen geöffneten Editor zurückzukehren.
+
+## <a name="related-video"></a>Zugehörige Videos
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Customize-the-Look-and-Feel/player]
 
 ## <a name="see-also"></a>Siehe auch
 

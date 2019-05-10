@@ -1,14 +1,9 @@
 ---
 title: ItemMetadata-Element (MSBuild) | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,18 +16,17 @@ ms.assetid: e3db5122-202d-43a9-b2f4-3e0ec4ed3d08
 caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a505d97e59070062de6cb9027258ef9a7127e588
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8e3d9f72abfd095288b50ab8de9b9bc3eae4cc51
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226446"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665375"
 ---
 # <a name="itemmetadata-element-msbuild"></a>ItemMetadata-Element (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Enthält einen benutzerdefinierten Elementmetadatenschlüssel, der den Elementmetadatenwert enthält. Ein Element kann über eine beliebige Anzahl von Metadaten-Schlüssel-Wert-Paaren verfügen.  
   
  \<Project>  
@@ -68,7 +62,7 @@ Enthält einen benutzerdefinierten Elementmetadatenschlüssel, der den Elementme
   
  Dieser Text legt den Elementmetadatenwert fest, der im Text- oder XML-Format vorhanden sein kann.  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
   
 ## <a name="example"></a>Beispiel  
  Das folgende Codebeispiel veranschaulicht das Hinzufügen von `Culture`-Metadaten mit dem Wert `fr` zum Element `CSFile`.  
@@ -84,6 +78,3 @@ Enthält einen benutzerdefinierten Elementmetadatenschlüssel, der den Elementme
 ## <a name="see-also"></a>Siehe auch  
  [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)   
  [Elemente](../msbuild/msbuild-items.md)
-
-
-

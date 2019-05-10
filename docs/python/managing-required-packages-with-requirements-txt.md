@@ -1,22 +1,21 @@
 ---
 title: Verwalten von Paketabhängigkeiten mit einer requirements.txt-Datei
 description: In einer Datei „requirements.txt“ werden die Abhängigkeiten eines Projekts beschrieben. Wenn Sie ein Projekt erhalten, das eine requirements.txt-Datei enthält, können Sie diese Abhängigkeiten ganz einfach in nur einem Schritt installieren.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
+ms.date: 03/18/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 209944ddfc86feb3fe5dbfcd7144f3f6e0d66451
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a1853df63354801ebf0413d3c8707135cb9bb800
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62535722"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>Verwalten von erforderlichen Paketen mit „requirements.txt“
 
@@ -26,11 +25,13 @@ Eigentlich kann jeder Dateiname zum Nachverfolgen von Anforderungen verwendet we
 
 - Wenn Sie ein Projekt geladen haben, das *requirements.txt* enthält, und alle in der Datei aufgeführten Pakete installieren möchten, erweitern Sie den Knoten **Python-Umgebungen** im **Projektmappen-Explorer**, klicken Sie dann mit der rechten Maustaste auf den Umgebungsknoten, und wählen Sie **Aus „requirements.txt“ installieren** aus:
 
-    ![Installieren aus „requirements.txt“](media/environments-requirements-txt-install.png)
+    ![Installieren aus „requirements.txt“](media/environments/environments-requirements-txt-install.png)
+
+- Wenn Sie die Abhängigkeiten in einer virtuellen Umgebung installieren möchten, erstellen und aktivieren Sie zuerst die Umgebung, und verwenden Sie den Befehl **Aus „Requirements.txt“ installieren**. Weitere Informationen zum Erstellen einer virtuellen Umgebung finden Sie unter [Verwenden von virtuellen Umgebungen](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
 - Wenn Sie alle erforderlichen Pakete bereits in einer Umgebung installiert haben, können Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf diese Umgebung klicken und **„requirements.txt“ generieren** auswählen, um die erforderliche Datei zu erstellen. Wenn die Datei bereits vorhanden ist, werden Sie zum Aktualisieren der Datei aufgefordert:
 
-    ![Optionen für die Aktualisierung von „requirements.txt“](media/environments-requirements-txt-replace.png)
+    ![Optionen für die Aktualisierung von „requirements.txt“](media/environments/environments-requirements-txt-replace.png)
 
   - **Gesamte Datei ersetzen** entfernt alle vorhandenen Elemente, Kommentare und Optionen.
   - **Vorhandene Einträge aktualisieren** erkennt Paketanforderungen und aktualisiert die Versionsbezeichner entsprechend der derzeit installierten Version.

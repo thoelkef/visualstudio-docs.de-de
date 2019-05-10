@@ -1,11 +1,8 @@
 ---
 title: Send-Aktivitätsdesigner | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.ServiceModel.Activities.Send.UI
@@ -13,13 +10,13 @@ ms.assetid: b514f2e4-767c-4b94-ac61-dd3a54d4b96d
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 77b277098958ac70e0afe3476310111bc0f54921
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 037c422befd9ba9103e6a80580bf814fb4b68333
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888119"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62937328"
 ---
 # <a name="send-activity-designer"></a>Send-Aktivitätsdesigner
 Die **senden** Aktivitäts-Designer dient zum Erstellen und Konfigurieren einer <xref:System.ServiceModel.Activities.Send> Aktivität.  
@@ -38,7 +35,6 @@ Die **senden** Aktivitäts-Designer dient zum Erstellen und Konfigurieren einer 
 
 ### <a name="the-send-activity-properties"></a>Die Eigenschaften der Send-Aktivität  
  In der folgenden Tabelle werden die <xref:System.ServiceModel.Activities.Send>-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden. Diese Eigenschaften können im Eigenschaftenraster oder in der [!INCLUDE[wfd2](../includes/wfd2-md.md)]-Oberfläche bearbeitet werden.  
-
 
 |                              Eigenschaftenname                              | Erforderlich |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Verwendung                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 |-------------------------------------------------------------------------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

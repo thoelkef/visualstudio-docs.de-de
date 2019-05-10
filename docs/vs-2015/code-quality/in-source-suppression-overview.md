@@ -1,14 +1,9 @@
 ---
 title: In der Übersicht über die Quelle Unterdrückung | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - source suppression, code analysis
 - code analysis, source suppression
@@ -17,24 +12,24 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 844681d079e5565aab9eceadb73f7d8a61cbb2c6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.openlocfilehash: 5bb3632e1ed7bf07e236322700ba8553b53a75cb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209039"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426600"
 ---
 # <a name="in-source-suppression-overview"></a>Übersicht über die Unterdrückung im Quellcode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Unterdrückung im Quellcode ist die Möglichkeit, unterdrücken oder ignorieren Verletzungen der Codeanalyse in verwaltetem Code durch Hinzufügen der **SuppressMessage** -Attribut auf die Codesegmente, die dazu führen, die Verstöße dass. Die **SuppressMessage** -Attribut ist ein conditional-Attribut die in der IL-Metadaten einer Assembly mit verwaltetem Code enthalten ist, nur dann, wenn das Symbol für die CODE_ANALYSIS-Kompilierung zum Zeitpunkt der Kompilierung definiert wird.  
   
- In C++ / CLI, verwenden Sie die Makros, CA_SUPPRESS_MESSAGE oder CA_GLOBAL_SUPPRESS_MESSAGE in der Headerdatei, um das Attribut hinzuzufügen.  
+ In C++/CLI, verwenden Sie die Makros, CA_SUPPRESS_MESSAGE oder CA_GLOBAL_SUPPRESS_MESSAGE in der Headerdatei, um das Attribut hinzuzufügen.  
   
  Sie sollten nicht im Quellcode-Unterdrückungen für Releasebuilds verwenden, um zu verhindern, dass die Metadaten für die Unterdrückung im Quellcode versehentlich zu versenden. Aufgrund der Verarbeitungskosten Unterdrückung im Quellcode kann auch die Leistung Ihrer Anwendung beeinträchtigt werden, durch die Unterdrückung im Quellcode-Metadaten einschließen.  
   
 > [!NOTE]
->  Sie müssen zum Weitergeben Code diese Attribute selbst keine. Weitere Informationen finden Sie unter [wie: Unterdrücken von Warnungen über das Menüelement](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). Das Menüelement ist nicht für C++-Code verfügbar.  
+> Sie müssen zum Weitergeben Code diese Attribute selbst keine. Weitere Informationen finden Sie unter [Vorgehensweise: Unterdrücken von Warnungen über das Menüelement](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). Das Menüelement ist nicht für C++-Code verfügbar.  
   
 ## <a name="suppressmessage-attribute"></a>SuppressMessage-Attributs  
  Wenn Sie mit der rechten Maustaste einer Codeanalyse-Warnung in der **Fehlerliste** , und klicken Sie dann auf **Nachrichten unterdrücken**, **SuppressMessage** Attribut hinzugefügt wird, in Ihrem Code oder auf der Globale Unterdrückungen-Datei des Projekts.  
@@ -59,27 +54,27 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
   
  Ort:  
   
--   **Regel Kategorie** -die Kategorie, in dem die Regel definiert wird. Weitere Informationen zu Codeanalyseregeln, finden Sie unter [Codeanalyse für verwalteten Code (Warnungen)](../code-quality/code-analysis-for-managed-code-warnings.md).  
+- **Regel Kategorie** -die Kategorie, in dem die Regel definiert wird. Weitere Informationen zu Codeanalyseregeln, finden Sie unter [Codeanalyse für verwalteten Code (Warnungen)](../code-quality/code-analysis-for-managed-code-warnings.md).  
   
--   **Regel-Id** – der Bezeichner der Regel. Die Unterstützung umfasst sowohl eine kurze und lange Namen für die Regel-ID an. Der kurze Name ist CAXXXX; der lange Name ist CAXXXX:FriendlyTypeName.  
+- **Regel-Id** – der Bezeichner der Regel. Die Unterstützung umfasst sowohl eine kurze und lange Namen für die Regel-ID an. Der kurze Name ist CAXXXX; der lange Name ist CAXXXX:FriendlyTypeName.  
   
--   **Begründung** -der Text, der verwendet wird, um den Grund für das Unterdrücken der Meldung dokumentieren.  
+- **Begründung** -der Text, der verwendet wird, um den Grund für das Unterdrücken der Meldung dokumentieren.  
   
--   **Meldungs-Id** – Eindeutiger Bezeichner für ein Problem für jede Nachricht.  
+- **Meldungs-Id** – Eindeutiger Bezeichner für ein Problem für jede Nachricht.  
   
--   **Bereich** -Ziel auf dem die Warnung unterdrückt wird. Wenn das Ziel nicht angegeben ist, wird es an das Ziel des Attributs festgelegt. Die folgenden: Bereiche werden unterstützt  
+- **Bereich** -Ziel auf dem die Warnung unterdrückt wird. Wenn das Ziel nicht angegeben ist, wird es an das Ziel des Attributs festgelegt. Die folgenden: Bereiche werden unterstützt  
   
-    -   Modul  
+    - Modul  
   
-    -   Namespace  
+    - Namespace  
   
-    -   Ressource  
+    - Ressource  
   
-    -   Typ  
+    - Typ  
   
-    -   Member  
+    - Member  
   
--   **Ziel** – ein Bezeichner, der verwendet wird, an das Ziel, auf dem die Warnung unterdrückt wird. Es muss einen vollqualifizierten Elementnamen enthalten.  
+- **Ziel** – ein Bezeichner, der verwendet wird, an das Ziel, auf dem die Warnung unterdrückt wird. Es muss einen vollqualifizierten Elementnamen enthalten.  
   
 ## <a name="suppressmessage-usage"></a>SuppressMessage-Nutzung  
  Warnungen der Codeanalyse unterdrückt werden, auf der Ebene, der eine Instanz von der **SuppressMessage** Attribut angewendet wird. Das Zweck dieses werden eng gekoppelt die Unterdrückungsinformationen aus, um den Code, in dem die Verletzung auftritt.  
@@ -104,7 +99,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 ## <a name="generated-code"></a>Generierter Code  
  Compiler für verwalteten Code und einige Tools von Drittanbietern generieren Code aus, um die schnelle Codeentwicklung zu ermöglichen. Vom Compiler generierter Code, der in Quelldateien angezeigt wird, ist in der Regel mit markiert die **GeneratedCodeAttribute** Attribut.  
   
- Sie können auswählen, ob codeanalysewarnungen und-Fehler für generierten Code zu unterdrücken. Informationen dazu, wie Sie solche Warnungen und Fehler unterdrücken, finden Sie unter [wie: Unterdrücken von Warnungen für generierten Code](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).  
+ Sie können auswählen, ob codeanalysewarnungen und-Fehler für generierten Code zu unterdrücken. Informationen dazu, wie Sie solche Warnungen und Fehler unterdrücken, finden Sie unter [Vorgehensweise: Unterdrücken von Warnungen für generierten Code](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).  
   
  Beachten Sie, bei der Codeanalyse ignoriert **GeneratedCodeAttribute** Wenn es auf eine gesamte Assembly oder einen einzelnen Parameter angewendet wird. Diese Situationen treten selten auf.  
   
@@ -114,7 +109,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
  `[module: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "MyNamespace")]`  
   
 > [!NOTE]
->  Wenn Sie eine Warnung mit dem Namespace-Gültigkeitsbereich unterdrücken, unterdrückt sie die Warnung für den Namespace selbst. Unterdrückt nicht die Warnung für Typen im Namespace.  
+> Wenn Sie eine Warnung mit dem Namespace-Gültigkeitsbereich unterdrücken, unterdrückt sie die Warnung für den Namespace selbst. Unterdrückt nicht die Warnung für Typen im Namespace.  
   
  Durch einen expliziten Bereich angeben, kann jede Unterdrückung ausgedrückt werden. Diese Unterdrückungen müssen auf globaler Ebene befinden. Sie können nicht auf Memberebene Unterdrückung angeben, durch das ergänzen eines Typs.  
   
@@ -123,13 +118,10 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
  `[module: SuppressMessage("Microsoft.Design", "CA1055:AbstractTypesDoNotHavePublicConstructors", Scope="member", Target="Microsoft.Tools.FxCop.Type..ctor()")]`  
   
 > [!NOTE]
->  Target enthält immer den vollqualifizierten Namen.  
+> Target enthält immer den vollqualifizierten Namen.  
   
 ## <a name="global-suppression-file"></a>Globale Unterdrückungsdatei  
- Der globale Unterdrückungsdatei verwaltet Unterdrückungen, die entweder auf globaler Ebene Unterdrückungen oder Unterdrückungen, die kein Ziel angeben. Unterdrückungen auf Verletzungen der Assembly werden z. B. in dieser Datei gespeichert. Darüber hinaus werden einige ASP.NET Unterdrückungen in dieser Datei gespeichert, da projekteinstellungen nicht für Code für ein Formular verfügbar sind. Eine globale Unterdrückungsdatei erstellt und hinzugefügt zu Ihrem Projekt zum ersten Mal, die Sie auswählen der **In Projektunterdrückungsdatei** Möglichkeit, die **Nachrichten unterdrücken** Befehl in das Fenster "Fehlerliste". Weitere Informationen finden Sie unter [wie: Unterdrücken von Warnungen über das Menüelement](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md).  
+ Der globale Unterdrückungsdatei verwaltet Unterdrückungen, die entweder auf globaler Ebene Unterdrückungen oder Unterdrückungen, die kein Ziel angeben. Unterdrückungen auf Verletzungen der Assembly werden z. B. in dieser Datei gespeichert. Darüber hinaus werden einige ASP.NET Unterdrückungen in dieser Datei gespeichert, da projekteinstellungen nicht für Code für ein Formular verfügbar sind. Eine globale Unterdrückungsdatei erstellt und hinzugefügt zu Ihrem Projekt zum ersten Mal, die Sie auswählen der **In Projektunterdrückungsdatei** Möglichkeit, die **Nachrichten unterdrücken** Befehl in das Fenster "Fehlerliste". Weitere Informationen finden Sie unter [Vorgehensweise: Unterdrücken von Warnungen über das Menüelement](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  <xref:System.Diagnostics.CodeAnalysis>
-
-
-

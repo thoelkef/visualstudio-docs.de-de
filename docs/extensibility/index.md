@@ -8,16 +8,18 @@ ms.date: 10/31/2018
 ms.topic: landing-page
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: 089173cc363bfa006d23fc784c1a437aeebcbf3d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 613ddebde3a7467dc7e93b9fda7a7880011cda66
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824089"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910506"
 ---
 # <a name="visual-studio-extensibility-documentation"></a>Dokumentation zur Visual Studio-Erweiterbarkeit
 
 Visual Studio bietet eine Vielzahl von Erweiterbarkeitsoptionen. Sie können Visual Studio selbst erweitern, Quellcodeanalysetools für den Roslyn-Compiler hinzufügen und sogar eigene SDKs erstellen.
+
+<!-- markdownlint-disable MD033 -->
 
 <ul class="panelContent cardsFTitle">
     <li>

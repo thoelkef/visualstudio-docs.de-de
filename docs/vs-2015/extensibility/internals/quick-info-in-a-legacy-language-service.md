@@ -1,14 +1,9 @@
 ---
 title: QuickInfo in einem Legacysprachdienst | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Quick Info, supporting in language services [managed package framework]
 - IntelliSense, Quick Info
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 159ccb0b-f5d6-4912-b88b-e9612924ed5e
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6ff6f4a29d194aaa5c9b868fffa19947a7321c77
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: cc8bfff0903d2ed1554cfd8b3d5b1dcf5cf0fa8a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797207"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436654"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>QuickInfo in einem Legacysprachdienst
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ IntelliSense-QuickInfo zeigt Informationen über einen Bezeichner in der Quelle,
  Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Wenn Sie mehr erfahren möchten, finden Sie unter [Exemplarische Vorgehensweise: Anzeigen von QuickInfos](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md).  
   
 > [!NOTE]
->  Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
+> Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
   
  Die verwaltete Package Framework (MPF) Sprache Dienstklassen bieten vollständige Unterstützung zum Anzeigen der IntelliSense-QuickInfo-QuickInfo. Müssen Sie lediglich den Text angezeigt werden, und aktivieren die Funktion "QuickInfo" angeben.  
   
@@ -49,4 +44,3 @@ IntelliSense-QuickInfo zeigt Informationen über einen Bezeichner in der Quelle,
  Die meisten Parser führen eine erste Analyse der gesamten Quelldatei und speichert die Ergebnisse in eine Analysestruktur. Die vollständige Analyse wird ausgeführt, wenn <xref:Microsoft.VisualStudio.Package.ParseReason> übergeben wird, um <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methode. Andere Arten der Analyse können dann die Analysestruktur verwenden, um die gewünschten Informationen abzurufen.  
   
  Z. B. den ursachenwert Analyse der <xref:Microsoft.VisualStudio.Package.ParseReason> Suchen des Bezeichners am Quellspeicherort können, und suchen sie in der Struktur analysieren, um die Typinformationen zu erhalten. Diese Typinformationen übergeben, die <xref:Microsoft.VisualStudio.Package.AuthoringScope> Klasse, und wird zurückgegeben, durch die <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A> Methode.
-

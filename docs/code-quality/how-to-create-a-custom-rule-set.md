@@ -1,7 +1,6 @@
 ---
 title: Erstellen Sie einen benutzerdefinierten Regelsatz für Codeanalyse
 ms.date: 11/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.addremoverulesets
@@ -9,15 +8,15 @@ helpviewer_keywords:
 - rule sets
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2a0b2de9450fc2e9350371b08f4a3a9bf8d9c1b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1a7ed11e7d3e093afaeaa19fd87ea68b7fecd266
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929915"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816567"
 ---
 # <a name="customize-a-rule-set"></a>Anpassen eines Regelsatzes
 
@@ -84,7 +83,7 @@ Sie können auch erstellen eine neuen Regelsatzdatei aus der **neue Datei** Dial
 
 - Ist die gleiche Regel aufgeführten zwei oder mehr Vorkommen in einem Regelsatz mit der *gleichen* Schweregrad, möglicherweise die folgende Warnung angezeigt der **Fehlerliste**:
 
-   **CA0063: Fehler beim Laden der Regelsatzdatei "\[Ihre] ruleSet ' oder eine ihrer abhängigen Regelsatzdateien Dateien festgelegt. Die Datei entspricht nicht das regelschema für die Gruppe.**
+   **CA0063 : Fehler beim Laden der Regelsatzdatei "\[Ihre] ruleSet ' oder eine ihrer abhängigen Regelsatzdateien Dateien festgelegt. Die Datei entspricht nicht das regelschema für die Gruppe.**
 
 - Wenn Sie einen untergeordneten Regelsatz mit der Regel enthält eine **Include** Tag und die untergeordneten und übergeordneten Regelsätze beide Listen Sie die gleiche Regel jedoch von unterschiedlichem Schweregrad, klicken Sie dann der Schweregrad in den übergeordneten Regelsatz Vorrang. Zum Beispiel:
 

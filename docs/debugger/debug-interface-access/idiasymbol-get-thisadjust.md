@@ -1,30 +1,33 @@
 ---
 title: 'Idiasymbol:: Get_thisadjust | Microsoft-Dokumentation'
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_thisAdjust method
 ms.assetid: 56b9a147-e8c0-4d4b-a42a-398214dd5f86
-author: mikejo5000
+caps.latest.revision: 11
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: 7d7cb0b57b56a7c73de599ebdbd252f1366857af
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 2dfdfb07f0ea20cf13a56eed7f380e3ec195fe52
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848508"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400374"
 ---
 # <a name="idiasymbolgetthisadjust"></a>IDiaSymbol::get_thisAdjust
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Ruft den logischen `this` Abwicklung für die Methode.  
   
 ## <a name="syntax"></a>Syntax  
   
-```C++  
+```cpp#  
 HRESULT get_thisAdjust (   
    LONG* pRetVal  
 );  
@@ -38,7 +41,7 @@ HRESULT get_thisAdjust ( 
  Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="remarks"></a>Hinweise  
  In einigen Fällen für mehrere Vererbung muss die Methode selbst ein echtes berechnen `this` Wert durch Hinzufügen eines Offsets zum `this`.  

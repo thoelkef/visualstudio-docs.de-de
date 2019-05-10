@@ -7,20 +7,20 @@ helpviewer_keywords:
 ms.assetid: 083b8ba3-e4ad-45af-bb5d-3bc81d406131
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1aaaf8dfae7ed0fd3626779fa1ba33e795d9f1d8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 12f0c8f2235db4c5eb332d52a454bd0093a34b68
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913503"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62842788"
 ---
 # <a name="msbuild-concepts"></a>MSBuild-Grundlagen
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bietet ein einfaches XML-Schema, mit dem Sie steuern können, wie die Buildplattform Software erstellen soll. Verwenden Sie Eigenschaften, Elemente, Aufgaben und Ziele, um die jeweiligen Komponenten im Build festzulegen und anzugeben, wie sie erstellt werden sollen.  
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bietet ein einfaches XML-Schema, mit dem Sie steuern können, wie die Buildplattform Software erstellen soll. Verwenden Sie Eigenschaften, Elemente, Aufgaben und Ziele, um die jeweiligen Komponenten im Build festzulegen und anzugeben, wie sie erstellt werden sollen.
 
-## <a name="related-topics"></a>Verwandte Themen  
+## <a name="related-topics"></a>Verwandte Themen
 
 | Titel | Beschreibung |
 | - | - |

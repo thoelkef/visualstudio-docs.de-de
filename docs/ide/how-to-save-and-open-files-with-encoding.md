@@ -1,39 +1,38 @@
 ---
 title: 'Vorgehensweise: Speichern und Öffnen von Dateien mit Codierung'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
-- Unicode, bi-directional language support
+- Unicode, bidirectional language support
 - files, encoding
-- bi-directional language support, encoded files
-- file encoding, bi-directional languages
+- bidirectional language support, encoded files
+- file encoding, bidirectional languages
 ms.assetid: cb52b732-b395-4ba1-a3ef-104b3942a12a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38d52cdee3ee0f6ccbdd378e4fb70e356d5826c2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fd3d7ccc248785c127c1eaf34da8840f824e4195
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869569"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946945"
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>Vorgehensweise: Speichern und Öffnen von Dateien mit Codierung
 
-Sie können Dateien mit ausgewählter Zeichencodierung speichern, sodass bidirektionale Sprachen unterstützt werden. Sie können außerdem auch beim Öffnen einer Datei eine Codierung angeben, sodass Visual Studio die Datei korrekt anzeigt.
+Sie können Dateien mit ausgewählter Zeichencodierung speichern, um bidirektionale Sprachen zu unterstützen. Sie können außerdem auch beim Öffnen einer Datei eine Codierung angeben, sodass Visual Studio die Datei korrekt anzeigt.
 
 ## <a name="to-save-a-file-with-encoding"></a>So speichern Sie eine codierte Datei
 
-1.  Klicken Sie im Menü **Datei** auf **Datei speichern unter**, und klicken Sie dann neben der Schaltfläche **Speichern** auf die Dropdownschaltfläche.
+1. Klicken Sie im Menü **Datei** auf **Datei speichern unter**, und klicken Sie dann neben der Schaltfläche **Speichern** auf die Dropdownschaltfläche.
 
      Das Dialogfeld **Erweiterte Speicheroptionen** wird angezeigt.
 
-2.  Wählen Sie unter **Codierung** die gewünschte Codierung für diese Datei aus.
+2. Wählen Sie unter **Codierung** die gewünschte Codierung für diese Datei aus.
 
-3.  Optional können Sie unter **Zeilenenden** das Format für die Zeichen am Zeilenende auswählen.
+3. Optional können Sie unter **Zeilenenden** das Format für die Zeichen am Zeilenende auswählen.
 
      Diese Option ist sehr praktisch, wenn Sie die Datei an Benutzer eines anderen Betriebssystems weitergeben möchten.
 
@@ -41,21 +40,21 @@ Sie können Dateien mit ausgewählter Zeichencodierung speichern, sodass bidirek
 
 ## <a name="to-open-an-encoded-file-that-is-part-of-a-project"></a>So öffnen Sie eine codierte Datei, die Teil eines Projekts ist
 
-1.  Klicken Sie im **Projektmappen**-Explorer mit der rechten Maustaste auf die Datei, und wählen Sie **Öffnen mit** aus.
+1. Klicken Sie im **Projektmappen**-Explorer mit der rechten Maustaste auf die Datei, und wählen Sie **Öffnen mit** aus.
 
-2.  Wählen Sie im Dialogfeld **Öffnen mit** den Editor aus, mit dem die Datei geöffnet werden soll.
+2. Wählen Sie im Dialogfeld **Öffnen mit** den Editor aus, mit dem die Datei geöffnet werden soll.
 
      Viele der Editoren von Visual Studio, z. B. der Formular-Editor, erkennen die Codierung automatisch und öffnen die Datei dann entsprechend. Wenn Sie einen Editor verwenden, bei dem Sie eine Codierung auswählen können, wird das Dialogfeld **Codierung** angezeigt.
 
-3.  Wählen Sie in diesem Fall im Dialogfeld **Codierung** die vom Editor zu verwendende Codierung aus.
+3. Wählen Sie in diesem Fall im Dialogfeld **Codierung** die vom Editor zu verwendende Codierung aus.
 
 ## <a name="to-open-an-encoded-file-that-is-not-part-of-a-project"></a>So öffnen Sie eine codierte Datei, die nicht Teil eines Projekts ist
 
-1.  Zeigen Sie im Menü **Datei** auf **Öffnen**, wählen Sie **Datei** oder **Datei im Web** aus, und wählen Sie dann die zu öffnende Datei aus.
+1. Zeigen Sie im Menü **Datei** auf **Öffnen**, wählen Sie **Datei** oder **Datei im Web** aus, und wählen Sie dann die zu öffnende Datei aus.
 
-2.  Klicken Sie neben der Schaltfläche **Öffnen** auf die Dropdownschaltfläche, und klicken Sie auf **Öffnen mit**.
+2. Klicken Sie neben der Schaltfläche **Öffnen** auf die Dropdownschaltfläche, und klicken Sie auf **Öffnen mit**.
 
-3.  Führen Sie die Schritte 2 und 3 der vorherigen Prozedur aus.
+3. Führen Sie die Schritte 2 und 3 der vorherigen Prozedur aus.
 
 ## <a name="see-also"></a>Siehe auch
 

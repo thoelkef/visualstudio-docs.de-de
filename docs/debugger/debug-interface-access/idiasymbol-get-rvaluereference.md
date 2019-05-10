@@ -1,30 +1,33 @@
 ---
 title: 'Idiasymbol:: Get_rvaluereference | Microsoft-Dokumentation'
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_RValueReference method
 ms.assetid: c6c8c543-253e-4c23-a939-3e66f3db0ee2
-author: mikejo5000
+caps.latest.revision: 9
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: 6bef3d87c745beaf7374cdfdc4abfa9ede8f2bfa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 5e9c14bc0fcce8a66c64b33b2ec8cbd943c80c8c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867487"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401115"
 ---
 # <a name="idiasymbolgetrvaluereference"></a>IDiaSymbol::get_RValueReference
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Ruft ein Flag, das angibt, ob ein Typ ein Rvalue-Verweis ist. Verwenden, wenn die [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) in einen Zeigertyp festgelegt ist.  
   
 ## <a name="syntax"></a>Syntax  
   
-```C++  
+```cpp#  
 HRESULT get_RValueReference (  
    BOOL* pRetVal  
 );  
@@ -38,7 +41,7 @@ HRESULT get_RValueReference (
  Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
+> Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
 ## <a name="remarks"></a>Hinweise  
   

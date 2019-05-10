@@ -1,14 +1,9 @@
 ---
 title: MSBuild-Batchverarbeitung | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - batching [MSBuild]
 - MSBuild, batching
@@ -16,18 +11,17 @@ ms.assetid: d35c085b-27b8-49d7-b6f8-8f2f3a0eec38
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 24baafbaf213e90999a5e4e0eea030f2ef608501
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d96330c01ab340d4db67694f358717a2dae0bce3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304173"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439377"
 ---
 # <a name="msbuild-batching"></a>MSBuild-Batchverarbeitung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] kann Elementlisten basierend auf den Elementmetadaten in verschiedene Kategorien oder Batches unterteilen und ein Ziel oder eine Aufgabe einmal mit jedem Batch ausführen.  
   
 ## <a name="task-batching"></a>Aufgabenbatchverarbeitung  
@@ -36,7 +30,7 @@ ms.locfileid: "49304173"
  Sie geben an, dass [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] die Batchverarbeitung mit einer Aufgabe ausführen soll, indem Sie die Notation %(*ItemMetaDataName*) in einem der Attribute der Aufgabe verwenden. Im folgenden Beispiel wird die `Example`-Elementliste basierend auf dem `Color`-Elementmetadatenwert in Batches aufgeteilt, und alle Batches werden separat an die `MyTask`-Aufgabe übergeben.  
   
 > [!NOTE]
->  Wenn Sie an keiner anderen Stelle in den Attributen der Aufgabe auf die Elementliste verweisen oder der Metadatenname mehrdeutig sein kann, können Sie die Notation %(*ItemCollection.ItemMetaDataName*) verwenden, um die Elementmetadaten vollständig für die Batchverarbeitung zu qualifizieren.  
+> Wenn Sie an keiner anderen Stelle in den Attributen der Aufgabe auf die Elementliste verweisen oder der Metadatenname mehrdeutig sein kann, können Sie die Notation %(*ItemCollection.ItemMetaDataName*) verwenden, um die Elementmetadaten vollständig für die Batchverarbeitung zu qualifizieren.  
   
 ```  
 <Project  
@@ -113,6 +107,3 @@ ms.locfileid: "49304173"
  [MSBuild Concepts](../msbuild/msbuild-concepts.md)  (MSBuild-Grundlagen)  
  [MSBuild Reference](../msbuild/msbuild-reference.md)  (MSBuild-Referenz)  
  [Advanced Concepts](../msbuild/msbuild-advanced-concepts.md) (Erweiterte MSBuild-Grundlagen)
-
-
-

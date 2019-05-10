@@ -1,14 +1,9 @@
 ---
 title: VSPerfCLREnv | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - command-line tools, VSPerfCLREnv
 - command line, tools
@@ -19,13 +14,13 @@ ms.assetid: 4bc9dd6e-379c-4930-9bba-59a4faa93303
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0ff359904b2b4d8b10dbc180f076606651028e80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: afee2c56a7f29d50f46c7cbb734bc0297223845c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741503"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446688"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,12 +34,12 @@ VsPerfCLREnv [/option]
  Die Option, die Sie auswählen, hängt davon ab, welche der drei Typen der Profilerstellung Sie verwenden: Sampling, Instrumentierung oder die globale Profilerstellung. Eine separate Option ist erforderlich, um Ebeneninteraktionsdaten in die Profilerstellungsdaten einzuschließen. Die Syntax für jede Option wird in den folgenden Tabellen beschrieben.  
   
 > [!NOTE]
->  Wenn Sie mit der Profilerstellung fertig sind, führen Sie **VSPerfCLREnv** mit der Option **/off** oder **/globaloff** aus, um die für die Profilerstellung erforderlichen Umgebungsvariablen zu löschen. Weitere Informationen finden Sie in den hier dargestellten VSPerfCLREnv-Optionen zum Löschen von Umgebungseinstellungen.  
+> Wenn Sie mit der Profilerstellung fertig sind, führen Sie **VSPerfCLREnv** mit der Option **/off** oder **/globaloff** aus, um die für die Profilerstellung erforderlichen Umgebungsvariablen zu löschen. Weitere Informationen finden Sie in den hier dargestellten VSPerfCLREnv-Optionen zum Löschen von Umgebungseinstellungen.  
   
  **VSPerfCLREnv-Optionen zum Einschließen von Ebeneninteraktionsdaten**  
   
 > [!WARNING]
->  Profilerstellungsdaten für die Ebeneninteraktion können mit [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] oder [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)] erfasst werden. Allerdings können Profilerstellungsdaten für die Ebeneninteraktion nur in [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] und [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] angezeigt werden.  
+> Profilerstellungsdaten für die Ebeneninteraktion können mit [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] oder [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)] erfasst werden. Allerdings können Profilerstellungsdaten für die Ebeneninteraktion nur in [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] und [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]angezeigt werden.  
   
  Die Profilerstellung für die Ebeneninteraktion bietet zusätzliche Informationen zu ADO.NET-Abfragen in mehrstufigen Anwendungen. Es werden nur Daten für synchrone Funktionsaufrufe gesammelt. Interaktionsdaten können zu jeder Profilerstellung hinzugefügt werden, unabhängig von der Profilerstellungsmethode.  
   
@@ -111,13 +106,10 @@ VSPerfCmd /Attach:MyService.exe
 |**Off**|Löscht Umgebungsvariablen für die Standard-.NET-Profilerstellung. Verwenden Sie diese Option, wenn die nicht globalen VSPerfClrEnv-Optionen zum Festlegen der Profiler-Umgebungsvariablen verwendet wurden.|  
 |**GlobalOff**|Löscht Umgebungsvariablen für die globale .NET-Profilerstellung. Verwenden Sie diese Option, wenn die Anwendung vom Betriebssystem anstatt vom Profiler gestartet wurde.|  
   
-## <a name="remarks"></a>Hinweise  
+## <a name="remarks"></a>Anmerkungen  
  Diese Optionen sind für die Profilerstellung einer verwalteten Anwendung nicht erforderlich, wenn die Anwendung mithilfe des Leistungs-Explorers in der IDE gestartet wurde. Der Leistungs-Explorer legt alle erforderlichen Umgebungseinstellungen für Sie fest.  
   
  Wenn während der Profilerstellung nicht die richtige Umgebung festgelegt wurde, wird während der Analyse eine Warnung ausgegeben und die Namen der verwalteten Funktionen werden nicht ordnungsgemäß aufgelöst.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Profilerstellung mithilfe der Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md)
-
-
-

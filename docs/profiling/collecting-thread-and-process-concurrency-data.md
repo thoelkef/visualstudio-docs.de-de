@@ -1,23 +1,21 @@
 ---
 title: Sammeln von Parallelitätsdaten zu Threads und Prozessen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - concurrency profiling method
 - Profiling Tools, concurrency method
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8ce2c1d7a28eff441cbf3a95e8f9df644789e70
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 2c3310a87a4b25e560ea5303553e3eb75c0da001
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62831531"
 ---
 # <a name="collect-thread-and-process-concurrency-data"></a>Sammeln von Parallelitätsdaten zu Threads und Prozessen
 

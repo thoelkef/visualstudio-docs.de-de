@@ -1,27 +1,22 @@
 ---
 title: Aufrufstrukturansicht – Instrumentationsdaten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Call Tree view
 ms.assetid: 306bd176-0ce9-4a10-89ca-20b043d37d4e
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 630f75468adf5995eb887ac5f73d82462bfe32a4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 385d12550692f5f27521afe4dea12e5bdb0aa9d8
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786242"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54782387"
 ---
 # <a name="call-tree-view---instrumentation-data"></a>Aufrufstrukturansicht – Instrumentationsdaten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,6 +90,3 @@ Die Werte einer Funktion in der Aufrufstruktur geben die Zeit für die Funktions
  [Aufrufstrukturansicht](../profiling/call-tree-view-sampling-data.md)   
  [Aufrufstrukturansicht – .NET-Speicherinstrumentationsdaten im Profiler](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [Aufrufstrukturansicht – Profiler-Samplingdaten](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
-
-
-

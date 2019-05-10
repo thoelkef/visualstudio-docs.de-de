@@ -1,8 +1,7 @@
 ---
-title: IRemoteDebugApplication110::GetMainThread | Microsoft Docs
+title: IRemoteDebugApplication110::GetMainThread | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2dc420f3c59a59373c6e3a2be9e7254eea451585
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
-ms.translationtype: MT
+ms.openlocfilehash: 8a4b51d87f89d77bebf065ce5f52a297ada333d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729290"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383503"
 ---
 # <a name="iremotedebugapplication110getmainthread"></a>IRemoteDebugApplication110::GetMainThread
-Gibt den Hauptthread für Hosts, die aufgerufen werden [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439), andernfalls E_FAIL zurück.  
+Gibt den Hauptthread für Hosts, die aufgerufen werden [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439), andernfalls wird E_FAIL zurückgegeben.  
   
 > [!IMPORTANT]
->  [IRemoteDebugApplication-Schnittstelle](../../winscript/reference/iremotedebugapplication-interface.md) wird implementiert von PDM V11. 0 und höher. Gefunden in activdbg100.h.  
+> [IRemoteDebugApplication-Schnittstelle](../../winscript/reference/iremotedebugapplication-interface.md) wird implementiert von PDM V11. 0 und höher. Gefunden in activdbg100.h.  
   
 ## <a name="syntax"></a>Syntax  
   

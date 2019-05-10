@@ -2,21 +2,20 @@
 title: Workflow-Designer - Typauflistungs-Editor (Dialogfeld)
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - TypeCollectionEditor.UI
 ms.assetid: 63cdea6b-bca2-4c06-b8b4-c8faabd40726
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a2c172517dd9e1945ee55fb6ab9ce576b4676ac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 191635364c445bc3959ee2f5f63c7c72c71f171d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820185"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433928"
 ---
 # <a name="type-collection-editor-dialog-box"></a>Typauflistungs-Editor (Dialogfeld)
 
@@ -32,16 +31,16 @@ Die folgende Tabelle beschreibt die Elemente der Benutzeroberfläche (UI) von de
 
 ## <a name="to-bring-up-the-type-collection-editor-for-the-send-and-receive-activities"></a>So öffnen Sie den Typauflistungs-Editor für die Send- und die Receive-Aktivität
 
-1.  Wählen Sie die **senden** oder **Receive** Aktivität in der Entwurfsansicht.
+1. Wählen Sie die **senden** oder **Receive** Aktivität in der Entwurfsansicht.
 
-2.  Drücken Sie **F4** um die **Eigenschaften** Fenster.
+2. Drücken Sie **F4** um die **Eigenschaften** Fenster.
 
-3.  In der **Eigenschaften** Fenster, klicken Sie auf die Schaltfläche mit den Auslassungspunkten neben der **KnownTypes** Eigenschaft.
+3. In der **Eigenschaften** Fenster, klicken Sie auf die Schaltfläche mit den Auslassungspunkten neben der **KnownTypes** Eigenschaft.
 
 ## <a name="to-bring-up-the-type-collection-editor-for-the-invokemethod-activity"></a>So öffnen Sie den Typauflistungs-Editor für die InvokeMethod-Aktivität
 
-1.  Wählen Sie die **InvokeMethod** Aktivität in der Entwurfsansicht.
+1. Wählen Sie die **InvokeMethod** Aktivität in der Entwurfsansicht.
 
-2.  Drücken Sie **F4** um die **Eigenschaften** Fenster.
+2. Drücken Sie **F4** um die **Eigenschaften** Fenster.
 
-3.  In der **Eigenschaften** Fenster, klicken Sie auf die Schaltfläche mit den Auslassungspunkten neben der **GenericTypeArguments** Eigenschaft.
+3. In der **Eigenschaften** Fenster, klicken Sie auf die Schaltfläche mit den Auslassungspunkten neben der **GenericTypeArguments** Eigenschaft.

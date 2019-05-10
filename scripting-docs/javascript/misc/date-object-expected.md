@@ -1,14 +1,9 @@
 ---
 title: Date-Objekt erwartet | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5006
 dev_langs:
@@ -16,16 +11,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: d6ab82e6-ca64-46b4-a06c-5c6b0aa057cb
-caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 05e27b822f933ade811084552f6f0379257ae82e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2767ffc16b637c6b1e7bdf51cb0815d71f58edac
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49947640"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946380"
 ---
 # <a name="date-object-expected"></a>Date-Objekt erwartet
 Sie haben versucht, rufen Sie die **Date.prototype.toString** oder **Date.prototype.valueOf** Methode für ein Objekt von einem anderen Typ als `Date`. Das Objekt dieser Art von Aufruf muss vom Typ `Date`. Zum Beispiel:  
@@ -38,7 +32,7 @@ o.f();
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Rufen Sie nur die **Date.prototype.toString** oder **Date.prototype.valueOf** Methoden für Objekte vom Typ `Date`.  
+- Rufen Sie nur die **Date.prototype.toString** oder **Date.prototype.valueOf** Methoden für Objekte vom Typ `Date`.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Date-Objekt](../../javascript/reference/date-object-javascript.md)   

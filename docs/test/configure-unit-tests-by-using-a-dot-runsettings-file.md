@@ -1,19 +1,18 @@
 ---
 title: Konfigurieren von Komponententests mit einer RUNSETTINGS-Datei
 ms.date: 02/28/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 06cd85291b63ddd7c31136e24cf622f510849775
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e09d1cb2e57955f3177fff4e5b54c78eadcd659e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961899"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62539162"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurieren von Komponententests mithilfe einer *RUNSETTINGS*-Datei
 
@@ -37,7 +36,17 @@ Verwenden Sie zum Ausführen von Tests *vstest.console.exe*, und geben Sie die E
 
 1. Starten der Visual Studio Developer-Eingabeaufforderung:
 
+   ::: moniker range="vs-2017"
+
    Wählen Sie im Windows **Startmenü** **Visual Studio 2017** > **Developer Command Prompt for VS 2017** (Eingabeaufforderung für Entwickler für VS 2017) aus.
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   Wählen Sie im Windows **Startmenü** **Visual Studio 2019** > **Developer Command Prompt for VS 2019** (Eingabeaufforderung für Entwickler für VS 2019) aus.
+
+   ::: moniker-end
 
 2. Geben Sie einen Befehl wie diesen ein:
 
@@ -77,7 +86,7 @@ Der folgende XML-Code ist ein Beispiel für den Inhalt einer typischen *RUNSETTI
     <ResultsDirectory>.\TestResults</ResultsDirectory>
 
     <!-- x86 or x64 -->
-    <!-- You can also change it from menu Test > Test Settings > Default Processor Architecture -->
+    <!-- You can also change it from the top-level menu Test > Test Settings > Processor Architecture for AnyCPU Projects -->
     <TargetPlatform>x86</TargetPlatform>
 
     <!-- Framework35 | [Framework40] | Framework45 -->
@@ -86,7 +95,7 @@ Der folgende XML-Code ist ein Beispiel für den Inhalt einer typischen *RUNSETTI
     <!-- Path to Test Adapters -->
     <TestAdaptersPaths>%SystemDrive%\Temp\foo;%SystemDrive%\Temp\bar</TestAdaptersPaths>
 
-    <!-- TestSessionTimeout is only available with Visual Studio 2017 version 15.5 and higher -->
+    <!-- TestSessionTimeout was introduced in Visual Studio 2017 version 15.5 -->
     <!-- Specify timeout in milliseconds. A valid value should be greater than 0 -->
     <TestSessionTimeout>10000</TestSessionTimeout>
   </RunConfiguration>
@@ -114,7 +123,7 @@ Der folgende XML-Code ist ein Beispiel für den Inhalt einer typischen *RUNSETTI
       </DataCollector>
 
       <DataCollector uri="datacollector://microsoft/VideoRecorder/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder.VideoRecorderDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Screen and Voice Recorder">
-        <!--Video data collector is only available with Visual Studio 2017 version 15.5 and higher -->
+        <!--Video data collector was introduced in Visual Studio 2017 version 15.5 -->
       </DataCollector>
 
     </DataCollectors>

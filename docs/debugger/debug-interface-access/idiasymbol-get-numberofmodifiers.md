@@ -1,28 +1,31 @@
 ---
 title: IDiaSymbol::get_numberOfModifiers | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 61ff7431-1994-4f7e-a182-1817f16f60a9
-author: mikejo5000
+caps.latest.revision: 6
+author: MikeJo5000
 ms.author: mikejo
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: 911e5f405dd7889378b62d9ec5bef3c943d3c85f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 74a83a83a805aa86d10b3c051ac1c6fc39f36f14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875792"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62835984"
 ---
 # <a name="idiasymbolgetnumberofmodifiers"></a>IDiaSymbol::get_numberOfModifiers
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+
 Ruft die Anzahl der Modifizierer, die in den ursprünglichen Typ angewendet werden.  
   
 ## <a name="syntax"></a>Syntax  
   
-```C++  
+```cpp  
 HRESULT get_numberOfModifiers(   
    DWORD* pRetVal);  
 ```  

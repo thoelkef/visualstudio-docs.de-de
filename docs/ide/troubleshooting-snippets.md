@@ -1,7 +1,6 @@
 ---
 title: Problembehandlung bei Codeausschnitten
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: troubleshooting
 helpviewer_keywords:
 - IntelliSense Code Snippets, troubleshooting
@@ -10,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7b6dd40e-2f78-4b50-8e68-41fac1bcb81e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4505d9d280e8a55ca03fcc8364f10b939e6378a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9485147bbe386983aa5ee9c492607e12afb151c6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842566"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62575981"
 ---
 # <a name="troubleshoot-snippets"></a>Problembehandlung bei Codeausschnitten
 
@@ -32,9 +31,9 @@ Probleme bei IntelliSense-Codeausschnitten sind häufig auf eine beschädigte Au
 
 ## <a name="the-code-has-compiler-errors-that-are-not-highlighted"></a>Im Code befinden sich Compilerfehler, die nicht hervorgehoben werden
 
--   Möglicherweise ist ein Projektverweis nicht vorhanden. Lesen Sie die Dokumentation zu dem Codeausschnitt. Wenn der Verweis nicht auf dem Computer gefunden wird, müssen Sie diesen installieren. Durch das Einfügen eines Codeausschnitts sollten dem Projekt alle erforderlichen Verweise hinzugefügt werden. Wenn die Verweisinformationen nicht im Codeausschnitt vorhanden sind, kann dieser Fehler dem Ausschnittsersteller gemeldet werden.
+- Möglicherweise ist ein Projektverweis nicht vorhanden. Lesen Sie die Dokumentation zu dem Codeausschnitt. Wenn der Verweis nicht auf dem Computer gefunden wird, müssen Sie diesen installieren. Durch das Einfügen eines Codeausschnitts sollten dem Projekt alle erforderlichen Verweise hinzugefügt werden. Wenn die Verweisinformationen nicht im Codeausschnitt vorhanden sind, kann dieser Fehler dem Ausschnittsersteller gemeldet werden.
 
--   Eine Variable wurde möglicherweise nicht definiert. Nicht definierte Variablen in einem Ausschnitt sollten hervorgehoben werden. Wenn dies nicht der Fall ist, kann dieser Fehler dem Ausschnittsersteller gemeldet werden.
+- Eine Variable wurde möglicherweise nicht definiert. Nicht definierte Variablen in einem Ausschnitt sollten hervorgehoben werden. Wenn dies nicht der Fall ist, kann dieser Fehler dem Ausschnittsersteller gemeldet werden.
 
 ## <a name="see-also"></a>Siehe auch
 

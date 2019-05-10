@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Escapesonderzeichen in MSBuild | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - special characters, escaping
 - characters, escapes
@@ -18,18 +13,17 @@ ms.assetid: 1aa3669c-1647-4960-b770-752e2532102f
 caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8346d44b16e9ada275541a23c4bf080ef1f0f54a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 94fc8d858e2db9bd1e00bb8770cf52672a900ab0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230170"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064999"
 ---
 # <a name="how-to-escape-special-characters-in-msbuild"></a>Gewusst wie: Escapesonderzeichen in MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Bestimmte Zeichen haben in Projektdateien [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] eine besondere Bedeutung. Beispiele für die Zeichen sind Semikolons (;) und Sternchen (*). Eine vollständige Liste dieser Sonderzeichen finden Sie unter [MSBuild-Sonderzeichen](../msbuild/msbuild-special-characters.md).  
   
  Um diese Sonderzeichen als Literale in einer Projektdatei zu verwenden, müssen sie mit der Syntax %*xx* angegeben werden, wobei *xx* den ASCII-Hexadezimalwert des Zeichens darstellt.  
@@ -49,10 +43,8 @@ Bestimmte Zeichen haben in Projektdateien [!INCLUDE[vstecmsbuild](../includes/vs
   
 #### <a name="to-use-an-msbuild-special-character-as-a-literal-character"></a>So verwenden Sie ein MSBuild-Sonderzeichen als Literalzeichen  
   
--   Verwenden Sie die Notation %*xx* anstelle des Sonderzeichens, wobei *xx* den Hexadezimalwert des ASCII-Zeichens darstellt. Wenn Sie ein Sternchen (*) als Literalzeichen verwenden möchten, verwenden Sie z. B. den Wert `%2A`.  
+- Verwenden Sie die Notation %*xx* anstelle des Sonderzeichens, wobei *xx* den Hexadezimalwert des ASCII-Zeichens darstellt. Wenn Sie ein Sternchen (*) als Literalzeichen verwenden möchten, verwenden Sie z. B. den Wert `%2A`.  
   
 ## <a name="see-also"></a>Siehe auch  
  [MSBuild Concepts](../msbuild/msbuild-concepts.md)  (MSBuild-Grundlagen)  
  [MSBuild-Elemente](msbuild.md) [Items](../msbuild/msbuild-items.md)
-
-

@@ -1,32 +1,40 @@
 ---
-title: Erweiterte Features von Visual Studio 2017
-titleSuffix: ''
+title: Erweiterte Features
 ms.date: 06/01/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 739426d5d93628c90638fef32526484f27eef3e8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9ac716c3268709cdf168a379b2df6cd40b727f51
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828497"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793843"
 ---
-# <a name="features-of-visual-studio-2017"></a>Features von Visual Studio 2017
+# <a name="features-of-visual-studio"></a>Features von Visual Studio
 
-Der Artikel [Übersicht über die Visual Studio-IDE](../get-started/visual-studio-ide.md) bietet eine grundlegende Einführung in Visual Studio. In diesem Artikel werden Features beschrieben, die möglicherweise besser für erfahrene Entwickler oder Benutzer geeignet sind, die bereits mit Visual Studio vertraut sind.
+Der Artikel [Übersicht über die Visual Studio-IDE](../get-started/visual-studio-ide.md) bietet eine grundlegende Einführung in Visual Studio. In diesem Artikel werden Features beschrieben, die möglicherweise besser für erfahrene Entwickler bzw. Entwickler geeignet sind, die bereits mit Visual Studio vertraut sind.
 
 ## <a name="modular-installation"></a>Modulare Installation
 
-Mit dem modularen Installer von Visual Studio können Sie *Workloads* auswählen und installieren, die Gruppen von Funktionen sind, die für die bevorzugte Programmiersprache oder Plattform erforderlich sind. Diese Strategie hält den Platzbedarf der Visual Studio-Installation kleiner, d.h. Updates werden auch schneller installiert und aktualisiert.
+Mit dem modularen Installationsprogramm von Visual Studio können Sie *Workloads* installieren. Workloads sind Gruppen von Features, die für Ihre bevorzugte Programmiersprache oder Plattform erforderlich sind. Diese Strategie hält den Platzbedarf der Visual Studio-Installation kleiner, d.h. Updates werden auch schneller installiert und aktualisiert.
 
-Wenn Sie Visual Studio 2017 noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) kostenlos herunterladen.
+::: moniker range="vs-2017"
 
-Weitere Informationen zum Einrichten von Visual Studio auf Ihrem System finden Sie unter [Installieren von Visual Studio 2017 RC](../install/install-visual-studio.md).
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) kostenlos herunterladen.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) kostenlos herunterladen.
+
+::: moniker-end
+
+Weitere Informationen zum Einrichten von Visual Studio auf Ihrem System finden Sie unter [Installieren von Visual Studio](../install/install-visual-studio.md).
 
 ## <a name="create-cloud-enabled-apps-for-azure"></a>Erstellen von cloudfähigen Apps für Azure
 
@@ -34,9 +42,13 @@ Visual Studio bietet eine integrierte Sammlung von Tools, die Ihnen das einfache
 
 ![Workload „Azure-Entwicklung“](../data-tools/media/azure-development-workload.png)
 
+::: moniker range="vs-2017"
+
 Nachdem Sie die Workload **Azure-Entwicklung** installiert haben, sind die folgenden C#-Vorlagen für die **Cloud** im Dialogfeld **Neues Projekt** verfügbar:
 
 ![Cloud-Projektvorlagen für Visual Studio](media/cloud-project-templates.png)
+
+::: moniker-end
 
 Mit dem [Cloud-Explorer](/azure/vs-azure-tools-resources-managing-with-cloud-explorer) von Visual Studio können Sie Azure-basierte Cloudressourcen in Visual Studio anzeigen und verwalten. Diese Ressourcen können virtuelle Computer, Tabellen, SQL-Datenbanken und mehr umfassen. **Cloud-Explorer** zeigt die Azure-Ressourcen aller Konten an, die unter dem Azure-Abonnement, bei dem Sie angemeldet sind, verwaltet werden. Wenn für einen bestimmten Vorgang das Azure-Portal erforderlich ist, stellt **Cloud-Explorer** Verknüpfungen bereit, mit denen Sie an den richtigen Ort im Portal gelangen.
 
@@ -72,23 +84,23 @@ Sie können mithilfe von Visual Studio Apps und Spiele für macOS, Linux, Window
 
 - Entwickeln Sie mit den [Visual Studio-Tools für Unity](../cross-platform/visual-studio-tools-for-unity.md) 2D- und 3D-Spiele in C#.
 
-- Mithilfe von [C++ für die plattformübergreifende Entwicklung](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md) können Sie native C++-Apps für iOS-, Android- und Windows-Geräte erstellen sowie für iOS, Android und Windows erstellten allgemeinen Code in Bibliotheken freigeben.
+- Erstellen Sie native C++-Apps für iOS-, Android- und Windows-Geräte. Mit [C++ für plattformübergreifende Entwicklung](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md) können Sie allgemeinen Code in Bibliotheken für iOS, Android und Windows freigeben.
 
 - Nutzen Sie den [Android-Emulator](../cross-platform/visual-studio-emulator-for-android.md), um Android-Apps bereitzustellen, zu testen und zu debuggen.
 
 ## <a name="connect-to-databases"></a>Herstellen einer Verbindung mit Datenbanken
 
-**Server-Explorer** unterstützt Sie dabei, SQL Server-Instanzen und -Ressourcen lokal, remote, in Azure, Salesforce.com, Office 365 und auf Websites zu suchen und zu verwalten. Wählen Sie zum Öffnen des **Server-Explorers** im Hauptmenü **Ansicht** > **Server-Explorer** aus. Unter [Neue Verbindung hinzufügen](../data-tools/add-new-connections.md) finden Sie weitere Informationen zur Verwendung von Server-Explorer.
+**Server-Explorer** unterstützt Sie dabei, SQL Server-Instanzen und -Ressourcen lokal, remote, in Azure, Salesforce.com, Office 365 und auf Websites zu suchen und zu verwalten. Wählen Sie zum Öffnen des **Server-Explorers** im Hauptmenü **Ansicht** > **Server-Explorer** aus. Weitere Informationen zur Verwendung des Server-Explorers finden Sie unter [Add new connections (Hinzufügen neuer Verbindungen)](../data-tools/add-new-connections.md).
 
 [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) ist eine leistungsstarke Entwicklungsumgebung für SQL Server, Azure SQL-Datenbank und Azure SQL Data Warehouse. Damit können Sie Datenbanken erstellen, debuggen, verwalten und umgestalten. Sie können mit einem Datenbankprojekt oder direkt mit einer Instanz einer verbundenen Datenbank lokal oder extern arbeiten.
 
-**SQL Server-Objekt-Explorer** in Visual Studio bietet eine Anzeige der Datenbankobjekte ähnlich der von SQL Server Management Studio. Mit dem SQL Server-Objekt-Explorer können Sie leichte Verwaltungs- und Designarbeiten für Datenbanken durchführen, darunter Bearbeiten von Tabellendaten, Vergleichen von Schemas und Ausführen von Abfragen mithilfe von Kontextmenüs direkt aus dem SQL Server-Objekt-Explorer.
+**SQL Server-Objekt-Explorer** in Visual Studio bietet eine Anzeige der Datenbankobjekte ähnlich der von SQL Server Management Studio. Mit dem SQL Server-Objekt-Explorer können Sie leichte Datenbankverwaltungs- und Entwurfsarbeiten verrichten. Zu den Beispielen für solche Arbeiten gehören das Bearbeiten von Tabellendaten, das Vergleichen von Schemas, das Ausführen von Abfragen mithilfe von Kontextmenüs direkt über den SQL Server-Objekt-Explorer und vieles mehr.
 
 ![SQL Server-Objekt-Explorer](../ide/media/vs2015_sqlobjectexplorer.png)
 
 ## <a name="debug-test-and-improve-your-code"></a>Debuggen, Testen und Verbessern Ihres Codes
 
-Wenn Sie Code schreiben, müssen Sie ihn auszuführen und auf Fehler und Leistung prüfen. Das dem neuesten Entwicklungsstand entsprechende Debugsystem von Visual Studio ermöglicht Ihnen, Code in Ihrem lokalen Projekt, auf einem Remotegerät oder auf einem [Geräteemulator](../cross-platform/visual-studio-emulator-for-android.md) zu debuggen. Sie können Ihren Code Anweisung für Anweisung durchlaufen und die Variablen untersuchen. Sie können Haltepunkte setzen, die nur erreicht werden, wenn eine bestimmte Bedingung erfüllt ist. All dies kann im Code-Editor selbst verwaltet werden, sodass Sie den Code nicht verlassen müssen. Weitere Informationen über den Debugprozess in Visual Studio finden Sie unter [Tour zu den Debuggerfeatures](../debugger/debugger-feature-tour.md).
+Wenn Sie Code schreiben, müssen Sie ihn auszuführen und auf Fehler und Leistung prüfen. Das dem neuesten Entwicklungsstand entsprechende Debugsystem von Visual Studio ermöglicht Ihnen, Code in Ihrem lokalen Projekt, auf einem Remotegerät oder auf einem [Geräteemulator](../cross-platform/visual-studio-emulator-for-android.md) zu debuggen. Sie können Ihren Code Anweisung für Anweisung durchlaufen und die Variablen untersuchen. Sie können Haltepunkte setzen, die nur erreicht werden, wenn eine bestimmte Bedingung erfüllt ist. Debugoptionen können im Code-Editor selbst verwaltet werden, sodass Sie den Code nicht verlassen müssen. Weitere Informationen über den Debugprozess in Visual Studio finden Sie unter [Erster Einblick in den Debugger](../debugger/debugger-feature-tour.md).
 
 Sehen Sie sich für weitere Informationen zum Verbessern der Leistung Ihrer Apps das [Profilerstellungsfeature](../profiling/profiling-feature-tour.md) von Visual Studio an.
 
@@ -96,21 +108,21 @@ Zum [Testen](../test/improve-code-quality.md) stehen in Visual Studio Komponente
 
 ## <a name="deploy-your-finished-application"></a>Bereitstellen der fertigen Anwendung
 
-Wenn Ihre Anwendung für die Bereitstellung für Benutzer oder Kunden bereit ist, bietet Visual Studio die dazu benötigten Tools, unabhängig davon, ob Sie sie im Microsoft Store, auf einer SharePoint-Website oder mit InstallShield- oder Windows Installer-Technologien bereitstellen möchten. Sie können über die IDE auf alle Tools zugreifen. Weitere Informationen finden Sie unter [Bereitstellen von Anwendungen, Diensten und Komponenten](../deployment/deploying-applications-services-and-components.md).
+Wenn Ihre Anwendung für die Bereitstellung für Benutzer oder Kunden bereit ist, finden Sie die dazu erforderlichen Tools in Visual Studio. Zu den Bereitstellungsoptionen gehören Microsoft Store, eine SharePoint-Website oder InstallShield- bzw. Windows Installer-Technologien. Sie können über die IDE auf alle Tools zugreifen. Weitere Informationen finden Sie unter [Bereitstellen von Anwendungen, Diensten und Komponenten](../deployment/deploying-applications-services-and-components.md).
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>Verarbeiten Ihres Quellcodes und Zusammenarbeiten mit anderen
 
-Sie können Ihren Quellcode in Git-Repositorys verwalten, die von beliebigen Anbietern gehostet werden, einschließlich GitHub. Oder verwenden Sie [Azure DevOps Services](/azure/devops/index), um Code zusammen mit Fehlern und Arbeitselemente für Ihr gesamtes Projekt zu verwalten. Weitere Informationen zur Verwaltung von Git-Repositorys in Visual Studio mithilfe von Team Explorer finden Sie unter [Get Started with Azure Repos and Visual Studio (Erste Schritte mit Git und Visual Studio)](/azure/devops/repos/git/gitquickstart?tabs=visual-studio). Visual Studio verfügt auch über andere integrierte Quellcodeverwaltungsfunktionen. Weitere Informationen dazu finden Sie unter [New Git Features in Visual Studio 2017 (blog) (Neue Git-Features in Visual Studio 2017 (Blog))](https://blogs.msdn.microsoft.com/devops/2017/03/06/new-git-features-in-visual-studio-2017/).
+Sie können Ihren Quellcode in Git-Repositorys verwalten, die von beliebigen Anbietern gehostet werden, einschließlich GitHub. Oder verwenden Sie [Azure DevOps Services](/azure/devops/index), um Code zusammen mit Fehlern und Arbeitselemente für Ihr gesamtes Projekt zu verwalten. Weitere Informationen zur Verwaltung von Git-Repositorys in Visual Studio mithilfe von Team Explorer finden Sie unter [Get Started with Azure Repos and Visual Studio (Erste Schritte mit Git und Visual Studio)](/azure/devops/repos/git/gitquickstart?tabs=visual-studio). Visual Studio verfügt auch über andere integrierte Quellcodeverwaltungsfunktionen. Weitere Informationen dazu finden Sie unter [New Git Features in Visual Studio (blog) (Neue Git-Features in Visual Studio (Blog))](https://devblogs.microsoft.com/devops/new-git-features-in-visual-studio-2017/).
 
-Azure DevOps Services besteht aus cloudbasierten Diensten für die Planung, das Hosting, die Automatisierung und die Bereitstellung von Software und die Zusammenarbeit in Teams. Azure DevOps Services unterstützt sowohl Git-Repositorys (verteilte Versionskontrolle) und Team Foundation-Versionskontrolle (zentrale Versionskontrolle) sowie Pipelines für die kontinuierliche Erstellung und Veröffentlichung (CI/CD) von Code, der in Versionskontrollsystemen gespeichert ist. Azure DevOps Services unterstützt auch Scrum, CMMI und agile Entwicklungsmethoden.
+Azure DevOps Services besteht aus cloudbasierten Diensten zum Planen, Hosten, Automatisieren und Bereitstellen von Software und zur Zusammenarbeit in Teams. Azure DevOps Services unterstützt sowohl Git-Repositorys (verteilte Versionskontrolle) und die Team Foundation-Versionskontrolle (zentralisierte Versionskontrolle). Sie unterstützen Pipelines für die kontinuierliche Erstellung und Releases (CI/CD, Continuous Integration und Continuous Deployment) von Code, der in Versionskontrollsystemen gespeichert wird. Azure DevOps Services unterstützt auch Scrum, CMMI und agile Entwicklungsmethoden.
 
 Team Foundation Server (TFS) ist der Anwendungslebenszyklus-Verwaltungshub für Visual Studio. Auf diese Weise können alle am Entwicklungsprozess beteiligten Personen mithilfe einer einzigen Projektmappe am Prozess teilnehmen. TFS ist auch nützlich für die Verwaltung heterogener Teams und Projekte.
 
-Wenn Sie in Ihrem Netzwerk über eine Azure DevOps-Organisation oder einen Team Foundation Server verfügen, können Sie über das Fenster **Team Explorer** eine Verbindung mit dem Konto bzw. Server in Visual Studio herstellen. Über dieses Fenster können Sie Code in die Quellcodeverwaltung einchecken oder daraus auschecken, Arbeitselemente verwalten, Builds starten und auf Teamräume und Arbeitsbereiche zugreifen. Öffnen Sie **Team Explorer** über das Feld **Schnellstart** oder über das Hauptmenü unter **Ansicht** > **Team Explorer** oder **Team** > **Verbindungen verwalten**.
+Wenn Sie in Ihrem Netzwerk über eine Azure DevOps-Organisation oder einen Team Foundation Server verfügen, können Sie über das Fenster **Team Explorer** eine Verbindung mit dem Konto bzw. Server in Visual Studio herstellen. Über dieses Fenster können Sie Code in die Quellcodeverwaltung einchecken oder daraus auschecken, Arbeitselemente verwalten, Builds starten und auf Teamräume und Arbeitsbereiche zugreifen. Öffnen Sie den **Team Explorer** über das Suchfeld oder über das Hauptmenü unter **Ansicht** > **Team Explorer** oder **Team** > **Verbindungen verwalten**.
 
 Die folgende Abbildung zeigt das Fenster **Team Explorer** für eine Projektmappe, die in Azure DevOps Services gehostet wird.
 
-![Visual Studio Team Explorer](../ide/media/vs2017_teamexplorer.png)
+![Visual Studio Team Explorer](../ide/media/vs2017_teamexplorer_devops.png)
 
 Der Buildprozess lässt sich automatisieren, um den Code zu erstellen, den die Entwickler in Ihrem Team in die Versionskontrolle eingecheckt haben. Beispielsweise können Sie ein Projekt oder mehrere Projekte jede Nacht oder bei jedem Einchecken dieses Code ausführen. Weitere Informationen finden Sie unter [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
 
@@ -127,4 +139,5 @@ Weitere Informationen zum Erweitern von Visual Studio finden Sie unter [Erweiter
 ## <a name="see-also"></a>Siehe auch
 
 - [Übersicht über die Visual Studio-IDE](../get-started/visual-studio-ide.md)
-- [Neuerungen in Visual Studio 2017](../ide/whats-new-in-visual-studio.md)
+- [Neuerungen in Visual Studio 2017](../ide/whats-new-visual-studio-2017.md)
+- [Neues in Visual Studio 2019](../ide/whats-new-visual-studio-2019.md)

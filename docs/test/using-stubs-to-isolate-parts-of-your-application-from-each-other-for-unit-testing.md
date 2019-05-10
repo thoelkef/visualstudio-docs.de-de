@@ -1,22 +1,21 @@
 ---
 title: Verwenden von Stubs, um Teile der Anwendung für Unittests zu isolieren
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: c832853470fb4aa3adad9719ddbbe35123f04772
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 08631af916947021f37bfb3c73b821ba37e3b462
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961968"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Verwenden von Stubs, um für Komponententests Teile der Anwendung voneinander zu trennen
 

@@ -11,33 +11,33 @@ helpviewer_keywords:
 - folders [Office development in Visual Studio]
 - e-mail [Office development in Visual Studio], folders
 - Outlook [Office development in Visual Studio], folders
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 843019c1e7c845f0cdf2dcae7e571bf9ed991b79
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 32dca296ef286e4c892791a1e71cfc765df80f19
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952614"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815496"
 ---
 # <a name="work-with-folders"></a>Arbeiten mit Ordnern
-  Die <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> -Klasse enthält die Methoden und Eigenschaften, die Sie für den Zugriff, die Erstellung und das Anpassen von Ordnern verwenden.  
-  
-|Aufgabe|Prozedur|  
-|----------|---------------|  
-|Suchen Sie Zeichenfolgen in der Betreffzeile von Nachrichten im **Posteingang**.|[Vorgehensweise: Programmgesteuerte Suche in einem bestimmten Ordner](../vsto/how-to-programmatically-search-within-a-specific-folder.md)|  
-|Rufen Sie einen Verweis auf einen Ordner ab, und zeigen Sie den Inhalt an.|[Vorgehensweise: Programmgesteuertes Abrufen eines Ordners anhand des Namens](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)|  
-|Erstellen Sie einen Ordner, in dem eine Webseite im Vorschaubereich angezeigt wird.|[Vorgehensweise: Programmgesteuertes Zuordnen einer Webseite zu einem Outlook-Ordner](../vsto/how-to-programmatically-associate-a-web-page-with-an-outlook-folder.md)|  
-|Erstellen Sie einen Ordner, der über die aktuelle Benutzer-ID als Namen verfügt.|[Vorgehensweise: Programmgesteuertes Erstellen von benutzerdefinierten Ordnerelementen](../vsto/how-to-programmatically-create-custom-folder-items.md)|  
-|Verschieben Sie Nachrichten, die bestimmte Kriterien erfüllen, in einen angegebenen Ordner.|[Vorgehensweise: Programmgesteuertes Verschieben von Elementen in Outlook](../vsto/how-to-programmatically-move-items-in-outlook.md)|  
-  
- Weitere Informationen zu Outlook-Aufgaben und Outlook-Objektmodell finden Sie unter [Übersicht über Outlook-Objektmodell](../vsto/outlook-object-model-overview.md).  
-  
-## <a name="see-also"></a>Siehe auch  
- [Arbeiten mit Kontaktelementen](../vsto/working-with-contact-items.md)   
- [Arbeiten mit e-Mail-Elemente](../vsto/working-with-mail-items.md)   
- [Arbeiten mit Kalenderelementen](../vsto/working-with-calendar-items.md)   
- [Outlook-Projektmappen](../vsto/outlook-solutions.md)  
+  Die <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> -Klasse enthält die Methoden und Eigenschaften, die Sie für den Zugriff, die Erstellung und das Anpassen von Ordnern verwenden.
+
+|Aufgabe|Prozedur|
+|----------|---------------|
+|Suchen Sie Zeichenfolgen in der Betreffzeile von Nachrichten im **Posteingang**.|[Vorgehensweise: Programmgesteuerte Suche in einem bestimmten Ordner](../vsto/how-to-programmatically-search-within-a-specific-folder.md)|
+|Rufen Sie einen Verweis auf einen Ordner ab, und zeigen Sie den Inhalt an.|[Vorgehensweise: Programmgesteuertes Abrufen eines Ordners anhand des Namens](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)|
+|Erstellen Sie einen Ordner, in dem eine Webseite im Vorschaubereich angezeigt wird.|[Vorgehensweise: Programmgesteuertes Zuordnen einer Webseite zu einem Outlook-Ordner](../vsto/how-to-programmatically-associate-a-web-page-with-an-outlook-folder.md)|
+|Erstellen Sie einen Ordner, der über die aktuelle Benutzer-ID als Namen verfügt.|[Vorgehensweise: Programmgesteuertes Erstellen von benutzerdefinierten Ordnerelementen](../vsto/how-to-programmatically-create-custom-folder-items.md)|
+|Verschieben Sie Nachrichten, die bestimmte Kriterien erfüllen, in einen angegebenen Ordner.|[Vorgehensweise: Programmgesteuertes Verschieben von Elementen in Outlook](../vsto/how-to-programmatically-move-items-in-outlook.md)|
+
+ Weitere Informationen zu Outlook-Aufgaben und Outlook-Objektmodell finden Sie unter [Übersicht über Outlook-Objektmodell](../vsto/outlook-object-model-overview.md).
+
+## <a name="see-also"></a>Siehe auch
+- [Arbeiten mit Kontaktelementen](../vsto/working-with-contact-items.md)
+- [Arbeiten mit e-Mail-Elemente](../vsto/working-with-mail-items.md)
+- [Arbeiten mit Kalenderelementen](../vsto/working-with-calendar-items.md)
+- [Outlook-Projektmappen](../vsto/outlook-solutions.md)

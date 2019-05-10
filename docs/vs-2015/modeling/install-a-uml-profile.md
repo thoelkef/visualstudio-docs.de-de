@@ -1,25 +1,22 @@
 ---
 title: Installieren eines UML-Profils | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, profiles
 ms.assetid: 586f9ba5-4d01-4a1d-b001-32e2efaa4f24
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0b109916689aa395f8f5684ea6c78ae2b5b3465e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0187f7dede25900cdf3a78fdbfe2899e5f318472
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729039"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043444"
 ---
 # <a name="install-a-uml-profile"></a>Installieren eines UML-Profils
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,25 +29,22 @@ Sie können Visual Studio mit einem UML-Profil erweitern. Mit einem Profil kön
   
 ### <a name="to-install-a-uml-profile-on-your-computer"></a>So installieren Sie ein UML-Profil auf Ihrem Computer  
   
-1.  Das Profil sollte Ihnen in Form einer Datei mit Visual Studio-Erweiterung (`.vsix`) übergeben worden sein. In der gleichen Datei befinden sich möglicherweise weitere Features.  
+1. Das Profil sollte Ihnen in Form einer Datei mit Visual Studio-Erweiterung (`.vsix`) übergeben worden sein. In der gleichen Datei befinden sich möglicherweise weitere Features.  
   
      Verschieben Sie die `.vsix`-Datei an einen geeigneten Speicherort auf Ihrem Computer.  
   
-2.  Doppelklicken Sie im Windows-Explorer (oder Datei-Explorer) auf die `.vsix`-Datei, oder öffnen Sie sie in [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
+2. Doppelklicken Sie im Windows-Explorer (oder Datei-Explorer) auf die `.vsix`-Datei, oder öffnen Sie sie in [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
   
-3.  Klicken Sie auf **installieren** im Dialogfeld, das angezeigt wird.  
+3. Klicken Sie auf **installieren** im Dialogfeld, das angezeigt wird.  
   
-4.  Öffnen Sie zum Deinstallieren oder vorübergehend deaktivieren Sie die Erweiterung, **Erweiterungs-Manager** aus der **Tools** Menü.  
+4. Öffnen Sie zum Deinstallieren oder vorübergehend deaktivieren Sie die Erweiterung, **Erweiterungs-Manager** aus der **Tools** Menü.  
   
 ### <a name="to-uninstall-or-disable-a-profile-extension"></a>So deinstallieren oder deaktivieren Sie eine Profilerweiterung  
   
-1.  Visual Studio **Tools** Menü klicken Sie auf **Erweiterungs-Manager**.  
+1. Visual Studio **Tools** Menü klicken Sie auf **Erweiterungs-Manager**.  
   
-2.  Klicken Sie auf die Erweiterung, die Sie verwenden möchten, entfernen Sie aus, und klicken Sie dann auf **deaktivieren** oder **Deinstallieren**.  
+2. Klicken Sie auf die Erweiterung, die Sie verwenden möchten, entfernen Sie aus, und klicken Sie dann auf **deaktivieren** oder **Deinstallieren**.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Anpassen des Modells mit Profilen und Stereotypen](../modeling/customize-your-model-with-profiles-and-stereotypes.md)   
  [Definieren eines Profils zum Erweitern von UML](../modeling/define-a-profile-to-extend-uml.md)
-
-
-

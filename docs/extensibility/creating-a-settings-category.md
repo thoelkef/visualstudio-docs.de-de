@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4653883dbb9d82fd23d5188a2a247db0ec6b69cd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+ms.openlocfilehash: 304b2afd734527b80a465fc5074077bf8b0661fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935618"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411330"
 ---
 # <a name="create-a-settings-category"></a>Erstellen einer Einstellungskategorie
 
@@ -33,11 +33,11 @@ Um diese exemplarische Vorgehensweise zu starten, schließen Sie zunächst im er
 
 ### <a name="to-create-a-settings-category"></a>Zum Erstellen einer Einstellungskategorie
 
-1.  Abschließen der [Erstellen einer Optionsseite](../extensibility/creating-an-options-page.md).
+1. Abschließen der [Erstellen einer Optionsseite](../extensibility/creating-an-options-page.md).
 
-2.  Öffnen der *VSPackage.resx* Datei, und fügen Sie diese drei Zeichenfolgenressourcen hinzu:
+2. Öffnen der *VSPackage.resx* Datei, und fügen Sie diese drei Zeichenfolgenressourcen hinzu:
 
-    |name|Wert|
+    |Name|Wert|
     |----------|-----------|
     |106|Meine Kategorie|
     |107|Meine Einstellungen|
@@ -46,9 +46,9 @@ Um diese exemplarische Vorgehensweise zu starten, schließen Sie zunächst im er
      Dadurch wird die Ressourcen erstellt, diesem Namen der Kategorie "My Category", Objekt "My Settings" und die Beschreibung der Kategorien "OptionInteger und OptionFloat".
 
     > [!NOTE]
-    >  Dieser drei nur die Namen der Kategorie erscheint nicht in der **Einstellungen importieren und exportieren** Assistenten.
+    > Dieser drei nur die Namen der Kategorie erscheint nicht in der **Einstellungen importieren und exportieren** Assistenten.
 
-3.  In *MyToolsOptionsPackage.cs*, Hinzufügen einer `float` Eigenschaft mit dem Namen `OptionFloat` auf die `OptionPageGrid` Klasse, wie im folgenden Beispiel gezeigt.
+3. In *MyToolsOptionsPackage.cs*, Hinzufügen einer `float` Eigenschaft mit dem Namen `OptionFloat` auf die `OptionPageGrid` Klasse, wie im folgenden Beispiel gezeigt.
 
     ```csharp
     public class OptionPageGrid : DialogPage
@@ -76,41 +76,41 @@ Um diese exemplarische Vorgehensweise zu starten, schließen Sie zunächst im er
     ```
 
     > [!NOTE]
-    >  Die `OptionPageGrid` Kategorie mit dem Namen "My Category" ist jetzt besteht aus den zwei Eigenschaften, `OptionInteger` und `OptionFloat`.
+    > Die `OptionPageGrid` Kategorie mit dem Namen "My Category" ist jetzt besteht aus den zwei Eigenschaften, `OptionInteger` und `OptionFloat`.
 
-4.  Hinzufügen einer <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> auf die `MyToolsOptionsPackage` -Klasse und weisen Sie ihm die CategoryName "My Category", geben sie den Objektnamen "My Settings" und IsToolsOptionPage auf "true" festgelegt. Legen Sie die CategoryResourceID, ObjectNameResourceID und DescriptionResourceID, auf die entsprechenden Zeichenfolgenressource, die IDs zuvor erstellt haben.
+4. Hinzufügen einer <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> auf die `MyToolsOptionsPackage` -Klasse und weisen Sie ihm die CategoryName "My Category", geben sie den Objektnamen "My Settings" und IsToolsOptionPage auf "true" festgelegt. Legen Sie die CategoryResourceID, ObjectNameResourceID und DescriptionResourceID, auf die entsprechenden Zeichenfolgenressource, die IDs zuvor erstellt haben.
 
     ```csharp
     [ProvideProfileAttribute(typeof(OptionPageGrid),
         "My Category", "My Settings", 106, 107, isToolsOptionPage:true, DescriptionResourceID = 108)]
     ```
 
-5.  Erstellen Sie das Projekt, und starten Sie das Debugging. In der experimentellen Instanz sollte angezeigt werden, **Meine Rasterseite** verfügt jetzt über Ganzzahl- und Float-Werte.
+5. Erstellen Sie das Projekt, und starten Sie das Debugging. In der experimentellen Instanz sollte angezeigt werden, **Meine Rasterseite** verfügt jetzt über Ganzzahl- und Float-Werte.
 
 ## <a name="examine-the-settings-file"></a>Überprüfen Sie die Einstellungsdatei
  In diesem Abschnitt exportieren Sie Eigenschaftswerte für die Kategorie, in eine Datei. Sie untersuchen Sie die Datei und importieren Sie dann die Werte wieder in die Eigenschaftskategorie.
 
-1.  Starten Sie das Projekt im Debugmodus durch Drücken von **F5**. Dadurch wird die experimentelle Instanz gestartet.
+1. Starten Sie das Projekt im Debugmodus durch Drücken von **F5**. Dadurch wird die experimentelle Instanz gestartet.
 
-2.  Öffnen der **Tools** > **Optionen** Dialogfeld.
+2. Öffnen der **Tools** > **Optionen** Dialogfeld.
 
-3.  Erweitern Sie in der Strukturansicht im linken Bereich **My Category** , und klicken Sie dann auf **Meine Rasterseite**.
+3. Erweitern Sie in der Strukturansicht im linken Bereich **My Category** , und klicken Sie dann auf **Meine Rasterseite**.
 
-4.  Ändern Sie den Wert der **OptionFloat** zu 3,1416 und **OptionInteger** bis 12. Klicken Sie auf **OK**.
+4. Ändern Sie den Wert der **OptionFloat** zu 3,1416 und **OptionInteger** bis 12. Klicken Sie auf **OK**.
 
-5.  Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren**.
+5. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren**.
 
      Die **Einstellungen importieren und exportieren** -Assistent wird angezeigt.
 
-6.  Stellen Sie sicher, dass **ausgewählte umgebungseinstellungen exportieren** ausgewählt ist, und klicken Sie dann auf **Weiter**.
+6. Stellen Sie sicher, dass **ausgewählte umgebungseinstellungen exportieren** ausgewählt ist, und klicken Sie dann auf **Weiter**.
 
      Die **Einstellungen für den Export** Seite wird angezeigt.
 
-7.  Klicken Sie auf **Meine Einstellungen**.
+7. Klicken Sie auf **Meine Einstellungen**.
 
      Die **Beschreibung** Änderungen an **OptionInteger und OptionFloat**.
 
-8.  Stellen Sie sicher, dass **Meine Einstellungen** ist die einzige Kategorie, die ausgewählt ist, und klicken Sie dann auf **Weiter**.
+8. Stellen Sie sicher, dass **Meine Einstellungen** ist die einzige Kategorie, die ausgewählt ist, und klicken Sie dann auf **Weiter**.
 
      Die **Name der Datei** Seite wird angezeigt.
 

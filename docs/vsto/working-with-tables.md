@@ -10,28 +10,28 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, tables
 - Word [Office development in Visual Studio], tables
 - documents [Office development in Visual Studio], tables
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 68d15eab133eebd31ae9119ad8e512b691fc0f4e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f1102a996f06634396f8bec3a02400fa952810e5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829932"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815351"
 ---
 # <a name="work-with-tables"></a>Arbeiten mit Tabellen
-  Die Themen in diesem Abschnitt bieten schrittweise Anleitungen und Codebeispiele für die Verwendung des Microsoft Office Word-Objektmodells zum Arbeiten mit Tabellen in Office-Projekten. In einigen Fällen unterscheiden sich die Verfahren zum Ausführen dieser Aufgaben in VSTO-Add-Ins von den Verfahren, die Sie in Anpassungen auf Dokumentebene verwenden.  
-  
-|Aufgabe|Prozedur|  
-|----------|---------------|  
-|Erstellen Sie eine Tabelle, wenden Sie eine Formatvorlage an, und greifen Sie im Code auf diese Tabelle zu.|[Vorgehensweise: Programmgesteuertes Erstellen von Word-Tabellen](../vsto/how-to-programmatically-create-word-tables.md)|  
-|Erstellen Sie eine Tabelle, formatieren Sie sie anschließend, und fügen Sie dann Daten in die Zellen ein.|[Vorgehensweise: Programmgesteuertes Auffüllen von Word-Tabellen mit Dokumenteigenschaften](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)|  
-|Fügen Sie eine Zeile oder Spalte zu einer Tabelle hinzu.|[Vorgehensweise: Programmgesteuertes Hinzufügen von Zeilen und Spalten zu Word-Tabellen](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)|  
-|Fügen Sie Text zu einer Zelle hinzu und formatieren Sie ihn anschließend.|[Vorgehensweise: Programmgesteuertes Hinzufügen von Text und Formatierungen zu Zellen in Word-Tabellen](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)|  
-  
-## <a name="see-also"></a>Siehe auch  
- [Übersicht über das Word-Objektmodell](../vsto/word-object-model-overview.md)   
- [Übersicht über die Entwicklung von Office-Projektmappen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
+  Die Themen in diesem Abschnitt bieten schrittweise Anleitungen und Codebeispiele für die Verwendung des Microsoft Office Word-Objektmodells zum Arbeiten mit Tabellen in Office-Projekten. In einigen Fällen unterscheiden sich die Verfahren zum Ausführen dieser Aufgaben in VSTO-Add-Ins von den Verfahren, die Sie in Anpassungen auf Dokumentebene verwenden.
+
+|Aufgabe|Prozedur|
+|----------|---------------|
+|Erstellen Sie eine Tabelle, wenden Sie eine Formatvorlage an, und greifen Sie im Code auf diese Tabelle zu.|[Vorgehensweise: Programmgesteuertes Erstellen von Word-Tabellen](../vsto/how-to-programmatically-create-word-tables.md)|
+|Erstellen Sie eine Tabelle, formatieren Sie sie anschließend, und fügen Sie dann Daten in die Zellen ein.|[Vorgehensweise: Programmgesteuertes Auffüllen von Word-Tabellen mit Dokumenteigenschaften](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)|
+|Fügen Sie eine Zeile oder Spalte zu einer Tabelle hinzu.|[Vorgehensweise: Programmgesteuertes Hinzufügen von Zeilen und Spalten zu Word-Tabellen](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)|
+|Fügen Sie Text zu einer Zelle hinzu und formatieren Sie ihn anschließend.|[Vorgehensweise: Programmgesteuertes Hinzufügen von Text und Formatierungen zu Zellen in Word-Tabellen](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)|
+
+## <a name="see-also"></a>Siehe auch
+- [Übersicht über das Word-Objektmodell](../vsto/word-object-model-overview.md)
+- [Übersicht über die Entwicklung von Office-Projektmappen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <entryPoints> element
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8392fa83899e078050786091fa4a2f462eb40c9b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5bbe0c00b86f38ab8b3dc47713af7d3b38f98045
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852934"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797584"
 ---
 # <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;EntryPoints&gt; -Element (Office-Entwicklung in Visual Studio)
   Das `entryPoints` -Element des `vstav3` -Namespace enthält alle `entryPoint` -Elemente, die einer Office-Projektmappe zugeordnet sind.
@@ -48,7 +48,7 @@ ms.locfileid: "53852934"
 
  `entryPoints` hat die folgenden Elemente:
 
-### <a name="entrypoint"></a>entryPoint
+### <a name="entrypoint"></a>entrypoint
  Erforderlich. Die Rolle der `entryPoint` Element in der `vstav3` Namespace definiert ist, [ &#60;EntryPoint&#62; Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md).
 
 ## <a name="document-level-customization-example"></a>Beispiel für die Anpassung auf Dokumentebene

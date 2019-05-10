@@ -15,26 +15,23 @@ helpviewer_keywords:
 ms.assetid: 1624e4af-018e-4b7c-9a00-063bfe97fb7d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 664ec654d52b8b5c17ff89429ba1f78033cfffc7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 9cf25518a5511c0da629c400adfe866789929ea2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852359"
 ---
 # <a name="debugging-web-applications-troubleshooting"></a>Debuggen von Webanwendungen: Problembehandlung
-Dieser Abschnitt enthält allgemeine Prozeduren, die zur Fehlerbehebung verwendet werden können.  
-  
-## <a name="in-this-section"></a>In diesem Abschnitt  
- [Vorgehensweise: Überprüfen von IIS-Eigenschafteneinstellungen](../debugger/how-to-verify-iis-property-settings.md)  
- Erklärt, wie die Eigenschaften in IIS ordnungsgemäß festgelegt werden, um Debuggen zu aktivieren.  
-  
-## <a name="related-sections"></a>Verwandte Abschnitte  
- [Debuggen von Webanwendungen: Fehler und Problembehandlung](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
- Erläutert das Behandeln und Auflösen von Fehlern.  
-  
- [Debuggen von Webanwendungen und Skripts](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)  
- Übersicht über das Debuggen von Webanwendungen wie [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], XML-Webdiensten und ATL-Server-Projekten.
+Dieser Abschnitt enthält allgemeine Prozeduren, die zur Fehlerbehebung verwendet werden können.
+
+## <a name="in-this-section"></a>In diesem Abschnitt
+ [Vorgehensweise: Überprüfen von IIS-Eigenschafteneinstellungen](../debugger/how-to-verify-iis-property-settings.md) wird erläutert, wie die Eigenschaften in IIS so aktivieren Sie Debuggen ordnungsgemäß festgelegt.
+
+## <a name="related-sections"></a>Verwandte Abschnitte
+ [Debuggen von Webanwendungen: Fehler und Problembehandlung](../debugger/debugging-web-applications-errors-and-troubleshooting.md) wird erläutert, Problembehandlung und Auflösen von Fehlern.
+
+ [Debuggen von Webanwendungen und Skripts](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications) Überblick über das Debuggen von Webanwendungen wie z. B. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], XML-Webdiensten und ATL-Server-Projekte.

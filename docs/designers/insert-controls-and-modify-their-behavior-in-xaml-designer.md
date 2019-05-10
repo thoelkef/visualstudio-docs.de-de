@@ -1,21 +1,19 @@
 ---
 title: Einfügen von Steuerelementen und Ändern des Verhaltens im XAML-Designer
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: a80fff74-bf01-41c9-ab85-ada7a873c3a9
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 739c43b0ed6665684f0a38b35dfd6eccdf8f5b2c
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: edb657779e8c404032d71061132816a2a30c83c9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62893453"
 ---
 # <a name="insert-controls-and-modify-their-behavior-in-xaml-designer"></a>Einfügen von Steuerelementen und Ändern des Verhaltens im XAML-Designer
 
@@ -57,7 +55,7 @@ Ein *Verhalten* ist ein wiederverwendbares Code-Paket. Sie können damit mehr tu
 
 ![FluidMoveBehavior im Eigenschaftenbereich](../designers/media/b4_fluidmovebehaviorproperties_sample.png)
 
-**Sehen Sie sich ein Video an:** ![Play-Symbol](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Blend-Tipps: Einführung in die Verwendung von Verhaltensweisen Teil 1](http://www.bing.com/videos/search?q=Expression%20blend%20behaviors&qs=n&form=QBVR&pq=expression%20blend%20behavior&sc=4-25&sp=-1&sk=#view=detail&mid=CF0DD797ED84DE740904CF0DD797ED84DE740904).
+**Sehen Sie sich ein Video an:** ![Wiedergabesymbol](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Blend-Tipps: Einführung in die Verwendung von Verhaltensweisen Teil 1](http://www.bing.com/videos/search?q=Expression%20blend%20behaviors&qs=n&form=QBVR&pq=expression%20blend%20behavior&sc=4-25&sp=-1&sk=#view=detail&mid=CF0DD797ED84DE740904CF0DD797ED84DE740904).
 
 ### <a name="events"></a>Ereignisse
 

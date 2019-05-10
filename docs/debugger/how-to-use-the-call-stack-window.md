@@ -26,15 +26,15 @@ helpviewer_keywords:
 ms.assetid: 5154a2a1-4729-4dbb-b675-db611a72a731
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe9ba9f39a88a968524517a6c23f16ffa1aff0d7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 2673ed9a69a80b2e9ab9275ff54909e33e4434f4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906351"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Anzuzeigen Sie die Aufrufliste, und verwenden Sie das Fenster "Aufrufliste" im debugger
 
@@ -60,7 +60,7 @@ Ein gelber Pfeil bezeichnet den Stapelrahmen, in dem sich der Ausführungszeiger
 
 ## <a name="display-non-user-code-in-the-call-stack-window"></a>Nicht benutzerseitiger Code angezeigt, in dem Fenster "Aufrufliste"
 
--   Klicken Sie mit der rechten Maustaste auf das Fenster **Aufrufliste**, und wählen Sie **Externen Code anzeigen** aus.
+- Klicken Sie mit der rechten Maustaste auf das Fenster **Aufrufliste**, und wählen Sie **Externen Code anzeigen** aus.
 
 Nicht benutzerseitiger Code ist Code, der nicht Wenn angezeigt wird [nur mein Code](../debugger/just-my-code.md) aktiviert ist. In verwaltetem Code sind nicht benutzerseitiger Codeframes standardmäßig ausgeblendet. Die folgende Notation wird anstelle der Frames nicht benutzerseitiger Code angezeigt:
 
@@ -68,29 +68,29 @@ Nicht benutzerseitiger Code ist Code, der nicht Wenn angezeigt wird [nur mein Co
 
 ## <a name="bkmk_switch"></a> Wechseln Sie zu anderem Stapelrahmen (Ändern des Debugkontexts)
 
-1.  In der **Aufrufliste** der rechten Maustaste auf der Stapel Rahmen, dessen Code und Daten, die Sie anzeigen möchten.
+1. In der **Aufrufliste** der rechten Maustaste auf der Stapel Rahmen, dessen Code und Daten, die Sie anzeigen möchten.
 
     Sie können auch auf den Frame Doppelklicken der **Aufrufliste** Fenster, wechseln Sie zu diesem Frame.
 
-2.  Wählen Sie **Switch to Frame** (Zu Frame wechseln) aus.
+2. Wählen Sie **Switch to Frame** (Zu Frame wechseln) aus.
 
      Neben den Stapelrahmen, die, den Sie ausgewählt haben, wird ein grüner Pfeil in Form einer Welle angezeigt. Der Ausführungszeiger verbleibt im ursprünglichen Rahmen, der noch immer durch einen gelben Pfeil gekennzeichnet ist. Wenn Sie im Menü **Debuggen** den Befehl **Schritt** oder **Weiter** auswählen, wird die Ausführung nicht im neu ausgewählten, sondern im ursprünglichen Frame fortgesetzt.
 
 ## <a name="view-the-source-code-for-a-function-on-the-call-stack"></a>Den Quellcode für eine Funktion in der Aufrufliste anzeigen
 
--   Klicken Sie im Fenster **Aufrufliste** mit der rechten Maustaste auf die Funktion, deren Quellcode Sie anzeigen möchten, und wählen Sie **Gehe zu Quellcode** aus.
+- Klicken Sie im Fenster **Aufrufliste** mit der rechten Maustaste auf die Funktion, deren Quellcode Sie anzeigen möchten, und wählen Sie **Gehe zu Quellcode** aus.
 
 ## <a name="run-to-a-specific-function-from-the-call-stack-window"></a>Führen Sie an eine bestimmte Funktion aus dem Fenster "Aufrufliste"
 
--  In der **Aufrufliste** Fenster, wählen Sie die Funktion, mit der rechten Maustaste, und wählen Sie dann **Ausführen bis Cursor**.
+- In der **Aufrufliste** Fenster, wählen Sie die Funktion, mit der rechten Maustaste, und wählen Sie dann **Ausführen bis Cursor**.
 
 ## <a name="set-a-breakpoint-on-the-exit-point-of-a-function-call"></a>Legen Sie einen Haltepunkt am Exitpunkt eines Funktionsaufrufs
 
--   Finden Sie unter [Festlegen eines Haltepunkts in einer Call Stack-Funktion](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_in_the_call_stack_window).
+- Finden Sie unter [Festlegen eines Haltepunkts in einer Call Stack-Funktion](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_in_the_call_stack_window).
 
 ## <a name="display-calls-to-or-from-another-thread"></a>Anzeigen von Anrufen zu oder von einem anderen thread
 
--   Klicken Sie mit der rechten Maustaste auf das Fenster **Aufrufliste**, und wählen Sie **Aufrufe zu/von anderen Threads einschließen** aus.
+- Klicken Sie mit der rechten Maustaste auf das Fenster **Aufrufliste**, und wählen Sie **Aufrufe zu/von anderen Threads einschließen** aus.
 
 ## <a name="visually-trace-the-call-stack"></a>Die Aufrufliste visuell zu verfolgen
 
@@ -104,11 +104,11 @@ In Visual Studio Enterprise (nur) können Sie Code Maps für die Aufrufliste bei
 
 ## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>Zeigen Sie den Disassemblierungscode für eine Funktion in der Aufrufliste (C#, C++, Visual Basic F#)
 
--   Klicken Sie im Fenster **Aufrufliste** mit der rechten Maustaste auf die Funktion, deren Disassemblycode Sie anzeigen möchten, und wählen Sie **Gehe zu Disassembly** aus.
+- Klicken Sie im Fenster **Aufrufliste** mit der rechten Maustaste auf die Funktion, deren Disassemblycode Sie anzeigen möchten, und wählen Sie **Gehe zu Disassembly** aus.
 
 ## <a name="change-the-optional-information-displayed"></a>Ändern Sie die Anzeige optionale Informationen
 
--   Mit der rechten Maustaste den **Aufrufliste** Fenster und aktivieren oder deaktivieren **anzeigen \<**  _die gewünschten Informationen_ **>**.
+- Mit der rechten Maustaste den **Aufrufliste** Fenster und aktivieren oder deaktivieren **anzeigen \<**  _die gewünschten Informationen_ **>**.
 
 ## <a name="bkmk_symbols"></a> Laden von Symbolen für ein Modul (C#, C++, Visual Basic F#)
 
@@ -118,25 +118,25 @@ Weitere Informationen finden Sie unter [Angeben von Symbol- und Quelldateien](..
 
 ### <a name="to-load-symbols"></a>So laden Sie Symbole
 
-1.  In der **Aufrufliste** der rechten Maustaste auf der Stapelrahmen, für welche Symbole nicht geladen werden. Der Rahmen wird abgeblendet.
+1. In der **Aufrufliste** der rechten Maustaste auf der Stapelrahmen, für welche Symbole nicht geladen werden. Der Rahmen wird abgeblendet.
 
-2.  Zeigen Sie auf **Symbole laden** und wählen Sie dann **Microsoft-Symbolserver** (falls verfügbar), oder navigieren Sie zu den Symbolpfad.
+2. Zeigen Sie auf **Symbole laden** und wählen Sie dann **Microsoft-Symbolserver** (falls verfügbar), oder navigieren Sie zu den Symbolpfad.
 
 ### <a name="to-set-the-symbol-path"></a>So legen Sie den Symbolpfad fest
 
-1.  Wählen Sie im Fenster **Aufrufliste** im Kontextmenü die Option **Symboleinstellungen** aus.
+1. Wählen Sie im Fenster **Aufrufliste** im Kontextmenü die Option **Symboleinstellungen** aus.
 
      Das Dialogfeld **Optionen** wird geöffnet, und die Seite **Symbole** wird angezeigt.
 
-2.  Wählen Sie **Symboleinstellungen**.
+2. Wählen Sie **Symboleinstellungen**.
 
-3.  Klicken Sie im Dialogfeld **Optionen** auf das Ordnersymbol.
+3. Klicken Sie im Dialogfeld **Optionen** auf das Ordnersymbol.
 
      Im Feld **Speicherorte für Symboldateien (.pdb)** wird ein Cursor angezeigt.
 
-4.  Geben Sie einen Verzeichnispfadnamen zum Symbolspeicherort auf dem Computer, den Sie debuggen. Für lokale und remote zu Debuggen ist dies ein Pfad auf dem lokalen Computer.
+4. Geben Sie einen Verzeichnispfadnamen zum Symbolspeicherort auf dem Computer, den Sie debuggen. Für lokale und remote zu Debuggen ist dies ein Pfad auf dem lokalen Computer.
 
-5.  Wählen Sie **OK** schließen die **Optionen** Dialogfeld.
+5. Wählen Sie **OK** schließen die **Optionen** Dialogfeld.
 
 ## <a name="see-also"></a>Siehe auch
 

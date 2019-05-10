@@ -1,25 +1,20 @@
 ---
 title: Analysieren der Netzwerkverwendung | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 45fa397d-d7a1-4c4c-9c97-ede6c21643bd
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3dd68bec55b53d1b4618e8ae1679603577daf295
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 33e5dbeced93ddfd1a1eec817d205a7be80d0e60
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726846"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441899"
 ---
 # <a name="network-usage"></a>Analysieren der Netzwerkverwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,14 +24,14 @@ Das Diagnosetool **Netzwerk** von Visual Studio erfasst mithilfe der [Windows.We
  Das Netzwerktool unterstützt nur universelle Windows-Apps. Andere Plattformen werden derzeit nicht unterstützt.  
   
 > [!NOTE]
->  Detailliertere Informationen zum Netzwerk-Tool finden Sie unter [Introducing Visual Studio’s network tool (Einführung in das Netzwerk-Tool von Visual Studio)](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studio-s-network-tool.aspx).  
+> Detailliertere Informationen zum Netzwerk-Tool finden Sie unter [Introducing Visual Studio’s network tool (Einführung in das Netzwerk-Tool von Visual Studio)](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studio-s-network-tool.aspx).  
   
 ## <a name="collecting-network-tool-data"></a>Sammeln von Netzwerktooldaten  
  Sie sollten das Tool **Netzwerk** mit einem geöffneten Visual Studio-Projekt auf dem Computer mit Visual Studio ausführen.  
   
 1. Öffnen Sie das Projekt in Visual Studio.  
   
-2. Wählen Sie im Menü die Option **Debuggen / Leistungsprofiler** aus. Wählen Sie Netzwerk aus, und klicken Sie anschließend auf **Starten**.  
+2. Wählen Sie im Menü die Option **Debuggen / Leistungsprofiler** aus. Wählen Sie **Netzwerk** aus, und klicken Sie anschließend auf **Starten**.  
   
 3. Das Netzwerktool beginnt mit dem Erfassen des HTTP-Datenverkehrs Ihrer App.  
   
@@ -72,16 +67,13 @@ Das Diagnosetool **Netzwerk** von Visual Studio erfasst mithilfe der [Windows.We
 ### <a name="analysis-tips"></a>Tipps für die Analyse  
  Dieses Tool hebt bestimmte Bereiche hervor, die bei der Ausführung von netzwerkbezogenen Analysen nützlich sein können:  
   
-1.  Anforderungen, die vollständig aus dem Cache bedient werden, werden in der Spalte **Empfangen** als **(aus Cache)** angezeigt. Dies kann dabei helfen, herauszufinden, ob der Cache effektiv genutzt und damit Bandbreite für die Benutzer gespart wird, oder ob versehentlich überflüssige Antworten zwischengespeichert und den Endbenutzern Ihrer Anwendung veraltete Daten bereitgestellt werden.  
+1. Anforderungen, die vollständig aus dem Cache bedient werden, werden in der Spalte **Empfangen** als **(aus Cache)** angezeigt. Dies kann dabei helfen, herauszufinden, ob der Cache effektiv genutzt und damit Bandbreite für die Benutzer gespart wird, oder ob versehentlich überflüssige Antworten zwischengespeichert und den Endbenutzern Ihrer Anwendung veraltete Daten bereitgestellt werden.  
   
-2.  Fehlerantworten (4xx oder 5xx) werden mit einem roten Statuscode in der Spalte **Ergebnisse** angezeigt und auch in der Zusammenfassungsleiste hervorgehoben. So lassen sich unter den vielen potenziellen Anforderungen Ihrer Anwendung Fehler ganz einfach erkennen.  
+2. Fehlerantworten (4xx oder 5xx) werden mit einem roten Statuscode in der Spalte **Ergebnisse** angezeigt und auch in der Zusammenfassungsleiste hervorgehoben. So lassen sich unter den vielen potenziellen Anforderungen Ihrer Anwendung Fehler ganz einfach erkennen.  
   
-3.  Die Schaltfläche für eine strukturierte Ausgabe („Schöndruck“, auf der Registerkarte mit dem Haupttext) verbessert die Lesbarkeit des Inhalts und vereinfacht so das Analysieren großer Mengen von JSON-, XML-, HTML-, CSS-, JavaScript- und TypeScript-Antworten.  
+3. Die Schaltfläche für eine strukturierte Ausgabe („Schöndruck“, auf der Registerkarte mit dem Haupttext) verbessert die Lesbarkeit des Inhalts und vereinfacht so das Analysieren großer Mengen von JSON-, XML-, HTML-, CSS-, JavaScript- und TypeScript-Antworten.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Ausführen von Profilerstellungstools ohne Debuggen](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
- [Visual Studio-Blog: Einführung in Visual Studio Netzwerk-Inspektor](http://go.microsoft.com/fwlink/?LinkId=535022)   
- [Channel 9 Video: VS Diagnostics tools – New Network Profiler (Channel-9-Video: Diagnosetools von Visual Studio – Neuer Profiler „Netzwerk“)](http://channel9.msdn.com/Series/ConnectOn-Demand/206)
-
-
-
+ [Visual Studio-Blog: Einführung in die Netzwerk-Inspektor von Visual Studio](http://go.microsoft.com/fwlink/?LinkId=535022)   
+ [Channel 9-Video: VS Diagnostics Tools – neue Netzwerk-Profiler](http://channel9.msdn.com/Series/ConnectOn-Demand/206)

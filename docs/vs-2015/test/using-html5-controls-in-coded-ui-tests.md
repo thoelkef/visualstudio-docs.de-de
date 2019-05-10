@@ -1,24 +1,19 @@
 ---
 title: Verwenden von HTML5-Steuerelementen in Tests der programmierten UI | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 2000b214-ae92-4334-b549-aa0eb4f45fe1
 caps.latest.revision: 19
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 92ee95d4840ab9a833adc1b0060117f0d6b94fbd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8b08853937be3f11913f88293633b02f3636898c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439728"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Verwenden von HTML5-Steuerelementen in Tests der programmierten UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,29 +22,29 @@ Bei Tests der programmierten UI werden einige HTML5-Steuerelemente unterstützt,
   
  **Anforderungen**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 > [!WARNING]
->  In Versionen vor Internet Explorer 10 konnten Tests der programmierten UI im Vergleich zum Internet Explorer-Prozess mit einer höheren Berechtigungsstufe ausgeführt werden. Beim Ausführen von Tests der programmierten UI in Internet Explorer 10 müssen sowohl der Prozess für Tests der programmierten UI als auch der Internet Explorer-Prozess dieselbe Berechtigungsstufe aufweisen. Dies liegt an sichereren AppContainer-Features in Internet Explorer 10.  
+> In Versionen vor Internet Explorer 10 konnten Tests der programmierten UI im Vergleich zum Internet Explorer-Prozess mit einer höheren Berechtigungsstufe ausgeführt werden. Beim Ausführen von Tests der programmierten UI in Internet Explorer 10 müssen sowohl der Prozess für Tests der programmierten UI als auch der Internet Explorer-Prozess dieselbe Berechtigungsstufe aufweisen. Dies liegt an sichereren AppContainer-Features in Internet Explorer 10.  
   
 > [!WARNING]
->  Wenn Sie einen Test der programmierten UI in Internet Explorer 10 erstellen, wird dieser mit Internet Explorer 9 oder Internet Explorer 8 möglicherweise nicht ausgeführt. Der Grund hierfür ist, dass Internet Explorer 10 HTML5-Steuerelemente wie Audio, Video, ProgressBar und Schieberegler enthält. Diese HTML5-Steuerelemente werden von Internet Explorer 9 oder Internet Explorer 8 nicht erkannt. Entsprechend kann der Test der codierten UI unter Verwendung von Internet Explorer 9 einige HTML5-Steuerelemente enthalten, die auch nicht von Internet Explorer 8 erkannt werden.  
+> Wenn Sie einen Test der programmierten UI in Internet Explorer 10 erstellen, wird dieser mit Internet Explorer 9 oder Internet Explorer 8 möglicherweise nicht ausgeführt. Der Grund hierfür ist, dass Internet Explorer 10 HTML5-Steuerelemente wie Audio, Video, ProgressBar und Schieberegler enthält. Diese HTML5-Steuerelemente werden von Internet Explorer 9 oder Internet Explorer 8 nicht erkannt. Entsprechend kann der Test der codierten UI unter Verwendung von Internet Explorer 9 einige HTML5-Steuerelemente enthalten, die auch nicht von Internet Explorer 8 erkannt werden.  
   
 ## <a name="supported-html5-controls"></a>Unterstützte HTML5-Steuerelemente  
  Tests der programmierten UI umfassen die Unterstützung für die Aufzeichnung, Wiedergabe und Validierung der folgenden HTML5-Steuerelemente:  
   
--   [Audio-Steuerelement](#UsingHTML5ControlsCodedUITestsAudio)  
+- [Audio-Steuerelement](#audio-control)  
   
--   [Videosteuerelement](#UsingHTML5ControlsCodedUITestsVideo)  
+- [Videosteuerelement](#video-control)  
   
--   [Schieberegler](#UsingHTML5ControlsCodedUITestsSlider)  
+- [Schieberegler](#slider)  
   
--   [ProgressBar](#UsingHTML5ControlsCodedUITestsProgressBar)  
+- [ProgressBar](#progressbar)  
   
-###  <a name="UsingHTML5ControlsCodedUITestsAudio"></a> Audio-Steuerelement  
- **Audiosteuerelement:** Aktionen im HTML5-Audiosteuerelement werden ordnungsgemäß aufgezeichnet und wiedergegeben.  
+### <a name="audio-control"></a>Audio-Steuerelement  
+ **Audio-Steuerelement:** Aktionen im HTML5-Audiosteuerelement werden ordnungsgemäß aufgezeichnet und wiedergegeben.  
   
- ![HTML5-Audiosteuerelement](../test/media/codedui-html5-audio.png "CodedUI_HTML5_Audio")  
+ ![HTML5-Audiosteuerelement](../test/media/codedui-html5-audio.png)  
   
 |Aktion|Aufzeichnung|Generierter Code|  
 |------------|---------------|--------------------|  
@@ -79,7 +74,6 @@ string ReadyState
 string Seeking  
 string Src  
 string Volume  
-  
 ```  
   
  **Sucheigenschaften:** Die Sucheigenschaften für `HtmlAudio` sind `Id`, `Name` und `Title`.  
@@ -87,12 +81,12 @@ string Volume
  **Filtereigenschaften:** Die Filtereigenschaften für `HtmlAudio` sind `Src`, `Class`, `ControlDefinition` und `TagInstance`.  
   
 > [!NOTE]
->  Die Zeitdauer für das Suchen und Anhalten kann erheblich sein. Während der Wiedergabe wartet der Test der programmierten UI bis zur in `(TimeSpan)` angegebenen Zeit, bevor die Audiodatei angehalten wird. Wenn die angegebene Zeit unter bestimmten Ausnahmefällen verstrichen ist, bevor der Befehl „Pause“ aktiviert wurde, wird eine Ausnahme zurückgegeben.  
+> Die Zeitdauer für das Suchen und Anhalten kann erheblich sein. Während der Wiedergabe wartet der Test der programmierten UI bis zur in `(TimeSpan)` angegebenen Zeit, bevor die Audiodatei angehalten wird. Wenn die angegebene Zeit unter bestimmten Ausnahmefällen verstrichen ist, bevor der Befehl „Pause“ aktiviert wurde, wird eine Ausnahme zurückgegeben.  
   
-###  <a name="UsingHTML5ControlsCodedUITestsVideo"></a> Videosteuerelement  
+### <a name="video-control"></a>Videosteuerelement  
  **Videosteuerelement:** Aktionen im HTML5-Videosteuerelement werden ordnungsgemäß aufgezeichnet und wiedergegeben.  
   
- ![HTML5-Videosteuerelement](../test/media/codedui-html5-video.png "CodedUI_HTML5_Video")  
+ ![HTML5-Videosteuerelement](../test/media/codedui-html5-video.png)  
   
 |Aktion|Aufzeichnung|Generierter Code|  
 |------------|---------------|--------------------|  
@@ -117,12 +111,12 @@ string VideoWidth
  **Filtereigenschaften:** Die Filtereigenschaften für `HtmlVideo` sind `Src`, `Poster`, `Class`, `ControlDefinition` und `TagInstance`.  
   
 > [!NOTE]
->  Wenn Sie das Video mithilfe der Bezeichnung „-30s“ oder „+30s“ zurück- bzw. vorspulen, wird dies aggregiert, um nach der entsprechenden Zeit zu suchen.  
+> Wenn Sie das Video mithilfe der Bezeichnung „-30s“ oder „+30s“ zurück- bzw. vorspulen, wird dies aggregiert, um nach der entsprechenden Zeit zu suchen.  
   
-###  <a name="UsingHTML5ControlsCodedUITestsSlider"></a> Schieberegler  
- **Schiebereglersteuerung:** Aktionen in der HTML5-Schiebereglersteuerung werden ordnungsgemäß aufgezeichnet und wiedergegeben.  
+### <a name="slider"></a>Slider  
+ **Schieberegler-Steuerelement:** Aktionen in der HTML5-Schiebereglersteuerung werden ordnungsgemäß aufgezeichnet und wiedergegeben.  
   
- ![HTML5-Schiebereglersteuerung](../test/media/codedui-html5-slider.png "CodedUI_HTML5_Slider")  
+ ![HTML5-Schiebereglersteuerung](../test/media/codedui-html5-slider.png)  
   
 |Aktion|Aufzeichnung|Generierter Code|  
 |------------|---------------|--------------------|  
@@ -139,17 +133,15 @@ string Step
 string ValueAsNumber  
 ```  
   
-###  <a name="UsingHTML5ControlsCodedUITestsProgressbar"></a> ProgressBar  
- **ProgreesBar-Steuerelement:** Bei der „ProgressBar“ handelt es sich um ein Steuerelement ohne Interaktionen. Sie können Assertionen für die `Value`- und `Max`-Eigenschaften dieses Steuerelements hinzufügen.  
+### <a name="progressbar"></a>ProgressBar  
+ **ProgressBar-Steuerelement:** ProgressBar ist ein Steuerelement ohne Interaktionen. Sie können Assertionen für die `Value`- und `Max`-Eigenschaften dieses Steuerelements hinzufügen.  
   
- ![HTML5-ProgressBar-Steuerelement](../test/media/codedui-html5-progressbar.png "CodedUI_HTML5_ProgressBar")  
+ ![HTML5 ProgressBar-Steuerelement](../test/media/codedui-html5-progressbar.png)  
   
-## <a name="see-also"></a>Siehe auch  
- [HTML-Elemente](http://go.microsoft.com/fwlink/?LinkID=232441)   
- [Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)   
- [Erstellen von Tests der codierten UI](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
- [Anpassen des Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeCUITModify)   
- [Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktionsaufzeichnungen](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+## <a name="see-also"></a>Siehe auch
 
-
-
+- [HTML-Elemente](https://www.w3schools.com/HTML/html_elements.asp)   
+- [Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)   
+- [Erstellen von Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
+- [Anpassen des Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeCUITModify)   
+- [Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktionsaufzeichnungen](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

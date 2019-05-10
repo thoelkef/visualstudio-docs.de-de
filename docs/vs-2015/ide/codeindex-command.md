@@ -1,14 +1,9 @@
 ---
 title: CodeIndex-Befehl | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - command-line tools [Team Foundation Server]
 - TFSConfig
@@ -17,13 +12,13 @@ ms.assetid: b79568d4-6a64-4ca9-a1ee-3e57f92a9c5c
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9586348a1862820540613a5f191132c49fa6a74d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f9fa341b781028db1836e963c99ae5069ce8fe18
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282359"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433594"
 ---
 # <a name="codeindex-command"></a>CodeIndex-Befehl
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ Mit dem **CodeIndex**-Befehl können Sie die Codeindizierung für Team Foundatio
  Zum Verwenden des **CodeIndex**-Befehls müssen Sie Mitglied der Sicherheitsgruppe **Team Foundation-Administratoren** sein. Weitere Informationen finden Sie in der [Berechtigungsreferenz für Team Foundation Server](http://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6).  
   
 > [!NOTE]
->  Sie müssen auch dann ein Fenster für die Eingabeaufforderung mit erhöhten Rechten öffnen, wenn Sie sich mit Administratoranmeldeinformationen anmelden, um diesen Befehl auszuführen. Sie müssen diesen Befehl außerdem auf der Logikschicht für Team Foundation ausführen.  
+> Sie müssen auch dann ein Fenster für die Eingabeaufforderung mit erhöhten Rechten öffnen, wenn Sie sich mit Administratoranmeldeinformationen anmelden, um diesen Befehl auszuführen. Sie müssen diesen Befehl außerdem auf der Logikschicht für Team Foundation ausführen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -67,7 +62,7 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 ## <a name="examples"></a>Beispiele  
   
 > [!NOTE]
->  Die in den Beispielen genannten Unternehmen, Organisationen, Produkte, Domänennamen, E-Mail-Adressen, Logos, Personen, Orte und Ereignisse sind frei erfunden.  Jede Ähnlichkeit mit tatsächlichen Firmen, Organisationen, Produkten, Domänen, Personen, Orten, Ereignissen, E-Mail-Adressen und Logos ist rein zufällig.  
+> Die in den Beispielen genannten Unternehmen, Organisationen, Produkte, Domänennamen, E-Mail-Adressen, Logos, Personen, Orte und Ereignisse sind frei erfunden.  Jede Ähnlichkeit mit tatsächlichen Firmen, Organisationen, Produkten, Domänen, Personen, Orten, Ereignissen, E-Mail-Adressen und Logos ist rein zufällig.  
   
  So zeigen Sie den Status und die Konfiguration der Codeindizierung an:  
   
@@ -130,8 +125,5 @@ TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Web Site"
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Verwalten der Serverkonfiguration mit TFSConfig](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62)   
- [Befehlszeilentools für TFS](http://msdn.microsoft.com/en-us/be8c997a-b97b-4e59-97f5-04db0a601a6c)
-
-
-
+ [Verwalten der Serverkonfiguration mit TFSConfig](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62)   
+ [Befehlszeilentools für TFS](http://msdn.microsoft.com/be8c997a-b97b-4e59-97f5-04db0a601a6c)

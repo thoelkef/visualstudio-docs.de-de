@@ -1,7 +1,6 @@
 ---
 title: Anonyme Methode codeanalysewarnungen
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - methods, anonymous
@@ -13,15 +12,15 @@ dev_langs:
 - VB
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47f90e0a9ca01e76ea1a3686c790dcf00a4becde
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a10c5baaed3a98e44d581b6ddb8d6e3a1883d079
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860779"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62560234"
 ---
 # <a name="anonymous-methods-and-code-analysis"></a>Anonyme Methoden und Codeanalyse
 

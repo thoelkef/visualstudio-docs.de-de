@@ -1,8 +1,6 @@
 ---
 title: Hookfunktionen für Clientblöcke | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.hooks
@@ -20,35 +18,36 @@ helpviewer_keywords:
 ms.assetid: f21c197e-565d-4e3f-9b27-4c018c9b87fc
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9de7c0533d3ea55e7b78ca645735a60f84e66df
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 900e8db238ee26e0a7015c2acc1741a1917c8cb3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564072"
 ---
 # <a name="client-block-hook-functions"></a>Hookfunktionen für Clientblöcke
-Wenn Sie die in `_CLIENT_BLOCK`-Blöcken gespeicherten Daten überprüfen oder als Bericht ausgeben möchten, können Sie speziell für diesen Zweck eine Funktion schreiben. Der Prototyp dieser Funktion muss etwa wie der folgende, in CRTDBG.H definierte Prototyp aussehen:  
+Wenn Sie die in `_CLIENT_BLOCK`-Blöcken gespeicherten Daten überprüfen oder als Bericht ausgeben möchten, können Sie speziell für diesen Zweck eine Funktion schreiben. Der Prototyp dieser Funktion muss etwa wie der folgende, in CRTDBG.H definierte Prototyp aussehen:
 
 ```cpp
-void YourClientDump(void *, size_t)  
-```  
+void YourClientDump(void *, size_t)
+```
 
- Das heißt, sollte die Hookfunktion akzeptieren einen **"void"** Zeiger auf den Anfang des Reservierungsblocks, zusammen mit einer **"size_t"** Typwert, der angibt, der die Reservierungsgröße und zurückgeben`void`. Der restliche Inhalt dieser Funktion ist Ihnen freigestellt.  
+ Das bedeutet, dass die Hookfunktion einen **void**-Zeiger auf den Anfang des Zuweisungsblocks sowie einen Wert vom Typ **size_t**, der die Zuweisungsgröße angibt, akzeptieren und `void` zurückgeben muss. Der restliche Inhalt dieser Funktion ist Ihnen freigestellt.
 
- Nachdem die Hookfunktion mithilfe der Installation [_CrtSetDumpClient](/cpp/c-runtime-library/reference/crtsetdumpclient), aufgerufen wird jedes Mal eine `_CLIENT_BLOCK` Block wird ausgegeben. Anschließend können Sie [_CrtReportBlockType](/cpp/c-runtime-library/reference/crtreportblocktype) zum Abrufen von Informationen zum Typ oder Untertyp der Dump ausgegebenen Blöcke.  
+ Nachdem Sie die Hookfunktion mithilfe von [_CrtSetDumpClient](/cpp/c-runtime-library/reference/crtsetdumpclient) installiert haben, wird sie bei jedem Dump eines `_CLIENT_BLOCK`-Blocks aufgerufen. Mithilfe von [_CrtReportBlockType](/cpp/c-runtime-library/reference/crtreportblocktype) können Sie anschließend Informationen zum Typ oder Untertyp der im Dump ausgegebenen Blöcke abrufen.
 
- Der Zeiger auf die Funktion, den Sie übergeben `_CrtSetDumpClient` ist vom Typ **_CRT_DUMP_CLIENT**, wie in CRTDBG.H definiert. H:  
+ Der Zeiger auf die Funktion, den Sie an `_CrtSetDumpClient` übergeben, ist vom Typ **_CRT_DUMP_CLIENT**, wie in „CRTDBG.H“ definiert:
 
 ```cpp
-typedef void (__cdecl *_CRT_DUMP_CLIENT)  
-   (void *, size_t);  
-```  
+typedef void (__cdecl *_CRT_DUMP_CLIENT)
+   (void *, size_t);
+```
 
-## <a name="see-also"></a>Siehe auch  
- [Schreiben von Hookfunktionen zum Debuggen](../debugger/debug-hook-function-writing.md)   
- [crt_dbg2-Beispiel](https://msdn.microsoft.com/library/21e1346a-6a17-4f57-b275-c76813089167)   
- [_CrtReportBlockType](/cpp/c-runtime-library/reference/crtreportblocktype)
+## <a name="see-also"></a>Siehe auch
+
+- [Schreiben von Hookfunktionen zum Debuggen](../debugger/debug-hook-function-writing.md)
+- [crt_dbg2, Beispiel](https://msdn.microsoft.com/library/21e1346a-6a17-4f57-b275-c76813089167)
+- [_CrtReportBlockType](/cpp/c-runtime-library/reference/crtreportblocktype)

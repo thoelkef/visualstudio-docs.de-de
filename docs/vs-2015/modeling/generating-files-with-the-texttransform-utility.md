@@ -1,12 +1,9 @@
 ---
 title: Generieren von Dateien mit dem Hilfsprogramm "TextTransform" | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, TextTransform utility
 - TextTransform.exe
@@ -14,13 +11,13 @@ ms.assetid: 06a48235-fe02-403e-a1cf-2ae70b4db62f
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e7dbe189c9b46c10dc7bac5da4b87457d7c6ecbf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 607eda7550819e4150f026a0671ed744ba9c10a7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227447"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427046"
 ---
 # <a name="generating-files-with-the-texttransform-utility"></a>Generieren von Dateien mit dem Hilfsprogramm "TextTransform"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +25,7 @@ ms.locfileid: "49227447"
 TextTransform.exe ist ein Befehlszeilentool, das Sie zum Transformieren einer Textvorlage verwenden können. Wenn Sie TextTransform.exe aufrufen, geben Sie den Namen einer Textvorlagendatei als Argument. TextTransform.exe Ruft die Transformations-Engine auf und verarbeitet die Textvorlage. TextTransform.exe wird in der Regel von Skripts aufgerufen. Allerdings ist es nicht in der Regel erforderlich, da Sie Texttransformation in Visual Studio oder im Buildprozess ausführen können.  
   
 > [!NOTE]
->  Wenn Sie TextTransformation als Teil des Buildvorgangs ausführen möchten, sollten erwägen Sie, die MSBuild-Text-transformationsaufgabe zu verwenden. Weitere Informationen finden Sie unter [Codegenerierung in einem Buildprozess](../modeling/code-generation-in-a-build-process.md). Auf einem Computer, auf dem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] installiert ist, Sie können auch eine Anwendung schreiben oder [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Erweiterung, die Textvorlagen transformiert werden kann. Weitere Informationen finden Sie unter [Verarbeiten von Textvorlagen mithilfe eines benutzerdefinierten Hosts](../modeling/processing-text-templates-by-using-a-custom-host.md).  
+> Wenn Sie TextTransformation als Teil des Buildvorgangs ausführen möchten, sollten erwägen Sie, die MSBuild-Text-transformationsaufgabe zu verwenden. Weitere Informationen finden Sie unter [Codegenerierung in einem Buildprozess](../modeling/code-generation-in-a-build-process.md). Auf einem Computer, auf dem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] installiert ist, Sie können auch eine Anwendung schreiben oder [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Erweiterung, die Textvorlagen transformiert werden kann. Weitere Informationen finden Sie unter [Verarbeiten von Textvorlagen mithilfe eines benutzerdefinierten Hosts](../modeling/processing-text-templates-by-using-a-custom-host.md).  
   
  TextTransform.exe befindet sich im folgenden Verzeichnis:  
   
@@ -64,6 +61,3 @@ TextTransform [<options>] <templateName>
 |Generieren Sie Dateien in einer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projektmappe.|[Generieren von Code zur Entwurfszeit mithilfe von T4-Textvorlagen](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|  
 |Schreiben Sie Anweisungsprozessoren, um eigene Datenquellen zu transformieren.|[Anpassen der T4-Texttransformation](../modeling/customizing-t4-text-transformation.md)|  
 |Schreiben Sie einen Textvorlagenhost, der Sie Textvorlagen aus Ihrer eigenen Anwendung aufrufen kann.|[Verarbeiten von Textvorlagen mithilfe eines benutzerdefinierten Hosts](../modeling/processing-text-templates-by-using-a-custom-host.md)|
-
-
-

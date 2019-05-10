@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: c74e3ccf-d771-48c8-a2f9-df323b166784
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ac9a172ee2cb7a117a1d9b63c4f1fef9f631952
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7dfe8a6b3e4c84fd97a159f6ac43e0de47536f0b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915865"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861813"
 ---
 # <a name="command-availability"></a>Befehlsverfügbarkeit
 
@@ -44,12 +44,12 @@ Die folgenden Befehl Kontexten, die die häufigsten Ursachen sind:
 
 Wenn einen entsprechenden Befehl-Kontext, den GUID noch nicht definiert ist, können Sie eine solche im VSPackage definieren, und klicken Sie dann Programmieren zu aktiven oder inaktiven nach Bedarf, um die Sichtbarkeit Ihrer Befehle zu steuern:
 
-1.  Registrieren Sie die Kontext-GUIDs durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> Methode.
+1. Registrieren Sie die Kontext-GUIDs durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> Methode.
 
-2.  Rufen Sie den Status der Kontext-GUID durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> Methode.
+2. Rufen Sie den Status der Kontext-GUID durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> Methode.
 
-3.  Aktivieren Sie das Kontext-GUIDs und deaktivieren durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> Methode.
-   
+3. Aktivieren Sie das Kontext-GUIDs und deaktivieren durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> Methode.
+
 > [!CAUTION]
 > Stellen Sie sicher, dass Ihr VSPackage keine vorhandenen Kontext GUIDs auswirkt, da es sich bei anderen VSPackages möglicherweise von ihnen abhängig sind.
 

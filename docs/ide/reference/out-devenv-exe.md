@@ -1,61 +1,67 @@
 ---
 title: -Out („devenv.exe“)
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
 - errors [Visual Studio], builds
-- Devenv, /out switch
+- Devenv, /Out switch
 - builds [Visual Studio], logs
 - error logs [Visual Studio], command-line build errors
 - error logs [Visual Studio]
-- /out Devenv switch
-- out Devenv switch
+- /Out Devenv switch
+- Out Devenv switch
 - builds [Visual Studio], errors
 - output files, build errors
 ms.assetid: 9002d8c2-36d4-451c-b489-8f01932f31f7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f240b464ddba4e0549e3faff432685201e4560f6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 039456c10993199ec2265042aabc0ed5c475ccd9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53985640"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969292"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
-Gibt eine Datei an, die Fehler speichern und anzeigen soll, wenn Sie eine Projektmappe ausführen, erstellen, erneut erstellen oder bereitstellen.
+
+Gibt eine Datei an, die Fehler speichern und anzeigen soll, wenn Sie eine Projektmappe [ausführen](run-devenv-exe.md), [ausführen und beenden](runexit-devenv-exe.md), [aktualisieren](upgrade-devenv-exe.md), [erstellen](build-devenv-exe.md), [erneut erstellen](rebuild-devenv-exe.md), [bereinigen](clean-devenv-exe.md) oder [bereitstellen](deploy-devenv-exe.md).
 
 ## <a name="syntax"></a>Syntax
 
-```cmd
-devenv /out FileName
+```shell
+devenv /Out FileName
 ```
 
 ## <a name="arguments"></a>Argumente
- `FileName`
 
- Erforderlich. Der Pfad und der Name der Datei, die beim Erstellen einer ausführbaren Datei Fehler empfangen soll.
+- *FileName*
 
-## <a name="remarks"></a>Hinweise
- Wenn ein nicht vorhandener Dateiname angegeben wird, wird die Datei automatisch erstellt. Wenn die Datei bereits vorhanden ist, werden die Ergebnisse an die vorhandenen Inhalte der Datei angefügt.
+  Erforderlich. Der Pfad und der Name der Datei, die beim Erstellen einer ausführbaren Datei die Ausgabe empfangen soll.
 
- Buildfehler in der Befehlszeile werden im **Befehlsfenster** und der Solution Builder-Ansicht des **Ausgabefensters** angezeigt. Diese Option erweist sich als nützlich, wenn Sie unbeaufsichtigte Builds ausführen und die Ergebnisse benötigen.
+## <a name="remarks"></a>Anmerkungen
+
+Wenn ein nicht vorhandener Dateiname angegeben wird, wird die Datei automatisch erstellt. Andernfalls ist die Datei bereits vorhanden, und die Ergebnisse werden an die vorhandenen Inhalte der Datei angefügt.
+
+Buildfehler in der Befehlszeile werden im **Befehlsfenster** und der Solution Builder-Ansicht des **Ausgabefensters** angezeigt. Dieser Schalter eignet sich zum Anzeigen der Ergebnisse unbeaufsichtigter Builds.
 
 ## <a name="example"></a>Beispiel
- In diesem Beispiel wird `MySolution` ausgeführt, und es werden Fehler in die `MyErrorLog.txt`-Datei geschrieben.
 
-```cmd
-devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /out "C:\MyErrorLog.txt"
+In diesem Beispiel wird `MySolution` ausgeführt, und es werden Fehler in die `MyErrorLog.txt`-Datei geschrieben.
+
+```shell
+devenv /run "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /out "C:\MyErrorLog.txt"
 ```
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Devenv-Befehlszeilenschalter](../../ide/reference/devenv-command-line-switches.md)
 - [/Run („devenv.exe“)](../../ide/reference/run-devenv-exe.md)
+- [/RunExit (devenv.exe)](runexit-devenv-exe.md)
+- [/Upgrade (devenv.exe)](upgrade-devenv-exe.md)
+- [/Clean (devenv.exe)](clean-devenv-exe.md)
 - [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)
 - [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
 - [/Deploy (devenv.exe)](../../ide/reference/deploy-devenv-exe.md)

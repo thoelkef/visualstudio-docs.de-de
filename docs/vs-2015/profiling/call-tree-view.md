@@ -1,14 +1,9 @@
 ---
 title: Aufrufstrukturansicht | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.calltree
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: b2dbc033-bf95-4d10-8e51-f9462979133e
 caps.latest.revision: 39
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8f09b85c20d84cb25d6a1fdbbd8493c47056318a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 105f16c0d9deb8d94a102818c5335af18685c675
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439334"
 ---
 # <a name="call-tree-view"></a>Aufrufstrukturansicht
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ In der Aufrufstrukturansicht werden die Funktionsausführungspfade angezeigt, di
  Für die Aufrufstrukturansicht kann die Rauschunterdrückung konfiguriert werden, indem Sie festlegen, das weniger Daten angezeigt werden. Leistungsprobleme werden mithilfe der Rauschunterdrückung in der Ansicht erkennbarer. Leichter zu identifizierende Leistungsprobleme können auch leichter analysiert werden. Weitere Informationen finden Sie unter [Vorgehensweise: Konfigurieren der Rauschunterdrückung in Berichtsansichten](../profiling/how-to-configure-noise-reduction-in-report-views.md).  
   
 > [!NOTE]
->  Wenn die Rauschunterdrückung so konfiguriert ist, dass sie eine Warnung anzeigt, wenn Sie aktiviert ist, wird eine Informationsleiste im Bericht angezeigt.  
+> Wenn die Rauschunterdrückung so konfiguriert ist, dass sie eine Warnung anzeigt, wenn Sie aktiviert ist, wird eine Informationsleiste im Bericht angezeigt.  
   
  Weitere Informationen zu Definitionen von Spalten in der Aufrufstrukturansicht finden Sie in den folgenden Artikeln:  
   
@@ -60,6 +55,3 @@ In der Aufrufstrukturansicht werden die Funktionsausführungspfade angezeigt, di
  [Performance Report Views (Leistungsberichtansichten)](../profiling/performance-report-views.md)   
  [Grundlagen zu Instrumentierungsdatenwerten](../profiling/understanding-instrumentation-data-values.md)   
  [Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)
-
-
-

@@ -1,8 +1,7 @@
 ---
-title: IDebugSessionProvider-Schnittstelle | Microsoft Docs
+title: IDebugSessionProvider-Schnittstelle | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,20 +13,20 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4e61b1e5e794c68e34250f958cdda0f50b68334c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fe73901d92cb42675ff9ec981bd9b90dcca5d546
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979047"
 ---
 # <a name="idebugsessionprovider-interface"></a>IDebugSessionProvider-Schnittstelle
-Die primäre Schnittstelle bereitgestellt, die von einem Debugger IDE zum Aktivieren von Host- und Sprache initiiert Debuggen. Dabei wird eine Debugsitzung für eine ausgeführte Anwendung. Diese Schnittstelle wird von der Computer-Manager implementiert.  
+Die primäre Schnittstelle bereitgestellt, die von einem Debugger-IDE, um den Host und der Sprache ermöglichen initiiert Debuggen. Er richtet eine Debugsitzung für eine ausgeführte Anwendung. Diese Schnittstelle wird von computerbasierten Debug-Manager implementiert.  
   
- Zusätzlich zu den von geerbten Methoden `IUnknown`, `IDebugSessionProvider` Schnittstelle macht die folgenden Methoden verfügbar.  
+ Zusätzlich zu den von geerbten Methoden `IUnknown`, `IDebugSessionProvider` Schnittstelle verfügbar macht, die folgenden Methoden.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
   
 |Methode|Beschreibung|  
 |------------|-----------------|  
-|[IDebugSessionProvider::StartDebugSession](../../winscript/reference/idebugsessionprovider-startdebugsession.md)|Startet eine Debugsitzung mit der angegebenen Anwendung an.|
+|[IDebugSessionProvider::StartDebugSession](../../winscript/reference/idebugsessionprovider-startdebugsession.md)|Startet eine Debugsitzung mit der angegebenen Anwendung.|

@@ -2,7 +2,6 @@
 title: IRemoteDebugApplicationThread::GetSystemThreadId | Microsoft-Dokumentation
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3688ba15c61e4d2ff4c73844f9489115c9e66a7d
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 9d5119db4108ef7fa0783bccc3f747fbd2ed26d0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54094730"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788208"
 ---
 # <a name="iremotedebugapplicationthreadgetsystemthreadid"></a>IRemoteDebugApplicationThread::GetSystemThreadId
 Gibt einen Betriebssystem-systemabhängig-Bezeichner, der dem Thread zugeordnet.  

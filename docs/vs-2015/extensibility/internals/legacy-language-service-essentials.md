@@ -1,14 +1,9 @@
 ---
 title: Grundlagen zu Legacysprachdiensten | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - languages, integrating into Visual Studio
 - language services, integrating programming languages
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: c15e0ccb-e7c5-4dbb-affb-fe3d3244debe
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7c878c4fe124d0443ab5f926a03a378b5b4af014
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a3926ff84f3b2e6415df1ca7333409c05d839685
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753630"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436261"
 ---
 # <a name="legacy-language-service-essentials"></a>Grundlagen zu Legacysprachdiensten
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ Sie müssen einen Sprachdienst, zum Integrieren von einer Programmiersprache in 
  Legacy-Sprachdienste werden als Teil eines VSPackage implementiert, aber die neuere Methode zum Implementieren von Sprache-Service-Features ist die Verwendung von MEF-Erweiterungen. Um mehr über die neue Methode zum Implementieren von eines Sprachdiensts zu suchen, finden Sie unter [-Editor und Sprachdiensterweiterungen](../../extensibility/editor-and-language-service-extensions.md).  
   
 > [!NOTE]
->  Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
+> Es wird empfohlen, dass Sie nun den neuen Editor API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie neue Features im Editor nutzen.  
   
  Legacy-Sprachdienste bieten die folgenden Features:  
   
@@ -53,4 +48,3 @@ Sie müssen einen Sprachdienst, zum Integrieren von einer Programmiersprache in 
 |-------------|-----------------|  
 |Ausdrucksauswertungen|Unterstützt die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Debugger durch Überprüfen von Haltepunkten und durch Angabe einer Liste von Ausdrücken in angezeigt werden die **"Auto"** Debug-Fenster.<br /><br /> Weitere Informationen finden Sie unter [Sprachdienstunterstützung für Debuggen](../../extensibility/internals/language-service-support-for-debugging.md).|  
 |Tools zum Durchsuchen von Symbolen|Unterstützt **Objektkatalog**, **Klassenansicht**, **Aufrufbrowser**, und **Ergebnisse der Symbolsuche**.|
-

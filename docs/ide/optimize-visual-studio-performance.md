@@ -7,28 +7,31 @@ helpviewer_keywords:
 - performance [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 f1_keywords:
 - vs.performancecenter
-ms.prod: visual-studio-dev15
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f60acd8e31f9a549406b4b8c40aacdd5327f335
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bdc605b614fab5b11c2efc8466480ebf49a1fee7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62569848"
 ---
 # <a name="optimize-visual-studio-performance"></a>Optimieren der Leistung von Visual Studio
 
 Dieser Artikel enthält einige Vorschläge, die Sie ausprobieren können, wenn Visual Studio langsam ausgeführt wird. Weitere Vorschläge zum Verbessern der Leistung finden Sie unter [Tipps und Tricks für die Leistung von Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md).
 
-## <a name="upgrade-to-visual-studio-2017-version-156-or-later"></a>Upgrade auf Visual Studio 2017 Version 15.6 oder höher
+## <a name="upgrade-visual-studio"></a>Upgrade auf Visual Studio
 
-Wenn Sie derzeit Visual Studio 2015 verwenden, laden Sie [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) kostenlos herunter, um die verbesserte Leistung dieses Tools zu nutzen. Projektmappen werden in Visual Studio 2017 zwei- bis dreimal schneller geladen. Auch in anderen Bereichen wurde die Leistung verbessert. Visual Studio 2017 kann parallel zu Visual Studio 2015 installiert werden. Sie können das Tool also bedenkenlos ausprobieren.
+Wenn Sie derzeit Visual Studio 2015 verwenden, laden Sie [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) oder [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) kostenlos herunter, um die verbesserte Leistung dieses Tools zu testen. Projektmappen werden in Visual Studio 2015 zwei- bis dreimal schneller geladen. Auch in anderen Bereichen wurde die Leistung verbessert. Visual Studio 2017 und Visual Studio 2019 können parallel zu Visual Studio 2015 installiert werden. Sie können das Tool also bedenkenlos ausprobieren.
 
-Wenn Sie derzeit Visual Studio 2017 verwenden, stellen Sie sicher, dass Sie Version 15.6 oder höher ausführen. Die Daten zeigen, dass Projektmappen in Version 15.6 zwei- bis dreimal schneller geladen werden. Sie können das Tool [hier](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) herunterladen.
+::: moniker range="vs-2017"
+
+Wenn Sie derzeit Visual Studio 2017 verwenden, stellen Sie sicher, dass Sie Version 15.6 oder höher ausführen. Die Daten zeigen, dass Projektmappen in Version 15.6 zwei- bis dreimal schneller geladen werden. Sie können das Tool [hier](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) herunterladen.
+
+::: moniker-end
 
 ## <a name="extensions-and-tool-windows"></a>Erweiterungen und Toolfenster
 
@@ -46,9 +49,9 @@ Führen Sie Ihre Projektmappe jedoch nicht über ein USB-Laufwerk aus. Kopieren 
 
 ## <a name="help-us-improve"></a>Helfen Sie uns dabei, noch besser zu werden!
 
-Ihr Feedback hilft uns dabei, uns zu verbessern. Verwenden Sie das Feature **Problem melden**, um eine Ablaufverfolgung aufzuzeichnen und diese an uns zu senden. Klicken Sie auf das Feedbacksymbol neben der **Schnellstartleiste**, oder klicken Sie in der Menüleiste auf **Hilfe** > **Feedback senden** > **Problem melden**. Weitere Informationen finden Sie unter [Melden eines Problems mit Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md).
+Ihr Feedback hilft uns dabei, uns zu verbessern. Verwenden Sie das Feature **Problem melden**, um eine Ablaufverfolgung aufzuzeichnen und diese an uns zu senden. Klicken Sie auf das Feedbacksymbol neben der **Schnellstartleiste**, oder klicken Sie in der Menüleiste auf **Hilfe** > **Feedback senden** > **Problem melden**. Weitere Informationen finden Sie unter [Melden eines Problems mit Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Tipps und Tricks für die Leistungssteigerung](../ide/visual-studio-performance-tips-and-tricks.md)
-- [Blog zu Visual Studio: Schnelleres Laden von Projektmappen mit Visual Studio 2017 (Version 15.6)](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)
+- [Blog zu Visual Studio: Schnelleres Laden von Projektmappen mit Visual Studio 2017 (Version 15.6)](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

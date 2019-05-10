@@ -1,23 +1,25 @@
 ---
 title: IDebugSettingsCallback2 | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2 interface
 ms.assetid: 7e525d0b-7d7a-4d1c-8b78-e1398fa922f2
-author: gregvanl
+caps.latest.revision: 9
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 3d0fad5ddb45c1e57cc18a089b1a0c5ca05a094b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 3dea6edb6045e21931651ff5c20a01a5f000ff62
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947178"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62916155"
 ---
 # <a name="idebugsettingscallback2"></a>IDebugSettingsCallback2
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Ermöglicht das debug-Engines zum Lesen von metrikeinstellungen Remote.  
   
 ## <a name="syntax"></a>Syntax  
@@ -54,7 +56,7 @@ IDebugSettingsCallback2D : IUnknown
 ## <a name="example"></a>Beispiel  
  Das folgende Beispiel zeigt eine Funktion, verwendet eine **IDebugSettingsCallback2** -Objekt als Parameter.  
   
-```cpp  
+```cpp#  
 HRESULT GetDebugSettingsCallback (IDebugSettingsCallback2 **ppCallback)  
 {  
     HRESULT hRes = E_FAIL;  

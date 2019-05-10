@@ -1,8 +1,7 @@
 ---
-title: IRemoteDebugApplication::EnumGlobalExpressionContexts | Microsoft-Dokumentation
+title: IRemoteDebugApplication::EnumGlobalExpressionContexts | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a7e4f3e7cffe7c127b7ad4fdde47e58e6bc2a31c
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 92ab12dc9944c328e744c7f39252facb8e91a3f7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54091272"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62944268"
 ---
 # <a name="iremotedebugapplicationenumglobalexpressioncontexts"></a>IRemoteDebugApplication::EnumGlobalExpressionContexts
 Listet die globale ausdruckskontexten für alle Sprachen, die in dieser Anwendung ausführen.  

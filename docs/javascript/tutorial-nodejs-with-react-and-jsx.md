@@ -7,17 +7,17 @@ ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a89a54999e6db5139178b20a0794d4dc594e0e45
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c67dfa80ec7b194f7014f77de1cdd589bf7130e5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446345"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Erstellen einer Node.js- und React-App in Visual Studio
 
@@ -31,7 +31,7 @@ In diesem Tutorial lernen Sie, wie die folgenden Aufgaben ausgeführt werden:
 > * Transpilieren von JSX
 > * Fügen Sie den Debugger an.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Vorbereitungen
 
 In den folgenden häufig gestellten Fragen werden einige wichtige Konzepte vorgestellt.
 
@@ -57,11 +57,18 @@ Webpack bündelt JavaScript-Dateien für die Ausführung in einem Browser, kann 
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
-* Sie müssen Visual Studio 2017 und die Workload für die Node.js-Entwicklung installiert haben.
+* Sie müssen Visual Studio und die Workload für die Node.js-Entwicklung installiert haben.
 
-    Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  kostenlos herunterladen.
+    ::: moniker range=">=vs-2019"
+    Wenn Sie Visual Studio 2019 noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/) kostenlos herunterladen.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Wenn Sie Visual Studio 2017 noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/downloads/) kostenlos herunterladen.
+    ::: moniker-end
 
-    Falls Sie bereits über Visual Studio verfügen, aber die Workload noch installieren müssen, klicken Sie auf den Link **Visual Studio-Installer öffnen** im linken Bereich des Dialogfelds **Neues Projekt**. Der Visual Studio-Installer wird gestartet. Klicken Sie auf die Workload **Node.js-Entwicklung** und anschließend auf **Ändern**.
+    Wenn Sie die Workload installieren müssen, Visual Studio aber bereits besitzen, navigieren Sie zu **Tools** > **Tools und Features abrufen…**. Dadurch wird der Visual Studio-Installer geöffnet. Klicken Sie auf die Workload **Node.js-Entwicklung** und anschließend auf **Ändern**.
+
+    ![Node.js-Workload im VS-Installer](../ide/media/quickstart-nodejs-workload.png)
 
 * Die Node.js-Laufzeit muss installiert sein.
 
@@ -73,13 +80,17 @@ Webpack bündelt JavaScript-Dateien für die Ausführung in einem Browser, kann 
 
 Erstellen Sie zunächst ein Projekt für die Node.js-Webanwendung.
 
-1. Öffnen Sie Visual Studio 2017.
+1. Öffnen Sie Visual Studio.
 
-1. Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**.
+1. Erstellen Sie ein neues Projekt.
 
-1. Erweitern Sie im Dialogfeld **Neues Projekt** im linken Bereich den Eintrag **JavaScript**, und klicken Sie auf **Node.js**. Klicken Sie im mittleren Bereich auf **Leere Node.js-Webanwendung**, geben Sie den Namen **NodejsWebAppBlank** ein, und klicken Sie anschließend auf **OK**.
-
-     Wenn die Projektvorlage **Leere Node.js-Webanwendung** nicht angezeigt wird, müssen Sie zunächst die Workload für die Node.js-Entwicklung installieren.
+    ::: moniker range=">=vs-2019"
+    Drücken Sie **ESC**, um das Startfenster zu schließen. Geben Sie **STRG + Q** ein, um das Suchfeld zu öffnen, geben Sie **Node.js** ein, und wählen Sie dann **Leere Node.js-Webanwendung** (JavaScript) aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Erweitern Sie im linken Bereich des Dialogfelds **Neues Projekt** den Eintrag **JavaScript**, und wählen Sie dann **Node.js** aus. Klicken Sie im mittleren Bereich auf **Leere Node.js-Webanwendung**, geben Sie den Namen **NodejsWebAppBlank** ein, und wählen Sie **OK** aus.
+    ::: moniker-end
+    Wenn die Projektvorlage **Leere Node.js-Webanwendung** nicht angezeigt wird, müssen Sie die Workload für die **Node.js-Entwicklung** hinzufügen. Ausführliche Anweisungen dazu finden Sie in den [Voraussetzungen](#prerequisites).
 
     Visual Studio erstellt die neue Projektmappe und öffnet das Projekt.
 
@@ -313,7 +324,12 @@ Bei jeder Änderung, die Sie an *app.tsx* vornehmen, müssen Sie den Webpack-Bef
 
 1. Wählen Sie Chrome als aktuelles Debugziel aus.
 
+    ::: moniker range=">=vs-2019"
+    ![Auswählen von Chrome als Debugziel](../javascript/media/vs-2019/tutorial-nodejs-react-debug-target.png)
+    ::: moniker-end
+    ::: moniker range="vs-2017"
     ![Auswählen von Chrome als Debugziel](../javascript/media/tutorial-nodejs-react-debug-target.png)
+    ::: moniker-end
 
     Wenn Chrome auf Ihrem Computer verfügbar ist, jedoch nicht als Option angezeigt wird, wählen Sie aus der Dropdownliste für das Debugziel **Browserauswahl** aus, und klicken Sie dann auf Chrome, um diesen Browser als Standardbrowser festzulegen (wählen Sie dazu **Als Standard festlegen** aus).
 
@@ -358,6 +374,13 @@ Im vorherigen Abschnitt haben Sie den Debugger an den serverseitigen Node.js-Cod
     `chrome.exe --remote-debugging-port=9222`
 
     Dadurch wird Chrome mit aktiviertem Debuggen gestartet.
+
+    ::: moniker range=">=vs-2019"
+
+    > [!NOTE]
+    > Sie können auch das `--remote-debugging-port`-Flag beim Start des Browsers festlegen, indem Sie **Browserauswahl** in der **Debuggen**-Symbolleiste und dann **Hinzufügen** auswählen und anschließend das Flag im **Argumente**-Feld festlegen. Verwenden Sie einen anderen Anzeigenamen für den Browser, z.B. **Chrome mit Debuggen**. Weitere Informationen finden Sie in den [Versionshinweisen](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview#browser-cli-params-support).
+
+    ::: moniker-end
 
 3. Wechseln Sie zu Visual Studio, und legen Sie wie in der folgenden Abbildung dargestellt einen Haltepunkt im *app-bundle.js*-Code in der `render()`-Funktion fest:
 

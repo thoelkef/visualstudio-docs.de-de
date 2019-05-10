@@ -1,27 +1,22 @@
 ---
 title: Designer-Initialisierung und Metadatenkonfiguration | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK], initializing
 - designers [Visual Studio SDK], configuring metadata
 ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8f5a4bbd24e571100dfc708d7c34f87b6c84adcf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f3bae21baa0c484f2deeb8406a703b92cadc874b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736210"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439042"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Designer-Initialisierung und Metadatenkonfiguration
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,15 +31,15 @@ Bearbeitung von einem Designer oder Designerkomponente zugeordneten Metadaten un
 ### <a name="customizing-initialization"></a>Anpassen von Initialisierung  
  Anpassen von einem Designer, einer Komponente oder ein Designer-Oberfläche umfasst:  
   
-1.  Ändern die Designer-Metadaten und effektiv ändern, wie eine bestimmte <xref:System.Type> zugegriffen oder konvertiert wird.  
+1. Ändern die Designer-Metadaten und effektiv ändern, wie eine bestimmte <xref:System.Type> zugegriffen oder konvertiert wird.  
   
      Dies erfolgt normalerweise über die <xref:System.Drawing.Design.UITypeEditor> oder <xref:System.ComponentModel.TypeConverter> Mechanismen.  
   
      Z. B., wenn <xref:System.Windows.Forms>-Basis-Designer initialisiert werden, die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Umgebung ändert die <xref:System.Drawing.Design.UITypeEditor> für <xref:System.Web.UI.WebControls.Image> Objekte, die mit dem Designer verwendet, um die Ressourcen-Manager verwenden, um Bitmaps anstatt im Dateisystem zu erhalten.  
   
-2.  Integrieren mit der Umgebung, z. B. durch Abonnieren von Ereignissen oder Abrufen der Konfigurationsinformationen des Projekts. Abrufen von Projektkonfigurationsinformationen und Abonnieren von Ereignissen durch Abrufen der <xref:System.ComponentModel.Design.ITypeResolutionService> Schnittstelle.  
+2. Integrieren mit der Umgebung, z. B. durch Abonnieren von Ereignissen oder Abrufen der Konfigurationsinformationen des Projekts. Abrufen von Projektkonfigurationsinformationen und Abonnieren von Ereignissen durch Abrufen der <xref:System.ComponentModel.Design.ITypeResolutionService> Schnittstelle.  
   
-3.  Änderung der benutzerumgebung durch Aktivieren der entsprechenden **Toolbox** Kategorien oder Beschränken des Designers Anwendbarkeit durch Anwenden einer Instanz von der <xref:System.ComponentModel.ToolboxItemFilterAttribute> Klasse, um den Designer.  
+3. Änderung der benutzerumgebung durch Aktivieren der entsprechenden **Toolbox** Kategorien oder Beschränken des Designers Anwendbarkeit durch Anwenden einer Instanz von der <xref:System.ComponentModel.ToolboxItemFilterAttribute> Klasse, um den Designer.  
   
 ### <a name="designer-initialization-by-a-vspackage"></a>Designer-Initialisierung von einem VSPackage  
  Eine VSPackage sollte das Designer-Initialisierung von verarbeiten:  
@@ -52,7 +47,7 @@ Bearbeitung von einem Designer oder Designerkomponente zugeordneten Metadaten un
 1. Erstellen ein Objekt, das die <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> Klasse.  
   
    > [!NOTE]
-   >  Die <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> Klasse sollte nie implementiert werden, auf das gleiche Objekt wie die <xref:Microsoft.VisualStudio.Shell.Package> Klasse.  
+   > Die <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> Klasse sollte nie implementiert werden, auf das gleiche Objekt wie die <xref:Microsoft.VisualStudio.Shell.Package> Klasse.  
   
 2. Registrieren Sie die implementierende Klasse <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> Bereitstellen von Unterstützung für die VSPackage Designer-Erweiterungen durch Anwenden von Instanzen von <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>, <xref:Microsoft.VisualStudio.Shell.ProvideObjectAttribute> und <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> für die Bereitstellung die VSPackage Implementierung der Klasse <xref:Microsoft.VisualStudio.Shell.Package> .  
   
@@ -98,11 +93,10 @@ Bearbeitung von einem Designer oder Designerkomponente zugeordneten Metadaten un
   `internal class MyPackage : Package {}`  
   
 > [!NOTE]
->  Zur Zeit können die Entwurfsoberfläche unterstützt nur das Erstellen von Komponenten, und daher nur Komponenten lokalen Metadaten. Im obigen Beispiel, wir haben versucht, eine Eigenschaft zu ändern, wie z.B. die `Color` Eigenschaft eines Objekts. Wenn `false` für das globale Flag übergebene `CustomBrowser` würde nie angezeigt werden, da der Designer nie eine Instanz erstellt `Color`. Wenn auf das globale Flag `false` eignet sich für Komponenten, z. B. Steuerelemente, Timer und Dialogfelder.  
+> Zur Zeit können die Entwurfsoberfläche unterstützt nur das Erstellen von Komponenten, und daher nur Komponenten lokalen Metadaten. Im obigen Beispiel, wir haben versucht, eine Eigenschaft zu ändern, wie z.B. die `Color` Eigenschaft eines Objekts. Wenn `false` für das globale Flag übergebene `CustomBrowser` würde nie angezeigt werden, da der Designer nie eine Instanz erstellt `Color`. Wenn auf das globale Flag `false` eignet sich für Komponenten, z. B. Steuerelemente, Timer und Dialogfelder.  
   
 ## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>   
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>   
  <xref:System.ComponentModel.ToolboxItemFilterType>   
  [Erweitern der Entwurfszeitunterstützung](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)
-

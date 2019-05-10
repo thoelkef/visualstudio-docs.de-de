@@ -1,8 +1,7 @@
 ---
-title: Globalisieren und Lokalisieren von Anwendungen
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
-ms.topic: conceptual
+title: Lokalisierungstools
+ms.date: 02/15/2019
+ms.topic: reference
 helpviewer_keywords:
 - globalization [Visual Studio]
 - Visual Basic code, international applications
@@ -13,33 +12,25 @@ helpviewer_keywords:
 ms.assetid: 4d9815ae-3e80-4b4d-933d-f8309aee18d5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f08ad869e1a8d06a8a29325c2cbeb723734c6f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dc6d0b3fb2eb143cfdc288485ab9e40499b6fccb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53991070"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62547870"
 ---
-# <a name="globalizing-and-localizing-applications"></a>Globalisieren und Lokalisieren von Anwendungen
+# <a name="develop-globalized-and-localized-apps"></a>Entwickeln von globalisierten und lokalisierten Apps
 
-Wenn Sie vorhaben, ein Programm international zu vertreiben, müssen Sie in der Entwicklungs- und Entwurfsphase einige Dinge berücksichtigen. Selbst wenn Sie derzeit keine internationale Anwendung planen, können Sie mit geringem Aufwand dafür sorgen, dass Sie später sehr viel Arbeit sparen, sollten Sie Ihre Meinung doch noch ändern. Dank der in [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] verfügbaren Dienste ist es sehr einfach, mit der verwalteten Entwicklung in Visual Studio eine einzelne Anwendung zu entwickeln, die für verschiedene Gebietsschemas geeignet ist.
+Visual Studio erleichtert mithilfe der in [.NET Framework](/dotnet/standard/globalization-localization/) integrierten Dienste die Entwicklung in einem internationalen Umfeld.
 
-## <a name="resources"></a>Ressourcen
+Das Projektsystem für Windows Forms-Apps kann Ressourcendateien sowohl für die Ausweich- als auch für jede weitere Benutzeroberflächenkultur generieren. Wenn Sie ein Projekt in Visual Studio erstellen, werden die Ressourcendateien vom Visual Studio-XML-Format (.resx) in ein binäres Zwischenformat (.resources) kompiliert und anschließend in Satellitenassemblys eingebettet. Weitere Informationen finden Sie unter [Resource files in Visual Studio (Ressourcendateien in Visual Studio)](/dotnet/framework/resources/creating-resource-files-for-desktop-apps#VSResFiles) und [Erstellen von Satellitenassemblys für Desktop-Apps](/dotnet/framework/resources/creating-satellite-assemblies-for-desktop-apps).
 
- Visual Studio war von Anfang an darauf ausgerichtet, mithilfe der in [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] integrierten Dienste die Entwicklung in einem internationalen Umfeld zu erleichtern. In den folgenden Artikeln können Sie sich einen Überblick über die in Visual Studio verfügbaren Features für die Internationalisierung verschaffen.
-
- [Einführung in internationale Anwendungen, die auf .NET Framework basieren:](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) Führt die Begriffe der Softwareentwicklung für einen internationalen Markt mithilfe von Visual Studio und [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] ein.
-
- [Lokalisieren von Anwendungen](../ide/localizing-applications.md) Enthält Links zu Seiten, die sich mit der Anpassung von Anwendungen an eine bestimmte Kultur beschäftigen.
-
- [Globalisieren von Anwendungen](../ide/globalizing-applications.md) Enthält Links zu Seiten, die Informationen zum Erstellen von Anwendungen enthalten, die mehrere Kulturen unterstützen.
+Informationen zum Erstellen von Apps für bidirektionale Sprachen in Visual Studio finden Sie unter [Erstellen von Anwendungen in bidirektionalen Sprachen](creating-applications-in-bi-directional-languages.md).
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Empfehlungen für die Entwicklung weltweit einsatzfähiger Anwendungen:](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps) Enthält Hintergrundinformationen zum Programmieren für ein internationales Publikum.
-- [Übersicht über die Klassenbibliothek](/dotnet/standard/class-library-overview) Bietet eine Einführung in die Klassen, Schnittstellen und Werttypen, die den Entwicklungsprozess beschleunigen und optimieren und den Zugriff auf Systemfunktionen ermöglichen.
-- <xref:System.Globalization> zeigt die Klassen in diesem Namespace auf, die kulturelle Informationen definieren, z.B. Sprache, Land/Region, verwendete Kalender, Datumsformat, Währung und Zahlen sowie die Sortierreihenfolge für Zeichenfolgen.
-- <xref:System.Resources> zeigt die Klassen und Schnittstellen in diesem Namespace auf, mit denen Entwickler verschiedene kulturspezifische Ressourcen für eine Anwendung erstellen, speichern und verwalten können.
+- [Globalisieren und Lokalisieren von .NET-Anwendungen](/dotnet/standard/globalization-localization/)
+- [Ressourcen in .NET-Apps](/dotnet/framework/resources/)

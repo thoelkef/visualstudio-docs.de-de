@@ -9,36 +9,35 @@ helpviewer_keywords:
 ms.assetid: 3b4711ee-e534-411d-9128-f69cd7932a48
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60394b799c2468d45818fa07d876dde2a651467d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d100b7ff37ea5a3cd224fd420f14e4cb23061903
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974141"
 ---
 # <a name="cvreleasemarkerseries-function"></a>CvReleaseMarkerSeries-Funktion
-Gibt Markerreihen frei. Verwenden Sie keine freigegebenen Markerreihenobjekte, da die Anwendung andernfalls möglicherweise abstürzt. Wenn Markerreihen nicht freigegeben werden, führt dies zu einem Arbeitsspeicherverlust.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```C  
-HRESULT CvReleaseMarkerSeries(  
-   _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries  
-);  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `pMarkerSeries`  
- Adresse der Anbieterobjektvariable. Die Adresse darf nicht NULL sein. Die Variable kann einen beliebigen Wert aufweisen.  
-  
-## <a name="return-value"></a>Rückgabewert  
- S_OK, wenn Markerreihen erfolgreich freigegeben wurden, oder Fehlercode, wenn Fehler aufgetreten sind. Prüfen Sie mit den Makros SUCCEEDED bzw. FAILED, ob Fehler vorliegen.  
-  
-## <a name="requirements"></a>Anforderungen  
- **Header:** *cvmarkers.h*  
-  
-## <a name="see-also"></a>Siehe auch  
- [C++-Bibliotheksreferenz](../profiling/cpp-library-reference.md)
+Gibt Markerreihen frei. Verwenden Sie keine freigegebenen Markerreihenobjekte, da die Anwendung andernfalls möglicherweise abstürzt. Wenn Markerreihen nicht freigegeben werden, führt dies zu einem Arbeitsspeicherverlust.
+
+## <a name="syntax"></a>Syntax
+
+```C
+HRESULT CvReleaseMarkerSeries(
+   _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries
+);
+```
+
+#### <a name="parameters"></a>Parameter
+ `pMarkerSeries`: die Adresse der Anbieterobjektvariable. Die Adresse darf nicht NULL sein. Die Variable kann einen beliebigen Wert aufweisen.
+
+## <a name="return-value"></a>Rückgabewert
+ S_OK, wenn Markerreihen erfolgreich freigegeben wurden, oder Fehlercode, wenn Fehler aufgetreten sind. Prüfen Sie mit den Makros SUCCEEDED bzw. FAILED, ob Fehler vorliegen.
+
+## <a name="requirements"></a>Anforderungen
+ **Header:** *cvmarkers.h*
+
+## <a name="see-also"></a>Siehe auch
+- [C++-Bibliotheksreferenz](../profiling/cpp-library-reference.md)

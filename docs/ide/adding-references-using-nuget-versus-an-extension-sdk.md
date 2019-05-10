@@ -1,19 +1,18 @@
 ---
 title: Hinzufügen von Referenzen mithilfe von NuGet im Vergleich zu einer SDK-Erweiterung
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96230edb35c5dcfa0b0b85bc76ffebf7329d0ded
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 857cb1757919925c8ca28e3b07904450b1264277
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930608"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975765"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Hinzufügen von Verweisen mithilfe von NuGet im Vergleich zu einer SDK-Erweiterung
 

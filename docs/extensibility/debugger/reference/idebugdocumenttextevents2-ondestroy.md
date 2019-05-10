@@ -1,30 +1,32 @@
 ---
-title: IDebugDocumentTextEvents2::onDestroy | Microsoft-Dokumentation
-ms.date: 11/04/2016
-ms.topic: conceptual
+title: IDebugDocumentTextEvents2::onDestroy | Microsoft Docs
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugDocumentTextEvents2::OnDestroy
 helpviewer_keywords:
 - IDebugDocumentTextEvents2::onDestroy
 ms.assetid: 60e4689c-c899-4c14-9d18-96393b741e1f
-author: gregvanl
+caps.latest.revision: 9
 ms.author: gregvanl
-manager: douge
-ms.workload:
-- vssdk
-ms.openlocfilehash: 5c7e8d431b6ec3e4d06e94da28c87ff7b69968de
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ade70ce0f72d2f3b86d6f7ec95a61b4bad57b102
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855269"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62875458"
 ---
 # <a name="idebugdocumenttextevents2ondestroy"></a>IDebugDocumentTextEvents2::onDestroy
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+
 Gibt an, dass das gesamte Dokument zerstört wurde.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp  
+```cpp#  
 HRESULT onDestroy(   
    void   
 );  

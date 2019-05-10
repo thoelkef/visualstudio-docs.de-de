@@ -5,45 +5,43 @@ ms.topic: conceptual
 ms.assetid: 20c35949-1f29-4282-ac75-4e6c237d71bc
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40de97d134f24832c56b0cda7b8462a3f8f8c937
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 036b13a7fea5d64e23e2b7d5ccbd8a7b17f91176
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777049"
 ---
 # <a name="args"></a>Args
-Die VSPerfCmd.exe-Option **Args** bestimmt eine Liste von Argumenten, die an die Zielanwendung des Unterbefehls **Starten** übergeben werden.  
-  
- **Args** kann nur dann verwendet werden, wenn **Starten** auch in der Befehlszeile angegeben ist. **Args** ist optional, wenn **Starten** angegeben ist.  
-  
-## <a name="syntax"></a>Syntax  
-  
-```cmd  
-VSPerfCmd.exe /Launch:AppName /Args:Arguments [Options]  
-```  
-  
-#### <a name="parameters"></a>Parameter  
- `Arguments`  
- Eine Liste von Argumenten für die Zielanwendung des Befehls **Starten**.  
-  
-## <a name="required-options"></a>Erforderliche Optionen  
- **Starten:** `AppName`  
- Startet die angegebene Anwendung und beginnt die Profilerstellung mit der Samplingmethode.  
-  
-## <a name="example"></a>Beispiel  
- Folgendes Beispiel verwendet die Option **Args**, um Argumente an TestApp.exe zu übergeben.  
-  
-```cmd  
-VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
-VSPerfCmd.exe /Launch:TestApp.exe /Args:"123, 'Hello World'"  
-```  
-  
-## <a name="see-also"></a>Siehe auch  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Profilerstellung für eigenständige Anwendungen](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profilerstellung von Diensten](../profiling/command-line-profiling-of-services.md)
+Die VSPerfCmd.exe-Option **Args** bestimmt eine Liste von Argumenten, die an die Zielanwendung des Unterbefehls **Starten** übergeben werden.
+
+ **Args** kann nur dann verwendet werden, wenn **Starten** auch in der Befehlszeile angegeben ist. **Args** ist optional, wenn **Starten** angegeben ist.
+
+## <a name="syntax"></a>Syntax
+
+```cmd
+VSPerfCmd.exe /Launch:AppName /Args:Arguments [Options]
+```
+
+#### <a name="parameters"></a>Parameter
+ `Arguments`: eine Liste von Argumenten für die Zielanwendung des Befehls **Launch**.
+
+## <a name="required-options"></a>Erforderliche Optionen
+ **Launch:** `AppName` startet die angegebene Anwendung und beginnt die Profilerstellung mit der Samplingmethode.
+
+## <a name="example"></a>Beispiel
+ Folgendes Beispiel verwendet die Option **Args**, um Argumente an TestApp.exe zu übergeben.
+
+```cmd
+VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
+VSPerfCmd.exe /Launch:TestApp.exe /Args:"123, 'Hello World'"
+```
+
+## <a name="see-also"></a>Siehe auch
+- [VSPerfCmd](../profiling/vsperfcmd.md)
+- [Profilerstellung für eigenständige Anwendungen](../profiling/command-line-profiling-of-stand-alone-applications.md)
+- [Profilerstellung für ASP.NET-Webanwendungen](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Profilerstellung von Diensten](../profiling/command-line-profiling-of-services.md)

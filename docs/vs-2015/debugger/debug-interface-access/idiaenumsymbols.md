@@ -1,14 +1,9 @@
 ---
 title: IDiaEnumSymbols | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 649f7bfd-86ac-49a5-8533-aff77e1bc62e
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 84cc5b9de04d101c211117e75c916f653be8f5e8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fae39270cfbbbb93b106de65b3b01210ffc61d29
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440808"
 ---
 # <a name="idiaenumsymbols"></a>IDiaEnumSymbols
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,17 +50,17 @@ IDiaEnumSymbols : IUnknown
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
  Rufen Sie diese Schnittstelle durch Aufrufen der folgenden Methoden:  
   
--   [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)  
+- [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)  
   
--   [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)  
+- [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)  
   
--   [IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)  
+- [IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)  
   
 ## <a name="example"></a>Beispiel  
  Dieses Beispiel zeigt, wie Sie erhalten die `IDiaEnumSymbols` Schnittstelle, und klicken Sie dann diese Enumeration so Listen Sie benutzerdefinierte Typen (UDTs).  
   
 > [!NOTE]
->  `CDiaBSTR` ist eine Klasse, umschließt ein `BSTR` und übernimmt automatisch das Freigeben der Zeichenfolge, bei die Instanziierung den Gültigkeitsbereich verlässt.  
+> `CDiaBSTR` ist eine Klasse, umschließt ein `BSTR` und übernimmt automatisch das Freigeben der Zeichenfolge, bei die Instanziierung den Gültigkeitsbereich verlässt.  
   
 ```cpp#  
 void ShowUDTs(IDiaSymbol *pGlobals)  
@@ -98,13 +93,10 @@ void ShowUDTs(IDiaSymbol *pGlobals)
   
  Bibliothek: diaguids.lib  
   
- DLL: "MSDIA80.dll"  
+ DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Siehe auch  
  [Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Idiasession:: Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
- [Idiasourcefile:: Get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)   
+ [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
+ [IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)   
  [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: MSBuild-Aufgaben | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - tasks
 - MSBuild, tasks
@@ -16,18 +11,17 @@ ms.assetid: 5d3cc4a7-e5db-4f73-b707-8b6882fddcf8
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dff7c0ce45c71340f3b931e32843adb6a90ea075
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 756c19da1aeb8878c2d045f4ee471d8449d2a954
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176697"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650594"
 ---
 # <a name="msbuild-tasks"></a>MSBuild-Aufgaben
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Eine Buildplattform muss während des Buildprozesses eine beliebige Anzahl von Aktionen auszuführen können. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] verwendet dazu *Aufgaben*. Eine Aufgabe ist eine Einheit von ausführbarem Code, der von [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] verwendet wird, um atomische Buildoperationen auszuführen.  
   
 ## <a name="task-logic"></a>Aufgabenlogik  
@@ -78,5 +72,3 @@ Eine Buildplattform muss während des Buildprozesses eine beliebige Anzahl von A
  [MSBuild](msbuild.md)   
  [Task Writing](../msbuild/task-writing.md)  (Schreiben von Aufgaben)  
  [Inline Tasks](../msbuild/msbuild-inline-tasks.md) (MSBuild-Inlineaufgaben)
-
-

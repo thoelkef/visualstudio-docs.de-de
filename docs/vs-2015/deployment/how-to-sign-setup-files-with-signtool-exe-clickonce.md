@@ -1,14 +1,9 @@
 ---
 title: 'Vorgehensweise: Signieren von Setupdateien mit SignTool.exe (ClickOnce) | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,15 +18,15 @@ ms.assetid: 545a4005-d283-4110-9821-c78a9833c250
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: f6975fb9c3c3e1abeeaebe23b4a85f41833e421e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 67dc8e858a8ee87ee9e1fef9d99bf24ea4994960
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179308"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053207"
 ---
-# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Gewusst wie: Signieren von Setupdateien mit SignTool.exe (ClickOnce)
+# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Vorgehensweise: Signieren von Setupdateien mit SignTool.exe (ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Sie können mit "SignTool.exe" ein Setupprogramm ("setup.exe") signieren. Durch diesen Prozess können Sie sicherstellen, dass manipulierte Dateien nicht auf den Computern von Endbenutzern installiert werden.  
@@ -42,27 +37,27 @@ Sie können mit "SignTool.exe" ein Setupprogramm ("setup.exe") signieren. Durch 
   
 ### <a name="to-generate-an-unsigned-setup-program-and-sign-later"></a>So generieren Sie ein nicht signiertes Setupprogramm und signieren es später  
   
-1.  Installieren Sie das Zertifikat, mit dem Sie das Manifest signieren möchten, auf dem Entwicklungscomputer.  
+1. Installieren Sie das Zertifikat, mit dem Sie das Manifest signieren möchten, auf dem Entwicklungscomputer.  
   
-2.  Wählen Sie das Projekt im **Projektmappen-Explorer** aus.  
+2. Wählen Sie das Projekt im **Projektmappen-Explorer** aus.  
   
-3.  Auf der **Projekt** Menü klicken Sie auf *ProjectName* **Eigenschaften**.  
+3. Klicken Sie im Menü **Projekt** auf **Eigenschaften von** *Projektname*.  
   
-4.  In der **Signierung** deaktivieren **ClickOnce-Manifeste signieren**.  
+4. Deaktivieren Sie auf der Seite **Signieren** das Kontrollkästchen **ClickOnce-Manifeste signieren**.  
   
-5.  In der **veröffentlichen** auf **Voraussetzungen**.  
+5. Klicken Sie auf der Seite **Veröffentlichen** auf **Erforderliche Komponenten**.  
   
-6.  Stellen Sie sicher, dass alle erforderlichen Komponenten ausgewählt sind, und klicken Sie dann auf **OK**.  
+6. Überprüfen Sie, ob alle erforderlichen Komponenten ausgewählt sind, und klicken Sie dann auf **OK**.  
   
-7.  In der **veröffentlichen** Seite, überprüfen Sie die veröffentlichungseinstellungen aus, und klicken Sie dann auf **jetzt veröffentlichen**.  
+7. Überprüfen Sie auf der Seite **Veröffentlichen** die Einstellungen für die Veröffentlichung, und klicken Sie dann auf **Jetzt veröffentlichen**.  
   
      Die Projektmappe veröffentlicht das nicht signierte Anwendungsmanifest, das nicht signierte Bereitstellungsmanifest, versionsspezifische Dateien und das nicht signierte Setupprogramm im Pfad des Veröffentlichungsordners.  
   
-8.  In der **veröffentlichen** auf **Voraussetzungen**.  
+8. Klicken Sie auf der Seite **Veröffentlichen** auf **Erforderliche Komponenten**.  
   
-9. In der **Voraussetzungen** Dialogfeld das Kontrollkästchen **Setupprogramm zur Installation erforderlicher Komponenten erstellen**.  
+9. Deaktivieren Sie im Dialogfeld **Erforderliche Komponenten** das Kontrollkästchen **Setupprogramm zur Installation erforderlicher Komponenten erstellen**.  
   
-10. In der **veröffentlichen** Seite, überprüfen Sie die veröffentlichungseinstellungen aus, und klicken Sie dann auf **jetzt veröffentlichen**.  
+10. Überprüfen Sie auf der Seite **Veröffentlichen** die Einstellungen für die Veröffentlichung, und klicken Sie dann auf **Jetzt veröffentlichen**.  
   
      Die Projektmappe veröffentlicht das signierte Anwendungsmanifest, das signierte Bereitstellungsmanifest und versionsspezifische Dateien im Pfad des Veröffentlichungsordners. Das nicht signierte Setupprogramm wird durch die Veröffentlichung nicht überschrieben.  
   
@@ -85,7 +80,4 @@ Sie können mit "SignTool.exe" ein Setupprogramm ("setup.exe") signieren. Durch 
     ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Gewusst wie: Erneutes Signieren von Anwendungs- und Bereitstellungsmanifesten](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
-
-
-
+ [Vorgehensweise: Erneutes Signieren von Anwendungs- und Bereitstellungsmanifesten](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

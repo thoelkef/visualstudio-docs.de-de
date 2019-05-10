@@ -15,16 +15,15 @@ helpviewer_keywords:
 ms.assetid: 104d1d19-b5a9-4071-b81e-1b3af08e9c7b
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fc4164ff4cf88edad8c4b0e4e69a41fc18a0b58c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 94712279b09a4def616ed264483b894c673bafc4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900208"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567301"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Erstellen von parametrisierten TableAdapter-Abfragen
 
@@ -39,40 +38,40 @@ Erstellen Sie parametrisierte TableAdapter-Abfragen in der **Dataset-Designer**.
 
 ### <a name="to-create-a-parameterized-query-in-the-dataset-designer"></a>So erstellen Sie parametrisierte Abfrage im DataSet-Designer
 
--   Erstellen Sie einen neuen TableAdapter und fügen Sie eine WHERE-Klausel mit den gewünschten Parametern zur SQL-Anweisung hinzu. Weitere Informationen finden Sie unter [erstellen und Konfigurieren eines TableAdapters](../data-tools/create-and-configure-tableadapters.md).
+- Erstellen Sie einen neuen TableAdapter und fügen Sie eine WHERE-Klausel mit den gewünschten Parametern zur SQL-Anweisung hinzu. Weitere Informationen finden Sie unter [erstellen und Konfigurieren eines TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
      - oder - 
 
--   Fügen Sie eine Abfrage zu einem vorhandenen TableAdapter hinzu und dann eine WHERE-Klausel mit den gewünschten Parametern für die SQL-Anweisung.
+- Fügen Sie eine Abfrage zu einem vorhandenen TableAdapter hinzu und dann eine WHERE-Klausel mit den gewünschten Parametern für die SQL-Anweisung.
 
 ### <a name="to-create-a-parameterized-query-while-designing-a-data-bound-form"></a>So erstellen Sie eine parametrisierte Abfrage beim Entwerfen eines datengebundenen Formulars
 
-1.  Wählen Sie ein Steuerelement auf dem Formular, das bereits an ein Dataset gebunden ist. Weitere Informationen finden Sie unter [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).
+1. Wählen Sie ein Steuerelement auf dem Formular, das bereits an ein Dataset gebunden ist. Weitere Informationen finden Sie unter [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).
 
-2.  Auf der **Daten** , wählen Sie im Menü **Abfrage hinzufügen**.
+2. Auf der **Daten** , wählen Sie im Menü **Abfrage hinzufügen**.
 
-3.  Füllen Sie das Dialogfeld **Suchkriterien-Generator** aus, und fügen Sie dann eine WHERE-Klausel mit den gewünschten Parametern für die SQL-Anweisung hinzu.
+3. Füllen Sie das Dialogfeld **Suchkriterien-Generator** aus, und fügen Sie dann eine WHERE-Klausel mit den gewünschten Parametern für die SQL-Anweisung hinzu.
 
 ### <a name="to-add-a-query-to-an-existing-data-bound-form"></a>So fügen Sie eine Abfrage einem vorhandenen datengebundenen Formular hinzu
 
-1.  Öffnen Sie das Formular im **Windows Forms-Designer**.
+1. Öffnen Sie das Formular im **Windows Forms-Designer**.
 
-2.  Auf der **Daten** , wählen Sie im Menü **Abfrage hinzufügen** oder **Smart Tags für Daten**.
+2. Auf der **Daten** , wählen Sie im Menü **Abfrage hinzufügen** oder **Smart Tags für Daten**.
 
     > [!NOTE]
     > Wenn **Abfrage hinzufügen** im Menü **Daten** nicht verfügbar ist, wählen Sie ein Steuerelement auf dem Formular, das die Datenquelle anzeigt, der Sie die Parametrisierung hinzufügen möchten. Wenn das Formular beispielsweise Daten in einem <xref:System.Windows.Forms.DataGridView>-Steuerelement anzeigt, wählen Sie dieses aus. Wenn das Formular Daten in einzelnen Steuerelementen anzeigt, wählen Sie irgendein datengebundenes Steuerelement.
 
-3.  In der **Auswählen einer Quelltabelle** Bereich, wählen Sie die Tabelle, zu dem Sie die Parametrisierung hinzufügen möchten.
+3. In der **Auswählen einer Quelltabelle** Bereich, wählen Sie die Tabelle, zu dem Sie die Parametrisierung hinzufügen möchten.
 
-4.  Geben Sie den Namen in das Feld **Neuer Abfragename** ein, wenn Sie eine neue Abfrage erstellen.
+4. Geben Sie den Namen in das Feld **Neuer Abfragename** ein, wenn Sie eine neue Abfrage erstellen.
 
      - oder - 
 
      Wählen Sie eine Abfrage im Feld **Vorhandener Abfragename** aus.
 
-5.  In der **Abfragetext** geben eine Abfrage, die Parameter annimmt.
+5. In der **Abfragetext** geben eine Abfrage, die Parameter annimmt.
 
-6.  Klicken Sie auf **OK**.
+6. Klicken Sie auf **OK**.
 
      Es wird ein Steuerelement für die Eingabe des Parameters sowie eine Schaltfläche **Laden** zum Formular in einem <xref:System.Windows.Forms.ToolStrip>-Steuerelement hinzugefügt.
 
@@ -93,11 +92,11 @@ Würde dies eine Abfrage auf einem TableAdapter, können Sie alle Aufträge Abfr
 
 So aktivieren Sie eine Abfrage, um null-Werte annehmen:
 
-1.  In der **Dataset-Designer**, wählen Sie die TableAdapter-Abfrage, die null-Parameterwerte annehmen muss.
+1. In der **Dataset-Designer**, wählen Sie die TableAdapter-Abfrage, die null-Parameterwerte annehmen muss.
 
-2.  In der **Eigenschaften** wählen Sie im Fenster **Parameter**, klicken Sie dann auf die Auslassungspunkte (**...** ) die Schaltfläche, um die **Parametersammlungs-Editor**.
+2. In der **Eigenschaften** wählen Sie im Fenster **Parameter**, klicken Sie dann auf die Auslassungspunkte (**...** ) die Schaltfläche, um die **Parametersammlungs-Editor**.
 
-3.  Wählen Sie den Parameter, die null-Werte zulässt, und legen Sie die **AllowDbNull** Eigenschaft `true`.
+3. Wählen Sie den Parameter, die null-Werte zulässt, und legen Sie die **AllowDbNull** Eigenschaft `true`.
 
 ## <a name="see-also"></a>Siehe auch
 

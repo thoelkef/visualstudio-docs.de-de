@@ -1,8 +1,6 @@
 ---
 title: 'Vorgehensweise: Profilerstellung für JavaScript-Code in Webseiten | Microsoft-Dokumentation'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - JavaScript performance profiling
@@ -10,22 +8,22 @@ helpviewer_keywords:
 - web site performance profiling
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 007603f0695a658b6bfa6c1ab1173b4483004c13
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 3d8e4c2b8b5f557f9f7eff26972593c4f40146be
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843922"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62539363"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>Vorgehensweise: Profilerstellung für JavaScript-Code in Webseiten
 
 Die Visual Studio-Profilerstellungstools können mithilfe der Instrumentierungsmethode für die Profilerstellung Leistungsdaten für JavaScript-Code sammeln, der in einer [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendung, auf einer beliebigen Webseite oder in einer JavaScript-Anwendung ausgeführt wird. Internet Explorer 8 oder höher erforderlich.
 
 > [!WARNING]
-> Informationen zur Profilerstellung für JavaScript in UWP-Apps finden sie unter [JavaScript-Speicher](../profiling/javascript-memory.md) 
+> Informationen zur Profilerstellung für JavaScript in UWP-Apps finden sie unter [JavaScript-Speicher](../profiling/javascript-memory.md)
 
 Zum Erstellen einer Leistungssitzung können Sie den Profilerstellungs-Assistenten verwenden. Geben Sie die Instrumentationsmethode an, und wählen Sie dann im Dialogfeld "Eigenschaften" für die Leistungssitzung auf der Seite "Instrumentation" die Option für die Profilerstellung für JavaScript aus.
 

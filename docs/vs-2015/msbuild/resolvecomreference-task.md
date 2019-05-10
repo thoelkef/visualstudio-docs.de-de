@@ -1,14 +1,9 @@
 ---
 title: ResolveCOMReference-Task | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveComReference
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: c9bf5fcf-6453-40ea-b50f-a212adc3e9b5
 caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bf70e5c2fe77f275f31ed9966df262d64ed2c23d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fc9ca34d8b8afc01787db594ffba5a1a36ec190e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179360"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439351"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Akzeptiert eine Liste aus mindestens einem Typbibliotheksnamen oder mindestens einer TLB-Datei und löst diese Bibliotheken an Speicherorten auf Datenträgern auf  
   
 ## <a name="parameters"></a>Parameter  
@@ -52,10 +46,10 @@ Akzeptiert eine Liste aus mindestens einem Typbibliotheksnamen oder mindestens e
 |`ResolvedAssemblyReferences`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Gibt die aufgelösten Assemblyverweise an|  
 |`ResolvedFiles`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Gibt die vollqualifizierten Dateien auf Datenträger an, die den physischen Speicherorten der Typbibliotheken entsprechen, die für diesen Task als Eingabe bereitgestellt wurden.|  
 |`ResolvedModules`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`Parameter.|  
-|`SdkToolsPath`|Optional, [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) Parameter.<br /><br /> Wenn `ExecuteAsTool` `true` ist, muss dieser Parameter auf den Pfad der SDK-Tools für die Zielframeworkversion festgelegt werden.|  
-|`StateFile`|Optionaler <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> -Parameter.<br /><br /> Gibt die Cachedatei für die Zeitstempel von COM-Komponenten an. Falls nicht vorhanden, erstellt jede Ausführung alle Wrapper neu.|  
-|`TargetFrameworkVersion`|Optionaler <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> -Parameter.<br /><br /> Gibt die Zielframeworkversion des Projekts an.<br /><br /> Die Standardeinstellung ist `String.Empty`. Was bedeutet, dass nicht nach einem Verweis auf Grundlage des Zielframeworks gefiltert werden kann.|  
-|`TargetProcessorArchitecture`|Optionaler <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> -Parameter.<br /><br /> Gibt die bevorzugte Zielprozessorarchitektur an. Wird nach der Übersetzung an das Flag „tlbimp.exe“/„Computer“ übergeben.<br /><br /> Der Parameterwert sollte ein Member des Typs <xref:Microsoft.Build.Utilities.ProcessorArchitecture> sein.|  
+|`SdkToolsPath`|Optionaler [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->)-Parameter.<br /><br /> Wenn `ExecuteAsTool` `true` ist, muss dieser Parameter auf den Pfad der SDK-Tools für die Zielframeworkversion festgelegt werden.|  
+|`StateFile`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> Parameter.<br /><br /> Gibt die Cachedatei für die Zeitstempel von COM-Komponenten an. Falls nicht vorhanden, erstellt jede Ausführung alle Wrapper neu.|  
+|`TargetFrameworkVersion`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> Parameter.<br /><br /> Gibt die Zielframeworkversion des Projekts an.<br /><br /> Die Standardeinstellung ist `String.Empty`. Was bedeutet, dass nicht nach einem Verweis auf Grundlage des Zielframeworks gefiltert werden kann.|  
+|`TargetProcessorArchitecture`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> Parameter.<br /><br /> Gibt die bevorzugte Zielprozessorarchitektur an. Wird nach der Übersetzung an das Flag „tlbimp.exe“/„Computer“ übergeben.<br /><br /> Der Parameterwert sollte ein Member des Typs <xref:Microsoft.Build.Utilities.ProcessorArchitecture> sein.|  
 |`TypeLibFiles`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Gibt den Typbibliothek-Dateipfad zu COM-Verweisen an. In diesem Parameter enthaltene Elemente können Elementmetadaten enthalten. Weitere Informationen finden Sie im Abschnitt „Elementmetadaten“ weiter unten.|  
 |`TypeLibNames`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter<br /><br /> Gibt die aufzulösenden Typbibliotheksnamen an. In diesem Parameter enthaltene Elemente müssen einige Elementmetadaten enthalten. Weitere Informationen finden Sie im Abschnitt „TypeLibNames-Elementmetadaten“ weiter unten.|  
 |`WrapperOutputDirectory`|Optionaler `String` -Parameter.<br /><br /> Der Speicherort auf dem Datenträger für die generierte Interop-Assembly. Wenn diese Elementmetadaten nicht angegeben werden, verwendet der Task den absoluten Pfad des Verzeichnisses, in dem sich die Projektdatei befindet.|  
@@ -81,7 +75,7 @@ Akzeptiert eine Liste aus mindestens einem Typbibliotheksnamen oder mindestens e
 |`WrapperTool`|Optionale Elementmetadaten<br /><br /> Gibt das Wrappertool an, das verwendet wird, um den Assemblywrapper für diese Typbibliothek zu generieren. Wenn diese Elementmetadaten nicht festgelegt sind, verwendet der Task das Standardwrappertool „tlbimp“. Die verfügbaren Optionen von Typbibliotheken, die die Groß-/Kleinschreibung nicht beachten, sind:<br /><br /> -   `Primary`: Verwenden Sie dieses Wrappertool, wenn Sie eine bereits generierte primäre Interopassembly für die COM-Komponente verwenden möchten. Wenn Sie dieses Wrappertool verwenden, geben Sie kein Wrapperausgabeverzeichnis an, weil der Task ansonsten fehlschlägt.<br />-   `TLBImp`: Verwenden Sie dieses Wrappertoll, wenn Sie eine Interopassembly für die COM-Komponente generieren möchten.<br />-   `AXImp`: Verwenden Sie dieses Wrappertoll, wenn Sie eine Interopassembly für ein ActiveX-Steuerelement generieren möchten.|  
   
 > [!NOTE]
->  Je mehr Informationen Sie zur Verfügung stellen, um eine Typbibliothek eindeutig identifizieren zu können, desto wahrscheinlicher ist es, dass der Task in die korrekten Dateien auf dem Datenträger auflöst.  
+> Je mehr Informationen Sie zur Verfügung stellen, um eine Typbibliothek eindeutig identifizieren zu können, desto wahrscheinlicher ist es, dass der Task in die korrekten Dateien auf dem Datenträger auflöst.  
   
 ## <a name="remarks"></a>Hinweise  
  Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Utilities.Task>-Klasse. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [Taskbasisklasse](../msbuild/task-base-class.md).  
@@ -89,6 +83,3 @@ Akzeptiert eine Liste aus mindestens einem Typbibliotheksnamen oder mindestens e
 ## <a name="see-also"></a>Siehe auch  
  [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
  [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)
-
-
-

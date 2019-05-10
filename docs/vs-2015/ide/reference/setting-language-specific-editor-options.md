@@ -1,14 +1,9 @@
 ---
 title: Festlegen von sprachspezifischen Editoroptionen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - editor options
 - configure editor
@@ -17,18 +12,17 @@ ms.assetid: ba64d517-a60d-409b-9860-5d75065a5bb7
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f2f8b540d61191b436c5d030729777dad8f84dc1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 85fb8c1349590858391051b8df395c8e6a781a75
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299090"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669791"
 ---
 # <a name="setting-language-specific-editor-options"></a>Festlegen von sprachspezifischen Editoroptionen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] bietet eine Vielzahl von Optionen für den Text-Editor, die für bestimmte Programmiersprachen gelten.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
@@ -63,8 +57,5 @@ ms.locfileid: "49299090"
  [Anpassen des Editors](../../ide/customizing-the-editor.md)  
  Enthält Links zu Themen, in denen die zahlreichen Editorfeatures erläutert werden, für die Einstellungen festgelegt werden können.  
   
- [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+ [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
  Enthält Links zu Themen, in denen das Anpassen von Einstellungen, Tastenbindungen und anderen Features der integrierten Entwicklungsumgebung (IDE) erläutert wird.
-
-
-

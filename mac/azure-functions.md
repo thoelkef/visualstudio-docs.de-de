@@ -3,16 +3,16 @@ title: Einführung in Azure Functions
 description: Verwenden von Azure-Funktionen in Visual Studio für Mac
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 04/02/2019
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: eaf6f82cdc40b174dcd1ca8deb12c412fe675d70
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: db25a9cbc647e399da86781d155a7b55d8e3802e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62985025"
 ---
 # <a name="introduction-to-azure-functions"></a>Einführung in Azure Functions
 
@@ -20,7 +20,7 @@ Mithilfe von Azure Functions können Sie ereignisgesteuerte Codeausschnitte – 
 
 ## <a name="requirements"></a>Anforderungen
 
-Die Azure Function-Tools sind im Lieferumfang von **Visual Studio für Mac 7.5** enthalten.
+Die Azure Function-Tools sind im Lieferumfang von **Visual Studio für Mac 7.5** und höheren Versionen enthalten.
 
 Sie benötigen zum Erstellen und Bereitstellen von Funktionen außerdem ein Azure-Abonnement, das Sie kostenlos über [https://azure.com/free](https://azure.com/free) erhalten.
 
@@ -34,6 +34,10 @@ Sie benötigen zum Erstellen und Bereitstellen von Funktionen außerdem ein Azur
 3. Wählen Sie die anfängliche Azure Functions-Vorlage, die Sie verwenden möchten, geben den Funktionsnamen ein, und klicken Sie auf **Weiter**.
 
     ![Dialogfeld „Neues Projekt“ mit Azure Functions-Vorlagen](media/azure-functions-image2.png)
+
+    > [!TIP]
+    > Obwohl die gebündelte Azure Functions-Runtime und die Vorlagen (CLI) so aktuell wie möglich gehalten werden, veralten sie unvermeidlich. Bei der Erstellung eines neuen Projekts in Azure Functions, überprüft Visual Studio für Mac, ob CLI-Updates vorhanden sind, und informiert Sie gegebenenfalls (siehe Bild unten). Klicken Sie einfach auf die Schaltfläche, um die aktualisierten Vorlagen herunterzuladen.
+    > ![Dialogfeld „Neues Projekt“ mit dem Hinweis, dass Azure Functions-Updates verfügbar sind](media/azure-functions-update.png)
 
     Abhängig vom Typ der von Ihnen gewählten Funktion werden Sie auf der nächsten Seite aufgefordert, Details wie beispielsweise Zugriffsrechte einzugeben, wie im folgenden Bild dargestellt:
 
@@ -91,20 +95,17 @@ Mit der obigen Vorgehensweise können Sie weitere Funktionen zu Ihrem Funktions-
 
 ## <a name="publish-to-azure"></a>Veröffentlichen in Azure
 
-1. Klicken Sie mit der rechten Maustaste auf den Projektnamen, und wählen Sie **Veröffentlichen > In Azure veröffentlichen** aus: ![Menüoption „In Azure veröffentlichen“](media/azure-functions-image5.png)
+1. Klicken Sie mit der rechten Maustaste auf den Projektnamen, und wählen Sie dann **Veröffentlichen > In Azure veröffentlichen** aus:  ![Menüoption „In Azure veröffentlichen“](media/azure-functions-image5.png)
 2. Wenn Sie Ihr Azure-Konto bereits mit Visual Studio für Mac verbunden haben, wird eine Liste der verfügbaren App-Dienste angezeigt. Wenn Sie sich nicht angemeldet haben, werden Sie dazu aufgefordert.
 3. Im Dialogfeld **In Azure App Service veröffentlichen** können Sie entweder einen vorhandenen App-Dienst auswählen oder einen neuen erstellen, indem Sie auf **Neu** klicken.
-4. Geben Sie im Dialogfeld **Neuen App-Dienst erstellen** Ihre Einstellungen ein: ![Menüoption „In Azure veröffentlichen“](media/azure-functions-image7.png)
+4. Geben Sie Ihre Einstellungen im Dialogfeld **Neuen App-Dienst erstellen** ein:  ![Menüoption „In Azure veröffentlichen“](media/azure-functions-image7.png)
 
-    |Einstellung  |Beschreibung   |
+    |Einstellung  |Beschreibung  |
     |---------|---------|
     |**App Service-Name**|Ein global eindeutiger Name, der Ihre neue Funktions-App identifiziert.|
     |**Abonnement**|Das zu verwendende Azure-Abonnement|
     |**[Ressourcengruppe](/azure/azure-resource-manager/resource-group-overview)**|Der Name der Ressourcengruppe, in der Ihre Funktions-App erstellt werden soll. Wählen Sie **+** aus, um eine neue Ressourcengruppe zu erstellen.|
     |**[Serviceplan](/azure/azure-functions/functions-scale)**|Wählen Sie einen vorhandenen Plan aus, oder erstellen Sie einen benutzerdefinierten Plan. Wählen Sie einen Speicherort in einer Region in Ihrer Nähe oder in der Nähe anderer Dienste, auf die Ihre Funktionen zugreifen.|
-
-    > [!CAUTION]
-    > In der Version 7.6 von Visual Studio für Mac gibt es einen Fehler, der dazu führt, dass bei der Veröffentlichung ein Bereitstellungsfehler auftritt. Dies ist der Fall, wenn Sie einen benutzerdefinierten Serviceplan erstellen möchten, bei dem **Preise** auf **Verbrauch** gesetzt ist. Dies wird in der nächsten Dienstversion behoben.
 
 5. Klicken Sie auf **Weiter**, um ein Speicherkonto zu erstellen. Für die Functions-Laufzeit ist ein Azure-Speicherkonto erforderlich. Klicken Sie auf **Benutzerdefiniert**, um ein allgemeines Speicherkonto zu erstellen oder eine bereits vorhandenes Speicherkonto zu verwenden:
 
@@ -116,14 +117,11 @@ Mit der obigen Vorgehensweise können Sie weitere Funktionen zu Ihrem Funktions-
 
     ![Menüoption „In Azure veröffentlichen“](media/azure-functions-image12.png)
 
-> [!CAUTION]
-> Es gibt einen Fehler in der Version 7.6 von Visual Studio für Mac, bei dem `FUNCTIONS_EXTENSION_VERSION` nicht korrekt auf „beta“ gesetzt ist, was bedeutet, dass Ihre Funktion möglicherweise nicht ausgeführt wird. Um dies zu beheben, wechseln Sie zu den [Functions-App-Einstellungen](#function-app-settings) und ändern den Wert für `FUNCTIONS_EXTENSION_VERSION` von „-1“ in „beta“.
-
 ## <a name="function-app-settings"></a>Funktions-App-Einstellungen
 
 Alle Einstellungen, die Sie in der Datei local.settings.json hinzugefügt haben, müssen auch der Funktions-App in Azure hinzugefügt werden. Diese Einstellungen werden nicht automatisch hochgeladen, wenn Sie das Projekt veröffentlichen.
 
-Um auf Ihre App-Einstellungen zuzugreifen, wechseln Sie zum Azure-Portal unter [https://ms.portal.azure.com/](https://ms.portal.azure.com/). Wählen Sie unter **Funktions-Apps** die Option **Funktions-Apps** aus, und markieren Sie Ihren Funktionsnamen:
+Wenn Sie auf Ihre App-Einstellungen zugreifen möchten, wechseln Sie zum Azure-Portal unter [https://ms.portal.azure.com/](https://ms.portal.azure.com/). Wählen Sie unter **Funktions-Apps** die Option **Funktions-Apps** aus, und markieren Sie Ihren Funktionsnamen:
 
 ![Azure Functions-Menü](media/azure-functions-image9.png)
 
@@ -133,7 +131,7 @@ Wählen Sie auf der Registerkarte **Übersicht** unter **Konfigurierte Features*
 
 Von hier aus können Sie Anwendungseinstellungen für die Funktions-App festlegen, d.h. neue Anwendungseinstellungen hinzufügen oder bestehende ändern:
 
-![Bereich für Anwendungseinstellungen im Azure-Portal](media/azure-functions-image11.png)
+![Screenshot: Bereich für Anwendungseinstellungen im Azure-Portal](media/azure-functions-image11.png)
 
 Eine wichtige Einstellung, die Sie möglicherweise vornehmen müssen, ist `FUNCTIONS_EXTENSION_VERSION`. Beim Veröffentlichen aus Visual Studio für Mac sollte dieser Wert auf **beta** gesetzt sein.
 
@@ -149,9 +147,7 @@ Eine wichtige Einstellung, die Sie möglicherweise vornehmen müssen, ist `FUNCT
     - Http POST CRUD
     - HTTP-Trigger mit Parametern
 
-
 - **Timer**: Führen Sie eine Bereinigung oder andere Stapelaufgaben für einen vordefinierten Zeitplan aus. Diese Vorlage beinhaltet zwei Felder: ein Name und ein Zeitplan, bei dem es sich um einen CRON-Ausdruck handelt, der aus sechs Feldern besteht. Weitere Informationen finden Sie unter [Erstellen einer Funktion in Azure, die von einem Timer ausgelöst wird](/azure/azure-functions/functions-create-scheduled-function).
-
 
 - **Queue Trigger**: eine Funktion, die auf Meldungen antwortet, wenn diese in die Azure Storage-Warteschlange aufgenommen werden. Neben dem Funktionsnamen beinhaltet diese Vorlage einen **Pfad** (den Namen der Warteschlange, aus der die Meldung gelesen wird) und die Speicherkonto-**Verbindung** (der Name der App-Einstellung mit der Verbindungszeichenfolge des Speicherkontos). Weitere Informationen finden Sie unter [Erstellen einer Funktion, die durch Azure Queue Storage ausgelöst wird](/azure/azure-functions/functions-create-storage-queue-triggered-function).
 

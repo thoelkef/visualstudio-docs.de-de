@@ -1,37 +1,31 @@
 ---
 title: Vergleich von Eigenschaften und Elementen | Microsoft-Dokumentation
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, msbuild properties
 ms.assetid: b9da45ae-d6a6-4399-8628-397deed31486
 caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9d42cc8fb4e5ba0783ad24aedc0edf7a323db4d9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 66fc8065e81b8b93e73ec034a166e3d5645d4b6b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878582"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095827"
 ---
 # <a name="comparing-properties-and-items"></a>Vergleich von Eigenschaften und Elementen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Sowohl MSBuild-Eigenschaften als auch MSBuild-Elemente werden verwendet, um Informationen an Aufgaben zu übergeben, Bedingungen auszuwerten und Werte zu speichern, auf die in der gesamten Projektdatei verwiesen werden kann.  
   
--   Eigenschaften sind Name/Wert-Paare. Weitere Informationen finden Sie unter [MSBuild-Eigenschaften](msbuild-properties1.md).  
+- Eigenschaften sind Name/Wert-Paare. Weitere Informationen finden Sie unter [MSBuild-Eigenschaften](msbuild-properties1.md).  
   
--   Elemente sind Objekte, die in der Regel Dateien darstellen. Elementobjekten können Metadatensammlungen zugeordnet sein. Metadaten sind Name/Wert-Paare. Weitere Informationen finden Sie unter [Elemente](../msbuild/msbuild-items.md).  
+- Elemente sind Objekte, die in der Regel Dateien darstellen. Elementobjekten können Metadatensammlungen zugeordnet sein. Metadaten sind Name/Wert-Paare. Weitere Informationen finden Sie unter [Elemente](../msbuild/msbuild-items.md).  
   
 ## <a name="scalars-and-vectors"></a>Skalare und Vektoren  
  Da MSBuild-Eigenschaften Name/Wert-Paare sind, die nur einen Zeichenfolgenwert aufweisen, werden sie häufig als *Skalar* bezeichnet. Da MSBuild-Elementtypen Listen von Elementen sind, werden sie häufig als *Vektor* bezeichnet. In der Praxis können Eigenschaften jedoch mehrere Werte darstellen, und Elementtypen können null oder ein Element aufweisen.  
@@ -102,15 +96,15 @@ Sowohl MSBuild-Eigenschaften als auch MSBuild-Elemente werden verwendet, um Info
   
 - Während der Auswertungsphase eines Builds:  
   
-  -   Eigenschaften werden in der Reihenfolge definiert und geändert, in der sie vorkommen. Eigenschaftenfunktionen werden ausgeführt. Eigenschaftswerte der Form $(PropertyName) werden in Ausdrücken erweitert. Der Eigenschaftswert wird auf den erweiterten Ausdruck gesetzt.  
+  - Eigenschaften werden in der Reihenfolge definiert und geändert, in der sie vorkommen. Eigenschaftenfunktionen werden ausgeführt. Eigenschaftswerte der Form $(PropertyName) werden in Ausdrücken erweitert. Der Eigenschaftswert wird auf den erweiterten Ausdruck gesetzt.  
   
-  -   Elementdefinitionen werden in der Reihenfolge definiert und geändert, in der sie vorkommen. Eigenschaftenfunktionen wurden bereits in Ausdrücken erweitert. Metadatenwerte werden auf die erweiterten Ausdrücke gesetzt.  
+  - Elementdefinitionen werden in der Reihenfolge definiert und geändert, in der sie vorkommen. Eigenschaftenfunktionen wurden bereits in Ausdrücken erweitert. Metadatenwerte werden auf die erweiterten Ausdrücke gesetzt.  
   
-  -   Elementtypen werden in der Reihenfolge definiert und geändert, in der sie vorkommen. Elementwerte in der Form @(Elementtyp) werden erweitert. Elementtransformationen werden ebenfalls erweitert. Eigenschaftenfunktionen und -werte wurden bereits in Ausdrücken erweitert. Die Elementliste und die Metadatenwerte werden auf die erweiterten Ausdrücke gesetzt.  
+  - Elementtypen werden in der Reihenfolge definiert und geändert, in der sie vorkommen. Elementwerte in der Form @(Elementtyp) werden erweitert. Elementtransformationen werden ebenfalls erweitert. Eigenschaftenfunktionen und -werte wurden bereits in Ausdrücken erweitert. Die Elementliste und die Metadatenwerte werden auf die erweiterten Ausdrücke gesetzt.  
   
 - Während der Auswertungsphase eines Builds:  
   
-  -   Eigenschaften und Elemente, die in Zielen definiert sind, werden zusammen in der Reihenfolge ausgewertet, in der sie vorkommen. Eigenschaftenfunktionen werden ausgeführt, und Eigenschaftswerte werden in Ausdrücken erweitert. Elementwerte und Elementtransformationen werden ebenfalls erweitert. Die Eigenschaftswerte, Elementtypwerte und Metadatenwerte werden auf die erweiterten Ausdrücke gesetzt.  
+  - Eigenschaften und Elemente, die in Zielen definiert sind, werden zusammen in der Reihenfolge ausgewertet, in der sie vorkommen. Eigenschaftenfunktionen werden ausgeführt, und Eigenschaftswerte werden in Ausdrücken erweitert. Elementwerte und Elementtransformationen werden ebenfalls erweitert. Die Eigenschaftswerte, Elementtypwerte und Metadatenwerte werden auf die erweiterten Ausdrücke gesetzt.  
   
 ### <a name="subtle-effects-of-the-evaluation-order"></a>Geringfügige Auswirkungen der Auswertungsreihenfolge  
  In der Auswertungsphase eines Builds erfolgt die Auswertung von Eigenschaften vor der Auswertung von Elementen. Trotzdem können Eigenschaften Werte besitzen, die scheinbar von Elementwerten abhängen. Sehen Sie sich das folgende Skript an.  
@@ -189,6 +183,3 @@ KeyFileVersion: 1.0.0.3
   
 ## <a name="see-also"></a>Siehe auch  
  [MSBuild Advanced Concepts (Weiterführende MSBuild-Konzepte)](../msbuild/msbuild-advanced-concepts.md)
-
-
-
