@@ -9,38 +9,37 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd399bb0d18d4a12493530932705b938a5f6dd67
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ebbb18e37356c1ef6ccc47f18afe4736a418c0c3
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414860"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476579"
 ---
-# <a name="customizing-and-extending-a-domain-specific-language"></a>Anpassen und Erweitern einer domänenspezifischen Sprache
+# <a name="customize-and-extend-a-domain-specific-language"></a>Anpassen und Erweitern einer domänenspezifischen Sprache
+
 Visual Studio-Modellierung und Visualisierung SDK (VMSDK) bietet mehrere Ebenen, die an dem Sie die Tools zur Modellierung definieren können:
 
-1. Definieren Sie eine domänenspezifische Sprache (DSL) mithilfe von DSL-Definitionsdiagramm. Sie können schnell eine DSL erstellen, mit einer diagrammdarstellung, einem lesbaren XML-Format und die grundlegenden Tools, die zum Generieren von Code und andere Artefakte erforderlich sind.
-
-     Weitere Informationen finden Sie unter [Gewusst wie: Definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md).
+1. Definieren Sie eine domänenspezifische Sprache (DSL) mithilfe von DSL-Definitionsdiagramm. Sie können schnell eine DSL erstellen, mit einer diagrammdarstellung, einem lesbaren XML-Format und die grundlegenden Tools, die zum Generieren von Code und andere Artefakte erforderlich sind. Weitere Informationen finden Sie unter [Gewusst wie: Definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md).
 
 2. Optimieren Sie die DSL, indem Sie mithilfe von erweiterten Funktionen von der DSL-Definition. Beispielsweise können Sie vornehmen, weitere Links werden angezeigt, wenn der Benutzer ein Element erstellt werden sollen. Diese Verfahren bestehen meist in der DSL-Definition, und einige erfordern einige Zeilen Programmcode.
 
-3. Erweitern Sie Ihre Modellierungstools mit Programmcode. VMSDK wurde speziell dafür entwickelt, die Integration Ihrer Erweiterungen in den Code zu vereinfachen, der aus der DSL-Definition generiert wird.  Weitere Informationen finden Sie unter [Schreiben von Code zum Anpassen einer domänenspezifischen Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md).
+3. Erweitern Sie Ihre Modellierungstools mit Programmcode. VMSDK wurde speziell dafür entwickelt, die Integration Ihrer Erweiterungen in den Code zu vereinfachen, der aus der DSL-Definition generiert wird. Weitere Informationen finden Sie unter [Schreiben von Code zum Anpassen einer domänenspezifischen Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md).
 
 > [!NOTE]
-> Wenn Sie die DSL-Definitionen-Datei aktualisiert haben, vergessen Sie nicht auf **alle Vorlagen transformieren** auf der Symbolleiste des Projektmappen-Explorer vor dem Neuerstellen der Projektmappe.
+> Wenn Sie die DSL-Definitionen-Datei aktualisiert haben, vergessen Sie nicht, klicken Sie auf **alle Vorlagen transformieren** auf der Symbolleiste des **Projektmappen-Explorer** vor dem Neuerstellen der Projektmappe.
 
-## <a name="customShapes"></a> In diesem Abschnitt
+## <a name="article-reference"></a>Artikel-Referenz
 
 |Um diesen Effekt zu erzielen.|In diesem Thema finden Sie unter|
 |-|-|
-|Ermöglicht dem Benutzer zum Festlegen der Eigenschaften für Farbe und den Stil einer Form.|Mit der rechten Maustaste der Form oder einen Verbinder-Klasse, zeigen Sie auf **verfügbare hinzufügen**, und klicken Sie auf ein Element.<br /><br /> Finden Sie unter [Anpassen der Darstellung im Diagramm](../modeling/customizing-presentation-on-the-diagram.md).|
+|Ermöglicht dem Benutzer zum Festlegen der Eigenschaften für Farbe und den Stil einer Form.|Mit der rechten Maustaste der Form oder einen Verbinder-Klasse, zeigen Sie auf **verfügbare hinzufügen**, und klicken Sie auf ein Element.|
 |Verschiedene Klassen von Modellelement in etwa wie im Diagramm, das Freigeben von Eigenschaften wie die ursprüngliche Höhe und Breite, Farbe, QuickInfos aussehen.|Verwenden Sie die Vererbung zwischen Formen oder die Connector-Klassen. Zuordnungen zwischen abgeleiteten Formen und abgeleiteter Domänenklassen, die Details der Zuordnung von den übergeordneten Elementen erben.<br /><br /> Oder anderen Domänenklassen die gleiche formklasse zuordnen.|
 |Eine Klasse von Modellelement wird durch verschiedene Formen Kontexten angezeigt.|Ordnen Sie mehr als eine formklasse, mit der gleichen Domänenklasse. Wenn Sie die Projektmappe erstellen, führen Sie den Fehlerbericht, und geben Sie den angeforderten Code, um zu entscheiden, welche Form verwenden.|
 |Shape-Farbe oder andere Features wie z. B. Schriftart angeben, aktuellen Status.|Finden Sie unter [Aktualisieren von Formen und Konnektoren zur Darstellung des Modells](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md).<br /><br /> Erstellen Sie eine Regel, die verfügbar gemachten Eigenschaften aktualisiert. Finden Sie unter [Regeln propagieren Änderungen im Modell](../modeling/rules-propagate-changes-within-the-model.md).<br /><br /> Oder verwenden Sie OnAssociatedPropertyChanged() zum Aktualisieren von Funktionen wie z. B. links-Taste oder die Schriftart nicht verfügbar gemacht werden.|
 |Symbol in Form von Änderungen an Zustand.|Legen Sie die Sichtbarkeit der Decorator-Zuordnung im DSL-Details-Fenster. Suchen Sie nach mehreren Image Decorator-Elemente auf der gleichen Position. Finden Sie unter [Aktualisieren von Formen und Konnektoren zur Darstellung des Modells](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md).<br /><br /> Oder, außer Kraft setzen `ImageField.GetDisplayImage()`. Siehe das Beispiel in <xref:Microsoft.VisualStudio.Modeling.Diagrams.ImageField>.|
-|Festlegen eines Hintergrundbilds für eine beliebige Form|Überschreiben Sie InitializeInstanceResources(), um eine verankerten ImageField hinzuzufügen. Finden Sie unter [Anpassen der Darstellung im Diagramm](../modeling/customizing-presentation-on-the-diagram.md).|
-|Verschachteln von Formen in einer beliebigen Tiefe|Richten Sie eine rekursive Struktur einbetten. Definieren Sie BoundsRules um Formen enthalten. Finden Sie unter [Anpassen der Darstellung im Diagramm](../modeling/customizing-presentation-on-the-diagram.md).|
+|Festlegen eines Hintergrundbilds für eine beliebige Form|Überschreiben Sie InitializeInstanceResources(), um eine verankerten ImageField hinzuzufügen.|
+|Verschachteln von Formen in einer beliebigen Tiefe|Richten Sie eine rekursive Struktur einbetten. Definieren Sie BoundsRules um Formen enthalten.|
 |Fügen Sie Connectors, die an festen Positionen auf ein Element der Grenze.|Definieren Sie die eingebettete terminal Elementen, die durch kleine Ports im Diagramm dargestellt. Verwenden Sie BoundsRules, um die Ports an Stelle zu beheben. Finden Sie unter der Leitung Diagramm-Sample bei [Visualisierungs- und Modellierungs-SDK](http://go.microsoft.com/fwlink/?LinkID=186128).|
 |Textfeld zeigt einen Wert aus anderen Werten abgeleitet.|Ordnen Sie das Text-Decorator-Element eine Eigenschaft "Domain" Calculated "oder" benutzerdefinierte Speicher. Weitere Informationen finden Sie unter [berechnete und benutzerdefinierte Speichereigenschaften](../modeling/calculated-and-custom-storage-properties.md).|
 |Weitergeben von Änderungen zwischen Modellelementen oder Formen|Finden Sie unter [Validierung in einer domänenspezifischen Sprache](../modeling/validation-in-a-domain-specific-language.md).|
