@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c8c447ce6b202fc3ccca65c6725e9eb3e5f13ecf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8b0cd5939bf91a3f154cf28434f561ed93b1a597
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982250"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226669"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>Verwenden von WPF-Steuerelemente in Office-Projektmappen
 
@@ -55,7 +55,7 @@ Sie können Benutzeroberflächenelementen in Office-Projektmappen WPF-Steuerelem
 
     - Für die Formularbereiche, Hinzufügen einer **Outlook-Formularbereich** Elements zum Projekt. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen eines Formularbereichs zu einem Outlook-Add-in-Projekt](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).
 
-    - Für Aktionsbereiche, Hinzufügen einer **Aktionsbereich-Steuerelements** oder **Benutzersteuerelement** Elements zum Projekt. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen eines Aktionsbereichs zu Word-Dokumenten oder Excel-Arbeitsmappen](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md) und [Vorgehensweise: Hinzufügen eines Aktionsbereichs zu Word-Dokumenten oder Excel-Arbeitsmappen](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
+    - Für Aktionsbereiche, Hinzufügen einer **Aktionsbereich-Steuerelements** oder **Benutzersteuerelement** Elements zum Projekt. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen eines Aktionsbereichs zu Word-Dokumenten oder Excel-Arbeitsmappen](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
 
     - Für benutzerdefinierte Aufgabenbereiche, Hinzufügen einer **Benutzersteuerelement** Elements zum Projekt. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen ein benutzerdefinierten Aufgabenbereichs zu einer Anwendung](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
 

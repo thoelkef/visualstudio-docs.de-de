@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 370ee63ff31bcb0eeba82fbb55fd37166de7ff52
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e800d8d57d34c0ed99cb3cfa9a3f6a7b871a034d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869043"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458606"
 ---
 # <a name="idebugsettingscallback2geteemetricfile"></a>IDebugSettingsCallback2::GetEEMetricFile
 Ruft die Expression Evaluator Metrik Datei erhält den Namen oder die Metrik ab.
@@ -40,20 +43,20 @@ private int GetEEMetricFile(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `guidLang`
+## <a name="parameters"></a>Parameter
+ `guidLang`\
 
  [in] Eindeutiger Bezeichner der Programmiersprache.
 
- `guidVendor`
+ `guidVendor`\
 
  [in] Eindeutiger Bezeichner des Herstellers.
 
- `pszMetric`
+ `pszMetric`\
 
  [in] Der Name der Metrik.
 
- `pbstrValue`
+ `pbstrValue`\
 
  [out] Gibt den Inhalt der Datei Metrik als Zeichenfolge zurück.
 

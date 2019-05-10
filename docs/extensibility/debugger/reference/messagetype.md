@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16d2b9ae9c446d4c8082a8c35c9e4d1810233b95
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7f3485aa2e5650345c0b14c6cb8093034043285a
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913860"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461013"
 ---
 # <a name="messagetype"></a>MESSAGETYPE
 Gibt den Nachrichtentyp und dem Grund.
@@ -47,18 +50,24 @@ public enum enum_MESSAGETYPE { 
 };
 ```
 
-## <a name="members"></a>Member
- MT_OUTPUTSTRING gibt an, die die Meldung im Ausgabefenster gesendet werden soll. Dies ist von sich gegenseitig ausschließende `MT_MESSAGEBOX`.
+## <a name="fields"></a>Felder
+ `MT_OUTPUTSTRING`\
+ Gibt an, dass die Meldung im Ausgabefenster gesendet werden soll. Dies ist von sich gegenseitig ausschließende `MT_MESSAGEBOX`.
 
- MT_MESSAGEBOX gibt an, die die Nachricht in einem Meldungsfeld angezeigt werden soll. Dies ist von sich gegenseitig ausschließende `MT_OUTPUTSTRING`.
+ `MT_MESSAGEBOX`\
+ Gibt an, dass die Nachricht in einem Meldungsfeld angezeigt werden soll. Dies ist von sich gegenseitig ausschließende `MT_OUTPUTSTRING`.
 
- MT_TYPE_MASK ein Maskenwert, um das Ziel für die Nachricht zu isolieren.
+ `MT_TYPE_MASK`\
+ Ein-Wert, das Ziel für die Nachricht zu isolieren.
 
- MT_REASON_EXCEPTION gibt an, die aufgrund einer Ausnahme ein Meldungsfeld angezeigt wird. Dies ist von sich gegenseitig ausschließende `MT_REASON_TRACEPOINT`.
+ `MT_REASON_EXCEPTION`\
+ Gibt an, dass als Ergebnis einer Ausnahme ein Meldungsfeld angezeigt wird. Dies ist von sich gegenseitig ausschließende `MT_REASON_TRACEPOINT`.
 
- MT_REASON_TRACEPOINT gibt an, die als Ergebnis einen Ablaufverfolgungspunkt erreicht ein Meldungsfeld angezeigt wird. Dies ist an sich gegenseitig ausschließende `MT_REASON_EXCEPTION`.
+ `MT_REASON_TRACEPOINT`\
+ Gibt an, dass als Ergebnis einen Ablaufverfolgungspunkt erreicht ein Meldungsfeld angezeigt wird. Dies ist an sich gegenseitig ausschließende `MT_REASON_EXCEPTION`.
 
- MT_REASON_MASK ein Maskenwert, um den Grund für die anzuzeigende Nachricht zu isolieren.
+ `MT_REASON_MASK`\
+ Ein-Wert, den Grund für die anzuzeigende Nachricht zu isolieren.
 
 ## <a name="remarks"></a>Hinweise
  Diese Werte werden zurückgegeben, aus der ["GetMessage"](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md) und [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md) Methoden.

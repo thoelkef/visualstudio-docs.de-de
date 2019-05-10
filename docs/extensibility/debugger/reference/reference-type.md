@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcfc3745676ba1309327dc84143b0706ba02b5a2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 17e6690f434672c891ac499175332e03c7f1bbf8
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864771"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460785"
 ---
 # <a name="referencetype"></a>REFERENCE_TYPE
 Gibt den Verweistyp.
@@ -39,10 +42,12 @@ public enum enum_REFERENCE_TYPE { 
 };
 ```
 
-## <a name="members"></a>Member
- REF_TYPE_WEAK gibt einen schwachen Verweis an. Können nicht kombiniert werden, mit `REF_TYPE_STRONG`.
+## <a name="fields"></a>Felder
+ `REF_TYPE_WEAK`\
+ Gibt einen schwachen Verweis an. Können nicht kombiniert werden, mit `REF_TYPE_STRONG`.
 
- REF_TYPE_STRONG gibt einen starken Verweis an. Können nicht kombiniert werden, mit `REF_TYPE_WEAK`.
+ `REF_TYPE_STRONG`\
+ Gibt einen starken Verweis an. Können nicht kombiniert werden, mit `REF_TYPE_WEAK`.
 
 ## <a name="remarks"></a>Hinweise
  Verwendet als die `dwRefType` Mitglied der [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) Struktur.

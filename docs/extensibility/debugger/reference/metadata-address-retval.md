@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63f3b7363a6852dd54033d89828f8af9b0eb76fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8e31682de4c625e40baaac6daff4687c713abda9
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913886"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460973"
 ---
 # <a name="metadataaddressretval"></a>METADATA_ADDRESS_RETVAL
 Diese Struktur stellt einen Rückgabewert aus einer Methode oder Funktion dar.
@@ -42,14 +45,18 @@ public struct METADATA_ADDRESS_RETVAL {
 }
 ```
 
-## <a name="terms"></a>Begriffe
- TokMethod die ID der Methode, die, der dieser Rückgabewert ist.
+## <a name="members"></a>Member
+ `tokMethod`\
+ Die ID der Methode, die, der dieser Rückgabewert ist.
 
- DwCorType den Basistyp des Rückgabewerts. Dies ist ein Wert aus der `CorElementType` in definierte Aufzählung der [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] corhdr.h-Datei des SDKS.
+ `dwCorType`\
+ Der Basistyp des Rückgabewerts. Dies ist ein Wert aus der `CorElementType` in definierte Aufzählung der [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] corhdr.h-Datei des SDKS.
 
- DwSigSize die Größe der Rückgabewert-Signatur (gespeichert in `rgSig`).
+ `dwSigSize`\
+ Die Größe der Rückgabewert-Signatur (gespeichert in `rgSig`).
 
- RgSig ein Array von Bytes, die die Signatur des Rückgabewerts bilden.
+ `rgSig`\
+ Ein Array von Bytes, die die Signatur des Rückgabewerts bilden.
 
 ## <a name="remarks"></a>Hinweise
  Diese Struktur ist Teil der Union in der [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) Kontostruktur, wenn die `dwKind` Feld der `DEBUG_ADDRESS_UNION` Struktur nastaven NA hodnotu `ADDRESS_KIND_RETVAL` (ein Wert aus der [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) die Enumeration).

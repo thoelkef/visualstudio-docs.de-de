@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4af17f49e95818ed664e74aab53687540f653ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0fc6e2fee354d6dcc76676bf02d4ed88e1799f26
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916323"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458647"
 ---
 # <a name="idebugreference2setvalueasreference"></a>IDebugReference2::SetValueAsReference
 Legt den Wert eines Verweises von einem anderen Verweis. Für zukünftige Verwendung reserviert.
@@ -42,20 +45,20 @@ int SetValueAsReference ( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `rgpArgs`
+## <a name="parameters"></a>Parameter
+ `rgpArgs`\
 
  [in] Ein Array von [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) Objekte verwendet, um zu bestimmen, wie der Verweiswert festgelegt.
 
- `dwArgCount`
+ `dwArgCount`\
 
  [in] Die Anzahl der Verweise im Array.
 
- `pValue`
+ `pValue`\
 
  [in] Ein [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) Objekt aus, das den Eigenschaftswert festzulegen.
 
- `dwTimeout`
+ `dwTimeout`\
 
  [in] Maximale Zeit in Millisekunden, die vor der Rückgabe dieser Methode gewartet. Verwendung `INFINITE` für Warten ohne Timeout.
 

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96f46692b86f35c999e21541b9c8c7a7dcc7f670
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1140e4a4fc966d93b6ca097fce98152437840b73
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62866043"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223421"
 ---
 # <a name="ienumdebugprograms2next"></a>IEnumDebugPrograms2::Next
 Gibt den nächsten Satz von Elementen aus der Enumeration zurück.
@@ -40,16 +43,16 @@ int Next(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `celt`
+## <a name="parameters"></a>Parameter
+ `celt`\
 
  [in] Die Anzahl der abzurufenden Elemente. Gibt auch die maximale Größe der `rgelt` Array.
 
- `rgelt`
+ `rgelt`\
 
  [in, out] Array von [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) Elementen gefüllt werden soll.
 
- `pceltFetched`
+ `pceltFetched`\
 
  [out] Gibt die Anzahl der im tatsächlich zurückgegebenen Elemente `rgelt`.
 

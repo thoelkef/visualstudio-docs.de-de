@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9d2bf87a804295a5ea8f6750ee9cd93643c53bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a2ba039164c43ccc99b3305bb29bc4f1c98f68f7
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913009"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460649"
 ---
 # <a name="unmanagedaddressthisrelative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
 Diese Struktur stellt eine Adresse, die relativ zu einem `this` Zeiger (`Me` in Visual Basic).
@@ -40,12 +43,15 @@ public struct UNMANAGED_THIS_RELATIVE {
 }
 ```
 
-## <a name="terms"></a>Begriffe
- DwOffset Byte-offset von einer Basisklasse Position (z. B. Anfang eine Klassen-Vtable).
+## <a name="members"></a>Member
+ `dwOffset`\
+ Byte-offset von einer Basisklasse Position (z. B. Anfang eine Klassen-Vtable).
 
- DwBitOffset Offset in Bits, die von einer Basisklasse Position (immer 0, wenn auf ein Bitfeld).
+ `dwBitOffset`\
+ Der Offset in Bits, die von einer Basisklasse Position (immer 0, wenn auf ein Bitfeld).
 
- DwBitLength Anzahl von Bits, die die Adresse (immer 0, wenn auf ein Bitfeld).
+ `dwBitLength`\
+ Anzahl der Bits, die die Adresse (immer 0, wenn auf ein Bitfeld).
 
 ## <a name="remarks"></a>Hinweise
  Diese Struktur ist Teil der Union in der [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) Kontostruktur, wenn die `dwKind` Feld der `DEBUG_ADDRESS_UNION` Struktur nastaven NA hodnotu `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE` (ein Wert aus der [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) die Enumeration).

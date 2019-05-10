@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d790c7b278d36395c0df5575ed3bc7c381753fe
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b54e6ee8321d58046ec0beb372a14495b614db0c
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412567"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458512"
 ---
 # <a name="idebugstackframe3"></a>IDebugStackFrame3
 Diese Schnittstelle erweitert [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) , abgefangene Ausnahmen zu behandeln.
@@ -45,7 +45,7 @@ IDebugStackFrame3 : IDebugStackFrame2
 ## <a name="remarks"></a>Hinweise
  Eine abgefangene Ausnahme bedeutet, dass ein Debugger eine Ausnahme verarbeiten kann, bevor alle normalen Ausnahmebehandlung Routinen, die von der Laufzeit aufgerufen werden. Das Abfangen einer Ausnahme im Wesentlichen bedeutet, dass die Laufzeit nehmen, dass es ein Ausnahmehandler vorhanden, selbst wenn nicht vorhanden ist.
 
-- [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) während alle Ereignisse der normale Ausnahme-Rückruf aufgerufen wird (die einzige Ausnahme hierbei ist, wenn Sie in diesem Fall nicht die Ausnahme werden, während der abgefangen kann gemischten Code (verwaltet und nicht verwaltetem Code) Debuggen der letzte Gelegenheit Rückruf). Wenn die DE nicht implementiert `IDebugStackFrame3`, oder die DE gibt einen Fehler zurück, aus IDebugStackFrame3::`InterceptCurrentException` (wie z. B. `E_NOTIMPL`), und klicken Sie dann der Debugger normalerweise die Ausnahme behandelt.
+- [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) während alle Ereignisse der normale Ausnahme-Rückruf aufgerufen wird (die einzige Ausnahme hierbei ist, im gemischten Modus (verwalteter und nicht verwaltetem Code), Debuggen von Code sind in diesem Fall nicht die Ausnahme werden, während abgefangen kann die letzte Gelegenheit Rückruf). Wenn die DE nicht implementiert `IDebugStackFrame3`, oder die DE gibt einen Fehler zurück, aus IDebugStackFrame3::`InterceptCurrentException` (wie z. B. `E_NOTIMPL`), und klicken Sie dann der Debugger normalerweise die Ausnahme behandelt.
 
  Durch das Abfangen einer Ausnahme an, kann der Debugger kann den Benutzer Änderungen vornehmen, um den Status des gedebuggten Programm und dann die Ausführung an der Stelle, wo die Ausnahme ausgelöst wurde, fortgesetzt.
 

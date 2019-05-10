@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0cac3e4fb6c072a26ede753213f6546c2ff50afa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d50ce2b695fa332057abd91ab54c5966c277ba45
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62914060"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461273"
 ---
 # <a name="interceptexceptionaction"></a>INTERCEPT_EXCEPTION_ACTION
 Gibt an, welche Aktionen an, die beim Abfangen von Ausnahmen.
@@ -39,8 +42,11 @@ public enum enum_INTERCEPT_EXCEPTION_ACTION
 }
 ```
 
-#### <a name="parameters"></a>Parameter
-IEA_INTERCEPT können die aktuelle Ausnahme abfangen. Dies ist der einzige derzeit unterstützte Wert und muss angegeben werden.
+## <a name="parameters"></a>Parameter
+
+`IEA_INTERCEPT`\
+
+Ermöglicht das Abfangen von der aktuellen Ausnahme. Dies ist der einzige derzeit unterstützte Wert und muss angegeben werden.
 
 ## <a name="remarks"></a>Hinweise
 Diese Werte werden übergeben, in der [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) Methode.

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7b28010f117b1bb6616250f1e188bd5acb38cda
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 77306706c15be37a975742be917523095bec587f
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915859"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226438"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromcontext"></a>IDebugSymbolProvider::GetAddressesFromContext
 Diese Methode ordnet einem Dokumentkontext in ein Array von Debug-Adressen.
@@ -42,20 +45,20 @@ int GetAddressesFromContext(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `pDocContext`
+## <a name="parameters"></a>Parameter
+ `pDocContext`\
 
  [in] Der Dokumentenkontext.
 
- `fStatmentOnly`
+ `fStatmentOnly`\
 
  [in] True gibt an, beschränkt die Debug-Adressen zu einer einzigen Anweisung.
 
- `ppEnumBegAddresses`
+ `ppEnumBegAddresses`\
 
  [out] Gibt einen Enumerator für die Debug-Startadressen dieser Anweisung oder der Zeile zugeordnet.
 
- `ppEnumEndAddresses`
+ `ppEnumEndAddresses`\
 
  [out] Gibt eine [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) Enumerator für die abschließende Debug-Adressen, die dieser Anweisung oder der Zeile zugeordnet.
 

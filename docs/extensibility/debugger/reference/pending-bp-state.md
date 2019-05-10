@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ab1e9345cf599c4336b202d32fb71a9097fe629
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7dd77065791d36e89c43b51dd8e1494d8e69a369
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913609"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458378"
 ---
 # <a name="pendingbpstate"></a>PENDING_BP_STATE
 Gibt den Status eines ausstehenden Haltepunkts (einen Haltepunkt, die noch nicht gebunden ist).
@@ -43,14 +46,18 @@ public enum enum_PENDING_BP_STATE { 
 };
 ```
 
-## <a name="members"></a>Member
- PBPS_NONE-Platzhalter für 0 (null). Dieser Wert wird nie zurückgegeben.
+## <a name="fields"></a>Felder
+ `PBPS_NONE`\
+ Platzhalter für 0 (null). Dieser Wert wird nie zurückgegeben.
 
- PBPS_DELETED gibt an, dass es sich bei der ausstehenden Haltepunkt gelöscht wurde.
+ `PBPS_DELETED`\
+ Gibt an, dass es sich bei der ausstehenden Haltepunkt gelöscht wurde.
 
- PBPS_DISABLED gibt an, dass der ausstehenden Haltepunkt deaktiviert ist.
+ `PBPS_DISABLED`\
+ Gibt an, dass der ausstehenden Haltepunkt deaktiviert ist.
 
- PBPS_ENABLED gibt an, dass es sich bei der ausstehenden Haltepunkt aktiviert ist.
+ `PBPS_ENABLED`\
+ Gibt an, dass es sich bei der ausstehenden Haltepunkt aktiviert ist.
 
 ## <a name="remarks"></a>Hinweise
  Verwenden Sie als die `state` Mitglied der [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) Struktur.

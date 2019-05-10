@@ -8,18 +8,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6dde8eee0c21f41cb21acf97fb68961dd0beee7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e1350523b347d0dfb87831947b4fd1d9206521ca
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62933673"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461334"
 ---
-# <a name="xml-schema-designer-workspace"></a>Arbeitsbereich des XML-Schema-Designers
+# <a name="xml-schema-designer-workspace-views"></a>Ansichten des XML-Schema-Designer-Arbeitsbereichs
 
-Der XML-Schema-Designer (XSD-Designer) ist ein grafisches Tool, mit dem Sie die XML-Schemas untersuchen können. Zusätzlich zu den [XML-Schema-Explorer](../xml-tools/xml-schema-explorer.md), wodurch Sie durchsuchen und Navigieren durch die Struktur von XML-Schema und Suchvorgänge durchführen, der XSD-Designer bietet drei Ansichten, mit denen Sie des XSD-Schemas noch ausführlicher untersuchen können. Die Ausgangsansicht ist der Ausgangspunkt für den XSD-Designer. In dieser Ansicht können Sie zu anderen Ansichten des XSD-Designers navigieren und die Details des Schemasets sehen. Die Diagrammansicht bietet eine Übersicht über ein Schemaset und die Beziehungen zwischen den Schemaknoten. Die Inhaltsmodellansicht bietet eine grafische Darstellung der Details lokaler und globaler Schemaknoten, einschließlich einfacher und komplexer Typen, Elemente, Gruppen, Attribute und Attributgruppen.
+Der XML-Schema-Designer (XSD-Designer) ist ein grafisches Tool, mit dem Sie die XML-Schemas untersuchen können. Zusätzlich zu den [XML-Schema-Explorer](../xml-tools/xml-schema-explorer.md), wodurch Sie durchsuchen und Navigieren durch die Struktur von XML-Schema und Suchvorgänge durchführen, der XSD-Designer stellt drei Ansichten, in dem Sie des XSD-Schemas noch ausführlicher untersuchen können.
 
-Bevor Sie bestimmte Knoten untersuchen können, müssen Sie sie zuerst dem Arbeitsbereich hinzufügen. Der Arbeitsbereich wird für alle Ansichten verwendet.
+- Die **Ausgangsansicht** ist der Startpunkt für den XSD-Designer, in dieser Ansicht können Sie mit anderen Ansichten des XSD-Designers navigieren und die Details des Schemasets.
+- Die **Diagrammansicht** ermöglicht es Ihnen, eine Übersicht über ein Schemaset und die Beziehungen zwischen den Schemaknoten.
+- Die **Inhaltsmodellansicht** bietet eine grafische Darstellung der Details lokaler und globaler Schemaknoten, einschließlich einfacher und komplexer Typen, Elemente, Gruppen, Attribute und Attributgruppen.
+
+Zum Erkunden die Knoten, denen Sie interessiert sind, müssen Sie diese mit dem Arbeitsbereich hinzufügen. Der Arbeitsbereich wird für alle Ansichten verwendet.
 
 ## <a name="add-nodes-to-the-workspace"></a>Hinzufügen von Knoten zum Arbeitsbereich
 

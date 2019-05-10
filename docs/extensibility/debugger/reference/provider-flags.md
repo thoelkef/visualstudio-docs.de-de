@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 803d9569c611e3c4cd70f2c82ecd525716d8ddb3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7f6fb974bd5affc89eeacbfccace5c1e89218db5
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913526"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457926"
 ---
 # <a name="providerflags"></a>PROVIDER_FLAGS
 Gibt die gewünschte Eigenschaften von einem Programm-Anbieter abgerufen werden sollen.
@@ -49,20 +52,27 @@ public enum enum_PROVIDER_FLAGS {
 };
 ```
 
-## <a name="members"></a>Member
- PFLAG_NONE keine Flags angegeben.
+## <a name="fields"></a>Felder
+ `PFLAG_NONE`\
+ Keine Flags angegeben.
 
- Eine Liste der Programme auf einem anderen Computer als für Aufrufer PFLAG_REMOTE_PORT [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
+ `PFLAG_REMOTE_PORT`\
+ Eine Liste der Programme auf einem anderen Computer als "Aufrufer" [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
 
- Der Prozess wird von dieser Instanz der gerade gedebuggten PFLAG_DEBUGGEE [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
+ `PFLAG_DEBUGGEE`\
+ Der Prozess wird von dieser Instanz der gerade gedebuggten [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
 
- PFLAG_ATTACH_TODEBUGGEE [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] gedebuggten Programm angefügt ist, jedoch wurde nicht gestartet.
+ `PFLAG_ATTACH_TODEBUGGEE`\
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] das derzeit debuggte Programm angefügt ist, jedoch wurde nicht gestartet.
 
- PFLAG_REASON_WATCH [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ist überwachen-Ereignisse.
+ `PFLAG_REASON_WATCH`\
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] wird für Ereignisse überwachen.
 
- PFLAG_GET_PROGRAM_NODES Aufrufer möchte, dass die `ProgramNodes` Feld der [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) Struktur.
+ `PFLAG_GET_PROGRAM_NODES`\
+ Aufrufer möchte, dass die `ProgramNodes` Feld der [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) Struktur.
 
- PFLAG_GET_IS_DEBUGGER_PRESENT Aufrufer möchte, dass die `fIsTheDebuggerPresent` Feld der `PROVIDER_PROCESS_DATA` Struktur.
+ `PFLAG_GET_IS_DEBUGGER_PRESENT`\
+ Aufrufer möchte, dass die `fIsTheDebuggerPresent` Feld der `PROVIDER_PROCESS_DATA` Struktur.
 
 ## <a name="remarks"></a>Hinweise
  Diese Flags werden an die folgenden Methoden übergeben:

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 302c44b3d4947baa95554966246f15175841257d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7ffdf2359b719be0fa3cf0a17ae4ed70bc36b673
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913922"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461062"
 ---
 # <a name="launchflags"></a>LAUNCH_FLAGS
 Gibt die Debug-Startflags an.
@@ -43,14 +46,18 @@ public enum enum_LAUNCH_FLAGS {
 };
 ```
 
-## <a name="members"></a>Member
-LAUNCH_DEBUG startet den Prozess für das Debuggen.
+## <a name="fields"></a>Felder
+`LAUNCH_DEBUG`\
+Startet den Prozess für das Debuggen.
 
-LAUNCH_NODEBUG startet den Prozess, ohne es zu debuggen.
+`LAUNCH_NODEBUG`\
+Startet den Prozess ohne es zu debuggen.
 
-LAUNCH_ENABLE_ENC DEPRECATED, DO NOT USE.
+`LAUNCH_ENABLE_ENC`\
+VERALTET, VERWENDEN SIE NICHT.
 
-LAUNCH_MERGE_ENV startet den Prozess und führt die Umgebung mit dem Host starten.
+`LAUNCH_MERGE_ENV`\
+Startet den Prozess und führt die Umgebung mit dem Host starten.
 
 ## <a name="remarks"></a>Hinweise
 Diese Werte werden übergeben, als Argument an die [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) Methode.

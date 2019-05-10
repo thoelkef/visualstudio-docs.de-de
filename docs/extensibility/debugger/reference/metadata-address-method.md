@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6d6ad6fdb995c80043a831bd08aa1294f0fb33e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 43d8bd1a32328c47cd463fc6232466df5bdbd857
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913909"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461023"
 ---
 # <a name="metadataaddressmethod"></a>METADATA_ADDRESS_METHOD
 Diese Struktur stellt die Adresse einer Methode einer Klasse dar.
@@ -40,18 +43,18 @@ public struct METADATA_ADDRESS_METHOD {
 }
 ```
 
-## <a name="terms"></a>Begriffe
- tokMethod
+## <a name="members"></a>Member
+ `tokMethod`\
 
  Die ID der Methode.
 
  [C++] `_mdToken` ist eine `typedef` für eine 32-Bit- `int`.
 
- dwOffset
+ `dwOffset`\
 
  Der Offset von der Klasse beginnen, diese Methode (kann den Offset in der Vtable darstellen).
 
- dwVersion
+ `dwVersion`\
 
  Die Version der Methode (dieser Wert ist nur für die symbolanbieter).
 

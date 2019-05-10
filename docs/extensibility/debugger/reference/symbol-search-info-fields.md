@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2621b88622e99ac95533e388197e483f2925f897
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5d6f416d284c1712f8e52b2655a74e08f6f9cfe1
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420836"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458333"
 ---
 # <a name="symbolsearchinfofields"></a>SYMBOL_SEARCH_INFO_FIELDS
 Gibt die Art von symbolischen Informationen abrufen.
@@ -42,10 +45,12 @@ public enum enum_SYMBOL_SEARCH_INFO_FIELDS
 
 ```
 
-## <a name="members"></a>Member
- SSIF_NONE gibt keine Flags an.
+## <a name="fields"></a>Felder
+ `SSIF_NONE`\
+ Gibt keine Flags an.
 
- SSIF_VERBOSE_SEARCH_INFO gibt zurück, die alle Pfade verwendet werden, für die Suche nach Symbolen suchen
+ `SSIF_VERBOSE_SEARCH_INFO`\
+ Gibt, die alle Pfade verwendet werden, für die Suche nach Symbolen suchen
 
 ## <a name="remarks"></a>Hinweise
  Diese Flags werden übergeben, als Parameter an die ["getsymbolinfo"](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) Methode, um zu bestimmen, die Menge an Informationen zurückgegeben.
