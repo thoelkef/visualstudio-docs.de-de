@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e3a11e368b6260d00f3f6ed0b19d94aa26bd31a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 58531e64c88c89a92b5eee7f2eac7067cf42775f
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865465"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458006"
 ---
 # <a name="moduleinfo"></a>MODULE_INFO
 Beschreibt ein bestimmtes Modul (DLL, EXE-Datei oder Assembly).
@@ -59,29 +62,41 @@ public struct MODULE_INFO { 
 ```
 
 ## <a name="members"></a>Member
- DwValidFields eine Kombination von Flags aus der [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) Enumeration, der angibt, welche Felder ausgefüllt sind.
+ `dwValidFields`\
+ Eine Kombination von Flags aus der [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) Enumeration, der angibt, welche Felder ausgefüllt sind.
 
- M_bstrName den Namen des Moduls.
+ `m_bstrName`\
+ Der Modulname.
 
- M_bstrUrl die Modul-URL.
+ `m_bstrUrl`\
+ Die Modul-URL.
 
- M_bstrVersion die Modulversion.
+ `m_bstrVersion`\
+ Die Modulversion.
 
- M_bstrDebugMessage eine optionale Nachricht, die über das Modul, z. B. "Symbole geladen werden nicht möglich."
+ `m_bstrDebugMessage`\
+ Eine optionale Nachricht, die über das Modul, z. B. "Symbole geladen werden nicht möglich."
 
- M_addrLoadAddress die Ladeadresse des Moduls.
+ `m_addrLoadAddress`\
+ Die Ladeadresse des Moduls.
 
- M_addrPreferredLoadAddress die bevorzugte Ladeadresse des Moduls.
+ `m_addrPreferredLoadAddress`\
+ Die bevorzugte Ladeadresse des Moduls.
 
- M_dwSize die Modulgröße.
+ `m_dwSize`\
+ Die Modulgröße.
 
- M_dwLoadOrder die Ladereihenfolge Modul.
+ `m_dwLoadOrder`\
+ Die Modul-Load-Reihenfolge.
 
- M_TimeStamp die Zeit, die Symboldatei zuletzt geändert wurde.
+ `m_TimeStamp`\
+ Die Zeit, die Symboldatei zuletzt geändert wurde.
 
- M_bstrUrlSymbolLocation den Speicherort der Symboldatei (z. B. ".\\") im Modul angegeben. Zum Suchen von Symbolen für ein Modul als einen Startort anzugeben.
+ `m_bstrUrlSymbolLocation`\
+ Der Speicherort der Symboldatei (z. B. ".\\") im Modul angegeben. Zum Suchen von Symbolen für ein Modul als einen Startort anzugeben.
 
- M_dwModuleFlags eine Kombination von Flags aus der [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) -Enumeration, die diesem Modul erläutert.
+ `m_dwModuleFlags`\
+ Eine Kombination von Flags aus der [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) -Enumeration, die diesem Modul erläutert.
 
 ## <a name="remarks"></a>Hinweise
  Diese Struktur wird zum Übergeben der [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) Methode, in denen es ausgefüllt wird.

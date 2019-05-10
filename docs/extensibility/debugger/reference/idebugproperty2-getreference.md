@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: abff655b41dbc55735b7dea2934f7d396aae5f4c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9248ad59a564207befb0b0a3ff1c229840ee336b
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916608"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457715"
 ---
 # <a name="idebugproperty2getreference"></a>IDebugProperty2::GetReference
 Gibt einen Verweis auf den Wert der Eigenschaft zurück.
@@ -36,8 +39,8 @@ int GetReference(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `ppRererence`
+## <a name="parameters"></a>Parameter
+ `ppRererence`\
 
  [out] Gibt eine [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) Objekt, das einen Verweis auf den Wert der Eigenschaft darstellt.
 

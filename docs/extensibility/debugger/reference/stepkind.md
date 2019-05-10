@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb0ece36eba11b61f760552fe0559de46c1ce732
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fa9c1805c7eaba480cd46ebc6e73ee370e3cbb22
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864785"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460772"
 ---
 # <a name="stepkind"></a>STEPKIND
 Gibt den Schritt für die schrittweise Ausführung.
@@ -43,14 +46,18 @@ public enum enum_STEPKIND { 
 };
 ```
 
-## <a name="members"></a>Member
- STEP_INTO Schritte in einer Funktion.
+## <a name="fields"></a>Felder
+ `STEP_INTO`\
+ Eine Funktion in Einzelschritten.
 
- Schrittweite Schritte für eine Funktion.
+ `STEP_OVER`\
+ Schritte für eine Funktion.
 
- STEP_OUT Schritten aus einer Funktion.
+ `STEP_OUT`\
+ Die Schritte aus einer Funktion.
 
- STEP_BACKWARDS Schritte rückwärts in eine Funktion.
+ `STEP_BACKWARDS`\
+ Schritte nach hinten an eine Funktion.
 
 ## <a name="remarks"></a>Hinweise
  Übergeben als Argument an die [Schritt](../../../extensibility/debugger/reference/idebugprocess3-step.md) Methode.

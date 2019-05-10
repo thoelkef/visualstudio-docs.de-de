@@ -1,6 +1,6 @@
 ---
-title: 'CA2302: Festlegung von BinaryFormatter.Binder vor dem Aufruf von BinaryFormatter.Deserialize sicherstellen'
-ms.date: 04/05/2019
+title: 'CA2312: Stellen Sie sicher, dass vor der Deserialisierung NetDataContractSerializer.Binder festgelegt ist'
+ms.date: 05/01/2019
 ms.topic: reference
 author: dotpaul
 ms.author: paulming
@@ -11,33 +11,33 @@ dev_langs:
 ms.workload:
 - multiple
 f1_keywords:
-- CA2302
-- EnsureBinaryFormatterBinderIsSetBeforeCallingBinaryFormatterDeserialize
-ms.openlocfilehash: c833a60d98cbfd7eea3e3b673c7e60c6047a4ae9
+- CA2312
+- EnsureNetDataContractSerializerBinderIsSetBeforeDeserializing
+ms.openlocfilehash: 7d438945e9a1e5fdc03b09573168bbad0563ce28
 ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/06/2019
-ms.locfileid: "65083897"
+ms.locfileid: "65135448"
 ---
-# <a name="ca2302-ensure-binaryformatterbinder-is-set-before-calling-binaryformatterdeserialize"></a>CA2302: Festlegung von BinaryFormatter.Binder vor dem Aufruf von BinaryFormatter.Deserialize sicherstellen
+# <a name="ca2312-ensure-netdatacontractserializerbinder-is-set-before-deserializing"></a>CA2312: Stellen Sie sicher, dass vor der Deserialisierung NetDataContractSerializer.Binder festgelegt ist
 
 |||
 |-|-|
-|TypeName|EnsureBinaryFormatterBinderIsSetBeforeCallingBinaryFormatterDeserialize|
-|CheckId|CA2302|
+|TypeName|EnsureNetDataContractSerializerBinderIsSetBeforeDeserializing|
+|CheckId|CA2312|
 |Kategorie|Microsoft.Security|
 |Unterbrechende Änderung|Nicht unterbrechende Änderung|
 
 ## <a name="cause"></a>Ursache
 
-Ein <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType> Deserialisierungsmethode war aufgerufen oder referenziert werden und die <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> Eigenschaft kann null sein.
+Ein <xref:System.Runtime.Serialization.NetDataContractSerializer?displayProperty=nameWithType> Deserialisierungsmethode war aufgerufen oder referenziert werden und die <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder> Eigenschaft kann null sein.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
 [!INCLUDE[insecure-deserializers-description](includes/insecure-deserializers-description-md.md)]
 
-Diese Regel sucht nach <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType> Deserialisierungsmethode aufruft oder verweist auf, wenn die <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> kann null sein. Wenn Sie Deserialisierung mit unterbinden möchten <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> unabhängig von der <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> -Eigenschaft, deaktivieren Sie diese Regel und [CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md), und aktivieren Sie die Regel [CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md).
+Diese Regel sucht nach <xref:System.Runtime.Serialization.NetDataContractSerializer?displayProperty=nameWithType> Deserialisierungsmethode aufruft oder verweist auf, wenn die <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder> kann null sein. Wenn Sie Deserialisierung mit unterbinden möchten <xref:System.Runtime.Serialization.NetDataContractSerializer> unabhängig von der <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder> -Eigenschaft, deaktivieren Sie diese Regel und [CA2311](ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md), und aktivieren Sie die Regel [CA2310](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md).
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
@@ -49,8 +49,8 @@ Diese Regel sucht nach <xref:System.Runtime.Serialization.Formatters.Binary.Bina
   - Verwenden Sie Newtonsoft Json.NET - TypeNameHandling.None. Wenn Sie einen anderen Wert für TypeNameHandling verwenden müssen, beschränken Sie zu einer erwarteten Liste mit einem benutzerdefinierten ISerializationBinder deserialisierte Typen.
   - Protokollpuffer
 - Stellen Sie die serialisierten Daten vor Manipulationen sicher. Melden Sie kryptografisch nach der Serialisierung die serialisierten Daten. Überprüfen Sie vor der Deserialisierung die kryptografische Signatur. Schützen Sie die kryptografischen Schlüssel vom offen gelegt wird und der Entwurf für die Schlüsselrotationen.
-- Deserialisierte Typen zu beschränken. Implementieren Sie einen benutzerdefinierten <xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>. Vor der Deserialisierung mit <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>legen die <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> Eigenschaft, um eine Instanz des benutzerdefinierten <xref:System.Runtime.Serialization.SerializationBinder>. In der überschriebenen <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A> -Methode, wenn der Typ, wird eine Ausnahme auslösen.
-  - Stellen Sie sicher, dass alle Codepfade haben die <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> Eigenschaftensatz.
+- Deserialisierte Typen zu beschränken. Implementieren Sie einen benutzerdefinierten <xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>. Vor der Deserialisierung mit <xref:System.Runtime.Serialization.NetDataContractSerializer>legen die <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder> Eigenschaft, um eine Instanz des benutzerdefinierten <xref:System.Runtime.Serialization.SerializationBinder>. In der überschriebenen <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A> -Methode, wenn der Typ, wird eine Ausnahme auslösen.
+  - Stellen Sie sicher, dass alle Codepfade haben die <xref:System.Runtime.Serialization.NetDataContractSerializer.Binder> Eigenschaftensatz.
 
 ## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
 
@@ -63,33 +63,43 @@ Diese Regel sucht nach <xref:System.Runtime.Serialization.Formatters.Binary.Bina
 ```csharp
 using System;
 using System.IO;
-using System.Runtime.Serialization.Formatters.Binary;
+using System.Runtime.Serialization;
 
-[Serializable]
+[DataContract]
 public class BookRecord
 {
+    [DataMember]
     public string Title { get; set; }
+
+    [DataMember]
     public string Author { get; set; }
+
+    [DataMember]
     public int PageCount { get; set; }
+
+    [DataMember]
     public AisleLocation Location { get; set; }
 }
 
-[Serializable]
+[DataContract]
 public class AisleLocation
 {
+    [DataMember]
     public char Aisle { get; set; }
+
+    [DataMember]
     public byte Shelf { get; set; }
 }
 
 public class ExampleClass
 {
-    public BinaryFormatter Formatter { get; set; }
+    public NetDataContractSerializer Serializer { get; set; }
 
     public BookRecord DeserializeBookRecord(byte[] bytes)
     {
         using (MemoryStream ms = new MemoryStream(bytes))
         {
-            return (BookRecord) this.Formatter.Deserialize(ms);
+            return (BookRecord) this.Serializer.Deserialize(ms);
         }
     }
 }
@@ -98,27 +108,35 @@ public class ExampleClass
 ```vb
 Imports System
 Imports System.IO
-Imports System.Runtime.Serialization.Formatters.Binary
+Imports System.Runtime.Serialization
 
-<Serializable()>
+<DataContract()>
 Public Class BookRecord
+    <DataMember()>
     Public Property Title As String
+
+    <DataMember()>
     Public Property Author As String
+
+    <DataMember()>
     Public Property Location As AisleLocation
 End Class
 
-<Serializable()>
+<DataContract()>
 Public Class AisleLocation
+    <DataMember()>
     Public Property Aisle As Char
+
+    <DataMember()>
     Public Property Shelf As Byte
 End Class
 
 Public Class ExampleClass
-    Public Property Formatter As BinaryFormatter
+    Public Property Serializer As NetDataContractSerializer
 
     Public Function DeserializeBookRecord(bytes As Byte()) As BookRecord
         Using ms As MemoryStream = New MemoryStream(bytes)
-            Return CType(Me.Formatter.Deserialize(ms), BookRecord)
+            Return CType(Me.Serializer.Deserialize(ms), BookRecord)
         End Using
     End Function
 End Class
@@ -130,7 +148,6 @@ End Class
 using System;
 using System.IO;
 using System.Runtime.Serialization;
-using System.Runtime.Serialization.Formatters.Binary;
 
 public class BookRecordSerializationBinder : SerializationBinder
 {
@@ -152,19 +169,29 @@ public class BookRecordSerializationBinder : SerializationBinder
     }
 }
 
-[Serializable]
+[DataContract]
 public class BookRecord
 {
+    [DataMember]
     public string Title { get; set; }
+
+    [DataMember]
     public string Author { get; set; }
+
+    [DataMember]
     public int PageCount { get; set; }
+
+    [DataMember]
     public AisleLocation Location { get; set; }
 }
 
-[Serializable]
+[DataContract]
 public class AisleLocation
 {
+    [DataMember]
     public char Aisle { get; set; }
+
+    [DataMember]
     public byte Shelf { get; set; }
 }
 
@@ -172,11 +199,11 @@ public class ExampleClass
 {
     public BookRecord DeserializeBookRecord(byte[] bytes)
     {
-        BinaryFormatter formatter = new BinaryFormatter();
-        formatter.Binder = new BookRecordSerializationBinder();
+        NetDataContractSerializer serializer = new NetDataContractSerializer();
+        serializer.Binder = new BookRecordSerializationBinder();
         using (MemoryStream ms = new MemoryStream(bytes))
         {
-            return (BookRecord) formatter.Deserialize(ms);
+            return (BookRecord) serializer.Deserialize(ms);
         }
     }
 }
@@ -186,7 +213,6 @@ public class ExampleClass
 Imports System
 Imports System.IO
 Imports System.Runtime.Serialization
-Imports System.Runtime.Serialization.Formatters.Binary
 
 Public Class BookRecordSerializationBinder
     Inherits SerializationBinder
@@ -205,25 +231,33 @@ Public Class BookRecordSerializationBinder
     End Function
 End Class
 
-<Serializable()>
+<DataContract()>
 Public Class BookRecord
+    <DataMember()>
     Public Property Title As String
+
+    <DataMember()>
     Public Property Author As String
+
+    <DataMember()>
     Public Property Location As AisleLocation
 End Class
 
-<Serializable()>
+<DataContract()>
 Public Class AisleLocation
+    <DataMember()>
     Public Property Aisle As Char
+
+    <DataMember()>
     Public Property Shelf As Byte
 End Class
 
 Public Class ExampleClass
     Public Function DeserializeBookRecord(bytes As Byte()) As BookRecord
-        Dim formatter As BinaryFormatter = New BinaryFormatter()
-        formatter.Binder = New BookRecordSerializationBinder()
+        Dim serializer As NetDataContractSerializer = New NetDataContractSerializer()
+        serializer.Binder = New BookRecordSerializationBinder()
         Using ms As MemoryStream = New MemoryStream(bytes)
-            Return CType(formatter.Deserialize(ms), BookRecord)
+            Return CType(serializer.Deserialize(ms), BookRecord)
         End Using
     End Function
 End Class
@@ -231,6 +265,6 @@ End Class
 
 ## <a name="related-rules"></a>Verwandte Regeln
 
-[CA2300: Verwenden Sie keine unsicheren Deserialisierer BinaryFormatter](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)
+[CA2310: Verwenden Sie keine unsicheren Deserialisierer NetDataContractSerializer](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md)
 
-[CA2301: Rufen Sie BinaryFormatter.Deserialize nicht ohne die erste Einstellung BinaryFormatter.Binder](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)
+[CA2311: Führen Sie nicht deserialisiert werden, ohne die erste Einstellung NetDataContractSerializer.Binder](ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md)

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 421eea42c169f586657998e5d4cd57c4c797b71e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c31d3a858af2886a27a51e22e131cb89b2234d6e
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916903"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459070"
 ---
 # <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
 Ruft den Namen und Bezeichner des Debug-Engine (DE) ein Programm ausgeführt wird.
@@ -38,12 +41,12 @@ int GetEngineInfo(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `pbstrEngine`
+## <a name="parameters"></a>Parameter
+ `pbstrEngine`\
 
  [out] Gibt den Namen der Ausführung des Programms DE zurück (C++-spezifische: Dies kann ein null-Zeiger, der angibt, dass der Aufrufer nicht den Namen der Engine interessiert sein).
 
- `pguidEngine`
+ `pguidEngine`\
 
  [out] Gibt den globally unique Identifier, der die Ausführung des Programms DE (C++-spezifische: Dies kann ein null-Zeiger, der angibt, dass der Aufrufer nicht der GUID des Moduls interessiert sein).
 

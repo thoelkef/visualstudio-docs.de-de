@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42a596eb8d720a273d89586427232dcf833f8595
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 55157ab9a045b404175369e9682c525929f5e624
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864981"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460824"
 ---
 # <a name="processinfoflags"></a>PROCESS_INFO_FLAGS
 
@@ -43,15 +46,19 @@ enum enum_PROCESS_INFO_FLAGS { 
 };
 ```
 
-## <a name="members"></a>Member
+## <a name="fields"></a>Felder
 
-PIFLAG_SYSTEM_PROCESS gibt an, dass der Prozess ein Systemprozess ist.
+`PIFLAG_SYSTEM_PROCESS`\
+Gibt an, dass der Prozess ein Systemprozess ist.
 
-PIFLAG_DEBUGGER_ATTACHED gibt an, dass der Prozess von einem Debugger debuggt wird. Es ist möglicherweise eine [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Debugger, oder es möglicherweise einige andere Debugger, z. B. WinDbg.
+`PIFLAG_DEBUGGER_ATTACHED`\
+Gibt an, dass der Prozess von einem Debugger debuggt wird. Es ist möglicherweise eine [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Debugger, oder es möglicherweise einige andere Debugger, z. B. WinDbg.
 
-PIFLAG_PROCESS_STOPPED gibt an, die der Prozess beendet wird. Nur gültig, wenn `PIFLAG_DEBUGGER_ATTACHED` ist ebenfalls angegeben. In Visual Studio 2005 und höher verfügbar.
+`PIFLAG_PROCESS_STOPPED`\
+Gibt an, dass der Prozess beendet wird. Nur gültig, wenn `PIFLAG_DEBUGGER_ATTACHED` ist ebenfalls angegeben. In Visual Studio 2005 und höher verfügbar.
 
-PIFLAG_PROCESS_RUNNING gibt an, die der Prozess ausgeführt wird. Nur gültig, wenn `PIFLAG_DEBUGGER_ATTACHED` ist ebenfalls angegeben. In Visual Studio 2005 und höher verfügbar.
+`PIFLAG_PROCESS_RUNNING`\
+Gibt an, dass der Prozess ausgeführt wird. Nur gültig, wenn `PIFLAG_DEBUGGER_ATTACHED` ist ebenfalls angegeben. In Visual Studio 2005 und höher verfügbar.
 
 ## <a name="remarks"></a>Hinweise
 
