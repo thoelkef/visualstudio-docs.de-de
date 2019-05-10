@@ -1,4 +1,4 @@
-### YamlMime:YamlDocument
+﻿### YamlMime:YamlDocument
 documentType: LandingData
 title: Migrieren von FxCop-Codeanalyse zu .NET Compiler Platform-Analysetools
 metadata:
@@ -32,6 +32,7 @@ sections:
         columns: 2
         items:
           - href: roslyn-analyzers-overview.md
+            html: '<p>Grundlegendes zu .NET-Analysetools</p>'
             html: <p>Grundlegendes zu .NET-Analysetools</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
@@ -59,6 +60,7 @@ sections:
         columns: 2
         items:
           - href: 'roslyn-analyzers-overview.md#roslyn-analyzers-vs-static-code-analysis'
+            html: '<p>Lernen Sie die Unterschiede zwischen der statischen Codeanalyse (FxCop) und der Codeanalyse mit dem Analysetoolpaket kennen</p>'
             html: <p>Lernen Sie die Unterschiede zwischen der statischen Codeanalyse (FxCop) und der Codeanalyse mit dem Analysetoolpaket kennen.</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'

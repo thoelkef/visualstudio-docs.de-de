@@ -1,4 +1,4 @@
----
+﻿---
 title: Reservierte und bekannte Eigenschaften für MSBuild | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: reference
