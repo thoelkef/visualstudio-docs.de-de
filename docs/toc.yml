@@ -16,9 +16,10 @@
   items:
     - name: Installieren von Visual Studio
       href: install/install-visual-studio.md
-    - name: Anmelden bei Visual Studio
+    - name: Konten
       items:
         - name: Anmelden bei Visual Studio
+          displayName: peronalization accounts
           href: ide/signing-in-to-visual-studio.md
         - name: Arbeiten mit mehreren Benutzerkonten
           href: ide/work-with-multiple-user-accounts.md
@@ -48,7 +49,7 @@
       href: install/uninstall-visual-studio.md
     - name: Administratorhandbuch für Visual Studio
       items:
-        - name: Administratorhandbuch für Visual Studio
+        - name: Leitfaden für Administratoren
           href: install/visual-studio-administrator-guide.md
         - name: Verwenden der Befehlszeile
           items:
@@ -64,7 +65,7 @@
               href: install/update-a-network-installation-of-visual-studio.md
             - name: Importieren oder Exportieren von Installationskonfigurationen
               href: install/import-export-installation-configurations.md
-            - name: Installieren und Verwenden von Visual Studio hinter einer Firewall oder einem Proxyserver
+            - name: Überlegungen zu Netzwerken
               items:
                 - name: Installieren und Verwenden von Visual Studio hinter einer Firewall oder einem Proxyserver
                   href: install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md
@@ -90,7 +91,7 @@
           items:
             - name: 'Visual Studio-Abonnements: Übersicht für Administratoren'
               href: /visualstudio/subscriptions/admin-responsibilities
-        - name: Help Viewer-Administratorhandbuch
+        - name: Bereitstellen von Help Viewer
           items:
             - name: Help Viewer-Administratorhandbuch
               href: help-viewer/administrator-guide.md
@@ -102,7 +103,8 @@
           items:
             - name: Arbeitsauslastung und Komponenten-IDs von Visual Studio
               items:
-                - name: Arbeitsauslastung und Komponenten-IDs von Visual Studio
+                - name: Übersicht
+                  displayName: Workload and component IDs
                   href: install/workload-and-component-ids.md
                 - name: Visual Studio Enterprise
                   href: install/workload-component-id-vs-enterprise.md
@@ -128,7 +130,7 @@
               href: install/visual-studio-build-numbers-and-release-dates.md
     - name: Verwenden von Visual Studio auf einem virtuellen Azure-Computer
       href: install/using-visual-studio-vm.md
-    - name: Installieren von Build Tools in einem Container
+    - name: Container
       items:
         - name: Installieren von Build Tools in einem Container
           href: install/build-tools-container.md
@@ -173,11 +175,11 @@
   items:
     - name: Entwicklung
       items:
-        - name: Entwicklung
+        - name: 'Index: Verwenden der IDE zum Schreiben von Code'
           href: ide/index-writing-code.md
         - name: Navigieren in der IDE
           href: ide/how-to-move-around-in-the-visual-studio-ide.md
-        - name: Arbeiten mit Projektmappen und Projekten
+        - name: Projektmappen und Projekte
           items:
             - name: Arbeiten mit Projektmappen und Projekten
               href: ide/solutions-and-projects-in-visual-studio.md
@@ -191,7 +193,7 @@
               href: porting/port-migrate-and-upgrade-visual-studio-projects.md
             - name: Verwalten von Projekt- und Projektmappeneigenschaften
               href: ide/managing-project-and-solution-properties.md
-            - name: Verwalten von Verweisen in einem Projekt
+            - name: Projektverweise
               items:
                 - name: Verwalten von Verweisen in einem Projekt
                   href: ide/managing-references-in-a-project.md
@@ -205,13 +207,13 @@
                   href: ide/troubleshooting-broken-references.md
             - name: Verwalten von Anwendungsressourcen (.NET)
               href: ide/managing-application-resources-dotnet.md
-            - name: Verwalten von Anwendungseinstellungen (.NET)
+            - name: Anwendungseinstellungen (.NET)
               items:
                 - name: Verwalten von Anwendungseinstellungen (.NET)
                   href: ide/managing-application-settings-dotnet.md
                 - name: 'Hinzufügen einer App-Konfigurationsdatei zu einem C#-Projekt'
                   href: ide/how-to-add-app-config-file.md
-            - name: Verwalten der Signierung von Assemblys und Manifesten
+            - name: Signieren von Manifesten
               items:
                 - name: Verwalten der Signierung von Assemblys und Manifesten
                   href: ide/managing-assembly-and-manifest-signing.md
@@ -219,13 +221,13 @@
                   href: ide/how-to-sign-application-and-deployment-manifests.md
             - name: 'Angeben eines Anwendungssymbols (Visual Basic, C#)'
               href: ide/how-to-specify-an-application-icon-visual-basic-csharp.md
-            - name: Übersicht über die Festlegung von mehreren Zielversionen
+            - name: Festlegung eines Frameworks
               items:
                 - name: Übersicht über die Festlegung von mehreren Zielversionen
                   href: ide/visual-studio-multi-targeting-overview.md
                 - name: .NET Framework-Version als Ziel
                   href: ide/how-to-target-a-version-of-the-dotnet-framework.md
-            - name: Erstellen von Projekt- und Elementvorlagen
+            - name: Erstellen von Vorlagen
               items:
                 - name: Erstellen von Projekt- und Elementvorlagen
                   href: ide/creating-project-and-item-templates.md
@@ -243,7 +245,7 @@
                   href: ide/how-to-troubleshoot-templates.md
             - name: Suchen von Projekt- und Elementvorlagen
               href: ide/how-to-locate-and-organize-project-and-item-templates.md
-            - name: Anpassen von Projekt- und Elementvorlagen
+            - name: Anpassen von Vorlagen
               items:
                 - name: Anpassen von Projekt- und Elementvorlagen
                   href: ide/customizing-project-and-item-templates.md
@@ -256,9 +258,9 @@
             - name: 64-Bit-Unterstützung
               href: ide/visual-studio-ide-64-bit-support.md
         - name: Entwickeln ohne Projekte oder Projektmappen
-          displayName: Open folder
           items:
-            - name: „Ordner öffnen“
+            - name: 'Vorgehensweise: Entwickeln ohne ein Projekt'
+              displayName: Open folder
               href: ide/develop-code-in-visual-studio-without-projects-or-solutions.md
             - name: Anpassen von Build- und Debugtasks
               displayName: makefile tasks.vs.json
@@ -266,11 +268,11 @@
         - name: Herstellen einer Verbindung mit einem Projekt oder Repository
           displayName: Azure DevOps VSTS GitHub
           href: ide/connect-team-project.md
-        - name: Verwenden des Editors
+        - name: Editor
           items:
             - name: Verwenden des Editors
               href: ide/writing-code-in-the-code-and-text-editor.md
-            - name: Suchen und Ersetzen von Text
+            - name: Suchen und ersetzen
               items:
                 - name: Suchen und Ersetzen von Text
                   href: ide/finding-and-replacing-text.md
@@ -283,7 +285,7 @@
                   href: ide/find-in-files.md
                 - name: In Dateien ersetzen
                   href: ide/replace-in-files.md
-            - name: Codierungen und Zeilenumbrüche
+            - name: Codierungen
               items:
                 - name: Codierungen und Zeilenumbrüche
                   href: ide/encodings-and-line-breaks.md
@@ -292,26 +294,24 @@
             - name: Gliedern
               displayName: Expand and collapse
               href: ide/outlining.md
-            - name: Generieren und Korrigieren von Code
+            - name: Codegenerierung und -umgestaltung
               items:
                 - name: Generieren und Korrigieren von Code
                   href: ide/code-generation-in-visual-studio.md
                 - name: Codeausschnitte
                   items:
                     - name: Verwenden von Codeausschnitten
-                      items:
-                        - name: Verwenden von Codeausschnitten
-                          href: ide/code-snippets.md
-                        - name: 'Referenz für C#-Codeausschnitte'
-                          href: ide/visual-csharp-code-snippets.md
-                        - name: Referenz für C++-Codeausschnitte
-                          href: ide/visual-cpp-code-snippets.md
-                        - name: Einfügen von XML-Kommentaren
-                          href: ide/reference/generate-xml-documentation-comments.md
-                        - name: Verwenden von umschließenden Codeausschnitten
-                          href: ide/how-to-use-surround-with-code-snippets.md
-                        - name: Bewährte Methoden
-                          href: ide/best-practices-for-using-code-snippets.md
+                      href: ide/code-snippets.md
+                    - name: 'Referenz für C#-Codeausschnitte'
+                      href: ide/visual-csharp-code-snippets.md
+                    - name: Referenz für C++-Codeausschnitte
+                      href: ide/visual-cpp-code-snippets.md
+                    - name: Einfügen von XML-Kommentaren
+                      href: ide/reference/generate-xml-documentation-comments.md
+                    - name: Verwenden von umschließenden Codeausschnitten
+                      href: ide/how-to-use-surround-with-code-snippets.md
+                    - name: Bewährte Methoden
+                      href: ide/best-practices-for-using-code-snippets.md
                     - name: Erstellen von Codeausschnitten
                       items:
                         - name: 'Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts'
@@ -356,7 +356,8 @@
                       href: ide/reference/introduce-local-variable.md
                 - name: Refactoring von Code
                   items:
-                    - name: Refactoring von Code
+                    - name: Übersicht
+                      displayName: refactoring
                       href: ide/refactoring-in-visual-studio.md
                     - name: Ändern der Methodensignatur
                       href: ide/reference/change-method-signature.md
@@ -408,7 +409,7 @@
                       href: ide/reference/wrap-align-indent-parameters.md
                 - name: 'Exemplarische Vorgehensweise: Generieren von Code aus Verwendung'
                   href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
-            - name: Produktivitätstipps
+            - name: Tipps und Tricks
               items:
                 - name: Produktivitätstipps
                   href: ide/productivity-tips-for-visual-studio.md
@@ -425,7 +426,7 @@
                 - name: 'Tipps für C#-Entwickler'
                   displayName: ReSharper
                   href: ide/csharp-developer-productivity.md
-            - name: Verwendung von IntelliSense
+            - name: IntelliSense
               items:
                 - name: Verwendung von IntelliSense
                   href: ide/using-intellisense.md
@@ -439,7 +440,7 @@
                   href: ide/visual-cpp-intellisense.md
                 - name: Konfigurieren eines C++-Projekts für IntelliSense
                   href: ide/visual-cpp-intellisense-configuration.md
-            - name: Navigieren in Ihrem Code
+            - name: Navigieren in Code
               items:
                 - name: Navigieren in Ihrem Code
                   href: ide/navigating-code.md
@@ -447,7 +448,7 @@
                   href: ide/finding-references.md
                 - name: Anzeigen von Typ- und Memberdefinitionen
                   items:
-                    - name: Anzeigen von Typ- und Memberdefinitionen
+                    - name: „Gehe zu Definition“ und „Definition einsehen“
                       href: ide/go-to-and-peek-definition.md
                     - name: Anzeigen und Bearbeiten von Code mithilfe von „Definition einsehen“
                       href: ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md
@@ -455,8 +456,6 @@
                   href: ide/go-to.md
             - name: Anpassen des Editors
               items:
-                - name: Anpassen des Editors
-                  href: ide/customizing-the-editor.md
                 - name: Ändern der Groß- und Kleinschreibung
                   href: ide/how-to-change-text-case-in-the-editor.md
                 - name: Verwalten von Bearbeitungsmodi
@@ -473,10 +472,10 @@
                   href: ide/reference/how-to-display-urls-as-links-in-the-editor.md
                 - name: Festlegen von sprachspezifischen Editoroptionen
                   href: ide/reference/setting-language-specific-editor-options.md
-            - name: Codeformateinstellungen
+            - name: Codeformat
               items:
                 - name: Codeformateinstellungen
-                  href: ide/code-styles-and-quick-actions.md
+                  href: /visualstudio/ide/code-styles-and-code-cleanup
                 - name: Verwenden von EditorConfig-Dateien für das Codeformat
                   displayName: Configure code style analyzers
                   href: ide/create-portable-custom-editor-options.md
@@ -488,7 +487,7 @@
               href: ide/how-to-track-your-code-by-customizing-the-scrollbar.md
             - name: Festlegen von Textmarken im Code
               href: ide/setting-bookmarks-in-code.md
-            - name: Suchen von Codeverlauf mit CodeLens
+            - name: CodeLens
               items:
                 - name: Suchen von Codeverlauf mit CodeLens
                   href: ide/find-code-changes-and-other-history-with-codelens.md
@@ -496,7 +495,7 @@
                   href: ide/codeindex-command.md
             - name: Editor-Unterstützung für andere Sprachen
               href: ide/adding-visual-studio-editor-support-for-other-languages.md
-        - name: Anzeigen der Codestruktur
+        - name: Codeansichten
           items:
             - name: Anzeigen der Codestruktur
               href: ide/viewing-the-structure-of-code.md
@@ -504,7 +503,7 @@
               href: ide/class-view-and-object-browser-icons.md
         - name: Verwenden der Aufgabenliste
           href: ide/using-the-task-list.md
-        - name: Entwurfsklassen im Klassen-Designer
+        - name: Klassen-Designer
           items:
             - name: Entwurfsklassen im Klassen-Designer
               href: ide/class-designer/designing-and-viewing-classes-and-types.md
@@ -541,16 +540,14 @@
                 - name: Member- und Zuordnungsnotation
                   href: ide/class-designer/how-to-change-between-member-notation-and-association-notation.md
             - name: Refactoring von Klassen und Typen
-              items:
-                - name: Refactoring von Klassen und Typen
-                  href: ide/class-designer/refactoring-classes-and-types.md
-                - name: Implementieren einer Schnittstelle
-                  href: ide/class-designer/how-to-implement-an-interface.md
-                - name: Aufteilen einer Klasse in partielle Klassen
-                  href: ide/class-designer/how-to-split-a-class-into-partial-classes.md
-                - name: Erstellen eines Nullable-Typs
-                  href: ide/class-designer/how-to-create-a-nullable-type.md
-            - name: Arbeiten mit Visual C++-Code
+              href: ide/class-designer/refactoring-classes-and-types.md
+            - name: Implementieren einer Schnittstelle
+              href: ide/class-designer/how-to-implement-an-interface.md
+            - name: Aufteilen einer Klasse in partielle Klassen
+              href: ide/class-designer/how-to-split-a-class-into-partial-classes.md
+            - name: Erstellen eines Nullable-Typs
+              href: ide/class-designer/how-to-create-a-nullable-type.md
+            - name: C++ im Klassen-Designer
               items:
                 - name: Arbeiten mit Visual C++-Code
                   href: ide/class-designer/working-with-visual-cpp-code.md
@@ -570,7 +567,7 @@
           href: ide/find-and-fix-code-errors.md
         - name: Plattformübergreifende mobile Entwicklung
           href: cross-platform/cross-platform-mobile-development-in-visual-studio.md
-        - name: 'F#-Entwicklung'
+        - name: 'F# in Visual Studio'
           items:
             - name: 'F#-Entwicklung'
               href: ide/fsharp-visual-studio.md
@@ -593,7 +590,8 @@
               items:
                 - name: 'Tutorial 1: Erstellen einer Bildanzeige (C#)'
                   items:
-                    - name: 'Tutorial 1: Erstellen einer Bildanzeige (C#)'
+                    - name: Übersicht
+                      displayName: Tutorial 1 Picture viewer
                       href: ide/tutorial-1-create-a-picture-viewer.md
                     - name: "Schritt 1: Erstellen eines Windows\_Forms-Anwendungsprojekts"
                       href: ide/step-1-create-a-windows-forms-application-project.md
@@ -619,7 +617,8 @@
                       href: ide/step-11-run-your-program-and-try-other-features.md
                 - name: 'Tutorial 2: Erstellen eines Mathetests mit Zeitmessung (C#)'
                   items:
-                    - name: 'Tutorial 2: Erstellen eines Mathetests mit Zeitmessung (C#)'
+                    - name: Übersicht
+                      displayName: Tutorial 2 Timed math quiz
                       href: ide/tutorial-2-create-a-timed-math-quiz.md
                     - name: 'Schritt 1: Erstellen eines Projekts und Hinzufügen von Bezeichnungen zum Formular'
                       href: ide/step-1-create-a-project-and-add-labels-to-your-form.md
@@ -639,7 +638,8 @@
                       href: ide/step-8-customize-the-quiz.md
                 - name: 'Tutorial 3: Erstellen eines Vergleichsspiels (C#)'
                   items:
-                    - name: 'Tutorial 3: Erstellen eines Vergleichsspiels (C#)'
+                    - name: Übersicht
+                      displayName: Tutorial 3 Matching game
                       href: ide/tutorial-3-create-a-matching-game.md
                     - name: 'Schritt 1: Erstellen eines Projekts und Hinzufügen einer Tabelle zum Formular'
                       href: ide/step-1-create-a-project-and-add-a-table-to-your-form.md
@@ -667,13 +667,15 @@
       href: designers/designing-user-interfaces.md
     - name: Kompilieren und Erstellen
       items:
-        - name: Kompilieren und Erstellen
+        - name: Übersicht
+          displayName: Compile build
           href: ide/compiling-and-building-in-visual-studio.md
         - name: 'Exemplarische Vorgehensweise: Erstellen einer Anwendung'
           href: ide/walkthrough-building-an-application.md
         - name: Erstellen und Bereinigen von Projekten und Projektmappen
           items:
-            - name: Erstellen und Bereinigen von Projekten und Projektmappen
+            - name: Übersicht
+              displayName: Build clean
               href: ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md
             - name: Ändern des Buildausgabeverzeichnisses
               href: ide/how-to-change-the-build-output-directory.md
@@ -695,7 +697,7 @@
           href: ide/build-actions.md
         - name: Buildkonfigurationen
           items:
-            - name: Buildkonfigurationen
+            - name: Grundlagen der Buildkonfiguration
               href: ide/understanding-build-configurations.md
             - name: Erstellen und Bearbeiten von Konfigurationen
               href: ide/how-to-create-and-edit-configurations.md
@@ -705,7 +707,7 @@
               href: ide/how-to-build-multiple-configurations-simultaneously.md
         - name: Erstellen von Plattformen
           items:
-            - name: Erstellen von Plattformen
+            - name: Grundlagen zu Buildplattformen
               href: ide/understanding-build-platforms.md
             - name: Konfigurieren von Projekten für eine Zielplattform
               href: ide/how-to-configure-projects-to-target-platforms.md
@@ -742,9 +744,10 @@
       href: extensibility/visual-studio-sdk.md
     - name: Analyse und Modellarchitektur...
       href: modeling/analyze-and-model-your-architecture.md
-    - name: Anpassen der IDE
+    - name: Personalisieren
       items:
         - name: Anpassen der IDE
+          displayName: Personalize
           href: ide/personalizing-the-visual-studio-ide.md
         - name: 'Schnellstart: Personalisieren Sie Design und Textfarben'
           href: ide/quickstart-personalize-the-ide.md
@@ -768,7 +771,7 @@
           displayName: 'marketplace, gallery, vsix'
         - name: Verwalten externer Tools
           href: ide/managing-external-tools.md
-    - name: Optimieren der Leistung
+    - name: Leistung
       items:
         - name: Optimieren der Leistung
           href: ide/optimize-visual-studio-performance.md
@@ -778,7 +781,7 @@
           href: ide/filtered-solutions.md
         - name: Tipps und Tricks
           href: ide/visual-studio-performance-tips-and-tricks.md
-    - name: Verwalten von Features für die Barrierefreiheit
+    - name: Zugriff
       items:
         - name: Verwalten von Features für die Barrierefreiheit
           href: ide/reference/accessibility-features-of-visual-studio.md
@@ -819,11 +822,11 @@
           href: ide/reference/immediate-window.md
         - name: Verschiedene Dateien
           href: ide/reference/miscellaneous-files.md
-        - name: Dialogfeld "Optionen"
+        - name: Optionen
           items:
             - name: Dialogfeld "Optionen"
               href: ide/reference/options-dialog-box-visual-studio.md
-            - name: Dialogfeld "Umgebungsoptionen"
+            - name: Umgebungsoptionen
               items:
                 - name: Dialogfeld "Umgebungsoptionen"
                   href: ide/reference/environment-options-dialog-box.md
@@ -861,7 +864,7 @@
                   href: ide/reference/trust-settings.md
                 - name: Umgebung – Webbrowser
                   href: ide/reference/web-browser-environment-options-dialog-box.md
-            - name: Text-Editor-Dialogfeld "Optionen"
+            - name: „Optionen“ im Text-Editor
               items:
                 - name: Text-Editor-Dialogfeld "Optionen"
                   href: ide/reference/text-editor-options-dialog-box.md
@@ -878,7 +881,7 @@
                 - name: 'Text-Editor – Standard (Visual Basic), Erweitert'
                   href: ide/reference/options-text-editor-basic-visual-basic.md
                 - name: 'Text-Editor – Standard (Visual Basic), Codeformat'
-                  href: ide/code-styles-and-quick-actions.md
+                  href: ide/code-styles-and-code-cleanup.md
                 - name: 'Text-Editor – Standard (Visual Basic), IntelliSense'
                   href: ide/visual-basic-specific-intellisense.md
                 - name: 'Text-Editor – C/C++, Formatierung'
@@ -931,7 +934,7 @@
                   href: ide/reference/options-text-editor-xml-formatting.md
                 - name: 'Text-Editor – XML, Sonstiges'
                   href: ide/reference/options-text-editor-xml-miscellaneous.md
-            - name: Projekte und Projektmappen – Dialogfeld "Optionen"
+            - name: Projekte und Projektmappen
               items:
                 - name: Projekte und Projektmappen – Dialogfeld "Optionen"
                   href: ide/reference/projects-and-solutions-options-dialog-box.md
@@ -947,15 +950,16 @@
               href: ide/reference/xaml-designer.md
         - name: Ausgabefenster
           href: ide/reference/output-window.md
-        - name: Projekteigenschaftenverweise
+        - name: Projekteigenschaften
           items:
-            - name: Projekteigenschaftenverweise
+            - name: Referenz
+              displayName: Project properties
               href: ide/reference/project-properties-reference.md
             - name: 'Seite „Anwendung“, Projekt-Designer (UWP)'
               href: ide/reference/application-page-project-designer-uwp.md
             - name: 'Application Page, Project Designer (Visual Basic)'
               items:
-                - name: 'Application Page, Project Designer (Visual Basic)'
+                - name: Seite „Anwendung“
                   href: ide/reference/application-page-project-designer-visual-basic.md
                 - name: Assemblyinformationen (Dialogfeld)
                   href: ide/reference/assembly-information-dialog-box.md
@@ -963,13 +967,13 @@
               href: ide/reference/application-page-project-designer-csharp.md
             - name: 'Seite "Buildereignisse", Projekt-Designer (C#)'
               items:
-                - name: 'Seite "Buildereignisse", Projekt-Designer (C#)'
+                - name: Seite „Buildereignisse“
                   href: ide/reference/build-events-page-project-designer-csharp.md
                 - name: Dialogfelder „Befehlszeile für Präbuildereignis“ und „Befehlszeile für Postbuildereignis“
                   href: ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md
             - name: 'Seite "Erstellen", Projekt-Designer (C#)'
               items:
-                - name: 'Seite "Erstellen", Projekt-Designer (C#)'
+                - name: Seite „Erstellen“
                   href: ide/reference/build-page-project-designer-csharp.md
                 - name: 'Dialogfeld "Erweiterte Buildeinstellungen" (C#)'
                   href: ide/reference/advanced-build-settings-dialog-box-csharp.md
@@ -977,7 +981,7 @@
               href: ide/reference/code-analysis-project-designer.md
             - name: 'Seite "Kompilieren", Projekt-Designer (Visual Basic)'
               items:
-                - name: 'Seite "Kompilieren", Projekt-Designer (Visual Basic)'
+                - name: Seite „Kompilieren“
                   href: ide/reference/compile-page-project-designer-visual-basic.md
                 - name: Dialogfeld "Erweiterte Compilereinstellungen (Visual Basic)
                   href: ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md
@@ -989,7 +993,7 @@
               href: ide/reference/my-extensions-page-project-designer-visual-basic.md
             - name: 'Seite "Veröffentlichen", Projekt-Designer'
               items:
-                - name: 'Seite "Veröffentlichen", Projekt-Designer'
+                - name: Seite "Veröffentlichen"
                   href: ide/reference/publish-page-project-designer.md
                 - name: Dialogfeld "Erforderliche Komponenten"
                   href: ide/reference/prerequisites-dialog-box.md
@@ -997,13 +1001,13 @@
               href: ide/reference/references-page-project-designer-visual-basic.md
             - name: 'Seite "Sicherheit", Projekt-Designer'
               items:
-                - name: 'Seite "Sicherheit", Projekt-Designer'
+                - name: Seite „Sicherheit“
                   href: ide/reference/security-page-project-designer.md
                 - name: Erweiterte Sicherheitseinstellungen (Dialogfeld)
                   href: ide/reference/advanced-security-settings-dialog-box.md
             - name: 'Services-Seite, Projekt-Designer'
               items:
-                - name: 'Services-Seite, Projekt-Designer'
+                - name: Dienstseite
                   href: ide/reference/services-page-project-designer.md
                 - name: Dialogfeld "Erweiterte Einstellungen für Dienste"
                   href: ide/reference/advanced-settings-for-services-dialog-box.md
@@ -1019,7 +1023,8 @@
           href: ide/reference/team-explorer-reference.md
         - name: Werkzeugkasten
           items:
-            - name: Werkzeugkasten
+            - name: Referenz
+              displayName: Toolbox
               href: ide/reference/toolbox.md
             - name: 'Toolbox, Registerkarte „Komponenten“'
               href: ide/reference/toolbox-components-tab.md
@@ -1029,7 +1034,8 @@
               href: ide/reference/toolbox-html-tab.md
     - name: Devenv-Befehlszeilenschalter
       items:
-        - name: Devenv-Befehlszeilenschalter
+        - name: Referenz
+          displayName: devenv command-line switches
           href: ide/reference/devenv-command-line-switches.md
         - name: '-? („devenv.exe“)'
           href: ide/reference/q-devenv-exe.md
@@ -1077,7 +1083,8 @@
           href: ide/reference/useenv-devenv-exe.md
     - name: Visual Studio-Befehle
       items:
-        - name: Visual Studio-Befehle
+        - name: Referenz
+          displayName: Visual Studio commands
           href: ide/reference/visual-studio-commands.md
         - name: Visual Studio Command Aliases
           href: ide/reference/visual-studio-command-aliases.md
@@ -1159,7 +1166,8 @@
           href: ide/exempt-visual-studio-from-wip.md
     - name: Microsoft Help Viewer
       items:
-        - name: Microsoft Help Viewer
+        - name: Übersicht
+          displayName: Help Viewer
           href: help-viewer/overview.md
         - name: Installieren und Verwalten von lokalen Inhalten
           displayName: Offline books docs
@@ -1170,7 +1178,7 @@
               href: help-viewer/find-topics-index.md
             - name: Suchen nach Themen im Inhaltsverzeichnis
               href: help-viewer/find-topics-toc.md
-            - name: Suchen nach Themen
+            - name: Suchen
               items:
                 - name: Suchen nach Themen
                   href: help-viewer/find-topics.md
@@ -1178,15 +1186,14 @@
                   href: help-viewer/logical-operators-search-expressions.md
         - name: Anpassen von Help Viewer
           href: help-viewer/customize.md
-        - name: Barrierefreiheitsfunktionen
-          items:
-            - name: Barrierefreiheitsfunktionen
-              href: help-viewer/accessibility-features.md
-            - name: Tastenkombinationen
-              href: help-viewer/shortcut-keys.md
+        - name: Zugriff
+          href: help-viewer/accessibility-features.md
+        - name: Tastenkombinationen
+          href: help-viewer/shortcut-keys.md
     - name: Dotfuscator Community
       items:
-        - name: Dotfuscator Community
+        - name: Übersicht
+          displayName: Dotfuscator Community
           href: ide/dotfuscator/index.md
         - name: Funktionen von Dotfuscator
           href: ide/dotfuscator/capabilities.md
@@ -1237,11 +1244,12 @@
           href: 'https://visualstudio.microsoft.com/license-terms/'
         - name: Supportlebenszyklus und Wartung
           href: /visualstudio/productinfo/vs-servicing-vs/
-    - name: Melden eines Problems in Visual Studio
+    - name: Problemberichte
       items:
         - name: Melden eines Problems in Visual Studio
           href: ide/how-to-report-a-problem-with-visual-studio.md
         - name: Melden von Problemen und FAQ
+          displayName: Developer Community
           href: ide/report-a-problem.md
     - name: Vorschlagen eines Features für Visual Studio
       href: ide/suggest-a-feature.md
@@ -1249,7 +1257,8 @@
       href: ide/developer-community-privacy.md
     - name: Programm zur Verbesserung der Benutzerfreundlichkeit
       items:
-        - name: Programm zur Verbesserung der Benutzerfreundlichkeit
+        - name: Übersicht
+          displayName: Customer Experience Improvement Program
           href: ide/visual-studio-experience-improvement-program.md
         - name: Vom System generierte Protokolle
           href: ide/diagnostic-data-collection.md
