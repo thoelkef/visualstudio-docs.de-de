@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f263be2e26100c7b61bffca35df39b945d88a91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aa2c9a4585947fb7d2e21d1eea4e6613cdd33964
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581980"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531671"
 ---
 # <a name="features-of-the-code-editor"></a>Funktionen des Code-Editors
 
@@ -52,7 +52,7 @@ Einige erweiterte Funktionen befinden sich auf der Symbolleiste im Menü **Bearb
 
 |||
 |-|-|
-|[Dokument formatieren](code-styles-and-quick-actions.md#format-document-command)|Legt den richtigen Einzug von Codezeilen fest und verschiebt geschweifte Klammern in separate Zeilen im Dokument.|
+|Dokument formatieren|Legt den richtigen Einzug von Codezeilen fest und verschiebt geschweifte Klammern in separate Zeilen im Dokument.|
 |Auswahl formatieren|Legt den richtigen Einzug von Codezeilen fest und verschiebt geschweifte Klammern in separate Zeilen in der Auswahl.|
 |Ausgewählte Zeilen mit Tabstopps versehen|Ändert führende Leerzeichen ggf. in Tabstopps.|
 |Tabstopps aus ausgewählten Zeilen entfernen|Ändert führende Tabstopps in Leerzeichen. Wenn Sie in einer Datei alle Leerzeichen in Tabstopps (oder alle Tabstopps in Leerzeichen) konvertieren möchten, können Sie dazu die Befehle `Edit.ConvertSpacesToTabs` und `Edit.ConvertTabsToSpaces` verwenden. Diese Befehle werden nicht in Visual Studio-Menüs angezeigt. Sie können sie jedoch über das **Schnellzugriffsfenster** oder das Befehlsfenster aufrufen.|
@@ -84,7 +84,7 @@ Sie können im Menü **Extras** unter **Assistent zum Importieren und Exportiere
 
 Um neue Hotkeys zu definieren oder vorhandene Hotkeys neu zu definieren, wechseln Sie zu **Tools** > **Optionen** > **Umgebung** > **Tastatur**. Weitere Informationen zu Hotkeys finden Sie unter [Standardtastenkombinationen](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
-Weitere Informationen zum Anpassen des Editors finden Sie unter [Anpassen des Editors](../ide/customizing-the-editor.md). Informationen zu JavaScript-spezifischen Editor-Optionen finden Sie unter [JavaScript-Editor-Optionen](../ide/reference/options-text-editor-javascript-formatting.md).
+Informationen zu JavaScript-spezifischen Editor-Optionen finden Sie unter [JavaScript-Editor-Optionen](../ide/reference/options-text-editor-javascript-formatting.md).
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0ce1b620a6d8aba7e4aea767745891dff6d9f869
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9124054dec08fde94ec98ca9e3ebdfb6e48d7384
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790047"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531629"
 ---
 # <a name="generate-usings-in-visual-studio"></a>Generieren von Using-Anweisungen in Visual Studio
 
@@ -32,7 +32,7 @@ Diese Codegenerierung gilt für:
 
 1. Kopieren Sie Code aus einer Datei, und fügen Sie ihn in eine neue Datei ohne die erforderlichen `using`-Anweisungen ein. Zusammen mit dem resultierenden Fehler wird ein Codefix angezeigt, der die fehlenden `using`-Anweisungen hinzufügt.
 
-    > [!NOTE] 
+    > [!NOTE]
     > Sie müssen diesen Vorschlag unter **Extras > Optionen > Text-Editor > C# > Erweitert > Using-Anweisungen** aktivieren.
 
 2. Drücken Sie STRG+., um das Menü **Schnellaktionen und Refactorings** zu öffnen.
@@ -47,4 +47,4 @@ Diese Codegenerierung gilt für:
 
 - [Codegenerierung](../code-generation-in-visual-studio.md)
 - [Vorschau der Änderungen](../../ide/preview-changes.md)
-- [Tipps für .NET-Entwickler](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [Tipps für .NET-Entwickler](../csharp-developer-productivity.md)

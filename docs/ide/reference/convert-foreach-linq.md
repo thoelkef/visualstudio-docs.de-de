@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: f0b9685ce6d4cf8ee6d4253c79759508cf43915e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7893ed676372cce94d883353139de91ef639aeb0
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968477"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531848"
 ---
 # <a name="convert-a-foreach-loop-to-linq"></a>Konvertieren einer ForEach-Schleife in LINQ
 
@@ -44,9 +44,9 @@ Dieses Refactoring gilt für:
 3. Wählen Sie **In LINQ konvertieren** oder **In LINQ konvertieren (Aufrufformat)** aus.
 
    ![Ergebnis der LINQ-Abfrage – Beispiel](media/convert-foreach-to-LINQ-result.png)
-   
+
    ![Resultierendes LINQ-Aufrufformat – Beispiel](media/convert-foreach-to-LINQ-callform-result.png)
-   
+
 ### <a name="sample-code"></a>Beispielcode
 
 ```csharp
@@ -79,4 +79,4 @@ public class Class1
 
 - [Refactoring](../refactoring-in-visual-studio.md)
 - [Fenster „Vorschau der Änderungen“](../../ide/preview-changes.md)
-- [Tipps für .NET-Entwickler](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [Tipps für .NET-Entwickler](../csharp-developer-productivity.md)
