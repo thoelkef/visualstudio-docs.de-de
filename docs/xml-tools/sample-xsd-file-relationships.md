@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e643ab6566818df7cdfee2bc4e5b256ecf065b5a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1e5d335fb6f90e6e93d58013958e94f6d4555c39
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955565"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65455100"
 ---
 # <a name="sample-xsd-file-relationships"></a>XSD-Beispieldatei: Beziehungen
 
@@ -63,3 +63,6 @@ Die folgende XSD-Datei wird in verschiedenen Beispielen in der Dokumentation zum
 
 </xs:schema>
 ```
+
+> [!NOTE]
+> Die in den Beispielen genannten Unternehmen, Organisationen, Produkte, Domänennamen, E-Mail-Adressen, Logos, Personen, Orte und Ereignisse sind frei erfunden. Jede Ähnlichkeit mit bestehenden Unternehmen, Organisationen, Produkten, Domänen, E-Mail-Adressen, Logos, Personen, Orten oder Ereignissen ist rein zufällig.

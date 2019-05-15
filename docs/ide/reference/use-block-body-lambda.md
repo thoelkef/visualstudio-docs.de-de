@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1f055925a4da916bf88da802e7a4991b0362b057
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5c46506e81e5334efea9060e957269e92e9d49cc
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789428"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531918"
 ---
 # <a name="use-expression-body-or-block-body-for-lambda-expressions"></a>Verwenden von Ausdruckskörpern oder Blocktext für Lambdaausdrücke
 
@@ -24,7 +24,7 @@ Dieses Refactoring gilt für:
 
 **Beschreibung:** Lambdaausdrücke können umgestaltet werden, sodass ein Ausdruckskörper oder Blocktext verwendet werden.
 
-**Hintergrund:** Wenn Sie es bevorzugen, dass Lambdaausdrücke entweder ein Ausdruckskörper oder Blocktext verwenden. 
+**Hintergrund:** Wenn Sie es bevorzugen, dass Lambdaausdrücke entweder ein Ausdruckskörper oder Blocktext verwenden.
 
 **Vorteile**: Lambdaausdrücke können umgestaltet werden, um die Lesbarkeit gemäß der Wünsche Ihrer Benutzer zu verbessern.
 
@@ -40,4 +40,4 @@ Dieses Refactoring gilt für:
 ## <a name="see-also"></a>Siehe auch
 
 - [Refactoring](../refactoring-in-visual-studio.md)
-- [Tipps für .NET-Entwickler](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [Tipps für .NET-Entwickler](../csharp-developer-productivity.md)

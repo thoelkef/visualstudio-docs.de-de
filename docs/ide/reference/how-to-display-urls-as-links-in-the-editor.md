@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 250f222dcc3f2645c53a97416cc379a3066c45ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c03d9d48ca098932a09e42116deb3ba7ee14a623
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789604"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531653"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Vorgehensweise: Anzeigen von URLs als Links im Editor
 
@@ -45,6 +45,5 @@ Sie können einstellen, dass der Code-Editor URLs (Uniform Resource Links) in Ih
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Anpassen des Editors](../../ide/customizing-the-editor.md)
 - [Text-Editor, Dialogfeld „Optionen“](../../ide/reference/text-editor-options-dialog-box.md)
 - [Features des Code-Editors](../../ide/writing-code-in-the-code-and-text-editor.md)

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d99d6ccfb7b5a310726fdb1cf2dbfebd6591bef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a9ee5bb8d69cf3482105150f4ec62cb6ad167d7a
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62989851"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531556"
 ---
 # <a name="setting-language-specific-editor-options"></a>Festlegen von sprachspezifischen Editoroptionen
 
@@ -54,6 +54,6 @@ Visual Studio bietet eine Vielzahl von Optionen für den Text-Editor, die für b
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Anpassen des Editors](../../ide/customizing-the-editor.md)
+- [Anpassen des Editors](../how-to-change-text-case-in-the-editor.md)
 - [Erstellen von portablen, benutzerdefinierten Editor-Einstellungen mit EditorConfig](../../ide/create-portable-custom-editor-options.md)
 - [Personalisieren der Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md)
