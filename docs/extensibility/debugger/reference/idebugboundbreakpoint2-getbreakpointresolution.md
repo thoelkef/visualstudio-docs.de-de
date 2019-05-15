@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1e3e4cfe144713b7747f74e754a3a265cbbdb15
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ab2e65b80ab1494828fa0945e5fe8a6b41f62f71
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923616"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614877"
 ---
 # <a name="idebugboundbreakpoint2getbreakpointresolution"></a>IDebugBoundBreakpoint2::GetBreakpointResolution
 Ruft die haltepunktauflösung, die diesem Breakpoint beschreibt.
@@ -37,10 +40,9 @@ int GetBreakpointResolution( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
-`ppBPResolution`
-
- [out] Gibt die [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) Schnittstelle, die einen der folgenden darstellt:
+## <a name="parameters"></a>Parameter
+`ppBPResolution`\
+[out] Gibt die [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) Schnittstelle, die einen der folgenden darstellt:
 
 - Der Haltepunkt Auflösung-Objekt, das die Position im Code wird beschrieben, in denen ein codehaltepunkt gebunden wurde.
 

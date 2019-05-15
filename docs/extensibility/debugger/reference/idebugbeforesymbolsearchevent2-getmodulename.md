@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d30b9559ab26e4634b82332de538cfe181bb106b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1aa8ec33b128208a438df072680060ae5a0e0e83
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877604"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615074"
 ---
 # <a name="idebugbeforesymbolsearchevent2getmodulename"></a>IDebugBeforeSymbolSearchEvent2::GetModuleName
 Ruft den Namen des Moduls, die gerade gedebuggt werden.
@@ -35,10 +38,9 @@ public int GetModuleName (
 );
 ```
 
-#### <a name="parameters"></a>Parameter
-`pbstrModuleName`
-
- [out] Der Name des Moduls.
+## <a name="parameters"></a>Parameter
+`pbstrModuleName`\
+[out] Der Name des Moduls.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
