@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6de035568e1c2aebe853d25dc5f769d233da819
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ea1e70c40846b382364067eae473ec27777b5526
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662906"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615370"
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
 Gibt die Struktur der Haltepunktposition Auflösung.
@@ -46,35 +49,29 @@ public struct BP_RESOLUTION_LOCATION {
 ```
 
 ## <a name="members"></a>Member
-`bpType` Ein Wert aus der [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) Enumeration, der angibt, wie zum Interpretieren der `bpResLocation` Union oder `unionmemberX` Member.
+`bpType`\
+Ein Wert aus der [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) Enumeration, der angibt, wie zum Interpretieren der `bpResLocation` Union oder `unionmemberX` Member.
 
-`bpResLocation.bpresCode`
+`bpResLocation.bpresCode`\
+[C++ nur] Enthält die [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) Struktur, wenn `bpType`  =  `BPT_CODE`.
 
- [C++ nur] Enthält die [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) Struktur, wenn `bpType`  =  `BPT_CODE`.
+`bpResLocation.bpresData`\
+[C++ nur] Enthält die [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) Struktur, wenn `bpType`  =  `BPT_DATA`.
 
-`bpResLocation.bpresData`
+`bpResLocation.unused`\
+[C++ nur] Ein Platzhalter.
 
- [C++ nur] Enthält die [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) Struktur, wenn `bpType`  =  `BPT_DATA`.
+`unionmember1`\
+[C# nur] Siehe Hinweise zum interpretieren.
 
-`bpResLocation.unused`
+`unionmember2`\
+[C# nur] Siehe Hinweise zum interpretieren.
 
- [C++ nur] Ein Platzhalter.
+`unionmember3`\
+[C# nur] Siehe Hinweise zum interpretieren.
 
-`unionmember1`
-
- [C# nur] Siehe Hinweise zum interpretieren.
-
-`unionmember2`
-
- [C# nur] Siehe Hinweise zum interpretieren.
-
-`unionmember3`
-
- [C# nur] Siehe Hinweise zum interpretieren.
-
-`unionmember4`
-
- [C# nur] Siehe Hinweise zum interpretieren.
+`unionmember4`\
+[C# nur] Siehe Hinweise zum interpretieren.
 
 ## <a name="remarks"></a>Hinweise
 Diese Struktur ist ein Mitglied der [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) und [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) Strukturen.

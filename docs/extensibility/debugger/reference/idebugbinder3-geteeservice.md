@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d709124a392ffb6b6cbbb5a29576a985fe6d0f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: eaaaf52a0a577d8b802540ca9b4ae11ab9aa1dbd
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877558"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614902"
 ---
 # <a name="idebugbinder3geteeservice"></a>IDebugBinder3::GetEEService
 Diese Methode gibt einen angeforderten Dienst.
@@ -42,22 +45,18 @@ Int GetEEService(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `vendor`
+## <a name="parameters"></a>Parameter
+`vendor`\
+[in] `GUID` eines Anbieters (ein null-Wert ist akzeptabel).
 
- [in] `GUID` eines Anbieters (ein null-Wert ist akzeptabel).
+`language`\
+[in] `GUID` einer Sprache (ein null-Wert ist akzeptabel).
 
- `language`
+`iid`\
+[in] `IID` des Diensts zu erhalten.
 
- [in] `GUID` einer Sprache (ein null-Wert ist akzeptabel).
-
- `iid`
-
- [in] `IID` des Diensts zu erhalten.
-
- `ppService`
-
- [out] Eine Schnittstelle zu den angeforderten Dienst.
+`ppService`\
+[out] Eine Schnittstelle zu den angeforderten Dienst.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

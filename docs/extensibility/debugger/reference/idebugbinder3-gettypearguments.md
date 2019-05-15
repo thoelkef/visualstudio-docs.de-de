@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cbccb155b8a96a3a7480c4e898a597e57250df4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 164b6ca7fcfa71117060e5230cc9c9b3aeeb6c61
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923655"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614671"
 ---
 # <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
 Diese Methode ruft eine Liste der Argumenttypen, die diesem Objekt zugeordneten ab.
@@ -42,22 +45,18 @@ int GetTypeArguments(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `skip`
+## <a name="parameters"></a>Parameter
+`skip`\
+[in] Die Anzahl von Feldern, die vor dem Abrufen von Argumenttypen übersprungen werden.
 
- [in] Die Anzahl von Feldern, die vor dem Abrufen von Argumenttypen übersprungen werden.
+`count`\
+[in] Die Anzahl der zurückzugebenden Felder Argument (gibt auch die Größe der an die `ppFields` Array).
 
- `count`
+`ppFields`\
+[in, out] Ein Array von Feldern, die bei der Rückgabe dieser Methode gefüllt werden.
 
- [in] Die Anzahl der zurückzugebenden Felder Argument (gibt auch die Größe der an die `ppFields` Array).
-
- `ppFields`
-
- [in, out] Ein Array von Feldern, die bei der Rückgabe dieser Methode gefüllt werden.
-
- `pFetched`
-
- [out] \(optional) Geben Sie die Nummer des Arguments tatsächlich zurückgegebenen Felder.
+`pFetched`\
+[out] \(optional) Geben Sie die Nummer des Arguments tatsächlich zurückgegebenen Felder.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
