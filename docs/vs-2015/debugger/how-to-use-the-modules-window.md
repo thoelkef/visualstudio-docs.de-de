@@ -27,12 +27,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7b19237b94ed3d53c49f248e22b86d3af8180625
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b592515692e23dce49c125c7895bd158904b653f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445050"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696124"
 ---
 # <a name="how-to-use-the-modules-window"></a>Vorgehensweise: Verwenden des Modulfensters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,6 +78,6 @@ HINWEIS]
 2. Zeigen Sie auf **automatische Symboleinstellungen laden** , und klicken Sie dann auf **immer manuell laden** oder **Standard**. Änderungen werden erst wirksam, wenn die Debugsitzung neu gestartet wird.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Unterbrechen der Ausführung](http://msdn.microsoft.com/30fc4643-f337-4651-b1ff-f2de2c098d40)   
+ [Unterbrechen der Ausführung](https://msdn.microsoft.com/30fc4643-f337-4651-b1ff-f2de2c098d40)   
  [Anzeigen von Daten im Debugger](../debugger/viewing-data-in-the-debugger.md)   
  [Angeben von Symbol(PDB)- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

@@ -13,12 +13,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: afc89dc2b70191524830926d108a5de81fbbb647
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.openlocfilehash: 9c1fabdb202d51b85eb2983360bdfd02757f7649
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947337"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699358"
 ---
 # <a name="cvcfllang"></a>CV_CFL_LANG
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ typedef enum CV_CFL_LANG { 
  Anwendung ist ein Modul mit CVTPGD-Tool generierte PGO optimiert.  
   
  CV_CFL_CSHARP  
- Anwendungssprache ist C#.  
+ Anwendungssprache ist c#.  
   
  CV_CFL_VB  
  Anwendungssprache ist Visual Basic.  
@@ -96,7 +96,7 @@ typedef enum CV_CFL_LANG { 
  Anwendungssprache ist Jscript.  
   
  CV_CFL_MSIL  
- Sprache der Anwendung ist ein Unbekannter Microsoft Intermediate Language (MSIL), möglicherweise ein Ergebnis der Verwendung der [/LTCG (Link-Time Code Generation)](http://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2) wechseln.  
+ Sprache der Anwendung ist ein Unbekannter Microsoft Intermediate Language (MSIL), möglicherweise ein Ergebnis der Verwendung der [/LTCG (Link-Time Code Generation)](https://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2) wechseln.  
   
  CV_CFL_HLSL  
  Anwendungssprache ist High Level Shader Language.  

@@ -26,12 +26,12 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: effeac6eb35eab5da53dc8e58cd44a72297a23d6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ce0a416ef39165d38530c11aad0689811805b353
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102314"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702443"
 ---
 # <a name="assertions-in-managed-code"></a>Assertionen in verwaltetem Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -211,7 +211,7 @@ Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );
   
  Damit die Ausgabe auf diese Weise angepasst werden kann, muss das Programm über einen Listener verfügen, der von <xref:System.Diagnostics.TraceListener> erbt und dessen <xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName>-Methode überschrieben wird.  
   
- Weitere Informationen finden Sie unter [Ablaufverfolgungslistener](http://msdn.microsoft.com/library/444b0d33-67ea-4c36-9e94-79c50f839025).  
+ Weitere Informationen finden Sie unter [Ablaufverfolgungslistener](https://msdn.microsoft.com/library/444b0d33-67ea-4c36-9e94-79c50f839025).  
   
  [Inhalt](#BKMK_In_this_topic)  
   
@@ -222,7 +222,7 @@ Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );
  <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>   
  <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>   
  [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
- [Ablaufverfolgung und Instrumentieren von Anwendungen](http://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)   
- [Vorgehensweise: Bedingtes Kompilieren mit Ablaufverfolgung und Debuggen](http://msdn.microsoft.com/library/56d051c3-012c-42c1-9a58-7270edc624aa)   
+ [Ablaufverfolgung und Instrumentieren von Anwendungen](https://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)   
+ [Vorgehensweise: Bedingtes Kompilieren mit Ablaufverfolgung und Debuggen](https://msdn.microsoft.com/library/56d051c3-012c-42c1-9a58-7270edc624aa)   
  [C#-, F#- und Visual Basic-Projekttypen](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [Debuggen von verwaltetem Code](../debugger/debugging-managed-code.md)

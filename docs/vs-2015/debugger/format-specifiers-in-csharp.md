@@ -27,12 +27,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 47287bdc5bf0081970f4077ee8749a1ed0d71dad
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6085ba95d3880417e517530069734052741113e2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118239"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682484"
 ---
 # <a name="format-specifiers-in-c"></a>Formatbezeichner in C#\#
 
@@ -64,7 +64,7 @@ In der folgenden Tabelle wird der C#-Formatbezeichner angezeigt, die vom Debugge
 
 |Bezeichner|Format|Ursprünglicher Wert in "Überwachen"|Anzeige|
 |---------------|------------|--------------------------|--------------|
-|ac|Erzwingen der Auswertung eines Ausdrucks. Dies kann nützlich sein, wenn die implizite Auswertung von Eigenschaften sowie implizite Funktionsaufrufe deaktiviert sind. Siehe [Side Effects and Expressions](http://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e).|Meldung "Implizite Funktionsevaluierung durch den Benutzer deaktiviert"|\<Wert>|
+|ac|Erzwingen der Auswertung eines Ausdrucks. Dies kann nützlich sein, wenn die implizite Auswertung von Eigenschaften sowie implizite Funktionsaufrufe deaktiviert sind. Siehe [Side Effects and Expressions](https://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e).|Meldung "Implizite Funktionsevaluierung durch den Benutzer deaktiviert"|\<Wert>|
 |T|Ganze Dezimalzahl|0x0065|101|
 |dynamic|Zeigt das angegebene Objekt mit einer dynamischen Ansicht an.|Zeigt alle Member des Objekts einschließlich der dynamischen Ansicht an.|Zeigt nur die dynamische Ansicht an.|
 |h|Ganze Hexadezimalzahl|61541|0x0000F065|
@@ -76,4 +76,4 @@ In der folgenden Tabelle wird der C#-Formatbezeichner angezeigt, die vom Debugge
 ## <a name="see-also"></a>Siehe auch
 
 - [Fenster "Überwachen" und "Schnellüberwachung"](../debugger/watch-and-quickwatch-windows.md)
-- [Variablenfenster](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
+- [Variablenfenster](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

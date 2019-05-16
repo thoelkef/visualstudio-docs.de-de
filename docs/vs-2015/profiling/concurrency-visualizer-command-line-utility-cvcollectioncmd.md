@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4282b865bbe85a70e1565e17987600da5c7960e5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5f664b1bf2af89d8c3f6e06792039571f4211236
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444057"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692743"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Befehlszeilenhilfsprogramm für die Parallelitätsschnellansicht (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Sie können das Befehlszeilenprogramm Concurrency Visualizer (CVCollectionCmd.ex
   
 |Option|Beschreibung|Parameter|Rückgabewert|  
 |------------|-----------------|----------------|-------------------|  
-|Abfrage|Gibt zurück, ob sich die Auflistung starten lässt.|Keiner|0, wenn die Auflistung startbereit ist.<br /><br /> 1, wenn die Auflistung bereits läuft.<br /><br /> 2, wenn die Auflistung nicht läuft, aber eine oder mehr der erforderlichen [ETW](http://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92)-Sitzungen bereit aktiviert ist.|  
+|Abfrage|Gibt zurück, ob sich die Auflistung starten lässt.|Keiner|0, wenn die Auflistung startbereit ist.<br /><br /> 1, wenn die Auflistung bereits läuft.<br /><br /> 2, wenn die Auflistung nicht läuft, aber eine oder mehr der erforderlichen [ETW](https://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92)-Sitzungen bereit aktiviert ist.|  
 |Starten|Führt den festgelegten Prozess unter Concurrency Visualizer aus.|Der Pfad der ausführbaren Datei.|0, wenn das Ausführen erfolgreich war.<br /><br /> 1, wenn das Ausführen fehlgeschlagen ist, weil die Zielanwendung nicht gestartet werden konnte.<br /><br /> 13, wenn das Ausführen fehlgeschlagen ist, weil CVCollectionCmd keine ausreichenden Berechtigungen für das Schreiben in die festgelegte Ausgabeverzeichnis besitzt.|  
 |Anfügen|Beginnt mit dem Erfassen einer systemweiten Ablaufverfolgung; wird ansonsten an einen Prozess angefügt, sofern ein solcher festgelegt wurde.|Keine|0, wenn Anfügen erfolgreich war.<br /><br /> 1, wenn das Anfügen fehlgeschlagen ist, weil der festgelegte Prozess ungültig oder mehrdeutig ist.<br /><br /> 13, wenn das Anfügen fehlgeschlagen ist, weil CVCollectionCmd nicht ausreichende Berechtigungen für das Schreiben in das festgelegte Ausgabeverzeichnis besitzt.|  
 |Trennen|Auflistung wird angehalten.|Keine|0, wenn Trennen erfolgreich war.<br /><br /> 1, wenn das Trennen fehlgeschlagen ist, weil die Auflistung aktuell nicht ausgeführt wird.<br /><br /> 2, wenn das Trennen fehlgeschlagen ist, weil die Auflistung nicht angehalten werden konnte.|  

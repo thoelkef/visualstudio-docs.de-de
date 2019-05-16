@@ -16,12 +16,12 @@ caps.latest.revision: 9
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 1ebe75fae15069efc5e76ac59e6f16f9ca06d1ae
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e5284ae41f961d8e027590b4296037236e7108f6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947297"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699438"
 ---
 # <a name="intrinsic-functions"></a>Systeminterne Funktionen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,8 +46,8 @@ Ein Ausdruck in SAL kann ein C-/C++-Ausdruck sein, vorausgesetzt, dass es sich u
 |Anmerkung|Beschreibung|  
 |----------------|-----------------|  
 |`_String_length_(param)`|`param` ist die Anzahl der Elemente in der Zeichenfolge bis zum, aber nicht mit einem null-Terminator. Diese Anmerkung ist für Zeichenfolge-Zeichentypen reserviert.|  
-|`strlen(param)`|`param` ist die Anzahl der Elemente in der Zeichenfolge bis zum, aber nicht mit einem null-Terminator. Diese Anmerkung ist reserviert für die Verwendung auf Zeichen arrays und ähnelt der Funktion der C-Laufzeit [strlen()](http://msdn.microsoft.com/library/16462f2a-1e0f-4eb3-be55-bf1c83f374c2).|  
-|`wcslen(param)`|`param` die Anzahl der Elemente in der Zeichenfolge bis zu (aber nicht einschließlich) ist ein null-Terminator. Diese Anmerkung ist reserviert für die Verwendung in Breitzeichen, arrays und ähnelt der Funktion der C-Laufzeit [wcslen()](http://msdn.microsoft.com/library/16462f2a-1e0f-4eb3-be55-bf1c83f374c2).|  
+|`strlen(param)`|`param` ist die Anzahl der Elemente in der Zeichenfolge bis zum, aber nicht mit einem null-Terminator. Diese Anmerkung ist reserviert für die Verwendung auf Zeichen arrays und ähnelt der Funktion der C-Laufzeit [strlen()](https://msdn.microsoft.com/library/16462f2a-1e0f-4eb3-be55-bf1c83f374c2).|  
+|`wcslen(param)`|`param` die Anzahl der Elemente in der Zeichenfolge bis zu (aber nicht einschließlich) ist ein null-Terminator. Diese Anmerkung ist reserviert für die Verwendung in Breitzeichen, arrays und ähnelt der Funktion der C-Laufzeit [wcslen()](https://msdn.microsoft.com/library/16462f2a-1e0f-4eb3-be55-bf1c83f374c2).|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Verwenden von SAL-Anmerkungen zum Reduzieren von C/C++-Codefehlern](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   

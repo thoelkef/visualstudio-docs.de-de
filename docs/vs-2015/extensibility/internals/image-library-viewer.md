@@ -6,12 +6,12 @@ ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 93fa86fcac429b38c1e727f39f8c94611310119c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 97d634f97eb7a13cfa54b2c0d326b19f31fb7d9d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062597"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685537"
 ---
 # <a name="image-library-viewer"></a>Bildbibliotheks-Viewer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -130,7 +130,7 @@ Das Visual Studio Bildbibliotheks-Viewer-Tool kann geladen werden, und suchen bi
 |||  
 |-|-|  
 |**Attribut**|**Definition**|  
-|URI|[Erforderlich] Ein URI, der definiert, in dem das Bild aus geladen werden können. Sie können eine der folgenden sein:<br /><br /> -Ein [Paket-URI](http://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) mithilfe der Anwendung: / / / der Autorität<br /><br /> – Ein Ressourcenverweis absolute-Komponente<br /><br /> – Ein Pfad zu einer Datei enthält eine systemeigene Ressource|  
+|URI|[Erforderlich] Ein URI, der definiert, in dem das Bild aus geladen werden können. Sie können eine der folgenden sein:<br /><br /> -Ein [Paket-URI](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) mithilfe der Anwendung: / / / der Autorität<br /><br /> – Ein Ressourcenverweis absolute-Komponente<br /><br /> – Ein Pfad zu einer Datei enthält eine systemeigene Ressource|  
 |Hintergrund|[Optional] Gibt an, was von der Art des Hintergrunds, die die Quelle verwendet werden soll.<br /><br /> Sie können eine der folgenden sein:<br /><br /> - *Light*: Die Quelle kann auf einen hellen Hintergrund verwendet werden.<br /><br /> - *Dunkel*: Die Quelle kann auf einen dunklen Hintergrund verwendet werden.<br /><br /> - *HighContrast*: Die Quelle kann auf eine im Hintergrund laufende im Modus für hohe Kontraste verwendet werden.<br /><br /> - *HighContrastLight*: Die Quelle kann auf einen hellen Hintergrund im Modus für hohe Kontraste verwendet werden.<br /><br /> -*HighContrastDark*: Die Quelle kann auf einen dunklen Hintergrund im Modus für hohe Kontraste verwendet werden.<br /><br /> Wenn die **Hintergrund** Attribut weggelassen wird, die Quelle kann auf alle Hintergrund verwendet werden.<br /><br /> Wenn **Hintergrund** ist *Licht*, *dunkel*, *HighContrastLight*, oder *HighContrastDark*, der Quelle Farben sind nicht umgekehrt. Wenn **Hintergrund** ausgelassen oder auf ist *hohem Kontrast*, der die Umkehrung der Farben von der Quelle wird gesteuert, indem des Bilds **AllowColorInversion** Attribut.|  
   
  Ein \<Source >-Element kann nur jeweils eines der folgenden optionalen untergeordneten Elemente aufweisen:  

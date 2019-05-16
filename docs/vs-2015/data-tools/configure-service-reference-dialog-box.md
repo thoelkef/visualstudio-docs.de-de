@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4b490b379df401f4eb0c680524be8bac91dee410
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 883cdd8f3d150c894ecfbe7ccd2fbc2906c9e79b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437012"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705193"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Dienstverweis konfigurieren (Dialogfeld)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "63437012"
 Die **Dienstverweis konfigurieren** Dialogfeld können Sie so konfigurieren Sie das Verhalten der [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] Dienste.  
   
 > [!NOTE]
-> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü Extras auf Einstellungen importieren und exportieren, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü Extras auf Einstellungen importieren und exportieren, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Klicken Sie mit der rechten Maustaste auf einen Dienstverweis im **Projektmappen-Explorer**, und wählen Sie **Dienstverweis konfigurieren** aus, um auf das Dialogfeld **Dienstverweis konfigurieren** zuzugreifen. Sie können auch auf das Dialogfeld zugreifen, indem Sie im Dialogfeld **Dienstverweis hinzufügen** auf die Schaltfläche **Erweitert** klicken.  
   
@@ -63,10 +63,10 @@ Die **Dienstverweis konfigurieren** Dialogfeld können Sie so konfigurieren Sie 
  Bestimmt, ob WCF-Dienstmethoden synchron (standardmäßig) oder asynchron aufgerufen werden.  
   
  **Aufgabenbasierte Vorgänge generieren**  
- Beim Schreiben von asynchronem Code können Sie mit dieser Option von der in .Net 4 eingeführten Task Parallel Library (TPL) profitieren. Finden Sie unter [Task Parallel Library (TPL)](http://msdn.microsoft.com/library/dd460717.aspx).  
+ Beim Schreiben von asynchronem Code können Sie mit dieser Option von der in .Net 4 eingeführten Task Parallel Library (TPL) profitieren. Finden Sie unter [Task Parallel Library (TPL)](https://msdn.microsoft.com/library/dd460717.aspx).  
   
  **Meldungsverträge immer generieren**  
- Bestimmt, ob Meldungsvertragstypen für einen WCF-Client generiert werden. Weitere Informationen zu Meldungsverträgen finden Sie unter [Using Message Contracts](http://msdn.microsoft.com/library/1e19c64a-ae84-4c2f-9155-91c54a77c249).  
+ Bestimmt, ob Meldungsvertragstypen für einen WCF-Client generiert werden. Weitere Informationen zu Meldungsverträgen finden Sie unter [Using Message Contracts](https://msdn.microsoft.com/library/1e19c64a-ae84-4c2f-9155-91c54a77c249).  
   
  **Sammlungstyp**  
  Gibt den Listenauflistungstyp für einen WCF-Client an. Der Standardtyp ist <xref:System.Array>.  
@@ -87,7 +87,7 @@ Die **Dienstverweis konfigurieren** Dialogfeld können Sie so konfigurieren Sie 
  Enthält eine Liste von referenzierten Assemblys für das Projekt oder die Website. Wenn **Typen in referenzierten Assemblys wiederverwenden** ausgewählt ist, einzelne Assemblys aktiviert oder deaktiviert werden können.  
   
  **Webverweis hinzufügen**  
- Zeigt die [NIB: Fügen Sie im Dialogfeld "Verweis" Web](http://msdn.microsoft.com/bdf05776-c591-40af-bfd7-e1e2aa1e87b5).  
+ Zeigt die [NIB: Fügen Sie im Dialogfeld "Verweis" Web](https://msdn.microsoft.com/bdf05776-c591-40af-bfd7-e1e2aa1e87b5).  
   
 > [!NOTE]
 > Diese Option sollte für Projekte verwendet werden, die Version 2.0 von [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] vorgeben.  
@@ -96,6 +96,6 @@ Die **Dienstverweis konfigurieren** Dialogfeld können Sie so konfigurieren Sie 
 > Die **Webverweis hinzufügen** Schaltfläche ist nur verfügbar, wenn die **Dienstverweis konfigurieren** Dialogfeld wird angezeigt, aus der **Add Service Reference Dialog Box**.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Hinzufügen, aktualisieren oder Entfernen eines Dienstverweises](http://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)   
- [Vorgehensweise: Fügen Sie einen Verweis auf einen Webdienst](http://msdn.microsoft.com/library/952e49a1-567e-4a74-8cd7-f2e7b62c3168)   
+ [Vorgehensweise: Hinzufügen, aktualisieren oder Entfernen eines Dienstverweises](https://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)   
+ [Vorgehensweise: Fügen Sie einen Verweis auf einen Webdienst](https://msdn.microsoft.com/library/952e49a1-567e-4a74-8cd7-f2e7b62c3168)   
  [Windows Communication Foundation-Dienste und WCF Data Services](../data-tools/configure-service-reference-dialog-box.md)

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 418a1a22979b701ec1d1d32521f7f89e2c5274eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bcd102d8717b455a402bceb98e7ce85a2907e3bb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978327"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694982"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Problembehandlung bei Office-projektmappenbereitstellung
   Dieses Thema enthält Informationen zur Lösung von allgemeinen Problemen, die beim Bereitstellen von Office-Projektmappen auftreten können.
@@ -118,7 +118,7 @@ ms.locfileid: "62978327"
 ## <a name="cant-install-a-clickonce-solution-by-opening-the-deployment-manifest-from-the-web"></a>Eine ClickOnce-Projektmappe kann nicht installiert werden, indem Sie das Bereitstellungsmanifest aus dem Web öffnen
  Benutzer können Office-Projektmappen installieren, indem sie das Bereitstellungsmanifest aus dem Web öffnen. Einige Installationen von Internet Information Services (IIS) blockiert jedoch die *".VSTO"* Dateinamenerweiterung. Sie müssen den MIME-Typ in IIS definieren, bevor Sie sie zum Bereitstellen einer Office-Projektmappe verwenden.
 
- Informationen dazu, wie Sie den MIME-Typ in IIS 7 definieren, finden Sie unter [Hinzufügen eines MIME-Typs (IIS7)](http://technet.microsoft.com/library/cc725608(WS.10).aspx).
+ Informationen dazu, wie Sie den MIME-Typ in IIS 7 definieren, finden Sie unter [Hinzufügen eines MIME-Typs (IIS7)](https://technet.microsoft.com/library/cc725608(WS.10).aspx).
 
  Legen Sie die Erweiterung auf **.vsto** und den MIME-Typ auf **application/x-ms-vsto**fest.
 

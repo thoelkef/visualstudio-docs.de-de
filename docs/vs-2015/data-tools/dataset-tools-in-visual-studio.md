@@ -53,12 +53,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0dc80bd821a85c475adba7fbbc264ab6b5a76a9b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: df415b9ad56e8e9b740da57709d039737f1bd24a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431124"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697906"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Datasettools in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ HINWEIS]
 
  Ein DataSet-Objekt ist ein in-Memory-Objekt, das im Wesentlichen eine Mini-Datenbank ist. Sie enthält DataTable DataColumn und DataRow-Objekte, in denen Sie speichern und Ändern von Daten aus einer oder mehreren Datenbanken ohne eine geöffnete Verbindung verwalten zu müssen. Das Dataset enthält Informationen zu Änderungen an Daten, damit Updates zurück an die Datenbank gesendet werden, wenn Ihre Anwendung die Verbindung wiederhergestellt wird und nachverfolgt werden können.
 
- Datasets und verknüpften Klassen werden in der System.Data-Namespace in der .NET Framework-Klassenbibliothek definiert. Sie können erstellen und ändern die Datasets dynamisch im Code. Weitere Informationen zur Vorgehensweise, die ADO.NET finden Sie unter. Die Dokumentation in diesem Abschnitt wird das Arbeiten mit Datasets mithilfe von Visual Studio-Designer veranschaulicht. Dabei ist zu wissen: Datasets, die über Designer vorgenommen werden TableAdapter-Objekte für die Interaktion mit der Datenbank verwenden, während der Datasets, die programmgesteuert erfolgen DataAdapter-Objekte verwenden. Informationen zum programmgesteuerten Erstellen von Datasets finden Sie unter ["DataAdapters" und "DataReaders"](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).
+ Datasets und verknüpften Klassen werden in der System.Data-Namespace in der .NET Framework-Klassenbibliothek definiert. Sie können erstellen und ändern die Datasets dynamisch im Code. Weitere Informationen zur Vorgehensweise, die ADO.NET finden Sie unter. Die Dokumentation in diesem Abschnitt wird das Arbeiten mit Datasets mithilfe von Visual Studio-Designer veranschaulicht. Dabei ist zu wissen: Datasets, die über Designer vorgenommen werden TableAdapter-Objekte für die Interaktion mit der Datenbank verwenden, während der Datasets, die programmgesteuert erfolgen DataAdapter-Objekte verwenden. Informationen zum programmgesteuerten Erstellen von Datasets finden Sie unter ["DataAdapters" und "DataReaders"](https://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).
 
  Wenn Ihre Anwendung muss nur das Lesen von Daten aus einer Datenbank und nicht ausgeführt werden, Updates, hinzufügt oder löscht, können Sie in der Regel eine bessere Leistung mit einem DataReader-Objekt zum Abrufen von Daten in einer generischen List-Objekt oder ein anderes Auflistungsobjekt abrufen. Wenn Sie die Daten anzeigen, Sie können die Benutzeroberfläche der Auflistung Datenbindung.
 
@@ -89,7 +89,7 @@ HINWEIS]
 
     - [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)
 
-- Fragen Sie ab aus, und suchen Sie die Daten im Dataset. Weitere Informationen finden Sie unter [Abfragedatasets](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] ermöglicht [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) für Daten in einem <xref:System.Data.DataSet> Objekt. Weitere Informationen finden Sie unter [LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17).
+- Fragen Sie ab aus, und suchen Sie die Daten im Dataset. Weitere Informationen finden Sie unter [Abfragedatasets](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] ermöglicht [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) für Daten in einem <xref:System.Data.DataSet> Objekt. Weitere Informationen finden Sie unter [LINQ to DataSet](https://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17).
 
 - Verwenden der **Datenquellen** Fenster, um Benutzeroberflächen-Steuerelemente an das Dataset oder einzelne Spalten binden und angeben, welche Spalten Benutzer bearbeitet werden. Weitere Informationen finden Sie unter [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
 

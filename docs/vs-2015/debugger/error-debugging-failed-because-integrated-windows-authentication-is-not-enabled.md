@@ -19,12 +19,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 73fcc686b242109a65fce6befbbca5e2a357a25e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 074c6c1cace31797e46a192ec0891f1e13dac22b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049320"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684276"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Fehler: Fehler beim Debuggen, da die integrierte Windows-Authentifizierung nicht aktiviert ist
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,4 +120,4 @@ Der Benutzer, der die Debuganforderung gestellt hat, konnte aufgrund eines Authe
 ## <a name="see-also"></a>Siehe auch  
  [Debuggen von Webanwendungen: Fehler und Problembehandlung](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
  [Microsoft-Digestauthentifizierung](http://go.microsoft.com/fwlink/?LinkId=77938)   
- [Ausführen von Webanwendungen unter Windows Vista mit IIS 7.0- und Visual Studio](http://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)
+ [Ausführen von Webanwendungen unter Windows Vista mit IIS 7.0- und Visual Studio](https://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)

@@ -21,12 +21,12 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: baa62dc48b329cd3639c0623fccfdbe2325cf9e3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 239fdcea9b8b9613bcdaa2419aba211c2a2a98f4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429122"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686327"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -206,8 +206,8 @@ Wenn Sie Visual Studio, zum Bereitstellen verwenden können Ihrer [!INCLUDE[ndpt
  Wenn Sie eine neue Version der Anwendung bereitstellen möchten, erstellen Sie ein neues Verzeichnis mit dem Namen der neuen Version – z. B. 1.0.0.1 kopieren Sie die neue Anwendungsdateien in das neue Verzeichnis. Als Nächstes müssen Sie die zuvor genannten Schritte zum Erstellen und Signieren ein neues Anwendungsmanifest, und aktualisieren und das Bereitstellungsmanifest zu signieren. Achten Sie darauf, dass Sie an die gleiche höhere Version in beiden Mage.exe `-New` und `–Update` Aufrufe als [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aktualisiert nur neuere Versionen mit den wichtigsten am weitesten links ganzen Zahl. Wenn Sie MageUI.exe verwenden, können Sie aktualisieren das Bereitstellungsmanifest öffnen, wählen die **Anwendungsverweis** klicken Sie auf die **Manifest auswählen** Schaltfläche aus, und wählen Sie dann auf die aktualisierte Anwendungsmanifest.  
   
 ## <a name="see-also"></a>Siehe auch  
- [„Mage.exe“ (Tool zum Generieren und Bearbeiten von Manifesten)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
- [MageUI.exe (Tool zum Generieren und Bearbeiten von Manifesten, grafischer Client)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)   
+ [„Mage.exe“ (Tool zum Generieren und Bearbeiten von Manifesten)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
+ [MageUI.exe (Tool zum Generieren und Bearbeiten von Manifesten, grafischer Client)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)   
  [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)   
  [ClickOnce-Bereitstellungsmanifest](../deployment/clickonce-deployment-manifest.md)   
  [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)

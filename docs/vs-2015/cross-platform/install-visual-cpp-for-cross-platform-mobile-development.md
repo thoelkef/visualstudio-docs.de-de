@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 57aa9011043ab30e465e03beffe54e6abcc706a8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1aa81017f1a3d73e4ade1556ab141878e8a773f7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444584"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698466"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Installieren von Visual C++ für die plattformübergreifende mobile Entwicklung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "63444584"
   
   Zum Erstellen von Anwendungen für bestimmte Plattformen bestehen einige zusätzliche Anforderungen:  
   
-- Windows Phone-Emulatoren und der Microsoft Visual Studio-Emulator für Android erfordern einen Computer, auf dem Hyper-V ausgeführt werden kann. Die Hyper-V-Funktion unter Windows muss aktiviert sein, muss installiert sein, bevor Sie die Emulatoren installieren und ausführen können. Weitere Informationen finden Sie unter den [Systemanforderungen](http://msdn.microsoft.com/4d5bb438-231a-4cd2-84b7-e9660b0e3baf)des Emulators.  
+- Windows Phone-Emulatoren und der Microsoft Visual Studio-Emulator für Android erfordern einen Computer, auf dem Hyper-V ausgeführt werden kann. Die Hyper-V-Funktion unter Windows muss aktiviert sein, muss installiert sein, bevor Sie die Emulatoren installieren und ausführen können. Weitere Informationen finden Sie unter den [Systemanforderungen](https://msdn.microsoft.com/4d5bb438-231a-4cd2-84b7-e9660b0e3baf)des Emulators.  
   
 - Die im Lieferumfang des Android-SDK enthaltenen  x86-Android-Emulatoren funktionieren am besten auf Computern, auf denen der Intel HAXM-Treiber ausgeführt werden kann. Dieser Treiber erfordert einen Intel x64-Prozessor mit VT-x und Execute Disable Bit-Unterstützung. Weitere Informationen finden Sie unter [Installationsanweisungen für Intel® Hardware Accelerated Execution Manager – Microsoft Windows](http://go.microsoft.com/fwlink/p/?LinkId=536385).  
   

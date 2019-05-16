@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 345a8649561eaadc88616b699fcb9873cfadf292
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.openlocfilehash: 078b7f5535dc80261917ef662b3a2f0069cb33a8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959847"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687302"
 ---
 # <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117: APTCA-Typen sollten nur APTCA-Basistypen erweitern.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58959847"
  Ein öffentlicher oder geschützter Typ in einer Assembly mit der <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> -Attribut erbt von einem Typ deklariert, die in einer Assembly, die nicht über das Attribut verfügt.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Standardmäßig werden öffentliche oder geschützte Typen in Assemblys mit starken Namen implizit durch geschützt ein [Vererbungsanforderungen](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) für volle Vertrauenswürdigkeit. Assemblys mit starkem Namen gekennzeichnet werden, mit der <xref:System.Security.AllowPartiallyTrustedCallersAttribute> -Attribut (APTCA) müssen sich nicht auf diesen Schutz. Das Attribut wird die vererbungsanforderung deaktiviert. Auf diese Weise verfügbar gemachten Typen in der Assembly deklarierten vererbbar von Typen, die keine volle Vertrauenswürdigkeit haben.
+ Standardmäßig werden öffentliche oder geschützte Typen in Assemblys mit starken Namen implizit durch geschützt ein [Vererbungsanforderungen](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) für volle Vertrauenswürdigkeit. Assemblys mit starkem Namen gekennzeichnet werden, mit der <xref:System.Security.AllowPartiallyTrustedCallersAttribute> -Attribut (APTCA) müssen sich nicht auf diesen Schutz. Das Attribut wird die vererbungsanforderung deaktiviert. Auf diese Weise verfügbar gemachten Typen in der Assembly deklarierten vererbbar von Typen, die keine volle Vertrauenswürdigkeit haben.
 
  Wenn das APTCA-Attribut in einer voll vertrauenswürdigen Assembly vorhanden ist und ein Typ in der Assembly erbt von einem Typ, der keine teilweise vertrauenswürdigen Aufrufer zulässt, kann diese Sicherheitslücke ausgenutzt werden. Wenn zwei Typen `T1` und `T2` folgende Bedingungen erfüllt, können böswillige Aufrufer den Typ `T1` die vererbungsanforderung implizite volle Vertrauenswürdigkeit zu umgehen, die schützt `T2`:
 
@@ -84,4 +84,4 @@ ms.locfileid: "58959847"
  [CA2116: APTCA-Methoden sollten nur APTCA-Methoden aufrufen.](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)
 
 ## <a name="see-also"></a>Siehe auch
- [Sichern Sie die Richtlinien für das Codieren](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [.NET Framework-Assemblys aufgerufen durch teilweise vertrauenswürdigen Code](http://msdn.microsoft.com/a417fcd4-d3ca-4884-a308-3a1a080eac8d) [Verwenden von Bibliotheken aus teilweise vertrauenswürdigem Code](http://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74) [Vererbungsanforderungen](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)
+ [Sichern Sie die Richtlinien für das Codieren](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [.NET Framework-Assemblys aufgerufen durch teilweise vertrauenswürdigen Code](https://msdn.microsoft.com/a417fcd4-d3ca-4884-a308-3a1a080eac8d) [Verwenden von Bibliotheken aus teilweise vertrauenswürdigem Code](https://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74) [Vererbungsanforderungen](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)

@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d62053381e4d42c50a5d15a85afaef3ed816491d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 91a3945c6ef212ba664119a822123f326cdefc5c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658330"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676394"
 ---
 # <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: Bei zusammengesetzten Begriffen sollte die Groß-/Kleinschreibung beachtet werden.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,5 +56,5 @@ Die neueste Dokumentation zu Visual Studio finden Sie unter [CA1702 bei: Bei zus
  [CA1708: Bezeichner sollten sich durch die Groß-/Kleinschreibung unterscheiden.](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)  
   
 ## <a name="see-also"></a>Siehe auch  
- [Benennungsrichtlinien](http://msdn.microsoft.com/library/fc076d66-9b5f-42d3-aa65-61d970c794a3)   
- [Konventionen für die Groß-/Kleinschreibung](http://msdn.microsoft.com/library/4c4ea526-9203-486f-b72d-29d61c5b3c6d)
+ [Benennungsrichtlinien](https://msdn.microsoft.com/library/fc076d66-9b5f-42d3-aa65-61d970c794a3)   
+ [Konventionen für die Groß-/Kleinschreibung](https://msdn.microsoft.com/library/4c4ea526-9203-486f-b72d-29d61c5b3c6d)

@@ -12,12 +12,12 @@ ms.assetid: b6aec634-8533-476c-9ebd-36536a2288e2
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2b54c6ba8f3daefa53f00478c1d7e4573311cfb6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 31840c40f2a494ffd32f5241e2770938138877e9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429157"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704101"
 ---
 # <a name="project-property-user-interface"></a>Benutzeroberfläche für Projekteigenschaften
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,8 +55,8 @@ Einem Projektuntertyp kann mithilfe der Elemente im Projekt **Eigenschaftenseite
   
   Da das Projekt Untertyp Aggregate der <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> Objekt ist, können sie die Definition dieser Eigenschaften zu bestimmen, welche überschreiben **Eigenschaftenseiten** Dialogfelder angezeigt werden. Der Projektuntertyp kann diese Eigenschaften aus dem inneren Basisprojekt abzurufen, und klicken Sie dann hinzufügen oder Entfernen von CLSIDs nach Bedarf.  
   
-  Neue Eigenschaftenseiten, die von einem Projektuntertyp hinzugefügt, werden von der Implementierung des Projekts eine projektkonfigurationssuchobjekt übergeben. Diese projektkonfigurationssuchobjekt unterstützt Automatisierungsextender. Weitere Informationen zu AutomationExtenders, finden Sie unter [implementieren und Verwenden von Automatisierungsextendern](http://msdn.microsoft.com/library/0d5c218c-f412-4b28-ab0c-33a611f62356). Die Eigenschaftenseiten implementiert durch den Aufruf der Projekt-Untertyp <xref:EnvDTE.Project.Extender%2A> eigene projektkonfigurationssuchobjekt Untertyp abgerufen, die dem Suchobjekt der Konfiguration des Basisprojekts erweitert.  
+  Neue Eigenschaftenseiten, die von einem Projektuntertyp hinzugefügt, werden von der Implementierung des Projekts eine projektkonfigurationssuchobjekt übergeben. Diese projektkonfigurationssuchobjekt unterstützt Automatisierungsextender. Weitere Informationen zu AutomationExtenders, finden Sie unter [implementieren und Verwenden von Automatisierungsextendern](https://msdn.microsoft.com/library/0d5c218c-f412-4b28-ab0c-33a611f62356). Die Eigenschaftenseiten implementiert durch den Aufruf der Projekt-Untertyp <xref:EnvDTE.Project.Extender%2A> eigene projektkonfigurationssuchobjekt Untertyp abgerufen, die dem Suchobjekt der Konfiguration des Basisprojekts erweitert.  
   
 ## <a name="see-also"></a>Siehe auch  
  <xref:EnvDTE.IFilterProperties>   
- [Property Pages Dialog Box](http://msdn.microsoft.com/4a3d34ac-ed03-45e8-ae60-a0e1aad300e4)
+ [Property Pages Dialog Box](https://msdn.microsoft.com/4a3d34ac-ed03-45e8-ae60-a0e1aad300e4)

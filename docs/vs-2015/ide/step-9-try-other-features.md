@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c8a701715c0adff479fa29dbe9c9b28287031dfd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 495d98f4061c258c78b2b74929428aec4eb3ec0c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428298"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65678945"
 ---
 # <a name="step-9-try-other-features"></a>Schritt 9: Ausprobieren weiterer Features
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Um den Lerneffekt zu erhöhen, können Sie das Ändern von Symbolen und Farben, 
 - Ersetzen Sie die Symbole und Farben durch selbst gewählte Symbole und Farben.  
   
     > [!TIP]
-    > Beschäftigen Sie sich mit der [Forecolor](http://msdn.microsoft.com/library/system.windows.forms.control.forecolor%28v=vs.110%29.aspx)-Eigenschaft des Bezeichnungsfelds.  
+    > Beschäftigen Sie sich mit der [Forecolor](https://msdn.microsoft.com/library/system.windows.forms.control.forecolor%28v=vs.110%29.aspx)-Eigenschaft des Bezeichnungsfelds.  
   
 - Fügen Sie einen Spieltimer hinzu und ermitteln Sie, wie lange es dauert, bis der Spieler gewinnt.  
   

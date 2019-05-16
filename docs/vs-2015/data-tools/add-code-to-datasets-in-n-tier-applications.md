@@ -14,17 +14,17 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 078230c2b80d364b68fb127f18fc21a0b931cbce
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6c788e422ea8613b77d7d0c0460d7c026916baa3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106669"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697154"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Hinzufügen von Code zu DataSets in N-Tier-Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sie können die Funktionen eines Datasets erweitern, indem Sie die Datei eine partielle Klasse für das Dataset zu erstellen und Code hinzufügen (anstelle von Code zum Hinzufügen der *DatasetName*. Dataset.Designer-Datei). Partielle Klassen ermöglichen es sich um Code für eine bestimmte Klasse auf mehrere physische Dateien unterteilt werden. Weitere Informationen finden Sie unter [teilweise](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448) oder [partielle Klassen und Methoden](http://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1).
+Sie können die Funktionen eines Datasets erweitern, indem Sie die Datei eine partielle Klasse für das Dataset zu erstellen und Code hinzufügen (anstelle von Code zum Hinzufügen der *DatasetName*. Dataset.Designer-Datei). Partielle Klassen ermöglichen es sich um Code für eine bestimmte Klasse auf mehrere physische Dateien unterteilt werden. Weitere Informationen finden Sie unter [teilweise](https://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448) oder [partielle Klassen und Methoden](https://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1).
 
 Der Code, der ein Dataset definiert wird generiert, jedes Mal, wenn Änderungen an der Definition des Datasets vorgenommen werden. Dieser Code wird auch generiert, wenn Sie während der Ausführung des Assistenten für alle Änderungen vornehmen, die die Konfiguration eines Datasets ändert. Um zu verhindern, dass Ihr Code beim erneuten Generieren eines Dataset gelöscht wird, fügen Sie Code des Datasets partiellen Klassendatei hinzu.
 
@@ -69,7 +69,7 @@ Standardmäßig wird bei einer Trennung von DataSet-Code und `TableAdapter`-Code
 
 - [Übersicht über N-Tier-Datenanwendungen](../data-tools/n-tier-data-applications-overview.md)
 - [Gewusst wie: Hinzufügen von Code zu TableAdapters in N-Tier-Anwendungen](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
-- [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)
-- [Übersicht über TableAdapterManager](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)
-- [Übersicht über die hierarchische Aktualisierung](http://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6)
+- [TableAdapters](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)
+- [Übersicht über TableAdapterManager](https://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)
+- [Übersicht über die hierarchische Aktualisierung](https://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6)
 - [Datasettools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

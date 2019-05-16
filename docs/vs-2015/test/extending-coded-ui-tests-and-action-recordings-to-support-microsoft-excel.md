@@ -8,12 +8,12 @@ ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 61c802ebca49c15a3a7baa785400f90621a27e9f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a85676fca972bb0d2d91f5ffd7c7cbf95bfc68c8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416465"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686392"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Erweitern von Tests der codierten UI-Tests und Aktionsaufzeichnungen zur Unterstützung von Microsoft Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Das Testframework für Tests der programmierten UI und Aktionsaufzeichnungen unt
 ### <a name="microsoft-excel-add-in-excelcodeduiaddinhelper"></a>Microsoft Excel-Add-in: ExcelCodedUIAddinHelper  
  Dieses Projekt enthält ein Add-In, das im Excel-Prozess ausgeführt wird. Eine kurze Übersicht des Add-In-Projekts finden Sie unter [Sample Excel Add-In for Coded UI Testing](../test/sample-excel-add-in-for-coded-ui-testing.md) (Beispiel eines Excel-Add-Ins für den Test der programmierten UI).  
   
- Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen Ihrer ersten VSTO-Add-Ins für Excel](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f).  
+ Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen Ihrer ersten VSTO-Add-Ins für Excel](https://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f).  
   
 ### <a name="excel-ui-communication-exceluicommunicationhelper"></a>Excel-UI-Kommunikation: ExcelUIcommunicationHelper  
  Dieses Projekt enthält die `IExcelUICommunication`-Schnittstelle und die Informationsklassen, mit denen Daten zwischen dem Framework für den Test der codierten Benutzeroberfläche und Excel übergeben werden. Weitere Informationen finden Sie unter [Beispiel für Excel-Communicator-Schnittstelle](../test/sample-excel-communicator-interface.md).  

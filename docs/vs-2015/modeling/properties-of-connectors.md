@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 50e88a37e9d22fa99752864d1acbbeb4d15e6dab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a3673a818f9460b8b40bb3fee2dcd5fe65fd02a8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947098"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701732"
 ---
 # <a name="properties-of-connectors"></a>Eigenschaften von Konnektoren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,4 +53,4 @@ Verbinder repräsentieren domänenbeziehungen in einen generierten Designer.
 |Hilfsschlüsselwort|Das Schlüsselwort, das zum Indizieren der F1-Hilfe für dieses Element verwendet wird.|\<none>|  
   
 ## <a name="see-also"></a>Siehe auch  
- [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

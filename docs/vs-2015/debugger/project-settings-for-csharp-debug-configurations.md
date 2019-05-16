@@ -23,12 +23,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4f98441afbe8056fa01a11d7265447a293cd10fa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f1ec1c18fe92409a72994e4544215da01325d209
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446155"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687516"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Projekteinstellungen für C#-Debugkonfigurationen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,10 +43,10 @@ Sie können die projekteinstellungen für eine C#-Debugkonfiguration im Ändern 
 |**Einstellung**|**Beschreibung**|  
 |-----------------|---------------------|  
 |**Konfiguration**|Legt den Modus für das Kompilieren der Anwendung fest. Sie können **Aktiv (Debuggen)**, **Debuggen**, **Release** oder **Alle Konfigurationen** auswählen.|  
-|**Startaktion**|Anhand dieser Gruppe von Steuerungen wird festgelegt, welche Aktion bei Auswahl von Starten im Menü Debuggen erfolgt.<br /><br /> -   **Projekt starten** ist der Standardwert, durch den das Startprojekt zum Debuggen gestartet wird. Weitere Informationen finden Sie unter [auswählen des Startprojekts](http://msdn.microsoft.com/222e3f32-a6fe-4941-bf37-6b2a921129fd).<br />-   **Externes Programm starten** ermöglicht es, ein Programm zu starten, das nicht zu einem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projekt gehört, und eine Verbindung zu diesem Programm herzustellen. Weitere Informationen finden Sie unter [Anfügen an ein aktives Programm](http://msdn.microsoft.com/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4).<br />-   **Browser mit folgender URL starten** ermöglicht das Debuggen einer Webanwendung.|  
+|**Startaktion**|Anhand dieser Gruppe von Steuerungen wird festgelegt, welche Aktion bei Auswahl von Starten im Menü Debuggen erfolgt.<br /><br /> -   **Projekt starten** ist der Standardwert, durch den das Startprojekt zum Debuggen gestartet wird. Weitere Informationen finden Sie unter [auswählen des Startprojekts](https://msdn.microsoft.com/222e3f32-a6fe-4941-bf37-6b2a921129fd).<br />-   **Externes Programm starten** ermöglicht es, ein Programm zu starten, das nicht zu einem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projekt gehört, und eine Verbindung zu diesem Programm herzustellen. Weitere Informationen finden Sie unter [Anfügen an ein aktives Programm](https://msdn.microsoft.com/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4).<br />-   **Browser mit folgender URL starten** ermöglicht das Debuggen einer Webanwendung.|  
 |**Befehlszeilenargumente**|Legt Befehlszeilenargumente für das Programm fest, das gedebuggt werden soll. Der Befehlsname entspricht dem unter Externes Programm starten angegebenen Programmnamen. Wenn für Startaktion die Option Start-URL ausgewählt ist, können keine Befehlszeilenargumente festgelegt werden.|  
 |**Arbeitsverzeichnis**|Gibt das Arbeitsverzeichnis des Programms an, das gerade gedebuggt wird. Das Arbeitsverzeichnis in [!INCLUDE[csprcs](../includes/csprcs-md.md)] ist das Verzeichnis, aus dem die Anwendung gestartet wird. Standardmäßig ist dies das Verzeichnis \bin\debug.|  
-|**Remotecomputer verwenden**|Der Name eines Remotecomputers, in dem die Anwendung wird ausgeführt, für Debugzwecke oder [Msvsmon-Servernamen](http://msdn.microsoft.com/library/55b60ce7-834b-4e83-a10e-fe4248260a4c). Der Speicherort der EXE-Datei auf dem Remotecomputer wird durch die Eigenschaft Ausgabepfad festgelegt, die sich im Ordner Konfigurationseigenschaften in der Kategorie Erstellen befindet. Bei diesem Speicherort muss es sich um ein freigegebenes Verzeichnis auf dem Remotecomputer handeln.|  
+|**Remotecomputer verwenden**|Der Name eines Remotecomputers, in dem die Anwendung wird ausgeführt, für Debugzwecke oder [Msvsmon-Servernamen](https://msdn.microsoft.com/library/55b60ce7-834b-4e83-a10e-fe4248260a4c). Der Speicherort der EXE-Datei auf dem Remotecomputer wird durch die Eigenschaft Ausgabepfad festgelegt, die sich im Ordner Konfigurationseigenschaften in der Kategorie Erstellen befindet. Bei diesem Speicherort muss es sich um ein freigegebenes Verzeichnis auf dem Remotecomputer handeln.|  
 |**Nicht verwaltetes Codedebuggen aktivieren**|Bietet die Möglichkeit, Aufrufe von systemeigenem (nicht verwaltetem) Win32-Code von einer verwalteten Anwendung aus zu debuggen.|  
 |**SQL Server-Debuggen aktivieren**|Ermöglicht das Debuggen von SQL Server-Datenbankobjekten.|  
   

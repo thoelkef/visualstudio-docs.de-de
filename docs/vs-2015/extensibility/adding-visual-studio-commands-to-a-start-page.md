@@ -11,19 +11,19 @@ ms.assetid: a8e2765c-cfb5-47b5-a414-6e48b434e0c2
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 638c9c0f0d024830124445485dcf9991678bd4d7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0a2042ef9a96eed99636ea0a2f5f09d99cd35ea2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429016"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699150"
 ---
 # <a name="adding-visual-studio-commands-to-a-start-page"></a>Hinzufügen von Visual Studio-Befehlen zu einer Startseite
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Wenn Sie eine benutzerdefinierte Startseite erstellen, können Sie Visual Studio-Befehle, hinzufügen. Dieses Dokument erläutert die verschiedenen Möglichkeiten, Visual Studio-Befehle für XAML-Objekte auf einer Startseite zu binden.  
   
- Weitere Informationen über Befehle in XAML finden Sie unter [Befehlsübersicht](http://msdn.microsoft.com/library/bc208dfe-367d-426a-99de-52b7e7511e81)  
+ Weitere Informationen über Befehle in XAML finden Sie unter [Befehlsübersicht](https://msdn.microsoft.com/library/bc208dfe-367d-426a-99de-52b7e7511e81)  
   
 ## <a name="adding-commands-from-the-command-well"></a>Hinzufügen von Befehlen aus dem Befehl auch  
  Die Startseite im erstellt [erstellen eine benutzerdefinierte Startseite](../extensibility/creating-a-custom-start-page.md) hinzugefügt der <xref:Microsoft.VisualStudio.PlatformUI?displayProperty=fullName> und <xref:Microsoft.VisualStudio.Shell?displayProperty=fullName> Namespaces wie folgt.  
@@ -94,7 +94,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 ## <a name="adding-commands-with-the-dte-object"></a>Hinzufügen von Befehlen mit dem DTE-Objekt  
  Sie können das DTE-Objekt auf einer Startseite auf, sowohl im Markup als auch im Code zugreifen.  
   
- Im Markup, Sie können darauf zugreifen, indem mithilfe der [Binding als Markuperweiterung](http://msdn.microsoft.com/library/83d6e2a4-1b0c-4fc8-bd96-b5e98800ab63) Syntax zum Aufrufen der <xref:EnvDTE.DTE> Objekt. Sie können diesen Ansatz verwenden, um an einfache Eigenschaften, z. B. die Bindung, die Auflistungen zurückgeben, aber Sie können nicht gebunden werden, um Methoden oder Dienste. Das folgende Beispiel zeigt eine <xref:System.Windows.Controls.TextBlock> -Steuerelement, das gebunden wird die <xref:EnvDTE._DTE.Name%2A> -Eigenschaft, und ein <xref:System.Windows.Controls.ListBox> -Steuerelement, das Listet die <xref:EnvDTE.Window.Caption%2A> Eigenschaften der Auflistung, die von zurückgegeben wird die <xref:EnvDTE._DTE.Windows%2A> Eigenschaft.  
+ Im Markup, Sie können darauf zugreifen, indem mithilfe der [Binding als Markuperweiterung](https://msdn.microsoft.com/library/83d6e2a4-1b0c-4fc8-bd96-b5e98800ab63) Syntax zum Aufrufen der <xref:EnvDTE.DTE> Objekt. Sie können diesen Ansatz verwenden, um an einfache Eigenschaften, z. B. die Bindung, die Auflistungen zurückgeben, aber Sie können nicht gebunden werden, um Methoden oder Dienste. Das folgende Beispiel zeigt eine <xref:System.Windows.Controls.TextBlock> -Steuerelement, das gebunden wird die <xref:EnvDTE._DTE.Name%2A> -Eigenschaft, und ein <xref:System.Windows.Controls.ListBox> -Steuerelement, das Listet die <xref:EnvDTE.Window.Caption%2A> Eigenschaften der Auflistung, die von zurückgegeben wird die <xref:EnvDTE._DTE.Windows%2A> Eigenschaft.  
   
 ```xml  
 <TextBlock Text="{Binding Path=DTE.Name}" FontSize="12" HorizontalAlignment="Center"/>  

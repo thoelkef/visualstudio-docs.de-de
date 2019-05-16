@@ -21,12 +21,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ba48e28d5ace9dc1c07d7ec302d070d5d5f15e6
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: de804cb26eb9c51acc67445e1f1b1c0fdfabab91
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58961480"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697529"
 ---
 # <a name="publishing-clickonce-applications"></a>Veröffentlichen von ClickOnce-Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,8 +98,8 @@ Beim ersten Veröffentlichen einer [!INCLUDE[ndptecclick](../includes/ndptecclic
 |[Exemplarische Vorgehensweise: Herunterladen von Satellitenassemblys bei Bedarf mit der API für die ClickOnce-Bereitstellung](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Beschreibt, wie Sie Ihre Satellitenassemblys als optional kennzeichnen und nur die Assembly herunterladen, die ein Clientcomputer für die eigenen aktuellen Kultureinstellungen benötigt.|  
 |[Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|Erklärt, wie .NET Framework-Dienstprogramme verwendet werden, um ClickOnce-Anwendungen bereitzustellen.|  
 |[Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung, die kein erneutes Signieren erfordert und Brandinginformationen beibehält](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required?view=vs-2015)|Erklärt, wie .NET Framework-Hilfsprogramme verwendet werden, um die ClickOnce-Anwendung bereitzustellen, ohne die Manifeste neu zu signieren.|  
-|[NIB: Vorgehensweise: Optimieren einer Anwendung für einen bestimmten CPU-Typ](http://msdn.microsoft.com/294a75d2-4279-4b72-8298-2bea05be907a)|Erklärt, wie Sie die Veröffentlichung für einen 64-Bit-Prozessor durchführen, indem Sie im Projekt die Eigenschaft **Ziel-CPU** oder **Plattformziel** ändern.|  
-|[Exemplarische Vorgehensweise: Aktivieren eine ClickOnce-Anwendung zur Ausführung auf mehreren .NET Framework-Versionen](http://msdn.microsoft.com/7f4383af-ed87-4853-b4d4-02a3967a5fd9)|Erklärt, wie Sie eine ClickOnce-Anwendung so aktivieren, dass sie auf mehreren Versionen von .NET Framework installiert und ausgeführt wird.|  
+|[NIB: Vorgehensweise: Optimieren einer Anwendung für einen bestimmten CPU-Typ](https://msdn.microsoft.com/294a75d2-4279-4b72-8298-2bea05be907a)|Erklärt, wie Sie die Veröffentlichung für einen 64-Bit-Prozessor durchführen, indem Sie im Projekt die Eigenschaft **Ziel-CPU** oder **Plattformziel** ändern.|  
+|[Exemplarische Vorgehensweise: Aktivieren eine ClickOnce-Anwendung zur Ausführung auf mehreren .NET Framework-Versionen](https://msdn.microsoft.com/7f4383af-ed87-4853-b4d4-02a3967a5fd9)|Erklärt, wie Sie eine ClickOnce-Anwendung so aktivieren, dass sie auf mehreren Versionen von .NET Framework installiert und ausgeführt wird.|  
 |[Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Installers für eine ClickOnce-Anwendung](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)|Erklärt, wie Sie ein benutzerdefiniertes Installationsprogramm erstellen, um eine ClickOnce-Anwendung zu installieren.|  
 |[Vorgehensweise: Veröffentlichen einer WPF-Anwendung mit aktivierten visuellen Stilen](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)|Stellt detaillierte Anweisungen zum Auflösen eines Fehlers bereit, der angezeigt wird, wenn Sie versuchen, eine WPF-Anwendung zu veröffentlichen, bei der visuelle Stile aktiviert sind.|  
   

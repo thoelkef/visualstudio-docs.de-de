@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 945edb462b1ba849a3a1b9fd6797c8393b651163
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 64d4892080aaf0cf04e4b208b1a0bdb7a7a4480d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437686"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693577"
 ---
 # <a name="view-dom-event-listeners"></a>Anzeigen von DOM-Ereignislistenern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,9 +76,9 @@ Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.pn
      Die **Ereignisse** Registerkarte zeigt die Ereignislistener für jedes Element, das Sie in der Hierarchieliste auswählen.
 
 ### <a name="Tips"></a> Tipps zur Problembehebung bei Ereignislistenern
- In einigen app-Szenarien müssen Ereignislistener müssen entfernt werden, explizit mit [RemoveEventListener](http://msdn.microsoft.com/library/ie/ff975250\(v=vs.85\).aspx). Verwenden der **Ereignisse** Registerkarte im DOM Explorer zum Überprüfen, ob Ereignislistener beim Ausführen von Code aus dem DOM-Elemente entfernt wurden. Hier sind einige Tipps, wie diese Probleme gelöst werden können:
+ In einigen app-Szenarien müssen Ereignislistener müssen entfernt werden, explizit mit [RemoveEventListener](https://msdn.microsoft.com/library/ie/ff975250\(v=vs.85\).aspx). Verwenden der **Ereignisse** Registerkarte im DOM Explorer zum Überprüfen, ob Ereignislistener beim Ausführen von Code aus dem DOM-Elemente entfernt wurden. Hier sind einige Tipps, wie diese Probleme gelöst werden können:
 
-- Für apps, mit denen des navigationsmodells für Einzelseiten-implementiert, in der Visual Studio [Projektvorlagen](http://msdn.microsoft.com/library/windows/apps/hh758331.aspx), es ist nicht in der Regel erforderlich, um für Objekte wie DOM-Elemente, die Teil einer Seite sind, registrierte Ereignislistener zu entfernen. In diesem Szenario haben das DOM-Element und die zugehörigen Ereignislistener dieselbe Lebensdauer und können per Garbage Collection bereinigt werden.
+- Für apps, mit denen des navigationsmodells für Einzelseiten-implementiert, in der Visual Studio [Projektvorlagen](https://msdn.microsoft.com/library/windows/apps/hh758331.aspx), es ist nicht in der Regel erforderlich, um für Objekte wie DOM-Elemente, die Teil einer Seite sind, registrierte Ereignislistener zu entfernen. In diesem Szenario haben das DOM-Element und die zugehörigen Ereignislistener dieselbe Lebensdauer und können per Garbage Collection bereinigt werden.
 
 - Falls die Lebensdauer des DOM-Elements oder des Objekts kürzer oder länger ist als die des zugehörigen Ereignislisteners, müssen Sie ggf. die Methode `removeEventListener` aufrufen. Wenn Sie beispielsweise das Ereignis `window.onresize` verwenden, müssen Sie den Ereignislistener entfernen, sobald Sie zur Ereignisbehandlung weg von der Seite navigieren.
 

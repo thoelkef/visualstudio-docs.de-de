@@ -15,12 +15,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a412016f2e51415456ee1a86a1b65fccf4d70a9b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3d735544e034c397a06ba50e04160323c536b3d4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800545"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674991"
 ---
 # <a name="localizing-applications"></a>Lokalisieren von Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +44,11 @@ Die *Lokalisierung* ist der Prozess des Anpassens einer Anwendung an die jeweili
  [Einführung in internationale Anwendungen basierend auf .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
  Bespricht die Konzepte der Softwareentwicklung mithilfe von Visual Basic und Visual C#für einen internationalen Markt.  
   
- [Globalisieren von Windows Forms](http://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)  
+ [Globalisieren von Windows Forms](https://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)  
  Enthält Links zu Seiten, die Informationen zum Erstellen von Windows-Anwendungen enthalten, die mehrere Kulturen unterstützen.  
   
- [Globalisierung und Lokalisierung](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)  
+ [Globalisierung und Lokalisierung](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)  
  Enthält Links zu Seiten, die Informationen zum Erstellen von Web-Anwendungen enthalten, die mehrere Kulturen unterstützen.  
   
- [Empfehlungen für die Entwicklung weltweit einsatzfähiger Anwendungen](http://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
+ [Empfehlungen für die Entwicklung weltweit einsatzfähiger Anwendungen](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
  Enthält Informationen zum Programmieren für ein internationales Publikum, wie z.B. Entwurfsprobleme und Terminologie.

@@ -18,12 +18,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9df436b51619211c1f79e7176479c7466f3de427
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 863daa41820b8a08f6cd9a6af26c6169fcda97db
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441060"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697263"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>So definieren Sie eine domänenspezifische Sprache
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -214,7 +214,7 @@ Um eine domänenspezifische Sprache (DSL) zu definieren, erstellen Sie eine [!IN
   
 ##### <a name="to-test-the-new-domain-classes"></a>So testen Sie die neuen Domänenklassen  
   
-1. **Klicken Sie auf alle Vorlagen transformieren** auf der Symbolleiste des Projektmappen-Explorer, um den DSL-Designercode zu generieren. Dieser Schritt kann automatisiert werden. Weitere Informationen finden Sie unter [wie alle Vorlagen transformieren automatisieren](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+1. **Klicken Sie auf alle Vorlagen transformieren** auf der Symbolleiste des Projektmappen-Explorer, um den DSL-Designercode zu generieren. Dieser Schritt kann automatisiert werden. Weitere Informationen finden Sie unter [wie alle Vorlagen transformieren automatisieren](https://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 2. **Erstellen Sie und führen Sie die DSL.** Drücken Sie F5 oder STRG + F5, um eine neue Instanz der Ausführung [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] im experimentellen Modus. Öffnen oder erstellen Sie in der experimentellen Instanz von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] eine Datei mit der Dateinamenerweiterung Ihrer DSL.  
   

@@ -17,15 +17,15 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 71fdd358c03604b196b0a57a9667f40dfb92b049
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9eea79978b7b61de1e56d787b5a4cd9797be1aa6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977006"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704784"
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>Entwickeln von Anwendungen mit dem Workflow-Designer
-[!INCLUDE[wfd1](../includes/wfd1-md.md)] ist ein visueller Designer und Debugger zum grafischen Aufbau und Debugging von  [!INCLUDE[wf](../includes/wf-md.md)]-Anwendungen im [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)], das in der [!INCLUDE[vs2010](../includes/vs2010-md.md)] Entwicklungsumgebung gehostet wird. Er ermöglicht es Ihnen, durch die Verwendung von Vorlagen und Aktivitätsdesignern eine zusammengesetzte Workflowanwendung, eine Aktivitätsbibliothek oder einen [!INCLUDE[indigo1](../includes/indigo1-md.md)]-Dienst zu erstellen. [!INCLUDE[crabout](../includes/crabout-md.md)] finden Sie unter den [Windows Workflow Foundation &#91;.NET Framework 4&#93;](http://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66).  
+[!INCLUDE[wfd1](../includes/wfd1-md.md)] ist ein visueller Designer und Debugger zum grafischen Aufbau und Debugging von  [!INCLUDE[wf](../includes/wf-md.md)]-Anwendungen im [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)], das in der [!INCLUDE[vs2010](../includes/vs2010-md.md)] Entwicklungsumgebung gehostet wird. Er ermöglicht es Ihnen, durch die Verwendung von Vorlagen und Aktivitätsdesignern eine zusammengesetzte Workflowanwendung, eine Aktivitätsbibliothek oder einen [!INCLUDE[indigo1](../includes/indigo1-md.md)]-Dienst zu erstellen. [!INCLUDE[crabout](../includes/crabout-md.md)] finden Sie unter den [Windows Workflow Foundation &#91;.NET Framework 4&#93;](https://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66).  
   
  Im Folgenden werden einige neue Entwurfsfunktionen aufgeführt, durch die sich diese neue Version von [!INCLUDE[wfd2](../includes/wfd2-md.md)] von früheren Versionen von [!INCLUDE[wfd2](../includes/wfd2-md.md)] unterscheidet:  
   
@@ -65,8 +65,8 @@ ms.locfileid: "62977006"
  [Entwickeln von Workflowanwendungen, die auf .NET 3.0 oder .NET auf 3.5 Framework abzielen](../workflow-designer/developing-workflow-applications-targeting-the-dotnet-3-0-or-dotnet-3-5-framework.md)  
  Enthält Anleitungen zur Verwendung des Designers der Vorgängerversion, der auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielt.  
   
- [Designer betreffen &#91;WF-Beispiele&#93;](http://msdn.microsoft.com/library/b676ad31-5f64-4d84-9a36-b4d7113a2f4d)  
+ [Designer betreffen &#91;WF-Beispiele&#93;](https://msdn.microsoft.com/library/b676ad31-5f64-4d84-9a36-b4d7113a2f4d)  
  In diesem Beispiel wird gezeigt, wie das WPF-Layout erstellt wird, das den Designer enthalten soll.  
   
- [Benutzerdefinierte Aktivitätsdesigner](http://msdn.microsoft.com/library/dcf14dca-ce6d-4278-96ba-062f0a679075)  
+ [Benutzerdefinierte Aktivitätsdesigner](https://msdn.microsoft.com/library/dcf14dca-ce6d-4278-96ba-062f0a679075)  
  Dieser Abschnitt enthält Aktivitätsbeispiele, in denen benutzerdefinierte Designer zur Anzeige im Workflow-Designer verwendet werden.

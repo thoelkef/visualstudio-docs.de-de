@@ -25,12 +25,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 38239bd431f3e66e1a694361f3727c843fbf29d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0459168da627b8e67ad669486b70eb7758118d92
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558462"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688192"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Arbeiten mit Datasets in N-Tier-Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Daten für N-schichtige Anwendungen * sind datenorientierte Anwendungen, die in 
  [Exemplarische Vorgehensweise: Erstellen einer n-schichtigen Datenanwendung](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
  Liefert eine Schritt-für-Schritt-Anleitung für das Erstellen eines typisierten Datasets und das Aufteilen des Codes für TableAdapter und Dataset in mehrere Projekte.  
   
- [Exemplarische Vorgehensweise: Hinzufügen einer Validierung zu einer N-Tier-Datenanwendung](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
+ [Exemplarische Vorgehensweise: Hinzufügen einer Validierung zu einer N-Tier-Datenanwendung](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
  Enthält detaillierte Anweisungen zum Hinzufügen von Validierungen für die Anwendung, die in der exemplarischen Vorgehensweise Daten der n-Tier-Anwendung erstellt wurde.  
   
 ## <a name="reference"></a>Referenz  
@@ -71,4 +71,4 @@ Daten für N-schichtige Anwendungen * sind datenorientierte Anwendungen, die in 
 - [Hierarchische Aktualisierung](../data-tools/hierarchical-update.md)   
 - [Datasettools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)   
 - [Zugreifen auf Daten in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
-- [N-schichtige Anwendungen und Remoteanwendungen mit LINQ to SQL](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)
+- [N-schichtige Anwendungen und Remoteanwendungen mit LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)

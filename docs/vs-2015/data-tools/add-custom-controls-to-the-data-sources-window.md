@@ -23,12 +23,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 99bd377ac54b664424b4bd29ab2917b00dae35fa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 28476c454dc78f30e33c0b37e8319bfe5a65df2d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429108"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699388"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellenfenster
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Beim Ziehen eines Elements aus der **Datenquellen** Fenster auf eine Entwurfsobe
  Weitere Informationen zum Auswählen von datengebundenen Steuerelementen für die Erstellung für Elemente in der **Datenquellen** Fenster finden Sie unter [Festlegen des Steuerelements, das beim Ziehen aus dem Datenquellenfenster erstellt werden](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
 > [!NOTE]
-> Die angezeigten Dialogfelder und Menübefehle können sich je nach den aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen unterscheiden. So ändern Sie Ihre Einstellungen, auf die **Tools** , wählen Sie im Menü **Einstellungen importieren und exportieren**. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Die angezeigten Dialogfelder und Menübefehle können sich je nach den aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen unterscheiden. So ändern Sie Ihre Einstellungen, auf die **Tools** , wählen Sie im Menü **Einstellungen importieren und exportieren**. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="customizinglist"></a> Die Liste der bindungsfähige Steuerelemente für einen Datentyp anpassen  
  Zum Hinzufügen oder entfernen Steuerelemente aus der Liste der verfügbaren Steuerelemente für Elemente in der **Datenquellen** Fenster, das einen bestimmten Datentyp, der die folgenden Schritte ausführen zu müssen.  

@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 802ff20facead891f05ac4727d1c091d095c50a2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 26ba081e893867fcd80c7fc969301f417400d37a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442491"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679292"
 ---
 # <a name="step-6-name-your-button-controls"></a>Schritt 6: Benennen der Schaltflächen-Steuerelemente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ Form1.cs-Registerkarte mit Visual C#-Code
   
      Nachdem Sie für ein Steuerelement einen Ereignishandler hinzugefügt haben, können Sie jederzeit vom Windows Forms-Designer aus zum Steuerelement zurückkehren, indem Sie auf das Steuerelement doppelklicken oder in der Menüleiste **Ansicht**, **Code**auswählen.  
   
-     Namen sind wichtig, wenn Sie Programme erstellen, und für Methoden (und Ereignishandler) können Sie beliebige Namen verwenden. Wenn Sie mit der IDE einen Ereignishandler hinzufügen, erstellt die IDE basierend auf dem Namen des Steuerelements und des behandelten Ereignisses einen Namen. Das Click-Ereignis für eine Schaltfläche mit dem Namen **showButton** wird z. B. als `showButton_Click()` -Ereignishandlermethode bezeichnet. Normalerweise werden nach dem Methodennamen auch eine öffnende und eine schließende runde Klammer () hinzugefügt, um anzuzeigen, dass es sich um Methoden handelt. Wenn Sie einen Codevariablennamen ändern möchten, klicken Sie mit der rechten Maustaste auf die Variable im Code, und wählen Sie dann **Umgestalten**, **Umbenennen**aus. Alle Instanzen dieser Variable im Code werden umbenannt. Finden Sie unter [Umgestaltung mit Umbenennen (c#)](../csharp-ide/rename-refactoring-csharp.md) oder [Refactoring und Dialogfeld Umbenennen](http://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959) für Weitere Informationen.  
+     Namen sind wichtig, wenn Sie Programme erstellen, und für Methoden (und Ereignishandler) können Sie beliebige Namen verwenden. Wenn Sie mit der IDE einen Ereignishandler hinzufügen, erstellt die IDE basierend auf dem Namen des Steuerelements und des behandelten Ereignisses einen Namen. Das Click-Ereignis für eine Schaltfläche mit dem Namen **showButton** wird z. B. als `showButton_Click()` -Ereignishandlermethode bezeichnet. Normalerweise werden nach dem Methodennamen auch eine öffnende und eine schließende runde Klammer () hinzugefügt, um anzuzeigen, dass es sich um Methoden handelt. Wenn Sie einen Codevariablennamen ändern möchten, klicken Sie mit der rechten Maustaste auf die Variable im Code, und wählen Sie dann **Umgestalten**, **Umbenennen**aus. Alle Instanzen dieser Variable im Code werden umbenannt. Finden Sie unter [Umgestaltung mit Umbenennen (c#)](../csharp-ide/rename-refactoring-csharp.md) oder [Refactoring und Dialogfeld Umbenennen](https://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959) für Weitere Informationen.  
   
 ### <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben  
   

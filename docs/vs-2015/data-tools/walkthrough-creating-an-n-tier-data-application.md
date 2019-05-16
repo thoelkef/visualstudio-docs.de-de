@@ -17,12 +17,12 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6c4ae0082d76b4eb9e58561daec48d196438bac
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 57a370dd8fd243deba8db9b9a928202d25c7836d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424747"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675631"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Exemplarische Vorgehensweise: Erstellen einer n-schichtigen Datenanwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ N-Tier-*-Anwendungen sind Anwendungen, die auf Daten zugreifen und werden in meh
   
 - Erstellen eines typisierten DataSets mithilfe des **Assistenten zum Konfigurieren von Datenquellen**.  
   
-- Trennen von generierten [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) und Dataset-Code in einzelne Projekte.  
+- Trennen von generierten [TableAdapters](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) und Dataset-Code in einzelne Projekte.  
   
 - Erstellen eines WCF (Windows Communication Foundation)-Diensts für Aufrufe an die Datenzugriffsebene.  
   
@@ -381,7 +381,7 @@ N-Tier-*-Anwendungen sind Anwendungen, die auf Daten zugreifen und werden in meh
 ## <a name="next-steps"></a>Nächste Schritte  
  Abhängig von den Anforderungen Ihrer Anwendung können nach dem Speichern der verknüpften Daten in der Windows-Anwendung weitere Schritte sinnvoll sein. Beispielsweise können Sie der Anwendung folgende Erweiterungen hinzufügen:  
   
-- Hinzufügen der Validierung zum DataSet. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Hinzufügen einer Validierung zu einer N-Tier-Datenanwendung](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265).  
+- Hinzufügen der Validierung zum DataSet. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Hinzufügen einer Validierung zu einer N-Tier-Datenanwendung](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265).  
   
 - Hinzufügen von zusätzlichen Methoden zum Dienst für das Aktualisieren der Daten in der Datenbank.  
   

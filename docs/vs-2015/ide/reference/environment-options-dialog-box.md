@@ -12,12 +12,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dcfc73feb762ecc50412ca2dc67818e2fb60a64d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5880dbeb9f3f49f990a923fd48c27dd6167d59c8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441725"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692195"
 ---
 # <a name="environment-options-dialog-box"></a>Dialogfeld "Umgebungsoptionen"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,12 +25,12 @@ ms.locfileid: "63441725"
 Im Dialogfeld **Optionen** können Sie auf den Seiten im Ordner **Umgebung** die Anzeige und das Verhalten bestimmter Elemente in der integrierten Entwicklungsumgebung (Integrated Development Environment, IDE) steuern. Sie öffnen die Seiten im Ordner „Umgebung“, indem Sie auf der Menüleiste **Tools** und **Optionen** auswählen, und anschließend auf **Umgebung** klicken.  
   
 > [!NOTE]
-> Die auf Ihrem Computer angezeigten Dialogfelder und Menübefehle können sich abhängig von den aktiven Einstellungen und Ihrer Edition von Visual Studio von den Dialogfeldern und Menübefehlen unterscheiden, die in der Hilfe beschrieben sind. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Die auf Ihrem Computer angezeigten Dialogfelder und Menübefehle können sich abhängig von den aktiven Einstellungen und Ihrer Edition von Visual Studio von den Dialogfeldern und Menübefehlen unterscheiden, die in der Hilfe beschrieben sind. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 |Vorgehensweise|Siehe|  
 |----------------------------------|---------|  
 |Anpassen der Darstellung und des Verhaltens von Fenstern, Menüs und anderen IDE-Elementen|[Allgemein, Umgebung, Optionen (Dialogfeld)](../../ide/reference/general-environment-options-dialog-box.md)|  
-|Festlegen der Sicherheitseinstellungen für Add-Ins|[Add-In-Sicherheit, Umgebung, Dialogfeld „Optionen“](http://msdn.microsoft.com/library/f95aa7af-70a5-4323-abe5-91bd6d264f4e)|  
+|Festlegen der Sicherheitseinstellungen für Add-Ins|[Add-In-Sicherheit, Umgebung, Dialogfeld „Optionen“](https://msdn.microsoft.com/library/f95aa7af-70a5-4323-abe5-91bd6d264f4e)|  
 |Ändern der Einstellungen für das automatische Speichern und Wiederherstellen von Dateien|[AutoWiederherstellen, Umgebung, Dialogfeld „Optionen“](../../ide/reference/autorecover-environment-options-dialog-box.md)|  
 |Festlegen der Anzeige von Dokumenten und Verwaltungseinstellungen, z. B. das Verhalten von Sonstige Dateien|[Dokumente, Umgebung, Dialogfeld „Optionen“](../../ide/reference/documents-environment-options-dialog-box.md)|  
 |Legen Sie fest, wie Updates auftreten und Erweiterungen verwaltet werden.|[Erweiterungen und Updates, Umgebung, Dialogfeld „Optionen“](../../ide/reference/extensions-and-updates-environment-options-dialog-box.md)|  

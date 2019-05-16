@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9ee1e1bc8762ae21ea69db5215d4dc472858d720
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a5ca94c88a1f131065b7d5de57e9cdc200696d58
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442450"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681432"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Ändern des Stils von Objekten in Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,12 +95,12 @@ Die einfachste Möglichkeit zum Anpassen eines Objekts ist das Festlegen von Eig
  **Sehen Sie sich ein kurzes Video an:** ![Installierte Funktionen konfigurieren](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Erstellen eines Stils](https://www.youtube.com/watch?v=W8YdXDPeKdc).  
   
 ### <a name="apply-a-style-or-template-to-a-control"></a>Anwenden von Stilen oder Vorlagen für ein Steuerelement  
- Rechtsklicken Sie auf ein Objekt im Bereich [Objekte und Zeitachse](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57), wählen Sie **Vorlage bearbeiten** und dann **Ressource anwenden**.  
+ Rechtsklicken Sie auf ein Objekt im Bereich [Objekte und Zeitachse](https://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57), wählen Sie **Vorlage bearbeiten** und dann **Ressource anwenden**.  
   
  ![](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png "dc12debc-7711-47d9-84ce-10322a384397")  
   
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Wiederherstellen des Standardstils oder der Vorlage eines Steuerelements  
- Wählen Sie das Steuerelement aus, und suchen Sie im Bereich [Eigenschaften](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57) die Eigenschaft **Stil** oder **Vorlage**. Klicken Sie auf **Erweiterte Optionen** ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb") und dann im Kontextmenü auf **Zurücksetzen**.  
+ Wählen Sie das Steuerelement aus, und suchen Sie im Bereich [Eigenschaften](https://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57) die Eigenschaft **Stil** oder **Vorlage**. Klicken Sie auf **Erweiterte Optionen** ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb") und dann im Kontextmenü auf **Zurücksetzen**.  
   
 ## <a name="Visual"></a> Visuelle Zustände: Ändern der Darstellung eines Steuerelements basierend auf dessen Status  
  Steuerelemente können über unterschiedliche visuelle Darstellungen basierend auf Benutzerinteraktionen verfügen. Beispielsweise kann eine Schaltfläche grün werden, wenn ein Benutzer darauf klickt, oder Sie könnten eine Animation ausführen. Sie verkürzen oder verlängern die Zeit zwischen visuellen Zustände mithilfe von Übergängen.  

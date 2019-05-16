@@ -10,12 +10,12 @@ ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e78cefa9778e2889130f865e4c61cc8a97014db7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 885f96a4e1e43fe422c6fd9cfaa414fe5871bce1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444665"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688575"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>Analysieren von .NET Framework-Arbeitsspeicherproblemen
 Ermitteln Sie mithilfe des Analyzers für verwalteten Speicher von Visual Studio Speicherverluste und ineffiziente Arbeitsspeichernutzung in .NET Framework-Code. Die mindestens erforderliche .NET Framework-Version für den Zielcode ist .NET Framework 4.5.  
@@ -47,7 +47,7 @@ Ermitteln Sie mithilfe des Analyzers für verwalteten Speicher von Visual Studio
  ![Zurück nach oben](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Inhalt](#BKMK_Contents)  
   
 ## <a name="BKMK_Identify_a_memory_issue_in_an_app"></a> Erkennen eines Arbeitsspeicherproblems in einer app  
- Das sichtbarste Symptom von Arbeitsspeicherproblemen ist die Leistung der App, insbesondere dann, wenn die Leistung im Zeitverlauf abnimmt. Eine Verringerung der Leistung anderer Apps während der Ausführung Ihrer App kann ebenfalls auf ein Arbeitsspeicherproblem hinweisen. Wenn Sie ein Arbeitsspeicherproblem vermuten, verwenden Sie ein Tool wie Task-Manager oder [Windows Performance Monitor](http://technet.microsoft.com/library/cc749249.aspx) um weiter zu untersuchen. Schauen Sie beispielsweise, ob die Gesamtgröße des Speichers angestiegen ist, was sich aber nicht als potenzielle Quelle von Arbeitsspeicherverlusten erklären lässt:  
+ Das sichtbarste Symptom von Arbeitsspeicherproblemen ist die Leistung der App, insbesondere dann, wenn die Leistung im Zeitverlauf abnimmt. Eine Verringerung der Leistung anderer Apps während der Ausführung Ihrer App kann ebenfalls auf ein Arbeitsspeicherproblem hinweisen. Wenn Sie ein Arbeitsspeicherproblem vermuten, verwenden Sie ein Tool wie Task-Manager oder [Windows Performance Monitor](https://technet.microsoft.com/library/cc749249.aspx) um weiter zu untersuchen. Schauen Sie beispielsweise, ob die Gesamtgröße des Speichers angestiegen ist, was sich aber nicht als potenzielle Quelle von Arbeitsspeicherverlusten erklären lässt:  
   
  ![Konsistente speichervergrößerung im Ressourcenmonitor](../misc/media/mngdmem-resourcemanagerconsistentgrowth.png "MNGDMEM_ResourceManagerConsistentGrowth")  
   
@@ -56,7 +56,7 @@ Ermitteln Sie mithilfe des Analyzers für verwalteten Speicher von Visual Studio
  ![Speicherspitzen im Ressourcen-Manager](../misc/media/mngdmem-resourcemanagerspikes.png "MNGDMEM_ResourceManagerSpikes")  
   
 ## <a name="BKMK_Collect_memory_snapshots"></a> Sammeln von Momentaufnahmen des Arbeitsspeichers  
- Das arbeitsspeicheranalysetool analysiert Informationen in *Dumpdateien* , die Heapinformationen enthalten. Sie können Dumpdateien in Visual Studio erstellen oder Sie können ein Tool wie [ProcDump](http://technet.microsoft.com/sysinternals/dd996900.aspx) aus [Windows Sysinternals](http://technet.microsoft.com/sysinternals). Finden Sie unter [Was ist ein Speicherabbild, und wie erstelle ich eine?](http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx) Blog des Visual Studio Debugger Team.  
+ Das arbeitsspeicheranalysetool analysiert Informationen in *Dumpdateien* , die Heapinformationen enthalten. Sie können Dumpdateien in Visual Studio erstellen oder Sie können ein Tool wie [ProcDump](https://technet.microsoft.com/sysinternals/dd996900.aspx) aus [Windows Sysinternals](https://technet.microsoft.com/sysinternals). Finden Sie unter [Was ist ein Speicherabbild, und wie erstelle ich eine?](http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx) Blog des Visual Studio Debugger Team.  
   
 > [!NOTE]
 > Die meisten Tools können Dumpinformationen mit oder ohne vollständige Heapspeicherdaten sammeln. Die Speicheranalyse von Visual Studio erfordert vollständige Heapinformationen.  

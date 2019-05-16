@@ -16,19 +16,19 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 65e766193838060d4c856b6a530a688ef8cd2d1b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5eec821993ec1aef2f8b2ad6ad8f5109c07d1156
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62584695"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674769"
 ---
 # <a name="getting-started-with-visual-c-and-visual-basic"></a>Erste Schritte mit Visual C# und Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Auch wenn Sie noch keine Erfahrung mit Visual C# oder Microsoft Visual Basic besitzen, ist hier der richtige Ausgangspunkt für Sie. Die Reihe "Erste Schritte" umfasst eine Folge von aufeinander aufbauenden Lektionen, die Sie mit Visual C# und Visual Basic vertraut machten. Viel Spaß und viel Erfolg beim Entwickeln Ihrer Software.  
   
- Informationen zu Visual C++ finden Sie in diesen [Visual C++-Artikeln](http://msdn.microsoft.com/vstudio/hh386302.aspx).  
+ Informationen zu Visual C++ finden Sie in diesen [Visual C++-Artikeln](https://msdn.microsoft.com/vstudio/hh386302.aspx).  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Exemplarische Vorgehensweise: Erstellen einer einfachen Anwendung mit Visual C# oder Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  

@@ -8,26 +8,26 @@ ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c15b1f335129e7c749aadefaa78ee3f9c5862baa
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
-ms.translationtype: HT
+ms.openlocfilehash: 44cb171594a6d595652b3c013505927bd82f947e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "59001209"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685246"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Roslyn-Analyzer und codeabhängige Bibliothek für ImmutableArrays
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die [.NET Compiler Platform](https://github.com/dotnet/roslyn) ("Roslyn") hilft Ihnen, Code unterstützende Bibliotheken zu erstellen. Eine codeabhängige Bibliothek bietet Funktionen, die Sie verwenden können, und der Tools (Roslyn-Analysetools) können Sie die Bibliothek verwenden, auf die bestmögliche Weise oder Fehler zu vermeiden. In diesem Thema erfahren Sie, wie zum Erstellen eines Roslyn-Analyzers Praxis, um häufige Fehler abzufangen, bei Verwendung der [NIB: Unveränderliche Auflistungen](http://msdn.microsoft.com/library/33f4449d-7078-450a-8d60-d9229f66bbca) NuGet-Paket. Darüber hinaus wird veranschaulicht, wie eine Codefehlerbehebung für ein Codeproblem gefunden, die vom Analyzer bereitgestellt werden. Benutzer sehen codefehlerbehebungen in der Visual Studio-Glühbirne Benutzeroberfläche und eine Korrektur für den Code automatisch anwenden können.
+Die [.NET Compiler Platform](https://github.com/dotnet/roslyn) ("Roslyn") hilft Ihnen, Code unterstützende Bibliotheken zu erstellen. Eine codeabhängige Bibliothek bietet Funktionen, die Sie verwenden können, und der Tools (Roslyn-Analysetools) können Sie die Bibliothek verwenden, auf die bestmögliche Weise oder Fehler zu vermeiden. In diesem Thema erfahren Sie, wie zum Erstellen eines Roslyn-Analyzers Praxis, um häufige Fehler abzufangen, bei Verwendung der [NIB: Unveränderliche Auflistungen](https://msdn.microsoft.com/library/33f4449d-7078-450a-8d60-d9229f66bbca) NuGet-Paket. Darüber hinaus wird veranschaulicht, wie eine Codefehlerbehebung für ein Codeproblem gefunden, die vom Analyzer bereitgestellt werden. Benutzer sehen codefehlerbehebungen in der Visual Studio-Glühbirne Benutzeroberfläche und eine Korrektur für den Code automatisch anwenden können.
 
 ## <a name="getting-started"></a>Erste Schritte
 Sie benötigen Folgendes zum Erstellen dieses Beispiels:
 
 - Visual Studio 2015 (keine Express Edition) oder eine höhere Version. Sie können die kostenlose [Visual Studio Community Edition](https://www.visualstudio.com/products/visual-studio-community-vs)
 
-- [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Sie können auch bei der Installation von Visual Studio, Visual Studio-Erweiterbarkeitstools unter häufig verwendete Tools zum Installieren des SDK zur gleichen Zeit überprüfen. Wenn Sie Visual Studio bereits installiert haben, können Sie dieses SDK auch installieren, indem Sie auf das Hauptmenü **Datei &#124; neu &#124;Projekt...** C# im linken Navigationsbereich, klicken Sie dann auswählen und Erweiterbarkeit. Bei der Auswahl der "**installieren Sie Visual Studio-Erweiterbarkeitstools**" Breadcrumb-Projektvorlage, sie werden aufgefordert, das SDK herunterladen und installieren.
+- [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Sie können auch bei der Installation von Visual Studio, Visual Studio-Erweiterbarkeitstools unter häufig verwendete Tools zum Installieren des SDK zur gleichen Zeit überprüfen. Wenn Sie Visual Studio bereits installiert haben, können Sie dieses SDK auch installieren, indem Sie auf das Hauptmenü **Datei &#124; neu &#124;Projekt...** c# im linken Navigationsbereich, klicken Sie dann auswählen und Erweiterbarkeit. Bei der Auswahl der "**installieren Sie Visual Studio-Erweiterbarkeitstools**" Breadcrumb-Projektvorlage, sie werden aufgefordert, das SDK herunterladen und installieren.
 
-- [.NET Compiler Platform ("Roslyn") SDK](https://aka.ms/roslynsdktemplates). Sie können dieses SDK auch installieren, indem Sie auf das Hauptmenü **Datei &#124; neu &#124; Projekt...** auswählen **C#** im linken Navigationsbereich und klicken Sie dann auswählen **Erweiterbarkeit**. Bei der Auswahl "**das .NET Compiler Platform SDK herunterladen**" Breadcrumb-Projektvorlage, sie werden aufgefordert, das SDK herunterladen und installieren. Dieses SDK enthält die [Roslyn Syntax Visualizer](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer). Dieses äußerst nützliches Tool können Sie herausfinden, welcher Code Modelltypen sollten Sie in Ihr Analysemodul gesucht. Die Analyse-Infrastruktur-Aufrufe in Ihren Code für bestimmten Code-Modelltypen, damit Ihr Code nur ausgeführt wird, wenn erforderlich und kann sich nur auf die Analyse relevanten Codes konzentrieren.
+- [.NET Compiler Platform ("Roslyn") SDK](https://aka.ms/roslynsdktemplates). Sie können dieses SDK auch installieren, indem Sie auf das Hauptmenü **Datei &#124; neu &#124; Projekt...** auswählen **c#** im linken Navigationsbereich und klicken Sie dann auswählen **Erweiterbarkeit**. Bei der Auswahl "**das .NET Compiler Platform SDK herunterladen**" Breadcrumb-Projektvorlage, sie werden aufgefordert, das SDK herunterladen und installieren. Dieses SDK enthält die [Roslyn Syntax Visualizer](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer). Dieses äußerst nützliches Tool können Sie herausfinden, welcher Code Modelltypen sollten Sie in Ihr Analysemodul gesucht. Die Analyse-Infrastruktur-Aufrufe in Ihren Code für bestimmten Code-Modelltypen, damit Ihr Code nur ausgeführt wird, wenn erforderlich und kann sich nur auf die Analyse relevanten Codes konzentrieren.
 
 ## <a name="whats-the-problem"></a>Was ist das Problem?
 Angenommen, Sie eine Bibliothek mit ImmutableArray angeben (z. B. <xref:System.Collections.Immutable.ImmutableArray%601?displayProperty=fullName>) unterstützen. C#-Entwickler haben viel Erfahrung mit .NET Arrays. Allerdings dazu führen, dass aufgrund der Art der ImmutableArrays Techniken zur leistungsoptimierung und in der Implementierung verwendet werden soll, C#-Entwickler Intuitions Benutzer der Bibliothek zum Schreiben des Codes, wie nachstehend beschrieben. Darüber hinaus werden Benutzer nicht ihre Fehler bis zur Laufzeit angezeigt, die die Qualität Erfahrung ist, die sie in Visual Studio mit .NET vertraut sind.
@@ -62,9 +62,9 @@ Zunächst erstellen Sie den Analyzer zunächst herausfinden Sie, welche Art von 
 Platzieren Sie im Editor-Caretzeichen in der Zeile, die deklariert `b1`. Sehen Sie den Syntax Visualizer zeigt Sie befinden sich in einem `LocalDeclarationStatement` Knoten, der die Syntax-Struktur. Dieser Knoten verfügt über eine `VariableDeclaration`, die wiederum hat eine `VariableDeclarator`, wiederum IValidator.h ein `EqualsValueClause`, und schließlich gibt es eine `ObjectCreationExpression`. Wie Sie in der Syntax Visualizer-Struktur der Knoten klicken, werden die Syntax im Editor-Fenster hervorgehoben, damit Sie sehen, dass den Code, der von diesem Knoten dargestellt wird. Die Namen der Typen "syntaxnode" Sub übereinstimmen, die Namen, die in der C#-Grammatik verwendet wird.
 
 ## <a name="creating-the-analyzer-project"></a>Erstellen des Analyzer-Projekts
-Wählen Sie im Hauptmenü **Datei &#124; neu &#124; Projekt...** . In der **neues Projekt** Dialogfeld unter **C#** Projekte wählen Sie in der linken Navigationsleiste, Erweiterbarkeit, und wählen Sie im rechten Bereich die **Analyzer with Code Fix** Projekt Vorlage. Geben Sie einen Namen ein, und bestätigen Sie das Dialogfeld.
+Wählen Sie im Hauptmenü **Datei &#124; neu &#124; Projekt...** . In der **neues Projekt** Dialogfeld unter **c#** Projekte wählen Sie in der linken Navigationsleiste, Erweiterbarkeit, und wählen Sie im rechten Bereich die **Analyzer with Code Fix** Projekt Vorlage. Geben Sie einen Namen ein, und bestätigen Sie das Dialogfeld.
 
-Die Vorlage wird eine Datei "diagnosticanalyzer.cs" geöffnet. Wählen Sie die Registerkarte "Puffer" Editor. Diese Datei enthält eine Analyse-Klasse (gebildet aus dem Namen des Projekts gegeben haben), die abgeleitet `DiagnosticAnalyzer` (ein Roslyn-API-Typ). Die neue Klasse verfügt über eine `DiagnosticAnalyzerAttribute` deklarieren Ihr Analysemodul ist relevant für die Sprache C#, damit der Compiler ermittelt und das Analysemodul lädt.
+Die Vorlage wird eine Datei "diagnosticanalyzer.cs" geöffnet. Wählen Sie die Registerkarte "Puffer" Editor. Diese Datei enthält eine Analyse-Klasse (gebildet aus dem Namen des Projekts gegeben haben), die abgeleitet `DiagnosticAnalyzer` (ein Roslyn-API-Typ). Die neue Klasse verfügt über eine `DiagnosticAnalyzerAttribute` deklarieren Ihr Analysemodul ist relevant für die Sprache c#, damit der Compiler ermittelt und das Analysemodul lädt.
 
 ```csharp
 [DiagnosticAnalyzer(LanguageNames.CSharp)]
@@ -72,7 +72,7 @@ public class ImmutableArrayAnalyzerAnalyzer : DiagnosticAnalyzer
 {}
 ```
 
-Sie können einen Analyzer mit Visual Basic, die C#-Code abzielt implementieren und umgekehrt. Es ist noch wichtiger ist, in der DiagnosticAnalyzerAttribute auswählen, ob Ihr Analysemodul ausgerichtet, eine Sprache oder beides ist. Komplexere Analysen, die ausführliche Modellierung der Sprache erfordern, können nur eine einzelne Sprache abzielen. Wenn Ihr Analysemodul, beispielsweise nur Namen oder den Namen der öffentlichen Member überprüft, kann es möglich, common Language Model verwenden, die, das roslyn in Visual Basic und C# bietet. Z. B. FxCop wird gewarnt, dass eine Klasse implementiert <xref:System.Runtime.Serialization.ISerializable>, aber die Klasse verfügt nicht über die <xref:System.SerializableAttribute> Attribut ist unabhängig von Sprache und für Visual Basic und C#-Code funktioniert.
+Sie können einen Analyzer mit Visual Basic, die c#-Code abzielt implementieren und umgekehrt. Es ist noch wichtiger ist, in der DiagnosticAnalyzerAttribute auswählen, ob Ihr Analysemodul ausgerichtet, eine Sprache oder beides ist. Komplexere Analysen, die ausführliche Modellierung der Sprache erfordern, können nur eine einzelne Sprache abzielen. Wenn Ihr Analysemodul, beispielsweise nur Namen oder den Namen der öffentlichen Member überprüft, kann es möglich, common Language Model verwenden, die, das roslyn in Visual Basic und c# bietet. Z. B. FxCop wird gewarnt, dass eine Klasse implementiert <xref:System.Runtime.Serialization.ISerializable>, aber die Klasse verfügt nicht über die <xref:System.SerializableAttribute> Attribut ist unabhängig von Sprache und für Visual Basic und C#-Code funktioniert.
 
 ## <a name="initalizing-the-analyzer"></a>Initialisieren der Analyzer
 Scrollen Sie etwas in die `DiagnosticAnalyzer` Klasse finden Sie unter den `Initialize` Methode. Der Compiler ruft diese Methode auf, wenn eine Analyse zu aktivieren. Die Methode akzeptiert eine `AnalysisContext` -Objekt, das können Ihr Analysemodul Kontextinformationen erhalten und Registrieren von Rückrufen für Ereignisse für die Arten von Code, analysieren möchten.

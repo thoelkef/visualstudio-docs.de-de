@@ -21,12 +21,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 421360421a732935d452053630c17cda319f4b0d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5269ec74388fa9b09a4cceabad364d19409470df
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434500"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699747"
 ---
 # <a name="handle-a-concurrency-exception"></a>Behandeln einer Parallelitätsausnahme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Parallelitätsausnahmen (<xref:System.Data.DBConcurrencyException>) werden ausge
   
 4. Füllen eines Datasets mit Daten aus der Tabelle `Customers` in der Datenbank Northwind.  
   
-5. Verwenden der [Visual Database Tools](http://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) in Visual Studio den direkten Zugriff auf die `Customers` Datentabelle und einen Datensatz zu ändern.  
+5. Verwenden der [Visual Database Tools](https://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) in Visual Studio den direkten Zugriff auf die `Customers` Datentabelle und einen Datensatz zu ändern.  
   
 6. Ändern Sie den gleichen Datensatz auf einen anderen Wert, aktualisieren Sie das Dataset und versuchen Sie, die Änderungen in der Datenbank zu schreiben, was zu einem Parallelitätsfehler führt.  
   
@@ -55,7 +55,7 @@ Parallelitätsausnahmen (<xref:System.Data.DBConcurrencyException>) werden ausge
 - Zugriff auf die Beispieldatenbank Northwind mit der Berechtigung zum Durchführen von Aktualisierungen.
   
 > [!NOTE]
-> Die angezeigten Dialogfelder und Befehle im Menü angezeigten unterscheiden sich von den in der Hilfe beschriebenen, je nach Ihren aktiven Einstellungen oder die Edition, die Sie verwenden. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Die angezeigten Dialogfelder und Befehle im Menü angezeigten unterscheiden sich von den in der Hilfe beschriebenen, je nach Ihren aktiven Einstellungen oder die Edition, die Sie verwenden. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-new-project"></a>Erstellt ein neues Projekt  
  Erstellen Sie in dieser exemplarischen Vorgehensweise zunächst eine neue Windows-Anwendung.  
@@ -79,7 +79,7 @@ Parallelitätsausnahmen (<xref:System.Data.DBConcurrencyException>) werden ausge
   
 1. Auf der **Daten** Menü wählen **neue Datenquelle hinzufügen**.  
   
-     Der [Assistent zum Konfigurieren von Datenquellen](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) wird geöffnet.  
+     Der [Assistent zum Konfigurieren von Datenquellen](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) wird geöffnet.  
   
 2. Auf der **wählen Sie einen Datenquellentyp**auf **Datenbank**.  
   

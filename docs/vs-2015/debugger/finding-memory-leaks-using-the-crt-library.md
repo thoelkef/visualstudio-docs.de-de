@@ -30,12 +30,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f66abbb72e707381b30c88f88e999f502e3c7da9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 831cae8d83bc26e05b80d6948a3168a6e6a387c4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961847"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682424"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Suchen von Arbeitsspeicherverlusten mit der CRT-Bibliothek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Arbeitsspeicherverluste (definiert als Fehler beim korrekten Freigeben einer zuv
   
  Damit die CRT ordnungsgemäß funktioniert, müssen die `#include` -Anweisungen in der hier gezeigten Reihenfolge angegeben werden.  
   
- Durch Verwendung von "crtdbg.h" werden die `malloc` - und [free](http://msdn.microsoft.com/library/74ded9cf-1863-432e-9306-327a42080bb8) -Funktionen den entsprechenden Debugversionen [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb) und `free`zugeordnet, die die Speicherbelegung und -freigabe nachverfolgen. Diese Zuordnung findet nur in Debugbuilds mit `_DEBUG`statt. Releasebuilds verwenden die normalen Funktionen `malloc` und `free` .  
+ Durch Verwendung von "crtdbg.h" werden die `malloc` - und [free](https://msdn.microsoft.com/library/74ded9cf-1863-432e-9306-327a42080bb8) -Funktionen den entsprechenden Debugversionen [_malloc_dbg](https://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb) und `free`zugeordnet, die die Speicherbelegung und -freigabe nachverfolgen. Diese Zuordnung findet nur in Debugbuilds mit `_DEBUG`statt. Releasebuilds verwenden die normalen Funktionen `malloc` und `free` .  
   
  Durch die `#define` -Anweisung wird eine Basisversion der CRT-Heapfunktionen der entsprechenden Debugversion zugeordnet. Wenn Sie die `#define` -Anweisung weglassen, ist das Speicherabbild des Arbeitsspeicherverlusts weniger detailliert.  
   
@@ -67,7 +67,7 @@ Arbeitsspeicherverluste (definiert als Fehler beim korrekten Freigeben einer zuv
 _CrtDumpMemoryLeaks();  
 ```  
   
- Wenn die Anwendung über mehrere Endpunkte verfügt, ist es nicht erforderlich, manuell einen Aufruf von [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) an jedem Endpunkt einzufügen. Ein Aufruf von `_CrtSetDbgFlag` am Anfang der Anwendung führt zu einem automatischen Aufruf von `_CrtDumpMemoryLeaks` an jedem Endpunkt. Die beiden Bitfelder müssen wie hier dargestellt festgelegt werden:  
+ Wenn die Anwendung über mehrere Endpunkte verfügt, ist es nicht erforderlich, manuell einen Aufruf von [_CrtDumpMemoryLeaks](https://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) an jedem Endpunkt einzufügen. Ein Aufruf von `_CrtSetDbgFlag` am Anfang der Anwendung führt zu einem automatischen Aufruf von `_CrtDumpMemoryLeaks` an jedem Endpunkt. Die beiden Bitfelder müssen wie hier dargestellt festgelegt werden:  
   
 ```  
 _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );  
@@ -82,7 +82,7 @@ _CrtSetReportMode( _CRT_ERROR, _CRTDBG_MODE_DEBUG );
 ```  
   
 ## <a name="interpreting-the-memory-leak-report"></a>Interpretieren des Arbeitsspeicherverlust-Berichts  
- Wenn `_CRTDBG_MAP_ALLOC`nicht in der Anwendung definiert ist, zeigt [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) einen Arbeitsspeicherverlust-Bericht an, der wie folgt aussieht:  
+ Wenn `_CRTDBG_MAP_ALLOC`nicht in der Anwendung definiert ist, zeigt [_CrtDumpMemoryLeaks](https://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) einen Arbeitsspeicherverlust-Bericht an, der wie folgt aussieht:  
   
 ```  
 Detected memory leaks!  
@@ -109,7 +109,7 @@ Object dump complete.
   
 - Die Speicherbelegungsnummer (in diesem Beispiel `18` )  
   
-- Der [Blocktyp](http://msdn.microsoft.com/e2f42faf-0687-49e7-aa1f-916038354f97)(in diesem Beispiel `normal` )  
+- Der [Blocktyp](https://msdn.microsoft.com/e2f42faf-0687-49e7-aa1f-916038354f97)(in diesem Beispiel `normal` )  
   
 - Der hexadezimale Speicherbereich (in diesem Beispiel `0x00780E80` )  
   

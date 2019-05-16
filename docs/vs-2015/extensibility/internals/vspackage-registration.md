@@ -11,12 +11,12 @@ ms.assetid: ecd20da8-b04b-4141-a8f4-a2ef91dd597a
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5dab1d68b9cf3e69c2f7a4a03d6e91a4fbab1907
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a11f05edb4e7d476fdbcab82d365f9327dd4869a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440802"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685288"
 ---
 # <a name="vspackage-registration"></a>VSPackage-Registrierung
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ VSPackages müssen empfehlen [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , d
 > [!NOTE]
 > Es ist eine akzeptierte Methode während der Entwicklung von VSPackage selbstregistrierung verwenden. Allerdings [!INCLUDE[vsipprvsip](../../includes/vsipprvsip-md.md)] Partner darf nicht ihre Produkte mithilfe der Self-Registrierung als Teil des Setups ausgeliefert.  
   
- Registrierungseinträge in einer Windows Installer-Paket werden in der Regel in der Tabelle der Registrierung vorgenommen. Sie können Erweiterungen auch in der Tabelle für die Registrierung registrieren. Windows Installer bietet jedoch integrierten Unterstützung durch den Programmbezeichner (ProgId), Klasse, Erweiterung und Verb-Tabellen. Weitere Informationen finden Sie unter [Datenbanktabellen](http://msdn.microsoft.com/library/aa368259\(VS.85\).aspx).  
+ Registrierungseinträge in einer Windows Installer-Paket werden in der Regel in der Tabelle der Registrierung vorgenommen. Sie können Erweiterungen auch in der Tabelle für die Registrierung registrieren. Windows Installer bietet jedoch integrierten Unterstützung durch den Programmbezeichner (ProgId), Klasse, Erweiterung und Verb-Tabellen. Weitere Informationen finden Sie unter [Datenbanktabellen](https://msdn.microsoft.com/library/aa368259\(VS.85\).aspx).  
   
  Achten Sie darauf, dass Ihre Einträge in der Registrierung der Komponente zugeordnet sind, die für Ihre gewählte Strategie zur Seite-an-Seite geeignet ist. Registrierungseinträge für eine freigegebene Datei sollte z. B. Windows Installer-Komponente der Datei zugeordnet werden. Auch sollte Registrierungseinträge für eine Datei hängt von der Version dieser Datei der Komponente zugeordnet sein. Andernfalls installieren oder deinstallieren Sie das VSPackage für eine Version der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] konnte Ihr VSPackage in anderen Versionen unterbrechen. Weitere Informationen finden Sie unter [unterstützt mehrere Versionen von Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)  
   
@@ -58,5 +58,5 @@ VSPackages müssen empfehlen [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] , d
 - Selbstregistrierungscodes kann verweigert werden, den Zugriff auf Netzwerkressourcen, wie z. B. Bibliotheken, wenn eine Komponente ist sowohl als angegeben ausführen-aus-Source- und finden Sie in der Tabelle SelfReg. Dadurch kann die Installation der Komponente eine Administratorinstallation fehlschlägt.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Windows Installer](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)   
- [Managed Package-Registrierung](http://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
+ [Windows Installer](https://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)   
+ [Managed Package-Registrierung](https://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)

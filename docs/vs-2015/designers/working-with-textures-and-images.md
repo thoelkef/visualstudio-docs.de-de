@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3211f72b867063e07e339ff803019cb9699e94a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 89c8fd489c29fc9b352c34011349ff447e48adb4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403465"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690079"
 ---
 # <a name="working-with-textures-and-images"></a>Arbeiten mit Texturen und Bildern
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "63403465"
 Sie können die Bildbearbeitung in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zum Erstellen und Bearbeiten von Texturen und Bildern verwenden. Die Bildverarbeitung unterstützt aufwändige Textur- und Bildformate, wie solche, die in der Entwicklung von DirectX-Apps zum Einsatz kommen.  
   
 > [!NOTE]
-> Die Bildverarbeitung unterstützt keine Bilder mit geringer Farbtiefe, wie Symbole oder Cursor. Zum Erstellen oder Ändern dieses Typs Bilder können Sie die [Bildbearbeitung für Symbole](http://msdn.microsoft.com/library/586d2b8b-0348-4883-a85d-1ff0ddbf14dd) verwenden.  
+> Die Bildverarbeitung unterstützt keine Bilder mit geringer Farbtiefe, wie Symbole oder Cursor. Zum Erstellen oder Ändern dieses Typs Bilder können Sie die [Bildbearbeitung für Symbole](https://msdn.microsoft.com/library/586d2b8b-0348-4883-a85d-1ff0ddbf14dd) verwenden.  
   
 ## <a name="textures-and-images"></a>Texturen und Bilder  
  Texturen und Bilder sind, grundlegend betrachtet, nur Tabellen von Daten, die dazu dienen, visuelle Details in Apps mit grafischer Benutzeroberfläche bereitzustellen. Die Art von Detail, die von einer Textur oder einem Bild bereitgestellt wird, hängt vom Einsatzzweck ab, aber Farbmuster, Alphawerte (Transparenz), Oberflächennormale und Höhenwerte stellen gängige Beispiele dar. Der wichtigste Unterschied zwischen einer Textur und einem Bild besteht darin, dass eine Textur für die Verwendung in Kombination mit der Darstellung einer Form bestimmt ist – normalerweise einem 3D-Modell –, um ein vollständiges Objekt oder eine Szene darzustellen, während ein Bild normalerweise eine eigenständige Darstellung des Objekts oder der Szene ist.  

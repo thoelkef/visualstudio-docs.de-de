@@ -17,19 +17,19 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b3073f79cc58296b6952d610384d06648aa6ce3d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6864708d3e60898b32ba07b14939a5c3e31d897e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093474"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705137"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Erstellen und Konfigurieren von Datasets in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ein *Dataset* ist ein Satz von Objekten, die Daten aus einer Datenbank im Arbeitsspeicher speichern und Aktivieren der änderungsnachverfolgung zu unterstützen erstellen, lesen, aktualisieren und löschen (CRUD) für diese Daten ohne die Notwendigkeit, immer mit der Datenbank verbunden werden. DataSets wurden entwickelt, für einfache *Formulare über Daten* Geschäftsanwendungen. Für neue Anwendungen sollten Sie in Betracht ziehen, Entity Framework zum Speichern und Modellieren von Daten im Arbeitsspeicher zu verwenden. Um mit Datasets arbeiten, sollten Sie über Grundkenntnisse der Konzepte der Datenbank verfügen.
 
- Sie erstellen Sie eine typisierte <xref:System.Data.DataSet> Klasse in Visual Studio zur Entwurfszeit mithilfe der **Assistenten zur Datenquellenkonfiguration**. Informationen zum programmgesteuerten Erstellen von Datasets finden Sie unter [Erstellen eines Datasets](http://msdn.microsoft.com/library/57629d8f-393e-4677-8b83-29ffde27f5fc).
+ Sie erstellen Sie eine typisierte <xref:System.Data.DataSet> Klasse in Visual Studio zur Entwurfszeit mithilfe der **Assistenten zur Datenquellenkonfiguration**. Informationen zum programmgesteuerten Erstellen von Datasets finden Sie unter [Erstellen eines Datasets](https://msdn.microsoft.com/library/57629d8f-393e-4677-8b83-29ffde27f5fc).
 
 ## <a name="create-a-new-dataset-by-using-the-data-source-configuration-wizard"></a>Erstellen Sie ein neues Dataset mit dem Konfigurations-Assistenten
 
@@ -90,6 +90,6 @@ Ein *Dataset* ist ein Satz von Objekten, die Daten aus einer Datenbank im Arbeit
 
 2. Ziehen Sie eine <xref:System.Data.DataTable> -Klasse aus der **DataSet** Registerkarte die **Toolbox** auf die **Dataset-Designer**.
 
-3. Fügen Sie Spalten hinzu, um die Datentabelle zu definieren. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen von Spalten zu einer "DataTable"](http://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df).
+3. Fügen Sie Spalten hinzu, um die Datentabelle zu definieren. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen von Spalten zu einer "DataTable"](https://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df).
 
-4. Eigenständige Tabellen müssen implementieren `Fill` Logik in eigenständige Tabellen, damit Sie mit Daten gefüllt werden können. Informationen zum Füllen eigenständiger Datentabellen finden Sie unter [Auffüllen eines Datasets mit einen "DataAdapter"](http://msdn.microsoft.com/library/3fa0ac7d-e266-4954-bfac-3fbe2f913153).
+4. Eigenständige Tabellen müssen implementieren `Fill` Logik in eigenständige Tabellen, damit Sie mit Daten gefüllt werden können. Informationen zum Füllen eigenständiger Datentabellen finden Sie unter [Auffüllen eines Datasets mit einen "DataAdapter"](https://msdn.microsoft.com/library/3fa0ac7d-e266-4954-bfac-3fbe2f913153).

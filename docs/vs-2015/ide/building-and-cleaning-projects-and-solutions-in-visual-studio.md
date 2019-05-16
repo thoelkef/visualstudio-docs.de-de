@@ -23,12 +23,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef0bda55c42d384f9e7285b445e4cb3c19144289
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d447d82815046aba6383c2467c2b44c5b7d0d0f0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408429"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685717"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Erstellen und Bereinigen von Projekten und Projektmappen in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "63408429"
 Mithilfe der in diesem Thema behandelten Verfahren können Sie alle oder einige Projekte oder Projektelemente in einer Projektmappe erstellen, neu erstellen oder bereinigen. Ein ausführliches Tutorial finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer Anwendung](../ide/walkthrough-building-an-application.md).
 
 > [!NOTE]
-> In Abhängigkeit der von Ihnen gewählten Einstellungen kann sich die Benutzeroberfläche Ihrer Visual Studio Edition von dem unterscheiden, was in diesem Thema beschrieben wird. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren**, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> In Abhängigkeit der von Ihnen gewählten Einstellungen kann sich die Benutzeroberfläche Ihrer Visual Studio Edition von dem unterscheiden, was in diesem Thema beschrieben wird. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren**, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>So können Sie eine gesamte Projektmappe erstellen, neu erstellen oder bereinigen
 
@@ -110,4 +110,4 @@ Mithilfe der in diesem Thema behandelten Verfahren können Sie alle oder einige 
     - Verwenden Sie die Tasten STRG+UNTBR.
 
 ## <a name="see-also"></a>Siehe auch
- [Vorgehensweise: Anzeigen, speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md) [Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md) [kompilieren und generieren](../ide/compiling-and-building-in-visual-studio.md) [Grundlagen der Buildkonfiguration](../ide/understanding-build-configurations.md) [Debug und Release-Projektkonfigurationen](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C /C++ Referenz zur Erstellung](http://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [Devenv-Befehlszeilenschalter](../ide/reference/devenv-command-line-switches.md) [Projektmappen und Projekten](../ide/solutions-and-projects-in-visual-studio.md)
+ [Vorgehensweise: Anzeigen, speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md) [Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md) [kompilieren und generieren](../ide/compiling-and-building-in-visual-studio.md) [Grundlagen der Buildkonfiguration](../ide/understanding-build-configurations.md) [Debug und Release-Projektkonfigurationen](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C /C++ Referenz zur Erstellung](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [Devenv-Befehlszeilenschalter](../ide/reference/devenv-command-line-switches.md) [Projektmappen und Projekten](../ide/solutions-and-projects-in-visual-studio.md)

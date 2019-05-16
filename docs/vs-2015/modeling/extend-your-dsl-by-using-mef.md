@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 409021e9a88f5bedfcab9ec172f7f962c7623d3a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: be514104ebc3cd908cd9469c6b674a22f9dad401
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442258"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696187"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Erweitern von DSL mittels MEF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Sie können Ihrer domänenspezifischen Sprache (DSL) erweitern, mithilfe des Man
   
  Darüber hinaus beim Sie MEF in Ihrer DSL aktivieren, kann es einfacher für Sie einige der Features Ihrer DSL, geschrieben sein, auch wenn sie alle zusammen mit der DSL erstellt werden.  
   
- Weitere Informationen über MEF finden Sie unter [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
+ Weitere Informationen über MEF finden Sie unter [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
   
 ### <a name="to-enable-your-dsl-to-be-extended-by-mef"></a>So aktivieren Sie Ihre DSL von MEF erweitert werden  
   
@@ -376,6 +376,6 @@ namespace MefExtension
   
 ## <a name="see-also"></a>Siehe auch  
  [Versand von Visual Studio-Erweiterungen](../extensibility/shipping-visual-studio-extensions.md)   
- [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)   
+ [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)   
  [Vorgehensweise: Hinzufügen eines Drag & Drop-Handlers](../modeling/how-to-add-a-drag-and-drop-handler.md)   
  [Validierung in einer domänenspezifischen Sprache](../modeling/validation-in-a-domain-specific-language.md)

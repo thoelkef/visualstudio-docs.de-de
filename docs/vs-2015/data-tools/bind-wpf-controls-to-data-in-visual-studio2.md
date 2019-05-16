@@ -22,12 +22,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c1733d6d4e60aad10896dbd2fcad16406830b83
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e37d17cbe67bd1e4e64e306831f38996a7f93c80
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437039"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697954"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Binden von WPF-Steuerelementen an Daten in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ Sie können datengebundene erstellen [!INCLUDE[TLA#tla_titlewinclient](../includ
 
 #### <a name="to-create-a-control-that-is-bound-to-a-single-field-of-data"></a>So erstellen Sie ein Steuerelement, das an ein einzelnes Datenfeld gebunden ist
 
-1. In der **Datenquellen** Fenster, erweitern Sie ein Element, das eine Tabelle oder ein Objekt darstellt. Suchen Sie das untergeordnete Element, das die Spalte oder die Eigenschaft darstellt, an die das Steuerelement gebunden werden soll. Ein Bildbeispiel finden Sie unter [Fensters "Datenquellen"](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
+1. In der **Datenquellen** Fenster, erweitern Sie ein Element, das eine Tabelle oder ein Objekt darstellt. Suchen Sie das untergeordnete Element, das die Spalte oder die Eigenschaft darstellt, an die das Steuerelement gebunden werden soll. Ein Bildbeispiel finden Sie unter [Fensters "Datenquellen"](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
 
 2. Optional können Sie das zu erstellende Steuerelement auswählen. Jedes Element in der **Datenquellen** verfügt über ein Standardsteuerelement, das erstellt wird, wenn Sie das Element in den Designer ziehen. Das Standardsteuerelement hängt vom zugrunde liegenden Datentyp des Elements ab.
 
@@ -73,7 +73,7 @@ Sie können datengebundene erstellen [!INCLUDE[TLA#tla_titlewinclient](../includ
 
 #### <a name="to-create-a-control-that-is-bound-to-multiple-fields-of-data"></a>So erstellen Sie ein Steuerelement, das an mehrere Datenfelder gebunden ist
 
-1. In der **Datenquellen** Fenster, wählen Sie ein Element, das Sie eine Tabelle oder ein Objekt darstellt. Ein Bildbeispiel finden Sie unter [Fensters "Datenquellen"](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
+1. In der **Datenquellen** Fenster, wählen Sie ein Element, das Sie eine Tabelle oder ein Objekt darstellt. Ein Bildbeispiel finden Sie unter [Fensters "Datenquellen"](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
 
 2. Optional können Sie das zu erstellende Steuerelement auswählen. In der Standardeinstellung jedem Element im der **Datenquellen** Fenster, das eine Datentabelle oder ein Objekt darstellt. festgelegt ist, erstellen eine <xref:System.Windows.Controls.DataGrid> (wenn das Projekt .NET Framework 4 abzielt) oder <xref:System.Windows.Controls.ListView> (für frühere Versionen von .NET Framework).
 
@@ -91,7 +91,7 @@ Sie können datengebundene erstellen [!INCLUDE[TLA#tla_titlewinclient](../includ
 
 #### <a name="to-create-a-set-of-controls-that-are-bound-to-multiple-fields-of-data"></a>So erstellen Sie einen Satz von Steuerelementen, die an mehrere Datenfelder gebunden sind
 
-1. In der **Datenquellen** Fenster, wählen Sie ein Element, das Sie eine Tabelle oder ein Objekt darstellt. Ein Bildbeispiel finden Sie unter [Fensters "Datenquellen"](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
+1. In der **Datenquellen** Fenster, wählen Sie ein Element, das Sie eine Tabelle oder ein Objekt darstellt. Ein Bildbeispiel finden Sie unter [Fensters "Datenquellen"](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
 
 2. Klicken Sie auf den Dropdown-Pfeil neben dem Element, und wählen Sie **Details**.
 

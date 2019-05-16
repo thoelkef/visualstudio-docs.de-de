@@ -26,12 +26,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbbb730af965b414a907bb230a58291ec53084a3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2882434f0638d565133efd9744a94d224d39d121
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425346"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692533"
 ---
 # <a name="save-data-back-to-the-database"></a>Rückspeichern von Daten in der Datenbank
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -166,7 +166,7 @@ Zweistufiger Aktualisierungsprozess und die Bedeutung von "DataRowVersion" in ei
   
  `GetChanges` selbst gibt Sie alle geänderten Datensätze zurück. Im Gegensatz dazu, indem Sie die gewünschte übergeben <xref:System.Data.DataRowState> als Parameter an die `GetChanges` -Methode, Sie können angeben, welche Teilmengen der geänderten Datensätze werden sollen: neu hinzugefügte Datensätze, Datensätze, die zum Löschen markiert sind, abgetrennte Datensätze oder geänderte Datensätze.  
   
- Abrufen einer Teilmenge der geänderten Datensätze ist nützlich, wenn Sie Datensätze an eine andere Komponente für die Verarbeitung senden möchten. Anstatt das gesamte Dataset zu übertragen, können Sie die Kommunikation mit der anderen Komponente gering halten, indem Sie lediglich die Datensätze abrufen, die von der Komponente benötigt werden. Weitere Informationen finden Sie unter [Vorgehensweise: Abrufen von geänderten Zeilen](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
+ Abrufen einer Teilmenge der geänderten Datensätze ist nützlich, wenn Sie Datensätze an eine andere Komponente für die Verarbeitung senden möchten. Anstatt das gesamte Dataset zu übertragen, können Sie die Kommunikation mit der anderen Komponente gering halten, indem Sie lediglich die Datensätze abrufen, die von der Komponente benötigt werden. Weitere Informationen finden Sie unter [Vorgehensweise: Abrufen von geänderten Zeilen](https://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
   
 ## <a name="committing-changes-in-the-dataset"></a>Ausführen eines Commits für Änderungen in einem dataset  
  Während Sie Änderungen im Dataset vornehmen, wird die <xref:System.Data.DataRow.RowState%2A>-Eigenschaft der geänderten Zeilen festgelegt. Die ursprünglichen und aktuellen Datensatzversionen eingerichtet, verwaltet und Zweck zur Verfügung gestellt werden die <xref:System.Data.DataRowView.RowVersion%2A> Eigenschaft. Die Metadaten, die in den Eigenschaften dieser geänderten Zeilen gespeichert sind, ist für die senden die richtigen Updates an der Datenquelle erforderlich.  
@@ -219,12 +219,12 @@ Zweistufiger Aktualisierungsprozess und die Bedeutung von "DataRowVersion" in ei
   
 - In der Geschäftsschicht, indem der Anwendung Code für Datenüberprüfungen hinzugefügt wird. Dieses Vorgehen ist nur im Dataset möglich. Der DataSet-Designer bietet einige Vorteile der Back-End-Validierung, z. B. die Möglichkeit zur Überprüfung von Änderungen, wie Spalten-und Zeilenwerten geändert werden. Weitere Informationen finden Sie unter [Überprüfen von Daten in Datasets](../data-tools/validate-data-in-datasets.md).  
   
-- In der Präsentationsschicht, indem Formularen Validierungen hinzugefügt werden. Weitere Informationen finden Sie unter [User Input Validation in Windows Forms](http://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1).  
+- In der Präsentationsschicht, indem Formularen Validierungen hinzugefügt werden. Weitere Informationen finden Sie unter [User Input Validation in Windows Forms](https://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1).  
   
 - Im Back-End der Datenschicht. Daten werden an die Datenquelle, z. B. die Datenbank, gesendet, und die Datenbank kann diese Daten annehmen oder ablehnen. Bei Verwendung einer Datenbank, die hochentwickelte Datenüberprüfungsmechanismen besitzt und Fehlerinformationen bereitstellt, ist dieser Ansatz durchaus überlegenswert, da Daten unabhängig von ihrer Herkunft überprüft werden können. Allerdings kann dieser Ansatz nicht anwendungsspezifische validierungsanforderungen Rechnung tragen. Darüber hinaus kann die Datenquelle aus, überprüfen Sie die Daten dazu führen, dass in zahlreiche Roundtrips an die Datenquelle, je nachdem, wie die Auflösung der vom Back-End ausgelösten Validierungsfehler von der Anwendung behandelt.  
   
   > [!IMPORTANT]
-  > Wenn Sie Datenbefehle mit einer <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> Eigenschaft, um festgelegt wird <xref:System.Data.CommandType>, sorgfältig überprüfen, die von einem Client gesendet wird, vor der Übergabe an die Datenbank. Böswillige Benutzer könnten versuchen, veränderte oder zusätzliche SQL-Anweisungen zu senden (einzufügen), um unautorisierten Zugriff zu erhalten oder die Datenbank zu beschädigen. Bevor Sie Benutzereingaben in einer Datenbank übertragen, immer überprüfen, ob die Informationen gültig sind. Es wird empfohlen, parametrisierte Abfragen oder gespeicherte Prozeduren, die nach Möglichkeit immer zu verwenden. Weitere Informationen finden Sie unter [Übersicht über Skriptangriffe](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  > Wenn Sie Datenbefehle mit einer <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> Eigenschaft, um festgelegt wird <xref:System.Data.CommandType>, sorgfältig überprüfen, die von einem Client gesendet wird, vor der Übergabe an die Datenbank. Böswillige Benutzer könnten versuchen, veränderte oder zusätzliche SQL-Anweisungen zu senden (einzufügen), um unautorisierten Zugriff zu erhalten oder die Datenbank zu beschädigen. Bevor Sie Benutzereingaben in einer Datenbank übertragen, immer überprüfen, ob die Informationen gültig sind. Es wird empfohlen, parametrisierte Abfragen oder gespeicherte Prozeduren, die nach Möglichkeit immer zu verwenden. Weitere Informationen finden Sie unter [Übersicht über Skriptangriffe](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
   Nachdem ein Dataset geändert wurde, können Sie die Änderungen an eine Datenquelle übertragen. In den meisten Fällen rufen Sie dazu die `Update`-Methode eines TableAdapter (oder Datenadapters) auf. Die Methode durchläuft jeden Datensatz in einer Datentabelle, bestimmt, welche Art von Update erforderlich ist (zu aktualisieren, einfügen oder löschen), sofern vorhanden, und führt dann den entsprechenden Befehl.  
   
@@ -272,6 +272,6 @@ Zweistufiger Aktualisierungsprozess und die Bedeutung von "DataRowVersion" in ei
   
 ## <a name="see-also"></a>Siehe auch  
  [Aktualisieren von Daten mit einem TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)   
- [Vorbereiten der Anwendung auf den Empfang von Daten](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
+ [Vorbereiten der Anwendung auf den Empfang von Daten](https://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
  [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Überprüfen von Daten](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
+ [Überprüfen von Daten](https://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   

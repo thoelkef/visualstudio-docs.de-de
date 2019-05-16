@@ -11,17 +11,17 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c29b7e3279513e2876396abd5083c3ddefa0baf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 55142e000a22b6e45543c6fc14594a12c93f4f92
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440944"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680290"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>Verwalten von Modellen und Diagrammen unter Versionskontrolle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Verwalten Sie unterschiedliche Versionen von Modellierungsprojekten und -diagrammen, einschließlich Code Maps (DGML-Dateien), mithilfe von [Team Foundation-Versionskontrolle oder Git](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)– entweder mit lokalem Team Foundation Server oder in der Cloud mit Visual Studio Team Services.  
+Verwalten Sie unterschiedliche Versionen von Modellierungsprojekten und -diagrammen, einschließlich Code Maps (DGML-Dateien), mithilfe von [Team Foundation-Versionskontrolle oder Git](https://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)– entweder mit lokalem Team Foundation Server oder in der Cloud mit Visual Studio Team Services.  
   
  Welche Versionen von Visual Studio dieses Feature unterstützen, erfahren Sie unter [Versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -77,7 +77,7 @@ Verwalten Sie unterschiedliche Versionen von Modellierungsprojekten und -diagram
   
 - Ändern der Eigenschaften von Beziehungen, die über Paketbegrenzungen hinweg gelten  
   
-- Informationen zu Auschecksperren finden Sie unter [Auschecken und Bearbeiten von Dateien](http://msdn.microsoft.com/library/eb404d63-c448-4994-9416-3e6d50ec554a).  
+- Informationen zu Auschecksperren finden Sie unter [Auschecken und Bearbeiten von Dateien](https://msdn.microsoft.com/library/eb404d63-c448-4994-9416-3e6d50ec554a).  
   
 ##### <a name="to-move-a-diagram-file-in-or-out-of-a-project-folder"></a>So verschieben Sie eine Diagrammdatei in einen oder aus einem Projektordner  
   

@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b29ddb0e88a58fbfd924c40134305cf33a3e170b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c4ea056c48525014fffad0243dfeb4dd40a8daa3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103796"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687013"
 ---
 # <a name="how-to-serialize-symbol-information"></a>Vorgehensweise: Serialisieren von Symbolinformationen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,4 +39,4 @@ Sie können Symbole serialisieren, die zum Analysieren Ihrer Anwendung erforderl
 ## <a name="see-also"></a>Siehe auch  
  [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)   
  [Vorgehensweise: Verweisen auf Windows-Symbolinformationen](../profiling/how-to-reference-windows-symbol-information.md)   
- [Vorgehensweise: Analysierte Berichtsdateien speichern](http://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556)
+ [Vorgehensweise: Analysierte Berichtsdateien speichern](https://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556)

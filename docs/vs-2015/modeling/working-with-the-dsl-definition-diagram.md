@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fe01664694b8c4ebdf5a5edcd57d9d4fc600d6fd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bd4b15fb7c0f1cbc0630779ecef0373977bb2056
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960663"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694219"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Arbeiten mit dem DSL-Definitionsdiagramm
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,4 +75,4 @@ Das Diagramm ein [!INCLUDE[dsl](../includes/dsl-md.md)] Definition ist ein wicht
  Wenn eine domänenbeziehung abgeleitete Beziehungen verfügt über, oder wenn dies bei anderen domänenbeziehungen Beziehungen einbetten oder verweisbeziehungen ist, Sie die Beziehung als Klasse anzeigen können, indem Sie mit der rechten Maustaste in der Beziehungs, und klicken Sie dann auf **als Klasse anzeigen** . Die Beziehung mit angezeigt wird eine **Domäneneigenschaften** Depot, und zeigt die Vererbung und Beziehungen-Strukturen.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

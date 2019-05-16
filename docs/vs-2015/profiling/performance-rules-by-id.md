@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 021927c9ff109e74956507b993c1c7192d109852
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3dd28cad3036aaca1445cba7b4531580a2a44812
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756490"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691696"
 ---
 # <a name="performance-rules-by-id"></a>Leistungsregeln nach ID
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Warnung|Beschreibung|
 |[DA0006: Equals() für Werttypen überschreiben](../profiling/da0006-override-equals-parens-for-value-types.md)|Aufrufe der Equals-Methode oder der Gleichheitsoperatoren eines öffentlichen Werttyps machen einen großen Teil der Profilerstellungsdaten aus. Implementieren Sie ggf. eine effizientere Methode.|  
 |[DA0007: Vermeiden der Verwendung von Ausnahmen für die Ablaufsteuerung](../profiling/da0007-avoid-using-exceptions-for-control-flow.md)|In den Profilerstellungsdaten wurde eine Vielzahl von .NET Framework-Ausnahmehandlern aufgerufen. Verwenden Sie ggf. eine andere Kontrollflusslogik, um die Anzahl der ausgelösten Ausnahmen zu verringern.|  
 |[DA0008: Es wurden nur wenige Beispiele aufgelistet](../profiling/da0008-few-samples-collected.md)|Während der Profilerstellung wurden nur wenige Samplings gesammelt. Sie sollten eine längere Ausführung oder eine schnellere Samplingrate in Betracht ziehen, um aussagekräftigere Ergebnisse zu erzielen.|  
-|[DA0009: Hohe JIT-Zeitdauer in Prozent](http://msdn.microsoft.com/b60c1767-515c-41d9-81c2-c70d0b7024fd)|Ein großer Anteil der Ausführungszeit für die Anwendung wurde im JIT-Compiler (Just In Time) aufgewendet.|  
+|[DA0009: Hohe JIT-Zeitdauer in Prozent](https://msdn.microsoft.com/b60c1767-515c-41d9-81c2-c70d0b7024fd)|Ein großer Anteil der Ausführungszeit für die Anwendung wurde im JIT-Compiler (Just In Time) aufgewendet.|  
 |[DA0010: Speicherintensive GetHashCode-Funktionen](../profiling/da0010-expensive-gethashcode.md)|Aufrufe der GetHashCode-Methode des Typs machen einen großen Teil der Profilerstellungsdaten aus, oder die Methode belegt Arbeitsspeicher.|  
 |[DA0011: Speicherintensive CompareTo-Funktionen](../profiling/da0011-expensive-compareto.md)|Die CompareTo-Methode des Typs ist aufwändig oder belegt Arbeitsspeicher.|  
 |[DA0012: Starke Reflektion](../profiling/da0012-significant-amount-of-reflection.md)|Aufrufe der System.Reflection-Methoden (beispielsweise „InvokeMember“ oder „GetMember“) oder der Type-Methoden (beispielsweise „MemberInvoke“) machen einen großen Teil der Profilerstellungsdaten aus. Ersetzen Sie diese Methoden nach Möglichkeit durch eine frühe Bindung an Methoden abhängiger Assemblys.|  

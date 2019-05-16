@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 31bbc54b08fc053d10bd79d6a6b24e7605bc0351
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 24b874ab71cba23a3fe6cf4a6fb36293d6753935
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63384047"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697760"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>LINQ to SQL-Tools in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ LINQ to SQL war die erste objektrelationales Mapping-Technologie von Microsoft v
 
  Die [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] verfügt über zwei verschiedene Bereiche auf seiner Entwurfsoberfläche: den Entitätenbereich auf der linken Seite und den Methodenbereich auf der rechten Seite. Der Entitätenbereich ist die Hauptentwurfsoberfläche, auf der Entitätsklassen, Zuordnungen und Vererbungshierarchien angezeigt werden. Der Methodenbereich ist die Entwurfsoberfläche, auf der die <xref:System.Data.Linq.DataContext>-Methoden angezeigt werden, die gespeicherten Prozeduren und Funktionen zugeordnet sind.
 
- Die [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]) bietet eine visuelle Entwurfsoberfläche zum Erstellen von [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) -Entitätsklassen und-Zuordnungen (Beziehungen), die auf Objekte in einer Datenbank basieren. Mit anderen Worten: Der [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] wird verwendet, um in einer Anwendung ein Objektmodell zu erstellen, das den Objekten in einer Datenbank entspricht. Außerdem generiert er einen stark typisierten <xref:System.Data.Linq.DataContext>, mit dem Daten an die Entitätsklassen gesendet und aus der Datenbank empfangen werden. Der [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] stellt auch Funktionen bereit, um gespeicherte Prozeduren und Funktionen <xref:System.Data.Linq.DataContext>-Methoden zum Zurückgeben von Daten und Füllen von Entitätsklassen zuzuordnen. Abschließend bietet der [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] die Möglichkeit, Vererbungsbeziehungen zwischen Entitätsklassen zu entwerfen.
+ Die [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]) bietet eine visuelle Entwurfsoberfläche zum Erstellen von [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) -Entitätsklassen und-Zuordnungen (Beziehungen), die auf Objekte in einer Datenbank basieren. Mit anderen Worten: Der [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] wird verwendet, um in einer Anwendung ein Objektmodell zu erstellen, das den Objekten in einer Datenbank entspricht. Außerdem generiert er einen stark typisierten <xref:System.Data.Linq.DataContext>, mit dem Daten an die Entitätsklassen gesendet und aus der Datenbank empfangen werden. Der [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] stellt auch Funktionen bereit, um gespeicherte Prozeduren und Funktionen <xref:System.Data.Linq.DataContext>-Methoden zum Zurückgeben von Daten und Füllen von Entitätsklassen zuzuordnen. Abschließend bietet der [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] die Möglichkeit, Vererbungsbeziehungen zwischen Entitätsklassen zu entwerfen.
 
 ## <a name="opening-the-or-designer"></a>Öffnen des O/R-Designers
  Wählen Sie zum Hinzufügen einer LINQ to SQL-Entity-Datenmodell zu Ihrem Projekt **Projekt &#124; neues Element hinzufügen** und wählen Sie dann **LINQ to SQL-Klassen** aus der Liste der Projektelemente:
@@ -62,7 +62,7 @@ LINQ to SQL war die erste objektrelationales Mapping-Technologie von Microsoft v
  Wie andere Objekte können [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)]-Klassen die Vererbung verwenden und aus anderen Klassen abgeleitet werden. Vererbungsbeziehungen werden in einer Datenbank auf verschiedene Arten erstellt. Der [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] unterstützt das häufig in relationalen Systemen implementierte Konzept der Vererbung einer einzelnen Tabelle. Weitere Informationen finden Sie unter [Vorgehensweise: Configure inheritance by using the O/R Designer (Vorgehensweise: Konfigurieren der Vererbung mit dem O/R-Designer)](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md).
 
 ## <a name="linq-to-sql-queries"></a>LINQ to SQL-Abfragen
- Die Entitätsklassen erstellt die [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] dienen zur Verwendung mit [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d). Weitere Informationen finden Sie unter [Vorgehensweise: Abfragen von Informationen](http://msdn.microsoft.com/library/e538d288-2070-40ca-9da6-4fbc68cd6ad0).
+ Die Entitätsklassen erstellt die [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] dienen zur Verwendung mit [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d). Weitere Informationen finden Sie unter [Vorgehensweise: Abfragen von Informationen](https://msdn.microsoft.com/library/e538d288-2070-40ca-9da6-4fbc68cd6ad0).
 
 ## <a name="separating-the-generated-datacontext-and-entity-class-code-into-different-namespaces"></a>Trennen des generierten DataContext und des Entitätsklassencodes in verschiedene Namespaces
  Die [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] bietet die **Kontext Namespace** und **Entity Namespace** Eigenschaften für die <xref:System.Data.Linq.DataContext>. Mit diesen Eigenschaften wird festgelegt in welchen Namespace der <xref:System.Data.Linq.DataContext> und der Entitätsklassencode generiert werden. Standardmäßig sind diese Eigenschaften leer, und der <xref:System.Data.Linq.DataContext> und die Entitätsklassen werden in den Namespace der Anwendung generiert. Geben Sie einen Wert in die Eigenschaften **Context Namespace** und/oder **Entity Namespace** ein, um den Code in einem anderen Namespace als dem der Anwendung zu generieren.
@@ -100,4 +100,4 @@ LINQ to SQL war die erste objektrelationales Mapping-Technologie von Microsoft v
  <xref:System.Data.Linq>
 
 ## <a name="see-also"></a>Siehe auch
- [Visual Studio-Datentools für .NET](../data-tools/visual-studio-data-tools-for-dotnet.md) [häufig gestellte Fragen](http://msdn.microsoft.com/library/252ed666-0679-4eea-b71b-2f14117ef443) [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) [Datenzugriff in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
+ [Visual Studio-Datentools für .NET](../data-tools/visual-studio-data-tools-for-dotnet.md) [häufig gestellte Fragen](https://msdn.microsoft.com/library/252ed666-0679-4eea-b71b-2f14117ef443) [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) [Datenzugriff in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

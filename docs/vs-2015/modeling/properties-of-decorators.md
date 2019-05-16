@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 288e0e4d017302a41b3267a3ae751573ab849b64
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d9cd07ed41e39c931e67f43f1c77ff8bd56b2eb3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955506"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701777"
 ---
 # <a name="properties-of-decorators"></a>Eigenschaften von Decorators
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,4 +69,4 @@ Decorator-Elemente sind Symbole, Text oder Chevrons erweitern/reduzieren, die Fo
 |Position|Die Standardposition des Decorator-Elements.|TargetBottom|  
   
 ## <a name="see-also"></a>Siehe auch  
- [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

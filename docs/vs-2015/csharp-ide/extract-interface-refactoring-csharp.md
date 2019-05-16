@@ -16,19 +16,19 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 55b24facd3a9ec935277a42c211a64d824ed6d7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: deb2e446ff051b52e9c34d28abfa99436c064ad6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116744"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680905"
 ---
 # <a name="extract-interface-refactoring-c"></a>Refactoring „Schnittstelle extrahieren“ (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Schnittstelle extrahieren wird eine Umgestaltungsvorgang, der können eine einfache Möglichkeit zum Erstellen einer neuen Schnittstelle mit Elementen, die aus einer vorhandenen-Klasse, Struktur oder Schnittstelle stammen.  
   
- Wenn mehrere Clients die gleiche Teilmenge von Elementen aus einer Klasse, Struktur oder Schnittstelle verwenden, oder mehrere Klassen, Strukturen oder Schnittstellen eine Teilmenge von Elementen gemeinsam haben, kann es nützlich, um die Teilmenge von Elementen in einer Schnittstelle enthalten sein. Weitere Informationen zur Verwendung von Schnittstellen finden Sie unter [Schnittstellen](http://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37).  
+ Wenn mehrere Clients die gleiche Teilmenge von Elementen aus einer Klasse, Struktur oder Schnittstelle verwenden, oder mehrere Klassen, Strukturen oder Schnittstellen eine Teilmenge von Elementen gemeinsam haben, kann es nützlich, um die Teilmenge von Elementen in einer Schnittstelle enthalten sein. Weitere Informationen zur Verwendung von Schnittstellen finden Sie unter [Schnittstellen](https://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37).  
   
  Schnittstelle extrahieren eine Schnittstelle in einer neuen Datei generiert und platziert den Cursor am Anfang der neuen Datei. Sie können angeben, welche Member in die neue Benutzeroberfläche, den Namen der neuen Schnittstelle und den Namen der generierten Datei extrahieren der **Schnittstelle extrahieren** Dialogfeld.  
   

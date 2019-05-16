@@ -10,12 +10,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6e655cf78db50f4fbd590c16dfa6561cbe376b83
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 96676ee8021e09a5e7d0a9808cea1e615f58717a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083958"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679835"
 ---
 # <a name="signing-in-to-visual-studio"></a>Anmelden bei Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Sie können Ihre Bereitstellungsumgebung in Visual Studio personalisieren und op
 
 - **Vielzahl von Vorteilen** des Visual Studio Dev Essentials-Programms, u. a. kostenlose Software, Trainings und Support. Weitere Informationen finden Sie unter [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) .
 
-- **Synchronisiert die Visual Studio-Einstellungen** – Einstellungen, die Sie anpassen, beispielsweise Tastaturzuordnungen, Fensterlayout und Farbschema, werden sofort übernommen, wenn Sie sich bei Visual Studio auf einem Gerät anmelden. Weitere Informationen finden Sie unter [Synchronisierte Einstellungen in Visual Studio](http://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
+- **Synchronisiert die Visual Studio-Einstellungen** – Einstellungen, die Sie anpassen, beispielsweise Tastaturzuordnungen, Fensterlayout und Farbschema, werden sofort übernommen, wenn Sie sich bei Visual Studio auf einem Gerät anmelden. Weitere Informationen finden Sie unter [Synchronisierte Einstellungen in Visual Studio](https://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
 
 - **Entsperrt Visual Studio Express Edition dauerhaft** – Sie können jede Edition von Visual Studio Express so lange Sie möchten nutzen. Es findet keine Begrenzung auf den Testzeitraum von 30 Tagen statt.
 

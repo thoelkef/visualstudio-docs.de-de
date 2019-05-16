@@ -22,23 +22,23 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8319e4e71b313e0c4614f720cb371b339c09d391
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b6fb31449dbbe56416f2f6c3f31142638d90d366
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784774"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674952"
 ---
 # <a name="managing-application-resources-net"></a>Verwalten von Anwendungsressourcen (.NET)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ressourcendateien sind Dateien, die Teil einer Anwendung sind, jedoch noch nicht kompiliert sind, beispielsweise Symboldateien oder Audiodateien. Da diese Dateien nicht Teil des Kompilierungsprozesses sind, können Sie sie ändern, ohne Ihre Binärdateien neu zu kompilieren. Wenn Sie beabsichtigen, die Anwendung zu lokalisieren, verwenden Sie beim Lokalisieren Ressourcendateien für alle Zeichenfolgen und anderen Ressourcen, die geändert werden müssen.  
   
- Weitere Informationen zu Ressourcen in .NET-Desktopanwendungen finden Sie unter [Ressourcen in Desktopanwendungen](http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890). Weitere Informationen zu Ressourcen in C++-Desktop-Apps finden Sie unter [Working with Resource Files](http://msdn.microsoft.com/library/2699a539-b369-4b78-80f0-df03eb7b6780).  
+ Weitere Informationen zu Ressourcen in .NET-Desktopanwendungen finden Sie unter [Ressourcen in Desktopanwendungen](https://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890). Weitere Informationen zu Ressourcen in C++-Desktop-Apps finden Sie unter [Working with Resource Files](https://msdn.microsoft.com/library/2699a539-b369-4b78-80f0-df03eb7b6780).  
   
  Windows Store-Apps verwendet ein anderes Ressourcenmodell von Desktop-Apps. Weitere Informationen zu Ressourcen in Windows Store-Apps finden Sie auf der Windows Developer Center-Website unter [Definieren von App-Ressourcen](https://msdn.microsoft.com/library/windows/apps/hh465228.aspx) .  
   
 ## <a name="working-with-resources"></a>Arbeiten mit Ressourcen  
  Öffnen Sie in einem Projekt mit verwaltetem Code das Projekteigenschaftenfenster (klicken Sie mit der rechten Maustaste auf den Projektknoten im **Projektmappen-Explorer** , und wählen Sie **Eigenschaften**aus, geben Sie **Projekteigenschaften** im Fenster **Schnellstart** ein, oder drücken Sie innerhalb des Fensters **Projektmappen-Explorer** ALT+EINGABE). Wählen Sie die Registerkarte **Ressourcen** aus. Sie können eine RESX-Datei hinzufügen, wenn das Projekt noch keine enthält, verschiedene Arten von Ressourcen hinzufügen und löschen und vorhandene Ressourcen ändern.  
   
- Erfahren Sie, wie zum Arbeiten mit Ressourcen in C++-Projekten finden Sie unter [Vorgehensweise: Erstellen einer Ressource](http://msdn.microsoft.com/library/aad44914-9145-45a3-a7d8-9de89b366716)
+ Um herauszufinden, wie Sie arbeiten mit Ressourcen in C++ -Projekten finden Sie unter [Vorgehensweise: Erstellen Sie eine Ressource](https://msdn.microsoft.com/library/aad44914-9145-45a3-a7d8-9de89b366716).

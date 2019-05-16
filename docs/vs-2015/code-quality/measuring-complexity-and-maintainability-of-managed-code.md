@@ -19,12 +19,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 677af3ccbad28ed4eca3db2f98b82ef432b48676
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e1f2ee066e448c0c039c4288c39aa13a646bc46a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956390"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697459"
 ---
 # <a name="measuring-complexity-and-maintainability-of-managed-code"></a>Messen von Komplexität und Verwaltbarkeit verwalteten Codes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,12 +42,12 @@ Die höhere Komplexität der modernen Anwendungen erhöht sich auch die Schwieri
   
  [Arbeiten mit Codemetrikdaten](../code-quality/working-with-code-metrics-data.md)  
   
- [Vorgehensweise: Codemetrikergebnisse in die Zwischenablage kopieren](http://msdn.microsoft.com/bce8fa29-e39c-4855-aab9-8346257657c5)  
+ [Vorgehensweise: Codemetrikergebnisse in die Zwischenablage kopieren](https://msdn.microsoft.com/bce8fa29-e39c-4855-aab9-8346257657c5)  
   
- [Vorgehensweise: Codemetrikergebnissen nach Excel exportieren](http://msdn.microsoft.com/affc08f3-24e5-446d-9076-bf517663e582)  
+ [Vorgehensweise: Codemetrikergebnissen nach Excel exportieren](https://msdn.microsoft.com/affc08f3-24e5-446d-9076-bf517663e582)  
   
- [Vorgehensweise: Erstellen Sie eine Arbeitsaufgabe basierend auf ein Ergebnis](http://msdn.microsoft.com/9016393b-b5a3-4d6b-ab6d-f80bafafc0da)  
+ [Vorgehensweise: Erstellen Sie eine Arbeitsaufgabe basierend auf ein Ergebnis](https://msdn.microsoft.com/9016393b-b5a3-4d6b-ab6d-f80bafafc0da)  
   
 ## <a name="see-also"></a>Siehe auch  
  [Problembehandlung für Codemetrikfehler](../code-quality/troubleshooting-code-metrics-issues.md)   
- [Allgemeine Entwicklungsaufgaben ausführen](http://msdn.microsoft.com/4cd9702a-1e21-4f2d-8e86-e1be4bc74f0b)
+ [Allgemeine Entwicklungsaufgaben ausführen](https://msdn.microsoft.com/4cd9702a-1e21-4f2d-8e86-e1be4bc74f0b)

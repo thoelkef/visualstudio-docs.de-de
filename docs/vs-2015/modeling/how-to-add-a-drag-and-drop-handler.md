@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d0f53e589f34fafd2514aa71efdaa16cfe3bc21
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: fe17c72463d58cb4e1ac0a76d904416559ed224b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117667"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690550"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Vorgehensweise: Hinzufügen eines Drag & Drop-Handlers
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,7 +89,7 @@ using System.Linq;
   Definieren Sie `IsAcceptableDropItem(e)`, um zu bestimmen, ob das gezogene Element akzeptiert werden kann, und "ProcessDragDropItem(e)", um das Modell zu aktualisieren, wenn das Element abgelegt wird. Diese Methoden müssen das Element zuerst aus den Ereignisargumenten extrahieren. Informationen dazu, wie Sie dies tun, finden Sie unter [Gewusst wie: Abrufen eines Verweises auf das gezogene Element](#extracting).  
   
 ## <a name="MEF"></a> Definieren von Gestenhandlern mit MEF  
- Mit MEF (Managed Extensibility Framework) können Sie Komponenten definieren, die mit minimaler Konfiguration installiert werden können. Weitere Informationen finden Sie unter [Übersicht über das Managed Extensibility Framework](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
+ Mit MEF (Managed Extensibility Framework) können Sie Komponenten definieren, die mit minimaler Konfiguration installiert werden können. Weitere Informationen finden Sie unter [Übersicht über das Managed Extensibility Framework](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
   
 #### <a name="to-define-a-mef-gesture-handler"></a>So definieren Sie einen MEF-Gestenhandler  
   

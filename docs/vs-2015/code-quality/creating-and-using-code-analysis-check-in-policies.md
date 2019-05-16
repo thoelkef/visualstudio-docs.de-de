@@ -11,12 +11,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 274aa497e004ddafee9a56b028f3001bb8deb630
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3a8015eb672e87431a1d225221ff2321c41e041a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437087"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697050"
 ---
 # <a name="creating-and-using-code-analysis-check-in-policies"></a>Erstellen und Verwenden von Eincheckrichtlinien für die Codeanalyse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,6 +44,6 @@ Bei Verwendung der Team Foundation-Versionskontrolle (TFVC) können Sie für .NE
  Erläutert die Vorgehensweise zum Hinzufügen von Wörtern und Token zu dem Wörterbuch, auf das in den Benennungsregeln für die Codeanalyse verwiesen wird.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
- [Festlegen und Erzwingen von Quality Gates](http://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)  
+ [Festlegen und Erzwingen von Quality Gates](https://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)  
   
  [Verbessern der Codequalität mit Eincheckrichtlinien für das Teamprojekt](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)

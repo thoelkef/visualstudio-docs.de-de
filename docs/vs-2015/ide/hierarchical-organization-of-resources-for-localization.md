@@ -19,12 +19,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: baa86408ca681d65266cb5dae3fe2bf9fca8f97c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 02f136fa0daa23484e31deab8f138a02b8a0b592
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62584591"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704348"
 ---
 # <a name="hierarchical-organization-of-resources-for-localization"></a>Hierarchische Organisation der Ressourcen für die Lokalisierung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,5 +54,5 @@ In Visual Studio werden lokalisierte Ressourcen (kulturspezifische Daten wie Zei
  [Sicherheit und lokalisierte Satellitenassemblys](../ide/security-and-localized-satellite-assemblies.md)   
  [Lokalisieren von Anwendungen](../ide/localizing-applications.md)   
  [Globalisieren und Lokalisieren von Anwendungen](../ide/globalizing-and-localizing-applications.md)   
- [Vorgehensweise: Festlegen der Kultur und Benutzeroberflächenkultur für Windows Forms-Lokalisierung](http://msdn.microsoft.com/694e049f-0b91-474a-9789-d35124f248f0)   
- [Vorgehensweise: Festlegen der Kultur und Benutzeroberflächenkultur für die Globalisierung von ASP.NET-Webseiten](http://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0)
+ [Vorgehensweise: Festlegen der Kultur und Benutzeroberflächenkultur für Windows Forms-Lokalisierung](https://msdn.microsoft.com/694e049f-0b91-474a-9789-d35124f248f0)   
+ [Vorgehensweise: Festlegen der Kultur und Benutzeroberflächenkultur für die Globalisierung von ASP.NET-Webseiten](https://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0)

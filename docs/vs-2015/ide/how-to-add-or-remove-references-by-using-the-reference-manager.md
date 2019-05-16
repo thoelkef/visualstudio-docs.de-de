@@ -23,12 +23,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8d7d4524f1839179ac253265d95f191caf1c50af
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 54d64fd59e71b582548aa5efade8d45a24ddb560
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445673"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701155"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Vorgehensweise: Hinzufügen oder Entfernen von verweisen mit dem Verweis-Manager
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ Sie können das Dialogfeld **Verweis-Manager** verwenden, um Verweise auf Kompon
   
 - Eine Komponente, für die [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] verwendet wird, ist nicht kompatibel mit einem Projekt, für das als Zielversion [!INCLUDE[net_v45](../includes/net-v45-md.md)] festgelegt wurde.  
   
-     Wenn Sie eine neue Anwendung erstellen, wird für einige Projekte standardmäßig als Zielversion [!INCLUDE[net_v45](../includes/net-v45-md.md)] festgelegt. Weitere Informationen finden Sie unter [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).  
+     Wenn Sie eine neue Anwendung erstellen, wird für einige Projekte standardmäßig als Zielversion [!INCLUDE[net_v45](../includes/net-v45-md.md)] festgelegt. Weitere Informationen finden Sie unter [.NET Framework Client Profile](https://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).  
   
 - Sie sollten keine Dateiverweise auf Ausgaben eines anderen Projekts in derselben Projektmappe hinzufügen, da dies zu Kompilierungsfehlern führen kann. Erstellen Sie Verweise zwischen Projekten stattdessen im Dialogfeld **Verweis hinzufügen** auf der Registerkarte **Projekte**. Dies erleichtert die Entwicklung im Team, da die in den Projekten erstellten Klassenbibliotheken besser verwaltet werden können. Weitere Informationen finden Sie unter [Problembehandlung bei fehlerhaften Verweisen](../ide/troubleshooting-broken-references.md).  
   
@@ -173,7 +173,7 @@ Sie können das Dialogfeld **Verweis-Manager** verwenden, um Verweise auf Kompon
 </PropertyGroup>  
 ```  
   
- Vergessen Sie nicht, das Kontrollkästchen **Windows** in dieser Untergruppe zu aktivieren. Anschließend können Windows-Runtime-Elemente verwendet werden. Allerdings sollten Sie auch System.Runtime hinzufügen. Die Windows-Runtime definiert einige Standardklassen und Schnittstellen (beispielsweise IEnumerable ), die in Windows Runtime-Bibliotheken verwendet werden. Informationen über das Hinzufügen von System.Runtime finden Sie unter [Verwaltete Desktop-Apps und Windows-Runtime](http://msdn.microsoft.com/library/windows/apps/jj856306.aspx#consuming_standard_windows_runtime_types).  
+ Vergessen Sie nicht, das Kontrollkästchen **Windows** in dieser Untergruppe zu aktivieren. Anschließend können Windows-Runtime-Elemente verwendet werden. Allerdings sollten Sie auch System.Runtime hinzufügen. Die Windows-Runtime definiert einige Standardklassen und Schnittstellen (beispielsweise IEnumerable ), die in Windows Runtime-Bibliotheken verwendet werden. Informationen über das Hinzufügen von System.Runtime finden Sie unter [Verwaltete Desktop-Apps und Windows-Runtime](https://msdn.microsoft.com/library/windows/apps/jj856306.aspx#consuming_standard_windows_runtime_types).  
   
 ### <a name="extensions-subgroup"></a>Erweiterungsuntergruppe  
  Erweiterungen listen die Benutzer-SDKs auf, die die als Ziel verwendete Windows-Plattform erweitern. Diese Registerkarte wird nur für [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]-App-Projekte angezeigt. Desktopprojekte zeigen diese Registerkarte nicht an, da sie nur WINMD-Dateien von Erstanbietern nutzen können.  
@@ -216,5 +216,5 @@ Sie können das Dialogfeld **Verweis-Manager** verwenden, um Verweise auf Kompon
  Die Suchleiste im Dialogfeld **Verweis-Manager** funktioniert über die Registerkarte, die sich im Fokus befindet. Wenn beispielsweise ein Benutzer „System“ in der Suchleiste eingibt, während die Registerkarte **Projektmappe** im Fokus ist, gibt die Suche keine Ergebnisse zurück, es sei denn, die Projektmappe umfasst einen Projektnamen, der das Wort „System“ enthält.  
   
 ## <a name="see-also"></a>Siehe auch  
- [NIB: Vorgehensweise: Hinzufügen oder Entfernen von verweisen mithilfe des Dialogfelds "Verweis" hinzufügen "](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
+ [NIB: Vorgehensweise: Hinzufügen oder Entfernen von verweisen mithilfe des Dialogfelds "Verweis" hinzufügen "](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
  [Verwalten von Verweisen in einem Projekt](../ide/managing-references-in-a-project.md)

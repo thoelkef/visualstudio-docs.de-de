@@ -15,12 +15,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 11e1d9614c4f2a512c56f84117d28363e80c6b90
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 93bf7f17f77008ce8e9898c1871926edf2e8439f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048100"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694769"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305: IFormatProvider angeben.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,4 +78,4 @@ ms.locfileid: "60048100"
  [CA1304: CultureInfo angeben](../code-quality/ca1304-specify-cultureinfo.md)
 
 ## <a name="see-also"></a>Siehe auch
- [NIB: Verwenden der CultureInfo-Klasse](http://msdn.microsoft.com/d4329e34-64c3-4d1e-8c73-5b0ee626ba7a)
+ [NIB: Verwenden der CultureInfo-Klasse](https://msdn.microsoft.com/d4329e34-64c3-4d1e-8c73-5b0ee626ba7a)

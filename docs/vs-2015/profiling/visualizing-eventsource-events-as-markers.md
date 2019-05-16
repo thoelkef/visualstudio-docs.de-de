@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ffbd5568d35b59e262577102a9368089fdcac6be
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a8cd0f0e5a420155cfc6786e4a8542bc59f93ece
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431094"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690215"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>Visualisieren von EventSource-Ereignissen als Marker
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ Mit der Nebenläufigkeitsschnellansicht können EventSource-Ereignisse als Marke
   
 ### <a name="marker-type"></a>Markertyp  
   
-1. Ereignisse mit dem [Opcode](http://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) win:Start oder win:Stop werden als Anfang bzw. Ende eines Bereichs behandelt.  Geschachtelte oder überlappende Bereiche können nicht angezeigt werden. Ereignispaare, die mit einem Thread beginnen und mit einem anderen enden, können nicht angezeigt werden.  
+1. Ereignisse mit dem [Opcode](https://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) win:Start oder win:Stop werden als Anfang bzw. Ende eines Bereichs behandelt.  Geschachtelte oder überlappende Bereiche können nicht angezeigt werden. Ereignispaare, die mit einem Thread beginnen und mit einem anderen enden, können nicht angezeigt werden.  
   
-2. Ein Ereignis, mit einem anderen Opcode als win:Start oder win:Stop wird als Flag-Marker behandelt, sofern für die [Ebene](http://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (Feld EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) nicht win:Verbose oder höher festgelegt ist.  
+2. Ein Ereignis, mit einem anderen Opcode als win:Start oder win:Stop wird als Flag-Marker behandelt, sofern für die [Ebene](https://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (Feld EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) nicht win:Verbose oder höher festgelegt ist.  
   
 3. In allen anderen Fällen wird das Ereignis als Meldung behandelt.  
   

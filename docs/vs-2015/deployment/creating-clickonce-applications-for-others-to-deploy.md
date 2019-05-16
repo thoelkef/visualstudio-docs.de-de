@@ -25,12 +25,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 049d557959a53c00be461a2b0e44338216c7e3a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ff76fe46f07ef713cb3c0e529e8029730450f2a6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958513"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675603"
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Erstellen von ClickOnce-Anwendungen für die Bereitstellung durch Dritte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Beim Versuch, die Anwendungen selbst bereitstellen, ist nicht für alle Entwickl
 ## <a name="creating-customer-deployments-by-using-application-manifest-for-trust"></a>Erstellen von Bereitstellungen von Kunden mithilfe von Anwendungsmanifest für die Vertrauensstellung  
  ClickOnce in .NET Framework 3.5 enthält ein neues Feature, das Entwicklern und Kunden erhalten eine neue Projektmappe auf das Szenario wie die Manifeste signiert werden sollen. Das ClickOnce-Anwendungsmanifest unterstützt ein neues Element mit dem Namen `<useManifestForTrust>` , ermöglicht, dass ein Entwickler, der besagt, dass die digitale Signatur des Anwendungsmanifests ist, was zum treffen von Entscheidungen über Vertrauensstellungen verwendet werden sollte. Der Entwickler mithilfe von Tools zum Packen von ClickOnce, z. B. Mage.exe und MageUI.exe, Visual Studio – dieses Element im Anwendungsmanifest enthalten, sowie sowohl den Herausgebernamen als auch den Namen der Anwendung im Manifest einbetten.  
   
- Bei Verwendung `<useManifestForTrust>`, das Bereitstellungsmanifest muss nicht mit einem Authenticode-Zertifikat ausgestellt, die von einer Zertifizierungsstelle signiert werden. Stattdessen können sie mit ein selbst signiertes Zertifikat sogenannten signiert werden. Ein selbst signiertes Zertifikat ist entweder vom Kunden oder der Entwickler mithilfe von .NET Framework SDK-Standardtools vom verwendet zu werden, und klicken Sie dann auf das Bereitstellungsmanifest mit den Standardtools der ClickOnce-Bereitstellung angewendet werden. Weitere Informationen finden Sie unter [Makecert.exe (Certificate Creation-Tool)](http://msdn.microsoft.com/library/b0343f8e-9c41-4852-a85c-f8a0c408cf0d).  
+ Bei Verwendung `<useManifestForTrust>`, das Bereitstellungsmanifest muss nicht mit einem Authenticode-Zertifikat ausgestellt, die von einer Zertifizierungsstelle signiert werden. Stattdessen können sie mit ein selbst signiertes Zertifikat sogenannten signiert werden. Ein selbst signiertes Zertifikat ist entweder vom Kunden oder der Entwickler mithilfe von .NET Framework SDK-Standardtools vom verwendet zu werden, und klicken Sie dann auf das Bereitstellungsmanifest mit den Standardtools der ClickOnce-Bereitstellung angewendet werden. Weitere Informationen finden Sie unter [Makecert.exe (Certificate Creation-Tool)](https://msdn.microsoft.com/library/b0343f8e-9c41-4852-a85c-f8a0c408cf0d).  
   
  Verwenden ein selbstsigniertes Zertifikat für das Bereitstellungsmanifest bietet mehrere Vorteile. Durch den Wegfall des Kunden zum Abrufen oder erstellen ihre eigenen Authenticode-Zertifikat, `<useManifestForTrust>` vereinfacht die Bereitstellung für den Kunden, während den Entwickler, ihre eigenen branding Identität für die Anwendung zu erhalten. Das Ergebnis ist eine Reihe von signierten Bereitstellungen, die sicherer und verfügen über eindeutige Identitäten. Dadurch werden Konflikte, die von der Bereitstellung von der gleichen Anwendung für mehrere Kunden auftreten kann.  
   

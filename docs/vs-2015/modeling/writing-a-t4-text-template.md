@@ -13,12 +13,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b3517322087c940636be07f50a013fe79307f0b7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1e2f40421c2b59e61de1560619422491a37ed8d8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446718"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684701"
 ---
 # <a name="writing-a-t4-text-template"></a>Schreiben einer T4-Textvorlage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -197,7 +197,7 @@ private void WriteSquareLine(int i)
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>  
 ```  
   
- Eine Liste der Makros finden Sie unter [gängige Makros für Buildbefehle und-Eigenschaften](http://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b).  
+ Eine Liste der Makros finden Sie unter [gängige Makros für Buildbefehle und-Eigenschaften](https://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b).  
   
  Die Assembly-Anweisung hat keine Auswirkung, in einem [vorverarbeiteten Textvorlage](../modeling/run-time-text-generation-with-t4-text-templates.md).  
   
@@ -264,7 +264,7 @@ Content of MyFile.txt is:
   
 ```  
   
- Sie können auch andere Dienste empfangen, die vom Host bereitgestellt werden. Weitere Informationen finden Sie unter [den Zugriff auf Visual Studio oder andere Hosts aus einer Vorlage](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
+ Sie können auch andere Dienste empfangen, die vom Host bereitgestellt werden. Weitere Informationen finden Sie unter [den Zugriff auf Visual Studio oder andere Hosts aus einer Vorlage](https://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
   
 ### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>Entwurfszeittextvorlagen werden in einer separaten AppDomain ausgeführt  
  Sollten Sie bedenken, die eine [während der Entwurfszeit Textvorlage](../modeling/design-time-code-generation-by-using-t4-text-templates.md) ausgeführt wird, in einer AppDomain, die von der hauptanwendung getrennt ist. In den meisten Fällen ist dies nicht wichtig, doch in bestimmten komplexen Fällen können sich Einschränkungen ergeben. Wenn Sie z. B. Daten in oder aus der Vorlage von einem separaten Dienst übergeben möchten, muss der Dienst eine serialisierbare API bereitstellen.  

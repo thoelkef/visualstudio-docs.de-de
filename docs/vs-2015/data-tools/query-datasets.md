@@ -9,17 +9,17 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 69ca24f45384ef650c4a692a8ec0afc079f19bac
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f2081b302bfb288b08119913081154b970fadcda
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425369"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692576"
 ---
 # <a name="query-datasets"></a>Abfragedatasets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Um für bestimmte Datensätze in einem Dataset zu suchen, verwenden Sie die FindBy-Methode in der DataTable-Objekt, Schreiben Sie Ihren eigenen Foreach-Schleife über der Tabelle Zeilensammlung oder verwenden Sie [LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17). LINQ to DataSet.  
+Um für bestimmte Datensätze in einem Dataset zu suchen, verwenden Sie die FindBy-Methode in der DataTable-Objekt, Schreiben Sie Ihren eigenen Foreach-Schleife über der Tabelle Zeilensammlung oder verwenden Sie [LINQ to DataSet](https://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17). LINQ to DataSet.  
   
 ## <a name="dataset-case-sensitivity"></a>DataSet Groß-/Kleinschreibung  
  Innerhalb eines Datasets, Tabellen- und Spaltennamen sind standardmäßig Groß-/Kleinschreibung, d. h. eine Tabelle in ein Dataset namens "Customers" kann werden so genannte "Customers". Dies entspricht den Benennungskonventionen in verschiedenen Datenbanken, einschließlich SQL clientmethodenaufrufe SQL Server, das Standardverhalten, dass die Namen von Datenelementen, die nur durch Fall unterschieden werden können.  
@@ -65,7 +65,7 @@ Um für bestimmte Datensätze in einem Dataset zu suchen, verwenden Sie die Find
   
  Können Sie eine <xref:System.Data.DataRelation> verknüpfte Datensätze durch den Aufruf zu suchende Objekt die <xref:System.Data.DataRow.GetChildRows%2A> Methode eine <xref:System.Data.DataRow> in der übergeordneten Tabelle. Diese Methode gibt ein Array von zugehörigen, untergeordneten Datensätzen zurück. Oder Sie rufen die <xref:System.Data.DataRow.GetParentRow%2A> Methode eine <xref:System.Data.DataRow> in der untergeordneten Tabelle. Diese Methode gibt ein einzelnes <xref:System.Data.DataRow> aus der übergeordneten Tabelle.  
   
- Diese Seite enthält Beispiele zur Verwendung von typisierten "Datasets". Informationen zum Navigieren in Beziehungen in nicht typisierten Datasets finden Sie unter [Navigieren in DataRelations](http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e).  
+ Diese Seite enthält Beispiele zur Verwendung von typisierten "Datasets". Informationen zum Navigieren in Beziehungen in nicht typisierten Datasets finden Sie unter [Navigieren in DataRelations](https://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e).  
   
 > [!NOTE]
 > Wenn Sie in einer Windows Forms-Anwendung arbeiten und mithilfe der Datenbindung-Funktionen zum Anzeigen von Daten, möglicherweise das Formular-Designer generierter genügend Funktionalität für Ihre Anwendung bereit. Weitere Informationen finden Sie unter [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  

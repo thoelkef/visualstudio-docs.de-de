@@ -10,12 +10,12 @@ ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1744801b7efe591c449e74796c3c7d297dc3f982
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 5b5bc2bacb53973bd552b983b742e4f9e68fe31b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061709"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687698"
 ---
 # <a name="when-to-create-project-types"></a>Gründe für das Erstellen von Projekttypen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Erstellen einen neuen Projekttyp bildet die Grundlage für Anpassung [!INCLUDE[v
 |Aufgabe|Beschreibung|  
 |----------|-----------------|  
 |Behandeln von Kommentaren|Jedem VSPackage kann Befehle verarbeiten.|  
-|Erstellen eines Editors|Benutzerdefinierte Editoren können registriert werden. Weitere Informationen finden Sie unter [Dokument Windows und Editoren](http://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc).|  
+|Erstellen eines Editors|Benutzerdefinierte Editoren können registriert werden. Weitere Informationen finden Sie unter [Dokument Windows und Editoren](https://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc).|  
 |Besitzer von windows|Sie können sowohl Tool-und Dokumentfenster erstellen, ohne dass einen neuer Projekttyp hinzugefügt.|  
 |Verfügbarmachen von Eigenschaften im Eigenschaftenfenster|Alle Objekte können Eigenschaften verfügbar machen.|  
   
@@ -60,6 +60,6 @@ Erstellen einen neuen Projekttyp bildet die Grundlage für Anpassung [!INCLUDE[v
  Sie können die Projektuntertypen verwenden, um ein verwaltetes Projekt zu erweitern, ohne einen neuen Projekttyp erstellen zu müssen. Projektuntertypen com-Aggregation verwenden Sie zum Erweitern von verwalteter Projekten, die bei Microsoft geschrieben [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] oder [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. Mit COM-Aggregation können ein Großteil der systemimplementierung verwaltetes Projekt wiederverwenden und dennoch für ein bestimmtes Szenario durch die Aggregation und die Verwendung von unterstützende Schnittstellen anpassen. Weitere Informationen zu Projektuntertypen, finden Sie unter [Projektuntertypen](../../extensibility/internals/project-subtypes.md).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Dokument Windows und Editoren](http://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)   
+ [Dokument Windows und Editoren](https://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)   
  [Prüfliste: Erstellen neuer Projekttypen](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Hierarchien in Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)

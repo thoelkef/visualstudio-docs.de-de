@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cd24ef7e852d84d3213e024e53e325c0ba1d59fb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 884ec6cc25fd2ef415dc71055361344d79021d5e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762078"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696374"
 ---
 # <a name="visual-c-code-snippets"></a>Visual C++-Codeausschnitte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ In Visual Studio können Sie Codeausschnitte zum Hinzufügen von häufig verwend
   
 - Wählen Sie im Menü **Bearbeiten/IntelliSense** die Option **Ausschnitt einfügen** aus.  
   
-- Verwenden Sie folgenden Tastaturbefehl: **STRG + K + X**  
+- Verwenden Sie folgenden Tastaturbefehl: **CTRL + K + X**  
   
   Es sollte eine Liste mit Auswahlmöglichkeiten beginnend mit **#if** angezeigt werden. Bei der Auswahl von **#if** sollte der folgende Code in die Datei eingefügt werden:  
   
@@ -49,7 +49,7 @@ In Visual Studio können Sie Codeausschnitte zum Hinzufügen von häufig verwend
   
 2. Wählen Sie im Menü **Bearbeiten/IntelliSense** die Option **Umschließen mit** aus.  
   
-3. Verwenden Sie folgenden Tastaturbefehl: **STRG + K + S**  
+3. Verwenden Sie folgenden Tastaturbefehl: **CTRL + K + S**  
   
    Wählen Sie **#if** aus. Folgendes sollte angezeigt werden:  
   
@@ -138,7 +138,7 @@ for (int i = length - 1; i >= 0; i--)
 }  
 ```  
   
- Der **rfor**-Codeausschnitt stellt eine [bereichsbasierte](http://msdn.microsoft.com/library/5750ba1d-ba48-4236-a923-e32de8345c2d) „for“-Schleife (Link) bereit:  
+ Der **rfor**-Codeausschnitt stellt eine [bereichsbasierte](https://msdn.microsoft.com/library/5750ba1d-ba48-4236-a923-e32de8345c2d) „for“-Schleife (Link) bereit:  
   
 ```cpp  
 for (auto& i : v)  

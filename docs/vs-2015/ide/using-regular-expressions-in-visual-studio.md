@@ -19,16 +19,16 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6906a351a9d93e566c1a184ed237beb15cbd7b89
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1e57b3f8db5330f7d0778ee53e552c38e8295c62
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669340"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696408"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Verwendung regulärer Ausdrücke in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-Visual Studio verwendet reguläre Ausdrücke in .NET Framework zum Suchen und Ersetzen von Text. Weitere Informationen zu regulären Ausdrücken von .NET finden Sie unter [Reguläre Ausdrücke von .NET Framework](http://msdn.microsoft.com/library/521b3f6d-f869-42e1-93e5-158c54a6895d).
+Visual Studio verwendet reguläre Ausdrücke in .NET Framework zum Suchen und Ersetzen von Text. Weitere Informationen zu regulären Ausdrücken von .NET finden Sie unter [Reguläre Ausdrücke von .NET Framework](https://msdn.microsoft.com/library/521b3f6d-f869-42e1-93e5-158c54a6895d).
 
 Vor Visual Studio 2012 verwendete Visual Studio benutzerdefinierte Syntax für reguläre Ausdrücke in den Fenstern "Suchen" und "Ersetzen". Unter [Visual Studio Regular Expression Conversions (Visual Studio-Konvertierungen mit regulären Ausdrücken)](https://msdn.microsoft.com/library/2k3te2cs\(v=vs.110\).aspx) finden Sie eine Erklärung, wie einige der häufiger verwendeten benutzerdefinierten regulären Ausdruckssymbole in die Versionen von .NET konvertiert werden.
 
@@ -36,7 +36,7 @@ Vor Visual Studio 2012 verwendete Visual Studio benutzerdefinierte Syntax für r
 > In Windows-Betriebssystemen enden die meisten Zeilen auf "\r\n" (ein Wagenrücklaufzeichen gefolgt von einer neuen Zeile). Diese Zeichen sind nicht sichtbar, aber im Editor vorhanden und werden an den .NET-Dienst regulärer Ausdrücke übergeben.
 
 > [!TIP]
-> Weitere Informationen zu regulären Ausdrücken, die in Ersetzungsmustern verwendet werden, finden Sie unter [Ersetzungen in regulären Ausdrücken](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e). Um eine nummerierte Erfassungsgruppe zu verwenden, lautet die Syntax zum Festlegen der nummerierten Gruppe `$1` und zum Festlegen der betreffenden Gruppe `(x)`. Z. B. der gruppierte reguläre Ausdruck `(\d)([a-z])` findet vier Übereinstimmungen in der folgenden Zeichenfolge: **1a 2b 3c 4d**. Die Ersetzungszeichenfolge `z$1` konvertiert diese Zeichenfolge in **z1 z2 z3 z4**.
+> Weitere Informationen zu regulären Ausdrücken, die in Ersetzungsmustern verwendet werden, finden Sie unter [Ersetzungen in regulären Ausdrücken](https://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e). Um eine nummerierte Erfassungsgruppe zu verwenden, lautet die Syntax zum Festlegen der nummerierten Gruppe `$1` und zum Festlegen der betreffenden Gruppe `(x)`. Z. B. der gruppierte reguläre Ausdruck `(\d)([a-z])` findet vier Übereinstimmungen in der folgenden Zeichenfolge: **1a 2b 3c 4d**. Die Ersetzungszeichenfolge `z$1` konvertiert diese Zeichenfolge in **z1 z2 z3 z4**.
 
 ## <a name="regular-expression-examples"></a>Beispiele für reguläre Ausdrücke
 

@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5bfd585a3185d83981d24c8dc77e62193c1363d4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cb77271c37b02104a0e1695d5495ff085518acad
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442542"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675285"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Leistungstools für Windows 8- und Windows Server 2012-Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,19 +60,19 @@ Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erfordert
   
   [Ausführen von Windows Store-Apps auf einem Remotecomputer](../debugger/run-windows-store-apps-on-a-remote-machine.md)  
   
-  [Analysieren der App-Leistung](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)  
+  [Analysieren der App-Leistung](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)  
   
-- [JavaScript-Funktionstiming](http://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)  
+- [JavaScript-Funktionstiming](https://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)  
   
-- [JavaScript-Funktionstiming auf einem Remotegerät](http://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
+- [JavaScript-Funktionstiming auf einem Remotegerät](https://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
   
-- [Analysieren von JavaScript-Funktionstimingdaten](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
+- [Analysieren von JavaScript-Funktionstimingdaten](https://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
   
-- [Profilerstellung für Visual C++-, Visual C#- und Visual Basic-Code in Windows Store-Apps auf einem lokalen Computer](http://msdn.microsoft.com/2d0c939e-0bac-48c5-b727-46f6c6113060)  
+- [Profilerstellung für Visual C++-, Visual C#- und Visual Basic-Code in Windows Store-Apps auf einem lokalen Computer](https://msdn.microsoft.com/2d0c939e-0bac-48c5-b727-46f6c6113060)  
   
-- [Erstellen eines Profils von Visual C++-, Visual C#- und Visual Basic-Code in Windows Store-Apps auf einem Remotegerät](http://msdn.microsoft.com/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
+- [Erstellen eines Profils von Visual C++-, Visual C#- und Visual Basic-Code in Windows Store-Apps auf einem Remotegerät](https://msdn.microsoft.com/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
   
-- [Analysieren von Leistungsdaten für Visual C++-, Visual C#- und Visual Basic-Code in Windows Store-Apps](http://msdn.microsoft.com/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
+- [Analysieren von Leistungsdaten für Visual C++-, Visual C#- und Visual Basic-Code in Windows Store-Apps](https://msdn.microsoft.com/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
   
   [Inhalt](#BKMK_In_this_topic)  
   
@@ -136,7 +136,7 @@ Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erfordert
   
    **Sammeln von TIP-Daten auf einem Remotecomputer**  
   
-   Sie müssen Sie die Datei **vs\_profiler\_**_\<Plattform>_**\_**_\<Sprache>_**.exe** aus dem Ordner _%VInstallDir%_**\Team Tools\Performance Tools\Setups** eines Visual Studio-Computers auf den Remotecomputer kopieren und dort installieren, um Ebeneninteraktionsdaten auf einem Remotecomputer zu erfassen. Sie können nicht die Profilerstellungstools im Downloadpaket der [Visual Studio-Remotetools](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) verwenden.  
+   Sie müssen Sie die Datei **vs\_profiler\_**_\<Plattform>_**\_**_\<Sprache>_**.exe** aus dem Ordner _%VInstallDir%_**\Team Tools\Performance Tools\Setups** eines Visual Studio-Computers auf den Remotecomputer kopieren und dort installieren, um Ebeneninteraktionsdaten auf einem Remotecomputer zu erfassen. Sie können nicht die Profilerstellungstools im Downloadpaket der [Visual Studio-Remotetools](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) verwenden.  
   
    Sie können [VSPerfCmd](../profiling/vsperfcmd.md) oder [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) verwenden, um die Profilerstellungsdaten zu erfassen.  
   

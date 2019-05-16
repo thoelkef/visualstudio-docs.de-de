@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3fd223b0a5891bc28cdef18dcd64312812607422
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 752454f9a52807766d6eef5b2563a7b70ca0f4dd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62428463"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697386"
 ---
 # <a name="edit-and-continue-visual-c"></a>Bearbeiten und Fortfahren (Visual C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Sie können „Bearbeiten und Fortfahren“ in Visual C++-Projekten verwenden. F
   
  Weitere Update 1-Verbesserungen sind ein neues Wartedialogfeld, das abgebrochen werden kann, sowie eine Benachrichtigung für den Fall, dass „Bearbeiten und Fortfahren“ für eine Datei nicht unterstützt wird. Weitere Informationen zu Update 1-Verbesserungen, finden Sie unter [Verbesserungen für C++-bearbeiten und Fortfahren in Visual Studio 2015 Update 1](http://blogs.msdn.com/b/vcblog/archive/2015/11/30/improvements-for-c-edit-and-continue-in-visual-studio-2015-update-1.aspx).  
   
- Die Compileroption [/Zo (erweitertes optimiertes Debugging)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f), die in Visual Studio 2013 Update 3 eingeführt wurde, fügt zusätzliche Informationen in PDB-Dateien (Symboldateien) für Binärdateien hinzu, die ohne die Option [/Od ((Debug) deaktivieren)](http://msdn.microsoft.com/library/aafb762y.aspx) kompiliert wurden.  
+ Die Compileroption [/Zo (erweitertes optimiertes Debugging)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f), die in Visual Studio 2013 Update 3 eingeführt wurde, fügt zusätzliche Informationen in PDB-Dateien (Symboldateien) für Binärdateien hinzu, die ohne die Option [/Od ((Debug) deaktivieren)](https://msdn.microsoft.com/library/aafb762y.aspx) kompiliert wurden.  
   
  **/ Zo** bearbeiten und Fortfahren deaktiviert. Weitere Informationen finden Sie unter [How to: Debuggen von optimiertem Code](../debugger/how-to-debug-optimized-code.md).  
   
@@ -70,7 +70,7 @@ Sie können „Bearbeiten und Fortfahren“ in Visual C++-Projekten verwenden. F
 ## <a name="BKMK_How_to_reset_the_point_of_execution"></a> Gewusst wie: Zurücksetzen des Ausführungspunkts  
  Einige Codeänderungen können dazu führen, dass der Ausführungspunkt an eine neue Position verschoben wird, wenn die Änderung von "Bearbeiten und Fortfahren" übernommen wird. Mit "Bearbeiten und Fortfahren" wird der Ausführungspunkt so genau wie möglich platziert. Das Ergebnis ist jedoch möglicherweise nicht korrekt.  
   
- In Visual C++ werden Sie durch ein Dialogfeld über eine Änderung des Ausführungspunkts informiert. Überprüfen Sie, ob die Position richtig ist, bevor Sie das Debuggen fortsetzen. Ist die Position nicht korrekt, verwenden Sie den Befehl **Nächste Anweisung festlegen** . Weitere Informationen finden Sie unter [Nächste auszuführende Anweisung festlegen](http://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute).  
+ In Visual C++ werden Sie durch ein Dialogfeld über eine Änderung des Ausführungspunkts informiert. Überprüfen Sie, ob die Position richtig ist, bevor Sie das Debuggen fortsetzen. Ist die Position nicht korrekt, verwenden Sie den Befehl **Nächste Anweisung festlegen** . Weitere Informationen finden Sie unter [Nächste auszuführende Anweisung festlegen](https://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute).  
   
 ## <a name="BKMK_How_to_work_with_stale_code"></a> Gewusst wie: Arbeiten mit veraltetem Code  
  In einigen Fällen kann Bearbeiten und Fortfahren die Codeänderungen nicht sofort in die ausführbare Datei übernehmen, dies aber möglicherweise zu einem späteren Zeitpunkt nachholen, wenn Sie mit dem Debuggen fortfahren. Dies geschieht, wenn Sie eine Funktion bearbeiten, die die aktuelle Funktion aufruft, bzw. wenn Sie einer Funktion in der Aufrufliste neue Variablen von mehr als 64 Bytes hinzufügen.  

@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d045957dde862d0552d8eeb4885f29957e420f5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a17931b9d7ccb8ef60158d6ea6d22e8b2f27b031
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441416"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697165"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Optionen, Text-Editor, C/C++, Erweitert
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Wenn Sie diese Optionen ändern, können Sie beim Programmieren in C oder C++ da
  Klicken Sie zum Öffnen dieser Seite im linken Fenster auf das Dialogfeld **Optionen**, erweitern Sie **Text-Editor** und **C/C++**, und klicken Sie dann auf **Erweitert**.  
   
 > [!NOTE]
-> Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Informationen hierzu finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio)](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Informationen hierzu finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio)](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="browsingnavigation"></a>Durchsuchen/Navigation  
  Diese Optionen sollten nur in dem seltenen Fall ausgewählt werden, wenn eine Projektmappe so groß ist, dass die Datenbankaktivität einen unzulässigen Anteil der Systemressourcen beansprucht.  
@@ -124,7 +124,7 @@ Wenn Sie diese Optionen ändern, können Sie beim Programmieren in C oder C++ da
  **Maximale Anzahl zwischengespeicherter Übersetzungseinheiten**  
  Die maximale Anzahl von Übersetzungseinheiten, die zu einem beliebigen Zeitpunkt für IntelliSense-Anforderungen aktiv gehalten werden. Sie müssen einen Wert zwischen 2 und 15 angeben. Diese Zahl bezieht sich direkt auf die maximale Anzahl von ausgeführten VCPkgSrv.exe-Prozessen (für eine angegebene Instanz von Visual Studio). Der Standardwert ist 2. Wenn Sie jedoch verfügbaren Arbeitsspeicher haben, können Sie diesen Wert erhöhen und erzielen möglicherweise eine bessere IntelliSense-Leistung.  
   
- Weitere Informationen zu Übersetzungseinheiten finden Sie unter [Phasen der Übersetzung](http://msdn.microsoft.com/library/a7f7a8c9-e8ba-4321-9e50-ebfbbdcce9db).  
+ Weitere Informationen zu Übersetzungseinheiten finden Sie unter [Phasen der Übersetzung](https://msdn.microsoft.com/library/a7f7a8c9-e8ba-4321-9e50-ebfbbdcce9db).  
   
  **Aggressive Memberliste deaktivieren**  
  Die Memberliste wird nicht angezeigt, während Sie den Namen eines Typs oder einer Variablen eingeben. Die Liste wird nur nach Eingabe eines der Commitzeichen angezeigt, die in der Option **Commitzeichen der Memberliste** definiert wurden.  

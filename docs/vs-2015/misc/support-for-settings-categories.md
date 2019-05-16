@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
 manager: jillfra
-ms.openlocfilehash: b66724542d45aa6f57b7c2748c7c1cab1ec8c064
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 15a3896f8a2010a063393d3a11c1ed3453a008d5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436566"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689100"
 ---
 # <a name="support-for-settings-categories"></a>Unterstützung für Einstellungskategorien
-Eine Einstellungskategorie besteht aus einer Gruppe von Optionen, die die integrierte Entwicklungsumgebung (Integrated Development Environment; IDE) anpassen. Beispielsweise können Einstellungen das Layout der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Fenster und die Inhalte von Menüs steuern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+Eine Einstellungskategorie besteht aus einer Gruppe von Optionen, die die integrierte Entwicklungsumgebung (Integrated Development Environment; IDE) anpassen. Beispielsweise können Einstellungen das Layout der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Fenster und die Inhalte von Menüs steuern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um den **Assistent zum Importieren und Exportieren von Einstellungen**zu starten. Der Assistent bietet drei Optionen zur Auswahl: Exportieren, Importieren oder Zurücksetzen der Einstellungen. Durch die Auswahl von beispielsweise „Exportieren“ wird die Seite **Einstellungen für den Export auswählen** des Assistenten aufgerufen.  
   
@@ -64,4 +64,4 @@ Eine Einstellungskategorie besteht aus einer Gruppe von Optionen, die die integr
  [Erstellen einer Optionsseite](../extensibility/creating-an-options-page.md)   
  [VSSDK-Beispiele](../misc/vssdk-samples.md)   
  [VSPackage-Status](../misc/vspackage-state.md)   
- [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+ [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

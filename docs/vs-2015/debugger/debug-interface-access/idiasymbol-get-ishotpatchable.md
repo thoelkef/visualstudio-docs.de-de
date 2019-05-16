@@ -13,17 +13,17 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3ddad4542ef41190093e1dac743f60e4edadd400
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 20fc0bf766baf2fcdee32c654d10dbd4813da698
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421968"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703679"
 ---
 # <a name="idiasymbolgetishotpatchable"></a>IDiaSymbol::get_isHotpatchable
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Ruft ein Flag, der angibt, ob das Modul kompiliert wurde, mit der [/hotpatch (Erstellen eines Hotpatch-fähigen Abbildes)](http://msdn.microsoft.com/library/aad539b6-c053-4c78-8682-853d98327798) Compilerschalter.  
+Ruft ein Flag, der angibt, ob das Modul kompiliert wurde, mit der [/hotpatch (Erstellen eines Hotpatch-fähigen Abbildes)](https://msdn.microsoft.com/library/aad539b6-c053-4c78-8682-853d98327798) Compilerschalter.  
   
 ## <a name="syntax"></a>Syntax  
   

@@ -19,12 +19,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bc6bc7e6e7d11b1b5b77cd90b86a6a6167702872
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d54d69a9aeda76c79208c2685efde94eaaab1017
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62559886"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693768"
 ---
 # <a name="n-tier-data-applications-overview"></a>Übersicht über N-Tier-Datenanwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,14 +39,14 @@ N-Tarif *--datenanwendungen sind datenanwendungen, die in mehrere voneinander *E
   
 - Die [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) enthält Einstellungen, um den DataContext und Datenklassen in separaten Namespaces zu generieren. Dies ermöglicht eine logische Trennung von Datenzugriffs- und Datenentitätsebenen.  
   
-- [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) bietet die <xref:System.Data.Linq.Table%601.Attach%2A> -Methode, die Ihnen ermöglicht, der ein DataContext aus unterschiedlichen Ebenen in einer Anwendung vereinigt. Weitere Informationen finden Sie unter [N-schichtige und Remoteanwendungen mit LINQ to SQL](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598).  
+- [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) bietet die <xref:System.Data.Linq.Table%601.Attach%2A> -Methode, die Ihnen ermöglicht, der ein DataContext aus unterschiedlichen Ebenen in einer Anwendung vereinigt. Weitere Informationen finden Sie unter [N-schichtige und Remoteanwendungen mit LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598).  
   
 ## <a name="presentation-tier"></a>Präsentationsebene  
  Die *Präsentationsebene* ist die Ebene, auf der Benutzer mit einer Anwendung interagieren. Sie enthält oft auch zusätzliche Anwendungslogik. Zu den typischen Komponenten einer Präsentationsebene gehören:  
   
 - Komponenten zur Datenbindung, etwa <xref:System.Windows.Forms.BindingSource> und <xref:System.Windows.Forms.BindingNavigator>.  
   
-- Objektdarstellungen von Daten, z. B. [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) Entitätsklassen für die Verwendung in der Präsentationsebene.  
+- Objektdarstellungen von Daten, z. B. [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) Entitätsklassen für die Verwendung in der Präsentationsebene.  
   
   Die Präsentationsebene greift der mittleren Ebene in der Regel mithilfe eines Dienstverweises auf (z. B. eine [Windows Communication Foundation-Dienste und WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) Anwendung). Die Präsentationsschicht greift nicht direkt auf die Datenschicht zu. Sie kommuniziert mit der Datenebene unter Verwendung der Datenzugriffskomponenten der mittleren Ebene.  
   
@@ -57,9 +57,9 @@ N-Tarif *--datenanwendungen sind datenanwendungen, die in mehrere voneinander *E
   
 - Komponenten und Logik für den Datenzugriff, wie beispielsweise:  
   
-  - [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) und ["DataAdapters" und "DataReaders"](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).  
+  - [TableAdapters](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) und ["DataAdapters" und "DataReaders"](https://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).  
   
-  - Objektdarstellungen von Daten, z. B. [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) Entitätsklassen.  
+  - Objektdarstellungen von Daten, z. B. [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) Entitätsklassen.  
   
   - Allgemeine Anwendungsdienste wie Authentifizierung, Autorisierung und Personalisierung.  
   
@@ -87,9 +87,9 @@ Datenebene
   
  [Exemplarische Vorgehensweise: Erstellen einer n-schichtigen Datenanwendung](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
   
- [Exemplarische Vorgehensweise: Hinzufügen einer Validierung zu einer N-Tier-Datenanwendung](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
+ [Exemplarische Vorgehensweise: Hinzufügen einer Validierung zu einer N-Tier-Datenanwendung](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
   
- [N-schichtige Anwendungen und Remoteanwendungen mit LINQ to SQL](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)  
+ [N-schichtige Anwendungen und Remoteanwendungen mit LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)  
   
 ## <a name="see-also"></a>Siehe auch  
  <xref:System.Data.Linq.ITable.Attach%2A>   

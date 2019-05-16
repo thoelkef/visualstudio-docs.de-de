@@ -23,12 +23,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 73865d68c191d1287c1cf8a33095259bd9d659ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4d5b10d3e40d889ffa9e7743d65de487c2d823cf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955537"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698730"
 ---
 # <a name="edit-and-continue"></a>Bearbeiten und Fortfahren
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ Mit „Bearbeiten und Fortfahren“ sparen Sie Zeit, weil Sie damit Änderungen 
   
  Dieser Abschnitt schließt folgende Themen ein:  
   
- [Vorgehensweise: Explizites übernehmen von Codeänderungen](http://msdn.microsoft.com/89c4fce9-a3ef-432d-a840-67840b1c4be8)  
+ [Vorgehensweise: Explizites übernehmen von Codeänderungen](https://msdn.microsoft.com/89c4fce9-a3ef-432d-a840-67840b1c4be8)  
   
  [Vorgehensweise: Enable and Disable Edit and Continue (Vorgehensweise: Aktivieren und Deaktivieren von „Bearbeiten und Fortfahren“)](../debugger/how-to-enable-and-disable-edit-and-continue.md)  
   
  [Vorgehensweise: Stop Code Changes (Vorgehensweise: Anhalten von Codeänderungen)](../debugger/how-to-stop-code-changes.md)  
   
- [Ausführungspunkt](http://msdn.microsoft.com/dd9855a7-b536-4e76-821f-27017829b996)  
+ [Ausführungspunkt](https://msdn.microsoft.com/dd9855a7-b536-4e76-821f-27017829b996)  
   
  [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)  
   
@@ -55,5 +55,5 @@ Mit „Bearbeiten und Fortfahren“ sparen Sie Zeit, weil Sie damit Änderungen 
   
 ## <a name="see-also"></a>Siehe auch  
  [Debugger Security (Debuggersicherheit)](../debugger/debugger-security.md)   
- [Bearbeiten und Fortfahren, Debuggen, Dialogfeld „Optionen“](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
+ [Bearbeiten und Fortfahren, Debuggen, Dialogfeld „Optionen“](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
  [Debugger – Grundlagen](../debugger/debugger-basics.md)

@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ff4cc9501552b0a482e93aa1917a175680d6d78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2f0b7edf8ef2670b70dbee25b70cac7b0597490b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901755"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676368"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Dumpdateien in Visual Studio-debugger
 
@@ -74,7 +74,7 @@ Mit [Just-in-Time-Debuggen](../debugger/just-in-time-debugging-in-visual-studio.
 1. Navigieren Sie zu einem Pfad, und wählen Sie einen Namen für die Dumpdatei, und wählen Sie dann **speichern**.
 
 >[!NOTE]
->Sie können Dumpdateien mit jedem Programm erstellen, die die Windows-minidumpformat unterstützt. Beispielsweise können mit dem **Procdump**-Befehlszeilenhilfsprogramm von [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) Dumpdateien zu Prozessabstürzen anhand von Triggern oder bedarfsabhängig erstellt werden. Finden Sie unter [Anforderungen und Einschränkungen](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) Informationen zur Verwendung anderer Tools zum Erstellen von Dumpdateien.
+>Sie können Dumpdateien mit jedem Programm erstellen, die die Windows-minidumpformat unterstützt. Beispielsweise können mit dem **Procdump**-Befehlszeilenhilfsprogramm von [Windows Sysinternals](https://technet.microsoft.com/sysinternals/default) Dumpdateien zu Prozessabstürzen anhand von Triggern oder bedarfsabhängig erstellt werden. Finden Sie unter [Anforderungen und Einschränkungen](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) Informationen zur Verwendung anderer Tools zum Erstellen von Dumpdateien.
 
 ## <a name="BKMK_Open_a_dump_file"></a> Öffnen einer Dumpdatei
 

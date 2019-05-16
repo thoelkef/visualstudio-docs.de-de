@@ -8,12 +8,12 @@ ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 01b767e4b2aceeb50ca72ef6852934f4b0502b98
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 51edddcbac3815c450b2b0db7166fc7d5c593dbd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114313"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698787"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Plattformübergreifende, mobile Entwicklung in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ Sie können Apps für Android-, iOS- oder Windows-Geräte mithilfe von Visual St
 
 |**Weitere Informationen**|
 |--------------------|
-|Sie können wählen, ob Sie den Code freigeben möchten, indem Sie gemeinsam genutzte Projekte, Portable Class Library-Projekte oder sowohl als auch verwenden.<br /><br /> [Plattformübergreifendes Freigeben von Code](http://blogs.msdn.com/b/dotnet/archive/2014/04/21/sharing-code-across-platforms.aspx) (.NET Framework-Blog)<br /><br /> [Sharing Code Options (Optionen für die Codefreigabe)](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (Xamarin)<br /><br /> [Optionen für die Codefreigabe mit .NET Framework](http://msdn.microsoft.com/library/dn720832.aspx) (MSDN Library)|
+|Sie können wählen, ob Sie den Code freigeben möchten, indem Sie gemeinsam genutzte Projekte, Portable Class Library-Projekte oder sowohl als auch verwenden.<br /><br /> [Plattformübergreifendes Freigeben von Code](http://blogs.msdn.com/b/dotnet/archive/2014/04/21/sharing-code-across-platforms.aspx) (.NET Framework-Blog)<br /><br /> [Sharing Code Options (Optionen für die Codefreigabe)](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (Xamarin)<br /><br /> [Optionen für die Codefreigabe mit .NET Framework](https://msdn.microsoft.com/library/dn720832.aspx) (MSDN Library)|
 
 ### <a name="WindowsHTML"></a>Windows 10-Zielgeräte
  ![Windows-Geräte](../cross-platform/media/windowsdevices.png "WindowsDevices")
@@ -90,7 +90,7 @@ Sie können Apps für Android-, iOS- oder Windows-Geräte mithilfe von Visual St
 |**Weitere Informationen**|
 |--------------------|
 |[Informationen zu universellen Windows-Apps](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx) (Windows Dev Center)|
-|[Erstellen der ersten App](http://msdn.microsoft.com/library/windows/apps/dn609832.aspx) (Windows Dev Center)|
+|[Erstellen der ersten App](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx) (Windows Dev Center)|
 |[Entwickeln von Apps für die universelle Windows-Plattform (UWP)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
 |[Migrieren von Apps auf die universelle Windows-Plattform (UWP)](../misc/migrate-apps-to-the-universal-windows-platform-uwp.md)|
 
@@ -171,6 +171,6 @@ Sie können Apps für Android-, iOS- oder Windows-Geräte mithilfe von Visual St
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Hinzufügen von Office 365-APIs zu einem Visual Studio-Projekt](http://msdn.microsoft.com/library/office/dn605899\(v=office.15\).aspx)
-- [Azure-Mobile Services](http://msdn.microsoft.com/library/dn720832\(v=vs.110\).aspx)
+- [Hinzufügen von Office 365-APIs zu einem Visual Studio-Projekt](https://msdn.microsoft.com/library/office/dn605899\(v=office.15\).aspx)
+- [Azure-Mobile Services](https://msdn.microsoft.com/library/dn720832\(v=vs.110\).aspx)
 - [Application Insights](/azure/application-insights/app-insights-overview)

@@ -13,12 +13,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4d53cdee5d92a92bb7405d1ecfb669e6de25a5a0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 814327befe538bfaa102b198988e76dbd52090bb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432390"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705689"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Hinzufügen einer Nachverfolgungseigenschaft zu einer domänenspezifischen Sprachdefinition
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Diese exemplarische Vorgehensweise veranschaulicht das Hinzufügen eine Nachverf
   
  In der domänenspezifische Sprachtools (DSL-Tools), den Anzeigenamen, die Eigenschaft einer Domänenklasse einen Standardwert, der berechnet wird verfügt, mit dem Namen der Domänenklasse, aber ein Benutzer z. B. ändern Sie den Wert zur Entwurfszeit oder auf den berechneten Wert zurückgesetzt.  
   
- In dieser exemplarischen Vorgehensweise erstellen Sie eine domänenspezifische Sprache (DSL), die einen Namespace, die Eigenschaft, die einen Standardwert basierend auf der Standard-Namespace-Eigenschaft des Modells verfügt. Weitere Informationen zu überwachen – Eigenschaften, finden Sie unter [nachverfolgung Eigenschaften](http://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
+ In dieser exemplarischen Vorgehensweise erstellen Sie eine domänenspezifische Sprache (DSL), die einen Namespace, die Eigenschaft, die einen Standardwert basierend auf der Standard-Namespace-Eigenschaft des Modells verfügt. Weitere Informationen zu überwachen – Eigenschaften, finden Sie unter [nachverfolgung Eigenschaften](https://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
   
 - Die DSL-Tools unterstützen, Nachverfolgen von Eigenschaftendeskriptoren. Allerdings kann nicht der DSL-Designer verwendet werden, zum Hinzufügen einer Nachverfolgungseigenschaft zu einer Sprache. Aus diesem Grund müssen Sie benutzerdefinierten Code zum Definieren und implementieren Sie die änderungsverfolgungseigenschaft hinzufügen.  
   

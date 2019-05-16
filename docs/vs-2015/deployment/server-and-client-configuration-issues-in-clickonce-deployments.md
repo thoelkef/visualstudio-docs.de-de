@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 90772785297b84a12cc98d6ce21a2cd2e65743f9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8b8f81f22ffe566524e45a62330bc95c8ce00016
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444970"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686380"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Probleme mit der Server- und Clientkonfiguration in ClickOnce-Bereitstellungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Wenn Sie Internetinformationsdienste (Internet Information Services, IIS) unter 
   
 - DEPLOY  
   
-  Allerdings können Sie diese Option deaktivieren, indem Sie deaktivieren die **Dateierweiterung ".deploy" verwenden** option die [Publish Options Dialog Box](http://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), in diesem Fall Sie den Webserver für alle Erweiterungen zulassen konfigurieren müssen in der Anwendung verwendet.  
+  Allerdings können Sie diese Option deaktivieren, indem Sie deaktivieren die **Dateierweiterung ".deploy" verwenden** option die [Publish Options Dialog Box](https://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), in diesem Fall Sie den Webserver für alle Erweiterungen zulassen konfigurieren müssen in der Anwendung verwendet.  
   
   Sie müssen konfigurieren ". manifest".application und ".deploy", z. B. Wenn Sie IIS verwenden, in denen Sie nicht installiert haben, die [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], oder wenn Sie einen anderen Webserver (z. B. Apache) verwenden.  
   
@@ -54,7 +54,7 @@ Wenn Sie Internetinformationsdienste (Internet Information Services, IIS) unter 
   
  Sie können auch einen Hotfix für .NET Framework 2.0 zum Aktivieren dieser Funktion anwenden. Weitere Informationen finden Sie unter http://go.microsoft.com/fwlink/?LinkId=158730.  
   
- Weitere Informationen finden Sie unter [ \<DefaultProxy >-Element (Netzwerkeinstellungen)](http://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f).  
+ Weitere Informationen finden Sie unter [ \<DefaultProxy >-Element (Netzwerkeinstellungen)](https://msdn.microsoft.com/library/9d663c4b-07b4-4f6f-9b12-efbd3630354f).  
   
 ## <a name="clickonce-and-web-browser-compatibility"></a>ClickOnce und Web-Browser-Kompatibilität  
  Derzeit [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Installationen nur gestartet, wenn die URL für das Bereitstellungsmanifest mit Internet Explorer geöffnet wird. Eine Bereitstellung, deren URL durch eine andere Anwendung, z. B. Microsoft Office Outlook, gestartet wird, wird erfolgreich gestartet werden, nur, wenn Internet Explorer als Standardbrowser festgelegt ist.  
@@ -92,7 +92,7 @@ Wenn Sie Internetinformationsdienste (Internet Information Services, IIS) unter 
 |`.msp`|`application/octet-stream`|  
   
 ## <a name="clickonce-and-mapped-drives"></a>ClickOnce und zugeordnete Laufwerke  
- Wenn Sie Visual Studio zum Veröffentlichen einer ClickOnce-Anwendung verwenden, können nicht Sie ein zugeordnetes Laufwerk als Speicherort der Installation angeben. Allerdings können Sie die ClickOnce-Anwendung von einem zugeordneten Laufwerk zu installieren, mit dem Manifest-Generator und der Editor (Mage.exe und MageUI.exe) ändern. Weitere Informationen finden Sie unter [Mage.exe (Tool zum Generieren und Bearbeiten von Manifesten)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) und [MageUI.exe (Tool zum Generieren und Bearbeiten von Manifesten, grafischer Client)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
+ Wenn Sie Visual Studio zum Veröffentlichen einer ClickOnce-Anwendung verwenden, können nicht Sie ein zugeordnetes Laufwerk als Speicherort der Installation angeben. Allerdings können Sie die ClickOnce-Anwendung von einem zugeordneten Laufwerk zu installieren, mit dem Manifest-Generator und der Editor (Mage.exe und MageUI.exe) ändern. Weitere Informationen finden Sie unter [Mage.exe (Tool zum Generieren und Bearbeiten von Manifesten)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) und [MageUI.exe (Tool zum Generieren und Bearbeiten von Manifesten, grafischer Client)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
   
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>FTP-Protokoll für die Installation von Anwendungen wird nicht unterstützt.  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] unterstützt das Installieren von Anwendungen von HTTP 1.1-Webserver oder Dateiserver. FTP, File Transfer Protocol, wird nicht unterstützt, für die Installation von Anwendungen. Sie können FTP verwenden, um nur Anwendungen zu veröffentlichen. In der folgende Tabelle werden diese Unterschiede zusammengefasst:  

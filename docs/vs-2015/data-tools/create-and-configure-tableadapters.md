@@ -20,12 +20,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 759cf18033adb962a6ccb97a31802963e12ba5c4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ab802e36a527952a0f0b789445bbdee8224af9d2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431205"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705016"
 ---
 # <a name="create-and-configure-tableadapters"></a>Erstellen und Konfigurieren eines TableAdapters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ TableAdapters ermöglichen die Kommunikation zwischen der Anwendung und einer Da
   
  TableAdapters werden für Sie erstellt, wenn Sie eine der folgenden Aktionen ausführen:  
   
-- Führen Sie die [Assistenten zur Datenquellenkonfiguration](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) und wählen Sie entweder die **Datenbank** oder **Webdienst** Datenquellentyp.  
+- Führen Sie die [Assistenten zur Datenquellenkonfiguration](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) und wählen Sie entweder die **Datenbank** oder **Webdienst** Datenquellentyp.  
   
-- Ziehen Sie Datenbankobjekte aus [Server-Explorer](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) in die **Dataset-Designer**.  
+- Ziehen Sie Datenbankobjekte aus [Server-Explorer](https://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) in die **Dataset-Designer**.  
   
   Sie können einen neuen TableAdapter zu erstellen und konfigurieren Sie es mit einer Datenquelle, indem Sie einen TableAdapter aus der Toolbox ziehen, um einen leeren Bereich im der **Dataset-Designer** Oberfläche.  
   

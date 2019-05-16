@@ -11,26 +11,26 @@ ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4b01b38510b11f5a9928e865b1511d0ea5639ea8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ae770d36c0f030a060eccfe86bc3939dad9622d8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408578"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691871"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Unterstützung für Projekt- und Konfigurationseigenschaften
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Die **Eigenschaften** Fenster in der [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrierte Entwicklungsumgebung (IDE) kann Projekt- und Eigenschaften anzuzeigen. Sie können eine Eigenschaftenseite für Ihren eigenen Projekttyp bereitstellen, sodass der Benutzer die Eigenschaften für die Anwendung festlegen kann.  
   
- Wählen Sie einen Projektknoten **Projektmappen-Explorer** , und klicken Sie dann auf **Eigenschaften** auf die **Projekt** Menü können Sie ein Dialogfeld, das Projekt und die Konfiguration enthält öffnen Eigenschaften. In [!INCLUDE[csprcs](../../includes/csprcs-md.md)] und [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)], und Projekttypen abgeleitet diese Sprachen dieses Dialogfeld wird angezeigt, als eine Seite im Registerformat, in der [Allgemein, Umgebung, Dialogfeld Optionen](../../ide/reference/general-environment-options-dialog-box.md). Weitere Informationen finden Sie unter [nicht im Build: Exemplarische Vorgehensweise: Verfügbarmachen von Projekt- und Konfigurationseigenschaften (C#)](http://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e).  
+ Wählen Sie einen Projektknoten **Projektmappen-Explorer** , und klicken Sie dann auf **Eigenschaften** auf die **Projekt** Menü können Sie ein Dialogfeld, das Projekt und die Konfiguration enthält öffnen Eigenschaften. In [!INCLUDE[csprcs](../../includes/csprcs-md.md)] und [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)], und Projekttypen abgeleitet diese Sprachen dieses Dialogfeld wird angezeigt, als eine Seite im Registerformat, in der [Allgemein, Umgebung, Dialogfeld Optionen](../../ide/reference/general-environment-options-dialog-box.md). Weitere Informationen finden Sie unter [nicht im Build: Exemplarische Vorgehensweise: Verfügbarmachen von Projekt- und Konfigurationseigenschaften (C#)](https://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e).  
   
  Das Managed Package Framework for Projects (MPFProj) stellt Hilfsklassen zum Erstellen und Verwalten von neuen Projektsystem bereit. Anweisungen finden Sie die Quelle Code und die Kompilierung auf [MPF für Visual Studio 2013-Projekte –](http://mpfproj12.codeplex.com/).  
   
 ## <a name="persistence-of-project-and-configuration-properties"></a>Dauerhaftigkeit von Projekt- und Konfigurationseigenschaften  
- Projekt- und Eigenschaften werden in einer Projektdatei beibehalten, die eine Dateinamenerweiterung, die vom Projekttyp zugeordnet sind, z. B., csproj, vbproj und .myproj verfügt. Sprachprojekte verwenden in der Regel eine Vorlagendatei, um die Datei zu generieren. Es gibt jedoch tatsächlich mehrere Möglichkeiten zum Zuordnen von Projekttypen und Vorlagen. Weitere Informationen finden Sie unter [NIB: Visual Studio-Vorlagen](http://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041) und [Vorlagenbeschreibung-Verzeichnis (. VSDIR)-Dateien](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
+ Projekt- und Eigenschaften werden in einer Projektdatei beibehalten, die eine Dateinamenerweiterung, die vom Projekttyp zugeordnet sind, z. B., csproj, vbproj und .myproj verfügt. Sprachprojekte verwenden in der Regel eine Vorlagendatei, um die Datei zu generieren. Es gibt jedoch tatsächlich mehrere Möglichkeiten zum Zuordnen von Projekttypen und Vorlagen. Weitere Informationen finden Sie unter [NIB: Visual Studio-Vorlagen](https://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041) und [Vorlagenbeschreibung-Verzeichnis (. VSDIR)-Dateien](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
   
- Projekt- und Eigenschaften werden durch Hinzufügen von Elementen in die Vorlagendatei erstellt. Diese Eigenschaften werden dann für jedes Projekt erstellt, mit der Projekttyp, der diese Vorlage verwendet. [!INCLUDE[csprcs](../../includes/csprcs-md.md)] Projekte und die MPFProj beide verwenden die [nicht im Build: Übersicht über MSBuild](http://msdn.microsoft.com/b588fd73-a45b-4706-908f-cc131bccfbde) Schema für die Vorlagendateien. Diese Dateien haben einen Abschnitt "PropertyGroup" für jede Konfiguration. Eigenschaften von Projekten werden in den ersten Abschnitt "PropertyGroup", mit einer konfigurationsargument, das auf eine null-Zeichenfolge festgelegt, in der Regel beibehalten.  
+ Projekt- und Eigenschaften werden durch Hinzufügen von Elementen in die Vorlagendatei erstellt. Diese Eigenschaften werden dann für jedes Projekt erstellt, mit der Projekttyp, der diese Vorlage verwendet. [!INCLUDE[csprcs](../../includes/csprcs-md.md)] Projekte und die MPFProj beide verwenden die [nicht im Build: Übersicht über MSBuild](https://msdn.microsoft.com/b588fd73-a45b-4706-908f-cc131bccfbde) Schema für die Vorlagendateien. Diese Dateien haben einen Abschnitt "PropertyGroup" für jede Konfiguration. Eigenschaften von Projekten werden in den ersten Abschnitt "PropertyGroup", mit einer konfigurationsargument, das auf eine null-Zeichenfolge festgelegt, in der Regel beibehalten.  
   
  Der folgende Code zeigt den Anfang einer einfachen MSBuild-Projektdatei.  
   
@@ -93,9 +93,9 @@ Die **Eigenschaften** Fenster in der [!INCLUDE[vsprvs](../../includes/vsprvs-md.
  Die `MyConfigProp` Configuration-Eigenschaft angezeigt wird, auf der Konfigurationsseite für die Eigenschaft als **Meine Konfigurationseigenschaft** in der Kategorie **My Category**. Wenn die Option ausgewählt ist, die Beschreibung und den **My Description**, im Beschreibungsbereich wird angezeigt.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Nicht im Build: Exemplarische Vorgehensweise: Verfügbarmachen von Projekt- und Konfigurationseigenschaften (C#)](http://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)   
+ [Nicht im Build: Exemplarische Vorgehensweise: Verfügbarmachen von Projekt- und Konfigurationseigenschaften (C#)](https://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)   
  [Hinzufügen und Entfernen von Eigenschaftenseiten](../../extensibility/adding-and-removing-property-pages.md)   
  [VSPackage-Status](../../misc/vspackage-state.md)   
  [Projekte](../../extensibility/internals/projects.md)   
- [NIB: Visual Studio-Vorlagen](http://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041)   
+ [NIB: Visual Studio-Vorlagen](https://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041)   
  [Dateien zur Beschreibung des Vorlagenverzeichnisses (VSDIR)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)

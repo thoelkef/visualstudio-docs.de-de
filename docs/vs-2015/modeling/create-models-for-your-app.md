@@ -37,12 +37,12 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: feb0c1a5f486654844c592b6b946dedc9e2e02c0
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
-ms.translationtype: HT
+ms.openlocfilehash: 03f525d3b996875097ddee433d0e9ad887ee728f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "59001179"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679468"
 ---
 # <a name="create-models-for-your-app"></a>Erstellen von Modellen für Ihre App
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,7 @@ Mithilfe von Modellierungsdiagrammen können Sie Ideen zum Code und den Benutzer
 |[Erstellen von UML-Modellierungsprojekten und -Diagrammen](../modeling/create-uml-modeling-projects-and-diagrams.md)|**Erstellen von Modellen** und Hinzufügen von Diagrammen.|  
 |[Bearbeiten von UML-Modellen und -Diagrammen](../modeling/edit-uml-models-and-diagrams.md)|**Zeichnen von Diagrammen** zur Bearbeitung des Modells.|  
 |[Definieren von Paketen und Namespaces](../modeling/define-packages-and-namespaces.md)|**Erstellen von Paketen** zum Unterteilen eines Modells in Einheiten, die verschiedene Teammitglieder arbeiten können.|  
-|[Generieren von Code aus UML-Klassendiagrammen](../modeling/generate-code-from-uml-class-diagrams.md)|**Generieren Sie C#-Code aus Klassendiagrammen** auf Ihre Implementierung zu starten.|  
+|[Generieren von Code aus UML-Klassendiagrammen](../modeling/generate-code-from-uml-class-diagrams.md)|**Generieren Sie c#-Code aus Klassendiagrammen** auf Ihre Implementierung zu starten.|  
 |[Anpassen des Modells mit Profilen und Stereotypen](../modeling/customize-your-model-with-profiles-and-stereotypes.md)|**Anpassen von Modellelementen** mithilfe von Stereotypen, um die standardmäßigen UML-Modellelemente für bestimmte Zwecke zu erweitern.|  
 |[Verknüpfen von Modellelementen und Arbeitselementen](../modeling/link-model-elements-and-work-items.md)|**Erstellen Sie Verknüpfungen zwischen Modellelementen und Arbeitsaufgaben** zum Nachverfolgen von Aufgaben, Testfälle, Fehler, Anforderungen, Probleme oder andere Arten von Arbeitsschritten, die bestimmte Teile des Modells zugeordnet sind.|  
 |[Exportieren von Diagrammen als Bild](../modeling/export-diagrams-as-images.md)|**Speichern Sie Ihre Modelle und Diagramme** , damit Sie sie für andere Benutzer freigeben können, auch für diejenigen, die nicht zu verwenden [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)].|  
@@ -91,7 +91,7 @@ Mithilfe von Modellierungsdiagrammen können Sie Ideen zum Code und den Benutzer
 |[Modellieren von Benutzeranforderungen](../modeling/model-user-requirements.md)|Verwenden Sie Modelle, um die Anforderungen der Benutzer zu verdeutlichen und zu kommunizieren.|  
 |[Modellieren der Architektur Ihrer App](../modeling/model-your-app-s-architecture.md)|Verwenden Sie Modelle, um die Gesamtstruktur und das Verhalten des Systems zu beschreiben und um sicherzustellen, dass es die Anforderungen der Benutzer erfüllt.|  
 |[Überprüfen des Systems während der Entwicklung](../modeling/validate-your-system-during-development.md)|Stellen Sie sicher, dass Ihre Software mit den Anforderungen Ihrer Benutzer und der Gesamtarchitektur des Systems konsistent bleibt.|  
-|[Verwenden von Modellen im Entwicklungsprozess](../modeling/use-models-in-your-development-process.md)<br /><br /> [Verwenden von Modellen in Agile-Entwicklung](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Verwenden Sie Modelle, um das Systems während seiner Entwicklung zu verstehen und zu ändern.|  
+|[Verwenden von Modellen im Entwicklungsprozess](../modeling/use-models-in-your-development-process.md)<br /><br /> [Verwenden von Modellen in Agile-Entwicklung](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Verwenden Sie Modelle, um das Systems während seiner Entwicklung zu verstehen und zu ändern.|  
 |[Strukturieren der Modellierungslösung](../modeling/structure-your-modeling-solution.md)|Organisieren Sie Modelle in einem großen oder mittleren Projekt.|  
   
 ## <a name="external-resources"></a>Externe Ressourcen  
