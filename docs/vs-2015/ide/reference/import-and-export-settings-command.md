@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db7ccd5a4b8266122c2d295cde3cdcca87dc0576
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 91b34183e36c86290c14e3da7d17687d45cfe180
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657833"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694662"
 ---
 # <a name="import-and-export-settings-command"></a>Befehl Einstellungen importieren und exportieren
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
  Dies ist optional. Setzt die aktuellen Einstellungen zurück  
   
 ## <a name="remarks"></a>Anmerkungen  
- Wenn Sie diesen Befehl ohne Schalter ausführen, wird der Assistent **Einstellungen importieren und exportieren** geöffnet. Weitere Informationen finden Sie unter [Vorgehensweise: Freigeben von Einstellungen zwischen Computern oder Visual Studio-Versionen](http://msdn.microsoft.com/1131fb10-35c1-42da-9cd8-91aa3235b882).  
+ Wenn Sie diesen Befehl ohne Schalter ausführen, wird der Assistent **Einstellungen importieren und exportieren** geöffnet. Weitere Informationen finden Sie unter [Vorgehensweise: Freigeben von Einstellungen zwischen Computern oder Visual Studio-Versionen](https://msdn.microsoft.com/1131fb10-35c1-42da-9cd8-91aa3235b882).  
   
 ## <a name="example"></a>Beispiel  
  Der folgende Befehl exportiert die aktuellen Einstellungen in die Datei `MyFile.vssettings`.  
@@ -53,5 +53,5 @@ Tools.ImportandExportSettings /export:"c:\Files\MyFile.vssettings"
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)   
+ [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)   
  [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)

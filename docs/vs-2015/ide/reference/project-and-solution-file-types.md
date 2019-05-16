@@ -30,12 +30,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 632c3027ccb8019e372abd6400dd3f2333742e05
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ee25e9ab9145265119321053b5b8031f1b1ead80
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658102"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696025"
 ---
 # <a name="project-and-solution-file-types"></a>Projekt- und Projektmappen-Dateitypen
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,11 +54,11 @@ Von [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] wird eine Vielzahl von Datei
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] verwendet eine Vielzahl von Dateiformaten zum Speichern von projektbezogenen Informationen. Weitere Informationen finden Sie in den folgenden Hilfethemen:  
   
  [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]  
- [Für Visual C++-Projekte erstellte Dateitypen](http://msdn.microsoft.com/library/2b0ee2e0-ae81-4185-9bb9-11da3c99a283)  
+ [Für Visual C++-Projekte erstellte Dateitypen](https://msdn.microsoft.com/library/2b0ee2e0-ae81-4185-9bb9-11da3c99a283)  
   
- [Erstellen und Verwalten von Visual C++-Projekten](http://msdn.microsoft.com/library/11003cd8-9046-4630-a189-a32bf3b88047)  
+ [Erstellen und Verwalten von Visual C++-Projekten](https://msdn.microsoft.com/library/11003cd8-9046-4630-a189-a32bf3b88047)  
   
- [Unicode](http://msdn.microsoft.com/library/1002004b-4113-4380-bf63-e1570934b793)  
+ [Unicode](https://msdn.microsoft.com/library/1002004b-4113-4380-bf63-e1570934b793)  
   
 ## <a name="see-also"></a>Siehe auch  
  [Projektmappen und Projekte](../../ide/solutions-and-projects-in-visual-studio.md)

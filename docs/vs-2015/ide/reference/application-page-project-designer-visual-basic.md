@@ -15,12 +15,12 @@ caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c4e034659298cfa4aa67023767bd4c90ac745c9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 9979283258611b38e894c08446352082bcc7134e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433765"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688091"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Legen Sie auf der Seite **Anwendung** des Projekt-Designers die Anwendungseinste
  Mit den folgenden Optionen können Sie allgemeine Einstellungen für eine Anwendung konfigurieren.  
   
  **Assemblyname**  
- Gibt den Namen der Ausgabedatei an, in der das Assemblymanifest enthalten ist. Wenn Sie diese Eigenschaft ändern, wird auch die Eigenschaft **Ausgabename** geändert. Sie können diese Änderung auch an einer Eingabeaufforderung mit [/out (Visual Basic)](http://msdn.microsoft.com/library/9f148c15-0909-4cb8-a2db-777f8a8b45ae) durchführen. Informationen zum programmgesteuerten Zugreifen auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.  
+ Gibt den Namen der Ausgabedatei an, in der das Assemblymanifest enthalten ist. Wenn Sie diese Eigenschaft ändern, wird auch die Eigenschaft **Ausgabename** geändert. Sie können diese Änderung auch an einer Eingabeaufforderung mit [/out (Visual Basic)](https://msdn.microsoft.com/library/9f148c15-0909-4cb8-a2db-777f8a8b45ae) durchführen. Informationen zum programmgesteuerten Zugreifen auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.  
   
  **Stammnamespace**  
  Legt den Basisnamespace für alle Dateien im Projekt fest. Wenn Sie beispielsweise den **Stammnamespace** auf `Project1` festgelegt haben und eine `Class1` außerhalb aller Namespaces im Code vorhanden ist, würde deren Namespace `Project1.Class1` lauten. Wäre eine `Class2` in einem Namespace `Order` im Code vorhanden ist, würde deren Namespace `Project1.Order.Class2` lauten.  
@@ -43,11 +43,11 @@ Legen Sie auf der Seite **Anwendung** des Projekt-Designers die Anwendungseinste
  Wenn Sie den **Stammnamespace** löschen, können Sie die Namespacestruktur Ihres Projekts im Code festlegen.  
   
 > [!NOTE]
-> Wenn Sie das Global-Schlüsselwort in einer [Namespaceanweisung](http://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2) verwenden, können Sie einen Namespace außerhalb des Stammnamespaces Ihres Projekts definieren. Wenn Sie den **Stammnamespace** löschen, wird der Namespace `Global` der Namespace der obersten Ebene, wodurch die Notwendigkeit entfällt, das `Global`-Schlüsselwort in einer `Namespace`-Anweisung zu verwenden. Weitere Informationen finden Sie unter „Global-Schlüsselwort in Namespace-Anweisungen“ unter [Namespaces in Visual Basic](http://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88).  
+> Wenn Sie das Global-Schlüsselwort in einer [Namespaceanweisung](https://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2) verwenden, können Sie einen Namespace außerhalb des Stammnamespaces Ihres Projekts definieren. Wenn Sie den **Stammnamespace** löschen, wird der Namespace `Global` der Namespace der obersten Ebene, wodurch die Notwendigkeit entfällt, das `Global`-Schlüsselwort in einer `Namespace`-Anweisung zu verwenden. Weitere Informationen finden Sie unter „Global-Schlüsselwort in Namespace-Anweisungen“ unter [Namespaces in Visual Basic](https://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88).  
   
- Informationen zum Erstellen von Namespaces im Code finden Sie unter [Namespace-Anweisung](http://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2).  
+ Informationen zum Erstellen von Namespaces im Code finden Sie unter [Namespace-Anweisung](https://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2).  
   
- Weitere Informationen zur Stammnamespace-Eigenschaft finden Sie unter [/rootnamespace](http://msdn.microsoft.com/library/e9245edf-6bef-420d-a7c7-324117752783).  
+ Weitere Informationen zur Stammnamespace-Eigenschaft finden Sie unter [/rootnamespace](https://msdn.microsoft.com/library/e9245edf-6bef-420d-a7c7-324117752783).  
   
  Informationen zum programmgesteuerten Zugreifen auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.RootNamespace%2A>.  
   
@@ -71,10 +71,10 @@ Legen Sie auf der Seite **Anwendung** des Projekt-Designers die Anwendungseinste
 > [!NOTE]
 > Die Windows Runtime kann Typen so projizieren, dass sie unabhängig von der verwendeten Sprache als systemeigene Objekte erscheinen. Beispielsweise verwenden JavaScript-Anwendungen, die mit der Windows Runtime interagieren, diese als JavaScript-Objektsatz, und C#-Anwendungen benutzen die Bibliothek als eine Sammlung von .NET-Objekten. Wenn Sie die Ausgabe des Projekts als WinMD-Datei packen, können Sie die gleiche Technologie nutzen, die Windows Runtime verwendet.  
   
- Weitere Informationen zur Eigenschaft **Anwendungstyp** finden Sie unter [/target (Visual Basic)](http://msdn.microsoft.com/library/e0954147-548b-461f-9c4b-a8f88845616c). Informationen zum programmgesteuerten Zugreifen auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.OutputType%2A>.  
+ Weitere Informationen zur Eigenschaft **Anwendungstyp** finden Sie unter [/target (Visual Basic)](https://msdn.microsoft.com/library/e0954147-548b-461f-9c4b-a8f88845616c). Informationen zum programmgesteuerten Zugreifen auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.OutputType%2A>.  
   
  **Symbol**  
- Legt die ICO-Datei fest, die als Programmsymbol verwendet werden soll. Wählen Sie  **\<Durchsuchen...>** aus, um nach einer vorhandenen Grafik zu suchen. Weitere Informationen finden Sie unter [/win32icon](http://msdn.microsoft.com/library/aecaab01-9353-46c5-941c-6edabd4eff92) (oder [/win32icon (C#-Compileroptionen)](http://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138)). Informationen zum programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.  
+ Legt die ICO-Datei fest, die als Programmsymbol verwendet werden soll. Wählen Sie  **\<Durchsuchen...>** aus, um nach einer vorhandenen Grafik zu suchen. Weitere Informationen finden Sie unter [/win32icon](https://msdn.microsoft.com/library/aecaab01-9353-46c5-941c-6edabd4eff92) (oder [/win32icon (C#-Compileroptionen)](https://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138)). Informationen zum programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.  
   
  **Startformular/Startobjekt/Start-URI**  
  Gibt das Startformular oder den Einstiegspunkt der Anwendung an.  
@@ -85,7 +85,7 @@ Legen Sie auf der Seite **Anwendung** des Projekt-Designers die Anwendungseinste
   
  Wenn **Anwendungsframework aktivieren** deaktiviert ist, wird diese Liste zu **Startobjekt** und zeigt sowohl Formulare als auch Klassen oder Module mit einer `Sub Main` an.  
   
- **Startobjekt**  definiert den Einstiegspunkt, der aufgerufen werden soll, wenn die Anwendung geladen wird. Dieser wird üblicherweise entweder auf das Hauptformular der Anwendung oder auf die `Sub Main`-Prozedur festgelegt, die beim Start der Anwendung ausgeführt werden soll. Da Klassenbibliotheken über keinen Einstiegspunkt verfügen, ist ihre einzige Option für diese Eigenschaft **(Keine)**. Weitere Informationen finden Sie unter [/main](http://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0). Informationen zum programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.StartupObject%2A>.  
+ **Startobjekt**  definiert den Einstiegspunkt, der aufgerufen werden soll, wenn die Anwendung geladen wird. Dieser wird üblicherweise entweder auf das Hauptformular der Anwendung oder auf die `Sub Main`-Prozedur festgelegt, die beim Start der Anwendung ausgeführt werden soll. Da Klassenbibliotheken über keinen Einstiegspunkt verfügen, ist ihre einzige Option für diese Eigenschaft **(Keine)**. Weitere Informationen finden Sie unter [/main](https://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0). Informationen zum programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.StartupObject%2A>.  
   
  **Assemblyinformationen**  
  Klicken Sie auf diese Schaltfläche, um das Dialogfeld[Assemblyinformationen](../../ide/reference/assembly-information-dialog-box.md) anzuzeigen.  
@@ -110,7 +110,7 @@ Legen Sie auf der Seite **Anwendung** des Projekt-Designers die Anwendungseinste
  Die folgenden Einstellungen sind im Abschnitt **Eigenschaften des Windows-Anwendungsframeworks** verfügbar. Diese Optionen sind nur verfügbar, wenn das Kontrollkästchen **Anwendungsframework aktivieren** aktiviert ist. Im folgenden Abschnitt werden die **Eigenschaften des Windows-Anwendungsframeworks**-Einstellungen für Windows Presentation Foundation (WPF)-Anwendungen beschrieben.  
   
  **Visuelle XP-Stile aktivieren**  
- Aktiviert oder deaktiviert die visuellen Windows XP-Stile, auch als *Windows XP-Designs* bezeichnet. Die visuellen Windows XP-Stile aktivieren z.B. Steuerelemente mit gerundeten Ecken und dynamischen Farben. Die Option ist standardmäßig aktiviert. Weitere Informationen zu visuellen Stilen für Windows XP finden Sie unter [Windows XP-Features und Windows Forms-Steuerelemente](http://msdn.microsoft.com/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)).  
+ Aktiviert oder deaktiviert die visuellen Windows XP-Stile, auch als *Windows XP-Designs* bezeichnet. Die visuellen Windows XP-Stile aktivieren z.B. Steuerelemente mit gerundeten Ecken und dynamischen Farben. Die Option ist standardmäßig aktiviert. Weitere Informationen zu visuellen Stilen für Windows XP finden Sie unter [Windows XP-Features und Windows Forms-Steuerelemente](https://msdn.microsoft.com/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)).  
   
  **Einzelinstanzanwendung erstellen**  
  Aktivieren Sie dieses Kontrollkästchen, um zu verhindern, dass Benutzer mehrere Instanzen der Anwendung ausführen. Das Kontrollkästchen ist standardmäßig deaktiviert. Mit dieser Einstellung können mehrere Instanzen der Anwendung ausgeführt werden.  
@@ -159,4 +159,4 @@ Legen Sie auf der Seite **Anwendung** des Projekt-Designers die Anwendungseinste
  Das Objekt <xref:System.Windows.Application> löst Ereignisse aus, wenn bestimmte Anwendungszustandsänderungen stattfinden (z.B. beim Starten oder Herunterfahren der Anwendung). Eine vollständige Liste der Ereignisse, die diese Klasse verfügbar macht, finden Sie unter <xref:System.Windows.Application>. Diese Ereignisse werden im Benutzercodeabschnitt der partiellen `Application`-Klasse verarbeitet.  
   
 ## <a name="see-also"></a>Siehe auch  
-[Verwalten von Anwendungseigenschaften](../../ide/application-properties.md) [Schreiben von Code in Office-Projektmappen](http://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
+[Verwalten von Anwendungseigenschaften](../../ide/application-properties.md) [Schreiben von Code in Office-Projektmappen](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)

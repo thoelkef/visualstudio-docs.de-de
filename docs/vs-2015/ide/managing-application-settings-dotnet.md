@@ -13,12 +13,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84a2449e9686f71cfd932a2bf6047ed0208da1d0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d8e88bcf67c430bdd24c4338d92a30b6a7c10fef
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114807"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674997"
 ---
 # <a name="managing-application-settings-net"></a>Verwalten von Anwendungseinstellungen (.NET)
 
@@ -59,7 +59,7 @@ Beim Erstellen einer benutzerspezifischen Einstellung (z. B. einer Standardschri
 >
 > Wenn Sie Informationen für Verbindungszeichenfolgen aus einer externen Quelle übernehmen (z. B. bei Eingabe einer Benutzer-ID und eines Kennworts durch einen Benutzer), müssen Sie sicherstellen, dass die Werte zum Aufbau der Verbindungszeichenfolge keine zusätzlichen Parameter für Verbindungszeichenfolgen enthalten, die das Verhalten der Verbindung ändern oder ihre Sicherheit gefährden.
 >
-> Verwenden Sie am besten die geschützte Konfiguration, um vertrauliche Informationen in der Konfigurationsdatei zu verschlüsseln. Weitere Informationen finden Sie unter [Schützen von Verbindungsinformationen](http://msdn.microsoft.com/library/1471f580-bcd4-4046-bdaf-d2541ecda2f4).
+> Verwenden Sie am besten die geschützte Konfiguration, um vertrauliche Informationen in der Konfigurationsdatei zu verschlüsseln. Weitere Informationen finden Sie unter [Schützen von Verbindungsinformationen](https://msdn.microsoft.com/library/1471f580-bcd4-4046-bdaf-d2541ecda2f4).
 
 > [!NOTE]
 > Da für Klassenbibliotheken das Modell der Konfigurationsdateien nicht verwendet wird, gelten Anwendungseinstellungen nicht für Klassenbibliotheksprojekte. Ausgenommen hiervon sind DLL-Projekte in Visual Studio Tools for Office, die über Konfigurationsdateien verfügen können.
@@ -74,7 +74,7 @@ Zunächst sucht der Einstellungs-Designer nach der vom Projektsystem erstellten 
 
 ## <a name="accessing-or-changing-application-settings-at-run-time-in-visual-basic"></a>Ändern von Anwendungseinstellungen zur Laufzeit nach entsprechendem Zugriff in Visual Basic
 
-In [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] -Projekten können Sie mit dem `My.Settings` -Objekt zur Laufzeit auf Anwendungseinstellungen zugreifen. Klicken Sie auf der Seite **Einstellungen** auf die Schaltfläche **Code anzeigen** , um die Datei Settings.vb anzuzeigen. Settings.vb definiert die `Settings` -Klasse, sodass Sie die folgenden Ereignisse für die Settings-Klasse handhaben können: <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>, <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>, <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>und <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>. Beachten Sie, dass die `Settings` -Klasse in der Datei Settings.vb eine partielle Klasse ist, die nur den im Besitz des Benutzers befindlichen Code anzeigt und nicht die gesamte generierte Klasse. Weitere Informationen über den Zugriff auf Anwendungseinstellungen über das `My.Settings` -Objekt finden Sie unter [Accessing Application Settings](http://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)verfügt.
+In [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] -Projekten können Sie mit dem `My.Settings` -Objekt zur Laufzeit auf Anwendungseinstellungen zugreifen. Klicken Sie auf der Seite **Einstellungen** auf die Schaltfläche **Code anzeigen** , um die Datei Settings.vb anzuzeigen. Settings.vb definiert die `Settings` -Klasse, sodass Sie die folgenden Ereignisse für die Settings-Klasse handhaben können: <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>, <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>, <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>und <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>. Beachten Sie, dass die `Settings` -Klasse in der Datei Settings.vb eine partielle Klasse ist, die nur den im Besitz des Benutzers befindlichen Code anzeigt und nicht die gesamte generierte Klasse. Weitere Informationen über den Zugriff auf Anwendungseinstellungen über das `My.Settings` -Objekt finden Sie unter [Accessing Application Settings](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)verfügt.
 
 Die Werte aller benutzerspezifischen Einstellungen, die der Benutzer zur Laufzeit ändert (z. B. die Position eines Formulars), werden in der Datei user.config gespeichert. Beachten Sie, dass die Standardwerte weiterhin in app.config gespeichert sind.
 
@@ -98,8 +98,8 @@ Sie müssen die `Save` -Methode dieser Wrapperklasse explizit aufrufen, damit di
 Properties.Settings.Default.Save();
 ```
 
-Allgemeine Informationen über das Zugreifen auf Anwendungseinstellungen über die Klasse `Settings` finden Sie unter [Übersicht über Anwendungseinstellungen](http://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc). Informationen über das Durchlaufen der Einstellungen finden Sie in diesem [Forumsbeitrag](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
+Allgemeine Informationen über das Zugreifen auf Anwendungseinstellungen über die Klasse `Settings` finden Sie unter [Übersicht über Anwendungseinstellungen](https://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc). Informationen über das Durchlaufen der Einstellungen finden Sie in diesem [Forumsbeitrag](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Zugreifen auf Anwendungseinstellungen](http://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)
+- [Zugreifen auf Anwendungseinstellungen](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)
