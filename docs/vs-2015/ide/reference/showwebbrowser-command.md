@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a1fc4f325167fa0df1f5f69cff19c25af5073d82
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c3cd5d04efab6f6cb5641c7e0c4c2a8547e1ef00
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667897"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689420"
 ---
 # <a name="showwebbrowser-command"></a>Befehl "ShowWebBrowser"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ View.ShowWebBrowser URL [/new][/ext]
  Im folgenden Beispiel wird die Homepage von MSDN Online in einem Webbrowser außerhalb der IDE gezeigt. Falls bereits eine Instanz des Webbrowsers geöffnet ist, wird sie verwendet. Andernfalls wird eine neue Instanz gestartet.  
   
 ```  
->View.ShowWebBrowser http://msdn.microsoft.com /ext  
+>View.ShowWebBrowser https://msdn.microsoft.com /ext  
 ```  
   
 ## <a name="see-also"></a>Siehe auch  

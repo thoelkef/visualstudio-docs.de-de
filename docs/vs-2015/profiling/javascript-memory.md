@@ -23,12 +23,12 @@ caps.latest.revision: 54
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 816db8b2bc5d78541dc089d75ff155b98231ffd5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 5169f59ec12482fd35e09d4eb226277b7fb01455
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435651"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704531"
 ---
 # <a name="javascript-memory"></a>JavaScript-Memory
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -382,15 +382,15 @@ if (performance && performance.mark) {
   
 - Suchen Sie nach Objekten, die versehentlich im Arbeitsspeicher beibehalten werden, nachdem der Benutzer zu einer neuen Seite navigiert ist. Dies ist eine häufige Ursache von Arbeitsspeicherproblemen. Beispiel:  
   
-    - Die falsche Verwendung der Funktion [URL.CreateObjectUrl](http://msdn.microsoft.com/library/windows/apps/hh453196.aspx) kann dieses Problem verursachen.  
+    - Die falsche Verwendung der Funktion [URL.CreateObjectUrl](https://msdn.microsoft.com/library/windows/apps/hh453196.aspx) kann dieses Problem verursachen.  
   
-    - Einige Objekte stellen möglicherweise eine `dispose` -Methode und Verwendungsempfehlungen bereit. So sollten Sie zum Beispiel `dispose` für ein [WinJS.Binding.List](http://msdn.microsoft.com/library/windows/apps/Hh700774.aspx) aufrufen, wenn Sie die `createFiltered` -Methode der Liste aufrufen und dann von einer Seite weg navigieren.  
+    - Einige Objekte stellen möglicherweise eine `dispose` -Methode und Verwendungsempfehlungen bereit. So sollten Sie zum Beispiel `dispose` für ein [WinJS.Binding.List](https://msdn.microsoft.com/library/windows/apps/Hh700774.aspx) aufrufen, wenn Sie die `createFiltered` -Methode der Liste aufrufen und dann von einer Seite weg navigieren.  
   
     - Sie müssen unter Umständen einen oder mehrere Eventlistener entfernen. Weitere Informationen finden Sie unter [View DOM event listeners](../debugger/view-dom-event-listeners.md).  
   
 - Sehen Sie sich den letzten Teil [dieses Video](http://channel9.msdn.com/Events/Build/2013/3-316) von der Build 2013-Konferenz über die JavaScript-Speicheranalyse an.  
   
-- Lesen Sie [Verwalten des Arbeitsspeichers in Windows Store-Apps](http://msdn.microsoft.com/magazine/jj651575.aspx).  
+- Lesen Sie [Verwalten des Arbeitsspeichers in Windows Store-Apps](https://msdn.microsoft.com/magazine/jj651575.aspx).  
   
 - Erwägen Sie, vorübergehend Code zu ändern, um Probleme zu isolieren. Auf diese Weise können Sie z. B. folgende Vorgänge durchführen:  
   

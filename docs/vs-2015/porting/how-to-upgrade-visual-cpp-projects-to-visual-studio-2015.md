@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 198a848f953881af5a7ac4b042c74b368d202d06
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 022966ae483b958da6032769e219f4ab6750f330
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425890"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696440"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Gewusst wie: Upgrade von Visual C++-Projekten auf Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,4 +54,4 @@ Beim ersten Öffnen eines Visual C++-Projekts, das in einer früheren Version vo
  Wenn Sie weiterhin ein benutzerdefiniertes PlatformToolset in [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]verwenden möchten, muss das Toolset unter %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ auf einem x86-Computer oder unter %ProgramFiles (x86)%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ auf einem x64-Computer gespeichert sein. Informationen zum Erstellen eines benutzerdefinierten PlatformToolset finden Sie im Visual C++-Teamblog im Beitrag zur [systemeigenen Festlegung von Zielversionen in C++](http://go.microsoft.com/fwlink/?LinkId=248587) .
 
 ## <a name="see-also"></a>Siehe auch
- [Visual C++-Handbuch: Portieren und Aktualisieren](http://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb) [Portieren, Migrieren und Upgraden von Visual Studio-Projekten](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)
+ [Visual C++-Handbuch: Portieren und Aktualisieren](https://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb) [Portieren, Migrieren und Upgraden von Visual Studio-Projekten](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)

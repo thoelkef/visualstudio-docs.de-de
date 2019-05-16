@@ -15,12 +15,12 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 43f3a1c388a7b29fe83654d89b63e3fd304ebfa0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 2744dabdb79d777661c1ed73e8a85b05b5308624
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437257"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704765"
 ---
 # <a name="application-page-project-designer-c"></a>Seite "Anwendung", Projekt-Designer (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,12 +35,12 @@ Legen Sie auf der Seite **Anwendung** des **Projekt-Designers** die Anwendungsei
  Mit den folgenden Optionen können Sie allgemeine Einstellungen für die Anwendung konfigurieren.  
   
  **Assemblyname**  
- Gibt den Namen der Ausgabedatei an, in der das Assemblymanifest enthalten ist. Durch Ändern dieser Eigenschaft wird auch die Eigenschaft **Ausgabename** geändert. Sie können diese Änderung auch mithilfe von [/out (C#-Compileroptionen)](http://msdn.microsoft.com/library/70d91d01-7bd2-4aea-ba8b-4e9807e9caa5) in der Befehlszeile vornehmen. Informationen zum programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.  
+ Gibt den Namen der Ausgabedatei an, in der das Assemblymanifest enthalten ist. Durch Ändern dieser Eigenschaft wird auch die Eigenschaft **Ausgabename** geändert. Sie können diese Änderung auch mithilfe von [/out (C#-Compileroptionen)](https://msdn.microsoft.com/library/70d91d01-7bd2-4aea-ba8b-4e9807e9caa5) in der Befehlszeile vornehmen. Informationen zum programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.  
   
  **Standardnamespace**  
  Legt den Basisnamespace für alle Dateien fest, die dem Projekt hinzugefügt werden.  
   
- Weitere Informationen zum Erstellen von Namespaces im Code finden Sie unter [Namespace](http://msdn.microsoft.com/library/0a788423-9110-42e0-97d9-bda41ca4870f).  
+ Weitere Informationen zum Erstellen von Namespaces im Code finden Sie unter [Namespace](https://msdn.microsoft.com/library/0a788423-9110-42e0-97d9-bda41ca4870f).  
   
  Informationen zum programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.RootNamespace%2A>.  
   
@@ -64,7 +64,7 @@ Legen Sie auf der Seite **Anwendung** des **Projekt-Designers** die Anwendungsei
 > [!NOTE]
 > Die Windows Runtime kann Typen so projizieren, dass sie unabhängig von der verwendeten Sprache als systemeigene Objekte erscheinen. Beispielsweise verwenden JavaScript-Anwendungen, die mit der Windows Runtime interagieren, diese als JavaScript-Objektsatz, und C#-Anwendungen benutzen die Bibliothek als eine Sammlung von .NET-Objekten. Wenn Sie die Ausgabe des Projekts als WinMD-Datei packen, können Sie die gleiche Technologie nutzen, die Windows Runtime verwendet.  
   
- Weitere Informationen über die Eigenschaft **Anwendungstyp** finden Sie unter [/target (C#-Compileroptionen)](http://msdn.microsoft.com/library/a18bbd8e-bbf7-49e7-992c-717d0eb1f76f). Informationen zum programmgesteuerten Zugreifen auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.OutputType%2A>.  
+ Weitere Informationen über die Eigenschaft **Anwendungstyp** finden Sie unter [/target (C#-Compileroptionen)](https://msdn.microsoft.com/library/a18bbd8e-bbf7-49e7-992c-717d0eb1f76f). Informationen zum programmgesteuerten Zugreifen auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.OutputType%2A>.  
   
  **Assemblyinformationen**  
  Durch Klicken auf diese Schaltfläche wird das Dialogfeld[Assemblyinformationen](../../ide/reference/assembly-information-dialog-box.md) angezeigt.  
@@ -74,7 +74,7 @@ Legen Sie auf der Seite **Anwendung** des **Projekt-Designers** die Anwendungsei
   
  In einem WPF-Browseranwendungsprojekt ist diese Option standardmäßig **(Nicht festgelegt)**. Die andere Option ist *Projectname*.App. Bei dieser Art von Projekten müssen Sie den Start-URI so einstellen, dass beim Starten der Anwendung eine UI-Ressource geladen wird. Öffnen Sie hierfür im Projekt die Datei „Application.xaml“, und legen Sie die `StartupUri`-Eigenschaft auf eine XAML-Datei in Ihrem Projekt fest, beispielsweise „Window1.xaml“. Eine Liste der zulässigen Stammelemente finden Sie unter <xref:System.Windows.Application.StartupUri%2A>. In einer Klasse im Projekt müssen Sie auch eine `public static void Main()`-Methode definieren. Diese Klasse wird in der **Startobjekt**-Liste als *ProjectName.ClassName* angezeigt. Sie können dann die Klasse als Startobjekt auswählen.  
   
- Weitere Informationen hierzu finden Sie unter [/main (C#-Compileroptionen)](http://msdn.microsoft.com/library/975cf4d5-36ac-4530-826c-4aad0c7f2049). Informationen zum programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.StartupObject%2A>.  
+ Weitere Informationen hierzu finden Sie unter [/main (C#-Compileroptionen)](https://msdn.microsoft.com/library/975cf4d5-36ac-4530-826c-4aad0c7f2049). Informationen zum programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.StartupObject%2A>.  
   
 ## <a name="resources"></a>Ressourcen  
  Mit den folgenden Optionen können Sie allgemeine Einstellungen für die Anwendung konfigurieren.  
@@ -83,7 +83,7 @@ Legen Sie auf der Seite **Anwendung** des **Projekt-Designers** die Anwendungsei
  Standardmäßig ist dieses Optionsfeld markiert, und die Optionen **Symbol** und **Manifest** sind aktiviert. Dadurch können Sie Ihr eigenes Symbol oder andere Optionen zur Generierung von Manifesten auswählen. Lassen Sie dieses Optionsfeld ausgewählt, es sei denn, Sie stellen eine Ressourcendatei für das Projekt bereit.  
   
  **Symbol**  
- Legt die ICO-Datei fest, die als Programmsymbol verwendet werden soll. Klicken Sie auf die Schaltfläche mit den Auslassungszeichen, um eine vorhandene Grafik zu suchen, oder geben Sie den Namen der gewünschten Datei ein. Weitere Informationen finden Sie unter [/win32icon (C#-Compileroptionen)](http://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138). Informationen zum programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.  
+ Legt die ICO-Datei fest, die als Programmsymbol verwendet werden soll. Klicken Sie auf die Schaltfläche mit den Auslassungszeichen, um eine vorhandene Grafik zu suchen, oder geben Sie den Namen der gewünschten Datei ein. Weitere Informationen finden Sie unter [/win32icon (C#-Compileroptionen)](https://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138). Informationen zum programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.  
   
  **Manifest**  
  Aktiviert eine Manifestgenerierungsoption, wenn die Anwendung auf Windows Vista unter Benutzerkontensteuerung (UAC) ausgeführt wird. Diese Option kann die folgenden Werte aufweisen:  
@@ -101,4 +101,4 @@ Legen Sie auf der Seite **Anwendung** des **Projekt-Designers** die Anwendungsei
   
 ## <a name="see-also"></a>Siehe auch  
 [Verwalten von Anwendungseigenschaften](../../ide/application-properties.md)  
- [Writing Code in Office Solutions](http://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
+ [Writing Code in Office Solutions](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)

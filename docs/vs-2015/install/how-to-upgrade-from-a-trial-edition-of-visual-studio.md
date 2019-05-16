@@ -9,12 +9,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 35c81dd879866d6a707e58add4a4fa94a254a918
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: a92d0ead091167437904c384b8f9afca2a3ab89c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433031"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696206"
 ---
 # <a name="how-to-upgrade-from-a-trial-edition-of-visual-studio"></a>Gewusst wie: Aktualisieren von einer Visual Studio-Testversion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,4 +44,4 @@ Sie können das Vorabrelease von Visual Studio 14 Tage lang testen, ohne das Pro
     > Zur Registrierung und Freischaltung jede Edition von Visual Studio ist eine Internetverbindung erforderlich. Nach der Registrierung von Visual Studio ist die Internetverbindung optional.
 
 ## <a name="see-also"></a>Siehe auch
- [Installieren von Visual Studio](../install/install-visual-studio-2015.md) [Anmelden bei Visual Studio](../ide/signing-in-to-visual-studio.md) [Gewusst wie: Suchen des Visual Studio Product Key](../install/how-to-locate-the-visual-studio-product-key.md) [Suchen oder Ändern des Product Key für Team Foundation Server](http://msdn.microsoft.com/library/64f29927-b520-4c9f-b633-bcb527e562cd) [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+ [Installieren von Visual Studio](../install/install-visual-studio-2015.md) [Anmelden bei Visual Studio](../ide/signing-in-to-visual-studio.md) [Gewusst wie: Suchen des Visual Studio Product Key](../install/how-to-locate-the-visual-studio-product-key.md) [Suchen oder Ändern des Product Key für Team Foundation Server](https://msdn.microsoft.com/library/64f29927-b520-4c9f-b633-bcb527e562cd) [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

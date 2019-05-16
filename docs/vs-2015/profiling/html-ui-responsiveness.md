@@ -20,12 +20,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 91e2c0f91d3234dd9f96a29cc914ae9e4d3847b6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: a41c0c48eea4b766a9166922b2a89dfa1740e8bd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438389"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697622"
 ---
 # <a name="html-ui-responsiveness"></a>HTML-UI-Reaktionsfähigkeit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -324,7 +324,7 @@ if (performance.mark && performance.measure) {
   
 - **Decodieren von Bildern.** Gibt die Zeit an, die für das Dekomprimieren und Decodieren von Bildern aufgewendet wurde.  
   
-  Für die Kategorien Skript und Formatieren stellt der Benutzeroberflächen-Reaktionsfähigkeits-Profiler möglicherweise Daten bereit, die Sie im Zeitachsendetaildiagramm bearbeiten können. Wenn Sie Skripterstellungsprobleme festgestellt haben, können Sie den CPU-Sampling-Profiler mit dem Benutzeroberflächen-Reaktionsfähigkeits-Profiler ausführen. Um ausführlichere Daten abzurufen, können Sie alternativ den Visual Studio-Funktionsprofiler verwenden. Weitere Informationen finden Sie unter [Analysieren von JavaScript-Funktionstimingdaten](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b).  
+  Für die Kategorien Skript und Formatieren stellt der Benutzeroberflächen-Reaktionsfähigkeits-Profiler möglicherweise Daten bereit, die Sie im Zeitachsendetaildiagramm bearbeiten können. Wenn Sie Skripterstellungsprobleme festgestellt haben, können Sie den CPU-Sampling-Profiler mit dem Benutzeroberflächen-Reaktionsfähigkeits-Profiler ausführen. Um ausführlichere Daten abzurufen, können Sie alternativ den Visual Studio-Funktionsprofiler verwenden. Weitere Informationen finden Sie unter [Analysieren von JavaScript-Funktionstimingdaten](https://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b).  
   
   Für die anderen Ereigniskategorien können Sie Plattformnebeneffekte identifizieren, die durch das Hinzufügen von Funktionen zur App verursacht werden. In diesen Fällen können Sie jedoch bestimmte Leistungsprobleme möglicherweise nicht mit dem Benutzeroberflächen-Reaktionsfähigkeits-Profiler beheben.  
   
@@ -358,9 +358,9 @@ if (performance.mark && performance.measure) {
   
 - Sehen Sie sich [dieses Video](http://channel9.msdn.com/Events/Build/2013/3-316) von der Build 2013-Konferenz über den Benutzeroberflächen-Reaktionsfähigkeits-Profiler an.  
   
-- Lesen Sie die Leistungstipps für die Windows Store-Apps, die mit JavaScript für Windows erstellt wurden. Weitere Informationen finden Sie unter [Bewährte Methoden zur Leistungsverbesserung von Windows Store-Apps mit JavaScript](http://msdn.microsoft.com/library/windows/apps/hh465194.aspx).  
+- Lesen Sie die Leistungstipps für die Windows Store-Apps, die mit JavaScript für Windows erstellt wurden. Weitere Informationen finden Sie unter [Bewährte Methoden zur Leistungsverbesserung von Windows Store-Apps mit JavaScript](https://msdn.microsoft.com/library/windows/apps/hh465194.aspx).  
   
-- Informationen zum Ausführungsmodell von Singlethreadcode und der entsprechenden Leistung finden Sie unter [Ausführen von Code](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
+- Informationen zum Ausführungsmodell von Singlethreadcode und der entsprechenden Leistung finden Sie unter [Ausführen von Code](https://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Analysieren der App-Leistung](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)
+ [Analysieren der App-Leistung](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)

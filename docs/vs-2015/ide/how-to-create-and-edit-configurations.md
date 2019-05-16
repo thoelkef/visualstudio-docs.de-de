@@ -19,12 +19,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b76ad8ed6e0cc8bdf60a2053dd11106b5e03a7d1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 35cda86854bede07c8f1d4830f05607b7fab3643
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422900"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680413"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Gewusst wie: Erstellen und Bearbeiten von Konfigurationen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Es können mehrere Buildkonfigurationen für eine Projektmappe erstellt werden. 
   
      Das Fenster **Eigenschaftenseiten** wird geöffnet.  
   
-     Sie können Eigenschaften für die Konfigurationen festlegen. Bei einer Releasekonfiguration z. B. können Sie angeben, dass Code bei Erstellung der Projektmappe optimiert wird, und bei einer Debugkonfiguration können Sie angeben, dass das Symbol `DEBUG` für die bedingte Kompilierung enthalten ist. Weitere Informationen zu den Einstellungen für die Eigenschaftenseiten finden Sie unter [Einführung zum Projekt-Designer](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
+     Sie können Eigenschaften für die Konfigurationen festlegen. Bei einer Releasekonfiguration z. B. können Sie angeben, dass Code bei Erstellung der Projektmappe optimiert wird, und bei einer Debugkonfiguration können Sie angeben, dass das Symbol `DEBUG` für die bedingte Kompilierung enthalten ist. Weitere Informationen zu den Einstellungen für die Eigenschaftenseiten finden Sie unter [Einführung zum Projekt-Designer](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
   
 ## <a name="creating-and-modifying-project-configurations"></a>Erstellen und Ändern von Projektkonfigurationen  
   
@@ -126,4 +126,4 @@ Es können mehrere Buildkonfigurationen für eine Projektmappe erstellt werden. 
 ## <a name="see-also"></a>Siehe auch  
  [Grundlagen der Buildkonfiguration](../ide/understanding-build-configurations.md)   
  [Erstellen und Bereinigen von Projekten und Projektmappen in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
- [NIB: Gewusst wie: Ändern von Projekteigenschaften und Konfigurationseinstellungen](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [NIB: Gewusst wie: Ändern von Projekteigenschaften und Konfigurationseinstellungen](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)

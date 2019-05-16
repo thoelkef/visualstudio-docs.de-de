@@ -13,12 +13,12 @@ caps.latest.revision: 52
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: acf49209927d2d27d717c797d0abd729795a2c20
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 4f98d2209ca3a2869e4be69a9c46faa5c4755a06
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441124"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699913"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Dialogfeld "Erweiterte Compilereinstellungen (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Verwenden Sie das Dialogfeld **Erweiterte Compilereinstellungen** des **Projekt-
   
 2. Klicken Sie im Menü **Projekt** auf **Eigenschaften**. Sobald der **Projekt-Designer** angezeigt wird, klicken Sie auf die Registerkarte **Kompilieren**.  
   
-3. Wählen Sie auf der Seite [„Kompilieren“, Projekt-Designer (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) die **Konfiguration** und **Plattform** aus. In vereinfachten Buildkonfigurationen werden die Listen **Konfiguration** und **Plattform** nicht angezeigt. Weitere Informationen finden Sie unter [Debug- und Releaseprojektkonfigurationen](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+3. Wählen Sie auf der Seite [„Kompilieren“, Projekt-Designer (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) die **Konfiguration** und **Plattform** aus. In vereinfachten Buildkonfigurationen werden die Listen **Konfiguration** und **Plattform** nicht angezeigt. Weitere Informationen finden Sie unter [Debug- und Releaseprojektkonfigurationen](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
 4. Klicken Sie auf **Erweiterte Kompilierungsoptionen**.  
   
@@ -55,7 +55,7 @@ Verwenden Sie das Dialogfeld **Erweiterte Compilereinstellungen** des **Projekt-
  Wählen Sie aus der Liste **None** (Keine), **Full** (Vollständig) oder **pdb-only** (nur pdb) aus. **None** (Keine) gibt an, das keine Informationen zum Debuggen generiert werden. **Full** (Vollständig) gibt an, dass vollständige Debuginformationen generiert werden. **pdb-only** (nur pdb) gibt an, dass nur PDB-Debuginformationen generiert werden. Standardmäßig ist der Wert **Full** festgelegt.  
   
 ## <a name="compilation-constants"></a>Kompilierungskonstanten  
- Bedingte Kompilierungskonstanten haben einen ähnlichen Effekt wie das Verwenden einer [#Const](http://msdn.microsoft.com/library/707669e5-23f9-4f17-8622-a0d534429386)-Präprozessoranweisung in einer Quelldatei, außer dass Konstanten öffentlich sind und für alle Dateien im Projekt gelten. Sie können die bedingten Kompilierungskonstanten zusammen mit der Direktive [#If...Then...#Else](http://msdn.microsoft.com/library/10bba104-e3fd-451b-b672-faa472530502) verwenden, um Quelldateien bedingt zu kompilieren. Weitere Informationen finden Sie unter [Bedingte Kompilierung](http://msdn.microsoft.com/library/9c35e55e-7eee-44fb-a586-dad1f1884848).  
+ Bedingte Kompilierungskonstanten haben einen ähnlichen Effekt wie das Verwenden einer [#Const](https://msdn.microsoft.com/library/707669e5-23f9-4f17-8622-a0d534429386)-Präprozessoranweisung in einer Quelldatei, außer dass Konstanten öffentlich sind und für alle Dateien im Projekt gelten. Sie können die bedingten Kompilierungskonstanten zusammen mit der Direktive [#If...Then...#Else](https://msdn.microsoft.com/library/10bba104-e3fd-451b-b672-faa472530502) verwenden, um Quelldateien bedingt zu kompilieren. Weitere Informationen finden Sie unter [Bedingte Kompilierung](https://msdn.microsoft.com/library/9c35e55e-7eee-44fb-a586-dad1f1884848).  
   
  **DEBUG-Konstante definieren**  
  In der Standardeinstellung ist diese Kontrollkästchen aktiviert und gibt an, dass eine DEBUG-Konstante festgelegt werden kann.  

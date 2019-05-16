@@ -14,12 +14,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cb538360992a77dac66e4135647890e2a7732df4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 12018ef5e4c20e436cc250ca9630ccc4bd942a0f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443160"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698151"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Übersicht über die Ausrichtung auf mehrere Zielversionen in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,16 +69,16 @@ In dieser Version von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] können Sie d
  Um eine .NET Framework-Version als Ziel zu verwenden, müssen Sie zunächst die entsprechenden Assemblyverweise installieren. Assemblyverweise für die .NET Framework-Versionen 2.0, 3.0 und 3.5 sind in der Version .NET Framework 3.5 SP1 enthalten, die Sie von der Website [Microsoft Download Center, Microsoft Visual Studio](https://www.microsoft.com/download/details.aspx?id=25150) herunterladen können. Assemblyverweise für .NET Framework 3.5 Client Profile, .NET Framework 4, .NET Framework 4 Client Profile und Silverlight sind auch auf der Website [Visual Studio-Downloads](http://go.microsoft.com/fwlink/?LinkId=179687) verfügbar.
 
 > [!NOTE]
-> Ein .NET Framework Client Profile ist eine Teilmenge von .NET Framework, das einen eingeschränkten Satz von Bibliotheken und Funktionen bereitstellt. Weitere Informationen finden Sie unter [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).
+> Ein .NET Framework Client Profile ist eine Teilmenge von .NET Framework, das einen eingeschränkten Satz von Bibliotheken und Funktionen bereitstellt. Weitere Informationen finden Sie unter [.NET Framework Client Profile](https://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).
 
- Über das Dialogfeld **Verweis hinzufügen[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] werden Systemassemblys deaktiviert, die nicht zur** -Zielversion gehören, sodass sie nicht versehentlich zu einem Projekt hinzugefügt werden können. (Systemassemblys sind DLL-Dateien, die in einer [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Version enthalten sind.) Verweise, die zu einer .NET Framework-Version gehören, die älter ist als die Zielversion, werden nicht aufgelöst, und Steuerelemente, die von einem solchen Verweis abhängen, können nicht hinzugefügt werden. Wenn Sie einen solchen Verweis aktivieren möchten, setzen Sie das [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Ziel des Projekts auf eine Version zurück, die den Verweis enthält.  Weitere Informationen finden Sie unter [Einführung in den Projekt-Designer](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).
+ Über das Dialogfeld **Verweis hinzufügen[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] werden Systemassemblys deaktiviert, die nicht zur** -Zielversion gehören, sodass sie nicht versehentlich zu einem Projekt hinzugefügt werden können. (Systemassemblys sind DLL-Dateien, die in einer [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Version enthalten sind.) Verweise, die zu einer .NET Framework-Version gehören, die älter ist als die Zielversion, werden nicht aufgelöst, und Steuerelemente, die von einem solchen Verweis abhängen, können nicht hinzugefügt werden. Wenn Sie einen solchen Verweis aktivieren möchten, setzen Sie das [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Ziel des Projekts auf eine Version zurück, die den Verweis enthält.  Weitere Informationen finden Sie unter [Einführung in den Projekt-Designer](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).
 
  Weitere Informationen zu Assemblyverweisen finden Sie unter [Resolving Assemblies at Design Time (Auflösen von Assemblys zur Entwurfszeit)](../msbuild/resolving-assemblies-at-design-time.md).
 
 ## <a name="enabling-linq"></a>Aktivieren von LINQ
- Wenn Sie .NET Framework 3.5 oder eine höhere Version als Ziel verwenden, werden automatisch ein Verweis auf "System.Core" und ein Import auf Projektebene für "System.Linq" (nur in Visual Basic) hinzugefügt. Wenn Sie LINQ-Features verwenden möchten, müssen Sie zusätzlich Option Infer aktivieren (nur in Visual Basic). Der Verweis und der Import werden automatisch entfernt, wenn Sie die Zielversion auf eine frühere .NET Framework-Version ändern. Weitere Informationen finden Sie unter [How to: Create a LINQ Project (Vorgehensweise: Erstellen eines LINQ-Projekts)](http://msdn.microsoft.com/library/a929e653-09a3-44be-881f-68ca33f192b2).
+ Wenn Sie .NET Framework 3.5 oder eine höhere Version als Ziel verwenden, werden automatisch ein Verweis auf "System.Core" und ein Import auf Projektebene für "System.Linq" (nur in Visual Basic) hinzugefügt. Wenn Sie LINQ-Features verwenden möchten, müssen Sie zusätzlich Option Infer aktivieren (nur in Visual Basic). Der Verweis und der Import werden automatisch entfernt, wenn Sie die Zielversion auf eine frühere .NET Framework-Version ändern. Weitere Informationen finden Sie unter [How to: Create a LINQ Project (Vorgehensweise: Erstellen eines LINQ-Projekts)](https://msdn.microsoft.com/library/a929e653-09a3-44be-881f-68ca33f192b2).
 
 ## <a name="see-also"></a>Siehe auch
 [Festlegung von Zielversionen](../msbuild/msbuild-multitargeting-overview.md)
-[.NET Framework Multi-Targeting for ASP.NET Web Projects](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76) (Festlegung von Zielversionen für .NET Framework für ASP.NET-Web-Projekte) 
+[.NET Framework Multi-Targeting for ASP.NET Web Projects](https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76) (Festlegung von Zielversionen für .NET Framework für ASP.NET-Web-Projekte) 
 [Platform compatibility and system requirements](/visualstudio/productinfo/vs2015-compatibility-vs) (Plattformkompatibilität und Systemanforderungen)

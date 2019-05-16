@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 60d41398a37870d8be7a55003259b7cb2b9e48db
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 48e37262c376d2c92e741152a0b3a5866e2718ad
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099623"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685658"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Empfohlene Vorgehensweisen für die Verwendung von Codeausschnitten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60099623"
 Der Code in einem Codeausschnitt zeigt nur die grundlegende Methode, etwas zu tun. Für die meisten Anwendungen muss der Code geändert werden, um der Anwendung zu entsprechen.  
   
 ## <a name="handling-exceptions"></a>Behandeln von Ausnahmen  
- Normalerweise fangen Try…Catch-Blöcke des Codeausschnitts alle Ausnahmen ab und lösen sie erneut aus. Möglicherweise ist dies nicht die richtige Wahl für Ihr Projekt. Bei jeder Ausnahme gibt es mehrere Reaktionsmöglichkeiten. Beispiele finden Sie unter [Vorgehensweise: Behandeln einer Ausnahme mit try/catch (C#-Programmierhandbuch)](http://msdn.microsoft.com/library/ca8e3773-980e-4767-8633-7408540e9818) und [Try...Catch...Finally Statement (Try...Catch...Finally-Anweisung)](http://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b).  
+ Normalerweise fangen Try…Catch-Blöcke des Codeausschnitts alle Ausnahmen ab und lösen sie erneut aus. Möglicherweise ist dies nicht die richtige Wahl für Ihr Projekt. Bei jeder Ausnahme gibt es mehrere Reaktionsmöglichkeiten. Beispiele finden Sie unter [Vorgehensweise: Behandeln einer Ausnahme mit try/catch (C#-Programmierhandbuch)](https://msdn.microsoft.com/library/ca8e3773-980e-4767-8633-7408540e9818) und [Try...Catch...Finally Statement (Try...Catch...Finally-Anweisung)](https://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b).  
   
 ## <a name="file-locations"></a>Dateispeicherorte  
  Wenn Sie die Speicherorte an die Anwendung anpassen, sollten Sie Folgendes beachten:  
@@ -67,6 +67,6 @@ Der Code in einem Codeausschnitt zeigt nur die grundlegende Methode, etwas zu tu
     - Der Codeausschnitt kann Verweise enthalten, die automatisch dem Projekt hinzugefügt werden und von überall auf Ihr System geladen werden können. Diese Verweise wurden möglicherweise von der Stelle auf den Computer heruntergeladen, von der Sie den Ausschnitt heruntergeladen haben. Der Ausschnitt kann dann eine Methode im Verweis aufrufen, die bösartigen Code ausführt. Um sich gegen einen solchen Angriff zu schützen, sollten Sie die Import- und Verweisblöcke der Ausschnittdatei überprüfen.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Visual Basic IntelliSense Code Snippets (Visual Basic IntelliSense-Codeausschnitte)](http://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   
+ [Visual Basic IntelliSense Code Snippets (Visual Basic IntelliSense-Codeausschnitte)](https://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   
  [Sichern von Anwendungen](../ide/securing-applications.md)   
  [Codeausschnitte](../ide/code-snippets.md)

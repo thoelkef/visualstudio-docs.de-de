@@ -13,17 +13,17 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 95ee6a99a069f81a2e63c5bbe11186afaf773423
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 5a7a7522d0c3ddab224e19150f47120b92b2dd32
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54790006"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701526"
 ---
 # <a name="code-snippet-functions"></a>Codeausschnittfunktionen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Es stehen drei Funktionen zur Verfügung, die mit [!INCLUDE[csprcs](../includes/csprcs-md.md)]-Codeausschnitten verwendet werden können. Funktionen werden im Element [Function](http://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df) (Funktion) des Codeausschnitts angegeben. Informationen zum Erstellen von Codeausschnitten finden Sie unter [Codeausschnitte](../ide/code-snippets.md).  
+Es stehen drei Funktionen zur Verfügung, die mit [!INCLUDE[csprcs](../includes/csprcs-md.md)]-Codeausschnitten verwendet werden können. Funktionen werden im Element [Function](https://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df) (Funktion) des Codeausschnitts angegeben. Informationen zum Erstellen von Codeausschnitten finden Sie unter [Codeausschnitte](../ide/code-snippets.md).  
   
 ## <a name="functions"></a>Funktionen  
  In der folgenden Tabelle werden die verfügbaren Funktionen für die Verwendung mit dem `Function`-Element in Codeausschnitten beschrieben.  
@@ -154,5 +154,5 @@ Es stehen drei Funktionen zur Verfügung, die mit [!INCLUDE[csprcs](../includes/
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Function-Element (IntelliSense-Codeausschnitte)](http://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
+ [Function-Element (IntelliSense-Codeausschnitte)](https://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
  [Schemareferenz für Codeausschnitte](../ide/code-snippets-schema-reference.md)

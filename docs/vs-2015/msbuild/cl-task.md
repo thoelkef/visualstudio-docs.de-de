@@ -22,17 +22,17 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e8666f990265a1fcf9947ac5c7c18c7489a6bdb8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8307bc2c9efcbbab531754cd2d49fa18b04cc48a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653592"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698636"
 ---
 # <a name="cl-task"></a>CL-Aufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführbare Dateien (EXE), Dynamic Link Library-Dateien (DLL) oder Codemoduldateien (NETMODULE). Weitere Informationen finden Sie unter [Compileroptionen](http://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c).  
+Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführbare Dateien (EXE), Dynamic Link Library-Dateien (DLL) oder Codemoduldateien (NETMODULE). Weitere Informationen finden Sie unter [Compileroptionen](https://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c).  
   
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der **CL**-Aufgabe beschrieben. Die meisten Aufgabenparameter und einige Parametersätze entsprechen einer Befehlszeilenoption.  
@@ -43,7 +43,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Fügt ein Verzeichnis zur Liste der Verzeichnisse hinzu, die nach Includedateien durchsucht werden.  
   
-   Weitere Informationen finden Sie unter [/I (Zusätzliche Includeverzeichnisse)](http://msdn.microsoft.com/library/3e9add2a-5ed8-4d15-ad79-5b411e313a49).  
+   Weitere Informationen finden Sie unter [/I (Zusätzliche Includeverzeichnisse)](https://msdn.microsoft.com/library/3e9add2a-5ed8-4d15-ad79-5b411e313a49).  
   
 - **AdditionalOptions**  
   
@@ -51,13 +51,13 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Eine Liste von Befehlszeilenoptionen. Beispielsweise „/*option1* /*option2* /*option#*“. Verwenden Sie diesen Parameter, um Befehlszeilenoptionen anzugeben, die nicht durch einen anderen Aufgabenparameter dargestellt werden.  
   
-   Weitere Informationen finden Sie unter [Compileroptionen](http://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c).  
+   Weitere Informationen finden Sie unter [Compileroptionen](https://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c).  
   
 - **AdditionalUsingDirectories** Optionaler String[]-Parameter.  
   
    Gibt ein Verzeichnis an, das der Compiler durchsucht, um Dateiverweise aufzulösen, die an die **#using**-Anweisung übergeben wurden.  
   
-   Weitere Informationen finden Sie unter [/AI (Metadatenverzeichnisse festlegen)](http://msdn.microsoft.com/library/fb9c1846-504c-4a3b-bb39-c8696de32f6f).  
+   Weitere Informationen finden Sie unter [/AI (Metadatenverzeichnisse festlegen)](https://msdn.microsoft.com/library/fb9c1846-504c-4a3b-bb39-c8696de32f6f).  
   
 - **AlwaysAppend**  
   
@@ -69,7 +69,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Erstellt eine Listendatei, die Assemblycode enthält.  
   
-   Weitere Informationen finden Sie unter der **/Fa**-Option in [/FA, /Fa (Listendatei)](http://msdn.microsoft.com/library/c7507d0e-c69d-44f9-b8e2-d2c398697402).  
+   Weitere Informationen finden Sie unter der **/Fa**-Option in [/FA, /Fa (Listendatei)](https://msdn.microsoft.com/library/c7507d0e-c69d-44f9-b8e2-d2c398697402).  
   
 - **AssemblerOutput**  
   
@@ -89,13 +89,13 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
   - **All** - **/FAcs**  
   
-    Weitere Informationen finden Sie unter den Optionen **/FA**, **/FAc**, **/FAs** und **/FAcs** in [/FA, /Fa (Listendatei)](http://msdn.microsoft.com/library/c7507d0e-c69d-44f9-b8e2-d2c398697402).  
+    Weitere Informationen finden Sie unter den Optionen **/FA**, **/FAc**, **/FAs** und **/FAcs** in [/FA, /Fa (Listendatei)](https://msdn.microsoft.com/library/c7507d0e-c69d-44f9-b8e2-d2c398697402).  
   
 - **BasicRuntimeChecks**  
   
    Optionaler String-Parameter.  
   
-   Aktiviert und deaktiviert die Funktion für Laufzeitfehlerüberprüfungen in Verbindung mit dem [runtime_checks](http://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b)-Pragma.  
+   Aktiviert und deaktiviert die Funktion für Laufzeitfehlerüberprüfungen in Verbindung mit dem [runtime_checks](https://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b)-Pragma.  
   
    Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
@@ -107,7 +107,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
   - **EnableFastChecks** -                          **/RTC1**  
   
-    Weitere Informationen finden Sie unter [/RTC (Laufzeitfehlerüberprüfungen)](http://msdn.microsoft.com/library/9702c558-412c-4004-acd5-80761f589368).  
+    Weitere Informationen finden Sie unter [/RTC (Laufzeitfehlerüberprüfungen)](https://msdn.microsoft.com/library/9702c558-412c-4004-acd5-80761f589368).  
   
 - **BrowseInformation**  
   
@@ -115,7 +115,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Bei `true` wird eine Browseinformationsdatei erstellt.  
   
-   Weitere Informationen finden Sie unter der **/FR**-Option in [/FR, /Fr (SBR-Datei erstellen)](http://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896).  
+   Weitere Informationen finden Sie unter der **/FR**-Option in [/FR, /Fr (SBR-Datei erstellen)](https://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896).  
   
 - **BrowseInformationFile**  
   
@@ -123,7 +123,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Gibt einen Dateinamen für die Browseinformationsdatei an.  
   
-   Weitere Informationen finden Sie unter dem Parameter **BrowseInformation** in dieser Tabelle und unter [/FR, /Fr (SBR-Datei erstellen)](http://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896).  
+   Weitere Informationen finden Sie unter dem Parameter **BrowseInformation** in dieser Tabelle und unter [/FR, /Fr (SBR-Datei erstellen)](https://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896).  
   
 - **BufferSecurityCheck**  
   
@@ -131,7 +131,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Bei `true` werden einige Pufferüberläufe erkannt, die die Rückgabeadresse überschreiben – ein gängiges Verfahren zur Nutzung von Code, der keine Puffergrößeneinschränkungen erzwingt.  
   
-   Weitere Informationen finden Sie unter [/GS (Puffer-Sicherheitsüberprüfung)](http://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e).  
+   Weitere Informationen finden Sie unter [/GS (Puffer-Sicherheitsüberprüfung)](https://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e).  
   
 - **BuildingInIDE**  
   
@@ -153,7 +153,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
   - **StdCall** -                          **/Gz**  
   
-    Weitere Informationen finden Sie unter [/Gd, /Gr, /Gv, /Gz (Aufrufkonvention)](http://msdn.microsoft.com/library/fd3110cb-2d77-49f2-99cf-a03f9ead00a3).  
+    Weitere Informationen finden Sie unter [/Gd, /Gr, /Gv, /Gz (Aufrufkonvention)](https://msdn.microsoft.com/library/fd3110cb-2d77-49f2-99cf-a03f9ead00a3).  
   
 - **CompileAs**  
   
@@ -169,7 +169,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
   - **CompileAsCpp** - **/TP**  
   
-    Weitere Informationen finden Sie unter [/Tc, /Tp, /TC, /TP (Typ der Quelldatei angeben)](http://msdn.microsoft.com/library/7d9d0a65-338b-427c-8b48-fff30e2f9d2b).  
+    Weitere Informationen finden Sie unter [/Tc, /Tp, /TC, /TP (Typ der Quelldatei angeben)](https://msdn.microsoft.com/library/7d9d0a65-338b-427c-8b48-fff30e2f9d2b).  
   
 - **CompileAsManaged**  
   
@@ -189,7 +189,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
   - **OldSyntax** - **/clr:oldSyntax**  
   
-    Weitere Informationen finden Sie unter [/clr (Common Language Runtime-Kompilierung)](http://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).  
+    Weitere Informationen finden Sie unter [/clr (Common Language Runtime-Kompilierung)](https://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).  
   
 - **CreateHotpatchableImage**  
   
@@ -197,7 +197,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Bei `true` wird der Compiler angewiesen, ein Abbild für *Hotpatching* vorzubereiten. Durch diesen Parameter wird sichergestellt, dass die erste Anweisung jeder Funktion mindestens über die für das Hotpatching erforderliche Größe von zwei Bytes verfügt.  
   
-   Weitere Informationen finden Sie unter [/hotpatch (Erstellen eines Hotpatch-fähigen Abbildes)](http://msdn.microsoft.com/library/aad539b6-c053-4c78-8682-853d98327798).  
+   Weitere Informationen finden Sie unter [/hotpatch (Erstellen eines Hotpatch-fähigen Abbildes)](https://msdn.microsoft.com/library/aad539b6-c053-4c78-8682-853d98327798).  
   
 - **DebugInformationFormat**  
   
@@ -213,7 +213,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
   - **EditAndContinue** - **/ZI**  
   
-    Weitere Informationen finden Sie unter [/Z7, /Zi, /ZI (Debuginformationsformat)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8).  
+    Weitere Informationen finden Sie unter [/Z7, /Zi, /ZI (Debuginformationsformat)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8).  
   
 - **DisableLanguageExtensions**  
   
@@ -221,7 +221,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Bei **TRUE** wird der Compiler angewiesen, einen Fehler für Sprachkonstrukte auszugeben, die weder mit ANSI C noch mit ANSI C++ kompatibel sind.  
   
-   Weitere Informationen finden Sie unter der **/Za**-Option in [/Za, /Ze (Spracherweiterungen deaktivieren)](http://msdn.microsoft.com/library/65e49258-7161-4289-a176-7c5c0656b1a2).  
+   Weitere Informationen finden Sie unter der **/Za**-Option in [/Za, /Ze (Spracherweiterungen deaktivieren)](https://msdn.microsoft.com/library/65e49258-7161-4289-a176-7c5c0656b1a2).  
   
 - **DisableSpecificWarnings**  
   
@@ -229,7 +229,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Deaktiviert die Warnzahlen, die in einer durch Semikolons getrennten Liste angegeben werden.  
   
-   Weitere Informationen finden Sie unter der `/wd`-Option in [/w, /Wn, /WX, /Wall, /wln, /wdn, /wen, /won (Warnstufe)](http://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
+   Weitere Informationen finden Sie unter der `/wd`-Option in [/w, /Wn, /WX, /Wall, /wln, /wdn, /wen, /won (Warnstufe)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
   
 - **EnableEnhancedInstructionSet**  
   
@@ -243,7 +243,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
   - **StreamingSIMDExtensions2** - **/arch:SSE2**  
   
-    Weitere Informationen finden Sie unter [/arch (x86)](http://msdn.microsoft.com/library/9dd5a75d-06e4-4674-aade-33228486078d).  
+    Weitere Informationen finden Sie unter [/arch (x86)](https://msdn.microsoft.com/library/9dd5a75d-06e4-4674-aade-33228486078d).  
   
 - **EnableFiberSafeOptimizations**  
   
@@ -251,7 +251,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Bei `true` wird Fiber-Sicherheit für Daten unterstützt, die mit statischem lokalen Threadspeicher zugewiesen werden, d.h. mit `__declspec(thread)` zugewiesene Daten.  
   
-   Weitere Informationen finden Sie unter [/GT (Fiber-sicheren lokalen Thread-Speicher unterstützen)](http://msdn.microsoft.com/library/071fec79-c701-432b-9970-457344133159).  
+   Weitere Informationen finden Sie unter [/GT (Fiber-sicheren lokalen Thread-Speicher unterstützen)](https://msdn.microsoft.com/library/071fec79-c701-432b-9970-457344133159).  
   
 - **EnablePREfast**  
   
@@ -259,7 +259,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Bei `true` wird die Codeanalyse aktiviert.  
   
-   Weitere Informationen finden Sie unter [/analyze (Codeanalyse)](http://msdn.microsoft.com/library/81da536a-e030-4bd4-be18-383927597d08).  
+   Weitere Informationen finden Sie unter [/analyze (Codeanalyse)](https://msdn.microsoft.com/library/81da536a-e030-4bd4-be18-383927597d08).  
   
 - **ErrorReporting**  
   
@@ -277,7 +277,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
   - **Send** - **/errorReport:send**  
   
-    Weitere Informationen finden Sie unter [/errorReport (Meldung über interne Compilerfehler)](http://msdn.microsoft.com/library/819828f8-b0a5-412c-9c57-bf822f17e667).  
+    Weitere Informationen finden Sie unter [/errorReport (Meldung über interne Compilerfehler)](https://msdn.microsoft.com/library/819828f8-b0a5-412c-9c57-bf822f17e667).  
   
 - **ExceptionHandling**  
   
@@ -295,7 +295,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
   - **SyncCThrow** - **/EHs**  
   
-    Weitere Informationen finden Sie unter [/EH (Ausnahmebehandlungsmodell)](http://msdn.microsoft.com/library/754b916f-d206-4472-b55a-b6f1b0f2cb4d).  
+    Weitere Informationen finden Sie unter [/EH (Ausnahmebehandlungsmodell)](https://msdn.microsoft.com/library/754b916f-d206-4472-b55a-b6f1b0f2cb4d).  
   
 - **ExpandAttributedSource**  
   
@@ -303,7 +303,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Bei `true` wird eine Listendatei mit erweiterten Attributen erstellt, die in die Quelldatei eingefügt wird.  
   
-   Weitere Informationen finden Sie unter [/Fx (Eingefügten Code zusammenführen)](http://msdn.microsoft.com/library/14f0e301-3bab-45a3-bbdf-e7ce66f20560).  
+   Weitere Informationen finden Sie unter [/Fx (Eingefügten Code zusammenführen)](https://msdn.microsoft.com/library/14f0e301-3bab-45a3-bbdf-e7ce66f20560).  
   
 - **FavorSizeOrSpeed**  
   
@@ -319,7 +319,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
   - **Speed** - **/Ot**  
   
-    Weitere Informationen finden Sie unter [/Os, /Ot (Kompakten Code bevorzugen, Schnellen Code bevorzugen)](http://msdn.microsoft.com/library/9a340806-fa15-4308-892c-355d83cac0f2).  
+    Weitere Informationen finden Sie unter [/Os, /Ot (Kompakten Code bevorzugen, Schnellen Code bevorzugen)](https://msdn.microsoft.com/library/9a340806-fa15-4308-892c-355d83cac0f2).  
   
 - **FloatingPointExceptions**  
   
@@ -327,7 +327,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Bei `true` wird das verlässliche Modell für Gleitkommaausnahmen aktiviert. Ausnahmen werden sofort ausgelöst, wenn sie auftreten.  
   
-   Weitere Informationen finden Sie unter der Option /**fp:except** in [/fp (Festlegen des Gleitkommaverhaltens)](http://msdn.microsoft.com/library/10469d6b-e68b-4268-8075-d073f4f5d57e).  
+   Weitere Informationen finden Sie unter der Option /**fp:except** in [/fp (Festlegen des Gleitkommaverhaltens)](https://msdn.microsoft.com/library/10469d6b-e68b-4268-8075-d073f4f5d57e).  
   
 - **FloatingPointModel**  
   
@@ -343,15 +343,15 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
   - **Fast** - **/fp:fast**  
   
-    Weitere Informationen finden Sie unter [/fp (Festlegen des Gleitkommaverhaltens)](http://msdn.microsoft.com/library/10469d6b-e68b-4268-8075-d073f4f5d57e).  
+    Weitere Informationen finden Sie unter [/fp (Festlegen des Gleitkommaverhaltens)](https://msdn.microsoft.com/library/10469d6b-e68b-4268-8075-d073f4f5d57e).  
   
 - **ForceConformanceInForLoopScope**  
   
    Optionaler boolescher Parameter.  
   
-   Bei `true` wird Standard-C++-Verhalten in [for](http://msdn.microsoft.com/library/6c7d01b3-c4c1-4c6a-aa58-e2d198f33d4a)-Schleifen implementiert, die Microsoft-Erweiterungen ([/Ze](http://msdn.microsoft.com/library/65e49258-7161-4289-a176-7c5c0656b1a2)) verwenden.  
+   Bei `true` wird Standard-C++-Verhalten in [for](https://msdn.microsoft.com/library/6c7d01b3-c4c1-4c6a-aa58-e2d198f33d4a)-Schleifen implementiert, die Microsoft-Erweiterungen ([/Ze](https://msdn.microsoft.com/library/65e49258-7161-4289-a176-7c5c0656b1a2)) verwenden.  
   
-   Weitere Informationen finden Sie unter [/Zc:forScope (Übereinstimmung in for-Schleifenbereich erzwingen)](http://msdn.microsoft.com/library/3031f02d-3b14-4ad0-869e-22b0110c3aed).  
+   Weitere Informationen finden Sie unter [/Zc:forScope (Übereinstimmung in for-Schleifenbereich erzwingen)](https://msdn.microsoft.com/library/3031f02d-3b14-4ad0-869e-22b0110c3aed).  
   
 - **ForcedIncludeFiles**  
   
@@ -359,7 +359,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Weist den Präprozessor an, eine oder mehrere angegebene Headerdateien zu verarbeiten.  
   
-   Weitere Informationen finden Sie unter [/FI (Name der expliziten Includedatei)](http://msdn.microsoft.com/library/07e79577-8152-4df9-a64c-aae08c603397).  
+   Weitere Informationen finden Sie unter [/FI (Name der expliziten Includedatei)](https://msdn.microsoft.com/library/07e79577-8152-4df9-a64c-aae08c603397).  
   
 - **ForcedUsingFiles**  
   
@@ -367,7 +367,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Weist den Präprozessor an, eine oder mehrere angegebene **#using**-Datei zu verarbeiten.  
   
-   Weitere Informationen finden Sie unter [/FU (Name der expliziten #using-Datei)](http://msdn.microsoft.com/library/698f8603-457f-435a-baff-5ac9243d6ca1).  
+   Weitere Informationen finden Sie unter [/FU (Name der expliziten #using-Datei)](https://msdn.microsoft.com/library/698f8603-457f-435a-baff-5ac9243d6ca1).  
   
 - **FunctionLevelLinking**  
   
@@ -375,7 +375,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Bei `true` wird dem Compiler ermöglicht, einzelne Funktionen in Form von kompilierten Funktionen (COMDATs) zu kompilieren.  
   
-   Weitere Informationen finden Sie unter [/Gy (Funktionslevel-Linking aktivieren)](http://msdn.microsoft.com/library/0d3cf14c-ed7d-4ad3-b4b6-104e56f61046).  
+   Weitere Informationen finden Sie unter [/Gy (Funktionslevel-Linking aktivieren)](https://msdn.microsoft.com/library/0d3cf14c-ed7d-4ad3-b4b6-104e56f61046).  
   
 - **GenerateXMLDocumentationFiles**  
   
@@ -383,7 +383,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Bei `true` werden vom Compiler Dokumentationskommentare in Quellcodedateien verarbeitet, und für jede derartige Quellcodedatei mit Dokumentationskommentaren wird eine XDC-Datei erstellt.  
   
-   Weitere Informationen finden Sie unter [/doc (Verarbeiten von Dokumentationskommentaren) (C/C++)](http://msdn.microsoft.com/library/b54f7e2c-f28f-4f46-9ed6-0db09be2cc63). Siehe auch den Parameter **XMLDocumentationFileName** in dieser Tabelle.  
+   Weitere Informationen finden Sie unter [/doc (Verarbeiten von Dokumentationskommentaren) (C/C++)](https://msdn.microsoft.com/library/b54f7e2c-f28f-4f46-9ed6-0db09be2cc63). Siehe auch den Parameter **XMLDocumentationFileName** in dieser Tabelle.  
   
 - **IgnoreStandardIncludePath**  
   
@@ -391,7 +391,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Hindert bei `true` den Compiler daran, in den Verzeichnissen, die in den Umgebungsvariablen PATH und INCLUDE angegeben sind, nach Includedateien zu suchen.  
   
-   Weitere Informationen finden Sie unter [/X (Standardincludepfade ignorieren)](http://msdn.microsoft.com/library/16bdf2cc-c8dc-46e4-bdcc-f3caeba5e1ef).  
+   Weitere Informationen finden Sie unter [/X (Standardincludepfade ignorieren)](https://msdn.microsoft.com/library/16bdf2cc-c8dc-46e4-bdcc-f3caeba5e1ef).  
   
 - **InlineFunctionExpansion**  
   
@@ -409,7 +409,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
   - **AnySuitable** - **/Ob2**  
   
-    Weitere Informationen finden Sie unter [/Ob (Inlinefunktionserweiterung)](http://msdn.microsoft.com/library/f134e6df-e939-4980-a01d-47425dbc562a).  
+    Weitere Informationen finden Sie unter [/Ob (Inlinefunktionserweiterung)](https://msdn.microsoft.com/library/f134e6df-e939-4980-a01d-47425dbc562a).  
   
 - **IntrinsicFunctions**  
   
@@ -417,7 +417,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Bei `true` werden einige Funktionsaufrufe durch systeminterne oder sonstige spezielle Formen der Funktion ersetzt, die dazu beitragen, dass die Arbeitsgeschwindigkeit der Anwendung erhöht wird.  
   
-   Weitere Informationen finden Sie unter [/Oi (Systeminterne Funktionen erstellen)](http://msdn.microsoft.com/library/fa4a3bf6-0ed8-481b-91c0-add7636132b4).  
+   Weitere Informationen finden Sie unter [/Oi (Systeminterne Funktionen erstellen)](https://msdn.microsoft.com/library/fa4a3bf6-0ed8-481b-91c0-add7636132b4).  
   
 - **MinimalRebuild**  
   
@@ -425,7 +425,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Bei `true` wird die Mindestneuerstellung aktiviert, die bestimmt, ob C++-Quelldateien, die geänderte C++-Klassendefinitionen enthalten (die in Headerdateien (H) gespeichert sind), neu kompiliert werden müssen.  
   
-   Weitere Informationen finden Sie unter [/Gm (Minimale Neuerstellung aktivieren)](http://msdn.microsoft.com/library/d8869ce0-d2ea-40eb-8dae-6d2cdb61dd59).  
+   Weitere Informationen finden Sie unter [/Gm (Minimale Neuerstellung aktivieren)](https://msdn.microsoft.com/library/d8869ce0-d2ea-40eb-8dae-6d2cdb61dd59).  
   
 - **MultiProcessorCompilation**  
   
@@ -433,7 +433,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Bei `true` werden mehrere Prozessoren für das Kompilieren verwendet. Dieser Parameter erstellt einen Prozess für jeden effektiven Prozessor auf dem Computer.  
   
-   Weitere Informationen finden Sie unter [/MP (Erstellen mit mehreren Prozessen)](http://msdn.microsoft.com/library/a932b14a-74fe-4b45-84e4-6bf53f0f5e07). Siehe auch den Parameter **ProcessorNumber** in dieser Tabelle.  
+   Weitere Informationen finden Sie unter [/MP (Erstellen mit mehreren Prozessen)](https://msdn.microsoft.com/library/a932b14a-74fe-4b45-84e4-6bf53f0f5e07). Siehe auch den Parameter **ProcessorNumber** in dieser Tabelle.  
   
 - **ObjectFileName**  
   
@@ -441,7 +441,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Gibt einen Namen für die Objektdatei (OBJ) oder das Verzeichnis an, der anstelle des Standardwerts verwendet werden soll.  
   
-   Weitere Informationen finden Sie unter [/Fo (Name der Objektdatei)](http://msdn.microsoft.com/library/0e6d593e-4e7f-4990-9e6e-92e1dcbcf6e6).  
+   Weitere Informationen finden Sie unter [/Fo (Name der Objektdatei)](https://msdn.microsoft.com/library/0e6d593e-4e7f-4990-9e6e-92e1dcbcf6e6).  
   
 - **ObjectFiles**  
   
@@ -455,7 +455,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Bei `true` wird der Name der Standard-C-Laufzeitbibliothek in der Objektdatei (OBJ) weggelassen. Standardmäßig legt der Compiler den Namen der Bibliothek in der OBJ-Datei ab, um den Linker zur richtigen Bibliothek zu leiten.  
   
-   Weitere Informationen finden Sie unter [/Zl (Kein Standardbibliotheksname)](http://msdn.microsoft.com/library/b27d39d0-44d6-498c-84ae-27c1326fee59).  
+   Weitere Informationen finden Sie unter [/Zl (Kein Standardbibliotheksname)](https://msdn.microsoft.com/library/b27d39d0-44d6-498c-84ae-27c1326fee59).  
   
 - **OmitFramePointers**  
   
@@ -463,7 +463,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Bei `true` wird die Erstellung von Framezeigern in der Anrufliste unterdrückt.  
   
-   Weitere Informationen finden Sie unter [/Oy (Framezeiger unterdrücken)](http://msdn.microsoft.com/library/c451da86-5297-4c5a-92bc-561d41379853).  
+   Weitere Informationen finden Sie unter [/Oy (Framezeiger unterdrücken)](https://msdn.microsoft.com/library/c451da86-5297-4c5a-92bc-561d41379853).  
   
 - **OpenMPSupport**  
   
@@ -471,7 +471,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Bei `true` verarbeitet der Compiler OpenMP-Klauseln und -Direktiven.  
   
-   Weitere Informationen finden Sie unter [/openmp (Aktivieren der OpenMP 2.0-Unterstützung)](http://msdn.microsoft.com/library/9082b175-18d3-4378-86a7-c0eb95664e13).  
+   Weitere Informationen finden Sie unter [/openmp (Aktivieren der OpenMP 2.0-Unterstützung)](https://msdn.microsoft.com/library/9082b175-18d3-4378-86a7-c0eb95664e13).  
   
 - **Optimization**  
   
@@ -489,7 +489,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
   - **Full** - **/Ox**  
   
-    Weitere Informationen finden Sie unter [/O-Optionen (Code optimieren)](http://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d).  
+    Weitere Informationen finden Sie unter [/O-Optionen (Code optimieren)](https://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d).  
   
 - **PrecompiledHeader**  
   
@@ -505,7 +505,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
   - **Use** - **/Yu**  
   
-    Weitere Informationen finden Sie unter [/Yc (Datei der vorkompilierten Header erstellen)](http://msdn.microsoft.com/library/47c2e555-b4f5-46e6-906e-ab5cf21f0678) und [/Yu (Vorkompilierte Headerdatei verwenden)](http://msdn.microsoft.com/library/24f1bd0e-b624-4296-a17e-d4b53e374e1f). Siehe auch die Parameter **PrecompiledHeaderFile** und **PrecompiledHeaderOutputFile** in dieser Tabelle.  
+    Weitere Informationen finden Sie unter [/Yc (Datei der vorkompilierten Header erstellen)](https://msdn.microsoft.com/library/47c2e555-b4f5-46e6-906e-ab5cf21f0678) und [/Yu (Vorkompilierte Headerdatei verwenden)](https://msdn.microsoft.com/library/24f1bd0e-b624-4296-a17e-d4b53e374e1f). Siehe auch die Parameter **PrecompiledHeaderFile** und **PrecompiledHeaderOutputFile** in dieser Tabelle.  
   
 - **PrecompiledHeaderFile**  
   
@@ -513,7 +513,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Gibt den Namen einer vorkompilierten Headerdatei an, die erstellt oder verwendet werden soll.  
   
-   Weitere Informationen finden Sie unter [/Yc (Datei der vorkompilierten Header erstellen)](http://msdn.microsoft.com/library/47c2e555-b4f5-46e6-906e-ab5cf21f0678) und [/Yu (Vorkompilierte Headerdatei verwenden)](http://msdn.microsoft.com/library/24f1bd0e-b624-4296-a17e-d4b53e374e1f).  
+   Weitere Informationen finden Sie unter [/Yc (Datei der vorkompilierten Header erstellen)](https://msdn.microsoft.com/library/47c2e555-b4f5-46e6-906e-ab5cf21f0678) und [/Yu (Vorkompilierte Headerdatei verwenden)](https://msdn.microsoft.com/library/24f1bd0e-b624-4296-a17e-d4b53e374e1f).  
   
 - **PrecompiledHeaderOutputFile**  
   
@@ -521,7 +521,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Gibt einen Pfadnamen für einen vorkompilierten Header an, der anstelle des Standardpfadnamens verwendet wird.  
   
-   Weitere Informationen finden Sie unter [/Fp (Name der PCH-Datei)](http://msdn.microsoft.com/library/0fcd9cbd-e09f-44d3-9715-b41efb5d0be2).  
+   Weitere Informationen finden Sie unter [/Fp (Name der PCH-Datei)](https://msdn.microsoft.com/library/0fcd9cbd-e09f-44d3-9715-b41efb5d0be2).  
   
 - **PreprocessKeepComments**  
   
@@ -529,7 +529,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Bei `true` werden Kommentare bei der Vorverarbeitung beibehalten.  
   
-   Weitere Informationen finden Sie unter [/C (Kommentare bei der Vorverarbeitung beibehalten)](http://msdn.microsoft.com/library/944567ca-16bc-4728-befe-d414a7787f26).  
+   Weitere Informationen finden Sie unter [/C (Kommentare bei der Vorverarbeitung beibehalten)](https://msdn.microsoft.com/library/944567ca-16bc-4728-befe-d414a7787f26).  
   
 - **PreprocessorDefinitions**  
   
@@ -537,7 +537,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Definiert ein Präprozessorsymbol für Ihre Quelldatei.  
   
-   Weitere Informationen finden Sie unter [/D (Preprocessor Definitions)](http://msdn.microsoft.com/library/b53fdda7-8da1-474f-8811-ba7cdcc66dba).  
+   Weitere Informationen finden Sie unter [/D (Preprocessor Definitions)](https://msdn.microsoft.com/library/b53fdda7-8da1-474f-8811-ba7cdcc66dba).  
   
 - **PreprocessOutput**  
   
@@ -551,7 +551,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Gibt den Namen der Ausgabedatei an, in die der **PreprocessToFile**-Parameter die vorverarbeitete Ausgabe schreibt.  
   
-   Weitere Informationen finden Sie unter [/Fi (Ausgabedateiname vorverarbeiten)](http://msdn.microsoft.com/library/6d0ba983-a8b7-41ec-84f5-b4688ef8efee).  
+   Weitere Informationen finden Sie unter [/Fi (Ausgabedateiname vorverarbeiten)](https://msdn.microsoft.com/library/6d0ba983-a8b7-41ec-84f5-b4688ef8efee).  
   
 - **PreprocessSuppressLineNumbers**  
   
@@ -559,7 +559,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Bei `true` werden C- und C++-Quelldateien vorverarbeitet, und die vorverarbeiteten Dateien werden auf das Standardausgabegerät kopiert.  
   
-   Weitere Informationen finden Sie unter [/EP (Vorverarbeitung an „stdout“ ohne #line-Direktiven)](http://msdn.microsoft.com/library/6ec411ae-e33d-4ef5-956e-0054635eabea).  
+   Weitere Informationen finden Sie unter [/EP (Vorverarbeitung an „stdout“ ohne #line-Direktiven)](https://msdn.microsoft.com/library/6ec411ae-e33d-4ef5-956e-0054635eabea).  
   
 - **PreprocessToFile**  
   
@@ -567,7 +567,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Bei `true` werden C- und C++-Quelldateien vorverarbeitet, und die vorverarbeitete Ausgabe wird in eine Datei geschrieben.  
   
-   Weitere Informationen finden Sie unter [/P (Vorverarbeitung in eine Datei)](http://msdn.microsoft.com/library/123ee54f-8219-4a6f-9876-4227023d83fc).  
+   Weitere Informationen finden Sie unter [/P (Vorverarbeitung in eine Datei)](https://msdn.microsoft.com/library/123ee54f-8219-4a6f-9876-4227023d83fc).  
   
 - **ProcessorNumber**  
   
@@ -581,7 +581,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Gibt einen Dateinamen für die Programmdatenbankdatei (PDB) an.  
   
-   Weitere Informationen finden Sie unter [/Fd (Programmdatenbank-Dateiname)](http://msdn.microsoft.com/library/3977a9ed-f0ac-45df-bf06-01cedd2ba85a).  
+   Weitere Informationen finden Sie unter [/Fd (Programmdatenbank-Dateiname)](https://msdn.microsoft.com/library/3977a9ed-f0ac-45df-bf06-01cedd2ba85a).  
   
 - **RuntimeLibrary**  
   
@@ -599,7 +599,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
   - **MultiThreadedDebugDLL** - **/MDd**  
   
-    Weitere Informationen finden Sie unter [/MD, /MT, /LD (Laufzeitbibliothek verwenden)](http://msdn.microsoft.com/library/cf7ed652-dc3a-49b3-aab9-ad60e5395579).  
+    Weitere Informationen finden Sie unter [/MD, /MT, /LD (Laufzeitbibliothek verwenden)](https://msdn.microsoft.com/library/cf7ed652-dc3a-49b3-aab9-ad60e5395579).  
   
 - **RuntimeTypeInfo**  
   
@@ -607,7 +607,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Bei `true` wird Code hinzugefügt, um C++-Objekttypen während der Laufzeit zu überprüfen (Laufzeit-Typeninformationen).  
   
-   Weitere Informationen finden Sie unter [/GR (Laufzeit-Typeninformation aktivieren)](http://msdn.microsoft.com/library/d1f9f850-dcec-49fd-96ef-e72d01148906).  
+   Weitere Informationen finden Sie unter [/GR (Laufzeit-Typeninformation aktivieren)](https://msdn.microsoft.com/library/d1f9f850-dcec-49fd-96ef-e72d01148906).  
   
 - **ShowIncludes**  
   
@@ -615,7 +615,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Bei `true` gibt der Compiler eine Liste der Includedateien aus.  
   
-   Weitere Informationen finden Sie unter [/showIncludes (Includedateien auflisten)](http://msdn.microsoft.com/library/0b74b052-f594-45a6-a7c7-09e1a319547d).  
+   Weitere Informationen finden Sie unter [/showIncludes (Includedateien auflisten)](https://msdn.microsoft.com/library/0b74b052-f594-45a6-a7c7-09e1a319547d).  
   
 - **SmallerTypeCheck**  
   
@@ -623,7 +623,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Bei `true` wird ein Laufzeitfehler gemeldet, wenn ein Wert einem kleineren Datentyp zugewiesen wird und dies einen Datenverlust verursacht.  
   
-   Weitere Informationen finden Sie unter der Option **/RTCc** in [/RTC (Laufzeitfehlerüberprüfungen)](http://msdn.microsoft.com/library/9702c558-412c-4004-acd5-80761f589368).  
+   Weitere Informationen finden Sie unter der Option **/RTCc** in [/RTC (Laufzeitfehlerüberprüfungen)](https://msdn.microsoft.com/library/9702c558-412c-4004-acd5-80761f589368).  
   
 - **Sources**  
   
@@ -637,7 +637,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Bei `true` kann der Compiler eine Kopie identischer Zeichenfolgen im Programmabbild erstellen.  
   
-   Weitere Informationen finden Sie unter [/GF (Doppelte Zeichenfolgen beseitigen)](http://msdn.microsoft.com/library/bb7b5d1c-8e1f-453b-9298-8fcebf37d16c).  
+   Weitere Informationen finden Sie unter [/GF (Doppelte Zeichenfolgen beseitigen)](https://msdn.microsoft.com/library/bb7b5d1c-8e1f-453b-9298-8fcebf37d16c).  
   
 - **StructMemberAlignment**  
   
@@ -659,7 +659,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
   - **16Bytes** - **/Zp16**  
   
-    Weitere Informationen finden Sie unter [/Zp (Ausrichten des Strukturmembers)](http://msdn.microsoft.com/library/5242f656-ed9b-48a3-bc73-cfcf3ed2520f).  
+    Weitere Informationen finden Sie unter [/Zp (Ausrichten des Strukturmembers)](https://msdn.microsoft.com/library/5242f656-ed9b-48a3-bc73-cfcf3ed2520f).  
   
 - **SuppressStartupBanner**  
   
@@ -667,7 +667,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Bei `true` wird die Anzeige der Copyright- und Versionsnummernmeldung bei Aufgabenstart verhindert.  
   
-   Weitere Informationen finden Sie unter [/nologo (Startbanner unterdrücken) (C/C++)](http://msdn.microsoft.com/library/75930d8b-b11c-4db8-99e5-b52f97da0693).  
+   Weitere Informationen finden Sie unter [/nologo (Startbanner unterdrücken) (C/C++)](https://msdn.microsoft.com/library/75930d8b-b11c-4db8-99e5-b52f97da0693).  
   
 - **TrackerLogDirectory**  
   
@@ -683,7 +683,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Behandelt die angegebene Liste von Compilerwarnungen als Fehler.  
   
-   Weitere Informationen finden Sie unter der Option **/we**`n` in [/w, /Wn, /WX, /Wall, /wln, /wdn, /wen, /won (Warnstufe)](http://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
+   Weitere Informationen finden Sie unter der Option **/we**`n` in [/w, /Wn, /WX, /Wall, /wln, /wdn, /wen, /won (Warnstufe)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
   
 - **TreatWarningAsError**  
   
@@ -691,7 +691,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Bei `true` werden alle Compilerwarnungen als Fehler behandelt.  
   
-   Weitere Informationen finden Sie unter der Option **/WX** in [/w, /Wn, /WX, /Wall, /wln, /wdn, /wen, /won (Warnstufe)](http://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
+   Weitere Informationen finden Sie unter der Option **/WX** in [/w, /Wn, /WX, /Wall, /wln, /wdn, /wen, /won (Warnstufe)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
   
 - **TreatWChar_tAsBuiltInType**  
   
@@ -699,7 +699,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Bei `true` wird der `wchar_t`-Typ als nativer Typ behandelt.  
   
-   Weitere Informationen finden Sie unter[/Zc:wchar_t (wchar_t ist der systemeigene Typ)](http://msdn.microsoft.com/library/b0de5a84-da72-4e5a-9a4e-541099f939e0).  
+   Weitere Informationen finden Sie unter[/Zc:wchar_t (wchar_t ist der systemeigene Typ)](https://msdn.microsoft.com/library/b0de5a84-da72-4e5a-9a4e-541099f939e0).  
   
 - **UndefineAllPreprocessorDefinitions**  
   
@@ -707,7 +707,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Bei `true` wird die Definition der Microsoft-spezifischen Symbole aufgehoben, die der Compiler definiert.  
   
-   Weitere Informationen finden Sie unter der Option **/u** in [/U, /u (Symboldefinitionen aufheben)](http://msdn.microsoft.com/library/7bc0474f-6d1f-419b-807d-0d8816763b2a).  
+   Weitere Informationen finden Sie unter der Option **/u** in [/U, /u (Symboldefinitionen aufheben)](https://msdn.microsoft.com/library/7bc0474f-6d1f-419b-807d-0d8816763b2a).  
   
 - **UndefinePreprocessorDefinitions**  
   
@@ -715,7 +715,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Gibt eine Liste mit einem oder mehreren Präprozessorsymbolen an, deren Definition aufgehoben werden soll.  
   
-   Weitere Informationen finden Sie unter der Option **/U** in [/U, /u (Symboldefinitionen aufheben)](http://msdn.microsoft.com/library/7bc0474f-6d1f-419b-807d-0d8816763b2a).  
+   Weitere Informationen finden Sie unter der Option **/U** in [/U, /u (Symboldefinitionen aufheben)](https://msdn.microsoft.com/library/7bc0474f-6d1f-419b-807d-0d8816763b2a).  
   
 - **UseFullPaths**  
   
@@ -723,7 +723,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Bei `true` wird der vollständige Pfad der Quellcodedateien angezeigt, die in der Diagnostik an den Compiler übergeben werden.  
   
-   Weitere Informationen finden Sie unter [/FC (Vollständiger Pfad der Quellcodedatei in Diagnostik)](http://msdn.microsoft.com/library/1f11414e-cb42-421b-be68-9d369aab036b).  
+   Weitere Informationen finden Sie unter [/FC (Vollständiger Pfad der Quellcodedatei in Diagnostik)](https://msdn.microsoft.com/library/1f11414e-cb42-421b-be68-9d369aab036b).  
   
 - **UseUnicodeForAssemblerListing**  
   
@@ -731,7 +731,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Bei `true` wird die Ausgabedatei im UTF-8-Format erstellt.  
   
-   Weitere Informationen finden Sie unter der Option **/FAu** in [/FA, /Fa (Listendatei)](http://msdn.microsoft.com/library/c7507d0e-c69d-44f9-b8e2-d2c398697402).  
+   Weitere Informationen finden Sie unter der Option **/FAu** in [/FA, /Fa (Listendatei)](https://msdn.microsoft.com/library/c7507d0e-c69d-44f9-b8e2-d2c398697402).  
   
 - **WarningLevel**  
   
@@ -753,7 +753,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
   - **EnableAllWarnings** - **/Wall**  
   
-    Weitere Informationen finden Sie unter der Option **/W**_n_ in [/w, /Wn, /WX, /Wall, /wln, /wdn, /wen, /won (Warnstufe)](http://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
+    Weitere Informationen finden Sie unter der Option **/W**_n_ in [/w, /Wn, /WX, /Wall, /wln, /wdn, /wen, /won (Warnstufe)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
   
 - **WholeProgramOptimization**  
   
@@ -761,7 +761,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Bei `true` wird die Optimierung des ganzen Programms aktiviert.  
   
-   Weitere Informationen finden Sie unter [/GL (Optimierung des ganzen Programms)](http://msdn.microsoft.com/library/09d51e2d-9728-4bd0-b5dc-3b8284aca1d1).  
+   Weitere Informationen finden Sie unter [/GL (Optimierung des ganzen Programms)](https://msdn.microsoft.com/library/09d51e2d-9728-4bd0-b5dc-3b8284aca1d1).  
   
 - **XMLDocumentationFileName**  
   
@@ -769,7 +769,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
    Gibt den Namen der generierten XML-Dokumentationsdateien an. Bei diesem Parameter kann es sich um einen Datei- oder Verzeichnisnamen handeln.  
   
-   Weitere Informationen finden Sie unter dem `name`-Argument in [/doc (Verarbeiten von Dokumentationskommentaren) (C/C++)](http://msdn.microsoft.com/library/b54f7e2c-f28f-4f46-9ed6-0db09be2cc63). Beachten Sie auch den Parameter **GenerateXMLDocumentationFiles** in dieser Tabelle.  
+   Weitere Informationen finden Sie unter dem `name`-Argument in [/doc (Verarbeiten von Dokumentationskommentaren) (C/C++)](https://msdn.microsoft.com/library/b54f7e2c-f28f-4f46-9ed6-0db09be2cc63). Beachten Sie auch den Parameter **GenerateXMLDocumentationFiles** in dieser Tabelle.  
   
 - **MinimalRebuildFromTracking**  
   

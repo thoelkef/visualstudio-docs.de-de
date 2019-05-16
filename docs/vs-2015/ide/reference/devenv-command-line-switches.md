@@ -21,12 +21,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0cb2d42db65c5eb77aae324d2c10c25010eb8b8f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 48632a08b3ed59d65b7a551244c295b012bef665
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444740"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690979"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv-Befehlszeilenschalter
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ Mit Devenv können Sie von der Befehlszeile aus verschiedene Optionen für die i
 |[/Log (devenv.exe)](../../ide/reference/log-devenv-exe.md)|Startet [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] und protokolliert sämtliche Aktivitäten in der Protokolldatei.|  
 |[/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md) oder `/r`|Kompiliert die angegebene Projektmappe und führt sie aus.|  
 |[/Runexit (devenv.exe)](../../ide/reference/runexit-devenv-exe.md)|Kompiliert die angegebene Projektmappe und führt sie aus, minimiert die IDE bei der Ausführung der Projektmappe und schließt die IDE nach beendeter Ausführung der Projektmappe.|  
-|[/UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|Führt dazu, dass die IDE für die [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]-Kompilierung die Umgebungsvariablen PATH, INCLUDE und LIB anstelle der im Dialogfeld **Optionen** unter **Projekte** im Abschnitt „VC++-Verzeichnisse“ angegebenen Einstellungen verwendet. Weitere Informationen finden Sie unter [Festlegen der Pfad- und Umgebungsvariablen für Befehlszeilenbuilds](http://msdn.microsoft.com/library/99389528-deb5-43b9-b99a-03c8773ebaf4).|  
+|[/UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|Führt dazu, dass die IDE für die [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]-Kompilierung die Umgebungsvariablen PATH, INCLUDE und LIB anstelle der im Dialogfeld **Optionen** unter **Projekte** im Abschnitt „VC++-Verzeichnisse“ angegebenen Einstellungen verwendet. Weitere Informationen finden Sie unter [Festlegen der Pfad- und Umgebungsvariablen für Befehlszeilenbuilds](https://msdn.microsoft.com/library/99389528-deb5-43b9-b99a-03c8773ebaf4).|  
 |[/Edit (devenv.exe)](../../ide/reference/edit-devenv-exe.md)|Öffnet die angegebenen Dateien in einer ausgeführten Instanz dieser Anwendung. Wenn keine ausgeführten Instanzen vorhanden sind, wird eine neue Instanz mit einem vereinfachten Fensterlayout gestartet.|  
 |[/ResetAddin (devenv.exe)](../../ide/reference/resetaddin-devenv-exe.md)|Startet eine Instanz der Visual Studio IDE, ohne das angegebene Add-In zu laden.|  
 |[/SafeMode (devenv.exe)](../../ide/reference/safemode-devenv-exe.md)|Startet [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] im abgesicherten Modus und lädt nur die Standardumgebung und die Standarddienste sowie im Lieferumfang enthaltene Versionen von Drittanbieterpaketen.|  

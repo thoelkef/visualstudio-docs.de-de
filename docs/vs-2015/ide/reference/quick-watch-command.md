@@ -14,17 +14,17 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0a4bc73046ca32645ffcdc8c3f2978c9245aaec6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c9ac805ebea19604343d561bf553448fff2ca575
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668066"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701747"
 ---
 # <a name="quick-watch-command"></a>Befehl "Aktuellen Wert anzeigen"
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Zeigt den ausgewählten oder angegebenen Text im Feld „Ausdruck“ des [Dialogfelds „Schnellansicht“](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867) an. Sie können dieses Dialogfeld verwenden, um den aktuellen Wert einer Variablen, eines Ausdrucks oder den Inhalt eines Registers zu berechnen, der vom Debugger erkannt wird. Darüber hinaus können Sie den Wert jeder nicht konstanten Variablen oder den Inhalt jedes Registers ändern.  
+Zeigt den ausgewählten oder angegebenen Text im Feld „Ausdruck“ des [Dialogfelds „Schnellansicht“](https://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867) an. Sie können dieses Dialogfeld verwenden, um den aktuellen Wert einer Variablen, eines Ausdrucks oder den Inhalt eines Registers zu berechnen, der vom Debugger erkannt wird. Darüber hinaus können Sie den Wert jeder nicht konstanten Variablen oder den Inhalt jedes Registers ändern.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -46,7 +46,7 @@ Debug.QuickWatchq [text]
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Verwenden des Dialogfelds „Schnellüberwachung“](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
+ [Vorgehensweise: Verwenden des Dialogfelds „Schnellüberwachung“](https://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
  [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)   
  [Befehlsfenster](../../ide/reference/command-window.md)   
  [Such-/Befehlsfeld](../../ide/find-command-box.md)   

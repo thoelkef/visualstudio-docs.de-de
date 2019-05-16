@@ -14,12 +14,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 99fb00ded29b9d0764f04d5062a7ee971954fbf7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: aa4eea56321d636efb6458b52b8ad2f271e439ce
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433762"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65673849"
 ---
 # <a name="build-page-project-designer-c"></a>Seite "Erstellen", Projekt-Designer (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Verwenden Sie die Seite **Erstellen** des **Projekt-Designers**, um die Buildkon
  Die folgenden Optionen ermöglichen es Ihnen, die anzuzeigende bzw. zu ändernde Konfiguration und Plattform auszuwählen.  
   
 > [!NOTE]
-> Mit vereinfachten Buildkonfigurationen bestimmt das Projektsystem, ob eine Debug- oder eine Releaseversion erstellt werden soll. Deshalb werden diese Optionen nicht angezeigt. Weitere Informationen finden Sie unter [Debug- und Releaseprojektkonfigurationen](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+> Mit vereinfachten Buildkonfigurationen bestimmt das Projektsystem, ob eine Debug- oder eine Releaseversion erstellt werden soll. Deshalb werden diese Optionen nicht angezeigt. Weitere Informationen finden Sie unter [Debug- und Releaseprojektkonfigurationen](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  **Konfiguration**  
  Gibt an, welche Konfigurationseinstellungen angezeigt oder geändert werden sollen. Es stehen die Einstellungen **Aktiv (Debuggen)** (Standard), **Debuggen**, **Release** oder **Alle Konfigurationen** zur Verfügung.  
@@ -46,7 +46,7 @@ Verwenden Sie die Seite **Erstellen** des **Projekt-Designers**, um die Buildkon
  Die folgenden Optionen ermöglichen es Ihnen, einige C#-Compilereinstellungen zu konfigurieren.  
   
  **Symbole für bedingte Kompilierung**  
- Gibt Symbole an, für die eine bedingte Kompilierung durchgeführt werden soll. Trennen Sie Symbole mit einem Semikolon (";"). Weitere Informationen finden Sie unter [/define (C# Compiler Options)](http://msdn.microsoft.com/library/f17d7b4d-82d0-4133-8563-68cced1cac6e).  
+ Gibt Symbole an, für die eine bedingte Kompilierung durchgeführt werden soll. Trennen Sie Symbole mit einem Semikolon (";"). Weitere Informationen finden Sie unter [/define (C# Compiler Options)](https://msdn.microsoft.com/library/f17d7b4d-82d0-4133-8563-68cced1cac6e).  
   
  **DEBUG-Konstante definieren**  
  Definiert DEBUGGEN als Symbol in allen Quellcodedateien Ihrer App. Die Auswahl dieser Option entspricht der Verwendung der Befehlszeilenoption `/define:DEBUG`.  
@@ -57,7 +57,7 @@ Verwenden Sie die Seite **Erstellen** des **Projekt-Designers**, um die Buildkon
  **Ziel-CPU**  
  Gibt den Prozessor an, für den die Ausgabedatei konfiguriert ist. Wählen Sie für jeden Intel-kompatiblen 32-Bit-Prozessor **x86**, für jeden Intel-kompatiblen 64-Bit-Prozessor **x64** und für ARM-Prozessoren **ARM** aus, oder wählen Sie **Any CPU**, um anzugeben, dass jeder Prozessor zulässig ist. **Any CPU** (Beliebige CPU) ist der Standardwert für Projekte, da die Anwendung hiermit auf möglichst vielen Geräten ausgeführt werden kann.  
   
- Weitere Informationen finden Sie unter [/platform (C# Compiler Options)](http://msdn.microsoft.com/library/c290ff5e-47f4-4a85-9bb3-9c2525b0be04).  
+ Weitere Informationen finden Sie unter [/platform (C# Compiler Options)](https://msdn.microsoft.com/library/c290ff5e-47f4-4a85-9bb3-9c2525b0be04).  
   
  **32-Bit bevorzugen**  
  Wenn das Kontrollkästchen **32-Bit bevorzugen** ausgewählt wird, wird die Anwendung auf den 32-Bit- und 64-Bit-Versionen von Windows als 32-Bit-Anwendung ausgeführt. Wenn das Kontrollkästchen deaktiviert ist, wird die Anwendung auf 32-Bit-Versionen von Windows als 32-Bit-Anwendung und auf 64-Bit-Versionen von Windows als 64-Bit-Anwendung ausgeführt.  
@@ -73,22 +73,22 @@ Verwenden Sie die Seite **Erstellen** des **Projekt-Designers**, um die Buildkon
 - Auf der Seite **Anwendung** ist in der Liste **Zielframework** „.NET Framework 4.5“ angegeben.  
   
   **Unsicheren Code zulassen**  
-  Ermöglicht das Kompilieren von Code, der das [unsafe](http://msdn.microsoft.com/library/7e818009-1c6e-4b9e-b769-3728a01586a0)-Schlüsselwort verwendet. Weitere Informationen finden Sie unter [/unsafe (C# Compiler Options](http://msdn.microsoft.com/library/fdb77ed9-da03-45bd-bb7f-250704da1bcc).  
+  Ermöglicht das Kompilieren von Code, der das [unsafe](https://msdn.microsoft.com/library/7e818009-1c6e-4b9e-b769-3728a01586a0)-Schlüsselwort verwendet. Weitere Informationen finden Sie unter [/unsafe (C# Compiler Options](https://msdn.microsoft.com/library/fdb77ed9-da03-45bd-bb7f-250704da1bcc).  
   
   **Code optimieren**  
-  Aktiviert oder deaktiviert die vom Compiler durchgeführten Optimierungen, damit Ihre Ausgabedatei kleiner, schneller und effizienter wird. Weitere Informationen finden Sie unter [/optimize (C# Compiler Options)](http://msdn.microsoft.com/library/6dd5b6f2-cd1d-4593-a9f4-1c2ed9404ca0).  
+  Aktiviert oder deaktiviert die vom Compiler durchgeführten Optimierungen, damit Ihre Ausgabedatei kleiner, schneller und effizienter wird. Weitere Informationen finden Sie unter [/optimize (C# Compiler Options)](https://msdn.microsoft.com/library/6dd5b6f2-cd1d-4593-a9f4-1c2ed9404ca0).  
   
 ## <a name="errors-and-warnings"></a>Fehler und Warnungen  
  Die folgenden Einstellungen werden verwendet, um Optionen zu Fehlern und Warnungen für den Buildvorgang zu konfigurieren.  
   
  **Warnstufe**  
- Gibt die anzuzeigende Stufe für Compiler-Warnungen an. Weitere Informationen finden Sie unter [/warn (C# Compiler Options)](http://msdn.microsoft.com/library/5f80ff59-4991-4382-9f9a-77da18446e71).  
+ Gibt die anzuzeigende Stufe für Compiler-Warnungen an. Weitere Informationen finden Sie unter [/warn (C# Compiler Options)](https://msdn.microsoft.com/library/5f80ff59-4991-4382-9f9a-77da18446e71).  
   
  **Warnungen unterdrücken**  
- Unterdrückt die Compilerfunktion zum Generieren einer oder mehrerer Warnungen. Trennen Sie mehrere Warnungsnummern jeweils durch ein Komma oder Semikolon voneinander. Weitere Informationen finden Sie unter [/nowarn (C# Compiler Options)](http://msdn.microsoft.com/library/6dcbc5e8-ae67-4566-9df3-f63cfdd9c4e4).  
+ Unterdrückt die Compilerfunktion zum Generieren einer oder mehrerer Warnungen. Trennen Sie mehrere Warnungsnummern jeweils durch ein Komma oder Semikolon voneinander. Weitere Informationen finden Sie unter [/nowarn (C# Compiler Options)](https://msdn.microsoft.com/library/6dcbc5e8-ae67-4566-9df3-f63cfdd9c4e4).  
   
 ## <a name="treat-warnings-as-errors"></a>Warnungen als Fehler behandeln  
- Die folgenden Einstellungen werden verwendet, um anzugeben, welche Warnungen als Fehler behandelt werden. Wählen Sie eine der folgenden Optionen aus, um die Bedingungen anzugeben, unter denen beim Auftreten einer Warnung im Buildvorgang ein Fehler zurückgegeben wird. Weitere Informationen finden Sie unter [/warnaserror (C# Compiler Options)](http://msdn.microsoft.com/library/04680ec3-08d6-4e2e-a274-38310e10e33c).  
+ Die folgenden Einstellungen werden verwendet, um anzugeben, welche Warnungen als Fehler behandelt werden. Wählen Sie eine der folgenden Optionen aus, um die Bedingungen anzugeben, unter denen beim Auftreten einer Warnung im Buildvorgang ein Fehler zurückgegeben wird. Weitere Informationen finden Sie unter [/warnaserror (C# Compiler Options)](https://msdn.microsoft.com/library/04680ec3-08d6-4e2e-a274-38310e10e33c).  
   
  **Keine**  
  Warnungen werden nicht als Fehler behandelt.  
@@ -103,22 +103,22 @@ Verwenden Sie die Seite **Erstellen** des **Projekt-Designers**, um die Buildkon
  Die folgenden Einstellungen werden verwendet, um die Ausgabeoptionen für den Buildvorgang zu konfigurieren.  
   
  **Ausgabepfad**  
- Legt den Speicherort der Ausgabedateien für die Konfiguration des Projekts fest. Geben Sie den Pfad der Buildausgabe in dieses Feld ein, oder wählen Sie die Schaltfläche **Durchsuchen**, um einen Pfad anzugeben. Beachten Sie, dass der Pfad relativ ist. Bei der Eingabe eines absoluten Pfads wird dieser als relativer Pfad gespeichert. Der Standardpfad lautet bin\Debug\ oder bin\Release\\. Weitere Informationen finden Sie unter [Debug- und Releaseprojektkonfigurationen](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+ Legt den Speicherort der Ausgabedateien für die Konfiguration des Projekts fest. Geben Sie den Pfad der Buildausgabe in dieses Feld ein, oder wählen Sie die Schaltfläche **Durchsuchen**, um einen Pfad anzugeben. Beachten Sie, dass der Pfad relativ ist. Bei der Eingabe eines absoluten Pfads wird dieser als relativer Pfad gespeichert. Der Standardpfad lautet bin\Debug\ oder bin\Release\\. Weitere Informationen finden Sie unter [Debug- und Releaseprojektkonfigurationen](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
- Mit vereinfachten Buildkonfigurationen bestimmt das Projektsystem, ob eine Debug- oder eine Releaseversion erstellt werden soll. Mit dem Befehl **Erstellen** im Menü **Debuggen** (F5) wird der Build unabhängig vom angegebenen **Ausgabepfad** am Debugspeicherort abgelegt. Mit dem Befehl **Erstellen** im Menü **Erstellen** hingegen wird er an dem Speicherort abgelegt, den Sie angeben. Weitere Informationen finden Sie unter [Debug- und Releaseprojektkonfigurationen](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+ Mit vereinfachten Buildkonfigurationen bestimmt das Projektsystem, ob eine Debug- oder eine Releaseversion erstellt werden soll. Mit dem Befehl **Erstellen** im Menü **Debuggen** (F5) wird der Build unabhängig vom angegebenen **Ausgabepfad** am Debugspeicherort abgelegt. Mit dem Befehl **Erstellen** im Menü **Erstellen** hingegen wird er an dem Speicherort abgelegt, den Sie angeben. Weitere Informationen finden Sie unter [Debug- und Releaseprojektkonfigurationen](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  **XML-Dokumentationsdatei**  
- Gibt den Namen der Datei an, in der die Dokumentationskommentare verarbeitet werden. Weitere Informationen finden Sie unter [/doc (C# Compiler Options)](http://msdn.microsoft.com/library/849eea59-c936-4311-bad8-d07404480f2a).  
+ Gibt den Namen der Datei an, in der die Dokumentationskommentare verarbeitet werden. Weitere Informationen finden Sie unter [/doc (C# Compiler Options)](https://msdn.microsoft.com/library/849eea59-c936-4311-bad8-d07404480f2a).  
   
  **Für COM-Interop registrieren**  
- Legt fest, dass die verwaltete Anwendung ein COM-Objekt (einen COM Callable Wrapper) verfügbar macht, der einem COM-Objekt die Interaktion mit der verwalteten Anwendung ermöglicht. Die Eigenschaft **Ausgabetyp** auf der Seite [Anwendung](../../ide/reference/application-page-project-designer-visual-basic.md) des **Projekt-Designers** muss für diese Anwendung auf **Klassenbibliothek** festgelegt werden, damit die Eigenschaft **Für COM-Interop registrieren** verfügbar ist. Eine Beispielklasse, die Sie in die [!INCLUDE[csprcs](../../includes/csprcs-md.md)]-Anwendung aufnehmen und als COM-Objekt verfügbar machen können, finden Sie unter [COM-Beispielklasse](http://msdn.microsoft.com/library/6504dea9-ad1c-4993-a794-830fec5270af).  
+ Legt fest, dass die verwaltete Anwendung ein COM-Objekt (einen COM Callable Wrapper) verfügbar macht, der einem COM-Objekt die Interaktion mit der verwalteten Anwendung ermöglicht. Die Eigenschaft **Ausgabetyp** auf der Seite [Anwendung](../../ide/reference/application-page-project-designer-visual-basic.md) des **Projekt-Designers** muss für diese Anwendung auf **Klassenbibliothek** festgelegt werden, damit die Eigenschaft **Für COM-Interop registrieren** verfügbar ist. Eine Beispielklasse, die Sie in die [!INCLUDE[csprcs](../../includes/csprcs-md.md)]-Anwendung aufnehmen und als COM-Objekt verfügbar machen können, finden Sie unter [COM-Beispielklasse](https://msdn.microsoft.com/library/6504dea9-ad1c-4993-a794-830fec5270af).  
   
  **Serialisierungsassembly generieren**  
- Gibt an, ob der Compiler das XML Serializer Generator-Tool (Sgen.exe) verwendet, um XML-Serialisierungsassemblys zu erstellen. Serialisierungsassemblys können die Startleistung von <xref:System.Xml.Serialization.XmlSerializer> verbessern, sofern Sie diese Klasse zum Serialisieren von Typen im Code verwendet haben. Standardmäßig ist diese Option auf **Auto** festgelegt, d.h., es werden nur dann Serialisierungsassemblys generiert, wenn Sie <xref:System.Xml.Serialization.XmlSerializer> verwendet haben, um Typen im Code in XML zu codieren. **Aus** gibt an, dass grundsätzlich keine Serialisierungsassemblys generiert werden, unabhängig davon, ob im Code <xref:System.Xml.Serialization.XmlSerializer> verwendet wird. **Ein** gibt an, dass immer Serialisierungsassemblys generiert werden. Serialisierungsassemblys tragen den Namen `TypeName`.XmlSerializers.dll. Weitere Informationen finden Sie unter [XML Serializer Generator-Tool (Sgen.exe)](http://msdn.microsoft.com/library/cc1d1f1c-fb26-4be9-885a-3fe84c81cec6).  
+ Gibt an, ob der Compiler das XML Serializer Generator-Tool (Sgen.exe) verwendet, um XML-Serialisierungsassemblys zu erstellen. Serialisierungsassemblys können die Startleistung von <xref:System.Xml.Serialization.XmlSerializer> verbessern, sofern Sie diese Klasse zum Serialisieren von Typen im Code verwendet haben. Standardmäßig ist diese Option auf **Auto** festgelegt, d.h., es werden nur dann Serialisierungsassemblys generiert, wenn Sie <xref:System.Xml.Serialization.XmlSerializer> verwendet haben, um Typen im Code in XML zu codieren. **Aus** gibt an, dass grundsätzlich keine Serialisierungsassemblys generiert werden, unabhängig davon, ob im Code <xref:System.Xml.Serialization.XmlSerializer> verwendet wird. **Ein** gibt an, dass immer Serialisierungsassemblys generiert werden. Serialisierungsassemblys tragen den Namen `TypeName`.XmlSerializers.dll. Weitere Informationen finden Sie unter [XML Serializer Generator-Tool (Sgen.exe)](https://msdn.microsoft.com/library/cc1d1f1c-fb26-4be9-885a-3fe84c81cec6).  
   
  **Erweitert**  
  Klicken Sie darauf, um das [Dialogfeld „Erweiterte Buildeinstellungen“ (C#)](../../ide/reference/advanced-build-settings-dialog-box-csharp.md) anzuzeigen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Projekteigenschaftenverweise](../../ide/reference/project-properties-reference.md)   
- [C#-Compileroptionen](http://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44)
+ [C#-Compileroptionen](https://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44)

@@ -16,12 +16,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ea9f23147c6ad7a8b3b28f799b90044763d36d16
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 66adcdeca1aa794649b42f4ae153d9b2f879deff
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441385"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697135"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Optionen, Text-Editor, C/C++, Formatierung
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Ermöglicht es Ihnen, das Standardverhalten des Code-Editors zu ändern, wenn Si
  Um diese Seite zu öffnen, klicken Sie im linken Fenster auf das Dialogfeld **Optionen**, erweitern Sie den **Text-Editor** und **C/C++** und klicken dann auf **Formatieren**.  
   
 > [!NOTE]
-> Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="cc-options"></a>C/C++-Optionen  
  **Automatische QuickInfos aktivieren**  
@@ -66,16 +66,16 @@ Ermöglicht es Ihnen, das Standardverhalten des Code-Editors zu ändern, wenn Si
  Wenn Sie eine Datei im Text-Editor öffnen, können Sie die Gliederungsfunktion aktivieren. Weitere Informationen finden Sie unter [Gliedern](../../ide/outlining.md). Wenn diese Option ausgewählt ist, wird die Gliederungsfunktion beim Öffnen einer Datei aktiviert.  
   
  **Automatische Gliederung von #pragma-Bereich-Blöcken**  
- Wenn diese Option aktiviert wird, wird die automatische Gliederung für [Pragma-Anweisungen](http://msdn.microsoft.com/library/9867b438-ac64-4e10-973f-c3955209873f) aktiviert. Damit können Sie Pragmabereichsblocks im gegliederten Modus erweitern oder reduzieren.  
+ Wenn diese Option aktiviert wird, wird die automatische Gliederung für [Pragma-Anweisungen](https://msdn.microsoft.com/library/9867b438-ac64-4e10-973f-c3955209873f) aktiviert. Damit können Sie Pragmabereichsblocks im gegliederten Modus erweitern oder reduzieren.  
   
  **Automatische Gliederung von Anweisungsblöcken**  
  Wenn diese Option ausgewählt ist, wird die automatische Gliederung für die folgenden Anweisungskonstrukte aktiviert:  
   
-- [if-else](http://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2)  
+- [if-else](https://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2)  
   
-- [switch-Anweisung (C++)](http://msdn.microsoft.com/library/6c3f3ed3-5593-463c-8f4b-b33742b455c6)  
+- [switch-Anweisung (C++)](https://msdn.microsoft.com/library/6c3f3ed3-5593-463c-8f4b-b33742b455c6)  
   
-- [while-Anweisung (C++)](http://msdn.microsoft.com/library/358dbe76-5e5e-4af5-b575-c2293c636899)  
+- [while-Anweisung (C++)](https://msdn.microsoft.com/library/358dbe76-5e5e-4af5-b575-c2293c636899)  
   
 ## <a name="see-also"></a>Siehe auch  
  [Allgemein, Umgebung, Dialogfeld „Optionen“](../../ide/reference/general-environment-options-dialog-box.md)   
