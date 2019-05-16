@@ -8,12 +8,12 @@ ms.assetid: 20221de4-2a9e-4787-b99a-b5855bb90872
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4977a6394a5732d92391c3405519345484a6629f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8186a5961aeb728e683f3ee011766e980e070eea
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056925"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686403"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Codegenerierung, Kompilierung und Benennungskonventionen in Microsoft Fakes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -134,7 +134,7 @@ In diesem Thema werden Optionen und Probleme der Fakes-Codegenerierung und -Code
       PublicKey=<Test_assembly_public_key>)]  
   ```  
   
-  Wenn die Shim-Assembly einen starkem Namen hat, wird die generierte Fakes-Assembly automatisch durch das Fakes-Framework stark signiert. Die Testassembly muss von Ihnen stark signiert werden. Siehe [Erstellen und Verwenden von Assemblys mit starkem Namen](http://msdn.microsoft.com/library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9).  
+  Wenn die Shim-Assembly einen starkem Namen hat, wird die generierte Fakes-Assembly automatisch durch das Fakes-Framework stark signiert. Die Testassembly muss von Ihnen stark signiert werden. Siehe [Erstellen und Verwenden von Assemblys mit starkem Namen](https://msdn.microsoft.com/library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9).  
   
   Das Fakes-Framework verwendet den gleichen Schlüssel, um alle generierten Assemblys zu signieren, sodass Sie diesen Ausschnitt als Ausgangspunkt verwenden können, um dem Shim-Assemblycode das **InternalsVisibleTo**-Attribut für die Fakes-Assembly hinzuzufügen.  
   

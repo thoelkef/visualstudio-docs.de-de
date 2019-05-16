@@ -19,12 +19,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 785e3960148d627e437d15e8662dfd76dccc53c0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: eb21495954801d55c1db0bb9156a813ab73db683
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659331"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687102"
 ---
 # <a name="wpf-msbuild-task-reference"></a>Referenz zu MSBuild-Aufgaben für WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,4 +60,4 @@ Der Buildprozess von WPF erweitert die Microsoft-Build-Engine (MSBuild) durch ei
  Fügt das Element **\<hostInBrowser >/** dem Anwendungsmanifest (*Projektname*.exe.manifest) hinzuzufügen, wenn ein [!INCLUDE[TLA#tla_xbap](../includes/tlasharptla-xbap-md.md)]-Projekt erstellt wird.  
   
 ## <a name="see-also"></a>Siehe auch  
- [MSBuild](http://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)
+ [MSBuild](https://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)
