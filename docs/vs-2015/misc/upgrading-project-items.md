@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 8af29dd4-eaf1-4b3c-b602-198e1a3dff23
 caps.latest.revision: 14
 manager: jillfra
-ms.openlocfilehash: c07f8f62fb7ae84b5f3ee6140cccecf744c759e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb3619e187c7856cf03ee60c8a04cbe527bf0a69
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62434175"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698683"
 ---
 # <a name="upgrading-project-items"></a>Aktualisieren von Projektelementen
 Wenn Sie hinzufügen oder Verwalten von Elementen im Projektsystemen, die Sie nicht implementieren, müssen Sie möglicherweise zur Teilnahme an des Projekt-Upgrade-Prozess. Crystal Reports ist ein Beispiel für ein Element, das an das Projektsystem hinzugefügt werden kann.  
@@ -38,5 +38,5 @@ Wenn Sie hinzufügen oder Verwalten von Elementen im Projektsystemen, die Sie ni
 2. Zum Zeitpunkt des Projektelements eine Benachrichtigung über das Upgraden von Projekten, ruft der **Visual Studio-Konvertierungs-Assistenten** wird weiterhin angezeigt. Aus diesem Grund sollten Sie die Methoden verwenden die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> Schnittstelle, um ein Upgrade von Nachrichten auf der Benutzeroberfläche des Assistenten bereitzustellen.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Visual Studio-Konvertierungs-Assistenten](http://msdn.microsoft.com/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   
+ [Visual Studio-Konvertierungs-Assistenten](https://msdn.microsoft.com/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   
  [Aktualisieren von benutzerdefinierten Projekten](../misc/upgrading-custom-projects.md)

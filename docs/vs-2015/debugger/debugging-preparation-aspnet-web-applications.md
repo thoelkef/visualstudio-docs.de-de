@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e7a2640d39c90dc36a3960d230df46ac75bdbce6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7a80587062442688551d07128a2cec49a712adf6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092421"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691463"
 ---
 # <a name="debugging-preparation-aspnet-web-applications"></a>Vorbereitung des Debugvorgangs: ASP.NET-Webanwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,11 +43,11 @@ Die [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]-Websitevorlage erstellt ein
   
 1. Legen Sie in den Funktionen und Ereignishandlern einen oder mehrere Haltepunkte fest.  
   
-     Weitere Informationen finden Sie unter [Breakpoints and Tracepoints](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
+     Weitere Informationen finden Sie unter [Breakpoints and Tracepoints](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
 2. Wenn ein Haltepunkt erreicht wird, wird der Code in der Funktion schrittweise durchlaufen. Achten Sie auf die Ausführung des Codes, bis Sie das Problem isolieren.  
   
-     Weitere Informationen finden Sie unter [ausführen in Einzelschritten](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9) und [Debuggen von Webanwendungen und Skripts](../debugger/debugging-web-applications-and-script.md).  
+     Weitere Informationen finden Sie unter [ausführen in Einzelschritten](https://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9) und [Debuggen von Webanwendungen und Skripts](../debugger/debugging-web-applications-and-script.md).  
   
 ## <a name="changing-default-configurations"></a>Ändern von Standardkonfigurationen  
  Bei Bedarf können Sie die von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] erstellten standardmäßigen Debug- und Releasekonfigurationen ändern. Weitere Informationen finden Sie unter [Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen](../debugger/how-to-set-debug-and-release-configurations.md).  

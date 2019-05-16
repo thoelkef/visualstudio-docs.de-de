@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b0c0b97cf4bdebcac4eac837077cf96368f3f32c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 323e67458d934d27800cac710f79857a98d6c6c5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110333"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682662"
 ---
 # <a name="error-unable-to-access-the-sql-server-debugging-interface"></a>Fehler: Auf die SQL Server-Debugschnittstelle kann nicht zugegriffen werden
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Diese Meldung wird angezeigt, wenn Sie SQL-Debuggen auf einem Computer versuchen
   
 ### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
-- Finden Sie unter [Einrichten von SQL-Debugging](http://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3).  
+- Finden Sie unter [Einrichten von SQL-Debugging](https://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Debuggen von SQL](http://msdn.microsoft.com/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)
+ [Debuggen von SQL](https://msdn.microsoft.com/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)

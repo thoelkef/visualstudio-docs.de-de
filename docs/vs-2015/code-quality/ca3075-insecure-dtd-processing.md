@@ -8,12 +8,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1923b2c41675bfcf20ca1f9c0035dd1e500debe4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 694b72327d8e059fe12a227afdab79219081ef92
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425438"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693411"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: Unsichere DTD-Verarbeitung.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "63425438"
  Wenn Sie unsichere <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> -Instanzen oder externe Entitätsquellen verweisen, kann der Parser unter Umständen nicht vertrauenswürdige Eingaben akzeptieren und Angreifern vertrauliche Informationen offenlegen.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Eine [Document Type Definition (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) ist eine von zwei Methoden, mit denen ein XML-Parser die Gültigkeit eines Dokuments gemäß  [World Wide Web Consortium (W3C) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/)bestimmen kann. Diese Regel sucht Eigenschaften und Instanzen, die nicht vertrauenswürdige Daten akzeptieren, um Entwickler vor potenziellen [Information Disclosure](http://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) -Bedrohungen zu warnen, die zu [Denial-of-Service-Angriffen (DoS)](http://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) führen können. Diese Regel wird  in folgenden Fällen ausgelöst:
+ Eine [Document Type Definition (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) ist eine von zwei Methoden, mit denen ein XML-Parser die Gültigkeit eines Dokuments gemäß  [World Wide Web Consortium (W3C) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/)bestimmen kann. Diese Regel sucht Eigenschaften und Instanzen, die nicht vertrauenswürdige Daten akzeptieren, um Entwickler vor potenziellen [Information Disclosure](https://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) -Bedrohungen zu warnen, die zu [Denial-of-Service-Angriffen (DoS)](https://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) führen können. Diese Regel wird  in folgenden Fällen ausgelöst:
 
 - DtdProcessing wird in der <xref:System.Xml.XmlReader> -Instanz aktiviert, die externe XML-Entitäten mit <xref:System.Xml.XmlUrlResolver>auflöst.
 
@@ -59,7 +59,7 @@ ms.locfileid: "63425438"
 
 - Deaktivieren Sie die DTD-Verarbeitung, wenn Sie mit nicht vertrauenswürdigen Quellen arbeiten, indem Sie festlegen, werden die <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> Eigenschaft **"true"** .
 
-- Die XmlTextReader-Klasse verfügt über die Vererbungsanforderung „volle Vertrauenswürdigkeit“. Finden Sie unter [Vererbungsanforderungen](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) für Weitere Informationen.
+- Die XmlTextReader-Klasse verfügt über die Vererbungsanforderung „volle Vertrauenswürdigkeit“. Finden Sie unter [Vererbungsanforderungen](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) für Weitere Informationen.
 
   .NET 4 und höher
 

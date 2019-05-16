@@ -13,12 +13,12 @@ ms.assetid: be48e639-340a-468a-9f5f-68911bfef93c
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 982adbadf4a0e6099f8d98d9f81df1549d6f4d10
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 56461b928741f299e9005e11292efb3669297b57
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58958129"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690612"
 ---
 # <a name="vsx-language-pack-schema-reference"></a>Schemareferenz für VSX Sprachpaket
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,5 +36,5 @@ Das VSX-Sprachpaket-Schema stellt lokalisierte Installationsinformationen für V
 |Titel|Beschreibung|  
 |-----------|-----------------|  
 |[Lokalisieren von VSIX-Paketen](../extensibility/localizing-vsix-packages.md)|Veranschaulicht, wie lokalisierte Installations-Unterstützung für ein VSIX-Paket bereitzustellen.|  
-|[Referenz zum VSIX-Erweiterung Schema 1.0](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)|Ein VSIX-Manifest beschreibt den Inhalt einer VSIX-Bereitstellungsdatei, mit dem Visual Studio-Erweiterung mithilfe von installiert werden können die **Erweiterungen und Updates** Dialogfeld.|  
+|[Referenz zum VSIX-Erweiterung Schema 1.0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)|Ein VSIX-Manifest beschreibt den Inhalt einer VSIX-Bereitstellungsdatei, mit dem Visual Studio-Erweiterung mithilfe von installiert werden können die **Erweiterungen und Updates** Dialogfeld.|  
 |[Suchen und Verwenden von Visual Studio-Erweiterungen](../ide/finding-and-using-visual-studio-extensions.md)|Zeigt, wie die **Erweiterungen und Updates** Dialogfeld installieren, entfernen, aktivieren und Deaktivieren von Erweiterungen.|

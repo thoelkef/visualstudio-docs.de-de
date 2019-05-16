@@ -11,12 +11,12 @@ ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b33d5d1a09425a18f0c9489b15147e3355e45c99
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f26b11aaf74b73535c82ebcd6422f3be0bba3f22
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957725"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697203"
 ---
 # <a name="creating-project-instances-by-using-project-factories"></a>Erstellen von Projektinstanzen mithilfe von Projektfactorys
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Projekttypen in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] verwenden eine *
   
  Sie können die implementieren die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> Schnittstelle in einer Klasse in Ihrem Projekt. In der Regel befindet sich in ein eigenes Modul.  
   
- Ein Beispiel für die Implementierung von der `IVsProjectFactory` Benutzeroberfläche, siehe PrjFac.cpp, der in enthalten ist das [Basisprojekt](http://msdn.microsoft.com/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) Beispielverzeichnis.  
+ Ein Beispiel für die Implementierung von der `IVsProjectFactory` Benutzeroberfläche, siehe PrjFac.cpp, der in enthalten ist das [Basisprojekt](https://msdn.microsoft.com/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) Beispielverzeichnis.  
   
  Projekte, die unterstützen, die aggregiert wird durch einen Besitzer müssen es sich um einen Besitzer-Schlüssel in der Projektdatei beibehalten. Wenn die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> Methode mit einem Besitzer-Schlüssel an einem Projekt aufgerufen wird, das besessenen Projekt konvertiert seinen Besitzer-Schlüssel in eine Projektzuordnungsinstanz GUID dann Ruft die `CreateProject` Methode für dieses Projekt-Factory die tatsächliche Erstellung zu tun.  
   

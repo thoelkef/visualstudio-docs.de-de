@@ -20,12 +20,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bd5074af8f0a9ca172d04b4cd5bb1d9057ad4bb5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3f7ccd6af16d89c18f5a5bba63f6afc50de391c4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63384079"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688720"
 ---
 # <a name="insert-new-records-into-a-database"></a>Einfügen neuer Datensätze in eine Datenbank
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Zum Einfügen neuer Datensätze in einer Datenbank können Sie die `TableAdapter
   
 #### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterupdate-method"></a>Zum Einfügen neuer Datensätze in einer Datenbank mithilfe der TableAdapter.Update-Methode  
   
-1. Neue Datensätze hinzufügen, um die gewünschte <xref:System.Data.DataTable> durch Erstellen eines neuen <xref:System.Data.DataRow> und zum Hinzufügen der <xref:System.Data.DataTable.Rows%2A> Auflistung. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen von Zeilen zu einer "DataTable"](http://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf).  
+1. Neue Datensätze hinzufügen, um die gewünschte <xref:System.Data.DataTable> durch Erstellen eines neuen <xref:System.Data.DataRow> und zum Hinzufügen der <xref:System.Data.DataTable.Rows%2A> Auflistung. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen von Zeilen zu einer "DataTable"](https://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf).  
   
 2. Nachdem die neuen Zeilen hinzugefügt wurden die <xref:System.Data.DataTable>, rufen Sie die `TableAdapter.Update` Methode. Sie können steuern, die Menge der Daten zu aktualisieren, indem Sie entweder eine gesamte übergeben <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, ein Array von <xref:System.Data.DataRow>s oder eine einzelne <xref:System.Data.DataRow>.  
   

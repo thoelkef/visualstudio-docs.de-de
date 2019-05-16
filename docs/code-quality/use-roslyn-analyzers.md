@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 56637ee7826b944d739e170faf22ae354abd8adc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7132fae3623e1ad10fb35d2b903935cdbffee12d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821423"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676697"
 ---
 # <a name="use-roslyn-analyzers"></a>Verwenden von Roslyn-Analysetools
 
@@ -56,7 +56,7 @@ Um den aktiven Regelsatz, der in dem Regelsatz-Editor zu bearbeiten, mit der Mau
 Navigieren Sie zu, um den aktiven Regelsatz für ein Projekt zu ändern, die **Codeanalyse** auf der Registerkarte Eigenschaften des Projekts. Wählen Sie den Regelsatz aus der Liste unter **diesen Regelsatz ausführen**. Wählen Sie zum Öffnen des Regelsatzes **öffnen**.
 
 > [!NOTE]
-> .NET Core und .NET Standard-Projekte unterstützen nicht die Befehle im Menü aus, für die Regelsätze im **Projektmappen-Explorer**, z. B. **öffnen aktiven Regelsatz**. An einen nicht standardmäßigen Regelsatz für ein .NET Core oder .NET Standard-Projekt manuell [Hinzufügen der **CodeAnalysisRuleSet** Eigenschaft, um die Projektdatei](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project). Sie können die Regeln in der Regel in der Visual Studio festgelegt, dass die Regelsatz-Editor-Benutzeroberfläche konfigurieren.
+> .NET Core und .NET Standard-Projekte unterstützen nicht die Befehle im Menü aus, für die Regelsätze im **Projektmappen-Explorer**, z. B. **öffnen aktiven Regelsatz**. An einen nicht standardmäßigen Regelsatz für ein .NET Core oder .NET Standard-Projekt manuell [Hinzufügen der **CodeAnalysisRuleSet** Eigenschaft](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) zur Projektdatei. Sie können weiterhin die Regeln in der Regel in der Visual Studio festgelegt, dass die Regelsatz-Editor-Benutzeroberfläche konfigurieren.
 
 ## <a name="rule-severity"></a>Regelschweregrad
 

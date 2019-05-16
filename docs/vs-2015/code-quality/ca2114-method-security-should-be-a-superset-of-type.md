@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c9e0024ae6db5af3f1cf23c07fe29fbac8e4827d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b1a360ee4ad35fd48a46f6d866912a05a584a54c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58960185"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687318"
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114: Methodensicherheit sollte Superset des Typs sein.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "58960185"
 |Unterbrechende Änderung|Breaking|
 
 ## <a name="cause"></a>Ursache
- Ein Typ verfügt über die deklarative Sicherheit und eine seiner Methoden die deklarative Sicherheit für die gleiche Aktion für die Sicherheit hat und die Sicherheitsaktion nicht [Verknüpfungsaufrufe](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) oder [Vererbungsanforderungen](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9), und die Berechtigungen überprüft, von dem Typ sind keine Teilmenge der Berechtigungen von der Methode überprüft.
+ Ein Typ verfügt über die deklarative Sicherheit und eine seiner Methoden die deklarative Sicherheit für die gleiche Aktion für die Sicherheit hat und die Sicherheitsaktion nicht [Verknüpfungsaufrufe](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) oder [Vererbungsanforderungen](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9), und die Berechtigungen überprüft, von dem Typ sind keine Teilmenge der Berechtigungen von der Methode überprüft.
 
 ## <a name="rule-description"></a>Regelbeschreibung
  Eine Methode sollte nicht sowohl eine Methode auf und Typebene deklarative Sicherheit für die gleiche Aktion aufweisen. Die zwei Überprüfungen sind nicht kombiniert werden; Es wird nur auf die Anforderung auf Methodenebene angewendet. Angenommen, ein Berechtigung anfordert `X`, und eine seiner Methoden fordert die Berechtigung `Y`, Code verfügt nicht über die Berechtigung verfügen über `X` zum Ausführen der Methode.
@@ -62,4 +62,4 @@ ms.locfileid: "58960185"
  **[keine Schreibberechtigung (nach Typ gefordert)] persönliche Informationen: 6/16/1964 12:00:00 Uhr**
  **[keine Leseberechtigung (von der Methode gefordert)] konnte nicht zugegriffen werden persönliche Informationen: Fehler bei Anforderung.**
 ## <a name="see-also"></a>Siehe auch
- [Sichern Sie die Richtlinien für das Codieren](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [Vererbungsanforderungen](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) [Linkaufrufe](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [Daten und Modellierung](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
+ [Sichern Sie die Richtlinien für das Codieren](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [Vererbungsanforderungen](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) [Linkaufrufe](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [Daten und Modellierung](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

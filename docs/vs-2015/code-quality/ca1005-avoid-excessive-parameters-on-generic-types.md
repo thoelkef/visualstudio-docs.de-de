@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 68631328fb95489f6f81e7f527f1e46a2ce54d44
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.openlocfilehash: bc2986a81b0b21b2e2a4fd87b9c5a453e7d05c32
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58957795"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704298"
 ---
 # <a name="ca1005-avoid-excessive-parameters-on-generic-types"></a>CA1005: Übermäßige Anzahl von Parametern in generischen Typen vermeiden.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58957795"
  Ein extern sichtbarer generischer Typ verfügt über mehr als zwei Parameter.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Je mehr Typparameter ein generischer Typ enthält, desto schwieriger ist es, zu wissen und zu behalten, was die einzelnen Typparameter darstellen. Es ergibt sich normalerweise mit einem Typparameter, z.B. `List<T>`, und in bestimmten Fällen mit zwei Typparametern, wie im `Dictionary<TKey, TValue>`. Wenn mehr als zwei Typparameter vorhanden sind, wird die damit verbundenen schwierigkeiten zu groß für die meisten Benutzer (z. B. `TooManyTypeParameters<T, K, V>` in C# oder `TooManyTypeParameters(Of T, K, V)` in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]).
+ Je mehr Typparameter ein generischer Typ enthält, desto schwieriger ist es, zu wissen und zu behalten, was die einzelnen Typparameter darstellen. Es ergibt sich normalerweise mit einem Typparameter, z.B. `List<T>`, und in bestimmten Fällen mit zwei Typparametern, wie im `Dictionary<TKey, TValue>`. Wenn mehr als zwei Typparameter vorhanden sind, wird die damit verbundenen schwierigkeiten zu groß für die meisten Benutzer (z. B. `TooManyTypeParameters<T, K, V>` in c# oder `TooManyTypeParameters(Of T, K, V)` in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]).
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
  Um einen Verstoß gegen diese Regel zu beheben, ändern Sie das Design, um nicht mehr als zwei Typparameter verwenden.
@@ -60,4 +60,4 @@ ms.locfileid: "58957795"
  [CA1007: Verwenden Sie Generika](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>Siehe auch
- [Generika](http://msdn.microsoft.com/library/75ea8509-a4ea-4e7a-a2b3-cf72482e9282)
+ [Generika](https://msdn.microsoft.com/library/75ea8509-a4ea-4e7a-a2b3-cf72482e9282)

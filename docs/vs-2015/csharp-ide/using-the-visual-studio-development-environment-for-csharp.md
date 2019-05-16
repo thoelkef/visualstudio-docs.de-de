@@ -17,12 +17,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 485f4810f748af707cebba5c50c34144f78371ed
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6e5b52e74eac3e9301ebb10d91c560929b1ef313
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102946"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688031"
 ---
 # <a name="using-the-visual-studio-development-environment-for-c"></a>Verwenden die Visual Studio-Entwicklungsumgebung für C\#
 
@@ -36,13 +36,13 @@ Die integrierte Entwicklungsumgebung (IDE) von Visual Studio ist eine Auflistung
 |-----------|-----------------|
 |[Exemplarische Vorgehensweise: Erstellen einer einfachen Anwendung mit Visual C# oder Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)|Bietet eine Übersicht über die zahlreichen, in Visual Studio enthaltenen Funktionen und Tools für die Anwendungsentwicklung.|
 |[Erstellen von Projektmappen und Projekten](../ide/creating-solutions-and-projects.md)|Beschreibt, wie ein Projekt erstellt wird, das alle Quellcodedateien, Ressourcendateien wie z. B. Symbole, Verweise auf externe Dateien und Konfigurationsdaten wie z. B. Compilereinstellungen enthält.|
-|[Introduction to the Project Designer (Einführung in den Projekt-Designer)](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)|Bietet eine Übersicht über den Projekt-Designer, ein zentraler Ort zum Verwalten von Projekteigenschaften, -einstellungen und -ressourcen.|
+|[Introduction to the Project Designer (Einführung in den Projekt-Designer)](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)|Bietet eine Übersicht über den Projekt-Designer, ein zentraler Ort zum Verwalten von Projekteigenschaften, -einstellungen und -ressourcen.|
 |[Schreiben von Code](../ide/writing-code-in-the-code-and-text-editor.md)|Beschreibt Visual Studio-Tools, die Sie bei folgenden Aufgaben unterstützen: Bearbeiten und Ändern von Text, Code sowie Markup, Einfügen und Konfigurieren von Steuerelementen und anderen Objekten sowie Namespaces und Hinzufügen von Verweisen auf externe Komponenten und Ressourcen.|
 |[Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)|Enthält Links zu Themen über Visual C#-spezifische Funktionen, z. B. automatische Codegenerierung und IntelliSense für zuletzt verwendete Member.|
 |[Visual C#-Codeausschnitte](../ide/visual-csharp-code-snippets.md)|Enthält eine Übersicht zur Verwendung von Codeausschnitten in Visual C#, um einer Anwendung allgemeine Codekonstrukte automatisch hinzuzufügen.|
 |[Schreiben von Code](../ide/writing-code-in-the-code-and-text-editor.md)|Enthält Links zu Verfahren, in denen die Verwendung des Fensters Suchen und Ersetzen, von Lesezeichen sowie der Aufgaben- und Fehlerliste zum Suchen von Codezeilen erläutert wird.|
 |[Anzeigen der Codestruktur](../ide/viewing-the-structure-of-code.md)|Erläutert, wie Hierarchien von Klassen, Klassenmembern und Ressourcen durchsucht werden.|
-|[Vorgehensweise: Hinzufügen eine Anwendungskonfigurationsdatei zu einem C# Projekt](../csharp-ide/how-to-add-an-application-configuration-file-to-a-csharp-project.md)|Beschreibt, wie einem C#-Projekt eine Konfigurationsdatei (app.config) hinzugefügt wird.|
+|[Vorgehensweise: Hinzufügen einer Anwendungskonfigurationsdatei zu einem C#-Projekt](../csharp-ide/how-to-add-an-application-configuration-file-to-a-csharp-project.md)|Beschreibt, wie einem C#-Projekt eine Konfigurationsdatei (app.config) hinzugefügt wird.|
 |[Metadaten als Quelle](../csharp-ide/metadata-as-source.md)|Beschreibt, wie Sie Metadaten mithilfe der IDE als Quellcode anzeigen.|
 |[Refactoring (C#)](../csharp-ide/refactoring-csharp.md)|Beschreibt Umgestaltungsvorgänge, durch die Code geändert werden kann, ohne das Verhalten der Anwendung zu beeinflussen.|
 |[Kompilieren und Erstellen](../ide/compiling-and-building-in-visual-studio.md)|Hier erfahren Sie, wie Sie Debug-, Release- und spezielle Builds Ihrer Visual Studio-Lösung konfigurieren.|
@@ -51,6 +51,6 @@ Die integrierte Entwicklungsumgebung (IDE) von Visual Studio ist eine Auflistung
 
 ## <a name="see-also"></a>Siehe auch
 
-- [C#](http://msdn.microsoft.com/library/7f4f8103-7068-4f1d-92c7-3c4519b6edbc)
-- [Erste Schritte mit C#](http://msdn.microsoft.com/library/d6ec050f-3956-4737-8030-a4fa3521d29f)
-- [C#-Referenz](http://msdn.microsoft.com/library/06de3167-c16c-4e1a-b3c5-c27841d4569a)
+- [C#](https://msdn.microsoft.com/library/7f4f8103-7068-4f1d-92c7-3c4519b6edbc)
+- [Erste Schritte mit C#](https://msdn.microsoft.com/library/d6ec050f-3956-4737-8030-a4fa3521d29f)
+- [C#-Referenz](https://msdn.microsoft.com/library/06de3167-c16c-4e1a-b3c5-c27841d4569a)

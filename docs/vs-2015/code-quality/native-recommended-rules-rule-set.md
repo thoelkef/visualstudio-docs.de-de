@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2af02842ffc5c498d27578bcff2cb9fdfa0f6e07
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a0b2dd8f7e48ea9fe1c1a46daf99302b3c29081f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658850"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703189"
 ---
 # <a name="native-recommended-rules-rule-set"></a>Regelsatz für systemeigene empfohlene Regeln
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,7 +116,7 @@ Die systemeigene empfohlene Regeln den Fokus auf die kritischsten und häufigste
 |                       [C6504](../code-quality/c6504.md)                        |                                                         NULL auf Nichtzeiger                                                         |
 |                       [C6505](../code-quality/c6505.md)                        |                                                          MustCheck für "void"                                                          |
 |                       [C6506](../code-quality/c6506.md)                        |                                                 Puffergröße auf Nichtzeiger oder Array                                                 |
-| [C6507](http://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)  |                                                  NULL-Konflikt bei 0 Dereferenzierung                                                  |
+| [C6507](https://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)  |                                                  NULL-Konflikt bei 0 Dereferenzierung                                                  |
 |                       [C6508](../code-quality/c6508.md)                        |                                                      Schreibzugriff auf Konstante                                                       |
 |                       [C6509](../code-quality/c6509.md)                        |                                                     Rückgabe wurde für Vorbedingung verwendet                                                     |
 |                       [C6510](../code-quality/c6510.md)                        |                                                   NULL für Nichtzeiger abgebrochen                                                    |
@@ -127,11 +127,11 @@ Die systemeigene empfohlene Regeln den Fokus auf die kritischsten und häufigste
 |                       [C6516](../code-quality/c6516.md)                        |                                                     Keine Eigenschaften für Attribut                                                      |
 |                       [C6517](../code-quality/c6517.md)                        |                                                  Zulässige Größe für nicht lesbaren Puffer                                                  |
 |                       [C6518](../code-quality/c6518.md)                        |                                                Schreibbare Größe für Puffer, der nicht geschrieben werden kann                                                 |
-| [C6521](http://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                                   Ungültige Größenzeichenfolgendereferenzierung                                                   |
+| [C6521](https://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                                   Ungültige Größenzeichenfolgendereferenzierung                                                   |
 |                       [C6522](../code-quality/c6522.md)                        |                                                      Ungültiger Größenzeichenfolgentyp                                                       |
-| [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                                    Ungültiger Größenzeichenfolgenparameter                                                    |
+| [C6523](https://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                                    Ungültiger Größenzeichenfolgenparameter                                                    |
 |                       [C6525](../code-quality/c6525.md)                        |                                              Ungültiger Größenzeichenfolgenstandort                                               |
-| [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                                   Ungültiger Größenzeichenfolgen-Puffertyp                                                   |
+| [C6526](https://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                                   Ungültiger Größenzeichenfolgen-Puffertyp                                                   |
 |                       [C6527](../code-quality/c6527.md)                        |                         Ungültige Anmerkung: 'Die NeedsRelease'-Eigenschaft kann nicht für Werte des void-Typ verwendet werden                          |
 |                       [C6530](../code-quality/c6530.md)                        |                                                  Unbekannter Formatzeichenfolgenstil                                                   |
 |                       [C6540](../code-quality/c6540.md)                        |            Bei Verwendung von Attributanmerkungen für diese Funktion werden alle vorhandenen, zugehörigen __declspec-Anmerkungen ungültig             |

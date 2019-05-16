@@ -9,12 +9,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 07e5c91038013f51199212a3215490bbfdf34257
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b36897236b71617c6eb36949d307e6b3e1d0204b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442627"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693972"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Schritt 2: Erstellen einer zufälligen Additionsaufgabe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Im zweiten Teil dieses Lernprogramms gestalten Sie das Quiz anspruchsvoll, indem
   
      `Random` wird als Objekt bezeichnet. Sie haben das Wort "Objekt" wahrscheinlich schon einmal gehört. In den nächsten Lernprogrammen erfahren Sie mehr über die Bedeutung eines Objekts für die Programmierung. Im Moment müssen Sie wissen, dass Sie mit `new`-Anweisungen Schaltflächen, Bezeichnungen, Bereiche, OpenFileDialogs, ColorDialogs, SoundPlayer, Randoms und sogar Formulare erstellen können und diese Elemente als Objekte bezeichnet werden. Wenn Sie das Programm ausführen, wird das Formular gestartet, und mit dem zugrunde liegenden Code wird ein `Random`-Objekt erstellt und mit **randomizer** benannt.  
   
-     In Kürze erstellen Sie eine Methode zur Überprüfung von Antworten. Sie müssen also im Quiz Variablen verwenden, mit denen die Zufallszahlen, die für die einzelnen Aufgaben generiert werden, gespeichert werden. Weitere Informationen finden Sie unter [Variablen](http://msdn.microsoft.com/library/4cfaa06d-4ae3-4307-897b-cf599dc24caa) oder [Typen](http://msdn.microsoft.com/library/f782d7cc-035e-4500-b1b1-36a9881130ad). Damit die Variablen ordnungsgemäß verwendet werden, müssen Sie sie deklarieren. Das heißt, dass Sie ihre Namen und Datentypen auflisten müssen.  
+     In Kürze erstellen Sie eine Methode zur Überprüfung von Antworten. Sie müssen also im Quiz Variablen verwenden, mit denen die Zufallszahlen, die für die einzelnen Aufgaben generiert werden, gespeichert werden. Weitere Informationen finden Sie unter [Variablen](https://msdn.microsoft.com/library/4cfaa06d-4ae3-4307-897b-cf599dc24caa) oder [Typen](https://msdn.microsoft.com/library/f782d7cc-035e-4500-b1b1-36a9881130ad). Damit die Variablen ordnungsgemäß verwendet werden, müssen Sie sie deklarieren. Das heißt, dass Sie ihre Namen und Datentypen auflisten müssen.  
   
 4. Fügen Sie dem Formular zwei Ganzzahlvariablen hinzu, und benennen Sie sie **addend1** und **addend2**.  
   

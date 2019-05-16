@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 345e58b2c2a783bc9ffda8b915bf8baa66ad375a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 75a98706858323693ec01ec3c3420a6d2d25ffef
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046967"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697214"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications"></a>Vorgehensweise: Deaktivieren der URL-Aktivierung von ClickOnce-Anwendungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ In der Regel wird eine [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]Anw
   
  Dieses Verfahren kann nur für [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]-Anwendungen verwendet werden, die von einem Webserver auf dem Computer des Benutzers installiert werden. Es kann nicht für reine Onlineanwendungen verwendet werden, die nur über ihre URL gestartet werden können. Weitere Informationen zu den Unterschieden zwischen reinen Onlineanwendungen und installierten Anwendungen finden Sie unter [Auswählen einer Strategie für die ClickOnce-Bereitstellung](../deployment/choosing-a-clickonce-deployment-strategy.md).  
   
- Dieses Verfahren verwendet das [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]Tool „MageUI.exe“. Weitere Informationen zu diesem Tool finden Sie unter [MageUI.exe (Tool zum Generieren und Bearbeiten von Manifesten, grafischer Client)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14). Sie können dieses Verfahren auch mithilfe von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ausführen.  
+ Dieses Verfahren verwendet das [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]Tool „MageUI.exe“. Weitere Informationen zu diesem Tool finden Sie unter [MageUI.exe (Tool zum Generieren und Bearbeiten von Manifesten, grafischer Client)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14). Sie können dieses Verfahren auch mithilfe von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ausführen.  
   
 ## <a name="procedure"></a>Prozedur  
   

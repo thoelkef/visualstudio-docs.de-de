@@ -8,12 +8,12 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9e27478255ccd8f3d5c2786fdfc806fa4f5c0a15
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a862b01eb4fdbb654ce31419742c07ba22194ffa
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63387013"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705982"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Testen von Windows UWP- und 8.1 -Phone-Apps mit Tests der programmierten UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -374,7 +374,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
   
 |Feature|Windows Store-Apps|Windows Phone-Apps|  
 |-------------|------------------------|------------------------|  
-|Ziel für das Ausführen von Tests|Lokaler oder Remotecomputer. Remotecomputer können nur festgelegt werden, wenn ein automatisierter Testfall für das Ausführen von Tests verwendet wurde. Weitere Informationen finden Sie unter [Automatisieren eines Testfalls mit Microsoft Test Manager](http://msdn.microsoft.com/library/4e02568b-9cde-47cc-b41c-82726c177e42).|Emulator oder Gerät. Siehe [F: Können Tests nur auf dem Emulator ausgeführt werden oder kann ich auch ein physisches Gerät verwenden?](#TestingPhoneAppsCodedUI_EmulatorDevice) in diesem Thema.|  
+|Ziel für das Ausführen von Tests|Lokaler oder Remotecomputer. Remotecomputer können nur festgelegt werden, wenn ein automatisierter Testfall für das Ausführen von Tests verwendet wurde. Weitere Informationen finden Sie unter [Automatisieren eines Testfalls mit Microsoft Test Manager](https://msdn.microsoft.com/library/4e02568b-9cde-47cc-b41c-82726c177e42).|Emulator oder Gerät. Siehe [F: Können Tests nur auf dem Emulator ausgeführt werden oder kann ich auch ein physisches Gerät verwenden?](#TestingPhoneAppsCodedUI_EmulatorDevice) in diesem Thema.|  
 |Ausführen aus der Befehlszeile|Einstellungsdatei für das Festlegen des Ziels nicht erforderlich.|RUNSETTINGS-Datei für das Festlegen des Ziels erforderlich.|  
 |Spezialisierte Klassen für Shell-Steuerelemente|<xref:Microsoft.VisualStudio.TestTools.UITesting.DirectUIControls.DirectUIControl>|<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>|  
 |WebView-Steuerelement in einer XAML-App|Unterstützt, wenn spezielle HTML*-Klassen für die Interaktion mit HTML-Elementen verwendet werden. Siehe <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>.|Wird nicht unterstützt.|  

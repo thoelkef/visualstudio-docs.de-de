@@ -16,12 +16,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7482fb99114b4a30281d84045faa14d1a6562471
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8c1b8b10234e8b297be471f596cc1739deab317d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110896"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674172"
 ---
 # <a name="summary-view"></a>Zusammenfassungsansicht
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,8 +52,8 @@ Die Zusammenfassungsansicht zeigt Informationen über die leistungsintensivsten 
 |**Gekürzte Aufrufstruktur anzeigen**|Zeigt die leistungsintensivsten Ausführungspfade in der Aufrufstrukturansicht an. Weitere Informationen finden Sie unter [Aufrufstrukturansicht](../profiling/call-tree-view.md).|  
 |**Langsamste Zeile anzeigen**|Nicht verfügbar für Profilerstellungsdaten, die über die Instrumentierungsmethode erfasst wurden. Zeigt die leistungsintensivsten Quellcodezeilen in der Zeilenansicht an. Weitere Informationen finden Sie unter [Zeilenansicht](../profiling/lines-view.md).|  
 |**Berichte vergleichen**|Zeigt das Dialogfeld **Analysedateien für Vergleich auswählen** an, in dem Sie eine andere Profilerstellungs-Datendatei angeben können, um einen Vergleich mit der aktuellen Datei zu ziehen. Weitere Informationen finden Sie unter [Vergleichen von Leistungsdatendateien](../profiling/comparing-performance-data-files.md).|  
-|**Berichtsdaten exportieren**|Zeigt das Dialogfeld **Exportbericht** an, in dem Sie mindestens eine Berichtsansicht angeben können, die als durch Trennzeichen getrennte (CSV) oder XML-Datei gespeichert werden soll. Weitere Informationen finden Sie unter [Vorgehensweise: Exportieren Berichte für Profilerstellungstools](http://msdn.microsoft.com/174b5bd3-df9b-4fd4-88d4-76032ab90451).|  
-|**Analysierten Bericht speichern**|Speichert die aktuelle Profilerstellungsdatendatei als eine VSPS-Datei, die in der Schnittstelle für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] schneller geöffnet wird. Weitere Informationen finden Sie unter [Vorgehensweise: Speichern von analysierten Profilerstellungsdatendateien](http://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556).|  
+|**Berichtsdaten exportieren**|Zeigt das Dialogfeld **Exportbericht** an, in dem Sie mindestens eine Berichtsansicht angeben können, die als durch Trennzeichen getrennte (CSV) oder XML-Datei gespeichert werden soll. Weitere Informationen finden Sie unter [Vorgehensweise: Exportieren Berichte für Profilerstellungstools](https://msdn.microsoft.com/174b5bd3-df9b-4fd4-88d4-76032ab90451).|  
+|**Analysierten Bericht speichern**|Speichert die aktuelle Profilerstellungsdatendatei als eine VSPS-Datei, die in der Schnittstelle für [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] schneller geöffnet wird. Weitere Informationen finden Sie unter [Vorgehensweise: Speichern von analysierten Profilerstellungsdatendateien](https://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556).|  
 |**Berichtsdaten filtern**|Zeigt den Filterbereich des Profilerstellungsberichts an, in dem Sie Kriterien für die Einschränkung der Daten in der Berichtsansicht bestimmen können. Weitere Informationen finden Sie unter [Filter für die Leistungsberichtsansicht](../profiling/performance-report-view-filter.md).|  
 |**Vollbild umschalten**|Schaltet den Vollbildmodus für die Berichtsansicht ein bzw. aus.|  
   

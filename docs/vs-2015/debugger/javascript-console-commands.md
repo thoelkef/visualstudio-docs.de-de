@@ -18,19 +18,19 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 45588d06cddd919d8ff0f96329cce5f6054edd00
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d5c4223699c720750514aaf2b9abc18b34ae4269
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431431"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690584"
 ---
 # <a name="javascript-console-commands"></a>JavaScript Console commands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "Windows_and_phone_content")  
   
- Sie können Befehle verwenden, um Nachrichten zu senden und weitere Aufgaben im JavaScript-Konsolenfenster von Visual Studio auszuführen. Beispiele zur Verwendung dieses Fensters finden Sie unter [Schnellstart: Debuggen von JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Die Informationen in diesem Thema beziehen sich auf Windows Store-Apps, Windows Phone Store-Apps und Apps, die mit Visual Studio-Tools für Apache Cordova erstellt wurden. Informationen zu unterstützten Konsolenbefehlen in Cordova-Apps finden Sie unter [Debug Your App](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1). Informationen zur Verwendung der Konsole in Internet Explorer F12-Tools finden Sie in [diesem Thema](http://msdn.microsoft.com/library/ie/dn255006.aspx).  
+ Sie können Befehle verwenden, um Nachrichten zu senden und weitere Aufgaben im JavaScript-Konsolenfenster von Visual Studio auszuführen. Beispiele zur Verwendung dieses Fensters finden Sie unter [Schnellstart: Debuggen von JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Die Informationen in diesem Thema beziehen sich auf Windows Store-Apps, Windows Phone Store-Apps und Apps, die mit Visual Studio-Tools für Apache Cordova erstellt wurden. Informationen zu unterstützten Konsolenbefehlen in Cordova-Apps finden Sie unter [Debug Your App](https://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1). Informationen zur Verwendung der Konsole in Internet Explorer F12-Tools finden Sie in [diesem Thema](https://msdn.microsoft.com/library/ie/dn255006.aspx).  
   
  Wenn das JavaScript-Konsolenfenster geschlossen ist, können Sie es während des Debuggengens in Visual Studio öffnen, indem Sie auf **Debuggen** > **Windows** > **JavaScript-Konsole**.  
   

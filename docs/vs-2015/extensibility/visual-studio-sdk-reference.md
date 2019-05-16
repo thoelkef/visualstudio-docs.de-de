@@ -11,12 +11,12 @@ ms.assetid: a6930db5-a112-4651-8de3-e520df851f82
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a0f3380622f20e8518eed8ea2a8071518fe4a099
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 85eed4abd07e63c2d997a6068744e91e6f1ac047
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62537432"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690920"
 ---
 # <a name="visual-studio-sdk-reference"></a>Visual Studio SDK-Referenz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,10 +25,10 @@ Dieser Abschnitt enthält Informationen zu Visual Studio-Namespaces, zugehörige
   
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
- [Setup-Konfiguration](http://msdn.microsoft.com/library/faa4ed55-66ce-4792-939f-a5b093f13a2e)  
+ [Setup-Konfiguration](https://msdn.microsoft.com/library/faa4ed55-66ce-4792-939f-a5b093f13a2e)  
  Setup-Konfigurations-API für die Ermittlung von Instanzen von Visual Studio 2017.
 
- ["Ordner öffnen"-Erweiterbarkeit](http://msdn.microsoft.com/library/0897ae3d-6a09-4d26-90c9-7f3d0b8e5c5d)  
+ ["Ordner öffnen"-Erweiterbarkeit](https://msdn.microsoft.com/library/0897ae3d-6a09-4d26-90c9-7f3d0b8e5c5d)  
  Arbeitsbereich-API-Ordner in Visual Studio 2017 öffnen.
  
  <xref:Microsoft.VisualStudio.TextManager.Interop>  

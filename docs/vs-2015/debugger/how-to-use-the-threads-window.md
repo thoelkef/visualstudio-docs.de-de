@@ -24,12 +24,12 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 280160127cc147cddd91a79c4290f80a311ee792
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 835843d2328d9d17ac899fc12c97251b7e6b4659
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434865"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685319"
 ---
 # <a name="how-to-use-the-threads-window"></a>Vorgehensweise: Verwenden des Fensters Threads
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,7 +127,7 @@ In der **Threads** Fenster, die Sie untersuchen und Arbeiten mit Threads in der 
 ## <a name="freezing-and-thawing-threads"></a>Sperren und Entsperren von Threads  
  Wenn ein Thread eingefroren ist, wird die Threadausführung vom System auch dann nicht gestartet, wenn Ressourcen verfügbar sind.  
   
- In nativem Code können Sie anhalten oder Fortsetzen von Threads durch Aufruf der Windows-Funktionen `SuspendThread` und `ResumeThread` oder die MFC-Funktionen [CWinThread:: SuspendThread](http://msdn.microsoft.com/library/57189c7e-fd71-42e5-bc4b-3de7cd373d28) und [CWinThread:: ResumeThread](http://msdn.microsoft.com/library/d6f97a2f-5c9f-4ee1-b978-d74938784db5). Wenn Sie aufrufen `SuspendThread` oder `ResumeThread`, Sie ändern die *Unterbrechungszähler*, die angezeigt wird, der **Threads** Fenster. Wenn Sie jedoch einen systemeigenen Thread einfrieren oder reaktivieren, wird dadurch der Unterbrechungszähler nicht geändert. Im systemeigenen Code kann ein Thread nur ausgeführt werden, wenn er reaktiviert ist und sein Unterbrechungszähler den Wert 0 aufweist.  
+ In nativem Code können Sie anhalten oder Fortsetzen von Threads durch Aufruf der Windows-Funktionen `SuspendThread` und `ResumeThread` oder die MFC-Funktionen [CWinThread:: SuspendThread](https://msdn.microsoft.com/library/57189c7e-fd71-42e5-bc4b-3de7cd373d28) und [CWinThread:: ResumeThread](https://msdn.microsoft.com/library/d6f97a2f-5c9f-4ee1-b978-d74938784db5). Wenn Sie aufrufen `SuspendThread` oder `ResumeThread`, Sie ändern die *Unterbrechungszähler*, die angezeigt wird, der **Threads** Fenster. Wenn Sie jedoch einen systemeigenen Thread einfrieren oder reaktivieren, wird dadurch der Unterbrechungszähler nicht geändert. Im systemeigenen Code kann ein Thread nur ausgeführt werden, wenn er reaktiviert ist und sein Unterbrechungszähler den Wert 0 aufweist.  
   
  In verwaltetem Code hat das Einfrieren oder Reaktivieren keinen Einfluss auf den Wert des Unterbrechungszählers. In verwaltetem Code hat ein eingefrorener Thread den Unterbrechungszähler 1 auf. In nativem Code hat der Unterbrechungszähler eines eingefrorenen Threads den Wert 0, es sei denn, seine Ausführung wurde durch einen `SuspendThread`-Aufruf unterbrochen.  
   

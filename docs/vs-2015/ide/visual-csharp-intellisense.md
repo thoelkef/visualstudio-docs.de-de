@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8de573e8d5f46988868f18114fdabb07f62690e0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6b1af6a2900a579e7490f47f2e8ee4983310e19e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443168"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698209"
 ---
 # <a name="visual-c-intellisense"></a>Visual C#-IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,10 +41,10 @@ Visual C# IntelliSense ist beim Codieren im Editor und beim Debuggen im Befehlsf
   Die Vervollständigungsliste in C# ist darüber hinaus intelligent genug, irrelevante Token herauszufiltern und auf der Grundlage des Kontexts eine Vorauswahl unter den Token zu treffen. Weitere Informationen finden Sie unter [Filtered Completion Lists in C# (Gefilterte Vervollständigungslisten in C#)](../misc/filtered-completion-lists-in-csharp.md) und unter [Pre-selected Completion List Items in C# (Vorauswahl von Elementen in Vervollständigungslisten in C#)](../misc/pre-selected-completion-list-items-in-csharp.md).  
   
 ### <a name="CodeSnippets"></a> Codeausschnitte in Vervollständigungslisten  
- In Visual C# enthält die Vervollständigungsliste Codeausschnitte, um Ihnen das einfache Einfügen vordefinierter Codetexte in das Programm zu ermöglichen. Codeausschnitte werden in der Vervollständigungsliste als [Shortcut-Element (IntelliSense-Codeausschnitte)](http://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa) des Ausschnitts angezeigt.  Weitere Informationen über standardmäßig in Visual C# verfügbare Codeausschnitte finden Sie unter [Visual C#-Codeausschnitte](../ide/visual-csharp-code-snippets.md).  
+ In Visual C# enthält die Vervollständigungsliste Codeausschnitte, um Ihnen das einfache Einfügen vordefinierter Codetexte in das Programm zu ermöglichen. Codeausschnitte werden in der Vervollständigungsliste als [Shortcut-Element (IntelliSense-Codeausschnitte)](https://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa) des Ausschnitts angezeigt.  Weitere Informationen über standardmäßig in Visual C# verfügbare Codeausschnitte finden Sie unter [Visual C#-Codeausschnitte](../ide/visual-csharp-code-snippets.md).  
   
 ### <a name="Keywords"></a> Sprachschlüsselwörter in Vervollständigungslisten  
- In Visual C# umfasst die Vervollständigungsliste zusätzlich Sprachschlüsselwörter. Weitere Informationen über Sprachschlüsselwörter in C# finden Sie unter [C#-Schlüsselwörter](http://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad).  
+ In Visual C# umfasst die Vervollständigungsliste zusätzlich Sprachschlüsselwörter. Weitere Informationen über Sprachschlüsselwörter in C# finden Sie unter [C#-Schlüsselwörter](https://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad).  
   
 ### <a name="ExtensionMethods"></a> Erweiterungsmethoden in Vervollständigungslisten  
  In Visual C# enthält die Vervollständigungsliste Erweiterungsmethoden innerhalb des jeweiligen Gültigkeitsbereichs.  
@@ -81,7 +81,7 @@ Visual C# IntelliSense ist beim Codieren im Editor und beim Debuggen im Befehlsf
  IntelliSense speichert, welche Member Sie in der Popupliste [Member auflisten](../ide/using-intellisense.md) zuletzt ausgewählt haben, um die automatische Vervollständigung von Objektnamen zu ermöglichen. Bei der nächsten Verwendung der Memberliste werden die zuletzt verwendeten Member oben angezeigt. Der Verlauf der zuletzt verwendeten Member wird nach jeder Sitzung in der Entwicklungsumgebung (IDE) gelöscht.  
   
 ## <a name="override"></a>override  
- Bei der Eingabe von [override](http://msdn.microsoft.com/library/dd1907a8-acf8-46d3-80b9-c2ca4febada8) und Drücken der LEERTASTE zeigt IntelliSense alle zulässigen Basisklassenmember an, die Sie in einem Popuplistenfeld überschreiben können. Durch die Eingabe des Rückgabetyps der Methode nach `override` wird IntelliSense angewiesen, nur Methoden anzuzeigen, die denselben Typ zurückgeben. Wenn IntelliSense keine Übereinstimmung findet, werden alle Basisklassenmember angezeigt.  
+ Bei der Eingabe von [override](https://msdn.microsoft.com/library/dd1907a8-acf8-46d3-80b9-c2ca4febada8) und Drücken der LEERTASTE zeigt IntelliSense alle zulässigen Basisklassenmember an, die Sie in einem Popuplistenfeld überschreiben können. Durch die Eingabe des Rückgabetyps der Methode nach `override` wird IntelliSense angewiesen, nur Methoden anzuzeigen, die denselben Typ zurückgeben. Wenn IntelliSense keine Übereinstimmung findet, werden alle Basisklassenmember angezeigt.  
   
 ## <a name="automatic-code-generation"></a>Automatische Codegenerierung  
   
@@ -102,7 +102,7 @@ Visual C# IntelliSense ist beim Codieren im Editor und beim Debuggen im Befehlsf
  Um die verfügbaren Optionen in der Visual Studio-IDE anzuzeigen, zeigen Sie im Menü **Bearbeiten** auf **IntelliSense** und dann auf **Using-Direktiven organisieren**. Die IDE bietet die folgenden Optionen zum Organisieren und Entfernen von `usings`-Direktiven:  
   
 ### <a name="implement-interface"></a>Schnittstelle implementieren  
- IntelliSense bietet die Möglichkeit, [Schnittstellen](http://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba) bei der Arbeit im Code-Editor zu implementieren. Um eine Schnittstelle ordnungsgemäß zu implementieren, müssen Sie normalerweise eine Methodendeklaration für jeden Schnittstellenmember in der Klasse erstellen. Nachdem Sie den Namen einer Schnittstelle unter Verwendung von IntelliSense in einer Klassendeklaration eingegeben haben, wird ein Smarttag angezeigt. Mithilfe des Smarttags können Sie die Schnittstelle mit expliziten oder impliziten Namen automatisch implementieren. Bei expliziten Namen weisen die Methodendeklarationen den Namen der Schnittstelle auf, während sie bei impliziten Namen keinen Hinweis auf die Schnittstelle enthalten, der sie angehören. Auf eine explizit benannte Schnittstellenmethode kann nur über eine Schnittstelleninstanz zugegriffen werden, und nicht über eine Klasseninstanz. Weitere Informationen finden Sie unter [Explizite Schnittstellenimplementierung](http://msdn.microsoft.com/library/181c901f-0d4c-4f29-97fc-895079617bf2).  
+ IntelliSense bietet die Möglichkeit, [Schnittstellen](https://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba) bei der Arbeit im Code-Editor zu implementieren. Um eine Schnittstelle ordnungsgemäß zu implementieren, müssen Sie normalerweise eine Methodendeklaration für jeden Schnittstellenmember in der Klasse erstellen. Nachdem Sie den Namen einer Schnittstelle unter Verwendung von IntelliSense in einer Klassendeklaration eingegeben haben, wird ein Smarttag angezeigt. Mithilfe des Smarttags können Sie die Schnittstelle mit expliziten oder impliziten Namen automatisch implementieren. Bei expliziten Namen weisen die Methodendeklarationen den Namen der Schnittstelle auf, während sie bei impliziten Namen keinen Hinweis auf die Schnittstelle enthalten, der sie angehören. Auf eine explizit benannte Schnittstellenmethode kann nur über eine Schnittstelleninstanz zugegriffen werden, und nicht über eine Klasseninstanz. Weitere Informationen finden Sie unter [Explizite Schnittstellenimplementierung](https://msdn.microsoft.com/library/181c901f-0d4c-4f29-97fc-895079617bf2).  
   
  Bei der Schnittstellenimplementierung wird die Mindestanzahl von Methodenstubs generiert, die für die Schnittstelle benötigt werden. Wenn eine Basisklasse Teile der Schnittstelle implementiert, werden diese Stubs nicht neu generiert.  
   

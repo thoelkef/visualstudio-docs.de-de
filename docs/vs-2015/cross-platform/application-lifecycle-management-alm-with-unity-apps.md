@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 6c572d76389c5914f4a9b01b82677449ec1db28b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9d3624fd8b69a51d3d9de1776bc6d2e7bc61a4c1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097166"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696179"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Application Lifecycle Management (ALM) mit Unity-Apps
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Das Entwickeln von Apps für moderne Plattformen umfasst viele weitere Aktivitä
  In den folgenden Tabellen sehen Sie, welche Visual Studio-ALM-Funktionen bei der Arbeit mit Unity verwendet werden können. Ausführliche Informationen über die Funktionen selbst finden Sie in der verknüpften Dokumentation.  
   
 ## <a name="agile-tools"></a>Agile-Tools  
- Referenzlink: **[Arbeit](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)**  (mit Visual Studio Team Services oder TFS, einschließlich Team Explorer Everywhere)  
+ Referenzlink: **[Arbeit](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)**  (mit Visual Studio Team Services oder TFS, einschließlich Team Explorer Everywhere)  
   
  Allgemeiner Kommentar: alle Planungs- und Nachverfolgungsfunktionen sind vom Projekttyp und den Programmiersprachen unabhängig.  
   
@@ -58,9 +58,9 @@ Das Entwickeln von Apps für moderne Plattformen umfasst viele weitere Aktivitä
   
 |Feature|Unterstützt von Unity|Zusätzliche Kommentare|  
 |-------------|--------------------------|-------------------------|  
-|[Verwenden von Team Foundation-Versionskontrolle](http://msdn.microsoft.com/library/1d629052-c65d-4c5d-81eb-eaa4413fe285) oder Visual Studio Team Services|Ja|Unity-Projekte sind einfach eine Sammlung von Dateien, die wie jedes andere Projekt in Versionskontrollsysteme eingefügt werden können, jedoch gibt es einige spezielle Überlegungen, die nach dieser Tabelle aufgeführt sind.|  
-|[Erste Schritte mit Git in Team Services](http://msdn.microsoft.com/library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Ja|Siehe Hinweise nach der Tabelle.|  
-|[Codeanalyse/Verbessern der Codequalität (Verweise, vorgeschlagene Änderungen usw.)](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|Ja||  
+|[Verwenden von Team Foundation-Versionskontrolle](https://msdn.microsoft.com/library/1d629052-c65d-4c5d-81eb-eaa4413fe285) oder Visual Studio Team Services|Ja|Unity-Projekte sind einfach eine Sammlung von Dateien, die wie jedes andere Projekt in Versionskontrollsysteme eingefügt werden können, jedoch gibt es einige spezielle Überlegungen, die nach dieser Tabelle aufgeführt sind.|  
+|[Erste Schritte mit Git in Team Services](https://msdn.microsoft.com/library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Ja|Siehe Hinweise nach der Tabelle.|  
+|[Codeanalyse/Verbessern der Codequalität (Verweise, vorgeschlagene Änderungen usw.)](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|Ja||  
 |[Ermitteln von Änderungen am Code und andere Verläufe](../ide/find-code-changes-and-other-history-with-codelens.md)|Ja||  
 |[Verwenden von Code Maps zum Debuggen von Anwendungen](../modeling/use-code-maps-to-debug-your-applications.md)|Ja||  
   
@@ -73,18 +73,18 @@ Das Entwickeln von Apps für moderne Plattformen umfasst viele weitere Aktivitä
 3. Binäre Objekte in einem Unity-Projekt, z. B. Texturen oder Audiodateien, können eine große Menge an Speicherplatz belegen. Verschiedene Quellcodeverwaltungssysteme wie Git speichern eine Kopie einer Datei für jede vorgenommene Änderung, auch wenn die Änderung nur einen kleinen Teil der Datei betrifft. Dadurch kann das Git-Repository sehr groß werden. Um dies zu vermeiden, entscheiden sich Unity-Entwickler häufig dafür, nur finale Objekte zu ihrem Repository hinzufügen und den Arbeitsverlauf der Objekte anderweitig zu speichern, etwa mit OneDrive, DropBox oder git-annex. Dieser Ansatz funktioniert, da solche Objekte in der Regel nicht zusammen mit Änderungen am Quellcode mit einer Versionsangabe versehen müssen. Entwickler legen in der Regel auch den Objektserialisierungsmodus des Projekteditors auf das Erzwingen von Text fest, um Szenendateien als Text und nicht im Binärformat zu speichern, wodurch Zusammenführungen in der Quellcodeverwaltung ermöglicht werden. Weitere Informationen finden Sie unter [Editoreinstellungen](http://docs.unity3d.com/Manual/class-EditorManager.html) (Unity-Dokumentation).  
   
 ## <a name="build"></a>Build  
- Referenzlink: **[Build](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
+ Referenzlink: **[Build](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
   
 |Feature|Unterstützt von Unity|Zusätzliche Kommentare|  
 |-------------|--------------------------|-------------------------|  
 |Lokaler TFS-Server|Möglich|Unity-Projekte werden über die Unity-Umgebung und nicht über das Visual Studio-Buildsystem erstellt (durch das Erstellen innerhalb der Visual Studio-Tools für Unity kompilieren Sie die Skripts, jedoch wird keine ausführbare Datei erzeugt). Es ist möglich, Unity-Projekte über die Befehlszeile  zu [erstellen (Unity-Dokumentation)](http://docs.unity3d.com/Manual/CommandLineArguments.html). Damit ist es möglich, einen MSBuild-Prozess auf einem TFS-Server zum Ausführen der entsprechenden Unity-Befehle zu konfigurieren, sofern Unity selbst auf diesem Computer installiert ist.<br /><br /> Unity bietet darüber hinaus [Unity Cloud Build](https://build.cloud.unity3d.com/landing/), welches ein Git- oder SVN-Repository überwacht und regelmäßige Builds ausführt. Zurzeit funktioniert es weder mit der Team Foundation-Versionskontrolle noch mit Visual Studio Team Services.|  
-|Lokaler Buildserver mit Verbindung zu Visual Studio Team Services|Möglich|Unter den obigen Bedingungen ist es zudem möglich, über Visual Studio Team Services ausgelöste Builds einen lokalen TFS-Computer verwenden zu lassen.  Anweisungen finden Sie unter [Buildserver](http://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c).|  
+|Lokaler Buildserver mit Verbindung zu Visual Studio Team Services|Möglich|Unter den obigen Bedingungen ist es zudem möglich, über Visual Studio Team Services ausgelöste Builds einen lokalen TFS-Computer verwenden zu lassen.  Anweisungen finden Sie unter [Buildserver](https://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c).|  
 |Gehosteter Controllerdienst von Visual Studio Team Services|Nein|Builds von Unity werden derzeit nicht unterstützt.|  
 |Builddefinitionen mit Vor- und Nachskripts|Ja|Eine benutzerdefinierte Builddefinition, die einen Build über die Unity-Befehlszeile ausführt, kann ebenfalls für Prä- und Postbuildskripts konfiguriert werden.|  
 |Fortlaufende Integration einschließlich abgegrenzter Eincheckvorgänge|Ja|Abgegrenzte Eincheckvorgänge für TFVC, nur wenn Git auf einem Pull-Request-Modell statt mit Eincheckvorgängen arbeitet.|  
   
 ## <a name="testing"></a>Test  
- Referenzlink: **[Testen der Anwendung](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
+ Referenzlink: **[Testen der Anwendung](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
   
 |Feature|Unterstützt von Unity|Zusätzliche Kommentare|  
 |-------------|--------------------------|-------------------------|  
@@ -96,12 +96,12 @@ Das Entwickeln von Apps für moderne Plattformen umfasst viele weitere Aktivitä
 |[Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)|Nein|Tests der codierten UI basieren auf lesbaren Steuerelementen in der App-Benutzeroberfläche. Unity-Apps sind grafischer Art, sodass Inhalte nicht von den Tools für Tests der codierten UI gelesen werden können.|  
   
 ## <a name="improve-code-quality"></a>Verbessern der Codequalität  
- Referenzlink: **[Verbessern der Codequalität](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
+ Referenzlink: **[Verbessern der Codequalität](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
   
 |Feature|Unterstützt von Unity|Zusätzliche Kommentare|  
 |-------------|--------------------------|-------------------------|  
 |[Analysieren der Qualität von verwaltetem Code](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Ja|Kann den C#-Skriptcode in Visual Studio analysieren.|  
-|[Suchen von doppeltem Code mit der Codeklonerkennung](http://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Ja|Kann den C#-Skriptcode in Visual Studio analysieren.|  
+|[Suchen von doppeltem Code mit der Codeklonerkennung](https://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Ja|Kann den C#-Skriptcode in Visual Studio analysieren.|  
 |[Messen von Komplexität und Verwaltbarkeit verwalteten Codes](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Ja|Kann den C#-Skriptcode in Visual Studio analysieren.|  
 |[Leistungs-Explorer](../profiling/performance-explorer.md)|Nein|Verwenden des [Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html) (Unity-Website).|  
 |[Analysieren von .NET Framework-Arbeitsspeicherproblemen](../misc/analyze-dotnet-framework-memory-issues.md)|Nein|Visual Studio-Tools haben keinen Zugriff auf das Mono-Framework (wie von Unity verwendet) für die Profilerstellung. Verwenden des [Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html) (Unity-Dokumentation).|  

@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ab88824055b890fcc65424d692dd12500d021712
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7726d615c3495845ffdf73d69ffc7d8fae155272
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823239"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688281"
 ---
 # <a name="error-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-conflict-with-dependency-39file39"></a>Fehler: die Abhängigkeit &#39;Datei&#39; im Projekt &#39;Projekt&#39; kann nicht in das Ausführungsverzeichnis kopiert werden, da sie mit Abhängigkeit in Konflikt stehen würde &#39;Datei&#39;
 Es liegt ein Konflikt zwischen Verweisen vor: Mehrere unterschiedliche Abhängigkeiten mit demselben Dateinamen wurden in das Verzeichnis „bin“ für die auszuführende Anwendung kopiert. Das Ausführungsverzeichnis kann den Konflikt nicht lösen, da es sich bei den Abhängigkeiten nicht um Primärverweise handelt.  
@@ -35,7 +35,7 @@ Es liegt ein Konflikt zwischen Verweisen vor: Mehrere unterschiedliche Abhängig
   
 ## <a name="see-also"></a>Siehe auch  
  [Verwalten von Verweisen in einem Projekt](../ide/managing-references-in-a-project.md)   
- [Globaler Assemblycache](http://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202)   
- [Assemblys mit starkem Namen](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
- [Assemblyversionen](http://msdn.microsoft.com/library/775ad4fb-914f-453c-98ef-ce1089b6f903)   
+ [Globaler Assemblycache](https://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202)   
+ [Assemblys mit starkem Namen](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
+ [Assemblyversionen](https://msdn.microsoft.com/library/775ad4fb-914f-453c-98ef-ce1089b6f903)   
  [Vorgehensweise: Erstellen und Entfernen von Projektabhängigkeiten](../ide/how-to-create-and-remove-project-dependencies.md)

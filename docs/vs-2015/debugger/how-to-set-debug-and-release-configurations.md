@@ -35,12 +35,12 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: da8b3b32eae5d3045216f562dc7db25fb1f3264a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4984355c12a92529a943fe6778740ac2d7f522f8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048191"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703644"
 ---
 # <a name="how-to-set-debug-and-release-configurations"></a>Vorgehensweise: Festlegen von Debug- und Releasekonfigurationen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,4 +71,4 @@ Visual Studio-Projekte verfügen über separate Release- und Debugkonfiguration
  [Project Settings for  C# Debug Configurations (Projekteinstellungen für C#-Debugkonfigurationen)](../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Project Settings for a Visual Basic Debug Configuration (Projekteinstellungen für eine Visual Basic-Debugkonfiguration)](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen](../ide/how-to-create-and-edit-configurations.md)   
- [Debug- und Release-Projektkonfigurationen](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)
+ [Debug- und Release-Projektkonfigurationen](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)

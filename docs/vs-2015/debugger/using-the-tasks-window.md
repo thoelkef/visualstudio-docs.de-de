@@ -18,21 +18,21 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cdf7c5fe724ff4b043ca304eee3e5e0f31b0dd85
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 267a04e0d717bde311423aae7f35fba07ca6f39b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437705"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684034"
 ---
 # <a name="using-the-tasks-window"></a>Verwenden des Fensters "Aufgaben"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Das Fenster **Aufgaben** ähnelt dem Fenster **Threads**. In diesem Fenster werden jedoch Informationen zu jedem <xref:System.Threading.Tasks.Task?displayProperty=fullName>-, [task_handle](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7)- oder [WinJS.Promise](http://msdn.microsoft.com/library/windows/apps/br211867.aspx)-Objekt anstatt für die einzelnen Threads angezeigt. Wie Threads stellen auch Aufgaben asynchrone Vorgänge dar, die gleichzeitig ausgeführt werden können. Es dürfen jedoch mehrere Aufgaben im selben Thread ausgeführt werden. Finden Sie unter [asynchrone Programmierung in JavaScript (Windows Store-apps)](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx) für Weitere Informationen.  
+Das Fenster **Aufgaben** ähnelt dem Fenster **Threads**. In diesem Fenster werden jedoch Informationen zu jedem <xref:System.Threading.Tasks.Task?displayProperty=fullName>-, [task_handle](https://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7)- oder [WinJS.Promise](https://msdn.microsoft.com/library/windows/apps/br211867.aspx)-Objekt anstatt für die einzelnen Threads angezeigt. Wie Threads stellen auch Aufgaben asynchrone Vorgänge dar, die gleichzeitig ausgeführt werden können. Es dürfen jedoch mehrere Aufgaben im selben Thread ausgeführt werden. Finden Sie unter [asynchrone Programmierung in JavaScript (Windows Store-apps)](https://msdn.microsoft.com/library/windows/apps/hh700330.aspx) für Weitere Informationen.  
   
- In verwaltetem Code können Sie das Fenster **Aufgaben** verwenden, wenn Sie mit<xref:System.Threading.Tasks.Task?displayProperty=fullName> -Objekten oder mit den **await**- und **async**-Schlüsselwörtern arbeiten (**Await** und **Async** in Visual Basic). Weitere Informationen zu Aufgaben in verwaltetem Code finden Sie unter [zur parallelen Programmierung](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d).  
+ In verwaltetem Code können Sie das Fenster **Aufgaben** verwenden, wenn Sie mit<xref:System.Threading.Tasks.Task?displayProperty=fullName> -Objekten oder mit den **await**- und **async**-Schlüsselwörtern arbeiten (**Await** und **Async** in Visual Basic). Weitere Informationen zu Aufgaben in verwaltetem Code finden Sie unter [zur parallelen Programmierung](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d).  
   
- In nativem Code können Sie das Fenster **Aufgaben** verwenden, wenn Sie mit [Aufgabengruppen](http://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077), [parallelen Algorithmen](http://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473), [asynchronen Agents](http://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a) und [einfachen Aufgaben](http://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90) arbeiten. Weitere Informationen zu Aufgaben in nativem Code finden Sie unter [Concurrency Runtime](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c).  
+ In nativem Code können Sie das Fenster **Aufgaben** verwenden, wenn Sie mit [Aufgabengruppen](https://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077), [parallelen Algorithmen](https://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473), [asynchronen Agents](https://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a) und [einfachen Aufgaben](https://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90) arbeiten. Weitere Informationen zu Aufgaben in nativem Code finden Sie unter [Concurrency Runtime](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c).  
   
  In JavaScript können Sie das Fenster "Aufgaben" verwenden, wenn Sie mit dem "promise .then"-Code arbeiten.  
   
@@ -51,7 +51,7 @@ Das Fenster **Aufgaben** ähnelt dem Fenster **Threads**. In diesem Fenster werd
 |**Flags**|Zeigt an, welche Aufgaben gekennzeichnet sind. Zudem können Sie Aufgaben kennzeichnen bzw. deren Kennzeichnung aufheben.|  
 |**Symbole**|Ein gelber Pfeil gibt die aktuelle Aufgabe an. Die aktuelle Aufgabe ist die oberste Aufgabe im aktuellen Thread.<br /><br /> Ein weißer Pfeil gibt die unterbrechende Aufgabe an, d. h., die Aufgabe, die beim Aufrufen des Debuggers aktuell war.<br /><br /> Das Pausensymbol gibt eine Aufgabe an, die vom Benutzer eingefroren wurde. Sie können eine Aufgabe einfrieren und deaktivieren, indem Sie in der Liste mit der rechten Maustaste darauf klicken.|  
 |**ID**|Eine vom System bereitgestellte Nummer für die Aufgabe. In nativem Code ist diese Nummer die Adresse der Aufgabe.|  
-|**Status**|Der aktuelle Zustand der Aufgabe (geplant, aktiv, blockiert, wartend oder abgeschlossen). Eine geplante Aufgabe wurde noch nicht ausgeführt und verfügt daher noch über keine Aufrufliste, keinen zugewiesenen Thread oder weitere Informationen.<br /><br /> Eine aktive Aufgabe hat vor dem Unterbrechen im Debugger Code ausgeführt.<br /><br /> Eine wartende Aufgabe ist blockiert, da sie auf das Signalisieren eines Ereignisses, das Aufheben einer Sperre oder das Abschließen einer anderen Aufgabe wartet.<br /><br /> Eine blockierte Aufgabe ist eine wartende Aufgabe, deren Thread an einem anderen Thread blockiert ist.<br /><br /> Zeigen Sie auf die **Status** Zelle für eine blockierte oder wartende Aufgabe, um weitere Informationen zum Block anzuzeigen. **Warnung:**  Im Fenster **Aufgaben** werden Deadlocks nur für eine blockierte Aufgabe gemeldet, bei der eine Synchronisierungsprimitive verwendet wird, die von Wait Chain Traversal (WCT) unterstützt wird. Z. B. für einen Deadlock <xref:System.Threading.Tasks.Task> -Objekt, das WCT verwendet wird, meldet der Debugger **Waiting-deadlocked**. Für eine Aufgabe mit Deadlock, die von der Concurrency Runtime verwaltet wird, die nicht WCT verwendet, meldet der Debugger **Warten**. Weitere Informationen zu WCT finden Sie unter [Wait Chain Traversal](http://msdn.microsoft.com/library/ms681622\(VS.85\).aspx).|  
+|**Status**|Der aktuelle Zustand der Aufgabe (geplant, aktiv, blockiert, wartend oder abgeschlossen). Eine geplante Aufgabe wurde noch nicht ausgeführt und verfügt daher noch über keine Aufrufliste, keinen zugewiesenen Thread oder weitere Informationen.<br /><br /> Eine aktive Aufgabe hat vor dem Unterbrechen im Debugger Code ausgeführt.<br /><br /> Eine wartende Aufgabe ist blockiert, da sie auf das Signalisieren eines Ereignisses, das Aufheben einer Sperre oder das Abschließen einer anderen Aufgabe wartet.<br /><br /> Eine blockierte Aufgabe ist eine wartende Aufgabe, deren Thread an einem anderen Thread blockiert ist.<br /><br /> Zeigen Sie auf die **Status** Zelle für eine blockierte oder wartende Aufgabe, um weitere Informationen zum Block anzuzeigen. **Warnung:**  Im Fenster **Aufgaben** werden Deadlocks nur für eine blockierte Aufgabe gemeldet, bei der eine Synchronisierungsprimitive verwendet wird, die von Wait Chain Traversal (WCT) unterstützt wird. Z. B. für einen Deadlock <xref:System.Threading.Tasks.Task> -Objekt, das WCT verwendet wird, meldet der Debugger **Waiting-deadlocked**. Für eine Aufgabe mit Deadlock, die von der Concurrency Runtime verwaltet wird, die nicht WCT verwendet, meldet der Debugger **Warten**. Weitere Informationen zu WCT finden Sie unter [Wait Chain Traversal](https://msdn.microsoft.com/library/ms681622\(VS.85\).aspx).|  
 |**Startzeit**|Die Uhrzeit, zu der die Aufgabe aktiviert wurde.|  
 |**Dauer**|Die Anzahl von Sekunden, die die Aufgabe aktiv war.|  
 |**Abschlusszeit**|Die Uhrzeit, zu der die Aufgabe abgeschlossen wurde.|  
@@ -61,7 +61,7 @@ Das Fenster **Aufgaben** ähnelt dem Fenster **Threads**. In diesem Fenster werd
 |**Threadzuweisung**|Die ID und der Name des Threads, in dem die Aufgabe ausgeführt wird.|  
 |**Rückgabestatus**|Der Status der Aufgabe zum Zeitpunkt des Abschlusses. Werden Werte des Rückgabestatus **Erfolg**, **Cancelled**, und **Fehler**.|  
 |**AppDomain**|Für verwalteten Code die Anwendungsdomäne, in der die Aufgabe ausgeführt wird.|  
-|**task_group**|Für nativen Code die Adresse des [task_group](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7)-Objekts, von dem die Aufgabe geplant wurde. Für asynchrone Agents und einfache Aufgaben wird diese Spalte auf 0 festgelegt.|  
+|**task_group**|Für nativen Code die Adresse des [task_group](https://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7)-Objekts, von dem die Aufgabe geplant wurde. Für asynchrone Agents und einfache Aufgaben wird diese Spalte auf 0 festgelegt.|  
 |Prozess|Die ID des Prozesses, in dem die Aufgabe ausgeführt wird.|  
 |Asynchroner Zustand|Für verwalteten Code ist dies der Aufgabenstatus. Standardmäßig ist diese Spalte ausgeblendet. Um diese Spalte anzuzeigen, öffnen Sie das Kontextmenü für einen der Spaltenheader. Wählen Sie **Spalten**, **AsyncState** aus.|  
   
@@ -95,7 +95,7 @@ Das Fenster **Aufgaben** ähnelt dem Fenster **Threads**. In diesem Fenster werd
 ## <a name="see-also"></a>Siehe auch  
  [Debugger – Grundlagen](../debugger/debugger-basics.md)   
  [Debuggen von verwaltetem Code](../debugger/debugging-managed-code.md)   
- [Parallele Programmierung](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
- [Concurrency Runtime](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
+ [Parallele Programmierung](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
+ [Concurrency Runtime](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
  [View threads and tasks in the Parallel Stacks window (Anzeigen von Threads und Aufgaben im Fenster „Parallele Stapel“)](../debugger/using-the-parallel-stacks-window.md)   
  [Exemplarische Vorgehensweise: Debuggen einer Parallelanwendung](../debugger/walkthrough-debugging-a-parallel-application.md)

@@ -8,12 +8,12 @@ ms.assetid: 8fb1334b-d78c-405f-98b4-786e9f6b58d7
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0b5151f739dfe464ae948eb4b4716f659b7a7913
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f6622c4774be5188aced606ce4b73dffe544aea1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044186"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698938"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo-Element (Visual Studio-Vorlagen)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ Legt einen optionalen Ausdruck fest, um eine oder mehrere Funktionen auszuwähle
   
  Dieses Element ist optional. Es kann maximal eine Instanz in einer Vorlagendatei geben. Dieses Element ermöglicht einer Elementvorlage nur, auf Grundlage der Funktionen des ausgewählten aktiven Projekts als anwendbar zu optieren. Es kann nicht verwendet werden, um eine Elementvorlage nicht anwendbar zu machen. Wenn `AppliesTo` fehlt oder der Ausdruck nicht erfolgreich optiert, wird `TemplateID` oder `TemplateGroupID` verwendet, um die Vorlage anwendbar zu machen, wie mit früheren Versionen des Produkts.  
   
- Eingeführt in Visual Studio 2013 Update 2. Um die richtige Version verweisen zu können, finden Sie unter [verweisen auf Assemblys, die in Visual Studio 2013 SDK Update 2 übermittelten](http://msdn.microsoft.com/42b65c3e-e42b-4c39-98c8-bea285f25ffb).  
+ Eingeführt in Visual Studio 2013 Update 2. Um die richtige Version verweisen zu können, finden Sie unter [verweisen auf Assemblys, die in Visual Studio 2013 SDK Update 2 übermittelten](https://msdn.microsoft.com/42b65c3e-e42b-4c39-98c8-bea285f25ffb).  
   
  \<VSTemplate>  
  \<TemplateData>  

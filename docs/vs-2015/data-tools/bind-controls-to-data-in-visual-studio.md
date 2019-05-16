@@ -19,12 +19,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1d0e34075fbadcc998dba09d1b7c13a5ffacc606
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 61693f30044a8ac5888bebb519dd156ab1e9510b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62556874"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705574"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Binden von Steuerelementen an Daten in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Sie können Daten für Benutzer der Anwendung anzeigen, indem Sie Daten an Steue
 
  1. Generieren Sie das Modell, indem die **Entity Data Model** -Assistenten klicken Sie dann die Objekte in den Designer ziehen.
 
- 2. LINQ to SQL-Klassen werden nicht im Fenster **Datenquellen** angezeigt. Sie können jedoch eine neue Objektdatenquelle hinzufügen, die auf LINQ to SQL-Klassen basiert und anschließend diese Objekte in den Designer ziehen, um datengebundene Steuerelemente zu erstellen. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen von LINQ to SQL-Klassen (O / R-Designer)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233).
+ 2. LINQ to SQL-Klassen werden nicht im Fenster **Datenquellen** angezeigt. Sie können jedoch eine neue Objektdatenquelle hinzufügen, die auf LINQ to SQL-Klassen basiert und anschließend diese Objekte in den Designer ziehen, um datengebundene Steuerelemente zu erstellen. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen von LINQ to SQL-Klassen (O / R-Designer)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233).
 
 ## <a name="data-sources-window"></a>Datenquellenfenster
  Datenquellen stehen dem Projekt als Elemente im Fenster **Datenquellen** zur Verfügung. Dieses Fenster sichtbar ist, oder es wird über die **Ansicht** Menü, wenn eine Formular-Entwurfsoberfläche in Ihrem Projekt das aktive Fenster ist. Sie können Elemente ziehen, in diesem Fenster aus, um Steuerelemente zu erstellen, die den zugrunde liegenden Daten gebunden sind, und Sie können auch die Datenquellen konfigurieren, indem Sie mit der rechten Maustaste.
@@ -71,4 +71,4 @@ Sie können Daten für Benutzer der Anwendung anzeigen, indem Sie Daten an Steue
 |Anpassen von Beschriftungen für Steuerelemente.|[Gewusst wie: Anpassen der Erstellung von Beschriftungen für datengebundene Steuerelemente durch Visual Studio](../data-tools/customize-how-visual-studio-creates-captions-for-data-bound-controls.md)|
 
 ## <a name="see-also"></a>Siehe auch
- [Visual Studio-Datentools für .NET](../data-tools/visual-studio-data-tools-for-dotnet.md) [Windows Forms-Datenbindung](http://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa)
+ [Visual Studio-Datentools für .NET](../data-tools/visual-studio-data-tools-for-dotnet.md) [Windows Forms-Datenbindung](https://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa)

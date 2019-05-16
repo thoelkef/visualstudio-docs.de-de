@@ -11,12 +11,12 @@ ms.assetid: b2f572d3-b26d-4846-92d1-84055fac141a
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 30ec67e1e58e0c546c70ecb87841293161463b1b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: de65155e08f4c2410d19db1b25105d247c9f0952
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429111"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704115"
 ---
 # <a name="project-model-core-components"></a>Hauptkomponenten eines Projektmodells
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -104,6 +104,6 @@ In den folgenden Tabellen, die auf das Modell erweitert werden. Die Tabellen zei
 ## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
  [Prüfliste: Erstellen neuer Projekttypen](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [Nicht im Build: Mithilfe von HierUtil7 Projektklassen zum Implementieren eines Projekttyps (C++)](http://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
+ [Nicht im Build: Mithilfe von HierUtil7 Projektklassen zum Implementieren eines Projekttyps (C++)](https://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
  [Unterstützung von Tools zum Durchsuchen von Symbolen](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
  [Elemente eines Projektmodells](../../extensibility/internals/elements-of-a-project-model.md)

@@ -20,12 +20,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dd4043b34cc809af92fc5bbd1c44e322261096e9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ba55795e1f1b5f54b2a863ec0163a796111d9800
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437994"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689469"
 ---
 # <a name="signing-page-project-designer"></a>Seite "Signierung", Projekt-Designer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -66,9 +66,9 @@ Verwenden Sie die Seite **Signierung** des **Projekt-Designers**, um die Anwendu
   
 ## <a name="assembly-signing"></a>Signieren von Assemblys  
  Kontrollkästchen **Assembly signieren**  
- Setzen Sie ein Häkchen in diesem Kontrollkästchen, um die Assembly zu signieren und eine Schlüsseldatei mit starkem Namen zu erstellen. Weitere Informationen zum Signieren von Assemblys mithilfe von **Projekt-Designer** finden Sie unter [Vorgehensweise: Signieren von Assemblys (Visual Studio)](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564).  
+ Setzen Sie ein Häkchen in diesem Kontrollkästchen, um die Assembly zu signieren und eine Schlüsseldatei mit starkem Namen zu erstellen. Weitere Informationen zum Signieren von Assemblys mithilfe von **Projekt-Designer** finden Sie unter [Vorgehensweise: Signieren von Assemblys (Visual Studio)](https://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564).  
   
- Diese Option verwendet das Tool AI.exe, das von [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)] bereitgestellt wurde, um die Assembly zu signieren. Weitere Informationen zu diesem Tool erhalten Sie im Artikel [Vorgehensweise: Signieren einer Assembly mit einem starken Namen](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67).  
+ Diese Option verwendet das Tool AI.exe, das von [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)] bereitgestellt wurde, um die Assembly zu signieren. Weitere Informationen zu diesem Tool erhalten Sie im Artikel [Vorgehensweise: Signieren einer Assembly mit einem starken Namen](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67).  
   
  Liste **Schlüsseldatei mit starkem Namen auswählen**  
  Gibt Ihnen die Möglichkeit, eine neue oder bereits vorhandene Schlüsseldatei mit starkem Namen festzulegen, die verwendet wird, um die Assembly zu signieren. Wählen Sie **\<Browse...>** aus, um eine vorhandene Schlüsseldatei auszuwählen.  
@@ -83,7 +83,7 @@ Verwenden Sie die Seite **Signierung** des **Projekt-Designers**, um die Anwendu
  Kontrollkästchen **Nur verzögerte Signierung**  
  Setzen Sie ein Häkchen in diesem Kontrollkästchen, um die verzögerte Signierung zu aktivieren.  
   
- Bitte beachten Sie, dass ein verzögert signiertes Projekt nicht ausgeführt wird und auch nicht debuggt werden kann. Allerdings können Sie das [Sn.exe (Strong Name Tool)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) mit der Option `-Vr` verwenden, um das Überprüfen während der Entwicklung zu überspringen.  
+ Bitte beachten Sie, dass ein verzögert signiertes Projekt nicht ausgeführt wird und auch nicht debuggt werden kann. Allerdings können Sie das [Sn.exe (Strong Name Tool)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) mit der Option `-Vr` verwenden, um das Überprüfen während der Entwicklung zu überspringen.  
   
 > [!NOTE]
 > Beim Signieren einer Assembly haben Sie möglicherweise nicht immer Zugriff auf einen privaten Schlüssel. Eine Organisation kann z.B. ein streng geheim gehaltenes Schlüsselpaar verwenden, auf das Entwickler nicht täglich zugreifen können. Möglicherweise steht der öffentliche Schlüssel zur Verfügung, während der Zugriff auf den privaten Schlüssel nur einigen Wenigen erlaubt ist. In einem solchen Fall können Sie die *verzögerte* oder *Teilsignierung* verwenden, um den öffentlichen Schlüssel bereitzustellen. Dadurch wird das Hinzufügen des privaten Schlüssels solange verzögert, bis die Assembly übergeben wird.  
@@ -91,8 +91,8 @@ Verwenden Sie die Seite **Signierung** des **Projekt-Designers**, um die Anwendu
 ## <a name="see-also"></a>Siehe auch  
  [Projekteigenschaftenverweise](../../ide/reference/project-properties-reference.md)   
  [Verwalten der Signierung von Assemblys und Manifesten](../../ide/managing-assembly-and-manifest-signing.md)   
- [Signieren mit starkem Namen für verwaltete Anwendungen](http://msdn.microsoft.com/5fef3490-c519-4363-94fd-8b1ad260dab5)   
+ [Signieren mit starkem Namen für verwaltete Anwendungen](https://msdn.microsoft.com/5fef3490-c519-4363-94fd-8b1ad260dab5)   
  [Vorgehensweise: Signieren von Anwendungs- und Bereitstellungsmanifesten](../../ide/how-to-sign-application-and-deployment-manifests.md)   
- [Vorgehensweise: Signieren einer Assembly (Visual Studio)](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564)   
- [Vorgehensweise: Signieren einer Assembly mit einem starken Namen](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)   
- [Assemblys mit starkem Namen](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)
+ [Vorgehensweise: Signieren einer Assembly (Visual Studio)](https://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564)   
+ [Vorgehensweise: Signieren einer Assembly mit einem starken Namen](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)   
+ [Assemblys mit starkem Namen](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)

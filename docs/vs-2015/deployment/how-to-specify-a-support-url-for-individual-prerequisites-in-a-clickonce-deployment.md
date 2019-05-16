@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f272f1b7a8fc970ab616ba1c02e815cbb6ecb568
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1907b619bcc616c73d9b9e37af30722c02bf100e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059135"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679968"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Vorgehensweise: Angeben eines Support-URLs für einzelne erforderliche Komponenten in einer ClickOnce-Bereitstellung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ Ein [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Testen der Bereitstel
  Die Support-URL wird nicht im Dialogfeld angezeigt, wenn die Anwendung für die Ausführung unter teilweiser Vertrauenswürdigkeit markiert ist.  
   
 ## <a name="see-also"></a>Siehe auch  
- [„Mage.exe“ (Tool zum Generieren und Bearbeiten von Manifesten)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
+ [„Mage.exe“ (Tool zum Generieren und Bearbeiten von Manifesten)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
  [Exemplarische Vorgehensweise: Manuelles Bereitstellen einer ClickOnce-Anwendung](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
  [\<CompatibleFrameworks >-Element](../deployment/compatibleframeworks-element-clickonce-deployment.md)   
  [ClickOnce und Authenticode](../deployment/clickonce-and-authenticode.md)   

@@ -10,12 +10,12 @@ ms.assetid: be1f1cd5-0b2f-435c-a052-dca28a7c978d
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c313e01f9adaa4ad2ba5bd27f72f2ef8cabe51c2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: abb117d9de09c11bbce1e1c935e108ec940e9c60
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58946379"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703590"
 ---
 # <a name="idebugprogramnamechangedevent2"></a>IDebugProgramNameChangedEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ IDebugProgramNameChangedEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
- Die DE implementiert diese Schnittstelle für den Bericht, der der Namen des Programms geändert hat. Die [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) Schnittstelle muss auf dasselbe Objekt wie diese Schnittstelle implementiert werden. Wird verwendet, das SDM [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) für den Zugriff auf die **IDebugEvent2** Schnittstelle.  
+ Die DE implementiert diese Schnittstelle für den Bericht, der der Namen des Programms geändert hat. Die [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) Schnittstelle muss auf dasselbe Objekt wie diese Schnittstelle implementiert werden. Wird verwendet, das SDM [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) für den Zugriff auf die **IDebugEvent2** Schnittstelle.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
  Die DE erstellt und sendet dieses Ereignisobjekt, um eine Änderung des Programm zu melden. Die DE sendet dieses Ereignis mit der [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) Callback-Funktion, die durch die SDM bereitgestellt wird, wenn diese an die zu debuggende Programm wird angefügt. Der benutzerdefinierten Port Lieferanten sendet dieses Ereignis verwenden, die die Schnittstelle.  

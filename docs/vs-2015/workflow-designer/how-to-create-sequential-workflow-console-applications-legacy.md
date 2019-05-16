@@ -13,12 +13,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aaa7288d46b57204a637dc81d1d8b943debd87fa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 932b770f38f75d26028eceb6c0addc2ababeef6d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417454"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696351"
 ---
 # <a name="how-to-create-sequential-workflow-console-applications-legacy"></a>Vorgehensweise: Erstellen von Konsolenanwendungen für sequenzielle Workflows (Vorgängerversion)
 Führen Sie die folgenden Schritte aus, um ein Projekt für eine Konsolenanwendung für sequenzielle Workflows mithilfe der Vorgängerversion von [!INCLUDE[wfd1](../includes/wfd1-md.md)] zu erstellen, die von [!INCLUDE[vs2010](../includes/vs2010-md.md)] bereitgestellt wird. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../includes/wfd2-md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.  
@@ -54,4 +54,4 @@ Führen Sie die folgenden Schritte aus, um ein Projekt für eine Konsolenanwendu
   
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen von Legacyworkflowprojekten](../workflow-designer/creating-legacy-workflow-projects.md)   
- [Entwickeln von Workflows](http://msdn.microsoft.com/557bcb1f-a7ab-49f6-8df7-2706b7001301)
+ [Entwickeln von Workflows](https://msdn.microsoft.com/557bcb1f-a7ab-49f6-8df7-2706b7001301)

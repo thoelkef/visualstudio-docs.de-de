@@ -14,12 +14,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b41d199ab634ef5eeb2a6baaef8401919870b63
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 70fca5b1329dc9091e0672b41de0798d93aba01a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436977"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705169"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Erstellen einer einfachen Datenanwendung mit ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,7 +135,7 @@ Wenn Sie eine Anwendung erstellen, die Daten in einer Datenbank bearbeitet, füh
 5. In der **Wert** Spalte Geben Sie Ihre Verbindungszeichenfolge (ohne außerhalb der Anführungszeichen), und speichern Sie Ihre Änderungen.  
   
 > [!NOTE]
-> In einer realen Anwendung sollten Sie sicher, wie beschrieben in der Verbindungszeichenfolge speichern [Verbindungszeichenfolgen und Konfigurationsdateien](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8).  
+> In einer realen Anwendung sollten Sie sicher, wie beschrieben in der Verbindungszeichenfolge speichern [Verbindungszeichenfolgen und Konfigurationsdateien](https://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8).  
   
 ## <a name="BKMK_retrievetheconnectionstring"></a> Abrufen der Verbindungszeichenfolge  
   
@@ -726,7 +726,7 @@ End Namespace
 |NC-12|Verwenden der `ExecuteNonQuery` -Methode für `cmdNewCustomer` zum Ausführen der `Sales.uspNewCustomer` gespeicherte Prozedur. Diese gespeicherte Prozedur wird eine `INSERT` -Anweisung, die nicht in einer Abfrage.|  
 |NC-13|Der `@CustomerID`-Wert wird als Identitätswert aus der Datenbank zurückgegeben. Da es sich um eine ganze Zahl ist, müssen Sie sie in eine Zeichenfolge, die in der sie angezeigt konvertieren die **Kunden-ID** Textfeld.<br /><br /> – Sie deklariert `parsedCustomerID` unter NC-2.<br />-Store die `@CustomerID` Wert `parsedCustomerID` für die spätere Verwendung.<br />– Konvertieren Sie die zurückgegebene Kunden-ID in eine Zeichenfolge, und fügen Sie ihn in `txtCustomerID.Text`.|  
 |NC-14|In diesem Beispiel fügen Sie eine einfache (keine Produktionsqualität) Catch-Klausel hinzu.|  
-|NC-15|Schließen Sie eine Verbindung immer, wenn Sie sie nicht mehr verwenden, sodass sie für den Verbindungspool freigegeben werden kann. Finden Sie unter [SQL Server-Verbindungspooling (ADO.NET)](http://msdn.microsoft.com/library/8xx3tyca\(l=en-us,v=VS.110\).aspx).|  
+|NC-15|Schließen Sie eine Verbindung immer, wenn Sie sie nicht mehr verwenden, sodass sie für den Verbindungspool freigegeben werden kann. Finden Sie unter [SQL Server-Verbindungspooling (ADO.NET)](https://msdn.microsoft.com/library/8xx3tyca\(l=en-us,v=VS.110\).aspx).|  
 |NC-16|Definieren Sie eine Methode, um zu überprüfen, ob ein Kundenname vorhanden ist.<br /><br /> – Wenn das Textfeld leer ist, wird eine Meldung angezeigt, und zurückgeben `false`, da ein Name erforderlich ist, um das Konto zu erstellen.<br />– Wenn das Textfeld nicht leer ist, zurückgegeben `true`.|  
 |NC-17|Fügen Sie dem Click-Ereignishandler den Code für die Schaltfläche `btnPlaceOrder` hinzu.|  
 |NC-18|Umschließen Sie den Ereigniscode `isPlaceOrderReady` mit dem Aufruf von `btnPlaceOrder_Click`, sodass `uspPlaceNewOrder` nicht ausgeführt wird, wenn die erforderliche Eingabe fehlt.|  

@@ -18,12 +18,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aa0735f25b7e6b0007172c8c42eb06222a0425fb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: fb08a016261ac0836ba6dd2dde5d8b0812aab806
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439461"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704920"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Binden von WPF-Steuerelementen an einen WCF-Datendienst
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,15 +53,15 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die da
   
   Vorkenntnisse der folgenden Konzepte sind ebenfalls hilfreich, wenn auch für die Durchführung der exemplarischen Vorgehensweise nicht erforderlich:  
   
-- WCF Data Services. Weitere Informationen finden Sie unter [Übersicht](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
+- WCF Data Services. Weitere Informationen finden Sie unter [Übersicht](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
   
 - Datenmodelle in [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)].  
   
-- Entity Data Models und der ADO.NET Entity Framework. Weitere Informationen finden Sie unter [Übersicht über Entity Framework](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
+- Entity Data Models und der ADO.NET Entity Framework. Weitere Informationen finden Sie unter [Übersicht über Entity Framework](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
   
-- Arbeiten mit dem WPF-Designer. Weitere Informationen finden Sie unter [WPF- und Silverlight Designer Overview](http://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).  
+- Arbeiten mit dem WPF-Designer. Weitere Informationen finden Sie unter [WPF- und Silverlight Designer Overview](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
-- WPF-Datenbindung. Weitere Informationen finden Sie unter [Übersicht über Datenbindung](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
+- WPF-Datenbindung. Weitere Informationen finden Sie unter [Übersicht über Datenbindung](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
   
 ## <a name="create-the-service-project"></a>Erstellen Sie das Dienstprojekt  
  Beginnen Sie diese exemplarische Vorgehensweise, indem Sie ein Projekt für einen [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] erstellen.  
@@ -326,7 +326,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine WPF-Anwendung, die da
  [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   
  [Binden von WPF-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)   
  [Binden von WPF-Steuerelementen zu einem dataset](../data-tools/bind-wpf-controls-to-a-dataset.md)   
- [Übersicht](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)   
- [Übersicht über Entity Framework](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0)   
- [WPF und Silverlight-Designer (Übersicht)](http://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)   
- [Übersicht zur Datenbindung](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)
+ [Übersicht](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)   
+ [Übersicht über Entity Framework](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0)   
+ [WPF und Silverlight-Designer (Übersicht)](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)   
+ [Übersicht zur Datenbindung](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)

@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c45f3ac7cfec727eb0a27fc79e5fe09237e8f8c3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 05300d33ae10cd899a40bf95596ea4eb19dea49d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437590"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701185"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Erstellen von Anwendungen in bidirektionalen Sprachen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +30,9 @@ Mit Visual Studio können Sie Anwendungen erstellen, die Text mit der Schreibric
   
 ## <a name="types-of-application-that-support-bi-directional-languages"></a>Anwendungstypen, die bidirektionale Sprachen unterstützen  
   
-1. Windows-Anwendungen. Sie können vollständig bidirektionale Anwendungen erstellen, die dann bidirektionalen Text, Rechts-nach-Links-Lesefolge und Spiegeln (Umkehren des Layouts von Fenstern, Menüs, Dialogfeldern usw.) unterstützen. Diese Features (mit Ausnahme von Spiegeln) sind standardmäßig oder als Eigenschaftseinstellungen verfügbar. Spiegeln wird für einige Features wie Meldungsfelder grundsätzlich unterstützt. In anderen Fällen muss das Spiegeln jedoch im Code implementiert werden. Weitere Informationen finden Sie unter [Bidirektionale Unterstützung für Windows Forms-Anwendungen](http://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2).  
+1. Windows-Anwendungen. Sie können vollständig bidirektionale Anwendungen erstellen, die dann bidirektionalen Text, Rechts-nach-Links-Lesefolge und Spiegeln (Umkehren des Layouts von Fenstern, Menüs, Dialogfeldern usw.) unterstützen. Diese Features (mit Ausnahme von Spiegeln) sind standardmäßig oder als Eigenschaftseinstellungen verfügbar. Spiegeln wird für einige Features wie Meldungsfelder grundsätzlich unterstützt. In anderen Fällen muss das Spiegeln jedoch im Code implementiert werden. Weitere Informationen finden Sie unter [Bidirektionale Unterstützung für Windows Forms-Anwendungen](https://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2).  
   
-2. Webanwendungen. Webdienste unterstützen das Senden und Empfangen von mit UTF-8 oder Unicode codiertem Text und sind daher für Anwendungen, die bidirektionalen Text verwenden, geeignet. Webclientanwendungen verwenden als Benutzeroberfläche den Browser. Wie gut Bidirektionalität bei Webanwendungen unterstützt wird, hängt also davon ab, wie gut der Browser des jeweiligen Benutzers diese bidirektionalen Funktionen unterstützt. Mit Visual Studio können Sie Anwendungen erstellen, die arabischen oder hebräischen Text, Rechts-nach-Links-Lesefolge, Dateicodierung und lokale Kultureinstellungen unterstützen. Weitere Informationen finden Sie unter [Bidirektionale Unterstützung für ASP.NET-Webanwendung](http://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03).  
+2. Webanwendungen. Webdienste unterstützen das Senden und Empfangen von mit UTF-8 oder Unicode codiertem Text und sind daher für Anwendungen, die bidirektionalen Text verwenden, geeignet. Webclientanwendungen verwenden als Benutzeroberfläche den Browser. Wie gut Bidirektionalität bei Webanwendungen unterstützt wird, hängt also davon ab, wie gut der Browser des jeweiligen Benutzers diese bidirektionalen Funktionen unterstützt. Mit Visual Studio können Sie Anwendungen erstellen, die arabischen oder hebräischen Text, Rechts-nach-Links-Lesefolge, Dateicodierung und lokale Kultureinstellungen unterstützen. Weitere Informationen finden Sie unter [Bidirektionale Unterstützung für ASP.NET-Webanwendung](https://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03).  
   
 3. Konsolenanwendungen Konsolenanwendungen unterstützen keinen bidirektionalen Text. Das liegt an der Art und Weise, wie Windows Konsolenanwendungen einsetzt.  
   
@@ -79,7 +79,7 @@ Mit Visual Studio können Sie Anwendungen erstellen, die Text mit der Schreibric
 - Code und normaler Text. Im Code-Editor, der gleichzeitig der Text-Editor ist, können Sie mithilfe von Arabisch oder Hebräisch Klassen, Funktionen, Variablen, Eigenschaften, Zeichenfolgenliterale, Attribute usw. benennen. Allerdings unterstützt der Editor keine Lesefolge von rechts nach links; der Text beginnt immer am linken Rand.  
   
     > [!TIP]
-    > Es wird empfohlen, Zeichenfolgenliterale in Ressourcendateien abzulegen und sie nicht fest in Programmen zu codieren. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Lokalisieren von Windows Forms](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5).  
+    > Es wird empfohlen, Zeichenfolgenliterale in Ressourcendateien abzulegen und sie nicht fest in Programmen zu codieren. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Lokalisieren von Windows Forms](https://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5).  
   
     > [!NOTE]
     > Die Verweise auf die in diesen Sprachen benannten Objekte müssen konsistent sein. Wenn Sie z. B. bei der Benennung einer arabischen Variablen Kashida verwenden, müssen Sie dies auch tun, wenn Sie auf diese Variable verweisen, sonst werden Fehler verursacht.  
@@ -87,7 +87,7 @@ Mit Visual Studio können Sie Anwendungen erstellen, die Text mit der Schreibric
 - Codekommentare. Sie können Kommentare in Arabisch oder Hebräisch erstellen. Sie können diese Sprachen auch im Kommentarerstellungstool verwenden.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Bidirektionale Unterstützung für Windows Forms-Anwendungen](http://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2)   
- [Bidirektionale Unterstützung für ASP.NET-Webanwendung](http://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03)   
+ [Bidirektionale Unterstützung für Windows Forms-Anwendungen](https://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2)   
+ [Bidirektionale Unterstützung für ASP.NET-Webanwendung](https://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03)   
  [Globalisieren von Anwendungen](../ide/globalizing-applications.md)   
  [Lokalisieren von Anwendungen](../ide/localizing-applications.md)

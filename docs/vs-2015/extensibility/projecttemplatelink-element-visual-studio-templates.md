@@ -13,12 +13,12 @@ ms.assetid: b0449111-8b48-45a1-a031-ea24b765e969
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c20e0402f49b9c1d069b89bc972d8d3179f2ceb2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a6ee9f5d4a162f994cfea4fb3fe620599c1627b3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961329"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681316"
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>ProjectTemplateLink-Element (Visual Studio-Vorlagen)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Gibt den Pfad zur VSTEMPLATE-Datei eines Projekts in einer Vorlage für mehrere 
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
 |`ProjectName`|Optionales Attribut.<br /><br /> Gibt in einer Vorlage für mehrere Projekte den Namen für jedes einzelne Projekt an. Die **neues Projekt** Dialogfeld nicht möglich, einzelne Projekte Namen zuweisen.|  
-|`CopyParameters`|Ermöglicht, dass alle Variablen in der Hauptgruppenvorlage in jede der verknüpften Vorlagen kopiert werden können.<br /><br /> Die Parameter in verknüpften Vorlagen enthalten ein Präfix `"$ext_*$"`. Für die in der Vorlage der übergeordneten Gruppe der Parameter z. B. `$projectname$` verfügt über einen Wert **ExampleProject1**, wenn die verknüpfte Vorlage die jeweilige ausgeführt werden, erhält einen Parameter `$ext_projectname$`, dies ist eine Kopie der `$projectname$`Parameter aus der Vorlage der übergeordneten Gruppe.<br /><br /> Dadurch können verknüpfte Vorlagen einige häufig verwendete Parameter freigeben, die sonst möglicherweise nur in der Vorlage der übergeordneten Gruppe erstellt werden.<br /><br /> Dieses Attribut ist optional und erhält automatisch den Wert `false`, wenn es nicht enthalten ist.<br /><br /> Eingeführt in Visual Studio 2013 Update 2. Um die richtige Produktversion verweisen zu können, finden Sie unter [verweisen auf Assemblys, die in Visual Studio 2013 SDK Update 2 übermittelten](http://msdn.microsoft.com/42b65c3e-e42b-4c39-98c8-bea285f25ffb).|  
+|`CopyParameters`|Ermöglicht, dass alle Variablen in der Hauptgruppenvorlage in jede der verknüpften Vorlagen kopiert werden können.<br /><br /> Die Parameter in verknüpften Vorlagen enthalten ein Präfix `"$ext_*$"`. Für die in der Vorlage der übergeordneten Gruppe der Parameter z. B. `$projectname$` verfügt über einen Wert **ExampleProject1**, wenn die verknüpfte Vorlage die jeweilige ausgeführt werden, erhält einen Parameter `$ext_projectname$`, dies ist eine Kopie der `$projectname$`Parameter aus der Vorlage der übergeordneten Gruppe.<br /><br /> Dadurch können verknüpfte Vorlagen einige häufig verwendete Parameter freigeben, die sonst möglicherweise nur in der Vorlage der übergeordneten Gruppe erstellt werden.<br /><br /> Dieses Attribut ist optional und erhält automatisch den Wert `false`, wenn es nicht enthalten ist.<br /><br /> Eingeführt in Visual Studio 2013 Update 2. Um die richtige Produktversion verweisen zu können, finden Sie unter [verweisen auf Assemblys, die in Visual Studio 2013 SDK Update 2 übermittelten](https://msdn.microsoft.com/42b65c3e-e42b-4c39-98c8-bea285f25ffb).|  
   
 ### <a name="child-elements"></a>Untergeordnete Elemente  
  Keine  

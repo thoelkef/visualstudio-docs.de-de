@@ -11,19 +11,19 @@ ms.assetid: 41d2c72c-0a97-4fcd-b3aa-33a8d3aa962a
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8d5b22479996bca6ee69c1334d79f012024b865d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 35942f6babf18967e11f268ef0412acb4cc8edf7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959150"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687467"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>Installieren von VSPackages mit Windows Installer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Integrieren Ihr VSPackage in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] erfordert mehr als nur kopieren von Dateien auf dem Computer eines Benutzers. Ihre VSPackage Installer muss installieren Sie das VSPackage und dessen abhängigen Dateien hinzu, und registrieren und integrieren Sie sie in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Das VSPackage kann nutzen Integrationsfeatures wie z. B. das Anzeigen eines Symbols auf die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] splash-Bildschirm und Informationen zum Dialogfeld.  
   
- Microsoft Windows Installer-Dateien sind die empfohlene Methode zum Verteilen Ihre VSPackages. Einfach zu bedienende Windows Installer-Pakete können auf jedem Windows-Betriebssystem, die von unterstützt ausgeführt [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Weitere Informationen finden Sie unter [Windows Installer](http://msdn.microsoft.com/121be21b-b916-43e2-8f10-8b080516d2a0).  
+ Microsoft Windows Installer-Dateien sind die empfohlene Methode zum Verteilen Ihre VSPackages. Einfach zu bedienende Windows Installer-Pakete können auf jedem Windows-Betriebssystem, die von unterstützt ausgeführt [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Weitere Informationen finden Sie unter [Windows Installer](https://msdn.microsoft.com/121be21b-b916-43e2-8f10-8b080516d2a0).  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Grundlagen zu Windows Installer](../../extensibility/internals/windows-installer-basics.md)  

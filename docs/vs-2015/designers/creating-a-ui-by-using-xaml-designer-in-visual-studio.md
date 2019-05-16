@@ -14,12 +14,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c928d9f939db96ae302620952bbb6bbdedc396a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 039e6d5ae21059692aecc05de51bc2b311436334
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62580699"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695628"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Erstellen einer Benutzeroberfläche mit dem XAML-Designer in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Der XAML-Designer in Visual Studio stellt eine visuelle Schnittstelle bereit, mi
 
  **Ausrichtungslinien** Ausrichtungslinien sind *Ausrichtungsgrenzen*, die als rot gestrichelte Linien angezeigt werden und verdeutlichen, wann die Ränder von Steuerelementen oder Textbaselines ausgerichtet sind. Ausrichtungsgrenzen werden nur angezeigt, wenn **Andocken an Ausrichtungslinien** aktiviert ist.
 
- **Rasterschienen** `Grid`-Schienen werden verwendet, um Zeilen und Spalten in einem [Raster](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx)-Bereich zu verwalten. Sie können Zeilen und Spalten erstellen und löschen, und Sie können jeweils ihre relative Breite und Höhe anpassen. Die vertikale Rasterschiene, die auf der linken Seite der Zeichenfläche angezeigt wird, wird für Zeilen verwendet, und die horizontale Linie, die oben angezeigt wird, wird für Spalten verwendet.
+ **Rasterschienen** `Grid`-Schienen werden verwendet, um Zeilen und Spalten in einem [Raster](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx)-Bereich zu verwalten. Sie können Zeilen und Spalten erstellen und löschen, und Sie können jeweils ihre relative Breite und Höhe anpassen. Die vertikale Rasterschiene, die auf der linken Seite der Zeichenfläche angezeigt wird, wird für Zeilen verwendet, und die horizontale Linie, die oben angezeigt wird, wird für Spalten verwendet.
 
  **Rasteradorner** Ein `Grid`-Adorner wird als Dreieck angezeigt, an das eine vertikale oder horizontale Linie auf der `Grid`-Schiene angefügt ist. Wenn Sie einen `Grid` -Funktionsindikator ziehen, werden die Breiten und Höhen von benachbarten Spalten oder Zeilen aktualisiert, während Sie die Maus verschieben.
 
@@ -50,7 +50,7 @@ Der XAML-Designer in Visual Studio stellt eine visuelle Schnittstelle bereit, mi
 
  **Ziehpunkte zur Größenänderung** Ziehpunkte zur Größenänderung werden auf ausgewählten Steuerelementen angezeigt und ermöglichen Ihnen das Ändern der Größe des Steuerelements. Wenn Sie die Größe eines Steuerelements ändern, werden normalerweise die Werte für die Höhe und Breite angezeigt, um Ihnen bei der Größenfestlegung des Steuerelements behilflich zu sein. Weitere Informationen zum Bearbeiten von Steuerelementen in der Entwurfsansicht finden Sie unter [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md).
 
- **Ränder** Ränder sind fest definierte Abstände zwischen der Kante eines Steuerelements und der Kante dessen Containers. Sie können die Ränder eines Steuerelements festlegen, indem Sie die [Rand](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.frameworkelement.margin.aspx) -Eigenschaften unter **Layout** im Eigenschaftenfenster verwenden.
+ **Ränder** Ränder sind fest definierte Abstände zwischen der Kante eines Steuerelements und der Kante dessen Containers. Sie können die Ränder eines Steuerelements festlegen, indem Sie die [Rand](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.frameworkelement.margin.aspx) -Eigenschaften unter **Layout** im Eigenschaftenfenster verwenden.
 
  **Randadorner** Sie können Randadorner verwenden, um die Ränder eines Elements unter Berücksichtigung des jeweiligen Layoutcontainers zu ändern. Wenn ein Randfunktionsindikator geöffnet ist, wird kein Rand festgelegt, und der Randfunktionsindikator zeigt eine unterbrochene Kette an. Wenn der Rand nicht festgelegt wird, verbleiben Elemente an Ort und Stelle, wenn die Größe des Layoutcontainers zur Laufzeit geändert wird. Wenn ein Randfunktionsindikator geschlossen ist, zeigt ein Randfunktionsindikator eine nicht unterbrochene Kette an, und Elemente verschieben sich mit dem Rand, während der Layoutcontainer zur Laufzeit angepasst wird (der Rand bleibt unverändert).
 

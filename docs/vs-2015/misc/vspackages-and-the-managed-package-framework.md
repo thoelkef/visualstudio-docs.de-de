@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: e8d80e0f-6b5b-4baf-a7df-59fd808c60cd
 caps.latest.revision: 16
 manager: jillfra
-ms.openlocfilehash: 0b04692ed30e69e8904919748a6db0d0eff49f54
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5b72b2c3bd6b03d1d3f3e50135c2ddf4758a4bd9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002118"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683048"
 ---
 # <a name="vspackages-and-the-managed-package-framework"></a>VSPackages und das Managed Package Framework
 Sie können die Entwicklungszeit reduzieren, indem Sie erstellen eine VSPackage mit dem verwalteten Paket Framework (MPF)-Klassen anstelle von mithilfe von COM-Interop-Klassen.  
@@ -25,7 +25,7 @@ Sie können die Entwicklungszeit reduzieren, indem Sie erstellen eine VSPackage 
   
 - Verwenden der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Paket-Projektvorlage  
   
-     Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines Menübefehls mithilfe der Visual Studio-Paketvorlage](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
+     Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines Menübefehls mithilfe der Visual Studio-Paketvorlage](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
   
 - Erstellen Sie Ihr VSPackage ohne die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Paket-Projektvorlage  
   
@@ -36,7 +36,7 @@ Sie können die Entwicklungszeit reduzieren, indem Sie erstellen eine VSPackage 
  Beschreibt und führt die Klasse MPF-Namespaces und die DLL-Dateien.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
- [Exemplarische Vorgehensweise: Erstellen eines Menübefehls mithilfe der Visual Studio-Paketvorlage](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)  
+ [Exemplarische Vorgehensweise: Erstellen eines Menübefehls mithilfe der Visual Studio-Paketvorlage](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)  
  Erläutert, wie ein verwaltetes VSPackage zu erstellen.  
   
  [Verwaltete VSPackages](../misc/managed-vspackages.md)  

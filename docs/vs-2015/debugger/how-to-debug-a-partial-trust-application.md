@@ -18,19 +18,19 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 61b5a5d04e9c59d9c4034cb97c8ec0fd79264d48
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 030fef750cc1e0f0932de32fca1a0ffef56bc8f3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437318"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704488"
 ---
 # <a name="how-to-debug-a-partial-trust-application"></a>Vorgehensweise: Debuggen einer teilweise vertrauenswürdigen Anwendung
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Gilt für für Windows- und Konsolenanwendungen.  
   
- [ClickOnce-Sicherheit und Bereitstellung](../deployment/clickonce-security-and-deployment.md) erleichtert Ihnen die teilweise vertrauenswürdige Anwendungen bereitstellen, die nutzen [Code Access Security](http://msdn.microsoft.com/library/859af632-c80d-4736-8d6f-1e01b09ce127) den Zugriff auf Ressourcen auf einem Computer einschränken.  
+ [ClickOnce-Sicherheit und Bereitstellung](../deployment/clickonce-security-and-deployment.md) erleichtert Ihnen die teilweise vertrauenswürdige Anwendungen bereitstellen, die nutzen [Code Access Security](https://msdn.microsoft.com/library/859af632-c80d-4736-8d6f-1e01b09ce127) den Zugriff auf Ressourcen auf einem Computer einschränken.  
   
  Das Debuggen einer teilweise vertrauenswürdigen Anwendung ist u. U. nicht ganz einfach, weil teilweise vertrauenswürdige Anwendungen je nach Ausgangspunkt der Installation unterschiedliche Sicherheitsberechtigungen haben und sich deshalb unterschiedlich verhalten. Wenn eine teilweise vertrauenswürdige Anwendung vom Internet installiert wurde, hat sie wenige Berechtigungen. Wenn sie vom lokalen Intranet installiert wurde, hat sie mehr Berechtigungen, und wenn sie vom lokalen Computer installiert wurde, hat sie alle Berechtigungen. Außerdem haben Sie es möglicherweise mit benutzerdefinierten Zonen und entsprechenden benutzerdefinierten Berechtigungen zu tun. Unter Umständen müssen Sie eine teilweise vertrauenswürdige Anwendung unter mehreren oder allen diesen Bedingungen debuggen. Glücklicherweise erleichtert Visual Studio auch diese Aufgabe.  
   

@@ -22,12 +22,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cf4a3b699d3854ef2a502fb1bf1d7fb2d6204acb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2dd7d3f41790fac7a37fc3a98d728757f5bad967
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446476"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704679"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Allgemein, Debuggen, Dialogfeld "Optionen"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,11 +43,11 @@ Die**Extras / Optionen / Debugging / Allgemein** auf Seite können Sie die folge
  **Unterbrechen Sie Ausnahmen oder verwaltete/systemeigene Übergänge überschreitenden**  
  Beim Debuggen im verwalteten oder gemischten Modus kann die Common Language Runtime die Ausnahmen auffangen, die die Grenzen zwischen Anwendungsdomänen oder Grenzen zwischen verwaltetem und systemeigenem Code überschreiten, wenn die folgenden Bedingungen erfüllt sind:  
   
- 1\) bei nativem Code verwalteter Code mit COM-Interop aufgerufen und der verwaltete Code löst eine Ausnahme aus. Finden Sie unter [Einführung in COM-Interop](http://msdn.microsoft.com/library/8bd62e68-383d-407f-998b-29aa0ce0fd67).  
+ 1\) bei nativem Code verwalteter Code mit COM-Interop aufgerufen und der verwaltete Code löst eine Ausnahme aus. Finden Sie unter [Einführung in COM-Interop](https://msdn.microsoft.com/library/8bd62e68-383d-407f-998b-29aa0ce0fd67).  
   
- 2\) bei verwaltetem Code in Anwendungsdomäne 1 ausgeführt wird verwalteter Code in Anwendungsdomäne 2 aufgerufen und der Code in Anwendungsdomäne 2 eine Ausnahme ausgelöst. Finden Sie unter [Programmieren mit Anwendungsdomänen](http://msdn.microsoft.com/bd36055b-56bd-43eb-b4d8-820c37172131).  
+ 2\) bei verwaltetem Code in Anwendungsdomäne 1 ausgeführt wird verwalteter Code in Anwendungsdomäne 2 aufgerufen und der Code in Anwendungsdomäne 2 eine Ausnahme ausgelöst. Finden Sie unter [Programmieren mit Anwendungsdomänen](https://msdn.microsoft.com/bd36055b-56bd-43eb-b4d8-820c37172131).  
   
- 3\) Wenn Code eine Funktion mithilfe der Reflektion aufgerufen und die Funktion löst eine Ausnahme aus. Finden Sie unter [Reflektion](http://msdn.microsoft.com/library/d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775).  
+ 3\) Wenn Code eine Funktion mithilfe der Reflektion aufgerufen und die Funktion löst eine Ausnahme aus. Finden Sie unter [Reflektion](https://msdn.microsoft.com/library/d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775).  
   
  In den Fällen 2) und 3) wird die Ausnahme gelegentlich von verwaltetem Code in `mscorlib` und nicht von der Common Language Runtime aufgefangen. Diese Option beeinträchtigt nicht das Unterbrechen bei von `mscorlib` aufgefangenen Ausnahmen.  
   
@@ -61,7 +61,7 @@ Die**Extras / Optionen / Debugging / Allgemein** auf Seite können Sie die folge
  Mit dieser Option können Sie Filter an Haltepunkten festlegen, damit diese nur für bestimmte Prozesse, Threads oder Computer gelten.  
   
  **Ausnahmen-Assistenten aktivieren**  
- Nur für verwalteten Code. Verwaltete Ausnahmen öffnen das Dialogfeld des Ausnahmen-Assistenten.  Finden Sie unter [Ausnahmen-Assistent](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb).  
+ Nur für verwalteten Code. Verwaltete Ausnahmen öffnen das Dialogfeld des Ausnahmen-Assistenten.  Finden Sie unter [Ausnahmen-Assistent](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb).  
   
  **Aufrufliste für Ausnahmefehler entladen**  
  Führt dazu, dass das Fenster **Aufrufliste** die Aufrufliste an den Punkt zurücksetzt, bevor der Ausnahmefehler aufgetreten ist.  
@@ -123,7 +123,7 @@ Die**Extras / Optionen / Debugging / Allgemein** auf Seite können Sie die folge
  **DLL‑Exporte laden**  
  Lädt DLL‑Exporttabellen. Symbolinformationen aus DLL-Exporttabellen sind hilfreich, wenn Sie mit Windows-Meldungen, Windows-Prozeduren (WindowProcs), COM-Objekten, Marshalling oder DLLs arbeiten, für die Sie keine Symbole haben. Durch das Lesen von DLL-Exportinformationen fällt etwas Verwaltungsaufwand an. Deshalb ist diese Funktion standardmäßig deaktiviert.  
   
- Verwenden Sie `dumpbin /exports`, um festzustellen, welche Symbole in der Exporttabelle einer DLL verfügbar sind. Symbole sind für alle 32-Bit-System-DLLs verfügbar. In der Ausgabe von `dumpbin /exports` wird der genaue Funktionsname angezeigt, einschließlich nicht alphanumerischer Zeichen. Dies erleichtert das Setzen eines Haltepunktes in einer Funktion. Funktionsnamen aus DLL-Exporttabellen können an anderen Stellen des Debuggers abgeschnitten angezeigt werden. Die Aufrufe werden in der Reihenfolge des Aufrufs angezeigt, wobei die aktuelle Funktion (die, die sich in der Schachtelungshierarchie auf der untersten Ebene befindet) ganz oben angezeigt wird. Weitere Informationen hierzu finden Sie unter [dumpbin /exports](http://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).  
+ Verwenden Sie `dumpbin /exports`, um festzustellen, welche Symbole in der Exporttabelle einer DLL verfügbar sind. Symbole sind für alle 32-Bit-System-DLLs verfügbar. In der Ausgabe von `dumpbin /exports` wird der genaue Funktionsname angezeigt, einschließlich nicht alphanumerischer Zeichen. Dies erleichtert das Setzen eines Haltepunktes in einer Funktion. Funktionsnamen aus DLL-Exporttabellen können an anderen Stellen des Debuggers abgeschnitten angezeigt werden. Die Aufrufe werden in der Reihenfolge des Aufrufs angezeigt, wobei die aktuelle Funktion (die, die sich in der Schachtelungshierarchie auf der untersten Ebene befindet) ganz oben angezeigt wird. Weitere Informationen hierzu finden Sie unter [dumpbin /exports](https://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).  
   
  **Parallele Stapel Diagramm unten nach oben anzeigen**  
  Steuert die Richtung, in der Stapel im Fenster **Parallele Stapel** angezeigt werden.  
@@ -164,7 +164,7 @@ Die**Extras / Optionen / Debugging / Allgemein** auf Seite können Sie die folge
   Zeigt die **Live Visual Tree** Befehle in einer Symbolleiste des Hauptfensters der XAML-Anwendung, die gedebuggt wird. Diese Option wurde in Visual Studio 2015 Update 2 eingeführt.  
   
   **Diagnosetools beim Debuggen aktivieren**  
-  Das Fenster **Diagnosetools** wird während des Debuggens angezeigt. Weitere Informationen finden Sie unter [profilerstellung im Debugger integrierten](http://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859).  
+  Das Fenster **Diagnosetools** wird während des Debuggens angezeigt. Weitere Informationen finden Sie unter [profilerstellung im Debugger integrierten](https://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859).  
   
   **PerfTip für verstrichene Zeit beim Debuggen anzeigen**  
   Das Codefenster zeigt an, wie viel Zeit bei einem bestimmten Methodenaufruf während des Debuggens verstrichen ist.  

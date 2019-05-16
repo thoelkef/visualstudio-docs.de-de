@@ -14,19 +14,19 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c594e3837a4fe2c8b2e5a7b69e5db93377a8dc8d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5673ebf28cc652e3bcd973808db87b5bb058659c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442324"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683526"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>Ausführen von Windows Phone-Apps im Emulator
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Der Windows Phone-Emulator stellt eine virtualisierte Umgebung bereit, in der Sie Windows Phone-Apps auf Ihrem Computer ohne ein physisches Gerät debuggen und testen können. Sie können typische Touch- und Rotationsereignisse simulieren und die physische Bildschirmgröße und -auflösung auswählen, die Sie emulieren möchten. Sie können außerdem viele häufig verwendete Features wie Standort, Netzwerk, Benachrichtigungen, Sensoren, den Beschleunigungsmesser und die optionale SD-Karte testen.  
   
- Weitere Informationen über die Funktionen, die Sie im Emulator testen können, finden Sie unter [Testen von app-Features in Windows Phone-Emulator](http://msdn.microsoft.com/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1).  
+ Weitere Informationen über die Funktionen, die Sie im Emulator testen können, finden Sie unter [Testen von app-Features in Windows Phone-Emulator](https://msdn.microsoft.com/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1).  
   
  In Kombination mit Visual Studio stellt der Emulator eine vollständige Umgebung bereit, in der Sie Windows Phone-Apps entwerfen, entwickeln, debuggen und testen können.  
   
@@ -103,7 +103,7 @@ Der Windows Phone-Emulator stellt eine virtualisierte Umgebung bereit, in der Si
 ### <a name="BKMK_depltool"></a> Ausführen einer app mit dem anwendungsbereitstellungstool  
  Sie können auch das Windows Phone-anwendungsbereitstellungstool (**AppDeploy.exe**) um Ihre app im Emulator auszuführen. Dieses Tool ist eine eigenständige App, die bei der Installation der Windows Phone-Entwicklungstools installiert wird.  
   
- Weitere Informationen finden Sie unter [Bereitstellen von Windows Phone 8.1-apps mit dem anwendungsbereitstellungstool](http://msdn.microsoft.com/library/23700f82-1399-44d9-bc0c-714be4a48ee6).  
+ Weitere Informationen finden Sie unter [Bereitstellen von Windows Phone 8.1-apps mit dem anwendungsbereitstellungstool](https://msdn.microsoft.com/library/23700f82-1399-44d9-bc0c-714be4a48ee6).  
   
 ## <a name="BKMK_toolbar"></a> Konfigurieren Sie den Windows Phone-Emulator über die Symbolleiste des Emulators  
  In dieser Tabelle sind die auf der Symbolleiste des Emulators verfügbaren Konfigurationsschaltflächen sichtbar.  

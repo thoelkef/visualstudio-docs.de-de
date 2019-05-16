@@ -29,12 +29,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 65dafa09035e937e9ee48005c4f29c441d983c37
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 84c0bfead1633da13b4284cad04ace674045b057
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430300"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697474"
 ---
 # <a name="how-to-use-the-call-stack-window"></a>Vorgehensweise: Verwenden des Fensters Aufrufliste
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ Mithilfe des Fensters **Aufrufliste** können Sie die Funktions- und Prozedurauf
  Im Kontextmemü können Sie auswählen, ob Aufrufe zwischen Threads angezeigt werden sollen.  
   
 > [!NOTE]
-> Die angezeigten Dialogfelder und Menübefehle können sich je nach den aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen unterscheiden. Wählen Sie im Menü **Extras** die Option **Einstellungen importieren und exportieren** aus, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Die angezeigten Dialogfelder und Menübefehle können sich je nach den aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen unterscheiden. Wählen Sie im Menü **Extras** die Option **Einstellungen importieren und exportieren** aus, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-display-the-call-stack-window-in-break-mode-or-in-run-mode"></a>So zeigen Sie das Fenster "Aufrufliste" im Unterbrechungsmodus oder im Ausführmodus an  
   
@@ -139,7 +139,7 @@ Mithilfe des Fensters **Aufrufliste** können Sie die Funktions- und Prozedurauf
   
 ## <a name="see-also"></a>Siehe auch  
  [Gemischter Code und fehlende Daten im Aufruflistenfenster](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)   
- [Vorgehensweise: Ändern des numerischen Formats von Debugger-Windows](http://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)   
+ [Vorgehensweise: Ändern des numerischen Formats von Debugger-Windows](https://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)   
  [Anzeigen von Daten im Debugger](../debugger/viewing-data-in-the-debugger.md)   
  [Angeben von Symboldateien (PDB) und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [Verwenden von Haltepunkten](../debugger/using-breakpoints.md)

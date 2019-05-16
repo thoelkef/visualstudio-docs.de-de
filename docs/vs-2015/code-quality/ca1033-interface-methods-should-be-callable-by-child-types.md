@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e43944a3a21f48559ab5bf36d30585f8550b9da1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.openlocfilehash: bd801e7afc1fa0a4edf043aba560bc4afcdae9de
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58946586"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682841"
 ---
 # <a name="ca1033-interface-methods-should-be-callable-by-child-types"></a>CA1033: Schnittstellenmethoden sollten von untergeordneten Typen aufgerufen werden können.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58946586"
  Ein unversiegelter, extern sichtbarer Typ gibt eine explizite Methodenimplementierung einer öffentlichen Schnittstelle an und gibt keine alternative extern sichtbare Methode mit dem gleichen Namen an.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Erwägen Sie einen Basistyp, der eine öffentliche Schnittstelle explizit implementiert. Ein Typ, der vom Basistyp abgeleitet ist, kann die geerbte Schnittstelle-Methode zugreifen, nur über einen Verweis auf die aktuelle Instanz (`this` in C#), die die Schnittstelle umgewandelt wird. Wenn der abgeleitete Typ (explizit) die geerbte Schnittstelle-Methode erneut implementiert, kann die basisimplementierung nicht mehr zugegriffen werden. Der Aufruf über die aktuelle Instanz Referenz wird die abgeleitete Implementierung aufgerufen wird. Dies bewirkt, dass Rekursion und letztlich zu einem Stapelüberlauf.
+ Erwägen Sie einen Basistyp, der eine öffentliche Schnittstelle explizit implementiert. Ein Typ, der vom Basistyp abgeleitet ist, kann die geerbte Schnittstelle-Methode zugreifen, nur über einen Verweis auf die aktuelle Instanz (`this` in c#), die die Schnittstelle umgewandelt wird. Wenn der abgeleitete Typ (explizit) die geerbte Schnittstelle-Methode erneut implementiert, kann die basisimplementierung nicht mehr zugegriffen werden. Der Aufruf über die aktuelle Instanz Referenz wird die abgeleitete Implementierung aufgerufen wird. Dies bewirkt, dass Rekursion und letztlich zu einem Stapelüberlauf.
 
  Diese Regel meldet sich nicht auf einen Verstoß gegen eine explizite Implementierung von <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> Wenn eine extern sichtbare `Close()` oder `System.IDisposable.Dispose(Boolean)` Methode wird bereitgestellt.
 
@@ -52,4 +52,4 @@ ms.locfileid: "58946586"
  [!code-csharp[FxCop.Design.ExplicitMethodImplementations#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.ExplicitMethodImplementations/cs/FxCop.Design.ExplicitMethodImplementations.cs#1)]
 
 ## <a name="see-also"></a>Siehe auch
- [Schnittstellen](http://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37)
+ [Schnittstellen](https://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37)

@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 638aba87698b32b18f41f8b389485893f880743f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8fc60ff83113193f854c3264b7384738dea64f03
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050165"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674344"
 ---
 # <a name="memory-usage-without-debugging"></a>Speicherauslastung ohne Debuggen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
   
 - Vergleichen Sie Momentaufnahmen, um die Grundursache von Speicherproblemen zu finden.  
   
-  In diesem Thema wird beschrieben, wie Sie das Speicherauslastungstool verwenden, um eine universelle Windows XAML-App zu analysieren. Wenn Sie die Speichernutzung in universellen Windows-Apps, die JavaScript und HTML verwenden, analysieren möchten, gehen Sie unter [Analysieren der Speicherauslastung (JavaScript)](http://msdn.microsoft.com/library/windows/apps/jj819176.aspx).  
+  In diesem Thema wird beschrieben, wie Sie das Speicherauslastungstool verwenden, um eine universelle Windows XAML-App zu analysieren. Wenn Sie die Speichernutzung in universellen Windows-Apps, die JavaScript und HTML verwenden, analysieren möchten, gehen Sie unter [Analysieren der Speicherauslastung (JavaScript)](https://msdn.microsoft.com/library/windows/apps/jj819176.aspx).  
   
 ## <a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a> Starten einer Diagnosesitzung zur Speicherauslastung  
   
@@ -204,7 +204,7 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
   
 ## <a name="see-also"></a>Siehe auch  
  [JavaScript-Arbeitsspeicher](../profiling/javascript-memory.md)   
- [Analysieren der App-Leistung](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
- [Ausführen von Leistungs- und Diagnosetools](http://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   
- [Bewährte Methoden zur Leistungssteigerung für Windows Store-Apps mit C++, C# und Visual Basic](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
+ [Analysieren der App-Leistung](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
+ [Ausführen von Leistungs- und Diagnosetools](https://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   
+ [Bewährte Methoden zur Leistungssteigerung für Windows Store-Apps mit C++, C# und Visual Basic](https://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
  [Diagnosing memory issues with the new Memory Usage Tool in Visual Studio (Diagnostizieren von Speicherproblemen mithilfe des neuen Speicherauslastungstools in Visual Studio)](http://go.microsoft.com/fwlink/p/?LinkId=394706)

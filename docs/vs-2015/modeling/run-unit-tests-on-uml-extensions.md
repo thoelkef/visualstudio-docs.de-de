@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e37f6d7891e561beecdf0f9146d647822940571b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: cf83fdf92133284271ea696bccef31af1bd72dbd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079849"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701706"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>Ausführen von Komponententests auf UML-Erweiterungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -140,7 +140,7 @@ namespace UnitTests
       // Find the ModelingProject and IModelStore:  
       foreach (Project project in ModelSolution.Projects)  
       {  
-        // http://msdn.microsoft.com/library/ee791691.aspx  
+        // https://msdn.microsoft.com/library/ee791691.aspx  
         ModelingProject = project as IModelingProject;  
         if (ModelingProject != null)  
         {  
@@ -382,6 +382,6 @@ Assert.AreEqual("hello", testInstance.privateField1_Accessor);
  Diese Vorgehensweise wird am wenigsten empfohlen. Ältere Version von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] haben ein Hilfsprogramm bereitgestellt, das automatisch eine Accessormethode für die einzelnen privaten Methoden bereitgestellt hat. Obwohl diese Vorgehensweise praktisch ist, sagt uns unsere Erfahrung, dass dies eher zu Komponententests führt, die sehr stark an die interne Struktur der zu testenden Anwendung gebunden sind. Dies führt bei sich ändernden Anforderungen oder einer veränderten Architektur wiederum zu zusätzlichem Aufwand, da die Tests zusammen mit der Implementierung geändert werden müssen. Zudem werden sämtliche fehlerhaften Annahmen für den Implementierungsentwurf auch in die Tests übernommen, sodass in den Tests keine Fehler gefunden werden.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Aufbau eines Komponententests](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)   
+ [Aufbau eines Komponententests](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)   
  [Definieren eines Menübefehls in einem Modellierungsdiagramm](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [UML – schnelle Eingabe mithilfe von Text](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a)

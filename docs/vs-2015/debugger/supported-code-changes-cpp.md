@@ -24,12 +24,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 65c802964a03fdfe99e4f2f51988de36a806dcbd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f167b3e9d27145284defa2ff491bb9ce0085f2a3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090887"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684916"
 ---
 # <a name="supported-code-changes-c"></a>Unterstützte Codeänderungen (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ Wenn Sie eine dieser Änderungen vornehmen und anschließend versuchen, die Code
 ## <a name="BKMK_Unsupported_scenarios"></a> Nicht unterstützte Szenarien  
  "Bearbeiten und Fortfahren" steht für C/C++ in den folgenden Debugszenarien nicht zur Verfügung:  
   
-- Debuggen von systemeigenen Apps, die mit [/zo (Optimiertes Debuggen verbessern)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)kompiliert sind  
+- Debuggen von systemeigenen Apps, die mit [/zo (Optimiertes Debuggen verbessern)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)kompiliert sind  
   
 - Debuggen von Windows Store-Apps oder -Komponenten in Versionen von Visual Studio vor Visual Studio 2015 Update 1 Ab Visual Studio 2015 Update 1 können Sie „Bearbeiten und Fortfahren“ in Windows Store C++- und DirectX-Apps verwenden, da jetzt der `/ZI` -Compilerschalter mit dem  `/bigobj` -Schalter unterstützt wird. Sie können „Bearbeiten und Fortfahren“ auch mit Binärdateien verwenden, die mit dem `/FASTLINK` -Schalter unterstützt wird.  
   
@@ -141,7 +141,7 @@ Wenn Sie eine dieser Änderungen vornehmen und anschließend versuchen, die Code
 3. Deaktivieren Sie das Kontrollkästchen **Präkompilierung zulassen** .  
   
 ## <a name="BKMK_IDL_Attribute_Limitations"></a> Einschränkungen für IDL-Attribute  
- "Bearbeiten und Fortfahren" unterstützt nicht das Neugenerieren von IDL-Dateien (Interface Definiton Language). Aus diesem Grund werden Änderungen an IDL-Attributen während des Debuggens nicht widergespiegelt. Wenn Sie die Ergebnisse von Änderungen an IDL-Attributen anzeigen möchten, müssen Sie das Debuggen beenden und die App neu erstellen. "Bearbeiten und Fortfahren" erzeugt keinen Fehler bzw. keine Fehlermeldung, wenn IDL-Attribute geändert wurden. Weitere Informationen finden Sie unter [IDL-Attribute](http://msdn.microsoft.com/library/04c596f4-c97b-4952-8053-316678b1d0b6).  
+ "Bearbeiten und Fortfahren" unterstützt nicht das Neugenerieren von IDL-Dateien (Interface Definiton Language). Aus diesem Grund werden Änderungen an IDL-Attributen während des Debuggens nicht widergespiegelt. Wenn Sie die Ergebnisse von Änderungen an IDL-Attributen anzeigen möchten, müssen Sie das Debuggen beenden und die App neu erstellen. "Bearbeiten und Fortfahren" erzeugt keinen Fehler bzw. keine Fehlermeldung, wenn IDL-Attribute geändert wurden. Weitere Informationen finden Sie unter [IDL-Attribute](https://msdn.microsoft.com/library/04c596f4-c97b-4952-8053-316678b1d0b6).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)

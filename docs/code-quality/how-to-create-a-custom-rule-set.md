@@ -11,18 +11,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a7ed11e7d3e093afaeaa19fd87ea68b7fecd266
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f2f642ea8e41e4a9ccf2b35f432df528fc5e81d0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816567"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676562"
 ---
 # <a name="customize-a-rule-set"></a>Anpassen eines Regelsatzes
 
 Sie können einen benutzerdefinierten Regelsatz, um bestimmte projektanforderungen für die Codeanalyse erstellen.
 
-## <a name="create-a-custom-rule-set"></a>Erstellen eines benutzerdefinierten Regelsatzes
+## <a name="create-a-custom-rule-set-from-an-existing-rule-set"></a>Erstellen eines benutzerdefinierten Regelsatzes aus einer vorhandenen Regelsatz
 
 Um eine benutzerdefinierte Regel erstellen, öffnen Sie eine integrierte Regel legen Sie in der **Regelsatz-Editor**. Von dort aus können Sie hinzufügen oder entfernen Sie bestimmte Regeln, und Sie können ändern, dass die Aktion, die auftritt, wenn gegen eine Regel verstoßen wird&mdash;z. B. Anzeigen einer Warnung oder einen Fehler.
 
@@ -40,7 +40,12 @@ Um eine benutzerdefinierte Regel erstellen, öffnen Sie eine integrierte Regel l
 
 4. Wählen Sie **öffnen** zu Regeln in den Regelsatz-Editor anzuzeigen.
 
-Sie können auch erstellen eine neuen Regelsatzdatei aus der **neue Datei** Dialogfeld:
+> [!NOTE]
+> Wenn Sie ein .NET Core oder .NET Standard-Projekt verfügen, der Prozess ist ein wenig anders, da gibt es keine **Codeanalyse** Registerkarte für Eigenschaften. Führen Sie die Schritte zum [kopieren Sie eine vordefinierte Regel legen Sie auf das Projekt, und legen Sie es als aktiven Regelsatz](analyzer-rule-sets.md). Nachdem Sie über einen Regelsatz kopiert haben, können Sie [in der Visual Studio mit dem Regelsatz-Editor bearbeiten](working-in-the-code-analysis-rule-set-editor.md) durch Öffnen von **Projektmappen-Explorer**.
+
+## <a name="create-a-new-rule-set"></a>Erstellen eines neuen Regelsatzes
+
+Sie können angeben, erstellen eine neuen Regelsatzdatei aus der **neue Datei** Dialogfeld:
 
 1. Wählen Sie **Datei** > **neu** > **Datei**, oder drücken Sie **STRG**+**N**.
 
@@ -50,9 +55,12 @@ Sie können auch erstellen eine neuen Regelsatzdatei aus der **neue Datei** Dial
 
    Die neue *ruleSet* Datei wird in dem Regelsatz-Editor geöffnet.
 
-### <a name="create-a-custom-rule-set-from-multiple-rule-sets"></a>Erstellen Sie eine benutzerdefinierte Regel aus mehreren Regelsätzen
+## <a name="create-a-custom-rule-set-from-multiple-rule-sets"></a>Erstellen Sie eine benutzerdefinierte Regel aus mehreren Regelsätzen
 
-1. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste in des Projekts, und wählen Sie dann **Eigenschaften**.
+> [!NOTE]
+> Das folgende Verfahren wird nicht für .NET Core-Projekte, die keinem **Codeanalyse** Registerkarte für Eigenschaften.
+
+1. In **Projektmappen-Explorer**mit der rechten Maustaste auf das Projekt, und wählen Sie dann **Eigenschaften**.
 
 2. Auf der **Eigenschaften** Seiten, auf die **Codeanalyse** Registerkarte.
 
@@ -68,7 +76,7 @@ Sie können auch erstellen eine neuen Regelsatzdatei aus der **neue Datei** Dial
 
 6. Wählen Sie **öffnen** zu den neuen Regelsatz, der in den Regelsatz-Editor zu öffnen.
 
-### <a name="rule-precedence"></a>Rangfolge der Regeln
+## <a name="rule-precedence"></a>Rangfolge der Regeln
 
 - Ist die gleiche Regel aufgeführten zwei oder mehr Vorkommen in einer Regel, die von unterschiedlichem Schweregrad festlegen, generiert der Compiler einen Fehler aus. Zum Beispiel:
 
@@ -112,7 +120,7 @@ Um den Anzeigenamen des einen Regelsatzes ändern, die im Editor geöffnet ist, 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Nun, da Sie eine Regel festgelegt haben, besteht der nächste Schritt, um die Regeln anpassen, hinzufügen oder Entfernen von Regeln oder ändern den Schweregrad von Regelverstößen.
+Nun, da Sie eine Regel festgelegt haben, werden im nächste Schritt die Regeln, die durch Hinzufügen oder Entfernen von Regeln oder ändern den Schweregrad von Regelverstößen anpassen.
 
 > [!div class="nextstepaction"]
 > [Ändern von Regeln in den Regelsatz-editor](../code-quality/working-in-the-code-analysis-rule-set-editor.md)

@@ -15,12 +15,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5f660a7b457f8ba70439321d3eb619389e50fe97
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1eb88a5baa09256aa58d3c62b926047df01b32f2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445712"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700993"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Vorgehensweise: Hinzufügen oder Entfernen von importierten Namespaces (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Das Importieren eines Namespace ermöglicht Ihnen die Verwendung von Elementen a
 3. Aktivieren Sie in der Liste **Importierte Namespaces** das Kontrollkästchen für den Namespace, den Sie hinzufügen möchten.  
   
     > [!NOTE]
-    > Der Namespace muss sich in einer Komponente befinden, auf die verwiesen wird, damit er importiert werden kann. Wenn der Namespace nicht in der Liste angezeigt wird, müssen Sie einen Verweis auf die Komponente hinzufügen, in der er enthalten ist. Weitere Informationen finden Sie unter [NIB How to: Hinzufügen oder Entfernen von verweisen mithilfe des Dialogfelds "Verweis" hinzufügen "](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+    > Der Namespace muss sich in einer Komponente befinden, auf die verwiesen wird, damit er importiert werden kann. Wenn der Namespace nicht in der Liste angezeigt wird, müssen Sie einen Verweis auf die Komponente hinzufügen, in der er enthalten ist. Weitere Informationen finden Sie unter [NIB How to: Hinzufügen oder Entfernen von verweisen mithilfe des Dialogfelds "Verweis" hinzufügen "](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 ### <a name="to-remove-an-imported-namespace"></a>So entfernen Sie einen importierten Namespace  
   

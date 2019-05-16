@@ -13,12 +13,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cdf4d9657832c2dc1e7691eed5c334e770de5700
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d91d84b6a763dd3fecfac8a030f8514c91e5ac61
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976988"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704714"
 ---
 # <a name="creating-a-workflow-project"></a>Erstellen eines Workflowprojekts
 Workflows, [!INCLUDE[indigo1](../includes/indigo1-md.md)]-Workflowdienste, benutzerdefinierte Aktivitäten und benutzerdefinierte Aktivitätsdesigner können mit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Projektvorlagen erstellt werden. In diesem Abschnitt wird beschrieben, wie Bibliotheken und Anwendungen mit den Projektvorlagen in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] erstellt werden.  
@@ -44,7 +44,7 @@ Workflows, [!INCLUDE[indigo1](../includes/indigo1-md.md)]-Workflowdienste, benut
  Beschreibt, wie einem vorhandenen Projekt zusätzliche Workflowaktivitäten oder Designer und andere [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-Elemente wie z. B. Codeaktivitäten hinzugefügt werden.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
- [Entwerfen von Workflows](http://msdn.microsoft.com/library/41f727b5-b142-4c1b-b046-492b96135ae6)  
+ [Entwerfen von Workflows](https://msdn.microsoft.com/library/41f727b5-b142-4c1b-b046-492b96135ae6)  
   
 ## <a name="see-also"></a>Siehe auch  
  [Verwenden des Workflow-Designers](../workflow-designer/using-the-workflow-designer.md)

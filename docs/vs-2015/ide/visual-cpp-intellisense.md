@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25c11d0ab2a136c82956ffa1ed0f90da534acb87
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 2754a8ea663d888bb8ba2e2ff0276911976ff0af
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802628"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696558"
 ---
 # <a name="visual-c-intellisense"></a>Visual C++ Intellisense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,7 +87,7 @@ In Visual Studio 2015 steht IntelliSense für einzelne Codedateien sowie für Da
 - Zeile 12 weist der BYE-Bezeichner eine violette Wellenlinie auf; dieser Bezeichner ist im aktuell inaktiven Android.NativeActivity-Projekt nicht definiert.  
   
 ## <a name="single-file-intellisense"></a>IntelliSense mit Einzeldatei  
- Wenn Sie eine einzelne Datei außerhalb von Projekten öffnen, können Sie weiterhin IntelliSense verwenden. Sie können bestimmte Funktionen aktivieren oder deaktivieren, indem Sie zu **Text-Editor, C/C++, Erweitert** wechseln und IntelliSense-Funktionen aktivieren oder deaktivieren. Suchen Sie zum Konfigurieren von IntelliSense für einzelne Dateien, die nicht Teil eines Projekts sind, nach **IntelliSense und Suchen nach Nicht-Projektdateien** in dem Abschnitt **Erweitert**. Weitere Informationen finden Sie unter [Tour zu Visual C++](http://msdn.microsoft.com/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).  
+ Wenn Sie eine einzelne Datei außerhalb von Projekten öffnen, können Sie weiterhin IntelliSense verwenden. Sie können bestimmte Funktionen aktivieren oder deaktivieren, indem Sie zu **Text-Editor, C/C++, Erweitert** wechseln und IntelliSense-Funktionen aktivieren oder deaktivieren. Suchen Sie zum Konfigurieren von IntelliSense für einzelne Dateien, die nicht Teil eines Projekts sind, nach **IntelliSense und Suchen nach Nicht-Projektdateien** in dem Abschnitt **Erweitert**. Weitere Informationen finden Sie unter [Tour zu Visual C++](https://msdn.microsoft.com/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).  
   
  ![Visual C&#43;&#43; IntelliSense mit Einzeldatei](../ide/media/vs2015-cpp-single-file-intellisense.png "vs2015_cpp_single_file_intellisense")  
   

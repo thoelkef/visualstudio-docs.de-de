@@ -11,12 +11,12 @@ ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 516deb626bd8c6056612fcc481b9d530da504b9d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4693654e12dc37209cb92e3e2ba95bde8bd13e77
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437269"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687681"
 ---
 # <a name="windows-installer-basics"></a>Grundlagen zu Windows Installer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,19 +47,19 @@ Das Windows-Installationsprogramm installiert und deinstalliert, Anwendungen ode
  Dateien, Registrierungsschlüssel, Verknüpfungen oder und so weiter, die auf einem Computer installiert werden kann. Diese Ressourcen werden in der Windows Installer-Komponenten logisch gruppiert.  
   
  Windows Installer-Komponente (WIC)  
- Die grundlegende Einheit der Installation, die eine logische Gruppierung von verwandten Ressourcen, die installiert und deinstalliert werden, als eine Einheit darstellt. Windows Installer-Komponenten werden durch eine eindeutige Komponenten-ID oder GUID identifiziert. Windows Installer verwaltet außerdem die verweiszählung, die auf der WIC-Ebene. Flexibilität erhalten Sie maximale versionsverwaltung schließen Sie nicht mehr als einen primäre Ressource, z. B. eine DLL in einer bestimmten WIC ein. Beachten Sie, nachdem Sie identifizieren und füllen Sie einen WIC, weisen Sie ihm eine GUID und bereitstellen, können Sie die Zusammensetzung ändern. Weitere Informationen finden Sie unter [Organisieren von Anwendungen in Komponenten](http://msdn.microsoft.com/library/aa370561.aspx).  
+ Die grundlegende Einheit der Installation, die eine logische Gruppierung von verwandten Ressourcen, die installiert und deinstalliert werden, als eine Einheit darstellt. Windows Installer-Komponenten werden durch eine eindeutige Komponenten-ID oder GUID identifiziert. Windows Installer verwaltet außerdem die verweiszählung, die auf der WIC-Ebene. Flexibilität erhalten Sie maximale versionsverwaltung schließen Sie nicht mehr als einen primäre Ressource, z. B. eine DLL in einer bestimmten WIC ein. Beachten Sie, nachdem Sie identifizieren und füllen Sie einen WIC, weisen Sie ihm eine GUID und bereitstellen, können Sie die Zusammensetzung ändern. Weitere Informationen finden Sie unter [Organisieren von Anwendungen in Komponenten](https://msdn.microsoft.com/library/aa370561.aspx).  
   
  Paket (Redist-Paket)  
  Eine Einheit der Bereitstellung, die besteht aus einer MSI-Datei und externen Quelldateien auf denen diese Datei verweisen kann. Ein Paket enthält alle Informationen, die Windows Installer benötigt, um die Benutzeroberfläche auszuführen und zu installieren oder deinstallieren die Anwendung.  
   
  MSI-Datei  
- Eine COM-strukturierter Speicher-Datei, die Anweisungen und die Daten, die zur Installation einer Anwendungs erforderlich sind. Jedes Paket enthält mindestens eine MSI-Datei. Die MSI-Datei enthält die Installer-Datenbank, einen Stream Zusammenfassungsinformationen, und möglicherweise eine oder mehrere Transformationen und interne Quelldateien. Zu installierenden Dateien können entweder werden in CAB-Datei komprimiert und in einem Datenstrom in die MSI-Datei gespeichert oder gespeichert, komprimiert oder unkomprimiert, außerhalb der MSI-Datei auf dem Quellmedium. Weitere Informationen finden Sie unter [Windows Installer-Dateierweiterungen](http://msdn.microsoft.com/library/aa372842\(VS.85\).aspx).  
+ Eine COM-strukturierter Speicher-Datei, die Anweisungen und die Daten, die zur Installation einer Anwendungs erforderlich sind. Jedes Paket enthält mindestens eine MSI-Datei. Die MSI-Datei enthält die Installer-Datenbank, einen Stream Zusammenfassungsinformationen, und möglicherweise eine oder mehrere Transformationen und interne Quelldateien. Zu installierenden Dateien können entweder werden in CAB-Datei komprimiert und in einem Datenstrom in die MSI-Datei gespeichert oder gespeichert, komprimiert oder unkomprimiert, außerhalb der MSI-Datei auf dem Quellmedium. Weitere Informationen finden Sie unter [Windows Installer-Dateierweiterungen](https://msdn.microsoft.com/library/aa372842\(VS.85\).aspx).  
   
 ## <a name="windows-installer-rules-enforcement"></a>Windows Installer-Regelerzwingung  
  Zwei Sätze von Regeln bestimmen, die Bereitstellung von Ressourcen durch das Setup Komponenten. Ein Regelsatz wird durch die Windows-Installer selbst verwaltet, während Sie die zweite Gruppe als Installation Autor erzwingen soll.  
   
 > [!NOTE]
-> Erzwingung von Windows Installer-Regeln tritt nur dann, wenn Sie eine Überprüfung der MSI-Datei ausführen. Dennoch sind Sie hingewiesen, um diese Regeln als bewährte Methoden zu behandeln. Weitere Informationen finden Sie unter [Überprüfen einer Installationsdatenbank](http://msdn.microsoft.com/library/aa372477\(VS.85\).aspx) und [Paketüberprüfung](http://msdn.microsoft.com/library/aa370569\(VS.85\).aspx).  
+> Erzwingung von Windows Installer-Regeln tritt nur dann, wenn Sie eine Überprüfung der MSI-Datei ausführen. Dennoch sind Sie hingewiesen, um diese Regeln als bewährte Methoden zu behandeln. Weitere Informationen finden Sie unter [Überprüfen einer Installationsdatenbank](https://msdn.microsoft.com/library/aa372477\(VS.85\).aspx) und [Paketüberprüfung](https://msdn.microsoft.com/library/aa370569\(VS.85\).aspx).  
   
 #### <a name="installer-enforced-rules"></a>Erzwungene Installer-Regeln  
   
@@ -69,9 +69,9 @@ Das Windows-Installationsprogramm installiert und deinstalliert, Anwendungen ode
   
 #### <a name="component-provider-responsibilities"></a>Komponentenanbieter Aufgaben  
   
-- Alle zwei Ressourcen, die getrennt in zukünftigen Versionen ausgeliefert werden können, sollte in separate Komponenten vorhanden sein. Ressourcen sollten in der gleichen Komponente gruppiert werden, nur, wenn Sie sicher sind, dass diese Ressourcen getrennt nie ausgeliefert werden. Es wird in der Tat empfohlen, alle primären Ressourcen (z. B. DLLs) in separaten WICs vorhanden sein. Weitere Informationen finden Sie unter [Installationsprogrammkomponenten definieren](http://msdn.microsoft.com/library/aa368269\(VS.85\).aspx).  
+- Alle zwei Ressourcen, die getrennt in zukünftigen Versionen ausgeliefert werden können, sollte in separate Komponenten vorhanden sein. Ressourcen sollten in der gleichen Komponente gruppiert werden, nur, wenn Sie sicher sind, dass diese Ressourcen getrennt nie ausgeliefert werden. Es wird in der Tat empfohlen, alle primären Ressourcen (z. B. DLLs) in separaten WICs vorhanden sein. Weitere Informationen finden Sie unter [Installationsprogrammkomponenten definieren](https://msdn.microsoft.com/library/aa368269\(VS.85\).aspx).  
   
 - Keine Ressource mit versionsverwaltung durch das sollte jemals in mehr als ein WIC liefern.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Was geschieht, wenn die Komponentenregeln unterbrochen werden?](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)
+ [Was geschieht, wenn die Komponentenregeln unterbrochen werden?](https://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)

@@ -9,19 +9,19 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a753ac6691e419267fdca34ed5e78a9a5b3cfdd3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: db27e8665d74477f3bb668831cbfaeef00d622bd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424801"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700226"
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>Exemplarische Vorgehensweise: Anpassen des Einfüge-, Update- und Löschverhaltens in Entitätsklassen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Die [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) bietet eine visuelle Entwurfsoberfläche zum Erstellen und bearbeiten [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] -Klassen (Entitätsklassen), die auf Objekte in einer Datenbank basieren. Mithilfe von [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655), können Sie LINQ-Technologie für den Zugriff auf SQL-Datenbanken. Weitere Informationen finden Sie unter [LINQ (Language-Integrated Query, sprachintegrierte Abfrage)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d).  
+Die [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) bietet eine visuelle Entwurfsoberfläche zum Erstellen und bearbeiten [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] -Klassen (Entitätsklassen), die auf Objekte in einer Datenbank basieren. Mithilfe von [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655), können Sie LINQ-Technologie für den Zugriff auf SQL-Datenbanken. Weitere Informationen finden Sie unter [LINQ (Language-Integrated Query, sprachintegrierte Abfrage)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d).  
   
- Standardmäßig wird die Logik für die Durchführung von Updates von der [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)]-Laufzeit bereitgestellt. Basierend auf dem Schema der Tabelle (den Spaltendefinitionen und den Primärschlüsselinformationen) werden von der Laufzeit Standardanweisungen für Einfüge-, Update- und Löschvorgänge erstellt. Wenn Sie das Standardverhalten nicht verwenden möchten, können Sie das Updateverhalten konfigurieren und für erforderliche Einfüge-, Update- und Löschvorgänge, die für das Arbeiten mit Daten in der Datenbank notwendig sind, spezielle gespeicherte Prozeduren festlegen. Diese Vorgehensweise ist auch dann sinnvoll, wenn kein Standardverhalten erzeugt wird, z. B. wenn die Entitätsklassen Ansichten zugeordnet sind. Das standardmäßige Updateverhalten kann auch dann überschrieben werden, wenn für die Datenbank der Tabellenzugriff über gespeicherte Prozeduren erforderlich ist. Weitere Informationen finden Sie unter [anpassen Operations By Using Stored Procedures](http://msdn.microsoft.com/library/aedbecc1-c33c-4fb4-8861-fdf7e1dc6b8a).  
+ Standardmäßig wird die Logik für die Durchführung von Updates von der [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)]-Laufzeit bereitgestellt. Basierend auf dem Schema der Tabelle (den Spaltendefinitionen und den Primärschlüsselinformationen) werden von der Laufzeit Standardanweisungen für Einfüge-, Update- und Löschvorgänge erstellt. Wenn Sie das Standardverhalten nicht verwenden möchten, können Sie das Updateverhalten konfigurieren und für erforderliche Einfüge-, Update- und Löschvorgänge, die für das Arbeiten mit Daten in der Datenbank notwendig sind, spezielle gespeicherte Prozeduren festlegen. Diese Vorgehensweise ist auch dann sinnvoll, wenn kein Standardverhalten erzeugt wird, z. B. wenn die Entitätsklassen Ansichten zugeordnet sind. Das standardmäßige Updateverhalten kann auch dann überschrieben werden, wenn für die Datenbank der Tabellenzugriff über gespeicherte Prozeduren erforderlich ist. Weitere Informationen finden Sie unter [anpassen Operations By Using Stored Procedures](https://msdn.microsoft.com/library/aedbecc1-c33c-4fb4-8861-fdf7e1dc6b8a).  
   
 > [!NOTE]
 > Für diese exemplarische Vorgehensweise ist die Verfügbarkeit der gespeicherten Prozeduren **InsertCustomer**, **UpdateCustomer** und **DeleteCustomer** für die Datenbank „Northwind“ erforderlich.
@@ -65,7 +65,7 @@ Die [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visu
     > [!NOTE]
     > Der [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] wird in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]- und C#-Projekten unterstützt. Erstellen Sie das neue Projekt daher in einer der beiden Sprachen.  
   
-3. Klicken Sie auf die **Windows Forms-Anwendung** Vorlage, und klicken Sie auf **OK**. Weitere Informationen finden Sie unter [Clientanwendungen](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Klicken Sie auf die **Windows Forms-Anwendung** Vorlage, und klicken Sie auf **OK**. Weitere Informationen finden Sie unter [Clientanwendungen](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      Das Projekt UpdatingwithSProcsWalkthrough wird erstellt und hinzugefügt **Projektmappen-Explorer**.  
   
@@ -253,14 +253,14 @@ Die [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visu
 ## <a name="next-steps"></a>Nächste Schritte  
  Je nach den Anforderungen Ihrer Anwendung sollten Sie nach dem Erstellen von [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)]-Entitätsklassen mehrere Schritte ausführen. Hier sind einige Verbesserungen, die Sie an dieser Anwendung vornehmen können:  
   
-- Implementieren der Parallelitätsprüfung während der Durchführung von Updates. Weitere Informationen finden Sie unter [optimistische Parallelität: Übersicht über die](http://msdn.microsoft.com/library/c2e38512-d0c8-4807-b30a-cb7e30338694).  
+- Implementieren der Parallelitätsprüfung während der Durchführung von Updates. Weitere Informationen finden Sie unter [optimistische Parallelität: Übersicht über die](https://msdn.microsoft.com/library/c2e38512-d0c8-4807-b30a-cb7e30338694).  
   
-- Hinzufügen von LINQ-Abfragen, um Daten zu filtern. Weitere Informationen finden Sie unter [Introduction to LINQ Queries (c#)](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8).  
+- Hinzufügen von LINQ-Abfragen, um Daten zu filtern. Weitere Informationen finden Sie unter [Introduction to LINQ Queries (c#)](https://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8).  
   
 ## <a name="see-also"></a>Siehe auch  
  [LINQ to SQL-Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
- [LINQ to SQL-Abfragen](http://msdn.microsoft.com/library/f4897aaa-7f44-4c20-a471-b948c2971aae)   
+ [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
+ [LINQ to SQL-Abfragen](https://msdn.microsoft.com/library/f4897aaa-7f44-4c20-a471-b948c2971aae)   
  [DataContext-Methoden (O/R-Designer)](../data-tools/datacontext-methods-o-r-designer.md)   
  [Vorgehensweise: Zuweisen von gespeicherten Prozeduren zum Ausführen von Updates, einfügungen und löschen (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
- [PAVE Neues in den Daten-Anwendungsentwicklung in Visual Studio 2012](http://msdn.microsoft.com/3d50d68f-5f44-4915-842f-6d42fce793f1)
+ [PAVE Neues in den Daten-Anwendungsentwicklung in Visual Studio 2012](https://msdn.microsoft.com/3d50d68f-5f44-4915-842f-6d42fce793f1)

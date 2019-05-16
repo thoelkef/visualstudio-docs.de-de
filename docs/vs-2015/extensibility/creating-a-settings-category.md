@@ -10,17 +10,17 @@ ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4427931b079671a19e647860b263105ffdf52bd4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d14e60ec28fb5f8ba80f9986c4316058539b35e6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435539"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695021"
 ---
 # <a name="creating-a-settings-category"></a>Erstellen einer Einstellungskategorie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In dieser exemplarischen Vorgehensweise erstellen Sie eine Kategorie der Visual Studio-Einstellungen und zum Speichern von Werten, und Werte aus einer Datei wiederherstellen. Eine Einstellungskategorie ist eine Gruppe von verwandten Eigenschaften, die als ein "benutzerdefinierter einstellungspunkt"; d. h. als Kontrollkästchen in der **Einstellungen importieren und Exporte** Assistenten. (Sie finden es auf die **Tools** Menü.) Einstellungen werden gespeichert oder als eine Kategorie wiederhergestellt, und der einzelne Einstellungen werden im Assistenten nicht angezeigt. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+In dieser exemplarischen Vorgehensweise erstellen Sie eine Kategorie der Visual Studio-Einstellungen und zum Speichern von Werten, und Werte aus einer Datei wiederherstellen. Eine Einstellungskategorie ist eine Gruppe von verwandten Eigenschaften, die als ein "benutzerdefinierter einstellungspunkt"; d. h. als Kontrollkästchen in der **Einstellungen importieren und Exporte** Assistenten. (Sie finden es auf die **Tools** Menü.) Einstellungen werden gespeichert oder als eine Kategorie wiederhergestellt, und der einzelne Einstellungen werden im Assistenten nicht angezeigt. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Erstellen eine Einstellungskategorie durch Ableiten von der <xref:Microsoft.VisualStudio.Shell.DialogPage> Klasse.  
   

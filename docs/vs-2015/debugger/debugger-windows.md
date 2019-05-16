@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc52b883388640ef0e24478a08202bd2991375fc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 78a81b2392959b968e8905ae33a6f0751e73f2ff
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961075"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686770"
 ---
 # <a name="debugger-windows"></a>Debuggerfenster
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,8 +33,8 @@ Sie können die meisten Debuggerfenster beim Debuggen Ihres Programms öffnen. Z
 |Parallele Überwachung|STRG+UMSCHALT+D, (1, 2, 3, 4)|[Verwenden des Fensters "Parallele Stapel"](../debugger/using-the-parallel-stacks-window.md)|  
 |Überwachen|STRG+ALT+W, (1, 2, 3, 4)|[Fenster "Überwachen" und "Schnellüberwachung"](../debugger/watch-and-quickwatch-windows.md)|  
 |Schnellüberwachung|UMSCHALT+F9|[Fenster "Überwachen" und "Schnellüberwachung"](../debugger/watch-and-quickwatch-windows.md)|  
-|Auto|STRG+ALT+V, A|[Variablenfenster](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
-|Locals|STRG+ALT+V, L|[Variablenfenster](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
+|Auto|STRG+ALT+V, A|[Variablenfenster](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
+|Locals|STRG+ALT+V, L|[Variablenfenster](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
 |Direkt|STRG+ALT+I|[Direktfenster](../ide/reference/immediate-window.md)|  
 |Python Debug Interactive|UMSCHALT+ALT+I|[Erste Schritte mit PTVS: Interaktives Python](../python/getting-started-with-ptvs-interactive-python.md)|  
 |JavaScript-Konsole|STRG+ALT+V, C|[Schnellstart: Debuggen von JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|  

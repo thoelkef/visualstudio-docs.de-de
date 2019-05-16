@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ee9289ebaeb12318ef83694f5dfb74b2930b8df1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1b437fb34902783002baedee992a21ee61a86c2e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416745"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685622"
 ---
 # <a name="how-to-implement-an-interface-class-designer"></a>Vorgehensweise: Implementieren einer Schnittstelle (Klassen-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ In Klassen-Designer können Sie eine Schnittstelle im Klassendiagramm implementi
 2. Öffnen Sie die Klassenansicht, und suchen Sie die Schnittstelle.  
   
     > [!TIP]
-    > Wenn die Klassenansicht nicht geöffnet ist, rufen Sie sie über das Menü **Ansicht** auf. Weitere Informationen über die Klassenansicht finden Sie unter [Anzeigen von Klassen und deren Membern](http://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  
+    > Wenn die Klassenansicht nicht geöffnet ist, rufen Sie sie über das Menü **Ansicht** auf. Weitere Informationen über die Klassenansicht finden Sie unter [Anzeigen von Klassen und deren Membern](https://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  
   
 3. Ziehen Sie den Schnittstellenknoten in die Klassenform im Diagramm.  
   

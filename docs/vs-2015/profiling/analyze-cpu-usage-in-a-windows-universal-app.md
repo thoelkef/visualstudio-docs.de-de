@@ -15,19 +15,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 646bba541e18fd372bd5236f7ebb6b91d1472d55
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 105efab7a28f0a21bd7567262ff8ec214715b8ae
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435086"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704575"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>Analysieren der CPU-Auslastung in einer universellen Windows-App
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Gilt Sie für Windows und Windows Phone] (.. /Image/windows_and_phone_content.png "Windows_and_phone_content")  
   
- Wenn Sie Leistungsprobleme in Ihrer App untersuchen müssen, ist ein guter Ausgangspunkt die Untersuchung der CPU-Nutzung. Das Tool **CPU-Auslastung** zeigt Ihnen, wo die CPU Zeit damit verbringt, Code auszuführen. Für eine Fokussierung auf bestimmte Szenarios kann das CPU-Auslastungstool mit dem Tool [XAML-UI-Reaktionsfähigkeit](http://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480), dem Tool [Energieverbrauch](../profiling/analyze-energy-use-in-store-apps.md) oder beiden in einer einzigen Diagnosesitzung verwendet werden.  
+ Wenn Sie Leistungsprobleme in Ihrer App untersuchen müssen, ist ein guter Ausgangspunkt die Untersuchung der CPU-Nutzung. Das Tool **CPU-Auslastung** zeigt Ihnen, wo die CPU Zeit damit verbringt, Code auszuführen. Für eine Fokussierung auf bestimmte Szenarios kann das CPU-Auslastungstool mit dem Tool [XAML-UI-Reaktionsfähigkeit](https://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480), dem Tool [Energieverbrauch](../profiling/analyze-energy-use-in-store-apps.md) oder beiden in einer einzigen Diagnosesitzung verwendet werden.  
   
 > [!NOTE]
 > Das Tool **CPU-Auslastung** kann nicht mit Windows Phone Silverlight 8.1-Apps verwendet werden.  

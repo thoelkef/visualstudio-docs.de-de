@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
 manager: jillfra
-ms.openlocfilehash: 0b65fa016d0d2e09a4200004de3f473503604f6e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e4d721fca8d429fe81de30306a8823e3d7fd9cab
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442854"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681684"
 ---
 # <a name="how-to-manually-package-an-extension-vsix-deployment"></a>Vorgehensweise: Manuelles Verpacken einer Erweiterung (VSIX-Bereitstellung)
 Sie können ein VSIX-Paket erstellen, um eine [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Erweiterung für die Bereitstellung zu verpacken. Es gibt drei Möglichkeiten zum Erstellen des Pakets:  
@@ -26,7 +26,7 @@ Sie können ein VSIX-Paket erstellen, um eine [!INCLUDE[vsprvs](../includes/vspr
   In diesem Dokument wird die dritte Option erläutert:  
   
 ## <a name="creating-a-vsix-package"></a>Erstellen eines VSIX-Pakets  
- Um eine Erweiterung manuell zu verpacken, fügen Sie dem Erweiterungsprojekt eine extension.manifest- und eine [Content_Types].xml-Datei hinzu, fassen Sie diese mit der Buildausgabe in einer komprimierten Datei zusammen, und benennen Sie die komprimierte Datei so um, dass sie die Dateierweiterung ".vsix" hat. Die zu verpackende Erweiterung muss einen Typ aufweisen, der vom [VSIX-Schema](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)unterstützt wird.  
+ Um eine Erweiterung manuell zu verpacken, fügen Sie dem Erweiterungsprojekt eine extension.manifest- und eine [Content_Types].xml-Datei hinzu, fassen Sie diese mit der Buildausgabe in einer komprimierten Datei zusammen, und benennen Sie die komprimierte Datei so um, dass sie die Dateierweiterung ".vsix" hat. Die zu verpackende Erweiterung muss einen Typ aufweisen, der vom [VSIX-Schema](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)unterstützt wird.  
   
 > [!NOTE]
 > Die Namen der Dateien in VSIX-Paketen darf keine Leerzeichen enthalten, noch in Uniform Resource Identifiers (URI), als reservierten Zeichen definierte [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
@@ -37,7 +37,7 @@ Sie können ein VSIX-Paket erstellen, um eine [!INCLUDE[vsprvs](../includes/vspr
   
 2. Erstellen Sie eine XML-Datei, und nennen Sie sie `extension.vsixmanifest`.  
   
-3. Füllen Sie die Datei "extension.vsixmanifest" gemäß dem VSIX-Schema. Ein Beispiel für ein Manifest finden Sie unter [PackageManifest-Element (Stammelement, VSX-Schema)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  
+3. Füllen Sie die Datei "extension.vsixmanifest" gemäß dem VSIX-Schema. Ein Beispiel für ein Manifest finden Sie unter [PackageManifest-Element (Stammelement, VSX-Schema)](https://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  
   
 4. Erstellen Sie eine zweite XML-Datei, und nennen Sie sie `[Content_Types].xml`.  
   
@@ -56,4 +56,4 @@ Sie können ein VSIX-Paket erstellen, um eine [!INCLUDE[vsprvs](../includes/vspr
 ## <a name="see-also"></a>Siehe auch  
  [Versand von Visual Studio-Erweiterungen](../extensibility/shipping-visual-studio-extensions.md)   
  [Anatomie eines VSIX-Pakets](../extensibility/anatomy-of-a-vsix-package.md)   
- [PackageManifest-Element (Stammelement, VSX-Schema)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)
+ [PackageManifest-Element (Stammelement, VSX-Schema)](https://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)

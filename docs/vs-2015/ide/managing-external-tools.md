@@ -57,12 +57,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d6dec053e1075865b51c14df951915308852f8a2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e568286a5e17b13b5009eccf01988d458fc9cd47
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445425"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686965"
 ---
 # <a name="managing-external-tools"></a>Verwalten von externen Tools
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ Sie können externe Tools aus Visual Studio aufrufen. Einige Standardtools sind 
   
 1. GUID erstellen: Generiert eine GUID.  
   
-2. Fehlersuche: Empfängt eine Fehlermeldung vom eingegebenen Wert. Weitere Informationen finden Sie unter [ERRLOOK-Referenz](http://msdn.microsoft.com/library/6040ffc1-2355-4a45-8998-84cbcba4ca91).  
+2. Fehlersuche: Empfängt eine Fehlermeldung vom eingegebenen Wert. Weitere Informationen finden Sie unter [ERRLOOK-Referenz](https://msdn.microsoft.com/library/6040ffc1-2355-4a45-8998-84cbcba4ca91).  
   
 3. ATL-/MFC-Ablaufverfolgungsprogramm: Zeigt Debugablaufverfolgungs-Meldungen in den ATL- und MFC-Quellen an.  
   
@@ -85,7 +85,7 @@ Sie können externe Tools aus Visual Studio aufrufen. Einige Standardtools sind 
 6. WCF Service Configuration Editor: Ermöglicht Ihnen das Erstellen und Ändern von Konfigurationseinstellungen für WCF-Dienste.  
   
 > [!WARNING]
-> Je nach installierter Visual Studio-Edition und angewendetem Einstellungsprofil wird möglicherweise eine andere Liste mit externen Tools angezeigt. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Je nach installierter Visual Studio-Edition und angewendetem Einstellungsprofil wird möglicherweise eine andere Liste mit externen Tools angezeigt. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="adding-new-tools"></a>Hinzufügen von neuen Tools  
  So können im Menü **Extras** ein externes Tool hinzufügen. Öffnen Sie das Dialogfeld **Externe Tools**, und klicken Sie auf **Hinzufügen**. Geben Sie dann die Informationen ein. Beispielsweise führt der folgende Eintrag dazu, dass Windows Explorer in dem Verzeichnis der Datei geöffnet wird, das Sie zurzeit in Visual Studio geöffnet haben:  
@@ -122,4 +122,4 @@ Sie können externe Tools aus Visual Studio aufrufen. Einige Standardtools sind 
 |Projektmappen-Dateiname|$(SolutionFileName)|Der Dateiname der aktuellen Projektmappe (Laufwerk + Pfad + Dateiname).|  
   
 ## <a name="see-also"></a>Siehe auch  
- [C/C++-Buildtools](http://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)
+ [C/C++-Buildtools](https://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)

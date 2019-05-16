@@ -10,12 +10,12 @@ ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 03b68c0fbaf92ff2c768c36ccdbea1988c99a973
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3dff5e6ecf60d389730841e99b87db584465e020
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430116"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695479"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>Verwenden von Textmarkierungen mit der Legacy-API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Eine textmarkierung ist einen unverankerten Textbereich in einem Puffer, der die
 |[Vorgehensweise: Erstellen von benutzerdefinierten Diagrammen](../extensibility/how-to-create-custom-text-markers.md)|Beschreibt das Erstellen und eine Textansicht ein Markertyps benutzerdefinierten Text hinzuzufügen.|  
 |[Vorgehensweise: Verwenden von Textmarkierungen](../extensibility/how-to-use-text-markers.md)|Erläutert das Hinzufügen von Textmarkierungen.|  
 |[Im Core-Editor](../extensibility/inside-the-core-editor.md)|Beschreibt die Funktionen von der Kern-Editor, und enthält ausführliche Informationen zum Anpassen der Kern-Editor.|  
-|[Editor-Funktionen](http://msdn.microsoft.com/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|Beschreibt die Funktionen zur Verfügung, in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Kern-Editor.|  
+|[Editor-Funktionen](https://msdn.microsoft.com/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|Beschreibt die Funktionen zur Verfügung, in der [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] -Kern-Editor.|  
   
 ## <a name="reference"></a>Referenz  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>  

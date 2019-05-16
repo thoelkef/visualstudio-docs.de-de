@@ -16,21 +16,21 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a2c8d54b1625a4097d6b5a0acf6555d74fe83001
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0e2ad3b2d89db83d3b9fa38438abdbde61e72bfe
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116601"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681391"
 ---
 # <a name="encapsulate-field-refactoring-c"></a>Refactoring „Feld kapseln“ (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Die **Feld kapseln** Umgestaltungsvorgang können Sie schnell eine Eigenschaft aus einem vorhandenen Feld erstellen und den Code dann nahtlos mit Verweisen auf die neue Eigenschaft zu aktualisieren.  
   
- Wenn eine [Feld](http://msdn.microsoft.com/library/3cbb2f61-75f8-4cce-b4ef-f5d1b3de0db7) ist [öffentliche](http://msdn.microsoft.com/library/0ae45d16-a551-4b74-9845-57208de1328e), andere Objekte haben Sie direkten Zugriff auf dieses Feld, und können es ändern das Objekt, das dieses Feld besitzt. Mithilfe von [Eigenschaften](http://msdn.microsoft.com/library/e295a8a2-b357-4ee7-a12e-385a44146fa8) um das Feld kapseln, können Sie den direkten Zugriff auf Felder verhindern.  
+ Wenn eine [Feld](https://msdn.microsoft.com/library/3cbb2f61-75f8-4cce-b4ef-f5d1b3de0db7) ist [öffentliche](https://msdn.microsoft.com/library/0ae45d16-a551-4b74-9845-57208de1328e), andere Objekte haben Sie direkten Zugriff auf dieses Feld, und können es ändern das Objekt, das dieses Feld besitzt. Mithilfe von [Eigenschaften](https://msdn.microsoft.com/library/e295a8a2-b357-4ee7-a12e-385a44146fa8) um das Feld kapseln, können Sie den direkten Zugriff auf Felder verhindern.  
   
- Zum Erstellen der neuen Eigenschaft der **Feld kapseln** -Vorgang ändert sich den Zugriffsmodifizierer für das Feld, das Sie zum kapseln möchten [private](http://msdn.microsoft.com/library/654c0bb8-e6ac-4086-bf96-7474fa6aa1c8), und generiert dann [erhalten](http://msdn.microsoft.com/library/a52de048-fbe0-41b0-82ec-8e4ac04d3a71)und [festgelegt](http://msdn.microsoft.com/library/30d7e4e5-cc2e-4635-a597-14a724879619) Accessor für das Feld. In einigen Fällen wird nur ein `get`-Accessor generiert, beispielsweise wenn das Feld schreibgeschützt deklariert wird.  
+ Zum Erstellen der neuen Eigenschaft der **Feld kapseln** -Vorgang ändert sich den Zugriffsmodifizierer für das Feld, das Sie zum kapseln möchten [private](https://msdn.microsoft.com/library/654c0bb8-e6ac-4086-bf96-7474fa6aa1c8), und generiert dann [erhalten](https://msdn.microsoft.com/library/a52de048-fbe0-41b0-82ec-8e4ac04d3a71)und [festgelegt](https://msdn.microsoft.com/library/30d7e4e5-cc2e-4635-a597-14a724879619) Accessor für das Feld. In einigen Fällen wird nur ein `get`-Accessor generiert, beispielsweise wenn das Feld schreibgeschützt deklariert wird.  
   
  Das Umgestaltungsmodul aktualisiert Ihren Code mit Verweisen auf die neue Eigenschaft in den Bereichen angegeben wird, der **Verweise aktualisieren** Teil der **Feld kapseln** im Dialogfeld.  
   

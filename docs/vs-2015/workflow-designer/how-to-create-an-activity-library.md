@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f41b6332aab272baed17e9955687c34803003d0b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9463e46a7341a7da5c4aa79ae477d6aa0ff0c6cc
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444566"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686645"
 ---
 # <a name="how-to-create-an-activity-library"></a>Vorgehensweise: Erstellen einer Aktivitätsbibliothek
 Benutzerdefinierte Aktivitäten werden verwendet, um bestimmte Geschäftsprozesse in einem Workflow zu modellieren. Die Vorlage Aktivitätsbibliothek in [!INCLUDE[vs2010](../includes/vs2010-md.md)] wurde bereitgestellt, damit Sie solche benutzerdefinierten Aktivitäten visuell mithilfe von [!INCLUDE[wfd1](../includes/wfd1-md.md)] erstellen können.  
@@ -48,5 +48,5 @@ Benutzerdefinierte Aktivitäten werden verwendet, um bestimmte Geschäftsprozess
     > Sie können nur eine untergeordnete Aktivität dem Text der benutzerdefinierten Aktivität hinzufügen. Diese untergeordnete Aktivität kann jedoch eine zusammengesetzte Aktivität sein, z. B. eine <xref:System.Activities.Statements.Sequence>-Aktivität oder <xref:System.Activities.Statements.Flowchart>-Aktivität.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Vorgehensweise: Erstellen einer Aktivität](http://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
+ [Vorgehensweise: Erstellen einer Aktivität](https://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
  [Erstellen eines Workflowprojekts](../workflow-designer/creating-a-workflow-project.md)

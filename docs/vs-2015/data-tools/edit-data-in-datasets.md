@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9962bb1dbeef089d409cbe100daa37777b45e67d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7cbc9519c86b2bf4967e567b29355eb6d8a176a4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425389"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699769"
 ---
 # <a name="edit-data-in-datasets"></a>Bearbeiten von Daten in Datasets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "63425389"
  [!code-vb[VbRaddataEditing#5](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#5)]  
   
 ## <a name="to-insert-new-rows-into-a-dataset"></a>Um neue Zeilen in ein Dataset einfügen  
- Anwendungen, die von datengebundenen Steuerelementen in der Regel verwenden neue Datensätze durch Hinzufügen der **Add New** Schaltfläche eine [BindingNavigator-Steuerelement](http://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e).  
+ Anwendungen, die von datengebundenen Steuerelementen in der Regel verwenden neue Datensätze durch Hinzufügen der **Add New** Schaltfläche eine [BindingNavigator-Steuerelement](https://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e).  
   
  Um neue Datensätze zu einem Dataset manuell hinzuzufügen, erstellen Sie eine neue Datenzeile durch Aufrufen der Methode in der DataTable-Objekt. Klicken Sie dann die Zeile zum Hinzufügen der <xref:System.Data.DataRow> Auflistung (<xref:System.Data.DataTable.Rows%2A>) von der <xref:System.Data.DataTable>:  
   
@@ -79,7 +79,7 @@ ms.locfileid: "63425389"
   
 - Jede geänderte Datenzeile enthält mehrere Versionen der Zeile (<xref:System.Data.DataRowVersion>), die Originalversion (vor der Änderung), und die aktuelle Version (nach der Änderung). Während des Zeitraums, wenn eine Änderung aussteht (die Zeit, wenn Sie auf reagieren, die <xref:System.Data.DataTable.RowChanging> Ereignis), eine dritte Version – die vorläufige Version – ist ebenfalls verfügbar.
   
-  Wenn das Dataset geändert wurde, gibt die <xref:System.Data.DataSet.HasChanges%2A>-Methode eines Datasets den Wert `true` zurück. Nachdem festgestellt wurde, dass geänderte Zeilen vorhanden sind, können Sie die `GetChanges`-Methode eines <xref:System.Data.DataSet> oder einer <xref:System.Data.DataTable> aufrufen, um die Gruppe der geänderten Zeilen zurückzugeben. Weitere Informationen finden Sie unter [Vorgehensweise: Abrufen von geänderten Zeilen](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
+  Wenn das Dataset geändert wurde, gibt die <xref:System.Data.DataSet.HasChanges%2A>-Methode eines Datasets den Wert `true` zurück. Nachdem festgestellt wurde, dass geänderte Zeilen vorhanden sind, können Sie die `GetChanges`-Methode eines <xref:System.Data.DataSet> oder einer <xref:System.Data.DataTable> aufrufen, um die Gruppe der geänderten Zeilen zurückzugeben. Weitere Informationen finden Sie unter [Vorgehensweise: Abrufen von geänderten Zeilen](https://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
   
 #### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>Um festzustellen, ob Änderungen an den Zeilen vorgenommen wurden  
   

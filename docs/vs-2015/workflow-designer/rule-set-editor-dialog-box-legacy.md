@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d3827ef20ae5eb67c1052b6c7f6147d736013490
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 862842bd41762b15a38254c9d5e21bf06cdca10a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438885"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703196"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Dialogfeld "Regelsatz-Editor" (Vorgängerversion)
 In diesem Thema wird beschrieben, wie die **Regelsatz-Editor** Dialogfeld in der Vorgängerversion [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../includes/wfd2-md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] oder [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] abzielen möchten.  
@@ -76,7 +76,7 @@ In diesem Thema wird beschrieben, wie die **Regelsatz-Editor** Dialogfeld in der
   
   Ausdrucksoperatorvorrang folgt C#-Operator-Vorrangregeln.  
   
-  Weitere Informationen zu Bedingungen finden Sie unter [Using Conditions in Workflows](http://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77).  
+  Weitere Informationen zu Bedingungen finden Sie unter [Using Conditions in Workflows](https://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77).  
   
 ### <a name="halt-and-update-functions"></a>Halt-Funktion und Update-Funktion  
  **Then-Aktionen:** und **Else-Aktionen:** Ausdrücke unterstützen **anhalten** und **Update** Funktionen. Verwenden der **anhalten** funktionieren, geben Sie **anhalten** in einer **Then-Aktion:** oder **Else-Aktion:** Textfeld. Die **anhalten** Aktion bewirkt sofort beendet, und die Steuerung an den aufrufenden Code zurückgibt. Sie verwenden die **Update** -Funktion mit vorwärtsverketten.  

@@ -20,12 +20,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 27d4b1ec935444009be1f85f4c1ad95f9da91f68
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f6cee865542256906ac1685b937da0e63327a97d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425499"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694857"
 ---
 # <a name="pass-data-between-forms"></a>Übergeben von Daten zwischen Formularen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Diese exemplarische Vorgehensweise enthält eine Schritt-für-Schritt-Anleitung 
   
 - Erstellen eines neuen **Windows-Anwendung** Projekt.  
   
-- Erstellen und Konfigurieren eines Datasets mithilfe der [Assistenten zur Datenquellenkonfiguration](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
+- Erstellen und Konfigurieren eines Datasets mithilfe der [Assistenten zur Datenquellenkonfiguration](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
   
 - Auswählen des Steuerelements, das für das Formular erstellt werden soll, wenn Elemente aus dem **Datenquellenfenster** gezogen werden. Weitere Informationen finden Sie unter [legen Sie das Steuerelement erstellt werden, beim Ziehen aus Datenquellenfenster](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
@@ -64,7 +64,7 @@ Diese exemplarische Vorgehensweise enthält eine Schritt-für-Schritt-Anleitung 
   
 2. Benennen Sie das Projekt mit `PassingDataBetweenForms`.  
   
-3. Wählen Sie **Windows Forms-Anwendung**, und klicken Sie auf **OK**. Weitere Informationen finden Sie unter [Clientanwendungen](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Wählen Sie **Windows Forms-Anwendung**, und klicken Sie auf **OK**. Weitere Informationen finden Sie unter [Clientanwendungen](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      Das Projekt **PassingDataBetweenForms** wird erstellt und zum **Projektmappen-Explorer** hinzugefügt.  
   

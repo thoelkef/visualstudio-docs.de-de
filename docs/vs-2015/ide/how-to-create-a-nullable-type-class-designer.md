@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3d5e74a4384cff0a68764ffe09a37ab28460d58b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: c71c0e7f8961b5f7c545fb59597cdd173230fc08
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422812"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680503"
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Vorgehensweise: Erstellen eines Typs, der NULL-Werte zulässt (Klassen-Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Bestimmte Werttypen verfügen nicht immer über einen definierten Wert oder ben�
   
   Der Klassen-Designer zeigt einen Nullable-Typ so an wie den zugrunde liegenden Typ.  
   
-  Weitere Informationen zu Typen in Visual C# finden Sie unter [Typen, die NULL-Werte zulassen](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6). Weitere Informationen zu Nullable-Typen in Visual Basic finden Sie unter [Auf NULL festlegbare Werttypen](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6).  
+  Weitere Informationen zu Typen in Visual C# finden Sie unter [Typen, die NULL-Werte zulassen](https://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6). Weitere Informationen zu Nullable-Typen in Visual Basic finden Sie unter [Auf NULL festlegbare Werttypen](https://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6).  
   
   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
@@ -83,7 +83,7 @@ Bestimmte Werttypen verfügen nicht immer über einen definierten Wert oder ben�
   
 ## <a name="see-also"></a>Siehe auch  
  <xref:System.Nullable%601>   
- [Typen, die NULL-Werte zulassen](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6)   
- [Verwenden von auf NULL festlegbaren Typen](http://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28)   
- [Vorgehensweise: Identifizieren eines Typs, der NULL-Werte zulässt](http://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387)   
- [Auf NULL festlegbare Werttypen](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)
+ [Typen, die NULL-Werte zulassen](https://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6)   
+ [Verwenden von auf NULL festlegbaren Typen](https://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28)   
+ [Vorgehensweise: Identifizieren eines Typs, der NULL-Werte zulässt](https://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387)   
+ [Auf NULL festlegbare Werttypen](https://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)

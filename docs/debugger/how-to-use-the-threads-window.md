@@ -52,7 +52,7 @@ Erstellen Sie das folgende Multithread-app-Projekt in diesem Tutorial verwenden:
     Geben Sie einen Namen wie **MyThreadWalkthroughApp ein** , und klicken Sie auf **OK**.
     ::: moniker-end
 
-    Wenn die Vorlage **Konsolen-App** nicht angezeigt wird, öffnen Sie unter **Tools** > **Tools und Features abrufen...** den Visual Studio-Installer. Wählen Sie die Workload **.NET-Desktopentwicklung*** oder **Desktopentwicklung mit C++** und anschließend **Ändern** aus.
+    Wenn die Vorlage **Konsolen-App** nicht angezeigt wird, öffnen Sie unter **Tools** > **Tools und Features abrufen...** den Visual Studio-Installer. Wählen Sie die Workload **.NET-Desktopentwicklung** oder **Desktopentwicklung mit C++** und anschließend **Ändern** aus.
 
     Das neue Projekt wird im **Projektmappen-Explorer**, und eine Quelldatei namens *"Program.cs"* oder *MyThreadWalkthroughApp.cpp* wird im Quellcodefenster geöffnet.
 

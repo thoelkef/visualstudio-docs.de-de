@@ -18,12 +18,12 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 194dae93e3a013da366d454582b531a2cc4ff8b6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1fe975fedb8237762d7dadffceff22203dcb899e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096334"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696390"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Vorgehensweise: Problembehandlung bei nicht erfolgreichen Visual Studio-Projektupgrades
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,4 +57,4 @@ Manchmal kann ein Projekt von Visual Studio nicht vollständig von einer früher
    Wenn das Projekt in der aktualisierten [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]-Version ausgeführt werden soll, müssen Sie die Verweise auf das Projekt und auch sämtliche `Imports`-Anweisungen oder `Using`-Anweisungen aktualisieren, die die Verweise aufrufen. Wenn das Projekt in der IDE geladen wird, können Sie die Verweise mithilfe des **Projektmappen-Explorers** oder des Dialogfelds **Verweis-Manager** aktualisieren.
 
 ## <a name="see-also"></a>Siehe auch
- [/ Upgrade (devenv.exe)](../ide/reference/upgrade-devenv-exe.md) [konvertieren in ASP.NET 4](http://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)
+ [/ Upgrade (devenv.exe)](../ide/reference/upgrade-devenv-exe.md) [konvertieren in ASP.NET 4](https://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)

@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ea5433fc1dd12c759faa31599be029f1ba569db1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e3b07c7c1009b4f8c9f3d92ccb611e3b64319d19
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648951"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703264"
 ---
 # <a name="xml-editor-components"></a>Komponenten des XML-Editors
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ In diesem Abschnitt werden die Fenster und Dialogfelder im XML-Editor behandelt.
  In diesem Abschnitt wird das Auswählen der XML-Schemas erläutert, die dem XML-Dokument zugeordnet werden sollen.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
- [Vorgehensweise: Festlegen allgemeiner Editor-Optionen](http://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2)  
+ [Vorgehensweise: Festlegen allgemeiner Editor-Optionen](https://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2)  
  In diesem Abschnitt wird beschrieben, wie die allgemeinen Einstellungen, z. B. die Anzeige, das Vervollständigen von Anweisungen usw. festgelegt werden.  
   
 ## <a name="see-also"></a>Siehe auch  

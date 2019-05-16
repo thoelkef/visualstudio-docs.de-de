@@ -11,17 +11,17 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a7a27b2744247bba78575b0387a958bda5990d8c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c839350dd37f71d4f3368e077f4d9afe1b2bb2f4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071615"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701929"
 ---
 # <a name="walkthrough-binding-to-data-in-xaml-designer"></a>Exemplarische Vorgehensweise: Binden an Daten im XAML-Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Im XAML-Designer können Sie Datenbindungseigenschaften einstellen, indem sie die Zeichenfläche und das Eigenschaftenfenster benutzen. In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Daten an ein Steuerelement gebunden werden. Die exemplarische Vorgehensweise zeigt insbesondere, wie eine einfache Einkaufswagenklasse erstellt wird, die über eine [DependencyProperty](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.dependencyproperty.aspx) mit der Bezeichnung `ItemCount` verfügt, und wie die Eigenschaft `ItemCount` an die Eigenschaft **Text** eines [TextBlock](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx)-Steuerelements gebunden wird.  
+Im XAML-Designer können Sie Datenbindungseigenschaften einstellen, indem sie die Zeichenfläche und das Eigenschaftenfenster benutzen. In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Daten an ein Steuerelement gebunden werden. Die exemplarische Vorgehensweise zeigt insbesondere, wie eine einfache Einkaufswagenklasse erstellt wird, die über eine [DependencyProperty](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.dependencyproperty.aspx) mit der Bezeichnung `ItemCount` verfügt, und wie die Eigenschaft `ItemCount` an die Eigenschaft **Text** eines [TextBlock](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx)-Steuerelements gebunden wird.  
   
 ### <a name="to-create-a-class-to-use-as-a-data-source"></a>So erstellen Sie eine Klasse zur Verwendung als Datenquelle  
   
@@ -66,7 +66,7 @@ Im XAML-Designer können Sie Datenbindungseigenschaften einstellen, indem sie di
     End Class  
     ```  
   
-     Durch diesen Code wird der Wert „0“ (null) als Standardelementanzahl mithilfe des [PropertyMetadata](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.propertymetadata.aspx)-Objekts festgelegt.  
+     Durch diesen Code wird der Wert „0“ (null) als Standardelementanzahl mithilfe des [PropertyMetadata](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.propertymetadata.aspx)-Objekts festgelegt.  
   
 5. Klicken Sie im Menü **Datei** auf die Option **Erstellen** und dann auf **Projektmappe erstellen**.  
   
@@ -74,7 +74,7 @@ Im XAML-Designer können Sie Datenbindungseigenschaften einstellen, indem sie di
   
 1. Öffnen Sie im Projektmappen-Explorer das Kontextmenü für „MainWindow.xaml“, und klicken Sie auf **Ansicht-Designer**.  
   
-2. Klicken Sie in der Toolbox auf ein [Raster](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx)-Steuerelement, um es dem Formular hinzuzufügen.  
+2. Klicken Sie in der Toolbox auf ein [Raster](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx)-Steuerelement, um es dem Formular hinzuzufügen.  
   
 3. Wenn Sie `Grid` ausgewählt haben, klicken Sie im Eigenschaftenfenster auf **Neu** neben der **DataContext**-Eigenschaft.  
   
@@ -100,4 +100,4 @@ Im XAML-Designer können Sie Datenbindungseigenschaften einstellen, indem sie di
   
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen einer Benutzeroberfläche mit dem XAML-Designer](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)   
- [NIB: Wertkonverter Dialogfeld "hinzufügen"](http://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)
+ [NIB: Wertkonverter Dialogfeld "hinzufügen"](https://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)
