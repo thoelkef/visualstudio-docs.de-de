@@ -1,6 +1,6 @@
 ---
 title: 'CA2213: Verwerfbare Felder verwerfen.'
-ms.date: 11/05/2018
+ms.date: 05/14/2019
 ms.topic: reference
 f1_keywords:
 - DisposableFieldsShouldBeDisposed
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fff209c9a432b78ce27e9c344c1afd29e93d57f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b38157fcc23561b47a919151aa78a71f98b3909b
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806679"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65804997"
 ---
 # <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213: Verwerfbare Felder verwerfen.
 
@@ -36,10 +36,21 @@ Ein Typ, der implementiert <xref:System.IDisposable?displayProperty=fullName> de
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Ein Typ ist verantwortlich für das Verwerfen von alle nicht verwalteten Ressourcen. CA2213 überprüft, ob ein von einem verwerfbaren Typ auszuschließen (d. h. eine, die implementiert <xref:System.IDisposable>) `T` deklariert ein Feld `F` d. h. eine Instanz eines verwerfbaren Typs `FT`. Für jedes Feld `F` zugewiesen, die ein lokal erstelltes Objekt in den Methoden oder -Initialisierer des enthaltenden Typs `T`, der Regel wird versucht, einen Aufruf von `FT.Dispose`. Die Regel durchsucht, die vom aufgerufenen Methoden `T.Dispose` und die Ebene darunter (d. h. die Methoden, die aufgerufen werden, durch die Methoden aufgerufen werden, indem `FT.Dispose`).
+Ein Typ ist verantwortlich für das Verwerfen von alle nicht verwalteten Ressourcen. CA2213 überprüft, ob ein von einem verwerfbaren Typ auszuschließen (d. h. eine, die implementiert <xref:System.IDisposable>) `T` deklariert ein Feld `F` d. h. eine Instanz eines verwerfbaren Typs `FT`. Für jedes Feld `F` zugewiesen, die ein lokal erstelltes Objekt in den Methoden oder -Initialisierer des enthaltenden Typs `T`, der Regel wird versucht, einen Aufruf von `FT.Dispose`. Die Regel durchsucht, die vom aufgerufenen Methoden `T.Dispose` und die Ebene darunter (d. h. die Methoden, die aufgerufen werden, durch die Methoden aufgerufen werden, indem `T.Dispose`).
 
 > [!NOTE]
-> CA2213 der Regel wird ausgelöst, nur für Felder, die lokal erstelltes verwerfbares Objekt innerhalb von Methoden und den Initialisierer des enthaltenden Typs zugewiesen werden. Wenn das Objekt erstellt wird, oder außerhalb von Typ zugewiesen `T`, die Regel wird nicht ausgelöst. Dies verringert Störungen für Fälle, in dem der enthaltende Typ die Verantwortung für das Verwerfen des Objekts besitzt.
+> Anders als die [Sonderfälle](#special-cases), Regel CA2213 ausgelöst wird, nur für Felder, die lokal erstelltes verwerfbares Objekt innerhalb von Methoden und den Initialisierer des enthaltenden Typs zugewiesen werden. Wenn das Objekt erstellt wird, oder außerhalb von Typ zugewiesen `T`, die Regel wird nicht ausgelöst. Dies verringert Störungen für Fälle, in dem der enthaltende Typ die Verantwortung für das Verwerfen des Objekts besitzt.
+
+### <a name="special-cases"></a>Sonderfälle
+
+Regel CA2213 kann auch für Felder der folgenden Typen ausgelöst werden, auch wenn das Objekt, das sie zugewiesen sind nicht lokal erstellt wird:
+
+- <xref:System.IO.Stream?displayProperty=nameWithType>
+- <xref:System.IO.TextReader?displayProperty=nameWithType>
+- <xref:System.IO.TextWriter?displayProperty=nameWithType>
+- <xref:System.Resources.IResourceReader?displayProperty=nameWithType>
+
+Gibt ein Objekt von einem dieser Typen an einen Konstruktor zu übergeben, und klicken Sie dann auf ein Feld Zuweisen einer *dispose Übertragung des Abonnementbesitzes* in den neu erstellten Typ. Der neu erstellte Typ ist, also jetzt verantwortlich für das Verwerfen des Objekts. Wenn das Objekt nicht verworfen wird, tritt ein, zu eine Verletzung der CA2213.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
@@ -47,7 +58,10 @@ Um einen Verstoß gegen diese Regel zu beheben, rufen <xref:System.IDisposable.D
 
 ## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
 
-Es ist sicherer, die mit dieser Regel eine Warnung zu unterdrücken, wenn Sie nicht zuständig sind, für die Ressource freigegeben, die nach dem Feld gespeichert wird, oder wenn der Aufruf von <xref:System.IDisposable.Dispose%2A> tritt auf, auf einer tieferen aufrufenden Ebene als die Regel überprüft.
+Es ist sicher, um eine Warnung dieser Regel zu unterdrücken, falls:
+
+- Der markierten Typ ist nicht verantwortlich für die Ressource freigegeben, die nach dem Feld gespeichert (d. h. der Typ verfügt nicht über *verwerfen Sie den Besitz*)
+- Der Aufruf von <xref:System.IDisposable.Dispose%2A> tritt auf, auf einer tieferen aufrufenden Ebene als die regelüberprüfungen
 
 ## <a name="example"></a>Beispiel
 
