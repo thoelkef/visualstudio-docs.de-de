@@ -1,6 +1,6 @@
 ---
 title: 'CA2000: Objekte verwerfen, bevor Bereich verloren geht.'
-ms.date: 11/04/2016
+ms.date: 05/14/2019
 ms.topic: reference
 f1_keywords:
 - CA2000
@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b986e5219c1e8d437651feebeec09eb4ca3dd5cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 732b3d683802c50042ee40fee1549a9d247e2470
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545406"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65804976"
 ---
 # <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: Objekte verwerfen, bevor Bereich verloren geht.
 
@@ -35,44 +35,59 @@ ms.locfileid: "62545406"
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
- Es wird ein lokales Objekt eines <xref:System.IDisposable>-Typs erstellt. Das Objekt wird jedoch erst verworfen, nachdem sich alle Verweise auf das Objekt außerhalb des gültigen Bereichs befinden.
+
+Ein lokales Objekt ein <xref:System.IDisposable> Typ erstellt wird, aber das Objekt ist nicht freigegeben werden, bevor alle Verweise auf das Objekt außerhalb des gültigen Bereichs liegen.
 
 ## <a name="rule-description"></a>Regelbeschreibung
- Wenn ein verwerfbares Objekt nicht explizit verworfen wird, bevor alle Verweise darauf außerhalb des gültigen Bereichs liegen, wird das Objekt zu einer unbestimmten Zeit verworfen, wenn der Garbage Collector den Finalizer des Objekts ausführt. Da möglicherweise ein Ausnahmeereignis auftritt, durch das die Ausführung des Finalizers des Objekts verhindert wird, muss das Objekt stattdessen explizit verworfen werden.
+
+Wenn ein verwerfbares Objekt nicht explizit verworfen wird, bevor alle Verweise darauf außerhalb des gültigen Bereichs liegen, wird das Objekt zu einer unbestimmten Zeit verworfen, wenn der Garbage Collector den Finalizer des Objekts ausführt. Da möglicherweise ein Ausnahmeereignis auftritt, durch das die Ausführung des Finalizers des Objekts verhindert wird, muss das Objekt stattdessen explizit verworfen werden.
+
+### <a name="special-cases"></a>Sonderfälle
+
+Regel CA2000 wird für lokale Objekte der folgenden Typen nicht ausgelöst, selbst wenn das Objekt nicht verworfen wird:
+
+- <xref:System.IO.Stream?displayProperty=nameWithType>
+- <xref:System.IO.TextReader?displayProperty=nameWithType>
+- <xref:System.IO.TextWriter?displayProperty=nameWithType>
+- <xref:System.Resources.IResourceReader?displayProperty=nameWithType>
+
+Gibt ein Objekt von einem dieser Typen an einen Konstruktor zu übergeben, und klicken Sie dann auf ein Feld Zuweisen einer *dispose Übertragung des Abonnementbesitzes* in den neu erstellten Typ. Der neu erstellte Typ ist, also jetzt verantwortlich für das Verwerfen des Objekts. Wenn Ihr Code ein Objekt von einem dieser Typen an einen Konstruktor erfolgreich ist, sind keine Verletzung der Regel, dass CA2000 tritt auf, auch wenn das Objekt nicht, bevor alle Verweise darauf verworfen wird außerhalb des gültigen Bereichs.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, rufen Sie <xref:System.IDisposable.Dispose%2A> für das Objekt auf, bevor sich alle Verweise darauf außerhalb des gültigen Bereichs befinden.
 
- Beachten Sie, dass Sie die `using`-Anweisung (`Using` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) zum Umschließen von Objekten verwenden können, die `IDisposable` implementieren. Auf diese Weise umschlossene Objekte werden zum Abschluss des `using`-Blocks automatisch verworfen.
+Um einen Verstoß gegen diese Regel zu beheben, rufen Sie <xref:System.IDisposable.Dispose%2A> für das Objekt auf, bevor sich alle Verweise darauf außerhalb des gültigen Bereichs befinden.
 
- Im Folgenden werden einige Situationen beschrieben, in denen die using-Anweisung nicht zum Schutz von IDisposable-Objekten ausreicht und bewirken kann, dass CA2000 ausgelöst wird.
+Sie können die [ `using` Anweisung](/dotnet/csharp/language-reference/keywords/using-statement) ([ `Using` ](/dotnet/visual-basic/language-reference/statements/using-statement) in Visual Basic) zum Umschließen von Objekten, die implementieren <xref:System.IDisposable>. Objekte, die auf diese Weise umschlossen werden automatisch freigegeben werden, am Ende der `using` Block. Jedoch die folgenden Situationen nicht oder kann nicht verarbeitet werden, mit einem `using` Anweisung:
 
-- Um ein verwerfbares Objekt zurückzugeben, ist es erforderlich, dass das Objekt in einem try/finally-Block außerhalb eines using-Blocks erstellt ist.
+- Um ein verwerfbares Objekt zurückzugeben, muss das Objekt erstellt, eine `try/finally` -Block außerhalb einer `using` Block.
 
-- Die Member eines verwerfbaren Objekts sollten nicht im Konstruktor einer using-Anweisung initialisiert werden.
+- Nicht Mitglieder verwerfbares Objekt im Konstruktor Initialisieren einer `using` Anweisung.
 
-- Das Schachteln von Konstruktoren, die nur von einem Ausnahmehandler geschützt sind. Ein auf ein Objekt angewendeter
+- Bei Konstruktoren, die von nur einem Ausnahmehandler geschützt sind geschachtelt sind, der [Teil der Übernahme einer `using` Anweisung](/dotnet/csharp/language-reference/language-specification/statements#the-using-statement), ein Fehler in der äußeren Konstruktor kann dazu führen, das nie vom geschachtelten Konstruktor erstellte Objekt geschlossen wird. Im folgenden Beispiel einen Fehler in der <xref:System.IO.StreamReader> Konstruktor kann dazu führen, die <xref:System.IO.FileStream> Objekt nie geschlossen wird. CA2000 kennzeichnet einen Verstoß gegen die Regel in diesem Fall aus.
 
-    ```csharp
-    using (StreamReader sr = new StreamReader(new FileStream("C:\myfile.txt", FileMode.Create)))
-    { ... }
-    ```
+   ```csharp
+   using (StreamReader sr = new StreamReader(new FileStream("C:\myfile.txt", FileMode.Create)))
+   { ... }
+   ```
 
-     Dadurch wird bewirkt, dass CA2000 ausgelöst wird, da ein Fehler in der Konstruktion des StreamReader-Objekts dazu führen kann, dass das FileStream-Objekt nie geschlossen wird.
-
-- Dynamische Objekte sollten ein Schattenobjekt verwenden, um das Dispose-Muster von IDisposable-Objekten zu implementieren.
+- Dynamische Objekte sollten ein Schattenobjekt verwenden, um die Implementieren des Dispose-Musters von <xref:System.IDisposable> Objekte.
 
 ## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Unterdrücken Sie keine Warnung dieser Regel, es sei denn, Sie haben eine Methode für das Objekt aufgerufen, die `Dispose` aufruft, zum Beispiel <xref:System.IO.Stream.Close%2A>, oder die Methode, durch die die Warnung ausgelöst wurde, gibt ein IDisposable-Objekt zurück, das das Objekt umschließt.
+
+Unterdrücken Sie keine Warnung dieser Regel, es sei denn:
+
+- Sie haben eine Methode aufgerufen wird, auf das Objekt, das Aufrufe `Dispose`, z. B. <xref:System.IO.Stream.Close%2A>
+- Die Methode, die der Rückgabe der Warnung wird ausgelöst, eine <xref:System.IDisposable> Objekt, das das Objekt umschließt.
+- Zuweisen von Methode Dispose Besitz keinen; d. h. dafür verantwortlich, die das Objekt verwerfen übertragen wird, zu einem anderen Objekt oder einen Wrapper, die in der Methode erstellt und an den Aufrufer zurückgegeben
 
 ## <a name="related-rules"></a>Verwandte Regeln
- [CA2213: Verwerfbare Felder verwerfen](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
 
- [CA2202: Objekte nicht mehrmals verwerfen](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)
+- [CA2213: Verwerfbare Felder verwerfen](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
+- [CA2202: Objekte nicht mehrmals verwerfen](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)
 
 ## <a name="example"></a>Beispiel
 
-Wenn Sie eine Methode implementieren, die ein verwerfbares Objekt zurückgibt, verwenden Sie einen try/finally-Block ohne einen catch-Block, um sicherzustellen, dass das Objekt verworfen wird. Mit einem try/finally-Block lassen Sie Ausnahmen zu, die am Fehlerpunkt ausgelöst werden sollen, und stellen sicher, dass das Objekt verworfen wird.
+Wenn Sie eine Methode, die ein verwerfbares Objekt zurückgibt implementieren, verwenden Sie einen Try/finally-Block ohne einen Catch-Block, um sicherzustellen, dass das Objekt verworfen wird. Mit einem try/finally-Block lassen Sie Ausnahmen zu, die am Fehlerpunkt ausgelöst werden sollen, und stellen sicher, dass das Objekt verworfen wird.
 
 In der OpenPort1-Methode kann der Aufruf zum Öffnen des SerialPorts des ISerializable-Objekts oder der Aufruf von SomeMethod fehlschlagen. Eine CA2000-Warnung wird für diese Implementierung ausgelöst.
 
@@ -156,13 +171,14 @@ End Function
 ```
 
 ## <a name="example"></a>Beispiel
- Standardmäßig überprüft der [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-Compiler auf Überläufe mit allen arithmetischen Operatoren. Daher kann jede arithmetische Visual Basic-Operation eine <xref:System.OverflowException> auslösen. Dies kann zu unerwarteten Regelverletzungen führen, z. B. CA2000. Die folgende CreateReader1-Funktion erzeugt z. B. eine CA2000-Verletzung, da der Visual Basic-Compiler einen Befehl zur Überlaufprüfung für die Hinzufügung ausgibt, die eine Ausnahme auslösen könnte, durch die der StreamReader nicht verworfen werden würde.
 
- Um dieses zu korrigieren, können Sie das Ausgeben von Überlaufprüfungen durch den Visual Basic-Compiler im Projekt deaktivieren, oder Sie können den Code entsprechend der folgenden CreateReader2-Funktion ändern.
+Standardmäßig verfügt Visual Basic-Compiler alle arithmetische Operatoren, die auf Überläufe zu überprüfen. Daher kann jede arithmetische Visual Basic-Operation eine <xref:System.OverflowException> auslösen. Dies kann zu unerwarteten Regelverletzungen führen, z. B. CA2000. Die folgende CreateReader1-Funktion erzeugt z. B. eine CA2000-Verletzung, da der Visual Basic-Compiler einen Befehl zur Überlaufprüfung für die Hinzufügung ausgibt, die eine Ausnahme auslösen könnte, durch die der StreamReader nicht verworfen werden würde.
 
- Um das Ausgeben von überlaufprüfungen zu deaktivieren, mit der rechten Maustaste des Projektnamen im Projektmappen-Explorer, und klicken Sie dann auf **Eigenschaften**. Klicken Sie auf **Kompilieren**, klicken Sie auf **Advanced Compile Options**, und überprüfen Sie dann **Überprüfungen auf Ganzzahlüberlauf entfernen**.
+Um dieses zu korrigieren, können Sie das Ausgeben von Überlaufprüfungen durch den Visual Basic-Compiler im Projekt deaktivieren, oder Sie können den Code entsprechend der folgenden CreateReader2-Funktion ändern.
 
-  [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../code-quality/codesnippet/VisualBasic/ca2000-dispose-objects-before-losing-scope-vboverflow_1.vb)]
+Um das Ausgeben von überlaufprüfungen zu deaktivieren, mit der rechten Maustaste des Projektnamen im Projektmappen-Explorer, und klicken Sie dann auf **Eigenschaften**. Klicken Sie auf **Kompilieren**, klicken Sie auf **Advanced Compile Options**, und überprüfen Sie dann **Überprüfungen auf Ganzzahlüberlauf entfernen**.
+
+[!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../code-quality/codesnippet/VisualBasic/ca2000-dispose-objects-before-losing-scope-vboverflow_1.vb)]
 
 ## <a name="see-also"></a>Siehe auch
 
