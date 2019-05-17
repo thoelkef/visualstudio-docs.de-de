@@ -8,12 +8,12 @@ ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ba6fce72e3e27fbba9f8abdb424dabb778bd270c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 67dd005eee2f186e92743fa11957ab5fb4db8fb7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440409"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687035"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -820,7 +820,7 @@ some F# code
 
 ### <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-Die Common Language Runtime-API, finden Sie unter [Windows-Hilfe-API-](http://msdn.microsoft.com/library/windows/desktop/hh447318\(v=vs.85\).aspx).
+Die Common Language Runtime-API, finden Sie unter [Windows-Hilfe-API-](https://msdn.microsoft.com/library/windows/desktop/hh447318\(v=vs.85\).aspx).
 
 Weitere Informationen zum Nutzen der Hilfe-API finden Sie unter [Hilfe-Viewer-Codebeispiele](http://visualstudiogallery.msdn.microsoft.com/f08f296f-7076-4aec-8da3-8f0fbe04461e).
 
