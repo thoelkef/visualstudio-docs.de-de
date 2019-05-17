@@ -12,9 +12,9 @@
     - name: Tutorials
       expanded: true
       items:
-        - name: 'Tutorial: Multicontainer-App mit Docker Compose'
+        - name: Multicontainer-App mit Docker Compose
           href: tutorial-multicontainer.md
-        - name: 'Tutorial: Kubernetes in Visual Studio'
+        - name: Kubernetes in Visual Studio
           href: tutorial-kubernetes-tools.md
     - name: Gewusst wie
       items:
@@ -24,6 +24,8 @@
           href: hosting-web-apps-in-docker.md
         - name: Bereitstellen in Azure App Service
           href: deploy-app-service.md
+        - name: Anzeigen und Diagnostizieren von Containern
+          href: view-and-diagnose-containers.md
         - name: Konfigurieren von Containertools
           href: container-tools-configure.md
     - name: Problembehandlung
