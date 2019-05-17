@@ -12,10 +12,11 @@
 ### [Herunterladen von Software](subscriber-downloads.md)
 #### [Liste der verfügbaren Softwaredownloads](software-download-list.md)
 ### [Abrufen & Verwalten von Product Keys](product-keys.md)
+### [Visual Studio mit GitHub Enterprise](access-github.md)
+### [Vorteile für Abonnenten](subscriber-benefits.md)
 ### Visual Studio Dev Essentials
 #### [Einstieg in Visual Studio Dev Essentials](join-dev-essentials.md)
 #### [Kündigen vom Visual Studio Dev Essentials-Abonnement](leave-vsde.md)
-### [Vorteile für Abonnenten](subscriber-benefits.md)
 ## Nutzen der Vorteile für Abonnenten
 ### Tools
 #### [Visual Studio-IDE](vs-ide-benefit.md)
@@ -72,6 +73,7 @@
 #### [Maximale Nutzung](maximum-usage.md)
 #### [Abgelaufene Abonnements](handle-expired-license.md)
 #### [Abonnenten mit privaten E-Mail-Anmeldungen](personal-email-sign-ins.md)
+### [Verwalten von Visual Studio mit GitHub Enterprise](assign-github.md)
 ## Erwerben von Visual Studio-Abonnements
 ### [Vergleich von Abonnementoptionen](https://visualstudio.microsoft.com/vs/pricing)
 ### Kaufen von Cloudabonnements
