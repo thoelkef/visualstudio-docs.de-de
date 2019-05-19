@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2daf2713175e9a512a31454ff4b76ef994bb809c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2f0b0ba39c8edee9b2b8df608b47a00e6353538f
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541219"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841067"
 ---
 # <a name="ca3009-review-code-for-xml-injection-vulnerabilities"></a>CA3009: Review code for XML injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen von XML-Befehlen)
 
@@ -40,7 +40,7 @@ Mit dieser Regel versucht beim Suchen der Eingabespalte aus HTTP-Anforderungen, 
 > Mit dieser Regel kann nicht zum Nachverfolgen von Daten in Assemblys führen. Wenn eine Assembly die Eingabe der HTTP-Anforderung liest und leitet diese dann an eine andere Assembly, die unformatierten XML-Daten schreibt, wird nicht mit dieser Regel beispielsweise eine Warnung generiert.
 
 > [!NOTE]
-> Es gibt ein konfigurierbares Limit wie deep mit dieser Regel Datenfluss Methodenaufrufe analysieren wird. Finden Sie unter [Analysekonfiguration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) zum Konfigurieren des Grenzwerts in `.editorconfig` Dateien.
+> Es gibt ein konfigurierbares Limit wie deep mit dieser Regel Datenfluss Methodenaufrufe analysieren wird. Finden Sie unter [Analysekonfiguration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) für den Grenzwert in einer EditorConfig-Datei zu konfigurieren.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
