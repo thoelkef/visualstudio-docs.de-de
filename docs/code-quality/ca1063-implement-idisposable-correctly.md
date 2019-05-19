@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 22ecfcdd6dc20f5837622ec2cc3469f11c7efa8c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f1b2c5b447d796ddd2098a6500b6094478fcd8b9
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788554"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65842005"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: IDisposable korrekt implementieren.
 
@@ -90,7 +90,7 @@ Unterdrücken Sie keine Warnung dieser Regel.
 
 Wenn Sie diese Regel aus ausführen, [FxCop-Analysen](install-fxcop-analyzers.md) (und nicht über die Analyse von statischem Code), können Sie konfigurieren, welche Teile Ihrer Codebasis, um die Ausführung dieser Regel auf, um basierend auf deren Barrierefreiheit. Z. B. um anzugeben, dass die Regel nur für die nicht öffentlichen API-Oberfläche ausgeführt werden soll, fügen Sie die folgenden Schlüssel-Wert-Paar in einer editorconfig-Datei in Ihrem Projekt:
 
-```
+```ini
 dotnet_code_quality.ca1063.api_surface = private, internal
 ```
 

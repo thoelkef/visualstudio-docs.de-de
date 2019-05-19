@@ -1,12 +1,12 @@
 ---
 ms.openlocfilehash: 29aedc73173de34723f0db846a26c82cbde64f41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62899102"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65846336"
 ---
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Vorraussetzungen
 
 ::: moniker range=">=vs-2019"
 

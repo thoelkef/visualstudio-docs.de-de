@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b794eb7c7a258a843763b2c68902000031c17eb3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ca9c4681cc19917ef965a4c8577e9559d71dd4be
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62807146"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841966"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: Bezeichner sollten ein korrektes Präfix aufweisen.
 
@@ -62,7 +62,7 @@ Wenn Sie diese Regel aus ausführen, [FxCop-Analysetools](install-fxcop-analyzer
 
 Sie können, ob Parameter vom Typ der einzelnen Zeichen dieser Regel auszuschließen oder nicht konfigurieren. Um beispielsweise anzugeben, dass diese Regel *sollte nicht* Parameter vom Typ der einzelnen Zeichen zu analysieren, fügen Sie einen der folgenden Schlüssel-Wert-Paare in einer editorconfig-Datei in Ihrem Projekt hinzu:
 
-```
+```ini
 # Package version 2.9.0 and later
 dotnet_code_quality.CA1715.exclude_single_letter_type_parameters = true
 
@@ -77,7 +77,7 @@ dotnet_code_quality.CA2007.allow_single_letter_type_parameters = true
 
 Sie können konfigurieren, welche Teile Ihrer Codebasis, um die Ausführung dieser Regel auf, um basierend auf deren Barrierefreiheit. Z. B. um anzugeben, dass die Regel nur für die nicht öffentlichen API-Oberfläche ausgeführt werden soll, fügen Sie die folgenden Schlüssel-Wert-Paar in einer editorconfig-Datei in Ihrem Projekt:
 
-```
+```ini
 dotnet_code_quality.ca1715.api_surface = private, internal
 ```
 

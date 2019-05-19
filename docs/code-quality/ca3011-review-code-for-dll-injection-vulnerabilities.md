@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a6f3a2db89e35408a19cec47c971821fedf5f85a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4c9fbb4b8b11b0fce7d3e7530eef80af19b35b73
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541141"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841030"
 ---
 # <a name="ca3011-review-code-for-dll-injection-vulnerabilities"></a>CA3011: Review code for DLL injection vulnerabilities (Überprüfen von Code auf Sicherheitsrisiken durch Einschleusungen von DLL)
 
@@ -40,7 +40,7 @@ Mit dieser Regel versucht, die Eingabe aus einer HTTP-Anforderung zu finden, die
 > Mit dieser Regel kann nicht zum Nachverfolgen von Daten in Assemblys führen. Wenn eine Assembly die Eingabe der HTTP-Anforderung liest und leitet diese dann an eine andere Assembly, die eine Assembly lädt, wird nicht mit dieser Regel beispielsweise eine Warnung generiert.
 
 > [!NOTE]
-> Es gibt ein konfigurierbares Limit wie deep mit dieser Regel Datenfluss Methodenaufrufe analysieren wird. Finden Sie unter [Analysekonfiguration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) zum Konfigurieren des Grenzwerts in `.editorconfig` Dateien.
+> Es gibt ein konfigurierbares Limit wie deep mit dieser Regel Datenfluss Methodenaufrufe analysieren wird. Finden Sie unter [Analysekonfiguration](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) für den Grenzwert in einer EditorConfig-Datei zu konfigurieren.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
