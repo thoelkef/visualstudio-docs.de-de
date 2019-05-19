@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: c86ce111674b9184e32c5764ce51233f8863abbf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "65689555"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65849206"
 ---
 Microsoft Ajax

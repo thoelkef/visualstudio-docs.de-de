@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 dev_langs:
 - CSharp
-ms.openlocfilehash: bf3e13697f39f7d0f531549d4c018b9f42872596
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3f35e450f17a671b800d003b94ceb5ebc2321c90
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545227"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841387"
 ---
 # <a name="ca2007-do-not-directly-await-a-task"></a>CA2007: Eine Aufgabe nicht direkt abwarten
 
@@ -76,7 +76,7 @@ public async Task Execute()
 
 Sie können konfigurieren, ob Sie asynchrone Methoden ausschließen, die von dieser Regel keinen Wert zurückgeben möchten. Um diese Arten von Methoden auszuschließen, fügen Sie folgenden Schlüssel-Wert-Paar in einer editorconfig-Datei in Ihrem Projekt hinzu:
 
-```
+```ini
 # Package version 2.9.0 and later
 dotnet_code_quality.CA2007.exclude_async_void_methods = true
 
@@ -86,7 +86,7 @@ dotnet_code_quality.CA2007.skip_async_void_methods = true
 
 Sie können auch konfigurieren, welche Ausgabe von Arten der Assembly, die diese Regel angewendet werden soll. Z. B. hinzufügen um diese Regel nur auf Code angewendet, die eine Konsolenanwendung oder eine dynamisch verknüpfte Bibliothek (d. h. keine UI-app), erzeugt die folgenden Schlüssel-Wert-Paar in einer editorconfig-Datei in Ihrem Projekt:
 
-```
+```ini
 dotnet_code_quality.CA2007.output_kind = ConsoleApplication, DynamicallyLinkedLibrary
 ```
 
