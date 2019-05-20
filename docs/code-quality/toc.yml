@@ -103,12 +103,10 @@
           href: using-rule-sets-to-group-code-analysis-rules.md
         - name: Regelsätze für Analysepakete
           href: analyzer-rule-sets.md
-        - name: Regelsätze für verwalteten Code
-          items:
-            - name: Regelsätze für verwalteten Code
-              href: how-to-configure-code-analysis-for-a-managed-code-project.md
-            - name: Konfigurieren der Codeanalyse für eine ASP.NET-Webanwendung
-              href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
+        - name: Konfigurieren von Regelsätzen für die statische Codeanalyse
+          href: how-to-configure-code-analysis-for-a-managed-code-project.md
+        - name: Konfigurieren der Codeanalyse für eine ASP.NET-Webanwendung
+          href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
         - name: Regelsätze für C++-Code
           href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
         - name: Erstellen eines benutzerdefinierten Regelsatzes
