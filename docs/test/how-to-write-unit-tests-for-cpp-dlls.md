@@ -1,18 +1,18 @@
 ---
 title: Schreiben von Komponententests für C++-DLLs
-ms.date: 11/04/2017
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.author: mblome
-manager: jillfra
+manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 7606f9f9b521d4bc752b99ad70237ef4ac6bc30e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ecd26aeae5e0a236bf776477ab3dca0e528e8200
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821047"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226078"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Schreiben von Komponententests für C++-DLLs in Visual Studio
 
@@ -56,7 +56,17 @@ ms.locfileid: "62821047"
 
   1. Erstellen Sie ein natives Komponententestprojekt.
 
-      1. Klicken Sie im Menü **Datei** auf **Neu** > **Projekt** > **Visual C++** > **Test** > **C++-Komponententestprojekt**.
+      ::: moniker range="vs-2019"
+
+      1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt** aus. Legen Sie im Dialogfeld **Neues Projekt hinzufügen** **Sprache** auf C++ fest, und geben Sie „test“ in das Suchfeld ein. Wählen Sie dann die Vorlage **Natives Komponententestprojekt** aus.
+
+      ::: moniker-end
+
+      ::: moniker range="vs-2017"
+
+      1. Wählen Sie im Menü **Datei** **Neu** > **Projekt** > **Visual C++** > **Test** > **C++-Komponententestprojekt** aus.
+
+      ::: moniker-end
 
   2. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für das Testprojekt, und klicken Sie auf **Verweise**. Das Projektfenster **Eigenschaften** wird geöffnet.
 
@@ -80,7 +90,17 @@ ms.locfileid: "62821047"
 
   1. Erstellen Sie ein natives Komponententestprojekt.
 
-      1. Klicken Sie im Menü **Datei** auf **Neu** > **Projekt** > **Visual C++** > **Test** > **Natives Komponententestprojekt**.
+      ::: moniker range="vs-2019"
+
+      1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt** aus. Legen Sie im Dialogfeld **Neues Projekt hinzufügen** **Sprache** auf C++ fest, und geben Sie „test“ in das Suchfeld ein. Wählen Sie dann die Vorlage **Natives Komponententestprojekt** aus.
+
+      ::: moniker-end
+      
+      ::: moniker range="vs-2017"
+
+      1. Wählen Sie im Menü **Datei** **Neu** > **Projekt** > **Visual C++** > **Test** > **C++-Komponententestprojekt** aus.
+
+      ::: moniker-end
 
   2. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü des Testprojekts, und klicken Sie auf **Eigenschaften**.
 

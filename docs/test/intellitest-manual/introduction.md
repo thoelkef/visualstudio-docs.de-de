@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 94a52d81dd5e3b15340a2d58702600388b150001
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5aa67bd32f6895e4e1dfc4e7c558bc3bc0d8001b
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62999763"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461495"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Überblick über Microsoft IntelliTest
 
@@ -115,8 +115,7 @@ In diesem Sinne werden Aufrufe von nicht verwaltetem und nicht instrumentiertem 
 
 Zusätzlich wird das Programm als nicht deterministisch angesehen, wenn sich die Werte aus externen Quellen ändern, wenn das Programm erneut ausgeführt wird. In derartigen Fällen verliert IntelliTest die Kontrolle über die Ausführung des Programms, und die Suche wird ineffizient.
 
-Manchmal ist es nicht direkt ersichtlich, wenn dies passiert.
-Betrachten Sie die folgenden Beispiele:
+Manchmal ist es nicht direkt ersichtlich, wenn dies passiert. Betrachten Sie die folgenden Beispiele:
 
 * Das Ergebnis der **GetHashCode()**-Methode wird von nicht verwaltetem Code bereitgestellt und kann nicht vorausgesagt werden.
 * Die **System.Random**-Klasse verwendet die aktuelle Systemzeit, um tatsächlich zufällige Werte zu liefern.

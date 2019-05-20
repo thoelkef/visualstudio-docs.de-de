@@ -1,18 +1,18 @@
 ---
 title: 'Vorgehensweise: Schreiben von Komponententests für C++-DLLs'
-ms.date: 11/04/2017
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.author: mblome
-manager: jillfra
+manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 960eb242a8b03b863f1b4e38e0cb8cae53eed469
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 427b481da6feca902fda0e3058974034c72fe6f4
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62819795"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226276"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Vorgehensweise: Schreiben von Komponententests für C++-DLLs
 
@@ -38,13 +38,12 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
 
 1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt** aus.
 
-     Erweitern Sie im Dialogfeld **Installiert** > **Vorlagen** > **Visual C++** > **Test**.
+     **Visual Studio 2017 und früher**: Erweitern Sie **Installiert** > **Vorlagen** > **Visual C++** > **Test**.
+     **Visual Studio 2019**: Legen Sie **Sprache** auf C++ fest, und geben Sie „test“ in das Suchfeld ein.
 
      Klicken Sie entweder auf die Vorlage **Natives Komponententestprojekt** oder auf das von Ihnen bevorzugte installierte Framework. Wenn Sie eine andere Vorlage wie Google Test oder Boost.Test auswählen, bleiben die Grundprinzipien erhalten, obwohl bei einigen Details Unterschiede auftreten können.
 
      In dieser exemplarischen Vorgehensweise wird das Testprojekt `NativeRooterTest`benannt.
-
-     ![Erstellen eines C++-Komponententestprojekts](../test/media/utecpp01.png)
 
 2. Überprüfen Sie im neuen Projekt **unittest1.cpp**.
 
@@ -85,11 +84,45 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
 
 ## <a name="create_dll_project"></a> Erstellen eines DLL-Projekts
 
-1. Erstellen Sie ein **Visual C++** -Projekt mithilfe der Vorlage **Win32-Projekt** .
+::: moniker range="vs-2019"
+
+Die folgenden Schritte zeigen, wie Sie ein DLL-Projekt in Visual Studio-2019 erstellen.
+
+1. Erstellen Sie ein C++-Projekt mithilfe des **Windows-Desktopassistenten**: Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Namen der Projektmappe, und wählen Sie anschließend **Hinzufügen** > **Neues Projekt** aus. Legen Sie die **Sprache** auf C++ fest, und geben Sie dann im Suchfeld „windows“ ein. Wählen Sie in der Ergebnisliste **Windows-Desktopassistent** aus. 
 
      In dieser exemplarischen Vorgehensweise wird das Projekt `RootFinder`benannt.
 
-     ![Erstellen eines C++-Win32-Projekts](../test/media/utecpp05.png)
+2. Drücken Sie **Erstellen**. Wählen Sie im nächsten Dialogfeld unter **Anwendungstyp** **Dynamic Link Library (dll)** aus, und aktivieren Sie außerdem **Symbole exportieren**.
+
+     Die Option **Symbole exportieren** generiert ein komfortables Makro, das Sie verwenden können, um exportierte Methoden zu deklarieren.
+
+     ![C++-Projektassistent mit den Einstellungen "DLL" und "Symbole exportieren"](../test/media/vs-2019/windows-desktop-project-dll.png)
+
+3. Deklarieren Sie eine exportierte Funktion in der Prinzipaldatei *.h*:
+
+     ![Neues DLL-Codeprojekt und .h-Datei mit API-Makros](../test/media/utecpp07.png)
+
+     Der Deklarator `__declspec(dllexport)` bewirkt, dass die öffentlichen und die geschützten Member der Klasse außerhalb der DLL sichtbar sind. Weitere Informationen finden Sie unter [Using dllimport and dllexport in C++ Classes](/cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes).
+
+4. Fügen Sie in der Prinzipaldatei *CPP* einen minimalen Text für die Funktion hinzu:
+
+    ```cpp
+        // Find the square root of a number.
+        double CRootFinder::SquareRoot(double v)
+        {
+            return 0.0;
+        }
+    ```
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+Die folgenden Schritte zeigen, wie Sie ein DLL-Projekt in Visual Studio-2017 erstellen.
+
+1. Erstellen Sie ein C++-Projekt mithilfe der Vorlage **Win32-Projekt**.
+
+     In dieser exemplarischen Vorgehensweise wird das Projekt `RootFinder`benannt.
 
 2. Wählen Sie **DLL** und **Symbole exportieren** im Win32-Anwendungs-Assistenten aus.
 
@@ -112,6 +145,8 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
             return 0.0;
         }
     ```
+
+::: moniker-end
 
 ## <a name="make_functions_visible"></a> Verknüpfen des Testprojekts mit dem DLL-Projekt
 

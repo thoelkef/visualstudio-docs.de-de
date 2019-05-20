@@ -41,7 +41,7 @@ Möglicherweise sind auch Toolfenster vorhanden, die Visual Studio verlangsamen.
 
 ## <a name="hardware"></a>Hardware
 
-Wenn Sie vorhanden, Ihre Hardware zu aktualisieren, hat ein SSD-Datenträger (Solid State Drive) positivere Auswirkungen auf die Leistung als zusätzlicher Arbeitsspeicher (RAM) oder eine schnellere CPU.
+Wenn Sie vorhaben, Ihre Hardware zu aktualisieren, hat ein SSD-Datenträger (Solid State Drive) positivere Auswirkungen auf die Leistung als zusätzlicher Arbeitsspeicher (RAM) oder eine schnellere CPU.
 
 Wenn Sie einen SSD-Datenträger hinzufügen, installieren Sie Windows im Gegensatz zu einem Festplattenlaufwerk für eine optimale Leistung auf diesem Laufwerk. Es ist jedoch nicht wichtig, auf welchem Laufwerk Sie Ihre Visual Studio-Projektmappen speichern.
 

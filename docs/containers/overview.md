@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 4b03ccddadf954b8430b7ad9b5a4ed765fccc3f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fbe363e8f78cba9fa46f3634e59beb22e523ddfa
+ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825010"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65084039"
 ---
 # <a name="container-tools-in-visual-studio"></a>Containertools in Visual Studio
 
@@ -25,7 +25,7 @@ Die in Visual Studio enthaltenen Tools für die Entwicklung mit Containern sind 
 
 ## <a name="docker-support-in-visual-studio"></a>Docker-Unterstützung in Visual Studio
 
-Docker-Unterstützung ist für einige .NET-Projekttypen verfügbar.  Dies sind ASP.NET-Projekte, ASP.NET Core-Projekte sowie .NET Core- und .NET Framework-Konsolenprojekte.
+Docker-Unterstützung ist für ASP.NET-Projekte, ASP.NET Core-Projekte sowie .NET Core- und .NET Framework-Konsolenprojekte verfügbar.
 
 Die Unterstützung für Docker in Visual Studio hat sich im Verlauf einer Reihe von Versionen aufgrund von Kundenanforderungen geändert. Es gibt zwei Stufen der Docker-Unterstützung, die Sie einem Projekt hinzufügen können, und die unterstützten Optionen unterscheiden sich je nach Projekttyp und Visual Studio-Version. Bei einigen unterstützten Projekttypen können Sie in dem Fall, dass Sie nur einen Container für ein einzelnes Projekt ohne Verwendung der Orchestrierung wünschen, die Docker-Unterstützung hinzufügen.  Die nächste Stufe ist die Unterstützung der Containerorchestrierung, bei der entsprechende Unterstützungsdateien für den jeweils ausgewählten Orchestrator hinzugefügt werden.  
 
@@ -46,13 +46,9 @@ Bei Visual Studio 2019 können Sie Docker Compose, Kubernetes und Service Fabric
 > Wenn Sie die vollständige Projektvorlage der .NET Framework-Konsole verwenden und die Docker-Unterstützung hinzufügen, wird die Unterstützung für die Orchestrierung mithilfe von Docker Compose automatisch hinzugefügt.
 ::: moniker-end
 
-Die Befehle **Hinzufügen > Docker-Unterstützung** und **Hinzufügen > Unterstützung für Containerorchestrator** befinden sich im  **Projektmappen-Explorer** im Kontextmenü des Projektknotens für ein ASP.NET Core-Projekt wie im folgenden Screenshot gezeigt:
+### <a name="adding-docker-support"></a>Hinzufügen der Docker-Unterstützung
 
-![Menüoption „Hinzufügen > Docker-Unterstützung“ in Visual Studio](./media/overview/add-docker-support-menu.png)
-
-### <a name="adding-docker-support-without-orchestration"></a>Hinzufügen der Docker-Unterstützung (ohne Orchestrierung)
-
-Sie können die Docker-Unterstützung einem vorhandenen Projekt hinzufügen, indem Sie im **Projektmappen-Explorer** die Option **Hinzufügen** > **Docker-Unterstützung** auswählen. Sie können die Docker-Unterstützung auch während der Projekterstellung aktivieren, indem Sie beim Erstellen eines neuen Projekts die Option **Docker-Unterstützung aktivieren** auswählen wie im folgenden Screenshot gezeigt:
+Sie können die Docker-Unterstützung während der Projekterstellung aktivieren, indem Sie beim Erstellen eines neuen Projekts die Option **Docker-Unterstützung aktivieren** auswählen, wie im folgenden Screenshot gezeigt:
 
 ::: moniker range="vs-2017"
 ![Aktivieren der Docker-Unterstützung für neue ASP.NET Core-Web-App in Visual Studio](./media/overview/enable-docker-support-visual-studio.png)
@@ -60,6 +56,13 @@ Sie können die Docker-Unterstützung einem vorhandenen Projekt hinzufügen, ind
 ::: moniker range=">=vs-2019"
 ![Aktivieren der Docker-Unterstützung für neue ASP.NET Core-Web-App in Visual Studio](./media/overview/vs-2019/enable-docker-support-visual-studio.png)
 ::: moniker-end
+
+> [!NOTE]
+> Für .NET Framework-Projekte (nicht .NET Core) sind nur Windows-Container verfügbar.
+
+Sie können die Docker-Unterstützung einem vorhandenen Projekt hinzufügen, indem Sie im **Projektmappen-Explorer** die Option **Hinzufügen** > **Docker-Unterstützung** auswählen. Die Befehle **Hinzufügen > Docker-Unterstützung** und **Hinzufügen > Unterstützung für Containerorchestrator** befinden sich im  **Projektmappen-Explorer** im Kontextmenü des Projektknotens für ein ASP.NET Core-Projekt wie im folgenden Screenshot gezeigt:
+
+![Menüoption „Hinzufügen > Docker-Unterstützung“ in Visual Studio](./media/overview/add-docker-support-menu.png)
 
 Wenn Sie die Docker-Unterstützung hinzufügen oder aktivieren, fügt Visual Studio dem Projekt Folgendes hinzu:
 

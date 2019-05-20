@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: d28126c84312c13b04de6739340d2cfb6337a066
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 28e86068b2255d1796363405c0231c1fb6bdd480
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840560"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226500"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Schnellstart: Erstellen Ihrer ersten Vue.js-App mit Visual Studio
 
@@ -59,12 +59,12 @@ Zunächst müssen Sie ein Projekt für die Vue.js-Webanwendung erstellen.
 1. Erstellen Sie ein neues Projekt.
 
     ::: moniker range=">=vs-2019"
-    Drücken Sie **ESC**, um das Startfenster zu schließen. Geben Sie **STRG+Q** ein, um das Suchfeld zu öffnen, geben Sie **Grundlegende Vue.js** ein, und wählen Sie dann **Grundlegende Vue.js-Webanwendung** (entweder JavaScript oder TypeScript) aus. Wählen Sie im angezeigten Dialogfeld **Erstellen** aus.
+    Drücken Sie **ESC**, um das Startfenster zu schließen. Geben Sie **STRG+Q** ein, um das Suchfeld zu öffnen, geben Sie **Grundlegende Vue.js** ein, und wählen Sie dann **Grundlegende Vue.js-Webanwendung** (entweder JavaScript oder TypeScript) aus. Geben Sie im Dialogfeld, das nun angezeigt wird, den Namen **basic-vuejs** ein, und wählen Sie dann **Erstellen** aus.
 
     ![Vue.js-Vorlage](../javascript/media/vs-2019/vuejs-template.png)
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Erweitern Sie im linken Bereich des Dialogfelds **Neues Projekt** den Eintrag **JavaScript** oder **TypeScript**, und wählen Sie dann **Node.js** aus. Wählen Sie im mittleren Bereich **Grundlegende Vue.js-Webanwendung** und anschließend **OK**.
+    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Erweitern Sie im linken Bereich des Dialogfelds **Neues Projekt** den Eintrag **JavaScript** oder **TypeScript**, und wählen Sie dann **Node.js** aus. Klicken Sie im mittleren Bereich auf **Grundlegende Vue.js-Webanwendung**, geben Sie den Namen **basic-vuejs** ein, und klicken Sie anschließend auf **OK**.
 
     ![Vue.js-Vorlage](../javascript/media/vuejs-template.png)
     ::: moniker-end

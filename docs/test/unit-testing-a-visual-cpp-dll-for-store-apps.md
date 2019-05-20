@@ -1,18 +1,18 @@
 ---
 title: 'Vorgehensweise: Testen einer Visual C++-DLL für UWP-Apps'
-ms.date: 02/15/2018
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.author: mblome
 manager: jillfra
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 20749240e95d167d1b0268b2605ffeede8cf797a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 01a7b6cfb6587baf5ae80b04178cbdc36e373b86
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62562625"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226361"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Vorgehensweise: Testen einer Visual C++-DLL
 
@@ -24,15 +24,27 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
 
 ## <a name="Create_the_solution_and_the_unit_test_project"></a> Erstellen der Projektmappe und des Komponententestprojekts
 
-1. Klicken Sie im Menü **Datei** auf **Neu** > **Neues Projekt**.
+::: moniker range="vs-2019"
 
-2. Erweitern Sie im Dialogfeld „Neues Projekt“ den Eintrag **Installiert** > **Visual C++**, und wählen Sie **Windows Universal** aus. Klicken Sie dann in der Liste der Projektvorlagen auf **Komponententest-App (Universelle Windows-App)**.
+Beginnen Sie, indem Sie ein neues Testprojekt erstellen. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt** aus. Geben Sie im Dialogfeld **Neues Projekt erstellen** „test“ in das Suchfeld ein, und legen Sie dann **Sprache** auf C++ fest. Klicken Sie dann in der Liste der Projektvorlagen auf **Komponententest-App (Universelle Windows-App)**.
 
-3. Geben Sie dem Projekt den Namen `RooterLibTests`, legen Sie den Speicherort fest, geben Sie der Projektmappe den Namen `RooterLib`, und stellen Sie sicher, dass die Option **Projektmappenverzeichnis erstellen** aktiviert ist.
+   ![Erstellen eines neuen UWP-Testprojekts](media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+Beginnen Sie, indem Sie ein neues Testprojekt erstellen. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt** aus. Erweitern Sie im Dialogfeld **Neues Projekt** den Eintrag **Installiert** > **Visual C++**, und wählen Sie **Windows Universal** aus. Klicken Sie dann in der Liste der Projektvorlagen auf **Komponententest-App (Universelle Windows-App)**.
+
+::: moniker-end
+
+1. Erweitern Sie im Dialogfeld „Neues Projekt“ den Eintrag **Installiert** > **Visual C++**, und wählen Sie **Windows Universal** aus. Klicken Sie dann in der Liste der Projektvorlagen auf **Komponententest-App (Universelle Windows-App)**.
+
+2. Geben Sie dem Projekt den Namen `RooterLibTests`, legen Sie den Speicherort fest, geben Sie der Projektmappe den Namen `RooterLib`, und stellen Sie sicher, dass die Option **Projektmappenverzeichnis erstellen** aktiviert ist.
 
      ![Name und Speicherort für Projektmappe und Projekt angeben](../test/media/ute_cpp_windows_unittestlib_createspecs.png)
 
-4. Öffnen Sie im neuen Projekt **unittest1.cpp**.
+3. Öffnen Sie im neuen Projekt **unittest1.cpp**.
 
      ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png)
 
@@ -67,13 +79,24 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
 
 ## <a name="Add_the_DLL_project_to_the_solution"></a> Hinzufügen des DLL-Projekts zur Projektmappe
 
-1. Wählen Sie im **Projektmappen-Explorer** den Projektmappennamen aus. Wählen Sie im Kontextmenü **Hinzufügen** und dann **Neues Projekt hinzufügen** aus.
+::: moniker range="vs-2019"
 
-     ![RooterLib-Projekt erstellen](../test/media/ute_cpp_windows_rooterlib_create.png)
+Wählen Sie im **Projektmappen-Explorer** den Projektmappennamen aus. Wählen Sie im Kontextmenü **Hinzufügen** und dann **Neues Projekt** aus. Legen Sie im Dialogfeld **Neues Projekt hinzufügen** **Sprache** auf C++ fest, und geben Sie „DLL“ in das Suchfeld ein. Wählen Sie in der Ergebnisliste **Komponententest-App (Universelles Windows: C++/CX)** aus.
 
-2. Klicken Sie im Dialogfeld **Neues Projekt hinzufügen** auf die Option **DLL (UWP-Apps)**.
+![RooterLib-Projekt erstellen](../test/media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
 
-3. Fügen Sie der *RooterLib.h*-Datei den folgenden Code hinzu:
+::: moniker-end
+
+::: moniker range="vs-2017"
+Wählen Sie im **Projektmappen-Explorer** den Projektmappennamen aus. Wählen Sie im Kontextmenü **Hinzufügen** und dann **Neues Projekt** aus.
+
+![RooterLib-Projekt erstellen](../test/media/ute_cpp_windows_rooterlib_create.png)
+
+::: moniker-end
+
+1. Klicken Sie im Dialogfeld **Neues Projekt hinzufügen** auf die Option **DLL (UWP-Apps)**.
+
+2. Fügen Sie der *RooterLib.h*-Datei den folgenden Code hinzu:
 
     ```cpp
     // The following ifdef block is the standard way of creating macros which make exporting
@@ -99,7 +122,7 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
 
      Die `CRooterLib`-Klasse deklariert einen Konstruktor und die `SqareRoot`-Abschätzermethode.
 
-4. Fügen Sie der Befehlszeile das ROOTERLIB_EXPORTS-Symbol hinzu.
+3. Fügen Sie der Befehlszeile das ROOTERLIB_EXPORTS-Symbol hinzu.
 
     1. Wählen Sie im **Projektmappen-Explorer** das Projekt **RooterLib** aus, und klicken Sie anschließend im Kontextmenü auf **Eigenschaften**.
 
@@ -109,7 +132,7 @@ In diesem Artikel wird eine Möglichkeit zum Erstellen von Komponententests für
 
     3. Wählen Sie **\<Bearbeiten...>** aus der Liste **Präprozessordefinitionen** aus, und fügen Sie anschließend `ROOTERLIB_EXPORTS` zum Dialogfeld **Präprozessordefinitionen** hinzu.
 
-5. Fügen Sie minimale Implementierungen der deklarierten Funktionen hinzu. Öffnen Sie *RooterLib.cpp* und fügen Sie den folgenden Code hinzu:
+4. Fügen Sie minimale Implementierungen der deklarierten Funktionen hinzu. Öffnen Sie *RooterLib.cpp* und fügen Sie den folgenden Code hinzu:
 
     ```cpp
     // constructor

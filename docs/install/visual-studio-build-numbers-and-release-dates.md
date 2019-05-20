@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 04/11/2019
+ms.date: 05/07/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
@@ -14,14 +14,55 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6246291a00a86a3cde0e3a9cf134724d9dc470ed
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: 7a3d02ad903daba40da5ac0c9a9ebbb320747a49
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537649"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461351"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio-Buildnummern und -Veröffentlichungstermine
+
+::: moniker range="vs-2019"
+
+## <a name="visual-studio-2019"></a>Visual Studio 2019
+
+In der folgenden Tabelle werden die bisherigen Buildnummern und Releasetermine für Visual Studio 2019 aufgeführt.
+
+| **Version**| **Kanal** | **Veröffentlichungsdatum** | **Buildversion** |
+| ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.1.0 | Vorschauversion 3 | 6. Mai 2019 | 16.1.28902.138 |
+| 16.0.3 | Freigabe | 30. April 2019 | 16.0.28803.352 |
+| 16.1.0 | Vorschau 2 | 23. April 2019 | 16.1.28822.285 |
+| 16.0.2 | Freigabe | 18. April 2019 | 16.0.28803.202 |
+| 16.1.0 | Vorschauversion 1 | 10. April 2019 | 16.1.28809.33 |
+| 16.0.1 | Freigabe | 9. April 2019 | 16.0.28803.156 |
+| 16.0.1 | Vorschauversion 1 | 9. April 2019 | 16.0.28803.156 |
+| 16.0.0 | Freigabe | 2. April 2019 | 16.0.28729.10 |
+| 16.0.0 | Vorschauversion 5 | 2. April 2019 | 16.0.28729.10 |
+| 16.0.0 | Release Candidate 4 (RC.4) | 26. März 2019 | 16.0.28721.148 |
+| 16.0.0 | Vorschauversion 4.4 | 26. März 2019 | 16.0.28721.148 |
+| 16.0.0 | Release Candidate 3 (RC.3) | 19. März 2019 | 16.0.28714.193 |
+| 16.0.0 | Vorschauversion 4.3 | 19. März 2019 | 16.0.28714.193 |
+| 16.0.0 | Release Candidate 2 (RC.2) | 12. März 2019 | 16.0.28711.60 |
+| 16.0.0 | Preview 4.2 | 12. März 2019 | 16.0.28711.60 |
+| 16.0.0 | Release Candidate 1 Svc1 (RC.1 Svc1) | 6. März 2019 | 16.0.28705.295 |
+| 16.0.0 | Vorschauversion 4.1 Svc1 | 6. März 2019 | 16.0.28705.295 |
+| 16.0.0 | Release Candidate 1 (RC.1) | 5. März 2019 | 16.0.28701.123 |
+| 16.0.0 | Vorschauversion 4.1 | 5. März 2019 | 16.0.28701.123 |
+| 16.0.0 | Release Candidate (RC) | 27. Februar 2019 | 16.0.28625.133 |
+| 16.0.0 | Vorschauversion 4 | 27. Februar 2019 | 16.0.28625.133 |
+| 16.0.0 | Vorschauversion 3 | 13. Februar 2019 | 16.0.28608.199 |
+| 16.0.0 | Preview 2.2 | 5. Februar 2019 | 16.0.28602.52 |
+| 16.0.0 | Preview 2.1 | 31. Januar 2019 | 16.0.28529.54 |
+| 16.0.0 | Vorschau 2 | 23. Januar 2019 | 16.0.28522.59 |
+| 16.0.0 | Vorschauversion 1.1 | 10. Dezember 2018 | 16.0.28408.50 |
+| 16.0.0 | Vorschauversion 1 | 4. Dezember 2018 | 16.0.28329.73 |
+
+> [!NOTE]
+> Eine Liste der Buildnummern und Veröffentlichungsterminen für die Vorgängerversion finden Sie unter [Visual Studio 2017 Buildnummern und Veröffentlichungstermine](visual-studio-build-numbers-and-release-dates.md?view=vs-2017).
+
+::: moniker-end
 
 ::: moniker range="vs-2017"
 
@@ -182,43 +223,6 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Veröffentlichun
 
 > [!NOTE]
 > Weitere Informationen zu Buildnummern und Veröffentlichungsterminen für die nächste Version von Visual Studio finden Sie auf der Seite mit den [ Buildnummern und Veröffentlichungsterminen für Visual Studio 2019](/visualstudio/install/visual-studio-build-numbers-and-release-dates?view=vs-2019).
-
-::: moniker-end
-
-::: moniker range="vs-2019"
-
-## <a name="visual-studio-2019"></a>Visual Studio 2019
-
-In der folgenden Tabelle werden die bisherigen Buildnummern und Releasetermine für Visual Studio 2019 aufgeführt.
-
-| **Version**| **Kanal** | **Veröffentlichungsdatum** | **Buildversion** |
-| ---------------------- | ----------- | ---------------- | ----------------- |
-| 16.1.0 | Vorschauversion 1 | 10. April 2019 | 16.1.28809.33 |
-| 16.0.1 | Freigabe | 9. April 2019 | 16.0.28803.156 |
-| 16.0.1 | Vorschauversion 1 | 9. April 2019 | 16.0.28803.156 |
-| 16.0.0 | Freigabe | 2. April 2019 | 16.0.28729.10 |
-| 16.0.0 | Vorschauversion 5 | 2. April 2019 | 16.0.28729.10 |
-| 16.0.0 | Release Candidate 4 (RC.4) | 26. März 2019 | 16.0.28721.148 |
-| 16.0.0 | Vorschauversion 4.4 | 26. März 2019 | 16.0.28721.148 |
-| 16.0.0 | Release Candidate 3 (RC.3) | 19. März 2019 | 16.0.28714.193 |
-| 16.0.0 | Vorschauversion 4.3 | 19. März 2019 | 16.0.28714.193 |
-| 16.0.0 | Release Candidate 2 (RC.2) | 12. März 2019 | 16.0.28711.60 |
-| 16.0.0 | Preview 4.2 | 12. März 2019 | 16.0.28711.60 |
-| 16.0.0 | Release Candidate 1 Svc1 (RC.1 Svc1) | 6. März 2019 | 16.0.28705.295 |
-| 16.0.0 | Vorschauversion 4.1 Svc1 | 6. März 2019 | 16.0.28705.295 |
-| 16.0.0 | Release Candidate 1 (RC.1) | 5. März 2019 | 16.0.28701.123 |
-| 16.0.0 | Vorschauversion 4.1 | 5. März 2019 | 16.0.28701.123 |
-| 16.0.0 | Release Candidate (RC) | 27. Februar 2019 | 16.0.28625.133 |
-| 16.0.0 | Vorschauversion 4 | 27. Februar 2019 | 16.0.28625.133 |
-| 16.0.0 | Vorschauversion 3 | 13. Februar 2019 | 16.0.28608.199 |
-| 16.0.0 | Preview 2.2 | 5. Februar 2019 | 16.0.28602.52 |
-| 16.0.0 | Preview 2.1 | 31. Januar 2019 | 16.0.28529.54 |
-| 16.0.0 | Vorschau 2 | 23. Januar 2019 | 16.0.28522.59 |
-| 16.0.0 | Vorschauversion 1.1 | 10. Dezember 2018 | 16.0.28408.50 |
-| 16.0.0 | Vorschauversion 1 | 4. Dezember 2018 | 16.0.28329.73 |
-
-> [!NOTE]
-> Eine Liste der Buildnummern und Veröffentlichungsterminen für die Vorgängerversion finden Sie unter [Visual Studio 2017 Buildnummern und Veröffentlichungstermine](visual-studio-build-numbers-and-release-dates.md?view=vs-2017).
 
 ::: moniker-end
 

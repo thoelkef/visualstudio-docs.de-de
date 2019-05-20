@@ -1,18 +1,19 @@
 ---
 title: Schreiben von Komponententests für C/C++
-ms.date: 10/09/2018
+description: Schreiben von C++-Komponententests in Visual Studio mit verschiedenen Testframeworks wie CTest, Boost.Test und Google Test.
+ms.date: 05/06/2019
 ms.topic: conceptual
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: e78d5b983031a3589c46bbceeaeee87d125eace3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 308478bc47d62731494616a30ce320b3662de735
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945348"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461593"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Schreiben von Komponententests für C/C++ in Visual Studio
 
@@ -30,11 +31,11 @@ Visual Studio umfasst diese C++-Testframeworks ohne zusätzliche erforderliche D
 
 Sie können Ihren eigenen Testadapter sowohl für installierte Frameworks als auch für ein beliebiges anderes Framework zur Verwendung in Visual Studio schreiben. Ein Testadapter kann Komponententests in das Fenster **Test-Explorer** integrieren. Im [Visual Studio Marketplace](https://marketplace.visualstudio.com) sind einige Adapter von Drittanbietern verfügbar. Weitere Informationen finden Sie unter [Installieren von Frameworks für Komponententests von Drittanbietern](install-third-party-unit-test-frameworks.md).
 
-**Visual Studio 2017 Version 15.7 (Professional and Enterprise) und höher**
+**Visual Studio 2017 und höher (Professional und Enterprise)**
 
 C++-Komponententestprojekte unterstützen [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md).
 
-**Visual Studio 2017, Version 15.5 und höher**
+**Visual Studio 2017 und höher (alle Editionen)**
 
 - Der **Google Test-Adapter** ist als Standardkomponente in der Workload **Desktop Development mit C++** enthalten. Er verfügt über eine Projektvorlage, die Sie über das Kontextmenü **Neues Projekt hinzufügen** auf dem Projektmappenknoten im **Projektmappen-Explorer** zu einer Projektmappe hinzufügen können, sowie Optionen, die Sie über **Extras** > **Optionen** konfigurieren können. Weitere Informationen finden Sie unter [How to: Use Google Test in Visual Studio (Vorgehensweise: Verwenden von Google Test in Visual Studio)](how-to-use-google-test-for-cpp.md).
 
@@ -50,17 +51,35 @@ Sie können die Erweiterungen für den Google Test-Adapter und den Boost.Test-Ad
 
 Im folgenden Abschnitt werden die grundlegenden ersten Schritte für C++-Komponententests dargestellt. Die Basiskonfigurationen für die Microsoft- und Google Test-Frameworks sind sehr ähnlich. Für Boost.Test müssen Sie ein Testprojekt manuell erstellen.
 
-### <a name="create-a-test-project"></a>Erstellen eines Testprojekts
+::: moniker range="vs-2019"
+
+### <a name="create-a-test-project-in-visual-studio-2019"></a>Erstellen eines Testprojekts in Visual Studio 2019
+
+Sie definieren Tests für mindestens ein Testprojekt und führen diese aus. Das Testprojekt (bzw. die Testprojekte) muss (bzw. müssen) in derselben Projektmappe gespeichert sein wie der Code, den Sie testen möchten. Klicken Sie mit der rechten Maustaste im **Projektmappen-Explorer** auf den Projektmappenknoten, und wählen Sie anschließend **Hinzufügen** > **Neues Projekt** aus, um ein neues Testprojekt hinzuzufügen. Legen Sie **Sprache** auf C++ fest, und geben Sie „test“ in das Suchfeld ein. In der folgenden Abbildung werden Testprojekte dargestellt, auf die Sie zugreifen können, wenn die Workloads **Desktopentwicklung mit C++** und **Entwicklung für die universelle Windows-Plattform** installiert sind:
+
+![C++-Testprojekte in Visual Studio 2019](media/vs-2019/cpp-new-test-project-vs2019.png)
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+### <a name="create-a-test-project-in-visual-studio-2017"></a>Erstellen eines Testprojekts in Visual Studio 2017
 
 Sie definieren Tests für mindestens ein Testprojekt und führen diese aus. Das Testprojekt (bzw. die Testprojekte) muss (bzw. müssen) in derselben Projektmappe gespeichert sein wie der Code, den Sie testen möchten. Klicken Sie mit der rechten Maustaste im **Projektmappen-Explorer** auf den Projektmappenknoten, und wählen Sie anschließend **Hinzufügen** > **Neues Projekt** aus, um ein neues Testprojekt hinzuzufügen. Klicken sie dann im linken Bereich auf **Visual C++ Test** und anschließend auf einen der Projekttypen im mittleren Bereich. In der folgenden Abbildung werden Testprojekte dargestellt, auf die Sie zugreifen können, wenn die Workload **Desktop Development mit C++** installiert ist:
 
 ![C++-Testprojekte](media/cpp-new-test-project.png)
+
+::: moniker-end
 
 ### <a name="create-references-to-other-projects-in-the-solution"></a>Erstellen von Verweisen auf andere Projekte in der Projektmappe
 
 Fügen Sie einen Verweis auf das Projekt in Ihrem Testprojekt hinzu, damit der Testcode auf die Funktionen in dem zu testenden Projekt zugreifen kann. Klicken Sie im **Projektmappen-Explorer** zunächst mit der rechten Maustaste auf den Knoten für das Testprojekt, und wählen Sie anschließend **Hinzufügen** > **Verweis** aus. Wählen Sie dann in dem Dialogfeld das Projekt bzw. die Projekte aus, das bzw. die Sie testen möchten.
 
 ![Verweis hinzufügen](media/cpp-add-ref-test-project.png)
+
+### <a name="link-to-object-or-library-files"></a>Verknüpfen mit Objekt- oder Bibliotheksdateien
+
+Wenn der Testcode die Funktionen, die Sie testen möchten, nicht exportiert, können Sie die OBJ- oder LIB-Ausgabedateien zu den Abhängigkeiten des Testprojekts hinzufügen. Weitere Informationen finden Sie unter [So verknüpfen Sie die Tests mit den Objekt- oder Bibliotheksdateien](https://docs.microsoft.com/visualstudio/test/unit-testing-existing-cpp-applications-with-test-explorer?view=vs-2015#objectRef).
 
 ### <a name="add-include-directives-for-header-files"></a>Hinzufügen von #include-Direktiven für Headerdateien
 
@@ -117,7 +136,7 @@ Bewährte Methoden im Zusammenhang mit Komponententests finden Sie unter [Grundl
 
 ## <a name="use-codelens"></a>Verwenden von CodeLens
 
-**Visual Studio 2017 Version 15.7 (nur Professional and Enterprise) und höher**
+**Visual Studio 2017 und höher (Editionen Professional und Enterprise)**
 
 Mit [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) können Sie sich den Status eines Komponententests ansehen, ohne dazu den Code-Editor verlassen zu müssen. Sie können CodeLens für ein C++-Komponententestprojekt mit jeder der folgenden Möglichkeiten initialisieren:
 

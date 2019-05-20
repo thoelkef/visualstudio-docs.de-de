@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8373f13d3a7fc4280b383c534d0adba0b02a53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0116a8c4fa6326a1176c132aef59a789daabffca
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979645"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461532"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Projektmappen und Projekte in Visual Studio
 
@@ -67,6 +67,8 @@ Visual Studio speichert die Einstellungen von Projektmappen in zwei Dateitypen (
 Ein neues Projekt lässt sich am einfachsten über eine Projektvorlage für einen bestimmten Anwendungs- oder Websitetyp erstellen. Eine Projektvorlage besteht aus mehreren grundlegenden und vorab generierten Codedateien, Konfigurationsdateien, Objekten und Einstellungen. Diese Vorlagen finden Sie in dem Dialogfeld, in dem Sie ein neues Projekt erstellen (**Datei** > **Neu** > **Projekt**). Weitere Informationen finden Sie unter [Erstellen von Projekten und Projektmappen](../ide/creating-solutions-and-projects.md).
 
 Sie können auch benutzerdefinierte Projekte und Elementvorlagen erstellen. Weitere Informationen finden Sie unter [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md).
+
+Wenn Sie ein neues Projekt erstellen, wird es standardmäßig unter *%USERPROFILE%\source\repos* gespeichert. Sie können diesen Speicherort in der Einstellung **Speicherort der Projekte** unter **Extras** > **Optionen** > **Projekte und Projektmappen** > **Speicherorte** anpassen. Weitere Informationen finden Sie auf der Seite [„Projekte und Projektmappen“, Dialogfeld „Optionen“](../ide/reference/projects-and-solutions-options-dialog-box.md).
 
 ## <a name="manage-projects-in-solution-explorer"></a>Verwalten von Projekten im Projektmappen-Explorer
 

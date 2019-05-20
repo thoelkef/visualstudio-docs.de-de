@@ -1,18 +1,18 @@
 ---
 title: Verwenden des Microsoft-Komponententest-Frameworks für C++
-ms.date: 11/15/2017
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.author: mblome
-manager: jillfra
+manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 14f2b1e5267bd5c9ce35375c6cf6438406aa3e80
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 607956b93014fd1058f4a43ea17f6ba341752222
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970349"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461483"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Verwenden des Microsoft-Komponententest-Frameworks für C++ in Visual Studio
 
@@ -52,10 +52,12 @@ Verwenden Sie die statischen Methoden der [Assert](microsoft-visualstudio-testto
 ## <a name="run-the-tests"></a>Tests ausführen
 
 1. Klicken Sie im Menü **Test** auf **Windows** > **Test-Explorer**.
-2. Wenn Ihre Tests nicht im Fenster angezeigt werden, erstellen Sie das Testprojekt, indem Sie mit der rechten Maustaste auf dessen Knoten im **Projektmappen-Explorer** klicken und **Erstellen** oder **Neu erstellen** auswählen.
 
-3. Klicken Sie im **Test-Explorer** auf **Alle ausführen**, oder wählen Sie die Tests aus, die Sie ausführen möchten. Klicken Sie für weitere Optionen, einschließlich des Ausführens im Debugmodus mit aktivierten Breakpoints, mit der rechten Maustaste auf einen Test.
-4. Wählen Sie **Tests** aus dem Dropdownmenü im **Ausgabefenster** aus, um die von der `Logger`-Klasse geschriebenen Meldungen anzuzeigen.
+1. Wenn Ihre Tests nicht im Fenster angezeigt werden, erstellen Sie das Testprojekt, indem Sie mit der rechten Maustaste auf dessen Knoten im **Projektmappen-Explorer** klicken und **Erstellen** oder **Neu erstellen** auswählen.
+
+1. Klicken Sie im **Test-Explorer** auf **Alle ausführen**, oder wählen Sie die Tests aus, die Sie ausführen möchten. Klicken Sie für weitere Optionen, einschließlich des Ausführens im Debugmodus mit aktivierten Breakpoints, mit der rechten Maustaste auf einen Test.
+
+1. Wählen Sie **Tests** aus dem Dropdownmenü im **Ausgabefenster** aus, um die von der `Logger`-Klasse geschriebenen Meldungen anzuzeigen.
 
    ![Testmeldungen im C++-Ausgabefenster](media/cpp-test-output-window.png)
 
