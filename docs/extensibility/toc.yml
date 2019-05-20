@@ -34,7 +34,7 @@
   items:
     - name: Sprachserverprotokoll
       href: language-server-protocol.md
-    - name: Hinzufügen einer Erweiterung für das Sprachserverprotokoll
+    - name: Hinzufügen der Sprachserverprotokollerweiterung
       href: adding-an-lsp-extension.md
 - name: Ordner öffnen
   items:
