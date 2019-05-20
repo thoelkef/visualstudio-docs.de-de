@@ -1,7 +1,7 @@
 ---
 title: Installieren und Konfigurieren von Tools zum Erstellen mit iOS | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 05/21/2018
+ms.date: 05/13/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 1bc67385a69f7f96288074afd4c7e5f9cefe8805
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 06449d299fdfd54bdb2526d16897e815900a9c1c
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818493"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614433"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Installieren und Konfigurieren von Tools zum Erstellen mit iOS
 
@@ -32,13 +32,15 @@ Lesen Sie nach der Installation der Tools zum Erstellen mit iOS in diesem Thema 
 
 Um den Remote-Agent für die Entwicklung von Code für iOS installieren und verwenden zu können, benötigen Sie folgende Komponenten:
 
-- Einen Mac-Computer mit OS X Mavericks (Version 10.9) oder höher
+- Einen Mac-Computer mit macOS Mojave, Version 10.14 oder höher
 
 - Eine [Apple-ID](https://appleid.apple.com/)
 
-- Ein aktives [iOS-Entwicklerprogramm](https://developer.apple.com/programs/ios/) -Konto bei Apple
+- Ein aktives [Apple-Entwicklerprogramm](https://developer.apple.com/programs/)-Konto
 
-- [Xcode](https://developer.apple.com/xcode/downloads/) Version 6 oder höher.
+   Sie können ein kostenloses Konto erwerben, das das Querladen von Apps auf ein iOS-Gerät lediglich zu Testzwecken, jedoch nicht zur Verteilung erlaubt.
+
+- [Xcode](https://developer.apple.com/xcode/downloads/), Version 10.2.1 oder höher.
 
    Xcode kann aus dem App Store heruntergeladen werden.
 
@@ -48,23 +50,22 @@ Um den Remote-Agent für die Entwicklung von Code für iOS installieren und verw
 
    `xcode-select --install`
 
-- Eine in Xcode konfigurierte iOS-Signierungsidentität
+- Ein in Xcode konfiguriertes Apple ID-Konto als Signierungsidentität zum Signieren von Apps
 
-   Ausführliche Informationen zum Abrufen einer iOS-Signierungsidentität finden Sie unter [Maintaining Your Signing Identities and Certificates (Verwalten von Signierungsidentitäten und Zertifikaten)](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html) in der iOS Developer Library. Um die Signierungsidentität in Xcode anzuzeigen oder festzulegen, öffnen Sie das Menü **Xcode** , und wählen Sie **Einstellungen**aus. Wählen Sie unter **Konten** Ihre Apple-ID aus, und wählen Sie dann die Schaltfläche **Details anzeigen** aus.
+   Um die Signierungsidentität in Xcode anzuzeigen oder festzulegen, öffnen Sie das Menü **Xcode** , und wählen Sie **Einstellungen**aus. Wählen Sie unter **Konten** Ihre Apple-ID aus, und wählen Sie dann die Schaltfläche **Details anzeigen** aus. Detaillierte Anweisungen finden Sie unter [Hinzufügen Ihres Apple ID-Kontos](https://help.apple.com/xcode/mac/current/#/devaf282080a).
+   
+   Detaillierte Informationen zu Signierungsanforderungen finden Sie unter [What is app signing](https://help.apple.com/xcode/mac/current/#/dev3a05256b8) (Was ist App-Signierung?). 
 
 - Bei Verwendung eines iOS-Geräts für die Entwicklung ein in Xcode konfiguriertes Bereitstellungsprofil für Ihr Gerät
 
-   Ausführliche Informationen zum Erstellen von Bereitstellungsprofilen finden Sie unter [Creating Provisioning Profiles Using Member Center (Erstellen von Bereitstellungsprofilen mit Member Center)](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW24) in der iOS Developer Library.
+   Xcode bietet automatische Signierung, wobei es bei Bedarf Signaturzertifikate für Sie erstellt. Ausführliche Informationen über die automatische Signierung von Xcode finden Sie unter [automatic signing](https://help.apple.com/xcode/mac/current/#/dev80cc24546) (Automatische Signierung).
 
-- [Node.js](https://nodejs.org/)
+   Wenn Sie manuell signieren möchten, müssen Sie für Ihre App ein Bereitstellungsprofil erstellen. Ausführliche Informationen zum Erstellen von Bereitstellungsprofilen finden Sie unter [Create a development provisioning profile](https://help.apple.com/developer-account/#/devf2eb157f8) (Erstellen eines Bereitstellungs-Entwicklungsprofils) in der iOS Developer Library. 
 
-   Installieren Sie die aktuelle Long Term Support-Version (LTS) 8.x von Node.js auf Ihrem Mac. Beachten Sie, dass andere aktuelle Releaseversionen einige Module in „vcremote“ möglicherweise nicht unterstützen. Dadurch kann die Installation von „vcremote“ fehlschlagen.
+- [Node.js](https://nodejs.org/), Version 8.11.3, und npm, Version 5.6.0
 
-- Eine aktualisierte Version von npm
+   Installieren Sie Node.js-Version 8.11.3 auf Ihrem Mac. Wenn Sie das Node.js-Paket installieren, sollte es die npm-Version 5.6.0 aufweisen. Beachten Sie, dass andere Versionen von Node.js und npm möglicherweise einige im Remote-Agent vcremote verwendete Module nicht unterstützen, was zu einem Fehler bei der vcremote-Installation führen kann.
 
-   Die Version von npm, die mit Node.js bereitgestellt wird, ist möglicherweise nicht aktuell genug, um vcremote zu installieren. Um npm zu aktualisieren, öffnen Sie die Terminal-App auf Ihrem Mac, und geben Sie den folgenden Befehl ein:
-
-   `sudo npm install -g npm@latest`
 
 ## <a name="Install"></a> Installieren des Remote-Agents für iOS
 
@@ -131,7 +132,7 @@ Sobald Sie den Remote-Agenten gestartet haben, können Sie ihn von Visual Studio
 
 Um von Visual Studio aus eine Verbindung mit dem Remote-Agent herzustellen, müssen Sie die Remotekonfiguration in den Visual Studio-Optionen angeben.
 
-#### <a name="to-configure-the-remote-agent-from-visual-studio"></a>So konfigurieren Sie den Remote-Agenten in Visual Studio
+### <a name="to-configure-the-remote-agent-from-visual-studio"></a>So konfigurieren Sie den Remote-Agenten in Visual Studio
 
 1. Wenn der Agent nicht bereits auf Ihrem Mac ausgeführt wird, führen Sie die Schritte unter [Starten des Remote-Agents](#Start)aus. Auf Ihrem Mac muss "vcremote" ausgeführt werden, damit Visual Studio erfolgreich gekoppelt und verbunden und das Projekt erstellt werden kann erstellen.
 
@@ -168,7 +169,7 @@ Visual Studio verwendet jedes Mal dieselben Information, um die Verbindung mit d
 
 Wenn Sie den Remote-Agent erstmals starten, ist die generierte PIN für einen begrenzten Zeitraum (standardmäßig 10 Minuten) gültig. Wenn Sie Visual Studio nicht vor Ablauf dieses Zeitraums mit dem Remote-Agent koppeln, müssen Sie eine neue PIN generieren.
 
-#### <a name="to-generate-a-new-pin"></a>So generieren Sie eine neue PIN
+### <a name="to-generate-a-new-pin"></a>So generieren Sie eine neue PIN
 
 1. Halten Sie den Agent an, oder öffnen Sie ein zweites Terminal-App-Fenster auf Ihrem Mac, und verwenden Sie dieses, um den Befehl einzugeben.
 
@@ -182,7 +183,7 @@ Wenn Sie den Remote-Agent erstmals starten, ist die generierte PIN für einen be
 
 Aus Sicherheitsgründen sind die Serverzertifikate, die Visual Studio mit dem Remote-Agent koppeln, an die IP oder den Hostnamen Ihres Macs gebunden. Wenn sich diese Werte geändert haben, müssen Sie ein neues Serverzertifikat generieren und anschließend Visual Studio mit den neuen Werte neu konfigurieren.
 
-#### <a name="to-generate-a-new-server-certificate"></a>So generieren Sie ein neues Serverzertifikat
+### <a name="to-generate-a-new-server-certificate"></a>So generieren Sie ein neues Serverzertifikat
 
 1. So beenden Sie den vcremote-Agent
 
@@ -204,7 +205,7 @@ Aus Sicherheitsgründen sind die Serverzertifikate, die Visual Studio mit dem Re
 
 Sie können den Remoteagent mit verschiedenen Befehlszeilenoptionen konfigurieren. Beispielsweise können Sie den Port zum Überwachen der Build-Anforderungen und die maximale Anzahl an Builds angeben, die auf dem Dateisystem verwaltet werden sollen. Die Standardgrenze ist 10 Builds. Der Remote-Agent entfernt beim Herunterfahren die überzähligen Builds.
 
-#### <a name="to-configure-the-remote-agent"></a>So konfigurieren Sie den Remote-Agenten
+### <a name="to-configure-the-remote-agent"></a>So konfigurieren Sie den Remote-Agenten
 
 - Um eine vollständige Liste der Remote-Agent-Befehle anzuzeigen, geben Sie in die Terminal-App Folgendes ein:
 
@@ -233,6 +234,50 @@ Sie können den Remoteagent mit verschiedenen Befehlszeilenoptionen konfiguriere
    `vcremote --config config_file_path`
 
    *config_file_path* ist hierbei der Pfad zu einer Konfigurationsdatei im JSON-Format. Die Startoptionen und deren Werte dürfen keine Bindestriche enthalten.
+
+## <a name="troubleshoot-the-remote-agent"></a>Problembehandlung des Remote-Agents
+
+### <a name="debugging-on-an-ios-device"></a>Debuggen auf einem iOS-Gerät
+
+Wenn das Debuggen auf einem iOS-Gerät nicht funktioniert, könnten Probleme mit dem Tool [ideviceinstaller](https://github.com/libimobiledevice/ideviceinstaller) vorliegen, das für die Kommunikation mit einem iOS-Gerät verwendet wird. Dieses Tool wird normalerweise von Homebrew während der Installation von vcremote installiert. Führen Sie zur Problemumgehung die unten aufgelisteten Schritte aus.
+
+Öffnen Sie die Terminal-App, und aktualisieren Sie ideviceinstaller und seine Abhängigkeiten, indem Sie die folgenden Schritte in der angegebenen Reihenfolge ausführen:
+
+1. Stellen Sie sicher, dass Homebrew aktualisiert ist
+
+   `brew update`
+
+1. Deinstallieren Sie libimobiledevice und usbmuxd
+
+   `brew uninstall --ignore-dependencies libimobiledevice`
+
+   `brew uninstall --ignore-dependencies usbmuxd`
+
+1. Installieren Sie die neueste Version von libimobiledevice und usbmuxd
+
+   `brew install --HEAD usbmuxd`
+
+   `brew unlink usbmuxd`
+
+   `brew link usbmuxd`
+
+   `brew install --HEAD libimobiledevice`
+
+1. Deinstallieren Sie ideviceinstaller, und installieren Sie es erneut
+
+   `brew uninstall ideviceinstaller`
+
+   `brew install ideviceinstaller`
+
+Überprüfen Sie, ob ideviceinstaller Daten mit dem Gerät austauschen kann, indem Sie versuchen, die auf dem Gerät installierten Apps aufzulisten:
+
+`ideviceinstaller -l`
+
+Wenn ideviceinstaller einen Fehler ausgibt, dass es nicht auf den Ordner `/var/db/lockdown` zugreifen kann, ändern Sie die Berechtigungen für den Ordner in folgender Weise:
+
+`sudo chmod 777 /var/db/lockdown`
+    
+Überprüfen Sie anschließend erneut, ob ideviceinstaller mit dem Gerät kommunizieren kann.
 
 ## <a name="see-also"></a>Siehe auch
 

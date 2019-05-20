@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: b56d7d97ec49bf4c83f2d26a38648cd22cdcfe6a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 92b8fdceb1f4cfcfc54f9e37aea3a93f765976a3
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62983006"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615460"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Installieren von Visual Studio 2019 für Mac
 
@@ -82,7 +82,7 @@ Die Installation von Visual Studio für Mac ermöglicht Ihnen das Schreiben von 
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>Entwicklung von .NET Core-Apps, ASP.NET Core-Web-Apps und Unity-Spielen
 
-Informationen zu anderen Workloads finden Sie auf der Seite zu den [Workloads](/visualstudio/mac/workloads).
+Informationen zu anderen Workloads finden Sie auf der Seite zu den [Workloads](workloads.md).
 
 ## <a name="related-video"></a>Zugehörige Videos
 

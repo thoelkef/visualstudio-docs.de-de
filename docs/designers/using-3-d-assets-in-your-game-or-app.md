@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cb6b6d7969742f4cd1c155e800464a6f645649d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c595f4c8f344cfb9e8678d8f9c425a564baa9e4b
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892904"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459116"
 ---
-# <a name="use-3d-assets-in-your-game-or-app"></a>Verwenden von 3D-Objekten in Spielen oder Apps
+# <a name="how-to-use-3d-assets-in-your-game-or-app"></a>Vorgehensweise: Verwenden von 3D-Objekten in Spielen oder Apps
 
 In diesem Artikel wird beschrieben, wie Sie Visual Studio verwenden können, um 3D-Objekte zu verarbeiten und in Ihre Builds zu integrieren.
 
@@ -34,7 +34,9 @@ Bevor Sie die 3D-Objekte als Teil des Builds bereitstellen können, muss Visual 
 
 ### <a name="to-add-the-build-customizations-to-your-project"></a>So fügen Sie die Buildanpassungen dem Projekt hinzu
 
-1. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für das Projekt, und wählen Sie **Buildabhängigkeiten** > **Buildanpassungen** aus. Das Dialogfeld **Buildanpassungsdateien in Visual C++** wird angezeigt.
+1. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für das Projekt, und wählen Sie **Buildabhängigkeiten** > **Buildanpassungen** aus.
+
+   Das Dialogfeld **Buildanpassungsdateien in Visual C++** wird angezeigt.
 
 2. Aktivieren Sie unter **Verfügbare Buildanpassungsdateien** die Kontrollkästchen für die in der folgenden Tabelle beschriebenen Ressourcentypen, die Sie im Projekt verwenden möchten:
 
@@ -47,11 +49,14 @@ Bevor Sie die 3D-Objekte als Teil des Builds bereitstellen können, muss Visual 
 3. Klicken Sie auf die Schaltfläche **OK** .
 
 ## <a name="include-assets-in-your-build"></a>Integrieren der Objekte in den Build
- Nachdem dem Projekt nun die verschiedenen Arten von 3D-Objekten mitgeteilt wurden, die Sie verwenden möchten, besteht der nächste Schritt darin, Informationen darüber zu liefern, welche Dateien 3D-Objekte sind und um welche Art von Objekten es sich handelt.
+
+Nachdem dem Projekt nun die verschiedenen Arten von 3D-Objekten mitgeteilt wurden, die Sie verwenden möchten, besteht der nächste Schritt darin, Informationen darüber zu liefern, welche Dateien 3D-Objekte sind und um welche Art von Objekten es sich handelt.
 
 ### <a name="to-add-an-asset-to-your-build"></a>So fügen Sie eine Ressource dem Build hinzu
 
-1. Öffnen Sie im **Projektmappen-Explorer** in Ihrem Projekt das Kontextmenü für eine Ressource, und wählen Sie **Eigenschaften** aus. Das Dialogfeld **Eigenschaftenseite** für die Ressource wird angezeigt.
+1. Öffnen Sie im **Projektmappen-Explorer** in Ihrem Projekt das Kontextmenü für eine Ressource, und wählen Sie **Eigenschaften** aus.
+
+   Das Dialogfeld **Eigenschaftenseite** für die Ressource wird angezeigt.
 
 2. Stellen Sie sicher, dass die Eigenschaften **Konfiguration** und **Plattform** auf die Werte festgelegt werden, für die Ihre Änderungen gelten sollen.
 
@@ -76,11 +81,13 @@ Sie können die Eigenschaften der Inhaltspipeline für jede Ressourcendatei fest
 
 ### <a name="to-configure-content-pipeline-properties"></a>So konfigurieren Sie Inhaltspipelineeigenschaften
 
-1. Öffnen Sie im **Projektmappen-Explorer** in Ihrem Projekt das Kontextmenü für die Ressourcendatei, und wählen Sie **Eigenschaften** aus. Das Dialogfeld **Eigenschaftenseite** für die Ressource wird angezeigt.
+1. Öffnen Sie im **Projektmappen-Explorer** in Ihrem Projekt das Kontextmenü für die Ressourcendatei, und wählen Sie **Eigenschaften** aus.
+
+   Das Dialogfeld **Eigenschaftenseite** für die Ressource wird angezeigt.
 
 2. Stellen Sie sicher, dass die Eigenschaften **Konfiguration** und **Plattform** auf die Werte festgelegt werden, für die Ihre Änderungen gelten sollen.
 
-3. Wählen Sie unter **Konfigurationseigenschaften** den Inhaltspipelineknoten aus, z.B. **Bildinhaltspipeline** für Textur- und Bildressourcen. Legen Sie dann im Eigenschaftenraster die Eigenschaften auf die entsprechenden Werte fest. Um beispielsweise Mipmaps für eine Texturressource zum Zeitpunkt der Erstellung zu generieren, legen Sie die Eigenschaft **MIPS generieren** auf **Ja** fest.
+3. Wählen Sie unter **Konfigurationseigenschaften** den Inhaltspipelineknoten aus (z.B. **Bildinhaltspipeline** für Textur- und Bildressourcen), und legen Sie dann im Eigenschaftenraster die Eigenschaften auf die entsprechenden Werte fest. Um beispielsweise Mipmaps für eine Texturressource zum Zeitpunkt der Erstellung zu generieren, legen Sie die Eigenschaft **MIPS generieren** auf **Ja** fest.
 
 4. Klicken Sie auf die Schaltfläche **OK** .
 
@@ -208,6 +215,6 @@ cbuffer MiscVars : register(b3)
 |-----------|-----------------|
 |[Vorgehensweise: Exportieren einer Textur, die Mipmaps enthält](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Beschreibt, wie die Bildinhaltspipeline zum Exportieren einer Textur verwendet wird, die vorausberechnete Mipmaps enthält.|
 |[Vorgehensweise: Exportieren einer Textur, in der integrierte Alphakanäle verwendet werden](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Beschreibt, wie die Bildinhaltspipeline zum Exportieren einer Textur verwendet wird, die prämultiplizierte Alphawerte enthält.|
-|[Vorgehensweise: Exportieren einer Textur für die Verwendung mit Direct2D- oder Javascript-Apps](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Beschreibt, wie die Bildinhaltspipeline zum Exportieren einer Textur verwendet wird, die in einer Direct2D- oder einer JavaScript-App verwendet werden kann.|
+|[Vorgehensweise: Exportieren einer Textur für die Verwendung mit Direct2D- oder JavaScript-Apps](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Beschreibt, wie die Bildinhaltspipeline zum Exportieren einer Textur verwendet wird, die in einer Direct2D- oder einer JavaScript-App verwendet werden kann.|
 |[Arbeiten mit 3D-Objekten für Spiele und Apps](../designers/working-with-3-d-assets-for-games-and-apps.md)|Es werden die Bearbeitungstools, die Visual Studio zum Erstellen und Bearbeiten von 3D-Objekten bereitstellt, inklusive Texturen und Bildern, 3D Modellen sowie Shadern beschrieben.|
 |[Vorgehensweise: Exportieren eines Shaders](../designers/how-to-export-a-shader.md)|Das Exportieren eines Shaders vom Shader-Designer wird beschrieben.|
