@@ -220,8 +220,8 @@ Automatisierte Tests, die die Anwendung über die Benutzeroberfläche (UI) steue
   }
   ```
 
-  *Das Steuerelement, das ich auswählen möchte, verliert den Fokus und wird nicht mehr angezeigt, wenn ich versuche, im Test-Generator für codierte UI das Tool "Assertionen hinzufügen" auszuwählen Wie wähle ich das Steuerelement aus? * 
-   **Auswählen eines ausgeblendeten Steuerelements mit der Tastatur**
+  *Das Steuerelement, das ich auswählen möchte, verliert den Fokus und wird nicht mehr angezeigt, wenn ich versuche, im Test-Generator für codierte UI das Tool "Assertionen hinzufügen" auszuwählen Wie wähle ich das Steuerelement aus?*
+  **Auswählen eines ausgeblendeten Steuerelements mit der Tastatur**
 
   Beim [Hinzufügen von Steuerelementen und Überprüfen ihrer Eigenschaften](#VerifyingCodeUsingCUITGenerateAssertions) muss manchmal die Tastatur verwendet werden. Wenn Sie beispielsweise versuchen, einen Test der programmierten UI aufzuzeichnen, der ein Kontextmenü-Steuerelement verwendet, verliert die Liste der Menüelemente im Steuerelement den Fokus und wird nicht mehr angezeigt, wenn Sie versuchen, im Test-Generator der programmierten UI das Tool „Assertionen hinzufügen“ auszuwählen. Dieser Vorgang wird in der folgenden Abbildung veranschaulicht. Das Kontextmenü in Internet Explorer verliert den Fokus und wird nicht mehr angezeigt, wenn Sie versuchen, es mit dem Tool "Assertionen hinzufügen" auszuwählen.
 
