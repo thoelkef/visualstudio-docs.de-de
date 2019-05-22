@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie den Azure-Vorteil, der in Ihrem Visual Studio-Abonnement beinhaltet ist, aktivieren.
 searchscope: VS Subscription
-ms.openlocfilehash: 2c78f4d88cf42197691fa798af115c16227bd2a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c47012e0a06c4e4b44833b0f6727d3c7a79fd13c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948459"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685925"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Microsoft Azure in Visual Studio-Abonnements verwenden
 
@@ -102,7 +102,7 @@ Wenn Sie ein weiteres aktives Visual Studio-Abonnement auf einer **anderen** Abo
 
 Wenn Ihr Abonnement ein Ausgabenlimit hat und Sie keine Maßnahmen ergreifen, bevor es abläuft, wird Ihr Azure-Abonnement deaktiviert. Um es in ein Angebot mit nutzungsbasierter Bezahlung umzuwandeln und weiter zu nutzen, fügen Sie ein Zahlungsmittel hinzu und [entfernen Sie Ihr Ausgabenlimit](/azure/billing/billing-spending-limit/).
 
-Wenn Sie dieses Visual Studio-Azure-Abonnement nicht fortsetzen möchten, können Sie Ihre Ressourcen wie virtuelle Computer und Datenbanken auf ein anderes Azure-Abonnement übertragen und dieses jederzeit [kündigen](http://azure.microsoft.com/support/cancel-account/).
+Wenn Sie dieses Visual Studio-Azure-Abonnement nicht fortsetzen möchten, können Sie Ihre Ressourcen wie virtuelle Computer und Datenbanken auf ein anderes Azure-Abonnement übertragen und dieses jederzeit [kündigen](https://azure.microsoft.com/support/cancel-account/).
 
 Wenn Sie der Meinung sind, dass Sie diese E-Mail irrtümlich erhalten haben, wenden Sie sich an den [Azure-Kundendienst](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade).
 

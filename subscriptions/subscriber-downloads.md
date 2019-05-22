@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie Microsoft-Produkte, die zu Ihrem Visual Studio-Abonnement gehören, finden und herunterladen können.
 searchscope: VS Subscription
-ms.openlocfilehash: 5aec4ca179f5adc77a01538807ae3498c69964ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0808da563ca37b675bb5f79841db25c40ecf5f7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953715"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697782"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Verwenden von Abonnentendownloads für Visual Studio-Abonnements
 Der Zugriff auf eine große Auswahl an Softwaredownloads ist Teil Ihrer Vorteile als Abonnent.
@@ -31,7 +31,7 @@ Es gibt einige Gründe dafür, warum bestimmte Produkte möglicherweise für die
 - **Redundante Software.** In Abonnements, die Office enthalten, sind bestimmte Office-Suites, eigenständige Office-Downloads und Product Keys nicht mehr verfügbar. Downloads und Product Keys sind für die höchste zugehörige Office-Suite derselben Version verfügbar.  Wenn Sie beispielsweise nach PowerPoint 2010 suchen, gibt die Suche keine Ergebnisse zurück.  Allerdings können Sie nach Office 2010 suchen (die Office-Suite, die PowerPoint 2010 enthält) und die Suite herunterladen.
 
 ## <a name="what-do-i-get"></a>Meine Vorteile
-Es hängt von Ihrer Abonnementstufe und den Programmmitgliedschaften ab, wie viele Downloads Ihnen zur Verfügung gestellt werden und um welche Programme es sich dabei handelt.  Für Abonnenten mit Standardabonnements für Visual Studio Enterprise sind möglicherweise andere Downloads verfügbar als für Abonnenten, die Ihre Abonnements über ein Microsoft Partner Network- oder ein BizSpark-Programm-Abonnement erhalten.  Laden Sie die Liste [Products By Benefit Level](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx) (Produkte nach Vorteilsstufen) herunter, um mehr über die Downloads zu erfahren, die für die jeweilige Abonnementstufe verfügbar sind.
+Es hängt von Ihrer Abonnementstufe und den Programmmitgliedschaften ab, wie viele Downloads Ihnen zur Verfügung gestellt werden und um welche Programme es sich dabei handelt.  Für Abonnenten mit Standardabonnements für Visual Studio Enterprise sind möglicherweise andere Downloads verfügbar als für Abonnenten, die Ihre Abonnements über ein Microsoft Partner Network- oder ein BizSpark-Programm-Abonnement erhalten.  Laden Sie die Liste [Products By Benefit Level](http://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx) (Produkte nach Vorteilsstufen) herunter, um mehr über die Downloads zu erfahren, die für die jeweilige Abonnementstufe verfügbar sind.
 
 Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verbindung mit [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) her, um alle Abonnements anzuzeigen, die Ihrer E-Mail-Adresse zugewiesen sind. Wenn nicht alle Ihrer Abonnements angezeigt werden, sind möglicherweise einige Abonnements einer anderen E-Mail-Adresse zugewiesen.  Sie müssen sich mit der entsprechenden E-Mail-Adresse anmelden, um diese Abonnements anzuzeigen.
 
