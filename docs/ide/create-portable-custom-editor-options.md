@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a3518133ef269c76e1689d8d68583a2d6a0d09b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9426b2b7cd9467353f129e9376b0f83cf2f620a3
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62794093"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65845990"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Erstellen von portablen, benutzerdefinierten Editor-Einstellungen mit „EditorConfig“
 
@@ -20,7 +20,13 @@ Sie können Ihrem Projekt oder der Codebasis eine [EditorConfig](http://editorco
 
 EditorConfig-Einstellungen werden von zahlreichen Code-Editoren und IDEs einschließlich Visual Studio unterstützt. Außerdem ist es eine portable Komponente, die mit dem Code geliefert wird und Codierungsstile auch außerhalb von Visual Studio erzwingen kann.
 
-Wenn Sie Ihrem Projekt in Visual Studio eine EditorConfig-Datei hinzufügen, wird die Formatierung von vorhandenem Code nicht geändert, es sei denn, Sie formatieren das Dokument (**Bearbeiten** > **Erweitert** > **Dokument formatieren** oder **STRG**+**K**, **STRG**+**D** im Standardprofil). Neue Codezeilen werden jedoch gemäß den Einstellungen aus EditorConfig formatiert. Sie können festlegen, welche EditorConfig-Einstellungen von **Dokument formatieren** auf die [**Seite Formatierungsoptionen**](reference/options-text-editor-csharp-formatting.md#format-document-settings) angewendet werden sollen.
+Wenn Sie Ihrem Projekt in Visual Studio eine EditorConfig-Datei hinzufügen, wird die Formatierung von vorhandenem Code nicht geändert, es sei denn, Sie formatieren das Dokument (**Bearbeiten** > **Erweitert** > **Dokument formatieren** oder **STRG**+**K**, **STRG**+**D** im Standardprofil). Neue Codezeilen werden jedoch gemäß den Einstellungen aus EditorConfig formatiert.
+
+::: moniker range="vs-2017"
+
+Sie können festlegen, welche EditorConfig-Einstellungen von **Dokument formatieren** auf die [**Seite Formatierungsoptionen**](reference/options-text-editor-csharp-formatting.md#format-document-settings) angewendet werden sollen.
+
+::: moniker-end
 
 > [!NOTE]
 > Dieses Thema gilt für Visual Studio unter Windows. Informationen zu Visual Studio für Mac finden Sie unter [EditorConfig in Visual Studio für Mac](/visualstudio/mac/editorconfig).
@@ -73,7 +79,7 @@ Wenn Sie eine EDITORCONFIG-Datei aus Ihrem Projekt oder Ihrer Codebasis entferne
 
 1. Bearbeiten Sie die Datei wie gewünscht, zum Beispiel folgendermaßen:
 
-   ```EditorConfig
+   ```ini
    root = true
 
    [*.{cs,vb}]
@@ -104,7 +110,7 @@ Fügen Sie zur Außerkraftsetzung einiger oder aller EditorConfig-Einstellungen 
 
 Wenn einige, aber nicht alle Einstellungen außer Kraft gesetzt werden sollen, geben Sie nur diese Einstellungen in der *EDITORCONFIG*-Datei an. Nur die Eigenschaften, die Sie explizit in der Datei auf der niedrigsten Ebene auflisten, werden außer Kraft gesetzt. Andere Einstellungen aus *EDITORCONFIG*-Dateien auf höheren Ebenen werden weiterhin angewendet. Wenn Sie sicherstellen möchten, dass die _Nein_-Einstellungen von _beliebigen_ *EDITORCONFIG*-Dateien auf höheren Ebenen auf diesen Teil der Codebasis angewendet werden, fügen Sie die ```root=true```-Eigenschaft zu der *EDITORCONFIG*-Datei auf niedrigerer Ebene hinzu:
 
-```EditorConfig
+```ini
 # top-most EditorConfig file
 root = true
 ```
@@ -135,7 +141,7 @@ Wie erwartet erfolgt der Einzug beim Drücken der **TAB-TASTE** in der nächsten
 
 Fügen Sie dem Projekt eine neue Datei mit dem Namen *EDITORCONFIG* mit folgenden Inhalten hinzu. Die Einstellung `[*.cs]` bewirkt, dass sich diese Änderung nur auf C#-Codedateien in diesem Projekt auswirkt.
 
-```EditorConfig
+```ini
 # Top-most EditorConfig file
 root = true
 

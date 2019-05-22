@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ed6be5b3beb394f4e9486ecdca973aa28c97f92
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3b9c73def1870e09a43485ddd423ee9d3000bbee
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993178"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65846223"
 ---
 # <a name="special-characters-to-escape"></a>Sonderzeichen mit Escapezeichen
 Sonderzeichen müssen nur dann mit Escapezeichen versehen werden, wenn sie eine besondere Bedeutung in dem Kontext haben, in dem sie verwendet werden. Beispielsweise ist das Sternchen (*) nur in den "Include"- und "Exclude"-Attributen einer Elementdefinition oder in einem Aufruf von <xref:Microsoft.Build.Tasks.CreateItem> ein Sonderzeichen. In allen anderen Fällen wird das Sternchen als einfaches Sternchen behandelt. Obwohl sie Sternchen nicht überall in Projektdateien mit Escapezeichen versehen müssen, kann dies auch nicht schaden.
@@ -37,7 +37,6 @@ Sonderzeichen müssen nur dann mit Escapezeichen versehen werden, wenn sie eine 
 |@|At-Zeichen, für Verweise auf Elementlisten verwendet.|
 |(|Öffnende runde Klammer, in Listen verwendet.|
 |)|Schließende runde Klammer, in Listen verwendet.|
-|\`|Apostroph (oder Teilstrich), in Bedingungen und anderen Ausdrücken verwendet.|
 |;|Semikolon, ein Listentrennzeichen.|
 |?|Fragezeichen, ein Platzhalterzeichen beim Beschreiben einer Dateispezifikation im Include/Exclude-Abschnitt eines Elements.|
 |*|Sternchen, ein Platzhalterzeichen beim Beschreiben einer Dateispezifikation im Include/Exclude-Abschnitt eines Elements.|

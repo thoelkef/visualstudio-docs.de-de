@@ -13,12 +13,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 73d515c03b7966e3434a2fc2507d3ad5f8d13c1b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c75032649e76bb927011c3bb0a34bbcd0a11c55e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569105"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674962"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Übersicht über die Benutzeroberfläche für domänenspezifische Sprachtools
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,5 +52,5 @@ Wenn Sie zum ersten Mal eine Projektmappe für DSL-Tools (Domain-Specific Langua
   
 ## <a name="see-also"></a>Siehe auch  
  [Übersicht über DSL-Tools](../modeling/overview-of-domain-specific-language-tools.md)   
- [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)   
+ [Domain-Specific Language Tools Glossary (Glossar zu DSL-Tools)](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [Anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md)

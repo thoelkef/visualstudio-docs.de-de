@@ -2,18 +2,18 @@
 title: Includedatei
 description: Includedatei
 services: container-registry
-author: mlearned
-ms.service: container-registry
-ms.author: mlearned
+author: ghogen
+ms.technology: vs-azure
+ms.author: ghogen
 ms.topic: include
 ms.date: 05/21/2018
 ms.custom: include file
-ms.openlocfilehash: 92095a588e02b416fb229d58eebdfe541693b9fa
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 09458cf2fa6e8600464732953443a71ac3ca2948
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "55139641"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65839498"
 ---
 1. Wählen Sie im Menü von Visual Studio **Datei > Neu > Projekt** aus.
 2. Wählen Sie im Abschnitt **Vorlagen** des Dialogfelds **Neues Projekt** die Option **Visual C# > Web** aus.
@@ -22,4 +22,3 @@ ms.locfileid: "55139641"
 5. Wählen Sie **Webanwendung** aus.
 6. Aktivieren Sie das Kontrollkästchen **Docker-Unterstützung aktivieren**.
 7. Wählen Sie den gewünschten Containertyp (Windows oder Linux), und klicken Sie auf **OK**.
-

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36d280cd62420b9805d0a4359df1b72ae452236d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 950e37fd1f1f42f534522c09a8322311c06cebd6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777747"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688513"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Messen der Anwendungsleistung durch Analyse der CPU-Nutzung
 Sie können Visual Studio-Profilerstellungstools verwenden, um Leistungsprobleme in der Anwendung zu analysieren. Dieses Verfahren veranschaulicht die Verwendung der Registerkarte **CPU-Auslastung** der Diagnosetools, um Leistungsdaten Ihrer App zu erhalten. Die Diagnosetools werden für die .NET-Entwicklung in Visual Studio, darunter ASP.NET, sowie für die native/C++-Entwicklung unterstützt.
