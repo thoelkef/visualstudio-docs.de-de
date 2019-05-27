@@ -1,5 +1,5 @@
 ---
-title: Erstellen einer einfachen Datenanwendung mit WPF und Entity Framework 6
+title: Einfachen datenanwendung mit WPF und Entity Framework 6
 ms.date: 08/22/2017
 ms.topic: conceptual
 dev_langs:
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f5d65ff675329fdc714026ce6fe04ee3bd93086f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d67ca69856f48ec916f27498798cbb58efb3e5ac
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62568655"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177368"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Erstellen einer einfachen Datenanwendung mit WPF und Entity Framework 6
 
@@ -148,7 +148,7 @@ Es ist möglich, einen eigenen Databinding-Code schreiben, aber es ist viel einf
 
 Die standardanordnung von Visual Studio erstellt ist nicht ideal für Ihre Anwendung, damit Sie einige Änderungen in der XAML manuell erstellen müssen. Außerdem benötigen Sie einige "Forms" (die tatsächlich Raster sind), um die Benutzer beim Hinzufügen eines neuen Kunden oder die Reihenfolge zu ermöglichen. Um einen neuen Kunden und Reihenfolge hinzufügen können, benötigen Sie einen separaten Satz von Textfeldern, die nicht eine Datenbindung an die `CollectionViewSource`. Sie müssen steuern, welche Raster zu jedem Zeitpunkt dem Benutzer angezeigt wird, indem Sie die Visible-Eigenschaft in die Handlermethoden festlegen. Abschließend fügen Sie eine Löschen-Schaltfläche auf jede Zeile im Raster Orders, um dem Benutzer ermöglichen, die einen einzelnen Auftrag zu löschen.
 
-Fügen Sie zunächst diese Stile auf die `Windows.Resources` Element im *"MainWindow.xaml"*:
+Fügen Sie zunächst diese Stile auf die `Windows.Resources` Element im *"MainWindow.xaml"* :
 
 ```xaml
 <Style x:Key="Label" TargetType="{x:Type Label}" BasedOn="{x:Null}">
@@ -419,7 +419,7 @@ Es gibt die Befehlslogik statt vier Teilen: (1) die Befehle, (2) der Bindungen, 
 
 Das Code-Behind ist minimal, mit Ausnahme von Methoden zum Hinzufügen und löschen. Navigation wird durch Aufrufen von Methoden für die ansichtseigenschaft von CollectionViewSource ausgeführt. Die `DeleteOrderCommandHandler` zeigt, wie Sie eine Löschweitergabe für einen Auftrag ausführen. Wir müssen zunächst die "Order_Details" zu löschen, die verknüpft sind. Die `UpdateCommandHandler` der Auflistung einen neuen Kunden oder eine Bestellung hinzugefügt, da ansonsten nur mit Änderungen, die der Benutzer in die Textfelder aktualisiert eine vorhandene Kunden oder eine Bestellung.
 
-Diese Handlermethoden in der MainWindow-Klasse hinzufügen *"MainWindow.Xaml.cs"*. Wenn Ihre CollectionViewSource-Element für die Customers-Tabelle auf einen anderen Namen aufweist, müssen Sie passen Sie den Namen in jeder der folgenden Methoden:
+Diese Handlermethoden in der MainWindow-Klasse hinzufügen *"MainWindow.Xaml.cs"* . Wenn Ihre CollectionViewSource-Element für die Customers-Tabelle auf einen anderen Namen aufweist, müssen Sie passen Sie den Namen in jeder der folgenden Methoden:
 
 [!code-csharp[CommandHandlers#3](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#3)]
 

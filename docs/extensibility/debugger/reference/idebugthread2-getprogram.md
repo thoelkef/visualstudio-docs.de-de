@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 44f673690341c6a20b250f401265fe2db9fd5727
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 962a73c20e324b28a27b7cadb2459d3000fed2b7
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224095"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199611"
 ---
 # <a name="idebugthread2getprogram"></a>IDebugThread2::GetProgram
 Ruft ab, das Programm, in dem ein Thread ausgeführt wird.
@@ -40,9 +40,8 @@ int GetProgram ( 
 ```
 
 ## <a name="parameters"></a>Parameter
- `ppProgram`\
-
- [out] Gibt eine [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) -Objekt, das Programm darstellt, in diesem Thread ausgeführt wird.
+`ppProgram`\
+[out] Gibt eine [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) -Objekt, das Programm darstellt, in diesem Thread ausgeführt wird.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

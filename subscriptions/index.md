@@ -8,12 +8,12 @@ Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: Willkommen bei Visual Studio-Abonnements
 Searchscope: VS Subscription
-ms.openlocfilehash: bac5cbd1ae0da5d4607b566af898c28efc0876ad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 939922aa418ee94d3018ac5f5743c31181e5e875
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62579941"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976108"
 ---
 # <a name="visual-studio-subscriptions"></a>Visual Studio-Abonnements
 
@@ -169,7 +169,7 @@ Damit Ihr Abonnement noch nützlicher wird, werden Abonnementvorteile hinzugefü
                 <div class="card">
                     <div class="cardText">
                         <h3>Cloud Services</h3>
-                        <p>Mit Ihrem Visual Studio-Abonnement erhalten Sie ein monatliches Azure-Guthaben, kostenlosen Zugriff auf Azure-Dienste, Rabatt auf Entwicklungs- und Testtarife und exklusiven Zugriff auf einen nur für Abonnenten verfügbaren Katalog mit Images vorkonfigurierter virtueller Computer. Je nach Abonnement können folgende Clouddienste enthalten sein:</p>
+                        <p>Mit Ihrem Visual Studio-Abonnement erhalten Sie ein monatliches Azure-Guthaben für den Zugriff auf Azure-Dienste, Rabatt auf Entwicklungs- und Testtarife und exklusiven Zugriff auf einen nur für Abonnenten verfügbaren Katalog mit Images vorkonfigurierter virtueller Computer. Je nach Abonnement können folgende Clouddienste enthalten sein:</p>
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-azure">Azure</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-visual-studio-app-center">Visual Studio App Center</a></li>

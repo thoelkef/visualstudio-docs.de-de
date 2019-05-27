@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4fb22dfdfb92b4955624a587a340d9f57eb2d59c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 310f290eb19f7ec56f1508104a0c67241397e6fe
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876519"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206139"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbolsfromstream"></a>IDebugComPlusSymbolProvider::LoadSymbolsFromStream
 Lädt Debugsymbole ab, der den Datenstrom angegeben ist.
@@ -43,26 +46,21 @@ int LoadSymbolsFromStream(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
-`ulAppDomainID`
+## <a name="parameters"></a>Parameter
+`ulAppDomainID`\
+[in] Der Bezeichner der Anwendungsdomäne.
 
- [in] Der Bezeichner der Anwendungsdomäne.
+`guidModule`\
+[in] Eindeutiger Bezeichner des Moduls.
 
-`guidModule`
+`baseAddress`\
+[in] Basis Speicheradresse.
 
- [in] Eindeutiger Bezeichner des Moduls.
+`pUnkMetadataImport`\
+[in] Objekt, das die Symbol-Metadaten enthält.
 
-`baseAddress`
-
- [in] Basis Speicheradresse.
-
-`pUnkMetadataImport`
-
- [in] Objekt, das die Symbol-Metadaten enthält.
-
-`pStream`
-
- [in] Datenstrom mit den Symbolen.
+`pStream`\
+[in] Datenstrom mit den Symbolen.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

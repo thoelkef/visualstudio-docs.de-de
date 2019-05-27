@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bbb64acfd71a6208fde3a5c3f84d6c5886ece72f
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 9edb111c15c83fc6da8df2cea1eed96aed9252b0
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460741"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212689"
 ---
 # <a name="typeinfo"></a>TYPE_INFO
 Diese Struktur gibt die verschiedenen Arten von Informationen zum Typ des Felds an.
@@ -51,15 +51,12 @@ public struct TYPE_INFO {
  Ein Wert aus der [DwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) -Enumeration, der bestimmt, wie die Union zu interpretieren.
 
  `type.typeMeta`\
-
  [C++ nur] Enthält eine [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md) Struktur, wenn `dwKind` ist `TYPE_KIND_METADATA`.
 
  `type.typePdb`\
-
  [C++ nur] Enthält eine [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md) Struktur, wenn `dwKind` ist `TYPE_KIND_PDB`.
 
  `type.typeBuilt`\
-
  [C++ nur] Enthält eine [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) Struktur, wenn `dwKind` ist `TYPE_KIND_BUILT`.
 
  `type.unused`\
@@ -69,7 +66,6 @@ public struct TYPE_INFO {
  Die Namen der Union.
 
  `unionmember`\
-
  [C# nur] Marshallen, die diese Option, um den entsprechenden Strukturtyp basierend auf `dwKind`.
 
 ## <a name="remarks"></a>Hinweise

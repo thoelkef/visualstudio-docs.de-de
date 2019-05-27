@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 545c2cc9565d70ea40d6a38516eac4c03fc3497d
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 56954d1cf33974fc93aa966db6b5be0d03d1c979
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226251"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199345"
 ---
 # <a name="idebugtypefieldbuilder2createarrayoftype"></a>IDebugTypeFieldBuilder2::CreateArrayOfType
 Erstellt ein Array des angegebenen Typs und der Größe.
@@ -43,17 +43,14 @@ int CreateArrayOfType (
 ```
 
 ## <a name="parameters"></a>Parameter
- `pTypeField`\
+`pTypeField`\
+[in] Typ der Elemente, die das Array aufnehmen wird.
 
- [in] Typ der Elemente, die das Array aufnehmen wird.
+`rank`\
+[in] Anzahl der Elemente im Array.
 
- `rank`\
-
- [in] Anzahl der Elemente im Array.
-
- `pArrayOfTypeField`\
-
- [out] Gibt die [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) Objekte, die das neue Array darstellen.
+`pArrayOfTypeField`\
+[out] Gibt die [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) Objekte, die das neue Array darstellen.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

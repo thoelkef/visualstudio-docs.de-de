@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c646974a1d1303482785ffd0240b3374e2ed071f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2d37ec7c2a81b036c80e7fab30fc794d51f21703
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871548"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204277"
 ---
 # <a name="idebugportsupplier3enumpersistedports"></a>IDebugPortSupplier3::EnumPersistedPorts
 Diese Methode ruft ein Objekt, das ermöglicht die Enumeration, der die Liste der persistenten Ports ab.
@@ -38,14 +41,12 @@ int EnumPersistedPorts(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `PortNames`
+## <a name="parameters"></a>Parameter
+`PortNames`\
+[in] Ein [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md) Struktur, die eine Liste der Anschlussnamen gesucht und zurückgegeben, die zwischen der beibehaltenen Ports enthält. Nur die beibehaltenen Ports mit diesen Namen werden zurückgegeben.
 
- [in] Ein [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md) Struktur, die eine Liste der Anschlussnamen gesucht und zurückgegeben, die zwischen der beibehaltenen Ports enthält. Nur die beibehaltenen Ports mit diesen Namen werden zurückgegeben.
-
- `ppEnum`
-
- [out] Ein Objekt, implementiert die [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) Schnittstelle.
+`ppEnum`\
+[out] Ein Objekt, implementiert die [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) Schnittstelle.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

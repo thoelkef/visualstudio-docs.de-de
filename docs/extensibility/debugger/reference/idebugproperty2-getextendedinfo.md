@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fa66f61c7e72f1c629fe664baf2c2a5dcc9631e2
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 7d9e2ff4b853baec5da19b4c62cffe4e86102736
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458887"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211603"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 Ruft Informationen für die Eigenschaft erweitert werden.
@@ -42,13 +42,11 @@ int GetExtendedInfo ( 
 ```
 
 ## <a name="parameters"></a>Parameter
- `guidExtendedInfo`\
+`guidExtendedInfo`\
+[in] GUID, der bestimmt, den Typ des erweiterten Informationen abgerufen werden sollen. Einzelheiten finden Sie unter "Hinweise".
 
- [in] GUID, der bestimmt, den Typ des erweiterten Informationen abgerufen werden sollen. Einzelheiten finden Sie unter "Hinweise".
-
- `pExtendedInfo`\
-
- [out] Gibt eine `VARIANT` (C++) oder ein Objekt (C#), die zum Abrufen der Informationen der erweiterten Eigenschaft verwendet werden kann. Dieser Parameter möglicherweise zurück, z. B. eine `IUnknown` -Schnittstelle, die abgefragt werden kann ein [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) Schnittstelle. Einzelheiten finden Sie unter "Hinweise".
+`pExtendedInfo`\
+[out] Gibt eine `VARIANT` (C++) oder ein Objekt (C#), die zum Abrufen der Informationen der erweiterten Eigenschaft verwendet werden kann. Dieser Parameter möglicherweise zurück, z. B. eine `IUnknown` -Schnittstelle, die abgefragt werden kann ein [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) Schnittstelle. Einzelheiten finden Sie unter "Hinweise".
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`; gibt andernfalls den Fehlercode zurück. Gibt `S_GETEXTENDEDINFO_NO_EXTENDEDINFO` , wenn es keine erweiterten Informationen gibt abrufen.

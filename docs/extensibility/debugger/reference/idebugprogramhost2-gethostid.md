@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1588b75d0bce3ad41c339b0e0e90a506ed91c6cf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fa7f8e20ed41b753447d49653e49c8096b8bc114
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62870058"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203988"
 ---
 # <a name="idebugprogramhost2gethostid"></a>IDebugProgramHost2::GetHostId
 Ruft die Prozess-ID von der Hostprozess für dieses Programm ab.
@@ -36,10 +39,9 @@ int GetHostId( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `pdwId`
-
- [in, out] Ein [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) -Struktur, die mit die Prozess-ID-Informationen gefüllt wird.
+## <a name="parameters"></a>Parameter
+`pdwId`\
+[in, out] Ein [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) -Struktur, die mit die Prozess-ID-Informationen gefüllt wird.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

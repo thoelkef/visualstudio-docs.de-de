@@ -59,7 +59,7 @@ sections:
         columns: 2
         items:
           - href: 'roslyn-analyzers-overview.md#roslyn-analyzers-vs-static-code-analysis'
-            html: <p>Lernen Sie die Unterschiede zwischen der statischen Codeanalyse (FxCop) und der Codeanalyse mit dem Analysetoolpaket kennen.</p>
+            html: '<p>Erfahren Sie, die Unterschiede zwischen statischen (FxCop) und Analyse von Code Analyzer.</p>'
             image:
               src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
             title: Was ist anders?
@@ -68,6 +68,11 @@ sections:
             image:
               src: 'https://docs.microsoft.com/media/common/i_setup.svg'
             title: Installieren von FxCop-Analysetools
+          - href: fxcop-rule-port-status.md
+            html: '<p>Listet die statischem Code Analysis FxCop-Regeln, die FxCop-Analysetools portiert.</p>'
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_upgrade.svg'
+            title: Portiert und unported-Regeln
           - href: 'use-roslyn-analyzers.md#command-line-usage'
             html: '<p>Wenn Sie die Codeanalyse in der Regel über die Befehlszeile ausführen, erfahren Sie, wie sie die Analysetools über die Befehlszeile verwenden.</p>'
             image:

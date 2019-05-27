@@ -383,6 +383,8 @@
               href: ca1505-avoid-unmaintainable-code.md
             - name: 'CA1506: Übermäßige Klassenkopplungen vermeiden.'
               href: ca1506-avoid-excessive-class-coupling.md
+            - name: 'CA1507: „nameof“ anstelle der Zeichenfolge verwenden'
+              href: ca1507.md
         - name: Mobilitätswarnungen
           items:
             - name: Mobilitätswarnungen

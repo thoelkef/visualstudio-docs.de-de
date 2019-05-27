@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 82b2e6da51b695bdc6fd2fd031a1f9decf484daa
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 78060933846d60d1e8721cda676ac837ea2bff06
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457655"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200183"
 ---
 # <a name="idebugproperty3getcustomviewerlist"></a>IDebugProperty3::GetCustomViewerList
 Ruft eine Liste der benutzerdefinierten Viewer, die dieser Eigenschaft zugeordnet.
@@ -47,20 +47,16 @@ int GetCustomViewerList(
 
 ## <a name="parameters"></a>Parameter
 `celtSkip`\
-
- [in] Die Anzahl von Zuschauern zu überspringen.
+[in] Die Anzahl von Zuschauern zu überspringen.
 
 `celtRequested`\
-
- [in] Die Anzahl der abzurufenden-Viewer (gibt auch die Größe der an die `rgViewers` Array).
+[in] Die Anzahl der abzurufenden-Viewer (gibt auch die Größe der an die `rgViewers` Array).
 
 `rgViewers`\
-
- [in, out] Array von [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) Strukturen gefüllt werden soll.
+[in, out] Array von [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) Strukturen gefüllt werden soll.
 
 `pceltFetched`\
-
- [out] Die tatsächliche Anzahl von Zuschauern zurückgegeben werden soll.
+[out] Die tatsächliche Anzahl von Zuschauern zurückgegeben werden soll.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

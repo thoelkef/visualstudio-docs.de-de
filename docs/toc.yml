@@ -16,10 +16,10 @@
   items:
     - name: Installieren von Visual Studio
       href: install/install-visual-studio.md
-    - name: Konten
+    - name: Personalisierungskonten
       items:
         - name: Anmelden bei Visual Studio
-          displayName: peronalization accounts
+          displayName: personalization accounts
           href: ide/signing-in-to-visual-studio.md
         - name: Arbeiten mit mehreren Benutzerkonten
           href: ide/work-with-multiple-user-accounts.md
@@ -43,15 +43,13 @@
       href: install/update-visual-studio.md
     - name: Ändern von Visual Studio 2017
       href: install/modify-visual-studio.md
-    - name: Installieren von Help Viewer
-      href: help-viewer/installation.md
     - name: Reparieren Sie Visual Studio.
       href: install/repair-visual-studio.md
     - name: "Deinstallieren von Visual\_Studio"
       href: install/uninstall-visual-studio.md
     - name: Administratorhandbuch für Visual Studio
       items:
-        - name: Leitfaden für Administratoren
+        - name: Übersicht
           href: install/visual-studio-administrator-guide.md
         - name: Verwenden der Befehlszeile
           items:
@@ -138,6 +136,8 @@
           href: install/advanced-build-tools-container.md
         - name: Bekannte Probleme bei Containern
           href: install/build-tools-container-issues.md
+    - name: Installieren von Help Viewer
+      href: help-viewer/installation.md
 - name: Schnellstarts
   items:
     - name: Visual Studio-Ausrichtung
@@ -231,6 +231,8 @@
               items:
                 - name: Erstellen von Projekt- und Elementvorlagen
                   href: ide/creating-project-and-item-templates.md
+                - name: Hinzufügen von Tags zu einer Vorlage
+                  href: ide/template-tags.md
                 - name: Erstellen von Projektvorlagen
                   href: ide/how-to-create-project-templates.md
                 - name: Erstellen von Vorlagen mit mehreren Projekten

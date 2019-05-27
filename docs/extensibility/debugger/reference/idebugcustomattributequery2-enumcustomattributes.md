@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aade3935a49af176220e800647e6e821054bbb48
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: eb64fe4e2d5857bba65a1220b2d0a77163993123
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875955"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205218"
 ---
 # <a name="idebugcustomattributequery2enumcustomattributes"></a>IDebugCustomAttributeQuery2::EnumCustomAttributes
 Ruft einen Enumerator für alle benutzerdefinierten Attribute, die an dieses Feld angefügt.
@@ -36,10 +39,9 @@ int EnumCustomAttributes(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `ppEnum`
-
- [out] Gibt eine [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) Objekt, das die Liste der benutzerdefinierten Attribute darstellt; andernfalls einen null-Wert, wenn keine benutzerdefinierten Attribute vorhanden sind.
+## <a name="parameters"></a>Parameter
+`ppEnum`\
+[out] Gibt eine [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) Objekt, das die Liste der benutzerdefinierten Attribute darstellt; andernfalls einen null-Wert, wenn keine benutzerdefinierten Attribute vorhanden sind.
 
 ## <a name="return-value"></a>Rückgabewert
  Im Erfolgsfall gibt S_OK zurück, oder S_FALSE zurück, wenn keine benutzerdefinierten Attribute für dieses Feld vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben;

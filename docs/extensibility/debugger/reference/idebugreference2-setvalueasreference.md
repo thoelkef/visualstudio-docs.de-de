@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0fc6e2fee354d6dcc76676bf02d4ed88e1799f26
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 203e9741afa832ba0515a06b21ba1899e1355e1c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458647"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211871"
 ---
 # <a name="idebugreference2setvalueasreference"></a>IDebugReference2::SetValueAsReference
 Legt den Wert eines Verweises von einem anderen Verweis. Für zukünftige Verwendung reserviert.
@@ -46,21 +46,17 @@ int SetValueAsReference ( 
 ```
 
 ## <a name="parameters"></a>Parameter
- `rgpArgs`\
+`rgpArgs`\
+[in] Ein Array von [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) Objekte verwendet, um zu bestimmen, wie der Verweiswert festgelegt.
 
- [in] Ein Array von [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) Objekte verwendet, um zu bestimmen, wie der Verweiswert festgelegt.
+`dwArgCount`\
+[in] Die Anzahl der Verweise im Array.
 
- `dwArgCount`\
+`pValue`\
+[in] Ein [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) Objekt aus, das den Eigenschaftswert festzulegen.
 
- [in] Die Anzahl der Verweise im Array.
-
- `pValue`\
-
- [in] Ein [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) Objekt aus, das den Eigenschaftswert festzulegen.
-
- `dwTimeout`\
-
- [in] Maximale Zeit in Millisekunden, die vor der Rückgabe dieser Methode gewartet. Verwendung `INFINITE` für Warten ohne Timeout.
+`dwTimeout`\
+[in] Maximale Zeit in Millisekunden, die vor der Rückgabe dieser Methode gewartet. Verwendung `INFINITE` für Warten ohne Timeout.
 
 ## <a name="return-value"></a>Rückgabewert
  Gibt immer `E_NOTIMPL` zurück.

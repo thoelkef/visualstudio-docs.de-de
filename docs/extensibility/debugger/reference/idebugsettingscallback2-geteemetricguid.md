@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 75d934b4896614655a2043e1f6ba549d72f99e2d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: d8829afadbd2f02b9b87f2beb84088aeeb447e66
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457482"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212108"
 ---
 # <a name="idebugsettingscallback2geteemetricguid"></a>IDebugSettingsCallback2::GetEEMetricGuid
 Ruft den eindeutigen Bezeichner für eine Expression Evaluator-Metrik, die anhand des Namens ab.
@@ -44,21 +44,17 @@ HRESULT GetEEMetricGuid(
 ```
 
 ## <a name="parameters"></a>Parameter
- `guidLang`\
+`guidLang`\
+[in] Eindeutiger Bezeichner der Programmiersprache.
 
- [in] Eindeutiger Bezeichner der Programmiersprache.
+`guidVendor`\
+[in] Eindeutiger Bezeichner des Herstellers.
 
- `guidVendor`\
+`pszMetric`\
+[in] Der Name der Metrik.
 
- [in] Eindeutiger Bezeichner des Herstellers.
-
- `pszMetric`\
-
- [in] Der Name der Metrik.
-
- `pguidValue`\
-
- [out] Gibt den eindeutigen Bezeichner der Metrik zurück.
+`pguidValue`\
+[out] Gibt den eindeutigen Bezeichner der Metrik zurück.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

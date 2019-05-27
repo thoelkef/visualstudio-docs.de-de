@@ -1,5 +1,5 @@
 ---
-title: Bereitstellen von Pack- und Bereitstellungsinformationen in Projektelementen | Microsoft-Dokumentation
+title: Paketerstellung und Bereitstellung von Informationen in Projektelementen
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +24,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4b2bf1fc1b011b79fdd8123218a78ac91a14579b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a9af945ff377b30925a51875db205bcd882f4585
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62550500"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177710"
 ---
 # <a name="provide-packaging-and-deployment-information-in-project-items"></a>Angaben Sie zu packen und-Bereitstellen in Projektelementen
   Alle SharePoint-Projektelemente in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] verfügen über Eigenschaften, die Sie verwenden können, um zusätzliche Daten bereitstellen, wenn das Projekt in SharePoint bereitgestellt wird. Dort stehen die folgenden Eigenschaften zur Auswahl:
@@ -57,7 +57,7 @@ ms.locfileid: "62550500"
 
  Identische Funktionseigenschaftswerte alle Projektelemente werden in das Funktionsmanifest zusammengeführt. Wenn zwei verschiedene Projektelemente den gleichen Schlüssel der Funktion mit nicht übereinstimmenden Werte angeben, tritt jedoch ein Überprüfungsfehler auf.
 
- Funktionseigenschaften direkt an die Featuredatei hinzufügen (*.feature*), rufen Sie die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint Modell Objektmethode <xref:Microsoft.VisualStudio.SharePoint.Features.IPropertyCollection.Add%2A>. Wenn Sie diese Methode verwenden, achten Sie darauf, dass die gleiche Regel zum Hinzufügen von identischen Funktionseigenschaftswerte in Funktionseigenschaften auch, Eigenschaften, die direkt an die Featuredatei hinzugefügt gilt.
+ Funktionseigenschaften direkt an die Featuredatei hinzufügen ( *.feature*), rufen Sie die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint Modell Objektmethode <xref:Microsoft.VisualStudio.SharePoint.Features.IPropertyCollection.Add%2A>. Wenn Sie diese Methode verwenden, achten Sie darauf, dass die gleiche Regel zum Hinzufügen von identischen Funktionseigenschaftswerte in Funktionseigenschaften auch, Eigenschaften, die direkt an die Featuredatei hinzugefügt gilt.
 
 ## <a name="feature-receiver"></a>Funktionsempfänger
  Feature-Empfänger sind, dass Code, der ausgeführt wird, wenn bestimmte Ereignisse, auf ein Projektelement auftreten Funktion enthält. Beispielsweise können Sie Features Empfänger definieren, die ausgeführt werden, wenn das Feature installiert, aktiviert oder aktualisiert wird. Eine Möglichkeit zum Hinzufügen, ein Funktionsempfänger wird es direkt an eine Funktion hinzufügen, wie in beschrieben [Exemplarische Vorgehensweise: Hinzufügen von Funktionsereignisempfängern](../sharepoint/walkthrough-add-feature-event-receivers.md). Verweisen einen Namen der Empfängerklasse Feature und die Assembly in eine andere Möglichkeit ist die **Funktionsempfänger** Eigenschaft.

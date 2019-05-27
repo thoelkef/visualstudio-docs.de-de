@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: acaa43d4a9afe1084502c44f5221bc8518a9bd3e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 371766c1aaffbbd82cd4a5da8876a65eccc96363
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917934"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202604"
 ---
 # <a name="idebugprocess2getname"></a>IDebugProcess2::GetName
 Ruft ab, der Titel, der Anzeigename oder der Dateiname des Prozesses.
@@ -38,14 +41,12 @@ int GetName( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `gnType`
+## <a name="parameters"></a>Parameter
+`gnType`\
+[in] Ein Wert aus der [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) Enumeration, der angibt, welche Art von Namen zurückgegeben.
 
- [in] Ein Wert aus der [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) Enumeration, der angibt, welche Art von Namen zurückgegeben.
-
- `pbstrName`
-
- [out] Gibt den Namen des Prozesses.
+`pbstrName`\
+[out] Gibt den Namen des Prozesses.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
