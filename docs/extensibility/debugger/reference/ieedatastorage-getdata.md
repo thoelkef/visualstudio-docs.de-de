@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8d9c00f21ab39d5785acb0090b16b5b1fc193699
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 7edce84f512dd31963f38215e0d86e24c3d73b37
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224189"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199281"
 ---
 # <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
 Ruft die angegebene Anzahl von Bytes aus dem Objekt ab.
@@ -44,17 +44,14 @@ int GetData(
 ```
 
 ## <a name="parameters"></a>Parameter
- `dataSize`\
+`dataSize`\
+[in] Die Anzahl der abzurufenden Bytes (der `data` Array muss mindestens diese Anzahl von Bytes enthalten).
 
- [in] Die Anzahl der abzurufenden Bytes (der `data` Array muss mindestens diese Anzahl von Bytes enthalten).
+`sizeGotten`\
+[out] Gibt die Anzahl der Bytes, die tatsächlich abgerufen.
 
- `sizeGotten`\
-
- [out] Gibt die Anzahl der Bytes, die tatsächlich abgerufen.
-
- `data`\
-
- [in, out] Ein Array mit den angeforderten Daten gefüllt werden soll.
+`data`\
+[in, out] Ein Array mit den angeforderten Daten gefüllt werden soll.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
