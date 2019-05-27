@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 03ac1d4f979c6b6ce504160216d42f055820d69c
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: a8c3d6a3509e9b415b2c006e16eb5056eb79d065
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457809"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203922"
 ---
 # <a name="idebugprogramnode2gethostpid"></a>IDebugProgramNode2::GetHostPid
 Ruft die System-Prozess-ID für den Prozess, der die Anwendung hosten.
@@ -40,9 +40,8 @@ int GetHostPid ( 
 ```
 
 ## <a name="parameters"></a>Parameter
- `pdwHostPid`\
-
- [out] Gibt zurück, die System-Prozess-ID für den Hostprozess.
+`pdwHostPid`\
+[out] Gibt zurück, die System-Prozess-ID für den Hostprozess.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

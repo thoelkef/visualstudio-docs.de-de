@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Informationen zum CAST Highlight-Vorteil, der in ausgewählten Visual Studio-Abonnements enthalten ist
 searchscope: VS Subscription
-ms.openlocfilehash: a96b314a22bf3036167b0d7b1bb6077edee01f59
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 852327a7bcedb93a9ac7d2644ee5e9ab1e182e42
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947900"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805340"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Der CAST Highlight-Vorteil in Visual Studio-Abonnements
 
@@ -107,6 +107,6 @@ Sie wissen nicht genau, welches Abonnement Sie verwenden?  Stellen Sie eine Verb
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Wenn Sie den Azure-Vorteil, der in Ihrem Abonnement enthalten ist, noch nicht aktiviert haben, besuchen Sie [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs), und klicken Sie auf die Azure-Kachel in der Kategorie „Extras“, um ein Azure-Abonnement einzurichten und Ihre kostenlose Azure-Gutschrift zu erhalten.
+Wenn Sie den Azure-Vorteil, der in Ihrem Abonnement enthalten ist, noch nicht aktiviert haben, besuchen Sie [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs), und klicken Sie auf die Azure-Kachel in der Kategorie „Extras“, um ein Azure-Abonnement einzurichten und Ihre Azure-Gutschrift zu erhalten.
 
 Und vergessen Sie nicht, sich die Demo, das Benutzerhandbuch und die Tutorial-Videos anzusehen, die in Gregs E-Mail erwähnt wurden.

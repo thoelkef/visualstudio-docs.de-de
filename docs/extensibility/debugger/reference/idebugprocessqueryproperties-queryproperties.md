@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3644a8d8b8834056e5cf61fc8647d5c47056208
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c1c88d5b719b8d800ef13f890bb65cd5f6b68d58
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917488"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200476"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperties"></a>IDebugProcessQueryProperties::QueryProperties
 Diese Methodenabfragen für eine angegebene Eigenschaftenwerte des des Debugvorgangs zur Verfügung.
@@ -36,14 +39,12 @@ int QueryProperties(
    out object[ ]              rgtPropValues);
 ```
 
-#### <a name="parameters"></a>Parameter
- `celt`
+## <a name="parameters"></a>Parameter
+`celt`\
+[in] Die Größe der Arrays, die die Definitionen von Eigenschaften und Eigenschaftswerte enthält.
 
- [in] Die Größe der Arrays, die die Definitionen von Eigenschaften und Eigenschaftswerte enthält.
-
- `dwPropType`
-
- [in] Ein Array, das Definitionen der abgefragten Eigenschaften enthält. Mögliche Werte sind:
+`dwPropType`\
+[in] Ein Array, das Definitionen der abgefragten Eigenschaften enthält. Mögliche Werte sind:
 
 - PROCESS_PROPERTY_COMMAND_LINE = 1
 
@@ -51,7 +52,8 @@ int QueryProperties(
 
 - PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3
 
-  `pvarPropValue` [out] Ein Array mit den Eigenschaftswerten.
+`pvarPropValue`\
+[out] Ein Array mit den Eigenschaftswerten.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

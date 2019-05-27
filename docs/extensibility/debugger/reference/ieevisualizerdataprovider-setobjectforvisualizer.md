@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cd7bd4bfd113da8cfd311d1022967d8c99f915b5
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 31bc89e248d609e8b828d4cc5b9ac41c8e15c70c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223936"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203688"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
 Diese Methode ändert das Objekt, das die Schnellansicht darstellt.
@@ -44,17 +44,14 @@ int SetObjectForVisualizer(
 ```
 
 ## <a name="parameters"></a>Parameter
- `pNewObject`\
+`pNewObject`\
+[in] Das Objekt festgelegt werden soll.
 
- [in] Das Objekt festgelegt werden soll.
+`error`\
+[out] Wenn Fehler bei der Festlegung des Objekts, enthält diese Zeichenfolge die Fehlermeldung.
 
- `error`\
-
- [out] Wenn Fehler bei der Festlegung des Objekts, enthält diese Zeichenfolge die Fehlermeldung.
-
- `pException`\
-
- [out] Wenn ein Fehler aufgetreten ist, enthält dieses Objekt die Ausnahmeinformationen.
+`pException`\
+[out] Wenn ein Fehler aufgetreten ist, enthält dieses Objekt die Ausnahmeinformationen.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

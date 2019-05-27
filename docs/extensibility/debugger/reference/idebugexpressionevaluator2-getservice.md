@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac6f73e31e7e15a2ffd86e2d969f98a686fbd004
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b775963f9ab708e92a37cda9a3ff50bc67c9b2cf
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842931"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211760"
 ---
 # <a name="idebugexpressionevaluator2getservice"></a>IDebugExpressionEvaluator2::GetService
 Ruft ein Dienstobjekt unter Berücksichtigung den eindeutigen Bezeichner ab.
@@ -37,14 +40,12 @@ int GetService (
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `uid`
+## <a name="parameters"></a>Parameter
+`uid`\
+[in] Eindeutiger Bezeichner des abzurufenden Dienstes.
 
- [in] Eindeutiger Bezeichner des abzurufenden Dienstes.
-
- `ppService`
-
- [out] Gibt ein Objekt, das den Dienst darstellt.
+`ppService`\
+[out] Gibt ein Objekt, das den Dienst darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

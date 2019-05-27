@@ -9,13 +9,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-monikerRange: vs-2017
-ms.openlocfilehash: e7363a0779721e4fb36106d6ee77324c341517ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 26f0facec34c04e5b228e346d1559ffe4f179fa1
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926834"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212244"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Änderungen in Visual Studio 2017-Erweiterbarkeit
 
@@ -106,8 +105,8 @@ Die meisten Visual Studio Core-Assemblys werden nicht mehr im globalen Assemblyc
 
 * Visual Studio installiert zuvor viele Registrierungsschlüssel des Systems **HKEY_LOCAL_MACHINE** und **HKEY_CURRENT_USER** Strukturen unter einem Visual Studio-spezifischer Schlüssel:
 
-  * **HKLM\Software\Microsoft\VisualStudio\{Version}**: Der Registrierungsschlüssel von MSI-Installationsprogramme und pro Computer Erweiterungen erstellt werden.
-  * **HKCU\Software\Microsoft\VisualStudio\{Version}**: Der Registrierungsschlüssel erstellt, die von Visual Studio benutzerspezifische Einstellungen speichern.
+  * **HKLM\Software\Microsoft\VisualStudio\{Version}** : Der Registrierungsschlüssel von MSI-Installationsprogramme und pro Computer Erweiterungen erstellt werden.
+  * **HKCU\Software\Microsoft\VisualStudio\{Version}** : Der Registrierungsschlüssel erstellt, die von Visual Studio benutzerspezifische Einstellungen speichern.
   * **HKCU\Software\Microsoft\VisualStudio\{Version}_Config**: Eine Kopie von Visual Studio-HKLM-Taste oben, und die Registrierungsschlüssel vom zusammengeführt *PKGDEF* Dateien von Erweiterungen.
 
 * Um die Auswirkungen auf die Registrierung zu reduzieren, verwendet Visual Studio jetzt die [RegLoadAppKey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya) Funktion zum Speichern von Registrierungsschlüssel in einer privaten Binärdatei unter *[VSAPPDATA]\privateregistry.bin*. Nur eine sehr kleine Anzahl von Visual Studio-spezifischer Schlüssel bleiben in der systemregistrierung.

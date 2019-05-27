@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8734d97dfc8bcd7be2b12ce657071597deaea7a8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8c374cfa79b91d70895f94be4f1c3f28c5ac4c02
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921619"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205169"
 ---
 # <a name="idebugcustomviewerdisplayvalue"></a>IDebugCustomViewer::DisplayValue
 Diese Methode wird aufgerufen, um den angegebenen Wert anzuzeigen.
@@ -42,22 +45,18 @@ int DisplayValue(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `hwnd`
+## <a name="parameters"></a>Parameter
+`hwnd`\
+[in] Übergeordnetes Fenster
 
- [in] Übergeordnetes Fenster
+`dwID`\
+[in] ID für den benutzerdefinierten Viewer, die mehr als einen Typ zu unterstützen.
 
- `dwID`
+`pHostServices`\
+[in] Reserviert. Legen Sie immer auf Null.
 
- [in] ID für den benutzerdefinierten Viewer, die mehr als einen Typ zu unterstützen.
-
- `pHostServices`
-
- [in]: Reserviert Legen Sie immer auf Null.
-
- `pDebugProperty`
-
- [in] Schnittstelle, die verwendet werden kann, zum Abrufen des Werts, der angezeigt werden.
+`pDebugProperty`\
+[in] Schnittstelle, die verwendet werden kann, zum Abrufen des Werts, der angezeigt werden.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`; gibt andernfalls den Fehlercode zurück.

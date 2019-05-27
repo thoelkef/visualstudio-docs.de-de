@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f787ad06b4e7d612007b6448287b5062ae1b0efd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a8b93aa895588f743f4cc7c6b6adfa207590936d
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873310"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210561"
 ---
 # <a name="idebugmemorybytes2readat"></a>IDebugMemoryBytes2::ReadAt
 Liest eine Folge von Bytes, beginnend ab einem bestimmten Standort.
@@ -45,26 +48,21 @@ int ReadAt(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `pStartContext`
+## <a name="parameters"></a>Parameter
+`pStartContext`\
+[in] Die [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) Objekt, das angibt, wo Sie beginnen, Lesen von Bytes.
 
- [in] Die [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) Objekt, das angibt, wo Sie beginnen, Lesen von Bytes.
+`dwCount`\
+[in] Die Anzahl der zu lesenden Bytes. Außerdem gibt die Länge des der `rgbMemory` Array.
 
- `dwCount`
+`rgbMemory`\
+[in, out] Array mit den Bytes gefüllt, die tatsächlich gelesen werden.
 
- [in] Die Anzahl der zu lesenden Bytes. Außerdem gibt die Länge des der `rgbMemory` Array.
+`pdwRead`\
+[out] Gibt die Anzahl von zusammenhängenden Bytes, die tatsächlich gelesen.
 
- `rgbMemory`
-
- [in, out] Array mit den Bytes gefüllt, die tatsächlich gelesen werden.
-
- `pdwRead`
-
- [out] Gibt die Anzahl von zusammenhängenden Bytes, die tatsächlich gelesen.
-
- `pdwUnreadable`
-
- [in, out] Gibt die Anzahl der nicht gelesen Bytes zurück. Möglicherweise ein null-Wert ab, wenn der Client nicht die Anzahl der nicht lesbare Bytes ist.
+`pdwUnreadable`\
+[in, out] Gibt die Anzahl der nicht gelesen Bytes zurück. Möglicherweise ein null-Wert ab, wenn der Client nicht die Anzahl der nicht lesbare Bytes ist.
 
 ## <a name="return-value"></a>Rückgabewert
  Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.

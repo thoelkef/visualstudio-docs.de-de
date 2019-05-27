@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 567e53d92ded6b6ba37c149ff48c8473c98fcc34
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 203a23e6b9aad22f45d2ff41431614f56d5140bc
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65225837"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208287"
 ---
 # <a name="ienumdebugcustomattributesgetcount"></a>IEnumDebugCustomAttributes::GetCount
 Ruft die Anzahl von benutzerdefinierten Attributen in einen Enumerator ab.
@@ -40,9 +40,8 @@ int GetCount(
 ```
 
 ## <a name="parameters"></a>Parameter
- `pcelt`\
-
- [out] Gibt die Anzahl der Elemente in der Enumeration zurück.
+`pcelt`\
+[out] Gibt die Anzahl der Elemente in der Enumeration zurück.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

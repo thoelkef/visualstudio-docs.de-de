@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef63656e645611e13bfc6e0fcf1fb3a5cc339abc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7000e72ee69b90d873dd85689b97157e83dc6856
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876953"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212871"
 ---
 # <a name="idebugbreakpointrequest2getlocationtype"></a>IDebugBreakpointRequest2::GetLocationType
 Ruft die Haltepunktpositionstyp dieser Haltepunkt-Anforderung ab.
@@ -36,10 +39,9 @@ int GetLocationType(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
-`pBPLocationType`
-
- [out] Gibt einen Wert aus der [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) -Enumeration, der den Speicherort dieser Haltepunkt-Anforderung beschreibt.
+## <a name="parameters"></a>Parameter
+`pBPLocationType`\
+[out] Gibt einen Wert aus der [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) -Enumeration, der den Speicherort dieser Haltepunkt-Anforderung beschreibt.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Gibt `E_FAIL` Wenn die `bpLocation` im zugehörigen Feld [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) Struktur ist ungültig.

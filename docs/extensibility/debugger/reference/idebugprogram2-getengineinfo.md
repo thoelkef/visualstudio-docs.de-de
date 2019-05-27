@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe8b6768bf67cab4a4d69e82c509db0bd6f93543
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b1b03fe660cd6b909c1d86871556e4f0e6ecb945
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917260"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212295"
 ---
 # <a name="idebugprogram2getengineinfo"></a>IDebugProgram2::GetEngineInfo
 Ruft den Namen und GUID der Debug-Engine (DE) dieses Programm ausführen.
@@ -38,14 +41,12 @@ int GetEngineInfo( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `pbstrEngine`
+## <a name="parameters"></a>Parameter
+`pbstrEngine`\
+[out] Gibt den Namen des DE dieses Programm ausführen.
 
- [out] Gibt den Namen des DE dieses Programm ausführen.
-
- `pguidEngine`
-
- [out] Gibt die GUID der Ausführung dieses Programms DE zurück.
+`pguidEngine`\
+[out] Gibt die GUID der Ausführung dieses Programms DE zurück.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

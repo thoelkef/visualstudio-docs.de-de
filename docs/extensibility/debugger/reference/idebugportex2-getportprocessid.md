@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f55915297daa877b2a7e73ab0cccda1a2d70b991
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bdc0dc1155c3ceffa5e784279f113a8c7d30a168
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918265"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209068"
 ---
 # <a name="idebugportex2getportprocessid"></a>IDebugPortEx2::GetPortProcessId
 Ruft die Prozess-ID des Ports selbst ab.
@@ -36,10 +39,9 @@ int GetPortProcessId ( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `pdwProcessId`
-
- [out] Gibt die physischen Prozess-ID des Ports selbst zurück.
+## <a name="parameters"></a>Parameter
+`pdwProcessId`\
+[out] Gibt die physischen Prozess-ID des Ports selbst zurück.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

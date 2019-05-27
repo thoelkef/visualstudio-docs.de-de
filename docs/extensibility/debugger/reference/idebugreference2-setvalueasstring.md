@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 022712c0be8dfb569ba097bc4a86f8b02de93633
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: ca994aaf03103e6d668d78a7d3a683ddbc988eb7
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457399"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210096"
 ---
 # <a name="idebugreference2setvalueasstring"></a>IDebugReference2::SetValueAsString
 Legt den Wert, der einen Verweis aus einer Zeichenfolge. Für zukünftige Verwendung reserviert.
@@ -44,17 +44,14 @@ int SetValueAsString ( 
 ```
 
 ## <a name="parameters"></a>Parameter
- `pszValue`\
+`pszValue`\
+[in] Der Wert als Zeichenfolge.
 
- [in] Der Wert als Zeichenfolge.
+`dwRadix`\
+[in] Die Basis bei der Formatierung von numerischen Informationen verwendet werden.
 
- `dwRadix`\
-
- [in] Die Basis bei der Formatierung von numerischen Informationen verwendet werden.
-
- `dwTimeout`\
-
- [in] Maximale Zeit in Millisekunden, die vor der Rückgabe dieser Methode gewartet. Verwendung `INFINITE` für Warten ohne Timeout.
+`dwTimeout`\
+[in] Maximale Zeit in Millisekunden, die vor der Rückgabe dieser Methode gewartet. Verwendung `INFINITE` für Warten ohne Timeout.
 
 ## <a name="return-value"></a>Rückgabewert
  Gibt immer `E_NOTIMPL` zurück.

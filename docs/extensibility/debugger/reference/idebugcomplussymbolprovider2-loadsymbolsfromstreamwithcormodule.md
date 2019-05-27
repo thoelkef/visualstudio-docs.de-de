@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 472a83212bdd71bd1747fa54e4bf3d2bda51434e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 487f98f992a1b6caf2d4359c9840fd568b023805
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876351"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205892"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromstreamwithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 Laden Sie Debugsymbole aus einem angegebenen Datenstrom der **ICorDebugModule** Objekt.
@@ -45,30 +48,24 @@ int LoadSymbolsFromStreamWithCorModule(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
-`ulAppDomainID`
+## <a name="parameters"></a>Parameter
+`ulAppDomainID`\
+[in] Der Bezeichner der Anwendungsdomäne.
 
- [in] Der Bezeichner der Anwendungsdomäne.
+`guidModule`\
+[in] Eindeutiger Bezeichner des Moduls.
 
-`guidModule`
+`baseAddress`\
+[in] Basis Speicheradresse.
 
- [in] Eindeutiger Bezeichner des Moduls.
+`pUnkMetadataImport`\
+[in] Objekt, das die Symbol-Metadaten enthält.
 
-`baseAddress`
+`pUnkCorDebugModule`\
+[in] Objekt, das implementiert die [ICorDebugModule-Schnittstelle](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
 
- [in] Basis Speicheradresse.
-
-`pUnkMetadataImport`
-
- [in] Objekt, das die Symbol-Metadaten enthält.
-
-`pUnkCorDebugModule`
-
- [in] Objekt, das implementiert die [ICorDebugModule-Schnittstelle](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
-
-`pStream`
-
- [in] Ein Datenstrom, die die Debugsymbole geladen enthält.
+`pStream`\
+[in] Ein Datenstrom, die die Debugsymbole geladen enthält.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

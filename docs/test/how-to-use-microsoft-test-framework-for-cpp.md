@@ -1,18 +1,18 @@
 ---
 title: Verwenden des Microsoft-Komponententest-Frameworks für C++
-ms.date: 05/01/2019
+ms.date: 05/20/2019
 ms.topic: conceptual
 ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 607956b93014fd1058f4a43ea17f6ba341752222
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 56ed33ed5fa769a3bf830bcb2f57264c1a9ff531
+ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461483"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934488"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Verwenden des Microsoft-Komponententest-Frameworks für C++ in Visual Studio
 
@@ -30,16 +30,16 @@ In einigen Fällen (z.B. beim Testen von nicht exportierten Funktionen in einer 
 
    1. Klicken Sie im **Projektmappen-Explorer** erst mit der rechten Maustaste auf den Projektknoten für das Programm, das Sie testen, und klicken Sie dann auf **Eigenschaften** > **Konfigurationseigenschaften** > **VC++-Verzeichnisse**.
 
-   2. Klicken Sie in den folgenden Zeilen auf den Pfeil nach unten, und wählen Sie **\<Bearbeiten>** aus:
+   2. Klicken Sie in den folgenden Zeilen auf den Pfeil nach unten, und wählen Sie **\<Bearbeiten>** aus. Fügen Sie diese Pfade ein:
 
       | Verzeichnis | Eigenschaft |
       |-| - |
-      | **Includeverzeichnisse** | **$(VCInstallDir)UnitTest\include;$(IncludePath)** |
-      | **Bibliotheksverzeichnisse** | **$(VCInstallDir)UnitTest\lib;$(LibraryPath)** |
+      | **Includeverzeichnisse** | **$(VCInstallDir)Auxiliary\VS\UnitTest\include** |
+      | **Bibliotheksverzeichnisse** | **$(VCInstallDir)Auxiliary\VS\UnitTest\lib** |
 
 2. Fügen Sie eine C++-Komponententestdatei hinzu:
 
-   - Klicken Sie erst mit der rechten Maustaste auf den Projektknoten im **Projektmappen-Explorer** und dann mit der Linken auf **Hinzufügen** > **Neues Element** > **C++-Komponententest**.
+   - Klicken Sie erst mit der rechten Maustaste auf den Projektknoten im **Projektmappen-Explorer**, und wählen Sie **Hinzufügen** > **Neues Element** > **C++-Datei (cpp)** aus.
 
 ## <a name="write-the-tests"></a>Schreiben der Tests
 

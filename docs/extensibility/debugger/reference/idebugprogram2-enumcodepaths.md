@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09437fddf5cd61aef06341494431c747c4c66c8a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 09245f131e8295203c37cbe6cf21c48235dc87b9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62870534"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200323"
 ---
 # <a name="idebugprogram2enumcodepaths"></a>IDebugProgram2::EnumCodePaths
 Ruft eine Liste der Codepfade für eine bestimmte Position in einer Quelldatei.
@@ -46,30 +49,24 @@ int EnumCodePaths( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `pszHint`
+## <a name="parameters"></a>Parameter
+`pszHint`\
+[in] Das Wort unter dem Cursor in die **Quelle** oder **Disassembly** Ansicht in der IDE.
 
- [in] Das Wort unter dem Cursor in die **Quelle** oder **Disassembly** Ansicht in der IDE.
+`pStart`\
+[in] Ein [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) Objekt, das der aktuelle Codekontext darstellt.
 
- `pStart`
+`pFrame`\
+[in] Ein [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) Objekt dem aktuellen Haltepunkt zugeordnet, das den Stapelrahmen darstellt.
 
- [in] Ein [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) Objekt, das der aktuelle Codekontext darstellt.
+`fSource`\
+[in] Ungleich Null (`TRUE`) sofern es sich um die **Quelle** Ansicht oder 0 (null) (`FALSE`) sofern es sich um die **Disassembly** anzeigen.
 
- `pFrame`
+`ppEnum`\
+[out] Gibt eine [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md) -Objekt, das eine Liste der Codepfade enthält.
 
- [in] Ein [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) Objekt dem aktuellen Haltepunkt zugeordnet, das den Stapelrahmen darstellt.
-
- `fSource`
-
- [in] Ungleich Null (`TRUE`) sofern es sich um die **Quelle** Ansicht oder 0 (null) (`FALSE`) sofern es sich um die **Disassembly** anzeigen.
-
- `ppEnum`
-
- [out] Gibt eine [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md) -Objekt, das eine Liste der Codepfade enthält.
-
- `ppSafety`
-
- [out] Gibt eine [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) Objekt, das einen zusätzlicher Codekontext als Haltepunkt festgelegt werden, für den Fall, dass der ausgewählte Pfad code darstellt, wird übersprungen. Dies kann z. B. im Fall von einem kurzgeschlossen booleschen Ausdruck vorkommen.
+`ppSafety`\
+[out] Gibt eine [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) Objekt, das einen zusätzlicher Codekontext als Haltepunkt festgelegt werden, für den Fall, dass der ausgewählte Pfad code darstellt, wird übersprungen. Dies kann z. B. im Fall von einem kurzgeschlossen booleschen Ausdruck vorkommen.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

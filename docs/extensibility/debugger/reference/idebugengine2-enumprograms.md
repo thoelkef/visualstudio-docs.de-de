@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c424dca7b20e6abe1afd419e9c156a400583b5cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 76e095c5c5b478c9901d90f0614cc4796ad028af
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875438"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207695"
 ---
 # <a name="idebugengine2enumprograms"></a>IDebugEngine2::EnumPrograms
 Ruft eine Liste aller Programme, die durch eine DebugEngine (DE) gedebuggt wird.
@@ -36,10 +39,9 @@ int EnumPrograms( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `ppEnum`
-
- [out] Gibt eine [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md) -Objekt, das eine Liste der Programme, die von einer bereitgestellten Kompatibilitätsrichtlinie debuggten enthält.
+## <a name="parameters"></a>Parameter
+`ppEnum`\
+[out] Gibt eine [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md) -Objekt, das eine Liste der Programme, die von einer bereitgestellten Kompatibilitätsrichtlinie debuggten enthält.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

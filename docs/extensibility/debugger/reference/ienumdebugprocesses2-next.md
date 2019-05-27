@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bed5cb609c2e805b2b9872ce6ada8baf0b6a295b
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 508c65ce211fcf9a187af0d41576276fc6ce6541
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65225436"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203330"
 ---
 # <a name="ienumdebugprocesses2next"></a>IEnumDebugProcesses2::Next
 Gibt den nächsten Satz von Elementen aus der Enumeration zurück.
@@ -44,17 +44,14 @@ int Next(
 ```
 
 ## <a name="parameters"></a>Parameter
- `celt`\
+`celt`\
+[in] Die Anzahl der abzurufenden Elemente. Gibt auch die maximale Größe der `rgelt` Array.
 
- [in] Die Anzahl der abzurufenden Elemente. Gibt auch die maximale Größe der `rgelt` Array.
+`rgelt`\
+[in, out] Array von [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) Elementen gefüllt werden soll.
 
- `rgelt`\
-
- [in, out] Array von [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) Elementen gefüllt werden soll.
-
- `pceltFetched`\
-
- [out] Gibt die Anzahl der im tatsächlich zurückgegebenen Elemente `rgelt`.
+`pceltFetched`\
+[out] Gibt die Anzahl der im tatsächlich zurückgegebenen Elemente `rgelt`.
 
 ## <a name="return-value"></a>Rückgabewert
  Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn weniger als die angeforderte Anzahl von Elementen zurückgegeben werden können; andernfalls wird ein Fehlercode zurückgegeben.

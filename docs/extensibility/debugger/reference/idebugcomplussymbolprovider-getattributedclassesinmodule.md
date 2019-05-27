@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4bd4a1a93a1dd7e4049efd886d5eca1f292d561b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e284565ad4e30a4a7aa766ea7150b02281aad3ed
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876736"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206491"
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesinmodule"></a>IDebugComPlusSymbolProvider::GetAttributedClassesinModule
 Ruft die Klassen mit dem angegebenen Attribut in einem bestimmten Modul ab.
@@ -41,22 +44,18 @@ int GetAttributedClassesinModule (
 );
 ```
 
-#### <a name="parameters"></a>Parameter
-`ulAppDomainID`
+## <a name="parameters"></a>Parameter
+`ulAppDomainID`\
+[in] Der Bezeichner der Anwendungsdomäne.
 
- [in] Der Bezeichner der Anwendungsdomäne.
+`guidModule`\
+[in] Eindeutiger Bezeichner des Moduls.
 
-`guidModule`
+`pstrAttribute`\
+[in] Die Attributzeichenfolge.
 
- [in] Eindeutiger Bezeichner des Moduls.
-
-`pstrAttribute`
-
- [in] Die Attributzeichenfolge.
-
-`ppEnum`
-
- [out] Gibt eine Enumeration der attributierten Klassen.
+`ppEnum`\
+[out] Gibt eine Enumeration der attributierten Klassen.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31c49f81fc28420dc95cc2c263d4bba41d6c041b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c753df9d2acb24dbb0950158ebf2dd399b8d24a9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842729"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209577"
 ---
 # <a name="idebugpendingbreakpoint2getbreakpointrequest"></a>IDebugPendingBreakpoint2::GetBreakpointRequest
 Ruft die Haltepunkt-Anforderung, die mit diesem ausstehenden Haltepunkt erstellt wurde.
@@ -37,10 +40,9 @@ int GetBreakpointRequest( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `ppBPRequest`
-
- [out] Gibt eine [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) Objekt, das die Haltepunkt-Anforderung, die verwendet wurde, zum Erstellen dieser ausstehenden Haltepunkt darstellt.
+## <a name="parameters"></a>Parameter
+`ppBPRequest`\
+[out] Gibt eine [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) Objekt, das die Haltepunkt-Anforderung, die verwendet wurde, zum Erstellen dieser ausstehenden Haltepunkt darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Gibt `E_BP_DELETED` , wenn der Haltepunkt gelöscht wurde.

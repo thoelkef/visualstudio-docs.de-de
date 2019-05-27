@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7fcf99f290938a6f51ce1e59ac1e14966206ee5b
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 8eb68be0164b7fd558c5f5a02c476db9e641d574
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459058"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199004"
 ---
 # <a name="idebugprogramnode2gethostname"></a>IDebugProgramNode2::GetHostName
 Ruft den Namen der Hostprozess für die Anwendung ab.
@@ -43,12 +43,10 @@ int GetHostName (
 
 ## <a name="parameters"></a>Parameter
 `dwHostNameType`\
-
- [in] Ein Wert aus der [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) -Enumeration, der den Typ der zur Rückgabe angibt.
+[in] Ein Wert aus der [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) -Enumeration, der den Typ der zur Rückgabe angibt.
 
 `pbstrHostName`\
-
- [out] Gibt den Namen des Hostprozesses.
+[out] Gibt den Namen des Hostprozesses.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

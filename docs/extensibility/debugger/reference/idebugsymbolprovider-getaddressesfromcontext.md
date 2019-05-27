@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 77306706c15be37a975742be917523095bec587f
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: a0d759e310128f641b063ba30430f88780fc41fa
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226438"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207341"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromcontext"></a>IDebugSymbolProvider::GetAddressesFromContext
 Diese Methode ordnet einem Dokumentkontext in ein Array von Debug-Adressen.
@@ -46,21 +46,17 @@ int GetAddressesFromContext(
 ```
 
 ## <a name="parameters"></a>Parameter
- `pDocContext`\
+`pDocContext`\
+[in] Der Dokumentenkontext.
 
- [in] Der Dokumentenkontext.
+`fStatmentOnly`\
+[in] True gibt an, beschränkt die Debug-Adressen zu einer einzigen Anweisung.
 
- `fStatmentOnly`\
+`ppEnumBegAddresses`\
+[out] Gibt einen Enumerator für die Debug-Startadressen dieser Anweisung oder der Zeile zugeordnet.
 
- [in] True gibt an, beschränkt die Debug-Adressen zu einer einzigen Anweisung.
-
- `ppEnumBegAddresses`\
-
- [out] Gibt einen Enumerator für die Debug-Startadressen dieser Anweisung oder der Zeile zugeordnet.
-
- `ppEnumEndAddresses`\
-
- [out] Gibt eine [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) Enumerator für die abschließende Debug-Adressen, die dieser Anweisung oder der Zeile zugeordnet.
+`ppEnumEndAddresses`\
+[out] Gibt eine [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) Enumerator für die abschließende Debug-Adressen, die dieser Anweisung oder der Zeile zugeordnet.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

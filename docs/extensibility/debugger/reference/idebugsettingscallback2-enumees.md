@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 12005f27e533d491451695925253137fb172ccd6
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 5205cfbda0420e45fc1e22dac678d97975f937a8
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457604"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212168"
 ---
 # <a name="idebugsettingscallback2enumees"></a>IDebugSettingsCallback2::EnumEEs
 Listet die verfügbaren ausdrucksauswertungen die Sprache und den Anbieter-IDs angegeben.
@@ -44,21 +44,17 @@ public int EnumEEs(
 ```
 
 ## <a name="parameters"></a>Parameter
- `celtBuffer`\
+`celtBuffer`\
+[in] Anzahl der Elemente in der `pceltEEs` Puffer.
 
- [in] Anzahl der Elemente in der `pceltEEs` Puffer.
+`rgguidLang`\
+[in, out] Eindeutiger Bezeichner für die Programmiersprache.
 
- `rgguidLang`\
+`rgguidVendor`\
+[in, out] Eindeutiger Bezeichner für den Anbieter.
 
- [in, out] Eindeutiger Bezeichner für die Programmiersprache.
-
- `rgguidVendor`\
-
- [in, out] Eindeutiger Bezeichner für den Anbieter.
-
- `pceltEEs`\
-
- [in, out] Array von der ausdrucksauswertung.
+`pceltEEs`\
+[in, out] Array von der ausdrucksauswertung.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

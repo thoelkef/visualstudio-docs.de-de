@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2bac4bbda5c1a9e98f52ec6de83953735d0647db
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 1783f5f55de8c103b8fb872bb757910f3d49165b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226629"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208256"
 ---
 # <a name="ienumdebugcustomattributesskip"></a>IEnumDebugCustomAttributes::Skip
 Überspringt eine angegebene Anzahl von benutzerdefinierten Attributen in einer Enumerationsfolge.
@@ -40,9 +40,8 @@ int Skip(
 ```
 
 ## <a name="parameters"></a>Parameter
- `celt`\
-
- [in] Die Anzahl der zu überspringenden Elemente.
+`celt`\
+[in] Die Anzahl der zu überspringenden Elemente.
 
 ## <a name="return-value"></a>Rückgabewert
  Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn `celt` größer als die Anzahl der verbleibenden Elemente ist; andernfalls ein Fehlercode zurückgegeben.

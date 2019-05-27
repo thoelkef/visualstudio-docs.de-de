@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e6275f67e07c88cb337c77bc672394af539b8e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 780f1c357ef4c8f8a8114689e7495f7882af9723
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875945"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205208"
 ---
 # <a name="idebugcustomattributequery2getcustomattributebyname"></a>IDebugCustomAttributeQuery2::GetCustomAttributeByName
 Ruft die benutzerdefinierten Attribute Bytes, die den Namen des benutzerdefinierten Attributs ab.
@@ -40,18 +43,15 @@ int GetCustomAttributeByName(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `pszCustomAttributeName`
+## <a name="parameters"></a>Parameter
+`pszCustomAttributeName`\
+[in] Eine Zeichenfolge, die mit dem Namen des zu suchenden benutzerdefinierten Attributs.
 
- [in] Eine Zeichenfolge, die mit dem Namen des zu suchenden benutzerdefinierten Attributs.
+`ppBlob`\
+[in, out] Ein Array, das mit die benutzerdefinierten Attributdaten gefüllt ist.
 
- `ppBlob`
-
- [in, out] Ein Array, das mit die benutzerdefinierten Attributdaten gefüllt ist.
-
- `pdwLen`
-
- [in, out] Gibt die maximale Anzahl der Bytes, die in Zurückgeben der `ppBlob` array und gibt die Anzahl der tatsächlich in das Array geschriebenen Bytes zurück.
+`pdwLen`\
+[in, out] Gibt die maximale Anzahl der Bytes, die in Zurückgeben der `ppBlob` array und gibt die Anzahl der tatsächlich in das Array geschriebenen Bytes zurück.
 
 ## <a name="return-value"></a>Rückgabewert
  Im Erfolgsfall gibt S_OK zurück, oder gibt S_FALSE zurück, wenn das benutzerdefinierte Attribut nicht vorhanden ist. Andernfalls wird ein Fehlercode zurückgegeben.

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f5eb2542fa16d86dd342ae0e2783ac03ca69ee4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7ecb0935d0589a8473a256650dde39c297d87c0a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920949"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207639"
 ---
 # <a name="idebugengine2removeallsetexceptions"></a>IDebugEngine2::RemoveAllSetExceptions
 Entfernt die Liste der Ausnahmen, die die IDE für eine bestimmte Laufzeit-Architektur oder Sprache festgelegt hat.
@@ -36,10 +39,9 @@ int RemoveAllSetExceptions( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `guidType`
-
- [in] Die GUID für die Sprache oder die GUID für die Debug-Engine, die spezifisch für eine Laufzeit-Architektur ist.
+## <a name="parameters"></a>Parameter
+`guidType`\
+[in] Die GUID für die Sprache oder die GUID für die Debug-Engine, die spezifisch für eine Laufzeit-Architektur ist.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

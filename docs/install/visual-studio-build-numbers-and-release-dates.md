@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 05/07/2019
+ms.date: 05/22/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 7a3d02ad903daba40da5ac0c9a9ebbb320747a49
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: f6a3af52204bb75153e1b39eabcf78b1c0ca0688
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461351"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976185"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio-Buildnummern und -Veröffentlichungstermine
 
@@ -31,6 +31,9 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Releasetermine f
 
 | **Version**| **Kanal** | **Veröffentlichungsdatum** | **Buildversion** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.1.0 | Freigabe | 21. Mai 2019 | 16.1.28917.181 |
+| 16.2.0 | Vorschauversion 1 | 21. Mai 2019 | 16.2.28917.182 |
+| 16.0.4 | Freigabe | 14. Mai 2019 | 16.0.28803.452 |
 | 16.1.0 | Vorschauversion 3 | 6. Mai 2019 | 16.1.28902.138 |
 | 16.0.3 | Freigabe | 30. April 2019 | 16.0.28803.352 |
 | 16.1.0 | Vorschau 2 | 23. April 2019 | 16.1.28822.285 |
@@ -72,10 +75,12 @@ In der folgenden Tabelle werden die bisherigen Buildnummern und Veröffentlichun
 
 | **Version**| **Kanal** | **Veröffentlichungsdatum** | **Buildversion** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.12 | Freigabe | 14. Mai 2019 | 15.9.28307.665 |
+| 15.0.23 | Freigabe | 14. Mai 2019 | 15.0.26228.85 |
 | 15.9.11 | Freigabe | 2. April 2019 | 15.9.28307.586 |
 | 15.9.10 | Freigabe | 25. März 2019 | 15.9.28307.557 |
 | 15.9.9 | Freigabe | 12. März 2019 | 15.9.28307.518 |
-| 15.0.21 | Freigabe | 12. März 2019 | 15.0.26228.76 |
+| 15.0.22 | Freigabe | 12. März 2019 | 15.0.26228.76 |
 | 15.9.8 | Freigabe | 5. März 2019 | 15.9.28307.481 |
 | 15.9.7 | Freigabe | 12. Februar 2019 | 15.9.28307.423 |
 | 15.0.21 | Freigabe | 12. Februar 2019 | 15.0.26228.73 |

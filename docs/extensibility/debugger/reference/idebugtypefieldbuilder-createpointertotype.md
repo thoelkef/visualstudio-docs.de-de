@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aae81d575585c9a960b3405a35047853e5fe1f4e
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 1e93cfc4c8a1ddb618286f79513874f8f89a9481
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226004"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199433"
 ---
 # <a name="idebugtypefieldbuildercreatepointertotype"></a>IDebugTypeFieldBuilder::CreatePointerToType
 Erstellt einen Zeiger auf den angegebenen Typ.
@@ -41,13 +41,11 @@ int CreatePointerToType(
 ```
 
 ## <a name="parameters"></a>Parameter
- `pTypeField`\
+`pTypeField`\
+[in] Typ, um zu zeigen. Es wird dargestellt, durch die [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) Schnittstelle.
 
- [in] Typ, um zu zeigen. Es wird dargestellt, durch die [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) Schnittstelle.
-
- `pPtrToTypeField`\
-
- [out] Gibt zurück, den Zeiger von einem neuen dargestellt **IDebugField** Objekt.
+`pPtrToTypeField`\
+[out] Gibt zurück, den Zeiger von einem neuen dargestellt **IDebugField** Objekt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

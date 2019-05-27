@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cfc50f104c5fc942794c2e421f5aee508662ea3b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3e708c75649f28654095e6906c4d86408d3f166e
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921704"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204964"
 ---
 # <a name="idebugdisassemblystream2getdocument"></a>IDebugDisassemblyStream2::GetDocument
 Ruft das Quelldokument, das diesen Eingabedatenstrom zugeordnet.
@@ -38,14 +41,12 @@ int GetDocument( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `bstrDocumentUrl`
+## <a name="parameters"></a>Parameter
+`bstrDocumentUrl`\
+[in] Die URL des Dokuments.
 
- [in] Die URL des Dokuments.
-
- `ppDocument`
-
- [out] Gibt eine [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) Objekt, das das Dokument darstellt.
+`ppDocument`\
+[out] Gibt eine [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) Objekt, das das Dokument darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

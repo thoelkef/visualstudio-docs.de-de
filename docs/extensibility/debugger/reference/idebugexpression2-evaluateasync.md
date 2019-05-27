@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2212738a2d2d14ec454cfd42db44f812f72a035a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 55037d4a7dbc25cb422929020cf674eb41fbfe93
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920169"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204142"
 ---
 # <a name="idebugexpression2evaluateasync"></a>IDebugExpression2::EvaluateAsync
 Diese Methode wertet den Ausdruck asynchron aus.
@@ -38,14 +41,12 @@ int EvaluateAsync(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
-`dwFlags`
+## <a name="parameters"></a>Parameter
+`dwFlags`\
+[in] Eine Kombination von Flags aus der [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) -Enumeration, die Auswertung des Ausdrucks steuern.
 
- [in] Eine Kombination von Flags aus der [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) -Enumeration, die Auswertung des Ausdrucks steuern.
-
-`pExprCallback`
-
- [in] Dieser Parameter ist immer ein null-Wert.
+`pExprCallback`\
+[in] Dieser Parameter ist immer ein null-Wert.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`; gibt andernfalls einen Fehlercode zurück. Ein typischer Fehlercode ist:

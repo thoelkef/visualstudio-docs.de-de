@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5cf00fc85a2b3f3dc09704227f84fa5b2e90ee6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7e861a67ada36bd25b30e08bf8a62163bceea979
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918478"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211297"
 ---
 # <a name="idebugobjectsetreferencevalue"></a>IDebugObject::SetReferenceValue
 Legt den Verweiswert, der dieses Objekt.
@@ -36,10 +39,9 @@ int SetReferenceValue(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `pObject`
-
- [in] Ein [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) Objekt, das den neuen Verweiswert darstellt.
+## <a name="parameters"></a>Parameter
+`pObject`\
+[in] Ein [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) Objekt, das den neuen Verweiswert darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
  Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.

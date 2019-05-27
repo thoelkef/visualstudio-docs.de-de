@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e863d6af1ed78fc0fe3c4d683386826708c39708
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b395f49a8f222edb97e43610ae625fd154d8f320
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922458"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206122"
 ---
 # <a name="idebugcomplussymbolproviderreplacesymbols"></a>IDebugComPlusSymbolProvider::ReplaceSymbols
 Ersetzt die aktuelle Debugsymbole mit den Angaben in den angegebenen Datenstrom.
@@ -39,18 +42,15 @@ int ReplaceSymbols(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
-`ulAppDomainID`
+## <a name="parameters"></a>Parameter
+`ulAppDomainID`\
+[in] Der Bezeichner der Anwendungsdomäne.
 
- [in] Der Bezeichner der Anwendungsdomäne.
+`guidModule`\
+[in] Eindeutiger Bezeichner des Moduls.
 
-`guidModule`
-
- [in] Eindeutiger Bezeichner des Moduls.
-
-`pStream`
-
- [in] Ein Datenstrom, der die neue Symbole enthält.
+`pStream`\
+[in] Ein Datenstrom, der die neue Symbole enthält.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
