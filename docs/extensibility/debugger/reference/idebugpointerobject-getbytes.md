@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a2c93e032175ce556d5504ed8b3f57dcf619a61
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d108613c7a557c189a2c42880a5618b42e0bd3b8
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842703"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209386"
 ---
 # <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
 Ruft den Wert als eine Reihe von aufeinander folgenden Bytes gezeigt wird.
@@ -42,22 +45,18 @@ int GetBytes(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `dwStart`
+## <a name="parameters"></a>Parameter
+`dwStart`\
+[in] Ein Offset in Bytes vom Beginn des Objekts auf den verwiesen wird.
 
- [in] Ein Offset in Bytes vom Beginn des Objekts auf den verwiesen wird.
+`dwCount`\
+[in] Die Anzahl der abzurufenden Bytes.
 
- `dwCount`
+`pBytes`\
+[in, out] Ein Array, das mit dem Wert als eine Reihe von aufeinander folgenden Bytes gefüllt ist, auf die am angegebenen Offset aus dem Objekt ab.
 
- [in] Die Anzahl der abzurufenden Bytes.
-
- `pBytes`
-
- [in, out] Ein Array, das mit dem Wert als eine Reihe von aufeinander folgenden Bytes gefüllt ist, auf die am angegebenen Offset aus dem Objekt ab.
-
- `pdwBytes`
-
- [out] Gibt die Anzahl der Bytes, die tatsächlich abgerufen.
+`pdwBytes`\
+[out] Gibt die Anzahl der Bytes, die tatsächlich abgerufen.
 
 ## <a name="return-value"></a>Rückgabewert
  Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.

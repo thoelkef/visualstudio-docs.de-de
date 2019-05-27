@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1225729ceb6d1a874f4ca5bedef287ababbdb962
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 12538409635675ad71ba2951297d3de90f389769
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457441"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199735"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesinfo"></a>IDebugSymbolProviderDirect::GetCurrentModulesInfo
 Ruft Informationen über die Module in der Gruppe "Symbol" ab.
@@ -47,25 +47,20 @@ int GetCurrentModulesInfo(
 ```
 
 ## <a name="parameters"></a>Parameter
- `pCount`\
+`pCount`\
+[in] Anzahl der Module in der `ppGuids` Array.
 
- [in] Anzahl der Module in der `ppGuids` Array.
+`ppGuids`\
+[in] Ein Array, das die eindeutigen Bezeichner für die Module enthält.
 
- `ppGuids`\
+`pADIds`\
+[in] Der Bezeichner für Anwendungsdomänen.
 
- [in] Ein Array, das die eindeutigen Bezeichner für die Module enthält.
+`pCurrentState`\
+[in] Aktuellen Status der Gruppe "Symbol".
 
- `pADIds`\
-
- [in] Der Bezeichner für Anwendungsdomänen.
-
- `pCurrentState`\
-
- [in] Aktuellen Status der Gruppe "Symbol".
-
- `ppCDModItfs`\
-
- [out] Gibt ein Objekt, das die Module in der Gruppe "Symbol" enthält.
+`ppCDModItfs`\
+[out] Gibt ein Objekt, das die Module in der Gruppe "Symbol" enthält.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8169d5ec4c212cbf09ff3273f0338b3e905d721
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8aca9231f8b5024199e9ee2bc79cb2d33b31628c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875787"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205011"
 ---
 # <a name="idebugdisassemblystream2getcodelocationid"></a>IDebugDisassemblyStream2::GetCodeLocationId
 Gibt einen Code-Speicherort-Bezeichner für einen bestimmten Code-Kontext zurück.
@@ -38,14 +41,11 @@ int GetCodeLocationId( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `pCodeContext`
+## <a name="parameters"></a>Parameter
+`pCodeContext`\
+[in] Ein [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) Objekt, das auf einen Bezeichner konvertiert werden.
 
- [in] Ein [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) Objekt, das auf einen Bezeichner konvertiert werden.
-
- `puCodeLocationId`
-
- [out] Gibt den Code-Ort-Bezeichner. Siehe Hinweise.
+`puCodeLocationId` [out] Gibt den Code-Ort-Bezeichner. Siehe Hinweise.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Gibt `E_CODE_CONTEXT_OUT_OF_SCOPE` , wenn der Codekontext gültig ist, aber außerhalb des Bereichs.

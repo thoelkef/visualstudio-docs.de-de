@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3b086a6f0c4d343aaa7b0d58dd93db74a043fa65
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 99dd88cfef1b9fe2adad7f0ac7aebf6a810e368f
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458770"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212372"
 ---
 # <a name="idebugpropertyfieldgetpropertygetter"></a>IDebugPropertyField::GetPropertyGetter
 Ruft die Methode ab, die die Eigenschaft abruft.
@@ -40,9 +40,8 @@ int GetPropertyGetter(
 ```
 
 ## <a name="parameters"></a>Parameter
- `ppField`\
-
- [out] Gibt eine [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) Objekt, das die Methode, die die Eigenschaft ruft darstellt.
+`ppField`\
+[out] Gibt eine [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) Objekt, das die Methode, die die Eigenschaft ruft darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
  Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.

@@ -6,16 +6,16 @@ ms.author: crdun
 ms.date: 04/02/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 335871a2a1d43230a7e9017711d37becdaef6f54
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: ccdedcb82b06ec2723555f8dedcf3b628e392137
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65615476"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976137"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Visual Studio 2019 für Mac: Überblick
 
-Visual Studio für Mac ist eine _integrierte Entwicklungsumgebung_ für .NET auf dem Mac, die Sie verwenden können, um Code erst zu bearbeiten, zu debuggen und zu kompilieren und um anschließend eine App zu veröffentlichen. Neben erwarteten Features wie einem Standard-Editor und -debugger enthält Visual Studio für Mac Compiler, Codevervollständigungstools, grafische Designer und die Quellcodeverwaltung zur Erleichterung der Entwicklung von Software.
+Visual Studio für Mac ist eine _integrierte Entwicklungsumgebung_ für .NET auf dem Mac, die Sie verwenden können, um Code erst zu bearbeiten, zu debuggen und zu kompilieren und um anschließend eine App zu veröffentlichen. Neben erwarteten Features wie einem Standard-Editor und -Debugger enthält Visual Studio für Mac Compiler, Codevervollständigungstools, grafische Designer und die Quellcodeverwaltung zur Erleichterung der Entwicklung von Software.
 
 Visual Studio für Mac unterstützt viele der Dateitypen, die auch vom entsprechenden Windows-Pendant unterstützt werden (z.B. `.csproj`-, `.fsproj`- oder `.sln`-Dateien), sowie Features wie EditorConfig. Sie können also die integrierte Entwicklungsumgebung verwenden, die Ihren Anforderungen am besten entspricht.
 Das Erstellen, Öffnen und Entwickeln einer Anwendung ist eine vertraute Erfahrung für jeden, der schon einmal Visual Studio unter Windows verwendet hat. Zusätzlich werden auch in Visual Studio für Mac die leistungsstarken Tools eingesetzt, die sein Windows-Pendant zu einer derartig leistungsfähigen IDE machen. Die Roslyn-Compilerplattform wird für das Refactoring und IntelliSense verwendet. Das Projektsystem und die Build-Engine verwenden MSBuild. Der Quell-Editor unterstützt TextMate-Bündel. Das Produkt verwendet die gleichen Debugger-Engines für Xamarin- und .NET Core-Apps und die gleichen Designer für Xamarin.iOS und Xamarin.Android.

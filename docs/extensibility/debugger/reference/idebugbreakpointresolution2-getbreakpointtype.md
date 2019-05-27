@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ab8bc16da26b1c47ecdda79db361e24b68e2e82
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 11492bf05ae7264263c9347304cc01ae3cf3d89b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876887"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204022"
 ---
 # <a name="idebugbreakpointresolution2getbreakpointtype"></a>IDebugBreakpointResolution2::GetBreakpointType
 Ruft den Typ des Haltepunkts durch diese Lösung dargestellt.
@@ -36,10 +39,9 @@ int GetBreakpointType( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
-`pBPType`
-
- [out] Gibt einen Wert aus der [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) -Enumeration, der den Typ des Haltepunkts angibt.
+## <a name="parameters"></a>Parameter
+`pBPType`\
+[out] Gibt einen Wert aus der [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) -Enumeration, der den Typ des Haltepunkts angibt.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`; gibt andernfalls einen Fehlercode zurück. Gibt E_FAIL zurück, wenn die `bpResLocation` im zugehörigen Feld [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) Struktur ist ungültig.

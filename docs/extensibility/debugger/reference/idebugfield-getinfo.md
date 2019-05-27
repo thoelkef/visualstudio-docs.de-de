@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96ce3c428785bd6b817cb8ce0f97f14a87180d0c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3d28db6824afe6230cc8e00fae8e144dc541af59
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873874"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212198"
 ---
 # <a name="idebugfieldgetinfo"></a>IDebugField::GetInfo
 Diese Methode ruft die anzeigbare Informationen über das Feld ab.
@@ -38,14 +41,12 @@ int GetInfo(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `dwFields`
+## <a name="parameters"></a>Parameter
+`dwFields`\
+[in] Eine Kombination von [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) Konstanten, die die Informationen, die angezeigt wird, werden ausgewählt. Wenn das Feld ein Symbol darstellt, ist dies in der Regel den Symbolnamen und Typ.
 
- [in] Eine Kombination von [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) Konstanten, die die Informationen, die angezeigt wird, werden ausgewählt. Wenn das Feld ein Symbol darstellt, ist dies in der Regel den Symbolnamen und Typ.
-
- `pFieldInfo`
-
- [out] Gibt Informationen zurück, in der angegebenen [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) Struktur.
+`pFieldInfo`\
+[out] Gibt Informationen zurück, in der angegebenen [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) Struktur.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

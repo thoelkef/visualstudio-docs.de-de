@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 510ffebfd1bbff116b4899663baac7cf6f1087d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0a6dbb866e72dcdb0993b4739ba34b5fda29e403
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923101"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210019"
 ---
 # <a name="idebugbreakpointunboundevent2getbreakpoint"></a>IDebugBreakpointUnboundEvent2::GetBreakpoint
 Ruft ab, die nicht gebundene Haltepunkt.
@@ -36,10 +39,9 @@ int GetBreakpoint(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
-`ppBP`
-
- [out] Gibt eine [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) -Objekt, das den Haltepunkt darstellt, die aufgehoben wurden.
+## <a name="parameters"></a>Parameter
+`ppBP`\
+[out] Gibt eine [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) -Objekt, das den Haltepunkt darstellt, die aufgehoben wurden.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

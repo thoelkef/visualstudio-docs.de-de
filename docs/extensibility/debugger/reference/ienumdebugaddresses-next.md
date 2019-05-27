@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a990c0843d34a0458e8646bea18e9bcc056e40b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4d8cb666478b870242a9fd9a7a5b0c8bd9ba60a1
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915038"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203589"
 ---
 # <a name="ienumdebugaddressesnext"></a>IEnumDebugAddresses::Next
 Diese Methode gibt den nächsten Satz von Elementen aus der Enumeration.
@@ -40,18 +43,15 @@ int Next(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `celt`
+## <a name="parameters"></a>Parameter
+`celt`\
+[in] Die Anzahl der abzurufenden Elemente. Gibt auch die maximale Größe der `rgelt` Array.
 
- [in] Die Anzahl der abzurufenden Elemente. Gibt auch die maximale Größe der `rgelt` Array.
+`rgelt`\
+[in, out] Array von [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) Elementen gefüllt werden soll.
 
- `rgelt`
-
- [in, out] Array von [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) Elementen gefüllt werden soll.
-
- `pceltFetched`
-
- [out] Gibt die Anzahl der im tatsächlich zurückgegebenen Elemente `rgelt`.
+`pceltFetched`\
+[out] Gibt die Anzahl der im tatsächlich zurückgegebenen Elemente `rgelt`.
 
 ## <a name="return-value"></a>Rückgabewert
  Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn weniger als die angeforderte Anzahl von Elementen zurückgegeben werden können; andernfalls wird ein Fehlercode zurückgegeben.

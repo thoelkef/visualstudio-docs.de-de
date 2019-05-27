@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a233a37f83ff3f75b5cf0ec103e59da91f1473bd
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: a083b3d2eeb05a07837b826b5cb35ccedb0c1722
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458459"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66198720"
 ---
 # <a name="ipropertyproxyeesideinplaceupdateobject"></a>IPropertyProxyEESide::InPlaceUpdateObject
 Aktualisiert die Daten des Objekts mit dem angegebenen Objekt und gibt ein neues Datenobjekt, das neue Daten des Objekts darstellt.
@@ -42,13 +42,11 @@ int InPlaceUpdateObject(
 ```
 
 ## <a name="parameters"></a>Parameter
- `dataIn`\
+`dataIn`\
+[in] Ein [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) -Objekt, das die neuen Daten enthält.
 
- [in] Ein [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) -Objekt, das die neuen Daten enthält.
-
- `dataOut`\
-
- [out] Gibt eine neue `IEEDataStorage` -Objekt, das die ersetzten Daten enthält.
+`dataOut`\
+[out] Gibt eine neue `IEEDataStorage` -Objekt, das die ersetzten Daten enthält.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

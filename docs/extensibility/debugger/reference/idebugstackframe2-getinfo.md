@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1db085059b93eac4afd9f03ed17b5e267411a373
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 71bb25e93cc1a3f97e61e269270cd87a0bc36558
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458538"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209967"
 ---
 # <a name="idebugstackframe2getinfo"></a>IDebugStackFrame2::GetInfo
 Ruft eine Beschreibung des Stapelrahmens ab.
@@ -44,17 +44,14 @@ int GetInfo ( 
 ```
 
 ## <a name="parameters"></a>Parameter
- `dwFieldSpec`\
+`dwFieldSpec`\
+[in] Eine Kombination von Flags aus der [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) Enumeration, der angibt, welche Felder von der `pFrameInfo` Parameter sind gefüllt werden soll.
 
- [in] Eine Kombination von Flags aus der [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) Enumeration, der angibt, welche Felder von der `pFrameInfo` Parameter sind gefüllt werden soll.
+`nRadix`\
+[in] Die Basis bei der Formatierung von numerischen Informationen verwendet werden.
 
- `nRadix`\
-
- [in] Die Basis bei der Formatierung von numerischen Informationen verwendet werden.
-
- `pFrameInfo`\
-
- [out] Ein [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) -Struktur, die mit der Beschreibung des Stapelrahmens gefüllt wird.
+`pFrameInfo`\
+[out] Ein [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) -Struktur, die mit der Beschreibung des Stapelrahmens gefüllt wird.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

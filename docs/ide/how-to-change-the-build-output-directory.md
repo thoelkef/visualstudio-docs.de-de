@@ -1,6 +1,6 @@
 ---
 title: 'Vorgehensweise: Ändern des Buildausgabeverzeichnisses'
-ms.date: 11/04/2016
+ms.date: 05/15/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,32 +11,43 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ea7cae6dd709e407a5c1a9832092586d217689b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0fda2363ec63572f29c6687cc10ee9a7ee06c76
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824229"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805051"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Vorgehensweise: Ändern des Buildausgabeverzeichnisses
 
-Sie können den Speicherort der vom das Projekt generierten Ausgabe auf Basis der Konfiguration („Debug“, „Release“ oder beides) angeben.
-
-> [!NOTE]
-> Wenn Sie über ein **Setup**-Projekt verfügen, beachten Sie den Hinweis am Ende dieses Artikels.
+Sie können den Speicherort der von Ihrem Projekt generierten Ausgabe auf Basis der Konfiguration („Debug“, „Release“ oder beides) angeben.
 
 ## <a name="change-the-build-output-directory"></a>Ändern des Buildausgabeverzeichnisses
 
-1. Wählen Sie in der Menüleiste **Projekt** > **\<App-Name> Eigenschaften** aus. Klicken Sie im **Projektmappen-Explorer** erst mit der rechten Maustaste auf den Projektknoten und anschließend mit der Linken auf **Eigenschaften**.
+1. Navigieren Sie zur Seite mit den Projekteigenschaften. Klicken Sie hierzu im **Projektmappen-Explorer** mit der rechten Maustaste auf den Projektknoten, und wählen Sie **Eigenschaften** aus.
 
-2. Wenn Sie ein Visual Basic-Projekt haben, wählen Sie die Registerkarte **Kompilieren** . Wenn Sie ein C#-Projekt haben, wählen Sie die Registerkarte **Build** aus. Wenn Sie ein C++-Projekt oder ein JavaScript-Projekt haben, wählen Sie die Registerkarte **Allgemein** .
+2. Wählen Sie basierend auf Ihren Projekttyp die entsprechende Registerkarte:
 
-3. Wählen Sie in der Konfigurationen-Dropdownliste am oberen Rand die Konfiguration aus, deren Speicherort der Ausgabedatei Sie ändern möchten („Debug“, „Release“ oder beides).
+   - Wählen Sie für C# die Registerkarte **Erstellen** aus.
+   - Wählen Sie für Visual Basic die Registerkarte **Kompilieren** aus.
+   - Wählen Sie für C++ oder JavaScript die Registerkarte **Allgemein**.
 
-     Suchen Sie den Eintrag des Ausgabepfads (**Buildausgabepfad** in Visual Basic **Ausgabeverzeichnis** in Visual C++, **Ausgabepfad** in JavaScript und C#). Geben Sie ein neues Buildausgabeverzeichnis relativ zum Projektverzeichnis an.
+3. Wählen Sie in der Konfigurationen-Dropdownliste am oberen Rand die Konfiguration aus, deren Speicherort der Ausgabedatei Sie ändern möchten (**Debug**, **Release** oder **Alle Konfigurationen**).
 
-> [!NOTE]
-> In einem Setup-Projekt wird durch das Feld **Ausgabedateiname** lediglich der Speicherort der Datei *Setup.exe* und nicht der Speicherort der Projektdateien geändert. Weitere Informationen finden Sie unter **Build, Configuration Properties, Deployment Project Properties dialog box (Dialogfelder „Erstellen“, „Konfigurationseigenschaften“ und „Bereitstellungsprojekteigenschaften“)**.
+4. Suchen Sie auf der Seite den Eintrag des Ausgabepfads. Er unterscheidet sich je nach Projekttyp:
+
+   - **Ausgabepfad** für C#- und JavaScript-Projekte
+   - **Buildausgabepfad** für Visual Basic-Projekte
+   - **Ausgabeverzeichnis** für Visual C++-Projekte
+
+   Geben Sie den Pfad zum Generieren der Ausgabe (absolut oder relativ zum Stammverzeichnis des Projekts) ein, oder wählen Sie **Durchsuchen**, um stattdessen zu diesem Ordner zu navigieren.
+
+   ![Ausgabepfadeigenschaft für ein Visual Studio C#-Projekt](media/output-path.png)
+
+> [!TIP]
+> Wenn die Ausgabe nicht an dem festgelegten Speicherort generiert wird, müssen Sie in der Menüleiste von Visual Studio die entsprechende Konfiguration (z. B. **Debuggen** oder **Version**) erstellen.
+>
+> ![Auswahl der Buildkonfiguration in Visual Studio 2019](media/build-configuration-chooser.png)
 
 ## <a name="see-also"></a>Siehe auch
 

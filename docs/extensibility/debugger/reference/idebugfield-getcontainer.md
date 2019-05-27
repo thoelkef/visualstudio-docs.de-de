@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 283e23a70b95e3882569dbb18dda7ba365b8b765
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 08ce207a4961ed9345c46ca7d19390647dc514b1
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919487"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212275"
 ---
 # <a name="idebugfieldgetcontainer"></a>IDebugField::GetContainer
 Diese Methode ruft den Container eines Felds ab.
@@ -36,10 +39,9 @@ int GetContainer(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `ppContainerField`
-
- [out] Gibt den Container zurück, dargestellt durch die [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) Schnittstelle.
+## <a name="parameters"></a>Parameter
+`ppContainerField`\
+[out] Gibt den Container zurück, dargestellt durch die [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) Schnittstelle.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

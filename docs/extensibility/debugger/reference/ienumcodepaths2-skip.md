@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ef5b18ba54f3814469998ce0d60838e94beee6f7
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: d33e802655c1f359a6ce00c092d1bcca14040ee1
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223344"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203635"
 ---
 # <a name="ienumcodepaths2skip"></a>IEnumCodePaths2::Skip
 Überspringt die angegebene Anzahl von Elementen.
@@ -40,9 +40,8 @@ int Skip(
 ```
 
 ## <a name="parameters"></a>Parameter
- `celt`\
-
- [in] Die Anzahl der zu überspringenden Elemente.
+`celt`\
+[in] Die Anzahl der zu überspringenden Elemente.
 
 ## <a name="return-value"></a>Rückgabewert
  Gibt bei Erfolg `S_OK` zurück. Gibt `S_FALSE` Wenn `celt` größer als die Anzahl der verbleibenden Elemente ist; andernfalls ein Fehlercode zurückgegeben.

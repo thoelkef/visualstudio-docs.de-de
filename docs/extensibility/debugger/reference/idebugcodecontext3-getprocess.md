@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81ee68246aa999c8ac610b9590f914388e6fbbf2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 598bb33739a31bd09c733dddb3279d043cd68c81
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876938"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206650"
 ---
 # <a name="idebugcodecontext3getprocess"></a>IDebugCodeContext3::GetProcess
 Ruft einen Verweis auf die Schnittstelle von der Debug-Prozess ab.
@@ -34,10 +37,9 @@ public int GetProcess(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
-`ppProcess`
-
- [out] Verweis auf die Debug-Process-Schnittstelle.
+## <a name="parameters"></a>Parameter
+`ppProcess`\
+[out] Verweis auf die Debug-Process-Schnittstelle.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

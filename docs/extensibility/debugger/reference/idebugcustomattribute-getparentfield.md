@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 158887e9f2d7d7b250b435570d6780e460508816
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a6bdb5daee7fa0c2b8dc5228998a8ac0fd22fec0
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921658"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205318"
 ---
 # <a name="idebugcustomattributegetparentfield"></a>IDebugCustomAttribute::GetParentField
 Ruft das Feld, das an dem das benutzerdefinierte Attribut angefügt ist.
@@ -36,10 +39,9 @@ int GetParentField(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `ppField`
-
- [out] Gibt die [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) -Objekt, das Feld darstellt, an dem das benutzerdefinierte Attribut angefügt ist.
+## <a name="parameters"></a>Parameter
+`ppField`\
+[out] Gibt die [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) -Objekt, das Feld darstellt, an dem das benutzerdefinierte Attribut angefügt ist.
 
 ## <a name="return-value"></a>Rückgabewert
  Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.

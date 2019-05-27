@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8579504f549cb078fee178127c7396896fce5313
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 80fc504752e181ec75da32f2d1da5dcbf902daf7
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399398"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037388"
 ---
 # <a name="general-debugging-options"></a>Allgemeine Optionen für das Debuggen
 
@@ -136,7 +136,7 @@ Verwenden Sie `dumpbin /exports`, um festzustellen, welche Symbole in der Export
 
 - **Laufzeittools in Anwendung anzeigen**: Zeigt die **Live Visual Tree** Befehle in einer Symbolleiste des Hauptfensters der XAML-Anwendung, die gedebuggt wird. Diese Option wurde in Visual Studio 2015 Update 2 eingeführt.
 
-- **„Bearbeiten und Fortfahren – XAML“ aktivieren**:   Ermöglicht Ihnen, verwenden die Bearbeitung und Fortsetzen von XAML-Code-Funktion.
+- **Aktivieren von "Hot" Reload XAML**: Können Sie die XAML-Funktion "Hot" Reload mit XAML-Code verwenden, wenn Ihre app ausgeführt wird. (Diese Funktion wurde bereits aufgerufen "XAML bearbeiten und Fortfahren")
 
 **Diagnosetools beim Debuggen aktivieren**: Das Fenster **Diagnosetools** wird während des Debuggens angezeigt.
 

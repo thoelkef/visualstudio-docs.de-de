@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b261ca6973d938f8530ea75788d6ba6779ea9f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7b77a8409a038de137d3852d6dd26bf84d17b991
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62870488"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200297"
 ---
 # <a name="idebugprogram2enumthreads"></a>IDebugProgram2::EnumThreads
 Ruft eine Liste der Threads, die in das Programm ausgeführt werden.
@@ -36,10 +39,9 @@ int EnumThreads( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `ppEnum`
-
- [out] Gibt eine [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md) -Objekt, das eine Liste der Threads enthält.
+## <a name="parameters"></a>Parameter
+`ppEnum`\
+[out] Gibt eine [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md) -Objekt, das eine Liste der Threads enthält.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

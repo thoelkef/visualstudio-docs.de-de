@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f700a6f6ff06fb37660419c46a394a0449d976bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: de41c3f611383afabfd6fe051edb8dbe83d266b4
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871288"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202764"
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
 Fügt der Sitzung Debug-Manager (SDM) an den Prozess an.
@@ -42,22 +45,18 @@ int Attach( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `pCallback`
+## <a name="parameters"></a>Parameter
+`pCallback`\
+[in] Ein [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) -Objekt, das verwendet wird, für die Debug-ereignisbenachrichtigung.
 
- [in] Ein [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) -Objekt, das verwendet wird, für die Debug-ereignisbenachrichtigung.
+`rgguidSpecificEngines`\
+[in] Ein Array von GUIDs von Debug-Engines verwendet werden, zum Debuggen von Programmen, die im Prozess ausgeführt werden soll. Dieser Parameter kann ein null-Wert sein. Einzelheiten finden Sie unter "Hinweise".
 
- `rgguidSpecificEngines`
+`celtSpecificEngines`\
+[in] Die Anzahl der Debug-engines in die `rgguidSpecificEngines` Array und die Größe der `rghrEngineAttach` Array.
 
- [in] Ein Array von GUIDs von Debug-Engines verwendet werden, zum Debuggen von Programmen, die im Prozess ausgeführt werden soll. Dieser Parameter kann ein null-Wert sein. Einzelheiten finden Sie unter "Hinweise".
-
- `celtSpecificEngines`
-
- [in] Die Anzahl der Debug-engines in die `rgguidSpecificEngines` Array und die Größe der `rghrEngineAttach` Array.
-
- `rghrEngineAttach`
-
- [in, out] Ein Array von HRESULT-Codes, die von der Debug-Engines zurückgegeben. Die Größe dieses Arrays wird angegeben, der `celtSpecificEngines` Parameter. Jeder Code ist in der Regel entweder `S_OK` oder `S_ATTACH_DEFERRED`. Letztere gibt an, dass die DE derzeit keine Programme hinzugefügt wird.
+`rghrEngineAttach`\
+[in, out] Ein Array von HRESULT-Codes, die von der Debug-Engines zurückgegeben. Die Größe dieses Arrays wird angegeben, der `celtSpecificEngines` Parameter. Jeder Code ist in der Regel entweder `S_OK` oder `S_ATTACH_DEFERRED`. Letztere gibt an, dass die DE derzeit keine Programme hinzugefügt wird.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Die folgende Tabelle zeigt weitere mögliche Werte.

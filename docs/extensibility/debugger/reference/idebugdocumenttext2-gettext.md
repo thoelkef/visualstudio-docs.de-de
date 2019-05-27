@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3eb4eae82dd11d58734ed114886c9ec121b60b69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 62ee27d9780ba1bb3941320604ade1d3cf16e5fc
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875185"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203320"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
 Ruft den Text aus der angegebenen Position im Dokument ab.
@@ -42,22 +45,18 @@ int GetText(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
-`pos`
+## <a name="parameters"></a>Parameter
+`pos`\
+[in] Ein [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) -Struktur, die den Speicherort der Text, der abgerufen werden angibt.
 
- [in] Ein [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) -Struktur, die den Speicherort der Text, der abgerufen werden angibt.
+`cMaxChars`\
+[in] Die maximale Anzahl von Zeichen des Texts abgerufen werden sollen.
 
-`cMaxChars`
+`pText`\
+[in, out] Ein Zeiger auf einen Puffer, der sich mit den gewünschten Text gefüllt werden soll. Dieser Puffer muss in der Lage, mindestens enthalten `cMaxChars` Anzahl von Breitzeichen.
 
- [in] Die maximale Anzahl von Zeichen des Texts abgerufen werden sollen.
-
-`pText`
-
- [in, out] Ein Zeiger auf einen Puffer, der sich mit den gewünschten Text gefüllt werden soll. Dieser Puffer muss in der Lage, mindestens enthalten `cMaxChars` Anzahl von Breitzeichen.
-
-`pcNumChars`
-
- [out] Gibt die Anzahl von Zeichen, die tatsächlich abgerufen.
+`pcNumChars`\
+[out] Gibt die Anzahl von Zeichen, die tatsächlich abgerufen.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

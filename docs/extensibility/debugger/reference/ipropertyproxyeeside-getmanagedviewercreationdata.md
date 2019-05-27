@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 09d86fb259cb4fe04b55211acbd60833e6362855
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: d8ae4a20735c02f564cbf5c749247ec16572c034
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458151"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66198824"
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
 Ruft Informationen zu den Viewer für diesen Eigenschaftentyp um Instanziieren dieser Viewer ab.
@@ -50,29 +50,23 @@ int GetManagedViewerCreationData(
 ```
 
 ## <a name="parameters"></a>Parameter
- `assemName`\
+`assemName`\
+[out] Gibt den Namen der Assembly, die dieses Objekt enthält.
 
- [out] Gibt den Namen der Assembly, die dieses Objekt enthält.
+`assemBytes`\
+[out] Gibt eine [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) -Objekt, das die Assemblybytes dieses Objekts (Dies ist ein null-Wert, wenn keine Bytes verfügbar sind) enthält.
 
- `assemBytes`\
+`assemPdb`\
+[out] Gibt eine `IEEDataStorage` Objektspeicher, die Symbol enthält Informationen für dieses Objekt (Dies ist ein null-Wert, wenn kein Symbolspeicher verfügbar ist).
 
- [out] Gibt eine [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) -Objekt, das die Assemblybytes dieses Objekts (Dies ist ein null-Wert, wenn keine Bytes verfügbar sind) enthält.
+`className`\
+[out] Gibt den Namen der Klasse, die dieses Objekt zurück.
 
- `assemPdb`\
+`alr`\
+[out] Gibt einen Wert aus der [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) Enumeration, die den Speicherort der Assembly angibt.
 
- [out] Gibt eine `IEEDataStorage` Objektspeicher, die Symbol enthält Informationen für dieses Objekt (Dies ist ein null-Wert, wenn kein Symbolspeicher verfügbar ist).
-
- `className`\
-
- [out] Gibt den Namen der Klasse, die dieses Objekt zurück.
-
- `alr`\
-
- [out] Gibt einen Wert aus der [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) Enumeration, die den Speicherort der Assembly angibt.
-
- `replacementOk`\
-
- [out] Ungleich NULL zurückgibt (`TRUE`), wenn der Wert des Objekts geändert werden kann; NULL (`FALSE`), wenn das Objekt schreibgeschützt ist.
+`replacementOk`\
+[out] Ungleich NULL zurückgibt (`TRUE`), wenn der Wert des Objekts geändert werden kann; NULL (`FALSE`), wenn das Objekt schreibgeschützt ist.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
