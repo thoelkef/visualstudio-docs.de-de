@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erstellen eines Projektelements Spalte mit einer Projektvorlage, Teil 1 | Microsoft-Dokumentation'
+title: Erstellen Sie Website-Spaltenelement-Projekt mit der Projektvorlage, Teil 1
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 34808d70a7df1bf5d030e4205de34ff3ec4d03b2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 60e4f4e035b381b8bfda8e14ee705471b0fad2b8
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430383"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177561"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Exemplarische Vorgehensweise: Erstellen eines Projektelements Spalte mit einer Projektvorlage, Teil 1
   SharePoint-Projekte sind Container für SharePoint-Projektelemente. Sie können das SharePoint-Projektsystem in Visual Studio erweitern, indem Sie eigene SharePoint-Projektelementtypen erstellen und diese dann einer Projektvorlage zuordnen. In dieser exemplarischen Vorgehensweise definieren Sie einen Projektelementtyp zum Erstellen einer Websitespalte. Anschließend erstellen Sie eine Projektvorlage, mit der ein neues Projekt erstellt werden kann, das ein Projektelement einer Websitespalte enthält.
@@ -164,7 +164,7 @@ ms.locfileid: "63430383"
    > [!IMPORTANT]
    > In der **SharePoint Customization Wizard**, wählen Sie nicht die **als farmlösung bereitstellen** Optionsfeld aus.
 
-3. Dem Projekt ein leeres Projektelement hinzugefügt werden soll, und nennen Sie das Element **"Field1"**.
+3. Dem Projekt ein leeres Projektelement hinzugefügt werden soll, und nennen Sie das Element **"Field1"** .
 
 4. Speichern Sie das Projekt, und schließen Sie die zweite Instanz von [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
@@ -250,7 +250,7 @@ ms.locfileid: "63430383"
     using System.Security;
     ```
 
-     Wenn die **Sandkastenlösung** eines SharePoint-Projekts-Eigenschaftensatz auf **"true"**, Visual Studio fügt die <xref:System.Security.AllowPartiallyTrustedCallersAttribute> der Codedatei "AssemblyInfo". Der Namespace <xref:System.Security> wird von der Codedatei AssemblyInfo in Projektvorlage allerdings nicht standardmäßig importiert. Sie müssen dies hinzufügen **mit** oder **Importe** Anweisung, um zu verhindern, dass Kompilierungsfehler.
+     Wenn die **Sandkastenlösung** eines SharePoint-Projekts-Eigenschaftensatz auf **"true"** , Visual Studio fügt die <xref:System.Security.AllowPartiallyTrustedCallersAttribute> der Codedatei "AssemblyInfo". Der Namespace <xref:System.Security> wird von der Codedatei AssemblyInfo in Projektvorlage allerdings nicht standardmäßig importiert. Sie müssen dies hinzufügen **mit** oder **Importe** Anweisung, um zu verhindern, dass Kompilierungsfehler.
 
 2. Speichern und schließen Sie die Datei.
 
@@ -696,7 +696,7 @@ ms.locfileid: "63430383"
 
 4. In der **Namen** geben **SiteColumnTest** und wählen Sie dann die **OK** Schaltfläche.
 
-     In **Projektmappen-Explorer**, ein neues Projekt angezeigt wird, mit einem Projektelement mit dem Namen **"Field1"**.
+     In **Projektmappen-Explorer**, ein neues Projekt angezeigt wird, mit einem Projektelement mit dem Namen **"Field1"** .
 
 5. Stellen Sie sicher, dass die codeausführung in der anderen Instanz von Visual Studio an dem Haltepunkt unterbrochen wird, die Sie zuvor im Festlegen der `InitializeType` -Methode, und wählen Sie dann die **F5** Schlüssel, um das Debuggen des Projekts fortzusetzen.
 

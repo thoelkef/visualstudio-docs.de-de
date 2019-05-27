@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 265b30e8a9b3e223b9007c85082113232d76ab09
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e66eb7fc2915514b91135e8c89843a0d979abf4a
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929013"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65845911"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Ein erster Einblick in die Bereitstellung in Visual Studio
 
@@ -40,7 +40,7 @@ Sehen Sie sich die Schnellstarts und Tutorials an, um ausführliche Anweisungen 
 
 Die Bereitstellung in einem lokalen Ordner wird normalerweise zum Testen verwendet oder um eine Stagingbereitstellung zu beginnen, in der zur endgültigen Bereitstellung ein anders Tool verwendet wird.
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python** und **.NET Core**: Verwenden Sie die Option „Veröffentlichen“, um eine Bereitstellung in einem lokalen Ordner durchzuführen. Welche Optionen genau verfügbar sind, hängt von Ihrem App-Typ ab. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf Ihr Projekt, und wählen Sie **Veröffentlichen** aus. (Wenn Sie zuvor Veröffentlichungsprofile konfiguriert haben, klicken Sie auf **Neues Profil erstellen**.) Wählen Sie anschließend **Ordner** aus. Weitere Informationen finden Sie unter [Bereitstellen in einem lokalen Ordner](quickstart-deploy-to-local-folder.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python** und **.NET Core**: Verwenden Sie die Option „Veröffentlichen“, um eine Bereitstellung in einem lokalen Ordner durchzuführen. Welche Optionen genau verfügbar sind, hängt von Ihrem App-Typ ab. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf Ihr Projekt, und wählen Sie **Veröffentlichen** aus. (Wenn Sie noch keine Veröffentlichungsprofile konfiguriert haben, klicken Sie auf **Neues Profil erstellen**.) Wählen Sie anschließend **Ordner** aus. Weitere Informationen finden Sie unter [Bereitstellen in einem lokalen Ordner](quickstart-deploy-to-local-folder.md).
 
     ![„Veröffentlichen“ auswählen](../deployment/media/quickstart-publish.png)
 

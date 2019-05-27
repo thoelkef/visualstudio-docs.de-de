@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8a103316a292c444a35b8c819968d98cda777b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a25863ab07c4f68f0c961692981d4125c213818b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871802"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209197"
 ---
 # <a name="idebugport2getportrequest"></a>IDebugPort2::GetPortRequest
 Ruft die Beschreibung eines Ports, die zuvor verwendet wurde, um den Port (falls verfügbar) zu erstellen.
@@ -36,10 +39,9 @@ int GetPortRequest( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `ppRequest`
-
- [out] Gibt eine [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) Objekt, das die Anforderung, die verwendet wurde, erstellen Sie den Port darstellt.
+## <a name="parameters"></a>Parameter
+`ppRequest`\
+[out] Gibt eine [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) Objekt, das die Anforderung, die verwendet wurde, erstellen Sie den Port darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  Gibt `E_PORT_NO_REQUEST` Wenn mit ein Port nicht erstellt wurde ein [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) Port-Anforderung.

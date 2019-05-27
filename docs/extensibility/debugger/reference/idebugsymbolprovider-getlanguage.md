@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 071dac72e39a3cce5b0b17dc9e401b9072efda6a
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 86429e4ffe46fc182ea923f249bd5492dd433812
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224045"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207194"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
 Diese Methode ruft die Sprache, die zum Kompilieren des Codes an der debugadresse verwendet wurde.
@@ -44,17 +44,14 @@ int GetLanguage(
 ```
 
 ## <a name="parameters"></a>Parameter
- `pAddress`\
+`pAddress`\
+[in] Durch dargestellt wird ein Adressobjekt ein [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) Schnittstelle.
 
- [in] Durch dargestellt wird ein Adressobjekt ein [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) Schnittstelle.
+`pguidLanguage`\
+[out] Gibt eine `GUID` , der die Sprache angibt.
 
- `pguidLanguage`\
-
- [out] Gibt eine `GUID` , der die Sprache angibt.
-
- `pguidLanguageVendor`\
-
- [out] Gibt eine `GUID` , die den Compilerhersteller angibt.
+`pguidLanguageVendor`\
+[out] Gibt eine `GUID` , die den Compilerhersteller angibt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

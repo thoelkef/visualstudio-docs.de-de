@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c31d3a858af2886a27a51e22e131cb89b2234d6e
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 7ef0ce265bc63ce9a00fd748c50a338d52294557
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459070"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211689"
 ---
 # <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
 Ruft den Namen und Bezeichner des Debug-Engine (DE) ein Programm ausgeführt wird.
@@ -42,13 +42,11 @@ int GetEngineInfo(
 ```
 
 ## <a name="parameters"></a>Parameter
- `pbstrEngine`\
+`pbstrEngine`\
+[out] Gibt den Namen der Ausführung des Programms DE zurück (C++-spezifische: Dies kann ein null-Zeiger, der angibt, dass der Aufrufer nicht den Namen der Engine interessiert sein).
 
- [out] Gibt den Namen der Ausführung des Programms DE zurück (C++-spezifische: Dies kann ein null-Zeiger, der angibt, dass der Aufrufer nicht den Namen der Engine interessiert sein).
-
- `pguidEngine`\
-
- [out] Gibt den globally unique Identifier, der die Ausführung des Programms DE (C++-spezifische: Dies kann ein null-Zeiger, der angibt, dass der Aufrufer nicht der GUID des Moduls interessiert sein).
+`pguidEngine`\
+[out] Gibt den globally unique Identifier, der die Ausführung des Programms DE (C++-spezifische: Dies kann ein null-Zeiger, der angibt, dass der Aufrufer nicht der GUID des Moduls interessiert sein).
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

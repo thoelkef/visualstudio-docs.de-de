@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 853e0eccbe744578a9ae3001725dd3cf2d001fa3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 253303024aaf2beb1616a47f9ee0dfcd2749289d
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920261"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199968"
 ---
 # <a name="idebugerrorbreakpoint2getpendingbreakpoint"></a>IDebugErrorBreakpoint2::GetPendingBreakpoint
 Ruft den ausstehenden Haltepunkt, der den Fehler verursacht hat.
@@ -36,10 +39,9 @@ int GetPendingBreakpoint ( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `ppPendingBreakpoint`
-
- [out] Gibt eine [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) -Objekt, das den ausstehenden Haltepunkt darstellt, die nicht gebunden werden.
+## <a name="parameters"></a>Parameter
+`ppPendingBreakpoint`\
+[out] Gibt eine [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) -Objekt, das den ausstehenden Haltepunkt darstellt, die nicht gebunden werden.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 04c63a2a18f04301e16dd0e8137ab8ba4b824c57
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: fb2fc0da42bf3895f6eefac96441dde2fa6eede9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457866"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203707"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
 Auf diese Weise wird ein Programm für Debug-Engines (DEs) und sitzungsbasierter Debug-Manager.
@@ -44,17 +44,14 @@ int PublishProgram(
 ```
 
 ## <a name="parameters"></a>Parameter
- `Engines`\
+`Engines`\
+[in] Ein Array von GUIDs für DEs, die gestartet oder angehängt werden, um dieses Programm kann.
 
- [in] Ein Array von GUIDs für DEs, die gestartet oder angehängt werden, um dieses Programm kann.
+`szFriendlyName`\
+[in] Der Anzeigename für das Programm (Dies wird in Menüs oder dem Benutzer angezeigten Dialogfelder angezeigt).
 
- `szFriendlyName`\
-
- [in] Der Anzeigename für das Programm (Dies wird in Menüs oder dem Benutzer angezeigten Dialogfelder angezeigt).
-
- `pDebuggeeInterface`\
-
- [in] `IUnknown` Schnittstelle für das Programm (dieser Wert wird als ein Cookie verwendet, um die Anwendung eindeutig zu identifizieren, der gleiche Wert wird verwendet, das Programm "Veröffentlichung")
+`pDebuggeeInterface`\
+[in] `IUnknown` Schnittstelle für das Programm (dieser Wert wird als ein Cookie verwendet, um die Anwendung eindeutig zu identifizieren, der gleiche Wert wird verwendet, das Programm "Veröffentlichung")
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

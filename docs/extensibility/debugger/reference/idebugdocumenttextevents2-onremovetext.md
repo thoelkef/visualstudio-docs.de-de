@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: df0504515d8ddacb4e21918cefffe76f8e96d6a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8fc140330330a278e29c84b8e146fda20eeed399
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875286"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203312"
 ---
 # <a name="idebugdocumenttextevents2onremovetext"></a>IDebugDocumentTextEvents2::onRemoveText
 Benachrichtigt dem debugpaket an, dass Text aus dem Dokument entfernt wurde.
@@ -38,14 +41,12 @@ int onRemoveText( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `pos`
+## <a name="parameters"></a>Parameter
+`pos`\
+[in] Ein [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) Struktur, die angibt, in dem der Text entfernt wurde.
 
- [in] Ein [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) Struktur, die angibt, in dem der Text entfernt wurde.
-
- `dwNumToRemove`
-
- [in] Gibt die Anzahl der Zeichen des Texts, die entfernt wurden.
+`dwNumToRemove`\
+[in] Gibt die Anzahl der Zeichen des Texts, die entfernt wurden.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

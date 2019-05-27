@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95b94dca9ef948a07b5c6458a9c8c53c8612eddd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 55c36c6649b8ff2b1b0bebc57012970625a964b8
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920160"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199941"
 ---
 # <a name="idebugerrorevent2geterrormessage"></a>IDebugErrorEvent2::GetErrorMessage
 Gibt zurück, anhand derer der Erstellung der eine lesbare Fehlermeldung aus.
@@ -46,30 +49,24 @@ int GetErrorMessage(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `pMessageType`
+## <a name="parameters"></a>Parameter
+`pMessageType`\
+[out] Gibt einen Wert aus der [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) Enumeration, die den Typ der Nachricht beschreibt.
 
- [out] Gibt einen Wert aus der [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) Enumeration, die den Typ der Nachricht beschreibt.
+`pbstrErrorFormat`\
+[out] Das Format der die endgültige Nachricht an den Benutzer (Details finden Sie unter "Hinweise").
 
- `pbstrErrorFormat`
+`hrErrorReason`\
+[out] Der Fehlercode der Nachricht geht.
 
- [out] Das Format der die endgültige Nachricht an den Benutzer (Details finden Sie unter "Hinweise").
+`pdwType`\
+[out] Schweregrad des Fehlers (verwenden Sie für Konstanten MB_XXX `MessageBox`, z. B. `MB_EXCLAMATION` oder `MB_WARNING`).
 
- `hrErrorReason`
+`pbstrHelpFileName`\
+[out] Der Pfad zu einer Hilfedatei (festgelegt auf einen null-Wert, wenn keine Hilfedatei vorhanden ist).
 
- [out] Der Fehlercode der Nachricht geht.
-
- `pdwType`
-
- [out] Schweregrad des Fehlers (verwenden Sie für Konstanten MB_XXX `MessageBox`, z. B. `MB_EXCLAMATION` oder `MB_WARNING`).
-
- `pbstrHelpFileName`
-
- [out] Der Pfad zu einer Hilfedatei (festgelegt auf einen null-Wert, wenn keine Hilfedatei vorhanden ist).
-
- `pdwHelpId`
-
- [out] Die ID des Hilfethemas zum Anzeigen der (auf 0, wenn kein Hilfethema festgelegt).
+`pdwHelpId`\
+[out] Die ID des Hilfethemas zum Anzeigen der (auf 0, wenn kein Hilfethema festgelegt).
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

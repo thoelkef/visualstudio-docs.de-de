@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14debc141236558090116ff40f3f515c189b70ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f0f11c3b1770ca32b34f7a5480d5d56acc2b2478
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919987"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66201043"
 ---
 # <a name="idebugexpressioncontext2parsetext"></a>IDebugExpressionContext2::ParseText
 Analysiert einen Ausdruck im Text-Format für die spätere Auswertung an.
@@ -46,30 +49,24 @@ int ParseText(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
-`pszCode`
+## <a name="parameters"></a>Parameter
+`pszCode`\
+[in] Der Ausdruck analysiert werden.
 
- [in] Der Ausdruck analysiert werden.
+`dwFlags`\
+[in] Eine Kombination von Flags aus der [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) -Enumeration, der steuert, analysieren.
 
-`dwFlags`
+`nRadix`\
+[in] Die Basis verwendet werden, bei der Analyse keine numerische Informationen im `pszCode`.
 
- [in] Eine Kombination von Flags aus der [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) -Enumeration, der steuert, analysieren.
+`ppExpr`\
+[out] Gibt die [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) -Objekt, das den analysierten Ausdruck darstellt, die für die Bindung und die Auswertung kann.
 
-`nRadix`
+`pbstrError`\
+[out] Gibt die Fehlermeldung zurück, wenn der Ausdruck einen Fehler enthält.
 
- [in] Die Basis verwendet werden, bei der Analyse keine numerische Informationen im `pszCode`.
-
-`ppExpr`
-
- [out] Gibt die [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) -Objekt, das den analysierten Ausdruck darstellt, die für die Bindung und die Auswertung kann.
-
-`pbstrError`
-
- [out] Gibt die Fehlermeldung zurück, wenn der Ausdruck einen Fehler enthält.
-
-`pichError`
-
- [out] Gibt den Zeichenindex des Fehlers im `pszCode` , wenn der Ausdruck einen Fehler enthält.
+`pichError`\
+[out] Gibt den Zeichenindex des Fehlers im `pszCode` , wenn der Ausdruck einen Fehler enthält.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

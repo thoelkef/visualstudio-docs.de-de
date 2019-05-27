@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7965f9c1990f894d53f0f114f74636814b9fdbb1
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 26281ea175936429f1be5ac2620802c9d2cd5aa1
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458867"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211426"
 ---
 # <a name="idebugproperty2getsize"></a>IDebugProperty2::GetSize
 Ruft die Größe in Bytes, der den Wert der Eigenschaft ab.
@@ -40,9 +40,8 @@ int GetSize ( 
 ```
 
 ## <a name="parameters"></a>Parameter
- `pdwSize`\
-
- [out] Gibt die Größe in Bytes, der den Wert der Eigenschaft zurück.
+`pdwSize`\
+[out] Gibt die Größe in Bytes, der den Wert der Eigenschaft zurück.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`; gibt andernfalls den Fehlercode zurück. Gibt `S_GETSIZE_NO_SIZE` , wenn die Eigenschaft keine Größe hat.

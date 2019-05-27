@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6c1bf5f210d9b37b35d43a393a25b1c9df44a7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8a1b714856811ccd9b8e95d074cfc95740e27e5f
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875882"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205519"
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
 Erlaubt das automatische Anhängen, für die angegebenen Debug-Engines.
@@ -42,22 +45,18 @@ int EnableAutoAttach(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `rgguidSpecificEngines`
+## <a name="parameters"></a>Parameter
+`rgguidSpecificEngines`\
+[in] Array von GUIDs für jedes Debugmodul markieren als von der automatischen anfügen.
 
- [in] Array von GUIDs für jedes Debugmodul markieren als von der automatischen anfügen.
+`celtSpecificEngines`\
+[in] Die Anzahl der Module, die im angegebenen `rgguidSpecificEngines`.
 
- `celtSpecificEngines`
+`pszStartPageUrl`\
+[in] Die Start-URL zu verwenden, wenn das automatische Anhängen.
 
- [in] Die Anzahl der Module, die im angegebenen `rgguidSpecificEngines`.
-
- `pszStartPageUrl`
-
- [in] Die Start-URL zu verwenden, wenn das automatische Anhängen.
-
- `pbstrSessionID`
-
- [out] Die ID der Sitzung, die automatisch angefügt wurde.
+`pbstrSessionID`\
+[out] Die ID der Sitzung, die automatisch angefügt wurde.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`; gibt andernfalls den Fehlercode zurück. Ein Fehlercode `E_AUTO_ATTACH_NOT_REGISTERED`, was bedeutet, dass die Klassenfactory Auto-attach nicht registriert wurde.

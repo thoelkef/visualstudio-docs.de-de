@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 887002086b50198ba192bde3f19390d3267a5c9d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 7e00147917a1f06d2f661098686bd85a854c0670
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457345"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212001"
 ---
 # <a name="idebugproviderprogramnode2unmarshaldebuggeeinterface"></a>IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
 Ruft eine angegebene Schnittstelle über Prozessgrenzen hinweg.
@@ -42,13 +42,11 @@ int UnmarshalDebuggeeInterface(
 ```
 
 ## <a name="parameters"></a>Parameter
- `riid`\
+`riid`\
+[in] Die GUID der Schnittstelle abrufen.
 
- [in] Die GUID der Schnittstelle abrufen.
-
- `ppvObject`\
-
- [out] Gibt das Objekt, das die gewünschte Schnittstelle implementieren. [C++] dies direkt auf den Typ für die gewünschte Schnittstelle umgewandelt werden kann. [C#] verwenden Sie die <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> Methode, um die gewünschte Schnittstelle abzurufen.
+`ppvObject`\
+[out] Gibt das Objekt, das die gewünschte Schnittstelle implementieren. [C++] dies direkt auf den Typ für die gewünschte Schnittstelle umgewandelt werden kann. [C#] verwenden Sie die <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> Methode, um die gewünschte Schnittstelle abzurufen.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

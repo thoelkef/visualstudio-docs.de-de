@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6df3a4f69c62e7681eade705186c802a225f060
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a02fbe5b954fca78e2f75f982a62a1b9bf5f4a0b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873386"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210613"
 ---
 # <a name="idebugmanagedobjectgetmanagedobject"></a>IDebugManagedObject::GetManagedObject
 Gibt eine Schnittstelle, die das verwaltete Objekt darstellt.
@@ -36,10 +39,9 @@ int GetManagedObject(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `ppManagedObject`
-
- [out] Gibt eine Schnittstelle, die das verwaltete Objekt darstellt.
+## <a name="parameters"></a>Parameter
+`ppManagedObject`\
+[out] Gibt eine Schnittstelle, die das verwaltete Objekt darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
  Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1fd56bf6705cb6e47e94422ab06261645d0d512
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2fc8787d66e7ee29cd062cc757eed35d1a8ae227
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871841"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209058"
 ---
 # <a name="idebugportex2getprogram"></a>IDebugPortEx2::GetProgram
 Ruft ab, das Programm mit einem Programm-Knoten verknüpft ist.
@@ -38,14 +41,10 @@ int GetProgram( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `pProgramNode`
+## <a name="parameters"></a>Parameter
+`pProgramNode` [in] Ein [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) Objekt, das den Programm-Knoten darstellt.
 
- [in] Ein [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) Objekt, das den Programm-Knoten darstellt.
-
- `ppProgram`
-
- [out] Gibt eine [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) -Objekt, das Programm, das dem Programm Knoten zugeordnete darstellt.
+`ppProgram` [out] Gibt eine [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) -Objekt, das Programm, das dem Programm Knoten zugeordnete darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

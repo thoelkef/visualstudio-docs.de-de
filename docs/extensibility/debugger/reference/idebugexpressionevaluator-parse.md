@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a93d909fbc8882c5864097a2a36c36749327a2d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3504ba7ec668e243b72536b940f0779a5c0b728d
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843133"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200874"
 ---
 # <a name="idebugexpressionevaluatorparse"></a>IDebugExpressionEvaluator::Parse
 Diese Methode konvertiert eine Ausdruckszeichenfolge in einen analysierten Ausdruck.
@@ -46,30 +49,24 @@ int Parse(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `upstrExpression`
+## <a name="parameters"></a>Parameter
+`upstrExpression`\
+[in] Die Ausdruckszeichenfolge analysiert werden.
 
- [in] Die Ausdruckszeichenfolge analysiert werden.
+`dwFlags`\
+[in] Eine Auflistung von [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) Konstanten, die bestimmen, wie der Ausdruck ist, die analysiert werden.
 
- `dwFlags`
+`nRadix`\
+[in] Die Basis, die verwendet werden, um alle numerischen Informationen interpretieren.
 
- [in] Eine Auflistung von [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) Konstanten, die bestimmen, wie der Ausdruck ist, die analysiert werden.
+`pbstrError`\
+[out] Gibt den Fehler als Klartext zurück.
 
- `nRadix`
+`pichError`\
+[out] Gibt die Zeichenposition des Starts des Fehlers in der Ausdruckszeichenfolge zurück.
 
- [in] Die Basis, die verwendet werden, um alle numerischen Informationen interpretieren.
-
- `pbstrError`
-
- [out] Gibt den Fehler als Klartext zurück.
-
- `pichError`
-
- [out] Gibt die Zeichenposition des Starts des Fehlers in der Ausdruckszeichenfolge zurück.
-
- `ppParsedExpression`
-
- [out] Gibt den analysierten Ausdruck in einem [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) Objekt.
+`ppParsedExpression`\
+[out] Gibt den analysierten Ausdruck in einem [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) Objekt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

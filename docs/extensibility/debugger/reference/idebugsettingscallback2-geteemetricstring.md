@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 58132d73cd532acd0c89ad5258c6ba4a59b905fa
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: a3cad87c74a00f2feac4390921be032ed3f8b6cc
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458620"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212090"
 ---
 # <a name="idebugsettingscallback2geteemetricstring"></a>IDebugSettingsCallback2::GetEEMetricString
 Ruft den Wert von einer Expression Evaluator-Metrik anhand des Namens ab.
@@ -44,21 +44,17 @@ private int GetEEMetricString(
 ```
 
 ## <a name="parameters"></a>Parameter
- `guidLang`\
+`guidLang`\
+[in] Eindeutiger Bezeichner der Programmiersprache.
 
- [in] Eindeutiger Bezeichner der Programmiersprache.
+`guidVendor`\
+[in] Eindeutiger Bezeichner des Herstellers.
 
- `guidVendor`\
+`pszMetric`\
+[in] Der Name der Metrik.
 
- [in] Eindeutiger Bezeichner des Herstellers.
-
- `pszMetric`\
-
- [in] Der Name der Metrik.
-
- `pbstrValue`\
-
- [out] Gibt den Metrikwert-Zeichenfolge zurück.
+`pbstrValue`\
+[out] Gibt den Metrikwert-Zeichenfolge zurück.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

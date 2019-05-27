@@ -1,7 +1,7 @@
 ---
 title: Installation und Verwendung hinter einer Firewall oder einem Proxy
-description: Überprüfen Sie die Domänen-URLs, Ports und Protokolle, die Sie möglicherweise auf die Whitelist setzen oder öffnen möchten, wenn Ihre Organisation eine Firewall oder einen Proxyserver verwendet.
-ms.date: 03/30/2019
+description: Überprüfen Sie die Domänen-URLs, Ports und Protokolle, die Sie möglicherweise auf die Zulassungsliste setzen oder öffnen möchten, wenn Ihre Organisation eine Firewall oder einen Proxyserver verwendet.
+ms.date: 05/22/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,29 +17,29 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 227525b08e45832041b573fbb7cf3719484d1b8e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 38a243c965199e75622ceff43e742424d3e4977a
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974708"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976215"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installieren und Verwenden von Visual Studio und Azure-Diensten hinter einer Firewall oder einem Proxyserver
 
-Wenn Ihre Organisation Sicherheitsmechanismen wie eine Firewall oder einen Proxyserver verwendet, dann sollten Sie einige Domänen-URLs in die Whitelist aufnehmen und verschiedene Ports und Protokolle öffnen bzw. deren Verwendung zulassen, um eine optimale Installation und Verwendung von Visual Studio und Azure-Diensten zu gewährleisten.
+Wenn Ihre Organisation Sicherheitsmechanismen wie eine Firewall oder einen Proxyserver verwendet, dann sollten Sie einige Domänen-URLs in die Zulassungsliste aufnehmen und verschiedene Ports und Protokolle öffnen bzw. deren Verwendung zulassen, um eine optimale Installation und Verwendung von Visual Studio und Azure-Diensten zu gewährleisten.
 
-* **[Installieren von Visual Studio](#install-visual-studio)**: Diese Tabellen enthalten die Domänen-URLs, die Sie in die Whitelist aufnehmen müssen, um Zugriff auf alle gewünschten Komponenten und Workloads zu erhalten.
+* **[Installieren von Visual Studio](#install-visual-studio)**: Diese Tabellen enthalten die Domänen-URLs, die Sie in die Zulassungsliste aufnehmen müssen, um Zugriff auf alle gewünschten Komponenten und Workloads zu erhalten.
 
-* **[Verwenden von Visual Studio und Azure-Diensten](#use-visual-studio-and-azure-services)**: Diese Tabellen enthalten die Domänen-URLs, die Sie in die Whitelist aufnehmen sollten, sowie die Ports und Protokolle, die Sie öffnen bzw. zulassen müssen, um Zugriff auf alle gewünschten Features und Dienste zu erhalten.
+* **[Verwenden von Visual Studio und Azure-Diensten](#use-visual-studio-and-azure-services)**: Diese Tabellen enthalten die Domänen-URLs, die Sie in die Zulassungsliste aufnehmen sollten, sowie die Ports und Protokolle, die Sie öffnen bzw. zulassen müssen, um Zugriff auf alle gewünschten Features und Dienste zu erhalten.
 
 > [!NOTE]
 > Dieser Artikel wurde für Visual Studio unter Windows geschrieben. Bestimmte Informationen gelten jedoch auch für die [Installation von Visual Studio für Mac](/visualstudio/mac/install-behind-a-firewall-or-proxy-server) hinter einer Firewall oder einem Proxy-Server.
 
 ## <a name="install-visual-studio"></a>Installieren von Visual Studio
 
-### <a name="urls-to-whitelist"></a>URLs für die Whitelist
+### <a name="urls-to-add-to-an-allow-list"></a>URLs, die Sie in die Zulassungsliste aufnehmen sollten
 
-Der Visual Studio-Installer lädt Dateien aus verschiedenen Domänen und den zugehörigen Downloadservern herunter, deshalb müssen Sie die folgenden URLs unter Verwendung der Benutzeroberfläche oder in Ihren Bereitstellungsskripts als vertrauenswürdige URLs in die Whitelist aufnehmen.
+Der Visual Studio-Installer lädt Dateien aus verschiedenen Domänen und den zugehörigen Downloadservern herunter, deshalb müssen Sie die folgenden URLs unter Verwendung der Benutzeroberfläche oder in Ihren Bereitstellungsskripts als vertrauenswürdige URLs in die Zulassungsliste aufnehmen.
 
 #### <a name="microsoft-domains"></a>Microsoft-Domänen
 
@@ -79,9 +79,9 @@ Der Visual Studio-Installer lädt Dateien aus verschiedenen Domänen und den zug
 
 ## <a name="use-visual-studio-and-azure-services"></a>Verwenden von Visual Studio und Azure-Diensten
 
-### <a name="urls-to-whitelist-and-ports-and-protocols-to-open"></a>URLs für Whitelist und zu öffnende Ports und Protokolle
+### <a name="urls-to-add-to-an-allow-list-and-ports-and-protocols-to-open"></a>URLs für Zulassungsliste und zu öffnende Ports und Protokolle
 
-Um sicherzustellen, dass Sie bei Verwendung von Visual Studio oder Azure-Diensten hinter einer Firewall oder einem Proxyserver Zugriff auf alle benötigten Komponenten haben, müssen Sie die folgenden URLs in die Whitelist aufnehmen und diese Ports und Protokolle öffnen bzw. zulassen.
+Um sicherzustellen, dass Sie bei Verwendung von Visual Studio oder Azure-Diensten hinter einer Firewall oder einem Proxyserver Zugriff auf alle benötigten Komponenten haben, müssen Sie die folgenden URLs in die Zulassungsliste aufnehmen und diese Ports und Protokolle öffnen bzw. zulassen.
 
 | Dienst oder Szenario | DNS-Endpunkt | Protokoll | Port | Beschreibung |
 | - | - | - | - | - |

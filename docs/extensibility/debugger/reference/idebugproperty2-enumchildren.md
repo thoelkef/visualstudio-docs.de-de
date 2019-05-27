@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e7158649ee3965127b5bdeba42619eaa676cfaa0
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: aed98522d98162c13d6cfbcbc61df2a989f35434
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458921"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211631"
 ---
 # <a name="idebugproperty2enumchildren"></a>IDebugProperty2::EnumChildren
 Ruft eine Liste der untergeordneten Elemente der Eigenschaft.
@@ -52,33 +52,26 @@ int EnumChildren ( 
 ```
 
 ## <a name="parameters"></a>Parameter
- `dwFields`\
+`dwFields`\
+[in] Eine Kombination von Flags aus der [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) Enumeration, der angibt, welche Felder in den aufgelisteten [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) Strukturen sind gefüllt werden soll.
 
- [in] Eine Kombination von Flags aus der [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) Enumeration, der angibt, welche Felder in den aufgelisteten [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) Strukturen sind gefüllt werden soll.
+`dwRadix`\
+[in] Gibt an, die Basis bei der Formatierung von numerischen Informationen verwendet werden.
 
- `dwRadix`\
+`guidFilter`\
+[in] GUID des Filters verwendet wird, mit der `dwAttribFilter` und `pszNameFilter` Parameter auswählen, welche `DEBUG_PROPERTY_INFO` untergeordnet sind, aufgelistet werden sollen. Z. B. `guidFilterLocals` Filter für lokale Variablen.
 
- [in] Gibt an, die Basis bei der Formatierung von numerischen Informationen verwendet werden.
+`dwAttribFilter`\
+[in] Eine Kombination von Flags aus der [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) Enumeration, der angibt, welche Objekttypen aufgelistet, z. B. `DBG_ATTRIB_METHOD` für alle Methoden, die untergeordneten Elemente dieser Eigenschaft sein können. In Kombination mit verwendet die `guidFilter` und `pszNameFilter` Parameter.
 
- `guidFilter`\
+`pszNameFilter`\
+[in] Der Name des Filters verwendet wird, mit der `guidFilter` und `dwAttribFilter` Parameter auswählen, welche `DEBUG_PROPERTY_INFO` untergeordnet sind, aufgelistet werden sollen. Dieser Parameter z. B. festlegen "MyX" Filter, für alle untergeordneten Elemente mit dem Namen "MyX."
 
- [in] GUID des Filters verwendet wird, mit der `dwAttribFilter` und `pszNameFilter` Parameter auswählen, welche `DEBUG_PROPERTY_INFO` untergeordnet sind, aufgelistet werden sollen. Z. B. `guidFilterLocals` Filter für lokale Variablen.
+`dwTimeout`\
+[in] Gibt die maximale Zeit in Millisekunden, warten Sie vor der Rückgabe dieser Methode an. Verwendung `INFINITE` für Warten ohne Timeout.
 
- `dwAttribFilter`\
-
- [in] Eine Kombination von Flags aus der [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) Enumeration, der angibt, welche Objekttypen aufgelistet, z. B. `DBG_ATTRIB_METHOD` für alle Methoden, die untergeordneten Elemente dieser Eigenschaft sein können. In Kombination mit verwendet die `guidFilter` und `pszNameFilter` Parameter.
-
- `pszNameFilter`\
-
- [in] Der Name des Filters verwendet wird, mit der `guidFilter` und `dwAttribFilter` Parameter auswählen, welche `DEBUG_PROPERTY_INFO` untergeordnet sind, aufgelistet werden sollen. Dieser Parameter z. B. festlegen "MyX" Filter, für alle untergeordneten Elemente mit dem Namen "MyX."
-
- `dwTimeout`\
-
- [in] Gibt die maximale Zeit in Millisekunden, warten Sie vor der Rückgabe dieser Methode an. Verwendung `INFINITE` für Warten ohne Timeout.
-
- `ppEnum`\
-
- [out] Gibt eine [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) -Objekt, das eine Liste der untergeordneten Eigenschaften enthält.
+`ppEnum`\
+[out] Gibt eine [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) -Objekt, das eine Liste der untergeordneten Eigenschaften enthält.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`; gibt andernfalls den Fehlercode zurück.

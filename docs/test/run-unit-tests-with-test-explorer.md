@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa24dedd776a0866d5de23fbacd31b32c2d55145
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f151b722b1425024ac2abe81f6d873bf10b01628
+ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946086"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934497"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ausführen von Komponententests mit dem Test-Explorer
 
@@ -58,7 +58,7 @@ Während der Testausführung wird die oben im Fenster **Test-Explorer** angezeig
 |![Nach Build ausführen](../test/media/ute_runafterbuild_btn.png)|Klicken Sie zum Ausführen der Komponententests nach jedem lokalen Buildvorgang im Standardmenü auf **Test** und anschließend in der Symbolleiste **Test-Explorer** auf **Nach dem Buildvorgang Tests ausführen**.|
 
 > [!NOTE]
-> Das Ausführen von Komponententests nach jedem Buildvorgang erfordert Visual Studio Enterprise Edition.
+> Zum Ausführen von Komponententests nach jedem Buildvorgang benötigen Sie Visual Studio 2017 Enterprise oder Visual Studio 2019. In Visual Studio-2019 ist die Lösung in Community und Professional sowie Enterprise enthalten.
 
 ## <a name="view-test-results"></a>Testergebnisse anzeigen
 
@@ -200,7 +200,7 @@ MIthilfe des Codeabdeckungstools von Visual Studio können Sie die Menge des Pro
 
 Ausführen des Codeabdeckungstools für Testmethoden in einer Projektmappe:
 
-1. Wählen Sie im Visual Studio-Menü **Tests** und anschließend **Codeabdeckung analysieren**aus.
+1. Wählen Sie in der obersten Menüleiste **Tests** und anschließend **Code Coverage analysieren**aus.
 
 2. Wählen Sie in Untermenü einen der folgenden Befehle aus:
 

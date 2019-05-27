@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 90d56149d4e942c8fe5206fad3ce740f510a451d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 8ce275d0875970fe23ed20d624df6d3b94489757
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458945"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211671"
 ---
 # <a name="idebugprogrampublisher2unpublishprogram"></a>IDebugProgramPublisher2::UnpublishProgram
 Wird ein Programm nicht verfügbar, die debuggt werden.
@@ -40,9 +40,8 @@ int UnpublishProgram(
 ```
 
 ## <a name="parameters"></a>Parameter
- `pDebuggeeInterface`\
-
- [in] Ein `IUnknown` Schnittstelle, um die Anwendung. Dies ist der gleiche Wert angegeben die [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) Methode und eindeutig identifiziert die Anwendung entfernt wird (d. h., er dient als ein Cookie).
+`pDebuggeeInterface`\
+[in] Ein `IUnknown` Schnittstelle, um die Anwendung. Dies ist der gleiche Wert angegeben die [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) Methode und eindeutig identifiziert die Anwendung entfernt wird (d. h., er dient als ein Cookie).
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

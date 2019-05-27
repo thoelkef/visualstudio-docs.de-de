@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad3831fb06d23f622f85a55f5efd0a5650ca5e47
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d23a19ad42f665f471274ee75f328056dd55b17d
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62799029"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037101"
 ---
 # <a name="synchronously-autoloaded-extensions"></a>Synchron automatisch geladene Erweiterungen
 
@@ -29,7 +29,7 @@ Benutzer können Aktionen ausführen:
 
 - Klicken Sie auf **diese Meldung nicht mehr anzeigen** um diese zu schließen. Bei Auswahl dieser Option wird verhindert, dass auch alle künftige Benachrichtigungen synchron-Erweiterungen automatisch geladen. Benutzer weiterhin Benachrichtigungen zu anderen Visual Studio-Features zu erhalten.
 
-### <a name="performance-manager-dialog"></a>Dialogfeld "Performance-Manager"
+## <a name="performance-manager-dialog"></a>Dialogfeld "Performance-Manager"
 
 ![Leistung-Dialogfeld "Manager"](media/performance-manager.png)
 
@@ -39,3 +39,17 @@ Alle Erweiterungen, die alle Pakete synchron in alle benutzersitzungen geladen w
 * Benutzer können den Migrationsstatus Erweiterung Hersteller erhalten.
 
 Erweiterungsautoren können finden Sie Anweisungen zum Migrieren zu asynchronen Autoload auf Pakete [Migrieren zu einer von AsyncPackage](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/AsyncPackageMigration).
+
+## <a name="specify-synchronous-autoload-settings-using-group-policy"></a>Geben Sie synchrone Autoload-Einstellungen, die mithilfe von Gruppenrichtlinien
+
+Visual Studio 2019 Update 1, wird standardmäßig der Visual Studio-Installation blockiert synchron Autoload gestartet. Wenn Sie eine Gruppenrichtlinie aktivieren, können Sie Visual Studio, um synchrone Autoload auf einzelnen Computern zu ermöglichen, konfigurieren. Legen Sie hierzu eine registrierungsbasierte Richtlinie für den folgenden Schlüssel fest:
+
+**HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SynchronousAutoload**
+
+Eintrag = **zulässig**
+
+Wert = (DWORD)
+* **0** synchrone Autoload ist nicht zugelassen werden.
+* **1** synchrone Autoload ist zugelassen werden.
+
+Weitere Informationen zu synchronen Autoload-Einstellungen in Visual Studio 2019 Update 1 finden Sie unter den [synchrones Verhalten für Autoload](https://aka.ms/AA52xzw) Seite.

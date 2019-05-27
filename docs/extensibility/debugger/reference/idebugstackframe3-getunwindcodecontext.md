@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0ee90dfdcb38c938d87ed35aadca07540af34539
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 7e8d75d33afc3078fc480c6a99d33dd975904f24
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458268"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203265"
 ---
 # <a name="idebugstackframe3getunwindcodecontext"></a>IDebugStackFrame3::GetUnwindCodeContext
 Gibt zurück, der Codekontext, eine Position darstellt, wenn ein Stapel zu, Vorgang Entladen aufgetreten ist.
@@ -40,9 +40,8 @@ int GetUnwindCodeContext(
 ```
 
 ## <a name="parameters"></a>Parameter
- `ppCodeContext`\
-
- [out] Gibt eine [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) Objekt, das Kontext codespeicherort darstellt, wenn eine stapelentladung aufgetreten ist.
+`ppCodeContext`\
+[out] Gibt eine [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) Objekt, das Kontext codespeicherort darstellt, wenn eine stapelentladung aufgetreten ist.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7b74af8b93bb3b92d4673f40c06f0d9745ffb79c
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 94a9cde9f757194a51a15e2513260f7e8e3fd490
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226187"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199479"
 ---
 # <a name="idebugthread2setthreadname"></a>IDebugThread2::SetThreadName
 Legt den Namen des Threads.
@@ -40,9 +40,8 @@ int SetThreadName ( 
 ```
 
 ## <a name="parameters"></a>Parameter
- `pszName`\
-
- [in] Der Name des Threads.
+`pszName`\
+[in] Der Name des Threads.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

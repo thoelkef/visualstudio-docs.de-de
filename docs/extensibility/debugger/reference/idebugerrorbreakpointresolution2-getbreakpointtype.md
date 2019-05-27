@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a733a600c8e8f3e346ffffdac306982c88994709
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4c3260c7b16f664a321b7edba910f26d05ab5d58
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920231"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199980"
 ---
 # <a name="idebugerrorbreakpointresolution2getbreakpointtype"></a>IDebugErrorBreakpointResolution2::GetBreakpointType
 Ruft den Haltepunkttyp ab.
@@ -36,10 +39,9 @@ int GetBreakpointType(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
-`pBPType`
-
- [out] Gibt einen Wert aus der [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) Enumeration, die den Typ des Haltepunkts beschreibt.
+## <a name="parameters"></a>Parameter
+`pBPType`\
+[out] Gibt einen Wert aus der [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) Enumeration, die den Typ des Haltepunkts beschreibt.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

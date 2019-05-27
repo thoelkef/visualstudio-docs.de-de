@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22d0d31530c5b0b81f3a8e622893874efecfbea5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9ea4ac391536575397cf45be0239ce1e94268349
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922400"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205909"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromcallback"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback
 Lädt Debugsymbole, die mit der angegebenen Rückrufmethode.
@@ -47,34 +50,27 @@ int LoadSymbolsFromCallback(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
-`ulAppDomainID`
+## <a name="parameters"></a>Parameter
+`ulAppDomainID`\
+[in] Der Bezeichner der Anwendungsdomäne.
 
- [in] Der Bezeichner der Anwendungsdomäne.
+`guidModule`\
+[in] Eindeutiger Bezeichner des Moduls.
 
-`guidModule`
+`pUnkMetadataImport`\
+[in] Objekt, das die Symbol-Metadaten enthält.
 
- [in] Eindeutiger Bezeichner des Moduls.
+`pUnkCorDebugModule`\
+[in] Objekt, das implementiert die [ICorDebugModule-Schnittstelle](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
 
-`pUnkMetadataImport`
+`bstrModuleName`\
+[in] Der Name des Moduls.
 
- [in] Objekt, das die Symbol-Metadaten enthält.
+`bstrSymSearchPath`\
+[in] Suchpfad für die Symboldatei.
 
-`pUnkCorDebugModule`
-
- [in] Objekt, das implementiert die [ICorDebugModule-Schnittstelle](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
-
-`bstrModuleName`
-
- [in] Der Name des Moduls.
-
-`bstrSymSearchPath`
-
- [in] Suchpfad für die Symboldatei.
-
-`pCallback`
-
- [in] Ein Objekt, das die Rückrufmethode darstellt.
+`pCallback`\
+[in] Ein Objekt, das die Rückrufmethode darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
 Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

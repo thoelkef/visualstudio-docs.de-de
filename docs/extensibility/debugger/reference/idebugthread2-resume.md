@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5fc7b8f5cf5cd5360a60e8c6fbf3b6bf43415575
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 3b96ddd99c2d3377a5c48bb40660e17671ded0ca
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65225998"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199526"
 ---
 # <a name="idebugthread2resume"></a>IDebugThread2::Resume
 Setzt die Ausführung eines Threads.
@@ -40,9 +40,8 @@ int Resume ( 
 ```
 
 ## <a name="parameters"></a>Parameter
- `pdwSuspendCount`\
-
- [out] Gibt den Unterbrechungszähler nach der Wiederaufnahme des Vorgangs zurück.
+`pdwSuspendCount`\
+[out] Gibt den Unterbrechungszähler nach der Wiederaufnahme des Vorgangs zurück.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

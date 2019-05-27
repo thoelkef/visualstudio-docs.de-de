@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f14537a7543528be7ab026e7d24b9a1e9d964d0b
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: b122231099641b38fc6106698dba5fbff433b4de
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460852"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212749"
 ---
 # <a name="pdbtype"></a>PDB_TYPE
 
@@ -47,15 +47,12 @@ public struct PDB_TYPE {
 ## <a name="members"></a>Member
 
 `ulAppDomainID`\
-
 Die ID der Anwendung, von der das Symbol stammt. Dies wird verwendet, um eine Instanz der Anwendung eindeutig zu identifizieren.
 
 `guidModule`\
-
 Die GUID des Moduls, das dieses Feld enthält.
 
 `symid`\
-
 Die ID des Symbols, das dieses Feld entspricht.
 
 ## <a name="remarks"></a>Hinweise

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e714e6b2028605eb9c820f904cedf9ed4c23eab8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 55bd03f114e56bacde5b035527a2da55d7258872
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920397"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200113"
 ---
 # <a name="idebugenumfieldgetvaluefromstring"></a>IDebugEnumField::GetValueFromString
 Diese Methode gibt den Wert mit dem Namen einer Enumerationskonstante.
@@ -38,14 +41,12 @@ int GetValueFromString(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `pszValue`
+## <a name="parameters"></a>Parameter
+`pszValue`\
+[in] Eine Zeichenfolge, die den Namen für die zum Abrufen des Werts angeben. Beachten Sie, dass für C++, dies ist eine Breitzeichen-Zeichenfolge.
 
- [in] Eine Zeichenfolge, die den Namen für die zum Abrufen des Werts angeben. Beachten Sie, dass für C++, dies ist eine Breitzeichen-Zeichenfolge.
-
- `pValue`
-
- [out] Gibt den zugeordneten numerischen Wert zurück.
+`pValue`\
+[out] Gibt den zugeordneten numerischen Wert zurück.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls gibt `S_FALSE`, wenn der Name nicht Teil der Enumeration oder ein Fehlercode.

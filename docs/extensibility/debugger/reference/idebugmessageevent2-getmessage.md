@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6214d9240b51878d175496994831d767aa83375d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 00f0a1524a6c24b21dc9a167a7df286f60f48873
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918739"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210364"
 ---
 # <a name="idebugmessageevent2getmessage"></a>IDebugMessageEvent2::GetMessage
 Ruft die Meldung ab, die angezeigt werden.
@@ -45,26 +48,21 @@ int GetMessage( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `pMessageType`
+## <a name="parameters"></a>Parameter
+`pMessageType`\
+[out] Gibt einen Wert aus der [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) -Enumeration, der den Typ der Nachricht beschreibt.
 
- [out] Gibt einen Wert aus der [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) -Enumeration, der den Typ der Nachricht beschreibt.
+`pbstrMessage`\
+[out] Die Nachricht zurückgegeben.
 
- `pbstrMessage`
+`pdwType`\
+[out] Gibt den Typ der Nachricht mit den Konventionen der Win32- `MessageBox` Funktion. Finden Sie unter den [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) -Funktion für Details.
 
- [out] Die Nachricht zurückgegeben.
+`pbstrHelpFileName`\
+[in, out] Gibt den Namen der Hilfedatei zurück. Möglicherweise eine (C++) leer oder Null (c#), wenn keine Hilfedatei vorhanden ist.
 
- `pdwType`
-
- [out] Gibt den Typ der Nachricht mit den Konventionen der Win32- `MessageBox` Funktion. Finden Sie unter den [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) -Funktion für Details.
-
- `pbstrHelpFileName`
-
- [in, out] Gibt den Namen der Hilfedatei zurück. Möglicherweise eine (C++) leer oder Null (c#), wenn keine Hilfedatei vorhanden ist.
-
- `pdwHelpId`
-
- [in, out] Gibt den hilfebezeichner. 0, wenn keine Hilfe kann mit dieser Nachricht zugeordnet werden.
+`pdwHelpId`\
+[in, out] Gibt den hilfebezeichner. 0, wenn keine Hilfe kann mit dieser Nachricht zugeordnet werden.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9dc3185b644a1045428ead9f2c9851916df3249c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d226650592881e9e7f87a5fbf5c700dfd7d817cb
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917031"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211149"
 ---
 # <a name="idebugprogramengines2enumpossibleengines"></a>IDebugProgramEngines2::EnumPossibleEngines
 Gibt zurück, die GUIDs für alle der möglichen Debug-Engines (DE), die das Programm debuggen können.
@@ -40,18 +43,15 @@ int EnumPossibleEngines( 
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `celtBuffer`
+## <a name="parameters"></a>Parameter
+`celtBuffer`\
+[in] Die Anzahl der DE-GUIDs, die zurückgegeben werden soll. Hiermit wird die maximale Größe der auch die `rgguidEngines` Array.
 
- [in] Die Anzahl der DE-GUIDs, die zurückgegeben werden soll. Hiermit wird die maximale Größe der auch die `rgguidEngines` Array.
+`rgguidEngines`\
+[in, out] Ein Array von DE-GUIDs gefüllt werden soll.
 
- `rgguidEngines`
-
- [in, out] Ein Array von DE-GUIDs gefüllt werden soll.
-
- `pceltEngines`
-
- [out] Gibt die tatsächliche Anzahl von DE-GUIDs, die zurückgegeben werden.
+`pceltEngines`\
+[out] Gibt die tatsächliche Anzahl von DE-GUIDs, die zurückgegeben werden.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Gibt [C++] `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` oder [C#] 0x8007007A, wenn der Puffer nicht groß genug ist.

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b1bf9ac39628ff9615e158511a8a1afa0af46c3c
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 0ec98b9c206975b122511648017f920a28905b09
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226385"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207103"
 ---
 # <a name="idebugsymbolprovidergettypebyname"></a>IDebugSymbolProvider::GetTypeByName
 Diese Methode ordnet einen Symbolnamen ein Symboltyp.
@@ -44,17 +44,14 @@ int GetTypeByName(
 ```
 
 ## <a name="parameters"></a>Parameter
- `pszClassName`\
+`pszClassName`\
+[in] Der Symbolname.
 
- [in] Der Symbolname.
+`nameMatch`\
+[in] Wählt den Typ der Übereinstimmung, z. B. Groß-/Kleinschreibung beachtet. Ein Wert aus der [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) Enumeration.
 
- `nameMatch`\
-
- [in] Wählt den Typ der Übereinstimmung, z. B. Groß-/Kleinschreibung beachtet. Ein Wert aus der [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) Enumeration.
-
- `ppField`\
-
- [out] Gibt den Symboltyp, als ein [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) Objekt.
+`ppField`\
+[out] Gibt den Symboltyp, als ein [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) Objekt.
 
 ## <a name="return-value"></a>Rückgabewert
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.

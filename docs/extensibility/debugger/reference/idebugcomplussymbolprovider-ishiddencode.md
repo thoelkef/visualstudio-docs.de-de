@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0c9ef5f6000d3d8b3e446dddc460928e6bf626b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 12e2acecb92bece536824c4fe64213cbe4e768ea
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876585"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206162"
 ---
 # <a name="idebugcomplussymbolproviderishiddencode"></a>IDebugComPlusSymbolProvider::IsHiddenCode
 Bestimmt, ob der Code unter der Adresse angegebenen Debugger ausgeblendet ist.
@@ -34,10 +37,9 @@ int IsHiddenCode(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
-`pAddress`
-
- [in] Die debugadresse, die durch dargestellt wird ein [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) Schnittstelle.
+## <a name="parameters"></a>Parameter
+`pAddress`\
+[in] Die debugadresse, die durch dargestellt wird ein [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) Schnittstelle.
 
 ## <a name="return-value"></a>Rückgabewert
 Gibt zurück, wenn der Code ausgeblendet ist, `S_OK`ist, andernfalls gibt `S_FALSE`.

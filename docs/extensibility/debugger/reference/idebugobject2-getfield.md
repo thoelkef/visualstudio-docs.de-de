@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 797a18b678e815411b7ea7860e44ea6159caa2b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 829ee652ce1d1d2ebb713d4b52e1ea255624f07d
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872406"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209846"
 ---
 # <a name="idebugobject2getfield"></a>IDebugObject2::GetField
 Ruft den Typ dieses Objekts.
@@ -36,10 +39,9 @@ int GetField(
 );
 ```
 
-#### <a name="parameters"></a>Parameter
- `ppField`
-
- [out] Gibt eine [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) -Objekt, andernfalls ein null-Wert.
+## <a name="parameters"></a>Parameter
+`ppField`\
+[out] Gibt eine [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) -Objekt, andernfalls ein null-Wert.
 
 ## <a name="return-value"></a>Rückgabewert
  Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.

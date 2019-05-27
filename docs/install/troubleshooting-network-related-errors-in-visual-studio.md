@@ -1,7 +1,7 @@
 ---
 title: Problembehandlung von Netzwerk- oder Proxyfehlern
 description: Finden Sie Lösungen für netzwerk- oder proxybezogene Fehler, die beim Installieren oder Verwenden von Visual Studio hinter einer Firewall oder einem Proxyserver auftreten können.
-ms.date: 03/30/2019
+ms.date: 05/22/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e98f06a2dabd6627fbc70b1d072d0e34924c6691
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 719922f8cfcae78f5c082e838528a77bbd66d073
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968131"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976229"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Beheben von Netzwerkfehlern beim Installieren oder Verwenden von Visual Studio
 
@@ -36,19 +36,19 @@ Dieser Fehler tritt normalerweise auf, wenn Benutzer über einen Proxyserver mit
 
 - Starten Sie Visual Studio neu. Das Dialogfeld Proxy-Authentifizierung sollte angezeigt werden. Geben Sie bei Aufforderung Ihre Anmeldeinformationen in das Dialogfeld ein.
 
-- Wenn das Problem durch einen Neustart von Visual Studio nicht behoben wird, liegt dies möglicherweise daran, dass der Proxyserver keine Anmeldeinformationen für „http:&#47;&#47;go.microsoft.com“-Adressen, sondern für „&#42;.visualStudio.com“-Adressen erwartet. Für diese Server müssen Sie der Whitelist ggf. die folgenden URLs hinzufügen, um die Blockierung aller Anmeldeszenarien in Visual Studio aufzuheben:
+- Wenn das Problem durch einen Neustart von Visual Studio nicht behoben wird, liegt dies möglicherweise daran, dass Ihr Proxyserver keine Anmeldeinformationen für Adressen von Typ „http:&#47;&#47;go.microsoft.com“, sondern für Adressen vom Typ „&#42;.visualStudio.microsoftcom“ erwartet. Für diese Server müssen Sie die folgenden URLs möglicherweise einer Zulassungsliste hinzufügen, um die Blockierung aller Anmeldeszenarien in Visual Studio aufzuheben:
 
     - &#42;.windows.net
 
     - &#42;.microsoftonline.com
 
-    - &#42;.visualstudio.com
+    - &#42;.visualstudio.microsoft.com
 
     - &#42;.microsoft.com
 
     - &#42;.live.com
 
-- Sie können die Adresse „http:&#47;&#47;go.microsoft.com“ andernfalls aus der Whitelist entfernen, damit das Dialogfeld „Proxyauthentifizierung“ beim Neustart von Visual Studio sowohl für die Adresse „http:&#47;&#47;go.microsoft.com“ als auch die Serverendpunkte angezeigt wird.
+- Sie können die Adresse „http:&#47;&#47;go.microsoft.com“ andernfalls aus der Zulassungsliste entfernen, damit das Dialogfeld „Proxyauthentifizierung“ beim Neustart von Visual Studio sowohl für die Adresse „http:&#47;&#47;go.microsoft.com“ als auch die Serverendpunkte angezeigt wird.
 
   -ODER-
 
@@ -120,7 +120,7 @@ Lassen Sie Verbindungen mit den folgenden URLs zu:
 
 - &#42;.azurewebsites.net (für Azure-Verbindungen)
 
-- &#42;.visualstudio.com
+- &#42;.visualstudio.microsoft.com
 
 - cdn.vsassets.io (Hosting von CDN-Inhalten (Content Delivery Network))
 
@@ -138,5 +138,5 @@ Lassen Sie Verbindungen mit den folgenden URLs zu:
 ## <a name="see-also"></a>Siehe auch
 
 * [Installieren und Verwenden von Visual Studio hinter einer Firewall oder einem Proxyserver](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
-* [Administratorhandbuch für Visual Studio](visual-studio-administrator-guide.md)
+* [Administratorhandbuch für Visual Studio 2017 RC](visual-studio-administrator-guide.md)
 * [Installieren von Visual Studio](install-visual-studio.md)
