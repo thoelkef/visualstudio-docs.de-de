@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, manual authoring
 ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03e0f5a294dea1fda1e2d7c320fa0158de9bbb3a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f871cfce2fd3e26895d690b1f51ee38461493810
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415398"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315801"
 ---
 # <a name="author-vsct-files"></a>Erstellen von VSCT-Dateien
 In diesem Dokument wird gezeigt, wie zum Erstellen einer *VSCT* Datei, die die integrierte Entwicklungsumgebung (IDE) von Visual Studio Menübefehlen, Symbolleisten und andere Elemente der Benutzeroberfläche (UI) hinzugefügt. Verwenden Sie diese Schritte aus, wenn Sie ein Visual Studio-Paket (-VSPackage) UI-Elemente hinzufügen, die nicht bereits eine *VSCT* Datei.

@@ -3,17 +3,17 @@ title: Übersicht über die Language-Server-Protokoll | Microsoft-Dokumentation
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 6a7d93c2-31ea-4bae-8b29-6988a567ddf2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d3fb814fa202e8a5211ab9db3cb1d71923ccac6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f6f114d7165b85051092234ea33dfc7f73e1487
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856678"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309624"
 ---
 # <a name="language-server-protocol"></a>Sprachserverprotokoll
 
@@ -55,7 +55,7 @@ Im folgenden ist ein Beispiel für die ein Tool und eine Sprache-Server bei eine
 
 * **Der Benutzer führt die "Gehe zu Definition" auf ein Symbol im Editor**: Das Tool sendet eine Anforderung "TextDocument/Definition" mit zwei Parametern: (1) der Dokument-URI und (2) die Position im Text aus, in dem der zum Aufrufen der Anforderung der Anwendungsdefinition an den Server initiiert wurde. Der Server antwortet mit dem Dokument-URI und die Position der Definition des Symbols, innerhalb des Dokuments.
 
-* **Der Benutzer schließt das Dokument (Datei)**: Eine "TextDocument/DidClose" Benachrichtigung wird gesendet, aus dem Tool, den Language-Server, den das Dokument ist nun nicht mehr im Arbeitsspeicher und, die den aktuellen Inhalt ist nun auf dem Dateisystem auf dem neuesten Stand zu informieren.
+* **Der Benutzer schließt das Dokument (Datei)** : Eine "TextDocument/DidClose" Benachrichtigung wird gesendet, aus dem Tool, den Language-Server, den das Dokument ist nun nicht mehr im Arbeitsspeicher und, die den aktuellen Inhalt ist nun auf dem Dateisystem auf dem neuesten Stand zu informieren.
 
 In diesem Beispiel wird veranschaulicht, wie das Protokoll mit dem Language-Server, auf der Ebene der Editor-Funktionen wie "Gehe zu Definition", "Alle Verweise suchen" kommuniziert. Die Datentypen, die vom Protokoll verwendete sind-Editor oder IDE "Datentypen", wie das aktuell geöffneten Textdokument und die Position des Cursors. Die Datentypen sind nicht auf der Ebene der einer Sprache Domäne Programmiermodell, das in der Regel die abstrakte Syntaxstrukturen und Compiler-Symbole (z. B. aufgelösten Typen, Namespaces,...) bieten würde. Dadurch wird das Protokoll erheblich vereinfacht.
 

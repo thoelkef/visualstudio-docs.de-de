@@ -7,17 +7,17 @@ helpviewer_keywords:
 - menu commands, changing appearance
 - menus, changing command appearance
 ms.assetid: da2474fa-f92d-4e9e-b8bf-67c61bf249c2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7431fa1670f6a75b69c1a1033a51975307426771
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 119ce68dca4dfdea44cc7160855733080bc8e9ca
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926847"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321100"
 ---
 # <a name="change-the-appearance-of-a-command"></a>Ändern der Darstellung eines Befehls
 Sie können Feedback für den Benutzer angeben, durch Ändern der Darstellung eines Befehls. Beispielsweise sollten Sie einen Befehl anders aussehen, wenn sie nicht verfügbar ist. Sie können Befehle stellen, verfügbar oder nicht verfügbar, ausblenden oder anzeigen, oder aktivieren bzw. deaktivieren sie im Menü.
@@ -80,7 +80,7 @@ Um die Darstellung eines Befehls zu ändern, führen Sie eine der folgenden Akti
 
 6. Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz von Visual Studio sollte angezeigt werden.
 
-7. Auf der **Tools** Menü klicken Sie auf die **aufrufen ChangeMenuText** Befehl. Zu diesem Zeitpunkt ist der Name des Befehls **aufrufen ChangeMenuText**, sodass die Befehlshandler Aufrufen nicht **ChangeMyCommand()**.
+7. Auf der **Tools** Menü klicken Sie auf die **aufrufen ChangeMenuText** Befehl. Zu diesem Zeitpunkt ist der Name des Befehls **aufrufen ChangeMenuText**, sodass die Befehlshandler Aufrufen nicht **ChangeMyCommand()** .
 
 8. Auf der **Tools** Menü jetzt angezeigt werden sollte **neuen Text**. Klicken Sie auf **neuen Text**. Der Befehl sollte jetzt abgeblendet.
 

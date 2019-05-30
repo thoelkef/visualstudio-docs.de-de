@@ -3,18 +3,18 @@ title: 'Exemplarische Vorgehensweise: Speichern von Benutzereinstellungen auf ei
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 2362bda715a95e4228b6e4f882f1f8fb708667dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 79a54867044961d972e2ded452958d2463038e7d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62964780"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318521"
 ---
 # <a name="walkthrough-save-user-settings-on-a-start-page"></a>Exemplarische Vorgehensweise: Speichern von benutzereinstellungen auf einer Startseite
 
@@ -47,7 +47,7 @@ Weitere Informationen dazu, wie Sie die Einstellungen beibehalten werden, finden
 
     - Microsoft.VisualStudio.Shell.Interop.11.0
 
-3. Open *"MeinSteuerelement.xaml"*.
+3. Open *"MeinSteuerelement.xaml"* .
 
 4. Im XAML-Bereich, in der obersten Ebene <xref:System.Windows.Controls.UserControl> Elementdefinition, fügen Sie die folgenden Ereignisdeklaration nach den Namespacedeklarationen hinzu.
 
@@ -150,13 +150,13 @@ Weitere Informationen dazu, wie Sie die Einstellungen beibehalten werden, finden
 
 6. Erstellen Sie das Benutzersteuerelement.
 
-7. In **Projektmappen-Explorer**öffnen *"Source.Extension.vsixmanifest"*.
+7. In **Projektmappen-Explorer**öffnen *"Source.Extension.vsixmanifest"* .
 
 8. Legen Sie im manifest-Editor, **Produktname** zu **speichern My Settings Startseite**.
 
      Diese Funktion legt den Namen der Startseite fest, wie die in angezeigt werden die **Customize Start Page** Liste der **Optionen** Dialogfeld.
 
-9. Erstellen Sie *"StartPage.xaml"*.
+9. Erstellen Sie *"StartPage.xaml"* .
 
 ## <a name="test-the-control"></a>Testen Sie das Steuerelement
 

@@ -3,19 +3,19 @@ title: Hinzufügen einer Erweiterung Sprachserverprotokoll | Microsoft-Dokumenta
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9b268c0c15ce468ca40a90583c5b7310364c189
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: 7518a9086d5923c7b6ad71f07227b76517934b56
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805112"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352323"
 ---
-# <a name="add-a-language-server-protocol-extension"></a>Hinzufügen einer Erweiterung Sprachserverprotokoll
+# <a name="add-a-language-server-protocol-extension"></a>Hinzufügen der Sprachserverprotokollerweiterung
 
 Der Language-Server-Protokoll (LSP) ist ein häufig verwendetes Protokoll, in Form von JSON RPC v2. 0 verwendet, um Language Service-Features für Codeeditoren, die verschiedene bereitzustellen. Verwenden das Protokoll, können Entwickler schreiben, ein einzelne Sprache Server Sprachdienst zu Funktionen wie IntelliSense, Fehlerdiagnosen, finden Sie alle Verweise, und So weiter, um verschiedene Code-Editoren, die die LSP unterstützen. In der Vergangenheit können Sprachdienste in Visual Studio hinzugefügt werden, mithilfe von TextMate-Grammatik-Dateien zu grundlegenden Funktionen wie die syntaxhervorhebung oder durch Schreiben von benutzerdefinierten Sprachdienste, die den vollständigen Satz von Visual Studio-Erweiterbarkeits-APIs verwenden, um bereitzustellen umfangreichere Daten. Bei Visual Studio-Unterstützung für LSP besteht eine dritte Option zur Verfügung.
 
@@ -137,9 +137,9 @@ LSP umfasst keine Spezifikation zum Text farbliche Kennzeichnung für Sprachen b
     "MyLang"="$PackageFolder$\Grammars"
     ```
 
-4. Mit der rechten Maustaste auf die Dateien, und wählen **Eigenschaften**. Ändern der **erstellen** Aktion aus, um **Content** , und ändern Sie die **Include in VSIX-Datei** Eigenschaft **"true"**.
+4. Mit der rechten Maustaste auf die Dateien, und wählen **Eigenschaften**. Ändern der **erstellen** Aktion aus, um **Content** , und ändern Sie die **Include in VSIX-Datei** Eigenschaft **"true"** .
 
-Nach Abschluss der vorherigen Schritte, eine *Grammatiken* Ordner wird die Paket Installation hinzugefügt Verzeichnis als repositoryquelle mit dem Namen 'MyLang' ("MyLang" ist nur ein Name für Mehrdeutigkeit und können eine beliebige eindeutige Zeichenfolge sein). Alle Grammatiken (*.tmlanguage* Dateien) und Designdateien (*.tmtheme* Dateien) in diesem Verzeichnis als potenziellen übernommen werden, und setzen alle integrierten beiliegenden TextMate Grammatiken. Wenn die Grammatikdatei deklarierten Erweiterungen die Erweiterung der die zu öffnende Datei übereinstimmen, wird in TextMate Schritt.
+Nach Abschluss der vorherigen Schritte, eine *Grammatiken* Ordner wird die Paket Installation hinzugefügt Verzeichnis als repositoryquelle mit dem Namen 'MyLang' ("MyLang" ist nur ein Name für Mehrdeutigkeit und können eine beliebige eindeutige Zeichenfolge sein). Alle Grammatiken ( *.tmlanguage* Dateien) und Designdateien ( *.tmtheme* Dateien) in diesem Verzeichnis als potenziellen übernommen werden, und setzen alle integrierten beiliegenden TextMate Grammatiken. Wenn die Grammatikdatei deklarierten Erweiterungen die Erweiterung der die zu öffnende Datei übereinstimmen, wird in TextMate Schritt.
 
 ## <a name="create-a-simple-language-client"></a>Erstellen Sie einen einfache Sprache-client
 
@@ -300,7 +300,7 @@ Führen Sie diese Schritte unten aus, um Unterstützung für Einstellungen für 
     }
     ```
 
-2. Mit der rechten Maustaste auf die JSON-Datei, und wählen Sie **Eigenschaften**. Ändern der **erstellen** Aktion aus, um den "Content" und "Include in VSIX-Datei"-Eigenschaft auf **"true"**.
+2. Mit der rechten Maustaste auf die JSON-Datei, und wählen Sie **Eigenschaften**. Ändern der **erstellen** Aktion aus, um den "Content" und "Include in VSIX-Datei"-Eigenschaft auf **"true"** .
 
 3. Implementieren von ConfigurationSections und Zurückgeben der Liste der Präfixe für die Einstellungen, die in der JSON-Datei definiert (In Visual Studio Code, dies würde zugeordnet, der Name des Konfigurationsabschnitts in "Package.JSON"):
 
@@ -328,7 +328,7 @@ Führen Sie diese Schritte unten aus, um Unterstützung für Einstellungen für 
     @="$PackageFolder$\MockLanguageExtensionSettings.json"
     ```
 
-5. Klicken Sie mit der rechten Maustaste auf die PKGDEF-Datei, und wählen Sie **Eigenschaften**. Ändern der **erstellen** Aktion aus, um **Content** und **Include in VSIX-Datei** Eigenschaft **"true"**.
+5. Klicken Sie mit der rechten Maustaste auf die PKGDEF-Datei, und wählen Sie **Eigenschaften**. Ändern der **erstellen** Aktion aus, um **Content** und **Include in VSIX-Datei** Eigenschaft **"true"** .
 
 6. Öffnen Sie die *"Source.Extension.vsixmanifest"* -Datei und fügen Sie ein Medienobjekt in der **Asset** Registerkarte:
 

@@ -5,19 +5,19 @@ ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, registering
 ms.assetid: c4bb8add-7148-49e4-a377-01d059fd5524
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: adb79fec233171a0d20e817f9675aaab8e7228f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b74081f474e85b97f46db5250daf042dbd6b917
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798850"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316382"
 ---
-# <a name="tool-windows-in-the-registry"></a>Tool Windows in der Registrierung
+# <a name="tool-windows-in-the-registry"></a>Toolfenster in der Registrierung
 VSPackages, die Toolfenster bereitstellen, müssen bei registrieren [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] als tool Fenster-Anbieter. Toolfenster erstellt mithilfe der Visual Studio-Paket-Vorlage in der Standardeinstellung werden hierzu. Tool-Fenster-Anbieter müssen die System-Registrierungsschlüssel, die angeben, Visibility-Attribute, z. B. die Standardgröße des Tools und den Speicherort, die GUID des Fensters, das als Tool-Fensterbereich, und andockstil dient.
 
  Während der Entwicklung registrieren Anbieter von verwalteten Tools Fenster Toolfenster durch Hinzufügen von Attributen zum Quellcode, und klicken Sie dann das Dienstprogramm "RegPkg.exe" auf die sich ergebende Assembly ausgeführt. Weitere Informationen finden Sie unter [Registrieren eines Toolfensters](../extensibility/registering-a-tool-window.md).
