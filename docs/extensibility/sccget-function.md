@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccGet function
 ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fad29d305d3657f9ed6372769a85d84260c1e77b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4ad087af24723c6ccbf901280c7db748e2af461a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434651"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332121"
 ---
 # <a name="sccget-function"></a>SccGet-Funktion
 Diese Funktion ruft eine Kopie einer oder mehreren Dateien für das Anzeigen von und zu kompilieren, aber nicht zur Bearbeitung ab. In den meisten Systemen werden die Dateien als schreibgeschützt markiert.
@@ -86,7 +86,7 @@ SCCRTN SccGet(
  Schließlich auch, wenn ein Quellcode-Plug-in angegebene die `SCC_CAP_GET_NOUI` Flag bei der Initialisierung, der angibt, dass er verfügt nicht über eine Benutzeroberfläche für einen Get-Befehl, der diese Funktion kann noch von der IDE zum Abrufen von Dateien aufgerufen werden. Das Flag bedeutet einfach, dass die IDE wird ein Get-Menüelement nicht angezeigt, dass das plug-in nicht erwartet, dass keine Benutzeroberfläche bereitstellt.
 
 ## <a name="rename-files-and-sccget"></a>Umbenennen von Dateien und SccGet
- Problem: ein Benutzer checkt eine Datei, z. B. *a.txt*, und ändert diese. Vor dem *a.txt* eingecheckt werden kann, wird ein zweiter Benutzer *a.txt* zu *"b.txt"* in der Quellcode-Verwaltungsdatenbank checkt *"b.txt"*, macht Einige Änderungen an der Datei, und die Datei eingecheckt. Der erste Benutzer sollen die Änderungen, die von der zweite Benutzer vorgenommen werden, damit der erste Benutzer ihre lokalen Version von benennt *a.txt* Datei *"b.txt"* und führt einen Get für die Datei. Allerdings der lokale Cache, das verfolgt Versionsnummern weiterhin davon aus der ersten Version von *a.txt* lokal gespeichert und daher der quellcodeverwaltung nicht die Unterschiede auflösen kann.
+ Problem: ein Benutzer checkt eine Datei, z. B. *a.txt*, und ändert diese. Vor dem *a.txt* eingecheckt werden kann, wird ein zweiter Benutzer *a.txt* zu *"b.txt"* in der Quellcode-Verwaltungsdatenbank checkt *"b.txt"* , macht Einige Änderungen an der Datei, und die Datei eingecheckt. Der erste Benutzer sollen die Änderungen, die von der zweite Benutzer vorgenommen werden, damit der erste Benutzer ihre lokalen Version von benennt *a.txt* Datei *"b.txt"* und führt einen Get für die Datei. Allerdings der lokale Cache, das verfolgt Versionsnummern weiterhin davon aus der ersten Version von *a.txt* lokal gespeichert und daher der quellcodeverwaltung nicht die Unterschiede auflösen kann.
 
  Es gibt zwei Möglichkeiten, dieses Problem zu beheben, in denen der lokale Cache von Source-Control-Versionen mit der Datenbank synchronisiert wird:
 
@@ -96,9 +96,9 @@ SCCRTN SccGet(
 
     1. Rufen Sie die [SccQueryChanges](../extensibility/sccquerychanges-function.md) Funktion, erfahren Sie mehr über die Umbenennung *a.txt* zu *"b.txt"* im Quellcode-Verwaltungsdatenbank.
 
-    2. Benennen Sie die lokale *a.txt* zu *"b.txt"*.
+    2. Benennen Sie die lokale *a.txt* zu *"b.txt"* .
 
-    3. Rufen Sie die `SccGet` -Funktion für beide *a.txt* und *"b.txt"*.
+    3. Rufen Sie die `SccGet` -Funktion für beide *a.txt* und *"b.txt"* .
 
     4. Da *a.txt* existiert nicht in der Quellcode-Verwaltungsdatenbank wird der lokalen Cache des fehlenden gelöscht *a.txt* Versionsinformationen.
 

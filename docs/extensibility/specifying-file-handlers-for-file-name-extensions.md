@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - file extensions, specifying file handlers
 ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b56df6c315d0612d6139fcda8b94f5d1b33b12a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7a80c17fc6de0efe691b1c36e4421cb2b62cbd00
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434551"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331787"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Angeben von Dateihandlern für Dateierweiterungen
 Es gibt eine Reihe von Möglichkeiten, um die Anwendung zu ermitteln, die eine Datei behandelt, die eine bestimmte Dateierweiterung hat. Die Verben OpenWithList und OpenWithProgids werden zwei Möglichkeiten zum Angeben von dateihandlern unter dem Registrierungseintrag für die Dateierweiterung.
@@ -47,7 +47,7 @@ HKEY_CLASSES_ROOT\
 |--------------------|----------------------|
 |.Extension|ProductName. extension.versionMajor.versionMinor|
 
- Sie können verschiedene Anwendungen, die auf eine bestimmte Dateierweiterung zu öffnen, indem Sie mit versionsverwaltung durch das Programm-IDs als Werte hinzufügen, in der HKEY_CLASSES_ROOT können registrieren\\*\<Erweiterung >* \OpenWithProgids Schlüssel. Dieser Registrierungsschlüssel enthält eine Liste von alternativen Programm-IDs, die mit der Dateinamenerweiterung verknüpft ist. Die Anwendungen, die die aufgelisteten versionsabhängige Programm-IDs zugeordnet werden im der **Öffnen mit**_Produktname_ Untermenü. Wenn dieselbe Anwendung, sowohl angegeben wird die `OpenWithList` und `OpenWithProgids` Schlüssel, das Betriebssystem führt die Duplikate.
+ Sie können verschiedene Anwendungen, die auf eine bestimmte Dateierweiterung zu öffnen, indem Sie mit versionsverwaltung durch das Programm-IDs als Werte hinzufügen, in der HKEY_CLASSES_ROOT können registrieren\\ *\<Erweiterung >* \OpenWithProgids Schlüssel. Dieser Registrierungsschlüssel enthält eine Liste von alternativen Programm-IDs, die mit der Dateinamenerweiterung verknüpft ist. Die Anwendungen, die die aufgelisteten versionsabhängige Programm-IDs zugeordnet werden im der **Öffnen mit**_Produktname_ Untermenü. Wenn dieselbe Anwendung, sowohl angegeben wird die `OpenWithList` und `OpenWithProgids` Schlüssel, das Betriebssystem führt die Duplikate.
 
 > [!NOTE]
 > Die `OpenWithProgids` Schlüssel wird nur in Windows XP unterstützt. Da andere Betriebssysteme diesem Schlüssel ignorieren möchten, nicht verwenden Sie sie als die einzige Registrierung für Dateihandler. Verwenden Sie diesen Schlüssel, um eine bessere benutzererfahrung in Windows XP bereitzustellen.

@@ -3,17 +3,17 @@ title: 'Exemplarische Vorgehensweise: Implementieren von Codeausschnitten | Micr
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ae22475fa488d93ac4660fdc0cf567f50b32029
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2e4b6d0346ce10c780254b26a4f2c710ed171ef5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965153"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320736"
 ---
 # <a name="walkthrough-implement-code-snippets"></a>Exemplarische Vorgehensweise: Implementieren von Codeausschnitten
 Sie können Codeausschnitte erstellen und in einer Editor-Erweiterung einschließen, damit Benutzer von der Erweiterung sie ihren eigenen Code hinzufügen können.
@@ -123,7 +123,7 @@ Sie können Codeausschnitte erstellen und in einer Editor-Erweiterung einschlie�
 
 4. Stellen Sie sicher, dass die **Assets** Registerkarte enthält eine **VsPackage** content-Type und, **Projekt** auf den Namen des Projekts festgelegt ist.
 
-5. Wählen Sie das CompletionTest-Projekt, und legen Sie im Eigenschaftenfenster **Pkgdef-Datei generieren** zu **"true"**. Speichern Sie das Projekt.
+5. Wählen Sie das CompletionTest-Projekt, und legen Sie im Eigenschaftenfenster **Pkgdef-Datei generieren** zu **"true"** . Speichern Sie das Projekt.
 
 6. Fügen Sie einen statischen `SnippetUtilities` Klasse, um das Projekt.
 

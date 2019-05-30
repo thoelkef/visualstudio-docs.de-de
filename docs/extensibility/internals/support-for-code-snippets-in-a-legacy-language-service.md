@@ -7,17 +7,17 @@ helpviewer_keywords:
 - code snippets, supporting in language services [managed package framework]
 - language services [managed package framework], supporting code snippets
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08c30f723c6dbdb7359b1fd1d7648a38e71ab161
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dfa3bfa86d39bcd430d96c3d71f192e9a69a9400
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428817"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322426"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Unterstützen von Codeausschnitten in einem Legacysprachdienst
 Ein Codeausschnitt ist ein Codeabschnitt, der in die Quelldatei eingefügt wird. Des Codeausschnitts selbst ist eine XML-basierte Vorlage mit einem Satz von Feldern. Diese Felder werden hervorgehoben, nachdem der Codeausschnitt eingefügt und haben unterschiedliche Werte je nach Kontext, in dem der Ausschnitt eingefügt wird. Sofort, nachdem der Codeausschnitt eingefügt wird, kann der Sprachdienst im Codeausschnitt formatieren.
@@ -50,7 +50,7 @@ Ein Codeausschnitt ist ein Codeabschnitt, der in die Quelldatei eingefügt wird.
 
  Es gibt in der Regel zwei Orten, in dem Codeausschnitt-Vorlagendateien gespeichert sind: (1), wo Ihre Sprache installiert wurde, und klicken Sie mit der 2) in den Ordner des Benutzers. Diese Speicherorte werden der Registrierung hinzugefügt also, die Visual Studio **Codeausschnitt-Manager** finden Sie die Codeausschnitte. Im Ordner des Benutzers ist, in dem vom Benutzer erstellte Codeausschnitte gespeichert werden.
 
- Typische ordnerlayouts für die installierte Vorlage codeausschnittsdateien sieht wie folgt aus: *[InstallRoot]*\\ *[TestLanguage]* \Snippets\\ *[LCID]* \Snippets.
+ Typische ordnerlayouts für die installierte Vorlage codeausschnittsdateien sieht wie folgt aus: *[InstallRoot]* \\ *[TestLanguage]* \Snippets\\ *[LCID]* \Snippets.
 
  *[InstallRoot]*  ist der Ordner, in die Sprache installiert ist.
 
@@ -58,7 +58,7 @@ Ein Codeausschnitt ist ein Codeabschnitt, der in die Quelldatei eingefügt wird.
 
  *[LCID]*  ist die Gebietsschema-ID. Dies ist wie lokalisierte Versionen Ausschnitte werden gespeichert. Die Gebietsschema-ID für Englisch ist beispielsweise 1033, also *[LCID]* durch 1033 ersetzt wird.
 
- Eine zusätzliche Datei muss angegeben werden, und eine Indexdatei, die in der Regel als SnippetsIndex.xml oder ExpansionsIndex.xml (Sie können jeden gültigen Dateinamen mit der Endung XML verwenden) bezeichnet wird. Diese Datei befindet sich in der Regel in der *[InstallRoot]*\\ *[TestLanguage]* Ordner und gibt den genauen Speicherort der Codeausschnittordner als auch die Sprach-ID und GUID der Sprache Dienst, der die Codeausschnitte verwendet. Der genaue Pfad der Indexdatei wird in der Registrierung eingefügt, wie weiter unten in "Installieren der Registrierungseinträge" beschrieben. Hier ist ein Beispiel einer SnippetsIndex.xml-Datei:
+ Eine zusätzliche Datei muss angegeben werden, und eine Indexdatei, die in der Regel als SnippetsIndex.xml oder ExpansionsIndex.xml (Sie können jeden gültigen Dateinamen mit der Endung XML verwenden) bezeichnet wird. Diese Datei befindet sich in der Regel in der *[InstallRoot]* \\ *[TestLanguage]* Ordner und gibt den genauen Speicherort der Codeausschnittordner als auch die Sprach-ID und GUID der Sprache Dienst, der die Codeausschnitte verwendet. Der genaue Pfad der Indexdatei wird in der Registrierung eingefügt, wie weiter unten in "Installieren der Registrierungseinträge" beschrieben. Hier ist ein Beispiel einer SnippetsIndex.xml-Datei:
 
 ```
 <?xml version="1.0" encoding="utf-8" ?>

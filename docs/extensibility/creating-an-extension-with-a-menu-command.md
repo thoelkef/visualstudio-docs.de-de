@@ -8,17 +8,17 @@ helpviewer_keywords:
 - tutorials
 - visual studio package
 ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e8e98a20fafc825af0cf9486c8a9939c02e3b5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fb18792e2d0d357bb131af6c12e97425cd72fd05
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891063"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345375"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Erstellen Sie eine Erweiterung mit einem Menübefehl
 
@@ -32,7 +32,7 @@ Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter i
 
 1. Erstellen Sie ein VSIX-Projekt mit dem Namen **FirstMenuCommand**. Sie finden die VSIX-Projektvorlage in das **neues Projekt** Dialogfeld, indem Sie nach "Vsix" suchen.
 
-2. Wenn das Projekt geöffnet wird, fügen Sie eine benutzerdefinierten Befehl-Elementvorlage, die mit dem Namen **FirstCommand**. In der **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie **hinzufügen** > **neues Element**. In der **neues Element hinzufügen** wechseln Sie zum Dialogfeld **Visual C#-** > **Erweiterbarkeit** , und wählen Sie **benutzerdefinierten Befehls**. In der **Namen** Feld am unteren Rand des Fensters, ändern Sie den Namen der Befehlsdatei an *FirstCommand.cs*.
+2. Wenn das Projekt geöffnet wird, fügen Sie eine benutzerdefinierten Befehl-Elementvorlage, die mit dem Namen **FirstCommand**. In der **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie **hinzufügen** > **neues Element**. In der **neues Element hinzufügen** wechseln Sie zum Dialogfeld **Visual C#-**  > **Erweiterbarkeit** , und wählen Sie **benutzerdefinierten Befehls**. In der **Namen** Feld am unteren Rand des Fensters, ändern Sie den Namen der Befehlsdatei an *FirstCommand.cs*.
 
 3. Erstellen Sie das Projekt, und starten Sie das Debugging.
 
@@ -50,7 +50,7 @@ Ab Visual Studio 2015, sind Sie nicht Visual Studio SDK aus dem Downloadcenter i
 
 ::: moniker-end
 
-Lesen Sie jetzt die **Tools** Menü in der experimentellen Instanz. Daraufhin sollte **aufrufen FirstCommand** Befehl. An diesem Punkt der Befehl öffnet ein Dialogfeld mit der Meldung **FirstCommandPackage in FirstMenuCommand.FirstCommand.MenuItemCallback()**. Gewusst wie: Starten des Editors wirklich von diesem Befehl wird im nächsten Abschnitt sehen.
+Lesen Sie jetzt die **Tools** Menü in der experimentellen Instanz. Daraufhin sollte **aufrufen FirstCommand** Befehl. An diesem Punkt der Befehl öffnet ein Dialogfeld mit der Meldung **FirstCommandPackage in FirstMenuCommand.FirstCommand.MenuItemCallback()** . Gewusst wie: Starten des Editors wirklich von diesem Befehl wird im nächsten Abschnitt sehen.
 
 ## <a name="change-the-menu-command-handler"></a>Ändern Sie den Befehlshandler Menü
 

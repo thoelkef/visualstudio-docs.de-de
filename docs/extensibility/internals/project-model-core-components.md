@@ -6,17 +6,17 @@ helpviewer_keywords:
 - project models, objects and interfaces
 - project models, services
 ms.assetid: b2f572d3-b26d-4846-92d1-84055fac141a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e7139b92467c0b6622accce9530abf3e75fcea0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6966f7a0dbde78e996f81adc4d8d8d406489d298
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62859610"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328389"
 ---
 # <a name="project-model-core-components"></a>Hauptkomponenten eines Projektmodells
 In den folgenden Tabellen, die auf das Modell erweitert werden. Die Tabellen zeigen kurze Beschreibungen der Schnittstellen und -Dienste, die in das Modell und die Schnittstellen und Dienste im Zusammenhang mit der bestimmte Objekte identifiziert. Darüber hinaus Informationen in den Tabellen andere Schnittstellen, die in Project-Erstellung und Wartung je nach den Anforderungen Ihrer bestimmten Projekttyp optional sind.

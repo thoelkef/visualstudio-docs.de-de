@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - add a menu command
 ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0eade1bf17955bce52ea53b159f23102afb74b8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b89d4d4356245929bbd8ada7790729e78da3d15d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444918"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328147"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>Exemplarische Vorgehensweise: Verwenden eines Shellbefehls mit einer Editor-Erweiterung
 Von einem VSPackage können Sie Funktionen wie z. B. Menübefehle in den Editor hinzufügen. In dieser exemplarischen Vorgehensweise zeigt, wie eine Textansicht im Editor ein Zusatzelement hinzugefügt, durch den Aufruf eines Menübefehls.
@@ -38,7 +38,7 @@ Von einem VSPackage können Sie Funktionen wie z. B. Menübefehle in den Editor 
 
 ## <a name="add-a-mef-extension-to-the-command-extension"></a>Hinzufügen einer MEF-Erweiterung für die befehlserweiterung
 
-1. In **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektmappenknoten, klicken Sie auf **hinzufügen**, und klicken Sie dann auf **neues Projekt**. In der **neues Projekt hinzufügen** Dialogfeld klicken Sie auf **Erweiterbarkeit** unter **Visual C#-**, klicken Sie dann **VSIX-Projekt**. Benennen Sie das Projekt mit `CommentAdornmentTest`.
+1. In **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektmappenknoten, klicken Sie auf **hinzufügen**, und klicken Sie dann auf **neues Projekt**. In der **neues Projekt hinzufügen** Dialogfeld klicken Sie auf **Erweiterbarkeit** unter **Visual C#-** , klicken Sie dann **VSIX-Projekt**. Benennen Sie das Projekt mit `CommentAdornmentTest`.
 
 2. Da dieses Projekt mit der VSPackage-Assembly mit starkem Namen interagiert, müssen Sie die Assembly signieren. Sie können die Schlüsseldatei, die bereits für die VSPackage-Assembly erstellt wiederverwenden.
 
@@ -70,7 +70,7 @@ Von einem VSPackage können Sie Funktionen wie z. B. Menübefehle in den Editor 
 
 7. Stellen Sie sicher, dass das MenuCommandTest-Projekt einen Verweis auf das Projekt CommentAdornmentTest verfügt.
 
-8. Legen Sie das Projekt aus, um eine Assembly zu erzeugen, CommentAdornmentTest im Projekt. In der **Projektmappen-Explorer**, wählen Sie das Projekt, und suchen Sie in der **Eigenschaften** Fenster für die **Buildausgabe kopieren, um OutputDirectory** -Eigenschaft, und legen ihn auf **"true"**.
+8. Legen Sie das Projekt aus, um eine Assembly zu erzeugen, CommentAdornmentTest im Projekt. In der **Projektmappen-Explorer**, wählen Sie das Projekt, und suchen Sie in der **Eigenschaften** Fenster für die **Buildausgabe kopieren, um OutputDirectory** -Eigenschaft, und legen ihn auf **"true"** .
 
 ## <a name="define-a-comment-adornment"></a>Definieren Sie einen Kommentar Zusatzelement
  Das Kommentar-Zusatzelement selbst besteht aus einem <xref:Microsoft.VisualStudio.Text.ITrackingSpan> , verfolgt den markierten Text, und einige Zeichenfolgen, die dem Autor und die Beschreibung des Texts darstellen.

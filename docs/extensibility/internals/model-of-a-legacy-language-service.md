@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - language services, model
 ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a044d623931d024f15baba1532e3a563273242e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6efe97e0a6ca5d2188aee9d44246f1d9fb347cda
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62860099"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326770"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Modell eines Legacysprachdiensts
 Ein Sprachdienst definiert die Elemente und Funktionen für eine bestimmte Sprache und wird verwendet, um den Editor Informationen, die speziell für diese Sprache bereitzustellen. Beispielsweise muss der Editor die Elemente und Schlüsselwörter der Sprache kennen, um Farben für Syntax zu unterstützen.
