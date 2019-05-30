@@ -1,5 +1,5 @@
 ---
-title: Erweitern die Eigenschaften, Aufgabenliste, Ausgabe und Optionen für Windows | Microsoft-Dokumentation
+title: Erweitern Sie die Eigenschaften, Aufgabenliste, Ausgabe, Optionen für windows
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +10,17 @@ helpviewer_keywords:
 - tutorials
 - tool windows
 ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0e38daa68999da32c3b667a5e220c622b012667
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5186d7c16f89201b43ebabc49215c0afff4bbfd4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417238"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337115"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Erweitern Sie die Eigenschaften, Aufgabenliste, Ausgabe und Optionen für windows
 Sie können alle Toolfenster in Visual Studio zugreifen. Diese exemplarische Vorgehensweise zeigt, wie Informationen über das Toolfenster in ein neues Integration **Optionen** Seite und eine neue Einstellung für die **Eigenschaften** Seite sowie das Schreiben in die **Aufgabenliste** und **Ausgabe** Windows.
