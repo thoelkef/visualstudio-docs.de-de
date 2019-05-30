@@ -7,17 +7,17 @@ helpviewer_keywords:
 - project system
 - tutorial
 ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d23c0803bb81b34156d2cdb56e54388ba3cc5661
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6dfcae8855c2bdb821f61be65de39282db87dfd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926802"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337002"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Erstellen eines grundlegenden Projektsystems, Teil 2
 Der ersten exemplarischen Vorgehensweise in dieser Serie [erstellen ein grundlegenden Projektsystems, Teil 1](../extensibility/creating-a-basic-project-system-part-1.md), wird das Erstellen eines grundlegenden Projektsystems veranschaulicht. In dieser exemplarischen Vorgehensweise baut auf dem Projektsystem für die basic-eine Visual Studio-Vorlage auf einer Eigenschaftenseite und andere Funktionen. Sie müssen die erste exemplarischen Vorgehensweise abschließen, bevor Sie mit dieser beginnen.
@@ -207,7 +207,7 @@ Untergeordnete Knoten werden erstellt, indem Sie die Projektdatei ändern und hi
 
 In diesem Abschnitt zeigt, wie mit einen Konsole untergeordneter Knoten für den Projekttyp SimpleProject erstellt wird.
 
-1. Benennen Sie die *\\Templates\Projects\SimpleProject\\* Ordner  *\\Templates\Projects\ConsoleApp\\*.
+1. Benennen Sie die *\\Templates\Projects\SimpleProject\\* Ordner  *\\Templates\Projects\ConsoleApp\\* .
 
 2. In der **Eigenschaften** wählen Sie im Fenster alle fünf Dateien in die *\\Templates\Projects\ConsoleApp\\* Ordner, und stellen Sie sicher, dass die **Buildvorgang**nastaven NA hodnotu **ZipProject**.
 
@@ -317,7 +317,7 @@ Bei der Erstellung eines Projekts mit Visual Studio-Vorlage in der **neues Proje
 
 5. Erstellen Sie eine neue SimpleProject-Konsolenanwendung. (In der **Projekttypen** wählen Sie im Bereich **SimpleProject**. Unter **Visual Studio installierte Vorlagen**Option **Konsolenanwendung**.)
 
-6. Öffnen Sie in das neu erstellte Projekt, *"Program.cs"*. Es sollte in etwa wie folgt aussehen (GUID-Werte in der Datei variieren.):
+6. Öffnen Sie in das neu erstellte Projekt, *"Program.cs"* . Es sollte in etwa wie folgt aussehen (GUID-Werte in der Datei variieren.):
 
     ```csharp
     using System;

@@ -3,17 +3,17 @@ title: Roslyn-Analyzer und codeabhängige Bibliothek für ImmutableArrays | Micr
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28ddaafc8ab4ddbaef1d7e42faedc2229664c6e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a0c2eed45ce27fb108b0cdd0c84f64e4e253c9c1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433330"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334169"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Roslyn-Analyzer und codeabhängige Bibliothek für ImmutableArrays
 
@@ -131,7 +131,7 @@ Console.WriteLine("b2.Length = {0}", b2.Length);
 
 Die Zeilen des Codes mit `ImmutableArray` Wellenlinien haben, müssen Sie das unveränderliche NuGet-Paket abrufen und Hinzufügen einer `using` Anweisung, um Ihren Code. Drücken Sie die Zeiger nach rechts-Taste auf den Projektknoten in der **Projektmappen-Explorer** , und wählen Sie **NuGet-Pakete verwalten**. Klicken Sie im NuGet-Manager, geben Sie "Unveränderlich" in das Suchfeld, und wählen Sie das Element **System.Collections.Immutable** (Wählen Sie nicht **Microsoft.Bcl.Immutable**) im linken Bereich, und drücken Sie die  **Installieren Sie** Schaltfläche im rechten Bereich. Installieren des Pakets, fügt einen Verweis auf die Projektverweise hinzu.
 
-Sie sehen immer noch rote Wellenlinien unter `ImmutableArray`, daher platzieren Sie den Textcursor in diesem Bezeichner und drücken Sie **STRG**+**.** (Punkt), rufen Sie das Menü "vorgeschlagene Lösung", und wählen Sie zum Hinzufügen der entsprechenden `using` Anweisung.
+Sie sehen immer noch rote Wellenlinien unter `ImmutableArray`, daher platzieren Sie den Textcursor in diesem Bezeichner und drücken Sie **STRG**+ **.** (Punkt), rufen Sie das Menü "vorgeschlagene Lösung", und wählen Sie zum Hinzufügen der entsprechenden `using` Anweisung.
 
 **Speichern und schließen** die zweite Instanz von Visual Studio jetzt, um Sie in einen fehlerfreien Zustand weiterhin einfügen.
 
@@ -210,7 +210,7 @@ Entfernen Sie den Haltepunkt, damit Sie können finden Sie unter Ihrem Analyzer 
 
 Bevor Sie beginnen, schließen Sie die zweite Instanz von Visual Studio, und beenden Sie des Debuggens in die erste Instanz von Visual Studio (wobei Sie den Analyzer entwickeln).
 
-**Fügen Sie eine neue Klasse hinzu.** Verwenden Sie das Kontextmenü (Zeiger nach rechts-Taste), auf den Projektknoten in der **Projektmappen-Explorer** , und wählen Sie ein neues Element hinzufügen. Fügen Sie eine Klasse namens `BuildCodeFixProvider`. Diese Klasse muss für die Ableitung `CodeFixProvider`, und Sie müssen mit **STRG**+**.** (Punkt), die Codefehlerbehebung aufzurufen, die den richtigen fügt `using` Anweisung. Diese Klasse muss außerdem mit Anmerkung versehen sein `ExportCodeFixProvider` -Attribut, und Sie müssen Hinzufügen einer `using` Anweisung zum Auflösen der `LanguageNames` Enum. Sie sollten eine Klassendatei mit dem folgenden Code darin haben:
+**Fügen Sie eine neue Klasse hinzu.** Verwenden Sie das Kontextmenü (Zeiger nach rechts-Taste), auf den Projektknoten in der **Projektmappen-Explorer** , und wählen Sie ein neues Element hinzufügen. Fügen Sie eine Klasse namens `BuildCodeFixProvider`. Diese Klasse muss für die Ableitung `CodeFixProvider`, und Sie müssen mit **STRG**+ **.** (Punkt), die Codefehlerbehebung aufzurufen, die den richtigen fügt `using` Anweisung. Diese Klasse muss außerdem mit Anmerkung versehen sein `ExportCodeFixProvider` -Attribut, und Sie müssen Hinzufügen einer `using` Anweisung zum Auflösen der `LanguageNames` Enum. Sie sollten eine Klassendatei mit dem folgenden Code darin haben:
 
 ```csharp
 using Microsoft.CodeAnalysis;
@@ -223,7 +223,7 @@ namespace ImmutableArrayAnalyzer
     {}
 ```
 
-**Ich den Abriss abgeleiteten Elemente.** Jetzt Zirkumflexzeichen des Editors im Bezeichner `CodeFixProvider` , und drücken Sie **STRG**+**.** (Punkt), um die Implementierung dieser abstrakten Basisklasse stub. Dadurch wird eine Eigenschaft und eine Methode für Sie generiert.
+**Ich den Abriss abgeleiteten Elemente.** Jetzt Zirkumflexzeichen des Editors im Bezeichner `CodeFixProvider` , und drücken Sie **STRG**+ **.** (Punkt), um die Implementierung dieser abstrakten Basisklasse stub. Dadurch wird eine Eigenschaft und eine Methode für Sie generiert.
 
 **Implementieren Sie die Eigenschaft an.** Geben Sie die `FixableDiagnosticIds` Eigenschaft `get` Text mit den folgenden Code:
 
@@ -244,14 +244,14 @@ var root = await context.Document
                         .GetSyntaxRootAsync(context.CancellationToken);
 ```
 
-**Suchen Sie den Knoten mit dem Problem.** Sie übergeben den Kontext für die Spanne, aber den Knoten, den Sie finden den Code möglicherweise nicht, die, den Sie ändern müssen. Die gemeldete Diagnose wird nur die Spanne für die Typ-ID (wobei die Wellenlinie gehörte) bereitgestellt, aber Sie müssen die gesamte Objekterstellungsausdruck, ersetzen einschließlich der `new` Schlüsselwort an die Anfangs- und die Klammern am Ende. Fügen Sie den folgenden Code an Ihre Methode (und **STRG**+**.** Hinzufügen einer `using` -Anweisung für `ObjectCreationExpressionSyntax`):
+**Suchen Sie den Knoten mit dem Problem.** Sie übergeben den Kontext für die Spanne, aber den Knoten, den Sie finden den Code möglicherweise nicht, die, den Sie ändern müssen. Die gemeldete Diagnose wird nur die Spanne für die Typ-ID (wobei die Wellenlinie gehörte) bereitgestellt, aber Sie müssen die gesamte Objekterstellungsausdruck, ersetzen einschließlich der `new` Schlüsselwort an die Anfangs- und die Klammern am Ende. Fügen Sie den folgenden Code an Ihre Methode (und **STRG**+ **.** Hinzufügen einer `using` -Anweisung für `ObjectCreationExpressionSyntax`):
 
 ```csharp
 var objectCreation = root.FindNode(context.Span)
                          .FirstAncestorOrSelf<ObjectCreationExpressionSyntax>();
 ```
 
-**Registrieren Sie Ihr Codefix für die Glühbirne Benutzeroberfläche.** Wenn Sie Ihren Codefix registrieren, schließt Roslyn automatisch an die Visual Studio-Glühbirne Benutzeroberfläche an. Endbenutzer sehen können **STRG**+**.** (Punkt), wenn Ihr Analysemodul ein ungültiger Wellenlinien `ImmutableArray<T>` Konstruktor verwenden. Da Ihr Code Fix-Anbieter nur ausgeführt wird, wenn ein Problem vorliegt, können Sie davon ausgehen, dass Sie die Objekterstellungsausdruck verfügen, die Sie suchen. Aus dem Kontextparameter, können Sie die neue Codefehlerbehebung registrieren, indem Sie den folgenden Code am Ende hinzufügen `RegisterCodeFixAsync` Methode:
+**Registrieren Sie Ihr Codefix für die Glühbirne Benutzeroberfläche.** Wenn Sie Ihren Codefix registrieren, schließt Roslyn automatisch an die Visual Studio-Glühbirne Benutzeroberfläche an. Endbenutzer sehen können **STRG**+ **.** (Punkt), wenn Ihr Analysemodul ein ungültiger Wellenlinien `ImmutableArray<T>` Konstruktor verwenden. Da Ihr Code Fix-Anbieter nur ausgeführt wird, wenn ein Problem vorliegt, können Sie davon ausgehen, dass Sie die Objekterstellungsausdruck verfügen, die Sie suchen. Aus dem Kontextparameter, können Sie die neue Codefehlerbehebung registrieren, indem Sie den folgenden Code am Ende hinzufügen `RegisterCodeFixAsync` Methode:
 
 ```csharp
 context.RegisterCodeFix(
@@ -262,9 +262,9 @@ context.RegisterCodeFix(
             context.Diagnostics[0]);
 ```
 
-Müssen Sie dem Bezeichner des Editors Einfügemarke direktes `CodeAction`, verwenden Sie dann **STRG**+**.** (Punkt), zum Hinzufügen der entsprechenden `using` Anweisung für diesen Typ.
+Müssen Sie dem Bezeichner des Editors Einfügemarke direktes `CodeAction`, verwenden Sie dann **STRG**+ **.** (Punkt), zum Hinzufügen der entsprechenden `using` Anweisung für diesen Typ.
 
-Legen Sie die Einfügemarke des Editors, in der `ChangeToImmutableArrayEmpty` Bezeichner und Verwendung **STRG**+**.** erneut aus, um dieser Methodenstub für Sie generiert.
+Legen Sie die Einfügemarke des Editors, in der `ChangeToImmutableArrayEmpty` Bezeichner und Verwendung **STRG**+ **.** erneut aus, um dieser Methodenstub für Sie generiert.
 
 Dieser letzte Codeausschnitt hinzugefügten registriert die Codefehlerbehebung durch Übergeben einer `CodeAction` und die Diagnose-ID für die Art von Problem gefunden. In diesem Beispiel ist nur eine Diagnose-ID, die diesen Code bereitstellt, korrigiert, sodass Sie nur das erste Element des Arrays diagnostische IDs übergeben können. Bei der Erstellung der `CodeAction`, übergeben Sie den Text, der die Glühbirne Benutzeroberfläche als eine Beschreibung für die Codefehlerbehebung verwenden soll. Sie übergeben außerdem in einer Funktion, die von einem CancellationToken, und gibt ein neues Dokument. Das neue Dokument verfügt über eine neue Syntaxstruktur, die gepatchten Code enthält, die aufruft `ImmutableArray.Empty`. Diesem Codeausschnitt wird einen Lambda-Ausdruck, damit es über den Knoten ObjectCreation und den Kontext des Dokuments zu schließen.
 
@@ -288,7 +288,7 @@ private async Task<Document> ChangeToImmutableArrayEmpty(
 }
 ```
 
-Sie müssen für die Anmerkung der Redaktion Einfügemarke die `SyntaxGenerator` Bezeichner und Verwendung **STRG**+**.** (Punkt), zum Hinzufügen der entsprechenden `using` Anweisung für diesen Typ.
+Sie müssen für die Anmerkung der Redaktion Einfügemarke die `SyntaxGenerator` Bezeichner und Verwendung **STRG**+ **.** (Punkt), zum Hinzufügen der entsprechenden `using` Anweisung für diesen Typ.
 
 Dieser Code verwendet `SyntaxGenerator`, d.h. ein nützlich zum Erstellen von neuen Codes. Nachdem der erste eines Generators für das Dokument, das den Code, erleidet `ChangeToImmutableArrayEmpty` Aufrufe `MemberAccessExpression`, übergeben Sie den Typ, der das Element verfügt, wir zugreifen möchten, und übergeben Sie den Namen des Elements als Zeichenfolge.
 
@@ -296,9 +296,9 @@ Als Nächstes die Methode ruft den Stamm des Dokuments ab, und da dies mit belie
 
 ## <a name="try-your-code-fix"></a>Versuchen Sie es Ihren Codefix
 
-Sie können jetzt drücken **F5** das Analysemodul in eine zweite Instanz von Visual Studio ausführen. Öffnen Sie das Konsolenprojekt, die, dem Sie zuvor verwendet. Nachdem Sie, dass die Glühbirne angezeigt sehen sollten, in denen Ihre neuen Objekterstellungsausdruck ist `ImmutableArray<int>`. Wenn Sie drücken **STRG**+**.** (Punkt), sehen Sie Ihren Code zu beheben, und Sie sehen eine Vorschau des automatisch generierten Code-Unterschied in der Glühbirne Benutzeroberfläche. Roslyn, die dies für Sie erstellt haben.
+Sie können jetzt drücken **F5** das Analysemodul in eine zweite Instanz von Visual Studio ausführen. Öffnen Sie das Konsolenprojekt, die, dem Sie zuvor verwendet. Nachdem Sie, dass die Glühbirne angezeigt sehen sollten, in denen Ihre neuen Objekterstellungsausdruck ist `ImmutableArray<int>`. Wenn Sie drücken **STRG**+ **.** (Punkt), sehen Sie Ihren Code zu beheben, und Sie sehen eine Vorschau des automatisch generierten Code-Unterschied in der Glühbirne Benutzeroberfläche. Roslyn, die dies für Sie erstellt haben.
 
-**Pro-Tipps:** Wenn Sie die zweite Instanz von Visual Studio starten, und Sie nicht die Glühbirne, mit Ihren Codefix angezeigt, müssen Sie den Visual Studio-Komponente-Cache zu löschen. Zum Löschen des Zwischenspeichers erzwingt, dass Visual Studio, um die Komponenten neu zu überprüfen, damit Visual Studio und die aktuelle Komponente Adresse sollte. Fahren Sie zunächst die zweite Instanz von Visual Studio. Klicken Sie auf **Windows Explorer**, navigieren Sie zu *%LOCALAPPDATA%\Microsoft\VisualStudio\16.0Roslyn\\*. (Die "16.0" ändert sich von Version zu Version mit Visual Studio.) Löschen Sie das Unterverzeichnis *ComponentModelCache*.
+**Pro-Tipps:** Wenn Sie die zweite Instanz von Visual Studio starten, und Sie nicht die Glühbirne, mit Ihren Codefix angezeigt, müssen Sie den Visual Studio-Komponente-Cache zu löschen. Zum Löschen des Zwischenspeichers erzwingt, dass Visual Studio, um die Komponenten neu zu überprüfen, damit Visual Studio und die aktuelle Komponente Adresse sollte. Fahren Sie zunächst die zweite Instanz von Visual Studio. Klicken Sie auf **Windows Explorer**, navigieren Sie zu *%LOCALAPPDATA%\Microsoft\VisualStudio\16.0Roslyn\\* . (Die "16.0" ändert sich von Version zu Version mit Visual Studio.) Löschen Sie das Unterverzeichnis *ComponentModelCache*.
 
 ## <a name="talk-video-and-finish-code-project"></a>Sprechen Sie Video- und schließen Sie Codeprojekt
 

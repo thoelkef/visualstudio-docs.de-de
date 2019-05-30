@@ -4,16 +4,16 @@ ms.date: 06/25/2017
 ms.topic: conceptual
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
 author: willbrown
-ms.author: gregvanl
+ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 1014d76473511df9b73cae371e5e5dea2364f8b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4680adaf23abd01e72901c9a470633addbf0d924
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62862798"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324899"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Vorgehensweise: Machen Sie Erweiterungen kompatibel mit Visual Studio 2017 und Visual Studio 2015
 
@@ -51,10 +51,10 @@ Es wird dringend empfohlen, um das Upgrade mit Visual Studio 2015, anstelle von 
 
 ## <a name="ensure-there-is-no-reference-to-projectjson"></a>Stellen Sie sicher, dass es ist kein Verweis auf Datei "Project.JSON"
 
-Weiter unten in diesem Dokument werden wir fügen Sie bedingte Import-Anweisungen in Ihre **csproj* Datei. Dies funktioniert nicht, wenn die NuGet-Verweise in gespeichert sind *"Project.JSON"*. Es wird daher empfohlen, verschieben Sie alle NuGet-Verweise auf die *"Packages.config"* Datei.
+Weiter unten in diesem Dokument werden wir fügen Sie bedingte Import-Anweisungen in Ihre **csproj* Datei. Dies funktioniert nicht, wenn die NuGet-Verweise in gespeichert sind *"Project.JSON"* . Es wird daher empfohlen, verschieben Sie alle NuGet-Verweise auf die *"Packages.config"* Datei.
 Wenn das Projekt enthält eine *"Project.JSON"* Datei:
 
-* Beachten Sie die Verweise in *"Project.JSON"*.
+* Beachten Sie die Verweise in *"Project.JSON"* .
 * Von der **Projektmappen-Explorer**, löschen Sie die *"Project.JSON"* Datei aus dem Projekt. Dies löscht die *"Project.JSON"* Datei, und entfernt sie aus dem Projekt.
 * Fügen Sie dem Projekt die NuGet-Verweise in sichern:
     * Mit der rechten Maustaste auf die **Lösung** , und wählen Sie **NuGet-Pakete für Projektmappe verwalten**.
