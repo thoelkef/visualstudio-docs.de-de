@@ -3,17 +3,17 @@ title: Layout für Visual Studio | Microsoft-Dokumentation
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e35cb321772354de29b7b8466b6136c96cabf98d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ef763f3142f41e63effa1f76bb6bebdc95f0ee3a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798525"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66335344"
 ---
 # <a name="layout-for-visual-studio"></a>Layout für Visual Studio
 Die meisten Visual Studio-Dialogfelder sind [Hilfsprogramm Dialogfeldlayout](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), die der Unthemed sind, führen Sie Standard-Dialogfelder [Windows Desktop Dialogfeld Layout Prinzipien](/windows/desktop/uxguide/win-dialog-box). Wie Visual Studio verschoben wird, um die Benutzeroberfläche zu aktualisieren, müssen einige der bekannteren Dialoge ein neues Design, das sie als Produkt – beim Definieren von Umgebungen herstellt. Diese [Dialogfeldlayout](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) Design Darstellung aufweisen.

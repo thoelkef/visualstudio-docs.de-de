@@ -6,17 +6,17 @@ helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45d1b74fd492d91104fbf60ffee689b772fea05f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a657c59cba31ea48298179a41ab1024a0b7e948f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62860271"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326625"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Neue Projektgenerierung: Einblick in die Hintergründe, Teil 1
 Jemals daran gedacht, dazu, wie Sie Ihren eigenen Projekttyp erstellen? Fragen Sie sich, was tatsächlich geschieht, wenn Sie ein neues Projekt erstellen? Lassen Sie uns einen Blick hinter die Kulissen, und sehen, was wirklich passiert.
@@ -78,7 +78,7 @@ devenv /installvstemplates
 
  \<Visual Studio-Installationspfad > \VC#\VCSPackages\1033\csprojui.dll
 
- Um dies zu überprüfen, öffnen Sie den Datei-Explorer, und ziehen Sie csprojui.dll in das Verzeichnis Visual Studio... Die Tabelle zeigt, dass es sich bei Resource #2345 die Beschriftung weist **Visual C#-**.
+ Um dies zu überprüfen, öffnen Sie den Datei-Explorer, und ziehen Sie csprojui.dll in das Verzeichnis Visual Studio... Die Tabelle zeigt, dass es sich bei Resource #2345 die Beschriftung weist **Visual C#-** .
 
 ##### <a name="sortpriority"></a>SortPriority
  Dies bestimmt die Position des Stammknotens in der **Projekttypen** Struktur.
@@ -213,4 +213,4 @@ devenv /installvstemplates
     **MyProjectNode** als untergeordneter Knoten des Visual C# -Code direkt unter der Windows-Knoten wird angezeigt.
 
 ## <a name="see-also"></a>Siehe auch
-- [Generieren neuer Projekte: In die Hintergründe Teil 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
+- [Neue Projektgenerierung: Einblick in die Hintergründe, Teil 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

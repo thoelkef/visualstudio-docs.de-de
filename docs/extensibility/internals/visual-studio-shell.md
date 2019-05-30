@@ -6,17 +6,17 @@ helpviewer_keywords:
 - shell, Visual Studio
 - Visual Studio, shell
 ms.assetid: cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65f3090c6b96290527d2508ba47c899c81d6e6dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8a147abd4655c923604dd9ca6696e97aac4944ec
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62908031"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332874"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Shell ist der primäre Agent der Integration in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Die Shell bietet die erforderliche Funktionalität zum Aktivieren von VSPackages allgemeine Dienste gemeinsam verwenden. Da das architektonische Ziel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] besteht darin, primäre Funktionalität in der VSPackages, steht Ihnen zu die Shell ist ein Framework Grundfunktionen und als auch die Kommunikation zwischen der Komponente VSPackages zu unterstützen.

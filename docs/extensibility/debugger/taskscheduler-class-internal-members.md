@@ -6,24 +6,24 @@ helpviewer_keywords:
 - TaskScheduler class [.NET Framework debug engines]
 - debug engines, TaskScheduler class [.NET Framework]
 ms.assetid: 87f1c969-0217-4464-8907-7609c1bf61d3
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf7b693c058cd69ab2dcb79be787cf5a16d8f8a0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 865e12819a5e7325886c0f7f5d8425a6b3d2e393
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864022"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331334"
 ---
 # <a name="taskscheduler-class---internal-members"></a>TaskScheduler-Klasse – interne Member
 In diesem Artikel wird beschrieben, die internen Member des der <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> implementieren einen benutzerdefinierten Debugger-Klasse, die Ihnen helfen. Allgemeine Informationen zu dieser Klasse finden Sie unter den <xref:System.Threading.Tasks.TaskScheduler> Referenzartikel.
 
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Assembly:** "mscorlib" (in *"mscorlib.dll"*)
+ **Assembly:** "mscorlib" (in *"mscorlib.dll"* )
 
  Da Sie diese internen Member von .NET Framework zugreifen können, wird die folgende Syntax in Common Intermediate Language (CIL) bereitgestellt.
 
