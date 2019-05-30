@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DOCCONTEXT_COMPARE enumeration
 ms.assetid: ed947c34-b07e-4b69-8381-b6e7cb842862
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e36e9c3c0870cb81dd02f646636eeb758f1ddb62
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f31b33eeb782e71a87103d26a3bb78175611644e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686248"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318145"
 ---
 # <a name="doccontextcompare"></a>DOCCONTEXT_COMPARE
 Gibt die Kriterien zum Vergleichen von zwei dokumentenkontexte.
@@ -43,14 +46,18 @@ enum enum_DOCCONTEXT_COMPARE {
 };
 ```
 
-## <a name="members"></a>Member
-DOCCONTEXT_EQUAL ermittelt den ersten Dokumentenkontext in der Liste, die den Zielkontext-Dokument entspricht.
+## <a name="fields"></a>Felder
+`DOCCONTEXT_EQUAL`\
+Finden Sie in der Liste, die den Zielkontext-Dokument entspricht der ersten Dokumentkontext.
 
-DOCCONTEXT_LESS_THAN ermittelt den ersten Dokumentenkontext in der Liste, die kleiner ist als die Ziel-Dokumentkontext.
+`DOCCONTEXT_LESS_THAN`\
+Finden Sie in der Liste, die kleiner ist als den Zielkontext für das Dokument den ersten Dokumentenkontext.
 
-DOCCONTEXT_GREATER_THAN ermittelt den ersten Dokumentenkontext in der Liste, die über den Dokument-Zielkontext liegt.
+`DOCCONTEXT_GREATER_THAN`\
+Finden Sie in der Liste, die über den Dokument-Zielkontext liegt der ersten Dokumentkontext.
 
-DOCCONTEXT_SAME_DOCUMENT ermittelt den ersten Dokumentenkontext in der Liste, die in demselben Dokument wie den Zielkontext für das Dokument ist.
+`DOCCONTEXT_SAME_DOCUMENT`\
+Finden Sie in der Liste, die in demselben Dokument wie den Zielkontext für das Dokument ist der ersten Dokumentkontext.
 
 ## <a name="remarks"></a>Hinweise
 Übergeben als Argument an die [vergleichen](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md) Methode.

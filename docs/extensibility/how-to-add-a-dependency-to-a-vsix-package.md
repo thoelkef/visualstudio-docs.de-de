@@ -8,17 +8,17 @@ helpviewer_keywords:
 - package dll
 - vsix reference
 ms.assetid: 8f20177b-dab9-43a3-b959-81a591b451d6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1aabb7feaa565f5118904bba3850b153a20445b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ee6ebeb776e6aa85d5fba200ac357a7375fa2b99
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62911780"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341058"
 ---
 # <a name="how-to-add-a-dependency-to-a-vsix-package"></a>Vorgehensweise: Fügen Sie eine Abhängigkeit zu einem VSIX-Paket
 
@@ -34,7 +34,7 @@ Sie können eine VSIX-Paket-Bereitstellung einrichten, die alle Abhängigkeiten 
 
 ## <a name="require-a-specific-visual-studio-release"></a>Benötigen Sie eine bestimmte Version von Visual Studio
 
-Wenn die Erweiterung eine bestimmte Version von Visual Studio 2017 erforderlich ist, z. B. ein Feature in Version 15.3 hängt, können Sie die Nummer des Builds angeben, in VSIX Einbeziehen **"installationtarget"**. Beispielsweise hat in Version 15.3 eine Buildnummer von "15.0.26730.3". Sehen Sie die Zuordnung von Releases fest, erstellen Sie Zahlen [hier](../install/visual-studio-build-numbers-and-release-dates.md). Beachten Sie, dass mit der Versionsnummer "15.3" nicht ordnungsgemäß funktionieren.
+Wenn die Erweiterung eine bestimmte Version von Visual Studio 2017 erforderlich ist, z. B. ein Feature in Version 15.3 hängt, können Sie die Nummer des Builds angeben, in VSIX Einbeziehen **"installationtarget"** . Beispielsweise hat in Version 15.3 eine Buildnummer von "15.0.26730.3". Sehen Sie die Zuordnung von Releases fest, erstellen Sie Zahlen [hier](../install/visual-studio-build-numbers-and-release-dates.md). Beachten Sie, dass mit der Versionsnummer "15.3" nicht ordnungsgemäß funktionieren.
 
 Wenn Ihre Erweiterung erforderlich, Version 15.3 ist oder höher verwenden, müssten Sie deklarieren die **"installationtarget" Version** als [15.0.26730.3, 16.0):
 

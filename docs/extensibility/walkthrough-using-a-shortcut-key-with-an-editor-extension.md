@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link keystrokes to commands
 ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e8d4acb5bc43a174187fa74714a9ff24ef0a67c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5707e83545d2008f8e8ec042ea61208220887204
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62964481"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318502"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Exemplarische Vorgehensweise: Verwenden Sie eine Tastenkombination mit einer Editor-Erweiterung
 Sie können in die editorerweiterung auf Tastenkombinationen reagieren. Die folgende exemplarische Vorgehensweise veranschaulicht das Hinzufügen einer Ansicht Zusatzelement auf eine Textansicht mit einer Tastenkombination. Diese exemplarische Vorgehensweise basiert auf der Viewport Zusatzelement-Editor-Vorlage, und es Ihnen, fügen das Zusatzelement mit den Zeichen +.
@@ -108,7 +108,7 @@ Vor Visual Studio 2017 Version 15.6, die die einzige Möglichkeit zum Verarbeite
     }
     ```
 
-7. Implementieren der `Exec()` Methode, sodass die It eine violette Box an die Ansicht Wenn ein Pluszeichen hinzugefügt (**+**) Zeichen eingegeben wird.
+7. Implementieren der `Exec()` Methode, sodass die It eine violette Box an die Ansicht Wenn ein Pluszeichen hinzugefügt ( **+** ) Zeichen eingegeben wird.
 
     ```csharp
     int IOleCommandTarget.Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pvaIn, IntPtr pvaOut)
@@ -237,7 +237,7 @@ Die Befehlshandler ist eine Implementierung von <xref:Microsoft.VisualStudio.Com
    }
    ```
 
-6. Implementieren der `ExecuteCommand()` Methode, sodass die It eine violette Box an die Ansicht Wenn ein Pluszeichen hinzugefügt (**+**) Zeichen eingegeben wird.
+6. Implementieren der `ExecuteCommand()` Methode, sodass die It eine violette Box an die Ansicht Wenn ein Pluszeichen hinzugefügt ( **+** ) Zeichen eingegeben wird.
 
    ```csharp
    public bool ExecuteCommand(TypeCharCommandArgs args, CommandExecutionContext executionContext)

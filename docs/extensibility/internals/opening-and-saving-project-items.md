@@ -7,17 +7,17 @@ helpviewer_keywords:
 - files [Visual Studio], opening and saving
 - editors [Visual Studio SDK], file persistence
 ms.assetid: f71898ad-335f-4c43-a177-4da87078afd1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ca83cb6d2913e0c0a91f4a6e874640ae57c7708
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 77a3417bc15bc9c4c6149b4e77dc4fdcebe5cd6e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62860006"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314931"
 ---
 # <a name="opening-and-saving-project-items"></a>Öffnen und Speichern von Projektelementen
 Wenn Sie einen neuen Projekttyp hinzufügen, müssen Sie das Öffnen und Speichern der Dateien in Projekten verwalten die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (IDE). Die folgenden Themen behandeln die unterschiedlichen Ansätze zum Öffnen und Speichern von Dateien.
@@ -35,7 +35,7 @@ Wenn Sie einen neuen Projekttyp hinzufügen, müssen Sie das Öffnen und Speiche
 
  Enthält schrittweise Anleitungen zum angeben, dass die Dateien eines bestimmten Typs in Ihrem Projekt mit einem projektspezifischen-Editor geöffnet werden soll.
 
-- [Vorgehensweise: Open-Standard-Editoren](../../extensibility/how-to-open-standard-editors.md)
+- [Vorgehensweise: Öffnen von Standard-Editoren](../../extensibility/how-to-open-standard-editors.md)
 
  Enthält schrittweise Anleitungen zum angeben die IDE zu einen standard-Editor für Dateien in Ihrem Projekttyp öffnen zu aktivieren.
 
