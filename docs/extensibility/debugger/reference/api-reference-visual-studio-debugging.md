@@ -5,24 +5,24 @@ ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], API reference
 ms.assetid: e4e429da-3667-41f7-9158-a8207d13e91a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d415644897d7dd481f47c93a3b951db23fda843
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 7f880596854eb376d386bc6a96d789c54767f39d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686352"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351861"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>API-Referenz (Visual Studio-Debugging)
 Der Referenzabschnitt enthält eine konzeptionelle Übersicht über die API, eine Anleitung, die Syntax und Verwendung für alle API-Elemente anzeigt, und eine Sammlung von Codebeispielen. Alle Verweise werden alphabetisch nach Kategorie aufgelistet.
 
  Die folgende Tabelle zeigt die allgemeine `HRESULT` Werte, die von Methoden zurückgegeben werden.
 
-|name|Beschreibung|Wert|
+|Name|Beschreibung|Wert|
 |----------|-----------------|-----------|
 |S_OK|Erfolgreich.|0x00000000|
 |E_UNEXPECTED|Unerwarteter Fehler.|0x8000FFFF|
@@ -37,10 +37,10 @@ Der Referenzabschnitt enthält eine konzeptionelle Übersicht über die API, ein
 |E_ACCESSDENIED|Allgemeiner Zugriffsfehler.|0x80070005|
 
 > [!NOTE]
->  Wenn eine [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Debuggen die Methode gibt `S_OK`, es wird davon ausgegangen, dass all Parameter Zeiger gültig sind, d. h. keine Überprüfung durchgeführt, auf out Parameter Zeiger beim `S_OK` zurückgegeben wird.
+> Wenn eine [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Debuggen die Methode gibt `S_OK`, es wird davon ausgegangen, dass all Parameter Zeiger gültig sind, d. h. keine Überprüfung durchgeführt, auf out Parameter Zeiger beim `S_OK` zurückgegeben wird.
 >
 > [!NOTE]
->  Ungültige oder `NULL` [out]-Parameter kann dazu führen, dass die IDE abstürzen.
+> Ungültige oder `NULL` [out]-Parameter kann dazu führen, dass die IDE abstürzen.
 
 ## <a name="see-also"></a>Siehe auch
 - [Schnittstellen](../../../extensibility/debugger/reference/interfaces-visual-studio-debugging.md)

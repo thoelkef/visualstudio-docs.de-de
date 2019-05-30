@@ -7,17 +7,17 @@ helpviewer_keywords:
 - toolbars [Visual Studio], adding icons to commands
 - commands [Visual Studio], adding icons
 ms.assetid: 362a0c7e-5729-4297-a83f-1aba1a37fd44
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0d6a6cfeb3cb222d2ef58233b072f80e50c8d9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1c54ee6b448e5830b478f10029a0d2d958e7699
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891890"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352361"
 ---
 # <a name="add-icons-to-menu-commands"></a>Hinzufügen von Symbolen zu Menübefehlen
 Befehle können in sowohl Menüs und Symbolleisten angezeigt werden. Auf der Symbolleiste ist es üblich, dass ein Befehl aus, um mit nur einem Symbol (um Platz zu sparen) und in Menüs angezeigt werden, dass ein Befehl in der Regel mit einem Symbol und die Text angezeigt wird.
@@ -57,7 +57,7 @@ Befehle können in sowohl Menüs und Symbolleisten angezeigt werden. Auf der Sym
 
     - Legen Sie die `guid` Wert, der den Namen des der `<GuidSymbol>` Element, die Sie im vorherigen Schritt erstellt haben.
 
-    - Legen Sie die `href` Wert, der den relativen Pfad der Bitmapdatei (in diesem Fall **Ressourcen\\< Name der dokumentsymboldatei\>**.
+    - Legen Sie die `href` Wert, der den relativen Pfad der Bitmapdatei (in diesem Fall **Ressourcen\\< Name der dokumentsymboldatei\>** .
 
     - Legen Sie die `usedList` Wert, der die IDSymbol, die Sie zuvor erstellt haben. Dieses Attribut gibt eine durch Trennzeichen getrennte Liste der Symbole in VSPackages verwendet werden. Symbole nicht in der Liste sind ausgeschlossene Formularkompilierung.
 

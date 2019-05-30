@@ -9,17 +9,17 @@ helpviewer_keywords:
 - templates [Visual Studio], wizards
 - IWizard interface
 ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4ff83c2d4d28b6393f7f6d03b01e35d9cc0aa4f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 366244285892820039a5a0f7950a709d170b4527
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62911380"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352043"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Vorgehensweise: Verwenden von Assistenten mit Projektvorlagen
 
@@ -58,7 +58,7 @@ Dieses Verfahren veranschaulicht die Erstellung ein benutzerdefiniertes Assisten
 
 1. Richten Sie das VSIX-Projekt aus, um eine Assembly erstellt werden kann.
 
-2. In **Projektmappen-Explorer**, wählen Sie die VSIX-Projektknoten. Unten **Projektmappen-Explorer**, sollte die **Eigenschaften** Fenster. Wenn Sie nicht, wählen Sie **Ansicht** > **Fenster "Eigenschaften"**, oder drücken Sie **F4**. In der **Eigenschaften** wählen Sie im Fenster die folgenden Felder `true`:
+2. In **Projektmappen-Explorer**, wählen Sie die VSIX-Projektknoten. Unten **Projektmappen-Explorer**, sollte die **Eigenschaften** Fenster. Wenn Sie nicht, wählen Sie **Ansicht** > **Fenster "Eigenschaften"** , oder drücken Sie **F4**. In der **Eigenschaften** wählen Sie im Fenster die folgenden Felder `true`:
 
    - **IncludeAssemblyInVSIXContainer**
 
@@ -157,7 +157,7 @@ Dieses Verfahren veranschaulicht die Erstellung ein benutzerdefiniertes Assisten
 
    - Ein <xref:System.Object> Array, das einen Satz von Parametern enthält, die an den Assistenten von Visual Studio übergeben.
 
-     In diesem Beispiel wird dem <xref:System.Collections.Generic.Dictionary%602>-Parameter ein Parameterwert aus dem Benutzereingabeformular hinzugefügt. Jede Instanz des `$custommessage$`-Parameters im Projekt wird durch den vom Benutzer eingegebenen Text ersetzt. Fügen Sie Ihrem Projekt die folgenden Assemblys hinzu: **System** und **"System.Drawing"**.
+     In diesem Beispiel wird dem <xref:System.Collections.Generic.Dictionary%602>-Parameter ein Parameterwert aus dem Benutzereingabeformular hinzugefügt. Jede Instanz des `$custommessage$`-Parameters im Projekt wird durch den vom Benutzer eingegebenen Text ersetzt. Fügen Sie Ihrem Projekt die folgenden Assemblys hinzu: **System** und **"System.Drawing"** .
 
 7. Erstellen Sie jetzt die **UserInputForm**. In der *WizardImplementation.cs* Datei, fügen Sie den folgenden Code nach dem Ende der `WizardImplementation` Klasse.
 
@@ -210,17 +210,17 @@ In der Reihenfolge für Ihre benutzerdefinierte Projektvorlage des benutzerdefin
 
 1. Signieren der Assembly. In der **Projektmappen-Explorer**, wählen Sie die VSIX-Projekt, mit der rechten Maustaste und wählen Sie **Projekteigenschaften**.
 
-2. In der **Projekteigenschaften** wählen Sie im Fenster der **Signierung** Registerkarte in der **Signierung** Registerkarte **Assembly signieren**. In der **Schlüsseldatei mit starkem Namen auswählen** die Option  **\<neu >**. In der **Schlüssel für einen starken Namen erstellen** Fenster in der **Schlüsseldateiname** Feld **"Key.snk"**. Deaktivieren Sie die **Schlüsseldatei mit Kennwort schützen** Feld.
+2. In der **Projekteigenschaften** wählen Sie im Fenster der **Signierung** Registerkarte in der **Signierung** Registerkarte **Assembly signieren**. In der **Schlüsseldatei mit starkem Namen auswählen** die Option  **\<neu >** . In der **Schlüssel für einen starken Namen erstellen** Fenster in der **Schlüsseldateiname** Feld **"Key.snk"** . Deaktivieren Sie die **Schlüsseldatei mit Kennwort schützen** Feld.
 
 3. In der **Projektmappen-Explorer**, wählen Sie das VSIX-Projekt, und suchen die **Eigenschaften** Fenster.
 
-4. Legen Sie die **Kopie Ausgabe zum Buildausgabeverzeichnis** Feld **"true"**. Dadurch wird die Assembly, in das Ausgabeverzeichnis kopiert werden, wenn die Projektmappe neu erstellt wird. Es ist immer noch Bestandteil der `.vsix` Datei. Sie müssen die Assembly finden Sie unter, um herauszufinden, die Signaturschlüssel.
+4. Legen Sie die **Kopie Ausgabe zum Buildausgabeverzeichnis** Feld **"true"** . Dadurch wird die Assembly, in das Ausgabeverzeichnis kopiert werden, wenn die Projektmappe neu erstellt wird. Es ist immer noch Bestandteil der `.vsix` Datei. Sie müssen die Assembly finden Sie unter, um herauszufinden, die Signaturschlüssel.
 
 5. Generieren Sie die Projektmappe neu.
 
-6. Sie können die key.snk-Datei im Projektverzeichnis MyProjectWizard finden (*\<Ihr Speicherort > \MyProjectTemplate\MyProjectWizard\key.snk*). Kopieren der *"Key.snk"* Datei.
+6. Sie können die key.snk-Datei im Projektverzeichnis MyProjectWizard finden ( *\<Ihr Speicherort > \MyProjectTemplate\MyProjectWizard\key.snk*). Kopieren der *"Key.snk"* Datei.
 
-7. Wechseln Sie in das Ausgabeverzeichnis, und suchen Sie die Assembly (*\<Ihr Speicherort > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll*). Fügen Sie der *"Key.snk"* Datei hier. (Dies ist nicht unbedingt erforderlich, aber es erleichtert die folgenden Schritte aus.)
+7. Wechseln Sie in das Ausgabeverzeichnis, und suchen Sie die Assembly ( *\<Ihr Speicherort > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll*). Fügen Sie der *"Key.snk"* Datei hier. (Dies ist nicht unbedingt erforderlich, aber es erleichtert die folgenden Schritte aus.)
 
 8. Öffnen Sie ein Befehlsfenster, und ändern Sie in das Verzeichnis, in dem die Assembly erstellt wurde.
 
@@ -263,7 +263,7 @@ In der Reihenfolge für Ihre benutzerdefinierte Projektvorlage des benutzerdefin
 
 In diesem Beispiel zeigt das Projekt, das als Vorlage verwendet die in das Benutzereingabeformular des benutzerdefinierten Assistenten angegebene Meldung.
 
-1. In der **Projektmappen-Explorer**, wechseln Sie zu der **MyProjectTemplate** Projekt, und öffnen Sie *"Class1.cs"*.
+1. In der **Projektmappen-Explorer**, wechseln Sie zu der **MyProjectTemplate** Projekt, und öffnen Sie *"Class1.cs"* .
 
 2. Fügen Sie der `Main`-Methode der Anwendung die folgende Codezeile hinzu.
 

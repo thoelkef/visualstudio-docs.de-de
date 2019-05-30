@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7969ca0a5900ae08d1aac6634f961d45bbfac564
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a33911ffe8c28dd84166e3e16ac6b7f0f48f583c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65674151"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263018"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Exemplarische Vorgehensweise: Erstellen einer Build-Umgebung für mehrere Computer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -197,7 +197,7 @@ Sie können eine Buildumgebung in der Organisation erstellen, indem Sie Visual S
   
    - \Microsoft.VC110.OPENMP\vcomp110.dll  
   
-5. Kopieren Sie die folgenden Dateien aus dem Ordner „Debug_NonRedist\x86\“ oder dem Ordner „\Debug_NonRedist\x64\“ wie in [Vorbereiten eines Testcomputers zum Ausführen einer ausführbaren Debugdatei](https://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a) beschrieben zum Buildcomputer. Keine anderen Dateien dürfen kopiert werden.  
+5. Kopieren Sie die folgenden Dateien aus dem Ordner „Debug_NonRedist\x86\“ oder dem Ordner „\Debug_NonRedist\x64\“ wie in [Vorbereiten eines Testcomputers zum Ausführen einer ausführbaren Debugdatei](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable) beschrieben zum Buildcomputer. Keine anderen Dateien dürfen kopiert werden.  
   
    - \Microsoft.VC110.DebugCRT\msvcp110d.dll  
   
@@ -424,5 +424,5 @@ Sie können eine Buildumgebung in der Organisation erstellen, indem Sie Visual S
          Für systemeigenes Erstellen mit 64-Bit, zeigen Sie auf MSBuild mit 64-Bit.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Vorbereiten eines Testcomputers zum Ausführen einer ausführbaren Debugdatei](https://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a)   
+ [Vorbereiten eines Testcomputers zum Ausführen einer ausführbaren Debugdatei](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)   
  [MSBuild-Befehlszeilenreferenz](../msbuild/msbuild-command-line-reference.md)

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16871ba1115407e2665886d84b72594470f91287
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 9f858bec8ff025061603c72eda4ff6fc6d36549c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420621"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263625"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>GUIDs und IDs von Visual Studio-Menüs
 Dieser Artikel listet die GUID und ID-Werte, der die Menüs und Gruppen in der Menüleiste von Visual Studio. Diese Werte werden in definiert *VSCT* Dateien, die als Teil von Visual Studio SDK installiert werden. Weitere Informationen finden Sie unter [IDE-definierte Befehle, Menüs und Gruppen](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -56,6 +56,7 @@ Dieser Artikel listet die GUID und ID-Werte, der die Menüs und Gruppen in der M
 |Build|IDM_VS_MENU_BUILD|
 |Format|IDM_VS_MENU_FORMAT|
 |Tools|IDM_VS_MENU_TOOLS|
+|Erweiterungen|IDM_VS_MENU_EXTENSIONS|
 |Fenster|IDM_VS_MENU_WINDOW|
 |Add-Ins|IDM_VS_MENU_ADDINS|
 |Community|IDM_VS_MENU_COMMUNITY|
@@ -178,7 +179,7 @@ Dieser Artikel listet die GUID und ID-Werte, der die Menüs und Gruppen in der M
  Die folgende Hierarchie veranschaulicht die Untermenüs, die die Menüs auf der Menüleiste von Visual Studio zugeordnet sind. Da nur eine Gruppe ein Menüs als das übergeordnete Element verfügen kann, muss jedem Untermenü aus einer Gruppe in einem Menü, anstatt direkt über das Menü abgeleitet werden. Weitere Informationen über die Beziehung zwischen Menüs, Untermenüs und Gruppen finden Sie unter [Hinzufügen eines Untermenüs zu einem Menü](../../extensibility/adding-a-submenu-to-a-menu.md).
 
 > [!NOTE]
-> Die Namen der Menüs in der Menüleiste von Visual Studio werden nicht separat in dieser Hierarchie angezeigt, da sie wie folgt von der Namenskonvention für Gruppen in der IDE abgeleitet werden können: *IDG_VS_\<Menünamen\>_\<Gruppenname\>*.
+> Die Namen der Menüs in der Menüleiste von Visual Studio werden nicht separat in dieser Hierarchie angezeigt, da sie wie folgt von der Namenskonvention für Gruppen in der IDE abgeleitet werden können: *IDG_VS_\<Menünamen\>_\<Gruppenname\>* .
 
 |Übergeordnete Gruppe|Untermenü|Untergeordnete Gruppen|
 |------------------|-------------|------------------|

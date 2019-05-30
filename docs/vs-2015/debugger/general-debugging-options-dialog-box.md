@@ -22,12 +22,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2dd7d3f41790fac7a37fc3a98d728757f5bad967
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 47db517bfb75d81785e910d1dd166ac83ddb2fcb
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704679"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261656"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Allgemein, Debuggen, Dialogfeld "Optionen"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,7 +164,7 @@ Die**Extras / Optionen / Debugging / Allgemein** auf Seite können Sie die folge
   Zeigt die **Live Visual Tree** Befehle in einer Symbolleiste des Hauptfensters der XAML-Anwendung, die gedebuggt wird. Diese Option wurde in Visual Studio 2015 Update 2 eingeführt.  
   
   **Diagnosetools beim Debuggen aktivieren**  
-  Das Fenster **Diagnosetools** wird während des Debuggens angezeigt. Weitere Informationen finden Sie unter [profilerstellung im Debugger integrierten](https://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859).  
+  Das Fenster **Diagnosetools** wird während des Debuggens angezeigt. Weitere Informationen finden Sie unter [profilerstellung im Debugger integrierten](/visualstudio/profiling/running-profiling-tools-with-or-without-the-debugger).  
   
   **PerfTip für verstrichene Zeit beim Debuggen anzeigen**  
   Das Codefenster zeigt an, wie viel Zeit bei einem bestimmten Methodenaufruf während des Debuggens verstrichen ist.  

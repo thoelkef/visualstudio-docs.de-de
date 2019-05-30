@@ -8,12 +8,12 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 8a719a1420d4d2e64438865a41cc24da114fbc2d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 90517c46d8fa92d58e73e976f593a1bcfbfac9b1
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443069"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263560"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Erstellen von Apps mit systemeigener Benutzeroberfläche über Xamarin in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Nachdem Sie die Schritte unter [Setup und Installation](../cross-platform/setup-
 > [!TIP]
 > Den vollständigen Quellcode für dieses Projekt finden Sie im [Repository „Mobile Samples“ auf GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).
 >
-> Wenn Sie Probleme haben oder Fehler auftreten, posten Sie Ihre Fragen bitte auf [forums.xamarin.com](http://forums.xamarin.com). Viele Fehler können behoben werden, indem ein Update auf die neuesten von Xamarin erforderlichen SDKs durchgeführt wird. Diese werden unter [Xamarin Release Notes (Xamarin-Versionshinweise)](https://developer.xamarin.com/releases/) für die einzelnen Plattformen beschrieben.
+> Wenn Sie Probleme haben oder Fehler auftreten, posten Sie Ihre Fragen bitte auf [forums.xamarin.com](http://forums.xamarin.com). Viele Fehler können behoben werden, indem ein Update auf die neuesten von Xamarin erforderlichen SDKs durchgeführt wird. Diese werden unter [Xamarin Release Notes (Xamarin-Versionshinweise)](https://developer.xamarin.com/) für die einzelnen Plattformen beschrieben.
 >
 > [!NOTE]
 > Die Xamarin-Entwicklerdokumentation bietet außerdem, wie nachstehend aufgelistet, eine Reihe von exemplarischen Vorgehensweisen mit Schnellstart- und vertiefenden Abschnitten. Achten Sie für jede dieser Seiten darauf, dass „Visual Studio“ oben rechts auf der Seite ausgewählt ist, damit Visual Studio-spezifische exemplarische Vorgehensweisen angezeigt werden.
@@ -57,25 +57,25 @@ Nachdem Sie die Schritte unter [Setup und Installation](../cross-platform/setup-
 ## <a name="solution"></a> Einrichten Ihrer Projektmappe
  Mit diesen Schritten erstellen Sie eine Xamarin-Projektmappe mit nativer Benutzeroberfläche, die eine PCL für freigegebenen Code und zwei zusätzliche NuGet-Pakete enthält.
 
-1. Erstellen Sie in Visual Studio eine neue Projektmappe **Leere App (Native Portable)**, und nennen Sie diese **WeatherApp**. Sie finden diese Vorlage am einfachsten, indem Sie **Native Portable** in das Suchfeld eingeben.
+1. Erstellen Sie in Visual Studio eine neue Projektmappe **Leere App (Native Portable)** , und nennen Sie diese **WeatherApp**. Sie finden diese Vorlage am einfachsten, indem Sie **Native Portable** in das Suchfeld eingeben.
 
     Wenn Sie sie dort nicht finden, müssen Sie möglicherweise Xamarin installieren oder das Visual Studio 2015-Feature aktivieren, wie dies unter [Setup und Installation](../cross-platform/setup-and-install.md)beschrieben wird.
 
 2. Nachdem Sie auf „OK“ geklickt haben, um die Projektmappe zu erstellen, verfügen Sie über eine Reihe einzelner Projekte:
 
-   - **WeatherApp (Portable)**: die PCL, in die Sie Code schreiben, der plattformübergreifend freigegeben wird, einschließlich allgemeiner Geschäftslogik und UI-Code, die mit Xamarin.Forms verwendet werden.
+   - **WeatherApp (Portable)** : die PCL, in die Sie Code schreiben, der plattformübergreifend freigegeben wird, einschließlich allgemeiner Geschäftslogik und UI-Code, die mit Xamarin.Forms verwendet werden.
 
    - **WeatherApp.Droid**: das Projekt, das den systemeigenen Android-Code enthält. Dieses wird als Standardstartprojekt festgelegt.
 
    - **WeatherApp.iOS**: das Projekt, das den systemeigenen iOS-Code enthält.
 
-   - **WeatherApp.WinPhone (Windows Phone 8.1)**: das Projekt, das den nativen Phone-Code enthält.
+   - **WeatherApp.WinPhone (Windows Phone 8.1)** : das Projekt, das den nativen Phone-Code enthält.
 
      Innerhalb eines jeden nativen Projekts haben Sie Zugriff auf den nativen Designer für die entsprechende Plattform und können so plattformspezifische Bildschirme implementieren.
 
 3. Fügen Sie das NuGet-Paket **Newtonsoft.Json** zum PCL-Projekt hinzu, das Sie zum Verarbeiten der von einem Wetterdatendienst abgerufenen Informationen verwenden:
 
-   - Klicken Sie mit der rechten Maustaste im Projektmappen-Explorer auf **Projekt 'WeatherApp'**, und wählen Sie **NuGet-Pakete für Projektmappe verwalten...** aus.
+   - Klicken Sie mit der rechten Maustaste im Projektmappen-Explorer auf **Projekt 'WeatherApp'** , und wählen Sie **NuGet-Pakete für Projektmappe verwalten...** aus.
 
         Wählen Sie im NuGet-Fenster die Registerkarte **Durchsuchen** aus, und suchen Sie nach **Newtonsoft**.
 

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2572f66acf20efb322323fa3be28f0cfe790594d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b7c322b960360231c2e8a1d2aa1a9920bbcf5521
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928897"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263301"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Übersicht über die Bereitstellung in Visual Studio
 
@@ -118,7 +118,7 @@ Tutorials:
 
 - [Bereitstellen von .NET Core-Apps mit Visual Studio](/dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [Veröffentlichen einer ASP.NET Core-App in Azure mit Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
-- [Bereitstellung in Visual C++](/cpp/ide/deployment-in-visual-cpp)
+- [Bereitstellung in Visual C++](/cpp/windows/deployment-in-visual-cpp)
 - [Deploy UWP apps (Bereitstellen von UWP-Apps)](/windows/uwp/packaging/packaging-uwp-apps?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [Publish a Node.js app to Azure using Web Deploy (Bereitstellen einer Node.js-App in Azure mithilfe von Web Deploy)](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [Veröffentlichen einer Python-App in Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)

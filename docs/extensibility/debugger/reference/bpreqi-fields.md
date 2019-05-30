@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BPREQI_FIELDS enumeration
 ms.assetid: 679e771e-4a79-484e-af37-f962ef4aa245
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 25b95e2934de9d09ef9541162b05920a04f645bd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 757b8bfeeed2a7d75f3a0b4203b80b464e5b39fa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723044"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350509"
 ---
 # <a name="bpreqifields"></a>BPREQI_FIELDS
 Gibt die Informationen über eine Haltepunkt-Anforderung abgerufen werden sollen.
@@ -63,34 +66,48 @@ public enum enum_BPREQI_FIELDS {
 };
 ```
 
-## <a name="members"></a>Member
-BPREQI_BPLOCATION initialisieren und Verwenden der `bpLocation` Feld (Haltepunkt Speicherort) der [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) oder [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) Struktur.
+## <a name="fields"></a>Felder
+`BPREQI_BPLOCATION`\
+Initialisieren und Verwenden der `bpLocation` Feld (Haltepunkt Speicherort) der [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) oder [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) Struktur.
 
-BPREQI_LANGUAGE initialisieren und Verwenden der `guidLanguage` Feld der `BP_REQUEST_INFO` oder `BP_REQUEST_INFO2` Struktur.
+`BPREQI_LANGUAGE`\
+Initialisieren und Verwenden der `guidLanguage` Feld der `BP_REQUEST_INFO` oder `BP_REQUEST_INFO2` Struktur.
 
-BPREQI_PROGRAM initialisieren und Verwenden der `pProgram` Feld der `BP_REQUEST_INFO` oder `BP_REQUEST_INFO2` Struktur.
+`BPREQI_PROGRAM`\
+Initialisieren und Verwenden der `pProgram` Feld der `BP_REQUEST_INFO` oder `BP_REQUEST_INFO2` Struktur.
 
-BPREQI_PROGRAMNAME initialisieren und Verwenden der `bstrProgramName` Feld der `BP_REQUEST_INFO` oder `BP_REQUEST_INFO2` Struktur.
+`BPREQI_PROGRAMNAME`\
+Initialisieren und Verwenden der `bstrProgramName` Feld der `BP_REQUEST_INFO` oder `BP_REQUEST_INFO2` Struktur.
 
-BPREQI_THREAD initialisieren und Verwenden der `pThread` Feld der `BP_REQUEST_INFO` oder `BP_REQUEST_INFO2` Struktur.
+`BPREQI_THREAD`\
+Initialisieren und Verwenden der `pThread` Feld der `BP_REQUEST_INFO` oder `BP_REQUEST_INFO2` Struktur.
 
-BPREQI_THREADNAME initialisieren und Verwenden der `bstrThreadName` Feld der `BP_REQUEST_INFO` oder `BP_REQUEST_INFO2` Struktur.
+`BPREQI_THREADNAME`\
+Initialisieren und Verwenden der `bstrThreadName` Feld der `BP_REQUEST_INFO` oder `BP_REQUEST_INFO2` Struktur.
 
-BPREQI_PASSCOUNT initialisieren und Verwenden der `bpPassCount` Feld der `BP_REQUEST_INFO` oder `BP_REQUEST_INFO2` Struktur.
+`BPREQI_PASSCOUNT`\
+Initialisieren und Verwenden der `bpPassCount` Feld der `BP_REQUEST_INFO` oder `BP_REQUEST_INFO2` Struktur.
 
-BPREQI_CONDITION initialisieren und Verwenden der `bpCondition` (Bedingung für Haltepunkt) Feld der `BP_REQUEST_INFO` oder `BP_REQUEST_INFO2` Struktur.
+`BPREQI_CONDITION`\
+Initialisieren und Verwenden der `bpCondition` (Bedingung für Haltepunkt) Feld der `BP_REQUEST_INFO` oder `BP_REQUEST_INFO2` Struktur.
 
-BPREQI_FLAGS initialisieren und Verwenden der `dwFlags` Feld der `BP_REQUEST_INFO` oder `BP_REQUEST_INFO2` Struktur.
+`BPREQI_FLAGS`\
+Initialisieren und Verwenden der `dwFlags` Feld der `BP_REQUEST_INFO` oder `BP_REQUEST_INFO2` Struktur.
 
-BPREQI_ALLOLDFIELDS initialisieren/verwenden alle Felder für die von der `BP_REQUEST_INFO` Struktur.
+`BPREQI_ALLOLDFIELDS`\
+Initialize/verwenden alle Felder für die von der `BP_REQUEST_INFO` Struktur.
 
-BPREQI_VENDOR initialisieren und Verwenden der `guidVendor` Feld `BP_REQUEST_INFO2` Struktur.
+`BPREQI_VENDOR`\
+Initialisieren und Verwenden der `guidVendor` Feld `BP_REQUEST_INFO2` Struktur.
 
-BPREQI_CONSTRAINT initialisieren und Verwenden der `bstrConstraint` Feld `BP_REQUEST_INFO2` Struktur.
+`BPREQI_CONSTRAINT`\
+Initialisieren und Verwenden der `bstrConstraint` Feld `BP_REQUEST_INFO2` Struktur.
 
-BPREQI_TRACEPOINT initialisieren und Verwenden der `bstrTracepoint` Feld `BP_REQUEST_INFO2` Struktur.
+`BPREQI_TRACEPOINT`\
+Initialisieren und Verwenden der `bstrTracepoint` Feld `BP_REQUEST_INFO2` Struktur.
 
-BPREQI_ALLFIELDS gibt alle Felder für die `BP_REQUEST_INFO2` Struktur.
+`BPREQI_ALLFIELDS`\
+Gibt an, alle Felder für die `BP_REQUEST_INFO2` Struktur.
 
 ## <a name="remarks"></a>Hinweise
 Übergeben als Argument an die [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) und [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) Methoden, um die Felder der anzugeben, die [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) und [BP_REQUEST_INFO2 ](../../../extensibility/debugger/reference/bp-request-info2.md) Strukturen sind, initialisiert werden.

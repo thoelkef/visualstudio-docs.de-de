@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3c996b8b97217deb130d8e11a68b7efae01ee05
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: e1d424b7af82a423b4d227b77cd77a63eba2559c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843760"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261304"
 ---
 # <a name="add-search-to-a-tool-window"></a>Hinzufügen der Suche zu einem Toolfenster
 Beim Erstellen oder ein Toolfensters in Ihrer Erweiterung aktualisieren, können Sie die gleichen Suchfunktionen, die an anderer Stelle angezeigt wird, in Visual Studio hinzufügen. Diese Funktionalität umfasst die folgenden Funktionen:
@@ -106,7 +106,7 @@ Anhand dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie die folgenden 
      Am oberen Rand des Toolfensters, ein Steuerelement für die Suche wird angezeigt, mit einem **Suche** Wasserzeichen und ein vergrößern Glass-Symbol. Suche funktioniert jedoch noch nicht, da der Suchprozess nicht implementiert wurde.
 
 ## <a name="to-add-the-search-implementation"></a>Die suchimplementierung hinzufügen
- Wenn Sie die Suche auf Aktivieren einer <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>, wie im vorherigen Verfahren, das Fenster einen Search-Host erstellt. Dieser Host eingerichtet und verwaltet die Suche, die stets in einem Hintergrundthread auftreten. Da die <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> Klasse verwaltet die Erstellung von Search-Host und die Einstellung von der Suche, die Sie erstellen eine suchenaufgabe und geben Sie die Search-Methode. Die Suche erfolgt in einem Hintergrundthread und Aufrufe an das Tool Window-Steuerelement im UI-Thread auftreten. Aus diesem Grund müssen Sie verwenden die <xref:Microsoft.VisualStudio.Shell.ThreadHelper.Invoke%2A> Methode, um alle Aufrufe zu verwalten, die Sie im Zusammenhang mit dem Steuerelement vornehmen.
+ Wenn Sie die Suche auf Aktivieren einer <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>, wie im vorherigen Verfahren, das Fenster einen Search-Host erstellt. Dieser Host eingerichtet und verwaltet die Suche, die stets in einem Hintergrundthread auftreten. Da die <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> Klasse verwaltet die Erstellung von Search-Host und die Einstellung von der Suche, die Sie erstellen eine suchenaufgabe und geben Sie die Search-Methode. Die Suche erfolgt in einem Hintergrundthread und Aufrufe an das Tool Window-Steuerelement im UI-Thread auftreten. Aus diesem Grund müssen Sie verwenden die [ThreadHelper.Invoke*](https://msdn.microsoft.com/data/ee197798(v=vs.85)) Methode, um alle Aufrufe zu verwalten, die Sie im Zusammenhang mit dem Steuerelement vornehmen.
 
 1. In der *TestSearch.cs* Datei, fügen Sie die folgenden `using` Anweisungen:
 
@@ -127,7 +127,7 @@ Anhand dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie die folgenden 
 
     - Überschreibt die <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A> Methode zum Erstellen einer suchenaufgabe.
 
-    - Überschreibt die <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> Methode, um den Zustand des Textfelds wiederherzustellen. Diese Methode wird aufgerufen, wenn ein Benutzer abbricht, einer suchenaufgabe, und wenn ein Benutzer legt fest, oder hebt die Festlegung Optionen oder Filter. Beide <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> im UI-Thread aufgerufen werden. Aus diesem Grund müssen nicht im Textfeld von Zugriff auf die <xref:Microsoft.VisualStudio.Shell.ThreadHelper.Invoke%2A> Methode.
+    - Überschreibt die <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> Methode, um den Zustand des Textfelds wiederherzustellen. Diese Methode wird aufgerufen, wenn ein Benutzer abbricht, einer suchenaufgabe, und wenn ein Benutzer legt fest, oder hebt die Festlegung Optionen oder Filter. Beide <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> im UI-Thread aufgerufen werden. Aus diesem Grund müssen nicht im Textfeld von Zugriff auf die [ThreadHelper.Invoke*](https://msdn.microsoft.com/data/ee197798(v=vs.85)) Methode.
 
     - Erstellt eine Klasse mit dem Namen `TestSearchTask` von erbt <xref:Microsoft.VisualStudio.Shell.VsSearchTask>, die bietet einer Standardimplementierung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSearchTask>.
 
@@ -471,7 +471,7 @@ Anhand dieser exemplarischen Vorgehensweise erfahren Sie, wie Sie die folgenden 
 
 6. Wählen Sie den Filter ein.
 
-     Enthält das Suchfeld **Zeilen: "noch"**, und die folgenden Ergebnisse angezeigt werden:
+     Enthält das Suchfeld **Zeilen: "noch"** , und die folgenden Ergebnisse angezeigt werden:
 
      gute 2
 

@@ -1,5 +1,5 @@
 ---
-title: Implementieren von benutzerdefinierten Eincheckrichtlinien für die Codeanalyse für verwalteten Code
+title: Benutzerdefinierter Code Codeanalyse-Eincheckrichtlinien für verwalteten code
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c32164ef319199171b75379823dc021cfd886d74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6619e3bb988a555fba5718f609ff3a5f0584063b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815789"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260839"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementieren von benutzerdefinierten Eincheckrichtlinien für die Codeanalyse für verwalteten Code
 
@@ -79,7 +79,7 @@ Um eine benutzerdefinierte Regel für ein Azure DevOps-Projekt zu erstellen, Sie
 
 3. In der **Eincheckrichtlinie** auflisten, doppelklicken Sie auf **Codeanalyse**, und stellen Sie sicher, dass die **Codeanalyse für verwalteten Code erzwingen** das Kontrollkästchen aktiviert ist.
 
-4. In der **diesen Regelsatz ausführen** auf  **\<Regelsatz auswählen aus der Quellcodeverwaltung >**.
+4. In der **diesen Regelsatz ausführen** auf  **\<Regelsatz auswählen aus der Quellcodeverwaltung >** .
 
 5. Geben Sie den Pfad der Regeldatei Satz Eincheckrichtlinie, in der Versionskontrolle.
 
@@ -114,6 +114,6 @@ Sie geben Sie eine Regel des Project-Eincheckrichtlinie als die Codeanalyse-Rege
 
 6. Wenn Code in Komponenten von anderen Unternehmen ignorieren möchten, wählen Sie die **Ergebnisse aus generiertem Code unterdrücken** Kontrollkästchen.
 
-7. In der **diesen Regelsatz ausführen** auf  **\<durchsuchen... >**.
+7. In der **diesen Regelsatz ausführen** auf  **\<durchsuchen... >** .
 
 8. Geben Sie die lokale Version der Regelsatzdatei der Eincheckrichtlinie.

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bfbcf9a63a01d391cbbc65067793d75d42899c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8b34e23b1bc7972563d6d8d014ba0728dc637b34
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901302"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262130"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Debuggen von Techniken und Tools zum Schreiben von besserem code
 
@@ -294,7 +294,7 @@ Hier sind ein paar wichtige Tipps für die Ausnahmebehandlung:
     }
     ```
 
-* Überprüfen Sie für nicht vertraut sind Funktionen, die Sie in Ihrer app Expecially Interaktion mit externen Daten (z. B. eine webanforderung) enthält die Dokumentation, um zu sehen, welche Ausnahmen die Funktion auslösen. Dies kann es sich um wichtige Informationen für die richtige Fehlerbehandlung und zum Debuggen Ihrer app sein.
+* Überprüfen Sie die Dokumentation, um zu sehen, welche Ausnahmen die Funktion auslösen, für unbekannte Funktionen, die in Ihrer app, insbesondere solche, die Interaktion mit externen Daten (z. B. eine webanforderung) enthalten. Dies kann es sich um wichtige Informationen für die richtige Fehlerbehandlung und zum Debuggen Ihrer app sein.
 
 Beheben Sie die Beispiel-app, die `SerializationException` in die `GetJsonData` Methode ändern `4o` zu `40`.
 
