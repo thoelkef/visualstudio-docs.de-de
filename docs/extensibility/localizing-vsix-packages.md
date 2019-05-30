@@ -7,17 +7,17 @@ helpviewer_keywords:
 - localize extension
 - localized deployment
 ms.assetid: 10e80b13-b39e-466c-a7c8-774a862355af
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49908ba5110cf59d0aa4fff6f91bf356ec72c3c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3e0ef2cc0c2404a2148f471d12f313b158f3bd64
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856558"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344564"
 ---
 # <a name="localizing-vsix-packages"></a>Lokalisieren von VSIX-Paketen
 
@@ -41,7 +41,7 @@ Wenn der Inhalt des VSIX-Pakets eine VSPackage enthält, die fügt Menübefehle 
 ```
 
 > [!NOTE]
-> Die VSIX-unterstützt-Projektvorlagen in der [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] generieren Sie ein VSIX-Manifest, und nennen Sie sie *"Source.Extension.vsixmanifest"*. Wenn Visual Studio das Projekt erstellt wurde, kopiert er den Inhalt der Datei in "Extension.vsixmanifest" im VSIX-Paket.
+> Die VSIX-unterstützt-Projektvorlagen in der [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] generieren Sie ein VSIX-Manifest, und nennen Sie sie *"Source.Extension.vsixmanifest"* . Wenn Visual Studio das Projekt erstellt wurde, kopiert er den Inhalt der Datei in "Extension.vsixmanifest" im VSIX-Paket.
 
 ## <a name="the-extensionvsixlangpack-file"></a>Die Extension.vsixlangpack-Datei
 

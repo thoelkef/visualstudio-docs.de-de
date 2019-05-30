@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Project element [Visual Studio Templates]
 - <Project> element [Visual Studio Templates]
 ms.assetid: 1da15ea6-26e2-462b-a03e-584ef4996579
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a4b3ccaaca98fd6207c75d4a1cf44fbdb06d52cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 843ba7935dbddb95c9a3043deff534db9157f15b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433629"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336053"
 ---
 # <a name="project-element-visual-studio-templates"></a>Project-Element (Visual Studio-Vorlagen)
 Gibt an, die Dateien oder Verzeichnisse dem Projekt hinzu.
