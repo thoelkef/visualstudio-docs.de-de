@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DISASSEMBLY_FLAGS enumeration
 ms.assetid: c1ec5a4d-5d42-4660-932c-7348550140cb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c4602fa1b8d30e9119bb39e925cf7768ae1cbcf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0160a14a4ad20e7144e48f767fad88951ca1e473
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682426"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318386"
 ---
 # <a name="disassemblyflags"></a>DISASSEMBLY_FLAGS
 Gibt die Flags für die Disassemblierung.
@@ -47,18 +50,24 @@ public enum enum_DISASSEMBLY_FLAGS {
 };
 ```
 
-## <a name="members"></a>Member
-DF_DOCUMENTCHANGE gibt an, die diese Anweisung in einem anderen Dokument als die vorherige Version.
+## <a name="fields"></a>Felder
+`DF_DOCUMENTCHANGE`\
+Gibt an, dass diese Anweisung in einem anderen Dokument als die vorherige Version.
 
-DF_DISABLED gibt an, dass diese Anweisung nicht ausgeführt wird.
+`DF_DISABLED`\
+Gibt an, dass diese Anweisung nicht ausgeführt wird.
 
-DF_INSTRUCTION_ACTIVE angibt, der diese Anweisung den nächsten Anweisungen ausgeführt werden (möglicherweise mehr als eine).
+`DF_INSTRUCTION_ACTIVE`\
+Gibt an, dass diese Anweisung den nächsten Anweisungen ausgeführt werden (möglicherweise mehr als eine).
 
-DF_DATA gibt an, dass diese Anweisung wirklich Daten (nicht Code).
+`DF_DATA`\
+Gibt an, dass diese Anweisung wirklich Daten (nicht Code).
 
-DF_HASSOURCE gibt an, die diese Anweisung Quelle hat. Einige Anweisungen, z. B. profilerstellung oder Garbage Collection-Code, verfügen über keine entsprechende Quelle.
+`DF_HASSOURCE`\
+Gibt an, dass diese Anweisung Quelle verfügt. Einige Anweisungen, z. B. profilerstellung oder Garbage Collection-Code, verfügen über keine entsprechende Quelle.
 
-DF_DOCUMENT_CHECKSUM gibt an, dass `bstrDocumentUrl` Feld Prüfsummendaten enthält, nach der Dokument-URL. Finden Sie im Abschnitt "Hinweise" der [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) Struktur wie die Prüfsummendaten gespeichert werden.
+`DF_DOCUMENT_CHECKSUM`\
+Gibt an, dass `bstrDocumentUrl` Feld Prüfsummendaten enthält, nach der Dokument-URL. Finden Sie im Abschnitt "Hinweise" der [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) Struktur wie die Prüfsummendaten gespeichert werden.
 
 ## <a name="remarks"></a>Hinweise
 Verwendet als die `dwFlags` Mitglied der [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) Struktur.

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - AD_PROCESS_ID union
 ms.assetid: 4cb40d12-2e92-4f09-83f4-689928bd65b3
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 395070d018492fa8950c6856270c61c0a645cdd0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1893b78063e045f341af246fc0ef2c0f2ad1538e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688419"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351410"
 ---
 # <a name="adprocessid"></a>AD_PROCESS_ID
 Gibt die Prozess-ID, die möglicherweise eine System-ID oder eine GUID an.
@@ -45,11 +48,14 @@ public struct AD_PROCESS_ID {
 ```
 
 ## <a name="members"></a>Member
-`ProcessIdType` Ein Wert aus der [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md) Enumeration, die angibt, wie der zum Interpretieren der `ProcessId` union (oder für verwalteten Code, den Zugriff auf die Member der Struktur).
+`ProcessIdType`\
+Ein Wert aus der [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md) Enumeration, die angibt, wie der zum Interpretieren der `ProcessId` union (oder für verwalteten Code, den Zugriff auf die Member der Struktur).
 
-ist der Prozess-ID als Wert aus dem System DwProcessId.
+`dwProcessId`\
+Die Prozess-ID als Wert aus dem System.
 
-GuidProcessId die Prozess-ID als GUID.
+`guidProcessId`\
+Die Prozess-ID als GUID.
 
 DwUnused auffüllen.
 

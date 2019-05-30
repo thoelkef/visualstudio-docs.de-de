@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - outlining
 ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 908b2f2b7a0dc055065abd96df3eb4495ad30ce8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: df269c3018d850ed2d5ae7435b82eb4f3aee4e1a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965053"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320623"
 ---
 # <a name="walkthrough-outlining"></a>Exemplarische Vorgehensweise: Gliedern
 Richten Sie die Sprache basierenden Funktionen wie z. B. das Gliedern von definiert die Arten der Textbereiche, die Sie erweitern oder reduzieren möchten. Sie können Regionen im Kontext von einem Sprachdienst zu definieren oder definieren eigene Erweiterung und Inhalt Dateinamentyp und gelten von der Region-Definition für nur diesen Typ, oder wenden die Definitionen für die Region auf einem vorhandenen Inhaltstyp (z. B. "Text"). Diese exemplarische Vorgehensweise veranschaulicht das Definieren und Anzeigen von Gliederungsbereiche.
@@ -34,9 +34,9 @@ Richten Sie die Sprache basierenden Funktionen wie z. B. das Gliedern von defini
 3. Löschen Sie die vorhandenen Klassendateien.
 
 ## <a name="implement-an-outlining-tagger"></a>Implementieren Sie eine Gliederung Taggers
- Gliederungsbereiche werden markiert, eine Art von Tags (<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>). Dieses Tag stellt die Gliederung Verhalten. Die gegliederte Bereich kann erweitert oder reduziert werden. Die gegliederte Bereich ist gekennzeichnet durch ein Pluszeichen (**+**) falls er reduziert ist, oder ein Minuszeichen (-) (**-**), wenn er erweitert, und die erweiterte Region durch eine vertikale Linie abgegrenzt wird.
+ Gliederungsbereiche werden markiert, eine Art von Tags (<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>). Dieses Tag stellt die Gliederung Verhalten. Die gegliederte Bereich kann erweitert oder reduziert werden. Die gegliederte Bereich ist gekennzeichnet durch ein Pluszeichen ( **+** ) falls er reduziert ist, oder ein Minuszeichen (-) ( **-** ), wenn er erweitert, und die erweiterte Region durch eine vertikale Linie abgegrenzt wird.
 
- Die folgenden Schritte zeigen, wie Sie einen Tagger definieren, die Gliederungsbereiche für alle Regionen, die durch die Klammern getrennt erstellt (**[**,**]**).
+ Die folgenden Schritte zeigen, wie Sie einen Tagger definieren, die Gliederungsbereiche für alle Regionen, die durch die Klammern getrennt erstellt ( **[** , **]** ).
 
 ### <a name="to-implement-an-outlining-tagger"></a>Implementieren Sie eine Gliederung Taggers
 
@@ -129,7 +129,7 @@ Richten Sie die Sprache basierenden Funktionen wie z. B. das Gliedern von defini
     ]
     ```
 
-4. Es sollte ein Gliederungsbereich, der sowohl eckige Klammern enthält. Sie sollten das Minuszeichen links neben der öffnenden Klammer zum Reduzieren des Gliederungsbereichs klicken können. Wenn der Bereich reduziert werden, wird das Symbol mit den Auslassungszeichen (*...* ) sollte angezeigt werden, auf der linken Seite des reduzierten Bereich, und ein Popup mit dem Text **auf Text zeigen** sollte angezeigt werden, wenn Sie den Mauszeiger über die Schaltfläche bewegen.
+4. Es sollte ein Gliederungsbereich, der sowohl eckige Klammern enthält. Sie sollten das Minuszeichen links neben der öffnenden Klammer zum Reduzieren des Gliederungsbereichs klicken können. Wenn der Bereich reduziert werden, wird das Symbol mit den Auslassungszeichen ( *...* ) sollte angezeigt werden, auf der linken Seite des reduzierten Bereich, und ein Popup mit dem Text **auf Text zeigen** sollte angezeigt werden, wenn Sie den Mauszeiger über die Schaltfläche bewegen.
 
 ## <a name="see-also"></a>Siehe auch
 - [Exemplarische Vorgehensweise: Verknüpfen Sie einen Inhaltstyp mit einer Dateinamenerweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
