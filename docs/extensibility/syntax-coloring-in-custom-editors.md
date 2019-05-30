@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - syntax coloring
 ms.assetid: 74900b9a-baef-432a-8231-4568fb5e19ad
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5e627d758a1249a1e9b5e877255a67cfb255cf9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ff717c8586e22d82a79344dd3c134c604f868d10
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62799060"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316649"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>Syntaxfarben in benutzerdefinierten Editoren
 Visual Studio-Umgebung SDK-Editoren, einschließlich der Kern-Editor, verwenden Sie Sprachdienste bestimmte syntaktische Elemente zu identifizieren und mit angegebenen Farben für eine angegebene Dokumentenansicht anzeigen.
@@ -58,5 +58,5 @@ Visual Studio-Umgebung SDK-Editoren, einschließlich der Kern-Editor, verwenden 
 
 - [Syntaxfarben in einem Legacysprachdienst](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
 - [Implementieren von Syntaxfarben](../extensibility/internals/implementing-syntax-coloring.md)
-- [Vorgehensweise: Verwenden Sie die integrierten kolorierbaren Elemente](../extensibility/internals/how-to-use-built-in-colorable-items.md)
+- [Vorgehensweise: Verwenden von integrierten einfärbbaren Elementen](../extensibility/internals/how-to-use-built-in-colorable-items.md)
 - [Benutzerdefinierte einfärbbare Elemente](../extensibility/internals/custom-colorable-items.md)

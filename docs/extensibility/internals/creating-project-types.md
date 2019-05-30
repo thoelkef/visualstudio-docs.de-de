@@ -6,17 +6,17 @@ helpviewer_keywords:
 - project types, new
 - projects [Visual Studio SDK], new project types
 ms.assetid: bdb2d22e-d622-450c-bb2d-98152a745fcf
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c3d983da91fadbb0eb78eab6d0fa5bb02cca193
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 005765cb66a23f2efcf0c8defb323120d79bef60
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62910006"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314564"
 ---
 # <a name="create-project-types"></a>Erstellen von Projekttypen
 Sie können die erweitern [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] durch einen neuen Projekttyp erstellen. Um einen neuen Projekttyp zu erstellen, müssen Sie einige Konzepte verstehen und eine Reihe von Schritten ausführen. Die folgenden Themen enthalten eine Übersicht über zum Erstellen von Projekttypen zur Verfügung.
@@ -57,7 +57,7 @@ Sie können die erweitern [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_m
 
 - [Installieren von VSPackages mit Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
 
- Zeigt, wie Ihr VSPackage über eine eigene eindeutige Identität gewähren und wie die VSPackage-DLLs und andere Informationen in einer Windows Installer-Paket zu umschließen (*. MSI* Datei) für die Bereitstellung für Ihre Kunden.
+ Zeigt, wie Ihr VSPackage über eine eigene eindeutige Identität gewähren und wie die VSPackage-DLLs und andere Informationen in einer Windows Installer-Paket zu umschließen ( *. MSI* Datei) für die Bereitstellung für Ihre Kunden.
 
 - [Hierarchien in Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)
 

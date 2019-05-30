@@ -3,17 +3,17 @@ title: 'Exemplarische Vorgehensweise: Erstellen eines SDK mit JavaScript | Micro
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a8c89d5d-5b78-4435-817f-c5f25ca6d715
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f15dc7ef3c5ab06857307081511f1c9aa2285566
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 61f18d2d7412b84827aaa9b6a229c80019716df4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796342"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312549"
 ---
 # <a name="walkthrough-create-an-sdk-using-javascript"></a>Exemplarische Vorgehensweise: Erstellen eines SDKS mit JavaScript
 In dieser exemplarischen Vorgehensweise erläutert, wie Sie JavaScript verwenden, um eine einfache mathematische SDK als ein Visual Studio-Erweiterung (VSIX) zu erstellen.  Die exemplarische Vorgehensweise ist in folgende Teile gegliedert:
@@ -86,7 +86,7 @@ In dieser exemplarischen Vorgehensweise erläutert, wie Sie JavaScript verwenden
 
 10. In **Projektmappen-Explorer**, auf das Kontextmenü für die **SDKManifest.xml** Datei, wählen Sie **Eigenschaften**.
 
-11. In der **Eigenschaften** legen die **Include in VSIX-Datei** Eigenschaft **"true"**.
+11. In der **Eigenschaften** legen die **Include in VSIX-Datei** Eigenschaft **"true"** .
 
 12. In **Projektmappen-Explorer**, auf das Kontextmenü für die **SimpleMathVSIX** Projekts **hinzufügen** > **neuer Ordner**, und Klicken Sie dann benennen Sie den Ordner `Redist`.
 
@@ -126,13 +126,13 @@ In dieser exemplarischen Vorgehensweise erläutert, wie Sie JavaScript verwenden
 
 17. In **Projektmappen-Explorer**, auf das Kontextmenü für die **arithmetic.js** Datei, wählen Sie **Eigenschaften**. Stellen Sie diese Eigenschaften ändern:
 
-    - Legen Sie die **Include in VSIX-Datei** Eigenschaft **"true"**.
+    - Legen Sie die **Include in VSIX-Datei** Eigenschaft **"true"** .
 
     - Legen Sie die **in Ausgabeverzeichnis kopieren** Eigenschaft **immer kopieren**.
 
 18. In **Projektmappen-Explorer**, auf das Kontextmenü für die **SimpleMathVSIX** Projekts **erstellen**.
 
-19. Wählen Sie nach Abschluss des Buildvorgangs erfolgreich auf das Kontextmenü für das Projekt **Ordner in Datei-Explorer öffnen**. Navigieren Sie zu **\bin\debug\\**, und führen Sie `SimpleMathVSIX.vsix` installieren.
+19. Wählen Sie nach Abschluss des Buildvorgangs erfolgreich auf das Kontextmenü für das Projekt **Ordner in Datei-Explorer öffnen**. Navigieren Sie zu **\bin\debug\\** , und führen Sie `SimpleMathVSIX.vsix` installieren.
 
 20. Wählen Sie die **installieren** Schaltfläche und ermöglichen die vollständige Installation.
 
@@ -154,7 +154,7 @@ In dieser exemplarischen Vorgehensweise erläutert, wie Sie JavaScript verwenden
 
 7. In **Projektmappen-Explorer**unter **Verweise**, beachten Sie, dass die **einfache mathematische** Verweis wird angezeigt. Erweitern Sie ihn, und beachten Sie, dass eine **\js\\**  Ordner, der enthält **arithmetic.js**. Öffnen Sie **arithmetic.js** zu bestätigen, dass es sich bei Ihrem Quellcode installiert wurde.
 
-8. Verwenden Sie den folgenden Code ersetzen Sie den Inhalt der *"default.htm"*.
+8. Verwenden Sie den folgenden Code ersetzen Sie den Inhalt der *"default.htm"* .
 
    ```html
    <!DOCTYPE html>
