@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen einer Nachverfolgungseigenschaft zu einer domänenspezifischen Sprachdefinition
+title: Hinzufügen von Nachverfolgungseigenschaft zu DSL-definition
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46926113393542f590b78f3bfa2c4cc5f25e10a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 59fd8b72dec3405c29b352e20197f88cda9a5074
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960540"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263670"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Hinzufügen einer Nachverfolgungseigenschaft zu einer domänenspezifischen Sprachdefinition
 
@@ -101,7 +101,7 @@ Bevor Sie in dieser exemplarischen Vorgehensweise beginnen können, müssen Sie 
 
 3. Um die **ExampleElement** Domäne-Klasse verwenden, fügen Sie eine Domäneneigenschaft namens `Namespace`.
 
-     In der **Eigenschaften** Zeitfenster für die neue Eigenschaft **kann durchsucht werden** zu **"false"**, und legen Sie **Art** zu **"CustomStorage"** .
+     In der **Eigenschaften** Zeitfenster für die neue Eigenschaft **kann durchsucht werden** zu **"false"** , und legen Sie **Art** zu **"CustomStorage"** .
 
 4. Um die **ExampleElement** Domäne-Klasse verwenden, fügen Sie eine Domäneneigenschaft namens `IsNamespaceTracking`.
 
@@ -125,11 +125,11 @@ Bevor Sie in dieser exemplarischen Vorgehensweise beginnen können, müssen Sie 
 
     1. Erweitern Sie die **ExampleElement** Knoten, und wählen die **benutzerdefinierten Typdeskriptor (Domänentypdeskriptor)** Knoten.
 
-    2. In der **Eigenschaften** Zeitfenster für die domänentypdeskriptor **benutzerdefinierte codiert** zu **"true"**.
+    2. In der **Eigenschaften** Zeitfenster für die domänentypdeskriptor **benutzerdefinierte codiert** zu **"true"** .
 
 4. In **DSL-Explorer**, wählen die **XML-Serialisierungsverhalten** Knoten.
 
-    1. In der **Eigenschaften** legen **benutzerdefinierte nach dem Laden** zu **"true"**.
+    1. In der **Eigenschaften** legen **benutzerdefinierte nach dem Laden** zu **"true"** .
 
 ## <a name="transform-templates"></a>Vorlagen transformieren
 

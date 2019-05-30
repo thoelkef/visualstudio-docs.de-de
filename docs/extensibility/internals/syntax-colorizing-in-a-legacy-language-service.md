@@ -8,17 +8,17 @@ helpviewer_keywords:
 - syntax highlighting, supporting in language services [managed package framework]
 - language services [managed package framework], colorization
 ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab4cd40393efcf0e3b5f037d2f0818319b60c890
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: edbb7f2dca6bc0bc28a328276680dd9e273f4176
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429909"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331132"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Einfärben der Syntax in einem Legacysprachdienst
 Farbliche Markierung der Syntax ist ein Feature, das bewirkt, dass verschiedene Elemente in einer Programmiersprache, die in einer Quelldatei in unterschiedlichen Farben und Stile angezeigt werden. Um dieses Feature zu unterstützen, müssen Sie angeben, einen Parser oder den Scanner, die Typen von lexikalischen Elemente oder Token in der Datei identifizieren kann. Viele Sprachen unterscheiden, Schlüsselwörter, Trennzeichen (z. B. das runden oder geschweiften Klammern) und Kommentare farbliche Kennzeichnung von ihnen auf unterschiedliche Weise.
@@ -34,7 +34,7 @@ Farbliche Markierung der Syntax ist ein Feature, das bewirkt, dass verschiedene 
  Die Farbinformationen für den Editor zurückgegeben wird ein Index in eine Liste der kolorierbaren Elemente. Jede kolorierbare Element gibt einen Farbwert und einen Satz von Schriftartattributen, z. B. fett oder durchgestrichen. Der Editor stellt einen Satz von standardmäßigen kolorierbaren Elemente, die der Sprachdienst verwenden können. Alles, was Sie tun müssen ist, geben Sie den Index der entsprechenden Farbe für jeden Tokentyp. Sie können jedoch bieten eine Reihe von benutzerdefinierten kolorierbaren Elemente und die Indizes, die Sie angeben, für die Token und eine eigene Liste der kolorierbaren Elemente, die anstelle der Standardliste verweisen. Müssen Sie auch Festlegen der `RequestStockColors` Registrierungseintrag auf 0 (oder geben Sie nicht die `RequestStockColors` Eintrag überhaupt) zur Unterstützung benutzerdefinierter Farben. Sie können diesen Registrierungseintrag mit dem ein benannter Parameter, Festlegen der <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> benutzerdefiniertes Attribut. Weitere Informationen zu einen Sprachdienst zu registrieren und Festlegen der Optionen, finden Sie unter [Registrieren eines Legacysprachdiensts](../../extensibility/internals/registering-a-legacy-language-service1.md).
 
 ## <a name="custom-colorable-items"></a>Benutzerdefinierte einfärbbare Elemente
- Um Ihre eigenen benutzerdefinierten kolorierbaren Elemente angeben möchten, müssen Sie überschreiben die <xref:Microsoft.VisualStudio.Package.LanguageService.GetItemCount%2A> und <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorableItem%2A> Methode für die <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse. Die erste Methode gibt die Anzahl der benutzerdefinierten kolorierbaren Elemente, die der Sprachdienst unterstützt, und die zweite das benutzerdefinierte färbbare Element anhand des Indexes ab. Sie erstellen die Standardliste der benutzerdefinierten kolorierbaren Elemente. Im Konstruktor des Sprachdiensts alles, was Sie tun müssen ist Geben Sie jede kolorierbaren Elements mit einem Namen. Visual Studio behandelt automatisch den Fall, in denen der Benutzer einen anderen Satz von einfärbbaren Elementen auswählt. Dieser Name wird in angezeigt der **Schriftarten und Farben** Eigenschaftenseite auf die **Optionen** im Dialogfeld (verfügbar in Visual Studio **Tools** Menü) und bestimmt, welche dieser Name die Farbe, die ein Benutzer außer Kraft gesetzt hat. Auswahl des Benutzers werden in einem Cache in der Registrierung gespeichert und der Farbname zugreifen. Die **Schriftarten und Farben** auf der Seite zeigt eine Liste aller Farbnamen in alphabetischer Reihenfolge, damit Sie Ihre benutzerdefinierten Farben gruppieren können, jeder Farbname durch den Namen Ihres Language; abgrenzen, indem Sie z. B. "**TestLanguage kommentierten**"und"**TestLanguage - Schlüsselwort**". Oder Sie können Ihre kolorierbaren Elemente nach Typ gruppieren "**Kommentar (TestLanguage)**"und"**Schlüsselwort (TestLanguage)**". Eine Gruppierung nach Sprachnamen wird bevorzugt.
+ Um Ihre eigenen benutzerdefinierten kolorierbaren Elemente angeben möchten, müssen Sie überschreiben die <xref:Microsoft.VisualStudio.Package.LanguageService.GetItemCount%2A> und <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorableItem%2A> Methode für die <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse. Die erste Methode gibt die Anzahl der benutzerdefinierten kolorierbaren Elemente, die der Sprachdienst unterstützt, und die zweite das benutzerdefinierte färbbare Element anhand des Indexes ab. Sie erstellen die Standardliste der benutzerdefinierten kolorierbaren Elemente. Im Konstruktor des Sprachdiensts alles, was Sie tun müssen ist Geben Sie jede kolorierbaren Elements mit einem Namen. Visual Studio behandelt automatisch den Fall, in denen der Benutzer einen anderen Satz von einfärbbaren Elementen auswählt. Dieser Name wird in angezeigt der **Schriftarten und Farben** Eigenschaftenseite auf die **Optionen** im Dialogfeld (verfügbar in Visual Studio **Tools** Menü) und bestimmt, welche dieser Name die Farbe, die ein Benutzer außer Kraft gesetzt hat. Auswahl des Benutzers werden in einem Cache in der Registrierung gespeichert und der Farbname zugreifen. Die **Schriftarten und Farben** auf der Seite zeigt eine Liste aller Farbnamen in alphabetischer Reihenfolge, damit Sie Ihre benutzerdefinierten Farben gruppieren können, jeder Farbname durch den Namen Ihres Language; abgrenzen, indem Sie z. B. "**TestLanguage kommentierten**"und"**TestLanguage - Schlüsselwort**". Oder Sie können Ihre kolorierbaren Elemente nach Typ gruppieren "**Kommentar (TestLanguage)** "und"**Schlüsselwort (TestLanguage)** ". Eine Gruppierung nach Sprachnamen wird bevorzugt.
 
 > [!CAUTION]
 > Es wird dringend empfohlen, dass Sie die Namen der Sprache in den kolorierbaren Elements-Namen, um Konflikte mit vorhandenen kolorierbaren Elementnamen zu vermeiden einschließen.

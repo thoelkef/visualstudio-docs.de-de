@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_INFO structure
 ms.assetid: bfafef6d-0c83-43d7-a779-1f0d24b166a1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83cdacae192ad1286203139432a0eacd632b8511
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 352e4bdf6c79dc67f0bf396cb1164e96e80fbf5f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694227"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337701"
 ---
 # <a name="fieldinfo"></a>FIELD_INFO
 Diese Struktur wird eine lokale Variable, Parameter oder andere Feld beschrieben.
@@ -45,15 +48,20 @@ public struct FIELD_INFO {
 ```
 
 ## <a name="members"></a>Member
-DwFields eine Kombination von Flags aus der [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) Enumeration, der angibt, welche Elemente ausgefüllt werden.
+`dwFields`\
+Eine Kombination von Flags aus der [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) Enumeration, der angibt, welche Elemente ausgefüllt werden.
 
-BstrFullName der vollständige Name des Felds.
+`bstrFullName`\
+Der vollständige Name des Felds.
 
-BstrName den kurzen Namen des Felds.
+`bstrName`\
+Der kurze Name des Felds.
 
-BstrType den Typ des Felds.
+`bstrType`\
+Der Typ des Felds.
 
-DwModifiers eine Kombination von Flags aus der [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) -Enumeration, die das Feld beschreibt.
+`dwModifiers`\
+Eine Kombination von Flags aus der [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) -Enumeration, die das Feld beschreibt.
 
 ## <a name="remarks"></a>Hinweise
 Diese Struktur wird zum Übergeben der [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) Methode, in denen es ausgefüllt wird.

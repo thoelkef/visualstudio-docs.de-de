@@ -7,17 +7,17 @@ helpviewer_keywords:
 - properties [Visual Studio SDK]
 - Property Browser, exposing properties
 ms.assetid: 47f295b5-1ca5-4e7b-bb52-7b926b136622
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cad9d1cb12358de57c1d64678e45cf3d75ed5de
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2cd1f44342199c26506cceb4c77378b13aefd566
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62863860"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341225"
 ---
 # <a name="expose-properties-to-the-properties-window"></a>Verfügbarmachen der Eigenschaften, um das Fenster "Eigenschaften"
 
@@ -35,7 +35,7 @@ In diesem Abschnitt können Sie auch ein benutzerdefiniertes Toolfenster zu erst
 
 1. Alle Visual Studio-Erweiterung beginnt mit dem ein VSIX-Projekt-Bereitstellung, die die Ressourcen für die Erweiterung enthält. Erstellen Sie eine [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSIX-Projekt namens `MyObjectPropertiesExtension`. Sie finden die VSIX-Projektvorlage in das **neues Projekt** Dialogfeld, indem Sie nach "Vsix" suchen.
 
-2. Fügen Sie ein Toolfenster durch Hinzufügen eines benutzerdefinierten Toolfensters Elements einer Vorlage mit dem Namen `MyToolWindow`. In der **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie **hinzufügen** > **neues Element**. In der **Dialogfeld "Neues Element hinzufügen"**, wechseln Sie zu **Visual c#-Elemente** > **Erweiterbarkeit** , und wählen Sie **benutzerdefinierten Toolfensters**. In der **Namen** Feld am unteren Rand des Dialogfelds, ändern Sie den Dateinamen an *MyToolWindow.cs*. Weitere Informationen zum Erstellen eines benutzerdefinierten Toolfensters finden Sie unter [erstellen Sie eine Erweiterung mit einem Toolfenster](../extensibility/creating-an-extension-with-a-tool-window.md).
+2. Fügen Sie ein Toolfenster durch Hinzufügen eines benutzerdefinierten Toolfensters Elements einer Vorlage mit dem Namen `MyToolWindow`. In der **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektknoten, und wählen Sie **hinzufügen** > **neues Element**. In der **Dialogfeld "Neues Element hinzufügen"** , wechseln Sie zu **Visual c#-Elemente** > **Erweiterbarkeit** , und wählen Sie **benutzerdefinierten Toolfensters**. In der **Namen** Feld am unteren Rand des Dialogfelds, ändern Sie den Dateinamen an *MyToolWindow.cs*. Weitere Informationen zum Erstellen eines benutzerdefinierten Toolfensters finden Sie unter [erstellen Sie eine Erweiterung mit einem Toolfenster](../extensibility/creating-an-extension-with-a-tool-window.md).
 
 3. Open *MyToolWindow.cs* und fügen Sie die folgenden using-Anweisung:
 
@@ -176,7 +176,7 @@ In diesem Abschnitt fügen Sie ein Toolfenster und seine Eigenschaften verfügba
 
      Suchen Sie nach den Eigenschaften des Fensters, in der **Eigenschaften** Fenster. Die **IsChecked** Eigenschaft wird am unteren Fensterrand, unter dem **eigene Eigenschaften** Kategorie.
 
-10. Aktivieren Sie das Kontrollkästchen der **MyToolWindow** Fenster. **IsChecked** in die **Eigenschaften** wird daraufhin **"true"**. Deaktivieren Sie das Kontrollkästchen in der **MyToolWindow** Fenster. **IsChecked** in die **Eigenschaften** wird daraufhin **"false"**. Ändern Sie den Wert der **IsChecked** in die **Eigenschaften** Fenster. Das Kontrollkästchen in der **MyToolWindow** Fenster-Änderungen an den neuen Wert festlegen.
+10. Aktivieren Sie das Kontrollkästchen der **MyToolWindow** Fenster. **IsChecked** in die **Eigenschaften** wird daraufhin **"true"** . Deaktivieren Sie das Kontrollkästchen in der **MyToolWindow** Fenster. **IsChecked** in die **Eigenschaften** wird daraufhin **"false"** . Ändern Sie den Wert der **IsChecked** in die **Eigenschaften** Fenster. Das Kontrollkästchen in der **MyToolWindow** Fenster-Änderungen an den neuen Wert festlegen.
 
     > [!NOTE]
     > Wenn Sie ein Objekt zu verwerfen müssen, die in angezeigt wird der **Eigenschaften** Fenster, rufen `OnSelectChange` mit einem `null` Auswahlcontainer erste. Nach dem die Eigenschaft oder das Objekt verworfen wird, können Sie in einem Auswahlcontainer an, der aktualisiert wurde ändern <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A> und <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A> aufgeführt.
@@ -240,7 +240,7 @@ In diesem Abschnitt fügen Sie ein Toolfenster und seine Eigenschaften verfügba
     }
     ```
 
-3. In *"mytoolwindowcontrol.cs"*, ersetzen Sie die Kontrollkästchen-Handler mit diesen Codezeilen:
+3. In *"mytoolwindowcontrol.cs"* , ersetzen Sie die Kontrollkästchen-Handler mit diesen Codezeilen:
 
     ```csharp
     private void checkbox_Checked(object sender, RoutedEventArgs e)

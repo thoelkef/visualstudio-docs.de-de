@@ -9,17 +9,17 @@ helpviewer_keywords:
 - visual studio command
 - guid
 ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: daf131fd6d7940458252e734ab0cc222f2e3a357
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 89274600d05b787182ac447902555f7d703851c2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62860965"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329188"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>GUIDs und IDs von Visual Studio-Befehle
 Die GUID und ID-Werte in der integrierten Entwicklungsumgebung (IDE) von Visual Studio enthaltenen Befehle werden in der VSCT-Dateien definiert, die als Teil der Visual Studio SDK installiert sind. Weitere Informationen finden Sie unter [IDE-definierte Befehle, Menüs und Gruppen](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -54,7 +54,7 @@ Die GUID und ID-Werte in der integrierten Entwicklungsumgebung (IDE) von Visual 
 
 - Menüelemente, die ein unterstrichenes Zeichen, z. B. enthalten die **Drucken** Befehl die **Datei** Menü, in dem die *P* unterstrichen ist.
 
-     Zeichen, die das kaufmännische und-Zeichen vorangestellt werden (&) Zeichen in der Elementnamen im Menü angezeigt werden unterstrichen angezeigt. Allerdings *VSCT* Dateien werden geschrieben, in XML, das das kaufmännische und-Zeichen (&) verwendet, um Sonderzeichen anzugeben und erfordert, dass ein kaufmännisches und-Zeichen, die angezeigt wird, werden als geschrieben werden muss  *&amp;Amp;*. Aus diesem Grund in einer *VSCT* -Datei, die **Drucken** -Befehl angezeigt wird, als  *&amp;Amp; Drucken*.
+     Zeichen, die das kaufmännische und-Zeichen vorangestellt werden (&) Zeichen in der Elementnamen im Menü angezeigt werden unterstrichen angezeigt. Allerdings *VSCT* Dateien werden geschrieben, in XML, das das kaufmännische und-Zeichen (&) verwendet, um Sonderzeichen anzugeben und erfordert, dass ein kaufmännisches und-Zeichen, die angezeigt wird, werden als geschrieben werden muss  *&amp;Amp;* . Aus diesem Grund in einer *VSCT* -Datei, die **Drucken** -Befehl angezeigt wird, als  *&amp;Amp; Drucken*.
 
 - Befehle, die dynamischer Text, z. B. auf **speichern** \<aktuellen Dateinamen\>, und dynamisch generierte Menüelemente, z. B. die Elemente auf der **zuletzt verwendeten Dateien** Liste.
 

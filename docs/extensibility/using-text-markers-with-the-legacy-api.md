@@ -5,19 +5,19 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text markers
 ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b443c4530a71897d11731c023af57215eac8706a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b6f3662b5107d517f19b4803a37de4ebcf235bc9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434201"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353486"
 ---
-# <a name="using-text-markers-with-the-legacy-api"></a>Verwenden von Textmarkierungen mit der Legacy-API
+# <a name="using-text-markers-with-the-legacy-api"></a>Verwenden von Textmarkern mit der Legacy-API
 Eine textmarkierung ist einen unverankerten Textbereich in einem Puffer, der die Anzeige beeinträchtigen können und das Verhalten eines Bereichs des Texts. Marker sind Haltepunkte, Lesezeichen, wellenförmige unterstreichungen und schreibgeschützter Bereiche. Textmarkierungen unterscheiden sich grundsätzlich von Syntaxfarben. Farben für Syntax ist eine schnelle Möglichkeit, um die Sprachsyntax zu kommunizieren, die dem Textbereich zugeordnet ist. Farben für Syntax wird in der Regel angefordert, wenn Windows den Bildschirm zeichnet neu, wenn Geschwindigkeit von Bedeutung ist. Farben für Syntax ändert nur die Farbe des Texts. Textmarkierungen können viele andere Eigenschaften des Texts ändern. Textmarkierungen "float" und besonderes Verhalten angewendet werden können und färben.
 
  Erstellen Sie aufgrund des Leistungsoverheads Textmarkierungen zugeordnet wird nicht viele Marker für Ihre Textpuffer. Marker wird aktualisiert, wenn ein Benutzer den Inhalt des Puffers bearbeitet.

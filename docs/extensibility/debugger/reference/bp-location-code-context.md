@@ -7,17 +7,19 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_CODE_CONTEXT structure
 ms.assetid: 37412896-021a-4f73-9bb7-4125502c2e18
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 750a98e882fce5fd5ba721de527a08f3f4624751
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+ms.openlocfilehash: 95d09c81fa12e6f06157aeb28aa6b1837f95009e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689057"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353081"
 ---
 # <a name="bplocationcodecontext"></a>BP_LOCATION_CODE_CONTEXT
 Beschreibt den Speicherort eines Haltepunkts an, die direkt an eine Adresse in das Programm im Debugmodus befindlichen gebunden ist.
@@ -31,7 +33,8 @@ typedef struct _BP_LOCATION_CODE_CONTEXT {
 ```
 
 ## <a name="members"></a>Member
-pCodeContext der [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) Objekt, das die Position des Breakpoints im Code identifiziert.
+`pCodeContext`\
+Die [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) Objekt, das die Position des Breakpoints im Code identifiziert.
 
 ## <a name="remarks"></a>Hinweise
 Diese Struktur ist ein Mitglied der [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) Struktur als Teil einer Union.

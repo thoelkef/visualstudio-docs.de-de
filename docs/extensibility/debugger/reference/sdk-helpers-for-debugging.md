@@ -9,17 +9,17 @@ helpviewer_keywords:
 - dbgmetric.h
 - metrics [Debugging SDK]
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d57e764158531456bfcdba6d4915eef42aebd3d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 74b9047ef6df1e6bf20a5b5a95e40e27ed1b1926
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460905"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329216"
 ---
 # <a name="sdk-helpers-for-debugging"></a>SDK-Hilfsprogramme für das Debuggen
 Diese Funktionen und Deklarationen sind globale Hilfsfunktionen für die Implementierung von Debug-Engines, ausdrucksauswertung und Symbol-Anbieter in C++.
@@ -239,7 +239,7 @@ HRESULT EnumMetricSections(
 > [!NOTE]
 > In den meisten Fällen, werden die Metriken auf dem Schlüssel HKEY_LOCAL_MACHINE geschrieben. In einigen Fällen allerdings wird HKEY_CURRENT_USER der Ziel-Schlüssel sein. Dbgmetric.lib behandelt beide Schlüssel. Wenn eine Metrik zu erhalten, sucht es HKEY_CURRENT_USER zuerst, dann HKEY_LOCAL_MACHINE. Wenn sie eine Metrik festlegen, ist, wird ein Parameter der obersten Ebene Schlüssels zu.
 
- *[Registrierungsschlüssel]*\
+ *[Registrierungsschlüssel]* \
 
  `Software`\
 
@@ -247,11 +247,11 @@ HRESULT EnumMetricSections(
 
  `VisualStudio`\
 
- *[Version Root]*\
+ *[Version Root]* \
 
- *[Metrik Root]*\
+ *[Metrik Root]* \
 
- *[Metriktyp]*\
+ *[Metriktyp]* \
 
  *[Metrik] = [Metrikwert]*
 
@@ -262,7 +262,7 @@ HRESULT EnumMetricSections(
 |Platzhalter|Beschreibung|
 |-----------------|-----------------|
 |*[Registrierungsschlüssel]*|`HKEY_CURRENT_USER` oder `HKEY_LOCAL_MACHINE`.|
-|*[Version Root]*|Die Version von Visual Studio (z. B. `7.0`, `7.1`, oder `8.0`). Jedoch diesem Stamm kann auch geändert werden mithilfe der **/rootsuffix** wechseln Sie zur **devenv.exe**. Für VSIP, dieser Modifizierer ist in der Regel **"exp"**, sodass das Stammverzeichnis für die Version, z. B. 8.0Exp wäre.|
+|*[Version Root]*|Die Version von Visual Studio (z. B. `7.0`, `7.1`, oder `8.0`). Jedoch diesem Stamm kann auch geändert werden mithilfe der **/rootsuffix** wechseln Sie zur **devenv.exe**. Für VSIP, dieser Modifizierer ist in der Regel **"exp"** , sodass das Stammverzeichnis für die Version, z. B. 8.0Exp wäre.|
 |*[Metrik Root]*|Dies ist entweder `AD7Metrics` oder `AD7Metrics(Debug)`, abhängig davon, ob die Debugversion von dbgmetric.lib verwendet wird. **Hinweis**:  Und zwar unabhängig davon, ob dbgmetric.lib verwendet wird, diese Namenskonvention sollte eingehalten werden, wenn Sie die Unterschiede zwischen Debug- und Releaseversionen haben-Versionen, die in der Registrierung berücksichtigt werden müssen.|
 |*[Metriktyp]*|Der Typ des zu schreibenden Metrik: `Engine`, `ExpressionEvaluator`, `SymbolProvider`usw. Diese sind alle definiert, wie dbgmetric.h als `metricTypeXXXX`, wobei `XXXX` ist der Name der spezifischen Typ.|
 |*[Metrik]*|Der Name eines Eintrags, der ein Wert zugewiesen werden, um die Metrik festlegen. Die tatsächlichen Organisation der Metriken, hängt von den Metriktyp ab.|
@@ -276,9 +276,9 @@ HRESULT EnumMetricSections(
 
  `Engine`\
 
- *[-Engine-Guid]*\
+ *[-Engine-Guid]* \
 
- `CLSID` = *[Klassen-Guid]*
+ `CLSID` =  *[Klassen-Guid]*
 
  *[Metrik] = [Metrikwert]*
 
@@ -288,9 +288,9 @@ HRESULT EnumMetricSections(
 
  `PortSupplier`\
 
- `0` = *[Port Lieferanten Guid]*
+ `0` =  *[Port Lieferanten Guid]*
 
- `1` = *[Port Lieferanten Guid]*
+ `1` =  *[Port Lieferanten Guid]*
 
 |Platzhalter|Beschreibung|
 |-----------------|-----------------|
@@ -299,13 +299,13 @@ HRESULT EnumMetricSections(
 |*[Port Lieferanten Guid]*|Die GUID des portbereitstellers, sofern vorhanden. Viele Debug-Engines verwenden den Standard-Anschlusslieferanten und aus diesem Grund sollten Sie keinen eigenen Lieferanten. In diesem Fall ist der Unterschlüssel `PortSupplier` ist nicht vorhanden.|
 
 ### <a name="port-suppliers"></a>Portanbieter
- Im folgenden finden die Organisation der Port Lieferanten Metriken in der Registrierung. `PortSupplier` der Metrik Name eines portanbieters ist und Sie entspricht *[Metriktyp]*.
+ Im folgenden finden die Organisation der Port Lieferanten Metriken in der Registrierung. `PortSupplier` der Metrik Name eines portanbieters ist und Sie entspricht *[Metriktyp]* .
 
  `PortSupplier`\
 
- *[Port Lieferanten Guid]*\
+ *[Port Lieferanten Guid]* \
 
- `CLSID` = *[Klassen-Guid]*
+ `CLSID` =  *[Klassen-Guid]*
 
  *[Metrik] = [Metrikwert]*
 
@@ -317,15 +317,15 @@ HRESULT EnumMetricSections(
 |*[Klassen-Guid]*|Die GUID der Klasse, die diesem Port Lieferanten implementiert|
 
 ### <a name="symbol-providers"></a>Symbol-Anbieter
- Im folgenden finden die Organisation der Metriken Lieferanten Symbol in der Registrierung. `SymbolProvider` Um der Metriktyp Namen für die symbolanbieter und entspricht *[Metriktyp]*.
+ Im folgenden finden die Organisation der Metriken Lieferanten Symbol in der Registrierung. `SymbolProvider` Um der Metriktyp Namen für die symbolanbieter und entspricht *[Metriktyp]* .
 
  `SymbolProvider`\
 
- *[Symbol-Anbieter-Guid]*\
+ *[Symbol-Anbieter-Guid]* \
 
  `file`\
 
- `CLSID` = *[Klassen-Guid]*
+ `CLSID` =  *[Klassen-Guid]*
 
  *[Metrik] = [Metrikwert]*
 
@@ -333,7 +333,7 @@ HRESULT EnumMetricSections(
 
  `metadata`\
 
- `CLSID` = *[Klassen-Guid]*
+ `CLSID` =  *[Klassen-Guid]*
 
  *[Metrik] = [Metrikwert]*
 
@@ -345,18 +345,18 @@ HRESULT EnumMetricSections(
 |*[Klassen-Guid]*|Die GUID der Klasse, die diesem symbolanbieter implementiert.|
 
 ### <a name="expression-evaluators"></a>Ausdrucksauswertungen
- Im folgenden finden die Organisation der Expression Evaluator Metriken in der Registrierung. `ExpressionEvaluator` Um der Metriktyp-Namen für die ausdrucksauswertung und entspricht *[Metriktyp]*.
+ Im folgenden finden die Organisation der Expression Evaluator Metriken in der Registrierung. `ExpressionEvaluator` Um der Metriktyp-Namen für die ausdrucksauswertung und entspricht *[Metriktyp]* .
 
 > [!NOTE]
 > Den Metriktyp für `ExpressionEvaluator` ist in dbgmetric.h, nicht definiert, da davon ausgegangen wird, dass die entsprechenden Ausdruck Ausdrucksauswertungsfehler Metrik Funktionen alle metrikänderungen für ausdrucksauswertungen durchlaufen werden (das Layout der `ExpressionEvaluator` Unterschlüssel ist ein wenig kompliziert, damit die Details in dbgmetric.lib ausgeblendet sind).
 
  `ExpressionEvaluator`\
 
- *[Guid der Sprache]*\
+ *[Guid der Sprache]* \
 
- *[Anbieter-Guid]*\
+ *[Anbieter-Guid]* \
 
- `CLSID` = *[Klassen-Guid]*
+ `CLSID` =  *[Klassen-Guid]*
 
  *[Metrik] = [Metrikwert]*
 
@@ -364,9 +364,9 @@ HRESULT EnumMetricSections(
 
  `Engine`\
 
- `0` = *[Debug-Engine-Guid]*
+ `0` =  *[Debug-Engine-Guid]*
 
- `1` = *[Debug-Engine-Guid]*
+ `1` =  *[Debug-Engine-Guid]*
 
 |Platzhalter|Beschreibung|
 |-----------------|-----------------|
@@ -376,11 +376,11 @@ HRESULT EnumMetricSections(
 |*[Debug-Engine-Guid]*|Die GUID einer Debug-Engine, der mit diesem ausdrucksauswertung funktioniert|
 
 ### <a name="expression-evaluator-extensions"></a>Expression Evaluator-Erweiterungen
- Im folgenden finden die Organisation der Expression Evaluator-Erweiterung Metriken in der Registrierung. `EEExtensions` Um der Metriktyp Namen für den Ausdruck Evaluator-Erweiterungen und entspricht *[Metriktyp]*.
+ Im folgenden finden die Organisation der Expression Evaluator-Erweiterung Metriken in der Registrierung. `EEExtensions` Um der Metriktyp Namen für den Ausdruck Evaluator-Erweiterungen und entspricht *[Metriktyp]* .
 
  `EEExtensions`\
 
- *[Erweiterung Guid]*\
+ *[Erweiterung Guid]* \
 
  *[Metrik] = [Metrikwert]*
 
@@ -391,21 +391,21 @@ HRESULT EnumMetricSections(
 |*[Erweiterung Guid]*|Die GUID einer Expression Evaluator-Erweiterung|
 
 ### <a name="exceptions"></a>Ausnahmen
- Im folgenden finden die Organisation der Metriken Ausnahmen in der Registrierung. `Exception` Um der Metriktyp Namen für die Ausnahmen und entspricht *[Metriktyp]*.
+ Im folgenden finden die Organisation der Metriken Ausnahmen in der Registrierung. `Exception` Um der Metriktyp Namen für die Ausnahmen und entspricht *[Metriktyp]* .
 
  `Exception`\
 
- *[Debug-Engine-Guid]*\
+ *[Debug-Engine-Guid]* \
 
- *[Ausnahmetypen]*\
+ *[Ausnahmetypen]* \
 
- *[Exception]*\
-
- *[Metrik] = [Metrikwert]*
+ *[Exception]* \
 
  *[Metrik] = [Metrikwert]*
 
- *[Exception]*\
+ *[Metrik] = [Metrikwert]*
+
+ *[Exception]* \
 
  *[Metrik] = [Metrikwert]*
 
