@@ -6,17 +6,17 @@ helpviewer_keywords:
 - commands, intercepting language service
 - language services, intercepting commands
 ms.assetid: eea69f03-349c-44bb-bd4f-4925c0dc3e55
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb53de9cf4d3056d9a07a915267391de27b753fb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3716f02b076bd5ea7ef63135133acffc823a7703
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909613"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314947"
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>Abfangen von Befehlen von Legacysprachdiensten
 Mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], dass die Konstante Glied Befehlen von legacysprachdiensten, die andernfalls von die Textansicht behandelt würden. Dies ist nützlich für die sprachspezifisches Verhalten, die nicht die Textansicht verwaltet. Sie können diese Befehle abfangen, durch das Hinzufügen von ein oder mehrere-Befehlsfilter der Textansicht aus den Sprachdienst.

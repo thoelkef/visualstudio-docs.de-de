@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - COMPUTER_INFO structure
 ms.assetid: 943085b2-f165-462d-9a4e-2086f0cdfff4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 980527de1681d773edcf1586f209ed25e2699502
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 55d3eb6c321875b479d8df597b963fc3ac30db12
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680346"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346584"
 ---
 # <a name="computerinfo"></a>COMPUTER_INFO
 Beschreibt, den Computer, auf dem der Debugger ausgeführt wird.
@@ -40,12 +43,15 @@ public struct COMPUTER_INFO
 }
 ```
 
-## <a name="terms"></a>Begriffe
-wProcessorArchitecture identifiziert die Architektur des Mikroprozessors.
+## <a name="members"></a>Member
+`wProcessorArchitecture`\
+Gibt die Architektur des Mikroprozessors an.
 
-wSuiteMask identifiziert die Suite-Maske.
+`wSuiteMask`\
+Identifiziert die Suite-Maske.
 
-DwOperatingSystemVersion Betriebssystem-Versionsnummer.
+`dwOperatingSystemVersion`\
+Betriebssystem-Versionsnummer.
 
 ## <a name="remarks"></a>Hinweise
 Diese Struktur wird zurückgegeben, durch die [GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md) Methode.

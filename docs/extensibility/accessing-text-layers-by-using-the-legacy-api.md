@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text layers
 ms.assetid: 2258fcdd-38d1-479d-b8f8-1d4e6525f72c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0ba962ba4c18773b5c85480bce62ab728cab307
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5d7c47bea12dc4057cfb106f269532601e291310
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892232"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313657"
 ---
 # <a name="access-text-layers-by-using-the-legacy-api"></a>Text Datenzugriffsebenen mithilfe der legacy-API
 Eine Textebene kapselt normalerweise einen Aspekt des Textlayouts. Beispielsweise blendet eine Ebene "-Funktion-at-a-Time" Text vor und nach einer Funktion, die die Einfügemarke (Einfügemarke) enthält.

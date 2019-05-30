@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new -
 ms.assetid: 8d04f8db-eda7-4b3e-b6eb-c06df104502a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 823d9597e61d87d15ab9e96afad7d84703be68f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ec9009f3c331da608c22d38f35a08e157e878771
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62912329"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312965"
 ---
 # <a name="extend-the-editor-and-language-services"></a>Erweitern Sie die Dienste, Editoren und Sprachen
 Sie können Ihren eigenen Editor Language Service-Features (z. B. IntelliSense) hinzu, und Sie können die meisten Features von Visual Studio Code-Editor zu erweitern.  Eine vollständige Liste von was Sie erweitern können, finden Sie unter [Language Service und Editor Erweiterungspunkte](../extensibility/language-service-and-editor-extension-points.md).

@@ -3,17 +3,17 @@ title: Allgemeine Steuerelementmuster für Visual Studio | Microsoft-Dokumentati
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c89babf7dc9f90b4042d917bf5843a0703628883
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c96e3798c79fcca03052dc597270312f374f1b33
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62799484"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312297"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Allgemeine Steuerelementmuster für Visual Studio
 ## <a name="BKMK_CommonControls"></a> Allgemeine Steuerelemente
@@ -185,7 +185,7 @@ Führen Sie gängige Speicherorte für Hilfetext und selektiv mit der Einführun
 
 - Wasserzeichentext in leere Toolfenster oder Dialogfeldern, zu erklären, warum kein Inhalt angezeigt wird.
 
-- Ein Beschreibungsbereich, in der am unteren Rand wie die **Fenster "Eigenschaften"**.
+- Ein Beschreibungsbereich, in der am unteren Rand wie die **Fenster "Eigenschaften"** .
 
 - Wasserzeichen Sie in einem leeren-Editor, um wird erläutert, welche Aktion der Benutzer ergreifen sollte, um zu beginnen.
 
@@ -274,7 +274,7 @@ In einigen Fällen in der formatierten UI können Schaltflächen verwendet werde
 
 Wenn die kurze nur mit den Auslassungszeichen-Schaltfläche verwenden:
 
-- Wenn es mehr als eine lange **[durchsuchen...]**  Schaltfläche in einem Dialogfeld an, wie wenn mehrere Felder für das Durchsuchen von zulässt. Verwenden Sie die kurzfristige **[...]**  klicken, die verwirrend Zugriffsschlüssel erstellt diese Situation zu vermeiden (**& Durchsuchen** und **du & rchsuchen** im gleichen Dialogfeld "").
+- Wenn es mehr als eine lange **[durchsuchen...]**  Schaltfläche in einem Dialogfeld an, wie wenn mehrere Felder für das Durchsuchen von zulässt. Verwenden Sie die kurzfristige **[...]**  klicken, die verwirrend Zugriffsschlüssel erstellt diese Situation zu vermeiden ( **& Durchsuchen** und **du & rchsuchen** im gleichen Dialogfeld "").
 
 - In einem engen Dialogfeld, oder wenn besteht keine angemessene Möglichkeit, auf die Schaltfläche "lange" abgelegt.
 
@@ -317,7 +317,7 @@ Einige Schaltflächen sollten immer ein Bild und nie enthalten Text zum Einspare
 Hyperlinks eignen sich gut für die Navigation-basierten Aktionen, wie das Öffnen eines Hilfethemas, modales Dialogfeld, oder -Assistenten. Wenn ein Link für einen Befehl verwendet wird, sollten sie immer eine sichtbare und merkliche Änderung an der Benutzeroberfläche anzeigen. Aktionen, die auf eine Aktion (z. B. speichern, auf "Abbrechen", und löschen) werden im Allgemeinen besser kommuniziert mithilfe einer Schaltfläche.
 
 #### <a name="writing-style"></a>Schreibstil
-Führen Sie die [Windows-Desktop-Leitfaden für den Text der Benutzeroberfläche](/windows/desktop/uxguide/text-ui). Verwenden Sie nicht "Erfahren Sie mehr über," "Erzählen mir Weitere Informationen zu" oder "Get-Help dabei"-Ausdruck. Stattdessen einen Ausdruck Link Hilfetext in Bezug auf die primäre Frage beantwortet, indem der Inhalt der Hilfe. Z. B. "**wie füge ich einen Server zum Server-Explorer?**"
+Führen Sie die [Windows-Desktop-Leitfaden für den Text der Benutzeroberfläche](/windows/desktop/uxguide/text-ui). Verwenden Sie nicht "Erfahren Sie mehr über," "Erzählen mir Weitere Informationen zu" oder "Get-Help dabei"-Ausdruck. Stattdessen einen Ausdruck Link Hilfetext in Bezug auf die primäre Frage beantwortet, indem der Inhalt der Hilfe. Z. B. "**wie füge ich einen Server zum Server-Explorer?** "
 
 #### <a name="visual-style"></a>Visuellen Stil
 

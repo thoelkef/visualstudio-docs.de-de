@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - brace matching
 ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae1b0f45d119b759d6618630a65353eff4415c78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8bbea179eb2140706ee868a8a48215e7f490f57d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62795994"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312523"
 ---
 # <a name="walkthrough-display-matching-braces"></a>Exemplarische Vorgehensweise: Anzeigen von übereinstimmenden geschweiften Klammern
 Implementieren Sie die Sprache basierende Funktionen, z. B., Zuordnung von geschweiften Klammern durch definieren die geschweiften Klammern, die übereinstimmen sollten, und die übereinstimmenden geschweiften Klammern einer Textmarkierungstag hinzugefügt wird, wenn sich die Einfügemarke eines die geschweiften Klammern befindet. Sie können geschweifte Klammern im Kontext einer Sprache, eigene Dateinamenerweiterung und Inhaltstyp definieren, Tags definieren und Anwenden der zu, die geben oder Anwenden von Tags zu einem vorhandenen Inhaltstyp (z. B. "Text"). Die folgende exemplarische Vorgehensweise zeigt, wie Tags aus, um den Inhaltstyp "Text" Zugehörige Klammer angewendet wird.

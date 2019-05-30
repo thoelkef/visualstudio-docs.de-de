@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - signature help/parameter info
 ms.assetid: 4a6a884b-5730-4b54-9264-99684f5b523c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89d81ee2e860dead62352cc14cef95e21536c29d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 403009367f6cdf8a9fd1ebb750ee9bb020690685
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965166"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312419"
 ---
 # <a name="walkthrough-display-signature-help"></a>Exemplarische Vorgehensweise: Signaturhilfe anzeigen
 Signaturhilfe (auch bekannt als *ParameterInfo*) die Signatur einer Methode in einer QuickInfo angezeigt, wenn ein Benutzer das Zeichen für den Parameter Liste (in der Regel eine öffnende Klammer) eingibt. Wie ein Parameter und das Parametertrennzeichen (in der Regel ein Komma) eingegeben werden, wird die QuickInfo aktualisiert, und den nächsten Parameter in Fettschrift angezeigt wird. Sie können die Signaturhilfe definieren, es gibt folgende Möglichkeiten: im Kontext von einem Sprachdienst, definieren Sie Ihre eigenen Dateinamenerweiterung und Content-Type und Signatur-Hilfe für nur diesen Typ oder anzeigen Signaturhilfe für einem vorhandenen Inhaltstyp (z. B. "Text"). Dieser exemplarischen Vorgehensweise beim Anzeigen von Signaturhilfe für den Inhaltstyp "Text".

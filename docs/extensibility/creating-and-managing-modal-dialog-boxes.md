@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - dialog boxes, managing in Visual Studio
 ms.assetid: 491bc0de-7dba-478c-a76b-923440e090f3
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfd0fb71aaca9cb3de2d7cc6d3b6229042a4e7fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d2784135b1f3588047e03166a7302f3b8941c564
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926405"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338326"
 ---
 # <a name="create-and-manage-modal-dialog-boxes"></a>Erstellen und Verwalten von modalen Dialogfeldern
 Wenn Sie ein modales Dialogfeld in Visual Studio erstellen, müssen Sie sicherstellen, dass das übergeordnete Fenster im Dialogfeld deaktiviert ist, während das Dialogfeld angezeigt wird und anschließend das übergeordnete Fenster erneut aktivieren, nachdem Sie das Dialogfeld geschlossen wurde. Wenn Sie dies nicht tun, können Sie die Fehlermeldung angezeigt: *Microsoft Visual Studio kann nicht heruntergefahren, da ein modales Dialogfeld noch aktiv ist. Schließen Sie das aktive Dialogfeld, und versuchen Sie es erneut.*
@@ -26,7 +26,7 @@ Ist das Dialogfeld nicht WPF oder einem anderen Grund, Sie können nicht abgelei
 
 ## <a name="create-a-dialog-box-derived-from-dialogwindow"></a>Erstellen Sie ein Dialogfeld DialogWindow abgeleitet
 
-1. Erstellen Sie ein VSIX-Projekt mit dem Namen **OpenDialogTest** und Hinzufügen eines Menübefehls mit dem Namen **öffnen (Open)**. Weitere Informationen hierzu finden Sie unter [erstellen Sie eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Erstellen Sie ein VSIX-Projekt mit dem Namen **OpenDialogTest** und Hinzufügen eines Menübefehls mit dem Namen **öffnen (Open)** . Weitere Informationen hierzu finden Sie unter [erstellen Sie eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).
 
 2. Verwenden der <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> -Klasse, müssen Sie Verweise auf die folgenden Assemblys hinzufügen (in der Registerkarte "Framework" der **Verweis hinzufügen** Dialogfeld):
 
@@ -68,7 +68,7 @@ Ist das Dialogfeld nicht WPF oder einem anderen Grund, Sie können nicht abgelei
     testDialog.ShowModal();
     ```
 
-7. Erstellen Sie die Anwendung, und führen Sie sie aus. Die experimentelle Instanz von Visual Studio sollte angezeigt werden. Auf der **Tools** im Menü der experimentellen Instanz sollte einen Befehl mit dem Namen **aufrufen öffnen (Open)**. Wenn Sie mit diesem Befehl klicken, sollte das Dialogfeld angezeigt werden. Sie sollten in der Lage, zu minimieren und Maximieren Sie das Fenster.
+7. Erstellen Sie die Anwendung, und führen Sie sie aus. Die experimentelle Instanz von Visual Studio sollte angezeigt werden. Auf der **Tools** im Menü der experimentellen Instanz sollte einen Befehl mit dem Namen **aufrufen öffnen (Open)** . Wenn Sie mit diesem Befehl klicken, sollte das Dialogfeld angezeigt werden. Sie sollten in der Lage, zu minimieren und Maximieren Sie das Fenster.
 
 ## <a name="create-and-manage-a-dialog-box-not-derived-from-dialogwindow"></a>Erstellen Sie und verwalten Sie ein Dialogfeld, das nicht von DialogWindow abgeleitet
 
@@ -125,4 +125,4 @@ Ist das Dialogfeld nicht WPF oder einem anderen Grund, Sie können nicht abgelei
     }
     ```
 
-7. Erstellen Sie die Anwendung, und führen Sie sie aus. Auf der **Tools** Menü sollte einen Befehl mit dem Namen **aufrufen öffnen (Open)**. Wenn Sie mit diesem Befehl klicken, sollte das Dialogfeld angezeigt werden.
+7. Erstellen Sie die Anwendung, und führen Sie sie aus. Auf der **Tools** Menü sollte einen Befehl mit dem Namen **aufrufen öffnen (Open)** . Wenn Sie mit diesem Befehl klicken, sollte das Dialogfeld angezeigt werden.

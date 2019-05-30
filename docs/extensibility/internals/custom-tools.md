@@ -7,17 +7,17 @@ helpviewer_keywords:
 - tools [Visual Studio], custom
 - custom tools
 ms.assetid: d669f154-9b23-48b6-b9f6-7419c8dd61a6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc6093d9bdbd780e1c8ddeb941f5f80dd479f77a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f9bad62d071fd7c2ef6e0a7c1f5500a5fccb18e0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62910150"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312265"
 ---
 # <a name="custom-tools"></a>Benutzerdefinierte tools
 *Benutzerdefinierte Tools* können Sie ein Tool mit einem Element in einem Projekt verknüpfen und das Tool ausführen, wenn die Datei gespeichert wird. Bestimmte benutzerdefinierte Tools, auch bezeichnet als *Einzeldatei-Generatoren*, werden häufig zum Konvertierer implementieren, das Generieren von Code aus und umgekehrt verwendet. Beispielsweise Erstellen von Einzeldatei-Generatoren [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] und [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Quellcode aus der *Settings* und *resx* Dateien. Der generierte Quellcode enthält die stark typisierten Zugriff auf die Daten in die *Settings* und *resx* Dateien. Die [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] und [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Projekttypen unterstützen benutzerdefinierte Tools; [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] Projekttypen nicht der Fall. Eigene Projekttypen können auch benutzerdefinierte Tools unterstützen.

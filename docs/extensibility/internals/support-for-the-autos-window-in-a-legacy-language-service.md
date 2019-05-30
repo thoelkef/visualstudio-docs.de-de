@@ -6,17 +6,17 @@ helpviewer_keywords:
 - language services [managed package framework], Autos window
 - Autos window, supporting in language services [managed package framework]
 ms.assetid: 47d40aae-7a3c-41e1-a949-34989924aefb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7fdff9237ef30884d5bfaad424edfffec62a8f58
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2842cb7a11765f0d460681dee0187c62ff31061c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62908421"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309829"
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>Unterstützen des Auto-Fensters in einem Legacysprachdienst
 Die **"Auto"** Fenster werden Ausdrücke wie z. B. Variablen und Parametern, die im Gültigkeitsbereich befinden, wenn die zu debuggende Programm wird (entweder aufgrund eines Haltepunkts oder einer Ausnahme) angehalten wird angezeigt. Die Ausdrücke können einschließen, lokalen oder globalen Variablen und Parametern, die im lokalen Bereich geändert wurden. Die **"Auto"** Fenster kann auch Instanziierungen von einer Klasse, Struktur oder einem anderen Typ enthalten. Alle Elemente, die eine ausdrucksauswertung auswerten kann potenziell angezeigt werden die **"Auto"** Fenster.

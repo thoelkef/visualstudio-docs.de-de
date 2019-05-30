@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - FIELD_KIND_EX enumeration
 ms.assetid: 922c3208-1e94-485f-b70a-3bc96affeff8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97a2d4e76ebe1ed206ebbc2eea09b15865b86a2b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fd481883c826ff21a82b52bdd82de087b6219b58
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700012"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309016"
 ---
 # <a name="fieldkindex"></a>FIELD_KIND_EX
 Listet weitere Arten von Feldern, die eine [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) -Objekt enthalten kann. Diese Enumeration erweitert die [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) Enumeration.
@@ -41,12 +44,15 @@ public enum enum_FIELD_KIND_EX
 };
 ```
 
-## <a name="members"></a>Member
-FIELD_KIND_EX_NONE-Feld enthält keinen erweiterten Typ.
+## <a name="fields"></a>Felder
+`FIELD_KIND_EX_NONE`\
+Feld enthält keinen erweiterten Typ.
 
-FIELD_TYPE_EX_METHODVAR-Feld enthält die Variable einer Methode.
+`FIELD_TYPE_EX_METHODVAR`\
+Feld enthält die Variable einer Methode.
 
-FIELD_TYPE_EX_CLASSVAR-Feld enthält eine Klassenvariable.
+`FIELD_TYPE_EX_CLASSVAR`\
+Feld enthält eine Klassenvariable.
 
 ## <a name="requirements"></a>Anforderungen
 Header: Sh.h

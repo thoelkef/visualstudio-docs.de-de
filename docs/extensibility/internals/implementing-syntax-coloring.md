@@ -7,17 +7,17 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], colorizing text
 - text, colorizing in editors
 ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15659cc8061601776e3a3197a49f14e2c824aa7b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3f577f4cf21110a1b40680059b385d413c9c6902
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420427"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324234"
 ---
 # <a name="implementing-syntax-coloring"></a>Implementieren von Syntaxfarben
 Wenn der Sprachdienst die farbliche Markierung der Syntax bereitstellt, wird der Parser konvertiert eine Textzeile in ein Array der kolorierbaren Elemente, und gibt die Typen von Sicherheitstoken für diese kolorierbaren Elemente zurück. Der Parser sollte Tokentypen zurückgeben, die eine Liste der kolorierbaren Elemente angehören. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Zeigt jede kolorierbaren Elements im Code-Fenster gemäß der Attribute, die von der Farbauswahl-Objekt zugeordnet wird, dem entsprechenden Tokentyp an.

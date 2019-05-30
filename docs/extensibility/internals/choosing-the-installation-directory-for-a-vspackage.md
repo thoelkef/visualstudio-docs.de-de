@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, installation directory
 ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be54c19a1e09b610611c8791d62d012ebdaf5ae8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 249efe70cdcc2cf8ef600ca4d9e009e094e1b105
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62862048"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309121"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>Wählen Sie das Installationsverzeichnis für ein VSPackage
 Ein VSPackage und die unterstützenden Dateien müssen auf dem System eines Benutzers Datei sein. Der Speicherort hängt davon ab, ob das VSPackage wird verwaltet oder nicht verwaltet, Ihr Schema für die versionsverwaltung von Seite-an-Seite, und klicken Sie auf Benutzerauswahl.
@@ -55,7 +55,7 @@ Ein VSPackage und die unterstützenden Dateien müssen auf dem System eines Benu
 
 4. Systemstandard LCID mit der standardmäßigen Sprachvariante an.
 
-5. USA Englisch (*. \1033* oder *. \0x409*).
+5. USA Englisch ( *. \1033* oder *. \0x409*).
 
 Wenn Ihre VSPackage-DLL-Ressourcen enthält und die **SatelliteDll\DllName** Registrierungseintrag verweist, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] versucht, die sie in der oben genannten Reihenfolge zu laden.
 
