@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - CODE_PATH structure
 ms.assetid: 2d4b2890-4c9d-47e1-83c0-df9c6436427f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e09cd77308f83c2b9fb1b9cba70076ad797eb2e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 516122ee8aaaa0ed18537369eeeffb05be3ebf1c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714945"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327223"
 ---
 # <a name="codepath"></a>CODE_PATH
 Beschreibt eine Methode oder einen Funktionsaufruf an.
@@ -39,9 +42,11 @@ public struct CODE_PATH {
 ```
 
 ## <a name="members"></a>Member
-BstrName-der Name des Codepfads.
+`bstrName`\
+Der Name des Codepfads.
 
-pCode der [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) -Objekt, an welcher Stelle in den Code einer Funktion in Einzelschritten identifiziert.
+`pCode`\
+Die [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) -Objekt, an welcher Stelle in den Code einer Funktion in Einzelschritten identifiziert.
 
 ## <a name="remarks"></a>Hinweise
 Diese Struktur wird verwendet, um Einzelschritt in eine Funktion zu implementieren. [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) gibt alle Aufrufe von der aktuellen Position in die Anwendung gedebuggt wird. Diese Struktur stellt ein solcher Aufruf dar.

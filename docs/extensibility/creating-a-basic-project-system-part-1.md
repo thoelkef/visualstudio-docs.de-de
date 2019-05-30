@@ -7,17 +7,17 @@ helpviewer_keywords:
 - project system
 - tutorial
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ced39d928b2d0d02c7008d6b44c934ccd053b09b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 19c73e47e8c07ebcf7c1124e6e59d80f76101458
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63409987"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341654"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Erstellen eines grundlegenden Projektsystems, Teil 1
 In Visual Studio sind Projekte die Container, die Entwickler verwenden, um Quellcodedateien und anderen Ressourcen zu organisieren. Projekte werden als untergeordnete Elemente von Lösungen in der **Projektmappen-Explorer**. Projekte können Sie die zu organisieren, erstellen, Debuggen, und Quellcode bereitstellen und Verweise auf die Web Services, Datenbanken und andere Ressourcen erstellen.
@@ -78,7 +78,7 @@ In Visual Studio sind Projekte die Container, die Entwickler verwenden, um Quell
 
 4. Speichern Sie das Symbol "", und schließen Sie die Symbol-Editor.
 
-5. In der *Templates\Projects\SimpleProject* Ordner Hinzufügen einer **Klasse** Element mit dem Namen *"Program.cs"*.
+5. In der *Templates\Projects\SimpleProject* Ordner Hinzufügen einer **Klasse** Element mit dem Namen *"Program.cs"* .
 
 6. Ersetzen Sie den vorhandenen Code durch die folgenden Zeilen ein.
 
@@ -154,9 +154,9 @@ In Visual Studio sind Projekte die Container, die Entwickler verwenden, um Quell
 
 11. Speichern Sie die Datei.
 
-12. In der **Eigenschaften** legen die **Buildvorgang** von *"AssemblyInfo.cs"*, *"Program.cs"*, *SimpleProject.ico* , und *SimpleProject.myproj* zu **Content**, und legen Sie deren **Include in VSIX-Datei** Eigenschaften **"true"**.
+12. In der **Eigenschaften** legen die **Buildvorgang** von *"AssemblyInfo.cs"* , *"Program.cs"* , *SimpleProject.ico* , und *SimpleProject.myproj* zu **Content**, und legen Sie deren **Include in VSIX-Datei** Eigenschaften **"true"** .
 
-    Diese Projektvorlage beschreibt ein einfaches Visual C#-Projekt, das sowohl eine Debug-Konfiguration und einer Releasekonfiguration aufweist. Das Projekt enthält zwei Quelldateien *"AssemblyInfo.cs"* und *"Program.cs"*, und mehrere Assemblyverweise. Wenn ein Projekt aus der Vorlage erstellt wird, wird der ProjectGuid Wert automatisch durch eine neue GUID ersetzt.
+    Diese Projektvorlage beschreibt ein einfaches Visual C#-Projekt, das sowohl eine Debug-Konfiguration und einer Releasekonfiguration aufweist. Das Projekt enthält zwei Quelldateien *"AssemblyInfo.cs"* und *"Program.cs"* , und mehrere Assemblyverweise. Wenn ein Projekt aus der Vorlage erstellt wird, wird der ProjectGuid Wert automatisch durch eine neue GUID ersetzt.
 
     In **Projektmappen-Explorer**, dem erweiterten **Vorlagen** Ordner sollte wie folgt aussehen:
 
@@ -224,7 +224,7 @@ Templates
 
     Neuerstellen von registriert die Projektvorlage aus.
 
-   Die Parameter `defaultProjectExtension` und `possibleProjectExtensions` werden auf die Projekt-Dateinamenerweiterung festgelegt (*.myproj*). Die `projectTemplatesDirectory` Parametersatz wird auf den relativen Pfad, der die *Vorlagen* Ordner. Während des Builds wird dieser Pfad konvertiert werden, um eine vollständige Erstellung und der Registrierung, um das Projektsystem registrieren hinzugefügt werden.
+   Die Parameter `defaultProjectExtension` und `possibleProjectExtensions` werden auf die Projekt-Dateinamenerweiterung festgelegt ( *.myproj*). Die `projectTemplatesDirectory` Parametersatz wird auf den relativen Pfad, der die *Vorlagen* Ordner. Während des Builds wird dieser Pfad konvertiert werden, um eine vollständige Erstellung und der Registrierung, um das Projektsystem registrieren hinzugefügt werden.
 
 ## <a name="test-the-template-registration"></a>Testen Sie die Registrierung der Vorlage
  Vorlagenregistrierung teilt Visual Studio den Speicherort Ihres Projektordners für die Vorlage, damit Visual Studio anzeigen können, den Vorlagennamen und ein Symbol in der **neues Projekt** Dialogfeld.
@@ -603,7 +603,7 @@ Templates
 
    - `nameSpace` erhält den Wert des der \<RootNamespace >-Element in der *\Templates\Projects\SimpleProject\SimpleProject.myproj* Projektdatei für die Vorlage. In diesem Fall handelt es sich um den Wert `MyRootNamespace`.
 
-   - `className` ist der Wert der Quelldateiname der Klasse, ohne die Dateinamenerweiterung angegeben werden. In diesem Fall die erste Datei in den Zielordner kopiert werden sollen ist *"AssemblyInfo.cs"*; aus diesem Grund wird der Wert der Klassenname `AssemblyInfo`.
+   - `className` ist der Wert der Quelldateiname der Klasse, ohne die Dateinamenerweiterung angegeben werden. In diesem Fall die erste Datei in den Zielordner kopiert werden sollen ist *"AssemblyInfo.cs"* ; aus diesem Grund wird der Wert der Klassenname `AssemblyInfo`.
 
 4. Entfernen Sie den Haltepunkt, und drücken Sie **F5** um die Ausführung fortzusetzen.
 

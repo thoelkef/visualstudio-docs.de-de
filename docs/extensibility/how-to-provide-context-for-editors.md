@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - provide context
 ms.assetid: 12df4d06-df6b-4eaf-a7bf-c83655a0c683
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f37550dbea8b3633c79358822fa8f2bdf1ecb6d0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bc482050422a9481bddc2902832376fa9dc0c29a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417149"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325378"
 ---
 # <a name="how-to-provide-context-for-editors"></a>Vorgehensweise: Bereitstellen von Kontext für Editoren
 Der Kontext ist für einen Editor aktiv, nur, wenn der Editor den Fokus besitzt, oder vor der Fokus sofort der Fokus zu einem Toolfenster verschoben wurde. Sie können den Kontext für einen Editor angeben, indem Sie die folgenden Aufgaben:

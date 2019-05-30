@@ -3,17 +3,17 @@ title: Hello World-Erweiterung-Lernprogramm | Microsoft-Dokumentation
 ms.date: 03/14/2019
 ms.topic: conceptual
 ms.assetid: f74e1ad1-1ee5-4360-9bd5-d82467b884ca
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3beedce039d1c093b5dfebce07b09d7d3a5795dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4c3bbafcf138c60b65940bcee73c74f56cf6e2fd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62912313"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342865"
 ---
 # <a name="create-your-first-extension-hello-world"></a>Erstellen Sie Ihrer erste Erweiterung: Hello World
 
@@ -156,7 +156,7 @@ Sehen Sie die Wörter **experimentelle Instanz** in der Titelleiste von Visual S
 
 ::: moniker-end
 
-Schritt 2 Auf der **Tools** Menü mit den **experimentelle Instanz**, klicken Sie auf **Say Hello World!**.
+Schritt 2 Auf der **Tools** Menü mit den **experimentelle Instanz**, klicken Sie auf **Say Hello World!** .
 
 ![Endergebnis](media/hello-world-final-result.png)
 

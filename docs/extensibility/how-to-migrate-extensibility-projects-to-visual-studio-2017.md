@@ -3,18 +3,18 @@ title: 'Vorgehensweise: Migrieren von Erweiterungsprojekten zu Visual Studio 201
 ms.date: 11/09/2016
 ms.topic: conceptual
 ms.assetid: 8ca07b00-a3ff-40ab-b647-c0a93b55e86a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 3d55055734233a385f4a6d24f8925af2f0829fe3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 802c55844be14192ea5bd5de1870e27e2063ccad
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62863654"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319312"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Vorgehensweise: Migrieren von Erweiterungsprojekten zu Visual Studio 2017
 
@@ -47,7 +47,7 @@ So aktualisieren Sie die NuGet-Verweise auf Microsoft.VSSDK.BuildTools:
 
 * Mit der rechten Maustaste auf die Projektmappe, und wählen Sie **NuGet-Pakete für Projektmappe verwalten**.
 * Navigieren Sie zu der **Updates** Registerkarte.
-* Wählen Sie **Microsoft.VSSDK.BuildTools (neueste Version)**.
+* Wählen Sie **Microsoft.VSSDK.BuildTools (neueste Version)** .
 * Drücken Sie **Update**.
 
 ![VSSDK-Buildtools](media/vssdk-build-tools.png)
@@ -59,7 +59,7 @@ Um sicherzustellen, dass der Benutzer die Installation von Visual Studio alle As
 > [!Note]
 > Zumindest sollten alle Erweiterungen der Visual Studio-Kern-Editor-Komponente als erforderliche Komponente angeben.
 
-* Bearbeiten Sie die Erweiterung manifest-Datei (in der Regel aufgerufen *"Source.Extension.vsixmanifest"*).
+* Bearbeiten Sie die Erweiterung manifest-Datei (in der Regel aufgerufen *"Source.Extension.vsixmanifest"* ).
 * Stellen Sie sicher `InstallationTarget` 15.0 umfasst.
 * Fügen Sie die erforderlichen Installationsvoraussetzungen hinzu (wie im folgenden Beispiel gezeigt).
    * Es wird empfohlen, dass Sie die Voraussetzungen für die Installation nur Komponenten-IDs angeben.
@@ -196,7 +196,7 @@ Beispiele:
 
 ## <a name="specify-a-visual-studio-2017-release"></a>Geben Sie ein Visual Studio 2017-release
 
-Wenn die Erweiterung eine bestimmte Version von Visual Studio 2017 erforderlich sind, z. B. ein Feature in Version 15.3 hängt, müssen Sie die Nummer des Builds in VSIX Einbeziehen angeben **"installationtarget"**. Beispielsweise hat in Version 15.3 eine Buildnummer von "15.0.26730.3". Sehen Sie die Zuordnung von Releases fest, erstellen Sie Zahlen [hier](../install/visual-studio-build-numbers-and-release-dates.md). Verwenden die Versionsnummer "15.3" ist nicht funktionsfähig.
+Wenn die Erweiterung eine bestimmte Version von Visual Studio 2017 erforderlich sind, z. B. ein Feature in Version 15.3 hängt, müssen Sie die Nummer des Builds in VSIX Einbeziehen angeben **"installationtarget"** . Beispielsweise hat in Version 15.3 eine Buildnummer von "15.0.26730.3". Sehen Sie die Zuordnung von Releases fest, erstellen Sie Zahlen [hier](../install/visual-studio-build-numbers-and-release-dates.md). Verwenden die Versionsnummer "15.3" ist nicht funktionsfähig.
 
 Wenn Ihre Erweiterung erforderlich, Version 15.3 ist oder höher verwenden, müssten Sie deklarieren die **"installationtarget" Version** als [15.0.26730.3, 16.0):
 

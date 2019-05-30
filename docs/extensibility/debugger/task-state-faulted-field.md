@@ -5,24 +5,24 @@ ms.topic: conceptual
 helpviewer_keywords:
 - TASK_STATE_FAULTED field, Task class [.NET Framework debug engines]
 ms.assetid: ced826ae-09a9-4acf-af00-a2343d396bb8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b877d7370396db4653ff9af81a5654f2d357522
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f8ae3c654518ec051d3f4d1fd0eeb43b4ef5e710
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62912776"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348359"
 ---
 # <a name="taskstatefaulted-field"></a>TASK_STATE_FAULTED-Feld
 Die Aufgabe wurde aufgrund eines Ausnahmefehlers abgeschlossen.
 
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Assembly:** "mscorlib" (in *"mscorlib.dll"*)
+ **Assembly:** "mscorlib" (in *"mscorlib.dll"* )
 
  Da Sie diesen internen Member von .NET Framework zugreifen können, wird die folgende Syntax in Common Intermediate Language (CIL) bereitgestellt.
 

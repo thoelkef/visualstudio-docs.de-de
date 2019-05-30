@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - CANSTOP_REASON enumeration
 ms.assetid: 6da944eb-36cd-4a8c-8d71-544c775cfcc1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbc4143c61a0223fe3940b4167748727d1ebd560
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 18861d7aa19281528e9a100f57399451194598a9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711617"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327249"
 ---
 # <a name="canstopreason"></a>CANSTOP_REASON
 Verwendet, um zu bestimmen, ob ein Programm nach Erreichen einer bestimmten Stelle in der Ausführung beenden kann.
@@ -39,10 +42,12 @@ public enum enum_CANSTOP_REASON {
 };
 ```
 
-## <a name="members"></a>Member
-CANSTOP_ENTRYPOINT gibt den Einstiegspunkt des angegebenen Programms an.
+## <a name="fields"></a>Felder
+`CANSTOP_ENTRYPOINT`\
+Gibt den Einstiegspunkt des angegebenen Programms an.
 
-CANSTOP_STEPIN gibt Einzelschritt in eine Funktion.
+`CANSTOP_STEPIN`\
+Gibt an, eine Funktion schrittweise.
 
 ## <a name="remarks"></a>Hinweise
 Übergeben als Argument an die [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) Methode, mit der Sitzung Debug-Manager (SDM) zu bestätigen, wenn nach dem Erreichen des Einstiegspunkt des Programms oder nach einer Funktion oder Methode schrittweise beendet werden kann.

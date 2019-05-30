@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - architecture
 ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3979138944671ff2809f4f73beb0a28b222ec5ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 155d760ee546b1e35b733a00ac9a67722742f9b5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861764"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340794"
 ---
 # <a name="inside-the-editor"></a>Im editor
 
@@ -108,7 +108,7 @@ Ein <xref:Microsoft.VisualStudio.Text.SnapshotPoint> eine Zeichenposition in ein
 
 #### <a name="spans-and-normalizedspancollections"></a>Span-Elemente und NormalizedSpanCollections
 
-Ein <xref:Microsoft.VisualStudio.Text.Span> stellt einen Zeitraum an, die auf einen Textabschnitt in einer Textmomentaufnahme angewendet werden kann. Momentaufnahme Positionen sind nullbasiert, sodass Spannen an einer beliebigen Position, einschließlich 0 (null) beginnen können. Die `End` -Eigenschaft eines Textabschnitts ist gleich der Summe aus der `Start` Eigenschaft und die zugehörige `Length` Eigenschaft. Ein `Span` schließt nicht das Zeichen, das von indiziert wird die `End` Eigenschaft. Z. B. eine Spanne, die Start = 5 und Länge = 3 verfügt über End = 8, und die Zeichen an den Positionen 5, 6 und 7 enthält. Die Notation für diese Spanne ist 5..8).
+Ein <xref:Microsoft.VisualStudio.Text.Span> stellt einen Zeitraum an, die auf einen Textabschnitt in einer Textmomentaufnahme angewendet werden kann. Momentaufnahme Positionen sind nullbasiert, sodass Spannen an einer beliebigen Position, einschließlich 0 (null) beginnen können. Die `End` -Eigenschaft eines Textabschnitts ist gleich der Summe aus der `Start` Eigenschaft und die zugehörige `Length` Eigenschaft. Ein `Span` schließt nicht das Zeichen, das von indiziert wird die `End` Eigenschaft. Z. B. eine Spanne, die Start = 5 und Länge = 3 verfügt über End = 8, und die Zeichen an den Positionen 5, 6 und 7 enthält. Die Notation für diese Spanne ist [5..8).
 
 Zwei Spannen überschneiden, wenn sie alle Positionen gemeinsam haben, einschließlich die Endposition. Aus diesem Grund die Schnittmenge der [3, 5) und [2, 7) ist [3, 5) sowie die Auswirkungen von [3, 5) und [5, 7) wird [5, 5). (Beachten Sie, dass [5, 5) ist eine leere Span.)
 

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - parsers, language services [managed package framework]
 - language services [managed package framework], Parsers
 ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84b569a843a3ee414143dbfffb0dba6e881f5567
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7b8ed17e67246479772636d67bc8d9f218a3a3fc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418373"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333470"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Parser und Scanner von Legacysprachdiensten
 Der Parser ist das Herzstück des Sprachdiensts. Die Managed Package Framework (MPF)-Language-Klassen erfordern einen Sprachenparser auf Informationen über den Code, der angezeigt wird. Ein Parser trennt den Text in lexikalischer Token, und klicken Sie dann identifiziert diese Token nach Typ und Funktion.
@@ -46,7 +46,7 @@ namespace MyNamespace
 |{ } ( ) ;|Trennzeichen (delimiter)|
 |MyNamespace "," MyClass "," MyFunction "," arg1 "," var1|identifier|
 |MyNamespace|namespace|
-|MyClass|Klasse|
+|MyClass|class|
 |MyFunction|Methode|
 |arg1|-Parameter von|
 |var1|lokale variable|

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_INFO_FIELDS enumeration
 ms.assetid: a69487d2-e701-4165-804a-8a011df9a3bd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9614d3b99df71c9bfa8328478348385472f1a8fa
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 01853df78bfe731ea4b7159f7b3ebe352f3c5eaa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710005"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337673"
 ---
 # <a name="fieldinfofields"></a>FIELD_INFO_FIELDS
 Gibt an, welche Informationen Sie zum Abrufen einer [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) Objekt.
@@ -47,14 +50,18 @@ public enum enum_FIELD_INFO_FIELDS {
 };
 ```
 
-## <a name="members"></a>Member
-FIF_FULLNAME initialisieren und Verwenden der `bstrFullName` -Feld in der [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) Struktur.
+## <a name="fields"></a>Felder
+`FIF_FULLNAME`\
+Initialisieren und Verwenden der `bstrFullName` -Feld in der [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) Struktur.
 
-FIF_NAME initialisieren und Verwenden der `bstrName` -Feld in der `FIELD_INFO` Struktur.
+`FIF_NAME`\
+Initialisieren und Verwenden der `bstrName` -Feld in der `FIELD_INFO` Struktur.
 
-FIF_TYPE initialisieren und Verwenden der `bstrType` -Feld in der `FIELD_INFO` Struktur.
+`FIF_TYPE`\
+Initialisieren und Verwenden der `bstrType` -Feld in der `FIELD_INFO` Struktur.
 
-FIF_MODIFIERS initialisieren und Verwenden der `bstrModifiers` -Feld in der `FIELD_INFO` Struktur.
+`FIF_MODIFIERS`\
+Initialisieren und Verwenden der `bstrModifiers` -Feld in der `FIELD_INFO` Struktur.
 
 ## <a name="remarks"></a>Hinweise
 Diese Werte werden auch als Argument übergeben die [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) Methode, um die Felder der anzugeben, die [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) sind, dass die Struktur initialisiert werden.

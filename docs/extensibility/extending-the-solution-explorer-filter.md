@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Solution Explorer, extending
 - extensibility [Visual Studio], projects and solutions
 ms.assetid: df976c76-27ec-4f00-ab6d-a26a745dc6c7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef9439d9cebfa8b80b214e52d077ab1f770d4750
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8b96bdfecdc461499e253c4873dc44e4fa5247ea
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62912125"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342849"
 ---
 # <a name="extend-the-solution-explorer-filter"></a>Erweitern Sie den Projektmappen-Explorer-filter
 Sie können die erweitern **Projektmappen-Explorer** Funktionen ein- oder Ausblenden von verschiedenen Dateien zu filtern. Sie können z. B. erstellen ein Filters, der nur C#-Factory Klassendateien in zeigt die **Projektmappen-Explorer**, wie Sie diese exemplarische Vorgehensweise veranschaulicht.
@@ -26,7 +26,7 @@ Sie können die erweitern **Projektmappen-Explorer** Funktionen ein- oder Ausble
 
 ### <a name="create-a-visual-studio-package-project"></a>Erstellen Sie ein Visual Studio-paketprojekt
 
-1. Erstellen Sie ein VSIX-Projekt mit dem Namen `FileFilter`. Hinzufügen eine benutzerdefinierten Befehls-Elementvorlage, die mit dem Namen **"FileFilter"**. Weitere Informationen finden Sie unter [erstellen Sie eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Erstellen Sie ein VSIX-Projekt mit dem Namen `FileFilter`. Hinzufügen eine benutzerdefinierten Befehls-Elementvorlage, die mit dem Namen **"FileFilter"** . Weitere Informationen finden Sie unter [erstellen Sie eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).
 
 2. Hinzufügen eines Verweises auf `System.ComponentModel.Composition` und `Microsoft.VisualStudio.Utilities`.
 
@@ -54,7 +54,7 @@ Sie können die erweitern **Projektmappen-Explorer** Funktionen ein- oder Ausble
 
 4. In der **Quelle** Feld, und wählen Sie **ein Projekt in der aktuellen Projektmappe**.
 
-5. In der **Projekt** Feld, und wählen Sie **"FileFilter"**, und wählen Sie dann die **OK** Schaltfläche.
+5. In der **Projekt** Feld, und wählen Sie **"FileFilter"** , und wählen Sie dann die **OK** Schaltfläche.
 
 ### <a name="add-the-filter-code"></a>Fügen Sie den Filtercode
 
