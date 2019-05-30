@@ -6,17 +6,17 @@ helpviewer_keywords:
 - font and color control [Visual Studio SDK], categories
 - custom categories
 ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 124b1a1f5e6bbf0f07bf8533940820d4f5ca9247
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4eeb8af06ee4e3285e15afbb3571fb2845adef98
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418843"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321401"
 ---
 # <a name="implement-custom-categories-and-display-items"></a>Implementieren Sie benutzerdefinierte Kategorien und Einblenden von Elementen
 Eine VSPackage kann Kontrolle über die Schriftarten und Farben des Texts zum Bereitstellen der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung (IDE) über den benutzerdefinierten Kategorien und Anzeigeelemente.
@@ -45,7 +45,7 @@ Eine VSPackage kann Kontrolle über die Schriftarten und Farben des Texts zum Be
 
 ## <a name="to-create-or-identify-categories"></a>Zum Erstellen oder Identifizieren von Kategorien
 
-- Erstellen Sie eine besondere Art von Kategorie-Registrierungseintrag unter *["HKLM\Software\Microsoft" \Visual Studio\\*\<Visual Studio-Version >*\FontAndColors\\ `<Category>`]*
+- Erstellen Sie eine besondere Art von Kategorie-Registrierungseintrag unter *["HKLM\Software\Microsoft" \Visual Studio\\* \<Visual Studio-Version > *\FontAndColors\\ `<Category>`]*
 
    *\<Kategorie >* ist der nicht lokalisierte Name der Kategorie.
 
@@ -60,7 +60,7 @@ Eine VSPackage kann Kontrolle über die Schriftarten und Farben des Texts zum Be
 
 ## <a name="to-create-or-identify-groups"></a>Zum Erstellen oder Identifizieren von Gruppen
 
-- Erstellen Sie eine besondere Art von Kategorie-Registrierungseintrag unter *["HKLM\Software\Microsoft" \Visual Studio\\*\<Visual Studio-Version >*\FontAndColors\\*  \<Gruppe >*]*
+- Erstellen Sie eine besondere Art von Kategorie-Registrierungseintrag unter *["HKLM\Software\Microsoft" \Visual Studio\\* \<Visual Studio-Version > *\FontAndColors\\*  \<Gruppe > *]*
 
    *\<Gruppe >* der nicht lokalisierten Namen der Gruppe ist.
 

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - brace matching
 - language services [managed package framework], brace matching
 ms.assetid: 4e3d0a70-f22f-49dd-92d8-edf48ab62b52
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d83a4c3d9c070f77a6a13b28da0a57dbe6c48be0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a535fc479fe5cc398d09d7aa9e47a3c91fa97f38
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415357"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309185"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>Zuordnung von geschweiften Klammern in einem legacy-Sprachdienst
 Klammer hilft den Entwickler, die Language-Elemente zu verfolgen, die zusammen, wie z. B. Klammern und geschweifte Klammern enthalten sein müssen. Wenn ein Entwickler eine schließende geschweifte Klammer eingibt, wird der öffnenden geschweiften Klammer hervorgehoben.

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_PASSCOUNT_STYLE structure
 ms.assetid: 0a647047-e2d5-4724-a0b8-68108425ecad
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 809c63fe536166efe0779cd4e4dc0149b219390a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4ea44ef70ba086a58454891987711ce7cca643e8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686053"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353050"
 ---
 # <a name="bppasscountstyle"></a>BP_PASSCOUNT_STYLE
 Gibt die Bedingung, die die Anzahl der Haltepunkt-übergeben, die bewirkt, dass der Breakpoint ausgelöst werden zugeordnet.
@@ -43,14 +46,18 @@ public enum enum_BP_PASSCOUNT_STYLE {
 };
 ```
 
-## <a name="members"></a>Member
-BP_PASSCOUNT_NONE gibt kein Haltepunkt Pass-Count-Stil an.
+## <a name="fields"></a>Felder
+`BP_PASSCOUNT_NONE`\
+Gibt an, kein Haltepunkt Pass-Count-Stil.
 
-BP_PASSCOUNT_EQUAL wird der Haltepunkt Pass Anzahl fest. Der Haltepunkt wird ausgelöst, wenn die Anzahl der Häufigkeit, mit die der Haltepunkt erreicht wird die Anzahl der Durchläufe entspricht.
+`BP_PASSCOUNT_EQUAL`\
+Legt den Haltepunkt Pass Anzahl Stil fest. Der Haltepunkt wird ausgelöst, wenn die Anzahl der Häufigkeit, mit die der Haltepunkt erreicht wird die Anzahl der Durchläufe entspricht.
 
-BP_PASSCOUNT_EQUAL_OR_GREATER legt den Haltepunkt Pass-Count-Stil auf gleich oder größer fest. Der Haltepunkt wird ausgelöst, wenn die Anzahl der Häufigkeit, mit die der Haltepunkt erreicht wird, gleich oder größer als die Anzahl der übergeben wird.
+`BP_PASSCOUNT_EQUAL_OR_GREATER`\
+Legt den Haltepunkt Pass-Count-Stil auf gleich oder größer fest. Der Haltepunkt wird ausgelöst, wenn die Anzahl der Häufigkeit, mit die der Haltepunkt erreicht wird, gleich oder größer als die Anzahl der übergeben wird.
 
-BP_PASSCOUNT_MOD gibt einen modulo-Anzahl zu übergeben. Wenn die Anzahl der Durchläufe des Typs ist z. B. `BP_PASSCOUNT_MOD` und der Pass-Count-Wert ist 4, der Haltepunkt ausgelöst wird, jedes Mal, wenn die Trefferanzahl ein Vielfaches von 4 ist.
+`BP_PASSCOUNT_MOD`\
+Gibt an, ein modulo-Anzahl zu übergeben. Wenn die Anzahl der Durchläufe des Typs ist z. B. `BP_PASSCOUNT_MOD` und der Pass-Count-Wert ist 4, der Haltepunkt ausgelöst wird, jedes Mal, wenn die Trefferanzahl ein Vielfaches von 4 ist.
 
 ## <a name="remarks"></a>Hinweise
 Verwendet für die `stylePassCount` Mitglied der [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) -Struktur, die wiederum Mitglied ist die [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) und [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) Strukturen.

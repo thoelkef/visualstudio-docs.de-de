@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - GUID_ARRAY structure
 ms.assetid: 9e12500c-2c1c-49b1-a0ba-e08366c97eb8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eed39ee4446e66e1e7b1700d97ad680eb62c2523
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d53413ee56700fe39470d3bbc3229f4b8b668373
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704968"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317532"
 ---
 # <a name="guidarray"></a>GUID_ARRAY
 Ein Array von eindeutigen Bezeichnern für verfügbare Debug-Engines beschreibt.
@@ -38,10 +41,12 @@ public struct GUID_ARRAY
 }
 ```
 
-## <a name="terms"></a>Begriffe
-DwCount Anzahl von eindeutigen Bezeichnern im Array.
+## <a name="members"></a>Member
+`dwCount`\
+Die Anzahl von eindeutigen Bezeichnern im Array.
 
-Member-Array, das eindeutige Bezeichner enthält.
+`Members`\
+Array, das eindeutige Bezeichner enthält.
 
 ## <a name="remarks"></a>Hinweise
 Diese Struktur wird zurückgegeben, durch die [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md) Methode.
