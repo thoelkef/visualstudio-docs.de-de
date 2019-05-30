@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f989e5ec028f3a296585c54eb17b54f4da7c1cf0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0b44f2a36297db3265a3904f1f76596ca6ba0e35
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809314"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260471"
 ---
 # <a name="code-metrics-values"></a>Codemetrikwerte
 
@@ -28,15 +28,15 @@ Weitere Informationen zum Generieren von Codemetrikdaten werden in Visual Studio
 
 Die folgende Liste enthält den Code Metriken dazu führt, die Visual Studio berechnet:
 
-- **Wartbarkeitsindex** -berechnet einen Indexwert zwischen 0 und 100 an, der relativ einfachen pflegen des Codes darstellt. Ein hoher Wert bedeutet, dass eine bessere Verwaltbarkeit. Farbcodiert Bewertungen können verwendet werden, um Problemstellen in Ihrem Code schnell zu identifizieren. Eine grüne Bewertung zwischen 20 und 100 und gibt an, dass der Code gute wartbarkeit. Eine gelbe Bewertung liegt zwischen 10 und 19 und gibt an, dass der Code nicht so verwaltet werden. Eine rote Bewertung wird eine Bewertung zwischen 0 und 9 und niedrige wartbarkeit.
+- **Wartbarkeitsindex** -berechnet einen Indexwert zwischen 0 und 100 an, der relativ einfachen pflegen des Codes darstellt. Ein hoher Wert bedeutet, dass eine bessere Verwaltbarkeit. Farbcodiert Bewertungen können verwendet werden, um Problemstellen in Ihrem Code schnell zu identifizieren. Eine grüne Bewertung zwischen 20 und 100 und gibt an, dass der Code gute wartbarkeit. Eine gelbe Bewertung liegt zwischen 10 und 19 und gibt an, dass der Code nicht so verwaltet werden. Eine rote Bewertung wird eine Bewertung zwischen 0 und 9 und niedrige wartbarkeit. Weitere Informationen finden Sie unter den [Indexbereich Verwaltbarkeit und die Bedeutung](https://blogs.msdn.microsoft.com/codeanalysis/2007/11/20/maintainability-index-range-and-meaning/) Blogbeitrag.
 
-- **Zyklomatische Komplexität** -misst die strukturelle Komplexität des Codes. Es wird durch die Berechnung der Anzahl der unterschiedlichen Codepfaden im Datenfluss des Programms erstellt. Ein Programm, das komplexe ablaufsteuerung hat ist benötigen weitere Tests gute Code Coverage zu erreichen und schlechter zu verwalten.
+- **Zyklomatische Komplexität** -misst die strukturelle Komplexität des Codes. Es wird durch die Berechnung der Anzahl der unterschiedlichen Codepfaden im Datenfluss des Programms erstellt. Ein Programm, das komplexe ablaufsteuerung ist, muss Weitere Tests gute Code Coverage zu erreichen und ist schlechter zu verwalten. Weitere Informationen finden Sie unter den [Wikipedia-Eintrag zu zyklomatische Komplexität](https://wikipedia.org/wiki/Cyclomatic_complexity).
 
-- **Vererbungstiefe** -gibt die Anzahl von Klassendefinitionen, die auf den Stamm der Hierarchie von Klassen erweitern. Je tiefer sich der Hierarchie der schwieriger zu verstehen, in denen bestimmte Methoden und Felder definiert sind möglicherweise oder / und neu definiert.
+- **Vererbungstiefe** -gibt die Anzahl der verschiedenen Klassen, die von einem anderen bis hin zur Basisklasse erben. Vererbungstiefe ähnelt der Klasse, die Kopplung, eine Änderung in einer Basisklasse eines davon geerbten Klassen beeinflussen kann. Ändern je höher diese Zahl, desto tiefer, die Vererbung und je höher die Wahrscheinlichkeit für Änderungen der Basisklasse zu einer eine wichtige. Für die Tiefe der Vererbung ein niedriger Wert eignet sich, und ein hoher Wert ist ungültig. 
 
-- **-Klasse Kopplung** -misst die Kopplung auf eindeutige Klassen über Parameter, lokale Variablen, Rückgabetypen, Methodenaufrufe, generische oder Vorlagenklasse Instanziierungen, Basisklassen, schnittstellenimplementierungen, Felder, die auf externe Typen definiert und Attributdekoration. Guter Software Entwurfsprinzipien verlangen, dass die Typen und Methoden sollten eine hohen Kohäsion aufweisen und loser Kopplung. Hohe Kopplung gibt an, ein Design, das ist schwierig, wiederverwenden und verwalten aufgrund der vielen Abhängigkeiten auf anderen Typen.
+- **-Klasse Kopplung** -misst die Kopplung auf eindeutige Klassen über Parameter, lokale Variablen, Rückgabetypen, Methodenaufrufe, generische oder Vorlagenklasse Instanziierungen, Basisklassen, schnittstellenimplementierungen, Felder, die auf externe Typen definiert und Attributdekoration. Guter Software Entwurfsprinzipien verlangen, dass die Typen und Methoden sollten eine hohen Kohäsion aufweisen und loser Kopplung. Hohe Kopplung gibt an, ein Design, das ist schwierig, wiederverwenden und verwalten aufgrund der vielen Abhängigkeiten auf anderen Typen. Weitere Informationen finden Sie unter den [Klassenkopplungen](https://blogs.msdn.microsoft.com/zainnab/2011/05/25/code-metrics-class-coupling/) Blogbeitrag.
 
-- **Codezeilen** -gibt die ungefähre Anzahl der Zeilen im Code. Die Anzahl wird basierend auf den IL-Code und ist daher nicht die genaue Anzahl von Zeilen in der Quellcodedatei. Eine sehr hohe Anzahl hinweisen, dass ein Typ oder Methode zu viel Arbeit zu erledigen möchte und verteilt werden soll. Es möglicherweise, dass der Typ oder die Methode möglicherweise schwer zu verwalten.
+- **Codezeilen** -gibt die ungefähre Anzahl der Zeilen im Code. Die Anzahl wird basierend auf den IL-Code und ist daher nicht die genaue Anzahl von Zeilen in der Quellcodedatei. Ein hoher Wert möglicherweise, dass ein Typ oder Methode zu viel Arbeit zu erledigen möchte und verteilt werden soll. Es möglicherweise, dass der Typ oder die Methode möglicherweise schwer zu verwalten.
 
    > [!NOTE]
    > Die [Befehlszeilenversion](../code-quality/how-to-generate-code-metrics-data.md#command-line-code-metrics) des Codes Metriken Tool zählt tatsächliche Codezeilen erforderlich, da den Quellcode anstelle von IL analysiert.

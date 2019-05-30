@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14b573c85a6a19e2f84bcb2a6cae8b0c55768255
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 8ed493089ed215faaddc1009328ec6f8b906534f
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65675593"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260683"
 ---
 # <a name="deploying-applications-services-and-components"></a>Bereitstellen von Anwendungen, Diensten und Komponenten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,6 +52,6 @@ Wenn Sie eine Anwendung, einen Dienst oder eine Komponente bereitstellen, vertei
 |**Bereitstellen einer desktop-Anwendung:** Mithilfe von ClickOnce-Bereitstellung können Sie eine Desktopanwendung auf einem Webserver oder in einer Netzwerkdateifreigabe veröffentlichen. Benutzer können die Anwendung mit einem einzelnen Mausklick installieren.|[ClickOnce-Sicherheit und Bereitstellung](../deployment/clickonce-security-and-deployment.md)|  
 |**Erstellen Sie ein Setup-Programm:** Sie können ein Setupprogramm erstellen, mithilfe der InstallShield Limited Edition, die ist kostenlos.|[InstallShield Limited Edition](../deployment/installshield-limited-edition.md)|  
 |**Verwalten eines vorhandenen Setupprogramms:** Weiterhin ein Setupprogramm in einer früheren Version von Visual Studio erstellt werden, indem Sie die Visual Studio Installer Projects Extension installieren.|[Visual Studio Installer Projects-Erweiterung](http://blogs.msdn.com/b/visualstudio/archive/2014/04/17/visual-studio-installer-projects-extension.aspx)<br /><br /> Dokumentation für Installer-Projekte ist hier verfügbar: [Visual Studio-Installer-Bereitstellung](https://msdn.microsoft.com/library/2kt85ked\(v=vs.100\).aspx)|  
-|**Bereitstellen einer Visual C++-Anwendung:** Sie können die Visual C++-Laufzeit mit einer Anwendung bereitstellen, mit der zentrale Bereitstellung, lokale Bereitstellung oder statische Verknüpfung.|[Bereitstellen von nativen Desktopanwendungen (Visual C++)](https://msdn.microsoft.com/library/zebw5zk9.aspx)|  
+|**Bereitstellen einer Visual C++-Anwendung:** Sie können die Visual C++-Laufzeit mit einer Anwendung bereitstellen, mit der zentrale Bereitstellung, lokale Bereitstellung oder statische Verknüpfung.|[Bereitstellen von nativen Desktopanwendungen (Visual C++)](/cpp/windows/deploying-native-desktop-applications-visual-cpp)|  
 |**Bereitstellen einer Anwendung zum Testen:** Stellen Sie die Anwendungen in virtuellen Umgebungen bereit, um ausgereiftere Entwicklungs- und Testvorgänge zu ermöglichen.|[Testen in einer Lab-Umgebung](https://msdn.microsoft.com/library/14ba54c8-a158-4a6e-b00a-b00ae960feb8)|  
 |**Installieren der erforderlichen Komponenten:** Sie können die erforderlichen Komponenten für Desktopanwendungen installieren, indem Sie ein generisches Installationsprogramm konfigurieren, das als Bootstrapper bezeichnet wird.|[Vorbedingungen für die Anwendungsbereitstellung](../deployment/application-deployment-prerequisites.md)|

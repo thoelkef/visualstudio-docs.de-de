@@ -12,12 +12,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ef76180bef1b643bb1f3ba3255b5b46dafdca272
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 46eb6585bffb96397d73a03f142bd7b6b4779f15
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65694996"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261637"
 ---
 # <a name="what39s-new-in-profiling-tools"></a>Neuerungen bei den Profilerstellungstools
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Informationen zu allen Neuerungen hinsichtlich Debugging und Diagnose in Visual 
 ## <a name="whats-new-in-update-1"></a>Neuigkeiten in Update 1  
  Ab Visual Studio 2015 Update 1 können Sie eine Aufteilung nach Funktion der CPU-Auslastung anzeigen, ohne den Debugger zu verlassen. Weitere Informationen finden Sie unter [CPU-Profilerstellung im Debugger in Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/10/29/profile-your-cpu-in-the-debugger-in-visual-studio-2015.aspx).  
   
- Der Registerkarte **Ereignisse** im Fenster **Diagnosetools** wurden Optionen zum Suchen und Filtern hinzugefügt. Weitere Informationen finden Sie unter [Im Debugger integrierte Diagnosetools](https://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859) und [Searching and filtering the Events tab of the Diagnostic Tools window (Suchen und Filtern auf der Registerkarte „Ereignisse“ im Fenster „Diagnosetools“)](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).  
+ Der Registerkarte **Ereignisse** im Fenster **Diagnosetools** wurden Optionen zum Suchen und Filtern hinzugefügt. Weitere Informationen finden Sie unter [Im Debugger integrierte Diagnosetools](/visualstudio/profiling/running-profiling-tools-with-or-without-the-debugger) und [Searching and filtering the Events tab of the Diagnostic Tools window (Suchen und Filtern auf der Registerkarte „Ereignisse“ im Fenster „Diagnosetools“)](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).  
   
 ## <a name="diagnostics-with-debugging-ui-and-hotkey-changes"></a>Diagnose mit Debugger-Benutzeroberfläche und Hotkey-Änderungen  
  Mit dem neuen Fenster **Diagnosetools** können Sie die Diagnosetools jetzt während des Debuggens ausführen. Das Fenster wird automatisch angezeigt, Sie können es jedoch auch mit dem neuen Menüelement **Diagnosetools anzeigen** (Tastenkombination: **STRG+ALT+F2**) öffnen.  

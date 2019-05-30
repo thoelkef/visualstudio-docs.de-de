@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Verbinden eines Hosts mit einem generierten Direktivenprozessor'
+title: Verbinden von Hosts mit generierten Direktivenprozessor
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 255c82b09e87180149756ce684f001652f4b962a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5cc45f3b2c83b9f54d1912ae7dbfa90a6b552bb3
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62577685"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261879"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Exemplarische Vorgehensweise: Verbinden eines Hosts mit einem generierten Anweisungsprozessor
 

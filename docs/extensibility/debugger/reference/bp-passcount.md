@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_PASSCOUNT structure
 ms.assetid: 791ac175-b897-4c70-873e-240da7e0ac89
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ef8b2d927fab7637d92ac8061b3580c16db96e3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3fd1ab73a20b319af6c9464062113f4e8f2d64fa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710915"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353012"
 ---
 # <a name="bppasscount"></a>BP_PASSCOUNT
 Beschreibt die Anzahl und die Bedingungen aus, auf denen ein bedingter Haltepunkt ausgelöst wird.
@@ -39,9 +42,11 @@ public struct BP_PASSCOUNT {
 ```
 
 ## <a name="members"></a>Member
-`dwPassCount` Die Anzahl der Male auf, um vor dem Auslösen, es auf den Haltepunkt zu übergeben.
+`dwPassCount`\
+Die Anzahl der Male auf, um vor dem Auslösen, es auf den Haltepunkt zu übergeben.
 
-`stylePassCount` Ein Wert aus der [BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md) -Enumeration, der den Stil der der Haltepunkt gibt an, übergeben Sie die Anzahl.
+`stylePassCount`\
+Ein Wert aus der [BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md) -Enumeration, der den Stil der der Haltepunkt gibt an, übergeben Sie die Anzahl.
 
 ## <a name="remarks"></a>Hinweise
 Diese Struktur ist ein Mitglied der [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) Struktur.

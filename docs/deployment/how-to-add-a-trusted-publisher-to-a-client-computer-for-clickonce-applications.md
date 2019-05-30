@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Hinzufügen eines vertrauenswürdigen Herausgebers auf einen Clientcomputer für ClickOnce-Anwendungen | Microsoft-Dokumentation'
+title: Hinzufügen von vertrauenswürdigen Herausgebers auf Clientcomputer für ClickOnce-apps
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42fdbcb3da2e2b3c335b55ca66449d6264c2cf16
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 426096670df1099568cadc2af68ae0ff50ca71e5
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407615"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263163"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Vorgehensweise: Hinzufügen eines vertrauenswürdigen Herausgebers zu einem Clientcomputer für ClickOnce-Anwendungen
 Mit der Bereitstellung einer vertrauenswürdigen Anwendung können Sie Clientcomputer so konfigurieren, dass Ihre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendungen mit einer höheren Vertrauensebene ausgeführt werden ohne den Benutzer dazu aufzufordern. Die folgenden Verfahren zeigen, wie das Befehlszeilentool CertMgr.exe verwendet wird, um das Zertifikat des Herausgebers zum Speicher für vertrauenswürdige Herausgeber auf einem Clientcomputer hinzuzufügen.
@@ -38,7 +38,7 @@ Mit der Bereitstellung einer vertrauenswürdigen Anwendung können Sie Clientcom
 
 1. Abrufen eines digitales Zertifikats von einer Zertifizierungsstelle.
 
-2. Exportieren Sie das Zertifikat in das Format „Base64 X.509“ (*.cer*). Weitere Informationen zu den Zertifikatformaten finden Sie unter [Exportieren eines Zertifikats](http://go.microsoft.com/fwlink/?LinkId=164793).
+2. Exportieren Sie das Zertifikat in das Format „Base64 X.509“ ( *.cer*). Weitere Informationen zu den Zertifikatformaten finden Sie unter [Exportieren eines Zertifikats](http://go.microsoft.com/fwlink/?LinkId=164793).
 
 3. Führen Sie über die Eingabeaufforderung auf Clientcomputern den folgenden Befehl aus:
 
@@ -48,7 +48,7 @@ Mit der Bereitstellung einer vertrauenswürdigen Anwendung können Sie Clientcom
 
 1. Abrufen eines digitales Zertifikats von einer Zertifizierungsstelle.
 
-2. Exportieren Sie das Zertifikat in das Format „Base64 X.509“ (*.cer*). Weitere Informationen zu den Zertifikatformaten finden Sie unter [Exportieren eines Zertifikats](http://go.microsoft.com/fwlink/?LinkId=164793).
+2. Exportieren Sie das Zertifikat in das Format „Base64 X.509“ ( *.cer*). Weitere Informationen zu den Zertifikatformaten finden Sie unter [Exportieren eines Zertifikats](http://go.microsoft.com/fwlink/?LinkId=164793).
 
 3. Führen Sie über die Eingabeaufforderung auf Clientcomputern den folgenden Befehl aus:
 

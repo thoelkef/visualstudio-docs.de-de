@@ -1,5 +1,5 @@
 ---
-title: Server Probleme und Clientkonfiguration in ClickOnce-Bereitstellungen | Microsoft-Dokumentation
+title: Server und Client-Konfigurationsprobleme in ClickOnce-Bereitstellungen
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5be4e6546d5900fbd3274ab1eb8d55622fb2c58b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 49ff55e2a261e86ec5aae09573d6ac40c74c0091
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406786"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263480"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Probleme mit der Server- und Clientkonfiguration in ClickOnce-Bereitstellungen
 Wenn Sie Internetinformationsdienste (Internet Information Services, IIS) unter Windows Server verwenden und die Bereitstellung enthält einen Dateityp aus, dem Windows nicht erkannt wird, wie z. B. Microsoft Word-Datei, verweigert IIS die Datei zu übertragen, und die Bereitstellung nicht erfolgreich.
@@ -41,7 +41,7 @@ Wenn Sie Internetinformationsdienste (Internet Information Services, IIS) unter 
 
   Allerdings können Sie diese Option deaktivieren, indem Sie deaktivieren die **Dateierweiterung ".deploy" verwenden** option die [Publish Options Dialog Box](/previous-versions/visualstudio/visual-studio-2010/7z83t16a(v=vs.100)), in diesem Fall Sie den Webserver für alle Erweiterungen zulassen konfigurieren müssen in der Anwendung verwendet.
 
-  Sie konfigurieren müssen *". manifest"*, *.application*, und *".deploy"*, z. B. Wenn Sie IIS verwenden, in denen Sie nicht installiert haben, die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], oder wenn Sie verwenden einen anderen Webserver (z. B. Apache).
+  Sie konfigurieren müssen *". manifest"* , *.application*, und *".deploy"* , z. B. Wenn Sie IIS verwenden, in denen Sie nicht installiert haben, die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], oder wenn Sie verwenden einen anderen Webserver (z. B. Apache).
 
 ## <a name="clickonce-and-secure-sockets-layer-ssl"></a>ClickOnce und Secure Sockets Layer (SSL)
  Ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung wird über SSL, außer wenn eine Eingabeaufforderung zu dem SSL-Zertifikat von Internet Explorer löst problemlos funktionieren. Die Eingabeaufforderung kann ausgelöst werden, wenn vorhanden ist, dass ein Problem mit dem Zertifikat, z. B. wenn die Websitenamen nicht übereinstimmen oder das Zertifikat abgelaufen ist. Zu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] über eine SSL-Verbindung funktioniert, stellen Sie sicher, dass das Zertifikat auf dem neuesten Stand ist und dass die Daten des Zertifikats die Daten des Standorts übereinstimmt.
@@ -110,7 +110,7 @@ Wenn Sie Internetinformationsdienste (Internet Information Services, IIS) unter 
  Standardmäßig verfügt Windows Server nicht über FrontPage-Servererweiterungen installiert. Wenn Sie verwenden möchten [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] um an einen Webserver für Windows Server zu veröffentlichen, die mit FrontPage-Servererweiterungen HTTP verwendet, müssen Sie zunächst die FrontPage-Servererweiterungen installieren. Sie können die Installation ausführen, indem mithilfe des Verwaltungstools für die Serververwaltung in Windows Server.
 
 ## <a name="windows-server-locked-down-content-types"></a>Windows Server: Gesperrte Inhaltstypen
- IIS auf [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] Sperren nach-unten-alle Dateitypen mit Ausnahme bestimmter bekannten Inhaltstypen (z. B. *.htm*, *.html*, *.txt*und so weiter). So aktivieren Sie die Bereitstellung von [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungen, die diesen Server verwenden, müssen Sie die IIS-Einstellungen zum Zulassen der Herunterladen von Dateien des Typs ändern *.application*, *". manifest"*, und beliebige andere benutzerdefinierte Typen von verwendet der Anwendung.
+ IIS auf [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] Sperren nach-unten-alle Dateitypen mit Ausnahme bestimmter bekannten Inhaltstypen (z. B. *.htm*, *.html*, *.txt*und so weiter). So aktivieren Sie die Bereitstellung von [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungen, die diesen Server verwenden, müssen Sie die IIS-Einstellungen zum Zulassen der Herunterladen von Dateien des Typs ändern *.application*, *". manifest"* , und beliebige andere benutzerdefinierte Typen von verwendet der Anwendung.
 
  Wenn Sie die Bereitstellung mit einem IIS-Server, führen Sie *inetmgr.exe* und fügen Sie neue Dateitypen für die Standardwebseite hinzu:
 
@@ -128,7 +128,7 @@ Wenn Sie Internetinformationsdienste (Internet Information Services, IIS) unter 
 ## <a name="http-compression-issues"></a>Probleme bei der HTTP-Komprimierung
  Mit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], können Sie ausführen, Downloads, die HTTP-Komprimierung zu verwenden, eine Web-Server-Technologie, die den GZIP-Algorithmus verwendet, um einen Datenstrom zu komprimieren, bevor Sie den Datenstrom an den Client gesendet. Der Client – in diesem Fall [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]– dekomprimiert den Stream vor dem Lesen der Dateien.
 
- Wenn Sie IIS verwenden, können Sie ganz einfach, HTTP-Komprimierung aktivieren. Wenn Sie HTTP-Komprimierung aktivieren, es ist jedoch nur aktiviert für bestimmte Dateitypen – nämlich, HTML- und Text-Dateien. So aktivieren Sie die Komprimierung für Assemblys (*DLL*), XML (*XML*), Bereitstellungsmanifeste (*.application*), und Anwendungsmanifeste (*". manifest"*), müssen Sie diese Dateitypen in die Liste der Typen für die IIS komprimieren hinzufügen. Bis Sie die Dateitypen zu Ihrer Bereitstellung hinzufügen, werden nur Text und HTML-Dateien komprimiert.
+ Wenn Sie IIS verwenden, können Sie ganz einfach, HTTP-Komprimierung aktivieren. Wenn Sie HTTP-Komprimierung aktivieren, es ist jedoch nur aktiviert für bestimmte Dateitypen – nämlich, HTML- und Text-Dateien. So aktivieren Sie die Komprimierung für Assemblys (*DLL*), XML (*XML*), Bereitstellungsmanifeste ( *.application*), und Anwendungsmanifeste ( *". manifest"* ), müssen Sie diese Dateitypen in die Liste der Typen für die IIS komprimieren hinzufügen. Bis Sie die Dateitypen zu Ihrer Bereitstellung hinzufügen, werden nur Text und HTML-Dateien komprimiert.
 
  Ausführliche Anweisungen für IIS finden Sie unter [wie zusätzliche Dokumenttypen für HTTP-Komprimierung angegeben](http://go.microsoft.com/fwlink/?LinkId=178459).
 

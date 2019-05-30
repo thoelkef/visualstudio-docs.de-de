@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Herunterladen von Satellitenassemblys bei Bedarf mit der API für die ClickOnce-Bereitstellung | Microsoft-Dokumentation'
+title: Herunterladen der Satellitenassembly bei Bedarf mit der API für ClickOnce-Bereitstellung
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a1aa828f0f4a84f1a8dce3055f3719a3c11520e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 34cde3a2444525e48455e445894fd5ab1c66fab8
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405927"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262968"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Exemplarische Vorgehensweise: Herunterladen von Satellitenassemblys bei Bedarf mit der API für die ClickOnce-Bereitstellung
 Mit Windows Forms-Anwendungen können mehrere Kulturen mithilfe von Satellitenassemblys konfiguriert werden. Eine *Satellitenassembly* ist eine Assembly, die Anwendungsressourcen für eine andere Kultur als die Standardkultur der Anwendung enthält.
@@ -54,7 +54,7 @@ Mit Windows Forms-Anwendungen können mehrere Kulturen mithilfe von Satellitenas
 
 4. Klicken Sie auf die Registerkarte **Dateien** .
 
-5. Klicken Sie auf die Schaltfläche mit den **Auslassungszeichen** (**...**), und wählen Sie das Verzeichnis aus, das alle Assemblys und Dateien der Anwendung enthält, einschließlich der Satellitenassemblys, die Sie mit *Resgen.exe* generiert haben. (Der Name einer Satellitenassembly besitzt folgendes Format: *\<ISO-Code>\Anwendungsname.resources.dll*. Dabei entspricht \<ISO-Code> einer Sprachen-ID im Format RFC 1766.)
+5. Klicken Sie auf die Schaltfläche mit den **Auslassungszeichen** ( **...** ), und wählen Sie das Verzeichnis aus, das alle Assemblys und Dateien der Anwendung enthält, einschließlich der Satellitenassemblys, die Sie mit *Resgen.exe* generiert haben. (Der Name einer Satellitenassembly besitzt folgendes Format: *\<ISO-Code>\Anwendungsname.resources.dll*. Dabei entspricht \<ISO-Code> einer Sprachen-ID im Format RFC 1766.)
 
 6. Klicken Sie auf **Auffüllen** , um die Dateien zu Ihrer Bereitstellung hinzuzufügen.
 

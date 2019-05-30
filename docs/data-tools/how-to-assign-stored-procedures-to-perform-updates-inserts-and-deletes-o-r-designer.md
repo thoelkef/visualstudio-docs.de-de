@@ -1,5 +1,5 @@
 ---
-title: Verwenden Sie gespeicherte Prozeduren zum Ausführen von Update-, insert und delete in Linq to SQL-O/R-Designer
+title: Verwenden von gespeicherten Prozeduren in LINQ to SQL zum Aktualisieren von Daten (O/R Designer)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: da666f237824ccae349a023611f7e7b78fdaf684
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 58dfb1016097429eeab10c3b50262adc7015e818
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402831"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260792"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Vorgehensweise: Zuweisen von gespeicherten Prozeduren zum Durchführen von Aktionen zum Aktualisieren, Einfügen und Löschen (O/R-Designer)
 
@@ -61,7 +61,7 @@ Standardmäßig wird die Logik, mit eine Datenbank (einfügungen, Updates und l�
     > [!NOTE]
     > Sie können das Verhalten für jede Kombination aus Klasse und Verhalten zu konfigurieren, solange Sie klicken Sie auf Weiter **übernehmen** nach jeder Änderung. Wenn Sie die Klasse oder das Verhalten ändern, bevor Sie auf **übernehmen**, ein Warndialogfeld angezeigt wird, und bietet Ihnen die Möglichkeit, die Änderungen zu übernehmen.
 
-Um zur Verwendung der Standardlaufzeitlogik für Updates zurückzukehren, klicken Sie im Fenster **Eigenschaften** auf die Auslassungszeichen neben dem **Einfüge-**, **Update-** oder **Löschbefehl**, und wählen Sie dann im Dialogfeld **Verhalten konfigurieren** die Option **Laufzeit verwenden** aus.
+Um zur Verwendung der Standardlaufzeitlogik für Updates zurückzukehren, klicken Sie im Fenster **Eigenschaften** auf die Auslassungszeichen neben dem **Einfüge-** , **Update-** oder **Löschbefehl**, und wählen Sie dann im Dialogfeld **Verhalten konfigurieren** die Option **Laufzeit verwenden** aus.
 
 ## <a name="see-also"></a>Siehe auch
 

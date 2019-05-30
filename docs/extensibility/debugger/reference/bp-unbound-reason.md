@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_UNBOUND_REASON enumeration
 ms.assetid: 939b6f9c-113b-471d-9f30-b03871af6285
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65393f6e162cb15ded7a0e598e360c7ce90bb3cd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9de6812f3a61feca8ca8e7153fb281369c3312bd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717662"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350557"
 ---
 # <a name="bpunboundreason"></a>BP_UNBOUND_REASON
 Gibt den Grund an, die, den ein Haltepunkt aufgehoben wurde.
@@ -43,14 +46,18 @@ public enum enum_BP_UNBOUND_REASON {
 };
 ```
 
-## <a name="members"></a>Member
-BPUR_UNKNOWN die Ursache ist unbekannt.
+## <a name="fields"></a>Felder
+`BPUR_UNKNOWN`\
+Der Grund dafür ist unbekannt.
 
-BPUR_CODE_UNLOADED den Code mit dem Haltepunkt wurde entladen.
+`BPUR_CODE_UNLOADED`\
+Der Code mit dem Haltepunkt wurde entladen.
 
-BPUR_BREAKPOINT_REBIND der Haltepunkt wurde an einen anderen Speicherort erneut gebunden wurde. Dies kann auftreten, die nach dem Bearbeiten und Vorgänge fortgesetzt, wenn der Haltepunkt verschoben wird oder wenn der Breakpoint in einer Datei mit einem Pfad gebunden ist, die nicht mehr gültig ist.
+`BPUR_BREAKPOINT_REBIND`\
+Der Haltepunkt wurde an einen anderen Speicherort erneut gebunden wurde. Dies kann auftreten, die nach dem Bearbeiten und Vorgänge fortgesetzt, wenn der Haltepunkt verschoben wird oder wenn der Breakpoint in einer Datei mit einem Pfad gebunden ist, die nicht mehr gültig ist.
 
-BPUR_ BREAKPOINT_ERROR der Haltepunkt wird bestimmt, um die Fehler werden, nachdem er gebunden ist. Dies geschieht mit verwalteten Haltepunkte, deren Bedingungen nicht mehr gültig sind.
+`BPUR_ BREAKPOINT_ERROR`\
+Der Haltepunkt wird bestimmt, um die Fehler werden, nachdem er gebunden ist. Dies geschieht mit verwalteten Haltepunkte, deren Bedingungen nicht mehr gültig sind.
 
 ## <a name="remarks"></a>Hinweise
 Zurückgegeben von der [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) Methode.

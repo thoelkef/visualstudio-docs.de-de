@@ -5,24 +5,24 @@ ms.topic: conceptual
 helpviewer_keywords:
 - NotifyDebuggerOfWaitCompletion method, Task class [.NET Framework debug engines]
 ms.assetid: 841c5908-4f3f-400b-a7b0-96a95f362817
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28811ba402803d1ddb9a6dd08a18d32db6257386
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9a3280a24ad7f9d4045c9a1bff6ca2b44c724325
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62889412"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350641"
 ---
 # <a name="notifydebuggerofwaitcompletion-method"></a>NotifyDebuggerOfWaitCompletion-Methode
 Platzhalter-Methode, die als Ziel der Haltepunkt vom Debugger verwendet. Diese Methode darf nicht inline oder optimiert sein.
 
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Assembly:** "mscorlib" (in *"mscorlib.dll"*)
+ **Assembly:** "mscorlib" (in *"mscorlib.dll"* )
 
 ## <a name="syntax"></a>Syntax
 
