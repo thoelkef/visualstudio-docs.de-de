@@ -1,5 +1,5 @@
 ---
-title: Leistungstools für Windows 8- und Windows Server 2012-Anwendungen | Microsoft-Dokumentation
+title: Leistungstools für Windows 8- und Windows Server 2012-Apps
 ms.date: 06/19/2017
 ms.topic: conceptual
 author: mikejo5000
@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8258c259b7f065e28ba7a6e199ddddb432dfb4b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 69b817af15b782ebd1e281d51855d62b11e8f470
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798203"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262956"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Leistungstools für Windows 8- und Windows Server 2012-Anwendungen
 
@@ -109,7 +109,7 @@ Sie müssen die Ebeneninteraktions-Datensammlungsoption einer laufenden Profiler
 
 **Sammeln von TIP-Daten auf einem Remotecomputer**
 
-Um Ebeneninteraktionsdaten auf einem Remotecomputer zu sammeln, müssen Sie die Datei **vs\_profiler\_**_\<Plattform>_**\_**_\<Sprache>_**.exe** aus dem Ordner *%VSInstallDir%\Team Tools\Performance Tools\Setups* eines Visual Studio-Computers auf den Remotecomputer kopieren und dort installieren. Sie können nicht die Profilerstellungstools im Downloadpaket [Remotedebuggen](../debugger/remote-debugging.md) verwenden.
+Um Ebeneninteraktionsdaten auf einem Remotecomputer zu sammeln, müssen Sie die Datei **vs\_profiler\_** _\<Plattform>_ **\_** _\<Sprache>_ **.exe** aus dem Ordner *%VSInstallDir%\Team Tools\Performance Tools\Setups* eines Visual Studio-Computers auf den Remotecomputer kopieren und dort installieren. Sie können nicht die Profilerstellungstools im Downloadpaket [Remotedebuggen](../debugger/remote-debugging.md) verwenden.
 
 Sie können [VSPerfCmd](../profiling/vsperfcmd.md) oder [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) verwenden, um die Profilerstellungsdaten zu erfassen.
 

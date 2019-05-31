@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4385ad73b29f1266bb368a781da11279f887942b
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 68840957a0c152add06804eac58f3d24afa1e846
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65847361"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261964"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>.NET-Namenskonventionen für EditorConfig
 
@@ -25,7 +25,7 @@ Namenskonventionen sollten in der EditorConfig-Datei von der spezifischsten zur 
 
 Bei jeder Namenskonvention müssen Sie die Symbole, für die sie gilt, einen Benennungsstil und einen Schweregrad zum Erzwingen der Konvention mithilfe der nachstehend beschriebenen Eigenschaften angeben. Die Reihenfolge der Eigenschaften ist ohne Bedeutung.
 
-Wählen Sie zunächst einen Titel für Ihre Namensregel, den Sie in jeder der Eigenschaften verwenden werden, die zur vollständigen Beschreibung der Regel erforderlich sind. Beispielsweise ist `public_members_must_be_capitalized` ein guter, beschreibender Name für eine Benennungsregel. In den folgenden Abschnitten beziehen wir uns auf den von Ihnen gewählten Titel als **<namingRuleTitle\>**.
+Wählen Sie zunächst einen Titel für Ihre Namensregel, den Sie in jeder der Eigenschaften verwenden werden, die zur vollständigen Beschreibung der Regel erforderlich sind. Beispielsweise ist `public_members_must_be_capitalized` ein guter, beschreibender Name für eine Benennungsregel. In den folgenden Abschnitten beziehen wir uns auf den von Ihnen gewählten Titel als **<namingRuleTitle\>** .
 
 ## <a name="symbols"></a>Symbole
 
@@ -209,6 +209,6 @@ Wenn Sie Ihre Codedatei schließen und wieder öffnen, sehen Sie statt des Vorsc
 
 ## <a name="see-also"></a>Siehe auch
 
+- [Roslyn-Namenskonventionen](https://github.com/dotnet/roslyn/blob/master/.editorconfig#L63)
 - [.NET-Sprach- und Formatierungskonventionen](../ide/editorconfig-code-style-settings-reference.md)
 - [Erstellen portierbarer benutzerdefinierter Editor-Optionen](../ide/create-portable-custom-editor-options.md)
-- [.editorconfig-Datei der .NET Compiler Platform](https://github.com/dotnet/roslyn/blob/master/.editorconfig)
