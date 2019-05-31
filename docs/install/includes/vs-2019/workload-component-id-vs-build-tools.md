@@ -5,16 +5,16 @@ description: Verwenden von Arbeitsauslastungs- und Komponenten-IDs in Visual Stu
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 04/02/2019
+ms.date: 05/21/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 333ecaa39fb0f3ea736b2b2a3efc6980b1ff8d87
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 7f6586ec44eae10d145271c5bb6f3b962ebe4e83
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65848951"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037109"
 ---
 ## <a name="azure-development-build-tools"></a>Buildtools zur Azure-Entwicklung
 
@@ -28,13 +28,13 @@ Komponenten-ID | name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
 Microsoft.Net.Component.4.7.2.SDK | .NET Framework 4.7.2 SDK | 16.0.28517.75 | Erforderlich
 Microsoft.Net.Component.4.7.2.TargetingPack | Paket zur Festlegung von Zielversionen von .NET Framework 4.7.2 | 16.0.28517.75 | Erforderlich
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2-Entwicklungstools | 16.0.28516.191 | Erforderlich
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2-Entwicklungstools | 16.1.28811.260 | Erforderlich
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure-Dokumenterstellungstools | 16.0.28625.61 | Erforderlich
 Microsoft.VisualStudio.Component.Azure.ClientLibs | Azure-Bibliotheken für .NET | 16.0.28315.86 | Erforderlich
 Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools | Azure Cloud Services-Buildtools | 16.0.28625.61 | Erforderlich
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | Containerentwicklungstools – Buildtools | 16.0.28625.61 | Erforderlich
-Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet-Ziele und Buildtasks | 16.0.28625.61 | Erforderlich
-Microsoft.VisualStudio.Component.TypeScript.3.3 | TypeScript 3.3 SDK | 16.0.28625.61 | Erforderlich
+Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet-Ziele und Buildtasks | 16.1.28829.92 | Erforderlich
+Microsoft.VisualStudio.Component.TypeScript.3.4 | TypeScript 3.4 SDK | 16.0.28829.92 | Erforderlich
 Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Buildtools für Windows Communication Foundation | 16.0.28516.191 | Erforderlich
 Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Development Build | 16.0.28516.191 | Erforderlich
 Microsoft.Net.Component.4.5.1.TargetingPack | Paket zur Festlegung von Zielversionen von .NET Framework 4.5.1 | 16.0.28517.75 | Empfohlen
@@ -77,7 +77,7 @@ Microsoft.Net.Component.4.6.TargetingPack | Paket zur Festlegung von Zielversion
 Microsoft.Net.Component.4.TargetingPack | Paket zur Festlegung von Zielversionen von .NET Framework 4 | 16.0.28517.75 | Empfohlen
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | Entwicklungstools für .NET Framework 4 – 4.6 | 16.0.28516.191 | Empfohlen
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C#- und Visual Basic-Roslyn-Compiler | 16.0.28714.129 | Empfohlen
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# und Visual Basic | 16.0.28625.61 | Empfohlen
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# und Visual Basic | 16.1.28829.92 | Empfohlen
 Microsoft.VisualStudio.Component.SQL.SSDTBuildSku | SQL Server Data Tools: Buildtools | 16.0.28315.86 | Empfohlen
 
 ## <a name="net-desktop-build-tools"></a>.NET-Desktop-Buildtools
@@ -93,7 +93,7 @@ Komponenten-ID | name | Version | Abhängigkeitstyp
 Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | Erforderlich
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 16.0.28517.75 | Erforderlich
 Microsoft.Net.Component.4.6.1.TargetingPack | Paket zur Festlegung von Zielversionen von .NET Framework 4.6.1 | 16.0.28517.75 | Erforderlich
-Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet-Ziele und Buildtasks | 16.0.28625.61 | Erforderlich
+Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet-Ziele und Buildtasks | 16.1.28829.92 | Erforderlich
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C#- und Visual Basic-Roslyn-Compiler | 16.0.28714.129 | Erforderlich
 Microsoft.Component.ClickOnce.MSBuild | ClickOnce-Buildtools | 16.0.28625.61 | Empfohlen
 Microsoft.Net.Component.4.5.1.TargetingPack | Paket zur Festlegung von Zielversionen von .NET Framework 4.5.1 | 16.0.28517.75 | Empfohlen
@@ -145,7 +145,7 @@ Komponenten-ID | name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
 Microsoft.Net.Core.Component.SDK.2.2 | .NET Core 2.2-Entwicklungstools | 16.0.28621.142 | Erforderlich
 Microsoft.NetCore.BuildTools.ComponentGroup | .NET Core-Buildtools | 16.0.28516.191 | Erforderlich
-Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet-Ziele und Buildtasks | 16.0.28625.61 | Erforderlich
+Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet-Ziele und Buildtasks | 16.1.28829.92 | Erforderlich
 
 ## <a name="nodejs-build-tools"></a>Node.js-Buildtools
 
@@ -158,7 +158,7 @@ Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet-Ziele und Buildtasks |
 Komponenten-ID | name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.Node.Build | Node.js MSBuild-Unterstützung | 16.0.28517.75 | Erforderlich
-Microsoft.VisualStudio.Component.TypeScript.3.3 | TypeScript 3.3 SDK | 16.0.28625.61 | Erforderlich
+Microsoft.VisualStudio.Component.TypeScript.3.4 | TypeScript 3.4 SDK | 16.0.28829.92 | Erforderlich
 
 ## <a name="officesharepoint-build-tools"></a>Office-/SharePoint-Buildtools
 
@@ -178,9 +178,9 @@ Microsoft.Net.Component.4.6.1.TargetingPack | Paket zur Festlegung von Zielversi
 Microsoft.Net.Component.4.7.2.SDK | .NET Framework 4.7.2 SDK | 16.0.28517.75 | Erforderlich
 Microsoft.Net.Component.4.7.2.TargetingPack | Paket zur Festlegung von Zielversionen von .NET Framework 4.7.2 | 16.0.28517.75 | Erforderlich
 Microsoft.Net.Component.4.TargetingPack | Paket zur Festlegung von Zielversionen von .NET Framework 4 | 16.0.28517.75 | Erforderlich
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2-Entwicklungstools | 16.0.28516.191 | Erforderlich
-Microsoft.VisualStudio.Component.NuGet | NuGet-Paket-Manager | 16.0.28625.61 | Erforderlich
-Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet-Ziele und Buildtasks | 16.0.28625.61 | Erforderlich
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2-Entwicklungstools | 16.1.28811.260 | Erforderlich
+Microsoft.VisualStudio.Component.NuGet | NuGet-Paket-Manager | 16.1.28829.92 | Erforderlich
+Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet-Ziele und Buildtasks | 16.1.28829.92 | Erforderlich
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C#- und Visual Basic-Roslyn-Compiler | 16.0.28714.129 | Erforderlich
 Microsoft.VisualStudio.Component.Sharepoint.BuildTools | Buildtools zur Office-/SharePoint-Entwicklung | 16.0.28625.61 | Erforderlich
 Microsoft.VisualStudio.Component.Workflow.BuildTools | Buildtools für Windows Workflow Foundation | 16.0.28315.86 | Erforderlich
@@ -212,17 +212,17 @@ Komponenten-ID | name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | Erforderlich
 Microsoft.Component.NetFX.Native | .NET systemeigen | 16.0.28315.86 | Erforderlich
-Microsoft.Component.VC.Runtime.OSSupport | C++-Runtime für die Universelle Windows-Plattform für v142-Buildtools | 16.0.28625.61 | Erforderlich
 Microsoft.Net.Component.4.7.1.SDK | .NET Framework 4.7.1 SDK | 16.0.28517.75 | Erforderlich
 Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1-Entwicklungstools | 16.0.28621.142 | Erforderlich
-Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet-Ziele und Buildtasks | 16.0.28625.61 | Erforderlich
+Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet-Ziele und Buildtasks | 16.1.28829.92 | Erforderlich
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C#- und Visual Basic-Roslyn-Compiler | 16.0.28714.129 | Erforderlich
-Microsoft.VisualStudio.Component.VC.Tools.ARM | MSVC v142 – VS 2019: C++-ARM-Buildtools (v14.20) | 16.0.28625.61 | Erforderlich
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – VS 2019: C++-x64/x86-Buildtools (v14.20) | 16.0.28625.61 | Erforderlich
-Microsoft.VisualStudio.ComponentGroup.UWP.BuildTools | Buildvoraussetzungen für die universelle Windows-Plattform | 16.0.28621.142 | Erforderlich
+Microsoft.VisualStudio.Component.VC.Tools.ARM | MSVC v142 - VS 2019: C++-ARM-Buildtools (v14.21) | 16.1.28829.92 | Erforderlich
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 - VS 2019 C++ x64/x86-Buildtools (v14.21) | 16.1.28829.92 | Erforderlich
+Microsoft.VisualStudio.ComponentGroup.UWP.BuildTools | Buildvoraussetzungen für die universelle Windows-Plattform | 16.1.28811.260 | Erforderlich
 Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 16.0.28517.75 | Empfohlen
 Microsoft.VisualStudio.Component.Windows10SDK.16299 | Windows 10 SDK (10.0.16299.0) | 16.0.28517.75 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 16.0.28517.75 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.18362 | Windows 10 SDK (10.0.18362.0) | 16.1.28829.92 | Optional
 
 ## <a name="c-build-tools"></a>C++-Buildtools
 
@@ -239,7 +239,7 @@ Microsoft.VisualStudio.Component.VC.Redist.14.Latest | C++ 2019 Redistributable-
 Microsoft.VisualStudio.Component.Windows10SDK | Windows Universal C Runtime | 16.0.28315.86 | Erforderlich
 Microsoft.VisualStudio.Component.TestTools.BuildTools | Kernfeatures von Testtools – Buildtools | 16.0.28315.86 | Empfohlen
 Microsoft.VisualStudio.Component.VC.CMake.Project | C++-CMake-Tools für Windows | 16.0.28625.61 | Empfohlen
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – VS 2019: C++-x64/x86-Buildtools (v14.20) | 16.0.28625.61 | Empfohlen
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 - VS 2019 C++ x64/x86-Buildtools (v14.21) | 16.1.28829.92 | Empfohlen
 Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 16.0.28517.75 | Empfohlen
 Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | Optional
 Microsoft.Component.VC.Runtime.UCRTSDK | Windows Universal CRT SDK | 16.0.28625.61 | Optional
@@ -250,13 +250,14 @@ Microsoft.VisualStudio.Component.TextTemplating | Textvorlagentransformation | 1
 Microsoft.VisualStudio.Component.VC.140 | MSVC v140 – VS 2015: C++-Buildtools (v14.00) | 16.0.28625.61 | Optional
 Microsoft.VisualStudio.Component.VC.ATL | C++-ATL für v142-Buildtools (x86 & x64) | 16.0.28625.61 | Optional
 Microsoft.VisualStudio.Component.VC.ATLMFC | C++ MFC für v142-Buildtools (x86 & x64) | 16.0.28625.61 | Optional
-Microsoft.VisualStudio.Component.VC.CLI.Support | C++-/CLI-Unterstützung für v142-Buildtools | 16.0.28625.61 | Optional
+Microsoft.VisualStudio.Component.VC.CLI.Support | C++-/CLI-Unterstützung für v142-Buildtools (14.21) | 16.1.28829.92 | Optional
 Microsoft.VisualStudio.Component.VC.CoreIde | C++-Kernfeatures | 16.0.28625.61 | Optional
+Microsoft.VisualStudio.Component.VC.Llvm.Clang | Windows için clang derleyicisi | 16.1.28916.169 | Optional
 Microsoft.VisualStudio.Component.VC.Modules.x86.x64 | C++-Module für v142-Buildtools (x64/x86 – experimentell) | 16.0.28625.61 | Optional
-Microsoft.VisualStudio.Component.VC.v141.x86.x64 | MSVC v141 – VS 2017: C++-x64/x86-Buildtools (v14.16) | 16.0.28625.61 | Optional
+Microsoft.VisualStudio.Component.VC.v141.x86.x64 | MSVC v141 - VS 2017 C++ x64/x86-Buildtools (v14.16) | 16.1.28829.92 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299 | Windows 10 SDK (10.0.16299.0) | 16.0.28517.75 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 16.0.28517.75 | Optional
-Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core | Wichtige Visual C++-Desktopfeatures | 16.0.28315.86 | Optional
+Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core | Wichtige C++-Desktopfeatures | 16.1.28916.169 | Optional
 
 ## <a name="visual-studio-extension-development"></a>Entwicklung von Visual Studio-Erweiterungen
 
@@ -272,16 +273,16 @@ Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | Erforderlich
 Microsoft.Net.Component.4.6.TargetingPack | Paket zur Festlegung von Zielversionen von .NET Framework 4.6 | 16.0.28517.75 | Erforderlich
 Microsoft.Net.Component.4.7.2.SDK | .NET Framework 4.7.2 SDK | 16.0.28517.75 | Erforderlich
 Microsoft.Net.Component.4.7.2.TargetingPack | Paket zur Festlegung von Zielversionen von .NET Framework 4.7.2 | 16.0.28517.75 | Erforderlich
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2-Entwicklungstools | 16.0.28516.191 | Erforderlich
-Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet-Ziele und Buildtasks | 16.0.28625.61 | Erforderlich
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2-Entwicklungstools | 16.1.28811.260 | Erforderlich
+Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet-Ziele und Buildtasks | 16.1.28829.92 | Erforderlich
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C#- und Visual Basic-Roslyn-Compiler | 16.0.28714.129 | Erforderlich
 Microsoft.VisualStudio.Component.VSSDKBuildTools | Visual Studio SDK Build Tools Core | 16.0.28315.86 | Erforderlich
 Microsoft.VisualStudio.ComponentGroup.VisualStudioExtensionBuildTools.Prerequisites | Erforderliche Komponenten für die Visual Studio-Extensionentwicklung | 16.0.28528.71 | Erforderlich
 Component.Dotfuscator | PreEmptive Protection – Dotfuscator | 16.0.28528.71 | Optional
-Microsoft.Component.VC.Runtime.OSSupport | C++-Runtime für die Universelle Windows-Plattform für v142-Buildtools | 16.0.28625.61 | Optional
+Microsoft.Component.VC.Runtime.OSSupport | C++-Runtime für die Universelle Windows-Plattform für v142-Buildtools | 16.1.28811.260 | Optional
 Microsoft.VisualStudio.Component.VC.ATL | C++-ATL für v142-Buildtools (x86 & x64) | 16.0.28625.61 | Optional
 Microsoft.VisualStudio.Component.VC.ATLMFC | C++ MFC für v142-Buildtools (x86 & x64) | 16.0.28625.61 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – VS 2019: C++-x64/x86-Buildtools (v14.20) | 16.0.28625.61 | Optional
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 - VS 2019 C++ x64/x86-Buildtools (v14.21) | 16.1.28829.92 | Optional
 
 ## <a name="web-development-build-tools"></a>Development Build
 
@@ -295,9 +296,9 @@ Komponenten-ID | name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
 Microsoft.Net.Component.4.7.2.SDK | .NET Framework 4.7.2 SDK | 16.0.28517.75 | Erforderlich
 Microsoft.Net.Component.4.7.2.TargetingPack | Paket zur Festlegung von Zielversionen von .NET Framework 4.7.2 | 16.0.28517.75 | Erforderlich
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2-Entwicklungstools | 16.0.28516.191 | Erforderlich
-Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet-Ziele und Buildtasks | 16.0.28625.61 | Erforderlich
-Microsoft.VisualStudio.Component.TypeScript.3.3 | TypeScript 3.3 SDK | 16.0.28625.61 | Erforderlich
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2-Entwicklungstools | 16.1.28811.260 | Erforderlich
+Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet-Ziele und Buildtasks | 16.1.28829.92 | Erforderlich
+Microsoft.VisualStudio.Component.TypeScript.3.4 | TypeScript 3.4 SDK | 16.0.28829.92 | Erforderlich
 Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Development Build | 16.0.28516.191 | Erforderlich
 Microsoft.Component.ClickOnce.MSBuild | ClickOnce-Buildtools | 16.0.28625.61 | Empfohlen
 Microsoft.Net.Component.4.5.1.TargetingPack | Paket zur Festlegung von Zielversionen von .NET Framework 4.5.1 | 16.0.28517.75 | Empfohlen
@@ -340,10 +341,10 @@ Komponenten-ID | name | Version | Abhängigkeitstyp
 Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | Erforderlich
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 16.0.28517.75 | Erforderlich
 Microsoft.Net.Component.4.6.1.TargetingPack | Paket zur Festlegung von Zielversionen von .NET Framework 4.6.1 | 16.0.28517.75 | Erforderlich
-Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet-Ziele und Buildtasks | 16.0.28625.61 | Erforderlich
+Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet-Ziele und Buildtasks | 16.1.28829.92 | Erforderlich
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C#- und Visual Basic-Roslyn-Compiler | 16.0.28714.129 | Erforderlich
 Component.Android.SDK27 | Android SDK-Setup (API-Ebene 27) | 16.0.28517.75 | Optional
-Component.OpenJDK | OpenJDK (Microsoft-Distribution) | 16.0.28625.61 | Optional
+Component.OpenJDK | OpenJDK (Microsoft-Distribution) | 16.1.28811.260 | Optional
 
 ## <a name="unaffiliated-components"></a>Nicht zugeordnete Komponenten
 
@@ -352,6 +353,25 @@ Dies sind Komponenten, die in keiner Arbeitsauslastung enthalten sind, jedoch al
 Komponenten-ID | name | Version
 --- | --- | ---
 Microsoft.Net.Core.Component.SDK.1x | .NET Core 1.0 – 1.1-Entwicklungstools | 16.0.28621.142
+Microsoft.VisualStudio.Component.VC.14.20.ARM | MSVC v142 - VS 2019 C++ ARM-Buildtools (v14.20) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.ARM.Spectre | MSVC v142 - VS 2019: C++-ARM-Bibliotheken mit Spectre-Entschärfungen (v14.20) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.ARM64 | MSVC v142 - VS 2019 C++ ARM64-Buildtools (v14.20) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.ARM64.Spectre | MSVC v142 - VS 2019: C++-ARM64-Bibliotheken mit Spectre-Entschärfungen (v14.20) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.ATL | C++ v14.20 ATL für v142-Buildtools (x86 & x64) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.ATL.ARM | C++ v14.20 ATL für v142-Buildtools (ARM) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.ATL.ARM.Spectre | C++ v14.20 ATL für v142-Buildtools mit Spectre-Entschärfungen (ARM) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.ATL.ARM64 | C++ v14.20 ATL für v142-Buildtools (ARM64) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.ATL.ARM64.Spectre | C++ v14.20 ATL für v142-Buildtools mit Spectre-Entschärfungen (ARM64) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.ATL.Spectre | C++ v14.20 ATL für v142-Buildtools mit Spectre-Entschärfungen (x86 & x64) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.CLI.Support | C++-/CLI-Unterstützung für v142-Buildtools (14.20) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.MFC | C++ v14.20 MFC für v142-Buildtools (x86 & x64) | 16.1.28916.169
+Microsoft.VisualStudio.Component.VC.14.20.MFC.ARM | C++ v14.20 MFC für v142-Buildtools (ARM) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.MFC.ARM.Spectre | C++ v14.20 MFC für v142-Buildtools mit Spectre-Entschärfungen (ARM) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.MFC.ARM64 | C++ v14.20 MFC für v142-Buildtools (ARM64) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.MFC.ARM64.Spectre | C++ v14.20 MFC für v142-Buildtools mit Spectre-Entschärfungen (ARM64) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.MFC.Spectre | C++ v14.20 MFC für v142-Buildtools mit Spectre-Entschärfungen (x86 & x64) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.x86.x64 | MSVC v142 - VS 2019 C++ x64/x86-Buildtools (v14.20) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.20.x86.x64.Spectre | MSVC v142 - VS 2019 C++ x64/x86-Bibliotheken mit Spectre-Entschärfungen (v14.20) | 16.1.28829.92
 Microsoft.VisualStudio.Component.VC.ATL.ARM | C++-ATL für v142-Buildtools (ARM) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.ATL.ARM.Spectre | C++-ATL für v142-Buildtools mit Spectre-Entschärfungen (ARM) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.ATL.ARM64 | C++-ATL für v142-Buildtools (ARM64) | 16.0.28625.61
@@ -363,26 +383,26 @@ Microsoft.VisualStudio.Component.VC.MFC.ARM.Spectre | C++ MFC für v142-Buildtoo
 Microsoft.VisualStudio.Component.VC.MFC.ARM64 | C++ MFC für v142-Buildtools (ARM64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.MFC.ARM64.Spectre | C++ MFC für v142-Buildtools mit Spectre-Entschärfungen (ARM64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.Redist.MSM | C++ 2019 Redistributable-MSMs | 16.0.28625.61
-Microsoft.VisualStudio.Component.VC.Runtimes.ARM.Spectre | MSVC v142 – VS 2019: C++-ARM-Bibliotheken mit Spectre-Entschärfungen (v14.20) | 16.0.28625.61
-Microsoft.VisualStudio.Component.VC.Runtimes.ARM64.Spectre | MSVC v142 – VS 2019: C++-ARM64-Bibliotheken mit Spectre-Entschärfungen (v14.20) | 16.0.28625.61
-Microsoft.VisualStudio.Component.VC.Runtimes.x86.x64.Spectre | MSVC v142 – VS 2019: C++-x64/x86-Bibliotheken mit Spectre-Entschärfungen (v14.20)  | 16.0.28625.61
-Microsoft.VisualStudio.Component.VC.Tools.ARM64 | MSVC v142 – VS 2019: C++-ARM64-Buildtools (v14.20) | 16.0.28625.61
-Microsoft.VisualStudio.Component.VC.v141.ARM | MSVC v141 – VS 2017: C++-ARM-Buildtools (v14.16) | 16.0.28625.61
-Microsoft.VisualStudio.Component.VC.v141.ARM.Spectre | MSVC v141 – VS 2017: C++-ARM-Bibliotheken mit Spectre-Entschärfungen (v14.16) | 16.0.28625.61
-Microsoft.VisualStudio.Component.VC.v141.ARM64 | MSVC v141 – VS 2017: C++-ARM64-Buildtools (v14.16) | 16.0.28625.61
-Microsoft.VisualStudio.Component.VC.v141.ARM64.Spectre | MSVC v141 – VS 2017: C++-ARM64-Bibliotheken mit Spectre-Entschärfungen (v14.16) | 16.0.28625.61
+Microsoft.VisualStudio.Component.VC.Runtimes.ARM.Spectre | MSVC v142 - VS 2019: C++-ARM-Bibliotheken mit Spectre-Entschärfungen (v14.21) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.Runtimes.ARM64.Spectre | MSVC v142 - VS 2019: C++-ARM64-Bibliotheken mit Spectre-Entschärfungen (v14.21) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.Runtimes.x86.x64.Spectre | MSVC v142 - VS 2019: C++-x64/x86-Bibliotheken mit Spectre-Entschärfungen (v14.21)  | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.Tools.ARM64 | MSVC v142 - VS 2019 C++ ARM64-Buildtools (v14.21) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.v141.ARM | MSVC v141 - VS 2017 C++ ARM-Buildtools (v14.16) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.v141.ARM.Spectre | MSVC v141 - VS 2017: C++-ARM-Bibliotheken mit Spectre-Entschärfungen (v14.16) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.v141.ARM64 | MSVC v141 - VS 2017 C++ ARM64-Buildtools (v14.16) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.v141.ARM64.Spectre | MSVC v141 - VS 2017: C++-ARM64-Bibliotheken mit Spectre-Entschärfungen (v14.16) | 16.1.28829.92
 Microsoft.VisualStudio.Component.VC.v141.ATL | C++-ATL für v141-Buildtools (x86 & x64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.ATL.ARM | C++-ATL für v141-Buildtools (ARM) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.ATL.ARM.Spectre | C++-ATL für v141-Buildtools mit Spectre-Entschärfungen (ARM) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.ATL.ARM64 | C++-ATL für v141-Buildtools (ARM64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.ATL.ARM64.Spectre | C++-ATL für v141-Buildtools mit Spectre-Entschärfungen (ARM64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.ATL.Spectre | C++-ATL für v141-Buildtools mit Spectre-Entschärfungen (x86 & x64) | 16.0.28625.61
-Microsoft.VisualStudio.Component.VC.v141.CLI.Support | C++-/CLI-Unterstützung für v141-Buildtools | 16.0.28625.61
+Microsoft.VisualStudio.Component.VC.v141.CLI.Support | C++-/CLI-Unterstützung für v141-Buildtools (14.16) | 16.1.28829.92
 Microsoft.VisualStudio.Component.VC.v141.MFC | C++ MFC für v141-Buildtools (x86 & x64) | 16.0.28625.61
-Microsoft.VisualStudio.Component.VC.v141.MFC.ARM | C++ MFC für v141-Buildtools (ARM) | 16.0.28625.61
+Microsoft.VisualStudio.Component.VC.v141.MFC.ARM | C++ MFC für v141-Buildtools (ARM) | 16.1.28916.169
 Microsoft.VisualStudio.Component.VC.v141.MFC.ARM.Spectre | C++ MFC für v141-Buildtools mit Spectre-Entschärfungen (ARM) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.MFC.ARM64 | C++ MFC für v141-Buildtools (ARM64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.MFC.ARM64.Spectre | C++ MFC für v141-Buildtools mit Spectre-Entschärfungen (ARM64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.MFC.Spectre | C++ MFC für v141-Buildtools mit Spectre-Entschärfungen (x86 & x64) | 16.0.28625.61
-Microsoft.VisualStudio.Component.VC.v141.x86.x64.Spectre | MSVC v141 – VS 2017: C++-x64/x86-Bibliotheken mit Spectre-Entschärfungen (v14.16) | 16.0.28625.61
-Microsoft.VisualStudio.Component.WinXP | C++-Windows XP-Unterstützung für Tools in VS 2017 (v141) [veraltet] | 16.0.28625.61
+Microsoft.VisualStudio.Component.VC.v141.x86.x64.Spectre | MSVC v141 - VS 2017: C++-x64/x86-Bibliotheken mit Spectre-Entschärfungen (v14.16) | 16.1.28829.92
+Microsoft.VisualStudio.Component.WinXP | C++-Windows XP-Unterstützung für Tools in VS 2017 (v141) [veraltet] | 16.1.28811.260

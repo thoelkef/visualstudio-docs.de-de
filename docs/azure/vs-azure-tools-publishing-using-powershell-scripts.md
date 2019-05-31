@@ -1,5 +1,5 @@
 ---
-title: Veröffentlichen in Entwicklungs- und Testumgebungen mithilfe von Windows PowerShell-Skripts | Microsoft Docs
+title: PowerShell-Skripts zum Veröffentlichen in Entwicklungs- und Testumgebungen
 description: Erhalten Sie Informationen zum Veröffentlichen für Entwicklungs- und Testumgebungen mithilfe von Windows PowerShell-Skripts in Visual Studio.
 author: ghogen
 manager: jillfra
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 2198aac794362237e3b2b6321d9c9bda86108b79
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f598ddd3175353103d478dca9828536346e247cd
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427083"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177265"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Veröffentlichung in Entwicklungs- und Testumgebungen mithilfe von Windows PowerShell-Skripts
 
