@@ -127,7 +127,7 @@ ms.locfileid: "63438555"
 
     Datasets müssen öffentlich sein, bevor Sie das Zwischenspeichern aktiviert ist.
 
-3. Ändern der **CacheInDocument** Eigenschaft **"true"**.
+3. Ändern der **CacheInDocument** Eigenschaft **"true"** .
 
    Der nächste Schritt ist zum Hinzufügen von Text auf Schaltflächen, und fügen Sie im C#-Code, um die Ereignishandler einzubinden.
 
@@ -177,7 +177,7 @@ ms.locfileid: "63438555"
 
 5. Deaktivieren Sie die Verbindung mit der Datenbank. Trennen Sie das Netzwerkkabel von Ihrem Computer aus, wenn die Datenbank auf einem Server befindet, oder beenden Sie den SQL Server-Dienst aus, wenn die Datenbank auf dem Entwicklungscomputer gespeichert ist.
 
-6. Öffnen Sie Excel, und öffnen Sie **Meine Master-Detail.xlsx** aus der *\bin* Verzeichnis (*\My Master-Detail\bin* in Visual Basic oder *\My Master-Detail\bin\ Debuggen von* in c#).
+6. Öffnen Sie Excel, und öffnen Sie **Meine Master-Detail.xlsx** aus der *\bin* Verzeichnis ( *\My Master-Detail\bin* in Visual Basic oder *\My Master-Detail\bin\ Debuggen von* in c#).
 
 7. Scrollen Sie durch einige der Einträge zu erkennen, dass das Arbeitsblatt normal ausgeführt wird, die Verbindung getrennt.
 

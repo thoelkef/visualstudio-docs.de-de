@@ -156,7 +156,7 @@ ms.locfileid: "63436724"
 
 11. In **Projektmappen-Explorer**unter der **Verweise** Ordner für die **ProjectTemplateWizard** Projekts **EnvDTE**.
 
-12. In der **Eigenschaften** Fenster ändern Sie den Wert von der **Embed Interop Types** Eigenschaft **"false"**.
+12. In der **Eigenschaften** Fenster ändern Sie den Wert von der **Embed Interop Types** Eigenschaft **"false"** .
 
 13. Wenn Sie ein Visual Basic-Projekt entwickeln, können Sie den Namespace "ProjectTemplateWizard" in Ihr Projekt importieren, mit der **Projekt-Designer**.
 
@@ -368,7 +368,7 @@ ms.locfileid: "63436724"
 
 2. Auf der **Signierung** Registerkarte die **Assembly signieren** Kontrollkästchen.
 
-3. In der **Schlüsseldatei mit starkem Namen auswählen** wählen  **\<neu... >**.
+3. In der **Schlüsseldatei mit starkem Namen auswählen** wählen  **\<neu... >** .
 
 4. In der **Schlüssel für einen starken Namen erstellen** Dialogfeld Geben Sie einen Namen für die neue Datei mit dem Schlüssel löschen der **Schlüsseldatei mit Kennwort schützen** aus, und wählen Sie dann die **OK** Schaltfläche.
 
@@ -376,7 +376,7 @@ ms.locfileid: "63436724"
 
 #### <a name="to-get-the-public-key-token-for-the-wizard-assembly"></a>So rufen Sie das öffentliche Schlüsseltoken der Assistenten-Assembly ab
 
-1. Auf der **Menü "Start"**, wählen Sie **Programme**, wählen Sie **Microsoft Visual Studio**, wählen Sie **Visual Studio-Tools**, und wählen Sie dann auf  **Developer-Eingabeaufforderung**.
+1. Auf der **Menü "Start"** , wählen Sie **Programme**, wählen Sie **Microsoft Visual Studio**, wählen Sie **Visual Studio-Tools**, und wählen Sie dann auf  **Developer-Eingabeaufforderung**.
 
      Ein Visual Studio-Eingabeaufforderungsfenster wird geöffnet.
 
@@ -502,7 +502,7 @@ ms.locfileid: "63436724"
 
    - In der **Namen** geben **Eigene Ja/Nein-Spalte**, und wählen Sie dann die **Fertig stellen** Schaltfläche.
 
-     In **Projektmappen-Explorer**, ein neues Projekt angezeigt wird, und das ein Projektelement mit dem Namen **"Field1"**, Visual Studio geöffnet wird, des Projekts *"Elements.xml"* Datei im Editor.
+     In **Projektmappen-Explorer**, ein neues Projekt angezeigt wird, und das ein Projektelement mit dem Namen **"Field1"** , Visual Studio geöffnet wird, des Projekts *"Elements.xml"* Datei im Editor.
 
 8. Überprüfen Sie, ob *"Elements.xml"* enthält die Werte, die Sie im Assistenten angegeben.
 

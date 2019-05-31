@@ -448,7 +448,7 @@ End Select
 
 ### <a name="convert-to-interpolated-string"></a>Konvertieren in eine interpolierte Zeichenfolge
 
-[Interpolierte Zeichenfolgen](/dotnet/csharp/language-reference/keywords/interpolated-strings) sind eine einfache Möglichkeit, Zeichenfolgen mit eingebetteten Variablen auszudrücken, ähnlich wie mit der **[String.Format](/dotnet/api/system.string.format#overloads)**-Methode.  Diese schnelle Aktion erkennt Fälle, in denen Zeichenfolgen verkettet sind oder **String.Format** verwenden, und ändert die Verwendung in eine interpolierte Zeichenfolge.
+[Interpolierte Zeichenfolgen](/dotnet/csharp/language-reference/keywords/interpolated-strings) sind eine einfache Möglichkeit, Zeichenfolgen mit eingebetteten Variablen auszudrücken, ähnlich wie mit der **[String.Format](/dotnet/api/system.string.format#overloads)** -Methode.  Diese schnelle Aktion erkennt Fälle, in denen Zeichenfolgen verkettet sind oder **String.Format** verwenden, und ändert die Verwendung in eine interpolierte Zeichenfolge.
 
 ```csharp
 // Before

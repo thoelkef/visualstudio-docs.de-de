@@ -200,7 +200,7 @@ In diesem Thema wird erläutert, die grundlegenden Konzepte in definieren und ve
   
     2. Öffnen Sie das Fenster "Eigenschaften", und positionieren Sie es, damit Sie die DSL-Explorer und Eigenschaften zur gleichen Zeit finden.  
   
-    3. Erweitern Sie im DSL-Explorer **Editor**, **Toolboxregisterkarten**,  *\<Ihrer DSL >*, und klicken Sie dann **Tools**.  
+    3. Erweitern Sie im DSL-Explorer **Editor**, **Toolboxregisterkarten**,  *\<Ihrer DSL >* , und klicken Sie dann **Tools**.  
   
     4. Klicken Sie auf **ExampleElement**. Dies ist das Toolboxelement, das zum Erstellen von Elementen verwendet wird.  
   

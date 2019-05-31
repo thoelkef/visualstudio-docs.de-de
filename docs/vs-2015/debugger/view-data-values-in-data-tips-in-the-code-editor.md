@@ -107,7 +107,7 @@ DataTips stellen eine praktische Möglichkeit dar, um beim Debuggen Informatione
   
 - Klicken Sie auf das Symbol mit dem Vergrößerungsglas, um die Standardschnellansicht für den Datentyp auszuwählen.  
   
-     - oder -   
+     - oder -  
   
      Klicken Sie auf den Popup-Pfeil neben der Schnellansicht, und wählen Sie aus der Liste eine dem Datentyp entsprechende Schnellansicht aus.  
   

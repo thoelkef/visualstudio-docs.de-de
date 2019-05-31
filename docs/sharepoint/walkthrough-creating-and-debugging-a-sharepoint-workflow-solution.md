@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erstellen und Debuggen von SharePoint-Workflowlösung | Microsoft-Dokumentation'
+title: Erstellen und Debuggen von SharePoint-Workflow-Projektmappe
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad39c8b8bad373cd7892a1eeda89b149622913a7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 51682ba54d6a6ae0698ade6bb52d5972cd63111f
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430363"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401055"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Exemplarische Vorgehensweise: Erstellen und Debuggen einer SharePoint-Workflow-Lösung
   Diese exemplarische Vorgehensweise veranschaulicht, wie Sie eine grundlegenden sequenziellen Workflowvorlage erstellen. Der Workflow überprüft eine Eigenschaft eine Bibliothek freigegebener Dokumente, um festzustellen, ob ein Dokument überprüft wurde. Wenn das Dokument überprüft wurde, wird der Workflow abgeschlossen.
@@ -57,7 +57,7 @@ ms.locfileid: "63430363"
 
 3. Wählen Sie **Bibliothek** auf die **Bibliothekstools** zuerst das Menüband, und wählen Sie dann die **Spalte erstellen** Menüband auf die Schaltfläche zum Erstellen einer neuen Spalteninhalts.
 
-4. Den Namen der Spalte **Dokumentstatus**, legen Sie deren Typ auf **Auswahl (Menü zur Auswahl)**, geben Sie die folgenden drei Optionen aus, und wählen Sie dann die **OK** Schaltfläche:
+4. Den Namen der Spalte **Dokumentstatus**, legen Sie deren Typ auf **Auswahl (Menü zur Auswahl)** , geben Sie die folgenden drei Optionen aus, und wählen Sie dann die **OK** Schaltfläche:
 
     - **Überprüfung erforderlich**
 
@@ -200,7 +200,7 @@ ms.locfileid: "63430363"
     }
     ```
 
-3. Fügen Sie den folgenden Code der `onWorkflowActivated` und `onWorkflowItemChanged` Methoden zum Aufrufen der `checkStatus` Methode. Wenn der Workflow gestartet wird, wird die `onWorkflowActivated` Methodenaufrufe der `checkStatus` Methode, um zu bestimmen, ob das Dokument bereits überprüft wurde. Wenn es nicht überprüft wurde, wird der Workflow fortgesetzt. Wenn das Dokument gespeichert wird, die `onWorkflowItemChanged` Methodenaufrufe der `checkStatus` Methode erneut aus, um zu bestimmen, ob das Dokument überprüft wurde. Während der `workflowPending` Feld nastaven NA hodnotu **"true"**, der Workflow wird weiterhin ausgeführt.
+3. Fügen Sie den folgenden Code der `onWorkflowActivated` und `onWorkflowItemChanged` Methoden zum Aufrufen der `checkStatus` Methode. Wenn der Workflow gestartet wird, wird die `onWorkflowActivated` Methodenaufrufe der `checkStatus` Methode, um zu bestimmen, ob das Dokument bereits überprüft wurde. Wenn es nicht überprüft wurde, wird der Workflow fortgesetzt. Wenn das Dokument gespeichert wird, die `onWorkflowItemChanged` Methodenaufrufe der `checkStatus` Methode erneut aus, um zu bestimmen, ob das Dokument überprüft wurde. Während der `workflowPending` Feld nastaven NA hodnotu **"true"** , der Workflow wird weiterhin ausgeführt.
 
     ```vb
     Private Sub onWorkflowActivated(ByVal sender As System.Object, ByVal e As System.Workflow.Activities.ExternalDataEventArgs)
@@ -226,7 +226,7 @@ ms.locfileid: "63430363"
     }
     ```
 
-4. Fügen Sie den folgenden Code der `isWorkflowPending` Methode zum Überprüfen des Status von der `workflowPending` Eigenschaft. Jedes Mal, die das Dokument gespeichert, die **whileActivity1** Aktivität Ruft die `isWorkflowPending` Methode. Untersucht diese Methode die <xref:System.Workflow.Activities.ConditionalEventArgs.Result%2A> Eigenschaft der <xref:System.Workflow.Activities.ConditionalEventArgs> Objekt, um zu bestimmen, ob die **WhileActivity1** -Aktivität fortgesetzt oder beendet werden soll. Wenn die Eigenschaft, um festgelegt ist **"true"**, die Aktivität fortgesetzt wird. Klicken Sie andernfalls die Aktivität beendet wurde, und der Workflow abgeschlossen ist.
+4. Fügen Sie den folgenden Code der `isWorkflowPending` Methode zum Überprüfen des Status von der `workflowPending` Eigenschaft. Jedes Mal, die das Dokument gespeichert, die **whileActivity1** Aktivität Ruft die `isWorkflowPending` Methode. Untersucht diese Methode die <xref:System.Workflow.Activities.ConditionalEventArgs.Result%2A> Eigenschaft der <xref:System.Workflow.Activities.ConditionalEventArgs> Objekt, um zu bestimmen, ob die **WhileActivity1** -Aktivität fortgesetzt oder beendet werden soll. Wenn die Eigenschaft, um festgelegt ist **"true"** , die Aktivität fortgesetzt wird. Klicken Sie andernfalls die Aktivität beendet wurde, und der Workflow abgeschlossen ist.
 
     ```vb
     Private Sub isWorkflowPending(ByVal sender As System.Object, ByVal e As System.Workflow.Activities.ConditionalEventArgs)

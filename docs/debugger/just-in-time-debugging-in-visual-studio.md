@@ -32,14 +32,14 @@ Wenn Sie Visual Studio installiert haben, können Sie die Just-In-Time-Debuggen 
 
 - Wenn Sie eine Web-app ausführen möchten, deaktivieren Sie das Skriptdebugging:
 
-  In Windows **Systemsteuerung** > **Netzwerk und Internet** > **Internetoptionen**Option **deaktivieren Skript debuggen () InternetExplorer)** und **Skriptdebugging deaktivieren (andere)**. Die genauen Schritte und die Einstellungen abhängig von Ihrer Version von Windows und Ihren Browser.
+  In Windows **Systemsteuerung** > **Netzwerk und Internet** > **Internetoptionen**Option **deaktivieren Skript debuggen () InternetExplorer)** und **Skriptdebugging deaktivieren (andere)** . Die genauen Schritte und die Einstellungen abhängig von Ihrer Version von Windows und Ihren Browser.
 
   ![JIT-Internetoptionen](../debugger/media/jitinternetoptions.png "JIT Internetoptionen")
 
 - Wenn Sie eine ASP.NET Web-app in IIS hosten, deaktivieren Sie die serverseitige debugging:
 
   1. Im IIS-Manager **Ansicht "Features"** unter der **ASP.NET** Abschnitt, doppelklicken Sie auf **.NET Kompilierung**, oder wählen Sie ihn, und wählen Sie dann **Funktion öffnen**in die **Aktionen** Bereich.
-  1. Klicken Sie unter **Verhalten** > **Debuggen**Option **"false"**. Die Schritte unterscheiden sich in älteren Versionen von IIS.
+  1. Klicken Sie unter **Verhalten** > **Debuggen**Option **"false"** . Die Schritte unterscheiden sich in älteren Versionen von IIS.
 
 Nachdem Sie die Just-In-Time-Debuggen deaktivieren, die app möglicherweise der Fehler behandelt, und führen Sie wie gewohnt.
 

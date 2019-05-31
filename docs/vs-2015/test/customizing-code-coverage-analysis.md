@@ -101,7 +101,7 @@ Standardmäßig analysiert das Code Coverage-Tool von Visual Studio alle Projekt
 ### <a name="regular-expressions"></a>Reguläre Ausdrücke  
  In den Knoten "include" und "exclude" werden reguläre Ausdrücke verwendet. Weitere Informationen finden Sie unter [Verwenden von regulären Ausdrücken in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Reguläre Ausdrücke sind nicht identisch mit Platzhaltern. Insbesondere:  
   
-1. **\.\\*** entspricht einer Zeichenfolge beliebiger Zeichen  
+1. **\.\\** * entspricht einer Zeichenfolge beliebiger Zeichen  
   
 2. **\\.** entspricht einem Punkt „.“  
   
@@ -204,7 +204,7 @@ Standardmäßig analysiert das Code Coverage-Tool von Visual Studio alle Projekt
   
    - <em>Es wird jedoch die **Testassembly</em>* anstelle der **Testquelle** angezeigt. Beim Versuch, das Feld **Laufzeiteinstellungen** festzulegen, kann ich nur TESTSETTINGS-Dateien auswählen.*  
   
-      Wählen Sie unter **Automatisierte Tests** die Option **Testassembly** aus, und klicken Sie am Ende der Zeile auf **[...]**. Setzen Sie im Dialogfeld **Testlauf hinzufügen/bearbeiten** den **Test Runner** auf **Visual Studio Test Runner**.  
+      Wählen Sie unter **Automatisierte Tests** die Option **Testassembly** aus, und klicken Sie am Ende der Zeile auf **[...]** . Setzen Sie im Dialogfeld **Testlauf hinzufügen/bearbeiten** den **Test Runner** auf **Visual Studio Test Runner**.  
   
    Die Ergebnisse sind im zusammenfassenden Abschnitt des Buildberichts sichtbar.  
   

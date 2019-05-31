@@ -54,9 +54,9 @@ VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]
 
  **Attach:** `PID` startet die Profilerstellung für den angegebenen Prozess.
 
- {**ProcessOff**|**ProcessOn**}**:**`PID` Beendet oder startet die Profilerstellung für den angegebenen Prozess
+ {**ProcessOff**|**ProcessOn**} **:** `PID` Beendet oder startet die Profilerstellung für den angegebenen Prozess
 
- {**ThreadOff**|**ThreadOn**}**:**`TID` Beendet oder startet die Profilerstellung für den angegebenen Prozess (nur Instrumentierungsmethode)
+ {**ThreadOff**|**ThreadOn**} **:** `TID` Beendet oder startet die Profilerstellung für den angegebenen Prozess (nur Instrumentierungsmethode)
 
 ## <a name="example"></a>Beispiel
  In diesem Beispiel werden die Optionen **GlobalOff** und **GlobalOn** verwendet, um die Sammlung von Profilerstellungsdaten für das Starten und Herunterfahren der Anwendung zu vermeiden.

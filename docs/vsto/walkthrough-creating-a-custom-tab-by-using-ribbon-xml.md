@@ -63,13 +63,13 @@ ms.locfileid: "63438573"
 
 1. Klicken Sie im Menü **Projekt** auf **Neues Element hinzufügen**.
 
-2. In der **neues Element hinzufügen** wählen Sie im Dialogfeld **Menüband (XML)**.
+2. In der **neues Element hinzufügen** wählen Sie im Dialogfeld **Menüband (XML)** .
 
 3. Ändern Sie den Namen des neuen Menübands in **MyRibbon**, und klicken Sie dann auf **Hinzufügen**.
 
      Die **MyRibbon.cs** oder **MyRibbon.vb** Datei wird im Designer geöffnet. Eine XML-Datei mit dem Namen **MyRibbon.xml** auch aus dem Projekt hinzugefügt.
 
-4. In **Projektmappen-Explorer**, mit der rechten Maustaste **"ThisAddIn.cs"** oder **"ThisAddIn.vb"**, und klicken Sie dann auf **Ansichtscode**.
+4. In **Projektmappen-Explorer**, mit der rechten Maustaste **"ThisAddIn.cs"** oder **"ThisAddIn.vb"** , und klicken Sie dann auf **Ansichtscode**.
 
 5. Fügen Sie der Klasse **ThisAddin** den folgenden Code hinzu. Mit diesem Code wird die `CreateRibbonExtensibilityObject`-Methode überschrieben und der Office-Anwendung die Menüband-XML-Klasse zurückgegeben.
 

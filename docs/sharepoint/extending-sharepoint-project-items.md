@@ -43,7 +43,7 @@ ms.locfileid: "62967395"
 ## <a name="identifiers-for-sharepoint-project-items"></a>Bezeichner für die SharePoint-Projektelemente
  Jede SharePoint-Projektelement weist einen entsprechenden Zeichenfolgenbezeichner. Sie müssen den Bezeichner für ein Projektelement kennen, sollten Sie die folgenden Aufgaben ausführen:
 
-- Erstellen Sie eine Erweiterung für das Projektelement. In diesem Fall müssen Sie den Bezeichner für das Projektelement, die Sie erweitern, an den Konstruktor der möchten übergeben der <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Um eine Erweiterung für alle Element Projekttypen zu erstellen, übergeben die **\\*** string-Wert.
+- Erstellen Sie eine Erweiterung für das Projektelement. In diesem Fall müssen Sie den Bezeichner für das Projektelement, die Sie erweitern, an den Konstruktor der möchten übergeben der <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Um eine Erweiterung für alle Element Projekttypen zu erstellen, übergeben die **\\** * string-Wert.
 
 - Fügen Sie das Projektelement in ein Projekt programmgesteuert. In diesem Fall müssen Sie den Bezeichner für das Projektelement, übergeben die <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemCollection.Add%2A> Methode.
 

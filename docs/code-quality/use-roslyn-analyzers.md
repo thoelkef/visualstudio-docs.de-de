@@ -32,7 +32,7 @@ Sehen Sie die Eigenschaften einer Diagnose, einschließlich einer Beschreibung u
 
 ![Diagnose Eigenschaften im Fenster "Eigenschaften"](media/analyzer-diagnostic-properties.png)
 
-Um Onlinedokumentation für eine Diagnose anzuzeigen, mit der rechten Maustaste auf die Diagnose, und wählen Sie **Sicht Ihnen helfen,**.
+Um Onlinedokumentation für eine Diagnose anzuzeigen, mit der rechten Maustaste auf die Diagnose, und wählen Sie **Sicht Ihnen helfen,** .
 
 Die Symbole neben jeder Diagnose in **Projektmappen-Explorer** entsprechen den Symbolen, die Sie in der Regel festgelegt, wenn Sie im Editor zu öffnen. finden Sie unter:
 
@@ -122,7 +122,7 @@ Es gibt mehrere Möglichkeiten, um Verletzungen zu unterdrücken:
 
 - Von der **Code-Editor**
 
-   Um einen Verstoß im Code-Editor zu unterdrücken, platzieren Sie den Cursor in die Zeile des Codes, mit der Verletzung und drücken Sie **STRG**+**.** zum Öffnen der **Schnellaktionen** Menü. Wählen Sie **unterdrücken CAXXXX** > **in Quelle/in Unterdrückungsdatei**.
+   Um einen Verstoß im Code-Editor zu unterdrücken, platzieren Sie den Cursor in die Zeile des Codes, mit der Verletzung und drücken Sie **STRG**+ **.** zum Öffnen der **Schnellaktionen** Menü. Wählen Sie **unterdrücken CAXXXX** > **in Quelle/in Unterdrückungsdatei**.
 
    ![Vom Menü "schnelle Aktionen" Diagnose unterdrücken](media/suppress-diagnostic-from-editor.png)
 

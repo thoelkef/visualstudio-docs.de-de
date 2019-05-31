@@ -61,7 +61,7 @@ Von der **diesen Regelsatz ausführen** aufzulisten, verwenden Sie eine der folg
 
 - Wählen Sie einen Microsoft-standard-Regelsatz.
 
-- Wählen Sie eine benutzerdefinierte Regel festlegen, indem Sie auf  **\<Regelsatz auswählen aus der Quellcodeverwaltung... >**. Geben Sie dann den Versionskontrollpfad des Regelsatzes im Browser-Steuerelement Quelle. Die Syntax der einen Pfad für die Versionskontrolle ist:
+- Wählen Sie eine benutzerdefinierte Regel festlegen, indem Sie auf  **\<Regelsatz auswählen aus der Quellcodeverwaltung... >** . Geben Sie dann den Versionskontrollpfad des Regelsatzes im Browser-Steuerelement Quelle. Die Syntax der einen Pfad für die Versionskontrolle ist:
 
    **$/** `TeamProjectName` **/** `VersionControlPath`
 

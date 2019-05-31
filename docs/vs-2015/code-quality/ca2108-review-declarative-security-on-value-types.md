@@ -56,7 +56,7 @@ ms.locfileid: "65687369"
 
  Folgende Ergebnisse werden zurückgegeben:
 
- **Benutzerdefinierte Struktur-Konstruktor: Fehler bei Anforderung.**
+ **Benutzerdefinierte Struktur-Konstruktor: Fehler bei Anforderung.** 
 **Neue Werte SecuredTypeStructure 100 100**
 **neue Werte SecuredTypeStructure 200 200**
 ## <a name="see-also"></a>Siehe auch

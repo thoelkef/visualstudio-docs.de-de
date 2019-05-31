@@ -156,7 +156,7 @@ In Visual Studio sind Projekte die Container, die Entwickler verwenden, um Quell
   
 11. Speichern Sie die Datei.  
   
-12. In der **Eigenschaften** legen die **Buildvorgang** der Datei "AssemblyInfo.cs", "Program.cs", SimpleProject.ico und SimpleProject.myproj zu **Content**, und legen Sie deren  **In VSIX einbeziehen** Eigenschaften **"true"**.  
+12. In der **Eigenschaften** legen die **Buildvorgang** der Datei "AssemblyInfo.cs", "Program.cs", SimpleProject.ico und SimpleProject.myproj zu **Content**, und legen Sie deren  **In VSIX einbeziehen** Eigenschaften **"true"** .  
   
     Diese Projektvorlage beschreibt ein einfaches Visual C#-Projekt, das sowohl eine Debug-Konfiguration und einer Releasekonfiguration aufweist. Das Projekt enthält zwei Quelldateien, Datei "AssemblyInfo.cs" und "Program.cs", und mehrere Assembly verweisen. Wenn ein Projekt aus der Vorlage erstellt wird, wird der ProjectGuid Wert automatisch durch eine neue GUID ersetzt.  
   

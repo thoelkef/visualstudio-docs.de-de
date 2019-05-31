@@ -13,7 +13,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 32558f746745fdcb717aa7c218f996924418ae79
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60082047"
@@ -47,7 +47,7 @@ Synchronisieren Sie die codeanalyseeinstellungen für Codeprojekte der Eincheckr
   
 3. Klicken Sie auf **Codeanalyse**.  
   
-4. In der **diesen Regelsatz ausführen** auf  **\<durchsuchen... >**.  
+4. In der **diesen Regelsatz ausführen** auf  **\<durchsuchen... >** .  
   
 5. In der **öffnen** Dialogfeld geben die Eincheckrichtlinie Regelsatz Datei.  
   
@@ -65,6 +65,6 @@ Synchronisieren Sie die codeanalyseeinstellungen für Codeprojekte der Eincheckr
   
 5. Öffnen Sie das Dialogfeld "Eigenschaften" für das Codeprojekt, und zeigen die **Codeanalyse** Seite.  
   
-6. In der **diesen Regelsatz ausführen** auf  **\<durchsuchen... >**.  
+6. In der **diesen Regelsatz ausführen** auf  **\<durchsuchen... >** .  
   
 7. In der **öffnen** Dialogfeld geben den Regelsatz-Datei.

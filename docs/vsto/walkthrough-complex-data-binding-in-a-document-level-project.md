@@ -154,7 +154,7 @@ ms.locfileid: "62981675"
 
 ### <a name="to-modify-a-column-header"></a>So ändern Sie eine Spaltenüberschrift
 
-1. Klicken Sie auf die Zelle, die den Spaltenkopf enthält **"LastName"**.
+1. Klicken Sie auf die Zelle, die den Spaltenkopf enthält **"LastName"** .
 
 2. Typ **Nachname**, mit einem Leerzeichen zwischen den beiden Wörtern, und drücken Sie dann die **EINGABETASTE**.
 
@@ -210,7 +210,7 @@ ms.locfileid: "62981675"
 
 4. Klicken Sie auf den Pfeil in der **Titel** erneut die Kopfzeile der Spalte.
 
-5. Klicken Sie auf **(alle)**.
+5. Klicken Sie auf **(alle)** .
 
      Der Filter wird entfernt, und alle Zeilen angezeigt werden.
 

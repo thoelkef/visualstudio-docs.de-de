@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Hinzufügen einer Eigenschaft zu einem benutzerdefinierten SharePoint-Projektelementtyp | Microsoft-Dokumentation'
+title: Fügen Sie Eigenschaft hinzu, um benutzerdefinierten SharePoint-Projektelementtyp
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e9695755967aa1b66aa7cda2d784ae88b0fc1b42
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4d44f4d5995be8bacc447ea3f915663a309bee77
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967291"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401650"
 ---
 # <a name="how-to-add-a-property-to-a-custom-sharepoint-project-item-type"></a>Vorgehensweise: Hinzufügen einer Eigenschaft zu einer benutzerdefinierten SharePoint-Projektelementtyp
   Wenn Sie einen benutzerdefinierten SharePoint-Projektelementtyp definieren, können Sie eine Eigenschaft auf das Projektelement hinzufügen. Die Eigenschaft wird in der **Eigenschaften** anzeigen, wenn das Projektelement in ausgewählt ist **Projektmappen-Explorer**.

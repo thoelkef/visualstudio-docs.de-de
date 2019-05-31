@@ -61,7 +61,7 @@ Um unterschiedliche Bedingungen zu testen, können Sie die Tests mit anderen Par
   
 5. Verwenden Sie die `AddNumbers()`-Methode, um sicherzustellen, dass der Test ausgeführt wird. Platzieren Sie den Cursor in der oben gezeigten Testmethode, öffnen Sie das Kontextmenü und wählen Sie **Tests ausführen** aus. (Tastenkombination: STRG + R, T).  
   
-     Das Testergebnis, das anzeigt, ob der Test erfolgreich war oder fehlgeschlagen ist, wird im Fenster des Test-Explorers angezeigt. Zum Öffnen des Fensters des Test-Explorers wählen Sie aus dem Menü **TEST** die Option **Windows****Test-Explorer** aus.  
+     Das Testergebnis, das anzeigt, ob der Test erfolgreich war oder fehlgeschlagen ist, wird im Fenster des Test-Explorers angezeigt. Zum Öffnen des Fensters des Test-Explorers wählen Sie aus dem Menü **TEST** die Option **Windows** **Test-Explorer** aus.  
   
 6. Da eine Datenquelle auch zur Assertion von Parameterwerten verwendet werden kann, die vom Test zur Überprüfung erwarteter Werte verwendet wird, fügen wir eine Assertion hinzu, um zu überprüfen, dass die Summe der beiden Zahlen korrekt ist. Platzieren Sie den Cursor in der oben gezeigten Testmethode, öffnen Sie das Kontextmenü, wählen Sie **Code für den Coded UI-Test generieren** und anschließend **Coded UI-Test-Generator verwenden** aus.  
   

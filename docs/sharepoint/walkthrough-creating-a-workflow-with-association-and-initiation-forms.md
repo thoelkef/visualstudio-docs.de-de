@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs- und Initiierungsformularen | Microsoft-Dokumentation'
+title: Erstellen von Workflows mit Zuordnungs-und Initiierungsformularen
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 08c63966528a2ae34d5a9d776ee111ecee96b22f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b64d1c9fbbd81a21ab268dfa29287895bd355197
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430377"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401157"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Exemplarische Vorgehensweise: Erstellen eines Workflows mit Zuordnungs-und Initiierungsformularen
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Sie einen grundlegenden sequenziellen Workflow erstellen, der die Verwendung von Zuordnungs-und Initiierungsformularen beinhaltet. Hierbei handelt es sich um ASPX-Formulare, mit denen Parameter für die zu einem Workflow hinzugefügt werden, wenn es zuerst von der SharePoint-Administrator (Zuordnungsformular) zugeordnet ist und der Workflow gestartet wird, durch den Benutzer (des Initiierungsformulars).
@@ -90,7 +90,7 @@ ms.locfileid: "63430377"
 
      Die **SharePoint Customization Wizard** angezeigt wird.
 
-10. In der **Geben Sie den Workflownamen für das Debuggen** Seite aus, übernehmen Sie den Standardnamen (**ExpenseReport - Workflow1**). Beibehalten des Standardwerts Workflow Vorlage Typ (**Listenworkflow)**. Klicken Sie auf **Weiter**.
+10. In der **Geben Sie den Workflownamen für das Debuggen** Seite aus, übernehmen Sie den Standardnamen (**ExpenseReport - Workflow1**). Beibehalten des Standardwerts Workflow Vorlage Typ (**Listenworkflow)** . Klicken Sie auf **Weiter**.
 
 11. In der **möchten Sie Visual Studio, um den Workflow in einer Debugsitzung automatisch zuordnen?** Seite, deaktivieren Sie das Kontrollkästchen, die automatisch Ihrer Workflowvorlage zuordnet, wenn diese Option aktiviert ist.
 

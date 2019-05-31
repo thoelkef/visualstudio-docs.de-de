@@ -99,7 +99,7 @@ ms.locfileid: "63430469"
 
 8. In **Projektmappen-Explorer**in die **Verweise** ItemTemplateWizard Projektordner, wählen Sie die **EnvDTE** Verweis.
 
-9. In der **Eigenschaften** Fenster ändern Sie den Wert von der **Embed Interop Types** Eigenschaft **"false"**.
+9. In der **Eigenschaften** Fenster ändern Sie den Wert von der **Embed Interop Types** Eigenschaft **"false"** .
 
 ## <a name="define-the-default-location-and-id-strings-for-custom-actions"></a>Definieren Sie den Standardspeicherort und ID-Zeichenfolgen für benutzerdefinierte Aktionen
  Jede benutzerdefinierte Aktion hat, einen Speicherort und die ID, die im angegebenen die `GroupID` und `Location` Attribute der `CustomAction` Element in der *"Elements.xml"* Datei. In diesem Schritt definieren Sie einige der für diese Attribute im Projekt ItemTemplateWizard gültigen Zeichenfolgen. Wenn Sie diese exemplarische Vorgehensweise abgeschlossen haben, werden diese Zeichenfolgen in geschrieben der *"Elements.xml"* -Datei in das Projektelement benutzerdefinierte Aktion, wenn Benutzer im Assistenten einen Speicherort und eine ID angeben.
@@ -175,7 +175,7 @@ ms.locfileid: "63430469"
 
 2. Auf der **Signierung** Registerkarte die **Assembly signieren** Kontrollkästchen.
 
-3. In der **Schlüsseldatei mit starkem Namen auswählen** wählen  **\<neu... >**.
+3. In der **Schlüsseldatei mit starkem Namen auswählen** wählen  **\<neu... >** .
 
 4. In der **Schlüssel für einen starken Namen erstellen** Dialogfeld Geben Sie einen Namen ein, deaktivieren die **Schlüsseldatei mit Kennwort schützen** aus, und wählen Sie dann die **OK** Schaltfläche.
 
@@ -303,7 +303,7 @@ ms.locfileid: "63430469"
 
 13. In der **Beschreibung** geben **die Entwicklercenter für SharePoint-Website geöffnet**.
 
-14. In der **URL** geben **https://docs.microsoft.com/sharepoint/dev/**, und wählen Sie dann die **Fertig stellen** Schaltfläche.
+14. In der **URL** geben **https://docs.microsoft.com/sharepoint/dev/** , und wählen Sie dann die **Fertig stellen** Schaltfläche.
 
      Visual Studio fügt ein Element mit dem Namen **CustomAction1** auf Ihr Projekt und öffnet die *"Elements.xml"* Datei im Editor. Überprüfen Sie, ob *"Elements.xml"* enthält die Werte, die Sie im Assistenten angegeben.
 

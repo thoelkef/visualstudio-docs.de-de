@@ -53,7 +53,7 @@ Ein Windows Form ist eine der am häufigsten vorkommenden verwalteten Anwendung
   
      Das Dialogfeld **Neues Projekt** wird angezeigt.  
   
-2. Öffnen Sie im Bereich „Projekttypen“ den Knoten **Visual Basic**, **Visual C#** oder **Visual C++**. Gehen Sie anschließend wie folgt vor:  
+2. Öffnen Sie im Bereich „Projekttypen“ den Knoten **Visual Basic**, **Visual C#** oder **Visual C++** . Gehen Sie anschließend wie folgt vor:  
   
     1. Wählen Sie für Visual Basic oder Visual C#-, die **Windows** Knoten, wählen Sie dann **Windows Form-Anwendung** in die **Vorlagen** Bereich.  
   

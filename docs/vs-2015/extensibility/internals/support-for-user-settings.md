@@ -33,14 +33,14 @@ Eine VSPackage kann ein oder mehrere Einstellungskategorien, sind Gruppen von Zu
      Wenn ein einzelne VSPackage mehrere benutzerdefinierten Einstellungspunkten unterstützt, jeder benutzerdefinierten Einstellungspunkts durch eine separate Klasse implementiert wird und jedes, indem eine eindeutige Instanz registriert wird der <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> Klasse. Daher können die Einstellungen für einen implementierende Klasse mehr als eine Einstellungskategorie unterstützen.  
   
 ## <a name="custom-settings-point-registry-entry-details"></a>Benutzerdefinierte Einstellungen Punkt Eintrag Registrierungsdetails  
- Benutzerdefinierten Einstellungspunkten werden in einem Registrierungseintrag an folgendem Speicherort erstellt: HKLM\Software\Microsoft\VisualStudio\\*\<Version >* \UserSettings\\`<CSPName>`, wobei `<CSPName>` ist der Name des benutzerdefinierten Einstellungspunkts das VSPackage unterstützt und  *\<Version >* ist die Version des [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], z. B. 8.0.  
+ Benutzerdefinierten Einstellungspunkten werden in einem Registrierungseintrag an folgendem Speicherort erstellt: HKLM\Software\Microsoft\VisualStudio\\ *\<Version >* \UserSettings\\`<CSPName>`, wobei `<CSPName>` ist der Name des benutzerdefinierten Einstellungspunkts das VSPackage unterstützt und  *\<Version >* ist die Version des [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], z. B. 8.0.  
   
 > [!NOTE]
-> Der Stammpfad des HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* kann überschrieben werden, mit einer alternativen Stamm, wenn die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrierte Entwicklungsumgebung (IDE) ist Initialisiert. Weitere Informationen finden Sie unter [Befehlszeilenoptionen](../../extensibility/command-line-switches-visual-studio-sdk.md).  
+> Der Stammpfad des HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<Version >* kann überschrieben werden, mit einer alternativen Stamm, wenn die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrierte Entwicklungsumgebung (IDE) ist Initialisiert. Weitere Informationen finden Sie unter [Befehlszeilenoptionen](../../extensibility/command-line-switches-visual-studio-sdk.md).  
   
  Die Struktur des Registrierungseintrags ist nachstehend dargestellt:  
   
- HKLM\Software\Microsoft\VisualStudio\\*\<Version>* \UserSettings\  
+ HKLM\Software\Microsoft\VisualStudio\\ *\<Version>* \UserSettings\  
   
  `<CSPName`>= s '#12345'  
   

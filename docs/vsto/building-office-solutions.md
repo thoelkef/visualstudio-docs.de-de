@@ -49,9 +49,9 @@ ms.locfileid: "63440336"
 
 - Die Projektassembly und alle referenzierten Assemblys, deren **Lokale Kopie** -Eigenschaft auf **true**festgelegt ist.
 
-- Das Anwendungsmanifest, das die Dateinamenerweiterung *". manifest"*. Weitere Informationen finden Sie unter [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md).
+- Das Anwendungsmanifest, das die Dateinamenerweiterung *". manifest"* . Weitere Informationen finden Sie unter [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md).
 
-- Das Bereitstellungsmanifest, mit der Dateinamenerweiterung *".VSTO"*. Weitere Informationen finden Sie unter [Bereitstellungsmanifeste für Office-Projektmappen](../vsto/deployment-manifests-for-office-solutions.md).
+- Das Bereitstellungsmanifest, mit der Dateinamenerweiterung *".VSTO"* . Weitere Informationen finden Sie unter [Bereitstellungsmanifeste für Office-Projektmappen](../vsto/deployment-manifests-for-office-solutions.md).
 
 - Eine Programmdatenbank (*PDB*) Datei.
 
@@ -63,9 +63,9 @@ ms.locfileid: "63440336"
 
 - Die Projektassembly und alle referenzierten Assemblys, deren **Lokale Kopie** -Eigenschaft auf **true**festgelegt ist.
 
-- Das Anwendungsmanifest, das die Dateinamenerweiterung *". manifest"*. Weitere Informationen finden Sie unter [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md).
+- Das Anwendungsmanifest, das die Dateinamenerweiterung *". manifest"* . Weitere Informationen finden Sie unter [Anwendungsmanifeste für Office-Projektmappen](../vsto/application-manifests-for-office-solutions.md).
 
-- Das Bereitstellungsmanifest, mit der Dateinamenerweiterung *".VSTO"*. Weitere Informationen finden Sie unter [Bereitstellungsmanifeste für Office-Projektmappen](../vsto/deployment-manifests-for-office-solutions.md).
+- Das Bereitstellungsmanifest, mit der Dateinamenerweiterung *".VSTO"* . Weitere Informationen finden Sie unter [Bereitstellungsmanifeste für Office-Projektmappen](../vsto/deployment-manifests-for-office-solutions.md).
 
 - Eine Programmdatenbank (*PDB*)-Datei für die Projektassembly.
 

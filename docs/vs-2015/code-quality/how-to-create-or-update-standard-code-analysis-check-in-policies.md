@@ -66,7 +66,7 @@ Sie können anfordern, dass die Codeanalyse auf alle Codeprojekte in einem Teamp
   
     - Wählen Sie einen Microsoft-standard-Regelsatz.  
   
-    - Klicken Sie zum Auswählen eines benutzerdefinierten Regelsatzes auf  **\<Regelsatz auswählen aus der Quellcodeverwaltung... >**, und geben Sie dann auf den Versionskontrollpfad des Regelsatzes in der Quelle-Browser-Steuerelement. Die Syntax der einen Pfad für die Versionskontrolle ist:  
+    - Klicken Sie zum Auswählen eines benutzerdefinierten Regelsatzes auf  **\<Regelsatz auswählen aus der Quellcodeverwaltung... >** , und geben Sie dann auf den Versionskontrollpfad des Regelsatzes in der Quelle-Browser-Steuerelement. Die Syntax der einen Pfad für die Versionskontrolle ist:  
   
     - **$/** `TeamProjectName` **/** `VersionControlPath`  
   

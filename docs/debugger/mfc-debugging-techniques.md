@@ -358,7 +358,7 @@ Objekte, für die Speicher auf dem Heap reserviert wird, sollten Sie jedoch expl
 #### <a name="BKMK_Customizing_object_dumps"></a> Anpassen von Objektdumps
 Wenn Sie eine Klasse von [CObject](/cpp/mfc/reference/cobject-class)ableiten, können Sie die Memberfunktion `Dump` überschreiben, um bei Verwendung von [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) für den Objektdump zusätzliche Informationen im [Ausgabefenster](../ide/reference/output-window.md)anzuzeigen.
 
-Die `Dump` -Funktion gibt eine Textdarstellung der objektspezifischen Membervariablen in einem Dumpkontext ([CDumpContext](/cpp/mfc/reference/cdumpcontext-class)) aus. Der Dumpkontext ist mit einem E/A-Stream vergleichbar. Mithilfe des Anfügeoperators (**<<**) können Sie Daten an einen `CDumpContext`aufgerufen.
+Die `Dump` -Funktion gibt eine Textdarstellung der objektspezifischen Membervariablen in einem Dumpkontext ([CDumpContext](/cpp/mfc/reference/cdumpcontext-class)) aus. Der Dumpkontext ist mit einem E/A-Stream vergleichbar. Mithilfe des Anfügeoperators ( **<<** ) können Sie Daten an einen `CDumpContext`aufgerufen.
 
 Wenn Sie die `Dump` -Funktion überschreiben, sollten Sie zunächst die Basisklassenversion von `Dump` aufrufen, um den Inhalt des Basisklassenobjekts auszugeben. Lassen Sie für jede Membervariable der abgeleiteten Klasse eine Textdarstellung und einen Wert ausgeben.
 
@@ -413,7 +413,7 @@ pMyPerson->Dump( afxDump );
 ## <a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> Verringern der Größe eines MFC-Debugbuilds
 Die Debuginformationen für eine umfangreiche MFC-Anwendung können sehr viel Speicherplatz beanspruchen. Sie können eine dieser Prozeduren zum Verringern der Größe verwenden:
 
-1. Die MFC‑Bibliotheken mithilfe der [/Z7, / Zi, / Zi (Debuginformationsformat)](/cpp/build/reference/z7-zi-zi-debug-information-format) -Option anstelle von **"/ Z7"**. Durch diese Optionen wird eine einzelne Programmdatenbank-Datei (PDB) mit Debuginformationen für die gesamte Bibliothek erstellt, wodurch Redundanz und Speicherplatzanforderungen verringert werden.
+1. Die MFC‑Bibliotheken mithilfe der [/Z7, / Zi, / Zi (Debuginformationsformat)](/cpp/build/reference/z7-zi-zi-debug-information-format) -Option anstelle von **"/ Z7"** . Durch diese Optionen wird eine einzelne Programmdatenbank-Datei (PDB) mit Debuginformationen für die gesamte Bibliothek erstellt, wodurch Redundanz und Speicherplatzanforderungen verringert werden.
 
 2. Erstellen Sie die MFC-Bibliotheken ohne Debuginformationen neu (keine [/Z7, / Zi, / Zi (Debuginformationsformat)](/cpp/build/reference/z7-zi-zi-debug-information-format) Option). In diesem Fall werden Sie die meisten Debuggerfunktionen aufgrund fehlender Debuginformationen innerhalb des MFC-Bibliothekscodes nicht nutzen können. Da die MFC-Bibliotheken jedoch bereits eingehend gedebuggt wurden, stellt dies u. U. kein Problem dar.
 
@@ -472,7 +472,7 @@ Das Erstellen ausgewählter Module mit den MFC-Debugbibliotheken ermöglicht die
 
    6. Klicken Sie auf die Einstellungen **Debuginformationsformat** , und wählen sie die für die Debuginformationen gewünschte Option (gewöhnlich **/ZI**) aus.
 
-   7. Wenn Sie eine mit dem Anwendungs-Assistenten generierte Anwendung oder vorkompilierte Header verwenden, müssen Sie die vorkompilierten Header entweder deaktivieren oder erneut kompilieren, bevor Sie die anderen Module kompilieren. Andernfalls werden die Warnung C4650 und die Fehlermeldung C2855 ausgegeben. Sie können vorkompilierte Header deaktivieren, indem Sie im Dialogfeld **Eigenschaften von \<Projekt>** (Ordner **Konfigurationseigenschaften**, Unterordner **C/C++**, Kategorie **Vorkompilierte Header**) die Einstellung **Vorkompilierten Header erstellen/verwenden** ändern.
+   7. Wenn Sie eine mit dem Anwendungs-Assistenten generierte Anwendung oder vorkompilierte Header verwenden, müssen Sie die vorkompilierten Header entweder deaktivieren oder erneut kompilieren, bevor Sie die anderen Module kompilieren. Andernfalls werden die Warnung C4650 und die Fehlermeldung C2855 ausgegeben. Sie können vorkompilierte Header deaktivieren, indem Sie im Dialogfeld **Eigenschaften von \<Projekt>** (Ordner **Konfigurationseigenschaften**, Unterordner **C/C++** , Kategorie **Vorkompilierte Header**) die Einstellung **Vorkompilierten Header erstellen/verwenden** ändern.
 
 7. Klicken Sie im Menü **Erstellen** auf **Erstellen** , um veraltete Projektdateien neu zu erstellen.
 

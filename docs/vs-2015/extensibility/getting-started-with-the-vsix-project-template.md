@@ -12,7 +12,7 @@ ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cc3f461c9e7dbdea1fd8481594292a0a247d2173
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60038665"
@@ -39,7 +39,7 @@ Sie können die VSIX-Projektvorlage verwenden, um eine Erweiterung zu erstellen 
   
 2. Erstellen Sie ein leeres VSIX-Projekt.  
   
-     Klicken Sie im Menü **Datei** auf **Neu** und anschließend auf **Projekt**. Wählen Sie entweder **Visual Basic** oder **Visual C#-**. Wählen Sie unter den ausgewählten Knoten und **Erweiterbarkeit**, und wählen Sie dann **VSIX-Projekt**.  
+     Klicken Sie im Menü **Datei** auf **Neu** und anschließend auf **Projekt**. Wählen Sie entweder **Visual Basic** oder **Visual C#-** . Wählen Sie unter den ausgewählten Knoten und **Erweiterbarkeit**, und wählen Sie dann **VSIX-Projekt**.  
   
 3. Fügen Sie die ZIP-Datei zum Projekt hinzu. Legen Sie dessen **in Ausgabeverzeichnis kopieren** Eigenschaft `Copy Always`.  
   

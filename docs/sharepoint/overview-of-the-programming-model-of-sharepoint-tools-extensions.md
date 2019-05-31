@@ -1,5 +1,5 @@
 ---
-title: Übersicht über das Programmiermodell von SharePoint-Tools Extensions | Microsoft-Dokumentation
+title: Erweiterungen der Übersicht über das Programmiermodell von SharePoint-tools
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c8f746c3ee084613a10b89bd492a6174ffb49012
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dbb496b077f1ff55fda53d3325765e8e58911096
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421290"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401786"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Übersicht über das Programmiermodell von SharePoint-tools extensions
   Wenn Sie eine Erweiterung für die SharePoint-Tools in Visual Studio erstellen, beginnen Sie damit, indem Sie eine oder mehrere Erweiterungsschnittstellen implementieren, die von den SharePoint-Tools verfügbar gemacht werden. In den meisten Fällen verwenden Sie auch andere von den SharePoint-Tools bereitgestellte Typen, um Funktionen in der Erweiterung zu implementieren. Für einige Szenarien können Sie auch Typen in anderen Objektmodellen verwenden, die von Visual Studio und SharePoint bereitgestellt werden. Sie müssen den Zweck der einzelnen Objektmodelle verstehen und wissen, wie sie miteinander zu verwenden, um das Erweiterungen für die SharePoint-Tools erstellen.
@@ -55,7 +55,7 @@ ms.locfileid: "63421290"
 - *SharePoint Server und Client-Objektmodelle*. Mit diesen Objektmodellen können Sie eine SharePoint-Website ändern oder Daten aus einer SharePoint-Website im Kontext einer SharePoint-Tools-Erweiterung abrufen.
 
 ### <a name="sharepoint-tools-object-model"></a>SharePoint-Tools-Objektmodell
- In jeder SharePoint-Tools-Erweiterung werden mit Typen im SharePoint-Tools-Objektmodell das Kernverhalten und die Kernfunktionen der Erweiterung definiert. Die folgende Tabelle beschreibt die Namespaces, die in diesem Objektmodell durch die Assembly enthalten sind, die sie enthält.
+ In jeder SharePoint-Tools-Erweiterung werden mit Typen im SharePoint-Tools-Objektmodell das Kernverhalten und die Kernfunktionen der Erweiterung definiert. Die folgende Tabelle beschreibt die Namespaces, die in diesem Objektmodell, von der Assembly enthalten sind, die sie enthält.
 
 #### <a name="microsoftvisualstudiosharepointdll"></a>Microsoft.VisualStudio.SharePoint.dll
 
@@ -92,7 +92,7 @@ ms.locfileid: "63421290"
 
  Sie können das Integrationsobjektmodell verwenden, wenn Sie eine neue Visual Studio-Funktion hinzufügen möchten, die zusammen mit den integrierten SharePoint-Tools verwendet wird. Wenn Sie z. B. ein benutzerdefiniertes SharePoint-Projektelement erstellen, das eine benutzerdefinierte Aktion für eine SharePoint-Website darstellt, können Sie auch ein VSPackage erstellen, das einen Designer für die benutzerdefinierte Aktion implementiert. Sie können die benutzerdefinierte Aktion den Designer zuordnen, durch das Hinzufügen eines Kontextmenüelements auf das Projektelement, die die benutzerdefinierte Aktion darstellt **Projektmappen-Explorer**. Sie können den Designer öffnen, indem Sie das Kontextmenü öffnen (entweder durch einen Rechtsklick auf das Projektelement für die benutzerdefinierte Aktion oder indem Sie ihn auswählen und dann auf die **UMSCHALT**+**F10** Schlüssel) auswählen und dann **Öffnen**.
 
- Dieses Objektmodell ist in einem Satz mehrerer Assemblys definiert, die im Visual Studio-SDK enthalten sind. Einige der Hauptassemblys in diesem Objektmodell enthalten *"Microsoft.VisualStudio.Shell.11.0.dll"*, *Microsoft.VisualStudio.Shell.Interop.dll*, und  *"Microsoft.VisualStudio.OLE.Interop.dll"*.
+ Dieses Objektmodell ist in einem Satz mehrerer Assemblys definiert, die im Visual Studio-SDK enthalten sind. Einige der Hauptassemblys in diesem Objektmodell enthalten *"Microsoft.VisualStudio.Shell.11.0.dll"* , *Microsoft.VisualStudio.Shell.Interop.dll*, und  *"Microsoft.VisualStudio.OLE.Interop.dll"* .
 
  Weitere Informationen über das Integrationsobjektmodell finden Sie unter [Übersicht über das Automatisierungsmodell](../extensibility/internals/automation-model-overview.md) und [Visual Studio SDK-Referenz](../extensibility/visual-studio-sdk-reference.md).
 

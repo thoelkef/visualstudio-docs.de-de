@@ -157,7 +157,7 @@ Verfolgen Sie Aufgaben, Testfälle, Fehler, Anforderungen, Probleme und andere A
   
     1. Wählen Sie **Eigenschaften**und dann **Arbeitselemente** aus, wobei die Anzahl von verknüpften Arbeitselemente angezeigt wird.  
   
-    2. Wählen Sie in der Eigenschaft **Arbeitselemente** die Schaltfläche mit den Auslassungszeichen **[…]**.  
+    2. Wählen Sie in der Eigenschaft **Arbeitselemente** die Schaltfläche mit den Auslassungszeichen **[…]** .  
   
         > [!NOTE]
         > Es werden nur die Arbeitselemente auf dem aktuellen Server angezeigt. Wenn die Liste leer ist, die Anzahl von Arbeitselementen jedoch nicht 0 ist, überprüfen Sie, ob in **Team Explorer**eine Verbindung mit dem richtigen Server besteht.  

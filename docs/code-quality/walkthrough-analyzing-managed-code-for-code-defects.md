@@ -29,7 +29,7 @@ Diese exemplarische Vorgehensweise führt Sie schrittweise durch den Prozess der
 
 1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt** aus.
 
-1. In der **neues Projekt** Dialogfeld erweitern Sie **installiert** > **Visual C#-**, und wählen Sie dann **Windows Desktop**.
+1. In der **neues Projekt** Dialogfeld erweitern Sie **installiert** > **Visual C#-** , und wählen Sie dann **Windows Desktop**.
 
 1. Wählen Sie die **Class-Bibliothek ((.NET Framework)** Vorlage.
 
@@ -141,7 +141,7 @@ Diese exemplarische Vorgehensweise führt Sie schrittweise durch den Prozess der
 
    1. Wählen Sie die **Assembly signieren** Kontrollkästchen.
 
-   1. In der **wählen Sie eine Schlüsseldatei mit starkem Namen** Liste  **\<neu... >**.
+   1. In der **wählen Sie eine Schlüsseldatei mit starkem Namen** Liste  **\<neu... >** .
 
       Die **Schlüssel für einen starken Namen erstellen** Dialogfeld wird angezeigt.
 

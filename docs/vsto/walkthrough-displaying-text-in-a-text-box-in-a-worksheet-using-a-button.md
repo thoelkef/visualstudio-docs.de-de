@@ -50,7 +50,7 @@ ms.locfileid: "63436093"
 
 ### <a name="to-create-a-new-project"></a>So erstellen Sie ein neues Projekt
 
-1. Erstellen Sie ein Excel-Workbook-Projekt mit dem Namen **Meine Schaltfläche "Excel"**. Stellen Sie sicher, dass **ein neues Dokument erstellen** ausgewählt ist. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Erstellen Sie ein Excel-Workbook-Projekt mit dem Namen **Meine Schaltfläche "Excel"** . Stellen Sie sicher, dass **ein neues Dokument erstellen** ausgewählt ist. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      Visual Studio öffnet die neue Excel-Arbeitsmappe im Designer und fügt die **Meine Schaltfläche "Excel"** Projekt **Projektmappen-Explorer**.
 
@@ -63,7 +63,7 @@ ms.locfileid: "63436093"
 
 2. Von der **Standardsteuerelementen** Registerkarte der Toolbox, ziehen Sie eine <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> zu `Sheet1`.
 
-3. Von der **Ansicht** , wählen Sie im Menü **Fenster "Eigenschaften"**.
+3. Von der **Ansicht** , wählen Sie im Menü **Fenster "Eigenschaften"** .
 
 4. Achten Sie darauf, **TextBox1** werden in der **Eigenschaften** Fenster Dropdown-Listenfeld, und Ändern der **Namen** Eigenschaft des Textfelds, das auf **DisplayText**.
 

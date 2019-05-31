@@ -88,7 +88,7 @@ Dieses Thema beschreibt die Optionen für Ihre-Datenbankdatei (.mdf) aktualisier
   
    Die Datenbank aktualisiert wird, wird der LocalDB-Datenbank-Engine angefügt und ist nicht mehr kompatibel mit einer älteren Version von LocalDB.  
   
-   Sie können auch eine SQL Server Express-Verbindung, um LocalDB zu verwenden, indem Sie das Kontextmenü für die Verbindung öffnen, und wählen Sie dann ändern **Verbindung ändern**. In der **Verbindung ändern** Dialogfeld ändern den Namen des `(LocalDB)\MSSQLLocalDB`. In der **erweiterte Eigenschaften** Dialogfeld Feld, stellen Sie sicher, dass **Benutzerinstanz** nastaven NA hodnotu **"false"**.  
+   Sie können auch eine SQL Server Express-Verbindung, um LocalDB zu verwenden, indem Sie das Kontextmenü für die Verbindung öffnen, und wählen Sie dann ändern **Verbindung ändern**. In der **Verbindung ändern** Dialogfeld ändern den Namen des `(LocalDB)\MSSQLLocalDB`. In der **erweiterte Eigenschaften** Dialogfeld Feld, stellen Sie sicher, dass **Benutzerinstanz** nastaven NA hodnotu **"false"** .  
   
 ### <a name="to-upgrade-to-a-newer-version-of-sql-server-express"></a>Upgrade auf eine neuere Version von SQL Server Express  
   

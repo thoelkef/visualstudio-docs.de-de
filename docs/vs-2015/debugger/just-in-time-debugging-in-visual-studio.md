@@ -102,7 +102,7 @@ Die Aktionen, die Sie abwartet, wenn Sie sehen, dass die Visual Studio Just-in-T
 
      So aktivieren Sie Just-In-Time-Debuggen einer Windows Forms-Anwendung, müssen Sie die folgenden zusätzlichen Schritte ausführen:
 
-2. Legen Sie die `jitDebugging` Wert `true` in die `system.windows.form` Abschnitt der Datei machine.config oder  *\<Anwendungsname >*. exe.config-Datei:
+2. Legen Sie die `jitDebugging` Wert `true` in die `system.windows.form` Abschnitt der Datei machine.config oder  *\<Anwendungsname >* . exe.config-Datei:
 
     ```
     <configuration>
@@ -165,7 +165,7 @@ static void Main(string[] args)
 
  Klicken Sie unter **Mögliche Debugger**, sollte angezeigt werden, die **neue Instanz von Microsoft Visual Studio 2015** Zeile ausgewählt ist. Wenn sie nicht bereits ausgewählt ist, wählen Sie sie jetzt ein.
 
- Am unteren Fensterrand unter **möchten Sie mit dem ausgewählten Debugger zu Debuggen?**, klicken Sie auf **Ja**.
+ Am unteren Fensterrand unter **möchten Sie mit dem ausgewählten Debugger zu Debuggen?** , klicken Sie auf **Ja**.
 
  Das Projekt ThrowsNullException öffnet in einer neuen Instanz von Visual Studio, bei der Ausführung beendet wird, in der Zeile, die die Ausnahme auslöst:
 

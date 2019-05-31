@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erstellen eine benutzerdefinierte Aktion das Projektelement, mit einer Elementvorlage, Teil 1 | Microsoft-Dokumentation'
+title: Erstellen Sie benutzerdefinierte Aktionsprojektelement, mit der Elementvorlage, Teil 1
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9417c2116dde909bda948e7d9140d7f52b090d68
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3e00d87079fe4986dc378540c1456508c2afa0b7
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430474"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401112"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Exemplarische Vorgehensweise: Erstellen eines Projektelements benutzerdefinierte Aktion mit einer Elementvorlage, Teil 1
   Sie können das SharePoint-Projektsystem in Visual Studio erweitern, indem Sie eigene Projektelementtypen erstellen. In dieser exemplarischen Vorgehensweise erstellen Sie ein Projektelement, die ein SharePoint-Projekt zum Erstellen einer benutzerdefinierten Aktion auf einer SharePoint-Website hinzugefügt werden können. Die benutzerdefinierte Aktion Fügt ein Menüelement der **Websiteaktionen** im Menü der SharePoint-Website.
@@ -85,7 +85,7 @@ ms.locfileid: "63430474"
 
 5. Wählen Sie die **VSIX-Projekt** Vorlage.
 
-6. In der **Namen** geben **"CustomActionProjectItem"**, und wählen Sie dann die **OK** Schaltfläche.
+6. In der **Namen** geben **"CustomActionProjectItem"** , und wählen Sie dann die **OK** Schaltfläche.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt der **"CustomActionProjectItem"** Projekt **Projektmappen-Explorer**.
 
@@ -244,7 +244,7 @@ ms.locfileid: "63430474"
 
 9. In der **neues Element hinzufügen** Dialogfeld auf die **XML-Datei** Vorlage.
 
-10. In der **Namen** geben **"Elements.xml"**, und wählen Sie dann die **hinzufügen** Schaltfläche.
+10. In der **Namen** geben **"Elements.xml"** , und wählen Sie dann die **hinzufügen** Schaltfläche.
 
 11. Ersetzen Sie den Inhalt von der *"Elements.xml"* -Datei mit den folgenden XML-Code, und speichern und schließen Sie die Datei.
 
@@ -447,7 +447,7 @@ ms.locfileid: "63430474"
 5. Schließen Sie die experimentelle Instanz von Visual Studio und die Instanz, in der die Projektmappe "CustomActionProjectItem" geöffnet ist.
 
 ## <a name="next-steps"></a>Nächste Schritte
- Nachdem Sie diese exemplarische Vorgehensweise abgeschlossen haben, können Sie der Elementvorlage einen Assistenten hinzufügen. Wenn ein Benutzer einem SharePoint-Projekt ein Projektelement für die benutzerdefinierte Aktion hinzufügt, wird der Assistent sammelt Informationen zu der Aktion (z. B. den Speicherort und die URL, zu der navigiert werden soll, wenn die Aktion ausgewählt wird) und fügt diese Informationen, um die *"Elements.xml"*-Datei in das neue Projektelement. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen ein Projektelements benutzerdefinierte Aktion mit einer Elementvorlage, Teil 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).
+ Nachdem Sie diese exemplarische Vorgehensweise abgeschlossen haben, können Sie der Elementvorlage einen Assistenten hinzufügen. Wenn ein Benutzer einem SharePoint-Projekt ein Projektelement für die benutzerdefinierte Aktion hinzufügt, wird der Assistent sammelt Informationen zu der Aktion (z. B. den Speicherort und die URL, zu der navigiert werden soll, wenn die Aktion ausgewählt wird) und fügt diese Informationen, um die *"Elements.xml"* -Datei in das neue Projektelement. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen ein Projektelements benutzerdefinierte Aktion mit einer Elementvorlage, Teil 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).
 
 ## <a name="see-also"></a>Siehe auch
 
