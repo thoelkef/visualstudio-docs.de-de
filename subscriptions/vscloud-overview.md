@@ -7,16 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Mieten Sie Visual Studio Professional oder Visual Studio Enterprise auf monatlicher oder jährlicher Basis ohne langfristigen Vertrag.
 searchscope: VS Subscription
-ms.openlocfilehash: 5927078aaf4001f569af9aafbc57575cf92fc980
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 1b704b6180937d3a1b937b702fad4a2e564d93c6
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679317"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177556"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Erwerben von Visual Studio Enterprise- und Visual Studio Professional-Cloudabonnements
 
-Sie können Visual Studio Professional- und Visual Studio Enterprise-[Abonnements](https://visualstudio.microsoft.com/subscriptions/) über [Visual Studio Marketplace](https://marketplace.visualstudio.com) erwerben. Dies sind sogenannte **„Cloudabonnements“**.
+Sie können Visual Studio Professional- und Visual Studio Enterprise-[Abonnements](https://visualstudio.microsoft.com/subscriptions/) über [Visual Studio Marketplace](https://marketplace.visualstudio.com) erwerben. Dies sind sogenannte **„Cloudabonnements“** .
 
 [Vergleich der Vorteile und Preise von Cloudabonnements](https://visualstudio.microsoft.com/vs/pricing/)
 
@@ -96,11 +96,14 @@ Antwort:  Diese Änderung wirkt sich nicht auf bestehende Abonnements aus.
 #### <a name="q--do-i-need-to-do-anything-as-a-result-of-these-changes"></a>Frage:  Sind aufgrund dieser Änderungen irgendwelche Handlungen von meiner Seite aus erforderlich?
 Antwort:  Nein.  Ihre Abonnements bleiben erhalten, und Sie können diese wie gewohnt verwalten.
 
-#### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-my-company-owns"></a>Frage: Kann ich die Anzahl der Abonnements erhöhen, die mein Unternehmen besitzt?
-Antwort:  Ihr Administrator kann die Anzahl der Abonnements weiterhin erhöhen, indem er den Artikel [https://manage.visualstudio.com](https://manage.visualstudio.com) aufruft und die Anweisungen zum Hinzufügen weiterer Abonnements befolgt.
+#### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-for-my-customers"></a>Frage: Kann ich die Anzahl der Abonnements erhöhen, die meine Kunden besitzen?
 
-#### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-my-company-owns"></a>Frage: Kann ich die Anzahl der Abonnements reduzieren, die mein Unternehmen besitzt?
-Antwort:  Ihr Administrator kann die Anzahl der Abonnements weiterhin reduzieren, indem er den Artikel [https://manage.visualstudio.com](https://manage.visualstudio.com) aufruft und die Anweisungen zum Reduzieren der Abonnements befolgt.
+Antwort: In einem bestimmten Monat gekaufte Jahresabonnements werden sofort berechnet und sind ein Jahr gültig. Aus diesem Grund kann Ihr Administrator nur die Anzahl der Lizenzen im aktuellen Monat des Erwerbs ändern (sie sind 1 Jahr gültig, und die Abrechnung erfolgt für 1 Jahr). Außerhalb des Monat des Erwerbs können Sie die Anzahl der Abonnements erhöhen.
+
+#### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>Frage: Kann ich die Anzahl der Abonnements reduzieren, die meine Kunden besitzen?
+
+Antwort: Ihr Administrator kann die Anzahl der Abonnements weiterhin reduzieren, indem er https://manage.visualstudio.com aufruft und die Anweisungen in diesem Artikel zum Reduzieren der Abonnements befolgt. Das System generiert *keine* anteilige Gutschrift. Wenn Sie eine Rückerstattung wünschen, müssen Sie Kontakt zum Azure-Abrechnungsteam aufnehmen.
+
 
 #### <a name="q-if-i-cancel-my-subscription-will-i-be-able-to-buy-another-annual-cloud-subscription-later"></a>Frage: Kann ich in Zukunft ein weiteres jährliches Cloudabonnement erwerben, wenn ich mein Abonnement kündigen?
 Antwort:  Sie können zwar kein weiteres jährliches Cloudabonnement erwerben, aber es gibt viele andere Optionen für den Erwerb von Visual Studio-Abonnements.  Weitere Informationen finden Sie unter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).

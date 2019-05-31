@@ -10,14 +10,14 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9c17d5c9d6874c836954941e1fccd8ce9d9f2e3a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ccdf29e3a4cda2bf5d527a2b712878c1fbd76197
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789066"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037584"
 ---
-# <a name="wrap-indent-and-align-parameters"></a>Umschließen, Einziehen und Ausrichten von Parametern
+# <a name="wrap-indent-and-align-parameters-or-arguments"></a>Umschließen, Einziehen und Ausrichten von Parametern und Argumenten
 
 Dieses Refactoring gilt für:
 
@@ -25,16 +25,16 @@ Dieses Refactoring gilt für:
 
 - Visual Basic
 
-**Beschreibung:** Ermöglicht das Umschließen, Einziehen und Ausrichten von Parametern.
+**Beschreibung:** Ermöglicht das Umschließen, Einziehen und Ausrichten von Parametern und Argumenten.
 
-**Hintergrund:** Sie verfügen über eine Methodendeklaration oder einen Aufruf mit mehreren Parametern.
+**Hintergrund:** Sie verfügen über eine Methodendeklaration oder einen Aufruf mit mehreren Parametern oder Argumenten.
 
-**Vorteile**: Eine lange Liste mit Parametern ist einfacher zu lesen, wenn sie den Benutzereinstellungen entsprechend umschlossen oder eingezogen sind.
+**Vorteile**: Eine lange Liste mit Parametern oder Argumenten ist einfacher zu lesen, wenn sie den Benutzereinstellungen entsprechend umschlossen oder eingezogen sind.
 
 ## <a name="how-to"></a>Vorgehensweise
 
 1. Platzieren Sie Ihren Cursor auf einer Parameterliste.
-2. Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, um das Menü **Schnellaktionen und Refactorings** aufzurufen.
+2. Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+ **.** , um das Menü **Schnellaktionen und Refactorings** aufzurufen.
 
    ![Umschließen, Einziehen und Ausrichten von Parametern](media/wrap-parameters.png)
 

@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b89f8415d34a4facaca694db8507c911d279bf8f
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: 61b3a2dfae667bac7c3a6a62682cdbd5b1a5feb4
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65976118"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037511"
 ---
 # <a name="visual-studio-administrator-guide"></a>Administratorhandbuch für Visual Studio
 
@@ -50,7 +50,7 @@ Bevor Sie Visual Studio in Ihrem Unternehmen bereitstellen, müssen Sie einige E
 
 * Entscheiden, welche [Workloads und Komponenten](workload-and-component-ids.md?view=vs-2019) Ihr Unternehmen benötigt
 
-* Entscheiden, ob Sie eine [Antwortdatei](automated-installation-with-response-file.md?view=vs-2019) verwenden (die die Verwaltung von Informationen in der Skriptdatei vereinfacht).
+* Entscheiden, ob Sie eine [Antwortdatei](automated-installation-with-response-file.md?view=vs-2019) verwenden (die die Verwaltung von Informationen in der Skriptdatei vereinfacht)
 
 * Entscheiden, ob Sie die Gruppenrichtlinie aktivieren und Visual Studio konfigurieren möchten, um Kundenfeedback auf einzelnen Computern zu deaktivieren
 
@@ -165,3 +165,4 @@ Wir haben mehrere Tools zur Verfügung gestellt, mit denen Sie [installierte Ins
 * [Importieren oder Exportieren von Installationskonfigurationen](import-export-installation-configurations.md)
 * [Archive zum Setup von Visual Studio](https://devblogs.microsoft.com/setup/tag/vs2017/)
 * [Projektlebenszyklus und Wartung in Visual Studio](/visualstudio/releases/2019/servicing/)
+* [Einstellungen für synchrones automatisches Laden](../extensibility/synchronously-autoloaded-extensions.md)

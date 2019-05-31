@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 30a20e5810d5c361fddf8cd934863fcb1186b5d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 83ac401b67444d4fdd467d5aefeb46bccb5e7e84
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793451"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037012"
 ---
 # <a name="project-and-item-templates"></a>Projekt- und Elementvorlagen
 
@@ -47,7 +47,7 @@ Alle Projekt- und Elementvorlagen, unabhängig davon, ob diese zusammen mit Visu
 
 ::: moniker-end
 
-   Weitere Informationen zu *VSTEMPLATE-Dateien* finden Sie unter [Vorlagenparameter](../ide/template-parameters.md).
+   Weitere Informationen zu *VSTEMPLATE*-Dateien finden Sie unter [Vorlagentags](template-tags.md) und [Vorlagenparameter](../ide/template-parameters.md).
 
 Wenn diese Dateien in eine *ZIP-Datei* komprimiert sind und sich im richtigen Ordner befinden, werden sie automatisch von Visual Studio an folgenden Orten angezeigt:
 
@@ -71,6 +71,7 @@ Weitere Informationen zu Vorlagenordnern finden Sie unter [Vorgehensweise: Suche
 
 - [Vorgehensweise: Erstellen von Projektvorlagen](../ide/how-to-create-project-templates.md)
 - [Vorgehensweise: Erstellen von Elementvorlagen](../ide/how-to-create-item-templates.md)
+- [Vorlagentags](template-tags.md)
 - [Vorlagenparameter](../ide/template-parameters.md)
 - [Anpassen von Projekt- und Elementvorlagen](../ide/customizing-project-and-item-templates.md)
 - [NuGet-Pakete in Visual Studio-Vorlagen](/nuget/visual-studio-extensibility/visual-studio-templates)

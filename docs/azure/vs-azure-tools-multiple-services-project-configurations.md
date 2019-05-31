@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren Ihres Azure-Projekts mit mehreren Dienstkonfigurationen | Microsoft Docs
+title: Konfigurieren eines Azure-Projekts mit mehreren Dienstkonfigurationen
 description: Erfahren Sie, wie Sie ein Azure-Clouddienstprojekt konfigurieren, indem Sie die Dateien „ServiceDefinition.csdef“, „ServiceConfiguration.Local.cscfg“ und „ServiceConfiguration.Cloud.cscfg“ ändern.
 author: ghogen
 manager: jillfra
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 853920ac30b6e779c94bf82aa6c655bf81146d2e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dfb58c9eabb135b69033c065fa606511043a2c8b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555301"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260651"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Konfigurieren Ihres Azure-Projekts in Visual Studio zur Verwendung mehrerer Dienstkonfigurationen
 
@@ -51,7 +51,7 @@ Wenn Sie bereits einen HTTPS-Endpunkt hinzugefügt haben, ist die Option „HTTP
 
 ### <a name="diagnostics"></a>Diagnose
 
-Die Diagnosefunktion ist standardmäßig für die Webrolle aktiviert. Das Azure-Clouddienstprojekt und Speicherkonto wurden auf die Verwendung des lokalen Speicheremulators festgelegt. Wenn die Bereitstellung in Azure erfolgen soll, klicken Sie auf die Generatorschaltfläche (**…**), um stattdessen Azure-Speicher zu verwenden. Sie können die Diagnosedaten entweder bei Bedarf oder in automatisch geplanten Intervallen an das Speicherkonto übertragen. Weitere Informationen zur Azure-Diagnose erhalten Sie unter [Aktivieren der Diagnose in Azure Cloud Services und Virtual Machines](/azure/cloud-services/cloud-services-dotnet-diagnostics).
+Die Diagnosefunktion ist standardmäßig für die Webrolle aktiviert. Das Azure-Clouddienstprojekt und Speicherkonto wurden auf die Verwendung des lokalen Speicheremulators festgelegt. Wenn die Bereitstellung in Azure erfolgen soll, klicken Sie auf die Generatorschaltfläche ( **…** ), um stattdessen Azure-Speicher zu verwenden. Sie können die Diagnosedaten entweder bei Bedarf oder in automatisch geplanten Intervallen an das Speicherkonto übertragen. Weitere Informationen zur Azure-Diagnose erhalten Sie unter [Aktivieren der Diagnose in Azure Cloud Services und Virtual Machines](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ## <a name="settings-page"></a>Seite „Einstellungen“
 
@@ -68,7 +68,7 @@ Sie können festlegen, dass die Verbindungszeichenfolge nach Bedarf lokalen Spei
 
 Zum Erstellen einer Verbindungszeichenfolge wählen Sie **Einstellung hinzufügen** aus und legen den **Typ** auf „Verbindungszeichenfolge“ fest.
 
-Wählen Sie für neue oder vorhandene Verbindungszeichenfolgen **...*** rechts neben dem Feld **Wert** aus, um das Dialogfeld **Speicherkonto-Verbindungszeichenfolge erstellen** zu öffnen:
+Wählen Sie für neue oder vorhandene Verbindungszeichenfolgen **...** * rechts neben dem Feld **Wert** aus, um das Dialogfeld **Speicherkonto-Verbindungszeichenfolge erstellen** zu öffnen:
 
 1. Wählen Sie unter **Verbindung herstellen über** die Option **Ihr Abonnement**aus, um ein Speicherkonto aus einem Abonnement auszuwählen. Visual Studio ruft dann die Anmeldeinformationen des Speicherkontos automatisch aus der `.publishsettings`-Datei ab.
 1. Mit der Option **Manuell eingegebene Anmeldeinformationen** können Sie den Kontonamen und -schlüssel mithilfe von Informationen aus dem Azure-Portal direkt angeben. Kopieren des Kontoschlüssels:

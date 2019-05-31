@@ -1,21 +1,19 @@
 ---
-title: Einrichten der Diagnose für Azure Cloud Services und virtuelle Azure-Computer | Microsoft-Dokumentation
+title: Diagnose für Azure Cloud Services und virtuelle Azure-Computer
 description: Erfahren Sie mehr über das Einrichten der Diagnose für das Debuggen von Azure-Clouddiensten und virtuellen Azure-Computern (VMs) in Visual Studio.
-author: mikejo5000
+author: ghogen
 manager: jillfra
 ms.assetid: e70cd7b4-6298-43aa-adea-6fd618414c26
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
-ms.openlocfilehash: 45e0eca12ecde6c6ede2e290f109ef04ce2035ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0b212ee44809f925bb4d2d78efc972a4986602a5
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62556418"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177326"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Einrichten der Diagnose für Azure-Clouddienste und virtuelle Azure-Computer
 Wenn Sie Probleme bei einem Azure-Clouddienst oder virtuellen Azure-Computer beheben müssen, können Sie Visual Studio verwenden, um Azure-Diagnose leichter einzurichten. Die Diagnose erfasst Systemdaten und Protokollierungsdaten auf den virtuellen Computern und den virtuellen Computerinstanzen, auf denen der Clouddienst ausgeführt wird. Die Diagnosedaten werden in ein Speicherkonto Ihrer Wahl übertragen. Weitere Informationen zur Diagnoseprotokollierung in Azure finden Sie unter [Aktivieren der Diagnoseprotokollierung für Web-Apps in Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -135,14 +133,14 @@ In Visual Studio können Diagnosedaten für virtuelle Azure-Computer gesammelt w
 Nachdem Sie die Sammlung von Diagnosedaten aktiviert haben, können Sie genau auswählen, welche Datenquellen Sie sammeln möchten und welche Informationen gesammelt werden. In den folgenden Abschnitten erfolgt eine Beschreibung der Registerkarten im Dialogfeld **Diagnosekonfiguration** sowie der einzelnen Konfigurationsoptionen.
 
 ### <a name="application-logs"></a>Anwendungsprotokolle
-Anwendungsprotokolle enthalten Diagnoseinformationen, die von einer Webanwendung erstellt wurden. Aktivieren Sie das Kontrollkästchen **Übertragung von Anwendungsprotokollen aktivieren**, wenn Sie Anwendungsprotokolle erfassen möchten. Ändern Sie den Wert **Übertragungszeitraum (Min.)**, um das Intervall zwischen der Übertragung von Anwendungsprotokollen an Ihr Speicherkonto zu erhöhen oder zu verringern. Sie können auch die Menge an Informationen ändern, die im Protokoll erfasst werden, indem Sie den Wert **Protokollebene** festlegen. Sie können z.B. **Ausführlich** auswählen, um weitere Informationen zu erhalten, oder **Kritisch**, um nur kritische Fehler zu erfassen. Wenn Sie einen bestimmten Diagnoseanbieter haben, der Anwendungsprotokolle ausgibt, können Sie diese erfassen, indem Sie die Anbieter-GUID in das Feld **Anbieter-GUID** einfügen.
+Anwendungsprotokolle enthalten Diagnoseinformationen, die von einer Webanwendung erstellt wurden. Aktivieren Sie das Kontrollkästchen **Übertragung von Anwendungsprotokollen aktivieren**, wenn Sie Anwendungsprotokolle erfassen möchten. Ändern Sie den Wert **Übertragungszeitraum (Min.)** , um das Intervall zwischen der Übertragung von Anwendungsprotokollen an Ihr Speicherkonto zu erhöhen oder zu verringern. Sie können auch die Menge an Informationen ändern, die im Protokoll erfasst werden, indem Sie den Wert **Protokollebene** festlegen. Sie können z.B. **Ausführlich** auswählen, um weitere Informationen zu erhalten, oder **Kritisch**, um nur kritische Fehler zu erfassen. Wenn Sie einen bestimmten Diagnoseanbieter haben, der Anwendungsprotokolle ausgibt, können Sie diese erfassen, indem Sie die Anbieter-GUID in das Feld **Anbieter-GUID** einfügen.
 
   ![Anwendungsprotokolle](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758145.png)
 
 Weitere Informationen zu Anwendungsprotokollen finden Sie unter [Aktivieren der Diagnoseprotokollierung für Web-Apps in Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
 
 ### <a name="windows-event-logs"></a>Windows-Ereignisprotokolle
-Aktivieren Sie das Kontrollkästchen **Übertragung von Windows-Ereignisprotokollen aktivieren**, um Windows-Ereignisprotokolle zu erfassen. Ändern Sie den Wert **Übertragungszeitraum (Min.)**, um das Intervall zwischen der Übertragung von Ereignisprotokollen an Ihr Speicherkonto zu erhöhen oder zu verringern. Wählen Sie die Kontrollkästchen für die Ereignistypen aus, die Sie nachverfolgen möchten.
+Aktivieren Sie das Kontrollkästchen **Übertragung von Windows-Ereignisprotokollen aktivieren**, um Windows-Ereignisprotokolle zu erfassen. Ändern Sie den Wert **Übertragungszeitraum (Min.)** , um das Intervall zwischen der Übertragung von Ereignisprotokollen an Ihr Speicherkonto zu erhöhen oder zu verringern. Wählen Sie die Kontrollkästchen für die Ereignistypen aus, die Sie nachverfolgen möchten.
 
 ![Ereignisprotokolle](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796664.png)
 
@@ -158,21 +156,21 @@ Wenn Sie Azure SDK 2.5 verwenden und eine benutzerdefinierte Datenquelle angeben
 ```
 
 ### <a name="performance-counters"></a>Leistungsindikatoren
-Anhand von Leistungsindikatorinformationen können Sie nach Engpässen im System suchen und die System- und Anwendungsleistung optimieren. Weitere Informationen finden Sie unter [Erstellen und Verwenden von Leistungsindikatoren in einer Azure-Anwendung](https://msdn.microsoft.com/library/azure/hh411542.aspx). Aktivieren Sie das Kontrollkästchen **Übertragung der Leistungsindikatoren aktivieren**, um Leistungsindikatoren zu erfassen. Ändern Sie den Wert **Übertragungszeitraum (Min.)**, um das Intervall zwischen der Übertragung von Ereignisprotokollen an Ihr Speicherkonto zu erhöhen oder zu verringern. Wählen Sie die Kontrollkästchen für die Leistungsindikatoren aus, die Sie nachverfolgen möchten.
+Anhand von Leistungsindikatorinformationen können Sie nach Engpässen im System suchen und die System- und Anwendungsleistung optimieren. Weitere Informationen finden Sie unter [Erstellen und Verwenden von Leistungsindikatoren in einer Azure-Anwendung](https://msdn.microsoft.com/library/azure/hh411542.aspx). Aktivieren Sie das Kontrollkästchen **Übertragung der Leistungsindikatoren aktivieren**, um Leistungsindikatoren zu erfassen. Ändern Sie den Wert **Übertragungszeitraum (Min.)** , um das Intervall zwischen der Übertragung von Ereignisprotokollen an Ihr Speicherkonto zu erhöhen oder zu verringern. Wählen Sie die Kontrollkästchen für die Leistungsindikatoren aus, die Sie nachverfolgen möchten.
 
 ![Leistungsindikatoren](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758147.png)
 
 Für das Hinzufügen eines Leistungsindikators, der nicht aufgelistet ist, geben Sie diesen mit der vorgeschlagenen Syntax ein, und klicken Sie dann auf **Hinzufügen**. Das Betriebssystem auf dem virtuellen Computer bestimmt, welche Leistungsindikatoren Sie nachverfolgen können. Weitere Informationen zur Syntax finden Sie unter [Specify a counter path (Angeben eines Indikatorpfads)](https://msdn.microsoft.com/library/windows/desktop/aa373193.aspx).
 
 ### <a name="infrastructure-logs"></a>Infrastrukturprotokolle
-Infrastrukturprotokolle enthalten Informationen über die Azure-Diagnoseinfrastruktur, das RemoteAccess-Modul und das RemoteForwarder-Modul. Aktivieren Sie das Kontrollkästchen **Übertragung von Infrastrukturprotokollen aktivieren**, um Informationen über Infrastrukturprotokolle zu sammeln. Ändern Sie den Wert **Übertragungszeitraum (Min.)**, um das Intervall zwischen der Übertragung von Infrastrukturprotokollen an Ihr Speicherkonto zu erhöhen oder zu verringern.
+Infrastrukturprotokolle enthalten Informationen über die Azure-Diagnoseinfrastruktur, das RemoteAccess-Modul und das RemoteForwarder-Modul. Aktivieren Sie das Kontrollkästchen **Übertragung von Infrastrukturprotokollen aktivieren**, um Informationen über Infrastrukturprotokolle zu sammeln. Ändern Sie den Wert **Übertragungszeitraum (Min.)** , um das Intervall zwischen der Übertragung von Infrastrukturprotokollen an Ihr Speicherkonto zu erhöhen oder zu verringern.
 
 ![Diagnoseinfrastrukturprotokolle](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758148.png)
 
 Weitere Informationen finden Sie unter [Sammeln von Protokollierungsdaten mit der Azure-Diagnose](https://msdn.microsoft.com/library/azure/gg433048.aspx).
 
 ### <a name="log-directories"></a>Protokollverzeichnisse
-Protokollverzeichnisse enthalten Daten, die aus IIS-Anforderungen (Internetinformationsdienste), fehlerhaften Anforderungen oder von Ihnen ausgewählten Ordnern gesammelt wurden. Aktivieren Sie das Kontrollkästchen **Übertragung von Protokollverzeichnissen aktivieren**, um Protokollverzeichnisse zu erfassen. Ändern Sie den Wert **Übertragungszeitraum (Min.)**, um das Intervall zwischen der Übertragung von Protokollen an Ihr Speicherkonto zu erhöhen oder zu verringern.
+Protokollverzeichnisse enthalten Daten, die aus IIS-Anforderungen (Internetinformationsdienste), fehlerhaften Anforderungen oder von Ihnen ausgewählten Ordnern gesammelt wurden. Aktivieren Sie das Kontrollkästchen **Übertragung von Protokollverzeichnissen aktivieren**, um Protokollverzeichnisse zu erfassen. Ändern Sie den Wert **Übertragungszeitraum (Min.)** , um das Intervall zwischen der Übertragung von Protokollen an Ihr Speicherkonto zu erhöhen oder zu verringern.
 
 Sie können die Kontrollkästchen der Protokolle aktivieren, die Sie sammeln möchten, z.B. **IIS-Protokolle** und **Protokolle zu fehlerhaften Anforderungen**. Es werden standardmäßig Speichercontainernamen angegeben, Sie können die Namen jedoch ändern.
 
@@ -181,7 +179,7 @@ Sie können Protokolle aus einem beliebigen Ordner erfassen. Geben Sie den Pfad 
 ![Protokollverzeichnisse](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796665.png)
 
 ### <a name="etw-logs"></a>ETW-Protokolle
-Wenn Sie [Ereignisablaufverfolgung für Windows](https://msdn.microsoft.com/library/windows/desktop/bb968803\(v=vs.85\).aspx) (ETW) verwenden und ETW-Protokolle erfassen möchten, aktivieren Sie das Kontrollkästchen **Übertragung von ETW-Protokollen aktivieren**. Ändern Sie den Wert **Übertragungszeitraum (Min.)**, um das Intervall zwischen der Übertragung von Protokollen an Ihr Speicherkonto zu erhöhen oder zu verringern.
+Wenn Sie [Ereignisablaufverfolgung für Windows](https://msdn.microsoft.com/library/windows/desktop/bb968803\(v=vs.85\).aspx) (ETW) verwenden und ETW-Protokolle erfassen möchten, aktivieren Sie das Kontrollkästchen **Übertragung von ETW-Protokollen aktivieren**. Ändern Sie den Wert **Übertragungszeitraum (Min.)** , um das Intervall zwischen der Übertragung von Protokollen an Ihr Speicherkonto zu erhöhen oder zu verringern.
 
 Die Ereignisse werden von den Ereignisquellen und Ereignismanifesten erfasst, die Sie angeben. Geben Sie im Abschnitt **Ereignisquelle** einen Namen ein, und klicken Sie dann auf **Ereignisquelle hinzufügen**, um eine Ereignisquelle festzulegen. Gleichermaßen können Sie ein Ereignismanifest im Abschnitt **Ereignismanifeste** angeben und dann auf **Ereignismanifest hinzufügen** klicken.
 
@@ -190,7 +188,7 @@ Die Ereignisse werden von den Ereignisquellen und Ereignismanifesten erfasst, di
 Das ETW-Framework wird in ASP.NET durch Klassen im Namespace [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)) unterstützt. Der Microsoft.WindowsAzure.Diagnostics-Namespace, der von [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110))-Standardklassen erbt und diese erweitert, ermöglicht die Verwendung von [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)) als Protokollierungsframework in der Azure-Umgebung. Weitere Informationen finden Sie unter [Protokollierung und Ablaufverfolgung in Microsoft Azure](https://msdn.microsoft.com/magazine/ff714589.aspx) und [Aktivieren der Diagnose in Azure Cloud Services und Virtual Machines](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ### <a name="crash-dumps"></a>Absturzabbilder
-Aktivieren Sie das Kontrollkästchen **Übertragung von Absturzabbildern aktivieren**, um Informationen zum Absturz einer Rolleninstanz zu erfassen. (Da die meisten Ausnahmen von ASP.NET verarbeitet werden, ist dies im Allgemeinen nur für Workerrollen von nutzen.) Ändern Sie den Wert **Verzeichniskontingent (%)**, um den Prozentsatz des Speicherplatzes zu erhöhen oder zu verringern, der für Absturzabbilder reserviert ist. Sie können den Speichercontainer ändern, in dem die Absturzabbilder gespeichert werden, und Sie können angeben, ob Sie ein **vollständiges Abbild** oder ein **Miniabbild** erfassen möchten.
+Aktivieren Sie das Kontrollkästchen **Übertragung von Absturzabbildern aktivieren**, um Informationen zum Absturz einer Rolleninstanz zu erfassen. (Da die meisten Ausnahmen von ASP.NET verarbeitet werden, ist dies im Allgemeinen nur für Workerrollen von nutzen.) Ändern Sie den Wert **Verzeichniskontingent (%)** , um den Prozentsatz des Speicherplatzes zu erhöhen oder zu verringern, der für Absturzabbilder reserviert ist. Sie können den Speichercontainer ändern, in dem die Absturzabbilder gespeichert werden, und Sie können angeben, ob Sie ein **vollständiges Abbild** oder ein **Miniabbild** erfassen möchten.
 
 Die derzeit nachverfolgten Prozesse werden im folgenden Screenshot aufgelistet. Wählen Sie die Kontrollkästchen für die Prozesse aus, die Sie erfassen möchten. Geben Sie den Namen des Prozesses ein, und klicken Sie dann auf **Prozess hinzufügen**, um einen weiteren Prozess der Liste hinzuzufügen.
 
