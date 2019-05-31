@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e8cea36eeed3e09f1d88ad08f95f816d5206d65
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a0fb75badac32d09dff241cd4f339a89d6cc558d
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962040"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261322"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Standardtastenkombinationen in Visual Studio
 
@@ -125,7 +125,8 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |Debug.StepIntoSpecific|**UMSCHALT+ALT+F11**|
 |Debug.StepOut|**UMSCHALT+F11**|
 |Debug.StepOutCurrentProcess|**STRG+UMSCHALT+ALT+F11**|
-|Debug.StepOver|**F10**|
+|Debug.StepOver|**F10** (beim Debuggen: Führt eine StepOver-Aktion aus)|
+|Debug.StepOver|**F10** (nicht während des Debuggens: Startet das Debuggen und endet in der ersten Zeile des Benutzercodes)|
 |Debug.StepOverCurrentProcess|**STRG+ALT+F10**|
 |Debug.StopDebugging|**UMSCHALT+F5**|
 |Debug.StopPerformanceAnalysis|**UMSCHALT+ALT+F2**|
@@ -267,9 +268,9 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 |Project.AddNewItem|**STRG+UMSCHALT+A**|
 |Project.ClassWizard|**STRG+UMSCHALT+X**|
 |Project.Override|**STRG+ALT+EINFG**|
-|Project.Previewchanges|**ALT+;**, dann **Alt+C**|
-|Project.Publishselectedfiles|**ALT+;**, dann **Alt+P**|
-|Project.Replaceselectedfilesfromserver|**ALT+;**, dann **Alt+R**|
+|Project.Previewchanges|**ALT+;** , dann **Alt+C**|
+|Project.Publishselectedfiles|**ALT+;** , dann **Alt+P**|
+|Project.Replaceselectedfilesfromserver|**ALT+;** , dann **Alt+R**|
 
 ### <a name="bkmk_projectContext"></a> Kontextmenüs für Projekte und Projektmappen
 
@@ -293,9 +294,9 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
-|SolutionExplorer.OpenFilesFilter|**STRG+[**, **O** (Buchstabe „O“)<br /><br /> oder<br /><br /> **STRG+[**, **STRG+O** (Buchstabe „O“)|
-|SolutionExplorer.PendingChangesFilter|**STRG+[**, **P**<br /><br /> oder<br /><br /> **STRG+[**, **STRG+P**|
-|SolutionExplorer.SyncWithActiveDocument|**STRG+[**, **S**<br /><br /> oder<br /><br /> **STRG+[**, **STRG+S**|
+|SolutionExplorer.OpenFilesFilter|**STRG+[** , **O** (Buchstabe „O“)<br /><br /> oder<br /><br /> **STRG+[** , **STRG+O** (Buchstabe „O“)|
+|SolutionExplorer.PendingChangesFilter|**STRG+[** , **P**<br /><br /> oder<br /><br /> **STRG+[** , **STRG+P**|
+|SolutionExplorer.SyncWithActiveDocument|**STRG+[** , **S**<br /><br /> oder<br /><br /> **STRG+[** , **STRG+S**|
 
 ### <a name="bkmk_team"></a> Team
 
@@ -803,7 +804,7 @@ Die Abschnitte in der folgenden Tabelle enthalten globale Befehle, auf die Sie v
 | Edit.GotoBraceExtend | **STRG+UMSCHALT+]** |
 | Edit.GotoRecent | **STRG+T,R** |
 | Edit.GotoNextIssueinFile | **ALT+BILD-AB** |
-| Edit.GotoPreviousIssueinFile **Alt+PgUp** |
+| Edit.GotoPreviousIssueinFile | **ALT+BILD-AUF** |
 | Edit.HideSelection | **STRG+M, STRG+H** |
 | Edit.IncreaseFilterLevel | **ALT+.** |
 | Edit.IncrementalSearch | **STRG+I** |

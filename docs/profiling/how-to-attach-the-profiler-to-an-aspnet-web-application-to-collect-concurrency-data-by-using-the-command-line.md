@@ -1,5 +1,5 @@
 ---
-title: Anfügen des Profilers an eine ASP.NET-Web-App zum Sammeln von Parallelitätsdaten über die Befehlszeile
+title: Anfügen eines Profilers an eine ASP.NET-App zum Sammeln von Parallelitätsdaten
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 443086a77adbd872c63eab5b432ec7144acb9d69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4911b41058c2546ea373302d326535be775877ba
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974275"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261566"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>Vorgehensweise: Anfügen des Profilers an eine ASP.NET-Webanwendung zum Sammeln paralleler Daten über die Befehlszeile
 In diesem Artikel wird beschrieben, wie der Profiler mit den Befehlszeilentools der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools an eine ASP.NET-Anwendung angefügt wird und Parallelitätsdaten für Prozesse und Threads erfasst werden können.
@@ -33,13 +33,13 @@ Informationen zum Abrufen des Pfads zu den Profilerstellungstools finden Sie unt
 
    - Mit der Option [/start](../profiling/start.md) wird der Profiler initialisiert, um Ressourcenkonfliktdaten zu sammeln.
 
-   - Die Option [/output](../profiling/output.md)**:**`OutputFile` ist zusammen mit **/start** erforderlich. Mit dem `OutputFile`-Objekt werden Name und Speicherort der Profilerstellungs-Datendatei (VSP-Datei) angegeben.
+   - Die Option [/output](../profiling/output.md) **:** `OutputFile` ist zusammen mit **/start** erforderlich. Mit dem `OutputFile`-Objekt werden Name und Speicherort der Profilerstellungs-Datendatei (VSP-Datei) angegeben.
 
      Sie können alle Optionen in der folgenden Tabelle in Verbindung mit der **/start**-Option verwenden.
 
    | Option | Beschreibung |
    | - | - |
-   | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain\`]`UserName` | Gibt den optionalen Domänen- und Benutzernamen des Kontos an, dem Zugriff auf den Profiler gewährt werden soll. |
+   | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain\`]`UserName` | Gibt den optionalen Domänen- und Benutzernamen des Kontos an, dem Zugriff auf den Profiler gewährt werden soll. |
    | [/crosssession](../profiling/crosssession.md) | Aktiviert die Profilerstellung für Prozesse in anderen Anmeldesitzungen. |
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Gibt einen Windows-Leistungsindikator an, dessen Daten während der Profilerstellung gesammelt werden sollen. |
    | [/automark](../profiling/automark.md) **:** `Interval` | Verwenden Sie nur **/wincounter**. Gibt die Anzahl von Millisekunden zwischen Ereignissen bei der Datensammlung mit Windows-Leistungsindikatoren an. Der Standardwert ist 500. |
@@ -47,7 +47,7 @@ Informationen zum Abrufen des Pfads zu den Profilerstellungstools finden Sie unt
 
 2. Starten Sie die ASP.NET-Anwendung wie gewohnt.
 
-3. Fügen Sie den Profiler an den ASP.NET-Arbeitsprozess an, indem Sie den folgenden Befehl eingeben:**VSPerfCmd /attach:**`PID` [**/targetclr:**`Version`]
+3. Fügen Sie den Profiler an den ASP.NET-Arbeitsprozess an, indem Sie den folgenden Befehl eingeben:**VSPerfCmd /attach:** `PID` [ **/targetclr:** `Version`]
 
    - `PID` gibt die ID oder den Namen des ASP.NET-Arbeitsprozesses an. Die Prozess-IDs aller aktiven Prozesse werden im Windows Task-Manager angezeigt.
 
@@ -62,9 +62,9 @@ Informationen zum Abrufen des Pfads zu den Profilerstellungstools finden Sie unt
 
     |Option|Beschreibung|
     |------------|-----------------|
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Die Datensammlung wird für alle Prozesse gestartet (**/globalon**) oder beendet (**/globaloff**).|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID`  [processoff](../profiling/processon-and-processoff.md) **:** `PID`|Die Datensammlung wird für den mit der Prozess-ID (`PID`) angegebenen Prozess gestartet (**/processon**) oder beendet (**/processoff**).|
-    |[/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|Mit **/attach** wird die Datensammlung für den Prozess gestartet, der anhand der Prozess-ID (`PID`) oder des Prozessnamens (*ProcName*) angegeben ist. Mit **/detach** wird die Datensammlung für den angegebenen Prozess (oder für alle Prozesse, wenn kein Prozess angegeben ist) beendet.|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Die Datensammlung wird für alle Prozesse gestartet ( **/globalon**) oder beendet ( **/globaloff**).|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID`  [processoff](../profiling/processon-and-processoff.md) **:** `PID`|Die Datensammlung wird für den mit der Prozess-ID (`PID`) angegebenen Prozess gestartet ( **/processon**) oder beendet ( **/processoff**).|
+    |[/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[ **:** {`PID`&#124;`ProcName`}]|Mit **/attach** wird die Datensammlung für den Prozess gestartet, der anhand der Prozess-ID (`PID`) oder des Prozessnamens (*ProcName*) angegeben ist. Mit **/detach** wird die Datensammlung für den angegebenen Prozess (oder für alle Prozesse, wenn kein Prozess angegeben ist) beendet.|
 
 ## <a name="end-the-profiling-session"></a>Beenden der Profilerstellungssitzung
  Um eine Profilerstellungssitzung beenden zu können, darf der Profiler keine Daten erfassen. Sie können das Sammeln von Daten einer Anwendung, für die mit der Parallelitätsmethode ein Profil erstellt wird, beenden, indem Sie den ASP.NET-Arbeitsprozess neu starten oder die **VSPerfCmd /detach**-Option aufrufen. Rufen Sie anschließend die **VSPerfCmd /shutdown**-Option auf, um den Profiler zu deaktivieren und die Profilerstellungs-Datendatei zu schließen. Der **VSPerfClrEnv /globaloff**-Befehl löscht die Umgebungsvariablen für die Profilerstellung, die Systemkonfiguration wird jedoch erst zurückgesetzt, wenn der Computer neu gestartet wird.

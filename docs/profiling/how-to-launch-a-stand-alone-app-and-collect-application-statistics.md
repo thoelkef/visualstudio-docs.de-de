@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Starten einer eigenständigen Anwendung mit dem Profiler und Sammeln von Anwendungsstatistiken über die Befehlszeile | Microsoft-Dokumentation'
+title: 'Profiler-Befehlszeile: Starten der eigenständigen App, Abrufen der App-Statistiken'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 52dcee2b-f178-4a76-bddc-e36c50bfcb78
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d5938adc51b2d89b0402e28bb5112158b07e378
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: c2544e2a9951fe6738b85b3bf9b9c31e69f2eb9b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386964"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261366"
 ---
 # <a name="how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line"></a>Vorgehensweise: Starten einer eigenständigen Anwendung mit dem Profiler und Sammeln von Anwendungsstatistiken über die Befehlszeile
 In diesem Thema wird beschrieben, wie mit den Befehlszeilentools der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools eine eigenständige (Client-)Anwendung gestartet wird und wie mit der Samplingmethode Leistungsstatistiken gesammelt werden können.
@@ -43,9 +43,9 @@ In diesem Thema wird beschrieben, wie mit den Befehlszeilentools der [!INCLUDE[v
 
     **VSPerfCmd /start:sample /output:** `OutputFile` [`Options`]
 
-   - Mit der Option [/start](../profiling/start.md)**:sample** wird der Profiler initialisiert.
+   - Mit der Option [/start](../profiling/start.md) **:sample** wird der Profiler initialisiert.
 
-   - Die Option [/output](../profiling/output.md)**:**`OutputFile` ist zusammen mit **/start** erforderlich. Mit dem `OutputFile`-Objekt werden Name und Speicherort der Profilerstellungs-Datendatei (VSP-Datei) angegeben.
+   - Die Option [/output](../profiling/output.md) **:** `OutputFile` ist zusammen mit **/start** erforderlich. Mit dem `OutputFile`-Objekt werden Name und Speicherort der Profilerstellungs-Datendatei (VSP-Datei) angegeben.
 
      Sie können jede der folgenden Optionen zusammen mit der Option **/start:sample** verwenden.
 
@@ -55,7 +55,7 @@ In diesem Thema wird beschrieben, wie mit den Befehlszeilentools der [!INCLUDE[v
    | [/automark](../profiling/automark.md) **:** `Interval` | Verwenden Sie nur **/wincounter**. Gibt die Anzahl von Millisekunden zwischen Ereignissen bei der Datensammlung mit Windows-Leistungsindikatoren an. Der Standardwert ist 500 ms. |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Gibt ein ETW-Ereignis (Ereignisablaufverfolgung für Windows) an, dessen Daten während der Profilerstellung gesammelt werden sollen. ETW-Ereignisse werden in einer separaten Datei (*ETL*) gesammelt. |
 
-3. Starten Sie die Zielanwendung. Type:**VSPerfCmd /launch:**`appName` [`Options`] [`Sample Event`]
+3. Starten Sie die Zielanwendung. Type:**VSPerfCmd /launch:** `appName` [`Options`] [`Sample Event`]
 
     Die folgenden Optionen können mit der Option **/launch** kombiniert werden.
 
@@ -69,8 +69,8 @@ In diesem Thema wird beschrieben, wie mit den Befehlszeilentools der [!INCLUDE[v
    |Samplingereignis|Beschreibung|
    |------------------|-----------------|
    |[/timer](../profiling/timer.md) **:** `Interval`|Ändert das Samplingintervall auf die Anzahl der mit `Interval` angegebenen nicht angehaltenen Taktzyklen.|
-   |[/pf](../profiling/pf.md)[**:**`Interval`]|Ändert das Samplingereignis in Seitenfehler. Wenn `Interval` angegeben wird, wird dadurch die Anzahl der Seitenfehler zwischen den Samplings angegeben. Der Standardwert ist 10.|
-   |[/sys](../profiling/sys-vsperfcmd.md)[**:**`Interval`]|Ändert das Samplingereignis in Systemaufrufe des Prozesses an den Betriebssystem-Kernel (syscalls). Wenn `Interval` angegeben wird, wird dadurch die Anzahl der Aufrufe zwischen den Samplings angegeben. Der Standardwert ist 10.|
+   |[/pf](../profiling/pf.md)[ **:** `Interval`]|Ändert das Samplingereignis in Seitenfehler. Wenn `Interval` angegeben wird, wird dadurch die Anzahl der Seitenfehler zwischen den Samplings angegeben. Der Standardwert ist 10.|
+   |[/sys](../profiling/sys-vsperfcmd.md)[ **:** `Interval`]|Ändert das Samplingereignis in Systemaufrufe des Prozesses an den Betriebssystem-Kernel (syscalls). Wenn `Interval` angegeben wird, wird dadurch die Anzahl der Aufrufe zwischen den Samplings angegeben. Der Standardwert ist 10.|
    |[/counter](../profiling/counter.md) **:** `Config`|Ändert das Samplingereignis auf den Prozessorleistungsindikator und das Samplingintervall in das in `Config` angegebene Intervall.|
 
 ## <a name="control-data-collection"></a>Steuern der Datensammlung
@@ -82,9 +82,9 @@ In diesem Thema wird beschrieben, wie mit den Befehlszeilentools der [!INCLUDE[v
 
     |Option|Beschreibung|
     |------------|-----------------|
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Die Datensammlung wird für alle Prozesse gestartet (**/globalon**) oder beendet (**/globaloff**).|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID`  [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Die Datensammlung wird für den mit der Prozess-ID (`PID`) angegebenen Prozess gestartet (**/processon**) oder beendet (**/processoff**).|
-    |[/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|Mit **/attach** wird die Datensammlung für den Prozess gestartet, der anhand der `PID` oder des Prozessnamens (ProcName) angegeben wurde. Mit **/detach** wird die Datensammlung für den angegebenen Prozess (oder für alle Prozesse, wenn kein bestimmter Prozess angegeben ist) beendet.|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Die Datensammlung wird für alle Prozesse gestartet ( **/globalon**) oder beendet ( **/globaloff**).|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID`  [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Die Datensammlung wird für den mit der Prozess-ID (`PID`) angegebenen Prozess gestartet ( **/processon**) oder beendet ( **/processoff**).|
+    |[/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[ **:** {`PID`&#124;`ProcName`}]|Mit **/attach** wird die Datensammlung für den Prozess gestartet, der anhand der `PID` oder des Prozessnamens (ProcName) angegeben wurde. Mit **/detach** wird die Datensammlung für den angegebenen Prozess (oder für alle Prozesse, wenn kein bestimmter Prozess angegeben ist) beendet.|
 
 ## <a name="end-the-profiling-session"></a>Beenden der Profilerstellungssitzung
  Um eine Profilerstellungssitzung zu beenden, darf der Profiler nicht mehr an eine profilierte Anwendung angefügt sein und muss explizit beendet werden. Den Profiler können Sie von einer Anwendung trennen, für die ein Profil mit der Samplingmethode erstellt wurde, indem Sie die Anwendung schließen oder die Option **VSPerfCmd /detach** aufrufen. Rufen Sie anschließend die Option **VSPerfCmd /shutdown** auf, um den Profiler zu deaktivieren und die Profilerstellungs-Datendatei zu schließen. Mit dem Befehl **VSPerfClrEnv /off** werden die Umgebungsvariablen für die Profilerstellung gelöscht.
@@ -95,7 +95,7 @@ In diesem Thema wird beschrieben, wie mit den Befehlszeilentools der [!INCLUDE[v
 
     - Schließen Sie die Zielanwendung.
 
-         - oder - 
+         - oder -
 
     - Geben Sie **VSPerfCmd /detach** ein.
 
