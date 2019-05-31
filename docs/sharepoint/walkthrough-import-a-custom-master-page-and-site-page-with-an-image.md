@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Importieren einer benutzerdefinierten Gestaltungsvorlage und einer Websiteseite mit einem Bild | Microsoft-Dokumentation'
+title: Importieren von benutzerdefinierten Gestaltungsvorlage & Websiteseite mit Bild
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c303ab86409a082c3a6817adc526ded432ea54bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8bd2d9054571e52bc9fbb3906bc1880bb94e407a
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62834386"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66400897"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Exemplarische Vorgehensweise: Importieren Sie eine benutzerdefinierte Gestaltungsvorlage und einer Websiteseite mit einem Bild
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie zum Importieren einer benutzerdefinierten SharePoint-Gestaltungsvorlage und einer Websiteseite mit Bild in einem [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Projekt.
@@ -27,7 +27,7 @@ ms.locfileid: "62834386"
 
 - Erstellen Sie eine benutzerdefinierte Gestaltungsvorlage und eine Websiteseite unter Verwendung eines Images in SharePoint Designer.
 
-- Exportieren Sie eine benutzerdefinierte Gestaltungsvorlage, Bild- und Seite "Website" in einer SharePoint-Lösung (*.wsp*) Datei.
+- Exportieren Sie eine benutzerdefinierte Gestaltungsvorlage, Bild- und Seite "Website" in einer SharePoint-Lösung ( *.wsp*) Datei.
 
 - Importieren und Bereitstellen der *.wsp* Eingabedatei in eine [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint-Projekt mit dem Import SharePoint Solution Package-Projekt.
 
@@ -127,7 +127,7 @@ ms.locfileid: "62834386"
 6. Speichern Sie die Seite für die aktualisierten Standorts.
 
 ## <a name="export-the-items-from-sharepoint"></a>Exportieren Sie die Elemente aus SharePoint
- Exportieren Sie die Elemente aus SharePoint in einer SharePoint-Lösung (*.wsp*) Datei.
+ Exportieren Sie die Elemente aus SharePoint in einer SharePoint-Lösung ( *.wsp*) Datei.
 
 #### <a name="to-export-items-from-sharepoint-designer"></a>Exportieren von Elementen aus SharePoint Designer
 

@@ -40,7 +40,7 @@ Verwenden Sie die Seite **Erstellen** des **Projekt-Designers**, um die Buildkon
  Gibt an, welche Konfigurationseinstellungen angezeigt oder geändert werden sollen. Es stehen die Einstellungen **Aktiv (Debuggen)** (Standard), **Debuggen**, **Release** oder **Alle Konfigurationen** zur Verfügung.  
   
  **Plattform**  
- Gibt an, welche Plattformeinstellungen angezeigt oder geändert werden sollen. Die Standardeinstellung ist **Aktiv (Any CPU)**. Sie können die aktive Plattform mit dem **Konfigurations-Manager** ändern. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen](../../ide/how-to-create-and-edit-configurations.md).  
+ Gibt an, welche Plattformeinstellungen angezeigt oder geändert werden sollen. Die Standardeinstellung ist **Aktiv (Any CPU)** . Sie können die aktive Plattform mit dem **Konfigurations-Manager** ändern. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen](../../ide/how-to-create-and-edit-configurations.md).  
   
 ## <a name="general"></a>Allgemein  
  Die folgenden Optionen ermöglichen es Ihnen, einige C#-Compilereinstellungen zu konfigurieren.  

@@ -109,7 +109,7 @@ Benutzer können auch Elemente in andere Elemente einfügen.
 
       Sie können die Pfad-Navigation-Tool verwenden, um jeden Pfad zu erstellen:
 
-      1. Klicken Sie unter **Prozess Merge durch Erstellen von Links in Pfaden**, klicken Sie auf  **\<Pfad hinzufügen >**.
+      1. Klicken Sie unter **Prozess Merge durch Erstellen von Links in Pfaden**, klicken Sie auf  **\<Pfad hinzufügen >** .
 
       2. Klicken Sie auf den Dropdown-Pfeil rechts neben dem Listenelement. Es wird eine Strukturansicht angezeigt.
 
@@ -224,7 +224,7 @@ In benutzerdefinierten Zusammenführung von Code können Sie definieren, was ges
 
      Wählen Sie in einer DSL, die von der Lösung für die minimale Sprache generiert wird, z. B. `ExampleModel`.
 
-3. In der **Eigenschaften** legen **generiert doppelte Ableitungen** zu **"true"**.
+3. In der **Eigenschaften** legen **generiert doppelte Ableitungen** zu **"true"** .
 
 4. Generieren Sie die Projektmappe neu.
 
@@ -312,7 +312,7 @@ Sie können eine forward elementmerge-Anweisung in der Component Model-Lösung e
 
 11. In **Projektmappen-Explorer**, Sample.mydsl zu öffnen. Das Diagramm und die **ComponentLanguage Toolbox** angezeigt werden.
 
-12. Ziehen Sie ein **Eingangsport** aus der **Toolbox** in ein anderes **Eingangsport.** Ziehen Sie jetzt eine **"outputport"** auf eine **InputPort** , und klicken Sie dann an einen anderen **"outputport"**.
+12. Ziehen Sie ein **Eingangsport** aus der **Toolbox** in ein anderes **Eingangsport.** Ziehen Sie jetzt eine **"outputport"** auf eine **InputPort** , und klicken Sie dann an einen anderen **"outputport"** .
 
      Daraufhin sollte nicht den Zeiger nicht verfügbar, und Sie sollten so löschen Sie die neue **Eingangsport** auf vorhandener basieren. Wählen Sie die neue **Eingangsport** und ziehen Sie es zu einem anderen Punkt auf der **Komponente**.
 

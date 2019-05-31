@@ -85,7 +85,7 @@ Wenn Sie **Alle suchen** auswählen, erhalten Sie im Fenster **Suchergebnisse** 
 
 ### <a name="create-custom-search-folder-sets"></a>Erstellen benutzerdefinierter Suchordnersätze
 
-Sie können einen Suchbereich definieren, indem Sie die Schaltfläche **Suchordner auswählen** (sie sieht so aus: **…**) neben dem Feld **Suchen in** auswählen. Im Dialogfeld **Suchordner auswählen** können Sie einen zu durchsuchenden Ordnersatz angeben, und Sie können die Spezifikation zur späteren Wiederverwendung speichern.
+Sie können einen Suchbereich definieren, indem Sie die Schaltfläche **Suchordner auswählen** (sie sieht so aus: **…** ) neben dem Feld **Suchen in** auswählen. Im Dialogfeld **Suchordner auswählen** können Sie einen zu durchsuchenden Ordnersatz angeben, und Sie können die Spezifikation zur späteren Wiederverwendung speichern.
 
 > [!TIP]
 > Wenn Sie Ihrem lokalen Computer ein Remotecomputer-Laufwerk zugeordnet haben, können Sie Ordner für die Suche auf dem Remotecomputer angeben.
@@ -121,10 +121,10 @@ Mit den folgenden Tasten und Aktionen werden unterschiedliche Verhalten für das
 |**STRG-TASTE**+**ALT-TASTE**+Klick|Ein zweites Caretzeichen wird hinzugefügt.|
 |**STRG-TASTE**+**ALT-TASTE**+Doppelklick|Eine zweite Wortauswahl wird hinzugefügt.|
 |**STRG-TASTE**+**ALT-TASTE**+Klick+Ziehen|Eine zweite Auswahl wird hinzugefügt.|
-|**UMSCHALTTASTE**+**ALT-TASTE**+**.**|Der nächsten übereinstimmende Text wird als Auswahl hinzugefügt.|
-|**STRG-TASTE**+**UMSCHALTTASTE**+**ALT-TASTE**+**,**|Alle übereinstimmenden Texte werden als Auswahl hinzugefügt.|
-|**UMSCHALTTASTE**+**ALT-TASTE**+**,**|Das letzte Ereignis wird entfernt.|
-|**STRG-TASTE**+**UMSCHALTTASTE**+**ALT-TASTE**+**.**|Die nächste Übereinstimmung wird übersprungen.|
+|**UMSCHALTTASTE**+**ALT-TASTE**+ **.**|Der nächsten übereinstimmende Text wird als Auswahl hinzugefügt.|
+|**STRG-TASTE**+**UMSCHALTTASTE**+**ALT-TASTE**+ **,**|Alle übereinstimmenden Texte werden als Auswahl hinzugefügt.|
+|**UMSCHALTTASTE**+**ALT-TASTE**+ **,**|Das letzte Ereignis wird entfernt.|
+|**STRG-TASTE**+**UMSCHALTTASTE**+**ALT-TASTE**+ **.**|Die nächste Übereinstimmung wird übersprungen.|
 |**ALT-TASTE**+Klick|Eine Feldauswahl wird hinzugefügt.|
 |**ESC-Taste** oder Klick|Die gesamte Auswahl wird aufgehoben.|
 

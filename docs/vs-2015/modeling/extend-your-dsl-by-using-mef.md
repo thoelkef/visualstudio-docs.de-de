@@ -131,7 +131,7 @@ Sie können Ihrer domänenspezifischen Sprache (DSL) erweitern, mithilfe des Man
   
    - Diese Assembly wurde in der Regel einen Namen mit der Endung ". DSL.dll".  
   
-   - Wenn Sie Zugriff auf das DSL-Projekt haben, finden Sie die Assemblydatei im Verzeichnis **Dsl\bin\\\\***  
+   - Wenn Sie Zugriff auf das DSL-Projekt haben, finden Sie die Assemblydatei im Verzeichnis **Dsl\bin\\\\** *  
   
    - Wenn Sie Zugriff auf die DSL-VSIX-Datei haben, finden Sie die Assembly durch Ändern der Dateinamenerweiterung, der die VSIX-Datei in ".zip". Dekomprimieren Sie die ZIP-Datei.  
   
@@ -147,23 +147,23 @@ Sie können Ihrer domänenspezifischen Sprache (DSL) erweitern, mithilfe des Man
   
    - System.Windows.Forms.dll  
   
-4. Erstellen Sie ein VSIX-Projekt, in der gleichen Projektmappe. Klicken Sie hierzu in der **neues Projekt** Dialogfeld erweitern Sie **Visual Basic** oder **Visual C#-**, klicken Sie auf **Erweiterbarkeit**, und wählen Sie dann auf  **VSIX-Projekt**.  
+4. Erstellen Sie ein VSIX-Projekt, in der gleichen Projektmappe. Klicken Sie hierzu in der **neues Projekt** Dialogfeld erweitern Sie **Visual Basic** oder **Visual C#-** , klicken Sie auf **Erweiterbarkeit**, und wählen Sie dann auf  **VSIX-Projekt**.  
   
 5. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste in des VSIX-Projekts, und klicken Sie dann auf **als Startprojekt festlegen**.  
   
-6. Öffnen Sie in das neue Projekt **"Source.Extension.vsixmanifest"**.  
+6. Öffnen Sie in das neue Projekt **"Source.Extension.vsixmanifest"** .  
   
-7. Klicken Sie auf **fügen Inhalt hinzu,**. Legen Sie im Dialogfeld **Inhaltstyp** zu **MEF-Komponente**, und **Quellprojekt** auf Ihr Klassenbibliotheksprojekt hinzu.  
+7. Klicken Sie auf **fügen Inhalt hinzu,** . Legen Sie im Dialogfeld **Inhaltstyp** zu **MEF-Komponente**, und **Quellprojekt** auf Ihr Klassenbibliotheksprojekt hinzu.  
   
 8. Fügen Sie ein VSIX-Verweis auf die DSL hinzu.  
   
-   1. In **"Source.Extension.vsixmanifest"**, klicken Sie auf **Verweis hinzufügen**  
+   1. In **"Source.Extension.vsixmanifest"** , klicken Sie auf **Verweis hinzufügen**  
   
    2. Klicken Sie im Dialogfeld auf **Nutzlast hinzufügen** und suchen Sie dann auf die VSIX-Datei der DSL. Die VSIX-Datei wird in der DSL-Projektmappe erstellt, in ** DslPackage\bin\\\\***.  
   
        Dadurch können Benutzer, die die DSL und die Erweiterung zur gleichen Zeit zu installieren. Wenn der Benutzer bereits die DSL installiert hat, wird nur die Erweiterung installiert.  
   
-9. Überprüfen und aktualisieren Sie die anderen Felder des **"Source.Extension.vsixmanifest"**. Klicken Sie auf **Editionen auswählen** und überprüfen Sie, ob die richtigen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Editionen festgelegt sind.  
+9. Überprüfen und aktualisieren Sie die anderen Felder des **"Source.Extension.vsixmanifest"** . Klicken Sie auf **Editionen auswählen** und überprüfen Sie, ob die richtigen [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Editionen festgelegt sind.  
   
 10. Fügen Sie Code hinzu, um das Klassenbibliotheksprojekt hinzu. Verwenden Sie die Beispiele im nächsten Abschnitt als Leitfaden.  
   

@@ -74,13 +74,13 @@ ms.locfileid: "58959464"
 
  Folgende Ergebnisse werden zurückgegeben:
 
- **Changing-Zeiger - nach Wert übergeben:**
+ **Changing-Zeiger - nach Wert übergeben:** 
 **12345**
 **12345**
 **ändern – als Verweis übergebenen Zeiger:** 
 **12345**
 **12345 ABCDE**
-**Übergabe nach Wert zurückgibt:**
+**Übergabe nach Wert zurückgibt:** 
 **12345 ABCDE**
 ## <a name="try-pattern-methods"></a>Probieren Sie Mustermethoden
 

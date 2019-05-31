@@ -117,7 +117,7 @@ In der folgenden Tabelle werden die Elemente der Symbolleiste des **Bildbearbeit
 |**Unregelmäßige Auswahl**|Ermöglicht die Auswahl eines unregelmäßigen Bereichs eines Bilds. Nachdem Sie einen Bereich ausgewählt haben, können Sie ihn ausschneiden, kopieren, verschieben, skalieren, drehen, spiegeln oder löschen. Wenn eine aktive Auswahl vorhanden ist, haben die Zeichenwerkzeuge nur Auswirkungen auf den ausgewählten Bereich.|
 |**Stabsauswahl**|Ermöglicht die Auswahl eines Bildbereichs, der eine ähnliche Farbe aufweist. Die *Toleranz*, d.h. der maximale Unterschied zwischen benachbarten Farben, innerhalb dessen sie als ähnlich betrachtet werden, lässt sich so konfigurieren, dass ein kleinerer oder größerer Bereich von ähnlichen Farben berücksichtigt werden kann. Nachdem Sie einen Bereich ausgewählt haben, können Sie ihn ausschneiden, kopieren, verschieben, skalieren, drehen, spiegeln oder löschen. Wenn eine aktive Auswahl vorhanden ist, haben die Zeichenwerkzeuge nur Auswirkungen auf den ausgewählten Bereich.|
 |**Schwenken**|Ermöglicht das Verschieben des Bilds relativ zum Fensterrahmen. Wählen Sie im **Schwenken**-Modus einen Punkt auf dem Bild aus, und bewegen Sie ihn.<br /><br /> Sie können den **Schwenken**-Modus vorübergehend aktivieren, indem Sie **STRG** gedrückt halten.|
-|**Zoom**|Ermöglicht das Anzeigen von mehr oder weniger Bilddetails relativ zum Fensterrahmen. Wählen Sie im **Zoom**-Modus einen Punkt auf dem Bild aus, und verschieben Sie ihn: zum Vergrößern nach rechts oder nach unten und zum Verkleinern nach links oder nach oben.<br /><br /> Sie können ihn vergrößern oder verkleinern, indem Sie **STRG** gedrückt halten, während Sie entweder das Mausrad verwenden oder das Pluszeichen (**+**) oder Minuszeichen (**-**) drücken.|
+|**Zoom**|Ermöglicht das Anzeigen von mehr oder weniger Bilddetails relativ zum Fensterrahmen. Wählen Sie im **Zoom**-Modus einen Punkt auf dem Bild aus, und verschieben Sie ihn: zum Vergrößern nach rechts oder nach unten und zum Verkleinern nach links oder nach oben.<br /><br /> Sie können ihn vergrößern oder verkleinern, indem Sie **STRG** gedrückt halten, während Sie entweder das Mausrad verwenden oder das Pluszeichen ( **+** ) oder Minuszeichen ( **-** ) drücken.|
 |**Originalgröße anzeigen**|Zeigt das Bild in einem 1:1-Verhältnis zwischen Pixel des Bilds und Pixel des Bildschirms.|
 |**Mit Zoom anpassen**|Zeigt das ganze Bild im Fensterrahmen an.|
 |**Auf Breite vergrößern**|Zeigt die gesamte Breite des Bilds im Fensterrahmen an.|
@@ -150,11 +150,11 @@ In der folgenden Tabelle werden die Elemente der Symbolleiste der **Bildbearbeit
 
 ### <a name="work-with-mip-levels"></a>Arbeiten mit MIP-Ebenen
 
-Einige Bildformate, z.B. DirectDraw Surface (*.dds*), unterstützen MIP-Ebenen für den Detaillierungsgrad (LOD) des Texturraums. Informationen zum Generieren von und Arbeiten mit MIP-Ebenen finden Sie unter [Vorgehensweise: Erstellen und Ändern von MIP-Ebenen](../designers/how-to-create-and-modify-mip-levels.md)
+Einige Bildformate, z.B. DirectDraw Surface ( *.dds*), unterstützen MIP-Ebenen für den Detaillierungsgrad (LOD) des Texturraums. Informationen zum Generieren von und Arbeiten mit MIP-Ebenen finden Sie unter [Vorgehensweise: Erstellen und Ändern von MIP-Ebenen](../designers/how-to-create-and-modify-mip-levels.md)
 
 ### <a name="work-with-transparency"></a>Arbeiten mit Transparenz
 
-Einige Bildformate, z.B. DirectDraw Surface (*.dds*), unterstützen Transparenz. Es gibt mehrere Möglichkeiten, Transparenz zu verwenden. Diese hängen von Ihrem Tool ab. Legen Sie im Fenster **Eigenschaften** die Komponente **A** (Alpha) für die Farbauswahl fest, um die Ebene der Transparenz für eine Farbauswahl anzugeben.
+Einige Bildformate, z.B. DirectDraw Surface ( *.dds*), unterstützen Transparenz. Es gibt mehrere Möglichkeiten, Transparenz zu verwenden. Diese hängen von Ihrem Tool ab. Legen Sie im Fenster **Eigenschaften** die Komponente **A** (Alpha) für die Farbauswahl fest, um die Ebene der Transparenz für eine Farbauswahl anzugeben.
 
 In der folgende Tabelle wird beschrieben, wie unterschiedliche Tools Transparenz anwenden:
 
@@ -250,8 +250,8 @@ In der folgenden Tabelle werden die Tooleigenschaften beschrieben:
 |Alles auswählen|**STRG**+**A**|
 |Die aktuelle Auswahl löschen|**Löschen**|
 |Brechen Sie die aktuelle Auswahl ab.|**ESC** (ESCAPE)|
-|Vergrößern|**STRG**+**Mausrad vorwärts**<br /><br /> **STRG**+**BildAuf**<br /><br /> Pluszeichen (**+**)|
-|Verkleinern|**STRG**-**Mausrad rückwärts**<br /><br /> **STRG**-**BildAb**<br /><br /> Minuszeichen (**-**)|
+|Vergrößern|**STRG**+**Mausrad vorwärts**<br /><br /> **STRG**+**BildAuf**<br /><br /> Pluszeichen ( **+** )|
+|Verkleinern|**STRG**-**Mausrad rückwärts**<br /><br /> **STRG**-**BildAb**<br /><br /> Minuszeichen ( **-** )|
 |Bild nach oben schwenken|**Mausrad rückwärts**<br /><br /> **BildAb**|
 |Bild nach unten schwenken|**Mausrad vorwärts**<br /><br /> **BildAuf**|
 |Bild nach links schwenken|**UMSCHALTTASTE**+**Mausrad rückwärts**<br /><br /> **Mausrad links**<br /><br /> **UMSCHALTTASTE**+**BildAb**|

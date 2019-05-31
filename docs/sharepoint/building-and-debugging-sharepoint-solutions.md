@@ -24,7 +24,7 @@ ms.locfileid: "62988140"
   Im Allgemeinen erstellen und Debuggen von SharePoint-Lösungen ist identisch mit dem Erstellen und Debuggen von anderen Projekttypen in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Die vorhandenen Unterschiede werden in diesen Themen des Abschnitts erläutert.
 
 ## <a name="project-output-for-sharepoint-solutions"></a>Projektausgabe für SharePoint-Lösungen
- Erstellen von SharePoint-Lösungen erstellt, Assemblys und ein Lösungspaket (*.wsp*) Datei. Die folgende Tabelle zeigt die Speicherorte dieser Dateien während eines Builds.
+ Erstellen von SharePoint-Lösungen erstellt, Assemblys und ein Lösungspaket ( *.wsp*) Datei. Die folgende Tabelle zeigt die Speicherorte dieser Dateien während eines Builds.
 
 |Element erstellen|Ordner "Output"|
 |----------------|-------------------|

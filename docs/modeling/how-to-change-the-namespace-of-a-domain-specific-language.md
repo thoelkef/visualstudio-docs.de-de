@@ -46,7 +46,7 @@ Sie können den Namespace einer domänenspezifischen Sprache ändern. Nehmen Sie
 
 10. Setzen Sie die experimentelle Instanz Visual Studio zurück.
 
-    1. Löschen Sie **\Users\\**_{Ihr Name}_**\AppData\Local\Microsoft\VisualStudio\\\*"exp"**.
+    1. Löschen Sie **\Users\\** _{Ihr Name}_ **\AppData\Local\Microsoft\VisualStudio\\\*"exp"** .
 
     2. Auf der Windows **starten** Menü wählen **Programme** > **Microsoft Visual Studio 2010 SDK** > **Tools**  >  **Zurücksetzen die experimentelle Instanz**.
 

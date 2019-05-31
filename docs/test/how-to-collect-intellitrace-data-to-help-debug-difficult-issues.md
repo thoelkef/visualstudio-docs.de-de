@@ -73,7 +73,7 @@ Bevor Sie die Schritte in diesem Verfahren ausführen, müssen Sie die Testeinst
 
 5. Wählen Sie die Registerkarte **Allgemein** aus. Wählen Sie **Nur IntelliTrace-Ereignisse** aus, um beim Testen signifikante Diagnoseereignisse mit minimalen Auswirkungen auf die Leistung aufzuzeichnen.
 
-     - oder - 
+     - oder -
 
      Wählen Sie **IntelliTrace events and call information** (IntelliTrace-Ereignisse und Aufrufinformationen) aus, um Diagnoseereignisse und die Ablaufverfolgung auf Methodenebene unter Anzeige von Aufrufinformationen aufzuzeichnen. Diese Ebene der Ablaufverfolgung kann sich beim Ausführen der Tests auf die Leistung auswirken.
 
@@ -81,7 +81,7 @@ Bevor Sie die Schritte in diesem Verfahren ausführen, müssen Sie die Testeinst
 
 7. Wählen Sie die Registerkarte **Module** aus. Wählen Sie entweder **Collect data from all modules except for the following** (Daten aus allen Modulen mit Ausnahme der folgenden auflisten) aus, und fügen Sie der Liste der Module ein Modul mit der Option **Hinzufügen** hinzu, oder entfernen Sie ein Modul mit der Option **Entfernen**. Mit dieser Option können Sie alle im System ausgeführten Module einschließen, mit Ausnahme der von Ihnen angegebenen Module.
 
-     - oder - 
+     - oder -
 
      Wählen Sie **Collect data from only the following modules** (Daten nur aus den folgenden Modulen auflisten) aus, und fügen Sie der Liste der Module ein Modul mit **Hinzufügen** hinzu, oder entfernen Sie ein Modul mit **Entfernen**. Mit dieser Option können Sie die gewünschten Module genau angeben.
 
@@ -90,7 +90,7 @@ Bevor Sie die Schritte in diesem Verfahren ausführen, müssen Sie die Testeinst
 
 8. Wählen Sie die Registerkarte **Prozesse** aus. Wählen Sie **Collect data from all processes except for the following** (Daten von allen Prozessen mit Ausnahme der folgenden sammeln) aus, und fügen Sie der Liste der Prozesse einen Prozess mit **Hinzufügen** hinzu, oder entfernen Sie einen Prozess mit **Entfernen**. Mit dieser Option können Sie alle im System ausgeführten Prozesse einschließen, mit Ausnahme der von Ihnen angegebenen Prozesse.
 
-     - oder - 
+     - oder -
 
      Wählen Sie **Nur Daten von den angegebenen Prozessen sammeln** aus, und fügen Sie der Liste der Prozesse mit **Hinzufügen** einen Prozess hinzu, oder entfernen Sie einen Prozess mit **Entfernen**. Mit dieser Option können Sie die gewünschten Prozesse genau angeben.
 

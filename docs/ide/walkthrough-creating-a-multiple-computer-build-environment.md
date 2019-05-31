@@ -62,7 +62,7 @@ In diesem Abschnitt wird das Kopieren bestimmter Dateien, Compilern, Buildtools,
 - Auf einem x86-Computer lautet der Standardspeicherort *C:\Programme\Microsoft Visual Studio*.
 - Auf einem x64-Computer lautet der Standardspeicherort *C:\Programme (x86)\Microsoft Visual Studio*.
 
-Beachten Sie, dass der Name des *Programmdatei*-Ordners vom installierten Betriebssystem abhängt. Auf einem x86-Computer lautet der Name *Programme*, auf einem x64-Computer hingegen *Programme (x86)*. Ungeachtet der Systemarchitektur wird der Ordner *Programme* in dieser exemplarischen Vorgehensweise als *%ProgramFiles%* bezeichnet.
+Beachten Sie, dass der Name des *Programmdatei*-Ordners vom installierten Betriebssystem abhängt. Auf einem x86-Computer lautet der Name *Programme*, auf einem x64-Computer hingegen *Programme (x86)* . Ungeachtet der Systemarchitektur wird der Ordner *Programme* in dieser exemplarischen Vorgehensweise als *%ProgramFiles%* bezeichnet.
 
 > [!NOTE]
 > Auf dem Build-Computer müssen sich alle relevanten Dateien auf demselben Laufwerk befinden. Der Laufwerkbuchstabe des Laufwerks darf sich allerdings von dem Laufwerkbuchstaben für das Laufwerk, in dem Visual Studio auf dem Hostcomputer installiert ist, unterscheiden. Auf jeden Fall müssen Sie den Speicherort der Dateien berücksichtigen, wenn Sie , wie weiter unten in diesem Dokument beschrieben, Registrierungseinträge erstellen.

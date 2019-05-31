@@ -111,7 +111,7 @@ Sie können zulassen, dass ein Element auf eine andere gezogen werden, aus der T
   
       Sie können die Pfad-Navigation-Tool verwenden, um jeden Pfad zu erstellen:  
   
-   3. Klicken Sie unter **Prozess Merge durch Erstellen von Links in Pfaden**, klicken Sie auf  **\<Pfad hinzufügen >**.  
+   3. Klicken Sie unter **Prozess Merge durch Erstellen von Links in Pfaden**, klicken Sie auf  **\<Pfad hinzufügen >** .  
   
    4. Klicken Sie auf den Dropdown-Pfeil rechts neben dem Listenelement. Es wird eine Strukturansicht angezeigt.  
   
@@ -225,7 +225,7 @@ Sie können zulassen, dass ein Element auf eine andere gezogen werden, aus der T
   
      Wählen Sie in einer DSL, die von der Lösung für die minimale Sprache generiert wird, z. B. `ExampleModel`.  
   
-3. In der **Eigenschaften** legen **generiert doppelte Ableitungen** zu **"true"**.  
+3. In der **Eigenschaften** legen **generiert doppelte Ableitungen** zu **"true"** .  
   
 4. Generieren Sie die Projektmappe neu.  
   
@@ -313,7 +313,7 @@ Sie können zulassen, dass ein Element auf eine andere gezogen werden, aus der T
   
 11. In **Projektmappen-Explorer**, Sample.mydsl zu öffnen. Das Diagramm und die **ComponentLanguage Toolbox** angezeigt werden.  
   
-12. Ziehen Sie ein **Eingangsport** aus der **Toolbox** in ein anderes **Eingangsport.** Ziehen Sie jetzt eine **"outputport"** auf eine **InputPort** , und klicken Sie dann an einen anderen **"outputport"**.  
+12. Ziehen Sie ein **Eingangsport** aus der **Toolbox** in ein anderes **Eingangsport.** Ziehen Sie jetzt eine **"outputport"** auf eine **InputPort** , und klicken Sie dann an einen anderen **"outputport"** .  
   
      Daraufhin sollte nicht den Zeiger nicht verfügbar, und Sie sollten so löschen Sie die neue **Eingangsport** auf vorhandener basieren. Wählen Sie die neue **Eingangsport** und ziehen Sie es zu einem anderen Punkt auf der **Komponente**.  
   

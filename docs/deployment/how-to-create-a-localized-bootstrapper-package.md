@@ -24,7 +24,7 @@ Nachdem Sie ein Bootstrapperpaket erstellt haben, können Sie lokalisierte Versi
 
  Visual Studio 2010 umfasst standardmäßig nur lokalisierte Bootstrapperpakete für .NET Framework 4, .NET Framework 4 Client Profile, F# Runtime 2.0 und F# Runtime 4.0. Mit den folgenden drei Schritten können Sie lokalisierte Pakete für andere Bootstrapper erstellen.
 
-1. Erstellen Sie einen Ordner mit dem Namen des Gebietsschemas unter *\Programme\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<Bootstrapperpaketname >*.
+1. Erstellen Sie einen Ordner mit dem Namen des Gebietsschemas unter *\Programme\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<Bootstrapperpaketname >* .
 
 2. Erstellen Sie eine Datei, die die Softwarelizenzbedingungen für das Bootstrapperpaket enthält, und legen Sie diese in dem neuen Ordner ab.
 
@@ -76,9 +76,9 @@ Nachdem Sie ein Bootstrapperpaket erstellt haben, können Sie lokalisierte Versi
 
 1. Erstellen Sie einen Ordner mit dem Namen *fr*. Der Ordnername muss mit dem Gebietsschemanamen übereinstimmen.
 
-     Erstellen Sie auf 32-Bit-Computern den Ordner im Ordner *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\*.
+     Erstellen Sie auf 32-Bit-Computern den Ordner im Ordner *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\* .
 
-     Erstellen Sie auf 64-Bit-Computern den Ordner im Ordner *\Program Files (86)\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\*.
+     Erstellen Sie auf 64-Bit-Computern den Ordner im Ordner *\Program Files (86)\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\* .
 
 2. Legen Sie eine lokalisierte Version der Softwarelizenzbedingungen im Ordner *fr* ab.
 

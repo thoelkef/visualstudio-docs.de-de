@@ -34,7 +34,7 @@ Bevor Sie die erforderliche Software mit einer [!INCLUDE[ndptecclick](../include
   
 3. Öffnen Sie im Editor die Datei **Package.xml**.  
   
-4. Suchen Sie die **Namen** -Element mit **http://go.microsoft.com/fwlink**, und kopieren Sie die URL. Schließen Sie die **LinkID**-Komponente ein.  
+4. Suchen Sie die **Namen** -Element mit **http://go.microsoft.com/fwlink** , und kopieren Sie die URL. Schließen Sie die **LinkID**-Komponente ein.  
   
     > [!NOTE]
     > Wenn kein **Namen** Element enthält **http://go.microsoft.com/fwlink** öffnen die **Product.xml** Datei im Stammordner für die erforderliche Komponente, und suchen Sie die **Fwlink** Zeichenfolge.  

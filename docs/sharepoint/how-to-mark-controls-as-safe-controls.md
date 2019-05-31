@@ -43,11 +43,11 @@ ms.locfileid: "63443074"
 
 4. In der **Einträge für sicheres Steuerelement** Dialogfeld wählen die **hinzufügen** Schaltfläche zweimal, um zwei Einträge für sicheres Steuerelement zum Hinzufügen der **Mitglieder** Bereich: eine für die Schaltfläche und eine für das Textfeld.
 
-5. Wählen Sie den ersten Eintrag für sicheres Steuerelement aus, und ändern Sie den Wert des der **sicher** Eigenschaft **"false"**, dessen **Typnamen** Eigenschaft **"Button1"**, und die zugehörige **sicher für Skript** Eigenschaft **"false"**.
+5. Wählen Sie den ersten Eintrag für sicheres Steuerelement aus, und ändern Sie den Wert des der **sicher** Eigenschaft **"false"** , dessen **Typnamen** Eigenschaft **"Button1"** , und die zugehörige **sicher für Skript** Eigenschaft **"false"** .
 
      Dieser Schritt identifiziert das Schaltflächen-Steuerelement als ein nicht sicheres Steuerelement.
 
-6. Wählen Sie den zweiten Eintrag für sicheres Steuerelement in der Liste aus. Lassen Sie den Wert des der **sicher** Eigenschaft als **"true"** und legen Sie seine **Typnamen** Eigenschaft, um **TextBox1** und dessen **sicher Vor Skripteinschleusung** Eigenschaft **"true"**.
+6. Wählen Sie den zweiten Eintrag für sicheres Steuerelement in der Liste aus. Lassen Sie den Wert des der **sicher** Eigenschaft als **"true"** und legen Sie seine **Typnamen** Eigenschaft, um **TextBox1** und dessen **sicher Vor Skripteinschleusung** Eigenschaft **"true"** .
 
      Das Textfeld-Steuerelement ist nun als Steuerelement markiert, die sicher vor skripteinschleusung ist.
 

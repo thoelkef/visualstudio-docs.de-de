@@ -76,7 +76,7 @@ Bei C/C++-Projekten können Sie in den Eigenschaftenseiten des Projekts, anstatt
 
 1. Am oberen Rand der **Eigenschaften** Bereich unter **Konfiguration**Option **alle Konfigurationen**.
 
-1. Klicken Sie unter **C/C++-** > **allgemeine** > **Additional Include Directories**, geben Sie den Ordner, die Header-Dateien verfügt.
+1. Klicken Sie unter **C/C++-**  > **allgemeine** > **Additional Include Directories**, geben Sie den Ordner, die Header-Dateien verfügt.
 
 1. Klicken Sie unter **Linker** > **allgemeine** > **zusätzliche Bibliotheken Verzeichnisse**, geben Sie den Ordner, die LIB-Dateien enthält.
 

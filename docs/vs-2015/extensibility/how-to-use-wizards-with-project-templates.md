@@ -57,7 +57,7 @@ Visual Studio stellt die <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>-Sc
   
 1. Richten Sie das VSIX-Projekt aus, um eine Assembly erstellt werden kann.  
   
-2. In der **Projektmappen-Explorer**, wählen Sie die VSIX-Projektknoten. Unten im Projektmappen-Explorer sollte die **Eigenschaften** Fenster. Wenn Sie nicht, wählen Sie **anzeigen / Fenster "Eigenschaften"**, oder drücken Sie **F4**. Wählen Sie im Fenster Eigenschaften die folgenden Felder mit `true`:  
+2. In der **Projektmappen-Explorer**, wählen Sie die VSIX-Projektknoten. Unten im Projektmappen-Explorer sollte die **Eigenschaften** Fenster. Wenn Sie nicht, wählen Sie **anzeigen / Fenster "Eigenschaften"** , oder drücken Sie **F4**. Wählen Sie im Fenster Eigenschaften die folgenden Felder mit `true`:  
   
    - **IncludeAssemblyInVSIXContainer**  
   
@@ -207,17 +207,17 @@ Visual Studio stellt die <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>-Sc
   
 1. Signieren der Assembly. In der **Projektmappen-Explorer**, wählen Sie die VSIX-Projekt, mit der rechten Maustaste und wählen Sie **Projekteigenschaften**.  
   
-2. In der **Projekteigenschaften** wählen Sie im Fenster der **Signierung** Registerkarte in der **Signierung** Registerkarte **Assembly signieren**. In der **Schlüsseldatei mit starkem Namen auswählen** die Option  **\<neu >**. In der **Schlüssel für einen starken Namen erstellen** Fenster in der **Schlüsseldateiname** Feld **"Key.snk"**. Deaktivieren Sie die **Schlüsseldatei mit Kennwort schützen** Feld.  
+2. In der **Projekteigenschaften** wählen Sie im Fenster der **Signierung** Registerkarte in der **Signierung** Registerkarte **Assembly signieren**. In der **Schlüsseldatei mit starkem Namen auswählen** die Option  **\<neu >** . In der **Schlüssel für einen starken Namen erstellen** Fenster in der **Schlüsseldateiname** Feld **"Key.snk"** . Deaktivieren Sie die **Schlüsseldatei mit Kennwort schützen** Feld.  
   
 3. In der **Projektmappen-Explorer**, wählen Sie das VSIX-Projekt, und suchen die **Eigenschaften** Fenster.  
   
-4. Legen Sie die **Kopie Ausgabe zum Buildausgabeverzeichnis** Feld **"true"**. Dadurch wird die Assembly, in das Ausgabeverzeichnis kopiert werden, wenn die Projektmappe neu erstellt wird. Es ist immer noch in die VSIX-Datei enthalten. Sie müssen die Assembly finden Sie unter, um herauszufinden, die Signaturschlüssel.  
+4. Legen Sie die **Kopie Ausgabe zum Buildausgabeverzeichnis** Feld **"true"** . Dadurch wird die Assembly, in das Ausgabeverzeichnis kopiert werden, wenn die Projektmappe neu erstellt wird. Es ist immer noch in die VSIX-Datei enthalten. Sie müssen die Assembly finden Sie unter, um herauszufinden, die Signaturschlüssel.  
   
 5. Generieren Sie die Projektmappe neu.  
   
-6. Sie können die key.snk-Datei im Projektverzeichnis MyProjectWizard finden (**\<Ihr Speicherort > \MyProjectTemplate\MyProjectWizard\key.snk**). Kopieren Sie die Datei "Key.snk".  
+6. Sie können die key.snk-Datei im Projektverzeichnis MyProjectWizard finden ( **\<Ihr Speicherort > \MyProjectTemplate\MyProjectWizard\key.snk**). Kopieren Sie die Datei "Key.snk".  
   
-7. Wechseln Sie in das Ausgabeverzeichnis, und suchen Sie die Assembly (**\<Ihr Speicherort > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll**). Fügen Sie die key.snk-Datei aus. (Dies ist nicht unbedingt erforderlich, aber es erleichtert die folgenden Schritte aus.)  
+7. Wechseln Sie in das Ausgabeverzeichnis, und suchen Sie die Assembly ( **\<Ihr Speicherort > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll**). Fügen Sie die key.snk-Datei aus. (Dies ist nicht unbedingt erforderlich, aber es erleichtert die folgenden Schritte aus.)  
   
 8. Öffnen Sie ein Befehlsfenster, und ändern Sie in das Verzeichnis, in dem die Assembly erstellt wurde.  
   
@@ -259,7 +259,7 @@ Visual Studio stellt die <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>-Sc
 ## <a name="adding-the-custom-parameter-to-the-template"></a>Den benutzerdefinierten Parameter hinzufügen der Vorlage  
  In diesem Beispiel zeigt das Projekt, das als Vorlage verwendet die in das Benutzereingabeformular des benutzerdefinierten Assistenten angegebene Meldung.  
   
-1. Navigieren Sie im Projektmappen-Explorer zu dem **MyProjectTemplate** Projekt, und öffnen Sie **"Class1.cs"**.  
+1. Navigieren Sie im Projektmappen-Explorer zu dem **MyProjectTemplate** Projekt, und öffnen Sie **"Class1.cs"** .  
   
 2. Fügen Sie der `Main`-Methode der Anwendung die folgende Codezeile hinzu.  
   

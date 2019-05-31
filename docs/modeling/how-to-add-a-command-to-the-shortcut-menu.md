@@ -147,7 +147,7 @@ Verwenden Sie das Verfahren in diesem Thema in folgenden Fällen:
 
 ## <a name="CommandSet"></a> Definieren des Verhaltens des Befehls
 
-Die DSL umfasst bereits einige Befehle. Diese sind in einer partiellen Klasse implementiert, die in "DslPackage\GeneratedCode\CommandSet.cs" deklariert ist. Um neue Befehle hinzuzufügen, müssen Sie diese Klasse erweitern. Dazu erstellen Sie eine neue Datei mit einer partiellen Deklaration derselben Klasse. Der Name der Klasse ist üblicherweise  *\<Ihrdslname >*`CommandSet`. Es ist hilfreich, zunächst überprüfen den Namen der Klasse und ihren Inhalt.
+Die DSL umfasst bereits einige Befehle. Diese sind in einer partiellen Klasse implementiert, die in "DslPackage\GeneratedCode\CommandSet.cs" deklariert ist. Um neue Befehle hinzuzufügen, müssen Sie diese Klasse erweitern. Dazu erstellen Sie eine neue Datei mit einer partiellen Deklaration derselben Klasse. Der Name der Klasse ist üblicherweise  *\<Ihrdslname >* `CommandSet`. Es ist hilfreich, zunächst überprüfen den Namen der Klasse und ihren Inhalt.
 
 Die Befehlssatzklasse wird von <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> abgeleitet.
 
@@ -342,7 +342,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 - Setzen Sie am Anfang der OnStatus-Methode einen Haltepunkt. Er sollte die Verarbeitung anhalten, wenn Sie mit der rechten Maustaste auf einen Bereich des Diagramms klicken.
 
-**OnStatus-Methode wird nicht aufgerufen.**:
+**OnStatus-Methode wird nicht aufgerufen.** :
 
 - Vergewissern Sie sich, dass die GUIDs und IDs in Ihrem CommandSet-Code mit denen im Abschnitt "Symbols" von Commands.vsct übereinstimmen.
 

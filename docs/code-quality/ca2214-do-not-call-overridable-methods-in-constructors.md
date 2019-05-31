@@ -1,6 +1,6 @@
 ---
 title: 'CA2214: Überschreibbare Methoden in Konstruktoren nicht aufrufen.'
-ms.date: 11/04/2016
+ms.date: 05/29/2016
 ms.topic: reference
 f1_keywords:
 - DoNotCallOverridableMethodsInConstructors
@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ef2a5631247f882a70ae94877da02f576ff04a5d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8e05e6925085b27de3001c8ff62d8a3c6e69a88f
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796704"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401314"
 ---
 # <a name="ca2214-do-not-call-overridable-methods-in-constructors"></a>CA2214: Überschreibbare Methoden in Konstruktoren nicht aufrufen.
 
@@ -41,6 +41,9 @@ Der Konstruktor mit einem nicht versiegelten Typ ruft es sich um eine virtuelle 
 
 Wenn eine virtuelle Methode aufgerufen wird, ist der tatsächliche Typ, der die Methode ausgeführt wird, nicht bis zur Laufzeit ausgewählt. Wenn ein Konstruktor eine virtuelle Methode aufruft, ist es möglich, dass der Konstruktor für die Instanz, die die Methode aufruft, nicht ausgeführt wurde.
 
+> [!NOTE]
+> Die binäre Analyse-Implementierung für diese Regel hat eine andere diagnosemeldung von " **\[Konstruktorname] enthält eine Aufrufkette, die sich in einem Aufruf einer virtuellen Methode, die von der Klasse definierte ergibt. Überprüfen Sie folgende Aufrufliste auf unerwartete Ergebnisse**". Die [FxCop-Analysetools](install-fxcop-analyzers.md) die Implementierung von dieser Regel weist eine diagnosemeldung von "**überschreibbare Methoden in Konstruktoren nicht aufrufen**".
+
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
 Um einen Verstoß gegen diese Regel zu beheben, rufen Sie nicht virtuellen Methoden eines Typs mithilfe der Konstruktoren des Typs.
@@ -51,7 +54,7 @@ Unterdrücken Sie keine Warnung dieser Regel. Der Konstruktor muss überarbeitet
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel zeigt die Auswirkungen der Verstoß gegen diese Regel. Die testanwendung erstellt eine Instanz des `DerivedType`, wodurch ihre Basisklasse (`BadlyConstructedType`) Konstruktor ausgeführt. `BadlyConstructedType`der Konstruktor ruft nicht ordnungsgemäß die virtuelle Methode `DoSomething`. Die Ausgabe zeigt, `DerivedType.DoSomething()` ausgeführt wird, und gilt für sollten Sie vor dem `DerivedType`der Konstruktor ausgeführt wird.
+Das folgende Beispiel zeigt die Auswirkungen der Verstoß gegen diese Regel. Die testanwendung erstellt eine Instanz des `DerivedType`, wodurch ihre Basisklasse (`BadlyConstructedType`) Konstruktor ausgeführt. `BadlyConstructedType`der Konstruktor ruft nicht ordnungsgemäß die virtuelle Methode `DoSomething`. Die Ausgabe zeigt, `DerivedType.DoSomething()` ausführt, bevor der `DerivedType`der Konstruktor ausgeführt wird.
 
 [!code-csharp[FxCop.Usage.CtorVirtual#1](../code-quality/codesnippet/CSharp/ca2214-do-not-call-overridable-methods-in-constructors_1.cs)]
 [!code-vb[FxCop.Usage.CtorVirtual#1](../code-quality/codesnippet/VisualBasic/ca2214-do-not-call-overridable-methods-in-constructors_1.vb)]

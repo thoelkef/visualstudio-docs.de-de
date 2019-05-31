@@ -10,7 +10,7 @@ ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3e953d9051b9bc7e95dc29e02eb580c4d93fca26
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60066948"
@@ -88,7 +88,7 @@ In dieser exemplarischen Vorgehensweise erläutert, wie Sie JavaScript verwenden
   
 10. In **Projektmappen-Explorer**, wählen Sie auf das Kontextmenü für die SDKManifest.xml-Datei, **Eigenschaften**.  
   
-11. In der **Eigenschaften** legen die **Include in VSIX-Datei** Eigenschaft **"true"**.  
+11. In der **Eigenschaften** legen die **Include in VSIX-Datei** Eigenschaft **"true"** .  
   
 12. In **Projektmappen-Explorer**, wählen Sie im Kontextmenü für das Projekt SimpleMathVSIX **hinzufügen**, **neuer Ordner**, und klicken Sie dann den Ordner `Redist`.  
   
@@ -128,7 +128,7 @@ In dieser exemplarischen Vorgehensweise erläutert, wie Sie JavaScript verwenden
   
 17. In **Projektmappen-Explorer**, wählen Sie im Kontextmenü für die Datei arithmetic.js **Eigenschaften**. Stellen Sie diese Eigenschaften ändern:  
   
-    - Legen Sie die **Include in VSIX-Datei** Eigenschaft **"true"**.  
+    - Legen Sie die **Include in VSIX-Datei** Eigenschaft **"true"** .  
   
     - Legen Sie die **in Ausgabeverzeichnis kopieren** Eigenschaft **immer kopieren**.  
   

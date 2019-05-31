@@ -24,12 +24,12 @@ Sie können einen Bericht zu Profilerstellungstools von [!INCLUDE[vsprvs](../cod
 
  Verwenden Sie folgende Syntax zum Erstellen des Vergleichsberichts:
 
- **VSPerfReport /diff** `VspFileName1` *VspDateiName2* [**/**`Options`]
+ **VSPerfReport /diff** `VspFileName1` *VspDateiName2* [ **/** `Options`]
 
  Sie können Optionen aus der folgenden Tabelle in der Befehlszeile **VSPerfReport /diff** einfügen.
 
 |Option|Beschreibung|
 |------------|-----------------|
-|**DiffThreshold:**[*Wert*]|Ignorieren der Differenz, wenn Sie sich unterhalb dieses prozentualen Schwellenwerts befindet. Neue Daten mit Werten unterhalb dieses Schwellenwerts werden nicht angezeigt.|
+|**DiffThreshold:** [*Wert*]|Ignorieren der Differenz, wenn Sie sich unterhalb dieses prozentualen Schwellenwerts befindet. Neue Daten mit Werten unterhalb dieses Schwellenwerts werden nicht angezeigt.|
 |**DiffTable:** *TableName*|Vergleichen Sie die Dateien anhand dieser Tabelle. Standardmäßig wird die Funktionstabelle verwendet. Geben Sie den Bezeichner an, der in **VSPerfReport /querydifftables** aufgelistet ist.|
 |**DiffColumn:** *ColumnName*|Verwenden Sie diese Spalte, um Werte zu vergleichen. Standardmäßig wird die exklusive Beispielprozentsatzspalte verwendet. Geben Sie den Bezeichner an, der in **VSPerfReport /querydifftables** aufgelistet ist.|

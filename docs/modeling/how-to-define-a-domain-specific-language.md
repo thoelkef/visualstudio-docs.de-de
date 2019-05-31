@@ -149,7 +149,7 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
 > "Modell" bezieht sich auf eine Instanz Ihrer DSL, die Benutzer erstellen. Sie wird üblicherweise als Diagramm dargestellt. In diesem Thema werden das DSL-Definitionsdiagramm und die Modelldiagramme erläutert, die bei Verwendung der DSL angezeigt werden.
 
 ## <a name="classes"></a> Definieren von Domänenklassen
- Domänenklassen stellen die Konzepte der DSL dar. Die Instanzen sind *Modellelemente*. Z. B. in einem **"Musikbibliothek"** DSL möglicherweise Domänenklassen, die mit dem Namen **Album** und **"Song"**.
+ Domänenklassen stellen die Konzepte der DSL dar. Die Instanzen sind *Modellelemente*. Z. B. in einem **"Musikbibliothek"** DSL möglicherweise Domänenklassen, die mit dem Namen **Album** und **"Song"** .
 
  Um eine Domänenklasse erstellen möchten, können Sie aus ziehen die **benannte Domänenklasse** tool, das Diagramm, und klicken Sie dann benennen Sie die Klasse.
 
@@ -524,7 +524,7 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
 
 1. **Fügen Sie auf die Depot-Form ein Depot**. Klicken Sie auf die DSL-Definitionsdiagramm mit der Maustaste der Depot-Form, zeigen Sie auf **hinzufügen**, und klicken Sie dann auf **Depot**.
 
-2. Legen Sie **Pfad der angezeigten Elementauflistung** , zu dem Link statt zu seinem Zielelement zu navigieren. Klicken Sie auf das Dropdownmenü, und verwenden Sie die Strukturansicht, um die Verweisbeziehung statt ihres Ziels auszuwählen. Im Beispiel wird die Beziehung **"artistappearedonalbums"**.
+2. Legen Sie **Pfad der angezeigten Elementauflistung** , zu dem Link statt zu seinem Zielelement zu navigieren. Klicken Sie auf das Dropdownmenü, und verwenden Sie die Strukturansicht, um die Verweisbeziehung statt ihres Ziels auszuwählen. Im Beispiel wird die Beziehung **"artistappearedonalbums"** .
 
 3. Legen Sie **Pfad zur Anzeigeeigenschaft** , über den Link zum Zielelement zu navigieren. In diesem Beispiel ist dies **Interpreten**.
 
@@ -584,7 +584,7 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
 ### <a name="external-types"></a>Externe Typen
  Wenn Sie den Typ einer Domäneneigenschaft festlegen, wenn Sie den Typ nicht finden können, sollten Sie der **Typ** Dropdown-Liste, Sie können einen externen Typ hinzufügen. Sie könnten z. B. Hinzufügen der **System.Drawing.Color** Typ in der Liste.
 
- Um einen Typ hinzuzufügen, mit der rechten Maustaste in des Stamm des Modells in der DSL-Explorer, und klicken Sie dann auf **neuen externen Typ hinzufügen**. Legen Sie im Fenster Eigenschaften den Namen auf **Farbe** und den Namespace auf **"System.Drawing"**. Dieser Typ wird nun in DSL-Explorer unter **Domänentypen**. Sie können ihn immer auswählen, wenn Sie den Typ einer Domäneneigenschaft festlegen.
+ Um einen Typ hinzuzufügen, mit der rechten Maustaste in des Stamm des Modells in der DSL-Explorer, und klicken Sie dann auf **neuen externen Typ hinzufügen**. Legen Sie im Fenster Eigenschaften den Namen auf **Farbe** und den Namespace auf **"System.Drawing"** . Dieser Typ wird nun in DSL-Explorer unter **Domänentypen**. Sie können ihn immer auswählen, wenn Sie den Typ einer Domäneneigenschaft festlegen.
 
 ## <a name="custom"></a> Anpassen der DSL
  Mit den hier beschriebenen Verfahren können Sie schnell eine DSL mit einer Diagrammdarstellung, einem lesbaren XML-Format und den grundlegenden Tools erstellen, mit denen Code und andere Artefakte generiert werden.
@@ -616,7 +616,7 @@ Um eine neue domänenspezifische Sprache zu erstellen, erstellen Sie eine neue V
 | Ich kann in DSL-Explorer keine Auflistung hinzufügen. Zum Beispiel gibt es beim Rechtsklick auf "Werkzeuge" keinen "Tool hinzufügen"-Befehl im Menü.<br /><br /> Ich kann im Explorer für meine DSL kein Element zu einer Liste hinzufügen. | Klicken Sie mit der rechten Maustaste auf das Element über dem Knoten, den Sie testen. Wenn Sie etwas zu einer Liste hinzufügen möchten, befindet sich der Befehl zum Hinzufügen nicht im Listenknoten, sondern in seinem Besitzer. |
 | Ich habe eine Domänenklasse erstellt, aber ich kann im Explorer der Sprache keine Instanzen erstellen. | Jede Domänenklasse mit Ausnahme des Stamms muss Ziel einer einbettenden Beziehung sein. |
 | Im Explorer für meine DSL werden die Elemente nur mit ihren Typennamen angezeigt. | Wählen Sie in der DSL-Definition eine Domäneneigenschaft der Klasse, und legen Sie in den Eigenschaften im Fenster **ist Elementname** auf "true". |
-| Meine DSL wird immer im XML-Editor geöffnet. | Das kann an einem Fehler beim Lesen der Datei liegen. Nachdem Sie den Fehler behoben haben, müssen Sie den Editor explizit als Ihren DSL-Designer zurücksetzen.<br /><br /> Das Projektelement, klicken Sie auf **Öffnen mit** , und wählen Sie * Ihresprache ***Designer (Standard)**. |
+| Meine DSL wird immer im XML-Editor geöffnet. | Das kann an einem Fehler beim Lesen der Datei liegen. Nachdem Sie den Fehler behoben haben, müssen Sie den Editor explizit als Ihren DSL-Designer zurücksetzen.<br /><br /> Das Projektelement, klicken Sie auf **Öffnen mit** , und wählen Sie * Ihresprache ***Designer (Standard)** . |
 | Der Werkzeugkasten meiner DSL wird nicht angezeigt, nachdem ich die Assemblynamen geändert habe. | Überprüfen und aktualisieren Sie **DslPackage\GeneratedCode\Package.tt** Weitere Informationen finden Sie unter [Vorgehensweise: Ändern Sie den Namespace einer domänenspezifischen Sprache](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md). |
 | Der Werkzeugkasten meiner DSL wird nicht angezeigt, obwohl ich die Assemblynamen nicht geändert habe.<br /><br /> Oder es wird in einem Meldungsfeld gemeldet, dass eine Erweiterung nicht geladen werden konnte. | Setzen Sie die experimentelle Instanz zurück, und erstellen Sie die Projektmappe neu.<br /><br /> 1.  Auf der Windows-Startmenü unter **Programme**, erweitern Sie [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], klicken Sie dann **Tools**, und klicken Sie dann auf **Zurücksetzen der Microsoft Visual Studio experimentelle Instanz**.<br />2.  Klicken Sie im Menü **Build** auf **Projektmappe neu erstellen**. |
 

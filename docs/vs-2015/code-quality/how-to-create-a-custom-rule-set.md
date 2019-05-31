@@ -15,7 +15,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 909242aaf8dd4caaee7af75e40554aaff648df68
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60045654"
@@ -67,7 +67,7 @@ In [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](.
   
      Der Name der neuen Regel ausgewählt ist, der **diesen Regelsatz ausführen** Liste. Der Anzeigename des Regelsatzes kann im nächsten Schritt geändert werden.  
   
-6. (Optional) So ändern Sie den Anzeigenamen des Regelsatzes auf die **Ansicht** Menü klicken Sie auf **Fenster "Eigenschaften"**. Geben Sie den Namen in der **Namen** Feld.  
+6. (Optional) So ändern Sie den Anzeigenamen des Regelsatzes auf die **Ansicht** Menü klicken Sie auf **Fenster "Eigenschaften"** . Geben Sie den Namen in der **Namen** Feld.  
   
 7. Zum Hinzufügen zu entfernen oder ändern Sie im neuen Regelsatz einzelne Codeanalyseregeln, klicken Sie auf **öffnen**.  
   
@@ -75,7 +75,7 @@ In [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](.
   
 #### <a name="to-modify-a-rule-set-in-the-rule-set-editor"></a>So ändern Sie einen Regelsatz im Regelsatz-Editor  
   
-- So ändern Sie den Anzeigenamen des Regelsatzes auf die **Ansicht** Menü klicken Sie auf **Fenster "Eigenschaften"**. Geben Sie den Anzeigenamen in den **Namen** Feld. Der Anzeigename kann sich vom Dateinamen unterscheiden.  
+- So ändern Sie den Anzeigenamen des Regelsatzes auf die **Ansicht** Menü klicken Sie auf **Fenster "Eigenschaften"** . Geben Sie den Anzeigenamen in den **Namen** Feld. Der Anzeigename kann sich vom Dateinamen unterscheiden.  
   
 - Wenn Sie einem benutzerdefinierten Regelsatz alle Regeln der Gruppe hinzufügen möchten, aktivieren Sie das Kontrollkästchen für die Gruppe. Wenn Sie alle Regeln der Gruppe entfernen möchten, deaktivieren Sie das Kontrollkästchen.  
   
@@ -97,7 +97,7 @@ In [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](.
   
 - Um die Regeln in allen Gruppen reduzieren möchten, klicken Sie auf **alle reduzieren**.  
   
-- Um das Feld ändern, die Regeln gruppiert werden, wählen Sie das Feld aus der **Group By** Liste. Wählen Sie zum Anzeigen der Regeln ohne Gruppierung  **\<None >**.  
+- Um das Feld ändern, die Regeln gruppiert werden, wählen Sie das Feld aus der **Group By** Liste. Wählen Sie zum Anzeigen der Regeln ohne Gruppierung  **\<None >** .  
   
 - Klicken Sie zum Hinzufügen oder entfernen in Regelspalten Felder, die auf **Spaltenoptionen**.  
   

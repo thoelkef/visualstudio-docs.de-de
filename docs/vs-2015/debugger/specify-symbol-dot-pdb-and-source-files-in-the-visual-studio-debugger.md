@@ -139,7 +139,7 @@ Eine Programmdatenbankdatei (PDB-Datei), auch als Symboldatei bezeichnet, ordnet
 
 - Um die Suchpfade zu ändern, wählen Sie einen nicht markierten Pfad aus, oder wählen Sie **Neu** aus und geben einen neuen Pfad ein. Wählen Sie **Laden** , um die Pfade erneut zu suchen und die Symboldatei zu laden, sofern sie gefunden wurde.
 
-- Wählen Sie **Durchsuchen nach**_Name der ausführbaren Datei_**...** aus, um alle Symboloptionen zu überschreiben und die Suchpfade erneut zu versuchen. Die Symboldatei wird geladen, sofern sie gefunden wird, oder der Datei-Explorer wird geöffnet, in dem Sie die Symboldatei manuell auswählen können.
+- Wählen Sie **Durchsuchen nach**_Name der ausführbaren Datei_ **...** aus, um alle Symboloptionen zu überschreiben und die Suchpfade erneut zu versuchen. Die Symboldatei wird geladen, sofern sie gefunden wird, oder der Datei-Explorer wird geöffnet, in dem Sie die Symboldatei manuell auswählen können.
 
 - Wählen Sie **Symboleinstellungen ändern...** , um die Seite **Optionen** / **Symbole** im VS-Dialogfeld "Optionen" anzuzeigen.
 

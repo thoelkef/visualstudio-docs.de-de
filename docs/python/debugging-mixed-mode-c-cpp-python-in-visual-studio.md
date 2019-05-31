@@ -115,7 +115,7 @@ Um diese Funktion zu deaktivieren, klicken Sie mit der rechten Maustaste auf ein
 
 ![Aktivieren der Python-Ansicht im Fenster „Lokal“](media/mixed-mode-debugging-enable-python-view.png)
 
-C-Typen, die **[Python-Ansicht]**-Knoten anzeigen (sofern aktiviert):
+C-Typen, die **[Python-Ansicht]** -Knoten anzeigen (sofern aktiviert):
 
 - `PyObject`
 - `PyVarObject`
@@ -134,23 +134,23 @@ C-Typen, die **[Python-Ansicht]**-Knoten anzeigen (sofern aktiviert):
 
 **[Python-Ansicht]** wird nicht automatisch für Typen angezeigt, die Sie selbst erstellen. Wenn Sie Erweiterungen für Python 3.x erstellen, ist dieser Mangel in der Regel kein Problem, da jedes Objekt letztlich über ein `ob_base`-Feld für einen der oben genannten Typen verfügt, wodurch **[Python-Ansicht]** angezeigt wird.
 
-Bei Python 2.x allerdings deklariert jeder Objekttyp seinen Header üblicherweise als Auflistung von Inlinefeldern, und es gibt keine Verknüpfung auf Typsystemebene im C/C++-Code zwischen benutzerdefiniert erstellten Typen und `PyObject`. Um **[Python-Ansicht]**-Knoten für solche benutzerdefinierten Typen zu aktivieren, bearbeiten Sie die Datei *PythonDkm.natvis* im [Installationsverzeichnis für Python Tools](installing-python-support-in-visual-studio.md#install-locations), und fügen Sie im XML-Code ein weiteres Element für Ihre C-Struktur oder C++-Klasse hinzu.
+Bei Python 2.x allerdings deklariert jeder Objekttyp seinen Header üblicherweise als Auflistung von Inlinefeldern, und es gibt keine Verknüpfung auf Typsystemebene im C/C++-Code zwischen benutzerdefiniert erstellten Typen und `PyObject`. Um **[Python-Ansicht]** -Knoten für solche benutzerdefinierten Typen zu aktivieren, bearbeiten Sie die Datei *PythonDkm.natvis* im [Installationsverzeichnis für Python Tools](installing-python-support-in-visual-studio.md#install-locations), und fügen Sie im XML-Code ein weiteres Element für Ihre C-Struktur oder C++-Klasse hinzu.
 
 Eine alternative (und bessere) Möglichkeit ist es, den Anweisungen unter [PEP 3123](https://www.python.org/dev/peps/pep-3123/) zu folgen und statt `PyObject_HEAD` ein explizites `PyObject ob_base;`-Feld zu verwenden. Allerdings ist dieses Vorgehen aus Gründen der Abwärtskompatibilität nicht immer möglich.
 
 ### <a name="native-values-view-in-python-code"></a>Ansicht der nativen Werte im Python-Code
 
-Ähnlich wie im vorherigen Abschnitt können Sie eine **[C++ View]**-Ansicht für native Werte im **Lokalfenster** aktivieren, wenn ein Python-Frame aktiv ist. Diese Funktion ist nicht standardmäßig aktiviert. Klicken Sie mit der rechten Maustaste auf das **Lokalfenster**, und aktivieren Sie die Menüoption **Python** > **C++-Ansichtsknoten anzeigen**.
+Ähnlich wie im vorherigen Abschnitt können Sie eine **[C++ View]** -Ansicht für native Werte im **Lokalfenster** aktivieren, wenn ein Python-Frame aktiv ist. Diese Funktion ist nicht standardmäßig aktiviert. Klicken Sie mit der rechten Maustaste auf das **Lokalfenster**, und aktivieren Sie die Menüoption **Python** > **C++-Ansichtsknoten anzeigen**.
 
 ![Aktivieren der C++-Ansicht im Fenster „Lokal“](media/mixed-mode-debugging-enable-cpp-view.png)
 
-Der **[C++ View]**-Knoten bietet eine Darstellung der zugrunde liegenden C/C++-Struktur für einen Wert. Dies entspricht der Darstellung, die in einem nativen Frame angezeigt werden würde. Der Knoten zeigt eine Instanz von `_longobject` (wofür `PyLongObject` eine typedef ist) für einen langen ganzzahligen Python-Wert an und versucht, Typen für native Klassen abzuleiten, die Sie selbst erstellt haben. Die untergeordneten Elemente dieses Knotens können bearbeitet werden.
+Der **[C++ View]** -Knoten bietet eine Darstellung der zugrunde liegenden C/C++-Struktur für einen Wert. Dies entspricht der Darstellung, die in einem nativen Frame angezeigt werden würde. Der Knoten zeigt eine Instanz von `_longobject` (wofür `PyLongObject` eine typedef ist) für einen langen ganzzahligen Python-Wert an und versucht, Typen für native Klassen abzuleiten, die Sie selbst erstellt haben. Die untergeordneten Elemente dieses Knotens können bearbeitet werden.
 
 ![C++-Ansicht im Fenster „Lokal“](media/mixed-mode-debugging-cpp-view.png)
 
-Wenn ein untergeordnetes Feld eines Objekts den Typ `PyObject` oder einen der anderen unterstützten Typen aufweist, enthält es einen **[Python-Ansicht]**-Darstellungsknoten (sofern diese Darstellungen aktiviert sind). Auf diese Weise können Sie in Objektdiagrammen navigieren, wenn Links nicht direkt in Python verfügbar sind.
+Wenn ein untergeordnetes Feld eines Objekts den Typ `PyObject` oder einen der anderen unterstützten Typen aufweist, enthält es einen **[Python-Ansicht]** -Darstellungsknoten (sofern diese Darstellungen aktiviert sind). Auf diese Weise können Sie in Objektdiagrammen navigieren, wenn Links nicht direkt in Python verfügbar sind.
 
-Anders als bei **[Python-Ansicht]**-Knoten, die Python-Objektmetadaten zum Ermitteln des Objekttyps verwenden, gibt es keinen ähnlich zuverlässigen Mechanismus für **[C++ View]**. Allgemein gesagt: Es ist nicht möglich, für einen bestimmten Python-Wert (also einen `PyObject`-Verweis) zuverlässig zu ermitteln, welche C/C++-Struktur diesem zugrunde liegt. Der Debugger im gemischten Modus versucht, den Typ zu „erraten“. Dazu durchsucht der Debugger verschiedene Felder des Objekttyps (z.B. dem `PyTypeObject`, auf das durch das Feld `ob_type` verwiesen wird), die über Funktionszeigertypen verfügen. Wenn einer dieser Funktionszeiger auf eine Funktion verweist, die aufgelöst werden kann, und wenn diese Funktion über einen `self`-Parameter verfügt, dessen Typ spezifischer ist als `PyObject*`, wird angenommen, dass es sich bei diesem um den zugrunde liegenden Typ handelt. Ein Beispiel: `ob_type->tp_init` für ein bestimmtes Objekt zeigt auf die folgende Funktion:
+Anders als bei **[Python-Ansicht]** -Knoten, die Python-Objektmetadaten zum Ermitteln des Objekttyps verwenden, gibt es keinen ähnlich zuverlässigen Mechanismus für **[C++ View]** . Allgemein gesagt: Es ist nicht möglich, für einen bestimmten Python-Wert (also einen `PyObject`-Verweis) zuverlässig zu ermitteln, welche C/C++-Struktur diesem zugrunde liegt. Der Debugger im gemischten Modus versucht, den Typ zu „erraten“. Dazu durchsucht der Debugger verschiedene Felder des Objekttyps (z.B. dem `PyTypeObject`, auf das durch das Feld `ob_type` verwiesen wird), die über Funktionszeigertypen verfügen. Wenn einer dieser Funktionszeiger auf eine Funktion verweist, die aufgelöst werden kann, und wenn diese Funktion über einen `self`-Parameter verfügt, dessen Typ spezifischer ist als `PyObject*`, wird angenommen, dass es sich bei diesem um den zugrunde liegenden Typ handelt. Ein Beispiel: `ob_type->tp_init` für ein bestimmtes Objekt zeigt auf die folgende Funktion:
 
 ```c
 static int FobObject_init(FobObject* self, PyObject* args, PyObject* kwds) {
@@ -158,7 +158,7 @@ static int FobObject_init(FobObject* self, PyObject* args, PyObject* kwds) {
 }
 ```
 
-In diesem Fall kann der Debugger ordnungsgemäß herleiten, dass der C-Typ des Objekts `FobObject` lautet. Wenn kein genauerer Typ aus `tp_init` ermittelt werden kann, sucht der Debugger in anderen Feldern weiter. Wenn aus keinem der Felder ein Typ hergeleitet werden kann, zeigt der **[C++ View]**-Knoten das Objekt als `PyObject`-Instanz an.
+In diesem Fall kann der Debugger ordnungsgemäß herleiten, dass der C-Typ des Objekts `FobObject` lautet. Wenn kein genauerer Typ aus `tp_init` ermittelt werden kann, sucht der Debugger in anderen Feldern weiter. Wenn aus keinem der Felder ein Typ hergeleitet werden kann, zeigt der **[C++ View]** -Knoten das Objekt als `PyObject`-Instanz an.
 
 Um jederzeit eine sinnvolle Darstellung für benutzerdefiniert erstellte Typen zu erzielen, empfiehlt es sich, beim Registrieren des Typs mindestens eine Sonderfunktion zu registrieren und einen stark typisierten `self`-Parameter zu verwenden. Die meisten Typen erfüllen diese Voraussetzung von Natur aus. Sollte dies nicht der Fall sein, eignet sich `tp_init` in der Regel am besten für diesen Zweck. Eine Dummyimplementierung von `tp_init` für einen Typ, der nur dafür da ist, den Typrückschluss für den Debugger zu ermöglichen, kann sofort Null zurückgeben, wie in obigem Codebeispiel veranschaulicht.
 

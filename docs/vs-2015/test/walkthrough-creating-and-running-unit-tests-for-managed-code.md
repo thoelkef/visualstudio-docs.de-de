@@ -64,7 +64,7 @@ Diese exemplarische Vorgehensweise führt Sie durch das Erstellen, Ausführen un
   
     Das Dialogfeld **Neues Projekt** wird angezeigt.  
   
-3. Klicken Sie unter **Installierte Vorlagen**auf **Visual C#**.  
+3. Klicken Sie unter **Installierte Vorlagen**auf **Visual C#** .  
   
 4. Klicken Sie in der Liste der Anwendungstypen auf **Klassenbibliothek**.  
   
@@ -112,9 +112,9 @@ public void Debit(double amount)
   
 #### <a name="to-create-a-unit-test-project"></a>So erstellen Sie ein Komponententestprojekt  
   
-1. Wählen Sie im Menü **Datei** die Option **Hinzufügen**aus, und klicken Sie auf **Neues Projekt...**.  
+1. Wählen Sie im Menü **Datei** die Option **Hinzufügen**aus, und klicken Sie auf **Neues Projekt...** .  
   
-2. Erweitern Sie im Dialogfeld "Neues Projekt" die Option **Installiert**und dann die Option **Visual C#**, und wählen Sie dann **Test**aus.  
+2. Erweitern Sie im Dialogfeld "Neues Projekt" die Option **Installiert**und dann die Option **Visual C#** , und wählen Sie dann **Test**aus.  
   
 3. Wählen Sie in der Liste der Vorlagen **Komponententestprojekt**aus.  
   
@@ -237,7 +237,7 @@ using BankAccountNS;
 ## <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Den Code korrigieren und die Tests erneut ausführen  
  **Analysieren der Testergebnisse**  
   
- Das Testergebnis enthält eine Meldung mit der Fehlerbeschreibung. Bei der `AreEquals`-Methode wird in der Meldung angezeigt, was erwartet wurde (Parameter <strong>Expected\<*XXX*></strong>) und was tatsächlich gefunden wurde (Parameter **Actual\<*YYY*>**). Erwartet wurde, dass das neue Guthaben geringer ist als das Startguthaben. Stattdessen hat es sich um den Betrag der Abbuchung vergrößert.  
+ Das Testergebnis enthält eine Meldung mit der Fehlerbeschreibung. Bei der `AreEquals`-Methode wird in der Meldung angezeigt, was erwartet wurde (Parameter <strong>Expected\<*XXX*></strong>) und was tatsächlich gefunden wurde (Parameter **Actual\<*YYY*>** ). Erwartet wurde, dass das neue Guthaben geringer ist als das Startguthaben. Stattdessen hat es sich um den Betrag der Abbuchung vergrößert.  
   
  Eine erneute Prüfung des Debit-Codes zeigt, dass der Komponententest einen Fehler gefunden hat. Der Abbuchungsbetrag wird dem Kontoguthaben hinzugerechnet, anstatt davon abgezogen zu werden.  
   

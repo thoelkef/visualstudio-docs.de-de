@@ -59,7 +59,7 @@ Sie können eine legacysprachdiensten auf eine neuere Version von Visual Studio 
   
     - Auf der **Anwendung** Registerkarte **Zielframework** zu **4.6.1**.  
   
-    - Auf der **Debuggen** Registerkarte die **externes Programm starten** geben  **\<Visual Studio-Installationspfad > \Common7\IDE\devenv.exe.**.  
+    - Auf der **Debuggen** Registerkarte die **externes Programm starten** geben  **\<Visual Studio-Installationspfad > \Common7\IDE\devenv.exe.** .  
   
          In der **Befehlszeilenargumente** geben /**Rootsuffix Exp**.  
   
@@ -105,7 +105,7 @@ Sie können eine legacysprachdiensten auf eine neuere Version von Visual Studio 
   
     - Speichern und schließen Sie die Datei.  
   
-11. Erstellen Sie die Projektmappe. Die erstellten Dateien bereitgestellt werden, um **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ\\**.  
+11. Erstellen Sie die Projektmappe. Die erstellten Dateien bereitgestellt werden, um **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ\\** .  
   
 12. Beginnen Sie mit dem Debuggen. Eine zweite Instanz von Visual Studio geöffnet.  
   

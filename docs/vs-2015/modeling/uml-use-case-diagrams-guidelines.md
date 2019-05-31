@@ -190,11 +190,11 @@ Sie können in Visual Studio zeichnen eine *Anwendungsfalldiagramm* zusammengefa
   
    - **1** angeben, dass genau eine Instanz dieser Rolle jedem Link teilnimmt.  
   
-   - **1..\\***, Status, der eine oder mehrere Instanzen dieser Rolle, die jedem Link teilnehmen.  
+   - **1..\\** *, Status, der eine oder mehrere Instanzen dieser Rolle, die jedem Link teilnehmen.  
   
    - **0.. 1** um anzugeben, dass die Teilnahme optional ist.  
   
-   - **\\*** Um Zustand, der NULL oder mehr Instanzen dieser Rolle am Link teilnehmen.  
+   - **\\** * Um Zustand, der NULL oder mehr Instanzen dieser Rolle am Link teilnehmen.  
   
 > [!NOTE]
 > Viele Teams geben in Anwendungsfalldiagrammen keine Informationen zur Multiplizität an und behalten für die Multiplizitäten den Standardwert 1 bei. Stattdessen geben sie die Informationen in separaten Beschreibungen der Anwendungsfälle an. In diesem Fall werden alle Multiplizitäten in den Anwendungsfalldiagrammen ausgeblendet.  

@@ -89,7 +89,7 @@ Wenn **Include** leer ist, enthält die Verarbeitung der Code Coverage alle Asse
 
 In den Knoten "include" und "exclude" werden reguläre Ausdrücke verwendet. Weitere Informationen finden Sie unter [Verwenden von regulären Ausdrücken in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Reguläre Ausdrücke sind nicht mit Platzhaltern identisch. Insbesondere:
 
-- **.\\*** entspricht einer Zeichenfolge beliebiger Zeichen
+- **.\\** * entspricht einer Zeichenfolge beliebiger Zeichen
 
 - **\\.** entspricht einem Punkt „.“
 

@@ -97,7 +97,7 @@ Verwenden Sie die Seite **Kompilieren** des Projekt-Designers, um Kompilieranwei
   
   Wenn Sie **Option Strict** auf **Ein** festlegen, werden alle drei Warnungskonfigurationseinstellungen auf **Fehler** festgelegt. Wenn Sie **Option Strict** auf **Aus** festlegen werden alle drei Einstellungen auf **Keine** festgelegt.  
   
-  Sie können individuell jede Warnungskonfigurationseinstellung auf **Keine**, **Warnung** oder **Fehler** festlegen. Wenn alle drei Warnungskonfigurationseinstellungen auf **Fehler** festgelegt sind, erscheint `On` im `Option strict`-Feld. Wenn alle drei Einstellungen auf **Keine** festgelegt sind, erscheint `Off` im Feld. Für jede andere Kombination dieser Einstellungen erscheint **(benutzerdefiniert)**.  
+  Sie können individuell jede Warnungskonfigurationseinstellung auf **Keine**, **Warnung** oder **Fehler** festlegen. Wenn alle drei Warnungskonfigurationseinstellungen auf **Fehler** festgelegt sind, erscheint `On` im `Option strict`-Feld. Wenn alle drei Einstellungen auf **Keine** festgelegt sind, erscheint `Off` im Feld. Für jede andere Kombination dieser Einstellungen erscheint **(benutzerdefiniert)** .  
   
   **Option Compare**  
   Gibt den Typ des Zeichenfolgenvergleichs an, der verwendet werden soll. Wählen Sie **Binär** aus, um den Compiler anzuweisen, binäre Zeichenfolgenvergleiche mit Unterscheidung zwischen Groß- und Kleinschreibung zu verwenden. Wählen Sie **Text** aus, um gebietsschemaspezifische Textzeichenfolgenvergleiche ohne Berücksichtigung der Groß- und Kleinschreibung zu verwenden.  

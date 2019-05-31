@@ -109,7 +109,7 @@ Sie können die DSL-Projektmappe ausführen, sobald Sie es erstellt haben. Spät
 1. Klicken Sie auf **alle Vorlagen transformieren** in die **Projektmappen-Explorer** Symbolleiste. Dies wird erneut die meisten der Quellcode von "DslDefinition.DSL" generiert.
 
     > [!NOTE]
-    > Wenn Sie Änderungen *"DslDefinition.DSL"*, klicken Sie auf **alle Vorlagen transformieren** , bevor Sie die Projektmappe neu erstellen. Dieser Schritt kann automatisiert werden. Weitere Informationen finden Sie unter [wie alle Vorlagen transformieren automatisieren](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)).
+    > Wenn Sie Änderungen *"DslDefinition.DSL"* , klicken Sie auf **alle Vorlagen transformieren** , bevor Sie die Projektmappe neu erstellen. Dieser Schritt kann automatisiert werden. Weitere Informationen finden Sie unter [wie alle Vorlagen transformieren automatisieren](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)).
 
 2. Drücken Sie **F5**, oder klicken Sie im Menü **Debuggen** auf **Debuggen starten**.
 
@@ -209,7 +209,7 @@ Benennen Sie die vorhandenen Domänenklassen und Beziehungen. Beispielsweise kon
 
     2. Öffnen Sie das Fenster "Eigenschaften", und positionieren Sie es, damit Sie die DSL-Explorer und Eigenschaften zur gleichen Zeit finden.
 
-    3. Erweitern Sie im DSL-Explorer **Editor**, **Toolboxregisterkarten**,  *\<Ihrer DSL >*, und klicken Sie dann **Tools**.
+    3. Erweitern Sie im DSL-Explorer **Editor**, **Toolboxregisterkarten**,  *\<Ihrer DSL >* , und klicken Sie dann **Tools**.
 
     4. Klicken Sie auf **ExampleElement**. Dies ist das Toolboxelement, das zum Erstellen von Elementen verwendet wird.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Programmgesteuertes Schützen von Dokumenten und Teilen von Dokumenten'
+title: Schützen von Dokumenten und Teilen von Dokumenten programmgesteuert
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 62d84dcb7ce22f1199d12a958250a465cd25a49c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 30cb3d0b9ad04a3a0195f3b58ba5856de94d09d4
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412457"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402188"
 ---
 # <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>Vorgehensweise: Programmgesteuertes Schützen von Dokumenten und Teilen von Dokumenten
   Sie können Schutz zu einem Microsoft Office Word-Dokument hinzufügen, um zu verhindern, dass Benutzer irgendwelche Änderungen an dem Dokument vornehmen können.

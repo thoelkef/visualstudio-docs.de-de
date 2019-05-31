@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Erstellen einer Websitespalte, Inhaltstyp und die Liste für SharePoint | Microsoft-Dokumentation'
+title: Erstellen von Websitespalten, Inhaltstyp und Liste für SharePoint
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e39ea4041ab9806c7ca857680af5c5c04510eba9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 141ce92fa083a0afacdae3a279d2697e0931e3be
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430697"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401268"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Exemplarische Vorgehensweise: Erstellen einer Websitespalte, den Inhaltstyp und die Liste für SharePoint
   Die folgenden Prozeduren veranschaulichen, wie Sie benutzerdefinierte SharePoint-Websitespalten erstellen – oder *Felder*– sowie einen Inhaltstyp, der die Websitespalten verwendet. Es wird gezeigt, wie eine Liste zu erstellen, die den neuen Inhaltstyp verwendet.
@@ -137,7 +137,7 @@ ms.locfileid: "63430697"
 
 4. In der **Vorlagen** Bereich, wählen Sie die **Liste** Vorlage ändern den Namen in **Patienten**, und wählen Sie dann die **hinzufügen** Schaltfläche.
 
-5. Lassen Sie die **Anpassen der Liste auf der Grundlage** als **Standardwert (leer)**, und wählen Sie dann die **Fertig stellen** Schaltfläche.
+5. Lassen Sie die **Anpassen der Liste auf der Grundlage** als **Standardwert (leer)** , und wählen Sie dann die **Fertig stellen** Schaltfläche.
 
 6. Wählen Sie im Designer Liste der **Inhaltstypen** anzuzeigenden Schaltfläche die **Inhaltseinstellungen Typ** im Dialogfeld.
 

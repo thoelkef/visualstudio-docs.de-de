@@ -39,7 +39,7 @@ Beim Veröffentlichen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptec
 
 2. Klicken Sie auf die Registerkarte **Veröffentlichen**.
 
-3. Geben Sie im Feld Installations-URL den Speicherort der Installation mithilfe einer vollqualifizierten URL im Format *http://www.microsoft.com/ApplicationName*, oder einen UNC-Pfad im Format  *\\\Server\ApplicationName*.
+3. Geben Sie im Feld Installations-URL den Speicherort der Installation mithilfe einer vollqualifizierten URL im Format *http://www.microsoft.com/ApplicationName* , oder einen UNC-Pfad im Format  *\\\Server\ApplicationName*.
 
 ## <a name="see-also"></a>Siehe auch
 - [Vorgehensweise: Angeben des Speicherorts, an den Visual Studio die Dateien kopiert](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)

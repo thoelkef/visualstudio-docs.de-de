@@ -77,7 +77,7 @@ ms.locfileid: "65687302"
 
  Folgende Ergebnisse werden zurückgegeben:
 
- **Auf der Illegales vor Glen erfüllen 2/22/2003 12:00:00 Uhr.**
+ **Auf der Illegales vor Glen erfüllen 2/22/2003 12:00:00 Uhr.** 
 **Von Test: sonnigen Wiese**
 **erfüllen, auf die sonnigen Wiese 2/22/2003 12:00:00 Uhr.**
 ## <a name="related-rules"></a>Verwandte Regeln

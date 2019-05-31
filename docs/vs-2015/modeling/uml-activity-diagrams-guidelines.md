@@ -170,7 +170,7 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
   
 - Mithilfe von Linien oder Rechtecken aus dem **einfache Formen** Abschnitt der Toolbox zeichnen Sie Verantwortlichkeitsbereiche oder andere Bereiche.  
   
-- Um die einzelnen Verantwortlichkeitsbereiche zu beschriften, erstellen Sie einen Kommentar ein, und legen Sie dessen **Transparent** Eigenschaft **"true"**.  
+- Um die einzelnen Verantwortlichkeitsbereiche zu beschriften, erstellen Sie einen Kommentar ein, und legen Sie dessen **Transparent** Eigenschaft **"true"** .  
   
   Einfache Formen sind kein Bestandteil des UML-Modells und werden nicht im UML-Modell-Explorer angezeigt.  
   

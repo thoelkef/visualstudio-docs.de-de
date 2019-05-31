@@ -52,16 +52,16 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]
 ## <a name="invalid-options"></a>Ungültige Optionen  
  Die folgenden Optionen können nicht in derselben Befehlszeile wie **PF** angegeben werden.  
   
- **Timer**[**:**`Cycles`]  
+ **Timer**[ **:** `Cycles`]  
  Legt das Samplingereignis auf die Prozessortaktzyklen und das Samplingintervall optional auf `Cycles` fest. Das Timer-Standardintervall beträgt 10.000.000.  
   
- **Sys**[**:**`Events`]  
+ **Sys**[ **:** `Events`]  
  Legt das Samplingereignis auf Aufrufe von der Anwendung mit Profil auf den Betriebssystemkernel (syscalls) und das Samplingintervall optional auf `Events` fest. Das standardmäßige Sys-Intervall beträgt 10.  
   
  **Counter:** `Name`[`,Reload`[`,FriendlyName`]]  
  Legt das Samplingereignis auf den von `Name` festgelegten CPU-Leistungsindikator fest und das Samplingintervall auf `Reload`.  
   
- **GC**[**:**{**Allocation**|**Lifetime**}]  
+ **GC**[ **:** {**Allocation**|**Lifetime**}]  
  Sammelt .NET-Speicherdaten. Wenn der Parameter **Allocation** angegeben wird (Standard), werden Daten bei jedem Speicherbelegungsereignis gesammelt. Wenn jedoch der **Lifetime**-Parameter angegeben wird, werden die Daten auch bei jedem Garbage Collection-Ereignis gesammelt.  
   
 ## <a name="example"></a>Beispiel  

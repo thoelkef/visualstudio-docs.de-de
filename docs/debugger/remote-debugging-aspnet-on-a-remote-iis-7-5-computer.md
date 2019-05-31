@@ -60,7 +60,7 @@ Dieser Artikel enthält Schritte zum Einrichten einer Standardkonfiguration von 
 1. Erstellen Sie eine neue MVC ASP.NET-Anwendung.
 
     ::: moniker range=">=vs-2019"
-    Geben Sie in Visual Studio-2019, **STRG + Q** Geben Sie zum Öffnen des Suchfelds **asp.net**, wählen Sie **Vorlagen**, wählen Sie dann **Erstellen einer neuen ASP.NET Web Application (.NET Framework)**. Klicken Sie im Dialogfeld, das angezeigt wird, geben Sie dem Projekt **MyASPApp**, und wählen Sie dann **erstellen**. Wählen Sie **MVC** , und wählen Sie **erstellen**.
+    Geben Sie in Visual Studio-2019, **STRG + Q** Geben Sie zum Öffnen des Suchfelds **asp.net**, wählen Sie **Vorlagen**, wählen Sie dann **Erstellen einer neuen ASP.NET Web Application (.NET Framework)** . Klicken Sie im Dialogfeld, das angezeigt wird, geben Sie dem Projekt **MyASPApp**, und wählen Sie dann **erstellen**. Wählen Sie **MVC** , und wählen Sie **erstellen**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Wählen Sie hierzu in Visual Studio 2017 **Datei > Neu > Projekt**, und wählen Sie dann **Visual C# > Web > ASP.NET-Webanwendung**. Im **ASP.NET 4.5.2** -Vorlagenabschnitt wählen Sie **MVC**aus. Stellen Sie sicher, dass **Docker-Unterstützung aktivieren** nicht ausgewählt ist und dass **Authentifizierung** nastaven NA hodnotu **keine Authentifizierung**. Nennen Sie das Projekt **MyASPApp**.)
@@ -234,7 +234,7 @@ Weitere Informationen zu den Remotedebugger als Dienst ausführen, finden Sie un
 
 7. Klicken Sie auf **Attach** (Anhängen).
 
-8. Öffnen Sie die Website des Remotecomputers. Navigieren Sie in einem Browser zu **http://\<Name_des_Remotecomputers>**.
+8. Öffnen Sie die Website des Remotecomputers. Navigieren Sie in einem Browser zu **http://\<Name_des_Remotecomputers>** .
 
     Es sollte die ASP.NET-Webseite angezeigt werden.
 9. Klicken Sie in der laufenden Anwendung ASP.NET auf den Link, um die **zu** Seite.
@@ -261,7 +261,7 @@ Erforderliche Ports:
 
 1. Öffnen Sie zum Öffnen eines Ports in Windows Server die **starten** Menü, und suchen Sie **Windows-Firewall mit erweiterter Sicherheit**.
 
-2. Wählen Sie dann **Eingangsregeln > neue Regel > Port**. Wählen Sie **Weiter** und wählen Sie unter **bestimmte lokale Ports**, geben Sie die Portnummer, und klicken Sie auf **Weiter**, klicken Sie dann **Verbindung zulassen,**, klicken Sie auf Weiter, und Fügen Sie den Namen (**IIS**, **Web Deploy**, oder **"msvsmon"**) für die eingehende Regel.
+2. Wählen Sie dann **Eingangsregeln > neue Regel > Port**. Wählen Sie **Weiter** und wählen Sie unter **bestimmte lokale Ports**, geben Sie die Portnummer, und klicken Sie auf **Weiter**, klicken Sie dann **Verbindung zulassen,** , klicken Sie auf Weiter, und Fügen Sie den Namen (**IIS**, **Web Deploy**, oder **"msvsmon"** ) für die eingehende Regel.
 
     Wenn Sie weitere Informationen zum Windows-Firewall konfigurieren möchten, finden Sie unter [der Windows-Firewall für Remotedebuggen konfigurieren](../debugger/configure-the-windows-firewall-for-remote-debugging.md).
 

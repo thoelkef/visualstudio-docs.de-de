@@ -30,7 +30,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: c5d7d5fa0a53ead2f49f89df37943d734a1b73fb
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60045341"
@@ -62,7 +62,7 @@ Wenn Sie ein Projekt in Visual Studio-IDE debuggen, lädt der Debugger automatis
 
 Der Debugger sucht auch nach Symboldateien in den folgenden Speicherorten:
 
-1. Der Speicherort, der in die DLL oder ausführbaren Datei angegeben ist (*.exe*) Datei.
+1. Der Speicherort, der in die DLL oder ausführbaren Datei angegeben ist ( *.exe*) Datei.
 
    In der Standardeinstellung, wenn Sie eine DLL-Datei erstellt haben oder ein *.exe* Datei auf Ihrem Computer, die der Linker platziert, den vollständigen Pfad und Dateiname der zugeordneten *PDB* -Datei in die DLL oder *.exe* Datei. Der Debugger überprüft, um festzustellen, ob die Symboldatei an diesem Speicherort vorhanden ist.
 
@@ -177,7 +177,7 @@ Wenn Sie ein Projekt erstellen, aus der Visual Studio-IDE mit dem Standard **Deb
 
   - *VC\<x.pdb*, wobei *\<x>* die Visual C++-Version darstellt, beispielsweise *VC11.pdb*.
 
-    Die *VC\<x > pdb* Datei speichert alle Debuginformationen für die einzelnen Objektdateien und befindet sich im selben Verzeichnis wie das projektmakefile. Jedes Mal eine Objektdatei erstellt wird, führt der C/C++-Compiler Debuginformationen in *VC\<x > pdb*. Selbst wenn jede Quelldatei allgemeine Headerdateien enthält, wie beispielsweise  *\<windows.h >*, die Typdefinitionen aus diesen Headerdateien nur einmal statt in jedem Objektdatei gespeichert. Die eingefügten Informationen umfassen zwar Typinformationen, jedoch wie Funktionsdefinitionen keine Symbolinformationen.
+    Die *VC\<x > pdb* Datei speichert alle Debuginformationen für die einzelnen Objektdateien und befindet sich im selben Verzeichnis wie das projektmakefile. Jedes Mal eine Objektdatei erstellt wird, führt der C/C++-Compiler Debuginformationen in *VC\<x > pdb*. Selbst wenn jede Quelldatei allgemeine Headerdateien enthält, wie beispielsweise  *\<windows.h >* , die Typdefinitionen aus diesen Headerdateien nur einmal statt in jedem Objektdatei gespeichert. Die eingefügten Informationen umfassen zwar Typinformationen, jedoch wie Funktionsdefinitionen keine Symbolinformationen.
 
   - *\<project>.pdb*
 
@@ -201,7 +201,7 @@ Legen Sie die *"Web.config"* Datei der ASP.NET-Anwendung auf den Debugmodus. Der
 
 ## <a name="manage-symbols-while-debugging"></a>Verwaltung von Symbolen beim Debuggen
 
-Können Sie die **Module**, **Aufrufliste**, **"lokal"**, **"Auto"**, oder ein beliebiges **Watch** Fenster geladen Symbole, oder Ändern der Symboloptionen während des Debuggens. Weitere Informationen finden Sie unter [mit, wie der Debugger an Ihre app angefügt vertrauter machen](../debugger/debugger-tips-and-tricks.md#modules_window).
+Können Sie die **Module**, **Aufrufliste**, **"lokal"** , **"Auto"** , oder ein beliebiges **Watch** Fenster geladen Symbole, oder Ändern der Symboloptionen während des Debuggens. Weitere Informationen finden Sie unter [mit, wie der Debugger an Ihre app angefügt vertrauter machen](../debugger/debugger-tips-and-tricks.md#modules_window).
 
 ### <a name="use-the-modules-window"></a>Verwenden des Modulfensters
 
@@ -236,7 +236,7 @@ In diesem Fall zeigt der Debugger die **keine Symbole geladen** oder **keine Que
 **So verwenden Sie die Dokumentseite keine Symbole geladen, ermitteln und Laden Symbole fehlen:**
 
 - Um den Suchpfad zu ändern, wählen Sie einen nicht markierten Pfad aus, oder wählen Sie **neuen Pfad** oder **neuer VSTS-Pfad** und geben Sie ein oder wählen Sie einen neuen Pfad. Wählen Sie **laden** die Pfade erneut zu suchen und die Symboldatei zu laden, wenn es gefunden wird.
-- Um alle Symboloptionen zu überschreiben und die Suchpfade erneut zu versuchen, wählen Sie **navigieren und suchen Sie nach \<Name der ausführbaren Datei >**. Die Symboldatei wird geladen, wenn es gefunden wird, oder **Datei-Explorer** wird geöffnet, sodass Sie die Symboldatei manuell auswählen können.
+- Um alle Symboloptionen zu überschreiben und die Suchpfade erneut zu versuchen, wählen Sie **navigieren und suchen Sie nach \<Name der ausführbaren Datei >** . Die Symboldatei wird geladen, wenn es gefunden wird, oder **Datei-Explorer** wird geöffnet, sodass Sie die Symboldatei manuell auswählen können.
 - Zum Öffnen der **Optionen** > **Debuggen** > **Symbole** Seite **Symboleinstellungen ändern**.
 - Um die Disassembly in einem neuen Fenster einmal anzuzeigen, wählen Sie **Disassembly anzeigen**, oder wählen Sie **Dialogfeld "Optionen"** , legen Sie die Option, um die Disassembly immer anzuzeigen, wenn Quell-oder Symboldateien nicht gefunden werden.
 - Um die Speicherorte durchsucht und das Ergebnis anzuzeigen, erweitern Sie **Symbolladeinformationen**.

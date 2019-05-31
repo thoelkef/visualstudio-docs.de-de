@@ -82,7 +82,7 @@ Die Codeanalyse-Eincheckrichtlinie gibt einen Satz von Regeln an, die Mitglieder
   
 3. In der **Eincheckrichtlinie** auflisten, doppelklicken Sie auf **Codeanalyse**, und stellen Sie sicher, dass die **Codeanalyse für verwalteten Code erzwingen** das Kontrollkästchen aktiviert ist.  
   
-4. In der **diesen Regelsatz ausführen** auf  **\<Regelsatz auswählen aus der Quellcodeverwaltung >**.  
+4. In der **diesen Regelsatz ausführen** auf  **\<Regelsatz auswählen aus der Quellcodeverwaltung >** .  
   
 5. Geben Sie den Pfad der Regeldatei Satz Eincheckrichtlinie, in der Versionskontrolle.  
   
@@ -116,6 +116,6 @@ Die Codeanalyse-Eincheckrichtlinie gibt einen Satz von Regeln an, die Mitglieder
   
 6. Wenn Code in Komponenten von anderen Unternehmen ignorieren möchten, wählen Sie die **Ergebnisse aus generiertem Code unterdrücken** Kontrollkästchen.  
   
-7. In der **diesen Regelsatz ausführen** auf  **\<durchsuchen... >**.  
+7. In der **diesen Regelsatz ausführen** auf  **\<durchsuchen... >** .  
   
 8. Geben Sie die lokale Version der Regelsatzdatei der Eincheckrichtlinie.

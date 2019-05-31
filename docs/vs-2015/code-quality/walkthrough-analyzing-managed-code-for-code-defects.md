@@ -15,7 +15,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 26d8412318efd2292fd0f5a0f0ef52fe36c7d06c
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60116289"
@@ -41,7 +41,7 @@ In dieser exemplarischen Vorgehensweise analysieren Sie ein verwaltetes Projekt 
   
 1. Auf der **Datei** Menü [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], klicken Sie auf **neu** , und klicken Sie dann auf **Projekt**.  
   
-2. In der **neues Projekt** Dialogfeld **Projekttypen**, klicken Sie auf **Visual C#-**.  
+2. In der **neues Projekt** Dialogfeld **Projekttypen**, klicken Sie auf **Visual C#-** .  
   
 3. Klicken Sie unter **Vorlagen**Option **Klassenbibliothek**.  
   
@@ -149,7 +149,7 @@ In dieser exemplarischen Vorgehensweise analysieren Sie ein verwaltetes Projekt 
   
        Wählen Sie die **Assembly signieren** Kontrollkästchen.  
   
-       In der **wählen Sie eine Schlüsseldatei mit starkem Namen** Liste  **\<neu... >**.  
+       In der **wählen Sie eine Schlüsseldatei mit starkem Namen** Liste  **\<neu... >** .  
   
        Die **Schlüssel für einen starken Namen erstellen** Dialogfeld wird angezeigt.  
   
