@@ -1,5 +1,5 @@
 ---
-title: 'Workflow-Designer – Vorgehensweise: Definieren und Verarbeiten von aktivitätsdelegaten'
+title: 'Workflow-Designer: Definieren und Verarbeiten von aktivitätsdelegaten'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 25f844acefed50b5bb35e3b1d8c6a570e11ca194
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 34cb06bbc5c9575f5a10507a8015c9819e7b533b
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949517"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66431799"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Vorgehensweise: Definieren und Verarbeiten von Aktivitätsdelegaten im Workflow-Designer
 
@@ -34,7 +34,7 @@ ms.locfileid: "62949517"
 
 5. Klicken Sie auf **Argument erstellen**. Nennen Sie das neue Argument **Elemente**.
 
-6. In der **Argumenttyp** Spalte **Array von [T]**.
+6. In der **Argumenttyp** Spalte **Array von [T]** .
 
 7. Wählen Sie im Typbrowser **Objekt** und wählen Sie dann **OK**.
 
@@ -52,7 +52,7 @@ ms.locfileid: "62949517"
 
 14. In der **Variablentyp** Spalte **Int32**. Lassen Sie die **Bereich** als **während**, und die **Standard** Spalte leer.
 
-15. Legen Sie die **Bedingung** Eigenschaft der <xref:System.Activities.Statements.While> Aktivität **Index < Items.Length;**.
+15. Legen Sie die **Bedingung** Eigenschaft der <xref:System.Activities.Statements.While> Aktivität **Index < Items.Length;** .
 
 16. Ziehen Sie ein <xref:System.Activities.Statements.InvokeDelegate> Aktivität aus der **primitive** Abschnitt der Toolbox auf die **Text** von der <xref:System.Activities.Statements.While> Aktivität.
 
@@ -60,7 +60,7 @@ ms.locfileid: "62949517"
 
 18. In der **Eigenschaften** Raster für die <xref:System.Activities.Statements.InvokeDelegate> -Aktivität, klicken Sie auf die **...**  Schaltfläche der **Delegatargumente** Eigenschaft.
 
-19. In der **Wert** Spalte des Arguments mit dem Namen **Argument**, geben Sie **Items [Index]**. Klicken Sie auf **Ok** schließen die **DelegateArguments** Dialogfeld.
+19. In der **Wert** Spalte des Arguments mit dem Namen **Argument**, geben Sie **Items [Index]** . Klicken Sie auf **Ok** schließen die **DelegateArguments** Dialogfeld.
 
 20. Ziehen Sie eine <xref:System.Activities.Statements.Assign>-Aktivität auf die horizontale Linie unterhalb der <xref:System.Activities.Statements.InvokeDelegate>-Aktivität. Die <xref:System.Activities.Statements.Assign> -Aktivität wird erstellt, und ein <xref:System.Activities.Statements.Sequence> Aktivität wird automatisch erstellt, um die beiden Aktivitäten im der **Text** Teil der **MyForEach** Aktivität. Die Sequenz wird benötigt, da die **Text** Abschnitt kann nur eine einzige Aktivität enthalten. Automatisch beim Erstellen eines neuen <xref:System.Activities.Statements.Sequence> Aktivität ist ein neues Feature von .NET Framework 4.5.
 
@@ -76,11 +76,11 @@ ms.locfileid: "62949517"
 
 3. Ziehen Sie eine **MyForEach** Aktivität aus der Toolbox auf die Designeroberfläche. Die Aktivität ist in einem Abschnitt der Toolbox mit dem gleichen Namen wie das Projekt.
 
-4. Legen Sie die **Elemente** Eigenschaft der **MyForEach** Aktivität **new Object [] {1, "Abc"}**.
+4. Legen Sie die **Elemente** Eigenschaft der **MyForEach** Aktivität **new Object [] {1, "Abc"}** .
 
 5. Ziehen Sie eine <xref:System.Activities.Statements.WriteLine> Aktivität aus der **primitive** Abschnitt der Toolbox auf die **Delegate: Body** Teil der **MyForEach** Aktivität.
 
-6. Legen Sie die **Text** Eigenschaft der <xref:System.Activities.Statements.WriteLine> Aktivität **Argument.ToString()**.
+6. Legen Sie die **Text** Eigenschaft der <xref:System.Activities.Statements.WriteLine> Aktivität **Argument.ToString()** .
 
 Wenn der Workflow ausgeführt wird, wird die Konsole die folgende Ausgabe:
 

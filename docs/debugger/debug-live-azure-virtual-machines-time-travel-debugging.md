@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 3a81f6aa138b361a44a272ebda3557d27a914c64
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53dce8b6b468dd5754b5708afccdcbe6cb908d1d
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62854152"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432217"
 ---
 # <a name="record-and-replay-live-aspnet-apps-on-azure-virtual-machines-using-the-snapshot-debugger"></a>Aufzeichnen und Wiedergeben von live ASP.NET-Apps auf Azure Virtual Machines mit dem Momentaufnahmedebugger
 
@@ -44,7 +44,7 @@ In diesem Tutorial werden Sie Folgendes durchführen:
 * Time-Debuggen Travel steht für die folgenden Azure-VM-Web-apps zur Verfügung:
   * ASP.NET-Anwendungen (AMD64) auf .NET Framework 4.8 oder höher ausgeführt wird.
 
-## <a name="open-your-project-and-start-the-snapshot-debugger-with-time-travel-debugging-enabled"></a>Öffnen Sie das Projekt, und starten Sie den Snapshot-Debugger mit Time-Debuggen Travel aktiviert
+## <a name="start-the-snapshot-debugger-with-time-travel-debugging-enabled"></a>Starten Sie den Snapshot-Debugger mit Time-Debuggen Travel aktiviert
 
 1. Öffnen Sie das Projekt für die Sie einen Zeitraum sammeln möchten Reisen aufzeichnen.
 
@@ -99,7 +99,7 @@ Wenn Sie ein andockpunkt aktiviert ist, erfasst er eine Momentaufnahme, wenn die
 
    ![Debugging starten](../debugger/media/time-travel-debugging-step-commands.png)
 
-   Sie können auch die **"lokal"**, **Überwachungen**, und **Aufrufliste** Windows und auch Auswerten von Ausdrücken.
+   Sie können auch die **"lokal"** , **Überwachungen**, und **Aufrufliste** Windows und auch Auswerten von Ausdrücken.
 
    ![Überprüfen von Momentaufnahmedaten](../debugger/media/time-travel-debugging-start-debugging.png)
 
