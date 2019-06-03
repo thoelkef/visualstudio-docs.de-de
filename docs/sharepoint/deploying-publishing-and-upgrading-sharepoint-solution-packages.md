@@ -1,5 +1,5 @@
 ---
-title: Bereitstellen, veröffentlichen und Aktualisieren von SharePoint-Lösungspaketen | Microsoft-Dokumentation
+title: Bereitstellen, veröffentlichen und Aktualisieren von SharePoint-Lösungspakete
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a49ad82cc6cbb2eef8a8746b2c94575925ab1ddd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7c41b36766e112dc86bd15c7a2bec48633c35b57
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436734"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402039"
 ---
 # <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>Bereitstellen, veröffentlichen und Aktualisieren von SharePoint-Lösungspakete
   Nachdem Sie eine SharePoint-Lösung in Visual Studio entwickelt haben, können Sie die Paketdatei (.wsp) auf einem lokalen SharePoint-Server bereitstellen oder veröffentlichen es auf einem Remote- oder lokalen SharePoint-Server. Wenn Sie die Dateien bereitstellen, können Sie anpassen, wie die Paketdateien (.wsp) bereitgestellt werden.
@@ -54,7 +54,7 @@ ms.locfileid: "63436734"
  Sie können auch vor und nach der Bereitstellung auszuführenden Befehle hinzufügen. Weitere Informationen finden Sie unter [Vorgehensweise: Festlegen von SharePoint-Bereitstellungsbefehlen](../sharepoint/how-to-set-sharepoint-deployment-commands.md).
 
 ## <a name="publish-packages-to-a-remote-or-local-server"></a>Veröffentlichen von Paketen auf einem Remote- oder lokalen server
- Wählen Sie zum Veröffentlichen einer SharePoint-Sandbox-Lösung mit einem Remoteserver, auf der Menüleiste **erstellen**, **veröffentlichen**, und dann auf die **veröffentlichen** Dialogfeld auf die **In SharePoint-Website veröffentlichen** Optionsfeld aus, geben Sie die Remoteserver-URL, z. B. **https://someremoteserver.sharepoint.microsoftonline.com**.
+ Wählen Sie zum Veröffentlichen einer SharePoint-Sandbox-Lösung mit einem Remoteserver, auf der Menüleiste **erstellen**, **veröffentlichen**, und dann auf die **veröffentlichen** Dialogfeld auf die **In SharePoint-Website veröffentlichen** Optionsfeld aus, geben Sie die Remoteserver-URL, z. B. **https://someremoteserver.sharepoint.microsoftonline.com** .
 
  Zum Veröffentlichen einer SharePoint-Lösung mit einem lokalen Server, in der **veröffentlichen** Dialogfeld auf die **im Dateisystem veröffentlichen** Optionsfeld aus, die einen Pfad des lokalen Systems bereitstellen.
 
