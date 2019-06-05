@@ -10,12 +10,12 @@ author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 89d072c7f9643c5991ec098f87d7ec35a295bbe1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8dd991af976c9262a6a1af7813c1201f68b36ab8
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971308"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66431740"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Isolieren von getestetem Code mithilfe von Microsoft Fakes
 
@@ -69,9 +69,7 @@ Eine ausführlichere Beschreibung finden Sie unter [Use stubs to isolate parts o
      Definieren Sie stattdessen eine Schnittstelle, die von der anderen Komponente und auch durch einen Stub für Testzwecke implementiert werden kann:
 
     ```csharp
-    public int GetContosoPrice(IStockFeed feed)
-    { return feed.GetSharePrice("COOO"); }
-
+    public int GetContosoPrice(IStockFeed feed) => feed.GetSharePrice("COOO");
     ```
 
     ```vb
