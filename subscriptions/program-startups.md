@@ -7,17 +7,17 @@ ms.date: 03/20/2018
 ms.topic: conceptual
 description: Details zu den Abonnements, die über das Microsoft für Startups-Programm angeboten werden.
 searchscope: VS Subscription
-ms.openlocfilehash: 06bd2dac43adbfbbd48aad6fff796a3dbdd023ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8a3acb216b58ce9a81b8edefed61d779955c0a1d
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007783"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402089"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>Visual Studio-Abonnements, die für Startups angeboten werden
 Qualifizierte Startups, die dem Microsoft für Startups-Programm beitreten, können fünf [monatliche Cloud-Abonnements für Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/pricing/) verdienen. Dabei handelt es sich um die gleichen Abonnements, die auch kommerziell angeboten werden, jedoch ohne spezielle Einschränkungen. Jedes Abonnement muss einem Endbenutzer (der dem lizenzierten Benutzer entspricht) zugewiesen werden, bevor ein Benutzer Visual Studio ausführen kann und in Azure DevOps Services als Visual Studio Enterprise-Abonnent erkannt wird.
 
-[Weitere Informationen zu Microsoft für Startups](https://startups.microsoft.com/program-details/)
+[Weitere Informationen zu Microsoft für Startups](https://startups.microsoft.com)
 
 **Anmeldung bei Visual Studio erforderlich** Bei allen Cloud-Abonnements von Visual Studio muss der lizenzierte Benutzer bei Visual Studio mit der gleichen Identität bzw. dem gleichen Konto angemeldet sein, die bzw. das zum Aktivieren des Visual Studio-Abonnements verwendet wurde.
 
