@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: fa965caf63dad6e81e2aeabbc93e97c7aa4b7a80
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ef7b693a881aaa1457004c84968ebc80936fc2b2
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546198"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714848"
 ---
 # <a name="ca1403-auto-layout-types-should-not-be-com-visible"></a>CA1403: Typen mit automatischem Layout sollten nicht für COM sichtbar sein.
 
@@ -39,7 +39,7 @@ Ein Werttyp der Component Object Model (COM) sichtbar ist mit markiert die <xref
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-<xref:System.Runtime.InteropServices.LayoutKind> Layouttypen werden von der common Language Runtime verwaltet. Das Layout dieser Typen kann zwischen Versionen von .NET Framework, Ändern der COM-Clients unterbricht, die ein bestimmtes Layout erwarten. Wenn die <xref:System.Runtime.InteropServices.StructLayoutAttribute> Attribut nicht angegeben ist, geben Sie die C#-, Visual Basic und C++-Compiler [LayoutKind.Auto](<xref:System.Runtime.InteropServices.LayoutKind.Auto>) für Werttypen.
+<xref:System.Runtime.InteropServices.LayoutKind> Layouttypen werden von der common Language Runtime verwaltet. Das Layout dieser Typen kann zwischen den Versionen von .NET ändern, der COM-Clients unterbricht, die ein bestimmtes Layout erwarten. Wenn die <xref:System.Runtime.InteropServices.StructLayoutAttribute> Attribut nicht angegeben ist, geben Sie die C#-, Visual Basic und C++-Compiler [LayoutKind.Auto](<xref:System.Runtime.InteropServices.LayoutKind.Auto>) für Werttypen.
 
 Sofern nicht anders markiert ist, werden alle öffentliche, nicht generischen Typen für COM sichtbar, und alle nicht öffentliche und generische Typen sind für COM nicht sichtbar Um falsch positive Ergebnisse zu reduzieren, erfordert mit dieser Regel jedoch die COM-Sichtbarkeit des Typs explizit angegeben werden. Die übergeordnete Assembly muss markiert sein, mit der <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> festgelegt `false` und der Typ markiert werden muss, mit der <xref:System.Runtime.InteropServices.ComVisibleAttribute> festgelegt `true`.
 

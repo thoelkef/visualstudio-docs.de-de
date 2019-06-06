@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3097e52f99f044257b8eaf634455bdf19978d0c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 93bd0fd71fbe8eae90750aa2e7597ee40bba17a2
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825042"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715273"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Exemplarische Vorgehensweise: Analysieren von verwaltetem Code für Codefehler
 
 In dieser exemplarischen Vorgehensweise müssen Sie ein verwaltetes Projekt Codefehler analysieren, mit dem Code Analysetool.
 
-Diese exemplarische Vorgehensweise führt Sie schrittweise durch den Prozess der Verwendung von Code-Analyse zum Analysieren Ihrer .NET-verwaltete Codeassemblys auf Übereinstimmung mit den Microsoft .NET Framework-Entwurfsrichtlinien.
+Diese exemplarische Vorgehensweise führt Sie schrittweise durch den Prozess der Verwendung von Code-Analyse zum Analysieren Ihrer .NET-verwaltete Codeassemblys auf Konformität mit den Entwurfsrichtlinien von .NET.
 
 ## <a name="create-a-class-library"></a>Erstellen einer Klassenbibliothek
 

@@ -14,15 +14,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8da8b003f74b21ab0a6178742c28f85423dd2ec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f2f2437f09286b1b6ff0aa856eec845ecb83c1d
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816798"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715004"
 ---
 # <a name="design-warnings"></a>Entwurfswarnungen
-Entwerfen, dass Warnungen syntaxfehlerregeln eingehalten, sondern den .NET Framework-Entwurfsrichtlinien unterstützen.
+
+Entwurf Warnungen Unterstützung Einhaltung der [Entwurfsrichtlinien von .NET](/dotnet/standard/design-guidelines/).
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
@@ -43,7 +44,7 @@ Entwerfen, dass Warnungen syntaxfehlerregeln eingehalten, sondern den .NET Frame
 | [CA1012: Abstrakte Typen dürfen keine Konstruktoren aufweisen.](../code-quality/ca1012-abstract-types-should-not-have-constructors.md) | Konstruktoren von abstrakten Datentypen können nur von abgeleiteten Typen aufgerufen werden. Da öffentliche Konstruktoren Instanzen eines Typs erstellen und Sie keine Instanzen eines abstrakten Datentyps erstellen können, ist ein abstrakter Datentyp mit einem öffentlichen Konstruktor fehlerhaft konzipiert. |
 | [CA1013: Gleichheitsoperator beim Überladen von Addition und Subtraktion](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md) | Ein öffentlicher oder geschützter Typ implementiert den Additions- oder Subtraktionsoperator, ohne den Gleichheitsoperator zu implementieren. |
 | [CA1014: Assemblys mit CLSCompliantAttribute markieren](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md) | In der Common Language Specification (CLS) sind Benennungseinschränkungen, Datentypen und Regeln definiert, denen Assemblys entsprechen müssen, wenn sie in verschiedenen Programmiersprachen verwendet werden sollen. Um guten Entwurfsprinzipien gerecht zu werden, dass alle Assemblys CLS-Kompatibilität mit CLSCompliantAttribute explizit angegeben werden. Wenn das Attribut in einer Assembly nicht vorhanden ist, ist die Assembly nicht kompatibel. |
-| [CA1016: Assemblys mit AssemblyVersionAttribute markieren](../code-quality/ca1016-mark-assemblies-with-assemblyversionattribute.md) | .NET Framework verwendet die Versionsnummer, um eine Assembly eindeutig zu identifizieren, und klicken Sie zum Binden an Datentypen in Assemblys mit starkem Namen. Die Versionsnummer wird zusammen mit der Versions- und Herausgeberrichtlinie verwendet. Standardmäßig werden Anwendungen nur mit der Assemblyversion ausgeführt, mit der sie erstellt wurden. |
+| [CA1016: Assemblys mit AssemblyVersionAttribute markieren](../code-quality/ca1016-mark-assemblies-with-assemblyversionattribute.md) | .NET verwendet die Versionsnummer, um eine Assembly eindeutig zu identifizieren, und klicken Sie zum Binden an Datentypen in Assemblys mit starkem Namen. Die Versionsnummer wird zusammen mit der Versions- und Herausgeberrichtlinie verwendet. Standardmäßig werden Anwendungen nur mit der Assemblyversion ausgeführt, mit der sie erstellt wurden. |
 | [CA1017: Assemblys mit ComVisibleAttribute markieren](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md) | Das ComVisibleAttribute-Attribut bestimmt, wie COM-Clients auf verwalteten Code zugreifen. Gute Entwurfsprinzipien verlangen, dass die COM-Sichtbarkeit durch Assemblys explizit angegeben wird. Die COM-Sichtbarkeit kann für die gesamte Assembly festgelegt und anschließend für einzelne Typen und Typmember überschrieben werden. Wenn das Attribut fehlt, ist der Inhalt der Assembly für COM-Clients sichtbar. |
 | [CA1018: Attribute mit AttributeUsageAttribute markieren](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md) | Wenn Sie ein benutzerdefiniertes Attribut definieren, markieren Sie es mithilfe von AttributeUsageAttribute, um anzugeben, an welcher Stelle im Quellcode das benutzerdefinierte Attribut angewendet werden kann. Die Bedeutung und die beabsichtigte Verwendung eines Attributs bestimmen die gültigen Positionen des Attributs im Code. |
 | [CA1019: Accessors für Attributargumente definieren](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) | Attribute können obligatorische Argumente definieren, die angegeben werden müssen, wenn das Attribut auf ein Ziel angewendet wird. Diese Argumente werden auch als positionelle Argumente bezeichnet, da sie bei Attributkonstruktoren als positionelle Parameter angegeben werden. Für jedes obligatorische Argument muss das Attribut außerdem eine entsprechende schreibgeschützte Eigenschaft enthalten, damit der Wert des Arguments zur Ausführungszeit abgerufen werden kann. Attribute können auch optionale Argumente definieren, die auch als benannte Argumente bezeichnet werden. Diese Argumente werden bei Attributkonstruktoren über ihren Namen angegeben und sollten über eine entsprechende Lese-Schreib-Eigenschaft verfügen. |

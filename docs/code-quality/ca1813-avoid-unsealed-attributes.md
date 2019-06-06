@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d7236b77a7dd0a81f8a7846c0eba28e3b520cdd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a17c5bdc9e21bdf877206b1dc28596c251049455
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545588"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714751"
 ---
 # <a name="ca1813-avoid-unsealed-attributes"></a>CA1813: Nicht versiegelte Attribute vermeiden.
 
@@ -39,7 +39,7 @@ Ein öffentlicher Typ erbt von <xref:System.Attribute?displayProperty=fullName>i
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Die .NET Framework-Klassenbibliothek stellt Methoden zum Abrufen von benutzerdefinierten Attributen bereit. Standardmäßig wird mit diesen Methoden die Attributvererbungshierarchie durchsucht. Z. B. <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> sucht nach dem Typ des angegebenen Attributs oder jeder Typ des Attributs, das den Typ des angegebenen Attributs erweitert. Versiegeln das Attribut wird das Durchsuchen der Vererbungshierarchie befindet und kann die Leistung verbessern.
+.NET bietet Methoden zum Abrufen von benutzerdefinierten Attributen. Standardmäßig wird mit diesen Methoden die Attributvererbungshierarchie durchsucht. Z. B. <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> sucht nach dem Typ des angegebenen Attributs oder jeder Typ des Attributs, das den Typ des angegebenen Attributs erweitert. Versiegeln das Attribut wird das Durchsuchen der Vererbungshierarchie befindet und kann die Leistung verbessern.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 

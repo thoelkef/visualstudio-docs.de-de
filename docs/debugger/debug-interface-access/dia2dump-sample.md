@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f5b353986cf77c554b277975fabb1cb755faba3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1c8b92ae2f607ae449b7b4392fc3638fcdcb6a80
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554869"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715342"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump-Beispiel
 
@@ -42,9 +42,9 @@ Standardmäßig ist das Installationsverzeichnis ein geschütztes Verzeichnis. D
 
 1. In **Projektmappen-Explorer**, wählen Sie das Dia2Dump-Projekt (nicht auf die Projektmappe).
 
-1. Öffnen Sie das Dialogfeld **Eigenschaftenseiten** des Projekts. Ausführliche Informationen finden Sie unter [Working with Project Properties (Arbeiten mit Projekteigenschaften)](/cpp/ide/working-with-project-properties).
+1. Öffnen Sie das Dialogfeld **Eigenschaftenseiten** des Projekts. Ausführliche Informationen finden Sie unter [Working with Project Properties (Arbeiten mit Projekteigenschaften)](/cpp/build/working-with-project-properties).
 
-1. Öffnen der **Konfigurationseigenschaften** > **C/C++-** > **allgemeine** Eigenschaftenseite.
+1. Öffnen der **Konfigurationseigenschaften** > **C/C++-**  > **allgemeine** Eigenschaftenseite.
 
 1. In der **Additional Include Directories** -Eigenschaft, wählen Sie im Dropdown-Steuerelement, und wählen Sie dann **bearbeiten**.
 

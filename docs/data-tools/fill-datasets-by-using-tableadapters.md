@@ -19,19 +19,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: eb1fdf57be1630468ee3990028a417565a914639
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 30a2860ae1dfb9d428f65812590675fccb42cfe5
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566928"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715194"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Füllen von Datasets mit TableAdapters
 
 Eine Komponente des TableAdapter füllt ein Dataset mit Daten aus der Datenbank, basierend auf eine oder mehrere Abfragen oder gespeicherte Prozeduren, die Sie angeben. TableAdapter-Steuerelemente können auch ausführen, fügt, Aktualisierungen und löschungen in der Datenbank um Änderungen permanent zu speichern, die Sie auf das Dataset vornehmen. Sie können auch globale Befehle ausgeben, die nicht zu einer bestimmten Tabelle verbunden sind.
 
 > [!NOTE]
-> TableAdapters werden von Visual Studio-Designer generiert. Wenn Sie Datasets programmgesteuert erstellen, verwenden Sie DataAdapter, ist eine .NET Framework-Klasse.
+> TableAdapters werden von Visual Studio-Designer generiert. Wenn Sie Datasets programmgesteuert erstellen, verwenden Sie DataAdapter, die eine .NET-Klasse ist.
 
 Ausführliche Informationen zu Vorgängen des TableAdapter können Sie direkt auf einen der folgenden Themen überspringen:
 

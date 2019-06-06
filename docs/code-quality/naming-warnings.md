@@ -14,15 +14,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3fc446207d2f8c2800135154ca435b821a0afd1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 90bdc70a2de900d43831994aff72e25031241cc3
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825441"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715305"
 ---
 # <a name="naming-warnings"></a>Benennungswarnungen
-Benennungskonventionen Warnungen unterstützen die Einhaltung der Namenskonventionen der von den .NET Framework-Entwurfsrichtlinien.
+
+Benennungskonventionen Warnungen unterstützen die Einhaltung der Namenskonventionen der von den Entwurfsrichtlinien von .NET.
 
 ## <a name="in-this-section"></a>In diesem Abschnitt
 
@@ -42,7 +43,7 @@ Benennungskonventionen Warnungen unterstützen die Einhaltung der Namenskonventi
 |[CA1719: Parameternamen sollten nicht mit Membernamen übereinstimmen.](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)|Ein Parametername sollte die Bedeutung eines Parameters vermitteln, und ein Membername sollte die Bedeutung eines Members vermitteln. Diese stimmen in der Regel nicht überein. Wenn ein Parameter mit dem Namen des zugehörigen Members benannt wird, ist dies nicht intuitiv, und es erschwert die Verwendung der Bibliothek.|
 |[CA1701: Zusammengesetzte Begriffen in Ressourcenzeichenfolgen sollte beachtet werden](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)|Jedes Wort in der Ressourcenzeichenfolge wird in einzelne Token unterteilt, die auf die Groß-/Kleinschreibung basieren. Jede zusammenhängende Kombination aus zwei Token wird durch die Rechtschreibprüfung aus der Microsoft-Bibliothek überprüft. Wenn der Begriff erkannt wird, erzeugt er einen Regelverstoß.|
 |[CA1703: Ressourcenzeichenfolgen sollten korrekt geschrieben werden](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)|Eine Ressourcenzeichenfolge enthält mindestens ein Wort, das von der Rechtschreibprüfung aus der Microsoft-Bibliothek nicht erkannt wird.|
-|[CA1724: Typnamen sollten nicht mit Namespaces übereinstimmen.](../code-quality/ca1724-type-names-should-not-match-namespaces.md)|Typnamen sollten nicht die Namen von Namespaces mit übereinstimmen, die in der .NET Framework-Klassenbibliothek definiert sind. Verstoß gegen diese Regel kann die Verwendbarkeit der Bibliothek reduzieren.|
+|[CA1724: Typnamen sollten nicht mit Namespaces übereinstimmen.](../code-quality/ca1724-type-names-should-not-match-namespaces.md)|Typnamen sollten nicht mit die Namen von Namespaces für .NET übereinstimmen. Verstoß gegen diese Regel kann die Verwendbarkeit der Bibliothek reduzieren.|
 |[CA1707: Bezeichner sollten keine Unterstriche enthalten.](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)|Bezeichnernamen dürfen keinen Unterstrich (_) enthalten. Namespaces, Typen, Member und Parameter werden von dieser Regel überprüft.|
 |[CA1721: Eigenschaftennamen sollten nicht mit dem Get-Methoden übereinstimmen.](../code-quality/ca1721-property-names-should-not-match-get-methods.md)|Der Name eines öffentlichen oder geschützten Members beginnt mit "Get" und stimmt in anderer Hinsicht mit dem Namen einer öffentlichen oder geschützten Eigenschaft überein. "Get"-Methoden und -Eigenschaften sollten Namen aufweisen, die ihre Funktionen deutlich erkennbar machen.|
 |[CA1716: Bezeichner sollten nicht mit Schlüsselwörtern übereinstimmen.](../code-quality/ca1716-identifiers-should-not-match-keywords.md)|Ein Namespacename oder ein Typname stimmt mit einem reservierten Schlüsselwort in einer Programmiersprache überein. Bezeichner für Namespaces und Typen dürfen nicht mit Schlüsselwörtern übereinstimmen, die in Programmiersprachen für die Common Language Runtime definiert sind.|
