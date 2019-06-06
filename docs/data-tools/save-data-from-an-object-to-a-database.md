@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c672103c0426f2d49eb47aa41014ee13ff0ecae9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b15776b67ded2fc813f1b8bcf82d8aa91f212346
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565957"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715030"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Speichern von Daten aus einem Objekt in einer Datenbank
 
@@ -72,7 +72,7 @@ In der Standardeinstellung `DBDirect` Methoden werden erstellt, auf einem TableA
      [!code-csharp[VbRaddataSaving#25](../data-tools/codesnippet/CSharp/save-data-from-an-object-to-a-database_3.cs)]
      [!code-vb[VbRaddataSaving#25](../data-tools/codesnippet/VisualBasic/save-data-from-an-object-to-a-database_3.vb)]
 
-## <a name="net-framework-security"></a>.NET Framework-Sicherheit
+## <a name="net-security"></a>Sicherheit von .NET
 
 Sie benötigen die Berechtigung zum Ausführen der ausgewählten `INSERT`, `UPDATE`, oder `DELETE` für die Tabelle in der Datenbank.
 

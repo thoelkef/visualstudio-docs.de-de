@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: def22bd4aee4f64b5e14f2bbe7978a0dfa061261
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: a0d55af3c5522c6bb9aa3ad8a023f070c187ca6f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841431"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714267"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Nicht instanziierte interne Klassen vermeiden.
 
@@ -58,9 +58,9 @@ Wenn Sie anwenden, die <xref:System.Runtime.CompilerServices.InternalsVisibleToA
 
 Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie den Typ, oder fügen Sie Code, der verwendet wird. Wenn der Typ nur enthält `static` Methoden, Hinzufügen eines der folgenden in den Typ aus, um zu verhindern, dass den Compiler einen Standardkonstruktor für die öffentliche Instanz ausgeben:
 
-- Ein privater Konstruktor für Typen, die .NET Framework-1.0 und 1.1 Versionen.
-
 - Die `static` Modifizierer für C# Typen, die auf [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] oder höher.
+
+- Ein privater Konstruktor für Typen, die .NET Framework-1.0 und 1.1 Versionen.
 
 ## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
 

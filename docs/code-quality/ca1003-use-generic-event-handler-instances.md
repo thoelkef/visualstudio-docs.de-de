@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f666dc71aaf9683d9a7c936cc4985e97146d9454
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 66bb2b2229608c1a7710b7c5c71cbc0d701234e3
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842529"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714379"
 ---
 # <a name="ca1003-use-generic-event-handler-instances"></a>CA1003: Generische Ereignishandlerinstanzen verwenden.
 
@@ -41,7 +41,7 @@ Diese Regel nur sucht standardmäßig an extern sichtbare Typen, aber dies ist [
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
-Vor, um benutzerdefinierte Informationen an den Ereignishandler übergeben ein neuer Delegat musste deklariert werden, die eine Klasse, die von abgeleitet wurde angegeben, die <xref:System.EventArgs?displayProperty=fullName> Klasse. Dies gilt nicht mehr in .NET. .NET Framework eingeführt, die <xref:System.EventHandler%601?displayProperty=fullName> Delegat, der einen generischen Delegaten, die jede Klasse ermöglicht, das von abgeleitet ist <xref:System.EventArgs> , zusammen mit der Ereignishandler verwendet werden soll.
+Vor, um benutzerdefinierte Informationen an den Ereignishandler übergeben ein neuer Delegat musste deklariert werden, die eine Klasse, die von abgeleitet wurde angegeben, die <xref:System.EventArgs?displayProperty=fullName> Klasse. In .NET ist die generische <xref:System.EventHandler%601?displayProperty=fullName> -Delegat ermöglicht es, jede Klasse, die abgeleitet wird <xref:System.EventArgs> , zusammen mit der Ereignishandler verwendet werden soll.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
