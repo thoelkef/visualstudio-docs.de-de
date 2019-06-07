@@ -16,15 +16,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcab7ac3bb2a7983d8500b6f27f910fa33fc1efe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc3cdf49746340c76855e9afb000c754464d6223
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929155"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746084"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>Erstellen von ClickOnce-Anwendungen über die Befehlszeile
-In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], Sie können Projekte über die Befehlszeile erstellen, selbst wenn sie in der integrierten Entwicklungsumgebung (IDE) erstellt werden. In der Tat können Sie ein Projekt erstellt wurde, mit neu erstellen [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] auf einem anderen Computer, der nur die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] installiert. Dadurch können Sie einen Build mit einem automatisierten Prozess zu reproduzieren, z. B. in einer zentralen Labor- oder mithilfe von erweiterten Skriptingverfahren würde den Rahmen der Erstellung des Projekts selbst.
+In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], Sie können Projekte über die Befehlszeile erstellen, selbst wenn sie in der integrierten Entwicklungsumgebung (IDE) erstellt werden. In der Tat können Sie ein Projekt erstellt wurde, mit neu erstellen [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] auf einem anderen Computer, die nur die .NET Framework installiert ist. Dadurch können Sie einen Build mit einem automatisierten Prozess zu reproduzieren, z. B. in einer zentralen Labor- oder mithilfe von erweiterten Skriptingverfahren würde den Rahmen der Erstellung des Projekts selbst.
 
 ## <a name="use-msbuild-to-reproduce-clickonce-application-deployments"></a>Verwenden von MSBuild, um Bereitstellung von ClickOnce-Anwendungen zu reproduzieren.
  Wenn Sie Msbuild an der Befehlszeile Veröffentlichungsordner, weist er das MSBuild-System zum Erstellen des Projekts, und erstellen Sie eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung im Ordner "Publish". Dies entspricht dem Auswählen der **veröffentlichen** Befehl in der IDE.
@@ -73,7 +73,7 @@ In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 
 5. Geben Sie `msbuild /target:publish` ein.
 
-   Die oben genannten Schritte erzeugt eine vollständige [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] anwendungsbereitstellung in einem Unterordner des Projekts mit dem Namen **veröffentlichen**. *CmdLineDemo.application* ist die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellungsmanifest. Der Ordner *CmdLineDemo_1.0.0.0* enthält die Dateien *CmdLineDemo.exe* und *CmdLineDemo.exe.manifest*, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendungsmanifest. *Setup.exe* ist der Bootstrapper, die standardmäßig konfiguriert ist, installieren die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Der Ordner DotNetFX enthält die verteilbaren Komponenten für die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Dies ist der gesamte Satz von Dateien, die Sie Ihre Anwendung über das Internet oder über UNC-Pfad oder CD/DVD bereitstellen müssen.
+   Die oben genannten Schritte erzeugt eine vollständige [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] anwendungsbereitstellung in einem Unterordner des Projekts mit dem Namen **veröffentlichen**. *CmdLineDemo.application* ist die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellungsmanifest. Der Ordner *CmdLineDemo_1.0.0.0* enthält die Dateien *CmdLineDemo.exe* und *CmdLineDemo.exe.manifest*, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendungsmanifest. *Setup.exe* ist der Bootstrapper, die standardmäßig für die Installation von .NET Framework konfiguriert ist. Der DotNetFX-Ordner enthält die verteilbaren Komponenten für .NET Framework. Dies ist der gesamte Satz von Dateien, die Sie Ihre Anwendung über das Internet oder über UNC-Pfad oder CD/DVD bereitstellen müssen.
 
 ## <a name="publish-properties"></a>Eigenschaften veröffentlichen
  Wenn Sie die Anwendung in den oben genannten Verfahren veröffentlichen, werden die folgenden Eigenschaften in der Projektdatei, durch den Veröffentlichungs-Assistenten eingefügt. Diese Eigenschaften direkt beeinflussen, wie die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung erzeugt wird.

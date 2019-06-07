@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2d337a1ed97524dc04c8154fe2b074baf0921ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5c7a915301dabc0afcfae450c87a435d12e10d15
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62927456"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745669"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Beheben von spezifischen Fehlern in ClickOnce-Bereitstellungen
 Dieser Artikel führt die folgenden allgemeinen Fehler, die auftreten können, bei der Bereitstellung einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung sowie Schritte, um jedes Problem zu beheben.
@@ -36,7 +36,7 @@ Dieser Artikel führt die folgenden allgemeinen Fehler, die auftreten können, b
 
  Stellen Sie zunächst sicher, dass der Server, zum Zuordnen konfiguriert ist der *.application* Erweiterungstyp mit Inhalt "Application/X-ms-Anwendung."
 
- Wenn der Server ordnungsgemäß konfiguriert ist, überprüfen Sie, ob die [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] auf Ihrem Computer installiert ist. Wenn die [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] installiert ist, und werden weiterhin angezeigt. dieses Problem, versuchen Sie es, Deinstallation und Neuinstallation der [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] den Inhaltstyp auf dem Client erneut zu registrieren.
+ Wenn der Server ordnungsgemäß konfiguriert ist, überprüfen Sie, dass .NET Framework 2.0 auf Ihrem Computer installiert ist. Wenn .NET Framework 2.0 installiert ist, und Sie werden das Problem weiterhin auftritt, geben Sie auf dem Client versuchen Sie es zu deinstallieren und Neuinstallieren von .NET Framework 2.0 um den Inhalt erneut zu registrieren.
 
 #### <a name="error-message-says-unable-to-retrieve-application-files-missing-in-deployment-or-application-download-has-been-interrupted-check-for-network-errors-and-try-again-later"></a>Fehlermeldung "kann nicht zum Abrufen der Anwendung. Dateien fehlt in der Bereitstellung"oder"Anwendungsdownloads unterbrochen wurde für Netzwerkfehler auftreten, und versuchen Sie es später noch Mal"
  Diese Meldung gibt an, dass eine oder mehrere Dateien verweist auf die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Manifeste können nicht heruntergeladen werden. Die einfachste Möglichkeit zum Debuggen dieses Fehlers ist, um zu versuchen, laden die URL, die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] heruntergeladen werden kann. Hier sind einige möglichen Ursachen:

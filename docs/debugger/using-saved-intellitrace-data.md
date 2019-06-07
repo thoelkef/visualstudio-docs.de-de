@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 932ae7279b0bcb216d120f9ef6fb5c019e5094f5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: de8e6cfa6ec99f42879043b873736102fd291176
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408624"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746153"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Verwenden gespeicherter IntelliTrace-Daten (C#, Visual Basic C++)
 
@@ -37,7 +37,6 @@ Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie 
     |**Quelle**|**Weitere Informationen finden Sie unter**|
     |----------------|-------------|
     |Eine IntelliTrace-Sitzung in Visual Studio Enterprise (nicht in Professional oder Community Editions)|[IntelliTrace-Funktionen](../debugger/intellitrace-features.md)|
-    |Eine Testsitzung in Microsoft Test Manager. Dadurch wird einem Team Foundation Server-Arbeitselement eine ITRACE-Datei angefügt.|[Sammeln weiterer Diagnosedaten in manuellen Tests](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
     |Microsoft Monitoring Agent, entweder allein oder mit System Center 2012 R2 Operations Manager für ASP.NET-Webanwendungen und SharePoint-Anwendungen, bei der Bereitstellung ausgeführt|-   [Diagnostizieren von Problemen nach der Bereitstellung](../debugger/diagnose-problems-after-deployment.md)<br />-   [What's New for System Center 2012 R2 Operations Manager](/previous-versions/system-center/system-center-2012-R2/dn249700(v=sc.12))|
 
 ## <a name="GetStarted"></a> Wie möchten Sie vorgehen?
@@ -67,7 +66,7 @@ Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie 
 > Wenn Sie die IntelliTrace-Datei während des Debuggens geschlossen haben, können Sie sie einfach erneut öffnen. Wechseln Sie zum Menü **Debuggen** , wählen Sie die Option **IntelliTrace**, **Protokollzusammenfassung anzeigen**aus. Sie können **Protokollzusammenfassung anzeigen** auch im Fenster **IntelliTrace** auswählen. Dieser Befehl ist nur beim Debuggen mit IntelliTrace verfügbar.
 
 ## <a name="Understand"></a> Verstehen des IntelliTrace-Protokolls
- Einige der folgenden Abschnitte in der ITRACE-Datei werden nur angezeigt, wenn Sie Daten von einer bestimmten Quelle, beispielsweise Test Manager oder SharePoint-Anwendungen, gesammelt wurden.
+ Einige der in der ITRACE-Datei den folgenden Abschnitten nur angezeigt, wenn Sie Daten aus einer bestimmten Quelle, z. B. SharePoint-Anwendungen erfasst.
 
 |**Bereich**|**Enthält**|**Sammelquelle**|
 |-----------------|------------------|---------------------------|
@@ -76,7 +75,6 @@ Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie 
 |[Analyse](#Analysis)|Nur für SharePoint 2010- und SharePoint 2013-Anwendungen. Diagnostizieren Sie IntelliTrace- und SharePoint-Ereignisse, wie z. B. Debugger-Ereignisse, ULS-Ereignisse, Ausnahmefehler und andere Daten, die der Microsoft Monitoring Agent aufgezeichnet hat.|Microsoft Monitoring Agent, entweder eigenständige Collector oder mit System Center 2012 R2 Operations Manager|
 |[Systeminfo](#SystemInfo)|Einstellungen und Spezifikationen des Hostsystems|Alle Quellen|
 |[Threadliste](#ThreadsList)|Threads, die während der Auflistung ausgeführt wurden|Alle Quellen|
-|[Testdaten](#TestData)|Testschritte und ihre Ergebnisse aus einer Testsitzung|Test-Manager|
 |[Module](#Modules)|Module, die der Zielprozess in der Reihenfolge geladen hat, in der sie geladen wurden.|Alle Quellen|
 |[Webanforderung](#Modules)|Web-Anforderungsdaten für die Produktion IIS-web-Anwendungen und SharePoint 2010 und SharePoint 2013|Microsoft Monitoring Agent und der eigenständige collector|
 
@@ -84,7 +82,7 @@ Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie 
 
 - Wählen Sie einen Spaltenheader zum Sortieren der Daten aus.
 
-- Verwenden Sie das Suchfeld zum Filtern der Daten. Nur-Text-Suche funktioniert bei allen Spalten mit Ausnahme der Zeitspalten. Sie können auch Suchen in einer bestimmten Spalte filtern, mit einem Filter pro Spalte. Geben Sie den Spaltennamen ohne Leerzeichen ein, mit einem Doppelpunkt (**:**) und dem Suchwert. Setzen Sie danach ein Semikolon (**;**), um eine weitere Spalte und einen weiteren Suchwert hinzuzufügen.
+- Verwenden Sie das Suchfeld zum Filtern der Daten. Nur-Text-Suche funktioniert bei allen Spalten mit Ausnahme der Zeitspalten. Sie können auch Suchen in einer bestimmten Spalte filtern, mit einem Filter pro Spalte. Geben Sie den Spaltennamen ohne Leerzeichen ein, mit einem Doppelpunkt ( **:** ) und dem Suchwert. Setzen Sie danach ein Semikolon ( **;** ), um eine weitere Spalte und einen weiteren Suchwert hinzuzufügen.
 
      Um beispielsweise Leistungsereignisse zu suchen, die das Wort "langsam" in der Spalte **Beschreibung** haben, geben Sie ein:
 
@@ -227,9 +225,6 @@ Wechseln Sie zu bestimmten Punkten in der Ausführung Ihrer Anwendung, wenn Sie 
 |**Name**|Threadname. Unbenannte Threads werden als „\<Kein Name>“ angezeigt.|
 |**Startzeit**|Zeitpunkt der Threaderstellung.|
 |**Endzeit**|Zeitpunkt des Threadabschlusses|
-
-### <a name="TestData"></a> Testdaten
- Überprüfen Sie die von Test Manager aufgezeichneten IntelliTrace-Daten, während Sie Ihre App testen.
 
 ##### <a name="to-start-debugging-from-a-specific-test-step"></a>So starten Sie das Debuggen über einen bestimmten Testschritt
 

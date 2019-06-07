@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e057a0ff61bd095dd011c85970fd23ab1da75838
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: fd25b939519bb1a1cb179ab5bbd4d20b9307f920
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432055"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747759"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>System.Activities (Registerkarte), Toolboxelemente auswählen (Dialogfeld)
 
@@ -25,32 +25,28 @@ Auf dieser Registerkarte des der **Toolboxelemente** Dialogfeld zeigt eine Liste
 > [!WARNING]
 > Wenn Sie versuchen, eine Assembly hinzuzufügen, die keine Workflowaktivitäten enthält, wird ein Dialogfeld mit einer Fehlermeldung angezeigt, die besagt, dass die Assembly keine Aktivitäten enthält.
 
- Dieses Dialogfeld ist Projekt bezogen und somit die **System.Activities** Registerkarte wird weiterhin in eigenständigen XAML oder einen nicht-Workflow-Projekttyp angezeigt.
+Dieses Dialogfeld ist Projekt bezogen und somit die **System.Activities** Registerkarte wird weiterhin in eigenständigen XAML oder einen nicht-Workflow-Projekttyp angezeigt.
 
- Die Filterung wird auf jeder Registerkarte ausgeführt. Dies bedeutet, es ist nicht möglich, zum Hinzufügen von Workflowaktivitäten, durch die **.NET Component** Registerkarte. Sie müssen über hinzugefügt werden die **System.Activities** Registerkarte selbst.
+Filterung wird auf jeder Registerkarte ausgeführt, und es ist nicht möglich, zum Hinzufügen von Workflowaktivitäten, durch die **.NET Component** Registerkarte. Fügen sie in der **System.Activities** Registerkarte selbst.
 
- Deaktivieren Sie alle Elemente, die Sie nicht in finden Sie unter möchten den **Toolbox** in diesem Dialogfeld Tab oder alternativ Sie können dazu die **löschen** Option in der Maustaste der **Toolbox**und Aufheben des Verweises auf eine Assembly entfernt sich nicht auf das Element aus der **Toolbox**.
+Deaktivieren Sie alle Elemente, die Sie nicht in finden Sie unter möchten den **Toolbox** in diesem Dialogfeld Tab oder alternativ Sie können dazu die **löschen** Option in der Maustaste der **Toolbox**und Aufheben des Verweises auf eine Assembly entfernt sich nicht auf das Element aus der **Toolbox**.
 
- Durch Ziehen und Ablegen im Designer wird die Aktivität instanziiert und die Assembly, die das Element enthält, automatisch der Liste von Assemblys hinzugefügt, auf die verwiesen wird. Außerdem gilt, wenn die Aktivität auf eine Assembly C verweist, wird C nicht der Liste von Assemblys, auf die verwiesen wird, hinzugefügt. Assembly C muss im GAC oder dem gleichen Verzeichnis wie Aktivität b Im Fall eines eigenständigen muss die Assembly im GAC oder den überprüfungspfaden von VS zu sein. Nur dann können Sie die Aktivität auf die Workflow-Designer-Oberfläche ziehen und dort ablegen.
+Durch Ziehen und Ablegen im Designer wird die Aktivität instanziiert und die Assembly, die das Element enthält, automatisch der Liste von Assemblys hinzugefügt, auf die verwiesen wird. Außerdem gilt, wenn die Aktivität auf eine Assembly C verweist, wird C nicht der Liste von Assemblys, auf die verwiesen wird, hinzugefügt. Assembly C muss im GAC oder dem gleichen Verzeichnis wie Aktivität b Im Fall eines eigenständigen muss die Assembly im GAC oder den überprüfungspfaden von VS zu sein. Nur dann können Sie die Aktivität auf die Workflow-Designer-Oberfläche ziehen und dort ablegen.
 
- **Toolbox** Einstellungen werden standardmäßig als Benutzeroptionen gespeichert daher beim nächsten Öffnen, wenn die **Toolbox**, die benutzerdefinierte Liste von Workflowaktivitäten angezeigt. Ein Nebeneffekt dieser ist, die, wenn Sie bestimmte Elemente Ihrer Domäne, hinzugefügt haben die **Toolbox** über die **Toolboxelemente auswählen** Dialogfeld Sie weiterhin diese Elemente finden bei der Arbeit einer Konsolenanwendung für Workflows ebenfalls. Wenn Sie nicht, um sie anzuzeigen möchten, klicken Sie dann löschen Sie sie mit der rechten Maustaste, oder deaktivieren Sie diese über die **Toolboxelemente** Dialogfeld wie bereits erwähnt.
+**Toolbox** Einstellungen werden standardmäßig als Benutzeroptionen gespeichert daher beim nächsten Öffnen, wenn die **Toolbox**, die benutzerdefinierte Liste von Workflowaktivitäten angezeigt. Ein Nebeneffekt dieser ist, die, wenn Sie bestimmte Elemente Ihrer Domäne, hinzugefügt haben die **Toolbox** über die **Toolboxelemente auswählen** Dialogfeld Sie weiterhin diese Elemente finden bei der Arbeit einer Konsolenanwendung für Workflows ebenfalls. Wenn Sie nicht, um sie anzuzeigen möchten, klicken Sie dann löschen Sie sie mit der rechten Maustaste, oder deaktivieren Sie diese über die **Toolboxelemente** Dialogfeld wie bereits erwähnt.
 
- Die Spalten in diesem Dialogfeld enthalten die folgenden Informationen:
+Die Spalten in diesem Dialogfeld enthalten die folgenden Informationen:
 
- Name
+Name\
+Führt die Namen der Workflowaktivitäten auf, die aktuell auf dem lokalen Computer registriert sind.
 
- Führt die Namen der Workflowaktivitäten auf, die aktuell auf dem lokalen Computer registriert sind.
+Namespace\
+Zeigt die Hierarchie des .NET Namespaces, der die Struktur der Aktivität definiert.
 
- Namespace
+Name der Assembly
+Zeigt den Namen und Version der .NET Assembly mit der Aktivität.
 
- Zeigt die Hierarchie der Namespaces der .NET Framework-Klassenbibliothek an, welche die Struktur der Aktivität definiert.
+Directory\
+Zeigt den Speicherort der .NET Assembly, die die Workflowaktivitäten enthält. Der Standardspeicherort für alle Assemblys ist der globale Assemblycache.
 
- Assemblyname
-
- Zeigt den Namen und die Version der .NET Framework-Assembly an, die die Aktivität enthält.
-
- Verzeichnis
-
- Zeigt den Speicherort der .NET Framework-Assembly an, die die Workflowaktivitäten enthält. Der Standardspeicherort für alle Assemblys ist der globale Assemblycache.
-
- Klicken Sie zum Sortieren der aufgeführten Komponenten auf eine beliebige Spaltenüberschrift.
+Klicken Sie zum Sortieren der aufgeführten Komponenten auf eine beliebige Spaltenüberschrift.

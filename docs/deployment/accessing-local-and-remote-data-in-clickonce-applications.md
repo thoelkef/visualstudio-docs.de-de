@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1feb0dc2282dff39b3895ed0e63a0fdefeb65872
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2c2a4f2e9fe66ab049113111f13338cdced4e39e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406616"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746068"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>Zugreifen auf lokale und Remotedaten in einer ClickOnce-Anwendung
 Die meisten Anwendungen nutzen oder generieren Daten. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bietet Ihnen eine Vielzahl von Optionen zum Lesen und Schreiben von Daten, sowohl lokal als auch remote.
@@ -37,7 +37,7 @@ Die meisten Anwendungen nutzen oder generieren Daten. [!INCLUDE[ndptecclick](../
 ### <a name="clickonce-data-directory"></a>ClickOnce-Datenverzeichnis
  Jede auf einem lokalen Computer installierte [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung verfügt über ein Datenverzeichnis, das im Ordner "Dokumente und Einstellungen" des Benutzers gespeichert ist. Jede in einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung enthaltene und als "Daten"-Datei gekennzeichnete Datei wird in dieses Verzeichnis kopiert, wenn eine Anwendung installiert wird. Datendateien können einen beliebigen Dateityp aufweisen. Zu den am häufigsten verwendeten gehören Text, XML und Datenbankdateien, z. B. Microsoft Access-MDB-Dateien.
 
- Das Datenverzeichnis ist für anwendungsverwaltete Daten konzipiert, d. h. für Daten, die die Anwendung explizit speichert und verwaltet. Alle statischen, unabhängigen Dateien, die im Anwendungsmanifest nicht als "Daten"gekennzeichnet sind, befinden sich dagegen im Anwendungsverzeichnis. Dieses Verzeichnis ist der Ort, an dem sich die ausführbaren Dateien (*.exe*) und die Assemblys der Anwendung befinden.
+ Das Datenverzeichnis ist für anwendungsverwaltete Daten konzipiert, d. h. für Daten, die die Anwendung explizit speichert und verwaltet. Alle statischen, unabhängigen Dateien, die im Anwendungsmanifest nicht als "Daten"gekennzeichnet sind, befinden sich dagegen im Anwendungsverzeichnis. Dieses Verzeichnis ist der Ort, an dem sich die ausführbaren Dateien ( *.exe*) und die Assemblys der Anwendung befinden.
 
 > [!NOTE]
 > Wenn eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung deinstalliert wird, wird das zugehörige Datenverzeichnis ebenfalls entfernt. Verwenden Sie niemals das Datenverzeichnis, um durch den Endbenutzer verwaltete Daten, wie z.B. Dokumente, zu speichern.
@@ -72,7 +72,7 @@ Die meisten Anwendungen nutzen oder generieren Daten. [!INCLUDE[ndptecclick](../
 ### <a name="isolated-storage"></a>Isolierter Speicher
  Die isolierte Speicherung stellt eine API für das Erstellen und den Zugriff auf Dateien über eine einfache API bereit. Der tatsächliche Speicherort der Dateien wird für den Entwickler und Benutzer ausgeblendet.
 
- Isolierte Speicherung funktioniert in allen Versionen von [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Isolierte Speicherung funktioniert auch in teilweise vertrauenswürdigen Anwendungen, ohne dass zusätzliche Berechtigungen gewährt werden müssen. Sie sollten isolierte Speicherung verwenden, wenn Ihre Anwendung unter teilweiser Vertrauenswürdigkeit ausgeführt werden, dabei aber anwendungsspezifische Daten verwalten muss.
+ Isolierte Speicherung funktioniert in allen Versionen von .NET Framework. Isolierte Speicherung funktioniert auch in teilweise vertrauenswürdigen Anwendungen, ohne dass zusätzliche Berechtigungen gewährt werden müssen. Sie sollten isolierte Speicherung verwenden, wenn Ihre Anwendung unter teilweiser Vertrauenswürdigkeit ausgeführt werden, dabei aber anwendungsspezifische Daten verwalten muss.
 
  Weitere Informationen finden Sie unter [Isolierte Speicherung](/dotnet/standard/io/isolated-storage).
 
@@ -98,7 +98,7 @@ Die meisten Anwendungen nutzen oder generieren Daten. [!INCLUDE[ndptecclick](../
  Wenn die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung aufgrund von Sicherheitsbeschränkungen nicht auf einen Webserver zugreifen kann, muss die Anwendung <xref:System.Net.WebPermission> für diese Website bestätigen. Weitere Informationen zum Erhöhen von Sicherheitsberechtigungen für eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Anwendung finden Sie unter [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md).
 
 ### <a name="access-data-through-an-xml-web-service"></a>Zugreifen auf Daten über einen XML-Webdienst
- Wenn Sie Daten als XML-Webdienst verfügbar machen, können Sie mithilfe eines XML-Webdienstproxys auf die Daten zugreifen. Der Proxy ist eine [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] -Klasse, die Sie mithilfe von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]erstellen. Die Vorgänge des XML-Webdienstes, z. B. Abrufen von Kunden, Aufgeben von Bestellungen usw., werden als Methoden für den Proxy verfügbar gemacht. Dadurch sind Webdienste viel benutzerfreundlicher als unformatierter Text oder XML-Dateien.
+ Wenn Sie Daten als XML-Webdienst verfügbar machen, können Sie mithilfe eines XML-Webdienstproxys auf die Daten zugreifen. Der Proxy ist eine .NET Framework-Klasse, die Sie erstellen, indem Sie entweder [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Die Vorgänge des XML-Webdienstes, z. B. Abrufen von Kunden, Aufgeben von Bestellungen usw., werden als Methoden für den Proxy verfügbar gemacht. Dadurch sind Webdienste viel benutzerfreundlicher als unformatierter Text oder XML-Dateien.
 
  Wenn ein XML-Webdienst über HTTP ausgeführt wird, gelten für den Dienst dieselben Sicherheitsbeschränkungen wie für die <xref:System.Net.WebClient> -Klasse und die <xref:System.Net.HttpWebRequest> -Klasse.
 

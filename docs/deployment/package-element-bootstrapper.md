@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f20e706dcc94e823446ea0e185881f034fcd7dd8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ab3478f701cade458ffdb97caf4541a88f52230e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898749"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745759"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;Paket&gt; -Element (Bootstrapper)
 Die `Package` Element ist das XML-Element der obersten Ebene in einer Paketdatei.
@@ -147,10 +147,10 @@ Die `Package` Element ist das XML-Element der obersten Ebene in einer Paketdatei
 |--------------------| - |
 | `Culture` | Erforderlich. Definiert die Kultur für dieses Paket an, der bestimmt, die Sprache, die verwendet werden. Dieses Attribut ist ein Schlüssel in der `Strings` -Element, das kulturspezifischen Zeichenfolgen für Produktnamen und Fehlermeldungen während der Installation führt. |
 | `Name` | Erforderlich. Der Name des Pakets angezeigt, die Entwickler in einem Tool wie z. B. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Dieses Attribut ist ein Schlüssel in der `Strings` -Element, das enthalten soll eine `String` -Element mit der `Name` und `Culture` Eigenschaften festgelegt werden, entsprechend der `Name` und `Culture` Eigenschaften `Package`. |
-| `LicenseAgreement` | Dies ist optional. Gibt den Namen der Datei in das Paket für die Verteilung der Endbenutzer-Lizenzvertrag (EULA) enthält.  Diese Datei kann entweder nur-Text sein (*.txt*) oder Rich-Text-Format. (*.rtf*) |
+| `LicenseAgreement` | Dies ist optional. Gibt den Namen der Datei in das Paket für die Verteilung der Endbenutzer-Lizenzvertrag (EULA) enthält.  Diese Datei kann entweder nur-Text sein ( *.txt*) oder Rich-Text-Format. ( *.rtf*) |
 
 ## <a name="example"></a>Beispiel
- Das folgende Codebeispiel zeigt eine vollständige Paketdatei zum Verteilen der [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
+ Das folgende Codebeispiel zeigt eine vollständige Paketdatei für das Verteilen von .NET Framework 2.0.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5387ce65532cb532192191bd67f29cc7af6e28c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b3ba92e154e3091f6ec483ba469c3fe60f50ec61
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545292"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66744805"
 ---
 # <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100: SQL-Abfragen auf Sicherheitsrisiken überprüfen.
 
@@ -36,7 +36,8 @@ ms.locfileid: "62545292"
 |Unterbrechende Änderung|Nicht unterbrechend|
 
 ## <a name="cause"></a>Ursache
- Eine Methode legt die <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> Eigenschaft mithilfe einer Zeichenfolge, die aus einem Zeichenfolgenargument für die Methode erstellt wird.
+
+Eine Methode legt die <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> Eigenschaft mithilfe einer Zeichenfolge, die aus einem Zeichenfolgenargument für die Methode erstellt wird.
 
 ## <a name="rule-description"></a>Regelbeschreibung
 
@@ -48,7 +49,7 @@ Diese Regel setzt voraus, dass das Zeichenfolgenargument Benutzereingaben enthä
 
 - Überprüfen Sie die Benutzereingabe für Typ und Inhalt vor dem Erstellen der Befehlszeichenfolge.
 
-Die folgenden .NET Framework-Typen implementieren die <xref:System.Data.IDbCommand.CommandText%2A> Eigenschaft oder Konstruktoren, die die Eigenschaft festgelegt wird, mit der ein Zeichenfolgenargument bereitstellen.
+Implementieren Sie die folgenden Typen von .NET die <xref:System.Data.IDbCommand.CommandText%2A> Eigenschaft oder Konstruktoren, die die Eigenschaft festgelegt wird, mit der ein Zeichenfolgenargument bereitstellen.
 
 - <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> und <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
 
@@ -60,32 +61,36 @@ Die folgenden .NET Framework-Typen implementieren die <xref:System.Data.IDbComma
 
 Beachten Sie, dass diese Regel verletzt wird, wenn die ToString-Methode eines Typs explizit oder implizit verwendet wird, die die Abfragezeichenfolge zu erstellen. Nachfolgend finden Sie ein Beispiel:
 
-```
+```csharp
 int x = 10;
 string query = "SELECT TOP " + x.ToString() + " FROM Table";
 ```
 
- Die Regel wird verletzt, da ein böswilliger Benutzer die ToString()-Methode überschreiben kann.
+Die Regel wird verletzt, da ein böswilliger Benutzer die ToString()-Methode überschreiben kann.
 
- Die Regel wird auch verletzt werden, wenn ToString implizit verwendet wird.
+Die Regel wird auch verletzt werden, wenn ToString implizit verwendet wird.
 
-```
+```csharp
 int x = 10;
 string query = String.Format("SELECT TOP {0} FROM Table", x);
 ```
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
- Um einen Verstoß gegen diese Regel zu beheben, verwenden Sie eine parametrisierte Abfrage ein.
+
+Um einen Verstoß gegen diese Regel zu beheben, verwenden Sie eine parametrisierte Abfrage ein.
 
 ## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
- Es ist sicher eine Warnung dieser Regel zu unterdrücken, wenn der Befehlstext keine Benutzereingaben.
+
+Es ist sicher eine Warnung dieser Regel zu unterdrücken, wenn der Befehlstext keine Benutzereingaben.
 
 ## <a name="example"></a>Beispiel
- Das folgende Beispiel zeigt eine Methode, `UnsafeQuery`, die gegen die Regel und eine Methode, `SaferQuery`, der Regel mithilfe einer parametrisierten Befehlszeichenfolge entspricht.
 
- [!code-vb[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/VisualBasic/ca2100-review-sql-queries-for-security-vulnerabilities_1.vb)]
- [!code-csharp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CSharp/ca2100-review-sql-queries-for-security-vulnerabilities_1.cs)]
- [!code-cpp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CPP/ca2100-review-sql-queries-for-security-vulnerabilities_1.cpp)]
+Das folgende Beispiel zeigt eine Methode, `UnsafeQuery`, die gegen die Regel und eine Methode, `SaferQuery`, der Regel mithilfe einer parametrisierten Befehlszeichenfolge entspricht.
+
+[!code-vb[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/VisualBasic/ca2100-review-sql-queries-for-security-vulnerabilities_1.vb)]
+[!code-csharp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CSharp/ca2100-review-sql-queries-for-security-vulnerabilities_1.cs)]
+[!code-cpp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CPP/ca2100-review-sql-queries-for-security-vulnerabilities_1.cpp)]
 
 ## <a name="see-also"></a>Siehe auch
- [Übersicht über die Sicherheit](/dotnet/framework/data/adonet/security-overview)
+
+- [Übersicht über die Sicherheit](/dotnet/framework/data/adonet/security-overview)

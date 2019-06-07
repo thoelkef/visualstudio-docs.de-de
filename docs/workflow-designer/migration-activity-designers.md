@@ -8,34 +8,37 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 900a555f5e4ba4c1750dcbedc526a233e422bd43
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3a7b284b370f248ed2497ece835036679af2e5a8
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63005695"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747016"
 ---
-# <a name="migration-activity-designers"></a>Migrationsaktivitätsdesigner
+# <a name="migration-activity-designers"></a>Migrations-Aktivitätsdesigner
 
-Die migrationsaktivitätsdesigner werden verwendet, aufzurufende Workflow 3.0-bzw. 3.5-Aktivitäten aus einem Workflow, die für .NET Framework 4. Die Themen in diesem Abschnitt enthalten Anleitungen zur Verwendung von Workflow-Designer-Aktivitäts-Designer.
+Die migrationsaktivitätsdesigner werden verwendet, um den Workflow 3.0-bzw. 3.5-Aktivitäten aus einem Workflow aufzurufen, die auf .NET Framework 4 abzielt oder höher.
+
+Die Themen in diesem Abschnitt enthalten Anleitungen zur Verwendung von Workflow-Designer-Aktivitäts-Designer.
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
- Andere Typen von Aktivitätsdesignern werden in den folgenden Themen behandelt.
 
- [Ablaufsteuerung](../workflow-designer/control-flow-activity-designers.md)
+Für andere Typen von Aktivitätsdesignern finden Sie unter den folgenden Themen:
 
- [Flussdiagramm](../workflow-designer/flowchart-activity-designers.md)
+- [Ablaufsteuerung](../workflow-designer/control-flow-activity-designers.md)
 
- [Verwenden der Aktivitätsdesigner](../workflow-designer/using-the-activity-designers.md)
+- [Flussdiagramm](../workflow-designer/flowchart-activity-designers.md)
 
- [Messaging](../workflow-designer/messaging-activity-designers.md)
+- [Verwenden der Aktivitätsdesigner](../workflow-designer/using-the-activity-designers.md)
 
- [Laufzeit](../workflow-designer/runtime-activity-designers.md)
+- [Messaging](../workflow-designer/messaging-activity-designers.md)
 
- [Primitive](../workflow-designer/primitives-activity-designers.md)
+- [Laufzeit](../workflow-designer/runtime-activity-designers.md)
 
- [Transaktion](../workflow-designer/transaction-activity-designers.md)
+- [Primitive](../workflow-designer/primitives-activity-designers.md)
 
- [Auflistung](../workflow-designer/collection-activity-designers.md)
+- [Transaktion](../workflow-designer/transaction-activity-designers.md)
 
- [Fehlerbehandlung](../workflow-designer/error-handling-activity-designers.md)
+- [Auflistung](../workflow-designer/collection-activity-designers.md)
+
+- [Fehlerbehandlung](../workflow-designer/error-handling-activity-designers.md)

@@ -25,15 +25,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 489415eba929a73c25b8aea7262c3e930a5d90cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1570aa3d4ea72dc1d133ce3096e1726fa1ffb782
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898132"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745612"
 ---
 # <a name="product-and-package-schema-reference"></a>Referenz zum Produkt- und Paketschema
-Ein *Produktdatei* ist eine XML-Manifestdatei, die alle die externen Abhängigkeiten, indem Sie erforderliche beschreibt eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung. Beispiele für externe Abhängigkeiten sind die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] und der Microsoft Data Access Components (MDAC). Eine Paketdatei ist vergleichbar mit der einer Produktdatei, aber es wird verwendet, um die Kultur abhängige Komponenten einer Abhängigkeit, wie lokalisierte Assemblys, lizenzvereinbarungen und Dokumentation zu installieren.
+Ein *Produktdatei* ist eine XML-Manifestdatei, die alle die externen Abhängigkeiten, indem Sie erforderliche beschreibt eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung. Beispiele für externe Abhängigkeiten sind .NET Framework und Microsoft Data Access Components (MDAC). Eine Paketdatei ist vergleichbar mit der einer Produktdatei, aber es wird verwendet, um die Kultur abhängige Komponenten einer Abhängigkeit, wie lokalisierte Assemblys, lizenzvereinbarungen und Dokumentation zu installieren.
 
  Die Produkt- und Paketdateien Datei enthält entweder ein auf oberster Ebene `Product` oder `Package` Element, von denen jede die folgenden Elemente enthält.
 
@@ -53,7 +53,7 @@ Ein *Produktdatei* ist eine XML-Manifestdatei, die alle die externen Abhängigke
  `InstallChecks` die Tests sollten, die setup.exe das Vorhandensein eines bestimmten Pakets ausführen. `PackageFiles` Listet alle Pakete, die der Setupvorgang zu installieren, ein bestimmten Test durchgeführt werden soll. Jeder Befehlseintrag unter Befehle führt einer der beschriebenen Tests `InstallChecks`, und gibt an, welche `PackageFile` ausführen sollte der Test fehl. Sie können die `Strings` Element Produktnamen und Fehlermeldungen zu lokalisieren, damit Sie eine einmalige Installation binäre verwenden können, um Ihre Anwendung für eine beliebige Anzahl von Sprachen zu installieren.
 
 ## <a name="example"></a>Beispiel
- Im folgenden Codebeispiel wird veranschaulicht, eine vollständige Produktdatei für die Installation der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ Im folgenden Codebeispiel wird veranschaulicht, eine vollständige Produktdatei für die Installation von .NET Framework.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

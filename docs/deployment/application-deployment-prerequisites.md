@@ -19,16 +19,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a4bf5545deecccb647b5113c4335539c6acb488
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8206e199acc3ccb76cf89603d48bed0173129218
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408591"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746063"
 ---
 # <a name="application-deployment-prerequisites"></a>Vorbedingungen für die Anwendungsbereitstellung
 
-Damit Ihre Anwendung erfolgreich installiert und ausgeführt, müssen Sie zunächst installieren Sie alle Komponenten, von denen Ihre Anwendung abhängig ist, auf dem Zielcomputer ist. Z. B. die meisten Anwendungen, die mit erstellt [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] hängen die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Die richtige Version der common Language Runtime muss in diesem Fall auf dem Zielcomputer vorhanden sein, bevor die Anwendung installiert wird.
+Damit Ihre Anwendung erfolgreich installiert und ausgeführt, müssen Sie zunächst installieren Sie alle Komponenten, von denen Ihre Anwendung abhängig ist, auf dem Zielcomputer ist. Z. B. die meisten Anwendungen, die mit erstellt [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verfügen über eine Abhängigkeit auf .NET Framework. Die richtige Version der common Language Runtime muss in diesem Fall auf dem Zielcomputer vorhanden sein, bevor die Anwendung installiert wird.
 
  Sie können auswählen, wenn diese Voraussetzungen sind die **Prerequisites Dialog Box** herunter, und Installieren von .NET Framework und alle anderen Redistributable-Komponente als Teil der Installation. Dieses Vorgehen wird als *Bootstrapping* bezeichnet. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] generiert ein ausführbares Windows-Programm, mit dem Namen *Setup.exe*, auch bekannt als eine *Bootstrapper*. Der Bootstrapper installiert diese erforderlichen Komponenten, bevor die Anwendung ausgeführt wird. Weitere Informationen zum Auswählen der erforderlichen Komponenten finden Sie unter [erforderliche](../ide/reference/prerequisites-dialog-box.md).
 
@@ -76,7 +76,7 @@ Damit Ihre Anwendung erfolgreich installiert und ausgeführt, müssen Sie zunäc
 | **-?, -h, -help** | Zeigt das Dialogfeld der Hilfe an. |
 | **-url, -componentsurl** | Zeigt die gespeicherte URL und Komponenten-URLs für diese Installation an. |
 | **-url=** `location` | Legt die URL fest, bei der *Setup.exe* nach der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendung sucht. |
-| **-componentsurl=** `location` | Legt die URL fest, bei der *Setup.exe* nach Abhängigkeiten wie [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sucht. |
+| **-componentsurl=** `location` | Legt die URL fest, in denen *Setup.exe* sucht die Abhängigkeiten, wie das .NET Framework. |
 | **-homesite=** `true` **&#124;** `false` | Wenn `true`, lädt die Abhängigkeiten vom bevorzugten Speicherort auf der Website des Anbieters herunter. Diese Einstellung überschreibt die **- Componentsurl** festlegen. Wenn `false`, die Abhängigkeiten aus dem vom angegebenen URL heruntergeladen **- Componentsurl**. |
 
 ## <a name="operating-system-support"></a>Unterstützte Betriebssysteme

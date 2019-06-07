@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49ff55e2a261e86ec5aae09573d6ac40c74c0091
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 71b9df9a8422d1b24a3e5476005942113356c353
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263480"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747426"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Probleme mit der Server- und Clientkonfiguration in ClickOnce-Bereitstellungen
 Wenn Sie Internetinformationsdienste (Internet Information Services, IIS) unter Windows Server verwenden und die Bereitstellung enthält einen Dateityp aus, dem Windows nicht erkannt wird, wie z. B. Microsoft Word-Datei, verweigert IIS die Datei zu übertragen, und die Bereitstellung nicht erfolgreich.
@@ -41,7 +41,7 @@ Wenn Sie Internetinformationsdienste (Internet Information Services, IIS) unter 
 
   Allerdings können Sie diese Option deaktivieren, indem Sie deaktivieren die **Dateierweiterung ".deploy" verwenden** option die [Publish Options Dialog Box](/previous-versions/visualstudio/visual-studio-2010/7z83t16a(v=vs.100)), in diesem Fall Sie den Webserver für alle Erweiterungen zulassen konfigurieren müssen in der Anwendung verwendet.
 
-  Sie konfigurieren müssen *". manifest"* , *.application*, und *".deploy"* , z. B. Wenn Sie IIS verwenden, in denen Sie nicht installiert haben, die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], oder wenn Sie verwenden einen anderen Webserver (z. B. Apache).
+  Sie konfigurieren müssen *". manifest"* , *.application*, und *".deploy"* , z. B. Wenn Sie IIS verwenden, in dem Sie .NET Framework nicht installiert haben, oder Sie sind verwenden einen anderen Webserver (z. B. Apache).
 
 ## <a name="clickonce-and-secure-sockets-layer-ssl"></a>ClickOnce und Secure Sockets Layer (SSL)
  Ein [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung wird über SSL, außer wenn eine Eingabeaufforderung zu dem SSL-Zertifikat von Internet Explorer löst problemlos funktionieren. Die Eingabeaufforderung kann ausgelöst werden, wenn vorhanden ist, dass ein Problem mit dem Zertifikat, z. B. wenn die Websitenamen nicht übereinstimmen oder das Zertifikat abgelaufen ist. Zu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] über eine SSL-Verbindung funktioniert, stellen Sie sicher, dass das Zertifikat auf dem neuesten Stand ist und dass die Daten des Zertifikats die Daten des Standorts übereinstimmt.
@@ -121,7 +121,7 @@ Wenn Sie Internetinformationsdienste (Internet Information Services, IIS) unter 
   Für spezifische Anweisungen zum Konfigurieren von MIME-Typen in Windows Server, finden Sie im Microsoft Knowledge Base-Artikel KB326965, "IIS 6.0 dienen keinen unbekannte MIME-Typen" am [ http://support.microsoft.com/default.aspx?scid=kb; En-us; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965).
 
 ## <a name="content-type-mappings"></a>Content-Type-Zuordnungen
- Bei der Veröffentlichung über HTTP, den Inhaltstyp (auch bekannt als MIME-Typ) für die *.application* Datei muss "Application/X-ms-Anwendung." Wenn man [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] auf dem Server installiert, dies wird für Sie automatisch festgelegt. Wenn dies nicht installiert ist, müssen Sie eine MIME-Typ-Verknüpfung erstellen die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungsstammverzeichnis (oder den gesamten Server).
+ Bei der Veröffentlichung über HTTP, den Inhaltstyp (auch bekannt als MIME-Typ) für die *.application* Datei muss "Application/X-ms-Anwendung." Wenn Sie .NET Framework 2.0 auf dem Server installiert haben, wird dies automatisch für Sie festgelegt werden. Wenn dies nicht installiert ist, müssen Sie eine MIME-Typ-Verknüpfung erstellen die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendungsstammverzeichnis (oder den gesamten Server).
 
  Wenn Sie die Bereitstellung mit einem IIS-Server, führen Sie <em>Inetmgr.</em> EXE-Datei und fügen Sie einen neuen Inhaltstyp der "Application/X-ms-Application" für die *.application* Erweiterung.
 
