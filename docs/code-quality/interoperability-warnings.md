@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b68ea8c66b26ee2463969ca71b8f0e5ac78b3f0a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7a4e8f7bc60704842a8a0e940b336b4bb79093b2
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823594"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66745134"
 ---
 # <a name="interoperability-warnings"></a>Interoperabilitätswarnungen
 
@@ -32,7 +32,7 @@ Interoperabilitätswarnungen unterstützt die Interaktion mit COM-Clients.
 | [CA1400: P/Invoke-Einstiegspunkte vorhanden sein](../code-quality/ca1400-p-invoke-entry-points-should-exist.md) | Eine öffentliche oder geschützte Methode wird mit dem System.Runtime.InteropServices.DllImportAttribute-Attribut markiert. Entweder konnte die nicht verwaltete Bibliothek nicht gefunden werden, oder die Methode konnte keiner Funktion in der Bibliothek zugeordnet werden. |
 | [CA1401: P/Invokes dürfen nicht sichtbar sein.](../code-quality/ca1401-p-invokes-should-not-be-visible.md) | Eine öffentliche oder geschützte Methode in ein öffentlicher Typ hat das System.Runtime.InteropServices.DllImportAttribute-Attribut (auch durch das Schlüsselwort "Declare" in Visual Basic implementiert). Solche Methoden sollten nicht verfügbar gemacht werden. |
 | [CA1402: Überladungen in für COM sichtbaren Schnittstellen vermeiden](../code-quality/ca1402-avoid-overloads-in-com-visible-interfaces.md) | Wenn für COM-Clients überladene Methoden verfügbar gemacht werden, behält nur die erste Methodenüberladung ihren Namen. Nachfolgende Überladungen werden eindeutig umbenannt, indem dem Namen ein Unterstrich (_) und eine ganze Zahl angefügt werden, die der Reihenfolge der Deklaration der Überladung entspricht. |
-| [CA1403: Typen mit automatischem Layout sollten nicht für COM sichtbar sein](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md) | Ein für COM sichtbarer Werttyp wird mit dem auf LayoutKind.Auto festgelegten System.Runtime.InteropServices.StructLayoutAttribute-Attribut markiert. Das Layout dieser Typen kann zwischen Versionen von .NET Framework ändern, die COM-Clients unterbrochen wird, die ein bestimmtes Layout erwarten. |
+| [CA1403: Typen mit automatischem Layout sollten nicht für COM sichtbar sein](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md) | Ein für COM sichtbarer Werttyp wird mit dem auf LayoutKind.Auto festgelegten System.Runtime.InteropServices.StructLayoutAttribute-Attribut markiert. Das Layout dieser Typen kann zwischen verschiedenen Versionen von .NET ändern, die COM-Clients unterbrochen wird, die ein bestimmtes Layout erwarten. |
 | [CA1404: GetLastError unmittelbar nach P/Invoke aufrufen](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md) | Wird aufgerufen, GetLastWin32Error-Methode oder einer entsprechenden [!INCLUDE[TLA2#tla_win32](../code-quality/includes/tla2sharptla_win32_md.md)] GetLastError-Funktion, und der unmittelbar vorherige Aufruf ist nicht auf einer Plattform invoke-Methode. |
 | [CA1405: COM sichtbare Basistypen sollten für COM sichtbar sein](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md) | Ein für COM sichtbarer Typ wird von einem Typ abgeleitet, der nicht für COM sichtbar ist. |
 | [CA1406: Int64-Argumente für Visual Basic 6-Clients vermeiden](../code-quality/ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md) | Visual Basic 6-COM-Clients können nicht auf 64-Bit-Ganzzahlen zugreifen. |

@@ -11,19 +11,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 069a9ce5f3126550f54a5d2780411f6832acee83
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 54e36b942780f9efd4ddb3612d9631188b17d791
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62994536"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744516"
 ---
 # <a name="export-diagrams-as-images"></a>Exportieren von Diagrammen als Bild
+
 In Visual Studio können Sie speichern, Modellierungsdiagramme in schreibgeschützten Formaten, damit Sie freigeben können Projektbeteiligte, Benutzer oder Projektteammitglieder nicht die gleiche Version von Visual Studio verwenden.
 
- Welche Editionen von Visual Studio dieses Feature unterstützen, finden Sie unter [Edition-Unterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Welche Editionen von Visual Studio dieses Feature unterstützen, finden Sie unter [Edition-Unterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-### <a name="to-copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>So kopieren Sie ein Diagramm oder einen Teil eines Diagramms in eine andere Anwendung
+## <a name="copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>Kopieren Sie ein Diagramm oder einen Teil eines Diagramms an eine andere Anwendung
 
 1. Wählen Sie im Diagramm einige oder alle Formen aus.
 
@@ -31,15 +32,13 @@ In Visual Studio können Sie speichern, Modellierungsdiagramme in schreibgeschü
 
 3. Fügen Sie die Auswahl in die gewünschte Anwendung ein.
 
-### <a name="to-save-a-modeling-diagram-as-an-xml-paper-specification-xps-file"></a>So speichern Sie ein Modellierungsdiagramm als XPS-Datei (XML Paper Specification)
+## <a name="save-a-modeling-diagram-as-an-xml-paper-specification-xps-file"></a>Speichern Sie ein Modellierungsdiagramm als XML Paper Specification (XPS)-Datei
 
 1. Auf der **Datei** Menü klicken Sie auf **Drucken** zum Öffnen der **Drucken** im Dialogfeld.
 
 2. In der **Namen** Liste **Microsoft XPS Document Writer**, und klicken Sie dann auf **OK**.
 
 3. In der **speichern Sie die Datei** (Dialogfeld), speichern Sie die Datei als ein **XPS-Dokument (\*.xps)** Datei.
-
-## <a name="net-framework-security"></a>.NET Framework-Sicherheit
 
 ## <a name="see-also"></a>Siehe auch
 

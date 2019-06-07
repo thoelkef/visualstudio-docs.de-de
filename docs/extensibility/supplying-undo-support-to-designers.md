@@ -10,12 +10,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc17f59858637048c12929411a0f413ed625ad10
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e243ccfc92c5e17dd25e6d77dede439daac08761
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331635"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747718"
 ---
 # <a name="supply-undo-support-to-designers"></a>Bereitstellen von Rückgängig-Unterstützung für Designer
 
@@ -29,7 +29,7 @@ Designer-Implementierungen, die für die Rückgängig-Funktion zu unterstützen:
 
 - Geben Persistenz und CodeDOM-Unterstützung durch die Implementierung der <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> und <xref:System.ComponentModel.Design.IComponentChangeService> Klassen.
 
-Weitere Informationen zum Schreiben von Designern, die mit [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], finden Sie unter [Entwurfszeitunterstützung erweitern](/previous-versions/37899azc(v=vs.140)).
+Weitere Informationen zum Schreiben von Designern mit .NET Framework finden Sie unter [Entwurfszeitunterstützung erweitern](/previous-versions/37899azc(v=vs.140)).
 
 Die [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] bietet eine standardmäßige rückgängig-Infrastruktur durch:
 
@@ -50,7 +50,7 @@ Alle Designer in Visual Studio erstellt wurde, automatische und vollständige R�
 ## <a name="when-to-use-explicit-designer-undo-support"></a>Verwenden Sie explizite Designer Rückgängig-Unterstützung
  Designer müssen eigene rückgängig-Verwaltung angeben, wenn sie eine grafische Benutzeroberfläche, bezeichnet als Adapter anzeigen, als die vom verwenden <xref:System.Windows.Forms.Control>.
 
- Ein Beispiel dafür erstellen möglicherweise ein Produkt mit einer grafischen Designtools von webbasierten Schnittstelle anstelle eines [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-basierte grafische Benutzeroberfläche.
+ Ein Beispiel hierfür kann ein Produkt mit einer .NET Framework-basierte grafische Benutzeroberfläche, anstatt eine Web-basierte grafische Entwurfsoberfläche erstellen.
 
  In solchen Fällen würden müssen diesen ansichtsadapters mit der Verwendung von Visual Studio registrieren <xref:Microsoft.VisualStudio.Shell.Design.ProvideViewAdapterAttribute>, und geben Sie explizite rückgängig-Verwaltung.
 
@@ -59,7 +59,7 @@ Alle Designer in Visual Studio erstellt wurde, automatische und vollständige R�
 ## <a name="undo-support-features-of-the-designer"></a>Rückgängig für Unterstützungsfunktionen des Designers
  Das SDK-Umgebung stellt standardimplementierungen der Schnittstellen, die zu Rückgängig-Unterstützung, die von Designern, die nicht mit verwendet werden kann <xref:System.Windows.Forms.Control> basierende Klassen für ihren Benutzeroberflächen oder dem Standardmodell CodeDOM und Persistenz.
 
- Die <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> Klasse leitet sich von der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] <xref:System.ComponentModel.Design.UndoEngine> Klasse mit einer Implementierung des der <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager> Klasse zum Verwalten von Rückgängig-Vorgänge.
+ Die <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> Klasse leitet sich von .NET Framework <xref:System.ComponentModel.Design.UndoEngine> Klasse mit einer Implementierung des der <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager> Klasse zum Verwalten von Rückgängig-Vorgänge.
 
  Visual Studio bietet die folgenden Funktionen ab, der Designer Rückgängig:
 

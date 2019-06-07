@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: df9c1f83e8a839c7e767c3145e734eba80add485
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7e92885e652c9456503bfa75fbce5640c377b684
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566077"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745350"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>Arbeiten Sie mit einem konzeptionellen Modell (WCF Data Services)
 
@@ -27,7 +27,7 @@ Wenn Sie zum Beschreiben der Daten in einer Datenbank ein konzeptionelles Modell
 
 | Thema | Beschreibung |
 | - | - |
-| [Vorgehensweise: Ausführen von Abfragen des Datendiensts](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Zeigt, wie ein Datendienst aus einer [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Anwendung abgefragt wird. |
+| [Vorgehensweise: Ausführen von Abfragen des Datendiensts](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Abfragen eines Datendiensts in einer .NET-Anwendung veranschaulicht. |
 | [Vorgehensweise: Projekt-Abfrageergebnisse](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Zeigt, wie die von einer Datendienstabfrage zurückgegebene Datenmenge reduziert wird. |
 
  Wenn Sie ein konzeptionelles Modell verwenden, können Sie definieren, welche Art von Daten in der Sprache für Ihre Domäne gültig ist. Sie können gültige Daten im Modell definieren, oder Sie können Vorgängen, die für eine Entität oder einen Datendienst ausgeführt werden, eine Validierung hinzufügen.

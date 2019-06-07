@@ -8,50 +8,53 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b4156c8125ad6cf3af9f5600ceb2b6c5bc21419
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a9868b5eb52edde8e12d6a3b4f5edab1a4a9e499
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004214"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747101"
 ---
 # <a name="messaging-activity-designers"></a>Messaging-Aktivitätsdesigner
 
-Messaging-Aktivitätsdesigner werden verwendet, zum Erstellen und Konfigurieren von messaging-Aktivitäten, die senden und Empfangen von Nachrichten aus einer Windows Workflow Foundation (WF)-Anwendung Windows Communication Foundation (WCF). .NET Framework 4 führt fünf messaging-Aktivitäten und der Workflow-Designer stellt zwei neue Vorlagen-Designer, die Sie zum Verwalten von messaging innerhalb eines Workflows aktivieren. Die Themen, die in diesem Abschnitt enthaltenen und in der folgenden Tabelle aufgeführten enthalten Anleitungen zur Verwendung von Workflow-Designer-Aktivität und den Vorlagen-Designer.
+Messaging-Aktivitätsdesigner werden verwendet, zum Erstellen und Konfigurieren von messaging-Aktivitäten, die senden und Empfangen von Nachrichten aus einer Windows Workflow Foundation (WF)-Anwendung Windows Communication Foundation (WCF). Fünf messaging-Aktivitäten wurden in .NET Framework 4 eingeführt. Der Workflow-Designer stellt zwei Vorlagen-Designer, die Sie zum Verwalten von messaging innerhalb eines Workflows aktivieren.
 
-## <a name="reference"></a>Referenz
- <xref:System.Activities.Activity>
+Die Themen, die in diesem Abschnitt enthaltenen und in der folgenden Tabelle aufgeführten enthalten Anleitungen zur Verwendung von Workflow-Designer-Aktivität und den Vorlagen-Designer.
 
- <xref:System.ServiceModel.Activities.CorrelationScope>
+- <xref:System.Activities.Activity>
 
- <xref:System.ServiceModel.Activities.Receive>
+- <xref:System.ServiceModel.Activities.CorrelationScope>
 
- <xref:System.ServiceModel.Activities.Send>
+- <xref:System.ServiceModel.Activities.Receive>
 
- <xref:System.ServiceModel.Activities.ReceiveReply>
+- <xref:System.ServiceModel.Activities.Send>
 
- <xref:System.ServiceModel.Activities.SendReply>
+- <xref:System.ServiceModel.Activities.ReceiveReply>
 
- <xref:System.ServiceModel.Activities.TransactedReceiveScope>
+- <xref:System.ServiceModel.Activities.SendReply>
+
+- <xref:System.ServiceModel.Activities.TransactedReceiveScope>
 
 ## <a name="related-sections"></a>Verwandte Abschnitte
- Andere Typen von Aktivitätsdesignern werden in den folgenden Themen behandelt.
 
- [Ablaufsteuerung](../workflow-designer/control-flow-activity-designers.md)
+Für andere Typen von Aktivitätsdesignern finden Sie unter den folgenden Themen:
 
- [Verwenden der Aktivitätsdesigner](../workflow-designer/using-the-activity-designers.md)
+- [Ablaufsteuerung](../workflow-designer/control-flow-activity-designers.md)
 
- [Flussdiagramm](../workflow-designer/flowchart-activity-designers.md)
+- [Verwenden der Aktivitätsdesigner](../workflow-designer/using-the-activity-designers.md)
 
- [Laufzeit](../workflow-designer/runtime-activity-designers.md)
+- [Flussdiagramm](../workflow-designer/flowchart-activity-designers.md)
 
- [Primitive](../workflow-designer/primitives-activity-designers.md)
+- [Laufzeit](../workflow-designer/runtime-activity-designers.md)
 
- [Transaktion](../workflow-designer/transaction-activity-designers.md)
+- [Primitive](../workflow-designer/primitives-activity-designers.md)
 
- [Auflistung](../workflow-designer/collection-activity-designers.md)
+- [Transaktion](../workflow-designer/transaction-activity-designers.md)
 
- [Fehlerbehandlung](../workflow-designer/error-handling-activity-designers.md)
+- [Auflistung](../workflow-designer/collection-activity-designers.md)
+
+- [Fehlerbehandlung](../workflow-designer/error-handling-activity-designers.md)
 
 ## <a name="external-resources"></a>Externe Ressourcen
- [Verwenden der Aktivitätsdesigner](../workflow-designer/using-the-activity-designers.md)
+
+[Verwenden der Aktivitätsdesigner](../workflow-designer/using-the-activity-designers.md)

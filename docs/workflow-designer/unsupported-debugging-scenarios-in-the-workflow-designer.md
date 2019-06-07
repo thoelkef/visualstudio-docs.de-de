@@ -8,18 +8,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 83c9b1158319b580bc860982b6c51c9c28edf5af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 62d8a2ad847ef1b9aaad02b2739e8154b3148425
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433876"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747272"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>Im Workflow-Designer nicht unterstützte Debugszenarien
 
-Die Workflow-Designer in .NET Framework 4 viele neue Funktionen hinzugefügt, aber es gibt noch einige Debugszenarien, die nicht unterstützt werden.
-
-Im folgenden sind die nicht unterstützte Debugszenarien Workflow-Designer:
+Der Workflow-Designer unterstützt die folgenden Debugszenarien nicht:
 
 - Nach dem Bearbeiten von Code kann die Ausführung nicht fortgesetzt werden.
 
@@ -29,7 +27,7 @@ Im folgenden sind die nicht unterstützte Debugszenarien Workflow-Designer:
 
 - Der Workflow-Designer kann nicht verwendet werden, um Workflows zu debuggen, die ohne den Designer direkt im Code erstellt wurden.
 
-- In früheren Versionen von Windows Workflow Foundation (WF) erstellte Workflows können nicht in der .NET Framework 4-Designer debuggt werden.
+- In früheren Versionen von Windows Workflow Foundation (WF) erstellte Workflows können nicht debuggt werden, in .NET Framework 4 oder höher.
 
 - Es können keine Haltepunkte auf Verknüpfungen zwischen Aktivitäten oder <xref:System.Activities.Statements.Flowchart>-Knoten definiert werden.
 

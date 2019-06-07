@@ -9,43 +9,48 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 613f8828cf7e966fb66468588c73e1a8b9dbdd3d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5fc4e6086b8e4d98509fd6797f4fa99ae5e61329
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414741"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744717"
 ---
-# <a name="customizing-the-properties-window"></a>Anpassen des Eigenschaftenfensters
+# <a name="customize-the-properties-window"></a>Anpassen des Eigenschaftenfensters
+
 Sie können das Aussehen und Verhalten des Fensters Eigenschaften in Ihrer domänenspezifischen Sprache (DSL), in Visual Studio anpassen. In Ihrer DSL-Definition definieren Sie Domäneneigenschaften fest, für jede Domänenklasse. Wenn Sie eine Instanz der Klasse in einem Diagramm oder im Modell-Explorer auswählen, wird jede Domäneneigenschaft standardmäßig in das Fenster "Eigenschaften" aufgeführt. Dadurch können Sie die anzeigen und bearbeiten die Werte der Eigenschaften von Domänen, auch wenn Sie diese Form von Feldern im Diagramm nicht zugeordnet haben.
 
 ## <a name="names-descriptions-and-categories"></a>Namen, Beschreibungen und Kategorien
- **Name und Anzeigename**. In die Definition einer Domäneneigenschaft ist der Anzeigename der Eigenschaft den Namen, der zur Laufzeit in das Fenster "Eigenschaften" angezeigt wird. Im Gegensatz dazu wird der Name verwendet, beim Schreiben von Programmcode, der Eigenschaft zu aktualisieren. Der Name muss eine richtige CLR alphanumerischer Name sein, aber der Anzeigename darf Leerzeichen enthalten.
 
- Wenn Sie den Namen einer Eigenschaft in der DSL-Definition festlegen, wird sein Anzeigename lautet automatisch auf eine Kopie mit dem Namen festgelegt. Wenn Sie einen Groß-und Kleinschreibung Pascal-Namen, z. B. "FuelGauge" schreiben, wird der Anzeigename automatisch ein Leerzeichen enthalten: "Benzinanzeige". Allerdings können Sie den Anzeigenamen an explizit in einen anderen Wert festlegen.
+**Name und Anzeigename**. In die Definition einer Domäneneigenschaft ist der Anzeigename der Eigenschaft den Namen, der zur Laufzeit in das Fenster "Eigenschaften" angezeigt wird. Im Gegensatz dazu wird der Name verwendet, beim Schreiben von Programmcode, der Eigenschaft zu aktualisieren. Der Name muss eine richtige CLR alphanumerischer Name sein, aber der Anzeigename darf Leerzeichen enthalten.
 
- **Beschreibung**. Die Beschreibung einer Domäneneigenschaft wird an zwei Orten angezeigt:
+Wenn Sie den Namen einer Eigenschaft in der DSL-Definition festlegen, wird sein Anzeigename lautet automatisch auf eine Kopie mit dem Namen festgelegt. Wenn Sie einen Groß-und Kleinschreibung Pascal-Namen, z. B. "FuelGauge" schreiben, wird der Anzeigename automatisch ein Leerzeichen enthalten: "Benzinanzeige". Allerdings können Sie den Anzeigenamen an explizit in einen anderen Wert festlegen.
+
+**Beschreibung**. Die Beschreibung einer Domäneneigenschaft wird an zwei Orten angezeigt:
 
 - Unten auf der das Fenster "Eigenschaften", wenn der Benutzer die Eigenschaft auswählt. Sie können es dem Benutzer erklären, was die Eigenschaft darstellt.
 
 - In der generierten Programmcode. Wenn Sie die Funktionen der Dokumentation zum Extrahieren der API-Dokumentation verwenden, wird es als die Beschreibung dieser Eigenschaft in der API angezeigt.
 
-  **Kategorie**. Eine Kategorie ist eine Überschrift im Fenster Eigenschaften.
+**Kategorie**. Eine Kategorie ist eine Überschrift im Fenster Eigenschaften.
 
-## <a name="exposing-style-features"></a>Style-Funktionen verfügbar zu machen
- Einige der dynamischen Funktionen von grafischen Elementen dargestellt werden kann oder *verfügbar gemacht werden* als Domäneneigenschaften. Eine Funktion, die auf diese Weise verfügbar gemacht wurde, kann vom Benutzer aktualisiert werden und kann weitere problemlos aktualisiert werden durch Programmcode.
+## <a name="expose-style-features"></a>Style-Features machen
 
- Mit der rechten Maustaste einer Shape-Klasse im DSL-Definition, zeigen Sie auf **verfügbare hinzufügen**, und wählen Sie dann auf eine Funktion.
+Einige der dynamischen Funktionen von grafischen Elementen dargestellt werden kann oder *verfügbar gemacht werden* als Domäneneigenschaften. Eine Funktion, die auf diese Weise verfügbar gemacht wurde, kann vom Benutzer aktualisiert werden und kann weitere problemlos aktualisiert werden durch Programmcode.
 
- Formen können Sie verfügbar machen die **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**,  **OutlineThickness** und **FillGradientMode** Eigenschaften. Sie können Connectors Bereitstellen der **Farbe**`,`**TextColor**, **DashStyle**, und **Stärke** Eigenschaften. In Diagrammen können Sie verfügbar machen die **FillColor** und **TextColor** Eigenschaften.
+Mit der rechten Maustaste einer Shape-Klasse im DSL-Definition, zeigen Sie auf **verfügbare hinzufügen**, und wählen Sie dann auf eine Funktion.
 
-## <a name="forwarding-displaying-properties-of-related-elements"></a>Weiterleiten von: Anzeigen von Eigenschaften verwandter Elemente
- Wenn der Benutzer Ihrer DSL ein Element in einem Modell auswählt, werden Eigenschaften des Elements im Eigenschaftenfenster angezeigt. Allerdings können Sie auch die Eigenschaften des angegebenen verwandte Elemente anzeigen. Dies ist nützlich, wenn Sie eine Gruppe von Elementen definiert haben, die zusammen funktioniert. Sie können z. B. ein Hauptelement und ein optionales-Plug-in-Element definieren. Wenn das Hauptelement mit einer Form zugeordnet ist, und die andere nicht der Fall ist, ist es hilfreich, um alle Eigenschaften anzuzeigen, als wären sie auf ein Element.
+Formen können Sie verfügbar machen die **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**,  **OutlineThickness** und **FillGradientMode** Eigenschaften. Sie können Connectors Bereitstellen der **Farbe**`,`**TextColor**, **DashStyle**, und **Stärke** Eigenschaften. In Diagrammen können Sie verfügbar machen die **FillColor** und **TextColor** Eigenschaften.
 
- Dieser Effekt heißt *Eigenschaft Weiterleitung*, und dies erfolgt automatisch im verschiedenen Fällen. In anderen Fällen können Sie die Eigenschaft, die Weiterleitung durch Definieren einer domänentypdeskriptor erreichen.
+## <a name="forwarding-display-properties-of-related-elements"></a>Weiterleiten von: Anzeigen von Eigenschaften verwandter Elemente
+
+Wenn der Benutzer Ihrer DSL ein Element in einem Modell auswählt, werden Eigenschaften des Elements im Eigenschaftenfenster angezeigt. Allerdings können Sie auch die Eigenschaften des angegebenen verwandte Elemente anzeigen. Dies ist nützlich, wenn Sie eine Gruppe von Elementen definiert haben, die zusammen funktioniert. Sie können z. B. ein Hauptelement und ein optionales-Plug-in-Element definieren. Wenn das Hauptelement mit einer Form zugeordnet ist, und die andere nicht der Fall ist, ist es hilfreich, um alle Eigenschaften anzuzeigen, als wären sie auf ein Element.
+
+Dieser Effekt heißt *Eigenschaft Weiterleitung*, und dies erfolgt automatisch im verschiedenen Fällen. In anderen Fällen können Sie die Eigenschaft, die Weiterleitung durch Definieren einer domänentypdeskriptor erreichen.
 
 ### <a name="default-property-forwarding-cases"></a>Weiterleitung von Standardszenarien-Eigenschaft
- Wenn der Benutzer eine Form oder -Connector oder ein Element im Explorer auswählt, werden die folgenden Eigenschaften im Fenster Eigenschaften angezeigt:
+
+Wenn der Benutzer eine Form oder -Connector oder ein Element im Explorer auswählt, werden die folgenden Eigenschaften im Fenster Eigenschaften angezeigt:
 
 - Die Domäneneigenschaften, die definiert sind, auf die Domänenklasse des Modellelements, einschließlich derjenigen, die in Basisklassen definiert sind. Eine Ausnahme ist die Domäneneigenschaften für die Sie festgelegt haben **kann durchsucht werden** zu `False`.
 
@@ -55,15 +60,16 @@ Sie können das Aussehen und Verhalten des Fensters Eigenschaften in Ihrer domä
 
 - Eigenschaften von Domänen, die für die ausgewählte Form oder den Connector definiert sind.
 
-### <a name="adding-property-forwarding"></a>Hinzufügen von Eigenschaft-Weiterleitung
- Um eine Eigenschaft weiterzuleiten, definieren Sie einen Typdeskriptor für die Domäne an. Wenn Sie eine domänenbeziehung zwischen zwei Domänenklassen haben, können Sie einen Typdeskriptor für die Domäne, in der ersten Klasse auf den Wert einer Domäneneigenschaft in der zweiten Domänenklasse eine Domäneneigenschaft fest. Für, wenn Sie z. B. eine Beziehung zwischen einer **Buch** Domänenklasse und ein **Autor** Domänenklasse, können Sie eine domänentypdeskriptor stellen die **Namen** Eigenschaft eine Des Buchs **Autor** im Eigenschaftenfenster angezeigt werden, wenn der Benutzer das Buch auswählt.
+### <a name="add-property-forwarding"></a>Fügen Sie die Eigenschaft-Weiterleitung
+
+Um eine Eigenschaft weiterzuleiten, definieren Sie einen Typdeskriptor für die Domäne an. Wenn Sie eine domänenbeziehung zwischen zwei Domänenklassen haben, können Sie einen Typdeskriptor für die Domäne, in der ersten Klasse auf den Wert einer Domäneneigenschaft in der zweiten Domänenklasse eine Domäneneigenschaft fest. Für, wenn Sie z. B. eine Beziehung zwischen einer **Buch** Domänenklasse und ein **Autor** Domänenklasse, können Sie eine domänentypdeskriptor stellen die **Namen** Eigenschaft eine Des Buchs **Autor** im Eigenschaftenfenster angezeigt werden, wenn der Benutzer das Buch auswählt.
 
 > [!NOTE]
 > Eigenschaft Weiterleitung hat Auswirkungen auf die nur im Eigenschaftenfenster aus, wenn der Benutzer ein Modell bearbeitet werden. Es werden keine Domäneneigenschaft auf der empfangenden Klasse definiert. Wenn Sie die weitergeleiteten Domäneneigenschaft in andere Teile der DSL-Definition oder im Programmcode zugreifen möchten, müssen Sie das Element für die Weiterleitung zugreifen.
 
- Das folgende Verfahren wird davon ausgegangen, dass Sie eine DSL erstellt haben. Die ersten Schritten werden die Voraussetzungen zusammengefasst.
+Das folgende Verfahren wird davon ausgegangen, dass Sie eine DSL erstellt haben. Die ersten Schritten werden die Voraussetzungen zusammengefasst.
 
-##### <a name="to-forward-a-property-from-another-element"></a>Eine Eigenschaft aus einem anderen Element weiterleiten
+#### <a name="forward-a-property-from-another-element"></a>Eine Eigenschaft aus einem anderen Element weiterleiten
 
 1. Erstellen Sie eine [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Projektmappe mit mindestens zwei Klassen, die in diesem Beispiel aufgerufen werden, **Buch** und **Autor**. Es muss eine Beziehung entweder Art zwischen **Buch** und **Autor**.
 
@@ -73,7 +79,7 @@ Sie können das Aussehen und Verhalten des Fensters Eigenschaften in Ihrer domä
 
     Ein Knoten mit dem Namen **Pfade der benutzerdefinierte Eigenschaftsbeschreibungen** wird unter der **benutzerdefinierten Typdeskriptor** Knoten.
 
-3. Mit der rechten Maustaste die **benutzerdefinierten Typdeskriptor** Knoten, und klicken Sie dann auf **Hinzufügen eines neuen "PropertyPath"**.
+3. Mit der rechten Maustaste die **benutzerdefinierten Typdeskriptor** Knoten, und klicken Sie dann auf **Hinzufügen eines neuen "PropertyPath"** .
 
     Ein neuen Eigenschaftenpfad angezeigt wird, unter dem **Pfade der benutzerdefinierte Eigenschaftsbeschreibungen** Knoten.
 
@@ -90,9 +96,10 @@ Sie können das Aussehen und Verhalten des Fensters Eigenschaften in Ihrer domä
 8. In einem Modell ein Buch, Autor, und sie mit der verweisbeziehung zu verknüpfen. Wählen das Book-Element, und im Eigenschaftenfenster sollte Autorenname zusätzlich zu den Eigenschaften des Buchs angezeigt. Ändern Sie den Namen des Autors des verknüpften, oder verknüpfen Sie das Buch zu einem anderen Autor, und beachten Sie, dass der Name des Autors des Buchs ändert.
 
 ## <a name="custom-property-editors"></a>Benutzerdefinierte Eigenschaften-Editoren
- Das Eigenschaftenfenster stellt Bearbeitungsfunktionen für den Typ der Eigenschaft "Domain" jede entsprechende Standardeinstellung bereit. Z. B. für ein enumerierter Typ, der Benutzer sieht eine Dropdown-Liste, und der Benutzer kann für eine numerische Eigenschaft Ziffern eingeben. Dies gilt nur für die integrierten Typen. Wenn Sie einen externen Typ angeben, wird der Benutzer sein können, finden Sie unter der Eigenschaftswerte, aber nicht bearbeiten.
 
- Allerdings können Sie die folgenden Editoren und Typen angeben:
+Das Eigenschaftenfenster stellt Bearbeitungsfunktionen für den Typ der Eigenschaft "Domain" jede entsprechende Standardeinstellung bereit. Z. B. für ein enumerierter Typ, der Benutzer sieht eine Dropdown-Liste, und der Benutzer kann für eine numerische Eigenschaft Ziffern eingeben. Dies gilt nur für die integrierten Typen. Wenn Sie einen externen Typ angeben, wird der Benutzer sein können, finden Sie unter der Eigenschaftswerte, aber nicht bearbeiten.
+
+Allerdings können Sie die folgenden Editoren und Typen angeben:
 
 1. Einem anderen Editor, der mit einem standard-Typ verwendet wird. Beispielsweise können Sie einen Datei-Pfad-Editor für eine Zeichenfolgeneigenschaft angeben.
 
@@ -100,11 +107,11 @@ Sie können das Aussehen und Verhalten des Fensters Eigenschaften in Ihrer domä
 
 3. Ein .NET-Editor wie z. B. den Pfad-Editor, oder Sie können eine eigene benutzerdefinierte Eigenschaft-Editor erstellen.
 
-    Eine Konvertierung zwischen einer externen und einem Typ wie z. B. Zeichenfolge, die über ein Standard-Editor verfügt.
+   Eine Konvertierung zwischen einer externen und einem Typ wie z. B. Zeichenfolge, die über ein Standard-Editor verfügt.
 
    In einer DSL ein *externen Typ* ist jeder Typ, der nicht das einfache Typen (z. B. Boolean oder Int32) oder die Zeichenfolge.
 
-#### <a name="to-define-a-domain-property-that-has-an-external-type"></a>Um eine Domäneneigenschaft zu definieren, die einen externen Typ aufweist.
+### <a name="define-a-domain-property-that-has-an-external-type"></a>Definieren Sie eine Eigenschaft "Domain", die einen externen Typ aufweist.
 
 1. In **Projektmappen-Explorer**, fügen Sie einen Verweis auf die Assembly (DLL) mit dem externen Typ, in der **Dsl** Projekt.
 
@@ -127,8 +134,9 @@ Sie können das Aussehen und Verhalten des Fensters Eigenschaften in Ihrer domä
 
    In dieser Phase Benutzer können die Werte der Eigenschaft anzeigen, aber nicht bearbeiten. Die angezeigten Werte erhalten Sie vom der `ToString()` Funktion. Sie können Programmcode schreiben, die den Wert der Eigenschaft, z. B. in einem Befehlsfenster oder die Regel festlegt.
 
-### <a name="setting-a-property-editor"></a>Festlegen eines Eigenschaften-Editors
- Fügen Sie der Domäne-Eigenschaft in der folgenden Form eine CLR-Attribut hinzu:
+### <a name="set-a-property-editor"></a>Legen Sie einen Eigenschaften-editor
+
+Fügen Sie der Domäne-Eigenschaft in der folgenden Form eine CLR-Attribut hinzu:
 
 ```csharp
 [System.ComponentModel.Editor (
@@ -136,13 +144,13 @@ Sie können das Aussehen und Verhalten des Fensters Eigenschaften in Ihrer domä
    typeof(System.Drawing.Design.UITypeEditor))]
 ```
 
- Sie können das Attribut für eine Eigenschaft festlegen, mit der **benutzerdefiniertes Attribut** Eintrag im Fenster Eigenschaften.
+Sie können das Attribut für eine Eigenschaft festlegen, mit der **benutzerdefiniertes Attribut** Eintrag im Fenster Eigenschaften.
 
- Der Typ des `AnEditor` aus dem im zweiten Parameter angegebenen Typ abgeleitet werden. Der zweite Parameter muss entweder <xref:System.Drawing.Design.UITypeEditor> oder <xref:System.ComponentModel.ComponentEditor>. Weitere Informationen finden Sie unter <xref:System.ComponentModel.EditorAttribute>.
+Der Typ des `AnEditor` aus dem im zweiten Parameter angegebenen Typ abgeleitet werden. Der zweite Parameter muss entweder <xref:System.Drawing.Design.UITypeEditor> oder <xref:System.ComponentModel.ComponentEditor>. Weitere Informationen finden Sie unter <xref:System.ComponentModel.EditorAttribute>.
 
- Sie können entweder einen eigenen Editor oder in einem Editor, die im angegebenen angeben der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], z. B. <xref:System.Windows.Forms.Design.FileNameEditor> oder <xref:System.Drawing.Design.ImageEditor>. Verwenden Sie z. B. das folgende Verfahren, um eine Eigenschaft verfügen, in der der Benutzer einen Dateinamen eingeben kann.
+Sie können Ihren eigenen Editor oder einem .NET-Editor, z. B. angeben <xref:System.Windows.Forms.Design.FileNameEditor> oder <xref:System.Drawing.Design.ImageEditor>. Verwenden Sie z. B. das folgende Verfahren, um eine Eigenschaft verfügen, in der der Benutzer einen Dateinamen eingeben kann.
 
-##### <a name="to-define-a-file-name-domain-property"></a>Definieren Sie eine Datei namens Domäneneigenschaft
+#### <a name="define-a-file-name-domain-property"></a>Definieren Sie eine Datei namens Domäneneigenschaft
 
 1. Fügen Sie eine Domäneneigenschaft an eine Domänenklasse in Ihrer DSL-Definition.
 
@@ -165,21 +173,22 @@ Sie können das Aussehen und Verhalten des Fensters Eigenschaften in Ihrer domä
 
     3. Klicken Sie auf die Auslassungspunkte. Ein Dialogfeld wird angezeigt. Wählen Sie eine Datei, und schließen Sie das Dialogfeld. Der Dateipfad ist jetzt der Wert der Domäneneigenschaft.
 
-### <a name="defining-your-own-property-editor"></a>Definieren Ihre eigenen Eigenschaften-editor
- Sie können Ihren eigenen Editor definieren. Sie möchten diese Option, um dem Benutzer ermöglichen, einen Typ zu bearbeiten, den Sie definiert haben, oder um einen Standardtyp auf besondere Weise zu bearbeiten. Beispielsweise können Sie ermöglichen, den Benutzer zur Eingabe von einer Zeichenfolge, die eine Formel darstellt.
+### <a name="define-your-own-property-editor"></a>Definieren Sie Ihre eigenen Eigenschaften-editor
 
- Sie definieren einen Editor schreiben eine abgeleitete Klasse, von <xref:System.Drawing.Design.UITypeEditor>. Die Klasse muss außer Kraft setzen:
+Sie können Ihren eigenen Editor definieren. Sie möchten diese Option, um dem Benutzer ermöglichen, einen Typ zu bearbeiten, den Sie definiert haben, oder um einen Standardtyp auf besondere Weise zu bearbeiten. Beispielsweise können Sie ermöglichen, den Benutzer zur Eingabe von einer Zeichenfolge, die eine Formel darstellt.
+
+Sie definieren einen Editor schreiben eine abgeleitete Klasse, von <xref:System.Drawing.Design.UITypeEditor>. Die Klasse muss außer Kraft setzen:
 
 - <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>, mit dem Benutzer interagieren, und aktualisieren den Wert der Eigenschaft.
 
 - <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, um anzugeben, ob Ihr Editor wird ein Dialogfeld zu öffnen, oder geben Sie ein Dropdown-Menü.
 
-  Sie können auch eine grafische Darstellung des Werts der Eigenschaft angeben, die im Eigenschaftenraster angezeigt werden. Zu diesem Zweck überschreiben `GetPaintValueSupported`, und `PaintValue`.  Weitere Informationen finden Sie unter <xref:System.Drawing.Design.UITypeEditor>.
+Sie können auch eine grafische Darstellung des Werts der Eigenschaft angeben, die im Eigenschaftenraster angezeigt werden. Zu diesem Zweck überschreiben `GetPaintValueSupported`, und `PaintValue`.  Weitere Informationen finden Sie unter <xref:System.Drawing.Design.UITypeEditor>.
 
 > [!NOTE]
 > Fügen Sie den Code in einer separaten Codedatei in die **Dsl** Projekt.
 
- Zum Beispiel:
+Zum Beispiel:
 
 ```csharp
 internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
@@ -193,7 +202,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
 }
 ```
 
- Um diesen Editor zu verwenden, legen die **benutzerdefiniertes Attribut** einer Domäneneigenschaft auf:
+Um diesen Editor zu verwenden, legen die **benutzerdefiniertes Attribut** einer Domäneneigenschaft auf:
 
 ```csharp
 [System.ComponentModel.Editor (
@@ -201,22 +210,23 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
    , typeof(System.Drawing.Design.UITypeEditor))]
 ```
 
- Weitere Informationen finden Sie unter <xref:System.Drawing.Design.UITypeEditor>.
+Weitere Informationen finden Sie unter <xref:System.Drawing.Design.UITypeEditor>.
 
-## <a name="providing-a-drop-down-list-of-values"></a>Bereitstellen einer Dropdownliste von Werten
- Sie können eine Liste von Werten für einen Benutzer zur Auswahl bereitstellen.
+## <a name="provide-a-drop-down-list-of-values"></a>Geben Sie eine Dropdownliste von Werten
+
+Sie können eine Liste von Werten für einen Benutzer zur Auswahl bereitstellen.
 
 > [!NOTE]
 > Diese Technik bietet es sich um eine Liste von Werten, die zur Laufzeit ändern können. Wenn Sie eine Liste angeben, die nicht geändert wird, können Sie stattdessen einen enumerierten Typ mit dem Typ der Eigenschaft "Domain" Ihre mithilfe.
 
- Um eine Liste von Standardwerten zu definieren, fügen Sie für Ihre Domäneneigenschaft ein CLR-Attribut, das die folgende Form aufweist:
+Um eine Liste von Standardwerten zu definieren, fügen Sie für Ihre Domäneneigenschaft ein CLR-Attribut, das die folgende Form aufweist:
 
 ```csharp
 [System.ComponentModel.TypeConverter
 (typeof(MyTypeConverter))]
 ```
 
- Definieren Sie eine Klasse, die sich von <xref:System.ComponentModel.TypeConverter> ableitet. Fügen Sie den Code in einer separaten Datei in die **Dsl** Projekt. Zum Beispiel:
+Definieren Sie eine Klasse, die sich von <xref:System.ComponentModel.TypeConverter> ableitet. Fügen Sie den Code in einer separaten Datei in die **Dsl** Projekt. Zum Beispiel:
 
 ```csharp
 /// <summary>

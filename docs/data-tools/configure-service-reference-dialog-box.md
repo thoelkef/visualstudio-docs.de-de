@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b622fc77884acde5b81d886628afce9f077e86a8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7ca5f71d386f48b36fcb1126a1e0467b40ef8d73
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567972"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745580"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Dienstverweis konfigurieren (Dialogfeld)
 
@@ -98,7 +98,7 @@ Klicken Sie mit der rechten Maustaste auf einen Dienstverweis im **Projektmappen
  Zeigt das Dialogfeld **Webverweis hinzufügen** an.
 
 > [!NOTE]
-> Diese Option sollte nur verwendet werden, für Projekte, die als Version 2.0 von Ziel der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+> Diese Option sollte nur für Projekte verwendet werden, die auf Version 2.0 von .NET Framework abzielen.
 >
 > [!NOTE]
 > Die **Webverweis hinzufügen** Schaltfläche ist nur verfügbar, wenn die **Dienstverweis konfigurieren** Dialogfeld wird angezeigt, aus der **Add Service Reference Dialog Box**.

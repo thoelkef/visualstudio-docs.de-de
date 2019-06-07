@@ -260,12 +260,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 87461cfe06ac1c038176c3b9d4dcd513733e8d43
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: a36eb66e0308fddbc17e5ea9627562c2939f4bd7
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714507"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745472"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Codeanalysewarnungen für verwalteten Code nach CheckId
 
@@ -492,7 +492,7 @@ In der folgenden Tabelle werden Codeanalysewarnungen für verwalteten Code nach 
 | CA2225 | [CA2225: Operatorüberladungen weisen benannte alternativen auf](../code-quality/ca2225-operator-overloads-have-named-alternates.md) |Es wurde eine Operatorüberladung erkannt, und die erwartete benannte Alternativmethode wurde nicht gefunden. Der benannte Alternativmember gewährt auf die gleiche Funktionalität wie der Operator Zugriff und wird für Entwickler bereitgestellt, die in Sprachen programmieren, in denen überladene Operatoren nicht unterstützt werden. |
 | CA2226 | [CA2226: Operatoren sollten symmetrische Überladungen aufweisen.](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md) | Ein Typ implementiert den Gleichheits- oder Ungleichheitsoperator, ohne den entgegengesetzten Operator zu implementieren. |
 | CA2227 |[CA2227: Sammlungseigenschaften sollten schreibgeschützt sein](../code-quality/ca2227-collection-properties-should-be-read-only.md) |Eine schreibbare Auflistungseigenschaft ermöglicht es Benutzern, die Auflistung durch eine andere Auflistung zu ersetzen. Eine schreibgeschützte Eigenschaft sorgt dafür, dass die Auflistung nicht mehr ersetzt wird, lässt aber dennoch das Festlegen einzelner Member zu. |
-| CA2228 | [CA2228: Führen Sie nicht freigegebene Ressourcenformate](../code-quality/ca2228-do-not-ship-unreleased-resource-formats.md) | Ressourcendateien, die mithilfe von Vorabversionen von .NET Framework erstellt wurden, möglicherweise nicht von den unterstützten Versionen von .NET Framework verwendet werden. |
+| CA2228 | [CA2228: Führen Sie nicht freigegebene Ressourcenformate](../code-quality/ca2228-do-not-ship-unreleased-resource-formats.md) | Ressourcendateien, die mithilfe von Vorabversionen von .NET erstellt wurden, möglicherweise nicht von den unterstützten Versionen von .NET verwendet werden. |
 | CA2229 | [CA2229: Serialisierungskonstruktoren implementieren](../code-quality/ca2229-implement-serialization-constructors.md) | Um einen Verstoß gegen diese Regel zu beheben, implementieren Sie den Serialisierungskonstruktor. Definieren Sie den Konstruktor bei einer versiegelten Klasse als privaten Konstruktor. Definieren Sie ihn andernfalls als geschützten Konstruktor. |
 | CA2230 | [CA2230: Params für Variablenargumente verwenden](../code-quality/ca2230-use-params-for-variable-arguments.md) | Ein öffentlicher oder geschützter Typ enthält eine öffentliche oder geschützte Methode, die statt des params-Schlüsselworts die VarArgs-Aufrufkonvention verwendet. |
 | CA2231 | [CA2231: Überladen Sie den Gleichheitsoperator beim Überschreiben von ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md) | Ein Werttyp überschreibt Object.Equals, implementiert jedoch nicht den Gleichheitsoperator. |

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae65ad9c1ad740b3ea39dd97d7430804292df057
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bb5160ef663375ee3dd4b45797e8f4536acdf793
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796756"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66744646"
 ---
 # <a name="ca1820-test-for-empty-strings-using-string-length"></a>CA1820: Mithilfe der Zeichenfolgenlänge auf leere Zeichenfolgen prüfen.
 
@@ -38,11 +38,11 @@ Eine Zeichenfolge ist eine leere Zeichenfolge verglichen, mit <xref:System.Objec
 
 Vergleichen von Zeichenfolgen mithilfe der <xref:System.String.Length%2A?displayProperty=nameWithType> Eigenschaft oder das <xref:System.String.IsNullOrEmpty%2A?displayProperty=nameWithType> Methode ist schneller als die Verwendung von <xref:System.Object.Equals%2A>. Grund hierfür ist, <xref:System.Object.Equals%2A> führt die erheblich mehr MSIL-Anweisungen als <xref:System.String.IsNullOrEmpty%2A> oder die Anzahl von Anweisungen ausgeführt, um die <xref:System.String.Length%2A> Eigenschaft Wert ein, und vergleichen Sie ihn auf 0 (null).
 
-Bei null-Zeichenfolgen <xref:System.Object.Equals%2A> und <xref:System.String.Length%2A> == 0 anders verhalten. Wenn Sie versuchen, den Wert der Abrufen der <xref:System.String.Length%2A> Eigenschaft eine null-Zeichenfolge, die common Language Runtime löst eine <xref:System.NullReferenceException?displayProperty=fullName>. Wenn Sie einen Vergleich zwischen einem null-Zeichenfolge und die leere Zeichenfolge ausführen, wird die common Language Runtime löst keine Ausnahme und gibt `false`. Testen auf Null erheblich wirkt die relative Leistung der beiden Ansätze sich nicht. Wenn .NET Framework 2.0 oder höher abzielen, verwenden Sie die <xref:System.String.IsNullOrEmpty%2A> Methode. Verwenden Sie andernfalls die <xref:System.String.Length%2A> == 0 Vergleich, wann immer möglich.
+Bei null-Zeichenfolgen <xref:System.Object.Equals%2A> und `<string>.Length == 0` sich anders verhalten. Wenn Sie versuchen, den Wert der Abrufen der <xref:System.String.Length%2A> Eigenschaft eine null-Zeichenfolge, die common Language Runtime löst eine <xref:System.NullReferenceException?displayProperty=fullName>. Wenn Sie einen Vergleich zwischen einem null-Zeichenfolge und die leere Zeichenfolge ausführen, wird die common Language Runtime löst keine Ausnahme und gibt `false`. Testen auf Null erheblich wirkt die relative Leistung der beiden Ansätze sich nicht. Wenn .NET Framework 2.0 oder höher abzielen, verwenden Sie die <xref:System.String.IsNullOrEmpty%2A> Methode. Verwenden Sie andernfalls die <xref:System.String.Length%2A> == 0 Vergleich, wann immer möglich.
 
 ## <a name="how-to-fix-violations"></a>Behandeln von Verstößen
 
-Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Vergleich so um die <xref:System.String.Length%2A> -Eigenschaft und der Test für die null-Zeichenfolge. Wenn .NET Framework 2.0 oder höher abzielen, verwenden Sie die <xref:System.String.IsNullOrEmpty%2A> Methode.
+Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Vergleich so um die <xref:System.String.IsNullOrEmpty%2A> Methode.
 
 ## <a name="when-to-suppress-warnings"></a>Wenn Sie Warnungen unterdrücken
 
