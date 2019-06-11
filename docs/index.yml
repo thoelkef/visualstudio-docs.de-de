@@ -8,6 +8,12 @@ metadata:
   description: Erfahren Sie, wie Sie Visual Studio für die Entwicklung von Anwendungen, Diensten und Tools in der Sprache Ihrer Wahl für jede Plattform und jedes Gerät verwenden können.
   ms.topic: hub-page
   monikerRange: '>=vs-2017'
+  ms.openlocfilehash: bac03cb71b4c925ecb7f5fd8f1ed69466f4bd114
+  ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+  ms.translationtype: HT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 06/07/2019
+  ms.locfileid: "66462862"
 highlightedContent:
   items:
   - title: Setup und Installation
@@ -173,9 +179,3 @@ additionalContent:
 
         [Plattformübergreifende .NET Core-Entwicklung](/dotnet/core/)
   footer: '[Blogs](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [Problem melden](ide/talk-to-us.md) - [Developer Community](https://developercommunity.visualstudio.com/spaces/8/index.html)'
-ms.openlocfilehash: bac03cb71b4c925ecb7f5fd8f1ed69466f4bd114
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66462862"
