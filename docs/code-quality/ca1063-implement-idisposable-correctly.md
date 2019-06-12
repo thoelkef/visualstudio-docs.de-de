@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: f1b2c5b447d796ddd2098a6500b6094478fcd8b9
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 932805f938e9d96cd944230fcc8aa82a4710da31
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842005"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820624"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: IDisposable korrekt implementieren.
 
@@ -52,7 +52,7 @@ Die <xref:System.IDisposable?displayProperty=nameWithType> Schnittstelle ist nic
 
 Verstoß gegen eine der folgenden Muster löst die Warnung CA1063.
 
-Jede nicht versiegelter Typ, der deklariert und implementiert die <xref:System.IDisposable> Schnittstelle muss eine eigene bereitstellen `protected virtual void Dispose(bool)` Methode. `Dispose()` sollten Aufrufen `Dipose(true)`, und den Aufruf des Finalizers sollten `Dispose(false)`. Wenn Sie einen nicht versiegelten Typ erstellen, die deklariert und implementiert die <xref:System.IDisposable> -Schnittstelle, die Sie definieren müssen `Dispose(bool)` und nennen Sie sie. Weitere Informationen finden Sie unter [Bereinigen nicht verwaltete Ressourcen (Handbuch für die .NET)](/dotnet/standard/garbage-collection/unmanaged) und [Dispose-Muster](/dotnet/standard/design-guidelines/dispose-pattern).
+Jede nicht versiegelter Typ, der deklariert und implementiert die <xref:System.IDisposable> Schnittstelle muss eine eigene bereitstellen `protected virtual void Dispose(bool)` Methode. `Dispose()` sollten Aufrufen `Dispose(true)`, und den Aufruf des Finalizers sollten `Dispose(false)`. Wenn Sie einen nicht versiegelten Typ erstellen, die deklariert und implementiert die <xref:System.IDisposable> -Schnittstelle, die Sie definieren müssen `Dispose(bool)` und nennen Sie sie. Weitere Informationen finden Sie unter [Bereinigen nicht verwaltete Ressourcen (Handbuch für die .NET)](/dotnet/standard/garbage-collection/unmanaged) und [Dispose-Muster](/dotnet/standard/design-guidelines/dispose-pattern).
 
 Diese Regel nur sucht standardmäßig an extern sichtbare Typen, aber dies ist [konfigurierbare](#configurability).
 

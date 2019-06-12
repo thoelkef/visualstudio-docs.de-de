@@ -12,29 +12,31 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 09db0ff784c7d8fa5a9889487f6090ad9afbfea0
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: f23dd3821744687d4f595ad404bc076e1d05af7b
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260868"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835914"
 ---
 # <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Vorgehensweise: Angeben zusätzlicher Codeinformationen mit „__Analysis_assume“
+
 Sie können Hinweise an, die das Codeanalysetool für C/C++-Code angeben, die den Analyse zu unterstützen und Warnungen zu reduzieren. Um zusätzliche Informationen bereitzustellen, verwenden Sie die folgende Funktion:
 
- `_Analysis_assume(`  `expr`  `)`
+`_Analysis_assume(`  `expr`  `)`
 
- `expr` -Ein Ausdruck, der davon ausgegangen wird, auf "true" ausgewertet.
+`expr` -Ein Ausdruck, der davon ausgegangen wird, auf "true" ausgewertet.
 
- Das Codeanalysetool wird davon ausgegangen, dass die Bedingung, die durch den Ausdruck dargestellt wird "true", an dem Punkt ist, in dem die Funktion angezeigt wird, und "true" bleibt, bis der Ausdruck geändert wird, z. B. durch die Zuweisung zur Variable.
+Das Codeanalysetool wird davon ausgegangen, dass die Bedingung, die durch den Ausdruck dargestellt wird "true", an dem Punkt ist, in dem die Funktion angezeigt wird, und "true" bleibt, bis der Ausdruck geändert wird, z. B. durch die Zuweisung zur Variable.
 
 > [!NOTE]
 > `_Analysis_assume` codeoptimierung hat keine Auswirkungen. Außerhalb der Codeanalysetools `_Analysis_assume` als keine Aktion definiert ist.
 
 ## <a name="example"></a>Beispiel
- Der folgende code verwendet `_Analysis_assume` der codeanalysewarnung zu korrigieren [C6388](../code-quality/c6388.md):
 
-```
+Der folgende code verwendet `_Analysis_assume` der codeanalysewarnung zu korrigieren [C6388](../code-quality/c6388.md):
+
+```cpp
 #include<windows.h>
 #include<codeanalysis\sourceannotations.h>
 
@@ -56,4 +58,5 @@ void test( )
 ```
 
 ## <a name="see-also"></a>Siehe auch
- [__assume](/cpp/intrinsics/assume)
+
+- [__assume](/cpp/intrinsics/assume)

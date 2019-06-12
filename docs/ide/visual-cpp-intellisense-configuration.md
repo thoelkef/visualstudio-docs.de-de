@@ -7,12 +7,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 188b1f8e96dca3ba76a9334f04156a1e30ededa9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fef5f63d8c3fd843ed6f92a313102a9c9879003f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582604"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715376"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Konfigurieren eines C++-Projekts für IntelliSense
 
@@ -45,8 +45,6 @@ Wenn Sie Ihre Builds außerhalb der Visual Studio-IDE ausführen und Ihre Builds
 Für Makefile-Projekte, die auf der NMake-Projektvorlage basieren, wählen Sie **NMake** im linken Bereich und dann **Suchpfad** unter der Kategorie **IntelliSense** aus:
 
 ![Include-Pfade für das Makefile-Projekt](media/vcpp-intellisense-makefile-include-paths.png)
-
-Weitere Informationen finden Sie unter [Vorgehensweise: Aktivieren von IntelliSense für Makefile-Projekte](/cpp/ide/how-to-enable-intellisense-for-makefile-projects).
 
 ### <a name="open-folder-projects"></a>Open Folder-Projekte
 

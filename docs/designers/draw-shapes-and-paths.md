@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e0efd4b4f9fb301f5bcba4a12857647a8d911f1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 222826121b270da93bc4bdd867b21fc62730cb07
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62899335"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820434"
 ---
 # <a name="draw-shapes-and-paths"></a>Zeichnen von Formen und Pfaden
 
@@ -93,8 +93,8 @@ Formen und Pfade verwenden Vektorgrafiken, sodass sie gut für Displays mit hohe
 |||||
 |-|-|-|-|
 |![Zwei Formen vor dem Vereinen](../designers/media/b1_1.png)|Zwei Formen vor dem Vereinen|![Überschneiden](../designers/media/b1_4.png)|Überschneiden|
-|![Überlappung ausschließen](../designers/media/b1_2.png)|Vereinigen|![](../designers/media/b1_5.png)|Überlappung ausschließen|
-|![Subtrahieren](../designers/media/b1_3.png)|Teilen|![](../designers/media/b1_6.png)|Subtrahieren|
+|![Vereinigen](../designers/media/b1_2.png)|Vereinigen|![Überlappung ausschließen](../designers/media/b1_5.png)|Überlappung ausschließen|
+|![Teilen](../designers/media/b1_3.png)|Teilen|![Subtrahieren](../designers/media/b1_6.png)|Subtrahieren|
 
  **Sehen Sie sich ein kurzes Video an:** ![Installierte Features konfigurieren](../designers/media/bldadminconsoleinitialconfigicon.png) [Arbeiten mit Pfaden: Kombinieren von Pfaden](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195)
 

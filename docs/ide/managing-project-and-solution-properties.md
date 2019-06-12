@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9279257f238adf92ad560d2f2e1aa7f769905305
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a3d5b1150c67eeb5d47741ed9331dcdc11a82582
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62537397"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714956"
 ---
 # <a name="manage-project-and-solution-properties"></a>Verwalten von Projekt- und Projektmappeneigenschaften
 
@@ -48,7 +48,7 @@ C++- und JavaScript-Projekte haben eine andere Benutzeroberfläche zum Verwalten
 
 ![Visual C&#43;&#43;-Projekteigenschaften](../ide/media/vs2015_projprops_cpp.png)
 
-Informationen zu C++-Projekteigenschaften finden Sie unter [Arbeiten mit Projekteigenschaften (C++)](/cpp/ide/working-with-project-properties). Weitere Informationen zu JavaScript-Eigenschaften finden Sie unter [Eigenschaftenseiten, JavaScript](../ide/reference/property-pages-javascript.md).
+Informationen zu C++-Projekteigenschaften finden Sie unter [Arbeiten mit Projekteigenschaften (C++)](/cpp/build/working-with-project-properties). Weitere Informationen zu JavaScript-Eigenschaften finden Sie unter [Eigenschaftenseiten, JavaScript](../ide/reference/property-pages-javascript.md).
 
 ## <a name="solution-properties"></a>Projektmappeneigenschaften
 
