@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 308478bc47d62731494616a30ce320b3662de735
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: f27e2585d082f61021fbc736b394612095f56684
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461593"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715251"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Schreiben von Komponententests für C/C++ in Visual Studio
 
@@ -41,7 +41,7 @@ C++-Komponententestprojekte unterstützen [CodeLens](../ide/find-code-changes-an
 
 - **Boost.Test** ist als Standardkomponente in der Workload **Desktop Development mit C++** enthalten. Diese Komponente ist zwar in **Test-Explorer** integriert, jedoch gibt es derzeit noch keine Projektvorlage. Darum müssen Sie sie manuell konfigurieren. Weitere Informationen finden Sie unter [How to: Use Boost.Test in Visual Studio (Vorgehensweise: Verwenden von Boost-Test in Visual Studio)](how-to-use-boost-test-for-cpp.md).
 
-- Die Komponente [CMake Tools für Visual Studio](/cpp/ide/cmake-tools-for-visual-cpp), die Teil der Workload **Desktop Development mit C++** ist, umfasst die Unterstützung von **CTest**. Allerdings ist CTest noch nicht vollständig in den **Test-Explorer** integriert. Weitere Informationen finden Sie unter [How to: Use CTest in Visual Studio (Vorgehensweise: Verwenden von CTest in Visual Studio)](how-to-use-ctest-for-cpp.md).
+- Die Komponente [CMake Tools für Visual Studio](/cpp/build/cmake-tools-for-visual-cpp), die Teil der Workload **Desktop Development mit C++** ist, umfasst die Unterstützung von **CTest**. Allerdings ist CTest noch nicht vollständig in den **Test-Explorer** integriert. Weitere Informationen finden Sie unter [How to: Use CTest in Visual Studio (Vorgehensweise: Verwenden von CTest in Visual Studio)](how-to-use-ctest-for-cpp.md).
 
 **Visual Studio 2015 und frühere Versionen**
 

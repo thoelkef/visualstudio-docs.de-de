@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Aufrufe in der SharePoint-Clientobjektmodell innerhalb einer Server-Explorererweiterung | Microsoft-Dokumentation'
+title: 'Server-Explorer: Erweitern des SharePoint-Verbindungsknotens'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4881604c4fe2ab85f4c32361eddb5f5bb228b3cd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f9413b9cb4210959d53eba1753a01d950e980536
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430457"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835946"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Exemplarische Vorgehensweise: Aufrufe in der SharePoint-Clientobjektmodell innerhalb einer Server-explorererweiterung
   Diese exemplarische Vorgehensweise veranschaulicht, wie Sie das SharePoint-Clientobjektmodell von eine Erweiterung für die **SharePoint-Verbindungen** Knoten **Server-Explorer**. Weitere Informationen zur Verwendung des SharePoint-Clientobjektmodells finden Sie unter [rufen Sie in der SharePoint-Objektmodelle](../sharepoint/calling-into-the-sharepoint-object-models.md).
@@ -240,7 +240,7 @@ Kenntnisse der folgenden Konzepte sind hilfreich, wenn auch für die Durchführu
 
     2. In der **SharePoint-Verbindung hinzufügen** Dialogfeld Geben Sie die URL für die SharePoint-Website, die Sie möchten eine Verbindung herstellen, und wählen Sie dann die **OK** Schaltfläche.
 
-         Geben Sie zum Angeben der SharePoint-Website auf Ihrem Entwicklungscomputer **http://localhost**.
+         Geben Sie zum Angeben der SharePoint-Website auf Ihrem Entwicklungscomputer **http://localhost** .
 
 3. Erweitern Sie den Website-Verbindungsknoten (in der die URL Ihrer Website angezeigt wird), und klicken Sie dann einen untergeordneten Standort Knoten (z. B. **Teamwebsite**).
 

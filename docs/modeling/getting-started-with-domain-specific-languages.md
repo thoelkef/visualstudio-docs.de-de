@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 915a6c6d06380aa67c2c79ce52598668a9b33f18
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4242fabe943dd27624e44a9900981343ec180fcd
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442375"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820906"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Erste Schritte mit domänenspezifischen Sprachen
 
@@ -21,7 +21,7 @@ In diesem Thema wird erläutert, die grundlegenden Konzepte in definieren und ve
 > [!NOTE]
 > Das Text-Vorlage Transformation SDK und das Visual Studio-Modellierungs-SDK werden automatisch installiert, wenn Sie bestimmte Funktionen von Visual Studio zu installieren. Weitere Informationen finden Sie unter [in diesem Blogbeitrag](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
-Wenn Sie noch nicht mit DSLs sind, es wird empfohlen, dass Sie über arbeiten die **DSL-Tools Lab**, finden Sie auf dieser Website: [Visualisierungs- und Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+Wenn Sie noch nicht mit DSLs sind, es wird empfohlen, dass Sie über arbeiten die **DSL-Tools Lab**, finden Sie auf dieser Website: [Visualisierungs- und Modellierungs-SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>Was können Sie mit einer domänenspezifischen Sprache?
 
@@ -137,11 +137,11 @@ Sie können die DSL-Projektmappe ausführen, sobald Sie es erstellt haben. Spät
 
 Der experimentellen Visual Studio wird im folgende Beispiel ähneln:
 
-![](../modeling/media/dsl_min.png)
+![Struktur von Domäne sprachspezifischen Beispiel in Visual Studio](../modeling/media/dsl_min.png)
 
 ### <a name="the-content-of-a-model"></a>Der Inhalt eines Modells
 
-Wird aufgerufen, der Inhalt der Datei, die eine Instanz einer DSL ist eine *Modell*. Das Modell enthält *Modell*<em>Elemente</em> und *Links* zwischen den Elementen. Die DSL-Definition gibt an, welche Arten von Modellelementen und Links können im Modell vorhanden sind. Z. B. in einer DSL, die aus der Vorlage für die minimale Sprache erstellt, ist es eine Art von Modellelement und eine Art von Link.
+Wird aufgerufen, der Inhalt der Datei, die eine Instanz einer DSL ist eine *Modell*. Das Modell enthält *Modell* <em>Elemente</em> und *Links* zwischen den Elementen. Die DSL-Definition gibt an, welche Arten von Modellelementen und Links können im Modell vorhanden sind. Z. B. in einer DSL, die aus der Vorlage für die minimale Sprache erstellt, ist es eine Art von Modellelement und eine Art von Link.
 
 Die DSL-Definition kann angeben, wie das Modell in einem Diagramm angezeigt wird. Sie können aus verschiedensten Arten von Formen und Konnektoren auswählen. Sie können angeben, dass einige Formen innerhalb anderer Formen angezeigt werden.
 
@@ -392,7 +392,7 @@ Benennen Sie die vorhandenen Domänenklassen und Beziehungen. Beispielsweise kon
 
  Sie können das gleiche Verfahren verwenden, auf die DSL auf Ihrem eigenen Computer installieren, sodass Sie nicht mit der experimentellen Instanz von Visual Studio verfügen.
 
- Weitere Informationen finden Sie unter [Deploying Domain-Specific Language Solutions (Bereitstellen von Projektmappen für eine domänenspezifische Sprache)](../modeling/deploying-domain-specific-language-solutions.md).
+ Weitere Informationen finden Sie unter [Deploying Domain-Specific Language Solutions (Bereitstellen von Projektmappen für eine domänenspezifische Sprache)](msi-and-vsix-deployment-of-a-dsl.md).
 
 ## <a name="Reset"></a> Entfernen alte experimentelle DSLs
  Wenn Sie die experimentelle DSLs, die Sie nicht mehr benötigen erstellt haben, können Sie sie auf Ihrem Computer entfernen, durch die experimentelle Instanz Visual Studio zurücksetzen.
