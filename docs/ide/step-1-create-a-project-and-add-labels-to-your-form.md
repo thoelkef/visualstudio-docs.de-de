@@ -1,6 +1,6 @@
 ---
 title: 'Schritt 1: Erstellen eines Projekts und Hinzufügen von Bezeichnungen zum Formular'
-ms.date: 11/04/2016
+ms.date: 05/31/2019
 ms.topic: conceptual
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d32ae922726a13416086e982679483ae36f2ad0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3c04e0700a9913548b33e1ef3e9092f774cddc77
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949127"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501131"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Schritt 1: Erstellen eines Projekts und Hinzufügen von Bezeichnungen zum Formular
 
@@ -24,17 +24,20 @@ Wie in den ersten Schritten zur Entwicklung dieses Quiz erstellen Sie das Projek
 > [!NOTE]
 > Dieses Thema ist Teil einer Reihe von Lernprogrammen zu grundlegenden Konzepte der Codierung. Eine Übersicht über das Tutorial finden Sie unter [Tutorial 2: Erstellen eines Mathequiz mit Zeitmessung](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
-## <a name="to-create-a-project-and-set-properties-for-a-form"></a>So erstellen Sie ein Projekt und legen Eigenschaften für ein Formular fest
+## <a name="to-create-a-project-for-a-form"></a>So erstellen Sie ein Projekt für ein Formular
 
 ::: moniker range="vs-2017"
 
 1. Wählen Sie auf der Menüleiste **Datei** > **Neu** > **Projekt** aus.
 
-1. Wählen Sie in der Liste **Installierte Vorlagen** entweder **C#** oder **Visual Basic** aus.
+1. Wählen Sie im Dialogfeld **Neues Projekt** im linken Bereich **Visual C#** oder **Visual Basic** aus, und klicken Sie dann auf **Windows-Desktop**.
 
-1. Wählen Sie in der Liste der Vorlagen die Vorlage **Windows Forms-Anwendung** aus, benennen Sie sie mit **MathQuiz**, und wählen Sie anschließend die Schaltfläche **OK** aus.
+1. Wählen Sie in der Liste der Vorlagen die Vorlage **Windows Forms-App (.NET Framework)** aus, nennen Sie die Vorlage *MathQuiz*, und klicken Sie anschließend auf die Schaltfläche **OK**.
 
-     Je nach der gewählten Programmiersprache wird ein Formular mit dem Namen *Form1.cs* oder *Form1.vb* angezeigt.
+    Je nach der gewählten Programmiersprache wird ein Formular mit dem Namen *Form1.cs* oder *Form1.vb* angezeigt.
+
+   > [!NOTE]
+   > Wenn Ihnen die Vorlage **Windows Forms-App (.NET Framework)** nicht angezeigt wird, verwenden Sie den Visual Studio-Installer, um die Workload **.NET Desktop-Entwicklung** zu installieren.<br/><br/>![Die Workload „.NET Desktopentwicklung“ im Visual Studio-Installer](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Weitere Informationen finden Sie im Artikel [Installieren von Visual Studio](../install/install-visual-studio.md).
 
 ::: moniker-end
 
@@ -42,15 +45,32 @@ Wie in den ersten Schritten zur Entwicklung dieses Quiz erstellen Sie das Projek
 
 1. Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
 
-1. Geben Sie im Suchfeld den Begriff „WPF“ ein, wählen Sie **WPF-App (.Net Framework)** und dann **Weiter** aus.
+   ![Fenster „Neues Projekt erstellen“ anzeigen](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-   (Wenn Ihnen die Vorlage **WPF-App (.NET Framework)** nicht angezeigt wird, verwenden Sie den Visual Studio-Installer, um die Workload **.NET Desktop-Entwicklung** zu installieren.)
+1. Geben Sie im Fenster **Neues Projekt erstellen** im Suchfeld den Begriff *Windows Forms* ein.
 
-1. Benennen Sie das Projekt mit **MathQuiz**, und klicken Sie auf **Erstellen**.
+1. Wählen Sie die Vorlage **Windows Forms-App (.NET Framework)** aus, und klicken Sie dann auf **Weiter**.
+
+   ![Screenshot: Auswählen der Visual Basic-Vorlage für die Windows Forms-App (.NET Framework)](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
+
+   > [!NOTE]
+   > Wenn Sie die **Windows Forms-App (.NET Framework)** nicht sehen, können Sie sie aus dem Fenster **Neues Projekt erstellen** installieren. Wählen Sie in der Meldung **Sie finden nicht, wonach Sie suchen?** den Link **Weitere Tools und Features installieren** aus.
+   >
+   > ![Link „Weitere Tools und Features installieren“ aus der Meldung „Sie finden nicht, wonach Sie suchen“ im Fenster „Neues Projekt erstellen“](../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   >
+   > Wählen Sie anschließend im Visual Studio-Installer die Workload **.NET Desktopentwicklung** aus.
+   >
+   > ![Die Workload „.NET Core“ im Visual Studio-Installer](../ide/media/install-dot-net-desktop-env.png)
+   >
+   > Wählen Sie anschließend die Schaltfläche **Ändern** im Visual Studio-Installer aus. Möglicherweise werden Sie aufgefordert, Ihre Arbeit zu speichern; wenn dies der Fall ist, führen Sie das aus. Wählen Sie als Nächstes **Weiter** aus, um die Workload zu installieren.
+
+1. Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld **Projektname** den Namen *MathQuiz* ein. Wählen Sie anschließend **Erstellen** aus.
 
 ::: moniker-end
 
-1. Wählen Sie das Formular aus, und ändern Sie dann die Eigenschaft **Text** in **Mathequiz**.
+## <a name="to-set-properties-for-a-form"></a>So legen Sie Eigenschaften für ein Formular fest
+
+1. Wählen Sie in Visual Studio das Formular aus (je nach Programmiersprache entweder *Form1.cs* oder *Form1.vb*), und ändern Sie dann die Eigenschaft **Text** zu **MathQuiz**.
 
      Das Fenster **Eigenschaften** enthält Eigenschaften für das Formular.
 
@@ -80,7 +100,7 @@ Wie in den ersten Schritten zur Entwicklung dieses Quiz erstellen Sie das Projek
 
 6. Wählen Sie im Fenster **Eigenschaften** die Eigenschaft **Text** aus, und löschen Sie den Wert mit der **RÜCKTASTE**.
 
-7. Wählen Sie das Pluszeichen (**+**) neben der Eigenschaft **Schriftart** aus, und ändern Sie dann den Wert der Eigenschaft **Größe** in **15,75**.
+7. Wählen Sie das Pluszeichen ( **+** ) neben der Eigenschaft **Schriftart** aus, und ändern Sie dann den Wert der Eigenschaft **Größe** in **15,75**.
 
      Sie können einige Schriftarteigenschaften ändern, wie im folgenden Bild gezeigt.
 
@@ -118,7 +138,7 @@ Wie in den ersten Schritten zur Entwicklung dieses Quiz erstellen Sie das Projek
 
 11. Legen Sie den Wert der **Text**-Eigenschaft der zweiten Bezeichnung auf **+** (Pluszeichen) fest.
 
-12. Legen Sie den Wert der **(Name)**-Eigenschaft der dritten Bezeichnung auf **plusRightLabel** fest.
+12. Legen Sie den Wert der **(Name)** -Eigenschaft der dritten Bezeichnung auf **plusRightLabel** fest.
 
 13. Legen Sie den Wert der **Text**-Eigenschaft der vierten Bezeichnung auf **=** (Gleichheitszeichen) fest.
 

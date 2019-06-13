@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 48e45373c41358ba3e9c2d70222ace07cdf1b59e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b18f5763d68487e7642f5632c05516d2f1bd9e2
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812093"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66500938"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Refactoring des Umbenennens eines Codesymbols
 
@@ -68,10 +68,13 @@ Dieses Refactoring gilt für:
 
 4. Wenn Sie mit der Änderung zufrieden sind, klicken Sie auf die Schaltfläche **Übernehmen**, oder drücken Sie die **EINGABETASTE**. Die Änderungen werden angewendet.
 
-> [!NOTE]
-> Wenn Sie einen bereits vorhandenen Namen verwenden, der zu einem Konflikt führen würde, werden Sie durch das Feld **Umbenennen** darüber informiert.
->
-> ![Umbenennungskonflikt](media/rename-conflict-cs.png)
+## <a name="remarks"></a>Anmerkungen
+
+- Wenn Sie einen bereits vorhandenen Namen verwenden, der zu einem Konflikt führen würde, werden Sie durch das Feld **Umbenennen** darüber informiert.
+
+   ![Umbenennungskonflikt](media/rename-conflict-cs.png)
+
+- Eine andere Möglichkeit zum Umbenennen eines Symbols besteht darin, den Namen des Symbols im Editor zu ändern. Wenn sich der Cursor auf dem Symbolnamen befindet, drücken Sie **STRG**+ **.** Alternativ dazu können Sie auch einfach das Menü mit dem Glühbirnensymbol erweitern, und **Umbenennen von \<alter Name> zu \<neuer Name>** auswählen.
 
 ## <a name="see-also"></a>Siehe auch
 

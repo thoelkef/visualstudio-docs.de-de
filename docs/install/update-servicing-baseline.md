@@ -13,18 +13,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8928feffed77f8bfbb3787bd9a20737b9c7b3f9e
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 36bbec66e822d7e1daebcadbeeba30e166747368
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66213781"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501119"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>Aktualisieren von Visual Studio innerhalb einer Baseline für die Wartung
 
-Visual Studio 2019 durchläuft während seines [Produktlebenszyklus](/visualstudio/productinfo/release-rhythm.md#release-channel-updates) häufige Aktualisierungen. Dazu zählen sowohl kleinere Versionsaktualisierungen (z.B. 16.0 auf 16.1), die neue Features und Komponenten beinhalten können, als auch Wartungsupdates (z.B. 16.0.4 auf 16.0.5), die nur gezielte Korrekturen für kritische Probleme enthalten. 
+Visual Studio 2019 durchläuft während seines [Produktlebenszyklus](/visualstudio/productinfo/release-rhythm#release-channel-updates) häufige Aktualisierungen. Dies umfasst sowohl Updates für Nebenversionen (z.B.: 16.0 auf 16.1), die neue Features und Komponenten enthalten können, sowie Wartungsupdates (z.B.: 16.0.4 auf 16.0.5), die nur zielgerichtete Korrekturen für kritische Probleme enthalten. 
 
-Unternehmensadministratoren können wählen, ob sie ihre Clients innerhalb einer Baseline für die Wartung halten möchten, die für ein Jahr über die Veröffentlichung der nächsten Baseline für die Wartung hinaus mit Wartungsupdates unterstützt wird. Dies ermöglicht Entwicklern und Administratoren mehr Flexibilität bei der Übernahme der neuen Features, Bugfixes oder Komponenten, die in neuen kleineren Updates enthalten sind. Die erste Baseline für die Wartung ist 16.0.x. Weitere Informationen finden Sie unter [Supportoptionen für Enterprise- und Professional-Kunden](/visualstudio/releases/2019/servicing.md#support-options-for-enterprise-and-professional-customers).
+Unternehmensadministratoren können wählen, ob sie ihre Clients innerhalb einer Baseline für die Wartung halten möchten, die für ein Jahr über die Veröffentlichung der nächsten Baseline für die Wartung hinaus mit Wartungsupdates unterstützt wird. Dies ermöglicht Entwicklern und Administratoren mehr Flexibilität bei der Übernahme der neuen Features, Bugfixes oder Komponenten, die in neuen kleineren Updates enthalten sind. Die erste Baseline für die Wartung ist 16.0.x. Weitere Informationen finden Sie unter [Supportoptionen für Enterprise- und Professional-Kunden](https://docs.microsoft.com/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers).
 
 ## <a name="how-to-get-onto-a-servicing-baseline"></a>So gelangen Sie in eine Baseline für die Wartung
 

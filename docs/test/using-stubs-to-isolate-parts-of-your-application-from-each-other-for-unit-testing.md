@@ -1,5 +1,5 @@
 ---
-title: Verwenden von Stubs, um Teile der Anwendung für Unittests zu isolieren
+title: Verwenden von Stubs, um Teile der App für Tests zu isolieren
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: gewarren
@@ -10,12 +10,12 @@ author: gewarren
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 08631af916947021f37bfb3c73b821ba37e3b462
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b88905df0c99eb66c64e529610d6713801fceece
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961968"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401715"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Verwenden von Stubs, um für Komponententests Teile der Anwendung voneinander zu trennen
 
@@ -228,9 +228,9 @@ class TestMyComponent
     public void TestVariableContosoPrice()
     {
         // Arrange:
-        int priceToReturn;
-        string companyCodeUsed;
-        var componentUnderTest = new StockAnalyzer(new StubIStockFeed()
+        int priceToReturn = 345;
+        string companyCodeUsed = "";
+        var componentUnderTest = new StockAnalyzer(new StockAnalysis.Fakes.StubIStockFeed()
             {
                GetSharePriceString = (company) =>
                   {
@@ -240,8 +240,6 @@ class TestMyComponent
                      return priceToReturn;
                   };
             };
-        // Set the value that will be returned by the stub:
-        priceToReturn = 345;
 
         // Act:
         int actualResult = componentUnderTest.GetContosoPrice();
@@ -263,7 +261,7 @@ Class TestMyComponent
     <TestMethod()> _
     Public Sub TestVariableContosoPrice()
         ' Arrange:
-        Dim priceToReturn As Integer
+        Dim priceToReturn As Integer = 345
         Dim companyCodeUsed As String = ""
         Dim stockFeed As New StockAnalysis.Fakes.StubIStockFeed()
         With stockFeed
@@ -278,8 +276,6 @@ Class TestMyComponent
         End With
         ' Create an object to test:
         Dim componentUnderTest As New StockAnalyzer(stockFeed)
-        ' Set the value that will be returned by the stub:
-        priceToReturn = 345
 
         ' Act:
         Dim actualResult As Integer = componentUnderTest.GetContosoPrice()
@@ -316,7 +312,7 @@ var stub = new StubIMyInterface ();
 stub.MyMethodString = (value) => 1;
 ```
 
-Wenn Sie keinen Stub für eine Funktion bereitstellen, generiert Fakes eine Funktion, die den Standardwert des Rückgabetyps zurückgibt. Für Zahlen lautet der Standardwert 0, und für Klassentypen lautet er `null` (C#) oder `Nothing` (Visual Basic).
+Wenn Sie keinen Stub für eine Funktion bereitstellen, generiert Fakes eine Funktion, die den Standardwert des Rückgabetyps zurückgibt. Bei Zahlen ist der Standardwert 0, bei Klassentypen `null` (C#) oder `Nothing` (Visual Basic).
 
 ### <a name="properties"></a>Eigenschaften
 
@@ -340,7 +336,7 @@ stub.ValueGet = () => i;
 stub.ValueSet = (value) => i = value;
 ```
 
-Wenn Sie keine Stubmethoden für den Setter oder Getter einer Eigenschaft bereitstellen, generiert Fakes einen Stub, der Werte speichert, sodass die Stubeigenschaft als einfache Variable funktioniert.
+Wenn Sie keine Stubmethoden für den Setter oder den Getter einer Eigenschaft bereitstellen, generiert Fakes einen Stub, der Werte speichert, sodass die Stubeigenschaft wie eine einfache Variable funktioniert.
 
 ### <a name="events"></a>Ereignisse
 
@@ -408,7 +404,7 @@ In den vorherigen Beispielen wurden die Stubs aus Schnittstellen generiert. Sie 
     }
 ```
 
-Im Stub, der aus dieser Klasse generiert wird, können Sie Delegatenmethoden für DoAbstract() und DoVirtual(), jedoch nicht für DoConcrete() festlegen.
+In dem Stub, der aus dieser Klasse generiert wird, können Sie Delegatmethoden für `DoAbstract()` und `DoVirtual()`, aber nicht für `DoConcrete()` festlegen.
 
 ```csharp
 // unit test
@@ -437,9 +433,9 @@ Die Stub-Typen wurden entwickelt, um einen reibungslosen Debugvorgang zu gewähr
 
 ## <a name="stub-limitations"></a>Einschränkungen für Stubs
 
-1. Methodensignaturen mit Zeigern werden nicht unterstützt.
+- Methodensignaturen mit Zeigern werden nicht unterstützt.
 
-2. Für versiegelte Klassen oder statische Methoden kann kein Stub ausgeführt werden, da Stub-Typen auf dem Dispatch von virtuellen Methoden basieren. Verwenden Sie in solchen Fällen Shim-Typen, so wie in [Verwenden von Shims, um für Komponententests die Anwendung von anderen Assemblys zu trennen](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md) beschrieben.
+- Für versiegelte Klassen oder statische Methoden kann kein Stub ausgeführt werden, da Stub-Typen auf dem Dispatch von virtuellen Methoden basieren. Verwenden Sie in solchen Fällen Shim-Typen, so wie in [Verwenden von Shims, um für Komponententests die Anwendung von anderen Assemblys zu trennen](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md) beschrieben.
 
 ## <a name="change-the-default-behavior-of-stubs"></a>Ändern des Standardverhaltens von Stubs
 

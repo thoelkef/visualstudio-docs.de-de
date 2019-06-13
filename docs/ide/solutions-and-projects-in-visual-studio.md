@@ -3,32 +3,29 @@ title: Projektmappen und Projekte
 ms.date: 10/05/2017
 ms.topic: conceptual
 f1_keywords:
-- vs.addnewsolutionitem
-- vs.environment.projects
-- vs.openproject
 - vs.addnewitem
+- vs.addnewsolutionitem
+- vs.openproject
 - vs.addexistingitem
-- VS.SolutionExplorer
 - vs.addexistingsolutionitem
+- vs.environment.projects
 - vs.environment.solutions
+- VS.SolutionExplorer
 - VS.SolutionExplorer.Solutions
 helpviewer_keywords:
-- solution items [Visual Studio]
 - solutions [Visual Studio]
-- project items [Visual Studio]
-- solutions [Visual Studio], designing
 - projects [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0116a8c4fa6326a1176c132aef59a789daabffca
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 42a8dbc2fd9a6fc89b0be62271b048f8275a82b2
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461532"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432198"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Projektmappen und Projekte in Visual Studio
 
@@ -64,17 +61,21 @@ Visual Studio speichert die Einstellungen von Projektmappen in zwei Dateitypen (
 
 ## <a name="create-new-projects"></a>Neue Projekte erstellen
 
-Ein neues Projekt lässt sich am einfachsten über eine Projektvorlage für einen bestimmten Anwendungs- oder Websitetyp erstellen. Eine Projektvorlage besteht aus mehreren grundlegenden und vorab generierten Codedateien, Konfigurationsdateien, Objekten und Einstellungen. Diese Vorlagen finden Sie in dem Dialogfeld, in dem Sie ein neues Projekt erstellen (**Datei** > **Neu** > **Projekt**). Weitere Informationen finden Sie unter [Erstellen von Projekten und Projektmappen](../ide/creating-solutions-and-projects.md).
+Ein neues Projekt lässt sich am einfachsten über eine Projektvorlage für einen bestimmten Anwendungs- oder Websitetyp erstellen. Eine Projektvorlage besteht aus mehreren grundlegenden und vorab generierten Codedateien, Konfigurationsdateien, Objekten und Einstellungen. Diese Vorlagen finden Sie in dem Dialogfeld, in dem Sie ein neues Projekt erstellen (**Datei** > **Neu** > **Projekt**). Weitere Informationen finden Sie unter [Erstellen eines neuen Projekts in Visual Studio](create-new-project.md) und [Erstellen von Projektmappen und Projekten](../ide/creating-solutions-and-projects.md).
 
-Sie können auch benutzerdefinierte Projekte und Elementvorlagen erstellen. Weitere Informationen finden Sie unter [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md).
+Wenn Sie Ihre Projekte häufig auf eine bestimmte Weise anpassen, können Sie eine benutzerdefinierte Projektvorlage erstellen, die Sie dann zum Erstellen neuer Projekte verwenden können. Weitere Informationen finden Sie unter [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md).
 
-Wenn Sie ein neues Projekt erstellen, wird es standardmäßig unter *%USERPROFILE%\source\repos* gespeichert. Sie können diesen Speicherort in der Einstellung **Speicherort der Projekte** unter **Extras** > **Optionen** > **Projekte und Projektmappen** > **Speicherorte** anpassen. Weitere Informationen finden Sie auf der Seite [„Projekte und Projektmappen“, Dialogfeld „Optionen“](../ide/reference/projects-and-solutions-options-dialog-box.md).
+Wenn Sie ein neues Projekt erstellen, wird es standardmäßig unter *%USERPROFILE%\source\repos* gespeichert. Sie können diesen Speicherort in der Einstellung **Projektspeicherort** unter **Extras** > **Optionen** > **Projekte und Projektmappen** > **Speicherorte** ändern. Weitere Informationen finden Sie auf der Seite [„Projekte und Projektmappen“, Dialogfeld „Optionen“](../ide/reference/projects-and-solutions-options-dialog-box.md).
 
-## <a name="manage-projects-in-solution-explorer"></a>Verwalten von Projekten im Projektmappen-Explorer
+## <a name="solution-explorer"></a>Projektmappen-Explorer
 
 Nachdem Sie ein neues Projekt erstellt haben, können Sie mit dem **Projektmappen-Explorer** Projekte und Projektmappen sowie zugehörige Elemente anzeigen und verwalten. Die folgende Abbildung zeigt den **Projektmappen-Explorer** mit einer C#-Projektmappe, die zwei Projekte enthält:
 
 ![Projektmappen-Explorer](../ide/media/vs2015_solution_explorer.png)
+
+Viele Menübefehle sind über das Kontextmenü verschiedener Elemente im **Projektmappen-Explorer** verfügbar. Diese Befehle umfassen das Erstellen eines Projekts, das Verwalten von NuGet-Paketen, das Hinzufügen einer Referenz, das Umbenennen einer Datei und das Ausführen von Tests, um nur einige zu nennen. Die Symbolleiste oben im **Projektmappen-Explorer** bietet Schaltflächen, mit denen Sie von einer Projektmappenansicht zu einer Ordneransicht wechseln, ausgeblendete Dateien anzeigen, alle Knoten reduzieren und viele weitere Aktionen ausführen können.
+
+Bei ASP.NET Core-Projekten können Sie die Schachtelung von Dateien im **Projektmappen-Explorer** anpassen. Weitere Informationen finden Sie unter [Anpassen der Dateischachtelung im Projektmappen-Explorer](file-nesting-solution-explorer.md).
 
 ## <a name="see-also"></a>Siehe auch
 

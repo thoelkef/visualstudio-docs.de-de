@@ -7,12 +7,12 @@ ms.date: 2/13/2019
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie den Vorteil „Technischer Support“ aktivieren, der in Ihrem Visual Studio-Abonnement enthalten ist.
 searchscope: VS Subscription
-ms.openlocfilehash: 5464157d27833781edbcbe041d17ad5ecab5eebb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9b0d4c829f2ff6605885a26eec0a3ebd34282dd
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811476"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402032"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktivieren und Verwenden des Vorteils „Technischer Support“ in Visual Studio-Abonnements
 
@@ -90,6 +90,9 @@ Wenn Sie einen Incident online einreichen, werden Sie zunächst aufgefordert, si
 
    > [!div class="mx-imgBorder"]
    > Screenshot: ![Technischer Support-Vorteil-Einreichung: Plan auswählen](_img/vs-tech-support/vs-tech-support-choose-plan.png)
+
+   > [!NOTE]
+   > Wenn Ihr Supportplan nicht angezeigt wird, kehren Sie zur vorherigen Seite zurück, und klicken Sie erneut auf **Weiter**.  Wenn der Supportplan weiterhin nicht angezeigt wird, kopieren Sie den Text Ihres Supportproblems in die Zwischenablage, aktualisieren Sie die Seite, und erstellen Sie das Supportproblem erneut.
 
 6. Befolgen Sie die verbleibenden Schritte (Schweregrad, Kontaktinformationen, Review).   Nachdem Sie Ihren Incident eingereicht haben, erhalten Sie eine Bestätigung, dass Ihr Incident erfolgreich eingereicht wurde, und dass Sie Dateien zum Fall hochladen können. Daraufhin wird dem Incident ein Supportmitarbeiter zugewiesen, der Sie über die von Ihnen gewählte Kontaktmethode zum Lösen des Problems kontaktieren wird.
 
