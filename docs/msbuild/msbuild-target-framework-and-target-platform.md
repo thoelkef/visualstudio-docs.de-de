@@ -8,38 +8,38 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ff626078296c61d5f2588434942d4016cba0c1e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9760dbf4fd2eabb43e88e0b99858eba3e09c8fb5
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004621"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747404"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild-Zielframework und -Zielplattform
 Ein Projekt kann erstellt werden, um in einem *Zielframework*, bei dem es sich um eine bestimmte Version von .NET Framework handelt, und auf einer *Zielplattform*, bei der es sich um eine bestimmte Softwarearchitektur handelt, ausgeführt zu werden.  Beispielsweise können Sie eine Anwendung für die Ausführung in .NET Framework 2.0 auf einer 32-Bit-Plattform entwickeln, die mit der 802x86-Prozessorfamilie kompatibel ist („x86“). Die Kombination von Zielframework und Zielplattform wird als *Zielkontext* bezeichnet.
 
 ## <a name="target-framework-and-profile"></a>Zielframework und -profil
- Ein Zielframework ist eine bestimmte Version von [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], in der das Projekt ausgeführt werden kann. Die Angabe eines Zielframeworks ist erforderlich, da es Compilerfunktionen und Assemblyverweise ermöglicht, die nur für diese Version des Frameworks gelten.
+ Ein Zielframework ist eine bestimmte Version von .NET Framework, die Ihr Projekt erstellt wird, führen Sie auf. Die Angabe eines Zielframeworks ist erforderlich, da es Compilerfunktionen und Assemblyverweise ermöglicht, die nur für diese Version des Frameworks gelten.
 
  Derzeit werden die folgenden Versionen von .NET Framework unterstützt:
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 2.0 (enthalten in Visual Studio 2005)
+- .NET Framework 2.0 (enthalten in Visual Studio 2005)
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 3.0 (enthalten in [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)])
+- .NET Framework 3.0 (enthalten [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)])
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 3.5 (enthalten in [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)])
+- .NET Framework 3.5 (enthalten [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)])
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]4.5.2
+- The .NET Framework 4.5.2
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6 (enthalten in [!INCLUDE[vs_dev14](../misc/includes/vs_dev14_md.md)])
+- .NET Framework 4.6 (enthalten [!INCLUDE[vs_dev14](../misc/includes/vs_dev14_md.md)])
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6.1
+- .NET Framework 4.6.1
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6.2
+- The .NET Framework 4.6.2
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.7
+- The .NET Framework 4.7
 
-- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.7.1
+- The .NET Framework 4.7.1
 
 Die Versionen von .NET Framework unterscheiden sich in der Liste der Assemblys, die als Verweise zur Verfügung stehen. Beispielsweise können Sie Windows Presentation Foundation (WPF)-Anwendungen nur erstellen, wenn Ihr Projekt auf die .NET Framework-Version 3.0 oder höher ausgelegt ist.
 

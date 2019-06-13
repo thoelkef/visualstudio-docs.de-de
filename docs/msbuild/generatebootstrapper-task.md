@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 277463ad717331980988f87cb070815e644a71ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f18b01a6db0068b44ad9c25037e544efa8df35a
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003659"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746590"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper-Aufgabe
 Bietet eine automatisierte Methode zum Erkennen, Herunterladen und Installieren einer Anwendung sowie ihrer erforderlichen Komponenten. Sie dient als einzelner Installer, der den separaten Installer für alle Komponenten integriert, die zu einer Anwendung gehören.
@@ -152,7 +152,7 @@ Im Folgenden werden die Parameter der `GenerateBootstrapper`-Aufgabe beschrieben
 Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Beispiel
-Im folgenden Beispiel wird die Aufgabe `GenerateBootstrapper` zur Installation einer Anwendung verwendet, die [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] als Voraussetzung installiert haben muss.
+Im folgenden Beispiel wird die `GenerateBootstrapper` Task zum Installieren einer Anwendung, die als Voraussetzung installiert .NET Framework 2.0 benötigen.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

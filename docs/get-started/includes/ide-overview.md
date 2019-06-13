@@ -6,12 +6,12 @@ ms.author: gewarren
 author: gewarren
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 9a8fd8ca5081e3353cdbb488da5d43f54275d8da
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 2d0d46a39bed9600ccdc0a7f343accf74378b81e
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65848353"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820899"
 ---
 Die *integrierte Entwicklungsumgebung* für Visual Studio ist eine kreative Startplattform, die Sie verwenden können, um Code erst zu bearbeiten, zu debuggen und zu kompilieren und anschließend eine App zu veröffentlichen. Bei einer integrierten Entwicklungsumgebung (IDE) handelt es sich um ein funktionsreiches Programm, das für viele Aspekte der Softwareentwicklung verwendet werden kann. Neben dem üblichen Editor und Debugger, den die meisten IDEs bereitstellen, enthält Visual Studio Compiler, Codevervollständigungstools, grafische Designer und viele andere Features zur Erleichterung der Softwareentwicklung.
 
@@ -23,7 +23,7 @@ Die *integrierte Entwicklungsumgebung* für Visual Studio ist eine kreative Star
 
 ::: moniker range="vs-2019"
 
-[![](../media/vs-2019/ide-overview.png "Die Visual Studio-IDE")](../media/vs-2019/ide-overview.png#lightbox)
+[![Visual Studio-IDE 2019](../media/vs-2019/ide-overview.png)](../media/vs-2019/ide-overview.png#lightbox)
 
 ::: moniker-end
 

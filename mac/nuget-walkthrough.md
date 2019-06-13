@@ -3,19 +3,19 @@ title: Einschließen eines NuGet-Pakets in Ihr Projekt
 description: In diesem Dokument wird beschrieben, wie ein NuGet-Paket in ein Xamarin-Projekt eingeschlossen wird. Es veranschaulicht das Suchen und Herunterladen von Paketen und bietet eine Einführung in die IDE-Integrationsfunktionen.
 author: conceptdev
 ms.author: crdun
-ms.date: 04/14/2017
+ms.date: 04/24/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 9f96354d9e460cebd81f52712f74dc6226f8706d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7ac4a10160a1273dd7766e880dfcf7f06bf64668
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65692328"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820611"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Einschließen eines NuGet-Pakets in Ihr Projekt
 
-NuGet ist der beliebteste Paket-Manager für die .NET-Entwicklung und ist in Visual Studio für Mac und Visual Studio für Windows integriert. Sie können nach Paketen suchen und diese zu Ihren Xamarin-Projekten für iOS und Android mithilfe beider IDEs hinzufügen.
+NuGet ist der beliebteste Paket-Manager für die .NET-Entwicklung und ist in Visual Studio für Mac und Visual Studio für Windows integriert. Sie können Suchen und Hinzufügen von Paketen zu Ihrer Xamarin, .NET Core- und ASP.NET Projekte, die mithilfe einer der IDEs.
 
 Dieser Artikel befasst sich mit dem Einschließen eines NuGet-Pakets in ein Projekt und veranschaulicht die Toolkette, durch die der Prozess nahtlos abläuft.
 
@@ -31,7 +31,7 @@ Erstellen Sie zunächst ein Projekt namens `HelloNuget`, wie unten gezeigt. Dies
 
 ## <a name="adding-a-package"></a>Hinzufügen eines Pakets
 
-Wenn das Projekt in Visual Studio für Mac geöffnet ist, klicken Sie mit der rechten Maustaste auf den Ordner **Pakete** im **Projektmappenpad**, und klicken Sie dann auf **Pakete hinzufügen**:
+Das Projekt in Visual Studio für Mac, mit der rechten Maustaste auf die **Pakete** Ordner in der **Lösungspad** , und wählen Sie **NuGet-Pakete hinzufügen**:
 
 ![Kontextaktion für das Hinzufügen eines neuen NuGet-Pakets](media/nuget-walkthrough-PackagesMenu.png)
 
@@ -43,9 +43,9 @@ Wenn das Fenster geöffnet ist, wird eine Liste von Paketen aus der Standardpake
 
 ![Liste von NuGet-Paketen](media/nuget-walkthrough-AddPackages1.png)
 
-Verwenden Sie das Suchfeld in der oberen rechten Ecke, um ein bestimmtes Paket, zum Beispiel  `azure`, zu suchen. Wenn Sie ein Paket gefunden haben, das Sie verwenden möchten, wählen Sie es aus, und klicken Sie auf die Schaltfläche  **Paket hinzufügen** , um die Installation zu starten.
+Verwenden Sie das Suchfeld in der oberen rechten Ecke, um ein bestimmtes Paket, zum Beispiel  `azure mobile`, zu suchen. Wenn Sie ein Paket, die Sie verwenden möchten gefunden haben, wählen Sie ihn, und klicken Sie auf die **Paket hinzufügen** Schaltfläche, um die Installation zu beginnen.
 
-[Add Azure NuGet Package (Hinzufügen eines Azure-NuGet-Pakets)](media/nuget-walkthrough-AddPackages2.png)
+![Azure-NuGet-Paket hinzufügen](media/nuget-walkthrough-AddPackages2.png)
 
 Sobald das Paket heruntergeladen wurde, wird es Ihrem Projekt hinzugefügt. Die Projektmappe wird sich wie folgt ändern:
 
@@ -77,9 +77,9 @@ Klicken Sie mit der rechten Maustaste auf **Pakete**, um auf das Kontextmenü zu
 
 ![Paketmenü](media/nuget-walkthrough-PackagesMenu.png)
 
-* **Pakete hinzufügen**: Öffnet das Fenster, um dem Projekt weitere Pakete hinzuzufügen.
-* **Aktualisieren**: Überprüft den Quellserver auf jedes Paket und lädt neuere Versionen herunter.
-* **Wiederherstellen**: Lädt fehlende Pakete herunter (ohne bestehende Pakete auf neuere Versionen zu aktualisieren).
+*   **Hinzufügen von NuGet-Paketen** -Öffnet das Fenster, um das Projekt weitere Pakete hinzufügen.
+*   **Aktualisieren**: Überprüft den Quellserver auf jedes Paket und lädt neuere Versionen herunter.
+*   **Wiederherstellen**: Lädt fehlende Pakete herunter (ohne bestehende Pakete auf neuere Versionen zu aktualisieren).
 
 Die Optionen „Aktualisieren“ und „Wiederherstellen“ sind auch auf Projektmappenebene verfügbar und wirken sich auf alle Projekte in der Projektmappe aus.
 

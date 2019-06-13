@@ -18,15 +18,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b836a0fef26f34e83f7238ebe4f6c64731b84257
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0d7bf2432e37278c924d1604e735feec7b848b01
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977668"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747554"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath-Aufgabe
-Ruft den Pfad zur [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Assembly ab
+Ruft den Pfad zum .NET Framework-Assemblys ab.
 
 ## <a name="task-parameters"></a>Aufgabenparameter
 In der folgenden Tabelle werden die Parameter der `GetFrameworkPath` -Aufgabe beschrieben.
@@ -41,12 +41,12 @@ In der folgenden Tabelle werden die Parameter der `GetFrameworkPath` -Aufgabe be
 |`Path`|Optionaler `String`-Ausgabeparameter.<br /><br /> Enthält den Pfad zu den neuesten Frameworkassemblys, sofern diese verfügbar sind. Andernfalls wird `null` zurückgegeben.|
 
 ## <a name="remarks"></a>Anmerkungen
-Wenn mehrere Versionen von [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] installiert sind, gibt diese Aufgabe die Version zurück, in der [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ausgeführt werden soll.
+Wenn mehrere Versionen von .NET Framework installiert sind, diese Aufgabe gibt der Version, die [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] dient für die Ausführung auf.
 
 Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Beispiel
-Im folgenden Beispiel wird mit der Aufgabe `GetFrameworkPath` der Pfad zu [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] in der `FrameworkPath`-Eigenschaft gespeichert.
+Im folgenden Beispiel wird die `GetFrameworkPath` Aufgabe zum Speichern des Pfads zu .NET Framework in der `FrameworkPath` Eigenschaft.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

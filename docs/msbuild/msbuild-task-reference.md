@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55884fe34fda7f29370439d8a792a595763292b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ed0f396613cea4ec2b6d9869e3ef1b121cac236b
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004765"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747372"
 ---
 # <a name="msbuild-task-reference"></a>Referenz zu MSBuild-Tasks
 
@@ -169,7 +169,7 @@ Zusätzlich zu den Parametern, die in den Themen in diesem Abschnitt aufgeführt
 
 - [GetFrameworkPath-Aufgabe](../msbuild/getframeworkpath-task.md)
 
- Ruft den Pfad zur [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Assembly ab
+ Ruft den Pfad zum .NET Framework-Assemblys ab.
 
 - [GetFrameworkSdkPath-Aufgabe](../msbuild/getframeworksdkpath-task.md)
 

@@ -10,12 +10,12 @@ author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95ed8806844781bdaab4d97d63cb1b7ef324dd7b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8bf4cea6dcd87b8cf0d2113ac3a245163ba89080
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976239"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746914"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Befehlszeilenoptionen für VSTest.Console.exe
 
@@ -41,7 +41,7 @@ In der folgenden Tabelle werden sämtliche Optionen für *VSTest.Console.exe* mi
 |**/UseVsixExtensions**|Durch diese Option werden in dem *vstest.console.exe*-Prozess die VSIX-Erweiterungen verwendet oder übersprungen, die im Testlauf (ggf.) installiert wurden.<br />Diese Option ist veraltet. Ab der nächsten Hauptversion von Visual Studio ist diese Option möglicherweise nicht mehr verfügbar. Fahren Sie mit der Verarbeitung der Erweiterungen fort, die in Form eines NuGet-Pakets verfügbar gemacht wurden.<br />Ein Beispiel: `/UseVsixExtensions:true`|
 |**/TestAdapterPath:[*Pfad*]**|Erzwingt, dass der *vstest.console.exe*-Prozess im Testlauf (ggf.) benutzerdefinierte Testadapter aus einem angegebenen Pfad verwendet.<br />Ein Beispiel: `/TestAdapterPath:[pathToCustomAdapters]`|
 |**/Platform:[*Plattformtyp*]**|Zielplattformarchitektur für die Testausführung.<br />Gültige Werte sind x86, x64 und ARM.|
-|**/Framework: [*Frameworkversion*]**|.NET Framework-Zielversion, in der der Test ausgeführt wird.<br />Gültige Werte sind Framework35, Framework40, Framework45 und FrameworkUap10.<br />Wenn als Zielframework **Framework35** angegeben ist, werden die Tests in CLR 4.0 im „Kompatibilitätsmodus“ ausgeführt.<br />Ein Beispiel: `/Framework:framework40`|
+|**/Framework: [*Frameworkversion*]**|.NET-Zielversion für die testausführung verwendet werden.<br />Gültige Werte sind Framework35, Framework40, Framework45 und FrameworkUap10.<br />Wenn als Zielframework **Framework35** angegeben ist, werden die Tests in CLR 4.0 im „Kompatibilitätsmodus“ ausgeführt.<br />Ein Beispiel: `/Framework:framework40`|
 |**/TestCaseFilter:[*Ausdruck*]**|Führt Tests aus, die mit dem angegebenen Ausdruck übereinstimmen.<br /><Expression\> ist vom Format <property\>=<value\>[\|<Expression\>].<br />Ein Beispiel: `/TestCaseFilter:"Priority=1"`<br />Ein Beispiel: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />Die Befehlszeilenoption **/TestsCaseFilter** kann nicht zusammen mit der Befehlszeilenoption **/Tests** verwendet werden. <br />Informationen zum Erstellen und Verwenden von Ausdrücken finden Sie unter [TestCase-Filter](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
 |**/?**|Zeigt Nutzungsinformationen an.|
 |**/Logger:[*uri/friendlyname*]**|Geben Sie eine Protokollierung für die Testergebnisse an.<br />Beispiel: Verwenden Sie zum Protokollieren von Ergebnissen in einer Visual Studio-Testergebnisdatei (TRX) **/Logger:trx**.<br />Beispiel: Verwenden Sie TfsPublisher zum Veröffentlichen von Testergebnissen in Team Foundation Server:<br />**/logger:TfsPublisher;**<br />**Collection=<Projekt-URL\>;**<br />**BuildName=<Buildname\>;**<br />**TeamProject=<Projektname\>;**<br />**[;Platform=<Defaults to "Any CPU">]**<br />**[;Flavor=<Defaults to "Debug">]**<br />**[;RunTitle=<title\>]**|
@@ -53,7 +53,7 @@ In der folgenden Tabelle werden sämtliche Optionen für *VSTest.Console.exe* mi
 |**/Blame**|Verfolgt die Tests während ihrer Ausführung und verfolgt, ob der Test-Hostprozess abstürzt, gibt die Testnamen in der Reihenfolge ihrer Ausführung einschließlich des spezifischen Tests aus, der zum Zeitpunkt des Absturzes ausgeführt wurde. Durch diese Ausgabe kann der betreffende Test besser isoliert und weiter diagnostiziert werden. [Weitere Informationen](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md).|
 |**/Diag:[*Dateiname*]**|Schreibt Protokolle zur Diagnoseablaufverfolgung für die angegebene Datei.|
 |**/ResultsDirectory:[*path*]**|Das Verzeichnis mit den Testergebnissen wird am angegebenen Pfad erstellt, falls es noch nicht vorhanden ist.<br />Ein Beispiel: `/ResultsDirectory:<pathToResultsDirectory>`|
-|**/ParentProcessId:[*parentProcessId*]**|Prozess-ID des übergeordneten Prozesses, der für den Start des aktuellen Prozesses verantwortlich ist.|
+|**/ParentProcessId:[*parentProcessId*]**|Prozess-ID des übergeordneten Prozesses zum Starten des aktuellen Prozesses verantwortlich.|
 |**/Port:[*port*]**|Der Port für die Socketverbindung und den Empfang der Ereignismeldungen.|
 |**/Collect:[*dataCollector friendlyName*]**|Aktiviert den Datensammler für den Testlauf. [Weitere Informationen](https://aka.ms/vstest-collect).|
 

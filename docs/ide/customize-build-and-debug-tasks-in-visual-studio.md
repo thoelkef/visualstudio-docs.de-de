@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23888809dd4dfd05058ed71ba8a82e8e532d7e61
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb3ef6eff6da9040fc7e438d8f3271c60897a5ec
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963174"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820301"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Anpassen von Build- und Debugtasks für die Open Folder-Entwicklung
 
@@ -313,7 +313,7 @@ Aus der *.gitignore*-Datei gelesene Einstellungen werden auf das übergeordnete 
 ## <a name="see-also"></a>Siehe auch
 
 - [Entwickeln von Code in Visual Studio ohne Projekte oder Projektmappen](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
-- [Open Folder-Projekte für C++](/cpp/ide/non-msbuild-projects)
-- [CMake-Projekte in C++](/cpp/ide/cmake-tools-for-visual-cpp)
-- [NMAKE-Referenz](/cpp/build/nmake-reference)
+- [Open Folder-Projekte für C++](/cpp/build/open-folder-projects-cpp)
+- [CMake-Projekte fürC++](/cpp/build/cmake-projects-in-visual-studio)
+- [NMAKE-Referenz](/cpp/build/reference/nmake-reference)
 - [Features des Code-Editors](../ide/writing-code-in-the-code-and-text-editor.md)

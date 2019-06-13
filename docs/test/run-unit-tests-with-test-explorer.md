@@ -1,6 +1,6 @@
 ---
 title: Ausführen und Debuggen von Komponententests mit dem Test-Explorer
-description: Erfahren Sie, wie Sie Tests mit dem Test-Explorer in Visual Studio ausführen. In diesem Artikel wird beschrieben, wie Sie automatische Testläufe nach der Erstellung durchführen, die Testergebnisse anzeigen, die Testliste gruppieren und filtern, Wiedergabelisten erstellen, Tests debuggen und Tastenkombinationen für Tests verwenden.
+description: Informationen Sie zum Ausführen von Tests mit Test-Explorer in Visual Studio. In diesem Artikel wird beschrieben, wie Sie automatische Testläufe nach der Erstellung durchführen, die Testergebnisse anzeigen, die Testliste gruppieren und filtern, Wiedergabelisten erstellen, Tests debuggen und Tastenkombinationen für Tests verwenden.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f151b722b1425024ac2abe81f6d873bf10b01628
-ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
+ms.openlocfilehash: 03ca4a3b247375f18f3889ae7c63b1405ca942a4
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934497"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747776"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ausführen von Komponententests mit dem Test-Explorer
 
@@ -23,7 +23,7 @@ Verwenden Sie den **Test-Explorer** zum Ausführen von Komponententests von Visu
 
 Visual Studio enthält die Komponententest-Frameworks von Microsoft für sowohl verwalteten als auch systemeigenen Code. Im **Test-Explorer** kann jedoch auch jedes Komponententest-Framework mit implementiertem Test-Explorer-Adapter ausgeführt werden. Weitere Informationen zum Installieren von Komponententest-Frameworks von Drittanbietern finden Sie unter [Installieren von Frameworks für Komponententests von Drittanbietern](../test/install-third-party-unit-test-frameworks.md).
 
-Im **Test-Explorer** können Tests aus mehreren Testprojekten in einer Projektmappe und aus Testklassen ausgeführt werden, die Teil der Produktionscodeprojekte sind. Für Testprojekte können verschiedene Komponententest-Frameworks verwendet werden. Wenn der zu testende Code für .NET Framework geschrieben wird, kann das Testprojekt in jeder ebenfalls auf .NET Framework abzielenden Sprache geschrieben werden, unabhängig von der Sprache des Zielcodes. Systemeigene C/C++-Codeprojekte müssen mithilfe eines Komponententest-Frameworks für C++ getestet werden. Weitere Informationen finden Sie unter [Schreiben von Komponententests für C/C++ ](writing-unit-tests-for-c-cpp.md).
+Im **Test-Explorer** können Tests aus mehreren Testprojekten in einer Projektmappe und aus Testklassen ausgeführt werden, die Teil der Produktionscodeprojekte sind. Für Testprojekte können verschiedene Komponententest-Frameworks verwendet werden. Wenn der getestete Code für .NET geschrieben wird, kann das Testprojekt in jeder beliebigen Sprache geschrieben werden, die auf .NET können auch unabhängig von der Sprache für den Zielcode abzielt. Systemeigene C/C++-Codeprojekte müssen mithilfe eines Komponententest-Frameworks für C++ getestet werden. Weitere Informationen finden Sie unter [Schreiben von Komponententests für C/C++ ](writing-unit-tests-for-c-cpp.md).
 
 ## <a name="run-tests-in-test-explorer"></a>Ausführen von Tests im Test-Explorer
 

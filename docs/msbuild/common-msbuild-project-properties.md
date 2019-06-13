@@ -18,17 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56b6890733d00fb650ea611e759c8f8d6a9b2bc5
-ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
+ms.openlocfilehash: 586d28c1e04c7f1e85a077b559586098093812bb
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934527"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745885"
 ---
 # <a name="common-msbuild-project-properties"></a>Gemeinsame MSBuild-Projekteigenschaften
 In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, die in den Visual Studio-Projektdateien definiert oder in den *TARGETS*-Dateien enthalten sind, die von MSBuild bereitgestellt werden.
 
- Projektdateien in Visual Studio (*CSPROJ-*, *VBPROJ-*, *VCXPROJ*-Dateien und andere) enthalten MSBuild-XML-Code, der ausgeführt wird, wenn Sie ein Projekt mithilfe der IDE erstellen. Projekte importieren in der Regel mindestens eine *TARGETS*-Datei, um den entsprechenden Buildprozess zu definieren. Weitere Informationen finden Sie unter [TARGETS-Dateien von MSBuild](../msbuild/msbuild-dot-targets-files.md).
+ Projektdateien in Visual Studio (*CSPROJ-* , *VBPROJ-* , *VCXPROJ*-Dateien und andere) enthalten MSBuild-XML-Code, der ausgeführt wird, wenn Sie ein Projekt mithilfe der IDE erstellen. Projekte importieren in der Regel mindestens eine *TARGETS*-Datei, um den entsprechenden Buildprozess zu definieren. Weitere Informationen finden Sie unter [TARGETS-Dateien von MSBuild](../msbuild/msbuild-dot-targets-files.md).
 
 ## <a name="list-of-common-properties-and-parameters"></a>Liste häufig verwendeter Eigenschaften und Parameter
 
@@ -69,7 +69,7 @@ In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, di
 | FrameworkPathOverride | Gibt den Speicherort von *mscorlib.dll* und *microsoft.visualbasic.dll* an. Dieser Parameter entspricht der `/sdkpath`-Option des Compilers *vbc.exe*. |
 | GenerateDocumentation | (Nur Visual Basic ) Ein boolescher Parameter, der angibt, ob eine Dokumentation vom Build generiert wird. Wenn der Wert `true` lautet, werden Dokumentationsinformationen vom Build generiert und zusammen mit dem Namen der ausführbaren Datei oder der Bibliothek, die von der Buildaufgabe erstellt wurde, in einer *XML*-Datei gespeichert. |
 | GenerateSerializationAssemblies | Gibt an, ob das XML-Serialisierungsassemblys durch *SGen.exe* generiert werden soll. Die Ausführung kann automatisiert, aktiviert oder deaktiviert werden. Diese Eigenschaft wird für Assemblys verwendet, deren Ziel nur das .NET Framework ist. Zum Generieren von XML-Serialisierungsassemblys für .NET Standard oder .NET Core-Assemblys verweisen Sie auf das NuGet-Paket *Microsoft.XmlSerializer.Generator*. |
-| IntermediateOutputPath | Der vollständige Zwischenausgabepfad wie von `BaseIntermediateOutputPath` abgeleitet, wenn kein Pfad angegeben wird. Beispiel: *\obj\debug\\*. |
+| IntermediateOutputPath | Der vollständige Zwischenausgabepfad wie von `BaseIntermediateOutputPath` abgeleitet, wenn kein Pfad angegeben wird. Beispiel: *\obj\debug\\* . |
 | KeyContainerName | Der Name des Containers mit dem Schlüssel für einen starken Namen. |
 | KeyOriginatorFile | Der Name der Datei mit dem Schlüssel für einen starken Namen. |
 | MSBuildProjectExtensionsPath | Gibt den Pfad an, unter dem Projekterweiterungen gespeichert sind. Standardmäßig entspricht dies dem Wert von `BaseIntermediateOutputPath`. |
@@ -118,7 +118,7 @@ In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, di
 | Satellite_Win32Resource | Fügt eine Win32-Ressource (*RES*-Datei) in die Satellitenassembly ein. |
 | SubsystemVersion | Gibt die mindestens erforderliche Version des Subsystems an, die die generierte ausführbare Datei verwenden kann. Diese Eigenschaft entspricht dem `/subsystemversion`-Compilerschalter. Informationen zum Standardwert dieser Eigenschaft finden Sie unter [/subsystemversion (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/subsystemversion) oder [/subsystemversion (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/subsystemversion-compiler-option). |
 | TargetCompactFramework | Die Version von .NET Compact Framework, die zur Ausführung der zu erstellenden Anwendung erforderlich ist. Durch diese Angabe können Sie auf bestimmte Frameworkassemblys verweisen, auf die andernfalls möglicherweise nicht verwiesen werden kann. |
-| TargetFrameworkVersion | Die Version von [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], die zum Ausführen der zu erstellenden Anwendung erforderlich ist. Durch diese Angabe können Sie auf bestimmte Frameworkassemblys verweisen, auf die andernfalls möglicherweise nicht verwiesen werden kann. |
+| TargetFrameworkVersion | Die Version von .NET Framework, die erforderlich sind, um die Anwendung auszuführen, die Sie erstellen. Durch diese Angabe können Sie auf bestimmte Frameworkassemblys verweisen, auf die andernfalls möglicherweise nicht verwiesen werden kann. |
 | TreatWarningsAsErrors | Ein boolescher Parameter. Wenn sein Wert `true` lautet, werden alle Warnungen als Fehler behandelt. Dieser Parameter entspricht dem `/nowarn`-Compilerschalter. |
 | UseHostCompilerIfAvailable | Ein boolescher Parameter. Wenn sein Wert `true` lautet, verwendet die Buildaufgabe das prozessinterne Compilerobjekt, falls es verfügbar ist. Dieser Parameter wird nur von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verwendet. |
 | Utf8Output | Ein boolescher Parameter. Wenn sein Wert `true` lautet, wird die Compilerausgabe mithilfe der UTF-8-Codierung protokolliert. Dieser Parameter entspricht dem `/utf8Output`-Compilerschalter. |

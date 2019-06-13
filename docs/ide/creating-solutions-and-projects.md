@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6f6bd03a47500c127360afd2d2a6ae6b62ee2e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 74694528f6380896d47b9665d9e617098ef28620
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793551"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746870"
 ---
 # <a name="create-solutions-and-projects"></a>Erstellen von Projektmappen und Projekten
 
@@ -61,11 +61,11 @@ Dateien, die für mehrere Projekt gelten, wie Infodateien zur Projektmappe oder 
 
 ## <a name="create-a-net-project-that-targets-a-specific-version-of-the-net-framework"></a>Erstellen eines .NET-Projekts, das für eine bestimmte Version von .NET Framework vorgesehen ist
 
-Bei der Erstellung eines Projekts können Sie angeben, welche Version von .NET Framework Sie verwenden möchten.
+Wenn Sie ein Projekt .NET Framework erstellen, können Sie eine bestimmte Version von .NET Framework angeben, die Sie verwenden möchten. (Wenn Sie ein .NET Core-Projekt erstellen, keine Framework-Version angeben.)
 
 ::: moniker range="vs-2017"
 
-Wählen Sie das **Framework**-Dropdownmenü im Dialogfeld **Neues Projekt** aus, um eine .NET Framework-Version anzugeben.
+Um eine .NET Framework-Version anzugeben, wählen die **Framework** Dropdown-Menü in der **neues Projekt** Dialogfeld.
 
 ![Framework-Dropdownliste im Dialogfeld „Neues Projekt“](./media/vside-newproject-framework.png)
 
@@ -76,7 +76,7 @@ Wählen Sie das **Framework**-Dropdownmenü im Dialogfeld **Neues Projekt** aus,
 
 ::: moniker range=">=vs-2019"
 
-Wählen Sie das **Framework**-Dropdownmenü auf der Seite **Neues Projekt erstellen** aus, um eine .NET Framework-Version anzugeben.
+Um eine .NET Framework-Version anzugeben, wählen die **Framework** Dropdown-Menü auf der **Erstellen eines neuen Projekts** Seite.
 
 ![Frameworkauswahl in „Neues Projekt konfigurieren“](media/vs-2019/configure-new-project-framework.png)
 

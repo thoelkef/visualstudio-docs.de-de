@@ -9,14 +9,14 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3287bef750f25f3eb0b816488779d42d4505d8b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b8548fb33e5a4b9156701e12231324e3f59c88f2
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950051"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747243"
 ---
-# <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Vorgehensweise: Erstellen eines Visual Studio-Add-Ins für den Webleistungstest-Ergebnisviewer
+# <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Vorgehensweise: Erstellen Sie ein Add-in für die Webleistungstest-Ergebnisviewer
 
 Sie können die Benutzeroberfläche für den **Webleistungstest-Ergebnisviewer** mit den folgenden Namespaces erweitern:
 
@@ -256,9 +256,9 @@ Das in der vorherigen Prozedur erstellte Visual Studio-Add-In verweist auf ein W
 
 1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Knoten des Projekts „WebPerfTestResultsViewerControl“, und wählen Sie **Eigenschaften** aus.
 
-2. Klicken Sie auf die Registerkarte **Anwendung**, dann auf die Dropdownliste **Zielframework**, und wählen Sie **.NET Framework 4** aus. Schließen Sie anschließend die **Eigenschaften**.
+2. Wählen Sie die **Anwendung** Registerkarte, und wählen Sie dann die **Zielframework** Dropdown-Liste, und wählen **.NET Framework 4** (oder höher). Schließen der **Eigenschaften** Fenster.
 
-     Dies ist erforderlich, damit die DLL-Verweise unterstützt werden, die zum Erweitern des **Webleistungstestergebnis-Viewers** erforderlich sind.
+   Dies ist erforderlich, damit die DLL-Verweise unterstützt werden, die zum Erweitern des **Webleistungstestergebnis-Viewers** erforderlich sind.
 
 3. Klicken Sie im **Projektmappen-Explorer** im Projekt „WebPerfTestResultsViewerControl“ mit der rechten Maustaste auf den Knoten **Verweise**, und wählen Sie **Verweis hinzufügen** aus.
 
@@ -300,15 +300,11 @@ Das in der vorherigen Prozedur erstellte Visual Studio-Add-In verweist auf ein W
             }
     ```
 
-## <a name="build-the-webperftestresultsvieweraddin-solution"></a>Erstellen der WebPerfTestResultsViewerAddin-Projektmappe
-
-### <a name="to-build-the-solution"></a>So erstellen Sie die Projektmappe
+## <a name="build-the-solution"></a>Erstellen der Projektmappe
 
 - Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.
 
 ## <a name="register-the-webperftestresultsvieweraddin-add-in"></a>Registrieren des WebPerfTestResultsViewerAddin-Add-Ins
-
-### <a name="to-register-the-add-in-using-the-add-in-manager"></a>So registrieren Sie das Add-In mithilfe des Add-In-Managers
 
 1. Klicken Sie im Menü **Extras** auf **Add-In-Manager**.
 
@@ -318,15 +314,13 @@ Das in der vorherigen Prozedur erstellte Visual Studio-Add-In verweist auf ein W
 
 4. Klicken Sie auf **OK**.
 
-## <a name="run-the-web-performance-test-using-the-build-the-webperftestresultsvieweraddin-add-in"></a>Ausführen des Webleistungstests mithilfe des erstellten WebPerfTestResultsViewerAddin-Add-Ins
-
-### <a name="to-run-the-new-vs-add-in-for-the-web-test-results-viewer"></a>So führen Sie das neue VS-Add-In für die Webtest-Ergebnisansicht aus
+## <a name="run-the-web-performance-test-using-the-web-test-results-viewer"></a>Führen Sie den Webleistungstest, der mit der Web-Ergebnisviewer
 
 1. Führen Sie den Webleistungstest aus. Im **Webleistungstest-Ergebnisviewer** wird die neue Registerkarte „Beispiel“ des WebPerfTestResultsViewerAddin-Add-Ins angezeigt.
 
 2. Wählen Sie die Registerkarte, um die in DataGridView enthaltenen Eigenschaften anzuzeigen.
 
-## <a name="net-framework-security"></a>.NET Framework-Sicherheit
+## <a name="net-security"></a>Sicherheit von .net
 
 Um die Sicherheit dadurch zu optimieren, dass böswillige Add-Ins nicht automatisch aktiviert werden können, stellt Visual Studio im Menü **Extras** auf der Optionsseite **Add-In/Makrosicherheit** entsprechende Einstellungen bereit.
 

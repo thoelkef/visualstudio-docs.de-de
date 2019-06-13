@@ -8,15 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8d7a15f1228d65cf13101811eca47a5cd7401a73
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: a4526bc9b4dde74488d3997bf18006454383cb06
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263509"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747817"
 ---
 # <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Sammeln von Arbeitsspeicherdaten für .NET Framework-Dienste über die Profiler-Befehlszeile
-In diesem Abschnitt werden die Prozeduren und Optionen zum Erfassen von Speicherbelegungs- und Objektlebensdauerdaten für einen [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Dienst mithilfe der Samplingmethode über die Befehlszeile beschrieben.
+Dieser Abschnitt beschreibt die Prozeduren und Optionen zum Sammeln von speicherbelegung und Objektlebensdauer für einen .NET Framework-Dienst, mit der Samplingmethode über die Befehlszeile.
 
 ## <a name="common-tasks"></a>Allgemeine Aufgaben
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: dc3a49c586b7a8f5a67d6c1a3a77d00772698389
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f71e17eae1e728ab755d048daee2c0d156425964
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793408"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747597"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Entwickeln mit Visual F# in Visual Studio
 
@@ -48,7 +48,7 @@ In der folgenden Tabelle sind Features in Projekteigenschaften für F# zusammeng
 |Festlegung von Zielversionen|Ja||
 |Symbol und Manifest|Nein|Über Befehlszeilenoptionen des Compilers verfügbar.|
 |ASP.NET-Clientdienste|Nein||
-|ClickOnce|Nein|Verwenden Sie ggf. ein Clientprojekt in einer anderen .NET Framework-Sprache.|
+|ClickOnce|Nein|Verwenden Sie ein Clientprojekt in einer anderen .NET-Sprache,, falls zutreffend.|
 |Starke Namen|Nein|Über Befehlszeilenoptionen des Compilers verfügbar.|
 |Veröffentlichen einer Assembly und Versionsverwaltung bei einer Assembly|Nein||
 |Codeanalyse|Nein|Codeanalysetools können manuell oder im Rahmen eines Postbuildbefehls ausgeführt werden.|
@@ -60,7 +60,7 @@ Der **Projekt-Designer** enthält mehrere Projekteigenschaftenseiten, die nach v
 
 |Projekt-Designer-Seite|Verwandte Links|Beschreibung|
 | - |-------------|-----------|
-|Anwendung|[Seite „Anwendung“, Projekt-Designer](reference/application-page-project-designer-csharp.md)|Damit können Sie Einstellungen und Eigenschaften auf Anwendungsebene angeben und beispielsweise festlegen, ob Sie eine Bibliothek oder eine ausführbare Datei erstellen, auf welche Version von .NET Framework die Anwendung abzielt. Ferner können Sie Informationen zum Speicherort der von der Anwendung verwendeten Ressourcendateien bereitstellen.|
+|Anwendung|[Seite „Anwendung“, Projekt-Designer](reference/application-page-project-designer-csharp.md)|Können Sie angeben, auf Anwendungsebene Einstellungen und Eigenschaften, z. B., ob Sie eine Bibliothek oder eine ausführbare Datei, welche Version von .NET erstellen, die Anwendung ausgerichtet ist, und Informationen, die von der Anwendung verwendeten Dateien gespeichert sind.|
 |Build|[Seite „Erstellen“, Projekt-Designer](reference/build-page-project-designer-csharp.md)|Damit können Sie festlegen, wie der Code kompiliert wird.|
 |Buildereignisse|[Seite „Buildereignisse“, Projekt-Designer](reference/build-events-page-project-designer-csharp.md)|Damit können Sie Befehle angeben, die vor oder nach dem Kompilieren ausgeführt werden sollen.|
 |Debug|[Seite „Debuggen“, Projekt-Designer](reference/debug-page-project-designer.md)|Damit können Sie festlegen, wie die Anwendung beim Debuggen ausgeführt wird. So legen Sie beispielsweise fest, welche Befehle verwendet werden und welches Verzeichnis als Startverzeichnis für die Anwendung dient. Ferner legen Sie alle Debugmodi fest, die Sie aktivieren möchten, wie etwa den Modus zum Debuggen von nativem Code und SQL.|
@@ -89,7 +89,7 @@ Folgende Features der Code- und Text-Editoren von Visual Studio werden in F# unt
 |Einzug ändern|Damit werden ausgewählte Zeilen eingerückt oder ausgerückt.|Ja|
 |Intelligenter Einzug|Damit wird der Cursor automatisch gemäß den F#-Bereichsregeln ein- und ausgerückt.|Ja|
 |[Suchen und Ersetzen von Text](finding-and-replacing-text.md)|Damit können Sie eine Datei, ein Projekt oder eine Projektmappe durchsuchen und ggf. Text ändern.|Ja|
-|Go to definition for .NET Framework API (Zur Definition für .NET Framework-API wechseln)|Wenn der Cursor auf eine .NET Framework-API zeigt, wird der aus .NET Framework-Metadaten generierte Code angezeigt.|Nein|
+|Gehe zu Definition für die .NET API|Wenn der Cursor in eine .NET API positioniert ist, zeigt Code aus .NET Metadaten generiert.|Nein|
 |Go to definition for user-defined API (Zur Definition für benutzerdefinierte API wechseln)|Wenn sich der Cursor auf einer Programmentität befindet, die Sie definiert haben, wird der Cursor an die Stelle in Ihrem Code verschoben, an der die Entität definiert wird.|Ja|
 |Gehe zu Zeile|Damit können Sie anhand der Zeilennummer zu einer bestimmten Zeile in einer Datei wechseln.|Ja|
 |Navigation bars at top of file (Navigationsleisten oben in der Datei)|Damit können Sie beispielsweise anhand des Funktionsnamens an bestimmte Stellen im Code springen.|Ja|
@@ -135,7 +135,7 @@ In der folgenden Tabelle sind die Features zusammengefasst, die beim Debuggen vo
 
 |Feature|Beschreibung|In F# unterstützt?|
 |-------|-----------|----------------|
-|Fenster |Zeigt automatische oder temporäre Variablen an.|Nein|
+|Fenster|Zeigt automatische oder temporäre Variablen an.|Nein|
 |Haltepunkte|Damit können Sie beim Debuggen die Codeausführung an bestimmten Punkten anhalten.|Ja|
 |Bedingte Haltepunkte|Aktiviert Breakpoints, mit denen eine Bedingung geprüft wird, die bestimmt, ob die Ausführung angehalten wird.|Ja|
 |Bearbeiten und Fortfahren|Ermöglicht beim Debuggen eines aktiven Programms das Ändern und Kompilieren von Code, ohne den Debugger zu beenden und neu zu starten.|Nein|

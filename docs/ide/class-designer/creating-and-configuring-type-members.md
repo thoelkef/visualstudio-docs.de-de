@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39932fe8d4afa31c66d6daa4af33d963b5612eb2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fcfab3a14e8dfab6bdfb62b32839ebcbd69d21af
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975540"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746924"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Erstellen und Konfigurieren von Typmembern im Klassen-Designer
 
@@ -308,7 +308,7 @@ Wenn Sie versuchen, ein Projekt zu speichern, das einen Typ enthält, dessen Que
 
 Weist eine Codedatei einen Syntaxfehler auf, werden die Formen, die den Code in der Datei anzeigen, so lange mit Schreibschutz versehen, bis der Syntaxfehler behoben wird. Formen in diesem Zustand zeigen roten Text und ein rotes Symbol mit der Quickinfo "Die Quellcodedatei enthält einen Analysefehler" an.
 
-Ein Typ, auf den verwiesen wird (z. B. ein .NET Framework-Typ) und der unter einem anderen Projektknoten oder unter dem Knoten einer Assembly, auf die verwiesen wird, vorhanden ist, wird auf der Entwurfsoberfläche des Klassen-Designers als schreibgeschützt angezeigt. Ein lokaler Typ im geöffneten Projekt ist mit Lese- und Schreibzugriff versehen, und seine Form wird auf der Entwurfsoberfläche des Klassen-Designers entsprechend angegeben.
+Ein referenzierten Typ (z. B. ein .NET-Typ), die unter einem anderen Projektknoten oder unter einem Knoten referenzierte Assembly vorhanden ist, wird auf die Klassen-Designer-Oberfläche als schreibgeschützt angezeigt. Ein lokaler Typ im geöffneten Projekt ist mit Lese- und Schreibzugriff versehen, und seine Form wird auf der Entwurfsoberfläche des Klassen-Designers entsprechend angegeben.
 
 Indexer sind im Code und im Fenster **Klassendetails** mit Lese- und Schreibzugriff versehen. Der Indexername hingegen ist schreibgeschützt.
 

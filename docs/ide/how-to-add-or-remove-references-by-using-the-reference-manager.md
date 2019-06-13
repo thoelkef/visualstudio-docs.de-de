@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b26c700e90189882f850d4bda1d47fb6f54c025
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 885dee2ca04060042e804ff964636d16e6a725ee
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62548138"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745816"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Vorgehensweise: Hinzufügen und Entfernen von Verweisen mit dem Verweis-Manager
 
@@ -56,11 +56,11 @@ Das Dialogfeld **Verweis-Manager** zeigt die verschiedenen Kategorien je nach Pr
 
 ## <a name="assemblies-tab"></a>Assemblyregisterkarte
 
-Die Registerkarte **Assemblys** führt alle .NET Framework-Assemblys auf, die für Verweise verfügbar sind. Die Registerkarte **Assemblys** führt keine Assemblys aus dem globalen Assemblycache (GAC) auf, da Assemblys im GAC Teil der Laufzeitumgebung sind. Wenn Sie eine Anwendung bereitstellen oder kopieren, die einen Verweis auf eine im globalen Assemblycache registrierte Assembly enthält, wird die Komponente unabhängig von der Einstellung **Lokal kopieren** nicht mit der Anwendung bereitgestellt oder kopiert. Weitere Informationen finden Sie unter [Verwalten von Verweisen in einem Projekt](../ide/managing-references-in-a-project.md).
+Die **Assemblys** Registerkarte führt alle .NET Assemblys, die für Verweise verfügbar sind. Die Registerkarte **Assemblys** führt keine Assemblys aus dem globalen Assemblycache (GAC) auf, da Assemblys im GAC Teil der Laufzeitumgebung sind. Wenn Sie eine Anwendung bereitstellen oder kopieren, die einen Verweis auf eine im globalen Assemblycache registrierte Assembly enthält, wird die Komponente unabhängig von der Einstellung **Lokal kopieren** nicht mit der Anwendung bereitgestellt oder kopiert. Weitere Informationen finden Sie unter [Verwalten von Verweisen in einem Projekt](../ide/managing-references-in-a-project.md).
 
 Wenn Sie einem der EnvDTE-Namespaces (<xref:EnvDTE>, <xref:EnvDTE80>, <xref:EnvDTE90>, <xref:EnvDTE90a> oder <xref:EnvDTE100>) manuell einen Verweis hinzufügen, legen Sie im Fenster **Eigenschaften** die Eigenschaft **Interoptypen einbetten** des Verweises auf **FALSE** fest. Wird diese Eigenschaft auf **TRUE** festgelegt wird, können aufgrund bestimmter EnvDTE-Eigenschaften, die nicht eingebettet werden können, Buildprobleme auftreten.
 
-Alle Desktopprojekte enthalten einen impliziten Verweis auf **mscorlib**. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-Projekte enthalten einen impliziten Verweis auf <xref:Microsoft.VisualBasic>. Alle Projekte enthalten einen impliziten Verweis auf **System.Core**. Dies gilt auch, wenn der Eintrag aus der Liste der Verweise entfernt wird.
+Alle Desktopprojekte enthalten einen impliziten Verweis auf **mscorlib**. Visual Basic-Projekte enthalten einen impliziten Verweis auf <xref:Microsoft.VisualBasic>. Alle Projekte enthalten einen impliziten Verweis auf **System.Core**. Dies gilt auch, wenn der Eintrag aus der Liste der Verweise entfernt wird.
 
 Wenn ein Projekttyp keine Assemblys unterstützt, wird die Registerkarte nicht im Dialogfeld **Verweis-Manager** angezeigt.
 
@@ -68,7 +68,9 @@ Die Registerkarte **Assemblys** besteht aus zwei untergeordneten Registerkarten:
 
 1. In **Framework** werden alle Assemblys aufgelistet, die das Zielframework darstellen.
 
-    Projekte für Windows 8.x Store-Apps enthalten bei Projekterstellung standardmäßig Verweise auf alle Assemblys im verwendeten [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)]. In verwalteten Projekten gibt ein schreibgeschützter Knoten unter dem Ordner **Verweise** im **Projektmappen-Explorer** den Verweis auf das gesamte Framework an. Entsprechend listet die Registerkarte **Framework** keine der Assemblys aus dem Framework auf und zeigt stattdessen die folgende Meldung an: „All of the Framework assemblies are already referenced. Please use the Object Browser to explore the references in the Framework. (Es wird bereits auf alle Frameworkassemblys verwiesen. Verwenden Sie den Objektkatalog, um Verweise im Framework zu durchsuchen“. Für Desktopprojekte werden auf der Registerkarte **Framework** Assemblys aus dem Zielframework aufgezählt, und der Benutzer muss die für die Anwendung erforderlichen Verweise hinzufügen.
+   Für Projekte, die auf .NET Core oder der universellen Windows-Plattform abzielen, nicht die **Framework** Registerkarte Assemblys aus dem Zielframework aufgezählt. Der Benutzer muss alle Verweise hinzufügen, die die Anwendung erforderlich sind.
+
+   Universelle Windows-Projekte enthalten Verweise auf alle Assemblys in der Zielversion von .NET Framework standardmäßig. In verwalteten Projekten gibt ein schreibgeschützter Knoten unter dem Ordner **Verweise** im **Projektmappen-Explorer** den Verweis auf das gesamte Framework an. Entsprechend der **Framework** Registerkarte keine der Assemblys aus dem Framework, sondern zeigt die folgende Meldung: „All of the Framework assemblies are already referenced. Please use the Object Browser to explore the references in the Framework. (Es wird bereits auf alle Frameworkassemblys verwiesen. Verwenden Sie den Objektkatalog, um die Verweise im Framework zu durchsuchen".
 
 2. Unter **Erweiterungen** werden alle Assemblys aufgelistet, die externe Anbieter von Komponenten und Steuerelementen selbst entwickelt haben, um das Zielframework zu erweitern. Abhängig vom Zweck der Benutzeranwendung sind diese Assemblys gegebenenfalls erforderlich.
 
@@ -84,22 +86,20 @@ Die Registerkarte **Assemblys** besteht aus zwei untergeordneten Registerkarten:
 
    Und ältere Versionen des [Zielframeworkbezeichners]
 
-   Wenn ein Projekt .NET Framework 4 als Ziel auf einem 32-Bit-Computer verwendet, listen die **Erweiterungen** Assemblys auf, die unter *\Microsoft\.NETFramework\v4.0\AssemblyFoldersEx*, *\Microsoft\.NETFramework\v3.5\AssemblyFoldersEx*, *\Microsoft\.NETFramework\v3.0\AssemblyFoldersEx* und *\Microsoft\.NETFramework\v2.0\AssemblyFoldersEx* registriert sind.
+   Angenommen, ein Projekt .NET Framework 4 auf einem 32-Bit-Computer abzielt **Erweiterungen** Listet die Assemblys, die unter registriert werden *\Microsoft\.NETFramework\v4.0\AssemblyFoldersEx*, *\Microsoft\.NETFramework\v3.5\AssemblyFoldersEx*, *\Microsoft\.NETFramework\v3.0\AssemblyFoldersEx*, und *\ Microsoft\.NETFramework\v2.0\AssemblyFoldersEx*.
 
-Einige Komponenten in der Liste werden möglicherweise nicht angezeigt. Dies hängt von der .NET Framework-Version des Projekts ab. Dieser Fall kann unter den folgenden Bedingungen eintreten:
+Einige Komponenten in der Liste möglicherweise nicht, abhängig von der Frameworkversion des Projekts angezeigt werden. Dieser Fall kann unter den folgenden Bedingungen eintreten:
 
-- Eine Komponente, für die eine aktuelle Version von .NET Framework verwendet wird, ist nicht kompatibel mit einem Projekt, für das eine frühere Version von .NET Framework als Zielversion festgelegt wurde.
+- Eine Komponente, die eine aktuelle Frameworkversion wird verwendet, ist inkompatibel mit einem Projekt, das eine frühere Version abzielt.
 
-    Informationen zum Ändern der Zielversion von .NET Framework für ein Projekt finden Sie unter [Vorgehensweise: .NET Framework-Version als Ziel](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+   Weitere Informationen zur Vorgehensweise beim Ändern der Framework-Zielversion für ein Projekt finden Sie unter [Vorgehensweise: Frameworkversion als Ziel](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
-- Eine Komponente, für die [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] verwendet wird, ist nicht kompatibel mit einem Projekt, für das als Zielversion [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)] festgelegt wurde.
-
-    Wenn Sie eine neue Anwendung erstellen, wird für einige Projekte standardmäßig als Zielversion [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)] festgelegt.
+- Eine Komponente, die.NET Framework 4 verwendet, ist nicht kompatibel mit einem Projekt, das auf .NET Framework 4.5 abzielt.
 
 Sie sollten keine Dateiverweise auf Ausgaben eines anderen Projekts in derselben Projektmappe hinzufügen, da dies zu Kompilierungsfehlern führen kann. Erstellen Sie Verweise zwischen Projekten stattdessen im Dialogfeld **Verweis hinzufügen** auf der Registerkarte **Projekte**. Dies erleichtert die Entwicklung im Team, da die in den Projekten erstellten Klassenbibliotheken besser verwaltet werden können. Weitere Informationen finden Sie unter [Problembehandlung bei fehlerhaften Verweisen](../ide/troubleshooting-broken-references.md).
 
 > [!NOTE]
-> In Visual Studio 2015 oder höher wird anstelle eines Projektverweises ein Dateiverweis erstellt, wenn die Zielversion von .NET Framework eines Projekts Version 4.5 oder höher ist und die Zielversion des anderen Projekts Version 2, 3, 3.5 oder 4.0 ist.
+> In Visual Studio 2015 oder höher, wird ein Dateiverweis anstelle eines Projektverweises erstellt, wenn die Ziel-Framework-Version eines Projekts .NET Framework 4.5 oder höher ist, und die Zielversion des anderen Projekts .NET Framework 2, 3, 3.5 oder 4.0 ist.
 
 ### <a name="to-display-an-assembly-in-the-add-reference-dialog-box"></a>So zeigen Sie eine Assembly im Dialogfeld "Verweis hinzufügen" an
 
@@ -125,7 +125,7 @@ Sie sollten keine Dateiverweise auf Ausgaben eines anderen Projekts in derselben
 
    - `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   *\<VersionMinimum\>* ist die niedrigste geltende .NET Framework-Version. Wenn *\<VersionMinimum\>* Version 3.0 ist, gelten in *AssemblyFoldersEx* angegebene Ordner für Projekte mit der Zielversion .NET Framework 3.0 und höher.
+   *\<VersionMinimum\>*  ist die niedrigste Frameworkversion, die angewendet wird. Wenn *\<VersionMinimum\>* Version 3.0 ist, gelten in *AssemblyFoldersEx* angegebene Ordner für Projekte mit der Zielversion .NET Framework 3.0 und höher.
 
    *\<AssemblyLocation\>* ist das Verzeichnis der Assemblys, die Sie im Dialogfeld **Verweis hinzufügen** anzeigen möchten, z.B. *C:\MyAssemblies*.
 
@@ -137,13 +137,10 @@ Sie sollten keine Dateiverweise auf Ausgaben eines anderen Projekts in derselben
 
 Die Registerkarte **Projekte** listet alle kompatiblen Projekte innerhalb der aktuellen Projektmappe auf der Unterregisterkarte **Projektmappe** auf.
 
-Ein Projekt kann auf ein anderes Projekt verweisen, das eine andere .NET Framework-Version als Ziel verwendet. Beispielsweise können Sie ein Projekt erstellen, das [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] als Ziel verwendet, jedoch auf eine Assembly verweist, die für .NET Framework 2. erstellt wurde. Das .NET Framework 2-Projekt kann jedoch nicht auf ein [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]-Projekt verweisen. Weitere Informationen finden Sie unter [Übersicht über die Festlegung von mehreren Zielversionen](../ide/visual-studio-multi-targeting-overview.md).
+Ein Projekt kann es sich um ein anderes Projekt verweisen, das eine anderes Framework-Version abzielt. Beispielsweise können Sie ein Projekt, das .NET Framework 4 als Ziel erstellen, jedoch auf verweist eine Assembly, die für .NET Framework 2. erstellt wurde. Allerdings kann nicht das .NET Framework 2-Projekt ein .NET Framework 4-Projekt verweisen. Weitere Informationen finden Sie unter [Übersicht über .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
 
-Ein Projekt, das [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] als Ziel verwendet, ist nicht kompatibel mit einem Projekt, für das als Zielversion [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)] festgelegt wurde.
-
-Falls ein Projekt auf .NET Framework 4 und ein anderes auf eine frühere Version ausgerichtet ist, wird anstelle eines Projektverweises ein Dateiverweis erstellt.
-
-Ein Projekt für [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)] kann einem Projekt, das auf .NET Framework ausgerichtet ist, keinen Projektverweis hinzufügen und umgekehrt.
+> [!NOTE]
+> Ein Projekt, das auf .NET Framework 4 abzielt ist inkompatibel mit einem Projekt, das die .NET Framework 4 Client Profile ausgerichtet ist.
 
 ## <a name="universal-windows-tab"></a>Registerkarte „Universelles Windows“
 
@@ -177,9 +174,9 @@ Wenn ein Projekttyp COM nicht unterstützt, wird die Registerkarte nicht im Dial
 
 Mit der Schaltfläche **Durchsuchen** können Sie nach einer Komponente im Dateisystem suchen.
 
-Ein Projekt kann auf eine Komponente verweisen, die eine andere .NET Framework-Version als Ziel verwendet. Beispielsweise können Sie eine Anwendung mit .NET Framework 4.7 als Ziel erstellen, das auf eine Komponente mit .NET Framework 4 als Zielversion verweist. Weitere Informationen finden Sie unter [Übersicht über die Festlegung von mehreren Zielversionen](../ide/visual-studio-multi-targeting-overview.md).
+Ein Projekt kann es sich um eine Komponente verweisen, die eine anderes Framework-Version abzielt. Sie können z. B. eine Anwendung erstellen, die .NET Framework 4.7 abzielt, aber verweist auf eine Komponente, die auf .NET Framework 4 abzielt. Weitere Informationen finden Sie unter [Übersicht über .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
 
-Sie sollten keine Dateiverweise auf Ausgaben eines anderen Projekts in derselben Projektmappe hinzufügen, da dies zu Kompilierungsfehlern führen kann. Erstellen Sie Verweise zwischen Projekten stattdessen im Dialogfeld **Verweis-Manager** auf der Registerkarte **Projektmappe**. Dies erleichtert die Entwicklung im Team, da die in den Projekten erstellten Klassenbibliotheken besser verwaltet werden können. Weitere Informationen finden Sie unter [Problembehandlung bei fehlerhaften Verweisen](../ide/troubleshooting-broken-references.md).
+Vermeiden Sie die Dateiverweise auf Ausgaben eines anderen Projekts in der gleichen Projektmappe hinzufügen, da dies zu Kompilierungsfehlern führen kann. Erstellen Sie Verweise zwischen Projekten stattdessen im Dialogfeld **Verweis-Manager** auf der Registerkarte **Projektmappe**. Dies erleichtert die Entwicklung im Team, da die in den Projekten erstellten Klassenbibliotheken besser verwaltet werden können. Weitere Informationen finden Sie unter [Problembehandlung bei fehlerhaften Verweisen](../ide/troubleshooting-broken-references.md).
 
 Sie können nicht zu einem SDK navigieren und es dem Projekt hinzufügen. Sie können nur zu einer Datei navigieren (beispielsweise zu einer Assembly oder einer *WINMD*-Datei) und sie dem Projekt hinzufügen.
 
