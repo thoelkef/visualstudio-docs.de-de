@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 173cc6711f46d7fddad92c3ac871809dda100f36
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7c588966a957cf6d3127e03c67ad1a1d605fabce
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704655"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401733"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code
 
@@ -365,9 +365,9 @@ Wenn die beiden Testmethoden ausgeführt werden, deutet dies darauf hin, dass de
 
 ### <a name="continue-the-analysis"></a>Fortführen der Analyse
 
-Die letzten beiden Testmethoden stellen jedoch auch ein Problem dar. Sie können nicht sicher sagen, welche Bedingung der Methode, die getestet wird, die Ausnahme auslöst, wenn beide Methoden ausgeführt werden. Wenn man zwischen den beiden Bedingungen (einem negativen Abbuchungsbetrag und einem Betrag, der größer als das Guthaben ist) unterscheiden könnte, würde das die Tests zuverlässiger machen.
+Die zu testende Methode kann weiter verbessert werden. In der aktuellen Implementierung gibt es keine Möglichkeit, zu erfahren, welche Bedingung (`amount > m_balance` oder `amount < 0`) zu der Ausnahme geführt hat, die während des Tests ausgelöst wurde. Wir wissen nur, dass irgendwo in der Methode eine `ArgumentOutOfRangeException` ausgelöst wurde. Es wäre wünschenswert zu wissen, welche Bedingung in `BankAccount.Debit` das Auslösen der Ausnahme verursacht hat (`amount > m_balance` oder `amount < 0`), sodass wir sicher sein können, dass die Methode die Integrität ihrer Argumente ordnungsgemäß überprüft.
 
-Sehen Sie sich die zu testende Methode noch einmal an: Beide Bedingungsanweisungen verwenden einen `ArgumentOutOfRangeException`-Konstruktor, der den Namen des Arguments als Parameter übernimmt:
+Wenn Sie sich die zu testende Methode (`BankAccount.Debit`) noch einmal ansehen, werden Sie feststellen, dass beide Bedingungsanweisungen einen `ArgumentOutOfRangeException`-Konstruktor verwenden, der einfach den Namen des Arguments als Parameter übernimmt:
 
 ```csharp
 throw new ArgumentOutOfRangeException("amount");

@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a5ce4f298039d6d86f8c4855d1f139b6be1d1175
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a485f58e477d56625bc5ac88a014fc730057b97c
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822726"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432310"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analysieren von Tests der programmierten UI mithilfe der Testprotokolle der programmierten UI
 
@@ -24,23 +24,23 @@ Testprotokolle für codierte UI filtern wichtige Informationen zum ausgeführten
 
 Verwenden Sie je nach Szenario eine der folgenden Methoden zur Aktivierung des Protokolls:
 
-- Auf .NET Framework Version 4 abzielen, wenn keine Datei *App.config* im Testprojekt vorhanden ist:
+- Wenn keine *App.config*-Datei in Ihrem Testprojekt vorhanden ist, gehen Sie folgendermaßen vor:
 
-   1. Öffnen Sie die Datei *QTAgent32_40.exe.config*. Diese Datei befindet sich standardmäßig unter *%Programme (x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+   1. Ermitteln Sie, welcher *QTAgent\*.exe*-Prozess gestartet wird, wenn Sie den Test ausführen. Eine Möglichkeit hierzu ist beispielsweise die Beobachtung der Registerkarte **Details** im Windows-**Task-Manager**.
+   
+   2. Öffnen Sie die entsprechende *.config*-Datei im Ordner *%ProgramFiles(x86)%\Microsoft Visual Studio\\\<Version>\\\<Edition>\Common7\IDE*. Wenn der ausgeführte Prozess beispielsweise *QTAgent_40.exe* ist, öffnen Sie die Datei *QTAgent_40.exe.config*.
 
-   2. Ändern Sie den Wert für EqtTraceLevel auf die gewünschte Protokollebene.
+   2. Ändern Sie den Wert für **EqtTraceLevel** auf die gewünschte Protokollierungsebene.
+   
+      ```xml
+      <!-- You must use integral values for "value".
+           Use 0 for off, 1 for error, 2 for warn, 3 for info, and 4 for verbose. -->
+      <add name="EqtTraceLevel" value="4" />
+      ```
 
    3. Speichern Sie die Datei.
 
-- Auf .NET Framework Version 4.5 abzielen, wenn keine Datei *App.config* im Testprojekt vorhanden ist:
-
-   1. Öffnen Sie die Datei *QTAgent32.exe.config*. Diese Datei befindet sich standardmäßig unter *%Programme (x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
-
-   2. Ändern Sie den Wert für EqtTraceLevel auf die gewünschte Protokollebene.
-
-   3. Speichern Sie die Datei.
-
-- Die Datei *App.config* ist im Testprojekt vorhanden:
+- Wenn eine *App.config*-Datei in Ihrem Testprojekt vorhanden ist, gehen Sie folgendermaßen vor:
 
     - Öffnen Sie die Datei *App.config* im Projekt, und fügen Sie den folgenden Code unter dem Konfigurationsknoten hinzu:
 
@@ -54,11 +54,13 @@ Verwenden Sie je nach Szenario eine der folgenden Methoden zur Aktivierung des P
 
 - Die Anmeldung aus dem Testcode selbst aktivieren:
 
-   <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;
+   ```csharp
+   Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState = HtmlLoggerState.AllActionSnapshot;
+   ```
 
 ## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Schritt 2: Den Test der programmierten UI ausführen und das Protokoll anzeigen
 
-Wenn Sie einen Test der programmierten Benutzeroberfläche mit der modifizierten Datei *QTAgent32.exe.config* ausführen, wird ein Ausgabelink in den Ergebnissen des **Test-Explorers** angezeigt. Protokolldateien werden nicht nur produziert, wenn beim Test ein Fehler auftritt, sondern auch für erfolgreiche Tests, wenn das Level der Ablaufverfolgung auf „verbose“ gesetzt ist.
+Wenn Sie einen Test der programmierten UI mit der modifizierten Datei *QTAgent\*.exe.config* ausführen, wird ein Ausgabelink in den Ergebnissen des **Test-Explorers** angezeigt. Protokolldateien werden nicht nur dann generiert, wenn beim Test ein Fehler auftritt, sondern auch bei erfolgreichen Tests, wenn die Ablaufverfolgungsebene auf **verbose** festgelegt ist.
 
 1. Wählen Sie im Menü **Test** **Fenster** und dann **Test-Explorer** aus.
 

@@ -1,7 +1,7 @@
 ---
 title: Änderungsprotokoll (Visual Studio-Tools für Unity, Windows) | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 04/02/2019
+ms.date: 05/28/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,15 +10,75 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: f6523f958d334108eb6a3fbe9e5c44e416ff8df7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: acf80d1c700c0ac6c889ecd786a53cccda8604f3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403197"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327354"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Änderungsprotokoll (Visual Studio-Tools für Unity, Windows)
 Visual Studio-Tools für Unity (Änderungsprotokoll)
+
+## <a name="4110"></a>4.1.1.0
+ Veröffentlicht am 24. Mai 2019
+
+### <a name="new-features"></a>Neue Funktionen
+
+- **Integration:**
+
+    - MonoBehaviour-API auf 2019.1 aktualisiert.
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+- **Integration:**
+
+    - Es wurden Warnungen und Fehler bei der Berichterstellung korrigiert, die ausgegeben werden sollen, wenn der Lightweightbuild aktiviert ist.
+    
+    - Probleme mit der Leistung des Lightweightbuilds wurden behoben.
+
+## <a name="4100"></a>4.1.0.0
+ Veröffentlicht am 21. Mai 2019
+
+### <a name="new-features"></a>Neue Funktionen
+
+- **Integration:**
+
+    - Unterstützung für das schnellere Laden neuer Projekte durch die neue Batch-API wurde hinzugefügt.
+    
+    - Die vollständige Builderstellung für Unity-Projekte wurde zugunsten von IntelliSense-Fehlern und -Warnungen deaktiviert. Unity erstellt eine Visual Studio-Projektmappe mit Klassenbibliotheksprojekten, die die internen Vorgänge von Unity darstellen. Das Ergebnis der Erstellung in Visual Studio wird von Unity nie verwendet oder übernommen, da die Kompilierungspipeline geschlossen ist. Die Builderstellung in Visual Studio verbraucht nur Ressourcen, führt aber zu nichts. Wenn Sie einen vollständigen Build benötigen, weil Sie über Tools oder Setups verfügen, die davon abhängig sind, können Sie diese Optimierung deaktivieren („Tools“ > „Optionen“ > „Tools für Unity“ > „Vollständigen Build von Projekten deaktivieren“). 
+
+    - Der Unity-Projekt-Explorer (UPE) wird automatisch angezeigt, wenn ein Unity-Projekt geladen wird. Der UPE wird neben dem Projektmappen-Explorer angedockt.
+    
+    - Der Mechanismus zum Extrahieren von Projektnamen wurde mit Unity 2019.x aktualisiert.
+
+    - Unterstützung für Unity-Pakete im UPE wurde hinzugefügt. Nur referenzierte Pakete (durch Verwendung von „manifest.json“ im Ordner ```Packages```) und lokale Pakete (im Ordner ```Packages``` integriert) werden angezeigt.
+    
+- **Projektgenerierung:**
+
+    - Beibehalten externer Eigenschaften bei Verarbeitung der Projektmappendatei.
+
+- **Auswertung:**
+
+    - Unterstützung für aliasqualifizierte Namen wurde hinzugefügt (derzeit nur im globalen Namespace). Daher akzeptiert die Ausdrucksauswertung jetzt Typen der Form „global::namespace.type“.
+    
+    - Unterstützung für die Form ```pointer[index]``` wurde hinzugefügt, die semantisch identisch mit ```*(pointer+index)``` ist, der Form zum Dereferenzieren von Zeigern.
+
+### <a name="bug-fixes"></a>Fehlerkorrekturen
+
+- **Integration:**
+
+    - Abhängigkeitsprobleme mit Microsoft.VisualStudio.MPF wurden behoben.
+    
+    - Probleme mit dem Anfügen von UWP-Playern ohne geladenes Projekt wurden behoben.
+    
+    - Probleme mit der automatischen Aktualisierung von Ressourcendatenbanken, wenn Visual Studio noch nicht angefügt war, wurden behoben.
+    
+    - Themenprobleme mit Beschriftungen und Kontrollkästchen wurden behoben.
+    
+- **Debugger:**
+
+    - Die Schrittausführung mit statischen Konstruktoren wurde korrigiert.
 
 ## <a name="4005"></a>4.0.0.5
  Veröffentlichung: 27. Februar 2019

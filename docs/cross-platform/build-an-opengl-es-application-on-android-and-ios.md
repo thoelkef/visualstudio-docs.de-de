@@ -1,7 +1,7 @@
 ---
 title: Entwickeln einer OpenGL ES-Anwendung für Android und iOS | Microsoft-Dokumentation
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 05/16/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -12,40 +12,40 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 8929a0b3bec64bbf2fc12bd84f6938463393a32c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aa8ffe308f8a1181ed18af52ba7537c46007de94
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62820591"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317650"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Erstellen einer OpenGL ES-Anwendung für Android und iOS
 
-Bei Installation der Option "Visual C++ für plattformübergreifende Mobile-Entwicklung" können Sie Visual Studio-Projektmappen und -Projekte für iOS-Apps und Android-Apps erstellen, die gemeinsamen Code nutzen. Dieses Thema führt Sie durch eine Projektmappenvorlage, durch die eine einfache iOS-App und eine Android Native Activity-App erstellt wird. Die Apps verwenden gemeinsamen C++-Code, der OpenGL ES verwendet, um denselben animierten rotierenden Cube auf jeder Plattform anzuzeigen. OpenGL ES (OpenGL for Embedded Systems oder GLES) ist eine 2D- und 3D-Grafik-API, die auf zahlreichen mobilen Geräten unterstützt wird.
+Sie können Visual Studio-Projekte und -Projektmappen für iOS-Apps und Android-Apps erstellen, die gemeinsamen Code nutzen. Dieser Artikel führt Sie durch eine Projektmappenvorlage, die eine einfache iOS-App und eine Android Native Activity-App erstellt. Die Apps verwenden gemeinsamen C++-Code, der OpenGL ES verwendet, um denselben animierten rotierenden Cube auf jeder Plattform anzuzeigen. OpenGL ES (OpenGL for Embedded Systems oder GLES) ist eine 2D- und 3D-Grafik-API, die auf zahlreichen mobilen Geräten unterstützt wird.
 
 ## <a name="requirements"></a>Anforderungen
 
-Bevor Sie eine OpenGL ES-App für iOS und Android erstellen, müssen Sie sicherstellen, dass Sie alle Systemanforderungen erfüllt haben. Sie müssen die Option "Visual C++ für plattformübergreifende Mobile-Entwicklung" in Visual Studio 2015 installieren. Stellen Sie sicher, dass die erforderlichen Drittanbietertools und -SDKs in der Installation enthalten sind und dass der Visual Studio-Emulator für Android installiert ist. Weitere Informationen und ausführliche Anweisungen finden Sie unter [Installieren von Visual C++ für die plattformübergreifende mobile Entwicklung](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Zum Entwickeln und Testen der iOS-App benötigen Sie einen Mac-Computer, der gemäß der Installationsanleitung eingerichtet wurde. Weitere Informationen zum Einrichten der iOS-Entwicklung finden Sie unter [Installieren und Konfigurieren von Tools zum Erstellen mit iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).
+Bevor Sie eine OpenGL ES-App für iOS und Android erstellen, vergewissern Sie sich, dass alle Systemanforderungen erfüllt sind. Installieren Sie die Workload „Mobile-Entwicklung mit C++“ im Visual Studio-Installer, sofern dies nicht bereits erfolgt ist. Zur Entwicklung für iOS schließen Sie die optionalen Tools für die Entwicklung für iOS mit C++ ein. Zur Entwicklung für Android installieren Sie die Tools für die Entwicklung für Android mit C++ sowie die erforderlichen Drittanbietertools: Android NDK, Apache Ant, Google Android Emulator und Intel Hardware Accelerated Execution Manager. Als Nächstes konfigurieren Sie Intel HAXM und den Android-Emulator für die Ausführung auf Ihrem System. Weitere Informationen und ausführliche Anweisungen finden Sie unter [Installieren von Visual C++ für die plattformübergreifende mobile Entwicklung](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Zum Entwickeln und Testen der iOS-App benötigen Sie einen Mac-Computer, der gemäß der Installationsanleitung eingerichtet wurde. Weitere Informationen zum Einrichten der iOS-Entwicklung finden Sie unter [Installieren und Konfigurieren von Tools zum Erstellen mit iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).
 
 ## <a name="create-a-new-opengles-application-project"></a>Erstellen eines neuen OpenGLES-Anwendungsprojekts
 
-In diesem Lernprogramm erstellen Sie zunächst ein neues OpenGL ES-Anwendungsprojekt. Anschließend erstellen und führen Sie die Standard-App im Visual Studio-Emulator für Android aus. Als Nächstes erstellen Sie die App für iOS und führen sie im iOS-Simulator aus.
+In diesem Lernprogramm erstellen Sie zunächst ein neues OpenGL ES-Anwendungsprojekt. Anschließend erstellen und führen Sie die Standard-App im Visual Studio-Emulator für Android aus. Als Nächstes erstellen Sie die App für iOS und führen sie auf einem iOS-Gerät aus.
 
 1. Klicken Sie in Visual Studio auf **Datei** > **Neu** > **Projekt**.
 
-2. Wählen Sie im Dialogfeld **Neues Projekt** unter **Vorlagen** die Option **Visual C++** > **Plattformübergreifend** und dann die Vorlage **OpenGLES-Anwendung (Android, iOS)** aus.
+1. Wählen Sie im Dialogfeld **Neues Projekt** unter **Vorlagen** die Option **Visual C++**  > **Plattformübergreifend** und dann die Vorlage **OpenGLES-Anwendung (Android, iOS)** aus.
 
-3. Vergeben Sie an die App einen Namen wie etwa `MyOpenGLESApp`(ohne Leerzeichen), und wählen Sie dann **OK**.
+1. Vergeben Sie an die App einen Namen wie etwa `MyOpenGLESApp`(ohne Leerzeichen), und wählen Sie dann **OK**.
 
-    ![Neues OpenGLES-Anwendungsprojekt](../cross-platform/media/cppmdd_opengles_newproj.PNG "CPPMDD_OpenGLES_NewProj")
+   ![Neues OpenGLES-Anwendungsprojekt](../cross-platform/media/cppmdd_opengles_newproj.PNG "CPPMDD_OpenGLES_NewProj")
 
-    Visual Studio erstellt die neue Projektmappe und öffnet den Projektmappen-Explorer.
+   Visual Studio erstellt die neue Projektmappe und öffnet den Projektmappen-Explorer.
 
-    ![MyOpenGLESApp im Projektmappen-Explorer](../cross-platform/media/cppmdd_opengles_solexpl.PNG "CPPMDD_OpenGLES_SolExpl")
+   ![MyOpenGLESApp im Projektmappen-Explorer](../cross-platform/media/cppmdd_opengles_solexpl.PNG "CPPMDD_OpenGLES_SolExpl")
 
    Die neue OpenGL ES-Anwendungsprojektmappe umfasst drei Bibliotheksprojekte und zwei Anwendungsprojekte. Der Bibliotheksordner enthält ein Projekt mit freigegebenem Code und zwei plattformspezifischen Projekte, die auf den gemeinsam verwendeten Code verweisen:
 
-- `MyOpenGLESApp.Android.NativeActivity` enthält die Verweise und den Verbindungscode, mit denen Ihre App als eine systemeigene Aktivität auf Android implementiert werden kann. Die Implementierung der Einstiegspunkte aus dem Verbindungscode befindet sich in der Datei *main.cpp*, die den freigegebenen Code in `MyOpenGLESApp.Shared` enthält. Vorkompilierte Header befinden sich in *pch.h*. Das Native Activity-App-Projekt wird in eine freigegebene Bibliotheksdatei (*SO*) kompiliert, die durch das `MyOpenGLESApp.Android.Packaging`-Projekt ausgewählt wird.
+- `MyOpenGLESApp.Android.NativeActivity` enthält die Verweise und den Verbindungscode, mit denen Ihre App als eine systemeigene Aktivität auf Android implementiert werden kann. Die Einstiegspunkte aus dem Verbindungscode sind in der Datei *main.cpp* implementiert, die den gemeinsamen Code in `MyOpenGLESApp.Shared` enthält. Vorkompilierte Header befinden sich in *pch.h*. Das Native Activity-App-Projekt wird in eine gemeinsam genutzte Bibliotheksdatei (*SO*) kompiliert, die durch das `MyOpenGLESApp.Android.Packaging`-Projekt ausgewählt wird.
 
 - `MyOpenGLESApp.iOS.StaticLibrary` erstellt eine statische iOS-Bibliotheksdatei (*A*)-Datei mit dem freigegebenen Code in `MyOpenGLESApp.Shared`. Diese ist mit der vom `MyOpenGLESApp.iOS.Application`-Projekt erstellten App verknüpft.
 
@@ -53,91 +53,121 @@ In diesem Lernprogramm erstellen Sie zunächst ein neues OpenGL ES-Anwendungspro
 
 Die Projektmappe enthält zwei Projekte zum Erstellen der Apps für die Android- und iOS-Plattform:
 
-- `MyOpenGLESApp.Android.Packaging` erstellt die *APK*-Datei für die Bereitstellung auf einem Android-Gerät oder -Emulator. Dieses enthält die Ressourcen und die Datei "AndroidManifest.xml", wo Sie Manifesteigenschaften festlegen. Es enthält zudem die Datei *build.xml*, die den Ant-Buildprozess steuert. Es ist standardmäßig als Startprojekt festgelegt, sodass es bereitgestellt und direkt in Visual Studio ausgeführt werden kann.
+- `MyOpenGLESApp.Android.Packaging` erstellt die *APK*-Datei für die Bereitstellung auf einem Android-Gerät oder -Emulator. Diese Datei enthält die Ressourcen sowie die Datei „AndroidManifest.xml“, in der Sie Manifesteigenschaften festlegen. Es enthält zudem die Datei *build.xml*, die den Ant-Buildprozess steuert. Es ist standardmäßig als Startprojekt festgelegt, sodass es bereitgestellt und direkt in Visual Studio ausgeführt werden kann.
 
 - **MyOpenGLESApp.iOS.Application** enthält die Ressourcen und Objective-C-Verbindungscode zum Erstellen einer iOS-App, die mit dem Code der statischen C++-Bibliothek in `MyOpenGLESApp.iOS.StaticLibrary` verknüpft ist. Dieses Projekt erstellt ein Buildpaket, das von Visual Studio und dem Remote-Agent auf Ihren Mac übertragen wird. Beim Erstellen dieses Projekts sendet Visual Studio die Dateien und Befehle zum Erstellen und Bereitstellen der App auf dem Mac.
 
 ## <a name="build-and-run-the-android-app"></a>Erstellen und Ausführen der Android-App
 
-Durch die von der Vorlage erstellte Projektmappe wird die Android-App als Standardprojekt festgelegt.  Sie können die App erstellen und ausführen, um die Installation und Einrichtung zu überprüfen. Führen Sie die App in einem ersten Test unter einem der Geräteprofile aus, die vom Visual Studio-Emulator für Android installiert werden. Wenn Sie Ihre App auf einem anderen Ziel testen möchten, können Sie den Zielemulator laden oder das Gerät mit Ihrem Computer verbinden.
+Durch die von der Vorlage erstellte Projektmappe wird die Android-App als Standardprojekt festgelegt.  Sie können die App erstellen und ausführen, um die Installation und Einrichtung zu überprüfen. Führen Sie die App in einem ersten Test in einem der Geräteprofile aus, die vom Emulator für Android installiert werden. Wenn Sie Ihre App auf einem anderen Ziel testen möchten, können Sie den Zielemulator laden oder das Gerät mit Ihrem Computer verbinden.
 
 ### <a name="to-build-and-run-the-android-native-activity-app"></a>So erstellen und führen Sie die Android Native Activity-App aus
 
-1. Falls die Plattform noch nicht ausgewählt ist, wählen Sie **x86** aus der Dropdownliste **Projektmappenplattformen** aus.
+1. Wählen Sie **x86** aus der Dropdownliste **Projektmappenplattformen** aus (falls diese Plattform nicht bereits ausgewählt ist).
 
-    ![Festlegen der Projektmappenplattform auf X86](../cross-platform/media/cppmdd_opengles_solutionplat.png "CPPMDD_OpenGLES_SolutionPlat")
+   ![Festlegen der Projektmappenplattform auf X86](../cross-platform/media/cppmdd_opengles_solutionplat.png "CPPMDD_OpenGLES_SolutionPlat")
 
-    Verwenden Sie x86, wenn der Android-Emulator für Windows als Ziel verwendet wird. Bei der Ausrichtung auf ein Gerät wählen sie die Projektmappenplattform je nach Geräteprozessor aus. Wenn die Liste **Projektmappenplattformen** nicht angezeigt wird, wählen Sie **Projektmappenplattformen** aus der Liste **Schaltflächen hinzufügen/entfernen** aus, und wählen Sie dann Ihre Plattform aus.
+   Wählen Sie "x86" aus, wenn Sie den Emulator als Ziel verwenden möchten. Um ein Gerät als Ziel zu verwenden, wählen Sie je nach Geräteprozessor die entsprechende Projektmappenplattform aus. Wenn die Liste **Projektmappenplattformen** nicht angezeigt wird, wählen Sie **Projektmappenplattformen** aus der Liste **Schaltflächen hinzufügen/entfernen** aus, und wählen Sie dann Ihre Plattform aus.
 
-2. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für das `MyOpenGLESApp.Android.Packaging`-Projekt, und wählen Sie dann **Erstellen** aus.
+1. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für das `MyOpenGLESApp.Android.Packaging`-Projekt, und wählen Sie dann **Erstellen** aus.
 
-    ![Erstellen eines Android-Paketprojekts](../cross-platform/media/cppmdd_opengles_andbuild.png "CPPMDD_OpenGLES_AndBuild")
+   ![Erstellen eines Android-Paketprojekts](../cross-platform/media/cppmdd_opengles_andbuild.png "CPPMDD_OpenGLES_AndBuild")
 
-    Das Ausgabefenster zeigt die Ausgabe des Buildprozesses für die freigegebene Android-Bibliothek und die Android-App an.
+   Das Ausgabefenster zeigt die Ausgabe des Buildprozesses für die freigegebene Android-Bibliothek und die Android-App an.
 
-    ![Buildausgabe für Android-Projekte](../cross-platform/media/cppmdd_opengles_andoutput.png "CPPMDD_OpenGLES_AndOutput")
+   ![Buildausgabe für Android-Projekte](../cross-platform/media/cppmdd_opengles_andoutput.png "CPPMDD_OpenGLES_AndOutput")
 
-3. Wählen Sie eines der VS-Emulator Android Phone (x86)-Profile als Bereitstellungsziel aus.
+1. Wählen Sie eins der emulierten Android-Geräteprofile als Bereitstellungsziel aus.
 
-    ![Auswählen des Bereitstellungsziels](../cross-platform/media/cppmdd_opengles_pickemulator.png "CPPMDD_OpenGLES_PickEmulator")
+   ![Auswählen des Bereitstellungsziels](../cross-platform/media/cppmdd_opengles_pickemulator.png "CPPMDD_OpenGLES_PickEmulator")
 
-    Wenn Sie andere Emulatoren installiert oder mit einem Android-Gerät verbunden haben, können Sie sie aus der Bereitstellungsziel-Dropdownliste auswählen. Damit die App ausgeführt werden kann, muss die integrierte Projektmappenplattform mit der Plattform des Zielgeräts übereinstimmen.
+   Wenn Sie andere Emulatoren installiert oder mit einem Android-Gerät verbunden haben, können Sie sie aus der Bereitstellungsziel-Dropdownliste auswählen. Damit die App ausgeführt werden kann, muss die integrierte Projektmappenplattform mit der Plattform des Zielgeräts übereinstimmen.
 
-4. Drücken Sie F5, um mit dem Debuggen zu beginnen, oder UMSCHALT+F5, um ohne Debuggen zu beginnen.
+1. Drücken Sie F5, um mit dem Debuggen zu beginnen, oder UMSCHALT+F5, um ohne Debuggen zu beginnen.
 
-    Visual Studio startet den Emulator, wobei das Laden und Bereitstellen Ihres Codes mehrere Sekunden in Anspruch nimmt. Im Folgenden wird veranschaulicht, wie die App im Visual Studio-Emulator für Android angezeigt wird.
+   Visual Studio startet den Emulator, wobei das Laden und Bereitstellen Ihres Codes mehrere Sekunden in Anspruch nimmt. So wird die App im Emulator angezeigt:
 
-    ![In Android-Emulator ausgeführte App](../cross-platform/media/cppmdd_opengles_andemulator.png "CPPMDD_OpenGLES_AndEmulator")
+   ![In Android-Emulator ausgeführte App](../cross-platform/media/cppmdd_opengles_andemulator.png "CPPMDD_OpenGLES_AndEmulator")
 
-    Nachdem Ihre App gestartet wurde, können Sie Haltepunkte festlegen und den Debugger verwenden, um den Code schrittweise zu durchlaufen, lokale Variablen zu prüfen und Werte anzuzeigen.
+   Nachdem Ihre App gestartet wurde, können Sie Haltepunkte festlegen und den Debugger verwenden, um den Code schrittweise zu durchlaufen, lokale Variablen zu prüfen und Werte anzuzeigen.
 
-5. Drücken Sie **UMSCHALT**+**F5**, um den Debugvorgang zu beenden.
+1. Drücken Sie **UMSCHALT**+**F5**, um den Debugvorgang zu beenden.
 
-    Der Emulator ist ein separater Prozess, der weiterhin ausgeführt wird. Sie können Ihren Code mehrfach auf demselben Emulator bearbeiten, kompilieren und bereitstellen. Die App wird in der App-Sammlung für den Emulator angezeigt und kann direkt von dort aus gestartet werden.
+   Der Emulator ist ein separater Prozess, der weiterhin ausgeführt wird. Sie können Ihren Code mehrfach auf demselben Emulator bearbeiten, kompilieren und bereitstellen. Die App wird in der App-Sammlung für den Emulator angezeigt und kann direkt von dort aus gestartet werden.
 
-   Die generierten Android Native Activity-App- und Bibliotheksprojekte legen den freigegebenen C++-Code in einer dynamischen Bibliothek ab, die "Verbindungscode" für den Anschluss an die Android-Plattform umfasst. Dies bedeutet, dass sich der größte Teil des App-Codes in der Bibliothek und Manifest, Ressourcen und Buildanweisungen im Paketprojekt befinden. Der freigegebene Code wird von "main.cpp" im NativeActivity-Projekt aufgerufen. Weitere Informationen über das Programmieren einer Android Native Activity-App finden Sie im Android Developer NDK auf der Seite [Konzepte](https://developer.android.com/ndk/guides/concepts.html) .
+   Die generierten Android Native Activity-App- und Bibliotheksprojekte legen den freigegebenen C++-Code in einer dynamischen Bibliothek ab, die "Verbindungscode" für den Anschluss an die Android-Plattform umfasst. Der größte Teil des App-Codes befindet sich in der Bibliothek; Manifest, Ressourcen und Buildanweisungen befinden sich im Paketprojekt. Der freigegebene Code wird von "main.cpp" im NativeActivity-Projekt aufgerufen. Weitere Informationen über das Programmieren einer Android Native Activity-App finden Sie im Android Developer NDK auf der Seite [Konzepte](https://developer.android.com/ndk/guides/concepts.html) .
 
-   Visual Studio erstellt Android Native Activity-Projekte mithilfe des Android-NDKs, das Clang als Plattformtoolset verwendet. Visual Studio ordnet die Eigenschaften des NativeActivity-Projekts den Befehlszeilenschaltern und -optionen zu, die zum Kompilieren, Verknüpfen und Debuggen auf der Zielplattform verwendet werden. Um weitere Informationen zu erhalten, öffnen Sie das Dialogfeld **Eigenschaftenseiten** des MyOpenGLESApp.Android.NativeActivity-Projekts. Weitere Informationen zu den Befehlszeilenschaltern finden Sie im [Clang Compiler-Benutzerhandbuch](http://clang.llvm.org/docs/UsersManual.html).
+   Visual Studio erstellt Android Native Activity-Projekte mithilfe des Android-NDKs, das Clang als Plattformtoolset verwendet. Visual Studio ordnet die Eigenschaften des NativeActivity-Projekts den Optionen zu, die zum Kompilieren, Verknüpfen und Debuggen auf der Zielplattform verwendet werden. Um weitere Informationen zu erhalten, öffnen Sie das Dialogfeld **Eigenschaftenseiten** des MyOpenGLESApp.Android.NativeActivity-Projekts. Weitere Informationen zu den Befehlszeilenschaltern finden Sie im [Clang Compiler-Benutzerhandbuch](http://clang.llvm.org/docs/UsersManual.html) (in englischer Sprache).
 
-## <a name="build-and-run-the-ios-app"></a>Erstellen und Ausführen der iOS-App
+## <a name="build-and-run-the-ios-app-on-an-ios-device"></a>Erstellen und Ausführen der iOS-App auf einem iOS-Gerät
 
-Das iOS-App-Projekt wird in Visual Studio erstellt und bearbeitet, aufgrund von Lizenzeinschränkungen muss es jedoch auf einem Mac erstellt und von dort aus bereitgestellt werden. Visual Studio kommuniziert mit einem Remote-Agent, der auf dem Mac ausgeführt wird, um Projektdateien zu übertragen und Build-, Bereitstellungs- und Debugbefehle auszuführen. Sie müssen Ihren Mac für die Kommunikation einrichten und konfigurieren, bevor Sie die iOS-App erstellen können. Ausführliche Anweisungen finden Sie unter [Installieren und Konfigurieren von Tools zum Erstellen mit iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md). Sobald der Remote-Agent ausgeführt wird und Visual Studio dem Mac zugeordnet ist, können Sie die iOS-App erstellen und ausführen, um die Installation und Einrichtung zu überprüfen.
+Das iOS-App-Projekt wird in Visual Studio erstellt und bearbeitet, aufgrund von Lizenzeinschränkungen muss es jedoch auf einem Mac erstellt und von dort aus bereitgestellt werden. Visual Studio kommuniziert mit einem Remote-Agent, der auf dem Mac ausgeführt wird, um Projektdateien zu übertragen und Build-, Bereitstellungs- und Debugbefehle auszuführen. Sie müssen Ihren Mac und Visual Studio für die Kommunikation einrichten und konfigurieren, bevor Sie die iOS-App erstellen können. Ausführliche Anweisungen finden Sie unter [Installieren und Konfigurieren von Tools zum Erstellen mit iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md). Sobald der Remote-Agent auf Ihrem Mac ausgeführt wird und mit Visual Studio gekoppelt ist, können Sie die iOS-App erstellen und ausführen, um die Installation und Einrichtung zu überprüfen.
 
-### <a name="to-build-and-run-the-ios-app"></a>So erstellen und führen Sie die iOS-App aus
+Um eine iOS-App auf einem iOS-Gerät bereitzustellen, müssen Sie auf dem Mac auch die automatische Signierung in Xcode einrichten. Durch die automatische Signierung wird die App-Signierung automatisch verwaltet. Zudem wird ein Bereitstellungsprofil erstellt, um den Build einer App zu signieren.
 
-1. Stellen Sie sicher, dass der Remote-Agent auf Ihrem Mac ausgeführt wird und dass Visual Studio dem Remote-Agent zugeordnet ist. Wenn Sie den Remote-Agent starten möchten, öffnen Sie ein Terminal-App-Fenster, und geben Sie `vcremote`. Weitere Informationen finden Sie unter [Konfigurieren des Remote-Agents in Visual Studio](../cross-platform/install-and-configure-tools-to-build-using-ios.md#ConfigureVS).
+### <a name="to-set-up-automatic-signing-on-xcode"></a>So richten Sie die automatische Signierung in Xcode ein
 
-    ![Mac Terminal-Fenster bei Ausführung von vcremote](../cross-platform/media/cppmdd_common_vcremote.png "CPPMDD_common_vcremote")
+1. Installieren Sie die [Xcode](https://developer.apple.com/xcode/downloads/)-Version 10.2.1 oder höher auf Ihrem Mac, sofern diese nicht bereits vorhanden ist.
 
-2. Falls die Plattform noch nicht ausgewählt ist, wählen Sie **x86** aus der Dropdownliste **Projektmappenplattformen** aus.
+1. Öffnen Sie die Xcode-App auf Ihrem Mac.
 
-    ![Festlegen der Projektmappenplattform auf X86](../cross-platform/media/cppmdd_opengles_solutionplat.png "CPPMDD_OpenGLES_SolutionPlat")
+1. Erstellen Sie ein neues Xcode-Projekt für eine **Einzelansichtanwendung**. Füllen Sie bei der Projekterstellung die Pflichtfelder aus. Die Werte können beliebig sein, da das Projekt nur zum Erstellen eines Bereitstellungsprofils verwendet wird, mit dem später ein Build der App signiert werden soll.
 
-    Wählen Sie "x86" aus, wenn Sie den iOS-Simulator als Ziel verwenden möchten. Bei der Ausrichtung auf ein iOS-Gerät wählen Sie die Projektmappenplattform je nach Geräteprozessor (normalerweise ein ARM-Prozessor) aus. Wenn die Liste **Projektmappenplattformen** nicht angezeigt wird, wählen Sie **Projektmappenplattformen** aus der Liste **Schaltflächen hinzufügen/entfernen** aus, und wählen Sie dann Ihre Plattform aus.
+1. Fügen Sie dem Xcode Ihre Apple ID hinzu, die in einem [Apple Developer Program](https://developer.apple.com/programs/)-Konto registriert ist. Ihre Apple ID wird als Signierungsidentität zum Signieren von Apps verwendet. Um die Signierungsidentität zu Xcode hinzuzufügen, öffnen Sie das Menü **Xcode**, und wählen Sie **Einstellungen** aus. Wählen Sie **Konten** aus, und klicken Sie auf die Schaltfläche „Hinzufügen“ (+), um Ihre Apple ID hinzuzufügen. Detaillierte Anweisungen finden Sie unter [Hinzufügen Ihres Apple ID-Kontos](https://help.apple.com/xcode/mac/current/#/devaf282080a).
 
-3. Öffnen Sie im Projektmappen-Explorer das Kontextmenü des MyOpenGLESApp.iOS.Application-Projekts, und wählen Sie dann **Erstellen**aus.
+1. Ändern Sie in den allgemeinen Einstellungen Ihres Xcode-Projekts den **Paketbezeichner** zu `com.<NameOfVSProject>`, wobei `<NameOfVSProject>` der Name des von Ihnen erstellten Visual Studio-Projektmappenprojekts ist. Ein Beispiel: Wenn Sie ein Projekt namens `MyOpenGLESApp` in Visual Studio erstellt haben, legen Sie den **Paketbezeichner** auf `com.MyOpenGLESApp` fest.
 
-    ![Erstellen von iOS-Anwendungsprojekten](../cross-platform/media/cppmdd_opengles_iosbuild.png "CPPMDD_OpenGLES_iOSBuild")
+   ![Xcode-Paketbezeichner](../cross-platform/media/cppmdd-opengles-iosxcodeid.png "CPPMDD_OpenGLES_iOSXcodeId")
 
-    Das Ausgabefenster zeigt die Ausgabe des Buildprozesses für die statische iOS-Bibliothek und die iOS-App an. Auf dem Mac zeigt das Terminal-Fenster, in dem der Remote-Agent ausgeführt wird, die Befehls- und Dateiübertragungsaktivitäten an.
+1. Um das automatische Signieren zu aktivieren, aktivieren Sie das Kontrollkästchen **Signierung automatisch verwalten**.
 
-    Auf dem Mac-Computer werden Sie möglicherweise aufgefordert, eine Anforderung zur Codesignierung zu akzeptieren. Wählen Sie **Zulassen** aus, um den Vorgang fortzusetzen.
+   ![Automatisches Signieren in Xcode](../cross-platform/media/cppmdd-opengles-iosxcodesign.png "CPPMDD_OpenGLES_iOSXcodeSign")
 
-4. Wählen Sie auf der Symbolleiste **iOS-Simulator** aus, um die App im iOS-Simulator auf dem Mac auszuführen. Es kann einen Moment dauern, bis der Simulator gestartet wird. Möglicherweise müssen Sie den Simulator auf dem Mac in den Vordergrund verschieben, um die Ausgabe zu sehen.
+1. Wählen Sie den Teamnamen der Apple ID aus, die Sie als **Team** für die Entwicklung hinzugefügt haben.
 
-    ![Ausführen einer App im iOS-Simulator](../cross-platform/media/cppmdd_opengles_iossimulator.png "CPPMDD_OpenGLES_iOSSimulator")
+   ![Xcode-Team](../cross-platform/media/cppmdd-opengles-iosxcodeteam.png "CPPMDD_OpenGLES_iOSXcodeTeam")
 
-    Nachdem Ihre App gestartet wurde, können Sie Haltepunkte festlegen und den Visual Studio-Debugger verwenden, um lokale Variablen zu prüfen, die Aufrufliste anzuzeigen und Werte zu überwachen.
+### <a name="to-build-and-run-the-ios-app-on-an-ios-device"></a>So erstellen Sie die iOS-App auf einem iOS-Gerät und führen sie aus
 
-    ![Debugger am Haltepunkt in iOS-App](../cross-platform/media/cppmdd_opengles_iosdebug.png "CPPMDD_OpenGLES_iOSDebug")
+1. Führen Sie den Remote-Agent auf Ihrem Mac aus, und stellen Sie sicher, dass Visual Studio mit dem Remote-Agent gekoppelt ist. Wenn Sie den Remote-Agent starten möchten, öffnen Sie ein Terminal-App-Fenster, und geben Sie `vcremote`. Weitere Informationen finden Sie unter [Konfigurieren des Remote-Agents in Visual Studio](../cross-platform/install-and-configure-tools-to-build-using-ios.md#ConfigureVS).
 
-5. Drücken Sie **UMSCHALT**+**F5**, um den Debugvorgang zu beenden.
+   ![Mac Terminal-Fenster bei Ausführung von vcremote](../cross-platform/media/cppmdd_common_vcremote.png "CPPMDD_common_vcremote")
 
-    Der iOS-Simulator ist ein separater Prozess, der weiterhin auf dem Mac ausgeführt wird. Sie können Ihren Code mehrfach auf derselben iOS-Simulatorinstanz bearbeiten, kompilieren und bereitstellen. Sie können Code nach der Bereitstellung auch direkt im Simulator ausführen.
+1. Schließen Sie ein iOS-Gerät an Ihren Mac an. Wenn Sie ein Gerät zum ersten Mal an einen Computer anschließen, werden Sie in einer Warnung gefragt, ob der Computer auf das Gerät zugreifen darf. Teilen Sie dem Gerät mit, dass es dem Mac-Computer vertrauen darf.
+
+1. Wählen Sie in Visual Studio aus der Dropdownliste **Projektmappenplattformen** die Projektmappenplattform aus, die dem Geräteprozessor entspricht (sofern diese nicht bereits ausgewählt ist). In diesem Beispiel handelt es sich um einen **ARM64**-Prozessor.
+
+   ![Festlegen der Projektmappenplattform auf ARM64](../cross-platform/media/cppmdd-opengles-pickplatformarm64.png "CPPMDD_OpenGLES_SolutionPlatARM64")
+
+1. Öffnen Sie im Projektmappen-Explorer das Kontextmenü des MyOpenGLESApp.iOS.Application-Projekts, und wählen Sie **Projekt entladen** aus, um das Projekt zu entladen.
+
+1. Öffnen Sie erneut das Kontextmenü für das entladene MyOpenGLESApp.iOS.Application-Projekt, und wählen Sie **„project.pbxproj“ bearbeiten** aus, um die Projektdatei zu bearbeiten. Suchen Sie in der Datei `project.pbxproj` nach dem `buildSettings`-Attribut, und fügen Sie `DEVELOPMENT_TEAM` mit Ihrer Apple Team ID hinzu. Der Screenshot unten zeigt einen Beispielwert von `123456ABC` für die Apple Team ID. Sie finden den Wert Ihrer Apple Team ID in Xcode. Wechseln Sie zu **Buildeinstellungen**, und halten Sie den Mauszeiger auf den Namen Ihres Entwicklungsteams, um eine QuickInfo anzuzeigen. Die QuickInfo zeigt Ihre Team-ID an.
+
+   ![Festlegen des Entwicklungsteams](../cross-platform/media/cppmdd-opengles-iosdevelopmentteam.png "CPPMDD_OpenGLES_iOSDevelopmentTeam")
+
+1. Schließen Sie die Datei `project.pbxproj`. Öffnen Sie dann das Kontextmenü für das entladene MyOpenGLESApp.iOS.Application-Projekt, und wählen Sie **Projekt erneut laden** aus, um das Projekt erneut zu laden.
+
+1. Erstellen Sie jetzt das MyOpenGLESApp.iOS.Application-Projekt, indem Sie das Kontextmenü des Projekts öffnen und **Build** auswählen.
+
+   ![Erstellen von iOS-Anwendungsprojekten](../cross-platform/media/cppmdd_opengles_iosbuild.png "CPPMDD_OpenGLES_iOSBuild")
+
+   Das Ausgabefenster zeigt die Ausgabe des Buildprozesses für die statische iOS-Bibliothek und die iOS-App an. Auf dem Mac zeigt das Terminal-Fenster, in dem der Remote-Agent ausgeführt wird, die Befehls- und Dateiübertragungsaktivitäten an.
+
+   Auf Ihrem Mac-Computer werden Sie möglicherweise aufgefordert, Codesign den Zugriff auf Ihre Keychain zu ermöglichen. Wählen Sie **Zulassen** aus, um den Vorgang fortzusetzen.
+
+1. Wählen Sie auf der Symbolleiste Ihr iOS-Gerät aus, um die App auf dem Gerät auszuführen, das an Ihren Mac angeschlossen ist. Wenn die App nicht gestartet wird, vergewissern Sie sich, dass das Gerät der bereitgestellten Anwendung die Berechtigung für die Ausführung auf dem Gerät erteilt hat. Diese Berechtigung kann auf dem Gerät festgelegt werden: **Einstellungen** > **Allgemein** > **Geräteverwaltung**. Wählen Sie das Konto Ihrer Developer-App aus, legen Sie das Konto als vertrauenswürdig fest, und überprüfen Sie die App. Versuchen Sie erneut, die App in Visual Studio auszuführen.
+
+   ![iOS-App auf iOS-Gerät](../cross-platform/media/cppmdd-opengles-iosdevice.png "CPPMDD_OpenGLES_iOSDevice")
+   
+   Nachdem Ihre App gestartet wurde, können Sie Haltepunkte festlegen und den Visual Studio-Debugger verwenden, um lokale Variablen zu prüfen, die Aufrufliste anzuzeigen und Werte zu überwachen.
+
+   ![Debugger am Haltepunkt in iOS-App](../cross-platform/media/cppmdd_opengles_iosdebug.png "CPPMDD_OpenGLES_iOSDebug")
+
+1. Drücken Sie **UMSCHALT**+**F5**, um den Debugvorgang zu beenden.
 
    Der C++-Code wird von den generierten iOS-App- und -Bibliotheksprojekten in einer statischen Bibliothek abgelegt, die nur den freigegebenen Code implementiert. Der Hauptteil des Anwendungscodes befindet sich im `Application`-Projekt. Die Aufrufe des freigegebenen Bibliothekscodes in diesem Vorlagenprojekt werden in der Datei *GameViewController.m* ausgeführt. Zur Erstellung der iOS-App verwendet Visual Studio das Xcode-Plattformtoolset, das die Kommunikation mit einem Remoteclient erfordert, der auf einem Mac ausgeführt wird.
 
-   Visual Studio überträgt die Projektdateien und sendet Befehle an den Remoteclient, um die App mithilfe von Xcode zu erstellen. Der Remoteclient sendet Buildstatusinformationen zurück an Visual Studio. Nachdem die App erfolgreich erstellt wurde, können Sie Visual Studio verwenden, um Befehle zum Ausführen und Debuggen der App zu senden. Der Debugger in Visual Studio steuert die App, die in dem iOS-Simulator ausgeführt wird, der auf dem Mac oder einem angeschlossenen iOS-Gerät ausgeführt wird. Visual Studio ordnet die Eigenschaften des StaticLibrary-Projekts den Befehlszeilenschaltern und -optionen zu, die zum Erstellen, Verknüpfen und Debuggen auf der iOS-Zielplattform verwendet werden. Um ausführliche Informationen zur Compiler-Befehlszeilenoption zu erhalten, öffnen Sie das Dialogfeld **Eigenschaftenseiten** für das MyOpenGLESApp.iOS.StaticLibrary-Projekt.
+   Visual Studio überträgt die Projektdateien und sendet Befehle an den Remoteclient, um die App mithilfe von Xcode zu erstellen. Der Remoteclient sendet Buildstatusinformationen zurück an Visual Studio. Nachdem die App erfolgreich erstellt wurde, können Sie Visual Studio verwenden, um Befehle zum Ausführen und Debuggen der App zu senden. Der Debugger in Visual Studio steuert die App, die auf dem an Ihren Mac angeschlossenen iOS-Gerät ausgeführt wird. Visual Studio ordnet die Eigenschaften des StaticLibrary-Projekts den Optionen zu, die zum Kompilieren, Verknüpfen und Debuggen auf der iOS-Zielplattform verwendet werden. Um ausführliche Informationen zur Compiler-Befehlszeilenoption zu erhalten, öffnen Sie das Dialogfeld **Eigenschaftenseiten** für das MyOpenGLESApp.iOS.StaticLibrary-Projekt.
 
 ## <a name="customize-your-apps"></a>Anpassen der Apps
 
@@ -147,4 +177,4 @@ Um IntelliSense für eine bestimmte Projektplattform anzuzeigen, wählen Sie das
 
 ![Dropdownelement zum Wechseln des Projektkontexts im Editor](../cross-platform/media/cppmdd_opengles_contextswitcher.png)
 
-IntelliSense-Probleme im aktuellen Projekt sind durch eine rote Wellenlinie gekennzeichnet. Probleme in anderen Projekten sind durch eine violette Wellenlinie gekennzeichnet. Standardmäßig unterstützt Visual Studio keine farbliche Kennzeichnung von Code bzw. kein IntelliSense für Java- oder Objective-C-Dateien. Sie können jedoch weiterhin die Quelldateien und die Ressourcen ändern, um den Anwendungsnamen, das Symbol und weitere Implementierungsdetails festzulegen.
+IntelliSense-Probleme im vom aktuellen Projekt verwendeten Code sind durch eine rote Wellenlinie gekennzeichnet. Probleme in anderen Projekten sind durch eine violette Wellenlinie gekennzeichnet. Visual Studio unterstützt weder eine farbliche Kennzeichnung von Code noch IntelliSense für Java- oder Objective-C-Dateien. Sie können jedoch weiterhin die Quelldateien und die Ressourcen ändern, um den Anwendungsnamen, das Symbol und weitere Implementierungsdetails festzulegen.

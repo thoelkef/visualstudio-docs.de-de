@@ -1,6 +1,6 @@
 ---
 title: 'Schritt 1: Erstellen eines Projekts und Hinzufügen einer Tabelle zum Formular'
-ms.date: 11/04/2016
+ms.date: 05/31/2019
 ms.topic: conceptual
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bac96a61a5c071a01f1584911ba41cd84e87da7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 64ebd8469eb763af9565609dd680ba1e256ed6c5
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979554"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501145"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Schritt 1: Erstellen eines Projekts und Hinzufügen einer Tabelle zum Formular
 
@@ -27,33 +27,55 @@ Der erste Schritt beim Erstellen eines Vergleichsspiels besteht darin, das Proje
 
 1. Wählen Sie auf der Menüleiste **Datei** > **Neu** > **Projekt** aus.
 
+1. Wählen Sie im Dialogfeld **Neues Projekt** im linken Bereich **Visual C#** oder **Visual Basic** aus, und klicken Sie dann auf **Windows-Desktop**.
+
+1. Wählen Sie in der Liste der Vorlagen die Vorlage **Windows Forms-App (.NET Framework)** aus, nennen Sie die Vorlage *MatchingGame*, und klicken Sie anschließend auf die Schaltfläche **OK**.
+
+    Je nach der gewählten Programmiersprache wird ein Formular mit dem Namen *Form1.cs* oder *Form1.vb* angezeigt.
+
+   > [!NOTE]
+   > Wenn Ihnen die Vorlage **Windows Forms-App (.NET Framework)** nicht angezeigt wird, verwenden Sie den Visual Studio-Installer, um die Workload **.NET Desktop-Entwicklung** zu installieren.<br/><br/>![Die Workload „.NET Desktopentwicklung“ im Visual Studio-Installer](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Weitere Informationen finden Sie im Artikel [Installieren von Visual Studio](../install/install-visual-studio.md).
+
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
 1. Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
 
-1. Geben Sie im Suchfeld den Begriff „WPF“ ein, wählen Sie **WPF-App (.Net Framework)** und dann **Weiter** aus.
+   ![Fenster „Neues Projekt erstellen“ anzeigen](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-   (Wenn Ihnen die Vorlage **WPF-App (.NET Framework)** nicht angezeigt wird, verwenden Sie den Visual Studio-Installer, um die Workload **.NET Desktop-Entwicklung** zu installieren.)
+1. Geben Sie im Fenster **Neues Projekt erstellen** im Suchfeld den Begriff *Windows Forms* ein.
 
-1. Benennen Sie das Projekt mit **MatchingGame**, und klicken Sie auf **Erstellen**.
+1. Wählen Sie die Vorlage **Windows Forms-App (.NET Framework)** aus, und klicken Sie dann auf **Weiter**.
+
+   ![Screenshot: Auswählen der Visual Basic-Vorlage für die Windows Forms-App (.NET Framework)](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
+
+   > [!NOTE]
+   > Wenn Sie die **Windows Forms-App (.NET Framework)** nicht sehen, können Sie sie aus dem Fenster **Neues Projekt erstellen** installieren. Wählen Sie in der Meldung **Sie finden nicht, wonach Sie suchen?** den Link **Weitere Tools und Features installieren** aus.
+   >
+   > ![Link „Weitere Tools und Features installieren“ aus der Meldung „Sie finden nicht, wonach Sie suchen“ im Fenster „Neues Projekt erstellen“](../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   >
+   > Wählen Sie anschließend im Visual Studio-Installer die Workload **.NET Desktopentwicklung** aus.
+   >
+   > ![Die Workload „.NET Core“ im Visual Studio-Installer](../ide/media/install-dot-net-desktop-env.png)
+   >
+   > Wählen Sie anschließend die Schaltfläche **Ändern** im Visual Studio-Installer aus. Möglicherweise werden Sie aufgefordert, Ihre Arbeit zu speichern; wenn dies der Fall ist, führen Sie das aus. Wählen Sie als Nächstes **Weiter** aus, um die Workload zu installieren.
+
+1. Geben Sie im Fenster **Neues Projekt konfigurieren** im Feld **Projektname** den Namen *MatchingGame* ein. Wählen Sie anschließend **Erstellen** aus.
 
 ::: moniker-end
 
-2. Wenn Sie nicht Visual Studio Express verwenden, müssen Sie zuerst eine Programmiersprache auswählen. Wählen Sie in der Liste **Installierte Vorlagen** entweder **Visual C#** oder **Visual Basic** aus.
+## <a name="to-set-properties-for-a-form"></a>So legen Sie Eigenschaften für ein Formular fest
 
-3. Wählen Sie in der Liste der Projektvorlagen die Vorlage **Windows Forms-Anwendung** aus, nennen Sie das Projekt **MatchingGame**, und wählen Sie anschließend die Schaltfläche **OK** aus.
-
-4. Legen Sie im Fenster **Eigenschaften** die folgenden Formulareigenschaften fest.
+1. Legen Sie im Fenster **Eigenschaften** die folgenden Formulareigenschaften fest.
 
    1. Ändern Sie die Eigenschaft **Text** des Formulars von **Form1** in **Matching Game** (Gesellschaftsspiel). Dieser Text wird oben im Spielfenster angezeigt.
 
    2. Legen Sie die Größe des Formulars auf eine Breite von 550 Pixeln und eine Höhe von 550 Pixeln fest. Hierzu können Sie entweder die Eigenschaft **Size** (Größe) auf **550, 550** festlegen oder die Ecke des Formulars ziehen, bis die richtige Größe in der rechten unteren Ecke der integrierten Entwicklungsumgebung (IDE) angezeigt wird.
 
-5. Zeigen Sie die Toolbox an, indem Sie die Registerkarte **Toolbox** auf der linken Seite der IDE auswählen.
+2. Zeigen Sie die Toolbox an, indem Sie die Registerkarte **Toolbox** auf der linken Seite der IDE auswählen.
 
-6. Ziehen Sie ein <xref:System.Windows.Forms.TableLayoutPanel>-Steuerelement aus der Kategorie **Container** der Toolbox, und legen Sie dann die folgenden Eigenschaften dafür fest.
+3. Ziehen Sie ein <xref:System.Windows.Forms.TableLayoutPanel>-Steuerelement aus der Kategorie **Container** der Toolbox, und legen Sie dann die folgenden Eigenschaften dafür fest.
 
    1. Legen Sie die Eigenschaft **BackColor** (Hintergrundfarbe) auf **CornflowerBlue** (CornflowerBlue) fest. Dazu öffnen Sie mit dem Dropdownpfeil neben der Eigenschaft **BackColor** im Fenster **Eigenschaften** das Dialogfeld **BackColor**.  Wählen Sie anschließend die Registerkarte **Web** im Dialogfeld **BackColor**, um eine Liste verfügbarer Farbnamen anzuzeigen.
 
@@ -72,7 +94,7 @@ Der erste Schritt beim Erstellen eines Vergleichsspiels besteht darin, das Proje
 
       TableLayoutPanel sollte nun ein 4x4-Raster sein, mit sechzehn quadratischen Zellen gleicher Größe. In diesen Zeilen und Spalten werden später die Symbolbilder angezeigt.
 
-7. Stellen Sie sicher, dass TableLayoutPanel im Formular-Editor ausgewählt ist. **tableLayoutPanel1** sollte dann oben im Fenster **Eigenschaften** angezeigt werden. Wenn das TableLayoutPanel-Steuerelement nicht ausgewählt ist, wählen Sie es auf dem Formular oder im Dropdown-Steuerelement oben in **Eigenschaften** aus.
+4. Stellen Sie sicher, dass TableLayoutPanel im Formular-Editor ausgewählt ist. **tableLayoutPanel1** sollte dann oben im Fenster **Eigenschaften** angezeigt werden. Wenn das TableLayoutPanel-Steuerelement nicht ausgewählt ist, wählen Sie es auf dem Formular oder im Dropdown-Steuerelement oben in **Eigenschaften** aus.
 
     Während das TableLayoutPanel-Steuerelement ausgewählt ist, öffnen Sie die Toolbox, und fügen Sie ein <xref:System.Windows.Forms.Label>-Steuerelement (aus der Kategorie **Allgemeine Steuerelemente**) in der oberen linken TableLayoutPanel-Zelle hinzu. Das Label-Steuerelement sollte jetzt in der IDE ausgewählt sein. Legen Sie die folgenden Eigenschaften für das Bezeichnungsfeld fest:
 
@@ -84,7 +106,7 @@ Der erste Schritt beim Erstellen eines Vergleichsspiels besteht darin, das Proje
 
    4. Legen Sie die Eigenschaft **TextAlign** (Textausrichtung) auf **MiddleCenter** (Zellenmitte) fest, indem Sie neben der Eigenschaft erst die Dropdownschaltfläche und dann die mittlere Schaltfläche wählen. Dadurch wird sichergestellt, dass das Symbol in der Mitte der Zelle angezeigt wird
 
-   5. Wählen Sie die Eigenschaft **Font** (Schriftart) aus. Eine Schaltfläche mit einem Auslassungszeichen (**…**) wird angezeigt.
+   5. Wählen Sie die Eigenschaft **Font** (Schriftart) aus. Eine Schaltfläche mit einem Auslassungszeichen ( **…** ) wird angezeigt.
 
    6. Klicken Sie auf die Schaltfläche mit Auslassungspunkten, und legen Sie **Schrift** auf **Webdings**, **Schriftschnitt** auf **Fett** und **Größe** auf **48** fest.
 
@@ -95,14 +117,14 @@ Der erste Schritt beim Erstellen eines Vergleichsspiels besteht darin, das Proje
        > [!NOTE]
        > Die Schriftart Webdings ist eine Symbolschriftart, die mit dem Betriebssystem Windows geliefert wird. Im Vergleichsspiel muss der Spieler Symbolpaare finden, und deshalb zeigen Sie die entsprechenden Symbole mithilfe dieser Schriftart an. Probieren Sie anstelle von **c** für die Eigenschaft **Text** andere Buchstaben aus, um herauszufinden, welche Symbole angezeigt werden. Ein Ausrufezeichen ist eine Spinne, ein großes N ist ein Auge, und ein Komma ist eine Chilischote.
 
-8. Wählen Sie das Label-Steuerelement aus und kopieren Sie es in die nächste Zelle im TableLayoutPanel. (Drücken Sie **STRG**+**C**, oder klicken Sie in der Menüleiste auf **Bearbeiten** > **Kopieren**.) Fügen Sie das Steuerelement anschließend ein. (Drücken Sie **STRG**+**V**, oder klicken Sie in der Menüleiste auf **Bearbeiten** > **Einfügen**.) Eine Kopie der ersten Bezeichnung wird in der zweiten Zelle im TableLayoutPanel angezeigt. Fügen Sie das Steuerelement erneut ein. In der dritten Zelle wird eine weitere Bezeichnung angezeigt. Fahren Sie mit dem Einfügen der Label-Steuerelemente fort, bis alle Zellen ausgefüllt sind.
+5. Wählen Sie das Label-Steuerelement aus und kopieren Sie es in die nächste Zelle im TableLayoutPanel. (Drücken Sie **STRG**+**C**, oder klicken Sie in der Menüleiste auf **Bearbeiten** > **Kopieren**.) Fügen Sie das Steuerelement anschließend ein. (Drücken Sie **STRG**+**V**, oder klicken Sie in der Menüleiste auf **Bearbeiten** > **Einfügen**.) Eine Kopie der ersten Bezeichnung wird in der zweiten Zelle im TableLayoutPanel angezeigt. Fügen Sie das Steuerelement erneut ein. In der dritten Zelle wird eine weitere Bezeichnung angezeigt. Fahren Sie mit dem Einfügen der Label-Steuerelemente fort, bis alle Zellen ausgefüllt sind.
 
    > [!NOTE]
    > Wenn Sie zu viele Einfügungen vornehmen, fügt die IDE dem TableLayoutPanel eine neue Zeile für das neue Label-Steuerelement hinzu. Sie können dies rückgängig machen. Drücken Sie die Tasten **STRG**+**Z**, oder klicken Sie in der Menüleiste auf **Bearbeiten** > **Rückgängig**.
 
     Als Nächstes wird das Formular angelegt. Es sollte aussehen wie die folgende Abbildung.
 
-    ![Anfangszustand des Gedächtnisspiels](../ide/media/express_tut4step1.png) Anfangszustand des Gedächtnisspiels
+    ![Anfangszustand des Formulars für das Vergleichsspiel](../ide/media/express_tut4step1.png)<br/>   Anfangszustand des Formulars für das Vergleichsspiel
 
 ## <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben
 
