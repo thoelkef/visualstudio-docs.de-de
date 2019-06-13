@@ -20,19 +20,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d396d56aea8be3724078223261a3b6eb8835692
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 1a160d28a3953196a53673b64ae7d9ef9974a731
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445383"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747432"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integration in Visual Studio (MSBuild)
 Visual Studio enthält [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] , um verwaltete Projekte zu laden und zu erstellen. Da das Projekt über [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ausgeführt wird, können nahezu alle Projekte im Format von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]erfolgreich verwendet werden, selbst wenn das Projekt über ein anderes Tool erstellt wurde und über einen angepassten Buildprozess verfügt.
 
  In diesem Artikel werden bestimmte Aspekte des Hostens von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] erläutert, die beim Anpassen von Projekten und *TARGETS*-Dateien berücksichtigt werden sollten, die Sie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] laden und erstellen möchten. Dadurch können Sie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Funktionen wie IntelliSense sowie Debugging in Ihrem benutzerdefinierten Projekt einsetzen.
 
- Weitere Informationen über C++-Projekte finden Sie unter [Projektdateien](/cpp/ide/project-files).
+ Weitere Informationen über C++-Projekte finden Sie unter [Projektdateien](/cpp/build/reference/project-files).
 
 ## <a name="project-file-name-extensions"></a>Projektdateierweiterungen
  *MSBuild.exe* erkennt jede Projektdateierweiterung, die dem Muster *.\*PROJ* entspricht. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] erkennt jedoch nur eine Untergruppe dieser Projektdateierweiterungen, über die das zum Laden des Projekts verwendete sprachspezifische Projektsystem festgelegt wird. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verfügt nicht über ein sprachunabhängiges [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] -basiertes Projektsystem.
@@ -165,7 +165,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
   - `OriginalItemSpec`: Enthält die ursprüngliche Elementspezifikation des Verweises.
 
-  - `ResolvedFrom`wird auf "{TargetFrameworkDirectory}" festgelegt, wenn es über das Verzeichnis [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] aufgelöst wurde.
+  - `ResolvedFrom`, um "{TargetFrameworkDirectory}" festgelegt wird, wenn sie aus .NET Framework-Verzeichnis aufgelöst wurde.
 
 - COM-Verweise:
 

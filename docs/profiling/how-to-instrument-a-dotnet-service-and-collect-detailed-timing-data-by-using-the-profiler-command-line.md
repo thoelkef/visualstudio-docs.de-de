@@ -7,16 +7,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: fd5f58b7cd10ee1eb6312f9badf89797c21f1a0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0cd767e505af7e5d503695a1e7aea65dbfe62027
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973915"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747821"
 ---
 # <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Vorgehensweise: Instrumentieren eines .NET-Diensts und Sammeln ausführlicher Zeitsteuerungsdaten über die Profiler-Befehlszeile
 
-In diesem Artikel wird beschrieben, wie Sie mit den Befehlszeilentools der Visual Studio-Profilerstellungstools einen [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Dienst instrumentieren und ausführliche Zeitsteuerungsdaten sammeln können.
+Dieser Artikel beschreibt, wie Sie verwenden Visual Studio-Profilerstellungstools-Befehlszeilentools zum Instrumentieren eines .NET Framework-Diensts und Sammeln ausführlicher Zeitsteuerungsdaten.
 
 > [!NOTE]
 > Mit der Instrumentationsmethode kann kein Profil für einen Dienst erstellt werden, wenn der Dienst nach dem Start des Computers nicht neu gestartet werden kann, z. B. ein Dienst, der nur gleichzeitig mit dem Betriebssystem gestartet wird.
@@ -25,7 +25,7 @@ In diesem Artikel wird beschrieben, wie Sie mit den Befehlszeilentools der Visua
 >
 > Das Hinzufügen von Ebeneninteraktionsdaten zu einer Profilerstellung erfordert bestimmte Verfahren der Befehlszeilenprofilerstellungstools. Siehe [Erfassen von Ebeneninteraktionsdaten](../profiling/adding-tier-interaction-data-from-the-command-line.md).
 
-Um mit der Instrumentierungsmethode ausführliche Zeitsteuerungsdaten aus einem [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Dienst zu erfassen, generieren Sie mit dem Tool [VSInstr.exe](../profiling/vsinstr.md) eine instrumentierte Version der Komponente. Sie ersetzen dann die nicht instrumentierte Version des Diensts durch die instrumentierte Version und stellen dabei sicher, dass der Dienst für den manuellen Start konfiguriert ist. Mit [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) können Sie die globalen Umgebungsvariablen für die Profilerstellung initialisieren und den Hostcomputer neu starten. Starten Sie dann den Profiler.
+Um ausführliche Zeitsteuerungsdaten aus einer .NET Framework-Dienst mit der instrumentierungsmethode zu erfassen, verwenden Sie die [VSInstr.exe](../profiling/vsinstr.md) Tool, um eine instrumentierte Version der Komponente generieren. Sie ersetzen dann die nicht instrumentierte Version des Diensts durch die instrumentierte Version und stellen dabei sicher, dass der Dienst für den manuellen Start konfiguriert ist. Mit [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) können Sie die globalen Umgebungsvariablen für die Profilerstellung initialisieren und den Hostcomputer neu starten. Starten Sie dann den Profiler.
 
 Wenn der Dienst gestartet wird, werden die Zeitsteuerungsdaten automatisch in einer Datendatei erfasst. Sie können die Datensammlung während der Profilerstellungssitzung anhalten und fortsetzen.
 
@@ -39,7 +39,7 @@ Um eine Profilerstellungssitzung zu beenden, deaktivieren Sie den Dienst und fah
 
 3. Ersetzen Sie die ursprüngliche Binärdatei durch die instrumentierte Version. Stellen Sie im Windows Dienststeuerungs-Manager sicher, dass der Starttyp auf Manuell eingestellt ist.
 
-4. Initialisieren Sie die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Umgebungsvariablen für die Profilerstellung. Typ:
+4. Initialisieren Sie die .NET Framework-Umgebungsvariablen für die Profilerstellung. Typ:
 
      **VSPerfClrEnv /globaltraceon**
 
@@ -51,9 +51,9 @@ Um eine Profilerstellungssitzung zu beenden, deaktivieren Sie den Dienst und fah
 
      **VSPerfCmd /start:trace /output:** `OutputFile` [`Options`]
 
-   - Mit der Option [/start](../profiling/start.md)**:trace** wird der Profiler initialisiert.
+   - Mit der Option [/start](../profiling/start.md) **:trace** wird der Profiler initialisiert.
 
-   - Die Option [/output](../profiling/output.md)**:**`OutputFile` ist zusammen mit **/start** erforderlich. `OutputFile` gibt den Namen und den Speicherort der Profilerstellungsdaten (*VSP*-Datei) an.
+   - Die Option [/output](../profiling/output.md) **:** `OutputFile` ist zusammen mit **/start** erforderlich. `OutputFile` gibt den Namen und den Speicherort der Profilerstellungsdaten (*VSP*-Datei) an.
 
      Sie können jede der folgenden Optionen zusammen mit der Option **/start:trace** verwenden.
 
@@ -62,9 +62,9 @@ Um eine Profilerstellungssitzung zu beenden, deaktivieren Sie den Dienst und fah
 
      | Option | Beschreibung |
      | - | - |
-     | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` | Gibt die Domäne und den Benutzernamen des Kontos an, das Besitzer des profilierten Prozesses ist. Diese Option ist nur erforderlich, wenn der Prozess als Benutzer ausgeführt wird, der nicht der angemeldete Benutzer ist. Der Prozessbesitzer ist auf der Registerkarte **Prozesse** in der Spalte **Benutzername** des Windows Task-Managers aufgeführt. |
+     | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | Gibt die Domäne und den Benutzernamen des Kontos an, das Besitzer des profilierten Prozesses ist. Diese Option ist nur erforderlich, wenn der Prozess als Benutzer ausgeführt wird, der nicht der angemeldete Benutzer ist. Der Prozessbesitzer ist auf der Registerkarte **Prozesse** in der Spalte **Benutzername** des Windows Task-Managers aufgeführt. |
      | [/crosssession](../profiling/crosssession.md) | Aktiviert die Profilerstellung für Prozesse in anderen Sitzungen. Diese Option ist erforderlich, wenn die Anwendung in einer anderen Sitzung ausgeführt wird. Die Sitzungs-ID ist auf der Registerkarte **Prozesse** in der Spalte **Sitzungs-ID** des Windows Task-Managers aufgeführt. **/CS** kann als Abkürzung für **/crosssession** angegeben werden. |
-     | [/waitstart](../profiling/waitstart.md)[**:**`Interval`] | Gibt die Anzahl der Sekunden an, die auf die Initialisierung des Profilers gewartet werden soll, bevor ein Fehler zurückgegeben wird. Wenn `Interval` nicht angegeben wird, wartet der Profiler unendlich lange. Standardmäßig erfolgt die Rückgabe von **/start** sofort. |
+     | [/waitstart](../profiling/waitstart.md)[ **:** `Interval`] | Gibt die Anzahl der Sekunden an, die auf die Initialisierung des Profilers gewartet werden soll, bevor ein Fehler zurückgegeben wird. Wenn `Interval` nicht angegeben wird, wartet der Profiler unendlich lange. Standardmäßig erfolgt die Rückgabe von **/start** sofort. |
      | [/globaloff](../profiling/globalon-and-globaloff.md) | Fügen Sie der Befehlszeile **/start** die Option **globaloff** hinzu, um den Profiler mit angehaltener Datensammlung zu starten. Mit **/globalon** setzen Sie die Profilerstellung fort. |
      | [/counter](../profiling/counter.md) **:** `Config` | Sammelt Informationen aus dem in Config angegebenen Prozessorleistungsindikator. Informationen zu Leistungsindikatoren werden den Daten hinzugefügt, die bei jedem Profilerstellungsereignis gesammelt werden. |
      | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Gibt einen Windows-Leistungsindikator an, dessen Daten während der Profilerstellung gesammelt werden sollen. |
@@ -81,9 +81,9 @@ Wenn der Dienst ausgeführt wird, können Sie die *VSPerfCmd.exe*-Optionen verwe
 
     |Option|Beschreibung|
     |------------|-----------------|
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Die Datensammlung wird für alle Prozesse gestartet (**/globalon**) oder beendet (**/globaloff**).|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Die Datensammlung wird für den mit der Prozess-ID (`PID`) angegebenen Prozess gestartet (**/processon**) oder beendet (**/processoff**).|
-    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Die Datensammlung wird für den mit der Prozess-ID (`TID`) angegebenen Prozess gestartet (**/threadon**) oder beendet (**/threadoff**).|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Die Datensammlung wird für alle Prozesse gestartet ( **/globalon**) oder beendet ( **/globaloff**).|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Die Datensammlung wird für den mit der Prozess-ID (`PID`) angegebenen Prozess gestartet ( **/processon**) oder beendet ( **/processoff**).|
+    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Die Datensammlung wird für den mit der Prozess-ID (`TID`) angegebenen Prozess gestartet ( **/threadon**) oder beendet ( **/threadoff**).|
 
 ## <a name="end-the-profiling-session"></a>Beenden der Profilerstellungssitzung
 

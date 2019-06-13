@@ -17,12 +17,12 @@ ms.assetid: 0ee89c58-c900-48fc-a6a2-65ace00e8bab
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5bf42ec3c706282adf2752d21c0c121f89c2ed5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 87d093a540e3c6fae6a80761a5b945c572bd890d
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557254"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744779"
 ---
 # <a name="capabilities-of-dotfuscator"></a>Funktionen von Dotfuscator
 
@@ -37,7 +37,7 @@ Dotfuscator Community unterstützt eine Vielfalt von .NET-Assemblys und Anwendun
 ## <a name="intellectual-property-protection"></a>Schutz geistigen Eigentums
 
 Die Bauweise, das Verhalten und die Implementierung Ihrer Anwendung gehören zum geistigen Eigentum (intellectual property, IP).
-Dennoch sind Anwendungen, die für .NET Framework erstellt wurden, im Grunde offene Bücher – denn es ist sehr einfach, .NET-Assemblys rückzuentwickeln, [da sie hochrangige Metadaten und Zwischencode enthalten][assemblies].
+Allerdings sind die Anwendungen für .NET erstellt wurden, im Grunde offene Bücher; Es ist einfach auf .NET-Assemblys rückzuentwickeln, [da sie hochrangige Metadaten und Zwischencode enthalten][assemblies].
 
 Dotfuscator Community enthält eine grundlegende [.NET-Obfuskation ][obfuscation] in Form von [Umbenennung][renaming].
 Das Verbergen Ihres Codes mit Dotfuscator senkt das Risiko des unautorisierten Zugriffs auf Quellcode durch Reverse Engineering, da wichtige Namensinformationen nicht mehr öffentlich sind.
@@ -50,7 +50,7 @@ Dotfuscator kann [Antidebugverhalten][debug] in Ihre Anwendung einfügen, um die
 ## <a name="application-integrity-protection"></a>Schutz der Anwendungsintegrität
 
 Zusätzlich zum Schutz Ihres Quellcodes ist es außerdem wichtig, sicherzustellen, dass Ihre Anwendung für das verwendet wird, für das sie entworfen wurde.
-Angreifen können versuchen, die Kontrolle über Ihre Anwendung zu übernehmen, um Lizenzierungsrichtlinien zu umgehen (d.h. Softwarepiraterie), damit sie vertrauliche Daten, die von der Anwendung verarbeitet werden, stehlen oder manipulieren oder das Verhalten der Anwendung ändern können.
+Angreifer können versuchen, zu Kapern Ihrer Anwendung zu umgehen (d.h. Softwarepiraterie), zu stehlen oder manipulieren sensible Daten, die von der Anwendung behandelt oder das Verhalten der Anwendung zu ändern.
 
 Dotfuscator Community kann [Anwendungsvalidierungscode][checks] in Ihre Assemblys einfügen, wie z. B. die Maßnahmen [Anti-Tamper][tamper], [Anti-Debug][debug] und [Schutz von Geräten ohne Rootzugriff][root].
 Wenn ein ungültiger Anwendungszustand erkannt wird, kann der Validierungscode [Anwendungscode aufrufen, um angemessen auf die Situation zu reagieren][check-app].

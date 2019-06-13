@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84874328c2f7a20a79370ff210eb51d966ec4648
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2e918521a404914c2acc9a8fd6283815b1ee324e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791655"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744939"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 
@@ -57,14 +57,14 @@ Informationen zum programmgesteuerten Zugreifen auf diese Eigenschaft finden Sie
 
 ### <a name="target-framework-all-configurations"></a>Zielframework (alle Konfigurationen)
 
-Gibt die .NET Framework-Version an, auf die die Anwendung ausgerichtet ist. Diese Option kann unterschiedliche Werte aufweisen, je nachdem, welche Versionen von .NET Framework auf dem Computer installiert sind.
+Gibt die Version von .NET, die die Anwendung ausgerichtet ist. Diese Option kann unterschiedliche Werte aufweisen, je nachdem, die welche Versionen von .NET auf Ihrem Computer installiert sind.
 
-Der Standardwert entspricht dem Zielframework, das Sie beim Erstellen des Projekts angegeben haben.
+Für .NET Framework-Projekten entspricht der Standardwert des Zielframeworks, die Sie beim Erstellen des Projekts angegeben haben.
 
 > [!NOTE]
 > Die im Dialogfeld [Erforderliche Komponenten](../../ide/reference/prerequisites-dialog-box.md) aufgelisteten Pakete mit erforderlichen Komponenten werden automatisch festgelegt, wenn Sie das Dialogfeld zum ersten Mal öffnen. Wenn im Nachhinein Änderungen am Zielframework des Projekts vorgenommen werden, müssen Sie die erforderlichen Komponenten entsprechend dem neuen Zielframework manuell auswählen.
 
-Weitere Informationen finden Sie unter [Vorgehensweise: Bestimmte .NET Framework-Version als Ziel](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) und [Übersicht über die Ausrichtung auf mehrere Zielversionen in Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).
+Weitere Informationen finden Sie unter [Vorgehensweise: .NET Framework-Version als Ziel](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) und [Übersicht über .NET Framework](../../ide/visual-studio-multi-targeting-overview.md).
 
 ### <a name="application-type"></a>Anwendungstyp
 
@@ -90,7 +90,7 @@ Wenn es sich bei dem Projekt um eine WPF-Browseranwendung handelt, heißt diese 
 
 Wenn **Anwendungsframework aktivieren** deaktiviert ist, wird diese Liste zu **Startobjekt** und zeigt sowohl Formulare als auch Klassen oder Module mit einer `Sub Main` an.
 
-**Startobjekt**  definiert den Einstiegspunkt, der aufgerufen werden soll, wenn die Anwendung geladen wird. Dieser wird üblicherweise entweder auf das Hauptformular der Anwendung oder auf die `Sub Main`-Prozedur festgelegt, die beim Start der Anwendung ausgeführt werden soll. Da Klassenbibliotheken über keinen Einstiegspunkt verfügen, ist ihre einzige Option für diese Eigenschaft **(Keine)**. Weitere Informationen finden Sie unter [/main](/dotnet/visual-basic/reference/command-line-compiler/main). Informationen zum programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
+**Startobjekt**  definiert den Einstiegspunkt, der aufgerufen werden soll, wenn die Anwendung geladen wird. Dieser wird üblicherweise entweder auf das Hauptformular der Anwendung oder auf die `Sub Main`-Prozedur festgelegt, die beim Start der Anwendung ausgeführt werden soll. Da Klassenbibliotheken über keinen Einstiegspunkt verfügen, ist ihre einzige Option für diese Eigenschaft **(Keine)** . Weitere Informationen finden Sie unter [/main](/dotnet/visual-basic/reference/command-line-compiler/main). Informationen zum programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
 
 ### <a name="icon"></a>Symbol
 
@@ -153,7 +153,7 @@ Wählen Sie **Beim Schließen des Hauptfensters** aus, um festzulegen, dass die 
 
 ### <a name="splash-screen"></a>Begrüßungsbildschirm
 
-Wählen Sie das Formular aus, das Sie als Begrüßungsbildschirm verwenden möchten. Sie müssen zuvor mithilfe eines Formulars oder einer Vorlage einen Begrüßungsbildschirm erstellt haben. Der Standardwert lautet **(Keine)**.
+Wählen Sie das Formular aus, das Sie als Begrüßungsbildschirm verwenden möchten. Sie müssen zuvor mithilfe eines Formulars oder einer Vorlage einen Begrüßungsbildschirm erstellt haben. Der Standardwert lautet **(Keine)** .
 
 ### <a name="view-application-events"></a>Anwendungsereignisse anzeigen
 

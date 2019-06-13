@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45a88ccb599ce709cae5e58b4fd2678b34706362
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f8866b4a2518c8c4d58f26b625e45a0188498021
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969113"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746528"
 ---
 # <a name="output-window"></a>Ausgabefenster
 
@@ -65,9 +65,9 @@ Wählen Sie im Dialogfeld **Optionen** auf der Seite **Projekte und Projektmappe
 
 Bei bestimmten im [Befehlsfenster](../../ide/reference/command-window.md) aufgerufenen Features und Befehlen der IDE erfolgt die Ausgabe im **Ausgabefenster**. Ausgaben von externen Tools, z.B. *BAT*- und *COM*-Dateien, die normalerweise im Eingabeaufforderungsfenster angezeigt werden, werden an einen **Ausgabebereich** geroutet, wenn Sie die Option **Ausgabefenster verwenden** in [Verwalten externer Tools](../../ide/managing-external-tools.md) auswählen. Viele weitere Meldungstypen können ebenfalls in **Ausgabe**-Bereichen angezeigt werden. Wenn beispielsweise Transact-SQL-Syntax in einer gespeicherten Prozedur anhand einer Zieldatenbank überprüft wird, werden die Ergebnisse im Fenster **Ausgabe** angezeigt.
 
-Sie können auch eigene Anwendungen so programmieren, dass sie Diagnosemeldungen zur Laufzeit in einen **Ausgabe**-Bereich ausgeben. Verwenden Sie dazu Member der <xref:System.Diagnostics.Debug>-Klasse oder der <xref:System.Diagnostics.Trace>-Klasse im <xref:System.Diagnostics>-Namespace der .NET Framework-Klassenbibliothek. Wenn Sie Debugkonfigurationen von einer Projektmappe oder einem Projekt erstellen, wird die Ausgabe von Membern der <xref:System.Diagnostics.Debug>-Klasse angezeigt. Beim Erstellen einer Debug- oder Releasekonfiguration wird die Ausgabe von Membern der <xref:System.Diagnostics.Trace>-Klasse angezeigt. Weitere Informationen finden Sie unter [Diagnosemeldungen im Ausgabefenster](../../debugger/diagnostic-messages-in-the-output-window.md).
+Sie können auch eigene Anwendungen so programmieren, dass sie Diagnosemeldungen zur Laufzeit in einen **Ausgabe**-Bereich ausgeben. Zu diesem Zweck verwenden Sie die Member der <xref:System.Diagnostics.Debug> Klasse oder <xref:System.Diagnostics.Trace> -Klasse in der <xref:System.Diagnostics> Namespace der .NET API. Wenn Sie Debugkonfigurationen von einer Projektmappe oder einem Projekt erstellen, wird die Ausgabe von Membern der <xref:System.Diagnostics.Debug>-Klasse angezeigt. Beim Erstellen einer Debug- oder Releasekonfiguration wird die Ausgabe von Membern der <xref:System.Diagnostics.Trace>-Klasse angezeigt. Weitere Informationen finden Sie unter [Diagnosemeldungen im Ausgabefenster](../../debugger/diagnostic-messages-in-the-output-window.md).
 
-In C++ können Sie benutzerdefinierte Buildschritte und Buildereignisse erstellen, deren Warnungen und Fehler im Bereich **Ausgabe** angezeigt und gezählt werden. Durch Drücken von **F1** in einer Ausgabezeile wird ein entsprechendes Hilfethema angezeigt. Weitere Informationen finden Sie unter [Formatieren der Ausgabe eines benutzerdefinierten Buildschritts](/cpp/ide/formatting-the-output-of-a-custom-build-step-or-build-event).
+In C++ können Sie benutzerdefinierte Buildschritte und Buildereignisse erstellen, deren Warnungen und Fehler im Bereich **Ausgabe** angezeigt und gezählt werden. Durch Drücken von **F1** in einer Ausgabezeile wird ein entsprechendes Hilfethema angezeigt. Weitere Informationen finden Sie unter [Formatieren der Ausgabe eines benutzerdefinierten Buildschritts](/cpp/build/reference/formatting-the-output-of-a-custom-build-step-or-build-event).
 
 ## <a name="scroll-behavior"></a>Scrollverhalten
 

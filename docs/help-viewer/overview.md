@@ -19,16 +19,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca207f06640d5ef2df02d966b733d3065c80fce6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c79b685382eff3e6ca5a37fa9fb087136595dc76
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975692"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746958"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 
-Sie können Inhalte für verschiedene Produkte und Technologien mithilfe von Microsoft Help Viewer auf einem lokalen Computer installieren und anzeigen. Diese Produkte enthalten Visual Studio, .NET Framework, Sprachreferenzen, SQL Server und die Windows-Entwicklung. Help Viewer bietet Ihnen folgende Möglichkeiten:
+Sie können Inhalte für verschiedene Produkte und Technologien mithilfe von Microsoft Help Viewer auf einem lokalen Computer installieren und anzeigen. Diese Produkte umfassen Visual Studio, .NET, Sprachreferenz, SQL Server und Windows-Entwicklung. Help Viewer bietet Ihnen folgende Möglichkeiten:
 
 - Laden Sie Inhalte herunter, die auch als „Bücher“ bezeichnet werden. Dies kann nützlich sein, wenn Sie offline arbeiten müssen und dennoch Zugriff auf die Dokumentation benötigen.
 

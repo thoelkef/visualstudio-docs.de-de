@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 931a9c01bf7c8854d78e1385dbbd9a27b98cfdd7
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 5960c84e2cb389580f2d7b0f476da2a456e62585
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65615434"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745866"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Vorgehensweise: Erstellen eines datengesteuerten Komponententests
 
@@ -89,7 +89,7 @@ public TestContext TestContext
 In Ihrer Testmethode greifen Sie auf die Daten durch die Indexereigenschaft `DataRow` des `TestContext` zu.
 
 > [!NOTE]
-> .NET Core unterstützt das [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute)-Attribut nicht. Wenn Sie versuchen, in einem .NET Core- oder UWP-Komponententestprojekt in dieser Weise auf Testdaten zuzugreifen, wird ein Fehler in der Art von **"'TestContext' enthält keine Definition für 'DataRow', und es konnte keine zugängliche Erweiterungsmethode 'DataRow' gefunden werden, die ein erstes Argument vom Typ 'TestContext' akzeptiert (fehlt möglicherweise eine using-Anweisung oder ein Assemblyverweis?)"**.
+> .NET Core unterstützt das [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute)-Attribut nicht. Wenn Sie versuchen, in einem .NET Core- oder UWP-Komponententestprojekt in dieser Weise auf Testdaten zuzugreifen, wird ein Fehler in der Art von **"'TestContext' enthält keine Definition für 'DataRow', und es konnte keine zugängliche Erweiterungsmethode 'DataRow' gefunden werden, die ein erstes Argument vom Typ 'TestContext' akzeptiert (fehlt möglicherweise eine using-Anweisung oder ein Assemblyverweis?)"** .
 
 ## <a name="write-the-test-method"></a>Schreiben der Testmethode
 
@@ -179,4 +179,4 @@ Wenn die zu testende Methode korrigiert und den Test erneut ausgeführt wird, wi
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>
 - [Ausführen von Komponententests für Code](../test/unit-test-your-code.md)
 - [Ausführen von Komponententests mit dem Test-Explorer](../test/run-unit-tests-with-test-explorer.md)
-- [Schreiben von Komponententests für .NET Framework mit dem Microsoft-Komponententestframework für verwalteten Code](../test/unit-test-your-code.md)
+- [Schreiben von Komponententests mit dem Microsoft-Komponententestframework für .NET](../test/unit-test-your-code.md)

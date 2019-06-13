@@ -13,63 +13,53 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b23de974e7d8587cc7185eb9bb01d029fc2dcc27
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3271befd714f1b07c357426a931d62a7a854cbec
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569724"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745009"
 ---
 # <a name="code-analysis-project-designer"></a>Codeanalyse, Projekt-Designer
-Enthält das Codeanalysetool, das Sie für Ihren Code verwenden können. Das Tool erstellt Berichte zu Informationen zu Ihren Assemblys, wie z.B. Verstöße gegen die Programmier- und Entwurfsregeln, die in den Microsoft .NET Framework-Entwurfsrichtlinien festgelegt sind.
+
+Enthält das Codeanalysetool, das Sie für Ihren Code verwenden können. Das Tool meldet Informationen zu Ihren Assemblys, z. B. Verstöße gegen die Programmier- und Entwurfsregeln Regeln in der Microsoft .NET-Entwurfsrichtlinien dargelegten.
 
 ## <a name="uielement-list"></a>UIElement-Liste
- Codeanalyse aktivieren
 
+ Aktivieren Sie Code Analysis\
  Aktiviert oder deaktiviert die Codeanalyse für Ihr Projekt.
 
- Entwurfsregeln
-
+ Entwerfen von Rules\
  Aktiviert oder deaktiviert die Entwurfsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
 
- Globalisierungsregeln
-
+ Globalisierung Rules\
  Aktiviert oder deaktiviert die Globalisierungsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
 
- Interoperabilitätsregeln
-
+ Interoperabilität Rules\
  Aktiviert oder deaktiviert Interoperabilitätsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
 
- Wartbarkeitsregeln
-
+ Verwaltbarkeit Rules\
  Aktiviert oder deaktiviert Wartbarkeitsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
 
- Mobilitätsregeln
-
+ Mobility Rules\
  Aktiviert oder deaktiviert Mobilitätsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
 
- Benennungsregeln
-
+ Benennen Rules\
  Aktiviert oder deaktiviert Benennungsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
 
- Leistungsregeln
-
+ Leistung Rules\
  Aktiviert oder deaktiviert Leistungsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
 
- Portabilitätsregeln
-
+ Portabilität Rules\
  Aktiviert oder deaktiviert Portabilitätsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
 
- Zuverlässigkeitsregeln
-
+ Zuverlässigkeit Rules\
  Aktiviert oder deaktiviert Zuverlässigkeitsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
 
- Sicherheitsregeln
-
+ Sicherheit Rules\
  Aktiviert oder deaktiviert Sicherheitsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
 
- Nutzungsregeln
-
+ Nutzung Rules\
  Aktiviert oder deaktiviert Nutzungsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
 
 ## <a name="see-also"></a>Siehe auch
