@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55e035ab0c3702c571b69b555d99adbf7cb0b7e9
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: 13463f38b963ff29ed6fc57fba3eac7865da70ba
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66501170"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820918"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Standardtastenkombinationen in Visual Studio
 
@@ -59,6 +59,7 @@ Die folgenden Tastenkombinationen sind *global*, können also in jedem Visual St
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
+|Build.BuildSelection|**STRG+B** (Visual Studio 2019)|
 |Build.BuildSolution|**STRG+UMSCHALT+B**|
 |Build.Cancel|**STRG+UNTBR**|
 |Build.Compile|**STRG+F7**|
@@ -77,7 +78,6 @@ Die folgenden Tastenkombinationen sind *global*, können also in jedem Visual St
 |Debug.ApplyCodeChanges|**ALT+F10**|
 |Debug.Autos|**STRG+ALT+V, A**|
 |Debug.BreakAll|**STRG+ALT+UNTBR**|
-|Debug.BreakatFunction|**STRG+B**|
 |Debug.Breakpoints|**STRG+ALT+B**|
 |Debug.CallStack|**STRG+ALT+C**|
 |Debug.DeleteAllBreakpoints|**STRG+UMSCHALT+F9**|
@@ -86,6 +86,7 @@ Die folgenden Tastenkombinationen sind *global*, können also in jedem Visual St
 |Debug.DOMExplorer|**STRG+ALT+V, D**|
 |Debug.EnableBreakpoints|**STRG+F9**|
 |Debug.Exceptions|**STRG+ALT+E**|
+|Debug.FunctionBreakpoint|**STRG+K, B** (Visual Studio 2019)<br />**STRG**+**B** (Visual Studio 2017)|
 |Debug.GoToPreviousCallorIntelliTraceEvent|**STRG+UMSCHALT+F11**|
 |Debug.Graphics.StartDiagnostics|**ALT+F5**|
 |Debug.Immediate|**STRG+ALT+I**|
@@ -109,7 +110,7 @@ Die folgenden Tastenkombinationen sind *global*, können also in jedem Visual St
 |Debug.ParallelWatch3|**STRG+UMSCHALT+D, 3**|
 |Debug.ParallelWatch4|**STRG+UMSCHALT+D, 4**|
 |Debug.Processes|**STRG+ALT+Z**|
-|Debug.QuickWatch|**UMSCHALTTASTE+F9**<br /><br /> oder<br /><br /> **STRG+ALT+Q**|
+|Debug.QuickWatch|**UMSCHALT+F9** oder **STRG+ALT+Q**|
 |Debug.RefreshWindowsapp|**STRG+UMSCHALT+R**|
 |Debug.Registers|**STRG+ALT+G**|
 |Debug.Restart|**STRG+UMSCHALT+F5**|
@@ -269,9 +270,9 @@ Die folgenden Tastenkombinationen sind *global*, können also in jedem Visual St
 |Project.AddNewItem|**STRG+UMSCHALT+A**|
 |Project.ClassWizard|**STRG+UMSCHALT+X**|
 |Project.Override|**STRG+ALT+EINFG**|
-|Project.Previewchanges|**ALT+;** , dann **Alt+C**|
-|Project.Publishselectedfiles|**ALT+;** , dann **Alt+P**|
-|Project.Replaceselectedfilesfromserver|**ALT+;** , dann **Alt+R**|
+|Project.Previewchanges|**ALT+;**, dann **Alt+C**|
+|Project.Publishselectedfiles|**ALT+;**, dann **Alt+P**|
+|Project.Replaceselectedfilesfromserver|**ALT+;**, dann **Alt+R**|
 
 ### <a name="bkmk_projectContext"></a> Kontextmenüs für Projekte und Projektmappen
 
@@ -295,9 +296,9 @@ Die folgenden Tastenkombinationen sind *global*, können also in jedem Visual St
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
-|SolutionExplorer.OpenFilesFilter|**STRG+[** , **O** (Buchstabe „O“)<br /><br /> oder<br /><br /> **STRG+[** , **STRG+O** (Buchstabe „O“)|
-|SolutionExplorer.PendingChangesFilter|**STRG+[** , **P**<br /><br /> oder<br /><br /> **STRG+[** , **STRG+P**|
-|SolutionExplorer.SyncWithActiveDocument|**STRG+[** , **S**<br /><br /> oder<br /><br /> **STRG+[** , **STRG+S**|
+|SolutionExplorer.OpenFilesFilter|**STRG+[**, **O** (Buchstabe „O“)<br /><br /> oder<br /><br /> **STRG+[**, **STRG+O** (Buchstabe „O“)|
+|SolutionExplorer.PendingChangesFilter|**STRG+[**, **P**<br /><br /> oder<br /><br /> **STRG+[**, **STRG+P**|
+|SolutionExplorer.SyncWithActiveDocument|**STRG+[**, **S**<br /><br /> oder<br /><br /> **STRG+[**, **STRG+S**|
 
 ### <a name="bkmk_team"></a> Team
 

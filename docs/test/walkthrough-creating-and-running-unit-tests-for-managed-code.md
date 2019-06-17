@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 7c588966a957cf6d3127e03c67ad1a1d605fabce
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: b04a8eabd5b7bdbc5053a30a95609b86b6e61674
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401733"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820947"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code
 
@@ -34,7 +34,7 @@ Dieser Artikel führt Sie durch das Erstellen, Ausführen und Anpassen verschied
 
    Das Dialogfeld **Neues Projekt** wird angezeigt.
 
-3. Wählen Sie unter der Kategorie **Visual C#** > **.NET Core** aus, und wählen Sie dann die Projektvorlage **Konsolen-App (.NET Core)** .
+3. Wählen Sie unter der Kategorie **Visual C#** > **.NET Core** aus, und wählen Sie dann die Projektvorlage **Konsolen-App (.NET Core)**.
 
 4. Benennen Sie das Projekt **Bank**, und klicken Sie auf **OK**.
 
@@ -51,7 +51,7 @@ Dieser Artikel führt Sie durch das Erstellen, Ausführen und Anpassen verschied
 
 2. Wählen Sie im Startfenster **Neues Projekt erstellen** aus.
 
-3. Wählen Sie die C#-Projektvorlage **Konsolen-App (.NET Core)** , und klicken Sie dann auf **Weiter**.
+3. Wählen Sie die C#-Projektvorlage **Konsolen-App (.NET Core)**, und klicken Sie dann auf **Weiter**.
 
 4. Benennen Sie das Projekt **Bank**, und klicken Sie dann auf **Erstellen**.
 
@@ -147,7 +147,7 @@ Sie haben nun ein Projekt mit Methoden, die Sie testen können. Die Tests in die
 
 ::: moniker range="vs-2017"
 
-2. Erweitern Sie im Dialogfeld **Neues Projekt** erst die Option **Installiert** und dann die Option **Visual C#** , und klicken Sie anschließend auf **Test**.
+2. Erweitern Sie im Dialogfeld **Neues Projekt** erst die Option **Installiert** und dann die Option **Visual C#**, und klicken Sie anschließend auf **Test**.
 
 3. Wählen Sie in der Liste der Vorlagen **MSTest Test Project (.NET Core)** aus.
 
@@ -179,19 +179,23 @@ Sie haben nun ein Projekt mit Methoden, die Sie testen können. Die Tests in die
 
 ## <a name="create-the-test-class"></a>Die Testklasse erstellen
 
-Erstellen Sie eine Testklasse, um die `BankAccount`-Klasse zu überprüfen. Sie können die Datei *UnitTest1.cs* verwenden, die von der Projektvorlage generiert wurde; Datei und Klasse sollten jedoch einen aussagekräftigeren Namen erhalten. Sie können das in einem Schritt erledigen, indem Sie die Datei im **Projektmappen-Explorer** umbenennen.
+Erstellen Sie eine Testklasse, um die `BankAccount`-Klasse zu überprüfen. Sie können die Datei *UnitTest1.cs* verwenden, die von der Projektvorlage generiert wurde; Datei und Klasse sollten jedoch einen aussagekräftigeren Namen erhalten.
 
 ### <a name="rename-a-file-and-class"></a>Umbenennen einer Datei und Klasse
 
 1. Wählen Sie zum Umbenennen der Datei im **Projektmappen-Explorer** im BankTests-Projekt die Datei *UnitTest1.cs* aus. Klicken Sie im Kontextmenü auf die Option **Umbenennen**, und benennen Sie dann die Datei in *BankAccountTests.cs* um.
 
-   ::: moniker range="vs-2017"
+::: moniker range="vs-2017"
 
-   Wählen Sie im angezeigten Dialogfeld **Nein**.
+2. Zum Umbenennen der Klasse wählen Sie **Ja** in dem Dialogfeld, in dem Sie gefragt werden, ob Sie auch Verweise auf das Codeelement umbenennen möchten.
 
-   ::: moniker-end
+::: moniker-end
 
-2. Wenn die-Klasse umbenennen möchten, zeigen Sie im Code-Editor mit Cursor auf `UnitTest1`, und drücken Sie **F2** (oder klicken Sie rechts, und wählen Sie **Umbenennen**). Geben Sie **BankAccountTests** ein, und drücken Sie dann die **EINGABETASTE**.
+::: moniker range=">=vs-2019"
+
+2. Um die Klasse umzubenennen, setzen Sie im Code-Editor den Cursor auf `UnitTest1`, klicken Sie mit der rechten Maustaste, und wählen Sie **Umbenennen** aus. Geben Sie **BankAccountTests** ein, und drücken Sie dann die **EINGABETASTE**.
+
+::: moniker-end
 
 Die Datei *BankAccountTests.cs* enthält nun den folgenden Code:
 
@@ -336,7 +340,6 @@ Erstellen Sie eine Testmethode, um die Richtigkeit zu bestätigen, wenn der Abbu
 
 ```csharp
 [TestMethod]
-[ExpectedException(typeof(ArgumentOutOfRangeException))]
 public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
 {
     // Arrange
@@ -344,14 +347,12 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
     double debitAmount = -100.00;
     BankAccount account = new BankAccount("Mr. Bryan Walton", beginningBalance);
 
-    // Act
-    account.Debit(debitAmount);
-
-    // Assert is handled by the ExpectedException attribute on the test method.
+    // Act and assert
+    Assert.ThrowsException<System.ArgumentOutOfRangeException>(() => account.Debit(debitAmount));
 }
 ```
 
-Verwenden Sie das <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute>-Attribut, um zu bestätigen, dass die richtige Ausnahme ausgelöst wurde. Das Attribut führt zu einem Fehlschlag des Tests, es sei denn, eine <xref:System.ArgumentOutOfRangeException> wird ausgelöst. Wenn Sie die zu testende Methode kurzzeitig ändern, um eine generischere <xref:System.ApplicationException> auszulösen, wenn der Abbuchungsbetrag unter 0 liegt, wird der Test richtig ausgeführt und schlägt fehl.
+Verwenden Sie die <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A>-Methode, um zu bestätigen, dass die richtige Ausnahme ausgelöst wurde. Diese Methode führt zu einem Fehler des Tests, es sei denn, eine <xref:System.ArgumentOutOfRangeException> wird ausgelöst. Wenn Sie die zu testende Methode kurzzeitig ändern, um eine generischere <xref:System.ApplicationException> auszulösen, wenn der Abbuchungsbetrag unter 0 liegt, wird der Test richtig ausgeführt und schlägt fehl.
 
 Gehen Sie folgendermaßen vor, um das Verhalten zu testen, wenn der abzubuchende Betrag höher ist als das Guthaben:
 
@@ -361,7 +362,7 @@ Gehen Sie folgendermaßen vor, um das Verhalten zu testen, wenn der abzubuchende
 
 3. Legen Sie `debitAmount` auf eine Zahl größer als das Guthaben fest.
 
-Wenn die beiden Testmethoden ausgeführt werden, deutet dies darauf hin, dass der Test einwandfrei funktioniert.
+Führen Sie die zwei Tests aus, und stellen Sie sicher, dass sie erfolgreich abgeschlossen werden.
 
 ### <a name="continue-the-analysis"></a>Fortführen der Analyse
 
@@ -387,20 +388,20 @@ public const string DebitAmountLessThanZeroMessage = "Debit amount is less than 
 Ändern Sie dann die beiden Bedingungsanweisungen in der `Debit`-Methode:
 
 ```csharp
-    if (amount > m_balance)
-    {
-        throw new ArgumentOutOfRangeException("amount", amount, DebitAmountExceedsBalanceMessage);
-    }
+if (amount > m_balance)
+{
+    throw new System.ArgumentOutOfRangeException("amount", amount, DebitAmountExceedsBalanceMessage);
+}
 
-    if (amount < 0)
-    {
-        throw new ArgumentOutOfRangeException("amount", amount, DebitAmountLessThanZeroMessage);
-    }
+if (amount < 0)
+{
+    throw new System.ArgumentOutOfRangeException("amount", amount, DebitAmountLessThanZeroMessage);
+}
 ```
 
 ### <a name="refactor-the-test-methods"></a>Umgestalten der Testmethoden
 
-Entfernen Sie das Testmethodenattribut `ExpectedException`, erfassen Sie stattdessen die ausgelöste Ausnahme, und überprüfen Sie die zugewiesene Meldung. Mithilfe der <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName>-Methode können Sie zwei Zeichenfolgen miteinander vergleichen.
+Gestalten Sie die Testmethoden um, indem Sie den Aufruf von <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType> entfernen. Umschließen Sie den Aufruf von `Debit()` in einem `try/catch`-Block, fangen Sie die spezifische erwartete Ausnahme ab, und verifizieren Sie die zugehörige Meldung. Mithilfe der <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName>-Methode können Sie zwei Zeichenfolgen miteinander vergleichen.
 
 `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` wird wie folgt formuliert:
 
@@ -418,7 +419,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
     {
         account.Debit(debitAmount);
     }
-    catch (ArgumentOutOfRangeException e)
+    catch (System.ArgumentOutOfRangeException e)
     {
         // Assert
         StringAssert.Contains(e.Message, BankAccount.DebitAmountExceedsBalanceMessage);
@@ -448,7 +449,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
     {
         account.Debit(debitAmount);
     }
-    catch (ArgumentOutOfRangeException e)
+    catch (System.ArgumentOutOfRangeException e)
     {
         // Assert
         StringAssert.Contains(e.Message, BankAccount.DebitAmountExceedsBalanceMessage);
