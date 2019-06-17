@@ -97,3 +97,6 @@
 ## [Report a Problem (Melden eines Problems)](report-a-problem.md)
 ## [Problembehandlung: Warum kann ich nicht alle Vorlagen anzeigen?](troubleshooting-no-templates.md)
 ## [Problembehandlung: Updater enthält Fehler, die beim Abrufen von Informationen auftreten](updater-troubleshooting.md)
+
+# [Anmerkungen zu dieser Version](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes)
+# [Anmerkungen zur Vorschauversion](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-preview-relnotes)
