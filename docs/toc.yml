@@ -417,23 +417,6 @@
                       href: ide/reference/wrap-align-indent-parameters.md
                 - name: 'Exemplarische Vorgehensweise: Generieren von Code aus Verwendung'
                   href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
-            - name: Tipps und Tricks
-              items:
-                - name: Produktivitätstipps
-                  href: ide/productivity-tips-for-visual-studio.md
-                - name: Tastenkombinationen
-                  items:
-                    - name: Tastenkombinationen
-                      href: ide/tips-and-tricks-for-visual-studio.md
-                    - name: Identifizieren und Anpassen von Tastenkombinationen
-                      href: ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md
-                    - name: Tastenkombinationen für häufig verwendete Befehle
-                      href: ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md
-                    - name: Alle Tastenkombinationen
-                      href: ide/default-keyboard-shortcuts-in-visual-studio.md
-                - name: 'Tipps für C#-Entwickler'
-                  displayName: ReSharper
-                  href: ide/csharp-developer-productivity.md
             - name: IntelliSense
               items:
                 - name: Verwendung von IntelliSense
@@ -677,6 +660,20 @@
       href: extensibility/visual-studio-sdk.md
     - name: Analyse und Modellarchitektur...
       href: modeling/analyze-and-model-your-architecture.md
+    - name: Tipps und Tricks
+      items:
+        - name: Features zur Steigerung der Produktivität
+          href: ide/productivity-features.md
+        - name: Tastenkombinationen für die Produktivität
+          href: ide/productivity-shortcuts.md
+        - name: 'Tipps für C#-Entwickler'
+          displayName: ReSharper
+          href: ide/csharp-developer-productivity.md
+        - name: Anpassen der Tastenkombinationen
+          href: ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md
+        - name: Ausschließliches Verwenden der Tastatur
+          displayName: accessibility
+          href: ide/reference/how-to-use-the-keyboard-exclusively.md
     - name: Personalisieren
       items:
         - name: Anpassen der IDE
@@ -685,6 +682,7 @@
         - name: 'Schnellstart: Personalisieren Sie Design und Textfarben'
           href: ide/quickstart-personalize-the-ide.md
         - name: Umgebungseinstellungen
+          displayName: profiles
           href: ide/environment-settings.md
         - name: Synchronisierte Einstellungen
           href: ide/synchronized-settings-in-visual-studio.md
@@ -704,7 +702,7 @@
           displayName: 'marketplace, gallery, vsix'
         - name: Verwalten externer Tools
           href: ide/managing-external-tools.md
-    - name: Leistung
+    - name: Leistung von Visual Studio
       items:
         - name: Optimieren der Leistung
           href: ide/optimize-visual-studio-performance.md
@@ -720,14 +718,95 @@
           href: ide/reference/accessibility-features-of-visual-studio.md
         - name: Festlegen von IDE-Barrierefreiheitsoptionen
           href: ide/reference/how-to-set-ide-accessibility-options.md
-        - name: Ausschließliches Verwenden der Tastatur
-          href: ide/reference/how-to-use-the-keyboard-exclusively.md
         - name: Tipps und Tricks zu Barrierefreiheit
           href: ide/reference/accessibility-tips-and-tricks.md
         - name: Produkte und Dienste von Microsoft für Barrierefreiheit
           href: ide/reference/accessibility-products-and-services-from-microsoft.md
 - name: Referenz
   items:
+    - name: Tastenkombinationen
+      items:
+        - name: Beliebte Befehle
+          displayName: keyboard shortcuts
+          href: ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md
+        - name: Alle Befehle
+          displayName: keyboard commands
+          href: ide/default-keyboard-shortcuts-in-visual-studio.md
+    - name: Visual Studio-Befehle
+      items:
+        - name: Referenz
+          displayName: Visual Studio commands
+          href: ide/reference/visual-studio-commands.md
+        - name: Befehlsaliase
+          href: ide/reference/visual-studio-command-aliases.md
+        - name: Befehl „Vorhandenes Element hinzufügen“
+          href: ide/reference/add-existing-item-command.md
+        - name: Befehl „Vorhandenes Projekt hinzufügen“
+          href: ide/reference/add-existing-project-command.md
+        - name: Befehl „Neues Element hinzufügen“
+          href: ide/reference/add-new-item-command.md
+        - name: Befehl „Alias“
+          href: ide/reference/alias-command.md
+        - name: Befehl „Anweisung auswerten“
+          href: ide/reference/evaluate-statement-command.md
+        - name: Befehl „Suchen“
+          href: ide/reference/find-command.md
+        - name: Befehl „In Dateien suchen“
+          href: ide/reference/find-in-files-command.md
+        - name: Befehl „Gehe zu“
+          href: ide/reference/go-to-command.md
+        - name: Befehl Einstellungen importieren und exportieren
+          href: ide/reference/import-and-export-settings-command.md
+        - name: Befehl „Aufrufliste auflisten“
+          href: ide/reference/list-call-stack-command.md
+        - name: Befehl „Disassemblierung auflisten“
+          href: ide/reference/list-disassembly-command.md
+        - name: Befehl „Arbeitsspeicher auflisten“
+          href: ide/reference/list-memory-command.md
+        - name: Befehl „Module auflisten“
+          href: ide/reference/list-modules-command.md
+        - name: Befehl „Registrierungen auflisten“
+          href: ide/reference/list-registers-command.md
+        - name: Befehl „Quelle auflisten“
+          href: ide/reference/list-source-command.md
+        - name: Befehl „Threads auflisten“
+          href: ide/reference/list-threads-command.md
+        - name: Befehl „Befehlsfensterausgaben protokollieren“
+          href: ide/reference/log-command-window-output-command.md
+        - name: Befehl „Neue Datei“
+          href: ide/reference/new-file-command.md
+        - name: Befehl „Datei öffnen“
+          href: ide/reference/open-file-command.md
+        - name: Projekt öffnen (Befehl)
+          href: ide/reference/open-project-command.md
+        - name: Befehl „Drucken“
+          href: ide/reference/print-command.md
+        - name: Befehl „Aktuellen Wert anzeigen“
+          href: ide/reference/quick-watch-command.md
+        - name: Befehl „Ersetzen“
+          href: ide/reference/replace-command.md
+        - name: Befehl „In Dateien ersetzen“
+          href: ide/reference/replace-in-files-command.md
+        - name: Aktuellen Prozess festlegen
+          href: ide/reference/set-current-process.md
+        - name: Befehl „Aktuellen Stapelrahmen festlegen“
+          href: ide/reference/set-current-stack-frame-command.md
+        - name: Befehl „Aktuellen Thread festlegen“
+          href: ide/reference/set-current-thread-command.md
+        - name: Befehl „Wurzel setzen“
+          href: ide/reference/set-radix-command.md
+        - name: Befehl „Shell“
+          href: ide/reference/shell-command.md
+        - name: Befehl „ShowWebBrowser“
+          href: ide/reference/showwebbrowser-command.md
+        - name: Befehl „Start“
+          href: ide/reference/start-command.md
+        - name: Befehl „Symbolpfad“
+          href: ide/reference/symbol-path-command.md
+        - name: Befehl „Haltepunkt ein/aus“
+          href: ide/reference/toggle-breakpoint-command.md
+        - name: Befehl „Überwachung“
+          href: ide/reference/watch-command.md
     - name: Allgemeine Elemente der Benutzeroberfläche
       displayName: Windows and dialogs
       items:
@@ -963,7 +1042,7 @@
               href: ide/reference/toolbox-data-tab.md
             - name: 'Toolbox, Registerkarte „HTML“'
               href: ide/reference/toolbox-html-tab.md
-    - name: Devenv-Befehlszeilenschalter
+    - name: Devenv-Befehlszeilenparameter
       items:
         - name: Referenz
           displayName: devenv command-line switches
@@ -1012,81 +1091,6 @@
           href: ide/reference/upgrade-devenv-exe.md
         - name: '-UseEnv („devenv.exe“)'
           href: ide/reference/useenv-devenv-exe.md
-    - name: Visual Studio-Befehle
-      items:
-        - name: Referenz
-          displayName: Visual Studio commands
-          href: ide/reference/visual-studio-commands.md
-        - name: Visual Studio Command Aliases
-          href: ide/reference/visual-studio-command-aliases.md
-        - name: Befehl "Vorhandenes Element hinzufügen"
-          href: ide/reference/add-existing-item-command.md
-        - name: Befehl "Vorhandenes Projekt hinzufügen"
-          href: ide/reference/add-existing-project-command.md
-        - name: Befehl "Neues Element hinzufügen"
-          href: ide/reference/add-new-item-command.md
-        - name: Befehl "Alias"
-          href: ide/reference/alias-command.md
-        - name: Befehl "Anweisung auswerten"
-          href: ide/reference/evaluate-statement-command.md
-        - name: Befehl "Suchen"
-          href: ide/reference/find-command.md
-        - name: Befehl "In Dateien suchen"
-          href: ide/reference/find-in-files-command.md
-        - name: Befehl "Gehe zu"
-          href: ide/reference/go-to-command.md
-        - name: Befehl Einstellungen importieren und exportieren
-          href: ide/reference/import-and-export-settings-command.md
-        - name: Befehl "Aufrufliste auflisten"
-          href: ide/reference/list-call-stack-command.md
-        - name: Befehl "Disassemblierung auflisten"
-          href: ide/reference/list-disassembly-command.md
-        - name: Befehl "Arbeitsspeicher auflisten"
-          href: ide/reference/list-memory-command.md
-        - name: Befehl "Module auflisten"
-          href: ide/reference/list-modules-command.md
-        - name: Befehl "Registrierungen auflisten"
-          href: ide/reference/list-registers-command.md
-        - name: Befehl "Quelle auflisten"
-          href: ide/reference/list-source-command.md
-        - name: Befehl "Threads auflisten"
-          href: ide/reference/list-threads-command.md
-        - name: Befehl "Befehlsfensterausgaben protokollieren"
-          href: ide/reference/log-command-window-output-command.md
-        - name: Befehl "Neue Datei"
-          href: ide/reference/new-file-command.md
-        - name: Befehl "Datei öffnen"
-          href: ide/reference/open-file-command.md
-        - name: Befehl "Projekt öffnen"
-          href: ide/reference/open-project-command.md
-        - name: Befehl "Drucken"
-          href: ide/reference/print-command.md
-        - name: Befehl "Aktuellen Wert anzeigen"
-          href: ide/reference/quick-watch-command.md
-        - name: Befehl "Ersetzen"
-          href: ide/reference/replace-command.md
-        - name: Befehl "In Dateien ersetzen"
-          href: ide/reference/replace-in-files-command.md
-        - name: Aktuellen Prozess festlegen
-          href: ide/reference/set-current-process.md
-        - name: Befehl "Aktuellen Stapelrahmen festlegen"
-          href: ide/reference/set-current-stack-frame-command.md
-        - name: Befehl "Aktuellen Thread festlegen"
-          href: ide/reference/set-current-thread-command.md
-        - name: Befehl "Wurzel setzen"
-          href: ide/reference/set-radix-command.md
-        - name: Befehl "Shell"
-          href: ide/reference/shell-command.md
-        - name: Befehl "ShowWebBrowser"
-          href: ide/reference/showwebbrowser-command.md
-        - name: Befehl "Start"
-          href: ide/reference/start-command.md
-        - name: Befehl "Symbolpfad"
-          href: ide/reference/symbol-path-command.md
-        - name: Befehl "Haltepunkt ein/aus"
-          href: ide/reference/toggle-breakpoint-command.md
-        - name: Befehl "Überwachung"
-          href: ide/reference/watch-command.md
     - name: Sicherheit
       items:
         - name: Entwickeln sicherer Anwendungen
