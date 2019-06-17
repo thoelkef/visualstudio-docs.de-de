@@ -4,7 +4,7 @@
   items:
     - name: Übersicht
       href: code-analysis-for-managed-code-overview.md
-    - name: Roslyn-Analysetools (quellanalyse)
+    - name: Roslyn-Analysetools (Quellanalyse)
       items:
         - name: Übersicht
           displayName: 'roslyn analyzers, source analysis'
@@ -17,7 +17,7 @@
           href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
         - name: FAQ
           href: analyzers-faq.md
-    - name: Binäre Analysen (Analyse von statischem Code)
+    - name: Binäre Analysetools (statische Codeanalyse)
       items:
         - name: Übersicht
           displayName: 'static code analysis, binary analysis'
@@ -28,13 +28,13 @@
           href: how-to-run-code-analysis-manually-for-managed-code.md
         - name: Konfiguration
           items:
-            - name: Konfigurieren der Codeanalyse für binäre Analyzer
+            - name: Konfigurieren der Codeanalyse für binäre Analysetools
               href: how-to-configure-code-analysis-for-a-managed-code-project.md
             - name: Aktivieren der automatischen Codeanalyse
               href: how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md
             - name: Anpassen des Codeanalysewörterbuchs
               href: how-to-customize-the-code-analysis-dictionary.md
-        - name: Suppression
+        - name: Unterdrücken
           items:
             - name: Unterdrücken von Warnungen
               href: in-source-suppression-overview.md
@@ -115,7 +115,7 @@
               href: fxcop-analyzer-options.md
         - name: FAQ
           href: fxcop-analyzers-faq.md
-    - name: Migrieren von statischen Analyse zu FxCop-Analysen
+    - name: Migrieren von der statischen Analyse zu FxCop-Analysetools
       items:
         - name: Übersicht
           href: fxcop-analyzers.yml
@@ -137,13 +137,13 @@
           href: working-in-the-code-analysis-rule-set-editor.md
     - name: Eincheckrichtlinien
       items:
-        - name: 'Vorgehensweise: Erstellen oder die Überprüfung auf Updates in den Richtlinien'
+        - name: Erstellen oder Aktualisieren von Eincheckrichtlinien
           href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
-        - name: Implementieren von Eincheckrichtlinien für die Analyse
+        - name: Implementieren von Eincheckrichtlinien für die Codeanalyse
           href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
-        - name: Erzwingen von wartbarem code
+        - name: Erzwingen von wartungsfähigem Code
           href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
-        - name: Synchronisieren von projektregelsätzen mit der Eincheckrichtlinie
+        - name: Synchronisieren von Projektregelsätzen mit der Eincheckrichtlinie
           href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
         - name: Versionskompatibilität
           href: version-compatibility-for-code-analysis-check-in-policies.md
@@ -154,7 +154,7 @@
           href: code-metrics-values.md
         - name: Generieren von Codemetrikdaten
           href: how-to-generate-code-metrics-data.md
-        - name: Arbeiten Sie mit Codemetrikdaten
+        - name: Arbeiten mit Codemetrikdaten
           href: working-with-code-metrics-data.md
     - name: Referenz
       items:
@@ -188,7 +188,7 @@
               href: native-recommended-rules-rule-set.md
             - name: Regelsatz für Sicherheitsregeln für verwalteten Code
               href: security-rules-rule-set-for-managed-code.md
-        - name: Warnungen für verwalteten code
+        - name: Verwalteten von Codewarnungen
           items:
             - name: Übersicht
               href: code-analysis-for-managed-code-warnings.md
@@ -805,23 +805,23 @@
           href: using-sal-annotations-to-reduce-c-cpp-code-defects.md
         - name: Verstehen von SAL
           href: understanding-sal.md
-        - name: Kommentieren von Funktionsparametern und Rückgabewerten
+        - name: Hinzufügen einer Anmerkung zu Funktionsparametern und Rückgabewerten
           href: annotating-function-parameters-and-return-values.md
-        - name: Das Funktionsverhalten kommentieren
+        - name: Hinzufügen einer Anmerkung zum Funktionsverhalten
           href: annotating-function-behavior.md
-        - name: 'Mit Anmerkungen versehen, Strukturen und Klassen'
+        - name: Hinzufügen einer Anmerkung zu Strukturen und Klassen
           href: annotating-structs-and-classes.md
-        - name: Kommentieren Sie Sperrverhalten
+        - name: Hinzufügen einer Anmerkung zum Sperrverhalten
           href: annotating-locking-behavior.md
-        - name: 'Geben Sie an, wann und wo eine Anmerkung gültig ist'
+        - name: 'Angeben, wann und wo eine Anmerkung gültig ist'
           href: specifying-when-and-where-an-annotation-applies.md
         - name: Systeminterne Funktionen
           href: intrinsic-functions.md
         - name: Empfohlene Vorgehensweisen und Beispiele (SAL)
           href: best-practices-and-examples-sal.md
-    - name: Geben Sie zusätzlicher Codeinformationen mit "__analysis_assume an"
+    - name: Angeben zusätzlicher Codeinformationen mit „_Analysis_assume“
       href: how-to-specify-additional-code-information-by-using-analysis-assume.md
-    - name: C++Core Richtlinien Checker Warnungen
+    - name: Warnungen bei der Überprüfung von C++ Core Guidelines
       items:
         - name: Übersicht
           displayName: C++ core guidelines checker warnings
@@ -980,7 +980,7 @@
           href: C26497.md
         - name: C26498
           href: C26498.md
-    - name: C /C++ Warnungen
+    - name: C/C++-Warnungen
       items:
         - name: Übersicht
           displayName: C++ warnings

@@ -13,18 +13,18 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: d89dbc0b752c2b8c538ec53769c166b6edbd802f
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 2e5782c49f26925d9eda81f04653b1a20666c6b1
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65839827"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043462"
 ---
 1. Suchen Sie auf dem Remotecomputer, und Starten der **Remote Debugger** aus der **starten** Menü. 
    
    Wenn Sie nicht über die Administratorberechtigungen auf dem Remotecomputer verfügen, mit der rechten Maustaste die **Remotedebugger** app, und wählen **als Administrator ausführen**. Andernfalls starten Sie es normalerweise.
 
-   Möglicherweise gibt es unterschiedliche Versionen von *msvsmon.exe* in *X64*, *X32*, oder andere Ordner. Stellen Sie sicher, um die Version, die Sie benötigen zum Debuggen Ihrer app zu starten. 
+   Wenn Sie planen, fügen Sie einen Prozess, der als Administrator ausgeführt wird, oder unter einem anderen Benutzerkonto ausgeführt wird (z. B. IIS)-Konto, mit der rechten Maustaste die **Remotedebugger** app, und wählen **führen Sie als Administrator**. Weitere Informationen finden Sie unter [führen den Remotedebugger als Administrator](../remote-debugging-errors-and-troubleshooting.md#run-the-remote-debugger-as-an-administrator).
    
 1. Beim ersten Verwenden Sie den Remotedebugger zu starten (oder bevor Sie sie konfiguriert haben), die **Konfiguration für Remotedebugging** Dialogfeld wird angezeigt.  
   
