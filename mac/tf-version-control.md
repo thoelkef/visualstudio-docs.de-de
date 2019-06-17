@@ -3,16 +3,16 @@ title: Team Foundation-Versionskontrolle (TFVC)
 description: Herstellen einer Verbindung zwischen Visual Studio für Mac und Team Foundation Server/Azure DevOps mit der Team Foundation-Versionskontrolle (TFVC)
 author: conceptdev
 ms.author: crdun
-ms.date: 04/04/2019
+ms.date: 04/28/2019
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: 20c739057bcbded922df62ce00e1b0c7e07d9f75
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: c21658b6381405c05e5b0fedbb72e33f8ed72a83
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66500997"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745550"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Herstellen einer Verbindung mit der Team Foundation-Versionskontrolle
 
@@ -21,7 +21,7 @@ ms.locfileid: "66500997"
 
 Azure Repos bietet zwei Modelle der Versionskontrolle: [Git](/azure/devops/repos/git/?view=azure-devops), ein verteiltes Versionskontrollsystem oder ein zentralisiertes Versionskontrollsystem mit [Team Foundation-Versionskontrolle](/azure/devops/repos/tfvc/index?view=azure-devops) (TFVC).
 
-Visual Studio für Mac bietet volle Unterstützung für Git-Repositorys, erfordert aber einige Workarounds, um mit TFVC zu arbeiten. Wenn Sie heute TFVC für die Versionskontrolle verwenden, finden Sie hier einige Lösungen, mit denen Sie auf Ihren in TFVC gehosteten Quellcode zugreifen können.
+Visual Studio für Mac bietet volle Unterstützung für Git-Repositorys, erfordert aber einige Workarounds, um mit TFVC zu arbeiten. Wenn Sie heute TFVC für die Versionskontrolle verwenden, finden Sie hier einige Lösungen, mit denen Sie auf Ihren in TFVC gehosteten Quellcode zugreifen können:
 
 * [Verwenden von Visual Studio Code und der Azure Repos-Erweiterung für eine grafische Benutzeroberfläche](#use-visual-studio-code-and-the-azure-repos-extension)
 * [Verbinden mit Ihrem Repository über den Team Explorer Everywhere Command Line Client (TEE-CLC)](#connecting-using-the-team-explorer-everywhere-command-line-client)
@@ -44,8 +44,6 @@ Wenn Sie mit einer grafischen Oberfläche arbeiten möchten, um Ihre Dateien in 
 Wenn Sie mit der Verwendung des macOS-Terminals vertraut sind, bietet der Team Explorer Everywhere Command Line Client (TEE-CLC) eine unterstützte Möglichkeit, sich mit Ihrer Quelle in TFVC zu verbinden.
 
 Sie können die folgenden Schritte ausführen, um Ihre Verbindung zu TFVC einzurichten und Änderungen zu committen.
-
-Ein besonderer Dank gilt Chris Pilcher, einem Entwickler in unserer Community, dessen [ursprüngliche Anweisungen für den TEE-CLC](https://gist.github.com/chris-pilcher/a3f14eb081d7ab983e5c) die Grundlage für diesen Abschnitt bildeten.
 
 ### <a name="setting-up-the-tee-clc"></a>Einrichten des TEE-CLC
 
@@ -82,7 +80,7 @@ tf workspace -new MyWorkspace -collection:https://dev.azure.com/MyOrganization
 
 Die Umgebungseinstellung `TF_AUTO_SAVE_CREDENTIALS` wird verwendet, um Ihre Anmeldeinformationen zu speichern, damit Sie sie nicht mehrmals eingeben müssen. Wenn Sie nach einem Benutzernamen gefragt werden, verwenden Sie den persönlichen Zugangscode, den Sie im vorherigen Abschnitt erstellt haben, und verwenden Sie ein leeres Kennwort.
 
-Um nun eine Zuordnung Ihrer Quelldateien zu einem lokalen Ordner zu erstellen, verwenden Sie den Befehl `tf workfold`. Das folgende Beispiel bildet einen Ordner namens „WebApp.Services“ aus dem TFVC-Projekt „MyRepository“ ab und richtet ihn so ein, dass er in den lokalen Ordner ~/Projekte/ kopiert wird (d.h. einen Ordner „Projects“ im Ausgangsordner des aktuellen Benutzers).
+Um eine Zuordnung Ihrer Quelldateien zu einem lokalen Ordner zu erstellen, verwenden Sie den Befehl `tf workfold`. Das folgende Beispiel bildet einen Ordner namens „WebApp.Services“ aus dem TFVC-Projekt „MyRepository“ ab und richtet ihn so ein, dass er in den lokalen Ordner ~/Projekte/ kopiert wird (d.h. einen Ordner „Projects“ im Ausgangsordner des aktuellen Benutzers).
 
 ```bash
 tf workfold -map $/MyRepository/WebApp.Services -workspace:MyWorkspace ~/Projects/

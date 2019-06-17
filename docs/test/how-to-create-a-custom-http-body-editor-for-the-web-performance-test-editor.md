@@ -8,12 +8,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b56195ce7cb6e52433e19dc2a7ae4b42e7580724
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: 624d06dd44812269bcff1e67cf048fbb077e90ea
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66431835"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745824"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Vorgehensweise: Erstellen eines Editors für benutzerdefinierten HTTP-Text für den Webleistungstest-Editor
 
@@ -43,7 +43,7 @@ Diese Schnittstellen sind im <xref:Microsoft.VisualStudio.TestTools.WebTesting>-
 
 1. Wählen Sie unter **Eigenschaften** die Registerkarte **Anwendung** aus.
 
-1. Wählen Sie in der Dropdownliste **Zielframework** den Eintrag **.NET Framework 4** aus.
+1. Wählen Sie in der Dropdownliste **Zielframework** .NET Framework 4 (oder höher) aus.
 
 1. Das Dialogfeld **Änderung des Zielframeworks** wird angezeigt.
 
@@ -285,7 +285,7 @@ Wenn die Bearbeitung des Zeichenfolgentexts abgeschlossen ist und der Benutzer i
 
 3. Wenn Sie die Aufzeichnung beenden, erweitern Sie im Webleistungstest-Editor die Anforderung für den Webdienst, und wählen Sie die Option **Zeichenfolgentext** oder **Binärer Text** aus.
 
-4. Wählen Sie im Fenster **Eigenschaften** die Option „Zeichenfolgentext“ oder „Binärer Text“ aus, und klicken Sie anschließend auf die Auslassungspunkte **(…)** .
+4. Wählen Sie im Fenster **Eigenschaften** die Option „Zeichenfolgentext“ oder „Binärer Text“ aus, und klicken Sie anschließend auf die Auslassungspunkte **(…)**.
 
    Das Dialogfeld **HTTP-Textdaten bearbeiten** wird angezeigt.
 
