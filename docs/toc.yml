@@ -226,11 +226,7 @@
             - name: 'Angeben eines Anwendungssymbols (Visual Basic, C#)'
               href: ide/how-to-specify-an-application-icon-visual-basic-csharp.md
             - name: Festlegung eines Frameworks
-              items:
-                - name: Übersicht über die Festlegung von mehreren Zielversionen
-                  href: ide/visual-studio-multi-targeting-overview.md
-                - name: .NET Framework-Version als Ziel
-                  href: ide/how-to-target-a-version-of-the-dotnet-framework.md
+              href: ide/visual-studio-multi-targeting-overview.md
             - name: Erstellen von Vorlagen
               items:
                 - name: Erstellen von Projekt- und Elementvorlagen
@@ -405,6 +401,10 @@
                       href: ide/reference/remove-unreachable-code.md
                     - name: Umbenennen
                       href: ide/reference/rename.md
+                    - name: Teilen oder Zusammenführen von if-Anweisungen
+                      href: ide/reference/split-or-merge-if-statement.md
+                    - name: Synchronisieren von Namespace und Ordnername
+                      href: ide/reference/sync-namespace-and-folder-name.md
                     - name: Synchronisierung von Typ und Dateinamen
                       href: ide/reference/sync-type-and-file.md
                     - name: Expliziten Typ verwenden
