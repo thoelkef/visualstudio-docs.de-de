@@ -1,5 +1,5 @@
 ---
-title: Gezielte .NET Framework-Versionen
+title: Als Ziel festgelegte .NET Frameworks
 ms.date: 02/06/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,13 +18,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/06/2019
 ms.locfileid: "66747617"
 ---
-# <a name="framework-targeting-overview"></a>Übersicht über .NET Framework
+# <a name="framework-targeting-overview"></a>Übersicht über Frameworkziele
 
-In Visual Studio können Sie die Version von .NET angeben, dass Ihr Projekt verwendet werden soll. Für .NET Framework-apps auf einem anderen Computer, die Framework-Version ausgeführt wird, die die Anwendung ausgerichtet ist mit der Frameworkversion kompatibel sein müssen, die auf dem Computer installiert ist.
+In Visual Studio können Sie die Version von .NET angeben, auf die Sie das Projekt ausrichten möchten. Damit .NET Framework-Apps auf einem anderen Computer ausgeführt werden können, muss die Frameworkversion, auf die die Anwendung ausgerichtet ist, mit der Frameworkversion kompatibel sein, die auf dem Computer installiert ist.
 
-Weitere Informationen zu Zielframeworks, finden Sie unter [Zielframeworks](/dotnet/standard/frameworks).
+Weitere Informationen zu Zielframeworks finden Sie unter [Zielframeworks](/dotnet/standard/frameworks).
 
-Sie können auch eine Projektmappe erstellen, die Projekte enthält, die verschiedene Versionen von .NET abzielen. Durch frameworkziele wird gewährleistet, dass die Anwendung nur die Funktionen verwendet, die in der angegebenen Frameworkversion verfügbar ist.
+Sie können auch eine Projektmappe mit Projekten erstellen, die auf andere Versionen von .NET ausgerichtet sind. Durch Frameworkziele wird gewährleistet, dass die Anwendung nur diejenigen Funktionen verwendet, die in der angegebenen Frameworkversion verfügbar sind.
 
 > [!TIP]
 > Sie können auch Anwendungen für unterschiedliche Plattformen als Ziel verwenden. Weitere Informationen finden Sie unter [Multitargeting](../msbuild/msbuild-multitargeting-overview.md) (Festlegen von Zielversionen).
@@ -33,27 +33,27 @@ Sie können auch eine Projektmappe erstellen, die Projekte enthält, die verschi
 
 Frameworkziele umfassen folgende Funktionen:
 
-- Wenn Sie ein Projekt, der eine früheren Framework-Version abzielt öffnen, Visual Studio können automatisch aktualisieren Sie das Projekt oder lassen Sie das Ziel als-ist.
+- Wenn Sie ein Projekt öffnen, das auf eine frühere Frameworkversion ausgerichtet ist, kann Visual Studio automatisch ein Upgrade des Projekts durchführen oder die Zielversion unverändert lassen.
 
-- Wenn Sie ein Projekt .NET Framework erstellen, können Sie die Version von .NET Framework angeben, die Sie abzielen möchten.
+- Beim Erstellen eines .NET Framework-Projekts können Sie die gewünschte .NET Framework-Zielversion angeben.
 
-- Sie können [mehrere Zielframeworks](/dotnet/standard/frameworks#how-to-specify-target-frameworks) in einem einzelnen Projekt.
+- Sie können in einem einzelnen Projekt [mehrere Frameworks als Ziel](/dotnet/standard/frameworks#how-to-specify-target-frameworks) verwenden.
 
-- Sie können eine andere Version von .NET in unterschiedliche Projekte in der gleichen Projektmappe abzielen.
+- Sie können für jedes der verschiedenen Projekte in der gleichen Projektmappe eine andere .NET-Version als Ziel festlegen.
 
-- Sie können die Version von .NET, mit der ein vorhandenes Projekt ändern Ziele.
+- Sie können die .NET-Version ändern, auf die ein vorhandenes Projekt ausgerichtet ist.
 
-   Wenn Sie ändern die Version von .NET, ein Projekt ausgerichtet ist, Visual Studio mit der erforderlichen, Änderungen an verweisen und Konfigurationsdateien.
+   Wenn Sie die Version von .NET ändern, auf die ein Projekt ausgerichtet ist, führt Visual Studio alle erforderlichen Änderungen an Verweisen und Konfigurationsdateien durch.
 
-Wenn Sie sich an einem Projekt arbeiten, der eine früheren Framework-Version, Visual Studio dynamisch ausgerichtet ist, ändert die Entwicklungsumgebung wie folgt:
+Visual Studio ändert die Entwicklungsumgebung dynamisch, wenn Sie an einem Projekt arbeiten, das eine frühere Frameworkversion als Ziel hat. Dazu zählen u.a. folgende Aktionen:
 
 - Filtern von Elementen in den Dialogfeldern **Neues Element hinzufügen**, **Neuen Verweis hinzufügen** und **Dienstverweis hinzufügen**, um die Optionen auszulassen, die in der Zielversion nicht verfügbar sind.
 
 - Filtern von benutzerdefinierten Steuerelementen in der **Toolbox**, um die Steuerelemente zu entfernen, die in der Zielversion nicht verfügbar sind, und um nur die neuesten Steuerelemente anzuzeigen, wenn mehrere Steuerelemente für die Zielversion verfügbar sind.
 
-- Filtern von **IntelliSense** um Sprachfunktionen auszulassen, die in der Zielversion nicht verfügbar sind.
+- Filtern von **IntelliSense**, um Sprachfeatures auszulassen, die in der Zielversion nicht verfügbar sind.
 
-- Filtern von Eigenschaften in der **Eigenschaften** Fenster aus, um diejenigen auslassen, die in der Zielversion nicht verfügbar sind.
+- Filtern von Eigenschaften im Fenster **Eigenschaften**, um Eigenschaften auszulassen, die in der Zielversion nicht verfügbar sind.
 
 - Filtern von Menüoptionen, um Optionen auszulassen, die in der Zielversion nicht verfügbar sind.
 
@@ -61,11 +61,11 @@ Wenn Sie sich an einem Projekt arbeiten, der eine früheren Framework-Version, V
 
 > [!NOTE]
 > - Durch Frameworkziele wird nicht garantiert, dass die Anwendung ordnungsgemäß ausgeführt wird. Sie müssen die Anwendung dennoch testen, um sicherzustellen, dass Sie mit der Zielversion ausgeführt wird.
-> - Sie können keine Frameworkversionen unter .NET Framework 2.0 abzielen.
+> - Sie können keine Frameworkversionen als Ziel verwenden, die älter als .NET Framework 2.0 sind.
 
 ## <a name="select-a-target-framework-version"></a>Auswählen einer Zielframeworkversion
 
-Wenn Sie ein Projekt .NET Framework erstellen, können Sie die .NET Framework-Version auswählen, nach der Auswahl einer Projektvorlage. Die Liste der verfügbaren Frameworks enthält die installierten Framework-Versionen, die auf den Typ der ausgewählten Vorlage anwendbar sind. Für .NET Framework - Projektvorlagen, z. B. .NET Core-Vorlagen, die **Framework** Dropdown-Liste nicht angezeigt wird.
+Wenn Sie ein .NET Framework-Projekt erstellen, können Sie die .NET Framework-Zielversion nach der Projektvorlage auswählen. Die Liste der verfügbaren Frameworks enthält die installierten Framework-Versionen, die auf den Typ der ausgewählten Vorlage anwendbar sind. Bei Projektvorlagen ohne .NET Framework, z.B. .NET Core-Vorlagen, wird die **Framework**-Dropdownliste nicht angezeigt.
 
 ::: moniker range="vs-2017"
 
@@ -79,13 +79,13 @@ Wenn Sie ein Projekt .NET Framework erstellen, können Sie die .NET Framework-Ve
 
 ::: moniker-end
 
-In einem vorhandenen Projekt können Sie die Zielversion von .NET in das Dialogfeld für die Eigenschaften des Projekts ändern. Weitere Informationen finden Sie unter [Vorgehensweise: Eine Version von .NET als Ziel](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+In einem vorhandenen Projekt können Sie die .NET-Zielversion im Dialogfeld „Projekteigenschaften“ ändern. Weitere Informationen finden Sie unter [Vorgehensweise: Ausrichten auf eine Version von .NET](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 ## <a name="resolve-system-and-user-assembly-references"></a>Auflösen von System- und Benutzerassemblyverweisen
 
-Um eine Version von .NET als Ziel festzulegen, müssen Sie zunächst die entsprechenden Assemblyverweise installieren. Sie können Developer Packs für verschiedene Versionen von .NET auf den [.NET – downloads](https://www.microsoft.com/net/download/windows) Seite.
+Um eine .NET-Version als Ziel zu verwenden, müssen Sie zunächst die entsprechenden Assemblyverweise installieren. Sie können Entwicklerpakete für verschiedene .NET-Versionen von der Website [.NET-Downloads](https://www.microsoft.com/net/download/windows) herunterladen.
 
-Für .NET Framework-Projekten die **Verweis hinzufügen** Dialogfeld deaktiviert-Systemassemblys, die für .NET Framework-Zielversion nicht relevant, damit sie nicht versehentlich zu einem Projekt hinzugefügt werden können. (Systemassemblys sind *DLL*-Dateien, die in einer .NET Framework-Version enthalten sind.) Verweise, die auf eine Frameworkversion gehören, der höher als die Zielversion werden nicht aufgelöst und Steuerelemente, die einem solchen Verweis abhängen, können nicht hinzugefügt werden. Wenn Sie einen solchen Verweis aktivieren möchten, setzen Sie das .NET Framework-Ziel des Projekts auf eine Version zurück, die den Verweis enthält. Weitere Informationen finden Sie unter [Vorgehensweise: Frameworkversion als Ziel](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+Bei .NET Framework-Projekten deaktiviert das Dialogfeld **Verweis hinzufügen** Systemassemblys, die nicht zur .NET Framework-Zielversion gehören, sodass sie nicht versehentlich zu einem Projekt hinzugefügt werden können. (Systemassemblys sind *DLL*-Dateien, die in einer .NET Framework-Version enthalten sind.) Verweise, die zu einer Frameworkversion gehören, die höher ist als die Zielversion, werden nicht aufgelöst, und Steuerelemente, die von einem solchen Verweis abhängen, können nicht hinzugefügt werden. Wenn Sie einen solchen Verweis aktivieren möchten, setzen Sie das .NET Framework-Ziel des Projekts auf eine Version zurück, die den Verweis enthält. Weitere Informationen finden Sie unter [Vorgehensweise: Ausrichten auf eine Zielversion](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 Weitere Informationen zu Assemblyverweisen finden Sie unter [Auflösen von Assemblys zur Entwurfszeit](../msbuild/resolving-assemblies-at-design-time.md).
 

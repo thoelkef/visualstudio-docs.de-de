@@ -48,7 +48,7 @@ MSBuild verwendet ein Toolset von Aufgaben, Zielen und Tools für die Erstellung
 
 ## <a name="how-the-toolsversion-attribute-works"></a>So funktioniert das ToolsVersion-Attribut
 
- Wenn Sie in Visual Studio ein Projekt erstellen oder ein vorhandenes Projekt aktualisieren, ist automatisch ein Attribut mit dem Namen `ToolsVersion` in der Projektdatei vorhanden, und sein Wert entspricht der Version von MSBuild, die in der Visual Studio-Edition enthalten ist. Weitere Informationen finden Sie unter [Übersicht über .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
+ Wenn Sie in Visual Studio ein Projekt erstellen oder ein vorhandenes Projekt aktualisieren, ist automatisch ein Attribut mit dem Namen `ToolsVersion` in der Projektdatei vorhanden, und sein Wert entspricht der Version von MSBuild, die in der Visual Studio-Edition enthalten ist. Weitere Informationen finden Sie unter [Übersicht über Frameworkziele](../ide/visual-studio-multi-targeting-overview.md).
 
  Wenn ein `ToolsVersion`-Wert in einer Projektdatei definiert wird, verwendet MSBuild diesen Wert, um die Werte der Toolseteigenschaften zu bestimmen, die für das Projekt verfügbar sind. Eine Toolseteigenschaft ist `$(MSBuildToolsPath)`, die den Pfad der .NET Framework-Tools angibt. Nur diese Toolseteigenschaft (oder `$(MSBuildBinPath)`) ist erforderlich.
 

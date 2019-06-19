@@ -70,7 +70,7 @@ Excel-Berichte können entweder im **Auslastungstest-Analyzer** durch Klicken au
 
    2. Geben Sie auf der Seite **Datenbank auswählen, die Auslastungstests enthält** unter **Servername** den Namen des Servers ein, der die Auslastungstestergebnisse enthält.
 
-   3. In der **Datenbanknamen** Dropdown-Liste, wählen Sie die Datenbank, die die Auslastungstestergebnisse enthält.
+   3. Wählen Sie in der Dropdownliste **Datenbankname** die Datenbank aus, die die Auslastungstestergebnisse enthält.
 
 3. Vergewissern Sie sich, dass auf der Seite **Wie soll der Bericht generiert werden** die Option **Bericht erstellen** ausgewählt ist, und klicken Sie auf **Weiter**.
 
@@ -125,7 +125,7 @@ Excel-Berichte können entweder im **Auslastungstest-Analyzer** durch Klicken au
 
    2. Geben Sie auf der Seite **Datenbank auswählen, die Auslastungstests enthält** unter **Servername** den Namen des Servers ein, der die Auslastungstestergebnisse enthält.
 
-   3. In der **Datenbanknamen** Dropdown-Liste, wählen Sie die Datenbank, die die Auslastungstestergebnisse enthält.
+   3. Wählen Sie in der Dropdownliste **Datenbankname** die Datenbank aus, die die Auslastungstestergebnisse enthält.
 
 3. Vergewissern Sie sich, dass auf der Seite **Wie soll der Bericht generiert werden** die Option **Bericht erstellen** ausgewählt ist, und klicken Sie auf **Weiter**.
 
@@ -144,7 +144,7 @@ Excel-Berichte können entweder im **Auslastungstest-Analyzer** durch Klicken au
    > [!TIP]
    > Für Auslastungstests und Webleistungstests sind verschiedene Eigenschaften verfügbar, mit denen detailliertere Berichte erstellt werden können. Für die Seitenanforderung werden zwei Eigenschaften in den Berichten dargestellt: Ziel und Berichtsname. Seitenantwortzeiten werden für das Ziel angezeigt, und der Berichtsname wird in den Berichten anstelle der URL verwendet. In den Testlaufeinstellungen eines Auslastungstests wird unter "Indikatorensätze verwalten" die Eigenschaft "Computertags" in den Berichtscomputernamen dargestellt. Dies ist hilfreich, um die Rolle eines bestimmten Computers im Bericht zu beschreiben.
 
-## <a name="net-security"></a>Sicherheit von .net
+## <a name="net-security"></a>.NET-Sicherheit
 
 Auslastungstestergebnisse und -berichte enthalten potenziell sicherheitsrelevante Informationen, die für einen Angriff auf Ihren Computer oder Ihr Netzwerk verwendet werden können. Auslastungstestergebnisse und -berichte enthalten Computernamen und Verbindungszeichenfolgen. Seien Sie sich dessen bewusst, wenn Sie Auslastungstestberichte für andere freigeben.
 

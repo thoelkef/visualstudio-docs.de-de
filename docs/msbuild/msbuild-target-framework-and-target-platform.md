@@ -19,27 +19,27 @@ ms.locfileid: "66747404"
 Ein Projekt kann erstellt werden, um in einem *Zielframework*, bei dem es sich um eine bestimmte Version von .NET Framework handelt, und auf einer *Zielplattform*, bei der es sich um eine bestimmte Softwarearchitektur handelt, ausgeführt zu werden.  Beispielsweise können Sie eine Anwendung für die Ausführung in .NET Framework 2.0 auf einer 32-Bit-Plattform entwickeln, die mit der 802x86-Prozessorfamilie kompatibel ist („x86“). Die Kombination von Zielframework und Zielplattform wird als *Zielkontext* bezeichnet.
 
 ## <a name="target-framework-and-profile"></a>Zielframework und -profil
- Ein Zielframework ist eine bestimmte Version von .NET Framework, die Ihr Projekt erstellt wird, führen Sie auf. Die Angabe eines Zielframeworks ist erforderlich, da es Compilerfunktionen und Assemblyverweise ermöglicht, die nur für diese Version des Frameworks gelten.
+ Ein Zielframework ist eine bestimmte Version von .NET Framework, mit der das Projekt ausgeführt werden soll. Die Angabe eines Zielframeworks ist erforderlich, da es Compilerfunktionen und Assemblyverweise ermöglicht, die nur für diese Version des Frameworks gelten.
 
  Derzeit werden die folgenden Versionen von .NET Framework unterstützt:
 
 - .NET Framework 2.0 (enthalten in Visual Studio 2005)
 
-- .NET Framework 3.0 (enthalten [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)])
+- .NET Framework 3.0 (enthalten in [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)])
 
-- .NET Framework 3.5 (enthalten [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)])
+- .NET Framework 3.5 (enthalten in [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)])
 
-- The .NET Framework 4.5.2
+- .NET Framework 4.5.2
 
-- .NET Framework 4.6 (enthalten [!INCLUDE[vs_dev14](../misc/includes/vs_dev14_md.md)])
+- .NET Framework 4.6 (enthalten in [!INCLUDE[vs_dev14](../misc/includes/vs_dev14_md.md)])
 
 - .NET Framework 4.6.1
 
-- The .NET Framework 4.6.2
+- .NET Framework 4.6.2
 
-- The .NET Framework 4.7
+- .NET Framework 4.7
 
-- The .NET Framework 4.7.1
+- .NET Framework 4.7.1
 
 Die Versionen von .NET Framework unterscheiden sich in der Liste der Assemblys, die als Verweise zur Verfügung stehen. Beispielsweise können Sie Windows Presentation Foundation (WPF)-Anwendungen nur erstellen, wenn Ihr Projekt auf die .NET Framework-Version 3.0 oder höher ausgelegt ist.
 

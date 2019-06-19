@@ -18,11 +18,11 @@ ms.locfileid: "66747336"
 
 Mit dem Befehl **Definition einsehen** können Sie Code anzeigen und bearbeiten, ohne den Code zu verlassen, den Sie gerade schreiben. Mit **Definition einsehen** und **Gehe zu Definition** werden dieselben Informationen angezeigt, wobei mit **Definition einsehen** ein Popupfenster geöffnet wird, und mit **Gehe zu Definition** der Code in einem separaten Codefenster angezeigt wird. **Gehe zu Definition** verursacht einen Wechsel des Kontexts (also des aktiven Codefensters, der aktuellen Zeile und der Cursorposition) zum Codedefinitionsfenster. Mithilfe von **Definition einsehen** können Sie die Definition anzeigen und bearbeiten sowie innerhalb der Definitionsdatei navigieren, ohne Ihre Position in der ursprünglichen Codedatei zu verlassen.
 
-Sie können **Definition einsehen** mit C#-, Visual Basic- und C++-Code verwenden. In Visual Basic **"Definition einsehen"** zeigt eine Verknüpfung mit der **Objektkatalog** für Symbole ohne (z. B. .NET Typen, die integriert sind).
+Sie können **Definition einsehen** mit C#-, Visual Basic- und C++-Code verwenden. In Visual Basic enthält **Definition einsehen** einen Link zum **Objektkatalog** für Symbole ohne Definitionsmetadaten (z.B. integrierte .NET-Typen).
 
-## <a name="use-peek-definition"></a>Verwenden von "Definition einsehen"
+## <a name="use-peek-definition"></a>Verwenden von „Definition einsehen“
 
-### <a name="open-a-peek-definition-window"></a>Öffnen Sie ein Fenster "Definition einsehen"
+### <a name="open-a-peek-definition-window"></a>Öffnen eines Fensters „Definition einsehen“
 
 1. Klicken Sie im Kontextmenü eines Typs oder Members auf **Definition einsehen**, um eine Definition einzusehen. Wenn die Option aktiviert ist,können Sie eine Definition auch mithilfe der Maus einsehen, indem Sie **STRG** (oder eine andere Zusatztaste) gedrückt halten und auf den Namen des Members klicken. Alternativ drücken Sie auf der Tastatur die Tasten **ALT**+**F12**.
 
@@ -75,7 +75,7 @@ Im Fenster **Definition einsehen** können Sie diese Tastenkombinationen verwend
 |Öffnen des Definitionsfensters|**ALT**+**F12**|
 |Schließen des Definitionsfensters|**ESC**|
 |Höherstufen des Definitionsfensters auf eine reguläre Dokumentregisterkarte|**UMSCHALT**+**ALT**+**Start**|
-|Wechseln zwischen Definitionsfenstern|**STRG**+**ALT**+ **-** und **STRG**+**ALT**+ **=**|
+|Wechseln zwischen Definitionsfenstern|**STRG**+**ALT**+**-** und **STRG**+**ALT**+**=**|
 |Zwischen mehreren Ergebnissen navigieren|**F8** und **UMSCHALT**+**F8**|
 |Umschalten zwischen den Fenstern "Code-Editor" und "Definition"|**UMSCHALT**+**ESC**|
 

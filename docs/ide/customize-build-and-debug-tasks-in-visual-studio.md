@@ -314,6 +314,6 @@ Aus der *.gitignore*-Datei gelesene Einstellungen werden auf das übergeordnete 
 
 - [Entwickeln von Code in Visual Studio ohne Projekte oder Projektmappen](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 - [Open Folder-Projekte für C++](/cpp/build/open-folder-projects-cpp)
-- [CMake-Projekte fürC++](/cpp/build/cmake-projects-in-visual-studio)
+- [CMake-Projekte für C++](/cpp/build/cmake-projects-in-visual-studio)
 - [NMAKE-Referenz](/cpp/build/reference/nmake-reference)
 - [Features des Code-Editors](../ide/writing-code-in-the-code-and-text-editor.md)

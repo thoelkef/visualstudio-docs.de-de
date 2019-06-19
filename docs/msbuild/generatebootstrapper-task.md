@@ -152,7 +152,7 @@ Im Folgenden werden die Parameter der `GenerateBootstrapper`-Aufgabe beschrieben
 Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Beispiel
-Im folgenden Beispiel wird die `GenerateBootstrapper` Task zum Installieren einer Anwendung, die als Voraussetzung installiert .NET Framework 2.0 benötigen.
+Im folgenden Beispiel wird der Task `GenerateBootstrapper` zur Installation einer Anwendung verwendet, für die als Voraussetzung .NET Framework 2.0 installiert sein muss.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

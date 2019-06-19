@@ -26,7 +26,7 @@ ms.lasthandoff: 06/06/2019
 ms.locfileid: "66747554"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath-Aufgabe
-Ruft den Pfad zum .NET Framework-Assemblys ab.
+Ruft den Pfad zu den .NET Framework-Assemblys ab.
 
 ## <a name="task-parameters"></a>Aufgabenparameter
 In der folgenden Tabelle werden die Parameter der `GetFrameworkPath` -Aufgabe beschrieben.
@@ -41,12 +41,12 @@ In der folgenden Tabelle werden die Parameter der `GetFrameworkPath` -Aufgabe be
 |`Path`|Optionaler `String`-Ausgabeparameter.<br /><br /> Enthält den Pfad zu den neuesten Frameworkassemblys, sofern diese verfügbar sind. Andernfalls wird `null` zurückgegeben.|
 
 ## <a name="remarks"></a>Anmerkungen
-Wenn mehrere Versionen von .NET Framework installiert sind, diese Aufgabe gibt der Version, die [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] dient für die Ausführung auf.
+Wenn mehrere Versionen von .NET Framework installiert sind, gibt dieser Task die Version zurück, in der [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ausgeführt werden soll.
 
 Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension-Basisklasse](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Beispiel
-Im folgenden Beispiel wird die `GetFrameworkPath` Aufgabe zum Speichern des Pfads zu .NET Framework in der `FrameworkPath` Eigenschaft.
+Im folgenden Beispiel wird mit dem Task `GetFrameworkPath` der Pfad zu .NET Framework in der `FrameworkPath`-Eigenschaft gespeichert.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

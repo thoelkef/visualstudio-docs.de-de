@@ -33,7 +33,7 @@ Toolbox wird in Verbindung mit Entwurfsansichten angezeigt, wie der Designansich
 > [!NOTE]
 > Bei einigen Projekttypen werden in **Toolbox** möglicherweise keine Elemente angezeigt.
 
-Die .NET Version Ihrem Projekt auch wirkt sich auf den Satz von Steuerelementen, die in der Toolbox angezeigt. Sie können die Framework-Version von Eigenschaftenseiten des Projekts, bei Bedarf ändern. Wählen Sie den Projektknoten im **Projektmappen-Explorer** aus, und klicken Sie dann in der Menüleiste auf **Projekt** > **Projektname-Eigenschaften**. Verwenden Sie auf der Registerkarte **Anwendung** die Dropdownliste **Zielframework**.
+Die .NET-Version, auf die Ihr Projekt ausgerichtet ist, wirkt sich auch auf die Gruppe der Steuerelemente aus, die in Toolbox angezeigt wird. Sie können die Frameworkzielversion bei Bedarf über die Eigenschaftenseite des Projekts ändern. Wählen Sie den Projektknoten im **Projektmappen-Explorer** aus, und klicken Sie dann in der Menüleiste auf **Projekt** > **Projektname-Eigenschaften**. Verwenden Sie auf der Registerkarte **Anwendung** die Dropdownliste **Zielframework**.
 
 ## <a name="manage-the-toolbox-window-and-its-controls"></a>Verwalten des Toolbox-Fensters und dessen Steuerelemente
 

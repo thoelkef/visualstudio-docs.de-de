@@ -51,7 +51,7 @@ Wenn Sie die **Startseite** schließen und dann erneut anzeigen möchten, könne
 
 Das Erste, was Sie nach dem Öffnen von Visual Studio sehen, ist das Startfenster. Das Startfenster ist so entworfen, dass Sie möglichst schnell auf den Code zugreifen können. Im Startfenster finden Sie Optionen zum Klonen oder Ausschecken von Code, zum Öffnen bereits vorhandener Projekte oder Projektmappe, zum Erstellen eines neuen Projekts oder einfach zum Öffnen eines Ordners mit Codedateien.
 
-[![Starten Sie im Fenster in Visual Studio-2019](media/vs-2019/start-window-labeled.png)](media/vs-2019/start-window-labeled.png#lightbox)
+[![Startfenster in Visual Studio 2019](media/vs-2019/start-window-labeled.png)](media/vs-2019/start-window-labeled.png#lightbox)
 
 Wenn Sie Visual Studio zum ersten Mal benutzen, bleibt die Liste zuletzt geöffneter Projekte leer.
 

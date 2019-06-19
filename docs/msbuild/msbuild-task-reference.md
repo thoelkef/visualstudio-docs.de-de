@@ -169,7 +169,7 @@ Zusätzlich zu den Parametern, die in den Themen in diesem Abschnitt aufgeführt
 
 - [GetFrameworkPath-Aufgabe](../msbuild/getframeworkpath-task.md)
 
- Ruft den Pfad zum .NET Framework-Assemblys ab.
+ Ruft den Pfad zu den .NET Framework-Assemblys ab.
 
 - [GetFrameworkSdkPath-Aufgabe](../msbuild/getframeworksdkpath-task.md)
 
