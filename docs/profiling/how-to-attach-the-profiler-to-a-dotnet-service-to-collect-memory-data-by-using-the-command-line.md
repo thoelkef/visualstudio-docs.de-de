@@ -17,7 +17,7 @@ ms.lasthandoff: 06/06/2019
 ms.locfileid: "66746288"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>Vorgehensweise: Anfügen des Profilers an einen .NET-Dienst zum Sammeln von Speicherdaten über die Befehlszeile
-In diesem Artikel wird beschrieben, wie Sie mit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Profilerstellungstools gehörenden Befehlszeilentools zum Anfügen des Profilers an eine .NET Framework Diensts und Sammeln von Speicherdaten. Sie können Daten zur Anzahl und der Größe der Speicherbelegungen erfassen, und Sie können auch Daten zur Lebensdauer von Arbeitsspeicherobjekten erfassen.
+In diesem Artikel wird beschrieben, wie die Befehlszeilentools der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools verwendet werden, um den Profiler an einen .NET Framework-Dienst anzufügen und Speicherdaten zu erfassen. Sie können Daten zur Anzahl und der Größe der Speicherbelegungen erfassen, und Sie können auch Daten zur Lebensdauer von Arbeitsspeicherobjekten erfassen.
 
 > [!NOTE]
 > Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio-Profilers auf diesen Plattformen. Außerdem benötigen UWP-Apps neue Erfassungsmethoden. Siehe [Profilerstellungstools für Windows 8- und Windows Server 2012-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
@@ -25,7 +25,7 @@ In diesem Artikel wird beschrieben, wie Sie mit [!INCLUDE[vsprvs](../code-qualit
 > [!NOTE]
 > Informationen zum Abrufen des Pfads zu den Profilerstellungstools finden Sie unter [Angeben des Pfads zu Befehlszeilentools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Auf 64-Bit-Computern sind sowohl 64 Bit- als auch 32-Bit-Versionen der Tools verfügbar. Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen.
 
- Um Arbeitsspeicherdaten von einem .NET Framework-Dienst zu erfassen, verwenden Sie die ["VSPerfCLREnv.cmd"](../profiling/vsperfclrenv.md) Tool, um die entsprechenden Umgebungsvariablen auf dem Computer zu initialisieren, die den Dienst hostet. Der Computer muss neu gestartet werden, um ihn für die Profilerstellung zu konfigurieren.
+ Um Arbeitsspeicherdaten von einem .NET Framework-Dienst zu erfassen, verwenden Sie das [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md)-Tool, um die entsprechenden Umgebungsvariablen auf dem Computer zu initialisieren, der den Dienst hostet. Der Computer muss neu gestartet werden, um ihn für die Profilerstellung zu konfigurieren.
 
  Sie verwenden dann das [VSPerfCmd](../profiling/vsperfcmd.md)-Tool, um den Profiler an den Dienstprozess anzufügen. Während der Profiler an den Dienst angefügt ist, können Sie die Datensammlung anhalten und fortsetzen.
 

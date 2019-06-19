@@ -37,7 +37,7 @@ Dotfuscator Community unterstützt eine Vielfalt von .NET-Assemblys und Anwendun
 ## <a name="intellectual-property-protection"></a>Schutz geistigen Eigentums
 
 Die Bauweise, das Verhalten und die Implementierung Ihrer Anwendung gehören zum geistigen Eigentum (intellectual property, IP).
-Allerdings sind die Anwendungen für .NET erstellt wurden, im Grunde offene Bücher; Es ist einfach auf .NET-Assemblys rückzuentwickeln, [da sie hochrangige Metadaten und Zwischencode enthalten][assemblies].
+Dennoch sind Anwendungen, die für .NET erstellt wurden, im Grunde offene Bücher – denn es ist sehr einfach, .NET-Assemblys rückzuentwickeln, [da sie hochrangige Metadaten und Zwischencode enthalten][assemblies].
 
 Dotfuscator Community enthält eine grundlegende [.NET-Obfuskation ][obfuscation] in Form von [Umbenennung][renaming].
 Das Verbergen Ihres Codes mit Dotfuscator senkt das Risiko des unautorisierten Zugriffs auf Quellcode durch Reverse Engineering, da wichtige Namensinformationen nicht mehr öffentlich sind.
@@ -50,7 +50,7 @@ Dotfuscator kann [Antidebugverhalten][debug] in Ihre Anwendung einfügen, um die
 ## <a name="application-integrity-protection"></a>Schutz der Anwendungsintegrität
 
 Zusätzlich zum Schutz Ihres Quellcodes ist es außerdem wichtig, sicherzustellen, dass Ihre Anwendung für das verwendet wird, für das sie entworfen wurde.
-Angreifer können versuchen, zu Kapern Ihrer Anwendung zu umgehen (d.h. Softwarepiraterie), zu stehlen oder manipulieren sensible Daten, die von der Anwendung behandelt oder das Verhalten der Anwendung zu ändern.
+Angreifen können versuchen, die Kontrolle über Ihre Anwendung zu übernehmen, um Lizenzierungsrichtlinien zu umgehen (d.h. Softwarepiraterie), damit sie vertrauliche Daten, die von der Anwendung verarbeitet werden, stehlen oder manipulieren oder das Verhalten der Anwendung ändern können.
 
 Dotfuscator Community kann [Anwendungsvalidierungscode][checks] in Ihre Assemblys einfügen, wie z. B. die Maßnahmen [Anti-Tamper][tamper], [Anti-Debug][debug] und [Schutz von Geräten ohne Rootzugriff][root].
 Wenn ein ungültiger Anwendungszustand erkannt wird, kann der Validierungscode [Anwendungscode aufrufen, um angemessen auf die Situation zu reagieren][check-app].

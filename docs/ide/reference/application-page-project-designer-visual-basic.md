@@ -57,14 +57,14 @@ Informationen zum programmgesteuerten Zugreifen auf diese Eigenschaft finden Sie
 
 ### <a name="target-framework-all-configurations"></a>Zielframework (alle Konfigurationen)
 
-Gibt die Version von .NET, die die Anwendung ausgerichtet ist. Diese Option kann unterschiedliche Werte aufweisen, je nachdem, die welche Versionen von .NET auf Ihrem Computer installiert sind.
+Gibt die .NET-Version an, auf die die Anwendung ausgerichtet ist. Diese Option kann unterschiedliche Werte aufweisen, je nachdem, welche Versionen von .NET auf Ihrem Computer installiert sind.
 
-Für .NET Framework-Projekten entspricht der Standardwert des Zielframeworks, die Sie beim Erstellen des Projekts angegeben haben.
+Für .NET Framework-Projekte entspricht der Standardwert dem Zielframework, das Sie beim Erstellen des Projekts angegeben haben.
 
 > [!NOTE]
 > Die im Dialogfeld [Erforderliche Komponenten](../../ide/reference/prerequisites-dialog-box.md) aufgelisteten Pakete mit erforderlichen Komponenten werden automatisch festgelegt, wenn Sie das Dialogfeld zum ersten Mal öffnen. Wenn im Nachhinein Änderungen am Zielframework des Projekts vorgenommen werden, müssen Sie die erforderlichen Komponenten entsprechend dem neuen Zielframework manuell auswählen.
 
-Weitere Informationen finden Sie unter [Vorgehensweise: .NET Framework-Version als Ziel](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) und [Übersicht über .NET Framework](../../ide/visual-studio-multi-targeting-overview.md).
+Weitere Informationen finden Sie unter [Vorgehensweise: NET Framework-Version als Ziel](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) und [Übersicht über Frameworkziele](../../ide/visual-studio-multi-targeting-overview.md).
 
 ### <a name="application-type"></a>Anwendungstyp
 

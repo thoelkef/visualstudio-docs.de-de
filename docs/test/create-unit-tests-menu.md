@@ -21,7 +21,7 @@ ms.locfileid: "66745797"
 Mit dem Befehl **Komponententests erstellen** werden Stubs für Komponententestmethoden erstellt. Diese Funktion ermöglicht die leichte Konfiguration von Testprojekten, Testklassen und des darin enthaltenen Testmethodenstubs.
 
 > [!NOTE]
-> Die **Komponententests erstellen** Kontextmenübefehl von "" steht nur für verwalteten Code, der .NET Framework (aber nicht .NET Core) ausgerichtet ist.
+> Der Menübefehl **Komponententests erstellen** steht nur für verwalteten Code für .NET Framework (aber nicht für .NET Core) zur Verfügung.
 
 Der Menübefehl **Komponententests erstellen** ist erweiterbar und kann zum Generieren von Tests für MSTest, MSTest V2, NUnit und xUnit verwendet werden.
 

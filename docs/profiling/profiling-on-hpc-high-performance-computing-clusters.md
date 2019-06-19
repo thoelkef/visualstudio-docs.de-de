@@ -36,9 +36,9 @@ Um ein Profil auf einem HPC-Berechnungsknoten zu erstellen, müssen Sie Folgende
 
 - Installieren Sie Microsoft HPC Pack 2008 auf dem gleichen Computer wie Visual Studio. Der Computer muss nicht Teil des HPC-Clusters sein. Sie können das HPC Pack im [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=177414) installieren.
 
-- Installieren Sie .NET Framework 4, und die eigenständige Version der Profilerstellungstools auf dem HPC-Computeknoten. Installationsprogramme für .NET Framework und den eigenständigen Profiler stehen auf dem Installationsmedium von Visual Studio zur Verfügung. **Beachten Sie** muss neu gestartet werden Compute und nach der Installation von .NET Framework vor der Installation der Profilerstellungstools.
+- Installieren Sie das .NET Framework 4 und die eigenständige Version der Profilerstellungstools auf dem HPC-Berechnungsknoten. Installationsprogramme für .NET Framework und den eigenständigen Profiler stehen auf den Visual Studio-Installationsmedien zur Verfügung. **Hinweis** Sie müssen die Berechnung nach der Installation von .NET Framework und vor der Installation der Profilerstellungstools neu starten.
 
-  Installieren von .NET Framework 4 und die eigenständigen Profilerstellungstools auf einem aktiven HPC-Berechnungsknoten und aktivieren Sie die profilerstellung auf dem Cluster, gehen Sie folgendermaßen vor:
+  So installieren Sie .NET Framework 4 und die eigenständigen Profilerstellungstools auf einem aktiven HPC-Berechnungsknoten und aktivieren die Profilerstellung auf dem Cluster:
 
 1. Öffnen Sie das Eingabeaufforderungsfenster, das im HPC Pack installiert ist.
 
@@ -53,7 +53,7 @@ Um ein Profil auf einem HPC-Berechnungsknoten zu erstellen, müssen Sie Folgende
 | | |
 |------------------| - |
 | *%HeadNode%* | Der Name des Hauptknotens für den Cluster. |
-| *%FxPath%* | Der Pfad zum .NET Framework 4-Installer. Der Pfad auf den Visual Studio-Installationsmedien lautet: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
+| *%FxPath%* | Pfad zum .NET Framework 4-Installer. Der Pfad auf den Visual Studio-Installationsmedien lautet: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
 | *%ProfilerPath%* | Der Pfad zur eigenständigen Version des Installationsprogramms der Profilerstellungstools. Der Pfad auf den Visual Studio-Installationsmedien lautet: Standalone Profiler\x64\vs_profiler.exe |
 
 ## <a name="profile-on-an-hpc-compute-node"></a>Profil auf einem HPC-Berechnungsknoten

@@ -31,7 +31,7 @@ Auf dieser Registerkarte des Dialogfelds **Toolboxelemente auswählen** wird ein
 - Wenn das Kontrollkästchen neben einer Komponente deaktiviert wird, wird das zugehörige Symbol aus **Toolbox** entfernt.
 
     > [!NOTE]
-    > Die .NET Komponenten auf Ihrem Computer installiert bleiben verfügbar, und zwar unabhängig davon, ob für sie Symbole angezeigt werden, in der **Toolbox**.
+    > Die auf dem Computer installierten .NET-Komponenten bleiben verfügbar, und zwar unabhängig davon, ob für sie Symbole in der **Toolbox** angezeigt werden.
 
 Die Spalten auf der Registerkarte **WPF-Komponenten** enthalten die folgenden Informationen:
 
@@ -41,15 +41,15 @@ Listet die Namen der WPF-Steuerelemente auf, für die Einträge in der Registrie
 
 **Namespace**
 
-Zeigt die Hierarchie der [.NET API](/dotnet/api/?view=netframework-4.7) Namespace, der die Struktur der Komponente definiert. Nach dieser Spalte sortieren, die Liste der verfügbaren Komponenten innerhalb der einzelnen .NET Namespaces, die auf Ihrem Computer installiert.
+Zeigt die Hierarchie des [.NET-API](/dotnet/api/?view=netframework-4.7)-Namespaces an, der die Struktur der Komponente definiert. Wenn Sie nach dieser Spalte sortieren, werden die verfügbaren Komponenten innerhalb der einzelnen auf dem Computer installierten .NET-Namespaces aufgeführt.
 
 **Assemblyname**
 
-Zeigt den Namen der .NET-Assembly, die den Namespace für die einzelnen Komponenten enthält. Nach dieser Spalte sortieren, die Liste der Namespaces enthalten, die in jede .NET-Assembly auf Ihrem Computer installiert sind.
+Zeigt den Namen der .NET-Assembly an, die den Namespace der einzelnen Komponenten enthält. Wenn Sie nach dieser Spalte sortieren, werden die Namespaces innerhalb der einzelnen auf dem Computer installierten .NET-Assemblys aufgeführt.
 
 **Verzeichnis**
 
-Zeigt den Speicherort der .NET-Assembly. Der Standardspeicherort für alle Assemblys ist der globale Assemblycache. Weitere Informationen über den globalen Assemblycache finden Sie unter [Arbeiten mit Assemblys und dem globalen Assemblycache](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac).
+Zeigt den Speicherort der .NET-Assembly an. Der Standardspeicherort für alle Assemblys ist der globale Assemblycache. Weitere Informationen über den globalen Assemblycache finden Sie unter [Arbeiten mit Assemblys und dem globalen Assemblycache](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac).
 
 ## <a name="uielement-list"></a>UIElement-Liste
 

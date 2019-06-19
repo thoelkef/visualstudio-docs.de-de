@@ -52,7 +52,7 @@ Für die meisten grundlegenden Aufgaben teilen sich die IDE für Visual Studio u
 
 - **Team Explorer:** Mit Team Explorer können Sie Ihre Projekte mit GIT- oder TFS-Repositorys zur Erleichterung der Zusammenarbeit im Team verwalten. Siehe [Arbeiten im Team Explorer](/azure/devops/user-guide/work-team-explorer)
 
-- **NuGet:** In Visual Studio und Blend für Visual Studio können Sie NuGet-Pakete verwalten. NuGet ist ein Paket-Manager für .NET, die die Installation und Deinstallation von Paketen aus einer Projektmappe vereinfacht.
+- **NuGet:** In Visual Studio und Blend für Visual Studio können Sie NuGet-Pakete verwalten. NuGet ist eine Paket-Manager für .NET, der die Installation und Deinstallation von Paketen aus einer Projektmappe vereinfacht.
 
 ## <a name="advanced-capabilities-in-blend-for-visual-studio"></a>Erweiterte Funktionen in Blend für Visual Studio
 
