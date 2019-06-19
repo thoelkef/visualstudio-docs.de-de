@@ -19,16 +19,16 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/06/2019
 ms.locfileid: "66747696"
 ---
-# <a name="toolbox-data-tab"></a>Toolbox, Registerkarte "Daten"
+# <a name="toolbox-data-tab"></a>Toolbox, Registerkarte „Daten“
 
 Zeigt Datenobjekte an, die Sie zu Formularen und Komponenten hinzufügen können. Die Registerkarte **Daten** unter **Toolbox** wird geöffnet, wenn Sie ein Projekt erstellen, mit dem ein Designer verknüpft ist. Die **Toolbox** wird standardmäßig in der integrierten Entwicklungsumgebung von Visual Studio angezeigt. Wenn Sie die **Toolbox** einblenden möchten, klicken Sie im Menü **Ansicht** auf **Toolbox**.
 
 > [!TIP]
 > Durch Ausführen des Assistenten zum Konfigurieren von Datenquellen werden die meisten Datenelemente automatisch erstellt und konfiguriert. Weitere Informationen finden Sie unter [Neue Datenquelle hinzufügen](../../data-tools/add-new-data-sources.md).
 
-## <a name="ui-element-list"></a>Liste der UI-Element
+## <a name="ui-element-list"></a>Liste der Benutzeroberflächenelemente
 
-Um direkt zur .NET Referenzseite für eine Komponente zu wechseln, drücken Sie die **F1** auf das Element in der **Toolbox** oder auf das Element in der Komponentenleiste des Designers.
+Um direkt zur .NET-Referenzseite einer Komponente zu wechseln, drücken Sie **F1**, wenn sich der Fokus in der **Toolbox** auf dem Element oder in der Leiste des Designers auf dem Komponentenelement befindet.
 
 |name|Beschreibung|
 |----------|-----------------|

@@ -16,7 +16,7 @@ ms.lasthandoff: 06/06/2019
 ms.locfileid: "66747817"
 ---
 # <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Sammeln von Arbeitsspeicherdaten für .NET Framework-Dienste über die Profiler-Befehlszeile
-Dieser Abschnitt beschreibt die Prozeduren und Optionen zum Sammeln von speicherbelegung und Objektlebensdauer für einen .NET Framework-Dienst, mit der Samplingmethode über die Befehlszeile.
+In diesem Abschnitt werden die Prozeduren und Optionen zum Erfassen von Speicherbelegungs- und Objektlebensdauerdaten für einen .NET Framework-Dienst mithilfe der Samplingmethode über die Befehlszeile beschrieben.
 
 ## <a name="common-tasks"></a>Allgemeine Aufgaben
 

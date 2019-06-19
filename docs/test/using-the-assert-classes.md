@@ -45,7 +45,7 @@ Die Ausnahme <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedExce
 
 Wenn Sie eine neue Assert-Ausnahmeklasse schreiben, kann die Ausnahme leichter als Assert-Fehler erkannt werden, wenn die Klasse von der Basisklasse <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestAssertException> erbt. Andernfalls lassen sich Assert-Ausnahmen nicht eindeutig von unerwarteten Ausnahmen unterscheiden, die ggf. durch den Test- oder Produktionscode ausgelöst werden.
 
-Um sicherzustellen, dass eine Ausnahme, die Sie erwarten, dass von einer Methode in Ihrem Anwendungscode ausgelöst wird, tatsächlich ausgelöst wird, verwenden die <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType> Methode.
+Um zu überprüfen, ob eine Ausnahme tatsächlich wie erwartet durch eine Methode in Ihrem Anwendungscode ausgelöst wird, verwenden Sie die <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType>-Methode.
 
 ## <a name="see-also"></a>Siehe auch
 

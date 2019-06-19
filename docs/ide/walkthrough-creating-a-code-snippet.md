@@ -26,11 +26,11 @@ ms.locfileid: "66836105"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts
 
-Ein Codeausschnitt kann in wenigen Schritten erstellt werden. Sie müssen nur eine XML-Datei erstellen, die entsprechenden Elemente eintragen und den Code hinzufügen. Sie können optional, Ersatzparameter verwenden und Projektverweise. Importieren Sie den Codeausschnitt zu Visual Studio-Installation mithilfe der **Import** Schaltfläche der **Codeausschnitt-Manager** (**Tools** > **Code Codeausschnitt-Manager**).
+Ein Codeausschnitt kann in wenigen Schritten erstellt werden. Sie müssen nur eine XML-Datei erstellen, die entsprechenden Elemente eintragen und den Code hinzufügen. Sie können optional Ersetzungsparameter und Projektverweise verwenden. Importieren Sie den Codeausschnitt über die Schaltfläche **Importieren** im **Codeausschnitt-Manager** (**Tools** > **Codeausschnitt-Manager**) in Ihre Visual Studio-Installation.
 
 ## <a name="snippet-template"></a>Ausschnittvorlage
 
-Das folgende XML ist die einfache Ausschnittvorlage:
+Der folgende XML-Code ist eine einfache Ausschnittvorlage:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -52,14 +52,14 @@ Das folgende XML ist die einfache Ausschnittvorlage:
 
 1. Erstellen Sie eine neue XML-Datei in Visual Studio, und fügen Sie die oben gezeigten Vorlage hinzu.
 
-2. Geben Sie den Titel des Ausschnitts in der **Titel** Element. Verwenden Sie den Titel **Quadratwurzel**.
+2. Geben Sie den Titel des Ausschnitts in das Element **Titel** ein. Verwenden Sie den Titel **Square Root**.
 
-3. Tragen Sie die Sprache des Ausschnitts in das **Sprachen**-Attribut des **Code**-Elements ein. Für C#, verwenden Sie **CSharp**, und verwenden Sie für Visual Basic **VB**.
+3. Tragen Sie die Sprache des Ausschnitts in das **Sprachen**-Attribut des **Code**-Elements ein. Für C# verwenden Sie **CSharp**, für Visual Basic **VB**.
 
    > [!TIP]
-   > Um alle verfügbaren Werte anzuzeigen, navigieren die [Code-Element für den Abschnitt "Benutzerattribute"](code-snippets-schema-reference.md#attributes) auf die [Code Schemareferenz für Codeausschnitte](code-snippets-schema-reference.md) Seite.
+   > Alle verfügbaren Sprachwerte finden Sie im Abschnitt der [Attribute](code-snippets-schema-reference.md#attributes) für Codeelemente auf der Seite [Schemareferenz für Codeausschnitte](code-snippets-schema-reference.md).
 
-4. Fügen Sie den Codeausschnitt-Code in die **CDATA** Abschnitt innerhalb der **Code** Element.
+4. Fügen Sie den Codeausschnitt im **CDATA**-Abschnitt innerhalb des Elements **Code** hinzu.
 
    Für C#:
 
@@ -77,11 +77,11 @@ Das folgende XML ist die einfache Ausschnittvorlage:
    </Code>
    ```
 
-5. Speichern Sie den Ausschnitt als *SquareRoot.snippet* (Sie können ihn speichern überall).
+5. Speichern Sie den Codeausschnitt als *SquareRoot.snippet* (Sie können einen beliebigen Speicherort auswählen).
 
 ## <a name="import-a-code-snippet"></a>Importieren eines Codeausschnitts
 
-1. Sie können einen Ausschnitt in Visual Studio-Installation importieren, mit der **Codeausschnitt-Manager**. Öffnen Sie es durch Auswahl **Tools** > **Codeausschnitt-Manager**.
+1. Sie können einen Codeausschnitt mithilfe des **Codeausschnitt-Managers** in Ihre Visual Studio-Installation importieren. Wählen Sie **Tools** > **Codeausschnitt-Manager** aus.
 
 2. Klicken Sie auf die Schaltfläche **Importieren**.
 
@@ -89,7 +89,7 @@ Das folgende XML ist die einfache Ausschnittvorlage:
 
 4. Das Dialogfeld **Codeausschnitt importieren** öffnet sich, und Sie werden aufgefordert, aus den Optionen im rechten Bereich auszuwählen, wo der Ausschnitt hinzugefügt werden soll. Die Option **Meine Codeausschnitte** sollte dabei zur Auswahl stehen. Wählen Sie diese Option aus, klicken Sie auf **Fertig stellen** und anschließend auf **OK**.
 
-5. Der Codeausschnitt wird auf einen der folgenden Speicherorte, abhängig von der Codesprache kopiert:
+5. Der Codeausschnitt wird je nach Codesprache in einen der folgenden Speicherorte kopiert:
 
    ::: moniker range="vs-2017"
 
@@ -105,26 +105,26 @@ Das folgende XML ist die einfache Ausschnittvorlage:
 
    ::: moniker-end
 
-6. Testen Sie den Ausschnitt, indem Sie öffnen ein C# oder Visual Basic-Projekt. Während eine Codedatei im Editor geöffnet, **Codeausschnitte** > **Ausschnitt einfügen** klicken Sie dann im Kontextmenü **Meine Codeausschnitte**. Daraufhin sollte einen Ausschnitt mit dem Namen **Quadratwurzel**. Doppelklicken Sie darauf.
+6. Testen Sie den Ausschnitt, indem Sie ein C#- oder Visual Basic-Projekt öffnen. Wenn eine Codedatei im Editor offen ist, wählen Sie im Kontextmenü die Optionen **Codeausschnitte** > **Ausschnitt einfügen** und dann **Meine Codeausschnitte** aus. Es sollte ein Codeausschnitt namens **Square Root** angezeigt werden. Doppelklicken Sie darauf.
 
-   Der Code eines Ausschnitts wird in der Codedatei eingefügt.
+   Der Codeausschnitt wird in die Codedatei eingefügt.
 
-## <a name="description-and-shortcut-fields"></a>Felder "Beschreibung" und "Kontextmenü
+## <a name="description-and-shortcut-fields"></a>Beschreibungs- und Verknüpfungsfelder
 
 ::: moniker range="vs-2017"
 
-1. Beschreibungsfelder liefern Informationen über den Codeabschnitt, wenn sie im Codeausschnitt-Manager angezeigt werden. Die Verknüpfung ist ein Tag, das Benutzer zum Einfügen Ihres Codeausschnitts eingeben können. Bearbeiten Sie den Ausschnitt, der Sie hinzugefügt haben, indem Sie die Datei öffnen *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\\[Visual C# oder Visual Basic] \My Code Snippet\SquareRoot.snippet*.
+1. Beschreibungsfelder liefern Informationen über den Codeabschnitt, wenn sie im Codeausschnitt-Manager angezeigt werden. Die Verknüpfung ist ein Tag, das Benutzer zum Einfügen Ihres Codeausschnitts eingeben können. Bearbeiten Sie den Ausschnitt, den Sie hinzugefügt haben, indem Sie die Datei *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\\[Visual C# oder Visual Basic]\My Code Snippet\SquareRoot.snippet* öffnen.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. Beschreibungsfelder liefern Informationen über den Codeabschnitt, wenn sie im Codeausschnitt-Manager angezeigt werden. Die Verknüpfung ist ein Tag, das Benutzer zum Einfügen Ihres Codeausschnitts eingeben können. Bearbeiten Sie den Ausschnitt, der Sie hinzugefügt haben, indem Sie die Datei öffnen *%USERPROFILE%\Documents\Visual Studio 2019\Code Snippets\\[Visual C# oder Visual Basic] \My Code Snippet\SquareRoot.snippet*.
+1. Beschreibungsfelder liefern Informationen über den Codeabschnitt, wenn sie im Codeausschnitt-Manager angezeigt werden. Die Verknüpfung ist ein Tag, das Benutzer zum Einfügen Ihres Codeausschnitts eingeben können. Bearbeiten Sie den Ausschnitt, den Sie hinzugefügt haben, indem Sie die Datei *%USERPROFILE%\Documents\Visual Studio 2019\Code Snippets\\[Visual C# oder Visual Basic]\My Code Snippet\SquareRoot.snippet* öffnen.
 
 ::: moniker-end
 
    > [!TIP]
-   > Da Sie die Datei im Verzeichnis bearbeiten, in dem Sie Visual Studio platziert, müssen Sie es in Visual Studio importieren.
+   > Da Sie die Datei in dem Verzeichnis bearbeiten, in dem sie von Visual Studio platziert wurde, müssen Sie die Datei nicht erneut in Visual Studio importieren.
 
 2. Fügen Sie dem **Header**-Element **Autor**- und **Beschreibungs**-Elemente hinzu, und füllen Sie diese aus.
 
@@ -138,11 +138,11 @@ Das folgende XML ist die einfache Ausschnittvorlage:
    </Header>
    ```
 
-4. Öffnen Sie den **Codeausschnitt-Manager**, und wählen Sie Ihren Codeausschnitt aus. Im rechten Bereich, beachten Sie, dass die **Beschreibung** und **Autor** jetzt aufgefüllt werden.
+4. Öffnen Sie den **Codeausschnitt-Manager**, und wählen Sie Ihren Codeausschnitt aus. Beachten Sie, dass die Felder **Beschreibung** und **Autor** im rechten Bereich jetzt aufgefüllt sind.
 
-   ![Beschreibung für den Codeausschnitt im Codeausschnitt-Manager](media/code-snippet-description-author.png)
+   ![Beschreibung für Codeausschnitte im Codeausschnitt-Manager](media/code-snippet-description-author.png)
 
-5. Um eine Verknüpfung zu hinzuzufügen, fügen einen **Verknüpfung** Element innerhalb der **Header** Element:
+5. Um eine Verknüpfung hinzuzufügen, fügen Sie ein Element **Verknüpfung** im Element **Header** hinzu:
 
    ```xml
    <Header>
@@ -155,15 +155,15 @@ Das folgende XML ist die einfache Ausschnittvorlage:
 
 6. Speichern Sie die Ausschnittdatei erneut.
 
-7. Um die Verknüpfung zu testen, öffnen Sie das Projekt, das Sie zuvor verwendet haben, geben Sie **"SQRT"** im Editor, und drücken Sie **Registerkarte** (einmal für Visual Basic wird zweimal für C#).
+7. Um die Verknüpfung zu testen, öffnen Sie das Projekt, das Sie zuvor verwendet haben, geben Sie **sqrt** im Editor ein, und drücken Sie die **TABULATORTASTE** (einmal für Visual Basic, zweimal für C#).
 
    Der Codeausschnitt wird eingefügt.
 
-## <a name="replacement-parameters"></a>Ersatzparameter
+## <a name="replacement-parameters"></a>Ersetzungsparameter
 
-Sie sollten die Teile eines Codeausschnitts, die vom Benutzer ersetzt werden. Beispielsweise empfiehlt den Benutzer einen Variablennamen durch einen in ihrem aktuellen Projekt ersetzen. Sie können zwei Typen von Ersetzungen bereitstellen: Literale und Objekte. Verwenden der [Literalelement](code-snippets-schema-reference.md#literal-element) Ersatz zu identifizieren, für die ein Codeabschnitt, der vollständig in den Ausschnitt jedoch wahrscheinlich enthalten ist angepasst werden, nachdem es in den Code (z. B. ein Zeichenfolgenausdruck oder ein numerischer Wert) eingefügt wurde. Verwenden der [Objektelement](code-snippets-schema-reference.md#object-element) ein Element zu identifizieren, die vom Codeausschnitt ist erforderlich, aber wahrscheinlich außerhalb des Codeausschnitts selbst (z. B. eine Objektinstanz oder eines Steuerelements) definiert werden.
+Möglicherweise sollen Teile eines Codeausschnitts vom Benutzer ersetzt werden können. Beispielsweise soll ein Benutzer einen Variablennamen durch einen Namen aus seinem aktuellen Projekt ersetzen können. Sie können zwei Typen von Ersetzungen bereitstellen: Literale und Objekte. Verwenden Sie das [Literalelement](code-snippets-schema-reference.md#literal-element), um eine Ersetzung für ein Codeelement zu kennzeichnen, das zwar vollständig im Ausschnitt enthalten ist, nach dem Einfügen in den Code jedoch wahrscheinlich geändert wird (z.B. eine Zeichenfolge oder ein numerischer Wert). Verwenden Sie das [Objektelement](code-snippets-schema-reference.md#object-element) um ein Element zu kennzeichnen, das vom Codeausschnitt benötigt wird, aber wahrscheinlich außerhalb des Codeausschnitts selbst definiert wird (z.B. eine Objektinstanz oder ein Steuerelement).
 
-1. Um den Benutzer auf einfache Weise ersetzen. die Zahl, um die Quadratwurzel berechnet zu aktivieren, Ändern der **Codeausschnitt** Element der *SquareRoot.snippet* -Datei wie folgt:
+1. Um es dem Benutzer zu ermöglichen, problemlos die Zahl zu ersetzen, aus der die Quadratwurzel berechnet werden soll, ändern Sie das Element **Snippet** der Datei *SquareRoot.snippet* wie folgt:
 
    ```xml
    <Snippet>
@@ -180,28 +180,28 @@ Sie sollten die Teile eines Codeausschnitts, die vom Benutzer ersetzt werden. Be
    </Snippet>
    ```
 
-   Beachten Sie, dass die Literale Ersetzung eine ID angegeben ist (`Number`). ID aus dem Code-Ausschnitt verwiesen wird durch, umgibt ihn mit `$` Zeichen:
+   Beachten Sie, dass die Literalersetzung eine ID erhält (`Number`). Auf diese ID wird aus dem Codeausschnitt verwiesen, indem sie mit `$`-Zeichen umgeben wird:
 
    ```xml
    <![CDATA[double root = Math.Sqrt($Number$);]]>
    ```
 
-2. Speichern Sie die Snippet-Datei.
+2. Speichern Sie die Ausschnittdatei.
 
-3. Öffnen Sie ein Projekt, und fügen Sie den Codeausschnitt.
+3. Öffnen Sie ein Projekt, und fügen Sie den Ausschnitt ein.
 
-   Der Codeausschnitt eingefügt wird, und das Literal bearbeitet wird für den Austausch hervorgehoben. Zeigen Sie auf den Ersatzparameter, um die QuickInfo für den Wert anzuzeigen.
+   Der Codeausschnitt wird eingefügt, und das Literal, das bearbeitet werden kann, wird für die Ersetzung hervorgehoben. Zeigen Sie auf den Ersetzungsparameter, um die QuickInfo für den Wert anzuzeigen.
 
-   ![Ausschnitt ersetzen Parameter QuickInfo in Visual Studio Code](media/snippet-replacement-parameter-tooltip.png)
+   ![QuickInfo für Ersetzungsparameter in Codeausschnitt in Visual Studio](media/snippet-replacement-parameter-tooltip.png)
 
    > [!TIP]
-   > Wenn mehr als einen replacable Parameter in einem Codeausschnitt vorhanden ist, können Sie drücken **Registerkarte** Navigieren von einem zum anderen die Werte ändern.
+   > Wenn ein Codeausschnitt mehr als einen ersetzbaren Parameter enthält, können Sie die **TABULATORTASTE** drücken, um zwischen den Parametern zu navigieren und die Werte zu ändern.
 
-## <a name="import-a-namespace"></a>Importiert einen namespace
+## <a name="import-a-namespace"></a>Importieren eines Namespace
 
-Können Sie einen Codeausschnitt zum Hinzufügen einer `using` Richtlinie (C#) oder `Imports` -Anweisung (Visual Basic) durch Einschließen der [Imports-Element](code-snippets-schema-reference.md#imports-element). Bei .NET Framework-Projekten können Sie auch einen Verweis auf das Projekt hinzufügen, mit der [References-Element](code-snippets-schema-reference.md#references-element).
+Sie können einen Codeausschnitt verwenden, um eine `using`-Direktive (C#) oder `Imports`-Anweisung (Visual Basic) hinzufügen, indem Sie das [Imports-Element](code-snippets-schema-reference.md#imports-element) hinzufügen. Bei .NET Framework-Projekten können Sie auch mithilfe des [References-Elements](code-snippets-schema-reference.md#references-element) einen Verweis auf das Projekt hinzufügen.
 
-Das folgende XML zeigt einen Codeausschnitt, der die Methode verwendet `File.Exists` im System.IO-Namespace und, folglich definiert die **Importe** Element, um dem System.IO-Namespace zu importieren.
+Der folgende XML-Code zeigt einen Codeausschnitt, der die Methode `File.Exists` im System.IO-Namespace verwendet und daher das **Imports**-Element definiert, um den System.IO-Namespace zu importieren.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

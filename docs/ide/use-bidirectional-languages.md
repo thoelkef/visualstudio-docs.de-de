@@ -1,5 +1,5 @@
 ---
-title: Unterstützung für Arabisch oder Hebräisch
+title: Unterstützung für Arabisch und Hebräisch
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -21,14 +21,14 @@ ms.locfileid: "66824164"
 ---
 # <a name="support-for-bidirectional-languages-in-visual-studio"></a>Unterstützung für bidirektionale Sprachen in Visual Studio
 
-Visual Studio kann Text Arabisch und Hebräisch korrekt angezeigt und können Sie die bidirektionalen Text für Objektnamen und Werte eingeben.
+Visual Studio kann arabischen und hebräischen Text korrekt anzeigen und ermöglicht die Eingabe von bidirektionalem Text für Objektnamen und Werte.
 
 > [!NOTE]
 > Wenn Sie bidirektionale Sprachen anzeigen und eingeben möchten, müssen Sie mit einer Windows-Version arbeiten, in der die entsprechende Sprache konfiguriert ist. Entweder sollten Sie also eine englischsprachige Windows-Version und das entsprechende Sprachpaket installiert haben, oder Sie verwenden die entsprechende lokalisierte Windows-Version.
 
 ## <a name="fully-supported-features"></a>Vollständig unterstützte Funktionen
 
-Zur Entwurfszeit in Visual Studio können Sie bidirektionale Sprachen beim Eingeben des Texts, Benennung von Objekten, und speichern und Öffnen von Dateien verwenden.
+Zur Entwurfszeit können Sie in Visual Studio beim Eingeben von Text, Benennen von Objekten sowie beim Speichern und Öffnen von Dateien bidirektionale Sprachen verwenden.
 
 ### <a name="text-entry"></a>Texteintrag
 
@@ -38,7 +38,7 @@ Visual Studio unterstützt Unicode. Wenn in Ihrem System also das entsprechende 
 
 Mithilfe von bidirektionalen Sprachen können Sie unter anderem Projektmappen, Projekten, Dateien und Ordern Namen zuweisen. Im Code können Sie bidirektionale Sprachen zum Benennen von Variablen, Klassen, Objekten, Attributen, Metadaten und anderen Elementen einsetzen. Wenn Sie mit Arabisch arbeiten, können Sie alle arabischen Zeichen verwenden, einschließlich Kashida und Diakritika.
 
-Die folgenden Elemente können mithilfe von Arabisch oder Hebräisch benannt werden und von Visual Studio richtig verarbeitet werden:
+Folgende Elemente können auf Arabisch oder Hebräisch benannt werden und werden von Visual Studio korrekt gehandhabt:
 
 - Projektmappen-, Projekt- und Dateinamen, einschließlich aller dem Projektpfad hinzugefügten Ordner.
 
@@ -50,7 +50,7 @@ Die folgenden Elemente können mithilfe von Arabisch oder Hebräisch benannt wer
 
 - Datenelemente.
 
-   **Server-Explorer** diese Elemente ordnungsgemäß angezeigt und können bearbeitet werden.
+   Der **Server-Explorer** zeigt diese Elemente korrekt an, und Sie können sie bearbeiten.
 
 - In die Windows-Zwischenablage kopierte Elemente.
 
@@ -78,9 +78,9 @@ Sie können Dateien mit sprachspezifischer oder Unicode-Codierung speichern und 
 
 ## <a name="right-to-left-reading-order"></a>Leserichtung von rechts nach links
 
-Visual Studio bietet eine eingeschränkte Unterstützung für rechts-nach-Links-Lesefolge. Die Steuerelemente für die Texteingabe von Visual Studio verwenden standardmäßig die Leserichtung von links nach rechts. Meist können Sie die Lesefolge mit Windows-Standardfunktionen ändern. So können Sie z.B. mit **STRG**+**RECHTE UMSCHALTTASTE** das **Eigenschaftenfenster** umschalten, sodass für die Eigenschaftswerte die Leserichtung von rechts nach links unterstützt wird.
+Visual Studio bietet eingeschränkte Unterstützung für die Leserichtung von rechts nach links. Die Steuerelemente für die Texteingabe von Visual Studio verwenden standardmäßig die Leserichtung von links nach rechts. Meist können Sie die Lesefolge mit Windows-Standardfunktionen ändern. So können Sie z.B. mit **STRG**+**RECHTE UMSCHALTTASTE** das **Eigenschaftenfenster** umschalten, sodass für die Eigenschaftswerte die Leserichtung von rechts nach links unterstützt wird.
 
-Rechts-nach-Links-Lesefolge wird in den folgenden Stellen in Visual Studio nicht unterstützt:
+Die Leserichtung von rechts nach links wird an folgenden Stellen in Visual Studio nicht unterstützt:
 
 - Kontrollkästchen, Dropdownlisten und andere Steuerelemente verwenden in Visual Studio immer die Lesefolge von links nach rechts.
 
@@ -88,4 +88,4 @@ Rechts-nach-Links-Lesefolge wird in den folgenden Stellen in Visual Studio nicht
 
 ## <a name="see-also"></a>Siehe auch
 
-- [-Lokalisierten und globalisierten apps entwickeln](globalizing-and-localizing-applications.md)
+- [Entwickeln von globalisierten und lokalisierten Apps](globalizing-and-localizing-applications.md)

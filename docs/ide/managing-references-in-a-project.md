@@ -38,7 +38,7 @@ Um einen Verweis hinzuzufügen, klicken Sie im **Projektmappen-Explorer** mit de
 
 Sie können einen Verweis zu folgenden Komponenten- und Diensttypen hinzufügen:
 
-- .NET Klassenbibliotheken oder Assemblys
+- .NET-Klassenbibliotheken oder -Assemblys
 
 - UWP-Apps
 
@@ -101,11 +101,11 @@ Wenn Sie eine Anwendung bereitstellen, die einen Verweis auf eine im GAC registr
 
 Wenn sich die Assembly bzw. Komponente im globalen Assemblycache befindet oder eine .NET Framework-Komponente ist, wird die <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> -Eigenschaft standardmäßig auf **False** festgelegt. Andernfalls wird der Wert auf **True**festgelegt. Verweise zwischen Projekten werden immer auf **True**festgelegt.
 
-## <a name="reference-a-project-or-assembly-that-targets-a-different-version-of-net"></a>Verweisen auf Projekte oder Assemblys, die eine andere Version von .NET ausgerichtet ist.
+## <a name="reference-a-project-or-assembly-that-targets-a-different-version-of-net"></a>Verweisen auf ein Projekt oder eine Assembly, das/die auf eine andere .NET-Version ausgerichtet ist
 
-Sie können Anwendungen erstellen, die auf Projekte oder Assemblys, die eine andere Version von .NET als Ziel verweisen. Sie können z.B. eine Anwendung für .NET Framework 4.6 erstellen, die auf eine Assembly verweist, die wiederum .NET Framework 4.5 anzielt. Wenn Sie ein Projekt, die eine frühere Version von .NET ausgerichtet ist erstellen, können nicht Sie einen Verweis festlegen, in diesem Projekt auf ein Projekt oder eine Assembly, die eine neuere Version ausgerichtet.
+Sie können Anwendungen erstellen, die auf Projekte oder Assemblys verweisen, die auf eine andere Version von .NET ausgerichtet sind. Sie können z.B. eine Anwendung für .NET Framework 4.6 erstellen, die auf eine Assembly verweist, die wiederum .NET Framework 4.5 anzielt. Wenn Sie ein Projekt für eine frühere Version von .NET erstellen, können Sie in diesem Projekt nicht auf Projekte oder Assemblys verweisen, die auf eine neuere Version ausgerichtet sind.
 
-Weitere Informationen finden Sie unter [Übersicht über .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
+Weitere Informationen finden Sie unter [Übersicht über Frameworkziele](../ide/visual-studio-multi-targeting-overview.md).
 
 ## <a name="project-to-project-references"></a>Projekt-zu-Projekt-Verweise
 

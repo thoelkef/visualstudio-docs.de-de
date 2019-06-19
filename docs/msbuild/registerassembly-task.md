@@ -26,7 +26,7 @@ ms.lasthandoff: 06/06/2019
 ms.locfileid: "66747319"
 ---
 # <a name="registerassembly-task"></a>RegisterAssembly-Aufgabe
-Liest die Metadaten in der angegebenen Assembly und fügt die notwendigen Einträge in der Registrierung ein, die COM-Clients .NET Framework-Klassen transparent erstellen kann. Das Verhalten dieser Aufgabe ähnelt dem von [Regasm.exe (Assemblyregistrierungstool)](/dotnet/framework/tools/regasm-exe-assembly-registration-tool), ist aber nicht identisch.
+Liest die Metadaten in der angegebenen Assembly und fügt die erforderlichen Einträge zur Registrierung hinzu. COM-Clients sind so in der Lage, .NET Framework-Klassen transparent zu erstellen. Das Verhalten dieser Aufgabe ähnelt dem von [Regasm.exe (Assemblyregistrierungstool)](/dotnet/framework/tools/regasm-exe-assembly-registration-tool), ist aber nicht identisch.
 
 ## <a name="parameters"></a>Parameter
  In der folgenden Tabelle werden die Parameter der `RegisterAssembly` -Aufgabe beschrieben.

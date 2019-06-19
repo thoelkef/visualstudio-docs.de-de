@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/06/2019
 ms.locfileid: "66747243"
 ---
-# <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Vorgehensweise: Erstellen Sie ein Add-in für die Webleistungstest-Ergebnisviewer
+# <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Vorgehensweise: Erstellen eines Add-Ins für den Webleistungstest-Ergebnisviewer
 
 Sie können die Benutzeroberfläche für den **Webleistungstest-Ergebnisviewer** mit den folgenden Namespaces erweitern:
 
@@ -256,7 +256,7 @@ Das in der vorherigen Prozedur erstellte Visual Studio-Add-In verweist auf ein W
 
 1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Knoten des Projekts „WebPerfTestResultsViewerControl“, und wählen Sie **Eigenschaften** aus.
 
-2. Wählen Sie die **Anwendung** Registerkarte, und wählen Sie dann die **Zielframework** Dropdown-Liste, und wählen **.NET Framework 4** (oder höher). Schließen der **Eigenschaften** Fenster.
+2. Klicken Sie auf die Registerkarte **Anwendung**, dann auf die Dropdownliste **Zielframework**, und wählen Sie **.NET Framework 4** (oder höher) aus. Schließen Sie das Fenster **Eigenschaften**.
 
    Dies ist erforderlich, damit die DLL-Verweise unterstützt werden, die zum Erweitern des **Webleistungstestergebnis-Viewers** erforderlich sind.
 
@@ -314,13 +314,13 @@ Das in der vorherigen Prozedur erstellte Visual Studio-Add-In verweist auf ein W
 
 4. Klicken Sie auf **OK**.
 
-## <a name="run-the-web-performance-test-using-the-web-test-results-viewer"></a>Führen Sie den Webleistungstest, der mit der Web-Ergebnisviewer
+## <a name="run-the-web-performance-test-using-the-web-test-results-viewer"></a>Ausführen des Webleistungstest mit dem Webleistungstest-Ergebnisviewer
 
 1. Führen Sie den Webleistungstest aus. Im **Webleistungstest-Ergebnisviewer** wird die neue Registerkarte „Beispiel“ des WebPerfTestResultsViewerAddin-Add-Ins angezeigt.
 
 2. Wählen Sie die Registerkarte, um die in DataGridView enthaltenen Eigenschaften anzuzeigen.
 
-## <a name="net-security"></a>Sicherheit von .net
+## <a name="net-security"></a>.NET-Sicherheit
 
 Um die Sicherheit dadurch zu optimieren, dass böswillige Add-Ins nicht automatisch aktiviert werden können, stellt Visual Studio im Menü **Extras** auf der Optionsseite **Add-In/Makrosicherheit** entsprechende Einstellungen bereit.
 

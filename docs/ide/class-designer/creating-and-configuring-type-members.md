@@ -308,7 +308,7 @@ Wenn Sie versuchen, ein Projekt zu speichern, das einen Typ enthält, dessen Que
 
 Weist eine Codedatei einen Syntaxfehler auf, werden die Formen, die den Code in der Datei anzeigen, so lange mit Schreibschutz versehen, bis der Syntaxfehler behoben wird. Formen in diesem Zustand zeigen roten Text und ein rotes Symbol mit der Quickinfo "Die Quellcodedatei enthält einen Analysefehler" an.
 
-Ein referenzierten Typ (z. B. ein .NET-Typ), die unter einem anderen Projektknoten oder unter einem Knoten referenzierte Assembly vorhanden ist, wird auf die Klassen-Designer-Oberfläche als schreibgeschützt angezeigt. Ein lokaler Typ im geöffneten Projekt ist mit Lese- und Schreibzugriff versehen, und seine Form wird auf der Entwurfsoberfläche des Klassen-Designers entsprechend angegeben.
+Ein Typ, auf den verwiesen wird (z.B. ein .NET-Typ) und der in einem anderen Projektknoten oder in dem Knoten einer referenzierten Assembly vorhanden ist, wird auf der Entwurfsoberfläche des Klassen-Designers als schreibgeschützt angezeigt. Ein lokaler Typ im geöffneten Projekt ist mit Lese- und Schreibzugriff versehen, und seine Form wird auf der Entwurfsoberfläche des Klassen-Designers entsprechend angegeben.
 
 Indexer sind im Code und im Fenster **Klassendetails** mit Lese- und Schreibzugriff versehen. Der Indexername hingegen ist schreibgeschützt.
 
