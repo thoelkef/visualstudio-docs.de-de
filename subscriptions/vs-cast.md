@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Informationen zum CAST Highlight-Vorteil, der in ausgewählten Visual Studio-Abonnements enthalten ist
 searchscope: VS Subscription
-ms.openlocfilehash: 852327a7bcedb93a9ac7d2644ee5e9ab1e182e42
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: 5a6a7024653027f3b813de6a417dc01e07d30084
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805340"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032897"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Der CAST Highlight-Vorteil in Visual Studio-Abonnements
 
@@ -52,7 +52,7 @@ Abonnenten von Visual Studio Enterprise erhalten für bis zu fünf Apps pro Abon
    >
    > *Derzeit überprüfen wir Ihre Anforderung zur Aktivierung und zum Zugriff auf CAST Highlight. Ich melde mich innerhalb der nächsten 48 Stunden bei Ihnen.*
    >
-   > *Mit freundlichen Grüßen,*
+   > *Mit freundlichen Grüßen,* 
    > *Greg*
 
 Nach der Genehmigung Ihrer Anforderung erhalten Sie eine zweite E-Mail, in der die erfolgreiche Erstellung Ihres Kontos bestätigt wird. Darüber hinaus werden Sie darin dazu aufgefordert, zum Abschließen des Aktivierungsprozesses auf den Aktivierungslink zu klicken.
@@ -72,7 +72,7 @@ Nach der Genehmigung Ihrer Anforderung erhalten Sie eine zweite E-Mail, in der d
    > - Video-Tutorial: [Konfigurieren Ihres Portfolios](https://www.youtube.com/watch?v=MDm8ln4vuGE)
    > - Video-Tutorial: [Integrieren Ihrer Apps](https://www.youtube.com/watch?v=x-7Dsn3Rmw4)
    >
-   > *Mit freundlichen Grüßen,*
+   > *Mit freundlichen Grüßen,* 
    > *Greg*
 
    > [!NOTE]
@@ -86,7 +86,6 @@ Nach der Genehmigung Ihrer Anforderung erhalten Sie eine zweite E-Mail, in der d
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Nicht verfügbar                                                             |  Nicht zutreffend          |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Nicht verfügbar                                             |  Nicht zutreffend           |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Nicht verfügbar                                              |  Nicht zutreffend          |
-| Visual Studio Dev Essentials | Nicht zutreffend  | Nicht verfügbar | Nicht zutreffend |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Nicht verfügbar  | Nicht zutreffend |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure | Nicht verfügbar | Nicht zutreffend |
 

@@ -1,18 +1,18 @@
 ---
 title: 'Vorgehensweise: Schreiben von Komponententests für C++-DLLs'
-ms.date: 05/01/2019
+ms.date: 06/13/2019
 ms.topic: conceptual
 ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 427b481da6feca902fda0e3058974034c72fe6f4
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 38d792ad9264c007dab296b65aa330dfa142769e
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226276"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132154"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Vorgehensweise: Schreiben von Komponententests für C++-DLLs
 
@@ -38,7 +38,7 @@ In dieser exemplarischen Vorgehensweise wird beschrieben, wie Sie eine native C+
 
 1. Wählen Sie im Menü **Datei** die Optionsfolge **Neu** > **Projekt** aus.
 
-     **Visual Studio 2017 und früher**: Erweitern Sie **Installiert** > **Vorlagen** > **Visual C++** > **Test**.
+     **Visual Studio 2017 und früher**: Erweitern Sie **Installiert** > **Vorlagen** > **Visual C++**  > **Test**.
      **Visual Studio 2019**: Legen Sie **Sprache** auf C++ fest, und geben Sie „test“ in das Suchfeld ein.
 
      Klicken Sie entweder auf die Vorlage **Natives Komponententestprojekt** oder auf das von Ihnen bevorzugte installierte Framework. Wenn Sie eine andere Vorlage wie Google Test oder Boost.Test auswählen, bleiben die Grundprinzipien erhalten, obwohl bei einigen Details Unterschiede auftreten können.
@@ -152,13 +152,9 @@ Die folgenden Schritte zeigen, wie Sie ein DLL-Projekt in Visual Studio-2017 ers
 
 1. Fügen Sie das DLL-Projekt den Projektverweisen des Testprojekts hinzu:
 
-   1. Öffnen Sie die Eigenschaften des Testprojekts, und klicken Sie auf **Allgemeine Eigenschaften** > **Framework und Verweise**.
+   1. Klicken Sie im **Projektmappen-Explorer** zunächst mit der rechten Maustaste auf den Knoten für das Testprojekt, und wählen Sie anschließend **Hinzufügen** > **Verweis** aus.
 
-        ![C++-Projekteigenschaften > Framework und Verweise](../test/media/utecpp08.png)
-
-   2. Wählen Sie **Neuen Verweis hinzufügen**.
-
-        Wählen Sie im Dialogfeld **Verweis hinzufügen** das DLL-Projekt aus, und wählen Sie **Hinzufügen**.
+   2. Wählen Sie im Dialogfeld **Verweis hinzufügen** das DLL-Projekt aus, und wählen Sie **Hinzufügen**.
 
         ![C++-Projekteigenschaften > Neuen Verweis hinzufügen](../test/media/utecpp09.png)
 

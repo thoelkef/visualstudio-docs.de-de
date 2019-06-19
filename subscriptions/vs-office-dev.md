@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Erfahren Sie mehr über die Office 365-Vorteile für Entwickler, die in Ihrem Visual Studio-Abonnement enthalten sind.
 searchscope: VS Subscription
-ms.openlocfilehash: 100b9992f13a419b9207adb9ba976b8f6417617f
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: 12851dcb19824ceccb16bacbba2fdeec29c7df47
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66501186"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032722"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Die Office 365-Abonnementvorteile für Entwickler in Visual Studio-Abonnements
 
@@ -70,8 +70,8 @@ Weitere Informationen zum Office 365-Entwicklerabonnement finden Sie unter [FAQ:
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Included                                                            |Ja         |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Nicht verfügbar                                             |  NA         |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Nicht verfügbar                                              | NA         |
-| Visual Studio Dev Essentials | NA  | Nicht verfügbar |NA |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure                                       | Nicht verfügbar                                                           |NA|
+||
 
 <sup>1</sup> *Umfasst:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), FTE, BizSpark, MCT Software & Services (Developer), MCT Software & Services.  Umfasst nicht:  Microsoft Partner Network (MPN), Imagine, Most Valuable Professional (MVP), Regional Director (RD).*
 
