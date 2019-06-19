@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie das Parasoft Virtualize/SOAtest Professional-Abonnement aktivieren, das in Ihrem Visual Studio-Abonnement enthalten ist.
 searchscope: VS Subscription
-ms.openlocfilehash: c5b17bd0509ebca05f49ec5a411ea632676e6342
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce0c1e3d00e73bfdfee5e2fbe2bea8adddc2d305
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947281"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032747"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft Virtualize/SOAtest Professional Desktop in Visual Studio-Abonnements
 
@@ -76,8 +76,8 @@ Testen Sie früher und häufiger.  Simulieren und testen Sie das Verhalten nicht
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Nicht verfügbar                                                           |NA         |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Nicht verfügbar                                                           |NA         |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Nicht verfügbar                                                           |NA         |
-| Visual Studio Dev Essentials | NA  | Nicht verfügbar|NA |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure                                       | Nicht verfügbar                                                           |NA|
+||
 
 <sup>1</sup> *Umfasst: Microsoft Partner Network (Enterprise).  Umfasst nicht:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), FTE, MCT Software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  MCT Software & Services.*
 

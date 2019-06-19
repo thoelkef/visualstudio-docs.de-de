@@ -1,18 +1,18 @@
 ---
 title: Verwenden des Microsoft-Komponententest-Frameworks für C++
-ms.date: 05/20/2019
+ms.date: 06/13/2019
 ms.topic: conceptual
 ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 56ed33ed5fa769a3bf830bcb2f57264c1a9ff531
-ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
+ms.openlocfilehash: bcd75724e5124c280d5c3e54bfe870041c432790
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934488"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132131"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Verwenden des Microsoft-Komponententest-Frameworks für C++ in Visual Studio
 
@@ -89,7 +89,7 @@ TEST_METHOD(Method1)
 
 Die folgenden vordefinierten Merkmale befinden sich in `CppUnitTest.h`. Weitere Informationen finden Sie unter [Referenz für die C++-API „Microsoft.VisualStudio.TestTools.CppUnitTestFramework“](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md).
 
-|Makro|Beschreibung|
+|Makro|BESCHREIBUNG|
 |-|-----------------|
 |`TEST_METHOD_ATTRIBUTE(attributeName, attributeValue)`|Verwenden Sie zum Definieren eines Merkmals das TEST_METHOD_ATTRIBUTE-Makro.|
 |`TEST_OWNER(ownerAlias)`|Verwenden Sie das vordefinierte Merkmal "Besitzer", um einen Besitzer der Testmethode anzugeben.|

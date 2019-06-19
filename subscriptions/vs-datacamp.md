@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Erfahren Sie mehr zum DataCamp-Schulungsabonnements, das in ausgewählten Visual Studio-Abonnement enthalten ist.
 searchscope: VS Subscription
-ms.openlocfilehash: 5d6f9d2a642a13b350e539383a1abb74835bf9d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8e29f5d13c9869995aad0b7a6793304b677d54ba
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948130"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032163"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Der DataCamp-Trainingsvorteil in Visual Studio-Abonnements
 
@@ -70,7 +70,6 @@ Sie können Ihr Training jederzeit beenden und in der nächsten Sitzung fortsetz
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 3 Monate                                                            |  Nein.  Nur für neue Abonnenten verfügbar           |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | 3 Monate                                             |  Nein.  Nur für neue Abonnenten verfügbar           |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | 3 Monate                                              |  Nein.  Nur für neue Abonnenten verfügbar           |
-| Visual Studio Dev Essentials | Nicht zutreffend  | 2 Monate | Nein. Nur für neue Abonnenten verfügbar |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Nicht verfügbar  | Nicht zutreffend |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure | Nicht verfügbar | Nicht zutreffend |
 

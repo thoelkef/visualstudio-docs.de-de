@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Erfahren Sie, wie Sie den Azure-Vorteil, der in Ihrem Visual Studio-Abonnement beinhaltet ist, aktivieren.
 searchscope: VS Subscription
-ms.openlocfilehash: c47012e0a06c4e4b44833b0f6727d3c7a79fd13c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: e48430ecfb2632c9ed2cd80341055a75c9d86461
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685925"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032205"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Microsoft Azure in Visual Studio-Abonnements verwenden
 
@@ -30,7 +30,6 @@ Als Abonnent von Visual Studio können Sie Microsoft Azure kostenlos verwenden. 
 |              Visual Studio Professional – Monatsabonnement              |        Nicht verfügbar        |                                                             |
 |                    Visual Studio Test Pro                    |     50 USD monatliches Guthaben      |                             Ja                             |
 |                        MSDN Platforms                        |     100 USD monatliches Guthaben     |                             Ja                             |
-|                 Visual Studio Dev Essentials                 | Kostenlose Dienste + 200 USD Guthaben | Kostenlose Dienste sind unbefristet.  Das Guthaben über 200 USD ist ein einmaliger Betrag. |
 |               Visual Studio Enterprise – NFR\*               |     150 USD monatliches Guthaben     |                             Ja                             |
 |                Visual Studio Enterprise – FTE                |     150 USD monatliches Guthaben     |                             Ja                             |
 |     Visual Studio Enterprise – Microsoft Partner Network     |     150 USD monatliches Guthaben     |                             Ja                             |

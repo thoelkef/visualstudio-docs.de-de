@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Informationen zum Trainingsvorteil von Skill Me Up – Powered by Opsgility im ausgewählten Visual Studio-Abonnement.
 searchscope: VS Subscriptions
-ms.openlocfilehash: 110ae0871e907a33dce20b059188919f645b4401
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c986eac1c98d2ba7b511cc01f03a823ced496d63
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946997"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032819"
 ---
 # <a name="the-skill-me-up---powered-by-opsgility-training-benefit-in-visual-studio-subscriptions"></a>Der Skill Me Up – Powered by Opsgility-Trainingsvorteil in Visual Studio-Abonnements
 
@@ -39,8 +39,8 @@ Ausgewählte Visual Studio-Abonnements bieten bis zu sechs Monate Zugriff auf Ex
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 3 Monate                                                            |Nein.  Nur für neue Abonnenten verfügbar         |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | 3 Monate                                             |  Nein.  Nur für neue Abonnenten verfügbar         |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | 3 Monate                                              | Nein.  Nur für neue Abonnenten verfügbar         |
-| Visual Studio Dev Essentials | NA  | Nicht verfügbar | NA  |
 | Visual Studio Enterprise, Visual Studio Professional (Cloudabonnement mit monatlicher Laufzeit) | Azure                                       | Nicht verfügbar                                                           |NA|
+||
 
 *Umfasst nicht:  Microsoft Partner Network (MPN), Most Valuable Professional (MVP), Regional Director (RD), Microsoft Certified Trainer, BizSpark, Imagine, NFR, FTE*
 
