@@ -179,4 +179,4 @@ Wenn die zu testende Methode korrigiert und den Test erneut ausgeführt wird, wi
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>
 - [Ausführen von Komponententests für Code](../test/unit-test-your-code.md)
 - [Ausführen von Komponententests mit dem Test-Explorer](../test/run-unit-tests-with-test-explorer.md)
-- [Schreiben von Komponententests mit dem Microsoft-Komponententestframework für .NET](../test/unit-test-your-code.md)
+- [Schreiben von Komponententests für .NET mit dem Microsoft-Komponententest-Framework](../test/unit-test-your-code.md)

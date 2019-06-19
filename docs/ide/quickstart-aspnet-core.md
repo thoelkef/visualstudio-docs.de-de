@@ -75,7 +75,7 @@ Zunächst müssen Sie ein Projekt für die ASP.NET Core-Webanwendung erstellen. 
    ![Dialogfeld „Neue ASP.NET Core-Webanwendung“](../ide/media/aspnet-core-2dot1.png)
 
    > [!NOTE]
-   > Wenn Sie nicht sehen **ASP.NET Core 2.1**, stellen Sie sicher, dass Sie die neueste Version von Visual Studio ausgeführt werden. Weitere Informationen zum Aktualisieren Ihrer Installation finden Sie auf der Seite [Aktualisieren von Visual Studio auf die aktuelle Version](../install/update-visual-studio.md).
+   > Wenn **ASP.NET Core 2.1** nicht angezeigt wird, stellen Sie sicher, dass Sie die aktuelle Version von Visual Studio ausführen. Weitere Informationen zum Aktualisieren Ihrer Installation finden Sie auf der Seite [Aktualisieren von Visual Studio auf die aktuelle Version](../install/update-visual-studio.md).
 
 Im Anschluss wird Ihre Projektdatei in Visual Studio geöffnet.
 
@@ -110,7 +110,7 @@ Im Anschluss wird Ihre Projektdatei in Visual Studio geöffnet.
 
    ![Benennen Sie Ihr Projekt im Fenster „Neues Projekt konfigurieren“ „HalloWelt“](../get-started/csharp/media/vs-2019/csharp-name-your-aspnet-helloworld-project.png)
 
-1. In der **erstellen Sie eine neue ASP.NET Core-Webanwendung** Fenster, überprüfen Sie, ob **ASP.NET Core 2.1** im oberen Menü der Dropdown-Liste angezeigt wird. Wählen Sie dann **Webanwendung** aus; diese Option beinhaltet Razor Pages-Beispielseiten. Wählen Sie als Nächstes **Erstellen** aus.
+1. Überprüfen Sie im Fenster **Neue ASP.NET Core-Webanwendung erstellen**, ob **ASP.NET Core 2.1** im oberen Dropdownmenü angezeigt wird. Wählen Sie dann **Webanwendung** aus; diese Option beinhaltet Razor Pages-Beispielseiten. Wählen Sie als Nächstes **Erstellen** aus.
 
    ![Fenster „Neue ASP.NET Core-Webanwendung erstellen“](../get-started/csharp/media/vs-2019/csharp-create-aspnet-core-razor-pages-app.png)
 

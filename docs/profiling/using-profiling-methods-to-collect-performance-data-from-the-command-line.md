@@ -16,7 +16,7 @@ ms.lasthandoff: 06/06/2019
 ms.locfileid: "66746776"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Verwenden von Profilerstellungsmethoden zum Sammeln von Leistungsdaten über die Befehlszeile
-Die Wahl des [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Profilerstellungstools gehörenden Befehlszeilentools und Optionen hängt von Faktoren wie z. B. den Typ der Anwendung, dass die profilerstellung, die Methode der profilerstellung, die Sie verwenden möchten, und gibt an, ob die Anwendung wird im einheitlichen geschrieben oder .NET Framework-Code.
+Die zur Verfügung stehenden Befehlszeilentools und Optionen der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools hängen von verschiedenen Faktoren ab, beispielsweise von der Art der Anwendung, für die ein Profil erstellt werden soll, von der Profilerstellungsmethode, die Sie verwenden möchten, sowie davon, ob die Zielanwendung in nativem Code oder in .NET Framework-Code geschrieben ist.
 
  In diesem Thema sind die Themen über Verfahren mittels Befehlszeile gemäß der ausgewählten Profilerstellungsmethode aufgeführt.
 
@@ -50,9 +50,9 @@ Die Wahl des [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Profiler
 - [Native Dienste](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
 
 ## <a name="use-net-memory-methods-to-collect-memory-allocation-and-object-lifetime-data"></a>Verwenden von .NET-Arbeitsspeichermethoden zur Sammlung von Daten zur Speicherbelegung und Objektlebensdauer
- Die Profilerstellung für .NET Arbeitsspeichermethode können Sie zum Sammeln von .NET Framework-Speicherbelegungsdaten und Informationen über die Lebensdauer von Objekten in .NET Framework.
+ Die .NET-Arbeitsspeichermethode der Profilerstellungstools ermöglicht das Sammeln von Speicherbelegungsdaten für .NET Framework sowie von Informationen zur Lebensdauer von Objekten in .NET Framework.
 
- Sie können die Zielanwendung mit dem Profiler starten; Sie können den Profiler an eine ausgeführte Instanz einer Anwendung anfügen; und Sie können die instrumentierte Versionen der Anwendung zum Sammeln von ausführliche Zeitsteuerungsinformationen zusammen mit der .NET Framework-Speicherdaten erstellen.
+ Sie können die Zielanwendung mit dem Profiler starten, den Profiler an eine aktive Instanz einer Anwendung anfügen und instrumentierte Versionen der Anwendung erstellen, um ausführliche Zeitsteuerungsinformationen sowie .NET Framework-Speicherdaten zu sammeln.
 
 |Aufgabe|Art der Zielanwendung|
 |----------|-----------------------------|

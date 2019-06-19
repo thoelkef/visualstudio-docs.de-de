@@ -22,44 +22,44 @@ ms.locfileid: "66745009"
 ---
 # <a name="code-analysis-project-designer"></a>Codeanalyse, Projekt-Designer
 
-Enthält das Codeanalysetool, das Sie für Ihren Code verwenden können. Das Tool meldet Informationen zu Ihren Assemblys, z. B. Verstöße gegen die Programmier- und Entwurfsregeln Regeln in der Microsoft .NET-Entwurfsrichtlinien dargelegten.
+Enthält das Codeanalysetool, das Sie für Ihren Code verwenden können. Das Tool erstellt Berichte zu Informationen zu Ihren Assemblys, wie z.B. Verstöße gegen die Programmier- und Entwurfsregeln, die in den Microsoft .NET-Entwurfsrichtlinien festgelegt sind.
 
 ## <a name="uielement-list"></a>UIElement-Liste
 
- Aktivieren Sie Code Analysis\
+ Codeanalyse aktivieren\
  Aktiviert oder deaktiviert die Codeanalyse für Ihr Projekt.
 
- Entwerfen von Rules\
+ Entwurfsregeln\
  Aktiviert oder deaktiviert die Entwurfsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
 
- Globalisierung Rules\
+ Globalisierungsregeln\
  Aktiviert oder deaktiviert die Globalisierungsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
 
- Interoperabilität Rules\
+ Interoperabilitätsregeln\
  Aktiviert oder deaktiviert Interoperabilitätsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
 
- Verwaltbarkeit Rules\
+ Wartbarkeitsregeln\
  Aktiviert oder deaktiviert Wartbarkeitsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
 
- Mobility Rules\
+ Mobilitätsregeln\
  Aktiviert oder deaktiviert Mobilitätsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
 
- Benennen Rules\
+ Benennungsregeln\
  Aktiviert oder deaktiviert Benennungsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
 
- Leistung Rules\
+ Leistungsregeln\
  Aktiviert oder deaktiviert Leistungsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
 
- Portabilität Rules\
+ Portabilitätsregeln\
  Aktiviert oder deaktiviert Portabilitätsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
 
- Zuverlässigkeit Rules\
+ Zuverlässigkeitsregeln\
  Aktiviert oder deaktiviert Zuverlässigkeitsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
 
- Sicherheit Rules\
+ Sicherheitsregeln\
  Aktiviert oder deaktiviert Sicherheitsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
 
- Nutzung Rules\
+ Nutzungsregeln\
  Aktiviert oder deaktiviert Nutzungsregeln. Sie können diesen Eintrag auch erweitern, um einzelne Regeln zu aktivieren oder zu deaktivieren.
 
 ## <a name="see-also"></a>Siehe auch

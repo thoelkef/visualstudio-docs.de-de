@@ -24,13 +24,13 @@ Mit Windows Presentation Foundation (WPF) können Sie Desktop-Clientanwendungen 
 
 ![Contoso Healthcare-Beispiel](../designers/media/wpfintrofigure24.png)
 
-Der Kern von WPF ist eine auflösungsunabhängige und vektorbasierte Rendering-Engine, die die Leistungsfähigkeit moderner Grafikhardware nutzt. Dieser Kern wird durch WPF um mehrere Anwendungsentwicklungsfeatures erweitert, wozu Extensible Application Markup Language (XAML), Steuerelemente, Datenbindung, Layout, 2D- und 3D-Grafik, Animationen, Stile, Vorlagen, Dokumente, Medien, Text und Typographie zählen. WPF ist Teil von .NET können Sie Anwendungen erstellen, die andere Elemente der .NET-API von beinhalten.
+Der Kern von WPF ist eine auflösungsunabhängige und vektorbasierte Rendering-Engine, die die Leistungsfähigkeit moderner Grafikhardware nutzt. Dieser Kern wird durch WPF um mehrere Anwendungsentwicklungsfeatures erweitert, wozu Extensible Application Markup Language (XAML), Steuerelemente, Datenbindung, Layout, 2D- und 3D-Grafik, Animationen, Stile, Vorlagen, Dokumente, Medien, Text und Typographie zählen. WPF ist Teil von .NET. Sie können also Anwendungen erstellen, die andere Elemente der .NET-API beinhalten.
 
 Diese Übersicht ist für Einsteiger gedacht und beschreibt die wichtigsten Funktionen und Konzepte von WPF.
 
 ## <a name="program-with-wpf"></a>Programmieren mit WPF
 
-WPF ist eine Teilmenge von .NET Typen, die (größtenteils) in befinden die <xref:System.Windows> Namespace. Wenn Sie bereits Anwendungen mit .NET und verwalteten Technologien wie ASP.NET und Windows Forms erstellt haben, sollten der grundlegende WPF-Programmierung vertraut sein; Sie instanziieren Klassen, Eigenschaften, Methoden aufzurufen und behandeln Ereignisse und legen Sie mithilfe Ihrer bevorzugten .NET-Programmiersprache, z. B. C# oder Visual Basic.
+WPF ist eine Teilmenge von .NET-Typen, die sich (zum größten Teil) im <xref:System.Windows>-Namespace befinden. Wenn Sie bereits Anwendungen mit .NET und verwalteten Technologien wie ASP.NET und Windows Forms erstellt haben, sind Sie mit den Grundlagen der WPF-Programmierung vertraut. Sie instanziieren Klassen, legen Eigenschaften fest, rufen Methoden auf und behandeln Ereignisse und verwenden dafür Ihre bevorzugte .NET Framework-Programmiersprache, etwa C# oder Visual Basic.
 
 WPF umfasst zusätzliche Programmierkonstrukte, mit denen Eigenschaften und Ereignisse erweitert werden: [Abhängigkeitseigenschaften](/dotnet/framework/wpf/advanced/dependency-properties-overview) und [Routingereignisse](/dotnet/framework/wpf/advanced/routed-events-overview).
 

@@ -75,7 +75,7 @@ Sie können die die Eigenschaft **Methode** der Leistungssitzung verwenden, um d
 
 4. Klicken Sie auf **Sampling** oder **Instrumentation**.
 
-5. Klicken Sie auf **Sammeln von .NET Objekt-Zuordnungsinformationen** zum Sammeln von der Größe und Anzahl der Zuordnungen für .NET Framework-Objekt.
+5. Klicken Sie zum Sammeln von der Größe und Anzahl von .NET Framework-Objektzuweisungen auf **.NET-Objektzuweisungsinformationen auflisten**.
 
 6. (Optional) Klicken Sie auf **Lebensdauerinformation für .NET-Objekte auflisten** zum Sammeln von Daten über die Generierung der automatische Speicherbereinigung, in dem der Objektspeicher freigegeben wurde.
 

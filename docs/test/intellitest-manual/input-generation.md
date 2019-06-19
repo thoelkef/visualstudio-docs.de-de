@@ -18,17 +18,17 @@ ms.locfileid: "66746307"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Eingabeerzeugung mithilfe der dynamischen symbolischen Ausführung
 
-IntelliTest erzeugt Eingaben für [parametrisierte Unittests](test-generation.md#parameterized-unit-testing), indem es die Branchbedingungen im Programm analysiert. Testeingaben werden danach ausgewählt, ob sie neues Branchingverhalten des Programm auslösen können. Die Analyse ist ein inkrementeller Prozess. Er verfeinert das Prädikat `q: I -> {true, false}` über der formale Eingabeparametern des Tests `I`. `q` Stellt den Satz von Verhaltensweisen, die IntelliTest bereits beobachtet hat. Zunächst `q := false`, weil noch nichts beobachtet wurde hat.
+IntelliTest erzeugt Eingaben für [parametrisierte Unittests](test-generation.md#parameterized-unit-testing), indem es die Branchbedingungen im Programm analysiert. Testeingaben werden danach ausgewählt, ob sie neues Branchingverhalten des Programm auslösen können. Die Analyse ist ein inkrementeller Prozess. Sie verfeinert das Prädikat `q: I -> {true, false}` über die formalen Eingabeparameter des Tests `I`. `q` stellt die Menge an Verhaltensweisen dar, die IntelliTest bereits beobachtet hat. Zunächst ist dies `q := false`, weil noch nichts beobachtet wurde.
 
 Die Schritte der Schleife sind wie folgt:
 
-1. IntelliTest bestimmt Eingaben `i` so, dass `q(i)=false` mithilfe einer [einschränkungs-Solver](#constraint-solver). Aufgrund der Konstruktion der Eingabe `i` dauert einen Ausführungspfad nicht zuvor gesehen. Zunächst bedeutet dies, dass `i` kann jeder Eingabe sein, da noch kein Ausführungspfad gefunden wurde.
+1. IntelliTest bestimmt Eingaben `i` mit einem [Einschränkungs-Solver](#constraint-solver), sodass `q(i)=false` ist. Aufgrund der Konstruktion nimmt die Eingabe `i` einen neuen Ausführungspfad. Zunächst bedeutet dies, dass `i` jede Eingabe sein kann, weil noch kein Ausführungspfad gefunden wurde.
 
-1. IntelliTest führt den Test mit der ausgewählten Eingabe `i`, und überwacht die Ausführung des Tests und das getestete Programm.
+1. IntelliTest führt den Test mit der ausgewählten Eingabe `i` aus und überwacht die Ausführung des Test sowie das getestete Programm.
 
-1. Während der Ausführung nimmt das Programm einen bestimmten Pfad, der von alle bedingten Branches des Programms bestimmt wird. Der Satz aller Bedingungen, die bestimmen, die Ausführung wird aufgerufen, die *pfadbedingung*, geschrieben, wie das Prädikat `p: I -> {true, false}` über die formellen Eingabeparameter. IntelliTest berechnet eine Repräsentation dieses Prädikats.
+1. Während der Ausführung nimmt das Programm einen bestimmten Pfad, der von alle bedingten Branches des Programms bestimmt wird. Der Satz aller Bedingungen, die die Ausführung bestimmen, wird als *Pfadbedingung* bezeichnet. Diese wird über die formellen Eingabeparameter als Prädikat `p: I -> {true, false}` geschrieben. IntelliTest berechnet eine Repräsentation dieses Prädikats.
 
-1. IntelliTest legt `q := (q or p)`. Das heißt, zeichnet die Tatsache, dass sie den Pfad, der durch dargestellt gesehen hat `p`.
+1. IntelliTest legt `q := (q or p)` fest. Anders gesagt bedeutet dies, dass erfasst wird, dass es den Pfad gesehen hat, der mit `p` dargestellt wird.
 
 1. Gehen Sie zu Schritt 1.
 
@@ -79,7 +79,7 @@ Wenn der Typ nicht sichtbar ist oder wenn die Felder nicht [sichtbar](#visibilit
 
 ## <a name="visibility"></a>Sichtbarkeit
 
-.NET hat ein aufwendiges sichtbarkeitsmodell: Typen, Methoden, Felder und andere Mitglieder möglich **private**, **öffentliche**, **interne**, und vieles mehr.
+.NET hat ein aufwendiges Sichtbarkeitsmodell: Typen, Methoden, Felder und andere Member können **privat**, **öffentlich**, **intern** usw. sein.
 
 Wenn IntelliTest Tests erzeugt, versucht es, nur Aktionen durchzuführen, die gemäß den Sichtbarkeitsregeln von .NET Framework innerhalb des Kontexts der erzeugten Tests zulässig sind (wie das Aufrufen von Konstruktoren, Methoden und das Festlegen von Feldern).
 
@@ -98,11 +98,11 @@ Dies sind die Regeln:
 
 ## <a name="parameterized-mocks"></a>Parametrisierte Pseudoobjekte
 
-Wie teste ich eine Methode, die einen Parameter eines Schnittstellentyps hat? Oder einer nicht versiegelten Klasse? IntelliTest weiß nicht, welche Implementierungen später verwendet werden, wenn diese Methode aufgerufen wird. Und vielleicht nicht einmal eine Implementierung verfügbar während der Testphase.
+Wie teste ich eine Methode, die einen Parameter eines Schnittstellentyps hat? Oder einer nicht versiegelten Klasse? IntelliTest weiß nicht, welche Implementierungen später verwendet werden, wenn diese Methode aufgerufen wird. Möglicherweise ist zur Zeit des Tests noch nicht mal eine Implementierung verfügbar.
 
 Die konventionelle Antwort ist das Verwenden von *Pseudoobjekten* mit explizitem Verhalten.
 
-Ein Pseudoobjekt implementiert eine Schnittstelle (oder weitet eine nicht versiegelte Klasse aus). Dies stellt keine tatsächliche Implementierung dar, sondern ist nur eine Verknüpfung, die die Ausführung von Tests mit dem Pseudoobjekt ermöglicht. Das Verhalten wird manuell im Rahmen jedes Testfalls definiert, wo sie verwendet wird. Es gibt viele Tools, die das Definieren eines Pseusoobjekts und dessen erwarteten Verhaltens erleichtern. Dennoch muss dieses Verhalten manuell definiert werden.
+Ein Pseudoobjekt implementiert eine Schnittstelle (oder weitet eine nicht versiegelte Klasse aus). Dies stellt keine tatsächliche Implementierung dar, sondern ist nur eine Verknüpfung, die die Ausführung von Tests mit dem Pseudoobjekt ermöglicht. Sein Verhalten wird manuell im Rahmen jedes Testfalls definiert, in dem es zum Einsatz kommt. Es gibt viele Tools, die das Definieren eines Pseusoobjekts und dessen erwarteten Verhaltens erleichtern. Dennoch muss dieses Verhalten manuell definiert werden.
 
 Statt hart codierter Werte in Pseudoobjekten kann IntelliTest die Werte erzeugen. Neben [parametrisierten Unittests](test-generation.md#parameterized-unit-testing) ermöglicht IntelliTest auch parametrisierte Pseudoobjekte.
 

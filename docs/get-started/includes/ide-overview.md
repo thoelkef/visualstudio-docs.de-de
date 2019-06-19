@@ -23,7 +23,7 @@ Die *integrierte Entwicklungsumgebung* für Visual Studio ist eine kreative Star
 
 ::: moniker range="vs-2019"
 
-[![Visual Studio-IDE 2019](../media/vs-2019/ide-overview.png)](../media/vs-2019/ide-overview.png#lightbox)
+[![Die Visual Studio 2019-IDE](../media/vs-2019/ide-overview.png)](../media/vs-2019/ide-overview.png#lightbox)
 
 ::: moniker-end
 

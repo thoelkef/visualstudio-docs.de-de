@@ -33,7 +33,7 @@ Live Unit Testing kann mit den drei gängigen Frameworks für Komponententests v
 |Testframework  |Mindestversion des Visual Studio-Adapters  |Mindestversion des Frameworks  |
 |---------|---------|---------|
 |xUnit.net |xunit.runner.visualstudio, Version 2.2.0-beta3-build1187 |xUnit 1.9.2 |
-|NUnit |NUnit3TestAdapter version 3.7.0 |NUnit, Version 3.5.0 |
+|NUnit |NUnit3TestAdapter, Version 3.7.0 |NUnit, Version 3.5.0 |
 |MSTest |MSTest.TestAdapter 1.1.4-preview |MSTest.TestFramework 1.0.5-preview |
 
 Wenn Sie ältere auf MSTest-basierende Testprojekte haben, die sich auf `Microsoft.VisualStudio.QualityTools.UnitTestFramework` beziehen, und Sie nicht auf die neueren MSTest-NuGet-Pakete umsteigen möchten, sollten Sie auf Visual Studio 2017 Version 15.4 oder höher upgraden.

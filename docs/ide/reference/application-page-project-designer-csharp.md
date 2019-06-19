@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 91f811a169f9cffc9cf175b68a875c2999d3745d
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 897c3a82f5add84ad343c100b93fd8a4d2663610
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744990"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160056"
 ---
 # <a name="application-page-project-designer-c"></a>Seite "Anwendung", Projekt-Designer (C#)
 
@@ -50,18 +50,18 @@ Informationen zum programmgesteuerten Zugriff auf diese Eigenschaft finden Sie u
 
 **Zielframework**
 
-Gibt die Version von .NET, die die Anwendung ausgerichtet ist. Diese Option kann unterschiedliche Werte aufweisen, je nachdem, die welche Versionen von .NET auf Ihrem Computer installiert sind.
+Gibt die .NET-Version an, auf die die Anwendung ausgerichtet ist. Diese Option kann unterschiedliche Werte aufweisen, je nachdem, welche Versionen von .NET auf Ihrem Computer installiert sind.
 
-Für .NET Framework-Projekten entspricht der Standardwert des Zielframeworks, die Sie beim Erstellen des Projekts angegeben haben.
+Für .NET Framework-Projekte entspricht der Standardwert dem Zielframework, das Sie beim Erstellen des Projekts angegeben haben.
 
-Für ein Projekt können für .NET Core, die verfügbaren Versionen wie folgt aussehen:
+Für ein Projekt, das auf .NET Core abzielt, werden die verfügbaren Versionen ggf. wie folgt aussehen:
 
-![Framework-Zielversion für ein .NET Core-Projekt](../media/application-target-framework.png)
+![Framework-Zielversionen für ein .NET Core-Projekt](../media/application-target-framework.png)
 
 > [!NOTE]
 > Die im Dialogfeld [Erforderliche Komponenten](../../ide/reference/prerequisites-dialog-box.md) aufgelisteten Pakete mit erforderlichen Komponenten werden automatisch festgelegt, wenn Sie das Dialogfeld zum ersten Mal öffnen. Wenn im Nachhinein Änderungen am Zielframework des Projekts vorgenommen werden, müssen Sie die erforderlichen Komponenten entsprechend dem neuen Zielframework manuell auswählen.
 
-Weitere Informationen finden Sie unter [Vorgehensweise: .NET Framework-Version als Ziel](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) und [Übersicht über .NET Framework](../../ide/visual-studio-multi-targeting-overview.md).
+Weitere Informationen finden Sie unter [Übersicht über Frameworkziele](../../ide/visual-studio-multi-targeting-overview.md).
 
 **Ausgabetyp**
 
