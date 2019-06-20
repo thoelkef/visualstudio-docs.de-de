@@ -8,12 +8,12 @@ Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: Willkommen bei Visual Studio-Abonnements
 Searchscope: VS Subscription
-ms.openlocfilehash: 939922aa418ee94d3018ac5f5743c31181e5e875
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: 1515b7da3cadb8397f38554498fb4880db2d3b03
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65976108"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67259483"
 ---
 # <a name="visual-studio-subscriptions"></a>Visual Studio-Abonnements
 
@@ -194,7 +194,6 @@ Damit Ihr Abonnement noch nützlicher wird, werden Abonnementvorteile hinzugefü
                             <li><a href="/visualstudio/subscriptions/vs-linkedin-learning">LinkedIn Premium</a> (Business, Technologie, Kreativität)</li>
                             <li><a href="/visualstudio/subscriptions/vs-pluralsight">Pluralsight</a> (Cloud, Design, mobile Apps und Daten)</li>
                             <li><a href="/visualstudio/subscriptions/vs-datacamp">Data Camp</a> (Data Science und künstliche Intelligenz)</li>
-                            <li><a href="/visualstudio/subscriptions/vs-xamarin">Xamarin University</a> (Entwicklung für mobile Umgebungen)</li>
                             <li><a href="/visualstudio/subscriptions/vs-opsgility">Opsgility-Schulung</a> (mit Fokus auf der Cloud)</li>
                             <li><a href="/visualstudio/subscriptions/vs-tech-support">Professioneller technischer Support von Microsoft bei Incidents</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-azure-advisory-chat">Azure Advisory Chat</a></li>

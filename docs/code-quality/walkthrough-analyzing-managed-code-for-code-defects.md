@@ -5,23 +5,23 @@ ms.topic: conceptual
 helpviewer_keywords:
 - code analysis [Visual Studio]
 - managed code, analyzing
-author: gewarren
-ms.author: gewarren
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 93bd0fd71fbe8eae90750aa2e7597ee40bba17a2
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 3a2ce9b719f77377abf5b2bebd81b03a2606258b
+ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715273"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67195296"
 ---
-# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Exemplarische Vorgehensweise: Analysieren von verwaltetem Code für Codefehler
+# <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>Exemplarische Vorgehensweise: Verwenden Sie statische Codeanalyse Codefehler gefunden
 
 In dieser exemplarischen Vorgehensweise müssen Sie ein verwaltetes Projekt Codefehler analysieren, mit dem Code Analysetool.
 
-Diese exemplarische Vorgehensweise führt Sie schrittweise durch den Prozess der Verwendung von Code-Analyse zum Analysieren Ihrer .NET-verwaltete Codeassemblys auf Konformität mit den Entwurfsrichtlinien von .NET.
+Diese exemplarische Vorgehensweise führt Sie schrittweise durch den Prozess der Verwendung der Analyse von statischem Code zum Analysieren Ihrer .NET-verwaltete Codeassemblys auf Konformität mit den Entwurfsrichtlinien von .NET.
 
 ## <a name="create-a-class-library"></a>Erstellen einer Klassenbibliothek
 
