@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 29aedc73173de34723f0db846a26c82cbde64f41
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65846336"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67256564"
 ---
 ## <a name="prerequisites"></a>Vorraussetzungen
 
@@ -20,6 +20,6 @@ ms.locfileid: "65846336"
 
 * Ein Azure-Abonnement. [Registrieren Sie sich kostenlos](https://azure.microsoft.com/free/dotnet/), wenn Sie noch nicht über ein Abonnement verfügen. Dabei werden Ihnen für 30 Tage und 12 Monate für beliebte kostenlose Dienste 200 USD gutgeschrieben.
 
-* Ein ASP.NET Core-Projekt. Wenn Sie über keins verfügen. führen Sie die Anweisungen unter [Schnellstart: Verwenden von Visual Studio zum Erstellen Ihrer ersten ASP.NET Core-Web-App](../../ide/quickstart-aspnet-core.md) aus, oder klicken Sie unter **Datei** > **Neues Projekt** auf **Visual C#** > **.NET Core**, und wählen Sie dann **ASP.NET Core-Webanwendung** aus. Wenn Sie dazu aufgefordert werden, klicken Sie auf die Vorlage **Webanwendung (Model View Controller)**, vergewissern Sie sich, dass **No Authentication** (Keine Authentifizierung) ausgewählt ist, und klicken Sie anschließend auf **OK**.
+* Ein ASP.NET Core-Projekt. Wenn Sie über keins verfügen. führen Sie die Anweisungen unter [Schnellstart: Verwenden von Visual Studio zum Erstellen Ihrer ersten ASP.NET Core-Web-App](../../ide/quickstart-aspnet-core.md) aus, oder klicken Sie unter **Datei** > **Neues Projekt** auf **Visual C#**  >  **.NET Core**, und wählen Sie dann **ASP.NET Core-Webanwendung** aus. Wenn Sie dazu aufgefordert werden, klicken Sie auf die Vorlage **Webanwendung (Model View Controller)** , vergewissern Sie sich, dass **No Authentication** (Keine Authentifizierung) ausgewählt ist, und klicken Sie anschließend auf **OK**.
 
 * Erstellen Sie das Projekt über den Menübefehl **Erstellen > Projektmappe erstellen**, bevor Sie mit der Bereitstellung beginnen.
