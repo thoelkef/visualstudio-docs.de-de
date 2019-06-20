@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 0fc18fab56f5b46ef097cdf699e4f0569dc190c9
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65846419"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67256609"
 ---
 Web Deploy 3.6 für Hostingserver umfasst zusätzliche Konfigurationsfeatures für die Erstellung der Datei mit Veröffentlichungseinstellungen über die Benutzeroberfläche.
 
@@ -18,7 +18,7 @@ Web Deploy 3.6 für Hostingserver umfasst zusätzliche Konfigurationsfeatures f�
 
 3. Installieren Sie, falls noch nicht geschehen, die **Verwaltungsskripts und -tools für IIS**.
 
-    Navigieren Sie zu **Serverrollen auswählen** > **Web Server (IIS)** > **Verwaltungstools**, wählen Sie die Rolle **IIS Management Scripts and Tools** (Verwaltungsskripts und -tools für IIS) aus, klicken Sie auf **Weiter**, und installieren Sie die Rolle.
+    Navigieren Sie zu **Serverrollen auswählen** > **Web Server (IIS)**  > **Verwaltungstools**, wählen Sie die Rolle **IIS Management Scripts and Tools** (Verwaltungsskripts und -tools für IIS) aus, klicken Sie auf **Weiter**, und installieren Sie die Rolle.
 
     ![Installieren von Verwaltungsskripts und -tools für IIS](../../deployment/media/tutorial-iis-management-scripts-and-tools.png)
 

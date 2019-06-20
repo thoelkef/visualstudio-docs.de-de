@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43b76ad81a2c075a11ff55dcbd7fbc5e8a4b3fe7
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: 315b24d384a1e3576af6590923c0e546785918ae
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66431840"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67255981"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Häufig gestellte Fragen zum Debuggen von Momentaufnahmen in Visual Studio
 
@@ -169,7 +169,7 @@ Für App Service:
     - SNAPSHOTDEBUGGER_EXTENSION_VERSION
 
     > [!WARNING]
-    > Alle Änderungen an Anwendungseinstellungen werden einen Neustart der app initiiert. Informationen zu Anwendungseinstellungen finden Sie [hier](https://docs.microsoft.com/azure/app-service/web-sites-configure#app-settings). 
+    > Alle Änderungen an Anwendungseinstellungen werden einen Neustart der app initiiert. Weitere Informationen zu Anwendungseinstellungen finden Sie unter [Konfigurieren einer App Service-app im Azure-Portal](/azure/app-service/web-sites-configure).
 
 Für AKS:
 1. Aktualisieren Sie die dockerfile-Datei zum Entfernen von der Abschnitten zu den [Visual Studio Snapshot Debugger auf Docker-Images](https://github.com/Microsoft/vssnapshotdebugger-docker).
