@@ -21,6 +21,8 @@
       items:
         - name: Übersicht
           displayName: 'static code analysis, binary analysis'
+          href: static-code-analysis-for-managed-code-overview.md
+        - name: Exemplarische Vorgehensweise für eine statische Codeanalyse
           href: walkthrough-analyzing-managed-code-for-code-defects.md
         - name: Migration
           href: fxcop-analyzers.yml
@@ -36,9 +38,7 @@
               href: how-to-customize-the-code-analysis-dictionary.md
         - name: Unterdrücken
           items:
-            - name: Unterdrücken von Warnungen
-              href: in-source-suppression-overview.md
-            - name: Unterdrücken von Codeanalysewarnungen für generierten Code
+            - name: Unterdrücken von Warnungen zur statischen Codeanalyse für generierten Code
               href: how-to-suppress-code-analysis-warnings-for-generated-code.md
         - name: Anwendungsfehler bei der Codeanalyse
           items:
@@ -100,6 +100,18 @@
               href: ca0505.md
             - name: FxCopCmd-Fehler
               href: fxcopcmd-errors.md
+        - name: Eincheckrichtlinien
+          items:
+            - name: Erstellen oder Aktualisieren von Eincheckrichtlinien
+              href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
+            - name: Implementieren von Eincheckrichtlinien für die Codeanalyse
+              href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
+            - name: Erzwingen von wartungsfähigem Code
+              href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
+            - name: Synchronisieren von Projektregelsätzen mit der Eincheckrichtlinie
+              href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
+            - name: Versionskompatibilität
+              href: version-compatibility-for-code-analysis-check-in-policies.md
     - name: FxCop-Analysetools
       items:
         - name: Übersicht
@@ -135,18 +147,6 @@
           href: how-to-create-a-custom-rule-set.md
         - name: Verwenden des Regelsatz-Editors
           href: working-in-the-code-analysis-rule-set-editor.md
-    - name: Eincheckrichtlinien
-      items:
-        - name: Erstellen oder Aktualisieren von Eincheckrichtlinien
-          href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
-        - name: Implementieren von Eincheckrichtlinien für die Codeanalyse
-          href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
-        - name: Erzwingen von wartungsfähigem Code
-          href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
-        - name: Synchronisieren von Projektregelsätzen mit der Eincheckrichtlinie
-          href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
-        - name: Versionskompatibilität
-          href: version-compatibility-for-code-analysis-check-in-policies.md
     - name: Codemetrik
       items:
         - name: Übersicht
@@ -188,6 +188,8 @@
               href: native-recommended-rules-rule-set.md
             - name: Regelsatz für Sicherheitsregeln für verwalteten Code
               href: security-rules-rule-set-for-managed-code.md
+        - name: Unterdrücken von Warnungen
+          href: in-source-suppression-overview.md
         - name: Verwalteten von Codewarnungen
           items:
             - name: Übersicht
