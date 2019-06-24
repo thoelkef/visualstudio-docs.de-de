@@ -4,8 +4,6 @@ description: Erfahren Sie, wie Sie mit Dienstkonfigurationen und Profilkonfigura
 author: ghogen
 manager: jillfra
 assetId: 7da8c551-fb06-4057-b5c7-c77f4b39d803
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
@@ -33,28 +31,28 @@ Sie können das Dialogfeld **Konfigurationen verwalten** auch über die Eigensch
 
 ### <a name="to-add-a-service-configuration"></a>So fügen Sie eine Dienstkonfiguration hinzu
 1. Öffnen Sie im Projektmappen-Explorer das Kontextmenü für Ihr Azure-Projekt, und klicken Sie anschließend auf **Konfigurationen verwalten**.
-   
+
     Das Dialogfeld **Dienstkonfigurationen verwalten** wird angezeigt.
 2. Um eine Dienstkonfiguration hinzuzufügen, müssen Sie eine Kopie einer vorhandenen Konfiguration erstellen.Wählen Sie dazu die zu kopierende Konfiguration in der Liste Name aus, und klicken Sie dann auf die Schaltfläche Kopie erstellen. Wählen Sie dazu die zu kopierende Konfiguration in der Liste „Name“ aus, und klicken Sie dann auf die Schaltfläche **Kopie erstellen**.
 3. (Optional) Wählen Sie die neue Dienstkonfiguration in der Liste „Name“ aus, um der Dienstkonfiguration einen neuen Namen zu geben, und klicken Sie dann auf die Schaltfläche **Umbenennen**. Geben Sie im Textfeld **Name** den Namen ein, den Sie für diese Dienstkonfiguration verwenden möchten, und klicken Sie dann auf **OK**.
-   
+
     Eine neue Dienstkonfigurationsdatei mit dem Namen "ServiceConfiguration.[Neuer Name].cscfg" wird dem Azure-Projekt im Projektmappen-Explorer hinzugefügt.
 
 ### <a name="to-delete-a-service-configuration"></a>So löschen Sie eine Dienstkonfiguration
 1. Öffnen Sie im Projektmappen-Explorer das Kontextmenü für Ihr Azure-Projekt, und klicken Sie anschließend auf **Konfigurationen verwalten**.
-   
+
     Das Dialogfeld **Dienstkonfigurationen verwalten** wird angezeigt.
 2. Wählen Sie zum Löschen einer Dienstkonfiguration die zu löschende Konfiguration in der Liste **Name** aus, und klicken Sie dann auf **Entfernen**. Ein Dialogfeld wird angezeigt, in dem Sie bestätigen, dass Sie diese Konfiguration wirklich löschen möchten.
 3. Klicken Sie auf **Löschen**.
-   
+
      Die Dienstkonfigurationsdatei wird aus dem Azure-Projekt im Projektmappen-Explorer entfernt.
 
 ### <a name="to-rename-a-service-configuration"></a>So benennen Sie eine Dienstkonfiguration um
 1. Öffnen Sie im Projektmappen-Explorer das Kontextmenü für Ihr Azure-Projekt, und klicken Sie anschließend auf **Konfigurationen verwalten**.
-   
+
     Das Dialogfeld **Dienstkonfigurationen verwalten** wird angezeigt.
 2. Wählen Sie die neue Dienstkonfiguration in der Liste **Name** aus, um die Dienstkonfiguration umzubenennen, und klicken Sie dann auf **Umbenennen**. Geben Sie im Textfeld **Name** den Namen ein, den Sie für diese Dienstkonfiguration verwenden möchten, und klicken Sie dann auf **OK**.
-   
+
     Der Name der Dienstkonfigurationsdatei wird im Azure-Projekt im Projektmappen-Explorer geändert.
 
 ### <a name="to-change-a-service-configuration"></a>So ändern Sie eine Dienstkonfiguration
@@ -68,16 +66,16 @@ Wenn Sie den Assistenten zum ersten Mal ausführen, wird ein Standardprofil erst
 ### <a name="to-add-a-profile"></a>So fügen Sie ein Profil hinzu
 1. Öffnen Sie das Kontextmenü des Azure-Projekts, und klicken Sie auf **Veröffentlichen**.
 2. Klicken Sie wie in der folgenden Abbildung gezeigt neben der Liste **Zielprofil** auf die Schaltfläche **Profil speichern**. Dadurch wird ein Profil für Sie erstellt.
-   
+
     ![Erstellen eines neuen Profils](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/create-new-profile.png)
 3. Nach dem Erstellen des Profils klicken Sie in der Liste **Zielprofil** auf **<Verwalten…>**.
-   
+
     Das Dialogfeld **Profile verwalten** wird angezeigt, wie in der folgenden Abbildung gezeigt.
-   
+
     ![Dialogfeld "Profile verwalten"](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/manage-profiles.png)
 4. Wählen Sie in der Liste **Name** ein Profil aus, und klicken Sie dann auf **Kopie erstellen**.
 5. Wählen Sie die Schaltfläche **Schließen** .
-   
+
     Das neue Profil wird in der Liste "Zielprofil" angezeigt.
 6. Klicken Sie in der Liste **Zielprofil** auf das soeben erstellte Profil. Die Einstellungen des Veröffentlichungs-Assistenten werden mit den Optionen aus dem ausgewählten Profil aufgefüllt.
 7. Klicken Sie auf die Schaltflächen **Zurück** und **Weiter**, um die einzelnen Seiten des Veröffentlichungs-Assistenten anzuzeigen, und passen Sie dann die Einstellungen für dieses Profil an. Informationen hierzu finden Sie unter [Assistent zum Veröffentlichen der Azure-Anwendung](http://go.microsoft.com/fwlink/p/?LinkID=623085) .
