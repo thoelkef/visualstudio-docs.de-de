@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Verweisen Sie auf Office-Anwendungen durch primäre Interopassemblys'
+title: Ziel-Office-Anwendungen durch primäre Interopassemblys
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 02a69cb91a24b60e8161948a650a6993a634b665
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c6e92b3b4dd46885de7f30f5364d30f39b5c2bd7
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421046"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328876"
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Vorgehensweise: Verweisen Sie auf Office-Anwendungen durch primäre Interopassemblys
   Wenn Sie ein neues Office-Projekt erstellen, fügt Visual Studio automatisch Verweise auf die primären Interopassemblys (PIAs) von Microsoft Office hinzu, die zum Erstellen des Projekts erforderlich sind. Verweise auf andere PIAs müssen in den folgenden Szenarien hinzugefügt werden:
