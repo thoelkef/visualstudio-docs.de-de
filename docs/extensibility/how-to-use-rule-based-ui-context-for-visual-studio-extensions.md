@@ -7,12 +7,12 @@ author: madskristensen
 ms.author: madsk
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9136268bf1bfb7ccebf79de035fb19f40223002
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c3075ca5092dd1b8a69aa4b34c0e507505cf7123
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324700"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309678"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Vorgehensweise: Verwenden des regelbasierten Benutzeroberflächenkontexts für Visual Studio-Erweiterungen
 
@@ -140,6 +140,10 @@ Hier sind die verschiedenen Typen von Begriff, die unterstützt werden:
 |ActiveProjectCapability:\<Expression>|Der Begriff ist "true", wenn das aktive Projektfunktionen mit dem angegebenen Ausdruck übereinstimmen. Ein Ausdruck kann sein, etwa VB &#124; CSharp.|
 |SolutionHasProjectCapability:\<Expression>|Ähnlich wie im oben genannten jedoch Ausdruck ist true, wenn Lösung alle geladenes Projekt, das mit dem Ausdruck übereinstimmt.|
 |SolutionHasProjectFlavor:\<projectTypeGuid>|Der Begriff ist true, wenn eine Lösung verfügt über Projekt, das flavored ist (aggregiert) und verfügt über eine Flavor Übereinstimmung den angegebenen Projekttyp GUID.|
+|ProjectAddedItem:\<pattern>| Der Begriff ist "true", wenn eine Datei, die dem "Muster" zu einem Projekt in der Soluion hinzugefügt wird, die geöffnet wird.|
+|ActiveProjectOutputType:\<outputType>|Der Begriff ist "true" bei der Ausgabe Geben Sie für das aktive Projekt genau übereinstimmt.  OutputType handelt es sich möglicherweise um eine ganze Zahl oder ein <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROJOUTPUTTYPE> Typ.|
+|ActiveProjectBuildProperty:\<buildProperty>=\<regex>|Der Begriff ist "true", wenn aktive Projekt die angegebene Buildeigenschaft weist und Eigenschaftswert Regex-Filter angegeben entspricht. Finden Sie unter [beibehalten von Daten in MSBuild-Projektdateien](internals/persisting-data-in-the-msbuild-project-file.md) für Weitere Informationen zu Eigenschaften erstellen.|
+|SolutionHasProjectBuildProperty:\<buildProperty>=\<regex>|Der Begriff ist "true", wenn Lösung ein geladenes Projekt mit der angegebenen Build-Eigenschaft hat und Eigenschaftswert Regex-Filter angegeben entspricht.|
 
 ## <a name="compatibility-with-cross-version-extension"></a>Kompatibilität mit versionsübergreifende-Erweiterung
 

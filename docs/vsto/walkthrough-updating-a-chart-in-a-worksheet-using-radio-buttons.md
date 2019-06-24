@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Aktualisieren eines Arbeitsblatts in einem Dokument mithilfe von Optionsfeldern'
+title: Aktualisieren des Diagramms in Arbeitsblatt mithilfe von Optionsfeldern
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6a827e688e260adcb93e81b55520c747dd99ed0d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 86e289ad8a316f7026d6fda46bb3e424164437fb
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421745"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67329013"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Exemplarische Vorgehensweise: Aktualisieren eines Arbeitsblatts in einem Dokument mithilfe von Optionsfeldern
   In dieser exemplarischen Vorgehensweise wird gezeigt, die Grundlagen der Verwendung von Optionsfeldern in einem Microsoft Office Excel-Arbeitsblatt, Benutzern eine Möglichkeit, schnell zwischen den Optionen wechseln. Ändern Sie die Optionen in diesem Fall den Stil eines Diagramms.
@@ -60,8 +60,8 @@ ms.locfileid: "63421745"
    ||Q1|Q2|Q3|Q4|
    |-|--------|--------|--------|--------|
    |West|500|550|550|600|
-   |Osten|600|625|675|700|
-   |Nordamerika|450|470|490|510|
+   |Ost|600|625|675|700|
+   |Nord|450|470|490|510|
    |Süd|800|750|775|790|
 
    Als Nächstes fügen Sie ein Diagramm, um das erste Arbeitsblatt zum Anzeigen der Daten.
