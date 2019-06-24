@@ -30,7 +30,7 @@ VSCEIP ist standardmäßig aktiviert. Sie können es deaktivieren oder erneut ak
 
     ![Auswählen eines Optionsfelds, das Ihren bevorzugten Einstellungen für die Teilnahme entspricht](media/visual-studio-experience-improvement-program-image1.png)
 
-[!INCLUDE [GDPR-related guidance](../../docs/misc/includes/gdpr-hybrid-note.md)]
+[!INCLUDE [GDPR-related guidance](../docs/misc/includes/gdpr-hybrid-note.md)]
 
 ## <a name="see-also"></a>Siehe auch
 
