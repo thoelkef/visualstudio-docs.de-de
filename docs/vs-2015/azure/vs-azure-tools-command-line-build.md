@@ -1,18 +1,16 @@
 ---
 title: Build per Befehlszeile für Azure | Microsoft Docs
 description: Build per Befehlszeile für Azure
-services: visual-studio-online
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 94b35d0d-0d35-48b6-b48b-3641377867fd
-ms.prod: visual-studio-dev15
+ms.prod: visual-studio-dev14
 ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
-origin.date: 03/05/2017
-ms.date: 09/10/2018
-ms.author: v-junlch
+ms.date: 03/05/2017
+ms.author: ghogen
 ms.openlocfilehash: 8c96713a06c66fe34e34417e9e8595ba07e50485
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
@@ -28,8 +26,8 @@ Sie können MSBuild auch über die Befehlszeile ausführen. Diese Methode wird i
 ## <a name="msbuild-parameters"></a>MSBuild-Parameter
 Die einfachste Möglichkeit zur Erstellung eines Pakets besteht im Ausführen von MSBuild mit der Option `/t:Publish`. Standardmäßig erstellt dieser Befehl ein Verzeichnis unter dem Stammordner des Projekts, z.B. `<ProjectDirectory>\bin\Configuration\app.publish\`. Beim Erstellen eines Azure-Projekts werden zwei Dateien generiert, die Paketdatei selbst und die zugehörige Konfigurationsdatei:
 
-- Paketdatei (`project.cspkg`)
-- Konfigurationsdatei (`ServiceConfiguration.TargetProfile.cscfg`)
+* Paketdatei (`project.cspkg`)
+* Konfigurationsdatei (`ServiceConfiguration.TargetProfile.cscfg`)
 
 In der Standardeinstellung enthält jedes Azure-Projekt eine Dienstkonfigurationsdatei für lokale Builds (Debugging) und eine für Cloudbuilds (Staging oder Produktion). Sie können Dienstkonfigurationsdateien jedoch nach Bedarf hinzufügen oder entfernen. Wenn Sie ein Paket in Visual Studio erstellen, werden Sie gefragt, welche Dienstkonfigurationsdatei für das Paket eingeschlossen werden soll. Beim Erstellen eines Pakets mithilfe von MSBuild ist standardmäßig die lokale Dienstkonfigurationsdatei enthalten. Damit eine andere Dienstkonfigurationsdatei enthalten ist, legen Sie die `TargetProfile`-Eigenschaft des MSBuild-Befehls folgendermaßen fest: `MSBuild /t:Publish /p:TargetProfile=ProfileName`.
 
@@ -37,5 +35,3 @@ Wenn Sie ein alternatives Verzeichnis zur Speicherung des Pakets und der Konfigu
 
 ## <a name="next-steps"></a>Nächste Schritte
 Nach dem Erstellen des Pakets können Sie es in Azure bereitstellen.
-
-<!-- Update_Description: update metedata properties -->
