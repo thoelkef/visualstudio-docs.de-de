@@ -4,9 +4,7 @@ description: Erfahren Sie, wie Rollen für Azure-Clouddienste mithilfe von Visua
 author: ghogen
 manager: jillfra
 assetId: d397ef87-64e5-401a-aad5-7f83f1022e16
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
-ms.custom: vs-azure
+ms.custom: seodec18
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
@@ -50,8 +48,6 @@ Sie können einen Azure-Clouddienst vom Projektmappen-Explorer in Visual Studio 
 
     > [!IMPORTANT]
     > Wenn Sie eine bestimmte Dienstkonfiguration auswählen, sind einige Eigenschaften deaktiviert, da sie nur für alle Konfigurationen festgelegt werden können. Um diese Eigenschaften zu bearbeiten, müssen Sie **Alle Konfigurationen** auswählen.
-    >
-    >
 
     ![Dienstkonfigurationsliste für einen Azure-Clouddienst](./media/vs-azure-tools-configure-roles-for-cloud-service/cloud-service-service-configuration-property.png)
 
