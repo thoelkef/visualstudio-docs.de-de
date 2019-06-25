@@ -4,8 +4,6 @@ description: Erfahren Sie, wie Sie die Anmeldeinformationen angeben, mit denen V
 author: ghogen
 manager: jillfra
 assetId: 61570907-42a1-40e8-bcd6-952b21a55786
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
@@ -40,6 +38,6 @@ Wenn Sie selbst ein Zertifikat erstellen möchten, lesen Sie die Anleitung unter
 ## <a name="next-steps"></a>Nächste Schritte
 
 - [Allgemeine Übersicht über die Web-Apps](https://docs.microsoft.com/azure/app-service/)
-- [Bereitstellen der App in Azure App Service](https://docs.microsoft.com/azure/app-service/app-service-deploy-local-git) 
+- [Bereitstellen der App in Azure App Service](https://docs.microsoft.com/azure/app-service/app-service-deploy-local-git)
 - [Bereitstellen von Webaufträgen mit Visual Studio](https://docs.microsoft.com/azure/app-service/websites-dotnet-deploy-webjobs)
 - [Erstellen und Bereitstellen eines Clouddiensts](https://docs.microsoft.com/azure/cloud-services/cloud-services-how-to-create-deploy-portal)
