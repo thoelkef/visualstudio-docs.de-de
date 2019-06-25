@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6465724fe14d43781730abc25b050ae0bcd2d2b5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a12838db0687fd7ebe20a5c576db0e06ece49107
+ms.sourcegitcommit: 34807a6b6105ae7839adde8ff994c85182ad3aff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317485"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67342400"
 ---
 # <a name="idebugcodecontext2getdocumentcontext"></a>IDebugCodeContext2::GetDocumentContext
 Ruft ab, der Dokumentenkontext, der an diesen Codekontext entspricht. Den Dokumentenkontext darstellt, eine Position in der Quelldatei, die auf den Quellcode entspricht, die diese Anweisung generiert wird.
@@ -41,10 +41,10 @@ int GetDocumentContext( 
 
 ## <a name="parameters"></a>Parameter
 `ppSrcCxt`\
-[out] Gibt die [idebugdocumentcontext2 angegeben](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) Objekt, das den Codekontext entspricht.
+[out] Gibt die [idebugdocumentcontext2 angegeben](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) Objekt, das den Codekontext entspricht. Wenn `S_OK` zurückgegeben wird, diesen muss nicht`null`.
 
 ## <a name="return-value"></a>Rückgabewert
- Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.
+ Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben. Eine Debug-Engine sollte einen Fehlercode zurück, wie z. B. `E_FAIL` bei der `out` Parameter `null` z. B. wenn der Codekontext keine Position der zugehörigen Datenquelle hat.
 
 ## <a name="remarks"></a>Hinweise
  Im Allgemeinen kann der Dokumentenkontext betrachtet werden als eine Position in einer Quelldatei während der Codekontext eine Position ein Code-Anweisung in einen Stream für die Ausführung ist.
