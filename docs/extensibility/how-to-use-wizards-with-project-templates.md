@@ -14,12 +14,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 366244285892820039a5a0f7950a709d170b4527
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3831cbc484fde7c61dbe1baf5ecd9ab07556a7f5
+ms.sourcegitcommit: 34807a6b6105ae7839adde8ff994c85182ad3aff
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352043"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67342412"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Vorgehensweise: Verwenden von Assistenten mit Projektvorlagen
 
@@ -68,7 +68,7 @@ Dieses Verfahren veranschaulicht die Erstellung ein benutzerdefiniertes Assisten
 
 3. Fügen Sie die Assembly zum VSIX-Projekt als Ressource hinzu. Öffnen der *"Source.Extension.vsixmanifest"* und wählen Sie die **Assets** Registerkarte. In der **neue Anlage hinzufügen** Fenster für **Typ** wählen **Microsoft.VisualStudio.Assembly**, für die **Quelle** wählen **ein Projekt in der aktuellen Projektmappe**, und für **Projekt** wählen **MyProjectWizard**.
 
-4. Fügen Sie die folgenden Verweise auf das VSIX-Projekt hinzu. (In **Projektmappen-Explorer**, wählen Sie die VSIX-Projektknoten, **Verweise**, mit der rechten Maustaste, und wählen **Verweis hinzufügen**.) In der **Verweis hinzufügen** Dialogfeld in der **Framework** Registerkarte die **System.Windows Forms** Assembly und wählen Sie ihn. Wählen Sie jetzt die **Erweiterungen** Registerkarte. Suchen der **EnvDTE** Assembly und wählen Sie ihn. Auch die **Microsoft.VisualStudio.TemplateWizardInterface** Assembly und wählen Sie ihn. Klicken Sie auf **OK**.
+4. Fügen Sie die folgenden Verweise auf das VSIX-Projekt hinzu. (In **Projektmappen-Explorer**, wählen Sie die VSIX-Projektknoten, **Verweise**, mit der rechten Maustaste, und wählen **Verweis hinzufügen**.) In der **Verweis hinzufügen** Dialogfeld in der **Framework** Registerkarte die **System.Windows Forms** Assembly und wählen Sie ihn. Außerdem suchen und Auswählen der **System** und **"System.Drawing"** Assemblys. Wählen Sie jetzt die **Erweiterungen** Registerkarte. Suchen der **EnvDTE** Assembly und wählen Sie ihn. Auch die **Microsoft.VisualStudio.TemplateWizardInterface** Assembly und wählen Sie ihn. Klicken Sie auf **OK**.
 
 5. Fügen Sie eine Klasse für die Implementierung des Assistenten zum VSIX-Projekt ein. (In **Projektmappen-Explorer**mit der rechten Maustaste auf den VSIX-Projektknoten, und wählen Sie **hinzufügen**, klicken Sie dann **neues Element**, klicken Sie dann **Klasse**.) Nennen Sie die Klasse **WizardImplementation**.
 
@@ -157,7 +157,7 @@ Dieses Verfahren veranschaulicht die Erstellung ein benutzerdefiniertes Assisten
 
    - Ein <xref:System.Object> Array, das einen Satz von Parametern enthält, die an den Assistenten von Visual Studio übergeben.
 
-     In diesem Beispiel wird dem <xref:System.Collections.Generic.Dictionary%602>-Parameter ein Parameterwert aus dem Benutzereingabeformular hinzugefügt. Jede Instanz des `$custommessage$`-Parameters im Projekt wird durch den vom Benutzer eingegebenen Text ersetzt. Fügen Sie Ihrem Projekt die folgenden Assemblys hinzu: **System** und **"System.Drawing"** .
+     In diesem Beispiel wird dem <xref:System.Collections.Generic.Dictionary%602>-Parameter ein Parameterwert aus dem Benutzereingabeformular hinzugefügt. Jede Instanz des `$custommessage$`-Parameters im Projekt wird durch den vom Benutzer eingegebenen Text ersetzt.
 
 7. Erstellen Sie jetzt die **UserInputForm**. In der *WizardImplementation.cs* Datei, fügen Sie den folgenden Code nach dem Ende der `WizardImplementation` Klasse.
 
