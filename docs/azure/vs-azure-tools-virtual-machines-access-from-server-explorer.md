@@ -4,8 +4,6 @@ description: In diesem Artikel erhalten Sie einen Überblick darüber, wie virtu
 author: ghogen
 manager: jillfra
 assetId: eb3afde6-ba90-4308-9ac1-3cc29da4ede0
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
@@ -35,7 +33,7 @@ Wenn Sie in Azure gehostete virtuelle Computer verwenden, können Sie über den 
    | Status |Mögliche Werte lauten "Wird gestartet", "Gestartet", "Wird angehalten", "Angehalten" und "Status wird abgerufen". Wird "Status wird abgerufen" angezeigt, ist der aktuelle Status unbekannt. Die Werte für diese Eigenschaft unterscheiden sich von den Werten, die im [Azure-Portal](http://go.microsoft.com/fwlink/p/?LinkID=525040) verwendet werden. |
    | SubscriptionID |Die Abonnement-ID für Ihr Azure-Konto. Sie können diese Informationen im [Azure-Portal](http://go.microsoft.com/fwlink/p/?LinkID=525040) anzeigen, indem Sie die Eigenschaften für ein Abonnement öffnen. |
 2. Wählen Sie einen Endpunktknoten aus, und zeigen Sie dann das Fenster **Eigenschaften** an.
-3. Die folgende Tabelle beschreibt die verfügbaren Endpunkteigenschaften. Alle Eigenschaften sind schreibgeschützt. Verwenden Sie zum Hinzufügen oder Bearbeiten der Endpunkte für einen virtuellen Computer das [Azure-Portal](http://go.microsoft.com/fwlink/p/?LinkID=525040). 
+3. Die folgende Tabelle beschreibt die verfügbaren Endpunkteigenschaften. Alle Eigenschaften sind schreibgeschützt. Verwenden Sie zum Hinzufügen oder Bearbeiten der Endpunkte für einen virtuellen Computer das [Azure-Portal](http://go.microsoft.com/fwlink/p/?LinkID=525040).
 
    | Eigenschaft | BESCHREIBUNG |
    | --- | --- |
