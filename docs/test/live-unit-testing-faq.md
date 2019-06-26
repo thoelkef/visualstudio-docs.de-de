@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1e5f88acccd9ccbcd880b8403edb0eb40f97ad2e
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 1ed80454f6a87047de9e338d26c749d3c27a98ea
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714480"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67258130"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing – FAQ (Häufig gestellte Fragen)
 
@@ -197,15 +197,6 @@ Tests, die auf diesen Werten basieren, können fehlschlagen, wenn sie von Live U
 Ihre Projektmappe kann sogar erstellt werden, wenn Sie keine Änderungen vornehmen, wenn der Buildvorgang der Projektmappe Quellcode generiert, der Teil der Projektmappe selbst ist, und in den Zieldateien des Builds keine entsprechenden Eingaben und Ausgaben angegeben sind. Zielen sollte eine Liste von Eingaben und Ausgaben bereitgestellt werden, damit MSBuild die entsprechenden aktuellen Überprüfungen vornehmen kann und bestimmen kann, ob ein neuer Build erforderlich ist.
 
 Live Unit Testing startet einen Buildvorgang, wenn erkannt wird, dass Quelldateien geändert wurden. Da der Buildvorgang Ihrer Projektmappe Quelldateien generiert, gerät Live Unit Testing in eine unendliche Buildschleife. Wenn die Eingaben und Ausgaben des Ziels jedoch überprüft werden, wenn Live Unit Testing den zweiten Buildvorgang startet (nach der Ermittlung neu generierter Quelldateien aus dem vorherigen Build), wird die Buildschleife unterbrochen, da die Überprüfungen der Eingaben und Ausgaben darauf hinweisen, dass alles auf dem neuesten Stand ist.  
-
-## <a name="lightweight-solution-load"></a>Einfaches Laden von Projektmappen
-
-**Wie funktioniert Live Unit Testing mit der Funktion „Lightweight-Ladevorgang für Projektmappen“?**
-
-Live Unit Testing funktioniert derzeit nicht richtig mit dem Lightweight-Ladefeature für Projektmappen. Dies funktioniert erst, nachdem mindestens eines der Testprojekte geladen wurde. Andernfalls funktioniert es nicht, da Live Unit Testing von mindestens einem der Testprojekte abhängt, das auf einen Testadapter verweist (MSTest, xUnit oder NUnit), der geladen wird.
-
-> [!NOTE]
-> Der Lightweight-Ladevorgang für Projektmappen ist in Visual Studio 2017 Version 15.5 und höher nicht mehr enthalten. In Visual Studio Version 2017 Version 15.5 und höher laden große Projektmappen, die verwalteten Code enthalten, auch ohne den Lightweight-Ladevorgang für Projektmappen viel schneller als zuvor.
 
 ## <a name="new-process-coverage"></a>Coverage für neue Prozesse
 

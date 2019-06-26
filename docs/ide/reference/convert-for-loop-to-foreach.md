@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: fc14a07557b3ae46a84f506bc0fa9007efface63
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d61e79055b2158115b459e643a36170304b7f655
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811888"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67261714"
 ---
 # <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>Refactoring zum Konvertieren einer for-Schleife in eine foreach-Anweisung
 
@@ -43,7 +43,7 @@ Die Gründe, warum Sie eine [for](/dotnet/csharp/language-reference/keywords/for
 
 1. Platzieren Sie Ihre Einfügemarke im `for`-Schlüsselwort.
 
-1. Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, oder klicken Sie auf den Schraubendreher ![Schraubendrehersymbol](../media/screwdriver-icon.png) im Randbereich der Codedatei.
+1. Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+ **.** , oder klicken Sie auf den Schraubendreher ![Schraubendrehersymbol](../media/screwdriver-icon.png) im Randbereich der Codedatei.
 
    ![Menü „In "foreach" konvertieren“](media/convert-to-foreach.png)
 
@@ -71,7 +71,7 @@ Die Gründe, warum Sie eine [foreach](/dotnet/csharp/language-reference/keywords
 
 1. Platzieren Sie Ihre Einfügemarke im `foreach`- oder `For Each`-Schlüsselwort.
 
-1. Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+**.**, oder klicken Sie auf den Schraubendreher ![Schraubendrehersymbol](../media/screwdriver-icon.png) im Randbereich der Codedatei.
+1. Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG**+ **.** , oder klicken Sie auf den Schraubendreher ![Schraubendrehersymbol](../media/screwdriver-icon.png) im Randbereich der Codedatei.
 
    ![Menü „In "for" konvertieren“](media/convert-to-for.png)
 
@@ -80,7 +80,7 @@ Die Gründe, warum Sie eine [foreach](/dotnet/csharp/language-reference/keywords
 1. Da durch das Refactoring eine neue Variable für die Anzahl der Iterationen eingeführt wird, wird das Feld **Umbenennen** in der oberen rechten Ecke des Editors angezeigt. Wenn Sie die Variable anders benennen möchten, tippen Sie den neuen Namen ein, und drücken Sie die **EINGABETASTE**, oder wählen Sie im Feld **Umbenennen** die Option **Anwenden** aus. Wenn Sie keinen neuen Namen auswählen möchten, drücken Sie die **Esc**-Taste, oder klicken Sie auf **Anwenden**, um das Feld **Umbenennen** zu schließen.
 
 > [!NOTE]
-> In C# verwendet der durch diese Refactorings generierte Code entweder einen expliziten Typ oder [var](/dotnet/csharp/language-reference/keywords/var) als Typ für die Elemente in der Auflistung. Der Typ im generierten Code, unabhängig ob explizit oder implizit, hängt von den Einstellungen des Codeformats für diesen Bereich ab. Diese bestimmten Einstellungen des Codeformats werden auf Computerebene unter **Extras** > **Optionen** > **Text-Editor** > **C#** > **Codeformat** > **Allgemein** > **\'var-Einstellungen** oder auf Projektmappenebene in einer [EditorConfig](../../ide/editorconfig-code-style-settings-reference.md#implicit-and-explicit-types)-Datei konfiguriert. Wenn Sie die Einstellungen des Codeformats in den **Optionen** ändern, müssen Sie die Codedatei erneut öffnen, damit die Änderungen wirksam werden.
+> In C# verwendet der durch diese Refactorings generierte Code entweder einen expliziten Typ oder [var](/dotnet/csharp/language-reference/keywords/var) als Typ für die Elemente in der Auflistung. Der Typ im generierten Code, unabhängig ob explizit oder implizit, hängt von den Einstellungen des Codeformats für diesen Bereich ab. Diese bestimmten Einstellungen des Codeformats werden auf Computerebene unter **Extras** > **Optionen** > **Text-Editor** > **C#**  > **Codeformat** > **Allgemein** >  **\'var-Einstellungen** oder auf Projektmappenebene in einer [EditorConfig](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types)-Datei konfiguriert. Wenn Sie die Einstellungen des Codeformats in den **Optionen** ändern, müssen Sie die Codedatei erneut öffnen, damit die Änderungen wirksam werden.
 
 ## <a name="see-also"></a>Siehe auch
 
