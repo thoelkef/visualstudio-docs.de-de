@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: dc243e057e3e0d4eec6ea314b0e7aa0778d6c0dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 647009d7e01cc821bdf4fa6a573e6caa73cb7794
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969394"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67259484"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Neuerungen in Visual Studio-Abonnements
 
@@ -27,15 +27,15 @@ Hier finden Sie eine kurze Zusammenfassung der Neuerungen im 2. Quartal.
 
 Wir haben neue Funktionen für Cloudadministratoren hinzugefügt, durch welche die Verwaltung von Cloudabonnements vereinfacht wird:
 
-* [**Massenzuweisungen:**](/visualstudio/subscriptions/assign-license#bulk-assignments) Fügen Sie mehrere Abonnenten gleichzeitig hinzu und laden Sie diese hoch.
+* [**Massenzuweisungen:** ](/visualstudio/subscriptions/assign-license#bulk-assignments) Fügen Sie mehrere Abonnenten gleichzeitig hinzu und laden Sie diese hoch.
 
   ![Mehrere Benutzer über die Schaltfläche „Massenhinzufügen“ hinzufügen](media/bulk-add-multiple-subscribers.png)
 
-* [**Exportieren:**](/visualstudio/subscriptions/exporting-subscriptions) Exportieren Sie eine Liste Ihrer Benutzer sowie Details zu deren Zuweisungen. Eine Liste wie diese kann sich als nützlich erweisen, wenn Sie die Zuweisungen und Ablaufdaten nachverfolgen möchten.
+* [**Exportieren:** ](/visualstudio/subscriptions/exporting-subscriptions) Exportieren Sie eine Liste Ihrer Benutzer sowie Details zu deren Zuweisungen. Eine Liste wie diese kann sich als nützlich erweisen, wenn Sie die Zuweisungen und Ablaufdaten nachverfolgen möchten.
 
    ![Abonnentenliste in Excel über die Schaltfläche „Exportieren“ exportieren](media/export-subscriber-list-to-csv.png)
 
-* [**Massenbearbeitung:**](/visualstudio/subscriptions/edit-license#editing-multiple-subscribers-by-using-bulk-edit) Bearbeiten Sie die Abonnementinformationen mehrerer Abonnenten gleichzeitig.
+* [**Massenbearbeitung:** ](/visualstudio/subscriptions/edit-license#editing-multiple-subscribers-using-bulk-edit) Bearbeiten Sie die Abonnementinformationen mehrerer Abonnenten gleichzeitig.
 
   ![Mehrere Benutzer über die Schaltfläche „Massenbearbeitung“ bearbeiten](media/bulk-edit-multiple-subscribers.png)
 
@@ -53,11 +53,11 @@ Wir haben neue Funktionen für Cloudadministratoren hinzugefügt, durch welche d
 
     ![Eigene Verweise zu den einzelnen Abonnements hinzufügen](media/add-subscriber-reference-notes.png)
 
-* [**Erneutes Senden von Zuweisungs-E-Mails:**](resend-assignment-email.md) Senden Sie eine Benachrichtigungs-E-Mail erneut an alle Benutzer in Ihrer Abonnentenliste, und zwar so oft wie gewünscht.
+* [**Erneutes Senden von Zuweisungs-E-Mails:** ](resend-assignment-email.md) Senden Sie eine Benachrichtigungs-E-Mail erneut an alle Benutzer in Ihrer Abonnentenliste, und zwar so oft wie gewünscht.
 
   ![Aktivierungs-E-Mail nach Wunsch erneut an einen beliebigen Benutzer oder mehrere Benutzer senden](media/resend-subscriber-activation-emails.png)
 
-* [**Filtern:**](search-license.md) Organisieren und filtern Sie Ihre Abonnentendaten Ihren Anforderungen entsprechend.
+* [**Filtern:** ](search-license.md) Organisieren und filtern Sie Ihre Abonnentendaten Ihren Anforderungen entsprechend.
 
   ![Abonnentendaten basierend auf verfügbaren Feldern filtern](media/filter-subscriber-data.png)
 

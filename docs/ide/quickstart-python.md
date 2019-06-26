@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f81ca0d5c41f08174adfc891055939414e1bfe6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce4184cd3864cad787a4e4f8afc084445fa3c828
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953860"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365294"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Schnellstart: Erstellen einer ersten Python-Web-App mit Visual Studio
 
@@ -105,7 +105,7 @@ Hier verwenden Sie folgende Schritte, um die Flask-Bibliothek in der „globalen
 
     ![Projektmappen-Explorer mit der Standardumgebung](media/quickstart-python-02-default-environment-2019.png)
 
-2. Klicken Sie mit der rechten Maustaste auf die Umgebung und dann auf **Python-Pakete verwalten...**. Dieser Befehl öffnet das Fenster **Python-Umgebungen** in der Registerkarte **Pakete (PyPI)**.
+2. Klicken Sie mit der rechten Maustaste auf die Umgebung und dann auf **Python-Pakete verwalten...** . Dieser Befehl öffnet das Fenster **Python-Umgebungen** in der Registerkarte **Pakete (PyPI)** .
 
 3. Geben Sie in das Suchfeld „flask“ ein. Wenn unterhalb des Suchfelds **Flask** angezeigt wird, können Sie diesen Schritt überspringen. Wählen Sie andernfalls **Run command: pip install flask** (Ausführungsbefehl: pip install flask) aus. Akzeptieren Sie die Aufforderungen zu Administratorberechtigungen, und beobachten Sie den Fortschritt im Fenster **Ausgabe** in Visual Studio. (Eine Aufforderung zur Erhöhung der Rechte wird angezeigt, wenn der Ordner „Pakete“ für die globale Umgebung sich in einem geschützten Bereich wie *C:\Programme* befindet.)
 
@@ -177,8 +177,6 @@ Nun können Sie Python-Code einfügen, um eine rudimentäre Web-App zu implement
     ::: moniker range=">=vs-2019"
     ![Festlegen der Startdatei für ein Projekt in Projektmappen-Explorer](media/quickstart-python-05-set-as-startup-file-2019.png)
     ::: moniker-end
-
-1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf *app.py*, und klicken Sie auf **Als Startdatei festlegen**. Dieser Befehl ermittelt die Codedatei, die in Python bei der Ausführung der App startet.
 
 2. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Projekt, und wählen Sie **Eigenschaften** aus. Wählen Sie dann die Registerkarte **Debuggen** aus, und legen Sie die Eigenschaft **Portnummer** auf `4449` fest. Dadurch wird sichergestellt, dass Visual Studio entsprechend der `app.run`-Argumente im Code einen Browser mit `localhost:4449` ausführt.
 

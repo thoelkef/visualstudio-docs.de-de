@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a11fa7913828ef557c87ec50184c9de35a9e5bc4
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: b555ede6ecf406f98c2e1ae9384b61664e8226cf
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65847441"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67260407"
 ---
 # <a name="options-dialog-box-text-editor--c--code-style--formatting"></a>Dialogfeld „Optionen“: Text-Editor \> C# \> Codeformat \> Formatierung
 
@@ -40,7 +40,7 @@ Wählen Sie in der Menüleiste **Tools** > **Optionen** um diese Optionsseite au
 
 Es hängt von den Einstellungen ab, *wann* Formatierungsoptionen für den Code vom Code-Editor übernommen werden.
 
-|Bezeichnung|Beschreibung|
+|Bezeichnung|BESCHREIBUNG|
 |-----------|-----------------|
 |**Automatisch während der Eingabe formatieren**|Wenn diese Bezeichnung deaktiviert ist, sind auch die Optionen **Beim Eingeben von ; Anweisung formatieren** und **Bei Eingabe von } Block formatieren** deaktiviert.|
 |**Bei Eingabe von ; Anweisung automatisch formatieren**|Bei Auswahl dieser Option werden Anweisungen nach der Fertigstellung entsprechend den für den Editor ausgewählten Formatierungsoptionen formatiert.|
@@ -60,21 +60,21 @@ Wenn Sie Codeformateinstellungen für C#-Dateien bisher mit dem Befehl **Dokumen
 
 Mit den folgenden Einstellungen wird der Befehl **Dokument formatieren** so konfiguriert, dass zusätzliche Bereinigungsvorgänge für eine Datei ausgeführt werden. Weitere Informationen darüber, wie diese Einstellungen übernommen werden, finden Sie unter [Befehl „Dokument formatieren“](../code-styles-and-code-cleanup.md#apply-code-styles).
 
-|Bezeichnung|Beschreibung|Entsprechende EditorConfig-Optionen und Regeln unter „Extras“ > „Optionen“|
+|Bezeichnung|BESCHREIBUNG|Entsprechende EditorConfig-Optionen und Regeln unter „Extras“ > „Optionen“|
 |-----------|-----------------|-----------------|-----------------|
-|**Alle C#-Formatierungsregeln anwenden (Einzug, Umbruch, Abstände)**|Durch den Befehl **Dokument formatieren** werden alle Formatierungsprobleme behoben. Diese Einstellung kann nicht angepasst werden.| [Grundlegende EditorConfig-Optionen](../../ide/create-portable-custom-editor-options.md)<br/>[.NET EditorConfig-Formatierungsoptionen](../../ide/editorconfig-code-style-settings-reference.md#formatting-conventions)<br/><br/>**Extras** > **Optionen** > **Text-Editor** > **C#**  > **Formatierung** > [**Einzug**, **Neue Zeilen**, **Abstand** oder **Umbruch**]|
+|**Alle C#-Formatierungsregeln anwenden (Einzug, Umbruch, Abstände)**|Durch den Befehl **Dokument formatieren** werden alle Formatierungsprobleme behoben. Diese Einstellung kann nicht angepasst werden.| [Grundlegende EditorConfig-Optionen](../../ide/create-portable-custom-editor-options.md)<br/>[.NET EditorConfig-Formatierungsoptionen](../../ide/editorconfig-formatting-conventions.md)<br/><br/>**Extras** > **Optionen** > **Text-Editor** > **C#**  > **Formatierung** > [**Einzug**, **Neue Zeilen**, **Abstand** oder **Umbruch**]|
 |**Zusätzliche Codebereinigung während der Formatierung durchführen**|Bei Auswahl dieser Option werden die Korrekturen angewendet, die in den Regeln für den **Edit.FormatDocument**-Befehl angegeben wurden.| Nicht zutreffend |
 |**Remove unnecessary usings** (Nicht erforderliche using-Anweisungen entfernen)|Bei Auswahl dieser Option werden unnötige `using`-Anweisungen entfernt, sobald **Edit.FormatDocument** ausgelöst wird.| Nicht zutreffend |
 |**Sort usings** (using-Anweisungen sortieren)|Bei Auswahl dieser Option werden `using`-Anweisungen sortiert, sobald **Edit.FormatDocument** ausgelöst wird.| dotnet_sort_system_directives_first<br/><br/>**Extras** > **Optionen** > **Text-Editor** > **C#**  > **Erweitert** > **Place 'System' directives first when sorting usings („System“-Anweisungen beim Sortieren von using-Anweisungen oben anzeigen)** |
 |**Geschweifte Klammern für einzeilige Steuerungsanweisungen hinzufügen/entfernen**|Bei Auswahl dieser Option werden einzeiligen Steuerungsanweisungen geschweifte Klammern hinzugefügt bzw. aus diesen entfernt, sobald **Edit.FormatDocument** ausgelöst wird.| csharp_prefer_braces<br/><br/>**Extras** > **Optionen** > **Text-Editor** > **C#**  > **Codeformat** > **Codeblockeinstellungen** > **Geschweifte Klammern bevorzugen** |
 |**Zugriffsmodifizierer hinzufügen**|Bei Auswahl dieser Option werden Zugriffsmodifizierer hinzugefügt, sobald **Edit.FormatDocument** ausgelöst wird.| dotnet_style_require_accessibility_modifiers |
 |**Zugriffsmodifizierer sortieren**|Bei Auswahl dieser Option werden Zugriffsmodifizierer sortiert, sobald **Edit.FormatDocument** ausgelöst wird.| csharp_preferred_modifier_order<br/>visual_basic_preferred_modifier_order |
-|**Ausdrucks-/Blocktexteinstellungen anwenden**|Bei Auswahl dieser Option werden Ausdruckskörpermember in Blocktexte konvertiert (oder die umgekehrte Aktion wird ausgeführt), sobald **Edit.FormatDocument** ausgelöst wird.| [EditorConfig-Optionen für Ausdruckskörpermember](../../ide/editorconfig-code-style-settings-reference.md#expression_bodied_members)<br/><br/>**Extras** > **Optionen** > **Text-Editor** > **C#**  > **Codeformat** > **Ausdruckseinstellungen** > **Use expression body for methods, constructors, etc. (Ausdruckskörper für Methoden, Konstruktoren usw. verwenden)** |
-|**Apply implicit/explicit type preferences** (Einstellungen für implizite/explizite Typen anwenden)|Bei Auswahl dieser Option wird `var` in den expliziten Typ konvertiert (oder die umgekehrte Aktion wird ausgeführt), sobald **Edit.FormatDocument** ausgelöst wird.| [EditorConfig-Optionen für explizite Typen](../../ide/editorconfig-code-style-settings-reference.md#implicit-and-explicit-types)<br/><br/>**Extras** > **Optionen** > **Text-Editor** > **C#**  > **Codeformat** > **var-Einstellungen** |
+|**Ausdrucks-/Blocktexteinstellungen anwenden**|Bei Auswahl dieser Option werden Ausdruckskörpermember in Blocktexte konvertiert (oder die umgekehrte Aktion wird ausgeführt), sobald **Edit.FormatDocument** ausgelöst wird.| [EditorConfig-Optionen für Ausdruckskörpermember](../../ide/editorconfig-language-conventions.md#expression-bodied-members)<br/><br/>**Extras** > **Optionen** > **Text-Editor** > **C#**  > **Codeformat** > **Ausdruckseinstellungen** > **Use expression body for methods, constructors, etc. (Ausdruckskörper für Methoden, Konstruktoren usw. verwenden)** |
+|**Apply implicit/explicit type preferences** (Einstellungen für implizite/explizite Typen anwenden)|Bei Auswahl dieser Option wird `var` in den expliziten Typ konvertiert (oder die umgekehrte Aktion wird ausgeführt), sobald **Edit.FormatDocument** ausgelöst wird.| [EditorConfig-Optionen für explizite Typen](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types)<br/><br/>**Extras** > **Optionen** > **Text-Editor** > **C#**  > **Codeformat** > **var-Einstellungen** |
 |**Einstellungen für out-Inlinevariablen anwenden**|Bei Auswahl dieser Option werden `out`-Inlinevariablen nach Möglichkeit verwendet, sobald **Edit.FormatDocument** ausgelöst wird.| csharp_style_inlined_variable_declaration<br/><br/>**Extras** > **Optionen** > **Text-Editor** > **C#**  > **Codeformat** > **Variableneinstellungen** > **Inlinevariablendeklaration vorziehen** |
 |**Typeinstellungen für Sprache/Framework anwenden**|Bei Auswahl dieser Option werden Sprachtypen in Frameworktypen konvertiert (oder die umgekehrte Aktion wird ausgeführt), sobald **Edit.FormatDocument** ausgelöst wird.| dotnet_style_predefined_type_for_locals_parameters_members<br/>dotnet_style_predefined_type_for_member_access<br/><br/>**Extras** > **Optionen** > **Text-Editor** > **C#**  > **Codeformat** > **Vordefinierte Typeinstellungen** |
 |**Einstellungen für Objekt-/Sammlungsinitialisierung anwenden**|Bei Auswahl dieser werden nach Möglichkeit Objekt- und Elementinitialisierer verwendet, sobald **Edit.FormatDocument** ausgelöst wird.| dotnet_style_object_initializer<br/>dotnet_style_collection_initializer<br/><br/>**Extras** > **Optionen** > **Text-Editor** > **C#**  > **Codeformat** > **Ausdruckseinstellungen** > **Objektinitialisierer vorziehen** oder **Prefer collection initializer** (Elementinitialisierer vorziehen) |
-|**this.-Qualifizierungseinstellungen anwenden**|Bei Auswahl dieser Option werden die `this.`-Einstellungen angewendet, sobald **Edit.FormatDocument** ausgelöst wird.| [EditorConfig-Optionen für this.-Qualifizierung](../../ide/editorconfig-code-style-settings-reference.md#this_and_me)<br/><br/>**Extras** > **Optionen** > **Text-Editor** > **C#**  > **Codeformat** > **this.-Einstellungen** |
+|**this.-Qualifizierungseinstellungen anwenden**|Bei Auswahl dieser Option werden die `this.`-Einstellungen angewendet, sobald **Edit.FormatDocument** ausgelöst wird.| [EditorConfig-Optionen für this.-Qualifizierung](../../ide/editorconfig-language-conventions.md#this-and-me)<br/><br/>**Extras** > **Optionen** > **Text-Editor** > **C#**  > **Codeformat** > **this.-Einstellungen** |
 |**Private Felder nach Möglichkeit als schreibgeschützt festlegen**|Bei Auswahl dieser Option wird für private Felder nach Möglichkeit `readonly` festgelegt, sobald **Edit.FormatDocument** ausgelöst wird.| dotnet_style_readonly_field<br/><br/>**Extras** > **Optionen** > **Text-Editor** > **C#**  > **Codeformat** > **Voreinstellungen für Feld** > **Readonly bevorzugen** |
 |**Unnötige Umwandlungen entfernen**|Bei Auswahl dieser Option werden nach Möglichkeit unnötige Umwandlungen entfernt, sobald **Edit.FormatDocument** ausgelöst wird.| Nicht zutreffend |
 |**Nicht verwendete Variablen entfernen**|Bei Auswahl dieser Option werden nicht verwendete Variablen entfernt, sobald **Edit.FormatDocument** ausgelöst wird.| Nicht zutreffend |
