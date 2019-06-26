@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a284c3630b60d5fc2211064524d87259b1f8349f
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: c2bf6a62bde77ce49c7723e435bc34c3cad74702
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65614517"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365400"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Verwenden von Haltepunkten in Visual Studio-debugger
 Haltepunkte sind eines der wichtigsten Debugverfahren in der Toolbox für Entwickler. Sie können Haltepunkte festlegen, wo der Debugger die Ausführung angehalten werden soll. Beispielsweise empfiehlt es sich um den Status der Codevariablen oder sehen Sie sich die Aufrufliste an einem bestimmten Haltepunkt. Wenn Sie zum ersten Mal versuchen, Code zu debuggen, sollten Sie [Debuggen für Einsteiger](../debugger/debugging-absolute-beginners.md) lesen, bevor Sie diesen Artikel durchgehen.
@@ -49,7 +49,7 @@ Haltepunkte sind eines der wichtigsten Debugverfahren in der Toolbox für Entwic
 
  Klicken Sie in den linken Rand neben einer Codezeile, zum Festlegen eines Haltepunkts im Quellcode. Sie können auch auswählen, die Zeile, und drücken Sie **F9**Option **Debuggen** > **Haltepunkt ein/aus**, oder mit der rechten Maustaste, und wählen Sie **Haltepunkt**  >  **Haltepunkt einfügen**. Der Haltepunkt wird als ein roter Punkt am linken Rand angezeigt.
 
-In C# Code, der Haltepunkt und der aktuellen Ausführung Zeilen werden automatisch hervorgehoben. Für C++ Code, die Sie aktivieren können, auf die Herausarbeitung der Haltepunkt und die aktuellen Zeilen dazu **Tools** (oder **Debuggen**) > **Optionen**  >  **Debuggen** >  **bei Haltepunkten und aktueller Anweisung gesamte Quellcodezeile markieren (C++ nur)**.
+In C# Code, der Haltepunkt und der aktuellen Ausführung Zeilen werden automatisch hervorgehoben. Für C++ Code, die Sie aktivieren können, auf die Herausarbeitung der Haltepunkt und die aktuellen Zeilen dazu **Tools** (oder **Debuggen**) > **Optionen**  >  **Debuggen** >  **bei Haltepunkten und aktueller Anweisung gesamte Quellcodezeile markieren (C++ nur)** .
 
  ![Festlegen eines Haltepunkts](../debugger/media/basicbreakpoint.png "grundlegende Haltepunkt")
 
@@ -144,9 +144,9 @@ Zur visuellen nachverfolgung während der codeausführung, finden Sie unter [Zuo
 
 4. Fügen Sie den folgenden der **Funktionsnamen** , und wählen Sie **C++** Sprache.
 
-    ```C++
-    ((my_class *) 0xcccccccc)->my_method
-    ```
+   ```cpp
+   ((my_class *) 0xcccccccc)->my_method
+   ```
 
 ::: moniker range=">= vs-2019"
 
@@ -158,7 +158,7 @@ Datenhaltepunkte unterbrechen die Ausführung, wenn ein bestimmtes Objekt der Ei
 
 1. In einem .NET Core-Projekt mit dem beginnen Sie Debuggen, und warten Sie, bis ein Haltepunkt erreicht wird.
 
-2. In der **"Auto"**, **Watch**, oder **"lokal"** mit der rechten Maustaste auf eine Eigenschaft, und wählen Sie **unterbrechen, wenn der Wert ändert** im Kontextmenü.
+2. In der **"Auto"** , **Watch**, oder **"lokal"** mit der rechten Maustaste auf eine Eigenschaft, und wählen Sie **unterbrechen, wenn der Wert ändert** im Kontextmenü.
 
     ![Verwaltete Datenhaltepunkt](../debugger/media/managed-data-breakpoint.png "verwaltet Datenhaltepunkt")
 
@@ -167,7 +167,7 @@ Datenhaltepunkte in .NET Core funktioniert nicht für:
 - Eigenschaften, die nicht in der QuickInfo, "lokal", "Auto", erweiterbar sind oder Überwachung (Fenster)
 - Statische Variablen
 - Klassen mit dem DebuggerTypeProxy-Attribut
-- Felder in Strukturen 
+- Felder in Strukturen
 
 ::: moniker-end
 
@@ -179,7 +179,7 @@ Datenhaltepunkte in .NET Core funktioniert nicht für:
 
 1. In einem C++-Projekt mit dem beginnen Sie Debuggen, und warten Sie, bis ein Haltepunkt erreicht wird. Auf der **Debuggen** Menü wählen **Neuer Haltepunkt** > **Datenhaltepunkt**
 
-    Sie können auch auswählen, **neu** > **Datenhaltepunkt** in die **Haltepunkte** Fenster oder auf ein Element in der **"Auto"**, **Watch**, oder **"lokal"** Fenster, und wählen **unterbrechen, wenn der Wert ändert**im Kontextmenü.
+    Sie können auch auswählen, **neu** > **Datenhaltepunkt** in die **Haltepunkte** Fenster oder auf ein Element in der **"Auto"** , **Watch**, oder **"lokal"** Fenster, und wählen **unterbrechen, wenn der Wert ändert**im Kontextmenü.
 
 2. Geben Sie im Feld **Adresse** eine Speicheradresse oder einen Ausdruck ein, der als Speicheradresse ausgewertet wird. Geben Sie beispielsweise `&avar` ein, um die Ausführung bei einer Änderung des Inhalts der Variable `avar` zu unterbrechen.
 
@@ -189,11 +189,12 @@ Datenhaltepunkte funktionieren nicht unter den folgenden Bedingungen:
 - Ein Prozess, der nicht gedebuggt wird, wird in einen Speicherbereich geschrieben.
 - Der Speicherbereich wird von mindestens zwei Prozessen gemeinsam verwendet.
 - Der Speicherort wird innerhalb des Kernels aktualisiert. Wenn Speicher an der 32-Bit-Windows übergeben wird z. B. `ReadFile` -Funktion, der Speicher vom Kernelmodus, damit das Update der Debugger unterbricht aktualisiert.
+- In dem sich der Ausdruck größer als 4 Bytes, die auf 32-Bit-Hardware und 8 Bytes auf 64-Bit-Hardware ist. Dies ist eine Einschränkung von der X86 Architektur.
 
->[!NOTE]
->- Datenhaltepunkte richten sich nach spezifischen Speicheradressen. Die Adresse einer Variablen ändert sich von einer Debugsitzung zur nächsten, sodass Datenhaltepunkte am Ende einer Debugsitzung automatisch deaktiviert werden.
+> [!NOTE]
+> - Datenhaltepunkte richten sich nach spezifischen Speicheradressen. Die Adresse einer Variablen ändert sich von einer Debugsitzung zur nächsten, sodass Datenhaltepunkte am Ende einer Debugsitzung automatisch deaktiviert werden.
 >
->- Wenn Sie einen Datenhaltepunkt bei einer lokalen Variable festlegen, bleibt der Haltepunkt aktiviert, wenn die Funktion beendet wird, die Speicheradresse ist jedoch nicht mehr gültig, und das Verhalten des Haltepunkts ist unvorhersehbar. Wenn Sie einen Datenhaltepunkt auf eine lokale Variable festlegen, sollten Sie löschen oder deaktivieren diesen vor dem Ende der Funktion.
+> - Wenn Sie einen Datenhaltepunkt bei einer lokalen Variable festlegen, bleibt der Haltepunkt aktiviert, wenn die Funktion beendet wird, die Speicheradresse ist jedoch nicht mehr gültig, und das Verhalten des Haltepunkts ist unvorhersehbar. Wenn Sie einen Datenhaltepunkt auf eine lokale Variable festlegen, sollten Sie löschen oder deaktivieren diesen vor dem Ende der Funktion.
 
 ## <a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> Verwalten von Haltepunkten im Haltepunktefenster
 
@@ -265,7 +266,7 @@ Bei der Auswahl **Bedingungsausdruck**, Sie können zwischen zwei Bedingungen au
 
 1. Legen Sie einen Haltepunkt im Code einer Stelle nach der Erstellung des Objekts.
 
-2. Mit dem Debuggen beginnen, und wählen Sie bei der Ausführung am Haltepunkt angehalten wird, **Debuggen** > **Windows** > **"lokal"** oder **Alt** + **4** zum Öffnen der **"lokal"** Fenster.
+2. Mit dem Debuggen beginnen, und wählen Sie bei der Ausführung am Haltepunkt angehalten wird, **Debuggen** > **Windows** >  **"lokal"** oder **Alt** + **4** zum Öffnen der **"lokal"** Fenster.
 
    Suchen Sie in der angegebenen Objektinstanz die **"lokal"** rechten Maustaste, und wählen Sie **Objekt-ID**.
 
@@ -273,7 +274,7 @@ Bei der Auswahl **Bedingungsausdruck**, Sie können zwischen zwei Bedingungen au
 
 3. Fügen Sie einen neuen Haltepunkt, an dem Punkt, die, den Sie untersuchen möchten; z. B. wenn das Objekt ist, das der Auflistung hinzugefügt werden. Klicken Sie mit der rechten Maustaste auf den Haltepunkt, und wählen Sie **Bedingungen** aus.
 
-4. Verwenden Sie die Objekt-ID im Feld **Bedingter Ausdruck**. Z. B. wenn die Variable `item` ist das Objekt der Auflistung, die Option hinzugefügt werden **ist "true"** und **item == $\<n >**, wobei \<n > ist die Objekt-ID-Nummer .
+4. Verwenden Sie die Objekt-ID im Feld **Bedingter Ausdruck**. Z. B. wenn die Variable `item` ist das Objekt der Auflistung, die Option hinzugefügt werden **ist "true"** und **item == $\<n >** , wobei \<n > ist die Objekt-ID-Nummer .
 
    Die Ausführung wird an dem Punkt unterbrochen, an dem dieses Objekt der Auflistung hinzugefügt werden soll.
 
