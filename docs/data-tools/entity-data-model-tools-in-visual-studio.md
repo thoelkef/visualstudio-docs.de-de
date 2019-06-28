@@ -8,18 +8,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d6f14dbe79e9ba0f2a8642c61a0682b25aa703f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eace6e7f3d970de5aa0ab0e74530d3182af0e177
+ms.sourcegitcommit: 16d8ffc624adb716753412a22d586eae68a29ba2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567192"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67412298"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Entity Framework-Tools in Visual Studio
 
 Entitätsframework ist eine objektrelationale zuordnungstechnologie, die .NET-Entwicklern arbeiten mit relationalen Daten mithilfe von domänenspezifischen Objekten ermöglicht. In EF Core ist der Großteil des Datenzugriffscodes, den Entwickler in der Regel schreiben müssen, nicht mehr erforderlich. Entitätsframework ist die empfohlene objektrelationales Mapping (ORM) Modellieren der Technologie für neue Anwendungen für .NET.
 
-Entity Framework-Tools dienen können Sie die Entity Framework (EF)-Anwendungen zu erstellen. Die vollständige Dokumentation für Entity Framework ist hier: [EF Core und EF 6](/ef/).
+Entity Framework-Tools dienen können Sie die Entity Framework (EF)-Anwendungen zu erstellen. Die vollständige Dokumentation für Entity Framework ist hier: [Übersicht – EF 6](/ef/ef6/).
+
+  > [!NOTE]
+  > Die Entity Framework-Tools, die auf dieser Seite beschriebenen dienen zum generieren *EDMX* -Dateien, die in EF Core nicht unterstützt werden. Um ein EF Core-Modell aus einer vorhandenen Datenbank generieren zu können, finden Sie unter [Reverse Engineering - EF Core](/ef/core/managing-schemas/scaffolding). Weitere Informationen zu den Unterschieden zwischen EF 6 und EF Core finden Sie unter [Vergleichen von EF 6 und EF Core](/ef/efcore-and-ef6/).
 
 Mit Entity Framework-Tools, Sie erstellen eine *Konzeptmodell* aus einer vorhandenen Datenbank und anschließend grafisch visualisieren und bearbeiten Sie das konzeptionelle Modell. Oder Sie können zuerst ein konzeptionelles Modell grafisch erstellen und anschließend eine Datenbank generieren, die das Modell unterstützt. In beiden Fällen können Sie das Modell automatisch aktualisieren, sobald sich die zugrunde liegende Datenbank ändert, und Sie können automatisch Code auf Objektebene für die Anwendung erstellen. Datenbank- und Codegenerierung auf Objektebene sind vom Benutzer anpassbar.
 
