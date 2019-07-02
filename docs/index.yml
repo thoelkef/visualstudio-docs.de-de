@@ -8,12 +8,12 @@ metadata:
   description: Erfahren Sie, wie Sie Visual Studio für die Entwicklung von Anwendungen, Diensten und Tools in der Sprache Ihrer Wahl für jede Plattform und jedes Gerät verwenden können.
   ms.topic: hub-page
   monikerRange: '>=vs-2017'
-  ms.openlocfilehash: bac03cb71b4c925ecb7f5fd8f1ed69466f4bd114
-  ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+  ms.openlocfilehash: b24bc5b3e1427a6f3675398e05a639b45c376571
+  ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 06/07/2019
-  ms.locfileid: "66462862"
+  ms.lasthandoff: 07/01/2019
+  ms.locfileid: "67493718"
 highlightedContent:
   items:
   - title: Setup und Installation
@@ -161,21 +161,48 @@ additionalContent:
   - title: Arbeitslasten
     items:
     - title: Web und Cloud
-      summary: "[Webentwicklung](/aspnet/) </br>\n[Azure-Entwicklung und Verwaltung](azure/index.yml) </br>\n[Python](python/index.yml) </br>\n[Node.js](javascript/index.yml) </br>\n[Datenspeicherung und -verarbeitung](data-tools/index.md) </br>\n[Data Science](python/data-science-and-analytical-applications-workload.md) </br>\n[Office-/Sharepoint-Entwicklung](https://developer.microsoft.com/office/docs) \n"
+      links:
+      - text: Webentwicklung
+        url: /aspnet/
+      - text: Azure-Entwicklung und Verwaltung
+        url: /visualstudio/azure
+      - text: Python
+        url: /visualstudio/python
+      - text: Node.js
+        url: /visualstudio/javascript
+      - text: Datenspeicherung und -verarbeitung
+        url: data-tools/index.md
+      - text: Data Science
+        url: python/data-science-and-analytical-applications-workload.md
+      - text: Office-/Sharepoint-Entwicklung
+        url: https://developer.microsoft.com/office/docs
     - title: Windows
-      summary: >
-        [.NET Desktopentwicklung](/dotnet/framework/develop-client-apps) </br>
-
-        [Entwicklung für die Universelle Windows-Plattform](cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md) </br>
-
-        [Windows-Entwicklung mit C++](/cpp/windows/desktop-applications-visual-cpp)
+      links:
+      - text: .NET Desktopentwicklung
+        url: /dotnet/framework/develop-client-apps
+      - text: Entwicklung für die Universelle Windows-Plattform
+        url: cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md
+      - text: Windows-Entwicklung mit C++
+        url: /cpp/windows/desktop-applications-visual-cpp
     - title: Mobile Apps und Spiele
-      summary: "[Mobile-Entwicklung mit .NET (Xamarin)](/xamarin/) </br>\n[Spieleentwicklung mit Unity](cross-platform/visual-studio-tools-for-unity.md) </br>\n[Mobile-Entwicklung mit JavaScript](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) (nur Visual Studio 2017 und 2015) </br>\n[Mobile-Entwicklung mit C++](/visualstudio/cross-platform/) </br>\n[Spieleentwicklung mit C++](/windows/uwp/gaming/e2e) \n"
+      links:
+      - text: Mobile-Entwicklung mit .NET (Xamarin)
+        url: /xamarin/
+      - text: Spieleentwicklung mit Unity
+        url: cross-platform/visual-studio-tools-for-unity.md
+      - text: Mobile Entwicklung mit JavaScript
+        url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017
+        note: (Visual Studio 2017 and 2015 only)
+      - text: Mobile Entwicklung mit C++
+        url: /visualstudio/cross-platform/
+      - text: Spieleentwicklung mit C++
+        url: /windows/uwp/gaming/e2e
     - title: Andere Toolsets
-      summary: >
-        [Entwicklung von Visual Studio-Erweiterungen](extensibility/index.md) </br>
-
-        [Linux Entwicklung mit C++](/cpp/linux/) </br>
-
-        [Plattformübergreifende .NET Core-Entwicklung](/dotnet/core/)
+      links:
+      - text: Entwicklung von Visual Studio-Erweiterungen
+        url: extensibility/index.md
+      - text: Linux-Entwicklung mit C++
+        url: /cpp/linux/
+      - text: Plattformübergreifende .NET Core-Entwicklung
+        url: /dotnet/core/
   footer: '[Blogs](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [Problem melden](ide/talk-to-us.md) - [Developer Community](https://developercommunity.visualstudio.com/spaces/8/index.html)'
