@@ -15,12 +15,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cd0ba9030d658abb78605cf2e14b5afaa9678f78
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c3fe11a4d92ecc95f5835fc8a8c654b2aac3d235
+ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424308"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493661"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>UML-Anwendungsfalldiagramme: Richtlinien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -170,11 +170,11 @@ Sie können in Visual Studio zeichnen eine *Anwendungsfalldiagramm* zusammengefa
   
  ![Anwendungsfall mit m: n-Multiplizität](../modeling/media/uml-ucguidemulti2.png "UML_UCGuideMulti2")  
   
-- Um darauf hinzuweisen, dass mehrere Akteure der gleichen Klasse ein einzelnes Vorkommen eines Anwendungsfalls teilnehmen können, legen Sie die Multiplizität am Akteursende der Zuordnung auf ** 1... \\***.  
+- Um darauf hinzuweisen, dass mehrere Akteure der gleichen Klasse ein einzelnes Vorkommen eines Anwendungsfalls teilnehmen können, legen Sie die Multiplizität am Akteursende der Zuordnung auf **1..\*** .  
   
    In der Abbildung können ein oder mehrere Restaurants an der Erledigung der gleichen Essensbestellung beteiligt sein.  
   
-- Um anzuzeigen, dass jeder Akteur gleichzeitig an mehreren Vorkommen eines Anwendungsfalls beteiligt sein kann, legen Sie die Multiplizität am Anwendungsfallende der Zuordnung auf **\\***.  
+- Um anzuzeigen, dass jeder Akteur gleichzeitig an mehreren Vorkommen eines Anwendungsfalls beteiligt sein kann, legen Sie die Multiplizität am Anwendungsfallende der Zuordnung auf **\*** .  
   
    In der Abbildung kann jedes Restaurant gleichzeitig an der Erledigung von mehr als einer Bestellung arbeiten.  
   
@@ -190,11 +190,11 @@ Sie können in Visual Studio zeichnen eine *Anwendungsfalldiagramm* zusammengefa
   
    - **1** angeben, dass genau eine Instanz dieser Rolle jedem Link teilnimmt.  
   
-   - **1..\\** *, Status, der eine oder mehrere Instanzen dieser Rolle, die jedem Link teilnehmen.  
+   - **1..\***  , Status, der eine oder mehrere Instanzen dieser Rolle, die jedem Link teilnehmen.  
   
    - **0.. 1** um anzugeben, dass die Teilnahme optional ist.  
   
-   - **\\** * Um Zustand, der NULL oder mehr Instanzen dieser Rolle am Link teilnehmen.  
+   - **\*** um anzugeben, dass NULL oder mehr Instanzen dieser Rolle am Link teilnehmen.  
   
 > [!NOTE]
 > Viele Teams geben in Anwendungsfalldiagrammen keine Informationen zur Multiplizität an und behalten für die Multiplizitäten den Standardwert 1 bei. Stattdessen geben sie die Informationen in separaten Beschreibungen der Anwendungsfälle an. In diesem Fall werden alle Multiplizitäten in den Anwendungsfalldiagrammen ausgeblendet.  
