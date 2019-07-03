@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: 7f130f5dec77e0a1965c68cf71e642fdb636832f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 54d786e721e151140cac2fa822ddbd04de6073ae
+ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62983376"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493653"
 ---
 # <a name="understanding-build-configurations"></a>Grundlagen der Buildkonfiguration
 
@@ -22,7 +22,7 @@ Jede Plattform hat spezifische Konfigurationen für ihre Builds.
 
 ## <a name="solution-configurations"></a>Projektmappenkonfigurationen
 
-Ähnlich wie Projektkonfigurationen werden Projektmappenkonfigurationen verwendet, um benutzerdefinierte Konfigurationen für ein gesamtes Projekt zu erstellen. Über die Registerkarte  **Konfigurationszuordnungen**  unter  **Build > Konfigurationen**  können Sie jedem Projektmappenelement eine Zielkonfiguration zuweisen, wie in der folgenden Abbildung dargestellt:
+Ähnlich wie Projektkonfigurationen werden Projektmappenkonfigurationen verwendet, um benutzerdefinierte Konfigurationen für ein gesamtes Projekt zu erstellen. Über die Registerkarte **Konfigurationszuordnungen** unter **Build > Konfigurationen** können Sie eine Zielkonfiguration für jedes Projektmappenelement zuweisen, wie in der folgenden Abbildung dargestellt:
 
 ![Optionen Konfigurationszuordnung](media/projects-and-solutions-image3.png)
 
@@ -36,7 +36,7 @@ Statt ein Startprojekt festzulegen, können Sie in Visual Studio für Mac eine _
 
 ![Dropdownmenü Laufzeitkonfiguration](media/projects-and-solutions-image8.png)
 
-Eine Laufzeitkonfiguration ist ein Satz von Ausführungsoptionen mit einem Namen und mehreren Konfigurationen, die in einem Projekt zu verschiedenen Zwecken definiert sind. Lauftzeitkonfigurationen werden auf Ebene des Projekts definiert. Für jedes ausführbare Projekt wird automatisch ein Standard erstellt – Sie können aber so viele wie nötig hinzufügen. Bestimmte Projekttypen generieren automatisch zusätzliche Laufzeitkonfigurationen. WatchOS-Projekte können z.B.  _Übersichts- und Benachrichtigungskonfigurationen_ generieren.
+Eine Laufzeitkonfiguration ist ein Satz von Ausführungsoptionen mit einem Namen und mehreren Konfigurationen, die in einem Projekt zu verschiedenen Zwecken definiert sind. Lauftzeitkonfigurationen werden auf Ebene des Projekts definiert. Für jedes ausführbare Projekt wird automatisch ein Standard erstellt – Sie können aber so viele wie nötig hinzufügen. Bestimmte Projekttypen generieren automatisch zusätzliche Laufzeitkonfigurationen. watchOS-Projekte können z.B. _Übersichts- und Benachrichtigungskonfigurationen_ generieren.
 
 Konfigurationen können für andere Entwickler freigegeben (in diesem Fall werden die Konfigurationen in der CSPROJ-Datei gespeichert) oder lokal gespeichert werden (in diesem Fall werden Sie in einer USER-Datei gespeichert).
 
