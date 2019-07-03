@@ -5,12 +5,12 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
-ms.openlocfilehash: fb70966dd24c4d22d473b552297a60ddebdce106
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: 4e38378c22c6920e471b72d990d61d9b4ebd3d7f
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66836179"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67253800"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Erstellen von ASP.NET Core-Anwendungen in Visual Studio für Mac 
 
@@ -59,7 +59,7 @@ Dieses Lab ist für Entwickler gedacht, die mit C# vertraut sind, tiefgreifende 
 
     ![](media/netcore-image4.png)
 
-3. Die **HomeController**-Klasse nach Konvention verarbeitet alle eingehenden Anforderungen, die mit **/Home** beginnen. Die **Index**-Methode verarbeitet Anforderungen an das Stammverzeichnis (wie http://site.com/Home) ), und andere Methoden verarbeiten Anforderungen an ihren benannten Pfad basierend auf Konventionen. Beispielsweise verarbeitet **About()** Anforderungen an **http://site.com/Home/About** . Dies kann natürlich alles konfiguriert werden. Hervorzuheben ist, dass der **HomeController** der Standardcontroller in einem neuen Projekt ist, sodass Anforderungen an das Stammverzeichnis der Website ( **http://site.com** ) **Index()** von **HomeController** durchlaufen würden, genau wie Anforderungen an **http://site.com/Home** oder **http://site.com/Home/Index** .
+3. Die **HomeController**-Klasse nach Konvention verarbeitet alle eingehenden Anforderungen, die mit **/Home** beginnen. Die **Index**-Methode verarbeitet Anforderungen an den Verzeichnisstamm (wie `http://site.com/Home`), und andere Methoden verarbeiten Anforderungen an ihren benannten Pfad basierend auf Konventionen. Beispielsweise verarbeitet **About()** Anforderungen an `http://site.com/Home/About`. Dies kann natürlich alles konfiguriert werden. Hervorzuheben ist, dass der **HomeController** der Standardcontroller in einem neuen Projekt ist, sodass Anforderungen an das Stammverzeichnis der Website (`http://site.com`) **Index()** von **HomeController** durchlaufen würden, genau wie Anforderungen an `http://site.com/Home` oder `http://site.com/Home/Index`.
 
     ![](media/netcore-image5.png)
 

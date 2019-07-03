@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a5c903b0aa82f3711bdbe1fd7925829fbdc06c9a
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: a83e19f808a3f3ab7e1bf9f4fb58f5ddd7a218b7
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226042"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033144"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Erstellen einer Vue.js-Anwendung mit Node.js-Tools für Visual Studio
 
@@ -43,7 +43,7 @@ Mit den folgenden Features wird die Entwicklung von Vue.js-Anwendungen in Visual
     Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seite  [Visual Studio-Downloads](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)  kostenlos herunterladen.
     ::: moniker-end
 
-    Wenn Sie die Workload installieren müssen, Visual Studio aber bereits besitzen, navigieren Sie zu **Tools** > **Tools und Features abrufen…**. Dadurch wird der Visual Studio-Installer geöffnet. Klicken Sie auf die Workload **Node.js-Entwicklung** und anschließend auf **Ändern**.
+    Wenn Sie die Workload installieren müssen, Visual Studio aber bereits besitzen, navigieren Sie zu **Tools** > **Tools und Features abrufen…** . Dadurch wird der Visual Studio-Installer geöffnet. Klicken Sie auf die Workload **Node.js-Entwicklung** und anschließend auf **Ändern**.
 
 * Zum Erstellen des ASP.NET Core-Projekts müssen die Workloads „ASP.NET und Webentwicklung“ und „Plattformübergreifende .NET Core-Entwicklung“ installiert sein.
 
@@ -74,7 +74,7 @@ Für dieses Beispiel wird eine leere ASP.NET Core-Anwendung (C#) verwendet. Sie 
     Drücken Sie **ESC**, um das Startfenster zu schließen. Geben Sie **STRG + Q** ein, um das Suchfeld zu öffnen, geben Sie **asp.net** ein, und wählen Sie dann **Neue ASP.NET Core-Webanwendung erstellen** aus. Geben Sie im Dialogfeld, das nun angezeigt wird, den Namen **client-app** ein, und wählen Sie dann **Erstellen** aus.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Erweitern Sie im linken Bereich des Dialogfelds **Neues Projekt** den Eintrag **Visual C#**, und wählen Sie dann **Web** aus. Wählen Sie im mittleren Bereich **ASP.NET Core-Webanwendung** aus, geben Sie den Namen **client-app** ein, und wählen Sie dann **OK** aus.
+    Klicken Sie in der Menüleiste im oberen Bereich auf **Datei** > **Neu** > **Projekt**. Erweitern Sie im linken Bereich des Dialogfelds **Neues Projekt** den Eintrag **Visual C#** , und wählen Sie dann **Web** aus. Wählen Sie im mittleren Bereich **ASP.NET Core-Webanwendung** aus, geben Sie den Namen **client-app** ein, und wählen Sie dann **OK** aus.
     ::: moniker-end
 
     Wenn die Projektvorlage **ASP.NET Core-Webanwendung** nicht vorhanden ist, installieren Sie zunächst die Workload **ASP.NET und Webentwicklung** und die Entwicklungsworkload .**NET Core**. Klicken Sie zum Installieren der Workloads auf den Link **Visual Studio-Installer öffnen** im linken Bereich des Dialogfelds **Neues Projekt** (wählen Sie **Datei** > **Neu** > **Projekt** aus). Der Visual Studio-Installer wird gestartet. Wählen Sie die erforderlichen Workloads aus.
@@ -150,7 +150,7 @@ Für diese Schritte ist vue-cli 3.0 erforderlich, das derzeit als Betaversion vo
 
     Durch Festlegen dieser Option verhindern Sie, dass Ihr Projekt mit jedem Kompilieren in Visual Studio überladen wird.
 
-1. Erstellen Sie als Nächstes die Datei *vue.config.js* file in *./client-app/*, und fügen Sie folgenden Code hinzu.
+1. Erstellen Sie als Nächstes die Datei *vue.config.js* file in *./client-app/* , und fügen Sie folgenden Code hinzu.
 
     ```js
     module.exports = {
@@ -169,7 +169,15 @@ Für diese Schritte ist vue-cli 3.0 erforderlich, das derzeit als Betaversion vo
 
 #### <a name="build-with-vue-cli-30"></a>Kompilieren mit vue-cli 3.0
 
-Die Automatisierung des Buildprozesses wird durch einen unbekannten Fehler bei vue-cli 3.0 verhindert. Jedes Mal, wenn Sie den Ordner „wwwroot“ aktualisieren, müssen Sie für den Ordner „client-app“ den Befehl `npm run build` ausführen.
+Die Automatisierung des Buildprozesses wird ggf. durch einen unbekannten Fehler bei vue-cli 3.0 verhindert. Jedes Mal, wenn Sie den Ordner „wwwroot“ aktualisieren, müssen Sie für den Ordner „client-app“ den Befehl `npm run build` ausführen.
+
+Alternativ können Sie das vue-cli 3.0-Projekt mithilfe der ASP.NET-Projekteigenschaften als Präbuildereignis erstellen. Klicken Sie mit der rechten Maustaste auf das Projekt. Wählen Sie **Eigenschaften**, und fügen Sie die folgenden Befehle auf der Registerkarte **Build** im Textfeld **Befehlszeile für Präbuildereignis** ein.
+
+``` cmd
+cd ./client-app
+npm run build
+cd ../
+```
 
 ## <a name="limitations"></a>Einschränkungen
 

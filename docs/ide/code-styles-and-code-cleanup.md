@@ -10,12 +10,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b2ebad946d62016199212cfeaae54c32db74d4c
-ms.sourcegitcommit: 3fe6bed9ef8fb1478106645f655c7472009ae43a
+ms.openlocfilehash: c31a04d5471224ed8433bba70baa5bd1dae9125e
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "64557985"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328764"
 ---
 # <a name="code-style-preferences"></a>Codeformateinstellungen
 
@@ -30,8 +30,7 @@ Codeformateinstellungen können projektweise mithilfe einer [EditorConfig-Datei]
 
 ::: moniker range=">=vs-2019"
 
-Sie können Ihre EditorConfig-Datei manuell auffüllen oder die Datei auf der Grundlage der Codeformateinstellungen, die Sie im Dialogfeld **Optionen** von Visual Studio für den C#- oder den Visual Basic-Text-Editor festgelegt haben, automatisch generieren. Diese Optionsseite finden Sie unter **Extras** > **Optionen** > **Text-Editor** > [**C#** oder **Basic**] > **Codeformat** > **Allgemein**.
-Klicken Sie auf **Generate .editorconfig file from settings** (Editorconfig-Datei aus Einstellungen generieren), um automatisch eine *.editorconfig*-Codeformatdatei auf Grundlage der Einstellungen auf dieser Seite **Optionen** zu generieren.
+Sie können Ihre EditorConfig-Datei manuell auffüllen oder die Datei basierend auf den Codeformateinstellungen, die Sie im Dialogfeld **Optionen** von Visual Studio festgelegt haben, automatisch generieren. Diese Optionsseite finden Sie unter **Extras** > **Optionen** > **Text-Editor** > [**C#** oder **Basic**] > **Codeformat** > **Allgemein**. Klicken Sie auf **Generate .editorconfig file from settings** (Editorconfig-Datei aus Einstellungen generieren), um automatisch eine *.editorconfig*-Codeformatdatei auf Grundlage der Einstellungen auf dieser Seite **Optionen** zu generieren.
 
 ![Generieren einer Editorconfig-Datei aus den Einstellungen in Visual Studio 2019](media/vs-2019/generate-editorconfig-file-small.png)
 
@@ -90,9 +89,13 @@ Für C#-Codedateien verfügt Visual Studio 2019 über eine Schaltfläche **Codeb
 > [!TIP]
 > Regeln, die mit dem Schweregrad **Kein** konfiguriert sind, nehmen nicht an der Codebereinigung teil, können aber einzeln über das Menü **Schnellaktionen und Refactorings** angewendet werden.
 
-Konfigurieren Sie zunächst im Dialogfeld **Codebereinigung konfigurieren** (in einem von zwei Profilen), welche Codeformate Sie anwenden möchten. Um dieses Dialogfeld zu öffnen, klicken Sie auf den Erweiterungspfeil neben dem Besensymbol der Codebereinigung, und wählen Sie dann **Codebereinigung konfigurieren** aus. Oder drücken Sie **STRG**+**K**, **STRG**+**Q**.
+Konfigurieren Sie zunächst im Dialogfeld **Codebereinigung konfigurieren** (in einem von zwei Profilen), welche Codeformate Sie anwenden möchten. Um dieses Dialogfeld zu öffnen, klicken Sie auf den Erweiterungspfeil neben dem Besensymbol der Codebereinigung, und wählen Sie dann **Codebereinigung konfigurieren** aus.
 
 ![Codebereinigung konfigurieren in Visual Studio 2019](media/configure-code-cleanup.png)
+
+Nach dem Konfigurieren der Codebereinigung können Sie auf das Besensymbol klicken oder **STRG**+**K** und **STRG**+**E** drücken, um die Codebereinigung auszuführen. Sie können die Codebereinigung auch für Ihr gesamtes Projekt oder Ihre gesamte Projektmappe ausführen. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Namen eines Projekts oder einer Projektmappe, wählen Sie **Analysieren und Code bereinigen** aus, und klicken Sie dann auf **Codebereinigung ausführen**.
+
+![Ausführen der Codebereinigung für ein gesamtes Projekt oder eine gesamte Projektmappe](media/run-code-cleanup-project-solution.png)
 
 Wenn Ihre Codeformateinstellungen bei jedem Speichern einer Datei angewendet werden sollen, gefällt Ihnen möglicherweise die Erweiterung [Code Cleanup on Save](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.CodeCleanupOnSave) (Codebereinigung beim Speichern).
 

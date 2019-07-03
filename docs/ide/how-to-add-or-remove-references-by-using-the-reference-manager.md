@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 885dee2ca04060042e804ff964636d16e6a725ee
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 32bc3b0a06b7bfb8c012239b256460ad832ac3a1
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745816"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160166"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Vorgehensweise: Hinzufügen und Entfernen von Verweisen mit dem Verweis-Manager
 
@@ -92,7 +92,7 @@ Einige Komponenten in der Liste werden möglicherweise nicht angezeigt. Dies hä
 
 - Eine Komponente, für die eine aktuelle Frameworkversion verwendet wird, ist nicht kompatibel mit einem Projekt, für das eine frühere Version als Zielversion festgelegt wurde.
 
-   Informationen zum Ändern der Zielversion von Framework für ein Projekt finden Sie unter [Vorgehensweise: Verwenden eine Frameworkversion als Ziel](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+   Informationen zum Ändern der Zielversion von Framework für ein Projekt finden Sie unter [Übersicht über Frameworkziele](visual-studio-multi-targeting-overview.md).
 
 - Eine Komponente, für die .NET Framework 4 verwendet wird, ist nicht kompatibel mit einem Projekt, für das als Zielversion .NET Framework 4.5 festgelegt wurde.
 

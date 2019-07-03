@@ -1,5 +1,5 @@
 ---
-title: 'Bereitstellung: Featuretour'
+title: Erster Einblick in die Bereitstellung
 description: Erfahren Sie, wie Sie Apps aus Visual Studio bereitstellen können.
 ms.custom: mvc
 ms.date: 01/29/2019
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae70551fdb223856774f7e2afa0d85f915f27a0c
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: aca4869126a6756c15b2eb2c2be61613b1a58e74
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261973"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032555"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Ein erster Einblick in die Bereitstellung in Visual Studio
 
@@ -120,6 +120,16 @@ Stellen Sie die Anwendungen in virtuellen Umgebungen bereit, um ausgereiftere En
 ## <a name="continuous-deployment"></a>Continuous Deployment
 
 Sie können Azure Pipelines verwenden um Continuous Deployment (kontinuierliche Bereitstellung) für Ihre App zu ermöglichen. Weitere Informationen finden Sie unter [Azure Pipelines](/azure/devops/pipelines/index?view=vsts) und [Bereitstellen in Azure](/azure/devops/deploy-azure/index?view=vsts).
+
+## <a name="deploy-a-sql-database"></a>Bereitstellen einer SQL-Datenbank
+
+- [Ändern der Zielplattform und Veröffentlichen eines Datenbankprojekts (SQL Server Data Tools [SSDT])](/sql/ssdt/how-to-change-target-platform-and-publish-a-database-project)
+
+- [Bereitstellen eines Analysis Services-Projekts (SSAS)](/sql/analysis-services/multidimensional-tutorial/lesson-2-5-deploying-an-analysis-services-project)
+
+- [Bereitstellen von Integration Services-Projekten und -Paketen (SSIS)](/sql/integration-services/packages/deploy-integration-services-ssis-projects-and-packages)
+
+- [Erstellen und Bereitstellen in einer lokalen Datenbank](/sql/ssdt/how-to-build-and-deploy-to-a-local-database)
 
 ## <a name="deployment-for-other-app-types"></a>Bereitstellung für andere App-Typen
 

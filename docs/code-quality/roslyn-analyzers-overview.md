@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba1529840a38a23929b9926cc4bed5cc22a058cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: befbb09d347043ae304702618506d193344e23ba
+ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825466"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67195245"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>Übersicht über .NET Compiler Platform-Analysetools
 
-Analysetools der .NET Compiler Platform („Roslyn“) analysieren Stil, Qualität und Verwaltbarkeit, Design und weitere Aspekte Ihres Codes. Visual Studio enthält integrierte Analysetools, die Ihren C#- und Visual Basic-Code während der Eingabe untersuchen. Die Einstellungen für diese integrierten Analysetools können Sie auf der Seite mit den [Text-Editor-Optionen](../ide/code-styles-and-quick-actions.md) oder in einer Datei vom Typ [.editorconfig](../ide/editorconfig-code-style-settings-reference.md) konfigurieren. Sie können aber auch zusätzliche Analysetools als Visual Studio-Erweiterung oder als NuGet-Paket installieren.
+Analysetools der .NET Compiler Platform („Roslyn“) analysieren Stil, Qualität und Verwaltbarkeit, Design und weitere Aspekte Ihres Codes. Visual Studio enthält integrierte Analysetools, die Ihren C#- und Visual Basic-Code während der Eingabe untersuchen. Die Einstellungen für diese integrierten Analysetools können Sie auf der Seite mit den [Text-Editor-Optionen](../ide/code-styles-and-code-cleanup.md) oder in einer Datei vom Typ [.editorconfig](../ide/editorconfig-code-style-settings-reference.md) konfigurieren. Sie können aber auch zusätzliche Analysetools als Visual Studio-Erweiterung oder als NuGet-Paket installieren.
 
 Wenn von einem Analysetool Regelverstöße gefunden werden, wird der Code im Code-Editor mit einer *Wellenlinie* unterstrichen. Außerdem wird er im Fenster **Fehlerliste** gemeldet.
 
@@ -32,7 +32,7 @@ Viele Analysetoolregeln oder *Diagnosen* verfügen über mindestens ein *Codefix
 
 .NET Compiler Platform-Analysetools („Roslyn“) ersetzen letztendlich die [statische Codeanalyse](../code-quality/code-analysis-for-managed-code-overview.md) für verwalteten Code. Viele Regeln der statischen Codeanalyse wurden bereits als Roslyn-Diagnoseanalysetools neu geschrieben.
 
-Wie auch Regelverstöße der statischen Codeanalyse werden Verstöße der Roslyn-Analysetools in der **Fehlerliste** angezeigt. Außerdem erscheinen Verstöße der Roslyn-Analysetools auch im Code-Editor als *Wellenlinie* unter dem fehlerhaften Code. Die Farbe der Wellenlinie hängt ab von den [Schweregradeinstellungen](../code-quality/use-roslyn-analyzers.md#rule-severity) der Regel. In dem folgenden Screenshot werden drei Verstöße&mdash; angezeigt (einer rot, einer grün und einer grau):
+Wie auch Regelverstöße der statischen Codeanalyse werden Verstöße der Roslyn-Analysetools in der **Fehlerliste** angezeigt. Außerdem erscheinen Verstöße der Roslyn-Analysetools auch im Code-Editor als *Wellenlinie* unter dem fehlerhaften Code. Die Farbe der Wellenlinie hängt von den [Schweregradeinstellungen](../code-quality/use-roslyn-analyzers.md#rule-severity) der Regel ab. In dem folgenden Screenshot werden drei Verstöße&mdash; angezeigt (einer rot, einer grün und einer grau):
 
 ![Wellenlinien im Code-Editor](media/diagnostics-severity-colors.png)
 
@@ -79,6 +79,14 @@ Der folgende Screenshot zeigt die Befehlszeilen-Buildausgabe vom Erstellen eines
 ### <a name="rule-severity"></a>Regelschweregrad
 
 Den Regelschweregrad von Analysetools, die als Visual Studio-Erweiterung installiert wurden, können Sie nicht festlegen. Um den [Regelschweregrad](../code-quality/use-roslyn-analyzers.md#rule-severity) zu konfigurieren, installieren Sie die Analysetools als NuGet-Paket.
+
+### <a name="categories"></a>Kategorien
+
+Nachstehend finden Sie die verschiedenen Arten von Analysetools, die Ihnen bei der Analyse Ihres Codes helfen. 
+
+- Von Microsoft empfohlene Analysetools: [FxCop-Analysetools](../code-quality/fxcop-analyzers.yml)
+- Visual Studio IDE-Analysetools: [EditorConfig](../ide/code-styles-and-code-cleanup.md)
+- Analysetools von Drittanbietern: [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator/), [XUnit Analyzers](https://www.nuget.org/packages/xunit.analyzers/), [Sonar Analyzer](https://www.nuget.org/packages/SonarAnalyzer.CSharp/)
 
 ## <a name="next-steps"></a>Nächste Schritte
 

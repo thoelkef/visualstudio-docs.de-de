@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: e22463ad6a50270412652b2797628010e169b1ba
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: 7df082d8cf67a5c0eb4c6ecd5c017480c63a6b27
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65976239"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328830"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Neues in Visual Studio 2019
 
@@ -90,7 +90,7 @@ Bei der Bereinigung wird der Code formatiert, und es werden sämtliche Codekorre
 
 Sie können auch Korrektursammlungen als Profil speichern. Wenn Sie z.B. einige spezielle Korrekturen haben, die Sie beim Programmieren häufig anwenden, und eine weitere umfangreiche Korrektursammlung, die vor einem Code Review angewendet wird, können Sie Profile für diese verschiedenen Aufgaben konfigurieren.
 
-   ![Screenshot: das neue Steuerelement für die Codebereinigung in Visual Studio 2019](media/vs-2019/code-cleanup-profile-configure.png)
+   ![Screenshot: das Steuerelement zum Konfigurieren der Codebereinigung in Visual Studio 2019](media/vs-2019/code-cleanup-profile-configure.png)
 
 ### <a name="per-monitor-aware-pma-rendering"></a>PMA-Rendering (PMA = Per-Monitor Aware)
 
