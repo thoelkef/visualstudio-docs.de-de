@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ef4f8974f448ad9e2e81d4f1ba98aa02ed9da354
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0a875ea2690a2932a10ff3a16364dd9d362a7642
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581946"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328844"
 ---
 # <a name="c-intellisense"></a>C#-IntelliSense
 
@@ -58,7 +58,7 @@ Für Erweiterungsmethoden wird ein anderes Symbol als für Instanzenmethoden ver
 
 Unnötige Member werden von IntelliSense mithilfe von Filtern aus der Vervollständigungsliste entfernt. In C# werden die Vervollständigungslisten für folgende Elemente gefiltert:
 
-- **Schnittstellen und Basisklassen:** IntelliSense entfernt automatisch Elemente aus den Vervollständigungslisten für Schnittstellen und Basisklassen, und zwar sowohl aus Basisklassen- und Schnittstellenlisten für die Klassendeklaration als auch aus Einschränkungslisten. So werden Enumerationen in der Vervollständigungsliste für Basisklassen beispielsweise nicht angezeigt, da Enumerationen für Basisklassen nicht verwendet werden können. Die Vervollständigungsliste für Basisklassen enthält nur Schnittstellen und Namespaces.  Wenn Sie in der Liste ein Element auswählen und anschließend ein Komma eingeben, entfernt IntelliSense Basisklassen aus der Vervollständigungsliste, da C# eine Mehrfachvererbung nicht unterstützt. Das gleiche Verhalten gilt auch für Einschränkungsklauseln.
+- **Schnittstellen und Basisklassen:** IntelliSense entfernt automatisch Elemente aus den Vervollständigungslisten für Schnittstellen und Basisklassen, und zwar sowohl aus Basisklassen- und Schnittstellenlisten für die Klassendeklaration als auch aus Einschränkungslisten. So werden Enumerationen in der Vervollständigungsliste für Basisklassen beispielsweise nicht angezeigt, da Enumerationen für Basisklassen nicht verwendet werden können. Die Vervollständigungsliste für Basisklassen enthält nur Schnittstellen und Namespaces. Wenn Sie in der Liste ein Element auswählen und anschließend ein Komma eingeben, entfernt IntelliSense Basisklassen aus der Vervollständigungsliste, da C# eine Mehrfachvererbung nicht unterstützt. Das gleiche Verhalten gilt auch für Einschränkungsklauseln.
 
 - **Attribute:** Wenn Sie ein Attribut auf einen Typ anwenden, wird die Vervollständigungsliste gefiltert, sodass sie nur die Typen enthält, die von den Namespaces abgeleitet werden, in denen diese Typen enthalten sind, z. B. <xref:System.Attribute>.
 
@@ -86,7 +86,7 @@ Beim Eingeben von [override](/dotnet/csharp/language-reference/keywords/override
 
 ### <a name="ai-enhanced-intellisense"></a>IntelliSense mit KI-Erweiterung
 
-Sie können eine experimentelle [IntelliCode-Erweiterung](/visualstudio/intellicode/intellicode-visual-studio) für Visual Studio installieren, die mithilfe von künstlicher Intelligenz erweiterte IntelliSense-Vervollständigungslisten zur Verfügung stellt. Diese Erweiterung trifft eine Vorhersage hinsichtlich der höchstwahrscheinlich korrekten zu verwendenden API statt ein fach nur eine alphabetische Memberliste anzuzeigen. Sie verwendet Ihren aktuellen Codekontext und die aktuellen Muster, um die dynamische Liste bereitzustellen.
+[Visual Studio IntelliCode](/visualstudio/intellicode/intellicode-visual-studio) bietet KI-basierte IntelliSense-Vervollständigungslisten. IntelliCode trifft eine Vorhersage hinsichtlich der höchstwahrscheinlich korrekten zu verwendenden API statt einfach nur eine alphabetische Memberliste anzuzeigen. Sie verwendet Ihren aktuellen Codekontext und die aktuellen Muster, um die dynamische Liste bereitzustellen.
 
 ## <a name="automatic-code-generation"></a>Automatische Codegenerierung
 
@@ -98,7 +98,7 @@ Um den Vorgang **Hinzufügen mit** zu initiieren, positionieren Sie den Cursor a
 
 ![Darstellung vom Hinzufügen der using-Anweisung über eine schnelle Aktion](../ide/media/addusing-quickaction.png)
 
-Klicken Sie auf das Fehlerglühbirnensymbol und dann auf **using System.Xml;**, um die using-Anweisung automatisch hinzuzufügen.
+Klicken Sie auf das Fehlerglühbirnensymbol und dann auf **using System.Xml;** , um die using-Anweisung automatisch hinzuzufügen.
 
 ### <a name="remove-and-sort-usings"></a>Using-Direktiven entfernen und sortieren
 
@@ -124,7 +124,7 @@ Unter jedem nicht definierten Bezeichner wird eine rote, wellenförmige Unterstr
 
 - Klicken Sie auf den nicht definierten Bezeichner. Unter dem Bezeichner wird ein Fehlerglühbirnensymbol für **Schnellaktionen** angezeigt. Klicken Sie auf das Fehlerglühbirnensymbol.
 
-- Klicken Sie auf den nicht definierten Bezeichner, und drücken Sie **STRG**+**.** (**STRG**+Punkt).
+- Klicken Sie auf den nicht definierten Bezeichner, und drücken Sie **STRG**+ **.** (**STRG**+Punkt).
 
 - Klicken Sie mit der rechten Maustaste auf den nicht definierten Bezeichner, und klicken Sie auf **Schnellaktionen und Refactorings**.
 
@@ -158,7 +158,7 @@ Wenn Sie die **Tab**-Taste drücken, schließt IntelliSense die Anweisung automa
 Wenn Sie die **TAB-TASTE** drücken, versieht IntelliSense eine Methode per Stub mit der richtigen Signatur und fügt den Cursor in den Text Ihres Ereignishandlers ein.
 
 > [!NOTE]
-> Verwenden Sie im Menü **Ansicht** (**STRG**+**-**) den Befehl **Rückwärts navigieren**, um zurück zur Anweisung für die Ereigniseinbindung zu wechseln.
+> Verwenden Sie im Menü **Ansicht** (**STRG**+ **-** ) den Befehl **Rückwärts navigieren**, um zurück zur Anweisung für die Ereigniseinbindung zu wechseln.
 
 ## <a name="see-also"></a>Siehe auch
 

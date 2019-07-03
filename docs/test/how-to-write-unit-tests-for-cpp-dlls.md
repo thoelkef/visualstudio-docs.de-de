@@ -7,12 +7,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: ecd26aeae5e0a236bf776477ab3dca0e528e8200
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 56608e5c930dc94afbb9e8e7d78a8e95b8e2f88b
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226078"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132166"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Schreiben von Komponententests für C++-DLLs in Visual Studio
 
@@ -68,15 +68,13 @@ ms.locfileid: "65226078"
 
       ::: moniker-end
 
-  2. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für das Testprojekt, und klicken Sie auf **Verweise**. Das Projektfenster **Eigenschaften** wird geöffnet.
+  1. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das Testprojekt, und wählen Sie anschließend **Hinzufügen** > **Verweis** aus.
 
-  3. Klicken Sie auf **Allgemeine Eigenschaften** > **Framework und Verweise** und anschließend auf die Schaltfläche **Neuen Verweis hinzufügen**.
-
-  4. Wählen Sie **Projekte** und dann das zu testende Projekt aus.
+  1. Wählen Sie **Projekte** und dann das zu testende Projekt aus.
 
        Wählen Sie die Schaltfläche **Hinzufügen** aus.
 
-  5. Fügen Sie in den Eigenschaften des Testprojekts den Speicherort des zu testenden Projekts den Includeverzeichnissen hinzu.
+  1. Fügen Sie in den Eigenschaften des Testprojekts den Speicherort des zu testenden Projekts den Includeverzeichnissen hinzu.
 
        Klicken Sie auf **Konfigurationseigenschaften** > **VC++-Verzeichnisse** > **Includeverzeichnisse**.
 

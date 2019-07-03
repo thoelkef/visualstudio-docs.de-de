@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df3eb6577c72aa421f2a22d93b3109f63548cc96
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0d49223d61e3c72f2726b89de99ba9c092ddefe
+ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793502"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67195262"
 ---
 # <a name="find-references-in-your-code"></a>Suchen von Verweisen im Code
 
@@ -48,7 +48,7 @@ Standardmäßig werden Verweise vom Projekt dann per Definition gruppiert. Sie k
 **Definition** und **Projekt** sind die beiden verwendeten Standardgruppierungen, aber Sie können andere hinzufügen, indem Sie den Befehl **Gruppierung** im Kontextmenü des ausgewählten Elements auswählen. Das Hinzufügen weiterer Gruppen kann hilfreich sein, wenn Ihre Projektmappe viele Dateien und Pfade enthält.
 
 ## <a name="filter-by-reference-type-in-net"></a>Filtern nach Verweistyp in .NET
-In C# oder Visual Basic verfügt das Fenster „Verweise suchen“ über eine Spalte „Art“, in der die gefundenen Verweistypen aufgeführt sind. Diese Spalte kann verwendet werden, um nach dem Verweistyp zu filtern. Klicken Sie dazu auf das Filtersymbol, das angezeigt wird, wenn Sie mit der Maus auf die Kopfzeile der Spalte zeigen. Verweise können nach „Read“, „Write“, „Reference“ und „NameOnly“ gefiltert werden.
+In C# oder Visual Basic verfügt das Fenster „Verweise suchen“ über eine Spalte „Art“, in der die gefundenen Verweistypen aufgeführt sind. Diese Spalte kann verwendet werden, um nach dem Verweistyp zu filtern. Klicken Sie dazu auf das Filtersymbol, das angezeigt wird, wenn Sie mit der Maus auf die Kopfzeile der Spalte zeigen. Verweise können nach „Read“, „Write“, „Reference“, „Name“, „Namespace“ und „Type“ gefiltert werden.
 
 ![Suche in der Spalte „Art“ im Fenster „Verweise“ ](../ide/media/vside_findallreferencesKind.png)
 

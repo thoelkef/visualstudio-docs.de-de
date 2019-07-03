@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f58581a601da59e7ff66a3bae5ddcb7432bf8e3
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: 130f4a5d39c756587dcf479abe4461f64e9461cb
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66836105"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67259808"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts
 
@@ -76,6 +76,9 @@ Der folgende XML-Code ist eine einfache Ausschnittvorlage:
        <![CDATA[Dim root = Math.Sqrt(16)]]>
    </Code>
    ```
+   
+   > [!NOTE]
+   > Sie können nicht angeben, wie Codezeilen im **CDATA**-Abschnitt eines Codeausschnitts eingezogen oder formatiert werden sollten. Beim Einfügen formatiert der Sprachdienst den eingefügten Code automatisch. 
 
 5. Speichern Sie den Codeausschnitt als *SquareRoot.snippet* (Sie können einen beliebigen Speicherort auswählen).
 

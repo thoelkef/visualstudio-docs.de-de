@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f218db0d10e6a7e959b3a5fdc2f38ceff2299c9b
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: c137b6bd8a38ac606a547ce961c4f040e60c6d87
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747565"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043353"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Arbeiten mit Python in Visual Studio unter Windows
 
@@ -40,7 +40,7 @@ Einführung:
 
 ::: moniker range=">=vs-2019"
 > [!Note]
-> Visual Studio unterstützt alle offiziell unterstützten Version von Python, wie von der [Python Software Foundation](https://devguide.python.org/#status-of-python-branches) angegeben. Dies gilt insbesondere für die Versionen 2.7, 3.5, 3.6 und 3.7.
+> Visual Studio unterstützt die Python-Version 2.7 und Versionen ab 3.5. Es ist zwar möglich, Code mit Visual Studio zu bearbeiten, der in anderen Versionen von Python geschrieben wurde, aber diese Versionen werden offiziell nicht unterstützt, und Funktionen wie IntelliSense und Debuggen funktionieren möglicherweise nicht.
 ::: moniker-end
 
 ## <a name="support-for-multiple-interpreters"></a>Unterstützung mehrerer Interpreter
@@ -56,7 +56,7 @@ Das Visual Studio-Fenster **Python-Umgebungen** (unten in einer breiten, erweite
 
 Verwenden Sie den Befehl **Interaktives Fenster öffnen**, um Python-Code im Kontext von Visual Studio interaktiv auszuführen. Verwenden Sie den Befehl **In PowerShell öffnen**, um ein separates Befehlsfenster im Ordner der ausgewählten Umgebung zu öffnen. Über dieses Befehlsfenster können Sie jedes beliebige Python-Skript ausführen.
 
-Weitere Informationen finden Sie unter: 
+Weitere Informationen finden Sie unter:
 
 - [Verwalten von Python-Umgebungen](managing-python-environments-in-visual-studio.md)
 - [Referenz zu Python-Umgebungen](python-environments-window-tab-reference.md)
@@ -67,7 +67,7 @@ Visual Studio bietet einen erstklassigen Python-Editor mit folgenden Funktionen:
 
 ![Codevervollständigungen für Python-Code in Visual Studio](media/code-editing-completions-simple.png)
 
-Weitere Informationen finden Sie unter: 
+Weitere Informationen finden Sie unter:
 
 - Dokumentation: [Edit Python code (Bearbeiten von Python-Code)](editing-python-code-in-visual-studio.md)
 - Dokumentation: [Formatcode](formatting-python-code.md)
@@ -85,7 +85,7 @@ Visual Studio bietet zudem eine enge Integration zwischen dem Python-Code-Editor
 
 Visual Studio unterstützt zudem IPython/Jupyter in der REPL, einschließlich Inlineplots, .NET und Windows Presentation Foundation (WPF).
 
-Weitere Informationen finden Sie unter: 
+Weitere Informationen finden Sie unter:
 
 - [Interaktives Fenster](python-interactive-repl-in-visual-studio.md)
 - [IPython in Visual Studio](interactive-repl-ipython.md)
@@ -105,7 +105,7 @@ Projekt- und Elementvorlagen automatisieren die Einrichtung unterschiedlicher Ar
 
 [![Projekt- und Elementvorlagen für Python in Visual Studio](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
 
-Weitere Informationen finden Sie unter: 
+Weitere Informationen finden Sie unter:
 
 - Dokumentation: [Verwalten von Python-Projekten](managing-python-projects-in-visual-studio.md)
 - Dokumentation: [Referenz für Python-Elementvorlagen](python-item-templates.md)
@@ -124,7 +124,7 @@ Eine der Stärken von Visual Studio ist der leistungsfähige Debugger. Speziell 
 In Visual Studio 2019 können Sie Code ohne Visual Studio-Projektdatei ausführen und debuggen. Ein Beispiel finden Sie unter [Schnellstart: Öffnen und Ausführen von Python-Code in einem Ordner](quickstart-05-python-visual-studio-open-folder.md).
 ::: moniker-end
 
-Weitere Informationen finden Sie unter: 
+Weitere Informationen finden Sie unter:
 
 - Dokumentation: [Debuggen von Python](debugging-python-in-visual-studio.md)
 - Dokumentation: [Python/C++: Debuggen im gemischten Modus](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
@@ -137,7 +137,7 @@ Mit der Profilerstellung wird untersucht, wie Zeit innerhalb der Anwendung aufge
 
 [![Visual Studio-Profiler-Ergebnisse für ein Python-Projekt](media/profiling-results.png)](media/profiling-results.png#lightbox)
 
-Weitere Informationen finden Sie unter: 
+Weitere Informationen finden Sie unter:
 
 - Dokumentation: [Python-Profilerstellungstools](profiling-python-code-in-visual-studio.md)
 - Dokumentation zu allgemeinen Features von Visual Studio: [Übersicht über das Profilerstellungsfeature](../profiling/profiling-feature-tour.md) (Nicht alle Funktionen der Visual Studio-Profilerstellung stehen für Python zur Verfügung.)
@@ -148,7 +148,7 @@ Sie können Tests im **Test-Explorer** von Visual Studio ermitteln, ausführen u
 
 ![Debuggen eines Python-Komponententests in Visual Studio](media/unit-test-debugging.png)
 
-Weitere Informationen finden Sie unter: 
+Weitere Informationen finden Sie unter:
 
 - Dokumentation: [Tools für Unittests für Python](unit-testing-python-in-visual-studio.md)
 - Dokumentation zu allgemeinen Features von Visual Studio: [Ausführen von Komponententests für Code](../test/unit-test-your-code.md)

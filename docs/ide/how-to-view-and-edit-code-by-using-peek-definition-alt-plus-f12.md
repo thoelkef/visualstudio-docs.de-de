@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7edb17ec3cefd87263ea367b3b012a391d77d6d
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 79bebcdaaf2d970f019da12141275358120ac70e
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747336"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043414"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Vorgehensweise: Anzeigen und Bearbeiten von Code mithilfe von „Definition einsehen“ (Alt+F12)
 
@@ -75,7 +75,7 @@ Im Fenster **Definition einsehen** können Sie diese Tastenkombinationen verwend
 |Öffnen des Definitionsfensters|**ALT**+**F12**|
 |Schließen des Definitionsfensters|**ESC**|
 |Höherstufen des Definitionsfensters auf eine reguläre Dokumentregisterkarte|**UMSCHALT**+**ALT**+**Start**|
-|Wechseln zwischen Definitionsfenstern|**STRG**+**ALT**+**-** und **STRG**+**ALT**+**=**|
+|Wechseln zwischen Definitionsfenstern|**STRG**+**ALT**+ **-** und **STRG**+**ALT**+ **=**|
 |Zwischen mehreren Ergebnissen navigieren|**F8** und **UMSCHALT**+**F8**|
 |Umschalten zwischen den Fenstern "Code-Editor" und "Definition"|**UMSCHALT**+**ESC**|
 
@@ -86,4 +86,4 @@ Im Fenster **Definition einsehen** können Sie diese Tastenkombinationen verwend
 
 - [Navigieren durch den Code](../ide/navigating-code.md)
 - [Go To Definition and Peek Definition („Gehe zu Definition“ und „Definition einsehen“)](../ide/go-to-and-peek-definition.md)
-- [Produktivitätstipps](../ide/productivity-tips-for-visual-studio.md)
+- [Produktivitätsfeatures in Visual Studio](../ide/productivity-features.md)

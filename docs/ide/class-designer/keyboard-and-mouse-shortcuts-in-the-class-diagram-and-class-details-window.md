@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a867986f26037473f5a45341f8d454b560c586ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 37c56a14e5ac4358be53baa41094c23253608bbb
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975059"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043039"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Tastenkombinationen und Mausaktionen im Klassendiagramm und im Fenster „Klassendetails“
 
@@ -28,7 +28,7 @@ Zusätzlich zur Maus können Sie die Tastatur verwenden, um im **Klassen-Designe
 
 Die folgenden Mausaktionen werden in Klassendiagrammen unterstützt:
 
-|Mauskombination|Kontext|Beschreibung|
+|Mauskombination|Kontext|BESCHREIBUNG|
 | - |-------------|-----------------|
 |Doppelklicken|Shape-Elemente|Öffnet den Code-Editor.|
 |Doppelklicken|Lollipop-Connector|Lollipop erweitern/reduzieren.|
@@ -56,7 +56,7 @@ Mit einer Maus können Sie die Darstellung des Fensters **Klassendetails** und d
 
 Die folgenden Tastaturaktionen werden in Klassendiagrammen unterstützt:
 
-|Key|Kontext|Beschreibung|
+|Key|Kontext|BESCHREIBUNG|
 |---------|-------------|-----------------|
 |**Pfeiltasten**|In Typformen|Navigation im Strukturstil in Forminhalten (Umschließen einer Form wird unterstützt). Nach-links- und Nach-rechts-Taste erweitern/reduzieren das aktuelle Element, sofern es erweiterbar ist, und navigieren andernfalls zum übergeordneten Element (ausführliches Verhalten entsprechend Navigation in Strukturansicht).|
 |**Pfeiltasten**|Formen der obersten Ebene|Verschieben von Formen im Diagramm.|
@@ -103,3 +103,6 @@ Verwenden Sie die folgenden Tasten, um im Fenster **Klassendetails** zu navigier
 ## <a name="see-also"></a>Siehe auch
 
 - [Erstellen und Konfigurieren von Typmembern](creating-and-configuring-type-members.md)
+- [Vorgehensweise: Ausschließliches Verwenden der Tastatur](../reference/how-to-use-the-keyboard-exclusively.md)
+- [Standardtastenkombinationen in Visual Studio](../default-keyboard-shortcuts-in-visual-studio.md)
+- [Tastenkombinationen in Blend](../../designers/keyboard-shortcuts-in-blend.md)

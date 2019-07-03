@@ -7,19 +7,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e96f9f56c2b73b8f3c39635c81019cd01fa8a69a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 72e010d76188be1ebe07eb9400b7cde60c2bf0a6
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946934"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043328"
 ---
-# <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Standardtastenkombinationen für häufig verwendete Befehle in Visual Studio
+# <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Beliebte Tastenkombinationen für Visual Studio
 
 Sie können auf häufig verwendete Befehle in Visual Studio zugreifen, indem Sie diese Standardtastenkombinationen verwenden. Eine vollständige Liste von Befehlen, denen Standardtastenkombinationen zugeordnet sind, finden Sie unter [Standardtastenkombinationen](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
+Der Kontext *Global* bedeutet, dass die Tastenkombination für beliebige Toolfenster in Visual Studio gilt.
+
 > [!NOTE]
-> Sie können die Tastenkombination für jeden Befehl nachschlagen, indem Sie das Dialogfeld **Optionen** öffnen, den Knoten **Umgebung** erweitern und dann auf **Tastatur** klicken.
+> Sie können die [Tastenkombination für jeden Befehl nachschlagen](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md), indem Sie das Dialogfeld **Optionen** öffnen, den Knoten **Umgebung** erweitern und dann auf **Tastatur** klicken.
 
 ## <a name="build"></a>Build
 
@@ -38,7 +40,7 @@ Sie können auf häufig verwendete Befehle in Visual Studio zugreifen, indem Sie
 |Debug.BreakAll|**STRG+ALT+UNTBR** [Global]|
 |Debug.DeleteAllBreakpoints|**STRG+UMSCHALT+F9** [Global]|
 |Debug.Exceptions|**STRG+Alt+E** [Global]|
-|Debug.QuickWatch|**STRG+ALT+Q** [Global]<br /><br /> oder **UMSCHALT+F9** [Global]|
+|Debug.QuickWatch|**STRG+ALT+Q** [Global]<br /><br />oder **UMSCHALT+F9** [Global]|
 |Debug.Restart|**STRG+UMSCHALT+F5** [Global]|
 |Debug.RunToCursor|**STRG+F10** [Global]|
 |Debug.SetNextStatement|**STRG+UMSCHALT+F10** [Global]|
@@ -54,13 +56,13 @@ Sie können auf häufig verwendete Befehle in Visual Studio zugreifen, indem Sie
 
 |Befehle|Tastenkombinationen [Kontexte]|
 |--------------| - |
-|Edit.BreakLine|**EINGABETASTE** [Text-Editor, Berichts-Designer, Windows Forms-Designer]<br /><br /> oder **UMSCHALT+EINGABETASTE** [Text-Editor]|
+|Edit.BreakLine|**EINGABETASTE** [Text-Editor, Berichts-Designer, Windows Forms-Designer]<br /><br />oder **UMSCHALT+EINGABETASTE** [Text-Editor]|
 |Edit.CollapseToDefinitions|**STRG+M**, **STRG+O** [Text-Editor]|
 |Edit.CommentSelection|**STRG+K**, **STRG+C** [Text-Editor]|
-|Edit.CompleteWord|**ALT+NACH-RECHTS-TASTE** [Text-Editor, Workflow-Designer]<br /><br /> oder **STRG+LEERTASTE** [Text-Editor, Workflow-Designer]<br /><br /> oder **STRG+K**, **W** [Workflow-Designer]<br /><br /> oder **STRG+K, STRG+W** [Workflow-Designer]|
-|Edit.Copy|**STRG+C** [Global]<br /><br /> oder **STRG+EINFG** [Global]|
-|Edit.Cut|**STRG+X** [Global]<br /><br /> oder **UMSCHALT+ENTF** [Global]|
-|Edit.Delete|**ENTF** [Global, Team Explorer]<br /><br /> oder **UMSCHALT+ENTF** [Sequenzdiagramm, UML-Aktivitäts-Diagramm, Ebenendiagramm]<br /><br /> oder **STRG+ENTF** [Klassendiagramm]|
+|Edit.CompleteWord|**ALT+NACH-RECHTS-TASTE** [Text-Editor, Workflow-Designer]<br /><br />oder **STRG+LEERTASTE** [Text-Editor, Workflow-Designer]<br /><br />oder **STRG+K**, **W** [Workflow-Designer]<br /><br />oder **STRG+K, STRG+W** [Workflow-Designer]|
+|Edit.Copy|**STRG+C** [Global]<br /><br />oder **STRG+EINFG** [Global]|
+|Edit.Cut|**STRG+X** [Global]<br /><br />oder **UMSCHALT+ENTF** [Global]|
+|Edit.Delete|**ENTF** [Global, Team Explorer]<br /><br />oder **UMSCHALT+ENTF** [Sequenzdiagramm, UML-Aktivitäts-Diagramm, Ebenendiagramm]<br /><br />oder **STRG+ENTF** [Klassendiagramm]|
 |Edit.Find|**STRG+F** [Global]|
 |Edit.FindAllReferences|**UMSCHALT+F12** [Global]|
 |Edit.FindinFiles|**STRG+UMSCHALT+F** [Global]|
@@ -78,14 +80,14 @@ Sie können auf häufig verwendete Befehle in Visual Studio zugreifen, indem Sie
 |Edit.LineCut|**STRG+L** [Text-Editor]|
 |Edit.LineDownExtendColumn|**UMSCHALT+ALT+NACH-UNTEN-TASTE** [Text-Editor]|
 |Edit.LineOpenAbove|**STRG+EINGABE** [Text-Editor]|
-|Edit.ListMembers|**STRG+J** [Text-Editor, Workflow-Designer]<br /><br /> oder **STRG+K, STRG+L** [Workflow-Designer]<br /><br /> oder **STRG+K, L** [Workflow-Designer]|
+|Edit.ListMembers|**STRG+J** [Text-Editor, Workflow-Designer]<br /><br />oder **STRG+K, STRG+L** [Workflow-Designer]<br /><br />oder **STRG+K, L** [Workflow-Designer]|
 |Edit.NavigateTo|**STRG+,** [Global]|
 |Edit.OpenFile|**STRG+UMSCHALT+G** [Global]|
 |Edit.OvertypeMode|**EINFG** [Text-Editor]|
-|Edit.ParameterInfo|**STRG+UMSCHALT+LEERTASTE** [Text-Editor, Workflow-Designer]<br /><br /> oder **STRG+K, STRG+P** [Workflow-Designer]<br /><br /> oder **STRG+K, P** [Workflow-Designer]|
-|Edit.Paste|**STRG+V** [Global]<br /><br /> oder **UMSCHALT+EINFG** [Global]|
+|Edit.ParameterInfo|**STRG+UMSCHALT+LEERTASTE** [Text-Editor, Workflow-Designer]<br /><br />oder **STRG+K, STRG+P** [Workflow-Designer]<br /><br />oder **STRG+K, P** [Workflow-Designer]|
+|Edit.Paste|**STRG+V** [Global]<br /><br />oder **UMSCHALT+EINFG** [Global]|
 |Edit.PeekDefinition|**ALT+F12** [Text-Editor]|
-|Edit.Redo|**STRG+Y** [Global]<br /><br /> oder **UMSCHALT+ALT+RÜCKTASTE** [Global]<br /><br /> oder **STRG+UMSCHALT+Z** [Global]|
+|Edit.Redo|**STRG+Y** [Global]<br /><br />oder **UMSCHALT+ALT+RÜCKTASTE** [Global]<br /><br />oder **STRG+UMSCHALT+Z** [Global]|
 |Edit.Replace|**STRG+H** [Global]|
 |Edit.SelectAll|**STRG+A** [Global]|
 |Edit.SelectCurrentWord|**STRG+W** [Text-Editor]|
@@ -97,7 +99,7 @@ Sie können auf häufig verwendete Befehle in Visual Studio zugreifen, indem Sie
 |Edit.ToggleCompletionMode|**STRG+ALT+LEERTASTE** [Text-Editor]|
 |Edit.ToggleOutliningExpansion|**STRG+M, STRG+M** [Text-Editor]|
 |Edit.UncommentSelection|**STRG+K, STRG+U** [Text-Editor]|
-|Edit.Undo|**STRG+Z** [Global]<br /><br /> oder **ALT+RÜCKTASTE** [Global]|
+|Edit.Undo|**STRG+Z** [Global]<br /><br />oder **ALT+RÜCKTASTE** [Global]|
 |Edit.WordDeleteToEnd|**STRG+ENTF** [Text-Editor]|
 |Edit.WordDeleteToStart|**STRG+RÜCKTASTE** [Text-Editor]|
 
@@ -142,7 +144,7 @@ Sie können auf häufig verwendete Befehle in Visual Studio zugreifen, indem Sie
 |--------------| - |
 |View.ClassView|**STRG+UMSCHALT+C** [Global]|
 |View.EditLabel|**F2** [Global]|
-|View.ErrorList|**STRG+\\, STRG+E** [Global]<br /><br /> oder **STRG+\\, E** [Global]|
+|View.ErrorList|**STRG+\\, STRG+E** [Global]<br /><br />oder **STRG+\\, E** [Global]|
 |View.NavigateBackward|**STRG+-** [Global]|
 |View.NavigateForward|**STRG+UMSCHALT+-** [Global]|
 |View.ObjectBrowser|**STRG+ALT+J** [Global]|
@@ -150,11 +152,11 @@ Sie können auf häufig verwendete Befehle in Visual Studio zugreifen, indem Sie
 |View.PropertiesWindow|**F4**|
 |View.Refresh|**F5** [Team Explorer]|
 |View.ServerExplorer|**STRG+ALT+S** [Global]|
-|View.ShowSmartTag|**STRG+.** [Global]<br /><br /> oder **UMSCHALT+ALT+F10** [Global, HTML-Editor-Entwurfsansicht]|
+|View.ShowSmartTag|**STRG+.** [Global]<br /><br />oder **UMSCHALT+ALT+F10** [Global, HTML-Editor-Entwurfsansicht]|
 |View.SolutionExplorer|**STRG+ALT+L** [Global]|
 |View.TfsTeamExplorer|**STRG+\\, STRG+M** [Global]|
 |View.Toolbox|**STRG+ALT+X** [Global]|
-|View.ViewCode|**EINGABETASTE** [Klassendiagramm]<br /><br /> oder **F7** [Einstellungs-Designer]|
+|View.ViewCode|**EINGABETASTE** [Klassendiagramm]<br /><br />oder **F7** [Einstellungs-Designer]|
 |View.ViewDesigner|**UMSCHALT+F7** [HTML-Editor-Quellansicht]|
 
 ## <a name="window"></a>Fenster
@@ -170,3 +172,4 @@ Sie können auf häufig verwendete Befehle in Visual Studio zugreifen, indem Sie
 ## <a name="see-also"></a>Siehe auch
 
 - [Identifizieren und Anpassen von Tastenkombinationen in Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
+- [Alle Tastenkombinationen in Visual Studio](default-keyboard-shortcuts-in-visual-studio.md)

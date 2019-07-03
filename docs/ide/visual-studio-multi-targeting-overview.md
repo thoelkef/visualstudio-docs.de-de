@@ -11,20 +11,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: cb7af190ac7fc5d4d5ce547029689f6c902a6e4f
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: b652c603cd98f9c9ec9366a225971485def187b6
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747617"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160151"
 ---
 # <a name="framework-targeting-overview"></a>Übersicht über Frameworkziele
 
-In Visual Studio können Sie die Version von .NET angeben, auf die Sie das Projekt ausrichten möchten. Damit .NET Framework-Apps auf einem anderen Computer ausgeführt werden können, muss die Frameworkversion, auf die die Anwendung ausgerichtet ist, mit der Frameworkversion kompatibel sein, die auf dem Computer installiert ist.
+In Visual Studio können Sie die Version von .NET angeben, auf die Sie das Projekt ausrichten möchten. Durch Frameworkziele wird gewährleistet, dass die Anwendung nur diejenigen Funktionen verwendet, die in der angegebenen Frameworkversion verfügbar sind. Damit .NET Framework-Apps auf einem anderen Computer ausgeführt werden können, muss die Frameworkversion, auf die die Anwendung ausgerichtet ist, mit der Frameworkversion kompatibel sein, die auf dem Computer installiert ist.
+
+Eine Visual Studio-Projektmappe kann Projekte für verschiedene Versionen von .NET enthalten.
 
 Weitere Informationen zu Zielframeworks finden Sie unter [Zielframeworks](/dotnet/standard/frameworks).
-
-Sie können auch eine Projektmappe mit Projekten erstellen, die auf andere Versionen von .NET ausgerichtet sind. Durch Frameworkziele wird gewährleistet, dass die Anwendung nur diejenigen Funktionen verwendet, die in der angegebenen Frameworkversion verfügbar sind.
 
 > [!TIP]
 > Sie können auch Anwendungen für unterschiedliche Plattformen als Ziel verwenden. Weitere Informationen finden Sie unter [Multitargeting](../msbuild/msbuild-multitargeting-overview.md) (Festlegen von Zielversionen).
@@ -79,13 +79,40 @@ Wenn Sie ein .NET Framework-Projekt erstellen, können Sie die .NET Framework-Zi
 
 ::: moniker-end
 
-In einem vorhandenen Projekt können Sie die .NET-Zielversion im Dialogfeld „Projekteigenschaften“ ändern. Weitere Informationen finden Sie unter [Vorgehensweise: Ausrichten auf eine Version von .NET](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+## <a name="change-the-target-framework"></a>Ändern des Zielframeworks
+
+In einem vorhandenen Visual Basic-, C#- oder F#-Projekt können Sie die .NET-Zielversion im Dialogfeld „Projekteigenschaften“ ändern. Weitere Informationen zum Ändern der Zielversion für C++-Projekte finden Sie stattdessen unter [Vorgehensweise: Ändern des Zielframeworks und des Plattformtoolsets](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
+
+1. Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für das zu ändernde Projekt, und wählen Sie **Eigenschaften** aus.
+
+1. Klicken Sie in der linken Spalte des Fensters **Eigenschaften** auf die Registerkarte **Anwendung**.
+
+   ![Projekteigenschaften auf der Registerkarte „Anwendung“](../ide/media/vs_slnexplorer_properties_applicationtab.png)
+
+   > [!NOTE]
+   > Nachdem Sie eine UWP-App erstellt haben, können Sie weder die Windows-Zielversion noch die .NET-Zielversion ändern.
+
+1. Wählen Sie in der Liste **Zielframework** die gewünschte Zielversion aus.
+
+1. Wählen Sie im daraufhin angezeigten Überprüfungsdialogfeld die Schaltfläche **Ja** aus.
+
+   Das Projekt wird entladen. Wenn es erneut geladen wird, verwendet es die .NET-Zielversion, die Sie soeben ausgewählt haben.
+
+> [!NOTE]
+> Sollte der Code Verweise auf eine .NET-Version enthalten, die nicht die Zielversion ist, werden möglicherweise Fehlermeldungen angezeigt, wenn Sie den Code kompilieren oder ausführen. Um diese Fehler zu beheben, müssen Sie die Verweise ändern. Weitere Informationen finden Sie unter [Problembehandlung bei .NET-Zielversionsfehlern](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md).
+
+> [!TIP]
+> Je nach Zielframework kann es auf folgende Weise in der Projektdatei dargestellt werden:
+>
+> - Für eine .NET Core-App: `<TargetFramework>netcoreapp2.1</TargetFramework>`
+> - Für eine .NET Standard-App: `<TargetFramework>netstandard2.0</TargetFramework>`
+> - Für eine .NET Framework-App: `<TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>`
 
 ## <a name="resolve-system-and-user-assembly-references"></a>Auflösen von System- und Benutzerassemblyverweisen
 
 Um eine .NET-Version als Ziel zu verwenden, müssen Sie zunächst die entsprechenden Assemblyverweise installieren. Sie können Entwicklerpakete für verschiedene .NET-Versionen von der Website [.NET-Downloads](https://www.microsoft.com/net/download/windows) herunterladen.
 
-Bei .NET Framework-Projekten deaktiviert das Dialogfeld **Verweis hinzufügen** Systemassemblys, die nicht zur .NET Framework-Zielversion gehören, sodass sie nicht versehentlich zu einem Projekt hinzugefügt werden können. (Systemassemblys sind *DLL*-Dateien, die in einer .NET Framework-Version enthalten sind.) Verweise, die zu einer Frameworkversion gehören, die höher ist als die Zielversion, werden nicht aufgelöst, und Steuerelemente, die von einem solchen Verweis abhängen, können nicht hinzugefügt werden. Wenn Sie einen solchen Verweis aktivieren möchten, setzen Sie das .NET Framework-Ziel des Projekts auf eine Version zurück, die den Verweis enthält. Weitere Informationen finden Sie unter [Vorgehensweise: Ausrichten auf eine Zielversion](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+Bei .NET Framework-Projekten deaktiviert das Dialogfeld **Verweis hinzufügen** Systemassemblys, die nicht zur .NET Framework-Zielversion gehören, sodass sie nicht versehentlich zu einem Projekt hinzugefügt werden können. (Systemassemblys sind *DLL*-Dateien, die in einer .NET Framework-Version enthalten sind.) Verweise, die zu einer Frameworkversion gehören, die höher ist als die Zielversion, werden nicht aufgelöst, und Steuerelemente, die von einem solchen Verweis abhängen, können nicht hinzugefügt werden. Wenn Sie einen solchen Verweis aktivieren möchten, setzen Sie das .NET Framework-Ziel des Projekts auf eine Version zurück, die den Verweis enthält.
 
 Weitere Informationen zu Assemblyverweisen finden Sie unter [Auflösen von Assemblys zur Entwurfszeit](../msbuild/resolving-assemblies-at-design-time.md).
 

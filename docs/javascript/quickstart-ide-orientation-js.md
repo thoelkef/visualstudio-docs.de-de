@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d2c20f25b005e738769d1c8663387f0a427e5dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c9d776c061982b60640944737b27cda927f79e59
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840981"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033167"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Einführung in die Visual Studio-IDE
 
@@ -37,7 +37,7 @@ Wenn Sie Visual Studio noch nicht installiert haben, können Sie es auf der Seit
 
 Das erste, was Sie nach dem Start von Visual Studio sehen, ist das Startfenster. Das Startfenster ist so entworfen, dass Sie möglichst schnell auf den Code zugreifen können. Im Startfenster finden Sie Optionen zum Schließen oder Überprüfen von Code, zum Öffnen von bestehenden Projekten oder Projektmappen, zum Erstellen eines neuen Projekts, oder einfach zum Öffnen eines Ordners, der Codedateien enthält.
 
-[![](media/vs-2019/start-window.png "Startfenster in Visual Studio 2019")](media/vs-2019/start-window.png)
+[![Startfenster in Visual Studio 2019](media/vs-2019/start-window.png)](media/vs-2019/start-window.png)
 
 Wenn Sie Visual Studio zum ersten Mal benutzen, bleibt die Liste zuletzt geöffneter Projekte leer.
 

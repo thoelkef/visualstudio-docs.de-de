@@ -1,18 +1,18 @@
 ---
 title: Konfigurieren von Komponententests mit einer RUNSETTINGS-Datei
-ms.date: 02/28/2018
+ms.date: 06/14/2019
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f7d4da645c464e51bd331bca64066209b52132fe
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 9715edff9083a0e99fa52075426d11ea92b7b6e2
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746555"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160206"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurieren von Komponententests mithilfe einer *RUNSETTINGS*-Datei
 
@@ -24,15 +24,17 @@ Testlaufeinstellungsdateien sind optional. Wenn keine spezielle Konfiguration er
 
 Laufzeiteinstellungsdateien können verwendet werden, um Tests zu konfigurieren, die über die [Befehlszeile](vstest-console-options.md), in der IDE oder in einem [Buildworkflow ](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts) mit Azure Test Plans oder Team Foundation Server (TFS) ausgeführt werden.
 
-### <a name="specify-a-run-settings-file-in-the-ide"></a>Angeben einer Testlaufeinstellungsdatei in der IDE
+### <a name="ide"></a>IDE
 
-Wählen Sie **Test** > **Testeinstellungen** > **Datei für Testeinstellungen auswählen** und anschließend die *RUNSETTINGS*-Datei aus. Die Datei erscheint im Menü **Testeinstellungen**, und Sie können sie auswählen oder abwählen. Wenn die Testlaufeinstellungsdatei ausgewählt ist, wird sie bei jeder Auswahl von **Code Coverage analysieren** angewendet.
+Um eine Datei mit Ausführungseinstellungen in der IDE anzugeben, wählen Sie **Test** > **Testeinstellungen** > **Datei für Testeinstellungen auswählen** und anschließend die *RUNSETTINGS*-Datei aus.
 
 ![Menü „Datei für Testeinstellungen auswählen“ in Visual Studio](media/select-test-settings-file.png)
 
-### <a name="specify-a-run-settings-file-at-the-command-line"></a>Angeben einer Testlaufeinstellungsdatei in der Befehlszeile
+Die Datei erscheint im Menü **Testeinstellungen**, und Sie können sie auswählen oder abwählen. Wenn die Testlaufeinstellungsdatei ausgewählt ist, wird sie bei jeder Auswahl von **Code Coverage analysieren** angewendet.
 
-Verwenden Sie zum Ausführen von Tests *vstest.console.exe*, und geben Sie die Einstellungsdatei mithilfe des Parameters **/Settings** an.
+### <a name="command-line"></a>Befehlszeile
+
+Verwenden Sie zum Ausführen von Tests über die Befehlszeile *vstest.console.exe*, und geben Sie die Einstellungsdatei mithilfe des Parameters **/Settings** an.
 
 1. Starten der Visual Studio Developer-Eingabeaufforderung:
 
@@ -52,6 +54,12 @@ Verwenden Sie zum Ausführen von Tests *vstest.console.exe*, und geben Sie die E
 
    ```cmd
    vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings
+   ```
+
+   oder
+
+   ```cmd
+   vstest.console.exe --settings:test.runsettings test.dll
    ```
 
 Weitere Informationen finden Sie unter [Befehlszeilenoptionen von „VSTest.Console.exe“](vstest-console-options.md).
@@ -174,7 +182,7 @@ Das **RunConfiguration**-Element kann folgende Elemente enthalten:
 |Knoten|Standard|Werte|
 |-|-|-|
 |**ResultsDirectory**||Das Verzeichnis, in dem die Testergebnisse gespeichert werden.|
-|**TargetFrameworkVersion**|Framework40|Framework35, Framework40, Framework45<br /><br />Durch diese Einstellung wird die Version des Komponententestframeworks angegeben, die zum Ermitteln und Ausführen der Tests verwendet wird. Diese kann sich von der Version der .NET-Plattform unterscheiden, die Sie in den Buildeigenschaften des Komponententestprojekts angeben.|
+|**TargetFrameworkVersion**|Framework40|`FrameworkCore10` für .NET Core-Quellen, `FrameworkUap10` für UWP-basierte Quellen, `Framework45` für.NET Framework 4.5 und höher, `Framework40` für.NET Framework 4.0 und `Framework35` für.NET Framework 3.5.<br /><br />Durch diese Einstellung wird die Version des Komponententestframeworks angegeben, die zum Ermitteln und Ausführen der Tests verwendet wird. Diese kann sich von der Version der .NET-Plattform unterscheiden, die Sie in den Buildeigenschaften des Komponententestprojekts angeben.<br /><br />Wenn Sie das Element `TargetFrameworkVersion` in der Datei *.runsettings* weglassen, bestimmt die Plattform die Frameworkversion automatisch basierend auf den erstellten Binärdateien.|
 |**TargetPlatform**|x86|x86, x64|
 |**TreatTestAdapterErrorsAsWarnings**|False|false, true|
 |**TestAdaptersPaths**||Ein oder mehrere Pfade zu dem Verzeichnis, in dem die Testadapter gespeichert sind.|
@@ -263,5 +271,6 @@ Diese Einstellungen betreffen den Testadapter, der Testmethoden ausführt, die �
 
 ## <a name="see-also"></a>Siehe auch
 
+- [Konfigurieren eines Testlaufs](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [Anpassen der Code Coverage-Analyse](../test/customizing-code-coverage-analysis.md)
 - [Visual Studio-Testaufgabe (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)

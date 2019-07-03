@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: f27e2585d082f61021fbc736b394612095f56684
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 6c236a8454c9710bedbf080f4d7a09cfff6a7fac
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715251"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160181"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Schreiben von Komponententests für C/C++ in Visual Studio
 
@@ -37,11 +37,11 @@ C++-Komponententestprojekte unterstützen [CodeLens](../ide/find-code-changes-an
 
 **Visual Studio 2017 und höher (alle Editionen)**
 
-- Der **Google Test-Adapter** ist als Standardkomponente in der Workload **Desktop Development mit C++** enthalten. Er verfügt über eine Projektvorlage, die Sie über das Kontextmenü **Neues Projekt hinzufügen** auf dem Projektmappenknoten im **Projektmappen-Explorer** zu einer Projektmappe hinzufügen können, sowie Optionen, die Sie über **Extras** > **Optionen** konfigurieren können. Weitere Informationen finden Sie unter [How to: Use Google Test in Visual Studio (Vorgehensweise: Verwenden von Google Test in Visual Studio)](how-to-use-google-test-for-cpp.md).
+- Der **Google Test-Adapter** ist als Standardkomponente in der Workload **Desktop Development mit C++** enthalten. Er verfügt über eine Projektvorlage, die Sie über das Kontextmenü **Neues Projekt hinzufügen** auf dem Projektmappenknoten im **Projektmappen-Explorer** zu einer Projektmappe hinzufügen können, sowie Optionen, die Sie über **Extras** > **Optionen** konfigurieren können. Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden von Google Test in Visual Studio](how-to-use-google-test-for-cpp.md).
 
-- **Boost.Test** ist als Standardkomponente in der Workload **Desktop Development mit C++** enthalten. Diese Komponente ist zwar in **Test-Explorer** integriert, jedoch gibt es derzeit noch keine Projektvorlage. Darum müssen Sie sie manuell konfigurieren. Weitere Informationen finden Sie unter [How to: Use Boost.Test in Visual Studio (Vorgehensweise: Verwenden von Boost-Test in Visual Studio)](how-to-use-boost-test-for-cpp.md).
+- **Boost.Test** ist als Standardkomponente in der Workload **Desktop Development mit C++** enthalten. Diese Komponente ist zwar in **Test-Explorer** integriert, jedoch gibt es derzeit noch keine Projektvorlage. Darum müssen Sie sie manuell konfigurieren. Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden von Boost.Test in Visual Studio](how-to-use-boost-test-for-cpp.md).
 
-- Die Komponente [CMake Tools für Visual Studio](/cpp/build/cmake-tools-for-visual-cpp), die Teil der Workload **Desktop Development mit C++** ist, umfasst die Unterstützung von **CTest**. Allerdings ist CTest noch nicht vollständig in den **Test-Explorer** integriert. Weitere Informationen finden Sie unter [How to: Use CTest in Visual Studio (Vorgehensweise: Verwenden von CTest in Visual Studio)](how-to-use-ctest-for-cpp.md).
+- Die Komponente **C++ CMake tools**, die Teil der Workload **Desktop Development mit C++** ist, umfasst die Unterstützung von **CTest**. Allerdings ist CTest noch nicht vollständig in den **Test-Explorer** integriert. Weitere Informationen finden Sie unter [Vorgehensweise: Verwenden von CTest in Visual Studio](how-to-use-ctest-for-cpp.md).
 
 **Visual Studio 2015 und frühere Versionen**
 

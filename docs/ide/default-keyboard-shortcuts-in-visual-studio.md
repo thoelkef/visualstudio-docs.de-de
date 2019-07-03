@@ -13,20 +13,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13463f38b963ff29ed6fc57fba3eac7865da70ba
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 32335f010db2d030d64ae1319f3cc893526a30e0
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820918"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160043"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Standardtastenkombinationen in Visual Studio
 
-Weitere Informationen über den Tastaturzugriff finden Sie unter [Tipps und Tricks zu Barrierefreiheit](../ide/reference/accessibility-tips-and-tricks.md) und [Vorgehensweise: Ausschließliches Verwenden der Tastatur](../ide/reference/how-to-use-the-keyboard-exclusively.md).
+Sie können auf eine Reihe von [Befehlen](reference/visual-studio-commands.md) und Fenster in Visual Studio zugreifen, indem Sie die entsprechende Tastenkombination auswählen. Auf dieser Seite sind die Standardtastenkombinationen für Befehle für das Profil **Allgemein** aufgeführt, das Sie bei der Installation von Visual Studio möglicherweise ausgewählt haben. Unabhängig von dem Profil, das Sie ausgewählt haben, können Sie die [Tastenkombination für einen Befehl ermitteln](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md), indem Sie das Dialogfeld **Optionen** öffnen, den Knoten **Umgebung** aufklappen und dann **Tastatur** auswählen. Sie können eine Tastenkombination anpassen, indem Sie einem Befehl eine andere Tastenkombination zuweisen.
 
-Sie können auf eine Reihe von Befehlen und Fenster in Visual Studio zugreifen, indem Sie die entsprechende Tastenkombination auswählen. Auf dieser Seite werden die Standardtastenkombinationen für das Profil **Allgemein** aufgeführt, das Sie bei der Installation von Visual Studio möglicherweise ausgewählt haben. Unabhängig von dem Profil, das Sie ausgewählt haben, können Sie die Tastenkombination für einen Befehl ermitteln, indem Sie das Dialogfeld **Optionen** öffnen, den Knoten **Umgebung** aufklappen und dann **Tastatur** auswählen. Sie können eine Tastenkombination anpassen, indem Sie einem Befehl eine andere Tastenkombination zuweisen.
+Eine Liste häufiger Tastenkombinationen und andere Informationen zum Thema Produktivität finden Sie unter:
 
-Eine Liste gängiger Tastenkombinationen sowie weitere Informationen zum Thema Produktivität finden Sie unter [Standardtastenkombinationen für häufig verwendete Befehle in Visual Studio](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md), [Tastenkombinationen für Visual Studio](../ide/tips-and-tricks-for-visual-studio.md) und [Produktivitätstipps für Visual Studio](../ide/productivity-tips-for-visual-studio.md).
+- [Tastenkombinationen für häufig verwendete Befehle](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
+- [Tipps und Tricks für Visual Studio](../ide/productivity-shortcuts.md)
+- [Produktivitätstipps](../ide/productivity-features.md)
+
+Weitere Informationen zur Barrierefreiheit in Visual Studio finden Sie unter [Tipps und Tricks zu Barrierefreiheit](../ide/reference/accessibility-tips-and-tricks.md) und [Vorgehensweise: Ausschließliches Verwenden der Tastatur](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
 |||||
 |-|-|-|-|
@@ -270,9 +274,9 @@ Die folgenden Tastenkombinationen sind *global*, können also in jedem Visual St
 |Project.AddNewItem|**STRG+UMSCHALT+A**|
 |Project.ClassWizard|**STRG+UMSCHALT+X**|
 |Project.Override|**STRG+ALT+EINFG**|
-|Project.Previewchanges|**ALT+;**, dann **Alt+C**|
-|Project.Publishselectedfiles|**ALT+;**, dann **Alt+P**|
-|Project.Replaceselectedfilesfromserver|**ALT+;**, dann **Alt+R**|
+|Project.Previewchanges|**ALT+;** , dann **Alt+C**|
+|Project.Publishselectedfiles|**ALT+;** , dann **Alt+P**|
+|Project.Replaceselectedfilesfromserver|**ALT+;** , dann **Alt+R**|
 
 ### <a name="bkmk_projectContext"></a> Kontextmenüs für Projekte und Projektmappen
 
@@ -296,9 +300,9 @@ Die folgenden Tastenkombinationen sind *global*, können also in jedem Visual St
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
-|SolutionExplorer.OpenFilesFilter|**STRG+[**, **O** (Buchstabe „O“)<br /><br /> oder<br /><br /> **STRG+[**, **STRG+O** (Buchstabe „O“)|
-|SolutionExplorer.PendingChangesFilter|**STRG+[**, **P**<br /><br /> oder<br /><br /> **STRG+[**, **STRG+P**|
-|SolutionExplorer.SyncWithActiveDocument|**STRG+[**, **S**<br /><br /> oder<br /><br /> **STRG+[**, **STRG+S**|
+|SolutionExplorer.OpenFilesFilter|**STRG+[** , **O** (Buchstabe „O“)<br /><br /> oder<br /><br /> **STRG+[** , **STRG+O** (Buchstabe „O“)|
+|SolutionExplorer.PendingChangesFilter|**STRG+[** , **P**<br /><br /> oder<br /><br /> **STRG+[** , **STRG+P**|
+|SolutionExplorer.SyncWithActiveDocument|**STRG+[** , **S**<br /><br /> oder<br /><br /> **STRG+[** , **STRG+S**|
 
 ### <a name="bkmk_team"></a> Team
 
@@ -527,7 +531,7 @@ Die folgenden Tastenkombinationen sind *global*, können also in jedem Visual St
 
 |Befehle|Tastenkombinationen|
 |--------------| - |
-|Debug.Graphics.CaptureFrame|Keiner|
+|Debug.Graphics.CaptureFrame|Keine|
 |Graphics.MovePixelSelectionDown|**UMSCHALT+ALT+NACH-UNTEN**|
 |Graphics.MovePixelSelectionLeft|**STRG+ALT+NACH-LINKS-TASTE**|
 |Graphics.MovePixelSelectionRight|**UMSCHALT+ALT+NACH-RECHTS-TASTE**|
@@ -785,6 +789,7 @@ Die folgenden Tastenkombinationen sind *global*, können also in jedem Visual St
 | Edit.CollapseCurrentRegion | **STRG+M, STRG+S** |
 | Edit.CollapseTag | **STRG+M, STRG+T** |
 | Edit.CollapseToDefinitions | **STRG+M, STRG+O** (Buchstabe „O“) |
+| Edit.ContractSelection | **UMSCHALT+ALT+-** (gilt nicht für C++) |
 | Edit.CommentSelection | **STRG+K, STRG+C** |
 | Edit.CompleteWord | **STRG+LEERTASTE**<br /><br /> oder<br /><br /> **ALT+NACH-RECHTS-TASTE** |
 | Edit.CopyParameterTip | **STRG+UMSCHALT+ALT+C** |
@@ -797,6 +802,8 @@ Die folgenden Tastenkombinationen sind *global*, können also in jedem Visual St
 | Edit.DocumentStartExtend | **STRG+UMSCHALT+POS1** |
 | Edit.ExpandAllOutlining | **STRG+M, STRG+X** |
 | Edit.ExpandCurrentRegion | **STRG+M, STRG+E** |
+| Edit.ExpandSelection | **UMSCHALT+ALT+=** (gilt nicht für C++) |
+| Edit.ExpandSelectiontoContainingBlock | **UMSCHALT+ALT+]** |
 | Edit.FormatDocument | **STRG+K, STRG+D** |
 | Edit.FormatSelection | **STRG+K, STRG+F** |
 | Edit.GotoAll | **STRG+T**<br /><br /> oder<br /><br /> **STRG+,** |
@@ -1150,5 +1157,4 @@ Die folgenden Tastenkombinationen sind *global*, können also in jedem Visual St
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Bildbearbeitung für Symbole](/cpp/windows/image-editor-for-icons)
-- [Verwenden von IntelliSense](../ide/using-intellisense.md)
+- [Visual Studio-Befehle](reference/visual-studio-commands.md)

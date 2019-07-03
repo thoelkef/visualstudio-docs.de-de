@@ -8,12 +8,12 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: jillfra
-ms.openlocfilehash: b40d943e2e05f380b5c8111db39c9cf13c8b3bf8
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: 0ec16c23a3ed16f555bb1a3af952b422f4aceb35
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432271"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309799"
 ---
 # <a name="file-nesting-in-solution-explorer"></a>Dateischachtelung im Projektmappen-Explorer
 
@@ -86,19 +86,42 @@ Dieser Anbieter arbeitet genau so wie der **extensionToExtension**-Anbieter, mit
 
 ### <a name="the-addedextension-provider"></a>Der addedExtension-Anbieter
 
-Dieser Anbieter schachtelt Dateien mit einer zusätzlichen Erweiterung unter der Datei ohne zusätzliche Erweiterung. Die zusätzliche Erweiterung kann nur am Ende des vollständigen Dateinamens auftreten. Betrachten Sie das folgende Beispiel:
+Dieser Anbieter schachtelt Dateien mit einer zusätzlichen Erweiterung unter der Datei ohne zusätzliche Erweiterung. Die zusätzliche Erweiterung kann nur am Ende des vollständigen Dateinamens auftreten.
+
+Betrachten Sie das folgende Beispiel:
 
 ![Regeln für das addedExtension-Beispiel](media/filenesting_addedextension.png) ![Wirkung des addedExtension-Beispiels](media/filenesting_addedextension_effect.png)
 
 * *file.html.css* wird aufgrund der **addedExtension**-Regel unter *file.html* geschachtelt.
 
+> [!NOTE]
+> Sie müssen keine Dateierweiterungen für die `addedExtension`-Regel angeben, da sie automatisch auf alle Dateierweiterungen angewendet wird. Das bedeutet Folgendes: Eine Datei mit dem gleichen Namen und der gleichen Erweiterung wie eine andere Datei plus eine weitere Erweiterung am Ende wird unter der anderen Datei geschachtelt. Sie können die Wirkung dieses Anbieters nicht auf bestimmte Dateierweiterungen einschränken.
+
 ### <a name="the-pathsegment-provider"></a>Der pathSegment-Anbieter
 
-Dieser Anbieter schachtelt Dateien mit einer zusätzlichen Erweiterung unter einer Datei ohne zusätzliche Erweiterung. Die zusätzliche Erweiterung kann nur in der Mitte des vollständigen Dateinamens auftreten. Betrachten Sie das folgende Beispiel:
+Dieser Anbieter schachtelt Dateien mit einer zusätzlichen Erweiterung unter einer Datei ohne zusätzliche Erweiterung. Die zusätzliche Erweiterung kann nur in der Mitte des vollständigen Dateinamens auftreten.
+
+Betrachten Sie das folgende Beispiel:
 
 ![Regeln des pathSegment-Beispiels](media/filenesting_pathsegment.png) ![Wirkung des pathSegment-Beispiels](media/filenesting_pathsegment_effect.png)
 
 * *jquery.min.js* wird aufgrund der **pathSegment**-Regel unter *jquery.js* geschachtelt.
+
+> [!NOTE]
+> - Wenn Sie keine Dateierweiterungen für die `pathSegment`-Regel angeben, wird sie automatisch auf alle Dateierweiterungen angewendet. Das bedeutet Folgendes: Eine Datei mit dem gleichen Namen und der gleichen Erweiterung wie eine andere Datei plus eine weitere Erweiterung in der Mitte wird unter der anderen Datei geschachtelt.
+> - Sie können die Wirkung der `pathSegment`-Regel auf bestimmte Dateierweiterungen beschränken, indem Sie diese auf folgende Weise angeben:
+>    ```
+>    "pathSegment": {
+>       "add": {
+>         ".*": [
+>           ".js",
+>           ".css",
+>           ".html",
+>           ".htm"
+>         ]
+>       }
+>    }
+>    ```
 
 ### <a name="the-allextensions-provider"></a>Der allExtensions-Anbieter
 
