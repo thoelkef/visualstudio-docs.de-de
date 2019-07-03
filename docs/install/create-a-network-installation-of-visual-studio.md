@@ -1,7 +1,7 @@
 ---
 title: Erstellen einer netzwerkbasierten Installation
 description: Erfahren Sie, wie ein Netzwerkinstallationspunkts für die Bereitstellung von Visual Studio in einem Unternehmen erstellt wird.
-ms.date: 03/30/2019
+ms.date: 04/26/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,16 +15,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c727b31f353015ca6f43157c4b6afc67339526f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c0ac63fda69290bef28604cda7524a318c01edc8
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974096"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365334"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Erstellen einer Netzwerkinstallation von Visual Studio
 
-Normalerweise erstellen Unternehmensadministratoren für die Bereitstellung auf Clientarbeitsstationen einen Netzwerkinstallationspfad. Visual Studio wurde so entworfen, dass die Dateien für die Erstinstallation zusammen mit allen Produktupdates in einem einzelnen Ordner zwischengespeichert werden. (Dieser Prozess wird auch als _Erstellen eines Layouts_ bezeichnet.) 
+Normalerweise erstellen Unternehmensadministratoren für die Bereitstellung auf Clientarbeitsstationen einen Netzwerkinstallationspfad. Visual Studio wurde so entworfen, dass die Dateien für die Erstinstallation zusammen mit allen Produktupdates in einem einzelnen Ordner zwischengespeichert werden. (Dieser Prozess wird auch als _Erstellen eines Layouts_ bezeichnet.)
 
 Dadurch können Clientarbeitsstationen dieselbe Netzwerkadresse verwenden, um ihre Installation zu verwalten, selbst wenn sie noch nicht auf das neueste Wartungsupdate aktualisiert haben.
 
@@ -145,13 +145,13 @@ Es folgen einige Beispiele, wie ein Teillayout benutzerdefiniert erstellt werden
 * So laden Sie zwei Workloads und alle ihre empfohlenen Komponenten herunter:
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended 
+    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended
     ```
 
 * Führen Sie Folgendes aus, um zwei Workloads und alle ihre empfohlenen und optionalen Komponenten herunterzuladen:
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional 
+    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional
     ```
 
 ::: moniker range="vs-2017"
@@ -225,11 +225,7 @@ Bei der Installation eines Layout werden die installierten Inhalte aus dem Layou
 
 Wenn Sie den Parameter `--wait` nicht verwenden, wird je nach Ergebnis des Vorgangs die Umgebungsvariable `%ERRORLEVEL%` auf einen der folgenden Werte festgelegt:
 
-  | **Wert** | **Ergebnis** |
-  | --------- | ---------- |
-  | 0 | Der Vorgang wurde erfolgreich abgeschlossen. |
-  | 3010 | Der Vorgang wurde erfolgreich abgeschlossen, für die Installation ist jedoch ein Neustart erforderlich, bevor sie verwendet werden kann. |
-  | Andere | Es ist ein Fehler aufgetreten – Überprüfen Sie die Protokolle für weitere Informationen |
+[!INCLUDE[install-error-codes-md](includes/install-error-codes-md.md)]
 
 ## <a name="update-a-network-install-layout"></a>Aktualisieren des Layouts einer Netzwerkinstallation
 
@@ -241,9 +237,9 @@ Wenn Produktupdates verfügbar sind, empfiehlt es sich, [das Layout der Netzwerk
 
 > [!NOTE]
 > Die unter [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) verfügbaren Visual Studio-Bootstrapper werden heruntergeladen und installieren bei ihrer Ausführung das neueste verfügbare Release von Visual Studio.
-> 
+>
 > Wenn Sie also heute einen Visual Studio-*Bootstrapper* herunterladen und diesen in sechs Monaten ausführen, wird das Visual Studio-Release installiert, das zum Zeitpunkt der Ausführung des Bootstrappers aktuell ist.
-> 
+>
 > Wenn Sie jedoch ein *Layout* erstellen und Installationen darüber ausführen, installiert das Layout die Version von Visual Studio, die im Layout vorhanden ist. Obwohl online ggf. eine neuere Version vorhanden ist, erhalten Sie die Version von Visual Studio im Layout.
 
 ::: moniker-end
@@ -252,9 +248,9 @@ Wenn Produktupdates verfügbar sind, empfiehlt es sich, [das Layout der Netzwerk
 
 > [!NOTE]
 > Die unter [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) verfügbaren Visual Studio-Bootstrapper werden heruntergeladen und installieren bei ihrer Ausführung das neueste verfügbare Release von Visual Studio.
-> 
+>
 > Wenn Sie also heute einen Visual Studio-*Bootstrapper* herunterladen und diesen in sechs Monaten ausführen, wird das Visual Studio-Release installiert, das zum Zeitpunkt der Ausführung des Bootstrappers aktuell ist.
-> 
+>
 > Wenn Sie jedoch ein *Layout* erstellen und Installationen darüber ausführen, installiert das Layout die Version von Visual Studio, die im Layout vorhanden ist. Obwohl online ggf. eine neuere Version vorhanden ist, erhalten Sie die Version von Visual Studio im Layout.
 
 ::: moniker-end
@@ -267,13 +263,14 @@ Wenn ein Problem mit der Offlineinstallation auftritt, möchten wir dies erfahre
 
 Für installationsbezogene Probleme wird außerdem ein [**Livechat**](https://visualstudio.microsoft.com/vs/support/#talktous) (nur auf Englisch) als Supportoption angeboten.
 
-Wir bieten auch noch weitere Supportoptionen. Eine Liste finden Sie auf unserer Seite [Melden eines Problems mit Visual Studio 2017 RC](../ide/talk-to-us.md).
+Wir bieten auch noch weitere Supportoptionen. Eine Liste finden Sie auf unserer [Feedback](../ide/feedback-options.md)-Seite.
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Aktualisieren einer netzwerkbasierten Installation von Visual Studio](update-a-network-installation-of-visual-studio.md)
-* [Steuern von Updates für netzwerkbasierte Visual Studio-Bereitstellungen](controlling-updates-to-visual-studio-deployments.md)
-* [Projektlebenszyklus und Wartung in Visual Studio](/visualstudio/releases/2019/servicing/)
-* [Administratorhandbuch für Visual Studio 2017 RC](visual-studio-administrator-guide.md)
-* [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-* [Arbeitsauslastung und Komponenten-IDs von Visual Studio](workload-and-component-ids.md)
+- [Administratorhandbuch für Visual Studio 2017 RC](visual-studio-administrator-guide.md)
+- [Aktualisieren einer netzwerkbasierten Installation von Visual Studio](update-a-network-installation-of-visual-studio.md)
+- [Steuern von Updates für netzwerkbasierte Visual Studio-Bereitstellungen](controlling-updates-to-visual-studio-deployments.md)
+- [Projektlebenszyklus und Wartung in Visual Studio](/visualstudio/releases/2019/servicing/)
+- [Aktualisieren von Visual Studio innerhalb einer Baseline für die Wartung](update-servicing-baseline.md)
+- [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+- [Arbeitsauslastung und Komponenten-IDs von Visual Studio](workload-and-component-ids.md)
