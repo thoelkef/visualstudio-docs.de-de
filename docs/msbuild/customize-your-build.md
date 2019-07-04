@@ -1,6 +1,6 @@
 ---
 title: Anpassen Ihres Builds | Microsoft-Dokumentation
-ms.date: 06/14/2017
+ms.date: 06/13/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, transforms
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bb6b2d6e7ae3504415f59aeef1fddb8d9f98865
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8e644fd6fc521318512bbc5dd25838a379af78a9
+ms.sourcegitcommit: dd3c8cbf56c7d7f82f6d8818211d45847ab3fcfc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778100"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67141171"
 ---
 # <a name="customize-your-build"></a>Anpassen Ihres Builds
 
@@ -93,7 +93,7 @@ Für diesen Anwendungsfall wird beispielhaft davon ausgegangen, dass Sie die fol
     \Project2Tests
 ```
 
-Es kann sinnvoll sein, gemeinsame Eigenschaften für alle Projekte *(1)*, für *src*-Projekte *(2-src)* und für *test*-Projekte *(2-test)* zu verwenden.
+Es kann sinnvoll sein, gemeinsame Eigenschaften für alle Projekte *(1)* , für *src*-Projekte *(2-src)* und für *test*-Projekte *(2-test)* zu verwenden.
 
 Damit MSBuild die „inneren“ Dateien (*2-src* und *2-test*) mit der „äußeren“ Datei (*1*) korrekt zusammenführen kann, müssen Sie berücksichtigen, dass MSBuild nach der ersten gefundenen Datei *Directory.Build.props* den Suchvorgang abbricht. Zum Fortsetzen des Suchvorgangs und des Zusammenführens in der äußeren Datei ist es erforderlich, diesen Code in beide inneren Dateien einzufügen:
 
@@ -107,6 +107,36 @@ Der allgemeine Ansatz von MSBuild lässt sich folgendermaßen zusammenfassen:
 - Verwenden Sie zum Konfigurieren des Such- und Zusammenführungsprozesses `$(DirectoryBuildPropsPath)` und `$(ImportDirectoryBuildProps)`.
 
 Oder in einem Satz ausgedrückt: MSBuild beendet den Suchvorgang, sobald eine *Directory.Build.props*-Datei gefunden wurde, durch die keine weiteren Dateien importiert werden.
+
+### <a name="choose-between-adding-properties-to-a-props-or-targets-file"></a>Wählen zwischen dem Hinzufügen von Eigenschaften zu einer PROPS- oder TARGETS-Datei
+
+MSBuild ist von der Importreihenfolge abhängig, sodass die letzte Definition einer Eigenschaft (oder von `UsingTask` oder eines Ziels) die verwendete Definition ist.
+
+Wenn Sie explizite Importe verwenden, können Sie Daten jederzeit aus einer *PROPS*- oder *TARGETS*-Datei importieren. Hier ist die weit verbreitete Konvention:
+
+- *PROPS*-Dateien werden zu einem frühen Zeitpunkt in der Importreihenfolge importiert.
+
+- *TARGETS*-Dateien werden später in der Buildreihenfolge importiert.
+
+Diese Konvention wird durch `<Project Sdk="SdkName">`-Importe erzwungen (d.h. der Import von *Sdk.props* erfolgt zuerst vor dem gesamten Inhalt der Datei. *Sdk.targets* kommt zuletzt nach dem gesamten Inhalt der Datei).
+
+Befolgen Sie bei der Entscheidung, wo Sie die Eigenschaften platzieren möchten, die folgenden allgemeinen Leitlinien:
+
+- Bei vielen Eigenschaften spielt es keine Rolle, wo sie definiert werden, da sie nicht überschrieben und nur zur Ausführungszeit gelesen werden.
+
+- Für Verhalten, die in einem einzelnen Projekt angepasst werden können, legen Sie in *PROPS*-Dateien Standardwerte fest.
+
+- Vermeiden Sie es, abhängige Eigenschaften in *PROPS*-Dateien festzulegen, indem Sie den Wert einer möglicherweise angepassten Eigenschaft lesen, da die Anpassung erst erfolgt, wenn MSBuild das Projekt des Benutzers liest.
+
+- Legen Sie abhängige Eigenschaften in *TARGETS*-Dateien fest, da bei ihnen Anpassungen aus einzelnen Projekten übernommen werden.
+
+- Wenn Sie Eigenschaften überschreiben müssen, tun Sie dies in einer *TARGETS*-Datei, nachdem alle Anpassungen am Benutzerprojekt wirksam werden konnten. Seien Sie vorsichtig bei der Verwendung abgeleiteter Eigenschaften, da diese möglicherweise ebenfalls überschrieben werden müssen.
+
+- Fügen Sie Elemente in *PROPS*-Dateien (abhängig von einer Eigenschaft) ein. Alle Eigenschaften werden vor jedem Element berücksichtigt. Deshalb werden Anpassungen der Eigenschaften des Benutzerprojekts übernommen. Dies gibt dem Projekt des Benutzers die Möglichkeit, die Vorgänge `Remove` oder `Update` auf jedes durch den Import eingeführte Element anzuwenden.
+
+- Definieren Sie Ziele in *TARGETS*-Dateien. Wenn die *TARGETS*-Datei jedoch durch ein SDK importiert wird, denken Sie daran, dass dieses Szenario das Überschreiben des Ziels erschwert, da das Projekt des Benutzers standardmäßig keine Möglichkeit hat, es zu überschreiben.
+
+- Bevorzugen Sie nach Möglichkeit die Anpassung von Eigenschaften zur Evaluierungszeit gegenüber der Änderung von Eigenschaften innerhalb eines Ziels. Diese Leitlinie erleichtert das Laden eines Projekts und das Verstehen seiner Aktivitäten.
 
 ## <a name="msbuildprojectextensionspath"></a>MSBuildProjectExtensionsPath
 
@@ -138,7 +168,7 @@ vor ihrem Inhalt und
 $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportAfter\*.targets
 ```
 
-danach. Dadurch können installierte SDKs die Buildlogik häufig verwendeter Projekttypen erweitern.
+danach. Dank dieser Konvention können installierte SDKs die Buildlogik häufig verwendeter Projekttypen erweitern.
 
 In `$(MSBuildUserExtensionsPath)` wird nach der gleichen Verzeichnisstruktur (je nach Benutzerordner *%LOCALAPPDATA%\Microsoft\MSBuild*) gesucht. Dateien, die in diesem Ordner platziert werden, werden für alle Builds des jeweiligen Projekttyps importiert, die mit den Anmeldeinformationen des Benutzers ausgeführt werden. Sie können die Benutzererweiterungen deaktivieren, indem Sie die Eigenschaften festlegen, die nach der Importdatei im Muster `ImportUserLocationsByWildcardBefore{ImportingFileNameWithNoDots}` benannt werden. Wenn Sie beispielsweise `ImportUserLocationsByWildcardBeforeMicrosoftCommonProps` auf `false` festlegen, wird `$(MSBuildUserExtensionsPath)\$(MSBuildToolsVersion)\Imports\Microsoft.Common.props\ImportBefore\*` nicht importiert.
 
