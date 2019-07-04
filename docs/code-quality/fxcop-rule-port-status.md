@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0d78e7dcd7dfd203a15510037b277b8c2633805e
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 4a458a50be6161e320b3ffbbe702e21f9f502c77
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66038646"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559666"
 ---
 # <a name="fxcop-rule-port-status"></a>FxCop-Regel-Portstatus
 
 Wenn Sie zuvor eine Analyse von statischem Code in einer früheren Version von Visual Studio verwendet, vielleicht die Regeln in der aktuellen Implementierung als verfügbaren [FxCop-Analysetools](install-fxcop-analyzers.md). Diese Seite listet die Regeln, die und die portiert werden, die noch nicht portiert wurde und ob es geplant ist, die sie portieren.
 
-## <a name="ported-rules"></a>Portierten Regeln
+## <a name="ported-rules"></a>Portierte Regeln
 
 Die [Dokumentationsseite für automatisch generierte](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md) in die Roslyn-Analyzer-Repository verfügt die aktuelle Liste der Regeln, die FxCop-Analysetools portiert. Diese Seite verfügt auch über zusätzliche Informationen, z. B., ob die Regel standardmäßig aktiviert ist und ob ein zugeordnetes *Codefix*. ([Codekorrekturen](../ide/quick-actions.md) einmalklick-Korrekturen in die Glühbirne Symbol-Menü in Visual Studio verfügbar sind.)
 
@@ -67,8 +67,8 @@ Regel-ID | Titel
 [CA1063](ca1063-implement-idisposable-correctly.md) | IDisposable korrekt implementieren
 [CA1064](ca1064-exceptions-should-be-public.md) | Ausnahmen sollten öffentlich sein.
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | Keine Ausnahmen an unerwarteten Speicherorten auslösen.
-CA1066 | Typ {0} sollten IEquatable implementieren<T> da es gleich überschreibt
-CA1067 | Überschreiben Sie bei der Implementierung der IEquatable Object.Equals(object)<T>
+CA1066 | Typ {0} sollten IEquatable implementieren\<T > da sie gleich überschreibt
+CA1067 | Überschreiben Sie bei der Implementierung der IEquatable Object.Equals(object)\<T >
 CA1068 | CancellationToken-Parameter müssen letzten stammen.
 CA1200 | Vermeiden Sie die Verwendung des Cref-Tags mit einem Präfix
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | Literale nicht als lokalisierte Parameter übergeben.
