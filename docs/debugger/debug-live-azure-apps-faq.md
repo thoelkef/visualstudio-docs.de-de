@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 315b24d384a1e3576af6590923c0e546785918ae
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: 813f06f55b6ae8f03a8d5a8e452ca05c4fe2054c
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67255981"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586838"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Häufig gestellte Fragen zum Debuggen von Momentaufnahmen in Visual Studio
 
@@ -70,92 +70,91 @@ Für AKS:
 
 Gruppen entfernen die Remote Debugger-Erweiterung, Zertifikate, KeyVaults und eingehende NAT-Adresspools für VM/virtuellen VM-skalierungsgruppen wie folgt aus:
 
-1. Entfernen Sie die Remote Debugger-Erweiterung  
+1. Entfernen Sie die Remote Debugger-Erweiterung
 
-   Es gibt mehrere Möglichkeiten, den Remotedebugger für virtuelle Computer und VM Scale Sets-Instanzen zu deaktivieren:  
+   Es gibt mehrere Möglichkeiten, den Remotedebugger für virtuelle Computer und VM Scale Sets-Instanzen zu deaktivieren:
 
-      - Deaktivieren Sie den Remotedebugger über die Cloud-Explorer  
+      - Deaktivieren Sie den Remotedebugger über die Cloud-Explorer
 
-         - Cloud-Explorer > Ressource des virtuellen Computers > Debuggen deaktivieren (Debuggen deaktivieren ist nicht vorhanden für VM-Skalierungsgruppe auf Cloud-Explorer).  
+         - Cloud-Explorer > Ressource des virtuellen Computers > Debuggen deaktivieren (Debuggen deaktivieren ist nicht vorhanden für VM-Skalierungsgruppe auf Cloud-Explorer).
 
+      - Deaktivieren Sie den Remotedebugger mit PowerShell-Skripts/Cmdlets
 
-      - Deaktivieren Sie den Remotedebugger mit PowerShell-Skripts/Cmdlets  
+         Für den virtuellen Computer:
 
-         Für den virtuellen Computer:  
-
+         ```powershell
+         Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger
          ```
-         Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger  
-         ```
 
-         Für VM Scale Sets:  
-         ```
-         $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName  
-         $extension = $vmss.VirtualMachineProfile.ExtensionProfile.Extensions | Where {$_.Name.StartsWith('VsDebuggerService')} | Select -ExpandProperty Name  
-         Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name $extension  
+         Für VM Scale Sets:
+
+         ```powershell
+         $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName
+         $extension = $vmss.VirtualMachineProfile.ExtensionProfile.Extensions | Where {$_.Name.StartsWith('VsDebuggerService')} | Select -ExpandProperty Name
+         Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name $extension
          ```
 
       - Deaktivieren Sie den Remotedebugger über die Azure-portal
-         - Azure-Portal > Ihr VM/virtual Machine Scale sets für Blatt "Ressourcen" > Extensions  
-         - Deinstallieren Sie Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger-Erweiterung  
-
+         - Azure-Portal > Ihr VM/virtual Machine Scale sets für Blatt "Ressourcen" > Extensions
+         - Deinstallieren Sie Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger-Erweiterung
 
          > [!NOTE]
          > VM Scale Sets - Portal lässt keine DebuggerListener Ports entfernen. Sie müssen Azure PowerShell verwenden. Details finden Sie weiter unten.
-  
+
 2. Entfernen von Zertifikaten und Azure Key Vault
 
-   Wenn Sie die Remote Debugger-Erweiterung für virtuellen Computer oder VM Scale Sets-Instanzen zu installieren, werden sowohl Client-als auch Zertifikate zur Authentifizierung des Visual Studio-Clients mit dem virtuellen Azure-Computer erstellt/Virtual Machine Scale sets für Ressourcen.  
+   Wenn Sie die Remote Debugger-Erweiterung für virtuellen Computer oder VM Scale Sets-Instanzen zu installieren, werden sowohl Client-als auch Zertifikate zur Authentifizierung des Visual Studio-Clients mit dem virtuellen Azure-Computer erstellt/Virtual Machine Scale sets für Ressourcen.
 
-   - Das Clientzertifikat  
+   - Das Clientzertifikat
 
-      Dieses Zertifikat ist ein selbst signiertes Zertifikat im Zertifikatspeicher befinden: / CurrentUser/My /  
+      Dieses Zertifikat ist ein selbst signiertes Zertifikat im Zertifikatspeicher befinden: / CurrentUser/My /
 
       ```
-      Thumbprint                                Subject  
-      ----------                                -------  
+      Thumbprint                                Subject
+      ----------                                -------
 
-      1234123412341234123412341234123412341234  CN=ResourceName  
+      1234123412341234123412341234123412341234  CN=ResourceName
       ```
 
       Eine Möglichkeit, dieses Zertifikat von Ihrem Computer zu entfernen ist, über PowerShell
 
-      ```
-      $ResourceName = 'ResourceName' # from above  
-      Get-ChildItem -Path Cert:\CurrentUser\My | Where-Object {$_.Subject -match $ResourceName} | Remove-Item  
+      ```powershell
+      $ResourceName = 'ResourceName' # from above
+      Get-ChildItem -Path Cert:\CurrentUser\My | Where-Object {$_.Subject -match $ResourceName} | Remove-Item
       ```
 
    - Das Serverzertifikat
-      - Der entsprechenden Serverzertifikat-Fingerabdruck, die als Geheimnis in Azure-Schlüsseltresor bereitgestellt wird. Visual Studio versucht, suchen oder erstellen einen Schlüsseltresor mit dem Präfix MSVSAZ * in der Region für den virtuellen Computer oder VM Scale sets-Ressource. Alle virtuellen Computer oder VM-skalierungsgruppen Ressourcen, die in dieser Region bereitgestellt werden daher den gleichen Schlüsseltresor gemeinsam.  
-      - Um den Server-Zertifikat-Fingerabdruck geheimen Schlüssel zu löschen, wechseln Sie zum Azure-Portal, und finden Sie den Schlüsseltresor MSVSAZ * in der gleichen Region, die Ihre Ressource hostet. Löschen des geheimen Schlüssels mit der Bezeichnung werden sollte `remotedebugcert<<ResourceName>>`  
-      - Sie müssen auch den Serverschlüssel aus Ihrer Ressource über PowerShell zu löschen.  
+      - Der entsprechenden Serverzertifikat-Fingerabdruck, die als Geheimnis in Azure-Schlüsseltresor bereitgestellt wird. Visual Studio versucht, suchen oder erstellen einen Schlüsseltresor mit dem Präfix MSVSAZ * in der Region für den virtuellen Computer oder VM Scale sets-Ressource. Alle virtuellen Computer oder VM-skalierungsgruppen Ressourcen, die in dieser Region bereitgestellt werden daher den gleichen Schlüsseltresor gemeinsam.
+      - Um den Server-Zertifikat-Fingerabdruck geheimen Schlüssel zu löschen, wechseln Sie zum Azure-Portal, und finden Sie den Schlüsseltresor MSVSAZ * in der gleichen Region, die Ihre Ressource hostet. Löschen des geheimen Schlüssels mit der Bezeichnung werden sollte `remotedebugcert<<ResourceName>>`
+      - Sie müssen auch den Serverschlüssel aus Ihrer Ressource über PowerShell zu löschen.
 
-      Für virtuelle Computer:  
+      Für virtuelle Computer:
 
+      ```powershell
+      $vm.OSProfile.Secrets[0].VaultCertificates.Clear()
+      Update-AzVM -ResourceGroupName $rgName -VM $vm
       ```
-      $vm.OSProfile.Secrets[0].VaultCertificates.Clear()  
-      Update-AzVM -ResourceGroupName $rgName -VM $vm  
-      ```
-                        
-      Für VM Scale Sets:  
 
-      ```
-      $vmss.VirtualMachineProfile.OsProfile.Secrets[0].VaultCertificates.Clear()  
-      Update-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName -VirtualMachineScaleSet $vmss  
-      ```
-                        
-3. Entfernen Sie alle DebuggerListener eingehende NAT-Pools (VM-Skalierungsgruppe nur)  
+      Für VM Scale Sets:
 
-   Der Remotedebugger führt DebuggerListener eingehende NAT-Pools, die für Ihre Skalierungsgruppe auf den Load Balancer angewendet werden.  
+      ```powershell
+      $vmss.VirtualMachineProfile.OsProfile.Secrets[0].VaultCertificates.Clear()
+      Update-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName -VirtualMachineScaleSet $vmss
+      ```
 
-   ```
-   $inboundNatPools = $vmss.VirtualMachineProfile.NetworkProfile.NetworkInterfaceConfigurations.IpConfigurations.LoadBalancerInboundNatPools  
-   $inboundNatPools.RemoveAll({ param($pool) $pool.Id.Contains('inboundNatPools/DebuggerListenerNatPool-') }) | Out-Null  
-                
-   if ($LoadBalancerName)  
+3. Entfernen Sie alle DebuggerListener eingehende NAT-Pools (VM-Skalierungsgruppe nur)
+
+   Der Remotedebugger führt DebuggerListener eingehende NAT-Pools, die für Ihre Skalierungsgruppe auf den Load Balancer angewendet werden.
+
+   ```powershell
+   $inboundNatPools = $vmss.VirtualMachineProfile.NetworkProfile.NetworkInterfaceConfigurations.IpConfigurations.LoadBalancerInboundNatPools
+   $inboundNatPools.RemoveAll({ param($pool) $pool.Id.Contains('inboundNatPools/DebuggerListenerNatPool-') }) | Out-Null
+
+   if ($LoadBalancerName)
    {
-      $lb = Get-AzLoadBalancer -ResourceGroupName $ResourceGroup -name $LoadBalancerName  
-      $lb.FrontendIpConfigurations[0].InboundNatPools.RemoveAll({ param($pool) $pool.Id.Contains('inboundNatPools/DebuggerListenerNatPool-') }) | Out-Null  
-      Set-AzLoadBalancer -LoadBalancer $lb  
+      $lb = Get-AzLoadBalancer -ResourceGroupName $ResourceGroup -name $LoadBalancerName
+      $lb.FrontendIpConfigurations[0].InboundNatPools.RemoveAll({ param($pool) $pool.Id.Contains('inboundNatPools/DebuggerListenerNatPool-') }) | Out-Null
+      Set-AzLoadBalancer -LoadBalancer $lb
    }
    ```
 
@@ -164,12 +163,12 @@ Gruppen entfernen die Remote Debugger-Erweiterung, Zertifikate, KeyVaults und ei
 Für App Service:
 1. Snapshot Debugger über das Azure-Portal für Ihren App Service zu deaktivieren.
 2. Azure-Portal > Ihr Anwendungsdienst-Ressourcenblatt > *Anwendungseinstellungen*
-3. Löschen Sie die folgenden App-Einstellungen im Azure-Portal, und speichern Sie die Änderungen zu. 
-    - INSTRUMENTATIONENGINE_EXTENSION_VERSION
-    - SNAPSHOTDEBUGGER_EXTENSION_VERSION
+3. Löschen Sie die folgenden App-Einstellungen im Azure-Portal, und speichern Sie die Änderungen zu.
+   - INSTRUMENTATIONENGINE_EXTENSION_VERSION
+   - SNAPSHOTDEBUGGER_EXTENSION_VERSION
 
-    > [!WARNING]
-    > Alle Änderungen an Anwendungseinstellungen werden einen Neustart der app initiiert. Weitere Informationen zu Anwendungseinstellungen finden Sie unter [Konfigurieren einer App Service-app im Azure-Portal](/azure/app-service/web-sites-configure).
+   > [!WARNING]
+   > Alle Änderungen an Anwendungseinstellungen werden einen Neustart der app initiiert. Weitere Informationen zu Anwendungseinstellungen finden Sie unter [Konfigurieren einer App Service-app im Azure-Portal](/azure/app-service/web-sites-configure).
 
 Für AKS:
 1. Aktualisieren Sie die dockerfile-Datei zum Entfernen von der Abschnitten zu den [Visual Studio Snapshot Debugger auf Docker-Images](https://github.com/Microsoft/vssnapshotdebugger-docker).
@@ -184,16 +183,18 @@ Es gibt mehrere Möglichkeiten, den Momentaufnahmedebugger zu deaktivieren:
 
 - PowerShell-Cmdlets aus [Azure PowerShell](https://docs.microsoft.com/powershell/azure/overview)
 
-    Virtueller Computer:
-    ```
-        Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.Insights.VMDiagnosticsSettings 
-    ```
-    
-    VM-skalierungsgruppen:
-    ```
-        $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName
-        Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name Microsoft.Insights.VMDiagnosticsSettings
-    ```
+   Virtueller Computer:
+
+   ```powershell
+      Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.Insights.VMDiagnosticsSettings
+   ```
+
+   VM-skalierungsgruppen:
+
+   ```powershell
+      $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName
+      Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name Microsoft.Insights.VMDiagnosticsSettings
+   ```
 
 ## <a name="see-also"></a>Siehe auch
 
