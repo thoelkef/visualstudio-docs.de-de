@@ -34,7 +34,6 @@
 ### [Professionelle Entwicklung](professional-development.md)
 #### [LinkedIn Learning](vs-linkedin-learning.md)
 #### [DataCamp](vs-datacamp.md)
-#### [Hochqualifizieren](vs-opsgility.md)
 #### [Pluralsight](vs-pluralsight.md)
 #### [MSDN Magazine-Abonnement](vs-msdn.md)
 ### [Supportvorteile](technical-support.md)
