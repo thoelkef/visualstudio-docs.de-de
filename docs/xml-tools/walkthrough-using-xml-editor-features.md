@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f0b4069bf1b74c15f9fcf7cdb7e488247b8548e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5e443cf23b8726161a4252e6cef3b77f5d3c37bb
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808495"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624192"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>Exemplarische Vorgehensweise: Verwenden von Features des XML-Editors
 
@@ -30,7 +30,7 @@ Die Schritte in dieser exemplarischen Vorgehensweise veranschaulichen die Erstel
 
      Im Editor wird eine neue Datei geöffnet. Die Datei enthält eine XML-Standarddeklaration, `<?xml version="1.0" encoding="utf-8">`.
 
-3. Klicken Sie im Eigenschaftenfenster Dokuments, auf die Schaltfläche zum Durchsuchen (**...** ) auf die **Schemas** Feld.
+3. Klicken Sie im Eigenschaftenfenster Dokuments, auf die Schaltfläche zum Durchsuchen ( **...** ) auf die **Schemas** Feld.
 
      Die **XSD-Schemas** Dialogfeld wird angezeigt.
 
@@ -58,7 +58,7 @@ Die Schritte in dieser exemplarischen Vorgehensweise veranschaulichen die Erstel
 
     - **Mitarbeiter** zum Hinzufügen eines Stammelements.
 
-2. Wählen Sie **<!--** hinzufügen eine Comment-Knoten, und drücken Sie **EINGABETASTE**.
+2. Wählen Sie  **&lt;!--** hinzufügen eine Comment-Knoten, und drücken Sie **EINGABETASTE**.
 
      Der Editor fügt ein Kommentar-Endtag ein und platziert den Cursor zwischen dem Start- und Endtag des Kommentars.
 
@@ -70,7 +70,7 @@ Die Schritte in dieser exemplarischen Vorgehensweise veranschaulichen die Erstel
 
 5. Geben Sie `>` ein, um das Tag zu schließen.
 
-6. Der Editor fügt das Endtag hinzu. Das Endtag wird mit einer wellenförmigen Unterstreichung hinzugefügt, womit auf einen Validierungsfehler hingewiesen wird. Die **QuickInfo** wird die Meldung angezeigt: **Das Element "Employee" ist Inhalt unvollständig. Erwartet 'ID'**.
+6. Der Editor fügt das Endtag hinzu. Das Endtag wird mit einer wellenförmigen Unterstreichung hinzugefügt, womit auf einen Validierungsfehler hingewiesen wird. Die **QuickInfo** wird die Meldung angezeigt: **Das Element "Employee" ist Inhalt unvollständig. Erwartet 'ID'** .
 
 7. Typ `<` , und wählen Sie **ID** in der Memberliste aus. Geben Sie anschließend `>` ein.
 
@@ -86,7 +86,7 @@ Die Schritte in dieser exemplarischen Vorgehensweise veranschaulichen die Erstel
 
 10. Zurückgeben der XML-Datei, und Ersetzen Sie die **Abc** Text mit **123**.
 
-     Die wellenförmige Unterstreichung und **QuickInfo** deaktiviert sind, unter dem Wert des ID-Element. Die **QuickInfo** für das Ende der Mitarbeiter Tag jetzt die Meldung angezeigt: **Das Element "Employee" ist Inhalt unvollständig. Erwartet "Hire-Date"**.
+     Die wellenförmige Unterstreichung und **QuickInfo** deaktiviert sind, unter dem Wert des ID-Element. Die **QuickInfo** für das Ende der Mitarbeiter Tag jetzt die Meldung angezeigt: **Das Element "Employee" ist Inhalt unvollständig. Erwartet "Hire-Date"** .
 
 11. Platzieren Sie den Cursor hinter dem ID-Endtag, geben Sie im `<`Option **' Hire-Date** aus der Memberliste aus, und geben Sie `>`.
 
@@ -106,7 +106,7 @@ Die Schritte in dieser exemplarischen Vorgehensweise veranschaulichen die Erstel
 
 1. Von der **Datei** , wählen Sie im Menü **speichern**.
 
-     Die **Datei speichern unter** Dialogfeld wird angezeigt. Der Standarddateiname lautet *'XMLFile1'*.
+     Die **Datei speichern unter** Dialogfeld wird angezeigt. Der Standarddateiname lautet *'XMLFile1'* .
 
 2. Geben Sie den Dateinamen und Speicherort für das XML-Dokument aus, und klicken Sie auf **speichern**.
 
