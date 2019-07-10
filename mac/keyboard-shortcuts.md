@@ -2,15 +2,15 @@
 title: Standardtastenkombinationen in Visual Studio für Mac
 description: In diesem Artikel werden die Standardtastenkombinationen in Visual Studio für Mac aufgeführt.
 ms.date: 03/14/2019
-author: bytesguy
-ms.author: adhartle
+author: asb3993
+ms.author: amburns
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: a19c63b2ce32095a3af4aa4586b8ab0d604a14dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 09fd7ff678043e399ad37923956a61cbcf8ce80a
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982709"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691432"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Standardtastenkombinationen in Visual Studio für Mac
 
@@ -36,7 +36,7 @@ Sie können auf eine Reihe von Befehlen in Visual Studio für Mac zugreifen, ind
 
 |Befehle|Tastenkombinationen|
 |-|-|
-|Haltepunkt aktivieren/deaktivieren|**⌥⌘/**, **⌘F9**|
+|Haltepunkt aktivieren/deaktivieren|**⌥⌘/** , **⌘F9**|
 |Anhalten|**⌥⌘P**, **⌥⌘L5**|
 |Alle Haltepunkte entfernen|**⇧⌘F9**|
 |Ausführen bis Cursor|**⌘F10**|
@@ -45,7 +45,7 @@ Sie können auf eine Reihe von Befehlen in Visual Studio für Mac zugreifen, ind
 |Einzelschritt|**⇧⌘I**, **⌘F11**|
 |Ausführen bis Rücksprung|**⇧⌘U**, **⇧⌘F11**|
 |Prozedurschritt|**⇧⌘O**, **F10**|
-|Haltepunkt ein/aus|**⌘\\**, **F9**|
+|Haltepunkt ein/aus|**⌘\\** , **F9**|
 |Haltepunkte anzeigen|**⌥⌘B**|
 
 ## <a name="designer"></a>Designer
@@ -225,8 +225,8 @@ Sie können auf eine Reihe von Befehlen in Visual Studio für Mac zugreifen, ind
 |Nächstes anzeigen|**⌥⌘↓**, **F8**|
 |Vorheriges anzeigen|**⌥⌘↑**, **⇧F8**|
 |Zwei Editor-Spalten|**⌥⌘2**|
-|Vergrößern|**⌘+**, **⌘=**|
-|Verkleinern|**⌘-**, **⌘_**|
+|Vergrößern|**⌘+** , **⌘=**|
+|Verkleinern|**⌘-** , **⌘_**|
 
 ## <a name="window"></a>Fenster
 
@@ -244,8 +244,8 @@ Sie können auf eine Reihe von Befehlen in Visual Studio für Mac zugreifen, ind
 |Andere ausblenden|**⌥⌘H**|
 |Visual Studio ausblenden|**⌘H**|
 |Minimieren|**⌘M**|
-|Nächstes Dokument|**⌘}**, **⌘F6**|
-|Vorheriges Dokument|**⌘{**, **⇧⌘F6**|
+|Nächstes Dokument|**⌘}** , **⌘F6**|
+|Vorheriges Dokument|**⌘{** , **⇧⌘F6**|
 |Zum nächsten Dokument wechseln|**⌃⇥**|
 |Zum nächsten Bereich wechseln|**⌃⌥⇥**|
 |Zum vorherigen Dokument wechseln|**⌃⇧⇥**|

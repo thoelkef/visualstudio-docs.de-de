@@ -1,24 +1,24 @@
 ---
 title: Einführung in Azure Functions
 description: Verwenden von Azure-Funktionen in Visual Studio für Mac
-author: conceptdev
-ms.author: crdun
+author: sayedihashimi
+ms.author: sayedha
 ms.date: 04/02/2019
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: db25a9cbc647e399da86781d155a7b55d8e3802e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d8312733c92ab2802c9594459d5e855b5600a352
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62985025"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692832"
 ---
 # <a name="introduction-to-azure-functions"></a>Einführung in Azure Functions
 
 Mithilfe von Azure Functions können Sie ereignisgesteuerte Codeausschnitte – Funktionen – in einer Cloud erstellen und ausführen, ohne Infrastruktur bereitstellen und verwalten zu müssen. Weitere Informationen zu Azure Functions finden Sie in der [Dokumentation zu Azure Functions](/azure/azure-functions/).
 
-## <a name="requirements"></a>Anforderungen
+## <a name="requirements"></a>Requirements (Anforderungen)
 
 Die Azure Function-Tools sind im Lieferumfang von **Visual Studio für Mac 7.5** und höheren Versionen enthalten.
 
@@ -81,7 +81,7 @@ Mit der Azure Functions-Unterstützung in Visual Studio für Mac können Sie Ihr
 
 Mithilfe von Funktionsvorlagen können Sie schnell mithilfe der am häufigsten verwendeten Trigger und Vorlagen neue Funktionen erstellen. Gehen Sie wie folgt vor, wenn Sie einen anderen Funktionstyp erstellen möchten:
 
-1. Wenn Sie eine neue Funktion hinzufügen möchten, klicken Sie erst mit der rechten Maustaste auf den Projektnamen und dann mit der linken auf **Hinzufügen > Funktion hinzufügen...**:
+1. Wenn Sie eine neue Funktion hinzufügen möchten, klicken Sie erst mit der rechten Maustaste auf den Projektnamen und dann mit der linken auf **Hinzufügen > Funktion hinzufügen...** :
 
     ![Kontextaktion zum Hinzufügen einer neuen Funktion](media/azure-functions-addnew.png)
 
@@ -100,7 +100,7 @@ Mit der obigen Vorgehensweise können Sie weitere Funktionen zu Ihrem Funktions-
 3. Im Dialogfeld **In Azure App Service veröffentlichen** können Sie entweder einen vorhandenen App-Dienst auswählen oder einen neuen erstellen, indem Sie auf **Neu** klicken.
 4. Geben Sie Ihre Einstellungen im Dialogfeld **Neuen App-Dienst erstellen** ein:  ![Menüoption „In Azure veröffentlichen“](media/azure-functions-image7.png)
 
-    |Einstellung  |Beschreibung  |
+    |Einstellung  |BESCHREIBUNG  |
     |---------|---------|
     |**App Service-Name**|Ein global eindeutiger Name, der Ihre neue Funktions-App identifiziert.|
     |**Abonnement**|Das zu verwendende Azure-Abonnement|

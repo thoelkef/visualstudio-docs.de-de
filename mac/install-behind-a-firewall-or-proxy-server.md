@@ -6,17 +6,16 @@ ms.assetid: 79C0F1A3-0C13-4E55-A820-1138A4082B77
 author: asb3993
 ms.author: amburns
 ms.date: 10/23/2018
-ms.openlocfilehash: 6f3afd51cf4109f07107e60d61565c9126fc5ee7
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 7e7e8c3cd5f3ffded3387deb896df18d5b2ec705
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032786"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586886"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Installieren und Verwenden von Visual Studio für Mac hinter einer Firewall oder einem Proxyserver
 
 Wenn Ihre Organisation Sicherheitsmechanismen wie eine Firewall oder einen Proxyserver verwendet, dann sollten Sie einige Domänen in die Zulassungsliste aufnehmen und verschiedene Ports und Protokolle öffnen bzw. deren Verwendung zulassen, um eine optimale Installation und Verwendung von Visual Studio für Mac und Azure-Diensten zu gewährleisten.
-
 
 - [**Installieren von Visual Studio für Mac:** ](#install-visual-studio-for-mac) Diese Tabellen enthalten die Domänen, die Konnektivität zulassen müssen, damit Sie Zugriff auf alle Features und Workloads von Visual Studio für Mac haben.
 

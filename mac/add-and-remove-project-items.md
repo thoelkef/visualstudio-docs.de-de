@@ -1,16 +1,16 @@
 ---
 title: Hinzufügen und Entfernen von Projektelementen
 description: In diesem Dokument wird beschrieben, wie Sie Projektelemente in Visual Studio für Mac hinzufügen und entfernen können.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 4071689D-1C21-42D7-8963-550E7BCB4B67
-ms.openlocfilehash: dc37b3a376b99c39d4216ba0ae2b05d707d11484
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 94bb56fba0b90f29c291bc2c4b95976810dd21c6
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62985352"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692956"
 ---
 # <a name="adding-and-removing-project-items"></a>Hinzufügen und Entfernen von Projektelementen
 
@@ -24,7 +24,7 @@ Dies öffnet das Dialogfeld „“, das zusätzlich zu den Standardvorlagen Date
 
 ## <a name="adding-existing-files"></a>Hinzufügen vorhandener Dateien
 
-Sie können Ihrem Projekt vorhandene Dateien hinzufügen, indem Sie mit der rechten Maustaste auf den Projektknoten klicken und dann auf **Hinzufügen > Datei hinzufügen...**. Alternativ können Sie auch einen ganzen Ordner hinzufügen, indem Sie auf **Hinzufügen > Vorhandenen Ordner hinzufügen...** klicken. Dies öffnet den Dateibrowser, über den Sie Ihr System nach dem hinzuzufügenden Element durchsuchen können.
+Sie können Ihrem Projekt vorhandene Dateien hinzufügen, indem Sie mit der rechten Maustaste auf den Projektknoten klicken und dann auf **Hinzufügen > Datei hinzufügen...** . Alternativ können Sie auch einen ganzen Ordner hinzufügen, indem Sie auf **Hinzufügen > Vorhandenen Ordner hinzufügen...** klicken. Dies öffnet den Dateibrowser, über den Sie Ihr System nach dem hinzuzufügenden Element durchsuchen können.
 
 ## <a name="removing-items"></a>Entfernen von Elementen
 
