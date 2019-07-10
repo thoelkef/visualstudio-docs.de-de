@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 86a86a097bc5e9d3cd567502ec94aae3cbafd324
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 598ced6d3e924ecf1d2826be6a6976f56c02afa5
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62552449"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624069"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Konfigurieren von Rollen für Azure-Clouddienste mit Visual Studio
 Ein Azure-Clouddienst kann einen oder mehrere Worker- oder Webrollen aufweisen. Für jede Rolle müssen Sie definieren, wie die Rolle eingerichtet ist, und konfigurieren, wie die Rolle ausgeführt wird. Weitere Informationen zu Rollen in Clouddiensten erhalten Sie im Video [Introduction to Azure Cloud Services](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services)(in englischer Sprache).
@@ -220,7 +220,7 @@ Sie können lokalen Dateisystemspeicher für jede Instanz einer Rolle hinzufüge
     ![Neuer lokaler Speichereintrag](./media/vs-azure-tools-configure-roles-for-cloud-service/role-local-storage-tab-new-local-storage.png)
 
     - **Name**: Geben Sie den Namen ein, den Sie für den neuen lokalen Speicher verwenden möchten.
-    - **Größe (MB)**: Geben Sie die benötigte Größe in MB für den neuen lokalen Speicher ein.
+    - **Größe (MB)** : Geben Sie die benötigte Größe in MB für den neuen lokalen Speicher ein.
     - **Bei Wiederverwendung der Rolle bereinigen**: Aktivieren Sie diese Option, um die Daten im neuen lokalen Speicher zu entfernen, wenn der virtuelle Computer für die Rolle wiederverwendet wird.
 
 1. Um einen lokalen Speichereintrag zu löschen, wählen Sie den Eintrag aus, und wählen Sie dann **Lokalen Speicher entfernen** aus.
@@ -235,21 +235,20 @@ Dieser Abschnitt veranschaulicht den programmgesteuerten Zugriff auf lokalen Spe
 
 Der folgende Code zeigt ein Beispiel für das Schreiben einer Textdatei in den lokalen Speicher. Ersetzen Sie den Platzhalter &lt;NameDesLokalenSpeichers> durch den passenden Wert.
 
-    ```csharp
-    // Retrieve an object that points to the local storage resource
-    LocalResource localResource = RoleEnvironment.GetLocalResource("<LocalStorageName>");
+```csharp
+// Retrieve an object that points to the local storage resource
+LocalResource localResource = RoleEnvironment.GetLocalResource("<LocalStorageName>");
 
-    //Define the file name and path
-    string[] paths = { localResource.RootPath, "MyLocalStorageTest.txt" };
-    String filePath = Path.Combine(paths);
+//Define the file name and path
+string[] paths = { localResource.RootPath, "MyLocalStorageTest.txt" };
+String filePath = Path.Combine(paths);
 
-    using (FileStream writeStream = File.Create(filePath))
-    {
-        Byte[] textToWrite = new UTF8Encoding(true).GetBytes("Testing Web role storage");
-        writeStream.Write(textToWrite, 0, textToWrite.Length);
-    }
-
-    ```
+using (FileStream writeStream = File.Create(filePath))
+{
+    Byte[] textToWrite = new UTF8Encoding(true).GetBytes("Testing Web role storage");
+    writeStream.Write(textToWrite, 0, textToWrite.Length);
+}
+```
 
 ### <a name="find-a-file-written-to-local-storage"></a>Suchen einer in den lokalen Speicher geschriebenen Datei
 

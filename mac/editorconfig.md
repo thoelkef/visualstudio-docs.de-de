@@ -1,18 +1,18 @@
 ---
 title: EditorConfig
 description: Verwendung einer EditorConfig-Datei zum Aktivieren konsistenter Codierungskonventionen für Projekte in Visual Studio für Mac.
-author: conceptdev
-ms.author: crdun
+author: cobey
+ms.author: cobey
 ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
-ms.openlocfilehash: 3775e3fc4f391ea075a939a877fdab23f1eec1d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a628f4635373dd9bd02eeefa01697fedaeb170c1
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62983471"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691574"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>Erstellen und Bearbeiten einer benutzerdefinierten EditorConfig-Datei
 
@@ -84,7 +84,7 @@ Sie sollten eine vorhandene `.editorconfig`-Datei in Ihrem Projekt wiederverwend
 
 2. Navigieren Sie zum Verzeichnis der gewünschten Datei.
 
-3. Dateien, die mit `.` beginnen (z.B. `.editorconfig`) sind versteckte Dateien in macOS, drücken Sie daher auf **cmd+UMSCHALT+ .**, um die `.editorconfig`-Datei sichtbar zu machen.
+3. Dateien, die mit `.` beginnen (z.B. `.editorconfig`) sind versteckte Dateien in macOS, drücken Sie daher auf **cmd+UMSCHALT+ .** , um die `.editorconfig`-Datei sichtbar zu machen.
 
 4. Wählen Sie die `.editorconfig`-Datei aus, und klicken Sie auf **Öffnen**:
 
@@ -123,7 +123,7 @@ csharp_new_line_before_open_brace = none
 
 Durch Festlegen von `root` auf `true` wird diese Datei als oberste Datei der Codebase markiert, und alle höheren `.editorconfig`-Dateien im Projekt werden ignoriert, wie im Abschnitt [Überschreiben der EditorConfig-Einstellungen](#override-editorconfig-settings) erläutert wird.
 
-Jeder Abschnitt wird durch ein Quadrat (**[ ]**) gekennzeichnet und gibt Informationen zu den Arten von Dateien an, auf die die folgenden Eigenschaften sich beziehen.
+Jeder Abschnitt wird durch ein Quadrat ( **[ ]** ) gekennzeichnet und gibt Informationen zu den Arten von Dateien an, auf die die folgenden Eigenschaften sich beziehen.
 
 Im obigen Beispiel werden einige Einstellungen auf alle Dateien im Projekt angewendet. Andere werden nur C#-Dateien hinzugefügt. Die folgenden Screenshots zeigen den Code vor und nach der Anwendung der `.editorconfig`-Einstellung:
 

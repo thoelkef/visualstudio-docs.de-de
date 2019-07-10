@@ -1,15 +1,15 @@
 ---
 title: 'Tutorial: Erstellen einer App mit mehreren Containern mit Docker Compose'
 description: Erfahren Sie, wie Sie mehr als einen Container verwalten und zwischen ihnen in Visual Studio für Mac kommunizieren können.
-author: bytesguy
-ms.author: adhartle
+author: asb3993
+ms.author: amburns
 ms.date: 06/17/2019
-ms.openlocfilehash: df130e86de7f35c43459a70a12c0e9cfafbbe3a4
-ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
+ms.openlocfilehash: 7570788b50a83d9a74657408d4f38fbce21bd1c3
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67196105"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691709"
 ---
 # <a name="create-a-multi-container-app-with-docker-compose"></a>Erstellen einer App mit mehreren Containern mit Docker Compose
 
@@ -82,14 +82,14 @@ Wir haben nun zwei ASP.NET-Projekte in unserer Projektmappe, die beide mit Docke
    ```
 
 1. Fügen Sie der Datei *Index.cshtml* eine Zeile hinzu, um `ViewData["Message"]` so anzuzeigen, dass die Datei wie der folgende Code aussieht:
-    
+
       ```cshtml
       @page
       @model IndexModel
       @{
           ViewData["Title"] = "Home page";
       }
-    
+
       <div class="text-center">
           <h1 class="display-4">Welcome</h1>
           <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
@@ -98,7 +98,7 @@ Wir haben nun zwei ASP.NET-Projekte in unserer Projektmappe, die beide mit Docke
       ```
 
 1. Fügen Sie nun im Web-API-Projekt Code zum Controller „Values“ hinzu, um die von der API zurückgegebene Nachricht für den Aufruf anzupassen, den Sie über *webfrontend* hinzugefügt haben:
-    
+
       ```csharp
         // GET api/values/5
         [HttpGet("{id}")]
@@ -107,6 +107,7 @@ Wir haben nun zwei ASP.NET-Projekte in unserer Projektmappe, die beide mit Docke
             return "webapi (with value " + id + ")";
         }
       ```
+
 1. Legen Sie das Projekt `docker-compose` als Startprojekt fest, und wechseln Sie zu **Ausführen > Debuggen starten**. Wenn alles ordnungsgemäß konfiguriert ist, erhalten Sie die Meldung "Hello from webfrontend and webapi (with value 1).":
 
 ![Ausgeführte Docker-Lösung mit mehreren Containern](media/docker-multicontainer-debug.png)

@@ -8,12 +8,12 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: jillfra
-ms.openlocfilehash: 0ec16c23a3ed16f555bb1a3af952b422f4aceb35
-ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
+ms.openlocfilehash: a36ca2535785f72756ad66a69c2ebe4d7d5a373b
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67309799"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67587031"
 ---
 # <a name="file-nesting-in-solution-explorer"></a>Dateischachtelung im Projektmappen-Explorer
 
@@ -110,7 +110,8 @@ Betrachten Sie das folgende Beispiel:
 > [!NOTE]
 > - Wenn Sie keine Dateierweiterungen für die `pathSegment`-Regel angeben, wird sie automatisch auf alle Dateierweiterungen angewendet. Das bedeutet Folgendes: Eine Datei mit dem gleichen Namen und der gleichen Erweiterung wie eine andere Datei plus eine weitere Erweiterung in der Mitte wird unter der anderen Datei geschachtelt.
 > - Sie können die Wirkung der `pathSegment`-Regel auf bestimmte Dateierweiterungen beschränken, indem Sie diese auf folgende Weise angeben:
->    ```
+>
+>    ```json
 >    "pathSegment": {
 >       "add": {
 >         ".*": [

@@ -1,17 +1,17 @@
 ---
 title: Umgestalten von Code (Refactoring)
 description: Optimieren von Code mithilfe von Visual Studio für Mac und schnelle Aktionen.
-author: conceptdev
-ms.author: crdun
+author: cobey
+ms.author: cobey
 ms.date: 03/29/2019
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
-ms.openlocfilehash: 48e290fddd1c4b7c95ac5e76cb6cf5908247e6f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a87b87f3a14462daec1e069fe222164818d2a19
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62937839"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691286"
 ---
 # <a name="refactoring"></a>Umgestaltung
 
@@ -42,7 +42,7 @@ Schnelle Aktionen können für Folgendes verwendet werden:
 * Anwenden eines Refactorings (z.B. Inlinesetzen einer temporären Variable)
 * Generieren von Code (z.B. Einführen einer lokalen Variable)
 
-Schnelle Aktionen können angewendet werden, indem das Glühbirnen- ![Glühbirnensymbol](media/quick-actions-light-bulb-icon.png) oder Schraubendrehersymbol ![Schraubendrehersymbol](media/quick-actions-screwdriver-icon.png) verwendet oder **Option (⌥)**+**EINGABETASTE** gedrückt wird, wenn sich der Cursor auf einer Codezeile befindet, für die eine Aktion verfügbar ist. Es wird eine Glühbirne mit einem roten Warnzeichen ![Glühbirnensymbol](media/quick-actions-error-light-bulb-icon.png) angezeigt, was auf einen Fehler hindeutet, und in Visual Studio ist für diesen Fehler eine Problemlösung verfügbar.
+Schnelle Aktionen können angewendet werden, indem das Glühbirnen- ![Glühbirnensymbol](media/quick-actions-light-bulb-icon.png) oder Schraubendrehersymbol ![Schraubendrehersymbol](media/quick-actions-screwdriver-icon.png) verwendet oder **Option (⌥)** +**EINGABETASTE** gedrückt wird, wenn sich der Cursor auf einer Codezeile befindet, für die eine Aktion verfügbar ist. Es wird eine Glühbirne mit einem roten Warnzeichen ![Glühbirnensymbol](media/quick-actions-error-light-bulb-icon.png) angezeigt, was auf einen Fehler hindeutet, und in Visual Studio ist für diesen Fehler eine Problemlösung verfügbar.
 
 Für jede Sprache können Drittanbieter benutzerdefinierte Diagnosen und Empfehlungen bereitstellen, beispielsweise als Bestandteil eines SDKs. Anhand dieser Regeln leuchten die Visual Studio-Glühbirnen dann auf.
 
@@ -57,7 +57,7 @@ Das Symbol, das angezeigt wird, wenn eine schnelle Aktion verfügbar ist, erläu
 
 - Glühbirnen und Schraubendreher werden im linken Rand des Editors angezeigt, wenn Sie das Caretzeichen in eine Codezeile verschieben, für die eine schnelle Aktion verfügbar ist.
 
-- Drücken Sie **Option (⌥)**+**EINGABETASTE**, wenn sich der Cursor irgendwo auf einer Zeile befindet, damit eine Liste verfügbarer schneller Aktionen und Refactorings anzeigt wird.
+- Drücken Sie **Option (⌥)** +**EINGABETASTE**, wenn sich der Cursor irgendwo auf einer Zeile befindet, damit eine Liste verfügbarer schneller Aktionen und Refactorings anzeigt wird.
 
 ![Anzeigen der Kontextelemente](media/refactoring-context-action.png)
 

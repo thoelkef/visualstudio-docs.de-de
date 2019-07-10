@@ -3,14 +3,14 @@ title: Setup von Visual Studio für Mac-Tools für Unity
 description: Einrichten und Installieren von Unity-Tools für die Verwendung in Visual Studio für Mac
 author: therealjohn
 ms.author: johmil
-ms.date: 04/02/2019
+ms.date: 06/18/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: b9e033b765df4ae4396c011fe37939b4fc63e372
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1981141a01848dc7fac09913548f205a04ce618e
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809210"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692360"
 ---
 # <a name="set-up-visual-studio-for-mac-tools-for-unity"></a>Einrichten von Visual Studio für Mac-Tools für Unity
 
@@ -55,7 +55,7 @@ Wenn Sie bereits Unity 5.6.1 oder höher installiert haben, Visual Studio für M
 
 Obwohl die Erweiterung „Visual Studio für Mac-Tools für Unity“ standardmäßig aktiviert sein sollte, können sie dies bestätigen, indem Sie die installierte Versionsnummer überprüfen:
 
-1. Klicken Sie im Menü von Visual Studio auf **Erweiterungen...**.
+1. Klicken Sie im Menü von Visual Studio auf **Erweiterungen...** .
 
    ![Auswählen von Erweiterungen](media/setup-vsmac-tools-unity-image1.png)
 
@@ -67,13 +67,13 @@ Obwohl die Erweiterung „Visual Studio für Mac-Tools für Unity“ standardmä
 
 Ab Unity 2018.1 sollte Visual Studio als Standard für den externen Skript-Editor in Unity festgelegt sein. Sie können dies bestätigen oder den externen Skript-Editor in Visual Studio ändern:
 
-1. Klicken Sie im Unity-Menü auf **Einstellungen...**.
+1. Klicken Sie im Unity-Menü auf **Einstellungen...** .
 
    ![Auswählen von Einstellungen](media/setup-vsmac-tools-unity-image4.png)
 
 2. Klicken Sie im Dialogfeld "Einstellungen" auf die Registerkarte **Externe Tools**.
 
-3. Klicken Sie in der Dropdownliste des externen Skript-Editors auf **Visual Studio**, falls dieses aufgelistet ist und andernfalls auf **Durchsuchen...**.
+3. Klicken Sie in der Dropdownliste des externen Skript-Editors auf **Visual Studio**, falls dieses aufgelistet ist und andernfalls auf **Durchsuchen...** .
 
    ![Auswählen von Visual Studio](media/setup-vsmac-tools-unity-image5.png)
 

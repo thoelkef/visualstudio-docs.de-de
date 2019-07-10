@@ -7,17 +7,16 @@ ms.date: 06/28/2019
 ms.topic: conceptual
 description: Erfahren Sie mehr zu den Vorteilen Ihres Visual Studio-Abonnements.
 searchscope: VS Subscription
-ms.openlocfilehash: e076ad536849a3ef0c915cd3222d80c68eaa205b
-ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+ms.openlocfilehash: 27ec141156de16c4bca8862ed88f89731924d1af
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67493735"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586986"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>In Ihrem Visual Studio-Abonnement enthaltene Vorteile
 
 Visual Studio-Abonnements (zuvor bekannt als MSDN-Abonnements) bieten die umfassendste Sammlung von Ressourcen zum Erstellen, Bereitstellen und Verwalten großartiger Anwendungen auf Ihren bevorzugten Plattformen und Geräten, einschließlich Windows, iOS, Android und Linux.  Die spezifischen Vorteile richten sich danach, über welche Art von Abonnement Sie verfügen.  Um den größtmöglichen Nutzen für die Abonnenten zu erzielen, werden die angebotenen Leistungen regelmäßig angepasst, um stets die neuesten und nützlichsten Technologien, Trainingsmaterialien und Partnervorteile zu bieten.
-
 
 Die Vorteile sind im [Abonnentenportal](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs:) in drei Kategorien unterteilt.
 
