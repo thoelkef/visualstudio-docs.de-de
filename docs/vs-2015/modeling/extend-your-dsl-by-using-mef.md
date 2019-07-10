@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: be514104ebc3cd908cd9469c6b674a22f9dad401
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a1b90f37dcdadc53b6f2a81b9b4e9a860dd6a529
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696187"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692524"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Erweitern von DSL mittels MEF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -131,7 +131,7 @@ Sie können Ihrer domänenspezifischen Sprache (DSL) erweitern, mithilfe des Man
   
    - Diese Assembly wurde in der Regel einen Namen mit der Endung ". DSL.dll".  
   
-   - Wenn Sie Zugriff auf das DSL-Projekt haben, finden Sie die Assemblydatei im Verzeichnis **Dsl\bin\\\\** *  
+   - Wenn Sie Zugriff auf das DSL-Projekt haben, finden Sie die Assemblydatei im Verzeichnis **Dsl\\"bin"\\\***  
   
    - Wenn Sie Zugriff auf die DSL-VSIX-Datei haben, finden Sie die Assembly durch Ändern der Dateinamenerweiterung, der die VSIX-Datei in ".zip". Dekomprimieren Sie die ZIP-Datei.  
   
@@ -159,7 +159,7 @@ Sie können Ihrer domänenspezifischen Sprache (DSL) erweitern, mithilfe des Man
   
    1. In **"Source.Extension.vsixmanifest"** , klicken Sie auf **Verweis hinzufügen**  
   
-   2. Klicken Sie im Dialogfeld auf **Nutzlast hinzufügen** und suchen Sie dann auf die VSIX-Datei der DSL. Die VSIX-Datei wird in der DSL-Projektmappe erstellt, in ** DslPackage\bin\\\\***.  
+   2. Klicken Sie im Dialogfeld auf **Nutzlast hinzufügen** und suchen Sie dann auf die VSIX-Datei der DSL. Die VSIX-Datei wird in der DSL-Projektmappe erstellt, in **DslPackage\\Bin\\\*** .  
   
        Dadurch können Benutzer, die die DSL und die Erweiterung zur gleichen Zeit zu installieren. Wenn der Benutzer bereits die DSL installiert hat, wird nur die Erweiterung installiert.  
   
