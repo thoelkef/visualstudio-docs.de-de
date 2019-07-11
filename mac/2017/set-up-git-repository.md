@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 02/15/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: ca216f3f2a65e1c17e2ab8cc1ca17f6f707afb79
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a5a6dd04cd080f57d6a6ba97b3696b0351a0a8aa
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62989603"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692993"
 ---
 # <a name="set-up-a-git-repository"></a>Einrichten eines Git-Repositorys
 
@@ -81,7 +81,7 @@ Gehen Sie folgendermaßen vor, um ein vorhandenes Projekt, das sich _noch nicht_
 
     ![Versionskontrolle](media/version-control-git10.png)
 
-10. Sobald Sie zusätzliche Änderungen vornehmen, klicken Sie auf  **Änderungen mit Push übertragen** , um die Änderungen mit Push an das  **Remoterepository**  zu übertragen. Dadurch wird es allen entsprechenden Benutzern ermöglicht, diese auf github.com anzusehen:
+10. Wenn Sie zusätzliche Änderungen vornehmen, klicken Sie auf **Änderungen mit Push übertragen**, um die Änderungen per Push an das **Remoterepository** zu übertragen. Dadurch wird es allen entsprechenden Benutzern ermöglicht, diese auf github.com anzusehen:
 
     ![Übertragen von Änderungen mit einem Push an ein Remoterepository](media/version-control-git11.png)
 

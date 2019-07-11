@@ -2,7 +2,7 @@
 title: Neues in Visual Studio 2019
 titleSuffix: ''
 description: Informationen zu den neuen Features in Visual Studio 2019
-ms.date: 05/22/2019
+ms.date: 06/29/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 7df082d8cf67a5c0eb4c6ecd5c017480c63a6b27
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 6b5387fa61686d85e02c200a0a50cffa9e5aa155
+ms.sourcegitcommit: c7b9ab1bc19d74b635c19b1937e92c590dafd736
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328830"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552869"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Neues in Visual Studio 2019
 
@@ -41,8 +41,8 @@ Eine ausführliche Liste aller Neuheiten in dieser Version finden Sie in den [Ve
 
 ## <a name="develop"></a>Entwicklung
 
-Sparen Sie Zeit mit den neuen Features.
-<br><br>
+Sehen Sie sich das folgende Video an, um zu erfahren, wie Sie mit den neuen Features viel Zeit sparen können. <br><br>*Länge des Videos: 3,00 Minuten*
+
 > [!VIDEO https://www.youtube.com/embed/n5sJ4EewKGk]
 
 ### <a name="improved-search"></a>Verbesserte Suche
@@ -104,8 +104,8 @@ Weitere Informationen finden Sie im Blogbeitrag [Better multi-monitor experience
 
 ## <a name="collaborate"></a>Zusammenarbeiten
 
-Arbeiten Sie im Team, um Probleme zu lösen.
-<br><br>
+Sehen Sie sich das folgende Video an, um zu erfahren, wie Sie Probleme im Team lösen können. <br><br>*Länge des Videos: 4,22 Minuten*
+
 > [!VIDEO https://www.youtube.com/embed/dKLJsiK1QU8]
 
 ### <a name="cloud-first-workflow"></a>Cloud im Workflow an erster Stelle
@@ -142,8 +142,8 @@ Weitere Informationen finden Sie im Blogbeitrag [Code reviews using the Visual S
 
 ## <a name="debug"></a>Debug
 
-Konzentrieren Sie sich auf präzises, zielgerichtetes Arbeiten.
-<br><br>
+Sehen Sie sich das folgende Video an, um zu erfahren, wie Sie beim Debuggen einen Fehler präzise einkreisen können. <br><br>*Länge des Videos: 3,54 Minuten*
+
 > [!VIDEO https://www.youtube.com/embed/hr72Fs8n_9c]
 
 ### <a name="performance-gains"></a>Leistungsverbesserungen
