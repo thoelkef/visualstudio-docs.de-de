@@ -3,14 +3,14 @@ title: Verwenden der Visual Studio für Mac-Tools für Unity
 description: In diesem Leitfaden wird erklärt, wie Sie die Erweiterung Visual Studio für Mac-Tools für Unity verwenden.
 author: therealjohn
 ms.author: johmil
-ms.date: 04/02/2019
+ms.date: 06/18/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 56050de063dcbc86bfa469ee9f466a8e87bba973
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: daffb7721164ae49888a894bec7cad3ac74801a4
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965994"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692216"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Verwenden der Visual Studio für Mac-Tools für Unity
 
@@ -26,7 +26,7 @@ Alternativ können Sie Visual Studio für Mac öffnen, während kein Skript im Q
 
 ## <a name="unity-documentation-access"></a>Zugriff auf die Unity-Dokumentation
 
-Die Visual Studio für Mac-Tools für Unity enthalten eine Verknüpfung für den Zugriff auf die Unity-API-Dokumentation. Um auf Unity API-Dokumentation von Visual Studio für Mac zuzugreifen, platzieren Sie den Cursor auf der Unity API, über die Sie mehr erfahren möchten, und drücken Sie **⌘ (cmd)+‘**.
+Die Visual Studio für Mac-Tools für Unity enthalten eine Verknüpfung für den Zugriff auf die Unity-API-Dokumentation. Um auf Unity API-Dokumentation von Visual Studio für Mac zuzugreifen, platzieren Sie den Cursor auf der Unity API, über die Sie mehr erfahren möchten, und drücken Sie **⌘ (cmd)+‘** .
 
 ## <a name="intellisense-for-unity-messages"></a>IntelliSense für Unity-Nachrichten
 Die Unity-Engine sendet Nachrichten an MonoBehaviour-Skripts, die es Entwicklern ermöglichen, Code zu schreiben, der auf Meldungen wie „OnMouseDown“, „OnTriggerEnter“ usw. reagiert. Da es keine virtuellen Methoden in der Basisklasse von MonoBehaviour gibt, fehlen einigen IDEs wie MonoDevelop die Funktion zur Codevervollständigung für Unity-Nachrichten.
@@ -61,7 +61,7 @@ Die Visual Studio für Mac-Tools für Unity erweitern Ihre IntelliSense-Funktion
 
 ## <a name="adding-new-unity-files-and-folders"></a>Hinzufügen neuer Unity-Dateien und -Ordner
 
-Sie können einem Unity-Projekt im Unity-Editor zwar immer neue Dateien hinzufügen, in Visual Studio für Mac hingegen lassen sich problemlos neue Unity-Skripts, -Shader und -Ordner innerhalb von Visual Studio erstellen.
+Sie können einem Unity-Projekt im Unity-Editor zwar immer neue Dateien hinzufügen, in Visual Studio für Mac hingegen lassen sich problemlos neue Unity-Skripts, -Shader, -Strukturen, -Enumerationen und -Ordner innerhalb von Visual Studio erstellen.
 
 ### <a name="add-a-new-c-monobehaviour-script"></a>Hinzufügen eines neuen C#-MonoBehaviour-Skripts
 
