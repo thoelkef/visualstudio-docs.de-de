@@ -21,12 +21,12 @@ caps.latest.revision: 86
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0dafd91a832fd4098fb19a26750310135723216f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 446e6eb6231ff4d744f22bd3d1ba4fa6dcca6525
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442967"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823187"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>Bearbeiten von UML-Modellen und -Diagrammen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -136,7 +136,7 @@ Sie können ein UML-Modell über die durch die verschiedenen Diagrammtypen berei
   
 #### <a name="to-move-one-end-of-a-connector-to-another-shape"></a>So verschieben Sie ein Ende der Verbindung zu einer anderen Form  
   
-1. Führen Sie einen der folgenden Schritte aus:  
+1. Führen Sie eines der folgenden Verfahren aus:  
   
    - Drücken Sie **STRG** und verschieben Sie das Ende.  
   
@@ -164,7 +164,7 @@ Sie können ein UML-Modell über die durch die verschiedenen Diagrammtypen berei
   
      \- oder –  
   
-- Auf der **Architektur-Designer** -Symbolleiste klicken Sie auf das Pluszeichen (**+**) oder Minuszeichen (-) (**-**), oder wählen Sie eine Zoomstufe.  
+- Auf der **Architektur-Designer** -Symbolleiste klicken Sie auf das Pluszeichen ( **+** ) oder Minuszeichen (-) ( **-** ), oder wählen Sie eine Zoomstufe.  
   
 ## <a name="Searching"></a> Suchen in einem Diagramm  
  Die Schnellsuche-Funktion sucht nach Elementen in einem Diagramm. Sie müssen festlegen, **Suchen in:** zu **Aktuelles Dokument**.  
@@ -294,9 +294,9 @@ Sie können ein UML-Modell über die durch die verschiedenen Diagrammtypen berei
   
 - Mit der rechten Maustaste entweder auf des Elements im **UML-Modell-Explorer** oder auf ein Diagramm, und klicken Sie dann auf **aus Modell löschen**.  
   
-    - Das Element wird aus jedem Diagramm gelöscht, in dem es angezeigt wird.  
-  
-    - Jede Beziehung, die an diesem Element endet, wird ebenfalls aus dem Modell gelöscht.  
+  - Das Element wird aus jedem Diagramm gelöscht, in dem es angezeigt wird.  
+
+  - Jede Beziehung, die an diesem Element endet, wird ebenfalls aus dem Modell gelöscht.  
   
 #### <a name="to-delete-a-relationship-from-the-model"></a>So löschen Sie eine Beziehung aus dem Modell  
   
@@ -316,7 +316,7 @@ Sie können ein UML-Modell über die durch die verschiedenen Diagrammtypen berei
   
 - Sie können auf einigen Arten von Diagrammen, Zeichnen von Linien, Rechtecke und Ellipsen aus dem **einfache Formen** Abschnitt der Toolbox. Diese Formen bilden keinen Teil des UML-Modells.  
   
-- Um einen Bereich zu bezeichnen, können Sie einen Kommentar aus der Toolbox ziehen und legen Sie dann die **Transparent** Eigenschaft **"true"**. Genau wie einfache Formen sind Kommentare kein Bestandteil des UML-Modells und werden nicht im UML-Modell-Explorer angezeigt.  
+- Um einen Bereich zu bezeichnen, können Sie einen Kommentar aus der Toolbox ziehen und legen Sie dann die **Transparent** Eigenschaft **"true"** . Genau wie einfache Formen sind Kommentare kein Bestandteil des UML-Modells und werden nicht im UML-Modell-Explorer angezeigt.  
   
 - Um Hinweise und Erläuterungen zu Modellelementen hinzuzufügen, können Sie Kommentare erstellen und diese dann mit den Elementen verknüpfen.  
   

@@ -10,12 +10,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c307f54deff676ce1add8c745e9d92f1bb3fd657
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fbd0a9a1886bc1f8743ac8919bcc9cb39559dd19
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342198"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824940"
 ---
 # <a name="command-implementation"></a>Befehlsimplementierung
 Um einen Befehl in einem VSPackage implementieren, müssen Sie die folgenden Aufgaben ausführen:
@@ -67,23 +67,23 @@ if ( null != mcs )
 
 - Wenn Ihre Implementierung der beiden Methoden, sowohl die GUID und der Befehl erkennt, und klicken Sie dann die Methode sollte das Feld Befehlsflags der jeden Befehl festgelegt (in der `prgCmds` Parameter) mithilfe der Folgendes <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Flags:
 
-    - `OLECMDF_SUPPORTED`: Der Befehl wird unterstützt.
+  - `OLECMDF_SUPPORTED`: Der Befehl wird unterstützt.
 
-    - `OLECMDF_INVISIBLE`: Der Befehl sollten nicht sichtbar sein.
+  - `OLECMDF_INVISIBLE`: Der Befehl sollten nicht sichtbar sein.
 
-    - `OLECMDF_LATCHED`: Der Befehl eingeschaltet ist und wird angezeigt, die überprüft wurden.
+  - `OLECMDF_LATCHED`: Der Befehl eingeschaltet ist und wird angezeigt, die überprüft wurden.
 
-    - `OLECMDF_ENABLED`: Der Befehl ist aktiviert.
+  - `OLECMDF_ENABLED`: Der Befehl ist aktiviert.
 
-    - `OLECMDF_DEFHIDEONCTXTMENU`: Der Befehl ausgeblendet werden soll, wenn sie ein Kontextmenü angezeigt wird.
+  - `OLECMDF_DEFHIDEONCTXTMENU`: Der Befehl ausgeblendet werden soll, wenn sie ein Kontextmenü angezeigt wird.
 
-    - `OLECMDF_NINCHED`: Mit dem Befehl wird ein Menücontroller und ist nicht aktiviert, aber die Dropdown-Menü-Liste ist nicht leer und ist weiterhin verfügbar. (Dieses Flag wird nur selten verwendet).
+  - `OLECMDF_NINCHED`: Mit dem Befehl wird ein Menücontroller und ist nicht aktiviert, aber die Dropdown-Menü-Liste ist nicht leer und ist weiterhin verfügbar. (Dieses Flag wird nur selten verwendet).
 
 - Wenn der Befehl, in definiert wurde der *VSCT* -Datei mit den `TextChanges` kennzeichnen, legen Sie die folgenden Parameter:
 
-    - Legen Sie die `rgwz` Element der `pCmdText` Parameter, um den neuen Text des Befehls.
+  - Legen Sie die `rgwz` Element der `pCmdText` Parameter, um den neuen Text des Befehls.
 
-    - Legen Sie die `cwActual` Element der `pCmdText` Parameter, um die Größe der Befehlszeichenfolge.
+  - Legen Sie die `cwActual` Element der `pCmdText` Parameter, um die Größe der Befehlszeichenfolge.
 
 Stellen Sie außerdem sicher, dass der aktuelle Kontext keiner Automatisierungsfunktion, es sei denn, der Befehl dient speziell Automatisierungsfunktionen behandeln.
 

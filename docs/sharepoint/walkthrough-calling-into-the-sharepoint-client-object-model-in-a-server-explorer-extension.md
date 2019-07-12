@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f9413b9cb4210959d53eba1753a01d950e980536
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: bf3d39a8a06a59ed337c0d847bb92875f0f68558
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66835946"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824162"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Exemplarische Vorgehensweise: Aufrufe in der SharePoint-Clientobjektmodell innerhalb einer Server-explorererweiterung
   Diese exemplarische Vorgehensweise veranschaulicht, wie Sie das SharePoint-Clientobjektmodell von eine Erweiterung für die **SharePoint-Verbindungen** Knoten **Server-Explorer**. Weitere Informationen zur Verwendung des SharePoint-Clientobjektmodells finden Sie unter [rufen Sie in der SharePoint-Objektmodelle](../sharepoint/calling-into-the-sharepoint-object-models.md).
@@ -27,9 +27,9 @@ ms.locfileid: "66835946"
 
 - Erstellen einer [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Erweiterung, die erweitert die **SharePoint-Verbindungen** Knoten **Server-Explorer** auf folgende Weise:
 
-    - Fügt die Erweiterung eine **Webpartkatalog** Knoten unter jeder SharePoint-Websiteknoten im **Server-Explorer**. Dieser neue Knoten enthält untergeordnete Knoten, die jedes Webpart in der Webpart-Katalog auf der Website darstellen.
+  - Fügt die Erweiterung eine **Webpartkatalog** Knoten unter jeder SharePoint-Websiteknoten im **Server-Explorer**. Dieser neue Knoten enthält untergeordnete Knoten, die jedes Webpart in der Webpart-Katalog auf der Website darstellen.
 
-    - Die Erweiterung definiert eine neue Art von Knoten, der eine Webpart-Instanz darstellt. Diese neuen Knotentyp ist die Grundlage für die untergeordneten Knoten unter der neuen **Webpartkatalog** Knoten. Die neue Webpart-Knotentyp zeigt Informationen auf der **Eigenschaften** Fenster über das Webpart, das den Knoten darstellt.
+  - Die Erweiterung definiert eine neue Art von Knoten, der eine Webpart-Instanz darstellt. Diese neuen Knotentyp ist die Grundlage für die untergeordneten Knoten unter der neuen **Webpartkatalog** Knoten. Die neue Webpart-Knotentyp zeigt Informationen auf der **Eigenschaften** Fenster über das Webpart, das den Knoten darstellt.
 
 - Erstellen eines Visual Studio-Erweiterung (VSIX) zum Bereitstellen der Erweiterung.
 

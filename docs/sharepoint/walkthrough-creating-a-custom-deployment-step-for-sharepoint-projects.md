@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7488bb8b54751c7780cb9751309d227e5d5cb758
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 4b209fad02cdcb3da230143a2c13ff4eaa648d76
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401092"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825636"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Bereitstellungsschritts für SharePoint-Projekte
   Wenn Sie ein SharePoint-Projekt bereitstellen, führt Visual Studio eine Reihe von Schritten zur Bereitstellung in einer bestimmten Reihenfolge. Visual Studio enthält viele integrierte Bereitstellungsschritte, aber Sie können auch eigene erstellen.
@@ -29,9 +29,9 @@ ms.locfileid: "66401092"
 
 - Erstellen einer Visual Studio-Erweiterung, die zwei Hauptaufgaben ausführt:
 
-    - Die Erweiterung definiert ein benutzerdefinierten Bereitstellungsschritts um SharePoint-Lösungen zu aktualisieren.
+  - Die Erweiterung definiert ein benutzerdefinierten Bereitstellungsschritts um SharePoint-Lösungen zu aktualisieren.
 
-    - Die Erweiterung erstellt eine projekterweiterung, die eine neue Bereitstellungskonfiguration definiert, der eine Reihe von Bereitstellungsschritten, die für ein bestimmtes Projekt ausgeführt werden. Die neue Bereitstellungskonfiguration enthält die benutzerdefinierten Bereitstellungsschritts und mehrere integrierte Bereitstellungsschritte.
+  - Die Erweiterung erstellt eine projekterweiterung, die eine neue Bereitstellungskonfiguration definiert, der eine Reihe von Bereitstellungsschritten, die für ein bestimmtes Projekt ausgeführt werden. Die neue Bereitstellungskonfiguration enthält die benutzerdefinierten Bereitstellungsschritts und mehrere integrierte Bereitstellungsschritte.
 
 - Erstellen Sie zwei benutzerdefinierte SharePoint-Befehle, die die Erweiterungsassembly aufruft. SharePoint-Befehle sind Methoden, die von Erweiterungsassemblys APIs im Server-Objektmodell für SharePoint verwenden aufgerufen werden können. Weitere Informationen finden Sie unter [rufen Sie in der SharePoint-Objektmodelle](../sharepoint/calling-into-the-sharepoint-object-models.md).
 

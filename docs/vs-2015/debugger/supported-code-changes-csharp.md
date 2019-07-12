@@ -16,12 +16,12 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cc1c6183eece2799d99907cd5f5ec9489a268542
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6fc02c11a4ebceea431fc06a1bd1cfdb1063097d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117654"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823535"
 ---
 # <a name="supported-code-changes-c"></a>Unterstützte Codeänderungen (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,17 +57,17 @@ Die Funktion "Bearbeiten und Fortfahren" behandelt die meisten Arten von Codeän
   
 - Debuggen von LINQ-Code unter bestimmten Umständen. Weitere Informationen finden Sie unter [Debuggen von LINQ](../debugger/debugging-linq.md).  
   
-    - Erfassen einer zuvor noch nicht erfassten Variablen.  
-  
-    - Ändern des Typs des Abfrageausdrucks (Wählen Sie z. B. eine = > "Neu" auswählen {A = eine};)  
-  
-    - Entfernen einer `where`-Klausel, die eine aktive Anweisung enthält.  
-  
-    - Entfernen einer `let`-Klausel, die eine aktive Anweisung enthält.  
-  
-    - Entfernen einer `join`-Klausel, die eine aktive Anweisung enthält.  
-  
-    - Entfernen einer `orderby`-Klausel, die eine aktive Anweisung enthält.  
+  - Erfassen einer zuvor noch nicht erfassten Variablen.  
+
+  - Ändern des Typs des Abfrageausdrucks (Wählen Sie z. B. eine = > "Neu" auswählen {A = eine};)  
+
+  - Entfernen einer `where`-Klausel, die eine aktive Anweisung enthält.  
+
+  - Entfernen einer `let`-Klausel, die eine aktive Anweisung enthält.  
+
+  - Entfernen einer `join`-Klausel, die eine aktive Anweisung enthält.  
+
+  - Entfernen einer `orderby`-Klausel, die eine aktive Anweisung enthält.  
   
 - Debuggen im gemischten Modus (systemeigen/verwaltet).  
   

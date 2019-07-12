@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 802c55844be14192ea5bd5de1870e27e2063ccad
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f5edad198727ea33d3bf293fa0ee1baf3afb5b3b
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319312"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823905"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Vorgehensweise: Migrieren von Erweiterungsprojekten zu Visual Studio 2017
 
@@ -62,8 +62,8 @@ Um sicherzustellen, dass der Benutzer die Installation von Visual Studio alle As
 * Bearbeiten Sie die Erweiterung manifest-Datei (in der Regel aufgerufen *"Source.Extension.vsixmanifest"* ).
 * Stellen Sie sicher `InstallationTarget` 15.0 umfasst.
 * Fügen Sie die erforderlichen Installationsvoraussetzungen hinzu (wie im folgenden Beispiel gezeigt).
-   * Es wird empfohlen, dass Sie die Voraussetzungen für die Installation nur Komponenten-IDs angeben.
-   * Finden Sie im Abschnitt am Ende dieses Dokuments auch für [Anweisungen zum Identifizieren der Komponenten-IDs](#find-component-ids).
+  * Es wird empfohlen, dass Sie die Voraussetzungen für die Installation nur Komponenten-IDs angeben.
+  * Finden Sie im Abschnitt am Ende dieses Dokuments auch für [Anweisungen zum Identifizieren der Komponenten-IDs](#find-component-ids).
 
 Beispiel:
 
@@ -120,12 +120,12 @@ Dies kann so aus: *C:\Programme\Microsoft Dateien (x86) \Microsoft Visual Studio
 
 * Erstellen Sie das VSIX-Projekt.
 * Entzippen Sie die generierte VSIX-Datei aus.
-   * Standardmäßig befindet sich die VSIX-Datei in *Bin/Debug* oder *Bin/Release* als *[YourCustomExtension] VSIX*.
-   * Benennen Sie *VSIX* zu *ZIP* , einfach den Inhalt anzuzeigen.
+  * Standardmäßig befindet sich die VSIX-Datei in *Bin/Debug* oder *Bin/Release* als *[YourCustomExtension] VSIX*.
+  * Benennen Sie *VSIX* zu *ZIP* , einfach den Inhalt anzuzeigen.
 * Überprüfen Sie das Vorhandensein von drei Dateien:
-   * *extension.vsixmanifest*
-   * *manifest.json*
-   * *catalog.json*
+  * *extension.vsixmanifest*
+  * *manifest.json*
+  * *catalog.json*
 
 ## <a name="check-when-all-required-prerequisites-are-installed"></a>Überprüfen Sie, wenn alle erforderliche Komponenten installiert sind
 
@@ -141,11 +141,11 @@ Versucht, die die Erweiterung zu installieren:
 ![VSIX-Installer für Visual Studio 2017](media/vsixinstaller-vs-2017.png)
 
 * Optional: Überprüfen Sie in früheren Versionen von Visual Studio.
-   * Stellt die Abwärtskompatibilität zu gewährleisten.
-   * Sollte funktionieren für Visual Studio 2012, Visual Studio 2013, Visual Studio 2015.
+  * Stellt die Abwärtskompatibilität zu gewährleisten.
+  * Sollte funktionieren für Visual Studio 2012, Visual Studio 2013, Visual Studio 2015.
 * Optional: Überprüfen Sie, dass die VSIX-Installer-Version aus eine Auswahl von Versionen bietet.
-   * Enthält frühere Versionen von Visual Studio (falls installiert).
-   * Enthält Visual Studio 2017.
+  * Enthält frühere Versionen von Visual Studio (falls installiert).
+  * Enthält Visual Studio 2017.
 
 Wenn Visual Studio zuletzt geöffnet wurde, wird möglicherweise ein Dialogfeld wie folgt angezeigt:
 

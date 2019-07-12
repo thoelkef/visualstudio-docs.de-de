@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 589f5eddb2b1e2a8fd61eea2a205f12d2d9c0742
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0cc62384f2a413362f53ed0626031501e163d6a4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321355"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823808"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Änderungen in Visual Studio 2017-Erweiterbarkeit
 
@@ -63,35 +63,35 @@ Die meisten Visual Studio Core-Assemblys werden nicht mehr im globalen Assemblyc
 
 * Assemblys, die nur im globalen Assemblycache installiert wurden:
 
-   Diese Assemblys sind jetzt installiert <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> oder *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*. Diese Ordner sind Teil der Visual Studio-Prozess Überprüfungspfade.
+  Diese Assemblys sind jetzt installiert <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> oder *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*. Diese Ordner sind Teil der Visual Studio-Prozess Überprüfungspfade.
 
 * Assemblys, die in einen Pfad ohne Überprüfung und im globalen Assemblycache installiert wurden:
 
-   * Die Kopie im globalen Assemblycache wurde über das Setup entfernt.
-   * Ein *PKGDEF* Datei wurde hinzugefügt, um eine CodeBase-Eintrag für die Assembly anzugeben.
+  * Die Kopie im globalen Assemblycache wurde über das Setup entfernt.
+  * Ein *PKGDEF* Datei wurde hinzugefügt, um eine CodeBase-Eintrag für die Assembly anzugeben.
 
-      Zum Beispiel:
+    Beispiel:
 
-      ```xml
-      [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
-      "name"="AssemblyName" "codeBase"="$PackageFolder$\AssemblyName.dll"
-      "publicKeyToken"="Public Key Token"
-      "culture"="neutral"
-      "version"=15.0.0.0
-      ```
+    ```
+    [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
+    "name"="AssemblyName" "codeBase"="$PackageFolder$\AssemblyName.dll"
+    "publicKeyToken"="Public Key Token"
+    "culture"="neutral"
+    "version"=15.0.0.0
+    ```
 
-      Zur Laufzeit führt das Visual Studio-Pkgdef-Subsystem diese Einträge in der Visual Studio-Prozess-Laufzeitkonfigurationsdatei (unter *[VSAPPDATA]\devenv.exe.config*) als [ `<codeBase>` ](/dotnet/framework/configure-apps/file-schema/runtime/codebase-element) Elemente. Dies ist die empfohlene Methode zum Visual Studio-Prozesses finden Sie die Assembly, zu ermöglichen, da es verhindert die Überprüfung von Pfaden zu durchsuchen.
+    Zur Laufzeit führt das Visual Studio-Pkgdef-Subsystem diese Einträge in der Visual Studio-Prozess-Laufzeitkonfigurationsdatei (unter *[VSAPPDATA]\devenv.exe.config*) als [ `<codeBase>` ](/dotnet/framework/configure-apps/file-schema/runtime/codebase-element) Elemente. Dies ist die empfohlene Methode zum Visual Studio-Prozesses finden Sie die Assembly, zu ermöglichen, da es verhindert die Überprüfung von Pfaden zu durchsuchen.
 
 ### <a name="reacting-to-this-breaking-change"></a>Reagieren auf diese wichtige Änderung
 
 * Wenn Ihre Erweiterung in Visual Studio-Prozesses ausgeführt wird:
 
-   * Der Code wird Visual Studio Core-Assemblys zu finden sein.
-   * Erwägen Sie die Verwendung einer *PKGDEF* Datei, um einen Pfad auf die Assemblys bei Bedarf anzugeben.
+  * Der Code wird Visual Studio Core-Assemblys zu finden sein.
+  * Erwägen Sie die Verwendung einer *PKGDEF* Datei, um einen Pfad auf die Assemblys bei Bedarf anzugeben.
 
 * Wenn Ihre Erweiterung außerhalb der Visual Studio-Prozess ausgeführt wird:
 
-   Sehen Sie die für Visual Studio Core-Assemblys unter <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> oder *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*mithilfe von Konfiguration-Datei oder Assembly-Auflösung.
+  Sehen Sie die für Visual Studio Core-Assemblys unter <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> oder *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*mithilfe von Konfiguration-Datei oder Assembly-Auflösung.
 
 ## <a name="change-reduce-registry-impact"></a>Ändern Sie: Reduzieren der Auswirkungen der Registrierung
 

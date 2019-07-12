@@ -13,12 +13,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9b1ad310385d5c8c8cecaee408d049a172d53e1e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 47e7c2b6e02aab3b6b1df0c54ba91668bbb2673c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436851"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825813"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Vorgehensweise: Erstellen oder Aktualisieren von Standardeincheckrichtlinien für die Codeanalyse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Sie können anfordern, dass die Codeanalyse auf alle Codeprojekte in einem Teamp
   
 2. In der **Quellcodeverwaltung** wählen Sie im Dialogfeld die **Eincheckrichtlinie** Registerkarte.  
   
-3. Führen Sie einen der folgenden Schritte aus:  
+3. Führen Sie eines der folgenden Verfahren aus:  
   
     - Klicken Sie auf **hinzufügen** zum Erstellen einer neuen Check-in-Richtlinie.  
   
@@ -64,13 +64,13 @@ Sie können anfordern, dass die Codeanalyse auf alle Codeprojekte in einem Teamp
   
 - Von der **diesen Regelsatz ausführen** aufzulisten, verwenden Sie eine der folgenden Methoden:  
   
-    - Wählen Sie einen Microsoft-standard-Regelsatz.  
-  
-    - Klicken Sie zum Auswählen eines benutzerdefinierten Regelsatzes auf  **\<Regelsatz auswählen aus der Quellcodeverwaltung... >** , und geben Sie dann auf den Versionskontrollpfad des Regelsatzes in der Quelle-Browser-Steuerelement. Die Syntax der einen Pfad für die Versionskontrolle ist:  
-  
-    - **$/** `TeamProjectName` **/** `VersionControlPath`  
-  
-    - Weitere Informationen zum Erstellen und Implementieren einer benutzerdefinierte Eincheckrichtlinie Regel festlegen, finden Sie unter [Implementieren von benutzerdefinierten Eincheckrichtlinien für verwalteten Code](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).  
+  - Wählen Sie einen Microsoft-standard-Regelsatz.  
+
+  - Klicken Sie zum Auswählen eines benutzerdefinierten Regelsatzes auf  **\<Regelsatz auswählen aus der Quellcodeverwaltung... >** , und geben Sie dann auf den Versionskontrollpfad des Regelsatzes in der Quelle-Browser-Steuerelement. Die Syntax der einen Pfad für die Versionskontrolle ist:  
+
+  - **$/** `TeamProjectName` **/** `VersionControlPath`  
+
+  - Weitere Informationen zum Erstellen und Implementieren einer benutzerdefinierte Eincheckrichtlinie Regel festlegen, finden Sie unter [Implementieren von benutzerdefinierten Eincheckrichtlinien für verwalteten Code](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen und Verwenden von Eincheckrichtlinien für die Codeanalyse](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

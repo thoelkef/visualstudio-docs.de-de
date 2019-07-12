@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fe17c72463d58cb4e1ac0a76d904416559ed224b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 54218fd5c351b400ce9744620987f50d35e0558f
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65690550"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825395"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Vorgehensweise: Hinzufügen eines Drag & Drop-Handlers
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ Sie können Ihrer DSL Handler für Drag &amp; Drop-Ereignisse hinzufügen, sodas
   
 - In den ersten beiden Abschnitten werden zwei alternative Methoden beschrieben, einen Gestenhandler zu definieren:  
   
-    - [Definieren von Gestenhandlern durch Überschreiben von ShapeElement-Methoden](#overrideShapeElement). `OnDragDrop`, `OnDoubleClick`, `OnDragOver` und andere Methoden können überschrieben werden.  
-  
-    - [Definieren von Gestenhandlern mit MEF](#MEF). Nutzen Sie diese Methoden, wenn Entwickler von Drittanbietern in der Lage sein sollen, eigene Handler für Ihre DSL zu definieren. Die Benutzer könnten Erweiterungen von Drittanbietern installieren, nachdem sie Ihre DSL installiert haben.  
+  - [Definieren von Gestenhandlern durch Überschreiben von ShapeElement-Methoden](#overrideShapeElement). `OnDragDrop`, `OnDoubleClick`, `OnDragOver` und andere Methoden können überschrieben werden.  
+
+  - [Definieren von Gestenhandlern mit MEF](#MEF). Nutzen Sie diese Methoden, wenn Entwickler von Drittanbietern in der Lage sein sollen, eigene Handler für Ihre DSL zu definieren. Die Benutzer könnten Erweiterungen von Drittanbietern installieren, nachdem sie Ihre DSL installiert haben.  
   
 - [Wie Sie Decodieren des gezogenen Elements](#extracting). Elemente können aus einem beliebigen Fenster, vom Desktop oder aus einer DSL gezogen werden.  
   
@@ -140,7 +140,7 @@ using System.Linq;
   
   - diagramEventArgs.Data.GetDataFormats() – Listet die Formate auf, in die Sie das gezogene Objekt decodieren können. Wenn der Benutzer beispielsweise eine Datei vom Desktop zieht, enthalten die verfügbaren Formate den Dateinamen (`FileNameW`).  
   
-  - `diagramEventArgs.Data.GetData(format)` – Decodiert das gezogene Objekt in das angegebene Format. Wandeln Sie das Objekt in den geeigneten Typ um. Zum Beispiel:  
+  - `diagramEventArgs.Data.GetData(format)` – Decodiert das gezogene Objekt in das angegebene Format. Wandeln Sie das Objekt in den geeigneten Typ um. Beispiel:  
   
        `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`  
   

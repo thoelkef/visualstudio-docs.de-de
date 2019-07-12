@@ -11,12 +11,12 @@ caps.latest.revision: 5
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fe97461800d6f6e6eb285dd7eddb610ab2f5b5ac
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 87972fe12cb8be78b89261d0aaaa272d9e2d5a14
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420068"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825577"
 ---
 # <a name="graphics-state"></a>Grafikzustand
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,12 +38,12 @@ Im Statusfenster der Visual Studio-Grafikdiagnose sehen Sie den Grafikstatus, de
 ##### <a name="to-change-the-state-view"></a>So ändern Sie die Statusansicht  
   
 - Klicken Sie im Statusfenster in der oberen linken Ecke direkt unterhalb der Titelleiste auf die Schaltfläche, die dem gewünschten Statusansichtsstil entspricht.  
-  
-    - **API-Eingabestatusansicht anzeigen**  
-  
-    - **Logische Statusansicht anzeigen**  
-  
-    - **Angeheftete Statusansicht anzeigen**  
+
+  - **API-Eingabestatusansicht anzeigen**  
+
+  - **Logische Statusansicht anzeigen**  
+
+  - **Angeheftete Statusansicht anzeigen**  
   
 > [!IMPORTANT]
 > Sie müssen den Status in den Ansichten **API-Eingabestatus anzeigen** oder **Logischen Status anzeigen** anheften, damit er in der Ansicht **Angeheftete Statusansicht anzeigen** angezeigt wird.  

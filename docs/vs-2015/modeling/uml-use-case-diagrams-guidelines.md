@@ -15,12 +15,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3fe11a4d92ecc95f5835fc8a8c654b2aac3d235
-ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+ms.openlocfilehash: fc5dbc6b483313d169a80dc66550dce80a147c96
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67493661"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823841"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>UML-Anwendungsfalldiagramme: Richtlinien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,13 +88,13 @@ Sie können in Visual Studio zeichnen eine *Anwendungsfalldiagramm* zusammengefa
   
     - Akteure stellen Klassen von Benutzern, Organisationen und externen Systemen dar, die mit dem System interagieren.  
   
-    - Benennen Sie diese um. Zum Beispiel: **Kunde, Restaurant, Kreditkartenanbieter.**  
+    - Benennen Sie diese um. Beispiel: **Kunde, Restaurant, Kreditkartenanbieter.**  
   
 3. Ziehen Sie **Anwendungsfälle** aus der Toolbox auf die entsprechenden Systeme.  
   
     - Anwendungsfälle stellen die Aktivitäten dar, die Akteure mithilfe des Systems ausführen.  
   
-    - Benennen Sie diese um, indem Sie Titel verwenden, die für die Akteure verständlich sind. Verwenden Sie keine Titel, die sich auf Ihren Code beziehen. Zum Beispiel: **Mahlzeit bestellen, Gericht bezahlen, Gericht liefern**.  
+    - Benennen Sie diese um, indem Sie Titel verwenden, die für die Akteure verständlich sind. Verwenden Sie keine Titel, die sich auf Ihren Code beziehen. Beispiel: **Mahlzeit bestellen, Gericht bezahlen, Gericht liefern**.  
   
     - Beginnen Sie mit Haupttransaktionen wie z. B. **Gericht bestellen**dadurch bleibt bis zum höher kleinere Interaktionen wie z. B. **Gericht auswählen auf**.  
   
@@ -115,13 +115,13 @@ Sie können in Visual Studio zeichnen eine *Anwendungsfalldiagramm* zusammengefa
   
 - Erstellen Sie **Actors** zur Darstellung der Klassen von Personen, Organisationen, anderen Systemen, Software oder Geräten, die mit dem System oder Subsystem interagieren.  
   
-    - Gewusst wie: Zeichnen von Akteuren und anderen Elementen finden Sie unter [Bearbeiten von UML-Modellen und Diagrammen](../modeling/edit-uml-models-and-diagrams.md).  
-  
-    - Geben Sie für jeden Satz mit Zielen die Akteure nach Typ oder Rolle an, auch wenn die physischen Personen oder Entitäten ggf. gleich sind. Beispielsweise sind Restaurant und Kunden separate Akteure, obwohl ein Restaurantmitarbeiter manchmal auch ein Kunde sein kann.  
+  - Gewusst wie: Zeichnen von Akteuren und anderen Elementen finden Sie unter [Bearbeiten von UML-Modellen und Diagrammen](../modeling/edit-uml-models-and-diagrams.md).  
+
+  - Geben Sie für jeden Satz mit Zielen die Akteure nach Typ oder Rolle an, auch wenn die physischen Personen oder Entitäten ggf. gleich sind. Beispielsweise sind Restaurant und Kunden separate Akteure, obwohl ein Restaurantmitarbeiter manchmal auch ein Kunde sein kann.  
   
 - Erstellen Sie **Anwendungsfälle** für jedes einzelne Ziel, die einzelnen Akteure mithilfe des Systems erreichen.  
   
-    - Benennen und beschreiben Sie die Anwendungsfälle in Worten, die der Akteur versteht, und verwenden Sie keine Implementierungsbegriffe.  
+  - Benennen und beschreiben Sie die Anwendungsfälle in Worten, die der Akteur versteht, und verwenden Sie keine Implementierungsbegriffe.  
   
 - Verwenden Sie **Zuordnungen** Akteure mit Anwendungsfällen zu verknüpfen.  
   
@@ -166,7 +166,7 @@ Sie können in Visual Studio zeichnen eine *Anwendungsfalldiagramm* zusammengefa
   
  Sie können diese Multiplizitäten ändern.  
   
- Zum Beispiel:  
+ Beispiel:  
   
  ![Anwendungsfall mit m: n-Multiplizität](../modeling/media/uml-ucguidemulti2.png "UML_UCGuideMulti2")  
   
@@ -200,7 +200,7 @@ Sie können in Visual Studio zeichnen eine *Anwendungsfalldiagramm* zusammengefa
 > Viele Teams geben in Anwendungsfalldiagrammen keine Informationen zur Multiplizität an und behalten für die Multiplizitäten den Standardwert 1 bei. Stattdessen geben sie die Informationen in separaten Beschreibungen der Anwendungsfälle an. In diesem Fall werden alle Multiplizitäten in den Anwendungsfalldiagrammen ausgeblendet.  
   
 ### <a name="using-an-actor-or-use-case-on-multiple-diagrams"></a>Verwenden eine Akteurs oder eines Anwendungsfalls in mehreren Diagrammen  
- Sie können die gleichen Akteure und Anwendungsfälle in mehreren Diagrammen anzeigen. Zum Beispiel:  
+ Sie können die gleichen Akteure und Anwendungsfälle in mehreren Diagrammen anzeigen. Beispiel:  
   
 - Sie können in unterschiedlichen Diagrammen die verschiedenen Anwendungsfälle beschreiben, an denen ein Akteur beteiligt ist.  
   

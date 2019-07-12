@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5a67fa921c5fedf5d37585036b2c5e55c7497434
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 50eedfe849de2a0fe82ee337d26a8b66a15d6764
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432637"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826146"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>Vorgehensweise: Anhalten und Fortsetzen der Sammlung von Leistungsdaten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,11 +34,11 @@ Im Fenster der Profilerstellungs-Sitzungsseite können Sie die Erfassung der Pro
   
 - Gehen Sie auf der Profilerstellungs-Sitzungsseite folgendermaßen vor:  
   
-    - Wählen Sie **Auflistung anhalten** aus, um die Datensammlung anzuhalten.  
-  
-    - Wählen Sie **Auflistung wiederaufnehmen** aus, um die Datensammlung neu zu starten, nachdem sie angehalten wurde.  
-  
-    - Wählen Sie **Profilerstellung beenden** aus, um die Profilerstellungssitzung zu beenden und Berichte zu generieren.  
+  - Wählen Sie **Auflistung anhalten** aus, um die Datensammlung anzuhalten.  
+
+  - Wählen Sie **Auflistung wiederaufnehmen** aus, um die Datensammlung neu zu starten, nachdem sie angehalten wurde.  
+
+  - Wählen Sie **Profilerstellung beenden** aus, um die Profilerstellungssitzung zu beenden und Berichte zu generieren.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Steuern der Datensammlung](../profiling/controlling-data-collection.md)   

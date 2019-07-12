@@ -24,14 +24,14 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 835843d2328d9d17ac899fc12c97251b7e6b4659
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: da41524fcb231ea399dbbd2a2904afd935e5c4f8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685319"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824255"
 ---
-# <a name="how-to-use-the-threads-window"></a>Vorgehensweise: Verwenden des Fensters Threads
+# <a name="how-to-use-the-threads-window"></a>Vorgehensweise: Verwenden des Fensters „Threads“
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In der **Threads** Fenster, die Sie untersuchen und Arbeiten mit Threads in der Anwendung, die Sie debuggen können.  
@@ -72,11 +72,11 @@ In der **Threads** Fenster, die Sie untersuchen und Arbeiten mit Threads in der 
   
 - Führen Sie einen der folgenden Schritte aus:  
   
-    - Doppelklicken Sie auf einen beliebigen Thread.  
-  
-    - Mit der rechten Maustaste in eines Threads aus, und klicken Sie auf **zu Thread wechseln**.  
-  
-         Der gelbe Pfeil wird neben dem neuen aktiven Thread angezeigt. Die grauen Konturen eines Pfeils geben den Thread, in dem der Debugger die Ausführung unterbrochen hat.  
+  - Doppelklicken Sie auf einen beliebigen Thread.  
+
+  - Mit der rechten Maustaste in eines Threads aus, und klicken Sie auf **zu Thread wechseln**.  
+
+    Der gelbe Pfeil wird neben dem neuen aktiven Thread angezeigt. Die grauen Konturen eines Pfeils geben den Thread, in dem der Debugger die Ausführung unterbrochen hat.  
   
 ## <a name="grouping-and-sorting-threads"></a>Gruppieren und Sortieren von Threads  
  Beim Gruppieren von Threads wird in der Tabelle eine Überschrift für jede Gruppe angezeigt. Die Überschrift enthält eine Gruppenbeschreibung (z. B. "Arbeitsthread" oder "Nicht gekennzeichnete Threads") und ein Strukturansicht-Steuerelement. Die einzelnen Threads jeder Gruppe werden unter der Gruppenüberschrift angezeigt. Wenn Sie die einzelnen Threads einer Gruppe ausblenden möchten, können Sie die Gruppe mithilfe des Strukturansicht-Steuerelements reduzieren.  
@@ -116,11 +116,11 @@ In der **Threads** Fenster, die Sie untersuchen und Arbeiten mit Threads in der 
   
 - Wechseln Sie auf der Symbolleiste am oberen Rand des Fensters **Threads** in das Feld **Suchen**, und führen Sie Folgendes aus:  
   
-    - Geben Sie eine Suchzeichenfolge ein, und drücken Sie dann die EINGABETASTE.  
-  
-         \- oder –  
-  
-    - Klicken Sie auf die Dropdownliste neben der **Suche** Feld, und wählen Sie eine Suchzeichenfolge aus einer vorherigen Suche.  
+  - Geben Sie eine Suchzeichenfolge ein, und drücken Sie dann die EINGABETASTE.  
+
+    \- oder –  
+
+  - Klicken Sie auf die Dropdownliste neben der **Suche** Feld, und wählen Sie eine Suchzeichenfolge aus einer vorherigen Suche.  
   
 - (Optional) Wenn bei der Suche die vollständige Aufrufliste berücksichtigt werden soll, wählen Sie **Aufrufliste durchsuchen** aus.  
   

@@ -47,12 +47,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5cd6cf11bce8b3b60a41b8306afed081a4ac5472
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: ead32426585ecd4962ccc869f470021c5d0976fe
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715209"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821367"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Datasettools in Visual Studio
 
@@ -75,13 +75,13 @@ Visual Studio bietet Tools zum Arbeiten mit Datasets zu vereinfachen. Der grundl
 
 - Verwenden der **TableAdapter-Konfigurations-Assistenten** an die Abfrage oder gespeicherte Prozedur, die das Dataset füllt und welche Datenbankvorgänge (Update, Delete usw.) zu implementieren. Weitere Informationen finden Sie in den folgenden Themen:
 
-    - [Füllen von Datasets mit TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
+  - [Füllen von Datasets mit TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
 
-    - [Bearbeiten von Daten in Datasets](../data-tools/edit-data-in-datasets.md)
+  - [Bearbeiten von Daten in Datasets](../data-tools/edit-data-in-datasets.md)
 
-    - [Überprüfen von Daten in Datasets](../data-tools/validate-data-in-datasets.md)
+  - [Überprüfen von Daten in Datasets](../data-tools/validate-data-in-datasets.md)
 
-    - [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)
+  - [Rückspeichern von Daten in der Datenbank](../data-tools/save-data-back-to-the-database.md)
 
 - Fragen Sie ab aus, und suchen Sie die Daten im Dataset. Weitere Informationen finden Sie unter [Abfragedatasets](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)] ermöglicht [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) für Daten in einem <xref:System.Data.DataSet> Objekt. Weitere Informationen finden Sie unter [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
 

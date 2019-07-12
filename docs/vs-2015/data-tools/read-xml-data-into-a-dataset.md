@@ -23,12 +23,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5f9968b14eaf74a00a66d8fb7c86890938ddfa4b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 64a5edbec2f9f482981002e609117996f0080e56
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65692556"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825892"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Laden von Daten in ein Dataset
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -147,9 +147,9 @@ ADO.NET stellt einfache Methoden zum Arbeiten mit XML-Daten bereit. In dieser ex
   
 - Zwei <xref:System.Windows.Forms.Button> Steuerelemente.  
   
-    - Eine Schaltfläche liest die XML-Datei in das Dataset, und zeigt ihn in das <xref:System.Windows.Forms.DataGridView> Steuerelement.  
-  
-    - Eine zweite Schaltfläche extrahiert das Schema aus dem Dataset, und über eine <xref:System.IO.StringWriter> zeigt sie in der <xref:System.Windows.Forms.TextBox> Steuerelement.  
+  - Eine Schaltfläche liest die XML-Datei in das Dataset, und zeigt ihn in das <xref:System.Windows.Forms.DataGridView> Steuerelement.  
+
+  - Eine zweite Schaltfläche extrahiert das Schema aus dem Dataset, und über eine <xref:System.IO.StringWriter> zeigt sie in der <xref:System.Windows.Forms.TextBox> Steuerelement.  
   
 #### <a name="to-add-controls-to-the-form"></a>So fügen Sie dem Formular Steuerelemente hinzu  
   
