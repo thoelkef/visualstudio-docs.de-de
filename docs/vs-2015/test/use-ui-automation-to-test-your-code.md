@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 329b3abc06cbe212215b8e4981aacb79f668e6c4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9e2cc2f08032d9281e3c86990201315fb8bf3937
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695305"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825540"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -297,23 +297,23 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - **Code-Editor:**
 
-    - Fügen Sie manuell Code für die Steuerelemente im Test hinzu, wie im Abschnitt [Programmieren von UI-Steuerelement-Aktionen und -Eigenschaften](#actions) in diesem Thema beschrieben.
+  - Fügen Sie manuell Code für die Steuerelemente im Test hinzu, wie im Abschnitt [Programmieren von UI-Steuerelement-Aktionen und -Eigenschaften](#actions) in diesem Thema beschrieben.
 
-    - Nachdem Sie einen Test der programmierten UI erstellt haben, können Sie ihn in einen datengesteuerten Test ändern. Weitere Informationen finden Sie unter [Creating a Data-Driven Coded UI Test (Erstellen eines datengesteuerten Tests der programmierten UI)](../test/creating-a-data-driven-coded-ui-test.md).
+  - Nachdem Sie einen Test der programmierten UI erstellt haben, können Sie ihn in einen datengesteuerten Test ändern. Weitere Informationen finden Sie unter [Creating a Data-Driven Coded UI Test (Erstellen eines datengesteuerten Tests der programmierten UI)](../test/creating-a-data-driven-coded-ui-test.md).
 
-    - Sie können bei der Wiedergabe eines Tests der programmierten UI festlegen, dass bei einem Test auf bestimmte Ereignisse gewartet werden soll, z. B. auf das Anzeigen eines Fensters, das Ausblenden einer Statusanzeige usw. Fügen Sie hierzu die entsprechende UITestControl.WaitForControlXXX()-Methode hinzu. Eine vollständige Liste der verfügbaren Methoden finden Sie unter [Making Coded UI Tests Wait For Specific Events During Playback (Festlegen, dass Tests der programmierten UI bei der Wiedergabe auf bestimmte Ereignisse warten)](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Ein Beispiel für einen Test der codierten UI, bei dem ein Steuerelement auf die Aktivierung mit der WaitForControlEnabled-Methode wartet, finden Sie unter [Exemplarische Vorgehensweise: Erstellen, Bearbeiten und Verwalten von Tests der programmierten UI](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+  - Sie können bei der Wiedergabe eines Tests der programmierten UI festlegen, dass bei einem Test auf bestimmte Ereignisse gewartet werden soll, z. B. auf das Anzeigen eines Fensters, das Ausblenden einer Statusanzeige usw. Fügen Sie hierzu die entsprechende UITestControl.WaitForControlXXX()-Methode hinzu. Eine vollständige Liste der verfügbaren Methoden finden Sie unter [Making Coded UI Tests Wait For Specific Events During Playback (Festlegen, dass Tests der programmierten UI bei der Wiedergabe auf bestimmte Ereignisse warten)](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Ein Beispiel für einen Test der codierten UI, bei dem ein Steuerelement auf die Aktivierung mit der WaitForControlEnabled-Methode wartet, finden Sie unter [Exemplarische Vorgehensweise: Erstellen, Bearbeiten und Verwalten von Tests der programmierten UI](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 
-    - Bei Tests der programmierten UI werden einige HTML5-Steuerelemente unterstützt, die in Internet Explorer 9 und in Internet Explorer 10 enthalten sind. Weitere Informationen finden Sie unter [Using HTML5 Controls in Coded UI Tests (Verwenden von HTML5-Steuerelementen in Tests der programmierten UI)](../test/using-html5-controls-in-coded-ui-tests.md).
+  - Bei Tests der programmierten UI werden einige HTML5-Steuerelemente unterstützt, die in Internet Explorer 9 und in Internet Explorer 10 enthalten sind. Weitere Informationen finden Sie unter [Using HTML5 Controls in Coded UI Tests (Verwenden von HTML5-Steuerelementen in Tests der programmierten UI)](../test/using-html5-controls-in-coded-ui-tests.md).
 
-    - **Codierungsleitfaden für Tests der programmierten UI:**
+  - **Codierungsleitfaden für Tests der programmierten UI:**
 
-        - [Aufbau eines Tests der programmierten UI](../test/anatomy-of-a-coded-ui-test.md)
+    - [Aufbau eines Tests der programmierten UI](../test/anatomy-of-a-coded-ui-test.md)
 
-        - [Empfohlene Vorgehensweisen für Tests der programmierten UI](../test/best-practices-for-coded-ui-tests.md)
+    - [Empfohlene Vorgehensweisen für Tests der programmierten UI](../test/best-practices-for-coded-ui-tests.md)
 
-        - [Testen einer großen Anwendung mit mehreren UI-Zuordnungen](../test/testing-a-large-application-with-multiple-ui-maps.md)
+    - [Testen einer großen Anwendung mit mehreren UI-Zuordnungen](../test/testing-a-large-application-with-multiple-ui-maps.md)
 
-        - [Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktionsaufzeichnungen](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+    - [Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktionsaufzeichnungen](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 
 ### <a name="generatedCode"></a> Der generierte Code
  Wenn Sie **Code generieren** auswählen, werden mehrere Codeelemente erstellt:

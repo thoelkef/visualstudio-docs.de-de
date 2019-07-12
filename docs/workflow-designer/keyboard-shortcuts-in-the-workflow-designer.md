@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2143b67297ba2e4bd2751054b789274595505cb3
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: b2026c61d05425f0f0d48a9fb722c62f760fcba2
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66431880"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825507"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Tastenkombinationen im Workflow-Designer
 
@@ -79,11 +79,11 @@ Standardmäßig gelten die Standardtastenkombinationen zum Bearbeiten von Text i
 
 - Eine Neuzuordnung der Tastenkombinationen für die folgenden Befehle ist wirkungslos. Beim Bearbeiten eines Ausdrucks können Sie nur über die Standardtastenkombinationen auf diese Befehle zugreifen.
 
-   - Ausschneiden
-   - Kopieren
-   - Einfügen
-   - Alles auswählen
-   - undo
-   - Wiederholen
+  - Ausschneiden
+  - Kopieren
+  - Einfügen
+  - Alles auswählen
+  - undo
+  - Wiederholen
 
 - Um die Tastenkombinationen für Befehle zum Ausdruck bearbeiten im Workflow-Designer in Visual Studio neu zuordnen, bearbeiten Sie die Tastenkombinationen im Workflow-Designer-Bereich. In den Text-Editor-Bereich vorgenommene Änderungen gelten nicht automatisch für Workflow-Designer. Wenn Sie Verknüpfungen an beiden Stellen neu zuordnen möchten, müssen Sie die Änderungen zweimal (einmal für jeden Bereich) vornehmen.

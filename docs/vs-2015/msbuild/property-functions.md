@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 85fb100e09dd61e836404ecf98f8f7292ff2ee86
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4108e478e9e77a5ed5699b39dfae44884a6befd3
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065180"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826174"
 ---
 # <a name="property-functions"></a>Eigenschaftenfunktionen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ In .NET Framework, Versionen 4 und 4.5, können Eigenschaftenfunktionen zur Ausw
   
 - [Syntax einer Eigenschaftenfunktion](#BKMK_Syntax)  
   
-    - [Zeichenfolgen-Eigenschaftenfunktionen](#BKMK_String)  
-  
-    - [Statische Eigenschaftenfunktionen](#BKMK_Static)  
-  
-    - [Aufrufen von Instanzmethoden für statische Eigenschaften](#BKMK_InstanceMethods)  
-  
-    - [MSBuild-Eigenschaftenfunktionen](#BKMK_PropertyFunctions)  
+  - [Zeichenfolgen-Eigenschaftenfunktionen](#BKMK_String)  
+
+  - [Statische Eigenschaftenfunktionen](#BKMK_Static)  
+
+  - [Aufrufen von Instanzmethoden für statische Eigenschaften](#BKMK_InstanceMethods)  
+
+  - [MSBuild-Eigenschaftenfunktionen](#BKMK_PropertyFunctions)  
   
 - [Geschachtelte Eigenschaftenfunktionen](#BKMK_Nested)  
   
@@ -188,7 +188,7 @@ In .NET Framework, Versionen 4 und 4.5, können Eigenschaftenfunktionen zur Ausw
   
  Nachfolgend finden Sie eine Liste mit MSBuild-Eigenschaftenfunktionen:  
   
-|Funktionssignatur|Beschreibung|  
+|Funktionssignatur|BESCHREIBUNG|  
 |------------------------|-----------------|  
 |double Add(double a, double b)|Addiert zwei double-Werte.|  
 |long Add(long a, long b)|Addiert zwei long-Werte.|  

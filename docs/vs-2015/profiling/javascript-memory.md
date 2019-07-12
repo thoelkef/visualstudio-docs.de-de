@@ -23,12 +23,12 @@ caps.latest.revision: 54
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5169f59ec12482fd35e09d4eb226277b7fb01455
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 48b9bbc596e97215654ff48c72298242a47f603e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704531"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825457"
 ---
 # <a name="javascript-memory"></a>JavaScript-Memory
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -282,14 +282,14 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
   
   Um die Differenzinformationen zwischen den Momentaufnahmen zu filtern, wählen Sie einen der **Bereichsfilter** oben in den Differenzansichten aus.  
   
-- **Übrige Objekte der Momentaufnahme #\<Zahl>**. Dieser Filter gibt die Differenz zwischen den Objekten, die dem Heap hinzugefügt wurden und die aus dem Heap entfernt wurden, im Vergleich zur Basis-Momentaufnahme und zur vorherigen Momentaufnahme an. Wenn die Momentaufnahmenzusammenfassung als Objektanzahl z. B. „+205/-195“ angibt, zeigt dieser Filter die zehn Objekte an, die hinzugefügt, jedoch nicht entfernt wurden.  
+- **Übrige Objekte der Momentaufnahme #\<Zahl>** . Dieser Filter gibt die Differenz zwischen den Objekten, die dem Heap hinzugefügt wurden und die aus dem Heap entfernt wurden, im Vergleich zur Basis-Momentaufnahme und zur vorherigen Momentaufnahme an. Wenn die Momentaufnahmenzusammenfassung als Objektanzahl z. B. „+205/-195“ angibt, zeigt dieser Filter die zehn Objekte an, die hinzugefügt, jedoch nicht entfernt wurden.  
   
   > [!TIP]
   > Um mit diesem Filter die nützlichsten Informationen anzuzeigen, befolgen Sie die unter [Isolate a memory leak](#Isolate)beschriebenen Schritte.  
   
 - **Objekte zwischen Momentaufnahme #\<Zahl> und #\<Zahl>** eingefügt. Dieser Filter zeigt alle Objekte an, die nach der vorherigen Momentaufnahme dem Heap hinzugefügt wurden.  
   
-- **Alle Objekte in Momentaufnahme #\<Zahl>**. Bei dieser Filtereinstellung werden keine Objekte im Heap herausgefiltert.  
+- **Alle Objekte in Momentaufnahme #\<Zahl>** . Bei dieser Filtereinstellung werden keine Objekte im Heap herausgefiltert.  
   
   Zum Anzeigen von Objektverweisen, die nicht dem aktuellen **Geltungsbereich**-Filter entsprechen, wählen Sie in der rechten oberen Ecke des Bereichs die Option **Nicht übereinstimmende Verweise anzeigen** in der Einstellungsliste ![Settings drop&#45;down list in memory analyzer](../profiling/media/js-mem-settings.png "JS_Mem_Settings") aus. Wenn Sie diese Einstellung aktivieren, werden nicht übereinstimmende Verweise mit grauem Text dargestellt.  
   
@@ -382,11 +382,11 @@ if (performance && performance.mark) {
   
 - Suchen Sie nach Objekten, die versehentlich im Arbeitsspeicher beibehalten werden, nachdem der Benutzer zu einer neuen Seite navigiert ist. Dies ist eine häufige Ursache von Arbeitsspeicherproblemen. Beispiel:  
   
-    - Die falsche Verwendung der Funktion [URL.CreateObjectUrl](https://msdn.microsoft.com/library/windows/apps/hh453196.aspx) kann dieses Problem verursachen.  
-  
-    - Einige Objekte stellen möglicherweise eine `dispose` -Methode und Verwendungsempfehlungen bereit. So sollten Sie zum Beispiel `dispose` für ein [WinJS.Binding.List](https://msdn.microsoft.com/library/windows/apps/Hh700774.aspx) aufrufen, wenn Sie die `createFiltered` -Methode der Liste aufrufen und dann von einer Seite weg navigieren.  
-  
-    - Sie müssen unter Umständen einen oder mehrere Eventlistener entfernen. Weitere Informationen finden Sie unter [View DOM event listeners](../debugger/view-dom-event-listeners.md).  
+  - Die falsche Verwendung der Funktion [URL.CreateObjectUrl](https://msdn.microsoft.com/library/windows/apps/hh453196.aspx) kann dieses Problem verursachen.  
+
+  - Einige Objekte stellen möglicherweise eine `dispose` -Methode und Verwendungsempfehlungen bereit. So sollten Sie zum Beispiel `dispose` für ein [WinJS.Binding.List](https://msdn.microsoft.com/library/windows/apps/Hh700774.aspx) aufrufen, wenn Sie die `createFiltered` -Methode der Liste aufrufen und dann von einer Seite weg navigieren.  
+
+  - Sie müssen unter Umständen einen oder mehrere Eventlistener entfernen. Weitere Informationen finden Sie unter [View DOM event listeners](../debugger/view-dom-event-listeners.md).  
   
 - Sehen Sie sich den letzten Teil [dieses Video](http://channel9.msdn.com/Events/Build/2013/3-316) von der Build 2013-Konferenz über die JavaScript-Speicheranalyse an.  
   
@@ -394,11 +394,11 @@ if (performance && performance.mark) {
   
 - Erwägen Sie, vorübergehend Code zu ändern, um Probleme zu isolieren. Auf diese Weise können Sie z. B. folgende Vorgänge durchführen:  
   
-    - Verwenden Sie die Befehle für die Speicheranalyse, `console.takeSnapshot` und `performance.mark`. (Siehe [Associate source code with memory usage data](#JSConsoleCommands).)  
-  
-         Sie können diese Befehle zum Isolieren von Problemen verwenden, die Sie nicht isolieren können, indem Sie manuell eine Heap-Momentaufnahme erstellen.  
-  
-    - Erstellen Sie ein Testobjekt, und verfolgen Sie es in den Ansichten der JavaScript-Speicheranalyse, z. B. in der Typenansicht. Beispielsweise können Sie einem anderen Objekt ein sehr großes Objekt anfügen, um festzustellen, ob für ein bestimmtes Objekt oder Element eine Garbage Collection durchgeführt wurde.  
-  
+  - Verwenden Sie die Befehle für die Speicheranalyse, `console.takeSnapshot` und `performance.mark`. (Siehe [Associate source code with memory usage data](#JSConsoleCommands).)  
+
+    Sie können diese Befehle zum Isolieren von Problemen verwenden, die Sie nicht isolieren können, indem Sie manuell eine Heap-Momentaufnahme erstellen.  
+
+  - Erstellen Sie ein Testobjekt, und verfolgen Sie es in den Ansichten der JavaScript-Speicheranalyse, z. B. in der Typenansicht. Beispielsweise können Sie einem anderen Objekt ein sehr großes Objekt anfügen, um festzustellen, ob für ein bestimmtes Objekt oder Element eine Garbage Collection durchgeführt wurde.  
+
 ## <a name="see-also"></a>Siehe auch  
  [Exemplarische Vorgehensweise: Suchen eines Speicherverlusts (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)

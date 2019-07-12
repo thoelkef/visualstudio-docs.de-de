@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d560cbff64a5134fa58ade4d562cb9fb073af48f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63401537"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64785875"
 ---
 # <a name="idiasymbolgethassetjump"></a>IDiaSymbol::get_hasSetJump
 Ruft ein Flag, das angibt, ob die Funktion eine Verwendung von enthält die [Setjmp](/cpp/c-runtime-library/reference/setjmp) Befehl (mit gekoppelten der [Longjmp](/cpp/c-runtime-library/reference/longjmp) Befehl bilden die C-Stil-Methode der Ausnahmebehandlung).

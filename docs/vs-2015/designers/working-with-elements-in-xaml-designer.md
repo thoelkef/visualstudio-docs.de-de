@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7596706fea9447e831d12084c8d390120a9163c7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 1ecb5981a8111f3fca013d3b5f115155ac7baf89
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65690031"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824844"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Arbeiten mit Elementen im XAML-Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ Sie können Ihrer App in XAML im Code oder unter Verwendung des XAML-Designers E
   
 - Führen Sie im XAML-Designer eine der folgenden Aktionen aus:  
   
-    - Doppelklicken Sie auf ein Element in der **Toolbox** (oder wählen Sie ein Element in der Toolbox aus, und drücken Sie die EINGABETASTE).  
-  
-    - Ziehen Sie ein Element aus der **Toolbox** auf die Zeichenfläche.  
-  
-    - Klicken Sie in der **Toolbox** auf eines der Zeichenwerkzeuge (z.B. [Ellipse](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) oder [Rechteck](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)), und zeichnen Sie dann ein Element im aktiven Bereich.  
+  - Doppelklicken Sie auf ein Element in der **Toolbox** (oder wählen Sie ein Element in der Toolbox aus, und drücken Sie die EINGABETASTE).  
+
+  - Ziehen Sie ein Element aus der **Toolbox** auf die Zeichenfläche.  
+
+  - Klicken Sie in der **Toolbox** auf eines der Zeichenwerkzeuge (z.B. [Ellipse](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) oder [Rechteck](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)), und zeichnen Sie dann ein Element im aktiven Bereich.  
   
 ## <a name="changing-the-layering-order-of-elements"></a>Die Ebenenreihenfolge von Elementen ändern  
  Gibt es zwei Elemente auf der Zeichenfläche im XAML-Designer, wird ein Element vor dem anderen in der Ebenenreihenfolge angezeigt. Am unteren Rand der Liste der Elemente im Dokumentgliederungsfenster ist das vorderste Element (außer wenn die **ZIndex**-Eigenschaft für ein Element festgelegt ist). Wenn Sie ein Element in eine Seite, ein Formular oder einen Layoutcontainer einfügen, wird das Element automatisch vor anderen Elementen im aktiven Containerelement platziert. Um die Reihenfolge von Elementen zu ändern, können Sie die **Reihenfolge**-Befehle verwenden oder die Elemente in der Objektstruktur im Dokumentgliederungsfenster verschieben.  

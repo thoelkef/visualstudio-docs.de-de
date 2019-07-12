@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d75dbc03d95b0460c0adc5c62c2a831ac7271e8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a07e198c6ff4e432f708ac1751e69bbef77a22c4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388615"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823772"
 ---
 # <a name="graphics-state"></a>Grafikzustand
 Im Statusfenster der Visual Studio-Grafikdiagnose sehen Sie den Grafikstatus, der zum Zeitpunkt des aktuellen Ereignisses aktiv ist, wie z. B. bei einem Zeichnen-Befehl.
@@ -36,11 +36,11 @@ Im Statusfenster der Visual Studio-Grafikdiagnose sehen Sie den Grafikstatus, de
 
 - Klicken Sie im Statusfenster in der oberen linken Ecke direkt unterhalb der Titelleiste auf die Schaltfläche, die dem gewünschten Statusansichtsstil entspricht.
 
-    - **API-Eingabestatusansicht anzeigen**
+  - **API-Eingabestatusansicht anzeigen**
 
-    - **Logische Statusansicht anzeigen**
+  - **Logische Statusansicht anzeigen**
 
-    - **Angeheftete Statusansicht anzeigen**
+  - **Angeheftete Statusansicht anzeigen**
 
 > [!IMPORTANT]
 > Sie müssen den Status in den Ansichten **API-Eingabestatus anzeigen** oder **Logischen Status anzeigen** anheften, damit er in der Ansicht **Angeheftete Statusansicht anzeigen** angezeigt wird.

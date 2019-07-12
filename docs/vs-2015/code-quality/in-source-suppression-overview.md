@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5bb3632e1ed7bf07e236322700ba8553b53a75cb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cb2b23dcc01d90bc4365c7d5673e6232229b8d3e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426600"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825993"
 ---
 # <a name="in-source-suppression-overview"></a>Übersicht über die Unterdrückung im Quellcode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
   
 ```  
   
- Ort:  
+ Erläuterungen:  
   
 - **Regel Kategorie** -die Kategorie, in dem die Regel definiert wird. Weitere Informationen zu Codeanalyseregeln, finden Sie unter [Codeanalyse für verwalteten Code (Warnungen)](../code-quality/code-analysis-for-managed-code-warnings.md).  
   
@@ -64,15 +64,15 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
   
 - **Bereich** -Ziel auf dem die Warnung unterdrückt wird. Wenn das Ziel nicht angegeben ist, wird es an das Ziel des Attributs festgelegt. Die folgenden: Bereiche werden unterstützt  
   
-    - Modul  
-  
-    - Namespace  
-  
-    - Ressource  
-  
-    - Typ  
-  
-    - Member  
+  - Modul  
+
+  - Namespace  
+
+  - Ressource  
+
+  - Typ  
+
+  - Member  
   
 - **Ziel** – ein Bezeichner, der verwendet wird, an das Ziel, auf dem die Warnung unterdrückt wird. Es muss einen vollqualifizierten Elementnamen enthalten.  
   
