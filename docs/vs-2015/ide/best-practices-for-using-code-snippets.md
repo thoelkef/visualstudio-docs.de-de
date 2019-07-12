@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 48e37262c376d2c92e741152a0b3a5866e2718ad
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 75c1e08125e67dc5a76d2e62d22f010abd22f418
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MTE95
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685658"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823432"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Empfohlene Vorgehensweisen für die Verwendung von Codeausschnitten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,11 +60,11 @@ Der Code in einem Codeausschnitt zeigt nur die grundlegende Methode, etwas zu tu
   
 - Öffnen Sie alle heruntergeladenen Ausschnittdateien im Editor oder XML-Editor von Visual Studio, und überprüfen Sie sie vor der Installation sorgfältig. Achten Sie dabei auf Folgendes:  
   
-    - Der Code eines Ausschnitts kann bei der Ausführung das System beschädigen. Lesen Sie den Quellcode sorgfältig, bevor Sie ihn ausführen.  
-  
-    - Der Hilfe-URL-Block der Ausschnittdatei kann URLs enthalten, die eine bösartige Skriptdatei ausführen oder eine anstößige Website anzeigen.  
-  
-    - Der Codeausschnitt kann Verweise enthalten, die automatisch dem Projekt hinzugefügt werden und von überall auf Ihr System geladen werden können. Diese Verweise wurden möglicherweise von der Stelle auf den Computer heruntergeladen, von der Sie den Ausschnitt heruntergeladen haben. Der Ausschnitt kann dann eine Methode im Verweis aufrufen, die bösartigen Code ausführt. Um sich gegen einen solchen Angriff zu schützen, sollten Sie die Import- und Verweisblöcke der Ausschnittdatei überprüfen.  
+  - Der Code eines Ausschnitts kann bei der Ausführung das System beschädigen. Lesen Sie den Quellcode sorgfältig, bevor Sie ihn ausführen.  
+
+  - Der Hilfe-URL-Block der Ausschnittdatei kann URLs enthalten, die eine bösartige Skriptdatei ausführen oder eine anstößige Website anzeigen.  
+
+  - Der Codeausschnitt kann Verweise enthalten, die automatisch dem Projekt hinzugefügt werden und von überall auf Ihr System geladen werden können. Diese Verweise wurden möglicherweise von der Stelle auf den Computer heruntergeladen, von der Sie den Ausschnitt heruntergeladen haben. Der Ausschnitt kann dann eine Methode im Verweis aufrufen, die bösartigen Code ausführt. Um sich gegen einen solchen Angriff zu schützen, sollten Sie die Import- und Verweisblöcke der Ausschnittdatei überprüfen.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Visual Basic IntelliSense Code Snippets (Visual Basic IntelliSense-Codeausschnitte)](https://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   

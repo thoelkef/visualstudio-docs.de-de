@@ -14,12 +14,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7527cb029374ae8246c827b057800b751c377d12
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 098aa9499dd4c1073377ed6aa5e8fa2a6fb37ca8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327836"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823870"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Testleitfaden für Quellcodeverwaltungs-Plug-Ins
 Dieser Abschnitt enthält Anweisungen zum Testen Ihrer plug-in mit quellcodeverwaltung [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Ein umfassender Überblick über die am häufigsten verwendeten Tests Bereiche sowie einige der schwierigeren Bereiche, die möglicherweise problematische wird bereitgestellt. In dieser Übersicht ist nicht vorgesehen, um eine vollständige Liste der Testfälle.
@@ -53,43 +53,43 @@ Dieser Abschnitt enthält Anweisungen zum Testen Ihrer plug-in mit quellcodeverw
 
 - [Testbereich 1: Hinzufügen/Öffnen über die Quellcodeverwaltung](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
 
-    - Groß-/Kleinschreibung 1a: Projektmappe zur Quellcodeverwaltung hinzufügen
+  - Groß-/Kleinschreibung 1a: Projektmappe zur Quellcodeverwaltung hinzufügen
 
-    - Fall 1 b: Die Projektmappe aus der Quellcodeverwaltung öffnen
+  - Fall 1 b: Die Projektmappe aus der Quellcodeverwaltung öffnen
 
-    - Fall 1c: Fügen Sie die Lösung aus der Quellcodeverwaltung hinzu
+  - Fall 1c: Fügen Sie die Lösung aus der Quellcodeverwaltung hinzu
 
 - [Testbereich 2: Abrufen aus der Quellcodeverwaltung](../../extensibility/internals/test-area-2-get-from-source-control.md)
 
 - [Testbereich 3: Auschecken/Auschecken rückgängig machen](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
 
-    - Fall 3: Auschecken / Auschecken rückgängig machen
+  - Fall 3: Auschecken / Auschecken rückgängig machen
 
-    - Groß-/Kleinschreibung 3a: Auschecken
+  - Groß-/Kleinschreibung 3a: Auschecken
 
-    - Fall 3 b: Offline-Auscheckvorgang
+  - Fall 3 b: Offline-Auscheckvorgang
 
-    - Fall 3c: / Queryeditquerysave (QEQS.)
+  - Fall 3c: / Queryeditquerysave (QEQS.)
 
-    - Case-3d: Automatische Auschecken
+  - Case-3d: Automatische Auschecken
 
-    - Groß-/Kleinschreibung 3e: Rückgängig: Auschecken
+  - Groß-/Kleinschreibung 3e: Rückgängig: Auschecken
 
 - [Testbereich 4: Einchecken](../../extensibility/internals/test-area-4-check-in.md)
 
-    - Groß-/Kleinschreibung 4a: Geänderte Elemente
+  - Groß-/Kleinschreibung 4a: Geänderte Elemente
 
-    - Groß-/Kleinschreibung 4 b: Hinzufügen von Dateien
+  - Groß-/Kleinschreibung 4 b: Hinzufügen von Dateien
 
-    - Fall 4c: Hinzufügen von Projekten
+  - Fall 4c: Hinzufügen von Projekten
 
 - [Testbereich 5: Ändern der Quellcodeverwaltung](../../extensibility/internals/test-area-5-change-source-control.md)
 
-    - Groß-/Kleinschreibung 5a: Binden
+  - Groß-/Kleinschreibung 5a: Binden
 
-    - Case 5b: Aufheben der Bindung
+  - Case 5b: Aufheben der Bindung
 
-    - Fall 5c: erneut binden
+  - Fall 5c: erneut binden
 
 - [Testbereich 6: Löschen](../../extensibility/internals/test-area-6-delete.md)
 
@@ -97,9 +97,9 @@ Dieser Abschnitt enthält Anweisungen zum Testen Ihrer plug-in mit quellcodeverw
 
 - [Testbereich 8: Plug-In-Wechsel](../../extensibility/internals/test-area-8-plug-in-switching.md)
 
-    - Groß-/Kleinschreibung 8a: Automatische Änderung
+  - Groß-/Kleinschreibung 8a: Automatische Änderung
 
-    - Groß-/Kleinschreibung 8 b: Informationsreiche lösungsbasierte ändern
+  - Groß-/Kleinschreibung 8 b: Informationsreiche lösungsbasierte ändern
 
 ## <a name="see-also"></a>Siehe auch
 - [Quellcodeverwaltungs-Plug-Ins](../../extensibility/source-control-plug-ins.md)

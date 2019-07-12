@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4922b791ea3ad7ab58c231342e11b5c175d4895
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 795cc62ca88f7ede87e978d910d397e0ce6e2ad7
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430345"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825987"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Exemplarische Vorgehensweise: Erweitern eines SharePoint-Projektelementtyps
   Sie können die **Business Data Connectivity-Modell** Projektelement ein Modell für den Business Data Connectivity (BDC)-Dienst in SharePoint zu erstellen. Wenn Sie mit diesem Projektelement ein Modell erstellen, werden die Daten Benutzern im Modell standardmäßig nicht angezeigt. Sie müssen zusätlzlich eine externe Liste in SharePoint erstellen, damit Benutzer die Daten einsehen können.
@@ -28,9 +28,9 @@ ms.locfileid: "63430345"
 
 - Erstellen einer Visual Studio-Erweiterung, die zwei Hauptaufgaben ausführt:
 
-    - Es wird eine externe Liste generiert, die die Daten in einem BDC-Modell anzeigt. Die Erweiterung verwendet das Objektmodell für die SharePoint-Projektsystem zum Generieren einer *"Elements.xml"* Datei, in der Liste definiert. Außerdem wird die Datei zum Projekt hinzugefügt, damit sie zusammen mit dem BDC-Modell bereitgestellt werden kann.
+  - Es wird eine externe Liste generiert, die die Daten in einem BDC-Modell anzeigt. Die Erweiterung verwendet das Objektmodell für die SharePoint-Projektsystem zum Generieren einer *"Elements.xml"* Datei, in der Liste definiert. Außerdem wird die Datei zum Projekt hinzugefügt, damit sie zusammen mit dem BDC-Modell bereitgestellt werden kann.
 
-    - Es fügt ein Kontextmenüelements zu den **Business Data Connectivity-Modells** Projektelemente in **Projektmappen-Explorer**. Entwickler können auf dieses Menüelement klicken, um eine externe Liste für das BDC-Modell zu generieren.
+  - Es fügt ein Kontextmenüelements zu den **Business Data Connectivity-Modells** Projektelemente in **Projektmappen-Explorer**. Entwickler können auf dieses Menüelement klicken, um eine externe Liste für das BDC-Modell zu generieren.
 
 - Erstellen eines Visual Studio-Erweiterungspakets (VSIX) zum Bereitstellen der Erweiterungsassembly.
 
@@ -75,7 +75,7 @@ ms.locfileid: "63430345"
 
 5. Wählen Sie die **VSIX-Projekt** Vorlage.
 
-6. In der **Namen** geben **"GenerateExternalDataLists"**, und wählen Sie dann die **OK** Schaltfläche.
+6. In der **Namen** geben **"GenerateExternalDataLists"** , und wählen Sie dann die **OK** Schaltfläche.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt der **"GenerateExternalDataLists"** Projekt **Projektmappen-Explorer**.
 
@@ -93,7 +93,7 @@ ms.locfileid: "63430345"
 
 4. Wählen Sie in der Liste der Projektvorlagen das Projekt **Klassenbibliothek**.
 
-5. In der **Namen** geben **"BdcProjectItemExtension"**, und wählen Sie dann die **OK** Schaltfläche.
+5. In der **Namen** geben **"BdcProjectItemExtension"** , und wählen Sie dann die **OK** Schaltfläche.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fügt der **"BdcProjectItemExtension"** -Projekt zur Projektmappe und öffnet die Class1-Codedatei.
 
@@ -180,7 +180,7 @@ ms.locfileid: "63430345"
 
 7. In der **Quelle** wählen **ein Projekt in der aktuellen Projektmappe**.
 
-8. In der **Projekt** wählen **"BdcProjectItemExtension"**, und wählen Sie dann die **OK** Schaltfläche.
+8. In der **Projekt** wählen **"BdcProjectItemExtension"** , und wählen Sie dann die **OK** Schaltfläche.
 
 9. Wählen Sie auf der Menüleiste **Erstellen** > **Projektmappe erstellen** aus.
 
@@ -225,7 +225,7 @@ ms.locfileid: "63430345"
 
 9. Wählen Sie die **2010** Knoten, und wählen Sie dann die **Business Data Connectivity-Modell (nur Farmlösung)** Vorlage.
 
-10. In der **Namen** geben **"TestBDCModel"**, und wählen Sie dann die **hinzufügen** Schaltfläche.
+10. In der **Namen** geben **"TestBDCModel"** , und wählen Sie dann die **hinzufügen** Schaltfläche.
 
 11. Überprüfen Sie, ob die Codeausführung in der anderen Instanz von Visual Studio an dem Haltepunkt unterbrochen wird, den Sie in der `Initialize`-Methode der Codedatei "ProjectItemExtension" festgelegt haben.
 

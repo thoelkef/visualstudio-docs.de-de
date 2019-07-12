@@ -14,27 +14,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aa310539b3a36d78137f336b8fea8f40a5d459ca
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 10affe50b3410fa013205313f4087aaabb7c4769
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430415"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825801"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Exemplarische Vorgehensweise: Erstellen einer SharePoint-projekterweiterung
   In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie eine Erweiterung für SharePoint-Projekte erstellt werden. Sie können eine projekterweiterung verwenden, zum Reagieren auf Ereignisse auf Projektebene, z. B. wenn ein Projekt hinzugefügt, gelöscht oder umbenannt wird. Sie können auch benutzerdefinierte Eigenschaften hinzufügen oder reagieren, wenn ein Eigenschaftswert ändert. Im Gegensatz zu projektelementerweiterungen darf nicht projekterweiterungen einen bestimmten Typ von SharePoint-Projekt zugeordnet sein. Bei der Erstellung einer projekterweiterung lädt die Erweiterung wird in der jede Art von SharePoint-Projekt geöffnet [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
- In dieser exemplarischen Vorgehensweise erstellen Sie eine benutzerdefinierte boolesche Eigenschaft, die erstellt werden, einem SharePoint-Projekt hinzugefügt wird [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Bei Festlegung auf **"true"**, fügt die neue Eigenschaft oder zugeordnet wird, handelt es sich bei einem Bildordner für die Ressource zu Ihrem Projekt. Bei Festlegung auf **"false"**, Bilderordner wird entfernt, sofern vorhanden. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen und entfernen zugeordneter Ordner](../sharepoint/how-to-add-and-remove-mapped-folders.md).
+ In dieser exemplarischen Vorgehensweise erstellen Sie eine benutzerdefinierte boolesche Eigenschaft, die erstellt werden, einem SharePoint-Projekt hinzugefügt wird [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Bei Festlegung auf **"true"** , fügt die neue Eigenschaft oder zugeordnet wird, handelt es sich bei einem Bildordner für die Ressource zu Ihrem Projekt. Bei Festlegung auf **"false"** , Bilderordner wird entfernt, sofern vorhanden. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen und entfernen zugeordneter Ordner](../sharepoint/how-to-add-and-remove-mapped-folders.md).
 
  Diese exemplarische Vorgehensweise enthält die folgenden Aufgaben:
 
 - Erstellen einer [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Erweiterung für SharePoint-Projekte, der Folgendes ausführt:
 
-    - Das Fenster "Eigenschaften" wird eine benutzerdefinierte Eigenschaft hinzugefügt. Die Eigenschaft gilt für alle SharePoint-Projekt.
+  - Das Fenster "Eigenschaften" wird eine benutzerdefinierte Eigenschaft hinzugefügt. Die Eigenschaft gilt für alle SharePoint-Projekt.
 
-    - Verwendet das Objektmodell der SharePoint-Projekt ein Projekt einen zugeordneten Ordner hinzu.
+  - Verwendet das Objektmodell der SharePoint-Projekt ein Projekt einen zugeordneten Ordner hinzu.
 
-    - Verwendet die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Automatisierungsobjektmodell (DTE) aus dem Projekt einen zugeordneten Ordner zu löschen.
+  - Verwendet die [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Automatisierungsobjektmodell (DTE) aus dem Projekt einen zugeordneten Ordner zu löschen.
 
 - Erstellen einer [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] -Erweiterungspakets (VSIX) zum Bereitstellen der Assembly für die Project-Eigenschaft.
 
@@ -102,7 +102,7 @@ ms.locfileid: "63430415"
 
 5. In **Projektmappen-Explorer**unter der **Verweise** Ordner für die **ProjectExtension** Projekts **EnvDTE**.
 
-6. In der **Eigenschaften** Ändern der **Embed Interop Types** Eigenschaft **"false"**.
+6. In der **Eigenschaften** Ändern der **Embed Interop Types** Eigenschaft **"false"** .
 
 ## <a name="define-the-new-sharepoint-project-property"></a>Definieren Sie die neue SharePoint-Projekt-Eigenschaft
  Erstellen Sie eine Klasse, die die projekterweiterung und das Verhalten der neuen Projekteigenschaft definiert. Definieren Sie die neue projekterweiterung, die Klasse implementiert die <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> Schnittstelle. Implementieren Sie diese Schnittstelle, wenn Sie eine Erweiterung für eine SharePoint-Projekt definieren möchten. Fügen Sie außerdem die <xref:System.ComponentModel.Composition.ExportAttribute> der-Klasse. Mit diesem Attribut können [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ermitteln und Laden Ihre <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> Implementierung. Übergeben Sie die <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> Typ, der Konstruktor des Attributs.
@@ -188,13 +188,13 @@ ms.locfileid: "63430415"
 
 4. In **Projektmappen-Explorer**, wählen Sie die **ModuleTest** Projektknoten.
 
-     Eine neue benutzerdefinierte Eigenschaft **Zuordnung für den Ordner "Images"** wird in der **Eigenschaften** Fenster hat den Standardwert des **"false"**.
+     Eine neue benutzerdefinierte Eigenschaft **Zuordnung für den Ordner "Images"** wird in der **Eigenschaften** Fenster hat den Standardwert des **"false"** .
 
-5. Ändern Sie den Wert dieser Eigenschaft, um **"true"**.
+5. Ändern Sie den Wert dieser Eigenschaft, um **"true"** .
 
      Das SharePoint-Projekt wird ein Ressourcenordner hinzugefügt.
 
-6. Ändern Sie der Wert dieser Eigenschaft zurück, in **"false"**.
+6. Ändern Sie der Wert dieser Eigenschaft zurück, in **"false"** .
 
      Bei Auswahl der **Ja** Schaltfläche der **löschen Sie den Ordner Bilder?** (Dialogfeld), die Bilder Ressourcenordner aus dem SharePoint-Projekt gelöscht.
 

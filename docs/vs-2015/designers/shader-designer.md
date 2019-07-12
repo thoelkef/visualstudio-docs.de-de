@@ -12,12 +12,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 00b3a24e2e10672a2f25fdf42a3993f75c378c86
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2eb167a323371c3503429f56bc1537a95f3f86b7
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432585"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67822075"
 ---
 # <a name="shader-designer"></a>Shader-Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,17 +93,17 @@ In diesem Dokument wird beschrieben, wie mit dem [!INCLUDE[vsprvs](../includes/v
   
 - Gehen Sie dabei folgendermaßen vor:  
   
-    - Um einen Knoten zum Diagramm hinzuzufügen, wählen Sie diesen in der **Toolbox** aus, und verschieben Sie ihn anschließend auf die Entwurfsoberfläche.  
-  
-    - Um einen Knoten aus dem Diagramm zu entfernen, wählen Sie ihn aus, und drücken Sie dann die ENTF-TASTE.  
-  
-    - Um einen Knoten neu anzuordnen, wählen Sie diesen aus, und verschieben Sie ihn dann an einen neuen Speicherort.  
-  
-    - Um zwei Knoten zu verbinden, verschieben Sie ein Ausgabeterminal eines Knotens in ein Eingabeterminal des anderen Knotens. Es können nur Terminals mit kompatiblen Typen verbunden werden. Eine Linie zwischen den Terminals zeigt die Verbindung.  
-  
-    - Um eine Verbindung zu entfernen, wählen Sie im Kontextmenü eines der verbundenen Terminals **Zeilen umbrechen** aus.  
-  
-    - Um die Eigenschaften eines Knotens zu konfigurieren, wählen Sie den Knoten aus, und geben Sie dann im Fenster **Eigenschaften** neue Werte für die Eigenschaften an.  
+  - Um einen Knoten zum Diagramm hinzuzufügen, wählen Sie diesen in der **Toolbox** aus, und verschieben Sie ihn anschließend auf die Entwurfsoberfläche.  
+
+  - Um einen Knoten aus dem Diagramm zu entfernen, wählen Sie ihn aus, und drücken Sie dann die ENTF-TASTE.  
+
+  - Um einen Knoten neu anzuordnen, wählen Sie diesen aus, und verschieben Sie ihn dann an einen neuen Speicherort.  
+
+  - Um zwei Knoten zu verbinden, verschieben Sie ein Ausgabeterminal eines Knotens in ein Eingabeterminal des anderen Knotens. Es können nur Terminals mit kompatiblen Typen verbunden werden. Eine Linie zwischen den Terminals zeigt die Verbindung.  
+
+  - Um eine Verbindung zu entfernen, wählen Sie im Kontextmenü eines der verbundenen Terminals **Zeilen umbrechen** aus.  
+
+  - Um die Eigenschaften eines Knotens zu konfigurieren, wählen Sie den Knoten aus, und geben Sie dann im Fenster **Eigenschaften** neue Werte für die Eigenschaften an.  
   
 ### <a name="previewing-shaders"></a>Anzeigen der Vorschau von Shadern  
  Damit Sie verstehen, wie ein Shader in Ihrer App angezeigt wird, können Sie konfigurieren, wie der Effekt in der Vorschau angezeigt wird. Um Ihre App anzupassen, können Sie eine aus mehreren Formen zum Rendern auswählen, Texturen und andere Materialparameter konfigurieren, die Animation von zeitbasierten Effekten aktivieren und die Vorschau aus verschiedenen Perspektiven untersuchen.  

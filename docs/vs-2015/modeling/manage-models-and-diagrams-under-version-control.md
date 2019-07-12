@@ -11,12 +11,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 55142e000a22b6e45543c6fc14594a12c93f4f92
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 76e8c92707279979cec6406bd1bcd5ad44a1f315
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65680290"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825784"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>Verwalten von Modellen und Diagrammen unter Versionskontrolle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ Verwalten Sie unterschiedliche Versionen von Modellierungsprojekten und -diagram
   
 - Jedes Diagramm wird in zwei Dateien gespeichert. Beispiel für ein Klassendiagramm:  
   
-    - **DiagramName.classdiagram** – Wenn diese Datei gelöscht wird oder beschädigt ist, geht das Diagramm verloren. Die im Diagramm angezeigten Klassen und Zuordnungen bleiben jedoch im Modell erhalten und werden im UML-Modell-Explorer angezeigt.  
-  
-    - **DiagramName.classdiagram.layout** – Wenn diese Datei gelöscht wird, werden die Formen weiterhin im Diagramm angezeigt, aber ihre Größen und Positionen gehen verloren. Jede Layoutdatei ist einer Diagrammdatei untergeordnet. Um diese anzuzeigen, klicken Sie im Projektmappen-Explorer neben der Diagrammdatei auf [+].  
+  - **DiagramName.classdiagram** – Wenn diese Datei gelöscht wird oder beschädigt ist, geht das Diagramm verloren. Die im Diagramm angezeigten Klassen und Zuordnungen bleiben jedoch im Modell erhalten und werden im UML-Modell-Explorer angezeigt.  
+
+  - **DiagramName.classdiagram.layout** – Wenn diese Datei gelöscht wird, werden die Formen weiterhin im Diagramm angezeigt, aber ihre Größen und Positionen gehen verloren. Jede Layoutdatei ist einer Diagrammdatei untergeordnet. Um diese anzuzeigen, klicken Sie im Projektmappen-Explorer neben der Diagrammdatei auf [+].  
   
 > [!NOTE]
 > Es ist wichtig, die Konsistenz zwischen den Dateien beizubehalten. Wenn Sie z. B. die Quellcodeverwaltung verwenden, um Änderungen in einer UML-Datei zurückzusetzen, sollten Sie die entsprechenden Änderungen in den *DIAGRAM- und LAYOUT-Dateien gleichzeitig zurücksetzen. Elemente im dargestellt ein. \*Diagrammdatei verloren, wenn sie nicht auch in einem UML-Datei dargestellt werden.  
@@ -55,9 +55,9 @@ Verwalten Sie unterschiedliche Versionen von Modellierungsprojekten und -diagram
   
 - So stellen Sie sicher, dass Sie nur das Paket ändern, an dem Sie arbeiten:  
   
-    - Legen Sie die **LinkedPackage** -Eigenschaft einer UML-Klasse, einer UML-Komponente oder eines UML-Anwendungsfalldiagramms fest.  
-  
-    - Ziehen Sie im UML-Modell-Explorer eine Aktivität oder Interaktion in ein Paket, sobald Sie es erstellt haben. Dieses Element wird im UML-Modell-Explorer angezeigt, wenn Sie im Aktivitäts- oder Sequenzdiagramm den ersten Knoten erstellen.  
+  - Legen Sie die **LinkedPackage** -Eigenschaft einer UML-Klasse, einer UML-Komponente oder eines UML-Anwendungsfalldiagramms fest.  
+
+  - Ziehen Sie im UML-Modell-Explorer eine Aktivität oder Interaktion in ein Paket, sobald Sie es erstellt haben. Dieses Element wird im UML-Modell-Explorer angezeigt, wenn Sie im Aktivitäts- oder Sequenzdiagramm den ersten Knoten erstellen.  
   
 - Benennen Sie als Hilfe beim Nachverfolgen der Pakete die Paketdateien um, um die tatsächlichen Paketnamen widerzuspiegeln.  
   
