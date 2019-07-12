@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d4f475a186c3873937e6c8c38d092a944585d4a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: dfc7b25a54bd17ecf759a25d603997380076c5d1
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315911"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823419"
 ---
 # <a name="required-port-supplier-interfaces"></a>Erforderliche Port Lieferanten-Schnittstellen
 Muss ein portanbieters implementieren die [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) Schnittstelle.[ IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)
@@ -25,19 +25,19 @@ Muss ein portanbieters implementieren die [IDebugPortSupplier2](../../extensibil
 
 - [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)
 
-     Beschreibt den Port ein, und listet alle Prozesse, die auf den Port ausgeführt wird.
+  Beschreibt den Port ein, und listet alle Prozesse, die auf den Port ausgeführt wird.
 
 - [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md)
 
-     Bietet für starten und Beenden von Prozessen auf dem Port.
+  Bietet für starten und Beenden von Prozessen auf dem Port.
 
 - [IDebugPortNotify2](../../extensibility/debugger/reference/idebugportnotify2.md)
 
-     Stellt einen Mechanismus für Programme, die im Kontext des Ports, eine Benachrichtigung der Programm-Knoten-Erstellung und Zerstörung ausgeführt. Weitere Informationen finden Sie unter [Programmieren Knoten](../../extensibility/debugger/program-nodes.md).
+  Stellt einen Mechanismus für Programme, die im Kontext des Ports, eine Benachrichtigung der Programm-Knoten-Erstellung und Zerstörung ausgeführt. Weitere Informationen finden Sie unter [Programmieren Knoten](../../extensibility/debugger/program-nodes.md).
 
 - `IConnectionPointContainer`
 
-     Stellt einen Verbindungspunkt zum [IDebugPortEvents2](../../extensibility/debugger/reference/idebugportevents2.md).
+  Stellt einen Verbindungspunkt zum [IDebugPortEvents2](../../extensibility/debugger/reference/idebugportevents2.md).
 
 ## <a name="port-supplier-operation"></a>Lieferanten portvorgang
  Die [IDebugPortEvents2](../../extensibility/debugger/reference/idebugportevents2.md) Senke empfängt Benachrichtigungen, wenn der Prozess und Programme erstellt und an einem Port zerstört werden. Ein Port ist erforderlich, um das Senden von [IDebugProcessCreateEvent2](../../extensibility/debugger/reference/idebugprocesscreateevent2.md) Wenn ein Prozess erstellt wird und [IDebugProcessDestroyEvent2](../../extensibility/debugger/reference/idebugprocessdestroyevent2.md) Wenn ein Prozess auf dem Port zerstört wird. Ein Port ist auch erforderlich, zum Senden von [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) Wenn ein Programm erstellt wird und [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) Wenn ein Programm in einem Prozess ausgeführt wird, auf dem Port zerstört wird.
@@ -48,37 +48,37 @@ Muss ein portanbieters implementieren die [IDebugPortSupplier2](../../extensibil
 
 - [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)
 
-     Beschreibt den physischen Prozess. Mindestens die folgenden Methoden implementiert werden müssen:
+  Beschreibt den physischen Prozess. Mindestens die folgenden Methoden implementiert werden müssen:
 
-    - [EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)
+  - [EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)
 
-    - [GetName](../../extensibility/debugger/reference/idebugprocess2-getname.md)
+  - [GetName](../../extensibility/debugger/reference/idebugprocess2-getname.md)
 
-    - [GetServer](../../extensibility/debugger/reference/idebugprocess2-getserver.md)
+  - [GetServer](../../extensibility/debugger/reference/idebugprocess2-getserver.md)
 
-    - [GetPhysicalProcessId](../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)
+  - [GetPhysicalProcessId](../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)
 
-    - [GetProcessId](../../extensibility/debugger/reference/idebugprocess2-getprocessid.md)
+  - [GetProcessId](../../extensibility/debugger/reference/idebugprocess2-getprocessid.md)
 
-    - [GetAttachedSessionName](../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)
+  - [GetAttachedSessionName](../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)
 
 - [IDebugProcessEx2](../../extensibility/debugger/reference/idebugprocessex2.md)
 
-     Bietet eine Möglichkeit, das SDM Anfügen und trennen selbst von einem Prozess an.
+  Bietet eine Möglichkeit, das SDM Anfügen und trennen selbst von einem Prozess an.
 
 - [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)
 
-     Beschreibt die logische Anwendung an. Mindestens die folgenden Methoden implementiert werden müssen:
+  Beschreibt die logische Anwendung an. Mindestens die folgenden Methoden implementiert werden müssen:
 
-    - [GetName](../../extensibility/debugger/reference/idebugprogram2-getname.md)
+  - [GetName](../../extensibility/debugger/reference/idebugprogram2-getname.md)
 
-    - [GetProcess](../../extensibility/debugger/reference/idebugprogram2-getprocess.md)
+  - [GetProcess](../../extensibility/debugger/reference/idebugprogram2-getprocess.md)
 
-    - [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)
+  - [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)
 
 - [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md)
 
-     Bietet eine Möglichkeit, das SDM zum Anfügen an diesem Programm.
+  Bietet eine Möglichkeit, das SDM zum Anfügen an diesem Programm.
 
 ## <a name="see-also"></a>Siehe auch
 - [Implementieren eines portanbieters](../../extensibility/debugger/implementing-a-port-supplier.md)

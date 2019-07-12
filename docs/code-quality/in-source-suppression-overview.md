@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cd61304e150da63d2d461ef364e7039789c71fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 39fd588a51771aae79d22d2d7f0a02a648184c05
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825819"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821557"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Unterdrücken von codeanalysewarnungen
 
@@ -67,17 +67,17 @@ Die Eigenschaften des Attributs gehören:
 
 - **Bereich** -Ziel auf dem die Warnung unterdrückt wird. Wenn das Ziel nicht angegeben ist, wird es an das Ziel des Attributs festgelegt. Unterstützt [Bereiche](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope) umfassen Folgendes:
 
-   - `module`
+  - `module`
 
-   - `resource`
+  - `resource`
 
-   - `type`
+  - `type`
 
-   - `member`
+  - `member`
 
-   - `namespace` : In diesem Bereich unterdrückt Warnungen für den Namespace selbst. Unterdrückt nicht die Warnungen für Typen im Namespace.
+  - `namespace` : In diesem Bereich unterdrückt Warnungen für den Namespace selbst. Unterdrückt nicht die Warnungen für Typen im Namespace.
 
-   - `namespaceanddescendants` -(Neu in Visual Studio-2019) unterdrückt dieses Bereichs Warnungen in einem Namespace und alle seine untergeordneten Symbole. Die `namespaceanddescendants` Wert gilt nur für Roslyn-Analysetools und wird ignoriert, binär-, FxCop-basierten statischen Analyse.
+  - `namespaceanddescendants` -(Neu in Visual Studio-2019) unterdrückt dieses Bereichs Warnungen in einem Namespace und alle seine untergeordneten Symbole. Die `namespaceanddescendants` Wert gilt nur für Roslyn-Analysetools und wird ignoriert, binär-, FxCop-basierten statischen Analyse.
 
 - **Ziel** – ein Bezeichner, der verwendet wird, an das Ziel, auf dem die Warnung unterdrückt wird. Es muss eine vollständig qualifizierte Elementnamen enthalten.
 
@@ -85,11 +85,11 @@ Die Eigenschaften des Attributs gehören:
 
 Warnungen der Codeanalyse unterdrückt werden, auf der Ebene, der die <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> Attribut angewendet wird. Beispielsweise kann das Attribut auf die Assembly, Modul, Typ, Member oder Parameter-Ebene angewendet werden. Das Zweck dieses werden eng gekoppelt die Unterdrückungsinformationen aus, um den Code, in dem die Verletzung auftritt.
 
-Die allgemeine Form der Unterdrückung umfasst die Regelkategorie und eine Regel-ID, die eine optionale lesbare Darstellung der Regelname enthält. Zum Beispiel:
+Die allgemeine Form der Unterdrückung umfasst die Regelkategorie und eine Regel-ID, die eine optionale lesbare Darstellung der Regelname enthält. Beispiel:
 
 `[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`
 
-Wenn strenge Leistungsgründen minimieren die Unterdrückung im Quellcode-Metadaten sind, kann der Name der ausgelassen werden. Die Regelkategorie und die Regel-ID bilden zusammen einen ausreichend eindeutigen Regelbezeichner. Zum Beispiel:
+Wenn strenge Leistungsgründen minimieren die Unterdrückung im Quellcode-Metadaten sind, kann der Name der ausgelassen werden. Die Regelkategorie und die Regel-ID bilden zusammen einen ausreichend eindeutigen Regelbezeichner. Beispiel:
 
 `[SuppressMessage("Microsoft.Design", "CA1039")]`
 

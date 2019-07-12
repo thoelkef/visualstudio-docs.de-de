@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7132fae3623e1ad10fb35d2b903935cdbffee12d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: d4b5ad6ca824e6c7091c6c508b51c2d51501b2fd
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676697"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821517"
 ---
 # <a name="use-roslyn-analyzers"></a>Verwenden von Roslyn-Analysetools
 
@@ -67,8 +67,8 @@ Sie können den Schweregrad der Analyzer-Regeln konfigurieren oder *Diagnose*, w
 |Fehler|Verletzungen angezeigt werden, als *Fehler* in die **Fehlerliste** in Befehlszeile Buildausgabe und dazu führen, dass Builds fehlschlagen.|Problematische Code ist mit einem roten Wellenlinie, und von einem kleinen roten Feld in der Bildlaufleiste markierte unterstrichen.|
 |Warnung|Verletzungen angezeigt werden, als *Warnungen* in die **Fehlerliste** und in der Befehlszeile Buildausgabe, verursachen jedoch keine Builds fehlschlagen.|Problematische Code ist mit einem grünen durch ein kleines grünes Feld auf der Schiebeleiste markiert und Wellenlinien unterstrichen.|
 |Info|Verletzungen angezeigt werden, als *Nachrichten* in die **Fehlerliste**, und nicht in Build per Befehlszeile Ausgabe.|Problematische Code ist mit einem grau markiert, indem eine kleine graue Feld in der Bildlaufleiste und Wellenlinien unterstrichen.|
-|Hidden|Nicht sichtbare für Benutzer.|Nicht sichtbare für Benutzer. Die Diagnose wird jedoch an die IDE-Diagnose-Engine gemeldet.|
-|Keiner|Unterdrückt vollständig.|Unterdrückt vollständig.|
+|Ausgeblendet|Nicht sichtbare für Benutzer.|Nicht sichtbare für Benutzer. Die Diagnose wird jedoch an die IDE-Diagnose-Engine gemeldet.|
+|None|Unterdrückt vollständig.|Unterdrückt vollständig.|
 
 Darüber hinaus, Sie können "Zurücksetzen" des Schweregrads einer Regel durch Festlegung auf **Standard**. Jede Diagnose weist einen standardschweregrad, die in angezeigt werden die **Eigenschaften** Fenster.
 
@@ -110,40 +110,40 @@ Es gibt mehrere Möglichkeiten, um Verletzungen zu unterdrücken:
 
 - Von der **analysieren** Menü
 
-   Wählen Sie **analysieren** > **Codeanalyse ausführen und aktive Probleme unterdrücken** in der Menüleiste, um alle aktuellen Verstöße zu unterdrücken. Dies wird manchmal als "Baselining" bezeichnet.
+  Wählen Sie **analysieren** > **Codeanalyse ausführen und aktive Probleme unterdrücken** in der Menüleiste, um alle aktuellen Verstöße zu unterdrücken. Dies wird manchmal als "Baselining" bezeichnet.
 
 - Von **Projektmappen-Explorer**
 
-   Um einen Verstoß in zu unterdrücken, **Projektmappen-Explorer**, legen Sie den Schweregrad der Regel auf **keine**.
+  Um einen Verstoß in zu unterdrücken, **Projektmappen-Explorer**, legen Sie den Schweregrad der Regel auf **keine**.
 
 - Von der **Regelsatz-Editor**
 
-   Um einen Verstoß aus dem Regelsatz-Editor zu unterdrücken, deaktivieren Sie das Kontrollkästchen neben seinem Namen aus, oder legen Sie **Aktion** zu **keine**.
+  Um einen Verstoß aus dem Regelsatz-Editor zu unterdrücken, deaktivieren Sie das Kontrollkästchen neben seinem Namen aus, oder legen Sie **Aktion** zu **keine**.
 
 - Von der **Code-Editor**
 
-   Um einen Verstoß im Code-Editor zu unterdrücken, platzieren Sie den Cursor in die Zeile des Codes, mit der Verletzung und drücken Sie **STRG**+ **.** zum Öffnen der **Schnellaktionen** Menü. Wählen Sie **unterdrücken CAXXXX** > **in Quelle/in Unterdrückungsdatei**.
+  Um einen Verstoß im Code-Editor zu unterdrücken, platzieren Sie den Cursor in die Zeile des Codes, mit der Verletzung und drücken Sie **STRG**+ **.** zum Öffnen der **Schnellaktionen** Menü. Wählen Sie **unterdrücken CAXXXX** > **in Quelle/in Unterdrückungsdatei**.
 
-   ![Vom Menü "schnelle Aktionen" Diagnose unterdrücken](media/suppress-diagnostic-from-editor.png)
+  ![Vom Menü "schnelle Aktionen" Diagnose unterdrücken](media/suppress-diagnostic-from-editor.png)
 
 - Von der **Fehlerliste**
 
-   Können Sie eine Diagnose aus einem oder mehreren Unterdrücken der **Fehlerliste** durch Auswählen der gewünschten unterdrückt werden sollen, und klicken Sie dann mit der rechten Maustaste und Auswählen von **unterdrücken** > **In Source/In Unterdrückungsdatei**.
+  Können Sie eine Diagnose aus einem oder mehreren Unterdrücken der **Fehlerliste** durch Auswählen der gewünschten unterdrückt werden sollen, und klicken Sie dann mit der rechten Maustaste und Auswählen von **unterdrücken** > **In Source/In Unterdrückungsdatei**.
 
-   - Wenn Sie unterdrücken **In Quelle**, **Vorschau der Änderungen** Dialogfeld wird geöffnet und zeigt eine Vorschau des der C# [#pragma-Warnung](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) oder Visual Basic [#Disable Warnung](/dotnet/visual-basic/language-reference/directives/directives) Richtlinie, die den Quellcode hinzugefügt wird.
+  - Wenn Sie unterdrücken **In Quelle**, **Vorschau der Änderungen** Dialogfeld wird geöffnet und zeigt eine Vorschau des der C# [#pragma-Warnung](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) oder Visual Basic [#Disable Warnung](/dotnet/visual-basic/language-reference/directives/directives) Richtlinie, die den Quellcode hinzugefügt wird.
 
-      ![Vorschau der #pragma-Warnung in der Codedatei hinzufügen](media/pragma-warning-preview.png)
+    ![Vorschau der #pragma-Warnung in der Codedatei hinzufügen](media/pragma-warning-preview.png)
 
-   - Bei Auswahl von **In Unterdrückungsdatei**, **Vorschau der Änderungen** Dialogfeld wird geöffnet und zeigt eine Vorschau des der <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> -Attribut, das die globale Unterdrückungen-Datei hinzugefügt wird.
+  - Bei Auswahl von **In Unterdrückungsdatei**, **Vorschau der Änderungen** Dialogfeld wird geöffnet und zeigt eine Vorschau des der <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> -Attribut, das die globale Unterdrückungen-Datei hinzugefügt wird.
 
-      ![Vorschau der Unterdrückungsdatei SuppressMessage-Attributs hinzugefügt](media/preview-changes-in-suppression-file.png)
+    ![Vorschau der Unterdrückungsdatei SuppressMessage-Attributs hinzugefügt](media/preview-changes-in-suppression-file.png)
 
-   In der **Vorschau der Änderungen** wählen Sie im Dialogfeld **übernehmen**.
+  In der **Vorschau der Änderungen** wählen Sie im Dialogfeld **übernehmen**.
 
-   > [!NOTE]
-   > Wenn Sie nicht sehen die **unterdrücken** Menüoption im **Projektmappen-Explorer**, die Verletzung stammt wahrscheinlich von Build und nicht als live-Analyse. Die **Fehlerliste** zeigt Diagnose oder die Regel Verletzungen, sowohl live-Codeanalyse und erstellen. Da die Build-Diagnose veraltet sein können, z. B. Wenn Sie haben den Code zur Behebung des Verstoßes bearbeitet, aber noch nicht neu erstellt, Sie können nicht unterdrücken, diese Diagnose von der **Fehlerliste**. Diagnose von live-Analyse und IntelliSense, sind immer auf dem neuesten Stand mit aktuellen Datenquellen und kann unterdrückt werden, aus der **Fehlerliste**. Auszuschließende *erstellen* eine Diagnose aus der Auswahl wechseln die **Fehlerliste** Quellfilter aus **erstellen + IntelliSense** zu **Intellisense nur**. Wählen Sie die Diagnose zu unterdrücken, und fahren Sie fort, wie zuvor beschrieben.
-   >
-   > ![Fehler Quelle Listenfilter in Visual Studio](media/error-list-filter.png)
+  > [!NOTE]
+  > Wenn Sie nicht sehen die **unterdrücken** Menüoption im **Projektmappen-Explorer**, die Verletzung stammt wahrscheinlich von Build und nicht als live-Analyse. Die **Fehlerliste** zeigt Diagnose oder die Regel Verletzungen, sowohl live-Codeanalyse und erstellen. Da die Build-Diagnose veraltet sein können, z. B. Wenn Sie haben den Code zur Behebung des Verstoßes bearbeitet, aber noch nicht neu erstellt, Sie können nicht unterdrücken, diese Diagnose von der **Fehlerliste**. Diagnose von live-Analyse und IntelliSense, sind immer auf dem neuesten Stand mit aktuellen Datenquellen und kann unterdrückt werden, aus der **Fehlerliste**. Auszuschließende *erstellen* eine Diagnose aus der Auswahl wechseln die **Fehlerliste** Quellfilter aus **erstellen + IntelliSense** zu **Intellisense nur**. Wählen Sie die Diagnose zu unterdrücken, und fahren Sie fort, wie zuvor beschrieben.
+  >
+  > ![Fehler Quelle Listenfilter in Visual Studio](media/error-list-filter.png)
 
 ## <a name="command-line-usage"></a>Die Verwendung der Befehlszeile
 

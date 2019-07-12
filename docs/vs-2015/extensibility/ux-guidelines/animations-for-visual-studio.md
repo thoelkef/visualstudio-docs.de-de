@@ -8,12 +8,12 @@ ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bd51e99f59f22eb31252be2a41c3b3fb5e89f846
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c07fb0887ae01ec917b39f5d7537d5a78fb5a4c6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077250"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825359"
 ---
 # <a name="animations-for-visual-studio"></a>Animationen für Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ ms.locfileid: "60077250"
 
 - **Zeitpunkt und Geschwindigkeit sind wichtig,** um sicherzustellen, dass es sich bei Übergängen können Sie schnelle und natürliche:
 
-    - Führen Sie animierten Übergänge in eine halbe Sekunde (500 Millisekunden).
+  - Führen Sie animierten Übergänge in eine halbe Sekunde (500 Millisekunden).
 
-    - Animationen, die häufig auftreten würden müssen schnell genug sein, dass sie den Workflow des Benutzers nicht unterbrechen.
+  - Animationen, die häufig auftreten würden müssen schnell genug sein, dass sie den Workflow des Benutzers nicht unterbrechen.
 
-    - Animationen sollte nicht so schnell oder bedürfen, es ist schwer zu verstehen, aber nicht so langsam ist, dass es eine ungeduldig der Übergang abgeschlossen ist.
+  - Animationen sollte nicht so schnell oder bedürfen, es ist schwer zu verstehen, aber nicht so langsam ist, dass es eine ungeduldig der Übergang abgeschlossen ist.
 
-    - Verwenden Sie Variablen zeitliche Steuerung, um die Bedeutung hervorzuheben. Z. B. beim Navigieren durch eine Sequenz von Elementen in einem Diagramm beschleunigt über die Übergänge zwischen den Elementen und dann verlangsamt sich auf wichtige Elemente konzentrieren.
+  - Verwenden Sie Variablen zeitliche Steuerung, um die Bedeutung hervorzuheben. Z. B. beim Navigieren durch eine Sequenz von Elementen in einem Diagramm beschleunigt über die Übergänge zwischen den Elementen und dann verlangsamt sich auf wichtige Elemente konzentrieren.
 
 - **Mithilfe der schrittweisen nicht lineare Beschleunigung** von einem Zustand in einen anderen, bietet einen Überblick über die schwierigen Situationen ruhig und natürliche verschieben
 
@@ -49,13 +49,13 @@ ms.locfileid: "60077250"
 
 - **Beim Anzeigen von Fortschritt oder Status** über Animation:
 
-    - Beenden Sie die Bearbeitung Bewegung anzeigen, wenn es sich bei der zugrunde liegenden Prozess nicht vorwärts verschoben wird.
+  - Beenden Sie die Bearbeitung Bewegung anzeigen, wenn es sich bei der zugrunde liegenden Prozess nicht vorwärts verschoben wird.
 
-    - Unterscheiden Sie unbestimmt Prozesse von bestimmte Prozesse.
+  - Unterscheiden Sie unbestimmt Prozesse von bestimmte Prozesse.
 
-    - Stellen Sie sicher, dass eine Animation identifizierbaren Abschluss und Fehler Status verfügt.
+  - Stellen Sie sicher, dass eine Animation identifizierbaren Abschluss und Fehler Status verfügt.
 
-    - Minimieren Sie die Verwendung von Auswirkungen Animationen, die der Status, und stellen sicher, dass sie echten Wert aufweisen, durch zusätzliche Informationen von der tatsächlichen Nutzung. Beispiele hierfür sind vorübergehende statusänderungen und Notfälle
+  - Minimieren Sie die Verwendung von Auswirkungen Animationen, die der Status, und stellen sicher, dass sie echten Wert aufweisen, durch zusätzliche Informationen von der tatsächlichen Nutzung. Beispiele hierfür sind vorübergehende statusänderungen und Notfälle
 
 #### <a name="do-not"></a>Tue nicht:
 
@@ -120,7 +120,7 @@ ms.locfileid: "60077250"
 
 - Ein Element in eine andere verbundene
 
-##### <a name="state"></a>Zustand
+##### <a name="state"></a>Status
 
 - Die Inhaltsupdates.
 
@@ -144,7 +144,7 @@ ms.locfileid: "60077250"
 
 - Länger Papierseiten durch Bilder
 
-##### <a name="time"></a>zeit
+##### <a name="time"></a>Uhrzeit
 
 - Anzeigen von Änderungen im Laufe der Zeit, Zeitsprung-screencast
 
@@ -326,7 +326,7 @@ ms.locfileid: "60077250"
 
 - Am Ende X und Y-Position: UI-spezifischen
 
-- Animationspfad: Keiner
+- Animationspfad: None
 
 - Dauer: 200 Millisekunden eigenständige, 100 Millisekunden bei Verwendung als Teil einer Animationssequenz Kombination
 

@@ -8,12 +8,12 @@ ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bdaaacd84cdc23b56fd76d7f4e66184868ad533c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ede8844b34473e1c900bd6af040cac99ceee1514
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075817"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824053"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Schriftarten und Formatierungen für Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ internal partial class WebConfigModificationWindow : DialogWindow
 
  (Ersetzen Sie dies `Microsoft.VisualStudio.Shell.11.0` mit der aktuellen Version der Dll MPF.)
 
- Um das Dialogfeld anzuzeigen, rufen "**ShowModal()**" für die Klasse über **OpenFileDialog**. **ShowModal()** den richtigen modalen Status in der Shell handelt, wird sichergestellt, das Dialogfeld wird in das übergeordnete Fenster, und So weiter zentriert.
+ Um das Dialogfeld anzuzeigen, rufen "**ShowModal()** " für die Klasse über **OpenFileDialog**. **ShowModal()** den richtigen modalen Status in der Shell handelt, wird sichergestellt, das Dialogfeld wird in das übergeordnete Fenster, und So weiter zentriert.
 
  Der Code lautet wie folgt aus:
 
@@ -417,11 +417,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 - Größere Überschriften (Umgebungsschriftart x mit 155 % oder höher) können für diese Zwecke zugewiesen werden:
 
-    - Um visuelle Elemente, die Signatur von Visual Studio-Benutzeroberfläche bereitzustellen.
+  - Um visuelle Elemente, die Signatur von Visual Studio-Benutzeroberfläche bereitzustellen.
 
-    - Die Aufmerksamkeit auf einen bestimmten Bereich
+  - Die Aufmerksamkeit auf einen bestimmten Bereich
 
-    - Die Textfarbe der standardumgebung dunkel grau/schwarzen Rahmen anbieten.
+  - Die Textfarbe der standardumgebung dunkel grau/schwarzen Rahmen anbieten.
 
 - Farbe in Überschriften sollten vorhandene Visual Studio markenfarben, in erster Linie die wichtigsten Violett, #FF68217A nutzen.
 

@@ -14,12 +14,12 @@ ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a3ed1acdbf8d09616c413fa832dc452af277434b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6790e61eddc81045bb168028ee7aeef7a0492e3c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441202"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825746"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Testleitfaden für Quellcodeverwaltungs-Plug-Ins
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,53 +59,53 @@ Dieser Abschnitt enthält Anweisungen zum Testen Ihrer plug-in mit quellcodeverw
   
 - [Testbereich 1: Hinzufügen/Öffnen über die Quellcodeverwaltung](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
   
-    - Groß-/Kleinschreibung 1a: Projektmappe zur Quellcodeverwaltung hinzufügen  
-  
-    - Fall 1 b: Die Projektmappe aus der Quellcodeverwaltung öffnen  
-  
-    - Fall 1c: Fügen Sie die Lösung aus der Quellcodeverwaltung hinzu  
-  
+  - Groß-/Kleinschreibung 1a: Projektmappe zur Quellcodeverwaltung hinzufügen  
+
+  - Fall 1 b: Die Projektmappe aus der Quellcodeverwaltung öffnen  
+
+  - Fall 1c: Fügen Sie die Lösung aus der Quellcodeverwaltung hinzu  
+
 - [Testbereich 2: Abrufen aus der Quellcodeverwaltung](../../extensibility/internals/test-area-2-get-from-source-control.md)  
   
 - [Testbereich 3: Auschecken/Auschecken rückgängig machen](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
   
-    - Fall 3: Auschecken / Auschecken rückgängig machen  
-  
-    - Groß-/Kleinschreibung 3a: Auschecken  
-  
-    - Fall 3 b: Offline-Auscheckvorgang  
-  
-    - Fall 3c: / Queryeditquerysave (QEQS.)  
-  
-    - Case-3d: Automatische Auschecken  
-  
-    - Groß-/Kleinschreibung 3e: Rückgängig: Auschecken  
+  - Fall 3: Auschecken / Auschecken rückgängig machen  
+
+  - Groß-/Kleinschreibung 3a: Auschecken  
+
+  - Fall 3 b: Offline-Auscheckvorgang  
+
+  - Fall 3c: / Queryeditquerysave (QEQS.)  
+
+  - Case-3d: Automatische Auschecken  
+
+  - Groß-/Kleinschreibung 3e: Rückgängig: Auschecken  
   
 - [Testbereich 4: Einchecken](../../extensibility/internals/test-area-4-check-in.md)  
   
-    - Groß-/Kleinschreibung 4a: Geänderte Elemente  
-  
-    - Groß-/Kleinschreibung 4 b: Hinzufügen von Dateien  
-  
-    - Fall 4c: Hinzufügen von Projekten  
+  - Groß-/Kleinschreibung 4a: Geänderte Elemente  
+
+  - Groß-/Kleinschreibung 4 b: Hinzufügen von Dateien  
+
+  - Fall 4c: Hinzufügen von Projekten  
   
 - [Testbereich 5: Ändern der Quellcodeverwaltung](../../extensibility/internals/test-area-5-change-source-control.md)  
   
-    - Groß-/Kleinschreibung 5a: Binden  
-  
-    - Case 5b: Aufheben der Bindung  
-  
-    - Fall 5c: erneut binden  
-  
+  - Groß-/Kleinschreibung 5a: Binden  
+
+  - Case 5b: Aufheben der Bindung  
+
+  - Fall 5c: erneut binden  
+
 - [Testbereich 6: Löschen](../../extensibility/internals/test-area-6-delete.md)  
-  
+
 - [Testbereich 7: Freigeben](../../extensibility/internals/test-area-7-share.md)  
-  
+
 - [Testbereich 8: Plug-In-Wechsel](../../extensibility/internals/test-area-8-plug-in-switching.md)  
-  
-    - Groß-/Kleinschreibung 8a: Automatische Änderung  
-  
-    - Groß-/Kleinschreibung 8 b: Informationsreiche lösungsbasierte ändern  
-  
+
+  - Groß-/Kleinschreibung 8a: Automatische Änderung  
+
+  - Groß-/Kleinschreibung 8 b: Informationsreiche lösungsbasierte ändern  
+
 ## <a name="see-also"></a>Siehe auch  
  [Quellcodeverwaltungs-Plug-Ins](../../extensibility/source-control-plug-ins.md)

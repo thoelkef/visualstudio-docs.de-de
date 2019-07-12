@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: ad20d4678c24458582f80cc819e6f6a651fb2790
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 751faa1d81ca93fce5f8dfa866327cc8787e27ef
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443020"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825974"
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Änderungsprotokoll (Visual Studio-Tools für Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,89 +22,92 @@ ms.locfileid: "63443020"
 Visual Studio-Tools für Unity (Änderungsprotokoll)
 
 ## <a name="23"></a>2.3
- Veröffentlichung: 14.7.2016
+
+Veröffentlichung: 14.7.2016
 
 ### <a name="new-features"></a>Neue Funktionen
 
 - **Allgemein:**
 
-    - Hinzufügung einer Option, um Unity-Konsolenprotokolle in der Fehlerliste von Visual Studio zu deaktivieren.
+  - Hinzufügung einer Option, um Unity-Konsolenprotokolle in der Fehlerliste von Visual Studio zu deaktivieren.
 
-    - Hinzufügung einer Option, mit der generierte Projekteigenschaften geändert werden können.
+  - Hinzufügung einer Option, mit der generierte Projekteigenschaften geändert werden können.
 
 - **Debugger:**
 
-    - Hinzufügung von Text-, XML-, HTML- und JSON-Zeichenfolgenschnellansichten.
+  - Hinzufügung von Text-, XML-, HTML- und JSON-Zeichenfolgenschnellansichten.
 
 - **Assistenten:**
 
-    - Hinzufügung fehlender MonoBehaviors.
+  - Hinzufügung fehlender MonoBehaviors.
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
 - **Allgemein:**
 
-    - Behebung eines Konflikts mit ReSharper, der verhinderte, dass Steuerelemente innerhalb von Visual Studio-Einstellungen angezeigt werden.
+  - Behebung eines Konflikts mit ReSharper, der verhinderte, dass Steuerelemente innerhalb von Visual Studio-Einstellungen angezeigt werden.
 
-    - Behebung eines Konflikts mit Xamarin, der in einigen Fällen das Debugging verhinderte.
+  - Behebung eines Konflikts mit Xamarin, der in einigen Fällen das Debugging verhinderte.
 
 - **Debugger:**
 
-    - Es wurde ein Problem behoben, das in Visual Studio beim Debuggen zu einem Code Freeze geführt hat.
+  - Es wurde ein Problem behoben, das in Visual Studio beim Debuggen zu einem Code Freeze geführt hat.
 
-    - Behebung eines Problems mit Funktionshaltepunkten in Visual Studio 2015.
+  - Behebung eines Problems mit Funktionshaltepunkten in Visual Studio 2015.
 
-    - Behebung mehrerer Probleme bei der Ausdrucksauswertung.
+  - Behebung mehrerer Probleme bei der Ausdrucksauswertung.
 
 ## <a name="22"></a>2.2
- Veröffentlichung: 04.02.2016
+
+Veröffentlichung: 04.02.2016
 
 ### <a name="new-features"></a>Neue Funktionen
 
 - **Assistenten:**
 
-    - Intelligente Suche wurde im **"MonoBehaviours" implementieren** -Assistenten hinzugefügt.
+  - Intelligente Suche wurde im **"MonoBehaviours" implementieren** -Assistenten hinzugefügt.
 
-    - Die Assistenten wurden so geändert, dass sie kontextberücksichtigend sind. Beispielsweise sind NetworkBehavior-Nachrichten nur verfügbar, wenn mit einem NetworkBehavior gearbeitet wird.
+  - Die Assistenten wurden so geändert, dass sie kontextberücksichtigend sind. Beispielsweise sind NetworkBehavior-Nachrichten nur verfügbar, wenn mit einem NetworkBehavior gearbeitet wird.
 
-    - In den Assistenten wurde Unterstützung für NetworkBehavior-Nachrichten hinzugefügt.
+  - In den Assistenten wurde Unterstützung für NetworkBehavior-Nachrichten hinzugefügt.
 
 - **Benutzeroberfläche:**
 
-    - Eine Option zum Konfigurieren der Sichtbarkeit von MonoBehavior-Nachrichten wurde hinzugefügt.
+  - Eine Option zum Konfigurieren der Sichtbarkeit von MonoBehavior-Nachrichten wurde hinzugefügt.
 
-    - Es wurden die Visual Studio-Eigenschaftenseiten entfernt, die für Unity-Projekte keine Bedeutung haben.
+  - Es wurden die Visual Studio-Eigenschaftenseiten entfernt, die für Unity-Projekte keine Bedeutung haben.
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
 - **Projektgenerierung:**
 
-    - Verweise auf UnityEngine und UnityEditor für Unity 4.6 wurden korrigiert.
+  - Verweise auf UnityEngine und UnityEditor für Unity 4.6 wurden korrigiert.
 
-    - Die Generierung von Projektdateien wurde für den Fall korrigiert, dass Unity unter OS X ausgeführt wird.
+  - Die Generierung von Projektdateien wurde für den Fall korrigiert, dass Unity unter OS X ausgeführt wird.
 
-    - Die Verarbeitung von Projektnamen, die Nummernzeichen (#) enthalten, wurde korrigiert.
+  - Die Verarbeitung von Projektnamen, die Nummernzeichen (#) enthalten, wurde korrigiert.
 
-    - Generierte Projekte wurden auf C# 4 beschränkt.
+  - Generierte Projekte wurden auf C# 4 beschränkt.
 
 - **Debugger:**
 
-    - Es wurde ein Problem mit der Auswertung von Ausdrücken behoben, wenn eine Unity-Koroutine debuggt wird.
+  - Es wurde ein Problem mit der Auswertung von Ausdrücken behoben, wenn eine Unity-Koroutine debuggt wird.
 
-    - Es wurde ein Problem behoben, das in Visual Studio beim Debuggen zu einem Code Freeze geführt hat.
+  - Es wurde ein Problem behoben, das in Visual Studio beim Debuggen zu einem Code Freeze geführt hat.
 
 - **Benutzeroberfläche:**
 
-    - Es wurde eine Inkompatibilität behoben, die mit der Visual Studio-Erweiterung [Tabs Studio](https://tabsstudio.com/) aufgetreten ist.
+  - Es wurde eine Inkompatibilität behoben, die mit der Visual Studio-Erweiterung [Tabs Studio](https://tabsstudio.com/) aufgetreten ist.
 
 - **Installer:**
 
-    - Unterstützung für computerweite Installation von VSTU (Installation für alle Benutzer) durch Erstellen von HKLM-Registrierungseinträgen.
+  - Unterstützung für computerweite Installation von VSTU (Installation für alle Benutzer) durch Erstellen von HKLM-Registrierungseinträgen.
 
-    - Es wurden Probleme behoben, die beim Deinstallieren von VSTU aufgetreten sind, wenn für mehrere verschiedene Versionen von Visual Studio dieselbe Version von VSTU installiert war. Zum Beispiel, wenn sowohl VSTU **2015** 2.1.0.0 als auch VSTU **2013** 2.1.0.0 installiert waren.
+  - Es wurden Probleme behoben, die beim Deinstallieren von VSTU aufgetreten sind, wenn für mehrere verschiedene Versionen von Visual Studio dieselbe Version von VSTU installiert war. Zum Beispiel, wenn sowohl VSTU **2015** 2.1.0.0 als auch VSTU **2013** 2.1.0.0 installiert waren.
 
 ## <a name="21"></a>2.1
- Veröffentlichung: 08.09.2015
+
+Veröffentlichung: 08.09.2015
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -125,80 +128,81 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 - Korrektur der Trefferanzahl-Haltepunkte in Visual Studio 2015.
 
 ## <a name="20"></a>2.0
- Veröffentlichung: 20.07.2015
+
+Veröffentlichung: 20.07.2015
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
 - **Unity-Integration:**
 
-    - Korrektur der Konvertierung von Debugsymbolen, die mit Visual Studio 2015 beim Importieren einer DLL und ihrer Debugsymbole (PDB) erstellt werden.
+  - Korrektur der Konvertierung von Debugsymbolen, die mit Visual Studio 2015 beim Importieren einer DLL und ihrer Debugsymbole (PDB) erstellt werden.
 
-    - Beim Importieren einer DLL und ihrer Debugsymbole (PDB) werden immer MDB-Dateien generiert, außer wenn auch eine MDB-Datei bereitgestellt wird.
+  - Beim Importieren einer DLL und ihrer Debugsymbole (PDB) werden immer MDB-Dateien generiert, außer wenn auch eine MDB-Datei bereitgestellt wird.
 
-    - Korrektur der Verunreinigung des Unity-Projektverzeichnisses mit einem Verzeichnis „obj“.
+  - Korrektur der Verunreinigung des Unity-Projektverzeichnisses mit einem Verzeichnis „obj“.
 
-    - Korrektur der Generierung von Verweisen auf „System.Xml.Link“ und „System.Runtime.Serialization“.
+  - Korrektur der Generierung von Verweisen auf „System.Xml.Link“ und „System.Runtime.Serialization“.
 
-    - Zusätzliche Unterstützung für mehrere Abonnenten der API-Hooks zum Erstellen der Projektdatei.
+  - Zusätzliche Unterstützung für mehrere Abonnenten der API-Hooks zum Erstellen der Projektdatei.
 
-    - Es wird immer eine vollständige Projektdatei erstellt, auch wenn eine der zu generierenden Dateien gesperrt ist.
+  - Es wird immer eine vollständige Projektdatei erstellt, auch wenn eine der zu generierenden Dateien gesperrt ist.
 
-    - Zusätzliche Unterstützung für *-Platzhalter im Erweiterungsfilter beim Festlegen der in das C#-Projekt einzuschließenden Dateien.
+  - Zusätzliche Unterstützung für *-Platzhalter im Erweiterungsfilter beim Festlegen der in das C#-Projekt einzuschließenden Dateien.
 
 - **Visual Studio-Integration:**
 
-    - Korrektur eines Kompatibilitätsproblems mit den Productivity Power Tools.
+  - Korrektur eines Kompatibilitätsproblems mit den Productivity Power Tools.
 
-    - Korrektur der Generierung von MonoBehaviors im Zusammenhang mit Deklarationen von Ereignissen und Delegaten.
+  - Korrektur der Generierung von MonoBehaviors im Zusammenhang mit Deklarationen von Ereignissen und Delegaten.
 
 - **Debugger:**
 
-    - Korrektur des potenziellen Einfrierens beim Debuggen.
+  - Korrektur des potenziellen Einfrierens beim Debuggen.
 
-    - Korrektur eines Problems, aufgrund dessen lokale Variablen in bestimmten Stapelrahmen nicht angezeigt werden.
+  - Korrektur eines Problems, aufgrund dessen lokale Variablen in bestimmten Stapelrahmen nicht angezeigt werden.
 
-    - Korrektur der Überprüfung leerer Arrays.
+  - Korrektur der Überprüfung leerer Arrays.
 
 ## <a name="20-preview-2"></a>2.0 Preview 2
- Veröffentlichung: 02.04.2015
+Veröffentlichung: 02.04.2015
 
 ### <a name="new-features"></a>Neue Funktionen
 
 - **Unity-Projekt-Explorer:**
 
-    - Automatisches Umbenennen der Klasse beim Umbenennen einer Datei im Unity-Projekt-Explorer (siehe das Dialogfeld **Optionen** ).
+  - Automatisches Umbenennen der Klasse beim Umbenennen einer Datei im Unity-Projekt-Explorer (siehe das Dialogfeld **Optionen** ).
 
-    - Automatisches Auswählen neu erstellter Skripts im Unity-Projekt-Explorer.
+  - Automatisches Auswählen neu erstellter Skripts im Unity-Projekt-Explorer.
 
-    - Nachverfolgen des aktiven Skripts im Unity-Projekt-Explorer (siehe das Dialogfeld **Optionen** ).
+  - Nachverfolgen des aktiven Skripts im Unity-Projekt-Explorer (siehe das Dialogfeld **Optionen** ).
 
-    - Duale Synchronisierung des Projektmappen-Explorers von Visual Studio (siehe **Optionen** Dialogfeld).
+  - Duale Synchronisierung des Projektmappen-Explorers von Visual Studio (siehe **Optionen** Dialogfeld).
 
-    - Übernahme von Visual Studio-Symbolen im Unity-Projekt-Explorer.
+  - Übernahme von Visual Studio-Symbolen im Unity-Projekt-Explorer.
 
 - **Debugger:**
 
-    - Auswählen des aktiven Debugziels in einer Liste gespeicherter oder zuletzt verwendeter Debugziele (siehe das Dialogfeld **Optionen** ).
+  - Auswählen des aktiven Debugziels in einer Liste gespeicherter oder zuletzt verwendeter Debugziele (siehe das Dialogfeld **Optionen** ).
 
-    - Erstellen von Funktionshaltepunkten für MonoBehavior-Methoden und deren Anwendung auf mehrere MonoBehavior-Klassen.
+  - Erstellen von Funktionshaltepunkten für MonoBehavior-Methoden und deren Anwendung auf mehrere MonoBehavior-Klassen.
 
-    - Unterstützung der "Make Objekt"-ID im Debugger.
+  - Unterstützung der "Make Objekt"-ID im Debugger.
 
-    - Unterstützung der Trefferanzahl für Haltepunkte im Debugger.
+  - Unterstützung der Trefferanzahl für Haltepunkte im Debugger.
 
-    - Unterstützung von Unterbrechung bei Ausnahme im Debugger (experimentell. Siehe das Dialogfeld **Optionen** ).
+  - Unterstützung von Unterbrechung bei Ausnahme im Debugger (experimentell. Siehe das Dialogfeld **Optionen** ).
 
-    - Unterstützung der Erstellung von Objekten und Arrays beim Auswerten von Ausdrücken im Debugger.
+  - Unterstützung der Erstellung von Objekten und Arrays beim Auswerten von Ausdrücken im Debugger.
 
-    - Unterstützung von NULL-Vergleichen bei der Auswertung von Ausdrücken im Debugger.
+  - Unterstützung von NULL-Vergleichen bei der Auswertung von Ausdrücken im Debugger.
 
-    - Herausfiltern veraltete Member im Überwachungsfenster des Debuggers.
+  - Herausfiltern veraltete Member im Überwachungsfenster des Debuggers.
 
 - **Installer:**
 
-    - Optimierte Registrierung von Visual Studio-Tools für Unity-Erweiterungen.
+  - Optimierte Registrierung von Visual Studio-Tools für Unity-Erweiterungen.
 
-    - Installation des Visual Studio-Tools für Unity-Pakets für Unity 5.
+  - Installation des Visual Studio-Tools für Unity-Pakets für Unity 5.
 
 - **Dokumentation:** Verbesserte Leistung bei der Dokumentationserstellung.
 
@@ -212,33 +216,33 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 
 - **Unity-Projekt-Explorer:**
 
-    - Der Unity-Projekt-Explorer wird aktualisiert, nachdem Dateien im Projektmappen-Explorer von Visual Studio verschoben oder umbenannt wurden.
+  - Der Unity-Projekt-Explorer wird aktualisiert, nachdem Dateien im Projektmappen-Explorer von Visual Studio verschoben oder umbenannt wurden.
 
-    - Auswahlen werden beim Umbenennen von Dateien im Unity-Projekt-Explorer beibehalten.
+  - Auswahlen werden beim Umbenennen von Dateien im Unity-Projekt-Explorer beibehalten.
 
-    - Das automatische Erweitern und Reduzieren wird verhindert, wenn im Unity-Projekt-Explorer auf Dateien doppelgeklickt wird.
+  - Das automatische Erweitern und Reduzieren wird verhindert, wenn im Unity-Projekt-Explorer auf Dateien doppelgeklickt wird.
 
-    - Es wird sichergestellt, dass neu ausgewählte Dateien im Unity-Projekt-Explorer angezeigt werden.
+  - Es wird sichergestellt, dass neu ausgewählte Dateien im Unity-Projekt-Explorer angezeigt werden.
 
 - **Debugger:**
 
-    - Ein mögliches Einfrieren von Visual Studio beim Auswerten von Ausdrücken im Debugger wird verhindert.
+  - Ein mögliches Einfrieren von Visual Studio beim Auswerten von Ausdrücken im Debugger wird verhindert.
 
-    - Es wird sichergestellt, dass Methodenaufrufe in der richtigen Domäne im Debugger erfolgen.
+  - Es wird sichergestellt, dass Methodenaufrufe in der richtigen Domäne im Debugger erfolgen.
 
 - **Unity:**
 
-    - Korrektur des Speicherorts von UnityVS.OpenFile bei Unity 5.
+  - Korrektur des Speicherorts von UnityVS.OpenFile bei Unity 5.
 
-    - Korrektur des Speicherorts von "pdb2mdb" bei Unity 5.
+  - Korrektur des Speicherorts von "pdb2mdb" bei Unity 5.
 
-    - Eine mögliche Ausnahme während der Erstellung der Projektdatei wird verhindert.
+  - Eine mögliche Ausnahme während der Erstellung der Projektdatei wird verhindert.
 
-    - Ein mögliches Einfrieren bei Ausführung von Unity unter OSX wird verhindert.
+  - Ein mögliches Einfrieren bei Ausführung von Unity unter OSX wird verhindert.
 
-    - Interne Ausnahmen werden behandelt.
+  - Interne Ausnahmen werden behandelt.
 
-    - Unity-Konsolenprotokolle werden an die Visual Studio-Fehlerliste gesendet.
+  - Unity-Konsolenprotokolle werden an die Visual Studio-Fehlerliste gesendet.
 
 - **Dokumentation:** Ordnungsgemäße Dokumentationserstellung für die neue Unity-Dokumentation.
 
@@ -249,7 +253,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 - **Benutzeroberfläche:** Unterstützung von Visual Studio-Designs für das Kontextmenü und Symbole.
 
 ## <a name="20-preview"></a>2.0 Preview
- Veröffentlichung: 12.11.2014
+Veröffentlichung: 12.11.2014
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -259,15 +263,15 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 
 - Optimierung der Darstellung von Werten beim Debuggen:
 
-    - Bessere Visualisierung für Arraylisten, Listen, Hashtabellen und Wörterbücher.
+  - Bessere Visualisierung für Arraylisten, Listen, Hashtabellen und Wörterbücher.
 
-    - Anzeigen nicht öffentlicher und statischer Member als Kategorien in Überwachungs- und lokalen Ansichten.
+  - Anzeigen nicht öffentlicher und statischer Member als Kategorien in Überwachungs- und lokalen Ansichten.
 
-    - Verbesserte Anzeige der "SerializedProperty" von Unity, sodass nur das für die Eigenschaft gültige Wertfeld ausgewertet wird.
+  - Verbesserte Anzeige der "SerializedProperty" von Unity, sodass nur das für die Eigenschaft gültige Wertfeld ausgewertet wird.
 
-    - Unterstützung von "DebuggerDisplayAttribute" für Klassen und Strukturen.
+  - Unterstützung von "DebuggerDisplayAttribute" für Klassen und Strukturen.
 
-    - Unterstützung für "DebuggerTypeProxyAttribute".
+  - Unterstützung für "DebuggerTypeProxyAttribute".
 
 - Einfügung von MonoBehaviour-Methoden mithilfe unserer Assistenten unter Berücksichtigen der Codierkonventionen der Benutzer.
 
@@ -288,7 +292,8 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 - Registrierung des Rückrufprotokolls, nur wenn unbedingt erforderlich.
 
 ## <a name="192"></a>1.9.2
- Veröffentlichung: 09.10.2014
+
+Veröffentlichung: 09.10.2014
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -311,7 +316,8 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 - Korrektur eines Fehlers, bei dem alle Objekte den Projektdateien hinzugefügt wurden, wenn der Erweiterungsfilter leer war.
 
 ## <a name="191"></a>1.9.1
- Veröffentlichung: 22.09.2014
+
+Veröffentlichung: 22.09.2014
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -356,7 +362,8 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 - Korrektur beim Öffnen von Skripts mit VSTU in 64-Bit-Versionen von Unity.
 
 ## <a name="19"></a>1.9
- Veröffentlichung: 29.07.2014
+
+Veröffentlichung: 29.07.2014
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -404,7 +411,8 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 > C# ist die vorherrschende Sprache im Unity-Ökosystem. Die neuen Beispielobjekte sind in C# geschrieben. Die Unity-Dokumentation wurde standardmäßig auf C# umgestellt. UnityScript und Boo werden nicht mehr unterstützt, um den Schwerpunkt ganz auf die C#-Umgebung zu legen. Demzufolge basieren VSTU-Lösungen nun ausschließlich auf C# und können viel schneller geladen werden.
 
 ## <a name="182"></a>1.8.2
- Veröffentlichung: 07.01.2014
+
+Veröffentlichung: 07.01.2014
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -431,7 +439,8 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 - Verhinderung eines Absturzes in Unity, wenn die versionsspezifisch generierte Assembly nicht mehr synchron ist.
 
 ## <a name="181"></a>1.8.1
- Veröffentlichung: 21.11.2013
+
+Veröffentlichung: 21.11.2013
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -464,7 +473,8 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 - Korrektur beim Öffnen von Skripts zum Vermeiden der Verwechslung der ALT+TAB-Reihenfolge für Unity 4.2 und höher.
 
 ## <a name="180"></a>1.8.0
- Veröffentlichung: 24.09.2013
+
+Veröffentlichung: 24.09.2013
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -505,7 +515,8 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 - Korrektur der Änderung boolescher Werte in der lokalen Ansicht.
 
 ## <a name="122"></a>1.2.2
- Veröffentlichung: 09.07.2013
+
+Veröffentlichung: 09.07.2013
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -528,7 +539,8 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 - Korrektur der Verarbeitung von Unity 4.2 Beta-Assemblys.
 
 ## <a name="121"></a>1.2.1
- Veröffentlichung: 09.04.2013
+
+Veröffentlichung: 09.04.2013
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -541,7 +553,8 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 - Korrektur der Bindung von Haltepunkten in einigen externen DLLs.
 
 ## <a name="12"></a>1.2
- Veröffentlichung: 25.03.2013
+
+Veröffentlichung: 25.03.2013
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -608,10 +621,10 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 - Fehler UVS-11 behoben: Lokale Elemente in Coroutinen.
 
 ## <a name="11--beta-release"></a>1.1 – Betaversion
- Veröffentlichung: 09.10.2014
+Veröffentlichung: 09.10.2014
 
 ## <a name="1013"></a>1.0.13
- Veröffentlichung: 21.01.2013
+Veröffentlichung: 21.01.2013
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -634,7 +647,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 - Korrektur der Verarbeitung langer Meldungen, die von Unity an UnityVS gesendet werden. Zuvor konnten lange Meldungen unseren Meldungsteil von UnityVS zum Absturz bringen. Die Folge war, dass UnityVS manchmal eine Datei aus Unity nicht öffnen konnte.
 
 ## <a name="1012"></a>1.0.12
- Veröffentlichung: 03.01.2013
+Veröffentlichung: 03.01.2013
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -653,7 +666,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 - Korrektur eines API-Fehlers, bei dem Benutzercode nicht am Handler des Protokollrückrufs teilnehmen kann.
 
 ## <a name="1011"></a>1.0.11
- Veröffentlichung: 28.11.2012
+Veröffentlichung: 28.11.2012
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -684,7 +697,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 - Korrektur eines Absturzes, wenn wir unser Symbol nicht in die Statusleiste von Visual Studio einfügen können.
 
 ## <a name="1010"></a>1.0.10
- Veröffentlichung: 09.10.2012
+Veröffentlichung: 09.10.2012
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -697,7 +710,8 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 - Korrektur, wie Assemblys aus Unity abgerufen werden, um das Sperren von Dateien und Verwechseln des Unity-Buildprozesses zu vermeiden.
 
 ## <a name="109"></a>1.0.9
- Veröffentlichung: 03.10.2012
+
+Veröffentlichung: 03.10.2012
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -716,7 +730,8 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 - Fehler UVS-21 behoben: Ungültiger Zeiger beim Auswerten eines Methodenaufrufs in der Unity-Math-API.
 
 ## <a name="108"></a>1.0.8
- Veröffentlichung: 26.09.2012
+
+Veröffentlichung: 26.09.2012
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -727,7 +742,8 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 - Korrektur, wie UnityVS in Visual Studio 2010 registriert wird.
 
 ## <a name="107"></a>1.0.7
- Veröffentlichung: 14.09.2012
+
+Veröffentlichung: 14.09.2012
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -743,10 +759,11 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 > Durch die Unterstützung für Visual Studio 2012 mussten wir einige Dateien umbenennen und andere verschieben. Das UnityVS-Paket zum Importieren von Unity heißt jetzt für Visual Studio 2010 bzw. Visual Studio 2012 entweder UnityVS 2010 oder UnityVS 2012. Diese Version erfordert auch, dass die UnityVS-Projektdateien neu generiert werden.
 
 ## <a name="106---internal-build"></a>1.0.6 – Interner Build
- Veröffentlichung: 12.09.2012
+Veröffentlichung: 12.09.2012
 
 ## <a name="105"></a>1.0.5
- Veröffentlichung: 10.09.2012
+
+Veröffentlichung: 10.09.2012
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -755,20 +772,22 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 - Korrektur der Erkennung von Unity-Instanzen, wenn Unity mit dem Asset-Server verbunden war. Dadurch wurden Fehler beim Öffnen von Dateien aus Unity und bei der automatischen Verbindung von Visual Studio-Debuggers ausgelöst.
 
 ## <a name="104"></a>1.0.4
- Veröffentlichung: 05.09.2012
+
+Veröffentlichung: 05.09.2012
 
 ### <a name="new-features"></a>Neue Funktionen
 
 - Automatische Konvertierung von Debugsymbolen in Unity.
 
-     Wenn sich in Ihrem Ordner "Asset" eine .NET-DLL-Assembly mit der zugehörigen PDB-Datei befindet, müssen Sie die Assembly einfach erneut importieren. Daraufhin konvertiert UnityVS die PDB-Datei in eine Debugsymboldatei, die die Unity-Skript-Engine versteht. Sie können anschließend Ihre .NET-Assemblys aus UnityVS schrittweise ausführen.
+    Wenn sich in Ihrem Ordner "Asset" eine .NET-DLL-Assembly mit der zugehörigen PDB-Datei befindet, müssen Sie die Assembly einfach erneut importieren. Daraufhin konvertiert UnityVS die PDB-Datei in eine Debugsymboldatei, die die Unity-Skript-Engine versteht. Sie können anschließend Ihre .NET-Assemblys aus UnityVS schrittweise ausführen.
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
 - Korrektur eines UnityVS-Absturzes während des Debuggens, der von Unity-internen Methoden oder Eigenschaften ausgelöst wurde.
 
 ## <a name="103"></a>1.0.3
- Veröffentlichung: 04.09.2012
+
+Veröffentlichung: 04.09.2012
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -783,7 +802,8 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 - Korrektur eines zufälligen VS-Absturzes, der durch unsere benutzerdefinierte Statusleiste verursacht wurde.
 
 ## <a name="102"></a>1.0.2
- Veröffentlichung: 30.08.2012
+
+Veröffentlichung: 30.08.2012
 
 ### <a name="bug-fixes"></a>Fehlerkorrekturen
 
@@ -794,7 +814,8 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 - Korrektur eines Bugs dahingehend, wie Skriptassemblys mit Unity 4 b7 aus Unity abgerufen werden.
 
 ## <a name="101"></a>1.0.1
- Veröffentlichung: 28.08.2012
+
+Veröffentlichung: 28.08.2012
 
 ### <a name="new-features"></a>Neue Funktionen
 
@@ -811,4 +832,4 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
 - Korrektur der Vervollständigung für DLL-Dateien im Ordner "Asset" für UnityScript und Boo.
 
 ## <a name="10--initial-release"></a>1.0 – Erstveröffentlichung
- Veröffentlichung: 22.08.2012
+Veröffentlichung: 22.08.2012

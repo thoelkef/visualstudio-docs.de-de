@@ -8,12 +8,12 @@ ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 55ba291135b41d534d8f91cae5d6257a26d4e34c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 2cd3c16437829e9701a2354b4f40c557a654f466
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686500"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824108"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Zusammengesetzte Muster für Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -228,7 +228,7 @@ Zusammengesetzte Muster kombinieren Interaktions- und Elemente in unterschiedlic
 
 - **Immer** versuchen, einen Indikator zu erstellen, die die Informationen zusammengefasst, zur Verfügung stellt. Geben Sie ggf. eine Anzahl die Anzahl der verfügbaren Datenelemente (z. B. "3 Referenzen" anstatt einfach "Referenzen"), oder stellen Sie sich eine andere Möglichkeit zum Zusammenfassen der Daten.
 
-    - In Fällen, in denen die Daten für einen Indikator immer berechnet und angezeigt werden können, sofort berücksichtigen von Feedback progressive wie die Werte berechnet werden. Betrachten Sie beispielsweise das Animieren von Änderungen, die Updates für die verfügbaren Daten, die ähnlich wie die widerspiegeln, die die Anzahl der ungelesenen e-Mails erhöht die e-Mail-live-Kachel in Windows Phone aktualisiert wird.
+  - In Fällen, in denen die Daten für einen Indikator immer berechnet und angezeigt werden können, sofort berücksichtigen von Feedback progressive wie die Werte berechnet werden. Betrachten Sie beispielsweise das Animieren von Änderungen, die Updates für die verfügbaren Daten, die ähnlich wie die widerspiegeln, die die Anzahl der ungelesenen e-Mails erhöht die e-Mail-live-Kachel in Windows Phone aktualisiert wird.
 
 - **Nie** hinzufügen Weitere Indikatoren, die als ein Benutzer für einen bestimmten des Inhalts relativ ausführen kann. Ambiente-Indikatoren sollten nützlich sein, ohne Eingreifen des Benutzers. Indikatoren verlieren ihre Umgebung aus, wenn der benötigten Überlauf und andere verwaltungssteuerung für sie sichtbar zu machen.
 
@@ -237,11 +237,11 @@ Zusammengesetzte Muster kombinieren Interaktions- und Elemente in unterschiedlic
 
 - **Immer** muss der Benutzer einige explizite Geste zum Öffnen des weiteren Inhalts führen. Allgemeine open Bewegungen zählen:
 
-    - **Wenn darauf gezeigt wird:** QuickInfos oder nicht interaktiven Informationelle
+  - **Wenn darauf gezeigt wird:** QuickInfos oder nicht interaktiven Informationelle
 
-    - **Expliziten Befehl:** Inline Presenter
+  - **Expliziten Befehl:** Inline Presenter
 
-    - **Doppelklicken Sie auf der ambient-Indikator:** CodeLens-Popup-Fenster
+  - **Doppelklicken Sie auf der ambient-Indikator:** CodeLens-Popup-Fenster
 
 - **Immer** den Detail-Inhalt zu verwerfen, wenn der Benutzer die Esc-Taste drückt.
 

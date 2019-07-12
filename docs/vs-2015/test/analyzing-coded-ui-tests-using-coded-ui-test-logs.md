@@ -8,12 +8,12 @@ ms.assetid: 7e795873-1d4b-4a13-a52a-a411d87fb759
 caps.latest.revision: 15
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7040b4dd07eebb4332634d5d8ffc1d9bc8d8c06b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 90e8e85882225fbecb4947de234081ccfc26fbbb
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686480"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824216"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analysieren von Tests der programmierten UI mithilfe der Testprotokolle der programmierten UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,35 +34,35 @@ Testprotokolle für programmierten UI filtern wichtige Informationen zu den Ausf
   
 - Auf .NET Framework Version 4 abzielen, wenn keine Datei App.config im Testprojekt vorhanden ist  
   
-    - Öffnen Sie die Datei **QTAgent32_40.exe.config**.  
-  
-         Diese Datei befindet sich standardmäßig unter **\<Laufwerk>:\Programme (x86)\Microsoft Visual Studio 12.0\Common7\IDE**.  
-  
-         Ändern Sie den Wert für EqtTraceLevel auf die gewünschte Protokollebene.  
-  
-         Speichern Sie die Datei.  
-  
+  - Öffnen Sie die Datei **QTAgent32_40.exe.config**.  
+
+    Diese Datei befindet sich standardmäßig unter **\<Laufwerk>:\Programme (x86)\Microsoft Visual Studio 12.0\Common7\IDE**.  
+
+    Ändern Sie den Wert für EqtTraceLevel auf die gewünschte Protokollebene.  
+
+    Speichern Sie die Datei.  
+
 - Auf .NET Framework Version 4,5 abzielen, wenn keine Datei App.config im Testprojekt vorhanden ist  
   
-    - Öffnen Sie die Datei **QTAgent32.exe.config**.  
-  
-         Diese Datei befindet sich standardmäßig unter **\<Laufwerk>:\Programme (x86)\Microsoft Visual Studio 12.0\Common7\IDE**.  
-  
-         Ändern Sie den Wert für EqtTraceLevel auf die gewünschte Protokollebene.  
-  
-         Speichern Sie die Datei.  
+  - Öffnen Sie die Datei **QTAgent32.exe.config**.  
+
+    Diese Datei befindet sich standardmäßig unter **\<Laufwerk>:\Programme (x86)\Microsoft Visual Studio 12.0\Common7\IDE**.  
+
+    Ändern Sie den Wert für EqtTraceLevel auf die gewünschte Protokollebene.  
+
+    Speichern Sie die Datei.  
   
 - Datei App.config im Testprojekt vorhanden  
   
-    - Öffnen Sie die Datei App.config im Projekt.  
-  
-         Fügen Sie unter dem Konfigurationsknoten den folgenden Code hinzu:  
-  
-         `<system.diagnostics>     <switches>       <add name="EqtTraceLevel" value="4" />     </switches>  </system.diagnostics>`  
+  - Öffnen Sie die Datei App.config im Projekt.  
+
+    Fügen Sie unter dem Konfigurationsknoten den folgenden Code hinzu:  
+
+    `<system.diagnostics>     <switches>       <add name="EqtTraceLevel" value="4" />     </switches>  </system.diagnostics>`  
   
 - Die Anmeldung aus dem Testcode selbst aktivieren  
   
-    - <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;  
+  - <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;  
   
 ### <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Schritt 2: Den Test der programmierten UI ausführen und das Protokoll anzeigen  
  Wenn Sie einen Test der programmierten Benutzeroberfläche mit der modifizierten Datei **QTAgent32.exe.config** ausführen, dann sehen Sie, dass es einen Ausgabelink in den Ergebnissen des Test-Explorers gibt. Protokolldateien werden nicht nur produziert, wenn der Test fehlschlägt, sondern auch für erfolgreiche Tests, wenn das Level der Ablaufverfolgung auf "verbose" gesetzt ist.  

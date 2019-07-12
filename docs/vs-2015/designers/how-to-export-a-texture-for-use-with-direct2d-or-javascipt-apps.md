@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 98b08fc8ebf2fca207d41b644032d7abbcd97a24
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: d73f24287c4acc38440767d84ae72e862a5e5c75
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65681738"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823913"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Vorgehensweise: Exportieren einer Textur für die Verwendung mit Direct2D- oder Javascript-Apps
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,11 +27,11 @@ Mit der Pipeline für Bildinhalte können Texturen generiert werden, die mit den
   
 - Konfigurieren der Pipeline für Bildinhalte zur Generierung einer Textur, die in einer Direct2D- oder JavaScript-App verwenden werden kann.  
   
-    - Generieren einer blockkomprimierten DDS-Datei.  
-  
-    - Generieren eines prämultiplizierten Alphas.  
-  
-    - Generieren von Mipmaps deaktivieren.  
+  - Generieren einer blockkomprimierten DDS-Datei.  
+
+  - Generieren eines prämultiplizierten Alphas.  
+
+  - Generieren von Mipmaps deaktivieren.  
   
 ## <a name="rendering-conventions-in-direct2d"></a>Renderingkonventionen in Direct2D  
  Texturen, die im Direct2D-Kontext verwendet werden, müssen diesen internen Direct2D-Renderingkonventionen entsprechen:  
@@ -40,11 +40,11 @@ Mit der Pipeline für Bildinhalte können Texturen generiert werden, die mit den
   
 - Die Textur muss in DDS-Format angegeben werden, indem eines dieser Blockkomprimierungsformate verwendet wird:  
   
-    - BC1_UNORM-Komprimierung  
-  
-    - BC2_UNORM-Komprimierung  
-  
-    - BC3_UNORM-Komprimierung  
+  - BC1_UNORM-Komprimierung  
+
+  - BC2_UNORM-Komprimierung  
+
+  - BC3_UNORM-Komprimierung  
   
 - Mipmaps werden nicht unterstützt.  
   

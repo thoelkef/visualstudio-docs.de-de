@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e995d9cfd37c625c03df0b607a9dd5184bec5d08
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: eea71ffe2b449e0ee5aff893efd05e12e4ecae73
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441463"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824934"
 ---
 # <a name="extending-javascript-intellisense"></a>Erweitern von JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Die JavaScript-IntelliSense-Erweiterbarkeit-Funktion können Sie zum Anpassen de
   
  Der Mechanismus für die automatische Ermittlung aktiviert den Sprachdienst, um Erweiterungen automatisch zu ermitteln, die die-Benennungskonvention folgen *Libraryname*. intellisense.js und, befinden sich in demselben Verzeichnis wie der Bibliothek die Erweiterung angewendet wird. Beispielsweise wäre eine gültige Erweiterung für die jQuery-Bibliothek jQuery.intellisense.js. Für mehr restriktiv jQuery-Erweiterungen können Sie den Dateinamen z. B. jQuery-1.7.1.intellisense.js (mit der Erweiterung hängt von der Version) oder jQuery.ui.intellisense.js (eine Erweiterung für eine Bereichsbezogene jQuery-Bibliothek) verwenden. Die restriktivste Version der Erweiterung wird verwendet, wenn mehr als eine Erweiterung für eine bestimmte Bibliothek gefunden wird.  
   
- Wenn Sie die Erweiterung für die JavaScript-Projektdateien verwenden möchten, können Sie stattdessen auswählen, zum Hinzufügen der Erweiterung zu einer Vergleichsgruppe hinzu. Es gibt mehrere Typen von Verweisen auf Gruppen, entweder, die implizite Verweise enthalten, und die dedizierten workerserver Verweise enthalten. Um eine Erweiterung hinzufügen, müssen Sie normalerweise eine Gruppe verweist implizit auf die Datei entweder hinzugefügt **implizit (Windows)**, **implizit (Internet)**. Implizite Verweise werden im Bereich für jede JS-Datei, die im Code-Editor geöffnet. Wenn Sie diese Methode verwenden, müssen Sie sowohl die Erweiterung und die Datei, die die Erweiterung zu ergänzen, wird hinzugefügt.  
+ Wenn Sie die Erweiterung für die JavaScript-Projektdateien verwenden möchten, können Sie stattdessen auswählen, zum Hinzufügen der Erweiterung zu einer Vergleichsgruppe hinzu. Es gibt mehrere Typen von Verweisen auf Gruppen, entweder, die implizite Verweise enthalten, und die dedizierten workerserver Verweise enthalten. Um eine Erweiterung hinzufügen, müssen Sie normalerweise eine Gruppe verweist implizit auf die Datei entweder hinzugefügt **implizit (Windows)** , **implizit (Internet)** . Implizite Verweise werden im Bereich für jede JS-Datei, die im Code-Editor geöffnet. Wenn Sie diese Methode verwenden, müssen Sie sowohl die Erweiterung und die Datei, die die Erweiterung zu ergänzen, wird hinzugefügt.  
   
  Verwenden der **IntelliSense** auf der Seite die **Optionen** Dialogfeld zum Hinzufügen einer Erweiterung als einer Vergleichsgruppe hinzu. Sie können den Zugriff auf die **IntelliSense** Seite durch Auswahl **Tools**, **Optionen** auf der Menüleiste, und klicken Sie dann auswählen **Text-Editor**, **JavaScript**, **IntelliSense**, **Verweise**. Weitere Informationen zum Verweisen auf Gruppen finden Sie unter [JavaScript IntelliSense](../ide/javascript-intellisense.md) und [Optionen, Text-Editor, JavaScript, IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md).  
   
@@ -115,15 +115,15 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
  Folgende Elemente gehören die `completionItem` Objekt:  
   
-- `name`. Lese-/Schreibzugriff, bei der Verwendung in der `items` Auflistung, andernfalls schreibgeschützt. Gibt eine Zeichenfolge, die dem Abschlusselement identifiziert.  
+- `name` Lese-/Schreibzugriff, bei der Verwendung in der `items` Auflistung, andernfalls schreibgeschützt. Gibt eine Zeichenfolge, die dem Abschlusselement identifiziert.  
   
-- `kind`. Lese-/Schreibzugriff, bei der Verwendung in der `items` Auflistung, andernfalls schreibgeschützt. Gibt eine Zeichenfolge, die den Typ des Elements Vervollständigung darstellt. Die möglichen Werte sind-Methode, Feld, Eigenschaft, Parameter, Variablen, und reserviert.  
+- `kind` Lese-/Schreibzugriff, bei der Verwendung in der `items` Auflistung, andernfalls schreibgeschützt. Gibt eine Zeichenfolge, die den Typ des Elements Vervollständigung darstellt. Die möglichen Werte sind-Methode, Feld, Eigenschaft, Parameter, Variablen, und reserviert.  
   
-- `glyph`. Lese-/Schreibzugriff, bei der Verwendung in der `items` Auflistung, andernfalls schreibgeschützt. Gibt eine Zeichenfolge, die ein Symbol darstellt, die in der Vervollständigungsliste angezeigt wird. Die möglichen Werte für `glyph` verwenden das folgende Format: Visual Studio:*GlyphType*, wobei *GlyphType* entspricht die sprachunabhängige Elemente in der <xref:Microsoft.VisualStudio.Language.Intellisense.StandardGlyphGroup> Enumeration. Z. B. `vs:GlyphGroupMethod` ist ein möglicher Wert für `glyph`. Wenn `glyph` nicht festgelegt ist, die `kind` -Eigenschaft bestimmt das Standardsymbol.  
+- `glyph` Lese-/Schreibzugriff, bei der Verwendung in der `items` Auflistung, andernfalls schreibgeschützt. Gibt eine Zeichenfolge, die ein Symbol darstellt, die in der Vervollständigungsliste angezeigt wird. Die möglichen Werte für `glyph` verwenden das folgende Format: Visual Studio:*GlyphType*, wobei *GlyphType* entspricht die sprachunabhängige Elemente in der <xref:Microsoft.VisualStudio.Language.Intellisense.StandardGlyphGroup> Enumeration. Z. B. `vs:GlyphGroupMethod` ist ein möglicher Wert für `glyph`. Wenn `glyph` nicht festgelegt ist, die `kind` -Eigenschaft bestimmt das Standardsymbol.  
   
-- `parentObject`. Schreibgeschützt. Gibt das übergeordnete Objekt zurück.  
+- `parentObject` Schreibgeschützt. Gibt das übergeordnete Objekt zurück.  
   
-- `value`. Schreibgeschützt. Gibt ein Objekt, das den Wert des Elements der Vervollständigung darstellt.  
+- `value` Schreibgeschützt. Gibt ein Objekt, das den Wert des Elements der Vervollständigung darstellt.  
   
 - `comments`. Schreibgeschützt. Gibt eine Zeichenfolge, die die Kommentare enthält, die über das Feld oder Variable.  
   
@@ -141,15 +141,15 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
  Folgende Elemente gehören die `comments` Objekt:  
   
-- `above`. Gibt die Kommentare über die Funktion zurück.  
+- `above` Gibt die Kommentare über die Funktion zurück.  
   
-- `inside`. Gibt die Kommentare innerhalb der Funktion, die in der Regel in VSDoc-Format zurück.  
+- `inside` Gibt die Kommentare innerhalb der Funktion, die in der Regel in VSDoc-Format zurück.  
   
-- `paramComments`. Gibt ein Array, der Kommentare für jeden Parameter in der Funktion darstellt. Die Elemente des Arrays enthalten:  
+- `paramComments` Gibt ein Array, der Kommentare für jeden Parameter in der Funktion darstellt. Die Elemente des Arrays enthalten:  
   
-    - `name`. Gibt eine Zeichenfolge, die den Namen des Parameters darstellt.  
-  
-    - `comment`. Gibt eine Zeichenfolge, die die Parameter-Kommentar enthält.  
+  - `name`. Gibt eine Zeichenfolge, die den Namen des Parameters darstellt.  
+
+  - `comment`. Gibt eine Zeichenfolge, die die Parameter-Kommentar enthält.  
   
 ### <a name="FunctionHelp"></a> FunctionHelp-Eigenschaft  
  Gibt die Hilfe für die Funktion zurück. Diese Eigenschaft steht für die `signaturehelp` Ereignisobjekt.  
@@ -158,51 +158,51 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
  Folgende Elemente gehören die `functionHelp` Objekt:  
   
-- `functionName`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die den Namen der Funktion enthält.  
+- `functionName` Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die den Namen der Funktion enthält.  
   
 - `signatures`. Lese-/Schreibzugriff. Übernimmt oder bestimmt das Array von Funktionssignaturen. Jedes Element im Array ist ein `signature` Objekt. Einige `signature` Eigenschaften, z. B. `locid`, entsprechen allgemeinen [XML-Dokumentationskommentare](../ide/xml-documentation-comments-javascript.md) Attribute.  
   
-     Die Mitglieder der `signature` Objekt einfügen möchten:  
-  
-    - `description`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die die Funktion beschreibt.  
-  
+  Die Mitglieder der `signature` Objekt einfügen möchten:  
+
+  - `description`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die die Funktion beschreibt.  
+
+  - `locid` Lese-/Schreibzugriff. Gibt einen Zeichenfolgenbezeichner, der Lokalisierungsinformationen über die Funktion enthält.  
+
+  - `helpKeyword`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die das Hilfeschlüsselwort enthält.  
+
+  - `externalFile`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die die Datei darstellt, die Member-ID. enthält  
+
+  - `externalid`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die die Element-ID der Funktion darstellt.  
+
+  - `params` Lese-/Schreibzugriff. Ruft ab oder legt das Array von Parametern für die Funktion fest. Jedes Element im Parameterarray ist eine `parameter` Objekt mit Eigenschaften, die die folgenden Attribute des entsprechen, den [ \<Param >](../ide/param-javascript.md) Element:  
+
+    - `name`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die den Namen des Parameters darstellt.  
+
+    - `type` Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die den Parameter darstellt.  
+
+    - `elementType`. Lese-/Schreibzugriff. Wenn der Typ ist `Array`, gibt eine Zeichenfolge, die den Typ der Elemente im Array darstellt.  
+
+    - `description` Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die die Parameter beschreibt.  
+
     - `locid`. Lese-/Schreibzugriff. Gibt einen Zeichenfolgenbezeichner, der Lokalisierungsinformationen über die Funktion enthält.  
-  
-    - `helpKeyword`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die das Hilfeschlüsselwort enthält.  
-  
-    - `externalFile`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die die Datei darstellt, die Member-ID. enthält  
-  
-    - `externalid`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die die Element-ID der Funktion darstellt.  
-  
-    - `params`. Lese-/Schreibzugriff. Ruft ab oder legt das Array von Parametern für die Funktion fest. Jedes Element im Parameterarray ist eine `parameter` Objekt mit Eigenschaften, die die folgenden Attribute des entsprechen, den [ \<Param >](../ide/param-javascript.md) Element:  
-  
-        - `name`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die den Namen des Parameters darstellt.  
-  
-        - `type`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die den Parameter darstellt.  
-  
-        - `elementType`. Lese-/Schreibzugriff. Wenn der Typ ist `Array`, gibt eine Zeichenfolge, die den Typ der Elemente im Array darstellt.  
-  
-        - `description`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die die Parameter beschreibt.  
-  
-        - `locid`. Lese-/Schreibzugriff. Gibt einen Zeichenfolgenbezeichner, der Lokalisierungsinformationen über die Funktion enthält.  
-  
-        - `optional`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die angibt, ob der Parameter optional ist. `true` Gibt an, dass der Parameter optional ist; `false` gibt an, dass dies nicht der Fall.  
-  
-    - `returnValue`. Lese-/Schreibzugriff. Übernimmt oder bestimmt ein Rückgabewert-Objekt mit Eigenschaften, entsprechen die folgenden Attribute des der [ \<gibt >](../ide/returns-javascript.md) Element:  
-  
-        - `type`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die den Rückgabetyp darstellt.  
-  
-        - `elementType`. Lese-/Schreibzugriff. Wenn der Typ ist `Array`, gibt eine Zeichenfolge, die den Typ der Elemente im Array darstellt.  
-  
-        - `description`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die den Rückgabewert beschreibt.  
-  
-        - `locid`. Lese-/Schreibzugriff. Gibt einen Zeichenfolgenbezeichner, der Lokalisierungsinformationen über die Funktion enthält.  
-  
-        - `helpKeyword`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die das Hilfeschlüsselwort enthält.  
-  
-        - `externalFile`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die die Datei darstellt, die Member-ID. enthält  
-  
-        - `externalid`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die die Element-ID der Funktion darstellt.  
+
+    - `optional` Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die angibt, ob der Parameter optional ist. `true` Gibt an, dass der Parameter optional ist; `false` gibt an, dass dies nicht der Fall.  
+
+  - `returnValue`. Lese-/Schreibzugriff. Übernimmt oder bestimmt ein Rückgabewert-Objekt mit Eigenschaften, entsprechen die folgenden Attribute des der [ \<gibt >](../ide/returns-javascript.md) Element:  
+
+    - `type` Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die den Rückgabetyp darstellt.  
+
+    - `elementType` Lese-/Schreibzugriff. Wenn der Typ ist `Array`, gibt eine Zeichenfolge, die den Typ der Elemente im Array darstellt.  
+
+    - `description` Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die den Rückgabewert beschreibt.  
+
+    - `locid`. Lese-/Schreibzugriff. Gibt einen Zeichenfolgenbezeichner, der Lokalisierungsinformationen über die Funktion enthält.  
+
+    - `helpKeyword` Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die das Hilfeschlüsselwort enthält.  
+
+    - `externalFile` Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die die Datei darstellt, die Member-ID. enthält  
+
+    - `externalid` Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die die Element-ID der Funktion darstellt.  
   
 ### <a name="ParentObject"></a> ParentObject-Eigenschaft  
  Gibt das übergeordnete Objekt einer Memberfunktion zurück. Beispielsweise `document.getElementByID`, `parentObject` gibt die `document` Objekt. Diese Eigenschaft steht für die `signaturehelp` Ereignisobjekt.  
@@ -228,27 +228,27 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
  Folgende Elemente gehören die `symbolHelp` Objekt:  
   
-- `name`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die den Namen des Bezeichners enthält.  
+- `name` Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die den Namen des Bezeichners enthält.  
   
-- `symbolType`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die den Symboltyp darstellt. Mögliche Werte sind unbekannt, boolescher Wert, Zahl, Zeichenfolge, Objekt, Funktion, Array, Datum und Regex.  
+- `symbolType` Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die den Symboltyp darstellt. Mögliche Werte sind unbekannt, boolescher Wert, Zahl, Zeichenfolge, Objekt, Funktion, Array, Datum und Regex.  
   
 - `symbolDisplayType`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die der Typname enthält angezeigt. Wenn `symbolDisplayType` ist nicht festgelegt, `symbolType` verwendet wird.  
   
 - `elementType`. Lese-/Schreibzugriff. Wenn die `symbolType` ist `Array`, gibt eine Zeichenfolge, die den Typ der Elemente im Array darstellt.  
   
-- `scope`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die den Bereich des Symbols darstellt. Mögliche Werte sind global, lokal, Parameter und Member.  
+- `scope` Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die den Bereich des Symbols darstellt. Mögliche Werte sind global, lokal, Parameter und Member.  
   
-- `description`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die eine Beschreibung des Symbols enthält, zurück.  
+- `description` Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die eine Beschreibung des Symbols enthält, zurück.  
   
-- `locid`. Lese-/Schreibzugriff. Gibt einen Zeichenfolgenbezeichner, der Lokalisierungsinformationen über das Symbol enthält.  
+- `locid` Lese-/Schreibzugriff. Gibt einen Zeichenfolgenbezeichner, der Lokalisierungsinformationen über das Symbol enthält.  
   
 - `helpKeyword`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die das Hilfeschlüsselwort enthält.  
   
-- `externalFile`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die die Datei darstellt, die Member-ID. enthält  
+- `externalFile` Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die die Datei darstellt, die Member-ID. enthält  
   
 - `externalid`. Lese-/Schreibzugriff. Gibt eine Zeichenfolge, die die Element-ID des Symbols darstellt.  
   
-- `functionHelp`. Lese-/Schreibzugriff. Gibt eine [FunctionHelp Eigenschaft](#FunctionHelp), die enthalten möglicherweise Informationen bei der `symbolType` Funktion.  
+- `functionHelp` Lese-/Schreibzugriff. Gibt eine [FunctionHelp Eigenschaft](#FunctionHelp), die enthalten möglicherweise Informationen bei der `symbolType` Funktion.  
   
 ### <a name="Scope"></a> Scope-Eigenschaft  
  Gibt den Bereich "Abschluss" des Ereignisses an. Die möglichen Werte für den Abschluss Bereich sind global und Member. Diese Eigenschaft steht für die `statementcompletion` Ereignisobjekt.  

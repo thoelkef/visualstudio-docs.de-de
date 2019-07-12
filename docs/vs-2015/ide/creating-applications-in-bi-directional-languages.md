@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 05300d33ae10cd899a40bf95596ea4eb19dea49d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 622af2c5f15187f6e04b53b4f0ba433c91f85a07
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65701185"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826190"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Erstellen von Anwendungen in bidirektionalen Sprachen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ Mit Visual Studio können Sie Anwendungen erstellen, die Text mit der Schreibric
   
 - **Rechts-nach-Links-Lesefolge** Die Steuerelemente für die Texteingabe von Visual Studio verwenden standardmäßig die Lesefolge von links nach rechts. Meist können Sie die Lesefolge mit Windows-Standardfunktionen ändern. So können Sie z. B. mit STRG+RECHTE UMSCHALTTASTE das Eigenschaftenfenster umschalten, sodass für die Eigenschaftswerte die Lesefolge von rechts nach links unterstützt wird.  
   
-     Die Lesefolge von rechts nach links wird jedoch nicht überall in Visual Studio unterstützt. Zu den Ausnahmen zählen:  
-  
-    - Kontrollkästchen, Dropdownlisten und andere Steuerelemente verwenden in Visual Studio immer die Lesefolge von links nach rechts.  
-  
-    - Der Code-Editor (und der Text-Editor) unterstützen die Lesefolge von rechts nach links nicht. Sie können zwar Text in einer bidirektionalen Sprache eingeben, doch die Lesefolge bleibt stets von links nach rechts.  
+  Die Lesefolge von rechts nach links wird jedoch nicht überall in Visual Studio unterstützt. Zu den Ausnahmen zählen:  
+
+  - Kontrollkästchen, Dropdownlisten und andere Steuerelemente verwenden in Visual Studio immer die Lesefolge von links nach rechts.  
+
+  - Der Code-Editor (und der Text-Editor) unterstützen die Lesefolge von rechts nach links nicht. Sie können zwar Text in einer bidirektionalen Sprache eingeben, doch die Lesefolge bleibt stets von links nach rechts.  
   
 ## <a name="naming-things-using-arabic-or-hebrew-text"></a>Benennung mit arabischem oder hebräischem Text  
  Sie können mithilfe von arabischem oder hebräischem Text Ordnern, Variablen oder anderen Objekten Namen zuweisen. Wenn Sie mit Arabisch arbeiten, können Sie alle arabischen Zeichen verwenden, einschließlich Kashida und Diakritika.  

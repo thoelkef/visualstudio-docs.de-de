@@ -12,12 +12,12 @@ ms.assetid: beba7174-e787-45c2-b6ff-a60f67ad4998
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0debf1a5996d39a6cb52cdc843afabf0b4107c59
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fbb2f118d903eae2124e705f14c7aa7b51bf9c4d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403261"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821833"
 ---
 # <a name="accessing-stored-font-and-color-settings"></a>Zugriff auf gespeicherte Schriftart- und Farbeinstellungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "63403261"
 Die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrierte Entwicklungsumgebung (IDE) speichert die geänderte Einstellungen für Schriftarten und Farben in der Registrierung. Sie können die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> Schnittstelle, um diese Einstellungen zuzugreifen.  
   
 ## <a name="to-initiate-state-persistence-of-fonts-and-colors"></a>Zum Initiieren der Statuspersistenz von Schriftarten und Farben  
- Schriftart und Farbinformationen befindet sich im am folgenden Registrierungsspeicherort nach Kategorie: [HKCU\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio-Version >* \FontAndColors\\  *\<CategoryGUID >*], wobei  *\<CategoryGUID >* ist die Kategorie-GUID.  
+ Schriftart und Farbinformationen befindet sich im am folgenden Registrierungsspeicherort nach Kategorie: [HKCU\SOFTWARE\Microsoft \Visual Studio\\ *\<Visual Studio-Version >* \FontAndColors\\  *\<CategoryGUID >* ], wobei  *\<CategoryGUID >* ist die Kategorie-GUID.  
   
  Aus diesem Grund um Persistenz zu initiieren, muss eine VSPackage:  
   
@@ -35,16 +35,16 @@ Die [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] integrierte Entwicklungsumgebun
   
 - Verwenden der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A> Methode zum Öffnen einer Kategorie unter Verwendung der Kategorie-GUID und eine moduskennzeichnung als Argumente beibehalten werden sollen.  
   
-     Der Modus, gemäß der `fFlags` Argument wird aus Werten erstellt die <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS> Enumeration. In diesem Modus steuert:  
-  
-    - Die Einstellungen, die über zugegriffen werden können die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> Schnittstelle.  
-  
-    - Alle Einstellungen oder nur diejenigen, die Benutzer zu ändern, und sind abrufbar, bis, die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> Schnittstelle.  
-  
-    - Die Art und Weise der Weitergabe von Änderungen an den benutzereinstellungen.  
-  
-    - Das Format der RGB-Werte, die verwendet werden.  
-  
+  Der Modus, gemäß der `fFlags` Argument wird aus Werten erstellt die <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS> Enumeration. In diesem Modus steuert:  
+
+  - Die Einstellungen, die über zugegriffen werden können die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> Schnittstelle.  
+
+  - Alle Einstellungen oder nur diejenigen, die Benutzer zu ändern, und sind abrufbar, bis, die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> Schnittstelle.  
+
+  - Die Art und Weise der Weitergabe von Änderungen an den benutzereinstellungen.  
+
+  - Das Format der RGB-Werte, die verwendet werden.  
+
 ## <a name="to-use-state-persistence-of-fonts-and-colors"></a>Verwenden von Schriftarten und Farben Statuspersistenz  
  Beibehalten von Schriftarten und Farben umfasst:  
   

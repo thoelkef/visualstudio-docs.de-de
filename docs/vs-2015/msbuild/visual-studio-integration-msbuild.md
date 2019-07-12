@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6a1dbe6d96dd9e35b1bfac4a84fb1006c2b99c69
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c90019aa24047524005ba70aa4f1aec75f89c71d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65683861"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825427"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integration von Visual Studio (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -145,7 +145,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 4. Öffnen Sie im **Projektmappen-Explorer**das Kontextmenü für das nicht verfügbare Projekt, und wählen Sie dann **Projekt erneut laden**aus.  
   
 ## <a name="intellisense-and-validation"></a>IntelliSense und Validierung  
- Bei Verwendung des XML-Editors zum Bearbeiten von Projektdateien werden IntelliSense und die Validierung über [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Schemadateien gesteuert. Diese werden im Schemacache installiert, der sich unter „*\<Visual Studio-Installationsverzeichnis>* \Xml\Schemas\1033\MSBuild“ befindet.  
+ Bei Verwendung des XML-Editors zum Bearbeiten von Projektdateien werden IntelliSense und die Validierung über [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Schemadateien gesteuert. Diese werden im Schemacache installiert, der sich unter „ *\<Visual Studio-Installationsverzeichnis>* \Xml\Schemas\1033\MSBuild“ befindet.  
   
  Die [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]-Kerntypen werden in Microsoft.Build.Core.xsd und allgemeine Typen, die von [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] verwendet werden, wird in Microsoft.Build.CommonTypes.xsd definiert. Zum Anpassen der Schemas für die Bereitstellung von IntelliSense und zur Validierung benutzerdefinierter Elementtypnamen, Eigenschaften und Aufgaben können Sie entweder "Microsoft.Build.xsd" bearbeiten oder ein benutzerdefiniertes Schema erstellen, das das CommonTypes-Schema oder das Core-Schema enthält. Beim Erstellen eines benutzerdefinierten Schemas müssen Sie den XML-Editor so einrichten, dass das **Eigenschaftenfenster** verwendet wird.  
   
@@ -160,13 +160,13 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
   
 - Assemblyverweise:  
   
-     Das Projektsystem ruft ein Ziel mit dem bekannten Namen `ResolveAssemblyReferences`auf. Von diesem Ziel sollen Elemente mit dem Elementtypnamen `ReferencePath`erstellt werden. Alle Elemente müssen jeweils über eine Elementspezifikation (Wert des `Include` -Attributs eines Elements) mit dem vollständigen Pfad zum entsprechenden Verweis verfügen. Die Elemente sollten über alle Metadaten der übergebenen Eingabeelemente sowie über die folgenden neuen Metadaten verfügen:  
-  
-    - `CopyLocal`: Gibt an, ob die Assembly in den Ausgabeordner kopiert werden soll. Ist auf true oder false festgelegt.  
-  
-    - `OriginalItemSpec`: Enthält die ursprüngliche Elementspezifikation des Verweises.  
-  
-    - `ResolvedFrom` wird auf "{TargetFrameworkDirectory}" festgelegt, wenn es über das Verzeichnis [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] aufgelöst wurde.  
+  Das Projektsystem ruft ein Ziel mit dem bekannten Namen `ResolveAssemblyReferences`auf. Von diesem Ziel sollen Elemente mit dem Elementtypnamen `ReferencePath`erstellt werden. Alle Elemente müssen jeweils über eine Elementspezifikation (Wert des `Include` -Attributs eines Elements) mit dem vollständigen Pfad zum entsprechenden Verweis verfügen. Die Elemente sollten über alle Metadaten der übergebenen Eingabeelemente sowie über die folgenden neuen Metadaten verfügen:  
+
+  - `CopyLocal`: Gibt an, ob die Assembly in den Ausgabeordner kopiert werden soll. Ist auf true oder false festgelegt.  
+
+  - `OriginalItemSpec`: Enthält die ursprüngliche Elementspezifikation des Verweises.  
+
+  - `ResolvedFrom` wird auf "{TargetFrameworkDirectory}" festgelegt, wenn es über das Verzeichnis [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] aufgelöst wurde.  
   
 - COM-Verweise:  
   

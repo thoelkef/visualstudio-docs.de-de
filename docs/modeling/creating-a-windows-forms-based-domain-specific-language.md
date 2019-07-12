@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b82af5d19b45092f649b22503cfbdf1001433c30
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: ad4e3c3007a00245f632e4645deb1014b5c22508
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746804"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821391"
 ---
 # <a name="create-a-windows-forms-based-domain-specific-language"></a>Erstellen Sie eine Windows Forms-basierten domänenspezifischen Sprache
 
@@ -59,9 +59,9 @@ Die **minimaler WinForm-Designer** DSL-Vorlage erstellt eine minimale DSL, die S
 
 - Die `UI` -Projekt enthält ein funktionstüchtiges Beispiel ein Formularsteuerelement gebunden an die DSL. Es funktioniert jedoch nicht, wenn Sie der DSL-Definition geändert haben. Die `UI` -Projekt enthält:
 
-    - Eine Windows Forms-Klasse, die mit dem Namen `ModelViewControl`.
+  - Eine Windows Forms-Klasse, die mit dem Namen `ModelViewControl`.
 
-    - Eine Datei namens `DataBinding.cs` , enthält eine weitere partielle Definition der `ModelViewControl`. Um seinen Inhalt anzuzeigen **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die Datei, und wählen Sie **Ansichtscode**.
+  - Eine Datei namens `DataBinding.cs` , enthält eine weitere partielle Definition der `ModelViewControl`. Um seinen Inhalt anzuzeigen **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die Datei, und wählen Sie **Ansichtscode**.
 
 ### <a name="about-the-ui-project"></a>Über das UI-Projekt
 

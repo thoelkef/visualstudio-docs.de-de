@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fddd8efd11d2a3d61f0cff33cb832ebd8a0c5d2a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4f65bd7a904f30f132f654b6dd718532d9d0e66e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406939"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821593"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Anzeigen von Threads in Visual Studio-Debugger mithilfe des Fensters Threads (C#, Visual Basic C++)
 In der **Threads** Fenster, die Sie untersuchen und Arbeiten mit Threads in der Anwendung, die Sie debuggen können. Schrittweise Anleitung zur Verwendung der **Threads** Fenster finden Sie unter [Exemplarische Vorgehensweise: Debuggen mithilfe des Fensters Threads](../debugger/how-to-use-the-threads-window.md).
@@ -101,9 +101,9 @@ Ein gelber Pfeil gibt den aktuellen Thread (und den Speicherort der Ausführungs
 
 - Führen Sie entweder die folgenden Schritte aus:
 
-    - Doppelklicken Sie auf einen beliebigen Thread.
+  - Doppelklicken Sie auf einen beliebigen Thread.
 
-    - Mit der rechten Maustaste in eines Threads aus, und wählen Sie **Switch zum Thread**.
+  - Mit der rechten Maustaste in eines Threads aus, und wählen Sie **Switch zum Thread**.
 
 ## <a name="group-and-sort-threads"></a>Gruppieren und Sortieren von threads
  Beim Gruppieren von Threads wird in der Tabelle eine Überschrift für jede Gruppe angezeigt. Die Überschrift enthält eine Gruppenbeschreibung, z. B. **Arbeitsthread** oder **Nicht gekennzeichnete Threads**, und ein Struktursteuerelement. Die einzelnen Threads jeder Gruppe werden unter der Gruppenüberschrift angezeigt. Wenn Sie die einzelnen Threads einer Gruppe ausblenden möchten, verwenden Sie das Strukturansicht-Steuerelement, um die Gruppe zu reduzieren.

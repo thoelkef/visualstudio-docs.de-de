@@ -15,12 +15,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 16bc3bf0f2cb7fa51a42986ee99976410ca7874a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 310e13e781997fd3a6431e4257918f8e61b9420d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439738"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823580"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>UML-Aktivitätsdiagramme: Richtlinien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -208,15 +208,15 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
  Sie können angeben, wie die Elemente in einem Puffer gespeichert werden, indem Sie Eigenschaften des Objektknotens festlegen:  
   
 - Legen Sie die **Bestellung** Eigenschaft:  
-  
-    - **Ungeordnete** an eine zufällige oder nicht angegebene Reihenfolge. (Standardeinstellung)  
-  
-    - **Geordnete** eine Reihenfolge nach einem bestimmten Schlüssel angegeben.  
-  
-    - **FIFO-Prinzip** an eine Bestellung von First in, First out.  
-  
-    - **LIFO** eine Reihenfolge der Last in, First Out angegeben.  
-  
+
+  - **Ungeordnete** an eine zufällige oder nicht angegebene Reihenfolge. (Standardeinstellung)  
+
+  - **Geordnete** eine Reihenfolge nach einem bestimmten Schlüssel angegeben.  
+
+  - **FIFO-Prinzip** an eine Bestellung von First in, First out.  
+
+  - **LIFO** eine Reihenfolge der Last in, First Out angegeben.  
+
 - Legen Sie die **Obergrenze** Eigenschaft, um die maximale Anzahl von Objekten, die enthalten sein können im Puffer anzugeben. Der Standardwert ist *. Dies bedeutet, dass keine Begrenzung definiert ist.  
   
 ### <a name="describing-data-flow-with-input-and-output-pins"></a>Beschreiben des Datenflusses mit Eingabe- und Ausgabepins  
@@ -295,11 +295,11 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
   
  Der Kunde hat vollständige und gültige Informationen angegeben, die zum Verarbeiten seiner Kreditkartendaten erforderlich sind.  
   
- Eine Nachbedingung kann eine Beziehung zwischen den Zuständen vor und nach dem Eintreten einer Aktion beschreiben. Zum Beispiel:  
+ Eine Nachbedingung kann eine Beziehung zwischen den Zuständen vor und nach dem Eintreten einer Aktion beschreiben. Beispiel:  
   
  Der Zinssatz ist doppelt so hoch wie vorher.  
   
- Sie können Nachbedingungen auf formalere Weise schreiben, indem Sie auf bestimmte Attribute der in den Aktionen behandelten Daten verweisen. Zum Beispiel:  
+ Sie können Nachbedingungen auf formalere Weise schreiben, indem Sie auf bestimmte Attribute der in den Aktionen behandelten Daten verweisen. Beispiel:  
   
  `InvoiceTotal == Sum(OrderItem.MenuItem.Price)`  
   
@@ -317,7 +317,7 @@ In Visual Studio können Sie ein Aktivitätsdiagramm zeichnen, um einen Geschäf
   
 - Sie können festlegen, die **Is Synchronous** Eigenschaft der Aktion, um anzugeben, ob Ihre Aktivität wartet, bis der Vorgang abgeschlossen.  
   
-    - Setzen Sie **Is Synchronous** auf "false", Sie sind an, dass der Fluss mit der nächsten Aktion fortgesetzt werden kann, bevor der aufgerufene Vorgang abgeschlossen ist. Definieren Sie keine Ausgabepins oder ausgehenden Datenflüsse von der Aktion.  
+  - Setzen Sie **Is Synchronous** auf "false", Sie sind an, dass der Fluss mit der nächsten Aktion fortgesetzt werden kann, bevor der aufgerufene Vorgang abgeschlossen ist. Definieren Sie keine Ausgabepins oder ausgehenden Datenflüsse von der Aktion.  
   
 ## <a name="Concurrent"></a> Parallele Flüsse  
  Können Sie die **Gabelungsknoten** und **Joinknoten** um zwei oder mehr Threads von Aktivitäten beschreiben, die zur gleichen Zeit ausgeführt werden kann.  
