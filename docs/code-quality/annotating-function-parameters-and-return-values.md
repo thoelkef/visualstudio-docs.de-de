@@ -1,6 +1,6 @@
 ---
 title: Hinzufügen einer Anmerkung zu Funktionsparametern und Rückgabewerten
-ms.date: 11/04/2016
+ms.date: 07/11/2019
 ms.topic: conceptual
 f1_keywords:
 - _Outptr_opt_result_bytebuffer_to_
@@ -119,18 +119,21 @@ f1_keywords:
 - _Outref_result_bytebuffer_
 - _Result_nullonfailure_
 - _Ret_null_
+- _Scanf_format_string_
+- _Scanf_s_format_string_
+- _Printf_format_string_
 ms.assetid: 82826a3d-0c81-421c-8ffe-4072555dca3a
 author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: ace5afbf1c587a2c54c4221469cb7be0d6487c9a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1a33a29261a8a776ec570026fbc3ab575f712929
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388544"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852166"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Hinzufügen einer Anmerkung zu Funktionsparametern und Rückgabewerten
 Dieser Artikel beschreibt typische Verwendungen von Anmerkungen für die einfache Funktionsparameter, skalare und Verweise auf Strukturen und Klassen, und die meisten Arten von Puffern.  Dieser Artikel zeigt außerdem gängige Verwendungsmuster für Anmerkungen. Zusätzliche Anmerkungen, die mit Funktionen verknüpft sind, finden Sie unter [Funktionsverhalten kommentieren](../code-quality/annotating-function-behavior.md)
@@ -216,7 +219,7 @@ Dieser Artikel beschreibt typische Verwendungen von Anmerkungen für die einfach
 
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`
 
-     Das heißt, jedes Element, das im Puffer vorhanden, bis zu `s` im Zustand "vor" gilt im Zustand "POST".  Zum Beispiel:
+     Das heißt, jedes Element, das im Puffer vorhanden, bis zu `s` im Zustand "vor" gilt im Zustand "POST".  Beispiel:
 
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
 
@@ -244,7 +247,7 @@ Dieser Artikel beschreibt typische Verwendungen von Anmerkungen für die einfach
 
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`
 
-     Das heißt, jedes Element, das im Puffer vorhanden, bis zu `s` im Zustand "vor" gilt im Zustand "POST".  Zum Beispiel:
+     Das heißt, jedes Element, das im Puffer vorhanden, bis zu `s` im Zustand "vor" gilt im Zustand "POST".  Beispiel:
 
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
 
@@ -285,6 +288,7 @@ Dieser Artikel beschreibt typische Verwendungen von Anmerkungen für die einfach
      Ein Zeiger auf eine mit Null endendes Array für die der Ausdruck `p`  -  `_Curr_` (d. h. `p` minus `_Curr_`) wird von der entsprechenden Sprache standard definiert.  Die Elemente vor `p` müssen nicht vorab Status gültig sein und muss gültig sein, nach dem Status.
 
 ## <a name="optional-pointer-parameters"></a>Optionale Zeigerparameter
+
  Wenn ein Zeiger parameteranmerkung enthält `_opt_`, bedeutet dies, dass der Parameter null sein kann. Andernfalls die Anmerkung führt die identisch mit der Version, die keine `_opt_`. Hier ist eine Liste mit den `_opt_` Varianten der Zeiger Parameter Anmerkungen:
 
 ||||
@@ -384,6 +388,7 @@ Dieser Artikel beschreibt typische Verwendungen von Anmerkungen für die einfach
    Der zurückgegebene Zeiger verweist auf einen gültigen Puffer, wenn die Funktion erfolgreich ist, oder Null, wenn die Funktion fehlschlägt. Diese Anmerkung ist für einen Verweisparameter.
 
 ## <a name="output-reference-parameters"></a>Ausgabeverweisparameter
+
  Eine häufige Verwendung des Verweisparameters ist für Output-Parameter.  Für einfache ausgabeverweisparametern – z. B. `int&`–`_Out_` liefert die Semantik richtig.  Wenn der Ausgabewert ist jedoch ein Zeiger, z. B. `int *&`– wie die entsprechende Zeiger Anmerkungen `_Outptr_ int **` nicht die richtige Semantik bereitstellen.  Die Semantik der ausgabeverweisparametern für Zeigertypen präzise ausgedrückt werden, verwenden Sie diese zusammengesetzten Anmerkungen:
 
  **Anmerkungen und Beschreibungen**
@@ -445,13 +450,62 @@ Dieser Artikel beschreibt typische Verwendungen von Anmerkungen für die einfach
      Ergebnis muss gültig sein, nach der Status, aber es kann null sein, im Post-Zustand. Zeigt auf gültigen Puffer von `s` Bytes von gültigen Elementen.
 
 ## <a name="return-values"></a>Rückgabewerte
+
  Der Rückgabewert einer Funktion ähnelt einer `_Out_` Parameter ist jedoch auf einer anderen Ebene der De-reference, und Sie müssen das Konzept des Zeigers auf das Ergebnis zu berücksichtigen.  Für die folgenden Anmerkungen, ist der Rückgabewert das mit Anmerkungen versehene Objekt – ein Skalarwert, ein Zeiger auf eine Struktur oder ein Zeiger auf einen Puffer. Diese Anmerkungen haben die gleiche Semantik wie die entsprechende `_Out_` Anmerkung.
 
 |||
 |-|-|
 |`_Ret_z_`<br /><br /> `_Ret_writes_(s)`<br /><br /> `_Ret_writes_bytes_(s)`<br /><br /> `_Ret_writes_z_(s)`<br /><br /> `_Ret_writes_to_(s,c)`<br /><br /> `_Ret_writes_maybenull_(s)`<br /><br /> `_Ret_writes_to_maybenull_(s)`<br /><br /> `_Ret_writes_maybenull_z_(s)`|`_Ret_maybenull_`<br /><br /> `_Ret_maybenull_z_`<br /><br /> `_Ret_null_`<br /><br /> `_Ret_notnull_`<br /><br /> `_Ret_writes_bytes_to_`<br /><br /> `_Ret_writes_bytes_maybenull_`<br /><br /> `_Ret_writes_bytes_to_maybenull_`|
 
+## <a name="format-string-parameters"></a>Format-Parameter
+
+- `_Printf_format_string_` Gibt an, dass der Parameter eine Zeichenfolge für die Verwendung in einer `printf` Ausdruck.
+
+     **Beispiel**
+
+    ```cpp
+    int MyPrintF(_Printf_format_string_ const wchar_t* format, ...)
+    {
+           va_list args;
+           va_start(args, format);
+           int ret = vwprintf(format, args);
+           va_end(args);
+           return ret;
+    }
+    ```
+
+- `_Scanf_format_string_` Gibt an, dass der Parameter eine Zeichenfolge für die Verwendung in einer `scanf` Ausdruck.
+
+     **Beispiel**
+
+    ```cpp
+    int MyScanF(_Scanf_format_string_ const wchar_t* format, ...)
+    {
+           va_list args;
+           va_start(args, format);
+           int ret = vwscanf(format, args);
+           va_end(args);
+           return ret;
+    }
+    ```
+
+- `_Scanf_s_format_string_` Gibt an, dass der Parameter eine Zeichenfolge für die Verwendung in einer `scanf_s` Ausdruck.
+
+     **Beispiel**
+
+    ```cpp
+    int MyScanF_s(_Scanf_s_format_string_ const wchar_t* format, ...)
+    {
+           va_list args; 
+           va_start(args, format);
+           int ret = vwscanf_s(format, args);
+           va_end(args); 
+           return ret;
+    }
+    ```
+
 ## <a name="other-common-annotations"></a>Andere allgemeine Anmerkungen
+
  **Anmerkungen und Beschreibungen**
 
 - `_In_range_(low, hi)`
@@ -481,7 +535,7 @@ Dieser Artikel beschreibt typische Verwendungen von Anmerkungen für die einfach
 
 - `_Struct_size_bytes_(size)`
 
-     Gilt für die Deklaration einer Struktur oder Klasse.  Gibt an, dass ein gültiges Objekt dieses Typs möglicherweise größer als der deklarierte Typ, mit der Anzahl von Bytes wird, indem `size`.  Zum Beispiel:
+     Gilt für die Deklaration einer Struktur oder Klasse.  Gibt an, dass ein gültiges Objekt dieses Typs möglicherweise größer als der deklarierte Typ, mit der Anzahl von Bytes wird, indem `size`.  Beispiel:
 
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`
 
@@ -490,6 +544,7 @@ Dieser Artikel beschreibt typische Verwendungen von Anmerkungen für die einfach
      `min(pM->nSize, sizeof(MyStruct))`
 
 ## <a name="related-resources"></a>Verwandte Ressourcen
+
  [Code Analysis-Teamblog](http://go.microsoft.com/fwlink/?LinkId=251197)
 
 ## <a name="see-also"></a>Siehe auch
