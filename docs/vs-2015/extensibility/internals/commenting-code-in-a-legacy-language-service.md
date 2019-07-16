@@ -12,11 +12,11 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cd1405456ca9a6ba00926c82bcc7959ea36d26c2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58956519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160905"
 ---
 # <a name="commenting-code-in-a-legacy-language-service"></a>Kommentieren von Code in einem Legacysprachdienst
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Programmiersprachen bieten in der Regel eine Möglichkeit zum Kommentieren oder 
   
 2. Block-Kommentare, in dem der Kommentar auf mehrere Zeilen enthalten kann.  
   
-   Zeilenkommentare haben in der Regel ein (oder die Anfangszeichen), während blockskommentaren sowohl Start-und Endzeichen haben. In C# ein Zeilenkommentar starten z. B. mit / /, und ein blockskommentar beginnt mit / * und endet mit \*/.  
+   Zeilenkommentare haben in der Regel ein (oder die Anfangszeichen), während blockskommentaren sowohl Start-und Endzeichen haben. In c# ein Zeilenkommentar starten z. B. mit / /, und ein blockskommentar beginnt mit / * und endet mit \*/.  
   
    Wenn der Benutzer den Befehl auswählt **Auswahl kommentieren** aus der **bearbeiten** -> **erweitert** im Menü der Befehl geleitet wird die <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> Methode für die <xref:Microsoft.VisualStudio.Package.Source> Klasse. Wenn der Benutzer den Befehl auswählt **Kommentar der Auswahl**, der Befehl weitergeleitet wird, um die <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> Methode.  
   

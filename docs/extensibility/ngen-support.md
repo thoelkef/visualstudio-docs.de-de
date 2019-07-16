@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02fe3ec6787eec0846f709ac65555260a3c03165
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 24f1b0a26875bbbf8dfc4ac7db1049f7309d9aa2
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343975"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891120"
 ---
 # <a name="ngen-support-in-vsix-v3"></a>NGen-Unterstützung in VSIX v3
 
@@ -37,7 +37,7 @@ Es gibt 4 Eigenschaften, die festgelegt werden können:
 
 1. **NGen** (boolesch): bei "true", Visual Studio-Installer wird "Ngen" die Assembly.
 2. **NGen-Anwendung** (Zeichenfolge) – Ngen bietet die Möglichkeit, einer Anwendung nutzen *"App.config"* Datei, um die Assemblyabhängigkeiten aufzulösen. Dieser Wert sollte festgelegt werden zu einer Anwendung, deren *"App.config"* (in Bezug auf das Visual Studio-Installationsverzeichnis) verwenden möchten.
-3. **NGen-Architektur** (Enum) – die Architektur Ihrer Assembly nativ kompilieren. Die Optionen sind: ein. B für "NotSpecified". X86 c. X64 d. Alle
+3. **NGen-Architektur** (Enum) – die Architektur Ihrer Assembly nativ kompilieren. Die Optionen sind: ein. B für "NotSpecified". X86 c. X64 d. All
 4. **NGen-Priorität** (ganze Zahl zwischen 1 und 3): die Ngen-Prioritätsebene finden Sie unter [Ngen.exe Prioritätsstufen](/dotnet/framework/tools/ngen-exe-native-image-generator#priority-levels).
 
 Hier wird erläutert, die **Eigenschaften** Fenster in Aktion:
@@ -55,9 +55,10 @@ Dadurch wird die Metadaten hinzugefügt, um den Projektverweis innerhalb des VSI
     <NgenArchitecture>X86</NgenArchitecture>
     <NgenPriority>2</NgenPriority>
 </ProjectReference>
- ```
+```
 
- >**Hinweis**: Sie können die CSPROJ-Datei direkt bearbeiten, falls gewünscht.
+> [!NOTE]
+> Sie können die CSPROJ-Datei direkt bearbeiten, falls gewünscht.
 
 ## <a name="extra-information"></a>Zusätzliche Informationen
 

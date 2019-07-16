@@ -29,12 +29,12 @@ caps.latest.revision: 62
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 083c866b10fac257cacf954dfccbcb3875aec53a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 15b9921514f76d788430c1eda66603e9fc446361
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65702645"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891029"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anfügen an laufende Prozesse mit dem Visual Studio Debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Sie können diese Funktion verwenden, zum Debuggen von apps, die auf einer lokal
 
 3. Stellen Sie sicher, dass im Feld **Anfügen an** der Typ des Codes aufgelistet ist, den Sie debuggen möchten. Bei Verwendung der Standardeinstellung **Automatisch** wird versucht, den zu debuggenden Codetyp zu ermitteln. Führen Sie die folgenden Schritte aus, um den Codetyp manuell festzulegen:
 
-    1. Klicken Sie neben dem Feld **Anfügen an:** auf **Auswählen...**.
+    1. Klicken Sie neben dem Feld **Anfügen an:** auf **Auswählen...** .
 
     2. Klicken Sie im Dialogfeld **Codetyp auswählen** auf **Diese Codetypen debuggen** , und wählen Sie die zu debuggenden Codetypen aus.
 
@@ -86,7 +86,8 @@ Sie können diese Funktion verwenden, zum Debuggen von apps, die auf einer lokal
 
    1. Geben Sie im Listenfeld **Qualifizierer** den Namen ein.
 
-      >**Beachten Sie** bei, in späteren Schritten verbinden kann nicht über den Remotecomputernamen, verwenden Sie die IP-Adresse. (Die Portnummer kann automatisch nach dem Auswählen des Prozess angezeigt. Sie können Sie auch manuell eingeben. In der Abbildung unten ist 4020 der Standardport für den Remotedebugger.)
+      > [!NOTE]
+      > Wenn Sie in späteren Schritten Sie eine Verbindung herstellen können nicht mit dem Namen des Remotecomputers, verwenden Sie die IP-Adresse. (Die Portnummer kann automatisch nach dem Auswählen des Prozess angezeigt. Sie können Sie auch manuell eingeben. In der Abbildung unten ist 4020 der Standardport für den Remotedebugger.)
 
    2. Klicken Sie auf den Dropdownpfeil neben dem Listenfeld **Qualifizierer** , und wählen Sie den Computernamen aus der Dropdownliste aus.
 
@@ -123,14 +124,14 @@ Für einige app-Typen (z. B. Windows Store-apps), Sie nicht direkt mit dem Namen
 
 |Szenario|Debuggen-Methode|Prozessname|Anmerkungen zu dieser Version und Links|
 |-|-|-|-|
-|Debuggen einer verwalteten oder nativen app auf dem lokalen Computer|Verwenden, die an den Prozess anhängen oder [standard Debuggen](../debugger/getting-started-with-the-debugger.md)|*appname*.exe|Verwenden Sie zum schnellen zugreifen auf das Dialogfeld **STRG + ALT + P** und geben Sie dann auf den ersten Buchstaben des Namen des Prozesses ein.|
+|Debuggen einer verwalteten oder nativen app auf dem lokalen Computer|Verwenden, die an den Prozess anhängen oder [standard Debuggen](../debugger/getting-started-with-the-debugger.md)|*Appname*.exe|Verwenden Sie zum schnellen zugreifen auf das Dialogfeld **STRG + ALT + P** und geben Sie dann auf den ersten Buchstaben des Namen des Prozesses ein.|
 |Debuggen von ASP.NET-Anwendungen auf dem lokalen Computer nach dem Start der app ohne den debugger|Verwendung an den Prozess anhängen.|iiexpress.exe|Dies kann hilfreich sein, Ihre App laden schneller, z. B. (z. B.) bei der profilerstellung. |
 |Remotedebuggen von ASP.NET 4 oder 4.5 auf einem IIS-server|Remotetools verwenden und an den Prozess anhängen|w3wp.exe|Finden Sie unter [Remote Debugging ASP.NET auf einem Remotecomputer mit IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|Remotedebuggen von ASP.NET Core auf einem IIS-server|Remotetools verwenden und an den Prozess anhängen|dnx.exe|App-Bereitstellung, finden Sie unter [in IIS veröffentlichen](https://docs.asp.net/en/latest/publishing/iis.html). Debuggen, finden Sie unter [Remote Debugging ASP.NET auf einem Remotecomputer mit IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
+|Remotedebuggen von ASP.NET Core auf einem IIS-server|Remotetools verwenden und an den Prozess anhängen|DNX.exe|App-Bereitstellung, finden Sie unter [in IIS veröffentlichen](https://docs.asp.net/en/latest/publishing/iis.html). Debuggen, finden Sie unter [Remote Debugging ASP.NET auf einem Remotecomputer mit IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |Debuggen Sie andere unterstützte app-Typen für einen Serverprozess|Verwenden von Remotetools (Wenn Server remote verfügbar ist) und an den Prozess anhängen|Iexplore.exe oder andere Prozesse|Verwenden Sie ggf. Task-Manager, um den Prozess zu identifizieren. Finden Sie unter [Remotedebuggen](../debugger/remote-debugging.md) und in späteren Abschnitten in diesem Thema|
-|Remotedebuggen einer Windows-desktop-app|Remotetools, und drücken Sie F5|Nicht zutreffend| Finden Sie unter [Remotedebuggen](../debugger/remote-debugging.md)|
-|Remote Debuggen einer Windows Universal (UWP), OneCore, HoloLens und IoT-app|Installiertes App-Paket debuggen|Nicht zutreffend|Verwendung **Debuggen / andere Debugziele / Debuggen Installed App-Pakets** anstelle von **an den Prozess anhängen**|
-|Debuggen einer Windows Universal (UWP), OneCore, HoloLens und IoT-app, die Sie in Visual Studio starten nicht|Installiertes App-Paket debuggen|Nicht zutreffend|Verwendung **Debuggen / andere Debugziele / Debuggen Installed App-Pakets** anstelle von **an den Prozess anhängen**|
+|Remotedebuggen einer Windows-desktop-app|Remotetools, und drücken Sie F5|N/V| Finden Sie unter [Remotedebuggen](../debugger/remote-debugging.md)|
+|Remote Debuggen einer Windows Universal (UWP), OneCore, HoloLens und IoT-app|Installiertes App-Paket debuggen|N/V|Verwendung **Debuggen / andere Debugziele / Debuggen Installed App-Pakets** anstelle von **an den Prozess anhängen**|
+|Debuggen einer Windows Universal (UWP), OneCore, HoloLens und IoT-app, die Sie in Visual Studio starten nicht|Installiertes App-Paket debuggen|N/V|Verwendung **Debuggen / andere Debugziele / Debuggen Installed App-Pakets** anstelle von **an den Prozess anhängen**|
 
 > [!WARNING]
 > Zum Anhängen an eine in JavaScript geschriebene universelle Windows-App müssen Sie zuerst das Debuggen für die App aktivieren. Weitere Informationen hierzu finden Sie unter [Attach the debugger](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) im Windows Developer Center.

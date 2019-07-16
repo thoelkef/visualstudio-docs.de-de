@@ -13,11 +13,11 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d1c616c7cf8ed90ec3d76046892167b9b742a1b0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085674"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68152703"
 ---
 # <a name="getting-started-with-debugger-extensibility"></a>Erste Schritte mit der Erweiterbarkeit des Debuggers
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Die [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] enthält die Informationen
   
 - Die Programmiersprache C++  
   
-- ATL COM  
+- ATL-COM  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
  [Roadmap für die Erweiterung des Debuggers](../../extensibility/debugger/roadmap-for-extending-the-debugger.md)  

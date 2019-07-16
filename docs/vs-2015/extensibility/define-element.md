@@ -12,11 +12,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8cc543a07176f307641c53a2ef3e132881821ce7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58946189"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162158"
 ---
 # <a name="define-element"></a>Define-Element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Definiert ein Symbol Name-Wert-Paar. Dieses Symbol kann durch bedingten Attribut
   
 |Attribut|Beschreibung|  
 |---------------|-----------------|  
-|Name|Erforderlich. Der Name des Symbols:<br /><br /> name="Mode"|  
+|Name|Erforderlich. Der Name des Symbols:<br /><br /> Name = "Modus"|  
 |Wert|Erforderlich. Der Wert des Symbols:<br /><br /> value="Standard"|  
 |Bedingung|Dies ist optional. Weitere Informationen finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   

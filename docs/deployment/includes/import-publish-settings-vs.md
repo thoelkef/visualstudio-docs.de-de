@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 8adac174fbc78778e7154a205088fb9e9a57ae4a
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
-ms.translationtype: MT
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67256668"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68143528"
 ---
 
 1. Klicken Sie auf dem Computer, auf dem das ASP.NET-Projekt in Visual Studio geöffnet ist, erst mit der rechten Maustaste auf das Projekt im Projektmappen-Explorer und anschließend mit der linken auf **Veröffentlichen**.

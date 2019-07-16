@@ -1,265 +1,261 @@
 - name: Entwerfen von Benutzeroberflächen
+  href: designing-user-interfaces.md
+- name: XAML
   items:
-    - name: Toolausrichtung
-      href: designing-user-interfaces.md
-    - name: XAML
+    - name: Entwerfen von XAML-Code in Visual Studio
+      href: designing-xaml-in-visual-studio.md
+    - name: XAML-Designer
       items:
-        - name: Entwerfen von XAML-Code in Visual Studio
-          href: designing-xaml-in-visual-studio.md
-        - name: XAML-Designer
-          items:
-            - name: Übersicht
-              displayName: XAML Designer
-              href: creating-a-ui-by-using-xaml-designer-in-visual-studio.md
-            - name: Arbeiten mit Elementen
-              href: working-with-elements-in-xaml-designer.md
-            - name: Organisieren von Objekten in Layoutcontainern
-              href: organize-objects-into-layout-containers-in-xaml-designer.md
-            - name: Erstellen und Anwenden einer Ressource
-              href: how-to-create-and-apply-a-resource.md
-            - name: 'Exemplarische Vorgehensweise: Bindung an Daten im XAML-Designer'
-              href: walkthrough-binding-to-data-in-xaml-designer.md
-            - name: Tastenkombinationen für XAML-Designer
-              href: keyboard-shortcuts-for-xaml-designer.md
-            - name: Aktivieren und Deaktivieren von Projektcode
-              href: debugging-or-disabling-project-code-in-xaml-designer.md
-            - name: XAML-Fehler und -Warnungen
-              href: xaml-errors-warnings.md
-        - name: Blend for Visual Studio
-          items:
-            - name: Übersicht
-              displayName: Blend for Visual Studio
-              href: creating-a-ui-by-using-blend-for-visual-studio.md
-            - name: Einfügen von Steuerelementen und Ändern des Verhaltens
-              href: insert-controls-and-modify-their-behavior-in-xaml-designer.md
-            - name: 'Einfügen von Bildern, Videos und Audioclips'
-              href: insert-images-videos-and-audio-clips-in-xaml-designer.md
-            - name: Zeichnen von Formen und Pfaden
-              href: draw-shapes-and-paths.md
-            - name: Ändern des Stils von Objekten in Blend
-              href: modify-the-style-of-objects-in-blend.md
-            - name: Animieren von Objekten
-              href: animate-objects-in-xaml-designer.md
-            - name: Anzeigen von Daten
-              href: display-data-in-blend.md
-            - name: Tastenkombinationen und Zusatztasten
-              items:
-                - name: Übersicht
-                  href: keyboard-shortcuts-and-modifier-keys-in-blend.md
-                - name: Tastenkombinationen
-                  href: keyboard-shortcuts-in-blend.md
-                - name: Zusatztasten der Zeichenflächen
-                  href: artboard-modifier-keys-in-blend.md
-                - name: Stifttool-Zusatztasten
-                  href: pen-tool-modifier-keys-in-blend.md
-                - name: Zusatztasten für Direktauswahlwerkzeug
-                  href: direct-selection-tool-modifier-keys-in-blend.md
-            - name: Barrierefreie Produkte und Dienste für Blend
-              href: accessibility-products-and-services-blend.md
-    - name: Windows Presentation Foundation (WPF)
+        - name: Übersicht
+          displayName: XAML Designer
+          href: creating-a-ui-by-using-xaml-designer-in-visual-studio.md
+        - name: Arbeiten mit Elementen
+          href: working-with-elements-in-xaml-designer.md
+        - name: Organisieren von Objekten in Layoutcontainern
+          href: organize-objects-into-layout-containers-in-xaml-designer.md
+        - name: Erstellen und Anwenden einer Ressource
+          href: how-to-create-and-apply-a-resource.md
+        - name: 'Exemplarische Vorgehensweise: Bindung an Daten im XAML-Designer'
+          href: walkthrough-binding-to-data-in-xaml-designer.md
+        - name: Tastenkombinationen für XAML-Designer
+          href: keyboard-shortcuts-for-xaml-designer.md
+        - name: Aktivieren und Deaktivieren von Projektcode
+          href: debugging-or-disabling-project-code-in-xaml-designer.md
+        - name: XAML-Fehler und -Warnungen
+          href: xaml-errors-warnings.md
+    - name: Blend for Visual Studio
       items:
-        - name: Erste Schritte
-          displayName: Windows Presentation Foundation (WPF)
-          href: getting-started-with-wpf.md
-        - name: WPF-Übersicht
-          href: introduction-to-wpf.md
-        - name: Datenbindung
+        - name: Übersicht
+          displayName: Blend for Visual Studio
+          href: creating-a-ui-by-using-blend-for-visual-studio.md
+        - name: Einfügen von Steuerelementen und Ändern des Verhaltens
+          href: insert-controls-and-modify-their-behavior-in-xaml-designer.md
+        - name: 'Einfügen von Bildern, Videos und Audioclips'
+          href: insert-images-videos-and-audio-clips-in-xaml-designer.md
+        - name: Zeichnen von Formen und Pfaden
+          href: draw-shapes-and-paths.md
+        - name: Ändern des Stils von Objekten in Blend
+          href: modify-the-style-of-objects-in-blend.md
+        - name: Animieren von Objekten
+          href: animate-objects-in-xaml-designer.md
+        - name: Anzeigen von Daten
+          href: display-data-in-blend.md
+        - name: Tastenkombinationen und Zusatztasten
           items:
-            - name: WPF-Datenbindung mit LINQ to XML
-              href: wpf-data-binding-with-linq-to-xml-overview.md
-            - name: Dynamische Eigenschaften in LINQ to XML
-              items:
-                - name: Übersicht
-                  displayName: LINQ to XML dynamic properties
-                  href: linq-to-xml-dynamic-properties.md
-                - name: Dynamische Eigenschaften der XAttribute-Klasse
-                  items:
-                    - name: Value (dynamische XAttribute-Eigenschaft)
-                      href: value-xattribute-dynamic-property.md
-                - name: Dynamische Eigenschaften der XElement-Klasse
-                  items:
-                    - name: Attribute (dynamische XElement-Eigenschaft)
-                      href: attribute-xelement-dynamic-property.md
-                    - name: Element (dynamische XElement-Eigenschaft)
-                      href: element-xelement-dynamic-property.md
-                    - name: Elements (dynamische XElement-Eigenschaft)
-                      href: elements-xelement-dynamic-property.md
-                    - name: Descendants (dynamische XElement-Eigenschaft)
-                      href: descendants-xelement-dynamic-property.md
-                    - name: Value (dynamische XElement-Eigenschaft)
-                      href: value-xelement-dynamic-property.md
-                    - name: Xml (dynamische XElement-Eigenschaft)
-                      href: xml-xelement-dynamic-property.md
-                - name: Beispiele
-                  items:
-                    - name: WPF-Datenbindung mithilfe von LINQ to XML
-                      href: wpf-data-binding-using-linq-to-xml-example.md
-                    - name: Erstellen und Ausführen des LinqToXmlDataBinding-Beispiels
-                      href: how-to-build-and-run-the-linqtoxmldatabinding-example.md
-                    - name: 'Exemplarische Vorgehensweise: LINQ to XML-Datenbindung'
-                      href: walkthrough-linqtoxmldatabinding-example.md
-                    - name: L2DBForm.xaml-Quellcode
-                      href: l2dbform-xaml-source-code.md
-                    - name: L2DBForm.xaml.cs-Quellcode
-                      href: l2dbform-xaml-cs-source-code.md
-    - name: Windows Forms
+            - name: Übersicht
+              href: keyboard-shortcuts-and-modifier-keys-in-blend.md
+            - name: Tastenkombinationen
+              href: keyboard-shortcuts-in-blend.md
+            - name: Zusatztasten der Zeichenflächen
+              href: artboard-modifier-keys-in-blend.md
+            - name: Stifttool-Zusatztasten
+              href: pen-tool-modifier-keys-in-blend.md
+            - name: Zusatztasten für Direktauswahlwerkzeug
+              href: direct-selection-tool-modifier-keys-in-blend.md
+        - name: Barrierefreie Produkte und Dienste für Blend
+          href: accessibility-products-and-services-blend.md
+- name: Windows Presentation Foundation (WPF)
+  items:
+    - name: Erste Schritte
+      displayName: Windows Presentation Foundation (WPF)
+      href: getting-started-with-wpf.md
+    - name: WPF-Übersicht
+      href: introduction-to-wpf.md
+    - name: Datenbindung
       items:
-        - name: 'Tutorial 1: Erstellen einer Bildanzeige (C#)'
+        - name: WPF-Datenbindung mit LINQ to XML
+          href: wpf-data-binding-with-linq-to-xml-overview.md
+        - name: Dynamische Eigenschaften in LINQ to XML
           items:
             - name: Übersicht
-              displayName: Tutorial 1 Picture viewer
-              href: ../ide/tutorial-1-create-a-picture-viewer.md
-            - name: 'Schritt 1: Erstellen eines Windows Forms-Anwendungsprojekts'
-              href: ../ide/step-1-create-a-windows-forms-application-project.md
-            - name: 'Schritt 2: Ausführen des Programms'
-              href: ../ide/step-2-run-your-program.md
-            - name: 'Schritt 3: Festlegen der Formulareigenschaften'
-              href: ../ide/step-3-set-your-form-properties.md
-            - name: 'Schritt 4: Erstellen eines Layouts für das Formular mit einem TableLayoutPanel-Steuerelement'
-              href: ../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md
-            - name: 'Schritt 5: Hinzufügen von Steuerelementen zum Formular'
-              href: ../ide/step-5-add-controls-to-your-form.md
-            - name: 'Schritt 6: Benennen der Schaltflächen-Steuerelemente'
-              href: ../ide/step-6-name-your-button-controls.md
-            - name: 'Schritt 7: Hinzufügen von Dialogfeldkomponenten zum Formular'
-              href: ../ide/step-7-add-dialog-components-to-your-form.md
-            - name: 'Schritt 8: Schreiben von Code für den Ereignishandler der Schaltfläche „Bild anzeigen“'
-              href: ../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md
-            - name: 'Schritt 9: Überprüfen, Kommentieren und Testen des Codes'
-              href: ../ide/step-9-review-comment-and-test-your-code.md
-            - name: 'Schritt 10: Schreiben von Code für zusätzliche Schaltflächen und ein Kontrollkästchen'
-              href: ../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
-            - name: 'Schritt 11: Ausführen des Programms und Ausprobieren weiterer Features'
-              href: ../ide/step-11-run-your-program-and-try-other-features.md
-        - name: 'Tutorial 2: Erstellen eines Mathetests mit Zeitmessung (C#)'
-          items:
-            - name: Übersicht
-              displayName: Tutorial 2 Timed math quiz
-              href: ../ide/tutorial-2-create-a-timed-math-quiz.md
-            - name: 'Schritt 1: Erstellen eines Projekts und Hinzufügen von Bezeichnungen zum Formular'
-              href: ../ide/step-1-create-a-project-and-add-labels-to-your-form.md
-            - name: 'Schritt 2: Erstellen einer zufälligen Additionsaufgabe'
-              href: ../ide/step-2-create-a-random-addition-problem.md
-            - name: 'Schritt 3: Hinzufügen eines Countdowntimers'
-              href: ../ide/step-3-add-a-countdown-timer.md
-            - name: 'Schritt 4: Hinzufügen der CheckTheAnswer()-Methode'
-              href: ../ide/step-4-add-the-checktheanswer-parens-method.md
-            - name: 'Schritt 5: Hinzufügen von Enter-Ereignishandlern für die NumericUpDown-Steuerelemente'
-              href: ../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md
-            - name: 'Schritt 6: Hinzufügen einer Subtraktionsaufgabe'
-              href: ../ide/step-6-add-a-subtraction-problem.md
-            - name: 'Schritt 7: Hinzufügen von Multiplikations- und Divisionsaufgaben'
-              href: ../ide/step-7-add-multiplication-and-division-problems.md
-            - name: 'Schritt 8: Anpassen des Quiz'
-              href: ../ide/step-8-customize-the-quiz.md
-        - name: 'Tutorial 3: Erstellen eines Vergleichsspiels (C#)'
-          items:
-            - name: Übersicht
-              displayName: Tutorial 3 Matching game
-              href: ../ide/tutorial-3-create-a-matching-game.md
-            - name: 'Schritt 1: Erstellen eines Projekts und Hinzufügen einer Tabelle zum Formular'
-              href: ../ide/step-1-create-a-project-and-add-a-table-to-your-form.md
-            - name: 'Schritt 2: Hinzufügen eines zufällig ausgewählten Objekts und einer Liste von Symbolen'
-              href: ../ide/step-2-add-a-random-object-and-a-list-of-icons.md
-            - name: 'Schritt 3: Zuweisen eines zufälligen Symbols zu jeder Bezeichnung'
-              href: ../ide/step-3-assign-a-random-icon-to-each-label.md
-            - name: 'Schritt 4: Hinzufügen eines Click-Ereignishandlers zu jeder Bezeichnung'
-              href: ../ide/step-4-add-a-click-event-handler-to-each-label.md
-            - name: 'Schritt 5: Hinzufügen von Bezeichnungsverweisen'
-              href: ../ide/step-5-add-label-references.md
-            - name: 'Schritt 6: Hinzufügen von Timern'
-              href: ../ide/step-6-add-a-timer.md
-            - name: 'Schritt 7: Beibehalten der Sichtbarkeit von Paaren'
-              href: ../ide/step-7-keep-pairs-visible.md
-            - name: 'Schritt 8: Hinzufügen einer Methode, um zu überprüfen, ob ein Spieler gewonnen hat'
-              href: ../ide/step-8-add-a-method-to-verify-whether-the-player-won.md
-            - name: 'Schritt 9: Ausprobieren weiterer Features'
-              href: ../ide/step-9-try-other-features.md
-    - name: 3D-Objekte
+              displayName: LINQ to XML dynamic properties
+              href: linq-to-xml-dynamic-properties.md
+            - name: Dynamische Eigenschaften der XAttribute-Klasse
+              items:
+                - name: Value (dynamische XAttribute-Eigenschaft)
+                  href: value-xattribute-dynamic-property.md
+            - name: Dynamische Eigenschaften der XElement-Klasse
+              items:
+                - name: Attribute (dynamische XElement-Eigenschaft)
+                  href: attribute-xelement-dynamic-property.md
+                - name: Element (dynamische XElement-Eigenschaft)
+                  href: element-xelement-dynamic-property.md
+                - name: Elements (dynamische XElement-Eigenschaft)
+                  href: elements-xelement-dynamic-property.md
+                - name: Descendants (dynamische XElement-Eigenschaft)
+                  href: descendants-xelement-dynamic-property.md
+                - name: Value (dynamische XElement-Eigenschaft)
+                  href: value-xelement-dynamic-property.md
+                - name: Xml (dynamische XElement-Eigenschaft)
+                  href: xml-xelement-dynamic-property.md
+            - name: Beispiele
+              items:
+                - name: WPF-Datenbindung mithilfe von LINQ to XML
+                  href: wpf-data-binding-using-linq-to-xml-example.md
+                - name: Erstellen und Ausführen des LinqToXmlDataBinding-Beispiels
+                  href: how-to-build-and-run-the-linqtoxmldatabinding-example.md
+                - name: 'Exemplarische Vorgehensweise: LINQ to XML-Datenbindung'
+                  href: walkthrough-linqtoxmldatabinding-example.md
+                - name: L2DBForm.xaml-Quellcode
+                  href: l2dbform-xaml-source-code.md
+                - name: L2DBForm.xaml.cs-Quellcode
+                  href: l2dbform-xaml-cs-source-code.md
+- name: Windows Forms
+  items:
+    - name: 'Tutorial 1: Erstellen einer Bildanzeige (C#)'
       items:
-        - name: Arbeiten mit 3D-Objekten für Spiele und Apps
-          href: working-with-3-d-assets-for-games-and-apps.md
-        - name: 'Vorgehensweise: Verwenden von 3D-Objekten in Spielen oder Apps'
-          href: using-3-d-assets-in-your-game-or-app.md
-        - name: Texturen und Bilder
+        - name: Übersicht
+          displayName: Tutorial 1 Picture viewer
+          href: ../ide/tutorial-1-create-a-picture-viewer.md
+        - name: 'Schritt 1: Erstellen eines Windows Forms-Anwendungsprojekts'
+          href: ../ide/step-1-create-a-windows-forms-application-project.md
+        - name: 'Schritt 2: Ausführen des Programms'
+          href: ../ide/step-2-run-your-program.md
+        - name: 'Schritt 3: Festlegen der Formulareigenschaften'
+          href: ../ide/step-3-set-your-form-properties.md
+        - name: 'Schritt 4: Erstellen eines Layouts für das Formular mit einem TableLayoutPanel-Steuerelement'
+          href: ../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md
+        - name: 'Schritt 5: Hinzufügen von Steuerelementen zum Formular'
+          href: ../ide/step-5-add-controls-to-your-form.md
+        - name: 'Schritt 6: Benennen der Schaltflächen-Steuerelemente'
+          href: ../ide/step-6-name-your-button-controls.md
+        - name: 'Schritt 7: Hinzufügen von Dialogfeldkomponenten zum Formular'
+          href: ../ide/step-7-add-dialog-components-to-your-form.md
+        - name: 'Schritt 8: Schreiben von Code für den Ereignishandler der Schaltfläche „Bild anzeigen“'
+          href: ../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md
+        - name: 'Schritt 9: Überprüfen, Kommentieren und Testen des Codes'
+          href: ../ide/step-9-review-comment-and-test-your-code.md
+        - name: 'Schritt 10: Schreiben von Code für zusätzliche Schaltflächen und ein Kontrollkästchen'
+          href: ../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
+        - name: 'Schritt 11: Ausführen des Programms und Ausprobieren weiterer Features'
+          href: ../ide/step-11-run-your-program-and-try-other-features.md
+    - name: 'Tutorial 2: Erstellen eines Mathetests mit Zeitmessung (C#)'
+      items:
+        - name: Übersicht
+          displayName: Tutorial 2 Timed math quiz
+          href: ../ide/tutorial-2-create-a-timed-math-quiz.md
+        - name: 'Schritt 1: Erstellen eines Projekts und Hinzufügen von Bezeichnungen zum Formular'
+          href: ../ide/step-1-create-a-project-and-add-labels-to-your-form.md
+        - name: 'Schritt 2: Erstellen einer zufälligen Additionsaufgabe'
+          href: ../ide/step-2-create-a-random-addition-problem.md
+        - name: 'Schritt 3: Hinzufügen eines Countdowntimers'
+          href: ../ide/step-3-add-a-countdown-timer.md
+        - name: 'Schritt 4: Hinzufügen der CheckTheAnswer()-Methode'
+          href: ../ide/step-4-add-the-checktheanswer-parens-method.md
+        - name: 'Schritt 5: Hinzufügen von Enter-Ereignishandlern für die NumericUpDown-Steuerelemente'
+          href: ../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md
+        - name: 'Schritt 6: Hinzufügen einer Subtraktionsaufgabe'
+          href: ../ide/step-6-add-a-subtraction-problem.md
+        - name: 'Schritt 7: Hinzufügen von Multiplikations- und Divisionsaufgaben'
+          href: ../ide/step-7-add-multiplication-and-division-problems.md
+        - name: 'Schritt 8: Anpassen des Quiz'
+          href: ../ide/step-8-customize-the-quiz.md
+    - name: 'Tutorial 3: Erstellen eines Vergleichsspiels (C#)'
+      items:
+        - name: Übersicht
+          displayName: Tutorial 3 Matching game
+          href: ../ide/tutorial-3-create-a-matching-game.md
+        - name: 'Schritt 1: Erstellen eines Projekts und Hinzufügen einer Tabelle zum Formular'
+          href: ../ide/step-1-create-a-project-and-add-a-table-to-your-form.md
+        - name: 'Schritt 2: Hinzufügen eines zufällig ausgewählten Objekts und einer Liste von Symbolen'
+          href: ../ide/step-2-add-a-random-object-and-a-list-of-icons.md
+        - name: 'Schritt 3: Zuweisen eines zufälligen Symbols zu jeder Bezeichnung'
+          href: ../ide/step-3-assign-a-random-icon-to-each-label.md
+        - name: 'Schritt 4: Hinzufügen eines Click-Ereignishandlers zu jeder Bezeichnung'
+          href: ../ide/step-4-add-a-click-event-handler-to-each-label.md
+        - name: 'Schritt 5: Hinzufügen von Bezeichnungsverweisen'
+          href: ../ide/step-5-add-label-references.md
+        - name: 'Schritt 6: Hinzufügen von Timern'
+          href: ../ide/step-6-add-a-timer.md
+        - name: 'Schritt 7: Beibehalten der Sichtbarkeit von Paaren'
+          href: ../ide/step-7-keep-pairs-visible.md
+        - name: 'Schritt 8: Hinzufügen einer Methode, um zu überprüfen, ob ein Spieler gewonnen hat'
+          href: ../ide/step-8-add-a-method-to-verify-whether-the-player-won.md
+        - name: 'Schritt 9: Ausprobieren weiterer Features'
+          href: ../ide/step-9-try-other-features.md
+- name: 3D-Objekte
+  items:
+    - name: Arbeiten mit 3D-Objekten für Spiele und Apps
+      href: working-with-3-d-assets-for-games-and-apps.md
+    - name: 'Vorgehensweise: Verwenden von 3D-Objekten in Spielen oder Apps'
+      href: using-3-d-assets-in-your-game-or-app.md
+    - name: Texturen und Bilder
+      items:
+        - name: Arbeiten mit Texturen und Bildern
+          href: working-with-textures-and-images.md
+        - name: Grafik-Editor
+          href: image-editor.md
+        - name: Beispiele für die Bildbearbeitung
           items:
-            - name: Arbeiten mit Texturen und Bildern
-              href: working-with-textures-and-images.md
-            - name: Grafik-Editor
-              href: image-editor.md
-            - name: Beispiele für die Bildbearbeitung
-              items:
-                - name: Erstellen einer Basistextur
-                  href: how-to-create-a-basic-texture.md
-                - name: Erstellen und Ändern von MIP-Ebenen
-                  href: how-to-create-and-modify-mip-levels.md
-        - name: 3D-Modelle
+            - name: Erstellen einer Basistextur
+              href: how-to-create-a-basic-texture.md
+            - name: Erstellen und Ändern von MIP-Ebenen
+              href: how-to-create-and-modify-mip-levels.md
+    - name: 3D-Modelle
+      items:
+        - name: Arbeiten mit 3D-Modellen
+          href: working-with-3-d-models.md
+        - name: Modell-Editor
+          href: model-editor.md
+        - name: Beispiele für den Modell-Editor
           items:
-            - name: Arbeiten mit 3D-Modellen
-              href: working-with-3-d-models.md
-            - name: Modell-Editor
-              href: model-editor.md
-            - name: Beispiele für den Modell-Editor
-              items:
-                - name: Erstellen eines einfachen 3D-Modells
-                  href: how-to-create-a-basic-3-d-model.md
-                - name: Ändern des Pivotpunkts eines 3D-Modells
-                  href: how-to-modify-the-pivot-point-of-a-3-d-model.md
-                - name: Modellieren eines 3D-Geländes
-                  href: how-to-model-3-d-terrain.md
-                - name: Anwenden eines Shaders auf ein 3D-Modell
-                  href: how-to-apply-a-shader-to-a-3-d-model.md
-        - name: Shader
+            - name: Erstellen eines einfachen 3D-Modells
+              href: how-to-create-a-basic-3-d-model.md
+            - name: Ändern des Pivotpunkts eines 3D-Modells
+              href: how-to-modify-the-pivot-point-of-a-3-d-model.md
+            - name: Modellieren eines 3D-Geländes
+              href: how-to-model-3-d-terrain.md
+            - name: Anwenden eines Shaders auf ein 3D-Modell
+              href: how-to-apply-a-shader-to-a-3-d-model.md
+    - name: Shader
+      items:
+        - name: Arbeiten mit Shadern
+          href: working-with-shaders.md
+        - name: Shader-Designer
+          href: shader-designer.md
+        - name: Shader-Designer-Knoten
           items:
-            - name: Arbeiten mit Shadern
-              href: working-with-shaders.md
-            - name: Shader-Designer
-              href: shader-designer.md
-            - name: Shader-Designer-Knoten
-              items:
-                - name: Übersicht
-                  displayName: Shader designer nodes
-                  href: shader-designer-nodes.md
-                - name: Konstante Knoten
-                  href: constant-nodes.md
-                - name: Parameterknoten
-                  href: parameter-nodes.md
-                - name: Texturknoten
-                  href: texture-nodes.md
-                - name: Berechnungsknoten
-                  href: math-nodes.md
-                - name: Hilfsprogrammknoten
-                  href: utility-nodes.md
-                - name: Filterknoten
-                  href: filter-nodes.md
-            - name: Beispiele für den Shader-Designer
-              items:
-                - name: Erstellen eines einfachen Farbshaders
-                  displayName: Shader designer example
-                  href: how-to-create-a-basic-color-shader.md
-                - name: Erstellen eines einfachen Lambert-Shaders
-                  href: how-to-create-a-basic-lambert-shader.md
-                - name: Erstellen eines Standard-Phong-Shaders
-                  href: how-to-create-a-basic-phong-shader.md
-                - name: Erstellen eines Basistexturshaders
-                  href: how-to-create-a-basic-texture-shader.md
-                - name: Erstellen eines Graustufentextur-Shaders
-                  href: how-to-create-a-grayscale-texture-shader.md
-                - name: Erstellen eines geometriebasierten Farbverlauf-Shaders
-                  href: how-to-create-a-geometry-based-gradient-shader.md
-                - name: 'Exemplarische Vorgehensweise: Erstellen einer realistischen 3D-Billardkugel'
-                  href: walkthrough-creating-a-realistic-3-d-billiard-ball.md
-                - name: Exportieren eines Shaders
-                  href: how-to-export-a-shader.md
-        - name: Exportieren von Texturen
+            - name: Übersicht
+              displayName: Shader designer nodes
+              href: shader-designer-nodes.md
+            - name: Konstante Knoten
+              href: constant-nodes.md
+            - name: Parameterknoten
+              href: parameter-nodes.md
+            - name: Texturknoten
+              href: texture-nodes.md
+            - name: Berechnungsknoten
+              href: math-nodes.md
+            - name: Hilfsprogrammknoten
+              href: utility-nodes.md
+            - name: Filterknoten
+              href: filter-nodes.md
+        - name: Beispiele für den Shader-Designer
           items:
-            - name: 'Exportieren einer Textur, die Mipmaps enthält'
-              href: how-to-export-a-texture-that-contains-mipmaps.md
-            - name: 'Exportieren einer Textur, in der integrierte Alphakanäle verwendet werden'
-              href: how-to-export-a-texture-that-has-premultiplied-alpha.md
-            - name: Exportieren einer Textur für die Verwendung mit Direct2D- oder JavaScript-Apps
-              href: how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md
-    - name: Visual Studio-Bildbibliothek
-      href: the-visual-studio-image-library.md
-- name: Entwickeln von Apps mit dem Workflow-Designer
-  href: ../workflow-designer/developing-applications-with-the-workflow-designer.md
+            - name: Erstellen eines einfachen Farbshaders
+              displayName: Shader designer example
+              href: how-to-create-a-basic-color-shader.md
+            - name: Erstellen eines einfachen Lambert-Shaders
+              href: how-to-create-a-basic-lambert-shader.md
+            - name: Erstellen eines Standard-Phong-Shaders
+              href: how-to-create-a-basic-phong-shader.md
+            - name: Erstellen eines Basistexturshaders
+              href: how-to-create-a-basic-texture-shader.md
+            - name: Erstellen eines Graustufentextur-Shaders
+              href: how-to-create-a-grayscale-texture-shader.md
+            - name: Erstellen eines geometriebasierten Farbverlauf-Shaders
+              href: how-to-create-a-geometry-based-gradient-shader.md
+            - name: 'Exemplarische Vorgehensweise: Erstellen einer realistischen 3D-Billardkugel'
+              href: walkthrough-creating-a-realistic-3-d-billiard-ball.md
+            - name: Exportieren eines Shaders
+              href: how-to-export-a-shader.md
+    - name: Exportieren von Texturen
+      items:
+        - name: 'Exportieren einer Textur, die Mipmaps enthält'
+          href: how-to-export-a-texture-that-contains-mipmaps.md
+        - name: 'Exportieren einer Textur, in der integrierte Alphakanäle verwendet werden'
+          href: how-to-export-a-texture-that-has-premultiplied-alpha.md
+        - name: Exportieren einer Textur für die Verwendung mit Direct2D- oder JavaScript-Apps
+          href: how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md
+- name: Visual Studio-Bildbibliothek
+  href: the-visual-studio-image-library.md
