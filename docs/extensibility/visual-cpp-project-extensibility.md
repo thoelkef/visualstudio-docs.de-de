@@ -1,6 +1,6 @@
 ---
 title: Visual C++-projekterweiterbarkeit
-ms.date: 01/25/2019
+ms.date: 04/23/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94f61902090c2ada0770a41375d5cb501b92580f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 10869ad290b0b8df614d25d792d0b3ed1e88eb17
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660738"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825570"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++-Projekt Erweiterbarkeit und Toolset Systemintegration
 
@@ -55,11 +55,24 @@ Diese Dateien definieren wenig selbst. Stattdessen importieren sie die anderen D
 
 Diese Eigenschaftswerte Geben Sie die Namen von Ordnern unter dem `$(VCTargetsPath)` Stammordner:
 
-`$(VCTargetsPath)`\\ &nbsp;&nbsp;&nbsp;&nbsp;*Anwendungstyp* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(ApplicationType)` \\ &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationTypeRevision)`\\ &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *Plattformen* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)` \\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *PlatformToolsets* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)` &nbsp;&nbsp;&nbsp;&nbsp;Plattformen\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Wird verwendet, wenn `$(ApplicationType)` für Windows Desktop-Projekte leer ist.) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`
+> `$(VCTargetsPath)`\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;*Anwendungstyp*\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationType)`\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationTypeRevision)`\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Plattformen*\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)` \
+&nbsp;&nbsp;&nbsp;&nbsp;*Plattformen*\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`
+
+Die `$(VCTargetsPath)` \\ *Plattformen* \\ Ordner wird verwendet, wenn `$(ApplicationType)` leer ist, für Windows Desktop-Projekte.
 
 ### <a name="add-a-new-platform-toolset"></a>Fügen Sie ein neues Plattformtoolset hinzu.
 
-Erstellen ein neues Toolsets, z. B. "MyToolset" für die vorhandenen Win32-Plattform Hinzufügen einer *MyToolset* Unterordner `$(VCTargetsPath)`  *\\Plattformen\\Win32\\ \PlatformToolsets\\*, und erstellen Sie *Toolset.props* und *Toolset.targets* darin enthaltenen Dateien.
+Erstellen ein neues Toolsets, z. B. "MyToolset" für die vorhandenen Win32-Plattform Hinzufügen einer *MyToolset* Unterordner `$(VCTargetsPath)`  *\\Plattformen\\Win32\\ \PlatformToolsets\\* , und erstellen Sie *Toolset.props* und *Toolset.targets* darin enthaltenen Dateien.
 
 Ordnernamen weisen unter *\PlatformToolsets* wird in der **Projekteigenschaften** Dialogfeld als einen verfügbaren **Plattformtoolset** für die angegebene Plattform, wie hier gezeigt:
 
@@ -69,7 +82,7 @@ Erstellen Sie ähnliche *MyToolset* Ordner und *Toolset.props* und *Toolset.targ
 
 ### <a name="add-a-new-platform"></a>Hinzufügen einer neuen Plattform
 
-Erstellen Sie eine neue Plattform, z. B. "MyPlatform", Hinzufügen einer *MyPlatform* Unterordner `$(VCTargetsPath)`  *\\Plattformen\\*, und erstellen Sie  *Platform.Default.props*, *Platform.props*, und *Platform.targets* darin enthaltenen Dateien. Erstellen Sie auch eine `$(VCTargetsPath)`  *\\Plattformen\\*<strong><em>MyPlatform</em></strong>*\\\PlatformToolsets\\*  Ordner, und mindestens ein Toolset erstellen.
+Erstellen Sie eine neue Plattform, z. B. "MyPlatform", Hinzufügen einer *MyPlatform* Unterordner `$(VCTargetsPath)`  *\\Plattformen\\* , und erstellen Sie  *Platform.Default.props*, *Platform.props*, und *Platform.targets* darin enthaltenen Dateien. Erstellen Sie auch eine `$(VCTargetsPath)`  *\\Plattformen\\* <strong><em>MyPlatform</em></strong> *\\\PlatformToolsets\\*  Ordner, und mindestens ein Toolset erstellen.
 
 Namen für alle Ordner unter der *Plattformen* Ordner für die einzelnen `$(ApplicationType)` und `$(ApplicationTypeRevision)` angezeigt werden, in der IDE als verfügbare **Plattform** Optionen für ein Projekt.
 
@@ -85,29 +98,50 @@ Um einen neuen Anwendungstyp hinzuzufügen, erstellen Sie eine *MyApplicationTyp
 
 Eine vereinfachte Struktur von Direktiven für Dateien in Microsoft C++-Eigenschaften und-Zielen sieht wie folgt aus:
 
-`$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(MSBuildExtensionsPath)` \\ `$(MSBuildToolsVersion)` \\ *"Microsoft.Common.props"* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportBefore*\\*Standard* \\ \*. *Props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Anwendungstyp* \\ `$(ApplicationType)` \\ *Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Anwendungstyp* \\ `$(ApplicationType)` \\ `$(ApplicationTypeRevision)` \\ *Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Anwendungstyp*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*Plattformen* \\ `$(Platform)` \\ *Platform.default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportAfter*\\*Standard*\\\*. *Eigenschaftendatei*
+> `$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(MSBuildExtensionsPath)`\\`$(MSBuildToolsVersion)`\\*Microsoft.Common.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportBefore*\\*Standard*\\\*. *Eigenschaftendatei* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Anwendungstyp*\\`$(ApplicationType)`\\*Default.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Anwendungstyp*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*Default.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Anwendungstyp*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*Plattformen* \\ `$(Platform)` \\  *Platform.Default.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportAfter*\\*Standard*\\\*. *Eigenschaftendatei*
 
 Windows-Desktop-Projekten nicht definieren `$(ApplicationType)`, sodass sie nur importieren
 
-`$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(MSBuildExtensionsPath)` \\ `$(MSBuildToolsVersion)` \\ *"Microsoft.Common.props"* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportBefore*\\*Standard* \\ \*. *Props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Plattformen* \\ `$(Platform)` \\ *Platform.default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportAfter* \\  *Standard*\\\*. *Eigenschaftendatei*
+> `$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(MSBuildExtensionsPath)`\\`$(MSBuildToolsVersion)`\\*Microsoft.Common.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportBefore*\\*Standard*\\\*. *Eigenschaftendatei* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Platforms*\\`$(Platform)`\\*Platform.default.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportAfter*\\*Standard*\\\*. *Eigenschaftendatei*
 
 Wir verwenden die `$(_PlatformFolder)` Eigenschaft zum Speichern der `$(Platform)` Ordnerpfade Plattform. Diese Eigenschaft ist
 
-`$(VCTargetsPath)`\\*Plattformen*\\`$(Platform)`
+> `$(VCTargetsPath)`\\*Plattformen*\\`$(Platform)`
 
 für Windows Desktop-apps und
 
-`$(VCTargetsPath)`\\*Anwendungstyp*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*Plattformen*\\`$(Platform)`
+> `$(VCTargetsPath)`\\*Anwendungstyp*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*Plattformen*\\`$(Platform)`
 
 für alles andere.
 
 Die Props-Dateien werden in dieser Reihenfolge importiert:
 
-`$(VCTargetsPath)`\\*Microsoft.Cpp.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *Platform.props* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Microsoft.Cpp.Platform.props* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *ImportBefore* \\\*. *Eigenschaftendateien* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *\PlatformToolsets*\\`$(PlatformToolset)`\\*Toolset.props* &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\ *</c152>ImportAfter<spanclass="notranslate">*\\\*. *Eigenschaftendatei</span>*
+> `$(VCTargetsPath)`\\*Microsoft.Cpp.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*Platform.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft.Cpp.Platform.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportBefore*\\\*. *Eigenschaftendatei* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*PlatformToolsets*\\`$(PlatformToolset)`\\*Toolset.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportAfter*\\\*. *Eigenschaftendatei*
 
 Targets-Dateien werden in dieser Reihenfolge importiert:
 
-`$(VCTargetsPath)`\\*Microsoft.Cpp.targets* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Microsoft.Cpp.Current.targets* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *Platform.targets* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Microsoft.Cpp.Platform.targets*  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</c102><spanclass="notranslate">&nbsp;`$(_PlatformFolder)`\\*ImportBefore*\\\*. *Ziele* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *\PlatformToolsets* \\ `$(PlatformToolset)` \\ *Toolset.target* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *ImportAfter* \\\*. *Ziele</span>*
+> `$(VCTargetsPath)`\\*Microsoft.Cpp.targets* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft.Cpp.Current.targets* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*Platform.targets* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft.Cpp.Platform.targets* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportBefore*\\\*. *Ziele* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*PlatformToolsets*\\`$(PlatformToolset)`\\*Toolset.target* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportAfter*\\\*. *Ziele*
 
 Wenn Sie einige Standardeigenschaften für das Toolset definieren müssen, können Sie Dateien in die entsprechenden ImportBefore und ImportAfter Ordner hinzufügen.
 
@@ -119,13 +153,13 @@ Obwohl ein Toolset für den gesamten Buildprozess überschrieben werden kann, m�
 
 - `$(VCTargetsPath)`\\*Microsoft.CppCommon.targets*
 
-   Diese Datei definiert die wichtigsten Teile des Buildprozesses native und auch importiert:
+  Diese Datei definiert die wichtigsten Teile des Buildprozesses native und auch importiert:
 
-   - `$(VCTargetsPath)`\\*Microsoft.CppBuild.targets*
+  - `$(VCTargetsPath)`\\*Microsoft.CppBuild.targets*
 
-   - `$(VCTargetsPath)`\\*Microsoft.BuildSteps.targets*
+  - `$(VCTargetsPath)`\\*Microsoft.BuildSteps.targets*
 
-   - `$(MSBuildToolsPath)`\\*Microsoft.Common.Targets*
+  - `$(MSBuildToolsPath)`\\*Microsoft.Common.Targets*
 
 - `$(VCTargetsPath)`\\*Microsoft.Cpp.Common.props*
 
@@ -290,11 +324,11 @@ Befehlszeile TLog-Dateien enthalten Informationen über die Befehlszeilen, die i
 
 *Lesen* TLog-Dateien (\*. Read.\*. TLog) enthält Informationen zu den Quelldateien und ihre Abhängigkeiten.
 
-Ein Caretzeichen (**^**) am Anfang einer Zeile gibt Sie an einer oder mehreren Quellen. Datenquellen, die gemeinsam die gleichen Abhängigkeiten werden durch einen senkrechten Strich getrennt (**\|**).
+Ein Caretzeichen ( **^** ) am Anfang einer Zeile gibt Sie an einer oder mehreren Quellen. Datenquellen, die gemeinsam die gleichen Abhängigkeiten werden durch einen senkrechten Strich getrennt ( **\|** ).
 
 Nach der Quellen, die auf einer eigenen Zeile werden Abhängigkeitsdateien aufgeführt. Alle Dateinamen sind vollständige Pfade.
 
-Nehmen wir beispielsweise an, die Ihre Projektquellen befinden sich unter *F:\\testen\\ConsoleApplication1\\ConsoleApplication1*. Wenn Ihre Quelldatei *"Class1.cpp"*, hat diese Anweisungen enthält,
+Nehmen wir beispielsweise an, die Ihre Projektquellen befinden sich unter *F:\\testen\\ConsoleApplication1\\ConsoleApplication1*. Wenn Ihre Quelldatei *"Class1.cpp"* , hat diese Anweisungen enthält,
 
 ```cpp
 #include "stdafx.h" //precompiled header
@@ -315,11 +349,11 @@ Dateinamen in Großbuchstaben zu schreiben ist nicht erforderlich, aber es ist e
 
 *Schreiben von* .tlog (\*.write.\*. Nachverfolgungsprotokolldateien) verbinden Quellen und Ausgaben.
 
-Ein Caretzeichen (**^**) am Anfang einer Zeile gibt Sie an einer oder mehreren Quellen. Mehrere Datenquellen werden getrennt durch einen senkrechten Strich (**\|**).
+Ein Caretzeichen ( **^** ) am Anfang einer Zeile gibt Sie an einer oder mehreren Quellen. Mehrere Datenquellen werden getrennt durch einen senkrechten Strich ( **\|** ).
 
 Die Ausgabedateien, die aus den Quellen erstellt, sollte nach der die Quellen, die auf einer eigenen Zeile aufgeführt werden. Alle Dateinamen muss die vollständige Pfade.
 
-Z. B. für ein einfaches ConsoleApplication-Projekt, die eine zusätzliche Quelldatei *"Class1.cpp"*, *link.write.1.tlog* Datei enthalten kann:
+Z. B. für ein einfaches ConsoleApplication-Projekt, die eine zusätzliche Quelldatei *"Class1.cpp"* , *link.write.1.tlog* Datei enthalten kann:
 
 ```tlog
 ^F:\TEST\CONSOLEAPPLICATION1\CONSOLEAPPLICATION1\DEBUG\CLASS1.OBJ|F:\TEST\CONSOLEAPPLICATION1\CONSOLEAPPLICATION1\DEBUG\CONSOLEAPPLICATION1.OBJ|F:\TEST\CONSOLEAPPLICATION1\CONSOLEAPPLICATION1\DEBUG\STDAFX.OBJ
@@ -436,7 +470,7 @@ Die Regel muss hinzugefügt werden die `PropertyPageSchema` Elementgruppe:
 
 CPS unterstützt andere Werte für den Typ, aber sie können in Visual C++-Projekten nicht verwendet.
 
-Wenn die Regel in mehr als einem Kontext angezeigt werden soll, verwenden Sie Semikolons (**;**) um die Kontextwerte zu trennen, wie hier gezeigt:
+Wenn die Regel in mehr als einem Kontext angezeigt werden soll, verwenden Sie Semikolons ( **;** ) um die Kontextwerte zu trennen, wie hier gezeigt:
 
 ```xml
 <PropertyPageSchema Include="$(MyFolder)\MyRule.xml">
@@ -554,7 +588,7 @@ Die Upgrader verwendet diese Kriterien um zu entscheiden, ob ein Projekt oder ni
 
 1. Die Eigenschaft `_UpgradePlatformToolsetFor_<safe_toolset_name>` für das aktuelle Toolset definiert ist und sein Wert entspricht nicht dem aktuellen Toolsets.
 
-   In diesen Eigenschaftsnamen  *\<Safe_toolset_name >* mit allen nicht-alphanumerische Zeichen, die durch einen Unterstrich ersetzt der den Namen der Toolset darstellt (**\_**).
+   In diesen Eigenschaftsnamen  *\<Safe_toolset_name >* mit allen nicht-alphanumerische Zeichen, die durch einen Unterstrich ersetzt der den Namen der Toolset darstellt ( **\_** ).
 
 Wenn ein Projekt nicht aktualisiert werden kann, wird es beteiligt ist *Lösung Neuzuweisungen*. Weitere Informationen finden Sie unter [IVsTrackProjectRetargeting2](/dotnet/api/microsoft.visualstudio.shell.interop.ivstrackprojectretargeting2).
 

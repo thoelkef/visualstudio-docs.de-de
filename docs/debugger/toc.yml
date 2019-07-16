@@ -710,6 +710,8 @@
               href: cannot-change-value-dialog-box.md
             - name: Debugger kann keinen Quellcode oder Disassembly anzeigen
               href: debugger-cannot-display-source-code-or-disassembly.md
+            - name: Debuggerdienste verfügen nicht über genügend Arbeitsspeicher
+              href: error-debugger-services-no-memory.md
             - name: Ausführbare Datei für die Debugsitzung (Dialogfeld)
               href: executable-for-debugging-session-dialog-box.md
             - name: Bearbeiten und Fortfahren (Dialogfeld) (C++)

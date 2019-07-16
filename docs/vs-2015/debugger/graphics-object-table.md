@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 86279ff4e1721007814163787bd9ed06edc9fb13
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961871"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161167"
 ---
 # <a name="graphics-object-table"></a>Grafikobjekttabelle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,9 +41,9 @@ Mit der Grafikobjekttabelle in Visual Studio-Grafikanalyse können Sie die Direc
 |------------|-----------------|  
 |**Bezeichner**|Die Objekt-ID.|  
 |**Name**|Anwendungsspezifische Informationen, die für das Objekt mit der Direct3D-Funktion `SetPrivateData` festgelegt wurden (normalerweise zur Bereitstellung zusätzlicher Informationen über das Objekt).|  
-|**Type**|Der Objekttyp.|  
+|**Typ**|Der Objekttyp.|  
 |**Active**|Zeigt "*" für ein Objekt an, das während des aufgezeichneten Frames auf D3D10Device oder D3D11DeviceContext festgelegt wurde.<br /><br /> Dies entspricht den Objekten, die in grauer Schrift angezeigt werden, stellt aber einen Spalteneintrag bereit, mit dem Sie die Objekttabelle sortieren können.|  
-|**Size**|Die Größe des Objekts in Bytes.|  
+|**Größe**|Die Größe des Objekts in Bytes.|  
 |**Format**|Das Format des Objekts. Beispielsweise das Format eines Texturobjekts oder das Shadermodell eines Shaderobjekts.|  
 |**Width**|Die Breite eines Texturobjekts. Gilt nicht für andere Objekttypen.|  
 |**Height**|Die Höhe eines Texturobjekts. Gilt nicht für andere Objekttypen.|  

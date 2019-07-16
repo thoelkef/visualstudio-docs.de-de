@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b8769cbb23b2c192fd3db07eca9519661b3e214c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762845"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68190357"
 ---
 # <a name="performance-session-properties"></a>Eigenschaften von Leistungssitzungen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,12 +44,12 @@ Mit einer **Leistungssitzung** können Sie Einstellungen konfigurieren, die best
   
  [Sammeln von Daten zur .NET-Speicherbelegung und Lebensdauer](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)  
   
- [How to: Set Performance Data File Name Option (Vorgehensweise: Festlegen von Dateinamenoptionen für Leistungsdaten)](../profiling/how-to-set-performance-data-file-name-options.md)  
+ [Vorgehensweise: Dateinamensoptionen für Profilerstellungsdaten](../profiling/how-to-set-performance-data-file-name-options.md)  
   
 ## <a name="launch"></a>Starten  
  Sie können diese Einstellungen aus einer Liste der Binärdateien auswählen und die Startreihenfolge der Binärdateien angeben.  
   
- Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der zu startenden Binärdateien](../profiling/how-to-specify-the-binary-to-start.md).  
+ Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der zu startenden Binärdatei](../profiling/how-to-specify-the-binary-to-start.md)  
   
 ## <a name="sampling"></a>Sampling  
  Diese Einstellungen ermöglichen Ihnen die Auswahl des Samplingereignisses und des Samplingintervalls, wenn Sampling als Profilerstellungsmethode verwendet wird. Ein Samplingereignis dient zum Erfassen von Profilerstellungsdaten im angegebenen Intervall. Wenn das Samplingereignis z.B. ein Taktzyklus ist und das Samplingintervall auf 10.000.000 eingestellt ist, werden jeweils nach 10 Millionen Taktzyklen Profilerstellungsdaten erfasst. Die folgenden vier Typen von Samplingereignissen sind verfügbar:  
@@ -69,7 +69,7 @@ Mit einer **Leistungssitzung** können Sie Einstellungen konfigurieren, die best
 ## <a name="binary"></a>Binär  
  Mit diesen Einstellungen können Sie angeben, ob instrumentierte Binärdateien an einen anderen Speicherort verschoben werden sollen. Wenn Sie beispielsweise eine My.DLL-Profilerstellung durchführen und die instrumentierte Binärdatei nicht verschieben, wird eine Sicherungskopie von My.DLL mit dem Namen My.Orig.DLL erstellt. Anschließend wird My.DLL geändert, indem Prüfpunkte in die Datensammelung eingefügt werden. Wenn Sie sich entschließen, die instrumentierte Binärdatei zu verschieben, wird die ursprüngliche Binärdatei nicht umbenannt, und die instrumentierte Binärdatei wird am angegebenen Speicherort zur Verwendung während der Instrumentation kopiert.  
   
- Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der zu startenden Binärdateien](../profiling/how-to-specify-the-binary-to-start.md).  
+ Weitere Informationen finden Sie unter [Vorgehensweise: Angeben der zu startenden Binärdatei](../profiling/how-to-specify-the-binary-to-start.md)  
   
 ## <a name="tier-interactions"></a>Ebeneninteraktionen  
  Weitere Informationen finden Sie unter [Erfassen von Ebeneninteraktionsdaten](../profiling/collecting-tier-interaction-data.md)  
@@ -79,7 +79,7 @@ Mit einer **Leistungssitzung** können Sie Einstellungen konfigurieren, die best
   
  Weitere Informationen finden Sie unter:  
   
- [How to: Profile JavaScript Code in Web Pages (Vorgehensweise: Profilerstellung von JavaScript-Code in Webseiten)](../profiling/how-to-profile-javascript-code-in-web-pages.md)  
+ [Vorgehensweise: Profilerstellung für JavaScript-Code in Webseiten](../profiling/how-to-profile-javascript-code-in-web-pages.md)  
   
  [Vorgehensweise: Festlegen von Präinstrumentations- und Postinstrumentationsbefehlen](../profiling/how-to-specify-pre-and-post-instrument-commands.md)  
   
@@ -100,16 +100,16 @@ Mit einer **Leistungssitzung** können Sie Einstellungen konfigurieren, die best
 ## <a name="windows-counters"></a>Windows-Indikatoren  
  Mit dieser Option können Sie Daten des Windows-Systemmonitors erfassen. Um diese Daten zu sammeln, wählen Sie das Kontrollkästchen **Collect Windows Performance Counters** (Windows-Leistungsindikatoren erfassen) aus. Das Intervall der Datensammlung kann im Feld **Auflistungsintervall** festgelegt werden. **Indikatorenkategorie** und **Instanz** sind möglicherweise auch verfügbar. Einige Standardindikatoren des Windows-Systemmonitors sind verfügbar.  
   
- Weitere Informationen finden Sie unter [Vorgehensweise: Sammeln von CPU-Indikatordaten](../profiling/how-to-collect-windows-counter-data.md).  
+ Weitere Informationen finden Sie unter [Vorgehensweise: Sammeln von Windows-Indikatordaten](../profiling/how-to-collect-windows-counter-data.md).  
   
 ## <a name="advanced"></a>Erweitert  
  Mit diesen Einstellungen können Sie die Optionen des Instrumentationsvorgangs hinzufügen, indem Sie eine oder mehrere Optionen des [VSInstr](../profiling/vsinstr.md)-Profilerstellungstools über die Befehlszeile angeben. Wenn die Anwendung mehr als eine Version ausführt, können Sie auch die Version der typischen Laufzeit angeben, für die ein Profil erstellt werden soll.  
   
  Weitere Informationen finden Sie unter:  
   
- [How to: Specify the .NET Framework Runtime (Vorgehensweise: Angeben der .NET Framework-Laufzeit)](../profiling/how-to-specify-the-dotnet-framework-runtime.md)  
+ [Vorgehensweise: Angeben der .NET Framework-Laufzeit](../profiling/how-to-specify-the-dotnet-framework-runtime.md)  
   
- [Gewusst wie: Angeben zusätzlicher Instrumentierungsoptionen](../profiling/how-to-specify-additional-instrumentation-options.md)  
+ [Vorgehensweise: Angeben zusätzlicher Instrumentierungsoptionen](../profiling/how-to-specify-additional-instrumentation-options.md)  
   
 ## <a name="see-also"></a>Siehe auch  
  [Übersichten](../profiling/overviews-performance-tools.md)   

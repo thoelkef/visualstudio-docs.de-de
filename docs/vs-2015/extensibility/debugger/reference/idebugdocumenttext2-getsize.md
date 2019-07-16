@@ -13,11 +13,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1f6d438db999e2e0b2aa85c45c0b38333238755e
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58962298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200212"
 ---
 # <a name="idebugdocumenttext2getsize"></a>IDebugDocumentText2::GetSize
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ int GetSize( 
  Wenn erfolgreich, wird `S_OK`ist, andernfalls ein Fehlercode zurückgegeben.  
   
 ## <a name="remarks"></a>Hinweise  
- [Nur für C++] Wenn ein bestimmter Wert nicht gewünscht ist, übergeben Sie NULL für den Parameter.  
+ [C++ nur] Wenn ein bestimmter Wert nicht gewünscht ist, übergeben Sie NULL für den Parameter.  
   
  [C# nur] Beide Parameter müssen angegeben werden.  
   
