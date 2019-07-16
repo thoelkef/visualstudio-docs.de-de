@@ -10,18 +10,18 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: db9937a09c8260bd595b6c0311501920bf960aaf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100312"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158594"
 ---
 # <a name="walkthrough-xslt-profiler"></a>Exemplarische Vorgehensweise: XSLT-Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Der XSLT-Profiler erstellt ausführliche XSLT-Leistungsberichte zur Erfassung, Messung und Bewertung leistungsbezogener Probleme im XSLT-Code. Der XSLT-Profiler enthält nützliche Hinweise zu XSL- und XSLT-Stylesheetoptimierungen. Für XSLT-Anwendungen, bei denen maximale Leistung erforderlich ist, ist dieses Tool unentbehrlich.  
   
-## <a name="prerequisites"></a>Vorraussetzungen  
+## <a name="prerequisites"></a>Erforderliche Komponenten  
  Für die Verfahren in der folgenden exemplarischen Vorgehensweise sind Visual Studio 2010 und .NET Framework Version 4.0 erforderlich. Der XSLT-Profiler ist nur in Microsoft Visual Studio Team System mit installierten Profilerstellungstools verfügbar.  
   
 ### <a name="create-the-performance-report"></a>Erstellen des Leistungsberichts  

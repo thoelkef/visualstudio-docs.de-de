@@ -11,11 +11,11 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 27d51df6dd11509b86e6648d59978b87d9cd8a02
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58961130"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157656"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Modell eines Legacysprachdiensts
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Ein Sprachdienst definiert die Elemente und Funktionen für eine bestimmte Sprac
   
   Die folgende Tabelle enthält eine Übersicht über die Objekte im Modell.  
   
-|Komponente|Object|Funktion|  
+|Komponente|Objekt|Funktion|  
 |---------------|------------|--------------|  
 |Textpuffer|<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>|Ein Stream der Unicode-Lese-/Schreibzugriff-Text. Es ist möglich, für den Text auf andere Codierungen verwenden.|  
 |Codefenster|<xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>|Ein Dokumentfenster, das eine oder mehrere Textansichten enthält. Wenn [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] wird im Modus "Multiple Document Interface (MDI)" wird im Code-Fenster untergeordnetes MDI-Fenster.|  

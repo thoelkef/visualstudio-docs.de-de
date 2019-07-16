@@ -14,11 +14,11 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d0a0b999a1a6e6ed2364060031f68378e7222ec0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112480"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155819"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Auswahl und Aktualität in der IDE
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Die [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] integrierte Entwicklungsumge
   
   Das am häufigsten verwendete Projekttyp-Fenster wird im Projektmappen-Explorer die steuert, die IDE. Ein Fenster Projekttyp verfolgt nach, die globalen Hierarchie und Element-ID des Kontexts globale Auswahl, und im Fenster auf die Auswahl des Benutzers bestimmen die aktuelle Hierarchie basiert. Projekttyp unter Windows enthält die Umgebung beim globalen Dienst <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>, über welche VSPackages können die aktuellen Werte für geöffneten Elemente überwachen. Navigieren in der Umgebung Eigenschaft wird von diesem globalen Dienst gesteuert.  
   
-  Rahmenfenster, verwenden das Objekt auf der anderen Seite in das Rahmenfenster den SelectionContext-Wert (der Hierarchie/ItemID/SelectionContainer Trio) mithilfe von Push übertragen. sein. Frame-Fensters mithilfe des Diensts <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> für diesen Zweck. Das Objekt kann mithilfe von Push übertragen nur Werte für den Auswahlcontainer, verlassen die lokalen Werte für die Hierarchie und Element-ID unverändert, typischerweise für untergeordnete MDI-Dokumente.  
+  Rahmenfenster, verwenden das Objekt auf der anderen Seite in das Rahmenfenster den SelectionContext-Wert (der Hierarchie/ItemID/SelectionContainer Trio) mithilfe von Push übertragen. . Frame-Fensters mithilfe des Diensts <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> für diesen Zweck. Das Objekt kann mithilfe von Push übertragen nur Werte für den Auswahlcontainer, verlassen die lokalen Werte für die Hierarchie und Element-ID unverändert, typischerweise für untergeordnete MDI-Dokumente.  
   
 ### <a name="events-and-currency"></a>Ereignisse und Währung  
  Zwei Arten von Ereignissen auftreten, die der Umgebung Konzept der Währung beeinflussen:  

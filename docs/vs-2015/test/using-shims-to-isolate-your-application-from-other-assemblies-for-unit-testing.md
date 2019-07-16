@@ -9,11 +9,11 @@ caps.latest.revision: 14
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ddbcac3073dec1e7f21d381d30978589f1cdd792
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113910"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185741"
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Verwenden von Shims, um zu Komponententests die Anwendung von anderen Assemblys zu trennen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "60113910"
   
 - Visual Studio Enterprise  
   
-  See [Video (1h16): Testen von nicht testbarem Code mit Fakes in Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)
+  Finden Sie unter [Video (1 h 16): Testen von nicht testbarem Code mit Fakes in Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)
   
 ## <a name="BKMK_Example__The_Y2K_bug"></a> Beispiel: Der Y2K-Fehler  
  Betrachten wir eine Methode, die am 1. Januar 2000 eine Ausnahme auslöst:  
@@ -91,7 +91,7 @@ public void Y2kCheckerTest() {
  Es ist wichtig, jeden Shimkontext ordnungsgemäß zu löschen. Als Faustregel gilt: Rufen Sie die `ShimsContext.Create`-Methode immer innerhalb einer `using`-Anweisung auf, um sicherzustellen, dass die registrierten Shims ordnungsgemäß gelöscht werden. Sie können beispielsweise einen Shim für eine Testmethode registrieren, die die `DateTime.Now`-Methode durch einen Delegaten ersetzt, der immer den 1. Januar 2000 zurückgibt. Wenn Sie vergessen, den registrierten Shim in der Testmethode zu löschen, gibt der Rest des Testlaufs immer den 1. Januar 2000 als DateTime.Now-Wert zurück. Dies kann überraschend und verwirrend sein.  
   
 ### <a name="WriteShims"></a> Einen Test mit Shims schreiben  
- Fügen Sie in Ihrem Testcode eine *Umleitung* für die Methode ein, für die Sie ein Fake erstellen möchten. Zum Beispiel:  
+ Fügen Sie in Ihrem Testcode eine *Umleitung* für die Methode ein, für die Sie ein Fake erstellen möchten. Beispiel:  
   
 ```csharp  
 [TestClass]  
@@ -420,7 +420,7 @@ public class ShimMyClass : ShimBase<MyClass> {
   
  Wenn das Verhalten nicht explizit festgelegt wurde, wird die Instanz verwendet, die von der statischen `ShimsBehaviors.Current`-Eigenschaft zurückgegeben wird. Standardmäßig gibt diese Eigenschaft ein Verhalten zurück, das eine `NotImplementedException`-Ausnahme auslöst.  
   
- Dieses Verhalten kann jederzeit durch Festlegen der `InstanceBehavior`-Eigenschaft für jede beliebige Shiminstanz geändert werden. Beispielsweise ändert der folgende Codeausschnitt den Shim in ein Verhalten, das keine Aktion ausführt oder den Standardwert des Rückgabetyps (default(T)) zurückgibt:   
+ Dieses Verhalten kann jederzeit durch Festlegen der `InstanceBehavior`-Eigenschaft für jede beliebige Shiminstanz geändert werden. Beispielsweise ändert der folgende Codeausschnitt den Shim in ein Verhalten, das keine Aktion ausführt oder den Standardwert des Rückgabetyps (default(T)) zurückgibt:  
   
 ```csharp  
 // unit test code  

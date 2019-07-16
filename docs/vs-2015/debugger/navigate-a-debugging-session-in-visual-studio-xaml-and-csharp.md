@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b5b8d24f01f7882e8c760918119a03a1c489c727
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059876"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156832"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Navigieren in einer Debugsitzung in Visual Studio (Xaml und C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ Mit diesem Schnellstart wird veranschaulicht, wie in Debugsitzungen in Visual St
 
  **Einzelschritt in die Methode.** Auf der **Debuggen** Menü wählen **Einzelschritt** (Tastatur: F11).
 
- ![Current line](../debugger/media/dbg-basics-currentline.png "DBG_Basics_CurrentLine")
+ ![Aktuelle Zeile](../debugger/media/dbg-basics-currentline.png "DBG_Basics_CurrentLine")
 
  Beachten Sie, dass der Debugger zur nächsten Zeile bewegt wird. Hierbei handelt es sich um einen Aufruf der Methode "Example1". Wählen Sie erneut "Einzelschritt" aus. Der Debugger wechselt zum Einstiegspunkt der Methode "Example1". Dies weist darauf hin, dass die Methode in der Aufrufliste geladen wurde und dass der Arbeitsspeicher für lokale Variablen zugeordnet wurde.
 
@@ -102,13 +102,13 @@ Mit diesem Schnellstart wird veranschaulicht, wie in Debugsitzungen in Visual St
 
   **Überprüfen der Variablenwerte im Lokalfenster.** On the **Debuggen** auf **Fenster**, und wählen Sie **Lokale**aus. (Tastatur: ALT+ 4).
 
-  ![Locals window](../debugger/media/dbg-basics-localswindow.png "DBG_Basics_LocalsWindow")
+  ![Fenster "lokal"](../debugger/media/dbg-basics-localswindow.png "DBG_Basics_LocalsWindow")
 
   Das Lokalfenster ist eine Strukturansicht der Parameter und Variablen der Funktion. Die Eigenschaften einer Objektvariablen sind untergeordnete Knoten des Objekts selbst. Die `this` -Variable ist ein ausgeblendeter Parameter in den einzelnen Objektmethoden, der das Objekt selbst darstellt. In diesem Fall entspricht die Variable der MainPage-Klasse. Da `methodTrack` ein Member der MainPage-Klasse ist, werden der Wert und Datentyp in einer Zeile unterhalb von `this`aufgeführt. Erweitern Sie den Knoten `this` , um die `methodTrack` -Informationen anzuzeigen.
 
   **Hinzufügen einer Überwachung für die "methodTrack"-Variable.** Die `methodWatch` -Variable wird in diesem Schnellstart verwendet, um die in den Beispielen aufgerufenen Methoden aufzuzeigen. Um das Anzeigen des Variablenwerts zu vereinfachen, fügen Sie diesen einem Überwachungsfenster hinzu. Klicken Sie im Lokalfenster mit der rechten Maustaste auf den Variablennamen, und wählen Sie dann **Überwachung hinzufügen**aus.
 
-  ![Watch window](../debugger/media/dbg-basics-watchwindow.png "DBG_Basics_WatchWindow")
+  ![Fenster "überwachen"](../debugger/media/dbg-basics-watchwindow.png "DBG_Basics_WatchWindow")
 
   In einem Überwachungsfenster können mehrere Variablen überwacht werden. Die Werte der überwachten Variablen werden wie die Werte in den Lokal- und Datentippfenstern aktualisiert, wenn die Ausführung angehalten wird. Sie können dem Überwachungsfenster zudem Variablen vom Code-Editor aus hinzufügen. Wählen Sie die zu überwachende Variable aus, klicken Sie mit der rechten Maustaste, und wählen Sie **Überwachung hinzufügen**aus.
 
@@ -136,7 +136,7 @@ Mit diesem Schnellstart wird veranschaulicht, wie in Debugsitzungen in Visual St
 
  **Einzelschritt in "Example2" und "Example2_A".** Wählen Sie die F11-Taste, um einen Einzelschritt in die Methode von "Example 2" durchzuführen. Fahren Sie mit den Einzelschritten in die "Example2"-Anweisungen fort, bis Sie die Zeile `int x = Example2_A();`erreichen. Führen Sie erneut für diese Zeile einen Einzelschritt durch, um zum Einstiegspunkt von "Example2_A" zu gelangen. Fahren Sie mit den Einzelschritten in den einzelnen Anweisungen von "Example2_A" fort, bis Sie zu "Example2" zurückkehren.
 
- ![Example2](../debugger/media/dbg-basics-example2.png "DBG_Basics_Example2")
+ !["Example2"](../debugger/media/dbg-basics-example2.png "DBG_Basics_Example2")
 
  **Prozedurschritt für eine Funktion.** Beachten Sie, dass die nächste Zeile in "Example2" ( `int y = Example2_A();` ) im Wesentlichen der vorherigen Zeile entspricht. Sie können problemlos einen Prozedurschritt für diese Zeile durchführen. Drücken Sie die Taste F10, um von der Fortsetzung von "Example2" zu diesem zweiten Aufruf von "Example2_A" zu wechseln. Drücken Sie F10, um einen Prozedurschritt für diese Methode durchzuführen. Beachten Sie, dass die Zeichenfolge `methodTrack` darauf hinweist, dass die Methode "Example2_A" zweimal ausgeführt wurde. Beachten Sie auch, dass der Debugger sofort zur nächsten Zeile wechselt. Die Ausführung wird nicht an dem Punkt unterbrochen, an dem "Example2" fortgesetzt wird.
 

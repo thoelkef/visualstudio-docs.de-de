@@ -12,11 +12,11 @@ caps.latest.revision: 49
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2c5df1ce1721c63b5c5cfc3c5b94929da088660f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077005"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184879"
 ---
 # <a name="adding-a-toolbar-to-a-tool-window"></a>Hinzufügen einer Symbolleiste zu einem Toolfenster
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,7 +113,7 @@ Diese exemplarische Vorgehensweise zeigt, wie ein Toolfenster eine Symbolleiste 
   
      Sollte angezeigt werden, dass eine Symbolleiste mit der (anscheinend das Standardsymbol) am oberen Rand des Toolfensters, direkt unterhalb des Titels links.  
   
-3. Klicken Sie auf der Symbolleiste auf das Symbol, um die Anzeige der **TWTestCommandPackage in TWToolbar.TWTestCommand.MenuItemCallback()**.  
+3. Klicken Sie auf der Symbolleiste auf das Symbol, um die Anzeige der **TWTestCommandPackage in TWToolbar.TWTestCommand.MenuItemCallback()** .  
   
 ## <a name="see-also"></a>Siehe auch  
  [Hinzufügen einer Symbolleiste](../extensibility/adding-a-toolbar.md)

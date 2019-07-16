@@ -9,13 +9,13 @@ caps.latest.revision: 11
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 668913d231115e955cc50df10de045eab3d4ac92
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792020"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189477"
 ---
-# <a name="sample-excel-extension-extensionpackage-class"></a>Sample Excel Extension: ExtensionPackage Class
+# <a name="sample-excel-extension-extensionpackage-class"></a>Sample Excel Extension: ExtensionPackage-Klasse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Diese Klasse erweitert die <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>-Klasse und stellt den Einstiegspunkt für einen Test der programmierten UI bereit, bei dem ein [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]-Arbeitsblatt getestet wird.  

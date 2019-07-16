@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d70794dddc02605c76c1af330a49af4be917c0e3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050139"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159010"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Mehrere DSLs in einer Projektmappe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Sie können mehrere DSLs als Bestandteil einer Projektmappe packen, damit sie zu
   
 2. Kombinieren Sie die VSIX-Manifeste der DSLs:  
   
-   1. Open _ihrvsix-Projekt_**\source.extension.manifest**.  
+   1. Open _ihrvsix-Projekt_ **\source.extension.manifest**.  
   
    2. Wählen Sie für jede DSL **Inhalt hinzufügen** und fügen Sie hinzu:  
   
@@ -59,7 +59,7 @@ Sie können mehrere DSLs als Bestandteil einer Projektmappe packen, damit sie zu
   
 3. Erstellen Sie die Projektmappe.  
   
-   Die resultierende VSIX installiert beide DSLs. Sie können sie mit F5 testen oder bereitstellen _ihrvsix-Projekt_**\bin\Debug\\\*VSIX**.  
+   Die resultierende VSIX installiert beide DSLs. Sie können sie mit F5 testen oder bereitstellen _ihrvsix-Projekt_ **\bin\Debug\\\*VSIX**.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Integrieren von Modellen mit Visual Studio-Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   

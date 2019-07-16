@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ce1f236347ad811f1c5d115f30907b7e3356e3af
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099272"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159635"
 ---
 # <a name="create-elements-and-relationships-in-uml-models"></a>Erstellen von Elementen und Beziehungen in UML-Modellen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Im Programmcode für eine Visual Studio-Erweiterung können Sie Elemente und Bez
 ### <a name="obtain-the-owner-of-the-element-you-want-to-create"></a>Abrufen des Besitzers des zu erstellenden Elements  
  Ein Modell bildet eine einzelne Struktur, sodass jedes Element mit Ausnahme des Modellstamms einen Besitzer hat. Der Modellstamm weist den Typ `IModel` auf, der ein Typ von `IPackage` ist.  
   
- Wenn Sie ein Element erstellen, das in einem bestimmten Diagramm angezeigt wird, z. B. im aktuellen Diagramm des Benutzers, erstellen Sie es normalerweise in dem Paket, das mit diesem Diagramm verknüpft ist. Zum Beispiel:  
+ Wenn Sie ein Element erstellen, das in einem bestimmten Diagramm angezeigt wird, z. B. im aktuellen Diagramm des Benutzers, erstellen Sie es normalerweise in dem Paket, das mit diesem Diagramm verknüpft ist. Beispiel:  
   
 ```  
 IPackage linkedPackage = Context.CurrentDiagram.Element as IPackage;  
@@ -52,7 +52,7 @@ IPackage linkedPackage = Context.CurrentDiagram.Element as IPackage;
 |`ILifeline, IMessage, ICombinedFragment`|`IInteraction`|  
   
 ### <a name="invoke-the-create-method-on-the-owner"></a>Aufrufen der Create-Methode für den Besitzer  
- Der Name der Methode ist das Format: `Create`*OwnedType*`()`. Zum Beispiel:  
+ Der Name der Methode ist das Format: `Create`*OwnedType*`()`. Beispiel:  
   
 ```  
 IUseCase usecase1 = linkedPackage.CreateUseCase();  
@@ -93,14 +93,14 @@ using Microsoft.VisualStudio.Uml.Extensions;
   
 3. Legen Sie die Eigenschaften der Beziehung fest, z. B. den Namen.  
   
-     Zum Beispiel:  
+     Beispiel:  
   
     ```  
     IAssociation association = subject.Package.CreateAssociation(subject, observer);  
     association .Name = "Observes";  
     ```  
   
-4. Legen Sie die Eigenschaften der beiden Enden der Beziehung fest. Es sind immer zwei `MemberEnds` vorhanden. Zum Beispiel:  
+4. Legen Sie die Eigenschaften der beiden Enden der Beziehung fest. Es sind immer zwei `MemberEnds` vorhanden. Beispiel:  
   
     ```  
     association .MemberEnds[0].Name = "subject";   // role name  

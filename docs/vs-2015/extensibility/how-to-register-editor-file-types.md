@@ -11,13 +11,13 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8d22e61d88b5f6e3959a369f6957efbc824384b2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204115"
 ---
-# <a name="how-to-register-editor-file-types"></a>Vorgehensweise: Register-Editor-Dateitypen
+# <a name="how-to-register-editor-file-types"></a>Vorgehensweise: Registrieren von Editor-Dateitypen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Die einfachste Möglichkeit zum Registrieren von Editor-Dateitypen wird mit den Registrierung-Attributen, die als Teil der [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] managed Package Framework (MPF)-Klassen. Wenn Sie das Paket in systemeigenen implementieren [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], Sie können auch eine Registrierungsdatei, der den Editor und den verbundenen nebenanschlüssen registriert schreiben.  

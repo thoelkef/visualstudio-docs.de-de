@@ -22,11 +22,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 261c0c0bd8b48634c8d24d56ee4df7ea3bbcf135
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072850"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161735"
 ---
 # <a name="autos-and-locals-windows"></a>Fenster „Auto“ und „Lokal“
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,7 +114,7 @@ private static int subtractVars(int i, int j)
   
  Legen Sie einen Haltepunkt in der Zeile int `x = sumVars(a, b) + subtractVars(c, d);` fest.  
   
- Starten Sie das Debuggen, und drücken Sie **F10 (Prozedurschritt)**, wenn die Ausführung am ersten Haltepunkt angehalten wird. Daraufhin sollte Folgendes im Fenster **Auto** zu sehen sein:  
+ Starten Sie das Debuggen, und drücken Sie **F10 (Prozedurschritt)** , wenn die Ausführung am ersten Haltepunkt angehalten wird. Daraufhin sollte Folgendes im Fenster **Auto** zu sehen sein:  
   
  ![AutosReturnValueCSharp2](../debugger/media/autosreturnvaluecsharp2.png "AutosReturnValueCSharp2")  
   

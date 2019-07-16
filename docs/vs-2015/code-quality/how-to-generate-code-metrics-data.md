@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: aeba6a777dd060f310f9cbb8801b2405cd76f6b2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045628"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201323"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Vorgehensweise: Generieren von Codemetrikdaten
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Sie können entscheiden, Codemetrikergebnisse für eine gesamte Projektmappe ode
   
 ### <a name="to-generate-code-metrics-results-for-an-entire-solution"></a>Codemetrikergebnisse für eine gesamte Projektmappe generieren  
   
-- Klicken Sie auf **Menü "Analyse"**, und klicken Sie dann auf **CalculateCode Metriken für die Lösung**.  
+- Klicken Sie auf **Menü "Analyse"** , und klicken Sie dann auf **CalculateCode Metriken für die Lösung**.  
   
      \- oder –  
   
@@ -47,7 +47,7 @@ Sie können entscheiden, Codemetrikergebnisse für eine gesamte Projektmappe ode
   
 1. In **Projektmappen-Explorer**, wählen Sie ein oder mehrere Projekte.  
   
-2. Klicken Sie auf **analysieren**, und klicken Sie dann auf **Codemetrik für ausgewählte Projekte (s)**.  
+2. Klicken Sie auf **analysieren**, und klicken Sie dann auf **Codemetrik für ausgewählte Projekte (s)** .  
   
     \- oder –  
   

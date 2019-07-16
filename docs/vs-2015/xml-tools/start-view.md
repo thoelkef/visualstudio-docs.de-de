@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: cb0cc75abced1d94fbedccf46b8953df78db7d28
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651252"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150702"
 ---
 # <a name="start-view"></a>Ausgangsansicht
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Die Ausgangsansicht ist der Ausgangspunkt für die Arbeit mit dem XML-Schema-Des
   
 |Option|Beschreibung|  
 |------------|-----------------|  
-|**Ausgangsansicht anzeigen**|Wechselt zur Ausgangsansicht. In dieser Ansicht kann mit der Tastenkombination zugegriffen werden: **CTRL + 1**.|  
+|**Ausgangsansicht anzeigen**|Wechselt zur Ausgangsansicht. In dieser Ansicht kann mit der Tastenkombination zugegriffen werden: **STRG + 1**.|  
 |**Inhaltsmodellansicht anzeigen**|Wechselt zur Inhaltsmodellansicht. In dieser Ansicht kann mit der Tastenkombination zugegriffen werden: **STRG + 2**.|  
 |**Diagrammansicht anzeigen**|Wechselt zur Diagrammansicht. In dieser Ansicht kann mit der Tastenkombination zugegriffen werden: **STRG + 3**.|  
   

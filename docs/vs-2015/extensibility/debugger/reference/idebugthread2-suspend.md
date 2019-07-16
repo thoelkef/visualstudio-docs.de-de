@@ -13,11 +13,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c334a660b9c85345c636c7cc4b9aaea1a9b12076
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58946555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68152952"
 ---
 # <a name="idebugthread2suspend"></a>IDebugThread2::Suspend
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -52,4 +52,4 @@ HRESULT Suspend ( 
   
 ## <a name="see-also"></a>Siehe auch  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
- [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md)
+ [Fortsetzen](../../../extensibility/debugger/reference/idebugthread2-resume.md)

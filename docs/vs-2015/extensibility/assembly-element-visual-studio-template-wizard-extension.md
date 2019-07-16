@@ -14,11 +14,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d947c0f2996bcaaeff6c6dbf084151237f1fdb3d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58946712"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184731"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Assembly-Element (Assistentenerweiterung für Visual Studio-Vorlagen)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,8 +26,8 @@ ms.locfileid: "58946712"
 Gibt den Namen oder der starke Name der Assembly, implementiert die `IWizard` Schnittstelle.  
   
  \<VSTemplate>  
-\<WizardExtension>  
-\<Assembly>  
+\<WizardExtension >  
+\<Assembly >  
   
 ## <a name="syntax"></a>Syntax  
   

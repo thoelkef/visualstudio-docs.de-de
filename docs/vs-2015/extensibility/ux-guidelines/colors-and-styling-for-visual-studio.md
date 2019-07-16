@@ -9,11 +9,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 257c5944ee1939849c4163fef518abf513183998
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095814"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176967"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Farben und Stile für Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -160,7 +160,7 @@ Dim myColor As Color = ColorTranslator.FromWin32((Integer)win32Color)
 #### <a name="helper-classes-and-methods-for-managed-code"></a>Hilfsklassen und Methoden für verwalteten code
  Für verwalteten Code enthält die Shell Managed Package Framework-Bibliothek (Microsoft.VisualStudio.Shell.12.0.dll) einige Hilfsklassen, die es vereinfacht die Verwendung von Farben mit Design versehen.
 
- Die Hilfsmethoden in den **Microsoft.VisualStudio.Shell.VsColors** Klasse in MPF enthalten **GetThemedGDIColor()** und **GetThemedWPFColor()**. Diese Hilfsmethoden zurückgeben den Farbwert eines Eintrags Design als System.Drawing.Color-Objekt oder System.Windows.Media.Color, um in Windows Forms oder WPF-UI verwendet werden.
+ Die Hilfsmethoden in den **Microsoft.VisualStudio.Shell.VsColors** Klasse in MPF enthalten **GetThemedGDIColor()** und **GetThemedWPFColor()** . Diese Hilfsmethoden zurückgeben den Farbwert eines Eintrags Design als System.Drawing.Color-Objekt oder System.Windows.Media.Color, um in Windows Forms oder WPF-UI verwendet werden.
 
 ```
 IVsUIShell5 shell5;

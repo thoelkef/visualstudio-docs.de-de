@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 382689dada13adce1ee530e66fef6ba78452efaa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58959399"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188985"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;"PackageFiles"&gt; -Element (Bootstrapper)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,9 +60,9 @@ Die `PackageFiles` Element enthält `PackageFile` Elementen, die die Pakete für
 |---------------|-----------------|  
 |`Name`|Erforderlich. Der Name der Paketdatei. Dies ist der Name, der die `Command` Element verweist, wenn sie die Bedingungen definiert, unter denen ein Paket installiert. Dieser Wert dient auch als Schlüssel für die `Strings` Tabelle, die den lokalisierten Namen abrufen, die tools wie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] verwendet, um das Paket beschreiben.|  
 |`HomeSite`|Dies ist optional. Der Speicherort des Pakets auf dem Remoteserver auf, wenn er nicht mit dem Installationsprogramm enthalten ist.|  
-|`CopyOnBuild`|Dies ist optional. Gibt an, ob der Bootstrapper die Paketdatei auf den Datenträger zum Zeitpunkt der Erstellung kopieren soll. Der Standardwert ist "True".|  
+|`CopyOnBuild`|Optional. Gibt an, ob der Bootstrapper die Paketdatei auf den Datenträger zum Zeitpunkt der Erstellung kopieren soll. Der Standardwert ist "True".|  
 |`PublicKey`|Der verschlüsselte öffentliche Schlüssel des Signaturgebers der Paket-Zertifikat. Erforderlich, wenn `HomeSite` wird verwendet, andernfalls optional.|  
-|`Hash`|Dies ist optional. Ein SHA1-Hash der Paketdatei. Dies wird verwendet, um die Integrität der Datei bei der Installation zu überprüfen. Wenn die identische Hash aus der Paketdatei nicht berechnet werden kann, wird das Paket nicht installiert werden.|  
+|`Hash`|Optional. Ein SHA1-Hash der Paketdatei. Dies wird verwendet, um die Integrität der Datei bei der Installation zu überprüfen. Wenn die identische Hash aus der Paketdatei nicht berechnet werden kann, wird das Paket nicht installiert werden.|  
   
 ## <a name="example"></a>Beispiel  
  Das folgende Codebeispiel definiert die Pakete für die [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] redistributable-Paket und seine Abhängigkeiten, z. B. den Windows Installer.  
